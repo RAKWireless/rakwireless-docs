@@ -1,0 +1,1 @@
+<rk-redirect to="/Product-Categories/WisBlock/RAK1920/Datasheet/" />

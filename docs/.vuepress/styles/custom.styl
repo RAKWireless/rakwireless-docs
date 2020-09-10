@@ -1,0 +1,50 @@
+span.site-name.can-hide, .repo-link {
+    display: none!important;
+}
+
+table {
+    margin: 0 !important;
+    display: table !important;
+    text-align: left;
+    width: 100%;
+}
+
+.q-markup-table {
+  margin-top 1rem
+}
+
+.q-table, .q-table th, .q-table tbody td {
+    font-size: 14px;
+}
+
+.q-table th {
+    opacity: 1 !important;
+    font-weight: 600;
+}
+
+.q-table tr:nth-child(even) {
+  background-color: $grey-2;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+@media print {
+    .q-header,
+    .q-drawer,
+    .q-footer,
+    .page-edit,
+    .page-nav,
+    .q-pa-lg,
+    #launcher{
+        display:none;
+    }
+    .q-page-container{
+        padding:0 !important;
+    }
+}
