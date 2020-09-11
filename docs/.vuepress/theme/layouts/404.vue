@@ -1,15 +1,15 @@
 <template>
-  <div class="theme-container">
-    <div class="theme-default-content">
-      <h1>404</h1>
-
-      <blockquote>{{ getMsg() }}</blockquote>
-
-      <RouterLink to="/">
-        Take me home.
-      </RouterLink>
-    </div>
-  </div>
+  <ClientOnly>
+    <q-layout view="hHh LpR lfr">
+      <q-page-container>
+        <div class="q-pa-md" style="max-width: 30rem; margin: 0 auto;">
+          <h1>404</h1>
+          <blockquote>{{ getMsg() }}</blockquote>
+          <RouterLink to="/">Take me home.</RouterLink>
+        </div>
+      </q-page-container>
+    </q-layout>
+  </ClientOnly>
 </template>
 
 <script>
@@ -22,7 +22,7 @@ const msgs = [
 
 export default {
   methods: {
-    getMsg () {
+    getMsg() {
       return msgs[Math.floor(Math.random() * msgs.length)]
     }
   }

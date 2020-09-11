@@ -32,7 +32,7 @@ As shown in Figure 1, a firmware based on the RUI comprises two parts: the RUI S
 
 The SDK is the core of RUI. It was developed to support multiple types of the RAK's LoRaWAN modules. The complexity of the hardware is hidden and abstracted in this layer in order to expose a unified RUI API interface to simplify the development of the application layer. The application layer should contain the implementation of the business logic of the customized solution. 
 
-For the purpose and usage of RUI API, please refer to the [RUI AP Reference](/RUI/rui-api-reference/) Manual.
+For the purpose and usage of RUI API, please refer to the [RUI API Reference](/RUI/rui-api-reference/) Manual.
 
 
 

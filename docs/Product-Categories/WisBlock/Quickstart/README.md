@@ -143,8 +143,8 @@ To make sure the modules are properly connected, use screws to keep them in thei
 :::
 
 <rk-img
-  src="/assets/images/wisblock/quickstart/wisblock-connection.jpg"
-  width="45%"
+  src="/assets/images/wisblock/quickstart/battery-connection.gif"
+  width="40%"
   caption="WisBlock Base Connection"
 />
 
