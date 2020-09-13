@@ -51,16 +51,16 @@ tags:
   caption="RAK7249 WisGate Edge Max Main Board Installation"
 />
 
-3. Install the LoRa® cards (for example RAK833), the motherboard supports two LoRa® cards, the first slot is for LoRa® card of SPI type, the second slot is for LoRa® card of USB type.
+3. Install the LoRa cards (for example RAK833), the motherboard supports two LoRa cards, the first slot is for LoRa card of SPI type, the second slot is for LoRa card of USB type.
 
 :::tip 📝 NOTE
-If there is only one LoRa® card (SPI type), please install it in the first slot.
+If there is only one LoRa card (SPI type), please install it in the first slot.
 :::
 
 <rk-img
   src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/lora-card-installation.jpg"
   width="70%"
-  caption="RAK7249 WisGate Edge Max LoRa® Card Installation"
+  caption="RAK7249 WisGate Edge Max LoRa Card Installation"
 />
 
 4. Installation of RF cables, Ethernet cable and reserved hole plugs.
@@ -275,8 +275,8 @@ In this document, we will be discussing on how to setup your lightning surge pro
 ##### Antenna Grounding
 
 RAKwireless recommends a lightning arrestor to be installed on all the antenna **N-Type
-terminals** (**LoRa®, LTE, Wi-Fi and GPS**). It is recommended to use a **10-AWG or better
-grounding wire** to connect the arrestor to the tower mounted LoRa® antenna. The arrestors
+terminals** (**LoRa, LTE, Wi-Fi and GPS**). It is recommended to use a **10-AWG or better
+grounding wire** to connect the arrestor to the tower mounted LoRa antenna. The arrestors
 have to be Female to Male type in order to fit the antenna and housing connectors. Make
 sure you use a 10 AWG or better wire to connect the screw terminals of the arrestors to
 the grounding rail mounted on the building wall (grounding bar in case of field deployment
@@ -298,21 +298,21 @@ For the purpose of protecting the indoor equipment and circuitry connected to th
 
 #### Recommended Equipment
 
-##### Lightning Arrestor for the LoRa®, LTE, and Wi-Fi antennas
+##### Lightning Arrestor for the LoRa, LTE, and Wi-Fi antennas
 
 <rk-img
   src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Lighting Protection/lora-lightning-arrestor.png"
   width="20%"
-  caption="Lightning Arrestor for LoRa® , LTE and Wi-Fi Antennas"
+  caption="Lightning Arrestor for LoRa , LTE and Wi-Fi Antennas"
 />
 
 <rk-btn
   src="https://store.rakwireless.com/products/lightning-arrestor"
-  label="Buy a Lightning Arrestor For LoRa®, LTE and Wi-Fi"
+  label="Buy a Lightning Arrestor For LoRa, LTE and Wi-Fi"
   _blank
 />
 
-This is a surge protective device for securing transceivers against over-voltage and surge current induced by bolts of lightning. RAKwireless recommends installing lightning arrestor on all N-type antenna terminals including LoRa®, LTE, and 2.4G Wi-Fi antennas.
+This is a surge protective device for securing transceivers against over-voltage and surge current induced by bolts of lightning. RAKwireless recommends installing lightning arrestor on all N-type antenna terminals including LoRa, LTE, and 2.4G Wi-Fi antennas.
 
 ##### Lightning Arrestor for the GPS Antenna
 
@@ -396,7 +396,7 @@ In this section, it is assumed that you have read and performed the procedures l
 
 1. Attach the antennas
 
-First and foremost screw on the antennas. All 5 of them should be installed (**WiFi**, **LoRa®**, **LTE-DIV**, **LTE-MAIN** on the top, and **GPS** on the bottom) same with the image shown below.
+First and foremost screw on the antennas. All 5 of them should be installed (**WiFi**, **LoRa**, **LTE-DIV**, **LTE-MAIN** on the top, and **GPS** on the bottom) same with the image shown below.
 
 <rk-img
   src="/assets/images/wisgate/rak7249/quickstart/2.quickstart/antennas_installed.png"
@@ -424,7 +424,7 @@ It is recommended to use a **CAT5 Cable** to provide power to the Gateway. Attac
 In this section, several ways in accessing the gateway are provided to have different alternatives for you to choose depending on the availability of the requirements needed.
 
 :::warning ⚠️ WARNING
-Do not power the device if the LoRa® Antenna port has been left open to avoid potential damage in the RAK7249 WisGate Edge Max."
+Do not power the device if the LoRa Antenna port has been left open to avoid potential damage in the RAK7249 WisGate Edge Max."
 :::
 
 #### Wi-Fi AP Mode
@@ -518,7 +518,7 @@ The Things Network is about enabling low power devices to use long range gateway
 />
 
 :::tip 📝 NOTE
-The Gateway EUI can be found either on the sticker on the casing or via the LoRa® Packet Forwarder page in the Gateway menu once you log via the Web UI.
+The Gateway EUI can be found either on the sticker on the casing or via the LoRa Packet Forwarder page in the Gateway menu once you log via the Web UI.
 :::
 
 2. Select your [Frequency Plan](https://www.thethingsnetwork.org/docs/lorawan/frequency-plans.html) depending on your location. This should populate the Router field. Optionally you can choose to enter the Gateway coordinates in the map’s upper right corner and select if the gateway is indoor or outdoor via the Antenna placement field below the map.
@@ -532,5 +532,5 @@ The Gateway EUI can be found either on the sticker on the casing or via the LoRa
 />
 
 :::tip 📝 NOTE
-By default, the Gateway is set to connect to TTN. For detailed information about advanced configuration options refer to the [WEB Management Platform - LoRa® Network](/Knowledge-Hub/Learn/Resources/WEB-Management-Platform/#lora®-network) section.
+By default, the Gateway is set to connect to TTN. For detailed information about advanced configuration options refer to the [WEB Management Platform - LoRa Network](/Knowledge-Hub/Learn/Resources/WEB-Management-Platform/#lora®-network) section.
 :::

@@ -11,6 +11,7 @@ Thank you for choosing **RAK8212 WisTrio iTracker Pro** in your awesome IoT Proj
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
+* [AT Command Manual](../AT-Command-Manual/)
 
 <!-- <rk-img
   src="/assets/images/wistrio/rak8212/quickstart/overview/mbu3h7u9ykxyd0yfzkln.jpg"

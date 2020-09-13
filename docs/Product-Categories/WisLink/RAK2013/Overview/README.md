@@ -6,15 +6,15 @@ prev: ../../
 next: ../Datasheet/
 ---
 
-# RAK2013 WisLink LPWAN Concentrator
-Thank you for choosing **RAK2013 WisLink LPWAN Concentrator** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+# RAK2013 WisLink Cellular Pi HAT
+Thank you for choosing **RAK2013 WisLink Cellular Pi HAT** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
 * [Datasheet](../Datasheet/)
 
 <!-- <rk-img
   src="/assets/images/wislink-lte/rak2013/datasheet/rak2013.jpg"
   width="50%"
-  caption="RAK2013 WisLink LPWAN Concentrator Board"
+  caption="RAK2013 WisLink Cellular Pi HAT Board"
 /> -->
 
 ## Product Description
@@ -27,7 +27,7 @@ The RAK2013 is compatible with RAK2245 Pi Hat Concentrator module via the onboar
 
 <!-- <rk-btn
   src="../Quickstart/"
-  label="Get Started with RAK2013 WisLink LPWAN Concentrator"
+  label="Get Started with RAK2013 WisLink Cellular Pi HAT"
 /> -->
 
 ## Product Features
@@ -38,7 +38,7 @@ The RAK2013 is compatible with RAK2245 Pi Hat Concentrator module via the onboar
 - Supports Nano SIM card or eSIM card.
 - Integrates audio codec and audio amplifier.
 - Integrates MikroBus interface to support sensor extended board.
-- Can be added to another Pi HAT to support LoRa® concentrator.
+- Can be added to another Pi HAT to support LoRa concentrator.
 - Supports USB connector for higher data rate.
 - Supports GPS function(only for BG96 module) .
 - SMA/IPEX antenna optional for LTE and GPS.

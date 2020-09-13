@@ -147,9 +147,9 @@ export default {
     store: 'https://store.rakwireless.com/products/rak811-lpwan-module?utm_source=RAK811LPWANModule&utm_medium=Document'
   },
   '/Product-Categories/WisDuo/RAK813-Module/': {
-    label: 'RAK813 BLE+LoRa® Module',
+    label: 'RAK813 BLE+LoRa Module',
     img: '/assets/images/wisduo/rak813-module/overview/RAK813_buy.png',
-    store: 'https://store.rakwireless.com/'
+    store: 'https://store.rakwireless.com/?utm_source=RAK813BLE%2BLoRa%C2%AEModule&utm_medium=Document'
   },
   '/Product-Categories/WisDuo/RAK4200-Evaluation-Board/': {
     label: 'RAK4200 Evaluation Board',
@@ -197,7 +197,7 @@ export default {
   '/Product-Categories/WisGate/RAK7240/': {
     label: 'RAK7240 WisGate Edge Prime',
     img: '/assets/images/wisgate/rak7240/quickstart/RAK7240_buy.png',
-    store: 'https://www.rakwireless.com/en-us/products/lpwan-gateways-and-concentrators/rak7240'
+    store: 'https://store.rakwireless.com/products/rak7240-outdoor-lpwan-gateway?utm_source=RAK7240WisGateEdgePrime&utm_medium=Document'
   },
   '/Product-Categories/WisGate/RAK7243/': {
     label: 'RAK7243 WisGate Developer D3 Gateway',
@@ -238,55 +238,55 @@ export default {
 // WisBlock
 '/Product-Categories/WisBlock/RAK1920/': {
   label: 'RAK1920 WisBlock WisIO Module',
-  img:   '/assets/images/wisblock/rak1920/datasheet/RAK1920-illustration.png',
+  img:   '/assets/images/wisblock/rak1920/overview/RAK1920_buy.png',
   store: 'https://store.rakwireless.com'
 },
 
 '/Product-Categories/WisBlock/RAK1921/': {
   label: 'RAK1921 WisBlock WisIO Module',
-  img:   '/assets/images/wisblock/rak1921/datasheet/RAK1921.jpg',
+  img:   '/assets/images/wisblock/rak1921/overview/RAK1921_buy.png',
   store: 'https://store.rakwireless.com'
 },
 
 '/Product-Categories/WisBlock/RAK2305/': {
   label: 'RAK2305 WisBlock WisIO Module',
-  img:   '/assets/images/wisblock/rak2305/datasheet/RAK2305-illustration.jpg',
+  img:   '/assets/images/wisblock/rak2305/overview/RAK2305_buy.png',
   store: 'https://store.rakwireless.com'
 },
 
 '/Product-Categories/WisBlock/RAK4631/': {
   label: 'RAK4631 WisBlock WisCore Module',
-  img:   '/assets/images/wisblock/rak4631/overview/RAK4631-illustration.png',
-  store: 'https://store.rakwireless.com'
+  img:   '/assets/images/wisblock/rak4631/overview/RAK4631_buy.png',
+  store: 'https://store.rakwireless.com/?utm_source=RAK4631WisBlockLPWANModule&utm_medium=Document'
 },
 
 '/Product-Categories/WisBlock/RAK5005-O/': {
   label: 'RAK5005-O WisBlock WisBase Board',
-  img:   '/assets/images/wisblock/rak5005-o/datasheet/rak5005-0-illustration.png',
-  store: 'https://store.rakwireless.com'
+  img:   '/assets/images/wisblock/rak5005-o/overview/RAK5005-O_buy.png',
+  store: 'https://store.rakwireless.com/?utm_source=RAK5005-OWisBlockBaseBoard&utm_medium=Document'
 },
 
 '/Product-Categories/WisBlock/RAK5801/': {
   label: 'RAK5801 WisBlock WisIO Module',
-  img:   '/assets/images/wisblock/rak5801/datasheet/RAK5801.jpg',
+  img:   '/assets/images/wisblock/rak5801/overview/RAK5801_buy.png',
   store: 'https://store.rakwireless.com'
 },
 
 '/Product-Categories/WisBlock/RAK5802/': {
   label: 'RAK5802 WisBlock WisIO Module',
-  img:   '/assets/images/wisblock/rak5802/datasheet/RAK5802.jpg',
+  img:   '/assets/images/wisblock/rak5802/overview/RAK5802_buy.png',
   store: 'https://store.rakwireless.com'
 },
 
 '/Product-Categories/WisBlock/RAK5804/': {
   label: 'RAK5804 WisBlock WisIO Module',
-  img:   '/assets/images/wisblock/rak5804/datasheet/RAK5804.jpg',
+  img:   '/assets/images/wisblock/rak5804/overview/RAK5804_buy.png',
   store: 'https://store.rakwireless.com'
 },
 
 '/Product-Categories/WisBlock/RAK5860/': {
   label: 'RAK5860 WisBlock WisIO Module',
-  img:   '/assets/images/wisblock/rak5860/datasheet/RAK5860.png',
+  img:   '/assets/images/wisblock/rak5860/overview/RAK5860_buy.png',
   store: 'https://store.rakwireless.com'
 },
 
@@ -328,7 +328,7 @@ export default {
 
 '/Product-Categories/WisBlock/RAK5811/': {
   label: 'RAK5811 WisBlock 0-5V Interface Module',
-  img:   '/assets/images/wisblock/rak5811/datasheet/RAK5811.jpg',
+  img:   '/assets/images/wisblock/rak5811/overview/RAK5811_buy.png',
   store: 'https://store.rakwireless.com'
 },
 

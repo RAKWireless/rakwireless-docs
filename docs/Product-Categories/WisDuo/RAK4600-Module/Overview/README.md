@@ -1,7 +1,7 @@
 ---
 rak_grp: [wisduo, module]
 rak_img: /assets/images/wisduo/rak4600-module/overview/RAK4600_Module_home.png
-rak_desc: RAK4600 WisDuo LPWAN Module includes an nRF52832 MCU and an SX1276 LoRa® chip. It has Ultra-Low Power Consumption of 2.0uA in sleep mode, high LoRa® output power up to 20dB max in work mode, and BLE output power up to 4dBm.
+rak_desc: RAK4600 WisDuo LPWAN Module includes an nRF52832 MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumption of 2.0uA in sleep mode, high LoRa output power up to 20dB max in work mode, and BLE output power up to 4dBm.
 prev: ../../
 next: ../LoRaWAN-P2P/Quickstart/
 ---
@@ -24,9 +24,9 @@ Thank you for choosing **RAK4600 WisDuo LPWAN Module** in your awesome IoT Proje
 
 ## Product Description
 
-RAK4600 WisDuo LPWAN Module includes an nRF52832 MCU and an SX1276 LoRa® chip. It has Ultra-Low Power Consumption of 2.0uA in sleep mode, high LoRa® output power up to 20dB max in work mode, and BLE output power up to 4dBm.
+RAK4600 WisDuo LPWAN Module includes an nRF52832 MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumption of 2.0uA in sleep mode, high LoRa output power up to 20dB max in work mode, and BLE output power up to 4dBm.
 
-The module complies with LoRaWAN® 1.0.2 protocols. It also supports LoRa® Point to Point communications. The Module supports BLE 5.0 in addition to LoRa®. Its RF communication capabilities (LoRa®+BLE) make it suitable for a variety of applications in the IoT field.
+The module complies with LoRaWAN 1.0.2 protocols. It also supports LoRa Point to Point communications. The Module supports BLE 5.0 in addition to LoRa. Its RF communication capabilities (LoRa+BLE) make it suitable for a variety of applications in the IoT field.
 
 <!-- <rk-btn
   src="../Datasheet/"
@@ -37,7 +37,7 @@ The module complies with LoRaWAN® 1.0.2 protocols. It also supports LoRa® Poin
 
 ## Product Features
 
-- LoRa® module for Smart City, Smart Agriculture, Smart Industry
+- LoRa module for Smart City, Smart Agriculture, Smart Industry
 - Compact Form Factor: 15 x 23 x 2.5 mm
 - 42 Pin Stamp Pad for PCB SMT mounting
 - I/O ports: UART/I2C/GPIO (optional NFC interface)
@@ -46,7 +46,7 @@ The module complies with LoRaWAN® 1.0.2 protocols. It also supports LoRa® Poin
 - Frequency range: 863–870MHz (EU) / 902–928MHz (US), ISM and SRD systems
 - Low-Power Wireless Systems with 7.8kHz to 500KHz Bandwidth
 - Ultra-Low Power Consumption 11.2μA in Sleep mode
-- LoRa® Boost mode with 20dBm output power
+- LoRa Boost mode with 20dBm output power
 - BLE 5.0 (Tx power -20 to +4 dBm in 4dB steps)
 
 <!-- <rk-btn

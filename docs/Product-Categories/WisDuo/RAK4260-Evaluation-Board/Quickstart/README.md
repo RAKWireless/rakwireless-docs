@@ -28,7 +28,7 @@ Before going through each and every step in the installation guide of the RAK426
 
 * 1-pc RAK4260 EVB (RAK4261 + RAK5005)
 * 1-pc Micro USB Cable
-* 1-pc LoRa® Antenna (iPEX)
+* 1-pc LoRa Antenna (iPEX)
 * 2-pcs 4-pin Header
 * 9-pcs Dupont Lines
 
@@ -245,7 +245,7 @@ Depending on the size of the file, the flashing can take several minutes. The su
 In order for you to be able to interface with the RAK4260 Evaluation Board with your Windows Machine and check if you have successfully burned the custom firmware provided by RAKwireless correctly, download the [**RAK Serial Port Tool**](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
 
 :::warning ⚠️ WARNING
-Before powering the RAK4260 Evaluation Board , you should install the LoRa® antenna first . Not doing so might damage the board
+Before powering the RAK4260 Evaluation Board , you should install the LoRa antenna first . Not doing so might damage the board
 :::
 
 1. Connect your RAK4260 Evaluation Board in your Windows Machine using the provided micro-usb cable.

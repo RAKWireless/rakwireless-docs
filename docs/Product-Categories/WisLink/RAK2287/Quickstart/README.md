@@ -24,7 +24,7 @@ The following two sections provide a list of the components and tools you need t
 - **RAK2287 WisLink LPWAN Concentrator**
 - **Raspberry Pi 3/4** (RAK2287 bundle includes a Raspberry Pi 4)
 - **RAK2287 Pi HAT** (RAK2287 bundle includes a RAK2287 Pi HAT)
-- LoRa® and GPS antennas
+- LoRa and GPS antennas
 - A 16G SD card (included in the RAK2287 bundle only), a card reader, and a PC
 
 #### Software Tools
@@ -72,7 +72,7 @@ Insert your **RAK2287 mPCIe card** into the mPCIe slot on the **RAK2003 Pi HAT**
 
 #### Antennas
 
-The module comes with **two antennas, GPS, and LoRa®**. Both have pigtail cables that have uFL connectors, which fit onto the corresponding ports on the RAK2287. The ports are labeled, match each antenna to its port and gently press it until the connectors fit one to the other.
+The module comes with **two antennas, GPS, and LoRa**. Both have pigtail cables that have uFL connectors, which fit onto the corresponding ports on the RAK2287. The ports are labeled, match each antenna to its port and gently press it until the connectors fit one to the other.
 
 :::warning ⚠️WARNING
 It is not recommended to have the device powered with the antennas detached. This might damage the circuity.
@@ -101,7 +101,7 @@ It is recommended to use at least a 2A power supply.
 There are two ways to connect to your RAK2287 WisLink LPWAN Concentrator setup:
 
 :::warning ⚠️WARNING
-Before powering the Raspberry Pi 3B+ or 4, you should install the LoRa® and GPS antennas. Not doing so might damage the boards.
+Before powering the Raspberry Pi 3B+ or 4, you should install the LoRa and GPS antennas. Not doing so might damage the boards.
 :::
 
 #### 1. Wi-Fi AP Mode
@@ -226,14 +226,14 @@ Then, you will see a page the same as figure 1.
 />
 
 1. **Set pi password** - used to set/change the password of the gateway.
-2. **Set up RAK Gateway LoRa® Concentrator** - used to configure the frequency, which the gateway will operate on, and the LoRaWAN® Server which the gateway will work with.
-3. **Restart packet -forwarder** - used to restart the LoRa® packet forwarded process.
-4. **Edit packet-forwarder config-** used to open the global_conf.json file, to edit LoRaWAN®  parameters manually.
+2. **Set up RAK Gateway LoRa Concentrator** - used to configure the frequency, which the gateway will operate on, and the LoRaWAN Server which the gateway will work with.
+3. **Restart packet -forwarder** - used to restart the LoRa packet forwarded process.
+4. **Edit packet-forwarder config-** used to open the global_conf.json file, to edit LoRaWAN  parameters manually.
 5. **Configure Wifi** - used to configure the Wi-Fi settings to connect to a network.
 6. **Configure LAN** - used to configure the Ethernet adapter settings.
 
 :::tip 📝 NOTE
-A unique ID will be generated in for gateway. This is also called Gateway EUI squared in red in the figure above and is essential for registering the gateway with any LoRa® Network Server (TTN, ChirpStack).
+A unique ID will be generated in for gateway. This is also called Gateway EUI squared in red in the figure above and is essential for registering the gateway with any LoRa Network Server (TTN, ChirpStack).
 :::
 
 There is also another way to get your "Gateway ID", just enter the command below in the command line:
@@ -277,17 +277,17 @@ It is a good security practice to change the default password "**raspberry**" wh
 />
 
 
-#### Set up RAK Gateway LoRa® Concentrator
+#### Set up RAK Gateway LoRa Concentrator
 
-This menu allows you to select your LoRa® frequency band and one of the two available Networks Server options by choosing option **2 Setup RAK Gateway LoRa® concentrator**.
+This menu allows you to select your LoRa frequency band and one of the two available Networks Server options by choosing option **2 Setup RAK Gateway LoRa concentrator**.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/3configuring-the-gateway/6.choosing-setup-rak-gateway.png"
   width="100%"
-  caption="Choosing Setup RAK Gateway LoRa® concentrator"
+  caption="Choosing Setup RAK Gateway LoRa concentrator"
 />
 
-You can choose one of two supported LoRa® Servers here: **TTN** or
+You can choose one of two supported LoRa Servers here: **TTN** or
 **ChirpStack**.
 
 ##### Server is TTN
@@ -298,7 +298,7 @@ You can choose one of two supported LoRa® Servers here: **TTN** or
   caption="Server Is TTN"
 />
 
-- **The Things Network (TTN)**: If you choose TTN as the LoRa® Server, you will see the following page. Visit this [article](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html) for more information on your local TTN frequency plan. This will allow you to choose the correct plan.
+- **The Things Network (TTN)**: If you choose TTN as the LoRa Server, you will see the following page. Visit this [article](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html) for more information on your local TTN frequency plan. This will allow you to choose the correct plan.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/3configuring-the-gateway/8.ttn-channel.png"
@@ -323,7 +323,7 @@ After choosing the correct frequency, the success message will appear as shown i
   caption="Server Is Chirpstack"
 />
 
-**ChirpStack**: If you choose Chirpstack as your LoRa® Server, you will see the following page with two options available:
+**ChirpStack**: If you choose Chirpstack as your LoRa Server, you will see the following page with two options available:
 
 - **ChirpStack Channel Plan Configuration** - used to configure your Regional Frequency Band.
 - **ChirpStack ADR Configure** -  used to enable/disable the Adaptive Data Rate (ADR)
@@ -348,7 +348,7 @@ Then, set the IP address of the ChirpStack which you want your gateway to work w
 />
 
 :::tip 📝 NOTE
-The default IP Address is **127.0.0.1**, which means you will be using the Built-in LoRa® Server. If you want to use an independent LoRa® Server running on another device or a cloud based LoRa® Server, you need to set it to the corresponding IP address.
+The default IP Address is **127.0.0.1**, which means you will be using the Built-in LoRa Server. If you want to use an independent LoRa Server running on another device or a cloud based LoRa Server, you need to set it to the corresponding IP address.
 :::
 
 - If you have instead selected "**Chirpstack ADR Configure**", you can enable/disable the Adaptive Data Rate (ADR) functionality:
@@ -429,7 +429,7 @@ Make sure to input the correct Wi-Fi SSID and Password or you will not be able t
 If you want to connect to the router through Ethernet Cable, do the following steps:
 
 - In the main configuration menu, choose **“6 Configure LAN”**. This will let you set up a static IP address for the Gateway’s Ethernet adapter.
-- Just fill a static IP Address according to the IP address of the router you want to connect. Note that the LoRaWAN® gateway and the router must be in the same network segment, otherwise the connection fails.
+- Just fill a static IP Address according to the IP address of the router you want to connect. Note that the LoRaWAN gateway and the router must be in the same network segment, otherwise the connection fails.
 - By default, the IP Address of the gateway's Ethernet is `192.168.10.10`.
 
 
@@ -481,7 +481,7 @@ cd > rak_ap
 The Things Network is about enabling low power devices to use long range gateways to connect to an open-source, decentralized network to exchange data with Application. Learn more about the Things Network [here](https://www.thethingsnetwork.org/docs/).
 
 - First, you should have connected your  gateway to the router in order to access the internet according to the method which has been introduced in the [auto$](/rak2287-concentrator-module-wislink-series/connecting-to-a-network) section of this document.
-- Second, config your  gateway and choose TTN as the LoRa® Server and choose a correct frequency according to the method which has been introduced in the [auto$](/rak2287-concentrator-module-wislink-series/configuring-the-gateway) section.
+- Second, config your  gateway and choose TTN as the LoRa Server and choose a correct frequency according to the method which has been introduced in the [auto$](/rak2287-concentrator-module-wislink-series/configuring-the-gateway) section.
 - Now go to the TTN Website: [https://www.thethingsnetwork.org/](https://www.thethingsnetwork.org/) and Login. You will then see the following page:
 
 <rk-img
@@ -536,7 +536,7 @@ Click Register Gateway and wait for a couple of minutes . If the status of your 
 
 ### Connect the Gateway with Chirpstack
 
-The ChirpStack or previously known as LoRaServer project provides open-source components for building LoRaWAN® networks. You can learn more about ChirpStack [**here**](https://www.chirpstack.io/)
+The ChirpStack or previously known as LoRaServer project provides open-source components for building LoRaWAN networks. You can learn more about ChirpStack [**here**](https://www.chirpstack.io/)
 
 For the RAKwireless Developer Gateways, there are 2 ways to use the ChirpStack:
 
@@ -544,8 +544,8 @@ For the RAKwireless Developer Gateways, there are 2 ways to use the ChirpStack:
 
 There is a built-in ChirpStack in every RAK Developer gateway if you use the latest firmware.
 
-- When you use it for the first time after burning the latest firmware, the gateway will work in the EU868 Band and use the built-in ChirpStack as its default LoRa®  Server. If you don't want to change the frequency or LoRa® Server, you don't have to do anything as this will be configured automatically when the gateway boots.
-- However if it is not the first time and you want to use the built-in ChirpStack as the LoRa® Server, follow the steps discussed in [auto$](/rak2287-concentrator-module-wislink-series/configuring-the-gateway) section.
+- When you use it for the first time after burning the latest firmware, the gateway will work in the EU868 Band and use the built-in ChirpStack as its default LoRa  Server. If you don't want to change the frequency or LoRa Server, you don't have to do anything as this will be configured automatically when the gateway boots.
+- However if it is not the first time and you want to use the built-in ChirpStack as the LoRa Server, follow the steps discussed in [auto$](/rak2287-concentrator-module-wislink-series/configuring-the-gateway) section.
 - **Optional:** If ever you disabled the AP Mode and you have connected it to your own Wifi network (Client Mode). You can search for your gateway’s IP Address via [**Advanced IP Scanner**](https://www.advanced-ip-scanner.com/). Copy the IP Address of your gateway, it should have a Manufacturer name of **Raspberry Pi Foundation**:
 
 

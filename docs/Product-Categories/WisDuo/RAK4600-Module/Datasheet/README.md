@@ -19,13 +19,13 @@ prev: ../Deep-Development/
 
 ### Description
 
-RAK4600 WisDuo LPWAN Module includes an nRF52832 MCU and an SX1276 LoRa® chip. It has Ultra-Low Power Consumption of 2.0uA in sleep mode, high LoRa® output power up to 20dB max in work mode, and BLE output power up to 4dBm.
+RAK4600 WisDuo LPWAN Module includes an nRF52832 MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumption of 2.0uA in sleep mode, high LoRa output power up to 20dB max in work mode, and BLE output power up to 4dBm.
 
-The module complies with LoRaWAN® 1.0.2 protocols. It also supports LoRa® Point to Point communications. The Module supports BLE 5.0 in addition to LoRa®. Its RF communication capabilities (LoRa®+BLE) make it suitable for a variety of applications in the IoT field.
+The module complies with LoRaWAN 1.0.2 protocols. It also supports LoRa Point to Point communications. The Module supports BLE 5.0 in addition to LoRa. Its RF communication capabilities (LoRa+BLE) make it suitable for a variety of applications in the IoT field.
 
 ### Features
 
-- LoRa® module for Smart City, Smart Agriculture, Smart Industry
+- LoRa module for Smart City, Smart Agriculture, Smart Industry
 - Compact Form Factor: 15 x 23 x 2.5 mm
 - 42 Pin Stamp Pad for PCB SMT mounting
 - I/O ports: UART/I2C/GPIO (optional NFC interface)
@@ -34,7 +34,7 @@ The module complies with LoRaWAN® 1.0.2 protocols. It also supports LoRa® Poin
 - Frequency range: 863–870MHz (EU) / 902–928MHz (US), ISM and SRD systems
 - Low-Power Wireless Systems with 7.8kHz to 500KHz Bandwidth
 - Ultra-Low Power Consumption 11.2μA in Sleep mode
-- LoRa® Boost mode with 20dBm output power
+- LoRa Boost mode with 20dBm output power
 - BLE 5.0 (Tx power -20 to +4 dBm in 4dB steps)
 
 ## Specifications
@@ -101,7 +101,7 @@ The hardware specifications are categorized into five parts. It discusses the in
 | 14      | GND        |         | Ground                                         |
 | 15      | RF_BT      | I/O     | BLE<br>RF OUT                                  |
 | 16      | GND        |         | Ground                                         |
-| 17      | RF_L       | I/O     | LoRa®<br>RF OUT                                |
+| 17      | RF_L       | I/O     | LoRa<br>RF OUT                                |
 | 18      | GND        |         | Ground                                         |
 | 19      | GND        |         | Ground                                         |
 | 20      | GND        |         | Ground                                         |
@@ -133,7 +133,7 @@ The hardware specifications are categorized into five parts. It discusses the in
 
 ##### Operating Frequencies
 
-The board supports the following LoRaWAN® frequency channels shown in the table below. The frequency parameter is easy to configure as you go through the device configuration setup.
+The board supports the following LoRaWAN frequency channels shown in the table below. The frequency parameter is easy to configure as you go through the device configuration setup.
 
 | **Region**    | **Frequency (MHz)** |
 | ------------- | ------------------- |
@@ -155,10 +155,10 @@ Shown in the table provided below is the typical current consumption of the RAK4
 
 | **Item**               | **Current Consumption** | **Condition**                    |
 | ---------------------- | ----------------------- | -------------------------------- |
-| **LoRa® TX** @20dBm    | 125mA                   | LoRa® @ PA_BOOST & BT sleep      |
-| **LoRa® TX** @17dBm    | 92mA                    | LoRa® @ PA_BOOST & BT sleep      |
-| **BT TX** @4dBm        | 9mA                     | BT Tx mode & LoRa® sleep         |
-| **LoRa® RX** @37.5Kbps | 17mA                    |                                  |
+| **LoRa TX** @20dBm    | 125mA                   | LoRa @ PA_BOOST & BT sleep      |
+| **LoRa TX** @17dBm    | 92mA                    | LoRa @ PA_BOOST & BT sleep      |
+| **BT TX** @4dBm        | 9mA                     | BT Tx mode & LoRa sleep         |
+| **LoRa RX** @37.5Kbps | 17mA                    |                                  |
 | **BT RX** @2Mbps       | 11.5mA                  |                                  |
 | **Node Sleep**         | 2.0μA                   | The whole board is in sleep mode |
 
@@ -171,9 +171,9 @@ The figures below are the average current consumption based on the different tes
 - Oscilloscope
 - RAK4600 WisDuo LPWAN Module
 
-**LoRa® Packet Sending**
+**LoRa Packet Sending**
 
-The RAK4600 WisDuo LPWAN Module takes **92.291 ms** to send a LoRa® packet which consumes **119 mA** of current.
+The RAK4600 WisDuo LPWAN Module takes **92.291 ms** to send a LoRa packet which consumes **119 mA** of current.
 
 - **Sending Time**: 92.291 ms
 - **Current consumption**: 119 mA
@@ -181,12 +181,12 @@ The RAK4600 WisDuo LPWAN Module takes **92.291 ms** to send a LoRa® packet whic
 <rk-img
   src="/assets/images/wisduo/rak4600-module/datasheet/electrical-characteristics/awyqt4s9r3469vtgai1p.jpg"
   width="70%"
-  caption="Oscilloscope Screen Capture of LoRa® Packet Sending"
+  caption="Oscilloscope Screen Capture of LoRa Packet Sending"
 />
 
-**LoRa® Packet Receiving**
+**LoRa Packet Receiving**
 
-The RAK4600 WisDuo LPWAN Module takes **30.052 ms** to receive a LoRa® packet which consumes **13.8 mA** of current.
+The RAK4600 WisDuo LPWAN Module takes **30.052 ms** to receive a LoRa packet which consumes **13.8 mA** of current.
 
 - **Receiving Time**: 30.052 ms
 - **Current consumption**: 13.8 mA
@@ -194,7 +194,7 @@ The RAK4600 WisDuo LPWAN Module takes **30.052 ms** to receive a LoRa® packet w
 <rk-img
   src="/assets/images/wisduo/rak4600-module/datasheet/electrical-characteristics/ufgf8mxmibztzhezvr6l.jpg"
   width="70%"
-  caption="Oscilloscope Screen Capture of LoRa® Packet Receiving"
+  caption="Oscilloscope Screen Capture of LoRa Packet Receiving"
 />
 
 **Sleep Mode**

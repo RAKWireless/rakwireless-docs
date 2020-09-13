@@ -20,13 +20,13 @@ certifications:
 
 ### Description
 
-The concentrator module **RAK831** is designed for a wide variety of applications like **Smart Metering**, **IoT** (Internet of Things) and **M2M** (Machine-to-machine) applications. It is a multi- channel high performance Transceiver module designed to receive several LoRa® packets simultaneously using different spreading factors on multiple channels. The concentrator module RAK831 can be integrated into a gateway as a complete RF front-end of this gateway. It provides the possibility to enable robust communication between a gateway and a huge amount of LoRa® end-nodes spread over a wide range of distance. The RAK831 needs a host system for proper operation.
+The concentrator module **RAK831** is designed for a wide variety of applications like **Smart Metering**, **IoT** (Internet of Things) and **M2M** (Machine-to-machine) applications. It is a multi- channel high performance Transceiver module designed to receive several LoRa packets simultaneously using different spreading factors on multiple channels. The concentrator module RAK831 can be integrated into a gateway as a complete RF front-end of this gateway. It provides the possibility to enable robust communication between a gateway and a huge amount of LoRa end-nodes spread over a wide range of distance. The RAK831 needs a host system for proper operation.
 
 This is an ideal modular product to help you realize the whole Lora® system development. With the USB-SPI converter module FT2232, you can quickly make the software development in your PC. Also, you can integrate the concentrator module to your production product to realize the gateway function. This is very economic way to address for a huge variety of applications like Smart Grid, Intelligent Farm, intelligent Farm and Other IoT applications.
 
 The RAK831 needs a host system like Raspberry Pi or WisAP (OpenWRT based) or WisCam for proper operation . The host processor can be a PC or MCU that will be connected to RAK831 via USB or SPI.
 
-RAK831 is able to receive up to 8 LoRa® packets simultaneously sent with different spreading factors on different channels. This unique capability allows the implementation of innovative network architectures advantageous over other short range systems:
+RAK831 is able to receive up to 8 LoRa packets simultaneously sent with different spreading factors on different channels. This unique capability allows the implementation of innovative network architectures advantageous over other short range systems:
 
 End-point nodes (e.g. sensor nodes) can change frequency with each transmission in a random pattern. This provides vast improvement of the system robustness in terms of interference immunity and radio channel diversity.
 
@@ -35,14 +35,14 @@ Applications possible with the RAK831 include Smart Metering , Wireless Star Net
 ### Features
 
 - **Compact size** 80 mm 50 mm x 5 mm
-- LoRaWAN® modulation technology
+- LoRaWAN modulation technology
 - **Frequency bands**: 433 MHz, 470 MHz, 868 MHz, 915 MHz
 - Orthogonal spreading factors
 - **Minimum Sensitivity**: -142.5 dBm
 - **Maximum Link Allotment**: 162 dB
 - SPI interface
 - SX1301 base band processor
-- Emulates up to forty-nine (49) LoRa® demodulators
+- Emulates up to forty-nine (49) LoRa demodulators
 - Twelve (12) parallel demodulation paths
 - One (1) (G) FSK demodulator
 - Two (2) SX1257 Tx/Rx front-ends High frequency
@@ -85,7 +85,7 @@ The outer dimensions of the RAK831 are given by **80 mm x 50mm** with ± 0.2 mm 
 
 ##### SX1301
 
-The RAK831 includes Semtech’s SX1301 which is a digital baseband chip which includes a massive digital signal processing engine specifically designed to offer breakthrough gateway capabilities in the ISM bands worldwide. SX1301 integrates the LoRa® concentrator IP.
+The RAK831 includes Semtech’s SX1301 which is a digital baseband chip which includes a massive digital signal processing engine specifically designed to offer breakthrough gateway capabilities in the ISM bands worldwide. SX1301 integrates the LoRa concentrator IP.
 
 <rk-img
   src="/assets/images/wislink-lora/rak831/datasheet/block-diagram-sx1301.png"
@@ -93,7 +93,7 @@ The RAK831 includes Semtech’s SX1301 which is a digital baseband chip which in
   caption="SX1301 Chip Block Diagram"
 />
 
-The SX1301 is a smart baseband processor for long range ISM communication. In the receiver part, it receives I and Q digitized bit stream for one or two receivers (SX1257), demodulates these signals using several demodulators, adapting the demodulators settings to the received signal and stores the received demodulated packets in a FIFO to be retrieved from a host system (PC, MCU). In the transmitter part, the packets are modulated using a programmable (G)FSK/LoRa® modulator and sent to one transmitter (SX1257). Received packets can be time-stamped using a GPS PPS input.
+The SX1301 is a smart baseband processor for long range ISM communication. In the receiver part, it receives I and Q digitized bit stream for one or two receivers (SX1257), demodulates these signals using several demodulators, adapting the demodulators settings to the received signal and stores the received demodulated packets in a FIFO to be retrieved from a host system (PC, MCU). In the transmitter part, the packets are modulated using a programmable (G)FSK/LoRa modulator and sent to one transmitter (SX1257). Received packets can be time-stamped using a GPS PPS input.
 
 The SX1301 has an internal control block that receives microcode from the host system (e.g. PC, MCU). The microcode is provided by Semtech as a binary file to load into the SX1301 at power-on (see Semtech application support for more information).
 
@@ -113,7 +113,7 @@ The SX1301 digital baseband chip contains ten (10) programmable reception paths.
 
 ###### IF8 LORA® channel
 
-This channel is connected to one SX1257 using any arbitrary intermediate frequency within the allowed range. This channel is LoRa® only. The demodulation bandwidth can be configured to be 125, 250 or 500 kHz. The data rate can be configured to any of the LoRa® available data rates (SF7 to SF12) but, as opposed to IF0 to IF7, only the configured data rate will be demodulated. This channel is intended to serve as a high speed backhaul link to other gateways or infrastructure equipment. This demodulation path is compatible with the signal transmitted by the SX1272 and SX1276 chip family.
+This channel is connected to one SX1257 using any arbitrary intermediate frequency within the allowed range. This channel is LoRa only. The demodulation bandwidth can be configured to be 125, 250 or 500 kHz. The data rate can be configured to any of the LoRa available data rates (SF7 to SF12) but, as opposed to IF0 to IF7, only the configured data rate will be demodulated. This channel is intended to serve as a high speed backhaul link to other gateways or infrastructure equipment. This demodulation path is compatible with the signal transmitted by the SX1272 and SX1276 chip family.
 
 ###### IF9 (G) FSK channel
 
@@ -125,7 +125,7 @@ Those channels are connected to one SX1257. The channel bandwidth is 125 kHz and
 
 Several packets using different data rates (different spreading factors) may be demodulated simultaneously even on the same channel. Those channels are intended to be used for a massive asynchronous star network of 10000’s of sensor nodes. Each sensor may use a random channel (amongst IF0 to IF7) and a different data rate for any transmission.
 
-Sensors located near the gateway will typically use the highest possible data rate in the fixed 125 kHz channel bandwidth (e.g. 6 kbit/s) while sensors located far away will use a lower data rate down to 300 bit/s (minimum LoRa® data rate in a 125 kHz channel).
+Sensors located near the gateway will typically use the highest possible data rate in the fixed 125 kHz channel bandwidth (e.g. 6 kbit/s) while sensors located far away will use a lower data rate down to 300 bit/s (minimum LoRa data rate in a 125 kHz channel).
 
 The SX1301 digital baseband chip scans the 8 channels (IF0 to IF7) for preambles of all data rates at all times.
 
@@ -138,7 +138,7 @@ The unique multi data-rate multi-channel demodulation capacity SF7 to SF12 and o
 <rk-img
   src="/assets/images/wislink-lora/rak831/datasheet/lora_channels.png"
   width="70%"
-  caption="IF0 to IF7 LoRa® Channels"
+  caption="IF0 to IF7 LoRa Channels"
 />
 
 ### Hardware
@@ -243,7 +243,7 @@ The table below is for 868 MHz RAK831 WisLink LPWAN Concentrator. Other frequenc
 | Parameter                              | Condition              | Min  | Typ. | Max  | Unit |
 | -------------------------------------- | ---------------------- | ---- | ---- | ---- | ---- |
 | Frequency Range                        |                        | 863  |      | 870  | MHz  |
-| Modulation Techniques                  | FSK/LoRaWAN®           |      |      |      |      |
+| Modulation Techniques                  | FSK/LoRaWAN           |      |      |      |      |
 | TX Frequency Variation vs. Temperature | Power Level Setting:20 | -3   |      | +3   | KHz  |
 | TX Power Variation vs. Temperature     | Power Level Setting:20 | -5   |      | +5   | dB   |
 | TX Power Variation                     |                        | -1.5 |      | +1.5 | dB   |

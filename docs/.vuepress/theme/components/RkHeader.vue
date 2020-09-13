@@ -1,11 +1,12 @@
 <template>
   <div
+    id="div-wrapper"
     class="wrapper fit flex flex-center text-white"
     :class="{ 'height-1': !ltMdDiv, 'height-2': ltMdDiv }"
   >
     <q-parallax class="fit">
       <template v-slot:media>
-        <img :src="header.img" />
+        <img :src="header.img" id="header-img" />
       </template>
 
       <template v-slot:content="scope">
@@ -56,11 +57,18 @@ export default {
     bgImg() {}
   },
   methods: {
-    onTagClick (tag) {
+    onTagClick(tag) {
       this.$root.tag = tag.replace(/-/g, ' ')
       // console.log(this.$root.tag)
       this.$router.push('/Knowledge-Hub/Learn/')
     }
+  },
+  updated() {
+    const wrapper = document.getElementById('div-wrapper')
+    const img = document.getElementById('header-img')
+    const style = getComputedStyle(wrapper)
+    const height = parseInt(style.height)
+    img.style['min-height'] = `${height + 0.25 * height}px`
   }
 }
 </script>

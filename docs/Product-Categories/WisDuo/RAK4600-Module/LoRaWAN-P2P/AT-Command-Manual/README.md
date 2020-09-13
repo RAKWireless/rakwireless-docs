@@ -8,9 +8,9 @@ tags: RAK4600
 
 ## Introduction
 
-The RAK4600 module is designed to simplify LoRa® peer to peer and LoRaWAN® communication. This module saves customers to deal with complicated SPI protocol with the LoRa® transceivers and instead, a well-known serial communication interface is provided for sending commands and requesting internal status of the module. This approach allows a straightforward way to integrate LoRa® technology into your projects. 
+The RAK4600 module is designed to simplify LoRa peer to peer and LoRaWAN communication. This module saves customers to deal with complicated SPI protocol with the LoRa transceivers and instead, a well-known serial communication interface is provided for sending commands and requesting internal status of the module. This approach allows a straightforward way to integrate LoRa technology into your projects. 
 
-On top of this serial interface a set of AT commands are defined, an external micro controller will be able to control the RAK4600 module as a classic AT modem. Through the AT commands, customers can set parameters of the LoRaWAN® communication, controlling GPIO pins, analog inputs, etc. 
+On top of this serial interface a set of AT commands are defined, an external micro controller will be able to control the RAK4600 module as a classic AT modem. Through the AT commands, customers can set parameters of the LoRaWAN communication, controlling GPIO pins, analog inputs, etc. 
 
 In the RAK4600 module, the serial communication is exposed on the UART1 port, through the pin 22 (RX) and pin 23 (TX). The parameters of the UART1 communication are: 115200 / 8-N-1. The firmware upgrade is also possible through this port. In order to get familiar with the pin distribution of this module and find a schematic circuit of a reference application, please refer to the “RAK4200 Specification Manual”. We provide a summary in the Appendix IV.
 
@@ -36,7 +36,7 @@ Example:
 ```
 at+send=lora:<m>:<n>
 ```
-The purpose is to execute an action. This will send data through the LoRa® transceiver. 
+The purpose is to execute an action. This will send data through the LoRa transceiver. 
 
 *	**Special Command**: The RAK4600 UART port has two operational modes: configuration mode and data transmission mode. When switching from data transmission mode to configuration mode the command to be entered is “+++” and does not contain terminators such as ‘\ r’ and ‘\ n’.
 
@@ -82,35 +82,35 @@ ERROR: [Err Code]\r\n
         </tr>
         <tr>
             <td>80</td>
-            <td>The LoRa® transceiver is busy, could not process a new command.</td>
+            <td>The LoRa transceiver is busy, could not process a new command.</td>
         </tr>
         <tr>
             <td>81</td>
-            <td>LoRa® service is unknown. Unknown MAC command received by node. Execute commands that are not supported in the current state, such as sending "adjoin" command in P2P mode.</td>
+            <td>LoRa service is unknown. Unknown MAC command received by node. Execute commands that are not supported in the current state, such as sending "adjoin" command in P2P mode.</td>
         </tr>
         <tr>
             <td>82</td>
-            <td>The LoRa® parameters are invalid.</td>
+            <td>The LoRa parameters are invalid.</td>
         </tr>
         <tr>
             <td>83</td>
-            <td>The LoRa® frequency is invalid.</td>
+            <td>The LoRa frequency is invalid.</td>
         </tr>
         <tr>
             <td>84</td>
-            <td>The LoRa® data rate (DR) is invalid.</td>
+            <td>The LoRa data rate (DR) is invalid.</td>
         </tr>
         <tr>
             <td>85</td>
-            <td>The LoRa® frequency and data rate are invalid.</td>
+            <td>The LoRa frequency and data rate are invalid.</td>
         </tr>
         <tr>
             <td>86</td>
-            <td>The device hasn’t joined into a LoRa® network.</td>
+            <td>The device hasn’t joined into a LoRa network.</td>
         </tr>
         <tr>
             <td>87</td>
-            <td>The length of the packet exceeded that maximum allowed by the LoRa® protocol.</td>
+            <td>The length of the packet exceeded that maximum allowed by the LoRa protocol.</td>
         </tr>
         <tr>
             <td>88</td>
@@ -126,11 +126,11 @@ ERROR: [Err Code]\r\n
         </tr>
         <tr>
             <td>91</td>
-            <td>No valid LoRa® channel could be found.</td>
+            <td>No valid LoRa channel could be found.</td>
         </tr>
         <tr>
             <td>92</td>
-            <td>No available LoRa® channel could be found.</td>
+            <td>No available LoRa channel could be found.</td>
         </tr>
         <tr>
             <td>93</td>
@@ -138,27 +138,27 @@ ERROR: [Err Code]\r\n
         </tr>
         <tr>
             <td>94</td>
-            <td>Time out reached while sending the packet through the LoRa® transceiver.</td>
+            <td>Time out reached while sending the packet through the LoRa transceiver.</td>
         </tr>
         <tr>
             <td>95</td>
-            <td>Time out reached while waiting for a packet in the LoRa® RX1 window.</td>
+            <td>Time out reached while waiting for a packet in the LoRa RX1 window.</td>
         </tr>
         <tr>
             <td>96</td>
-            <td>Time out reached while waiting for a packet in the LoRa® RX2 window.</td>
+            <td>Time out reached while waiting for a packet in the LoRa RX2 window.</td>
         </tr>
         <tr>
             <td>97</td>
-            <td>There is an error while receiving a packet during the LoRa® RX1 window.</td>
+            <td>There is an error while receiving a packet during the LoRa RX1 window.</td>
         </tr>
         <tr>
             <td>98</td>
-            <td>There is an error while receiving a packet during the LoRa® RX2 window.</td>
+            <td>There is an error while receiving a packet during the LoRa RX2 window.</td>
         </tr>
         <tr>
             <td>99</td>
-            <td>Failed to join into a LoRa® network.</td>
+            <td>Failed to join into a LoRa network.</td>
         </tr>
         <tr>
             <td>100</td>
@@ -178,7 +178,7 @@ ERROR: [Err Code]\r\n
         </tr>
         <tr>
             <td>104</td>
-            <td>Invalid MIC was detected in the LoRa® message.</td>
+            <td>Invalid MIC was detected in the LoRa message.</td>
         </tr>
 </tbody>
 </table>
@@ -275,7 +275,7 @@ This command is used for restarting the device.
 ```
 at+set_config=device:restart\r\n                         
 UART1 work mode: RUI_UART_NORMAL
-Current work_mode:LoRaWAN®, join_mode:ABP, Class: A
+Current work_mode:LoRaWAN, join_mode:ABP, Class: A
 Initialization OK
 ```
 4. <b>at+set_config=device:sleep:`<status>`</b>
@@ -319,7 +319,7 @@ This command is used for obtaining status of the device.
 at+get_config=device:status\r\n                         
 OK Board Core:RAK4600
 MCU:nRF52832
-LoRa® chip:SX1276
+LoRa chip:SX1276
 ```
 ## Interface Type AT Command
 
@@ -377,11 +377,11 @@ OK
 +++
 OK
 ```
-## LoRaWAN® Type AT Command
+## LoRaWAN Type AT Command
 
 1. <b>at+join</b>
 
-This command is used for joining the LoRaWAN® network. 
+This command is used for joining the LoRaWAN network. 
 
 |Operation|Command|Response|
 |---------|-------|--------|
@@ -396,7 +396,7 @@ OK Join Success
 ```
 2. <b>at+send=lora:`<port>:<data>`</b>
 
-This command is used for sending data via LoRaWAN®.
+This command is used for sending data via LoRaWAN.
 
 |Operation|Command|Response|
 |---------|-------|--------|
@@ -412,7 +412,7 @@ This command is used for sending data via LoRaWAN®.
         </tr>
         <tr>
             <td>data</td>
-            <td>The sending data format is in hexadecimal format. The possible values are between 00-FF. The module internally will cast every two characters into a byte before sending it to the LoRa® transceiver. The maximum length varies depending on the band frequency and DR (LoRaWAN® standard). Please refer to Appendix III.</td>
+            <td>The sending data format is in hexadecimal format. The possible values are between 00-FF. The module internally will cast every two characters into a byte before sending it to the LoRa transceiver. The maximum length varies depending on the band frequency and DR (LoRaWAN standard). Please refer to Appendix III.</td>
         </tr>
 </tbody>
 </table>
@@ -432,7 +432,7 @@ at+recv=0,-105,-12,0
 :::tip 📝 NOTE:
 When sending a confirmed message, you will receive an ACK response, i.e. “at+recv=...”. In “0, -105, -12,0".
 
-* 0 stands for the LoRa® port
+* 0 stands for the LoRa port
 * -105 stands for the RSSI
 * -12 stands for the SNR
 * 0 stands for the length of the data (no valid data in ACK).
@@ -471,7 +471,7 @@ In the AS923 frequency band, the supported frequency plan is "as2" and dwell tim
 
 4. <b>at+get_config=lora:channel</b>
 
-This command is used for reading all the LoRa® channel information for the device's current region.
+This command is used for reading all the LoRa channel information for the device's current region.
 
 |Operation|Command|Response|
 |---------|-------|--------|
@@ -527,7 +527,7 @@ OK
 
 6. <b>at+set_config=lora:dev_eui:`<dev_eui>`</b>
 
-This command is used for setting the Device EUI parameter for LoRaWAN® OTAA mode.
+This command is used for setting the Device EUI parameter for LoRaWAN OTAA mode.
 
 |Operation|Command|Response|
 |---------|-------|--------|
@@ -550,7 +550,7 @@ OK
 ```
 7.	<b>at+set_config=lora:app_eui:`<app_eui>`</b>
 
-This command is used for setting the Application EUI parameter for the LoRaWAN® OTAA mode.
+This command is used for setting the Application EUI parameter for the LoRaWAN OTAA mode.
 
 |Operation|Command|Response|
 |---------|-------|--------|
@@ -573,7 +573,7 @@ OK
 ```
 8. <b>at+set_config=lora:app_key:`<app_key>`</b>
 
-This command is used for setting the Application Key parameter for the LoRaWAN® OTAA mode.
+This command is used for setting the Application Key parameter for the LoRaWAN OTAA mode.
 
 |Operation|Command|Response|
 |---------|-------|--------|
@@ -596,7 +596,7 @@ OK
 ```
 9. <b>at+set_config=lora:dev_addr:`<dev_addr>`</b>
 
-This command is used for setting the Device Address parameter for the LoRaWAN® ABP mode.
+This command is used for setting the Device Address parameter for the LoRaWAN ABP mode.
 
 |Operation|Command|Response|
 |---------|-------|--------|
@@ -620,7 +620,7 @@ OK
 
 10. <b>at+set_config=lora:apps_key:`<apps_key>`</b>
 
-This command is used for setting the Application Session Key parameter for the LoRaWAN® ABP mode.
+This command is used for setting the Application Session Key parameter for the LoRaWAN ABP mode.
 
 |Operation|Command|Response|
 |---------|-------|--------|
@@ -644,7 +644,7 @@ OK
 
 11. <b>at+set_config=lora:nwks_key:`<nwks_key>`</b>
 
-This command is used for setting the Network Session Key parameter for the LoRaWAN® ABP mode
+This command is used for setting the Network Session Key parameter for the LoRaWAN ABP mode
 
 |Operation|Command|Response|
 |---------|-------|--------|
@@ -763,7 +763,7 @@ OK
 
 16. <b>at+set_config=lora:join_mode:`<mode>`</b>
 
-This command is used for switching the LoRaWAN® access mode between the OTAA and the ABP mode.
+This command is used for switching the LoRaWAN access mode between the OTAA and the ABP mode.
 
 |Operation|Command|Response|
 |---------|-------|--------|
@@ -787,7 +787,7 @@ OK
 
 17. <b>at+set_config=lora:class:`<class>`</b>
 
-This command is used for setting LoRaWAN® class to Class A, Class B, or Class C.
+This command is used for setting LoRaWAN class to Class A, Class B, or Class C.
 
 |Operation|Command|Response|
 |---------|-------|--------|
@@ -846,14 +846,14 @@ This command is used for setting the data rate (DR) of LoRa.
 <tbody>
         <tr>
             <td>dr</td>
-            <td>The data rate of LoRa® is related to the current region. In most LoRa® areas, it is common to use 0 to 5. Detailed reference can be made to LoRaWan1.0.2 specification.</td>
+            <td>The data rate of LoRa is related to the current region. In most LoRa areas, it is common to use 0 to 5. Detailed reference can be made to LoRaWan1.0.2 specification.</td>
         </tr>
 </tbody>
 </table>
 
 20. <b>at+set_config=lora:tx_power:`<tx_power>`</b>
 
-This command is used for setting the level of the RF transmission power level of the LoRa® transceiver. The unit is in dBm.
+This command is used for setting the level of the RF transmission power level of the LoRa transceiver. The unit is in dBm.
 
 |Operation|Command|Response|
 |---------|-------|--------|
@@ -864,7 +864,7 @@ This command is used for setting the level of the RF transmission power level of
 <tbody>
         <tr>
             <td>tx_power</td>
-            <td>LoRa's transmit power level varies depending on frequency band and DR. Please refer to the LoRaWAN® 1.0.2 specification or Appendix II for details.The default is 0.</td>
+            <td>LoRa's transmit power level varies depending on frequency band and DR. Please refer to the LoRaWAN 1.0.2 specification or Appendix II for details.The default is 0.</td>
         </tr>
 </tbody>
 </table>
@@ -877,7 +877,7 @@ OK
 
 21. <b>at+set_config=lora:adr:`<status>`</b>
 
-This command is used for setting (turn on/off) the ADR feature of the LoRa® communication. 
+This command is used for setting (turn on/off) the ADR feature of the LoRa communication. 
 
 |Operation|Command|Response|
 |---------|-------|--------|
@@ -901,7 +901,7 @@ OK
 
 22. <b>at+get_config=lora:status</b>
 
-This command is used for getting all of the information related to the current LoRa® status (except channel information).
+This command is used for getting all of the information related to the current LoRa status (except channel information).
 
 |Operation|Command|Response|
 |---------|-------|--------|
@@ -912,7 +912,7 @@ This command is used for getting all of the information related to the current L
 **Example**：
 ```
 at+get_config=lora:status\r\n                         
-OK Work Mode: LoRaWAN®
+OK Work Mode: LoRaWAN
 Region: EU868
 Send_interval: 600s
 Auto send status: false.
@@ -1005,11 +1005,11 @@ This command is used to restore OTAA, ABP, multicast related network access para
 at+set_config=lora:default_parameters\r\n
 OK
 ```
-## LoRa® P2P Type AT Command
+## LoRa P2P Type AT Command
 
 1. <b>at+set_config=lora:work_mode:`<mode>`</b>
 
-This command is used for switching the LoRa's transmission mode between the LoRaWAN® and the LoRAP2p mode. This command will cause the module to restart once applied.
+This command is used for switching the LoRa's transmission mode between the LoRaWAN and the LoRAP2p mode. This command will cause the module to restart once applied.
 
 |Operation|Command|Response|
 |---------|-------|--------|
@@ -1020,7 +1020,7 @@ This command is used for switching the LoRa's transmission mode between the LoRa
 <tbody>
         <tr>
             <td>mode</td>
-            <td>Work mode of LoRa<br>0: LoRaWAN®<br>1: LoRaP2P <br><br>The default is LoRaWAN® mode</td>
+            <td>Work mode of LoRa<br>0: LoRaWAN<br>1: LoRaP2P <br><br>The default is LoRaWAN mode</td>
         </tr>
 </tbody>
 </table>
@@ -1035,7 +1035,7 @@ Initialization OK
 
 2. <b>at+set_config=lorap2p:`<frequency>:<spreadfact>:<bandwidth>:<codingrate>:<preamlen>:<power>`</b>
 
-This command is used for setting the relevant parameters of LoRAP2p mode and is only valid when the LoRa® mode was switched to LoRaP2P before.
+This command is used for setting the relevant parameters of LoRAP2p mode and is only valid when the LoRa mode was switched to LoRaP2P before.
 
 |Operation|Command|Response|
 |---------|-------|--------|
@@ -1079,7 +1079,7 @@ OK
 
 3. <b>at+set_config=lorap2p:transfer_mode:`<mode>`</b>
 
-This command is used for switching the state of the LoRa® transceiver between sending and receiving state, and it’s only valid when the LoRa® mode was set to LoRaP2P before.
+This command is used for switching the state of the LoRa transceiver between sending and receiving state, and it’s only valid when the LoRa mode was set to LoRaP2P before.
 
 |Operation|Command|Response|
 |---------|-------|--------|
@@ -1103,7 +1103,7 @@ OK
 
 4. <b>at+send=lorap2p:`<data>`</b>
 
-This command is used for sending data through LoRaP2P, and only valid when the LoRa® work mode was set to LoRaP2P before.
+This command is used for sending data through LoRaP2P, and only valid when the LoRa work mode was set to LoRaP2P before.
 
 |Operation|Command|Response|
 |---------|-------|--------|
@@ -1124,7 +1124,7 @@ This command is used for sending data through LoRaP2P, and only valid when the L
 at+send=lorap2p:1234\r\n                         
 OK
 ```
-In LoRa® P2P mode, the receiving node receives the data and outputs the data in the following format:
+In LoRa P2P mode, the receiving node receives the data and outputs the data in the following format:
 
 ```
 at+recv=<RSSI>,<SNR>,< Data Length >:< Data >

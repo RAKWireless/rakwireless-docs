@@ -94,7 +94,7 @@ author:
 **OK, you've install and configure PlatformIO for WisBlock successfully.**
 
 <b>Example:</b>
-* Now, let's try to compile an example of WisBlock using PlatformIO. We use the LoRaWAN® OTAA example in this document:
+* Now, let's try to compile an example of WisBlock using PlatformIO. We use the LoRaWAN OTAA example in this document:
 
 [https://github.com/RAKWireless/WisBlock/tree/master/examples/communications/LoRa/LoRaWAN/LoRaWAN_OTAA/](https://github.com/RAKWireless/WisBlock/tree/master/examples/communications/LoRa/LoRaWAN/LoRaWAN_OTAA/)
 
@@ -106,7 +106,7 @@ author:
   caption="Project source code"
 />
 
-2. Then we need to install the LoRaWAN® library "**SX126x-Arduino**" in PlatformIO firstly because this example is built based on this library. Just search "**SX126x**" in "**Libraries**" item of PlatformIO, and you can see "**SX126x-Arduino**" as follow:
+2. Then we need to install the LoRaWAN library "**SX126x-Arduino**" in PlatformIO firstly because this example is built based on this library. Just search "**SX126x**" in "**Libraries**" item of PlatformIO, and you can see "**SX126x-Arduino**" as follow:
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Board-Support-Package-Installation-in-PlatformIO/image-20200722112932981.png"

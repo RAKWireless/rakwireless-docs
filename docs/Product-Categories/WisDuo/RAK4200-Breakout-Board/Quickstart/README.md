@@ -24,7 +24,7 @@ Before going through each and every step in the installation guide of the RAK420
 
 #### Hardware Tools
 
-- RAK4200 Breakout Board (provided) – including LoRa® antenna, Dupont lines (13x) 
+- RAK4200 Breakout Board (provided) – including LoRa antenna, Dupont lines (13x) 
 - USB to UART converter – CH340 for example (not provided) 
 - Gateway in Range, for testing (not provided) 
 - Windows PC (not provided) 
@@ -39,7 +39,7 @@ Before going through each and every step in the installation guide of the RAK420
 ### What's Included in the Package?
 
 - RAK4200 Breakout Board
-- LoRa® antenna
+- LoRa antenna
 - Dupont lines (18x)
 
 
@@ -182,20 +182,20 @@ When setting up a new device in TTN its default is to join in OTAA mode. For con
 />
 
 ::: tip 📝 NOTE
-As an example, let's join in OTAA mode, EU868 frequency and the default LoRa® class is Class A.
+As an example, let's join in OTAA mode, EU868 frequency and the default LoRa class is Class A.
 :::
 
 ::: tip 📝 NOTE
 Execute the following commands one by one and in the order given.
 :::
 
-1. Set the LoRa® join mode to **OTAA** as follows:
+1. Set the LoRa join mode to **OTAA** as follows:
 
 ```sh
 at+set_config=lora:join_mode:0
 ```
 
-2. Set the LoRa® class to **Class A**:
+2. Set the LoRa class to **Class A**:
 
 ```sh
 at+set_config=lora:class:0
@@ -256,7 +256,7 @@ at+join
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/ttn/otaa-join.png"
   width="45%"
-  caption="AT Command for OTAA LoRa® Join via RAK Serial Port Tool"
+  caption="AT Command for OTAA LoRa Join via RAK Serial Port Tool"
 />
 
 9. Joined successfully! Now, let’s try to send a data from the RAK4200 Breakout Board to TTN:

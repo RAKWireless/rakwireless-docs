@@ -1050,9 +1050,11 @@ The support packages are MDK packages. You can see a complete list at [https://w
 
 Connect the 4 debug/programming SWD pins of the board to the RAKDAP adapter(| VCC | GND | SWIO | SWCLK |)
 
-<!--
-**_![IF CONNECTION PICTURE IS AVAILABLE ADD IT HERE](./assets/nopick.png)_**    
--->
+<rk-img
+  src="/assets/images/wisduo/rak4200-module/quickstart/rak4200-swd.png"
+  width="40%"
+  caption="RAK4200 to SWD debug pins"
+/>
 
 2. Flash the latest firmware
 

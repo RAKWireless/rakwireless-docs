@@ -21,21 +21,21 @@ prev: ../Quickstart/
 
 The **RAK4260 Breakout Board** is specifically designed to allow easy excess to the pins on the board in order to simplify development and testing. The breakout board utilized is of an **Xbee form factor** and its main purpose is to allow the RAK4260 stamp module form factor pinout to be transferred to 2.54 mm headers. This makes it more convenient for developer to debug their solution.
 
-The board itself has the RAK4260 at its core, which is a module that utilizes the **ATSAMR34J18B SIP**. This high level of integration allows for outstanding performance: 860 nA in sleep mode and LoRa® TX Power of up to 20 dBm.
+The board itself has the RAK4260 at its core, which is a module that utilizes the **ATSAMR34J18B SIP**. This high level of integration allows for outstanding performance: 860 nA in sleep mode and LoRa TX Power of up to 20 dBm.
 
 A notable addition to this Breakout Board is the **ATECC608A Cryptographic co-processor** with secure hardware-based key storage. This is what makes this board different (compared to the RAK4200 and RAK4600), adding another level of security in order to future proof your platform.
 
-The board complies with LoRaWAN® 1.0.2 protocols. It also supports Lora® Point to Point communication.
+The board complies with LoRaWAN 1.0.2 protocols. It also supports Lora® Point to Point communication.
 
-The low power, long range LoRa® communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors and monitors, etc.).
+The low power, long range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors and monitors, etc.).
 
 ### Features
 
-- LoRa® module for Smart City, Smart Agriculture, Smart Industry
+- LoRa module for Smart City, Smart Agriculture, Smart Industry
 - I/O ports: **UART/I2C/SPI/ADC**
-- Frequency range: 863–923 MHz (entire LoRa® high band spectrum)
+- Frequency range: 863–923 MHz (entire LoRa high band spectrum)
 - Low-Power Wireless Systems with 7.8 kHz to 500 KHz Bandwidth
-- LoRa® Tx power up to 20dBm
+- LoRa Tx power up to 20dBm
 - Ultra-Low Power Consumption 860 nA in sleep mode
 - Core: ARM 32-bit Cortex – M0+ with MPU
 - Up to 256KB flash memory with ECC
@@ -167,7 +167,7 @@ The tables below show the pin definition of the RAK4260 Breakout Board:
 
 ##### Operating Frequencies
 
-The RAK4260 Breakout Board supports the following LoRa® bands:
+The RAK4260 Breakout Board supports the following LoRa bands:
 
 | Module         | Region                                                                               | Frequency (MHz)                                                         |
 | -------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
@@ -179,10 +179,10 @@ The RAK4260 Breakout Board supports the following LoRa® bands:
 
 | Item                    | Power Consumption | Condition            |
 | ----------------------- | ----------------- | -------------------- |
-| Tx mode LoRa® @20dBm    | 126.3 mA          | PA_BOOST V=3.3V      |
-| Tx mode LoRa® @17dBm    | 95.6 mA           | PA_BOOST V=3.3V      |
-| Tx mode LoRa® @14dBm    | 33.1 mA (typical) | RFO_HF V=3.3V        |
-| Rx mode LoRa® @37.5Kbps | 13.6 mA           | -                    |
+| Tx mode LoRa @20dBm    | 126.3 mA          | PA_BOOST V=3.3V      |
+| Tx mode LoRa @17dBm    | 95.6 mA           | PA_BOOST V=3.3V      |
+| Tx mode LoRa @14dBm    | 33.1 mA (typical) | RFO_HF V=3.3V        |
+| Rx mode LoRa @37.5Kbps | 13.6 mA           | -                    |
 | Sleep mode              | 860 nA            | Backup Mode V = 3.3V |
 
 #### Schematic Diagram

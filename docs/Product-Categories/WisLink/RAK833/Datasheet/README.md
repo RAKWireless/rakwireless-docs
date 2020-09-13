@@ -18,15 +18,15 @@ next: false
 
 ### Description
 
-The **RAK833 WisLink LPWAN Concentrator** is a family of LoRa® concentrator modules with mini PCIe form factor based on SX1301, which enables an easy integration into an existing routers and other network equipments with gateway capabilities.This can be used in any embedded platform offering a free mini-PCIe slot with USB and SPI connectivity.
+The **RAK833 WisLink LPWAN Concentrator** is a family of LoRa concentrator modules with mini PCIe form factor based on SX1301, which enables an easy integration into an existing routers and other network equipments with gateway capabilities.This can be used in any embedded platform offering a free mini-PCIe slot with USB and SPI connectivity.
 
 RAK833 WisLink LPWAN Concentrator is a complete and cost efficient gateway solution offering up to 10 programmable parallel demodulation paths. It is targeted at smart metering fixed networks and Internet of Things applications with up to 500 nodes per square kilometer (km²) in moderately interfered environment. These modules have the industry standard PCI Express Mini Card form factor which enables easy integration into an application board.
 
 ### Product Features
 
-- Full LoRaWAN® 1.0.2 stack support
+- Full LoRaWAN 1.0.2 stack support
 - Compact size in the form of a mPCIe 52pin form factor card
-- SX1301 base band processor emulates 49 x LoRa® demodulators, 10 parallel demodulation paths. It supports 8 uplinks channel and 1 downlink channel.
+- SX1301 base band processor emulates 49 x LoRa demodulators, 10 parallel demodulation paths. It supports 8 uplinks channel and 1 downlink channel.
 - Max Tx Power of 20dBm
 - RX sensitivity of -136dBm
 - Compatible with 3.3V mPCIe type slots, common for 3G/LTE modules
@@ -63,7 +63,7 @@ The hardware is categorized into seven parts. It discusses the interfacing, pino
 
 ##### GPS_PPS
 
-The RAK833 WisLink LPWAN Concentrator includes the GPS_PPS input for received packets time-stamped. It integrates **one (1) SX1301** chip, **two (2) SX1255/7**, and other chip for RF signal, which represents the core of the device, providing the related LoRa® modem and processing functionalities. Additional signal conditioning circuitry is implemented for PCI Express Mini Card compliance, and one u.FL connectors are available for external antennas integration.
+The RAK833 WisLink LPWAN Concentrator includes the GPS_PPS input for received packets time-stamped. It integrates **one (1) SX1301** chip, **two (2) SX1255/7**, and other chip for RF signal, which represents the core of the device, providing the related LoRa modem and processing functionalities. Additional signal conditioning circuitry is implemented for PCI Express Mini Card compliance, and one u.FL connectors are available for external antennas integration.
 
 ##### Module supply input
 

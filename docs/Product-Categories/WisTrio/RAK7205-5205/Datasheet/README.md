@@ -1,6 +1,6 @@
 ---
-prev: ../Overview/
-next: false
+prev: ../Quickstart/
+next: ../AT-Command-Manual/
 tags:
   - datasheet
   - wistrio
@@ -21,20 +21,20 @@ tags:
 
 ### Description
 
-The **RAK5205 WisTrio LPWAN Tracker board** is built on the Semtech SX1276 chip, with the STM32L1 MCU at its core. It is a feature-packed sensor board with LoRa® connectivity and built-in GPS. It provides various interfaces for easy application development.
+The **RAK5205 WisTrio LPWAN Tracker board** is built on the Semtech SX1276 chip, with the STM32L1 MCU at its core. It is a feature-packed sensor board with LoRa connectivity and built-in GPS. It provides various interfaces for easy application development.
 
-This is the best sensor board available in the market, ideal as a quick prototyping tool for Internet-of-Things and LoRaWAN® Network integration. It is perfect for IoT applications such as asset tracking, smart vehicle management and location-based services. Most importantly, application development environments such as the CooCox IDE and Kiel are all supported, users can quickly develop own applications.
+This is the best sensor board available in the market, ideal as a quick prototyping tool for Internet-of-Things and LoRaWAN Network integration. It is perfect for IoT applications such as asset tracking, smart vehicle management and location-based services. Most importantly, application development environments such as the CooCox IDE and Kiel are all supported, users can quickly develop own applications.
 
 ### Features
 
 - Compatible with 96Boards IoT Edition Specification.
-- With SX1276 LoRa® long range and Ublox Max 7Q GPS modems which allow to
+- With SX1276 LoRa long range and Ublox Max 7Q GPS modems which allow to
   enable the GPS low power mode.
 - Integrated the ultra-low power microcontroller ARM Cortex-M3 STM32L1.
 - Built-in environmental sensor BME680 (gas, pressure, humidity, temperature) and
   3-axis MEMS sensor LIS3DH (accelerometer).
-- SMA/iPEX antenna optional for LoRa® and GPS.
-- Supports latest LoRaWAN® 1.0.2 protocol, activation by OTAA/ABP.
+- SMA/iPEX antenna optional for LoRa and GPS.
+- Supports latest LoRaWAN 1.0.2 protocol, activation by OTAA/ABP.
 - Supports programmable bit rate up to 300kbps.
 - Supports rechargeable battery through micro USB or 5V solar charging ports.
 - Supports sleep mode, the power consumption down to 14.5μA.
@@ -102,7 +102,7 @@ It is built around RAK811 module and compatible with 96Boards. It provides the f
 
 **It has two Antenna connectors:**
 
-- RP-SMA Male connector of LoRa® Antenna(optional iPEX connector)
+- RP-SMA Male connector of LoRa Antenna(optional iPEX connector)
 - SMA Female connector of GPS Antenna(optional iPEX connector)
 
 ##### Micro-B USB Interface
@@ -208,7 +208,7 @@ Pin1 is connected to BOOT0. Pin2 is connected to VDD. Enter flash mode through j
 
 ##### Operating Frequencies
 
-The board supports all LoRaWAN® frequency channels as stated in the table below which is easy to configure while building the firmware from the source code
+The board supports all LoRaWAN frequency channels as stated in the table below which is easy to configure while building the firmware from the source code
 
 | Region        | Frequency (Mhz) |
 | ------------- | --------------- |
@@ -222,35 +222,35 @@ The board supports all LoRaWAN® frequency channels as stated in the table below
 
 #### Antennas
 
-##### LoRa® Antenna
+##### LoRa Antenna
 
 ###### Overview
 
-The LoRa® Antenna and Interfaces are shown in the figure below:
+The LoRa Antenna and Interfaces are shown in the figure below:
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/datasheet/rp-sma-male-connector-of-lora®-antenna.jpg"
   width="45%"
-  caption="RP-SMA Male Connector of LoRa® Antenna"
+  caption="RP-SMA Male Connector of LoRa Antenna"
 />
 
-Here is the iPEX LoRa® Antenna Interface:
+Here is the iPEX LoRa Antenna Interface:
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/datasheet/ipex-antenna-interface-for-lora®-antenna.jpg"
   width="60%"
-  caption="iPex Antenna Interface for LoRa® Antenna"
+  caption="iPex Antenna Interface for LoRa Antenna"
 />
 
-###### LoRa® Antenna Dimension
+###### LoRa Antenna Dimension
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/datasheet/lora®-antenna-dimension.jpg"
   width="50%"
-  caption="LoRa® Antenna Dimension"
+  caption="LoRa Antenna Dimension"
 />
 
-###### LoRa® Antenna Parameters
+###### LoRa Antenna Parameters
 
 | Items                              | Specifications                 |
 | ---------------------------------- | ------------------------------ |
@@ -346,7 +346,7 @@ The board supports to enable the GPS low power mode, it has a 3-axis MEMS Sensor
 
 ###### Power Requirements
 
-The RAK5205 LoRa® Tracker Board has an operating voltage of 3.7V. It can be powered by micro USB with 5V Max.
+The RAK5205 LoRa Tracker Board has an operating voltage of 3.7V. It can be powered by micro USB with 5V Max.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/datasheet/powered-by-micro-usb.png"

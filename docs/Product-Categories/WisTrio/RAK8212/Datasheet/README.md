@@ -1,7 +1,7 @@
 ---
 static_root: /assets/images/wistrio/rak8212/datasheet/
 prev: ../Quickstart/
-next: false
+next: ../AT-Command-Manual/
 tags:
   - datasheet
   - wistrio

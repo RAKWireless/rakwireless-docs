@@ -24,11 +24,11 @@ Thank you for choosing **RAK4200 Breakout Board** in your awesome IoT Project! �
 
 **RAK4200 Breakout Board** is specifically designed to allow easy excess to the pins on the board in order to simplify development and testing. The breakout board utilized is of an Xbee form factor and its main purpose is to allow the RAK4200 stamp module form factor pinout to be transferred to 2.54mm headers.
 
-The board itself has the RAK4200 at its core, integrating an **STM32L071 MCU** and an **SX1276 LoRa® chip**. It has Ultra-Low Power Consumption of 1.5uA in sleep mode and high LoRa® output power (19dBm) in work mode.
+The board itself has the RAK4200 at its core, integrating an **STM32L071 MCU** and an **SX1276 LoRa chip**. It has Ultra-Low Power Consumption of 1.5uA in sleep mode and high LoRa output power (19dBm) in work mode.
 
-The board complies with LoRaWAN® 1.0.2 protocols. It also supports Lora® Point to Point communication.
+The board complies with LoRaWAN 1.0.2 protocols. It also supports Lora® Point to Point communication.
 
-The low power, long range LoRa® communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors and monitors, etc.).
+The low power, long range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors and monitors, etc.).
 
 <!-- <rk-btn
   src="/Product-Categories/WisDuo/RAK4200-Breakout-Board/Quickstart/#quick-start-guide"

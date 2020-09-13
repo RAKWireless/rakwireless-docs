@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisduo/rak4200-module/overview/RAK4200_Module_home.png
-rak_desc: RAK4200 WisDuo LPWAN Module includes an STM32L071 MCU and an SX1276 LoRa® chip. It has Ultra-Low Power Consumption of 1.5uA in sleep mode and high LoRa® output power up to 19dBm max in work mode.
+rak_desc: RAK4200 WisDuo LPWAN Module includes an STM32L071 MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumption of 1.5uA in sleep mode and high LoRa output power up to 19dBm max in work mode.
 rak_grp: [wisduo, module]
 prev: ../../
 next: ../Datasheet/
@@ -25,9 +25,9 @@ Thank you for choosing **RAK4200 WisDuo LPWAN Module** in your awesome IoT Proje
 
 ## Product Description
 
-**RAK4200 WisDuo LPWAN Module** includes an STM32L071KB MCU and an SX1276 LoRa® chip. It has Ultra-Low Power Consumption of 1.5uA in sleep mode and high LoRa® output power up to 19dBm max in work mode.
+**RAK4200 WisDuo LPWAN Module** includes an STM32L071KB MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumption of 1.5uA in sleep mode and high LoRa output power up to 19dBm max in work mode.
 
-The module complies with LoRaWAN® 1.0.2 protocols. It also supports LoRa® Point to Point communications. The module is suitable for various applications that require long range data acquisition and low power consumption.
+The module complies with LoRaWAN 1.0.2 protocols. It also supports LoRa Point to Point communications. The module is suitable for various applications that require long range data acquisition and low power consumption.
 
 <!-- <rk-btn
   src="../Datasheet/"
@@ -38,7 +38,7 @@ The module complies with LoRaWAN® 1.0.2 protocols. It also supports LoRa® Poin
 
 ## Product Features
 
-- LoRa® module for Smart City, Smart Agriculture, Smart Industry
+- LoRa module for Smart City, Smart Agriculture, Smart Industry
 - **Compact Form Factor**: 15 x 15.5 x 2.5 mm
 - 20 Pin Stamp Pad for PCB SMT mounting
 - **I/O ports**: UART/I2C/GPIO

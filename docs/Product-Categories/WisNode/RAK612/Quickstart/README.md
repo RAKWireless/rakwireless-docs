@@ -1,6 +1,6 @@
 ---
-prev: .../Overview/
-next: false
+prev: ../Overview/
+next: ../AT-Command-Manual/
 tags:
   - RAK612
 ---
@@ -81,7 +81,7 @@ In case the driver is still not installed upon doing the previous steps, kindly 
   caption="Connecting to the RAK Serial Port Tool"
 />
 
-6. To verify connectivity, let's try sending AT+Commands. In the RAK Serial Port Tool, there are built-in AT+Commands within it at the right side. Try sending the code below to check the firmware version of your RAK612 WisNode Button. If connection is successful, in the monitor panel at the left, the firmware version should appear same with the image shown below:
+6. To verify connectivity, let's try sending AT Commands. In the RAK Serial Port Tool, there are built-in AT Commands within it at the right side. Try sending the code below to check the firmware version of your RAK612 WisNode Button. If connection is successful, in the monitor panel at the left, the firmware version should appear same with the image shown below:
 
 ```sh
 at+version
@@ -90,7 +90,7 @@ at+version
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/interfacing-with-rak612/at-comm.png"
   width="90%"
-  caption="AT+Command Sample Serial Communication Test"
+  caption="AT Command Sample Serial Communication Test"
 />
 
 Congratulations! :tada: You have just successfully interfaced your RAK612 WisNode Button with your computer!
@@ -193,7 +193,7 @@ According to **The Things Network, Over-the-Air Activation** (OTAA) is the prefe
 As an example, let's join in OTAA mode and EU868 frequency.
 :::
 
-1. Set the LoRa® join mode to **OTAA** as follows:
+1. Set the LoRa join mode to **OTAA** as follows:
 
 ```sh
 at+set_config=join_mode:1
@@ -201,7 +201,7 @@ at+set_config=join_mode:1
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/ttn/lora-join-otaa.jpg"
   width="45%"
-  caption="AT Command for OTAA LoRa® Join Mode via RAK Serial Port Tool"
+  caption="AT Command for OTAA LoRa Join Mode via RAK Serial Port Tool"
 />
 
 2. Set the frequency/region to **EU868**:
@@ -213,7 +213,7 @@ at+band=EU868
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/ttn/lora-region-otaa.jpg"
   width="45%"
-  caption="AT Command for OTAA LoRa® Region/Frequency via RAK Serial Port Tool"
+  caption="AT Command for OTAA LoRa Region/Frequency via RAK Serial Port Tool"
 />
 
 3. Set the **Device EUI.**
@@ -225,7 +225,7 @@ at+set_config=dev_eui:XXXX
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/ttn/lora-eui-otaa.jpg"
   width="45%"
-  caption="AT Command for OTAA LoRa® Device EUI via RAK Serial Port Tool"
+  caption="AT Command for OTAA LoRa Device EUI via RAK Serial Port Tool"
 />
 
 4. Set the **Application EUI**:
@@ -236,7 +236,7 @@ at+set_config=app_eui:XXXX
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/ttn/lora-appeui-otaa.jpg"
   width="45%"
-  caption="AT Command for OTAA LoRa® Application EUI via RAK Serial Port Tool"
+  caption="AT Command for OTAA LoRa Application EUI via RAK Serial Port Tool"
 />
 
 5. Set the **Application Key**:
@@ -248,7 +248,7 @@ at+set_config=app_key:XXXX
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/ttn/lora-appkey-otaa.jpg"
   width="45%"
-  caption="AT Command for OTAA LoRa® Application Key via RAK Serial Port Tool"
+  caption="AT Command for OTAA LoRa Application Key via RAK Serial Port Tool"
 />
 
 :::tip 📝 NOTE
@@ -263,7 +263,7 @@ at+join=otaa
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/ttn/otaa-join.jpg"
   width="45%"
-  caption="AT Command for OTAA LoRa® Join via RAK Serial Port Tool"
+  caption="AT Command for OTAA LoRa Join via RAK Serial Port Tool"
 />
 
 7. Joined successfully! Now, let’s try to send a data to TTN. Try pressing any key on your RAK612 WisNode Button. You should see any data printed in the RAK Serial Port Tool whenever you press any key same as with the image below:
@@ -306,12 +306,12 @@ Follow these steps, if you want to join with The Things Network in **Activation 
 As an example, let's join in ABP mode and EU868 frequency.
 :::
 
-3. If the join mode is not in ABP Mode, just set the LoRa® join mode to **ABP** as follows:
+3. If the join mode is not in ABP Mode, just set the LoRa join mode to **ABP** as follows:
 
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/ttn/abp-lora-join.jpg"
   width="45%"
-  caption="AT Command for ABP LoRa® Join Mode via RAK Serial Port Tool"
+  caption="AT Command for ABP LoRa Join Mode via RAK Serial Port Tool"
 />
 
 4. Set the frequency/region to **EU868**:
@@ -323,7 +323,7 @@ at+band=EU868
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/ttn/lora-region-otaa.jpg"
   width="45%"
-  caption="AT Command for ABP LoRa® Region/Frequency via RAK Serial Port Tool"
+  caption="AT Command for ABP LoRa Region/Frequency via RAK Serial Port Tool"
 />
 
 5. Set the **Device Address**:
@@ -335,7 +335,7 @@ at+set_config=dev_addr:XXXX
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/ttn/abp-devaddr.jpg"
   width="45%"
-  caption="AT Command for ABP LoRa® Device Address via RAK Serial Port Tool"
+  caption="AT Command for ABP LoRa Device Address via RAK Serial Port Tool"
 />
 
 6. Set the **Network Session Key**:
@@ -347,7 +347,7 @@ at+set_config=nwks_key:XXXX
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/ttn/abp-nwkskey.jpg"
   width="45%"
-  caption="AT Command for ABP LoRa® Network Session Key via RAK Serial Port Tool"
+  caption="AT Command for ABP LoRa Network Session Key via RAK Serial Port Tool"
 />
 
 7. Set the **Application Session Key**:
@@ -359,7 +359,7 @@ at+set_config=apps_key:XXXX
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/ttn/abp-appskey.jpg"
   width="45%"
-  caption="AT Command for ABP LoRa® Application Session Key via RAK Serial Port Tool"
+  caption="AT Command for ABP LoRa Application Session Key via RAK Serial Port Tool"
 />
 
 :::tip 📝 NOTE
@@ -371,7 +371,7 @@ After configuring all parameters, you need to reset the RAK612 WisNode Button fo
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/ttn/abp-join.jpg"
   width="45%"
-  caption="AT Command for ABP LoRa® Join via RAK Serial Port Tool"
+  caption="AT Command for ABP LoRa Join via RAK Serial Port Tool"
 />
 
 9. Joined successfully! Now, let’s try to send a data to TTN. Try pressing any key on your RAK612 WisNode Button. You should see any data printed in the RAK Serial Port Tool whenever you press any key same as with the image below:
@@ -440,31 +440,6 @@ at+key_config=2,37,Hello Mark Angelo!
 
 ## Miscellaneous
 
-### AT Commands for RAK612 WisNode Button
-
-The purpose of this section is to demonstrate on how to configure the LPWAN Button thru the use of AT Commands via a Serial Port Tool running in your Windows PC. The list below shows the AT Commands available for use:
-
-| AT Command | Description | 
-| ---- | ---- | 
-| `at+version` | Get the current firmware version. | 
-| `at+mode=0` | Set the LPWAN Button to work LoRaWAN® mode. | 
-| `at+band=XXX` | Set the region for LoRa®. <br>• XXX - one of the following items: EU868 EU433, CN470, IN865, EU868, AU915, US915, KR920, AS923. | 
-| `at+get_config=dev_eui` | Check the current device EUI | 
-| `at+set_config=join_mode:X` | Set the activation method <br>• X - 0: ABP, 1: OTAA | 
-| `at+set_config=dev_eui:XXXX` | Set the device EUI for OTAA. <br>• XXXX - the device EUI. | 
-| `at+set_config=app_eui:XXXX` | Set the application EUI for OTAA. <br>• XXXX - the application EUI. | 
-| `at+set_config=app_key:XXXX` | Set the application key for OTAA. <br>• XXXX - the application key. | 
-| `at+set_config=dev_addr:XXXX` | Set the device address for ABP. <br>• XXXX - the device address. | 
-| `at+set_config=nwks_key:XXXX` | Set the network session key for ABP. <br>• XXXX - the network session key. | 
-| `at+set_config=apps_key:XXXX` | Set the application session key for ABP. <br>• XXXX - the application session key. | 
-| `at+set_config=timer_sleep:XX` | The cycle time in seconds before the LPWAN Button will turn off since the last time you pressed any key <br>• XX - time in seconds; 0 - the default value meaning that it will not power cycle. | 
-| `at+get_config=timer_sleep` | Get the current sleep timer value. | 
-| `at+key_config=X,YY,ZZZZ` | Customize the function of each key. <br>• X - the number of the key that you want to customize <br>• YY - the frame port where you are sending the data <br>• ZZZZ - the actual data that you want to send when you press this specific key of the LPWAN Button. | 
-| `at+send=X` | The type of data that you are sending. <br>• X - 0: unconfirm, 1: confirm | 
-| `at+join=otaa` | Join via OTAA. | 
-| `at+join=abp` | Join via ABP. | 
-| `at+reset=0` | Restart the LPWAN Button. | 
-
 ### Upgrading the Firmware
 
 Please use the the latest firmware for the RAK612 WisNode Button in order to avoid potential problems. Installing the firmware for is done as follows:
@@ -527,7 +502,7 @@ Please use the the latest firmware for the RAK612 WisNode Button in order to avo
 * **Baudrate** - the rate, at which information is transferred. (Use **115200** for RAK612 WisNode Button).
 * **Receiving** - this is where all the responses of your AT Commands will be displayed. 
 * **Sending** - this is where you input your AT Command.
-* **Command** - this is where you save all of your AT Commands for quick reuse. This is very useful in the [AT Commands for RAK612 WisNode Button](#at-commands-for-rak612-wisnode-button) section.
+* **Command** - this is where you save all of your AT Commands for quick reuse. This is very useful in the [AT Commands for RAK612 WisNode Button](../AT-Command-Manual) section.
 
 2. Choose the appropriate COM Port and Baud Rate for your RAK612 WisNode Button then click the **Open** button to open the serial port.
 3. Hold any key of the RAK612 WisNode Button for more than 5 seconds and then you will be able to see the following information:

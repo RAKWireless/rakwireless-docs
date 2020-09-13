@@ -4591,7 +4591,7 @@ index 0000000..0d9624a
 +      "lastUpdated": "8/24/2020, 10:04:10 AM"
 +    },
 +    {
-+      "title": "Build-in LoRa® Network Server Configuration",
++      "title": "Build-in LoRa Network Server Configuration",
 +      "frontmatter": {
 +        "sidebar": false,
 +        "rak_img": "/assets/images/knowledge-hub/banners/general_banner.jpg",
@@ -4602,7 +4602,7 @@ index 0000000..0d9624a
 +          "WisDuino"
 +        ],
 +        "header": {
-+          "title": "Build-in LoRa® Network Server Configuration",
++          "title": "Build-in LoRa Network Server Configuration",
 +          "caption": "by <b>RAKwireless Team</b>",
 +          "img": "/assets/images/knowledge-hub/banners/general_banner.jpg"
 +        }
@@ -4624,7 +4624,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 2,
-+          "title": "Configure the LoRa® Server",
++          "title": "Configure the LoRa Server",
 +          "slug": "configure-the-lora®-server"
 +        },
 +        {
@@ -4699,7 +4699,7 @@ index 0000000..0d9624a
 +      "lastUpdated": "8/11/2020, 6:17:51 PM"
 +    },
 +    {
-+      "title": "How To Access LoRaWAN® using Solar Energy",
++      "title": "How To Access LoRaWAN using Solar Energy",
 +      "frontmatter": {
 +        "sidebar": false,
 +        "rak_img": "/assets/images/knowledge-hub/tutorials/access-lorawan-using-solar-energy/overview.jpg",
@@ -4708,7 +4708,7 @@ index 0000000..0d9624a
 +          "Tutorials"
 +        ],
 +        "header": {
-+          "title": "How To Access LoRaWAN® using Solar Energy",
++          "title": "How To Access LoRaWAN using Solar Energy",
 +          "caption": "by <b>Sam Domingo</b> posted on May 02, 2020 10:30:00 AM",
 +          "img": "/assets/images/knowledge-hub/tutorials/access-lorawan-using-solar-energy/overview.jpg"
 +        },
@@ -4735,7 +4735,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 2,
-+          "title": "Assembly of LoRa®gateway Kit",
++          "title": "Assembly of LoRagateway Kit",
 +          "slug": "assembly-of-lora®gateway-kit"
 +        }
 +      ],
@@ -5002,7 +5002,7 @@ index 0000000..0d9624a
 +      "lastUpdated": "8/20/2020, 2:43:15 PM"
 +    },
 +    {
-+      "title": "LoRa® Concentrator Spectrum Settings Guide",
++      "title": "LoRa Concentrator Spectrum Settings Guide",
 +      "frontmatter": {
 +        "sidebar": false,
 +        "rak_img": "/assets/images/knowledge-hub/banners/general_banner.jpg",
@@ -5012,7 +5012,7 @@ index 0000000..0d9624a
 +          "WisGate"
 +        ],
 +        "header": {
-+          "title": "LoRa® Concentrator Spectrum Settings Guide",
++          "title": "LoRa Concentrator Spectrum Settings Guide",
 +          "caption": "by <b>RAKwireless Team</b>",
 +          "img": "/assets/images/knowledge-hub/banners/general_banner.jpg"
 +        }
@@ -5146,7 +5146,7 @@ index 0000000..0d9624a
 +      "lastUpdated": "8/20/2020, 2:43:15 PM"
 +    },
 +    {
-+      "title": "LoRaWAN™ vs. the world of IoT!",
++      "title": "LoRaWAN vs. the world of IoT!",
 +      "frontmatter": {
 +        "sidebar": false,
 +        "rak_img": "/assets/images/knowledge-hub/tutorials/lorawan-vs-the-world-of-iot/overview.png",
@@ -5155,7 +5155,7 @@ index 0000000..0d9624a
 +          "Tutorials"
 +        ],
 +        "header": {
-+          "title": "LoRaWAN™ vs. the world of IoT!",
++          "title": "LoRaWAN vs. the world of IoT!",
 +          "caption": "by <b>Vladislav Yordanov</b> posted on Nov 01, 2019 10:30:00 AM",
 +          "img": "/assets/images/knowledge-hub/tutorials/lorawan-vs-the-world-of-iot/overview.png"
 +        },
@@ -5227,7 +5227,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 2,
-+          "title": "Configure the LoRa® Server",
++          "title": "Configure the LoRa Server",
 +          "slug": "configure-the-lora®-server"
 +        },
 +        {
@@ -5242,12 +5242,12 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 2,
-+          "title": "LoRa®  Gateway MQTT Bridge",
++          "title": "LoRa  Gateway MQTT Bridge",
 +          "slug": "lora®-gateway-mqtt-bridge"
 +        },
 +        {
 +          "level": 2,
-+          "title": "Registering RAK7249-B in RAK7249-A's LoRa® Network Server",
++          "title": "Registering RAK7249-B in RAK7249-A's LoRa Network Server",
 +          "slug": "registering-rak7249-b-in-rak7249-a-s-lora®-network-server"
 +        },
 +        {
@@ -5440,7 +5440,7 @@ index 0000000..0d9624a
 +        "sidebar": false,
 +        "header": {
 +          "title": "Welcome to Knowledge Hub!",
-+          "caption": "The Knowledge Hub is properly equipped with all the supplemental information required to assist you with your project. Browse through the page as it contains informative articles about the LoRaWAN® and further details on the Internet of Things (IoT) to gain a better understanding of the device and the innovative technology utilized by RAKwireless products."
++          "caption": "The Knowledge Hub is properly equipped with all the supplemental information required to assist you with your project. Browse through the page as it contains informative articles about the LoRaWAN and further details on the Internet of Things (IoT) to gain a better understanding of the device and the innovative technology utilized by RAKwireless products."
 +        }
 +      },
 +      "regularPath": "/Knowledge-Hub/Learn/",
@@ -5628,7 +5628,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 2,
-+          "title": "2. LoRaWAN® Packet Logger",
++          "title": "2. LoRaWAN Packet Logger",
 +          "slug": "_2-lorawan®-packet-logger"
 +        },
 +        {
@@ -7443,7 +7443,7 @@ index 0000000..0d9624a
 +      "title": "RAK4631 WisBlock LPWAN Module",
 +      "frontmatter": {
 +        "rak_img": "/assets/images/wisblock/rak4631/overview/RAK4631-illustration.png",
-+        "rak_desc": "RAK4631 is a WisBlock Core module for RAK WisBlock. It extends the WisBlock series with a powerful Nordic nRF52840 MCU that supports Bluetooth 5.0 (Bluetooth Low Energy) and the newest LoRa® transceiver from Semtech, the SX1262.",
++        "rak_desc": "RAK4631 is a WisBlock Core module for RAK WisBlock. It extends the WisBlock series with a powerful Nordic nRF52840 MCU that supports Bluetooth 5.0 (Bluetooth Low Energy) and the newest LoRa transceiver from Semtech, the SX1262.",
 +        "rak_grp": [
 +          "wisblock",
 +          "wiscore"
@@ -9056,7 +9056,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 2,
-+          "title": "LoRa® P2P Mode",
++          "title": "LoRa P2P Mode",
 +          "slug": "lora®-p2p-mode"
 +        },
 +        {
@@ -9169,7 +9169,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 3,
-+          "title": "LoRa® P2P Mode",
++          "title": "LoRa P2P Mode",
 +          "slug": "lora®-p2p-mode"
 +        },
 +        {
@@ -9239,7 +9239,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 5,
-+          "title": "Test LoRa® Node with LoRaWAN®",
++          "title": "Test LoRa Node with LoRaWAN",
 +          "slug": "test-lora®-node-with-lorawan®"
 +        },
 +        {
@@ -10192,7 +10192,7 @@ index 0000000..0d9624a
 +      "title": "RAK4200 WisDuo LPWAN Module",
 +      "frontmatter": {
 +        "rak_img": "/assets/images/wisduo/rak4200-module/overview/RAK4200_Module_home.png",
-+        "rak_desc": "RAK4200 WisDuo LPWAN Module includes an STM32L071 MCU and an SX1276 LoRa® chip. It has Ultra-Low Power Consumption of 1.5uA in sleep mode and high LoRa® output power up to 19dBm max in work mode.",
++        "rak_desc": "RAK4200 WisDuo LPWAN Module includes an STM32L071 MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumption of 1.5uA in sleep mode and high LoRa output power up to 19dBm max in work mode.",
 +        "rak_grp": [
 +          "wisduo",
 +          "module"
@@ -10524,7 +10524,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 6,
-+          "title": "Uplink LoRa® Frame Testing",
++          "title": "Uplink LoRa Frame Testing",
 +          "slug": "uplink-lora®-frame-testing"
 +        }
 +      ],
@@ -10818,7 +10818,7 @@ index 0000000..0d9624a
 +          "module"
 +        ],
 +        "rak_img": "/assets/images/wisduo/rak4260-module/overview/RAK4260_Module_home.png",
-+        "rak_desc": "The RAK4260 WisDuo LPWAN Module is based on Microchip’s ATSAMR34J18B. It is a SiP device integrating a 32-bit ARM Cortex -M0+ MCU with a LoRa® Transceiver.",
++        "rak_desc": "The RAK4260 WisDuo LPWAN Module is based on Microchip’s ATSAMR34J18B. It is a SiP device integrating a 32-bit ARM Cortex -M0+ MCU with a LoRa Transceiver.",
 +        "prev": "../../",
 +        "next": "../Datasheet/"
 +      },
@@ -11506,7 +11506,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 4,
-+          "title": "LoRaWAN® Join Mode",
++          "title": "LoRaWAN Join Mode",
 +          "slug": "lorawan®-join-mode"
 +        },
 +        {
@@ -11551,7 +11551,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 4,
-+          "title": "LoRaWAN® Join Mode",
++          "title": "LoRaWAN Join Mode",
 +          "slug": "lorawan®-join-mode-2"
 +        },
 +        {
@@ -11586,7 +11586,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 3,
-+          "title": "LoRa® P2P Mode",
++          "title": "LoRa P2P Mode",
 +          "slug": "lora®-p2p-mode"
 +        },
 +        {
@@ -11644,7 +11644,7 @@ index 0000000..0d9624a
 +      "title": "RAK4270 WisDuo LPWAN Module",
 +      "frontmatter": {
 +        "rak_img": "/assets/images/wisduo/rak4270-module/overview/RAK4270_Module_Home.png",
-+        "rak_desc": "The RAK4270 module is designed to simplify LoRa® peer to peer and LoRaWAN® communication. he module is suitable for various applications that require long range data acquisition and low power consumption, such as smart meters, agricultural sensors, and smart cities.",
++        "rak_desc": "The RAK4270 module is designed to simplify LoRa peer to peer and LoRaWAN communication. he module is suitable for various applications that require long range data acquisition and low power consumption, such as smart meters, agricultural sensors, and smart cities.",
 +        "rak_grp": [
 +          "wisduo",
 +          "module"
@@ -12229,7 +12229,7 @@ index 0000000..0d9624a
 +      "lastUpdated": "9/2/2020, 12:09:20 AM"
 +    },
 +    {
-+      "title": "LoRa® Module Deep Development Reference",
++      "title": "LoRa Module Deep Development Reference",
 +      "frontmatter": {
 +        "prev": "../LoRaWAN-P2P/AT-Command-Manual/",
 +        "next": "../Datasheet/",
@@ -12312,12 +12312,12 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 2,
-+          "title": "LoRaWAN® Type AT Command",
++          "title": "LoRaWAN Type AT Command",
 +          "slug": "lorawan®-type-at-command"
 +        },
 +        {
 +          "level": 2,
-+          "title": "LoRa® P2P Type AT Command",
++          "title": "LoRa P2P Type AT Command",
 +          "slug": "lora®-p2p-type-at-command"
 +        },
 +        {
@@ -12427,7 +12427,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 4,
-+          "title": "LoRaWAN® Join Mode",
++          "title": "LoRaWAN Join Mode",
 +          "slug": "lorawan®-join-mode"
 +        },
 +        {
@@ -12472,7 +12472,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 4,
-+          "title": "LoRaWAN® Join Mode",
++          "title": "LoRaWAN Join Mode",
 +          "slug": "lorawan®-join-mode-2"
 +        },
 +        {
@@ -12507,7 +12507,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 3,
-+          "title": "LoRa® P2P Mode",
++          "title": "LoRa P2P Mode",
 +          "slug": "lora®-p2p-mode"
 +        },
 +        {
@@ -12574,7 +12574,7 @@ index 0000000..0d9624a
 +          "module"
 +        ],
 +        "rak_img": "/assets/images/wisduo/rak4600-module/overview/RAK4600_Module_home.png",
-+        "rak_desc": "RAK4600 WisDuo LPWAN Module includes an nRF52832 MCU and an SX1276 LoRa® chip. It has Ultra-Low Power Consumption of 2.0uA in sleep mode, high LoRa® output power up to 20dB max in work mode, and BLE output power up to 4dBm.",
++        "rak_desc": "RAK4600 WisDuo LPWAN Module includes an nRF52832 MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumption of 2.0uA in sleep mode, high LoRa output power up to 20dB max in work mode, and BLE output power up to 4dBm.",
 +        "prev": "../../",
 +        "next": "../LoRaWAN-P2P/Quickstart/"
 +      },
@@ -12895,7 +12895,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 3,
-+          "title": "LoRa® P2P Mode",
++          "title": "LoRa P2P Mode",
 +          "slug": "lora®-p2p-mode"
 +        },
 +        {
@@ -13119,7 +13119,7 @@ index 0000000..0d9624a
 +      "lastUpdated": "8/25/2020, 12:33:34 PM"
 +    },
 +    {
-+      "title": "LoRa® Module Deep Development Reference",
++      "title": "LoRa Module Deep Development Reference",
 +      "frontmatter": {
 +        "prev": "../LoRaWAN-P2P/AT-Command-Manual/",
 +        "next": "../Datasheet/",
@@ -13207,12 +13207,12 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 2,
-+          "title": "LoRaWAN® Type AT Command",
++          "title": "LoRaWAN Type AT Command",
 +          "slug": "lorawan®-type-at-command"
 +        },
 +        {
 +          "level": 2,
-+          "title": "LoRa® P2P Type AT Command",
++          "title": "LoRa P2P Type AT Command",
 +          "slug": "lora®-p2p-type-at-command"
 +        },
 +        {
@@ -13307,7 +13307,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 4,
-+          "title": "LoRaWAN® Join Mode",
++          "title": "LoRaWAN Join Mode",
 +          "slug": "lorawan®-join-mode"
 +        },
 +        {
@@ -13387,7 +13387,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 3,
-+          "title": "LoRa® P2P Mode",
++          "title": "LoRa P2P Mode",
 +          "slug": "lora®-p2p-mode"
 +        },
 +        {
@@ -13445,7 +13445,7 @@ index 0000000..0d9624a
 +      "title": "RAK811 WisDuo LPWAN Module",
 +      "frontmatter": {
 +        "rak_img": "/assets/images/wisduo/rak811-module/overview/RAK811_Module_home.png",
-+        "rak_desc": "RAK811 Low-Power Long Range LoRa® Technology Transceiver module provides an easy to use, small size, low-power solution for long range wireless data transmission.",
++        "rak_desc": "RAK811 Low-Power Long Range LoRa Technology Transceiver module provides an easy to use, small size, low-power solution for long range wireless data transmission.",
 +        "rak_grp": [
 +          "wisduo",
 +          "module"
@@ -13480,7 +13480,7 @@ index 0000000..0d9624a
 +      "lastUpdated": "8/5/2020, 1:04:44 AM"
 +    },
 +    {
-+      "title": "RAK813 BLE+LoRa® Module Datasheet",
++      "title": "RAK813 BLE+LoRa Module Datasheet",
 +      "frontmatter": {
 +        "tags": [
 +          "datasheet",
@@ -13597,10 +13597,10 @@ index 0000000..0d9624a
 +      "lastUpdated": "8/25/2020, 12:33:34 PM"
 +    },
 +    {
-+      "title": "RAK813 BLE+LoRa® Module",
++      "title": "RAK813 BLE+LoRa Module",
 +      "frontmatter": {
 +        "rak_img": "/assets/images/wisduo/rak813-module/overview/RAK813_home.png",
-+        "rak_desc": "The RAK813 is a combination of the BLE and LoRa® in a single module. The BLE short-range technology combined with low-power LoRa® can provide long-distance wireless communication capabilities. Both technologies are low power, eliminating the need to change batteries frequently.",
++        "rak_desc": "The RAK813 is a combination of the BLE and LoRa in a single module. The BLE short-range technology combined with low-power LoRa can provide long-distance wireless communication capabilities. Both technologies are low power, eliminating the need to change batteries frequently.",
 +        "rak_grp": [
 +          "wisduo",
 +          "module"
@@ -13756,7 +13756,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 5,
-+          "title": "LoRa® Radio Specifications",
++          "title": "LoRa Radio Specifications",
 +          "slug": "lora®-radio-specifications"
 +        },
 +        {
@@ -13791,7 +13791,7 @@ index 0000000..0d9624a
 +      "title": "RAK7240 WisGate Edge Prime",
 +      "frontmatter": {
 +        "rak_img": "/assets/images/wisgate/rak7240/quickstart/RAK7240_home.png",
-+        "rak_desc": "RAK7240 has a built-in GPS module and LoRa® Server. This gateway supports multiple backhaul connectivity options such as WiFi, LTE, and Ethernet with an available SD card slot to back up the gathered data. The enclosure is IP rated, dustproof and waterproof, and with a built-in surge protection.",
++        "rak_desc": "RAK7240 has a built-in GPS module and LoRa Server. This gateway supports multiple backhaul connectivity options such as WiFi, LTE, and Ethernet with an available SD card slot to back up the gathered data. The enclosure is IP rated, dustproof and waterproof, and with a built-in surge protection.",
 +        "rak_grp": [
 +          "wisgate",
 +          "edge"
@@ -14057,7 +14057,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 4,
-+          "title": "Setup RAK Gateway LoRa® Concentrator",
++          "title": "Setup RAK Gateway LoRa Concentrator",
 +          "slug": "setup-rak-gateway-lora®-concentrator"
 +        },
 +        {
@@ -14323,7 +14323,7 @@ index 0000000..0d9624a
 +      "frontmatter": {
 +        "static_root": "/assets/images/wisgate/rak7243c/quickstart/1.product-overview/1.index",
 +        "rak_img": "/assets/images/wisgate/rak7243c/quickstart/1.product-overview/1.index/RAK7243C_home.png",
-+        "rak_desc": "RAK7243C is built with the Raspberry Pi 3B+ as its core that integrates all the other hardware components. Along with the GPS module and heat sink, the RAK2245 Pi HAT is stacked with the Raspberry Pi 3B+ that plays the role of a LoRa® transceiver.  Lastly, it has the RAK2013 Cellular Pi HAT that provides for cellular backhaul in addition to the WiFi and Ethernet connectivity options.",
++        "rak_desc": "RAK7243C is built with the Raspberry Pi 3B+ as its core that integrates all the other hardware components. Along with the GPS module and heat sink, the RAK2245 Pi HAT is stacked with the Raspberry Pi 3B+ that plays the role of a LoRa transceiver.  Lastly, it has the RAK2013 Cellular Pi HAT that provides for cellular backhaul in addition to the WiFi and Ethernet connectivity options.",
 +        "rak_grp": [
 +          "wisgate",
 +          "developer"
@@ -14460,7 +14460,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 4,
-+          "title": "Set up RAK Gateway LoRa® Concentrator",
++          "title": "Set up RAK Gateway LoRa Concentrator",
 +          "slug": "set-up-rak-gateway-lora®-concentrator"
 +        },
 +        {
@@ -14726,7 +14726,7 @@ index 0000000..0d9624a
 +      "frontmatter": {
 +        "static_root": "/assets/images/wisgate/rak7244/quickstart/1.main",
 +        "rak_img": "/assets/images/wisgate/rak7244/quickstart/1.main/RAK7244_home.png",
-+        "rak_desc": "RAK7244 is a base model built with the RAK2245 Pi HAT stacked with the newest Raspberry Pi 4, along with the GPS module and heat sink, which increase the performance and thermal dissipation. With its ready to use Raspbian based firmware, it is easy to connect the gateway to any standard LoRaWAN® Server. Thus, the device is capable of tackling applications related to Smart Grids, Intelligent Farms, and other IoT Enterprise applications.",
++        "rak_desc": "RAK7244 is a base model built with the RAK2245 Pi HAT stacked with the newest Raspberry Pi 4, along with the GPS module and heat sink, which increase the performance and thermal dissipation. With its ready to use Raspbian based firmware, it is easy to connect the gateway to any standard LoRaWAN Server. Thus, the device is capable of tackling applications related to Smart Grids, Intelligent Farms, and other IoT Enterprise applications.",
 +        "rak_grp": [
 +          "wisgate",
 +          "developer"
@@ -14858,7 +14858,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 4,
-+          "title": "Setup RAK Gateway LoRa® Concentrator",
++          "title": "Setup RAK Gateway LoRa Concentrator",
 +          "slug": "setup-rak-gateway-lora®-concentrator"
 +        },
 +        {
@@ -15052,7 +15052,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 4,
-+          "title": "Set up RAK Gateway LoRa® Concentrator",
++          "title": "Set up RAK Gateway LoRa Concentrator",
 +          "slug": "set-up-rak-gateway-lora®-concentrator"
 +        },
 +        {
@@ -15426,7 +15426,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 4,
-+          "title": "Setup RAK Gateway LoRa® Concentrator",
++          "title": "Setup RAK Gateway LoRa Concentrator",
 +          "slug": "setup-rak-gateway-lora®-concentrator"
 +        },
 +        {
@@ -15654,7 +15654,7 @@ index 0000000..0d9624a
 +      "frontmatter": {
 +        "static_root": "/assets/images/wisgate/rak7249/quickstart/1.main",
 +        "rak_img": "/assets/images/wisgate/rak7249/quickstart/1.main/RAK7249_home.png",
-+        "rak_desc": "RAK7249 is designed for outdoor use even in extreme conditions with an IP67 graded enclosure. It has a built-in GPS module and LoRa® Server, and it supports multiple backhaul connectivity options such as Wi-Fi, LTE, and Ethernet. Moreover, RAK7249 is powered by PoE with options for battery, solar, or AC power supply.",
++        "rak_desc": "RAK7249 is designed for outdoor use even in extreme conditions with an IP67 graded enclosure. It has a built-in GPS module and LoRa Server, and it supports multiple backhaul connectivity options such as Wi-Fi, LTE, and Ethernet. Moreover, RAK7249 is powered by PoE with options for battery, solar, or AC power supply.",
 +        "rak_grp": [
 +          "wisgate",
 +          "edge"
@@ -15831,7 +15831,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 5,
-+          "title": "Lightning Arrestor for the LoRa®, LTE, and Wi-Fi antennas",
++          "title": "Lightning Arrestor for the LoRa, LTE, and Wi-Fi antennas",
 +          "slug": "lightning-arrestor-for-the-lora®-lte-and-wi-fi-antennas"
 +        },
 +        {
@@ -15992,7 +15992,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 5,
-+          "title": "LoRa® Radio Specifications",
++          "title": "LoRa Radio Specifications",
 +          "slug": "lora®-radio-specifications"
 +        },
 +        {
@@ -16028,7 +16028,7 @@ index 0000000..0d9624a
 +      "frontmatter": {
 +        "static_root": "/assets/images/wisgate/rak7258/quickstart/1.main",
 +        "rak_img": "/assets/images/wisgate/rak7258/quickstart/1.main/RAK7258_home.png",
-+        "rak_desc": "RAK7258 is a full 8-channel gateway with a built-in LoRa® Server for easy integration and deployment of applications. It supports multiple backhaul connectivity options such as Ethernet, WiFi, and Cellular. Moreover, this gateway has Line-of-Sight (LoS) ranges of up to 15 km, while for highly urbanized environments, it can cover more than 2 km.",
++        "rak_desc": "RAK7258 is a full 8-channel gateway with a built-in LoRa Server for easy integration and deployment of applications. It supports multiple backhaul connectivity options such as Ethernet, WiFi, and Cellular. Moreover, this gateway has Line-of-Sight (LoS) ranges of up to 15 km, while for highly urbanized environments, it can cover more than 2 km.",
 +        "rak_grp": [
 +          "wisgate",
 +          "edge"
@@ -17098,7 +17098,7 @@ index 0000000..0d9624a
 +      "title": "RAK2245 Pi HAT WisLink LPWAN Concentrator",
 +      "frontmatter": {
 +        "rak_img": "/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/1.product-overview/1.index/RAK2245-PiHat_home.png",
-+        "rak_desc": "RAK2245 Pi HAT offers complete compatibility with the Raspberry Pi 40-pin header for an easy LoRaWAN® solution deployment. It provides a low data rate LoRa® radio links in ultra-fast speed and can manage packets from remotely disperse endpoints. This module integrates GPS module and a heat sink for better thermal dissipation and overall device performance.",
++        "rak_desc": "RAK2245 Pi HAT offers complete compatibility with the Raspberry Pi 40-pin header for an easy LoRaWAN solution deployment. It provides a low data rate LoRa radio links in ultra-fast speed and can manage packets from remotely disperse endpoints. This module integrates GPS module and a heat sink for better thermal dissipation and overall device performance.",
 +        "rak_grp": [
 +          "wislink",
 +          "lpwan"
@@ -17238,7 +17238,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 4,
-+          "title": "Setup RAK Gateway LoRa® Concentrator",
++          "title": "Setup RAK Gateway LoRa Concentrator",
 +          "slug": "setup-rak-gateway-lora®-concentrator"
 +        },
 +        {
@@ -17566,7 +17566,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 4,
-+          "title": "Set up RAK Gateway LoRa® concentrator",
++          "title": "Set up RAK Gateway LoRa concentrator",
 +          "slug": "set-up-rak-gateway-lora®-concentrator"
 +        },
 +        {
@@ -17802,7 +17802,7 @@ index 0000000..0d9624a
 +      "title": "RAK2247 WisLink LPWAN Concentrator",
 +      "frontmatter": {
 +        "rak_img": "/assets/images/wislink-lora/rak2247/quickstart/1.main/RAK2247_home.png",
-+        "rak_desc": "RAK2247 is functional to any embedded platform offering a mini-PCIe slot with an SPI or USB connection. This enables easy integration into routers and other networking equipment. Also, it offers maximum power transmission for a wider LoRaWAN® network coverage.",
++        "rak_desc": "RAK2247 is functional to any embedded platform offering a mini-PCIe slot with an SPI or USB connection. This enables easy integration into routers and other networking equipment. Also, it offers maximum power transmission for a wider LoRaWAN network coverage.",
 +        "rak_grp": [
 +          "wislink",
 +          "lpwan"
@@ -18065,7 +18065,7 @@ index 0000000..0d9624a
 +      "title": "RAK2287 WisLink LPWAN Concentrator",
 +      "frontmatter": {
 +        "rak_img": "/assets/images/wislink-lora/rak2287/quickstart/1main/RAK2287_home.png",
-+        "rak_desc": "RAK2287 is compatible with the 3G/LTE card of the mini-PCIe type. This board has two antenna ports for the LoRa® and GNSS. With the mini-PCIe as its form factor, this module is compatible with any embedded platform offering a free mini-PCIe slot with an SPI connection.",
++        "rak_desc": "RAK2287 is compatible with the 3G/LTE card of the mini-PCIe type. This board has two antenna ports for the LoRa and GNSS. With the mini-PCIe as its form factor, this module is compatible with any embedded platform offering a free mini-PCIe slot with an SPI connection.",
 +        "rak_grp": [
 +          "wislink",
 +          "lpwan"
@@ -18217,7 +18217,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 4,
-+          "title": "Set up RAK Gateway LoRa® Concentrator",
++          "title": "Set up RAK Gateway LoRa Concentrator",
 +          "slug": "set-up-rak-gateway-lora®-concentrator"
 +        },
 +        {
@@ -19088,7 +19088,7 @@ index 0000000..0d9624a
 +      "title": "RAK612 WisNode Button",
 +      "frontmatter": {
 +        "rak_img": "/assets/images/wisnode/rak612/quickstart/main/RAK612_home.png",
-+        "rak_desc": "RAK612 LPWAN Button is a remote wireless trigger based on the LoRaWAN® protocol. It offers long-range wireless connectivity, long battery life, and four programmable buttons, making it suitable for several Smart Home applications.",
++        "rak_desc": "RAK612 LPWAN Button is a remote wireless trigger based on the LoRaWAN protocol. It offers long-range wireless connectivity, long battery life, and four programmable buttons, making it suitable for several Smart Home applications.",
 +        "rak_grp": [
 +          "wisnode",
 +          "button"
@@ -19311,7 +19311,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 5,
-+          "title": "LoRa® Antenna",
++          "title": "LoRa Antenna",
 +          "slug": "lora®-antenna"
 +        },
 +        {
@@ -19357,7 +19357,7 @@ index 0000000..0d9624a
 +      "frontmatter": {
 +        "static_root": "/assets/images/wisnode/rak7200/quickstart/overview",
 +        "rak_img": "/assets/images/wisnode/rak7200/quickstart/overview/RAK7200_home.png",
-+        "rak_desc": "RAK7200 is a tracker device with a 3.7V rechargeable Li-Ion battery and a GPS modem. The LoRa® and GPS antenna are integrated inside the casing. It has a built-in digital motion, barometer, and 9-axis sensor, which includes a triple-axis gyroscope, a triple-axis accelerometer, and a triple-axis magnetometer.",
++        "rak_desc": "RAK7200 is a tracker device with a 3.7V rechargeable Li-Ion battery and a GPS modem. The LoRa and GPS antenna are integrated inside the casing. It has a built-in digital motion, barometer, and 9-axis sensor, which includes a triple-axis gyroscope, a triple-axis accelerometer, and a triple-axis magnetometer.",
 +        "rak_grp": [
 +          "wisnode",
 +          "track"
@@ -19454,7 +19454,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 4,
-+          "title": "LoRaWAN® Join Mode",
++          "title": "LoRaWAN Join Mode",
 +          "slug": "lorawan®-join-mode"
 +        },
 +        {
@@ -19494,7 +19494,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 4,
-+          "title": "LoRaWAN® Join Mode",
++          "title": "LoRaWAN Join Mode",
 +          "slug": "lorawan®-join-mode-2"
 +        },
 +        {
@@ -19901,7 +19901,7 @@ index 0000000..0d9624a
 +          "wisnode",
 +          "bridge"
 +        ],
-+        "rak_desc": "RAK7431 is designed for industrial applications that relay Modbus data using the LoRaWAN® network as a means of wirelessly transmitting to and from the end devices. It can operate in all the LoRaWAN® bands within the standard parameters defined by the LoRa® Alliance. Hence, it allows good signal quality within the densely populated offices, storehouses, and even within the large factories.",
++        "rak_desc": "RAK7431 is designed for industrial applications that relay Modbus data using the LoRaWAN network as a means of wirelessly transmitting to and from the end devices. It can operate in all the LoRaWAN bands within the standard parameters defined by the LoRa Alliance. Hence, it allows good signal quality within the densely populated offices, storehouses, and even within the large factories.",
 +        "prev": "../../",
 +        "next": "../Quickstart/"
 +      },
@@ -21003,7 +21003,7 @@ index 0000000..0d9624a
 +          "wistrio",
 +          "lpwan"
 +        ],
-+        "rak_desc": "The RAK5205 WisTrio LPWAN Tracker Board is built on the Semtech SX1276 chip, with the STM32L1 MCU at its core. It is a feature-packed sensor board with LoRa® connectivity and built-in GPS that provides various interfaces for easy application development. This module is perfect for applications such as asset tracking, smart vehicle management, and location-based services.",
++        "rak_desc": "The RAK5205 WisTrio LPWAN Tracker Board is built on the Semtech SX1276 chip, with the STM32L1 MCU at its core. It is a feature-packed sensor board with LoRa connectivity and built-in GPS that provides various interfaces for easy application development. This module is perfect for applications such as asset tracking, smart vehicle management, and location-based services.",
 +        "prev": "../../",
 +        "next": "../Quickstart/"
 +      },
@@ -21157,7 +21157,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 5,
-+          "title": "LoRa® Antenna",
++          "title": "LoRa Antenna",
 +          "slug": "lora®-antenna"
 +        },
 +        {
@@ -21167,12 +21167,12 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 6,
-+          "title": "LoRa® Antenna Dimension",
++          "title": "LoRa Antenna Dimension",
 +          "slug": "lora®-antenna-dimension"
 +        },
 +        {
 +          "level": 6,
-+          "title": "LoRa® Antenna Parameters",
++          "title": "LoRa Antenna Parameters",
 +          "slug": "lora®-antenna-parameters"
 +        },
 +        {
@@ -21428,7 +21428,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 3,
-+          "title": "LoRa® P2P Mode",
++          "title": "LoRa P2P Mode",
 +          "slug": "lora®-p2p-mode"
 +        },
 +        {
@@ -21624,7 +21624,7 @@ index 0000000..0d9624a
 +      "title": "RAK815 WisTrio LPWAN Tracker",
 +      "frontmatter": {
 +        "rak_img": "/assets/images/wistrio/rak815/quickstart/1main/RAK815_home.png",
-+        "rak_desc": "RAK815 is a wireless remote solution that integrates both LoRaWAN® 1.0.2 protocol and Bluetooth 5.0, supporting the LoRaWAN® working mode and Bluetooth transparent transmission up to 300 meters. This board is in the standard Arduino form factor with built-in GPS, acceleration, temperature, and humidity sensor.",
++        "rak_desc": "RAK815 is a wireless remote solution that integrates both LoRaWAN 1.0.2 protocol and Bluetooth 5.0, supporting the LoRaWAN working mode and Bluetooth transparent transmission up to 300 meters. This board is in the standard Arduino form factor with built-in GPS, acceleration, temperature, and humidity sensor.",
 +        "rak_grp": [
 +          "wistrio",
 +          "lpwan"
@@ -21691,7 +21691,7 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 3,
-+          "title": "Configuring the LoRaWAN®",
++          "title": "Configuring the LoRaWAN",
 +          "slug": "configuring-the-lorawan®"
 +        },
 +        {
@@ -21706,12 +21706,12 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 4,
-+          "title": "Configuration of LoRaWAN® Parameters",
++          "title": "Configuration of LoRaWAN Parameters",
 +          "slug": "configuration-of-lorawan®-parameters"
 +        },
 +        {
 +          "level": 4,
-+          "title": "Modify LoRaWAN® Region",
++          "title": "Modify LoRaWAN Region",
 +          "slug": "modify-lorawan®-region"
 +        },
 +        {
@@ -21731,12 +21731,12 @@ index 0000000..0d9624a
 +        },
 +        {
 +          "level": 4,
-+          "title": "LoRaWAN® Demo",
++          "title": "LoRaWAN Demo",
 +          "slug": "lorawan®-demo"
 +        },
 +        {
 +          "level": 5,
-+          "title": "Parameters using LoRaWAN® Demo",
++          "title": "Parameters using LoRaWAN Demo",
 +          "slug": "parameters-using-lorawan®-demo"
 +        },
 +        {

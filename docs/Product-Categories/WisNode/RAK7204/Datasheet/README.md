@@ -1,6 +1,6 @@
 ---
 prev: ../Quickstart/
-next: false
+next: ../AT-Command-Manual/
 tags:
   - datasheet
   - wisnode
@@ -25,13 +25,13 @@ Because RAK7204 is built-around a low-power MCU and low-power sensors, and the f
 
 The firmware has built-in functionality that allows the user to adjust the sampling interval of the sensors and the transmission cycle. This allows for flexibility, as one can choose to have more granular measurements at the cost of battery life, or extend operational time, trading the volume of data generated.
 
-Last but not least, the RAK7204 adopts a highly integrated design. The environmental sensors, LoRa® transceiver module, LoRa® antenna, and the battery are fitted in a 90 mm x 85 mm x 34 mm sized housing. These small dimensions allow for installation in tight spaces or ones that require the sensor to have a minimal impact on the overall feel of the surrounding environment. The housing adopts a hollow, permeable design to facilitate air flow in order to more accurately detect the environmental changes.
+Last but not least, the RAK7204 adopts a highly integrated design. The environmental sensors, LoRa transceiver module, LoRa antenna, and the battery are fitted in a 90 mm x 85 mm x 34 mm sized housing. These small dimensions allow for installation in tight spaces or ones that require the sensor to have a minimal impact on the overall feel of the surrounding environment. The housing adopts a hollow, permeable design to facilitate air flow in order to more accurately detect the environmental changes.
 
 ### Features
 
 - Measurement of a variety of environmental parameters: **Temperature**, **Humidity**, **Gas Pressure** and **Indoor Air Quality (IAQ)**
 - **BOSCH BME680** Integrated Environmental Unit
-- **LoRaWAN® 1.0.2** fully compliant
+- **LoRaWAN 1.0.2** fully compliant
 - Low power operation and standby current of less than 15 uA
 - Adjustable sampling and transmission interval.
 - Comes with a **replaceable 3500 mAh high capacity lithium battery**
@@ -59,13 +59,13 @@ The aforementioned combination of RAK7204 and RAK7258 is visualized in Figure be
 
 ### Hardware
 
-The hardware specification covers the parameters of the RAK7204 in terms of electrical and the sensors attached within. It also presents the supported LoRaWAN® frequency parameters.
+The hardware specification covers the parameters of the RAK7204 in terms of electrical and the sensors attached within. It also presents the supported LoRaWAN frequency parameters.
 
 #### RF Characteristics
 
 ##### Operating Frequencies
 
-The RAK7204 supports different LoRaWAN® frequency bands for different country regions.
+The RAK7204 supports different LoRaWAN frequency bands for different country regions.
 
 See the supported range in the table below:
 
@@ -89,7 +89,7 @@ The following are the electrical characteristics of RAK7204 WisNode Sense Home. 
 | -------------------------------------------- | ----- | ---- |
 | Standby Current                              | <15   | uA   |
 | Current when Sensors are working             | <10   | mA   |
-| Current in when LoRa® frames are transmitted | <150  | mA   |
+| Current in when LoRa frames are transmitted | <150  | mA   |
 
 ##### Battery Specifications
 

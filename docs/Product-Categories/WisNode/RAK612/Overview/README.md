@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisnode/rak612/quickstart/main/RAK612_home.png
-rak_desc: RAK612 LPWAN Button is a remote wireless trigger based on the LoRaWANÂ® protocol. It offers long-range wireless connectivity, long battery life, and four programmable buttons, making it suitable for several Smart Home applications.
+rak_desc: RAK612 LPWAN Button is a remote wireless trigger based on the LoRaWAN protocol. It offers long-range wireless connectivity, long battery life, and four programmable buttons, making it suitable for several Smart Home applications.
 rak_grp: [wisnode, button]
 prev: ../../
 next: ../Quickstart/
@@ -11,6 +11,7 @@ Thank you for choosing **RAK612  WisNode Button** in your awesome IoT Project! ð
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](https://downloads.rakwireless.com/LoRa/RAK612-LoRaButton/Hardware-Specification/RAK_LB801%C2%A0LoRaButton%C2%A0Datasheet%C2%A0V1.0.pdf)
+* [AT Command Manual](../AT-Command-Manual/)
 
 
 <!-- <rk-img
@@ -22,7 +23,7 @@ Thank you for choosing **RAK612  WisNode Button** in your awesome IoT Project! ð
 
 ## Product Description
 
-The **RAK612 WisNode Button** is a remote wireless trigger device. It supports user-defined functions for each key and is based on the LoRaWANÂ® 1.0.2 standard. All prevailing LoRaWANÂ® bands are supported: EU433, CN470, IN865, EU868, AU915, US915, KR920, and AS923.
+The **RAK612 WisNode Button** is a remote wireless trigger device. It supports user-defined functions for each key and is based on the LoRaWAN 1.0.2 standard. All prevailing LoRaWAN bands are supported: EU433, CN470, IN865, EU868, AU915, US915, KR920, and AS923.
 
 The RAK612 WisNode Button is suitable for a variety of Smart Home applications: Entertainment system control ,Control of Lights, as a Snooze Button for your Alarms, or a Remote trigger. With long range wireless connectivity, amazing battery life, and four programmable buttons, the possibilities are only limited by your imagination!
 

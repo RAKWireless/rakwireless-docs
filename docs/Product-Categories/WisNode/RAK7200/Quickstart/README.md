@@ -32,7 +32,7 @@ Before going through each and every step in the installation guide of the RAK720
 | -------- | ---------- |
 |   BLE    | Bluetooth Low Energy |
 |   DFU    | Device Firmware Upgrade |
-|   LoRa®   | Long Range  |
+|   LoRa   | Long Range  |
 |   EUI    | Electronic Unique Identifier |
 |   TTN    | The Things Network|
 
@@ -139,7 +139,7 @@ In this section, a practical exercise will be performed to show how to connect t
 
 As shown in Figure 7, the RAK7200 module is one of the devices located on the left side. In the context of an IoT solution, the objective is to deploy devices to sense the relevant process variables and transmit the data to the backend servers located in the cloud. The data will be processed and integrated as part of a larger solution that, ultimately, could generate efficiency, traceability, predictability capacity among others.
 
-The RAK7200 module can be part of this ecosystem, and the objective of this section is to demonstrate how simple is to send data to the TTN using the LoRaWAN® protocol. To achieve this, the RAK7200 module must be located inside of the coverage of a LoRaWAN® gateway. 
+The RAK7200 module can be part of this ecosystem, and the objective of this section is to demonstrate how simple is to send data to the TTN using the LoRaWAN protocol. To achieve this, the RAK7200 module must be located inside of the coverage of a LoRaWAN gateway. 
 
 <b>Sign up and login</b>
 
@@ -218,7 +218,7 @@ Insert updated TTN homepage with the same username
   caption="Add your Device"
 />
 
-In this form, the device ID must be unique for the application and must be completed with a lower case, alphanumeric characters. The rest of the parameters in the form are very important for the LoRaWAN® protocol:
+In this form, the device ID must be unique for the application and must be completed with a lower case, alphanumeric characters. The rest of the parameters in the form are very important for the LoRaWAN protocol:
 
 * Device EUI
 * Application Key
@@ -235,12 +235,12 @@ The TTN platform can generate these parameters randomly by leaving those fields 
 />
 
 
-#### LoRaWAN® Join Mode
+#### LoRaWAN Join Mode
 
-The LoRaWAN® specification defines that to join in a LoRaWAN® network, each end-device has to be personalized and activated. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP). In OTAA, the previously personalized end-device is activated when is deployed or reset. On the other hand, in ABP, the personalization and activation are done as a single step. 
+The LoRaWAN specification defines that to join in a LoRaWAN network, each end-device has to be personalized and activated. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP). In OTAA, the previously personalized end-device is activated when is deployed or reset. On the other hand, in ABP, the personalization and activation are done as a single step. 
 
 
-Hence, this is referred to as the “**Join Mode**". LoRaWAN® allows the OTAA mode and the ABP mode. In this section, the configuration process of these two modes is explained, both on the platform side and the node side.
+Hence, this is referred to as the “**Join Mode**". LoRaWAN allows the OTAA mode and the ABP mode. In this section, the configuration process of these two modes is explained, both on the platform side and the node side.
 
 
 ##### OTAA Mode
@@ -263,14 +263,14 @@ at+version
 
 By default, the parameters configured in the RAK7200 modules are:
 
-- LoRa® join mode: **OTTA**
-- LoRa® class: **Class A**
-- LoRa® region: **AU915** 
+- LoRa join mode: **OTTA**
+- LoRa class: **Class A**
+- LoRa region: **AU915** 
 - Device EUI: **00605E75749FCD6D**
 - Application EUI: **00605E75749FCD6D**
 - Application Key: **4E2003296FC5CD26F46940A6DAFA9D1**
 
-1. Set the LoRa® join mode to OTAA.
+1. Set the LoRa join mode to OTAA.
 
 ```
 at+set_config=lora:join_mode:0
@@ -280,11 +280,11 @@ at+set_config=lora:join_mode:0
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/ttn-otaa-mode/16.join-mode.png"
   width="40%"
-  caption="Setting LoRa® Join Mode to OTAA Mode"
+  caption="Setting LoRa Join Mode to OTAA Mode"
 />
 
 
-2. Set the LoRa® class to Class A.
+2. Set the LoRa class to Class A.
 
 ```
 at+set_config=lora:class:0
@@ -294,7 +294,7 @@ at+set_config=lora:class:0
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/ttn-otaa-mode/17.lora-class.png"
   width="40%"
-  caption="Setting LoRa® Class Parameter"
+  caption="Setting LoRa Class Parameter"
 />
 
 3. Set the frequency/region to AU915.
@@ -309,7 +309,7 @@ at+set_config=lora:region:AU915
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/ttn-otaa-mode/18.lora-region.png"
   width="40%"
-  caption="Setting LoRa® Frequency/Region Parameter"
+  caption="Setting LoRa Frequency/Region Parameter"
 />
 
 
@@ -322,7 +322,7 @@ at+set_config=lora:dev_eui:00605E75749FCD6D
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/ttn-otaa-mode/19.device-eui.png"
   width="40%"
-  caption="Setting LoRa® Device EUI Parameter"
+  caption="Setting LoRa Device EUI Parameter"
 />
 
 5. Set the Application EUI.
@@ -334,7 +334,7 @@ at+set_config=lora:app_eui:00605E75749FCD6D
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/ttn-otaa-mode/20.app-eui.png"
   width="40%"
-  caption="Setting LoRa® Application EUI Parameter"
+  caption="Setting LoRa Application EUI Parameter"
 />
 
 
@@ -354,7 +354,7 @@ at+set_config=lora:app_key:4E2003296FC5CD26F46940A6DAFA9D1
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/ttn-otaa-mode/21.app-key.png"
   width="40%"
-  caption="Setting LoRa® Application Key Parameter"
+  caption="Setting LoRa Application Key Parameter"
 />
 
 :::tip 📝 NOTE:
@@ -370,15 +370,15 @@ After configuring all the parameters, you need to reset your RAK7200 Module for 
 at+join
 ```
 
-After 5 or 6 seconds, if the request was successfully received by a LoRa® gateway, then you should see the messages shown in Figure 22.
+After 5 or 6 seconds, if the request was successfully received by a LoRa gateway, then you should see the messages shown in Figure 22.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/ttn-otaa-mode/22.join-command.png"
   width="40%"
-  caption="Join into a LoRaWAN® Network"
+  caption="Join into a LoRaWAN Network"
 />
 
-Once joined into the LoRaWAN® network, the RAK7200 firmware will start to send the data periodically. As shown in Figure 23, data will be saved in the TTN platform. 
+Once joined into the LoRaWAN network, the RAK7200 firmware will start to send the data periodically. As shown in Figure 23, data will be saved in the TTN platform. 
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/ttn-otaa-mode/23.messaged-received.png"
@@ -443,15 +443,15 @@ at+version
 
 As an example, these are the list of the parameters you need to configure in RAK7200: 
 
-- LoRa® join mode: **ABP**
-- LoRa® class: **Class A**
-- LoRa® region: **AU915** 
+- LoRa join mode: **ABP**
+- LoRa class: **Class A**
+- LoRa region: **AU915** 
 - Device address: **000781fb9**
 - Network Session Key: **c280cb8d1df688bc18601a97025c588**
 - Application Session Key: **4d42ec5caf97f03d833cdaf5003f69e1**
 
 
-1. Set the LoRa® join mode to ABP.
+1. Set the LoRa join mode to ABP.
 
 ```
 at+set_config=lora:join_mode:1
@@ -460,11 +460,11 @@ at+set_config=lora:join_mode:1
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/ttn-abp-mode/27.join-mode.png"
   width="40%"
-  caption="Setting LoRa® Join Mode to ABP Mode"
+  caption="Setting LoRa Join Mode to ABP Mode"
 />
 
 
-2. Set the LoRa® class to Class A.
+2. Set the LoRa class to Class A.
 
 ```
 at+set_config=lora:class:0
@@ -473,7 +473,7 @@ at+set_config=lora:class:0
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/ttn-abp-mode/28.lora-class.png"
   width="40%"
-  caption="Setting LoRa® Class Parameter"
+  caption="Setting LoRa Class Parameter"
 />
 
 3. Set the frequency/region to AU915.
@@ -488,7 +488,7 @@ at+set_config=lora:region:AU915
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/ttn-abp-mode/29.lora-region.png"
   width="40%"
-  caption="Setting LoRa® Frequency/Region Parameter"
+  caption="Setting LoRa Frequency/Region Parameter"
 />
 
 
@@ -501,10 +501,10 @@ at+set_config=lora:dev_addr:00781fb9
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/ttn-abp-mode/30.device-address.png"
   width="40%"
-  caption="Setting LoRa® Device Address Parameter"
+  caption="Setting LoRa Device Address Parameter"
 />
 
-5. Set the LoRa® Network Session Key.
+5. Set the LoRa Network Session Key.
 
 ```
 at+set_config=lora:nwks_key:c280cb8d1df688bc18601a97025c588
@@ -513,10 +513,10 @@ at+set_config=lora:nwks_key:c280cb8d1df688bc18601a97025c588
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/ttn-abp-mode/31.network-session.png"
   width="40%"
-  caption="Setting LoRa® Network Session Parameter"
+  caption="Setting LoRa Network Session Parameter"
 />
 
-6. Set the LoRa® Application Session Key.
+6. Set the LoRa Application Session Key.
 
 ```
 at+set_config=lora:apps_key:4d42ec5caf97f03d833cdaf5003f69e1
@@ -525,7 +525,7 @@ at+set_config=lora:apps_key:4d42ec5caf97f03d833cdaf5003f69e1
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/ttn-abp-mode/32.app-session.png"
   width="40%"
-  caption="Setting LoRa® Application Session Parameter"
+  caption="Setting LoRa Application Session Parameter"
 />
 
 :::tip 📝 NOTE:
@@ -542,7 +542,7 @@ at+join
 
 :::tip 📝 NOTE:
 
-By using the ABP mode in LoRaWAN®, it doesn’t require to join a network before sending a LoRaWAN® package. But to keep the consistency of internal states of the firmware of the RAK7200 module, it is still required to send at+join command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
+By using the ABP mode in LoRaWAN, it doesn’t require to join a network before sending a LoRaWAN package. But to keep the consistency of internal states of the firmware of the RAK7200 module, it is still required to send at+join command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
 
 :::
 
@@ -550,11 +550,11 @@ By using the ABP mode in LoRaWAN®, it doesn’t require to join a network befor
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/ttn-abp-mode/33.join-command.png"
   width="40%"
-  caption="Join into a LoRaWAN® Network"
+  caption="Join into a LoRaWAN Network"
 />
 
 
-Once the RAK7200 joined into a LoRaWAN® network, it will start to send periodically the data collected from the GPS and other sensors. Then, go to the TTN Console to confirm that the messages ware properly received.
+Once the RAK7200 joined into a LoRaWAN network, it will start to send periodically the data collected from the GPS and other sensors. Then, go to the TTN Console to confirm that the messages ware properly received.
 
 
 ### Connecting with ChirpStack
@@ -567,15 +567,15 @@ In this section, a practical exercise will be performed to show how to connect t
   caption="RAK7200 module in the context of the ChirpStack platform"
 />
 
-The ChirpStack or previously known as LoRaServer project provides open-source components for building LoRaWAN® networks. Like the case of TTN, the RAK7200 module is located in the periphery and transmit the data to the backend servers through a LoRa® gateway. Learn more about [ChirpStack](https://www.chirpstack.io/).
+The ChirpStack or previously known as LoRaServer project provides open-source components for building LoRaWAN networks. Like the case of TTN, the RAK7200 module is located in the periphery and transmit the data to the backend servers through a LoRa gateway. Learn more about [ChirpStack](https://www.chirpstack.io/).
 
 :::tip 📝 NOTE:
 
-In this document, it is assumed that you are using a RAK LoRa® gateway, such as RAK7249. The gateway must be configured and registered previously to Chirpstack deployment. For further information, check the RAK documents for more details.
+In this document, it is assumed that you are using a RAK LoRa gateway, such as RAK7249. The gateway must be configured and registered previously to Chirpstack deployment. For further information, check the RAK documents for more details.
 
 :::
 
-You can provide your own Chirpstack deployment or use the one provided by RAK for testing purposes. RAK has enabled a set of LoRaServer on the cloud to support customers to test their RAK LoRa® gateway or RAK LoRa® node. Table below shows the IP address for the supported regions. Submit your request in the following URL to get an account and password. 
+You can provide your own Chirpstack deployment or use the one provided by RAK for testing purposes. RAK has enabled a set of LoRaServer on the cloud to support customers to test their RAK LoRa gateway or RAK LoRa node. Table below shows the IP address for the supported regions. Submit your request in the following URL to get an account and password. 
 
   - [RAKwireless Forum](https://forum.rakwireless.com/t/rak-free-cloud-loraserver-for-testing/344/45)
 
@@ -591,7 +591,7 @@ You can provide your own Chirpstack deployment or use the one provided by RAK fo
 In this section, you need the following requirements:
 
   1. Have an account at the ChirpStack deployment provided by RAK. 
-  2. Have access to a LoRaWAN® gateway registered at the RAK’s ChirpStack server.
+  2. Have access to a LoRaWAN gateway registered at the RAK’s ChirpStack server.
   3. Serial Port Tool provided by RAK.
   4. RAK7200 module
 
@@ -650,7 +650,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   caption="Device Tab of an Application"
 />
 
-3. Once inside of the DEVICE tab, create a new device (LoRa® node) by clicking on the “**+ CREATE**” button. 
+3. Once inside of the DEVICE tab, create a new device (LoRa node) by clicking on the “**+ CREATE**” button. 
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/connecting-to-chirpstack/40.adding-node.png"
@@ -687,9 +687,9 @@ ChirpStack does not support AS923in ABP mode.
 />
 
 
-#### LoRaWAN® Join Mode
+#### LoRaWAN Join Mode
 
-In LoRaWAN®, there are two ways a node can connect itself to the LoRaWAN® network. This is referred to as **Join Mode**. LoRaWAN® allows the OTAA mode and the ABP mode. In this section, the configuration process of these two modes, both on the platform side and the node side will be explained.
+In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network. This is referred to as **Join Mode**. LoRaWAN allows the OTAA mode and the ABP mode. In this section, the configuration process of these two modes, both on the platform side and the node side will be explained.
 
 ##### OTAA Mode
 
@@ -756,16 +756,16 @@ at+version
 
 As an example, these are the list of the parameters you need to configure in RAK7200: 
 
-- LoRa® join mode: **OTAA**
-- LoRa® class: **Class A**
-- LoRa® region: **AU915** 
+- LoRa join mode: **OTAA**
+- LoRa class: **Class A**
+- LoRa region: **AU915** 
 - Device EUI: **744d4452dd39037c**
 - Application EUI: **70B3D57ED001C544**
 - Application Key: **4E2003296FC5CD26F46940A6DAFA9D1**
 
 
 
-1. Set the LoRa® join mode to OTAA.
+1. Set the LoRa join mode to OTAA.
 
 ```
 at+set_config=lora:join_mode:0
@@ -774,10 +774,10 @@ at+set_config=lora:join_mode:0
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/47.join-mode.png"
   width="40%"
-  caption="Setting LoRa® Join Mode to OTAA Mode"
+  caption="Setting LoRa Join Mode to OTAA Mode"
 />
 
-2. Set the LoRa® class to Class A.
+2. Set the LoRa class to Class A.
 
 ```
 at+set_config=lora:class:0
@@ -785,7 +785,7 @@ at+set_config=lora:class:0
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/48.lora-class.png"
   width="40%"
-  caption="Setting LoRa® Class Parameter"
+  caption="Setting LoRa Class Parameter"
 />
 
 3. Set the frequency/region to AU915.
@@ -800,7 +800,7 @@ at+set_config=lora:region:AU915
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/49.lora-frequency.png"
   width="40%"
-  caption="Setting LoRa® Frequency/Region Parameter"
+  caption="Setting LoRa Frequency/Region Parameter"
 />
 
 
@@ -813,7 +813,7 @@ at+set_config=lora:dev_eui:744d4452dd39037c
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/50.device-eui.png"
   width="40%"
-  caption="Setting LoRa® Device EUI Parameter"
+  caption="Setting LoRa Device EUI Parameter"
 />
 
 
@@ -826,7 +826,7 @@ at+set_config=lora:app_eui:70B3D57ED001C544
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/51.app-eui.png"
   width="40%"
-  caption="Setting LoRa® Application EUI Parameter"
+  caption="Setting LoRa Application EUI Parameter"
 />
 
 :::tip 📝 NOTE:
@@ -846,7 +846,7 @@ at+set_config=lora:app_key:4E2003296FC5CD26F46940A6DAFA9D1
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/52.app-key.png"
   width="40%"
-  caption="Setting LoRa® Application Key Parameter"
+  caption="Setting LoRa Application Key Parameter"
 />
 
 :::tip 📝 NOTE:
@@ -860,7 +860,7 @@ After configuring all parameters, you need to reset RAK7200 Module to save the p
 at+join
 ```
 
-After 5 or 6 seconds, if the request was successfully received by a LoRa® gateway, then you should see the messages shown in Figure 53.
+After 5 or 6 seconds, if the request was successfully received by a LoRa gateway, then you should see the messages shown in Figure 53.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/53.otaa-join-chirpstack.png"
@@ -873,7 +873,7 @@ After 5 or 6 seconds, if the request was successfully received by a LoRa® gatew
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/54.chirpstack-console.png"
   width="100%"
-  caption="Checking LoRaWAN® Joint Request in Chirpstack OTAA Console"
+  caption="Checking LoRaWAN Joint Request in Chirpstack OTAA Console"
 />
 
 - On the ChirpStack platform, you should also see the messages in the LORAWAN FRAMES tab as shown in Figure 55. 
@@ -897,7 +897,7 @@ This concludes the exercise to send data in the OTAA mode.
 ###### Configure the ABP Mode on the Platform
 
 
-During the registration of a new device, if you select “**DeviceProfile_ABP**” or "**DeviceProfile_ABP_CN470**", as shown in Figure 56, then the ChirpStack platform will assume that this device will join to the LoRaWAN® network using the ABP mode. 
+During the registration of a new device, if you select “**DeviceProfile_ABP**” or "**DeviceProfile_ABP_CN470**", as shown in Figure 56, then the ChirpStack platform will assume that this device will join to the LoRaWAN network using the ABP mode. 
 
 :::tip 📝 NOTE:
 
@@ -943,14 +943,14 @@ at+version
 
 As an example, these are the list of the parameters you need to configure in RAK7200: 
 
-- LoRa® join mode: **ABP**
-- LoRa® class: **Class A**
-- LoRa® region: **AU915** 
+- LoRa join mode: **ABP**
+- LoRa class: **Class A**
+- LoRa region: **AU915** 
 - Device address: **019c820a**
 - Network Session Key: **34fb174daa6dc34733495f73bd2b1ba1**
 - Application Session Key: **d7fde8da53ded21216fe71d4f91ecf0e**
 
-1. Set LoRa® join mode to ABP.
+1. Set LoRa join mode to ABP.
 
 ```
 at+set_config=lora:join_mode:1
@@ -959,11 +959,11 @@ at+set_config=lora:join_mode:1
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-abp-mode/57.join-mode.png"
   width="40%"
-  caption="Setting LoRa® Join Mode to ABP Mode"
+  caption="Setting LoRa Join Mode to ABP Mode"
 />
 
 
-2. Set LoRa® class to Class A.
+2. Set LoRa class to Class A.
 
 ```
 at+set_config=lora:class:0
@@ -972,7 +972,7 @@ at+set_config=lora:class:0
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-abp-mode/58.lora-class.png"
   width="40%"
-  caption="Setting LoRa® Class Parameter"
+  caption="Setting LoRa Class Parameter"
 />
 
 
@@ -990,7 +990,7 @@ at+set_config=lora:region:AU915
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-abp-mode/59.lora-region.png"
   width="40%"
-  caption="Setting LoRa® Class Parameter"
+  caption="Setting LoRa Class Parameter"
 />
 
 4. Set the Device Address. 
@@ -1001,7 +1001,7 @@ at+set_config=lora:dev_addr:019c820a
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-abp-mode/60.device-address.png"
   width="40%"
-  caption="Setting LoRa® Device Address Parameter"
+  caption="Setting LoRa Device Address Parameter"
 />
 
 5. Set the Network Session Key.
@@ -1013,7 +1013,7 @@ at+set_config=lora:nwks_key:34fb174daa6dc34733495f73bd2b1ba1
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-abp-mode/61.network-session.png"
   width="40%"
-  caption="Setting LoRa® Network Session Parameter"
+  caption="Setting LoRa Network Session Parameter"
 />
 
 6. Set the Application Session Key.
@@ -1025,7 +1025,7 @@ at+set_config=lora:apps_key: d7fde8da53ded21216fe71d4f91ecf0e
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-abp-mode/62.app-session.png"
   width="40%"
-  caption="Setting LoRa® Network Session Parameter"
+  caption="Setting LoRa Network Session Parameter"
 />
 
 :::tip 📝 NOTE:
@@ -1042,11 +1042,11 @@ at+join
 
 :::tip 📝 NOTE:
 
-By using the ABP mode in LoRaWAN® protocol, it doesn’t require to join a network before sending LoRaWAN® package. But to keep the consistency of internal states of the firmware of the RAK7200 module, it still required to send at+join command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
+By using the ABP mode in LoRaWAN protocol, it doesn’t require to join a network before sending LoRaWAN package. But to keep the consistency of internal states of the firmware of the RAK7200 module, it still required to send at+join command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
 
 :::
 
-Once the RAK7200 joined into a LoRaWAN® network, it will start to send periodically the data collected from the GPS and other sensors. Then, go to the ChripStack platform to confirm that the messages ware properly received as shown in the Figure 64.
+Once the RAK7200 joined into a LoRaWAN network, it will start to send periodically the data collected from the GPS and other sensors. Then, go to the ChripStack platform to confirm that the messages ware properly received as shown in the Figure 64.
 
 
 <rk-img
@@ -1147,34 +1147,5 @@ In this section, you will upgrade the firmware by using the **STM32CubeProgramme
 :::
 
 
-#### RAK7200 AT Commands
-
-To connect the RAK7200 module to a LoRa-P2P connection or a LoRaWAN® network, the module must be configured and LoRa® parameters must be set by sending AT commands. Listed below are the summary of the AT commands supported by the RAK7200 Module.
-
-
-| **AT Command** |     **Description**          |
-| -------------- | ---------------------------- |
-| `at+help`                           | Get all available AT Commands        |
-| `at+version`                        | Get the current firmware version number      |
-| `at+get_config=device:status`       | Get all information about the device’s hardware components and their current status.   |
-| `at+set_config=device:restart`      | Restart the Device     |
-| `at+set_config=device:XXX:YYY`      | Set a certain sensor’s status. <br>• **XXX**: the sensor’s flag <br> - **gps** = GPS <br> - **acc** = Accelerate <br> - **magn** = Magnetic <br> - **gyro** = Gyroscope <br> - **pressure** = Pressure <br> - **temperature** = Temperature <br> - **humidity** = Humidity <br> - **light_strength** = Light_strength <br> - **voltage** = Voltage <br>• **YYY** - 0: close, 1: open |
-| `at+join`                           | Start the join procedure for the LoRaWAN® network     |
-| `at+send=X:YYY`                     | Send a customized data. <br>• **X**: LoRa® port <br>• **YYY**: the data you want to send. The limited length is 50 Bytes, and the data must be in HEX format.|
-| `at+set_config=lora:work_mode:X`    | Set the Working Mode: <br>• **X** - **0**: LoRaWAN®, **1**: LoRaP2P, **2**: Test Mode. |
-| `at+set_config=lora:join_mode:X`    | Set the Join Mode: <br>• **X** - **0**: OTAA, **1**: ABP  |
-| `at+set_config=lora:class:X`        | Set the Class for LoRa®. <br>• **X** - **0**: Class A, **1**: Class B, **2**: Class C   |
-| `at+set_config=lora:region:XXX`     | Set the Region for LoRa® **XXX -** one of the following items: EU868 EU433, CN470, IN865, EU868, AU915, US915, KR920, AS923.  |
-| `at+set_config=lora:confirm:X`      | Set the type of messages which will be sent out through LoRa®: <br>• **X** - **0**: unconfirm, **1**: confirm  |
-| `at+set_config=lora:ch_mask:X:Y`    | Set a certain channel on/off <br>• **X** - The channel number you want to toggle. You can check which channel can be set before you set it. <br>• **Y** - **0**: off, **1**: on    |
-| `at+set_config=lora:dev_eui:XXXX`   | Set the device EUI for OTAA. <br>• **XXXX** - the device EUI.       |
-| `at+set_config=lora:app_eui:XXXX`   | Set the application EUI for OTAA. <br>• **XXXX -** the application EUI.  |
-| `at+set_config=lora:app_key:XXXX`   | Set the application key for OTAA. <br>• **XXXX -** the application key.     |
-| `at+set_config=lora:dev_addr:XXXX`  | Set the device address for ABP. <br>• **XXXX -** the device address.       |
-| `at+set_config=lora:apps_key:XXXX`  | Set the application session key for ABP. <br>• **XXXX -** the application session key. |
-| `at+set_config=lora:nwks_key:XXXX`  | Set the network session key for ABP. <br>• **XXXX** - the network session key.  |
-| `at+set_config=lora:send_interval:X` | Set the interval time of sending data. <br>• **X**: the interval time, units are seconds. |
-| `at+get_config=lora:status`         | It will return all of the current information of LoRa®, except the LoRa® Channel. |
-| `at+get_config=lora:channel `       | It will return the state of all LoRa® channels, then you can see which channel is closed and which channel is open very clearly.  |
 
 

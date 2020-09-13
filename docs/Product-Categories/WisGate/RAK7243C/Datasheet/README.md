@@ -22,14 +22,14 @@ certifications:
 
 The **RAK7243C WisGate Developer D3+ Gateway** is a device that consists of Raspberry Pi 3B+, RAK2245 Pi HAT which includes a GPS module and a Heat Sink for better performance and thermal heat dissipation management, and a RAK2013 Cellular Pi HAT and it’s housing is built with an aluminum casing.
 
-For the build-in RAK2245 Pi HAT, it uses the SX1301 chip from Semtech which built-in LPWAN concentrator IP core is a powerful digital signal processing engine. It is able to receive up to 8 LoRa® packets simultaneously sent with different spreading factors on different channels and available in multiple variants so it can be used for internartinal standard bands. This unique capability allows to implement innovative network architectures advantageous over other short range systems. For the build-in RAK2013 Cellular Pi HAT, it supports optional QUECTEL BG96 / EG91 / EG95 which can supports NB-IOT / CAT-M / CAT1 LTE / CAT4 LTE. It follows Raspberry Pi specifications and is easy to mount with Raspberry Pi and RAK2245 Pi HAT module.
+For the build-in RAK2245 Pi HAT, it uses the SX1301 chip from Semtech which built-in LPWAN concentrator IP core is a powerful digital signal processing engine. It is able to receive up to 8 LoRa packets simultaneously sent with different spreading factors on different channels and available in multiple variants so it can be used for internartinal standard bands. This unique capability allows to implement innovative network architectures advantageous over other short range systems. For the build-in RAK2013 Cellular Pi HAT, it supports optional QUECTEL BG96 / EG91 / EG95 which can supports NB-IOT / CAT-M / CAT1 LTE / CAT4 LTE. It follows Raspberry Pi specifications and is easy to mount with Raspberry Pi and RAK2245 Pi HAT module.
 
 Pilot Gateway Pro is ideal for prototyping, proof-of-concept demonstration or for the evaluation. It includes a ready to use gateway OS that can be connected to a LoRaWan® server. Also it is developer friendly and simple even for no-so-techy users to set up LoRaWan® system. It has to be the best value and function for connectivity to address a variety of applications like Smart Grid, Intelligent Farm and other IoT enterprise applications.
 
 ### Features
 
 - Preassembled, fully functioning gateway
-- SX1301 base band processor, emulates 49 x LoRa® demodulators 10 programmable parallel demodulation paths, support 8 uplinks channel, 1 downlink channel
+- SX1301 base band processor, emulates 49 x LoRa demodulators 10 programmable parallel demodulation paths, support 8 uplinks channel, 1 downlink channel
 - Support optional Cellular module(Quectel BG96 or EG91 or EG95) for NB-IOT / CAT-M / CAT1 LTE / CAT4 LTE
 - Built-in the Ublox MAX-7Q GPS Module
 - Built-in Heat Sink for thermal heat dissipation management
@@ -38,13 +38,13 @@ Pilot Gateway Pro is ideal for prototyping, proof-of-concept demonstration or fo
 - Frequency band support: EU433, CN470, RU864, IN865, EU868, US915, AU915, KR920, AS923
 - Housing with top cover, body, bottom cover with riveted motherboard standoff
 - Includes Pi ready 'ID EEPROM', GPIO setup and device tree can be automatically configured from vendor information
-- Supports fully open source code connected to a LoRaWAN® server
+- Supports fully open source code connected to a LoRaWAN server
 
 ## Specifications
 
 ### Overview
 
-The overview covers the board overview of RAK7243C and its block diagram that discusses the basic concept of LoRaWAN® system.
+The overview covers the board overview of RAK7243C and its block diagram that discusses the basic concept of LoRaWAN system.
 
 #### Board Overview
 
@@ -58,7 +58,7 @@ The overview covers the board overview of RAK7243C and its block diagram that di
 
 #### Block Diagram
 
-The following figure shows the basic concept for LoRaWAN® system. RAK7243 Pilot Gateway is the central hardware solution for all LoRa® based radio communication. It receives and transmits radio messages. The processing of radio messages as well as the protocol related tasks is done by embedded host system (Raspberry Pi). Received and processed radio messages are being sent to a LoRaWAN® server. The concrete segmentation of the protocol related tasks is outside the scope of this document
+The following figure shows the basic concept for LoRaWAN system. RAK7243 Pilot Gateway is the central hardware solution for all LoRa based radio communication. It receives and transmits radio messages. The processing of radio messages as well as the protocol related tasks is done by embedded host system (Raspberry Pi). Received and processed radio messages are being sent to a LoRaWAN server. The concrete segmentation of the protocol related tasks is outside the scope of this document
 
 <rk-img
   src="/assets/images/wisgate/rak7243c/datasheet/3.rak7243-system-structure.png"
@@ -101,7 +101,7 @@ RAK2245 Pi HAT(Model Name is: RAK2243) is an LPWAN Concentrator board which foll
 <rk-img
   src="/assets/images/wisgate/rak7243c/datasheet/6.lora-hardware-structure.jpg"
   width="80%"
-  caption="LoRa® Hardware Structure"
+  caption="LoRa Hardware Structure"
 />
 
 ##### RAK2013 Cellular
@@ -128,7 +128,7 @@ The RAK2013 integrates audio codec and audio amplifier on it, with carrier opera
 
 ##### Operating Frequencies
 
-The Pilot Gateway supports all LoRaWAN® frequency channels as below. Which is easy to configure while building the firmware from the source code.
+The Pilot Gateway supports all LoRaWAN frequency channels as below. Which is easy to configure while building the firmware from the source code.
 
 |    Region     | Frequency (Mhz) |
 | :-----------: | --------------- |
@@ -172,7 +172,7 @@ The RAK2245 has an excellent transmitter performance. It is highly recommended t
 | Parameter                              | Condition                |   Min    | Typ. |   Max    |
 | -------------------------------------- | ------------------------ | :------: | ---- | :------: |
 | Frequency Range                        |                          | 863 Mhz  |      | 870 Mhz  |
-| Modulation Techniques                  | FSK/LoRa™                |          |      |          |
+| Modulation Techniques                  | FSK/LoRa                |          |      |          |
 | TX Frequency Variation vs. Temperature | Power Level Setting : 20 |  -3 Khz  |      |  +3 Khz  |
 | TX Power Variation vs. Temperature     | Power Level Setting : 20 |  -5 dBm  |      |  +5 dBm  |
 | TX Power Variation                     |                          | -1.5 dBm |      | +1.5 dBm |
@@ -230,12 +230,12 @@ Quectel EG95 is a series of LTE category 4 module optimized specially for M2M an
 
 ##### LoRa
 
-The LoRa® Antenna with RP-SMA female connector shown in the figure below:
+The LoRa Antenna with RP-SMA female connector shown in the figure below:
 
 <rk-img
   src="/assets/images/wisgate/rak7243c/datasheet/9.lora-antenna-overview.png"
   width="50%"
-  caption="LoRa® Antenna Overview"
+  caption="LoRa Antenna Overview"
 />
 
 ###### Antenna Dimension
@@ -245,7 +245,7 @@ The antenna's mechanical dimension is shown below:
 <rk-img
   src=/assets/images/wisgate/rak7243c/datasheet/10.lora-antenna-dimensions.png"
   width="50%"
-  caption="LoRa® Antenna Dimension in mm"
+  caption="LoRa Antenna Dimension in mm"
 />
 
 ###### Antenna Parameters

@@ -5,7 +5,7 @@ rak_desc: A detailed comparison between LoRaWAN and the different IoT protocols 
 tags:
   - Tutorials
 header:
-  title: LoRaWAN™ vs. the world of IoT!
+  title: LoRaWAN vs. the world of IoT!
   caption: by <b>Vladislav Yordanov</b>
   img: /assets/images/knowledge-hub/tutorials/lorawan-vs-the-world-of-iot/overview.png
 posted: 11/01/2019 10:30 AM
@@ -15,7 +15,7 @@ author:
   img: /assets/images/knowledge-hub/authors/vladislav-yordanov.jpg
 ---
 
-# LoRaWAN™ vs. the world of IoT!
+# LoRaWAN vs. the world of IoT!
 
 You know (or you will know after reading this) that there are not 1 or 2 technologies and protocols in the Internet of Things. They all have their strengths and weaknesses and today we will discuss that for the main players in the game.
 

@@ -17,7 +17,7 @@ WisTrio is a category of products built by the RAK company for the IoT Industry.
 
 <rk-head img="/assets/rakwireless/product-categories/WisTrio-LPWAN.svg">
 
-A tracker module with a built-in GPS, LoRa® connectivity, and a variety of sensors. 
+A tracker module with a built-in GPS, LoRa connectivity, and a variety of sensors. 
 
 </rk-head>
 

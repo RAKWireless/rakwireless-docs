@@ -21,15 +21,15 @@ prev: ../Quickstart/
 
 ### Description
 
-The RAK7246G is a LoRaWAN® Developer gateway with GPS function. It is a device composed of a the RAK2246 Pi HAT LPWAN Concentrator module and Raspberry Pi Zero W.
+The RAK7246G is a LoRaWAN Developer gateway with GPS function. It is a device composed of a the RAK2246 Pi HAT LPWAN Concentrator module and Raspberry Pi Zero W.
 
-The RAK2246 Pi HAT is based on a Semtech SX1308 chip, which allows for simultaneous reception over 8 LoRa channels, which cover the entirety of the international high frequency LoRaWAN® space.
+The RAK2246 Pi HAT is based on a Semtech SX1308 chip, which allows for simultaneous reception over 8 LoRa channels, which cover the entirety of the international high frequency LoRaWAN space.
 
 The RAK7246G is an ideal choice for prototype design, concept verification and demonstrations, development evaluation and other scenarios. It is developer friendly due to its minimalistic design that reduces cost and allows for easily accessing the internals. It is easy to set-up, which makes it a good choice for both experienced and novice LoRa specialists.
 
 ### Features
 
-- Using **SX1308** baseband processor couple with dual **SX1257**, full 8 uplink channels and 1 downlink channel LoRaWAN® Gateway
+- Using **SX1308** baseband processor couple with dual **SX1257**, full 8 uplink channels and 1 downlink channel LoRaWAN Gateway
 - Built-in Ublox **MAX-7Q GPS** module
 - The Pre-installed radiator guarantees stable thermal performance
 - Tx max **20dbm**, Rx min **-139dbm** @ SF12 at 125kHz
@@ -260,7 +260,7 @@ The RAK2246 has an excellent transmitter performance. It is highly recommended, 
 | **Parameter**                                                | **Condition**              | **Min** | **Typ.** | **Max** | **Unit** |
 | ------------------------------------------------------------ | -------------------------- | ------- | -------- | ------- | -------- |
 | Frequency Range                                              |                            | 863     |          | 870     | MHz      |
-| Modulation Techniques                                        | FSK/LoRa®                  |         |          |         |          |
+| Modulation Techniques                                        | FSK/LoRa                  |         |          |         |          |
 | TX Frequency Variation vs. Temperature                       | Power Level Setting: 20dBm | -3      |          | +3      | KHz      |
 | [TX Power Variation](TX Power Variation)<br> vs. Temperature |                            | -5      |          | +5      | dB       |
 | TX Power Variation                                           |                            | -1.5    |          | +1.5    | dB       |
@@ -337,11 +337,11 @@ Download the latest firmware of RAK7246G in the table provided below. The suppor
 
 #### LoRaWAN Systems, Network Approach
 
-The use of LoRaWAN® technology can be distinguished in “Public” and “Private” networks. In both cases the usage of a concentrator module is a must if a multichannel performance is sought after. Public networks are operator (e.g. telecom) managed networks whereas private networks are individually managed networks.
+The use of LoRaWAN technology can be distinguished in “Public” and “Private” networks. In both cases the usage of a concentrator module is a must if a multichannel performance is sought after. Public networks are operator (e.g. telecom) managed networks whereas private networks are individually managed networks.
 
-LoRaWAN® networks are typically star or multiple star networks where a Gateway relays the packets between the end-nodes and a central network server. For private network approaches the server can also be implemented on the Gateway host.
+LoRaWAN networks are typically star or multiple star networks where a Gateway relays the packets between the end-nodes and a central network server. For private network approaches the server can also be implemented on the Gateway host.
 
-Due to the long range LoRa provides the connection between the end-nodes and the Gateway (RAK2246) is always a direct link. Repeaters are not common in a LoRaWAN® network.
+Due to the long range LoRa provides the connection between the end-nodes and the Gateway (RAK2246) is always a direct link. Repeaters are not common in a LoRaWAN network.
 
 Depending on the used spreading factor and signal bandwidth different data rates (0.3 kbps to ~22 kbps) and sensitivities down to -142.5 dBm are possible. Spreading factor and signal bandwidth are a trade-off between data rate and communication range.
 

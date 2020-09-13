@@ -36,10 +36,10 @@ tags:
 
 ### Accessing your Gateway
 
-After burning the image into the SD Card, make sure you have inserted the SD Card with the Latest Firmware installed to the **RAK7246G WisGate Developer D0 Gateway** and the LoRa® and GPS Antenna attached to it. After which, you can now safely power on the gateway.
+After burning the image into the SD Card, make sure you have inserted the SD Card with the Latest Firmware installed to the **RAK7246G WisGate Developer D0 Gateway** and the LoRa and GPS Antenna attached to it. After which, you can now safely power on the gateway.
 
 :::warning ⚠️WARNING
-Before powering the RAK7246G WisGate Developer D0 Gateway, you must install the LoRa® and GPS antennas. Not doing so might damage the boards.
+Before powering the RAK7246G WisGate Developer D0 Gateway, you must install the LoRa and GPS antennas. Not doing so might damage the boards.
 :::
 
 #### Wi-Fi AP Mode
@@ -114,9 +114,9 @@ You will now then see a page like the following picture below
 />
 
 1. **Set pi password** - used to set/change the password of the gateway.
-2. **Set up RAK Gateway LoRa® Concentrator** - used to configure the frequency, which the gateway will operate on, and the LoRaWAN® Server which the gateway will work with.
-3. **Restart packet -forwarder** - used to restart the LoRa® packet forwarded process.
-4. **Edit packet-forwarder config**- used to open the global_conf.json file, in order to edit LoRaWAN® parameters manually.
+2. **Set up RAK Gateway LoRa Concentrator** - used to configure the frequency, which the gateway will operate on, and the LoRaWAN Server which the gateway will work with.
+3. **Restart packet -forwarder** - used to restart the LoRa packet forwarded process.
+4. **Edit packet-forwarder config**- used to open the global_conf.json file, in order to edit LoRaWAN parameters manually.
 5. **Configure Wifi** - used to configure the Wi-Fi settings in order to connect to a network.
 
 #### Connect through Wi-Fi
@@ -225,13 +225,13 @@ You will see a page like the following picture below:
 />
 
 1. **Set pi password** - used to set/change the password of the Gateway.
-2. **Set up RAK Gateway LoRa® Concentrator** - used to configure the frequency, which the Gateway will operate on, and the LoRaWAN® Server which the Gateway will work with.
-3. **Restart packet -forwarder** - used to restart the LoRa® packet forwarded process.
-4. **Edit packet-forwarder config**- used to open the global_conf.json file, in order to edit LoRaWAN® parameters manually.
+2. **Set up RAK Gateway LoRa Concentrator** - used to configure the frequency, which the Gateway will operate on, and the LoRaWAN Server which the Gateway will work with.
+3. **Restart packet -forwarder** - used to restart the LoRa packet forwarded process.
+4. **Edit packet-forwarder config**- used to open the global_conf.json file, in order to edit LoRaWAN parameters manually.
 5. **Configure Wifi** - used to configure the Wi-Fi settings in order to connect to a network.
 
 :::tip 📝 NOTE:
- A unique ID will be generated in for Gateway. This is also called Gateway EUI squared in red in the figure above and is essential for registering the gateway with any LoRa® Network Server (TTN, ChirpStack)
+ A unique ID will be generated in for Gateway. This is also called Gateway EUI squared in red in the figure above and is essential for registering the gateway with any LoRa Network Server (TTN, ChirpStack)
 :::
 
 There is also another way to get your "Gateway ID", just enter the command below in the command line:
@@ -273,17 +273,17 @@ It is a good security practice to change the default password "**raspberry**" wh
   caption="Successful Password Change"
 />
 
-#### Setup RAK Gateway LoRa® Concentrator
+#### Setup RAK Gateway LoRa Concentrator
 
-This menu allows you to select your LoRa® frequency band and one of the two available Networks Server options by choosing "**2 Setup RAK Gateway LoRa® concentrator**"
+This menu allows you to select your LoRa frequency band and one of the two available Networks Server options by choosing "**2 Setup RAK Gateway LoRa concentrator**"
 
 <rk-img
   src="/assets/images/wisgate/rak7246g/quickstart/setup_rak_gateway.png"
   width="100%"
-  caption="Choosing Setup RAK Gateway LoRa® concentrator"
+  caption="Choosing Setup RAK Gateway LoRa concentrator"
 />
 
-You can choose one of two supported LoRa® Servers here: **TTN** or **ChirpStack**.
+You can choose one of two supported LoRa Servers here: **TTN** or **ChirpStack**.
 
 ##### Server is TTN
 
@@ -293,7 +293,7 @@ You can choose one of two supported LoRa® Servers here: **TTN** or **ChirpStack
   caption="Server is TTN"
 />
 
-* **TTN (The Things Network)** - If you choose TTN as the LoRa® Server, you will see the following page. Visit this [article](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html) for more information on your local TTN frequency plan. This will allow you to choose the correct plan.
+* **TTN (The Things Network)** - If you choose TTN as the LoRa Server, you will see the following page. Visit this [article](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html) for more information on your local TTN frequency plan. This will allow you to choose the correct plan.
 
 
 <rk-img
@@ -318,7 +318,7 @@ After choosing the correct frequency, the success message will appear as shown b
   caption="Server Is Chirpstack"
 />
 
-* **ChirpStack** - If you choose Chirpstack as your LoRa® Server, choose "2 Server is Other server". First, configure your Regional Frequency Band by choosing the option below:
+* **ChirpStack** - If you choose Chirpstack as your LoRa Server, choose "2 Server is Other server". First, configure your Regional Frequency Band by choosing the option below:
 
 <rk-img
   src="/assets/images/wisgate/rak7246g/quickstart/reg_frequency.png"
@@ -343,7 +343,7 @@ Then, set the IP address of the ChirpStack which you want your Gateway to work w
 />
 
 :::tip 📝 NOTE:
- Unlike the other RAK boards, the RAK7246G WisGate Developer D0 Gateway does not have a Built-in LoRa® Server. In this document, the IP Address of the Chirpstack is shown above. If you have another ChirpStack, you can fill its IP address here too.
+ Unlike the other RAK boards, the RAK7246G WisGate Developer D0 Gateway does not have a Built-in LoRa Server. In this document, the IP Address of the Chirpstack is shown above. If you have another ChirpStack, you can fill its IP address here too.
 :::
 
 You can then open your Chirpstack webpage by using the link below as an example. Make sure to have the [**IP Address**] changed same with what you have input in the previous step.
@@ -357,7 +357,7 @@ http://[IP Address]:8080/#/login
 The Things Network is about enabling low power devices to use long range gateways to connect to an open-source, decentralized network to exchange data with Application. Learn more about the Things Network through their [documentation](https://www.thethingsnetwork.org/docs/).
 
 * First, you should have connected your Gateway into the internet through a router according to the method which has been introduced in the [Accessing the Internet](#accessing-the-internet) section.
-* Second, config your Gateway and choose TTN as the LoRa® Server and choose a correct frequency according to the method which has been introduced in the [Configuring the Gateway](#configuring-the-gateway) section.
+* Second, config your Gateway and choose TTN as the LoRa Server and choose a correct frequency according to the method which has been introduced in the [Configuring the Gateway](#configuring-the-gateway) section.
 * Now go to the [TTN Website](https://www.thethingsnetwork.org/) and Login. You will then see the following page:
 
 
@@ -418,7 +418,7 @@ Click Register Gateway and wait for a couple of minutes . If the status of your 
 
 ### Connect the Gateway with Chirpstack
 
-The ChirpStack or previously known as LoRaServer project provides open-source components for building LoRaWAN® networks. You can learn more about ChirpStack [here](https://www.chirpstack.io/).
+The ChirpStack or previously known as LoRaServer project provides open-source components for building LoRaWAN networks. You can learn more about ChirpStack [here](https://www.chirpstack.io/).
 
 #### Using an Independent ChirpStack
 
@@ -432,7 +432,7 @@ You can setup an Independent ChirpStack by yourself. This is a lot more complica
 />
 
 :::warning ⚠️WARNING
-  Remember to run the `sudo gateway-config` command in the CLI and point the Gateway to the IP address of the machine you just installed Chirpstack on. This can be done in item 2 in the menu "**Setup RAK Gateway LoRa® concentrator**"!
+  Remember to run the `sudo gateway-config` command in the CLI and point the Gateway to the IP address of the machine you just installed Chirpstack on. This can be done in item 2 in the menu "**Setup RAK Gateway LoRa concentrator**"!
 :::
 
 Assuming you have set it up correctly, Login to your ChirpStack to register your Gateway by opening the ChirpStack's web page in a browser by entering "**IP Address of ChirpStack:8080**".
@@ -490,13 +490,13 @@ Assuming you have set it up correctly, Login to your ChirpStack to register your
   caption=" Successfully Registered the Gateway"
 />
 
-* By clicking the Live LORAWAN® FRAMES tab, you can check the LoRa® packets sent by the nodes into your RAK7246G WisGate Developer D0 Gateway
+* By clicking the Live LORAWAN® FRAMES tab, you can check the LoRa packets sent by the nodes into your RAK7246G WisGate Developer D0 Gateway
 
 **Congratulations!** :tada: You have connected your Gateway to an external ChirpStack Successfully!
 
 ### Connecting to ResIOT
 
-[ResIOT](https://www.resiot.io/en/) is a platform for LoRaWAN®/LPWAN Networks and IoT Projects for Smart City or Industry 4.0. Cost-effective High availability and scalability. Open ResIOT's webpage to sign-up using you e-mail.
+[ResIOT](https://www.resiot.io/en/) is a platform for LoRaWAN/LPWAN Networks and IoT Projects for Smart City or Industry 4.0. Cost-effective High availability and scalability. Open ResIOT's webpage to sign-up using you e-mail.
 
 <rk-img src="/assets/images/wisgate/rak7246g/quickstart/resiot_home.png" width="100%" caption="ResIOT Home Page"/>
 
@@ -529,12 +529,12 @@ width="60%"
 caption="ResIOT Application Log-in Page"
 />
 
-* Upon successful log-in, you shall then be asked to choose your LoRaWAN® Frequency Plan. For this example, choose **EU868 Region.**
+* Upon successful log-in, you shall then be asked to choose your LoRaWAN Frequency Plan. For this example, choose **EU868 Region.**
 
 <rk-img
 src="/assets/images/wisgate/rak7246g/quickstart/resiot_freq_plan.png"
 width="100%"
-caption= "ResIOT LoRaWAN® Frequency Plan"
+caption= "ResIOT LoRaWAN Frequency Plan"
 />
 
 * We will now then setup your RAK7246G WisGate Developer D0 Gateway by clicking the "**Step 1: Add Gateway Wizard**".
@@ -594,12 +594,12 @@ caption="Getting the Wi-Fi MAC Address of the RAK7246G WisGate Developer D0 Gate
   caption=" Editing the packet-forwarder configuration through SSH"
 />
 
-* It will then open the "**global_conf.json**" file. Edit it to update the LoRaWAN® configuration by modifying the content with the data from the ResIOT website same with the image shown below:
+* It will then open the "**global_conf.json**" file. Edit it to update the LoRaWAN configuration by modifying the content with the data from the ResIOT website same with the image shown below:
 
 <rk-img 
   src="/assets/images/wisgate/rak7246g/quickstart/resiot_data_config.png"
   width="100%"
-  caption="ResIOT Data to be inserted in the LoRaWAN® Configuration"
+  caption="ResIOT Data to be inserted in the LoRaWAN Configuration"
 />
 
 * Modify the contents of the Json File with the data from the image shown in the previous step.

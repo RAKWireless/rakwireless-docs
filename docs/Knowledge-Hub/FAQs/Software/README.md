@@ -7,11 +7,11 @@ sidebar: false
 
 <faq default-opened>
 <template #question>
-1. Why is the payload data received by the LoRaWAN® server garbled?
+1. Why is the payload data received by the LoRaWAN server garbled?
 </template>
 <template #answer>
 
-![LoRaWAN® Encryption Method](/assets/images/faq/software/item1.jpg)
+![LoRaWAN Encryption Method](/assets/images/faq/software/item1.jpg)
 
 Whenever the gateway receives data from the nodes, the payload data is encoded in base64 and encrypted before it is sent into the server. Upon arriving in the server, the data packet is automatically decrypted which will revert the data to its base64 encoded form. Manual decoding must be done by the user to have the base64 encoded data be similar to the payload sent by the node
 
@@ -56,7 +56,7 @@ By changing the states in the **BOOT0** and **BOOT1** pins of the RAK811, the us
 </template>
 <template #answer>
 
-OTAA is a method of LoRaWAN® network access in the air. Upon powering up, the node needs to be networked with the server before it can initiate data transmission. The node initiates a request to enter the network which the server then agrees and sends the necessary information into the node. The node then parses the said information to obtain the necessary communication parameters to start communicating with the server.
+OTAA is a method of LoRaWAN network access in the air. Upon powering up, the node needs to be networked with the server before it can initiate data transmission. The node initiates a request to enter the network which the server then agrees and sends the necessary information into the node. The node then parses the said information to obtain the necessary communication parameters to start communicating with the server.
 
 - The following are the parameters needed by the node before it can start to enter the network via OTAA:
 
@@ -80,7 +80,7 @@ OTAA is a method of LoRaWAN® network access in the air. Upon powering up, the n
 
 <faq>
 <template #question>
-5. How to debug failures when RAK module cannot initiate P2P communication with LoRa® modules of other manufacturers?
+5. How to debug failures when RAK module cannot initiate P2P communication with LoRa modules of other manufacturers?
 </template>
 <template #answer>
 
@@ -99,25 +99,25 @@ OTAA is a method of LoRaWAN® network access in the air. Upon powering up, the n
 
 The most commonly used are transmit interrupts and receive interrupts, so at least **DIO0** and **DIO1** can be connected. In P2P mode, you can also use the polling register mode to receive and send data without using the interrupt method. With such method, DIO are not necessarily connected to the MCU; only the 4-wire SPI pin and reset pin are required to be connected.
 
-![DIO Mapping LoRa® Mode](/assets/images/faq/software/item6.jpg)
+![DIO Mapping LoRa Mode](/assets/images/faq/software/item6.jpg)
 
 </template>
 </faq>
 
 <faq>
 <template #question>
-7. How to remotely switch from CLASS A to CLASS C, or from CLASS C to CLASS A in LoRaWAN® through the server?
+7. How to remotely switch from CLASS A to CLASS C, or from CLASS C to CLASS A in LoRaWAN through the server?
 </template>
 <template #answer>
 
-In LoRaWAN® v1.0.2, switching from Class A to Class C and vice versa can only be controlled by the application layer of the node. The network access category is determined by the specified parameters when the protocol stack is initialized. If the customer wants to remotely control A to C, or C to A switch from the server, it is recommended to control from the application logic layer.
+In LoRaWAN v1.0.2, switching from Class A to Class C and vice versa can only be controlled by the application layer of the node. The network access category is determined by the specified parameters when the protocol stack is initialized. If the customer wants to remotely control A to C, or C to A switch from the server, it is recommended to control from the application logic layer.
 
 </template>
 </faq>
 
 <faq>
 <template #question>
-8. How long will the battery of LoRa® node last? How is it calculated?
+8. How long will the battery of LoRa node last? How is it calculated?
 </template>
 <template #answer>
 
@@ -129,7 +129,7 @@ Battery life depends on the following factors:
 - The data rate of sending packets.
 - Leakage current after Lora node enters sleep mode.
 
-**Example**: The battery capacity used is **2000mAH**, and the distribution frequency is **10 minutes per time.**The rate of delivery of LoRa® ultimately reflects the length of delivery time. If **50 bytes** are transmitted at **SF7 rate**, it can be sent between **100ms and 200ms**, calculated at 200ms. Sent at **SF12 rate** for about **2.5s**. For RAK4200 module, the **leakage current** after sleep is **1.5uA**.
+**Example**: The battery capacity used is **2000mAH**, and the distribution frequency is **10 minutes per time.**The rate of delivery of LoRa ultimately reflects the length of delivery time. If **50 bytes** are transmitted at **SF7 rate**, it can be sent between **100ms and 200ms**, calculated at 200ms. Sent at **SF12 rate** for about **2.5s**. For RAK4200 module, the **leakage current** after sleep is **1.5uA**.
 
 ![Battery Life Calculation](/assets/images/faq/software/item8.jpg)
 
@@ -140,7 +140,7 @@ Seen from the above examples, in order to prolong the battery life, it is necess
 
 <faq>
 <template #question>
-9. How does ChirpStack LoRa® Server communicate with nodes through MQTT?
+9. How does ChirpStack LoRa Server communicate with nodes through MQTT?
 </template>
 <template #answer>
 

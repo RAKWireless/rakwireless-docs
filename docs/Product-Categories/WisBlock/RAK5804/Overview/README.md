@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak5804/datasheet/RAK5804.jpg
+rak_img: /assets/images/wisblock/rak5804/overview/RAK5804_home.png
 rak_desc: RAK5804 is a WisBlock IO module which extends the WisBlock system with additional analog and digital interfaces. In addition, it provides an USB interface. 
 rak_grp: [wisblock, wisio]
 prev: ../../

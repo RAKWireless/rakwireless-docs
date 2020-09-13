@@ -32,7 +32,7 @@ Before going through the step in the installation guide of the RAK4270 WisDuo LP
 | ------- | ----------------------- |
 |   DFU   | Device Firmware Upgrade |
 |   JTAG  | Joint Test Action Group |
-|  LoRa®  |       Long Range        |
+|  LoRa  |       Long Range        |
 
 ## Product Configuration
 
@@ -72,7 +72,7 @@ In this document, a RAK4270 module is used as example case. Use a USB to TTL con
 
 ### Configuring RAK4270
 
-To connect the RAK4270 module to a LoRa-P2P connection or a LoRaWAN® network, the module must be configured and LoRa® parameters must be set by sending AT commands. You can send AT commands to the RAK4270 module through the UART interface.
+To connect the RAK4270 module to a LoRa-P2P connection or a LoRaWAN network, the module must be configured and LoRa parameters must be set by sending AT commands. You can send AT commands to the RAK4270 module through the UART interface.
 
 Connect the RAK4270 module to the computer as described in the previous section. Use the serial communication tool to send commands to the RAK4270. For example, sending the `at+version` will return and display the current firmware version as shown in Figure 3. More AT commands can be found in [AT Commands for RAK4270](/Product-Categories/WisDuo/RAK4270-Module/LoRaWAN-P2P/AT-Command-Manual/#rak4270-at-command-manual).
 
@@ -96,7 +96,7 @@ In this section, a practical exercise will be performed to show how to connect t
 
 As shown in Figure 4, the RAK4270 module is one of the devices located on the left side. In the context of an IoT solution, the objective is to deploy devices to sense the relevant process variables and transmit the data to the backend servers located in the cloud. The data will be processed and integrated as part of a larger solution that, ultimately, could generate efficiency, traceability, predictability capacity among others.
 
-The RAK4270 module can be part of this ecosystem, and the objective of this section is to demonstrate how simple is to send data to the TTN using the LoRaWAN® protocol. To achieve this, the RAK4270 module must be located inside of the coverage of a LoRaWAN® gateway. 
+The RAK4270 module can be part of this ecosystem, and the objective of this section is to demonstrate how simple is to send data to the TTN using the LoRaWAN protocol. To achieve this, the RAK4270 module must be located inside of the coverage of a LoRaWAN gateway. 
 
 <b>Sign up and login</b>
 
@@ -171,7 +171,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
   caption="Add your Device"
 />
 
-In this form, the device ID must be unique for the application and must be completed with a lower case, alphanumeric characters. The rest of the parameters in the form are very important for the LoRaWAN® protocol:
+In this form, the device ID must be unique for the application and must be completed with a lower case, alphanumeric characters. The rest of the parameters in the form are very important for the LoRaWAN protocol:
 
 * Device EUI
 * Application Key
@@ -187,12 +187,12 @@ The TTN platform can generate these parameters randomly by leaving those fields 
   caption="Device Overview"
 />
 
-#### LoRaWAN® Join Mode
+#### LoRaWAN Join Mode
 
-The LoRaWAN® specification defines that to join in a LoRaWAN® network, each end-device has to be personalized and activated. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP). In OTAA, the previously personalized end-device is activated when is deployed or reset. On the other hand, in ABP, the personalization and activation are done as a single step. 
+The LoRaWAN specification defines that to join in a LoRaWAN network, each end-device has to be personalized and activated. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP). In OTAA, the previously personalized end-device is activated when is deployed or reset. On the other hand, in ABP, the personalization and activation are done as a single step. 
 
 
-Hence, this is referred to as the “**Join Mode**". LoRaWAN® allows the OTAA mode and the ABP mode. In this section, the configuration process of these two modes is explained, both on the platform side and the node side.
+Hence, this is referred to as the “**Join Mode**". LoRaWAN allows the OTAA mode and the ABP mode. In this section, the configuration process of these two modes is explained, both on the platform side and the node side.
 
 
 ##### OTAA Mode
@@ -226,20 +226,20 @@ at+version
 
 As an example, these are the list of the parameters you need to configure in RAK4270: 
 
-- LoRa® join mode: **OTAA**
-- LoRa® class: **Class A**
-- LoRa® region: **EU868** 
+- LoRa join mode: **OTAA**
+- LoRa class: **Class A**
+- LoRa region: **EU868** 
 - Device EUI: **5e9d1e0857cf25f1**
 - Application EUI: **5e9d1e0857cf25f1**
 - Application Key: **f921d50cd7d02ee3c5e6142154f274b2**
 
-1. Set the LoRa® join mode to OTAA.
+1. Set the LoRa join mode to OTAA.
 
 ```
 at+set_config=lora:join_mode:0
 ```
 
-2. Set the LoRa® class to Class A.
+2. Set the LoRa class to Class A.
 
 ```
 at+set_config=lora:class:0
@@ -281,7 +281,7 @@ at+set_config=lora:app_key:f921d50cd7d02ee3c5e6142154f274b2
 <rk-img
   src="/assets/images/wisduo/rak4270-module/quickstart/14.lora-parameters.png"
   width="40%"
-  caption="Configuring LoRa® Parameters"
+  caption="Configuring LoRa Parameters"
 />
 
 
@@ -297,7 +297,7 @@ After configuring all the parameters, you need to reset your RAK4270 Module for 
 at+join
 ```
 
-After 5 or 6 seconds, if the request was successfully received by a LoRa® gateway, then you should see the messages shown in Figure 15.
+After 5 or 6 seconds, if the request was successfully received by a LoRa gateway, then you should see the messages shown in Figure 15.
 
 8. Now try to send a message from the RAK4270 module.
 
@@ -378,19 +378,19 @@ at+version
 
 As an example, these are the list of the parameters you need to configure in RAK4270: 
 
-- LoRa® join mode: **ABP**
-- LoRa® class: **Class A**
-- LoRa® region: **EU868** 
+- LoRa join mode: **ABP**
+- LoRa class: **Class A**
+- LoRa region: **EU868** 
 - Device address: **26011af9**
 - Network Session Key: **c280cb8d1df688bc18601a97025c5488**
 - Application Session Key: **4d42ec5caf97f03d833cdaf5003f69e1**
 
-1. Set the LoRa® join mode to ABP.
+1. Set the LoRa join mode to ABP.
 
 ```
 at+set_config=lora:join_mode:1
 ```
-2. Set the LoRa® class to Class A.
+2. Set the LoRa class to Class A.
 
 ```
 at+set_config=lora:class:0
@@ -410,13 +410,13 @@ at+set_config=lora:region:EU868
 at+set_config=lora:dev_addr: 26011af9
 ```
 
-5. Set the LoRa® Network Session Key.
+5. Set the LoRa Network Session Key.
 
 ```
 at+set_config=lora:nwks_key:c280cb8d1df688bc18601a97025c5488
 ```
 
-6. Set the LoRa® Application Session Key.
+6. Set the LoRa Application Session Key.
 
 ```
 at+set_config=lora:apps_key:4d42ec5caf97f03d833cdaf5003f69e1
@@ -425,7 +425,7 @@ at+set_config=lora:apps_key:4d42ec5caf97f03d833cdaf5003f69e1
 <rk-img
   src="/assets/images/wisduo/rak4270-module/quickstart/20.abp-at-commands.png"
   width="40%"
-  caption="AT Command for ABP LoRa® parameters via RAK Serial Port Tool"
+  caption="AT Command for ABP LoRa parameters via RAK Serial Port Tool"
 />
 
 :::tip 📝 NOTE:
@@ -443,7 +443,7 @@ at+join
 
 :::tip 📝 NOTE:
 
-By using the ABP mode in LoRaWAN®, it doesn’t require to join a network before sending a LoRaWAN® package. But to keep the consistency of internal states of the firmware of the RAK4270 module, it is still required to send at+join command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
+By using the ABP mode in LoRaWAN, it doesn’t require to join a network before sending a LoRaWAN package. But to keep the consistency of internal states of the firmware of the RAK4270 module, it is still required to send at+join command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
 
 :::
 
@@ -473,7 +473,7 @@ In this section, a practical exercise will be performed to show how to connect t
   caption="RAK4270 Module in the Context of the ChirpStack Platform"
 />
 
-The ChirpStack or previously known as LoRaServer project provides open-source components for building LoRaWAN® networks. Like the case of TTN, the RAK4270 module is located in the periphery and transmit the data to the backend servers through a LoRa® gateway. Learn more about [ChirpStack](https://www.chirpstack.io/).
+The ChirpStack or previously known as LoRaServer project provides open-source components for building LoRaWAN networks. Like the case of TTN, the RAK4270 module is located in the periphery and transmit the data to the backend servers through a LoRa gateway. Learn more about [ChirpStack](https://www.chirpstack.io/).
 
 :::tip 📝 NOTE:
 
@@ -554,7 +554,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   caption="Device Tab of an Application"
 />
 
-3. Once inside of the DEVICE tab, create a new device (LoRa® node) by clicking on the “**+ CREATE**” button. 
+3. Once inside of the DEVICE tab, create a new device (LoRa node) by clicking on the “**+ CREATE**” button. 
 
 
 <rk-img
@@ -586,9 +586,9 @@ Fill the parameters requested:
   caption="Generate a New Device EUI"
 />
 
-#### LoRaWAN® Join Mode
+#### LoRaWAN Join Mode
 
-In LoRaWAN®, there are two (2) ways a node can connect itself to the LoRaWAN® network. This is referred to as **Join Mode**. LoRaWAN® allows the OTAA mode and the ABP mode. In this section, the configuration process of these two modes, both on the platform side and the node side will be explained.
+In LoRaWAN, there are two (2) ways a node can connect itself to the LoRaWAN network. This is referred to as **Join Mode**. LoRaWAN allows the OTAA mode and the ABP mode. In this section, the configuration process of these two modes, both on the platform side and the node side will be explained.
 
 
 ##### OTAA Mode
@@ -665,22 +665,22 @@ at+version
 
 As an example, these are the list of the parameters you need to configure in RAK4270: 
 
-- LoRa® join mode: **OTAA**
-- LoRa® class: **Class A**
-- LoRa® region: **EU868** 
+- LoRa join mode: **OTAA**
+- LoRa class: **Class A**
+- LoRa region: **EU868** 
 - Device EUI: **5e9d1e0857cf25f1**
 - Application EUI: **5e9d1e0857cf25f1**
 - Application Key: **f921d50cd7d02ee3c5e6142154f274b2**
 
 
 
-1. Set the LoRa® join mode to OTAA.
+1. Set the LoRa join mode to OTAA.
 
 ```
 at+set_config=lora:join_mode:0
 ```
 
-2. Set the LoRa® class to Class A.
+2. Set the LoRa class to Class A.
 
 ```
 at+set_config=lora:class:0
@@ -749,7 +749,7 @@ at+join
 <rk-img
   src="/assets/images/wisduo/rak4270-module/quickstart/38.chirpstack-console.png"
   width="100%"
-  caption="Checking LoRaWAN® Joint Request in Chirpstack OTAA Console"
+  caption="Checking LoRaWAN Joint Request in Chirpstack OTAA Console"
 />
 
 
@@ -762,7 +762,7 @@ at+send=lora:2:1234567890
 <rk-img
   src="/assets/images/wisduo/rak4270-module/quickstart/39.send-message-chirpstack.png"
   width="40%"
-  caption="Send a LoRaWAN® Message via RAK Serial Port Tool"
+  caption="Send a LoRaWAN Message via RAK Serial Port Tool"
 />
 
 
@@ -783,7 +783,7 @@ This concludes the exercise to send data in the OTAA mode.
 
 ###### Configure the ABP Mode on the Platform
 
-During the registration of a new device, if you select “**DeviceProfile_ABP**”, as shown in Figure 42, then the ChirpStack platform will assume that this device will join to the LoRaWAN® network using the ABP mode. 
+During the registration of a new device, if you select “**DeviceProfile_ABP**”, as shown in Figure 42, then the ChirpStack platform will assume that this device will join to the LoRaWAN network using the ABP mode. 
 
 :::tip 📝 NOTE:
 
@@ -834,20 +834,20 @@ at+version
 
 As an example, these are the list of the parameters you need to configure in RAK4270: 
 
-- LoRa® join mode: **ABP**
-- LoRa® class: **Class A**
-- LoRa® region: **EU868** 
+- LoRa join mode: **ABP**
+- LoRa class: **Class A**
+- LoRa region: **EU868** 
 - Device address: **26011af9**
 - Network Session Key: **c280cb8d1df688bc18601a97025c5488**
 - Application Session Key: **4d42ec5caf97f03d833cdaf5003f69e1**
 
-1. Set LoRa® join mode to ABP.
+1. Set LoRa join mode to ABP.
 
 ```
 at+set_config=lora:join_mode:1
 ```
 
-2. Set LoRa® class to Class A.
+2. Set LoRa class to Class A.
 
 ```
 at+set_config=lora:class:0
@@ -900,7 +900,7 @@ at+join
 
 :::tip 📝 NOTE:
 
-By using the ABP mode in LoRaWAN® protocol, it doesn’t require to join a network before sending LoRaWAN® package. But to keep the consistency of internal states of the firmware of the RAK4270 module, it still required to send at+join command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
+By using the ABP mode in LoRaWAN protocol, it doesn’t require to join a network before sending LoRaWAN package. But to keep the consistency of internal states of the firmware of the RAK4270 module, it still required to send at+join command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
 
 :::
 
@@ -917,15 +917,15 @@ at+send=lora:2:1234567890
   caption="Chirpstack Sample Data Sent via RAK Serial Port Tool"
 />
 
-### LoRa® P2P Mode
+### LoRa P2P Mode
 
-This section will show you how to set up and connect two RAK4270 units to work in the LoRa® P2P mode. You will be using EU868 as your frequency, although it is applicable also to other standard bands.
+This section will show you how to set up and connect two RAK4270 units to work in the LoRa P2P mode. You will be using EU868 as your frequency, although it is applicable also to other standard bands.
 
 1. Two RAK4270 units shall be set to operate on EU868 frequency. 
 
-2. The setup of the RAK4270 units is done by connecting then with a general-purpose computer through the UART port. The setup of each RAK4270 can be done separately but testing the LoRa® P2P mode will require having both units connected simultaneously to its respective UART port. This could be one computer with 2 USB ports or 2 computers with one USB port each.
+2. The setup of the RAK4270 units is done by connecting then with a general-purpose computer through the UART port. The setup of each RAK4270 can be done separately but testing the LoRa P2P mode will require having both units connected simultaneously to its respective UART port. This could be one computer with 2 USB ports or 2 computers with one USB port each.
 
-3. Set the RAK4270 to work in LoRa® P2P mode. Open the RAK Serial Port Tool and send the following command:
+3. Set the RAK4270 to work in LoRa P2P mode. Open the RAK Serial Port Tool and send the following command:
 
 ```
 at+set_config=lora:work_mode:1
@@ -938,7 +938,7 @@ at+set_config=lora:work_mode:1
 />
 
 
-4. Then, configure LoRa® P2P parameters for both of them.
+4. Then, configure LoRa P2P parameters for both of them.
 
 
 ```
@@ -946,7 +946,7 @@ at+set_config=lorap2p:XXX:Y:Z:A:B:C
 ```
 
 
-For this example, the LoRa® parameters are the following:
+For this example, the LoRa parameters are the following:
 
 - Link frequency: **869525000 Hz**
 - Spreading factor: **7**
@@ -1069,9 +1069,11 @@ The support packages are MDK packages. You can see a complete list at [https://w
 
 Connect the 4 debug/programming SWD pins of the board to the RAKDAP adapter(| VCC | GND | SWIO | SWCLK |)
 
-<!--
-**_![IF CONNECTION PICTURE IS AVAILABLE ADD IT HERE](./assets/nopick.png)_**    
--->
+<rk-img
+  src="/assets/images/wisduo/rak4270-module/quickstart/rak4270-swd.png"
+  width="40%"
+  caption="RAK4270 to SWD debug pins"
+/>
 
 2. Flash the latest firmware
 

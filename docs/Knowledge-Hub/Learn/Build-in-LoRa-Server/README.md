@@ -7,29 +7,29 @@ tags:
   - WisGate
   - WisDuino
 header:
-  title: Build-in LoRa® Network Server Configuration
+  title: Build-in LoRa Network Server Configuration
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/general_banner.jpg
 posted: 2/29/2020 10:30 AM
 ---
 
-#  Build-in LoRa® Network Server Configuration
+#  Build-in LoRa Network Server Configuration
 
-* [Gateway Built-in LoRa® NS](#gateway-built-in-lora®-ns)
+* [Gateway Built-in LoRa NS](#gateway-built-in-lora®-ns)
 * [RAK LPWAN Node](#rak-lpwan-node)
 
 This section is a sample demonstration on how to interconnect your **RAK7249 Macro Outdoor Gateway** with its **Built-in LoRa Network Server** and make an application for the **RAK LPWAN Node**. For this sample demonstration, we will be using the RAK811 LPWAN Node. 
 
 ## Requirements
 1. RAK811 LPWAN Node
-2. RAK7249 Macro Outdoor Gateway (LoRa® Server in use)
+2. RAK7249 Macro Outdoor Gateway (LoRa Server in use)
 
 
-# Gateway Built-in LoRa® NS
+# Gateway Built-in LoRa NS
 
-This document is the detailed discussion on how to set-up the built-in LoRa® Server for your RAK7249 Marco Outdoor Gateway using the Web Management Platform.
+This document is the detailed discussion on how to set-up the built-in LoRa Server for your RAK7249 Marco Outdoor Gateway using the Web Management Platform.
 
-We will first set-up the built-in LoRa®  network server. Before going through the steps, access the Web Management Platform as discussed in the prior section.
+We will first set-up the built-in LoRa  network server. Before going through the steps, access the Web Management Platform as discussed in the prior section.
 
 ## Packet Forwarder Set-up 
 
@@ -37,7 +37,7 @@ We will first set-up the built-in LoRa®  network server. Before going through t
  For other settings and detailed documentation for this section, browse the [Packet Forwarder](/Knowledge-Hub/Learn/Resources/Web-Management-Platform/#lora®-network) section.
 :::
 
-1. By navigating through LoRa® Gateway tab-> LoRa® Packet Forwarder-> General Setup, set the Protocol in the drop-down list to **Build-in LoRa ® Server**.
+1. By navigating through LoRa Gateway tab-> LoRa Packet Forwarder-> General Setup, set the Protocol in the drop-down list to **Build-in LoRa ® Server**.
 
 2. You can leave the rest of the settings with their default values. Remember to "**Save & Apply**".
 
@@ -47,13 +47,13 @@ We will first set-up the built-in LoRa®  network server. Before going through t
   caption="Build-in LoRa Server Protocol in Gateway"
 />
 
-## Configure the LoRa® Server
+## Configure the LoRa Server
 
 :::tip 📝 NOTE
  For other settings and detailed documentation for this section, browse the [LoRa Network](/Knowledge-Hub/Learn/Resources/Web-Management-Platform/#lora®-network) section.
 :::
 
-1. Navigate through LoRa® Network Server tab -> General and turn-on this feature using the Enable slider. 
+1. Navigate through LoRa Network Server tab -> General and turn-on this feature using the Enable slider. 
 
 2. Select your Region (Frequency Band). For this demonstration, we are going to use **EU863-870 frequency band**.
 
@@ -65,7 +65,7 @@ We will first set-up the built-in LoRa®  network server. Before going through t
 
 ## Register RAK7249 Gateway
 
-1. Navigate through LoRa® Network Server-> Gateway and enter the **Gateway EUI** in the field.
+1. Navigate through LoRa Network Server-> Gateway and enter the **Gateway EUI** in the field.
 
 <rk-img
   src="/assets/images/knowledge-hub/deployment-guide/build-in-lora-server/adding-gateway-eui.png"
@@ -93,11 +93,11 @@ We will first set-up the built-in LoRa®  network server. Before going through t
 
 # RAK LPWAN Node
 
-This document discusses the steps on how to add your RAK811 LPWAN Node Application into the Built-in LoRa® Network Server demonstration. For this demonstration, it is best advised to use our very own [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/).
+This document discusses the steps on how to add your RAK811 LPWAN Node Application into the Built-in LoRa Network Server demonstration. For this demonstration, it is best advised to use our very own [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/).
 
 ## Register the Application
 
-1. Connect your RAK811 to your computer by following the [Interfacing your RAK811 LPWAN Node](/Product-Categories/WisDuino/RAK811-Evaluation-Board/Quickstart/#product-configuration) section or the RAK811 LPWAN Node. Once connecting is successful, open the RAK Serial Port Tool and press the **RESET Button (RST)** to reboot your device to check the LoRa® parameters same with the image shown below:
+1. Connect your RAK811 to your computer by following the [Interfacing your RAK811 LPWAN Node](/Product-Categories/WisDuino/RAK811-Evaluation-Board/Quickstart/#product-configuration) section or the RAK811 LPWAN Node. Once connecting is successful, open the RAK Serial Port Tool and press the **RESET Button (RST)** to reboot your device to check the LoRa parameters same with the image shown below:
 
 <rk-img
   src="/assets/images/knowledge-hub/deployment-guide/build-in-lora-server/rak811-parameters.png"
@@ -125,7 +125,7 @@ at+set_config=lora:join_mode:0
 
 - Now that your RAK811 LPWAN Node is working in the correct region and mode, you need to fill in the application parameters in your Gateway. This will register the specific device and allow you to exchange data.
 
-4. Navigate through `LoRa® Network Server -> Application -> Devices`. Enter a name for your application and press the "**Add**" button.
+4. Navigate through `LoRa Network Server -> Application -> Devices`. Enter a name for your application and press the "**Add**" button.
 
 <rk-img
   src="/assets/images/knowledge-hub/deployment-guide/build-in-lora-server/add-application.png"

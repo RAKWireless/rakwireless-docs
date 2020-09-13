@@ -6,12 +6,12 @@ prev: ../Overview/
 next: false
 ---
 
-# RAK2013 WisLink LPWAN Concentrator Datasheet
+# RAK2013 WisLink Cellular Pi HAT Datasheet
 
 <!-- <rk-img
   src="/assets/images/wislink-lte/rak2013/datasheet/rak2013.jpg"
   width="50%"
-  caption="RAK2013 WisLink LPWAN Concentrator Board"
+  caption="RAK2013 WisLink Cellular Pi HAT Board"
 /> -->
 
 ## Overview
@@ -22,7 +22,7 @@ The RAK2013 is a Raspberry Pi 3B+ edition cellular communications module that su
 
 The module is supported with extendable sensor board connected that follows the mikroBus standard. MikroBus has many kinds of sensor board, such as temperature, humidity, 3 axis sensor and light sensor, allowing easy sensor data transmission. Because of its wide range of supported sensors, it is suitable for applications such as environmental monitoring and presence sensing, that require cellular connectivity.
 
-The RAK2013 is compatible with RAK2245 Pi Hat Concentrator module via the onboard 40 pin header. It can function as a cellular backhaul to gateway, providing an even greater flexibility for IoT solutions that require cellular as an option for ensuring service reliability.
+The RAK2013 is compatible with RAK2245 Pi HAT module via the onboard 40 pin header. It can function as a cellular backhaul to gateway, providing an even greater flexibility for IoT solutions that require cellular as an option for ensuring service reliability.
 
 ### Features
 
@@ -32,7 +32,7 @@ The RAK2013 is compatible with RAK2245 Pi Hat Concentrator module via the onboar
 - Supports Nano SIM card or eSIM card.
 - Integrates audio codec and audio amplifier.
 - Integrates MikroBus interface to support sensor extended board.
-- Can be added to another Pi HAT to support LoRa® concentrator.
+- Can be added to another Pi HAT to support LoRa concentrator.
 - Supports USB connector for higher data rate.
 - Supports GPS function(only for BG96 module) .
 - SMA/IPEX antenna optional for LTE and GPS.
@@ -43,16 +43,16 @@ The RAK2013 is compatible with RAK2245 Pi Hat Concentrator module via the onboar
 
 ### Overview
 
-The overview shows the top view of the RAK2013 WisLink LPWAN Concentrator and its corresponding outer dimension. It also presents the block diagram that shows the internal architecture of the board.
+The overview shows the top view of the RAK2013 WisLink Cellular Pi HAT and its corresponding outer dimension. It also presents the block diagram that shows the internal architecture of the board.
 
 #### Module Overview
 
-Here is the top view and external interfaces of RAK2013 WisLink LPWAN Concentrator add-on board.
+Here is the top view and external interfaces of RAK2013 WisLink Cellular Pi HAT add-on board.
 
 <rk-img
   src="/assets/images/wislink-lte/rak2013/datasheet/components-of-rak2013-cellular.jpg"
   width="65%"
-  caption="Components of RAK2013 WisLink LPWAN Concentrator"
+  caption="Components of RAK2013 WisLink Cellular Pi HAT"
 />
 
 <rk-img
@@ -66,7 +66,7 @@ The outer dimension of the RAK2013 measures 65.0 x 56.0 mm as shown below.
 <rk-img
   src="/assets/images/wislink-lte/rak2013/datasheet/rak2013-board-dimension.jpg"
   width="50%"
-  caption="RAK2013 WisLink LPWAN Concentrator Board Dimension"
+  caption="RAK2013 WisLink Cellular Pi HAT Board Dimension"
 />
 
 #### Block Diagram
@@ -76,7 +76,7 @@ The diagram below shows the internal architecture and external interfaces of RAK
 <rk-img
   src="/assets/images/wislink-lte/rak2013/datasheet/block-diagram-rak2013.png"
   width="80%"
-  caption="RAK2013 WisLink LPWAN Concentrator Board"
+  caption="RAK2013 WisLink Cellular Pi HAT Board"
 />
 
 ### Hardware

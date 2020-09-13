@@ -20,20 +20,20 @@ next: false
 
 ### Description
 
-The **RAK2245 WisLink-LoRa Stamp Edition** is a complete and cost efficient gateway solution base on Semtech SX1301 fully utilizing the LoRa System. This LPWAN Concentrator module supports eight channels and is available for all LoRaWAN® international standard bands.
+The **RAK2245 WisLink-LoRa Stamp Edition** is a complete and cost efficient gateway solution base on Semtech SX1301 fully utilizing the LoRa System. This LPWAN Concentrator module supports eight channels and is available for all LoRaWAN international standard bands.
 
-The Stamp form factor feature enables easy integration into the system's main board, providing LoRaWAN® functionality.This ultra compact module measures just 60mm x 30mm x 14.9mm, believed to be the world’s smallest gateway module which has a built-in GPS chip. It comes with a mounted heat-sink that improves the thermal heat dissipation and overall performance of the device.
+The Stamp form factor feature enables easy integration into the system's main board, providing LoRaWAN functionality.This ultra compact module measures just 60mm x 30mm x 14.9mm, believed to be the world’s smallest gateway module which has a built-in GPS chip. It comes with a mounted heat-sink that improves the thermal heat dissipation and overall performance of the device.
 
 Overall, this gateway module is the most economical way to create different solutions like smart grid, intelligent farm and other IoT applications. It is also ideal for manufacturing small series that can expand into more applications.
 
 ### Features
 
 - Compatible with Stamp Edition specifications with mounted heat-sink.
-- SX1301 base band processor, emulates 49 x LoRa® demodulators 10 parallel demodulation paths, support 8 uplinks channel, 1 downlink channel.
+- SX1301 base band processor, emulates 49 x LoRa demodulators 10 parallel demodulation paths, support 8 uplinks channel, 1 downlink channel.
 - 2 x SX125X TX/RX front-ends high/ low frequency.
 - Supports 5 V power supply, integrated level conversion circuit.
 - TX power up to 27dBm, RX sensitivity down to - 139dBm@SF12, BW 125KHz.
-- Supports the LoRaWAN® 1.0.2 protocol.
+- Supports the LoRaWAN 1.0.2 protocol.
 - Supports global license-free frequency band (EU433, CN470, IN865, EU868, US915, AU915, KR920, AS920 and AS923).
 - Supports SPI interface.
 - Integrated the Ublox MAX-7Q GPS Module.
@@ -101,7 +101,7 @@ There are two digital IO PINs, which give the user an interface to reset the GPS
 
 ##### Antenna RF Interface
 
-The modules have two RF interfaces for LoRa® and GPS antennas over the standard UFL connectors (Hirose U. FL-R-SMT). It has a characteristic impedance of 50 Ω and supports both Tx and Rx via RF ports, providing the antenna interface.
+The modules have two RF interfaces for LoRa and GPS antennas over the standard UFL connectors (Hirose U. FL-R-SMT). It has a characteristic impedance of 50 Ω and supports both Tx and Rx via RF ports, providing the antenna interface.
 
 #### Pin Definition
 
@@ -150,7 +150,7 @@ The pin connector of RAK2245 WisLink-LoRa Stamp Edition is located at the bottom
 
 ##### Operating Frequencies
 
-The board supports the following LoRaWAN® frequency channels shown in the table below. The frequency parameter is easy to configure as you go through the device configuration setup.
+The board supports the following LoRaWAN frequency channels shown in the table below. The frequency parameter is easy to configure as you go through the device configuration setup.
 
 | **Region**    | **Frequency (MHz)** |
 | ------------- | ------------------- |
@@ -193,7 +193,7 @@ level and current consumption.
 | **Parameter**                         | **Condition**           | **Min**  | **Typical** | **Max**  |
 | ------------------------------------- | ----------------------- | -------- | ----------- | -------- |
 | Frequency Range                       |                         | 863 MHz  |             | 870 MHz  |
-| Modulation Techniques                 | FSK/LoRa®               |          |             |          |
+| Modulation Techniques                 | FSK/LoRa               |          |             |          |
 | TX Frequency Variation vs Temperature | Power Level Setting: 20 | -3 Khz   |             | +3 Khz   |
 | TX Power Variation vs. Temperature    |                         | -5 dBm   |             | +5 dBm   |
 | TX Power Variation                    |                         | -1.5 dBm |             | +1.5 dBm |

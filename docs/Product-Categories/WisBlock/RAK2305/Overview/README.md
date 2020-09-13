@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak2305/datasheet/RAK2305-illustration.jpg
+rak_img: /assets/images/wisblock/rak2305/overview/RAK2305_home.png
 rak_desc: RAK2305 is a WisBlock IO module which extends the WisBlock system with Wi-Fi and Bluetooth connectivity. It is based on the Espressif ESP32 Wrover module.
 rak_grp: [wisblock, wisio]
 prev: ../../

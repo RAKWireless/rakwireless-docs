@@ -12,7 +12,7 @@ Thank you for choosing **RAK5010 WisTrio NB-IoT Tracker Pro** in your awesome Io
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
-
+* [AT Command Manual](../AT-Command-Manual/)
 <!-- <rk-img
   src="/assets/images/wistrio/rak5010/quickstart/1.overview/sezihji5wsoxeb4ikcfk.jpg"
   width="50%"
@@ -41,7 +41,7 @@ This board is particularly suitable to be used as a quick testing and prototypin
 - **Nordic nRF52840**, with BLE 5.0 and long range BLE.
 - nRF52840 integrates the ultra-low power microcontroller ARM Cortex-M4 (64Mhz)
 - Built-in humidity and temperature sensor, pressure sensor, 3-axis motion sensor, and ambient light sensor.
-- iPEX connectors for the LoRa® and GPS antenna and an on-board ceramic antenna for the BLE.
+- iPEX connectors for the LoRa and GPS antenna and an on-board ceramic antenna for the BLE.
 - Nano SIM and ESIM options.
 - Can be powered by either Micro USB, 3.7V rechargeable battery or a 5V Solar Panel Port
 - Multiple interfaces, I2C, UART, GPIO and AD.

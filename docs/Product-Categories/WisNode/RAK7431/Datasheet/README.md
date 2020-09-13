@@ -1,6 +1,6 @@
 ---
 prev: ../Quickstart/
-next: false
+next: ../AT-Command-Manual/
 tags:
   - datasheet
   - wisnode
@@ -23,17 +23,17 @@ certifications:
 
 ### Description
 
-**RAK7431** is an RS485 to LoRaWAN® converter designed for industrial applications. The device relays ModBUS data using the LoRaWAN® network as means of wirelessly transmitting to and from the end devices.
+**RAK7431** is an RS485 to LoRaWAN converter designed for industrial applications. The device relays ModBUS data using the LoRaWAN network as means of wirelessly transmitting to and from the end devices.
 
-RAK7431 WisNode Bridge Serial can operate in all of the LoRaWAN® bands within the standard parameters defined by the LoRa® Alliance. Its open environment range is 15+ km and in industrial cases, where there are heavy obstructions in the path of the RF signal performance is improved compared to conventional wireless systems due to the characteristics of LoRa® as a modulation technique. This allows for consistently good signal quality within the confines of large factories, densely populated offices, storehouses, etc.
+RAK7431 WisNode Bridge Serial can operate in all of the LoRaWAN bands within the standard parameters defined by the LoRa Alliance. Its open environment range is 15+ km and in industrial cases, where there are heavy obstructions in the path of the RF signal performance is improved compared to conventional wireless systems due to the characteristics of LoRa as a modulation technique. This allows for consistently good signal quality within the confines of large factories, densely populated offices, storehouses, etc.
 
-This RS485 compatible devices can address up to 16 client terminal nodes. The conversion from and to LoRa® frames is seamless and allows for real time control and monitoring of multiple RS485 devices, bus data to access and control the RS485 terminal nodes.
+This RS485 compatible devices can address up to 16 client terminal nodes. The conversion from and to LoRa frames is seamless and allows for real time control and monitoring of multiple RS485 devices, bus data to access and control the RS485 terminal nodes.
 
-RAK7431 WisNode Bridge Serial together with RAK gateway and LoRa® Server products, can easily and quickly build a wireless industrial field control system. It adopts industrial protection design, supports wide range voltage supply, supports wall mounting and DIN rail installation, facilitates field installation and use.
+RAK7431 WisNode Bridge Serial together with RAK gateway and LoRa Server products, can easily and quickly build a wireless industrial field control system. It adopts industrial protection design, supports wide range voltage supply, supports wall mounting and DIN rail installation, facilitates field installation and use.
 
 ### Features
 
-- **LoRaWAN® 1.0.3** protocol stack, supports Class A, Class B & C
+- **LoRaWAN 1.0.3** protocol stack, supports Class A, Class B & C
 - **Working modes**: Polling mode, transparent mode and packet mode
 - Remote cloud management of RS485 devices
 - Can address up to **16 RS485**, a que with up to **32 instruction sets**
@@ -49,9 +49,9 @@ RAK7431 WisNode Bridge Serial together with RAK gateway and LoRa® Server produc
 
 #### Networking Applications
 
-RAK7431 WisNode Bridge Serial can convert the data of RS485 devices into LoRaWAN® that can be sent to the cloud via a standard Gateway. Cloud servers can also actively send data to RS485 terminals to achieve two-way data transmission. Using RAK7431 WisNode Bridge Serial, what used to be a costly and time-consuming cable line network deployment can be transformed into a rapid and cost-efficient wireless network deployment.
+RAK7431 WisNode Bridge Serial can convert the data of RS485 devices into LoRaWAN that can be sent to the cloud via a standard Gateway. Cloud servers can also actively send data to RS485 terminals to achieve two-way data transmission. Using RAK7431 WisNode Bridge Serial, what used to be a costly and time-consuming cable line network deployment can be transformed into a rapid and cost-efficient wireless network deployment.
 
-An example would be using the RAK7249 LoRaWAN® Gateway coupled with the RAK WisDM cloud management platform, in order to realize an end-to-end industrial field data acquisition and control system. Using the built-in LoRa® Server, that comes standard with any RAK LoRaWAN® Gateway, one could seamlessly achieve transmission of the end device data to any application server. Furthermore, the MQTT integration allows for a high level of security and efficiency.
+An example would be using the RAK7249 LoRaWAN Gateway coupled with the RAK WisDM cloud management platform, in order to realize an end-to-end industrial field data acquisition and control system. Using the built-in LoRa Server, that comes standard with any RAK LoRaWAN Gateway, one could seamlessly achieve transmission of the end device data to any application server. Furthermore, the MQTT integration allows for a high level of security and efficiency.
 
 <rk-img
   src="/assets/images/wisnode/rak7431/datasheet/RAK7431-1.png"
@@ -61,7 +61,7 @@ An example would be using the RAK7249 LoRaWAN® Gateway coupled with the RAK Wis
 
 ##### Polling Mode
 
-RAK7431 WisNode Bridge Serial can work in polling mode in order to send query instructions to RS485 nodes, and convert the data returned into LoRa® frames to be relayed to the application server via Gateway.
+RAK7431 WisNode Bridge Serial can work in polling mode in order to send query instructions to RS485 nodes, and convert the data returned into LoRa frames to be relayed to the application server via Gateway.
 
 <rk-img
   src="/assets/images/wisnode/rak7431/datasheet/RAK7431-2.png"
@@ -71,10 +71,10 @@ RAK7431 WisNode Bridge Serial can work in polling mode in order to send query in
 
 RAK7431 WisNode Bridge Serial can store a maximum of 32 query instructions in polling mode, each of which has a maximum length of 128 bytes. Polling time interval and waiting time can be adjusted as required.
 
-RAK7431 WisNode Bridge Serial converts the data returned by RS485 nodes into LoRa® packets that can be sent to Gateway in two ways: transparent or packet.
+RAK7431 WisNode Bridge Serial converts the data returned by RS485 nodes into LoRa packets that can be sent to Gateway in two ways: transparent or packet.
 
-- In transparent mode, RS485 data is encapsulated in the payload of LoRa® frames as it is.
-- In packet mode, RS485 data is encapsulated in LoRa® frames with the addition of a header and verification.
+- In transparent mode, RS485 data is encapsulated in the payload of LoRa frames as it is.
+- In packet mode, RS485 data is encapsulated in LoRa frames with the addition of a header and verification.
 
 No matter whether polling mode is enabled or not, the server can actively send commands to query the RS485 nodes through the Gateway via the RAK7431 WisNode Bridge Serial. The commands issued and the returned data can also be transmitted in transparent mode or in packet mode.
 
@@ -136,11 +136,11 @@ The table below shows the full specification of RAK7431 WisNode Bridge Serial.
 
 | Parameter               | Value                                                                                                   | Remarks                                            |
 | ----------------------- | ------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
-| LoRaWAN® Protocol       | LoRaWAN® 1.0.3                                                                                          |                                                    |
+| LoRaWAN Protocol       | LoRaWAN 1.0.3                                                                                          |                                                    |
 | LoRa Frequency          | RU864, IN865, EU868, US915, AU915, KR920, KR923                                                         | Different models support different frequency bands |
-| LoRaWAN® Mode           | Class A / Class B/ Class C                                                                                       |                                                    |
-| LoRa® Tx Power          | 20dBm                                                                                                   |                                                    |
-| LoRa® Antenna interface | SMA MALE, External omnidirectional Antenna                                                              |                                                    |
+| LoRaWAN Mode           | Class A / Class B/ Class C                                                                                       |                                                    |
+| LoRa Tx Power          | 20dBm                                                                                                   |                                                    |
+| LoRa Antenna interface | SMA MALE, External omnidirectional Antenna                                                              |                                                    |
 | RS485 Data Rate         | Configurable 9600 -115200bps                                                                            |                                                    |
 | RS485 Carrying Capacity | 16 Nodes                                                                                                |                                                    |
 | RS485 Protection        | 18KV HBM protection <br> 13KV IEC61000-4-2 contact discharge <br> 4KV IEC61000-4-4 fast transient burst |                                                    |

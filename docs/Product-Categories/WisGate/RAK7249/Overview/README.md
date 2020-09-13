@@ -1,7 +1,7 @@
 ---
 static_root: /assets/images/wisgate/rak7249/quickstart/1.main
 rak_img: /assets/images/wisgate/rak7249/quickstart/1.main/RAK7249_home.png
-rak_desc: RAK7249 is designed for outdoor use even in extreme conditions with an IP67 graded enclosure. It has a built-in GPS module and LoRa® Server, and it supports multiple backhaul connectivity options such as Wi-Fi, LTE, and Ethernet. Moreover, RAK7249 is powered by PoE with options for battery, solar, or AC power supply.
+rak_desc: RAK7249 is designed for outdoor use even in extreme conditions with an IP67 graded enclosure. It has a built-in GPS module and LoRa Server, and it supports multiple backhaul connectivity options such as Wi-Fi, LTE, and Ethernet. Moreover, RAK7249 is powered by PoE with options for battery, solar, or AC power supply.
 rak_grp: [wisgate, edge]
 prev: ../../
 next: ../Quickstart/
@@ -29,18 +29,18 @@ Thus the RAK7249 is suited for any use case scenario, be it rapid deployment or 
 
 - **IP67/NEMA-6** industrial grade enclosure with cable glands
 - **PoE (802.3 af)** + Surge Protection
-- Dual LoRa® Concentrators for up to **16 channels**
+- Dual LoRa Concentrators for up to **16 channels**
 - **Backhaul**: Wi-Fi, LTE and Ethernet
 - GPS **L70 GPS Module**
 - Powered by **PoE**, optional for battery, solar or AC power supply.
 
 ### Software
 
-- Built-in LoRa® Server (**up to 128 nodes license included, higher tiers require a fee**)
+- Built-in LoRa Server (**up to 128 nodes license included, higher tiers require a fee**)
 - OpenVPN
 - Software and UI sit on top of **OpenWRT**
-- LoRaWAN® 1.0.2
-- **LoRa® Frame filtering** (node whitelisting)
+- LoRaWAN 1.0.2
+- **LoRa Frame filtering** (node whitelisting)
 - **MQTT v3.1** Bridging with **TLS encryption**
-- **Buffering of LoRa® frames** in case of NS outage (no data loss)
+- **Buffering of LoRa frames** in case of NS outage (no data loss)
 

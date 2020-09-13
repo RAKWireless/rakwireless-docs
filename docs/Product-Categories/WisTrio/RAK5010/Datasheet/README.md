@@ -1,6 +1,6 @@
 ---
 prev: ../Quickstart/
-next: false
+next: ../AT-Command-Manual/
 tags:
   - datasheet
   - wistrio
@@ -36,7 +36,7 @@ Application development supports the GCC environment.
 - nRF52840 integrates the ultra-low power microcontroller ARM Cortex-M4 (64Mhz)
 - Built-in humidity and temperature sensor, pressure sensor, 3-axis motion
   sensor, and ambient light sensor.
-- iPEX connectors for the LoRa® and GPS antenna and an on-board ceramic
+- iPEX connectors for the LoRa and GPS antenna and an on-board ceramic
   antenna for the BLE.
 - nano SIM and ESIM options.
 - Can be powered by either Micro USB, 3.7V rechargeable battery or a 5V
@@ -610,9 +610,9 @@ The figures below are the average current consumptions based on the different te
 - Oscilloscope
 - RAK5010 WisTrio NB-IoT Tracker Pro
 
-**LoRa® Packet Sending**
+**LoRa Packet Sending**
 
-The RAK5010 WisTrio NB-IoT Tracker Pro takes **489.733 ms** to send a LoRa® packet which consumes **64.9** **mA** of current.
+The RAK5010 WisTrio NB-IoT Tracker Pro takes **489.733 ms** to send a LoRa packet which consumes **64.9** **mA** of current.
 
 - **Sending Time**: 489.733 ms
 - **Current consumption**: 64.9 mA
@@ -620,7 +620,7 @@ The RAK5010 WisTrio NB-IoT Tracker Pro takes **489.733 ms** to send a LoRa® pac
 <rk-img
   src="/assets/images/wistrio/rak5010/datasheet/oscilloscope-screen-capture-of-lora®-packet-sending.jpg"
   width="85%"
-  caption="Oscilloscope Screen Capture of LoRa® Packet Sending"
+  caption="Oscilloscope Screen Capture of LoRa Packet Sending"
 />
 
 **Sleep Mode**
@@ -632,7 +632,7 @@ The RAK5010 WisTrio NB-IoT Tracker Pro when in sleep mode consumes **20.5 uA** o
 <rk-img
   src="/assets/images/wistrio/rak5010/datasheet/oscilloscope-screen-capture-of-rak4600-lora®-module-in-sleep-mode.jpg"
   width="85%"
-  caption="Oscilloscope Screen Capture of RAK4600 LoRa® Module in Sleep Mode"
+  caption="Oscilloscope Screen Capture of RAK4600 LoRa Module in Sleep Mode"
 />
 
 #### Mechanical Characteristics

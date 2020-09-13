@@ -22,22 +22,22 @@ certifications:
 ### Description
 
 **RAK2245 Pi HAT** is a module with Raspberry PI form factor. It can be plugged into
-Raspberry PI such as Raspberry Pi 3 Model B+ as a complete RF front end of gateway. It supports eight channels and is available for LoRaWAN® global frequency bands. The board is the smallest gateway concentrator which integrates the **Ublox MAX-7Q GPS Module** and heat sink.
+Raspberry PI such as Raspberry Pi 3 Model B+ as a complete RF front end of gateway. It supports eight channels and is available for LoRaWAN global frequency bands. The board is the smallest gateway concentrator which integrates the **Ublox MAX-7Q GPS Module** and heat sink.
 
-The board can provide low data rate LoRa® radio links in ultra-fast speed. It is powered by a **Semtech SX1301** transceiver concentrator that is capable of managing packets from many remotely dispersed end-points. Two Semtech SX125X are integrated for RF front end I/Q transceivers.
+The board can provide low data rate LoRa radio links in ultra-fast speed. It is powered by a **Semtech SX1301** transceiver concentrator that is capable of managing packets from many remotely dispersed end-points. Two Semtech SX125X are integrated for RF front end I/Q transceivers.
 
-The RAK2245 Pi HAT is a complete and cost efficient gateway solution that can help you develop a full LoRa® system. This is an economical way to create different solutions like smart grid, intelligent farm and other IoT applications. It is also ideal for manufacturing small series that can expand into more applications.
+The RAK2245 Pi HAT is a complete and cost efficient gateway solution that can help you develop a full LoRa system. This is an economical way to create different solutions like smart grid, intelligent farm and other IoT applications. It is also ideal for manufacturing small series that can expand into more applications.
 
 ### Features
 
 - Compatible with Raspberry Pi 3 Model B+ edition.
 - Integrated Ublox MAX-7Q GPS Module and heat sink.
-- SX1301 base band processor, emulates 49 x LoRa® demodulators, 10 parallel
+- SX1301 base band processor, emulates 49 x LoRa demodulators, 10 parallel
   demodulation paths, supports 8 uplink / 1 downlink channels.
 - 2 units of SX125x Tx/Rx front-ends for high/ low frequency.
 - Supports 5V power supply, integrated level conversion circuit.
 - TX power up to 27dBm, RX sensitivity down to -139dBm@SF12, BW 125KHz.
-- Supports latest LoRaWAN® 1.0.2 protocol.
+- Supports latest LoRaWAN 1.0.2 protocol.
 - Supports global license-free frequency band (EU433, CN470, EU868, US915, AS923, AU915, KR920, IN865 and AS920).
 - Supports SPI, UART, I2C interface.
 
@@ -104,7 +104,7 @@ There are **three (3) Green LED** that indicates the status of PWR, TX, RX.
 
 ##### Antenna RF Interface
 
-The modules have two RF interfaces for LoRa® and GPS antennas over the standard UFL connectors (Hirose U. FL-R-SMT). It has a characteristic impedance of 50OHM and supports both Tx and Rx via RF ports, providing the antenna interface.
+The modules have two RF interfaces for LoRa and GPS antennas over the standard UFL connectors (Hirose U. FL-R-SMT). It has a characteristic impedance of 50OHM and supports both Tx and Rx via RF ports, providing the antenna interface.
 
 #### Pin Definition
 
@@ -163,7 +163,7 @@ The pin connector of RAK2245 Pi HAT is located at the bottom side. Refer to the 
 
 ##### Operating Frequencies
 
-The board supports all LoRaWAN® frequency channels as below. Which is easy to configure while building the firmware from the source code.
+The board supports all LoRaWAN frequency channels as below. Which is easy to configure while building the firmware from the source code.
 
 |    Region     | Frequency (MHz) |
 | :-----------: | :-------------: |
@@ -204,7 +204,7 @@ The RAK2245 Pi HAT has an excellent transmitter performance. It is highly recomm
 |               Parameter               |        Condition        |   Min    | Typ. |   Max    |
 | :-----------------------------------: | :---------------------: | :------: | :--: | :------: |
 |            Frequency Range            |                         | 863 Mhz  |      | 870 Mhz  |
-|         Modulation Techniques         |        FSK/LoRa®        |          |      |          |
+|         Modulation Techniques         |        FSK/LoRa        |          |      |          |
 | TX Frequency Variation vs Temperature | Power Level Setting: 20 |  -3 Khz  |      |  +3 Khz  |
 |   TX Power Variation vs Temperature   | Power Level Setting: 20 |  -5 dBm  |      |  +5 dbm  |
 |          TX Power Variation           |                         | -1.5 dBm |      | +1.5 dBm |

@@ -35,7 +35,7 @@ This device released by RAKWireless is already pre-loaded with its latest firmwa
 
 - 1pc - RAK4600 Evaluation Board
 - 1pc - Micro USB Cable
-- 1pc - LoRa® Antenna (iPEX)
+- 1pc - LoRa Antenna (iPEX)
 - 1pc - 2.4G Antenna (iPEX)
 - 2pcs - 4-pin Header (not soldered)
 - 9pcs - Dupont Lines
@@ -46,7 +46,7 @@ This device released by RAKWireless is already pre-loaded with its latest firmwa
 **In order for you**to be able to interface with the Evaluation Board, using a Windows Machine, you need to download the RAK Serial Port Tool **[here](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).**
 
 :::warning ⚠️ WARNING
-Before powering the RAK4600 Evaluation Board , you should install the LoRa® and BLE Antenna first. Not doing so might damage the board.
+Before powering the RAK4600 Evaluation Board , you should install the LoRa and BLE Antenna first. Not doing so might damage the board.
 :::
 
 <br>
@@ -54,7 +54,7 @@ Before powering the RAK4600 Evaluation Board , you should install the LoRa® and
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/3.interfacing/u9lgszijijydbyjkgwnx.png"
   width="55%"
-  caption="LoRa® and BLE Antennas"
+  caption="LoRa and BLE Antennas"
 />
 
 
@@ -366,10 +366,10 @@ When setting up a new device in TTN its default is to join in OTAA mode. For con
 />
 
 ::: tip 📝 NOTE:
-As an example, let’s join in OTAA mode, EU868 frequency and the default LoRa® class is Class A.
+As an example, let’s join in OTAA mode, EU868 frequency and the default LoRa class is Class A.
 :::
 
-1. Set the LoRa® join mode to **OTAA** as follows:
+1. Set the LoRa join mode to **OTAA** as follows:
 
 ```sh
 at+set_config=lora:join_mode:0
@@ -378,10 +378,10 @@ at+set_config=lora:join_mode:0
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/7.connecting-to-ttn/ttn-otaa/ugvheykwbjgqrmve3gr1.jpg"
   width="45%"
-  caption="AT Command for OTAA LoRa® Join Mode via RAK Serial Port Tool"
+  caption="AT Command for OTAA LoRa Join Mode via RAK Serial Port Tool"
 />
 
-2. Set the LoRa® class to **Class A**:
+2. Set the LoRa class to **Class A**:
 
 ```sh
 at+set_config=lora:class:0
@@ -390,7 +390,7 @@ at+set_config=lora:class:0
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/7.connecting-to-ttn/ttn-otaa/uwdcbt0uegx9s5nacmdh.jpg"
   width="45%"
-  caption="AT Command for OTAA LoRa® Class via RAK Serial Port Tool"
+  caption="AT Command for OTAA LoRa Class via RAK Serial Port Tool"
 />
 
 3. Set the frequency/region to **EU868**:
@@ -402,7 +402,7 @@ at+set_config=lora:region:EU868
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/7.connecting-to-ttn/ttn-otaa/iuxsdncululn7d4ywcis.jpg"
   width="45%"
-  caption="AT Command for OTAA LoRa® Region Frequency via RAK Serial Port Tool"
+  caption="AT Command for OTAA LoRa Region Frequency via RAK Serial Port Tool"
 />
 
 4. Set the **Device EUI.**
@@ -414,7 +414,7 @@ at+set_config=lora:dev_eui:XXXX
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/7.connecting-to-ttn/ttn-otaa/pu2digmbwm9tms4h3mtm.jpg"
   width="45%"
-  caption="AT Command for OTAA LoRa® Device EUI via RAK Serial Port Tool"
+  caption="AT Command for OTAA LoRa Device EUI via RAK Serial Port Tool"
 />
 
 5. Set the **Application EUI**:
@@ -426,7 +426,7 @@ at+set_config=lora:app_eui:XXXX
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/7.connecting-to-ttn/ttn-otaa/k2nhwyd1ctfx6gjwuboz.jpg"
   width="45%"
-  caption="AT Command for OTAA LoRa® Application EUI via RAK Serial Port Tool"
+  caption="AT Command for OTAA LoRa Application EUI via RAK Serial Port Tool"
 />
 
 6. Set the **Application Key**:
@@ -438,7 +438,7 @@ at+set_config=lora:app_key:XXXX
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/7.connecting-to-ttn/ttn-otaa/rv7qwzhicwokmmgxcawf.jpg"
   width="45%"
-  caption="AT Command for OTAA LoRa® Application Key via RAK Serial Port Tool"
+  caption="AT Command for OTAA LoRa Application Key via RAK Serial Port Tool"
 />
 
 ::: tip 📝 NOTE:
@@ -454,7 +454,7 @@ at+join
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/7.connecting-to-ttn/ttn-otaa/mgztynrigiozealhlv6t.jpg"
   width="45%"
-  caption="AT Command for OTAA LoRa® Join via RAK Serial Port Tool"
+  caption="AT Command for OTAA LoRa Join via RAK Serial Port Tool"
 />
 
 8. Joined successfully! Now, let’s try to send a data from the RAK4600 Evaluation Board to TTN:
@@ -498,10 +498,10 @@ You can then see the data sent from RAK4600 Evaluation Board on TTN website as f
 />
 
 ::: tip 📝 NOTE:
-As an example, let's join in ABP mode, EU868 frequency, and LoRa® class is Class A.
+As an example, let's join in ABP mode, EU868 frequency, and LoRa class is Class A.
 :::
 
-3. If the join mode is not in ABP Mode, just set the LoRa® join mode to **ABP** as follows:
+3. If the join mode is not in ABP Mode, just set the LoRa join mode to **ABP** as follows:
 
 ```sh
 at+set_config=lora:join_mode:1
@@ -513,7 +513,7 @@ at+set_config=lora:join_mode:1
   caption="ABP Parameters in The Things Network"
 />
 
-4. Set the LoRa® class to **Class A**:
+4. Set the LoRa class to **Class A**:
 
 ```sh
 at+set_config=lora:class:0
@@ -522,7 +522,7 @@ at+set_config=lora:class:0
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/7.connecting-to-ttn/ttn-abp/mmll3jdm6l9hg3jm5jy7.jpg"
   width="45%"
-  caption="AT Command for ABP LoRa® Class via RAK Serial Port Tool"
+  caption="AT Command for ABP LoRa Class via RAK Serial Port Tool"
 />
 
 5. Set the frequency/region to **EU868**:
@@ -534,7 +534,7 @@ at+set_config=lora:region:EU868
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/7.connecting-to-ttn/ttn-abp/hoxaobrwlgh6otjde6vd.jpg"
   width="45%"
-  caption="AT Command for ABP LoRa® Class via RAK Serial Port Tool"
+  caption="AT Command for ABP LoRa Class via RAK Serial Port Tool"
 />
 
 6. Set the **Device Address**:
@@ -546,7 +546,7 @@ at+set_config=lora:dev_addr:XXXX
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/7.connecting-to-ttn/ttn-abp/i5tmaceu0jqjbh3qt4po.jpg"
   width="45%"
-  caption="AT Command for ABP LoRa® Device Address via RAK Serial Port Tool"
+  caption="AT Command for ABP LoRa Device Address via RAK Serial Port Tool"
 />
 
 7. Set the **Network Session Key**:
@@ -558,7 +558,7 @@ at+set_config=lora:nwks_key:XXXX
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/7.connecting-to-ttn/ttn-abp/kc6fxzmr4ijlan1sgrh8.jpg"
   width="45%"
-  caption="AT Command for ABP LoRa® Network Session Key via RAK Serial Port Tool"
+  caption="AT Command for ABP LoRa Network Session Key via RAK Serial Port Tool"
 />
 
 8. Set the **Application Session Key**:
@@ -570,7 +570,7 @@ at+set_config=lora:apps_key:XXXX
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/7.connecting-to-ttn/ttn-abp/wcfzckjltpwf2n8pdobs.jpg"
   width="45%"
-  caption="AT Command for ABP LoRa® Application Session Key via RAK Serial Port Tool"
+  caption="AT Command for ABP LoRa Application Session Key via RAK Serial Port Tool"
 />
 
 ::: tip 📝 NOTE:
@@ -586,7 +586,7 @@ at+join
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/7.connecting-to-ttn/ttn-abp/mqklekitvyx1smagkvx5.jpg"
   width="45%"
-  caption="AT Command for ABP LoRa® Join via RAK Serial Port Tool"
+  caption="AT Command for ABP LoRa Join via RAK Serial Port Tool"
 />
 
 ::: tip 📝 NOTE:
@@ -603,7 +603,7 @@ Now, let’s try to send a data from the RAK4600 Evaluation Board to TTN in ABP 
 
 ## Connecting with Chirpstack
 
-The **ChirpStack** or previously known as LoRaServer project provides open-source components for building LoRaWAN® networks. You can learn more about ChirpStack [**here**](https://www.chirpstack.io/).
+The **ChirpStack** or previously known as LoRaServer project provides open-source components for building LoRaWAN networks. You can learn more about ChirpStack [**here**](https://www.chirpstack.io/).
 
 :::tip 📝 NOTE:
 In this document, it is assumed that you are using RAK Gateway and its built-in ChirpStack or RAK cloud testing ChirpStack. It is also assumed that a Gateway with the ChirpStack has been configured successfully. If not, please have a look at RAK's documents for more details about RAK LPWAN Gateway and [**RAK cloud testing**](https://forum.rakwireless.com/t/rak-free-cloud-loraserver-for-testing/344).
@@ -699,7 +699,7 @@ The Application EUI which will be set into RAK4600 Evaluation Board as “app_eu
 The default join mode is **OTAA**, the default class is **Class A** and the default region is **EU868**.
 :::
 
-7. If the **join mode** is not in OTAA, just set the LoRa® join mode to **OTAA** as follows:
+7. If the **join mode** is not in OTAA, just set the LoRa join mode to **OTAA** as follows:
 
 ```sh
 at+set_config=lora:join_mode:0
@@ -711,7 +711,7 @@ at+set_config=lora:join_mode:0
   caption="Chirpstack OTAA Join Mode via RAK Serial Port Tool"
 />
 
-8. Set the LoRa® class to **Class A**:
+8. Set the LoRa class to **Class A**:
 
 ```sh
 at+set_config-lora:class:0
@@ -838,7 +838,7 @@ Frequency AS923  in ABP Mode is not supported in Chirpstack.
   caption="Chirpstack ABP Activation Parameters Needed"
 />
 
-3. Use these parameters to set RAK4600 Evaluation Board by using AT command. Set **LoRa® join** mode to **ABP**:
+3. Use these parameters to set RAK4600 Evaluation Board by using AT command. Set **LoRa join** mode to **ABP**:
 ```sh
 at+set_config=lora:join_mode:1
 ```
@@ -848,7 +848,7 @@ at+set_config=lora:join_mode:1
   caption="Chirpstack ABP Join Mode via RAK Serial Port Tool"
 />
 
-4. Set LoRa® class to **Class A**:
+4. Set LoRa class to **Class A**:
 ```sh
 at+set_config=lora:class:0
 ```
@@ -946,13 +946,13 @@ The purpose of this document is to demonstrate on how to configure the RAK4600 E
 | `at+set_config=device:restart` | After set, the device will restart. | 
 | `at+run` | Stop boot mode and run as normal. It is valid when the device works in boot mode. | 
 | `at+set_config=device:sleep:X` | After setting, the device will go to sleep mode or wake up immediately. <br>• 0 - sleep • 1 - wake up | 
-| `at+join` | Start to join LoRa® network. | 
-| `at+send=lora:X:YYY` | Send a customized data. <br>**• X** - LoRa® port <br>**• YYY** - the data which you want to send. The limited length is 50 Bytes, and the data must be in HEX format. | 
-| `at+set_config=lora:work_mode:X` | Set the work mode for LoRa®. <br>**• X** - 0: LoRaWAN®, 1: LoRaP2P, 2: Test Mode. | 
-| `at+set_config=lora:join_mode:X` | Set the join mode for LoRaWAN®. <br>**• X** - 0: OTAA, 1: ABP | 
-| `at+set_config=lora:class:X` | Set the class for LoRa®. <br>**• X** - 0: Class A, 1: Class B, 2: Class C | 
-| `at+set_config=lora:region:XXX`| Set the region for LoRa®. <br>**• XXX** -one of the following items: EU868 EU433, CN470, IN865, EU868, AU915, US915, KR920, AS923. | 
-| `at+set_config=lora:confirm:X` | Set the type of messages which will be sent out through LoRa®. <br>**• X** - 0: unconfirm, 1: confirm | 
+| `at+join` | Start to join LoRa network. | 
+| `at+send=lora:X:YYY` | Send a customized data. <br>**• X** - LoRa port <br>**• YYY** - the data which you want to send. The limited length is 50 Bytes, and the data must be in HEX format. | 
+| `at+set_config=lora:work_mode:X` | Set the work mode for LoRa. <br>**• X** - 0: LoRaWAN, 1: LoRaP2P, 2: Test Mode. | 
+| `at+set_config=lora:join_mode:X` | Set the join mode for LoRaWAN. <br>**• X** - 0: OTAA, 1: ABP | 
+| `at+set_config=lora:class:X` | Set the class for LoRa. <br>**• X** - 0: Class A, 1: Class B, 2: Class C | 
+| `at+set_config=lora:region:XXX`| Set the region for LoRa. <br>**• XXX** -one of the following items: EU868 EU433, CN470, IN865, EU868, AU915, US915, KR920, AS923. | 
+| `at+set_config=lora:confirm:X` | Set the type of messages which will be sent out through LoRa. <br>**• X** - 0: unconfirm, 1: confirm | 
 | `at+set_config=lora:dev_eui:XXXX` | Set the device EUI for OTAA. <br>**• XXXX** - the device EUI. | 
 | `at+set_config=lora:app_eui:XXXX` | Set the application EUI for OTAA. <br>**• XXXX** - the application EUI. | 
 | `at+set_config=lora:app_key:XXXX` | Set the application key for OTAA. <br>**• XXXX** - the application key. | 
@@ -961,9 +961,9 @@ The purpose of this document is to demonstrate on how to configure the RAK4600 E
 | `at+set_config=lora:nwks_key:XXXX` | Set the network session key for ABP. <br>**• XXXX** - the network session key. | 
 | `at+set_config=lora:ch_mask:X:Y` | Set a certain channel on or off. <br>**• X** - the channel number, and you can check which channel can be set before you set it. <br>**• Y** - 0: off, 1: on | 
 | `at+set_config=lora:adr:X` | Open or close the ADR function of the Node. <br>**• X** - 0: Close ADR; 1: Open ADR. | 
-| `at+set_config=lora:dr:X `| Set the DR of the Node. <br>**• X** -the number of DR. Generally, the value of X can be 0~5. More details, please check the LoRaWAN® 1.0.2 specification. | 
-| `at+get_config=lora:status` | It will return all of the current information of LoRa®, except LoRa® channel. | 
-| `at+get_config=lora:channel` | It will return the state of all LoRa® channels, then you can see which channel is closed and which channel is open very clearly. | 
+| `at+set_config=lora:dr:X `| Set the DR of the Node. <br>**• X** -the number of DR. Generally, the value of X can be 0~5. More details, please check the LoRaWAN 1.0.2 specification. | 
+| `at+get_config=lora:status` | It will return all of the current information of LoRa, except LoRa channel. | 
+| `at+get_config=lora:channel` | It will return the state of all LoRa channels, then you can see which channel is closed and which channel is open very clearly. | 
 | `at+set_config=ble:work_mode:X:Y` | Set the work mode for BLE. <br>**• X** - 0: BLE peripheral mode, 1: BLE central mode, 2: Beacon scan mode <br>**• Y** - 0: normal range, 1: BLE long range More information about BLE Connection Modes [here](#bluetooth-connection-modes)| 
 
 

@@ -22,20 +22,20 @@ prev: ../Quickstart/
 
 **RAK4200 Breakout Board** is specifically designed to allow easy excess to the pins on the board in order to simplify development and testing. The breakout board utilized is of an Xbee form factor and its main purpose is to allow the RAK4200 stamp module form factor pinout to be transferred to 2.54mm headers.
 
-The board itself has the RAK4200 at its core, integrating an **STM32L071 MCU** and an **SX1276 LoRa® chip**. It has Ultra-Low Power Consumption of 1.5uA in sleep mode and high LoRa® output power (19dBm) in work mode.
+The board itself has the RAK4200 at its core, integrating an **STM32L071 MCU** and an **SX1276 LoRa chip**. It has Ultra-Low Power Consumption of 1.5uA in sleep mode and high LoRa output power (19dBm) in work mode.
 
-The board complies with LoRaWAN® 1.0.2 protocols. It also supports Lora® Point to Point communication.
+The board complies with LoRaWAN 1.0.2 protocols. It also supports Lora® Point to Point communication.
 
-The low power, long range LoRa® communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors and monitors, etc.).
+The low power, long range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors and monitors, etc.).
 
 ### Features
 
-LoRa® module for Smart City, Smart Agriculture, Smart Industry
+LoRa module for Smart City, Smart Agriculture, Smart Industry
 
 - I/O ports: **UART/I2C/GPIO**
-- Frequency range: **863–923 MHz** (entire LoRa® high band spectrum)
+- Frequency range: **863–923 MHz** (entire LoRa high band spectrum)
 - Low-Power Wireless Systems with 7.8kHz to 500KHz Bandwidth
-- LoRa® Tx power up to **19dBm**
+- LoRa Tx power up to **19dBm**
 - Ultra-Low Power Consumption **2.0uA in sleep mode**
 - Core: **ARM 32-bit Cortex M0+** with MPU
 - Up to128KB flash memory with ECC
@@ -153,7 +153,7 @@ The pin definitions of RAK4200 Breakout Board are shown in the following tables 
 
 ##### Operating Frequencies
 
-The RAK4200 Breakout Board supports the following LoRa® bands:
+The RAK4200 Breakout Board supports the following LoRa bands:
 
 | Module          | Region                                                                                     | Frequency                                                                    |
 | --------------- | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- |
@@ -168,10 +168,10 @@ The table below shows the power consumption of RAK4200 Breakout Board:
 
 | Item                    | Power Consumption | Condition                       |
 | ----------------------- | ----------------- | ------------------------------- |
-| Tx mode LoRa® @19dBm    | 120mA             | LoRa® @ PA_BOOST & BT sleep     |
-| Tx mode LoRa® @17dBm    | 87mA              | LoRa® @ PA_BOOST & BT sleep     |
-| Rx mode LoRa® @37.5Kbps | 15mA              | LoRa® @ Receive mode & BT sleep |
-| Sleep mode              | 1.5uA             | LoRa® sleep                     |
+| Tx mode LoRa @19dBm    | 120mA             | LoRa @ PA_BOOST & BT sleep     |
+| Tx mode LoRa @17dBm    | 87mA              | LoRa @ PA_BOOST & BT sleep     |
+| Rx mode LoRa @37.5Kbps | 15mA              | LoRa @ Receive mode & BT sleep |
+| Sleep mode              | 1.5uA             | LoRa sleep                     |
 
 ##### Schematic Diagram
 

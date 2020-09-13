@@ -60,12 +60,12 @@ tags:
 
 ### Power on the Gateway
 
-1. Attach the LoRa® Antenna
+1. Attach the LoRa Antenna
 
 First and foremost, screw on the antenna to the SMA connector back panel of the RAK7258 WisGate Edge Lite
 
 :::warning ⚠️ WARNING
- Do not power the device if the LoRa® Antenna port has been left open to avoid potential damage in the RAK7258 WisGate Edge Lite.
+ Do not power the device if the LoRa Antenna port has been left open to avoid potential damage in the RAK7258 WisGate Edge Lite.
 :::
 
 2. **Power** the Gateway **ON**
@@ -86,7 +86,7 @@ It is recommended to use the **12V DC adapter** that comes with the RAK7258 WisG
 | ---- | ----------------------------------------------------------------------------------------------------------------------------- |
 | PWR  | Power Indicator, LED is on when the device is powered                                                                         |
 | ETH  | **ON**– link is up, **OFF** – link is down, **Flashing** – Data is being transferred                                          |
-| LoRa® | **ON** - LoRa® module status is up, **OFF** – LoRa® module status is down, **Flashing** – LoRa® module data is being transferred |
+| LoRa | **ON** - LoRa module status is up, **OFF** – LoRa module status is down, **Flashing** – LoRa module data is being transferred |
 | ACT  | Reserved for future use                                                                                                       |
 | STAT | Reserved for future use                                                                                                       |
 | WLAN | **AP Mode** : **ON** - WLAN status is up, **Flashing** - Data is being transferred                                            |
@@ -105,7 +105,7 @@ The function of the **Reset** key is as follows:
 In this section, several ways in accessing the gateway are provided to have different alternatives for you to choose depending on the availability of the requirements needed.
 
 :::warning ⚠️ WARNING
- Do not power the device if the LoRa® Antenna port has been left open to avoid potential damage in the RAK7258 WisGate Edge Lite."
+ Do not power the device if the LoRa Antenna port has been left open to avoid potential damage in the RAK7258 WisGate Edge Lite."
 :::
 
 #### Wi-Fi AP Mode
@@ -182,7 +182,7 @@ The Things Network is about enabling low power devices to use long range gateway
 />
 
 :::tip 📝 NOTE:
- The Gateway EUI can be found either on the sticker on the casing or via the LoRa® Packet Forwarder page in the LoRa® Gateway menu once you log via the Web UI.
+ The Gateway EUI can be found either on the sticker on the casing or via the LoRa Packet Forwarder page in the LoRa Gateway menu once you log via the Web UI.
 :::
 
 2. Select your [Frequency Plan](https://www.thethingsnetwork.org/docs/lorawan/frequency-plans.html) depending on your location. This should populate the Router field. Optionally you can choose to enter the Gateway coordinates in the map’s upper right corner and select if the gateway is indoor or outdoor via the Antenna placement field below the map.
@@ -196,7 +196,7 @@ The Things Network is about enabling low power devices to use long range gateway
 />
 
 :::tip 📝 NOTE:
-By default, the Gateway is set to connect to TTN. For detailed information about advanced configuration options refer to the [WEB Management Platform - LoRa® Network](/Knowledge-Hub/Learn/Resources/WEB-Management-Platform/#lora®-network) section.
+By default, the Gateway is set to connect to TTN. For detailed information about advanced configuration options refer to the [WEB Management Platform - LoRa Network](/Knowledge-Hub/Learn/Resources/WEB-Management-Platform/#lora®-network) section.
 :::
 
 

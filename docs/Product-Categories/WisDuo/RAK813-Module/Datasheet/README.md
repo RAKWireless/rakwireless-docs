@@ -5,7 +5,7 @@ tags:
 prev: ../Overview/
 ---
 
-# RAK813 BLE+LoRa® Module Datasheet
+# RAK813 BLE+LoRa Module Datasheet
 
 <!---
 <rk-img
@@ -19,33 +19,33 @@ prev: ../Overview/
 
 ### Description
 
-The **RAK813** is a combination of the BLE and LoRa® in a single module. The BLE short-range technology combined with low-power LoRa® can provide long-distance wireless communication capabilities. Both technologies are low power, eliminating the need to change batteries frequently.
+The **RAK813** is a combination of the BLE and LoRa in a single module. The BLE short-range technology combined with low-power LoRa can provide long-distance wireless communication capabilities. Both technologies are low power, eliminating the need to change batteries frequently.
 
 At the same time, RAK813 supports various digital interfaces such as GPIO, UART, I2C, SPI, etc. which are used in connecting sensors to RAK813 module.
 
 Based on the global leading Nordic Semiconductor Corporation's nRF52832 (BLE)
-and Semtech's SX127x (LoRa®) chipset, the RAK813 module provides a perfect
+and Semtech's SX127x (LoRa) chipset, the RAK813 module provides a perfect
 combination of ultra low power and ultra long distance.
 
-The RAK813 module uses TCXO as the LoRa® clock source, so at different temperatures (such as indoor and outdoor) LoRa® module of radio frequency close to the maximum, can effectively
+The RAK813 module uses TCXO as the LoRa clock source, so at different temperatures (such as indoor and outdoor) LoRa module of radio frequency close to the maximum, can effectively
 improve the decoding rate, so as to enhance the communication quality.
 
-RAK813 supports various protocols, including the newest BLE and LoRaWAN®, where customers can choose multi frequency, including: 433MHz, 470MHz, 868MHz, and 915MHz.
+RAK813 supports various protocols, including the newest BLE and LoRaWAN, where customers can choose multi frequency, including: 433MHz, 470MHz, 868MHz, and 915MHz.
 
 ### Features
 
-- Base on nRF52832(BLE) and SX127X (LoRa®)
+- Base on nRF52832(BLE) and SX127X (LoRa)
 - Supports UART, SPI, I2C and GPIOs Interface.
 - Small size and low power, sleep current down to 2uA
-- High receiver sensitivity: LoRa® down to -146dBm, BLE down to -96dBm
+- High receiver sensitivity: LoRa down to -146dBm, BLE down to -96dBm
 - Operates at Temperature of -40°C to 85 °C
-- TX Power: LoRa® adjustable up to +14dBm high efficiency PA, max PA boost up to 20dBm, BLE -20 to +4 dBm in 4 DB steps
+- TX Power: LoRa adjustable up to +14dBm high efficiency PA, max PA boost up to 20dBm, BLE -20 to +4 dBm in 4 DB steps
 - Building in both TX and RX filter
 - Building in TCXO for high frequency stability
-- Provides multiple band selection including 433/470/868/915 MHz for LoRa®, and 2.4GHz for BLE
+- Provides multiple band selection including 433/470/868/915 MHz for LoRa, and 2.4GHz for BLE
 - Storage Temperature: -40°C to 85°C
-- Supports LoRa® Point to Point Communication in all the bands
-- FSK, GFSK, and LoRa® Technology modulation
+- Supports LoRa Point to Point Communication in all the bands
+- FSK, GFSK, and LoRa Technology modulation
 - llP3 = -11dBm
 - Up to 15 km coverage at suburban and up to 5 km coverage at urban area.
 
@@ -67,7 +67,7 @@ The overview covers the RAK813 board overview with its corresponding outer dimen
 
 #### Block Diagram
 
-The short-range technology nRF52832 (BLE) is paired with the Semtech's SX127x (LoRa®) chipset making the RAK813 capable of long-distance wireless communication. 
+The short-range technology nRF52832 (BLE) is paired with the Semtech's SX127x (LoRa) chipset making the RAK813 capable of long-distance wireless communication. 
 
 <rk-img
   src="/assets/images/wisduo/rak813-module/datasheet/interfaces/block-diagram.png"
@@ -109,7 +109,7 @@ The hardware specification is categorized into five parts. It discusses the pino
 | 9          | P0.31_UART_RTS | I    | UART Interface                   |
 | 10         | GND            |      | Ground connection                |
 | 11         | VDD_nRF        | P    | BLE power voltage source input   |
-| 12         | VDD_LoRa       | P    | LoRa® power voltage source input |
+| 12         | VDD_LoRa       | P    | LoRa power voltage source input |
 | 13         | GND            | I/O  | Ground connections               |
 | 14         | GND            | I/O  | Ground connections               |
 | 15         | P0.02_AIN0     | I/O  | GPIO port/ADC input              |

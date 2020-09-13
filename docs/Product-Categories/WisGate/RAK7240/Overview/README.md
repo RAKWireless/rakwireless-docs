@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisgate/rak7240/quickstart/RAK7240_home.png
-rak_desc: RAK7240 has a built-in GPS module and LoRa® Server. This gateway supports multiple backhaul connectivity options such as WiFi, LTE, and Ethernet with an available SD card slot to back up the gathered data. The enclosure is IP rated, dustproof and waterproof, and with a built-in surge protection.  
+rak_desc: RAK7240 has a built-in GPS module and LoRa Server. This gateway supports multiple backhaul connectivity options such as WiFi, LTE, and Ethernet with an available SD card slot to back up the gathered data. The enclosure is IP rated, dustproof and waterproof, and with a built-in surge protection.  
 rak_grp: [wisgate, edge]
 prev: ../../
 next: ../Quickstart/
@@ -26,19 +26,19 @@ Thus, the **RAK7240 WisGate Edge Prime**, is suited for any use case scenario, b
 
 - **IP65** industrial-grade enclosure with cable glands
 - **PoE** + Surge Protection
-- Dual LoRa® Concentrators for up to **16 channels**
+- Dual LoRa Concentrators for up to **16 channels**
 - Backhaul: **Wi-Fi**, **LTE** and **Ethernet**
 - **GPS**
 - SD Card slot
 
 ### Software
 
-- Built-in LoRa® Server **(up to 128 nodes license included, higher tiers require a fee)**
+- Built-in LoRa Server **(up to 128 nodes license included, higher tiers require a fee)**
 - OpenVPN
 - Software and UI sit on top of **OpenWRT**
-- LoRaWAN® 1.0.2
-- **LoRa® Frame filtering** (node whitelisting)
+- LoRaWAN 1.0.2
+- **LoRa Frame filtering** (node whitelisting)
 - **MQTT v3.1** Bridging with **TLS** encryption
-- **Buffering of LoRa® frames** in case of NS outage (no data loss)
+- **Buffering of LoRa frames** in case of NS outage (no data loss)
 
 

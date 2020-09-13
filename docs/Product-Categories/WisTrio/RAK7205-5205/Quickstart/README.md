@@ -38,7 +38,7 @@ This device released by RAKWireless is already pre-loaded with its latest firmwa
 
 - 1pc - RAK5205 WisTrio LPWAN Tracker
 - 1pc - Micro USB Cable
-- 1pc - LoRa® Antenna
+- 1pc - LoRa Antenna
 - 1pc - GPS Antenna
 - 1pc - Battery connector cable (JST) - requires soldering
 - 5pcs - Jumper Caps
@@ -51,7 +51,7 @@ This device released by RAKWireless is already pre-loaded with its latest firmwa
 In order for you to be able to interface with the RAK7205/RAK5205 WisTrio LPWAN Tracker with your Windows Machine, you need to download the RAK Serial Port Tool **[here](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).**
 
 ::: warning ⚠️ WARNING
-Before powering the RAK5205 , you should install the LoRa® and GPS antenna first . Not doing so might damage the board
+Before powering the RAK5205 , you should install the LoRa and GPS antenna first . Not doing so might damage the board
 :::
 
 - Connect your RAK5205 WisTrio LPWAN Tracker in your Windows Machine using the provided micro-usb cable.
@@ -182,10 +182,10 @@ When setting up a new device in TTN, its default mode is **OTAA** or **Over-the-
 Now, let us configure the RAK5205 to work in OTAA mode in the EU868 band, as an example.
 
 ::: tip 📝 NOTE
-The default LoRa® working mode for the RAK5205 is LoRaWAN® 1.0.2, while the default LoRa® join mode is OTAA, and the default LoRa® class is Class A.
+The default LoRa working mode for the RAK5205 is LoRaWAN 1.0.2, while the default LoRa join mode is OTAA, and the default LoRa class is Class A.
 :::
 
-1. Set mode to OTAA, device class to Class A and your LoRaWAN® region to your correct frequency band, with the following set of commands below. Remember to replace XXX with the your LoRaWAN® region, see this link for your frequency plan.
+1. Set mode to OTAA, device class to Class A and your LoRaWAN region to your correct frequency band, with the following set of commands below. Remember to replace XXX with the your LoRaWAN region, see this link for your frequency plan.
 
 ```sh
 at+set_config=lora:join_mode:0
@@ -365,7 +365,7 @@ If you get a response in your TTN live data feed as in Figure 26, then you are a
 
 ### Connecting to ChirpStack
 
-The **ChirpStack** or previously known as LoRaServer project provides open-source components for building LoRaWAN® networks. You can learn more about ChirpStack [**here**](https://www.chirpstack.io/).
+The **ChirpStack** or previously known as LoRaServer project provides open-source components for building LoRaWAN networks. You can learn more about ChirpStack [**here**](https://www.chirpstack.io/).
 
 You can use to connect with ChirpStack according to the following steps:
 
@@ -405,7 +405,7 @@ In this section, it is an assumption that you have already connected your Gatewa
   caption="RAKwireless Test Application"
 />
 
-5. Add a LoRa® node device into ChirpStack by clicking the “**CREATE**” button:
+5. Add a LoRa node device into ChirpStack by clicking the “**CREATE**” button:
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/connecting-to-chirpstack/jocka410vvlsenkdcf0a.png"
@@ -458,7 +458,7 @@ If you want to join in OTAA mode, select “**DeviceProfile_OTAA**” in the “
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-otaa-mode/xrmpjlafrry3ag479lnl.png"
   width="100%"
-  caption="Application Key LoRaWAN®"
+  caption="Application Key LoRaWAN"
 />
 
 ::: tip 📝 NOTE:
@@ -479,7 +479,7 @@ at+version
 
 - Now, let us join our RAK5205 using the OTAA activation mode.
 
-5. If the join mode is not in OTAA, just set the LoRa® join mode to **OTAA** and LoRa® class to **Class A** by typing the AT commands shown in the picture below.
+5. If the join mode is not in OTAA, just set the LoRa join mode to **OTAA** and LoRa class to **Class A** by typing the AT commands shown in the picture below.
 
 ```sh
 at+set_config=lora:join_mode:0
@@ -492,10 +492,10 @@ at+set_config-lora:class:0
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-otaa-mode/mdjpe1uhxdmahhthbt8w.jpg"
   width="90%"
-  caption="Setting of LoRaWAN® mode and class"
+  caption="Setting of LoRaWAN mode and class"
 />
 
-6. Type the following AT command to set the:**Frequency/Region, Device EUI, Application EUI and Application Key.**Remember to replace the **"XXX"** and **"XXXX"** with the corresponding parameter value for your particular case:
+6. Type the following AT command to set the: **Frequency/Region, Device EUI, Application EUI and Application Key.** Remember to replace the **"XXX"** and **"XXXX"** with the corresponding parameter value for your particular case:
 
 ```sh
 at+set_config=lora:region:XXX
@@ -589,7 +589,7 @@ You can see the message on ChirpStack page:
   caption="Chirpstack ABP Activation Parameters Needed"
 />
 
-**3.** Use these parameters to set RAK5205 WisTrio LPWAN Tracker by using AT command. Set **LoRa® join** mode to **ABP**:
+**3.** Use these parameters to set RAK5205 WisTrio LPWAN Tracker by using AT command. Set **LoRa join** mode to **ABP**:
 
 ```sh
 at+set_config=lora:join_mode:1
@@ -601,7 +601,7 @@ at+set_config=lora:join_mode:1
   caption="Chirpstack ABP Join Mode via RAK Serial Port Tool"
 />
 
-**4.** Set LoRa® class to **Class A**:
+**4.** Set LoRa class to **Class A**:
 
 ```sh
 at+set_config=lora:class:0
@@ -968,7 +968,7 @@ If you don't have an account in Cayenne, head on to [https://mydevices.com/cayen
   caption="Choosing your device from the list"
 />
 
-- A list of LoRa® Products and Widgets are now displayed. Scroll down and look for "**Cayenne LPP**".
+- A list of LoRa Products and Widgets are now displayed. Scroll down and look for "**Cayenne LPP**".
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/cayenne-integration/hrzw47je3uxbv9a8fyhe.jpg"
@@ -996,13 +996,13 @@ If you don't have an account in Cayenne, head on to [https://mydevices.com/cayen
 There are two widgets that appear as general Analog ones. The first one on channel 8 is the Speed as measured by the GPS receiver. The second one on channel 9 is the AQI (Air Quality Index). The user needs to edit the names and choose an appropriate UI representation by hand. This is so, because as of this moment LPP doesn’t support data of such type and they are transmitted as general analog values. In Rev2 of the LPP standard it is expected these issues will be address.
 :::
 
-### LoRa® P2P Mode
+### LoRa P2P Mode
 
-In this section, I’ll show how to use LoRa® P2P mode. We will be using EU868 as our frequency, although it is applicable to other standard bands.
+In this section, I’ll show how to use LoRa P2P mode. We will be using EU868 as our frequency, although it is applicable to other standard bands.
 
-1. First, find two **RAK5205 LoRa® Tracker** which can work on EU868 frequency and make sure their firmware version isn’t less than **V3.0.0.1**.
+1. First, find two **RAK5205 LoRa Tracker** which can work on EU868 frequency and make sure their firmware version isn’t less than **V3.0.0.1**.
 
-2. Next, connect these two RAK5205 LoRa® Tracker with PC through UART, and open two serial port tool on PC.
+2. Next, connect these two RAK5205 LoRa Tracker with PC through UART, and open two serial port tool on PC.
 
 3. Now, configure them to both work in LoRaP2P mode as follow:
 
@@ -1028,7 +1028,7 @@ at+set_config=lorap2p:869525000:7:0:1:5:5
   caption="Configuring P2P in both RAK5205 Nodes"
 />
 
-5. OK! Try to send a message from LoRa® Breakout Module 2 (the right one) to LoRa® Breakout Module 1 (the left one):
+5. OK! Try to send a message from LoRa Breakout Module 2 (the right one) to LoRa Breakout Module 1 (the left one):
 
 ```sh
 at+send=lorap2p:1234567890
@@ -1055,39 +1055,6 @@ at+send=lorap2p:12345678901234567890
 Yehey! You have successfully finished your RAK5205 LPWAN Tracker Set Up. You are now ready to develop the coolest project that could potentially change the world.
 
 ## Miscellaneous
-
-### AT Commands for RAK5205 WisTrio LPWAN Tracker
-
-The purpose of this section is to demonstrate on how to configure the RAK5205 LPWAN Tracker thru the use of AT Commands via a Serial Port Tool running in your Windows PC. The list below shows the AT Commands available for use:
-
-| **AT Command**                                               | **Description**                                                                                                                                                                                                                                                                                                                                                                              |
-| ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `at+version`                                                   | Get the current firmware version number.                                                                                                                                                                                                                                                                                                                                                     |
-| `at+get_config=device:status`                                  | Get all information about the device’s hardware components and their current status.                                                                                                                                                                                                                                                                                                         |
-| `at+set_config=device:restart`                                 | After set, the device will restart.                                                                                                                                                                                                                                                                                                                                                          |
-| `at+set_config=device:boot`                                    | Let the device work in boot mode                                                                                                                                                                                                                                                                                                                                                             |
-| `at+run`                                                       | Stop boot mode and run as normal. It is valid when the device works in boot mode.                                                                                                                                                                                                                                                                                                            |
-| `at+set_config=device:sleep:X`                             | After setting, the device will go to sleep mode or wake up immediately. <br>• **0** - sleep <br>• **1** - wake up                                                                                                                                                                                                                                                                            |
-| `at+join`                                                      | Start to join LoRa® network                                                                                                                                                                                                                                                                                                                                                                  |
-| `at+send=lora:X:YYY`                                   | Send a customized data. <br>• **X -** LoRa® port r **YYY -** the data which you want to send. The limited length is 50 Bytes, and the data must be in HEX format.                                                                                                                                                                                                                            |
-| `at+set_config=lora:work_mode:X`                           | Set the work mode for LoRa®. <br>• **X** - 0: LoRaWAN®, 1: LoRaP2P, 2: Test Mode.                                                                                                                                                                                                                                                                                                            |
-| `at+set_config=lora:join_mode:X`                           | Set the join mode for LoRaWAN®. <br>• **X** - 0: OTAA, 1: ABP                                                                                                                                                                                                                                                                                                                                |
-| `at+set_config=lora:class:X`                               | Set the class for LoRa®. <br>• **X** - 0: Class A, 1: Class B, 2: Class C                                                                                                                                                                                                                                                                                                                    |
-| `at+set_config=lora:region:XXX`                            | Set the region for LoRa®. <br>• **XXX -** one of the following items: EU868 EU433, CN470, IN865, AU915, US915, KR920 and AS923.                                                                                                                                                                                                                                                              |
-| `at+set_config=lora:confirm:X`                             | Set the type of messages which will be sent out through LoRa®. <br>• **X** - 0: unconfirm, 1: confirm                                                                                                                                                                                                                                                                                        |
-| `at+set_config=lora:dev_eui:XXXX`                          | Set the device EUI for OTAA. <br>• **XXXX -** the Device EUI.                                                                                                                                                                                                                                                                                                                                |
-| `at+set_config=lora:app_eui:XXXX`                             | Set the application EUI for OTAA. <br>• **XXXX -** the Application EUI.                                                                                                                                                                                                                                                                                                                      |
-| `at+set_config=lora:app_key:XXXX`                             | Set the application key for OTAA. <br>• **XXXX -** the Application Key.                                                                                                                                                                                                                                                                                                                      |
-| `at+set_config=lora:dev_addr:XXXX`                            | Set the device address for ABP. <br>• **XXXX**: the Device Address.                                                                                                                                                                                                                                                                                                                          |
-| `at+set_config=lora:apps_key:XXXX`                            | Set the application session key for ABP. <br>• **XXXX -** the Application Session Key.                                                                                                                                                                                                                                                                                                       |
-| `at+set_config=lora:nwks_key:XXXX`                            | Set the network session key for ABP. <br>• **XXXX -** the Network Session Key.                                                                                                                                                                                                                                                                                                               |
-| `at+set_config=lora:ch_mask:X:Y`                      | Set a certain channel on or off. <br>• **X -** the channel number, and you can check which channel can be set before you set it. <br>• **Y** - 0: off, 1: on                                                                                                                                                                                                                                 |
-| `at+set_config=lora:adr:X`                                 | Open or close the ADR function of Node. <br>• **X -** 0: Close ADR; 1: Open ADR.                                                                                                                                                                                                                                                                                                       |
-| `at+set_config=lora:dr:X`                                   | Set the DR of Node. <br>• **X -** the number of DR. Generally, the value of X can be 0~5. More details, please check the LoRaWAN® 1.0.2 specification.                                                                                                                                                                                                                                 |
-| `at+get_config=lora:status `                                   | It will return all of the current information of LoRa®, except LoRa® channel.                                                                                                                                                                                                                                                                                                                |
-| `at+get_config=lora:channel`                                   | It will return the state of all LoRa® channels, then you can see which channel is closed and which channel is open very clearly                                                                                                                                                                                                                                                              |
-| `at+set_config=lorap2p:XXX:Y:Z:A:B:C` | Set the parameters for LoRa® P2P mode. This AT command is valid when the work mode is LoRaP2P. <br>• **XXX -** Frequency in Hz. <br>• **Y -** Spreading factor, \[6, 7, 8, 9, 10, 11, 12\]. <br>• **Z** - Bandwidth, 0: 125 kHz, 1: 250 kHz, 2: 500kHz. <br>• **A** - Coding Rate, 1: 4/5, 2: 4/6, 3: 4/7, 4: 4/8. <br>• **B -** Preamble Length, 5-65535. <br>• **C -** Power in dbm, 5-20. |
-| `at+send=lorap2p:XXX`                                    | Send data through LoRaP2P. This AT command is valid when it works in LoRaP2P mode. <br>• **XXX -** the data in HEX.                                                                                                                                                                                                                                                                          |
 
 ### Burning Bootloader into the Device
 
@@ -1299,7 +1266,7 @@ The assembly includes the following
 
 - **1x Enclosure**
 - **1x Installation Kit**
-- **1x LoRa® Antenna**
+- **1x LoRa Antenna**
 - **1x GPS Antenna**
 - **1x Supporting Plate**
 - **4x M16, 2x M12 Cable Gland Covers**
@@ -1364,15 +1331,15 @@ cable (right or below).
   caption="Fixing of RAK5205 in Enclosure"
 />
 
-**5.** Attach the LoRa® and GPS antenna at the bottom shell, in which the LoRa® antenna is pasted above the M12 Dome plug while the GPS is pasted on the shorter side as shown in the figure below.
+**5.** Attach the LoRa and GPS antenna at the bottom shell, in which the LoRa antenna is pasted above the M12 Dome plug while the GPS is pasted on the shorter side as shown in the figure below.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/roaftyivpwpzljam2c9x.jpg"
   width="45%"
-  caption="Attached GPS and LoRa® Antenna"
+  caption="Attached GPS and LoRa Antenna"
 />
 
-**6.**Install two M2.5x15 hexagonal standoffs.
+**6.** Install two M2.5x15 hexagonal standoffs.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/o6epx0kevfpme74vd0io.jpg"
@@ -1380,7 +1347,7 @@ cable (right or below).
   caption="Installed Hexagonal Standoffs"
 />
 
-**7.**Plug the connector of the battery into the
+**7.** Plug the connector of the battery into the
 socket of the PCB. (If you use solar panels,
 then connect the cable to the PCB). Then, fix the supporting plate on the
 standoff with two M2.5x4 screws.

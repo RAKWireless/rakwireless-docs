@@ -18,13 +18,13 @@ posted: 2/29/2020 10:30 AM
 * [Status Page](#status-page)
 * [Network](#network)
 * [Channel Plan](#channel-plan)
-* [LoRa® Network](#lora®-network)
+* [LoRa Network](#lora®-network)
 * [Services](#services)
 * [System](#system)
 
 This document describes in detail the functionality of the Web Management UI and how to use it for configuration and management of the Gateway. The interface builds on top of OpenWRT and all gateway products of the RAK72xx line share it.
 
-Also, it instructs on the configuration of the WAN interface, the LoRa® Packet Forwarder, and Gateway MQTT Bridge and more. It explains how to do system-monitoring, the update of the firmware, and reset the device. Last but not least, it provides information on using the built-in LoRa® Server.
+Also, it instructs on the configuration of the WAN interface, the LoRa Packet Forwarder, and Gateway MQTT Bridge and more. It explains how to do system-monitoring, the update of the firmware, and reset the device. Last but not least, it provides information on using the built-in LoRa Server.
 
 This guide functions as a reference for several products with similar functionality, thus some sections do not apply to certain products. When the word “Gateway” is used it refers to the three devices when the functionality is the same. In case there is a specific feature or difference, the name of the specific device will be mentioned.
 
@@ -82,33 +82,33 @@ Figure 2 below is the default page you will see every time you log into the gate
 
 The following are the parts of the Overview window:
 
-- **Received**: Shows the total number of uplink LoRa® messages received by the gateway.
-- **Transmitted**: Shows the total number of downlink LoRa® messages sent by the gateway.
-- **Active Nodes**: Shows the number of active LoRaWAN® Nodes within the LoRaWAN® Gateway coverage. (**Those that have sent no data for more than 10 min are discarded from the count**.)
-- **Busy Nodes**: Shows the number of busy nodes within the LoRaWAN® gateway coverage (**Nodes with an average message spacing of fewer than 60 seconds**.)
-- **Duty Cycle of the LoRa® Channel**: The graph represents the [Duty Cycle](https://www.thethingsnetwork.org/docs/lorawan/duty-cycle.html) load by frequency channel (**Data is kept for the last 12 hours**). The minimum resolution along the time axis is 60 seconds. Each value is an average of over 60 seconds. The values are color code – green to red, low to high.
+- **Received**: Shows the total number of uplink LoRa messages received by the gateway.
+- **Transmitted**: Shows the total number of downlink LoRa messages sent by the gateway.
+- **Active Nodes**: Shows the number of active LoRaWAN Nodes within the LoRaWAN Gateway coverage. (**Those that have sent no data for more than 10 min are discarded from the count**.)
+- **Busy Nodes**: Shows the number of busy nodes within the LoRaWAN gateway coverage (**Nodes with an average message spacing of fewer than 60 seconds**.)
+- **Duty Cycle of the LoRa Channel**: The graph represents the [Duty Cycle](https://www.thethingsnetwork.org/docs/lorawan/duty-cycle.html) load by frequency channel (**Data is kept for the last 12 hours**). The minimum resolution along the time axis is 60 seconds. Each value is an average of over 60 seconds. The values are color code – green to red, low to high.
 - **RSSI & SNR**: These graphs show how many of the total amount packets haw an RSSI/SNR value within a certain range. This is also shown in a pie chart to the side of the graphs.
 - **Uplink Traffic**: The graph shows the packet per minute rate as a function of time. Above the image, one can see the color-coding of the different Spreading Factors, where the actual height of the values is a sum of all the packets overall spreading factors for the time sample.
 - **Downlink Traffic**: The graph shows the packet per minute rate as a function of time. Above the image, one can see the color-coding of the different Spreading Factors, where the actual height of the values is a sum of all the packets overall spreading factors for the time sample. Additionally, you have sub-windows displaying the System, Memory, LoRa Network Server, Network (WAN). Cellular, and Wi-Fi information. Those have their separate sections and will be discussed in detail further down.
 - **System**: Information for the Hostname and model of the Gateway can be found here. There is also the Local Time and Uptime of the Gateway. Most importantly, you can see the Firmware version here.
 - **Memory**: There are bars in this section that shows how much the Total Available, Free, and Buffered Memory is.
-- **LoRa Network Server**: You can see the statistics for your network server. A number of associated LoRa® Nodes, Uplink, Downlink, Received Join, Rejected Join, those types of packets all have numerical values associated with them. Additionally, you can check the Uptime and whether you have the MQTT Integration running.
+- **LoRa Network Server**: You can see the statistics for your network server. A number of associated LoRa Nodes, Uplink, Downlink, Received Join, Rejected Join, those types of packets all have numerical values associated with them. Additionally, you can check the Uptime and whether you have the MQTT Integration running.
 - **Network**: The WAN status with its Type and Addressing parameters, together with the time since it has been connected are displayed here.
 - **Cellular**: The connection status of your cellular together with the corresponding Network ID and the parameters of your Sim (**ICCID, IMSI, Phone number**).
 - **Wireless**: The status of the Wi-Fi is displayed here. There are connectivity status, signal strength, and IP addressing parameters for both the AP and Client interfaces.
 - **Dynamic DNS**: You can oversee your Dynamic DNS configuration here, assuming you have one configured, otherwise there are example values.
 
 
-## 2. LoRaWAN® Packet Logger
+## 2. LoRaWAN Packet Logger
 
-This is where a log of the LoRa® messages is shown in real-time. There are several options for filtering as well as the possibility to download the statistics in a file. Additionally, there is a summary (**Total, Uplink, and Downlink**), below the filter fields.
+This is where a log of the LoRa messages is shown in real-time. There are several options for filtering as well as the possibility to download the statistics in a file. Additionally, there is a summary (**Total, Uplink, and Downlink**), below the filter fields.
 
 By clicking on a particular packet, you get an expanded window with the detailed metadata for it as well as some RF parameters. Additionally, there is a graph area below the packet list that displays the “**Air Time**” per node and also the load per frequency channel.
 
 <rk-img
   src="/assets/images/knowledge-hub/user-manual/web-management-platform/3.packet-logger-view.jpg"
   width="100%"
-  caption="LoRaWAN® Packet Logger View of the WEB Management Platform."
+  caption="LoRaWAN Packet Logger View of the WEB Management Platform."
 />
 
 You can choose to filter the packets by one of the following:
@@ -119,7 +119,7 @@ You can choose to filter the packets by one of the following:
 
 ## 3. System Log
 
-The complete system logs. It is useful mainly for debugging purposes. It reports both system information (especially useful when booting up the Gateway) and actual data from LoRa® frames coming from end nodes. The button for pausing the auto-refresh of the log is in the top right.
+The complete system logs. It is useful mainly for debugging purposes. It reports both system information (especially useful when booting up the Gateway) and actual data from LoRa frames coming from end nodes. The button for pausing the auto-refresh of the log is in the top right.
 
 
 <rk-img
@@ -140,7 +140,7 @@ This section shows only information about traffic on different ports, addresses,
 
 # Network
 
-This section contains all the settings that affect the connectivity of the Gateway to the backbone network (Internet, Cloud, etc.) In essence, these settings all affect the backhaul connectivity, over which the LoRa® data is being relayed.
+This section contains all the settings that affect the connectivity of the Gateway to the backbone network (Internet, Cloud, etc.) In essence, these settings all affect the backhaul connectivity, over which the LoRa data is being relayed.
 
 It contains the following sub-sections: **WAN Interface**, **Cellular Interface** (when the hardware is present), **Wi-Fi**, **Firewall**, **Diagnostics**, and **Ping Watchdog**.
 
@@ -225,7 +225,7 @@ You can enter either an URL or an IP Address in the text box and execute the com
 Ping Watchdog monitors the quality of network links by constantly pinging the specified IP Address or Domain name on the specified uplink network interface. When network link failures are detected, scheduled measures are taken automatically. Those include: Interface restart, Interface priority reduction, Device restart, etc.
 
 :::tip 📝 NOTE 
-Reducing the priority of an uplink interface only works when the LoRaWAN® Gateway uses both Ethernet and Cellular as uplink methods at the same time.
+Reducing the priority of an uplink interface only works when the LoRaWAN Gateway uses both Ethernet and Cellular as uplink methods at the same time.
 :::
 
 - WAN interface represents the Ethernet interface and WWAN represents the Cellular.
@@ -247,10 +247,10 @@ Reducing the priority of an uplink interface only works when the LoRaWAN® Gatew
 
 # Channel Plan
 
-This is a very important section of the Web UI. Here you set the frequency of operation of the Gateway. It is these frequency channels that it will be monitoring and both receiving from and transmitting to LoRa® nodes.
+This is a very important section of the Web UI. Here you set the frequency of operation of the Gateway. It is these frequency channels that it will be monitoring and both receiving from and transmitting to LoRa nodes.
 
-- For your convenience, there is a drop-down list at the top of the page where you can choose one of several pre-set Regions. This will populate the Multi-SF LoRa® Channels with the mandatory channels (under the LoRa Alliance Regional Parameters).
-- In case you want to use a custom set, you can enter a channel’s frequency (in MHz) in the text box and add it via the blue button. This applies to the Standard LoRa® Channel and FSK Channel as well (normally you would have one per Concentrator.
+- For your convenience, there is a drop-down list at the top of the page where you can choose one of several pre-set Regions. This will populate the Multi-SF LoRa Channels with the mandatory channels (under the LoRa Alliance Regional Parameters).
+- In case you want to use a custom set, you can enter a channel’s frequency (in MHz) in the text box and add it via the blue button. This applies to the Standard LoRa Channel and FSK Channel as well (normally you would have one per Concentrator.
 - You can also “**Switch to Advanced Mode**”, where you have more granular control per concentrator and per radio. (up to 2 concentrators and 2 radios per concentrator for up to 4 total radios).
 
 :::tip 📝 NOTE
@@ -270,9 +270,9 @@ If you have 2 Concentrator modules as the Outdoor Gateways allow the maximum num
   caption="Channel Plan – Advanced Mode"
 />
 
-# LoRa® Network
+# LoRa Network
 
-All the LoRa® Settings reside in this section. Its subsections change depending on what “**Mode**” you choose to work-in in the “**Network Settings**” subsection. As the three modes (**Network Server**, **Basic Station**, and **Packet Forwarder**) are very different, we will go through each one in detail.
+All the LoRa Settings reside in this section. Its subsections change depending on what “**Mode**” you choose to work-in in the “**Network Settings**” subsection. As the three modes (**Network Server**, **Basic Station**, and **Packet Forwarder**) are very different, we will go through each one in detail.
 
 :::tip 📝 NOTE
 The one thing that is the same for all of the modes is the "**LoRaWAN Network Settings**" area at the top of the "**Network Settings**" sub-section. It is in this area where the Gateway EUI and the Mode drop-down menu reside.
@@ -293,7 +293,7 @@ This page changes depending on which of the 3 options for the Mode you have chos
 
 ### Network Server
 
-As this Mode provides a fully functioning LoRa® Server instance, there is a complete set of features to configure.
+As this Mode provides a fully functioning LoRa Server instance, there is a complete set of features to configure.
 
 * **Region**: It is only displayed, can’t be changed as this is done in the “Channel Plan” menu.
 * **Enable ADR**: Adaptive Data Rate, turned on/off.
@@ -339,7 +339,7 @@ This Mode utilizes the **Semtech Legacy Packet-forwarder**. An important thing t
 
 **1. General Setup - Semtech UDP GWMP Protocol**
 
-This is something that every Gateway supports, that has been there from the very beginning of the LPWAN days. Just a general means of forwarding your LoRa® frame data over UDP to a LoRa® Server instance. The most popular/well-known setup of this is to use it together with TTN (The Things Network), which was more or less what made LoRa® popular back in 2016. This can naturally be pointed toward any LoRa® Server, not necessarily TTN.
+This is something that every Gateway supports, that has been there from the very beginning of the LPWAN days. Just a general means of forwarding your LoRa frame data over UDP to a LoRa Server instance. The most popular/well-known setup of this is to use it together with TTN (The Things Network), which was more or less what made LoRa popular back in 2016. This can naturally be pointed toward any LoRa Server, not necessarily TTN.
 
 <rk-img
   src="/assets/images/knowledge-hub/user-manual/web-management-platform/18.semtech-protocol.jpg"
@@ -349,21 +349,21 @@ This is something that every Gateway supports, that has been there from the very
 
 Take note of the following parameters. Refere to Figure 18 above.
 
-* **Gateway EUI**: The value in this field is necessary for registering your gateway with any LoRa® Network Server.
+* **Gateway EUI**: The value in this field is necessary for registering your gateway with any LoRa Network Server.
 * **Protocol**: As mentioned, this is either a Packet forwarder or an MQTT bridge. (The former is chosen for the purpose of going through the settings.)
-* **Server Address**: The URL of the LoRa® Server. (In the example: the EU TTN address)
-* **Server Port Up/Down**: The ports of the LoRa® Server that are going to be used for inbound and outbound traffic.
+* **Server Address**: The URL of the LoRa Server. (In the example: the EU TTN address)
+* **Server Port Up/Down**: The ports of the LoRa Server that are going to be used for inbound and outbound traffic.
 * **Push Timeout** (ms): Time delay for the server response after sending uplink data.
 * **Statistic Interval** (s): How often statistics are pushed to the server.
 * **Keepalive Interval** (s): This exists to make sure that periodically data is pushed via the Gateway to make sure the server is aware that the Gateway is online. (For example, the MQTT bridge will unsubscribe from the topics after certain period of inactivity.)
-* **Automatic Data Recovery**: This is an important feature that allows LoRa® frames to be stored on the SD card (provided there is one in the slot), if there is no connection to the LoRa® Network Server. Upon restoring connectivity, these buffed messages will be forwarded, so no data will be lost. This is done in blocks of 8 (FIFO), until all are cleared from the buffer.
+* **Automatic Data Recovery**: This is an important feature that allows LoRa frames to be stored on the SD card (provided there is one in the slot), if there is no connection to the LoRa Network Server. Upon restoring connectivity, these buffed messages will be forwarded, so no data will be lost. This is done in blocks of 8 (FIFO), until all are cleared from the buffer.
 * **Auto-restart Threshold**: A number that defines how many times the Keepalive Interval can expire before the Packet forwarder restarts.
-* **Is LoRaWAN Network**: If you choose “NO” here you will enable frames that are not compliant with the LoRaWAN® specification to be forwarded (in case you have your proprietary LoRa® Server solution). By default, “YES” is selected and non LoRaWAN® packets are dropped.
+* **Is LoRaWAN Network**: If you choose “NO” here you will enable frames that are not compliant with the LoRaWAN specification to be forwarded (in case you have your proprietary LoRa Server solution). By default, “YES” is selected and non LoRaWAN packets are dropped.
 * **Log Level**: You can choose from 5 different log levels (Error/Warning/Notice/Info/Debug). This will affect System Log. From Errors only to full system log for debugging.
 
 **2. General Setup - LoRa Gateway MQTT Bridge**
 
-The Gateway is capable of working with an external LoRa® Server, where the MQTT Broker is pointed toward an external Server or the Built-in Server. For this purpose, there are several tabs with their corresponding parameters to be filled.
+The Gateway is capable of working with an external LoRa Server, where the MQTT Broker is pointed toward an external Server or the Built-in Server. For this purpose, there are several tabs with their corresponding parameters to be filled.
 
 <rk-img
   src="/assets/images/knowledge-hub/user-manual/web-management-platform/19.lora-mqtt-bridge.jpg"
@@ -374,7 +374,7 @@ The Gateway is capable of working with an external LoRa® Server, where the MQTT
 **General Setup**: The is where you configure the behavior of the MQTT Bridge.
 
 1. In **LoRa Network Server Type**, you have four (4) options:
-- **Built-in LoRa® Network Server** – pointing to the Built-in Server
+- **Built-in LoRa Network Server** – pointing to the Built-in Server
 - **ChirpStack 2.x** – for MQTT 2.x Broker (JSON) endpoints
 - **ChirpStack 3.x** – for MQTT 3.x Broker (PROTOBUF) endpoints
 - **ChirpStack 3.x** – for MQTT 3x 3.x Broker (JSON-V3) endpoint
@@ -392,17 +392,17 @@ The Gateway is capable of working with an external LoRa® Server, where the MQTT
 12. **Password**: The password, if one is use, leave blank if there isn’t one. Can be randomly generated with the green arrows to the side of the field.
 13. **SSL/TLS Mode**: By default, this is Disabled. You can choose one of 3 other modes: **CA signed server certificate**, **Self-signed server certificate**, **Self-signed server**, & **Client certificate**.
 14. **TLS Version**: The version of the TLS protocol to be used. Options are **TLSv1**, **TLSv1.1**, **TLSv1.2**.
-15. **CA Certificate, Client Certificate, Client Key, Client Key Passphrase**: You can have one or all of these to set up depending on the SSL/TLS Mode chosen. These are to be generated via the appropriate algorithm and distributed between the MQTT Broker and the LoRa® Server Please refer to the MQTT Bridge with TLS Encryption Configuration Manual for details on how to edit the settings in order for the Gateway to work as an MQTT Bridge with TLS Encryption.
+15. **CA Certificate, Client Certificate, Client Key, Client Key Passphrase**: You can have one or all of these to set up depending on the SSL/TLS Mode chosen. These are to be generated via the appropriate algorithm and distributed between the MQTT Broker and the LoRa Server Please refer to the MQTT Bridge with TLS Encryption Configuration Manual for details on how to edit the settings in order for the Gateway to work as an MQTT Bridge with TLS Encryption.
 16. **Log Level**: The granularity of the log information is chosen from the following levels: **ERROR**, **INFO** (default), **DEBUG**, **TRACE**.
 
-**MQTT Topic Template Setup**: MQTT Topic Template SetupThere are two types of templates, depending on which LoRa® Network Server Type you choose.
+**MQTT Topic Template Setup**: MQTT Topic Template SetupThere are two types of templates, depending on which LoRa Network Server Type you choose.
 
 - ChirpStack 2.x Topic Template
 
 <rk-img
   src="/assets/images/knowledge-hub/user-manual/web-management-platform/20.mqtt-setup1.jpg"
   width="100%"
-  caption="LoRa® MQTT Bridge – MQTT Topic Template Setup 1"
+  caption="LoRa MQTT Bridge – MQTT Topic Template Setup 1"
 />
 
 - ChirpStack 3.x Topic Template, Built-in Server
@@ -410,7 +410,7 @@ The Gateway is capable of working with an external LoRa® Server, where the MQTT
 <rk-img
   src="/assets/images/knowledge-hub/user-manual/web-management-platform/21.mqtt-setup2.jpg"
   width="100%"
-  caption="LoRa® MQTT Bridge – MQTT Topic Template Setup 2"
+  caption="LoRa MQTT Bridge – MQTT Topic Template Setup 2"
 />
 
 
@@ -466,7 +466,7 @@ There is a dedicated page for the status of your Built-in Network Server. You ge
 
 ## 3. Gateway
 
-In this section you can add and External Gateways to work with your LoRa® Network Server. This way packet forwarded by the listed Gateways will be forwarded as though they were within the range of this device and processed by the Application Server.
+In this section you can add and External Gateways to work with your LoRa Network Server. This way packet forwarded by the listed Gateways will be forwarded as though they were within the range of this device and processed by the Application Server.
 
 :::tip 📝 NOTE
 By default, you do not need to add the current Gateway as the Network Server works on it anyway, even though it is not listed.
@@ -491,7 +491,7 @@ This section allows you to configure the Gateway to use the Built-in Server to a
 
 **1. General Setup**
 
-These setting are the same as for the LoRa® Gateway MQTT Bridge, refer to its section [LoRa® Network](#lora®-network) for more information.
+These setting are the same as for the LoRa Gateway MQTT Bridge, refer to its section [LoRa Network](#lora®-network) for more information.
 
 **2. MQTT Topic**
 
@@ -505,7 +505,7 @@ Here you can get information on the topic templates: Uplink MQTT Topic, Downlink
 
 ## 4. Application
 
-In order for End-node data to be processed by the Built-in LoRa® Server you need to have an Application under which you register the device. This will allow a node to join the network and you can decrypt its data payload.
+In order for End-node data to be processed by the Built-in LoRa Server you need to have an Application under which you register the device. This will allow a node to join the network and you can decrypt its data payload.
 
 The first time you access this section there will be no applications created by default. Enter a name in the field, choose one of the two type from the drop-down menu (more on this further down) and press the “**Add**” button.
 
@@ -600,7 +600,7 @@ You need to enter a valid **Device EUI** in the text box (16 HEX symbols) and pr
 The configurable parameters are in this tab, the other tabs available are only for monitoring purposes.
 
 - **Device name**: A distinguishable name for your device.
-- **Class**: LoRa® device class (both A and C are supported, B will be available in future updates).
+- **Class**: LoRa device class (both A and C are supported, B will be available in future updates).
 - **Join mode**: The type of authentication method (both OTAA and ABP are supported).
 - **Frame-counter Width**: The option for 16 and 32 bit exists.
 - **Enable LPTP**: A proprietary protocol that allows for jumbo packets to be transferred. If such a packet arrives the Application Server will buffer it and assemble it once all the portions are available.
@@ -628,7 +628,7 @@ The user is given the option to create dummy downlink frames in order to test. O
 
 **4. Live Device Data**
 
-This is perhaps the most useful tool in the Application Server interface, as it allows the user to monitor the LoRa® traffic in real time. By clicking on a given packet one can expand its windows and access detailed information containing both meta data and payload. In case the node is transmitting in LPP the payload is decrypted and decoded and one can see the information (in the case of Figure 36 there is some environmental data – temperature, barometric pressure, etc.)
+This is perhaps the most useful tool in the Application Server interface, as it allows the user to monitor the LoRa traffic in real time. By clicking on a given packet one can expand its windows and access detailed information containing both meta data and payload. In case the node is transmitting in LPP the payload is decrypted and decoded and one can see the information (in the case of Figure 36 there is some environmental data – temperature, barometric pressure, etc.)
 
 <rk-img
   src="/assets/images/knowledge-hub/user-manual/web-management-platform/36.ns-live-device.jpg"
@@ -649,7 +649,7 @@ One last thing to note is that there is an additional page to the Device data, w
 
 ## 5. Global Integration
 
-This feature allows for integration of the Built-in LoRa® Application Server with an External MQTT broker.
+This feature allows for integration of the Built-in LoRa Application Server with an External MQTT broker.
 
 <rk-img
   src="/assets/images/knowledge-hub/user-manual/web-management-platform/38.ns-global-integration.jpg"
@@ -759,7 +759,7 @@ This is where you change the administration password of the device.
 
 ### 3. License
 
-This is the status of your license. You can see the Type, Expiration date, Number of Supported Nodes, and the Number of External Gateways Supported. There is a field to ender the License data in case you are upgrading. All Gateways include a free with the parameters as in Figure 24 in the [LoRa® Network](#lora®-network) section.
+This is the status of your license. You can see the Type, Expiration date, Number of Supported Nodes, and the Number of External Gateways Supported. There is a field to ender the License data in case you are upgrading. All Gateways include a free with the parameters as in Figure 24 in the [LoRa Network](#lora®-network) section.
 
 <rk-img
   src="/assets/images/knowledge-hub/user-manual/web-management-platform/47.license-tab.jpg"

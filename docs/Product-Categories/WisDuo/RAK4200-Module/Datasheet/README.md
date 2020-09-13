@@ -18,13 +18,13 @@ prev: ../Overview/
 
 ### Description
 
-**RAK4200 WisDuo LPWAN Module** includes an STM32L071KB MCU and an SX1276 LoRa® chip. It has Ultra-Low Power Consumption of 1.5uA in sleep mode and high LoRa® output power up to 19dBm max in work mode.
+**RAK4200 WisDuo LPWAN Module** includes an STM32L071KB MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumption of 1.5uA in sleep mode and high LoRa output power up to 19dBm max in work mode.
 
-The module complies with LoRaWAN® 1.0.2 protocols. It also supports LoRa® Point to Point communications. The module is suitable for various applications that require long range data acquisition and low power consumption.
+The module complies with LoRaWAN 1.0.2 protocols. It also supports LoRa Point to Point communications. The module is suitable for various applications that require long range data acquisition and low power consumption.
 
 ### Features
 
-* LoRa® module for Smart City, Smart Agriculture, Smart Industry
+* LoRa module for Smart City, Smart Agriculture, Smart Industry
 * **Compact Form Factor**: 15 x 15.5 x 2.5 mm
 * 20 Pin Stamp Pad for PCB SMT mounting
 * **I/O ports**: UART/I2C/GPIO
@@ -114,7 +114,7 @@ The hardware specification is categorized into five parts. It covers the pinouts
 
 ##### Operating Frequencies
 
-The board supports the following LoRaWAN® frequency channels shown in the table below. The frequency parameter is easy to configure as you go through the device configuration setup. RAK4200 has two different types based on its frequency: RAK4200(L) for low frequency and RAK4200(H) for high frequency.
+The board supports the following LoRaWAN frequency channels shown in the table below. The frequency parameter is easy to configure as you go through the device configuration setup. RAK4200 has two different types based on its frequency: RAK4200(L) for low frequency and RAK4200(H) for high frequency.
 
 |     **Module**      |  **Region**   | **Frequency (MHz)** |
 | :-----------------: | :-----------: | :-----------------: |
@@ -143,9 +143,9 @@ The following figures shown below are the average current consumptions based on 
    * Oscilloscope
    * RAK4200 WisDuo LPWAN Module
 
-**LoRa® Packet Sending**
+**LoRa Packet Sending**
 
-The RAK4200 WisDuo LPWAN Module takes **53.155 ms** to send a LoRa® packet which consumes **68.4 mA** of current.
+The RAK4200 WisDuo LPWAN Module takes **53.155 ms** to send a LoRa packet which consumes **68.4 mA** of current.
 
    * **Sending Time**: 53.155 ms
    * **Current consumption**: 68.4 mA
@@ -154,12 +154,12 @@ The RAK4200 WisDuo LPWAN Module takes **53.155 ms** to send a LoRa® packet whic
 <rk-img
   src="/assets/images/wisduo/rak4200-module/datasheet/oscilloscope-screen-capture-of-lora®-packet-sending.jpg"
   width="75%"
-  caption="Oscilloscope Screen Capture of LoRa® Packet Sending"
+  caption="Oscilloscope Screen Capture of LoRa Packet Sending"
 />
 
-**LoRa® Packet Receiving**
+**LoRa Packet Receiving**
 
-The RAK4200 WisDuo LPWAN Module takes **46.179 ms** to receive a LoRa® packet which consumes **17.1 mA** of current.
+The RAK4200 WisDuo LPWAN Module takes **46.179 ms** to receive a LoRa packet which consumes **17.1 mA** of current.
 
    * **Receiving Time**: 46.179 ms
    * **Current consumption**: 17.1 mA
@@ -167,7 +167,7 @@ The RAK4200 WisDuo LPWAN Module takes **46.179 ms** to receive a LoRa® packet w
 <rk-img
   src="/assets/images/wisduo/rak4200-module/datasheet/oscilloscope-screen-capture-of-lora®-packet-receiving.jpg"
   width="75%"
-  caption="Oscilloscope Screen Capture of LoRa® Packet Receiving"
+  caption="Oscilloscope Screen Capture of LoRa Packet Receiving"
 />
 
 **Sleep Mode**

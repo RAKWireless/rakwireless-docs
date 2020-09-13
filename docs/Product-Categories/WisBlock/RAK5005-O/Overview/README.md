@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak5005-o/datasheet/rak5005-0-illustration.png
+rak_img: /assets/images/wisblock/rak5005-o/overview/RAK5005-O_home.png
 rak_desc: RAK5005-O is the base board that connects all WisBlock modules together. It creates the power supply for attached WisBlock Core, WisBlock Sensor and WisBlock IO modules.
 rak_grp: [wisblock, wisbase]
 prev: ../../

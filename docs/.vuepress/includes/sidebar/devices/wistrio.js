@@ -47,6 +47,14 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
+    },
+    {
+      title: 'AT Command Manual',
+      path: '/Product-Categories/WisTrio/RAK5010/AT-Command-Manual/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
     }
   ],
   '/Product-Categories/WisTrio/RAK5010-M/': [{
@@ -60,6 +68,14 @@ module.exports = {
     {
       title: 'Quick Start Guide',
       path: '/Product-Categories/WisTrio/RAK5010-M/Quickstart/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'AT Command Manual',
+      path: '/Product-Categories/WisTrio/RAK5010-M/AT-Command-Manual/',
       collapsable: false,
       nested: true,
       download: true,
@@ -89,6 +105,14 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
+    },
+    {
+      title: 'AT Command Manual',
+      path: '/Product-Categories/WisTrio/RAK7205-5205/AT-Command-Manual/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
     }
   ],
   '/Product-Categories/WisTrio/RAK8212/': [{
@@ -110,6 +134,14 @@ module.exports = {
     {
       title: 'Datasheet',
       path: '/Product-Categories/WisTrio/RAK8212/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'AT Command Manual',
+      path: '/Product-Categories/WisTrio/RAK8212/AT-Command-Manual/',
       collapsable: false,
       nested: true,
       download: true,

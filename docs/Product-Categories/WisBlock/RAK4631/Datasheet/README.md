@@ -22,9 +22,9 @@ tags:
 
 The RAK4631 WisBlock Core module, is a RAK4630 stamp module with an expansion PCB and connectors compatible with the RAK5005-O baseboard. It allows an easy way to access to the pins of the RAK4630 module in order to simplify development and testing processes.
 
-The module itself comprises a RAK4630 as its main component. The RAK4630 is a combination of a nRF52840 MCU and an SX1262 LoRa® chip, it features ultra-low power consumption of 2.0uA during sleep mode, high LoRa® output power up to 22dBm during transmission mode, and the BLE interface with output power up to 4dBm.
+The module itself comprises a RAK4630 as its main component. The RAK4630 is a combination of a nRF52840 MCU and an SX1262 LoRa chip, it features ultra-low power consumption of 2.0uA during sleep mode, high LoRa output power up to 22dBm during transmission mode, and the BLE interface with output power up to 4dBm.
 
-The module complies with LoRaWAN® 1.0.2 protocols, it also supports LoRa® point to point communication.
+The module complies with LoRaWAN 1.0.2 protocols, it also supports LoRa point to point communication.
 
 The RF communication characteristic of the module (Lora® + BLE) makes it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors, and monitors, etc.).
 
@@ -51,8 +51,8 @@ The overview covers the RAK4631 board overview and the mounting mechanics of the
 #### Board Overview
 
 <rk-img
-  src="/assets/images/wisblock/rak4631/datasheet/RAK4631-overview.png"
-  width="70%"
+  src="/assets/images/wisblock/rak4631/datasheet/board-overview-noflash.png"
+  width="60%"
   caption="Board Realistic View"
 />
 
@@ -132,7 +132,7 @@ The RAK4631 module supports the LoRaWAN bands shown in Table below. When buying 
 
 #### Schematic Diagram
 
-The following section will describe the breakout module schematic. It includes WisConnector, core module, SWD interface, power up automatic reset, and memory flash.
+The following section will describe the breakout module schematic. It includes WisConnector, core module, SWD interface and power up automatic reset.
 
 ##### WisConnector 
 
@@ -197,7 +197,7 @@ The breakout module allows the RAK4630 stamp module’s pinout to be transferred
 Figure 5 shows the pin order of the WisConnector, which is located in the bottom layer of the module.
 
 <rk-img
-  src="/assets/images/wisblock/rak4631/datasheet/wisconnector-pin-order.jpg"
+  src="/assets/images/wisblock/rak4631/datasheet/wisconnector-pin-order.png"
   width="25%"
   caption="WisConnector pin order"
 />
@@ -255,8 +255,8 @@ The breakout module itself has a RAK4630 at its core, Figure 6 shows the core mo
 | 40 | P0.05/AIN3 | 
 | 41 | P0.04/AIN2 | 
 | 42 | GND | 
-| 43 | VDD_NRF |  -->
-| 44 | VBAT_NRF | 
+| 43 | VDD_NRF |  
+| 44 | VBAT_NRF | -->
 
 
 ##### SWD Interface
@@ -279,11 +279,12 @@ The breakout module has a power-up automatic reset circuit, Figure 8 shows the a
   caption="Power up automatic reset"
 />
 
-##### Flash
+
+<!-- ##### Flash
 
 The RAK4630 module comprises a flash memory controlled by the SPI interface. The memory size is 8 MB
 <rk-img
   src="/assets/images/wisblock/rak4631/datasheet/flash.jpg"
   width="50%"
   caption="Flash Memory"
-/>
+/> -->

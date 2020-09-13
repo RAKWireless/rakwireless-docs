@@ -25,15 +25,15 @@ There is a total of 3 configuration options:
 2. **RAK7244C** - this is the Cellular Version that includes the Raspberry Pi 4, RAK2245, and the RAK2013 Cellular Pi Hat
 3. **RAK7244P** - · this version allows for powering the gateway via PoE by adding the RAK9003 Pi HAT to the base configuration (RPi 4 + RAK2245 + RAK9003)
 
-The built-in RAK2245 Pi HAT uses the SX1301 RF front-end chip from Semtech®, which is a powerful LoRa® digital processing engine. It is able to receive up to 8 LoRa® packets simultaneously sent with different spreading factors on different channels and available in multiple variants so it can be used for all LoRa Allience® frequency bands. This unique capability allows for innovative network architectures to be implemented, that are advantageous over other short-range systems. The built-in RAK2013 Cellular Pi HAT in the RAK7244C, is based on the EG95 from Quectel, which is an LTE CAT4 module optimized specifically for M2M and IoT Applications. The RAK7244P is particularly suitable for deployment in cases where there is existing networking infrastructure and PoE is provisioned.
+The built-in RAK2245 Pi HAT uses the SX1301 RF front-end chip from Semtech®, which is a powerful LoRa digital processing engine. It is able to receive up to 8 LoRa packets simultaneously sent with different spreading factors on different channels and available in multiple variants so it can be used for all LoRa Allience® frequency bands. This unique capability allows for innovative network architectures to be implemented, that are advantageous over other short-range systems. The built-in RAK2013 Cellular Pi HAT in the RAK7244C, is based on the EG95 from Quectel, which is an LTE CAT4 module optimized specifically for M2M and IoT Applications. The RAK7244P is particularly suitable for deployment in cases where there is existing networking infrastructure and PoE is provisioned.
 
-The RAK7244 WisGate Developer D4 Gateway is ideal for prototyping, proof-of-concept demonstrations or for the evaluation on future deployment scenarios. It includes a ready to use Firmware based on Raspbian OS, that makes it possible to connect the Gateway to any standard LoRaWAN® Server. It is developer friendly as the large Raspbian OS community is a well-established one. It is especially suited to addressing a variety of applications like Smart Grids, Intelligent Farms and other IoT Enterprise applications.
+The RAK7244 WisGate Developer D4 Gateway is ideal for prototyping, proof-of-concept demonstrations or for the evaluation on future deployment scenarios. It includes a ready to use Firmware based on Raspbian OS, that makes it possible to connect the Gateway to any standard LoRaWAN Server. It is developer friendly as the large Raspbian OS community is a well-established one. It is especially suited to addressing a variety of applications like Smart Grids, Intelligent Farms and other IoT Enterprise applications.
 
 ### Features
 
 - Refreshed Case design with a new MCU (**Raspberry Pi4**)
-- Preassembled, fully functioning **LoRaWAN®™ Gateway**
-- Full LoRaWAN®™ Stack support (**version 1.0.2**)
+- Preassembled, fully functioning **LoRaWAN Gateway**
+- Full LoRaWAN Stack support (**version 1.0.2**)
 - Supports for **8 channels** and spreading factors (SF7-SF12)
 - Frequency band support: EU433, CN470, RU864, IN865, EU868, US915, AU915, KR920, AS923
 - Tx Power: **27 dBm Max**
@@ -76,7 +76,7 @@ The outer dimensions of Casing are 92 x 68.3 x 53.5 mm as shown below. They are 
 
 ##### RAK7244
 
-The figure below summarizes the basic building blocks of RAK7244. The RAK2245 is an essential part of any of the RAK7244 models as it provides all LoRaWAN® connectivity. It receives and transmits LoRa® Frames and takes care of modulating/demodulating the signals among others. The processing of the LoRa® Frames as well as higher level protocol related tasks is done by the embedded host system (Raspberry Pi). Received and processed LoRa® Frames are being sent to a LoRaWAN® Server. The segmentation of protocol related tasks is outside the scope of this document.
+The figure below summarizes the basic building blocks of RAK7244. The RAK2245 is an essential part of any of the RAK7244 models as it provides all LoRaWAN connectivity. It receives and transmits LoRa Frames and takes care of modulating/demodulating the signals among others. The processing of the LoRa Frames as well as higher level protocol related tasks is done by the embedded host system (Raspberry Pi). Received and processed LoRa Frames are being sent to a LoRaWAN Server. The segmentation of protocol related tasks is outside the scope of this document.
 
 <rk-img
   src="/assets/images/wisgate/rak7244/datasheet/system-structure/h7nold55ednaywcpmhuv.png"
@@ -86,7 +86,7 @@ The figure below summarizes the basic building blocks of RAK7244. The RAK2245 is
 
 ##### RAK7244P
 
-The figure below summarizes the basic building blocks of RAK7244P. It has the same functionality as far as LoRaWAN® goes as RAK7244. In addition, there is the possibility to power the Gateway using a PoE 802.3 af compatible source (42-57VDC). This is made possible by the RAK9003 PoE HAT
+The figure below summarizes the basic building blocks of RAK7244P. It has the same functionality as far as LoRaWAN goes as RAK7244. In addition, there is the possibility to power the Gateway using a PoE 802.3 af compatible source (42-57VDC). This is made possible by the RAK9003 PoE HAT
 <rk-img
   src="/assets/images/wisgate/rak7244/datasheet/system-structure/f4m73eapflxbk31bjash.png"
   width="80%"
@@ -95,7 +95,7 @@ The figure below summarizes the basic building blocks of RAK7244P. It has the sa
 
 ##### RAK7244C
 
-The figure below summarizes the basic building blocks of RAK7244C. It has the same functionality as far as LoRaWAN® goes as RAK7244. Its backhaul capabilities, however are enhanced, with the additional of the RAK2013 Cellular HAT. This allows the Gateway to use its LTE modem to forward data to the Cloud.
+The figure below summarizes the basic building blocks of RAK7244C. It has the same functionality as far as LoRaWAN goes as RAK7244. Its backhaul capabilities, however are enhanced, with the additional of the RAK2013 Cellular HAT. This allows the Gateway to use its LTE modem to forward data to the Cloud.
 
 <rk-img
   src="/assets/images/wisgate/rak7244/datasheet/system-structure/wmishmfyonwnd31mgbph.png"
@@ -147,7 +147,7 @@ For detailed information about the RAK9003 Pi Hat, go to the [RAK9003 PoE Hat Da
 
 ##### RAK2245 Pi Hat
 
-The **RAK2245 Pi HAT** is an LPWAN Gateway Concentrator Module based on the Pi HAT standard, and can be mounted to Pi board with 40-pin connector. The image below shows the hardware structure of the LoRa® portion which describes the integration between RAK2245 and Raspberry Pi 4.
+The **RAK2245 Pi HAT** is an LPWAN Gateway Concentrator Module based on the Pi HAT standard, and can be mounted to Pi board with 40-pin connector. The image below shows the hardware structure of the LoRa portion which describes the integration between RAK2245 and Raspberry Pi 4.
 
 <rk-img
   src="/assets/images/wisgate/rak7244/datasheet/hardware-structure/rotyeaxfbqr7ngh9xfxm.jpg"
@@ -173,7 +173,7 @@ For detailed information about the RAK2013 Pi HAT, Go to the [RAK2013 Pi HAT Dat
 
 ##### Operating Frequencies
 
-All models of the Developer Gateway support all LoRaWAN® bands.
+All models of the Developer Gateway support all LoRaWAN bands.
 
 | **Region**    | **Frequency (Mhz)** |
 | ------------- | ------------------- |
@@ -250,12 +250,12 @@ The Quectel EG95 is part of the LTE CAT4 module series that are specially optimi
 
 ##### LoRa
 
-The LoRa® Antenna with RP-SMA female connector is shown in the image below:
+The LoRa Antenna with RP-SMA female connector is shown in the image below:
 
 <rk-img
   src="/assets/images/wisgate/rak7244/datasheet/antenna-specifications/ve8scbrbhdlcdaxa8x43.png"
   width="50%"
-  caption="LoRa® Antenna Overview"
+  caption="LoRa Antenna Overview"
 />
 
 ###### Antenna Dimension
@@ -265,7 +265,7 @@ The figure below shows the antenna's mechanical dimension.
 <rk-img
   src="/assets/images/wisgate/rak7244/datasheet/antenna-specifications/fggmm4b6rk79c5jj9xot.png"
   width="50%"
-  caption="LoRa® Antenna Dimension"
+  caption="LoRa Antenna Dimension"
 />
 
 ###### Antenna Parameters

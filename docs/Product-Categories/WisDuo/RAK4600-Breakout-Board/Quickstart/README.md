@@ -23,7 +23,7 @@ Before going through each and every step in the installation guide of the RAK460
 
 #### Hardware Tools
 
-- RAK4600 Breakout Board (provided) – including **LoRa® and BLE antenna**, **Dupont lines (9x)** and **4 pin headers (2x)**
+- RAK4600 Breakout Board (provided) – including **LoRa and BLE antenna**, **Dupont lines (9x)** and **4 pin headers (2x)**
 - Micro USB Cable (provided)
 - Gateway in Range, for testing (not provided)
 - Windows PC (not provided)
@@ -44,7 +44,7 @@ Before going through each and every step in the installation guide of the RAK460
 To interface with the RAK4600 Breakout Board with your Windows Machine, you need to download the RAK Serial Port Tool **[here](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).**
 
 ::: warning ⚠️ WARNING
-Before powering the RAK4600 Breakout Module, make sure you have installed the included LoRa® and BLE antennas. Not doing so might damage the board.
+Before powering the RAK4600 Breakout Module, make sure you have installed the included LoRa and BLE antennas. Not doing so might damage the board.
 :::
 
 - Connect your USB to UART converter to the pin header on the RAK4600 via a set of 4 dupont lines. Use Figure 1 for reference on wiring the device properly.
@@ -177,21 +177,21 @@ When setting up a new device in TTN its default is to join in OTAA mode. For con
 />
 
 ::: tip 📝 NOTE
-As an example, let join in OTAA mode, EU868 frequency and the default LoRa® class is Class A.
+As an example, let join in OTAA mode, EU868 frequency and the default LoRa class is Class A.
 :::
 
 ::: tip 📝 NOTE
 Execute the following commands one by one and in the order given.
 :::
 
-1. Set the LoRa® join mode to
+1. Set the LoRa join mode to
    **OTAA** as follows:
 
 ```sh
 at+set_config=lora:join_mode:0
 ```
 
-2. Set the LoRa® class to **Class A**:
+2. Set the LoRa class to **Class A**:
 
 ```sh
 at+set_config=lora:class:0
@@ -252,7 +252,7 @@ at+join
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/connecting-ttn/at-command-otaa-serial-port.png"
   width="45%"
-  caption="AT Command for OTAA LoRa® Join via RAK Serial Port Tool"
+  caption="AT Command for OTAA LoRa Join via RAK Serial Port Tool"
 />
 
 9. Joined successfully! Now, let’s try to send a data from the RAK4600 Breakout Board to TTN:

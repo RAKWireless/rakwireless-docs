@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak5802/datasheet/RAK5802.jpg
+rak_img: /assets/images/wisblock/rak5802/overview/RAK5802_home.png
 rak_desc: RAK5802 is a WisBlock IO module which extends the WisBlock system with an industry standard RS485 to serial converter. It supports one RS485 port and voltage supply for connected sensors.
 rak_grp: [wisblock, wisio]
 prev: ../../

@@ -99,6 +99,8 @@ import CommonMixin from '../../components/common.mixin'
 import { resolveSidebarItems } from '../util'
 import { Screen } from 'quasar'
 
+import debounce from 'lodash.debounce'
+
 export default {
   name: 'Layout',
 
@@ -207,36 +209,39 @@ export default {
     window.onscroll = this.onPageScroll
   },
   updated() {
-    // replace all table with q-table instances
-    const tables = document.getElementsByTagName('table')
-    for (const tbl of tables) {
-      // skip processed
-      if (
-        tbl.parentNode &&
-        Array.from(tbl.parentNode.classList).includes('q-markup-table')
-      )
-        continue
-
-      const tbl_ = tbl
-      const parent = tbl.parentNode
-
-      const qtable = document.createElement('div')
-      qtable.classList.add(
-        'q-markup-table',
-        'q-table__container',
-        'q-table__card',
-        'q-table--horizontal-separator',
-        'q-table--flat',
-        'q-table--bordered'
-      )
-
-      parent.replaceChild(qtable, tbl)
-      tbl_.classList.add('q-table')
-      qtable.appendChild(tbl_)
-    }
+    this.replaceAllTables()
   },
 
   methods: {
+    replaceAllTables: debounce(function() {
+      // replace all table with q-table instances
+      const tables = document.getElementsByTagName('table')
+      for (const tbl of tables) {
+        // skip processed
+        if (
+          tbl.parentNode &&
+          Array.from(tbl.parentNode.classList).includes('q-markup-table')
+        )
+          continue
+
+        const tbl_ = tbl
+        const parent = tbl.parentNode
+
+        const qtable = document.createElement('div')
+        qtable.classList.add(
+          'q-markup-table',
+          'q-table__container',
+          'q-table__card',
+          'q-table--horizontal-separator',
+          'q-table--flat',
+          'q-table--bordered'
+        )
+
+        parent.replaceChild(qtable, tbl)
+        tbl_.classList.add('q-table')
+        qtable.appendChild(tbl_)
+      }
+    }, 250),
     onDrawerShow() {
       if (this.ltMdDiv) {
         // temporarily disabled setting active hash and smooth scroll

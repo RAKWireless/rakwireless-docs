@@ -39,7 +39,7 @@ This device released by RAKwireless is already pre-loaded with its latest firmwa
 * 1-pc RAK815 WisTrio LPWAN Tracker
 * 1-pc Micro USB Cable
 * 1-pc GPS Antenna
-* 1-pc LoRa® Antenna
+* 1-pc LoRa Antenna
 * 1-pc Rod Antenna
 * 10-pcs Dupoint Lines
 * 5-pcs Jumping Caps
@@ -52,7 +52,7 @@ This device released by RAKwireless is already pre-loaded with its latest firmwa
 In order for you to interface with the RAK815 WisTrio LPWAN Tracker with your Windows Machine, you need to download the [**RAK Serial Port Tool**](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
 
 :::warning ⚠️ WARNING
-Before powering the RAK815 WisTrio LPWAN Tracker, you should install the LoRa® antenna first . Not doing so might damage the board
+Before powering the RAK815 WisTrio LPWAN Tracker, you should install the LoRa antenna first . Not doing so might damage the board
 :::
 
 1. Using a standard **Micro - USB Cable**, connect your RAK815 WisTrio LPWAN Tracker to your computer.
@@ -91,7 +91,7 @@ In case the previous measures mentioned beforehand does not install the needed d
 
 Congratulations! :tada: You have just successfully interfaced your RAK815 WisTrio LPWAN Tracker with your computer!
 
-### Configuring the LoRaWAN®
+### Configuring the LoRaWAN
 
 #### Project Structure
 
@@ -121,14 +121,14 @@ The applications are made available in the open source code by clicking this fil
   caption="Application Demo Directory"
 />
 
-#### Configuration of LoRaWAN® Parameters
+#### Configuration of LoRaWAN Parameters
 
-This Board can be connected to LoRaWAN® through **Over-the-Air-Activation(OTAA)** or **Activation-By-Personalization(ABP)** activation modes. This can be modified through the `Commissioning.h` file available in the open source code
+This Board can be connected to LoRaWAN through **Over-the-Air-Activation(OTAA)** or **Activation-By-Personalization(ABP)** activation modes. This can be modified through the `Commissioning.h` file available in the open source code
 
 <rk-img
   src="/assets/images/wistrio/rak815/quickstart/4configuring-the-lorawan/otaa-activation.jpg"
   width="100%"
-  caption="Configuring LoRaWAN® Activation Mode in OTAA"
+  caption="Configuring LoRaWAN Activation Mode in OTAA"
 />
 
 Along with the following parameters: **Device EUI, Application EUI, App Key for OTAA; Device Address, Network Address and Application key** for ABP.
@@ -139,9 +139,9 @@ Along with the following parameters: **Device EUI, Application EUI, App Key for 
   caption="Configuring Application Parameters"
 />
 
-#### Modify LoRaWAN® Region
+#### Modify LoRaWAN Region
 
-The open source code is based on LoRaWAN® 1.0.2 modified from, so the supported regions have: **EU868, US915, AS923, AU915, IN865, KR920**. If you want to modify the region, you can modify the macro definition.
+The open source code is based on LoRaWAN 1.0.2 modified from, so the supported regions have: **EU868, US915, AS923, AU915, IN865, KR920**. If you want to modify the region, you can modify the macro definition.
 
 <rk-img
   src="/assets/images/wistrio/rak815/quickstart/4configuring-the-lorawan/region-iar.jpg"
@@ -152,10 +152,10 @@ The open source code is based on LoRaWAN® 1.0.2 modified from, so the supported
 <rk-img
   src="/assets/images/wistrio/rak815/quickstart/4configuring-the-lorawan/region-iar-kiel.jpg"
   width="75%"
-  caption="Modifying the LoRaWAN® Region in Keil"
+  caption="Modifying the LoRaWAN Region in Keil"
 />
 
-Congratulations! :tada: You now have successfully modified your LoRaWAN® parameters.
+Congratulations! :tada: You now have successfully modified your LoRaWAN parameters.
 
 ### Application Demonstration
 
@@ -181,9 +181,9 @@ log information in the serial port.
   caption="CommUart Assistant Serial Terminal"
 />
 
-#### LoRaWAN® Demo
+#### LoRaWAN Demo
 
-* Turn on your RAK815 and download the LoRaWAN® Demonstration. 
+* Turn on your RAK815 and download the LoRaWAN Demonstration. 
 * Navigate to the Bluetooth settings of your mobile phone and check for "RAK815 LPWAN Demo". 
 
 <rk-img
@@ -226,9 +226,9 @@ send data.
   caption="Message shown in the Serial Port log Information"
 />
 
-##### Parameters using LoRaWAN® Demo
+##### Parameters using LoRaWAN Demo
 
-The LoRaWAN® web server provider selected use for this case is The Things Network (TTN). To know more about setting up your LoRa® Gateway device, refer to this **[document](https://www.thethingsnetwork.org/labs/story/rak831-lora-gateway-from-package-to-online).**
+The LoRaWAN web server provider selected use for this case is The Things Network (TTN). To know more about setting up your LoRa Gateway device, refer to this **[document](https://www.thethingsnetwork.org/labs/story/rak831-lora-gateway-from-package-to-online).**
 
 * After getting OTAA or ABP parameters of device from TTN, you can write data into the flash of RAK815 by transmitting data
 through Bluetooth. The format of the data you are sending must be as shown below:
@@ -243,12 +243,12 @@ Because the information is too long, the serial port won't show the details of t
 
 * After successfully configuring your device parameters, a message will be shown in your serial port saying: "**LoRaWAN**® **parameters configured successfully**".
 
-* Then, **Reset** the device. If your gateway device is ready, RAK815 will send a join request to LoRaWAN® network server. You can see the successful information in the terminal. 
+* Then, **Reset** the device. If your gateway device is ready, RAK815 will send a join request to LoRaWAN network server. You can see the successful information in the terminal. 
 
 <rk-img
   src="/assets/images/wistrio/rak815/quickstart/5application-demonstration/lorawan-status.jpg"
   width="75%"
-  caption="LoRaWAN® Parameters Configuration Status"
+  caption="LoRaWAN Parameters Configuration Status"
 />
 
 * You can also see the data sent by the device on the TTN:
@@ -256,7 +256,7 @@ Because the information is too long, the serial port won't show the details of t
 <rk-img
   src="/assets/images/wistrio/rak815/quickstart/5application-demonstration/ttn-param-lorawan.jpg"
   width="75%"
-  caption="LoRaWAN® Parameter Settings in TTN"
+  caption="LoRaWAN Parameter Settings in TTN"
 />
 
 #### Peripherals Demo
@@ -272,7 +272,7 @@ seconds.
   caption="Device Information Status"
 />
 
-* Similarly with the LoRaWAN® Demo, you can also send message through the nRF Connect app you installed. The message can be viewed to our serial terminal as shown in the image below.
+* Similarly with the LoRaWAN Demo, you can also send message through the nRF Connect app you installed. The message can be viewed to our serial terminal as shown in the image below.
 
 <rk-img
   src="/assets/images/wistrio/rak815/quickstart/5application-demonstration/message-in-serial-port2.jpg"
@@ -293,12 +293,12 @@ for each sensor on the LCD display.
 
 * Download the Scan Demo into your RAK815.
 * Navigate to the Bluetooth settings of your mobile phone and check for **"RAK815 Scan Demo"**. 
-* Same with the previous application, open the nRF Connect app and connect to the Bluetooth named "RAK815 Scan Demo"; configure the device by sending the LoRaWAN® parameters. The configuration status can be seen in the serial port as shown in the figure below. 
+* Same with the previous application, open the nRF Connect app and connect to the Bluetooth named "RAK815 Scan Demo"; configure the device by sending the LoRaWAN parameters. The configuration status can be seen in the serial port as shown in the figure below. 
 
 <rk-img
   src="/assets/images/wistrio/rak815/quickstart/5application-demonstration/lorawan-status2.jpg"
   width="75%"
-  caption="LoRaWAN® Parameters Configuration Status"
+  caption="LoRaWAN Parameters Configuration Status"
 />
 
 * After successfully configuring the parameters, check if your gateway has been set in advance. Reset the device and a message will be sent to your terminal that the device has successfully joined in OTAA. 
@@ -331,8 +331,8 @@ out from the log information serial port.
   caption="Scanned BLE Information Status"
 />
 
-* If your device is in a LoRaWAN® connection state, at this point your device will send
-the Bluetooth BLE device information you scanned to the LoRaWAN® server.
+* If your device is in a LoRaWAN connection state, at this point your device will send
+the Bluetooth BLE device information you scanned to the LoRaWAN server.
 
 <rk-img
   src="/assets/images/wistrio/rak815/quickstart/5application-demonstration/scanned-ble-ttn-stat.jpg"
@@ -357,7 +357,7 @@ view the real-time status of the device on the LCD
 
 The RAK815 WisTrio LPWAN Tracker is an open source hardware where users can get all the information about the product. It includes schematic diagrams, program codes and other references which could be helpful in building your RAK815 projects. 
 
-This open source project is based on the official code LoRaWAN® 1.0.2 and Nordic
+This open source project is based on the official code LoRaWAN 1.0.2 and Nordic
 nRF5 SDK 14.0.0, modified to support IAR8.11 and Keil5 Compiler. 
 
 * To start with, download the files in this open source **[directory](https://github.com/RAKWireless/RAK813-BreakBoard).**
@@ -564,7 +564,7 @@ The writing of programs using IAR Compiler has the same steps with the Keil Comp
   caption="Sample Hex File Directory"
 />
 
-Congratulations! :tada: You now have completed your firmware setup. Up next will be the configuration of your LoRaWAN® settings.
+Congratulations! :tada: You now have completed your firmware setup. Up next will be the configuration of your LoRaWAN settings.
 
 ### Upgrading the Firmware
 

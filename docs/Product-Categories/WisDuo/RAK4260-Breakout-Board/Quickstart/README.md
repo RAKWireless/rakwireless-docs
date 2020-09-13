@@ -26,7 +26,7 @@ Before going through each step in the installation guide of the RAK4260 Breakout
 
 #### Hardware Tools
 
-- RAK4260 Breakout Board (provided) – including LoRa® antenna, Dupont lines (13x) 
+- RAK4260 Breakout Board (provided) – including LoRa antenna, Dupont lines (13x) 
 - USB to UART converter – CH340 for example (not provided) 
 - RAKDAP1 DapLink tools (not provided)
 - Gateway in Range, for testing (not provided) 
@@ -45,7 +45,7 @@ Before going through each step in the installation guide of the RAK4260 Breakout
 ### What's Included in the Package?
 
 - RAK4260 Breakout Board
-- LoRa® antenna
+- LoRa antenna
 - Dupont lines (24x)
 
 
@@ -54,7 +54,7 @@ Before going through each step in the installation guide of the RAK4260 Breakout
 ### Interfacing with RAK4260 Breakout Board
 
 ::: warning ⚠️ WARNING
-Before powering the RAK4260 Breakout Board, make sure you have installed the included LoRa® Antenna. Not doing so might damage the board.
+Before powering the RAK4260 Breakout Board, make sure you have installed the included LoRa Antenna. Not doing so might damage the board.
 :::
 
 #### USB to UART
@@ -194,7 +194,7 @@ In the Device Overview, there are two options of the **Activation Method**: **OT
 
 #### OTAA Mode
 
-**OTAA** stands for **Over The Air Activation**. We will not delve into details, however the most important thing from practical perspective is that a device needs to have the 3 parameters (**Device EUI**, **Application EUI**, and **App Key**) we already explained in brief in the previous section, set correctly in order for the LoRa® Server to allow it to access the network.
+**OTAA** stands for **Over The Air Activation**. We will not delve into details, however the most important thing from practical perspective is that a device needs to have the 3 parameters (**Device EUI**, **Application EUI**, and **App Key**) we already explained in brief in the previous section, set correctly in order for the LoRa Server to allow it to access the network.
 
 These can be obtained from the Device Overview page, where they are grouped one after the other for convenience (Figure 14).
 
@@ -429,7 +429,7 @@ In our example this would be the EU868 for the region. We are going to show how 
   caption="Start up default output"
 />
 
-- After the aforementioned 5-second elapse, the current configurations (**Class A, OTAA, Unconfirmed LoRa® Frames, Fport - 1**) will be reported .
+- After the aforementioned 5-second elapse, the current configurations (**Class A, OTAA, Unconfirmed LoRa Frames, Fport - 1**) will be reported .
 
 :::tip 📝 NOTE
 These settings are not adjustable at this stage and if you want to change them you need to start over at the stage where we modify the firmware files before compiling it.
@@ -467,9 +467,9 @@ These settings are not adjustable at this stage and if you want to change them y
   caption="Successful network join"
 />
 
-###### Uplink LoRa® Frame Testing
+###### Uplink LoRa Frame Testing
 
-- You should now be in the Main menu and have four options. This time **select Option 2** to send an uplink LoRa® Frame.
+- You should now be in the Main menu and have four options. This time **select Option 2** to send an uplink LoRa Frame.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/sending-data-to-the-server.png"

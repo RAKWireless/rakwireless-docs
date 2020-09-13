@@ -5,7 +5,7 @@ rak_desc: A demonstration on how to deploy your LoRaWAN using the RAKwireless' S
 tags:
   - Tutorials
 header:
-  title: How To Access LoRaWAN® using Solar Energy
+  title: How To Access LoRaWAN using Solar Energy
   caption: by <b>Sam Domingo</b>
   img: /assets/images/knowledge-hub/tutorials/access-lorawan-using-solar-energy/overview.jpg
 posted: 5/02/2020 10:30 AM
@@ -15,12 +15,12 @@ author:
   img: /assets/images/knowledge-hub/authors/sam-domingo.jpg
 ---
 
-# How To Access LoRaWAN® using Solar Energy
+# How To Access LoRaWAN using Solar Energy
 
 
-As the goal of IoT is to interconnect everything in the world, developers aim to extend the reach of LoRaWAN® access even to things in remote areas. At present, a number of IoT users from these areas have already begun their own LoRa® projects to improve their area’s agricultural and water systems. If you are one of them, difficulties in connecting are not new to you, most especially the challenge in having an intermittent power supply. With unexpected, frequent power outages, you absolutely cannot make the most of this promising new technology. Imagine this scenario: you are close to accessing a server from a faraway area but, your gateways suddenly shut down, making you start your whole data transfer from scratch. It is certainly a situation we do not want to find ourselves in.
+As the goal of IoT is to interconnect everything in the world, developers aim to extend the reach of LoRaWAN access even to things in remote areas. At present, a number of IoT users from these areas have already begun their own LoRa projects to improve their area’s agricultural and water systems. If you are one of them, difficulties in connecting are not new to you, most especially the challenge in having an intermittent power supply. With unexpected, frequent power outages, you absolutely cannot make the most of this promising new technology. Imagine this scenario: you are close to accessing a server from a faraway area but, your gateways suddenly shut down, making you start your whole data transfer from scratch. It is certainly a situation we do not want to find ourselves in.
 
-Fortunately, IoT companies like RAKwireless are indeed making our access to IoT easy by already identifying this problem thus, releasing a LoRa® set-up powered by solar energy. As long as there are no obstructions in the sky, we can now finally turn to the power of sun rays to freely source our connection set-up’s energy. With only 3 components namely,
+Fortunately, IoT companies like RAKwireless are indeed making our access to IoT easy by already identifying this problem thus, releasing a LoRa set-up powered by solar energy. As long as there are no obstructions in the sky, we can now finally turn to the power of sun rays to freely source our connection set-up’s energy. With only 3 components namely,
 
 * Solar Panel - the device that collects sunlight and converts it into electric current
 * MPPT Charge Controllers - the converter that increases the efficiency of a battery charging state
@@ -30,7 +30,7 @@ Fortunately, IoT companies like RAKwireless are indeed making our access to IoT 
 
 👉[Solar Panel and Battery Kit Installation](/Product-Categories/WisGate/RAK7249/Quickstart/#solar-panel-and-battery-kit-installation)
 
-you can now enjoy your disruption-free access from a LoRaWAN® kit. If you want to have a try on this sustainable set-up, you will have to first learn how to calculate a battery’s capacity.
+you can now enjoy your disruption-free access from a LoRaWAN kit. If you want to have a try on this sustainable set-up, you will have to first learn how to calculate a battery’s capacity.
 
 ## Calculating Battery Capacity
 
@@ -38,7 +38,7 @@ To calculate the minimum required battery capacity, we will need to first set th
 
 Another specification that needs to be determined is the Depth of Discharge (DoD). It is not recommended to discharge 100% of the batteries’ total capacity as it drastically reduces its lifetime. This is why battery manufacturers recommend a certain DoD for their batteries. For example, a 100Ah battery with 80% recommended DoD can only use 80Ah or 80% of its total capacity on one cycle. Choosing a lower depth of discharge will allow the battery to last longer, but it will require you to have a larger battery capacity. For example, a battery bank may have 10,000 cycles at 20% DoD but only 800 cycles at 90% DoD. Unless otherwise specified by the battery manufacturer, it has been shown that using 80% DoD is the best in terms of maximizing the battery capacity and prolonging the battery’s lifetime.
 
-* The **LoRaWAN® gateway** for this example consumes **500mA at 12V**. This means that its energy consumption is:
+* The **LoRaWAN gateway** for this example consumes **500mA at 12V**. This means that its energy consumption is:
 
 ```sh
 0.5Ah at 12V per hour
@@ -76,13 +76,13 @@ We will need to set the worst-case scenario where we have the minimum number of 
 180W/2 = 90W ≈ 100W
 ```
 
-## Assembly of LoRa®gateway Kit
+## Assembly of LoRagateway Kit
 
 After learning about those computations, you may now proceed in assembling your [RAK7249 Macro Outdoor Gateway](https://www.rakwireless.com/en-us/products/lpwan-gateways-and-concentrators/rak7249) powered by a solar panel.
 
-1. Assemble the LoRa® gateway kit.
+1. Assemble the LoRa gateway kit.
 
-    Fix the support plate of the gateway and install the mainboard with screws. Once done, install the LoRa® cards, RF cables, ethernet cables, and reserved hole plugs. Connect these cables appropriate to their connectors.
+    Fix the support plate of the gateway and install the mainboard with screws. Once done, install the LoRa cards, RF cables, ethernet cables, and reserved hole plugs. Connect these cables appropriate to their connectors.
 
 2. Attach the solar panel and battery kit.
 

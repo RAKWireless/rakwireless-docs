@@ -6,18 +6,18 @@ tags:
   - User-Manual
   - WisGate
 header:
-  title: LoRa® Concentrator Spectrum Settings Guide
+  title: LoRa Concentrator Spectrum Settings Guide
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/general_banner.jpg
 posted: 2/29/2020 10:30 AM
 ---
 
-# LoRa® Concentrator Spectrum Settings Guide
+# LoRa Concentrator Spectrum Settings Guide
 
 * [EU868 Spectrum Settings](#eu868-spectrum-settings)
 * [KR920 Spectrum Settings](#kr920-spectrum-settings)
 
-This is the LoRa® RF Radio unit. It integrated two **Semtech SX1257** front-end modules with the most popular LoRaWAN® Baseband chip, the **SX1301**. Because of the design of the concentrator module, there are two separate RX chains, which need to have the proper number of channels assigned in order for the module to function optimally. The chains are referred to as Radio 0 and Radio 1 in the Web Management Platform.
+This is the LoRa RF Radio unit. It integrated two **Semtech SX1257** front-end modules with the most popular LoRaWAN Baseband chip, the **SX1301**. Because of the design of the concentrator module, there are two separate RX chains, which need to have the proper number of channels assigned in order for the module to function optimally. The chains are referred to as Radio 0 and Radio 1 in the Web Management Platform.
 
 * **Radio 0**: can work in both TX and RX mode. It can have up to 5 channels assigned
 * **Radio 1**: works solely in RX mode. It can also have up to 5 channels assigned.
@@ -71,8 +71,8 @@ Let us have a summary of the parameters that can be seen in the image below, whi
 |Radio| The Radio the channel will be assigned to (max 5 per Radio) | 
 |If [Hz] | The frequency offset from the center frequency for the given channel | 
 |Freq [Hz] | The resulting frequency for the channel after summing the center frequency with the If field value | 
-|Bandwidth [KHz] | This is only selectable for the LoRa® Standard and FSK channels. The MultiSF are static | 
-|Datarate| Essentially this is the Spreading Factor (SF) as it is directly related to the bitwise data rate. The MultiSF channels can dynamically use any of the available SFs (SF7 – SF12). The Standard LoRa® channel has to have a single value assigned (SF7 - SF12). The FSK channel has a field with a numeric value to be entered in bps. In order to have each channel at the desired frequency the user needs to set the appropriate offset from the central frequency. This way you can end up with a number of channels spread above and below the center frequency | 
+|Bandwidth [KHz] | This is only selectable for the LoRa Standard and FSK channels. The MultiSF are static | 
+|Datarate| Essentially this is the Spreading Factor (SF) as it is directly related to the bitwise data rate. The MultiSF channels can dynamically use any of the available SFs (SF7 – SF12). The Standard LoRa channel has to have a single value assigned (SF7 - SF12). The FSK channel has a field with a numeric value to be entered in bps. In order to have each channel at the desired frequency the user needs to set the appropriate offset from the central frequency. This way you can end up with a number of channels spread above and below the center frequency | 
 
 
 ## Offset Frequency Settings
@@ -210,8 +210,8 @@ The same summary applies to Concentrator Module 1 in the image below:
 | Radio | The Radio the channel will be assigned to (max 5 per Radio) | 
 | If [Hz] | The frequency offset from the center frequency for the given channel | 
 | Freq [Hz] | The resulting frequency for the channel after summing the center frequency with the If field value | 
-| Bandwidth [KHz] | This is only selectable for the LoRa® Standard and FSK channels. The MultiSF are static | 
-| Datarate | Essentially this is the Spreading Factor (SF as it is directly related to the bitwise data rate. The MultiSF channels can dynamically use any of the available SFs (SF7 – SF12). The Standard LoRa® channel has to have a single value assigned (SF7 - SF12). The FSK channel has a field with a numeric value to be entered in bps In order to have each channel at the desired frequency the user needs to set the appropriate offset from the central frequency. This way you can end up with a number of channels spread above and below the center frequency | 
+| Bandwidth [KHz] | This is only selectable for the LoRa Standard and FSK channels. The MultiSF are static | 
+| Datarate | Essentially this is the Spreading Factor (SF as it is directly related to the bitwise data rate. The MultiSF channels can dynamically use any of the available SFs (SF7 – SF12). The Standard LoRa channel has to have a single value assigned (SF7 - SF12). The FSK channel has a field with a numeric value to be entered in bps In order to have each channel at the desired frequency the user needs to set the appropriate offset from the central frequency. This way you can end up with a number of channels spread above and below the center frequency | 
 
 
 ## Offset Frequency Settings

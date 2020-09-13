@@ -7,7 +7,7 @@ displayAllHeaders: true
 
 <rk-head img="/assets/rakwireless/product-categories/WisLink.svg" center>
 
-WisLink is a category of products built by the RAK company for the IoT industry. Modules under this category are connectivity modules designed to be integrated into the existing hardware to provide the LPWAN connectivity capabilities. These include LoRaWAN® and Nb-IoT devices with different form factors.
+WisLink is a category of products built by the RAK company for the IoT industry. Modules under this category are connectivity modules designed to be integrated into the existing hardware to provide the LPWAN connectivity capabilities. These include LoRaWAN and Nb-IoT devices with different form factors.
 
 
 </rk-head>

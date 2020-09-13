@@ -1,6 +1,6 @@
 ---
 prev: ../Quickstart/
-next: false
+next: ../AT-Command-Manual/
 tags:
   - datasheet
   - wisnode
@@ -20,9 +20,9 @@ tags:
 
 ### Description
 
-The **RAK7200 WisNode Track Lite** device is the best available prototyping LoRa® sensor device with built-in 3.7V rechargeable Li-ion battery and GPS modem. The RAK7200 WisNode Track Lite has built-in **S76G** which integrates the **ultra low power ARM Cortex-M3 STM32L073 microcontroller** and **SX1276 LoRa®** long range modem and on board **CXD5603GF GPS modem**.
+The **RAK7200 WisNode Track Lite** device is the best available prototyping LoRa sensor device with built-in 3.7V rechargeable Li-ion battery and GPS modem. The RAK7200 WisNode Track Lite has built-in **S76G** which integrates the **ultra low power ARM Cortex-M3 STM32L073 microcontroller** and **SX1276 LoRa** long range modem and on board **CXD5603GF GPS modem**.
 
-It is a feature-packed tracker device for featured applications development. This device can be used as a quick prototyping tool for Internet-of-Things (IoT) and LoRaWAN® Integration. The RAK7200 WisNode Track Lite is perfect for IoT Applications such as asset tracking, smart vehicle management and location-based services.
+It is a feature-packed tracker device for featured applications development. This device can be used as a quick prototyping tool for Internet-of-Things (IoT) and LoRaWAN Integration. The RAK7200 WisNode Track Lite is perfect for IoT Applications such as asset tracking, smart vehicle management and location-based services.
 
 ### Features
 
@@ -30,8 +30,8 @@ It is a feature-packed tracker device for featured applications development. Thi
 - Built-in **digital output motion sensor LIS3DH**, which has dynamic user selectable full scales of ±2g/±4g/±8g/±18g and it is capable of measuring accelerations with output data rates from 1Hz to 5kHz.
 - Built-in **nano pressure sensor LPS22HB** which functions as a digital output barometer.
 - Built-in a **9-axis sensor** which include the triple-axis gyroscope and the triple-axis accelerometer and the triple-axis magnetometer.
-- Supports latest LoRaWAN® 1.0.2 protocol stack and supports Activation by Personalization (ABP) or Over the Air Activation (OTAA) working mode.
-- **On-board Antennas** for LoRa® modem and GPS.
+- Supports latest LoRaWAN 1.0.2 protocol stack and supports Activation by Personalization (ABP) or Over the Air Activation (OTAA) working mode.
+- **On-board Antennas** for LoRa modem and GPS.
 - Supports Micro USB or built-in battery for power supply.
 - **Supports global license-free frequency band**: EU868, US915, AS923, AU915, KR920 and IN865.
 
@@ -128,7 +128,7 @@ The RAK7200 WisNode Track Lite provides three LEDs for indicating the operating 
 
 ##### Operating Frequencies
 
-The device supports all LoRaWAN® frequency bands as the table below. Which is easy to configure while building the firmware from the source code.
+The device supports all LoRaWAN frequency bands as the table below. Which is easy to configure while building the firmware from the source code.
 
 | Region        | Frequency (MHz) |
 | ------------- | --------------- |
@@ -142,7 +142,7 @@ The device supports all LoRaWAN® frequency bands as the table below. Which is e
 
 #### Antennas
 
-The RAK7200 WisNode Track Lite has a built-in passive GPS Antenan and an iPex LoRa® Antenna. The performance and the parameters of the Antenna are as follows:
+The RAK7200 WisNode Track Lite has a built-in passive GPS Antenan and an iPex LoRa Antenna. The performance and the parameters of the Antenna are as follows:
 
 ##### GPS Antenna
 
@@ -172,29 +172,29 @@ S- Parameter of the GPS Antenna as pictured in the figure below:
   caption="S-parameter of the GPS Antenna"
 />
 
-##### LoRa® Antenna
+##### LoRa Antenna
 
-The LoRa® Antenna is shown in the following Figure:
+The LoRa Antenna is shown in the following Figure:
 
 <rk-img
   src="/assets/images/wisnode/rak7200/datasheet/lora-antenna.jpg"
   width="40%"
-  caption="LoRa® Antenna"
+  caption="LoRa Antenna"
 />
 
-The table below lists the Efficiency / Gain of the built in LoRa® Antenna
+The table below lists the Efficiency / Gain of the built in LoRa Antenna
 
 | Freq       | 863MHz | 928MHz |
 | ---------- | ------ | ------ |
 | EFF        | 37.40% | 40.40% |
 | Gain (dBi) | 0.23   | 1.25   |
 
-LoRa® Antenna return loss is also shown in the figure below:
+LoRa Antenna return loss is also shown in the figure below:
 
 <rk-img
   src="/assets/images/wisnode/rak7200/datasheet/loss-lora-antenna.jpg"
   width="80%"
-  caption="Return Loss of the LoRa® Antenna"
+  caption="Return Loss of the LoRa Antenna"
 />
 
 #### Electrical Characteristics

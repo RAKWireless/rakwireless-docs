@@ -4,11 +4,11 @@ next: ../Datasheet/
 tags: RAK811
 ---
 
-# LoRa® Module Deep Development Reference
+# LoRa Module Deep Development Reference
 
 ## Overview
 
-The product portfolio of RAK LoRa® node RAK811 modules. This module comes with a standard version of firmware that allows you to integrate quickly these modules in their solutions for LoRaWAN® or LoRa® P2P communication through the AT commands interface.
+The product portfolio of RAK LoRa node RAK811 modules. This module comes with a standard version of firmware that allows you to integrate quickly these modules in their solutions for LoRaWAN or LoRa P2P communication through the AT commands interface.
 
 Further customization of the firmware can be done through the RUI Online compiler. At this layer, the customized firmware interface with the hardware through the RUI Core abstraction layer. In RAK, it is called the secondary firmware development/customization.  
 
@@ -20,7 +20,7 @@ Additionally, RAK offers a third alternative for advanced customers who need to 
 ### Schematic
 
 
-One of the essential aspects that allow customers to develop their own version of firmware is the module’s hardware schematic. This allows the customers to understand the module’s pinout, connections between the inner MCU and the LoRa® transceiver.
+One of the essential aspects that allow customers to develop their own version of firmware is the module’s hardware schematic. This allows the customers to understand the module’s pinout, connections between the inner MCU and the LoRa transceiver.
 
 :::tip 📝 NOTE:
 
@@ -30,7 +30,7 @@ There are two versions of the RAK811 module. One for the high-frequency bands (i
 
 ### Porting Lora Protocol Stack
 
-When implementing the LoRa® protocol stack, special attention must be paid in the SPI connections, since the LoRa® transceivers are controlled by the MCU through an SPI interface. Hence, the following are the important pins: **SPI1_MISO, SPI1_MOSI, SPI_NSS, SPI_CLK**. Additionally, the DIO, RFI paths are important as well to have a functioning LoRa® communication.
+When implementing the LoRa protocol stack, special attention must be paid in the SPI connections, since the LoRa transceivers are controlled by the MCU through an SPI interface. Hence, the following are the important pins: **SPI1_MISO, SPI1_MOSI, SPI_NSS, SPI_CLK**. Additionally, the DIO, RFI paths are important as well to have a functioning LoRa communication.
 
 After that, **Real Time CLock (RTC)** must be properly configured in the MCU to ensure accurate timing of protocol stack during the runtime.
 

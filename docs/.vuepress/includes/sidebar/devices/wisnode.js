@@ -14,6 +14,14 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
+    },
+    {
+      title: 'AT Command Manual',
+      path: '/Product-Categories/WisNode/RAK612/AT-Command-Manual/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
     }
   ],
   '/Product-Categories/WisNode/RAK7200/': [{
@@ -35,6 +43,14 @@ module.exports = {
     {
       title: 'Datasheet',
       path: '/Product-Categories/WisNode/RAK7200/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'AT Command Manual',
+      path: '/Product-Categories/WisNode/RAK7200/AT-Command-Manual/',
       collapsable: false,
       nested: true,
       download: true,
@@ -64,6 +80,14 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
+    },
+    {
+      title: 'AT Command Manual',
+      path: '/Product-Categories/WisNode/RAK7204/AT-Command-Manual/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
     }
   ],
   '/Product-Categories/WisNode/RAK7431/': [{
@@ -85,6 +109,14 @@ module.exports = {
     {
       title: 'Datasheet',
       path: '/Product-Categories/WisNode/RAK7431/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'AT Command Manual',
+      path: '/Product-Categories/WisNode/RAK7431/AT-Command-Manual/',
       collapsable: false,
       nested: true,
       download: true,

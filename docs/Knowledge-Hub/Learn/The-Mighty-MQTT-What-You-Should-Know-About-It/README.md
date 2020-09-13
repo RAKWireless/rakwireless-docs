@@ -76,7 +76,7 @@ _<b>In summary MQTT has some unique features that can’t be easily found in oth
 * The small size of the data packets minimizes overhead and reduces traffic.
 * It is a very power-efficient mechanic. This makes it very suitable for projects that use LoRaWAN because it can save battery life, which is the primary power source for a lot of LoRa-end nodes.
 * It’s real-time, so it is perfect for IoT applications.
-* It’s open-source and free to use in addition to being easy to implement and configure. Again, setting up your MQTT bridge in the RAKwireless Commercial Gateway line is quick and easy. You can refer to this documentation to get an understanding on how to do so in case you want an example of a good implementation in a LoRaWAN™ Gateway.
+* It’s open-source and free to use in addition to being easy to implement and configure. Again, setting up your MQTT bridge in the RAKwireless Commercial Gateway line is quick and easy. You can refer to this documentation to get an understanding on how to do so in case you want an example of a good implementation in a LoRaWAN Gateway.
 
 In the end, MQTT has a ton of advantages, thus it is here to stay. We believe that it will become even more mainstream and will naturally see a lot more adoption and improvements in the years to come.
 

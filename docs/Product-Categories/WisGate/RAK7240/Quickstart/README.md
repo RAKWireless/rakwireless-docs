@@ -37,7 +37,7 @@ The number of antennas in different depending on what you order. Refer to the st
 
 1. Attach the antennas
 
-First and foremost, screw on the antennas. All 5 of them should be installed, two (2) antennas on the **bottom** (**Wi-Fi**, **GPS**) and three (3) on the **top** (**LoRa®**, **LTE**)
+First and foremost, screw on the antennas. All 5 of them should be installed, two (2) antennas on the **bottom** (**Wi-Fi**, **GPS**) and three (3) on the **top** (**LoRa**, **LTE**)
 
 :::warning ⚠️ WARNING
 Do not power the device if any antenna port has been left open. In case you do not desire to use one or more antenna feature, make sure to terminate the port with a **50 Ohm load**.
@@ -150,7 +150,7 @@ The Things Network is about enabling low power devices to use long range gateway
 />
 
 :::tip 📝 NOTE
- The Gateway EUI can be found either on the sticker on the casing or via the LoRa® Packet Forwarder page in the LoRa® Gateway menu once you log via the Web UI.
+ The Gateway EUI can be found either on the sticker on the casing or via the LoRa Packet Forwarder page in the LoRa Gateway menu once you log via the Web UI.
 :::
 
 2. Select your [Frequency Plan](https://www.thethingsnetwork.org/docs/lorawan/frequency-plans.html) depending on your location. This should populate the Router field. Optionally you can choose to enter the Gateway coordinates in the map’s upper right corner and select if the gateway is indoor or outdoor via the Antenna placement field below the map.
@@ -164,7 +164,7 @@ The Things Network is about enabling low power devices to use long range gateway
 />
 
 :::tip 📝 NOTE
- By default, the Gateway is set to connect to TTN. For detailed information about advanced configuration options refer to the [WEB Management Platform - LoRa® Network](/Knowledge-Hub/Learn/Resources/WEB-Management-Platform/#lora®-network) section.
+ By default, the Gateway is set to connect to TTN. For detailed information about advanced configuration options refer to the [WEB Management Platform - LoRa Network](/Knowledge-Hub/Learn/Resources/WEB-Management-Platform/#lora®-network) section.
 :::
 
 <!---
