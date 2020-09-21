@@ -48,8 +48,8 @@ In any MCU, after the power is connected, the System bootloader is on charge to 
 In the following image shows a usual memory map for an ARM Cortex M4 MCU, which is the architecture of the MCU of the RAK4600
 
 <rk-img
-  src="/assets/images/wisduo/rak4600-module/deep-development/arm-cortex-memory-map.png"
-  width="80%"
+  src="/assets/images/wisduo/rak4600-module/deep-development/memory-map.png"
+  width="25%"
   caption="Usual memory map for an ARM Cortex M4 MCU"
 />
 

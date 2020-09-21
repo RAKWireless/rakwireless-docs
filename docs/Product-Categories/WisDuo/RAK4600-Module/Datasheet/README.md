@@ -60,7 +60,7 @@ The overview section covers the RAK4600 WisDuo LPWAN Module board overview where
 
 
 <rk-img
-  src="/assets/images/wisduo/rak4600-module/datasheet/block-diagram/xkxaew5skkeofmgfrzie.png"
+  src="/assets/images/wisduo/rak4600-module/datasheet/block-diagram/block-diagram.png"
   width="70%"
   caption="RAK4600 Block Diagram"
 />
