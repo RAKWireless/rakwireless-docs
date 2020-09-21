@@ -8,7 +8,7 @@ header:
   title: RAKDAP1 Flash and Debug Tool
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/general_banner.jpg
-posted: 21/09/2020 6:30 PM
+posted: 21/09/2020 7:00 PM
 ---
 
 # RAKDAP1 Flash and Debug Tool
@@ -164,62 +164,74 @@ But before installing, check the list first to know the required package for you
 <table style="text-align: center">
 <thead>
   <tr>
-    <th>CATEGORY</th>
     <th>MODEL</th>
     <th>SUPPORTED PACKAGE</th>
   </tr>
 </thead>
 <tbody>
     <tr>
-      <td rowspan=9><b>WisDuo</b></td>
-      <td>RAK811</td>
+      <td>RAK811 Module</td>
       <td>stm32l151cb</td>   
     </tr>
     <tr>
-      <td>RAK4200</td>
+      <td>RAK8710</td>
+      <td>stm32l151cb</td>   
+    </tr>
+    <tr>
+      <td>RAK4200 Module</td>
       <td>stm32l071kb</td>   
     </tr>
     <tr>
-      <td>RAK4270</td>
+      <td>Products using RAK4200</td>
       <td>stm32l071kb</td>   
     </tr>
     <tr>
-      <td>RAK4600</td>
+      <td>RAK4270 Module</td>
+      <td>stm32l071kb</td>   
+    </tr>
+    <tr>
+      <td>Products using RAK4270</td>
+      <td>stm32l071kb</td>   
+    </tr>
+    <tr>
+      <td>RAK7201/7202/7203</td>
+      <td>stm32l071kb</td>   
+    </tr>
+    <tr>
+      <td>RAK4600 Module</td>
       <td>nrf52</td>   
     </tr>
     <tr>
-      <td>RAK4600</td>
+      <td>RAK4600 Evaluation Board</td>
+      <td>nrf52</td>   
+    </tr>
+      <tr>
+      <td>RAK8212 Board</td>
       <td>nrf52</td>   
     </tr>
     <tr>
-      <td>RAK4600 Evaluation</td>
+      <td>RAK813 Module</td>
       <td>nrf52</td>   
     </tr>
     <tr>
-      <td>RAK4260</td>
-      <td>atsaml21j18a</td>   
-    </tr>
-    <tr>
-      <td>RAK4260</td>
-      <td>atsaml21j18a</td>   
-    </tr>
-    <tr>
-      <td>RAK813</td>
-      <td>nrf52</td>   
-    </tr>
-    <tr>
-      <td rowspan=2><b>WisTrio</b></td>
       <td>RAK5010</td>
       <td>nrf52840</td>   
     </tr>
     <tr>
-      <td>RAK8212</td>
-      <td>nrf52</td>   
-    </tr>
-    <tr>
-      <td><b>WisBlock</b></td>
       <td>RAK4631</td>
       <td>nrf52840</td>   
+    </tr>
+    <tr>
+      <td>RAK3401</td>
+      <td>nrf52840</td>   
+    </tr>
+    <tr>
+      <td>RAK4260</td>
+      <td>atsaml21j18a</td>   
+    </tr>
+    <tr>
+      <td>RAK4260</td>
+      <td>atsaml21j18a</td>   
     </tr>
 </tbody>
 </table>
