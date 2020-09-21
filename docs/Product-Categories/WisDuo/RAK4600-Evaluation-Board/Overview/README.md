@@ -16,7 +16,7 @@ Thank you for choosing **RAK4600 Evaluation Board** in your awesome IoT Project!
 ## Product Background
 
 **RAK4600 Evaluation Board** is a WisBlock product that consists of [RAK4600 WisDuo LPWAN Module](https://store.rakwireless.com/products/rak4600-lora-module) and RAK5005 WisBase. This development board allows access to all serial and GPIO ports for easy configuration. The RAK4600 core module includes nRF52832 MCU and SX1276 LoRa chip to help you quickly and easily develop/test your firmware. It has
-Ultra-Low Power Consumption of 2.0 uA in sleep mode, high LoRa output power up to
+Ultra-Low Power Consumption of 11.2 uA in sleep mode, high LoRa output power up to
 20dB max in work mode, and Bluetooth output power up to 4dBm. The module complies with LoRaWAN 1.0.2 protocols. It also supports LoRa Point to Point
 communications.
 

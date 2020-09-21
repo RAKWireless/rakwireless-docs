@@ -609,23 +609,6 @@ The architecture of the ChirpStack platform is shown in Figure 33. Similar to th
 
 * In this document, it is assumed that users are using a RAK LoRa gateway, such as RAK7243. The gateway must be configured and registered previously to ChirpStack deployment. More information about that can be found at: [Connect the Gateway with Chirpstack](/Product-Categories/WisGate/RAK7243/Quickstart/#connect-the-gateway-with-chirpstack)
 
-* Customers can provide their ChirpStack deployment or use the one provided by RAK for testing purposes. RAK has enabled a set of LoRaServer on the cloud to support customers to test their RAK LoRa gateway or RAK LoRa node. The table below shows the IP address for the supported regions. Submit your request in the following URL to get an account and password: [https://forum.rakwireless.com/t/rak-free-cloud-loraserver-for-testing/344/45](https://forum.rakwireless.com/t/rak-free-cloud-loraserver-for-testing/344/45)
-
-|Frequency|IP Address|
-|---------|----------|
-|CN470|106.15.233.112|
-|EU868|47.88.62.184|
-|US915|106.15.239.64|
-|AS923|47.101.11.150|
-|IN865|139.155.10.119|
-
-* In summary, these are the requirements: 
-
-  1.	Have an account at the ChirpStack deployment provided by RAK. 
-  2.	Have access to a LoRaWAN gateway registered at the RAK’s ChirpStack server. (The frequency band set for the RAK4600 needs to be consistent with the frequency band of the gateway.) [Connect the Gateway with Chirpstack](/Product-Categories/WisGate/RAK7243/Quickstart/#connect-the-gateway-with-chirpstack)
-  3.	The RAK Serial Port Tool provided by RAK.
-  4.	The RAK4600 module. 
-
 :::tip 📝 NOTE:
 The frequency band used in this example is EU868 which is supported by the high-frequency version of RAK4600.
 :::

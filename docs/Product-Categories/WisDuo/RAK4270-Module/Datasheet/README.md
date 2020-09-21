@@ -177,7 +177,7 @@ It is recommended to add 4 decoupling capacitors near the module at the entrance
 | 868MHz   |  21dBm   |  124mA on PA_BOOST  |
 |    |  20 dBm    |  118mA on PA_BOOST|
 |    |  17 dBm    |  102mA on PA_BOOST|
-|    | 14 dBm    |  90 on PA_BOOST|
+|    | 14 dBm    |  90mA on PA_BOOST|
 
 
 

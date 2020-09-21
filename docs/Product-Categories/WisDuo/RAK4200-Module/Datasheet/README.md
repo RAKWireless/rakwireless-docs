@@ -32,7 +32,7 @@ The module complies with LoRaWAN 1.0.2 protocols. It also supports LoRa Point to
 * **Supply voltage**: 2.0 ~ 3.6V
 * **Frequency range**: 863–870MHz (EU) / 902–928MHz (US), ISM and SRD systems
 * Low-Power Wireless Systems with 7.8kHz to 500KHz Bandwidth
-* Ultra-Low Power Consumption 1.5uA in sleep mode
+* Ultra-Low Power Consumption 11.8 uA in sleep mode
 * **Core**: ARM 32-bit Cortex – M0+ with MPU
 * Up to 128KB flash memory with ECC
 * 20KB RAM
@@ -88,16 +88,16 @@ The hardware specification is categorized into five parts. It covers the pinouts
 
 | Pin | Name     | I/O | Description                                      |
 | --- | -------- | --- | ------------------------------------------------ |
-| 1   | UART2_RX | I   | Main UART (STM32L071K8 PA10)                     |
-| 2   | UART2_TX | O   | Main UART (STM32L071K8 PA9)                      |
-| 3   | UART2_DE | I/O | GPIO (STM32L071K8 PA12)                          |
-| 4   | UART1_TX | I/O | General GPIO or UART(Reserved) (STM32L051K8 PA2) |
-| 5   | UART1_RX | I/O | General GPIO or UART(Reserved) (STM32L051K8 PA3) |
-| 6   | UART1_DE | I/O | General GPIO or UART(Reserved) (STM32L051K8 PA1) |
-| 7   | SWDIO    | I/O | Programming (STM32L051K8 PA13)                   |
-| 8   | SWCLK    | I/O | Programming (STM32L051K8 PA14)                   |
-| 9   | I2C_SCL  | I/O | I2C interface (STM32L051K8 PB6)                  |
-| 10  | I2C_SDA  | I/O | I2C interface (STM32L051K8 PB7)                  |
+| 1   | UART2_RX | I   | Main UART (STM32L071KB PA10)                     |
+| 2   | UART2_TX | O   | Main UART (STM32L071KB PA9)                      |
+| 3   | UART2_DE | I/O | GPIO (STM32L071KB PA12)                          |
+| 4   | UART1_TX | I/O | General GPIO or UART(Reserved) (STM32L071KB PA2) |
+| 5   | UART1_RX | I/O | General GPIO or UART(Reserved) (STM32L071KB PA3) |
+| 6   | UART1_DE | I/O | General GPIO or UART(Reserved) (STM32L071KB PA1) |
+| 7   | SWDIO    | I/O | Programming (STM32L071KB PA13)                   |
+| 8   | SWCLK    | I/O | Programming (STM32L071KB PA14)                   |
+| 9   | I2C_SCL  | I/O | I2C interface (STM32L071KB PB6)                  |
+| 10  | I2C_SDA  | I/O | I2C interface (STM32L071KB PB7)                  |
 | 11  | GND      | -   | Ground                                           |
 | 12  | RF       | I/O | RF port (reserved), default RF out by IPEX       |
 | 13  | GND      | -   | Ground                                           |
@@ -105,7 +105,7 @@ The hardware specification is categorized into five parts. It covers the pinouts
 | 15  | SPI_CLK  | I/O | Reserved PA5                                     |
 | 16  | SPI_MISO | I/O | Reserved PA6                                     |
 | 17  | SPI_MOSI | I/O | Reserved PA7                                     |
-| 18  | MCU_NRST | I/O | MCU reset (STM32L051K8 NRST)                     |
+| 18  | MCU_NRST | I/O | MCU reset (STM32L071KB NRST)                     |
 | 19  | GND      | -   | Ground                                           |
 | 20  | VDD      | -   | DC3V3                                            |
 
@@ -140,7 +140,7 @@ Several current consumption ratings are provided below for a detailed RAK4200 Wi
 The following figures shown below are the average current consumptions based on the different test cases.
 
 **Materials:**
-   * Oscilloscope
+   * Power Consumption Meter
    * RAK4200 WisDuo LPWAN Module
 
 **LoRa Packet Sending**

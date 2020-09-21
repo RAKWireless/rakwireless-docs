@@ -1006,19 +1006,19 @@ at+send=lorap2p:1234567890
   caption="Message sent and received status in the two modules"
 />
 
-### Miscellaneous
+## Miscellaneous
 
-#### Upgrading the Firmware
+### Upgrading the Firmware
 
 If you want to upgrade the latest version firmware of the module, you can follow this section. The latest firmware can be found in the software section of [RAK811 Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#firmware-os).
 
 In the following sections, two (2) options for flashing new firmware in a RAK811 module are shown: **Upgrade through DAPLink** and **Upgrade through UART1**.
 
-##### Firmware Upgrade Through DAPLink
+#### Firmware Upgrade Through DAPLink
 
 To flash a new firmware we use RAKDAP1, a J-Link/SWD adapter. It requires the Python3 tool pyocd on your computer.
 
-###### Installing Environment
+##### Installing Environment
 
 1.  Install Python3   
 
@@ -1066,7 +1066,7 @@ pyocd pack --install stm32l151cb
 
 The support packages are MDK packages. You can see a complete list at [https://www.keil.com/dd2/Pack/](https://www.keil.com/dd2/Pack/).
 
-###### Flash the firmware using DAPLink and RAKDAP
+##### Flash the firmware using DAPLink and RAKDAP
 
 1. Connect the board to RAKDAP
 
@@ -1167,9 +1167,9 @@ Refer to the table for the minimum hardware and software required to perform the
 /> -->
 
 
-##### Firmware Upgrade Through UART1
+#### Firmware Upgrade Through UART1
 
-###### Minimum Hardware and Software Requirements
+##### Minimum Hardware and Software Requirements
 
 Refer to the table for the minimum hardware and software required to perform the firmware upgrade using J-Link.
 
@@ -1181,7 +1181,7 @@ Refer to the table for the minimum hardware and software required to perform the
 
 
 
-###### Firmware Upgrade Procedure
+##### Firmware Upgrade Procedure
 
 Execute the following procedure to upgrade the firmware in Device Firmware Upgrade (DFU) mode through the UART1 interface.
 
