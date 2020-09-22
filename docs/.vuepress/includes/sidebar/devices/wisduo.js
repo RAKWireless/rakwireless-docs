@@ -86,6 +86,14 @@ module.exports = {
     download: true,
     sidebarDepth: 4
   },
+  {
+    title: 'AT Command Manual',
+    path: '/Product-Categories/WisDuo/RAK4200-Evaluation-Board/AT-Command-Manual/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
   ],
   '/Product-Categories/WisDuo/RAK4200-Module/': [{
     title: 'Product Overview',
@@ -211,6 +219,14 @@ module.exports = {
     download: true,
     sidebarDepth: 4
   },
+  {
+    title: 'AT Command Manual',
+    path: '/Product-Categories/WisDuo/RAK4600-Evaluation-Board/AT-Command-Manual/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
   ],
   '/Product-Categories/WisDuo/RAK4600-Module/': [{
     title: 'Product Overview',
@@ -268,6 +284,14 @@ module.exports = {
   {
     title: 'Datasheet',
     path: '/Product-Categories/WisDuo/RAK811-Breakout-Board/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'AT Command Manual',
+    path: '/Product-Categories/WisDuo/RAK811-Breakout-Board/AT-Command-Manual/',
     collapsable: false,
     nested: true,
     download: true,

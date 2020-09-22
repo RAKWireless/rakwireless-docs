@@ -3,6 +3,7 @@ tags:
   - datasheet
   - wisduo
 prev: ../Quickstart/
+next: ../AT-Command-Manual/
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811%20CE%20Certification.rar]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811%C2%A0FCC%20Certification.rar]

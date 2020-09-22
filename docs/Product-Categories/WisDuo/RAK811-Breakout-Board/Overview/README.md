@@ -14,6 +14,7 @@ Thank you for choosing **RAK811 Breakout Board** in your awesome IoT Project! ðŸ
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
+* [AT Command Manual](../AT-Command-Manual/)
 
 ## Product Background
 
