@@ -103,13 +103,13 @@ The Things Network is about enabling low power devices to be used in long range 
 In this section, we will be connecting the RAK7204 WisNode Sense Home to The Things Network (TTN). If you don't have an account yet, head on to [https://www.thethingsnetwork.org/](https://www.thethingsnetwork.org/) and create one. Once done, Log in to your account and go to the console which can be found here:
 
 <rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn//szwxvka0wyqg5ybjrffb.png"
+  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/szwxvka0wyqg5ybjrffb.png"
   width="100%"
   caption="The Things Network Home Page"
 />
 
 <rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn//jf9flba2uoyc3wt2k9lw.png"
+  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/jf9flba2uoyc3wt2k9lw.png"
   width="100%"
   caption="TTN Console Page"
 />
@@ -117,7 +117,7 @@ In this section, we will be connecting the RAK7204 WisNode Sense Home to The Thi
 - Choose "**APPLICATIONS**"
 
 <rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn//bfbdxer0da06nxv0bymr.png"
+  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/bfbdxer0da06nxv0bymr.png"
   width="100%"
   caption="Application Page"
 />
@@ -126,7 +126,7 @@ In this section, we will be connecting the RAK7204 WisNode Sense Home to The Thi
 
 - Click the "**add application**" button
   <rk-img
-    src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn//eixjrjjdmpc4bstoyleu.png"
+    src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/eixjrjjdmpc4bstoyleu.png"
     width="100%"
     caption="Adding an Application"
   />
@@ -141,7 +141,7 @@ Here are the things that you should take note in adding an application:
 - After you fill in the necessary information, press the "**Add application**" button at the bottom of this page. If you see the following page, this means that you have successfully registered your application.
 
 <rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn//nyiksw5ezoobdkqaifft.png"
+  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/nyiksw5ezoobdkqaifft.png"
   width="100%"
   caption="Application Overview"
 />
@@ -151,7 +151,7 @@ Here are the things that you should take note in adding an application:
 - Scroll down until you see the Devices section, or you can also click the "**Devices**" button at the top:
 
 <rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn//ow74swwqofv1gxxj0qbk.png"
+  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/ow74swwqofv1gxxj0qbk.png"
   width="100%"
   caption="Device Section"
 />
@@ -159,7 +159,7 @@ Here are the things that you should take note in adding an application:
 - Click "**Register device "**
 
 <rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn//m0diwppr3c6uq2fzcmnb.png"
+  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/m0diwppr3c6uq2fzcmnb.png"
   width="100%"
   caption="Add your Device"
 />
@@ -174,7 +174,7 @@ Click the following icon and the Device EUI will be automatically generated. The
 - Lastly, click the Register button. Now, your device is registered under the corresponding application.
 
 <rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn//uvhfpgf50yodwdl9dxp7.png"
+  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/uvhfpgf50yodwdl9dxp7.png"
   width="100%"
   caption="Device Overview"
 />
@@ -388,27 +388,27 @@ In this section, it is assumed that you are using RAK Gateway and its built-in C
 2. By default, there is already one or more items in this page, you can use it or create a new item. Now, let’s create a new item by clicking the “**CREATE**” button, then filling them in.
 
 <rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack//wgk31ykcgwp2gbzicmut.png"
+  src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/wgk31ykcgwp2gbzicmut.png"
   width="100%"
   caption="ChirpStack Applications"
 />
 
 3. Fill up the necessary information then Click "**CREATE APPLICATION**”.
    <rk-img
-     src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack//zcxqc0pe6vquherzw521.png"
+     src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/zcxqc0pe6vquherzw521.png"
      width="100%"
      caption="Creating the Application"
    />
 
 4. Click the new item name “**RAKwireless_Test_Application**”:
    <rk-img
-     src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack//r2ikjxdaluvfxbqhaccc.png"
+     src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/r2ikjxdaluvfxbqhaccc.png"
      width="100%"
      caption="Applications page in ChirpStack"
    />
 
 <rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack//sdrlazcgfseimitslo6u.png"
+  src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/sdrlazcgfseimitslo6u.png"
   width="100%"
   caption="RAKwireless Test Application"
 />
@@ -416,14 +416,14 @@ In this section, it is assumed that you are using RAK Gateway and its built-in C
 5. Add a Node device into ChirpStack by clicking the “**CREATE**” button:
 
 <rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack//sdrlazcgfseimitslo6u.png"
+  src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/sdrlazcgfseimitslo6u.png"
   width="100%"
   caption="Adding a Node Device"
 />
 
 6. Fill them in. You can generate a **Device EUI** automatically by clicking the Device EUI icon, or you can write the correct Device EUI in the edit box.
    <rk-img
-     src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack//bx0hvot72klwrnznnbig.png"
+     src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/bx0hvot72klwrnznnbig.png"
      width="100%"
      caption="Filling the Device Parameters"
    />
