@@ -1078,7 +1078,7 @@ at+set_config=lora:work_mode:1
 
 Then configure LoRaP2P parameters for both of them as follow for example:
 ```sh
-at+set_config=lorp2p:869525000:7:0:1:5:5
+at+set_config=lorap2p:869525000:7:0:1:5:5
 ```
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/8.lorap2p-mode/be2eudcfjshdfpp70dh3.jpg"
@@ -1100,7 +1100,7 @@ at+send=lorap2p:1234567890
 **Success!** You can send more messages:
 
 <rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/8.lorap2p-mode/hxqc6l5zeadhs5yd5ucz.jpg"
+  src="/assets/images/wisnode/rak7204/quickstart/8.lorap2p-mode/xiafisnstyg1641kojgl.jpg"
   width="90%"
   caption="Test Message Sent"
 />
@@ -1260,12 +1260,12 @@ at+set_config=device:boot
   caption="Entering Boot Mode"
 />
 
-- Download the **RAK Upgrade Tool** from the RAKwireless website [here](https://downloads.rakwireless.com/en/LoRa/RAK612-LoRaButton/Tools/RAK%20LoRaButton%20Upgrade%20Tool%20V1.0.zip) then, open the tool. 
+- Download the **RAK Upgrade Tool** from the RAKwireless website [here](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip) then, open the tool. 
 
 <rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/10.burning-firmware/txi7skysk8gtingjysud.jpg"
+  src="/assets/images/wisnode/rak7204/quickstart/10.burning-firmware/rak-upgrade-tool.png"
   width="75%"
-  caption="RAK Upgrade Tool"
+  caption="Device Firmware Upgrade Tool"
 />
 
 - Download the latest firmware [here](https://downloads.rakwireless.com/en/LoRa/RAK7204/Firmware/) for the RAK7204 WisNode Sense Home
@@ -1277,33 +1277,28 @@ at+set_config=device:boot
 Visit this [article](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html) for more information on your local TTN frequency plan.
 :::
 
-- Click "Choose File" then choose the firmware that you have just downloaded: 
+- Select the application firmware file of the module with the suffix ". bin".
 
 <rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/10.burning-firmware/hs89oyvlean3zvhjxlwe.jpg"
+  src="/assets/images/wisnode/rak7204/quickstart/10.burning-firmware/choose-firmware.png"
   width="75%"
-  caption="Choosing the Correct Firmware file"
+  caption="Select firmware"
+/>
+
+- Click the "upgrade" button to upgrade the device. After the upgrade is complete, the RAK7204 is now ready to work with the new firmware.
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/10.burning-firmware/upgrade-firmware.png"
+  width="75%"
+  caption="Firmware upgrading"
 />
 
 <rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/10.burning-firmware/d5xgxy7cj8ic7qvglecl.jpg"
+  src="/assets/images/wisnode/rak7204/quickstart/10.burning-firmware/upgrade-successful.png"
   width="75%"
-  caption="Start Upgrade"
+  caption="Upgrade successful"
 />
 
-- Choose the correct "**COM Port**", then click Start to Upgrade and wait for a couple of minutes. If it won't start, push the reset button on your RAK7204 WisNode Sense Home.
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/10.burning-firmware/aqblsh1kqm0nud2obujb.jpg"
-  width="75%"
-  caption="Firmware Upgrading in Process"
-/>
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/10.burning-firmware/ih6llchh4ao5vxxjilyv.jpg"
-  width="75%"
-  caption="Firmware Upgrade Finished"
-/>
 
 - Now, **CLOSE** the upgrade tool and and proceed to the next section.
 
