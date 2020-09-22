@@ -148,6 +148,14 @@ pip3 install pyocd
 
 2. After the installation is finished, check the version.
 
+```
+pyocd --version
+```
+
+```
+pyocd-flashtool --version
+```
+
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/rakdap1-flash-and-debug-tool/5.pyocd-version.png"
   width="75%"
@@ -255,40 +263,81 @@ Before flashing a firmware or a bootloader for your product, connect it first to
 
 Here is an overview on how to connect the SWD interface. If you cannot find your product in the list, check the product documentation in the [RAK Documentation Center](https://docs.rakwireless.com).
 
-<table style="text-align: center">
-<thead>
-  <tr>
-    <th> PRODUCT </th>
-    <th> CONNECTION </th>
-  </tr>
-</thead>
-<tbody>
-    <tr>
-      <td><a href="/Product-Categories/WisDuo/RAK811-Module/LoRaWAN-P2P/Quickstart/#flash-the-firmware-using-daplink-and-rakdap"> RAK811 </a></td>
-      <td><img src="/assets/images/knowledge-hub/tutorials/rakdap1-flash-and-debug-tool/6.rak811-swd.png" width="35%"></td>   
-    </tr>
-    <tr>
-      <td><a href="/Product-Categories/WisDuo/RAK4200-Module/LoRaWAN-P2P/Quickstart/#flash-the-firmware-using-daplink-and-rakdap"> RAK4200 </a></td>
-      <td><img src="/assets/images/knowledge-hub/tutorials/rakdap1-flash-and-debug-tool/7.rak4200-swd.png" width="35%"></td>   
-    </tr>
-    <tr>
-      <td><a href="/Product-Categories/WisDuo/RAK4600-Module/LoRaWAN-P2P/Quickstart/#flash-the-firmware-using-daplink-and-rakdap"> RAK4600 </a></td>
-      <td><img src="/assets/images/knowledge-hub/tutorials/rakdap1-flash-and-debug-tool/8.rak4600-swd.png" width="50%"></td>   
-    </tr>
-    <tr>
-      <td><a href="/Product-Categories/WisDuo/RAK4270-Module/LoRaWAN-P2P/Quickstart/#flash-the-firmware-using-daplink-and-rakdap">RAK4270 </a></td>
-      <td><img src="/assets/images/knowledge-hub/tutorials/rakdap1-flash-and-debug-tool/9.rak4270-swd.png" width="35%"></td>   
-    </tr>
-    <tr>
-      <td><a href="/Product-Categories/WisDuo/RAK4260-Evaluation-Board/Quickstart/#flash-the-firmware-using-daplink-and-rakdap">RAK4260 EVB </a></td>
-      <td><img src="/assets/images/knowledge-hub/tutorials/rakdap1-flash-and-debug-tool/10.rak4260-evb-connection.png" width="50%"></td>   
-    </tr>
-    <tr>
-      <td><a href="/Product-Categories/WisDuo/RAK4600-Evaluation-Board/Quickstart/#flash-the-firmware-using-daplink-and-rakdap"> RAK4600 EVB </a></td>
-      <td><img src="/assets/images/knowledge-hub/tutorials/rakdap1-flash-and-debug-tool/11.rak4600-evb-connection.png" width="50%"></td>   
-    </tr>
-</tbody>
-</table>
+#### RAK811 Module
+
+<br>
+<br>
+
+<rk-img
+  src="/assets/images/knowledge-hub/tutorials/rakdap1-flash-and-debug-tool/6.rak811-swd.png"
+  width="40%"
+  caption="RAK811 Module Pinout"
+/>
+
+
+<br>
+
+### RAK4200 Module
+
+<br>
+<br>
+
+<rk-img
+  src="/assets/images/knowledge-hub/tutorials/rakdap1-flash-and-debug-tool/7.rak4200-swd.png"
+  width="40%"
+  caption="RAK4200 Module Pinout"
+/>
+
+<br>
+
+### RAK4600 Module
+
+
+<rk-img
+  src="/assets/images/knowledge-hub/tutorials/rakdap1-flash-and-debug-tool/8.rak4600-swd.png"
+  width="60%"
+  caption="RAK4600 Module Pinout"
+/>
+
+
+<br>
+
+### RAK4270 Module
+
+<br>
+<br>
+
+<rk-img
+  src="/assets/images/knowledge-hub/tutorials/rakdap1-flash-and-debug-tool/9.rak4270-swd.png"
+  width="40%"
+  caption="RAK4270 Module Pinout"
+/>
+
+
+<br>
+
+### RAK4260 Evaluation Board
+
+<rk-img
+  src="/assets/images/knowledge-hub/tutorials/rakdap1-flash-and-debug-tool/10.rak4260-evb-connection.png"
+  width="60%"
+  caption="RAK4260 Evaluation Board Pinout"
+/>
+
+
+<br>
+
+### RAK4600 Evaluation Board
+
+
+<rk-img
+  src="/assets/images/knowledge-hub/tutorials/rakdap1-flash-and-debug-tool/11.rak4600-evb-connection.png"
+  width="60%"
+  caption="RAK4600 Evaluation Board Pinout"
+/>
+
+
+<br>
 
 Open the command prompt and change the folder where you have saved the bootloader or firmware that you want to flash. The command syntax to flash the file is the following:
 
@@ -313,7 +362,13 @@ RAKwireless tools are applications and products created to make it easy for you 
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/rakdap1-flash-and-debug-tool/12.rakdap1-top.png"
-  width="45%"
+  width="40%"
   caption="RAKDAP1 Model"
+/>
+
+<rk-btn
+  src="https://store.rakwireless.com/products/daplink-tool"
+  label="Buy RAKDAP1 Debug and Flash Tool"
+  _blank
 />
 

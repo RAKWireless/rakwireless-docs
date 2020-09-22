@@ -76,7 +76,7 @@ After installation, check the version of pyocd as follow:
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/interfacing/pyocd_ver_check.png"
-  width="75%"
+  width="30%"
   caption="Check pyocd version"
 /> 
 

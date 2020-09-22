@@ -1007,7 +1007,7 @@ If you want to get a pre-compiled firmware instead of compiling the source code 
 Because pyocd needs the Python environment, we must install Python3. We can download the Python3 package from Python website: [https://www.python.org/downloads/](https://www.python.org/downloads/) and install it using the default configuration. After installing successfully, we can check the version as follow:    
 
 <rk-img
-  src="/assets/images/wisduo/rak4600-breakout-board/quickstart/3.interfacing/py_ver_check.png"
+  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/3.interfacing/py_ver_check.png"
   width="50%"
   caption="Check Python version"
 />     
@@ -1023,8 +1023,8 @@ pip3 install pyocd
 After installation, check the version of pyocd as follow:    
 
 <rk-img
-  src="/assets/images/wisduo/rak4600-breakout-board/quickstart/3.interfacing/pyocd_ver_check.png"
-  width="75%"
+  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/3.interfacing/pyocd_ver_check.png"
+  width="30%"
   caption="Check pyocd version"
 />    
 
