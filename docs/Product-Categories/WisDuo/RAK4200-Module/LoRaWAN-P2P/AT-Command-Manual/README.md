@@ -841,13 +841,13 @@ at+set_config=lora:dutycycle_enable:1\r\n
 OK
 ```
 
-### at+set_config=lora: send_repeat_cnt:\<num>
+### at+set_config=lora:send_repeat_cnt:\<num>
 
 This command is used for setting the number attempts for retransmitting an uplink message. When activated, the module will resend a message if its corresponding ACK (down link) is not received after sending a confirmed uplink message. The default value is 0, which means that the module will not resend any message by default.
 
 | Operation | Command                                        | Response |
 | --------- | ---------------------------------------------- | -------- |
-| Write     | `at+set_config=lora: send_repeat_cnt:<status>` | `OK`     |
+| Write     | `at+set_config=lora:send_repeat_cnt:<status>` | `OK`     |
 
 | Parameter | Description                                     |
 | --------- | ----------------------------------------------- |
@@ -856,7 +856,7 @@ This command is used for setting the number attempts for retransmitting an uplin
 Example:
 
 ```sh
-at+set_config=lora: send_repeat_cnt:1\r\n
+at+set_config=lora:send_repeat_cnt:1\r\n
 OK
 ```
 
