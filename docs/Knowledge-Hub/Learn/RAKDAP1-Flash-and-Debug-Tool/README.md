@@ -2,8 +2,8 @@
 sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
 rak_desc: A tutorial on how to connect RAK product boards to the RAKDAP1 as the flash and debug tool.
+tags:
   - Tutorials
-  - RAKDAP1
 header:
   title: RAKDAP1 Flash and Debug Tool
   caption: by <b>RAKwireless Team</b>
