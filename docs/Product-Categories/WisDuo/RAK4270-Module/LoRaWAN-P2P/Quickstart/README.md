@@ -22,8 +22,11 @@ Before going through the step in the installation guide of the RAK4270 WisDuo LP
 #### Software Tools
 
 1. [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)
-2. [RAK Firmware Upgrade Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip)
-<!-- 3.  [J-Link Tool](https://downloads.rakwireless.com/en/Cellular/Tools/) -->
+2. **RAK Firmware Upgrade Tool**
+    - [Windows OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip)
+    - [Mac OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_MacOS.zip)
+    - [Ubuntu](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_Ubuntu.zip)
+
 
 
 ### List of Acronyms
@@ -1037,9 +1040,10 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
     - [RAK4270 Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#software)
 
 
-2.	Download the device firmware upgrade (DFU) tool.
-
-    - [RAK Firmware Upgrade Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip)
+2.	Download the RAK Device Firmware Upgrade (DFU) tool.
+    - [Windows OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip)
+    - [Mac OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_MacOS.zip)
+    - [Ubuntu](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_Ubuntu.zip)
 
 3.	Connect the RAK4270 module with a computer through a USB to TTL. Refer to [Figure 1](/Product-Categories/WisDuo/RAK4270-Module/LoRaWAN-P2P/Quickstart/#connect-to-the-rak4270)
 

@@ -65,15 +65,6 @@ The dimension and the bottom view of the board is shown below. Sensor ICs are al
   caption="RAK5205 Dimension and Sensors Available"
 />
 
-#### Block Diagram
-
-In figure 4, it shows the block diagram of the external interfaces of RAK4200 LPWAN Module.
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/datasheet/block-diagram.png"
-  width="80%"
-  caption="RAK5205 Functional Diagram"
-/>
 
 ### Hardware
 

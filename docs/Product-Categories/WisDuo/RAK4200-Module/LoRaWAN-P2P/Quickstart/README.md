@@ -1131,9 +1131,12 @@ Refer to the [RAKDAP1 Flash and Debug Tool](/Knowledge-Hub/Learn/RAKDAP1-Flash-a
 Follow this procedure in order to upgrade the firmware in Device Firmware Upgrade (DFU) mode through the UART1 interface.
 
 1. Download the latest application firmware of the RAK4200 module from [here](https://downloads.rakwireless.com/en/LoRa/RAK4200/Firmware/).
-2. Download the device firmware upgrade (DFU) tool from [here](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip)
+2. Download the RAK Device Firmware Upgrade (DFU) tool.
+    - [Windows OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip)
+    - [Mac OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_MacOS.zip)
+    - [Ubuntu](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_Ubuntu.zip)
 3. Connect the RAK4200 module with a computer through USB to TTL adapter as shown in Figure 1.
-4. Open the device firmware upgrade tool. Select the serial port and baud rate of the module and click the "Select Port" button.
+4. Open the RAK Device Firmware Upgrade (DFU) tool. Select the serial port and baud rate of the module and click the "Select Port" button.
 
 <rk-img
 src="/assets/images/wisduo/rak4200-module/quickstart/device-firmware-tool.png"

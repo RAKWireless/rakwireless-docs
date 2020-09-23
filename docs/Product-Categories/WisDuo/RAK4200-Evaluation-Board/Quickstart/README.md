@@ -821,8 +821,12 @@ The following steps show you how to update the firmware for RAK4200 WisDuo LPWAN
 1. Download and install the software needed in your PC:
 
 - [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)
-- [RAK Firmware Upgrade Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_Upgrade_Tool_V1.0.rar)
-- [RAK4200 Firmware](https://downloads.rakwireless.com/en/LoRa/RAK4200/Firmware/RAK4200_V3.2.0.12.rar)
+- [RAK4200 Firmware](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/RAK4200_Latest_Firmware.zip)
+- **RAK Device Firmware Upgrade (DFU) Tool**
+  - [Windows OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip)
+  - [Mac OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_MacOS.zip)
+  - [Ubuntu](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_Ubuntu.zip)
+
 
 2. Connect your RAK4200 Evaluation Board in your windows machine as instructed in the [Interfacing with RAK4200 Evaluation Board](#interfacing-with-rak4200-evaluation-board) section. 
 
@@ -834,34 +838,34 @@ at+set_config=device:boot
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/hdtvmsxeqpzo2tx53a2x.jpg"
-  width="45%"
+  width="80%"
   caption="Entering Boot Mode"
 />
 
 4. Close RAK serial port tool and open RAK firmware upgrade tool on your PC. Make sure to choose the correct COM Port.
    <rk-img
-     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/uq2mchzjcptfhpiem4p0.jpg"
+     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/rak-upgrade-tool.png"
      width="75%"
      caption="RAK Firmware Upgrade Tool"
    />
 
 5. Click “**Choose File**” button to choose a correct upgrade file:
    <rk-img
-     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/qaxfg8sllput33ycskaq.jpg"
+     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/choose-firmware.png"
      width="75%"
      caption="Choosing the Correct Upgrade file"
    />
 
 6. Click “**Start**” to upgrade, this may take a minute:
    <rk-img
-     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/dzctnumbclyzrawjf6kl.jpg"
+     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/upgrade-firmware.png"
      width="75%"
      caption="Firmware Upgrading in Process"
    />
 
 7. You should see something like the image below if everything went well.
    <rk-img
-     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/xrtlzi2q6cht8tfkn9kr.jpg"
+     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/upgrade-successful.png"
      width="75%"
      caption="Successfully Upgraded Firmware"
    />

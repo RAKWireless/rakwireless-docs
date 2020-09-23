@@ -234,6 +234,16 @@ export default {
     img: '/assets/images/wisgate/rak7258/quickstart/1.main/RAK7258_buy.png',
     store: 'https://store.rakwireless.com/products/rak7258-micro-gateway?utm_source=RAK7258Lite&utm_medium=Document'
   },
+  '/Product-Categories/WisGate/RAK7248/': {
+    label: 'RAK7248 WisGate Developer D4H',
+    img: '/assets/images/wisgate/rak7248/overview/RAK7248_buy.png',
+    store: 'https://store.rakwireless.com/products/rak7248'
+  },
+  '/Product-Categories/WisGate/RAK-Hotspot-Miner/': {
+    label: 'RAK Hotspot Miner',
+    img: '/assets/images/wisgate/rak-hotspot-miner/overview/RAK-Hotspot-Miner_buy.png',
+    store: 'https://store.rakwireless.com/products/rak-hotspot-miner'
+  },
 
 // WisBlock
 '/Product-Categories/WisBlock/RAK1920/': {

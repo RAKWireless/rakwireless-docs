@@ -198,4 +198,42 @@ module.exports = {
 
   ],
 
+  '/Product-Categories/WisGate/RAK7248/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisGate/RAK7248/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisGate/RAK7248/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+
+],
+
+'/Product-Categories/WisGate/RAK-Hotspot-Miner/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisGate/RAK-Hotspot-Miner/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisGate/RAK-Hotspot-Miner/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+
+],
+
 }

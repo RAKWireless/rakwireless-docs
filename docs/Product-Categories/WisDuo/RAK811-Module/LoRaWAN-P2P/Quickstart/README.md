@@ -1041,9 +1041,10 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
 
     - [RAK811 Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#firmware-os)
 
-2.	Download the device firmware upgrade (DFU) tool.
-
-    - [RAK Firmware Upgrade Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip)
+2.	Download the RAK Device Firmware Upgrade (DFU) tool.
+    - [Windows OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip)
+    - [Mac OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_MacOS.zip)
+    - [Ubuntu](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_Ubuntu.zip)
 
 3.	Connect the RAK811 module with a computer through a USB to TTL. Refer to [Figure 1](/Product-Categories/WisDuo/RAK811-Module/LoRaWAN-P2P/Quickstart/#connect-to-the-rak811).
 

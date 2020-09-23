@@ -1256,7 +1256,7 @@ at+set_config=device:boot
 
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/10.burning-firmware/jvuee0euhsqbsdnkd7cw.jpg"
-  width="100%"
+  width="80%"
   caption="Entering Boot Mode"
 />
 

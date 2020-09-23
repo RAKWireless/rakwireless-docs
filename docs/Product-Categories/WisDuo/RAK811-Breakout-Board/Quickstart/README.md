@@ -797,26 +797,31 @@ Yehey! You have successfully finished your RAK811 Breakout Board Set Up. You are
 
 ### Upgrading the Firmware
 
-If the firmware version of your **RAK811 Breakout Board** is newer than V3.0.0.0 or you have just burned the bootloader into RAK811 Breakout Board according to the **Burning Bootloader into the Device** section, proceed to Step 2.
 
-1. In case you have not just burned the bootloader, as instructed in the previous section you need to manually go into **boot mode**. Connect you board via the USB interface and enter the following **AT command** after you have connected via the proper COM port:
+If the firmware version of your **RAK811 Breakout Board** is newer than V3.0.0.0 or you have just burned the bootloader into the RAK811 Breakout Board according to the **Burning Bootloader into the Device** section, then proceed to Step 2.
+
+1. In case you have not just burned the bootloader, as instructed in the previous section, you need to go into **boot mode**. Connect your board via the USB interface and enter the following **AT command** after you have connected via the proper COM port:
 
 ```sh
 at+set_config=device:boot
 ```
 
 
-
 <rk-img
-  src="/assets/images/wisduo/rak811-breakout-board/quickstart/upgrading-the-firmware/vbshextj0q190mzk6hhf.jpg"
-  width="45%"
+  src="/assets/images/wisduo/rak811-breakout-board/quickstart/upgrading-the-firmware/1.bootmode.jpg"
+  width="90%"
   caption="Entering Boot Mode"
 />
 
-2. Download the **RAK Upgrade Tool** from the RAKwireless website **[here](https://downloads.rakwireless.com/en/LoRa/RAK612-LoRaButton/Tools/RAK%20LoRaButton%20Upgrade%20Tool%20V1.0.zip)**. Then, open the tool. Again don't forget to choose the correct port!
+
+2. Download and open the RAK Device Firmware Upgrade (DFU) tool.
+    - [Windows OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip)
+    - [Mac OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_MacOS.zip)
+    - [Ubuntu](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_Ubuntu.zip)
+
 
 <rk-img
-  src="/assets/images/wisduo/rak811-breakout-board/quickstart/upgrading-the-firmware/e9ratal5kgle1mwh4ufu.png"
+  src="/assets/images/wisduo/rak811-breakout-board/quickstart/upgrading-the-firmware/2.device-firmware.png"
   width="75%"
   caption="RAK Upgrade Tool"
 />
@@ -824,7 +829,7 @@ at+set_config=device:boot
 3. Click “**Choose File**” and choose the firmware you have downloaded for your desired frequency band.
 
 <rk-img
-  src="/assets/images/wisduo/rak811-breakout-board/quickstart/upgrading-the-firmware/nguqg8huem2urdte26ub.png"
+  src="/assets/images/wisduo/rak811-breakout-board/quickstart/upgrading-the-firmware/3.select-firmware.png"
   width="75%"
   caption="Choosing the Correct Upgrade file"
 />
@@ -832,7 +837,7 @@ at+set_config=device:boot
 4. Click “**Start**” to upgrade, this may take a minute:
 
 <rk-img
-  src="/assets/images/wisduo/rak811-breakout-board/quickstart/upgrading-the-firmware/wjdxnmvu2bwkjfj2rgmd.png"
+  src="/assets/images/wisduo/rak811-breakout-board/quickstart/upgrading-the-firmware/4.firmware-upgrading.png"
   width="75%"
   caption="Firmware Upgrading in Process"
 />
@@ -840,7 +845,7 @@ at+set_config=device:boot
 5. You should see something like the image in Figure 66, if everything went well.
 
 <rk-img
-  src="/assets/images/wisduo/rak811-breakout-board/quickstart/upgrading-the-firmware/e7dcwivj7lv7zupcekok.jpg"
+  src="/assets/images/wisduo/rak811-breakout-board/quickstart/upgrading-the-firmware/5.upgrade-success.png"
   width="75%"
   caption="Successfully Upgraded Firmware"
 />
@@ -855,12 +860,5 @@ at+set_config=device:boot
 at+set_config=device:restart
 ```
 
-<rk-img
-  src="/assets/images/wisduo/rak811-breakout-board/quickstart/upgrading-the-firmware/x0fsjpi4xc4hmatdcmyk.jpg"
-  width="45%"
-  caption="Restarting your Device"
-/>
 
-This information means that you have uploaded the Firmware successfully!
-
-If you want to configure your RAK811 Breakout Board using the available **AT commands**, check [AT Commands for RAK811 Breakout Board](/Product-Categories/WisDuo/RAK811-Breakout-Board/AT-Command-Manual/).
+If you want to configure your RAK811 Breakout Board using the available **AT commands**, check [AT Commands for RAK811 Breakout Board](/Product-Categories/WisDuo/RAK811-Breakout-Board/AT-Command-Manual/). 
