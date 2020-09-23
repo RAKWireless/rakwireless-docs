@@ -120,9 +120,9 @@ This section describes how to compile customized firmware using the RUI Online C
 
 ### Register and Sign in
 
-This is the URL to access to the beta version of the RUI Online Compiler: [http://18.166.76.71](http://18.166.76.71)
+Go to [build.rakwireless.com](build.rakwireless.com) to access the beta version of the RUI Online Compiler.
 
-1. Click this link to open the login interface of the RUI Online Compiler platform as shown in Figure 7. For the first time, you need to register an account.
+1. Open the login interface of the RUI Online Compiler platform as shown in Figure 7. For the first time, you need to register an account.
 
 <rk-img
   src="/assets/images/rui/rui-customized-development/rui-online-login.png"
