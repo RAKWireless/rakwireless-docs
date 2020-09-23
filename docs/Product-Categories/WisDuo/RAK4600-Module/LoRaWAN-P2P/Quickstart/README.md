@@ -23,7 +23,7 @@ Before going through the step in the installation guide of the RAK4600 WisDuo LP
 
 1. [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)
 2. [RAK4600 Firmware](/Product-Categories/WisDuo/RAK4600-Module/Datasheet/#firmware)
-3. [RAK Firmware Upgrade Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip)
+3. [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 <!-- 4. [J-Link Tool](https://downloads.rakwireless.com/en/Cellular/Tools/) -->
 
 
@@ -1160,7 +1160,7 @@ In the following sections, two (2) options for flashing new firmware in a RAK460
 
 #### Firmware Upgrade Through DAPLink
 
-Refer to the [RAKDAP1 Flash and Debug Tool](/Knowledge-Hub/Learn/RAKDAP1-Flash-and-Debug-Tool/) guide in the Knowledge Hub.
+Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool) guide in the Accesories Category.
 
 #### Through BLE
 

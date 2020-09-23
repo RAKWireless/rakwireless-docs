@@ -54,7 +54,7 @@ To flash a new firmware we use RAKDAP1, a J-Link/SWD adapter. It requires the Py
 
 ### Flash the firmware using DAPLink and RAKDAP
 
-Refer to the [RAKDAP1 Flash and Debug Tool](/Knowledge-Hub/Learn/RAKDAP1-Flash-and-Debug-Tool/) guide in the Knowledge Hub.
+Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool) guide in the Accesories Category.
 
 ## Interfacing with the RAK4260 Evaluation Board
 

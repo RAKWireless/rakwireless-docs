@@ -37,7 +37,7 @@ Once the porting the protocol stack is ready, customers can focus on the develop
 
 - Do not use the original bootloader that comes in RAK modules from the factory. In the case, the customer must provide his own version of bootloader.
 - Use RAK's bootloader and the upgrade the custom firmware by using RAK’s Device Firmware Upgrade Tool. You can download it from here:
-  - [Device Firmware Upgrade Tool for Windows](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip)
+  - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
   - [Device Firmware Upgrade Tool for MacOS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_MacOS.zip)
   - [Device Firmware Upgrade Tool for Ubuntu](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_Ubuntu.zip)
 

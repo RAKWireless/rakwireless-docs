@@ -1,0 +1,1 @@
+<rk-redirect to="/Product-Categories/Accessories/RAKARJ18/Overview/" />

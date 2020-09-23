@@ -20,6 +20,9 @@ module.exports = {
         '/Product-Categories/WisLink/',
         '/Product-Categories/WisHat/',
         '/Product-Categories/WisDuino/',
+        '/Product-Categories/Accessories/',
+        '/Product-Categories/Software-APIs-and-Libraries/',
+        '/Product-Categories/Software-Tools/',
       ]
     }
   ],

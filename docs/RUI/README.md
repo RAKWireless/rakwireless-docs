@@ -24,7 +24,7 @@ The content of this document applies to modules with firmware version **3.x.x.14
 
 ## RUI Customized Development
 
-**RAKWireless Unified Interface (RUI)** is the standard interface defined to simplify the firmware development for the ecosystem of the hardware of RAK. RUI defines an API that abstracts the complexity of the hardware layer. Through the RUI API, customers can control all the functionalities of the module without the need to deal with the complexity of low-level hardware protocols such as SPI, I2C, etc.
+**RAKwireless Unified Interface (RUI)** is the standard interface defined to simplify the firmware development for the ecosystem of the hardware of RAK. RUI defines an API that abstracts the complexity of the hardware layer. Through the RUI API, customers can control all the functionalities of the module without the need to deal with the complexity of low-level hardware protocols such as SPI, I2C, etc.
 
 ### RUI Framework
 

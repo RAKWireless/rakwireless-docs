@@ -280,7 +280,7 @@ We need to execute these steps in order for our device to connect with TTN, basi
 
 ###### Flash the Firmware using RAKDAP1
 
-Refer to the [RAKDAP1 Flash and Debug Tool](/Knowledge-Hub/Learn/RAKDAP1-Flash-and-Debug-Tool/) guide in the Knowledge Hub.
+Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool) guide in the Accesories Category.
 
 ##### Connecting to TTN
 

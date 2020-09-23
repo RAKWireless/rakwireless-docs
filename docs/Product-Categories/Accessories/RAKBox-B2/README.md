@@ -1,0 +1,1 @@
+<rk-redirect to="/Product-Categories/Accessories/RAKBox-B2/Overview/" />

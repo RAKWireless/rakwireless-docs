@@ -822,11 +822,7 @@ The following steps show you how to update the firmware for RAK4200 WisDuo LPWAN
 
 - [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)
 - [RAK4200 Firmware](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/RAK4200_Latest_Firmware.zip)
-- **RAK Device Firmware Upgrade (DFU) Tool**
-  - [Windows OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip)
-  - [Mac OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_MacOS.zip)
-  - [Ubuntu](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_Ubuntu.zip)
-
+- [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 2. Connect your RAK4200 Evaluation Board in your windows machine as instructed in the [Interfacing with RAK4200 Evaluation Board](#interfacing-with-rak4200-evaluation-board) section. 
 

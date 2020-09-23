@@ -974,7 +974,7 @@ If you want to get a pre-compiled firmware instead of compiling the source code 
 
 #### Flash the firmware using DAPLink and RAKDAP
 
-Refer to the [RAKDAP1 Flash and Debug Tool](/Knowledge-Hub/Learn/RAKDAP1-Flash-and-Debug-Tool/) guide in the Knowledge Hub.
+Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool) guide in the Accesories Category.
 
 ### Upgrading Firmware through DFU using BLE
 1. Download the DFU package of the RAK4600 Evaluation Board [**here**](https://downloads.rakwireless.com/en/LoRa/RAK4600/Firmware/DFU-Package/RAK4600_V3.0.0.7_dfu.zip) and save it on your mobile phone.

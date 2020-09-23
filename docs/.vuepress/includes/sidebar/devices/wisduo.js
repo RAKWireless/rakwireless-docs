@@ -1,4 +1,21 @@
 module.exports = {
+  '/Product-Categories/WisDuo/RAK4270-Breakout-Board/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisDuo/RAK4270-Breakout-Board/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisDuo/RAK4270-Breakout-Board/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+  ],
   '/Product-Categories/WisDuo/BastWAN/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisDuo/BastWAN/Overview/',

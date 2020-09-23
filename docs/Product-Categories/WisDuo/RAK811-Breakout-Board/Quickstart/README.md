@@ -815,9 +815,7 @@ at+set_config=device:boot
 
 
 2. Download and open the RAK Device Firmware Upgrade (DFU) tool.
-    - [Windows OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip)
-    - [Mac OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_MacOS.zip)
-    - [Ubuntu](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_Ubuntu.zip)
+    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 
 <rk-img

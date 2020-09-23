@@ -37,7 +37,7 @@
       >{{ name }}</div>
       <q-separator class="q-my-sm" />
       <div class="row items-center">
-        <div class="text-caption">
+        <div v-if="!v2" class="text-caption">
           Model:
           <b>{{ model_ }}</b>
         </div>
@@ -59,18 +59,34 @@
 import CommonMixin from './common.mixin'
 export default {
   name: 'RkProduct',
-  props: ['img', 'path', 'label', 'model'],
+  props: {
+    img: { type: String },
+    path: { type: String },
+    label: { type: String },
+    model: { type: String },
+    v2: { type: Boolean, default: false }
+  },
   mixins: [CommonMixin],
   data: () => ({
     hovered: false
   }),
   computed: {
     name() {
-      if (this.model) return this.label
-      else return this.label.replace(this.model_, '').trim()
+      if (this.v2) return this.label || 'RAK Product'
+
+      try {
+        if (this.model) return this.label
+        else return this.label.replace(this.model_, '').trim()
+      } catch {
+        return 'RAK Product'
+      }
     },
     model_() {
-      return this.model || this.label.split(' ')[0]
+      try {
+        return this.model || this.label.split(' ')[0]
+      } catch {
+        return 'RAK Model'
+      }
     }
   },
   methods: {

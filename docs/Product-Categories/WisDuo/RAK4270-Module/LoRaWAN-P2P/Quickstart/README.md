@@ -22,10 +22,7 @@ Before going through the step in the installation guide of the RAK4270 WisDuo LP
 #### Software Tools
 
 1. [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)
-2. **RAK Firmware Upgrade Tool**
-    - [Windows OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip)
-    - [Mac OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_MacOS.zip)
-    - [Ubuntu](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_Ubuntu.zip)
+2. [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 
 
@@ -1016,7 +1013,7 @@ In the following sections, two (2) options for flashing new firmware in a RAK427
 
 #### Firmware Upgrade Through DAPLink
 
-Refer to the [RAKDAP1 Flash and Debug Tool](/Knowledge-Hub/Learn/RAKDAP1-Flash-and-Debug-Tool/) guide in the Knowledge Hub.
+Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool) guide in the Accesories Category.
 
 #### Firmware Upgrade Through UART1
 
@@ -1040,10 +1037,8 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
     - [RAK4270 Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#software)
 
 
-2.	Download the RAK Device Firmware Upgrade (DFU) tool.
-    - [Windows OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip)
-    - [Mac OS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_MacOS.zip)
-    - [Ubuntu](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4_Ubuntu.zip)
+2.	Download the RAK Device Firmware Upgrade (DFU) tool. 
+    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 3.	Connect the RAK4270 module with a computer through a USB to TTL. Refer to [Figure 1](/Product-Categories/WisDuo/RAK4270-Module/LoRaWAN-P2P/Quickstart/#connect-to-the-rak4270)
 

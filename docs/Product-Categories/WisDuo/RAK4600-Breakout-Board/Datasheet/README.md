@@ -69,8 +69,8 @@ When programming via a JLINK tool, it is required to have all of the following 5
 4. **GND**
 5. **MCU_NRST**
 
-::: tip Note:
-:pencil: For the aforementioned reason, it is best you leave these exposed for programming purposes and not to remap them as GPIOs
+:::tip 📝 NOTE:
+For the aforementioned reason, it is best you leave these exposed for programming purposes and not to remap them as GPIOs.
 :::
 
 ##### UART Port
@@ -78,7 +78,7 @@ When programming via a JLINK tool, it is required to have all of the following 5
 There are two UART interfaces on RAK4600 Breakout Board:
 
 - **UART1** – recommended for debugging/firmware update
-- **UART2** – recommended for external MCU connection.
+- **UART2** – recommended for external MCU connection
 
 ##### I2C interface
 

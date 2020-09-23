@@ -42,7 +42,7 @@ Once the porting of the protocol stack is ready, you can focus on the developmen
 
 &nbsp;&nbsp;&nbsp;&nbsp;a. Do not use the original bootloader that comes in RAK modules from the factory. In this case, you must provide your own version of the bootloader. 
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;b. Use RAK bootloader and the upgrade the custom firmware by using RAK [Device Firmware Upgrade Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip). 
+&nbsp;&nbsp;&nbsp;&nbsp;b. Use RAK bootloader and the upgrade the custom firmware by using [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/).
 
 If you want to fully develop your own, you can refer to the schematic diagram and the datasheet of the MCU to implement the code. If you want to use RAK bootloader, continue reading the next section.
 

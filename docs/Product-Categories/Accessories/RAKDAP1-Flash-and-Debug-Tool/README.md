@@ -1,0 +1,1 @@
+<rk-redirect to="/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/" />

@@ -45,46 +45,46 @@ export default {
   //WisDuino
   '/Product-Categories/WisDuino/RAK811-Evaluation-Board/': {
     label: 'RAK811 LPWAN Evaluation Board',
-    img:   '/assets/images/wisduino/rak811-evaluation-board/quickstart/overview/RAK811-wisnode_buy.png',
+    img: '/assets/images/wisduino/rak811-evaluation-board/quickstart/overview/RAK811-wisnode_buy.png',
     store: 'https://store.rakwireless.com/products/rak811-wisnode-lora-module?utm_source=RAK811LPWANEvaluationBoard&utm_medium=Document'
   },
 
   //WisNode
   '/Product-Categories/WisNode/RAK612/': {
     label: 'RAK612 WisNode Button',
-    img:   '/assets/images/wisnode/rak612/quickstart/main/RAK612_buy.png',
+    img: '/assets/images/wisnode/rak612/quickstart/main/RAK612_buy.png',
     store: 'https://store.rakwireless.com/products/rak612-lora-button?utm_source=RAK612WisNodeButton&utm_medium=Document'
   },
   '/Product-Categories/WisNode/RAK7200/': {
     label: 'RAK7200 WisNode Track Lite',
-    img:   '/assets/images/wisnode/rak7200/quickstart/overview/RAK7200_buy.png',
+    img: '/assets/images/wisnode/rak7200/quickstart/overview/RAK7200_buy.png',
     store: 'https://store.rakwireless.com/products/rak7200-lora-tracker?utm_source=RAK7200WisNodeTrackLite&utm_medium=Document'
   },
   '/Product-Categories/WisNode/RAK7204/': {
     label: 'RAK7204 WisNode Sense Home',
-    img:   '/assets/images/wisnode/rak7204/quickstart/1.overview/RAK7204_buy.png',
+    img: '/assets/images/wisnode/rak7204/quickstart/1.overview/RAK7204_buy.png',
     store: 'https://store.rakwireless.com/products/rak7204-lpwan-environmental-node?utm_source=RAK7204WisNodeSense&utm_medium=Document'
   },
   '/Product-Categories/WisNode/RAK7431/': {
     label: 'RAK7431 WisNode Bridge Serial',
-    img:   '/assets/images/wisnode/rak7431/datasheet/RAK7431_buy.png',
+    img: '/assets/images/wisnode/rak7431/datasheet/RAK7431_buy.png',
     store: 'https://store.rakwireless.com/products/rak7431?utm_source=RAK7431WisNodeBridge&utm_medium=Document'
   },
 
   //WisTrio
   '/Product-Categories/WisTrio/RAK815/': {
     label: 'RAK815 WisTrio LPWAN Tracker',
-    img:   '/assets/images/wistrio/rak815/quickstart/1main/RAK815_buy.png',
+    img: '/assets/images/wistrio/rak815/quickstart/1main/RAK815_buy.png',
     store: 'https://store.rakwireless.com/products/rak815-hybrid-location-tracker?utm_source=RAK815HybridLocationTracker&utm_medium=Document'
   },
   '/Product-Categories/WisTrio/RAK5010/': {
     label: 'RAK5010 WisTrio NB-IoT Tracker Pro',
-    img:   '/assets/images/wistrio/rak5010/quickstart/1.overview/RAK5010_buy.png',
+    img: '/assets/images/wistrio/rak5010/quickstart/1.overview/RAK5010_buy.png',
     store: 'https://store.rakwireless.com/products/rak5010-nb-iot-tracker?utm_source=RAK5010WisTrioNB-IoTTracker&utm_medium=Document'
   },
   '/Product-Categories/WisTrio/RAK5010-M/': {
     label: 'RAK5010-M WisTrio NB-IoT Tracker',
-    img:   '/assets/images/wistrio/rak5010-m/overview/RAK5010-M_buy.png',
+    img: '/assets/images/wistrio/rak5010-m/overview/RAK5010-M_buy.png',
     store: 'https://store.rakwireless.com/products/rak5010-nb-iot-tracker?variant=35173395660958&utm_source=RAK5010-MWisTrioNB-IoTTracker&utm_medium=Document'
   },
   '/Product-Categories/WisTrio/RAK7205-5205/': {
@@ -140,6 +140,11 @@ export default {
     label: 'RAK4600 Breakout Board',
     img: '/assets/images/wisduo/rak4600-breakout-board/quickstart/main/RAK4600_Breakout_buy.png',
     store: 'https://store.rakwireless.com/products/rak4600-breakout-board?utm_source=RAK4600LPWANBreakoutModule&utm_medium=Document'
+  },
+  '/Product-Categories/WisDuo/RAK4270-Breakout-Board/': {
+    label: 'RAK4270 Breakout Board',
+    img: ' /assets/images/wisduo/rak4270-breakout-board/overview/RAK4270_buy.png',
+    store: 'https://store.rakwireless.com/'
   },
   '/Product-Categories/WisDuo/RAK811-Module/': {
     label: 'RAK811 WisDuo LPWAN Module',
@@ -245,104 +250,161 @@ export default {
     store: 'https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document'
   },
 
-// WisBlock
-'/Product-Categories/WisBlock/RAK1920/': {
-  label: 'RAK1920 WisBlock WisIO Module',
-  img:   '/assets/images/wisblock/rak1920/overview/RAK1920_buy.png',
-  store: 'https://store.rakwireless.com'
-},
+  // WisBlock
+  '/Product-Categories/WisBlock/RAK1920/': {
+    label: 'RAK1920 WisBlock WisIO Module',
+    img: '/assets/images/wisblock/rak1920/overview/RAK1920_buy.png',
+    store: 'https://store.rakwireless.com'
+  },
 
-'/Product-Categories/WisBlock/RAK1921/': {
-  label: 'RAK1921 WisBlock WisIO Module',
-  img:   '/assets/images/wisblock/rak1921/overview/RAK1921_buy.png',
-  store: 'https://store.rakwireless.com'
-},
+  '/Product-Categories/WisBlock/RAK1921/': {
+    label: 'RAK1921 WisBlock WisIO Module',
+    img: '/assets/images/wisblock/rak1921/overview/RAK1921_buy.png',
+    store: 'https://store.rakwireless.com'
+  },
 
-'/Product-Categories/WisBlock/RAK2305/': {
-  label: 'RAK2305 WisBlock WisIO Module',
-  img:   '/assets/images/wisblock/rak2305/overview/RAK2305_buy.png',
-  store: 'https://store.rakwireless.com'
-},
+  '/Product-Categories/WisBlock/RAK2305/': {
+    label: 'RAK2305 WisBlock WisIO Module',
+    img: '/assets/images/wisblock/rak2305/overview/RAK2305_buy.png',
+    store: 'https://store.rakwireless.com'
+  },
 
-'/Product-Categories/WisBlock/RAK4631/': {
-  label: 'RAK4631 WisBlock WisCore Module',
-  img:   '/assets/images/wisblock/rak4631/overview/RAK4631_buy.png',
-  store: 'https://store.rakwireless.com/?utm_source=RAK4631WisBlockLPWANModule&utm_medium=Document'
-},
+  '/Product-Categories/WisBlock/RAK4631/': {
+    label: 'RAK4631 WisBlock WisCore Module',
+    img: '/assets/images/wisblock/rak4631/overview/RAK4631_buy.png',
+    store: 'https://store.rakwireless.com/?utm_source=RAK4631WisBlockLPWANModule&utm_medium=Document'
+  },
 
-'/Product-Categories/WisBlock/RAK5005-O/': {
-  label: 'RAK5005-O WisBlock WisBase Board',
-  img:   '/assets/images/wisblock/rak5005-o/overview/RAK5005-O_buy.png',
-  store: 'https://store.rakwireless.com/?utm_source=RAK5005-OWisBlockBaseBoard&utm_medium=Document'
-},
+  '/Product-Categories/WisBlock/RAK5005-O/': {
+    label: 'RAK5005-O WisBlock WisBase Board',
+    img: '/assets/images/wisblock/rak5005-o/overview/RAK5005-O_buy.png',
+    store: 'https://store.rakwireless.com/?utm_source=RAK5005-OWisBlockBaseBoard&utm_medium=Document'
+  },
 
-'/Product-Categories/WisBlock/RAK5801/': {
-  label: 'RAK5801 WisBlock WisIO Module',
-  img:   '/assets/images/wisblock/rak5801/overview/RAK5801_buy.png',
-  store: 'https://store.rakwireless.com'
-},
+  '/Product-Categories/WisBlock/RAK5801/': {
+    label: 'RAK5801 WisBlock WisIO Module',
+    img: '/assets/images/wisblock/rak5801/overview/RAK5801_buy.png',
+    store: 'https://store.rakwireless.com'
+  },
 
-'/Product-Categories/WisBlock/RAK5802/': {
-  label: 'RAK5802 WisBlock WisIO Module',
-  img:   '/assets/images/wisblock/rak5802/overview/RAK5802_buy.png',
-  store: 'https://store.rakwireless.com'
-},
+  '/Product-Categories/WisBlock/RAK5802/': {
+    label: 'RAK5802 WisBlock WisIO Module',
+    img: '/assets/images/wisblock/rak5802/overview/RAK5802_buy.png',
+    store: 'https://store.rakwireless.com'
+  },
 
-'/Product-Categories/WisBlock/RAK5804/': {
-  label: 'RAK5804 WisBlock WisIO Module',
-  img:   '/assets/images/wisblock/rak5804/overview/RAK5804_buy.png',
-  store: 'https://store.rakwireless.com'
-},
+  '/Product-Categories/WisBlock/RAK5804/': {
+    label: 'RAK5804 WisBlock WisIO Module',
+    img: '/assets/images/wisblock/rak5804/overview/RAK5804_buy.png',
+    store: 'https://store.rakwireless.com'
+  },
 
-'/Product-Categories/WisBlock/RAK5860/': {
-  label: 'RAK5860 WisBlock WisIO Module',
-  img:   '/assets/images/wisblock/rak5860/overview/RAK5860_buy.png',
-  store: 'https://store.rakwireless.com'
-},
+  '/Product-Categories/WisBlock/RAK5860/': {
+    label: 'RAK5860 WisBlock WisIO Module',
+    img: '/assets/images/wisblock/rak5860/overview/RAK5860_buy.png',
+    store: 'https://store.rakwireless.com'
+  },
 
-'/Product-Categories/WisBlock/RAK1901/': {
-  label: 'RAK1901 WisBlock Temperature and Humidity Sensor',
-  img:   '/assets/images/wisblock/rak1901/overview/RAK1901_buy.png',
-  store: 'https://store.rakwireless.com'
-},
+  '/Product-Categories/WisBlock/RAK1901/': {
+    label: 'RAK1901 WisBlock Temperature and Humidity Sensor',
+    img: '/assets/images/wisblock/rak1901/overview/RAK1901_buy.png',
+    store: 'https://store.rakwireless.com'
+  },
 
-'/Product-Categories/WisBlock/RAK1902/': {
-  label: 'RAK1902 WisBlock Barometer Pressure Sensor',
-  img:   '/assets/images/wisblock/rak1902/overview/RAK1902_buy.png',
-  store: 'https://store.rakwireless.com'
-},
+  '/Product-Categories/WisBlock/RAK1902/': {
+    label: 'RAK1902 WisBlock Barometer Pressure Sensor',
+    img: '/assets/images/wisblock/rak1902/overview/RAK1902_buy.png',
+    store: 'https://store.rakwireless.com'
+  },
 
-'/Product-Categories/WisBlock/RAK1903/': {
-  label: 'RAK1903 WisBlock Ambient Light Sensor',
-  img:   '/assets/images/wisblock/rak1903/overview/RAK1903_buy.png',
-  store: 'https://store.rakwireless.com'
-},
+  '/Product-Categories/WisBlock/RAK1903/': {
+    label: 'RAK1903 WisBlock Ambient Light Sensor',
+    img: '/assets/images/wisblock/rak1903/overview/RAK1903_buy.png',
+    store: 'https://store.rakwireless.com'
+  },
 
-'/Product-Categories/WisBlock/RAK1904/': {
-  label: 'RAK1904 WisBlock 3-axis Acceleration Sensor',
-  img:   '/assets/images/wisblock/rak1904/overview/RAK1904_buy.png',
-  store: 'https://store.rakwireless.com'
-},
+  '/Product-Categories/WisBlock/RAK1904/': {
+    label: 'RAK1904 WisBlock 3-axis Acceleration Sensor',
+    img: '/assets/images/wisblock/rak1904/overview/RAK1904_buy.png',
+    store: 'https://store.rakwireless.com'
+  },
 
-'/Product-Categories/WisBlock/RAK1906/': {
-  label: 'RAK1906 WisBlock Environmental Sensor',
-  img:   '/assets/images/wisblock/rak1906/overview/RAK1906_buy.png',
-  store: 'https://store.rakwireless.com'
-},
+  '/Product-Categories/WisBlock/RAK1906/': {
+    label: 'RAK1906 WisBlock Environmental Sensor',
+    img: '/assets/images/wisblock/rak1906/overview/RAK1906_buy.png',
+    store: 'https://store.rakwireless.com'
+  },
 
-'/Product-Categories/WisBlock/RAK1910/': {
-  label: 'RAK1910 WisBlock GNSS Location Module',
-  img:   '/assets/images/wisblock/rak1910/overview/RAK1910_buy.png',
-  store: 'https://store.rakwireless.com'
-},
+  '/Product-Categories/WisBlock/RAK1910/': {
+    label: 'RAK1910 WisBlock GNSS Location Module',
+    img: '/assets/images/wisblock/rak1910/overview/RAK1910_buy.png',
+    store: 'https://store.rakwireless.com'
+  },
 
-'/Product-Categories/WisBlock/RAK5811/': {
-  label: 'RAK5811 WisBlock 0-5V Interface Module',
-  img:   '/assets/images/wisblock/rak5811/overview/RAK5811_buy.png',
-  store: 'https://store.rakwireless.com'
-},
+  '/Product-Categories/WisBlock/RAK5811/': {
+    label: 'RAK5811 WisBlock 0-5V Interface Module',
+    img: '/assets/images/wisblock/rak5811/overview/RAK5811_buy.png',
+    store: 'https://store.rakwireless.com'
+  },
+
+  // Accessories
+  '/Product-Categories/Accessories/RAKARJ14/': {
+    label: 'RAKARJ14 915MHz White Blade Antenna',
+    img: '/assets/images/accessories/rakarj14/White 915MHz Antenna Features.png',
+    store: 'https://store.rakwireless.com'
+  },
+  '/Product-Categories/Accessories/RAKARJ15/': {
+    label: 'RAKARJ15 868MHz White Blade Antenna',
+    img: '/assets/images/accessories/rakarj15/White 868MHz Antenna Features.png',
+    store: 'https://store.rakwireless.com'
+  },
+  '/Product-Categories/Accessories/RAKARJ16/': {
+    label: 'RAKARJ16 915MHz Black Blade Antenna',
+    img: '/assets/images/accessories/rakarj16/Black 915MHz Antenna Features.png',
+    store: 'https://store.rakwireless.com'
+  },
+  '/Product-Categories/Accessories/RAKARJ17/': {
+    label: 'RAKARJ17 915MHz Black Blade Antenna',
+    img: '/assets/images/accessories/rakarj17/Black 868MHz Antenna Features.png',
+    store: 'https://store.rakwireless.com'
+  },
+  '/Product-Categories/Accessories/RAKARJ18/': {
+    label: 'RAKARJ18 916MHz Yellow Antenna',
+    img: '/assets/images/accessories/rakarj18/KRAKBJ2701C00L---916MHz天线_4.png',
+    store: 'https://store.rakwireless.com'
+  },
+  '/Product-Categories/Accessories/RAKARJ19/': {
+    label: 'RAKARJ19 868MHz Gray Antenna',
+    img: '/assets/images/accessories/rakarj19/KRAKBJ2701C00M---868MHz_02.png',
+    store: 'https://store.rakwireless.com'
+  },
+  '/Product-Categories/Accessories/RAKBox-B2/': {
+    label: 'WisBlock RAKBox-B2 Enclosure',
+    img: '/assets/images/accessories/rakbox-b2/overview/overview.png',
+    store: 'https://store.rakwireless.com'
+  },
+  '/Product-Categories/Accessories/RAKBox-B3/': {
+    label: 'WisBlock RAKBox-B3 Enclosure',
+    img: '/assets/images/accessories/rakbox-b3/overview/overview.png',
+    store: 'https://store.rakwireless.com'
+  },
+  '/Product-Categories/Accessories/RAKBox-B4/': {
+    label: 'WisBlock RAKBox-B4 Enclosure',
+    img: '/assets/images/accessories/rakbox-b4/overview/overview.png',
+    store: 'https://store.rakwireless.com'
+  },
+  '/Product-Categories/Accessories/RAKBox-B5/': {
+    label: 'WisBlock RAKBox-B5 Enclosure',
+    img: '/assets/images/accessories/rakbox-b5/overview/overview.png',
+    store: 'https://store.rakwireless.com'
+  },
+  '/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/': {
+    label: 'RAKDAP1 Flash and Debug Tool',
+    img: '/assets/images/accessories/rakdap1-flash-and-debug-tool/RAKDAP1_buy.png',
+    store: 'https://store.rakwireless.com/products/daplink-tool'
+  },
 
 }
-  
+
 
 

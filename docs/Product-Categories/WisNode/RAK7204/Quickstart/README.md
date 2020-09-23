@@ -1165,8 +1165,8 @@ You can burn the bootloader in your RAK7204 WisNode Sense Home by following the 
 3. Connect the RAK7204 WisNode Sense Home on your Windows PC's USB Interface and press the RST Button or power it on again.  Open the STM32CubeProgrammer Software and Select UART type.
 
 <rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/9.burning-bootloader/sq2wpjcca5wdlbylyi4w.jpg"
-  width="75%"
+  src="/assets/images/wisnode/rak7204/quickstart/3.interfacing/rak7204-pc.png"
+  width="70%"
   caption="USB Interface"
 />
 
@@ -1260,8 +1260,7 @@ at+set_config=device:boot
   caption="Entering Boot Mode"
 />
 
-- Download the **RAK Upgrade Tool** from the RAKwireless website [here](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip) then, open the tool. 
-
+- Download the [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/) from the RAKwireless website.
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/10.burning-firmware/rak-upgrade-tool.png"
   width="75%"
