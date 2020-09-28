@@ -226,6 +226,14 @@ module.exports = {
   sidebarDepth: 4
 },
 {
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisGate/RAK-Hotspot-Miner/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
   title: 'Datasheet',
   path: '/Product-Categories/WisGate/RAK-Hotspot-Miner/Datasheet/',
   collapsable: false,

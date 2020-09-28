@@ -4,7 +4,7 @@ tags:
   - datasheet
   - wisgate
 next: false
-prev: ../Overview/
+prev: ../Quickstart/
 ---
 
 # RAK Hotspot Miner Datasheet
@@ -55,7 +55,6 @@ software, and a reference design that is open source for anyone to improve upon
 - 2GB on-board RAM
 - 32GB SD card
 - Based on the LoRa Concentrator Engine: Semtech® SX1302
-- Built-in Ublox ZOE-M8Q GPS Module
 - Built-in Heat Sink for thermal heat dissipation management
 - Supports 5V/ 3A power supply
 - IP30 housing
@@ -77,7 +76,7 @@ The outer dimension of RAK Hotspot Miner is **92 x 68.3 x 57.2 mm**.
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot-miner/datasheet/dimensions.png"
-  width="60%"
+  width="40%"
   caption="Device Dimensions"
 /> 
 

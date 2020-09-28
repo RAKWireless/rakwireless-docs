@@ -4,7 +4,7 @@ rak_img: /assets/images/wisgate/rak-hotspot-miner/overview/RAK-Hotspot-Miner_hom
 rak_desc: Efficient miner for a new cryptocurrency, Helium (HNT) .Complete set-up in minutes using a smartphone. LongFi™ technology maximizes range and battery life. Low Power – uses about the same amount as a 5W LED bulb. Easily manage Hotspots and tokens from the mobile app
 rak_grp: [wisgate, developer]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 rak_model: RAK Hotspot Miner
 ---
 
@@ -12,6 +12,7 @@ rak_model: RAK Hotspot Miner
 
 Thank you for choosing **RAK Hotspot Miner** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 
 ## Product Background
@@ -58,7 +59,6 @@ software, and a reference design that is open source for anyone to improve upon
 - 2GB on-board RAM
 - 32GB SD card
 - Based on the LoRa Concentrator Engine: Semtech® SX1302
-- Built-in Ublox ZOE-M8Q GPS Module
 - Built-in Heat Sink for thermal heat dissipation management
 - Supports 5V/ 3A power supply
 - IP30 housing

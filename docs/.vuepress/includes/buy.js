@@ -237,12 +237,12 @@ export default {
   '/Product-Categories/WisGate/RAK7248/': {
     label: 'RAK7248 WisGate Developer D4H',
     img: '/assets/images/wisgate/rak7248/overview/RAK7248_buy.png',
-    store: 'https://store.rakwireless.com/products/rak7248'
+    store: 'https://store.rakwireless.com/products/rak7248?utm_source=RAK7248WisGateDeveloperD4H&utm_medium=Document'
   },
   '/Product-Categories/WisGate/RAK-Hotspot-Miner/': {
     label: 'RAK Hotspot Miner',
     img: '/assets/images/wisgate/rak-hotspot-miner/overview/RAK-Hotspot-Miner_buy.png',
-    store: 'https://store.rakwireless.com/products/rak-hotspot-miner'
+    store: 'https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document'
   },
 
 // WisBlock
