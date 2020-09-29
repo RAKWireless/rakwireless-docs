@@ -217,6 +217,9 @@ export default {
       // replace all table with q-table instances
       const tables = document.getElementsByTagName('table')
       for (const tbl of tables) {
+        // skip pdf-container
+        if (tbl.id === 'pdf-container') continue
+
         // skip processed
         if (
           tbl.parentNode &&
@@ -229,6 +232,7 @@ export default {
 
         const qtable = document.createElement('div')
         qtable.classList.add(
+          'pdf-group',
           'q-markup-table',
           'q-table__container',
           'q-table__card',

@@ -1,7 +1,32 @@
 <template>
-  <q-page  style="max-width: 1250px; margin: 0 auto; padding: 2rem 2.5rem">
+  <q-page style="max-width: 1250px; margin: 0 auto; padding: 2rem 2.5rem">
     <rk-breadcrumbs :sidebar-items="sidebarItems" />
-    <Content id="nodeToRenderAsPDF" class="fit theme-default-content" />
+
+    <table id="pdf-container">
+      <thead id="pdf-header">
+        <tr>
+          <th>
+            <pdf-header />
+          </th>
+        </tr>
+      </thead>
+      <!-- No footer as per suggestion -->
+      <tfoot id="pdf-footer">
+        <tr>
+          <td>
+            <pdf-footer v-if="false" />
+          </td>
+        </tr>
+      </tfoot>
+
+      <tbody>
+        <tr>
+          <td>
+            <Content id="pdf-content" class="theme-default-content" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
     <PageEdit />
     <q-separator inset />
@@ -13,10 +38,12 @@
 import PageEdit from '@theme/components/PageEdit.vue'
 import PageNav from '@theme/components/PageNav.vue'
 import RkBreadcrumbs from '@theme/components/RkBreadcrumbs.vue'
+import PdfHeader from './PdfHeader'
+import PdfFooter from './PdfFooter'
 
 export default {
-  components: { PageEdit, PageNav, RkBreadcrumbs },
-  props: ['sidebarItems']
+  components: { PageEdit, PageNav, RkBreadcrumbs, PdfHeader, PdfFooter },
+  props: ['sidebarItems'],
 }
 </script>
 
@@ -27,6 +54,7 @@ export default {
   padding-bottom: 2rem;
   display: block;
 }
+
 .theme-default-content {
   max-width: 2000px !important;
   padding: 0 !important;

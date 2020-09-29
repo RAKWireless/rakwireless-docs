@@ -1,5 +1,5 @@
 <template>
-  <div style="padding: 0 0 2.5rem 0">
+  <div style="padding: 0 0 2.5rem 0; position:relative; z-index:1;">
     <q-breadcrumbs class="text-grey-7" gutter="xs">
       <template v-slot:separator>
         <q-icon size="1.5em" name="chevron_right" color="primary" />

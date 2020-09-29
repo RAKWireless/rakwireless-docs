@@ -41,17 +41,107 @@ code, a {
     // white-space: normal;
  }
 
+
+.q-page > .q-markup-table{
+    border:0;
+    margin-top: 0;
+    background:none;
+    overflow:visible;
+}
+.q-page > .q-table__card{
+    border-radius:0;
+    background:none;
+}
+
+@page {
+    size: Legal;
+    margin: 0 !important;
+    -webkit-print-color-adjust: exact;
+}
+
+@media screen {
+    #pdf-header, #pdf-footer {
+        display: none;
+    }
+}
+
 @media print {
     .q-header,
     .q-drawer,
     .q-footer,
     .page-edit,
     .page-nav,
-    .q-pa-lg,
+    .q-page > div:first-child,
+    .q-page-nav,
+    .q-breadcrumbs,
+    .q-page-sticky,
+    .header-anchor,
     #launcher{
         display:none;
     }
-    .q-page-container{
+    
+    .q-page-edit > div:nth-child(1){
+        display:none;
+    }
+
+    .theme-default-content:not(.custom) > h1:first-child{
+        margin-top:-50px;
+        padding-top:0;
+    }
+
+    .q-page, .q-page-container, body {
+        margin: 0 !important;
         padding:0 !important;
+    }
+    html, body, main {
+        -webkit-print-color-adjust: exact;
+    }
+    #pdf-content {
+        margin: 0 50px 0 50px;
+    }
+    table#pdf-container {
+        page-break-inside: auto;
+    }
+    table#pdf-container > tr {
+        page-break-inside:avoid;
+        page-break-after:auto
+    }
+    thead#pdf-header {
+        display:table-header-group;
+    }
+    #pdf-header > tr > th {
+        padding-bottom: 35px !important;
+    }
+    #pdf-footer > tr > td {
+        padding-top: 35px !important;
+    }
+    tfoot#pdf-footer {
+        display: table-footer-group;
+    }
+    .pdf-group {
+        page-break-inside: avoid;
+    }
+    .qpage, .q-page-container {
+        margin: 0 !important;
+        padding:0 !important;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        padding: 10px 0 0 0 !important;
+        margin: 0 !important;
+    }
+    .column{
+        page-break-inside: avoid;
+    }
+    .custom-block {
+        page-break-inside: avoid;
+    }
+    .q-page-edit{
+        padding-left:50px;
+        padding-right:50px;
+    }
+    .q-page-edit ~ .q-separator{
+        margin-left:50px;
+        margin-right:50px;
+        width:calc(100% - 100px);
     }
 }
