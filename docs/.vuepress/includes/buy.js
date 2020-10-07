@@ -378,6 +378,11 @@ export default {
     img: '/assets/images/accessories/rakarj19/KRAKBJ2701C00M---868MHz_02.png',
     store: 'https://store.rakwireless.com'
   },
+  '/Product-Categories/Accessories/RAKA0C52/': {
+    label: 'RAKA0C52 Magnetic Antenna Base',
+    img: '/assets/images/accessories/rak0c52/1.antenna-up.png',
+    store: 'https://store.rakwireless.com/products/antenna-magnetic-base?utm_source=MagneticAntennaBase&utm_medium=Document'
+  },
   '/Product-Categories/Accessories/RAKBox-B2/': {
     label: 'WisBlock RAKBox-B2 Enclosure',
     img: '/assets/images/accessories/rakbox-b2/overview/overview.png',

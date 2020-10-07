@@ -15,6 +15,7 @@ Thank you for choosing **RAK1904 WisBlock 3-axis Acceleration Sensor** in your a
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
+* [RAK1904 3D Model](/assets/files/wisblock-3d/pwb-rak190x.stp)
 
 **Examples**
 * [Sample Code: RAK1904](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK1904_Accelerate_LIS3DH)

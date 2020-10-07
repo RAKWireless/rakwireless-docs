@@ -28,7 +28,10 @@ RAK2247 supports development based on multiple platforms, you can choose suitabl
   * [RAK2247 USB + OpenWRT Firmware](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/MT7628-Firmware/RAK2247%26RAK833-USB-openwrt-ramips-mt7628.rar)
   * [RAK2247 SPI + OpenWRT Source Code Repository](https://github.com/RAKWireless/RAK831-LoRaGateway-OpenWRT-MT7628)
   * [RAK2247 SPI + OpenWRT Firmware](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/MT7628-Firmware/RAK833%26RAK2247_SPI_MT7628_OpenWRT_V2.0_20190505.bin)
-  
+* **RAK2247 USB + SolidRun(IMX6)**
+  * [Yocto Quickstart](https://github.com/RAKWireless/RAK833-LoRaGateway-SolidRun-Yocto)
+  * [Debian Quickstart](https://github.com/RAKWireless/RAK833-LoRaGateway-SolidRun-Debian)
+
 ## Product Description
 
 The **RAK2247 WisLink LPWAN Concentrator** is a LoRa Concentrator module with mini-PCIe form factor based on the SX1301. This enables easy integration into routers and other networking equipment, adding gateway capabilities. The module can be used in any embedded platform offering a mini-PCIe slot with an SPI or USB connection.

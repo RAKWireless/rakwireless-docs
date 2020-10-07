@@ -15,6 +15,7 @@ Thank you for choosing **RAK2305 WisBlock WiFi Interface Module** in your awesom
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
+* [RAK2305 3D Model](/assets/files/wisblock-3d/pwb-rak2305.stp)
 
 **Examples**
 * [Sample Code: WiFi](https://github.com/RAKWireless/WisBlock/tree/master/examples/communications/WiFi)

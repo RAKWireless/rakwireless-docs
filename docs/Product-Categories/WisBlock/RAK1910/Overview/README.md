@@ -15,6 +15,7 @@ Thank you for choosing **RAK1910 WisBlock GNSS Location Module** in your awesome
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
+* [RAK1910 3D Model](/assets/files/wisblock-3d/pwb-rak1910.stp)
 
 **Examples**
 * [Sample Code: RAK1910](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK1910_GPS_UBLOX7)

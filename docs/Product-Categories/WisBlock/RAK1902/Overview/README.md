@@ -15,6 +15,7 @@ Thank you for choosing **RAK1902 WisBlock Barometer Pressure Sensor** in your aw
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
+* [RAK1902 3D Model](/assets/files/wisblock-3d/pwb-rak190x.stp)
 
 **Examples**
 * [Sample Code: RAK1902](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK1902_Pressure_LPS22HB)

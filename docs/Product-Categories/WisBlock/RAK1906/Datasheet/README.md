@@ -8,24 +8,30 @@ prev: ../Overview/
 # RAK1906 WisBlock Environmental Sensor Datasheet
 
 ## Overview
+
 ### Description
 
-The RAK1906 WisBlock Environmental Sensor module, part of the RAK Wireless Wisblock series, is a 4-in-1 digital sensor board that comprises gas, humidity pressure, and temperature sensor based on the Bosch® BME680 module. The RAK1906 is ideal for applications such as: indoor air quality, home automation, and building IoT solutions. 
+The RAK1906 WisBlock Environmental Sensor module, part of the RAK Wireless Wisblock series, is a 4-in-1 digital sensor board that comprises gas, humidity pressure, and temperature sensor based on the Bosch® BME680 module. The RAK1906 is ideal for applications such as: indoor air quality, home automation, and building IoT solutions.
 
-### Features 
-* **Temperature range**: -40 to 85 °C
-* **Humidity range**: 0 to 100%
-* **Pressure range**: 300 to 1100 hPa
-* **Gas sensor response time**: < 1s
-* **Gas sensor output**: direct output of IAQ (Indoor Air Quality) index
-* **Module size**: 10 x 10mm
+### Features
+
+- **Temperature range**: -40 to 85 °C
+- **Humidity range**: 0 to 100%
+- **Pressure range**: 300 to 1100 hPa
+- **Gas sensor response time**: < 1s
+- **Gas sensor output**: direct output of IAQ (Indoor Air Quality) index
+- **Module size**: 10 x 10mm
 
 ## Specifications
+
 ### Overview
+
 <!-- Insert Picture of Sensor with it's dimensions -->
 
 #### Mounting
+
 The RAK1906 module can be mounted on the slots: A, B, C, or D of the WisBase board. Figure 1 shows the mounting mechanism of the RAK1906 on a WisBase module, such as the RAK5005-O.
+
 <rk-img
   src="/assets/images/wisblock/rak1906/datasheet/RAK19xx_mounting.png"
   width="50%"
@@ -33,13 +39,16 @@ The RAK1906 module can be mounted on the slots: A, B, C, or D of the WisBase boa
 />
 
 ### Hardware
-####  Chipset
+
+#### Chipset
+
 | Vendor | Part number |
-| --     | --          |
-| BOSCH | BME680 |
+| ------ | ----------- |
+| BOSCH  | BME680      |
 
 #### Pin Definition
-The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1906 module to be mounted on a WisBlock base board, such as RAK5005-O. The pin order of the connector  and the definition of the pinout are shown in Figure 2. Note, only the I2C related pin, VDD, and GND are connected to this module. 
+
+The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1906 module to be mounted on a WisBlock base board, such as RAK5005-O. The pin order of the connector and the definition of the pinout are shown in Figure 2. Note, only the I2C related pin, VDD, and GND are connected to this module.
 
 <rk-img
   src="/assets/images/wisblock/rak1906/datasheet/RAK1906_connector_pinout.png"
@@ -49,9 +58,10 @@ The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO conn
 
 Pins 10, 12, 13, and 15 are connected to the interrupt pins of LIS3DH, please refer to the datasheet of LIS3DH for details.
 
-
 #### Sensors
-##### Temperature Sensor 
+
+##### Temperature Sensor
+
 <table  style="text-align: center">
 <thead>
   <tr>
@@ -113,6 +123,7 @@ Pins 10, 12, 13, and 15 are connected to the interrupt pins of LIS3DH, please re
 </table>
 
 ##### Humidity Sensor
+
 <table style="text-align: center">
 <thead>
   <tr>
@@ -182,6 +193,7 @@ Pins 10, 12, 13, and 15 are connected to the interrupt pins of LIS3DH, please re
 </table>
 
 ##### Pressure Sensor
+
 <table style="text-align: center">
 <thead>
   <tr>
@@ -256,6 +268,7 @@ Pins 10, 12, 13, and 15 are connected to the interrupt pins of LIS3DH, please re
 </table>
 
 ##### AQI Sensor
+
 <table style="text-align: center">
 <thead>
   <tr>
@@ -326,18 +339,21 @@ Pins 10, 12, 13, and 15 are connected to the interrupt pins of LIS3DH, please re
 </table>
 
 #### Electrical Characteristics
-##### Recommended Operating Conditions
-| Symbol | Description | Min. | Nom. | Max. | Unit |
-| --     | --          | :-:  | :-:  | :-:  | :-:  |
-| V<sub>DD</sub> | Power supply for the module | 1.71 | 1.8 | 3.6 | V | 
-| I<sub>sleep</sub> | Sleep current | - | 0.15 | - | uA | 
-| I<sub>DD</sub> | Humidity Measure current | - | 340 | - | uA | 
-| I<sub>DD</sub> | Pressure Measure current | - | 714 | - | uA | 
-| I<sub>DD</sub> | Temperature Measure current | - | 350 | - | uA | 
 
+##### Recommended Operating Conditions
+
+| Symbol            | Description                 | Min. | Nom. | Max. | Unit |
+| ----------------- | --------------------------- | :--: | :--: | :--: | :--: |
+| V<sub>DD</sub>    | Power supply for the module | 1.71 | 1.8  | 3.6  |  V   |
+| I<sub>sleep</sub> | Sleep current               |  -   | 0.15 |  -   |  uA  |
+| I<sub>DD</sub>    | Humidity Measure current    |  -   | 340  |  -   |  uA  |
+| I<sub>DD</sub>    | Pressure Measure current    |  -   | 714  |  -   |  uA  |
+| I<sub>DD</sub>    | Temperature Measure current |  -   | 350  |  -   |  uA  |
 
 #### Mechanical Characteristics
+
 Figure 3 shows the dimensions and the mechanic drawing of the RAK1906 module.
+
 <rk-img
   src="/assets/images/wisblock/rak1906/datasheet/RAK19xx_mechanic_drawing.png"
   width="60%"
@@ -345,10 +361,11 @@ Figure 3 shows the dimensions and the mechanic drawing of the RAK1906 module.
 />
 
 #### Schematic Diagram
+
 The Figure 4 shows the schematic of the RAK1906 module.
+
 <rk-img
   src="/assets/images/wisblock/rak1906/datasheet/RAK1906_schematics.png"
   width="70%"
   caption="RAK1906 WisBlock Environmental Sensor schematics"
 />
-

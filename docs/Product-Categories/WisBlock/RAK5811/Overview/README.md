@@ -15,6 +15,7 @@ Thank you for choosing **RAK5811 WisBlock 0-5V Interface Module** in your awesom
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
+* [RAK5811 3D Model](/assets/files/wisblock-3d/pwb-rak5811.stp)
 
 **Examples**:
 

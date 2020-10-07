@@ -165,6 +165,16 @@ module.exports = {
       sidebarDepth: 4
     }
   ],
+  '/Product-Categories/Accessories/RAKA0C52/': [
+      {
+        title: 'Overview',
+        path: '/Product-Categories/Accessories/RAKA0C52/Overview/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      }
+  ],
 
   //hardware-tools
   '/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/': [

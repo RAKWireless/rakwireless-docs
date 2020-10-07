@@ -15,6 +15,7 @@ Thank you for choosing **RAK1903 WisBlock Ambient Light Sensor** in your awesome
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
+* [RAK1903 3D Model](/assets/files/wisblock-3d/pwb-rak190x.stp)
 
 **Examples**
 * [Sample Code: RAK1903](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK1903_Optical_OPT3001)
