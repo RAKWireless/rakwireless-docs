@@ -28,7 +28,6 @@ The RAK1901 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is
 <!-- Insert Picture of Sensor with it's dimensions -->
 
 #### Mounting
-
 The RAK1901 module can be mounted on the slots: A, B, C or D of the WisBase board. Figure 1 shows the mounting mechanism of the RAK1901 on a WisBase module, such as the RAK5005-O.
 
 <rk-img
@@ -54,18 +53,6 @@ The RAK1901 WisBlock Sensor module comprises a standard WisIO connector. The Wis
   width="60%"
   caption="RAK1901 WisBlock Sensor Pinout Diagram"
 />
-
-<!-- <rk-img
-  src="/assets/images/wisblock/rak1901/datasheet/RAK19xx_connector.png"
-  width="40%"
-  caption="RAK1901 WisBlock Sensor connector"
-/>
-
-<rk-img
-  src="/assets/images/wisblock/rak1901/datasheet/RAK1901_connector_pinout.png"
-  width="50%"
-  caption="RAK1901 WisBlock Sensor connector pinout"
-/> -->
 
 #### Sensors
 

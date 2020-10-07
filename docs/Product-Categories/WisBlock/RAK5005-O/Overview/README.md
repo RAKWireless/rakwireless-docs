@@ -17,7 +17,7 @@ Thank you for choosing **RAK5005-O WisBlock Base Board** in your awesome IoT Pro
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK5005-O Baseboard Installation Guide](../../../../Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/)
-* [RAK5005-O 3D Model](/assets/files/wisblock-3d/pwb-rak5005-O.stp)
+* [RAK5005-O 3D Model](https://downloads.rakwireless.com/LoRa/WisBlock/WisBlock-3D/pwb-rak5005-O.stp)
 
 ## Product Description
 

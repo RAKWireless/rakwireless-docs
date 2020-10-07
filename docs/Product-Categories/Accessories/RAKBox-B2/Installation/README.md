@@ -1,3 +1,7 @@
+---
+prev: ../Datasheet/
+next: false
+---
 # Installation Guide
 
 ## Assembly List
@@ -51,7 +55,7 @@ The number of screws is depending on the WisBlock IO module type, please confirm
 <rk-img
   src="/assets/images/accessories/rakbox-b2/installation/image-20200713172526816.png"
   height="35%"
-  caption="Step 5"
+  caption="Installing the Antennas to the Enclosure"
 />
 
 **Step 6:** Install two M2.5\*15+6 hexagon standoffs for the battery plate.
@@ -59,7 +63,7 @@ The number of screws is depending on the WisBlock IO module type, please confirm
 <rk-img
   src="/assets/images/accessories/rakbox-b2/installation/image-20200713172618654.png"
   height="35%"
-  caption="Step 6"
+  caption="Installing standoff screws"
 />
 
 **Step 7:** Plug the battery cable into the socket on the PCB (if the solar panel enclosure is used, connect the cable of solar panel to the PCB), and then fix the battery plate on the standoff with two M2.5\*4 screws.
@@ -71,7 +75,7 @@ Be sure to connect the battery and solar cable first, otherwise the cable cannot
 <rk-img
   src="/assets/images/accessories/rakbox-b2/installation/image-20200713172829441.png"
   height="35%"
-  caption="Step 7"
+  caption="Attaching battery and Solar Panel"
 />
 
 **Step 8:** Stick the battery on the battery plate with double side adhesive stickers.

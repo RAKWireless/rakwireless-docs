@@ -36,6 +36,7 @@ The RAK1920 module is a sensor extension module, it supports several defacto-sta
 ## Specifications
 ### Overview
 The RAK1920 module supports Mikroe’s Click Boards, Sparkfun’s Qwiic Connect, and Seeed’s Grove sensors. Figure 1 shows the sensors’ connector available in the RAK1920. 
+
 <rk-img
   src="/assets/images/wisblock/rak1920/datasheet/rak1920_interface.png"
   width="50%"
@@ -44,6 +45,7 @@ The RAK1920 module supports Mikroe’s Click Boards, Sparkfun’s Qwiic Connect,
 
 #### Mounting
 Figure 2 shows how the RAK1920 module is integrated with the RAK5005-O baseboard. The mounting sketch is shown.
+
 <rk-img
   src="/assets/images/wisblock/rak1920/datasheet/rak1920_mount.png"
   width="60%"

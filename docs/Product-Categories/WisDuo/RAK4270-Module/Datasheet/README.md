@@ -3,6 +3,9 @@ tags:
 - datasheet
 - wisduo
 prev: ../Overview/
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/CE%20Certification.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/FCC%20Certification.zip]
 ---
 
 
@@ -237,3 +240,7 @@ Download the latest firmware of the RAK4270 WisDuo LPWAN Module as provided in t
 | Model Source | Source |
 | ------------ | ------ |
 | RAK4270 | [Download](https://downloads.rakwireless.com/LoRa/RAK4270/Firmware/RAK4270_Latest_Firmware.zip) |
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

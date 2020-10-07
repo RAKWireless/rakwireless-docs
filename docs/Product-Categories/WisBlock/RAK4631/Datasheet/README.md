@@ -58,7 +58,7 @@ The overview covers the RAK4631 board overview and the mounting mechanics of the
 
 #### Mounting Sketch
 
-The RAK4631 module is designed to work with the RAK5505 base board. The Figure 2 shows how a RAK4631 module should be mounted on top of the RAK5505.
+The RAK4631 module is designed to work with the RAK5005-O base board. The Figure 2 shows how a RAK4631 module should be mounted on top of the RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak4631/datasheet/mounting-sketch.png"
@@ -136,7 +136,7 @@ The following section will describe the breakout module schematic. It includes W
 
 ##### WisConnector 
 
-The breakout module allows the RAK4630 stamp module’s pinout to be transferred by the board-to-board WisXonnector, Figure 4 shows the definition of this connector.
+The breakout module allows the RAK4630 stamp module’s pinout to be transferred by the board-to-board WisConnector, Figure 4 shows the definition of this connector.
 
 <rk-img
   src="/assets/images/wisblock/rak4631/datasheet/wisconnector-pin.jpg"

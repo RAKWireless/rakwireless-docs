@@ -125,11 +125,12 @@ In this section, we will be connecting the RAK7204 WisNode Sense Home to The Thi
 #### Adding An Application
 
 - Click the "**add application**" button
-  <rk-img
-    src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/eixjrjjdmpc4bstoyleu.png"
-    width="100%"
-    caption="Adding an Application"
-  />
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/eixjrjjdmpc4bstoyleu.png"
+  width="100%"
+  caption="Adding an Application"
+/>
 
 Here are the things that you should take note in adding an application:
 
@@ -394,18 +395,20 @@ In this section, it is assumed that you are using RAK Gateway and its built-in C
 />
 
 3. Fill up the necessary information then Click "**CREATE APPLICATION**”.
-   <rk-img
-     src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/zcxqc0pe6vquherzw521.png"
-     width="100%"
-     caption="Creating the Application"
-   />
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/zcxqc0pe6vquherzw521.png"
+  width="100%"
+  caption="Creating the Application"
+/>
 
 4. Click the new item name “**RAKwireless_Test_Application**”:
-   <rk-img
-     src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/r2ikjxdaluvfxbqhaccc.png"
-     width="100%"
-     caption="Applications page in ChirpStack"
-   />
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/r2ikjxdaluvfxbqhaccc.png"
+  width="100%"
+  caption="Applications page in ChirpStack"
+/>
 
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/sdrlazcgfseimitslo6u.png"
@@ -422,11 +425,12 @@ In this section, it is assumed that you are using RAK Gateway and its built-in C
 />
 
 6. Fill them in. You can generate a **Device EUI** automatically by clicking the Device EUI icon, or you can write the correct Device EUI in the edit box.
-   <rk-img
-     src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/bx0hvot72klwrnznnbig.png"
-     width="100%"
-     caption="Filling the Device Parameters"
-   />
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/bx0hvot72klwrnznnbig.png"
+  width="100%"
+  caption="Filling the Device Parameters"
+/>
 
 :::tip 📝 NOTE:
 If you want to join in OTAA mode, select “DeviceProfile_OTAA” in the “Device-profile” item. If you want to join in ABP mode and CN470 frequency, then, select “DeviceProfile_ABP_CN470” in the “Device-Profile” item. If you want to join in ABP mode and other frequencies except AS923 and CN470, you should select “DeviceProfile_ABP” in the “Device-profile” item.
@@ -547,11 +551,12 @@ at+join
 - **Joined Successfully! :tada:**
 
 8. You can view the "**JoinRequest**" and "**JoinAccept**" on ChirpStack page:
-   <rk-img
-     src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/otaa/bomjx5d87s8b3dnk7wlc.png"
-     width="100%"
-     caption="Join Request of the Device in the ChirpStack"
-   />
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/otaa/bomjx5d87s8b3dnk7wlc.png"
+  width="100%"
+  caption="Join Request of the Device in the ChirpStack"
+/>
 
 9. Let’s try sending data from our RAK7204 WisNode Sense Home to the ChirpStack by typing the command below in the serial port.
 
@@ -589,6 +594,7 @@ at+send=lora:2:1234567890
 
 
 2. Then you can see that there are some parameters for ABP in the “**ACTIVATION**” item:
+
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/abp/z1ox6hvoa4zwe8cpadz5.png"
   width="100%"
@@ -597,6 +603,7 @@ at+send=lora:2:1234567890
 
 3. Next, let’s use these parameters to set WisNode LoRa by using **AT command**. Let's join in **ABP** mode and set **EU868** frequency as an example.
 4. If the join mode is not in ABP, just set the LoRa join mode to **ABP** and LoRa class to **Class A** by typing the following commands in RAK Serial Port Tool
+
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/abp/z1ox6hvoa4zwe8cpadz5.png"
   width="100%"
@@ -604,6 +611,7 @@ at+send=lora:2:1234567890
 />
 
 5. Type the following AT command to set your respective: **Frequency/Region**, **Device Address**, **Network Session Key** and **App Session Key**.
+
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/abp/lvccenrrczmt4nrtbjya.jpg"
   width="90%"
@@ -617,6 +625,7 @@ at+send=lora:2:1234567890
 />
 
 6. Then, **join** in ABP mode.
+
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/abp/pqwlq93vihikp0rgilvi.jpg"
   width="45%"
@@ -624,6 +633,7 @@ at+send=lora:2:1234567890
 />
 
 - Now, try sending data from our WisNode LoRa to the Chirpstack
+
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/abp/enenhki5eduvosgktdz8.png"
   width="45%"
@@ -631,6 +641,7 @@ at+send=lora:2:1234567890
 />
 
 - You can see the data which is just sent from RAK7204 WisNode Sense Home on ChirpStack page:
+
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/6.connecting-to-chirpstack/abp/haxxnxf1wv5jlzlytakp.png"
   width="100%"
@@ -850,6 +861,7 @@ function rakSensorDataDecode(hexStr) {
 }
 ```
 :::
+
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/7.decoding-ttn/mj2ln3bm2so2fkpzntxt.png"
   width="100%"
@@ -857,6 +869,7 @@ function rakSensorDataDecode(hexStr) {
 />
 
 2. From your TTN console, go to application page and click the "**Payload Formats**" tab as shown in the image below.
+
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/7.decoding-ttn/qmpbcubp9g1hiqncdsnx.jpg"
   width="80%"
@@ -864,6 +877,7 @@ function rakSensorDataDecode(hexStr) {
 />
 
 3. Next, select "**Payload Format**" as "**Custom**". Then, from the decoder tab, copy and paste the decoder function from **step 1**.
+
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/7.decoding-ttn/gk4wflbvc74a8bam946s.jpg"
   width="80%"
@@ -875,6 +889,7 @@ function rakSensorDataDecode(hexStr) {
 1. Input the data below in the "**Payload**" box as shown in the image below.
 
 **08 02 01 63 07 68 4B 06 73 25 9E 02 67 01 15 04 02 22 72 04 02 22 72**
+
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/7.decoding-ttn/yqoerimlyt5zz2qkbbv8.jpg"
   width="80%"
@@ -1080,6 +1095,7 @@ Then configure LoRaP2P parameters for both of them as follow for example:
 ```sh
 at+set_config=lorap2p:869525000:7:0:1:5:5
 ```
+
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/8.lorap2p-mode/be2eudcfjshdfpp70dh3.jpg"
   width="90%"
@@ -1091,6 +1107,7 @@ OK! Try to send a message from RAK7204 WisNode Sense Home - 2 (the right one) to
 ```sh
 at+send=lorap2p:1234567890
 ```
+
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/8.lorap2p-mode/hxqc6l5zeadhs5yd5ucz.jpg"
   width="90%"
@@ -1220,6 +1237,7 @@ Now that you have successfully connected your RAK7204 WisNode Sense Home to the 
 />
 
 9. Click the "Download" Button to start the burning process:
+
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/9.burning-bootloader/f4g4duloizbd9hmdodph.jpg"
   width="100%"
@@ -1227,6 +1245,7 @@ Now that you have successfully connected your RAK7204 WisNode Sense Home to the 
 />
 
 10. After a couple of seconds, you will see the following window telling that you have successfully burned the Bootloader to your RAK7204 WisNode Sense Home!
+
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/9.burning-bootloader/rr9dnhyyoixq3ljstalq.jpg"
   width="100%"
@@ -1261,6 +1280,7 @@ at+set_config=device:boot
 />
 
 - Download the [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/) from the RAKwireless website.
+
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/10.burning-firmware/rak-upgrade-tool.png"
   width="75%"

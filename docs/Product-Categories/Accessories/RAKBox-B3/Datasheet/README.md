@@ -1,4 +1,8 @@
-# WisBlock RAKBox-B3 Enclosure
+---
+prev: ../Overview/
+next: ../Installation/
+---
+# WisBlock RAKBox-B3 Enclosure Datasheet
 
 RAKBox-B3 is an IP20 rated enclosure for indoor usage. It is designed specifically for the WisBlock products.
 

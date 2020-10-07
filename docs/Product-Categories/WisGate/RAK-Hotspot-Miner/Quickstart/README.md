@@ -15,6 +15,7 @@ tags:
 3. USB Type-C Power Adapter (included)
 
 ### What's included in the Package?
+
 <rk-img
   src="/assets/images/wisgate/rak-hotspot-miner/quickstart/package-contents.png"
   width="75%"

@@ -244,6 +244,7 @@ The final parameter “1” refers to the authentication mode (PAP). The followi
 ```sh
 at+set_config=cellular:(AT+QICSGP=1,1,"imovil.entelpcs.cl","entelpcs","entelpcs", 1)
 ```
+
 <rk-img
   src="/assets/images/wistrio/rak5010-m/quickstart/4.connecting-cellular-network/4.register-cellular-operator.jpg"
   width="40%"
@@ -311,7 +312,7 @@ A TCP/IP process must be listening on the IP and port previously defined. The IP
 />
 
 
-As you see in the **Figure 15**, the server has received the packet successfully, and the data sent is “**123456**” which is same with the one we just sent out.
+As you can see in the **Figure 15**, the server has received the packet successfully, and the data sent is “**123456**” which is same with the one we just sent out.
 
 #### Automatic Connection Mode
 

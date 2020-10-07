@@ -15,7 +15,7 @@ Thank you for choosing **RAK5804 WisBlock IO Extension Module** in your awesome 
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
-* [RAK5804 3D Model](/assets/files/wisblock-3d/pwb-rak5804.stp)
+* [RAK5804 3D Model](https://downloads.rakwireless.com/LoRa/WisBlock/WisBlock-3D/pwb-rak5804.stp)
 
 ## Product Description
 

@@ -15,7 +15,7 @@ Thank you for choosing **RAK1901 WisBlock Temperature and Humidity Sensor** in y
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
-* [RAK1901 3D Model](/assets/files/wisblock-3d/pwb-rak190x.stp)
+* [RAK1901 3D Model](https://downloads.rakwireless.com/LoRa/WisBlock/WisBlock-3D/pwb-rak190x.stp)
 
 **Examples**
 * [Sample Code: RAK1901](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK1901_Temperature_Humidity_SHTC3)

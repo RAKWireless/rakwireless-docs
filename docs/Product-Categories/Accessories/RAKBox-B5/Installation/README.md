@@ -1,3 +1,8 @@
+---
+prev: ../Datasheet/
+next: false
+---
+
 ## Installation Guide
 
 ## Assembly List

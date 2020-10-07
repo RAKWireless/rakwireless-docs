@@ -86,7 +86,8 @@ The figure below summarizes the basic building blocks of RAK7244. The RAK2245 is
 
 ##### RAK7244P
 
-The figure below summarizes the basic building blocks of RAK7244P. It has the same functionality as far as LoRaWAN goes as RAK7244. In addition, there is the possibility to power the Gateway using a PoE 802.3 af compatible source (42-57VDC). This is made possible by the RAK9003 PoE HAT
+The figure below summarizes the basic building blocks of RAK7244P. It has the same functionality as far as LoRaWAN goes as RAK7244. In addition, there is the possibility to power the Gateway using a PoE 802.3 af compatible source (42-57VDC). This is made possible by the RAK9003 PoE HAT.
+
 <rk-img
   src="/assets/images/wisgate/rak7244/datasheet/system-structure/f4m73eapflxbk31bjash.png"
   width="80%"

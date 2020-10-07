@@ -251,7 +251,7 @@ at+send=lora:1:12345678
   caption="Sending an uplink frame"
 />
 
-If you get a response in your TTN live data feed as in Figure 18, then you are all set!
+If you get a response in your TTN live data feed as in Figure 17, then you are all set!
 
 ::: tip 📝 NOTE
 Be sure to have this window opened prior to sending data through the RAK Serial Port or you will not be able to receive the packet sent. Logging out your The Things Network acccount would also clear all the data sent and not being able to receive packets sent.
@@ -275,7 +275,7 @@ Be sure to have this window opened prior to sending data through the RAK Serial 
   caption="Switching to ABP mode"
 />
 
-3. Save the mode change and return to the **Device Overview page**. You can copy the keys by pressing the button after the value fields marked in red in Figure 20.
+3. Save the mode change and return to the **Device Overview page**. You can copy the keys by pressing the button after the value fields marked in red in Figure 19.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/dj7tij9ejfoopdheutmh.png"
@@ -289,7 +289,7 @@ Be sure to have this window opened prior to sending data through the RAK Serial 
 at+set_config=lora:region:EU868
 ```
 
-As you can see in Figure 21, as we were in the same region (EU868), there was no change.
+As you can see in Figure 20, as we were in the same region (EU868), there was no change.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/gkaye44gsjjuxhtptjmv.png"
@@ -329,7 +329,7 @@ at+set_config=lora:apps_key:XXXX
   caption="Setting up the RAK5205 ABP parameters"
 />
 
-You should end up with a window as the one in **Figure 23** above with **a series of OK messages**.
+You should end up with a window as the one in **Figure 22** above with **a series of OK messages**.
 
 7. Finally, execute the join command:
 
@@ -355,7 +355,7 @@ at+send=lora:1:12345678
   caption="Sending an uplink frame"
 />
 
-If you get a response in your TTN live data feed as in Figure 26, then you are all set!
+If you get a response in your TTN live data feed as in Figure 25, then you are all set!
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/nyce6bmb0fhsfjyi4op6.png"
@@ -910,7 +910,7 @@ MyDevice/Cayenne is a service that allows one to monitor node data in real time 
 Before we can use Cayenne , we need to configure our Application in TTN to properly work with it.
 
 - Log into your TTN Console and navigate to the desired application and Device (RAK5205 in this case).
-- Go to the Payload Formats tab as seen in the Figure 65 and choose **"Cayenne LPP**"
+- Go to the Payload Formats tab as seen in the Figure 64 and choose **"Cayenne LPP**"
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/cayenne-integration/crg46b4kwqgjgutbshaa.jpg"
@@ -934,7 +934,7 @@ Before we can use Cayenne , we need to configure our Application in TTN to prope
   caption="My Devices Integration"
 />
 
-- You will then be redirected to a page as seen below (Figure 68) where you need to enter a Process ID and select an Access Key (Choose the default key)
+- You will then be redirected to a page as seen below (Figure 67) where you need to enter a Process ID and select an Access Key (Choose the default key)
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/cayenne-integration/y5ruf9bbupnyvggmjm1d.jpg"
@@ -984,7 +984,7 @@ If you don't have an account in Cayenne, head on to [https://mydevices.com/cayen
   caption="Setting device parameters"
 />
 
-- If everything went well you should end up with a screen as the in Figure 74:
+- If everything went well you should end up with a screen as the in Figure 73:
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/cayenne-integration/x80ncxi5xnwkhjlqcqby.jpg"
@@ -1058,7 +1058,7 @@ Yehey! You have successfully finished your RAK5205 LPWAN Tracker Set Up. You are
 
 ### Burning Bootloader into the Device
 
-Please use the the latest firmware for the RAK5205 WisTrio LPWAN Tracker accessible in this **[directory](https://downloads.rakwireless.com/en/LoRa/WisTrio-LoRa-RAK5205/Firmware/)** in order to avoid potential problems. Burning the Bootloader into the device is done as follows:
+Use the the latest firmware for the RAK5205 WisTrio LPWAN Tracker accessible in this **[directory](https://downloads.rakwireless.com/en/LoRa/WisTrio-LoRa-RAK5205/Firmware/)** in order to avoid potential problems. Burning the Bootloader into the device is done as follows:
 
 ::: warning ⚠️ WARNING
 Skip this section if you have a RAK5205 V3.0.0.0 firmware or newer, for it has already a bootloader.

@@ -3,6 +3,8 @@ rak_img: /assets/images/accessories/rakbox-b3/overview/overview.png
 rak_desc: RAKBox-B3 is a small and lightweight enclosure. It is IP20 rated enclosure for indoor usage.
 rak_grp: [accessories, enclosures]
 rak_model: RAKBox-B3
+prev: ../../
+next: ../Datasheet/
 ---
 
 # WisBlock RAKBox-B3 Enclosure

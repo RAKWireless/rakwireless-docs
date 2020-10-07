@@ -383,6 +383,11 @@ export default {
     img: '/assets/images/accessories/rak0c52/1.antenna-up.png',
     store: 'https://store.rakwireless.com/products/antenna-magnetic-base?utm_source=MagneticAntennaBase&utm_medium=Document'
   },
+  '/Product-Categories/Accessories/RAKARG15/': {
+    label: '900-930MHz 8dBi Fiber Glass Antenna',
+    img: '/assets/images/accessories/rakarg15/antenna-overview.png',
+    store: 'https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document'
+  },
   '/Product-Categories/Accessories/RAKBox-B2/': {
     label: 'WisBlock RAKBox-B2 Enclosure',
     img: '/assets/images/accessories/rakbox-b2/overview/overview.png',

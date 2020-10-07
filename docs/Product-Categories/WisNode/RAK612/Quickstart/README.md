@@ -198,6 +198,7 @@ As an example, let's join in OTAA mode and EU868 frequency.
 ```sh
 at+set_config=join_mode:1
 ```
+
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/ttn/lora-join-otaa.jpg"
   width="45%"
@@ -233,6 +234,7 @@ at+set_config=dev_eui:XXXX
 ```sh
 at+set_config=app_eui:XXXX
 ```
+
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/ttn/lora-appeui-otaa.jpg"
   width="45%"
@@ -260,6 +262,7 @@ After configuring all the parameters, you need to reset your RAK612 WisNode Butt
 ```sh
 at+join=otaa
 ```
+
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/ttn/otaa-join.jpg"
   width="45%"

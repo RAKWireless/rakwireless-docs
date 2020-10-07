@@ -268,11 +268,12 @@ By the default, the BLE signal of the RAK4600 is turned off automatically if no 
 />
 
 6. Then, you can see the version number in RTT Viewer tool:
-   <rk-img
-     src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5.configuring-rak4600/nqqegmebbppnrcguzshh.png"
-     width="75%"
-     caption="Log Info in J-Link RTT Viewer"
-   />
+
+<rk-img
+  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5.configuring-rak4600/nqqegmebbppnrcguzshh.png"
+  width="75%"
+  caption="Log Info in J-Link RTT Viewer"
+/>
 
 
 ## Connecting to The Things Network (TTN)
@@ -302,11 +303,12 @@ In this section, we will be connecting the RAK4600 Evaluation Board to The Thing
 />
 
 - Click the "**add application**" button
-  <rk-img
-    src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/7.connecting-to-ttn/eixjrjjdmpc4bstoyleu.png"
-    width="100%"
-    caption="Adding an Application"
-  />
+
+<rk-img
+  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/7.connecting-to-ttn/eixjrjjdmpc4bstoyleu.png"
+  width="100%"
+  caption="Adding an Application"
+/>
 
 Here are the things that you should take note in adding an application:
 
@@ -611,50 +613,56 @@ In this document, it is assumed that you are using RAK Gateway and its built-in 
 :::
 
 1. Open the web page of the ChirpStack which you want to connect with and login.
-   <rk-img
-     src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/wgk31ykcgwp2gbzicmut.png"
-     width="100%"
-     caption="Chirpstack Default Window"
-   />
+
+<rk-img
+  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/wgk31ykcgwp2gbzicmut.png"
+  width="100%"
+  caption="Chirpstack Default Window"
+/>
 
 :::tip 📝 NOTE:
 By default, there is already one or more items in this page, you can use it or create a new item.
 :::
 
 2. Create a new item by clicking the “**CREATE**” button, and fill up the necessary items.
-   <rk-img
-     src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/l8na6pcdsvjl0lrqznyr.png"
-     width="100%"
-     caption="Chirpstack Creating Application"
-   />
+
+<rk-img
+  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/l8na6pcdsvjl0lrqznyr.png"
+  width="100%"
+  caption="Chirpstack Creating Application"
+/>
 
 3. Once done , click “**CREATE APPLICATION**”.
-   <rk-img
-     src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/zcxqc0pe6vquherzw521.png"
-     width="100%"
-     caption="Chirpstack Applications Available"
-   />
+
+<rk-img
+  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/zcxqc0pe6vquherzw521.png"
+  width="100%"
+  caption="Chirpstack Applications Available"
+/>
 
 4. The list of items are then provided same with the image above. Click the new item created.
-   <rk-img
-     src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/r2ikjxdaluvfxbqhaccc.png"
-     width="100%"
-     caption=" Applications Page in Chirpstack"
-   />
+
+<rk-img
+  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/r2ikjxdaluvfxbqhaccc.png"
+  width="100%"
+  caption=" Applications Page in Chirpstack"
+/>
 
 5. Add a Node device into ChirpStack by clicking the “**CREATE**” button:
-   <rk-img
-     src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/sdrlazcgfseimitslo6u.png"
-     width="100%"
-     caption="Chirpstack Adding Node into the  RAK4 LPWAN Evaluation Board "
-   />
+
+<rk-img
+  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/sdrlazcgfseimitslo6u.png"
+  width="100%"
+  caption="Chirpstack Adding Node into the  RAK4 LPWAN Evaluation Board "
+/>
 
 6. Once the Node is created, fill-in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
-   <rk-img
-     src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/bx0hvot72klwrnznnbig.png"
-     width="100%"
-     caption="Chirpstack Adding Parameters in the Node"
-   />
+
+<rk-img
+  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/bx0hvot72klwrnznnbig.png"
+  width="100%"
+  caption="Chirpstack Adding Parameters in the Node"
+/>
 
 ### OTAA Mode
 
@@ -683,11 +691,13 @@ By default, there is already one or more items in this page, you can use it or c
 />
 
 4. Set the **Application Key** for the RAK4600 Evaluation Board using the "**app_key**" same with the image below:
-   <rk-img
-     src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/otaa/gomyqs6fsi4limpvngbp.jpg"
-     width="100%"
-     caption="Chirpstack OTAA Set Application Key"
-   />
+   
+<rk-img
+  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/otaa/gomyqs6fsi4limpvngbp.jpg"
+  width="100%"
+  caption="Chirpstack OTAA Set Application Key"
+/>
+
 ::: tip 📝 NOTE:
 The Application EUI which will be set into RAK4600 Evaluation Board as “app_eui” is not necessary for ChirpStack, and you can set it to any value with a correct format.
 :::
@@ -789,11 +799,12 @@ at+join
 />
 
 14. You can then see the **JoinRequest** and **JoinAccept** on ChirpStack page:
-    <rk-img
-      src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/otaa/szgnpputwklp26s1epwd.png"
-      width="100%"
-      caption=" Chirpstack OTAA JoinRequest and JoinAccept"
-    />
+
+<rk-img
+  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/otaa/szgnpputwklp26s1epwd.png"
+  width="100%"
+  caption=" Chirpstack OTAA JoinRequest and JoinAccept"
+/>
 
 15. Let’s try to send a data from RAK4600 Evaluation Board to ChirpStack:
 
@@ -808,11 +819,12 @@ at+send=lora:2:1234567890
 />
 
 - You can then see the message on ChirpStack page:
-  <rk-img
-    src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/otaa/y8olaqg8ywggopiglkdv.png"
-    width="100%"
-    caption="Chirpstack Data Received Preview"
-  />
+
+<rk-img
+  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/otaa/y8olaqg8ywggopiglkdv.png"
+  width="100%"
+  caption="Chirpstack Data Received Preview"
+/>
 
 OK, that’s all about “Join in OTAA Mode” with ChirpStack.
 
@@ -843,6 +855,7 @@ Frequency AS923  in ABP Mode is not supported in Chirpstack.
 ```sh
 at+set_config=lora:join_mode:1
 ```
+
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/abp/iqptivjfhqaf9rkoxfwb.jpg"
   width="45%"
@@ -853,6 +866,7 @@ at+set_config=lora:join_mode:1
 ```sh
 at+set_config=lora:class:0
 ```
+
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/abp/kkm5pwzhi44aif78akij.jpg"
   width="45%"
@@ -863,6 +877,7 @@ at+set_config=lora:class:0
 ```sh
 at+set_config=lora:region:EU868
 ```
+
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/abp/hybihb6l6knq8lccnm1h.jpg"
   width="45%"
@@ -873,6 +888,7 @@ at+set_config=lora:region:EU868
 ```sh
 at+set_config=lora:dev_addr:XXXX
 ```
+
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/abp/tpqvwwbxnmlwzqcfgozy.jpg"
   width="45%"
@@ -883,6 +899,7 @@ at+set_config=lora:dev_addr:XXXX
 ```sh
 at+set_config=lora:nwks_key:XXXX
 ```
+
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/abp/gzryq4icdnjuxykqgfhz.jpg"
   width="45%"
@@ -893,6 +910,7 @@ at+set_config=lora:nwks_key:XXXX
 ```sh
 at+set_config=lora:apps_key:XXXX
 ```
+
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/abp/czhbmtdl7or1c2d6katt.jpg"
   width="45%"
@@ -907,6 +925,7 @@ at+set_config=lora:apps_key:XXXX
 ```sh
 at+join
 ```
+
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/abp/b3oaamuv6fom8bydg1mi.jpg"
   width="45%"
@@ -921,6 +940,7 @@ at+join
 ```sh
 at+send=lora:2:123456789
 ```
+
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5. connecting-to-chirpstack/abp/elbbdyduu3bbgnopsvns.jpg"
   width="45%"
@@ -944,6 +964,7 @@ There are three BLE modes in RAK4600 from the firmware V3.0.0.6 on, the **Periph
 ```sh
 at+set_config=ble:work_mode:X:Y
 ```
+
 **Description:** Set the work mode for BLE.
 - **X** - 0: BLE peripheral mode, 1: BLE central mode. 2: Beacon scan mode.
 - **Y** - 0: normal range, 1: BLE long range.
@@ -984,7 +1005,7 @@ Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKD
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/8.upgrading-firmware/mnzoayqdsaquxxdimpnw.jpg"
   width="45%"
-   caption="Available Bluetooth Devices in the Nordic App"
+  caption="Available Bluetooth Devices in the Nordic App"
 />
 
 3. Press the reset button on the RAK4600 and wait for a couple of seconds. Look for a BLE Device named "RUI-..." in the scan list of the app. Connect to this device and click "**Nordic UART Service**"

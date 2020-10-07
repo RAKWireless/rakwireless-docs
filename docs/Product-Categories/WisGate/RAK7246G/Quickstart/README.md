@@ -546,6 +546,7 @@ caption=" Adding your Gateway in ResIOT"
 />
 
 * A list of LPWAN Gateways are then shown. Choose the item "**IMST iC880a + Raspberry Pi**".
+
 <rk-img
 src="/assets/images/wisgate/rak7246g/quickstart/resiot_choose_gateway.png"
 width="100%"

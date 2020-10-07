@@ -294,11 +294,11 @@ Be sure to have this window opened prior to sending data through the RAK Serial 
 
 2. The **Device Address**, **Network Session Key** and **App Session Key** will be generated automatically by default.
 
-   <rk-img
-     src="/assets/images/wisduino/rak811-evaluation-board/quickstart/ttn-abp-mode/ghtjt9jvmsfgkbqyrbkz.png"
-     width="100%"
-     caption="Switching to ABP Mode"
-   />
+<rk-img
+  src="/assets/images/wisduino/rak811-evaluation-board/quickstart/ttn-abp-mode/ghtjt9jvmsfgkbqyrbkz.png"
+  width="100%"
+  caption="Switching to ABP Mode"
+/>
 
 3. Save the mode change and return to the **Device Overview page**. You can copy the keys by pressing the button after the value fields marked in red in **Figure 22** below.
 

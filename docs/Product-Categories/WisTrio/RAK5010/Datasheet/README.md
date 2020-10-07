@@ -52,7 +52,7 @@ The overview presents the RAK5010 WisTrio top view and its block diagram that sh
 
 #### Module Overview
 
-Figure 2 shows the top view and the interfaces of the RAK5010 NB-IoT tracker board.
+Figure 1 shows the top view and the interfaces of the RAK5010 NB-IoT tracker board.
 
 <rk-img
   src="/assets/images/wistrio/rak5010/datasheet/top-view-of-the-board-with-interfaces.jpg"
@@ -60,7 +60,7 @@ Figure 2 shows the top view and the interfaces of the RAK5010 NB-IoT tracker boa
   caption="Top View of the Board with Interfaces"
 />
 
-Figure 3 shows the bottom of the board, where Figure 34, the dimensions of the board, and Figure 5 shows the header pin spacing.
+Figure 2 shows the bottom of the board, where Figure 3, the dimensions of the board, and Figure 4 shows the header pin spacing.
 
 <rk-img
   src="/assets/images/wistrio/rak5010/datasheet/bottom-view-of-the-board-with-interfaces.jpg"
@@ -231,7 +231,7 @@ J9 is J-LINK connector, with J-LINK debugger, you can program and debug nRF52840
 |  4  |   GND    |                        GND                         |
 
 :::tip 📝 NOTE
-VDD of J9 should connect to the PIN1 of SEGGER J-LINK (See Figure Below) debugger for SWDIO/SWDCLK’s reference voltage. If this pin is not connect correctly, the J-LINK’ logic level may not set to VDD of nrf52840, it may damage the nrf52840.
+VDD of J9 should connect to the PIN1 of SEGGER J-LINK (See Figure 8 below) debugger for SWDIO/SWDCLK’s reference voltage. If this pin is not connect correctly, the J-LINK’ logic level may not set to VDD of nrf52840, it may damage the nrf52840.
 :::
 
 Below is the definition of 20PIN segger J-LINK connector:
@@ -407,7 +407,7 @@ The LTE Antenna Connector is shown below:
   caption="iPEX onboard connector for the LTE antenna"
 />
 
-A PCB antenna (Figure 2) is included with the board. In case you want to use another antenna keep in mind that you need to have the proper connector (iPEX) and have it tuned to the frequency band of operation in your region.
+A PCB antenna (Figure 11) is included with the board. In case you want to use another antenna keep in mind that you need to have the proper connector (iPEX) and have it tuned to the frequency band of operation in your region.
 
 <rk-img
   src="/assets/images/wistrio/rak5010/datasheet/pcb-lte-antenna-with-pigtail.png"
@@ -453,6 +453,7 @@ In order to support low power and long battery life, the active GPS antenna’s 
   src="/assets/images/wistrio/rak5010/datasheet/circuit-diagram.png"
   width="50%"
 />
+
 <rk-img
   src="/assets/images/wistrio/rak5010/datasheet/circuit-diagram-2.png"
   width="50%"

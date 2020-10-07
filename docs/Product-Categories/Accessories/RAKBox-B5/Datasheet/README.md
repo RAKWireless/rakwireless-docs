@@ -1,4 +1,8 @@
-# WisBlock RAKBox-B5 Enclosure
+---
+prev: ../Overview/
+next: ../Installation/
+---
+# WisBlock RAKBox-B5 Enclosure Datasheet
 
 RAKBox-B5 is a transparent enclosure. It is designed specifically for the WisBlock products.
 

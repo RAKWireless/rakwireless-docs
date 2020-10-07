@@ -244,12 +244,12 @@ Referred to IPC/JEDEC standard:
 />
 
 
-
 <rk-img
   src="/assets/images/wisduo/rak811-breakout-board/datasheet/6.reference-design.jpg"
   width="100%"
   caption="Reference Design"
 />
+
 ### Software
 
 Download the latest firmware of the RAK811 Breakout Board — both in low and high frequency — provided in the table below.

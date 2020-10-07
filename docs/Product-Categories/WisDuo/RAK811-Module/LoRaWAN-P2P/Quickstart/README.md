@@ -766,7 +766,7 @@ at+send=lora:2:1234567890
   caption="Send a LoRaWAN Message via RAK Serial Port Tool"
 />
 
-- On the ChirpStack platform, you should also see the messages in the LORAWAN FRAMES tab as shown in Figure 35. Note, by convention, messages sent from nodes to gateways are considered as **Uplinks**. While messages sent by gateways to nodes are considered as **Downlinks**. 
+- On the ChirpStack platform, you should also see the messages in the LORAWAN FRAMES tab as shown in Figure 41. Note, by convention, messages sent from nodes to gateways are considered as **Uplinks**. While messages sent by gateways to nodes are considered as **Downlinks**. 
 
 
 <rk-img

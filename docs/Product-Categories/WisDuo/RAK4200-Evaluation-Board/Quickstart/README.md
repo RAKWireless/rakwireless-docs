@@ -53,6 +53,7 @@ Before powering the RAK4200 Evaluation Board , you should install the LoRa anten
 :::
 
 - Connect your RAK4200 Evaluation Board in your Windows Machine using the provided micro-usb cable.
+
   <rk-img
     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/3.interfacing/kq51hnmw5xoquykfd1dw.png"
     width="65%"
@@ -60,11 +61,12 @@ Before powering the RAK4200 Evaluation Board , you should install the LoRa anten
   />
 
 - Open the RAK Serial Port Tool :
-  <rk-img
-    src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/3.interfacing/gnm0smmpj2hiaaxv65m2.png"
-    width="90%"
-    caption="RAK Serial Port Tool"
-  />
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/3.interfacing/gnm0smmpj2hiaaxv65m2.png"
+  width="90%"
+  caption="RAK Serial Port Tool"
+/>
 
 - In choosing the correct COM Port number for your device. Go to your Device Manager by pressing : Windows + R and type `devmgmt.msc` or search in the Start Menu.
 
@@ -115,11 +117,12 @@ In this section, we will be connecting the RAK4200 Evaluation Board to The Thing
 />
 
 - Click the "**add application**" button
-  <rk-img
-    src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/4.connecting-to-ttn/eixjrjjdmpc4bstoyleu.png"
-    width="100%"
-    caption="Adding an Application"
-  />
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/4.connecting-to-ttn/eixjrjjdmpc4bstoyleu.png"
+  width="100%"
+  caption="Adding an Application"
+/>
 
 Here are the things that you should take note in adding an application:
 
@@ -422,50 +425,56 @@ In this document, it is assumed that you are using RAK Gateway and its built-in 
 :::
 
 1. Open the web page of the ChirpStack which you want to connect with and login.
-   <rk-img
-     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/wgk31ykcgwp2gbzicmut.png"
-     width="100%"
-     caption="Chirpstack Default Window"
-   />
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/wgk31ykcgwp2gbzicmut.png"
+  width="100%"
+  caption="Chirpstack Default Window"
+/>
 
 :::tip 📝 NOTE
 By default, there is already one or more items in this page, you can use it or create a new item.
 :::
 
 2. Create a new item by clicking the “**CREATE**” button, and fill up the necessary items.
-   <rk-img
-     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/l8na6pcdsvjl0lrqznyr.png"
-     width="100%"
-     caption="Chirpstack Creating Application"
-   />
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/l8na6pcdsvjl0lrqznyr.png"
+  width="100%"
+  caption="Chirpstack Creating Application"
+/>
 
 3. Once done , click “**CREATE APPLICATION**”.
-   <rk-img
-     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/zcxqc0pe6vquherzw521.png"
-     width="100%"
-     caption="Chirpstack Applications Available"
-   />
+   
+<rk-img
+  src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/zcxqc0pe6vquherzw521.png"
+  width="100%"
+  caption="Chirpstack Applications Available"
+/>
 
 4. The list of items are then provided same with the image above. Click the new item created.
-   <rk-img
-     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/r2ikjxdaluvfxbqhaccc.png"
-     width="100%"
-     caption=" Applications Page in Chirpstack"
-   />
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/r2ikjxdaluvfxbqhaccc.png"
+  width="100%"
+  caption=" Applications Page in Chirpstack"
+/>
 
 5. Add a node device into ChirpStack by clicking the “**CREATE**” button:
-   <rk-img
-     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/sdrlazcgfseimitslo6u.png"
-     width="100%"
-     caption="Chirpstack Adding Node into the  RAK4200 Evaluation Board "
-   />
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/sdrlazcgfseimitslo6u.png"
+  width="100%"
+  caption="Chirpstack Adding Node into the  RAK4200 Evaluation Board "
+/>
 
 6. Once the node is created, fill-in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
-   <rk-img
-     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/bx0hvot72klwrnznnbig.png"
-     width="100%"
-     caption="Chirpstack Adding Parameters in the Node"
-   />
+   
+<rk-img
+  src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/bx0hvot72klwrnznnbig.png"
+  width="100%"
+  caption="Chirpstack Adding Parameters in the Node"
+/>
 
 ### OTAA Mode
 
@@ -494,14 +503,16 @@ By default, there is already one or more items in this page, you can use it or c
 />
 
 4. Set the **Application Key** for the RAK4200 Evaluation Board using the "**app_key**" same with the image below:
-   <rk-img
-     src=" /assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/otaa/gomyqs6fsi4limpvngbp.jpg"
-     width="100%"
-     caption="Chirpstack OTAA Set Application Key"
-   />
-   ::: tip 📝 NOTE
-   The Application EUI which will be set into RAK4200 Evaluation Board as “app_eui” is not necessary for ChirpStack, and you can set it to any value with a correct format.
-   :::
+
+<rk-img
+  src=" /assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/otaa/gomyqs6fsi4limpvngbp.jpg"
+  width="100%"
+  caption="Chirpstack OTAA Set Application Key"
+/>
+
+::: tip 📝 NOTE
+The Application EUI which will be set into RAK4200 Evaluation Board as “app_eui” is not necessary for ChirpStack, and you can set it to any value with a correct format.
+:::
 
 5. Configure RAK4200 Evaluation Board by using the available commands found in the [AT Commands for RAK4200 Evaluation Board](/Product-Categories/WisDuo/RAK4200-Evaluation-Board/AT-Command-Manual/). Connect your RAK4200 Evaluation Board in your Windows Machine.
 
@@ -600,11 +611,12 @@ at+join
 />
 
 14. You can then see the **JoinRequest** and **JoinAccept** on ChirpStack page:
-    <rk-img
-      src=" /assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/otaa/szgnpputwklp26s1epwd.png"
-      width="100%"
-      caption=" Chirpstack OTAA JoinRequest and JoinAccept"
-    />
+
+<rk-img
+  src=" /assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/otaa/szgnpputwklp26s1epwd.png"
+  width="100%"
+  caption=" Chirpstack OTAA JoinRequest and JoinAccept"
+/>
 
 15. Let’s try to send a data from RAK4200 Evaluation Board to ChirpStack:
 
@@ -619,11 +631,12 @@ at+send=lora:2:1234567890
 />
 
 - You can then see the message on ChirpStack page:
-  <rk-img
-    src=" /assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/otaa/y8olaqg8ywggopiglkdv.png"
-    width="100%"
-    caption="Chirpstack Data Received Preview"
-  />
+
+<rk-img
+  src=" /assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/otaa/y8olaqg8ywggopiglkdv.png"
+  width="100%"
+  caption="Chirpstack Data Received Preview"
+/>
 
 OK, that’s all about “Join in OTAA Mode” with ChirpStack.
 
@@ -642,11 +655,12 @@ Frequency AS923 in ABP Mode is not supported in Chirpstack.
 />
 
 2. Then you can see that there are some parameters for ABP in the “**ACTIVATION**” item:
-   <rk-img
-     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/abp/n3ragennimcdzazgxhyp.png"
-     width="100%"
-     caption="Chirpstack ABP Activation Parameters Needed"
-   />
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/abp/n3ragennimcdzazgxhyp.png"
+  width="100%"
+  caption="Chirpstack ABP Activation Parameters Needed"
+/>
 
 3. Use these parameters to set RAK4200 Evaluation Board by using AT command. Set **LoRa join** mode to **ABP**:
 
@@ -793,18 +807,20 @@ Refer to the [AT Command Manual](/Product-Categories/WisDuo/RAK4200-Evaluation-B
 />
 
 5. OK! Try to send a message from the first RAK4200 Evaluation Board to the second RAK4200 Evaluation Board.
-   <rk-img
-     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/6.lorap2p/csib8zhcwfkevehq7fby.jpg"
-     width="90%"
-     caption="Message sent and received status in the two nodes"
-   />
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/6.lorap2p/csib8zhcwfkevehq7fby.jpg"
+  width="90%"
+  caption="Message sent and received status in the two nodes"
+/>
 
 6. Success! Now, send more messages.
-   <rk-img
-     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/6.lorap2p/gbvh6jy5olovvt0fjyib.jpg"
-     width="90%"
-     caption="Succeeding Messages sent to the other node"
-   />
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/6.lorap2p/gbvh6jy5olovvt0fjyib.jpg"
+  width="90%"
+  caption="Succeeding Messages sent to the other node"
+/>
 
 Congratulations! :tada: You have successfully finished your RAK4200 Evaluation Board Set Up. You are now ready to develop the coolest project that could potentially change the world.
 
@@ -839,32 +855,36 @@ at+set_config=device:boot
 />
 
 4. Close RAK serial port tool and open RAK firmware upgrade tool on your PC. Make sure to choose the correct COM Port.
-   <rk-img
-     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/rak-upgrade-tool.png"
-     width="75%"
-     caption="RAK Firmware Upgrade Tool"
-   />
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/rak-upgrade-tool.png"
+  width="75%"
+  caption="RAK Firmware Upgrade Tool"
+/>
 
 5. Click “**Choose File**” button to choose a correct upgrade file:
-   <rk-img
-     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/choose-firmware.png"
-     width="75%"
-     caption="Choosing the Correct Upgrade file"
-   />
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/choose-firmware.png"
+  width="75%"
+  caption="Choosing the Correct Upgrade file"
+/>
 
 6. Click “**Start**” to upgrade, this may take a minute:
-   <rk-img
-     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/upgrade-firmware.png"
-     width="75%"
-     caption="Firmware Upgrading in Process"
-   />
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/upgrade-firmware.png"
+  width="75%"
+  caption="Firmware Upgrading in Process"
+/>
 
 7. You should see something like the image below if everything went well.
-   <rk-img
-     src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/upgrade-successful.png"
-     width="75%"
-     caption="Successfully Upgraded Firmware"
-   />
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/upgrade-successful.png"
+  width="75%"
+  caption="Successfully Upgraded Firmware"
+/>
 
 8. CLOSE the Firmware Upgrade Tool and OPEN the RAK Serial Port Tool again.
 

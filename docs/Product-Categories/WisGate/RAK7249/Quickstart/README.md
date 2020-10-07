@@ -460,6 +460,7 @@ The default IP is **169.254.X.X.** The last two segments(X.X) are mapped from th
 ### Access the Internet
 
 #### Connect through Wi-Fi
+
 <rk-img
   src="/assets/images/wisgate/rak7249/quickstart/2.quickstart/aub7puijxy6ohinpgucq.jpg"
   width="70%"

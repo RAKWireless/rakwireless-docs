@@ -218,21 +218,25 @@ The hardware specification is categorized into six parts. It discusses the pinou
   width="100%"
   caption="Schematic Diagram #1"
 />
+
 <rk-img
   :src="`${$frontmatter.static_root}/schematic-2.png`"
   width="100%"
   caption="Schematic Diagram #2"
 />
+
 <rk-img
   :src="`${$frontmatter.static_root}/schematic-3.png`"
   width="100%"
   caption="Schematic Diagram #3"
 />
+
 <rk-img
   :src="`${$frontmatter.static_root}/schematic-4.png`"
   width="100%"
   caption="Schematic Diagram #4"
 />
+
 <rk-img
   :src="`${$frontmatter.static_root}/schematic-5.png`"
   width="50%"

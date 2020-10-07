@@ -16,7 +16,7 @@ Thank you for choosing **RAK5860 WisBlock NB-IoT Interface Module** in your awes
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
-* [RAK5860 3D Model](/assets/files/wisblock-3d/pwb-rak5860.stp)
+* [RAK5860 3D Model](https://downloads.rakwireless.com/LoRa/WisBlock/WisBlock-3D/pwb-rak5860.stp)
 
 **Examples**: 
 

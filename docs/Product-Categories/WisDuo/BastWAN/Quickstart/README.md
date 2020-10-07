@@ -72,6 +72,7 @@ If there is already an URL from another manufacturer in that field, click the bu
   width="60%"
   caption="Arduino boards manager"
 />
+
 5. Look for **Electronic Cats SAMD Boards** in the Boards Managerr search bar. Click in install for **Electronic Cats SAMD Boards**, jus wait to finish to install and only close the window.
 
 <rk-img

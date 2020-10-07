@@ -1,4 +1,8 @@
-# WisBlock RAKBox-B2 Enclosure
+---
+prev: ../Overview/
+next: ../Installation/
+---
+# WisBlock RAKBox-B2 Enclosure Datasheet
 
 RAKBox-B2 is an IP67 rated enclosure for outdoor usage. It is designed specifically for the WisBlock products.
 

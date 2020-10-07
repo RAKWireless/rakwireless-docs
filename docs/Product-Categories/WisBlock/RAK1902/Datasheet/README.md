@@ -86,7 +86,7 @@ The RAK1902 WisBlock Sensor module comprises a standard WisIO connector. The Wis
 Figure 3 shows the dimensions and the mechanic drawing of the RAK1901 module.
 
 <rk-img
-  src="/assets/images/wisblock/rak1901/datasheet/RAK19xx_mechanic_drawing.png"
+  src="/assets/images/wisblock/rak1902/datasheet/RAK19xx_mechanic_drawing.png"
   width="60%"
   caption="RAK1902 WisBlock Sensor Mechanic Drawing"
 />

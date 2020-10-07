@@ -205,8 +205,8 @@ yourself, you can find the latest firmware on RAK website **[here](https://downl
   caption="J-Flash Start Connection"
 />
 
-5. Click the **button** marked with the **red box** in the image below labeled **Figure 16**, then you can see the
-following page as shown in **Figure 17** and in the table provided.
+5. Click the **button** marked with the **red box** in the image below labeled **Figure 15**, then you can see the
+following page as shown in **Figure 16** and in the table provided.
 
 <rk-img
   src="/assets/images/wistrio/rak8212/quickstart/device-firmware-setup/ewkidffcazavmmscfdta.jpg"

@@ -605,7 +605,7 @@ This section shows how to connect the RAK4600 module to the ChirpStack platform.
   caption="RAK4600 module in the context of the ChirpStack platform"
 />
 
-The architecture of the ChirpStack platform is shown in Figure 33. Similar to the case of TTN, the RAK4600 module is located in the periphery and will transmit the data to the backend servers through a LoRa gateway. More information about this architecture can be found at: [https://www.chirpstack.io/](https://www.chirpstack.io/)
+The architecture of the ChirpStack platform is shown in Figure 32. Similar to the case of TTN, the RAK4600 module is located in the periphery and will transmit the data to the backend servers through a LoRa gateway. More information about this architecture can be found at: [https://www.chirpstack.io/](https://www.chirpstack.io/)
 
 * In this document, it is assumed that users are using a RAK LoRa gateway, such as RAK7243. The gateway must be configured and registered previously to ChirpStack deployment. More information about that can be found at: [Connect the Gateway with Chirpstack](/Product-Categories/WisGate/RAK7243/Quickstart/#connect-the-gateway-with-chirpstack)
 
@@ -697,7 +697,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 Fill the parameters requested as appears in Figure 39:
 
 *	**Device name and Device description**: These are just descriptive texts. 
-*	**Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in Figure 39. Users can also add a specific Device EUI directly in the form. 
+*	**Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in Figure 40. Users can also add a specific Device EUI directly in the form. 
 *	**Device Profile**: To join in OTAA mode, select “DeviceProfile_OTAA”. To join in ABP mode and CN470 frequency, select “DeviceProfile_ABP_CN470”. To join in ABP mode, select “DeviceProfile_ABP”. 
 
 :::tip 📝 NOTE:
@@ -769,6 +769,7 @@ or
 ```
 at+version
 ```
+
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/otaa-connect-rak4600.png"
   width="40%"
@@ -1063,6 +1064,7 @@ This section will show how to set and link two RAK4600 units to work in LoRa P2P
 ```
 at+set_config=lora:work_mode:1
 ```
+
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/p2p-work-mode.png"
   width="40%"
@@ -1235,9 +1237,9 @@ Follow this procedure in order to upgrade the firmware in Device Firmware Upgrad
   caption="Nordic app scan with RAK4600 in DFU mode"
 />
 
-10.	Press “**CONNECT**”, then click the icon highlighted in red (DFU) in the Figure 68.
+10.	Press “**CONNECT**”, then click the icon highlighted in red (DFU) in the Figure 64.
 
-11.	Select the “**Distribution packet (ZIP)**” option in the pop up menu and press and “**OK**” as shown in the Figure 69.
+11.	Select the “**Distribution packet (ZIP)**” option in the pop up menu and press and “**OK**” as shown in the Figure 65.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/dfu-icon.png"

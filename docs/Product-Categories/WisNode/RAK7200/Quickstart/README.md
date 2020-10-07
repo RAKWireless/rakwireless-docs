@@ -150,7 +150,6 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
 Insert updated TTN homepage with the same username 
 --->
 
-
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/connecting-to-ttn/8.ttn.png"
   width="100%"
@@ -191,7 +190,6 @@ Insert updated TTN homepage with the same username
 
 3. After you fill in the necessary information, press the "**Add application**" button at the bottom of this page. If you see the same page as shown in Figure 12, this means that you have successfully registered your application.
 
-
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/connecting-to-ttn/12.application-overview.png"
   width="100%"
@@ -201,7 +199,6 @@ Insert updated TTN homepage with the same username
 <b>Register a New Device</b>
 
 1. Scroll down until you see the Devices section. Or, you can click the "**Devices**" button at the top. 
-
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/connecting-to-ttn/13.devices.png"
@@ -276,20 +273,17 @@ By default, the parameters configured in the RAK7200 modules are:
 at+set_config=lora:join_mode:0
 ```
 
-
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/ttn-otaa-mode/16.join-mode.png"
   width="40%"
   caption="Setting LoRa Join Mode to OTAA Mode"
 />
 
-
 2. Set the LoRa class to Class A.
 
 ```
 at+set_config=lora:class:0
 ```
-
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/ttn-otaa-mode/17.lora-class.png"
@@ -418,7 +412,6 @@ These fields can be left empty in the form. TTN will automatically generate rand
 />
 
 The same as the OTAA form, you can leave these fields empty to allow TTN to generate random values or input the specific values that you want.
-
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/ttn-abp-mode/26.abp-mode-configuration.png"
@@ -643,7 +636,6 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   caption="List of Applications Created"
 />
 
-
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/connecting-to-chirpstack/39.application-page.png"
   width="100%"
@@ -782,6 +774,7 @@ at+set_config=lora:join_mode:0
 ```
 at+set_config=lora:class:0
 ```
+
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/48.lora-class.png"
   width="40%"
@@ -998,6 +991,7 @@ at+set_config=lora:region:AU915
 ```
 at+set_config=lora:dev_addr:019c820a
 ```
+
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-abp-mode/60.device-address.png"
   width="40%"

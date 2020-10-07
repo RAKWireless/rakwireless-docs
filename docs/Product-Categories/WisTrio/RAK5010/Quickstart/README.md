@@ -257,6 +257,7 @@ at+version
 #### Through Micro USB
 
 - To begin with, connect your RAK5010 with your PC through microUSB/USB as shown in the image below:
+
 <rk-img
   src="/assets/images/wistrio/rak5010/quickstart/4.configuring-rak5010/ehzpnpgveqdplcndqwc7.jpg"
   width="60%"
@@ -386,7 +387,7 @@ Now, let’s check it on our receiving server:
   caption="Received Data shown in the terminal"
 />
 
-Great! As you see in the **Figure 32**, the server has received the packet successfully, and the data sent is “**123456**” which is same with the one we just sent out.
+As you can see in the **Figure 31**, the server has received the packet successfully, and the data sent is “**123456**” which is same with the one we just sent out.
 
 #### 2 . Connect Cellular Network and Send Packet Automatically
 

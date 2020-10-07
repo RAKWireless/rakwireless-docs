@@ -63,6 +63,7 @@ Figure 2 shows how RAK2305 module is integrated with the RAK5005-O baseboard. Th
 #### Block Diagram
 
 Figure 3 shows the block diagram of the RAK2305 module.
+
 <rk-img
   src="/assets/images/wisblock/rak2305/datasheet/RAK2305-block-diagram.png"
   width="50%"
