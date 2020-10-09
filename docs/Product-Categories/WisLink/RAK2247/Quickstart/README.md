@@ -98,7 +98,29 @@ GATEWAY_EUI_NIC=”wlx6045bdf0cf64h0”
 
 Again, the values are just an example. Remember to do this for all 3 files in step 4.
 
-5. **Add** the following lines of code at the end of “**install.sh**” file: ( In addition to inserting the name of the interface from the previous step)
+
+5. Change the `global_conf.json` that will be copied during instalaton by replacing the `global_conf.eu_863_870.json` in the end of the (install.sh file)[https://github.com/RAKWireless/rak_common_for_gateway/blob/master/lora/rak2247_usb/install.sh] to one of those inside `/global_conf` or a custom one. (**EU868 is the default**)
+```sh
+cp global_conf/global_conf.eu_863_870.json $INSTALL_DIR/packet_forwarder/lora_pkt_fwd/global_conf.json
+```
+
+:::tip 📝 NOTE:
+ You may also coment the line below so the TTN address doen't get replaced by localhost.
+:::
+```sh
+# sed -i "s/^.*server_address.*$/\t\"server_address\": \"127.0.0.1\",/" $INSTALL_DIR/packet_forwarder/lora_pkt_fwd/global_conf.json
+```
+
+6. If you are using the RAK2247 in a board that have diferent pinout than the RAK2247 Pi Hat, replace the `SX1301_RESET_BCM_PIN` in the `rak_common_for_gateway/lora/start.sh` to the corresponding RESET pin.
+```sh
+# Reset iC880a PIN
+SX1301_RESET_BCM_PIN=<YOUR_RESET_PIN_HERE>
+```
+:::tip 📝 NOTE:
+ If you want to have your Gateway_ID automaticaly update when running your package fowarder, uncoment and change the line `#./update_gwid.sh ./local_conf.json` in the same file (start.sh) to `./update_gwid.sh ./global_conf.json`.
+:::
+
+7. **Add** the following lines of code at the end of “**install.sh**” file: ( In addition to inserting the name of the interface from the previous step)
 
 ```sh
 cp ../set_eui.sh packet_forwarder/lora_pkt_fwd/
@@ -117,13 +139,14 @@ cp ../ttn-gateway.service /lib/systemd/system/
 systemctl enable ttn-gateway.service
 ```
 
-6. Save “**install.sh**” file and execute it in order to install: 
+
+8. Save “**install.sh**” file and execute it in order to install: 
 
 ```sh
 sudo ./install.sh
 ```
 
-7.Wait for the installation to complete. Using the commands below, go and run the newly created process (**lora_pkt_fwd**):
+9.Wait for the installation to complete. Using the commands below, go and run the newly created process (**lora_pkt_fwd**):
 
 ```sh
 cd /opt/ttn-gateway/packet_forwarder/lora_pkt_fwd 
@@ -133,6 +156,28 @@ sudo ./lora_pkt_fwd
  If you added the additional lines in step 5 it will execute every time on boot.
 :::
 
-8. The regional parameter configurations for all the supported regions are located in the folder `</opt/packet_forwarder/lora_pkt_fwd/global_conf>`. In case you need to adjust the region frequency band for example, do so before running the process (**EU868 is the default**)
+10. To check if it is working, run `sudo systemctl start ttn-gateway.service` to start the service and check its status `service ttn-gateway status`. You should see something like the box bellow. Be aware that it may take some minutes to see your gateway as connected in TTN's console.
+```sh
+pi@raspberrypi:~ $ service ttn-gateway status
+● ttn-gateway.service - The Things Network Gateway
+   Loaded: loaded (/lib/systemd/system/ttn-gateway.service; disabled; vendor preset: enabled)
+   Active: active (running) since Fri 2020-10-09 17:50:55 BST; 1min 9s ago
+ Main PID: 721 (start.sh)
+    Tasks: 6 (limit: 2065)
+   CGroup: /system.slice/ttn-gateway.service
+           ├─721 /bin/bash /opt/ttn-gateway/packet_forwarder/lora_pkt_fwd/start.sh
+           └─769 ./lora_pkt_fwd
+
+Oct 09 17:52:00 raspberrypi ttn-gateway[721]: src/jitqueue.c:448:jit_print_queue(): INFO: [jit] queue is empty
+Oct 09 17:52:00 raspberrypi ttn-gateway[721]: ### [GPS] ###
+Oct 09 17:52:00 raspberrypi ttn-gateway[721]: # GPS sync is disabled
+Oct 09 17:52:00 raspberrypi ttn-gateway[721]: ##### END #####
+Oct 09 17:52:00 raspberrypi ttn-gateway[721]: JSON up: {"stat":{"time":"2020-10-09 16:51:30 GMT","rxnb":0,"rxok":0,"rxfw":0,"ackr":0.0,"dwnb":0,"t
+Oct 09 17:52:00 raspberrypi ttn-gateway[721]: INFO: [down] PULL_ACK received in 368 ms
+Oct 09 17:52:00 raspberrypi ttn-gateway[721]: ##### 2020-10-09 16:52:00 GMT #####
+Oct 09 17:52:00 raspberrypi ttn-gateway[721]: ### [UPSTREAM] ###
+Oct 09 17:52:00 raspberrypi ttn-gateway[721]: # RF packets received by concentrator: 0
+Oct 09 17:52:00 raspberrypi ttn-gateway[721]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+
 
 **Congratulations!** :tada: you should now see your Gateway in TTN!
