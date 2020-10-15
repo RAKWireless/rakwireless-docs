@@ -15,6 +15,7 @@ Thank you for choosing **RAK5802 WisBlock RS485 Interface Module** in your aweso
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
+* [40 Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/WisConnector/M40S1003K6M.stp)
 
 **Examples**:
 

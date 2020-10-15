@@ -14,6 +14,10 @@ Thank you for choosing **RAK7243 WisGate Developer D3** in your awesome IoT Proj
 * [Source Code Repository](https://github.com/RAKWireless/rak_common_for_gateway)
 * [RAK7243 ready to flash Firmware](https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Firmware/RAK7243_Latest_Firmware.zip)
 
+:::tip 📝 NOTE
+Purchasing the [RAK2013 WisLink Cellular Pi Hat](../../RAK2013) separately with the intent of adding a cellular feature in your existing RAK7243 WisGate Developer Gateway is not possible. Hence, purchase the RAK7243C/7244C instead, as it is a specifically modified gateway that is composed of RAK2245 and RAK2013.
+:::
+
 ## Product Background
 
 The **RAK7243 WisGate Developer D3** is a complete and cost efficient Gateway Solution that will help you get started in developing a full LoRa System. The RAK7243 Developer is just a RAK2245 Pi Hat which can be easily stacked on top of a cheap Single Board Computer (SBC) such as the **Raspberry Pi 3B+** which is enclosed in a Pilot Gateway Casing. You can also use its sister model [RAK7243C LPWAN Developer Gateway](https://store.rakwireless.com/products/rak7243c-pilot-gateway) if you want to have Cellular functions added into it.

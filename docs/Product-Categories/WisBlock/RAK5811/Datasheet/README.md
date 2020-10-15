@@ -178,12 +178,22 @@ The functionalities of each pins of the WisIO connector are tabulated below.
 
 #### Mechanical Characteristics
 
+##### Board Dimensions
+
 Figure 8 shows the dimensions of the module RAK5811 module.
 
 <rk-img
   src="/assets/images/wisblock/rak5811/datasheet/rak5811-mech.png"
   width="80%"
   caption="RAK5811 dimensions"
+/>
+
+##### WisConnector PCB Layout
+
+<rk-img
+  src="/assets/images/wisblock/rak5811/datasheet/MxxS1003K6M.png"
+  width="100%"
+  caption="WisConnector PCB footprint and recommendations"
 />
 
 #### Schematic Diagram
@@ -196,7 +206,7 @@ Figure 8 shows the dimensions of the module RAK5811 module.
 
 ## Typical Application
 
-A typical application is shown in Figure 10, users can connect up to two 0-5V analog sensors independently.
+A typical application is shown in Figure 11, users can connect up to two 0-5V analog sensors independently.
 
 <rk-img
   src="/assets/images/wisblock/rak5811/datasheet/typical-application.png"
@@ -244,8 +254,8 @@ The RAK5811 is not compatible with RAK4601. The main reason is because RAK4601 d
 
 :::tip 📝 NOTE 2:  RAK5801+RAK4202+RAK5005-O
 In order to combine a RAK5811 module, a RAK4202 which is a WisBlock Core module, and the RAK5005-O, the following modification must be introduced: 
-- In RAK5005-O, remove the R7. The R7 resistor is shown in **Figure 11**.
-- In RAK5811, remove R94 to R95, and use PA0 of STM32L151 to read the analog data of the channel “analog0”, and use PA2 of STM32L151 to read the analog data of Channel analog1. **Figure 12** shows the resistors R94 and R95 on the RAK5811 module.
+- In RAK5005-O, remove the R7. The R7 resistor is shown in **Figure 12**.
+- In RAK5811, remove R94 to R95, and use PA0 of STM32L151 to read the analog data of the channel “analog0”, and use PA2 of STM32L151 to read the analog data of Channel analog1. **Figure 13** shows the resistors R94 and R95 on the RAK5811 module.
 
 This combination has the following restrictions: 
 - The adapted RAK5005-O will not support battery power collection.
@@ -265,8 +275,8 @@ This combination has the following restrictions:
 
 :::tip 📝 NOTE 3: RAK5801+RAK4261+RAK5005-O
 In order to combine a RAK5811 module, a RAK4261(WisBlock Core module), and the RAK5005-O, the following modification must be introduced: 
-- In RAK5005-O, remove the R7. See Figure 11. 
-- In RAK5811, remove R94 to R95 (see Figure 12), and use PA08 of ATSAMR34 to read the analog data of the channel “analog0”, and use PA09 of ATSAMR34 to read the analog data of channel analog1.
+- In RAK5005-O, remove the R7. See Figure 12. 
+- In RAK5811, remove R94 to R95 (see Figure 13), and use PA08 of ATSAMR34 to read the analog data of the channel “analog0”, and use PA09 of ATSAMR34 to read the analog data of channel analog1.
 
 This combination has the following restrictions: 
 - The adapted RAK5005-O will not support battery power collection. 

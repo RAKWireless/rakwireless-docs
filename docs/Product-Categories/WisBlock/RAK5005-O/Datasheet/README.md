@@ -585,12 +585,22 @@ A 5V Solar panel can be connected to the board via the P2 connector to also serv
 
 #### Mechanical Characteristics
 
+##### Board Dimensions
+
 Figure 15 shows the detailed mechanical dimensions of RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/15.mechanical-dimensions.png"
   width="80%"
   caption="Mechanical Dimensions"
+/>
+
+##### WisConnector PCB Layout
+
+<rk-img
+  src="/assets/images/wisblock/rak5005-o/datasheet/FxxS1003K6M.png"
+  width="100%"
+  caption="WisConnector PCB footprint and recommendations"
 />
 
 #### Environmental Characteristics
@@ -605,7 +615,7 @@ The table below lists the operation and storage temperature requirements of RAK5
 
 #### Schematic Diagram
 
-The component schematics diagram of the RAK5005-Oare shown in figures 16 and 17 below:
+The component schematics diagram of the RAK5005-Oare shown in figures 17 and 18 below:
 
 
 <rk-img

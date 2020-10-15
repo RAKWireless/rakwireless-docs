@@ -192,6 +192,14 @@ Table below shows the recommended operating conditions of the RAK1920 module.
   caption="Mechanical Dimensions"
 />
 
+##### WisConnector PCB Layout
+
+<rk-img
+  src="/assets/images/wisblock/rak1920/datasheet/MxxS1003K6M.png"
+  width="100%"
+  caption="WisConnector PCB footprint and recommendations"
+/>
+
 #### Schematic Diagram
 The following sections will describe the schematic of the RAK1920 module, which includes 
 - Power Supply 

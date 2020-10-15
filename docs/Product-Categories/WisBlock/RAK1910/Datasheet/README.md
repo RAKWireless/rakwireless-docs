@@ -177,6 +177,8 @@ The RAK1910 WisBlock GNSS Location Module module comprises a standard WisIO conn
 
 #### Mechanical Characteristics
 
+##### Board Dimensions
+
 Figure 3 shows the dimensions and the mechanic drawing of the RAK1910 module.
 
 <rk-img
@@ -191,9 +193,16 @@ Slot for mounting: **Slot A**
 1. Because the RAK1910 is double in size and uses the Serial connection to the WisBlock Core module, it can be only installed in the RAK5005-O Slot A.
    :::
 
-#### Schematic Diagram
+##### WisConnector PCB Layout
 
-The Figure 4 shows the schematic of the RAK1910 module.
+<rk-img
+  src="/assets/images/wisblock/rak1910/datasheet/MxxS1003K6M.png"
+  width="100%"
+  caption="WisConnector PCB footprint and recommendations"
+/>
+
+#### Schematic Diagram
+The Figure 5 shows the schematic of the RAK1910 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1910/datasheet/RAK1910_schematics.png"

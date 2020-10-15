@@ -92,6 +92,7 @@ The absolute minimum and maximum ratings of the RAK1921 WisBlock OLED Display ar
 
 #### Mechanical Characteristics
 
+##### Board Dimensions
 
 <rk-img
   src="/assets/images/wisblock/rak1921/datasheet/mechanical-dimensions.png"
@@ -99,6 +100,13 @@ The absolute minimum and maximum ratings of the RAK1921 WisBlock OLED Display ar
   caption="Mechanical Dimensions"
 />
 
+##### WisConnector PCB Layout
+
+<rk-img
+  src="/assets/images/wisblock/rak1921/datasheet/MxxS1003K6M.png"
+  width="100%"
+  caption="WisConnector PCB footprint and recommendations"
+/>
 
 
 

@@ -187,6 +187,7 @@ This sections shows the maximum and minimum ratings of the RAK5804 module and it
 
 #### Mechanical Characteristics
 
+##### Board Dimensions
 
 The mechanical dimensions of the RAK5804 module is shown in Figure 7 below.
 
@@ -197,9 +198,16 @@ The mechanical dimensions of the RAK5804 module is shown in Figure 7 below.
   caption="RAK5804 Mechanical Dimensions"
 />
 
+##### WisConnector PCB Layout
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/datasheet/MxxS1003K6M.png"
+  width="100%"
+  caption="WisConnector PCB footprint and recommendations"
+/>
 #### Schematic Diagram
 
-Figure 8 shows the schematic diagram of RAK5804 WisBlock WisIO connector, USB connector and the 10 mechanical holes.
+Figure 9 shows the schematic diagram of RAK5804 WisBlock WisIO connector, USB connector and the 10 mechanical holes.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/datasheet/schematic-diagram.png"

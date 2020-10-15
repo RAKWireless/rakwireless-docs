@@ -144,6 +144,14 @@ The table below shows the functionalities of each pin of the WisIO connector:
   caption="RAK5802 dimensions"
 />
 
+##### WisConnector PCB Layout
+
+<rk-img
+  src="/assets/images/wisblock/rak5802/datasheet/MxxS1003K6M.png"
+  width="100%"
+  caption="WisConnector PCB footprint and recommendations"
+/>
+
 ##### RAK5802 Mounting Mechanism
 
 The RAK5802 module is part of the WisIO category, which connects to the base board through the WisIO slot. The installation method is shown in the figure below.

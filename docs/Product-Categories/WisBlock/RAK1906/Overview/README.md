@@ -16,6 +16,8 @@ Thank you for choosing **RAK1906 WisBlock Environmental Sensor** in your awesome
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK1906 3D Model](https://downloads.rakwireless.com/LoRa/WisBlock/WisBlock-3D/pwb-rak190x.stp)
+* [24 Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/WisConnector/M24S1003K6M.stp)
+
 
 **Examples**
 * [Sample Code: RAK1906](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK1906_Environment_BEM680)

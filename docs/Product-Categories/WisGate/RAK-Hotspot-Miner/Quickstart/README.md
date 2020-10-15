@@ -71,4 +71,4 @@ During the setup of your account, you will be asked to input 12 words that must 
 
 Backing up your microSD Card is very important as this contains your RAK Hotspot Miner identity. If the card is lost or damaged, you may lose access to the Helium network and require payment of a new add gateway fee. **Keep this backup card in a safe place**. 
 
-To backup, power off the RAK Hotspot Miner and follow backup instructions [here](../../RAK7248/).
+To backup, power off the RAK Hotspot Miner and follow backup instructions [here](https://pimylifeup.com/backup-raspberry-pi/).

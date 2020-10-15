@@ -55,11 +55,11 @@ The number of screws is related to the specific module, please confirm according
   caption="Attaching the Battery Holder"
 />
 
-**Step 5:** Fasten the IPEX of antenna. The position indicated in the figure below is the recommended position for Lora and BLE antennas. Of course, you can adjust the position according to actual needs.
+**Step 5:**  Plug the antenna connectors into the IPEX connectors and place the antennas on the base plate. The position in the figure below is the recommended position for LoRa and BLE antennas. You can always adjust the position according to your actual needs.
 
 <rk-img
-  src="/assets/images/accessories/rakbox-b5/installation/image-20200713164446355.png"
-  width="30%"
+  src="/assets/images/accessories/rakbox-b5/installation/antenna-placement.svg"
+  width="40%"
   caption="Assembly - Step 5"
 />
 
@@ -132,7 +132,7 @@ After the battery is placed into the battery holder, the battery can be rotated 
 The acrylic shell supports the sensor installation of Microbus, Seeed modules and a SMA antenna connector. To use these breakout boards, install the RAK1920 WisBlock IO module. The following figure shows the prepared mounting places for Microbus and Seeed modules:
 
 <rk-img
-  src="/assets/images/accessories/rakbox-b5/installation/box-install-label.png"
+  src="/assets/images/accessories/rakbox-b5/installation/mounting-places.png"
   width="50%"
   caption="Mounting Places for Other Modules"
 />

@@ -184,12 +184,22 @@ This signal controls the dc-dc power supply on RAK5801, before capturing analog 
 
 #### Mechanical Characteristics
 
-Refer to figure 7 below for the mechanical dimensions of the RAK5801 module.
+##### Board Dimensions
+
+Refer to Figure 7 below for the mechanical dimensions of the RAK5801 module.
 
 <rk-img
   src="/assets/images/wisblock/rak5801/datasheet/mechanical-dimensions.png"
   width="80%"
   caption="RAK5801 Mechanical Dimensions"
+/>
+
+##### WisConnector PCB Layout
+
+<rk-img
+  src="/assets/images/wisblock/rak5801/datasheet/MxxS1003K6M.png"
+  width="100%"
+  caption="WisConnector PCB footprint and recommendations"
 />
 
 #### Schematic Diagram
@@ -204,7 +214,7 @@ Refer to figure 7 below for the mechanical dimensions of the RAK5801 module.
 
 ### Two-wire sensor
 
- For 2-wires 4-20mA sensor，as shown in Figure 9, 
+ For 2-wires 4-20mA sensor，as shown in Figure 10, 
  1. Connect sensor（+）to VCC (Pin5)  of  RAK5801
  2. Connect sensor ( - ) to AIN0 or AIN1 of the RAK5801 module.
 
@@ -216,7 +226,7 @@ Refer to figure 7 below for the mechanical dimensions of the RAK5801 module.
 
 ### Four-wire Sensor
 
-For 4-wires sensor, as shown in Figure 10
+For 4-wires sensor, as shown in Figure 11
 
 1. Use an external power supply to the power the sensor.
 2. Connect the output of the sensor to AIN0 or AIN1 of RAK5801.
@@ -246,8 +256,8 @@ The RAK5801 is not compatible with RAK4601. The main reason is because RAK4601 d
 
 :::tip 📝 NOTE 2:  RAK5801+RAK4202+RAK5005-O
 In order to combine a RAK5801 module, a RAK4202 (WisBlock Core module), and the RAK5005-O, the following modification must be introduced: 
--	In RAK5005-O, remove the R7. The R7 resistor is shown in **Figure 11.**
--	In RAK5801, remove R94 to R95, and use PA0 of STM32L151 to read the analog data of the channel “analog0”, and use PA2 of STM32L151 to read the analog data of Channel analog1. **Figure 12** shows the resistors R94 and R95 on the RAK5801 module.
+-	In RAK5005-O, remove the R7. The R7 resistor is shown in **Figure 12.**
+-	In RAK5801, remove R94 to R95, and use PA0 of STM32L151 to read the analog data of the channel “analog0”, and use PA2 of STM32L151 to read the analog data of Channel analog1. **Figure 13** shows the resistors R94 and R95 on the RAK5801 module.
 
 This combination has the following restrictions: 
 -	The adapted RAK5005-O module will not able to sense the battery voltage anymore. 
@@ -267,8 +277,8 @@ This combination has the following restrictions:
 
 :::tip 📝 NOTE 3: RAK5801+RAK4261+RAK5005-O
 In order to combine a RAK5801 module, a RAK4261(WisBlock Core module), and the RAK5005-O, the following modification must be introduced: 
--	In RAK5005-O, remove the R7. See Figure 10. 
--	In RAK5801, remove R94 to R95 (see Figure 11), and use PA08 of ATSAMR34 to read the analog data of the channel “analog0”, and use PA09 of ATSAMR34 to read the analog data of Channel analog1.
+-	In RAK5005-O, remove the R7. See Figure 12. 
+-	In RAK5801, remove R94 to R95 (see Figure 13), and use PA08 of ATSAMR34 to read the analog data of the channel “analog0”, and use PA09 of ATSAMR34 to read the analog data of Channel analog1.
 
 This combination has the following restrictions: 
 -	The adapted RAK5005-O module will not able to sense the battery voltage anymore. 

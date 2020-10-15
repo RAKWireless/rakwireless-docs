@@ -18,6 +18,9 @@ Thank you for choosing **RAK5005-O WisBlock Base Board** in your awesome IoT Pro
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK5005-O Baseboard Installation Guide](../../../../Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/)
 * [RAK5005-O 3D Model](https://downloads.rakwireless.com/LoRa/WisBlock/WisBlock-3D/pwb-rak5005-O.stp)
+* [24 Pin Female Connector 3D File (Sensor Slot)](https://downloads.rakwireless.com/3D_File/WisConnector/F24S1003K6M.stp)
+* [40 Pin Female Connector 3D File (Core and IO Slot)](https://downloads.rakwireless.com/3D_File/WisConnector/F40S1003K6M.stp)
+
 
 ## Product Description
 

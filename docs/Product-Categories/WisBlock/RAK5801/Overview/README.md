@@ -15,6 +15,7 @@ Thank you for choosing **RAK5801 WisBlock 4-20mA Interface Module** in your awes
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK5801 3D Model](https://downloads.rakwireless.com/LoRa/WisBlock/WisBlock-3D/pwb-rak5801.stp)
+* [40 Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/WisConnector/M40S1003K6M.stp)
 
 **Examples**
 * [Sample Code: RAK5801](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK5801_4-20mA) 

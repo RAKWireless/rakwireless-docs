@@ -94,6 +94,8 @@ Pins 10, 12, 13, and 15 are connected to the interrupt pins of LIS3DH, please re
 
 #### Mechanical Characteristics
 
+##### Board Dimensions
+
 Figure 3 shows the dimensions and the mechanic drawing of the RAK1904 module.
 
 <rk-img
@@ -102,9 +104,17 @@ Figure 3 shows the dimensions and the mechanic drawing of the RAK1904 module.
   caption="RAK1904 WisBlock Sensor Mechanic Drawing"
 />
 
+##### WisConnector PCB Layout
+
+<rk-img
+  src="/assets/images/wisblock/rak1904/datasheet/MxxS1003K6M.png"
+  width="100%"
+  caption="WisConnector PCB footprint and recommendations"
+/>
+
 #### Schematic Diagram
 
-The Figure 4 shows the schematic of the RAK1904 module.
+The Figure 5 shows the schematic of the RAK1904 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1904/datasheet/RAK1904_schematics.png"

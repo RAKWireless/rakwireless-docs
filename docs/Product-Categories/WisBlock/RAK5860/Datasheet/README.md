@@ -110,13 +110,24 @@ Figure 5 shows the dimensions of the RAK5860 module.
 
 #### Mechanical Characteristics
 
+##### Board Dimensions
+
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/mechanical_dimensions.png"
   width="40%"
   caption="Mechanical Dimensions"
 />
 
+##### WisConnector PCB Layout
+
+<rk-img
+  src="/assets/images/wisblock/rak5860/datasheet/MxxS1003K6M.png"
+  width="100%"
+  caption="WisConnector PCB footprint and recommendations"
+/>
+
 #### Schematic Diagram
+
 The following sections will describe the schematic of the RAK5860 module, which include: 
 
 *	Turn on/off module
@@ -130,7 +141,7 @@ The following sections will describe the schematic of the RAK5860 module, which 
 
 ##### Turn on/off mechanism
 
-Figure 6 shows a circuit to allow turn on or to turn off the module. By default, the internal Quectel BG77 module is in power off mode, it can be turned on by driving WIS_PWRKEY to high state (positive digital pulse) for a period of 500-1000ms. 
+Figure 7 shows a circuit to allow turn on or to turn off the module. By default, the internal Quectel BG77 module is in power off mode, it can be turned on by driving WIS_PWRKEY to high state (positive digital pulse) for a period of 500-1000ms. 
 
 Driving WIS_PWRKEY high for 650-1500ms, the module will execute power-down procedure after WIS_PWRKEY is released, then enter off mode.  
 
@@ -144,7 +155,7 @@ Alternatively, the user can send a command **AT+QPOWD** command turn off the int
 
 ##### IO Connector
 
-Figure 7 shows the definition of IO connector. 
+Figure 8 shows the definition of IO connector. 
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/wisio.png"
@@ -166,7 +177,7 @@ The RAK5860 only uses a subset of all the pins available in the IO connector. Th
 
 ##### IO Connector Pin order
 
-Figure 8 shows the IO connector’s pin order. The connector is located in the
+Figure 9 shows the IO connector’s pin order. The connector is located in the
 bottom layer of the RAK5860 module.
 
 <rk-img
@@ -177,7 +188,7 @@ bottom layer of the RAK5860 module.
 
 ##### Voltage-level translator
 
-Within the BG77, all interfaces are designed to work with 1.8V level. RAK5860 features a voltage-level translator in order to down-convert the 3.3V coming from the WisBlock Core module. The Figure 9 shows the design of the internal voltage-level translator.
+Within the BG77, all interfaces are designed to work with 1.8V level. RAK5860 features a voltage-level translator in order to down-convert the 3.3V coming from the WisBlock Core module. The Figure 10 shows the design of the internal voltage-level translator.
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/voltage-level-translator.png"
@@ -205,7 +216,7 @@ VDD_EXT is 1.8V, from BG77 internal regulator, BG77 pin 21
 
 ##### SIM card circuit
 
-The RAK5860 module only supports the 1.8V ESIM/SIM card, the following Figure 12 shows SIM interface circuit. by default, we use Nano SIM card, eSIM is no mounting. In order to offer good ESD protection, a TVS diode array is added in the SIM card circuitry
+The RAK5860 module only supports the 1.8V ESIM/SIM card, the following Figure 13 shows SIM interface circuit. by default, we use Nano SIM card, eSIM is no mounting. In order to offer good ESD protection, a TVS diode array is added in the SIM card circuitry
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/sim_card.png"
@@ -226,7 +237,7 @@ In order to offer good ESD protection, a TVS diode array is added in the USB con
   caption="USB Connector"
 />
 
-The USB connection detection pin input voltage range is 1.3-1.8V. The Figure 14 shows the USB connection detection pin power supply. 
+The USB connection detection pin input voltage range is 1.3-1.8V. The Figure 15 shows the USB connection detection pin power supply. 
 
 
 <rk-img
@@ -237,7 +248,7 @@ The USB connection detection pin input voltage range is 1.3-1.8V. The Figure 14 
 
 ##### Power supply for USB PHY circuit
 
-The Figure 15 shows the power supply for USB PHY circuit.
+The Figure 16 shows the power supply for USB PHY circuit.
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/usb_phy.png"
@@ -247,7 +258,7 @@ The Figure 15 shows the power supply for USB PHY circuit.
 
 ##### Status Indication LEDs
 
-Figure 16 shows the operation status and network activity status led circuit, when BG77 is powered on, blue led is lit, different activity network status, the green led is lit or not is different.
+Figure 17 shows the operation status and network activity status led circuit, when BG77 is powered on, blue led is lit, different activity network status, the green led is lit or not is different.
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/status_indication-led.png"
@@ -267,7 +278,7 @@ The RAK5860 module’s main antenna has a reserve π-type matching circuit for b
 
 ##### GNNS Antenna
 
-The RAK5860 module is designed with an active antenna, the Figure 18 shows the GNSS antenna circuit. 3V3_S from WisIO connector, we use a U.FL connector for GNSS antenna.
+The RAK5860 module is designed with an active antenna, the Figure 19 shows the GNSS antenna circuit. 3V3_S from WisIO connector, we use a U.FL connector for GNSS antenna.
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/gnss_antenna.png"

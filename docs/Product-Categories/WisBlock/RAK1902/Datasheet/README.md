@@ -83,7 +83,9 @@ The RAK1902 WisBlock Sensor module comprises a standard WisIO connector. The Wis
 
 #### Mechanical Characteristics
 
-Figure 3 shows the dimensions and the mechanic drawing of the RAK1901 module.
+##### Board Dimensions
+
+Figure 3 shows the dimensions and the mechanic drawing of the RAK1902 module.    
 
 <rk-img
   src="/assets/images/wisblock/rak1902/datasheet/RAK19xx_mechanic_drawing.png"
@@ -91,9 +93,16 @@ Figure 3 shows the dimensions and the mechanic drawing of the RAK1901 module.
   caption="RAK1902 WisBlock Sensor Mechanic Drawing"
 />
 
-#### Schematic Diagram
+##### WisConnector PCB Layout
 
-The Figure 4 shows the schematic of the RAK1902 module.
+<rk-img
+  src="/assets/images/wisblock/rak1902/datasheet/MxxS1003K6M.png"
+  width="100%"
+  caption="WisConnector PCB footprint and recommendations"
+/>
+
+#### Schematic Diagram
+The Figure 5 shows the schematic of the RAK1902 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1902/datasheet/RAK1902_schematics.png"

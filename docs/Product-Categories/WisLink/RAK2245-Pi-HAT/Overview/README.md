@@ -21,6 +21,10 @@ Thank you for choosing **RAK2245 Pi HAT WisLink LPWAN Concentrator** in your awe
   caption="RAK2245 Pi Hat"
 /> -->
 
+:::tip 📝 NOTE
+Purchasing the [RAK2013 WisLink Cellular Pi Hat](../../RAK2013) separately with the intent of adding a cellular feature in your existing RAK2245 Pi HAT is not possible. Hence, purchase the RAK7243C/7244C instead, as it is a specifically modified gateway that is composed of RAK2245 and RAK2013.
+:::
+
 ## Product Description
 
 **RAK2245 Pi HAT** is a module with Raspberry PI form factor. It can be plugged into
@@ -47,3 +51,4 @@ The RAK2245 Pi HAT is a complete and cost efficient gateway solution that can he
 - Supports latest LoRaWAN 1.0.2 protocol.
 - Supports global license-free frequency band (EU433, CN470, EU868, US915, AS923, AU915, KR920, IN865 and AS920).
 - Supports SPI, UART, I2C interface.
+

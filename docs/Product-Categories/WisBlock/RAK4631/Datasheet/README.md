@@ -76,7 +76,7 @@ The hardware specification is categorized into four parts. It discusses the pino
 The RAK4631 module supports the LoRaWAN bands shown in Table below. When buying a RAK4631 module, please pay attention to specify the correct core module RAK4630 H/L for your region. In which H stands for high-frequency regions and L for low-frequency regions.  
 |     Region           |     Frequency(MHz)    |     Core Module    |
 |----------------------|-----------------------|--------------------|
-|     Indian           |     IN865             |     RAK4630(H)     |
+|     India           |     IN865             |     RAK4630(H)     |
 |     Europe           |     EU868             |     RAK4630(H)     |
 |     Europe           |     EU433             |     RAK4630(L)     |
 |     North America    |     US915             |     RAK4630(H)     |
@@ -123,12 +123,21 @@ The RAK4631 module supports the LoRaWAN bands shown in Table below. When buying 
 
 #### Mechanical Characteristics
 
+##### Board Dimensions
+
 <rk-img
   src="/assets/images/wisblock/rak4631/datasheet/board-dimensions.jpg"
   width="35%"
   caption="Mechanical Dimensions"
 />
 
+##### WisConnector PCB Layout
+
+<rk-img
+  src="/assets/images/wisblock/rak4631/datasheet/FxxS1003K6M.png"
+  width="100%"
+  caption="WisConnector PCB footprint and recommendations"
+/>
 
 #### Schematic Diagram
 
@@ -136,7 +145,7 @@ The following section will describe the breakout module schematic. It includes W
 
 ##### WisConnector 
 
-The breakout module allows the RAK4630 stamp module’s pinout to be transferred by the board-to-board WisConnector, Figure 4 shows the definition of this connector.
+The breakout module allows the RAK4630 stamp module’s pinout to be transferred by the board-to-board WisConnector, Figure 5 shows the definition of this connector.
 
 <rk-img
   src="/assets/images/wisblock/rak4631/datasheet/wisconnector-pin.jpg"
@@ -194,7 +203,7 @@ The breakout module allows the RAK4630 stamp module’s pinout to be transferred
 
 ##### WisConnector Pin Order
 
-Figure 5 shows the pin order of the WisConnector, which is located in the bottom layer of the module.
+Figure 6 shows the pin order of the WisConnector, which is located in the bottom layer of the module.
 
 <rk-img
   src="/assets/images/wisblock/rak4631/datasheet/wisconnector-pin-order.png"
@@ -203,7 +212,7 @@ Figure 5 shows the pin order of the WisConnector, which is located in the bottom
 />
 
 ##### Core Module
-The breakout module itself has a RAK4630 at its core, Figure 6 shows the core module pin and connection information, by default, the NFC function is disabled for conserve the low power characteristic.
+The breakout module itself has a RAK4630 at its core, Figure 7 shows the core module pin and connection information, by default, the NFC function is disabled for conserve the low power characteristic.
 
 <rk-img
   src="/assets/images/wisblock/rak4631/datasheet/core-module-pin.jpg"
@@ -261,7 +270,7 @@ The breakout module itself has a RAK4630 at its core, Figure 6 shows the core mo
 
 ##### SWD Interface
 
-The breakout module exposes a SWD debug interface, Figure 7 shows the connection information. Additionally, the RST pin is used for resetting the core module RAK4630.
+The breakout module exposes a SWD debug interface, Figure 8 shows the connection information. Additionally, the RST pin is used for resetting the core module RAK4630.
 
 <rk-img
   src="/assets/images/wisblock/rak4631/datasheet/swd-interface.jpg"
@@ -271,7 +280,7 @@ The breakout module exposes a SWD debug interface, Figure 7 shows the connection
 
 ##### Power up automatic reset
 
-The breakout module has a power-up automatic reset circuit, Figure 8 shows the automatic reset mechanism, this module also can be reset though RAK5005-O reset pin
+The breakout module has a power-up automatic reset circuit, Figure 9 shows the automatic reset mechanism, this module also can be reset though RAK5005-O reset pin
 
 <rk-img
   src="/assets/images/wisblock/rak4631/datasheet/power-automatic-reset.jpg"
