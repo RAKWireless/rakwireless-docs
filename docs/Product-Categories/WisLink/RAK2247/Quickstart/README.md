@@ -178,6 +178,6 @@ Oct 09 17:52:00 raspberrypi ttn-gateway[721]: ##### 2020-10-09 16:52:00 GMT ####
 Oct 09 17:52:00 raspberrypi ttn-gateway[721]: ### [UPSTREAM] ###
 Oct 09 17:52:00 raspberrypi ttn-gateway[721]: # RF packets received by concentrator: 0
 Oct 09 17:52:00 raspberrypi ttn-gateway[721]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
-
+```
 
 **Congratulations!** :tada: you should now see your Gateway in TTN!
