@@ -99,25 +99,25 @@ GATEWAY_EUI_NIC=”wlx6045bdf0cf64h0”
 Again, the values are just an example. Remember to do this for all 3 files in step 4.
 
 
-5. Change the `global_conf.json` that will be copied during instalaton by replacing the `global_conf.eu_863_870.json` in the end of the (install.sh file)[https://github.com/RAKWireless/rak_common_for_gateway/blob/master/lora/rak2247_usb/install.sh] to one of those inside `/global_conf` or a custom one. (**EU868 is the default**)
+5. Change the `global_conf.json` that will be copied during installation by replacing the `global_conf.eu_863_870.json` in the end of the (install.sh file)[https://github.com/RAKWireless/rak_common_for_gateway/blob/master/lora/rak2247_usb/install.sh] to one of those inside `/global_conf` or a custom one. (**EU868 is the default**)
 ```sh
 cp global_conf/global_conf.eu_863_870.json $INSTALL_DIR/packet_forwarder/lora_pkt_fwd/global_conf.json
 ```
 
 :::tip 📝 NOTE:
- You may also coment the line below so the TTN address doen't get replaced by localhost.
+ You may also comment on the line below so the TTN address doesn't get replaced by localhost.
 :::
 ```sh
 # sed -i "s/^.*server_address.*$/\t\"server_address\": \"127.0.0.1\",/" $INSTALL_DIR/packet_forwarder/lora_pkt_fwd/global_conf.json
 ```
 
-6. If you are using the RAK2247 in a board that have diferent pinout than the RAK2247 Pi Hat, replace the `SX1301_RESET_BCM_PIN` in the `rak_common_for_gateway/lora/start.sh` to the corresponding RESET pin.
+6. If you are using the RAK2247 in a board that has a different pinout than the RAK2247 Pi Hat, replace the `SX1301_RESET_BCM_PIN` in the `rak_common_for_gateway/lora/start.sh` to the corresponding RESET pin.
 ```sh
 # Reset iC880a PIN
 SX1301_RESET_BCM_PIN=<YOUR_RESET_PIN_HERE>
 ```
 :::tip 📝 NOTE:
- If you want to have your Gateway_ID automaticaly update when running your package fowarder, uncoment and change the line `#./update_gwid.sh ./local_conf.json` in the same file (start.sh) to `./update_gwid.sh ./global_conf.json`.
+ If you want to have your Gateway_ID automatically update when running your package forwarder, uncomment and change the line `#./update_gwid.sh ./local_conf.json` in the same file (start.sh) to `./update_gwid.sh ./global_conf.json`.
 :::
 
 7. **Add** the following lines of code at the end of “**install.sh**” file: ( In addition to inserting the name of the interface from the previous step)
@@ -146,7 +146,7 @@ systemctl enable ttn-gateway.service
 sudo ./install.sh
 ```
 
-9.Wait for the installation to complete. Using the commands below, go and run the newly created process (**lora_pkt_fwd**):
+9. Wait for the installation to complete. Using the commands below, go and run the newly created process (**lora_pkt_fwd**):
 
 ```sh
 cd /opt/ttn-gateway/packet_forwarder/lora_pkt_fwd 
@@ -156,7 +156,7 @@ sudo ./lora_pkt_fwd
  If you added the additional lines in step 5 it will execute every time on boot.
 :::
 
-10. To check if it is working, run `sudo systemctl start ttn-gateway.service` to start the service and check its status `service ttn-gateway status`. You should see something like the box bellow. Be aware that it may take some minutes to see your gateway as connected in TTN's console.
+10. To check if it is working, run `sudo systemctl start ttn-gateway.service` to start the service and check its status `service ttn-gateway status`. You should see something like the box below. Be aware that it may take some minutes to see your gateway as connected in TTN's console.
 ```sh
 pi@raspberrypi:~ $ service ttn-gateway status
 ● ttn-gateway.service - The Things Network Gateway
