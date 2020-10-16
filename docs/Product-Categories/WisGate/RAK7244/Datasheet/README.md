@@ -45,13 +45,13 @@ The RAK7244 WisGate Developer D4 Gateway is ideal for prototyping, proof-of-conc
 ### Package Contents
 
 <rk-img
-  src="/assets/images/wisgate/rak7244/datasheet/qvm2wkloiwhw5vw5lspq.jpg"
+  src="/assets/images/wisgate/rak7244/datasheet/rak7244-package.png"
   width="100%"
   caption="RAK7244/RAK7244P Package Contents"
 />
 
 <rk-img
-  src="/assets/images/wisgate/rak7244/datasheet/s7k4l3t9y7uwyzj6aoi1.jpg"
+  src="/assets/images/wisgate/rak7244/datasheet/rak7244c-package.png"
   width="100%"
   caption="RAK7244C Package Contents"
 />
@@ -64,11 +64,11 @@ The overview covers the RAK7244 board overview and block diagram of the three co
 
 #### Board Overview
 
-The outer dimensions of Casing are 92 x 68.3 x 53.5 mm as shown below. They are the same for all 3 models: RAK7244/7244C/7244P. The example in Figure 3 is RAK7244C
+The outer dimensions of Casing are 92 x 68.3 x 57.2mm (LxWxH) as shown below. They are the same for all 3 models: RAK7244/7244C/7244P. The example in Figure 3 is RAK7244C
 
 <rk-img
-  src="/assets/images/wisgate/rak7244/datasheet/board-overview/ah9xztuuwaroshxlrebn.jpg"
-  width="70%"
+  src="/assets/images/wisgate/rak7244/datasheet/board-overview/board-overview.jpg"
+  width="90%"
   caption=" RAK7244C Casing Outer Dimensions"
 />
 
@@ -113,7 +113,7 @@ The hardware specification is categorized into six parts. It discusses the inter
 ##### RAK7244 / RAK7244P
 
 <rk-img
-  src="/assets/images/wisgate/rak7244/datasheet/interfaces/interfaces.png"
+  src="/assets/images/wisgate/rak7244/datasheet/interfaces/interfaces.jpg"
   width="100%"
   caption="RAK7244/RAK7244P Interfaces"
 />
@@ -121,7 +121,7 @@ The hardware specification is categorized into six parts. It discusses the inter
 ##### RAK7244C
 
 <rk-img
-  src="/assets/images/wisgate/rak7244/datasheet/interfaces/RAK7244C_Interfaces.png"
+  src="/assets/images/wisgate/rak7244/datasheet/interfaces/rak7244c-interfaces.jpg"
   width="100%"
   caption="RAK7244C Interfaces"
 />

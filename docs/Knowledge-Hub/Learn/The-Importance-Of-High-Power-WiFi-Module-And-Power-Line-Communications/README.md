@@ -7,7 +7,7 @@ tags:
 header:
   title: The Importance of High Power WiFi Module and Power Line Communications
   caption: by <b>Ken Yu</b>
-  img: /assets/images/knowledge-hub/tutorials/the-importance-of-high-power-wifi-module-and-power-line-communications/overview.png
+  img: /assets/images/knowledge-hub/banners/high-power-wifi-module-and-power-line-communications.jpg
 posted: 3/15/2017 10:30 AM
 author:
   name: Ken Yu

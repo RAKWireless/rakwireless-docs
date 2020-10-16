@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/wisgate/rak7243c/quickstart/1.product-overview/1.index/RAK7243C.svg
+rak_img: /assets/images/wisgate/rak7243c/quickstart/1.product-overview/1.index/RAK7243C_home.png
 rak_desc: This document is a sample demonstration on how to burn the latest firmware of the WisGate Developer Series.
 tags:
   - User-Manual
@@ -8,7 +8,7 @@ tags:
 header:
   title: Developer Gateway Firmware Setup
   caption: by <b>RAKwireless Team</b>
-  img: /assets/images/knowledge-hub/banners/general_banner.jpg
+  img: /assets/images/knowledge-hub/banners/developer-gateway-firmware-setup.jpg
 posted: 2/29/2020 10:30 AM
 ---
 

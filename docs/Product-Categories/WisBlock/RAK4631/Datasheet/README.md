@@ -51,8 +51,8 @@ The overview covers the RAK4631 board overview and the mounting mechanics of the
 #### Board Overview
 
 <rk-img
-  src="/assets/images/wisblock/rak4631/datasheet/board-overview-noflash.png"
-  width="60%"
+  src="/assets/images/wisblock/rak4631/datasheet/rak4631-overview.png"
+  width="80%"
   caption="Board Realistic View"
 />
 
@@ -116,7 +116,7 @@ The RAK4631 module supports the LoRaWAN bands shown in Table below. When buying 
 | **Symbol** | **Description** | **Min.** | **Nom.** | **Max.** | **Unit** | 
 | ---- | ---- | ---- | ---- | ---- | ---- | 
 | VBAT_SX | SX1262 supply voltage | 2.0 | 3.3 | 3.7 | V | 
-| VBAT_SX___IO | SX1262 supply for I/O pins | 2.0 | 3.3 | 3.7 | V | 
+| VBAT_SX_IO | SX1262 supply for I/O pins | 2.0 | 3.3 | 3.7 | V | 
 | VDD_NRF | NRF52840 power supply | 2.0 | 3.3 | 3.6 | V | 
 | VBUS | VBUS USB supply voltage | 4.35 | 5.0 | 5.5 | V | 
 | VBAT_NRF | NRF52840 high voltage power supply | 2.5 |  | 5.5 | V | 

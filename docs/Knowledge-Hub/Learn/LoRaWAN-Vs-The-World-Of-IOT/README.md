@@ -7,7 +7,7 @@ tags:
 header:
   title: LoRaWAN vs. the world of IoT!
   caption: by <b>Vladislav Yordanov</b>
-  img: /assets/images/knowledge-hub/tutorials/lorawan-vs-the-world-of-iot/overview.png
+  img: /assets/images/knowledge-hub/banners/lorawan-vs-the-world-of-iot.jpg
 posted: 11/01/2019 10:30 AM
 author:
   name: Vladislav Yordanov

@@ -8,7 +8,7 @@ tags:
 header:
   title: Amazon Web Service
   caption: by <b>RAKwireless Team</b>
-  img: /assets/images/knowledge-hub/banners/general_banner.jpg
+  img: /assets/images/knowledge-hub/banners/amazon-web-service.jpg
 posted: 8/31/2020 3:59 PM
 ---
 

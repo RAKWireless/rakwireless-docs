@@ -3,7 +3,7 @@ module.exports = {
   head: [
     ['link', {
       rel: 'icon',
-      href: `/favicon.ico`
+      href: `/favicon1.ico`
     }]
   ],
   themeConfig: {

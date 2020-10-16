@@ -7,7 +7,7 @@ tags:
 header:
   title: How To Successfully Carry Out A LoRaWAN Coverage Test With RAKwireless
   caption: by <b>Sam Domingo</b>
-  img: /assets/images/knowledge-hub/tutorials/how-to-successfully-carry-out-a-lorawan-coverage-test-with-rakwireless/overview.jpg
+  img: /assets/images/knowledge-hub/banners/how-to-successfully-carry-out-a-lorawan-coverage-test-with-rakwireless.jpg
 posted: 8/02/2019 10:30 AM
 author:
   name: Sam Domingo

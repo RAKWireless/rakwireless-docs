@@ -7,7 +7,7 @@ tags:
 header:
   title: How To Access LoRaWAN using Solar Energy
   caption: by <b>Sam Domingo</b>
-  img: /assets/images/knowledge-hub/tutorials/access-lorawan-using-solar-energy/overview.jpg
+  img: /assets/images/knowledge-hub/banners/access-lorawan-using-solar-energy.jpg
 posted: 5/02/2020 10:30 AM
 author:
   name: Sam Domingo
@@ -76,7 +76,7 @@ We will need to set the worst-case scenario where we have the minimum number of 
 180W/2 = 90W ≈ 100W
 ```
 
-## Assembly of LoRagateway Kit
+## Assembly of LoRa Gateway Kit
 
 After learning about those computations, you may now proceed in assembling your [RAK7249 Macro Outdoor Gateway](https://www.rakwireless.com/en-us/products/lpwan-gateways-and-concentrators/rak7249) powered by a solar panel.
 

@@ -7,7 +7,7 @@ tags:
 header:
   title: How LoRa Can Help You Save The Battery Life of Your IoT Device
   caption: by <b>Sam Domingo</b>
-  img: /assets/images/knowledge-hub/tutorials/how-to-extend-battery-of-your-iot-device/overview.jpg
+  img: /assets/images/knowledge-hub/banners/how-lora-can-help-you-save-the-battery-life-of-your-iot-device.jpg
 posted: 8/01/2019 10:30 AM
 author:
   name: Sam Domingo

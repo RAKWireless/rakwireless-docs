@@ -7,7 +7,7 @@ tags:
 header:
   title: Tips on Getting Started With RAK Commercial Gateway LoRa Server
   caption: by <b>Ken Yu</b> 
-  img: /assets/images/knowledge-hub/tutorials/tips-on-getting-started-with-rak-commercial-gateway-lora-server/overview.jpg
+  img: /assets/images/knowledge-hub/banners/getting-started-with-rak-commercial-gateway.jpg
 posted: 8/16/2019 10:30 AM
 author:
   name: Ken Yu

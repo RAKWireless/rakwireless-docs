@@ -8,7 +8,7 @@ tags:
 header:
   title: RAK5005-O Baseboard Installation Guide
   caption: by <b>RAKwireless Team</b>
-  img: /assets/images/knowledge-hub/banners/general_banner.jpg
+  img: /assets/images/knowledge-hub/banners/rak5005-O-baseboard-installation-guide.jpg
 posted: 2/29/2020 10:30 AM
 ---
 

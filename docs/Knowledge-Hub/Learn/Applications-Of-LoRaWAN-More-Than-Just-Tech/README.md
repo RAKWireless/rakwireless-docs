@@ -7,7 +7,7 @@ tags:
 header:
   title: 8 Applications of LoRaWAN | More Than Just Tech
   caption: by <b>Sam Domingo</b>
-  img: /assets/images/knowledge-hub/tutorials/applications-of-lorawan-more-than-just-tech/overview.jpg
+  img: /assets/images/knowledge-hub/banners/applications-of-lorawan-more-than-just-tech.jpg
 posted: 7/19/2019 10:30 AM
 author:
   name: Sam Domingo

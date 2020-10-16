@@ -7,7 +7,7 @@ tags:
 header:
   title: An In-Depth Knowledge about Apple HomeKit
   caption: by <b>Ken Yu</b>
-  img: /assets/images/knowledge-hub/tutorials/an-in-depth-knowledge-about-apple-homekit/overview.jpg
+  img: /assets/images/knowledge-hub/banners/an-in-depth-knowledge-about-apple-homekit.jpg
 posted: 3/27/2017 10:30 AM
 author:
   name: Ken Yu

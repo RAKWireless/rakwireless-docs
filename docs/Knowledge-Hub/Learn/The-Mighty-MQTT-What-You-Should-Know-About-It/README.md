@@ -7,7 +7,7 @@ tags:
 header:
   title: The Mighty MQTT! What You Should Know About It
   caption: by <b>Sam Domingo</b> 
-  img: /assets/images/knowledge-hub/tutorials/the-mighty-mqtt-what-you-should-know-about-it/overview.jpg
+  img: /assets/images/knowledge-hub/banners/what-you-should-know-about-mqtt.jpg
 posted: 2/19/2020 10:30 AM
 author:
   name: Sam Domingo

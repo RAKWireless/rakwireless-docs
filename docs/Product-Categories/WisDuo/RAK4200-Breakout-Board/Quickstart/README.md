@@ -56,7 +56,7 @@ Before powering the RAK4200 Breakout Board, make sure you have installed the inc
 - Connect your USB to UART converter to the pin header on the RAK4200 via a set of 4 dupont lines. Use **Figure 1** for reference on wiring the device properly.
 
 <rk-img
-  src="/assets/images/wisduo/rak4200-breakout-board/quickstart/interfacing/a6qkw8rluttf89wrzwum.jpg"
+  src="/assets/images/wisduo/rak4200-breakout-board/quickstart/interfacing/connection.png"
   width="100%"
   caption="Powering up and interfacing with the board"
 />

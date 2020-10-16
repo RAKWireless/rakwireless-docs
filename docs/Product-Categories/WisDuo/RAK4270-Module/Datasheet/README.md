@@ -154,6 +154,33 @@ It is recommended to add 4 decoupling capacitors near the module at the entrance
 | 20 | VDD |  | DC3V3 | Supply voltage 2.0~3.3V | 
 
 
+##### LoRa Transceiver IC Connection to RAK4270 Internal STM32
+
+| **LoRa IC Pin** | **STM32 GPIO**                   |
+| ------------ | ----------------------------------- | 
+| DIO1         | PB1                                 | 
+| DIO2         | PB5                                 | 
+| SPI1_SCK     | PA5                                 | 
+| SPI1_MISO    | PA6                                 | 
+| SPI1_MOSI    | PA7                                 | 
+| SPI1_NSS     | PA4                                 |
+| BUSY         | PB0                                 |
+| NRESET       | PA0                                 |
+| ANT_SW       | PA11                                |
+
+##### RF Switch control logic table
+
+|**ANT_SW**|**DIO2**|**Condition**|
+|----------|--------|-------------|
+|    1     |     0  |  RX mode    |
+|    0     |     1  |  TX mode    |
+
+
+::: tip 📝 Supplement
+Set Dio2AsRfSwitchControl = false<br>
+Set Dio3AsTxcoControl = enable
+:::
+
 
 #### RF Characteristics
 
@@ -175,7 +202,7 @@ It is recommended to add 4 decoupling capacitors near the module at the entrance
 
 ##### Power Consumption
 
-| Frequency   |  Outout Power  |  Current  |
+| Frequency   |  Output Power  |  Current  |
 | ----------- | -------------- | --------- |
 | 868MHz   |  21dBm   |  124mA on PA_BOOST  |
 |    |  20 dBm    |  118mA on PA_BOOST|

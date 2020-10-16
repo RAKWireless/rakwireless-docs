@@ -7,7 +7,7 @@ tags:
 header:
   title: WisCore – Voice Enable Your Product with Alexa
   caption: by <b>Ken Yu</b> 
-  img: /assets/images/knowledge-hub/tutorials/wiscore-voice-enable-your-product-with-alexa/overview.jpg
+  img: /assets/images/knowledge-hub/banners/wiscore–voice-enable-your-product-with-alexa.jpg
 posted: 4/24/2017 10:30 AM
 author:
   name: Ken Yu

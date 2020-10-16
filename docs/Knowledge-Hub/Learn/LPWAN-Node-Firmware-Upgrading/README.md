@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/wisduino/rak811-evaluation-board/quickstart/overview/RAK811-wisnode.svg
+rak_img: /assets/images/wisduino/rak811-evaluation-board/quickstart/overview/RAK811-wisnode_home.png
 rak_desc: This document is a sample demonstration on how to upgrade the firmware of you LPWAN Node.
 tags:
   - User-Manual
@@ -11,7 +11,7 @@ tags:
 header:
   title: LPWAN Node Firmware Upgrading
   caption: by <b>RAKwireless Team</b>
-  img: /assets/images/knowledge-hub/banners/general_banner.jpg
+  img: /assets/images/knowledge-hub/banners/lpwan-node-firmware-upgrading.jpg
 posted: 2/29/2020 10:30 AM
 ---
 

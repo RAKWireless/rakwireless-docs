@@ -5,6 +5,9 @@ tags:
   - wisgate
 next: false
 prev: ../Overview/
+certifications:
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_FCC_Certification.rar]
+  - [IC, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_IC_Certification.rar]
 ---
 
 # RAK7248 WisGate Developer D4H Gateway Datasheet
@@ -328,6 +331,8 @@ The table below lists the operation and storage temperature requirements:
 | RAK7248-09   | 1pc LoRa Antenna <br/>1pc GPS Antenna<br/>1pc Power Adapter<br/>1pc 16G SD card with pre-installed firmware | RAK7248 for RU864 region |
 
 ## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />
 
 ### FCC Caution
 

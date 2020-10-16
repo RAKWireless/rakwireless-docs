@@ -26,7 +26,7 @@ tags:
 
 <rk-img
   src="/assets/images/wisgate/rak7244c/quickstart/quick-start-guide/package.png"
-  width="80%"
+  width="100%"
   caption="RAK7244C Package Contents"
 />
 

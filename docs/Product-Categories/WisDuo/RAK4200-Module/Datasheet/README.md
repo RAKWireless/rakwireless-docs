@@ -110,6 +110,34 @@ The hardware specification is categorized into five parts. It covers the pinouts
 | 20  | VDD      | -   | DC3V3                                            |
 
 
+##### LoRa Transceiver IC Connection to RAK4200 Internal STM32
+
+| **LoRa IC Pin** | **STM32 GPIO**  |
+|:------------:|:------------------:| 
+| DIO0         | PB0                | 
+| DIO1         | PB1                | 
+| DIO2         | PB5                | 
+| DIO3         | PB4                | 
+| SPI1_CLK     | PA5                | 
+| SPI1_MISO    | PA6                | 
+| SPI1_MOSI    | PA7                | 
+| SPI1_NSS     | PA4                |
+| NRESET       | PA0                |
+| VCTL1        | PA11               |
+| VCTL2        | PA8                |
+
+##### LoRa Transceiver mode
+
+| **LoRa Mode**  | **VCTL1 GPIO** | **VCTL2 GPIO**  |
+|:---------------|:-------------: |:---------------:|
+| TX mode        | H              |       L         |
+| RX mode        | L              |       H         |
+
+:::tip 📝 Logic Level
+H level (1.8 - 5.0V)<br> 
+L level (0 V)
+:::
+
 #### RF Characteristics
 
 ##### Operating Frequencies

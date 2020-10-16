@@ -129,6 +129,37 @@ The hardware specifications are categorized into five parts. It discusses the in
 | 41      | 3V3_IN     |         | Input<br>power                                 |
 | 42      | GND        |         | Ground                                         |
 
+
+##### LoRa Transceiver IC Connection to RAK4600 Internal nRF52
+
+| **LoRa IC Pin** | **nRF52 IO pins**   |
+|:---------------:|:-------------------:| 
+| DIO0            | P0.27               | 
+| DIO1            | P0.28               | 
+| DIO2            | P0.29               | 
+| DIO3            | P0.30               | 
+| DIO4            | P0.31               |
+| DIO5            | NC                  |
+| SPI1_CLK        | P0.07               | 
+| SPI1_MISO       | P0.06               | 
+| SPI1_MOSI       | P0.05               | 
+| SPI1_NSS        | P0.04               |
+| NRESET          | P0.03               |
+| VCTL1           | P0.16               |
+| VCTL2           | P0.15               |
+
+##### RF Switch control logic table
+
+| **LoRa Mode**  | **VCTL1 GPIO** | **VCTL2 GPIO**  |
+|:---------------|:-------------: |:---------------:|
+| TX mode        | H              |       L         |
+| RX mode        | L              |       H         |
+
+:::tip 📝 Logic Level
+H level (1.8 - 5.0V)<br> 
+L level (0 V)
+:::
+
 #### RF Characteristics
 
 ##### Operating Frequencies

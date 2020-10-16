@@ -9,7 +9,7 @@ tags:
 header:
   title: Multi-RAK Gateway Mesh
   caption: by <b>RAKwireless Team</b>
-  img: /assets/images/knowledge-hub/banners/general_banner.jpg
+  img: /assets/images/knowledge-hub/banners/multi-rak-gateway-mesh.jpg
 posted: 2/29/2020 10:30 AM
 ---
 

@@ -17,6 +17,7 @@ Thank you for choosing **RAK1920 WisBlock Sensor Adapter Module** in your awesom
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK1920 3D Model](https://downloads.rakwireless.com/LoRa/WisBlock/WisBlock-3D/pwb-rak1920.stp)
 * [40 Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/WisConnector/M40S1003K6M.stp)
+* [WisBlock IO Tutorial](/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
 
 **Examples**
 * [Sample Code: RAK1920 Grove Digital](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK1920_Grove_PIR_AS312) 

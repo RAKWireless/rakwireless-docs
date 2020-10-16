@@ -7,7 +7,7 @@ tags:
 header:
   title: How To Connect LoRa Module RAK811 To Actility?
   caption: by <b>Ken Yu</b>
-  img: /assets/images/knowledge-hub/tutorials/how-to-connect-lora-module-rak811-to-actility/overview.png
+  img: /assets/images/knowledge-hub/banners/how-to-connect-lora-module-rak811-to-actility.jpg
 posted: 3/23/2017 10:30 AM
 author:
   name: Ken Yu

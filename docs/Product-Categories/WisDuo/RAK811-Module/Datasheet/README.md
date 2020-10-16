@@ -134,6 +134,33 @@ The Low radio frequency is applicable to bandwidth of regions EU433 and CN470.
 | 33          | RF_OUT        | I/O      | RF I/O port                           |
 | 34          | GND           |          | Ground connections                    |
 
+##### LoRa Transceiver IC Connection to RAK811(LF) Internal STM32
+
+| **LoRa IC Pin** | **STM32 GPIO**|
+|:---------------:|:-------------:| 
+| SX_D0           | PB4           | 
+| SX_D1           | PB1           | 
+| SX_D2           | PB9           | 
+| SX_D3           | PH0           | 
+| SX_D4           | PC13          | 
+| SPI_SCLK        | PA5           | 
+| SPI_MISO        | PA6           | 
+| SPI_MOSI        | PA7           | 
+| SPI_NSS         | PB0           |
+| SX_NRESET       | PA8           |
+| SX_GPIO0        | PH1           |
+| SX_RF_LF	      | PB8		        |
+| SX_RF_RX	      | PB3   		    |
+| SX_RF_PA	      | PA4   		    |
+
+##### RF Switch control logic table
+
+|**SX_RF_RX**|**SX_RF_PA**|**Condition**|
+|:----------:|:----------:|:-----------:|
+|      1     |     0      |  RX mode    |
+|      0     |     1      |  TX mode    |
+
+
 ##### 2. High Radio Frequency
 
 High radio frequency hardware support the regions of EU868, US915, AU915, KR920, AS923, IN865.
@@ -184,6 +211,34 @@ High radio frequency hardware support the regions of EU868, US915, AU915, KR920,
 | 32          | GND           |          | Ground connections                    |
 | 33          | RF_OUT        | I/O      | RF I/O port                           |
 | 34          | GND           |          | Ground connections                    |
+
+##### LoRa Transceiver IC Connection to RAK811(HF) Internal STM32
+
+
+| **LoRa IC Pin** | **STM32 GPIO**|
+|:---------------:|:-------------:| 
+| SX_D0           | PA11          | 
+| SX_D1           | PB1           | 
+| SX_D2           | PA3           | 
+| SX_D3           | PH0           | 
+| SX_D4           | PC13          | 
+| SPI_SCLK        | PA5           | 
+| SPI_MISO        | PA6           | 
+| SPI_MOSI        | PA7           | 
+| SPI_NSS         | PB0           |
+| SX_NRESET       | PB13          |
+| SX_GPIO0        | PH1           |
+| SX_RF_HF	      | PB7		        |
+| SX_RF_RX	      | PB6   		    |
+| SX_RF_PA	      | PA4   		    |
+
+
+##### RF Switch control logic table
+
+|**SX_RF_RX**|**SX_RF_PA**|**Condition**|
+|------------|------------|-------------|
+|      1     |     0      |  RX mode    |
+|      0     |     1      |  TX mode    |
 
 #### RF Characteristics
 

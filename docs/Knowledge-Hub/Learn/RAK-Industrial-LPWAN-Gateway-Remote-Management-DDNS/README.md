@@ -8,7 +8,7 @@ tags:
 header:
   title: RAK Industrial LPWAN Gateway Remote Management - DDNS
   caption: by <b>RAKwireless Team</b>
-  img: /assets/images/knowledge-hub/banners/general_banner.jpg
+  img: /assets/images/knowledge-hub/banners/gateway-remote-management-ddns.jpg
 posted: 2/29/2020 10:30 AM
 ---
 
