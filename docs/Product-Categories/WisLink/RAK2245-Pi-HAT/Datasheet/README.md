@@ -274,20 +274,18 @@ The table below lists the operation temperature range.
 
 ### Software
 
-Download the latest firmware of RAK 2245 Pi HAT in the table provided below.
+Download the latest firmware of RAK2245 Pi HAT in the table provided below.
 
 #### Firmware
 
 | Model          | Raspberry Pi Board | Firmware Version | Source                                                                                                                                           |
 | -------------- | ------------------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| RAK2245 Pi Hat | Raspberry Pi 3B+   | V4.1.0           | [Download](https://downloads.rakwireless.com/LoRa/RAK2245-Pi-HAT/Firmware/RAK2245%26RAK831_based_on_Raspbian_OS_for_RPI3_V4.1.0_20191202.zip)    |
-| RAK2245 Pi Hat | Raspberry Pi 4     | V4.1.0           | [Download](https://downloads.rakwireless.com/LoRa/RAK2245-Pi-HAT/Firmware/Raspberry-Pi-4/RAK2245%26RAK831_based_on_Raspbian_V4.1.0_20191202.zip) |
+| RAK2245 Pi Hat | Raspberry Pi 3B+ and 4   | V4.2.5R           | [Download](https://downloads.rakwireless.com/LoRa/RAK2245-Pi-HAT/Firmware/RAK2245_Latest_Firmware.zip)    |
+
 
 ## Models / Bundles
 
 ### Ordering Information
-
-Order Information
 
 | Part Number    | Package                                                            | Description                                          |
 | -------------- | ------------------------------------------------------------------ | ---------------------------------------------------- |

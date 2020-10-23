@@ -342,8 +342,9 @@ Download the latest firmware of the RAK811 WisDuo LPWAN Module — both in low a
 
 | Model     | Version      | Source                                                                                           |
 | --------- | ------------ | ------------------------------------------------------------------------------------------------ |
-| RAK811-LF | V3.0.0.13.T3 | [Download](https://downloads.rakwireless.com/LoRa/RAK811/Firmware/RAK811_L_Latest_Firmware.zip)  |
-| RAK811-HF | V3.0.0.13.T3 | [Download](https://downloads.rakwireless.com/LoRa/RAK811/Firmware/RAK811_H_Latest_Firmware.zip) |
+| RAK811-LF | V3.0.0.14.L | [Download](https://downloads.rakwireless.com/LoRa/RAK811/Firmware/)  |
+| RAK811-HF | V3.0.0.14.H | [Download](https://downloads.rakwireless.com/LoRa/RAK811/Firmware/) |
+| RAK811 Bootloader  | V3.0.2 | [Download](https://downloads.rakwireless.com/LoRa/RAK811/Bootloader/) |
 
 ## Certification
 

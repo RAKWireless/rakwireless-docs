@@ -31,7 +31,7 @@ The following two sections provide a list of the components and tools you need t
 
 - [Balena Etcher](https://www.balena.io/etcher/): a tool for burning the firmware on the SD card.
 - [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html): a Windows tool for SSH, required to connect to the Gateway.
-- Latest [RAK2287 Firmware](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Firmware/)
+- Latest [RAK2287 Firmware](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Firmware/RAK2287_Latest_Firmware.zip)
 
 ### Device Firmware Setup
 
@@ -39,7 +39,7 @@ For an easy and quick way of having a fully functional gateway, a Precompiled Fi
 
 #### Burn the latest Firmware
 
-1. Download the latest firmware of **[RAK2287](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Firmware/)**, that is based on the Raspbian OS.
+1. Download the latest firmware of **[RAK2287](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Firmware/RAK2287_Latest_Firmware.zip)**, that is based on the Raspbian OS.
 2. Use an image writing tool to install the firmware on the SD Card. For this tutorial, you will be using **[Etcher](https://www.balena.io/etcher/),** an open-source utility used for burning image files.
 3. Insert your SD Card into the SD Card reader and plug it into your computer.
 4. Open the Etcher Software, and select the downloaded image file through the ( **Label - 1** ) button in the image below.

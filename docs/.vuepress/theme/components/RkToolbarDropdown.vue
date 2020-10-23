@@ -44,7 +44,7 @@
       align="left"
       style="min-height: 3rem"
       size="1rem"
-      @click="openLink('https://forum.rakwireless.com', '_blank')"
+      @click="openLink('https://forum.rakwireless.com/?utm_source=Docs&utm_medium=Docsheader&utm_campaign=RAKDocs', '_blank')"
       flat
       no-caps
     />

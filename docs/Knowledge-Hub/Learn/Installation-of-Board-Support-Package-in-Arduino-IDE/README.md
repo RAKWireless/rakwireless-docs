@@ -21,7 +21,7 @@ author:
 
 ## Arduino IDE Download and Installation
 
-For WisBlock coding and programming, use Arduine IDE. If you don't have an Arduino IDE yet, you can download it in the [Arduino official website](https://www.arduino.cc/en/Main/Software).
+For WisBlock coding and programming, use Arduino IDE. If you don't have an Arduino IDE yet, you can download it in the [Arduino official website](https://www.arduino.cc/en/Main/Software).
 
 You can see the current version of Arduino IDE is V1.8.13, and there are several versions available for Windows, Linux, and Mac OS X. Choose the correct version of Arduino IDE and download it.
 
@@ -189,6 +189,51 @@ After you selected a RAK board, you can see the examples for all WisBlock module
   caption="Selecting WisBlock Modules Examples"
 />
 
+#### Compile an example
+
+Let's take one of the examples and compile it.      
+Open the LoRaWAN-OTAA example from the File -> Example menu.    
+<rk-img
+  src="/assets/images/knowledge-hub/wisblock/Installation-of-Board-Support-Package-in-Arduino-IDE/15.select-lora-otaa-example.png"
+  width="75%"
+  caption="Selecting LoRa OTAA example"
+/>
+
+The example will open in a new window. You can close the old window.
+
+Next we need to install the LPWAN library. In the code in line 20 you can see the link for the required library
+
+<rk-img
+  src="/assets/images/knowledge-hub/wisblock/Installation-of-Board-Support-Package-in-Arduino-IDE/16.install-library-step1.png"
+  width="75%"
+  caption="Install LPWAN library step 1"
+/>
+
+Double click on the link to open the library manager. It will show you the required library. 
+
+<rk-img
+  src="/assets/images/knowledge-hub/wisblock/Installation-of-Board-Support-Package-in-Arduino-IDE/17.install-library-step2.png"
+  width="75%"
+  caption="Install LPWAN library step 1"
+/>
+
+Click on **Install** to install the library. After installation you can close the library manager window.
+
+Now we are ready to compile the example code. 
+
+Click on the **Verify/Compile** icon in the menu.
+
+<rk-img
+  src="/assets/images/knowledge-hub/wisblock/Installation-of-Board-Support-Package-in-Arduino-IDE/18.compile-example.png"
+  width="75%"
+  caption="Compile example"
+/>
+
+Congratulations you have successfully installed the LPWAN library and compiled your first WisBlock solution.  
+However, to be able to connect to the LPWAN gateway and the LPWAN server a few more steps are required.  
+Please head over to the full tutorial in our RAK [Github WisBlock repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/communications/LoRa/LoRaWAN) to see how to setup the node's EUI's and keys and how to register the node on the gateway and in the LPWAN server.
+
+---- 
 For more information about the examples and tutorials, visit RAK [Github WisBlock repository](https://github.com/RAKWireless/WisBlock).
 
 ### Development Version

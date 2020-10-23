@@ -396,7 +396,7 @@ On the server side. A packet should be received every 180 seconds. The data form
 
 ### Firmware Update
 
-Before to start working with the RAK5010-M, it is recommended to keep the RAK5010-M module updated to the latest version of the firmware. Get the latest pre-compiled firmware version on the RAK website: [https://downloads.rakwireless.com/Cellular/RAK5010/](https://downloads.rakwireless.com/Cellular/RAK5010/)
+Before to start working with the RAK5010-M, it is recommended to keep the RAK5010-M module updated to the latest version of the firmware. Get the latest pre-compiled firmware version on the RAK website: [https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/](https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/)
 
 In the following sections, two options for flashing new firmware in a RAK5010-M module are shown: Upgrade through J-Link and Upgrade through UART1.
 

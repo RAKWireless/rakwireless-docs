@@ -268,7 +268,7 @@ at+version
 
 
 :::tip 📝 NOTE:
- For this method, you need a serial port tool which can support DTR function, like Termite. You can download Termite [**here**](https:\/\/downloads.rakwireless.com\/en\/Cellular\/Tools\/).
+ For this method, you need a serial port tool which can support DTR function, like Termite. You can download Termite [**here**](https://downloads.rakwireless.com/Cellular/Tools/).
 :::
 
 Alright, after opening the serial tool, configure its setting by following the picture below:
