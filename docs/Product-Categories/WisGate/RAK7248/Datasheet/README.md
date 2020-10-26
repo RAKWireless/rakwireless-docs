@@ -6,8 +6,10 @@ tags:
 next: false
 prev: ../Overview/
 certifications:
-  - [FCC, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_FCC_Certification.rar]
-  - [IC, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_IC_Certification.rar]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_CE_Certification.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_FCC_Certification.zip]
+  - [IC, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_IC_Certification.zip]
+
 ---
 
 # RAK7248 WisGate Developer D4H Gateway Datasheet

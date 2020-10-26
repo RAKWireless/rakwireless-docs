@@ -111,7 +111,7 @@ The concrete segmentation of the protocol related tasks is outside the scope of 
 The interface of RAK Hotspot Miner is shown in the figure below.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/datasheet/interfaces.png"
+  src="/assets/images/wisgate/rak-hotspot-miner/datasheet/interfaces.svg"
   width="100%"
   caption="RAK Hotspot Miner Interfaces"
 />

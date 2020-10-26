@@ -1,1 +1,0 @@
-<rk-redirect to="/Product-Categories/WisDuo/RAK811-Module/LoRaWAN-P2P/Quickstart/"/> 

@@ -189,4 +189,4 @@ Download the latest firmware of the RAK4600 Breakout Board in the table provided
 
 | Model   | Version  | Source                                                                                   |
 | ------- | -------- | ---------------------------------------------------------------------------------------- |
-| RAK4600 | 3.4.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK4600/Firmware/RAK4600_3.4.0.14.zip) |
+| RAK4600 | 3.4.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK4600/Firmware/RAK4600_Latest_Firmware.zip) |

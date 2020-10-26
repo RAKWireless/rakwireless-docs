@@ -5,6 +5,11 @@ next: false
 tags:
   - datasheet
   - wishat
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification/RAK2287%20CE%20certification.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification/RAK2287%20FCC%20certification.zip]
+  - [IC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification/RAK2287%20IC%20certification.zip]
+
 ---
 
 # RAK2287 Pi HAT Datasheet
@@ -119,3 +124,7 @@ RAK2287 Pi HAT integrates one (1) 40-pin female Pi HAT connector and one (1) PCI
 | **Model** | **Description** | **Supported Module** | 
 | ---- | ---- | ---- | 
 | RAK2287 Pi HAT | PCIe to Pi HAT Convert Board for RAK2287 module with SPI interface | RAK2287-S | 
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

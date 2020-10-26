@@ -1,10 +1,10 @@
 ---
-prev: ../LoRaWAN-P2P/AT-Command-Manual/
+prev: ../AT-Command-Manual/
 next: ../Datasheet/
 tags: RAK811
 ---
 
-# LoRa Module Deep Development Reference
+# Low Level Development Reference
 
 ## Overview
 

@@ -1,5 +1,5 @@
 ---
-prev: ../../Overview/
+prev: ../Overview/
 next: ../AT-Command-Manual/
 tags: RAK811
 ---
@@ -1076,7 +1076,6 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
   width="80%"
   caption="Upgrade Successful"
 />
-
 
 
 

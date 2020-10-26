@@ -210,7 +210,7 @@ RUI_RETURN_STATUS rui_lora_set_dev_addr(uint8_t *dev_addr)
 ## RUI LoRa Set Application Session Key
 
 ```c
-RUI_RETURN_STATUS rui_lora_set_apps_key(uint8_t *apps_key
+RUI_RETURN_STATUS rui_lora_set_apps_key(uint8_t *apps_key)
 ```
 
 | @brief | This API is used to set the application session key for LoRaWAN ABP mode. | 

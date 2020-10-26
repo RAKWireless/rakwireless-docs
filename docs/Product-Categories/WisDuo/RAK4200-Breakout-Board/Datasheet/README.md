@@ -192,5 +192,5 @@ Download the latest firmware and bootloader of the RAK4200 Breakout Board provid
 
 | Model               | Version   | Source                                                                                           |
 | ------------------- | --------- | ------------------------------------------------------------------------------------------------ |
-| RAK4200 Firmware    | V3.2.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/)        |
+| RAK4200 Firmware    | V3.2.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/RAK4200_Latest_Firmware.zip)        |
 | RAK4200 Bootloader | V3.2.3    | [Download](https://downloads.rakwireless.com/LoRa/RAK4200/Bootloader/) |

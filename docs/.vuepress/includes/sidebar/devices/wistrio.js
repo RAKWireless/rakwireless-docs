@@ -74,6 +74,14 @@ module.exports = {
       sidebarDepth: 4
     },
     {
+      title: 'Datasheet',
+      path: '/Product-Categories/WisTrio/RAK5010-M/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
       title: 'AT Command Manual',
       path: '/Product-Categories/WisTrio/RAK5010-M/AT-Command-Manual/',
       collapsable: false,

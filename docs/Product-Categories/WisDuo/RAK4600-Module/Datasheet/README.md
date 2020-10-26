@@ -3,6 +3,9 @@ tags:
   - datasheet
   - wisduo
 prev: ../Deep-Development/
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600%20CE%20Certification.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600%20FCC%20Certification.zip]
 ---
 
 # RAK4600 WisDuo LPWAN Module Datasheet
@@ -284,4 +287,9 @@ Download the latest firmware of the RAK4600 WisDuo LPWAN Module  provided in the
 
 | Model   | Version  | Source                                                                                   |
 | ------- | -------- | ---------------------------------------------------------------------------------------- |
-| RAK4600 | V3.4.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK4600/Firmware/RAK4600_3.4.0.14.zip) |
+| RAK4600 | V3.4.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK4600/Firmware/RAK4600_Latest_Firmware.zip) |
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />
+

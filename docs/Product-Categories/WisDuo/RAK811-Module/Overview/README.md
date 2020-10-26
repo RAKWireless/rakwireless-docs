@@ -3,7 +3,7 @@ rak_img: /assets/images/wisduo/rak811-module/overview/RAK811_Module_home.png
 rak_desc: RAK811 Low-Power Long Range LoRa Technology Transceiver module provides an easy to use, small size, low-power solution for long range wireless data transmission.
 rak_grp: [wisduo, module]
 prev: ../../
-next: ../LoRaWAN-P2P/Quickstart/
+next: ../Quickstart/
 
 ---
 
@@ -17,11 +17,11 @@ Thank you for choosing **RAK811 WisDuo LPWAN Module** in your awesome IoT Projec
   caption="RAK811 WisDuo LPWAN Module"
 /> -->
 
-* [LoRaWAN/P2P/Getting Started](/Product-Categories/WisDuo/RAK811-Module/LoRaWAN-P2P/Quickstart/)
-* [LoRaWAN/P2P/AT Command Manual](/Product-Categories/WisDuo/RAK4600-Module/LoRaWAN-P2P/AT-Command-Manual/)
+* [Quick Start Guide](/Product-Categories/WisDuo/RAK811-Module/Quickstart/)
+* [AT Command Manual](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/)
 * **RAK811 with Open Source Hardware** - The core module of the WisNode is the RAK811 LPWAN Module and its interface supports Arduino Interface which means you can easily connect to any Open Source Hardware. For more info, refer to the [Official WisNode Arduino Library](https://github.com/RAKWireless/WisNode-Arduino-Library).
 * <a href="/RUI/" target="_blank">RUI Secondary Development</a> - RAK811 module supports RUI Secondary Development, refer to <a href="/RUI/" target="_blank">RUI</a> for further details.
-* [Deep Development](/Product-Categories/WisDuo/RAK811-Module/Deep-Development/)
+* [Low Level Development](/Product-Categories/WisDuo/RAK811-Module/Low-Level-Development/)
 * [Open Source Framework](https://github.com/RAKWireless/Evaluation_Boards/tree/master/RAK811) - RAK811 module supports Arduino Open Source Framework, refer to [RAKWireless Github](https://github.com/RAKWireless/Evaluation_Boards/tree/master/RAK811) for more details.
 * [Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#rak811-wisduo-lpwan-module-datasheet)
 
