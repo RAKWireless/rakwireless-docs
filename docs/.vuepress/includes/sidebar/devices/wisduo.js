@@ -160,7 +160,7 @@ module.exports = {
     nested: true,
     download: true,
     sidebarDepth: 4
-  },
+    },
   {
     title: 'Quick Start Guide',
     path: '/Product-Categories/WisDuo/RAK4260-Evaluation-Board/Quickstart/',
@@ -181,6 +181,31 @@ module.exports = {
   {
     title: 'Datasheet',
     path: '/Product-Categories/WisDuo/RAK4260-Module/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  ],
+  '/Product-Categories/WisDuo/RAK4260-Breakout-Board/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisDuo/RAK4260-Breakout-Board/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisDuo/RAK4260-Breakout-Board/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisDuo/RAK4260-Breakout-Board/Quickstart/',
     collapsable: false,
     nested: true,
     download: true,
@@ -303,23 +328,22 @@ module.exports = {
     sidebarDepth: 4
   },
   {
-    title: 'Datasheet',
-    path: '/Product-Categories/WisDuo/RAK811-Breakout-Board/Datasheet/',
-    collapsable: false,
-    nested: true,
-    download: true,
-    sidebarDepth: 4
-  },
-  {
     title: 'AT Command Manual',
     path: '/Product-Categories/WisDuo/RAK811-Breakout-Board/AT-Command-Manual/',
     collapsable: false,
     nested: true,
     download: true,
     sidebarDepth: 4
+  },                                               
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisDuo/RAK811-Breakout-Board/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
   }
   ],
-
 
   '/Product-Categories/WisDuo/RAK4200-Breakout-Board/': [{
     title: 'Product Overview',
@@ -340,32 +364,6 @@ module.exports = {
   {
     title: 'Datasheet',
     path: '/Product-Categories/WisDuo/RAK4200-Breakout-Board/Datasheet/',
-    collapsable: false,
-    nested: true,
-    download: true,
-    sidebarDepth: 4
-  }
-  ],
-
-  '/Product-Categories/WisDuo/RAK4260-Breakout-Board/': [{
-    title: 'Product Overview',
-    path: '/Product-Categories/WisDuo/RAK4260-Breakout-Board/Overview/',
-    collapsable: false,
-    nested: true,
-    download: true,
-    sidebarDepth: 4
-  },
-  {
-    title: 'Quick Start Guide',
-    path: '/Product-Categories/WisDuo/RAK4260-Breakout-Board/Quickstart/',
-    collapsable: false,
-    nested: true,
-    download: true,
-    sidebarDepth: 4
-  },
-  {
-    title: 'Datasheet',
-    path: '/Product-Categories/WisDuo/RAK4260-Breakout-Board/Datasheet/',
     collapsable: false,
     nested: true,
     download: true,

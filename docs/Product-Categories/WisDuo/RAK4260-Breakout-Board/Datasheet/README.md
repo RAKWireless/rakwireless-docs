@@ -19,13 +19,13 @@ prev: ../Quickstart/
 
 ### Description
 
-The **RAK4260 Breakout Board** is specifically designed to allow easy excess to the pins on the board in order to simplify development and testing. The breakout board utilized is of an **Xbee form factor** and its main purpose is to allow the RAK4260 stamp module form factor pinout to be transferred to 2.54 mm headers. This makes it more convenient for developer to debug their solution.
+The **RAK4260 Breakout Board** is specifically designed to allow easy access to the pins on the board in order to simplify development and testing. The breakout board utilized is of an **Xbee form factor** and its main purpose is to allow the RAK4260 stamp module form factor pinout to be transferred to 2.54 mm headers. This makes it more convenient for developer to debug their solution.
 
-The board itself has the RAK4260 at its core, which is a module that utilizes the **ATSAMR34J18B SIP**. This high level of integration allows for outstanding performance: 860 nA in sleep mode and LoRa TX Power of up to 20 dBm.
+The board itself has the RAK4260 at its core, which is a module that utilizes the **ATSAMR34J18B SiP**. This high level of integration allows for outstanding performance: 860 nA in sleep mode and LoRa TX Power of up to 20 dBm.
 
 A notable addition to this Breakout Board is the **ATECC608A Cryptographic co-processor** with secure hardware-based key storage. This is what makes this board different (compared to the RAK4200 and RAK4600), adding another level of security in order to future proof your platform.
 
-The board complies with LoRaWAN 1.0.2 protocols. It also supports Lora® Point to Point communication.
+The board complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P Point to Point communication.
 
 The low power, long range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors and monitors, etc.).
 
@@ -72,13 +72,13 @@ The hardware specification is categorized into five part. It discusses the inter
 
 ##### SWD Programming Interface
 
-When programming via a JLINK tool, it is required to have all of the following 5 pins connected to your JLINK tool:
+When programming via a DAPLink tool, it is required to have all of the following 4 pins connected to your DAPLink  tool:
 
 1. **3V3**
 2. **SWDIO**
 3. **SWCLK**
 4. **GND**
-5. **RST**
+
 
 ::: tip Note:
 :pencil: For the aforementioned reason, it is best you leave these exposed for programming purposes and not to remap them as GPIOs.

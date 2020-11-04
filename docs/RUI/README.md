@@ -167,3 +167,126 @@ Only the files are required, avoid creating a parent directory. Then the package
   width="75%"
   caption="Compilation finished successfully"
 />
+
+### Upload Prebuilt Static Libraries
+
+Besides c and h files, online compiler also supports prebuilt static libraries. It supports only three (3) kinds of static libraries:
+
+1. Compiled by [GNU toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
+2. Compiled by [ARM compiler 5](https://developer.arm.com/tools-and-software/embedded/arm-compiler/downloads/legacy-compilers) 
+3. Compiled [ARM compiler 6](https://developer.arm.com/tools-and-software/embedded/arm-compiler/downloads/version-6)
+
+However, different products use different MCU, so instruction set architecture will be different:
+
+- **RAK4200/RAK4270**: ARM Cortex M0
+- **RAK811**: ARM Cortex M3
+- **RAK8212/RAK5010/RAK4600**: ARM Cortex M4 with hardware floating-point unit conforming to the VFPv4-D16 architecture
+
+When you build your static libraries, you need to use the following corresponding compiler arguments for different products:
+
+1. **GNU toolchain**
+
+  - **ARM Cortex M0**
+    - *-mcpu=cortex-m0*
+
+For example:
+
+```
+# arm-none-eabi-gcc -mcpu=cortex-m0 -c ./myutil.c
+# arm-none-eabi-ar rcs ./libmyutil.cm0.a ./myutil.o
+```
+
+  - **ARM Cortex M3**
+    - *-mcpu=cortex-m3*
+
+For example:
+
+```
+# arm-none-eabi-gcc -mcpu=cortex-m3 -c ./myutil.c
+# arm-none-eabi-ar rcs ./libmyutil.cm3.a ./myutil.o
+```
+
+  - **ARM Cortex M4** with hardware floating-point unit conforming to the **VFPv4-D16 architecture**
+    - *-mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16*
+
+For example:
+
+```
+# arm-none-eabi-gcc -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -c ./myutil.c
+# arm-none-eabi-ar rcs ./libmyutil.cm4_hard_float.a ./myutil.o
+```
+
+<br>
+
+2. **ARM compiler 5**
+
+  - **ARM Cortex M0**
+    - *--cpu=Cortex-M0 --gnu --library_interface=aeabi_glibc*
+
+For example:
+
+```
+> armcc.exe --cpu=Cortex-M0 --gnu --library_interface=aeabi_glibc -c myutil.c
+> armlink.exe --elf myutil.o --output myutil.axf
+> armar.exe --create libmyutil.win_armcc.cm0.a myutil.axf
+```
+
+  - **ARM Cortex M3**
+    - *--cpu=Cortex-M3 --gnu --library_interface=aeabi_glibc*
+
+For example:
+
+```
+> armcc.exe --cpu=Cortex-M3 --gnu --library_interface=aeabi_glibc -c myutil.c
+> armlink.exe --elf myutil.o --output myutil.axf
+> armar.exe --create libmyutil.win_armcc.cm3.a myutil.axf
+```
+
+  - **ARM Cortex M4** with hardware floating-point unit conforming to the **VFPv4-D16 architecture**
+    - *--cpu=Cortex-M4 --fpu=vfpv4_d16 --gnu --library_interface=aeabi_glibc*
+
+For example:
+
+```
+> armcc.exe --cpu=Cortex-M4 --fpu=vfpv4_d16 --gnu --library_interface=aeabi_glibc -c myutil.c
+> armlink.exe --elf myutil.o --output myutil.axf
+> armar.exe --create libmyutil.win_armcc.cm4_hard_float.a myutil.axf
+```
+
+
+<br>
+
+3. **ARM compiler 6**
+  
+  - **ARM Cortex M0**
+    - *--target=arm-arm-none-eabi -mcpu=Cortex-M0 -fgnu*
+  
+For example:
+
+```
+> armclang.exe --target=arm-arm-none-eabi -mcpu=Cortex-M0 -fgnu -c myutil.c
+> armlink.exe --elf myutil.o --output myutil.axf
+> armar.exe --create libmyutil.win_armclang.cm0.a myutil.axf
+```
+
+  - **ARM Cortex M3**
+    - *--target=arm-arm-none-eabi -mcpu=Cortex-M3 -fgnu*
+
+For example:
+
+```
+> armclang.exe --target=arm-arm-none-eabi -mcpu=Cortex-M3 -fgnu -c myutil.c
+> armlink.exe --elf myutil.o --output myutil.axf
+> armar.exe --create libmyutil.win_armclang.cm3.a myutil.axf
+
+```
+  - **ARM Cortex M4** with hardware floating-point unit conforming to the **VFPv4-D16 architecture**
+    - *--target=arm-arm-none-eabi -mcpu=Cortex-M4 -mfpu=vfpv4-d16 -fgnu*
+
+For example:
+
+```
+> armclang.exe --target=arm-arm-none-eabi -mcpu=Cortex-M4 -mfpu=vfpv4-d16 -fgnu -c myutil.c
+> armlink.exe --elf myutil.o --output myutil.axf
+> armar.exe --create libmyutil.win_armclang.cm4_hard_float.a myutil.axf
+```

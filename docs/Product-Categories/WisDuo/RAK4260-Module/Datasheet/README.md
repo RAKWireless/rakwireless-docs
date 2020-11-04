@@ -22,9 +22,9 @@ prev: ../Overview/
 
 ### Description
 
-The **RAK4260 WisDuo LPWAN Module** is based on **Microchip’s ATSAMR34J18B**. It is a SiP device integrating a 32-bit ARM Cortex -M0+ MCU with a LoRa Transceiver in a 15 millimeter x 15 millimeter compact package.
+The **RAK4260 WisDuo LPWAN Module** is based on **Microchip’s ATSAMR34J18B**. It is a SiP device integrating a 32-bit ARM Cortex M0+ MCU with a LoRa Transceiver in a 15 millimeter x 15 millimeter compact package.
 
-The SAMR chip provides a number of highly configurable peripherals (configurable as I2C/SPI/UART interfaces). There are 12-bit ADC in addition to the aforementioned.
+The SAM R34 chip provides a number of highly configurable peripherals (configurable as I2C/SPI/UART interfaces). There are 12-bit ADC in addition to the aforementioned.
 
 It is a perfect solution for any LoRaWAN end node developer. The integration of the MCU and LoRa Transceiver reduces size and minimizes costs. Having such a compact solution within a single package reduces time to market and allows for rapid development and deployment for a number of scenarios.
 
@@ -33,7 +33,7 @@ RAK4260 is a solution that is cost efficient and flexible that can be deployed i
 ### Features
 
 - Industry's lowest power LoRa SiP device
-- 32-bit Arm® Cortex M0+ MCU and LoRa Transceiver
+- 32-bit ARM Cortex M0+ MCU and LoRa Transceiver
 - Small form factor: 15 millimeter x 15 millimeter compact package
 - 256KB Flash and 40 KB RAM accommodates application code and stack
 - Most cost and size effective solution, eliminating need for external MCU
@@ -132,6 +132,27 @@ Provided in this section is the Pinout of the RAK4260 WisDuo LPWAN Module.
 | 38  |      GND      |  -  |                   Ground                   |
 | 39  |      GND      |  -  |                   Ground                   |
 | 40  |      GND      |  -  |                   Ground                   |
+
+##### RF Switch pin definition
+
+| **BAND_SEL**| **TX/RX** |
+|:-----------:|:---------:|
+|  PA13       | D2        |
+
+##### RF Switch control logic table
+
+| **LoRa Mode**| **BAND_SEL** | **TX/RX**   |
+|:-------------|:------------:|:-----------:|
+| Shutdown     | L            |       L     |
+| PA_BOOST     | L            |       H     |
+| RFI_HF (RX)  | H            |       L     |
+| RFO_HF       | H            |       H     |
+
+
+:::tip 📝 NOTE
+H  = High level<br>
+L  = Low level
+:::
 
 #### RF Requirements
 

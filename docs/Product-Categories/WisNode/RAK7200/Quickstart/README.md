@@ -399,10 +399,8 @@ If the ABP mode is preferred, then the TTN platform needs to be configured first
   * **App Session Key**
 
 
-  :::tip 📝 NOTE:
-
+:::tip 📝 NOTE:
 These fields can be left empty in the form. TTN will automatically generate random values. In other cases, you can fill them with specific values.
-
 :::
 
 <rk-img
