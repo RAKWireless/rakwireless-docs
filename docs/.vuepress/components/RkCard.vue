@@ -17,8 +17,8 @@ export default {
 
 <style>
 .my-card {
-  border-radius: 15px;
-  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px !important;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1) !important;
 }
 /* .my-card:before {
   content: '';

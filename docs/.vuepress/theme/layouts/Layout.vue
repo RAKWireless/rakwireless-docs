@@ -16,10 +16,15 @@
             <q-item :to="`/`" class="q-pa-none full-height text-white">
               <q-item-section class="q-pa-none" side>
                 <!-- <a href="/"> -->
-                <img :src="`/assets/rakwireless/rak-white.svg`" style="width: 7.5rem" />
+                <img
+                  :src="`/assets/rakwireless/rak-white.svg`"
+                  style="width: 7.5rem"
+                />
                 <!-- </a> -->
               </q-item-section>
-              <q-item-section class="gt-xs text-h5 q-px-sm">Documentation Center</q-item-section>
+              <q-item-section class="gt-xs text-h5 q-px-sm"
+                >Documentation Center</q-item-section
+              >
             </q-item>
           </div>
           <q-space />
@@ -48,7 +53,11 @@
         <rk-header v-if="shouldHaveHeader" />
         <rk-page :sidebar-items="sidebarItems" />
         <rk-zoom />
-        <q-page-sticky position="top-right" :offset="[15, 15]" style="z-index: 100;">
+        <q-page-sticky
+          position="top-right"
+          :offset="[15, 15]"
+          style="z-index: 100"
+        >
           <transition
             appear
             enter-active-class="animated bounceIn"
@@ -66,10 +75,17 @@
                 content-class="bg-black text-white"
                 transition-show="scale"
                 transition-hide="scale"
-              >Back to Top</q-tooltip>
+                >Back to Top</q-tooltip
+              >
             </q-btn>
           </transition>
         </q-page-sticky>
+        <q-dialog v-model="surveyCard" persistent>
+          <survey-card
+            @close="surveyCard = false"
+            @submit="surveyCard = false"
+          />
+        </q-dialog>
       </q-page-container>
       <q-footer>
         <rk-footer />
@@ -96,10 +112,13 @@ import ScrollMixin from '@theme/components/mixins/scroll.mixin'
 import TagsMixin from '@theme/components/mixins/tags.mixin'
 import CommonMixin from '../../components/common.mixin'
 
+import SurveyCard from '../../components/SurveyCard'
+
 import { resolveSidebarItems } from '../util'
 import { Screen } from 'quasar'
 
 import debounce from 'lodash.debounce'
+import Cookies from 'js-cookie'
 
 export default {
   name: 'Layout',
@@ -115,7 +134,8 @@ export default {
     RkSidebar,
     RkHeader,
     RkZoom,
-    RkSearchBox
+    RkSearchBox,
+    SurveyCard,
   },
   mixins: [ScrollMixin, TagsMixin, CommonMixin],
 
@@ -124,7 +144,8 @@ export default {
       isSidebarOpen: false,
       showDrawer: false,
       showBack2Top: false,
-      disableActiveHash: false
+      disableActiveHash: false,
+      surveyCard: false,
     }
   },
 
@@ -142,7 +163,7 @@ export default {
       },
       set(val) {
         this.showDrawer = val
-      }
+      },
     },
     shouldHaveHeader() {
       return this.$page.frontmatter.header || this.$page.frontmatter.article
@@ -186,11 +207,11 @@ export default {
         {
           'no-navbar': !this.shouldShowNavbar,
           'sidebar-open': this.isSidebarOpen,
-          'no-sidebar': !this.shouldShowSidebar
+          'no-sidebar': !this.shouldShowSidebar,
         },
-        userPageClass
+        userPageClass,
       ]
-    }
+    },
   },
 
   mounted() {
@@ -207,13 +228,17 @@ export default {
     // console.log('mounted: ', window.innerHeight, window.innerWidth, min, document.documentElement.style)
     // console.log('sidebaritems: ', this.sidebarItems)
     window.onscroll = this.onPageScroll
+
+    // for survey
+    const surveyed = Cookies.get('surveyed')
+    if (!surveyed || surveyed === 'false') this.surveyCard = true
   },
   updated() {
     this.replaceAllTables()
   },
 
   methods: {
-    replaceAllTables: debounce(function() {
+    replaceAllTables: debounce(function () {
       // replace all table with q-table instances
       const tables = document.getElementsByTagName('table')
       for (const tbl of tables) {
@@ -283,7 +308,7 @@ export default {
     onTouchStart(e) {
       this.touchStart = {
         x: e.changedTouches[0].clientX,
-        y: e.changedTouches[0].clientY
+        y: e.changedTouches[0].clientY,
       }
     },
 
@@ -297,13 +322,13 @@ export default {
           this.toggleSidebar(false)
         }
       }
-    }
+    },
   },
   watch: {
-    $page: function(newval, oldval) {
+    $page: function (newval, oldval) {
       this.$root.lastPath = oldval.path
-    }
-  }
+    },
+  },
 }
 </script>
 
