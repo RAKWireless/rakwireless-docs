@@ -29,7 +29,7 @@
         Hey RAKStar!
       </div>
       <div>
-        We would like to know you better.<br />
+        We would like to know you a little bit better.<br />
         May we ask you to answer this 3-minute reader survey?
       </div>
       <q-btn
