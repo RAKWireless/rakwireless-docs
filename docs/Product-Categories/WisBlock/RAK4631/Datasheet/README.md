@@ -51,7 +51,7 @@ The overview covers the RAK4631 board overview and the mounting mechanics of the
 #### Board Overview
 
 <rk-img
-  src="/assets/images/wisblock/rak4631/datasheet/rak4631-overview.png"
+  src="/assets/images/wisblock/rak4631/datasheet/rak4631_overview.png"
   width="80%"
   caption="Board Realistic View"
 />
@@ -80,11 +80,11 @@ The RAK4631 module supports the LoRaWAN bands shown in Table below. When buying 
 |     Europe           |     EU868             |     RAK4630(H)     |
 |     Europe           |     EU433             |     RAK4630(L)     |
 |     North America    |     US915             |     RAK4630(H)     |
-|     Canada           |     CN779             |     RAK4630(H)     |
+|     Canada           |     US915             |     RAK4630(H)     |
 |     Australia        |     AU915             |     RAK4630(H)     |
 |     Korea            |     KR920             |     RAK4630(H)     |
 |     Asia             |     AS923             |     RAK4630(H)     |
-|     China            |     CN470             |     RAK4630(L)     |
+|     China            |     CN470, CN779             |     RAK4630(L)     |
 
 #### Electrical Characteristics
 

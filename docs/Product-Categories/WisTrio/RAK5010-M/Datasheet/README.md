@@ -412,7 +412,7 @@ The GPS antenna connector is shown below (same as the LTE one):
 
 ###### GPS Antenna Power Supply Control
 
-In order to support low power and long battery life, the active GPS antenna’s power supply should be shut down when system don’t access the data from GPS module. The GPS power supply is controlled by nRF52840 with MOSFET, The pin map of GPS_EN on Nrf52840 is P1.09, and the circuit is below:
+In order to support low power and long battery life, the active GPS antenna’s power supply should be shut down when system don’t access the data from GPS module. The GPS power supply is controlled by nRF52840 with MOSFET, The pin map of GPS_EN on Nrf52840 is P1.07, and the circuit is below:
 
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/circuit-diagram.png"

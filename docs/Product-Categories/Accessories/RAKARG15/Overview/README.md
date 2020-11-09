@@ -13,7 +13,7 @@ rak_model: RAKARG15
 -   Max Gain: 8.0dBi
 -   VSWR: ≤ 1.5
 -   High efficiency
--   Vertically polarized monopole
+-   Vertically polarized dipole
 -   Easy to mount with the included Installation kit
 
 <rk-img

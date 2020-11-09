@@ -125,7 +125,7 @@ export default {
     RkSidebar,
     RkHeader,
     RkZoom,
-    RkSearchBox
+    RkSearchBox,
   },
   mixins: [ScrollMixin, TagsMixin, CommonMixin],
 
@@ -134,7 +134,7 @@ export default {
       isSidebarOpen: false,
       showDrawer: false,
       showBack2Top: false,
-      disableActiveHash: false
+      disableActiveHash: false,
     }
   },
 
@@ -318,7 +318,24 @@ export default {
 </script>
 
 <style>
-/* html {
-  scroll-behavior: unset !important;
-} */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3498db;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2980b9;
+}
 </style>

@@ -21,7 +21,7 @@
 
       <tbody>
         <tr>
-          <td>
+          <td style="max-width: 0px">
             <Content id="pdf-content" class="theme-default-content" />
           </td>
         </tr>
