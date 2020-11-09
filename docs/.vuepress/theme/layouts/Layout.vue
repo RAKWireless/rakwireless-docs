@@ -80,7 +80,7 @@
             </q-btn>
           </transition>
         </q-page-sticky>
-        <q-dialog v-model="surveyCard" persistent>
+        <q-dialog v-model="surveyCard" id="survey-dialog" persistent>
           <survey-card
             @close="surveyCard = false"
             @submit="surveyCard = false"
