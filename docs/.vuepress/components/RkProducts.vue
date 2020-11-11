@@ -7,6 +7,7 @@
         :path="qs.frontmatter.xpath || qs.path"
         :label="qs.title"
         :model="qs.frontmatter.rak_model"
+        :cpn="qs.frontmatter.rak_cpn"
         :v2="isV2(qs.path)"
         style="height: 19rem; width: 17rem"
       >{{ qs.frontmatter.rak_desc || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula est ex, in ullamcorper mauris pretium non. Sed egestas elit nec fermentum aliquet. Nulla molestie nisl fringilla lacus viverra tristique quis ut tellus. Vivamus faucibus porta tellus, eget condimentum enim commodo sit amet.' }}</rk-product>

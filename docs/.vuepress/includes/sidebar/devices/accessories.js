@@ -185,6 +185,16 @@ module.exports = {
       sidebarDepth: 4
     }
   ],
+  '/Product-Categories/Accessories/905000-905001/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/905000-905001/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
 
   //hardware-tools
   '/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/': [

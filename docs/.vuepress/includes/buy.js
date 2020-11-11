@@ -413,6 +413,11 @@ export default {
     img: '/assets/images/accessories/rakdap1-flash-and-debug-tool/RAKDAP1_buy.png',
     store: 'https://store.rakwireless.com/products/daplink-tool'
   },
+  '/Product-Categories/Accessories/905000-905001/': {
+    label: '858~878MHz 8dBi Fiber Glass Antenna',
+    img: '/assets/images/accessories/905000-905001/antenna_view.png',
+    store: 'https://store.rakwireless.com'
+  },
 
 }
 

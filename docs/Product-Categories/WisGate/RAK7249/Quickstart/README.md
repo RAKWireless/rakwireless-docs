@@ -76,7 +76,7 @@ If there is only one LoRa card (SPI type), please install it in the first slot.
 6. Connect the cable to the motherboard. The connectors on motherboard are as follows. Connect the cables one by one.
 
 :::tip 📝 NOTE
-ou must use the WiFI-MAIN connector to connect the WiFi Antenna.
+You must use the WiFI-MAIN connector to connect the WiFi Antenna.
 :::
 
 <rk-img
@@ -143,7 +143,7 @@ This document shows the step-by-step guide on how to set-up the Solar Panel and 
 <rk-img
   src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Solar Panel and Battery Kit Installation/package-list.jpg"
   width="60%"
-  caption="RAK7249 WisGate Edge Max Main Board Installation"
+  caption="Solar Panel and Battery Kit Installation Package List"
 />
 
 #### Specifications
