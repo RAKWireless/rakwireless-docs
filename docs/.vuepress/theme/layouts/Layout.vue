@@ -80,12 +80,6 @@
             </q-btn>
           </transition>
         </q-page-sticky>
-        <q-dialog v-model="surveyCard" id="survey-dialog" persistent>
-          <survey-card
-            @close="surveyCard = false"
-            @submit="surveyCard = false"
-          />
-        </q-dialog>
       </q-page-container>
       <q-footer>
         <rk-footer />
@@ -112,13 +106,10 @@ import ScrollMixin from '@theme/components/mixins/scroll.mixin'
 import TagsMixin from '@theme/components/mixins/tags.mixin'
 import CommonMixin from '../../components/common.mixin'
 
-import SurveyCard from '../../components/SurveyCard'
-
 import { resolveSidebarItems } from '../util'
 import { Screen } from 'quasar'
 
 import debounce from 'lodash.debounce'
-import Cookies from 'js-cookie'
 
 export default {
   name: 'Layout',
@@ -134,8 +125,7 @@ export default {
     RkSidebar,
     RkHeader,
     RkZoom,
-    RkSearchBox,
-    SurveyCard,
+    RkSearchBox
   },
   mixins: [ScrollMixin, TagsMixin, CommonMixin],
 
@@ -144,8 +134,7 @@ export default {
       isSidebarOpen: false,
       showDrawer: false,
       showBack2Top: false,
-      disableActiveHash: false,
-      surveyCard: false,
+      disableActiveHash: false
     }
   },
 
@@ -228,10 +217,6 @@ export default {
     // console.log('mounted: ', window.innerHeight, window.innerWidth, min, document.documentElement.style)
     // console.log('sidebaritems: ', this.sidebarItems)
     window.onscroll = this.onPageScroll
-
-    // for survey
-    const surveyed = Cookies.get('surveyed')
-    if (!surveyed || surveyed === 'false') this.surveyCard = true
   },
   updated() {
     this.replaceAllTables()
