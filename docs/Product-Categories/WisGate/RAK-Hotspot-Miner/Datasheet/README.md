@@ -4,7 +4,7 @@ tags:
   - datasheet
   - wisgate
 next: false
-prev: ../Quickstart/
+prev: ../Troubleshooting/
 ---
 
 # RAK Hotspot Miner Datasheet

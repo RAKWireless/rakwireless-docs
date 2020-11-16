@@ -52,6 +52,9 @@ export default {
           case 'MIC':
             data.img = '/assets/images/certifications/MIC.png'
             break
+          case 'IC':
+            data.img = '/assets/images/certifications/IC.png'
+            break
           default:
             data.img =
               'https://image.shutterstock.com/image-illustration/white-unknown-document-icon-isolated-600w-1517588975.jpg'

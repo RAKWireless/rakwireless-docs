@@ -234,6 +234,22 @@ module.exports = {
   sidebarDepth: 4
 },
 {
+  title: 'SD Card Backup',
+  path: '/Product-Categories/WisGate/RAK-Hotspot-Miner/Backup/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Troubleshooting',
+  path: '/Product-Categories/WisGate/RAK-Hotspot-Miner/Troubleshooting/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
   title: 'Datasheet',
   path: '/Product-Categories/WisGate/RAK-Hotspot-Miner/Datasheet/',
   collapsable: false,

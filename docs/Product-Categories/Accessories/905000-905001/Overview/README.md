@@ -6,7 +6,7 @@ rak_model:
 rak_cpn: 905000/905001  
 ---
 
-# 858~878MHz 8dBi Fiber Glass Antenna
+# 858-878MHz 8dBi Fiber Glass Antenna
 
 ## Features
 
