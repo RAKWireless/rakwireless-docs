@@ -13,6 +13,7 @@ Thank you for choosing **RAK7246G WisGate Developer D0 Gateway** in your awesome
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
+* [Environment Test Report](../Testing-Report/)
 * [Source Code Repository](https://github.com/RAKWireless/rak_common_for_gateway)
 * [RAK7246G ready to flash Firmware](https://downloads.rakwireless.com/LoRa/NeoPi-Gateway-RAK7246/Firmware/RAK7246_Latest_Firmware.zip)
 

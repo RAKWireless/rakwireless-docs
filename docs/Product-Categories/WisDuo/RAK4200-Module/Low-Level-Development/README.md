@@ -1,4 +1,9 @@
-# LoRa Module Deep Development
+---
+prev: ../AT-Command-Manual/
+next: ../Datasheet/
+---
+
+# LoRa Module Low Level Development
 
 ## Overview
 
@@ -18,7 +23,7 @@ One of the essential aspects that allow customers to develop their own version o
 
 Please note there are two version of RAK4200 module. One for the high frequency bands (i.e. 915MHz, 866 MHz) and one for the low frequency bands (i.e.433 MHz). RAK4200, share the same hardware connections between high frequency and low frequency models.
 
-### Porting Lora Protocol Stack
+### Porting LoRa Protocol Stack
 
 When implementing the LoRa protocol stack, special attention must be paid in the SPI connections, since the LoRa transceivers is controlled by the MCU through a SPI interface. The important pins are: , SPI1_MISO, SPI1_MOSI, SPI_NSS, SPI_CLK. Additionally, the DIO, RFI path are important as well to have a functioning LoRa communication.
 After that, RTC must be properly configured in the MCU to ensure accurate timing of protocol stack during the runtime.
@@ -44,13 +49,13 @@ In any MCU, after the power is connected, the System bootloader is on charge to 
   caption="The flash section is between the 0x0800 0000 and 0x080X 0000. The X depends on the different models of MCU"
 />
 
-The RAK’s bootloader is stored in the internal flash section and has a size of 12K, located between 0x0800 0000 to 0x0800 2FFF. Its primary function is to write a new version of firmware received from the serial port into the flash memory section. The bootloader uses the Ymodem protocol and supervise internally the exceptions in the upgrade process. When the upgrade process is interrupted and power on again, bootloader will detect abnormal events and can also upgrade again.
+The RAK’s bootloader is stored in the internal flash section and has a size of 12K, located between 0x0800 0000 to 0x0800 2FFF. Its primary function is to write a new version of firmware received from the serial port into the flash memory section. The bootloader uses the Ymodem protocol and supervise internally the exceptions in the upgrade process. When the upgrade process is interrupted and restarted, the bootloader will detect abnormal events and enable the upgrade again.
 
 RAK4200’s bootloader uses the segment between 0x0808 1700 to 0x0808 17FF to store its parameters.
 
 In the bootloader parameter storage area, 256 bytes are planned, but only two words are used to store the jump flag and upgrade status flag.
 
-Finally, the serial port to communicate with the RAK’s bootloader in these modules is the UART1 (pin PA9, pin PA10). The parameters of the UART communication are: 115200 / 8-N-1, which need to be properly configured in the RAK firmware upgrade tool.
+Finally, the serial port to communicate with the RAK’s bootloader in these modules are the UART2 pins: PA9 (UART2_TX) and PA10 (UART2_RX). The parameters of the UART communication are: 115200 / 8-N-1, which need to be properly configured in the RAK firmware upgrade tool.
 
 #### Application Requirements
 
@@ -58,7 +63,7 @@ Since the RAK’s bootloader is stored between the 0x0800 0000 and 0x0800 2FFF s
 
 `SCB->VTOR = FLASH_BASE | 0x3000;`
 
-In linker script must be updated accordingly. For example, in case you use GCC, please modify your linker script as the following:
+The linker script must be updated accordingly. For example, in case you use GCC, please modify your linker script as the following:
 
 `FLASH (rx) : ORIGIN = 0x8003000, LENGTH = 116K`
 
@@ -68,6 +73,6 @@ The customer’s application firmware should implement as minimum one AT command
 - b) Reset MCU . You can call the NVIC_SystemReset() interface in the ST library to reset the MCU.
 
 ::: tip 📝 NOTE
-The bootloader turned off the global interrupt when jumping from the application state.
-Therefore, when the application code is initialized, the global interrupt should be turned on again.
+The bootloader disable the global interrupt when jumping from the application state.
+Therefore, when the application code is initialized, the global interrupt should be enabled again.
 :::

@@ -23,7 +23,7 @@ Thank you for choosing **RAK4200 Evaluation Board** in your awesome IoT Project!
 
 ## Product Description
 
-**RAK4200 Evaluation Board** is a WisBlock product consisting of [RAK4200 WisDuo LPWAN Module](https://store.rakwireless.com/products/rak4200-lora-module) and [RAK5005-O Base Board](/Product-Categories/WisBlock/RAK5005-O/Overview/). You can use this development board to access all serial and GPIO ports for easy configuration. RAK4200 includes an STM32L071 MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumtion of 1.5uA in sleep mode and high LoRa output power up to 19dBm max in work mode. The module complies with the LoRaWAN 1.0.2 protocols. It also supports LoRa P2P (Point-to-Point) communications. The module is sutiable for various applications that require long-range data acquisition and low power consumption.
+**RAK4200 Evaluation Board** is a WisBlock product consisting of [RAK4200 WisDuo LPWAN Module](https://store.rakwireless.com/products/rak4200-lora-module) and [RAK5005-O Base Board](/Product-Categories/WisBlock/RAK5005-O/Overview/). You can use this development board to access all serial and GPIO ports for easy configuration. RAK4200 includes an STM32L071KB MCU and an SX1276 LoRa transceiver. It has Ultra-Low Power Consumption of 11.8 uA in sleep mode and high LoRa output power up to 19dBm max in work mode. The module complies with the LoRaWAN 1.0.2 specification. It also supports LoRa P2P (Point-to-Point) communications. The module is sutiable for various applications that require long-range data acquisition and low power consumption.
 
 <!-- <rk-btn
   src="../Quickstart/"
@@ -39,7 +39,7 @@ Thank you for choosing **RAK4200 Evaluation Board** in your awesome IoT Project!
 - **Temperature range:** -40°C to +85°C
 - **Frequency range:** 863–870MHz (EU) / 902–928MHz (US), ISM and SRD systems
 - Low-Power Wireless Systems with 7.8kHz to 500KHz Bandwidth
-- **Core:** ARM 32-bit Cortex - M0+ with MPU
+- **Core:** ARM 32-bit Cortex M0+ with MPU
 - Up to 128KB flash memory with ECC
 - 20KB RAM
 

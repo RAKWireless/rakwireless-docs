@@ -1,5 +1,5 @@
 <template>
-  <div class="row q-py-lg text-grey-8">
+  <div class="q-page-edit row q-py-lg text-grey-8">
     <div v-if="editLink">
       <a class="text-grey-8" :href="editLink" target="_blank" rel="noopener noreferrer">{{ editLinkText }}</a>
       <OutboundLink />

@@ -16,11 +16,11 @@ Before going through the step in the installation guide of the RAK811 WisDuo LPW
 
 1. RAK811 WisDuo LPWAN Module 
 2. Windows PC
-3. USB to TTL adapter
+3. USB to UART TTL adapter
 
 
 #### Software Tools
-1. [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)
+1. [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
 2. [RAK811 Firmware](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#firmware-os)
 3. [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 <!-- 4. [J-Link Tool](https://downloads.rakwireless.com/en/Cellular/Tools/) -->
@@ -45,9 +45,9 @@ During the configuration of the module through the AT commands, it is possible t
 
 #### Connect to the RAK811
 
-In this document, a RAK811 module is used as an example. Use a USB to TTL adapter to connect to the module.
+In this document, a RAK811 module is used as an example. Use a USB to UART TTL adapter to connect to the module.
 
-1. Connect the RAK811 to the serial port of a general-purpose computer (e.g.: USB port) using a USB to TTL adapter, as shown in Figure 1.
+1. Connect the RAK811 to the serial port of a general-purpose computer (e.g.: USB port) using a USB to UART TTL adapter, as shown in Figure 1.
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/1.module-connection.png"
@@ -55,11 +55,11 @@ In this document, a RAK811 module is used as an example. Use a USB to TTL adapte
   caption="RAK811 Module Connection"
 />
 
-2. Any serial communication tool can be used. But, it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
+2. Any serial communication tool can be used. But, it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
 
 3. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows: 
 
- * Baud Rate: **115200 bauds**
+ * Baud Rate: **115200 baud**
  * Data Bits: **8 bits**
  * Stop Bits: **1 stop bit**
  * Parity: **NONE**
@@ -74,9 +74,9 @@ In this document, a RAK811 module is used as an example. Use a USB to TTL adapte
 
 ### Configuring RAK811
 
-To connect the RAK811 module to a LoRa P2P connection or a LoRaWAN network, the module must be configured and LoRa parameters must be set by sending AT commands. You can send AT commands to the RAK811 module through the UART interface.
+To connect the RAK811 module to a LoRa P2P connection or a LoRaWAN network, the module must be configured and LoRa parameters must be set by sending AT commands. With a serial communication tool (for example the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)) it is possible to send commands to the RAK811.
 
-Connect the RAK811 module to the computer as described in the previous section. Using the serial communication tool then it is possible to send commands to the RAK811, e.g.: sending the `at+version` will display the current firmware version as shown in Figure 3. For more supported commands, refer to [AT Commands for RAK811](/Product-Categories/WisDuo/RAK811-Module/LoRaWAN-P2P/AT-Command-Manual/).
+Connect the RAK811 module to the computer as described in the previous section. Using the serial communication tool then it is possible to send commands to the RAK811, e.g.: sending the `at+version` will display the current firmware version as shown in Figure 3. For more supported commands, refer to [AT Commands for RAK811](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/).
 
 
 <rk-img
@@ -87,7 +87,7 @@ Connect the RAK811 module to the computer as described in the previous section. 
 
 ### Connecting to The Things Network (TTN)
 
-In this section, a practical exercise will be performed to show how to connect the RAK811 module to The Thing Network (TTN™) platform. 
+In this section, a practical exercise will be performed to show how to connect the RAK811 module to The Things Network (TTN™) platform. 
 
 
 <rk-img
@@ -96,9 +96,9 @@ In this section, a practical exercise will be performed to show how to connect t
   caption="RAK811 in the context of the TTN"
 />
 
-As shown in Figure 4, the RAK811 module is one of the devices located on the left side. In the context of an IoT solution, the objective is to deploy devices to sense the relevant process variables and transmit the data to the backend servers located in the cloud. The data will be processed and integrated as part of a larger solution that, ultimately, could generate efficiency, traceability, predictability capacity among others.
+As shown in Figure 4, the RAK811 module is one of the devices located on the left side. In the context of an IoT solution, the objective is to deploy devices to sense relevant process variables and transmit the data to the backend servers located in the cloud. The data will be processed and integrated as part of a larger solution that ultimately could generate efficiency, traceability and predictability capacity among others.
 
-The RAK811 module can be part of this ecosystem, and the objective of this section is to demonstrate how simple is to send data to the TTN using the LoRaWAN protocol. To achieve this, the RAK811 module must be located inside of the coverage of a LoRaWAN gateway. 
+The RAK811 module can be part of this ecosystem, and the objective of this section is to demonstrate how simple it is to send data to the TTN using the LoRaWAN protocol. To achieve this, the RAK811 module must be located inside of the coverage of a LoRaWAN gateway. 
 
 
 <b>Sign up and login</b>
@@ -180,7 +180,7 @@ In this form, the device ID must be unique for the application and must be compl
 * Application Key
 * Application EUI
 
-The TTN platform can generate these parameters randomly by leaving those fields empty or youcan enter already existing values. 
+The TTN platform can generate these parameters randomly by leaving those fields empty or you can enter already existing values. 
 
 
 3. Press the “**Register**” button at the bottom of this page to finish the process. 
@@ -269,7 +269,7 @@ at+set_config=lora:dev_eui:5e9d1e0857cf25f1
 5. Set the Application EUI.
 
 ```
-at+set_config=lora:app_ eui:5e9d1e0857cf25f1
+at+set_config=lora:app_eui:5e9d1e0857cf25f1
 ```
 
 :::tip 📝 NOTE:
@@ -347,7 +347,7 @@ If the ABP mode is preferred by the user, then the TTN platform needs to be conf
   * **App Session Key**
 
 :::tip 📝 NOTE:
-These fields can be left empty in the form and TTN will complete them with random values, in other cases, youcan complete them with specific values.
+These fields can be left empty in the form and TTN will complete them with random values, in other cases, you can complete them with specific values.
 :::
 
 
@@ -446,7 +446,7 @@ After configuring all parameters, you need to reset RAK8111 Module for saving pa
 :::
 
 
-7. After resetting, join in OTAA mode.
+7. After resetting, join in ABP mode.
 
 ```
 at+join
@@ -467,7 +467,7 @@ at+send:lora:2:1234567890
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/22.abp-sending-message.png"
   width="40%"
-  caption="OTAA Test Sample Data Sent via RAK Serial Port Tool"
+  caption="ABP Test Sample Data Sent via RAK Serial Port Tool"
 />
 
 Then, go to the TTN Console to confirm that the message was properly received.
@@ -545,7 +545,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 
 1. Choose the **Application** created in the previous step, then select the **DEVICES** tab as shown in Figures 27 and 28.
 
-2. Once done, click “**CREATE APPLICATION**”.
+2. Once done, click “**+ CREATE**”.
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/27.application-available.png"
@@ -560,7 +560,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   caption="Device Tab of an Application"
 />
 
-3. Once inside of the DEVICE tab, create a new device (LoRa node) by clicking on the “**+ CREATE**” button. 
+3. Once inside of the DEVICE tab, create a new device (LoRaWAN node) by clicking on the “**+ CREATE**” button. 
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/29.adding-node.png"
@@ -647,7 +647,7 @@ Standard OTAA mode requires the **Device EUI**, **Application Key**, and the **A
 
 ###### Configure the OTAA mode on the RAK811
 
-The RAK811 module supports a series of [AT commands](/Product-Categories/WisDuo/RAK811-Module/LoRaWAN-P2P/AT-Command-Manual/#at-commands-for-rak811) to configure its internal parameters and control the functionalities of the module. 
+The RAK811 module supports a series of [AT commands](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/) to configure its internal parameters and control the functionalities of the module. 
 
 To set up the RAK811 module to join ChirpStack using OTAA start by connecting the RAK811 module to the Computer (see Figure 1) and open the RAK Serial Port  Tool. Wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
 
@@ -718,7 +718,7 @@ Remember, the Application EUI parameter was not required in the ChirpStack platf
 
 6. Set the Application Key.
 
-- Get the Application Key from the TTN register.
+- Get the Application Key from ChirpStack console.
 
 ```
 at+set_config=lora:app_key:f921d50cd7d02ee3c5e6142154f274b2
@@ -868,7 +868,7 @@ at+set_config=lora:region:EU868
 4. Set the Device Address. 
 
 ```
-at+set_config=lora:dev_addr: 26011af9
+at+set_config=lora:dev_addr:26011af9
 ```
 
 5. Set the Network Session Key.
@@ -927,9 +927,9 @@ This section will show you how to set up and connect two RAK811 units to work in
 
 1. Two RAK811 units shall be set to operate on EU868 frequency. 
 
-2. The setup of the RAK811 units is done by connecting then with a general-purpose computer through the UART port. The setup of each RAK811 can be done separately but testing the LoRa P2P mode will require having both units connected simultaneously to its respective UART port (This could be one computer with 2 USB ports or 2 computers with one USB port each).
+2. The setup of the RAK811 units are done by connecting them with a general-purpose computer through the UART port. The setup of each RAK811 can be done separately but testing the LoRa P2P mode will require having both units connected simultaneously to its respective UART port (This could be one computer with 2 USB ports or 2 computers with one USB port each).
 
-3. Set the RAK811 to work in LoRa P2p mode. Open the RAK Serial Port Tool and send the following command:
+3. Set the RAK811 to work in LoRa P2P mode. Open the RAK Serial Port Tool and send the following command:
 
 ```
 at+set_config=lora:work_mode:1
@@ -961,7 +961,7 @@ For this example, the LoRa parameters are the following:
 
 :::tip 📝 NOTE:
 
-Refer to the [Configuring Using AT Commands](/Product-Categories/WisDuo/RAK811-Module/LoRaWAN-P2P/AT-Command-Manual/) section to learn more about the definition of the parameters used.
+Refer to the [Configuring Using AT Commands](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/) section to learn more about the definition of the parameters used.
 
 :::
 
@@ -1044,7 +1044,7 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
 2.	Download the RAK Device Firmware Upgrade (DFU) tool.
     - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
-3.	Connect the RAK811 module with a computer through a USB to TTL. Refer to [Figure 1](/Product-Categories/WisDuo/RAK811-Module/LoRaWAN-P2P/Quickstart/#connect-to-the-rak811).
+3.	Connect the RAK811 module with a computer through a USB to TTL. Refer to [Figure 1](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#connect-to-the-rak811).
 
 4.	Open the Device Firmware Upgrade tool. Select the serial port and baud rate of the module and click the "Select Port" button.
 

@@ -1,16 +1,22 @@
+---
+prev: ../Quickstart/
+next: ../Low-Level-Development/
+---
+
+
 # AT Command Manual
 
 ## AT Commands
 
 ### Introduction
 
-The RAK4200 module is designed to simplify LoRa peer to peer and LoRaWAN communication. This module saves customers to deal with complicated SPI protocol with the LoRa transceivers and instead, a well-known serial communication interface is provided for sending commands and requesting internal status of the module. This approach allows a straightforward way to integrate LoRa technology into your projects.
+The RAK4200 module is designed to simplify LoRa P2P peer to peer and LoRaWAN communication. This module saves customers to deal with complicated SPI protocol with the LoRa transceivers and instead, a well-known serial communication interface is provided for sending commands and requesting internal status of the module. This approach allows a straightforward way to integrate LoRa technology into your projects.
 
 On top of this serial interface a set of AT commands are defined, an external micro controller will be able to control the RAK4600 module as a classic AT modem. Through the AT commands, customers can set parameters of the LoRaWAN communication, controlling GPIO pins, analog inputs, etc.
 
-In the RAK4200 module, the serial communication is exposed on the UART1 port, through the pin 4 (TX1) and pin 5 (RX1). The parameters of the UART1 communication are: 115200 / 8-N-1. The firmware upgrade is also possible through this port. In order to get familiar with the pin distribution of this module and find a schematic circuit of a reference application, please refer to the "RAK4200 Specification Manual". We provide a summary in the Appendix IV.
+In the RAK4200 module, the serial communication is exposed on the UART1 port, through the pin 4 (UART1_TX) and pin 5 (UART1_RX). The parameters of the UART1 communication are: 115200 / 8-N-1. The firmware upgrade is also possible through this port. In order to get familiar with the pin distribution of this module and find a schematic circuit of a reference application, please refer to the "RAK4200 Specification Manual". We provide a summary in the Appendix IV.
 
-In addition, the RAK4200 module also exposes another serial port through the pin 2 (TX2) and pin 1 (RX1). This port is named as UART2. You can use it to connect another MCU or an additional UART peripheral such as a GPS module.
+In addition, the RAK4200 module also exposes another serial port through the pin 2 (UART2_TX) and pin 1 (UART2_RX). This port is named as UART2. You can use it to connect another MCU or an additional UART peripheral such as a GPS module.
 
 UART2 is PIN2 (TX2) and PIN1 (RX2) on modules.
 
@@ -93,7 +99,7 @@ OK V3.2.0.14
 
 ### at+help
 
-This command is used for obtaining all AT commands supported by the current firmware.
+This command is used to obtaining all AT commands supported by the current firmware.
 
 | Operation | Command   | Response               |
 | --------- | --------- | ---------------------- |
@@ -154,7 +160,7 @@ at+send=lorap2p:XXX
 
 ### at+set_config=device:restart
 
-This command is used for restarting the device.
+This command is used to restart the device.
 
 | Operation | Command                        | Response |
 | --------- | ------------------------------ | -------- |
@@ -173,7 +179,7 @@ Initialization OK
 
 ### at+set_config=device:sleep:\<status\>
 
-This command is used for changing the current state of the device between the sleep and the wake-up mode.
+This command is used  to change the current state of the device between the sleep and the wake-up mode.
 
 | Operation | Command                               | Response      |
 | --------- | ------------------------------------- | ------------- |
@@ -196,7 +202,7 @@ OK Wake Up
 
 ### at+get_config=device:status
 
-This command is used for obtaining the status of the device.
+This command is used to obtaining the status of the device.
 
 | Operation | Command                       | Response           |
 | --------- | ----------------------------- | ------------------ |
@@ -217,7 +223,7 @@ LoRa chip:SX1276
 
 ### at+set_config=device:uart:\<index\>:\<baud_rate\>
 
-This command is used for configuring the baud rate for a UART port.
+This command is used to configure the baud rate of a UART port.
 
 | Operation | Command                                         | Response |
 | --------- | ----------------------------------------------- | -------- |
@@ -237,7 +243,7 @@ OK
 
 ### at+set_config=device:uart_mode:\<index\>:\<mode\>
 
-This command is used for switching the UART operation between the AT configuration mode and the data transmission mode.
+This command is used to switch the UART operation between the AT configuration mode and the data transmission mode.
 
 | Operation | Command                                         | Response |
 | --------- | ----------------------------------------------- | -------- |
@@ -261,7 +267,7 @@ OK
 
 ### at+send=uart:\<index\>:\<data\>
 
-This command is used for sending data through a UART port.
+This command is used to send data through a UART port.
 
 | Operation | Command                       | Response |
 | --------- | ----------------------------- | -------- |
@@ -282,7 +288,7 @@ OK
 
 ### at+get_config=device:gpio:\<pin_num\>
 
-This command is used for obtaining the voltage level status of a pin on a module.
+This command is used to obtain the voltage level status of a pin on a module.
 
 | Operation | Command                               | Response      |
 | --------- | ------------------------------------- | ------------- |
@@ -303,7 +309,7 @@ OK 1
 
 ### at+set_config=device:gpio:\<pin_num\>:\<status\>
 
-This command is used for setting the voltage level state (high or low) of a pin on a module.
+This command is used to set the voltage level state (high or low) of a pin on a module.
 
 | Operation | Command                                        | Response |
 | --------- | ---------------------------------------------- | -------- |
@@ -324,7 +330,7 @@ OK
 
 ### at+get_config=device:adc:\<pin_num\>
 
-This command is used for obtaining the voltage level of an ADC pin of the module.
+This command is used to obtain the voltage level of an ADC pin of the module.
 
 | Operation | Command                              | Response       |
 | --------- | ------------------------------------ | -------------- |
@@ -346,7 +352,7 @@ OK 1663mV
 
 ### at+join
 
-This command is used for joining into the LoRaWAN network.
+This command is used to join into the LoRaWAN network.
 
 | Operation | Command   | Response          |
 | --------- | --------- | ----------------- |
@@ -363,7 +369,7 @@ OK Join Success
 
 ### at+send=lora:\<port\>:\<data\>
 
-This command is used for sending data via LoRaWAN.
+This command is used to send data via LoRaWAN.
 
 | Operation | Command                      | Response |
 | --------- | ---------------------------- | -------- |
@@ -371,7 +377,7 @@ This command is used for sending data via LoRaWAN.
 
 | Parameter | Description                                                                                                                                                                                                                                                                                                             |
 | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| port      | Sending port of LoRa. The value range is 1-223.                                                                                                                                                                                                                                                                         |
+| port      |  LoRa sending port. The value range is 1-223.                                                                                                                                                                                                                                                                         |
 | data      | The sending data format is in hexadecimal format. The possible values are between 00-FF. The module internally will cast every two characters into a byte before sending it to the LoRa transceiver. The maximum length varies depending on the band frequency and DR (LoRaWAN standard). Please refer to Appendix III. |
 
 Example：
@@ -399,7 +405,7 @@ When sending an unconfirmed message, sometimes the gateway will send MAC command
 
 ### at+set_config=lora:region:\<region\>
 
-This command is used for setting the appropriate working frequency band.
+This command is used to set the appropriate working frequency band.
 
 | Operation | Command                              | Response |
 | --------- | ------------------------------------ | -------- |
@@ -422,7 +428,7 @@ In the AS923 frequency band, the supported frequency plan is "as2" and dwell tim
 
 ### at+get_config=lora:channel
 
-This Command is used for reading all the LoRa channel information for the device's current region.
+This Command is used to read all the LoRa channel information for the device's current region.
 
 | Operation | Command                      | Response                   |
 | --------- | ---------------------------- | -------------------------- |
@@ -449,7 +455,7 @@ With "\_0,on,868100000,0,5" as an example，channel parameter analysis:
 
 ### at+set_config=lora:ch_mask:\<channel_number\>:\<status\>
 
-This command is used for switching a channel (turn on or off) in the current region.
+This command is used to turn on or off a channel in the current region.
 
 | Operation | Command                                                | Response |
 | --------- | ------------------------------------------------------ | -------- |
@@ -468,7 +474,7 @@ OK
 
 ### at+set_config=lora:dev_eui:\<dev_eui\>
 
-This command is used for setting the Device EUI parameter for LoRaWAN OTAA mode.
+This command is used to set the Device EUI parameter for LoRaWAN OTAA mode.
 
 | Operation | Command                                | Response |
 | --------- | -------------------------------------- | -------- |
@@ -487,7 +493,7 @@ OK
 
 ### at+set_config=lora:app_eui:\<app_eui\>
 
-This command is used for setting the Application EUI parameter for the LoRaWAN OTAA mode.
+This command is used to set the Application EUI parameter for the LoRaWAN OTAA mode.
 
 | Operation | Command                                | Response |
 | --------- | -------------------------------------- | -------- |
@@ -506,7 +512,7 @@ OK
 
 ### at+set_config=lora:app_key:\<app_key\>
 
-This command is used for setting the Application Key parameter for the LoRaWAN OTAA mode.
+This command is used to set the Application Key parameter for the LoRaWAN OTAA mode.
 
 | Operation | Command                                | Response |
 | --------- | -------------------------------------- | -------- |
@@ -525,7 +531,7 @@ OK
 
 ### at+set_config=lora:dev_addr:\<dev_addr\>
 
-This command is used for setting the Device Address parameter for the LoRaWAN ABP mode.
+This command is used to set the Device Address parameter for the LoRaWAN ABP mode.
 
 | Operation | Command                                  | Response |
 | --------- | ---------------------------------------- | -------- |
@@ -544,7 +550,7 @@ OK
 
 ### at+set_config=lora:apps_key:\<apps_key\>
 
-This command is used for setting the Application Session Key parameter for the LoRaWAN ABP mode.
+This command is used to set the Application Session Key parameter for the LoRaWAN ABP mode.
 
 | Operation | Command                                  | Response |
 | --------- | ---------------------------------------- | -------- |
@@ -563,7 +569,7 @@ OK
 
 ### at+set_config=lora:nwks_key:\<nwks_key\>
 
-This command is used for setting the Network Session Key parameter for the LoRaWAN ABP mode.
+This command is used to set the Network Session Key parameter for the LoRaWAN ABP mode.
 
 | Operation | Command                                  | Response |
 | --------- | ---------------------------------------- | -------- |
@@ -582,7 +588,7 @@ OK
 
 ### at+set_config=lora:multicastenable:\<IsEnable\>
 
-This command is used for enabling or disabling the multicast feature.
+This command is used to enable or disable the multicast feature.
 
 | Operation | Command                                         | Response |
 | --------- | ----------------------------------------------- | -------- |
@@ -603,7 +609,7 @@ OK
 
 ### at+set_config=lora:multicast_dev_addr:\<multicast_dev_addr\>
 
-This command is used for setting the Device Address for the multicast feature.
+This command is used to set the Device Address for the multicast feature.
 
 | Operation | Command                                                      | Response |
 | --------- | ------------------------------------------------------------ | -------- |
@@ -622,7 +628,7 @@ OK
 
 ### at+set_config=lora:multicast_apps_key:\<multicast_apps_key\>
 
-This command is used for setting the Application Session Key for the multicast feature.
+This command is used to set the Application Session Key for the multicast feature.
 
 | Operation | Command                                                      | Response |
 | --------- | ------------------------------------------------------------ | -------- |
@@ -641,7 +647,7 @@ OK
 
 ### at+set_config=lora:multicast_nwks_key:\<multicast_nwks_key\>
 
-This command is used for setting the Network Session Key for the multicast feature.
+This command is used to set the Network Session Key for the multicast feature.
 
 | Operation | Command                                                      | Response |
 | --------- | ------------------------------------------------------------ | -------- |
@@ -660,7 +666,7 @@ OK
 
 ### at+set_config=lora:join_mode:\<mode\>
 
-This command is used for switching the LoRaWAN's access mode between the OTAA and ABP mode.
+This command is used to switch the LoRaWAN's access mode between the OTAA and ABP mode.
 
 | Operation | Command                               | Response |
 | --------- | ------------------------------------- | -------- |
@@ -682,7 +688,7 @@ OK
 
 ### at+set_config=lora:class:\<class\>
 
-This command is used for setting LoRaWAN's class to Class A, Class B, or Class C.
+This command is used to set LoRaWAN class to Class A, Class B, or Class C.
 
 | Operation | Command                            | Response |
 | --------- | ---------------------------------- | -------- |
@@ -704,7 +710,7 @@ OK
 
 ### at+set_config=lora:confirm:\<type\>
 
-This command is used for setting the type of message to be sent: Confirmed/Unconfirmed.
+This command is used to set the type of message to be sent: Confirmed/Unconfirmed.
 
 | Operation | Command                             | Response |
 | --------- | ----------------------------------- | -------- |
@@ -725,7 +731,7 @@ OK
 
 ### at+set_config=lora:dr:\<dr\>
 
-This command is used for setting the data rate (DR) of LoRa.
+This command is used to set the data rate (DR) of LoRa.
 
 | Operation | Command                      | Response |
 | --------- | ---------------------------- | -------- |
@@ -737,7 +743,7 @@ This command is used for setting the data rate (DR) of LoRa.
 
 ### at+set_config=lora:tx_power:\<tx_power\>
 
-This command is used for setting the level of the RF transmission power level of the LoRa transceiver. The unit is in dBm.
+This command is used to set the Tx power level of the LoRa transceiver. The unit is in dBm.
 
 | Operation | Command                                  | Response |
 | --------- | ---------------------------------------- | -------- |
@@ -757,7 +763,7 @@ OK
 
 ### at+set_config=lora:adr:\<status\>
 
-This command is used for setting (turn on/off) the ADR feature of the LoRa communication.
+This command is used to turn on or off the ADR (Adaptive Data Rate) feature of the LoRa communication.
 
 | Operation | Command                           | Response |
 | --------- | --------------------------------- | -------- |
@@ -778,7 +784,7 @@ OK
 
 ### at+get_config=lora:status
 
-This command is used for getting all of the information related to the current LoRa status (except channel information）
+This command is used to get all of the information related to the current LoRa status (except channel information）
 
 | Operation | Command                     | Response                  |
 | --------- | --------------------------- | ------------------------- |
@@ -822,7 +828,7 @@ DownLinkCounter: 0
 
 ### at+set_config=lora:dutycycle_enable:\<status\>
 
-This command is used for enabling or disabling the Duty Cycle feature.
+This command is used to enable or disable the Duty Cycle feature.
 
 | Operation | Command                                        | Response |
 | --------- | ---------------------------------------------- | -------- |
@@ -843,7 +849,7 @@ OK
 
 ### at+set_config=lora:send_repeat_cnt:\<num>
 
-This command is used for setting the number attempts for retransmitting an uplink message. When activated, the module will resend a message if its corresponding ACK (down link) is not received after sending a confirmed uplink message. The default value is 0, which means that the module will not resend any message by default.
+This command is used to set the number of attempts for retransmitting an uplink message. When activated, the module will resend a message if its corresponding ACK (down link) is not received after sending a confirmed uplink message. The default value is 0, which means that the module will not resend any message by default.
 
 | Operation | Command                                        | Response |
 | --------- | ---------------------------------------------- | -------- |
@@ -881,7 +887,7 @@ OK
 
 ### at+set_config=lora:work_mode:\<mode\>
 
-This command is used for switching the LoRa's transmission mode between the LoRaWAN and the LoRAP2p mode. This command will cause the module to restart once applied.
+This command is used to set the LoRa work mode. This command will cause the module to restart once applied.
 
 | Operation | Command                               | Response |
 | --------- | ------------------------------------- | -------- |
@@ -889,7 +895,7 @@ This command is used for switching the LoRa's transmission mode between the LoRa
 
 | Parameter | Description                  |
 | --------- | ---------------------------- |
-| mode      | Work mode of LoRa            |
+| mode      | LoRa work mode               |
 |           | 0: LoRaWAN                   |
 |           | 1: LoRaP2P                   |
 |           | The default is LoRaWAN mode. |
@@ -905,7 +911,7 @@ Initialization OK
 
 ### at+set_config=lorap2p:\<frequency\>:\<spreadfact\>:\<bandwidth\>:\<codingrate\>:\<preamlen\>:\<power\>
 
-This command is used for setting the relevant parameters of LoRAP2p mode and is only valid when the LoRa mode was switched to LoRaP2P before.
+This command is used to set the relevant parameters of LoRA P2P mode and is only valid when the LoRa work mode was set to LoRa P2P before.
 
 | Operation | Command                                                                                      | Response |
 | --------- | -------------------------------------------------------------------------------------------- | -------- |
@@ -940,7 +946,7 @@ OK
 
 ### at+set_config=lorap2p:transfer_mode:\<mode\>
 
-This command is used for switching the state of the LoRa transceiver between sending and receiving state, and it’s only valid when the LoRa mode was set to LoRaP2P before.
+This command is to change the state of the LoRa transceiver between sending and receiving state. It is only valid when the LoRa work mode was set to LoRa P2P before.
 
 | Operation | Command                                       | Response |
 | --------- | --------------------------------------------- | -------- |
@@ -961,7 +967,7 @@ OK
 
 ### at+send=lorap2p:\<data\>
 
-This command is used for sending data through LoRaP2P, and only valid when the LoRa work mode was set to LoRaP2P before.
+This command is used to send data through LoRa P2P network. It is only valid when the LoRa work mode was set to LoRaP2P before.
 
 | Operation | Command                  | Response |
 | --------- | ------------------------ | -------- |
@@ -979,7 +985,7 @@ OK
 ```
 
 ::: tip 📝 NOTE
-In LoRa P2P mode, the receiving node receives the data and outputs the data in the following format:
+In LoRa P2P mode, the receiving node receives the data and display the data in the following format:
 `at+recv=<RSSI>,<SNR>,< Data Length >:< Data >`
 :::
 
@@ -1323,14 +1329,15 @@ M in the following list is the length with MAC header, N is the length without M
 
 ## Pin Description of RAK4200
 
-The pin definition of the RAK4200 module can be reviewed [here]().
+The pin definition of the RAK4200 module can be reviewed [here](../Datasheet/).
 
 A summary of the pins of the RAK4200 module:
 
-- About the UART pin. Pin 4(TX1), Pin 5(RX1) are reserved for UART1. Pin 2(TX2), Pin 1(RX2) are reserved for UART2.
-  During sleep, Pin5(RX1) and Pin1(RX2) are configured as external interrupt mode, internal pull-down resistor, rising edge trigger wake-up.
-- About the SWD debug pin. Pin 7 (SWDIO) and Pin 8 (SWCLK) are used for SWD debug port.
-- About the power pin. The power pin on the RAK4200 module includes: VCC/GND, Pin 11, Pin 13, Pin 14, Pin 19, Pin 20;
-- About the reset pin. The reset pin on the RAK4200 module is PIN 18;
+- About the UART pins: Pin 4(UART1_TX) and pin 5 (UART1_RX) are reserved for UART1.
+ Pin 2 (UART2_TX) and pin 1 (UART2_RX) are reserved for UART2.
+  During sleep, pin 5 and pin 1 are configured as external interrupt mode, internal pull-down resistor, rising edge trigger wake-up.
+- About the SWD debug pin : Pin 7 (SWDIO) and pin 8 (SWCLK) are used for SWD debug port.
+- About the power pins: The power pins on the RAK4200 module includes: Pin 20 is VDD pin. Pins 11,13, 14, 15, 19 are GND pins.
+- About the reset pin. The reset pin on the RAK4200 module is pin 18;
 - About the RF antenna pin. The RF antenna pin on RAK4200 module is PIN 12;
 - About the ADC pin. The ADC pin on RAK4200 is PIN 3;

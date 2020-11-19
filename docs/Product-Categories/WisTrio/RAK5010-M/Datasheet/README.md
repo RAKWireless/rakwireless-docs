@@ -635,8 +635,8 @@ Download the latest firmware version of the RAK5010-M WisTrio™ provided in the
 
 | Model     | Version  | Source                                                                                       |
 | --------- | -------- | -------------------------------------------------------------------------------------------- |
-| RAK5010   | V3.0.0.8 | [Download](https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/RAK5010_Latest_Firmware.zip) |
-| RAK5010-M | V3.0.0.8 | [Download](https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/RAK5010-M_Latest_Firmware.zip)        |
+| RAK5010   | V3.0.0.11 | [Download](https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/RAK5010_Latest_Firmware.zip) |
+| RAK5010-M | V3.0.0.11 | [Download](https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/RAK5010-M_Latest_Firmware.zip)        |
 
 ## Models / Bundles
 

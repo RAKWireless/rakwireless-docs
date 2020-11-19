@@ -25,10 +25,9 @@ Before going through each and every step in the installation guide of the RAK420
 #### Hardware Tools
 
 - RAK4200 Breakout Board (provided) – including LoRa antenna, Dupont lines (13x) 
-- USB to UART converter – CH340 for example (not provided) 
-- Gateway in Range, for testing (not provided) 
-- Windows PC (not provided) 
-- Emulator Kit (not provided)
+- USB to UART adapter – CH340 for example (not provided) 
+- Gateway in range, for testing (not provided) 
+- RAKDAP1 DAPLink Tool (not provided) 
 
 #### Software Tools
 
@@ -47,13 +46,13 @@ Before going through each and every step in the installation guide of the RAK420
 
 ### Interfacing with RAK4200 Breakout Board
 
-In order for you to be able to interface with the RAK4200 Evaluation Board with your Windows Machine, you need to download the RAK Serial Port Tool **[here](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).**
+To interface with the RAK4200 Evaluation Board with your Windows Machine, you need to download the [**RAK Serial Port Tool**](https://downloads.rakwireless.com/en/LoRa/Tools/).
 
 ::: warning ⚠️ WARNING
 Before powering the RAK4200 Breakout Board, make sure you have installed the included LoRa Antenna. Not doing so might damage the board
 :::
 
-- Connect your USB to UART converter to the pin header on the RAK4200 via a set of 4 dupont lines. Use **Figure 1** for reference on wiring the device properly.
+- Connect your USB to UART adapter to the pin header on the RAK4200 via a set of 4 dupont lines. Use **Figure 1** for reference on wiring the device properly.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/interfacing/connection.png"
@@ -61,13 +60,13 @@ Before powering the RAK4200 Breakout Board, make sure you have installed the inc
   caption="Powering up and interfacing with the board"
 />
 
-- Go to your Device Manager by pressing: Windows + R and typing devmgmt.msc or search in the Start Menu.
+- Go to Device Manager by pressing Windows + R and typing devmgmt.msc, or search in the Start Menu.
 
 ::: tip 📝 NOTE
-Windows 10 should recognize the board and automatically install drivers, however if it is missing in the COM & LP ports list you need to manually install the CH340 Drivers.
+Windows 10 should recognize the board and automatically install drivers, however if it is missing in the COM & LPT ports list you need to manually install the CH340 Drivers.
 :::
 
-- Look for Ports (COM & LPT) and Find the name USB-SERIAL CH340 and take note of the COM Port Number as you will need it to connect with the board. You might have another model number but the wording “USB-SERIAL” should be present in some form.
+- Look for Ports (COM & LPT) and find the name USB-SERIAL CH340. Take note of the COM Port Number as you will need it to connect with the board. You might have another model number but the wording “USB-SERIAL” should be present in some form.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/interfacing/tvkkkqpdpkszdf4ioyg6.png"
@@ -75,7 +74,7 @@ Windows 10 should recognize the board and automatically install drivers, however
   caption="COM Port settings"
 />
 
-- Open the RAK Serial Port Tool. Select the COM Port number (the one you noted in the previous step) and set the **Baud Rate to 115200**. Click “**OPEN**” and you should be connected to the board and be able to send commands.
+- Open the RAK Serial Port Tool. Select the COM Port number (the one you noted in the previous step) and set the **Baud Rate to 115200**. Click “**OPEN**”, and you should be connected to the board and be able to send commands.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/interfacing/ybo1fczw8uhagao2io7h.png"
@@ -85,9 +84,9 @@ Windows 10 should recognize the board and automatically install drivers, however
 
 ### Connecting to The Things Network (TTN)
 
-The Things Network is about enabling low power devices to be used in long range gateways that connect to an open-source, decentralized network and exchange data with Applications. Learn more about the Things Network [**here**](https://www.thethingsnetwork.org/docs/).
+The Things Network is about enabling low power devices to be used in long range gateways that connect to an open-source, decentralized network and exchange data with Applications. Learn more about [**The Things Network**](https://www.thethingsnetwork.org/docs/).
 
-In this section, we will be connecting the RAK4200 Breakout Board to The Things Network (TTN). If you don't have an account yet, head on to [TTN site](https://www.thethingsnetwork.org/) and create one. Once done, Log in to your account and go to the console which can be found here:
+In this section, you will be connecting the RAK4200 Breakout Board to The Things Network (TTN). If you don't have an account yet, head on to [TTN site](https://www.thethingsnetwork.org/) and create one. Once done, log in to your account and go to the console. See the highlighted box in Figure 4.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/ttn/ttn-homepage.png"
@@ -121,10 +120,10 @@ In this section, we will be connecting the RAK4200 Breakout Board to The Things 
 
 Here are the things that you should take note in adding an application:
 
-1. **Application ID** - this will be the unique id of your application in the Network. Please note that characters should be in lower case, no spaces are allowed.
-2. **Description** - this is a short and concise human readable description of your application.
-3. **Application EUI** - this will be generated automatically by The Things Network for convenience.
-4. **Handler Registration** - handler you want to register this application to.
+1. **Application ID**: a unique ID on the TTN network that should be in lower case with no spaces
+2. **Description**: This is a short and concise human readable description of your application
+3. **Application EUI**: automatically generated by TTN
+4. **Handler Registration**: select the handler you want to register this application to
 
 - After you fill in the necessary information, press the "**Add application**" button at the bottom of this page. If you see the following page, this means that you have successfully registered your application.
 
@@ -157,7 +156,7 @@ Here are the things that you should take note in registering your device:
 1. **Device ID** - this is the unique identifier for your RAK4200 Breakout Board in your application. You need to enter this manually.
 2. **Device EUI** - this is the unique identifier for your device in the network. You can change it later, if you want.
 
-Click the following icon and the Device EUI will be automatically generated. The App Key should be in auto generation mode by default.
+Click the following icon, and the Device EUI will be automatically generated. The App Key should be in auto generation mode by default.
 
 - Lastly, click the Register button. Now, your device is registered under the corresponding application.
 
@@ -167,13 +166,13 @@ Click the following icon and the Device EUI will be automatically generated. The
   caption="Device Overview"
 />
 
-Depending on which authentication method you want to use ,proceed to either the **OTAA mode** or **ABP mode** section.
+Depending on which authentication method you want to use, proceed to either the **OTAA mode** or **ABP mode** section.
 
 
 
 #### OTAA Mode
 
-When setting up a new device in TTN its default is to join in OTAA mode. For configuration, you need the following three parameters: **Device EUI, Application EUI** and **App Key**. You can get them all from the **Overview page**.
+When setting up a new device in TTN, its default is to join in OTAA mode. For configuration, you need the following three parameters: **Device EUI, Application EUI**, and **App Key**. You can get them all from the **Overview page**.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/ttn/ttn-dev-overview.png"
@@ -182,7 +181,7 @@ When setting up a new device in TTN its default is to join in OTAA mode. For con
 />
 
 ::: tip 📝 NOTE
-As an example, let's join in OTAA mode, EU868 frequency and the default LoRa class is Class A.
+As an example, join in OTAA mode, EU868 frequency, and the default LoRa class is Class A.
 :::
 
 ::: tip 📝 NOTE
@@ -217,7 +216,7 @@ at+set_config=lora:region:EU868
 Execute the following commands one by one and in the order given.
 :::
 
-4. Set the **Device EUI.**
+4. Set the **Device EUI**:
 
 ```sh
 at+set_config=lora:dev_eui:XXXX
@@ -259,7 +258,7 @@ at+join
   caption="AT Command for OTAA LoRa Join via RAK Serial Port Tool"
 />
 
-9. Joined successfully! Now, let’s try to send a data from the RAK4200 Breakout Board to TTN:
+9. Joined successfully! Try to send data from the RAK4200 Breakout Board to TTN:
 
 ```sh
 at+send=lora:2:1234567890
@@ -271,7 +270,7 @@ at+send=lora:2:1234567890
   caption="OTAA Test Sample Data Sent via RAK Serial Port Tool"
 />
 
-You can then see the data sent from RAK4200 Breakout Board on TTN website as follows:
+You can see the data sent from RAK4200 Breakout Board on TTN website as shown in Figure 17:
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/ttn/ttn-traffic.png"

@@ -125,20 +125,25 @@ module.exports = {
     sidebarDepth: 4
   },
   {
-    title: 'LoRaWAN P2P',
-    path: '/Product-Categories/WisDuo/RAK4200-Module/LoRaWAN-P2P/',
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisDuo/RAK4200-Module/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'AT Command Manual',
+    path: '/Product-Categories/WisDuo/RAK4200-Module/AT-Command-Manual',
     collapsable: false,
     nested: true,
     download: true,
     sidebarDepth: 4,
-    children: [
-      ['/Product-Categories/WisDuo/RAK4200-Module/LoRaWAN-P2P/Quickstart/', 'Getting Started'],
-      ['/Product-Categories/WisDuo/RAK4200-Module/LoRaWAN-P2P/AT-Command-Manual/', 'AT Command Manual']
-    ]
-  },
+  },     
+  
   {
-    title: 'Deep Development',
-    path: '/Product-Categories/WisDuo/RAK4200-Module/Deep-Development/',
+    title: 'Low Level Development',
+    path: '/Product-Categories/WisDuo/RAK4200-Module/Low-Level-Development/',
     collapsable: false,
     nested: true,
     download: true,

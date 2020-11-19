@@ -13,7 +13,7 @@ The RAK811 module is designed to simplify LoRa peer to peer (P2P) and LoRaWAN co
 
 On top of this serial interface, a set of AT commands are defined, an external microcontroller will be able to control the RAK811 module as a classic AT modem. Through the AT commands, you can set parameters of the LoRaWAN communication, controlling GPIO pins, and analog inputs. 
 
-In the RAK811 module, the serial communication is exposed on the **UART1 port**, through the **pin 6 (TX1)** and **pin 7 (RX1)**. The parameters of the UART1 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the “**RAK811 Specification Manual**”. See the summary provided in [Appendix IV](/Product-Categories/WisDuo/RAK811-Module/LoRaWAN-P2P/AT-Command-Manual/#appendix-iv-pin-description-of-rak811).
+In the RAK811 module, the serial communication is exposed on the **UART1 port**, through the **pin 6 (TX1)** and **pin 7 (RX1)**. The parameters of the UART1 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the “**RAK811 Specification Manual**”. See the summary provided in [Appendix IV](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/#appendix-iv-pin-description-of-rak811).
 
 
 The RAK811 module also exposes another serial port through the **pin 25 (TX3)** and **pin 26 (RX3)**. This port is named as **UART3**. You can use it to connect another MCU or an additional UART peripheral such as a GPS module. The parameters of the UART3 communication are **115200 / 8-N-1**.
@@ -538,7 +538,7 @@ This command is used for sending data via LoRaWAN.
     </tr>
     <tr>
       <td> data </td>
-      <td> The sending data format is in hexadecimal format. The possible values are between <b>00-FF</b>. The module will internally cast every two characters into a byte before sending it to the LoRa transceiver. The maximum length varies depending on the band frequency and DR (LoRaWAN standard). Refer to <a href="/Product-Categories/WisDuo/RAK811-Module/LoRaWAN-P2P/AT-Command-Manual/#appendix-iii：maximum-transmission-load-by-region" >Appendix III</a>.
+      <td> The sending data format is in hexadecimal format. The possible values are between <b>00-FF</b>. The module will internally cast every two characters into a byte before sending it to the LoRa transceiver. The maximum length varies depending on the band frequency and DR (LoRaWAN standard). Refer to <a href="/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/#appendix-iii：maximum-transmission-load-by-region" >Appendix III</a>.
     </td>
     </tr>
 </table>

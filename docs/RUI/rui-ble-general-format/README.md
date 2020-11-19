@@ -130,45 +130,17 @@ void rui_ble_rx_data_notify(uint8_t *pdata, uint16_t len)
 
 ---
 
-## RUI BLE Receive Data Read
-
-```c
-void rui_ble_rx_data_read(uint8_t *pdata, uint16_t len)
-```
-
-| @brief | This API is used to receive the data which you just read from another BLE device through BLE | 
-| ---- | ---- | 
-| **@return** | NULL | 
-| **@param** | __uint8_t *pdata__:      the receive data <br> __uint16_t  len__:       the length of receive data. | 
-| **@module** | RAK8212-M <br> RAK5010 <br> RAK4600 |
-
----
-
 ## RUI BLE Send Data Write
 
 ```c
-RUI_RETURN_STATUS rui_ble_tx_data_write(BLE_CLIENT * p_ble_rcs_c, uint8_t *pdata, uint16_t len)
+RUI_RETURN_STATUS rui_ble_tx_data_write(uint8_t *pdata, uint16_t len)
 ```
 
 | @brief | This API is used to write data to another BLE device through BLE. | 
 | ---- | ---- | 
 | **@return** | <a href="/RUI/#rui-return-status.html" target="blank">RUI_RETURN_STATUS</a> | 
-| **@param** | <a href="/RUI/rui-ble-general-format/#ble-client.html" target="blank">BLE_CLIENT</a> __p_ble_rcs_c__: The BLE client instance. <br> **uint8_t pdata**: The data which will be sent. <br> **uint16_t len**: The length of data. | 
+| **@param** | **uint8_t pdata**: The data which will be sent. <br> **uint16_t len**: The length of data. | 
 | **@module** | RAK8212-M <br> RAK5010 <br> RAK4600 | 
-
----
-
-## RUI BLE Send Data Read
-
-```c
-RUI_RETURN_STATUS rui_ble_tx_data_read(BLE_CLIENT * p_ble_rcs_c)
-```
-
-| @brief | This API is used to read another BLE device’s data through BLE | 
-| ---- | ---- | 
-| **@return** | <a href="/RUI/#rui-return-status.html" target="blank">RUI_RETURN_STATUS</a> | 
-| **@param** | <a href="/RUI/rui-ble-general-format/#ble-client.html" target="blank">BLE_CLIENT</a> __*p_ble_rcs_c__: The BLE client instance | 
-| **@module** | RAK8212-M <br> RAK5010 <br> RAK4600 |
 
 ---
 

@@ -12,6 +12,7 @@ Thank you for choosing **RAK7244C WisGate Developer D4+ Gateway** in your awesom
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../../RAK7244/Datasheet/)
+* [Environment Test Report](../Testing-Report/)
 * [Source Code Repository](https://github.com/RAKWireless/rak_common_for_gateway)
 * [RAK7244C ready to flash Firmware](https://downloads.rakwireless.com/LoRa/Developer-LoRaWAN-Gateway-RAK7244C/Firmware/RAK7244C_Latest_Firmware.zip)
 

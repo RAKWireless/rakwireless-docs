@@ -1,5 +1,5 @@
 <template>
-  <div v-if="prev || next" class="row q-py-md">
+  <div v-if="prev || next" class="q-page-nav row q-py-md">
     <span v-if="prev" class="prev">
       ←
       <a

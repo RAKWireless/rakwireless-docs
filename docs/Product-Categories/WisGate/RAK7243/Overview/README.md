@@ -12,6 +12,7 @@ Thank you for choosing **RAK7243 WisGate Developer D3** in your awesome IoT Proj
 
 * [Quick Start Guide](../Quickstart/)
 * [Source Code Repository](https://github.com/RAKWireless/rak_common_for_gateway)
+* [Environment Test Report](../Testing-Report/)
 * [RAK7243 ready to flash Firmware](https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Firmware/RAK7243_Latest_Firmware.zip)
 
 :::tip 📝 NOTE

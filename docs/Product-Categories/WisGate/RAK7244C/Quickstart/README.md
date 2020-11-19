@@ -1,6 +1,6 @@
 ---
 prev: ../Overview/
-next: false
+next: ../Testing-Report/
 tags:
   - RAK7244C
 ---

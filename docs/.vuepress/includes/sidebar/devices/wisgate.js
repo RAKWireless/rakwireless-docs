@@ -42,6 +42,14 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
+    },
+    {
+      title: 'Miscellaneous',
+      collapsable: false,
+      sidebarDepth: 4,
+      children: [
+        '/Product-Categories/WisGate/RAK7243/Testing-Report/'
+      ]
     }
   ],
 
@@ -114,6 +122,14 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
+    },
+    {
+      title: 'Miscellaneous',
+      collapsable: false,
+      sidebarDepth: 4,
+      children: [
+        '/Product-Categories/WisGate/RAK7244C/Testing-Report/'
+      ]
     }
   ],
 
@@ -141,6 +157,14 @@ module.exports = {
       download: true,
       sidebarDepth: 4
     },
+    {
+      title: 'Miscellaneous',
+      collapsable: false,
+      sidebarDepth: 4,
+      children: [
+        '/Product-Categories/WisGate/RAK7246G/Testing-Report/'
+      ]
+    }
 
   ],
 

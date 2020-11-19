@@ -60,6 +60,11 @@ export default {
     img: '/assets/images/wisnode/rak7200/quickstart/overview/RAK7200_buy.png',
     store: 'https://store.rakwireless.com/products/rak7200-lora-tracker?utm_source=RAK7200WisNodeTrackLite&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisNode/RAK7201/': {
+    label: 'RAK7201 WisNode Button 4K',
+    img: '/assets/images/wisnode/rak7201/datasheet/1.png',
+    store: ''
+  },
   '/Product-Categories/WisNode/RAK7204/': {
     label: 'RAK7204 WisNode Sense Home',
     img: '/assets/images/wisnode/rak7204/quickstart/1.overview/RAK7204_buy.png',

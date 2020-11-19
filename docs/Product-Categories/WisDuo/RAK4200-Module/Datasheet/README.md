@@ -2,7 +2,8 @@
 tags:
 - datasheet
 - wisduo
-prev: ../Overview/
+prev: ../Low-Level-Development/
+next: false
 ---
 # RAK4200 WisDuo LPWAN Module Datasheet
 
@@ -18,9 +19,9 @@ prev: ../Overview/
 
 ### Description
 
-**RAK4200 WisDuo LPWAN Module** includes an STM32L071KB MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumption of 1.5uA in sleep mode and high LoRa output power up to 19dBm max in work mode.
+**RAK4200 WisDuo LPWAN Module** includes an STM32L071KB MCU and an SX1276 LoRa transceiver. It has Ultra-Low Power Consumption of 11.8 uA in sleep mode and high LoRa output power up to 19dBm max in work mode.
 
-The module complies with LoRaWAN 1.0.2 protocols. It also supports LoRa Point to Point communications. The module is suitable for various applications that require long range data acquisition and low power consumption.
+The module complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P Point to Point communications. The module is suitable for various applications that require long range data acquisition and low power consumption.
 
 ### Features
 
@@ -33,7 +34,7 @@ The module complies with LoRaWAN 1.0.2 protocols. It also supports LoRa Point to
 * **Frequency range**: 863–870MHz (EU) / 902–928MHz (US), ISM and SRD systems
 * Low-Power Wireless Systems with 7.8kHz to 500KHz Bandwidth
 * Ultra-Low Power Consumption 11.8 uA in sleep mode
-* **Core**: ARM 32-bit Cortex – M0+ with MPU
+* **Core**: ARM 32-bit Cortex M0+ with MPU
 * Up to 128KB flash memory with ECC
 * 20KB RAM
 * 6KB of data EEPROM with ECC
@@ -107,7 +108,7 @@ The hardware specification is categorized into five parts. It covers the pinouts
 | 17  | SPI_MOSI | I/O | Reserved PA7                                     |
 | 18  | MCU_NRST | I/O | MCU reset (STM32L071KB NRST)                     |
 | 19  | GND      | -   | Ground                                           |
-| 20  | VDD      | -   | DC3V3                                            |
+| 20  | VDD      | -   | DC 3V3                                           |
 
 
 ##### LoRa Transceiver IC Connection to RAK4200 Internal STM32

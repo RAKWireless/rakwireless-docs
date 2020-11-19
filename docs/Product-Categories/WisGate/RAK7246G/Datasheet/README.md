@@ -5,6 +5,7 @@ tags:
   - wisgate
 
 prev: ../Quickstart/
+next: ../Testing-Report/
 ---
 
 # RAK7246G WisGate Developer D0 Gateway Datasheet

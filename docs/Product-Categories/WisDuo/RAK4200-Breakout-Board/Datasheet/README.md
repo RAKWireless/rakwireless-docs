@@ -20,11 +20,11 @@ prev: ../Quickstart/
 
 ### Description
 
-**RAK4200 Breakout Board** is specifically designed to allow easy excess to the pins on the board in order to simplify development and testing. The breakout board utilized is of an Xbee form factor and its main purpose is to allow the RAK4200 stamp module form factor pinout to be transferred to 2.54mm headers.
+**RAK4200 Breakout Board** is specifically designed to allow easy access to the pins on the board in order to simplify development and testing. The breakout board footprint is based on XBee form factor and its main purpose is to allow the RAK4200 stamp module pins to be transferred to 2.54mm headers.
 
-The board itself has the RAK4200 at its core, integrating an **STM32L071 MCU** and an **SX1276 LoRa chip**. It has Ultra-Low Power Consumption of 1.5uA in sleep mode and high LoRa output power (19dBm) in work mode.
+The board itself has the RAK4200 at its core, integrating an **STM32L071KB MCU** and an **SX1276 LoRa transceiver**. It has Ultra-Low Power Consumption of 11.8 uA in sleep mode and high LoRa output power (19dBm) in work mode.
 
-The board complies with LoRaWAN 1.0.2 protocols. It also supports Lora® Point to Point communication.
+The board complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P Point to Point communication.
 
 The low power, long range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors and monitors, etc.).
 
@@ -36,9 +36,9 @@ LoRa module for Smart City, Smart Agriculture, Smart Industry
 - Frequency range: **863–923 MHz** (entire LoRa high band spectrum)
 - Low-Power Wireless Systems with 7.8kHz to 500KHz Bandwidth
 - LoRa Tx power up to **19dBm**
-- Ultra-Low Power Consumption **2.0uA in sleep mode**
+- Ultra-Low Power Consumption ** 11.8 uA in sleep mode**
 - Core: **ARM 32-bit Cortex M0+** with MPU
-- Up to128KB flash memory with ECC
+- Up to 128KB flash memory with ECC
 - 20KB RAM
 - 6KB of data EEPROM with ECC
 - Supply voltage: **2.0 ~ 3.6V**
@@ -66,13 +66,12 @@ The hardware specification is categorized into four parts. It discusses the inte
 
 ##### SWD Programming Interface
 
-When programming via a JLINK tool, it is required to have all of the following 5 pins connected to the JLINK tool:
+When programming via a RAKDAP1 tool, it is required to have all of the following four (4) pins connected to the RAKDAP1 tool:
 
 1. **3V3**
 2. **SWDIO**
 3. **SWCLK**
 4. **GND**
-5. **MCU_NRST**
 
 :::tip Note:
 :pencil: For the aforementioned reason, it is best you leave these exposed for programming purposes and not to remap them as GPIOs.

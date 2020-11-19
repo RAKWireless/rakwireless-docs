@@ -1,0 +1,35 @@
+---
+rak_img: /assets/images/wisnode/rak7201/datasheet/1.png
+rak_desc: The RAK7201 WisNode Button 4K is a remote wireless trigger device. It supports user-defined functions for each key and is based on the LoRaWAN 1.0.2 protocol. Supported LoRaWAN bands are IN865, EU868, AU915, US915, KR920, and AS923.
+rak_grp: [wisnode, button]
+prev: ../../
+next: ../Quickstart/
+---
+
+# RAK7201 WisNode Button 4K
+
+Thank you for choosing **RAK7201 WisNode Button 4K** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+
+- [Quick Start Guide](../Quickstart)
+- [Datasheet](../Datasheet/)
+- [AT Command Manual](../AT-Command-Manual)
+- [Firmware Upgrade Guide](../Firmware-Upgrade-Guide/)
+
+## Product Description
+
+The **RAK7201 WisNode Button 4K** is a remote wireless trigger device. It supports user-defined functions for each key and is based on the LoRaWAN 1.0.2 protocol. Supported LoRaWAN bands are IN865, EU868, AU915, US915, KR920, and AS923.
+
+The Button is suitable for a variety of Smart Home applications: Entertainment system control ,Control of Lights, as a Snooze Button for your Alarms, or a Remote trigger. With long range wireless connectivity, amazing battery life, and four programmable buttons, there are a ton of applications this device can fit into.
+
+## Product Features
+
+- 4 Buttons with LED indicator
+- **Product Size:** 43x57x15 mm
+- **LoRaWAN**® 1.0.2 compatible
+- **Battery:** 350 mAh
+- **Battery working time:** 1 year (Rechargeable)
+- **Power Consumption:** Transmit: 77.4-153* mA, Standby: 4.8 uA
+- **Operating Temperature:** -20º C to 60º C
+- **Working Environment:** Indoor
+
+*transmit current depends on factors such as transmit power, SF and Payload Length
