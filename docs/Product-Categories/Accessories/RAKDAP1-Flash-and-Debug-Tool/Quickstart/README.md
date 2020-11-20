@@ -208,11 +208,11 @@ But before installing, check the list first to know the required package for you
       <td>nrf52840</td>   
     </tr>
     <tr>
-      <td>RAK4260</td>
+      <td>RAK4260 Evaluation Board</td>
       <td>atsaml21j18a</td>   
     </tr>
     <tr>
-      <td>RAK4260</td>
+      <td>Products using RAK4260</td>
       <td>atsaml21j18a</td>   
     </tr>
 </tbody>
@@ -295,7 +295,7 @@ pyocd flash -t \<PACKAGE\> \<FILENAME\>
 ```
 
 - Change **\<PACKAGE\>** to the support package from above list.     
--  hange **\<FILENAME\>** to the filename you want to flash. The file should be in __.hex__ format.
+- Change **\<FILENAME\>** to the filename you want to flash. The file should be in __.hex__ format.
 
 Here is an example to flash the bootloader to a RAK4631 WisBlock Core module: 
 

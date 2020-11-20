@@ -55,6 +55,12 @@ export default {
           case 'IC':
             data.img = '/assets/images/certifications/IC.png'
             break
+          case 'IMDA':
+            data.img = '/assets/images/certifications/IMDA.png'
+            break
+          case 'Ukraine':
+            data.img = '/assets/images/certifications/Ukraine.png'
+            break
           default:
             data.img =
               'https://image.shutterstock.com/image-illustration/white-unknown-document-icon-isolated-600w-1517588975.jpg'

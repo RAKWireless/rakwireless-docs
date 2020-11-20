@@ -9,16 +9,20 @@ tags: RAK811
 
 ## Introduction
 
-The RAK811 module is designed to simplify LoRa peer to peer (P2P) and LoRaWAN communication. This module aids you in dealing with complicated SPI protocol with the LoRa transceivers. Instead, a well-known serial communication interface is provided for sending commands and requesting the internal status of the module. This approach allows a straightforward way to integrate LoRa technology into your projects. 
+The RAK811 module is designed to simplify LoRaWAN and LoRa point to point (P2P) communication. To integrate LoRa technology to your projects, RAK811 implemented easy to use UART communication interface where you can send AT commands. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can even control the available GPIO pins and analog input of RAK811. You can also use any microcontroller with UART interface to control the RAK811 module. 
 
-On top of this serial interface, a set of AT commands are defined, an external microcontroller will be able to control the RAK811 module as a classic AT modem. Through the AT commands, you can set parameters of the LoRaWAN communication, controlling GPIO pins, and analog inputs. 
+The UART serial communication is exposed on the **UART1 port**, through the **pin 6 (TX1)** and **pin 7 (RX1)**. The default parameters of the UART1 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK811 Module Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#rak811-wisduo-lpwan-module-datasheet). You can also see the summary provided in [Appendix IV](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/#appendix-iv-pin-description-of-rak811).
 
-In the RAK811 module, the serial communication is exposed on the **UART1 port**, through the **pin 6 (TX1)** and **pin 7 (RX1)**. The parameters of the UART1 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the “**RAK811 Specification Manual**”. See the summary provided in [Appendix IV](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/#appendix-iv-pin-description-of-rak811).
+The RAK811 module also exposes another serial port through the **pin 25 (TX3)** and **pin 26 (RX3)**. This port is named as **UART3** with default parameters **115200 / 8-N-1**. You can use UART3 as alternative to UART1 when sending AT commands. You can also use UART3 when developing custom firmware via [RUI](../../../../RUI/). 
 
+In the case that the target application only requires one single UART port, then it is recommended to make use of the UART3 to connect to the MCU and reserve the UART1 for future firmware upgrade.
 
-The RAK811 module also exposes another serial port through the **pin 25 (TX3)** and **pin 26 (RX3)**. This port is named as **UART3**. You can use it to connect another MCU or an additional UART peripheral such as a GPS module. The parameters of the UART3 communication are **115200 / 8-N-1**.
+For AT commands example usage, you can check these sections of quick start guide:
 
-In the case that the target application only requires one single UART port, then it is recommended to make use of the UART3 to connect to the MCU and reserved the UART1 for future firmware upgrade.
+- [TTN OTAA/ABP](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#lorawan-join-mode)
+- [ChirpStack OTAA/ABP](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#lorawan-join-mode-2)
+- [LoRa P2P](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#lora-p2p-mode)
+
 
 ### AT Command Syntax
 
@@ -30,7 +34,6 @@ The AT commands can be classified in the following groups:
 
 ```
 at+get_config=<m>:<n>
-
 ```
 
 <br>
@@ -81,7 +84,6 @@ After sending a successful command to the module, the firmware developed, runnin
 |  3  | There is an error when reading or writing the flash memory. |
 |  4  | There is an error when reading or writing through IIC bus. |
 |  5  | There is an error when sending data through the UART port. |
-| 41  | The BLE felt into an invalid state, could not applied the command. |
 | 80  | The LoRa transceiver is busy, could not process a new command. |
 | 81  | LoRa service is unknown. Unknown MAC command received by node. Execute commands that are not supported in the current state, such as sending `at+join` command in P2P mode. |
 | 82  | The LoRa parameters are invalid. |
@@ -216,13 +218,16 @@ This command is used for restarting the device.
 **Example**:
 
 ```
-at+set_config=device:restart\r\n        
+at+set_config=device:restart
 
-UART1 work mode: RUI_UART_NORMAL
+LoRa (R) is a registered trademark or service mark of Semtech Corporation or its affiliates. LoRaWAN (R) is a licensed mark.
 
-Current work_mode:LoRaWAN, join_mode:OTAA, MulticastEnable: false, Class: A
-
-Initialization OK
+RAK811 Version:3.0.0.14.H
+UART1 work mode: RUI_UART_NORMAL, 9600, N81
+UART3 work mode: RUI_UART_NORMAL, 115200, N81
+LoRa work mode: P2P
+LoRa P2P Transfer_mode: Sender
+Initialization OK 
 ```
 
 <br>
@@ -273,7 +278,7 @@ This command is used for obtaining the status of the device.
 ```
 at+get_config=device:status\r\n                         
 OK Board Core:RAK811
-MCU:STM32L151CB_A
+MCU:STM32L151CBU6A
 LoRa chip:SX1276
 ```
 
@@ -282,7 +287,7 @@ LoRa chip:SX1276
 
 1. <b> `at+set_config=device:uart:<index>:<baud_rate>` </b>
 
-This command is used for configuring the baud rate for an UART port.
+This command is used for changing the baud rate of the UART port. There will be no reply after executing this configuration if a different baud rate was set. To make your UART serial communication work again, configure the UART baud rate setting of the Serial Port Tool based on the new baud rate.
 
 | **Operation** |                   **Command**                 |  **Response**  |
 |      ---      |                    --------                   |      ---       |
@@ -295,7 +300,7 @@ This command is used for configuring the baud rate for an UART port.
 <table>
     <tr>
       <td> index </td>
-      <td> UART Number </td>
+      <td> UART Number: 1 or 3. Two UART ports are currently supported starting FW V3.0.0.14.H - UART1 and UART3 </td>
     </tr>
     <tr>
       <td> baud_rate </td>
@@ -311,7 +316,6 @@ This command is used for configuring the baud rate for an UART port.
 
 ```
 at+set_config=device:uart:1:115200\r\n                         
-OK
 ```
 <br>
 
@@ -330,7 +334,7 @@ This command is used for switching the UART operation between the AT configurati
 <table>
     <tr>
       <td> index </td>
-      <td> UART Port Number. Currently, the RAK811 only supports UART1. </td>
+      <td> UART Number: 1 or 3. Two UART ports are currently supported starting FW V3.0.0.14.H - UART1 and UART3 </td>
     </tr>
     <tr>
       <td> mode </td>

@@ -35,7 +35,6 @@ Before going through each and every step in the installation guide of the RAK720
 
 - 1pc - RAK7204 WisNode Sense Home
 - 1pc - LoRa Antenna
-- 1pc - GPS Antenna
 - 1pc - 3500mAh Lithium Battery
 
 ## Product Configuration

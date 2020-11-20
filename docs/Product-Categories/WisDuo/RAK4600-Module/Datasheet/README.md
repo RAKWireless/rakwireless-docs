@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wisduo
+  - RAK4600
 prev: ../Deep-Development/
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600%20CE%20Certification.zip]
@@ -22,9 +23,9 @@ certifications:
 
 ### Description
 
-RAK4600 WisDuo LPWAN Module includes an nRF52832 MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumption of 2.0uA in sleep mode, high LoRa output power up to 20dB max in work mode, and BLE output power up to 4dBm.
+RAK4600 WisDuo LPWAN Module includes an nRF52832 MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumption of 11.2μA in sleep mode, high LoRa output power up to 20dB max in work mode, and BLE output power up to 4dBm.
 
-The module complies with LoRaWAN 1.0.2 protocols. It also supports LoRa Point to Point communications. The Module supports BLE 5.0 in addition to LoRa. Its RF communication capabilities (LoRa+BLE) make it suitable for a variety of applications in the IoT field.
+The module complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P Point to Point communications. The Module supports BLE 5.0 in addition to LoRa. Its RF communication capabilities (LoRa+BLE) make it suitable for a variety of applications in the IoT field.
 
 ### Features
 
@@ -91,13 +92,13 @@ The hardware specifications are categorized into five parts. It discusses the in
 | 1       | GND        |         | Ground                                         |
 | 2       | NC         |         | No Connection                                  |
 | 3       | NC         |         | No Connection                                  |
-| 4       | I2C1_SDA   | I/O     | I2C, General purpose I/O (p0.13)               |
-| 5       | I2C1_SDL   | I/O     | I2C, General purpose I/O (p0.12)               |
+| 4       | I2C1_SDA   | I/O     | I2C, General purpose I/O (P0.13)               |
+| 5       | I2C1_SDL   | I/O     | I2C, General purpose I/O (P0.12)               |
 | 6       | NFC1       | I/O     | General<br>purpose I/O、NFC antenna connection |
 | 7       | NFC2       | I/O     | General<br>purpose I/O、NFC antenna connection |
 | 8       | GND        |         | Ground                                         |
-| 9       |P0.18  | I/O     | General purpose I/O p0.18       |
-| 10      | P0.19  | I/O     | General purpose I/O p0.19      |
+| 9       |P0.18  | I/O     | General purpose I/O P0.18       |
+| 10      | P0.19  | I/O     | General purpose I/O P0.19      |
 | 11      | NC         |         | No Connection                                  |
 | 12      | GND        |         | Ground                                         |
 | 13      | GND        |         | Ground                                         |
@@ -108,10 +109,10 @@ The hardware specifications are categorized into five parts. It discusses the in
 | 18      | GND        |         | Ground                                         |
 | 19      | GND        |         | Ground                                         |
 | 20      | GND        |         | Ground                                         |
-| 21      | Reserved   | I/O     | General<br>purpose I/O (p0.14)                 |
-| 22      | USART1_RX  | I/O     | USART1_RX<br>(General purpose I/O p0.22)       |
-| 23      | USART1_TX  | I/O     | USART1_TX<br>(General purpose I/O p0.23)       |
-| 24      | Reserved   | I/O     | General<br>purpose I/O p0.17                   |
+| 21      | Reserved   | I/O     | General<br>purpose I/O (P0.14)                 |
+| 22      | USART1_RX  | I/O     | USART1_RX<br>(General purpose I/O P0.22)       |
+| 23      | USART1_TX  | I/O     | USART1_TX<br>(General purpose I/O P0.23)       |
+| 24      | Reserved   | I/O     | General<br>purpose I/O P0.17                   |
 | 25      | NC         |         | No Connection                                  |
 | 26      | NC         |         | No Connection                                  |
 | 27      | NC         |         | No Connection                                  |
@@ -198,11 +199,11 @@ Shown in the table provided below is the typical current consumption of the RAK4
 
 ##### Laboratory Testing
 
-The figures below are the average current consumption based on the different test cases.
+The figures below are showing the average current consumption based on the different test cases.
 
 **Equipments**:
 
-- Oscilloscope
+- Power comsumption meter
 - RAK4600 WisDuo LPWAN Module
 
 **LoRa Packet Sending**
@@ -245,7 +246,7 @@ The RAK4600 WisDuo LPWAN Module when in sleep mode consumes **11.2 μA** of curr
 
 #### Mechanical Characteristics
 
-The mechanical dimensions of the RAK4600 WisDuo LPWAN Module is shown in the figures provided in this section.
+The mechanical dimensions of the RAK4600 WisDuo LPWAN Module are shown in the figures provided in this section.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/datasheet/mechanical-characteristics/jmglqkzpggdkglecgcau.jpg"
@@ -292,4 +293,3 @@ Download the latest firmware of the RAK4600 WisDuo LPWAN Module  provided in the
 ## Certification
 
 <rk-certifications :params="$page.frontmatter.certifications" />
-

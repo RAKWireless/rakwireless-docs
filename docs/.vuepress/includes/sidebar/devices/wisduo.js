@@ -51,7 +51,7 @@ module.exports = {
   },     
   {
     title: 'AT Command Manual',
-    path: '/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual',
+    path: '/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/',
     collapsable: false,
     nested: true,
     download: true,
@@ -134,7 +134,7 @@ module.exports = {
   },
   {
     title: 'AT Command Manual',
-    path: '/Product-Categories/WisDuo/RAK4200-Module/AT-Command-Manual',
+    path: '/Product-Categories/WisDuo/RAK4200-Module/AT-Command-Manual/',
     collapsable: false,
     nested: true,
     download: true,
@@ -226,20 +226,24 @@ module.exports = {
     sidebarDepth: 4
   },
   {
-    title: 'LoRaWAN P2P',
-    path: '/Product-Categories/WisDuo/RAK4270-Module/LoRaWAN-P2P/',
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisDuo/RAK4270-Module/Quickstart/',
     collapsable: false,
     nested: true,
     download: true,
     sidebarDepth: 4,
-    children: [
-      ['/Product-Categories/WisDuo/RAK4270-Module/LoRaWAN-P2P/Quickstart/', 'Getting Started'],
-      ['/Product-Categories/WisDuo/RAK4270-Module/LoRaWAN-P2P/AT-Command-Manual/', 'AT Command Manual']
-    ]
   },
   {
-    title: 'Deep Development',
-    path: '/Product-Categories/WisDuo/RAK4270-Module/Deep-Development/',
+    title: 'AT Command Manual',
+    path: '/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Low Level Development',
+    path: '/Product-Categories/WisDuo/RAK4270-Module/Low-Level-Development/',
     collapsable: false,
     nested: true,
     download: true,
@@ -264,11 +268,14 @@ module.exports = {
   },
   {
     title: 'Quick Start Guide',
-    path: '/Product-Categories/WisDuo/RAK4600-Evaluation-Board/Quickstart/',
+    path: '/Product-Categories/WisDuo/RAK4600-Evaluation-Board/Quick-Start-Guide/Quickstart/',
     collapsable: false,
     nested: true,
     download: true,
-    sidebarDepth: 4
+    sidebarDepth: 4,
+    children: [
+      ['/Product-Categories/WisDuo/RAK4600-Evaluation-Board/Quick-Start-Guide/Quickstart/', 'Getting Started']
+    ]
   },
   {
     title: 'AT Command Manual',
@@ -288,20 +295,27 @@ module.exports = {
     sidebarDepth: 4
   },
   {
-    title: 'LoRaWAN/P2P',
-    path: '/Product-Categories/WisDuo/RAK4600-Module/LoRaWAN-P2P/',
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisDuo/RAK4600-Module/Quick-Start-Guide/',
     collapsable: false,
     nested: true,
     download: true,
     sidebarDepth: 4,
     children: [
-      ['/Product-Categories/WisDuo/RAK4600-Module/LoRaWAN-P2P/Quickstart/', 'Getting Started'],
-      ['/Product-Categories/WisDuo/RAK4600-Module/LoRaWAN-P2P/AT-Command-Manual/', 'AT Command Manual']
+      ['/Product-Categories/WisDuo/RAK4600-Module/Quick-Start-Guide/Quickstart/', 'Getting Started']
     ]
   },
   {
-    title: 'Deep Development',
-    path: '/Product-Categories/WisDuo/RAK4600-Module/Deep-Development/',
+    title: 'Low Level Development',
+    path: '/Product-Categories/WisDuo/RAK4600-Module/Low-Level-Development/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'AT Command Manual',
+    path: '/Product-Categories/WisDuo/RAK4600-Module/AT-Command-Manual/',
     collapsable: false,
     nested: true,
     download: true,
@@ -386,11 +400,14 @@ module.exports = {
   },
   {
     title: 'Quick Start Guide',
-    path: '/Product-Categories/WisDuo/RAK4600-Breakout-Board/Quickstart/',
+    path: '/Product-Categories/WisDuo/RAK4600-Breakout-Board/Quick-Start-Guide/Quickstart/',
     collapsable: false,
     nested: true,
     download: true,
-    sidebarDepth: 4
+    sidebarDepth: 4,
+    children: [
+      ['/Product-Categories/WisDuo/RAK4600-Breakout-Board/Quick-Start-Guide/Quickstart/', 'Getting Started']
+    ]
   },
   {
     title: 'Datasheet',

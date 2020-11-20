@@ -8,47 +8,46 @@ tags: RAK811
 
 ## Overview
 
-The product portfolio of RAK LoRa node RAK811 modules. This module comes with a standard version of firmware that allows you to integrate quickly these modules in their solutions for LoRaWAN or LoRa P2P communication through the AT commands interface.
+RAK811 module comes with a standard version of firmware that allows you to configure its functionality via AT commands. This simplicity helps you develop LoRa(P2P) and LoRaWAN projects quickly. 
 
-Further customization of the firmware can be done through the RUI Online compiler. At this layer, the customized firmware interface with the hardware through the RUI Core abstraction layer. In RAK, it is called the secondary firmware development/customization.  
+Further customization of the firmware can be done through the [RUI (RAKwireless Unified Interface) Online compiler](/RUI/). RAK's LoRaWAN node modules support not only out-of-the-box integration via AT commands, but it also allows you to customize RAK811 firmware and access other functionalities of the internal MCU using RUI API. More so, you can adapt and extend the logic in the firmware to meet your requirements.
 
-Additionally, RAK offers a third alternative for advanced customers who need to have deeper integration of their solutions with these modules. In this alternative, you could develop their own version of firmware that runs inside of the RAK modules.
+Additionally, RAK offers a third alternative for advanced customers who need to have deeper integration of their solutions with these modules. In this alternative, you could develop your own version of STM32 firmware that runs inside of the RAK811 module. 
 
 
-## How to Implement your App on RAK Module
+## How to Implement Your Own Firmware on RAK811 Module
 
 ### Schematic
 
-
-One of the essential aspects that allow customers to develop their own version of firmware is the module’s hardware schematic. This allows the customers to understand the module’s pinout, connections between the inner MCU and the LoRa transceiver.
+One of the essential aspects that allow customers to develop their own version of firmware is the [RAK811 Hardware Schematic](https://downloads.rakwireless.com/LoRa/RAK811/Hardware_Specification/). This allows the customers to understand the module’s pinout and the connections between the internal STM32 MCU and the LoRa transceiver. Other important details can be found on [RAK811 Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/).
 
 :::tip 📝 NOTE:
 
-There are two versions of the RAK811 module. One for the high-frequency bands (i.e. 915MHz, 866 MHz) and one for the low-frequency bands (i.e.433 MHz). High and low-frequency modules are different, pay attention to distinguish.
+There are two versions of the RAK811 module: the high-frequency bands RAK811(H) used on EU433 and CN470, and the low-frequency bands RAK811(L) used on EU868, US915, AU915, KR920, AS923, and IN865. These two modules have few differences in their schematic diagram that you should be aware of when you develop your own firmware. 
 
 :::
 
 ### Porting Lora Protocol Stack
 
-When implementing the LoRa protocol stack, special attention must be paid in the SPI connections, since the LoRa transceivers are controlled by the MCU through an SPI interface. Hence, the following are the important pins: **SPI1_MISO, SPI1_MOSI, SPI_NSS, SPI_CLK**. Additionally, the DIO, RFI paths are important as well to have a functioning LoRa communication.
+When implementing the LoRa protocol stack, special attention must be given in the SPI connections since the LoRa transceivers are controlled by the MCU through an SPI interface. Hence, the following are the important pins: **SPI1_MISO, SPI1_MOSI, SPI_NSS, SPI_CLK**. 
 
-After that, **Real Time CLock (RTC)** must be properly configured in the MCU to ensure accurate timing of protocol stack during the runtime.
+Additionally, the DIO pins and RF signal paths are significant as well to have functional LoRa communication. Another important thing to consider is the RF switch logic table. The complete details of pin connections can be found on the [RAK811 Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/). 
 
-Finally, the protocol stack code can be added after other pins are configured.
+After that, the **Real-Time Clock (RTC)** must be properly configured in the MCU to ensure accurate timing of protocol stack during the runtime. Finally, the protocol stack code can be added after configuring the other pins.
 
 ### Application
 
 Once the porting of the protocol stack is ready, you can focus on the development of their applications. There are two options you can choose with: 
 
-&nbsp;&nbsp;&nbsp;&nbsp;a. Do not use the original bootloader that comes in RAK modules from the factory. In this case, you must provide your own version of the bootloader. 
+&nbsp;&nbsp;&nbsp;&nbsp;a. Develop your own bootloader. 
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;b. Use RAK bootloader and the upgrade the custom firmware by using [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/).
 
-If you want to fully develop your own, you can refer to the schematic diagram and the datasheet of the MCU to implement the code. If you want to use RAK bootloader, continue reading the next section.
+If you want to fully develop your own, you can refer to the schematic diagram and the datasheet of the MCU to implement the code. But if you want to use RAK bootloader, continue reading the next section.
 
 ### Bootloader
 
-In any MCU, after the power is connected, the System bootloader is on a charge to bootstrap all the necessary to set up the Interrupt Vector table, initialize variables, and jump to the address of the main() symbol.
+After the power is connected, the system bootloader will set up the Interrupt Vector table, initialize variables, and jump to the address of the main() symbol.
 
 Figure 1 below shows the usual memory map of an ARM Cortex M3 MCU, which is the architecture of the MCU of the RAK811.
 
@@ -60,12 +59,12 @@ Figure 1 below shows the usual memory map of an ARM Cortex M3 MCU, which is the 
 
 The flash section is between the 0x0800 0000 and 0x080X 0000. X depends on the different models of MCU.
 
-The RAK’s bootloader is stored in the internal flash section and has a size of 12K, located between 0x0800 0000 to 0x0800 2FFF. Its primary function is to write a new version of firmware received from the serial port into the flash memory section. The bootloader uses the Ymodem protocol and supervise internally the exceptions in the upgrade process. When the upgrade process is interrupted and power on again, the bootloader will detect abnormal events and can also upgrade again.
+The RAK bootloader is stored in the internal flash section and has a size of 12K, located between 0x0800 0000 to 0x0800 2FFF. Its primary function is to write a new version of firmware received from the serial port into the flash memory section. The bootloader uses the Ymodem protocol and supervises all possible exceptions internally during the upgrade process. When the upgrade process is interrupted, the bootloader will detect abnormal events, and the FW upgrade will fail. You can perform the FW upgrade again using the bootloader after recycling the power.
 
-The RAK811’s bootloader uses the segment the flash memory between 0x0808 0F00 and 0x0808 0FFF to store its parameters. 
-In the bootloader parameter storage area, 256 bytes are planned, but only two words are used to store the jump flag and upgrade the status flag.
+The RAK811 bootloader uses flash memory segments between 0x0808 0F00 and 0x0808 0FFF to store its parameters. 
+In the bootloader parameter storage area, 256&nbsp;bytes are reserved for bootloading process, but only two words are used to store the jump flag and upgrade the status flag.
 
-Finally, the serial port to communicate with the RAK’s bootloader in these modules is the UART1 (pin PA9, pin PA10). The parameters of the UART communication are the 115200 / 8-N-1, which need to be properly configured in the RAK firmware upgrade tool. 
+Finally, the serial port to communicate with the RAK bootloader in these modules is the UART1 (pin PA9, pin PA10). The parameters of the UART communication are the 115200 / 8-N-1, which need to be configured properly in the RAK firmware upgrade tool. 
 
 ### Application Requirements
 
@@ -77,9 +76,7 @@ In the linker, the script must be updated accordingly. For example, in case you 
 
 FLASH (rx): ORIGIN = 0x8003000, LENGTH = 116K
 
-The customer’s application firmware should implement as minimum one AT command: "at +boot\r\n". The function of this command is to jump from the application state into the bootloader state in preparation for the further application firmware upgrade. The logic of this command is the following:
-
-Your application firmware should implement as a minimum one AT command: <b>`at +boot\r\n` </b>. The function of this command is to jump from the application state into the bootloader state in preparation for the further application firmware upgrade. The logic of this command is the following:
+Your application firmware should implement as a minimum one AT command: <b>`at+boot\r\n`</b>. The function of this command is to jump from the application state into the bootloader state in preparation for the further application firmware upgrade. The logic of this command are the following:
 
 
 1. For RAK811, write the value **0x00000000** into the address **0x0808 0F00**. 

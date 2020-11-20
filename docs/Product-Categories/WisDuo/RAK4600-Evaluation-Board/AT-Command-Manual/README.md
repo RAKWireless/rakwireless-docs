@@ -1,3 +1,5 @@
+<rk-redirect to="/Product-Categories/WisDuo/RAK4600-Module/AT-Command-Manual/"/>
+<!--
 ---
 prev: ../Quickstart/
 next: false
@@ -34,4 +36,6 @@ The purpose of this document is to demonstrate on how to configure the RAK4600 E
 | `at+set_config=lora:dr:X `| Set the DR of the Node. <br>**• X** -the number of DR. Generally, the value of X can be 0~5. More details, please check the LoRaWAN 1.0.2 specification. | 
 | `at+get_config=lora:status` | It will return all of the current information of LoRa, except LoRa channel. | 
 | `at+get_config=lora:channel` | It will return the state of all LoRa channels, then you can see which channel is closed and which channel is open very clearly. | 
-| `at+set_config=ble:work_mode:X:Y` | Set the work mode for BLE. <br>**• X** - 0: BLE peripheral mode, 1: BLE central mode, 2: Beacon scan mode <br>**• Y** - 0: normal range, 1: BLE long range More information about BLE Connection Modes [here](/Product-Categories/WisDuo/RAK4600-Evaluation-Board/Quickstart/#bluetooth-connection-modes)| 
+| `at+set_config=ble:work_mode:X:Y` | Set the work mode for BLE. <br>**• X** - 0: BLE peripheral mode, 1: BLE central mode, 2: Beacon scan mode <br>**• Y** - 0: normal range, 1: BLE long range More information about BLE Connection Modes [here](/Product-Categories/WisDuo/RAK4600-Evaluation-Board/Quickstart/#bluetooth-connection-modes)|
+
+-->

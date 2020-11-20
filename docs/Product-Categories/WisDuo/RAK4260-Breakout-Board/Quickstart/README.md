@@ -34,7 +34,7 @@ Before going through each step in the installation guide of the RAK4260 Breakout
 
 #### Software Tools
 
-- [Atmel Studio](https://www.microchip.com/mplab/avr-support/atmel-studio-7)
+- [Microchip Studio](https://www.microchip.com/mplab/microchip-studio)
 - [RAK Serial Tool](https://downloads.rakwireless.com/LoRa/Tools/)
 - [CH340 Drivers](https://www.driverscape.com/download/usb-serial-ch340)
 - [The Things Network](https://account.thethingsnetwork.org/register) account
@@ -190,6 +190,7 @@ Populate the **Device ID** and **Device EUI** (generate a random one by pressing
 
 In the Device Overview, there are two options for the **Activation Method**: **OTAA** and **ABP**. Take note that the default option is **OTAA** as shown above.
 
+
 #### OTAA Mode
 
 **OTAA** stands for **Over The Air Activation**. We will not delve into details, however the most important thing from practical perspective is that a device needs to have the 3 parameters (**Device EUI**, **Application EUI**, and **App Key**) we already explained in brief in the previous section, set correctly in order for the LoRa Server to allow it to access the network.
@@ -244,7 +245,7 @@ We need to execute these steps in order for our device to connect with TTN, basi
   caption="Device configuration file (OTAA parameters)"
 />
 
-After replacing the default values with the one for the device you registered with TTN, you can proceed to compile the project. There is no real need to edit anything else in order to compile a firmware that will allow you to connect to the TTN network.
+- After replacing the default values with the one for the device you registered with TTN, you can proceed to compile the project. There is no real need to edit anything else in order to compile a firmware that will allow you to connect to the TTN network.
 
 ###### Compile the Code
 
@@ -256,7 +257,7 @@ After replacing the default values with the one for the device you registered wi
   caption="Compiling the code"
 />
 
-- The Output should have no errors same as shown below.
+- The Output should have no errors as shown in Figure 20.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/successful-compiling-of-the-code.png"
@@ -278,7 +279,7 @@ Once compiled, you can find the output file in the “**Debug**” folder of the
 
 ###### Flash the Firmware using RAKDAP1
 
-Refer to <a href="../../../../../Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool/" target="_blank">RAKDAP1 Flash and Debug Tool</a>.
+Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool).
 
 ##### Connecting to TTN
 
@@ -286,7 +287,7 @@ Refer to <a href="../../../../../Product-Categories/Accessories/RAKDAP1-Flash-an
 
 ###### Regional Band and Join Network Setup
 
-Upon opening the RAK Serial Port Tool, it should display the same details as shown in Figure 26, provided it has been less than 5 seconds since you powered the board. The firmware is set to work in such a way that 5 seconds after powering the board, it initializes with the default settings.
+Upon opening the RAK Serial Port Tool, it should display the same details as shown in Figure 22, provided it has been less than 5 seconds since you powered the board. The firmware is set to work in such a way that 5 seconds after powering the board it initializes with the default settings.
 
 :::tip 📝 NOTE
 In our example this would be the EU868 for the region. We are going to show how to change the default region and how to connect with the network.
@@ -298,13 +299,13 @@ In our example this would be the EU868 for the region. We are going to show how 
   caption="Start up default output"
 />
 
-- After the aforementioned 5-second elapse, the current configurations (**Class A, OTAA, Unconfirmed LoRa Frames, Fport - 1**) will be reported .
+- After the aforementioned 5-second elapse, the current configurations (**Class A, OTAA, Unconfirmed LoRa Frames, Fport - 1**) will be reported.
 
 :::tip 📝 NOTE
 These settings are not adjustable at this stage and if you want to change them you need to start over at the stage where we modify the firmware files before compiling it.
 :::
 
-- If you use Figure 27 as a reference, you will see there is a list of four (4) options to choose from. Go to the “**Main Menu**” by sending a 4.
+- If you use Figure 23 as a reference, you will see there is a list of four (4) options to choose from. Go to the “**Main Menu**” by sending a 4.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/configuration-menu.png"
@@ -320,7 +321,7 @@ These settings are not adjustable at this stage and if you want to change them y
   caption="Band selection menu"
 />
 
-- After you have selected the band, the device will automatically try to join the LoRaWAN network using the **Device EUI, Application EUI and Application Key** set in the firmware configuration file. These are also reported in the window as shown in Figure 29.
+- After you have selected the band, the device will automatically try to join to the LoRaWAN network using the **Device EUI, Application EUI and Application Key** set in the firmware configuration file. These are also reported in Figure 25.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/network-join-parameters-set.png"
@@ -347,7 +348,7 @@ These settings are not adjustable at this stage and if you want to change them y
 />
 
 :::tip 📝 NOTE
-The firmware uploaded into the RAK4260 Breakout Board is just an example. Thus the data sent are just dummy temperature readings (the original Microchip code was for a board with an actual temperature sensor). It will be reported as output together with whether the transmission was successful as shown in Figure 32.
+The firmware uploaded into the RAK4260 Breakout Board is just an example. Thus the data sent are just dummy temperature readings (the original Microchip code was for a board with an actual temperature sensor). It will be reported as output together with whether the transmission was successful as shown in Figure 28.
 :::
 
 <rk-img

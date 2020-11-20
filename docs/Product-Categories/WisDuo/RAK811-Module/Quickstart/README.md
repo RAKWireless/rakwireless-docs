@@ -6,6 +6,15 @@ tags: RAK811
 
 # Quick Start Guide
 
+This guide covers the following topics:
+
+- [TheThingsNetwork Guide](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#connecting-to-the-things-network-ttn) - Creating application and registering OTAA and ABP device on TTN.
+- [RAK811 LoRaWAN AT commands for TTN](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#lorawan-join-mode) - Examples for both OTAA and ABP.
+- [Chirpstack Guide](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#connecting-with-chirpstack) - Creating application and registering OTAA and ABP device on Chirpstack.
+- [RAK811 LoRaWAN AT commands for Chirpstack](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#lorawan-join-mode-2) - Examples for both OTAA and ABP .
+- [LoRa P2P](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#lora-p2p-mode) - Peer to peer communication between two RAK811 modules.
+- [Updating RAK811 FW](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#upgrading-the-firmware) - Procedures on how to update RAK811 module firmware.
+
 ## Prerequisites
 
 ### What do you need?
@@ -41,11 +50,9 @@ Before going through the step in the installation guide of the RAK811 WisDuo LPW
 
 ### Interfacing with RAK811
 
-During the configuration of the module through the AT commands, it is possible to read the console outputs. You can connect to the console of the RAK811 module: through the UART interface. 
+RAK811 module can be configured using AT commands via UART interface. You need a USB to UART TTL adapter to connect the RAK811 to PC's USB port and a serial terminal tool. It is highly recommended to use RAK Serial Port Tool so you can easily send AT commands and view the replies from the console output.
 
 #### Connect to the RAK811
-
-In this document, a RAK811 module is used as an example. Use a USB to UART TTL adapter to connect to the module.
 
 1. Connect the RAK811 to the serial port of a general-purpose computer (e.g.: USB port) using a USB to UART TTL adapter, as shown in Figure 1.
 
@@ -952,12 +959,12 @@ at+set_config=lorap2p:XXX:Y:Z:A:B:C
 
 For this example, the LoRa parameters are the following:
 
-- Link frequency: **869525000 Hz**
+- Link frequency: **869525000&nbsp;Hz**
 - Spreading factor: **7**
-- Bandwidth: **125 kHz**
+- Bandwidth: **125&nbsp;kHz**
 - Coding Rate: **4/5**
 - Preamble Length: **5**
-- Power: **5 dBm**
+- Power: **5&nbsp;dBm**
 
 :::tip 📝 NOTE:
 

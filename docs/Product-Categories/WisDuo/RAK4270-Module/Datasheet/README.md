@@ -2,7 +2,7 @@
 tags:
 - datasheet
 - wisduo
-prev: ../Overview/
+prev: ../Low-Level-Development/
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/CE%20Certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/FCC%20Certification.zip]
@@ -19,7 +19,7 @@ The RAK4270 LoRa Module includes an **STM32L071 MCU** and an **SX1262** LoRa chi
 
 The module complies with the LoRaWAN 1.0.2 protocol, so it can be used for implementing LoRa networks or Lora point to point communications. The module is suitable for various applications that require long-range data acquisition and low power consumption, such as smart meters, supply chain and logistics tracking, agricultural sensors, and smart cities.
 
-This module is expected to be controlled by an external controller through its UART interface by sending a set of AT commands. These AT commands control not only the state of this module but also set the LoRaWan communication parameters and payloads (See [RAK AT Command Manual](/Product-Categories/WisDuo/RAK4270-Module/LoRaWAN-P2P/AT-Command-Manual/#rak4270-at-command-manual)).
+This module is expected to be controlled by an external controller through its UART interface by sending a set of AT commands. These AT commands control not only the state of this module but also set the LoRaWan communication parameters and payloads (See [RAK AT Command Manual](/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/)).
 
 
 ### Product Features

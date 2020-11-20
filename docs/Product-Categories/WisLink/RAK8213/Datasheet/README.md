@@ -26,14 +26,13 @@ Rich Internet protocol, industry-standard interfaces (USB/UART/I2C/Status indica
 
 ### Features
 
-- **LTE Cat. M1/Cat.NB1/EGPRS module** with Mini PCIe form factor, optimized for M2M and IoT applications.
-- Ultra-low power consumption.
-- USB Drivers and support 2.0 high speed interface.
-- Quectel Enhanced AT commands.
-- Feature refinements: supports **DFOTA, VoLTE**.
-- Easy migration from **Quectel GSM/GPRS, UMTS/HSPA and LTE modules**.
-- Robust mounting and interfaces.
-- PCM interface available for VOLTE.
+- **LTE Cat. M1/Cat.NB1/EGPRS module** with Mini PCIe form factor, optimized for M2M and IoT applications
+- USB Drivers and support 2.0 high speed interface
+- Quectel Enhanced AT commands
+- Feature refinements: supports **DFOTA, VoLTE**
+- Easy migration from **Quectel GSM/GPRS, UMTS/HSPA and LTE modules**
+- Robust mounting and interfaces
+- PCM interface available for VOLTE
 
 ## Specifications
 
@@ -86,14 +85,14 @@ The hardware is categorized into seven parts. It discusses the pinouts and its c
 | **OD**   | Open drain      |
 | **NC**   | No Connection   |
 
-| **Pin #** | **Mini PCIe PIN Rev. 2.0** | **RAK8213 PIN**   | **Type** | **Description**                                     | **Remarks**                                                                                                                                                                                                                                                                                                                                               |
-| --------- | -------------------------- | ----------------- | -------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1         | WAKE#                      | PI_PWRKEY         | DI       | Turn the module on/off                              | - 3.3V power domain.<br>- When RAK8213 is in power off mode, it can be turned on to normal mode by driving the PI_PWRKEY pin to a high level for at least 500ms.<br>- When RAK8213 is in normal mode, driving the PI_PWRKEY pin to a high level voltage for at least 650ms, the module will execute power-down procedure after the PI_PWRKEY is released. |
-|           |                            | J6                |          | Turn on/off the Module Manual Key                   | - When RAK8213 is in power off mode, it can be turned on to normal mode by pushing J6 for at least 500ms.<br>- When RAK8213 is in normal mode, it can be turned to power off mode by pushing J6 for at least 650ms, the module will execute power-down procedure after the J6 is released. If unused, just ignore it.                                     |
-| 2         | 3.3Vaux                    | 3V3               | PI       | 3.3V DC supply                                      |                                                                                                                                                                                                                                                                                                                                                           |
-| 3         | COEX1                      | VBUS_CTRL         | DO       | USB detection control                               | - 3.3V power domain.<br>- High level: Enable USB detection<br>- Low level: Disable USB detection                                                                                                                                                                                                                                                          |
-| 4         | GND                        | GND               | -        | Ground                                              |                                                                                                                                                                                                                                                                                                                                                           |
-| 5         | COEX2                      | GNSS_PWR_CTRL     | DO       | Active GNSS antenna power supply control            | - 3.3V power domain.<br>- High level: Enable power supply(3.3V)<br>- Low level: Disable power supply                                                                                                                                                                                                                                                      |
+| **Pin #** | **Mini PCIe PIN Rev. 2.0** | **RAK8213 PIN**   | **Type** | **Description**    | **Remarks**   |
+| --------- | -------------------------- | ----------------- | -------- | ------------------ | ------------- |
+| 1         | WAKE#                      | PI_PWRKEY         | DI       | Turn the module on/off    | - 3.3V power domain.<br>- When RAK8213 is in power off mode, it can be turned on to normal mode by driving the PI_PWRKEY pin to a high level for at least 500ms.<br>- When RAK821 is in normal mode, driving the PI_PWRKEY pin to a high level voltage for at least 650ms, the module will execute power-down procedure after the PI_PWRKEY is released. <br> - This pin defaults to NC, and the module will be turned on automatically after powered on. |
+|           |                            | J6                |          | Turn on/off the Module Manual Key  | - When RAK8213 is in power off mode, it can be turned on to normal mode by pushing J6 for at least 500ms.<br>- When RAK8213 is in normal mode, it can be turned to power off mode by pushing J6 for at least 650ms, the module will execute power-down procedure after the J6 is released. If unused, just ignore it. <br> - Not used in default. |
+| 2         | 3.3Vaux                    | 3V3               | PI       | 3.3V DC supply          |
+| 3         | COEX1                      | VBUS_CTRL         | DO       | USB detection control   | - 3.3V power domain.<br>- High level: Enable USB detection<br>- Low level: Disable USB detection   <br> - This pin defaults to NC.   |
+| 4         | GND                        | GND               | -        | Ground    |                                               |
+| 5         | COEX2                      | GNSS_PWR_CTRL     | DO       | Active GNSS antenna power supply control            | - 3.3V power domain.<br>- High level: Enable power supply(3.3V)<br>- Low level: Disable power supply <br> - This pin defaults to NC.     |
 | 6         | 1.5V                       | NC                |          | No Connection                                       |                                                                                                                                                                                                                                                                                                                                                           |
 | 7         | CLKREQ#                    | PI_AP_READY       | DI       | Application processor sleep state detection         | - 3.3V power domain. If unused, keep this pin open.                                                                                                                                                                                                                                                                                                       |
 | 8         | UIM_PWR                    | SIM_VDD_PCIE      | PO       | Power supply for (U)SIM card                        | - Either 1.8V or 3.0V is supported by the module automatically.<br>- No Connection by default. Using (U)SIM card connector on board.                                                                                                                                                                                                                      |

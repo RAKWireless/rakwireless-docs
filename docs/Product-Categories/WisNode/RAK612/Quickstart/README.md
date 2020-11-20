@@ -100,7 +100,7 @@ Congratulations! :tada: You have just successfully interfaced your RAK612 WisNod
 In this section, we will be connecting the RAK612 WisNode Button to The Things Network (TTN). If you don't have an account yet, head on to [https://www.thethingsnetwork.org/](https://www.thethingsnetwork.org/) and create one. Once done, Log in to your account and go to the console which can be found here:
 
 <rk-img
-  src="/assets/images/wisnode/rak612/quickstart/ttn/ttn-homepage.jpg"
+  src="/assets/images/wisnode/rak612/quickstart/ttn/ttn-homepage.png"
   width="100%"
   caption="The Things Network Home Page"
 />

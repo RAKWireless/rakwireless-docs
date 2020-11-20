@@ -22,13 +22,13 @@ prev: ../Overview/
 
 ### Description
 
-The **RAK4260 WisDuo LPWAN Module** is based on **Microchip’s ATSAMR34J18B**. It is a SiP device integrating a 32-bit ARM Cortex M0+ MCU with a LoRa Transceiver in a 15 millimeter x 15 millimeter compact package.
+The **RAK4260 WisDuo LPWAN Module** is based on **Microchip’s ATSAMR34J18B**. It is a SiP device integrating a 32-bit ARM Cortex M0+ MCU with a LoRa Transceiver in a 15&nbsp;mm x 15&nbsp;mm compact package.
 
 The SAM R34 chip provides a number of highly configurable peripherals (configurable as I2C/SPI/UART interfaces). There are 12-bit ADC in addition to the aforementioned.
 
 It is a perfect solution for any LoRaWAN end node developer. The integration of the MCU and LoRa Transceiver reduces size and minimizes costs. Having such a compact solution within a single package reduces time to market and allows for rapid development and deployment for a number of scenarios.
 
-RAK4260 is a solution that is cost efficient and flexible that can be deployed in a wide variety of IoT scenarios that require the long range connectivity and great battery life that LoRaWAN provides.
+RAK4260 is a solution that is cost efficient and flexible that can be deployed in a wide variety of IoT scenarios that require the long-range connectivity and great battery life that LoRaWAN provides.
 
 ### Features
 
@@ -37,10 +37,10 @@ RAK4260 is a solution that is cost efficient and flexible that can be deployed i
 - Small form factor: 15 millimeter x 15 millimeter compact package
 - 256KB Flash and 40 KB RAM accommodates application code and stack
 - Most cost and size effective solution, eliminating need for external MCU
-- Fully supported 862 to 1020 MHz frequency coverage
-- Receive Sensitivity down to -148 dBm
-- Maximum Transmit Power up to 20 dBm
-- Low RX current of 17mA (typical)
+- Fully supported 862 to 1020&nbsp;MHz frequency coverage
+- Receive Sensitivity down to -148&nbsp;dBm
+- Maximum Transmit Power up to 20&nbsp;dBm
+- Low RX current of 17&nbsp;mA (typical)
 - LoRa Technology, (G)FSK, (G)MSK
 
 ## Specifications
@@ -51,7 +51,7 @@ The overview section covers the RAK4260 WisDuo LPWAN Module board overview where
 
 #### Board Overview
 
-The Figures 1 and 2 present the different views of the RAK4260 chip labelled for proper reference.
+Figures 1 and 2 present the different views of the RAK4260 chip labelled for proper reference.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/datasheet/rak4260-module-top-view.png"
@@ -82,7 +82,7 @@ The hardware specifications are categorized into five parts. It presents the sch
 
 #### Pin Definition
 
-Provided in this section is the Pinout of the RAK4260 WisDuo LPWAN Module.
+Provided in this section is the pinout of the RAK4260 WisDuo LPWAN Module.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/datasheet/rak4260-board-pinout.jpg"
@@ -133,7 +133,7 @@ Provided in this section is the Pinout of the RAK4260 WisDuo LPWAN Module.
 | 39  |      GND      |  -  |                   Ground                   |
 | 40  |      GND      |  -  |                   Ground                   |
 
-##### RF Switch pin definition
+##### RF Switch Pin Definition
 
 | **BAND_SEL**| **TX/RX** |
 |:-----------:|:---------:|
@@ -141,17 +141,18 @@ Provided in this section is the Pinout of the RAK4260 WisDuo LPWAN Module.
 
 ##### RF Switch control logic table
 
-| **LoRa Mode**| **BAND_SEL** | **TX/RX**   |
-|:-------------|:------------:|:-----------:|
-| Shutdown     | L            |       L     |
-| PA_BOOST     | L            |       H     |
-| RFI_HF (RX)  | H            |       L     |
-| RFO_HF       | H            |       H     |
+| **LoRa Mode**| **BAND_SEL** | **TX/RX**   |**PA28**|
+|:-------------|:------------:|:-----------:|:------:|
+| Shutdown     | L            |       L     |  L     |
+| PA_BOOST     | L            |       H     |  H     |
+| RFI_HF (RX)  | H            |       L     |  H     |
+| RFO_HF       | H            |       H     |  H     |
 
 
 :::tip 📝 NOTE
+PA28 is RF Switch VDD pin<br>
 H  = High level<br>
-L  = Low level
+L  = Low level <br>
 :::
 
 #### RF Requirements
@@ -207,7 +208,7 @@ Shown in the table provided below is the power consumption of the RAK4260 WisDuo
   caption="OUTPUT POWER 14dB"
 />
 
-##### Receive mode
+##### Receive Mode
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/datasheet/receive-mode.jpg"

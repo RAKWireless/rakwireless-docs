@@ -9,6 +9,8 @@ certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_CE_Certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_FCC_Certification.zip]
   - [IC, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_IC_Certification.zip]
+  - [IMDA, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_IMDA_Certification.zip]
+  - [Ukraine, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_Ukraine_Certification.rar]
 
 ---
 

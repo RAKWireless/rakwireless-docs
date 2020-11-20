@@ -19,19 +19,19 @@ Thank you for choosing **RAK811 WisDuo LPWAN Module** in your awesome IoT Projec
 
 * [Quick Start Guide](/Product-Categories/WisDuo/RAK811-Module/Quickstart/)
 * [AT Command Manual](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/)
-* **RAK811 with Open Source Hardware** - The core module of the WisNode is the RAK811 LPWAN Module and its interface supports Arduino Interface which means you can easily connect to any Open Source Hardware. For more info, refer to the [Official WisNode Arduino Library](https://github.com/RAKWireless/WisNode-Arduino-Library).
-* <a href="/RUI/" target="_blank">RUI Secondary Development</a> - RAK811 module supports RUI Secondary Development, refer to <a href="/RUI/" target="_blank">RUI</a> for further details.
-* [Low Level Development](/Product-Categories/WisDuo/RAK811-Module/Low-Level-Development/)
-* [Open Source Framework](https://github.com/RAKWireless/Evaluation_Boards/tree/master/RAK811) - RAK811 module supports Arduino Open Source Framework, refer to [RAKWireless Github](https://github.com/RAKWireless/Evaluation_Boards/tree/master/RAK811) for more details.
+* <a href="/RUI/" target="_blank">RUI Customized Development</a> - RAK811 module supports RUI (RAKwireless Unified Interface) Customized Development.
+* [Low Level Development](/Product-Categories/WisDuo/RAK811-Module/Low-Level-Development/) - RAK811 module supports low level development where you can create customize firmware using the RAK811 hardware. You can either use the RUI(RAK Unified Interface) or develop your own firmware for STM32.
+* [RAK811 for Arduino Hardware](/Product-Categories/WisDuino/) - The core module of WisDuino is the RAK811 LPWAN Module and its interface supports Arduino standard headers. For more info about the Arduino library for RAK811, refer to the [Official RAK811 Arduino Library](https://github.com/RAKWireless/WisNode-Arduino-Library).
+* [Arduino Open Source Framework via STM32 Core](https://github.com/RAKWireless/Evaluation_Boards/tree/master/RAK811) - You can directly program the STM32 inside RAK811 via Arduino platform so you will not need any external MCU.
 * [Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#rak811-wisduo-lpwan-module-datasheet)
 
 ## Product Description
 
 RAK811 Low-Power Long Range LoRa Technology Transceiver module provides an easy to use, small size and low-power solution for long range wireless data applications.
 
-The RAK811 module complies with the latest LoRaWAN Class A & C protocol specifications, it is simple to access LWPA IOT platforms, such Actility etc. It also supports LoRa Point to Point communications (P2P) , this function can help customers implement their own private long range LoRa network fast.
+The RAK811 module complies with Class A & C of LoRaWAN 1.0.2 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point to Point (P2P) communication mode which help customers implement their own customized long range LoRa network quickly.
 
-The RAK811 Module is integrated with Semtech's SX1276 and STM32L which offers user a way communicating with AT Commands through UART Interface. Users will also be able to make their projects turn into reality such as Long Range Sensor data applications, RAK811 also offers a low power feature that is suitable for battery powered applications.
+The RAK811 module is integrated with Semtech’s SX1276 and STM32. Users of RAK811 can configure the mode and operation of the module using AT commands via a UART interface. RAK811 also offers low power features which is very suitable for battery powered applications.
 
 <!-- <rk-btn
   src="../Datasheet/"
@@ -42,21 +42,20 @@ The RAK811 Module is integrated with Semtech's SX1276 and STM32L which offers us
 
 ## Product Features
 
-- LoRaWAN protocol supported, support global license-free ISM band, full
-  certification by region.
-- LoRa Point to Point (P2P) communication
+- Based on **Semtech SX1276**
+- **LoRaWAN 1.0.2** specification compliant
+- **Supported bands**: (EU433, CN470, IN865, EU868, AU915, US915, KR920, AS920 and AS923)
 - LoRaWAN Activation by OTAA/ABP.
-- Easy to use, UART interface, serial port AT command, baud rate and air rate online
-  change supported, simple ASCII command set.
-- Maximum output power 100mW (20dBm), adjustable from 5 to 20dBm.
-- High sensitivity at -148 dBm, enabling extremely long range connectivity.
-- Long range - greater than 15 km.
-- High capacity of up to 1 million nodes.
-- Low power consumption: 11μA on on standby
-- Multi-channel, dual data buffer (256bytes each).
-- LoRa/FSK/GFSK/OOK modulation, bidirectional 2 way communications.
-- Long battery life - over 10 years.
-- LoRa technology is capable of demodulating 20 dB below noise level, significantly
+- LoRa Point to Point (P2P) communication
+- Easy to use AT Command Set via UART interface with configurable baud rate.
+- Maximum output power 100&nbsp;mW (20&nbsp;dBm), adjustable from 5 to 20&nbsp;dBm.
+- High sensitivity at -148&nbsp;dBm, enabling extremely long range connectivity.
+- Long range - greater than 15&nbsp;km with optimized antenna.
+- Low power consumption: 11&nbsp;μA on on standby.
+- Multi-channel, dual data buffer (256&nbsp;bytes each).
+- LoRa/FSK/GFSK/OOK modulation, bidirectional 2&nbsp;way communications.
+- Long battery life for battery powered applications.
+- LoRa technology is capable of demodulating 20&nbsp;dB below noise level, significantly
   improving immunity to the interference when combined with integrated forward error
   correction.
 

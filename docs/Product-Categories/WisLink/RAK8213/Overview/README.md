@@ -34,11 +34,10 @@ Rich Internet protocol, industry-standard interfaces (USB/UART/I2C/Status indica
 
 ## Product Features
 
-- **LTE Cat. M1/Cat.NB1/EGPRS module** with Mini PCIe form factor, optimized for M2M and IoT applications.
-- Ultra-low power consumption.
-- USB Drivers and support 2.0 high speed interface.
-- Quectel Enhanced AT commands.
-- Feature refinements: supports **DFOTA, VoLTE**.
-- Easy migration from **Quectel GSM/GPRS, UMTS/HSPA and LTE modules**.
-- Robust mounting and interfaces.
-- PCM interface available for VOLTE.
+- **LTE Cat. M1/Cat.NB1/EGPRS module** with Mini PCIe form factor, optimized for M2M and IoT applications
+- USB Drivers and support 2.0 high speed interface
+- Quectel Enhanced AT commands
+- Feature refinements: supports **DFOTA, VoLTE**
+- Easy migration from **Quectel GSM/GPRS, UMTS/HSPA and LTE modules**
+- Robust mounting and interfaces
+- PCM interface available for VOLTE

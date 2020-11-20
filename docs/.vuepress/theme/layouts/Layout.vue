@@ -111,6 +111,16 @@ import { Screen } from 'quasar'
 
 import debounce from 'lodash.debounce'
 
+function findPos(obj) {
+    var curtop = 0;
+    if (obj.offsetParent) {
+        do {
+            curtop += obj.offsetTop;
+        } while (obj = obj.offsetParent);
+    return [curtop];
+    }
+}
+
 export default {
   name: 'Layout',
 
@@ -217,6 +227,16 @@ export default {
     // console.log('mounted: ', window.innerHeight, window.innerWidth, min, document.documentElement.style)
     // console.log('sidebaritems: ', this.sidebarItems)
     window.onscroll = this.onPageScroll
+    window.onload = () => {
+      if (window.location.hash) {
+        const el = document.querySelector(window.location.hash)
+        if (el) {
+          setTimeout(() => {
+            window.scroll(0,findPos(el));
+          }, 250)
+        }
+      }
+    }
   },
   updated() {
     this.replaceAllTables()
