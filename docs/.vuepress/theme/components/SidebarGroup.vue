@@ -84,7 +84,7 @@ export default {
       // })
       const xEncoded = encodeURIComponent(`${origin}${pathname}`)
       window.open(
-        `https://dl-docs.rakwireless.com/api/render/?emulateScreenMedia=false&url=${xEncoded}`,
+        `https://dl-docs.rakwireless.com/api/render/?emulateScreenMedia=false&pdf.format=legal&url=${xEncoded}`,
         '_blank'
       )
     }
