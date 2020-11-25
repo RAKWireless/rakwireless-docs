@@ -1,0 +1,52 @@
+# Certification
+
+
+
+The product certification indicates the device has been properly assessed where it meets the qualification criteria and also has passed the performance and quality tests. Hence, the following tables display the various certifications of the RAK products to guarantee these devices are safe, reliable, and high-quality.
+
+
+
+## WisGate
+
+|  Device  | CE | FCC | IC | RCM | RoHS | SRRC | MIC | KCC | TPIT | OFCA | IMDA | ANATEL | Ukraine | IP67 | TEMPERATURE TEST |
+| :------: |:--:|:---:|:--:|:---:|:----:|:----:|:---:|:---:|:----:|:----:|:----:|:------:|:-------:|:----:|:----------------:|
+| <a href="/Product-Categories/WisGate/RAK7240/Overview/" target="_blank"> RAK7240 </a> | [](https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_CE_Certificate.zip) | [](https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_FCC_Certificate.zip)  |   -   |  [](https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240-RCM-Declaration-of-Conformity.pdf)  |  [](https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK-ROHS-ATL202011241747R01-Report.pdf)   |  -   |  -  |  -  |  -  |  -  |  -  | Ongoing | - | - | - |
+| <a href="/Product-Categories/WisGate/RAK7249/Overview/" target="_blank"> RAK7249 </a> | [](https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_RED%28CE%29_Certificate.zip) | [](https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_FCC_Certificate.zip)  |  -  | [](https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249-RCM-Declaration-of-Conformity.pdf) | [](https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249-ROHS-ATL20191105773R01-Report.pdf) |   -   |  -  |   -   |  -   |   -   |  -  |   -   |   -   | [](https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_Enclosure_IP67_Test_Report.pdf) | [](https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_High%26Low-Temperature_Test_Report.pdf) |
+| <a href="/Product-Categories/WisGate/RAK7258/Overview/" target="_blank"> RAK7258 </a> |  [](https://downloads.rakwireless.com/LoRa/Indoor-Gateway-RAK7258/Certification-Report/RAK7258_CE_Certificate.zip)    |  [](https://downloads.rakwireless.com/LoRa/Indoor-Gateway-RAK7258/Certification-Report/RAK7258_FCC_Certificate.zip)   | - | - | - | -| - | - | - | - | - | - | - | - | - |
+| <a href="/Product-Categories/WisGate/RAK7243/Overview/" target="_blank"> RAK7243 </a> |  [](https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Certification-Report/RAK7243_CE_Certificate.zip)   | [](https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Certification-Report/RAK7243_FCC_Certificate.zip) |  -  |  -  | - | - |  -  | - | - | - | - | - | - | - | -  |
+| <a href="/Product-Categories/WisGate/RAK7248/Overview/" target="_blank"> RAK7248 </a>| [](https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_CE_Certification.zip) | [](https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_FCC_Certification.zip)  | [](https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_IC_Certification.zip) | Ongoing  | - | [](https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_SRRC_certification.zip) | - | Ongoing | - | Ongoing | [](https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_IMDA_Certification.zip) | - | [](https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_Ukraine_Certification.rar) |  - |  -  |
+| **RAK7268**  | Ongoing | Ongoing | Ongoing | Ongoing |  -  |  -  |  -  | Ongoing |  -  |  -  | - | Ongoing | - |  -  |  -  |
+| **RAK7268C** | Ongoing | Ongoing | Ongoing |  - |  -  |  -  |  -  |  -  |  -   |  -  | -  |  -  |  -  | -  | - |
+
+## WisDuo
+
+| Device  |  CE  |  FCC  | IC  | RCM |  RoHS  | SRRC |  MIC   | KCC  |  TPIT  | OFCA | IMDA | ANATEL | Ukraine | IP67 | TEMPERATURE TEST |
+| :-----: | :--: | :---: | :-: | :-: | :----: | :--: | :----: | :--: | :----: | :--: | :--: | :----: | :-----: | :--: | :--------------: |
+| <a href="/Product-Categories/WisDuo/RAK4200-Module/Overview/" target="_blank"> RAK4200 </a> | [](https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200H_CE_Certificate.zip)  | [](https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200_FCC_certification.zip)  | - | - | - | - | - | - | - | - | - | - | - | - | - |
+| <a href="/Product-Categories/WisDuo/RAK4260-Module/Overview/" target="_blank"> RAK4260 </a> | [](https://downloads.rakwireless.com/LoRa/RAK4260/Certification-Report/RAK4260H-CE-ATL20191108787-Certificate.pdf) | [](https://downloads.rakwireless.com/LoRa/RAK4260/Certification-Report/RAK4260H-FCC-2AF6B-Certificate.pdf) | - | - | - | - | - | - | - | - | - | - |  - | - | - |
+| <a href="/Product-Categories/WisDuo/RAK4270-Module/Overview/" target="_blank"> RAK4270 </a> | [](https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/CE%20Certification.zip)  |  [](https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/FCC%20Certification.zip)  | - | - | - | - | - | - | - | - | - | - | - | - | - |
+| <a href="/Product-Categories/WisDuo/RAK4600-Module/Overview/" target="_blank"> RAK4600 </a> | [](https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600%20CE%20Certification.zip)  | [](https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600%20FCC%20Certification.zip)  | - | - | - | - | - | - | - | - | - | - | - | - | - |
+| <a href="/Product-Categories/WisDuo/RAK811-Module/Overview/" target="_blank"> RAK811 </a>  | [](https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811%20CE%20Certification.rar) | [](https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811%C2%A0FCC%20Certification.rar) |  -  |  -  | [](https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811%C2%A0ROSH%20Certification.rar) |  -   | [](https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811%C2%A0MIC%20Certification.rar) | [](https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_KCC%C2%A0%28Certificate%29.pdf) | [](https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811%20AS923%20Actility%20TPIT%20Certificate.zip) | - | - | -  | - | - | - |
+
+## WisLink
+
+|  Device  |  CE   |  FCC  |  IC  |  RCM  | RoHS | SRRC | MIC | KCC  | TPIT | OFCA | IMDA | ANATEL | Ukraine | IP67 | TEMPERATURE TEST |
+| :------: | :---: | :---: | :--: | :---: | :--: | :--: | :-: | :--: | :--: | :--: | :--: | :----: | :-----: | :--: | :--------------: |
+| <a href="/Product-Categories/WisLink/RAK2245-Pi-HAT/Overview/" target="_blank"> RAK2245 Pi HAT </a> | [](https://downloads.rakwireless.com/LoRa/RAK2245-Pi-HAT/Certification-Report/RAK2245_Pi_HAT_CE_Certificate.zip)  | [](https://downloads.rakwireless.com/LoRa/RAK2245-Pi-HAT/Certification-Report/RAK2245_Pi_HAT_FCC_Certificate.zip) | - | - | - | - | - | - | - | - | - | - | - | - | - |
+| <a href="/Product-Categories/WisLink/RAK2245-Stamp-Edition/Overview/" target="_blank"> RAK2245 Stamp </a> |  [](https://downloads.rakwireless.com/LoRa/RAK2245/Certification-Report/RAK2245_CE_Certificate.zipm) | [](https://downloads.rakwireless.com/LoRa/RAK2245/Certification-Report/RAK2245_FCC_Certificate.zip) | - | - | - | - | - | - | - | - | - | - | - | - | - |
+| <a href="/Product-Categories/WisLink/RAK2247/Overview/" target="_blank"> RAK2247 </a> |  [](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247_CE_Certificate.zip)  |  [](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247_FCC_Certificate.zip)   | [](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247_IC_certificate%20.zip) | [](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247-RCM-Declaration-of-Conformity.pdf) | - | - | - | [](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247-RCM-Declaration-of-Conformity.pdf) | - | - | - | - | - | - | - |
+| <a href="/Product-Categories/WisLink/RAK2287/Overview/" target="_blank"> RAK2287 </a> | [](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification/RAK2287%20CE%20certification.zip) | [](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification/RAK2287%20FCC%20certification.zip)  |  [](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification/RAK2287%20IC%20certification.zip) | - | - | - | - | [](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification/RAK2287_KCC_Certificate.zip) | - | - | - | - | - | - | - |
+| <a href="/Product-Categories/WisLink/RAK831/Overview/" target="_blank"> RAK831 </a>   | [](https://downloads.rakwireless.com/LoRa/RAK831-LoRa-Gateway/Certification-Report/CE%20Label%20and%20Label%20location_RED.pdf) | - | - | - | - | - | - | -  |  -  | -  | - | - | - | - | - |
+
+## WisNode
+
+| Device |  CE  | FCC | IC  | RCM | RoHS | SRRC | MIC | KCC | TPIT | OFCA | IMDA | ANATEL | Ukraine | IP67 | TEMPERATURE TEST |
+| :----: | :--: | :-: | :-: | :-: | :--: | :--: | :-: | :-: | :--: | :--: | :--: | :----: | :-----: | :--: | :--------------: |
+| <a href="/Product-Categories/WisNode/RAK7431/Overview/" target="_blank"> RAK7431 </a>  | [](https://downloads.rakwireless.com/LoRa/RAK7431/Certification-Report/RAK7431_CE_Certificate.zip) | [](https://downloads.rakwireless.com/LoRa/RAK7431/Certification-Report/RAK7431_FCC_Certificate.zip) |  -  |  -  |  -   |  -   |  -  |  -  |  -   |  -   |  -   |   -    |    -    |  -   |        -         |
+
+## WisBlock
+
+|  Device   |   CE    |   FCC   | IC  | RCM | RoHS | SRRC | MIC | KCC | TPIT | OFCA | IMDA | ANATEL | Ukraine | IP67 | TEMPERATURE TEST |
+| :-------: | :-----: | :-----: | :-: | :-: | :--: | :--: | :-: | :-: | :--: | :--: | :--: | :----: | :-----: | :--: | :--------------: |
+| **RAK5005-O** | Ongoing | Ongoing |  -  |  -  |  -   |  -   |  -  |  -  |  -   |  -   |  -   |   -    |    -    |  -   |        -         |
+|  **RAK4631**  | Ongoing | Ongoing |  -  |  -  |  -   |  -   |  -  |  -  |  -   |  -   |  -   |   -    |    -    |  -   |        -         |

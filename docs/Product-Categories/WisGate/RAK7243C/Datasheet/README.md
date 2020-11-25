@@ -22,7 +22,7 @@ certifications:
 
 The **RAK7243C WisGate Developer D3+ Gateway** is a device that consists of Raspberry Pi 3B+, RAK2245 Pi HAT which includes a GPS module and a Heat Sink for better performance and thermal heat dissipation management, and a RAK2013 Cellular Pi HAT and it’s housing is built with an aluminum casing.
 
-For the build-in RAK2245 Pi HAT, it uses the SX1301 chip from Semtech which built-in LPWAN concentrator IP core is a powerful digital signal processing engine. It is able to receive up to 8 LoRa packets simultaneously sent with different spreading factors on different channels and available in multiple variants so it can be used for internartinal standard bands. This unique capability allows to implement innovative network architectures advantageous over other short range systems. For the build-in RAK2013 Cellular Pi HAT, it supports optional QUECTEL BG96 / EG91 / EG95 which can supports NB-IOT / CAT-M / CAT1 LTE / CAT4 LTE. It follows Raspberry Pi specifications and is easy to mount with Raspberry Pi and RAK2245 Pi HAT module.
+For the build-in RAK2245 Pi HAT, it uses the SX1301 chip from Semtech which built-in LPWAN concentrator IP core is a powerful digital signal processing engine. It is able to receive up to 8 LoRa packets simultaneously sent with different spreading factors on different channels and available in multiple variants so it can be used for international standard bands. This unique capability allows to implement innovative network architectures advantageous over other short range systems. For the build-in RAK2013 Cellular Pi HAT, it supports optional QUECTEL BG96 / EG91 / EG95 which can supports NB-IOT / CAT-M / CAT1 LTE / CAT4 LTE. It follows Raspberry Pi specifications and is easy to mount with Raspberry Pi and RAK2245 Pi HAT module.
 
 Pilot Gateway Pro is ideal for prototyping, proof-of-concept demonstration or for the evaluation. It includes a ready to use gateway OS that can be connected to a LoRaWan® server. Also it is developer friendly and simple even for no-so-techy users to set up LoRaWan® system. It has to be the best value and function for connectivity to address a variety of applications like Smart Grid, Intelligent Farm and other IoT enterprise applications.
 
@@ -243,7 +243,7 @@ The LoRa Antenna with RP-SMA female connector shown in the figure below:
 The antenna's mechanical dimension is shown below:
 
 <rk-img
-  src=/assets/images/wisgate/rak7243c/datasheet/10.lora-antenna-dimensions.png"
+  src="/assets/images/wisgate/rak7243c/datasheet/10.lora-antenna-dimensions.png"
   width="50%"
   caption="LoRa Antenna Dimension in mm"
 />
