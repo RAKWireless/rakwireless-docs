@@ -296,13 +296,13 @@ module.exports = {
   },
   {
     title: 'Quick Start Guide',
-    path: '/Product-Categories/WisDuo/RAK4600-Module/Quick-Start-Guide/',
+    path: '/Product-Categories/WisDuo/RAK4600-Module/Quickstart/',
     collapsable: false,
     nested: true,
     download: true,
     sidebarDepth: 4,
     children: [
-      ['/Product-Categories/WisDuo/RAK4600-Module/Quick-Start-Guide/Quickstart/', 'Getting Started']
+      ['/Product-Categories/WisDuo/RAK4600-Module/Quickstart/', 'Getting Started']
     ]
   },
   {

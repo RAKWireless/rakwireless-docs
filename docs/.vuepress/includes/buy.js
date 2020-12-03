@@ -63,7 +63,7 @@ export default {
   '/Product-Categories/WisNode/RAK7201/': {
     label: 'RAK7201 WisNode Button 4K',
     img: '/assets/images/wisnode/rak7201/datasheet/1.png',
-    store: ''
+    store: 'https://store.rakwireless.com'
   },
   '/Product-Categories/WisNode/RAK7204/': {
     label: 'RAK7204 WisNode Sense Home',

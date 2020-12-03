@@ -4,6 +4,11 @@ tags:
   - wislink
 prev: ../Quickstart/
 next: false
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification/RAK2287%20CE%20certification.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification/RAK2287%20FCC%20certification.zip]
+  - [IC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification/RAK2287%20IC%20certification.zip]
+  - [KCC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification/RAK2287_KCC_Certificate.zip]
 ---
 
 # RAK2287 WisLink LPWAN Concentrator Datasheet
@@ -314,3 +319,7 @@ The table below shows the board order configurations of the RAK2287 WisLink LPWA
 | RAK2287-SY | √               |                 |                      | √                   | √             |               |
 | RAK2287-MY | √               |                 |                      |                     | √             |               |
 | RAK2287-AY | √               | √               | √                    | √                   |               | √             |
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

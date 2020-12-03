@@ -18,26 +18,26 @@ Thank you for choosing **RAK4270 WisDuo LPWAN Module** in your awesome IoT Proje
 
 ## Product Description
 
-The RAK4270 LoRa Module includes an **STM32L071 MCU** and an **SX1262** LoRa chip, which supports 8 spreading factors (SF5 ~ SF12) and signal bandwidth that can be adjusted between 7.8 kHz to 500 kHz. It has an ultra-low power consumption of 1.5uA in Sleep Mode, but during the Transmit mode, it can reach the maximum output power of 22 dBm. As a receiver, it can achieve a sensitivity of -138 dBm.
+The RAK4270 LoRa Module includes an **STM32L071 MCU** and an **SX1262** LoRa chip, which supports 8 spreading factors (SF5 ~ SF12) and signal bandwidth that can be adjusted between 7.8&nbsp;kHz to 500&nbsp;kHz. It has an ultra-low power consumption of 1.08&nbsp;uA in Sleep Mode, but during the Transmit mode, it can reach the maximum output power of 22&nbsp;dBm. As a receiver, it can achieve a sensitivity of -148&nbsp;dBm.
 
-The module complies with the LoRaWAN 1.0.2 protocol, so it can be used for implementing LoRa networks or Lora point to point communications. The module is suitable for various applications that require long-range data acquisition and low power consumption, such as smart meters, supply chain and logistics tracking, agricultural sensors, and smart cities.
+The module complies with Class A and C of LoRaWAN 1.0.2 specifications, so it can be used for implementing LoRaWAN or Lora point to point (P2P) communications. The module is suitable for various applications that require long-range data acquisition and low power consumption, such as smart meters, supply chain and logistics tracking, agricultural sensors, and smart cities.
 
-This module is expected to be controlled by an external controller through its UART interface by sending a set of AT commands. These AT commands control not only the state of this module but also set the LoRaWan communication parameters and payloads. (See [RAK AT Command Manual](/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/).)
+You can configure the mode and operation of the RAK4270 module using [RAK4270 AT Commands](/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/) via a UART interface. Also, it offers low power features which is very suitable for battery powered applications.
 
 ## Features
 
 - LoRa module is suitable for applications in Smart City, Smart Agriculture, Smart Industry
-- Compact form factor: **15 x 15.5 x 2.5 mm** (LxWxH)
+- Compact form factor: **15 x 15.5 x 2.5&nbsp;mm** (LxWxH)
 - 20 pin stamp pad for PCB SMT board-to-board soldering
 - I/O ports: **UART/I2C/GPIO**
 - AT commands control interface
-- Temperature range: **-40°C to +85°C**
-- Supply voltage: **2.0 to 3.6V**
-- Frequency Bands 433MHz(EU)/ 470-510MHz(CN)/ 865-867MHz(IN)/ 863–870MHz (EU)/ 902–928MHz(US) / 915-928MHz(AU)/ 920-923MHz(KR) / 920-923MHz(AS)
-- LoRa bandwidth range of 7.8 kHz to 500 kHz, SF5 to SF12, BR=0.018~62.5 kb/s
-- Ultra-low power Consumption: **1.5uA in sleep mode**
+- Temperature range: **-30&nbsp;°C to +85&nbsp;°C**
+- Supply voltage: **2.0 to 3.6&nbsp;V**
+- **Supported bands**: (EU433, CN470, IN865, EU868, AU915, US915, KR920, AS920 and AS923)
+- LoRa bandwidth range of 7.8&nbsp;kHz to&nbsp;500 kHz, SF5 to SF12, BR=0.018~62.5&nbsp;kb/s
+- Ultra-low power Consumption: **1.08&nbsp;uA in sleep mode at 2.0&nbsp;V operation**
 - Arm Cortex-M0+ 32-bit RISC core
-- 128 kbytes flash memory with ECC
-- 20 kbytes RAM
-- 6 kbytes of data EEPROM with ECC
+- 128&nbsp;kbytes flash memory with ECC
+- 20&nbsp;kbytes RAM
+- 6&nbsp;kbytes of data EEPROM with ECC
 - Compliance with TBC

@@ -1,10 +1,15 @@
 ---
 tags:
-- datasheet
-- wisduo
+  - datasheet
+  - wisduo
 prev: ../Low-Level-Development/
 next: false
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200H_CE_Certificate.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200_FCC_certification.zip]
+  
 ---
+
 # RAK4200 WisDuo LPWAN Module Datasheet
 
 <!--
@@ -25,20 +30,19 @@ The module complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P 
 
 ### Features
 
-* LoRa module for Smart City, Smart Agriculture, Smart Industry
-* **Compact Form Factor**: 15 x 15.5 x 2.5 mm
-* 20 Pin Stamp Pad for PCB SMT mounting
-* **I/O ports**: UART/I2C/GPIO
-* **Temperature range**: -40°C to +85°C
-* **Supply voltage**: 2.0 ~ 3.6V
-* **Frequency range**: 863–870MHz (EU) / 902–928MHz (US), ISM and SRD systems
-* Low-Power Wireless Systems with 7.8kHz to 500KHz Bandwidth
-* Ultra-Low Power Consumption 11.8 uA in sleep mode
-* **Core**: ARM 32-bit Cortex M0+ with MPU
-* Up to 128KB flash memory with ECC
-* 20KB RAM
-* 6KB of data EEPROM with ECC
-
+- LoRa module for Smart City, Smart Agriculture, Smart Industry
+- **Compact Form Factor**: 15 x 15.5 x 2.5 mm
+- 20 Pin Stamp Pad for PCB SMT mounting
+- **I/O ports**: UART/I2C/GPIO
+- **Temperature range**: -40°C to +85°C
+- **Supply voltage**: 2.0 ~ 3.6V
+- **Frequency range**: 863–870MHz (EU) / 902–928MHz (US), ISM and SRD systems
+- Low-Power Wireless Systems with 7.8kHz to 500KHz Bandwidth
+- Ultra-Low Power Consumption 11.8 uA in sleep mode
+- **Core**: ARM 32-bit Cortex M0+ with MPU
+- Up to 128KB flash memory with ECC
+- 20KB RAM
+- 6KB of data EEPROM with ECC
 
 ## Specifications
 
@@ -46,20 +50,17 @@ The module complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P 
 
 The overview covers the RAK4200 WisDuo™ board overview where the front and back views are presented. It includes also the block diagram that shows the external interfaces of the RAK4200 WisDuo™.
 
-
 #### Board Overview
 
 <!---The figure below shows the top view of the RAK4200 WisDuo LPWAN Module. The dimensions of the Module are 15 x 15.5 x 2.5 mm.
 (Mechanical Characteristics)
 --->
 
-
 <rk-img
   src="/assets/images/wisduo/rak4200-module/datasheet/back_view.png"
   width="60%"
   caption="RAK4200 WisDuo LPWAN Module Front and Back View"
 />
-
 
 #### Block Diagram
 
@@ -73,8 +74,7 @@ The overview covers the RAK4200 WisDuo™ board overview where the front and bac
 
 ### Hardware
 
-The hardware specification is categorized into five parts. It covers the pinouts and the corresponding functions and diagrams of the board. It also presents the parameters and its standard values in terms of electrical and mechanical. 
-
+The hardware specification is categorized into five parts. It covers the pinouts and the corresponding functions and diagrams of the board. It also presents the parameters and its standard values in terms of electrical and mechanical.
 
 #### Pin Definition
 
@@ -85,7 +85,6 @@ The hardware specification is categorized into five parts. It covers the pinouts
   width="65%"
   caption="Pinout for RAK4200"
 />
-
 
 | Pin | Name     | I/O | Description                                      |
 | --- | -------- | --- | ------------------------------------------------ |
@@ -110,32 +109,31 @@ The hardware specification is categorized into five parts. It covers the pinouts
 | 19  | GND      | -   | Ground                                           |
 | 20  | VDD      | -   | DC 3V3                                           |
 
-
 ##### LoRa Transceiver IC Connection to RAK4200 Internal STM32
 
-| **LoRa IC Pin** | **STM32 GPIO**  |
-|:------------:|:------------------:| 
-| DIO0         | PB0                | 
-| DIO1         | PB1                | 
-| DIO2         | PB5                | 
-| DIO3         | PB4                | 
-| SPI1_CLK     | PA5                | 
-| SPI1_MISO    | PA6                | 
-| SPI1_MOSI    | PA7                | 
-| SPI1_NSS     | PA4                |
-| NRESET       | PA0                |
-| VCTL1        | PA11               |
-| VCTL2        | PA8                |
+| **LoRa IC Pin** | **STM32 GPIO** |
+| :-------------: | :------------: |
+|      DIO0       |      PB0       |
+|      DIO1       |      PB1       |
+|      DIO2       |      PB5       |
+|      DIO3       |      PB4       |
+|    SPI1_CLK     |      PA5       |
+|    SPI1_MISO    |      PA6       |
+|    SPI1_MOSI    |      PA7       |
+|    SPI1_NSS     |      PA4       |
+|     NRESET      |      PA0       |
+|      VCTL1      |      PA11      |
+|      VCTL2      |      PA8       |
 
 ##### LoRa Transceiver mode
 
-| **LoRa Mode**  | **VCTL1 GPIO** | **VCTL2 GPIO**  |
-|:---------------|:-------------: |:---------------:|
-| TX mode        | H              |       L         |
-| RX mode        | L              |       H         |
+| **LoRa Mode** | **VCTL1 GPIO** | **VCTL2 GPIO** |
+| :------------ | :------------: | :------------: |
+| TX mode       |       H        |       L        |
+| RX mode       |       L        |       H        |
 
 :::tip 📝 Logic Level
-H level (1.8 - 5.0V)<br> 
+H level (1.8 - 5.0V)<br>
 L level (0 V)
 :::
 
@@ -156,8 +154,6 @@ The board supports the following LoRaWAN frequency channels shown in the table b
 |                     |     Korea     |        KR920        |
 |                     |     Asia      |        AS923        |
 
-
-
 #### Electrical Characteristics
 
 ##### Electrical Consumption
@@ -169,16 +165,16 @@ Several current consumption ratings are provided below for a detailed RAK4200 Wi
 The following figures shown below are the average current consumptions based on the different test cases.
 
 **Materials:**
-   * Power Consumption Meter
-   * RAK4200 WisDuo LPWAN Module
+
+- Power Consumption Meter
+- RAK4200 WisDuo LPWAN Module
 
 **LoRa Packet Sending**
 
 The RAK4200 WisDuo LPWAN Module takes **53.155 ms** to send a LoRa packet which consumes **68.4 mA** of current.
 
-   * **Sending Time**: 53.155 ms
-   * **Current consumption**: 68.4 mA
-
+- **Sending Time**: 53.155 ms
+- **Current consumption**: 68.4 mA
 
 <rk-img
   src="/assets/images/wisduo/rak4200-module/datasheet/oscilloscope-screen-capture-of-lora®-packet-sending.jpg"
@@ -190,8 +186,8 @@ The RAK4200 WisDuo LPWAN Module takes **53.155 ms** to send a LoRa packet which 
 
 The RAK4200 WisDuo LPWAN Module takes **46.179 ms** to receive a LoRa packet which consumes **17.1 mA** of current.
 
-   * **Receiving Time**: 46.179 ms
-   * **Current consumption**: 17.1 mA
+- **Receiving Time**: 46.179 ms
+- **Current consumption**: 17.1 mA
 
 <rk-img
   src="/assets/images/wisduo/rak4200-module/datasheet/oscilloscope-screen-capture-of-lora®-packet-receiving.jpg"
@@ -203,7 +199,7 @@ The RAK4200 WisDuo LPWAN Module takes **46.179 ms** to receive a LoRa packet whi
 
 The RAK4200 WisDuo LPWAN Module when in sleep mode consumes **11.8 uA** of current.
 
-   * **Current consumption**: 11.8 uA
+- **Current consumption**: 11.8 uA
 
 <rk-img
   src="/assets/images/wisduo/rak4200-module/datasheet/oscilloscope-screen-capture-of-rak4200-lpwan-module-in-sleep-mode.jpg"
@@ -212,7 +208,6 @@ The RAK4200 WisDuo LPWAN Module when in sleep mode consumes **11.8 uA** of curre
 />
 
 #### Mechanical Characteristics
-
 
 <!---The following figure is the mechanical dimensions of the RAK4200 WisDuo LPWAN Module.--->
 
@@ -226,7 +221,6 @@ The RAK4200 WisDuo LPWAN Module when in sleep mode consumes **11.8 uA** of curre
 
 <!--- In this section, the recommended reflow profile for RAK4200 WisDuo LPWAN Module is described in the image below: --->
 
-
 <rk-img
   src="/assets/images/wisduo/rak4200-module/datasheet/recommended-reflow-profile.jpg"
   width="60%"
@@ -235,9 +229,13 @@ The RAK4200 WisDuo LPWAN Module when in sleep mode consumes **11.8 uA** of curre
 
 ##### Standard Conditions for Reflow Soldering:
 
-* **Pre-heating Ramp** (A) (Initial temperature: 150℃): 1-2.5℃/sec;
-* **Soaking Time** (T2) (150℃~180℃): 60sec-100sec;
-* **Peak Temperature**(G): 230~250℃;
-* **Reflow Time** (T3) (>220℃): 30~60 sec;
-* **Ramp-up Rate** (B): 0~2.5℃/ sec;
-* **Ramp-down Rate** (C): 1~3℃/ sec.
+- **Pre-heating Ramp** (A) (Initial temperature: 150℃): 1-2.5℃/sec;
+- **Soaking Time** (T2) (150℃~180℃): 60sec-100sec;
+- **Peak Temperature**(G): 230~250℃;
+- **Reflow Time** (T3) (>220℃): 30~60 sec;
+- **Ramp-up Rate** (B): 0~2.5℃/ sec;
+- **Ramp-down Rate** (C): 1~3℃/ sec.
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

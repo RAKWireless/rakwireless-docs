@@ -4,6 +4,9 @@ next: false
 tags:
   - datasheet
   - wisblock
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630RAK4631_CE_Cert.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630RAK4631_FCC_Cert.zip]  
 
 ---
 
@@ -297,3 +300,8 @@ The RAK4630 module comprises a flash memory controlled by the SPI interface. The
   width="50%"
   caption="Flash Memory"
 /> -->
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />
+

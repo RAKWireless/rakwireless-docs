@@ -6,6 +6,8 @@ prev: ../Quickstart/
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_CE_Certificate.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_FCC_Certificate.zip]
+  - [RCM, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240-RCM-Declaration-of-Conformity.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK-ROHS-ATL202011241747R01-Report.pdf]
 ---
 
 # RAK7240 WisGate Edge Prime Datasheet

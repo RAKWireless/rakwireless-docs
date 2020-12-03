@@ -61,6 +61,21 @@ export default {
           case 'Ukraine':
             data.img = '/assets/images/certifications/Ukraine.png'
             break
+          case 'SRRC':
+            data.img = '/assets/images/certifications/SRRC.svg'
+            break
+          case 'TELEC':
+            data.img = '/assets/images/certifications/TELEC.svg'
+            break
+          case 'RCM':
+            data.img = '/assets/images/certifications/RCM.svg'
+            break
+          case 'OFCA':
+            data.img = '/assets/images/certifications/OFCA.svg'
+            break
+          case 'Anatel':
+            data.img = '/assets/images/certifications/Anatel.svg'
+            break
           default:
             data.img =
               'https://image.shutterstock.com/image-illustration/white-unknown-document-icon-isolated-600w-1517588975.jpg'

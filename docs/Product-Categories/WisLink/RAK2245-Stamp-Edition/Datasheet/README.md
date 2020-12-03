@@ -4,6 +4,9 @@ tags:
   - wislink
 prev: ../Quickstart/
 next: false
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK2245/Certification-Report/RAK2245_CE_Certificate.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK2245/Certification-Report/RAK2245_FCC_Certificate.zip]
 ---
 
 # RAK2245 WisLink-LoRa Stamp Edition Datasheet
@@ -261,3 +264,7 @@ The table below shows the operation temperature range.
 | **Parameter**                    | **Min** | **Typical** | **Max** | **Remarks**                                                                         |
 | -------------------------------- | ------- | ----------- | ------- | ----------------------------------------------------------------------------------- |
 | **Normal Operating Temperature** | -40°C   | +25°C       | +85°C   | Normal operating temperature range (fully functional and meets 3GPP specifications) |
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />
