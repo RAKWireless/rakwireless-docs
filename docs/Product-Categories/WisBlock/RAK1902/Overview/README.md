@@ -2,8 +2,7 @@
 rak_img: /assets/images/wisblock/rak1902/overview/RAK1902_home.png
 rak_desc: RAK1902 is a WisBlock Sensor which extends the WisBlock system with a ST KPS22HB barometric pressure sensor. A ready to use SW library and tutorial makes it easy to build up a barometric air pressure data acquisition system.
 rak_grp: [wisblock, wissensor]
-prev: 
-next: 
+
 ---
 
 
@@ -31,17 +30,17 @@ RAK1902 is a WisBlock Sensor which extends the WisBlock system with a ST KPS22HB
 ## Product Features
 
 * **Sensor specifications**
-    * 260-1260 hPa measurement range     
-    * ±0.1 hPa accuracy     
-    * Typical 3uA power consumption    
+    * 260-1260&nbsp;hPa measurement range     
+    * ±0.1&nbsp;hPa accuracy     
+    * Typical 3&nbsp;uA power consumption    
 
 * **Size**
-    * 10 x 10mm
+    * 10 x 10&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK1902** you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK1902** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK1902**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK1902** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
-Please make sure to fix the module with the screws to ensure a proper function.    
+Make sure to fix the module with the screws to ensure a proper function.    
 :::

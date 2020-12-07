@@ -10,17 +10,13 @@ tags: RAK4270
 
 ## AT Commands
 
-### Introduction
+The RAK4270 module is designed to simplify LoRaWAN and LoRa point to point (P2P) communication. To integrate LoRa technology to your projects, RAK4270 has easy to use AT commands via UART communication interface. Through these AT commands, you can set the parameters needed for LoRaWAN and LoRa P2P communication. You can use any microcontroller with UART interface to control RAK4270 stamp module. 
 
-The RAK4270 module is designed to simplify LoRa peer to peer and LoRaWAN communication. This module saves customers to deal with complicated SPI protocol with the LoRa transceivers and instead, a well-known a serial communication interface is provided for sending commands and requesting internal status of the module. This approach allows a straightforward way to integrate LoRa technology into your projects.
+In the RAK4270, the serial communication is exposed on **UART1 port** via **pin 4 (TX1)** and **pin 5 (RX1)**. The default parameters of the UART1 are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and other hardware details, refer to the [RAK84270 Module Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#hardware).
 
-On top of this serial interface a set of AT commands are defined, an external micro controller will be able to control the RAK4270 module as a classic AT modem. Through the AT commands, customers can set parameters of the LoRaWAN communication, controlling GPIO pins, analog inputs, etc.
+In addition, RAK4270 also exposed another serial port **UART2**, via **pin 2 (TX2)** and **pin 1 (RX2)**. You can use UART2 as alternative to UART1 when sending AT commands. You can also use UART2 when developing custom firmware via [RUI](/RUI/). The default parameters of the UART2 are 115200 / 8-N-1.
 
-In the RAK4270, the serial communication is exposed on the UART1 port, through the pin 4 (TX1) and pin 5 (RX1). The parameters of the UART1 communication are: 115200 / 8-N-1. The firmware upgrade is also possible through this port. pin of this and the reference application schematic, please refer to the "RAK4270 Specification Manual". A summary can be found in Appendix IV.
-
-In addition, The RAK4270 also expose another serial port: the UART2, through the pin 2 (TX2) and pin 1 (RX2). You can use it to connect with MCU or an UART peripheral such as a GPS module. The parameters of the UART2 communication are: 115200 / 8-N-1.
-
-If only one UART is used in the customer project, it is recommended that the customer use UART2 to connect MCU or module, and UART1 is reserved for firmware upgrade.
+If only one UART is used in your project, it is recommended that you dedicate UART2 for AT commands and UART1 is reserved for firmware upgrade.
 
 ### AT Command Syntax
 
@@ -28,12 +24,32 @@ The AT command is based on ASCII characters. A command begins with the prefix `a
 
 The AT commands can be classified in the following groups:
 
-- Read Command `at+get_config=<m>:<n>`
-  Reads the current configuration or status of the module. The command name and the list of parameters are separated by "=" character. The `<m>` parameter is separated with its associated value `<n>` by the ":" character.
-- Write Command – `at+set_config=<m>:<n>`
-  Writes/modifies the current configuration of the module. The command name and the list of parameters are separated by "=" character. The `<m>` parameter is separated with its associated value `<n>` by the ":" character.
-- Operational Commands - There are also commands that are neither read nor write commands. The purpose is to execute an action, for example: `at+send=lora:<m>:<n>`, will send data through the LoRa transceiver.
-- Special Command — There is a special Command: UART has two modes, AT configuration mode and transmission mode. When switching from transmission mode to AT configuration mode, the Command to be entered is `+++` and does not contain terminators such as `\r` and `\n`.
+* **Read Command**: Reads the current configuration or status of the module. The command name and the list of parameters are separated by `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character. 
+
+```
+at+get_config=<m>:<n>
+```
+
+<br>
+
+* **Write Command**: Writes/Modifies the current configuration of the module. The command name and the list of parameters are separated by `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character.
+
+
+```
+at+set_config=<m>:<n>
+```
+
+<br>
+
+* **Operational Commands**: There are also commands that are neither read nor write commands. The purpose is to execute an action, for example:
+
+```
+at+send=lora:<m>:<n> // Sends data through the LoRa transceiver.
+```
+
+<br>
+
+* **Special Command**: The RAK4270 UART port has two operational modes: **configuration mode** and **data transmission mode**. When switching from data transmission mode to configuration mode the command to be entered is `+++` and does not contain terminators such as `\ r` and `\ n`.
 
 After the command is executed by the module, a reply is sent back to the external MCU. In the case the command was successful, the usual reply has the following format:
 
@@ -47,37 +63,37 @@ The error codes are shown in the following section.
 
 ### Error Code Table
 
-| Error Code | Description                                                                                                                                                                 |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1          | The last command received is an unsupported AT command.                                                                                                                     |
-| 2          | Invalid parameter in the AT command.                                                                                                                                        |
-| 3          | There is an error when reading or writing the flash memory.                                                                                                                 |
-| 5          | There is an error when sending data through the UART port.                                                                                                                  |
-| 80         | The LoRa transceiver is busy, could not process a new command.                                                                                                              |
+| Error Code | Description              |
+| ---------- | ------------------------ |
+| 1          | The last command received is an unsupported AT command.                                                |
+| 2          | Invalid parameter in the AT command.                                                                   |
+| 3          | There is an error when reading or writing the flash memory.                                            |
+| 5          | There is an error when sending data through the UART port.                                             |
+| 80         | The LoRa transceiver is busy, could not process a new command.                                         |
 | 81         | LoRa service is unknown. Unknown MAC command received by node. Execute commands that are not supported in the current state, such as sending "at+join" command in P2P mode. |
-| 82         | The LoRa parameters are invalid.                                                                                                                                            |
-| 83         | The LoRa frequency is invalid.                                                                                                                                              |
-| 84         | The LoRa data rate (DR) is invalid.                                                                                                                                         |
-| 85         | The LoRa frequency and data rate are invalid.                                                                                                                               |
-| 86         | The device hasn’t joined into a LoRa network.                                                                                                                               |
-| 87         | The length of the packet exceeded that maximum allowed by the LoRa protocol.                                                                                                |
-| 88         | Service is closed by the server. Due to the limitation of duty cycle, the server will send " SRV_MAC_DUTY_CYCLE_REQ" MAC command to close the service.                      |
-| 89         | This is an unsupported region code.                                                                                                                                         |
-| 90         | Duty cycle is restricted. Due to duty cycle, data cannot be sent at this time until the time limit is removed.                                                              |
-| 91         | No valid LoRa channel could be found.                                                                                                                                       |
-| 92         | No available LoRa channel could be found.                                                                                                                                   |
-| 93         | Status is error. Generally, the internal state of the protocol stack is wrong.                                                                                              |
-| 94         | Time out reached while sending the packet through the LoRa transceiver.                                                                                                     |
-| 95         | Time out reached while waiting for a packet in the LoRa RX1 window.                                                                                                         |
-| 96         | Time out reached while waiting for a packet in the LoRa RX2 window.                                                                                                         |
-| 97         | There is an error while receiving a packet during the LoRa RX1 window.                                                                                                      |
-| 98         | There is an error while receiving a packet during the LoRa RX2 window.                                                                                                      |
-| 99         | Failed to join into a LoRa network.                                                                                                                                         |
-| 100        | Duplicated down-link message detected. A message with an invalid down-link count was received.                                                                              |
-| 101        | Payload size is not valid for the current data rate (DR).                                                                                                                   |
-| 102        | There many down-link packets were lost.                                                                                                                                     |
-| 103        | Address fail. The address of the received packet does not match the address of the current node.                                                                            |
-| 104        | Invalid MIC was detected in the LoRa message.                                                                                                                               |
+| 82         | The LoRa parameters are invalid.                                                                       |
+| 83         | The LoRa frequency is invalid.                                                                         |
+| 84         | The LoRa data rate (DR) is invalid.                                                                    |
+| 85         | The LoRa frequency and data rate are invalid.                                                          |
+| 86         | The device hasn’t joined into a LoRa network.                                                          |
+| 87         | The length of the packet exceeded that maximum allowed by the LoRa protocol.                           |
+| 88         | Service is closed by the server. Due to the limitation of duty cycle, the server will send " SRV_MAC_DUTY_CYCLE_REQ" MAC command to close the service.    |
+| 89         | This is an unsupported region code.                                                                    |
+| 90         | Duty cycle is restricted. Due to duty cycle, data cannot be sent at this time until the time limit is removed.   |
+| 91         | No valid LoRa channel could be found.                                                                  |
+| 92         | No available LoRa channel could be found.                                                              |
+| 93         | Status is error. Generally, the internal state of the protocol stack is wrong.                         |
+| 94         | Time out reached while sending the packet through the LoRa transceiver.                                |
+| 95         | Time out reached while waiting for a packet in the LoRa RX1 window.                                    |
+| 96         | Time out reached while waiting for a packet in the LoRa RX2 window.                                    |
+| 97         | There is an error while receiving a packet during the LoRa RX1 window.                                 |
+| 98         | There is an error while receiving a packet during the LoRa RX2 window.                                 |
+| 99         | Failed to join into a LoRa network.                                                                    |
+| 100        | Duplicated down-link message detected. A message with an invalid down-link count was received.         |
+| 101        | Payload size is not valid for the current data rate (DR).                                              |
+| 102        | There many down-link packets were lost.                                                                |
+| 103        | Address fail. The address of the received packet does not match the address of the current node.       |
+| 104        | Invalid MIC was detected in the LoRa message.                                                          |
 
 ## General AT Command
 
@@ -228,7 +244,7 @@ This command is used for configuring the baud rate for a UART port.
 
 | Parameter | Description                                                  |
 | --------- | ------------------------------------------------------------ |
-| index     | UART Number                                                  |
+| index     | UART Number (1 or 2)                                         |
 | baud_rate | UART Baud rate：1200,2400,4800,9600,19200,38400,57600,115200 |
 
 Example:
@@ -248,7 +264,7 @@ This command is used for setting the UART operation to switch between the AT con
 
 | Parameter | Description                                                                                          |
 | --------- | ---------------------------------------------------------------------------------------------------- |
-| index     | UART Port Number. Currently, the RAK4270 only supports UART1.                                        |
+| index     | UART Number (1 or 2)                                        |
 | mode      | UART Mode： Only `1` can be selected, which means the UART is set to data transmission mode.         |
 |           | Note：To switch from data transmission mode to configuration mode, use `+++` (`+++` without `\r\n`). |
 
@@ -272,7 +288,7 @@ This command is used for sending data over a UART port.
 
 | Parameter | Description                                                                                                      |
 | --------- | ---------------------------------------------------------------------------------------------------------------- |
-| index     | UART Port Number. Currently, the RAK4270 only supports UART1.                                                    |
+| index     | UART Number (1 or 2)                                                  |
 | data      | The data you want to send.                                                                                       |
 |           | The maximum length of data is 250 characters, equivalent to 255 – the length of `at+...` – the length of `\r\n`. |
 
@@ -425,7 +441,7 @@ In the AS923 frequency band, the supported frequency plan is "as2" and dwell tim
 
 ### at+get_config=lora:channel
 
-This Command is used for reading all the LoRa channel information given the current region configured on a module.
+This command is used for reading all the LoRa channel information given the current region configured on a module.
 
 | Operation | Command                      | Response                   |
 | --------- | ---------------------------- | -------------------------- |
@@ -740,7 +756,7 @@ This command is used for setting the data rate (DR) of LoRa.
 
 | Parameter | Description                                                                                                                                                           |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| dr        | The data rate of LoRa is related to the current region. In most LoRa areas, it is common to use 0 to 5. Detailed reference can be made to LoRaWan1.0.2 specification. |
+| dr        | The data rate of LoRa is related to the current region. In most LoRa areas, it is common to use 0 to 5. Detailed reference can be made to LoRaWAN 1.0.2 specification. |
 
 ### at+set_config=lora:tx_power:\<tx_power\>
 
@@ -848,13 +864,13 @@ at+set_config=lora:dutycycle_enable:1\r\n
 OK
 ```
 
-### at+set_config=lora: send_repeat_cnt:\<num\>
+### at+set_config=lora:send_repeat_cnt:\<num\>
 
-This command is used for setting the number attempts for retransmitting an uplink message. When activated, the module will resend a message if its corresponding ACK (down link) is not received after sending a confirmed uplink message. The default value is 0, which means that the module will not resend any message by default.
+This command is used for setting the number of attempts for retransmitting an uplink message. When activated, the module will resend a message if its corresponding ACK (down link) is not received after sending a confirmed uplink message. The default value is 0, which means that the module will not resend any message by default.
 
 | Operation | Command                                        | Response |
 | --------- | ---------------------------------------------- | -------- |
-| Write     | `at+set_config=lora: send_repeat_cnt:<status>` | `OK`     |
+| Write     | `at+set_config=lora:send_repeat_cnt:<status>` | `OK`     |
 
 | Parameter | Description                 |
 | --------- | --------------------------- |
@@ -913,7 +929,7 @@ Initialization OK
 
 ### at+set_config=lorap2p:\<frequency\>:\<spreadfact\>:\<bandwidth\>:\<codingrate\>:\<preamlen\>:\<power\>
 
-This command is used for setting the relevant parameters of LoRAP2p mode and is only valid when the LoRa mode was switched to LoRaP2P before.
+This command is used for setting the relevant parameters of LoRa P2P mode and is only valid when the LoRa mode was switched to LoRaP2P before.
 
 | Operation | Command                                                                                      | Response |
 | --------- | -------------------------------------------------------------------------------------------- | -------- |
@@ -929,7 +945,7 @@ This command is used for setting the relevant parameters of LoRAP2p mode and is 
 |             | 1: 250KHz                          |
 |             | 2: 500KHz                          |
 |             | The default is 0.                  |
-| codeingrate | 1: 4/5                             |
+| codingrate | 1: 4/5                             |
 |             | 2: 4/6                             |
 |             | 3: 4/7                             |
 |             | 4: 4/8                             |

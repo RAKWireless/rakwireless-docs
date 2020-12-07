@@ -24,25 +24,26 @@ certifications:
 
 ### Description
 
-**RAK4200 WisDuo LPWAN Module** includes an STM32L071KB MCU and an SX1276 LoRa transceiver. It has Ultra-Low Power Consumption of 11.8 uA in sleep mode and high LoRa output power up to 19dBm max in work mode.
+**RAK4200 WisDuo LPWAN Module** includes an STM32L071 MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumption of 1.5&nbsp;uA in sleep mode and high LoRa output power up to 19dBm max in work mode.
 
 The module complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P Point to Point communications. The module is suitable for various applications that require long range data acquisition and low power consumption.
 
 ### Features
 
-- LoRa module for Smart City, Smart Agriculture, Smart Industry
-- **Compact Form Factor**: 15 x 15.5 x 2.5 mm
-- 20 Pin Stamp Pad for PCB SMT mounting
-- **I/O ports**: UART/I2C/GPIO
-- **Temperature range**: -40°C to +85°C
-- **Supply voltage**: 2.0 ~ 3.6V
-- **Frequency range**: 863–870MHz (EU) / 902–928MHz (US), ISM and SRD systems
-- Low-Power Wireless Systems with 7.8kHz to 500KHz Bandwidth
-- Ultra-Low Power Consumption 11.8 uA in sleep mode
-- **Core**: ARM 32-bit Cortex M0+ with MPU
-- Up to 128KB flash memory with ECC
-- 20KB RAM
-- 6KB of data EEPROM with ECC
+* LoRa module for Smart City, Smart Agriculture, Smart Industry
+* **Compact Form Factor**: 15 x 15.5 x 2.5&nbsp;mm
+* 20 Pin Stamp Pad for PCB SMT mounting
+* **I/O ports**: UART/I2C/GPIO
+* **Temperature range**: -40&nbsp;°C to +85&nbsp;°C
+* **Supply voltage**: 2.0 ~ 3.6&nbsp;V
+* **Frequency range**: 863–870&nbsp;MHz (EU) / 902–928&nbsp;MHz (US), ISM and SRD systems
+* Low-Power Wireless Systems with 7.8&nbsp;kHz to 500&nbsp;kHz Bandwidth
+* Ultra-Low Power Consumption 11.8&nbsp;uA in sleep mode
+* **Core**: ARM 32-bit Cortex – M0+ with MPU
+* Up to 128&nbsp;KB flash memory with ECC
+* 20&nbsp;KB RAM
+* 6&nbsp;KB of data EEPROM with ECC
+
 
 ## Specifications
 
@@ -88,16 +89,16 @@ The hardware specification is categorized into five parts. It covers the pinouts
 
 | Pin | Name     | I/O | Description                                      |
 | --- | -------- | --- | ------------------------------------------------ |
-| 1   | UART2_RX | I   | Main UART (STM32L071KB PA10)                     |
-| 2   | UART2_TX | O   | Main UART (STM32L071KB PA9)                      |
-| 3   | UART2_DE | I/O | GPIO (STM32L071KB PA12)                          |
-| 4   | UART1_TX | I/O | General GPIO or UART(Reserved) (STM32L071KB PA2) |
-| 5   | UART1_RX | I/O | General GPIO or UART(Reserved) (STM32L071KB PA3) |
-| 6   | UART1_DE | I/O | General GPIO or UART(Reserved) (STM32L071KB PA1) |
-| 7   | SWDIO    | I/O | Programming (STM32L071KB PA13)                   |
-| 8   | SWCLK    | I/O | Programming (STM32L071KB PA14)                   |
-| 9   | I2C_SCL  | I/O | I2C interface (STM32L071KB PB6)                  |
-| 10  | I2C_SDA  | I/O | I2C interface (STM32L071KB PB7)                  |
+| 1   | UART2_RX | I   | Main UART (STM32L071 PA10)                     |
+| 2   | UART2_TX | O   | Main UART (STM32L071 PA9)                      |
+| 3   | UART2_DE | I/O | GPIO (STM32L071 PA12)                          |
+| 4   | UART1_TX | I/O | General GPIO or UART(Reserved) (STM32L071 PA2) |
+| 5   | UART1_RX | I/O | General GPIO or UART(Reserved) (STM32L071 PA3) |
+| 6   | UART1_DE | I/O | General GPIO or UART(Reserved) (STM32L071 PA1) |
+| 7   | SWDIO    | I/O | Programming (STM32L071 PA13)                   |
+| 8   | SWCLK    | I/O | Programming (STM32L071 PA14)                   |
+| 9   | I2C_SCL  | I/O | I2C interface (STM32L071 PB6)                  |
+| 10  | I2C_SDA  | I/O | I2C interface (STM32L071 PB7)                  |
 | 11  | GND      | -   | Ground                                           |
 | 12  | RF       | I/O | RF port (reserved), default RF out by IPEX       |
 | 13  | GND      | -   | Ground                                           |
@@ -105,7 +106,7 @@ The hardware specification is categorized into five parts. It covers the pinouts
 | 15  | SPI_CLK  | I/O | Reserved PA5                                     |
 | 16  | SPI_MISO | I/O | Reserved PA6                                     |
 | 17  | SPI_MOSI | I/O | Reserved PA7                                     |
-| 18  | MCU_NRST | I/O | MCU reset (STM32L071KB NRST)                     |
+| 18  | MCU_NRST | I/O | MCU reset (STM32L071 NRST)                     |
 | 19  | GND      | -   | Ground                                           |
 | 20  | VDD      | -   | DC 3V3                                           |
 

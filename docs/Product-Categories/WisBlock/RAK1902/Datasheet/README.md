@@ -3,6 +3,7 @@ tags:
   - datasheet
   - wisblock
 prev: ../Overview/
+next: false
 ---
 
 # RAK1902 WisBlock Barometer Pressure Sensor Datasheet
@@ -13,12 +14,11 @@ prev: ../Overview/
 
 The RAK1902 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is an ultra-compact piezo-resistive pressure sensor that functions as a digital barometer with I2C interface. The sensing element, which detects absolute pressure, consists of a suspended membrane manufactured through a delicate process developed by ST®.
 
-### Features
-
-- **Measurement range**: 260-1260 hPa
-- **Sensor accuracy**: ±0.1 hPa
-- **Typical power consumption**: 3 uA
-- **Module Size**: 10 x 10 mm
+### Features 
+* **Measurement range**: 260-1260&nbsp;hPa
+* **Sensor accuracy**: ±0.1&nbsp;hPa
+* **Typical power consumption**: 3&nbsp;uA  
+* **Module Size**: 10 x 10&nbsp;mm
 
 ## Specifications
 
@@ -45,8 +45,12 @@ The RAK1902 module can be mounted on the slots: A, B, C, or D of the WisBase boa
 | ST     | LPS22HB     |
 
 #### Pin Definition
+The RAK1902 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1902 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in Figure 2. 
 
-The RAK1902 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1902 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in Figure 2. Note, only the I2C related pins, VDD and GND are connected to this module.
+:::tip 📝 NOTE:
+Only the I2C related pins, VDD and GND are connected to this module.
+:::
+
 
 <rk-img
   src="/assets/images/wisblock/rak1902/datasheet/RAK1902_connector_pinout.png"

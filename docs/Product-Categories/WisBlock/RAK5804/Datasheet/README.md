@@ -24,12 +24,12 @@ All external expansion interfaces of the RAK5804 module are equipped with TVS pr
 
 ### Features
 
-- IO connector.
-- Supports **two (2) pieces of 10-pin IO** extension connectors.
-- Supports **one (1) USB connector** to access WisBlock Core Module.
+- IO connector
+- Supports **two (2) pieces of 10-pin IO** extension connectors
+- Supports **one (1) USB connector** to access WisBlock Core Module
 - TVS protected circuity
 - PTC thermistor to prevent output power overload
-- Dimension: **25 mm x 15 mm**.
+- Dimension: **25&nbsp;mm x 15&nbsp;mm**
 
 
 
@@ -64,8 +64,8 @@ The RAK5804 module exposes to the user’s application the IO pins, the I2C and 
 ##### J2 Connector
 
 <rk-img
-  src="/assets/images/wisblock/rak5804/datasheet/j2-connector.png"
-  width="30%"
+  src="/assets/images/wisblock/rak5804/datasheet/j2-connector.svg"
+  width="35%"
   caption="RAK5804 J2 Connector"
 />
 | **Pin Number** | **Function Description** | 
@@ -86,7 +86,7 @@ The RAK5804 module exposes to the user’s application the IO pins, the I2C and 
 ##### J3 Connector
 
 <rk-img
-  src="/assets/images/wisblock/rak5804/datasheet/j3-connector.png"
+  src="/assets/images/wisblock/rak5804/datasheet/j3-connector.svg"
   width="30%"
   caption="RAK5804 J3 Connector"
 />

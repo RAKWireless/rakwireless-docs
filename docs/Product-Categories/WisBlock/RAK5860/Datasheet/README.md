@@ -28,13 +28,13 @@ For debugging purposes, a Micro-USB connector is used for sending AT commands, d
 
 ### Features 
 
-*	Quectel BG77 with LTE Cat M1, LTE cat NB2 and GNSS
+*	Quectel BG77 with LTE Cat M1, LTE cat NB2, and GNSS
 *	IPEX connectors for the LTE and GPS antenna
-*	Micro-USB connector.
+*	Micro-USB connector
 *	Nano SIM and ESIM options
-*	Status Indication LEDs.
-*	Power Supply: 2.6-4.2V, typical supply voltage 3.3V
-*	Module size: 25mm x 35 mm
+*	Status Indication LEDs
+*	Power Supply: 2.6-4.2&nbsp;V, typical supply voltage 3.3&nbsp;V
+*	Module size: 25&nbsp;mm x 35&nbsp;mm
 
 ## Specifications
 
@@ -72,9 +72,10 @@ RAK5005 baseboard. The mounting sketch is shown.
 
 #### Block Diagram
 
+<br>
 
 <rk-img
-  src="/assets/images/wisblock/rak5860/datasheet/block-diagram.png"
+  src="/assets/images/wisblock/rak5860/datasheet/block-diagram.svg"
   width="60%"
   caption="RAK5860 Block Diagram"
 />
@@ -141,7 +142,7 @@ The following sections will describe the schematic of the RAK5860 module, which 
 
 ##### Turn on/off mechanism
 
-Figure 7 shows a circuit to allow turn on or to turn off the module. By default, the internal Quectel BG77 module is in power off mode, it can be turned on by driving WIS_PWRKEY to high state (positive digital pulse) for a period of 500-1000ms. 
+Figure 7 shows a circuit to allow turn on or to turn off the module. By default, the internal Quectel BG77 module is in power off mode, it can be turned on by driving WIS_PWRKEY to high state (positive digital pulse) for a period of 500-1000&nbsp;ms. 
 
 Driving WIS_PWRKEY high for 650-1500ms, the module will execute power-down procedure after WIS_PWRKEY is released, then enter off mode.  
 
@@ -188,30 +189,30 @@ bottom layer of the RAK5860 module.
 
 ##### Voltage-level translator
 
-Within the BG77, all interfaces are designed to work with 1.8V level. RAK5860 features a voltage-level translator in order to down-convert the 3.3V coming from the WisBlock Core module. The Figure 10 shows the design of the internal voltage-level translator.
+Within the BG77, all interfaces are designed to work with 1.8&nbsp;V level. RAK5860 features a voltage-level translator in order to down-convert the 3.3&nbsp;V coming from the WisBlock Core module. The Figure 10 shows the design of the internal voltage-level translator.
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/voltage-level-translator.png"
   width="50%"
-  caption="3.3V to 1.8V voltage-level translator"
+  caption="3.3 V to 1.8 V voltage-level translator"
 />
 
-* When WIS_TX is high (3.3V), the NPN triode is turned off, BG77_RX is pulled high (1.8V)
+* When WIS_TX is high (3.3&nbsp;V), the NPN triode is turned off, BG77_RX is pulled high (1.8&nbsp;V)
 
-* When WISTX is low (0V), the NPN triode is turned on, BG77 RX is low (0V).
+* When WISTX is low (0&nbsp;V), the NPN triode is turned on, BG77 RX is low (0&nbsp;V).
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/voltage_level-translator-1.png"
   width="50%"
-  caption="1.8V to 3.3V voltage-level translator"
+  caption="1.8 V to 3.3 V voltage-level translator"
 />
 
-* When BG77_TX is low (0V), the NPN triode is turned on, WIS_RX is low (0V)
+* When BG77_TX is low (0&nbsp;V), the NPN triode is turned on, WIS_RX is low (0&nbsp;V)
 
-* When BG77TX is high (1.8V), the NPN triode is turned off, WIS RX is pulled high (3.3V)
+* When BG77TX is high (1.8&nbsp;V), the NPN triode is turned off, WIS RX is pulled high (3.3&nbsp;V)
 
 :::tip 📝 NOTE:
-VDD_EXT is 1.8V, from BG77 internal regulator, BG77 pin 21
+VDD_EXT is 1.8&nbsp;V, from BG77 internal regulator, BG77 pin 21
 :::
 
 ##### SIM card circuit
@@ -228,7 +229,7 @@ The RAK5860 module only supports the 1.8V ESIM/SIM card, the following Figure 13
 
 The RAK5860 module provides a Micro-USB connector for connection with a host device. The USB data lines USB+ and USB- are connected directly to the BG77. The VBUS line can be used for USB connection detection. 
 
-In order to offer good ESD protection, a TVS diode array is added in the USB connector circuit.
+To offer good ESD protection, a TVS diode array is added in the USB connector circuit.
 
 
 <rk-img
@@ -237,7 +238,7 @@ In order to offer good ESD protection, a TVS diode array is added in the USB con
   caption="USB Connector"
 />
 
-The USB connection detection pin input voltage range is 1.3-1.8V. The Figure 15 shows the USB connection detection pin power supply. 
+The USB connection detection pin input voltage range is 1.3~1.8&nbsp;V. The Figure 15 shows the USB connection detection pin power supply. 
 
 
 <rk-img

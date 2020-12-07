@@ -15,18 +15,18 @@ The RAK1906 WisBlock Environmental Sensor module, part of the RAK Wireless Wisbl
 
 ### Features
 
-- **Temperature range**: -40 to 85 °C
-- **Humidity range**: 0 to 100%
-- **Pressure range**: 300 to 1100 hPa
-- **Gas sensor response time**: < 1s
-- **Gas sensor output**: direct output of IAQ (Indoor Air Quality) index
-- **Module size**: 10 x 10mm
+### Features 
+* **Temperature range**: -40&nbsp;°C to 85&nbsp;°C
+* **Humidity range**: 0 to 100%
+* **Pressure range**: 300 to 1100&nbsp;hPa
+* **Gas sensor response time**: < 1&nbsp;sec
+* **Gas sensor output**: direct output of IAQ (Indoor Air Quality) index
+* **Module size**: 10 x 10&nbsp;mm
 
 ## Specifications
 
 ### Overview
-
-<!-- Insert Picture of Sensor with it's dimensions -->
+<!-- Insert Picture of Sensor with its dimensions -->
 
 #### Mounting
 
@@ -43,12 +43,14 @@ The RAK1906 module can be mounted on the slots: A, B, C, or D of the WisBase boa
 #### Chipset
 
 | Vendor | Part number |
-| ------ | ----------- |
+| --     | --          |
 | BOSCH  | BME680      |
 
 #### Pin Definition
+The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1906 module to be mounted on a WisBlock base board, such as RAK5005-O. The pin order of the connector  and the definition of the pinout are shown in Figure 2. 
 
-The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1906 module to be mounted on a WisBlock base board, such as RAK5005-O. The pin order of the connector and the definition of the pinout are shown in Figure 2. Note, only the I2C related pin, VDD, and GND are connected to this module.
+
+
 
 <rk-img
   src="/assets/images/wisblock/rak1906/datasheet/RAK1906_connector_pinout.png"
@@ -56,7 +58,11 @@ The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO conn
   caption="RAK1906 WisBlock Environmental Sensor Pinout"
 />
 
-Pins 10, 12, 13, and 15 are connected to the interrupt pins of LIS3DH, please refer to the datasheet of LIS3DH for details.
+:::tip 📝 NOTE:
+- Only the I2C related pin, VDD, and GND are connected to this module. 
+
+- Pins 10, 12, 13, and 15 are connected to the interrupt pins of LIS3DH, please refer to the datasheet of LIS3DH for details.
+:::
 
 #### Sensors
 
@@ -372,7 +378,7 @@ Figure 3 shows the dimensions and the mechanic drawing of the RAK1906 module.
 
 #### Schematic Diagram
 
-The Figure 5 shows the schematic of the RAK1906 module.
+Figure 5 shows the schematic of the RAK1906 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1906/datasheet/RAK1906_schematics.png"

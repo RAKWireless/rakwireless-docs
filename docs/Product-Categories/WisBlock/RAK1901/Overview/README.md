@@ -2,8 +2,7 @@
 rak_img: /assets/images/wisblock/rak1901/overview/RAK1901_home.png
 rak_desc: RAK1901 is a WisBlock Sensor which extends the WisBlock system with a Sensirion SHTC3 temperature and humidity sensor. A ready to use SW library and tutorial makes it easy to build up an environmental temperature and humidity data acquisition system.
 rak_grp: [wisblock, wissensor]
-prev: 
-next: 
+
 ---
 
 
@@ -30,17 +29,17 @@ RAK1901 is a WisBlock Sensor which extends the WisBlock system with a Sensirion 
 ## Product Features
 
 * **Sensor specifications**
-    * ±2.0 °C temperature accuracy 
-    * -40 to +125 °C temperature range
-    * ±2.0 % RH humidity accuracy 
+    * ±2.0&nbsp;°C temperature accuracy 
+    * -40&nbsp;°C to +125&nbsp;°C temperature range
+    * ±2.0% RH humidity accuracy 
     * 0 to 100% humidity range   
 * **Size**
-    * 10 x 10mm
+    * 10 x 10&nbsp;mm
 
 ## Prerequisites
 
 To use a **RAK1901** you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK1901** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
-Please make sure to fix the module with the screws to ensure a proper function. 
+Make sure to fix the module with the screws to ensure a proper function. 
 :::

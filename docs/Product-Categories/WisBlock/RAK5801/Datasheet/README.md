@@ -147,11 +147,15 @@ This section covers the pin number of the sensor connector, the definition, and 
 
 Figure 6 shows the pin order for the IO connector of the module. Through this connector, the RAK5801 module is attached to the WisBoard baseboard. 
 
+<br>
+
 <rk-img
-  src="/assets/images/wisblock/rak5801/datasheet/rak5801-internal-wisio-connector.png"
+  src="/assets/images/wisblock/rak5801/datasheet/rak5801-internal-wisio-connector.svg"
   width="60%"
   caption="RAK5801 Internal WisIO Connector"
 />
+
+<br>
 
 The functionalities of each pins of the WisIO connector are tabulated below.
 
@@ -214,19 +218,19 @@ Refer to Figure 7 below for the mechanical dimensions of the RAK5801 module.
 
 ### Two-wire sensor
 
- For 2-wires 4-20mA sensor，as shown in Figure 10, 
+ For 2-wire 4-20mA sensor，as shown in Figure 10, 
  1. Connect sensor（+）to VCC (Pin5)  of  RAK5801
  2. Connect sensor ( - ) to AIN0 or AIN1 of the RAK5801 module.
 
 <rk-img
   src="/assets/images/wisblock/rak5801/datasheet/two-wire.png"
   width="20%"
-  caption="RAK5801 with 2-wires 4-20mA sensor."
+  caption="RAK5801 with 2-wire 4-20mA sensor."
 />
 
 ### Four-wire Sensor
 
-For 4-wires sensor, as shown in Figure 11
+For 4-wire sensor, as shown in Figure 11
 
 1. Use an external power supply to the power the sensor.
 2. Connect the output of the sensor to AIN0 or AIN1 of RAK5801.
@@ -234,7 +238,7 @@ For 4-wires sensor, as shown in Figure 11
 <rk-img
   src="/assets/images/wisblock/rak5801/datasheet/four-wire.png"
   width="25%"
-  caption="RAK5801 with 4-wires 4-20mA sensor."
+  caption="RAK5801 with 4-wire 4-20mA sensor."
 />
 
 ## WisBlock Compatability

@@ -1899,7 +1899,7 @@ During sleep, pin 7 (RX1) and pin 26 (RX3) are configured as external interrupt 
 
 7. **About the ADC pin**: The ADC pins available on the RAK811 are different between the high and low-frequency modules. 
 
-- In the low-frequency modules, the ADC pins arethe following: pin 2, pin 3, pin 4, pin 5, pin 15, pin 20, pin 22, pin 23. 
+- In the low-frequency modules, the ADC pins are the following: pin 2, pin 3, pin 4, pin 5, pin 15, pin 20, pin 22, pin 23. 
 
 - In the high-frequency modules, the ADC pins are the following: pin 2, pin 3, pin 4, pin 20, pin 22, pin 23.
 

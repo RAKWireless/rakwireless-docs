@@ -42,16 +42,16 @@ The RAK1920 module is a sensor extension module, it supports several defacto-sta
     * 1 Click Board compatible slot     
     * 1 Grove connector compatible with I2C and digital IO boards    
     * 1 Grove connector compatible with UART and analog IO boards     
-    * Support for 5V Grove sensors    
+    * Support for 5&nbsp;V Grove sensors    
     * 1 QWICC compatible connector    
 
 * **Size**    
-    * 30 x 36 mm    
+    * 30 x 36&nbsp;mm    
 
 ## Prerequisites
 
-To use a **RAK1920** you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK1920** module. Furthermore, you need a **WisBlock Core** module to use the sensor.  
+To use a **RAK1920**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK1920** module. Furthermore, you need a **WisBlock Core** module to use the sensor.  
 
 :::warning ⚠️ WARNING    
-Please make sure to fix the module with the screws to ensure a proper function.
+Make sure to fix the module with the screws to ensure a proper function.
 :::

@@ -3,6 +3,7 @@ tags:
   - datasheet
   - wisblock
 prev: ../Overview/
+next: false
 ---
 
 # RAK1903 WisBlock Ambient Light Sensor Datasheet
@@ -10,21 +11,18 @@ prev: ../Overview/
 ## Overview
 
 ### Description
+The RAK1903 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is a single-chip ambient light sensor, measuring the intensity of  light in the visible range. The precise spectral response and strong IR rejection of the device enables the RAK1903 module to accurately measure the intensity of light as seen by human eyes regardless of light sources. The strong IR rejection also aids in maintaining high accuracy when the industrial design requires to mount the sensor under dark glass due to aesthetics reasons. The RAK1903 module is designed for systems that create light-based experiences for humans. It is an ideal replacement for photodiodes, photoresistors, or other ambient light sensors with less visible range matching and IR rejection.
 
-The RAK1903 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is a single-chip ambient light sensor, measuring the intensity of light in the visible range. The precise spectral response and strong IR rejection of the device enables the RAK1903 module to accurately measure the intensity of light as seen by human eyes regardless of light sources. The strong IR rejection also aids in maintaining high accuracy when the industrial design requires to mount the sensor under dark glass due to aesthetics reasons. The RAK1903 module is designed for systems that create light-based experiences for humans. It’s an ideal replacement for photodiodes, photoresistors, or other ambient light sensors with less visible range matching and IR rejection.
-
-### Features
-
-- **Measurement range**: 0.01 to 83865 lux
-- Optical filtering to match human eye
-- **Typical power consumption**: 1.8 uA
-- **Module size**: 0 x 10 mm
+### Features 
+* **Measurement range**: 0.01 to 83865&nbsp;lux
+* Optical filtering to match human eye
+* **Typical power consumption**: 1.8&nbsp;uA 
+* **Module size**: 10 x 10&nbsp;mm
 
 ## Specifications
 
 ### Overview
-
-<!-- Insert Picture of Sensor with it's dimensions -->
+<!-- Insert Picture of Sensor with its dimensions -->
 
 #### Mounting
 
@@ -41,12 +39,15 @@ The RAK1903 module can be mounted on the slots: A, B, C, or D of the WisBase boa
 #### Chipset
 
 | Vendor | Part number |
-| ------ | ----------- |
+| --     | --          |
 | TI     | OPT3001DNPR |
 
 #### Pin Definition
+The RAK1903 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1903 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector the definition of the pinout are shown in Figure 2.
 
-The RAK1903 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1903 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector the definition of the pinout are shown in Figure 2. Note, only the I2C related pins, interrupt pins, VDD and GND are connected to this module.
+:::tip 📝 NOTE:
+Only the I2C related pins, interrupt pins, VDD and GND are connected to this module.
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak1903/datasheet/RAK1903_connector_pinout.png"
@@ -106,7 +107,7 @@ Figure 3 shows the dimensions and the mechanic drawing of the RAK1903 module.
 />
 
 #### Schematic Diagram
-The Figure 5 shows the schematic of the RAK1903 module.
+Figure 5 shows the schematic of the RAK1903 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1903/datasheet/RAK1903_schematics.png"

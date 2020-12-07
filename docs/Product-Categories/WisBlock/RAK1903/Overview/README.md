@@ -2,8 +2,7 @@
 rak_img: /assets/images/wisblock/rak1903/overview/RAK1903_home.png
 rak_desc: RAK1903 is a WisBlock Sensor which extends the WisBlock system with a TI OPT3001DNPR light sensor. A ready to use SW library and tutorial makes it easy to build up an ambient light data acquisition system.
 rak_grp: [wisblock, wissensor]
-prev: 
-next: 
+
 ---
 
 
@@ -33,15 +32,15 @@ RAK1903 is a WisBlock Sensor which extends the WisBlock system with a TI OPT3001
 * **Sensor specifications**
     * 0.01 to 83865 lux measurement range     
     * Optical filtering to match human eye    
-    * Typical 1.8uA power consumption    
+    * Typical 1.8&nbsp;uA power consumption    
 
 * **Size**
-    * 10 x 10mm
+    * 10 x 10&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK1903** you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK1903** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK1903**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK1903** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
-Please make sure to fix the module with the screws to ensure a proper function.
+Make sure to fix the module with the screws to ensure a proper function.
 :::

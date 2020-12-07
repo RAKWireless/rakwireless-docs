@@ -44,7 +44,7 @@ The overview covers the RAK2305 WisBlock board overview and block diagram. It al
 #### Board Overview
 
 <rk-img
-  src="/assets/images/wisblock/rak2305/datasheet/RAK2305-board-overview.png"
+  src="/assets/images/wisblock/rak2305/datasheet/RAK2305-board-overview.svg"
   width="40%"
   caption="Board Overview"
 />
@@ -120,7 +120,7 @@ Before download, you need to pull down IO0.
 Figure 5 shows the Pin Definition of the RAK2305 WisBlock WiFi Interface Module
 
 <rk-img
-  src="/assets/images/wisblock/rak2305/datasheet/RAK2305-pin.png"
+  src="/assets/images/wisblock/rak2305/datasheet/RAK2305-pin.svg"
   width="40%"
   caption="RAK2305 Pin Definition"
 />

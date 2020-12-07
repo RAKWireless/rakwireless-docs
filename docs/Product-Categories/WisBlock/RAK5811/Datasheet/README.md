@@ -23,15 +23,15 @@ In addition, this module integrates a 12V power supply which can be used to powe
 
 ### Features 
 
-*	Two 0-5V analog input channels.
-*	Support WisBlock IO interface, and is compatible with multiple WisBlock Core modules, such as the RAK4631.
-*	10mV conversion accuracy.
-*	Supports low power consumption mode, the module can be powered off by WisBlock Core module for saving energy during idle periods.
-*	12V output to power external sensors.
-*	Reserved I2C expansion interface.
-*	Fast crimping terminal to easy connect external components on the field.
-*	Designed with a 2kV ESD protection level.
-*	Small dimensions of 35mm x 25mm.
+*	Two 0-5&nbsp;V analog input channels
+*	Support WisBlock IO interface, and is compatible with multiple WisBlock Core modules, such as the RAK4631
+*	10&nbsp;mV conversion accuracy
+*	Supports low power consumption mode, the module can be powered off by WisBlock Core module for saving energy during idle periods
+*	12&nbsp;V output to power external sensors
+*	Reserved I2C expansion interface
+*	Fast crimping terminal to easy connect external components on the field
+*	Designed with a 2&nbsp;kV ESD protection level
+*	Small dimensions of 35&nbsp;mm x 25&nbsp;mm
 
 
 ## Specifications
@@ -48,17 +48,17 @@ The overview shows the realistic view of the RAK5811 module and its block diagra
   caption="RAK5811 block diagram"
 />
 
-In the RAK5811 module, as shown in Figure 1, the 0-5V input signal is connected to operational amplifier by the R1/R2 voltage divider. The operational amplifier output is routed to an analog input of the MCU to be digitalized by an internal ADC. Once the signal is digitalized, the user can recover the original voltage value by applying the following relation:
+In the RAK5811 module, as shown in Figure 1, the 0-5&nbsp;V input signal is connected to operational amplifier by the R1/R2 voltage divider. The operational amplifier output is routed to an analog input of the MCU to be digitalized by an internal ADC. Once the signal is digitalized, the user can recover the original voltage value by applying the following relation:
 
 <rk-img
   src="/assets/images/wisblock/rak5811/datasheet/voltage-divider.png"
-  width="15%"
+  width="25%"
   caption="Voltage divider relation"
 />
 
-Where Vout is the WisBlock Core read voltage, Vin is the analog input voltage (0-5V). From the voltage divider R1 is 1M Ω and R2 is 1.5M Ω, so the final relationship is: **Vin = Vout / 0.6**.
+Where Vout is the WisBlock Core read voltage, Vin is the analog input voltage (0-5&nbsp;V). From the voltage divider R1 is 1&nbsp;MΩ and R2 is 1.5&nbsp;MΩ, so the final relationship is: **Vin = Vout / 0.6**.
 
-As shown in Figure 1, the module provides an output of 12V to power industrial sensors. This 12V output is boosted by an internal DC-DC booster. The enable pin allows to control the power conversion module and sets the RAK5811 module into a low power consumption mode. 
+As shown in Figure 1, the module provides an output of 12&nbsp;V to power industrial sensors. This 12V output is boosted by an internal DC-DC booster. The enable pin allows to control the power conversion module and sets the RAK5811 module into a low power consumption mode. 
 
 #### Installation 
 
@@ -88,7 +88,7 @@ For detailed instructions, refer to the [WisBlock Installation Guide](/Knowledge
 
 ##### RAK5811 Sensor Connector Crimping Mechanism
 
-The RAK5811 features a fast-crimping terminal connector to simplify and ensure the wiring process on the fields. The crimping terminal can support cable with a width between 20 AWG to 24 AWG. The usual stripping length is around 6 to 7 mm. 
+The RAK5811 features a fast-crimping terminal connector to simplify and ensure the wiring process on the fields. The crimping terminal can support cable with a width between 20 AWG to 24 AWG. The usual stripping length is around 6&nbsp;mm to 7&nbsp;mm. 
 
 As shown in Figure 5, during the crimping process, the user should first press down and maintain the spring head of the crimping terminal firmly, then insert the stripped cable head into the corresponding connector’s hole. Once inserted correctly, then release the spring head, and the crimping process is completed.
 
@@ -104,23 +104,23 @@ The hardware specification is categorized into four parts. It discusses the pino
 
 #### Device Specification
 
-The following table shows the parameters and the description of the RAK5801 WisBlock 4-20mA Interface Module:
+The following table shows the parameters and the description of the RAK5801 WisBlock 4-20&nbsp;mA Interface Module:
 
 | **Parameter** | **Description** | 
 | ---- | ---- | 
-| Analog Input Interface | 2 channels of 0-5V | 
-| Analog Sampling Resolution | 5mV | 
+| Analog Input Interface | 2 channels of 0-5&nbsp;V | 
+| Analog Sampling Resolution | 5&nbsp;mV | 
 | Analog Sampling Accuracy | 1% | 
-| Analog maximum input voltage | 5.3V (there is a risk to burn the circuit surpassing this limit) | 
-| Analog Port ESD Protection Level | 2kV HBM | 
+| Analog maximum input voltage | 5.3&nbsp;V (there is a risk to burn the circuit surpassing this limit) | 
+| Analog Port ESD Protection Level | 2&nbsp;kV HBM | 
 | Operational Amplifier Gain | 3.0 | 
-| Input Voltage | 3.0V – 3.6V | 
-| Input Current | Maximum 100mA | 
-| Output Voltage | 12V | 
-| Output Current | Maximum 30mA | 
-| Operating Temperature | -30° C ~ 65° C | 
-| Storage Temperature | -40°C ~ 85°C | 
-| Module Dimensions | 35 x 25 mm | 
+| Input Voltage | 3.0&nbsp;V – 3.6&nbsp;V | 
+| Input Current | Maximum 100&nbsp;mA | 
+| Output Voltage | 12&nbsp;V | 
+| Output Current | Maximum 30&nbsp;mA | 
+| Operating Temperature | -30&nbsp;°C ~ 65&nbsp;°C | 
+| Storage Temperature | -40&nbsp;°C ~ 85&nbsp;°C | 
+| Module Dimensions | 35&nbsp;mm x 25&nbsp;mm | 
 
 #### Pin Definition
 
@@ -138,7 +138,7 @@ This section shows the pin number of the Fast Crimping Terminal of the RAK5811 m
 | 2 | SDA of the I2C interface | 
 | 3 | 3V3 output | 
 | 4 | VBAT, Battery output | 
-| 5 | 12V output for external sensors | 
+| 5 | 12&nbsp;V output for external sensors | 
 | 6 | GND | 
 | 7 | Analog input 0 | 
 | 8 | Analog input 1 | 
@@ -146,8 +146,8 @@ This section shows the pin number of the Fast Crimping Terminal of the RAK5811 m
 Figure 7 shows the pin order of the IO connector of the module. Through this connector, the RAK5811 module is attached to the WisBoard baseboard. 
 
 <rk-img
-  src="/assets/images/wisblock/rak5811/datasheet/rak5811-wisconnector.png"
-  width="50%"
+  src="/assets/images/wisblock/rak5811/datasheet/rak5811-wisconnector.svg"
+  width="60%"
   caption="RAK5811 IO connector"
 />
 
@@ -206,10 +206,10 @@ Figure 8 shows the dimensions of the module RAK5811 module.
 
 ## Typical Application
 
-A typical application is shown in Figure 11, users can connect up to two 0-5V analog sensors independently.
+A typical application is shown in Figure 11, users can connect up to two 0-5&nbsp;V analog sensors independently.
 
 <rk-img
-  src="/assets/images/wisblock/rak5811/datasheet/typical-application.png"
+  src="/assets/images/wisblock/rak5811/datasheet/typical-application.svg"
   width="50%"
   caption="RAK5811 typical application"
 />
@@ -274,7 +274,7 @@ This combination has the following restrictions:
 />
 
 :::tip 📝 NOTE 3: RAK5801+RAK4261+RAK5005-O
-In order to combine a RAK5811 module, a RAK4261(WisBlock Core module), and the RAK5005-O, the following modification must be introduced: 
+To combine a RAK5811 module, a RAK4261 (WisBlock Core module), and the RAK5005-O, the following modification must be introduced: 
 - In RAK5005-O, remove the R7. See Figure 12. 
 - In RAK5811, remove R94 to R95 (see Figure 13), and use PA08 of ATSAMR34 to read the analog data of the channel “analog0”, and use PA09 of ATSAMR34 to read the analog data of channel analog1.
 

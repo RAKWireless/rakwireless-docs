@@ -31,7 +31,7 @@ The RAK1920 module is a sensor extension module, it supports several defacto-sta
 - Interface to all I2C and Digital I/O sensors of Grove
 - Interface to UART and ADC sensors options of Grove
 - Reserved I2C interface
-- 3.3V and 5V sensors options
+- 3.3&nbsp;V and 5&nbsp;V sensors options
 
 ## Specifications
 ### Overview
@@ -60,7 +60,7 @@ The hardware specification is categorized into four parts. It discusses the inte
 
 ##### Mikroe Click Boards Interfaces
 
-The RAK1920 supports all the Click boards modules manufactured by Mikroe through the mikroBUS™ interface, the figure below shows the pin out diagram of the mikroBUS.
+The RAK1920 supports all the Click boards modules manufactured by Mikroe through the mikroBUS™ interface. Figure 3 shows the pin out diagram of the mikroBUS.
 
 <rk-img
   src="/assets/images/wisblock/rak1920/datasheet/mikrobus-interface.png"
@@ -76,10 +76,10 @@ The RAK1920 supports all the Click boards modules manufactured by Mikroe through
 | 4       | SPI_CK   | SPI Clock                     |
 | 5       | SPI_MISO | SPI Master Input Slave Output |
 | 6       | SPI_MOSI | SPI Master Output Slave Input |
-| 7       | +3.3V    | VCC 3.3V Power                |
+| 7       | +3.3&nbsp;V    | VCC 3.3&nbsp;V Power                |
 | 8       | GND      | Reference Ground              |
 | 9       | GND      | Reference Ground              |
-| 10      | +5V      | VCC 5.5V Power                |
+| 10      | +5&nbsp;V      | VCC 5.5&nbsp;V Power                |
 | 11      | I2C_SDA  | I2C Data                      |
 | 12      | I2C_SCL  | I2C Clock                     |
 | 13      | UART_TX  | UART Transmit                 |
@@ -90,7 +90,7 @@ The RAK1920 supports all the Click boards modules manufactured by Mikroe through
 
 ##### Grove Sensor Interfaces 
 
-The RAK1920 module supports the Grove I2C and digital I/O sensors. Figure below shows the pin number and definition of the Grove sensor. By default, VCC is connected to the 3.3V line of the IO connector. 
+The RAK1920 module supports the Grove I2C and digital I/O sensors. Figure below shows the pin number and definition of the Grove sensor. By default, VCC is connected to the 3.3&nbsp;V line of the IO connector. 
 
 <rk-img
   src="/assets/images/wisblock/rak1920/datasheet/grove-interface.png"
@@ -98,7 +98,7 @@ The RAK1920 module supports the Grove I2C and digital I/O sensors. Figure below 
   caption="Grove Sensor interfaces"
 />
 
-By default, the I2C is enabled in the RAK1920 module, but if it is required, the RAK1920 module can also support sensors with Grove UART interface and ADC sensors. To enable the UART interface,  a resistance connection needs to be added by the customer. When using the Grove UART interface sensor module, replace R9 to R10, R11 to R12, when use Grove ADC interface (not ADC to I2C module) sensor module, replace R13 to R14, change R15 to R16. The figure below shows replace connection resistance location.
+By default, the I2C is enabled in the RAK1920 module, but if it is required, the RAK1920 module can also support sensors with Grove UART interface and ADC sensors. To enable the UART interface,  a resistance connection needs to be added by the customer. When using the Grove UART interface sensor module, replace R9 to R10, R11 to R12, when use Grove ADC interface (not ADC to I2C module) sensor module, replace R13 to R14, change R15 to R16. Figure 5 shows replace connection resistance location.
 
 <rk-img
   src="/assets/images/wisblock/rak1920/datasheet/replace-connection-resistance-location.png"
@@ -106,7 +106,6 @@ By default, the I2C is enabled in the RAK1920 module, but if it is required, the
   caption="Replace connection resistance location"
 />
 
-The figure below shows Grove sensor cables:
 
 <rk-img
   src="/assets/images/wisblock/rak1920/datasheet/grove-sensor-cable.jpg"
@@ -127,7 +126,7 @@ Table below shows Grove cable color and function definition.
 
 ##### Qwiic Sensor Interface
 
-The RAK1920 module supports sensors manufactured by SparkFun through the Qwiic Connet interface. Figure below shows the Qwiic Connect interface.
+The RAK1920 module supports sensors manufactured by SparkFun through the Qwiic Connet interface. Figure 7 shows the Qwiic Connect interface.
 
 <rk-img
   src="/assets/images/wisblock/rak1920/datasheet/qwicc-connect-interface.png"
@@ -135,7 +134,7 @@ The RAK1920 module supports sensors manufactured by SparkFun through the Qwiic C
   caption="Qwiic Connect® interface"
 />
 
-The figure below shows a Qwiic Connect cable:
+Figure 8 shows a Qwiic Connect cable:
 
 <rk-img
   src="/assets/images/wisblock/rak1920/datasheet/qwicc-cable.jpg"
@@ -149,13 +148,17 @@ The table below shows the Qwiic Connect cable color and function definition:
 | ---- | ---- | ---- | 
 | 1 | Yellow | I2C Clock | 
 | 2 | Blue | I2C Data | 
-| 3 | Red | 3.3V | 
+| 3 | Red | 3.3&nbsp;V | 
 | 4 | Black | GND | 
 
 
 ##### Reserved I2C Interface
 
-The RAK1920 module has a reserved I2C interface, it can be used for generic I2C interface sensors. Note, this I2C interface only supports 3.3V type of sensors. Figure below shows the reversed I2C interface.
+The RAK1920 module has a reserved I2C interface, it can be used for generic I2C interface sensors. 
+
+:::tip 📝 NOTE:
+The I2C interface only supports 3.3&nbsp;V type of sensors. 
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak1920/datasheet/reserved-i2c-interface.png"
@@ -178,8 +181,8 @@ Table below shows the recommended operating conditions of the RAK1920 module.
 | **Symbol** | **Description** | **Min.** | **Nom.** | **Max.** | **Unit** | 
 | ---- | ---- | ---- | ---- | ---- | ---- | 
 | VBAT | Power supply for the module | 2.6 |  | 4.2 | V | 
-| 3V3 | 3.3V power supply |  | 3.3 |  | V | 
-| 5V | 5.5V power supply |  | 5.0 |  | V | 
+| 3V3 | 3.3&nbsp;V power supply |  | 3.3 |  | V | 
+| 5&nbsp;V | 5.5&nbsp;V power supply |  | 5.0 |  | V | 
 
 
 #### Mechanical Characteristics
@@ -207,7 +210,7 @@ The following sections will describe the schematic of the RAK1920 module, which 
 
 ##### Power Supply
 
-The RAK1920 module supports 3.3V and 5V options, by default, the 3.3V is used as the power source of sensors. The module integrates a  boost converter from the VBAT to 5V. The VBAT is the battery output voltage, usually between 3.7V and 4.2V. The EN pin enables this boost converter and is controlled by the WisBlock Core module of the overall solution. 
+The RAK1920 module supports 3.3&nbsp;V and 5&nbsp;V options, by default, the 3.3&nbsp;V is used as the power source of sensors. The module integrates a  boost converter from the VBAT to 5&nbsp;V. The VBAT is the battery output voltage, usually between 3.7&nbsp;V and 4.2&nbsp;V. The EN pin enables this boost converter and is controlled by the WisBlock Core module of the overall solution. 
 
 <rk-img
   src="/assets/images/wisblock/rak1920/datasheet/power-supply-ckt.jpg"
@@ -227,8 +230,8 @@ The RAK1920 module uses only a subset of all the pins available in the IO connec
 
 | **Name** | **Description** | **Comment** | 
 | ---- | ---- | ---- | 
-| VBAT | battery output voltage | Maximum: 4.2 Volts | 
-| 3V3 | 3.3 V | Default, sensor power supply | 
+| VBAT | battery output voltage | Maximum: 4.2&nbsp;V | 
+| 3V3 | 3.3&nbsp;V | Default, sensor power supply | 
 | TXD1/RXD1 | UART interface | Connected only to the Click Boards connector. | 
 | CS/SCK/MOSI/MISO | SPI interface | Connected only to the Click Boards | 
 | SDA/SCL | I2C interface | All I2C sensors | 
@@ -242,7 +245,7 @@ The RAK1920 module uses only a subset of all the pins available in the IO connec
 
 ###### IO Connector Pin Order 
 
-The figure below shows the IO connector’s pin order. The connector is located in the bottom layer of the RAK1920 module.
+Figure 14 shows the IO connector’s pin order. The connector is located in the bottom layer of the RAK1920 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1920/datasheet/wisio-connector-pin-order.jpg"

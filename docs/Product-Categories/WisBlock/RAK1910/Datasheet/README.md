@@ -14,21 +14,19 @@ prev: ../Overview/
 The RAK1910 WisBlock GNSS Location Module module, part of the RAK Wireless Wisblock series, is a u-blox MAX-7Q GNSS (GPS, GLONASS, QZSS, and SBAS) module. This module features exceptional performance, high sensitivity, and minimal acquisition time which makes it suitable for low-power IoT solutions.
 The RAK1910 positioning module is a GNSS receiver. It receives and tracks the GPS (including SBAS and QZSS) and the GLONASS signals. QZSS and SBAS signals (by default) can be received concurrently with GPS signals.
 
-### Features
-
-- High accuracy of 2.5m
-- **Update rate**: 10 Hz
-- **Velocity accuracy**: 0.1 m/s
-- **Heading accuracy**: 0.5 degrees
-- Fast location fix. 29 s from cold start to first fix. 1 s from hot start
-- GPS and GLONASS satellite support
-- **Module size**: 10 x 23mm
+### Features 
+* High accuracy of 2.5&nbsp;m
+* **Update rate**: 10&nbsp;Hz 
+* **Velocity accuracy**: 0.1&nbsp;m/s 
+* **Heading accuracy**: 0.5 degrees 
+* Fast location fix. 29&nbsp;sec from cold start to first fix. 1&nbsp;s from hot start
+* GPS and GLONASS satellite support 
+* **Module size**: 10 x 23&nbsp;mm
 
 ## Specifications
 
 ### Overview
-
-<!-- Insert Picture of Sensor with it's dimensions -->
+<!-- Insert Picture of Sensor with its dimensions -->
 
 #### Mounting
 
@@ -45,7 +43,7 @@ The RAK1910 module can be mounted only in slot A of the WisBase board. Figure 1 
 #### Chipset
 
 | Vendor | Part number |
-| ------ | ----------- |
+| --     | --          |
 | uBlox  | MAX-7Q      |
 
 #### Pin Definition
@@ -60,9 +58,10 @@ The RAK1910 WisBlock GNSS Location Module module comprises a standard WisIO conn
 
 ::: tip 📝 NOTE
 
-- Only the **UART** related pin, **1PPS** pin, **RESET** pin, **VDD,** and **GRD** are connected to this module.
-- The RAK1910 module can be installed in the Slot A only
-  :::
+- Only the **UART** related pin, **1PPS** pin, **RESET** pin, **VDD,** and **GRD** are connected to this module. 
+
+- The RAK1910 module can be installed in the Slot A only.
+:::
 
 #### Sensors
 
@@ -202,7 +201,7 @@ Slot for mounting: **Slot A**
 />
 
 #### Schematic Diagram
-The Figure 5 shows the schematic of the RAK1910 module.
+Figure 5 shows the schematic of the RAK1910 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1910/datasheet/RAK1910_schematics.png"

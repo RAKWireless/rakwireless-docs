@@ -9,23 +9,28 @@ prev: ../Overview/
 
 ## Overview
 
+<rk-img
+  src="/assets/images/wisblock/rak1901/datasheet/RAK1901.svg"
+  width="50%"
+  caption="RAK1901 WisBlock Sensor"
+/>
+
 ### Description
 
-The RAK1901 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is a digital temperature and humidity sensor with I2C interface. Designed to work at low power mode, the average consumption is lower than 0.5 uA. The humidity measurement covers the range from 0 to 100 % RH and the temperature measurement covers the range from -40 °C to 125 °C. Measurements accuracy is ±2 %RH for humidity and ±0.2°C for temperature.
+The RAK1901 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is a digital temperature and humidity sensor with  I2C interface. Designed to work at low power mode, the average consumption is lower than 0.5&nbsp;uA. The humidity measurement covers the range from 0 to 100% RH and the temperature measurement covers the range from -40&nbsp;°C to 125&nbsp;°C. Measurements accuracy is ±2% RH for humidity and ±0.2&nbsp;°C for temperature.    
 
 ### Features
-
-- **Temperature sensor accuracy**: ±2.0 °C
-- **Temperature range**: -40 to +125 °C
-- **Humidity sensor accuracy**:±2.0 % RH
-- **Humidity range**:0 to 100%
-- **Module size**: 10 x 10 mm
+* **Temperature sensor accuracy**: ±2.0&nbsp;°C 
+* **Temperature range**:  -40&nbsp;°C to +125&nbsp;°C
+* **Humidity sensor accuracy**:±2.0% RH 
+* **Humidity range**:0 to 100% 
+* **Module size**: 10 x 10&nbsp;mm
 
 ## Specifications
 
 ### Overview
 
-<!-- Insert Picture of Sensor with it's dimensions -->
+<!-- Insert Picture of Sensor with its dimensions -->
 
 #### Mounting
 The RAK1901 module can be mounted on the slots: A, B, C or D of the WisBase board. Figure 1 shows the mounting mechanism of the RAK1901 on a WisBase module, such as the RAK5005-O.
@@ -46,7 +51,11 @@ The RAK1901 module can be mounted on the slots: A, B, C or D of the WisBase boar
 
 #### Pin Definition
 
-The RAK1901 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1901 module to be mounted on a WisBlock baseboard, such as the RAK5005-O. The pin order of the connector and the pinout definition is shown in Figure 2. Note, only the I2C related pins, VDD and GND are connected to this module.
+The RAK1901 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1901 module to be mounted on a WisBlock baseboard, such as the RAK5005-O. The pin order of the connector and the pinout definition is shown in Figure 2. 
+
+:::tip 📝 NOTE:
+Only the I2C related pins, VDD, and GND are connected to this module.    
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak1901/datasheet/RAK1901_pin.png"

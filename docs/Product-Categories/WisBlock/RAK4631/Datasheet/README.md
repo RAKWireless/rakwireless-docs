@@ -23,9 +23,9 @@ certifications:
 
 ### Description
 
-The RAK4631 WisBlock Core module, is a RAK4630 stamp module with an expansion PCB and connectors compatible with the RAK5005-O baseboard. It allows an easy way to access to the pins of the RAK4630 module in order to simplify development and testing processes.
+The RAK4631 WisBlock Core module is a RAK4630 stamp module with an expansion PCB and connectors compatible with the RAK5005-O baseboard. It allows an easy way to access to the pins of the RAK4630 module in order to simplify development and testing processes.
 
-The module itself comprises a RAK4630 as its main component. The RAK4630 is a combination of a nRF52840 MCU and an SX1262 LoRa chip, it features ultra-low power consumption of 2.0uA during sleep mode, high LoRa output power up to 22dBm during transmission mode, and the BLE interface with output power up to 4dBm.
+The module itself comprises a RAK4630 as its main component. The RAK4630 is a combination of a nRF52840 MCU and an SX1262 LoRa chip, it features ultra-low power consumption of 2.0&nbsp;uA during sleep mode, high LoRa output power up to 22&nbsp;dBm during transmission mode, and the BLE interface with output power up to 4&nbsp;dBm.
 
 The module complies with LoRaWAN 1.0.2 protocols, it also supports LoRa point to point communication.
 
@@ -36,14 +36,14 @@ The RF communication characteristic of the module (Lora® + BLE) makes it suitab
 
 - TCXO crystal for LoRa chip
 - I/O ports: UART/I2C/GPIO/USB/SPI (optional NFC interface)
-- Temperature range: -40°C to +85°C
-- Supply voltage: 2.0 ~ 3.6V
-- Low-Power Wireless Systems with 7.8 KHz to 500 KHz Bandwidth
-- Ultra-Low Power Consumption 2.0uA in sleep mode
-- LoRa PA Boost mode with 22dBm output power
-- BLE5.0 (Tx power -20 to +4dBm in 4dB steps)
+- Temperature range: -40&nbsp;°C to +85&nbsp;°C
+- Supply voltage: 2.0 ~ 3.6&nbsp;V
+- Low-Power Wireless Systems with 7.8&nbsp;KHz to 500&nbsp;KHz Bandwidth
+- Ultra-Low Power Consumption 2.0&nbsp;uA in sleep mode
+- LoRa PA Boost mode with 22&nbsp;dBm output power
+- BLE5.0 (Tx power -20 to +4&nbsp;dBm in 4&nbsp;dB steps)
 - Serial Wire Debug (SWD) interface
-- Module size: 20 x 30mm
+- Module size: 20 x 30&nbsp;mm
 
 ## Specifications
 
@@ -56,12 +56,28 @@ The overview covers the RAK4631 board overview and the mounting mechanics of the
 <rk-img
   src="/assets/images/wisblock/rak4631/datasheet/rak4631_overview.png"
   width="80%"
-  caption="Board Realistic View"
+  caption="RAK4631 Overview"
 />
+
+<!---
+Add these two images when the illustrations are correct already. 
+
+<rk-img
+  src="/assets/images/wisblock/rak4631/datasheet/topview.png"
+  width="80%"
+  caption="RAK4631 Top View"
+/>
+
+<rk-img
+  src="/assets/images/wisblock/rak4631/datasheet/bottomview.png"
+  width="80%"
+  caption="RAK4631 Bottom View"
+/>
+--->
 
 #### Mounting Sketch
 
-The RAK4631 module is designed to work with the RAK5005-O base board. The Figure 2 shows how a RAK4631 module should be mounted on top of the RAK5005-O.
+The RAK4631 module is designed to work with the RAK5005-O base board. Figure 2 shows how a RAK4631 module should be mounted on top of the RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak4631/datasheet/mounting-sketch.png"
@@ -71,8 +87,19 @@ The RAK4631 module is designed to work with the RAK5005-O base board. The Figure
 
 ### Hardware
 
-The hardware specification is categorized into four parts. It discusses the pinouts of the module and its corresponding functions and diagrams. It also covers the RF, electrical, and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK4631 Module.
+The hardware specification is categorized into four parts. It discusses the pinouts of the module and its corresponding functions and diagrams. It also covers the interfaces, RF, electrical, and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK4631 Module.
 
+<!---
+Add this image when the top and bottom view illustrations are correct already.
+
+#### Interfaces
+
+<rk-img
+  src="/assets/images/wisblock/rak4631/datasheet/rak4631_overview.png"
+  width="80%"
+  caption="RAK4631 Interfaces"
+/>
+--->
 
 #### RF Characteristics
 
@@ -87,7 +114,7 @@ The RAK4631 module supports the LoRaWAN bands shown in Table below. When buying 
 |     Australia        |     AU915             |     RAK4630(H)     |
 |     Korea            |     KR920             |     RAK4630(H)     |
 |     Asia             |     AS923             |     RAK4630(H)     |
-|     China            |     CN470, CN779             |     RAK4630(L)     |
+|     China            |     CN470, CN779      |     RAK4630(L)     |
 
 #### Electrical Characteristics
 
@@ -95,12 +122,12 @@ The RAK4631 module supports the LoRaWAN bands shown in Table below. When buying 
 
 | **Item** | **Power Consumption** | **Condition** | 
 | ---- | ---- | ---- | 
-| Tx mode LoRa @20dBm | 125mA | LoRa @ PA_BOOST&BT sleep | 
-| Tx mode LoRa @17dBm | 92mA | LoRa @ PA_BOOST&BT sleep | 
-| Tx mode BT@4dBm | 9mA | BT Tx mode & Lora sleep | 
-| Rx mode LoRa @37.5Kbps | 17mA | LoRa @ Receive mode &BT sleep | 
-| Rx mode BT@2Mbps | 11.5mA | BT Rx mode & Lora sleep | 
-| Sleep mode | 2.0uA | LoRa&BT sleep | 
+| Tx mode LoRa @20&nbsp;dBm | 12&nbsp;5mA | LoRa @ PA_BOOST&BT sleep | 
+| Tx mode LoRa @17&nbsp;dBm | 92&nbsp;mA | LoRa @ PA_BOOST&BT sleep | 
+| Tx mode BT@4&nbsp;dBm | 9&nbsp;mA | BT Tx mode & Lora sleep | 
+| Rx mode LoRa @37.5&nbsp;Kbps | 17&nbsp;mA | LoRa @ Receive mode &BT sleep | 
+| Rx mode BT@2&nbsp;Mbps | 11.5&nbsp;mA | BT Rx mode & Lora sleep | 
+| Sleep mode | 2.0&nbsp;uA | LoRa&BT sleep | 
 
 
 ##### Absolute Maximum Ratings

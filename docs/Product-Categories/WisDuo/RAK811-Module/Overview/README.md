@@ -27,11 +27,11 @@ Thank you for choosing **RAK811 WisDuo LPWAN Module** in your awesome IoT Projec
 
 ## Product Description
 
-RAK811 Low-Power Long Range LoRa Technology Transceiver module provides an easy to use, small size and low-power solution for long range wireless data applications.
+RAK811 Low-Power Long Range LoRa Technology Transceiver module provides an easy to use, small size and low-power solution for long-range wireless data applications.
 
-The RAK811 module complies with Class A & C of LoRaWAN 1.0.2 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point to Point (P2P) communication mode which help customers implement their own customized long range LoRa network quickly.
+The RAK811 module complies with Class A & C of LoRaWAN 1.0.2 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point to Point (P2P) communication mode which helps you in implementing your own customized long-range LoRa network quickly.
 
-The RAK811 module is integrated with Semtech’s SX1276 and STM32. Users of RAK811 can configure the mode and operation of the module using AT commands via a UART interface. RAK811 also offers low power features which is very suitable for battery powered applications.
+The RAK811 module is integrated with Semtech’s SX1276 and STM32. You can configure the mode and operation of the module using AT commands via a UART interface. RAK811 also offers low power features which is very suitable for battery-powered applications.
 
 <!-- <rk-btn
   src="../Datasheet/"
@@ -42,22 +42,22 @@ The RAK811 module is integrated with Semtech’s SX1276 and STM32. Users of RAK8
 
 ## Product Features
 
-- Based on **Semtech SX1276**
-- **LoRaWAN 1.0.2** specification compliant
-- **Supported bands**: (EU433, CN470, IN865, EU868, AU915, US915, KR920, AS920 and AS923)
+- Based on **Semtech SX1276**.
+- **LoRaWAN 1.0.2** specification compliant.
+- **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, AS920, and AS923
 - LoRaWAN Activation by OTAA/ABP.
-- LoRa Point to Point (P2P) communication
+- LoRa Point to Point (P2P) communication.
 - Easy to use AT Command Set via UART interface with configurable baud rate.
 - Maximum output power 100&nbsp;mW (20&nbsp;dBm), adjustable from 5 to 20&nbsp;dBm.
 - High sensitivity at -148&nbsp;dBm, enabling extremely long range connectivity.
-- Long range - greater than 15&nbsp;km with optimized antenna.
+- Long-range - greater than 15&nbsp;km with optimized antenna.
 - Low power consumption: 11&nbsp;μA on on standby.
 - Multi-channel, dual data buffer (256&nbsp;bytes each).
-- LoRa/FSK/GFSK/OOK modulation, bidirectional 2&nbsp;way communications.
-- Long battery life for battery powered applications.
-- LoRa technology is capable of demodulating 20&nbsp;dB below noise level, significantly
-  improving immunity to the interference when combined with integrated forward error
-  correction.
+- LoRa/FSK/GFSK/OOK modulation, bidirectional two-way communication.
+- Long battery life for battery-powered applications.
+- LoRa technology is capable of demodulating 20&nbsp;dB below noise level which significantly improves immunity to interference when combined with integrated forward error.
+- **Operating temperature**: -30°&nbsp;C ~ 85°&nbsp;C (industrial grade)
+- **Storage temperature**: -40°&nbsp;C ~ 85°&nbsp;C (non-condensing)
 
 <!-- <rk-btn
   src="https://store.rakwireless.com/products/rak811-lpwan-module"
