@@ -3,6 +3,8 @@ tags:
   - datasheet
   - wisgate
 prev: ../Quickstart/
+certifications:
+  - [RoHS, https://downloads.rakwireless.com/LoRa/Developer-LoRaWAN-Gateway-RAK7244%26RAK7244P/Certification/ROHS-ATL202012091807R01-Report.pdf]
 ---
 
 # RAK7244 WisGate Developer D4 Gateway Datasheet
@@ -403,3 +405,7 @@ Download the latest firmware of RAK7244X series in the table provided below.
 | -------------------- | ------------------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | RAK7244 and RAK7244P | Raspberry Pi 4     | 4.2.0R           | [Download](https://downloads.rakwireless.com/LoRa/Developer-LoRaWAN-Gateway-RAK7244%26RAK7244P/Firmware/RAK7244_Latest_Firmware.zip) |
 | RAK7244C             | Raspberry Pi 4     | 4.2.0R           | [Download](https://downloads.rakwireless.com/LoRa/Developer-LoRaWAN-Gateway-RAK7244C/Firmware/RAK7244C_Latest_Firmware.zip)          |
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

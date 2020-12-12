@@ -50,11 +50,11 @@ Before going through the step in the installation guide of the RAK811 WisDuo LPW
 
 ### Interfacing with RAK811
 
-RAK811 module can be configured using AT commands via UART interface. You need a USB to UART TTL adapter to connect the RAK811 to PC's USB port and a serial terminal tool. It is highly recommended to use RAK Serial Port Tool so you can easily send AT commands and view the replies from the console output.
+RAK811 module can be configured using AT commands via UART interface. You need a USB to UART TTL adapter to connect the RAK811 to PC's USB port and a serial terminal tool. It is highly recommended to use [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools) so you can easily send AT commands and view the replies from the console output.
 
 #### Connect to the RAK811
 
-1. Connect the RAK811 to the serial port of a general-purpose computer (e.g.: USB port) using a USB to UART TTL adapter, as shown in Figure 1.
+1. Connect the RAK811 to the serial port of a general-purpose computer (USB port) using a USB to UART TTL adapter, as shown in Figure 1.
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/1.module-connection.png"
@@ -62,7 +62,7 @@ RAK811 module can be configured using AT commands via UART interface. You need a
   caption="RAK811 Module Connection"
 />
 
-2. Any serial communication tool can be used. But, it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
+2. Any serial communication tool can be used; but, it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
 
 3. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows: 
 
@@ -81,9 +81,9 @@ RAK811 module can be configured using AT commands via UART interface. You need a
 
 ### Configuring RAK811
 
-To connect the RAK811 module to a LoRa P2P connection or a LoRaWAN network, the module must be configured and LoRa parameters must be set by sending AT commands. With a serial communication tool (for example the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)) it is possible to send commands to the RAK811.
+To connect the RAK811 module to a LoRa P2P connection or a LoRaWAN network, the module must be configured and LoRa parameters must be set by sending AT commands. With a serial communication tool, for example the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools), it is possible to send commands to the RAK811.
 
-Connect the RAK811 module to the computer as described in the previous section. Using the serial communication tool then it is possible to send commands to the RAK811, e.g.: sending the `at+version` will display the current firmware version as shown in Figure 3. For more supported commands, refer to [AT Commands for RAK811](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/).
+Connect the RAK811 module to the computer as described in the previous section. Using the serial communication tool, it is possible to send commands to the RAK811. For example, sending the `at+version` will display the current firmware version as shown in Figure 3. For more supported commands, refer to [AT Commands for RAK811](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/).
 
 
 <rk-img
@@ -94,7 +94,7 @@ Connect the RAK811 module to the computer as described in the previous section. 
 
 ### Connecting to The Things Network (TTN)
 
-In this section, a practical exercise will be performed to show how to connect the RAK811 module to The Things Network (TTN™) platform. 
+In this section, a practical exercise will be performed to show how to connect the RAK811 module to The Things Network (TTN) platform. 
 
 
 <rk-img
@@ -128,7 +128,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
 
 #### Create a New Application
 
-1. Choose the “APPLICATIONS”. 
+1. Choose the “**APPLICATIONS**”. 
 
 
 <rk-img
@@ -183,9 +183,9 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
 
 In this form, the device ID must be unique for the application and must be completed with a lower case, alphanumeric characters. The rest of the parameters in the form are very important for the LoRaWAN protocol:
 
-* Device EUI
-* Application Key
-* Application EUI
+* **Device EUI**
+* **Application Key**
+* **Application EUI**
 
 The TTN platform can generate these parameters randomly by leaving those fields empty or you can enter already existing values. 
 
@@ -217,12 +217,12 @@ As shown in the Figure 12, the default activation mode in TTN is the OTAA mode. 
 ###### Configure the OTAA Mode on the RAK811 module
 
 The RAK811 module supports a series of AT commands to configure its internal parameters and control the functionalities of the module. Physically, the module exposes a serial interface through the USB connector. 
-. 
 
-To set up the RAK811 module to join the TTN using OTAA start by connecting the RAK811 module to the Computer (see Figure 1) and open the RAK Serial Port Tool. Wait for the communication to start. It is recommended to test the serial communication and verify the current configuration by sending either of these two AT commands:
+
+To set up the RAK811 module to join the TTN using OTAA, start by connecting the RAK811 module to the Computer (see Figure 1) and open the RAK Serial Port Tool. Wait for the communication to start. It is recommended to test the serial communication and verify the current configuration by sending either of these two AT commands:
 
 ```
-at+get_config=lora:status
+at+set_config=device:restart
 ```
 
 ```
@@ -281,7 +281,7 @@ at+set_config=lora:app_eui:5e9d1e0857cf25f1
 
 :::tip 📝 NOTE:
 
-The Device EUI parameter is not needed for the ChirpStack platform, therefore you will use the same ID as the Device EUI. Otherwise, the firmware will compliant. 
+The App EUI parameter is not needed for the ChirpStack platform; therefore, you will use the same ID as the Device EUI. Otherwise, the firmware will fail connecting to the network server. 
 
 :::
 
@@ -300,7 +300,7 @@ at+set_config=lora:app_key:f921d50cd7d02ee3c5e6142154f274b2
 
 :::tip 📝 NOTE:
 
-After configuring all the parameters, you need to reset your RAK811 Module for saving parameters!
+After configuring all the parameters, you need to reset your RAK811 Module for saving parameters.
 
 :::
 
@@ -312,7 +312,7 @@ at+join
 
 After 5 or 6 seconds, if the request was successfully received by a LoRa gateway, then you should see the messages shown in Figure 15.
 
-8. Now let's try to send a message from the RAK811 module.
+8. Try to send a message from the RAK811 module.
 
 ```
 at+send:lora:2:1234567890
@@ -354,7 +354,7 @@ If the ABP mode is preferred by the user, then the TTN platform needs to be conf
   * **App Session Key**
 
 :::tip 📝 NOTE:
-These fields can be left empty in the form and TTN will complete them with random values, in other cases, you can complete them with specific values.
+These fields can be left empty in the form and TTN will complete them with random values. In other cases, you can complete them with specific values.
 :::
 
 
@@ -376,10 +376,10 @@ The same as the OTAA form, you can leave these fields empty to allow TTN to gene
 
 ###### Configure the ABP mode on the RAK811
 
-To set up the RAK811 module to join the TNN using ABP start by connecting the RAK811 module to the Computer (see Figure 1) and open the RAK Serial Port  Tool. Wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
+To set up the RAK811 module to join the TTN using ABP, start by connecting the RAK811 module to the Computer (see Figure 1) and open the RAK Serial Port  Tool. Wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
 
 ```
-at+get_config=lora:status
+at+set_config=device:restart
 ```
 
 ```
@@ -425,7 +425,7 @@ at+set_config=lora:region:EU868
 4. Set the Device Address.
 
 ```
-at+set_config=lora:dev_addr: 26011af9
+at+set_config=lora:dev_addr:26011af9
 ```
 
 5. Set the LoRa Network Session Key.
@@ -465,7 +465,7 @@ By using the ABP mode in LoRaWAN, it doesn’t require to join a network before 
 
 :::
 
-8. Now, let’s try to send a data from the RAK811 to TTN in ABP mode.
+8. Try to send a data from the RAK811 to TTN in ABP mode.
 
 ```
 at+send:lora:2:1234567890 
@@ -481,7 +481,7 @@ Then, go to the TTN Console to confirm that the message was properly received.
 
 ### Connecting with ChirpStack
 
-In this section, we’ll do a practical exercise to show how to connect the RAK811 module to the ChirpStack platform.
+In this section, it shows how to connect the RAK811 module to the ChirpStack platform.
 
 
 <rk-img
@@ -494,7 +494,7 @@ The ChirpStack or previously known as LoRaServer project provides open-source co
 
 :::tip 📝 NOTE:
 
-In this document, it is assumed that you are using RAK Gateway and its built-in ChirpStack or RAK cloud testing ChirpStack. Also, the gateway with the ChirpStack must be configured successfully. For further information, check the RAK documents for more details.
+It is assumed that you are using RAK Gateway and its built-in ChirpStack or RAK cloud testing ChirpStack. Also, the gateway with the ChirpStack must be configured successfully. For further information, check the RAK documents for more details.
 
 :::
 
@@ -526,7 +526,7 @@ Go to the Application section as shown in the Figure 24.
   caption="Application Section"
 />
 
-By default, you should create a new Application, although you can reuse the existing ones. For this setup, let’s create a new Application by clicking on the “**CREATE**” button, and fill the required parameters as shown in the Figure 25 and Figure 26.
+By default, you should create a new application, although you can reuse the existing ones. For this setup, create a new Application by clicking on the “**CREATE**” button, and fill the required parameters as shown in the Figures 25 and 26.
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/25.new-application.png"
@@ -539,8 +539,8 @@ By default, you should create a new Application, although you can reuse the exis
 
 ChirpStack LoraServer supports multiple system configurations, with only one by default. 
 
-* **Service profile**: field is to select the system profile.
-* **Payload codec**: is the parsing method for selecting load data. Such as parsing LPP format data.
+* **Service profile**: Field is to select the system profile.
+* **Payload codec**: It is the parsing method for selecting load data such as parsing LPP format data.
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/26.filling-parameters.png"
@@ -648,7 +648,7 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
 
 :::tip 📝 NOTE:
 
-Standard OTAA mode requires the **Device EUI**, **Application Key**, and the **Application EUI**, but in the ChirpStack’s implementation, only the Device EUI and the Application Key are mandatory. The Application EUI is not required and is not recorded in the Application tab. Nevertheless, the Application EUI is a mandatory parameter in the RAK811 module’s firmware, in order to resolve this mismatch, you can reuse the Device EUI as the Application EUI during the configuration in the side of the node. 
+Standard OTAA mode requires the **Device EUI**, **Application Key**, and **Application EUI**, but in the ChirpStack’s implementation, only the Device EUI and the Application Key are mandatory. The Application EUI is not required and not recorded in the Application tab. Nevertheless, the Application EUI is a mandatory parameter in the RAK811 module’s firmware. In order to resolve this mismatch, you can reuse the Device EUI as the Application EUI during the configuration in the side of the node. 
 
 :::
 
@@ -656,10 +656,10 @@ Standard OTAA mode requires the **Device EUI**, **Application Key**, and the **A
 
 The RAK811 module supports a series of [AT commands](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/) to configure its internal parameters and control the functionalities of the module. 
 
-To set up the RAK811 module to join ChirpStack using OTAA start by connecting the RAK811 module to the Computer (see Figure 1) and open the RAK Serial Port  Tool. Wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
+To set up the RAK811 module to join ChirpStack using OTAA, start by connecting the RAK811 module to the Computer (see Figure 1) and open the RAK Serial Port  Tool. Wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
 
 ```
-at+get_config=lora:status
+at+set_config=device:restart
 ```
 
 ```
@@ -720,7 +720,7 @@ at+set_config=lora:app_eui:5e9d1e0857cf25f1
 ```
 
 :::tip 📝 NOTE:
-Remember, the Application EUI parameter was not required in the ChirpStack platform, therefore it possible to use the same id as the Device EUI. Otherwise, the firmware will complain. 
+Remember, the Application EUI parameter was not required in the ChirpStack platform; therefore, it possible to use the same id as the Device EUI. Otherwise, the firmware will complain. 
 ::: 
 
 6. Set the Application Key.
@@ -761,7 +761,7 @@ at+join
   caption="Checking LoRaWAN Joint Request in Chirpstack OTAA Console"
 />
 
-9. Let’s try to send a data from RAK811 Module to ChirpStack.
+9. Try to send a data from RAK811 Module to ChirpStack.
 
 ```
 at+send=lora:2:1234567890 
@@ -773,7 +773,7 @@ at+send=lora:2:1234567890
   caption="Send a LoRaWAN Message via RAK Serial Port Tool"
 />
 
-- On the ChirpStack platform, you should also see the messages in the LORAWAN FRAMES tab as shown in Figure 41. Note, by convention, messages sent from nodes to gateways are considered as **Uplinks**. While messages sent by gateways to nodes are considered as **Downlinks**. 
+- On the ChirpStack platform, you should also see the messages in the LORAWAN FRAMES tab as shown in Figure 41. By convention, messages sent from nodes to gateways are considered as **Uplinks** while messages sent by gateways to nodes are considered as **Downlinks**. 
 
 
 <rk-img
@@ -811,9 +811,9 @@ After selecting the ABP mode, the following parameters appear in the Activation 
 
 2. Then, you can see that there are some parameters for ABP in the **“ACTIVATION”** item:
 
-  *	Device address
-  *	Network Session Key
-  *	Application Session Key
+  *	**Device address**
+  *	**Network Session Key**
+  *	**Application Session Key**
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/43.abp-activation-parameters.png"
@@ -826,10 +826,10 @@ After selecting the ABP mode, the following parameters appear in the Activation 
 
 ###### Configure the ABP mode on the RAK811
 
-In the following steps, you will configure the RAK811 module to work in the ABP mode. To set up the RAK811 module to join ChirpStack using ABP start by connecting the RAK811 module to the Computer (see Figure 1) and open the RAK Serial Port Tool, wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
+In the following steps, you will configure the RAK811 module to work in the ABP mode. To set up the RAK811 module to join ChirpStack using ABP, start by connecting the RAK811 module to the Computer (see Figure 1) and open the RAK Serial Port Tool. Wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
 
 ```
-at+get_config=lora:status
+at+set_config=device:restart
 ```
 
 ```
@@ -911,12 +911,12 @@ at+join
 
 :::tip 📝 NOTE:
 
-By using the ABP mode in LoRaWAN protocol, it doesn’t require to join a network before sending LoRaWAN package. But, to keep the consistency of internal states of the firmware of the RAK811 module, it still required to send at+join command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
+By using the ABP mode in LoRaWAN protocol, it doesn’t require to join a network before sending LoRaWAN package. But, to keep the consistency of internal states of the firmware of the RAK811 module, it still required to send `at+join` command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
 
 :::
 
 
-8. Now, try to send a data from RAK811 Module to ChirpStack.
+8. Try to send a data from RAK811 Module to ChirpStack.
 
 ```
 at+send=lora:2:1234567890 
@@ -934,7 +934,7 @@ This section will show you how to set up and connect two RAK811 units to work in
 
 1. Two RAK811 units shall be set to operate on EU868 frequency. 
 
-2. The setup of the RAK811 units are done by connecting them with a general-purpose computer through the UART port. The setup of each RAK811 can be done separately but testing the LoRa P2P mode will require having both units connected simultaneously to its respective UART port (This could be one computer with 2 USB ports or 2 computers with one USB port each).
+2. The setup of the RAK811 units are done by connecting them with a general-purpose computer through the UART port. The setup of each RAK811 can be done separately, but testing the LoRa P2P mode will require having both units connected simultaneously to its respective UART port. This could be one computer with two USB ports or two computers with one USB port each.
 
 3. Set the RAK811 to work in LoRa P2P mode. Open the RAK Serial Port Tool and send the following command:
 
@@ -1069,7 +1069,7 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
   caption="Select Firmware"
 />
 
-6.	Click the "Upgrade" button to upgrade the device. After the upgrade is complete, the RAK811 module will be ready to work with the new firmware.
+6.	Click the "**Upgrade**" button to upgrade the device. After the upgrade is complete, the RAK811 module will be ready to work with the new firmware.
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/58.firmware-upgrading.png"

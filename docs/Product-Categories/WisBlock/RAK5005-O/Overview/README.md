@@ -14,9 +14,9 @@ Thank you for choosing **RAK5005-O WisBlock Base Board** in your awesome IoT Pro
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK5005-O Baseboard Installation Guide](../../../../Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/)
-* [RAK5005-O 3D Model](https://downloads.rakwireless.com/LoRa/WisBlock/WisBlock-3D/pwb-rak5005-O.stp)
-* [24 Pin Female Connector 3D File (Sensor Slot)](https://downloads.rakwireless.com/3D_File/WisConnector/F24S1003K6M.stp)
-* [40 Pin Female Connector 3D File (Core and IO Slot)](https://downloads.rakwireless.com/3D_File/WisConnector/F40S1003K6M.stp)
+* [RAK5005-O 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/RAK5005-O.step)
+* [24-Pin Female Connector 3D File (Sensor Slot)](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/F24S1003K6M.stp)
+* [40-Pin Female Connector 3D File (Core and IO Slot)](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/F40S1003K6M.stp)
 
 
 ## Product Description
@@ -49,17 +49,17 @@ It has as well two user definable LED’s and one power supply/charging indicato
 ## Product Features
 
 * **Power supply**     
-    * **RAK5005-O** supports both 5&nbsp;V USB and 3.7&nbsp;V rechargeable battery as power supply. In addition, it has a connector for a 5&nbsp;V solar panel to recharge the battery in a remote solution.     
+    * **RAK5005-O** supports both 5&nbsp;V USB and 3.7&nbsp;V rechargeable battery as power supply. In addition, it has a connector for a 5V solar panel to recharge the battery in a remote solution.     
     * Control of power consumption    
     * **RAK5005-O** has an electronic power switch for the supply to the **WisBlock Sensor** and **WisBlock IO** slots. The power supply for some of the **WisBlock Sensor** boards and most of the **WisBlock IO** extension boards can be controlled by the **WisBlock Core** modules application.    
 
 * **Size**    
-    * **RAK5005-O** has a size of only 30x60&nbsp;mm which lets you create solutions that fits into smallest housings.
+    * **RAK5005-O** has a size of only 30 x 60&nbsp;mm which lets you create solutions that fits into smallest housings.
 
 
 ## Prerequisites 
 
-WisBlock Base is amazingly easy to use and requires only a USB cable to start developing with the system..
+WisBlock Base is amazingly easy to use and requires only a USB cable to start developing with the system.
 
 :::warning ⚠️ WARNING    
 - Only 3.7-4.2&nbsp;V Rechargable LiPo batteries are supported. Do not use other types of batteries with the system.    

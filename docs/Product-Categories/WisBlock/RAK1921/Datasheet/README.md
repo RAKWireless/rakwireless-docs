@@ -23,12 +23,15 @@ RAK1921 is an OLED display module with a 128×64 dot matrix. The main characteri
 - Dot Matrix: **128×64**
 - Driver IC: **SSD1306**
 - Interface: **IIC**
-- Wide range of operating temperature: **-30°–70° C**
+- Wide range of operating temperature: **-30°–70°&nbsp;C**
 - Compatible RAK5005-O header interface
 
 ## Specifications
+
+<!---
 ### Overview
 #### Mounting
+--->
 
 ### Hardware
 
@@ -37,7 +40,7 @@ The hardware specification is categorized into four parts. It discusses the inte
 
 #### Interfaces
 
-The RAK1921 module is compatible with RAK5005-O WisBoard baseboard. The RAK5005-O has reserved a dedicated I2C port with a 2.54mm header, as shown in the red rectangle in Figure below, in which the RAK1921 can be attached. 
+The RAK1921 module is compatible with RAK5005-O WisBoard baseboard. The RAK5005-O has reserved a dedicated I2C port with a 2.54&nbsp;mm header, as shown in the red rectangle in Figure 2, in which the RAK1921 can be attached. 
 
 <rk-img
   src="/assets/images/wisblock/rak1921/datasheet/interface.png"
@@ -53,7 +56,7 @@ Be careful in selecting the baseboard, and make sure that RAK5005-O is chosen, b
 
 #### Pin Definition
 
-Figure below shows the name of the pins available in the RAK1921 module. This module supports an I2C interface.  
+Figure 2 shows the name of the pins available in the RAK1921 module. This module supports an I2C interface.  
 
 <rk-img
   src="/assets/images/wisblock/rak1921/datasheet/RAK1921-pin-definition.png"

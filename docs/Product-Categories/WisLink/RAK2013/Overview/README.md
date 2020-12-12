@@ -10,6 +10,7 @@ next: ../Datasheet/
 Thank you for choosing **RAK2013 WisLink Cellular Pi HAT** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
 * [Datasheet](../Datasheet/)
+* [RAK2013 3D Model](https://downloads.rakwireless.com/3D_File/WisLink/PWB-RAK2013.stp)
 
 :::tip 📝 NOTE
 Purchasing the [RAK2013 WisLink Cellular Pi Hat](../../RAK2013) separately with the intent of adding a cellular feature in your existing RAK2245 Pi HAT is not possible. Hence, purchase the RAK7243C/7244C instead, as it is a specifically modified gateway that is composed of RAK2245 and RAK2013.

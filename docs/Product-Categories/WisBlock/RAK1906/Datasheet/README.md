@@ -18,7 +18,7 @@ The RAK1906 WisBlock Environmental Sensor module, part of the RAK Wireless Wisbl
 ### Features 
 * **Temperature range**: -40&nbsp;°C to 85&nbsp;°C
 * **Humidity range**: 0 to 100%
-* **Pressure range**: 300 to 1100&nbsp;hPa
+* **Pressure range**: 300&nbsp;hPa to 1100&nbsp;hPa
 * **Gas sensor response time**: < 1&nbsp;sec
 * **Gas sensor output**: direct output of IAQ (Indoor Air Quality) index
 * **Module size**: 10 x 10&nbsp;mm
@@ -47,10 +47,12 @@ The RAK1906 module can be mounted on the slots: A, B, C, or D of the WisBase boa
 | BOSCH  | BME680      |
 
 #### Pin Definition
-The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1906 module to be mounted on a WisBlock base board, such as RAK5005-O. The pin order of the connector  and the definition of the pinout are shown in Figure 2. 
+The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1906 module to be mounted on a WisBlock base board, such as RAK5005-O. The pin order of the connector and the definition of the pinout are shown in Figure 2. 
 
 
-
+:::tip 📝 NOTE:
+Only the I2C related pin, VDD, and GND are connected to this module. 
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak1906/datasheet/RAK1906_connector_pinout.png"
@@ -58,8 +60,7 @@ The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO conn
   caption="RAK1906 WisBlock Environmental Sensor Pinout"
 />
 
-:::tip 📝 NOTE:
-- Only the I2C related pin, VDD, and GND are connected to this module. 
+Pins 10, 12, 13, and 15 are connected to the interrupt pins of LIS3DH, refer to the datasheet of LIS3DH for details.
 
 - Pins 10, 12, 13, and 15 are connected to the interrupt pins of LIS3DH, please refer to the datasheet of LIS3DH for details.
 :::
@@ -93,7 +94,7 @@ The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO conn
   <tr>
     <td>Supply Current</td>
     <td>I<sub>DD,T</sub></td>
-    <td>1 Hz Forced Mode, Temperature Measurement Only</td>
+    <td>1&nbsp;Hz Forced Mode, Temperature Measurement Only</td>
     <td></td>
     <td>1.0</td>
     <td></td>
@@ -102,7 +103,7 @@ The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO conn
   <tr>
     <td rowspan="2">Absolute Accuracy Temperature</td>
     <td>A<sub>T,25</sub></td>
-    <td>25°C</td>
+    <td>25&nbsp;°C</td>
     <td></td>
     <td>±0.5</td>
     <td></td>
@@ -110,7 +111,7 @@ The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO conn
   </tr>
   <tr>
     <td>A<sub>T,full</sub></td>
-    <td>0-65 C</td>
+    <td>0-65&nbsp;°C</td>
     <td></td>
     <td>±1.0</td>
     <td></td>
@@ -189,7 +190,7 @@ The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO conn
   <tr>
     <td>Absolute Accuracy</td>
     <td>A<sub>h</sub></td>
-    <td>20-80% r.H., 25 °C, including hysteresis</td>
+    <td>20-80% r.H., 25&nbsp;°C, including hysteresis</td>
     <td></td>
     <td>±3</td>
     <td></td>
@@ -249,7 +250,7 @@ The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO conn
   <tr>
     <td rowspan="2">Temperature Coefficient Of Offset</td>
     <td rowspan="2">TCO<sub>P</sub></td>
-    <td rowspan="2">25-40 °C, 900 hPa</td>
+    <td rowspan="2">25-40&nbsp;°C, 900&nbsp;hPa</td>
     <td></td>
     <td>±1.3</td>
     <td></td>
@@ -264,7 +265,7 @@ The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO conn
   <tr>
     <td>Absolute Accuracy Pressure</td>
     <td>A<sub>p,full</sub></td>
-    <td>300-1100 hPa <br>0 -65 °C</td>
+    <td>300-1100&nbsp;hPa <br>0-65&nbsp;°C</td>
     <td></td>
     <td>±0.6</td>
     <td></td>

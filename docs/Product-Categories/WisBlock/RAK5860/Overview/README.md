@@ -16,8 +16,8 @@ Thank you for choosing **RAK5860 WisBlock NB-IoT Interface Module** in your awes
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
-* [RAK5860 3D Model](https://downloads.rakwireless.com/LoRa/WisBlock/WisBlock-3D/pwb-rak5860.stp)
-* [40 Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/WisConnector/M40S1003K6M.stp)
+* [RAK5860 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/RAK5860_VA.step)
+* [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
 * [WisBlock IO Tutorial](/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
 
 **Examples**: 
@@ -51,17 +51,17 @@ For debugging purpose, a Micro-USB connector is used for sending AT commands, da
         * GNSS location    
 
 * **Power consumption control**    
-    * The RAK5860 modules power supply can be controlled by the WisBlock Core MCU to reduce power consumption    
+    * The RAK5860 modules power supply can be controlled by the WisBlock Core MCU to reduce power consumption. 
 
 * **Size**    
-    * 35 x 25mm    
+    * 35 x 25&nbsp;mm    
 
 ## Prerequisites
 
-To use a **RAK5860** you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK5860** module. Furthermore, you need a **WisBlock Core** module to use the sensor.   
+To use a **RAK5860**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK5860** module. Furthermore, you need a **WisBlock Core** module to use the sensor.   
 
 :::warning ⚠️ WARNING    
 * When using the LTE transceivers, make sure that always an antenna is connected. Using the transceiver without an antenna can damage the system.    
 * The included active GPS antenna must be connected to the iPEX antenna connector on the board. Otherwise the module will not work.    
-* Please make sure to fix the module with the screws to ensure a proper function.    
+* Make sure to fix the module with the screws to ensure a proper function.    
 :::

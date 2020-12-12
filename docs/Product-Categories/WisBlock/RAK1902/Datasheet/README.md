@@ -48,9 +48,10 @@ The RAK1902 module can be mounted on the slots: A, B, C, or D of the WisBase boa
 The RAK1902 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1902 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in Figure 2. 
 
 :::tip 📝 NOTE:
-Only the I2C related pins, VDD and GND are connected to this module.
-:::
 
+Only the I2C related pins, VDD and GND are connected to this module.
+
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak1902/datasheet/RAK1902_connector_pinout.png"
@@ -59,20 +60,18 @@ Only the I2C related pins, VDD and GND are connected to this module.
 />
 
 #### Sensors
-
-##### Pressure Sensor
-
-| Symbol             | Parameter                          | Test Condition                                                                                | Min. |         Typ.          | Max. |      Unit      |
-| ------------------ | ---------------------------------- | --------------------------------------------------------------------------------------------- | :--: | :-------------------: | :--: | :------------: |
-| P<sub>Top</sub>    | Operating Temperature Range        |                                                                                               | -40  |                       | +85  |       °C       |
-| PT<sub>full</sub>  | Full Accuracy Temperature Range    |                                                                                               |  0   |                       | +65  |       °C       |
-| P<sub>op</sub>     | Operating Pressure Range           |                                                                                               | 260  |                       | 1260 |      hPa       |
-| P<sub>bits</sub>   | Pressure Output Data               |                                                                                               |      |          24           |      |      bits      |
-| P<sub>sens</sub>   | Pressure Sensitivity               |                                                                                               |      |         4096          |      |    LSB/hPa     |
-| P<sub>AccRel</sub> | Relative Accuracy over Pressure    | P = 800 – 1100 hPa <br /> T = 25 °C                                                           |      |         ±0.1          |      |      hPa       |
-| P<sub>AccT</sub>   | Absolute Accuracy over Temperature | P<sub>op</sub> = 0 to 65 °C <br /> after OPC <br /> P<sub>op</sub> = 0 to 65 °C <br /> no OPC |      | ±0.1 <br /> <br /> ±1 |      |      hPa       |
-| P<sub>noise</sub>  | RMS Pressure Sensing Noise         | with embedded filtering                                                                       |      |        0.0075         |      | hPa <br /> RMS |
-| ODR<sub>Pres</sub> | Pressure Output Data Rate          |                                                                                               |      |     1/10/25/50/75     |      |       Hz       |
+##### Pressure Sensor   
+| Symbol | Parameter | Test Condition | Min. | Typ. | Max. | Unit |
+| --     | --        | --             | :-:  | :-:  | :-:  | :-:  |
+| P<sub>Top</sub> | Operating Temperature Range |  | -40 |  | +85 | °C |
+| PT<sub>full</sub> | Full Accuracy Temperature Range |  | 0 |  | +65 | °C |
+| P<sub>op</sub> | Operating Pressure Range |  | 260 |  | 1260 | hPa |
+| P<sub>bits</sub> | Pressure Output Data |  |  | 24 |  | bits |
+| P<sub>sens</sub> | Pressure Sensitivity |  |  | 4096 |  | LSB/hPa |
+| P<sub>AccRel</sub> | Relative Accuracy over Pressure | P = 800 – 1100&nbsp;hPa <br /> T = 25&nbsp;°C |  | ±0.1 |  | hPa |
+| P<sub>AccT</sub> | Absolute Accuracy over Temperature | P<sub>op</sub> = 0 to 65&nbsp;°C <br /> after OPC  <br /> P<sub>op</sub> = 0 to 65&nbsp;°C <br /> no OPC |  | ±0.1 <br />  <br />  ±1 |  | hPa |
+| P<sub>noise</sub> | RMS Pressure Sensing Noise | with embedded filtering |  | 0.0075 |  | hPa <br /> RMS |
+| ODR<sub>Pres</sub> | Pressure Output Data Rate |  |  | 1/10/25/50/75 |  | Hz |
 
 #### Electrical Characteristics
 
@@ -106,7 +105,7 @@ Figure 3 shows the dimensions and the mechanic drawing of the RAK1902 module.
 />
 
 #### Schematic Diagram
-The Figure 5 shows the schematic of the RAK1902 module.
+Figure 5 shows the schematic of the RAK1902 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1902/datasheet/RAK1902_schematics.png"

@@ -22,15 +22,15 @@ This module integrates a 12V power supply, which can be used  to power external 
 
 ### Features
 
--	Two 4-20mA analog inputs.
+-	Two 4-20&nbsp;mA analog inputs.
 -	WisBlock IO interface, compatible with multiple WisBlock Core modules, such as RAK4631.
--	0.005mA conversion accuracy.
+-	0.005&nbsp;mA conversion accuracy.
 -	Supports low power consumption mode. The module can be powered off by the WisBlock Core module for saving energy during idle periods.
--	12V output to  power external sensors.
+-	12&nbsp;V output to  power external sensors.
 -	Reserved I2C expansion interface.
 -	Fast crimping terminals.
--	Designed with a 2kV ESD protection level.
--	Small dimensions of 35mm x 25mm.
+-	Designed with a 2&nbsp;kV ESD protection level.
+-	Small dimensions of 35&nbsp;mm x 25&nbsp;mm.
 
 ## Specifications
 
@@ -183,7 +183,7 @@ The functionalities of each pins of the WisIO connector are tabulated below.
 | 39 | GND | 40 | GND | 
 
 :::tip 📝 NOTE:
-This signal controls the dc-dc power supply on RAK5801, before capturing analog signal, please set this pin to high to enable power for RAK5801.
+This signal controls the dc-dc power supply on RAK5801, before capturing analog signal, set this pin to high to enable power for RAK5801.
 :::
 
 #### Mechanical Characteristics

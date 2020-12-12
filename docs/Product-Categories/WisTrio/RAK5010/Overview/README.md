@@ -13,6 +13,9 @@ Thank you for choosing **RAK5010 WisTrio NB-IoT Tracker Pro** in your awesome Io
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * [AT Command Manual](../AT-Command-Manual/)
+* [RAK5010 3D Model](https://downloads.rakwireless.com/3D_File/WisTrio/PWB-RAK5010.stp)
+
+
 <!-- <rk-img
   src="/assets/images/wistrio/rak5010/quickstart/1.overview/sezihji5wsoxeb4ikcfk.jpg"
   width="50%"

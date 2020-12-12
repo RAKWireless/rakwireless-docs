@@ -16,7 +16,7 @@ The RAK1903 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is
 ### Features 
 * **Measurement range**: 0.01 to 83865&nbsp;lux
 * Optical filtering to match human eye
-* **Typical power consumption**: 1.8&nbsp;uA 
+* **Typical power consumption**:  1.8&nbsp;uA 
 * **Module size**: 10 x 10&nbsp;mm
 
 ## Specifications
@@ -43,10 +43,12 @@ The RAK1903 module can be mounted on the slots: A, B, C, or D of the WisBase boa
 | TI     | OPT3001DNPR |
 
 #### Pin Definition
-The RAK1903 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1903 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector the definition of the pinout are shown in Figure 2.
+The RAK1903 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1903 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector the definition of the pinout are shown in Figure 2. 
 
 :::tip 📝 NOTE:
+
 Only the I2C related pins, interrupt pins, VDD and GND are connected to this module.
+
 :::
 
 <rk-img

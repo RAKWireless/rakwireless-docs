@@ -13,6 +13,8 @@ Thank you for choosing **RAKBox-B2** in your awesome IoT Project! 🎉 To help y
 
 - [Datasheet](../Datasheet/)
 - [Installation Guide](../Installation/)
+- [RAKBox-B2 3D Model](https://downloads.rakwireless.com/3D_File/Accessory/RAKBox-B2.stp)
+
 
 ## Product description
 RAKBox-B2 is an IP67 rated enclosure for outdoor usage. It is designed specifically for the WisBlock products.

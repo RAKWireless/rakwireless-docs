@@ -210,7 +210,7 @@ Before using RAK4600 on Arduino IDE you need to flash a new bootloader using RAK
 Please refer to [RAKDAP1 Flash and Debug Tool](../../../../../Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool).
 -->
 
-Please refer to <a href="../../../../../Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool" target="_blank">RAKDAP1 Flash and Debug Tool</a>
+Please refer to <a href="/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool" target="_blank">RAKDAP1 Flash and Debug Tool</a>
 
 2. Check pyOCD installation
 
@@ -242,7 +242,7 @@ Before upload any Arduino example make sure that the RAK4600 is on DFU mode.
 
 ## Connecting to The Things Network (TTN)
 
-Please refer to <a href="../../../../../Product-Categories/WisDuo/RAK4600-Module/Quick-Start-Guide/Quickstart/#connecting-to-the-things-network-ttn" target="_blank">Connecting to The Things Network (TTN)</a>
+Please refer to <a href="/Product-Categories/WisDuo/RAK4600-Module/Quickstart/#connecting-to-the-things-network-ttn" target="_blank">Connecting to The Things Network (TTN)</a>
 
 <!--
 Please refer to [Connecting to The Things Network (TTN)](/Product-Categories/WisDuo/RAK4600-Module/Quick-Start-Guide/Quickstart/#connecting-to-the-things-network-ttn)
@@ -578,7 +578,7 @@ Now, let’s try to send a data from the RAK4600 Evaluation Board to TTN in ABP 
 -->
 ## Connecting with Chirpstack
 
-Please refer to <a href="../../../../../Product-Categories/WisDuo/RAK4600-Module/Quick-Start-Guide/Quickstart/#connecting-with-chirpstack" target="_blank">Connecting with ChirpStack</a>
+Please refer to <a href="/Product-Categories/WisDuo/RAK4600-Module/Quickstart/#connecting-with-chirpstack" target="_blank">Connecting with ChirpStack</a>
 
 
 <!--

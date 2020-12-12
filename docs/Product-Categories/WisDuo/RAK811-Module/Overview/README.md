@@ -24,6 +24,7 @@ Thank you for choosing **RAK811 WisDuo LPWAN Module** in your awesome IoT Projec
 * [RAK811 for Arduino Hardware](/Product-Categories/WisDuino/) - The core module of WisDuino is the RAK811 LPWAN Module and its interface supports Arduino standard headers. For more info about the Arduino library for RAK811, refer to the [Official RAK811 Arduino Library](https://github.com/RAKWireless/WisNode-Arduino-Library).
 * [Arduino Open Source Framework via STM32 Core](https://github.com/RAKWireless/Evaluation_Boards/tree/master/RAK811) - You can directly program the STM32 inside RAK811 via Arduino platform so you will not need any external MCU.
 * [Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#rak811-wisduo-lpwan-module-datasheet)
+* [RAK811 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/PWB-RAK811.stp)
 
 ## Product Description
 

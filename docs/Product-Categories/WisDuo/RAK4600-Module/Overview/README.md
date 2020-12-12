@@ -13,9 +13,10 @@ Thank you for choosing **RAK4600 WisDuo LPWAN Module** in your awesome IoT Proje
 * [Getting Started](../Quickstart)
 * [AT Command Manual](../AT-Command-Manual/)
 * <a href="/RUI/" target="_blank">RUI Secondary Development</a> - RAK4600 module supports RUI Secondary Development, refer to <a href="/RUI/" target="_blank">RUI</a> for further details.
-* [Low Level Development](../Low-Level-Development/)
-* [Open Source Framework](../Quick-Start-Guide/Quickstart/#open-source-framework) - RAK4600 module supports Arduino Open Source Framework.
-* [Datasheet](../Datasheet/)
+* [Deep Development](/Product-Categories/WisDuo/RAK4600-Module/Deep-Development/)
+* [Open Source Framework](https://github.com/RAKWireless/Evaluation_Boards/tree/master/RAK4600) -RAK4600 module supports Arduino Open Source Framework, refer to [RAKWireless Github](https://github.com/RAKWireless/Evaluation_Boards/tree/master/RAK4600) for more details.
+* [Datasheet](/Product-Categories/WisDuo/RAK4600-Module/Datasheet/)
+* [RAK4600 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/PWB-RAK4600.stp)
 
 <!-- <rk-img
   src="/assets/images/wisduo/rak4600-module/overview/yb23mhfij8dwh5muoavk.png"

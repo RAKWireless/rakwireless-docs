@@ -12,6 +12,7 @@ Thank you for choosing **RAK4260 WisDuo LPWAN Module** in your awesome IoT Proje
 
 * [Datasheet](../Datasheet/)
 * [Microchip LoRaWAN Stack (MLS) Demo](https://github.com/RAKWireless/RAK4260-LoRaNode-demo)
+* [RAK4260 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/PWB-RAK4260.stp)
 
 <!-- <rk-img
   src="/assets/images/wisduo/rak4260-module/overview/rak4260.png"

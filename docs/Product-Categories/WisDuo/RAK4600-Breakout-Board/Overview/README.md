@@ -15,6 +15,8 @@ Thank you for choosing **RAK4600 Breakout Board** in your awesome IoT Project! ð
 * [Datasheet](../Datasheet/)
 * <a href="../../../../../Product-Categories/WisDuo/RAK4600-Module/AT-Command-Manual/" target="_blank">AT Command Manual</a>
 * <a href="../../../../../Product-Categories/WisDuo/RAK4600-Module/Low-Level-Development/" target="_blank">Low Level Development</a>
+* [RAK4600 Breakout 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/PWB-RAK4600%20Breakout%20Board.stp)
+
 
 <!-- <rk-img
   :src="`${$frontmatter.static_root}/rak4600-breakout-module.png`"

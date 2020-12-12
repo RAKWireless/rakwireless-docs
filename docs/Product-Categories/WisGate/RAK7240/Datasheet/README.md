@@ -6,7 +6,8 @@ prev: ../Quickstart/
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_CE_Certificate.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_FCC_Certificate.zip]
-  - [RCM, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240-RCM-Declaration-of-Conformity.pdf]
+  - [RCM, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240-RCM_Test_Report.zip]
+  - [IC, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7249_RAK7240_IC_Cert.pdf]
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK-ROHS-ATL202011241747R01-Report.pdf]
 ---
 

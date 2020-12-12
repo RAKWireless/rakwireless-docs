@@ -240,7 +240,7 @@ Here is an overview on how to connect the SWD interface. If you cannot find your
 ### RAK811 Module
 
 <rk-img
-  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/6.rak811-swd.png"
+  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/rak811.svg"
   width="40%"
   caption="RAK811 Module Pinout"
 />
@@ -266,7 +266,7 @@ Here is an overview on how to connect the SWD interface. If you cannot find your
 
 
 <rk-img
-  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/9.rak4270-swd.png"
+  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/rak4270.svg"
   width="40%"
   caption="RAK4270 Module Pinout"
 />
@@ -274,8 +274,8 @@ Here is an overview on how to connect the SWD interface. If you cannot find your
 ### RAK4260 Evaluation Board
 
 <rk-img
-  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/10.rak4260-evb-connection.png"
-  width="60%"
+  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/rak4260.svg"
+  width="40%"
   caption="RAK4260 Evaluation Board Pinout"
 />
 
@@ -283,8 +283,8 @@ Here is an overview on how to connect the SWD interface. If you cannot find your
 
 
 <rk-img
-  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/11.rak4600-evb-connection.png"
-  width="60%"
+  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/rak4600.svg"
+  width="40%"
   caption="RAK4600 Evaluation Board Pinout"
 />
 

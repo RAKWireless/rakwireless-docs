@@ -15,6 +15,7 @@ Thank you for choosing **RAK811 Breakout Board** in your awesome IoT Project! ðŸ
 * [Quick Start Guide](../Quickstart/)
 * [AT Command Manual](../AT-Command-Manual/)
 * [Datasheet](../Datasheet/)
+* [RAK811 Breakout 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/PWB-RAK811_BREAKOUT.stp)
 
 ## Product Description
 

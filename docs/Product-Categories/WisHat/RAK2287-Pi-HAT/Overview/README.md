@@ -12,6 +12,9 @@ rak_model: RAK2287 Pi HAT
 Thank You For choosing **RAK2287 Pi HAT** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
 * [Datasheet](../Datasheet/)
+* [RAK2287 Pi HAT 3D Model](https://downloads.rakwireless.com/3D_File/WisHat/PWB-RAK2287_PI_HAT.stp)
+
+
 <!-- <rk-img
   :src="`${$frontmatter.static_root}/1.rak2287-pi-hat.png`"
   width="75%"

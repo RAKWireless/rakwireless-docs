@@ -1,25 +1,26 @@
 ---
 rak_img: /assets/images/wisduo/bastwan/overview/BastWAN_Home.png
-rak_desc: BastWAN is a Feather compatible board based on the RAK4260 module with the ATSAMR34 MCU with integrated LoRa transceiver.
+rak_desc: RAK3244 BastWAN is a Feather compatible board based on the RAK4260 module with the ATSAMR34 MCU with integrated LoRa transceiver.
 rak_grp: [wisduo, breakout]
 prev: ../../
 next: ../Quickstart/
-rak_model: BastWAN
+
 ---
 
-# BastWAN
+# RAK3244 BastWAN
 
-Thank you for choosing **BastWAN** in your awesome IoT Project! 🎉 To help you get started, we have provided the necessary documentations for the product.
+Thank you for choosing **RAK3244 BastWAN** in your awesome IoT Project! 🎉 To help you get started, we have provided the necessary documentations for the product.
 
-- [BastWAN Quick Start Guide](../Quickstart/)
-- [BastWAN Examples by RAK](https://github.com/RAKWireless/Evaluation_Boards/tree/master/RAK4260/Arduino)
-- [ElectronicCats BastWAN Repository](https://github.com/ElectronicCats/Bast-WAN)
+- [RAK3244 BastWAN Quick Start Guide](../Quickstart/)
+- [RAK3244 BastWAN Examples by RAK](https://github.com/RAKWireless/Evaluation_Boards/tree/master/RAK4260/Arduino)
+- [ElectronicCats RAK3244 BastWAN Repository](https://github.com/ElectronicCats/Bast-WAN)
+- [RAK3244 BastWAN 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/PWB-RAK3244%20BASTWAN.stp)
 
 ## Product Description
 
-BastWAN puts the RAK4260 module into a Feather compatible format. Developed by [ElectronicCats](http://www.electroniccats.com/) we offer this amazing board in our store. The RAK4260 LPWAN Module used on the BastWAN is based on Microchip’s SAM R34 (R34J18B ). It is a SiP device integrating a 32-bit ARM Cortex -M0+ MCU with a LoRa Transceiver.
+RAK3244 BastWAN puts the RAK4260 module into a Feather compatible format developed by [ElectronicCats](http://www.electroniccats.com/). The RAK4260 LPWAN Module used on the RAK3244 BastWAN is based on Microchip’s SAM R34 (R34J18B ). It is a SiP device integrating a 32-bit ARM Cortex -M0+ MCU with a LoRa Transceiver.
 
-For more information about the board check the [ElectronicCats BastWAN repository](https://github.com/ElectronicCats/Bast-WAN)
+For more information about the board, check the [ElectronicCats RAK3244 BastWAN repository](https://github.com/ElectronicCats/Bast-WAN).
 
 ## Product features
 

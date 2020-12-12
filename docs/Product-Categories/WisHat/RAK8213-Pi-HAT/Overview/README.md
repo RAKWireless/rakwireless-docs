@@ -12,6 +12,8 @@ rak_model: RAK8213 Pi HAT
 Thank you for choosing **RAK8213 Pi HAT** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
 * [Datasheet](../Datasheet/)
+* [RAK8213 Pi HAT 3D Model](https://downloads.rakwireless.com/3D_File/WisHat/PWB-RAK8213_PI_HAT.stp)
+
 <!-- <rk-img
   :src="`${$frontmatter.static_root}/rak8213-pi-hat.png`"
   width="75%"

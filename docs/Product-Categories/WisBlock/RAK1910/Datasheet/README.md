@@ -19,9 +19,10 @@ The RAK1910 positioning module is a GNSS receiver. It receives and tracks the GP
 * **Update rate**: 10&nbsp;Hz 
 * **Velocity accuracy**: 0.1&nbsp;m/s 
 * **Heading accuracy**: 0.5 degrees 
-* Fast location fix. 29&nbsp;sec from cold start to first fix. 1&nbsp;s from hot start
+* Fast location fix. 29&nbsp;sec from cold start to first fix. 1&nbsp;sec from hot start
 * GPS and GLONASS satellite support 
 * **Module size**: 10 x 23&nbsp;mm
+
 
 ## Specifications
 
@@ -29,8 +30,7 @@ The RAK1910 positioning module is a GNSS receiver. It receives and tracks the GP
 <!-- Insert Picture of Sensor with its dimensions -->
 
 #### Mounting
-
-The RAK1910 module can be mounted only in slot A of the WisBase board. Figure 1 shows the mounting mechanism of the RAK1910 on a WisBase module, such as the RAK5005-O.
+The RAK1910 module can be mounted only in Slot A of the WisBase board. Figure 1 shows the mounting mechanism of the RAK1910 on a WisBase module, such as the RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak1910/datasheet/RAK1910_mounting.png"
@@ -57,8 +57,9 @@ The RAK1910 WisBlock GNSS Location Module module comprises a standard WisIO conn
 />
 
 ::: tip 📝 NOTE
-
-- Only the **UART** related pin, **1PPS** pin, **RESET** pin, **VDD,** and **GRD** are connected to this module. 
+- Only the **UART** related pin, **1PPS** pin, **RESET** pin, **VDD**, and **GRD** are connected to this module. 
+- The RAK1910 module can be installed in the slot A only.
+:::
 
 - The RAK1910 module can be installed in the Slot A only.
 :::
@@ -125,39 +126,39 @@ The RAK1910 WisBlock GNSS Location Module module comprises a standard WisIO conn
   </tr>
   <tr>
     <td>Tracking &amp; Navigation</td>
-    <td>-161 dBm</td>
-    <td>-160 dBm</td>
+    <td>-161&nbsp;dBm</td>
+    <td>-160&nbsp;dBm</td>
   </tr>
   <tr>
     <td>Reacquisition</td>
-    <td>-160 dBm</td>
-    <td>-160 dBm</td>
+    <td>-160&nbsp;dBm</td>
+    <td>-160&nbsp;dBm</td>
   </tr>
   <tr>
     <td>Cold Start</td>
-    <td>-148 dBm</td>
-    <td>-147 dBm</td>
+    <td>-148&nbsp;dBm</td>
+    <td>-147&nbsp;dBm</td>
   </tr>
   <tr>
     <td>Warm Start</td>
-    <td>-148 dBm</td>
-    <td>-148 dBm</td>
+    <td>-148&nbsp;dBm</td>
+    <td>-148&nbsp;dBm</td>
   </tr>
   <tr>
     <td>Hot Start</td>
-    <td>-156 dBm</td>
-    <td>-155 dBm</td>
+    <td>-156&nbsp;dBm</td>
+    <td>-155&nbsp;dBm</td>
   </tr>
   <tr>
     <td>Horizontal Position Accuracy</td>
     <td>Autonomous</td>
-    <td>2.5m</td>
+    <td>2.5&nbsp;m</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
     <td>SBAS</td>
-    <td>2.0m</td>
+    <td>2.0&nbsp;m</td>
     <td></td>
   </tr>
 </tbody>
@@ -188,9 +189,8 @@ Figure 3 shows the dimensions and the mechanic drawing of the RAK1910 module.
 
 :::tip 📝 NOTE:
 Slot for mounting: **Slot A**
-
-1. Because the RAK1910 is double in size and uses the Serial connection to the WisBlock Core module, it can be only installed in the RAK5005-O Slot A.
-   :::
+1. Because the RAK1910 is double in size and uses the serial connection to the WisBlock Core module, it can be only installed in the RAK5005-O Slot A.
+:::
 
 ##### WisConnector PCB Layout
 

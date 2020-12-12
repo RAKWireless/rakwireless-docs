@@ -11,6 +11,8 @@ next: ../Datasheet/
 Thank you for choosing **RAK9003 PoE Pi HAT** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
 * [Datasheet](../Datasheet/)
+* [RAK9003 PoE Pi HAT 3D Model](https://downloads.rakwireless.com/3D_File/WisHat/PWB-RAK9003_POE_HAT.stp)
+
 <!-- <rk-img
   :src="`${$frontmatter.static_root}/rak9003-poe-hat.png`"
   width="75%"

@@ -14,8 +14,8 @@ Thank you for choosing **RAK1901 WisBlock Temperature and Humidity Sensor** in y
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
-* [RAK1901 3D Model](https://downloads.rakwireless.com/LoRa/WisBlock/WisBlock-3D/pwb-rak190x.stp)
-* [24 Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/WisConnector/M24S1003K6M.stp)
+* [RAK1901 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/RAK1901_VB.step)
+* [24-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 
 **Examples**
@@ -38,7 +38,7 @@ RAK1901 is a WisBlock Sensor which extends the WisBlock system with a Sensirion 
 
 ## Prerequisites
 
-To use a **RAK1901** you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK1901** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK1901**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK1901** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function. 

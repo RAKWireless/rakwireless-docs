@@ -12,6 +12,9 @@ Thank you for choosing **RAK7205/RAK5205 WisTrio LPWAN Tracker** in your awesome
 * [Quick Start Guide](../Quickstart/)
 * [Datsaheet](../Datasheet/)
 * [AT Command Manual](../AT-Command-Manual/)
+* [RAK5205 3D Model (iPEX)](https://downloads.rakwireless.com/3D_File/WisTrio/PWB-RAK5205-IPEX.stp)
+* [RAK5205 3D Model (SMA)](https://downloads.rakwireless.com/3D_File/WisTrio/PWB-RAK5205-SMA.stp)
+
 <!-- <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/overview/exlexmejfxoowom4gmuf.jpg"
   width="70%"

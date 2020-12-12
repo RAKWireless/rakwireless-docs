@@ -22,17 +22,17 @@ next: false
 
 The RAK2305 module, part of the WisBlock IO series, was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module.
 
-The RAK2305 module is a 2.4 GHz Wi-Fi and Bluetooth in a single module. The core of the module is an ESP32-WROVER-B, which features a PCB antenna. This module is designed to be part of the Internet-of-Things (IoT) applications. It can function as a master or a slave in a Bluetooth network. Internally it supports SPI/I2C/UART interfaces.
+The RAK2305 module is a 2.4&nbsp;GHz Wi-Fi and Bluetooth in a single module. The core of the module is an ESP32-WROVER-B, which features a PCB antenna. This module is designed to be part of the Internet-of-Things (IoT) applications. It can function as a master or a slave in a Bluetooth network. Internally it supports SPI/I2C/UART interfaces.
 
 
 ### Features
 
 -  Wi-Fi + BLE module for Internet-of-Things
 -  I/O ports: UART/I2C/SPI/GPIO
-- 4MB SPI flash and 8MB PSRAM
+- 4&nbsp;MB SPI flash and 8&nbsp;MB PSRAM
 - Ultra-Low-Power Consumption
 - Wi-Fi 802.11 b/g/n
-- Module size: 29.5 x 25mm
+- Module size: 29.5 x 25&nbsp;mm
 
 ## Specifications
 
@@ -71,7 +71,7 @@ Figure 3 shows the block diagram of the RAK2305 module.
 />
 
 :::tip 📝 NOTE
-1.	VBAT is battery output voltage, the max voltage is 4.2V
+1.	VBAT is battery output voltage, the max voltage is 4.2&nbsp;V.
 2.	When IO0 is pulled-down, enter UART download mode, when is pulled-up, enter flash operation mode. Default, the IO0 is pull-up.
 :::
 
@@ -85,7 +85,7 @@ The hardware specification is categorized into four parts. It discuses the inter
 
 ##### UART Interface
 
-The RAK2305 module provides two UART interfaces: UART0 and UART1.  The UART0 can be used for upgrading firmware or to access console output through WisBlock baseboard USB interface. The UART1 is the main communication interface with WisBlock Core module.
+The RAK2305 module provides two UART interfaces: UART0 and UART1. The UART0 can be used for upgrading firmware or to access console output through WisBlock baseboard USB interface. The UART1 is the main communication interface with WisBlock Core module.
 
 ##### SPI Interface
 
@@ -95,9 +95,9 @@ The RAK2305 supports one single SPI Interface. It can be operated either in the 
 
 ##### I2C Interface
 
-The RAK235 module provides an I2C bus interface. Depending on the user’s configuration, it can serve as an I2C master or slave. The I2C interface supports:
-- Standard mode (100 Kbit/s) and Fast mode (400 Kbit/s).
-- Up to 5MHz, constrained by the SDA pull-up strength.
+The RAK235 module provides an I2C bus interface. Depending on your configuration, it can serve as an I2C master or slave. The I2C interface supports:
+- Standard mode (100&nbsp;Kbit/s) and Fast mode (400&nbsp;Kbit/s).
+- Up to 5&nbsp;MHz, constrained by the SDA pull-up strength.
 - 7-bit/10-bit addressing mode.
 The RAK2305 module allows users to access directly to the registers to control I2C interfaces, which add more flexibility in the design of the final solution.
 
@@ -117,7 +117,7 @@ Before download, you need to pull down IO0.
 :::
 
 #### Pin Definition
-Figure 5 shows the Pin Definition of the RAK2305 WisBlock WiFi Interface Module
+Figure 5 shows the Pin Definition of the RAK2305 WisBlock WiFi Interface Module.
 
 <rk-img
   src="/assets/images/wisblock/rak2305/datasheet/RAK2305-pin.svg"
@@ -191,9 +191,9 @@ Figure 9 shows the pin definition of IO connector.
 
 | **Name** | **Description** | **Comment** | 
 | ---- | ---- | ---- | 
-| VBAT | Battery Output Voltage | Max 4.2V | 
-| 3V3_R | WisBlock Base Board 3.3V | By Default, Not Connected | 
-| VDD | 3.3V | By Default, Not Connected | 
+| VBAT | Battery Output Voltage | Max 4.2&nbsp;V | 
+| 3V3_R | WisBlock Base Board 3.3&nbsp;V | By Default, Not Connected | 
+| VDD | 3.3&nbsp;V | By Default, Not Connected | 
 | TXD0/RXD0 | UART0 interface | Interface for firmware download and log output | 
 | TXD1/RXD1 | UART1 interface | Main serial communication interface | 
 | LED1/LED2 | LED interface | To control the base board’s LED | 
@@ -213,7 +213,7 @@ Figure 10 shows IO connector and its pin order. This connector is located on the
 
 ##### Core Module
 
-The core components inside of the RAK2305 module is the ESP32-WROVER-B, which comes with a PCB antenna. The module is designed to work with 3.3V supplied by the baseboard. In order to prevent any instability on EN (Enable pin), a RC delay circuit is added to this pin, and the EN pin is pulled up to 3.3V by default. Figure 11 shows the section of the schematic that involves the ESP32-WROVER-B component.
+The core components inside of the RAK2305 module is the ESP32-WROVER-B, which comes with a PCB antenna. The module is designed to work with 3.3&nbsp;V supplied by the baseboard. In order to prevent any instability on EN (Enable pin), a RC delay circuit is added to this pin, and the EN pin is pulled up to 3.3&nbsp;V by default. Figure 11 shows the section of the schematic that involves the ESP32-WROVER-B component.
 
 
 <rk-img
@@ -225,7 +225,7 @@ The core components inside of the RAK2305 module is the ESP32-WROVER-B, which co
 
 | **Name** | **Description** | **Comment** | 
 | ---- | ---- | ---- | 
-| 3.3V | Power Supply | 3.3V | 
+| 3.3&nbsp;V | Power Supply | 3.3&nbsp;V | 
 | GND | Ground |  | 
 | TXD1/RXD1 | UART1 interface | Main communication interface | 
 | TXD0/RXD0 | UART0 interface | Interface for firmware update or log output | 

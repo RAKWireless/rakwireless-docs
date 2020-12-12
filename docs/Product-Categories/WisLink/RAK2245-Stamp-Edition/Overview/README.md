@@ -12,6 +12,9 @@ Thank you for choosing **RAK2245 Stamp WisLink LPWAN Concentrator** in your awes
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
+* [RAK2245 Stamp 3D Model](https://downloads.rakwireless.com/3D_File/WisLink/PWB-RAK2245.stp)
+
+
 <!-- <rk-img
   src="/assets/images/wislink-lora/rak2245-stamp-edition/datasheet/overview/r8b1kuz7nsyovmac80kq.png"
   width="60%"

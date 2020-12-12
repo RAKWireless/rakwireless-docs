@@ -13,6 +13,7 @@ Thank you for choosing **RAKBox-B5** in your awesome IoT Project! 🎉 To help y
 
 - [Datasheet](../Datasheet/)
 - [Installation Guide](../Installation/)
+- [RAKBox-B5 3D Model](https://downloads.rakwireless.com/3D_File/Accessory/RAKBox-B5.stp)
 
 ## Product description
 RAKBox-B5 is a transparent enclosure. It is designed specifically for the WisBlock products.

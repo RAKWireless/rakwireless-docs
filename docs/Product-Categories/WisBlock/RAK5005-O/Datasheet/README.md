@@ -4,6 +4,8 @@ tags:
   - wisblock
 prev: ../Overview/
 next: false
+certifications:
+  - [FCC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK5005-O/Certification/RSZ201124006-EM-00%C2%A0FCC%C2%A0Part%C2%A015B%C2%A0SDoC%26ICES-003%C2%A0Report.pdf]
 ---
 
 # RAK5005-O WisBlock Base Board Datasheet
@@ -12,26 +14,26 @@ next: false
 
 **WisBlock modules** are part of a series of stackable boards built by RAKWireless for the IoT industry. WisBlock modules support dozens type of CPUs, sensors, and interface circuit boards. This concept allows customers to build their own electronic solutions very quickly, using building blocks to materialize their new ideas. Also, through high-speed connectors and easily attachable interconnections, customers will be able to composite reliable industrial products.
 
-WisBlock series modules are divided in the following categories: **Base module**, **Core module**, Sensor, and **IO module**.
+WisBlock series modules are divided in the following categories: **Base module**, **Core module**, **Sensor**, and **IO module**.
 
 The **RAK5005-O WisBlock Base** module is a motherboard that allows users to attach a Core, sensors, and IO modules through the standardized expansion connectors. In addition, the WisBlock Base module also comprises the USB ports, indicator LEDs, buttons, and extended IO interfaces.
 
 WisBlock Core module is the core computing and wireless connectivity unit within the WisBlock series. It integrates a MCU, a LoRa, a BLE and other wireless transceiver modules in a single package. The data collected by sensors are processed by the MCU and sent to the cloud through LoRa wireless links. The BLE interface can also be used for short-range communication and indoor positioning function.
 
 The WisBlock Sensor module integrates **MEMS sensors** of different types, while WisBlock IO comprise digital and analog IO extensions. 
-Each WisBlock Base baseboard can support up to four WisBlock Sensor modules, one WisBlock IO module, and one WisBlock Core module.. Sensors on WisBlock Sensor are designed for low power consumption, extending the battery life, different types of sensors  can be combined for specific solutions. In order to add more flexibility to customers solutions, WisBlock IO module can expand various application interfaces, such as industrial sensor interface, display interface, industrial communication protocol, buttons, and LED indicators.
+Each WisBlock Base baseboard can support up to four WisBlock Sensor modules, one WisBlock IO module, and one WisBlock Core module. Sensors on WisBlock Sensor are designed for low power consumption, extending the battery life, different types of sensors  can be combined for specific solutions. In order to add more flexibility to customers solutions, WisBlock IO module can expand various application interfaces, such as industrial sensor interface, display interface, industrial communication protocol, buttons, and LED indicators.
 
-If the above is not enough to cover all the users  IoT requirements, WisBlock supports open-source hardware architecture, therefore, users can also use the standard connectors of WisBlock to develop their own specific function modules and products to meet their specific needs in different industries.
+If the above is not enough to cover all the users IoT requirements, WisBlock supports open-source hardware architecture, therefore, users can also use the standard connectors of WisBlock to develop their own specific function modules and products to meet their specific needs in different industries.
 
 
 ### Applications
 
-*	Wireless Sensor Network.
-*	Environmental monitoring.
-*	Wireless data transmission.
-*	Data acquisition in Industrial environment.
-*	Location and tracking of personnel or moving objects.
-*	Extend coverage for wired application by adding wireless interfaces.
+*	Wireless Sensor Network
+*	Environmental monitoring
+*	Wireless data transmission
+*	Data acquisition in Industrial environment
+*	Location and tracking of personnel or moving objects
+*	Extend coverage for wired application by adding wireless interfaces 
 
 ### Main Features
 
@@ -603,13 +605,13 @@ The table below lists the operation and storage temperature requirements of RAK5
 
 | **Parameter** | **Minimum** | **Typical** | **Maximum** | 
 | ---- | ---- | ---- | ---- | 
-| Operational Temperature Range | –35º C | +25º C | +75º C | 
-| Extended Temperature Range | –40º C | +25º C | +80º C | 
-| Storage Temperature Range | –40º C | +25º C | +80º C | 
+| Operational Temperature Range | –35&nbsp;ºC | +25&nbsp;ºC | +75&nbsp;ºC | 
+| Extended Temperature Range | –40&nbsp;ºC | +25&nbsp;ºC | +80&nbsp;ºC | 
+| Storage Temperature Range | –40&nbsp;ºC | +25&nbsp;ºC | +80&nbsp;ºC | 
 
 #### Schematic Diagram
 
-The component schematics diagram of the RAK5005-Oare shown in Figures 16 and 17 below:
+The component schematics diagram of the RAK5005-Oare shown in Figures 17 and 18:
 
 
 <rk-img
@@ -628,7 +630,7 @@ The component schematics diagram of the RAK5005-Oare shown in Figures 16 and 17 
 
 ## Module Supported
 
-This section discusses the brief introduction about WisBlock module. It helps you to understand and choose the module you want. About the detail of each module, refer the reference manual of the respective module.
+This section discusses the brief introduction about WisBlock module. It helps you to understand and choose the module you want. About the detail of each module, refer to the reference manual of the respective module.
 
 ### WisBlock Module in Production
 
@@ -668,9 +670,9 @@ The table shows the WisBlock IO modules:
 
 | P/N | Function | Chipset | 
 | ---- | ---- | ---- | 
-| RAK5801 | 4–20mA sensor interface |  | 
+| RAK5801 | 4–20&nbsp;mA sensor interface |  | 
 | RAK5802 | RS485 interface |  | 
-| RAK5803 | 0–5V sensor interface |  | 
+| RAK5803 | 0–5&nbsp;V sensor interface |  | 
 | RAK5804 | IO extension board |  | 
 | RAK2305 | WiFi extension board | ESP32 | 
 | RAK2705 | NFC reader board | ST CR95HF | 
@@ -775,5 +777,9 @@ The WisSensor data bus is divided into four type. The relationship is shown in t
 | GND | GND | GND | GND | GND | 39 | 40 | GND | GND | GND | GND | GND | 
 
 :::tip 📝 NOTE
-*Can be supported by rework hardware.
+* Can be supported by rework hardware.
 ::: 
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

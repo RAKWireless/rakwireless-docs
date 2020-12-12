@@ -16,7 +16,7 @@ Thank you for choosing **RAK1910 WisBlock GNSS Location Module** in your awesome
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK1910 3D Model](https://downloads.rakwireless.com/LoRa/WisBlock/WisBlock-3D/pwb-rak1910.stp)
-* [24 Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/WisConnector/M24S1003K6M.stp)
+* [24-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 
 **Examples**
@@ -47,6 +47,6 @@ To use a **RAK1910**, you need at least a **WisBlock Base** to plug the module i
 The **RAK1910** module can only be used in the **WisBlock Base** sensor slot **A**. It occupies two sensor slots.
 
 :::warning ⚠️ WARNING    
-* The included active GPS antenna must be connected to the iPEX antenna connector on the board. Otherwise, the module will not work
+* The included active GPS antenna must be connected to the iPEX antenna connector on the board. Otherwise the module will not work.
 * Make sure to fix the module with the screws to ensure a proper function.    
 ::: 

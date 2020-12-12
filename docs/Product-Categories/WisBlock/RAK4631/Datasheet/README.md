@@ -25,7 +25,7 @@ certifications:
 
 The RAK4631 WisBlock Core module is a RAK4630 stamp module with an expansion PCB and connectors compatible with the RAK5005-O baseboard. It allows an easy way to access to the pins of the RAK4630 module in order to simplify development and testing processes.
 
-The module itself comprises a RAK4630 as its main component. The RAK4630 is a combination of a nRF52840 MCU and an SX1262 LoRa chip, it features ultra-low power consumption of 2.0&nbsp;uA during sleep mode, high LoRa output power up to 22&nbsp;dBm during transmission mode, and the BLE interface with output power up to 4&nbsp;dBm.
+The module itself comprises a RAK4630 as its main component. The RAK4630 is a combination of a nRF52840 MCU and an SX1262 LoRa chip, it features ultra-low power consumption of 2.0&nbsp;uA during sleep mode, high LoRa output power up to 22dBm during transmission mode, and the BLE interface with output power up to 4dBm.
 
 The module complies with LoRaWAN 1.0.2 protocols, it also supports LoRa point to point communication.
 
@@ -41,7 +41,7 @@ The RF communication characteristic of the module (Lora® + BLE) makes it suitab
 - Low-Power Wireless Systems with 7.8&nbsp;KHz to 500&nbsp;KHz Bandwidth
 - Ultra-Low Power Consumption 2.0&nbsp;uA in sleep mode
 - LoRa PA Boost mode with 22&nbsp;dBm output power
-- BLE5.0 (Tx power -20 to +4&nbsp;dBm in 4&nbsp;dB steps)
+- BLE5.0 (Tx power -20 to +4&nbsp;dBm in 4dB steps)
 - Serial Wire Debug (SWD) interface
 - Module size: 20 x 30&nbsp;mm
 
@@ -122,7 +122,7 @@ The RAK4631 module supports the LoRaWAN bands shown in Table below. When buying 
 
 | **Item** | **Power Consumption** | **Condition** | 
 | ---- | ---- | ---- | 
-| Tx mode LoRa @20&nbsp;dBm | 12&nbsp;5mA | LoRa @ PA_BOOST&BT sleep | 
+| Tx mode LoRa @20&nbsp;dBm | 125&nbsp;mA | LoRa @ PA_BOOST&BT sleep | 
 | Tx mode LoRa @17&nbsp;dBm | 92&nbsp;mA | LoRa @ PA_BOOST&BT sleep | 
 | Tx mode BT@4&nbsp;dBm | 9&nbsp;mA | BT Tx mode & Lora sleep | 
 | Rx mode LoRa @37.5&nbsp;Kbps | 17&nbsp;mA | LoRa @ Receive mode &BT sleep | 
@@ -171,11 +171,11 @@ The RAK4631 module supports the LoRaWAN bands shown in Table below. When buying 
 
 #### Schematic Diagram
 
-The following section will describe the breakout module schematic. It includes WisConnector, core module, SWD interface and power up automatic reset.
+The following section will describe the breakout module schematic. It includes WisConnector, core module, SWD interface, and power up automatic reset.
 
 ##### WisConnector 
 
-The breakout module allows the RAK4630 stamp module’s pinout to be transferred by the board-to-board WisConnector, Figure 5 shows the definition of this connector.
+The breakout module allows the RAK4630 stamp module’s pinout to be transferred by the board-to-board WisConnector, and Figure 5 shows the definition of this connector.
 
 <rk-img
   src="/assets/images/wisblock/rak4631/datasheet/wisconnector-pin.jpg"
@@ -242,7 +242,7 @@ Figure 6 shows the pin order of the WisConnector, which is located in the bottom
 />
 
 ##### Core Module
-The breakout module itself has a RAK4630 at its core, Figure 7 shows the core module pin and connection information, by default, the NFC function is disabled for conserve the low power characteristic.
+The breakout module itself has a RAK4630 at its core. Figure 7 shows the core module pin and connection information. By default, the NFC function is disabled for conserve the low power characteristic.
 
 <rk-img
   src="/assets/images/wisblock/rak4631/datasheet/core-module-pin.jpg"
@@ -300,7 +300,7 @@ The breakout module itself has a RAK4630 at its core, Figure 7 shows the core mo
 
 ##### SWD Interface
 
-The breakout module exposes a SWD debug interface, Figure 8 shows the connection information. Additionally, the RST pin is used for resetting the core module RAK4630.
+The breakout module exposes a SWD debug interface, and Figure 8 shows the connection information. Additionally, the RST pin is used for resetting the core module RAK4630.
 
 <rk-img
   src="/assets/images/wisblock/rak4631/datasheet/swd-interface.jpg"
@@ -310,7 +310,7 @@ The breakout module exposes a SWD debug interface, Figure 8 shows the connection
 
 ##### Power up automatic reset
 
-The breakout module has a power-up automatic reset circuit, Figure 9 shows the automatic reset mechanism, this module also can be reset though RAK5005-O reset pin
+The breakout module has a power-up automatic reset circuit, and Figure 9 shows the automatic reset mechanism. This module also can be reset though RAK5005-O reset pin.
 
 <rk-img
   src="/assets/images/wisblock/rak4631/datasheet/power-automatic-reset.jpg"

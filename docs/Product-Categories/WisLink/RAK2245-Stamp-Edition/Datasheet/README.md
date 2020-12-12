@@ -7,7 +7,10 @@ next: false
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK2245/Certification-Report/RAK2245_CE_Certificate.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK2245/Certification-Report/RAK2245_FCC_Certificate.zip]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK2245/Certification-Report/ROHS-ATL202012091808R01-Report.pdf]
 ---
+
+
 
 # RAK2245 WisLink-LoRa Stamp Edition Datasheet
 
