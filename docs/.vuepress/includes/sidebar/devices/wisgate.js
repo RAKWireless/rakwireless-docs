@@ -103,8 +103,7 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
-    },
-
+    }
   ],
 
   '/Product-Categories/WisGate/RAK7244C/': [{

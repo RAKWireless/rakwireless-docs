@@ -117,13 +117,43 @@ All the necessary components (bolts, washers, nuts) come with the mounting kit.
   caption="RAK7249 WisGate Edge Max Pole Clamp Guide"
 />
 
-3. Connect the clamp and the bracket on the backside of the casing with hexagonal M6x30 bolts , washers and nuts.
+3. Connect the clamp and the bracket on the backside of the casing with hexagonal M6x30 bolts, washers and nuts.
 
 <rk-img
   src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/back-panel-pole-attachment.jpg"
   width="40%"
   caption="RAK7249 WisGate Edge Max Back Panel to Pole Attachment"
 />
+
+#### Weather Protection
+
+To better protect the Ethernet cable gland and the antenna connector from the weather, you need to cover them with PVC tape. 
+
+1. Clean the surface area of the connector that will be wrapped. Wrap a layer of PVC tape with a 50% overlap according to the rotation direction of the connector. Continue wrapping the PVC tape to about 10&nbsp;mm below the end of the connector. 
+
+<rk-img
+  src="/assets/images/wisgate/rak7249/quickstart/weather-protection/1.png"
+  width="30%"
+  caption="Wrapping with PVC tape"
+/>
+
+2. Cut off about 50 cm waterproof tape. Stretch it to double the length, and wrap three layers around the connector with a 50% overlap. Hold the tape in place with your hand for a few seconds.
+
+
+<rk-img
+  src="/assets/images/wisgate/rak7249/quickstart/weather-protection/2.png"
+  width="30%"
+  caption="Wrapping with waterproof tape"
+/>
+
+3. Wrap three additional layers with PVC tape with natural uncoiling force and a 50% overlap. Make sure to cover the head and the tail of the connector.
+
+<rk-img
+  src="/assets/images/wisgate/rak7249/quickstart/weather-protection/3.png"
+  width="30%"
+  caption="Final PVC wrapping"
+/>
+
 
 #### Optional Accessories
 

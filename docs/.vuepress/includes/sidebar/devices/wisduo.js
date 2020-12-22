@@ -416,15 +416,20 @@ module.exports = {
   },
   {
     title: 'Quick Start Guide',
-    path: '/Product-Categories/WisDuo/RAK4600-Breakout-Board/Quick-Start-Guide/Quickstart/',
+    path: '/Product-Categories/WisDuo/RAK4600-Breakout-Board/Quickstart/',
     collapsable: false,
     nested: true,
     download: true,
-    sidebarDepth: 4,
-    children: [
-      ['/Product-Categories/WisDuo/RAK4600-Breakout-Board/Quick-Start-Guide/Quickstart/', 'Getting Started']
-    ]
-  },
+    sidebarDepth: 4
+  }, 
+  {
+    title: 'AT Command Manual',
+    path: '/Product-Categories/WisDuo/RAK4600-Breakout-Board/AT-Command-Manual/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },    
   {
     title: 'Datasheet',
     path: '/Product-Categories/WisDuo/RAK4600-Breakout-Board/Datasheet/',

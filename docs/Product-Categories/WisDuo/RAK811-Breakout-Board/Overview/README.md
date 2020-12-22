@@ -19,11 +19,13 @@ Thank you for choosing **RAK811 Breakout Board** in your awesome IoT Project! ðŸ
 
 ## Product Description
 
-The **RAK811 Breakout Board** is specifically designed to allow easy access to the pins on the board in order to simplify development and testing. The breakout board utilized is based on **Xbee form factor**. Its main purpose is to allow the [RAK811 stamp module](/Product-Categories/WisDuo/RAK811-Module/Overview/) form factor pinout to be transferred to 2.54&nbsp;mm headers. This makes it more convenient to work on your projects.
+RAK811 Breakout Board is an easy to use, compact and low power long range LoRa technology with wireless transceiver capabilities. A combination of RAK811 chipset and RAK811 Breakout Board with Semtech SX1276 at its core which takes advantage of all LoRa features.
 
-The RAK811 Breakout Board complies with Class A & C of LoRaWAN 1.0.2 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point to Point (P2P) communication mode which helps you in implementing your own customized long-range LoRa network quickly.
+The RAK811 Breakout Board complies with the latest LoRaWAN Class A & C protocol specifications with fully supported LoRaWAN 1.0.2 stack in its firmware. It has a simple and straightforward setup and can quickly access LWPA IOT platforms. Additionally, it supports LoRa Point to Point (P2P) communications which helps customers in implementing their own private LoRa network.
 
-The RAK811 module is integrated with Semtechâ€™s SX1276 and STM32. You can configure the mode and operation of the module using AT commands via a UART interface. RAK811 also offers low power features which is very suitable for battery-powered applications.
+The node can work in a number of modes, with different data rates and read data from the attached sensors with the help of its serial AT commands.
+
+This board is a complete solution in developing your LoRaWAN protocol techniques. A few of its application includes: Automated Meters Reading, Home and Building Automation, Wireless Alarm and Security Systems, Industrial Monitoring and Control and Long Range Irrigation Systems
 
 <!-- 
 <rk-btn

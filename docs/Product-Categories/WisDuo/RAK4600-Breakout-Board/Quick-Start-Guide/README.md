@@ -1,1 +1,0 @@
-<rk-redirect to="/Product-Categories/WisDuo/RAK4600-Breakout-Board/Quick-Start-Guide/Quickstart/"/> 

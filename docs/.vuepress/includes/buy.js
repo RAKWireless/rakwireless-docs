@@ -423,6 +423,13 @@ export default {
     img: '/assets/images/accessories/905000-905001/antenna_view.png',
     store: 'https://store.rakwireless.com'
   },
+  '/Product-Categories/Accessories/Outdoor-Enclosure-Kit/': {
+    label: 'Outdoor Enclosure Kit H D4/D4+/D4P',
+    img: '/assets/images/accessories/outdoor-enclosure-kit/outdoor-kit.png',
+    store: 'https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H'
+  },
+  
+
 
 }
 

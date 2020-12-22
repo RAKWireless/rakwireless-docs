@@ -15,7 +15,7 @@ With these accessories, you can complete your LoRaWan project. Whether you need 
 
 <rk-head img="/assets/rakwireless/product-categories/accessory-enclosures.png">
 
-Choose a RAKBox for your WisBlock project from these enclosures. They are designed to be used with WisBlock products. Beside of all bolts and nuts required to fix the WisBlock, the enclosures come with a mounting kit to fix them at walls or poles (except RAKBox-B5). We have a selection of indoor and outdoor enclosure for you to choose from.
+A selection of indoor and outdoor enclosures is provided for your next LoRa project. These RAKbox enclosures are specifically designed to be paired with RAK boards and modules. It comes with a mounting kit to position them at walls or poles, except for RAKBox-B5.
 
 </rk-head>
 

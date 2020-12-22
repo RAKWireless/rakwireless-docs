@@ -102,7 +102,17 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
-    }
+    },
+  ],
+    '/Product-Categories/Accessories/Outdoor-Enclosure-Kit/': [
+      {
+        title: 'Overview',
+        path: '/Product-Categories/Accessories/Outdoor-Enclosure-Kit/Overview/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      }
   ],
   // antennas
   '/Product-Categories/Accessories/RAKARJ14/': [
