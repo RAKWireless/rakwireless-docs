@@ -287,7 +287,7 @@ at+set_config=lora:app_key:f921d50cd7d02ee3c5e6142154f274b2
 
 :::tip 📝 NOTE:
 
-After configuring all the parameters, you need to reset your RAK4270 Module for saving parameters.
+After configuring all the parameters, you need to reset your RAK4270 Module to save the parameters.
 
 :::
 
@@ -407,7 +407,7 @@ at+set_config=lora:region:EU868
 4. Set the Device Address.
 
 ```
-at+set_config=lora:dev_addr: 26011af9
+at+set_config=lora:dev_addr:26011af9
 ```
 
 5. Set the LoRa Network Session Key.
@@ -430,7 +430,7 @@ at+set_config=lora:apps_key:4d42ec5caf97f03d833cdaf5003f69e1
 
 :::tip 📝 NOTE:
 
-After configuring all parameters, you need to reset RAK4270 Module for saving parameters.
+After configuring all the parameters, you need to reset your RAK4270 Module to save the parameters.
 
 :::
 
@@ -728,7 +728,7 @@ at+set_config=lora:app_key:f921d50cd7d02ee3c5e6142154f274b2
 
 
 :::tip 📝 NOTE:
-After configuring all parameters, you need to reset RAK4270 Module to save the parameters.
+After configuring all the parameters, you need to reset your RAK4270 Module to save the parameters.
 :::
 
 7. After resetting, start to join.
@@ -888,7 +888,7 @@ at+set_config=lora:apps_key:4d42ec5caf97f03d833cdaf5003f69e1
 
 :::tip 📝 NOTE:
 
-After configuring all parameters, you need to reset RAK4270 Module for saving parameters.
+After configuring all the parameters, you need to reset your RAK4270 Module to save the parameters.
 
 :::
 

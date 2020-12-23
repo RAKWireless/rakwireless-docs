@@ -8,6 +8,14 @@ module.exports = {
     sidebarDepth: 4
   },
   {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisDuo/RAK4270-Breakout-Board/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
     title: 'Datasheet',
     path: '/Product-Categories/WisDuo/RAK4270-Breakout-Board/Datasheet/',
     collapsable: false,
@@ -27,6 +35,14 @@ module.exports = {
   {
     title: 'Quick Start Guide',
     path: '/Product-Categories/WisDuo/BastWAN/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisDuo/BastWAN/Datasheet/',
     collapsable: false,
     nested: true,
     download: true,

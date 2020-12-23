@@ -32,7 +32,7 @@ Before going through each and every step in the installation and guide of the RA
 
 #### Software Tools
 1. [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
-2. [RAK811 Firmware](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#firmware-os)
+2. [RAK811 Breakout Board Firmware](/Product-Categories/WisDuo/RAK811-Breakout-Board/Datasheet/#firmware-os)
 3. [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 
@@ -79,7 +79,7 @@ Before powering the RAK811 Breakout Board, you should install the LoRa antenna f
   caption="RAK Serial Port Tool"
 />
 
-- In choosing the correct COM Port number for your device. Go to your Device Manager by pressing : Windows + R and type `devmgmt.msc` or search in the Start Menu
+- In choosing the correct COM Port number for your device, go to your Device Manager by pressing **Windows + R** and type `devmgmt.msc`, or search in the Start Menu.
 
 <rk-img
  src="/assets/images/wisduo/rak811-breakout-board/quickstart/interfacing-with-rak811-breakout/siqhrem8xxxnvhj7vttn.png"
@@ -87,7 +87,7 @@ Before powering the RAK811 Breakout Board, you should install the LoRa antenna f
   caption="Device Manager"
 />
 
-- Look for Ports (COM & LPT) . Find the name of of your RAKDAP1 driver and take note of the COM Port Number.
+- Look for Ports (COM & LPT). Find the name of of your RAKDAP1 driver and take note of the COM Port Number.
 
 <rk-img
  src="/assets/images/wisduo/rak811-breakout-board/quickstart/interfacing-with-rak811-breakout/rib8pvikbtggt9xryvxp.png"
@@ -98,17 +98,17 @@ Before powering the RAK811 Breakout Board, you should install the LoRa antenna f
 
 ### Connecting to The Things Network (TTN)
 
-In this section, it shows how to connect the RAK811 module to The Things Network (TTN) platform. 
+In this section, it shows how to connect the RAK811 Breakout Board to The Things Network (TTN) platform. 
 
 <rk-img
   src="/assets/images/wisduo/rak811-breakout-board/quickstart/connecting-to-ttn/4.ttn-context.png"
   width="75%"
-  caption="RAK811 in the context of the TTN"
+  caption="RAK811 Breakout Board in the context of the TTN"
 />
 
 As shown in Figure 6, the RAK811 Breakout Board is one of the devices located on the left side. In the context of an IoT solution, the objective is to deploy devices to sense relevant process variables and transmit the data to the backend servers located in the cloud. The data will be processed and integrated as part of a larger solution that ultimately could generate efficiency, traceability and predictability capacity among others.
 
-The RAK811 Breakout Board can be part of this ecosystem, and the objective of this section is to demonstrate how simple it is to send data to the TTN using the LoRaWAN protocol. To achieve this, the RAK811 module must be located inside of the coverage of a LoRaWAN gateway. 
+The RAK811 Breakout Board can be part of this ecosystem, and the objective of this section is to demonstrate how simple it is to send data to the TTN using the LoRaWAN protocol. To achieve this, the RAK811 Breakout Board must be located inside of the coverage of a LoRaWAN gateway. 
 
 
 <b>Sign up and login</b>
@@ -217,7 +217,7 @@ Hence, this is referred to as the “**Join Mode**". LoRaWAN allows the OTAA mod
 
 As shown in the Figure 14, the default activation mode in TTN is the OTAA mode. Therefore, no further actions are required in the platform side. 
 
-###### Configure the OTAA Mode on the RAK811 module
+###### Configure the OTAA Mode on the RAK811 Breakout Board
 
 The RAK811 Breakout Board supports a series of AT commands to configure its internal parameters and control the functionalities of the module. Physically, the module exposes a serial interface through the USB connector. 
 
@@ -303,7 +303,7 @@ at+set_config=lora:app_key:f921d50cd7d02ee3c5e6142154f274b2
 
 :::tip 📝 NOTE:
 
-After configuring all the parameters, you need to reset your RAK811 Module for saving parameters.
+After configuring all the parameters, you need to reset your RAK811 Breakout Board to save the parameters.
 
 :::
 
@@ -315,7 +315,7 @@ at+join
 
 After 5 or 6 seconds, if the request was successfully received by a LoRa gateway, then you should see the messages shown in Figure 17.
 
-8. Try to send a message from the RAK811 module.
+8. Try to send a message from the RAK811 Breakout Board.
 
 ```
 at+send:lora:2:1234567890
@@ -327,7 +327,7 @@ at+send:lora:2:1234567890
   caption="OTAA Test Sample Data Sent via RAK Serial Port Tool"
 />
 
-You can see the data sent by the RAK811 module on the TTN platform as shown in Figure 18.
+You can see the data sent by the RAK811 Breakout Board on the TTN platform as shown in Figure 18.
 
 
 <rk-img
@@ -379,7 +379,7 @@ The same as the OTAA form, you can leave these fields empty to allow TTN to gene
 
 ###### Configure the ABP mode on the RAK811
 
-To set up the RAK811 module to join the TTN using ABP, start by connecting the RAK811 module to the Computer via a USB to UART converter (see Figure 2) and open the RAK Serial Port Tool. Wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
+To set up the RAK811 Breakout Board to join the TTN using ABP, start by connecting the RAK811 board to the Computer via a USB to UART converter (see Figure 2) and open the RAK Serial Port Tool. Wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
 
 ```
 at+set_config=device:restart
@@ -451,7 +451,7 @@ at+set_config=lora:apps_key:4d42ec5caf97f03d833cdaf5003f69e1
 
 :::tip 📝 NOTE:
 
-After configuring all parameters, you need to reset RAK8111 Module for saving parameters.
+After configuring all the parameters, you need to reset your RAK811 Breakout Board to save the parameters.
 
 :::
 
@@ -464,11 +464,11 @@ at+join
 
 :::tip 📝 NOTE:
 
-By using the ABP mode in LoRaWAN, it doesn’t require to join a network before sending a LoRaWAN package. But to keep the consistency of internal states of the firmware of the RAK811 module, it is still required to send `at+join` command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
+By using the ABP mode in LoRaWAN, it doesn’t require to join a network before sending a LoRaWAN package. But to keep the consistency of internal states of the firmware of the RAK811 Breakout Board, it is still required to send `at+join` command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
 
 :::
 
-8. Try to send a data from the RAK811 to TTN in ABP mode.
+8. Try to send a data from the RAK811 Breakout Board to TTN in ABP mode.
 
 ```
 at+send:lora:2:1234567890 
@@ -490,8 +490,11 @@ The ChirpStack or previously known as LoRaServer project provides open-source co
 
 You can use RAK811 Breakout Board to connect with ChirpStack according to the following steps:
 
-::: tip 📝 NOTE
-This section assumed that you had already connected your Gateway with TTN correctly. If not, take a look at [RAK Document Center](/wisgate/rak7244c/quickstart/).
+
+:::tip 📝 NOTE:
+
+In this document, it is assumed that you are using RAK Gateway and its built-in ChirpStack or RAK cloud testing ChirpStack. Also, the [RAK Gateway with Chirpstack](/Product-Categories/WisGate/RAK7243/Quickstart/#connect-the-gateway-with-chirpstack) must be configured successfully.
+
 :::
 
 1. Open the web page of the ChirpStack which you want to connect with and login.
@@ -512,7 +515,7 @@ This section assumed that you had already connected your Gateway with TTN correc
   caption="Creating the Application"
 />
 
-4. Click the new item name “**RAK811**”.
+4. Click the new item name “**RAKwireless_Test_Application**”:
 
 <rk-img
   src="/assets/images/wisduo/rak811-breakout-board/quickstart/connecting-to-chirpstack/huqfi7q0iuvj3peoerje.png"
@@ -523,7 +526,7 @@ This section assumed that you had already connected your Gateway with TTN correc
 <rk-img
   src="/assets/images/wisduo/rak811-breakout-board/quickstart/connecting-to-chirpstack/zvda6jcwtxr1ci2fvdqc.png"
   width="100%"
-  caption="RAK811 Application"
+  caption="RAK811 Breakout Board Application"
 />
 
 5. **Add** a Node device into ChirpStack by clicking the “**CREATE**” button.
@@ -601,9 +604,9 @@ at+version
   caption="RAK Serial Port Tool"
 />
 
-- Now, join our RAK811 using the OTAA activation mode.
+- Now, join your RAK811 Breakout Board using the OTAA activation mode.
 
-5. If the join mode is not in OTAA, just set the LoRa join mode to **OTAA** and LoRa class to **Class A** by typing the AT commands shown in the picture below.
+5. If the join mode is not in OTAA, just set the LoRa join mode to **OTAA** and LoRa class to **Class A** by typing the AT commands shown in Figure 36.
 
 ```sh
 at+set_config=lora:join_mode:0
@@ -663,7 +666,7 @@ at+join
 
 - **Joined Successfully!**
 
-8. You can view the "**JoinRequest**" and "**JoinAccept**" on ChirpStack page.
+8. You can view the "**JoinRequest**" and "**JoinAccept**" on the ChirpStack page.
 
 <rk-img
   src="/assets/images/wisduo/rak811-breakout-board/quickstart/chirpstack-otaa-mode/ll6wmv6jqlnyhpxgaovj.png"
@@ -695,7 +698,7 @@ You can see the message on ChirpStack page as shown in Figure 42.
 
 #### ABP Mode
 
-1. If you select “**DeviceProfile_ABP**” or “**DeviceProfile_ABP_CN470**”, it means you want to join ChirpStack in **ABP mode**.
+1. If you select “**DeviceProfile_ABP**” or "**DeviceProfile_ABP_CN470**”, it means you want to join ChirpStack in **ABP mode**.
 
 ::: warning ⚠️ WARNING
 Frequency AS923 in ABP Mode is not supported in Chirpstack.
@@ -788,7 +791,7 @@ at+set_config=lora:apps_key:XXXX
 />
 
 ::: tip 📝 NOTE
-After configuring all parameters, you need to reset RAK811 Breakout Board for saving parameters!
+After configuring all the parameters, you need to reset your RAK811 Breakout Board to save the parameters.
 :::
 
 9. After resetting RAK811 Breakout Board, join in ABP mode.
@@ -804,8 +807,7 @@ at+join
 />
 
 ::: tip 📝 NOTE
-Actually, it is not needed to join in ABP mode. But you still need to set this AT command to
-validate the parameters which you just set for ABP mode.
+Actually, it is not needed to join in ABP mode, but you still need to set this AT command to validate the parameters you just set for ABP mode.
 :::
 
 10. Try to send a data from RAK811 Breakout Board to ChirpStack.
@@ -849,7 +851,7 @@ at+set_config=lora:work_mode:1
   caption="P2P Initialization"
 />
 
-4. Then configure LoRaP2P parameters for both of them as follow for example:
+4. Then, configure LoRaP2P parameters for both of them.
 
 ```sh
 at+set_config=lorap2p:869525000:7:0:1:5:5
@@ -858,7 +860,7 @@ at+set_config=lorap2p:869525000:7:0:1:5:5
 <rk-img
   src="/assets/images/wisduo/rak811-breakout-board/quickstart/lora-p2p-mode/fyoulppnh8gdz3vawjv7.jpg"
   width="90%"
-  caption="Configuring P2P in both RAK811 Nodes"
+  caption="Configuring P2P in both RAK811 Breakout Board Nodes"
 />
 
 5. Try to send a message from RAK811 Breakout Board 2 (the right one) to RAK811 Breakout Board 1 (the left one):
@@ -885,7 +887,7 @@ at+send=lorap2p:12345678901234567890
   caption="Succeeding Messages sent to the other Node"
 />
 
-You have successfully finished your RAK811 Breakout Board Set Up. 
+You have successfully finished your RAK811 Breakout Board set up. 
 
 ## Miscellaneous
 
@@ -946,7 +948,7 @@ at+set_config=device:boot
 
 - It is recommend to use RAK serial port tool since there are some ready AT commands in this tool which very useful for you. You can get it from RAK website available for free at this **[RAK directory](https://downloads.rakwireless.com/en/LoRa/RAK811/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)**.
 
-7. Choose the correct **COM port** and set the baud rate to **115200**. Then open the serial port and enter the AT command shown below to restart. Another option is to press the **RST** button on the RAK811 Breakout Board.
+7. Choose the correct **COM port** and set the baud rate to **115200**. Then, open the serial port and enter the AT command shown below to restart. Another option is to press the **RST** button on the RAK811 Breakout Board.
 
 ```sh
 at+set_config=device:restart

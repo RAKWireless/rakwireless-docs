@@ -805,7 +805,7 @@ This command is used for getting all of the information related to the current L
 
 | Operation | Command                     | Response                  |
 | --------- | --------------------------- | ------------------------- |
-| Read      | `at+set_config=lora:status` | `OK <lora status detail>` |
+| Read      | `at+get_config=lora:status` | `OK <lora status detail>` |
 
 Parameter: None
 
