@@ -513,9 +513,9 @@ As for the following table, it shows the pin name and description of the WisIO m
 Shown in the table below are the **Absolute Maximum Ratings** of the device. The stress ratings are the functional operation of the device. 
 
 :::warning ⚠️WARNING
-1.If the stress rating goes above what is listed may cause permanent damage to the device.
-2.Under the listed conditions is not advised.
-3.Exposure to maximum rating conditions may affect the device reliability.
+1. If the stress rating goes above what is listed may cause permanent damage to the device.
+2. Under the listed conditions is not advised.
+3. Exposure to maximum rating conditions may affect the device reliability.
 :::
 
 | **Ratings** | Maximum Value | Unit | 
@@ -565,7 +565,7 @@ A suitable Li-Ion battery should have the following parameters as shown in the t
 | **Parameter** | **Value** | 
 | ---- | ---- | 
 | Standard Voltage | 3.7V | 
-| Chargine VOltage | 4.2V | 
+| Charging Voltage | 4.2V | 
 | Capacity | As required | 
 | Discharge current | At least 500mA | 
 

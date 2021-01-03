@@ -428,6 +428,11 @@ export default {
     img: '/assets/images/accessories/outdoor-enclosure-kit/outdoor-kit.png',
     store: 'https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H'
   },
+  '/Product-Categories/Accessories/Antenna-Feeder-Line/': {
+    label: 'Antenna Feeder Line',
+    img: '/assets/images/accessories/antenna-feeder-line/datasheet/cable.png',
+    store: 'https://store.rakwireless.com/collections/accessories/products/antenna-feeder-line'
+  },
   
 
 

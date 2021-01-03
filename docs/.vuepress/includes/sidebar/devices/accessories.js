@@ -205,6 +205,25 @@ module.exports = {
       sidebarDepth: 4
     }
   ],
+  '/Product-Categories/Accessories/Antenna-Feeder-Line/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/Antenna-Feeder-Line/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/Antenna-Feeder-Line/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+
+  ],
 
   //hardware-tools
   '/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/': [

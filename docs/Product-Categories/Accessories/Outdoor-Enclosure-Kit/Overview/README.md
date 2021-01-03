@@ -25,8 +25,9 @@ The package includes all the necessary parts for this project, without the RAK72
 4. Power cord for the PoE Injector
 5. Zip tie, PVC tape, and waterproof tape
 6. Antenna cable type RG316, with N-type to RP-SMA male connectors for LoRa antenna
-7. Antenna cable type RG316, with N-type to SMA male connectors for GPS antenna
-8. GPS Antenna with mounting brackets
+7. Antenna cable type RG316, with N-type to RP-SMA male connectors for LTE Antenna x2
+8. Antenna cable type RG316, with N-type to SMA male connectors for GPS antenna
+9. GPS Antenna with mounting brackets
 
 #### Assembly
 
