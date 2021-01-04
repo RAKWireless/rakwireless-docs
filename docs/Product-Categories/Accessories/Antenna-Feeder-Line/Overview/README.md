@@ -16,11 +16,13 @@ Thank you for choosing **Antenna Feeder Line** in your awesome IoT Project! 🎉
 
 ## Product Description
 
-The Antenna Feeder Line is designed for **WisGate Edge Max (RAK7249) Lightning Protection**. This antenna feeder line is an NJ-NF adapter cable with a length of 3m and 5m, a cable type of LMR195, and an N-type connector as the antenna feeder.
+Antenna Feeder Line cable for **WisGate Edge Prime and Max (RAK7240/7249).**  This Feeder Line cable allows you to better positioning the gateway antennas for optimal coverage. You can choose between 1.5m, 3m, and 5m cable length. 
 
 ## Product Features
 
--   Frequency Range: 0~3&nbsp;GHz
--   Cable length: 3&nbsp;m and 5&nbsp;m
--   Cable type: LMR195
--   VSWR: ≤ 1.5
+- Length variants: 1.5m, 3m, 5m
+- Connector: N-type female to N-type male
+- Frequency Range: 0~3&nbsp;GHz
+- Cable length: 3&nbsp;m and 5&nbsp;m
+- Cable type: LMR195
+- VSWR: ≤ 1.5
