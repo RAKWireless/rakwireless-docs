@@ -1,20 +1,24 @@
 ---
 prev: ../Quickstart/
-next: ../Low-Level-Development/
-tags: RAK4270
+next: ../Datasheet/
+tags: RAK4270 Breakout Board
 ---
 
 
 
-# RAK4270 AT Command Manual
+# RAK4270 Breakout Board AT Command Manual
 
 ## AT Commands
 
-The RAK4270 Module is designed to simplify LoRaWAN and LoRa point to point (P2P) communication. To integrate LoRa technology to your projects, RAK4270 has easy to use AT commands via UART communication interface. Through these AT commands, you can set the parameters needed for LoRaWAN and LoRa P2P communication. You can use any microcontroller with a UART interface to control the RAK4270 stamp module.  
+The RAK4270 Breakout Board is designed to simplify LoRaWAN and LoRa point to point (P2P) communication. To integrate LoRa technology to your projects, RAK4270 has easy to use AT commands via UART communication interface. Through these AT commands, you can set the parameters needed for LoRaWAN and LoRa P2P communication.
 
-In the RAK4270, the serial communication is exposed on **UART1 port** via **pin 4 (TX1)** and **pin 5 (RX1)**. The default parameters of the UART1 are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and other hardware details, refer to the [RAK4270 Module Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#hardware).
+In the RAK4270 Breakout Board, the serial communication is exposed on **UART1 port** via **UART1_TX/PA9** and **UART2_RX/PA10**. The default parameters of the UART1 are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. 
 
-In addition, RAK4270 also exposed another serial port **UART2**, via **pin 2 (TX2)** and **pin 1 (RX2)**. You can use UART2 as alternative to UART1 when sending AT commands. You can also use UART2 when developing custom firmware via [RUI](/RUI/). The default parameters of the UART2 are **115200 / 8-N-1**.
+In addition, RAK4270 board also exposed another serial port **UART2**, via **UART2_TX/PA2** and **UART2_RX/PA3**. You can use UART2 as alternative to UART1 when sending AT commands. You can also use UART2 when developing custom firmware via [RUI](/RUI/). The default parameters of the UART2 are **115200 / 8-N-1**.
+
+To get familiar with the pin distribution and other hardware details, refer to [RAK4270 Breakout Board Datasheet](/Product-Categories/WisDuo/RAK4270-Breakout-Board/Datasheet/#hardware).
+
+
 
 If only one UART is used in your project, it is recommended that you dedicate UART2 for AT commands and UART1 is reserved for firmware upgrade.
 
@@ -61,7 +65,7 @@ Only Read commands have information in the replied message, while Write commands
 
 :::
 
-The firmware you developed, running in the external MCU, will expect at minimum a string of "Ok\r\n" after sending a successful command to the module. In the other hand, when the command is not successfully executed by the module. A reply with will be received in the following format:
+The firmware you developed, running in the external MCU, will expect at a minimum string of "Ok\r\n" after sending a successful command to the module. On the other hand, when the command is not successfully executed by the module, a reply will be received in the following format:
 
 `ERROR: [ErrCode]\r\n`
 
@@ -82,7 +86,7 @@ The error codes are shown in the following section.
 | 84         | The LoRa data rate (DR) is invalid.                                                                                                                                         |
 | 85         | The LoRa frequency and data rate are invalid.                                                                                                                               |
 | 86         | The device hasn’t joined into a LoRa network.                                                                                                                               |
-| 87         | The length of the packet exceeded that maximum allowed by the LoRa protocol.                                                                                                |
+| 87         | The length of the packet exceeded the maximum allowed by the LoRa protocol.                                                                                                 |
 | 88         | Service is closed by the server. Due to the limitation of duty cycle, the server will send "SRV_MAC_DUTY_CYCLE_REQ" MAC command to close the service.                       |
 | 89         | This is an unsupported region code.                                                                                                                                         |
 | 90         | Duty cycle is restricted. Due to duty cycle, data cannot be sent at this time until the time limit is removed.                                                              |
@@ -95,7 +99,7 @@ The error codes are shown in the following section.
 | 97         | There is an error while receiving a packet during the LoRa RX1 window.                                                                                                      |
 | 98         | There is an error while receiving a packet during the LoRa RX2 window.                                                                                                      |
 | 99         | Failed to join into a LoRa network.                                                                                                                                         |
-| 100        | Duplicate downlink message is detected. A message with an invalid downlink count was received.                                                                              |
+| 100        | Duplicate downlink message is detected. A message with an invalid downlink count is received.                                                                               |
 | 101        | Payload size is not valid for the current data rate (DR).                                                                                                                   |
 | 102        | Many downlink packets are lost.                                                                                                                                             |
 | 103        | Address fail. The address of the received packet does not match the address of the current node.                                                                            |
@@ -103,7 +107,7 @@ The error codes are shown in the following section.
 
 ## General AT Command
 
-1. <b>at+version</b>Un
+1. <b>at+version</b>
 
 This command is used to get the current firmware version number.
 
@@ -120,7 +124,7 @@ at+version\r\n
 OK V3.3.0.14
 ```
 
-2. <b> at+help </b>
+2. <b>at+help</b>
 
 This command is used to obtain all the AT commands supported by the current firmware.
 
@@ -212,6 +216,7 @@ This command is used to change the current state of the device between the sleep
 | --------- | ----------- |
 | status    | 0: wake up  |
 |           | 1: sleep    |
+
 
 **Example**
 
@@ -311,7 +316,7 @@ OK
 
 4. <b>at+get_config=device:gpio:`<pin_num>`</b>
 
-This command is used to obtain the voltage level status of a GPIO pin on a module. The GPIO pin number mapping can be found in the Pin Definition section of the [Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#pin-definition).
+This command is used to obtain the voltage level status of a GPIO pin on a module. The GPIO pin number mapping can be found in the Pin Definition section of the [Datasheet](/Product-Categories/WisDuo/RAK4270-Breakout-Board/Datasheet/#pin-definition).
 
 | Operation | Command                               | Response      |
 | --------- | ------------------------------------- | ------------- |
@@ -329,9 +334,10 @@ This command is used to obtain the voltage level status of a GPIO pin on a modul
 at+get_config=device:gpio:3\r\n
 OK 1
 ```
+
 5. <b>at+set_config=device:gpio:`<pin_num>:<status>`</b>
 
-This command is used to set the voltage level state (high or low) of a GPIO pin on a module. 
+This command is used to set the voltage level state (high or low) of a GPIO pin on a module. The GPIO pin number mapping can be found in the Pin Definition section of the [Datasheet](/Product-Categories/WisDuo/RAK4270-Breakout-Board/Datasheet/#pin-definition).
 
 | Operation | Command                                        | Response |
 | --------- | ---------------------------------------------- | -------- |
@@ -352,7 +358,7 @@ OK
 
 6. <b> at+get_config=device:adc:`<pin_num>` </b>
 
-This command is used to obtain the voltage level of an ADC pin of the module. The ADC pin number mapping can be found in the Pin Definition section of the [Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#pin-definition).
+This command is used to obtain the voltage level of an ADC pin of the module. The ADC pin number mapping can be found in the Pin Definition section of the [Datasheet](/Product-Categories/WisDuo/RAK4270-Breakout-Board/Datasheet/#pin-definition).
 
 | Operation | Command                              | Response       |
 | --------- | ------------------------------------ | -------------- |
@@ -370,7 +376,6 @@ at+get_config=device:adc:3\r\n
 OK 1663mV
 ```
 
-
 ## LoRaWAN Type AT Command
 
 1. <b>at+join</b>
@@ -383,7 +388,7 @@ This command is used to join a LoRaWAN network.
 
 **Parameter**: None
 
-**Example**:
+**Example**
 
 ```
 at+join\r\n
@@ -393,7 +398,6 @@ OK Join Success
 2. <b>at+send=lora:`<port>:<data>`</b>
 
 This command is used to send data via LoRaWAN.
-
 
 | Operation | Command                      | Response |
 | --------- | ---------------------------- | -------- |
@@ -421,20 +425,18 @@ OK
 at+recv=0,-105,-12,0
 ```
 
-::: tip 📝 NOTE
+:::tip 📝 NOTE:
 
-* When sending a confirmed message, you will receive an ACK response, i.e. `at+recv=....` in `0, -105, -12,0`.
-
+* When sending a confirmed message, you will receive an ACK response: `at+recv=....` in `0, -105, -12, 0`.
+ 
     * `0` stands for the LoRa port
     * `-105` stands for the RSSI
     * `-12` stands for the SNR
     * `0` stands for the length of the data (no valid data in ACK).
 
-
 * When sending an unconfirmed message, sometimes the gateway will send MAC commands to nodes, and the node will also receive `at + recv =...`.
-  
-:::
 
+:::
 
 3. <b>at+set_config=lora:region:`<region>`</b>
 
@@ -480,11 +482,11 @@ OK *0,on,868100000,0,5; *1,on,868300000,0,5; *2,on,868500000,0,5; 3,off,0,0,0; 4
 
 With "*0,on,868100000,0,5" as an example，channel parameter analysis:
 
-- `*` at the beginning if the channel is open;
-- `0` is the channel ID;
-- `on` indicates the current status of the channel;
-- `868100000` is the actual frequency of the channel，unit is Hz;
-- `0,5` indicates the DR of the channel, DR0~DR5.
+- `*` - at the beginning, if the channel is open;
+- `0` - is the channel ID;
+- `on` - indicates the current status of the channel;
+- `868100000` - is the actual frequency of the channel，unit is Hz;
+- `0,5` - indicates the DR of the channel, DR0~DR5.
 
 :::
 
@@ -574,9 +576,9 @@ This command is used to set the Device Address parameter for the LoRaWAN ABP mod
 | --------- | ---------------------------------------- | -------- |
 | Write     | `at+set_config=lora:dev_addr:<dev_addr>` | `OK`     |
 
-| Parameter | Description     |
-| --------- | --------------- |
-| dev_addr  | Device Address. |
+| Parameter | Description    |
+| --------- | -------------- |
+| dev_addr  | Device Address |
 
 **Example**:
 
@@ -612,9 +614,9 @@ This command is used to set the Network Session Key parameter for the LoRaWAN AB
 | --------- | ---------------------------------------- | -------- |
 | Read      | `at+set_config=lora:nwks_key:<nwks_key>` | `OK`     |
 
-| Parameter | Description          |
-| --------- | -------------------- |
-| nwks_key  | Network Session Key. |
+| Parameter | Description         |
+| --------- | ------------------- |
+| nwks_key  | Network Session Key |
 
 **Example**:
 
@@ -886,7 +888,7 @@ OK
 
 24. <b>at+set_config=lora:send_repeat_cnt:`<num>`</b>
 
-This command is used to set the number of attempts for retransmitting an uplink message. When activated, the module will resend a message if its corresponding ACK (downlink) is not received after sending a confirmed uplink message. The default value is 0, which means that the module will not resend any message by default.
+This command is used to set the number of retransmitting attempts on an uplink message. When activated, the board will resend a message if its corresponding ACK (downlink) is not received after sending a confirmed uplink message. The default value is 0, which means that the board will not resend any message by default.
 
 | Operation | Command                                       | Response |
 | --------- | --------------------------------------------- | -------- |
@@ -925,7 +927,7 @@ OK
 
 1. <b>at+set_config=lora:work_mode:`<mode>`</b>
 
-This command is used to switch the LoRa's work mode between the LoRaWAN and the LoRa P2P mode. This command will cause the module to restart.
+This command is used to switch the LoRa's work mode between the LoRaWAN and the LoRa P2P mode. This command will cause the board to restart.
 
 | Operation | Command                               | Response |
 | --------- | ------------------------------------- | -------- |
@@ -949,7 +951,7 @@ Initialization OK
 
 2. <b>at+set_config=lorap2p:`<frequency>:<spreadfact>:<bandwidth>:<codingrate>:<preamlen>:<power>`</b>
 
-This command is used to set the relevant parameters of LoRa P2P mode and is only valid when the LoRa mode was switched to LoRa P2P before.
+This command is used to set the relevant parameters of LoRA P2P mode and is only valid when the LoRa work mode is changed to LoRa P2P before.
 
 | Operation | Command                                                                                      | Response |
 | --------- | -------------------------------------------------------------------------------------------- | -------- |
@@ -1005,15 +1007,15 @@ OK
 
 4. <b>at+send=lorap2p:`<data>`</b>
 
-This command is used to send data in LoRa P2P mode, and it is only valid when the LoRa mode was set to LoRa P2P before.
+This command is used to send data through LoRa P2P and only valid when the LoRa work mode is set to LoRa P2P before.
 
 | Operation | Command                  | Response |
 | --------- | ------------------------ | -------- |
 | Send      | `at+send=lorap2p:<data>` | `OK`     |
 
-| Parameter | Description                                        |
-| --------- | -------------------------------------------------- |
-| data      | The data to be sent, and the format is hexadecimal |
+| Parameter | Description                                         |
+| --------- | --------------------------------------------------- |
+| data      | The data to be sent, and the format is hexadecimal. |
 
 **Example**:
 
@@ -1056,7 +1058,7 @@ at+recv=<RSSI>,<SNR>,<Data Length>:<Data>
 | 5         | LoRa: SF7 / 125&nbsp;kHz  | 5470                                 |
 | 6 ~ 15    | RFU                       |                                      |
 
-### US915
+<b>US915</b>
 
 | Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
 | --------- | ------------------------- | ------------------------------------ |
@@ -1074,7 +1076,7 @@ at+recv=<RSSI>,<SNR>,<Data Length>:<Data>
 | 13        | LoRa: SF7 / 500&nbsp;kHz  | 21900                                |
 | 14 ~ 15   | RFU                       |                                      |
 
-### AU915
+<b>AU915</b> 
 
 | Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
 | --------- | ------------------------- | ------------------------------------ |
@@ -1092,7 +1094,7 @@ at+recv=<RSSI>,<SNR>,<Data Length>:<Data>
 | 11        | LoRa: SF9 / 500&nbsp;kHz  | 7000                                 |
 | 12        | LoRa: SF8 / 500&nbsp;kHz  | 12500                                |
 
-### IN865
+<b>IN865</b>
 
 | Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
 | --------- | ------------------------- | ------------------------------------ |
@@ -1137,7 +1139,7 @@ By default, MaxEIRP is considered to be +16&nbsp;dBm.
 
 <b>AU915</b>
 
-By default, MaxEIRP is considered to be +30&nbsp;dBm.
+By default, MaxEIRP is considered to be +30&nbsp;dBm. 
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1147,7 +1149,7 @@ By default, MaxEIRP is considered to be +30&nbsp;dBm.
 
 <b>KR920</b>
 
-By default, MaxEIRP is considered to be +14&nbsp;dBm.
+By default, MaxEIRP is considered to be +14&nbsp;dBm. 
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1163,7 +1165,7 @@ By default, MaxEIRP is considered to be +14&nbsp;dBm.
 
 <b>AS923</b>
 
-By default, Max EIRP shall be 16&nbsp;dBm.
+By default, MaxEIRP shall be 16&nbsp;dBm. 
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1179,7 +1181,7 @@ By default, Max EIRP shall be 16&nbsp;dBm.
 
 <b>IN865</b>
 
-By default, MaxEIRP is considered to be 30&nbsp;dBm.
+By default, MaxEIRP is considered to be 30&nbsp;dBm. 
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1198,15 +1200,15 @@ By default, MaxEIRP is considered to be 30&nbsp;dBm.
 
 <b>CN470</b>
 
-By default, MaxEIRP is considered to be +19.15&nbsp;dBm.
+By default, MaxEIRP is considered to be +19.15&nbsp;dBm. 
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
 | 0       | MaxEIRP              |
-| 1       | MaxEIRP 2&nbsp;dB    |
-| 2       | MaxEIRP 4&nbsp;dB    |
-| 3       | MaxEIRP 6&nbsp;dB    |
-| 4       | MaxEIRP 8&nbsp;dB    |
+| 1       | MaxEIRP - 2&nbsp;dB  |
+| 2       | MaxEIRP - 4&nbsp;dB  |
+| 3       | MaxEIRP - 6&nbsp;dB  |
+| 4       | MaxEIRP - 8&nbsp;dB  |
 | 5       | MaxEIRP - 10&nbsp;dB |
 | 6       | MaxEIRP - 12&nbsp;dB |
 | 7       | MaxEIRP - 14&nbsp;dB |
@@ -1214,7 +1216,7 @@ By default, MaxEIRP is considered to be +19.15&nbsp;dBm.
 
 <b>EU433</b>
 
-By default, MAxEIRP is considered to be +12.15&nbsp;dBm.
+By default, MAxEIRP is considered to be +12.15&nbsp;dBm. 
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1298,7 +1300,6 @@ In the following list, M is the length with MAC header and N is the length witho
 
 <b>AS923</b>
 
-
 <table style="text-align: center">
 <thead>
   <tr>
@@ -1379,7 +1380,6 @@ In the following list, M is the length with MAC header and N is the length witho
 </tbody>
 </table>
 
-
 <b>IN865</b>
 
 | DataRate | M           | N           |
@@ -1420,30 +1420,41 @@ In the following list, M is the length with MAC header and N is the length witho
 | 7        | 250         | 242         |
 | 8 ~ 15   | Not Defined | Not Defined |
 
-## Pin Description of RAK4270 Module
+## Pin Description of RAK4270 Breakout Board
 
-The pin definition of the RAK4270 module can be reviewed in the following documentation:
+The pin definition of the RAK4270 Breakout Board can be reviewed in the following documentation:
 
-A summary of the pins of the RAK4270 module:
+<rk-img
+  src="/assets/images/wisduo/rak4270-breakout-board/datasheet/2.pin-definition.png"
+  width="40%"
+  caption="RAK4270 Breakout Board Pinout"
+/>
 
-1. **About the UART Pin**:
-    
-    - Pin 4 (TX1) and  Pin 5 (RX1) are reserved for UART1.
-    - Pin 2 (TX2) and Pin 1 (RX2) are reserved for UART2.
-    - During sleep, Pin 5 (RX1) and Pin 1 (RX2) are configured as external interrupt mode, internal pull-down resistor, rising edge trigger wake-up.
+A summary of the pins of the RAK4270 Breakout Board:
 
-2. **About the SWD Debug Pin**: Pin 7 (SWDIO) and Pin 8 (SWCLK) are used for SWD debug port.
-   
-3. **About the Power Pin**: The power pin on the RAK4270 module includes: VCC/GND, Pin 11, Pin 13, Pin 14, Pin 19, and Pin 20.
+1. **About the UART pin**:
+  
+  - Pins UART1_TX/PA9 and UART1_RX/PA10 are reserved for UART1.
+  - Pins UART2_TX/PA2 and UART2_RX/PA3 are reserved for UART2. 
+  - During sleep, UART1_RX1/PA10 and UART1_RX1/PA3 are configured as external interrupt mode, internal pull-down resistor, rising edge trigger wake-up.
+  
+2. **About the SWD debug pin**: Pins SWDIO/PA13 and SWCLK/PA14 are used for SWD debug port.
 
-4. **About the Reset Pin**: The reset pin on the RAK4270 module is Pin 18.
-   
-5. **About the RF Antenna Pin**: The RF antenna pin on the RAK4270 module is the Pin 12.
-   
-6. **About the ADC Pin**: The ADC pin on the RAK4270 is assigned to the Pin 3.
-   
-7. **About the GPIO pin**: The GPIO pin available on the RAK4270 module are: Pin 3, Pin 6, Pin 9, Pin 10, Pin 16, and Pin 17.
+3. **About the reset pin**: The reset pin on the RAK4270 Breakout Board is MCU_NRST.
+
+
+4. **About the ADC pin**: The ADC pin on the RAK4270 Breakout Board is assigned to the UART2_DE/PA1. This is called Pin 3 which is based on the RAK4270 pin numbers.
+
+
+5. **About the GPIO pins**: The pin numbers are based on RAK4270 pin naming. The GPIO pin available on the RAK4270 board are the following:
+  
+  - Pin 3 (UART2_DE/PA1)
+  - Pin 6 (UART1_DE/PA12)
+  - Pin 9 (I2C_SCL/PB6)
+  - Pin 10 (I2C_SDA/PB7)
+  - Pin 16 (PB4)
+  - Pin 17 (PA8)
 
 ::: tip 📝 NOTE
-If you want to use RAK4270 Module to make a product, you should understand how to upgrade the RAK4270 firmware in future. As mentioned, the firmware of the RAK4270 module can be upgraded through the SWD or UART1. Both requires a general-purpose PC.
+If you want to use RAK4270 Breakout Board to make a product, you should understand how to upgrade the RAK4270 firmware in future. As mentioned, the firmware of the RAK4270 Breakout Board can be upgraded through the SWD or UART1. Both requires a general-purpose PC.
 :::

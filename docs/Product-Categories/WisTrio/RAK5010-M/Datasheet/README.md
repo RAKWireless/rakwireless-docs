@@ -241,9 +241,9 @@ Below is the definition of 20PIN segger J-LINK connector:
   caption="J-LINK Pinout"
 />
 
-| Pin | Signal | Type  |                                                                                                                                        Description                                                                                                                                         |
-| :-: | :----: | :---: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|  1  | VTref  | Input | This is the target reference voltage. It is used to check if the target has power, to create the logic-level reference for the input comparators and to control the output logic levels to the target. It is normally supplied from VDD of the target board and must not have a series resistor |
+|  Pin  | Signal | Type  |                                                                                                                                           Description                                                                                                                                           |
+| :---: | :----: | :---: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|   1   | VTref  | Input | This is the target reference voltage. It is used to check if the target has power, to create the logic-level reference for the input comparators and to control the output logic levels to the target. It is normally supplied from VDD of the target board and must not have a series resistor |
 
 ##### J10 and J12
 
@@ -633,10 +633,9 @@ The table below lists the operation and storage temperature requirements:
 
 Download the latest firmware version of the RAK5010-M WisTrio™ provided in the table below. 
 
-| Model     | Version  | Source                                                                                       |
-| --------- | -------- | -------------------------------------------------------------------------------------------- |
-| RAK5010   | V3.0.0.11 | [Download](https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/RAK5010_Latest_Firmware.zip) |
-| RAK5010-M | V3.0.0.11 | [Download](https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/RAK5010-M_Latest_Firmware.zip)        |
+| Model     | Version   | Source                                                                                                |
+| --------- | --------- | ----------------------------------------------------------------------------------------------------- |
+| RAK5010-M | V3.0.0.14 | [Download](https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/RAK5010-M_Latest_Firmware.zip) |
 
 ## Models / Bundles
 

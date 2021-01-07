@@ -24,13 +24,13 @@ One of the essential aspects that allows you to develop your own version of firm
 
 :::tip 📝 NOTE:
 
-There are two versions of the RAK4270 module: the high-frequency band RAK4270(H) used on EU433 and CN470, and the low-frequency band RAK4270(L) used on EU868, US915, AU915, KR920, AS923, and IN865. These two modules share the same schematic diagram which will be helpful to you when you develop your own firmware. 
+There are two versions of the RAK4270 module: the high-frequency band RAK4270(H) used on EU868, US915, AU915, KR920, AS923, and IN865, and the low-frequency band RAK4270(L) used on EU433 and CN470 . These two modules share the same schematic diagram which will be helpful to you when you develop your own firmware. 
 
 :::
 
 ### Porting Lora Protocol Stack
 
-When implementing the LoRa protocol stack, special attention must be given in the SPI connections since the LoRa transceivers are controlled by the MCU through an SPI interface. Hence, the following are the important pins: **SPI1_MISO, SPI1_MOSI, SPI_NSS, SPI_CLK**. 
+When implementing the LoRa protocol stack, special attention must be given in the SPI connections since the LoRa transceivers are controlled by the MCU through an SPI   interface. Hence, the following are the important pins: **SPI1_MISO, SPI1_MOSI, SPI_NSS, SPI_CLK**. 
 
 Additionally, the DIO pins and RF signal paths are significant as well to have functional LoRa communication. Another important thing to consider is the RF switch logic table. The complete details of pin connections can be found on the [RAK4270 Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/). 
 
@@ -59,7 +59,7 @@ In Figure 1, it shows a usual memory map for an ARM Cortex M0+ MCU, which is the
 <rk-img
   src="/assets/images/wisduo/rak4270-module/deep-development/boot-mode.png"
   width="70%"
-  caption="The flash section is between the 0x0800 0000 and 0x080X 0000. The X depends on the different models of MCU"
+  caption="Memory map for an ARM Cortex M0+ MCU"
 />
 
 The RAK’s bootloader is stored in the internal flash section and has a size of 12K, located between 0x0800 0000 to 0x0800 2FFF. Its primary function is to write a new version of firmware received from the serial port into the flash memory section. The bootloader uses the Ymodem protocol and supervises all possible exceptions internally during the upgrade process. When the upgrade process is interrupted, the bootloader will detect abnormal events, and the FW upgrade will fail. You can perform the FW upgrade again using the bootloader after recycling the power.

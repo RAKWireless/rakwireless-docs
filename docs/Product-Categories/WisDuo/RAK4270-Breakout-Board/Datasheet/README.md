@@ -2,7 +2,8 @@
 tags:
   - datasheet
   - wisduo
-prev: ../Quickstart/
+prev: ../AT-Command-Manual/
+next: false
 ---
 
 # RAK4270 Breakout Board Datasheet
@@ -57,13 +58,13 @@ Hardware specification is categorized into five parts that covers the interfacin
 
 To program the breakout board with the DAPLink tool, the following pins are required:
 
-| **Connector/Pin** | **Name** | **I/O** | **Description** | **Alternate functions** |
-| :-: | -- | :-: | -- | -- |
-| J1 5 | SWDIO | I/O | Programming (STM32L071KBU6 PA13) | SWDIO, LPUART1_RX | 
-| J1 6 | SWCLK | I/O | Programming (STM32L071KBU6 PA14) | SWCLK, USART2_TX, LPUART1_TX | 
-| J2 1 | VDD | - | DC3V3 | Supply voltage 2.0~3.3&nbsp;V | 
-| J2 4 | GND | - | Ground | - | 
-| J2 5 | MCU_NRST | I/O | MCU reset (STM32L071KBU6 NRST) | - | 
+| **Connector/Pin** | **Name** | **I/O** | **Description**                  | **Alternate functions**       |
+| :---------------: | -------- | :-----: | -------------------------------- | ----------------------------- |
+|       J1 5        | SWDIO    |   I/O   | Programming (STM32L071KBU6 PA13) | SWDIO, LPUART1_RX             |
+|       J1 6        | SWCLK    |   I/O   | Programming (STM32L071KBU6 PA14) | SWCLK, USART2_TX, LPUART1_TX  |
+|       J2 1        | VDD      |    -    | DC3V3                            | Supply voltage 2.0~3.3&nbsp;V |
+|       J2 4        | GND      |    -    | Ground                           | -                             |
+|       J2 5        | MCU_NRST |   I/O   | MCU reset (STM32L071KBU6 NRST)   | -                             |
 
 :::tip 📝 NOTE:
 It is recommended to keep these GPIO's unconnected and not to use them to connect sensors, buttons, or other external components.
@@ -97,38 +98,38 @@ The pin definitions of the RAK4270 Breakout Board are shown in the following tab
 
 ##### J1 Pin Definitions
 
-| Pin | Name | I/O | Description | Alternate functions |
-| :-: | -- | :-: | -- | -- |
-| 1 | UART2_RX | I | AT command UART (STM32L071KBU6 PA3) | USART1_RX, I2C1_SDA | 
-| 2 | UART2_TX | O | AT command UART (STM32L071KBU6 PA2) | MCO, USART1_TX, I2C1_SCL, I2C3_SMBA | 
-| 3 | UART2_DE | I/O | GPIO (STM32L071KBU6 PA1) | SPI1_MOSI,EVENTOUT, USART1_RTS_DE, COMP2_OUT | 
-| 4 | UART1_DE | I/O | General GPIO or UART(Reserved) (STM32L071KBU6 PA12) | EVENTOUT, TIM2_CH2, USART2_RTS_DE, TIM21_ETR, USART4_RX, COMP1_INP, ADC_IN1 | 
-| 5 | SWDIO | I/O | Programming (STM32L071KBU6 PA13) | SWDIO, LPUART1_RX | 
-| 6 | SWCLK | I/O | Programming (STM32L071KBU6 PA14) | SWCLK, USART2_TX, LPUART1_TX | 
-| 7 | I2C_SCL | I/O | I2C interface (STM32L071KBU6 PB6) | USART1_TX,I2C1_SCL, LPTIM1_ETR,COMP2_INP | 
-| 8 | I2C_SDA | I/O | I2C interface (STM32L071KBU6 PB7) | USART1_RX,I2C1_SDA, LPTIM1_IN2,USART4_CTS, COMP2_INP,VREF_PVD_IN | 
+|  Pin  | Name     |  I/O  | Description                                         | Alternate functions                                                         |
+| :---: | -------- | :---: | --------------------------------------------------- | --------------------------------------------------------------------------- |
+|   1   | UART2_RX |   I   | AT command UART (STM32L071KBU6 PA3)                 | USART1_RX, I2C1_SDA                                                         |
+|   2   | UART2_TX |   O   | AT command UART (STM32L071KBU6 PA2)                 | MCO, USART1_TX, I2C1_SCL, I2C3_SMBA                                         |
+|   3   | UART2_DE |  I/O  | GPIO (STM32L071KBU6 PA1)                            | SPI1_MOSI,EVENTOUT, USART1_RTS_DE, COMP2_OUT                                |
+|   4   | UART1_DE |  I/O  | General GPIO or UART(Reserved) (STM32L071KBU6 PA12) | EVENTOUT, TIM2_CH2, USART2_RTS_DE, TIM21_ETR, USART4_RX, COMP1_INP, ADC_IN1 |
+|   5   | SWDIO    |  I/O  | Programming (STM32L071KBU6 PA13)                    | SWDIO, LPUART1_RX                                                           |
+|   6   | SWCLK    |  I/O  | Programming (STM32L071KBU6 PA14)                    | SWCLK, USART2_TX, LPUART1_TX                                                |
+|   7   | I2C_SCL  |  I/O  | I2C interface (STM32L071KBU6 PB6)                   | USART1_TX,I2C1_SCL, LPTIM1_ETR,COMP2_INP                                    |
+|   8   | I2C_SDA  |  I/O  | I2C interface (STM32L071KBU6 PB7)                   | USART1_RX,I2C1_SDA, LPTIM1_IN2,USART4_CTS, COMP2_INP,VREF_PVD_IN            |
 
 
 ##### J2 Pin Definitions
 
-| Pin | Name | I/O | Description | Alternate functions |
-| :-: | -- | :-: | -- | -- |
-| 1 | VDD | - | DC3V3 | Supply voltage 2.0~3.3&nbsp;V | 
-| 2 | UART1_TX | I/O | Upgrade UART or General GPIO (STM32L071KBU6 PA9) | TIM21_CH1,TIM2_CH3, USART2_TX, PUART1_TX, COMP2_OUT,COMP2_INM, ADC_IN2 | 
-| 3 | UART1_RX | I/O | Upgrade UART or General GPIO (STM32L071KBU6 PA10) | TIM21_CH2,TIM2_CH4, USART2_RX,LPUART1_RX, COMP2_INP,ADC_IN3 | 
-| 4 | GND | - | Ground | - | 
-| 5 | MCU_NRST | I/O | MCU reset (STM32L071KBU6 NRST) | - | 
-| 6 | ANT_SW | I/O | PA11 | This pin has been connected to the internal RF switch, so leave it unconnected on the mainboard. | 
-| 7 | PB4 | I/O | STM32L071KBU6 PB4 | GPIO | 
-| 8 | PA8 | I/O | STM32L071KBU6 PA8 | GPIO | 
+|  Pin  | Name     |  I/O  | Description                                       | Alternate functions                                                                              |
+| :---: | -------- | :---: | ------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+|   1   | VDD      |   -   | DC3V3                                             | Supply voltage 2.0~3.3&nbsp;V                                                                    |
+|   2   | UART1_TX |  I/O  | Upgrade UART or General GPIO (STM32L071KBU6 PA9)  | TIM21_CH1,TIM2_CH3, USART2_TX, PUART1_TX, COMP2_OUT,COMP2_INM, ADC_IN2                           |
+|   3   | UART1_RX |  I/O  | Upgrade UART or General GPIO (STM32L071KBU6 PA10) | TIM21_CH2,TIM2_CH4, USART2_RX,LPUART1_RX, COMP2_INP,ADC_IN3                                      |
+|   4   | GND      |   -   | Ground                                            | -                                                                                                |
+|   5   | MCU_NRST |  I/O  | MCU reset (STM32L071KBU6 NRST)                    | -                                                                                                |
+|   6   | ANT_SW   |  I/O  | PA11                                              | This pin has been connected to the internal RF switch, so leave it unconnected on the mainboard. |
+|   7   | PB4      |  I/O  | STM32L071KBU6 PB4                                 | GPIO                                                                                             |
+|   8   | PA8      |  I/O  | STM32L071KBU6 PA8                                 | GPIO                                                                                             |
 
 
 ##### J4 Pin Definitions
 
-| Pin | Name | I/O | Description | Alternate functions |
-| :-: | -- | :-: | -- | -- |
-| 1 | VDD | - | DC3V3 | Supply voltage 2.0~3.3&nbsp;V | 
-| 2 | GND | - | Ground | GND |
+|  Pin  | Name |  I/O  | Description | Alternate functions           |
+| :---: | ---- | :---: | ----------- | ----------------------------- |
+|   1   | VDD  |   -   | DC3V3       | Supply voltage 2.0~3.3&nbsp;V |
+|   2   | GND  |   -   | Ground      | GND                           |
 
 
 #### RF Characteristics
@@ -137,16 +138,16 @@ The pin definitions of the RAK4270 Breakout Board are shown in the following tab
 
 The RAK4270 Breakout board supports the following LoRaWAN bands:    
 
-| **Module** | **Region** | **Frequency (MHz)** |
-| ---------- | ---------- | ------------------- |
-| RAK4270(L) | Europe     | EU433               |
-| RAK4270(L) | China      | CN470               |
-| RAK4270(H) | India      | IN865               |
-| RAK4270(H) | Europe     | EU868               |
-| RAK4270(H) | North America | US915            |
-| RAK4270(H) | Australia  | AU915               |
-| RAK4270(H) | Korea      | KR920               |
-| RAK4270(H) | Asia       | AS923               |
+| **Module** | **Region**    | **Frequency (MHz)** |
+| ---------- | ------------- | ------------------- |
+| RAK4270(L) | Europe        | EU433               |
+| RAK4270(L) | China         | CN470               |
+| RAK4270(H) | India         | IN865               |
+| RAK4270(H) | Europe        | EU868               |
+| RAK4270(H) | North America | US915               |
+| RAK4270(H) | Australia     | AU915               |
+| RAK4270(H) | Korea         | KR920               |
+| RAK4270(H) | Asia          | AS923               |
 
 
 
@@ -156,14 +157,14 @@ The RAK4270 Breakout board supports the following LoRaWAN bands:
 
 Values listed in the table are values measured with a LoRa frequency of **868&nbsp;MHz**:
 
-| Mode | Output Power | Current |
-| -- | :-: | -- |
-| Transmit | 21&nbsp;dBm | 124&nbsp;mA on PA_BOOST |
-| Transmit | 20&nbsp;dBm | 118&nbsp;mA on PA_BOOST |
-| Transmit | 17&nbsp;dBm | 102&nbsp;mA on PA_BOOST |
-| Transmit | 14&nbsp;dBm | 90&nbsp;mA on PA_BOOST |
-| Receive  | - | 15&nbsp;mA |
-| Sleep | - | 1.5&nbsp;uA |
+| Mode     | Output Power | Current                 |
+| -------- | :----------: | ----------------------- |
+| Transmit | 21&nbsp;dBm  | 124&nbsp;mA on PA_BOOST |
+| Transmit | 20&nbsp;dBm  | 118&nbsp;mA on PA_BOOST |
+| Transmit | 17&nbsp;dBm  | 102&nbsp;mA on PA_BOOST |
+| Transmit | 14&nbsp;dBm  | 90&nbsp;mA on PA_BOOST  |
+| Receive  |      -       | 15&nbsp;mA              |
+| Sleep    |      -       | 1.5&nbsp;uA             |
 
 
 #### Schematic Diagram

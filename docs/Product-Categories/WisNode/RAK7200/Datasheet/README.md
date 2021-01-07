@@ -230,6 +230,26 @@ The table below lists the operation and storage temperature requirements.
 | Operation Temp. Range | -10 °C | +25 °C  | +60 °C |
 | Extended Temp. Range  | -10 °C |         | +80 °C |
 
+#### Schematic Diagram
+
+<rk-img
+  src="/assets/images/wisnode/rak7200/datasheet/schematic-diagram-1.png"
+  width="100%"
+  caption="Schematic Diagram - 1"
+/>
+
+<rk-img
+  src="/assets/images/wisnode/rak7200/datasheet/schematic-diagram-1.png"
+  width="100%"
+  caption="Schematic Diagram - 2"
+/>
+
+<rk-img
+  src="/assets/images/wisnode/rak7200/datasheet/schematic-diagram-1.png"
+  width="100%"
+  caption="Schematic Diagram - 3"
+/>
+
 ### Software
 
 Download the latest firmware version of RAK7200 in tha table provided below.

@@ -23,7 +23,7 @@ One of the essential aspects that allow customers to develop their own version o
 
 :::tip 📝 NOTE:
 
-There are two versions of the RAK811 module: the high-frequency bands RAK811(H) used on EU433 and CN470, and the low-frequency bands RAK811(L) used on EU868, US915, AU915, KR920, AS923, and IN865. These two modules have few differences in their schematic diagram that you should be aware of when you develop your own firmware. 
+There are two versions of the RAK811 module: the high-frequency bands RAK811(H) used on EU868, US915, AU915, KR920, AS923, and IN865 , and the low-frequency bands RAK811(L) used on EU433 and CN470. These two modules have few differences in their schematic diagram that you should be aware of when you develop your own firmware. 
 
 :::
 
@@ -54,7 +54,7 @@ Figure 1 below shows the usual memory map of an ARM Cortex M3 MCU, which is the 
 <rk-img
   src="/assets/images/wisduo/rak811-module/deep-development/memory-map.png"
   width="80%"
-  caption="Usual memory map for an ARM Cortex M4 MCU"
+  caption="Usual memory map for an ARM Cortex M3 MCU"
 />
 
 The flash section is between the 0x0800 0000 and 0x080X 0000. X depends on the different models of MCU.

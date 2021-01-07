@@ -1,6 +1,6 @@
 ---
 prev: ../Overview/
-next: ../Datasheet/
+next: ../AT-Command-Manual/
 tags:
   - RAK4270 Breakout Board
 ---

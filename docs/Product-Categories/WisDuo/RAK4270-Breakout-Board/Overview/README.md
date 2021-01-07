@@ -11,7 +11,10 @@ rak_model: RAK4270-D
 Thank you for choosing **RAK4270 Breakout Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
 * [Quick Start Guide](../Quickstart/)
+* [AT Command Manual](../AT-Command-Manual/)
 * [Datasheet](../Datasheet/)
+
+  
 
 ## Product Description
 
