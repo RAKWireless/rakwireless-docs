@@ -52,7 +52,7 @@ By changing the states in the **BOOT0** and **BOOT1** pins of the RAK811, the us
 
 <faq>
 <template #question>
-4. How does OTAA(Over-the-Air Activation) network join works?
+4. How does OTAA (Over-the-Air Activation) network join works?
 </template>
 <template #answer>
 
@@ -84,9 +84,9 @@ OTAA is a method of LoRaWAN network access in the air. Upon powering up, the nod
 </template>
 <template #answer>
 
-- Check whether the frequency plans of the two modules are identical
-- Check whether the bandwidth, spreading factor, coding rate, and preamble are the same on both modules
-- One of the modules must be on receiving mode while the other module sends data packets and vice versa
+1. Check whether the frequency plans of the two modules are identical.
+2. Check whether the bandwidth, spreading factor, coding rate, and preamble are the same on both modules.
+3. One of the modules must be on receiving mode while the other module sends data packets and vice versa.
 
 </template>
 </faq>
@@ -200,6 +200,92 @@ The MQTT integration exposes all events as documented by [Event Types](https://w
 If you have set an incorrect SSID or Password for Wi-Fi Client Mode, insert the SD Card into your PC and in the boot disk, and create a new file "**rak_ap**". Afterwhich, re-insert the SD Card into your Raspberry Pi based gateway and it should work again in Wi-Fi AP Mode.
 
 ![RAK_AP File](/assets/images/faq/software/item10.png)
+
+</template>
+</faq>
+
+<faq>
+<template #question>
+11. What are the default login credentials for the gateway’s Web UI?
+</template>
+<template #answer>
+
+The default username and password for all RAKwireless’ gateways are “**root**”.
+
+</template>
+</faq>
+
+
+<faq>
+<template #question>
+12. How to read the software version of a gateway?
+</template>
+<template #answer>
+
+When logging in to the Web UI, an Overview page will automatically load. Scroll down to the “System” section of it. There, the Firmware version is written.
+
+</template>
+</faq>
+
+
+<faq>
+<template #question>
+13. How to manually update the gateway’s firmware?
+</template>
+<template #answer>
+
+1. Download and unzip the latest firmware. The unzipped file should be in **.bin** format.
+2. Log in to the Web UI.
+3. Go to System > Backup/Flash Firmware.
+4. In the “**Flash new firmware image**” section, choose the new firmware file and click “**Flash image**”.
+
+</template>
+</faq>
+
+
+<faq>
+<template #question>
+14. How to read the software version of a node?
+</template>
+<template #answer>
+
+This can be done using AT commands and the RAK Serial Port Tool. For more detailed information about the process, refer to the AT Command Manual available in the Documentation Center under the node in question.
+
+</template>
+</faq>
+
+
+<faq>
+<template #question>
+15. How to manually update the node’s firmware?
+</template>
+<template #answer>
+
+Depending on the node, the Firmware Update Guide can be found in the Documentation Center under the node in question. 
+
+</template>
+</faq>
+
+
+<faq>
+<template #question>
+16. Where are the system logs for the WisGate Edge Gateways?
+</template>
+<template #answer>
+
+They are stored on the SD card. They are accessible at the Web UI > System > File Browser.
+
+</template>
+</faq>
+
+
+<faq>
+<template #question>
+17. Is an SDK available for the WisGate Edge Gateways?
+</template>
+<template #answer>
+
+Yes. RAKwireless can provide it after singing an NDA to protect our custom-developed software.
 
 </template>
 </faq>

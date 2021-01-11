@@ -242,9 +242,8 @@ RAK2247 WisLink LPWAN Concentrator is an Electrostatic Sensitive Device and requ
 
 | Mode             | Condition                                                 | Min. | Typical | Max. |
 | ---------------- | --------------------------------------------------------- | ---- | ------- | ---- |
-| Idle-Mode        | All of the chip on the board enter idle mode or shutdown. |      | 68 uA   |      |
-| Active-Mode(TX)  | The power of TX channel is 25dBm and 3.3V supply.         |      | 440 mA  |      |
-| Active-Mode(RX ) | TX disabled and RX enabled.                               |      | 470 mA  |      |
+| Active-Mode(TX)  | The power of TX channel is 25dBm and 3.3V supply.         |      | 789 mA  |      |
+| Active-Mode(RX ) | TX disabled and RX enabled.                               |      | 422 mA  |      |
 
 ##### Power Supply Range
 

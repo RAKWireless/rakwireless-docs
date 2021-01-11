@@ -138,7 +138,7 @@ There are three ways that you can check the logs for debugging purposes on your 
   
     - **[RAKwireless Downloads](https://downloads.rakwireless.com/en/LoRa/Tools).**
 
-3. After pushing the RST button on RAK5010, you can see the following contents in the serial port tool:
+3. After pushing the RST button on RAK5010, you can see the following contents in the serial port tool as shown in Figure 9:
 
 <rk-img
   src="/assets/images/wistrio/rak5010/quickstart/3.checking-device-logs/serialtool_connect.jpg"
@@ -194,7 +194,8 @@ You can configure your RAK5010 WisTrio NB-IoT Tracker Pro by sending AT Commands
 1. As mentioned in the [Checking Device Logs](#through-uart) section, if you want to use RAK5010 WisTrio NB-IoT Tracker Pro through UART, you should connect the RAK5010 in your PC through UART as shown in Figure 7. 
 
 2. Try to send a simple AT command to RAK5010 to get the current firmware version by sending the command below using the RAK Serial Port Tool. Similarly, you can send other AT commands of RAK5010 in the same way.
-```sh
+
+```
 at+version
 ```
 
@@ -236,7 +237,7 @@ at+version
  By the default, the BLE signal of the RAK5010 is turned off automatically if no connection is established after 60 seconds. Connect to the BLE signal of the RAK5010 immediately after pressing the reset button.
 :::
 
-4. Click the arrow which is marked by the red box as shown in Figure 17.
+1. Click the arrow marked by the red box, as shown in Figure 17.
 
 
 <rk-img
@@ -260,6 +261,7 @@ at+version
 />  
 
 6. Then, you can see the version number in RTT Viewer tool.
+   
 <rk-img
   src="/assets/images/wistrio/rak5010/quickstart/4.configuring-rak5010/nqqegmebbppnrcguzshh.png"
   width="80%"
@@ -274,20 +276,26 @@ Configuring the RAK5010 and checking logs via USB has the same setup. Refer to t
 
 In this section, you will learn more on how to connect Cellular Network of your device. 
 
-- To start with,  insert a SIM card into your RAK5010. For this section, a China Mobile SIM card is used to have a GSM network connection.
+- To start with, insert a SIM card into your RAK5010. For this section, a China Mobile SIM card is used to have a GSM network connection.
 
 As described in the previous section, there are three ways to configure our RAK5010: through UART, BLE, and micro USB. For this section, configuring the RAK5010 through UART is used as an example.
 
 
 There are two ways to connect and send packets to Cellular Network: **Manual** and **Automatic**.
 
-#### 1 . Connecting Cellular Network and Sending Packet over Cellular Manually
+#### 1. Connecting Cellular Network and Sending Packet over Cellular Manually
 
 - To begin with, send the following AT command to scan Cellular networks:
 
 ```
 at+scan=cellular
 ```
+
+:::tip 📝 NOTE:
+ - Ensure that the LTE Antenna of the RAK5010 is connected properly.
+ - Alternative command to `at+scan=cellular` is `at+set_config=cellular:(AT+COPS=?)`.
+ - Complete the details of the BG96 TCP AT commands manual can be downloaded from the[Quectel website](https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_AT_Commands_Manual_V2.1.pdf).
+:::
 
 <rk-img
   src="/assets/images/wistrio/rak5010/quickstart/5.connecting-cellular-network/24.jpg"
@@ -312,6 +320,13 @@ To configure the operator information, the following command is used:
 at+set_config=cellular:(AT+COPS=1,0,"CHINA MOBILE",0)
 ```
 
+:::tip 📝 NOTE:
+ - The last parameter of AT+COPS command is the type of connection: 0-GSM, 8-LTE CAT-M1, 9-LTE CAT-NB1.
+ - For example, if you want to connect to LTE CAT-M1, the command must be `at+set_config=cellular:(AT+COPS=1,0,"CHINA MOBILE",8)`.
+ - You can also check if your configuration is saved correctly with this command: `at+set_config=cellular:(AT+COPS?)`.
+ - Complete the details of the BG96 TCP AT commands manual can be downloaded from the [Quectel website](https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_AT_Commands_Manual_V2.1.pdf) .
+:::
+
 <rk-img
   src="/assets/images/wistrio/rak5010/quickstart/5.connecting-cellular-network/26.jpg"
   width="70%"
@@ -324,6 +339,12 @@ Now, continue to configure the network:
 ```
 at+set_config=cellular:(AT+QICSGP=1,1,"CMCC","","",1)
 ```
+
+:::tip 📝 NOTE:
+ - The third parameter of AT+QICSGP command is the APN of the cellular network. This is different per country and dependent on what cellular telecommunications company you want to connect with.
+ - Complete the details of the BG96 TCP AT commands manual can be downloaded from the [Quectel website](https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_TCP(IP)_AT_Commands_Manual_V1.0.pdf) .
+:::
+
 ```
 at+set_config=cellular:(AT+QIACT=1)
 ```
@@ -369,9 +390,9 @@ at+send=cellular:XXX
   caption="Sending Data over Cellular"
 /> 
 
-- As you can see, the data we send is “**123456**”. 
+- As you can see, the data sent is “**123456**”. 
 
-Now, check it on our receiving server:
+Now, check it on the receiving server:
 
 
 <rk-img
@@ -387,7 +408,7 @@ rak2016@iZbp1980wxsue6enel4qc0Z:/home/rak2001$ tail -f rak12111
 [Tue Sep 24 18:37:47 2019] [handle_message]: client:6 disconnect.
 ```
 
-As you can see in **Figure 27**, the server has received the packet successfully, and the data sent is “**123456**” which is same with the one we just sent out.
+As you can see in **Figure 27**, the server has received the packet successfully, and the data sent is “**123456**”, which is the same as the one you just sent out.
 
 #### 2 . Connect Cellular Network and Send Packet Automatically
 
@@ -405,11 +426,15 @@ at+set_config=cellular:118.31.121.60:12111:CHINA MOBILE:CMCC:CMNET:0
   caption="Configuring the Cellular Network Parameters"
 />
 
-- Then, set the interval for sending loop as shown in figure 29.
+- Then, set the interval for sending loop as shown in Figure 29.
 
 ```
 at+set_config=cellular:send_interval:1:180000
 ```
+
+:::tip 📝 NOTE:
+ - During sleep (LEDs are all off), you cannot send any AT command to RAK5010 module. You need to restart your device and before going to sleep, you must send the command `at+set_config=cellular:send_interval:0:180000` to go back to normal mode.
+:::
 
 <rk-img
   src="/assets/images/wistrio/rak5010/quickstart/5.connecting-cellular-network/33.jpg"
@@ -431,7 +456,7 @@ at+set_config=device:restart
   caption="Restarting your RAK5010"
 />
 
-After restarting, the RAK5010 will connect the Cellular Network which you just set, and send a packet of sensor data automatically in a loop. Every time it sends a packet out, RAK5010 will go to sleep for 180 seconds which you just set, then RAK5010 will wake up and search a GPS, build a new packet, and send it out.
+After restarting, the RAK5010 will connect the Cellular Network, which you just set, and send a packet of sensor data automatically in a loop. Every time it sends a packet out, RAK5010 will go to sleep for 180 seconds, which you just set, then RAK5010 will wake up and search a GPS, build a new packet, and send it out.
 
 - You will see a continuous loop as shown in Figure 31.
 
@@ -443,7 +468,7 @@ After restarting, the RAK5010 will connect the Cellular Network which you just s
 
 - RAK5010 will send sensor data automatically in a loop. You can check the data in the receiving server:
 
-Let’s check the data in the receiving server:
+Check the data in the receiving server:
 
 ```
 rak2001@iZbp1980wxsue6enel4qc0Z:~$ tail -f rak121111
@@ -459,9 +484,10 @@ As you can see, the server has received the packet which RAK5010 sends out succe
 
 There are three BLE modes in RAK5010 from the firmware V3.0.0.6 on, the **Peripheral Mode**, the **Central Mode**, and the **Beacon Scan Mode**. You can change the work mode of RAK5010 BLE using the command provided in the [AT Commands Manual](../AT-Command-Manual/).
 
-```sh
+```
 at+set_config=ble:work_mode:X:Y
 ```
+
 **Description**: Set the work mode for BLE.
 - **X** - 0: BLE peripheral mode; 1: BLE central mode; 2: Beacon scan mode.
 - **Y** - 0: Normal range; 1: BLE long range.
@@ -473,7 +499,7 @@ For the Peripheral Mode, you can scan RAK5010 BLE and connect with it using your
 
 #### BLE Central Mode
 
-For the Central Mode, RAK5010 BLE will not broadcast so that your mobile devices will not be able to scan it. This is very useful if you want to make the RAK5010 act as a BLE Gateway wherein BLE Sensor Nodes (up to 20 Devices) can send sensor data.
+For the Central Mode, RAK5010 BLE will not broadcast, so that your mobile devices will not be able to scan it. This is very useful if you want to make the RAK5010 act as a BLE Gateway wherein BLE Sensor Nodes (up to 20 Devices) can send sensor data.
 
 #### Beacon Scan Mode
 
@@ -487,11 +513,12 @@ If you set the RAK5010 to work in Central Mode, the RAK5010 will work first on P
 
 ### Burning the Firmware
 
-An easy and quick way to get started with your RAK5010 is through using a pre-compiled firmware.  However, if you wanted to compile your own customized firmware, you can visit [RUI Customized Development](/RUI/) documentation to learn how.
+An easy and quick way to get started with your RAK5010 is through using a pre-compiled firmware.  However, if you want to compile your own customized firmware, you can visit [RUI Customized Development](/RUI/) documentation to learn how.
 
 #### Installing J-Flash
 
-1. Go to the official website of **Segger** where you can download the J-Flash software: [https://www.segger.com/products/debug-probes/j-link/tools/j-flash/about-j-flash/](https://www.segger.com/products/debug-probes/j-link/tools/j-flash/about-j-flash/)
+1. Go to the official website of **Segger**, and download the J-Flash software.
+    - [J-Flash](https://www.segger.com/products/debug-probes/j-link/tools/j-flash/about-j-flash/)
 
 <rk-img
   src="/assets/images/wistrio/rak5010/quickstart/7.burning-the-firmware/rhblajzhsv9pb1fdos3h.jpg"
@@ -559,7 +586,7 @@ An easy and quick way to get started with your RAK5010 is through using a pre-co
   caption="RAK5010 and JTAG Hardware Interface"
 />
 
-2. Download the latest pre-compiled firmware from the [RAKwireless Downloads](https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/) and extract it in your PC.
+2. Download the latest pre-compiled firmware from the [RAKwireless Downloads](https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/) and extract it to your PC.
 
 3. In the J-Flash software Menu Bar, choose **Target** -> **Connect**.
 
@@ -586,6 +613,7 @@ An easy and quick way to get started with your RAK5010 is through using a pre-co
 />
 
 ### Upgrading Firmware through DFU using BLE
+
 1. Download the DFU package of the RAK5010 WisTrio NB-IoT Tracker Pro and save it on your mobile phone.
 
     - [**DFU Package**](https://downloads.rakwireless.com/en/Cellular/RAK5010/Firmware/DFU-Package/) 
@@ -619,7 +647,7 @@ An easy and quick way to get started with your RAK5010 is through using a pre-co
   caption="Buttonless DFU"
 />
 
-5. Now, click the arrow highlighted in red as shown in Figure 46. A **Write Value** window pop-up, then press **Send**.
+5. Click the arrow highlighted in red as shown in Figure 46. A **Write Value** window pop-up, then press **Send**.
 
 <rk-img
   src="/assets/images/wistrio/rak5010/quickstart/8.upgrading-firmware/xb1hntew7qrbct9et5hz.jpg"
@@ -635,7 +663,7 @@ An easy and quick way to get started with your RAK5010 is through using a pre-co
   caption="RAK5010 Default Status Overview after Resetting"
 />
 
-7.  In the list of devices, find a BLE signal named **DfuTarg** and connect.
+7. In the list of devices, find a BLE signal named **DfuTarg** and connect.
 
 <rk-img
   src="/assets/images/wistrio/rak5010/quickstart/8.upgrading-firmware/g2v0fkj63cbuwtt24mht.jpg"
@@ -643,7 +671,7 @@ An easy and quick way to get started with your RAK5010 is through using a pre-co
   caption="RAK5010 Default Bluetooth ID after Resetting"
 />
 
-9. After connecting, select the **DFU Icon**. Select the **Distribution packet (ZIP)** and press **OK**. This will then prompt you to select the zip file of the firmware that you have downloaded.
+8. After connecting, select the **DFU Icon**. Select the **Distribution packet (ZIP)** and press **OK**. This will then prompt you to select the zip file of the firmware that you have downloaded.
 
 <rk-img
   src="/assets/images/wistrio/rak5010/quickstart/8.upgrading-firmware/pqnewr61x87nv5nrxovs.jpg"
@@ -651,7 +679,7 @@ An easy and quick way to get started with your RAK5010 is through using a pre-co
   caption="Distribution Packet File Type under DFU"
 />
 
-10. Then, it will automatically start to upgrade the firmware of your RAK5010 through DFU over BLE. After upgrading, it will restart and the DFU connection will be disconnected. Now, you can use your RAK5010 with the latest firmware.
+9. Then, it will automatically start to upgrade the firmware of your RAK5010 through DFU over BLE. After upgrading, it will restart and the DFU connection will be disconnected. Now, you can use your RAK5010 with the latest firmware.
 
 <rk-img
   src="/assets/images/wistrio/rak5010/quickstart/8.upgrading-firmware/nzilnqodbz6x33uvnpp4.jpg"

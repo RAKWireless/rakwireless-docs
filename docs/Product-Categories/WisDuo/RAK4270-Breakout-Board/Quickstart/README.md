@@ -58,13 +58,13 @@ Before powering the RAK4270 Breakout Board, make sure you have installed the LoR
 - UART1 is used for AT commands input as well as firmware update. Check [RAK4270 Breakout Board Pin Definition](/Product-Categories/WisDuo/RAK4270-Breakout-Board/Datasheet/#pin-definition) on the datasheet for complete details.
 
 <rk-img
- src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/interfacing-with-RAK4270-breakout/rakdap1torak4270bb.jpg"
+ src="/assets/images/wisduo/rak4270-breakout-board/quickstart/interfacing-with-rak4270-breakout/rakdap1torak4270bb.jpg"
   width="70%"
   caption="RAK4270 Breakout Board Connected to RAKDAP1 USB-UART Interface"
 />
 
 <rk-img
- src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/interfacing-with-RAK4270-breakout/uart_conn.jpg"
+ src="/assets/images/wisduo/rak4270-breakout-board/quickstart/interfacing-with-rak4270-breakout/uart_conn.jpg"
   width="50%"
   caption="RAK4270 Breakout Board to USB Uart Module Connection"
 />
@@ -72,7 +72,7 @@ Before powering the RAK4270 Breakout Board, make sure you have installed the LoR
 - Connect your USB - UART Module to your Windows PC and open RAK Serial Port Tool.
 
 <rk-img
- src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/interfacing-with-RAK4270-breakout/ou15nrdveyhmrzo8byof.png"
+ src="/assets/images/wisduo/rak4270-breakout-board/quickstart/interfacing-with-rak4270-breakout/ou15nrdveyhmrzo8byof.png"
   width="80%"
   caption="RAK Serial Port Tool"
 />
@@ -80,7 +80,7 @@ Before powering the RAK4270 Breakout Board, make sure you have installed the LoR
 - In choosing the correct COM Port number for your device, go to your Device Manager by pressing **Windows + R** and type `devmgmt.msc`, or search in the Start Menu.
 
 <rk-img
- src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/interfacing-with-RAK4270-breakout/siqhrem8xxxnvhj7vttn.png"
+ src="/assets/images/wisduo/rak4270-breakout-board/quickstart/interfacing-with-rak4270-breakout/siqhrem8xxxnvhj7vttn.png"
   width="60%"
   caption="Device Manager"
 />
@@ -88,7 +88,7 @@ Before powering the RAK4270 Breakout Board, make sure you have installed the LoR
 - Look for Ports (COM & LPT). Find the name of of your USB UART Module driver and take note of the COM Port Number.
 
 <rk-img
- src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/interfacing-with-RAK4270-breakout/rib8pvikbtggt9xryvxp.png"
+ src="/assets/images/wisduo/rak4270-breakout-board/quickstart/interfacing-with-rak4270-breakout/rib8pvikbtggt9xryvxp.png"
   width="80%"
   caption="Correct Port Number and Correct Baud rate"
 />
@@ -99,7 +99,7 @@ Before powering the RAK4270 Breakout Board, make sure you have installed the LoR
 In this section, a practical exercise will be performed to show how to connect the RAK4270 Breakout Board to The Things Network (TTN) platform. 
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/4.ttn-context.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/4.ttn-context.png"
   width="75%"
   caption="RAK4270 Breakout Board in the context of the TTN"
 />
@@ -114,14 +114,14 @@ The RAK4270 Breakout Board can be part of this ecosystem, and the objective of t
 If you don't have an account yet, head on to the [TTN website](https://www.thethingsnetwork.org/) and create one. Once done, login to your account and go to the Console. 
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/5.ttn.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/5.ttn.png"
   width="100%"
   caption="The Things Network Home Page"
 />
 
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/6.ttn-console.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/6.ttn-console.png"
   width="100%"
   caption="TTN Console Page"
 />
@@ -133,7 +133,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
 
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/7.application-section.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/7.application-section.png"
   width="100%"
   caption="Application Section"
 />
@@ -142,7 +142,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
 
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/8.adding-application.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/8.adding-application.png"
   width="100%"
   caption="Adding an Application"
 />
@@ -159,7 +159,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
 
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/9.application-overview.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/9.application-overview.png"
   width="100%"
   caption="Application Overview"
 />
@@ -169,7 +169,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
 1. Scroll down until you see the Devices section. Or, you can click the "**Devices**" button at the top. 
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/10.devices.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/10.devices.png"
   width="100%"
   caption="Register a New Device"
 />
@@ -177,7 +177,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
 2. Then, register a new device by clicking on the "**register devices**".
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/11.adding-device.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/11.adding-device.png"
   width="100%"
   caption="Add your Device"
 />
@@ -195,7 +195,7 @@ The TTN platform can generate these parameters randomly by leaving those fields 
 
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/12.device-overview.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/12.device-overview.png"
   width="100%"
   caption="Device Overview"
 />
@@ -230,7 +230,7 @@ at+version
 ```
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/3.command-response.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/3.command-response.png"
   width="40%"
   caption="at+version command response"
 />
@@ -293,7 +293,7 @@ at+set_config=lora:app_key:f921d50cd7d02ee3c5e6142154f274b2
 
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/14.lora-parameters.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/14.lora-parameters.png"
   width="40%"
   caption="Configuring LoRa Parameters"
 />
@@ -319,7 +319,7 @@ at+send:lora:2:1234567890
 ```
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/15.send-message.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/15.send-message.png"
   width="40%"
   caption="OTAA Test Sample Data Sent via RAK Serial Port Tool"
 />
@@ -328,7 +328,7 @@ You can see the data sent by the RAK4270 Breakout Board on the TTN platform as s
 
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/16.message-received.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/16.message-received.png"
   width="100%"
   caption="OTAA Test Sample Data Sent Viewed in TTN"
 />
@@ -342,7 +342,7 @@ You can see the data sent by the RAK4270 Breakout Board on the TTN platform as s
 If the ABP mode is preferred, then the TTN platform needs to be configured first accordingly. At TTN, once a device is created, you can select the “**SETTINGS**” section of the “**DEVICE**” and switch the “**Activation Method**”.
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/17.abp-mode.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/17.abp-mode.png"
   width="100%"
   caption="ABP Activation in TTN"
 />
@@ -359,7 +359,7 @@ These fields can be left empty in the form and TTN will complete them with rando
 
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/18.abp-parameters.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/18.abp-parameters.png"
   width="100%"
   caption="ABP Mode Parameters"
 />
@@ -367,7 +367,7 @@ These fields can be left empty in the form and TTN will complete them with rando
 The same as the OTAA form, you can leave these fields empty to allow TTN to generate random values or input the specific values that you want.
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/19.abp-mode-configuration.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/19.abp-mode-configuration.png"
   width="100%"
   caption="ABP Mode Parameters"
 />
@@ -387,7 +387,7 @@ at+version
 ```
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/3.command-response.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/3.command-response.png"
   width="40%"
   caption="at+version command response"
 />
@@ -441,7 +441,7 @@ at+set_config=lora:apps_key:4d42ec5caf97f03d833cdaf5003f69e1
 ```
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/21.abp-at-commands.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/21.abp-at-commands.png"
   width="40%"
   caption="AT Command for ABP LoRa parameters via RAK Serial Port Tool"
 />
@@ -472,7 +472,7 @@ at+send:lora:2:1234567890
 ```
 
 <rk-img
-  src="/assets/images/wisduo/RAK4270-breakout-board/quickstart/connecting-to-ttn/22.abp-sending-message.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/quickstart/connecting-to-ttn/22.abp-sending-message.png"
   width="40%"
   caption="ABP Test Sample Data Sent via RAK Serial Port Tool"
 />

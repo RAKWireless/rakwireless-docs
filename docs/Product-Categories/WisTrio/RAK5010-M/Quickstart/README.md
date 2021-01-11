@@ -1,6 +1,6 @@
 ---
 prev: ../Overview/
-next: ../AT-Command-Manual/
+next: ../Datasheet/
 tags:
   - RAK5010-M
 ---
@@ -11,475 +11,680 @@ tags:
 
 <!---
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/1.prerequisites/1.front-view.jpg"
-  width="50%"
+  src="/assets/images/wistrio/rak5010-m/quickstart/2.quick-start-guide/fqyo41hvkupnrljccsam.jpg"
+  width="30%"
   caption="Front View of RAK5010"
 />
 -->
 
 ### What do you need?
 
-Before going through each step in the installation guide of the RAK5010-M WisTrio NB-IoT Tracker, make sure to prepare the necessary items listed below:
+Before going through each and every step in the installation guide of the RAK5010-M WisTrio NB-IoT Tracker, make sure to prepare the necessary items listed below:
 
-#### Hardware Tools
 1. RAK5010-M WisTrio NB-IoT Tracker
-2. USB-UART Module
+2. USB-UART Module [(RAKDAP1 Tool)](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/)
 3. Jumper Wires
-4. Micro-USB Cable
-<!---4. Micro USB / 3.7V rechargeable battery / 5V Solar Panel Port-->
+4. Micro USB / 3.7&nbsp;V rechargeable battery / 5&nbsp;V Solar Panel Port
 5. JTAG Emulator
 
-#### Software Tools
-
-1. [J-Link Tool](https://downloads.rakwireless.com/en/Cellular/Tools/)
-2. [RAK iTracker flash tool](https://downloads.rakwireless.com/en/Cellular/Tools/)
-3. [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)
-
-
 :::tip 📝 NOTE:
- This device released by RAKwireless is already pre-loaded with its latest firmware upon manufacturing. If you want to have your device's firmware upgraded, refer to the sections below:
- - [Firmware Update](#firmware-update)
+ This device released by RAKwireless is already pre-loaded with its latest firmware upon manufacturing. If you want to have your device firmware burned or upgraded, refer to the following sections:
+1. [Burning the Firmware](/Product-Categories/WisTrio/RAK5010-M/Quickstart/#burning-the-firmware)
+2. [Upgrading Firmware through DFU Over BLE](/Product-Categories/WisTrio/RAK5010-M/Quickstart/#upgrading-firmware-through-dfu-using-ble)
 :::
-
-#### Definition of Terms
-
-##### List of Acronyms
-
-<table style="text-align: left">
-<tbody>
-        <tr>
-            <td>APN</td>
-            <td>Access Point Name</td>
-        </tr>
-        <tr>
-            <td>BLE</td>
-            <td>Bluetooth Low Energy</td>
-        </tr>
-        <tr>
-            <td>DFU</td>
-            <td>Device Firmware Upgrade</td>
-        </tr>
-        <tr>
-            <td>EUI</td>
-            <td>Extender Unique Identifier</td>
-        </tr>
-        <tr>
-            <td>MCC</td>
-            <td>Mobile Country Code</td>
-        </tr>
-        <tr>
-            <td>MNC</td>
-            <td>Mobile Network Code.</td>
-        </tr>
-</tbody>
-</table>
 
 ### What's included in the Package?
 
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/1.prerequisites/2.package-inclusion.jpg"
-  width="60%"
-  caption="RAK5010-M Package Inclusion"
+  src="/assets/images/wistrio/rak5010-m/quickstart/2.quick-start-guide/package-inclusion.jpg"
+  width="75%"
+  caption="Included Items in RAK5010-M Package"
 />
 
 ## Product Configuration
 
-### Interfacing with RAK5010-M
+### Checking Device Logs
 
-During the configuration of the module through the AT commands, it is possible to read the console outputs. There are three ways to connect to the console of the RAK5010-M module: 
+There are three ways that you can check the logs for debugging purposes on your RAK5010-M WisTrio NB-IoT Tracker:
 
-&nbsp;&nbsp;&nbsp;&nbsp;a) through J-link RTT Viewer<br>
-&nbsp;&nbsp;&nbsp;&nbsp;b) through the UART interface<br>
-&nbsp;&nbsp;&nbsp;&nbsp;c) through the micro-USB interface
+1. **Through J-Link RTT Viewer**
+2. **Through UART**
+3. **Through Micro-USB**
 
-Here, the second and the third option are described since they are the most straight forward ways.
+#### Through J-Link RTT Viewer
 
-#### Through the micro-USB Port
+1. If you want to check the logs of RAK5010-M WisTrio NB-IoT Tracker using this method, make sure you have connected the RAK5010-M with your PC through JTAG as shown in Figures 2 and 3. 
 
-The following procedure will show how to connect to the USB port of the RAK5010-M module through the micro-USB cable.
-
-1. Connect the RAK5010-M to the USB port of a general-purpose computer using an appropriate cable, as shown in Figure 2.
 
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/3.configuring-rak5010-m/1.microusb-interface.jpg"
+  src="/assets/images/wistrio/rak5010-m/quickstart/3.checking-device-logs/rak5010tojlink.png"
   width="75%"
-  caption="RAK5010-M module USB connection"
-/>
+  caption="RAK5010-M and PC Connection through JTAG"
+/>  
 
-2.	Any serial tool that support DTR/DSR flow control can be used. For example, **Termite** shall be used. Figure 3 show to enable the "**Flow Control**"
- in Termite’s configuration.
+:::warning ⚠️WARNING
+ You still have to connect the Micro USB Cable to the RAK5010-M to power the board.
+:::
 
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/3.configuring-rak5010-m/termite-setup.png"
+  src="/assets/images/wistrio/rak5010-m/quickstart/3.checking-device-logs/jlinkdiagram.png"
+  width="55%"
+  caption="J-Link Connector to RAK5010-M"
+/>
+
+:::warning ⚠️WARNING
+ VDD of RAK5010-M is rated only to 1.8&nbsp;V. It must **not** be connected to 3.3&nbsp;V or 5&nbsp;V.
+:::
+
+2. Go to the official website of **Segger** where you can download the [J-Flash software](https://www.segger.com/products/debug-probes/j-link/tools/j-flash/about-j-flash/). Open the program “**J-Link RTT Viewer V6.60f**” and choose "**USB**" for the type of connection to J-Link. After which, press "**OK**".
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/3.checking-device-logs/xgdllxo7gb3ks0y3tbch.png"
+  width="100%"
+  caption="J-Link RTT Viewer"
+/>  
+
+3. Choose the device parameters as shown in Figure 5 or in the table provided, then press "OK".
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/3.checking-device-logs/wmoh5e7i8n6gxxr9h4o9.png"
+  width="80%"
+  caption="J-Link Target Device Settings"
+/>  
+
+| Parameter | Data | 
+| ---- | ---- | 
+| Manufacturer | Nordic Semi | 
+| Device | nRF52840_xxAA | 
+| Core | Cortex-M4 | 
+| NumCores | 1 | 
+| Flash Size | 1028&nbsp;KB | 
+| RAM Size | 256&nbsp;KB | 
+
+
+4. Connect to your RAK5010-M by navigating through **File>Connect** in the Main Menu. Alternatively, you could just press "**F2**" to do the same process.
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/3.checking-device-logs/jrqm79eoaojwuynzdu1t.jpg"
+  width="100%"
+  caption="Connecting in J-Link RTT Viewer"
+/>  
+
+5. Once connection is obtained, you should see the same log as shown in Figure 7.
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/3.checking-device-logs/uku52cmdo7ccdzwbwubz.png"
+  width="80%"
+  caption="J-Link RTT Viewer showing RAK5010-M Logs"
+/>  
+
+:::tip 📝 NOTE:
+ If there is no log after connecting successfully, you can try to reset RAK5010-M. Ensure that micro USB is connected properly or check the connection of JTAG.
+:::
+
+
+#### Through UART
+
+1. If you want to check the log of RAK5010-M through UART, you should make sure that RAK5010-M has been connected with your PC through USB-UART module correctly as shown in Figure 8. It is highly recommended to use RAKDAP1 as the USB to UART interface. [RAKDAP1 Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/) is compatible to other RAK devices and can be use as a debugger and programmer as well.
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/3.checking-device-logs/7.jpg"
+  width="90%"
+  caption="RAK5010-M and USB-UART Connection"
+/>  
+
+
+2. Open a serial port tool in your PC. If you don't have a serial port tool yet, download and install the RAK Serial Port Tool.
+  
+    - **[RAKwireless Downloads](https://downloads.rakwireless.com/en/LoRa/Tools).**
+
+3. After pushing the RST button on RAK5010-M, you can see the following contents in the serial port tool as shown in Figure 9:
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/3.checking-device-logs/serialtool_connect.jpg"
+  width="80%"
+  caption="RAK Serial Port Tool"
+/>  
+
+
+#### Through Micro USB
+
+1. To start with, connect RAK5010-M with your PC through microUSB/USB as shown in Figure 10.
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/3.checking-device-logs/cjkxyja4hkqovtiddklj.jpg"
   width="60%"
-  caption="Termite serial communication tool setup."
-/>
+  caption="MicroUSB Interface for RAK5010-M"
+/>  
 
-3.	Configure the serial communication tool by selecting the proper port of the computer and configure the link as:
+2. Open the serial port tool in your PC.
 
-    * Baud Rate: 115200
-    * Data bits: 8
-    * Stop bits: 1
-    * Parity: none
+:::tip 📝 NOTE:
+ - For this method, you need a serial port tool which can support DTR function, like Termite. You can download Termite on their [website](https:\/\/www.compuphase.com\/software_termite.htm). 
+ - For Linux and MacOS, the alternative is [Coolterm](http://freeware.the-meiers.org/).
+ - It is highly recommneded to connect a battery when doing configuration via USB to have a stable serial connection.
+:::
 
-4.	After pushing the RST button on RAK5010-M, you can see the following contents in the serial port tool, shown in Figure 4.
-
-<rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/3.configuring-rak5010-m/termite-output-connect.png"
-  width="60%"
-  caption="Termite serial communication outputs."
-/>
-
-#### Through the USB-UART Port
-
-The following procedure will show how to connect to the UART port of the RAK5010-M module through a USB-UART adapter, as shown in the Figure 5.
-
-1.	Any serial tool will work, but it is recommended to use the **RAK Serial Port Tool** that can be downloaded from here:
-[https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)
-
-2.	Configure the serial communication tool by selecting the proper port of the computer and configure the link as:
-
-    * Baud Rate: 115200
-    * Data bits: 8
-    * Stop bits: 1
-    * Parity: none
-
-3.	After pushing the RST button on RAK5010-M, you can see the following contents in the serial port tool, shown in Figure 6.
+3. After opening the Termite serial tool, configure its setting as shown in Figure 11.
 
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/3.configuring-rak5010-m/3.rak5010-m-to-uart.jpg"
+  src="/assets/images/wistrio/rak5010-m/quickstart/3.checking-device-logs/gpubckbaii9vocy1h32u.png"
   width="75%"
-  caption="RAK5010-M module UART connection"
-/>
+  caption="Termite Configuration Enabling DTR"
+/>  
+
+4. Now, the Termite app will connect with RAK5010-M automatically. Then you can send AT commands and check the log in Termite.
 
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/3.configuring-rak5010-m/rak-serial-port-tool.png"
-  width="40%"
-  caption="RAK Serial Port Tool connected to RAK5010-M"
-/>
+  src="/assets/images/wistrio/rak5010-m/quickstart/3.checking-device-logs/hqfcunna1swkknili72n.png"
+  width="75%"
+  caption="Checked Log in Termite"
+/>  
+ 
+### Configuring RAK5010-M
 
-### Configure the RAK5010-M
+You can configure your RAK5010-M WisTrio NB-IoT Tracker by sending AT Commands either through UART, through BLE, or through Micro USB.
 
-#### Through the UART Interface
+:::tip 📝 NOTE:
+ For the full list of AT Commands available for configuring your RAK5010-M, check the [AT Command Manual](../AT-Command-Manual/).
+:::
 
-After connecting to the RAK5010-M through the UART Interface as shown in section 2, the first action is to verify the version of the firmware. This can be achieved with the following command, as shown in Figure 7.
+#### Through UART
+
+1. As mentioned in the [Checking Device Logs](#through-uart) section, if you want to use RAK5010-M WisTrio NB-IoT Tracker through UART, you should connect the RAK5010-M in your PC through UART as shown in Figure 7. 
+
+2. Try to send a simple AT command to RAK5010-M to get the current firmware version by sending the command below using the RAK Serial Port Tool. Similarly, you can send other AT commands of RAK5010-M in the same way.
 
 ```
 at+version
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/3.configuring-rak5010-m/configure-at-command.png"
+  src="/assets/images/wistrio/rak5010-m/quickstart/4.configuring-rak5010/13.jpg"
+  width="70%"
+  caption="AT command for Firmware Version"
+/>  
+
+#### Through BLE
+
+1. To configure the RAK5010-M WisTrio NB-IoT Tracker through BLE, download and install **nRF Connect** developed by Nordic Semiconductor. The App is available both in App Store and Google Play Store.
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/4.configuring-rak5010/eponlb3piu1p6noof1np.png"
+  width="75%"
+  caption="nRF Connect App in Android and IOS"
+/>  
+
+
+2. Make sure the Bluetooth on your mobile is turned on. Open the application and you will see all BLE devices in range in the scan list.
+
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/4.configuring-rak5010/rwpeihuyflhu65gopfml.jpg"
   width="40%"
-  caption="RAK Serial Port Tool, get firmware version"
-/>
+  caption="Available Bluetooth Devices in the Nordic App"
+/>  
 
-* Similarly, you can send other AT commands of RAK5010-M shown in the **[RAK5010-M AT Commands](../AT-Command-Manual/)** section.
+3. Press the reset button on the RAK5010-M Board and wait for a couple of seconds. Look for a BLE Device named "RUI-..." in the scan list of the app. Connect to this device and click "**Nordic UART Service**"
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/4.configuring-rak5010/mg6xtfoepu06s33iedyu.jpg"
+  width="80%"
+  caption="Nordic UART Service in the Nordic App"
+/>  
+
+:::warning ⚠️WARNING
+ By the default, the BLE signal of the RAK5010-M is turned off automatically if no connection is established after 60 seconds. Connect to the BLE signal of the RAK5010-M immediately after pressing the reset button.
+:::
+
+1. Click the arrow marked by the red box, as shown in Figure 17.
 
 
-### Connecting to Cellular Network
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/4.configuring-rak5010/r7j95cqwrevod7qtvcsv.jpg"
+  width="40%"
+  caption="RX Characteristic in the Nordic UART Service"
+/>  
 
-In this section, a procedure to configure RAK5010-M to a Cellular network is presented. For demonstration, a China Mobile SIM card and based on GSM network were used. There are two methods to connect and send packets over the Cellular network: Manual and Automatic mode. 
+5. You can now send AT commands to the RAK5010-M. Meanwhile, you can also see log information in RTT Viewer as discussed in [Checking Device Logs](/Product-Categories/WisTrio/RAK5010-M/Quickstart/#checking-device-logs).
 
-To establish a connection to a Cellular network, the following element are necessary:
+- For example, if you want to check the current firmware version, send the following command:
 
-- Mobile operator’s MCC and MNC
-- Mobile operator’s APN parameter and password (optional)
-- Remote server IP and port number. 
+```
+at+version
+```
 
-#### Manual Connection Mode
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/4.configuring-rak5010/jficmu58afzs3r1hkw5h.jpg"
+  width="80%"
+  caption="Sending AT Command via Nordic App"
+/>  
 
-1. Scan the available cellular network providers. Send the following AT command.
+6. Then, you can see the version number in RTT Viewer tool.
+   
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/4.configuring-rak5010/nqqegmebbppnrcguzshh.png"
+  width="80%"
+  caption="Log Info in J-Link RTT Viewer"
+/>  
 
-```sh
+#### Through Micro USB
+
+Configuring the RAK5010-M and checking logs via USB has the same setup. Refer to the guide on USB connection in the [checking device logs](#through-micro-usb) section.
+
+### Connecting Cellular Network and Sending Packet over Cellular
+
+In this section, you will learn more on how to connect Cellular Network of your device. 
+
+- To start with, insert a SIM card into your RAK5010-M. For this section, a China Mobile SIM card is used to have a GSM network connection.
+
+As described in the previous section, there are three ways to configure our RAK5010-M: through UART, BLE, and micro USB. For this section, configuring the RAK5010-M through UART is used as an example.
+
+
+There are two ways to connect and send packets to Cellular Network: **Manual** and **Automatic**.
+
+#### 1. Connecting Cellular Network and Sending Packet over Cellular Manually
+
+- To begin with, send the following AT command to scan Cellular networks:
+
+```
 at+scan=cellular
 ```
 
-* After waiting around 30 seconds, an output similar to the Figure 8 appears. In this case, two providers were detected: CHINA MOBILE and CHN-UNICOM. In your local area, you should different results.
+:::tip 📝 NOTE:
+ - Ensure that the LTE Antenna of the RAK5010-M is connected properly.
+ - Alternative command to at+scan=cellular is **at+set_config=cellular:(AT+COPS=?)**.
+ - Complete the details of the BG96 TCP AT commands manual can be downloaded from the [Quectel website](https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_AT_Commands_Manual_V2.1.pdf).
+:::
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/5.connecting-cellular-network/24.jpg"
+  width="70%"
+  caption="Scanning for Cellular Networks"
+/>  
+
+- Wait for about 30 seconds, then you will see the following output in the serial port tool the same as shown in Figure 21:
 
 
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/4.connecting-cellular-network/2.scanned-cellular-network.jpg"
-  width="40%"
-  caption="RAK Serial Port Tool, scan the available cellular network"
-/>
+  src="/assets/images/wistrio/rak5010-m/quickstart/5.connecting-cellular-network/25.jpg"
+  width="70%"
+  caption="Scanned Cellular Network shown in Serial Port"
+/> 
 
+- As you can see, the RAK5010-M has scanned around Cellular network and show them in the serial port tool.
 
-2. Connect to the SIM card’s operator.
+To configure the operator information, the following command is used:
 
-Once the Cellular network operator is identified, send the following AT command to choose the Cellular carrier compatible with the SIM card in use. As shown in Figure 9, in this example, the SIM card belongs to Hologram.io, which has worldwide coverage carrier. This time the carrier ENTEL is chosen which the following command.  
-
-```sh
-at+set_config=cellular:(AT+COPS=0,0,"ENTEL")
+```
+at+set_config=cellular:(AT+COPS=1,0,"CHINA MOBILE",0)
 ```
 
+:::tip 📝 NOTE:
+ - The last parameter of AT+COPS command is the type of connection: 0-GSM, 8-LTE CAT-M1, 9-LTE CAT-NB1.
+ - For example, if you want to connect to LTE CAT-M1, the command must be **at+set_config=cellular:(AT+COPS=1,0,"CHINA MOBILE",8**).
+ - You can also check if your configuration is saved correctly with this command: **at+set_config=cellular:(AT+COPS?)**.
+ - Complete the details of the BG96 TCP AT commands manual can be downloaded from the [Quectel website](https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_AT_Commands_Manual_V2.1.pdf) .
+:::
+
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/4.connecting-cellular-network/3.cellular-operator.jpg"
-  width="40%"
-  caption="RAK Serial Port Tool, choose to the Cellular operator"
-/>
+  src="/assets/images/wistrio/rak5010-m/quickstart/5.connecting-cellular-network/26.jpg"
+  width="70%"
+  caption="Configuring the Operator"
+/> 
 
-* Then, the following command is sent in order to confirm the registration was successful, as shown in Figure 10.
 
-```sh
-at+set_config=cellular:(AT+COPS?)
+Now, continue to configure the network:
+
+```
+at+set_config=cellular:(AT+QICSGP=1,1,"CMCC","","",1)
 ```
 
-<rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/4.connecting-cellular-network/3.1.cellular-operator-confirmation.jpg"
-  width="40%"
-  caption="RAK Serial Port Tool, confirm the registration to the preferable carrier"
-/>
+:::tip 📝 NOTE:
+ - The third parameter of AT+QICSGP command is the APN of the cellular network. This is different per country and dependent on what cellular telecommunications company you want to connect with.
+ - Complete the details of the BG96 TCP AT commands manual can be [downloaded from Quectel website](https://www.quectel.com/UploadImage/Downlad/Quectel_BG96_TCP(IP)_AT_Commands_Manual_V1.0.pdf) .
+:::
 
-3. Configure the APN
-
-The next step is to configure the APN, username, and password that will be required by the Cellular carrier in order to establish a connection. In this case:
-
-  -	**APN**: imovil.entelpcs.cl
-  -	**username**: entelpcs
-  -	**password**: entelpcs
-
-The final parameter “1” refers to the authentication mode (PAP). The following command is sent, as shown in Figure 11. 
-
-```sh
-at+set_config=cellular:(AT+QICSGP=1,1,"imovil.entelpcs.cl","entelpcs","entelpcs", 1)
 ```
-
-<rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/4.connecting-cellular-network/4.register-cellular-operator.jpg"
-  width="40%"
-  caption="RAK Serial Port Tool, register to the Cellular operator"
-/>
-
-4. Enable the GPRS interface 
-
-Once the APN is configured, the PDP context must be activated, in order to use the GPRS interface. The following AT command is sent, as shown in the Figure 12.
-
-```sh
 at+set_config=cellular:(AT+QIACT=1)
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/4.connecting-cellular-network/5.gprs-interface.jpg"
-  width="40%"
-  caption="RAK Serial Port Tool, enable the GPRS interface."
-/>
-
-
-5. Set the IP address of the remote server
-
-Then, set the IP address of the server which will receive the packet sending from RAK5010-M. In the example, the remote server has the IP address of **209.172.33.72**, and there is a process listening at the port **12111**. 
-
-```sh
-at+set_config=cellular:209.172.33.72:12111:ENTEL:ENTEL:imovil.entelpcs.cl:0
-```
+  src="/assets/images/wistrio/rak5010-m/quickstart/5.connecting-cellular-network/27.jpg"
+  width="70%"
+  caption="Configuring the Cellular Network"
+/> 
 
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/4.connecting-cellular-network/6.configure-remote-server-ip.jpg"
-  width="40%"
-  caption="RAK Serial Port Tool, configure the remote server's IP."
-/>
+  src="/assets/images/wistrio/rak5010-m/quickstart/5.connecting-cellular-network/28.jpg"
+  width="70%"
+  caption="Configuring the Cellular Network"
+/> 
+
+- Then, set the IP address of the server which will receive the packet sending from RAK5010.
+
+```
+at+set_config=cellular:118.31.121.60:12111:CHINA MOBILE:CMCC:CMNET:0
+```
 
 :::tip 📝 NOTE:
-This IP address is just used for example, and it is my testing server actually. For your configuration, use your own server IP address.
+ This IP address is just used for example. For your configuration, use your own server IP address.
 :::
 
-6. Sending data 
+<rk-img
+  src="/assets/images/wistrio/rak5010/quickstart/5.connecting-cellular-network/29.jpg"
+  width="70%"
+  caption="Configuring the IP Address of the Server"
+/> 
 
-Finally, The RAK5010-M is configured properly, and it’s ready for sending data over the Cellular network. In this case, some random characters are sent: “123456”. The following AT command is sent, as shown in the Figure 14.
 
-```sh
-at+send=cellular:123456
+- Next, try sending a packet manually over Cellular. Use the following command to send data over Cellular:
+
+```
+at+send=cellular:XXX
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/4.connecting-cellular-network/7.send-data-to-remote-server.jpg"
-  width="40%"
-  caption="RAK Serial Port Tool, sending data to remote server."
-/>
+  src="/assets/images/wistrio/rak5010-m/quickstart/5.connecting-cellular-network/30.jpg"
+  width="70%"
+  caption="Sending Data over Cellular"
+/> 
 
+- As you can see, the data sent is “**123456**”. 
 
-
-7. Receiving data
-
-A TCP/IP process must be listening on the IP and port previously defined. The IP address must be a public IP number. Please also make sure the port used is not blocked by a firewall. The Figure 15 shows that the list of characters sent in the previous step were properly received by the TCP/IP process.
+Now, check it on the receiving server:
 
 
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/4.connecting-cellular-network/8.receive-data.jpg"
+  src="/assets/images/wistrio/rak5010-m/quickstart/5.connecting-cellular-network/muvnk5vma57gwns6apo9.jpg"
   width="75%"
-  caption="Verify the data received by the server"
+  caption="Received Data shown in the terminal"
 />
 
+```
+rak2016@iZbp1980wxsue6enel4qc0Z:/home/rak2001$ tail -f rak12111
+[Tue Sep 24 18:37:36 2019] [new_client] accept client [117.132.196.229:14809], new_fd:6
+[Tue Sep 24 18:37:46 2019] [handle_message]: client:6 recvbuf:123456
+[Tue Sep 24 18:37:47 2019] [handle_message]: client:6 disconnect.
+```
 
-As you can see in the **Figure 15**, the server has received the packet successfully, and the data sent is “**123456**” which is same with the one we just sent out.
+As you can see in **Figure 27**, the server has received the packet successfully, and the data sent is “**123456**”, which is the same as the one you just sent out.
 
-#### Automatic Connection Mode
+#### 2. Connect Cellular Network and Send Packet Automatically
 
-The procedure of the automatic connection mode is very similar to the manual mode, except for the step 6, in which the transmission interval and the periodic data transmission parameters are set. 
+In this section, you will be connecting and sending data with Cellular Network, **automatically**. 
 
-1. Scan the available cellular network providers. Send the following AT command.
+- First, configure the parameters for the cellular operator information and the receiving server information as follows (a China Mobile SIM card and based on GSM network are used as an example):
 
-    - Same as the manual mode
+```
+at+set_config=cellular:118.31.121.60:12111:CHINA MOBILE:CMCC:CMNET:0
+```
 
-2. Connect to the SIM card’s operator. 
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/5.connecting-cellular-network/32.jpg"
+  width="70%"
+  caption="Configuring the Cellular Network Parameters"
+/>
 
-    - Same as the manual mode
+- Then, set the interval for sending loop as shown in figure 29.
 
-3. Configure the APN
-
-    - Same as the manual mode
-
-4. Enable the GPRS interface
-
-    - Same as the manual mode
-
-5. Set the IP address of the remote server 
-
-    - Same as the manual mode
-
-6. Set data transmission interval
-
-In order to activate the automatic data transmission, the following AT command must be sent. As shown in the Figure 16, an interval of 180000 milliseconds (3 minutes) was configured. The “1” before the interval indicates the periodic data sending loop is activated.
-
-```sh
+```
 at+set_config=cellular:send_interval:1:180000
 ```
 
+:::tip 📝 NOTE:
+ - During sleep (LEDs are all off), you cannot send any AT command to RAK5010-M module. You need to restart your device and before going to sleep, you must send the command `at+set_config=cellular:send_interval:0:180000` to go back to normal mode.
+:::
+
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/4.connecting-cellular-network/9.set-transmission-interval.jpg"
-  width="40%"
-  caption="RAK Serial Port Tool, set the data transmission interval"
+  src="/assets/images/wistrio/rak5010-m/quickstart/5.connecting-cellular-network/33.jpg"
+  width="70%"
+  caption="Setting the Loop Intervals"
 />
 
-As you see, this setting means that we open the sending loop and the interval time at 180 seconds. To know more details about the command, refer to the **[RAK5010-M AT Commands](../AT-Command-Manual/)**.
+As you can see, the setting means that you open the sending loop and the interval time at 180 seconds. To know more details about the command, refer to the [AT Command Manual](../AT-Command-Manual/).
 
-7. Restart the module
+- Now, restart RAK5010-M by sending the following AT command:
 
-To apply the new configuration, the module must be restarted. Send the following AT command as shown in the Figure 17.
-
-```sh
+```
 at+set_config=device:restart
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/4.connecting-cellular-network/10.restart-the-module.jpg"
-  width="40%"
-  caption="RAK Serial Port Tool, restart the module."
+  src="/assets/images/wistrio/rak5010-m/quickstart/5.connecting-cellular-network/34.jpg"
+  width="70%"
+  caption="Restarting your RAK5010-M"
 />
 
+After restarting, the RAK5010-M will connect the Cellular Network, which you just set, and send a packet of sensor data automatically in a loop. Every time it sends a packet out, RAK5010-M will go to sleep for 180 seconds, which you just set, then RAK5010-M will wake up and search a GPS, build a new packet, and send it out.
 
-
-8. Receiving the data. 
-
-After restarting, RAK5010-M will connect automatically to the Cellular network with the parameters configured previously. The RAK5010-M will sleep during the interval and wake up, activate the accelerometer, and the GPS, format the packet and send the data to the destination. Process logs will be displayed in the console as shown in the Figure 18.
-
+- You will see a continuous loop as shown in Figure 31.
 
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/4.connecting-cellular-network/11.console-logs.jpg"
-  width="40%"
-  caption="RAK Serial Port Tool, console logs of the periodic data transmission."
+  src="/assets/images/wistrio/rak5010-m/quickstart/5.connecting-cellular-network/35.jpg"
+  width="70%"
+  caption="Continuous Loop seen in The Serial Tool"
 />
 
+- RAK5010-M will send sensor data automatically in a loop. You can check the data in the receiving server:
 
-On the server side. A packet should be received every 180 seconds. The data format is shown in the Figure 19.
+Check the data in the receiving server:
 
+```
+rak2001@iZbp1980wxsue6enel4qc0Z:~$ tail -f rak121111
+[Tue Sep 24 19:18:03 2019] [new_client] accept client [221.178.125.59:14996], new_fd:6
+[Tue Sep 24 19:18:17 2019] [handle_message]: client:6 recvbuf:Acc:-732.00, -178.00,620.00; Tem:27.29;Hum:46.04; Pre:964.82; Lig:3.84; Lat(0-N,1-S):0,3411.777725,Lon(0-E,1-W):0,10852.877460; Battery:3.90;
+```
 
-
-<rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/4.connecting-cellular-network/12.received-data.jpg"
-  width="100%"
-  caption="Data received on the server side."
-/>
+As you can see, the server has received the packet which RAK5010-M sends out successfully, and they are all sensor data in the packet.
 
 ## Miscellaneous
 
-### Firmware Update
+### Bluetooth Connection Modes
 
-Before to start working with the RAK5010-M, it is recommended to keep the RAK5010-M module updated to the latest version of the firmware. Get the latest pre-compiled firmware version on the RAK website: [https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/](https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/)
+There are three BLE modes in RAK5010-M from the firmware V3.0.0.6 on, the **Peripheral Mode**, the **Central Mode**, and the **Beacon Scan Mode**. You can change the work mode of RAK5010-M BLE using the command provided in the [AT Commands Manual](../AT-Command-Manual/).
 
-In the following sections, two options for flashing new firmware in a RAK5010-M module are shown: Upgrade through J-Link and Upgrade through UART1.
+```
+at+set_config=ble:work_mode:X:Y
+```
 
-#### Through J-Link
+**Description**: Set the work mode for BLE.
+- **X** - 0: BLE peripheral mode; 1: BLE central mode; 2: Beacon scan mode.
+- **Y** - 0: Normal range; 1: BLE long range.
 
-##### Requirements
 
-The table shows the minimum hardware and software required to perform the firmware upgrade using J-Link.
+#### BLE Peripheral Mode
 
-<table style="text-align: left">
-<tbody>
-        <tr>
-            <td>Computer</td>
-            <td>Computer running Windows OS</td>
-        </tr>
-        <tr>
-            <td>J-Link</td>
-            <td>A J-Link hardware, corresponding software JFlash.</td>
-        </tr>
-        <tr>
-            <td>Firmware File</td>
-            <td>Hex firmware file downloaded from the website.</td>
-        </tr>
-</tbody>
-</table>
+For the Peripheral Mode, you can scan RAK5010-M BLE and connect with it using your mobile device.
 
-##### Upgrade Procedure
+#### BLE Central Mode
 
-1. Download the latest compiled firmware. It can be found in the RAKwireless website: 
-[https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/RAK5010-M_Latest_Firmware.zip](https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/RAK5010-M_Latest_Firmware.zip)
+For the Central Mode, RAK5010-M BLE will not broadcast, so that your mobile devices will not be able to scan it. This is very useful if you want to make the RAK5010-M act as a BLE Gateway wherein BLE Sensor Nodes (up to 20 Devices) can send sensor data.
 
-2. The firmware file is in a `zip` or `rar` format. Uncompress it to get a file with `hex` extension.
+#### Beacon Scan Mode
 
-3.	Connect the RAK5010-M module with a computer through JTAG as shown in Figure 20.
+For the Beacon Scan Mode, RAK5010-M can scan around the Beacon signal. It is useful for Beacon use case like iBeacon.
+
+#### RAK5010-M BLE Default Settings
+
+By default, the RAK5010-M will work on **Peripheral Mode.** In this mode, you can configure it through BLE, including DFU easily. It should be noted that after resetting the RAK5010-M, you only have 60 seconds to establish a connection with your mobile device through BLE based on its power consumption settings. If no connection has been established within 60 seconds, the RAK5010-M BLE signal will not be broadcasted, and it will enter power-saving mode. On the other hand, there is no limitation once you are already connected with the RAK5010-M BLE.
+
+If you set the RAK5010-M to work in Central Mode, the RAK5010-M will work first on Peripheral Mode for 30 seconds, and if no connection is established after 30 seconds, it will automatically work in **Central Mode.** In this mode, the BLE signal of the RAK5010-M will stop broadcasting and will not be visible on your mobile devices up until you change the work mode to peripheral mode or reset the RAK5010-M again.
+
+### Burning the Firmware
+
+An easy and quick way to get started with your RAK5010-M is through using a pre-compiled firmware.  However, if you want to compile your own customized firmware, you can visit [RUI Customized Development](/RUI/) documentation to learn how.
+
+#### Installing J-Flash
+
+1. Go to the official website of **Segger**, and download the J-Flash software.   
+      - [J-Flash](https://www.segger.com/products/debug-probes/j-link/tools/j-flash/about-j-flash/)
 
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/5.upgrading-firmware/1.jtag.jpg"
-  width="75%"
-  caption="RAK5010-M connection through JTAG"
+  src="/assets/images/wistrio/rak5010-m/quickstart/7.burning-the-firmware/rhblajzhsv9pb1fdos3h.jpg"
+  width="100%"
+  caption="Segger Official Website"
 />
 
-4.	Connect the power supply to power the module.
+2. Download the software that corresponds to your operating system. In this guide, Windows is used.
 
-5.	Install J-Link tool on your computer. You can download the software from the RAKwireless website: [https://downloads.rakwireless.com/en/Cellular/Tools/](https://downloads.rakwireless.com/en/Cellular/Tools/)
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/7.burning-the-firmware/etylt7rqrbcjedteqhqc.jpg"
+  width="100%"
+  caption="J-link Software in different platforms"
+/>
 
-6.	Open the **JFlash tool** and select the target device.
+3. After you have downloaded your corresponding software, install it and wait for a couple of minutes.
+
+#### Creating Project in J-Flash
+
+1. Upon opening the software, you will be greeted with the pop-up window. Choose **Create a new project**, then Click **Start J-Flash**.
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/7.burning-the-firmware/qbhdb7hj0cfq0cghohxx.jpg"
+  width="100%"
+  caption="J-flash Interface"
+/>
+
+2. You will be then prompted to configure your new project. Select the Target Device by clicking the box highlighted in red as shown in Figure 35.
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/7.burning-the-firmware/sccml4h6imieppibarpy.jpg"
+  width="100%"
+  caption="Configuring the Project"
+/>
+
+3. Select the Manufacturer to **Nordic Semi** and Device **nRF52840_xxAA**.
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/7.burning-the-firmware/h3wken4r8z0rfbznrgrc.jpg"
+  width="100%"
+  caption="Selecting the Device"
+/>
+
+4. Select the Target Interface to **SWD** and the Speed (kHz) to **4000**. Press **OK**.
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/7.burning-the-firmware/hil2ag7u5vavbgpluu1c.jpg"
+  width="100%"
+  caption="Target Interface and Speed (kHz)"
+/>
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/7.burning-the-firmware/s91d5tazgtvl1lgihina.jpg"
+  width="100%"
+  caption="Created Project Successfully"
+/>
+
+#### Connecting the RAK5010-M with JTAG
+
+1. Connect your RAK5010-M to your PC through JTAG as shown in Figure 39. Pinout diagram and connection to Jlink can be found on the [Datasheet](/Product-Categories/WisTrio/RAK5010-m/Datasheet/#pin-definition).
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/7.burning-the-firmware/hx3crsaspcr2aadaesnc.jpg"
+  width="35%"
+  caption="RAK5010-M and JTAG Hardware Interface"
+/>
+
+2. Download the latest pre-compiled firmware from the [RAKwireless Downloads](https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/) and extract it to your PC.
+
+3. In the J-Flash software Menu Bar, choose **Target** -> **Connect**.
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/7.burning-the-firmware/wcw1maqbahdyhqm5hdb6.jpg"
+  width="100%"
+  caption="Successfully Created Project"
+/>
+
+4. Now, choose the demo firmware that you have downloaded.
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/7.burning-the-firmware/iyk5ueztu9i3eul8jp6z.jpg"
+  width="100%"
+  caption="Selecting the Hex File"
+/>
+
+4. Select **Target** -> **Production Programming** to start the flashing process, and wait for a couple of minutes.
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/7.burning-the-firmware/wechf9fckqgvlw46bfqe.jpg"
+  width="100%"
+  caption="Connect with the RAK5010-M"
+/>
+
+### Upgrading Firmware through DFU using BLE
+
+1. Download the DFU package of the RAK5010-M WisTrio NB-IoT Tracker and save it on your mobile phone.
+
+    - [**DFU Package**](https://downloads.rakwireless.com/en/Cellular/RAK5010/Firmware/DFU-Package/) 
+
+2. Make sure the Bluetooth on your mobile is turned on. Open the **nRF Connect** Mobile application, and you will see all BLE devices in range in the scan list.
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/8.upgrading-firmware/mnzoayqdsaquxxdimpnw.jpg"
+  width="45%"
+  caption="Available Bluetooth Devices in the Nordic App"
+/>
+
+3. Press the reset button on the RAK5010-M and wait for a couple of seconds. Look for a BLE Device named "**RUI-...**" in the scan list of the app. Connect to this device and click "**Nordic UART Service**".
 
 :::tip 📝 NOTE:
-The chip model of RAK5010-M is **nRF52840_xxAA**.
+ This will be only visible for 60 seconds. More information about Bluetooth connection guide can be found in the [Bluetooth Connection Modes](/Product-Categories/WisTrio/RAK5010-m/Quickstart/#bluetooth-connection-modes) section.
 :::
 
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/5.upgrading-firmware/jtag-select-device.png"
-  width="25%"
-  caption="Select target device"
-/>
-
-7.	Drag the module firmware with Suffix `.hex` into the software.
-
-<rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/5.upgrading-firmware/jtag-open-firmware.png"
+  src="/assets/images/wistrio/rak5010-m/quickstart/8.upgrading-firmware/wwbnonxp1ugf6jtckbm6.jpg"
   width="80%"
-  caption="JFlash open firmware"
+  caption="Secure DFU Service in the Nordic App"
 />
 
-8.	Under the Target menu option choose Connect to connect the device and download the firmware into it.
+
+4. Choose **Secure DFU Service** and click the button highlighted in red as shown in Figure 45.
 
 <rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/5.upgrading-firmware/jtag-connect-device.png"
-  width="40%"
-  caption="Connect the device"
-/>
-
-<rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/5.upgrading-firmware/jtag-program-firmware.png"
-  width="40%"
-  caption="Programming firmware"
-/>
-
-9.	After the download is finished, it will run normally after restart.
-
-<rk-img
-  src="/assets/images/wistrio/rak5010-m/quickstart/5.upgrading-firmware/jtag-programming-process.png"
+  src="/assets/images/wistrio/rak5010-m/quickstart/8.upgrading-firmware/qxw4hh00xqmcv85df1f7.jpg"
   width="80%"
-  caption="Programming process"
+  caption="Buttonless DFU"
 />
+
+5. Click the arrow highlighted in red as shown in Figure 46. A **Write Value** window pop-up, then press **Send**.
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/8.upgrading-firmware/xb1hntew7qrbct9et5hz.jpg"
+  width="80%"
+  caption="Resetting the Bootloader via Bluetooth"
+/>
+
+6. Now, the RAK5010-M is now working in DFU Mode. In the application, you will see the default status overview of RAK5010-M.
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/8.upgrading-firmware/qmi89z3vqxvukvbiodnc.jpg"
+  width="40%"
+  caption="RAK5010-M Default Status Overview after Resetting"
+/>
+
+7. In the list of devices, find a BLE signal named **DfuTarg** and connect.
+
+<rk-img
+  src="/assets/images/wistrio/rak5010/quickstart/8.upgrading-firmware/g2v0fkj63cbuwtt24mht.jpg"
+  width="40%"
+  caption="RAK5010-M Default Bluetooth ID after Resetting"
+/>
+
+8. After connecting, select the **DFU Icon**. Select the **Distribution packet (ZIP)** and press **OK**. This will then prompt you to select the zip file of the firmware that you have downloaded.
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/8.upgrading-firmware/pqnewr61x87nv5nrxovs.jpg"
+  width="80%"
+  caption="Distribution Packet File Type under DFU"
+/>
+
+9. Then, it will automatically start to upgrade the firmware of your RAK5010-M through DFU over BLE. After upgrading, it will restart and the DFU connection will be disconnected. Now, you can use your RAK5010-M with the latest firmware.
+
+<rk-img
+  src="/assets/images/wistrio/rak5010-m/quickstart/8.upgrading-firmware/nzilnqodbz6x33uvnpp4.jpg"
+  width="40%"
+  caption="DFU Upgrading of RAK5010-M Firmwave via BLE"
+/>
+
+

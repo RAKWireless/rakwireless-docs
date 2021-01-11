@@ -53,17 +53,17 @@ By changing the states in the **BOOT0** and **BOOT1** pins of the RAK811, the us
 
 <faq>
 <template #question>
-4. How does OTAA(Over-the-Air Activation) network join works?
+4. How does OTAA (Over-the-Air Activation) network join works?
 </template>
 <template #answer>
 
-OTAA is a method of LoRaWAN network access in the air. Upon powering up, the node needs to be networked with the server before it can initiate data transmission. The node initiates a request to enter the network which the server then agrees and sends the necessary information into the node. The node then parses the said information to obtain the necessary communication parameters to start communicating with the server.
+OTAA is a method of LoRaWAN network access in the air. Upon powering up, the node needs to be networked with the server before it can initiate data transmission. The node initiates a request to enter the network, which the server then agrees and sends the necessary information into the node. The node then parses the said information to obtain the necessary communication parameters to start communicating with the server.
 
 - The following are the parameters needed by the node before it can start to enter the network via OTAA:
 
-  - APPEUI node custom 8-byte long address
-  - Both the APPKEY of the server and the node are stored in advance and used to encrypt and decrypt the Join_acept message
-  - DevNonce 2-byte random number, used to generate random AppSKey and NwkSKey
+  - APPEUI node custom 8-byte long address;
+  - Both the APPKEY of the server and the node are stored in advance and used to encrypt and decrypt the Join_acept message;
+  - DevNonce 2-byte random number, used to generate random AppSKey and NwkSKey.
 
 - The following steps is the detailed OTAA network join mode:
 
@@ -201,6 +201,90 @@ The MQTT integration exposes all events as documented by [Event Types](https://w
 If you have set an incorrect SSID or Password for Wi-Fi Client Mode, insert the SD Card into your PC and in the boot disk, and create a new file "**rak_ap**". Afterwhich, re-insert the SD Card into your Raspberry Pi based gateway and it should work again in Wi-Fi AP Mode.
 
 ![RAK_AP File](/assets/images/faq/software/item10.png)
+
+</template>
+</faq>
+
+
+<faq>
+<template #question>
+11. How secure is LoRaWAN?
+</template>
+<template #answer>
+
+By default, LoRaWAN encrypts both the application data and the metadata with AES 128. In the current version 1.0, two authentication methods can be used: ABP (Activation By Personalization) and OTAA (Over-The-Air Activation). OTAA works with a DevEUI (64-bit address) and an AppKey (128-bit key). After each end device’s registration, a new key is generated that remains valid until the cyclic re-joining. Also, a frame counter is used, which further increases security. 
+
+</template>
+</faq>
+
+
+<faq>
+<template #question>
+12. What are the Network server and Application server?
+</template>
+<template #answer>
+
+The Network server and Application server are software entities that control higher-level aspects of a LoRaWAN application. The gateway and end device looks after the physical layer connection, the network server looks after the protocol, and the application server looks after the application-level control and data. All are required for building a network.
+
+</template>
+</faq>
+
+
+<faq>
+<template #question>
+13. What is the maximum number of LoRa end-devices a LoRaWAN gateway can communicate with?
+</template>
+<template #answer>
+
+Four dimensions need defining before an answer can be given:
+
+- RSSI/SNR of the received packets (simultaneous reception on the same channel);
+- Time-on-Air of the packets (equivalent to data rate, the longer the packet, the longer one demodulator of the gateway is used);
+- Frequency of the packets (two packets with the same data rate and the same RSSI/SNR will collide unless they are on two different frequencies);
+- Number of times per day an end device will send a packet (taking resources another node could use).
+
+</template>
+</faq>
+
+
+<faq>
+<template #question>
+14. What is the Wi-Fi default access point name of the gateway? 
+</template>
+<template #answer>
+
+- For WisGate Edge Gateways:
+    
+    - The access point name is determined like so: **RAK72xx_XXXX**, where “xx” is the rest of the model number and “XXXX” is the last four digits of the Ethernet MAC address. There is no password for access.
+  
+- For WisGate Developer Gateways:
+  
+    - The access point name is determined like so: **Rakwireless_XXXX**, where “XXXX” is the last four digits of the Wi-Fi MAC address. The default password for accessing is “**rakwireless**”.
+
+</template>
+</faq>
+
+
+<faq>
+<template #question>
+15. Is it possible for the frequency band of the gateway to be changed? 
+</template>
+<template #answer>
+
+
+To optimize our gateways’ RF performance and coverage, we use different hardware for the different frequency bands. We divide them by a **low band** (CN470, EU433), a **middle band** (EU868, IN865, RU864), and a **high band** (US915, KR915, AS923, AU915). Change is possible for frequencies in the different band groups but not between groups. For example, a gateway’s default frequency band EU868 can be changed to IN865, but not to US915.
+
+</template>
+</faq>
+
+
+<faq>
+<template #question>
+16. Does the location (country) in which the gateway will be deployed, matter in choosing the frequency band?
+</template>
+<template #answer>
+
+Yes. Every country has its regulations about available frequency bands and restrictions for using them. For more information and to check the available LoRaWAN frequency bands for your country, read the LoRa Alliance’s [RP002-1.0.1 LoRaWAN Regional Parameters](https://lora-alliance.org/sites/default/files/2020-06/rp_2-1.0.1.pdf).
 
 </template>
 </faq>
