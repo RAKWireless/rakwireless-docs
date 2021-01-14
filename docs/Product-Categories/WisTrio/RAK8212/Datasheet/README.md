@@ -1,5 +1,5 @@
 ---
-static_root: /assets/images/wistrio/rak8212/datasheet/
+static_root: /assets/images/wistrio/rak8212/datasheet
 prev: ../Quickstart/
 next: ../AT-Command-Manual/
 tags:
@@ -189,24 +189,22 @@ The hardware specification is categorized into six parts. It discusses the pinou
 |                    | Voice @Real Network 108 mA                                                                                      |
 | Protocol           | TCP/UDP/PPP                                                                                                     |
 
-#### RF Characteristics
+#### RF Characteristics                                                             
 
-|                |                                                                                                       |
-| -------------- | ----------------------------------------------------------------------------------------------------- |
-| Frequency Band | Cat.M1/Cat.NB1: LTE FDD: B1/B2/B3/B4/B5/B8/B12/B13/B18/B19/B20/B26/B28 LTE TDD: B39 (for Cat.M1 only) |
-|                | EGPRS: 850/900/1800/1900MHz                                                                           |
-
+| Item           | Specification                                                                                                                         |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Frequency Band | Cat.M1/Cat.NB1: LTE FDD: B1/B2/B3/B4/B5/B8/B12/B13/B18/B19/B20/B26/B28 LTE TDD: B39 (for Cat.M1 only) <br>EGPRS: 850/900/1800/1900MHz |                                                                                                                                           |
 #### Electrical Characteristics
 
 ##### Power Requirements
 
-|              |                      |
+| Item         | Specification        |
 | ------------ | -------------------- |
 | Power Supply | 3.5 Volts ~ 18 Volts |
 
 #### Environmental Characteristics
 
-|                       |                |
+| Item                  | Specification  |
 | --------------------- | -------------- |
 | Operating Temperature | -40°C to +85°C |
 | Storage Temperature   | -40°C to +85°C |

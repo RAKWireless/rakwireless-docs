@@ -224,18 +224,6 @@ The low radio frequency is applicable to bandwidth of regions EU433 and CN470.
 | ------------------- | ------- | ------- | ------- | ---- |
 | Storage Temperature | -40     |         | 85      | °C   |
 
-##### Reflow Profile
-
-Referred to IPC/JEDEC standard:
-
-- **Peak Temperature** : < 250&nbsp;°C
-- **Number of Times** : ≤ 2 times
-
-<rk-img
-  src="/assets/images/wisduo/rak811-breakout-board/datasheet/9.reflow-profile-for-rak811.jpg"
-  width="65%"
-  caption="Reflow Profile for RAK811"
-/>
 
 #### Schematic Diagram
 

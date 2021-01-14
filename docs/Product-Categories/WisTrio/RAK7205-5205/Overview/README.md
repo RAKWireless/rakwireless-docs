@@ -10,7 +10,7 @@ next: ../Quickstart/
 Thank you for choosing **RAK7205/RAK5205 WisTrio LPWAN Tracker** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
 * [Quick Start Guide](../Quickstart/)
-* [Datsaheet](../Datasheet/)
+* [Datasheet](../Datasheet/)
 * [AT Command Manual](../AT-Command-Manual/)
 * [RAK5205 3D Model (iPEX)](https://downloads.rakwireless.com/3D_File/WisTrio/PWB-RAK5205-IPEX.stp)
 * [RAK5205 3D Model (SMA)](https://downloads.rakwireless.com/3D_File/WisTrio/PWB-RAK5205-SMA.stp)

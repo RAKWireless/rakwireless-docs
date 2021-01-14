@@ -12,7 +12,7 @@ tags: RAK4270 Breakout Board
 
 The RAK4270 Breakout Board is designed to simplify LoRaWAN and LoRa point to point (P2P) communication. To integrate LoRa technology to your projects, RAK4270 has easy to use AT commands via UART communication interface. Through these AT commands, you can set the parameters needed for LoRaWAN and LoRa P2P communication.
 
-In the RAK4270 Breakout Board, the serial communication is exposed on **UART1 port** via **UART1_TX/PA9** and **UART2_RX/PA10**. The default parameters of the UART1 are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. 
+In the RAK4270 Breakout Board, the serial communication is exposed on **UART1 port** via **UART1_TX/PA9** and **UART1_RX/PA10**. The default parameters of the UART1 are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. 
 
 In addition, RAK4270 board also exposed another serial port **UART2**, via **UART2_TX/PA2** and **UART2_RX/PA3**. You can use UART2 as alternative to UART1 when sending AT commands. You can also use UART2 when developing custom firmware via [RUI](/RUI/). The default parameters of the UART2 are **115200 / 8-N-1**.
 

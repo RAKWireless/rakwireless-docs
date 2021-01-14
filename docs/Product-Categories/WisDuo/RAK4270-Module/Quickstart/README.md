@@ -263,13 +263,8 @@ at+set_config=lora:dev_eui:5e9d1e0857cf25f1
 5. Set the Application EUI.
 
 ```
-at+set_config=lora:app_ eui:5e9d1e0857cf25f1
+at+set_config=lora:app_eui:5e9d1e0857cf25f1
 ```
-:::tip 📝 NOTE:
-
-The Device EUI parameter is not needed for the ChirpStack platform, therefore you will use the same ID as the Device EUI. Otherwise, the firmware will compliant. 
-
-:::
 
 
 6. Set the Application Key.
