@@ -41,3 +41,12 @@ RAKwireless tools are products that we created to make it easy for you to setup 
 
 <rk-products :tags="['accessories', 'hardware-tools']" />
 
+## Power Supplies
+
+<rk-head img="/assets/rakwireless/product-categories/accessory-powersupplies.svg">
+
+Choose a suitable RAKwireless Power Supply that complements your RAK products. These power supplies are specifically designed for RAK products to guarantee an effective and reliable project. 
+
+</rk-head>
+
+<rk-products :tags="['accessories', 'power-supplies']" />

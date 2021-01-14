@@ -244,4 +244,25 @@ module.exports = {
       sidebarDepth: 4
     }
   ],
+
+  //Power Supplies
+  '/Product-Categories/Accessories/PoE-Injector/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/PoE-Injector/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/PoE-Injector/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+
+  ],
 }

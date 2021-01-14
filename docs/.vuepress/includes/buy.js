@@ -433,7 +433,11 @@ export default {
     img: '/assets/images/accessories/antenna-feeder-line/datasheet/cable.png',
     store: 'https://store.rakwireless.com/collections/accessories/products/antenna-feeder-line'
   },
-  
+  '/Product-Categories/Accessories/PoE-Injector/': {
+    label: 'PoE Injector',
+    img: '/assets/images/accessories/poe-injector/poe-injector-illustration.png',
+    store: 'https://store.rakwireless.com/products/poe-injector?variant=37987145384134'
+  },
 
 
 }

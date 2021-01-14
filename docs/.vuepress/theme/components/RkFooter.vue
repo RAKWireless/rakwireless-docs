@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-grey-1 text-grey-7" style="padding: 2.5rem 0">
+  <div class="bg-grey-1 text-grey-7" style="padding: 2.5rem 0 ">
+    <!-- <rk-faq-footer v-show="this.isShow"/> -->
+    
     <div
       class="q-mx-md text-center text-italic q-px-md"
       style="max-width: 40rem; margin: 1.5rem auto 0 auto;"
@@ -32,11 +34,15 @@
       </div>
     </div>
   </div>
+
 </template>
 
 <script>
+import RkFaqFooter from '../../components/RkFaqFooter.vue';
 export default {
+  components : {RkFaqFooter},
   data: () => ({
+    isShow : false,
     links: [
       {
         icon: 'fab fa-facebook-square',
@@ -59,7 +65,39 @@ export default {
         href: 'http://www.youtube.com/c/RAKwireless/'
       }
     ]
-  })
+  }),
+  methods : {
+    setIsShow(flag){
+      this.isShow = flag;
+    },
+    checkRoute(route){
+      console.log(route);
+      if(route.path === '/Knowledge-Hub/FAQs/'
+        ||route.path === '/Knowledge-Hub/FAQs/General/'
+        ||route.path === '/Knowledge-Hub/FAQs/Hardware/'
+        ||route.path === '/Knowledge-Hub/FAQs/Software/'){
+          this.setIsShow(true);
+        }
+      else {
+        this.setIsShow(false);
+      }
+    },
+    checkRouteName(routeName){
+      if(routeName == 'v-00ca1ee8' || routeName == 'v-339265df' || routeName == 'v-1f7eaef6' || routeName == 'v-83e8fff2'){
+        this.setIsShow(true);
+      }else {
+        this.setIsShow(false);
+      }
+    }
+  },
+  mounted() {
+   this.checkRouteName(this.$route.name);
+  },
+  watch: {
+    $route(to, from) {
+      this.checkRoute(to);
+    }
+  }
 }
 </script>
 

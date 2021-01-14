@@ -1,8 +1,8 @@
 <template>
   <q-expansion-item
     group="faq"
-    class="bg-primary text-white q-my-xs"
-    expand-icon-class="text-white"
+    class="q-my-xs"
+    expand-icon-class="text-grey"
     :default-opened="defaultOpened"
   >
     <template #header>

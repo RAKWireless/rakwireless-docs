@@ -1,10 +1,14 @@
 ---
-sidebar: false
+# sidebar: false
 # prev: /Knowledge-Hub/FAQs/General/
 # next: /Knowledge-Hub/FAQs/Software/
+header:
+    title: Welcome to FAQs section!
+    caption: RAKwireless has compiled some commonly raised questions and categorized them into three — General, Hardware, and Software. Browse through these sections to answer your inquiries and provide you more information about the products. If you have unanswered questions left, message us through the chat box or immerse in the RAKWireless Forum.
 ---
 
-![Hardware FAQ Logo](/assets/images/faq/hardware/hardware-faq.svg)
+<!-- ![Hardware FAQ Logo](/assets/images/faq/hardware/hardware-faq.svg) -->
+# Hardware FAQs
 
 <faq default-opened>
 <template #question>
@@ -163,6 +167,7 @@ Currently, RAKwireless offers 4 Raspberry Pi Based LoRaWAN Gateways namely RAK72
 
 </template>
 </faq>
+<!-- <rk-faq-footer/> -->
 
 
 <faq>

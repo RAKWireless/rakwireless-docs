@@ -2,7 +2,7 @@
   <ClientOnly>
     <q-layout view="hHh LpR lfr">
       <div id="lt-md-div" class="lt-md"></div>
-      <q-header class="bg-primary text-white">
+      <q-header elevated class="bg-primary text-white" style="z-index:100">
         <q-toolbar style="height: 70px">
           <q-btn
             flat
@@ -53,6 +53,7 @@
         <rk-header v-if="shouldHaveHeader" />
         <rk-page :sidebar-items="sidebarItems" />
         <rk-zoom />
+        <rk-faq-footer v-if="isShow"/>
         <q-page-sticky
           position="top-right"
           :offset="[15, 15]"
@@ -79,6 +80,7 @@
               >
             </q-btn>
           </transition>
+          
         </q-page-sticky>
       </q-page-container>
       <q-footer>
@@ -110,6 +112,7 @@ import { resolveSidebarItems } from '../util'
 import { Screen } from 'quasar'
 
 import debounce from 'lodash.debounce'
+import RkFaqFooter from '../../components/RkFaqFooter.vue'
 
 function findPos(obj) {
     var curtop = 0;
@@ -136,11 +139,14 @@ export default {
     RkHeader,
     RkZoom,
     RkSearchBox,
+
   },
-  mixins: [ScrollMixin, TagsMixin, CommonMixin],
+  mixins: 
+    RkFaqFooter[ScrollMixin, TagsMixin, CommonMixin],
 
   data() {
     return {
+      isShow : false,
       isSidebarOpen: false,
       showDrawer: false,
       showBack2Top: false,
@@ -211,13 +217,15 @@ export default {
         userPageClass,
       ]
     },
+    
   },
 
   mounted() {
     this.$router.afterEach(() => {
       this.isSidebarOpen = false
     })
-
+    
+    
     // console.log('pages: ', this.$site.pages)
     // console.log('page: ', this.$page)
 
@@ -226,6 +234,8 @@ export default {
     // document.documentElement.style.fontSize = '14px'
     // console.log('mounted: ', window.innerHeight, window.innerWidth, min, document.documentElement.style)
     // console.log('sidebaritems: ', this.sidebarItems)
+    this.checkRouteName(this.$route.name);
+    this.setScript();
     window.onscroll = this.onPageScroll
     window.onload = () => {
       if (window.location.hash) {
@@ -328,11 +338,46 @@ export default {
         }
       }
     },
+    setIsShow(flag){
+      this.isShow = flag;
+    },
+    checkRoute(route){
+      if(route.path === '/Knowledge-Hub/FAQs/'
+        ||route.path === '/Knowledge-Hub/FAQs/General/'
+        ||route.path === '/Knowledge-Hub/FAQs/Hardware/'
+        ||route.path === '/Knowledge-Hub/FAQs/Software/'){
+          this.setIsShow(true);
+
+
+        }
+      else {
+       
+        this.setIsShow(false);
+      }
+    },
+    checkRouteName(routeName){
+      if(routeName == 'v-00ca1ee8' || routeName == 'v-339265df' || routeName == 'v-1f7eaef6' || routeName == 'v-83e8fff2'){
+        this.setIsShow(true);
+       
+      }else {
+        
+        this.setIsShow(false);
+      }
+    },
+    setScript: function(){
+      let externalScript = document.createElement('script')
+      externalScript.setAttribute('src','https://static.zdassets.com/ekr/snippet.js?key=1a5ac733-fac6-4769-9091-f47005c3893d');
+      externalScript.setAttribute('id','ze-snippet');
+      document.body.appendChild(externalScript);
+    },
   },
   watch: {
     $page: function (newval, oldval) {
       this.$root.lastPath = oldval.path
     },
+    $route(to, from) {
+      this.checkRoute(to);
+    }
   },
 }
 </script>

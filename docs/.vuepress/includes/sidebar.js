@@ -1,5 +1,5 @@
 // var quickStartGuide = require('./sidebar/quickstart-guide')
-// var faqs = require('./sidebar/faqs')
+var faqs = require('./sidebar/faqs')
 // var rui = require('./sidebar/rui')
 //var usermanual = require('./sidebar/user-manual')
 //var deploymentGuide = require('./sidebar/deployment-guide')
@@ -9,7 +9,7 @@ var root = require('./sidebar/root')
 
 module.exports = {
   // ...quickStartGuide,
-  // ...faqs,
+  ...faqs,
   //...usermanual,
   //...deploymentGuide,
   ...rui,
