@@ -2,6 +2,8 @@
 rak_img: /assets/images/wisblock/rak5005-o/overview/RAK5005-O_home.png
 rak_desc: RAK5005-O is the base board that connects all WisBlock modules together. It creates the power supply for attached WisBlock Core, WisBlock Sensor and WisBlock IO modules.
 rak_grp: [wisblock, wisbase]
+next: ../Datasheet/
+prev: ../../
 ---
 
 
@@ -49,7 +51,7 @@ It has as well two user definable LED’s and one power supply/charging indicato
 ## Product Features
 
 * **Power supply**     
-    * **RAK5005-O** supports both 5&nbsp;V USB and 3.7&nbsp;V rechargeable battery as power supply. In addition, it has a connector for a 5V solar panel to recharge the battery in a remote solution.     
+    * **RAK5005-O** supports both 5&nbsp;V USB and 3.7&nbsp;V rechargeable battery as power supply. In addition, it has a connector for a 5&nbsp;V solar panel to recharge the battery in a remote solution.     
     * Control of power consumption    
     * **RAK5005-O** has an electronic power switch for the supply to the **WisBlock Sensor** and **WisBlock IO** slots. The power supply for some of the **WisBlock Sensor** boards and most of the **WisBlock IO** extension boards can be controlled by the **WisBlock Core** modules application.    
 

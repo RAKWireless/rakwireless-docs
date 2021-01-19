@@ -36,7 +36,7 @@ Moreover, there is a **GPS** on the HAT that enhances your RAK2247 with localiza
 The RAK2247 Pi HAT maps the RAK2247 pins from the 52-pin mPCIe connector to the 40-pin Raspberry Pi connector. Refer to the block diagram in figure 1 below and pin mapping table in the following section – Pin Definition.
 
 <rk-img
-  src="/assets/images/wishat/rak2247-pi-hat/datasheet/rak2247_block_diagram.png"
+  src="/assets/images/wishat/rak2247-pi-hat/datasheet/block-diagram.svg"
   width="60%"
   caption="RAK2247 Pi HAT Block Diagram"
 />

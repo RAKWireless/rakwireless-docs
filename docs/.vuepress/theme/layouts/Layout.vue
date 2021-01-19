@@ -2,7 +2,7 @@
   <ClientOnly>
     <q-layout view="hHh LpR lfr">
       <div id="lt-md-div" class="lt-md"></div>
-      <q-header elevated class="bg-primary text-white" style="z-index:100">
+      <q-header class="bg-primary text-white">
         <q-toolbar style="height: 70px">
           <q-btn
             flat
@@ -35,7 +35,7 @@
       </q-header>
 
       <q-drawer
-        v-model="shouldShowDrawer"
+        v-model="showDrawer"
         content-class="bg-grey-1 text-grey-9 q-pa-none"
         @show="onDrawerShow"
         @hide="onDrawerHide"
@@ -148,7 +148,7 @@ export default {
     return {
       isShow : false,
       isSidebarOpen: false,
-      showDrawer: false,
+      showDrawer: true,
       showBack2Top: false,
       disableActiveHash: false,
     }
@@ -173,7 +173,7 @@ export default {
     shouldHaveHeader() {
       return this.$page.frontmatter.header || this.$page.frontmatter.article
     },
-    shouldShowNavbar() {
+    shouldShowNavbar() { 
       const { themeConfig } = this.$site
       const { frontmatter } = this.$page
       if (frontmatter.navbar === false || themeConfig.navbar === false) {
@@ -295,6 +295,7 @@ export default {
     },
     onDrawerHide() {
       const self = this
+
       setTimeout(() => {
         // re-enabled stuffs
         document.documentElement.style.scrollBehavior = 'smooth'
@@ -369,7 +370,7 @@ export default {
       externalScript.setAttribute('src','https://static.zdassets.com/ekr/snippet.js?key=1a5ac733-fac6-4769-9091-f47005c3893d');
       externalScript.setAttribute('id','ze-snippet');
       document.body.appendChild(externalScript);
-    },
+    }
   },
   watch: {
     $page: function (newval, oldval) {
