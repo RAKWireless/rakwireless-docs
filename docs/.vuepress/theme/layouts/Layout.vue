@@ -225,7 +225,7 @@ export default {
       this.isSidebarOpen = false
     })
     
-    
+    this.isMobile();
     // console.log('pages: ', this.$site.pages)
     // console.log('page: ', this.$page)
 
@@ -370,6 +370,14 @@ export default {
       externalScript.setAttribute('src','https://static.zdassets.com/ekr/snippet.js?key=1a5ac733-fac6-4769-9091-f47005c3893d');
       externalScript.setAttribute('id','ze-snippet');
       document.body.appendChild(externalScript);
+    },
+    isMobile : function(){
+      if(window.screen.width <= 760){
+        console.log("screen width",window.screen.width);
+        this.showDrawer = false;
+      }else {
+        this.showDrawer = true;
+      }
     }
   },
   watch: {

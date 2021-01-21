@@ -6,26 +6,32 @@ tags:
   - Deployment-Guide
   - WisGate
 header:
-  title: Amazon Web Service
+  title: Amazon Web Services
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/amazon-web-service.jpg
 posted: 8/31/2020 3:59 PM
 ---
 
-# Amazon Web Service
+# Amazon Web Services
 
 
-* [Installing Chirpstack](#installing-chirpstack)
-* [Installing the Gateway Bridge](#installing-the-gateway-bridge)
-* [Amazon Web Service Security](#amazon-web-service-security)
-* [Configuring the Gateway](#configuring-the-gateway)
+- [Amazon Web Services](#amazon-web-services)
+    - [Creating an Account](#creating-an-account)
+    - [Configuring the Instance](#configuring-the-instance)
+    - [Accessing Instance via SSH](#accessing-instance-via-ssh)
+- [Installing Chirpstack](#installing-chirpstack)
+- [Installing the Gateway Bridge](#installing-the-gateway-bridge)
+- [Amazon Web Services Security](#amazon-web-services-security)
+- [Configuring the Gateway](#configuring-the-gateway)
+  - [Packet Forwarder Set-up](#packet-forwarder-set-up)
+  - [MQTT Bridge Set-up](#mqtt-bridge-set-up)
 
 
 This document walks through the details on the steps on how to configure the free cloud services of [Amazon](http://aws.amazon.com/) to work with your **RAK7249 Macro Outdoor Gateway**. Follow each and every step discussed in this document to have a fully functional system. If you encounter errors, kindly contact us through the email provided in the Product Overview.
 
 ### Creating an Account
 
-To enjoy the free cloud services of Amazon, make an account through their [Amazon Web Service](http://aws.amazon.com/) page.
+To enjoy the free cloud services of Amazon, make an account through their [Amazon Web Services](http://aws.amazon.com/) page.
 
     Considerations:
       1. Limited to 750 hours per month for a period of 12 months
@@ -249,7 +255,7 @@ journalctl -u chirpstack-application-server -f -n 50
 />
 
 
-In case you want to use the Semtech Packet Forwarder to connect your Gateway to the LoRa Network Server proceed [here](#installing-the-gateway-bridge). If you are going to use the MQTT Bridge instead proceed directly [here](#amazon-web-service-security)
+In case you want to use the Semtech Packet Forwarder to connect your Gateway to the LoRa Network Server proceed [here](#installing-the-gateway-bridge). If you are going to use the MQTT Bridge instead proceed directly [here](#amazon-web-services-security)
 
 * Below is the text form of the logs shown in Figure 16:
 
@@ -340,7 +346,7 @@ Jun 18 10:20:29 ip-172-31-33-125 chirpstack-gateway-bridge[5596]: time="2020-06-
 Jun 18 10:20:29 ip-172-31-33-125 chirpstack-gateway-bridge[5596]: time="2020-06-18T10:20:29Z" level=info msg="integration/mqtt: connected to mqtt broker"
 ```
 
-# Amazon Web Service Security
+# Amazon Web Services Security
 
 By default, all inbound traffic to an AWS Instance is blocked, only port 22 (SSH) is open. You need to add a set of rules in order for the Gateway and LoRa Network Server to be able to communicate:
 

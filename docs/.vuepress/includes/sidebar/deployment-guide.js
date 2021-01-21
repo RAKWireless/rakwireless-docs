@@ -49,7 +49,7 @@ module.exports = {
       ]
     },
     {
-      title: 'Amazon Web Service',
+      title: 'Amazon Web Services',
       path: '',
       collapsable: false,
       sidebarDepth: 2,
@@ -58,12 +58,12 @@ module.exports = {
           title: "Getting Started",
           nested: false,
           collapsable: false,
-          path: '/knowledge-hub/Learn/Resources/deployment-guide/amazon-web-service/',
+          path: '/knowledge-hub/Learn/Resources/deployment-guide/amazon-web-services/',
           children: [
-            'amazon-web-service/aws-install-chirpstack',
-            'amazon-web-service/install-the-gateway-bridge',
-            'amazon-web-service/configure-aws-security', 
-            'amazon-web-service/configure-your-gateway'
+            'amazon-web-services/aws-install-chirpstack',
+            'amazon-web-services/install-the-gateway-bridge',
+            'amazon-web-services/configure-aws-security', 
+            'amazon-web-services/configure-your-gateway'
           ]
         },
       ]

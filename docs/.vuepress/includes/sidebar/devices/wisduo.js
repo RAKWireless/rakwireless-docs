@@ -198,6 +198,22 @@ module.exports = {
     download: true,
     sidebarDepth: 4
   },
+  {
+    title: 'Low Level Development',
+    path: '/Product-Categories/WisDuo/RAK4260-Evaluation-Board/Low-Level-Development/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisDuo/RAK4260-Evaluation-Board/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
   ],
   '/Product-Categories/WisDuo/RAK4260-Module/': [{
     title: 'Product Overview',
