@@ -32,6 +32,6 @@ To connect the RAK7200 module to a LoRa-P2P connection or a LoRaWAN® network, t
 | `at+set_config=lora:dev_addr:XXXX`  | Set the device address for ABP. <br>• **XXXX -** the device address.       |
 | `at+set_config=lora:apps_key:XXXX`  | Set the application session key for ABP. <br>• **XXXX -** the application session key. |
 | `at+set_config=lora:nwks_key:XXXX`  | Set the network session key for ABP. <br>• **XXXX** - the network session key.  |
-| `at+set_config=lora:send_interval:X` | Set the interval time of sending data. <br>• **X**: the interval time, units are seconds. |
+| `at+set_config=lora:send_interval:X:Y` | Set the interval time of sending data. <br>• **X**: auto send (1 ==on, 0 == off), **Y**: the interval time, units are seconds. |
 | `at+get_config=lora:status`         | It will return all of the current information of LoRa®, except the LoRa® Channel. |
 | `at+get_config=lora:channel `       | It will return the state of all LoRa® channels, then you can see which channel is closed and which channel is open very clearly.  |
