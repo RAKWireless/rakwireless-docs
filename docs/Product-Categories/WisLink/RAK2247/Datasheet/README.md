@@ -229,7 +229,7 @@ The table below lists the maximum ESD.
 
 | Parameter                              | Min | Typical | Max   | Remarks                                      |
 | -------------------------------------- | --- | ------- | ----- | -------------------------------------------- |
-| ESD sensitivity for a pins except ANT1 |     |         | 1000V | Human Body Model according to JESD22-A114    |
+| ESD sensitivity for all pins except ANT1 |     |         | 1000V | Human Body Model according to JESD22-A114    |
 | ESD sensitivity for ANT1               |     |         | 1000V | Human Body Model according to JESD22-A114    |
 | ESD immunity for ANT1                  |     |         | 4000V | Contact Discharge according to IEC 61000-4-2 |
 |                                        |     |         | 8000V | Air Discharge according to IEC 61000-4-2     |
@@ -293,20 +293,29 @@ The figure below shows the minimum application schematic of the RAK2247 card. Yo
 
 | Model         | Raspberry Pi Board  | Firmware Version | Source                                                                                                            |
 | ------------- | ------------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------- |
-| RAK2247 - SPI | Raspberry Pi 3B+, 4 | V4.2.0R          | [Download](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Frimware/RAK2247-SPI_Latest_Firmware.zip) |
-| RAK2247 - USB | Raspberry Pi 3B+, 4 | V4.2.0R          | [Download](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Frimware/RAK2247-USB_Latest_Firmware.zip) |
+| RAK2247 - SPI | Raspberry Pi 3B+, 4 | V4.2.5R          | [Download](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Firmware/RAK2247-SPI_Latest_Firmware.zip) |
+| RAK2247 - USB | Raspberry Pi 3B+, 4 | V4.2.5R          | [Download](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Firmware/RAK2247-USB_Latest_Firmware.zip) |
 
 ## Models / Bundles
 
 Order Information
 
-| Part Number    | Package                                   | Description                                              |
-| -------------- | ----------------------------------------- | -------------------------------------------------------- |
-| RAK2247-0X-R01 | 1x board and 1x Antenna retail package    | RAK2247-SPI, 433 / 470 / 868 / 915 / 923 / 920 / 865 MHz |
-| RAK2247-0X-R01 | 10-piece board and Antenna carton package | RAK2247-SPI, 433 / 470 / 868 / 915 / 923 / 920 / 865 MHz |
-| RAK2247-0X-R01 | 1x board and 1x Antenna retail package    | RAK2247-USB, 433 / 470 / 868 / 915 / 923 / 920 / 865 MHz |
-| RAK2247-0X-R01 | 10-piece board and Antenna carton package | RAK2247-USB, 433 / 470 / 868 / 915 / 923 / 920 / 865 MHz |
-
+| Part Number    | Description |
+| -------------- | ----------- |
+| RAK2247-01-R01 | SPI-EU433   |
+| RAK2247-02-R01 | SPI-CN470   |
+| RAK2247-03-R01 | SPI-EU868   |
+| RAK2247-04-R01 | SPI-915     |
+| RAK2247-05-R01 | SPI-KR920   |
+| RAK2247-06-R01 | SPI-AS923   |
+| RAK2247-07-R01 | SPI-IN865   |
+| RAK2247-11-R01 | USB-EU433   |
+| RAK2247-12-R01 | USB-CN470   |
+| RAK2247-13-R01 | USB-EU868   |
+| RAK2247-14-R01 | USB-915     |
+| RAK2247-15-R01 | USB-KR920   |
+| RAK2247-16-R01 | USB-AS923   |
+| RAK2247-17-R01 | USB-IN865   |
 
 ## Certification
 

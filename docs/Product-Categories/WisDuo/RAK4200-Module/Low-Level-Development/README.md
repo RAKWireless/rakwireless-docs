@@ -72,6 +72,13 @@ The customer’s application firmware should implement as minimum one AT command
 - a) For RAK4200 , write the value 0x00000000 in the address 0x0808 1700.
 - b) Reset MCU . You can call the NVIC_SystemReset() interface in the ST library to reset the MCU.
 
+When initializing the clock in the mode, the LSE driver needs to be set to high level. If you use ST's HAL library for development, the following code is placed at the beginning of the `SystemClock_Config` function.
+
+```c
+  HAL_PWR_EnableBkUpAccess();
+  __HAL_RCC_LSEDRIVE_CONFIG(RCC_LSEDRIVE_HIGH);
+```
+
 ::: tip 📝 NOTE
 The bootloader disable the global interrupt when jumping from the application state.
 Therefore, when the application code is initialized, the global interrupt should be enabled again.

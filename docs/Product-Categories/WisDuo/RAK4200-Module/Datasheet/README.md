@@ -237,6 +237,17 @@ The RAK4200 WisDuo LPWAN Module when in sleep mode consumes **11.8 uA** of curre
 - **Ramp-up Rate** (B): 0~2.5℃/ sec;
 - **Ramp-down Rate** (C): 1~3℃/ sec.
 
+
+### Software
+
+Download the latest firmware of the RAK4200 WisDuo LPWAN Module as provided in the table below.
+
+#### Firmware
+
+| Model Source | Source |
+| ------------ | ------ |
+| RAK4200 | [Download](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/RAK4200_Lastest_Firmware.zip) |
+
 ## Certification
 
 <rk-certifications :params="$page.frontmatter.certifications" />

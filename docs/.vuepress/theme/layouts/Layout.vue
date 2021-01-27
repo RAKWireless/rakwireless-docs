@@ -158,7 +158,12 @@ export default {
     shouldShowDrawer: {
       get() {
         const { frontmatter } = this.$page
-        if (this.ltMdDiv) return this.showDrawer
+        console.log('Sidebaritems',this.sidebarItems)
+        console.log('ltMdDiv',this.ltMdDiv)
+        console.log(!frontmatter.home &&
+            frontmatter.sidebar !== false &&
+            this.sidebarItems.length !== 0)
+        if (this.ltMdDiv) return this.showDrawer;
         else
           return (
             !frontmatter.home &&
@@ -167,6 +172,7 @@ export default {
           )
       },
       set(val) {
+        console.log('VALUE',val);
         this.showDrawer = val
       },
     },
@@ -295,7 +301,6 @@ export default {
     },
     onDrawerHide() {
       const self = this
-
       setTimeout(() => {
         // re-enabled stuffs
         document.documentElement.style.scrollBehavior = 'smooth'
@@ -331,6 +336,8 @@ export default {
     onTouchEnd(e) {
       const dx = e.changedTouches[0].clientX - this.touchStart.x
       const dy = e.changedTouches[0].clientY - this.touchStart.y
+      console.log("X",dx)
+      console.log("Y",dy)
       if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
         if (dx > 0 && this.touchStart.x <= 80) {
           this.toggleSidebar(true)
@@ -343,6 +350,15 @@ export default {
       this.isShow = flag;
     },
     checkRoute(route){
+      const { frontmatter } = this.$page
+      console.log(frontmatter)
+      if(!frontmatter.home &&
+          frontmatter.sidebar !== false &&
+          this.sidebarItems.length !== 0){
+        this.showDrawer = true;      
+      }else {
+        this.showDrawer = false;
+      }
       if(route.path === '/Knowledge-Hub/FAQs/'
         ||route.path === '/Knowledge-Hub/FAQs/General/'
         ||route.path === '/Knowledge-Hub/FAQs/Hardware/'
@@ -357,6 +373,15 @@ export default {
       }
     },
     checkRouteName(routeName){
+      const { frontmatter } = this.$page
+      console.log(frontmatter)
+      if(!frontmatter.home &&
+          frontmatter.sidebar !== false &&
+          this.sidebarItems.length !== 0){
+        this.showDrawer = true;      
+      }else {
+        this.showDrawer = false;
+      }
       if(routeName == 'v-00ca1ee8' || routeName == 'v-339265df' || routeName == 'v-1f7eaef6' || routeName == 'v-83e8fff2'){
         this.setIsShow(true);
        

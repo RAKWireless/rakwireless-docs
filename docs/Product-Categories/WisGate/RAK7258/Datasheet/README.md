@@ -135,7 +135,7 @@ The status of the LEDs is described as below:
 | Operating Frequency                                        | **ISM band**: 2.412~2.472(GHz)                                                                                                                                                                                                                      |
 | Operation Channels                                         | 2.4GHz: 1-13                                                                                                                                                                                                                                        |
 | Transmit Power (Max power on local regulations) -per chain | **802.11b** <br> • 1Mbps: 19dBm <br> • 11Mbps: 19dBm <br><br>**802.11g** <br> • 6Mbps: 18dBm <br> • 54Mbps: 16dBm <br><br>**802.11n(2.4G)** <br> • MCS0 (HT20): 18dBm <br> • MCS7 (HT20): 16dBm <br> • MCS0 (HT40): 17dBm <br> • MCS7 (HT40): 15dBm |
-| Receiver Sensitivity (Typical)                             | **802.11b** <br> • 1Mbps: 95dBm <br> • 11Mbps: 88dBm <br><br>**802.11g** <br> • 6Mbps: 90dBm <br> • 54Mbps: 75dBm <br><br>**802.11n(2.4G)** <br> • MCS0 (HT20): 89dBm <br> • MCS7(HT20): 72dBm <br> • MCS0(HT40): 86dBm <br> • MCS7(HT40): 68dBm    |
+| Receiver Sensitivity (Typical)                             | **802.11b** <br> • 1Mbps: -95dBm <br> • 11Mbps: -88dBm <br><br>**802.11g** <br> • 6Mbps: -90dBm <br> • 54Mbps: -75dBm <br><br>**802.11n(2.4G)** <br> • MCS0 (HT20): -89dBm <br> • MCS7(HT20): -72dBm <br> • MCS0(HT40): -86dBm <br> • MCS7(HT40): -68dBm    |
 
 ### Software
 

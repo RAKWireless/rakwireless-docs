@@ -294,3 +294,234 @@ Yes. Every country has its regulations about available frequency bands and restr
 
 </template>
 </faq>
+
+
+<faq>
+<template #question>
+17. What is the maximum size of the data packets on LoRaWAN?
+</template>
+<template #answer>
+
+LoRaWAN data packets are limited in size depending on the region and selected data rate. Refer to the tables below for the maximum transmission load by region. 
+
+:::tip 📝 NOTE:
+M in the following list is the length with MAC header, N is the length without MAC header, and the maximum sending data length is N.
+::::
+
+<b> EU868 </b>
+
+|Data Rate|M|N|
+|--------|-|-|
+|0|59|51|
+|1|59|51|
+|2|59|51|
+|3|123|115|
+|4|250|242|
+|5|250|242|
+|6|250|242|
+|7|250|242|
+|8 ~ 15|Not Defined|Not Defined|
+
+<br>
+
+
+<b> US915 </b>
+
+|Data Rate|M|N|
+|--------|-|-|
+|0|19|11|
+|1|61|53|
+|2|133|125|
+|3|250|242|
+|4|250|242|
+|5 ~ 7|Not Defined|Not Defined|
+|8|61|53|
+|9|137|129|
+|10|250|242|
+|11|250|242|
+|12|250|242|
+|13|250|242|
+|14 ~ 15|Not Defined|Not Defined|
+
+<br>
+
+
+<b> AU915 </b>
+
+|Data Rate|M|N|
+|--------|-|-|
+|0|59|51|
+|1|59|51|
+|2|59|51|
+|3|123|115|
+|4|250|242|
+|5|250|242|
+|6|250|242|
+|7|Not Defined|Not Defined|
+|8|61|53|
+|9|137|129|
+|10|250|242|
+|11|250|242|
+|12|250|242|
+|13|250|242|
+|14 ~ 15|Not Defined|Not Defined|
+
+<br>
+
+
+<b> KR920 </b>
+
+|Data Rate|M|N|
+|--------|-|-|
+|0|59|51|
+|1|59|51|
+|2|59|51|
+|3|123|115|
+|4|250|242|
+|5|250|242|
+|6 ~ 15|Not Defined|Not Defined|
+
+<br>
+
+
+<b> AS923 </b>
+
+<table style="text-align: center">
+<thead>
+  <tr>
+    <th>Data Rate</th>
+    <th colspan = 2>Uplink MAC Payload Size (M)</th>
+    <th colspan = 2>Downlink MAC Payload Size (M)</th>
+  </tr>
+</thead>
+<tbody>
+        <tr>
+            <td></td>
+            <td>UplinkDwellTime = 0</td>
+            <td>UplinkDwellTime = 1</td>
+            <td>DownlinkDwellTime = 0</td>
+            <td>DownlinkDwellTime = 1</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>59</td>
+            <td>N/A</td>
+            <td>59</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>59</td>
+            <td>N/A</td>
+            <td>59</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>59</td>
+            <td>19</td>
+            <td>59</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>123</td>
+            <td>61</td>
+            <td>123</td>
+            <td>61</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>250</td>
+            <td>133</td>
+            <td>250</td>
+            <td>133</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>250</td>
+            <td>250</td>
+            <td>250</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>250</td>
+            <td>250</td>
+            <td>250</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>250</td>
+            <td>250</td>
+            <td>250</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td colspan=2>RFU</td>
+            <td colspan=2>RFU</td>
+        </tr>
+</tbody>
+</table>
+
+<br>
+
+
+<b> IN865 </b>
+
+|Data Rate|M|N|
+|--------|-|-|
+|0|59|51|
+|1|59|51|
+|2|59|51|
+|3|123|115|
+|4|250|242|
+|5|250|242|
+|6|250|242|
+|7|250|242|
+|8 ~ 15|Not Defined|Not Defined|
+ 
+<br>
+
+
+<b> CN470 </b>
+
+|Data Rate|M|N|
+|--------|-|-|
+|0|59|51|
+|1|59|51|
+|2|59|51|
+|3|123|115|
+|4|250|242|
+|5|250|242|
+|6 ~ 15|Not Defined|Not Defined|
+
+<br>
+
+
+<b> EU433 </b>
+
+|Data Rate|M|N|
+|--------|-|-|
+|0|59|51|
+|1|59|51|
+|2|59|51|
+|3|123|115|
+|4|250|242|
+|5|250|242|
+|6|250|242|
+|7|250|242|
+|8 ~ 15|Not Defined|Not Defined|
+
+<br>
+
+
+
+
+
+
+
+</template>
+</faq>

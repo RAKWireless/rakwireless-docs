@@ -338,7 +338,7 @@ A detailed explanation of the procedure of putting the RAK7244P WisGate Develope
 5. Plug the RJ45 Network cable coming out from the cable gland to the RJ45 port of the RAK7244P. Connect the RP-SMA male antenna connector of the enclosure to the RP-SMA female antenna connector of the RAK7244P WisGate Developer D4P. Connect the SMA male GPS antenna connector of the enclosure to the SMA female GPS antenna connector of the RAK7244P WisGate Developer D4P.
 
 <rk-img
-  src="/assets/images/accessories/outdoor-enclosure-kit/rak7244c/5.png"
+  src="/assets/images/accessories/outdoor-enclosure-kit/rak7244p/5.png"
   width="50%"
   caption="Connecting the network cable and the antennas"
 />
@@ -346,7 +346,7 @@ A detailed explanation of the procedure of putting the RAK7244P WisGate Develope
 6. Close the RAKBox-GW-3's lid and fix it with the screws. Make sure that the rubber seal is placed correctly in the groove between the box and the lid to prevent leaks.
 
 <rk-img
-  src="/assets/images/accessories/outdoor-enclosure-kit/rak7244c/6.png"
+  src="/assets/images/accessories/outdoor-enclosure-kit/rak7244p/6.png"
   width="50%"
   caption="Closing the enclosure"
 />
