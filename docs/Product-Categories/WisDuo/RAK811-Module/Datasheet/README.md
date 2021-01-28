@@ -91,7 +91,7 @@ Low radio frequency hardware supports bandwidth in the regions of EU433 and CN47
 ###### Low RF Version Pin Outline
 
 <rk-img
-  src="/assets/images/wisduo/rak811-module/datasheet/pin-definition/rak811_lf.png"
+  src="/assets/images/wisduo/rak811-module/datasheet/pin-definition/rak811_lf.svg"
   width="60%"
   caption="Board Pinout for RAK811 Low RF"
 />
@@ -169,7 +169,7 @@ High radio frequency hardware supports the regions of EU868, US915, AU915, KR920
 ###### High RF Version Pin Outline
 
 <rk-img
-  src="/assets/images/wisduo/rak811-module/datasheet/pin-definition/rak811_hf.png"
+  src="/assets/images/wisduo/rak811-module/datasheet/pin-definition/rak811_hf.svg"
   width="60%"
   caption="Board Pinout for RAK811 High RF"
 />

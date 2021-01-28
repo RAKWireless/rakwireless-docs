@@ -53,7 +53,7 @@ The low-power, long-range LoRa communication capabilities of the board make it s
 The RAK4200 Breakout Board is shown in **Figure 1**. It displays the top view of the board.
 
 <rk-img
-  src="/assets/images/wisduo/rak4200-breakout-board/datasheet/rak4200-breakout-board-illustration.png"
+  src="/assets/images/wisduo/rak4200-breakout-board/datasheet/rak4200-breakout-board-illustration.svg"
   width="30%"
   caption="RAK4200 Breakout Board Illustration"
 />
@@ -110,7 +110,7 @@ For the aforementioned reason, it is best you leave unconnected.
 **Figure 2** shows the pinout of the RAK4200 Breakout Board:
 
 <rk-img
-  src="/assets/images/wisduo/rak4200-breakout-board/datasheet/rak4200-breakout-board-pinout.png"
+  src="/assets/images/wisduo/rak4200-breakout-board/datasheet/rak4200-breakout-board-pinout.svg"
   width="60%"
   caption="RAK4200 Breakout Board Pinout"
 />

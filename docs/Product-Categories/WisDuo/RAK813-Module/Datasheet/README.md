@@ -81,7 +81,7 @@ The short-range technology nRF52832 (BLE) is paired with the Semtech's SX127x (L
 #### System Diagram
 
 <rk-img
-  src="/assets/images/wisduo/rak813-module/datasheet/interfaces/system-diagram.png"
+  src="/assets/images/wisduo/rak813-module/datasheet/interfaces/system-diagram.svg"
   width="80%"
   caption="System Diagram"
 />
@@ -94,7 +94,7 @@ The hardware specification is categorized into five parts. It discusses the pino
 #### Pin Definition
 
 <rk-img
-  src="/assets/images/wisduo/rak813-module/datasheet/pin-definition/rak813-pinout.png"
+  src="/assets/images/wisduo/rak813-module/datasheet/pin-definition/rak813-pinout.svg"
   width="70%"
   caption="Pin Out Diagram for RAK813"
 />
@@ -192,7 +192,7 @@ The hardware specification is categorized into five parts. It discusses the pino
 
 
 <rk-img
-  src="/assets/images/wisduo/rak813-module/datasheet/mechanical-dimension/veq8asjwdqh1rpm9fape.png"
+  src="/assets/images/wisduo/rak813-module/datasheet/mechanical-dimension/veq8asjwdqh1rpm9fape.svg"
   width="65%"
   caption="Mechanical Dimensions of RAK813"
 />

@@ -92,7 +92,7 @@ The RF port is by default equipped with an SMA connector. If you need an IPEX co
 <br>
 
 <rk-img
-  src="/assets/images/wisduo/rak4270-breakout-board/datasheet/2.pin-definition.png"
+  src="/assets/images/wisduo/rak4270-breakout-board/datasheet/2.pin-definition.svg"
   width="60%"
   caption="RAK4270 Breakout Board Pinout"
 />

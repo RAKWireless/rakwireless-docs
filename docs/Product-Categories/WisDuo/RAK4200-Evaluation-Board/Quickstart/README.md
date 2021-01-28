@@ -59,7 +59,7 @@ Before powering the RAK4200 Evaluation Board, you should install the LoRa antenn
 1. Connect your RAK4200 Evaluation Board to your Windows PC using the provided micro USB cable.
 
   <rk-img
-    src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/3.interfacing/kq51hnmw5xoquykfd1dw.png"
+    src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/3.interfacing/kq51hnmw5xoquykfd1dw.svg"
     width="65%"
     caption="RAK4200 Evaluation Board to Laptop Connection"
   />

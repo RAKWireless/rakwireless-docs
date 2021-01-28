@@ -106,7 +106,7 @@ There are two UART interfaces on the RAK4200 Breakout Board:
 #### Pin Definition
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-breakout-board/datasheet/pinout.jpg"
+  src="/assets/images/wisduo/rak4260-breakout-board/datasheet/pinout.svg"
   width="65%"
   caption="RAK4260 Breakout Board Pinout"
 />

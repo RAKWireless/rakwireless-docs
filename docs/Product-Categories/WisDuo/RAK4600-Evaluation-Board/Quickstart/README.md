@@ -57,7 +57,7 @@ Before powering the RAK4600 Evaluation Board , you should install the LoRa and B
 <br>
 
 <rk-img
-  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/3.interfacing/u9lgszijijydbyjkgwnx.png"
+  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/3.interfacing/u9lgszijijydbyjkgwnx.svg"
   width="55%"
   caption="LoRa and BLE Antennas"
 />
@@ -65,7 +65,7 @@ Before powering the RAK4600 Evaluation Board , you should install the LoRa and B
 - Connect your RAK4600 Evaluation Board to your Windows PC using the provided micro USB cable.
 
 <rk-img
-  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/3.interfacing/rzolxz9ojiyg0lkqpkqz.png"
+  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/3.interfacing/rzolxz9ojiyg0lkqpkqz.svg"
   width="55%"
   caption="RAK4600 Evaluation Board to Windows PC Connection"
 />
@@ -130,7 +130,7 @@ For the full list of AT Commands available for configuring your RAK4600, please 
 
 
 <rk-img
-  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/3.interfacing/rzolxz9ojiyg0lkqpkqz.png"
+  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/3.interfacing/rzolxz9ojiyg0lkqpkqz.svg"
   width="55%"
   caption="RAK4600 Evaluation Board to Windows PC Connection"
 />

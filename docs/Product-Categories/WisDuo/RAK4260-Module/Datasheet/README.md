@@ -89,7 +89,7 @@ The hardware specifications are categorized into five parts. It presents the sch
 Provided in this section is the pinout of the RAK4260 WisDuo LPWAN Module.
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/datasheet/rak4260-board-pinout.jpg"
+  src="/assets/images/wisduo/rak4260-module/datasheet/rak4260-board-pinout.svg"
   width="70%"
   caption="RAK4260 Board Pinout"
 />
@@ -191,7 +191,7 @@ Shown in the table provided below is the power consumption of the RAK4260 WisDuo
 ##### OUTPUT POWER 20&nbsp;dB(MAX)PA_BOOST mode
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/datasheet/output-power-20db.jpg"
+  src="/assets/images/wisduo/rak4260-module/datasheet/output-power-20db.svg"
   width="80%"
   caption="OUTPUT POWER 20&nbsp;dB(MAX)"
 />
@@ -199,7 +199,7 @@ Shown in the table provided below is the power consumption of the RAK4260 WisDuo
 ##### OUTPUT POWER 17&nbsp;dB(PA_BOOST mode)
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/datasheet/output-power-17db.jpg"
+  src="/assets/images/wisduo/rak4260-module/datasheet/output-power-17db.svg"
   width="80%"
   caption="OUTPUT POWER 17&nbsp;dB"
 />
@@ -207,7 +207,7 @@ Shown in the table provided below is the power consumption of the RAK4260 WisDuo
 ##### OUTPUT POWER 14&nbsp;dB(RFO_HF mode)
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/datasheet/output-power-14db.jpg"
+  src="/assets/images/wisduo/rak4260-module/datasheet/output-power-14db.svg"
   width="80%"
   caption="OUTPUT POWER 14&nbsp;dB"
 />
@@ -215,7 +215,7 @@ Shown in the table provided below is the power consumption of the RAK4260 WisDuo
 ##### Receive Mode
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/datasheet/receive-mode.jpg"
+  src="/assets/images/wisduo/rak4260-module/datasheet/receive-mode.svg"
   width="80%"
   caption="Receive Mode"
 />
@@ -223,7 +223,7 @@ Shown in the table provided below is the power consumption of the RAK4260 WisDuo
 ##### Sleep Mode
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/datasheet/sleep-mode.jpg"
+  src="/assets/images/wisduo/rak4260-module/datasheet/sleep-mode.svg"
   width="80%"
   caption="Sleep Mode"
 />

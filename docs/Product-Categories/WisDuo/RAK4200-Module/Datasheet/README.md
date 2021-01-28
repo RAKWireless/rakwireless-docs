@@ -85,7 +85,7 @@ The hardware specification is categorized into five parts. It covers the pinouts
 <!---Provided in this section is the Pinout of the RAK4200 WisDuo LPWAN Module.--->
 
 <rk-img
-  src="/assets/images/wisduo/rak4200-module/datasheet/pinout-for-rak4200.png"
+  src="/assets/images/wisduo/rak4200-module/datasheet/pinout-for-rak4200.svg"
   width="65%"
   caption="Pinout for RAK4200"
 />
