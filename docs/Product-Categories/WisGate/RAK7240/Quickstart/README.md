@@ -28,10 +28,83 @@ tags:
 />
 
 :::tip 📝 NOTE
-The number of antennas in different depending on what you order. Refer to the store for more information.
+The number of antennas depends on what you order. Refer to the store for more information.
 :::
 
 ## Product Configuration
+
+### Gateway Installation Guide
+
+For details about the interfaces and connectors of RAK7240 WisGate Edge Prime Gateway enclosure, refer to the [Datasheet](/Product-Categories/WisGate/RAK7240/Datasheet/#interfaces-hardware-interfaces). 
+
+#### Installation 
+
+There are two options for installing the RAK7240 WisGate Edge Prime Gateway:
+
+##### Pole Mounting
+
+1. Fix the installation kit at the bottom of the device with four M5*8 screws.
+
+<rk-img
+  src="/assets/images/wisgate/rak7240/quickstart/installation/2.png"
+  width="50%"
+  caption="Fixing the Instalation Kit to the RAK7240"
+/>
+
+2. Slide the steel band clamps through the rectangular hole of the installation kit. Wrap the band clamps around the pole, lock them, and then tighten the clamps using a screwdriver.
+
+<rk-img
+  src="/assets/images/wisgate/rak7240/quickstart/installation/3.png"
+  width="25%"
+  caption="Fixing the RAK7240 to a Pole"
+/>
+
+##### Wall Mounting
+
+1. Use Ø5&nbsp;mm drill head and drill four (4) holes on the wall according to the dimension displayed in Figure 4. Plug the screw anchors in the wall.
+
+<rk-img
+  src="/assets/images/wisgate/rak7240/quickstart/installation/4.png"
+  width="50%"
+  caption="RAK7240 wall mounting dimentions"
+/>
+
+2. Using the tapping screws, attach the device to the wall.
+
+<rk-img
+  src="/assets/images/wisgate/rak7240/quickstart/installation/5.png"
+  width="50%"
+  caption="Fixing RAK7240 to a wall"
+/>
+
+#### Weather Protection
+
+To better protect the Ethernet cable gland and the antenna connector from the weather, you need to cover them with PVC tape. 
+
+1. Clean the surface area of the connector that will be wrapped. Wrap a layer of PVC tape with a 50% overlap according to the rotation direction of the connector. Continue wrapping the PVC tape to about 10&nbsp;mm below the end of the connector. 
+
+<rk-img
+  src="/assets/images/wisgate/rak7240/quickstart/installation/6.png"
+  width="35%"
+  caption="Wrapping with PVC tape"
+/>
+
+2. Cut off about 50&nbsp;cm waterproof tape. Stretch it to double the length, and wrap three layers around the connector with a 50% overlap. Hold the tape in place with your hand for a few seconds.
+
+<rk-img
+  src="/assets/images/wisgate/rak7240/quickstart/installation/7.png"
+  width="35%"
+  caption="Wrapping with waterproof tape"
+/>
+
+3. Wrap three additional layers with PVC tape with natural uncoiling force and a 50% overlap. Make sure to cover the head and the tail of the connector.
+
+<rk-img
+  src="/assets/images/wisgate/rak7240/quickstart/installation/8.png"
+  width="35%"
+  caption="Final PVC wrapping"
+/>
+
 
 ### Power on the Gateway
 

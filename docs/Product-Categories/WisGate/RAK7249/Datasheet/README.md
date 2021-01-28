@@ -73,7 +73,7 @@ Create your own RAK7249 WisGate Edge Max using the supplied building blocks:
 - Accessories
 
 <rk-img
-  src="/assets/images/wisgate/rak7249/datasheet/diy-enterprise-gateway-components-and-accessories.jpg"
+  src="/assets/images/wisgate/rak7249/datasheet/package_contents.png"
   width="80%"
   caption="DIY Enterprise Gateway Components and Accessories"
 />

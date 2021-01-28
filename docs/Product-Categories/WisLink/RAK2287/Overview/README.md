@@ -34,7 +34,7 @@ This module is an exceptional, complete and cost efficient gateway solution offe
 
 ## Product Features
 
-- Designed based on **Mini PCL-e form factor** with Heat Sink.
+- Designed based on **Mini PCI-e form factor** with Heat Sink.
 - **SX1302 base band processor** emulates 8 x8 channel LoRa packet detectors, 8 x SF5-SF12 LoRa demodulators, 8 x SF5-SF10 LoRa demodulators, one 125 /250 / 500 kHz high-speed LoRa demodulator and one (G)FSK demodulator.
 - 3.3v **Mini PCI-e**, compatible with 3G/LTE card of Mini PCI-e type.
 - Compatible with **3G/LTE card** of Mini PCI-e type.

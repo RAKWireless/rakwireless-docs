@@ -5,7 +5,8 @@ tags:
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK4260/Certification-Report/RAK4260H-CE-ATL20191108787-Certificate.pdf]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK4260/Certification-Report/RAK4260H-FCC-2AF6B-Certificate.pdf]
-prev: ../Overview/
+prev: ../Quickstart/
+next: false
 ---
 
 # RAK4260 WisDuo LPWAN Module Datasheet
@@ -34,8 +35,8 @@ RAK4260 is a solution that is cost efficient and flexible that can be deployed i
 
 - Industry's lowest power LoRa SiP device
 - 32-bit ARM Cortex M0+ MCU and LoRa Transceiver
-- Small form factor: 15 millimeter x 15 millimeter compact package
-- 256KB Flash and 40 KB RAM accommodates application code and stack
+- Small form factor: 15&nbsp;mm x 15&nbsp;mm  compact package
+- 256&nbsp;KB Flash and 40&nbsp;KB RAM accommodates application code and stack
 - Most cost and size effective solution, eliminating need for external MCU
 - Fully supported 862 to 1020&nbsp;MHz frequency coverage
 - Receive Sensitivity down to -148&nbsp;dBm
@@ -90,63 +91,63 @@ Provided in this section is the pinout of the RAK4260 WisDuo LPWAN Module.
   caption="RAK4260 Board Pinout"
 />
 
-| PIN |     NAME      | I/O |                Description                 |
-| :-: | :-----------: | :-: | :----------------------------------------: |
-|  1  |      GND      |  -  |                   Ground                   |
-|  2  |      RFC      |  -  |                  RF Port                   |
-|  3  |      GND      |  -  |                   Ground                   |
-|  4  |     PA27      | I/O |                  EIC/GCLK                  |
-|  5  |     PA06      | I/O |   EIC/RSTC/ADC/PTC/OPAMP/TC/CCL/SERCOM0    |
-|  6  |     PA07      | I/O |     EIC/RSTC/ADC/OPAMP/TC/CCL/SERCOM0      |
-|  7  |     PA08      | I/O |       DC/PTC/TC/CCL/SERCOM0/SERCOM2        |
-|  8  |     PA09      | I/O |     EIC/ADC/PTC/TC/CCL/SERCOM0/SERCOM2     |
-|  9  |     PB22      | I/O |            SERCOM5/TC/GCLK/CCL             |
-| 10  |      GND      |  -  |                   Ground                   |
-| 11  |    VCC3V3     |  -  |                3V3 power in                |
-| 12  |    VCC3V3     |  -  |                3V3 power in                |
-| 13  |   PA17_SCL    | I/O |    EIC/PTC/TC/GCLK/CCL/SERCOM1/SERCOM3     |
-| 14  |   PA16_SDA    | I/O |    EIC/PTC/TC/GCLK/CCL/SERCOM1/SERCOM3     |
-| 15  |     PA15      | I/O |        EIC/TC/GCLK/SERCOM2/SERCOM4         |
-| 16  |     PA14      | I/O |        EIC/TC/GCLK/SERCOM2/SERCOM4         |
-| 17  |      GND      |  -  |                   Ground                   |
-| 18  |      GND      |  -  |                   Ground                   |
-| 19  | PA18 UART3 RX | I/O |     EIC/PTC/TC/AC/CCL/SERCOM1/SERCOM3      |
-| 20  | PA19 UART3 TX | I/O |     EIC/PTC/TC/AC/CCL/SERCOM1/SERCOM3      |
-| 21  |      NC       |  -  |               No Connection                |
-| 22  |   PA23_MOSI   | I/O |   EIC/PTC/TC/AC/CCL/GCLK/SERCOM3/SERCOM5   |
-| 23  |    PA22_SS    | I/O |     EIC/PTC/TC/AC/CCL/SERCOM3/SERCOM5      |
-| 24  |   PB23_SCK    | I/O |          EIC/SERCOM5/TC/GCLK/CCL           |
-| 25  |   PB02_MISO   | I/O |        EIC/ADC/SERCOM5/TC/SUPC/CCL         |
-| 26  |  PA25 USB P   | I/O |     EIC/SERCOM3/SERCOM5/TC/USB_DM/CCL      |
-| 27  |  PA24 USB N   | I/O |     EIC/SERCOM3/SERCOM5/TC/USB_DM/CCL      |
-| 28  |      GND      |  -  |                   Ground                   |
-| 29  |      RST      |  -  |                 MCU Reset                  |
-| 30  |  PA30_SWDCLK  | I/O |                   SWDCLK                   |
-| 31  |  PA31_SWDIO   | I/O |                   SWDIO                    |
-| 32  | PA04 UART1 TX | I/O | EIC/RSTC/VREFB/ADC/AC/OPAMP/TC/CCL/SERCOM0 |
-| 33  | PA05 UART1 RX | I/O |    EIC/RSTC/ADC/AC/OPAMP/TC/CCL/SERCOM0    |
-| 34  |      NC       |  -  |               No Connection                |
-| 35  |      GND      |  -  |                   Ground                   |
-| 36  |      GND      |  -  |                   Ground                   |
-| 37  |      GND      |  -  |                   Ground                   |
-| 38  |      GND      |  -  |                   Ground                   |
-| 39  |      GND      |  -  |                   Ground                   |
-| 40  |      GND      |  -  |                   Ground                   |
+|  PIN  |     NAME      |  I/O  |                Description                 |
+| :---: | :-----------: | :---: | :----------------------------------------: |
+|   1   |      GND      |   -   |                   Ground                   |
+|   2   |      RFC      |   -   |                  RF Port                   |
+|   3   |      GND      |   -   |                   Ground                   |
+|   4   |     PA27      |  I/O  |                  EIC/GCLK                  |
+|   5   |     PA06      |  I/O  |   EIC/RSTC/ADC/PTC/OPAMP/TC/CCL/SERCOM0    |
+|   6   |     PA07      |  I/O  |     EIC/RSTC/ADC/OPAMP/TC/CCL/SERCOM0      |
+|   7   |     PA08      |  I/O  |       DC/PTC/TC/CCL/SERCOM0/SERCOM2        |
+|   8   |     PA09      |  I/O  |     EIC/ADC/PTC/TC/CCL/SERCOM0/SERCOM2     |
+|   9   |     PB22      |  I/O  |            SERCOM5/TC/GCLK/CCL             |
+|  10   |      GND      |   -   |                   Ground                   |
+|  11   |    VCC3V3     |   -   |                3V3 power in                |
+|  12   |    VCC3V3     |   -   |                3V3 power in                |
+|  13   |   PA17_SCL    |  I/O  |    EIC/PTC/TC/GCLK/CCL/SERCOM1/SERCOM3     |
+|  14   |   PA16_SDA    |  I/O  |    EIC/PTC/TC/GCLK/CCL/SERCOM1/SERCOM3     |
+|  15   |     PA15      |  I/O  |        EIC/TC/GCLK/SERCOM2/SERCOM4         |
+|  16   |     PA14      |  I/O  |        EIC/TC/GCLK/SERCOM2/SERCOM4         |
+|  17   |      GND      |   -   |                   Ground                   |
+|  18   |      GND      |   -   |                   Ground                   |
+|  19   | PA18 UART3 RX |  I/O  |     EIC/PTC/TC/AC/CCL/SERCOM1/SERCOM3      |
+|  20   | PA19 UART3 TX |  I/O  |     EIC/PTC/TC/AC/CCL/SERCOM1/SERCOM3      |
+|  21   |      NC       |   -   |               No Connection                |
+|  22   |   PA23_MOSI   |  I/O  |   EIC/PTC/TC/AC/CCL/GCLK/SERCOM3/SERCOM5   |
+|  23   |    PA22_SS    |  I/O  |     EIC/PTC/TC/AC/CCL/SERCOM3/SERCOM5      |
+|  24   |   PB23_SCK    |  I/O  |          EIC/SERCOM5/TC/GCLK/CCL           |
+|  25   |   PB02_MISO   |  I/O  |        EIC/ADC/SERCOM5/TC/SUPC/CCL         |
+|  26   |  PA25 USB P   |  I/O  |     EIC/SERCOM3/SERCOM5/TC/USB_DM/CCL      |
+|  27   |  PA24 USB N   |  I/O  |     EIC/SERCOM3/SERCOM5/TC/USB_DM/CCL      |
+|  28   |      GND      |   -   |                   Ground                   |
+|  29   |      RST      |   -   |                 MCU Reset                  |
+|  30   |  PA30_SWDCLK  |  I/O  |                   SWDCLK                   |
+|  31   |  PA31_SWDIO   |  I/O  |                   SWDIO                    |
+|  32   | PA04 UART1 TX |  I/O  | EIC/RSTC/VREFB/ADC/AC/OPAMP/TC/CCL/SERCOM0 |
+|  33   | PA05 UART1 RX |  I/O  |    EIC/RSTC/ADC/AC/OPAMP/TC/CCL/SERCOM0    |
+|  34   |      NC       |   -   |               No Connection                |
+|  35   |      GND      |   -   |                   Ground                   |
+|  36   |      GND      |   -   |                   Ground                   |
+|  37   |      GND      |   -   |                   Ground                   |
+|  38   |      GND      |   -   |                   Ground                   |
+|  39   |      GND      |   -   |                   Ground                   |
+|  40   |      GND      |   -   |                   Ground                   |
 
 ##### RF Switch Pin Definition
 
-| **BAND_SEL**| **TX/RX** |
-|:-----------:|:---------:|
-|  PA13       | D2        |
+| **BAND_SEL** | **TX/RX** |
+| :----------: | :-------: |
+|     PA13     |    D2     |
 
 ##### RF Switch control logic table
 
-| **LoRa Mode**| **BAND_SEL** | **TX/RX**   |**PA28**|
-|:-------------|:------------:|:-----------:|:------:|
-| Shutdown     | L            |       L     |  L     |
-| PA_BOOST     | L            |       H     |  H     |
-| RFI_HF (RX)  | H            |       L     |  H     |
-| RFO_HF       | H            |       H     |  H     |
+| **LoRa Mode** | **BAND_SEL** | **TX/RX** | **PA28** |
+| :------------ | :----------: | :-------: | :------: |
+| Shutdown      |      L       |     L     |    L     |
+| PA_BOOST      |      L       |     H     |    H     |
+| RFI_HF (RX)   |      H       |     L     |    H     |
+| RFO_HF        |      H       |     H     |    H     |
 
 
 :::tip 📝 NOTE
@@ -176,36 +177,36 @@ The RAK4260 supports LoRaWAN frequency included in the table provided below:
 
 Shown in the table provided below is the power consumption of the RAK4260 WisDuo LPWAN Module.
 
-|          Item           | Power Consumption |      Condition       |
-| :---------------------: | :---------------: | :------------------: |
-| OUTPUT POWER 20dB (MAX) |      126.3mA      |   PA_BOOST V=3.3V    |
-|    OUTPUT POWER 17dB    |  95.6mA(typical)  |   PA_BOOST V=3.3V    |
-|    OUTPUT POWER 14dB    |      33.1mA       |    RFO_HF V=3.3V     |
-|      Receive mode       |      13.6mA       |          -           |
-|       Sleep mode        |       860nA       | V = 3.3V Backup Mode |
+|             Item              |   Power Consumption   |         Condition          |
+| :---------------------------: | :-------------------: | :------------------------: |
+| OUTPUT POWER 20&nbsp;dB (MAX) |     126.3&nbsp;mA     |   PA_BOOST V=3.3&nbsp;V    |
+|    OUTPUT POWER 17&nbsp;dB    | 95.6&nbsp;mA(typical) |   PA_BOOST V=3.3&nbsp;V    |
+|    OUTPUT POWER 14&nbsp;dB    |     33.1&nbsp;mA      |    RFO_HF V=3.3&nbsp;V     |
+|         Receive mode          |     13.6&nbsp;mA      |             -              |
+|          Sleep mode           |      860&nbsp;nA      | V = 3.3&nbsp;V Backup Mode |
 
-##### OUTPUT POWER 20dB(MAX)PA_BOOST mode
+##### OUTPUT POWER 20&nbsp;dB(MAX)PA_BOOST mode
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/datasheet/output-power-20db.jpg"
   width="80%"
-  caption="OUTPUT POWER 20dB(MAX)"
+  caption="OUTPUT POWER 20&nbsp;dB(MAX)"
 />
 
-##### OUTPUT POWER 17dB(PA_BOOST mode)
+##### OUTPUT POWER 17&nbsp;dB(PA_BOOST mode)
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/datasheet/output-power-17db.jpg"
   width="80%"
-  caption="OUTPUT POWER 17dB"
+  caption="OUTPUT POWER 17&nbsp;dB"
 />
 
-##### OUTPUT POWER 14dB(RFO_HF mode)
+##### OUTPUT POWER 14&nbsp;dB(RFO_HF mode)
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/datasheet/output-power-14db.jpg"
   width="80%"
-  caption="OUTPUT POWER 14dB"
+  caption="OUTPUT POWER 14&nbsp;dB"
 />
 
 ##### Receive Mode
@@ -226,7 +227,7 @@ Shown in the table provided below is the power consumption of the RAK4260 WisDuo
 
 ##### Sensitivity Level
 
-The following chart shows the receiving sensitivity of RAK4260 at 868 Mhz.
+The following chart shows the receiving sensitivity of RAK4260 at 868&nbsp;Mhz.
 
 | Receive Power @iPEX | PER (%) @SF7 |
 | :-----------------: | :----------: |

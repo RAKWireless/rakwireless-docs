@@ -269,7 +269,15 @@ Here is an overview on how to connect the SWD interface. If you cannot find your
   src="/assets/images/accessories/rakdap1-flash-and-debug-tool/rak4270.svg"
   width="40%"
   caption="RAK4270 Module Pinout"
-/>
+/>  
+  
+### RAK4260 Module  
+  
+<rk-img
+  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/rak4260.png"
+  width="40%"
+  caption="RAK4260 Module Pinout"
+/>  
 
 ### RAK4260 Evaluation Board
 

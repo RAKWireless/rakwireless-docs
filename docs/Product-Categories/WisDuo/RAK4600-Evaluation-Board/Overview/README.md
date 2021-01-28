@@ -4,14 +4,14 @@ rak_img: /assets/images/wisduo/rak4600-evaluation-board/overview/RAK4600_Evaluat
 rak_desc: The RAK4600 evaluation board makes it simple to evaluate the RAK4600 stamp module. The base board allows to test WisBlock Sensor and WisBlock IO modules.
 rak_grp: [wisduo, evb]
 prev: ../../
-next: ../Quick-Start-Guide/Quickstart/
+next: ../Quickstart/
 rak_model: RAK4600-E
 ---
 
 # RAK4600 Evaluation Board
 Thank you for choosing **RAK4600 Evaluation Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
-* [Quick Start Guide](../Quick-Start-Guide/Quickstart)
+* [Quick Start Guide](../Quickstart)
 * [AT Command Manual](../AT-Command-Manual/)
 
 ## Product Background

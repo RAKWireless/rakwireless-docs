@@ -4,6 +4,8 @@ next: ../AT-Command-Manual/
 tags:
   - datasheet
   - wisnode
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK7204/Certification/RAK7204_CE_cert.zip]
 ---
 
 # RAK7204 WisNode Sense Home Datasheet
@@ -175,3 +177,7 @@ Download the latest firmware of the RAK7204 in table provided below.
 | RAK7204-05  | Environmental Sensors device, KR920         |
 | RAK7204-06  | Environmental Sensors device, AS923         |
 | RAK7204-07  | Environmental Sensors device, IN865         |
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

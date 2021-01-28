@@ -224,6 +224,14 @@ module.exports = {
     sidebarDepth: 4
   },
   {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisDuo/RAK4260-Module/QuickStart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
     title: 'Datasheet',
     path: '/Product-Categories/WisDuo/RAK4260-Module/Datasheet/',
     collapsable: false,
@@ -306,16 +314,13 @@ module.exports = {
     download: true,
     sidebarDepth: 4
   },
-  {
+  {   
     title: 'Quick Start Guide',
-    path: '/Product-Categories/WisDuo/RAK4600-Evaluation-Board/Quick-Start-Guide/Quickstart/',
+    path: '/Product-Categories/WisDuo/RAK4600-Evaluation-Board/Quickstart/',
     collapsable: false,
     nested: true,
     download: true,
     sidebarDepth: 4,
-    children: [
-      ['/Product-Categories/WisDuo/RAK4600-Evaluation-Board/Quick-Start-Guide/Quickstart/', 'Getting Started']
-    ]
   },
   {
     title: 'AT Command Manual',

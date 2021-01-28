@@ -1,1 +1,0 @@
-<rk-redirect to="/Product-Categories/WisDuo/RAK4600-Evaluation-Board/Quick-Start-Guide/Quickstart/"/> 

@@ -1,6 +1,5 @@
 ---
 prev: ../Overview/
-next: ../AT-Command-Manual/
 tags:
   - RAK4600 Evaluation Board
 ---
@@ -193,10 +192,10 @@ By default, the BLE signal of the RAK4600 is turned off automatically if no conn
 />
 
 
-6. Check the AT command response on Nordic UART Service Tx Characteristic
+6. Check the AT command response on Nordic UART Service Tx Characteristic.
 
 <rk-img
-  src="/assets/images/wisduo/rak4600-module/quickstart/ble-at-version-response.png"
+  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5.configuring-rak4600/ble-at-version-response.png"
   width="45%"
   caption="AT response over BLE"
 />

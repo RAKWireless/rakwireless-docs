@@ -10,7 +10,7 @@ next: ../Quickstart/
 
 Thank you for choosing **RAK4600 WisDuo LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
-* [Getting Started](../Quickstart)
+* [Quick Start Guide](../Quickstart)
 * [AT Command Manual](../AT-Command-Manual/)
 * <a href="/RUI/" target="_blank">RUI Secondary Development</a> - RAK4600 module supports RUI Secondary Development, refer to <a href="/RUI/" target="_blank">RUI</a> for further details.
 * [Deep Development](/Product-Categories/WisDuo/RAK4600-Module/Deep-Development/)

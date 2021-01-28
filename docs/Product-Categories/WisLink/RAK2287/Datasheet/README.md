@@ -218,7 +218,7 @@ Limiting values given below are in accordance with the Absolute Maximum Rating S
 | ---------- | --------------------- | ------------------------------------------ | -------- | --------- |
 | 3.3Vaux    | Module supply voltage | Input DC voltage at 3.3Vaux pins           | -0.3V    | 3.6V      |
 | USB        | USB D+/D- pins        | Input DC voltage at USB interface pins     |          | 3.6V      |
-| RESET      | RAK2247 reset input   | Input DC voltage at RESET input pin        | -0.3V    | 3.6V      |
+| RESET      | RAK2287 reset input   | Input DC voltage at RESET input pin        | -0.3V    | 3.6V      |
 | SPI        | SPI interface         | Input DC voltage at SPI interface pin      | -0.3V    | 3.6V      |
 | GPS_PPS    | GPS 1 pps input       | Input DC voltage at GPS_PPS input pin      | -0.3V    | 3.6V      |
 | Rho_ANT    | Antenna ruggedness    | Output RF load mismatch ruggedness at ANT1 |          | 10:1 VSWR |

@@ -25,123 +25,164 @@ tags:
 
 <rk-img
   src="/assets/images/wisgate/rak7249/quickstart/2.quickstart/package_contents.png"
-  width="60%"
+  width="80%"
   caption="RAK7249 Package Contents"
 />
+
+:::tip 📝 NOTE
+* The included type and number of antennas and the Backup Battery Kit is optional, depending on the purchased bundle.
+:::
+
 
 ## Product Configuration
 
 ### Gateway Installation Guide
-
+For details about the interfaces and connectors of RAK7249 WisGate Edge Max Gateway enclosure, refer to the [Datasheet](../Datasheet/#interfaces). 
 #### Assembly
 
-1. Fix the support plate on the base with three M3x6 screws.
+1. Fix the support plate on the base with three M3*6 screws.
 
 <rk-img
-  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/plate-attachment.jpg"
+  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/image007.png"
   width="50%"
-  caption="RAK7249 WisGate Edge Max Support Plate Attachment"
+  caption="Fixing the support plate"
 />
 
-2. Install the main board with four M3x6 screws.
+2. Install the motherboard with four M3*6 screws.
 
 <rk-img
-  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/main-board-installation.jpg"
+  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/image008.png"
   width="50%"
-  caption="RAK7249 WisGate Edge Max Main Board Installation"
+  caption="Installing the motherboard"
 />
 
-3. Install the LoRa cards (for example RAK833), the motherboard supports two LoRa cards, the first slot is for LoRa card of SPI type, the second slot is for LoRa card of USB type.
-
-:::tip 📝 NOTE
-If there is only one LoRa card (SPI type), please install it in the first slot.
-:::
+3. Install the LoRa card. The motherboard supports two LoRa cards. Slot one supports only SPI type, and slot two supports only USB type.
 
 <rk-img
-  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/lora-card-installation.jpg"
+  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/3.png"
   width="70%"
-  caption="RAK7249 WisGate Edge Max LoRa Card Installation"
+  caption="Installing the LoRa card"
 />
 
-4. Installation of RF cables, Ethernet cable and reserved hole plugs.
+4. If your board supports the cellular function, you can install your SIM card into the motherboard’s SIM card slot.
 
-5. If your board supports the cellular function, you can install your SIM card into the motherboard’s SIM card slot.
+5. Installation of RF cables, Ethernet cable, and reserved hole plugs.
 
 <rk-img
-  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/cable-installation.jpg"
-  width="80%"
-  caption="RAK7249 WisGate Edge Max Cable Installtion"
+  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/2.png"
+  width="70%"
+  caption="Installing the cables and plugs"
 />
 
-6. Connect the cable to the motherboard. The connectors on motherboard are as follows. Connect the cables one by one.
+6. Connect the cables to the motherboard. The connectors on the motherboard are shown in Figure 6.
+
+<rk-img
+  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/1.png"
+  width="70%"
+  caption="Connecting the cables to the motherboard"
+/>
 
 :::tip 📝 NOTE
-You must use the WiFI-MAIN connector to connect the WiFi Antenna.
+You must use the Wi-Fi MAIN connector to connect the Wi-Fi antenna. 
 :::
 
-<rk-img
-  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/gateway-interfacing.jpg"
-  width="60%"
-  caption="RAK7249 WisGate Edge Max Interfacing"
-/>
+7. If you have a Backup Battery Kit, connect with the backup battery to the motherboard.
 
-7. If you have a Backup Battery Kit, connect with the Backup Battery to the motherboard.
+8. Fix the M3 hexagon spacers on the plate with four screws, and then fix the battery charging PCB board on top of them.
 
-8. Close the top cover with 12PCS M4x12 screws
 
 <rk-img
-  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/top-cover-sealing.jpg"
+  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/image020.png"
   width="50%"
-  caption="RAK7249 WisGate Edge Max Top Cover Sealing"
+  caption="Fixing the battery charging PCB board"
 />
 
-#### Mounting
-
-:::tip 📝 NOTE
-All the necessary components (bolts, washers, nuts) come with the mounting kit.
-:::
-
-1. Fix the device bracket to the backside of the enclosure with four M6x12 screws.
+9. Fix the battery with cable ties beside the charging PCB board. If the cable tie is not long enough, two ties can be connected.
 
 <rk-img
-  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/back-bracket-attachment.jpg"
-  width="40%"
-  caption="RAK7249 WisGate Edge Max Back Panel to Bracket Attachment"
-/>
-
-2. Tighten the pole clamp with hexagonal M6x110 bolts , washers and nuts.
-
-<rk-img
-  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/pole-clamp-guide.jpg"
+  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/image021.png"
   width="50%"
-  caption="RAK7249 WisGate Edge Max Pole Clamp Guide"
+  caption="Fixing the battery"
 />
 
-3. Connect the clamp and the bracket on the backside of the casing with hexagonal M6x30 bolts, washers and nuts.
+10. Fix the four M3*30mm hexagon spacers on the bottom plate.
 
 <rk-img
-  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/back-panel-pole-attachment.jpg"
-  width="40%"
-  caption="RAK7249 WisGate Edge Max Back Panel to Pole Attachment"
+  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/image022.png"
+  width="50%"
+  caption="Adding Spacers"
 />
 
+11. Connect the cables like shown in Figure 10.
+* Connect the PH2.0 socket on the motherboard and the charging PCB board with the 2pin signal cable. 
+* Connect the DC socket of the charging PCB board and the battery socket with a DC Plug cable.
+* Plug the output plug of the battery into the DC socket of the motherboard.
+
+<rk-img
+  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/image023.png"
+  width="50%"
+  caption="Connecting the cables"
+/>
+
+12.  Fix the Charge Module in the enclosure and tighten with four screws.
+
+<rk-img
+  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/image024.png"
+  width="50%"
+  caption="Fixing the Charge Module"
+/>
+
+13.  Close the top cover with M4*12 screws. Make sure that the rubber seal is placed correctly in the groove between the box and the lid to prevent leaks.
+
+<rk-img
+  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/image025.png"
+  width="50%"
+  caption="Closing the enclosure"
+/>
+
+#### Installation
+
+Instructions on mounting and securing the mounting kit to the enclosure and the bearing pole.
+
+1. Fix the included cross bracket on the bottom of the enclosure with four M6*12 bolts.
+
+<rk-img
+  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/image026.png"
+  width="30%"
+  caption="Mounting the cross bracket"
+/>
+
+2. Place two pieces of the clamp around the pole and tighten them with the included M6*110 bolts, washers, and nuts.
+
+<rk-img
+  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/image027.png"
+  width="40%"
+  caption="Mounting the clamp to the pole"
+/>
+
+3. Connect the pole clamp and the cross bracket by securing the last piece of the mounting kit in place using M6*30 bolts, washers, and nuts.
+
+<rk-img
+  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/image028.png"
+  width="40%"
+  caption="Fixing the enclosure to the pole clamp"
+/>
 #### Weather Protection
 
 To better protect the Ethernet cable gland and the antenna connector from the weather, you need to cover them with PVC tape. 
 
-1. Clean the surface area of the connector that will be wrapped. Wrap a layer of PVC tape with a 50% overlap according to the rotation direction of the connector. Continue wrapping the PVC tape to about 10&nbsp;mm below the end of the connector. 
+1. Clean the surface area of the connector that will be wrapped. Wrap a layer of PVC tape with a 50% overlap according to the rotation direction of the connector. Continue wrapping the PVC tape to about 10 mm below the end of the connector. 
 
 <rk-img
-  src="/assets/images/wisgate/rak7249/quickstart/weather-protection/1.png"
+  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/image029.png"
   width="30%"
   caption="Wrapping with PVC tape"
 />
 
-2. Cut off about 50 cm waterproof tape. Stretch it to double the length, and wrap three layers around the connector with a 50% overlap. Hold the tape in place with your hand for a few seconds.
-
+2. Cut off about 50 cm waterproof tape. Stretch it to double the length. Wrap three layers around the connector with a 50% overlap. Hold the tape in place with your hand for a few seconds.
 
 <rk-img
-  src="/assets/images/wisgate/rak7249/quickstart/weather-protection/2.png"
+  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/image031.png"
   width="30%"
   caption="Wrapping with waterproof tape"
 />
@@ -149,20 +190,10 @@ To better protect the Ethernet cable gland and the antenna connector from the we
 3. Wrap three additional layers with PVC tape with natural uncoiling force and a 50% overlap. Make sure to cover the head and the tail of the connector.
 
 <rk-img
-  src="/assets/images/wisgate/rak7249/quickstart/weather-protection/3.png"
+  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/image033.png"
   width="30%"
   caption="Final PVC wrapping"
 />
-
-
-#### Optional Accessories
-
-<rk-img
-  src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/optional-accessories.jpg"
-  width="60%"
-  caption="RAK7249 WisGate Edge Max Optional Accessories"
-/>
-
 
 ### Solar Panel and Battery Kit Installation
 
