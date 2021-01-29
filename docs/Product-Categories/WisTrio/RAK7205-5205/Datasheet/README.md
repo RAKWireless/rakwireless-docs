@@ -53,8 +53,8 @@ The overview covers the RAK5205 WisTrio board top view and also, its block diagr
 Figure 1 shows the top view and external interfaces of the RAK5205 LPWAN tracker board.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-lpwan-tracker-interfaces.png"
-  width="50%"
+  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-lpwan-tracker-interfaces.svg"
+  width="60%"
   caption="RAK5205 WisTrio LPWAN Tracker Interfaces"
 />
 
@@ -152,7 +152,7 @@ Pin1 is connected to BOOT0. Pin2 is connected to VDD. To flash a firmware, conne
 The 30 pins follow the 96Board pin definition.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-pinout-diagram.png"
+  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-pinout-diagram.svg"
   width="60%"
   caption="RAK5205 Pinout Diagram"
 />

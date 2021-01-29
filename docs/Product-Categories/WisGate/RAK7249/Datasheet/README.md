@@ -65,8 +65,8 @@ The overview presents the circuit board of RAK7249 WisGate Edge Max and its bloc
 #### Circuit Board
 
 <rk-img
-  src="/assets/images/wisgate/rak7249/datasheet/circuit-board-interface.png"
-  width="80%"
+  src="/assets/images/wisgate/rak7249/datasheet/circuit-board.svg"
+  width="55%"
   caption="Circuit Board Interface"
 />
 
@@ -163,7 +163,7 @@ The images below shows the hardware interfaces at the front and rear of RAK7249 
 ##### Board Interface
 
 <rk-img
-  src="/assets/images/wisgate/rak7249/datasheet/circuit-board-interface.png"
+  src="/assets/images/wisgate/rak7249/datasheet/circuit-board-interface.svg"
   width="80%"
   caption="Circuit Board Interface"
 />

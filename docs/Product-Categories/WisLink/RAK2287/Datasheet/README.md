@@ -324,7 +324,6 @@ The table below shows the board order configurations of the RAK2287 WisLink LPWA
 | RAK2287-AY | √               | √                    | √                   |               | √             |
 | RAK2287-CY | √               | √                    |                     |               | √             |
 
-
 ## Certification
 
 <rk-certifications :params="$page.frontmatter.certifications" />

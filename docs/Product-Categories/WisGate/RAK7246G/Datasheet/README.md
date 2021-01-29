@@ -354,7 +354,6 @@ The RAK2246 is able to receive on different frequency channels at the same time 
 <rk-img
   src="/assets/images/wisgate/rak7246g/datasheet/systems-network-approach/f333yrqj2l328fhmkpaf.png"
   width="70%"
-  figure-number="10"
   caption="System Architecture"
 />
 

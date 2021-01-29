@@ -106,8 +106,8 @@ The hardware specification is categorized into six parts. It discusses the pinou
 #### Pin Definition
 
 <rk-img
-  :src="`${$frontmatter.static_root}/pin-definition.png`"
-  width="75%"
+  :src="`${$frontmatter.static_root}/pin-definition.svg`"
+  width="50%"
   caption="RAK8212 Pin Definition"
 />
 

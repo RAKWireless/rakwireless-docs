@@ -62,7 +62,7 @@ Once done, follow the listed steps to interface your RAK7200 with your computer.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/interfacing-with-rak7200/1.interfacing-rak7200.png"
-  width="40%"
+  width="55%"
   caption="RAK7200 Module Connection"
 />
 
