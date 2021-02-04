@@ -199,7 +199,7 @@ level and current consumption.
 | **Parameter**                         | **Condition**           | **Min**  | **Typical** | **Max**  |
 | ------------------------------------- | ----------------------- | -------- | ----------- | -------- |
 | Frequency Range                       |                         | 863 MHz  |             | 870 MHz  |
-| Modulation Techniques                 | FSK/LoRa               |          |             |          |
+| Modulation Techniques                 | FSK/LoRa                |          |             |          |
 | TX Frequency Variation vs Temperature | Power Level Setting: 20 | -3 Khz   |             | +3 Khz   |
 | TX Power Variation vs. Temperature    |                         | -5 dBm   |             | +5 dBm   |
 | TX Power Variation                    |                         | -1.5 dBm |             | +1.5 dBm |
@@ -267,6 +267,18 @@ The table below shows the operation temperature range.
 | **Parameter**                    | **Min** | **Typical** | **Max** | **Remarks**                                                                         |
 | -------------------------------- | ------- | ----------- | ------- | ----------------------------------------------------------------------------------- |
 | **Normal Operating Temperature** | -40°C   | +25°C       | +85°C   | Normal operating temperature range (fully functional and meets 3GPP specifications) |
+
+
+### Software
+
+Download the latest firmware of RAK2245 Stamp in the table provided below.
+
+#### Firmware
+
+| **Model**     | **Source**                                                                                       |
+| ------------- | ------------------------------------------------------------------------------------------------ |
+| RAK2245 Stamp | [Download](https://downloads.rakwireless.com/LoRa/RAK2245/Firmware/RAK2245_Lastest_Firmware.zip) |
+
 
 ## Certification
 

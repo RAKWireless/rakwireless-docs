@@ -36,7 +36,7 @@ LoRa module for Smart City, Smart Agriculture, Smart Industry
 - Frequency range: **863–923 MHz** (entire LoRa high band spectrum)
 - Low-Power Wireless Systems with 7.8kHz to 500KHz Bandwidth
 - LoRa Tx power up to **19dBm**
-- Ultra-Low Power Consumption ** 11.8 uA in sleep mode**
+- Ultra-Low Power Consumption ** 1.5 uA in sleep mode**
 - Core: **ARM 32-bit Cortex M0+** with MPU
 - Up to 128KB flash memory with ECC
 - 20KB RAM
@@ -126,7 +126,7 @@ The pin definitions of RAK4200 Breakout Board are shown in the following tables 
 | 5   | SWDIO    | I/O | Programming (STM32L071 PA13)                    | SWDIO, LPUART1_RX                                                            |
 | 6   | SWCLK    | I/O | Programming (STM32L071 PA14)                    | SWCLK, USART2*TX, LPUART1* TX                                                |
 | 7   | I2C_SCL  | I/O | I2C interface (STM32L071 PB6)                   | USART1*TX, I2C1* SCL, LPTIM1_ETR, COMP2_INP                                  |
-| 8   | I2C_SDA  | I/O | I2C interface (STM32L071 PB6)                   | USART1*RX, I2C1* SDA, LPTIM1_IN2, USART4_CTS, COMP2_INP, VREF_PVD_IN         |
+| 8   | I2C_SDA  | I/O | I2C interface (STM32L071 PB7)                   | USART1*RX, I2C1* SDA, LPTIM1_IN2, USART4_CTS, COMP2_INP, VREF_PVD_IN         |
 
 ##### J2 Pin Definitions
 

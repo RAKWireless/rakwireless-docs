@@ -304,7 +304,7 @@ The table below lists the operation and storage temperature requirements:
 
 | **Model** | **Raspberry Pi Board** | **Firmware Version** | **Source** |
 | --------- | ---------------------- | -------------------- | ---------- |
-| RAK7248   | Raspberry Pi 4         |     4.2.5R                 |   [Download](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Firmware/RAK2287_Latest_Firmware.zip)         |
+| RAK7248   | Raspberry Pi 4         |     4.2.5R                 |   [Download](https://downloads.rakwireless.com/LoRa/RAK7248/Firmware/RAK7248_Latest_Firmware.zip)         |
 
 #### LoRaWAN
 

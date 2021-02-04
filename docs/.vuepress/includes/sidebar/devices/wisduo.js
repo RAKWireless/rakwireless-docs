@@ -346,9 +346,6 @@ module.exports = {
     nested: true,
     download: true,
     sidebarDepth: 4,
-    children: [
-      ['/Product-Categories/WisDuo/RAK4600-Module/Quickstart/', 'Getting Started']
-    ]
   },
   {
     title: 'Low Level Development',

@@ -27,7 +27,7 @@ Thank you for choosing **RAK4200 WisDuo LPWAN Module** in your awesome IoT Proje
 
 **RAK4200 WisDuo LPWAN Module** includes an STM32L071 MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumption of 1.5&nbsp;uA in sleep mode and high LoRa output power up to 19&nbsp;dBm max in work mode.
 
-The module complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P Point to Point communications. The module is suitable for various applications that require long range data acquisition and low power consumption.
+The module complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P Point to Point communications. The module is suitable for various applications that require long-range data acquisition and low power consumption.
 
 <!-- <rk-btn
   src="../Datasheet/"
@@ -41,7 +41,7 @@ The module complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P 
 - LoRa module for Smart City, Smart Agriculture, Smart Industry
 - **Compact Form Factor**: 15 x 15.5 x 2.5&nbsp;mm
 - 20 Pin Stamp Pad for PCB SMT mounting
-- **I/O ports**: UART/I2C/GPIO
+- **I/O ports**: UART/I2C/GPIO/ADC
 - **Temperature range**: -40&nbsp;°C to +85&nbsp;°C
 - **Supply voltage**: 2.0 ~ 3.6&nbsp;V
 - **Frequency range**: 863–870&nbsp;MHz (EU) / 902–928&nbsp;MHz (US), ISM and SRD systems

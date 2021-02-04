@@ -1430,11 +1430,11 @@ A summary of the pins of the RAK4270 module:
     
     - Pin 4 (TX1) and  Pin 5 (RX1) are reserved for UART1.
     - Pin 2 (TX2) and Pin 1 (RX2) are reserved for UART2.
-    - During sleep, Pin 5 (RX1) and Pin 1 (RX2) are configured as external interrupt mode, internal pull-down resistor, rising edge trigger wake-up.
+    - During sleep, Pin 5 (RX1) and Pin 1 (RX2) are configured as external interrupt mode, an internal pull-down resistor, and rising edge trigger wake-up, respectively.
 
 2. **About the SWD Debug Pin**: Pin 7 (SWDIO) and Pin 8 (SWCLK) are used for SWD debug port.
    
-3. **About the Power Pin**: The power pin on the RAK4270 module includes: VCC/GND, Pin 11, Pin 13, Pin 14, Pin 19, and Pin 20.
+3. **About the Power Pin**: The power pin on the RAK4270 module includes VCC on Pin 20 and GND on Pin 11, Pin 13, Pin 14, and Pin 19.
 
 4. **About the Reset Pin**: The reset pin on the RAK4270 module is Pin 18.
    

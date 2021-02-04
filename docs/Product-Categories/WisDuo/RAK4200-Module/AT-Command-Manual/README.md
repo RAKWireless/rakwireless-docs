@@ -10,39 +10,63 @@ next: ../Low-Level-Development/
 
 ### Introduction
 
-The RAK4200 module is designed to simplify LoRa P2P peer to peer and LoRaWAN communication. This module saves customers to deal with complicated SPI protocol with the LoRa transceivers and instead, a well-known serial communication interface is provided for sending commands and requesting internal status of the module. This approach allows a straightforward way to integrate LoRa technology into your projects.
+The RAK4200 module is designed to simplify LoRa P2P peer to peer and LoRaWAN communication. This module saves you in dealing with complicated SPI protocol with the LoRa transceivers. Instead, a well-known serial communication interface is provided for sending commands and requesting the internal status of the module. This approach allows a straightforward way to integrate LoRa technology into your projects.
 
-On top of this serial interface a set of AT commands are defined, an external micro controller will be able to control the RAK4600 module as a classic AT modem. Through the AT commands, customers can set parameters of the LoRaWAN communication, controlling GPIO pins, analog inputs, etc.
+On top of this serial interface, a set of AT commands are defined. An external micro controller will be able to control the RAK4200 module as a classic AT modem. Through the AT commands, you can set parameters of the LoRaWAN communication, controlling GPIO pins, analog inputs, etc.
 
-In the RAK4200 module, the serial communication is exposed on the UART1 port, through the pin 4 (UART1_TX) and pin 5 (UART1_RX). The parameters of the UART1 communication are: 115200 / 8-N-1. The firmware upgrade is also possible through this port. In order to get familiar with the pin distribution of this module and find a schematic circuit of a reference application, please refer to the "RAK4200 Specification Manual". We provide a summary in the Appendix IV.
+In the RAK4200 module, the serial communication is exposed on the UART1 port, through pin 4 (UART1_TX) and pin 5 (UART1_RX). The parameters of the UART1 communication are **115200** / **8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to [RAK4200 Datasheet](../Datasheet/). A summary is also provided in the Appendix IV.
 
-In addition, the RAK4200 module also exposes another serial port through the pin 2 (UART2_TX) and pin 1 (UART2_RX). This port is named as UART2. You can use it to connect another MCU or an additional UART peripheral such as a GPS module.
+In addition, the RAK4200 module also exposes another serial port through pin 2 (UART2_TX) and pin 1 (UART2_RX). This port is named UART2. You can use it to connect another MCU or an additional UART peripheral, such as a GPS module.
 
-UART2 is PIN2 (TX2) and PIN1 (RX2) on modules.
-
-In the case that the target application only requires one single UART port, then it is recommended that the customer to make use of the UART2 to connect to the customer’s MCU and reserved the UART1 for future firmware upgrade.
+UART2 is PIN2 (TX2) and PIN1 (RX2) on modules. In the case that the target application only requires one single UART port, then it is recommended to make use of the UART2 to connect to your MCU and reserved the UART1 for future firmware upgrade.
 
 ### AT Command Syntax
 
 The AT command is based on ASCII characters. A command begins with the prefix `at` and ends with `<CR><LF>` (i.e. `\r\n`). The maximum length is 255 characters which includes the `<CR><LF>` characters at the end of the command. For the rest of the document, the `\r\n` part is omitted for the sake of clarity.
-The AT commands can be classified in the following groups:
 
-- Read Command `at+get_config=<m>:<n>`
-  Reads the current configuration or status of the module. The command name and the list of parameters are separated by "=" character. The `<m>` parameter is separated with its associated value `<n>` by the ":" character.
-- Write Command – `at+set_config=<m>:<n>`
-  Writes/modifies the current configuration of the module. The command name and the list of parameters are separated by "=" character. The `<m>` parameter is separated with its associated value `<n>` by the ":" character.
-- Operational Commands - There are also commands that are neither read nor write commands. The purpose is to execute an action, for example: `at+send=lora:<m>:<n>`, will send data through the LoRa transceiver.
-- Special Command — The RAK4200 UART port has two operational modes: configuration mode and data transmission mode. When switching from data transmission mode to configuration mode the command to be entered is "+++" and does not contain terminators such as '\r' and '\n'.
+The AT commands can be classified into the following groups:
+
+- **Read Command**: Reads the current configuration or status of the module. The command name and the list of parameters are separated by the "=" character. The `<m>` parameter is separated with its associated value `<n>` by the ":" character.
+
+```
+`at+get_config=<m>:<n>`
+```
+
+- **Write Command** 
+  Writes/modifies the current configuration of the module. The command name and the list of parameters are separated by the "=" character. The `<m>` parameter is separated with its associated value `<n>` by the ":" character.
+
+```
+`at+set_config=<m>:<n>`
+```
+
+- **Operational Command**: Some commands are neither read nor write commands.  
+
+Example: 
+```
+at+send=lora:<m>:<n>
+```
+
+The purpose is to execute an action. This will send data through the LoRa transceiver.
+
+
+- **Special Command**: The RAK4200 UART port has two operational modes: Configuration Mode and Data transmission Mode. When switching from data transmission mode to configuration mode the command to be entered is "+++" and does not contain terminators such as '\r' and '\n'.
 
 After the command is executed by the module, a reply is sent back to the external MCU. In the case the command was successful, the usual reply has the following format:
 
-`OK [information]\r\n`
+```
+OK [information]\r\n
+```
 
-Note that only Read commands have information in the replied message, while Write commands do not have an informative description. The firmware developed by the customer, running in the external MCU, will expect at minimum a string of "Ok\r\n" after sending a successful command to the module. In the other hand, when the command is not successfully executed by the module. A reply with will be received in the following format:
+:::tip 📝 NOTE:
+Only Read commands have information in the replied message, while Write commands do not have an informative description.
+:::
 
-`ERROR: [ErrCode]\r\n`
+The firmware you developed, running in the external MCU, will expect at a minimum a string of `Ok\r\n` after sending a successful command to the module. On the other hand, when the command is not successfully executed by the module, a reply will be received in the following format:
 
-The error codes are shown in the following section:
+```
+ERROR: [ErrCode]\r\n
+```
+
 
 ### Error Code Table
 
@@ -53,14 +77,14 @@ The error codes are shown in the following section:
 | 3          | There is an error when reading or writing the flash memory.                                                                                                                 |
 | 5          | There is an error when sending data through the UART port.                                                                                                                  |
 | 80         | The LoRa transceiver is busy, could not process a new command.                                                                                                              |
-| 81         | LoRa service is unknown. Unknown MAC command received by node. Execute commands that are not supported in the current state, such as sending "at+join" command in P2P mode. |
+| 81         | LoRa service is unknown. Unknown MAC command received by node. Execute commands that are not supported in the current state, such as sending `at+join` command in P2P mode. |
 | 82         | The LoRa parameters are invalid.                                                                                                                                            |
 | 83         | The LoRa frequency is invalid.                                                                                                                                              |
 | 84         | The LoRa data rate (DR) is invalid.                                                                                                                                         |
 | 85         | The LoRa frequency and data rate are invalid.                                                                                                                               |
 | 86         | The device hasn’t joined into a LoRa network.                                                                                                                               |
 | 87         | The length of the packet exceeded that maximum allowed by the LoRa protocol.                                                                                                |
-| 88         | Service is closed by the server. Due to the limitation of duty cycle, the server will send " SRV_MAC_DUTY_CYCLE_REQ" MAC command to close the service.                      |
+| 88         | Service is closed by the server. Due to the limitation of duty cycle, the server will send "SRV_MAC_DUTY_CYCLE_REQ" MAC command to close the service.                      |
 | 89         | This is an unsupported region code.                                                                                                                                         |
 | 90         | Duty cycle is restricted. Due to duty cycle, data cannot be sent at this time until the time limit is removed.                                                              |
 | 91         | No valid LoRa channel could be found.                                                                                                                                       |
@@ -72,11 +96,11 @@ The error codes are shown in the following section:
 | 97         | There is an error while receiving a packet during the LoRa RX1 window.                                                                                                      |
 | 98         | There is an error while receiving a packet during the LoRa RX2 window.                                                                                                      |
 | 99         | Failed to join into a LoRa network.                                                                                                                                         |
-| 100        | Duplicated down-link message detected. A message with an invalid down-link count was received.                                                                              |
+| 100        | Duplicate downlink message is detected. A message with an invalid downlink count is received.                                                                              |
 | 101        | Payload size is not valid for the current data rate (DR).                                                                                                                   |
-| 102        | There many down-link packets were lost.                                                                                                                                     |
+| 102        | Many downlink packets are lost.                                                                                                                                     |
 | 103        | Address fail. The address of the received packet does not match the address of the current node.                                                                            |
-| 104        | Invalid MIC was detected in the LoRa message.                                                                                                                               |
+| 104        | Invalid MIC is detected in the LoRa message.                                                                                                                               |
 
 ## General AT Command
 
@@ -1333,11 +1357,21 @@ The pin definition of the RAK4200 module can be reviewed [here](../Datasheet/).
 
 A summary of the pins of the RAK4200 module:
 
-- About the UART pins: Pin 4(UART1_TX) and pin 5 (UART1_RX) are reserved for UART1.
- Pin 2 (UART2_TX) and pin 1 (UART2_RX) are reserved for UART2.
-  During sleep, pin 5 and pin 1 are configured as external interrupt mode, internal pull-down resistor, rising edge trigger wake-up.
-- About the SWD debug pin : Pin 7 (SWDIO) and pin 8 (SWCLK) are used for SWD debug port.
-- About the power pins: The power pins on the RAK4200 module includes: Pin 20 is VDD pin. Pins 11,13, 14, 15, 19 are GND pins.
-- About the reset pin. The reset pin on the RAK4200 module is pin 18;
-- About the RF antenna pin. The RF antenna pin on RAK4200 module is PIN 12;
-- About the ADC pin. The ADC pin on RAK4200 is PIN 3;
+1. **About the UART Pin**:
+    
+    - Pin 4 (TX1) and  Pin 5 (RX1) are reserved for UART1.
+    - Pin 2 (TX2) and Pin 1 (RX2) are reserved for UART2.
+    - During sleep, Pin 5 (RX1) and Pin 1 (RX2) are configured as external interrupt mode, an internal pull-down resistor, and rising edge trigger wake-up, respectively.
+
+2. **About the SWD Debug Pin**: Pin 7 (SWDIO) and Pin 8 (SWCLK) are used for SWD debug port.
+   
+3. **About the Power Pin**: The power pin on the RAK4200 module includes VCC on Pin 20 and GND on Pin 11, Pin 13, Pin 14, and Pin 19.
+
+4. **About the Reset Pin**: The reset pin on the RAK4200 module is Pin 18.
+   
+5. **About the RF Antenna Pin**: The RF antenna pin on the RAK4200 module is the Pin 12.
+   
+6. **About the ADC Pin**: The ADC pin on the RAK4200 is assigned to the Pin 3.
+   
+7. **About the GPIO pin**: The GPIO pin available on the RAK4200 module are: Pin 3, Pin 6, Pin 9, and Pin 10.
+

@@ -18,9 +18,9 @@ Thank you for choosing **RAK4270 WisDuo LPWAN Module** in your awesome IoT Proje
 
 ## Product Description
 
-The RAK4270 LoRa Module includes an **STM32L071 MCU** and an **SX1262** LoRa chip, which supports 8 spreading factors (SF5 ~ SF12) and signal bandwidth that can be adjusted between 7.8&nbsp;kHz to 500&nbsp;kHz. It has an ultra-low power consumption of 1.08&nbsp;uA in Sleep Mode, but during the Transmit mode, it can reach the maximum output power of 22&nbsp;dBm. As a receiver, it can achieve a sensitivity of -148&nbsp;dBm.
+The RAK4270 LoRa Module includes an **STM32L071 MCU** and an **SX1262** LoRa chip, which supports eight spreading factors (SF5 ~ SF12) and signal bandwidth that can be adjusted between 7.8&nbsp;kHz to 500&nbsp;kHz. It has an ultra-low power consumption of 1.08&nbsp;uA in Sleep Mode, but during the Transmit Mode, it can reach the maximum output power of 22&nbsp;dBm. As a receiver, it can achieve a sensitivity of -148&nbsp;dBm.
 
-The module complies with Class A and C of LoRaWAN 1.0.2 specifications, so it can be used for implementing LoRaWAN or Lora point to point (P2P) communications. The module is suitable for various applications that require long-range data acquisition and low power consumption, such as smart meters, supply chain and logistics tracking, agricultural sensors, and smart cities.
+The module complies with Class A and C of LoRaWAN 1.0.2 specifications, and it also supports LoRa Point to Point (P2P) communications. The module is suitable for various applications that require long-range data acquisition and low power consumption, such as smart meters, supply chain and logistics tracking, agricultural sensors, and smart cities.
 
 You can configure the mode and operation of the RAK4270 module using [RAK4270 AT Commands](/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/) via a UART interface. Also, it offers low power features which is very suitable for battery powered applications.
 
@@ -29,7 +29,7 @@ You can configure the mode and operation of the RAK4270 module using [RAK4270 AT
 - LoRa module is suitable for applications in Smart City, Smart Agriculture, Smart Industry
 - Compact form factor: **15 x 15.5 x 2.5&nbsp;mm** (LxWxH)
 - 20 pin stamp pad for PCB SMT board-to-board soldering
-- I/O ports: **UART/I2C/GPIO**
+- I/O ports: **UART/I2C/GPIO/ADC**
 - AT commands control interface
 - Temperature range: **-30&nbsp;°C to +85&nbsp;°C**
 - Supply voltage: **2.0 to 3.6&nbsp;V**

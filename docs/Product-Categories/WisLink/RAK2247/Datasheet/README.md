@@ -293,8 +293,8 @@ The figure below shows the minimum application schematic of the RAK2247 card. Yo
 
 | Model         | Raspberry Pi Board  | Firmware Version | Source                                                                                                            |
 | ------------- | ------------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------- |
-| RAK2247 - SPI | Raspberry Pi 3B+, 4 | V4.2.5R          | [Download](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Firmware/RAK2247-SPI_Latest_Firmware.zip) |
-| RAK2247 - USB | Raspberry Pi 3B+, 4 | V4.2.5R          | [Download](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Firmware/RAK2247-USB_Latest_Firmware.zip) |
+| RAK2247 - SPI | Raspberry Pi 3B+, 4 | V4.2.5R          | [Download](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Firmware/RAK2247_spi_Latest_Firmware.zip) |
+| RAK2247 - USB | Raspberry Pi 3B+, 4 | V4.2.5R          | [Download](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Firmware/RAK2247_usb_Latest_Firmware.zip) |
 
 ## Models / Bundles
 
