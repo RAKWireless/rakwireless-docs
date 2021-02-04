@@ -14,6 +14,7 @@ Thank you for choosing **RAK2287 WisLink LPWAN Concentrator** in your awesome Io
 * [RAK2287 + Raspberry Pi Source Code Repository](https://github.com/RAKWireless/rak_common_for_gateway)
 * [RAK2287 + Raspberry Pi ready to flash Firmware](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Firmware/RAK2287_Latest_Firmware.zip)
 * [RAK2287 3D Model](https://downloads.rakwireless.com/3D_File/WisLink/PWB-RAK2287.stp)
+* [RAK2287 + Raspberry Pi Basics Station with balena.io](https://github.com/balenalabs/basicstation) 
 
 <!-- <rk-img
   src="/assets/images/wislink-lora/rak2287/datasheet/overview/aprgtyyf6arxkxu7rjyl.jpg"
