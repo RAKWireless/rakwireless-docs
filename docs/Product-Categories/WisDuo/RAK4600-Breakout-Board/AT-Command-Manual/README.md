@@ -5,7 +5,7 @@ tags:
    - RAK4600 Breakout Board
 ---
 
-# AT Command Manual
+# RAK4600 Breakout Board AT Command Manual
 
 ## Introduction
 
@@ -13,33 +13,36 @@ The RAK4600 Breakout Board is designed to simplify LoRa P2P (peer to peer) and L
 
 On top of this serial interface, a set of AT commands is defined wherein an external microcontroller will be able to control the RAK4600 Breakout Board as a classic AT modem. Through the AT commands, you can set parameters of the LoRaWAN communication, control the GPIO pins and analog inputs, etc. 
 
-In the RAK4600 Breakout Board, the serial communication is exposed on the UART1 port, through the J7 connector pin 1 (USART1_RX) and pin 2 (USART1_TX). The parameters of the USART1 communication are 115200 / 8-N-1. The firmware upgrade is also possible through this port. Refer to [RAK4600 Breakout Board Datasheet](../Datasheet/) for pin distribution and schematic of RAK4600 Breakout Board. 
+In the RAK4600 Breakout Board, the serial communication is exposed on the UART1 port, through the J7 connector Pin 1 (USART1_RX) and Pin 2 (USART1_TX). The parameters of the USART1 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. Refer to [RAK4600 Breakout Board Datasheet](../Datasheet/) for pin distribution and schematic of RAK4600 Breakout Board. 
 
 In addition, the RAK4600 Breakout Board also supports BLE. You can use your mobile phone to communicate with the RAK4600 Breakout Board via BLE interface, or you can use the board to scan the surrounding Bluetooth beacon information. Refer to [Bluetooth Connection Modes](/Product-Categories/WisDuo/RAK4600-Breakout-Board/Quickstart/#bluetooth-connection-modes).
 
 ### AT Command Syntax
 
-The AT command is based on ASCII characters. A command begins with the prefix “`at`” and ends with `<CR><LF>` (i.e. \r\n). The maximum length is 255 characters which includes the `<CR><LF>` characters at the end of the command. For the rest of the document, the "\r\n" part is omitted for the sake of clarity.
+The AT command is based on ASCII characters. A command begins with the prefix `at` and ends with `<CR><LF>` (i.e. \r\n). The maximum length is **255 characters** which includes the `<CR><LF>` characters at the end of the command. For the rest of the document, the `\r\n` part is omitted for the sake of clarity.
 
 The AT commands can be classified into the following groups:
 
-*	**Read Command**: Reads the current configuration or status of the board. The command name and the list of parameters are separated by “=” character. The `<m>` parameter is separated with its associated value `<n>` by the “:” character.
+* **Read Command**: Reads the current configuration or status of the board. The command name and the list of parameters are separated by `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character.
+  
 ```
 at+get_config=<m>:<n>
 ```
-*	**Write Command**: Writes/Modifies the current configuration of the board. The command name and the list of parameters are separated by “=” character. The `<m>` parameter is separated with its associated value `<n>` by the “:” character.
+
+* **Write Command**: Writes/Modifies the current configuration of the board. The command name and the list of parameters are separated by `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character.
+  
 ```
 at+set_config=<m>:<n>
 ```
-*	**Operational Commands**: Some commands are neither read nor write commands. 
 
-Example: 
-```
-at+send=lora:<m>:<n>
-```
-The purpose is to execute an action. This will send data through the LoRa transceiver. 
+* **Operational Commands**: Some commands are neither read nor write commands but are used to execute an action.
 
-*	**Special Command**: The RAK4600 UART port has two operational modes: configuration mode and data transmission mode. When switching from data transmission mode to configuration mode, the command to be entered is “+++” and does not contain terminators such as ‘\ r’ and ‘\ n’.
+
+```
+at+send=lora:<m>:<n> // Sends data through the LoRa transceiver.
+```
+
+* **Special Command**: The RAK4600 UART port has two operational modes: **Configuration Mode** and **Data Transmission Mode**. When switching from data transmission mode to configuration mode, the command to be entered is `+++` and does not contain terminators such as `\ r` and `\ n`.
 
 After the command is executed by the board, a reply is sent back to the external MCU. In the case the command is successful, the usual reply has the following format:
 
@@ -51,7 +54,7 @@ OK [information]\r\n
 Only Read commands have information in the replied message, while Write commands do not have an informative description. 
 :::
 
-The firmware you developed, running in the external MCU, will expect at a minimum a string of “Ok\r\n” after sending a successful command to the board. On the other hand, when the command is not successfully executed by the board, a reply will be received in the following format:
+The firmware you developed, running in the external MCU, will expect at a minimum a string of `Ok\r\n` after sending a successful command to the board. On the other hand, when the command is not successfully executed by the board, a reply will be received in the following format:
 
 ```
 ERROR: [Err Code]\r\n
@@ -168,7 +171,7 @@ ERROR: [Err Code]\r\n
         </tr>
         <tr>
             <td>100</td>
-            <td>Duplicated downlink message detected. A message with an invalid downlink count is received.</td>
+            <td>Duplicate downlink message is detected. A message with an invalid downlink count is received.</td>
         </tr>
         <tr>
             <td>101</td>
@@ -176,7 +179,7 @@ ERROR: [Err Code]\r\n
         </tr>
         <tr>
             <td>102</td>
-            <td>There many downlink packets were lost.</td>
+            <td>Many downlink packets are lost.</td>
         </tr>
         <tr>
             <td>103</td>
@@ -184,7 +187,7 @@ ERROR: [Err Code]\r\n
         </tr>
         <tr>
             <td>104</td>
-            <td>Invalid MIC was detected in the LoRa message.</td>
+            <td>Invalid MIC is detected in the LoRa message.</td>
         </tr>
 </tbody>
 </table>
@@ -195,9 +198,9 @@ ERROR: [Err Code]\r\n
 
 This command is used to get the current firmware version number.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Read|`at+version`|`OK <version number>`|
+| Operation | Command      | Response              |
+| --------- | ------------ | --------------------- |
+| Read      | `at+version` | `OK <version number>` |
 
 **Parameter**: None
 
@@ -207,13 +210,16 @@ at+version\r\n
 OK V3.3.0.14
 ```
 
+<br>
+
+
 2. <b>at+help</b>
 
-This command is used to list all the available AT commands supported by the current firmware.
+This command is used to obtain all the AT commands supported by the current firmware.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Read|`at+help`|`OK <all AT commands>`|
+| Operation | Command   | Response               |
+| --------- | --------- | ---------------------- |
+| Read      | `at+help` | `OK <all AT commands>` |
 
 **Parameter**: None
 
@@ -267,13 +273,15 @@ BLE AT commands:
   at+set_config=ble:work_mode:X:Y
 ```
 
+<br>
+
 3. <b>at+set_config=device:restart</b>
 
 This command is used to restart the device.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=device:restart`||
+| Operation | Command                        | Response |
+| --------- | ------------------------------ | -------- |
+| Write     | `at+set_config=device:restart` |          |
 
 **Parameter**: None
 
@@ -284,15 +292,19 @@ UART1 work mode: RUI_UART_NORMAL
 Current work_mode:LoRaWAN, join_mode:ABP, Class: A
 Initialization OK
 ```
+
+<br>
+
 4. <b>at+set_config=device:sleep:`<status>`</b>
 
 This command is used to change the current state of the device between the sleep and the wake-up mode.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=device:sleep:<status>`|`OK <STATUS>`|
+| Operation | Command                               | Response      |
+| --------- | ------------------------------------- | ------------- |
+| Write     | `at+set_config=device:sleep:<status>` | `OK <STATUS>` |
 
 **Parameter**:
+
 <table style="text-align: left">
 <tbody>
         <tr>
@@ -310,14 +322,19 @@ OK Sleep
 at+set_config=device:sleep:0\r\n 
 OK Wake Up
 ```
+
+<br>
+
 5. <b>at+get_config=device:status</b>
 
-This command is used to obtain the information about your RAK product.
+This command is used to obtain the current status of the device.
 
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Read|`at+get_config=device:status`|`OK <information>`|
+| Operation | Command                       | Response           |
+| --------- | ----------------------------- | ------------------ |
+| Read      | `at+get_config=device:status` | `OK <information>` |
+
+
 
 **Parameter**: None
 
@@ -328,17 +345,18 @@ OK Board Core:RAK4600
 MCU:nRF52832
 LoRa chip:SX1276
 ```
+
 ## Interface Type AT Command
 
 1. <b>at+set_config=device:uart:`<index>:<baud_rate>`</b>
 
 This command is used to configure the baud rate for a UART port.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=device:uart:<index>:<baud_rate>`|`OK`|
+| Operation | Command                                         | Response |
+| --------- | ----------------------------------------------- | -------- |
+| Write     | `at+set_config=device:uart:<index>:<baud_rate>` | `OK`     |
 
-Parameter：
+**Parameter**：
 
 <table style="text-align: left">
 <tbody>
@@ -348,18 +366,27 @@ Parameter：
         </tr>
         <tr>
             <td>baud_rate</td>
-            <td>UART Baud rate:<br>1200,2400,4800,9600,19200,38400,57600,115200</td>
+            <td>UART Baud rate:<br>1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200</td>
         </tr>
 </tbody>
 </table>
+
+**Example**:
+
+```
+at+set_config=device:uart:1:115200\r\n
+OK
+```
+
+<br>
 
 2. <b>at+set_config=device:uart_mode:`<index>:<mode>`</b>
 
 This command is used to set the UART operation between the AT configuration mode and the data transmission mode.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=device:uart_mode:<index>:<mode>`|`OK`|
+| Operation | Command                                         | Response |
+| --------- | ----------------------------------------------- | -------- |
+| Write     | `at+set_config=device:uart_mode:<index>:<mode>` | `OK`     |
 
 **Parameter**：
 
@@ -371,10 +398,16 @@ This command is used to set the UART operation between the AT configuration mode
         </tr>
         <tr>
             <td>mode</td>
-            <td>UART Mode： Only ‘1’ can be selected, which means the UART is set to data transmission mode. <br><br>Note：To switch from data transmission mode to configuration mode, use “+++” (+++ without\ r\ n).</td>
+            <td>UART Mode： Only ‘1’ can be selected, which means the UART is set to data transmission mode. </td>
         </tr>
 </tbody>
 </table>
+
+:::tip 📝 NOTE: 
+
+To switch from data transmission mode to configuration mode, use `+++` (`+++` without `\ r\ n`).
+
+:::
 
 **Example**:
 ```
@@ -390,9 +423,9 @@ OK
 
 This command is used to join a LoRaWAN network. 
 
-|Operation|Command|Response|
-|---------|-------|--------|
-||`at+join`|OK Join Success|
+| Operation | Command   | Response        |
+| --------- | --------- | --------------- |
+|           | `at+join` | OK Join Success |
 
 **Parameter**: None
 
@@ -401,13 +434,16 @@ This command is used to join a LoRaWAN network.
 at+join\r\n
 OK Join Success
 ```
+
+<br>
+
 2. <b>at+send=lora:`<port>:<data>`</b>
 
 This command is used to send data via LoRaWAN.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-||`at+send=lora:<port>:<data>`|OK|
+| Operation | Command                      | Response |
+| --------- | ---------------------------- | -------- |
+|           | `at+send=lora:<port>:<data>` | OK       |
 
 **Parameter**：
 
@@ -419,7 +455,7 @@ This command is used to send data via LoRaWAN.
         </tr>
         <tr>
             <td>data</td>
-            <td>The sending data format is in hexadecimal format. The possible values are between 00-FF. The board internally will cast every two characters into a byte before sending it to the LoRa transceiver. The maximum length varies depending on the band frequency and DR (LoRaWAN standard). Refer to Appendix III.</td>
+            <td>The sending data format is in hexadecimal format. The possible values are between **00-FF**. The board internally will cast every two characters into a byte before sending it to the LoRa transceiver. The maximum length varies depending on the band frequency and DR (LoRaWAN standard). Refer to <a href="/Product-Categories/WisDuo/RAK4600-Module/AT-Command-Manual/#appendix-iii：maximum-transmission-load-by-region" >Appendix III</a>.</td>
         </tr>
 </tbody>
 </table>
@@ -436,26 +472,30 @@ When sending data as confirmed uplink:
 OK
 at+recv=0,-105,-12,0
 ```
-:::tip 📝 NOTE:
-When sending a confirmed message, you will receive an ACK response: “at+recv=...” in “0, -105, -12,0".
 
-* 0 stands for the LoRa port
-* -105 stands for the RSSI
-* -12 stands for the SNR
-* 0 stands for the length of the data (no valid data in ACK).
-::::
+::: tip 📝 NOTE
 
-:::tip 📝 NOTE:
-When sending an unconfirmed message, sometimes the gateway will send MAC commands to nodes, and the node will also receive "at+recv=...".
+* When sending a confirmed message, you will receive an ACK response, i.e. `at+recv=...`. 
+The `0, -105, -12,0` stands for:
+  * `0`: For the LoRa port;
+  * `-105`: For the RSSI;
+  * `-12`: For the SNR;
+  * `0`: For the length of the data (no valid data in ACK).
+
+
+* When sending an unconfirmed message, sometimes the gateway will send MAC commands to nodes, and the node will also receive `at+recv=...`.
+  
 :::
+
+<br>
 
 3. <b>at+set_config=lora:region:`<region>`</b>
 
 This command is used to set the appropriate working frequency band.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:region:<region>`|OK|
+| Operation | Command                              | Response |
+| --------- | ------------------------------------ | -------- |
+| Write     | `at+set_config=lora:region:<region>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -472,44 +512,51 @@ This command is used to set the appropriate working frequency band.
 at+set_config=lora:region:EU868\r\n                         
 OK
 ```
+
 :::tip 📝 NOTE:
 In the AS923 frequency band, the supported frequency plan is "as2" and the dwell time is set to 1.
 :::
 
+<br>
+
 4. <b>at+get_config=lora:channel</b>
 
-This command is used for reading all the LoRa channel information for the device's current region.
+This command is used to read all the LoRa channel information given the current region configured on the board.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Read|`at+get_config=lora:channel`|`OK <channel information>`|
+| Operation | Command                      | Response                   |
+| --------- | ---------------------------- | -------------------------- |
+| Read      | `at+get_config=lora:channel` | `OK <channel information>` |
 
 **Parameter**：None
 
-**Example**：
+**Example**：EU868 Region
+
 ```
 at+get_config=lora:channel\r\n                         
 OK *0,on,868100000,0,5; *1,on,868300000,0,5; *2,on,868500000,0,5; 3,off,0,0,0; 4,off,0,0,0; 5,off,0,0,0; 6,off,0,0,0; 7,off,0,0,0; *8,on,867100000,0,5; *9,on,867300000,0,5; *10,on,867500000,0,5; *11,on,867700000,0,5; *12,on,867900000,0,5; 13,off,0,0,0; 14,off,0,0,0; 15,off,0,0,0 
 
 ```
-:::tip 📝 NOTE:
+::: tip 📝 NOTE
 
-With "***0,on,868100000,0,5**" as an example，the channel parameter analysis:
+With <b>*0,on,868100000,0,5</b> as an example，the following is the channel parameter analysis:
 
-* `*` - at the beginning if the channel is open;
-* 0 - is the channel ID;
-* on - indicates the current status of the channel;
-* 868100000 - is the actual frequency of the channel，unit is Hz;
-* 0,5 - indicates the DR of the channel, DR0~DR5.
+- `*` at the beginning if the channel is open;
+- `0` is the channel ID;
+- `on` indicates the current status of the channel;
+- `868100000` is the actual frequency of the channel，unit is Hz;
+- `0,5` indicates the DR of the channel, DR0~DR5.
+
 :::
+
+<br>
 
 5. <b>at+set_config=lora:ch_mask:`<channel_number>:<status>`</b>
 
-This command is used to turn on or off a channel in the current region. 
+This command is used to enable (on) or disable (off) a channel in the current region.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:ch_mask:<channel_number>:<status>`|OK|
+| Operation | Command                                                | Response |
+| --------- | ------------------------------------------------------ | -------- |
+| Write     | `at+set_config=lora:ch_mask:<channel_number>:<status>` | OK       |
 
 **Parameter**：
 
@@ -532,13 +579,15 @@ at+set_config=lora:ch_mask:0:0\r\n
 OK
 ```
 
+<br>
+
 6. <b>at+set_config=lora:dev_eui:`<dev_eui>`</b>
 
 This command is used to set the Device EUI parameter for LoRaWAN OTAA mode.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:dev_eui:<dev_eui>`|OK|
+| Operation | Command                                | Response |
+| --------- | -------------------------------------- | -------- |
+| Write     | `at+set_config=lora:dev_eui:<dev_eui>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -555,13 +604,16 @@ This command is used to set the Device EUI parameter for LoRaWAN OTAA mode.
 at+set_config=lora:dev_eui:3530353064377716\r\n                         
 OK
 ```
+
+<br>
+
 7.	<b>at+set_config=lora:app_eui:`<app_eui>`</b>
 
 This command is used to set the Application EUI parameter for the LoRaWAN OTAA mode.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:app_eui:<app_eui>`|OK|
+| Operation | Command                                | Response |
+| --------- | -------------------------------------- | -------- |
+| Write     | `at+set_config=lora:app_eui:<app_eui>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -578,13 +630,17 @@ This command is used to set the Application EUI parameter for the LoRaWAN OTAA m
 at+set_config=lora:app_eui:0000000000000001\r\n                         
 OK
 ```
+
+<br>
+
+
 8. <b>at+set_config=lora:app_key:`<app_key>`</b>
 
 This command is used to set the Application Key parameter for the LoRaWAN OTAA mode.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:app_key:<app_key>`|OK|
+| Operation | Command                                | Response |
+| --------- | -------------------------------------- | -------- |
+| Write     | `at+set_config=lora:app_key:<app_key>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -601,13 +657,16 @@ This command is used to set the Application Key parameter for the LoRaWAN OTAA m
 at+set_config=lora:app_key:841986913ACD00BBC2BE2479D70F3228\r\n                         
 OK
 ```
+
+<br>
+
 9. <b>at+set_config=lora:dev_addr:`<dev_addr>`</b>
 
 This command is used to set the Device Address parameter for the LoRaWAN ABP mode.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:dev_addr:<dev_addr>`|OK|
+| Operation | Command                                  | Response |
+| --------- | ---------------------------------------- | -------- |
+| Write     | `at+set_config=lora:dev_addr:<dev_addr>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -625,13 +684,15 @@ at+set_config=lora:dev_addr:260125D7\r\n
 OK
 ```
 
+<br>
+
 10. <b>at+set_config=lora:apps_key:`<apps_key>`</b>
 
 This command is used to set the Application Session Key parameter for the LoRaWAN ABP mode.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:apps_key:<apps_key>`|OK|
+| Operation | Command                                  | Response |
+| --------- | ---------------------------------------- | -------- |
+| Write     | `at+set_config=lora:apps_key:<apps_key>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -649,13 +710,15 @@ at+set_config=lora:apps_key:841986913ACD00BBC2BE2479D70F3228\r\n
 OK
 ```
 
+<br>
+
 11. <b>at+set_config=lora:nwks_key:`<nwks_key>`</b>
 
 This command is used to set the Network Session Key parameter for the LoRaWAN ABP mode.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Read|`at+set_config=lora:nwks_key:<nwks_key>`|OK|
+| Operation | Command                                  | Response |
+| --------- | ---------------------------------------- | -------- |
+| Read      | `at+set_config=lora:nwks_key:<nwks_key>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -673,13 +736,15 @@ at+set_config=lora:nwks_key:69AF20AEA26C01B243945A28C9172B42\r\n
 OK
 ```
 
+<br>
+
 12. <b>at+set_config=lora:multicastenable:`<IsEnable>`</b>
 
 This command is used to enabe or disable the multicast feature.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:multicastenable:<IsEnable>`|OK|
+| Operation | Command                                         | Response |
+| --------- | ----------------------------------------------- | -------- |
+| Write     | `at+set_config=lora:multicastenable:<IsEnable>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -696,14 +761,15 @@ This command is used to enabe or disable the multicast feature.
 at+set_config=lora:multicastenable:1\r\n                         
 OK
 ```
+<br>
 
 13. <b>at+set_config=lora:multicast_dev_addr:`<multicast_dev_addr>`</b>
 
 This command is used to set the Device Address for the multicast feature.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:multicast_dev_addr:<multicast_dev_addr>`|OK|
+| Operation | Command                                                      | Response |
+| --------- | ------------------------------------------------------------ | -------- |
+| Write     | `at+set_config=lora:multicast_dev_addr:<multicast_dev_addr>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -720,13 +786,17 @@ This command is used to set the Device Address for the multicast feature.
 at+set_config=lora:multicast_dev_addr:260111fd\r\n                         
 OK
 ```
+
+<br>
+
+
 14. <b>at+set_config=lora:multicast_apps_key:`<multicast_apps_key>`</b>
 
 This command is used to set the Application Session Key for the multicast feature.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:multicast_apps_key:<multicast_apps_key>`|OK|
+| Operation | Command                                                      | Response |
+| --------- | ------------------------------------------------------------ | -------- |
+| Write     | `at+set_config=lora:multicast_apps_key:<multicast_apps_key>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -744,13 +814,15 @@ at+set_config=lora:multicast_apps_key:F13DDFA2619B10411F02F042E1C0F356\r\n
 OK
 ```
 
+<br>
+
 15. <b>at+set_config=lora:multicast_nwks_key:`<multicast_nwks_key>`</b>
 
 This command is used to set the Network Session Key for the multicast feature.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:multicast_nwks_key:<multicast_nwks_key>`|OK|
+| Operation | Command                                                      | Response |
+| --------- | ------------------------------------------------------------ | -------- |
+| Write     | `at+set_config=lora:multicast_nwks_key:<multicast_nwks_key>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -768,13 +840,15 @@ at+set_config=lora:multicast_nwks_key:1D1991F5377C675879C39B6908D437A6\r\n
 OK
 ```
 
+<br>
+
 16. <b>at+set_config=lora:join_mode:`<mode>`</b>
 
 This command is used to switch the LoRaWAN access mode between the OTAA and the ABP mode.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:join_mode:<mode>`|OK|
+| Operation | Command                               | Response |
+| --------- | ------------------------------------- | -------- |
+| Write     | `at+set_config=lora:join_mode:<mode>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -792,13 +866,15 @@ at+set_config=lora:join_mode:1\r\n
 OK
 ```
 
+<br>
+
 17. <b>at+set_config=lora:class:`<class>`</b>
 
 This command is used to set LoRaWAN class to Class A, Class B, or Class C.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:class:<class>`|OK|
+| Operation | Command                            | Response |
+| --------- | ---------------------------------- | -------- |
+| Write     | `at+set_config=lora:class:<class>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -816,13 +892,15 @@ at+set_config=lora:join_mode:1\r\n
 OK
 ```
 
+<br>
+
 18. <b>at+set_config=lora:confirm:`<type>`</b>
 
 This command is used to set the type data to be sent: Confirmed/Unconfirmed.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:confirm:<type>`|OK|
+| Operation | Command                             | Response |
+| --------- | ----------------------------------- | -------- |
+| Write     | `at+set_config=lora:confirm:<type>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -840,57 +918,64 @@ at+set_config=lora:confirm:0\r\n
 OK
 ```
 
+<br>
+
 19. <b>at+set_config=lora:dr:`<dr>`</b>
 
 This command is used to set the data rate (DR) of LoRa.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:dr:<dr>`|OK|
+| Operation | Command                      | Response |
+| --------- | ---------------------------- | -------- |
+| Write     | `at+set_config=lora:dr:<dr>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
 <tbody>
         <tr>
             <td>dr</td>
-            <td>The data rate of LoRa is related to the current region. In most LoRa areas, it is common to use 0 to 5. Detailed reference can be made to the LoRaWan1.0.2 specification.</td>
+            <td>The data rate of LoRa is related to the current region. In most LoRa areas, it is common to use 0 to 5. Detailed reference can be made to the LoRaWan 1.0.2 specification.</td>
         </tr>
 </tbody>
 </table>
+
+<br>
 
 20. <b>at+set_config=lora:tx_power:`<tx_power>`</b>
 
 This command is used to set the RF transmission power level of the LoRa transceiver. The unit is in dBm.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:tx_power:<tx_power>`|OK|
+| Operation | Command                                  | Response |
+| --------- | ---------------------------------------- | -------- |
+| Write     | `at+set_config=lora:tx_power:<tx_power>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
 <tbody>
         <tr>
             <td>tx_power</td>
-            <td>The transmit power level of LoRa varies depending on the frequency band and DR. Refer to the LoRaWAN 1.0.2 specification or Appendix II for details. The default is 0.</td>
+            <td>TLoRa transmit power level varies depending on frequency band and DR. Refer to the LoRaWAN 1.0.2 specification or <a href="/Product-Categories/WisDuo/RAK4600-Breakout-Board/AT-Command-Manual/#appendix-ii：tx-power-by-region" >Appendix II</a> for details. <br> The default is 0.</td>
         </tr>
 </tbody>
 </table>
 
 **Example**：
+
 ```
 at+set_config=lora:tx_power:0\r\n                         
 OK
 ```
+<br>
 
 21. <b>at+set_config=lora:adr:`<status>`</b>
 
 This command is used to turn on/off the ADR feature of the LoRa communication. 
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:adr:<status>`|OK|
+| Operation | Command                           | Response |
+| --------- | --------------------------------- | -------- |
+| Write     | `at+set_config=lora:adr:<status>` | OK       |
 
 **Parameter**：
+
 <table style="text-align: left">
 <tbody>
         <tr>
@@ -906,13 +991,15 @@ at+set_config=lora:adr:0\r\n
 OK
 ```
 
+<br>
+
 22. <b>at+get_config=lora:status</b>
 
-This command is used to get all the information related to the current LoRa status (except channel information).
+This command is used to get all the information related to the current LoRa status, except channel information.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Read|`at+get_config=lora:status`|`OK <lora status detail>`|
+| Operation | Command                     | Response                  |
+| --------- | --------------------------- | ------------------------- |
+| Read      | `at+get_config=lora:status` | `OK <lora status detail>` |
 
 **Parameter**：None
 
@@ -949,13 +1036,15 @@ UpLinkCounter: 0
 DownLinkCounter: 0
 ```
 
+<br>
+
 23. <b>at+set_config=lora:dutycycle_enable:`<status>`</b>
 
-This command is used for enabling or disabling the Duty Cycle feature.
+This command is used to enable or disable the Duty Cycle feature.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:dutycycle_enable:<status>`|OK|
+| Operation | Command                                        | Response |
+| --------- | ---------------------------------------------- | -------- |
+| Write     | `at+set_config=lora:dutycycle_enable:<status>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -973,13 +1062,15 @@ at+set_config=lora:dutycycle_enable:1\r\n
 OK
 ```
 
+<br>
+
 24. <b>at+set_config=lora:send_repeat_cnt:`<num>`</b>
 
 This command is used to set the number of retransmitting attempts on an uplink message. When activated, the board will resend a message if its corresponding ACK (downlink) is not received after sending a confirmed uplink message. The default value is 0, which means that the board will not resend any message by default.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:send_repeat_cnt:<status>`|OK|
+| Operation | Command                                       | Response |
+| --------- | --------------------------------------------- | -------- |
+| Write     | `at+set_config=lora:send_repeat_cnt:<status>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -997,13 +1088,15 @@ at+set_config=lora:send_repeat_cnt:1\r\n
 OK
 ```
 
+<br>
+
 25. <b>at+set_config=lora:default_parameters</b>
 
 This command is used to restore OTAA, ABP, multicast related network access parameters set at the factory, including dev_eui，app_eui, etc.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:default_parameters`|OK|
+| Operation | Command                                 | Response |
+| --------- | --------------------------------------- | -------- |
+| Write     | `at+set_config=lora:default_parameters` | OK       |
 
 **Parameter**：None
 
@@ -1012,15 +1105,17 @@ This command is used to restore OTAA, ABP, multicast related network access para
 at+set_config=lora:default_parameters\r\n
 OK
 ```
+
+
 ## LoRa P2P Type AT Command
 
 1. <b>at+set_config=lora:work_mode:`<mode>`</b>
 
-This command is used to change the LoRa's work mode between the LoRaWAN and LoRA P2P mode. This command will cause the board to restart once applied.
+This command is used to switch the LoRa work mode between the LoRaWAN and the LoRa P2P mode. This command will cause the module to restart.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lora:work_mode:<mode>`||
+| Operation | Command                               | Response |
+| --------- | ------------------------------------- | -------- |
+| Write     | `at+set_config=lora:work_mode:<mode>` |          |
 
 **Parameter**：
 <table style="text-align: left">
@@ -1040,13 +1135,15 @@ Current work_mode:P2P
 Initialization OK
 ```
 
+<br>
+
 2. <b>at+set_config=lorap2p:`<frequency>:<spreadfact>:<bandwidth>:<codingrate>:<preamlen>:<power>`</b>
 
 This command is used to set the relevant parameters of LoRA P2P mode and is only valid when the LoRa work mode is changed to LoRa P2P before.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lorap2p:<frequency>:<spreadfact>:<bandwidth>:<codingrate>:<preamlen>:<power>`|OK|
+| Operation | Command                                                                                      | Response |
+| --------- | -------------------------------------------------------------------------------------------- | -------- |
+| Write     | `at+set_config=lorap2p:<frequency>:<spreadfact>:<bandwidth>:<codingrate>:<preamlen>:<power>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -1084,13 +1181,15 @@ at+set_config=lorap2p:869525000:12:0:1:8:20\r\n
 OK
 ```
 
+<br>
+
 3. <b>at+set_config=lorap2p:transfer_mode:`<mode>`</b>
 
 This command is used to change the state of the LoRa transceiver between sending and receiving state, and it is only valid when the LoRa mode is set to LoRa P2P before.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=lorap2p:transfer_mode:<mode>`|OK|
+| Operation | Command                                      | Response |
+| --------- | -------------------------------------------- | -------- |
+| Write     | `at+set_config=lorap2p:transfer_mode:<mode>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -1108,13 +1207,15 @@ at+set_config=lorap2p:transfer_mode:1\r\n
 OK
 ```
 
+<br>
+
 4. <b>at+send=lorap2p:`<data>`</b>
 
 This command is used to send data through LoRa P2P and only valid when the LoRa work mode is set to LoRa P2P before.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Send|`at+send=lorap2p:<data>`|OK|
+| Operation | Command                  | Response |
+| --------- | ------------------------ | -------- |
+| Send      | `at+send=lorap2p:<data>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -1143,9 +1244,9 @@ at+recv=<RSSI>,<SNR>,<Data Length>:<Data>
 
 This command is used to configure the BLE mode.
 
-|Operation|Command|Response|
-|---------|-------|--------|
-|Write|`at+set_config=ble:work_mode:<mode>:<long_range>`|OK|
+| Operation | Command                                           | Response |
+| --------- | ------------------------------------------------- | -------- |
+| Write     | `at+set_config=ble:work_mode:<mode>:<long_range>` | OK       |
 
 **Parameter**：
 <table style="text-align: left">
@@ -1156,7 +1257,7 @@ This command is used to configure the BLE mode.
         </tr>
         <tr>
             <td>long_range</td>
-            <td>Long-range enable, only ‘0’ can be selected because RAK4600 does not support this feature.</td>
+            <td>Long-range enable, only ‘0’ can be selected because RAK4600 Breakout does not support this feature.</td>
         </tr>
 </tbody>
 </table>
@@ -1171,79 +1272,88 @@ OK
 
 <b>EU433/EU868/AS923</b>
 
-|Data Rate|      Configuration      |Indicative Physical Bit Rate [bit/s]|
-|---------|-------------------------|------------------------------------|
-|   0     |LoRa: SF12 / 125&nbsp;kHz|                 250                |
-|   1     |LoRa: SF11 / 125&nbsp;kHz|                 440                |
-|   2     |LoRa: SF10 / 125&nbsp;kHz|                 980                |
-|   3     |LoRa: SF9 / 125&nbsp;kHz |                 1760               |
-|   4     |LoRa: SF8 / 125&nbsp;kHz |                 3125               |
-|   5     |LoRa: SF7 / 125&nbsp;kHz |                 5470               |
-|   6     |LoRa: SF7 / 250&nbsp;kHz |                 11000              |
-|   7     |FSK: 50&nbsp;kbps        |                 50000              |
-| 8 ~ 15  |RFU                      |                                    |
+| Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
+| --------- | ------------------------- | ------------------------------------ |
+| 0         | LoRa: SF12 / 125&nbsp;kHz | 250                                  |
+| 1         | LoRa: SF11 / 125&nbsp;kHz | 440                                  |
+| 2         | LoRa: SF10 / 125&nbsp;kHz | 980                                  |
+| 3         | LoRa: SF9 / 125&nbsp;kHz  | 1760                                 |
+| 4         | LoRa: SF8 / 125&nbsp;kHz  | 3125                                 |
+| 5         | LoRa: SF7 / 125&nbsp;kHz  | 5470                                 |
+| 6         | LoRa: SF7 / 250&nbsp;kHz  | 11000                                |
+| 7         | FSK: 50&nbsp;kbps         | 50000                                |
+| 8 ~ 15    | RFU                       |                                      |
+
+<br>
 
 <b>CN470/KR920</b>
 
-|Data Rate|       Configuration     |Indicative Physical Bit Rate [bit/s]|
-|---------|-------------------------|------------------------------------|
-|   0     |LoRa: SF12 / 125&nbsp;kHz|                 250                |
-|   1     |LoRa: SF11 / 125&nbsp;kHz|                 440                |
-|   2     |LoRa: SF10 / 125&nbsp;kHz|                 980                |
-|   3     |LoRa: SF9 / 125&nbsp;kHz |                 1760               |
-|   4     |LoRa: SF8 / 125&nbsp;kHz |                 3125               |
-|   5     |LoRa: SF7 / 125&nbsp;kHz |                 5470               |
-| 6 ~ 15  |          RFU            |                                    |
+| Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
+| --------- | ------------------------- | ------------------------------------ |
+| 0         | LoRa: SF12 / 125&nbsp;kHz | 250                                  |
+| 1         | LoRa: SF11 / 125&nbsp;kHz | 440                                  |
+| 2         | LoRa: SF10 / 125&nbsp;kHz | 980                                  |
+| 3         | LoRa: SF9 / 125&nbsp;kHz  | 1760                                 |
+| 4         | LoRa: SF8 / 125&nbsp;kHz  | 3125                                 |
+| 5         | LoRa: SF7 / 125&nbsp;kHz  | 5470                                 |
+| 6 ~ 15    | RFU                       |                                      |
+
+<br>
 
 <b>US915</b>
  
-|Data Rate|       Configuration       |Indicative Physical Bit Rate [bit/s]|
-|---------|---------------------------|------------------------------------|
-|   0     |LoRa: SF10 / 125&nbsp;kHz  |                 980                |
-|   1     |LoRa: SF9 / 125&nbsp;kHz   |                 1760               |
-|   2     |LoRa: SF8 / 125&nbsp;kHz   |                 3125               |
-|   3     |LoRa: SF7 / 125&nbsp;kHz   |                 5470               |
-|   4     |LoRa: SF8 / 500&nbsp;kHz   |                 12500              |
-| 5 ~ 7   |          RFU              |                                    |
-|   8     |LoRa: SF12 / 500&nbsp;kHz  |                 980                |
-|   9     |LoRa: SF11 / 500&nbsp;kHz  |                 1760               |
-|   10    |LoRa: SF10 / 500&nbsp;kHz  |                 3900               |
-|   11    |LoRa: SF9 / 500&nbsp;kHz   |                 7000               |
-|   12    |LoRa: SF8 / 500&nbsp;kHz   |                 12500              |
-|   13    |LoRa: SF7 / 500&nbsp;kHz   |                 21900              |
-| 14 ~ 15 |         RFU               |                                    |
+| Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
+| --------- | ------------------------- | ------------------------------------ |
+| 0         | LoRa: SF10 / 125&nbsp;kHz | 980                                  |
+| 1         | LoRa: SF9 / 125&nbsp;kHz  | 1760                                 |
+| 2         | LoRa: SF8 / 125&nbsp;kHz  | 3125                                 |
+| 3         | LoRa: SF7 / 125&nbsp;kHz  | 5470                                 |
+| 4         | LoRa: SF8 / 500&nbsp;kHz  | 12500                                |
+| 5 ~ 7     | RFU                       |                                      |
+| 8         | LoRa: SF12 / 500&nbsp;kHz | 980                                  |
+| 9         | LoRa: SF11 / 500&nbsp;kHz | 1760                                 |
+| 10        | LoRa: SF10 / 500&nbsp;kHz | 3900                                 |
+| 11        | LoRa: SF9 / 500&nbsp;kHz  | 7000                                 |
+| 12        | LoRa: SF8 / 500&nbsp;kHz  | 12500                                |
+| 13        | LoRa: SF7 / 500&nbsp;kHz  | 21900                                |
+| 14 ~ 15   | RFU                       |                                      |
+
+<br>
 
 <b>AU915</b> 
 
-|Data Rate|      Configuration      |Indicative Physical Bit Rate [bit/s]|
-|---------|-------------------------|------------------------------------|
-|   0     |LoRa: SF12 / 125&nbsp;kHz|                 250                |
-|   1     |LoRa: SF11 / 125&nbsp;kHz|                 440                |
-|   2     |LoRa: SF10 / 125&nbsp;kHz|                 980                |
-|   3     |LoRa: SF9 / 125&nbsp;kHz |                 1760               |
-|   4     |LoRa: SF8 / 125&nbsp;kHz |                 3125               |
-|   5     |LoRa: SF7 / 125&nbsp;kHz |                 5470               |
-|   6     |LoRa: SF8 / 500&nbsp;kHz |                 12500              |
-|   7     |        RFU              |                 RFU                |
-|   8     |LoRa: SF12 / 500&nbsp;kHz|                 980                |
-|   9     |LoRa: SF11 / 500&nbsp;kHz|                 1760               |
-|   10    |LoRa: SF10 / 500&nbsp;kHz|                 3900               |
-|   11    |LoRa: SF9 / 500&nbsp;kHz |                 7000               |
-|   12    |LoRa: SF8 / 500&nbsp;kHz |                 12500              |
+| Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
+| --------- | ------------------------- | ------------------------------------ |
+| 0         | LoRa: SF12 / 125&nbsp;kHz | 250                                  |
+| 1         | LoRa: SF11 / 125&nbsp;kHz | 440                                  |
+| 2         | LoRa: SF10 / 125&nbsp;kHz | 980                                  |
+| 3         | LoRa: SF9 / 125&nbsp;kHz  | 1760                                 |
+| 4         | LoRa: SF8 / 125&nbsp;kHz  | 3125                                 |
+| 5         | LoRa: SF7 / 125&nbsp;kHz  | 5470                                 |
+| 6         | LoRa: SF8 / 500&nbsp;kHz  | 12500                                |
+| 7         | RFU                       | RFU                                  |
+| 8         | LoRa: SF12 / 500&nbsp;kHz | 980                                  |
+| 9         | LoRa: SF11 / 500&nbsp;kHz | 1760                                 |
+| 10        | LoRa: SF10 / 500&nbsp;kHz | 3900                                 |
+| 11        | LoRa: SF9 / 500&nbsp;kHz  | 7000                                 |
+| 12        | LoRa: SF8 / 500&nbsp;kHz  | 12500                                |
+
+<br>
+
 
 <b>IN865</b>
 
-|Data Rate|     Configuration       |Indicative Physical Bit Rate [bit/s]|
-|---------|-------------------------|------------------------------------|
-|   0     |LoRa: SF12 / 125&nbsp;kHz|                 250                |
-|   1     |LoRa: SF11 / 125&nbsp;kHz|                 440                |
-|   2     |LoRa: SF10 / 125&nbsp;kHz|                 980                |
-|   3     |LoRa: SF9 / 125&nbsp;kHz |                 1760               |
-|   4     |LoRa: SF8 / 125&nbsp;kHz |                 3125               |
-|   5     |LoRa: SF7 / 125&nbsp;kHz |                 5470               |
-|   6     |RFU                      |                 RFU                |
-|   7     |FSK: 50&nbsp;kbps        |                 50000              |
-| 8 ~ 15  |RFU                      |                 RFU                |
+| Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
+| --------- | ------------------------- | ------------------------------------ |
+| 0         | LoRa: SF12 / 125&nbsp;kHz | 250                                  |
+| 1         | LoRa: SF11 / 125&nbsp;kHz | 440                                  |
+| 2         | LoRa: SF10 / 125&nbsp;kHz | 980                                  |
+| 3         | LoRa: SF9 / 125&nbsp;kHz  | 1760                                 |
+| 4         | LoRa: SF8 / 125&nbsp;kHz  | 3125                                 |
+| 5         | LoRa: SF7 / 125&nbsp;kHz  | 5470                                 |
+| 6         | RFU                       | RFU                                  |
+| 7         | FSK: 50&nbsp;kbps         | 50000                                |
+| 8 ~ 15    | RFU                       | RFU                                  |
 
 ## Appendix II：TX Power by Region
 
@@ -1251,190 +1361,215 @@ OK
 
 By default, MaxEIRP is considered to be +16&nbsp;dBm. 
 
-|TXPower|    Configuration (EIRP)  |
-|-------|--------------------------|
-|   0   |   MaxEIRP                |
-|   1   |   MaxEIRP - 2&nbsp;dB    |
-|   2   |   MaxEIRP - 4&nbsp;dB    |
-|   3   |   MaxEIRP - 6&nbsp;dB    |
-|   4   |   MaxEIRP - 8&nbsp;dB    |
-|   5   |   MaxEIRP - 10&nbsp;dB   |
-|   6   |   MaxEIRP - 12&nbsp;dB   |
-|   7   |   MaxEIRP - 14&nbsp;dB   |
-|8 ~ 15 |   RFU                    |
+| TXPower | Configuration (EIRP) |
+| ------- | -------------------- |
+| 0       | MaxEIRP              |
+| 1       | MaxEIRP - 2&nbsp;dB  |
+| 2       | MaxEIRP - 4&nbsp;dB  |
+| 3       | MaxEIRP - 6&nbsp;dB  |
+| 4       | MaxEIRP - 8&nbsp;dB  |
+| 5       | MaxEIRP - 10&nbsp;dB |
+| 6       | MaxEIRP - 12&nbsp;dB |
+| 7       | MaxEIRP - 14&nbsp;dB |
+| 8 ~ 15  | RFU                  |
+
+<br>
+
 
 <b>US915</b>
 
-|TXPower|   Configuration (conducted power)  |
-|-------|------------------------------------|
-|   0   |   30&nbsp;dBm - 2*TX Power         |
-|   1   |   28&nbsp;dBm                      |
-|   2   |   26&nbsp;dBm                      |
-| 3 ~ 9 |                                    |
-|   10  |   10&nbsp;dBm                      |
-|11 ~ 15|      RFU                           |
+| TXPower | Configuration (conducted power) |
+| ------- | ------------------------------- |
+| 0       | 30&nbsp;dBm - 2*TX Power        |
+| 1       | 28&nbsp;dBm                     |
+| 2       | 26&nbsp;dBm                     |
+| 3 ~ 9   |                                 |
+| 10      | 10&nbsp;dBm                     |
+| 11 ~ 15 | RFU                             |
+
+<br>
+
 
 <b>AU915</b>
 
 By default, MaxEIRP is considered to be +30&nbsp;dBm. 
 
-|TXPower|Configuration (EIRP)    |
-|-------|------------------------|
-|   0   |   MaxEIRP              |
-|1 ~ 10 |   MaxEIRP - 2*TX Power |
-|11 ~ 10|      RFU               |
+| TXPower | Configuration (EIRP) |
+| ------- | -------------------- |
+| 0       | MaxEIRP              |
+| 1 ~ 10  | MaxEIRP - 2*TX Power |
+| 11 ~ 10 | RFU                  |
+
+<br>
 
 <b>KR920</b>
 
 By default, MaxEIRP is considered to be +14&nbsp;dBm. 
 
-|TXPower|   Configuration (EIRP)   |
-|-------|--------------------------|
-|   0   |   MaxEIRP                |
-|   1   |   MaxEIRP - 2&nbsp;dB    |
-|   2   |   MaxEIRP - 4&nbsp;dB    |
-|   3   |   MaxEIRP - 6&nbsp;dB    |
-|   4   |   MaxEIRP - 8&nbsp;dB    |
-|   5   |   MaxEIRP - 10&nbsp;dB   |
-|   6   |   MaxEIRP - 12&nbsp;dB   |
-|   7   |   MaxEIRP - 14&nbsp;dB   |
-|8 ~ 15 |      RFU                 |
+| TXPower | Configuration (EIRP) |
+| ------- | -------------------- |
+| 0       | MaxEIRP              |
+| 1       | MaxEIRP - 2&nbsp;dB  |
+| 2       | MaxEIRP - 4&nbsp;dB  |
+| 3       | MaxEIRP - 6&nbsp;dB  |
+| 4       | MaxEIRP - 8&nbsp;dB  |
+| 5       | MaxEIRP - 10&nbsp;dB |
+| 6       | MaxEIRP - 12&nbsp;dB |
+| 7       | MaxEIRP - 14&nbsp;dB |
+| 8 ~ 15  | RFU                  |
+
+<br>
+
 
 <b>AS923</b>
 
 By default, MaxEIRP shall be 16&nbsp;dBm. 
 
-|TXPower|    Configuration (EIRP)   |
-|-------|---------------------------|
-|   0   |   MaxEIRP                |
-|   1   |   MaxEIRP - 2&nbsp;dB    |
-|   2   |   MaxEIRP - 4&nbsp;dB    |
-|   3   |   MaxEIRP - 6&nbsp;dB    |
-|   4   |   MaxEIRP - 8&nbsp;dB    |
-|   5   |   MaxEIRP - 10&nbsp;dB   |
-|   6   |   MaxEIRP - 12&nbsp;dB   |
-|   7   |   MaxEIRP - 14&nbsp;dB   |
-|8 ~ 15 |       RFU                 |
+| TXPower | Configuration (EIRP) |
+| ------- | -------------------- |
+| 0       | MaxEIRP              |
+| 1       | MaxEIRP - 2&nbsp;dB  |
+| 2       | MaxEIRP - 4&nbsp;dB  |
+| 3       | MaxEIRP - 6&nbsp;dB  |
+| 4       | MaxEIRP - 8&nbsp;dB  |
+| 5       | MaxEIRP - 10&nbsp;dB |
+| 6       | MaxEIRP - 12&nbsp;dB |
+| 7       | MaxEIRP - 14&nbsp;dB |
+| 8 ~ 15  | RFU                  |
+
+<br>
 
 
 <b>IN865</b>
 
 By default, MaxEIRP is considered to be 30&nbsp;dBm. 
 
-|TXPower|    Configuration (EIRP)  |
-|-------|--------------------------|
-|   0   |   MaxEIRP                |
-|   1   |   MaxEIRP - 2&nbsp;dB    |
-|   2   |   MaxEIRP - 4&nbsp;dB    |
-|   3   |   MaxEIRP - 6&nbsp;dB    |
-|   4   |   MaxEIRP - 8&nbsp;dB    |
-|   5   |   MaxEIRP - 10&nbsp;dB   |
-|   6   |   MaxEIRP - 12&nbsp;dB   |
-|   7   |   MaxEIRP - 14&nbsp;dB   |
-|   8   |   MaxEIRP - 16&nbsp;dB   |
-|   9   |   MaxEIRP - 18&nbsp;dB   |
-|   10  |   MaxEIRP - 20&nbsp;dB   |
-|11 ~ 15|      RFU                 |
+| TXPower | Configuration (EIRP) |
+| ------- | -------------------- |
+| 0       | MaxEIRP              |
+| 1       | MaxEIRP - 2&nbsp;dB  |
+| 2       | MaxEIRP - 4&nbsp;dB  |
+| 3       | MaxEIRP - 6&nbsp;dB  |
+| 4       | MaxEIRP - 8&nbsp;dB  |
+| 5       | MaxEIRP - 10&nbsp;dB |
+| 6       | MaxEIRP - 12&nbsp;dB |
+| 7       | MaxEIRP - 14&nbsp;dB |
+| 8       | MaxEIRP - 16&nbsp;dB |
+| 9       | MaxEIRP - 18&nbsp;dB |
+| 10      | MaxEIRP - 20&nbsp;dB |
+| 11 ~ 15 | RFU                  |
+
+<br>
 
 <b>CN470</b>
 
 By default, MaxEIRP is considered to be +19.15&nbsp;dBm. 
 
-|TXPower|  Configuration (EIRP)    |
-|-------|--------------------------|
-|   0   |   MaxEIRP                |
-|   1   |   MaxEIRP - 2&nbsp;dB    |
-|   2   |   MaxEIRP - 4&nbsp;dB    |
-|   3   |   MaxEIRP - 6&nbsp;dB    |
-|   4   |   MaxEIRP - 8&nbsp;dB    |
-|   5   |   MaxEIRP - 10&nbsp;dB   |
-|   6   |   MaxEIRP - 12&nbsp;dB   |
-|   7   |   MaxEIRP - 14&nbsp;dB   |
-|8 ~ 15 |      RFU                 |
+| TXPower | Configuration (EIRP) |
+| ------- | -------------------- |
+| 0       | MaxEIRP              |
+| 1       | MaxEIRP - 2&nbsp;dB  |
+| 2       | MaxEIRP - 4&nbsp;dB  |
+| 3       | MaxEIRP - 6&nbsp;dB  |
+| 4       | MaxEIRP - 8&nbsp;dB  |
+| 5       | MaxEIRP - 10&nbsp;dB |
+| 6       | MaxEIRP - 12&nbsp;dB |
+| 7       | MaxEIRP - 14&nbsp;dB |
+| 8 ~ 15  | RFU                  |
+
+<br>
 
 <b>EU433</b>
 
 By default, MAxEIRP is considered to be +12.15&nbsp;dBm. 
 
-|TXPower|   Configuration (EIRP)   |
-|-------|--------------------------|
-|   0   |   MaxEIRP                |
-|   1   |   MaxEIRP - 2&nbsp;dB    |
-|   2   |   MaxEIRP - 4&nbsp;dB    |
-|   3   |   MaxEIRP - 6&nbsp;dB    |
-|   4   |   MaxEIRP - 8&nbsp;dB    |
-|   5   |   MaxEIRP - 10&nbsp;dB   |
-|6 ~ 15 |      RFU                 |
+| TXPower | Configuration (EIRP) |
+| ------- | -------------------- |
+| 0       | MaxEIRP              |
+| 1       | MaxEIRP - 2&nbsp;dB  |
+| 2       | MaxEIRP - 4&nbsp;dB  |
+| 3       | MaxEIRP - 6&nbsp;dB  |
+| 4       | MaxEIRP - 8&nbsp;dB  |
+| 5       | MaxEIRP - 10&nbsp;dB |
+| 6 ~ 15  | RFU                  |
 
 ## Appendix III：Maximum Transmission Load by Region
 
 :::tip 📝 NOTE:
-The LoRaWAN stack adds 8 bytes to the user payload. In the following list, M is the maximum payload size and N is the maximum usable payload size for the user data.
+The LoRaWAN stack adds 8 bytes to the user payload. In the following list, M is the maximum payload size and N is the maximum usable payload size for the user data without MAC header.
 ::::
 
 <b>EU868</b>
 
-|DataRate| M | N |
-|:----:|:----:|:----:|
-|0|59|51|
-|1|59|51|
-|2|59|51|
-|3|123|115|
-|4|250|242|
-|5|250|242|
-|6|250|242|
-|7|250|242|
-|8 ~ 15|Not Defined|Not Defined|
+| DataRate |      M      |      N      |
+| :------: | :---------: | :---------: |
+|    0     |     59      |     51      |
+|    1     |     59      |     51      |
+|    2     |     59      |     51      |
+|    3     |     123     |     115     |
+|    4     |     250     |     242     |
+|    5     |     250     |     242     |
+|    6     |     250     |     242     |
+|    7     |     250     |     242     |
+|  8 ~ 15  | Not Defined | Not Defined |
+
+<br>
 
 <b>US915</b>
 
-|DataRate| M | N |
-|:----:|:----:|:----:|
-|0|19|11|
-|1|61|53|
-|2|133|125|
-|3|250|242|
-|4|250|242|
-|5 ~ 7|Not Defined|Not Defined|
-|8|61|53|
-|9|137|129|
-|10|250|242|
-|11|250|242|
-|12|250|242|
-|13|250|242|
-|14 ~ 15|Not Defined|Not Defined|
+| DataRate |      M      |      N      |
+| :------: | :---------: | :---------: |
+|    0     |     19      |     11      |
+|    1     |     61      |     53      |
+|    2     |     133     |     125     |
+|    3     |     250     |     242     |
+|    4     |     250     |     242     |
+|  5 ~ 7   | Not Defined | Not Defined |
+|    8     |     61      |     53      |
+|    9     |     137     |     129     |
+|    10    |     250     |     242     |
+|    11    |     250     |     242     |
+|    12    |     250     |     242     |
+|    13    |     250     |     242     |
+| 14 ~ 15  | Not Defined | Not Defined |
+
+<br>
 
 <b>AU915</b>
 
-|DataRate| M | N |
-|:----:|:----:|:----:|
-|0|59|51|
-|1|59|51|
-|2|59|51|
-|3|123|115|
-|4|250|242|
-|5|250|242|
-|6|250|242|
-|7|Not Defined|Not Defined|
-|8|61|53|
-|9|137|129|
-|10|250|242|
-|11|250|242|
-|12|250|242|
-|13|250|242|
-|14 ~ 15|Not Defined|Not Defined|
+| DataRate |      M      |      N      |
+| :------: | :---------: | :---------: |
+|    0     |     59      |     51      |
+|    1     |     59      |     51      |
+|    2     |     59      |     51      |
+|    3     |     123     |     115     |
+|    4     |     250     |     242     |
+|    5     |     250     |     242     |
+|    6     |     250     |     242     |
+|    7     | Not Defined | Not Defined |
+|    8     |     61      |     53      |
+|    9     |     137     |     129     |
+|    10    |     250     |     242     |
+|    11    |     250     |     242     |
+|    12    |     250     |     242     |
+|    13    |     250     |     242     |
+| 14 ~ 15  | Not Defined | Not Defined |
+
+<br>
 
 <b>KR920</b>
 
-|DataRate|M  |N  |
-|:----:|:----:|:----:|
-|0|59|51|
-|1|59|51|
-|2|59|51|
-|3|123|115|
-|4|250|242|
-|5|250|242|
-|6 ~ 15|Not Defined|Not Defined|
+| DataRate |      M      |      N      |
+| :------: | :---------: | :---------: |
+|    0     |     59      |     51      |
+|    1     |     59      |     51      |
+|    2     |     59      |     51      |
+|    3     |     123     |     115     |
+|    4     |     250     |     242     |
+|    5     |     250     |     242     |
+|  6 ~ 15  | Not Defined | Not Defined |
+
+<br>
 
 <b>AS923</b>
 
@@ -1518,45 +1653,54 @@ The LoRaWAN stack adds 8 bytes to the user payload. In the following list, M is 
 </tbody>
 </table>
 
+<br>
+
+
 <b>IN865</b>
 
-|DataRate|M|N|
-|:----:|:----:|:----:|
-|0|59|51|
-|1|59|51|
-|2|59|51|
-|3|123|115|
-|4|250|242|
-|5|250|242|
-|6|250|242|
-|7|250|242|
-|8 ~ 15|Not Defined|Not Defined|
+| DataRate |      M      |      N      |
+| :------: | :---------: | :---------: |
+|    0     |     59      |     51      |
+|    1     |     59      |     51      |
+|    2     |     59      |     51      |
+|    3     |     123     |     115     |
+|    4     |     250     |     242     |
+|    5     |     250     |     242     |
+|    6     |     250     |     242     |
+|    7     |     250     |     242     |
+|  8 ~ 15  | Not Defined | Not Defined |
+
+<br>
+
 
 <b>CN470</b>
 
-|DataRate|M|N|
-|:----:|:----:|:-----:|
-|0|59|51|
-|1|59|51|
-|2|59|51|
-|3|123|115|
-|4|250|242|
-|5|250|242|
-|6 ~ 15|Not Defined|Not Defined|
+| DataRate |      M      |      N      |
+| :------: | :---------: | :---------: |
+|    0     |     59      |     51      |
+|    1     |     59      |     51      |
+|    2     |     59      |     51      |
+|    3     |     123     |     115     |
+|    4     |     250     |     242     |
+|    5     |     250     |     242     |
+|  6 ~ 15  | Not Defined | Not Defined |
+
+<br>
+
 
 <b>EU433</b>
 
-|DataRate|M|N|
-|:----:|:----:|:----:|
-|0|59|51|
-|1|59|51|
-|2|59|51|
-|3|123|115|
-|4|250|242|
-|5|250|242|
-|6|250|242|
-|7|250|242|
-|8 ~ 15|Not Defined|Not Defined|
+| DataRate |      M      |      N      |
+| :------: | :---------: | :---------: |
+|    0     |     59      |     51      |
+|    1     |     59      |     51      |
+|    2     |     59      |     51      |
+|    3     |     123     |     115     |
+|    4     |     250     |     242     |
+|    5     |     250     |     242     |
+|    6     |     250     |     242     |
+|    7     |     250     |     242     |
+|  8 ~ 15  | Not Defined | Not Defined |
 
 <!-- Write your comments here 
 ## Appendix IV: Pin Description of RAK4600
