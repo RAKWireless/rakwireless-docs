@@ -4,6 +4,7 @@ export default {
   created () {
     if (typeof this.$ssrContext !== "undefined") {
       // homepage and non-homepage
+    
       if (this.$page.path === vars.homePath) {
         this.$ssrContext.userHeadTags += vars.homeScript;
         this.$ssrContext.userHeadTags += vars.homeOG;

@@ -71,7 +71,6 @@ export default {
       this.isShow = flag;
     },
     checkRoute(route){
-      console.log(route);
       if(route.path === '/Knowledge-Hub/FAQs/'
         ||route.path === '/Knowledge-Hub/FAQs/General/'
         ||route.path === '/Knowledge-Hub/FAQs/Hardware/'

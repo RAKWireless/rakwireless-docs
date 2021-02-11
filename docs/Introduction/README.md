@@ -6,7 +6,7 @@ displayAllHeaders: true
 
 # Introduction
 
-<rk-head img="/assets/rakwireless/RAK-favicon-blue.svg" img-height="140px">
+<rk-head img="/assets/rakwireless/RAK-favicon-blue.png" img-height="140px">
 <h1 class="q-mt-none q-mb-sm" style="font-size: 3.75rem">Welcome!</h1>
 The RAK® Documentation Center is a perfect place to explore and delve deeper into the potential of our products on the Internet of Things (IoT). Herein lies a set of comprehensive documents that provides the fundamentals and the specifications of our devices. Information curated here by our experts will help you initiate and build your next LoRa project. 
 

@@ -142,7 +142,7 @@ export default {
 
   },
   mixins: 
-    RkFaqFooter[ScrollMixin, TagsMixin, CommonMixin],
+    [ScrollMixin, TagsMixin, CommonMixin],
 
   data() {
     return {

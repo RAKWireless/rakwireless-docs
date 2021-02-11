@@ -23,6 +23,14 @@ author:
 
 For WisBlock coding and programming, use Arduino IDE. If you don't have an Arduino IDE yet, you can download it in the [Arduino official website](https://www.arduino.cc/en/Main/Software).
 
+----
+:::warning ⚠️ WARNING    
+_**If you are using Windows 10**_.    
+Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Please install the original Arduino IDE from the Arduino official website! The Arduino app from the Microsoft App Store has problems to use third party Board Support Packages.
+:::
+
+----
+
 You can see the current version of Arduino IDE is V1.8.13, and there are several versions available for Windows, Linux, and Mac OS X. Choose the correct version of Arduino IDE and download it.
 
 
