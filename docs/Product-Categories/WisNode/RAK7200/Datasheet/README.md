@@ -239,13 +239,13 @@ The table below lists the operation and storage temperature requirements.
 />
 
 <rk-img
-  src="/assets/images/wisnode/rak7200/datasheet/schematic-diagram-1.png"
+  src="/assets/images/wisnode/rak7200/datasheet/schematic-diagram-2.png"
   width="100%"
   caption="Schematic Diagram - 2"
 />
 
 <rk-img
-  src="/assets/images/wisnode/rak7200/datasheet/schematic-diagram-1.png"
+  src="/assets/images/wisnode/rak7200/datasheet/schematic-diagram-3.png"
   width="100%"
   caption="Schematic Diagram - 3"
 />
