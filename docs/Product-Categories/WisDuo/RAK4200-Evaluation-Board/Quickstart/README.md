@@ -15,7 +15,7 @@ tags:
   />
 --->
 
-### What do you need?
+### What Do You Need?
 
 Before going through each and every step in the installation guide of the RAK4200 Evaluation Board, make sure to prepare the necessary items listed below:
 
@@ -825,9 +825,46 @@ Refer to the [AT Command Manual](/Product-Categories/WisDuo/RAK4200-Evaluation-B
 
 ## Miscellaneous
 
-### Burning the bootloader into the Device
+### RAK5005 Core Module Slot Connection to RAK4201
+  
+The RAK5005 is the base board that connects the RAK4200 Core Module. It creates the power supply for the attached module and provides additional IO and Sensor support for your project needs.    
+  
+::: tip 📝 NOTE
+RAK4201 is a circuit board module for RAK5005 with pre-soldered RAK4200 LPWAN Module.
+:::
+  
+Listed below are the accessible pins and data bus of attached RAK5005 base board on the RAK4200 EVB:
 
-The RAK4200 Evaluation Board bootloader is already pre-installed upon manufacturing, so this bootloader upgrade steps are not necessary. If you find that the bootloader of your RAK4200 Evaluation Board is damaged, contact our support though our [RAKwireless forum](https://forum.rakwireless.com/).
+
+| RAK4201 Pin Definition | Function Name of WisBase | Pin Number | Pin Number | Function Name of WisBase | RAK4201 Pin Definition |
+| ---------------------- | ------------------------ | ---------- | ---------- | ------------------------ | ---------------------- |
+| NC                     | VBAT                     | 1          | 2          | VBAT                     | NC                     |
+| GND                    | GND                      | 3          | 4          | GND                      | GND                    |
+| 3V3                    | 3V3                      | 5          | 6          | 3V3                      | 3V3                    |
+| NC                     | USB+                     | 7          | 8          | USB-                     | NC                     |
+| NC                     | VBUS                     | 9          | 10         | SW1                      | NC                     |
+| UART1_TX/PA9           | TXD0                     | 11         | 12         | RXD0                     | UART1_RX/PA10          |
+| MCU_NRST               | RESET                    | 13         | 14         | LED1                     | NC                     |
+| NC                     | LED2                     | 15         | 16         | LED3                     | NC                     |
+| 3V3                    | VDD                      | 17         | 18         | VDD                      | 3V3                    |
+| I2C_SDA/PB7            | I2C1_SDA                 | 19         | 20         | I2C1_SCL                 | I2C_SCL/PB6            |
+| UART2_DE/PA1           | AIN0                     | 21         | 22         | AIN1                     | NC                     |
+| NC                     | BOOT0                    | 23         | 24         | NC                       | NC                     |
+| NC                     | SPI_CS                   | 25         | 26         | SPI_CLK                  | SPI_CLK/PA5            |
+| SPI_MISO/PA6           | SPI_MISO                 | 27         | 28         | SPI_MOSI                 | SPI_MOSI/PA7           |
+| UART1_DE/PA12          | IO1                      | 29         | 30         | IO2                      | NC                     |
+| NC                     | IO3                      | 31         | 32         | IO4                      | NC                     |
+| UART2_TX/PA2           | TXD1                     | 33         | 34         | RXD1                     | UART2_RX/PA3           |
+| NC                     | I2C2_SDA                 | 35         | 36         | I2C2_SCL                 | NC                     |
+| NC                     | IO5                      | 37         | 38         | IO6                      | NC                     |
+| GND                    | GND                      | 39         | 40         | GND                      | GND                    |
+
+<br>
+
+
+### Burning the Bootloader Into the Device
+
+The RAK4200 Evaluation Board bootloader is already pre-installed upon manufacturing, so this bootloader upgrade steps are not necessary. If you find that the bootloader of your RAK4200 Evaluation Board is damaged, contact through the [RAKwireless forum](https://forum.rakwireless.com/).
 
 ### Upgrading the Firmware
 

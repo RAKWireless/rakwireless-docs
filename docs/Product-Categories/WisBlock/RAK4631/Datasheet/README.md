@@ -25,7 +25,7 @@ certifications:
 
 The RAK4631 WisBlock Core module is a RAK4630 stamp module with an expansion PCB and connectors compatible with the RAK5005-O baseboard. It allows an easy way to access to the pins of the RAK4630 module in order to simplify development and testing processes.
 
-The module itself comprises a RAK4630 as its main component. The RAK4630 is a combination of a nRF52840 MCU and an SX1262 LoRa chip, it features ultra-low power consumption of 2.0&nbsp;uA during sleep mode, high LoRa output power up to 22dBm during transmission mode, and the BLE interface with output power up to 4dBm.
+The module itself comprises a RAK4630 as its main component. The RAK4630 is a combination of a nRF52840 MCU and an SX1262 LoRa chip, it features ultra-low power consumption of 2.0&nbsp;uA during sleep mode, high LoRa output power up to 22&nbsp;dBm during transmission mode, and the BLE interface with output power up to 4&nbsp;dBm.
 
 The module complies with LoRaWAN 1.0.2 protocols, it also supports LoRa point to point communication.
 
@@ -35,7 +35,8 @@ The RF communication characteristic of the module (Lora® + BLE) makes it suitab
 ### Features
 
 - TCXO crystal for LoRa chip
-- I/O ports: UART/I2C/GPIO/USB/SPI (optional NFC interface)
+- I/O ports: UART/I2C/GPIO/USB
+- SPI pins and optional NFC interface are accesible using WisBlock IO module
 - Temperature range: -40&nbsp;°C to +85&nbsp;°C
 - Supply voltage: 2.0 ~ 3.6&nbsp;V
 - Low-Power Wireless Systems with 7.8&nbsp;KHz to 500&nbsp;KHz Bandwidth
@@ -104,6 +105,11 @@ Add this image when the top and bottom view illustrations are correct already.
 #### RF Characteristics
 
 The RAK4631 module supports the LoRaWAN bands shown in Table below. When buying a RAK4631 module, please pay attention to specify the correct core module RAK4630 H/L for your region. In which H stands for high-frequency regions and L for low-frequency regions.  
+
+:::tip 📝 NOTE
+Detailed information about the RAK4631 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/). 
+:::
+
 |     Region           |     Frequency(MHz)    |     Core Module    |
 |----------------------|-----------------------|--------------------|
 |     India           |     IN865             |     RAK4630(H)     |

@@ -73,9 +73,9 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
 
 #### Interfaces
 
-| Module                 | Interfaces   |
-| ---------------------- | ------------ |
-| RAK811 Breakout Board  | UART1, GPIOs |
+| Module                | Interfaces   |
+| --------------------- | ------------ |
+| RAK811 Breakout Board | UART1, GPIOs |
 
 #### Pin Definition
 
@@ -95,28 +95,28 @@ The high radio frequency hardware support the regions of EU868, US915, AU915, KR
 
 ###### High RF Pin Definition
 
-| **Pin No.** | **Name**  | **Type** | **Description**                       |
-| ----------- | --------- | -------- | ------------------------------------- |
-| 1           | VCC 3.3&nbsp;V | P        | Main Power Voltage Source Input       |
-| 2           | PA9/UART1_TX| O        | UART1 Interface (AT Commands and FW Update)                       |
-| 3           | PA10/UART1_RX | I        | UART1 Interface (AT Commands and FW Update)                       |
-| 4           | PB12/ADC      | I/O      | GPIO and ADC                            |
-| 5           | RST       | I        | Reset Trigger Input, Low Active       |
-| 6           | PB3       | I/O      | GPIO only                  |
-| 7           | PB5       | I/O      | GPIO only                  |
-| 8           | PA15      | I/O      | GPIO only                  |
-| 9           | BOOT0     |          | Boot mode GPIO enable pin - high active |
-| 10          | GND       |          | Ground connections                    |
-| 11          | PA0/ADC       | I/O        | GPIO and ADC                               |
-| 12          | PA1/ADC       | I/O        | GPIO and ADC                               |
-| 13          | PA14      |          | SWD Debug Pin (SWCLK)                 |
-| 14          | PA13     |          | SWD Debug Pin (SWDIO)                |
-| 15          | PB4       | I/O        | GPIO only                   |
-| 16          | PB15/ADC      | I/O      | GPIO and ADC                              |
-| 17          | PA2/ADC       | I/O      | GPIO and ADC                                |
-| 18          | PA8       | I/O      | GPIO only                  |
-| 19          | PA12      | I/O        | GPIO only                 |
-| 20          | PB14/ADC      | I/O      | GPIO and ADC                               |
+| **Pin No.** | **Name**       | **Type** | **Description**                             |
+| ----------- | -------------- | -------- | ------------------------------------------- |
+| 1           | VCC 3.3&nbsp;V | P        | Main Power Voltage Source Input             |
+| 2           | PA9/UART1_TX   | O        | UART1 Interface (AT Commands and FW Update) |
+| 3           | PA10/UART1_RX  | I        | UART1 Interface (AT Commands and FW Update) |
+| 4           | PB12/ADC       | I/O      | GPIO and ADC                                |
+| 5           | RST            | I        | Reset Trigger Input, Low Active             |
+| 6           | PB3            | I/O      | GPIO only                                   |
+| 7           | PB5            | I/O      | GPIO only                                   |
+| 8           | PA15           | I/O      | GPIO only                                   |
+| 9           | BOOT0          |          | Boot mode GPIO enable pin - high active     |
+| 10          | GND            |          | Ground connections                          |
+| 11          | PA0/ADC        | I/O      | GPIO and ADC                                |
+| 12          | PA1/ADC        | I/O      | GPIO and ADC                                |
+| 13          | PA14           |          | SWD Debug Pin (SWCLK)                       |
+| 14          | PA13           |          | SWD Debug Pin (SWDIO)                       |
+| 15          | PB4            | I/O      | GPIO only                                   |
+| 16          | PB15/ADC       | I/O      | GPIO and ADC                                |
+| 17          | PA2/ADC        | I/O      | GPIO and ADC                                |
+| 18          | PA8            | I/O      | GPIO only                                   |
+| 19          | PA12           | I/O      | GPIO only                                   |
+| 20          | PB14/ADC       | I/O      | GPIO and ADC                                |
 
 ##### Low Radio Frequency (RAK811(L))
 
@@ -132,28 +132,28 @@ The low radio frequency is applicable to bandwidth of regions EU433 and CN470.
 
 ###### Low RF Pin Definition
 
-| **Pin No.** | **Name**  | **Type** | **Description**                       |
-| ----------- | --------- | -------- | ------------------------------------- |
-| 1           | VCC 3.3&nbsp;V | P        | Main Power Voltage Source Input       |
-| 2           | PA9/UART1_TX | O        | UART1 Interface (AT Commands and FW Update)                      |
-| 3           | PA10/UART1_RX | I        | UART1 Interface (AT Commands and FW Update)                      |
-| 4           | PB12/ADC      | I/O      | GPIO and ADC                              |
-| 5           | RST       | I        | Reset Trigger Input, Low Active       |
-| 6           | PA3/ADC       | I/O      | GPIO and ADC                  |
-| 7           | PB5       | I/O      | GPIO only                  |
-| 8           | PA12      | I/O      | GPIO only                  |
-| 9           | PB4       |          | Boot mode GPIO enable pin - high active |
-| 10          | GND       |          | Ground connections                    |
-| 11          | PA0/ADC       | I/O        | GPIO and ADC                               |
-| 12          | PA1/ADC       | I/O        | GPIO and ADC                                |
-| 13          | PA14      |          | SWD Debug Pin (SWCLK)                |
-| 14          | PA13     |          | SWD Debug Pin SWDIO                 |
-| 15          | PA11      | I/O        | GPIO only                  |
-| 16          | PB15/ADC      | I/O      | GPIO and ADC                              |
-| 17          | PA2/ADC       | I/O      | GPIO and ADC                                |
-| 18          | PB13/ADC      | I/O      | GPIO and ADC                   |
-| 19          | PA12/ADC      | I/O        | GPIO and ADC                |
-| 20          | PB14/ADC      | I/O      | GPIO and ADC                               |
+| **Pin No.** | **Name**       | **Type** | **Description**                             |
+| ----------- | -------------- | -------- | ------------------------------------------- |
+| 1           | VCC 3.3&nbsp;V | P        | Main Power Voltage Source Input             |
+| 2           | PA9/UART1_TX   | O        | UART1 Interface (AT Commands and FW Update) |
+| 3           | PA10/UART1_RX  | I        | UART1 Interface (AT Commands and FW Update) |
+| 4           | PB12/ADC       | I/O      | GPIO and ADC                                |
+| 5           | RST            | I        | Reset Trigger Input, Low Active             |
+| 6           | PA3/ADC        | I/O      | GPIO and ADC                                |
+| 7           | PB5            | I/O      | GPIO only                                   |
+| 8           | PA12           | I/O      | GPIO only                                   |
+| 9           | PB4            |          | Boot mode GPIO enable pin - high active     |
+| 10          | GND            |          | Ground connections                          |
+| 11          | PA0/ADC        | I/O      | GPIO and ADC                                |
+| 12          | PA1/ADC        | I/O      | GPIO and ADC                                |
+| 13          | PA14           |          | SWD Debug Pin (SWCLK)                       |
+| 14          | PA13           |          | SWD Debug Pin SWDIO                         |
+| 15          | PA11           | I/O      | GPIO only                                   |
+| 16          | PB15/ADC       | I/O      | GPIO and ADC                                |
+| 17          | PA2/ADC        | I/O      | GPIO and ADC                                |
+| 18          | PB13/ADC       | I/O      | GPIO and ADC                                |
+| 19          | PA12/ADC       | I/O      | GPIO and ADC                                |
+| 20          | PB14/ADC       | I/O      | GPIO and ADC                                |
 
 #### RF Characteristics
 
@@ -182,15 +182,15 @@ The low radio frequency is applicable to bandwidth of regions EU433 and CN470.
 
 | Feature | Minimum | Typical | Maximum | Unit      |
 | ------- | ------- | ------- | ------- | --------- |
-| VCC     | 3.15    | 3.3     | 3.45    | Volts (V) |
+| VCC     | 2.1     | 3.3     | 3.45    | Volts (V) |
 
 ##### Current Consumption
 
-| Feature             | Condition  | Minimum     | Typical | Maximum | Unit |
-| ------------------- | ---------- | ----------- | ------- | ------- | ---- |
+| Feature             | Condition  | Minimum                 | Typical | Maximum | Unit |
+| ------------------- | ---------- | ----------------------- | ------- | ------- | ---- |
 | Current Consumption | TX Power   | 30 (@&nbsp;14&nbsp;dBm) |         |         | mA   |
-|                     | RX Mode    | 5.5         |         |         | mA   |
-|                     | Sleep Mode | 7.2         |         |         | uA   |
+|                     | RX Mode    | 5.5                     |         |         | mA   |
+|                     | Sleep Mode | 7.2                     |         |         | uA   |
 
 #### Mechanical Characteristics
 
@@ -247,8 +247,8 @@ Download the latest firmware of the RAK811 Breakout Board — both in low and hi
 
 #### Firmware / OS
 
-| Model     | Version      | Source                                                                                                        |
-| --------- | ------------ | ------------------------------------------------------------------------------------------------------------- |
+| Model     | Version     | Source                                                                            |
+| --------- | ----------- | --------------------------------------------------------------------------------- |
 | RAK811(L) | V3.0.0.14.L | [Download](https://downloads.rakwireless.com/LoRa/RAK811-BreakoutBoard/Firmware/) |
 | RAK811(H) | V3.0.0.14.H | [Download](https://downloads.rakwireless.com/LoRa/RAK811-BreakoutBoard/Firmware/) |
 

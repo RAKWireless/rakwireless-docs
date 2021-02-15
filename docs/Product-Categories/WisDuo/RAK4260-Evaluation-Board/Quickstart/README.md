@@ -659,7 +659,7 @@ After selecting the ABP mode, the following parameters appear in the “**ACTIVA
 
 * The parameters can be generated as random numbers by the platform or can be set with values. Once these parameters are filled properly, the process is completed by clicking on the “**(RE)ACTIVATE DEVICE**” button.
 
-##### Capturing LoRaWAN frames on ChirpStack Console
+##### Capturing LoRaWAN Frames on ChirpStack Console
 
 ###### View LoRaWAN OTAA Frames
 
@@ -732,3 +732,40 @@ Use p2p-rak4260 branch as shown in Figure 40.
 
 
 
+## Miscellaneous  
+  
+### RAK5005 Core Module Slot Connection to RAK4261
+  
+The RAK5005 is the base board that connects the RAK4260 Core Module. It creates the power supply for the attached module and provides additional IO and Sensor support for your project needs.  
+
+::: tip 📝 NOTE
+RAK4261 is a circuit board module for RAK5005 with pre-soldered RAK4260 LPWAN Module.
+:::
+  
+Listed below are the accessible pins and data bus of attached RAK5005 base board on the RAK4260 EVB:
+
+
+| RAK4261 Pin Definition | Function Name of WisBase | Pin Number | Pin Number | Function Name of WisBase | RAK4261 Pin Definition |
+| ---------------------- | ------------------------ | ---------- | ---------- | ------------------------ | ---------------------- |
+| NC                     | VBAT                     | 1          | 2          | VBAT                     | NC                     |
+| GND                    | GND                      | 3          | 4          | GND                      | GND                    |
+| 3V3                    | 3V3                      | 5          | 6          | 3V3                      | 3V3                    |
+| PA25_USB_P             | USB+                     | 7          | 8          | USB-                     | PA24_USB_N             |
+| NC                     | VBUS                     | 9          | 10         | SW1                      | NC                     |
+| UART1_TX/PA04          | TXD0                     | 11         | 12         | RXD0                     | UART1_RX/PA05          |
+| RST                    | RESET                    | 13         | 14         | LED1                     | PA27                   |
+| PA06                   | LED2                     | 15         | 16         | LED3                     | PA07                   |
+| 3V3                    | VDD                      | 17         | 18         | VDD                      | 3V3                    |
+| SDA/PA16               | I2C1_SDA                 | 19         | 20         | I2C1_SCL                 | SCL/PA17               |
+| PA08                   | AIN0                     | 21         | 22         | AIN1                     | PA09                   |
+| NC                     | BOOT0                    | 23         | 24         | NC                       | NC                     |
+| PA22_SS                | SPI_CS                   | 25         | 26         | SPI_CLK                  | PB23_SCK               |
+| PB02_MISO              | SPI_MISO                 | 27         | 28         | SPI_MOSI                 | PA23_MOSI              |
+| PB22                   | IO1                      | 29         | 30         | IO2                      | PA15                   |
+| PA14                   | IO3                      | 31         | 32         | IO4                      | NC                     |
+| UART3_TX/PA19          | TXD1                     | 33         | 34         | RXD1                     | UART3_RX/PA18          |
+| NC                     | I2C2_SDA                 | 35         | 36         | I2C2_SCL                 | NC                     |
+| NC                     | IO5                      | 37         | 38         | IO6                      | NC                     |
+| GND                    | GND                      | 39         | 40         | GND                      | GND                    |
+
+<br>

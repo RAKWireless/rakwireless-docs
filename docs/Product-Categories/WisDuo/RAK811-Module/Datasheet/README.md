@@ -273,7 +273,7 @@ RAK811 supports two UARTs: UART1 (pin6-TX1, pin7-RX1) and UART3 (pin25-TX3, pin2
 
 | Feature | Minimum | Typical | Maximum | Unit      |
 | ------- | ------- | ------- | ------- | --------- |
-| VCC     | 3.15    | 3.3     | 3.45    | Volts (V) |
+| VCC     | 2.1     | 3.3     | 3.45    | Volts (V) |
 
 ##### Current Consumption
 

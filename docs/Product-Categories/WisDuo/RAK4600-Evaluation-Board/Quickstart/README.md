@@ -936,6 +936,42 @@ at+send=lora:2:123456789
 
 ## Miscellaneous
 
+### RAK5005 Core Module Slot Connection to RAK4601
+  
+The RAK5005 is the base board that connects the RAK4600 Core Module. It creates the power supply for the attached module, and provides additional IO and Sensor support for your project needs.  
+
+::: tip 📝 NOTE
+RAK4601 is a circuit board module for RAK5005 with pre-soldered RAK4600 LPWAN Module.
+:::
+  
+Listed below are the accessible pins and data bus of attached RAK5005 base board on the RAK4600 EVB:
+
+
+| RAK4601 Pin Definition | Function Name of WisBase | Pin Number | Pin Number | Function Name of WisBase | RAK4601 Pin Definition |
+| ---------------------- | ------------------------ | ---------- | ---------- | ------------------------ | ---------------------- |
+| NC                     | VBAT                     | 1          | 2          | VBAT                     | NC                     |
+| GND                    | GND                      | 3          | 4          | GND                      | GND                    |
+| 3V3                    | 3V3                      | 5          | 6          | 3V3                      | 3V3                    |
+| NC                     | USB+                     | 7          | 8          | USB-                     | NC                     |
+| NC                     | VBUS                     | 9          | 10         | SW1                      | NC                     |
+| UART1_TX/P0.23         | TXD0                     | 11         | 12         | RXD0                     | UART1_RX/P0.22         |
+| MCU_RST                | RESET                    | 13         | 14         | LED1                     | NC                     |
+| NC                     | LED2                     | 15         | 16         | LED3                     | NC                     |
+| 3V3                    | VDD                      | 17         | 18         | VDD                      | 3V3                    |
+| I2C1_SDA/P0.13         | I2C1_SDA                 | 19         | 20         | I2C1_SCL                 | I2C1_SCL/P0.12         |
+| NC                     | AIN0                     | 21         | 22         | AIN1                     | NC                     |
+| NC                     | BOOT0                    | 23         | 24         | NC                       | NC                     |
+| NC                     | SPI_CS                   | 25         | 26         | SPI_CLK                  | NC                     |
+| NC                     | SPI_MISO                 | 27         | 28         | SPI_MOSI                 | NC                     |
+| IO1/RESERVED           | IO1                      | 29         | 30         | IO2                      | IO2/RESERVED           |
+| NFC1/P0.09             | IO3                      | 31         | 32         | IO4                      | NFC2/P0.10             |
+| UART2_TX/P0.19         | TXD1                     | 33         | 34         | RXD1                     | UART2_RX/P0.18         |
+| NC                     | I2C2_SDA                 | 35         | 36         | I2C2_SCL                 | NC                     |
+| NC                     | IO5                      | 37         | 38         | IO6                      | NC                     |
+| GND                    | GND                      | 39         | 40         | GND                      | GND                    |
+
+<br>
+
 ### Bluetooth Connection Modes
 
 There are three BLE modes in RAK4600 from the firmware V3.0.0.6 on, the **Peripheral Mode**, the **Central Mode** and the **Beacon Scan Mode**. You can change the work mode of RAK4600’s BLE using the commands provided below which is defined [here](../../RAK4600-Module/AT-Command-Manual/)

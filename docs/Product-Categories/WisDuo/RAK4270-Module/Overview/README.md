@@ -22,7 +22,7 @@ The RAK4270 LoRa Module includes an **STM32L071 MCU** and an **SX1262** LoRa chi
 
 The module complies with Class A and C of LoRaWAN 1.0.2 specifications, and it also supports LoRa Point to Point (P2P) communications. The module is suitable for various applications that require long-range data acquisition and low power consumption, such as smart meters, supply chain and logistics tracking, agricultural sensors, and smart cities.
 
-You can configure the mode and operation of the RAK4270 module using [RAK4270 AT Commands](/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/) via a UART interface. Also, it offers low power features which is very suitable for battery powered applications.
+You can configure the mode and operation of the RAK4270 module using the [AT Commands](/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/) via a UART interface. Also, it offers low power features which is very suitable for battery powered applications.
 
 ## Features
 
@@ -33,8 +33,8 @@ You can configure the mode and operation of the RAK4270 module using [RAK4270 AT
 - AT commands control interface
 - Temperature range: **-30&nbsp;°C to +85&nbsp;°C**
 - Supply voltage: **2.0 to 3.6&nbsp;V**
-- **Supported bands**: (EU433, CN470, IN865, EU868, AU915, US915, KR920, AS920 and AS923)
-- LoRa bandwidth range of 7.8&nbsp;kHz to&nbsp;500 kHz, SF5 to SF12, BR=0.018~62.5&nbsp;kb/s
+- **Supported bands**: (EU433, CN470, IN865, EU868, AU915, US915, KR920 and AS923)
+- LoRa bandwidth range of 7.8&nbsp;kHz to 500&nbsp;kHz, SF5 to SF12, BR=0.018~62.5&nbsp;kb/s
 - Ultra-low power Consumption: **1.08&nbsp;uA in sleep mode at 2.0&nbsp;V operation**
 - Arm Cortex-M0+ 32-bit RISC core
 - 128&nbsp;kbytes flash memory with ECC

@@ -25,7 +25,7 @@ export default {
       "name": "RAKwireless Documentation Center",
       "alternateName": "RAK Documentation Center",
       "url": "https://docs.rakwireless.com/",
-      "logo": "https://docs.rakwireless.com/assets/rakwireless/RAK-favicon-blue.svg",
+      "logo": "https://docs.rakwireless.com/assets/rakwireless/RAK-favicon-blue.png",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+86-755-86108311",
@@ -65,12 +65,12 @@ export default {
     <meta property="og:url" content="https://docs.rakwireless.com/">
     <meta property="og:description" content="The RAK® Documentation Center is a perfect place to find comprehensive documents curated by our tech experts that help you explore the potential of our products on the Internet of Things (IoT).">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://docs.rakwireless.com/assets/rakwireless/RAK-favicon-blue.svg">
+    <meta property="og:image" content="https://docs.rakwireless.com/assets/rakwireless/RAK-favicon-blue.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@RAKwireless">
     <meta name="twitter:title" content="RAKwireless Documentation Center">
     <meta name="twitter:description" content="The RAK® Documentation Center is a perfect place to find comprehensive documents curated by our tech experts that help you explore the potential of our products on the Internet of Things (IoT).">
-    <meta name="twitter:image" content="https://docs.rakwireless.com/assets/rakwireless/RAK-favicon-blue.svg">
+    <meta name="twitter:image" content="https://docs.rakwireless.com/assets/rakwireless/RAK-favicon-blue.png">
   `,
   pageOG: `
     <meta property="og:title" content="<title>">
