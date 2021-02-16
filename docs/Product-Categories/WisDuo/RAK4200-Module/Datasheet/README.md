@@ -208,6 +208,14 @@ The RAK4200 WisDuo LPWAN Module when in sleep mode consumes **11.8&nbsp;uA** of 
   caption="Oscilloscope Screen Capture of RAK4200 WisDuo LPWAN Module in sleep mode"
 />
 
+##### Schematic
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-module/datasheet/schematic.png"
+  width="100%"
+  caption="Schematic Diagram"
+/>
+
 #### Mechanical Characteristics
 
 <!---The following figure is the mechanical dimensions of the RAK4200 WisDuo LPWAN Module.--->

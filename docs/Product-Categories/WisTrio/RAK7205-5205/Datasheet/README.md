@@ -374,76 +374,23 @@ The table below lists the operation and storage temperature requirements:
 #### Schematic Diagram
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-schematic-diagram-with-bq21040-chip.jpg"
-  width="75%"
-  caption="RAK5205 Schematic Diagram with BQ21040 chip"
+  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-vc-1.png"
+  width="100%"
+  caption="Schematic Diagram - 1"
 />
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-schematic-diagram-with-rp104n331-chip.jpg"
-  width="75%"
-  caption="RAK5205 Schematic Diagram with RP104N331 chip"
+  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-vc-2.png"
+  width="100%"
+  caption="Schematic Diagram - 2"
 />
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-schematic-diagram-with-cp2102-chip.jpg"
-  width="75%"
-  caption="RAK5205 Schematic Diagram with CP2102 chip"
+  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-vc-3.png"
+  width="100%"
+  caption="Schematic Diagram - 3"
 />
 
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-schematic-diagram.jpg"
-  width="50%"
-  caption="RAK5205 Schematic Diagram"
-/>
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-schematic-diagram-2.jpg"
-  width="50%"
-  caption="RAK5205 Schematic Diagram"
-/>
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-schematic-diagram-3.jpg"
-  width="50%"
-  caption="RAK5205 Schematic Diagram"
-/>
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-schematic-diagram-4.jpg"
-  width="50%"
-  caption="RAK5205 Schematic Diagram"
-/>
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-schematic-diagram-5.jpg"
-  width="60%"
-  caption="RAK5205 Schematic Diagram"
-/>
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-schematic-diagram-6.jpg"
-  width="75%"
-  caption="RAK5205 Schematic Diagram"
-/>
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-schematic-diagram-7.jpg"
-  width="75%"
-  caption="RAK5205 Schematic Diagram"
-/>
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-schematic-diagram-8.jpg"
-  width="60%"
-  caption="RAK5205 Schematic Diagram"
-/>
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-schematic-diagram-9.jpg"
-  width="80%"
-  caption="RAK5205 Schematic Diagram"
-/>
 
 ### Software
 

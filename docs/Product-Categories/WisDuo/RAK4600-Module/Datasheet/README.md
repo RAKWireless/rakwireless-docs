@@ -105,7 +105,7 @@ The hardware specifications are categorized into five parts. It discusses the in
 | 14      | GND        |         | Ground                                         |
 | 15      | RF_BT      | I/O     | BLE<br>RF OUT                                  |
 | 16      | GND        |         | Ground                                         |
-| 17      | RF_L       | I/O     | LoRa<br>RF OUT                                |
+| 17      | RF_L       | I/O     | LoRa<br>RF OUT                                 |
 | 18      | GND        |         | Ground                                         |
 | 19      | GND        |         | Ground                                         |
 | 20      | GND        |         | Ground                                         |
@@ -188,14 +188,14 @@ Several current consumption ratings are provided below for detailed RAK4600 WisD
 
 Shown in the table provided below is the typical current consumption of the RAK4600 WisDuo LPWAN Module.
 
-| **Item**               | **Current Consumption** | **Condition**                    |
-| ---------------------- | ----------------------- | -------------------------------- |
-| **LoRa TX** @20dBm    | 125mA                   | LoRa @ PA_BOOST & BT sleep      |
-| **LoRa TX** @17dBm    | 92mA                    | LoRa @ PA_BOOST & BT sleep      |
-| **BT TX** @4dBm        | 9mA                     | BT Tx mode & LoRa sleep         |
+| **Item**              | **Current Consumption** | **Condition**                    |
+| --------------------- | ----------------------- | -------------------------------- |
+| **LoRa TX** @20dBm    | 125mA                   | LoRa @ PA_BOOST & BT sleep       |
+| **LoRa TX** @17dBm    | 92mA                    | LoRa @ PA_BOOST & BT sleep       |
+| **BT TX** @4dBm       | 9mA                     | BT Tx mode & LoRa sleep          |
 | **LoRa RX** @37.5Kbps | 17mA                    |                                  |
-| **BT RX** @2Mbps       | 11.5mA                  |                                  |
-| **Node Sleep**         | 2.0μA                   | The whole board is in sleep mode |
+| **BT RX** @2Mbps      | 11.5mA                  |                                  |
+| **Node Sleep**        | 2.0μA                   | The whole board is in sleep mode |
 
 ##### Laboratory Testing
 
@@ -244,6 +244,14 @@ The RAK4600 WisDuo LPWAN Module when in sleep mode consumes **11.2 μA** of curr
   caption="Oscilloscope Screen Capture of RAK4600 WisDuo LPWAN Module in sleep mode"
 />
 
+##### Schematic Diagram
+
+<rk-img
+  src="/assets/images/wisduo/rak4600-module/datasheet/schematic/rak4600-module.png"
+  width="100%"
+  caption="Schematic Diagram"
+/>
+
 #### Mechanical Characteristics
 
 The mechanical dimensions of the RAK4600 WisDuo LPWAN Module are shown in the figures provided in this section.
@@ -286,8 +294,8 @@ Download the latest firmware of the RAK4600 WisDuo LPWAN Module  provided in the
 
 #### Firmware
 
-| Model   | Version  | Source                                                                                   |
-| ------- | -------- | ---------------------------------------------------------------------------------------- |
+| Model   | Version   | Source                                                                                          |
+| ------- | --------- | ----------------------------------------------------------------------------------------------- |
 | RAK4600 | V3.4.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK4600/Firmware/RAK4600_Latest_Firmware.zip) |
 
 ## Certification

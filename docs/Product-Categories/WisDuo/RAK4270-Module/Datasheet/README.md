@@ -190,7 +190,7 @@ It is recommended to add four decoupling capacitors near the RAK4270 power suppl
 
 
 <rk-img
-  src="/assets/images/wisduo/rak4270-module/datasheet/10.schematic-diagram.png"
+  src="/assets/images/wisduo/rak4270-module/datasheet/10.schematic.png"
   width="100%"
   caption="RAK4270 Schematic Diagram"
 />

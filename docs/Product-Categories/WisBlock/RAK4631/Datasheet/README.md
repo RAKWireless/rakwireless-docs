@@ -157,6 +157,25 @@ Detailed information about the RAK4631 BLE and LoRa antenna can be found on the 
 | VBUS | VBUS USB supply voltage | 4.35 | 5.0 | 5.5 | V | 
 | VBAT_NRF | NRF52840 high voltage power supply | 2.5 |  | 5.5 | V | 
 
+##### Schematic Diagram
+
+<rk-img
+  src="/assets/images/wisblock/rak4631/datasheet/rak4631.png"
+  width="100%"
+  caption="Mechanical Dimensions"
+/>
+
+- **WisConnector**: The breakout module allows the RAK4630 stamp module pinout to be transferred by the board-to-board WisConnector.
+
+- **WisConnector Pin Order**: The pin order of the WisConnector is located in the bottom layer of the module.
+
+- **Core Module**: The breakout module itself has a RAK4630 at its core, and it shows the core module pin and connection information. By default, the NFC function is disabled for conserve the low power characteristic.
+
+- **SWD Interface**: The breakout module exposes a SWD debug interface. Additionally, the RST pin is used for resetting the core module RAK4630.
+
+- **Power Up Automatic Reset**: The breakout module has a power-up automatic reset circuit, and the schematic shows the automatic reset mechanism. This module also can be reset though RAK5005-O reset pin.
+
+
 #### Mechanical Characteristics
 
 ##### Board Dimensions
@@ -175,6 +194,8 @@ Detailed information about the RAK4631 BLE and LoRa antenna can be found on the 
   caption="WisConnector PCB footprint and recommendations"
 />
 
+<!--
+
 #### Schematic Diagram
 
 The following section will describe the breakout module schematic. It includes WisConnector, core module, SWD interface, and power up automatic reset.
@@ -188,7 +209,8 @@ The breakout module allows the RAK4630 stamp module’s pinout to be transferred
   width="50%"
   caption="WisConnector pin defintion"
 />
-<!-- 
+
+
 | **Pin No.** | **Name** | 
 | ---- | ---- | 
 | 1 | VBAT_1 | 
@@ -234,7 +256,7 @@ The breakout module allows the RAK4630 stamp module’s pinout to be transferred
 | F1 | GND5 | 
 | F2 | GND6 | 
 | F3 | GND7 | 
-| F4 | GND8 |  -->
+| F4 | GND8 |  
 
 
 ##### WisConnector Pin Order
@@ -256,7 +278,7 @@ The breakout module itself has a RAK4630 at its core. Figure 7 shows the core mo
   caption="Core module pin definition"
 />
 
-<!-- | **Pin No.** | **Name** | 
+| **Pin No.** | **Name** | 
 | ---- | ---- | 
 | 1 | VBUS | 
 | 2 | USB- | 
@@ -301,7 +323,7 @@ The breakout module itself has a RAK4630 at its core. Figure 7 shows the core mo
 | 41 | P0.04/AIN2 | 
 | 42 | GND | 
 | 43 | VDD_NRF |  
-| 44 | VBAT_NRF | -->
+| 44 | VBAT_NRF | 
 
 
 ##### SWD Interface
@@ -325,7 +347,7 @@ The breakout module has a power-up automatic reset circuit, and Figure 9 shows t
 />
 
 
-<!-- ##### Flash
+ ##### Flash
 
 The RAK4630 module comprises a flash memory controlled by the SPI interface. The memory size is 8 MB
 <rk-img

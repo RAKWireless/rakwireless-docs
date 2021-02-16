@@ -204,11 +204,11 @@ The table below shows the power consumption of RAK4600 Breakout Board:
 | Rx mode BT @2&nbsp;Mbps        | 11.5&nbsp;mA             | BT Rx mode & LoRa sleep        |
 | Sleep mode                     | 11.20&nbsp;uA            | LoRa & BT sleep                |
 
-#### Schematic Diagram
+##### Schematic Diagram
 
 
 <rk-img
-  src="/assets/images/wisduo/rak4600-breakout-board/datasheet/schematic-diagram/tyd3goloywnp7wbiflva.jpg"
+  src="/assets/images/wisduo/rak4600-breakout-board/datasheet/schematic-diagram/tyd3goloywnp7wbiflva.png"
   width="100%"
   caption="RAK4600 Breakout Board Schematic"
 />
@@ -219,7 +219,7 @@ Download the latest firmware of the RAK4600 Breakout Board in the table provided
 
 #### Firmware
 
-| Model   | Version  | Source                                                                                   |
-| ------- | -------- | ---------------------------------------------------------------------------------------- |
+| Model   | Version  | Source                                                                                          |
+| ------- | -------- | ----------------------------------------------------------------------------------------------- |
 | RAK4600 | 3.4.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK4600/Firmware/RAK4600_Latest_Firmware.zip) |
 

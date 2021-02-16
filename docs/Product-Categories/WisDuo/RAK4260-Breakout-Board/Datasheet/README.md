@@ -185,7 +185,7 @@ The RAK4260 Breakout Board supports the following LoRa bands:
 | Rx mode LoRa @37.5Kbps | 13.6 mA           | -                    |
 | Sleep mode              | 860 nA            | Backup Mode V = 3.3V |
 
-#### Schematic Diagram
+##### Schematic Diagram
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/datasheet/schematic-diagram.png"

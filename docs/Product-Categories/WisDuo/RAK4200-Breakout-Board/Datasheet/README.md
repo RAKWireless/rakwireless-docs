@@ -174,8 +174,6 @@ The table below shows the power consumption of RAK4200 Breakout Board:
 
 ##### Schematic Diagram
 
-The RAK4200 Breakout Board circuit is shown below:
-
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/datasheet/rak4200-breakout-module-schematic.png"
   width="100%"

@@ -199,6 +199,7 @@ LoRa Antenna return loss is also shown in the figure below:
 
 #### Electrical Characteristics
 
+
 ##### Working Mode
 
 | Mode        | Condition | Power Consumption |
@@ -231,6 +232,7 @@ The table below lists the operation and storage temperature requirements.
 | Extended Temp. Range  | -10 °C |         | +80 °C |
 
 #### Schematic Diagram
+
 
 <rk-img
   src="/assets/images/wisnode/rak7200/datasheet/schematic-diagram-1.png"

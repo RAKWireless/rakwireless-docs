@@ -167,11 +167,11 @@ Values listed in the table are values measured with a LoRa frequency of **868&nb
 | Sleep    |      -       | 1.5&nbsp;uA             |
 
 
-#### Schematic Diagram
+##### Schematic Diagram
 
 
 <rk-img
   src="/assets/images/wisduo/rak4270-breakout-board/datasheet/3.schematic.png"
-  width="60%"
+  width="100%"
   caption="RAK4270 Breakout Board Schematic"
 />

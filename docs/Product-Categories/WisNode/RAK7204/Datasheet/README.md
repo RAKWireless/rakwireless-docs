@@ -83,7 +83,8 @@ See the supported range in the table below:
 
 #### Electrical Characteristics
 
-The following are the electrical characteristics of RAK7204 WisNode Sense Home. Please [contact us](mailto:support@rakwireless.com) if you need other details for your project.
+
+The following are the electrical characteristics of RAK7204 WisNode Sense Home. [Contact us](mailto:support@rakwireless.com) if you need other details for your project.
 
 ##### Power Consumption
 
@@ -95,7 +96,7 @@ The following are the electrical characteristics of RAK7204 WisNode Sense Home. 
 
 ##### Battery Specifications
 
-The RAK7204 comes with **3500 mAh** high capacity lithium battery included. It is removable and can be exchanged at any time. In case you are to replace it please adhere to the specification in the table below.
+The RAK7204 comes with **3500 mAh** high capacity lithium battery included. It is removable and can be exchanged at any time. In case you are to replace it, adhere to the specification in the table below.
 
 :::warning ⚠️ WARNING
 The included battery is **non rechargeable**. Please do note that when configuring the device, you have to connect the battery first in order for it to work.
@@ -119,6 +120,29 @@ The pin distance of the battery connector is **2.0mm**. Reverse connection or sh
 | --------------------- | ------ | ------- | ------ |
 | Operating Temperature | -40 ºC | +25 ºC  | +85 ºC |
 | Storage Temperature   | -40 ºC | +25 ºC  | +85 ºC |
+
+##### Schematic Diagram
+
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/datasheet/rak7204-vc-1.png"
+  width="100%"
+  caption="Schematic Diagram - 1"
+/>
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/datasheet/rak7204-vc-2.png"
+  width="100%"
+  caption="Schematic Diagram - 2"
+/>
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/datasheet/rak7204-vc-3.png"
+  width="100%"
+  caption="Schematic Diagram - 3"
+/>
+
+
 
 #### Sensor Characteristics
 

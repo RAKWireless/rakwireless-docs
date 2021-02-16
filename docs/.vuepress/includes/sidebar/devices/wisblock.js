@@ -240,7 +240,7 @@ module.exports = {
 
 '/Product-Categories/WisBlock/RAK1904/': [{
   title: 'Product Overview',
-  path: '/Product-Categories/WisBlock/RAK1903/Overview/',
+  path: '/Product-Categories/WisBlock/RAK1904/Overview/',
   collapsable: false,
   nested: true,
   download: true,
