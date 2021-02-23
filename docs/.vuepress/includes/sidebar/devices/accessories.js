@@ -222,6 +222,42 @@ module.exports = {
       download: true,
       sidebarDepth: 4
     }
+  ],
+  '/Product-Categories/Accessories/GPS-SPD/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/GPS-SPD/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/GPS-SPD/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
+  '/Product-Categories/Accessories/LoRa-WiFi-LTE-SPD/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/LoRa-WiFi-LTE-SPD/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/LoRa-WiFi-LTE-SPD/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
 
   ],
 

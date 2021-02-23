@@ -89,7 +89,7 @@ ERROR: [ErrCode]\r\n
 | 85         | The LoRa frequency and data rate are invalid.                                                                                                                               |
 | 86         | The device has not joined into a LoRa network.                                                                                                                              |
 | 87         | The length of the packet exceeded the maximum allowed by the LoRa protocol.                                                                                                 |
-| 88         | Service is closed by the server. Due to the limitation of duty cycle, the server will send " SRV_MAC_DUTY_CYCLE_REQ" MAC command to close the service.                      |
+| 88         | Service is closed by the server. Due to the limitation of duty cycle, the server will send "SRV_MAC_DUTY_CYCLE_REQ" MAC command to close the service.                      |
 | 89         | This is an unsupported region code.                                                                                                                                         |
 | 90         | Duty cycle is restricted. Due to duty cycle, data cannot be sent at this time until the time limit is removed.                                                              |
 | 91         | No valid LoRa channel could be found.                                                                                                                                       |

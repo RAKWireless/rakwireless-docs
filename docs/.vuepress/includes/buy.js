@@ -438,6 +438,16 @@ export default {
     img: '/assets/images/accessories/poe-injector/poe-injector-illustration.png',
     store: 'https://store.rakwireless.com/products/poe-injector?variant=37987145384134'
   },
+  '/Product-Categories/Accessories/LoRa-WiFi-LTE-SPD/': {
+    label: 'LoRa WiFi LTE SPD',
+    img: '/assets/images/accessories/lora-wifi-lte-spd/lightning_arrestor.png',
+    store: 'https://store.rakwireless.com/products/lightning-arrestor-for-gps-antenna?utm_source=LoRa-WiFi-LTE-SPD&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/Accessories/GPS-SPD/': {
+    label: 'GPS SPD',
+    img: '/assets/images/accessories/gps-spd/lightning_arrestor_gps.png',
+    store: 'https://store.rakwireless.com/products/lightning-arrestor?utm_source=GPS-SPD&utm_medium=Document&utm_campaign=BuyFromStore'
+  }
 
 
 }

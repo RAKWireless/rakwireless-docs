@@ -330,6 +330,14 @@ module.exports = {
     download: true,
     sidebarDepth: 4
   },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisDuo/RAK4600-Evaluation-Board/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
   ],
   '/Product-Categories/WisDuo/RAK4600-Module/': [{
     title: 'Product Overview',
