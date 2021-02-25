@@ -258,6 +258,43 @@ module.exports = {
       download: true,
       sidebarDepth: 4
     }
+  ],
+  '/Product-Categories/Accessories/GPS-Antenna/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/GPS-Antenna/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/GPS-Antenna/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
+
+  '/Product-Categories/Accessories/RAKARG17/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAKARG17/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAKARG17/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
 
   ],
 

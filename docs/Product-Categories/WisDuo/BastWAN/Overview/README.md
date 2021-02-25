@@ -11,7 +11,7 @@ next: ../Quickstart/
 
 Thank you for choosing **RAK3244 BastWAN** in your awesome IoT Project! 🎉 To help you get started, we have provided the necessary documentations for the product.
 
-- [BastWAN Quick Start Guide](../Quickstart/)
+- [Quick Start Guide](../Quickstart/)
 - [Datasheet](../Datasheet/)
 - [BastWAN Examples by RAK](https://github.com/RAKWireless/Evaluation_Boards/tree/master/RAK4260/Arduino)
 - [ElectronicCats BastWAN Repository](https://github.com/ElectronicCats/Bast-WAN)
@@ -30,7 +30,7 @@ The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P
 
 - Feather compatible with a feather-like weight of 5 grams
 - RAK4260 @ 48&nbsp;MHz with 3.3&nbsp;V logic/power
-- 256&nbsp;KB of FLASH + 32KB of RAM
+- 256&nbsp;KB of FLASH + 32&nbsp;KB of RAM
 - 32.768&nbsp;kHz crystal for clock generation & RTC
 - 3.3&nbsp;V regulator with 500&nbsp;mA peak current output
 - USB native support, comes with USB bootloader and serial port debugging

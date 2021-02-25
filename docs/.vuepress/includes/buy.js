@@ -447,9 +447,12 @@ export default {
     label: 'GPS SPD',
     img: '/assets/images/accessories/gps-spd/lightning_arrestor_gps.png',
     store: 'https://store.rakwireless.com/products/lightning-arrestor?utm_source=GPS-SPD&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/Accessories/RAKARG17/': {
+    label: 'GPS SPD',
+    img: '/assets/images/accessories/antenna-black/1.png',
+    store: 'https://store.rakwireless.com/collections/accessories/products/5-8dbi-fiber-glass-antenna?variant=39264936427718'
   }
-
-
 }
 
 
