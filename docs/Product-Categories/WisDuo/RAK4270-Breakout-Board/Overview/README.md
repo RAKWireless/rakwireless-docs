@@ -13,7 +13,7 @@ Thank you for choosing **RAK4270 Breakout Board** in your awesome IoT Project! ð
 * [Quick Start Guide](../Quickstart/)
 * [AT Command Manual](../AT-Command-Manual/)
 * [Datasheet](../Datasheet/)
-
+* [RAK4270 Breakout Board 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/PWB-RAK4270%20Breakout%20Board.stp)
   
 
 ## Product Description

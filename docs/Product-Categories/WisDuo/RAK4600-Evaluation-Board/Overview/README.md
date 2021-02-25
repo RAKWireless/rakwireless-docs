@@ -14,7 +14,8 @@ Thank you for choosing **RAK4600 Evaluation Board** in your awesome IoT Project!
 * [Quick Start Guide](../Quickstart/)
 * [AT Command Manual](../AT-Command-Manual/)
 * [Datasheet](../Datasheet/)
-
+* [RAK4600 Evaluation Board 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/RAK4600_EVALUATION_BOARD.stp)
+  
 ## Product Description
 
 RAK4600 Evaluation Board is designed to give you a quick start to explore the LoRa/LPWAN world. The board measures 30 x 60&nbsp;mm and supports USB power supply, 3.7&nbsp;V LiPo battery, and 5&nbsp;V solar charging.

@@ -15,7 +15,7 @@ Thank you for choosing **RAK4270 WisDuo LPWAN Module** in your awesome IoT Proje
 - <a href="/RUI/" target="_blank">RUI Customized Development</a> - RAK811 module supports RUI (RAKwireless Unified Interface) Customized Development.
 - [Low Level Development](/Product-Categories/WisDuo/RAK4270-Module/Low-Level-Development/)
 - [Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/)
-
+- [RAK4270 Module 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/PWB-RAK4270.stp)
 ## Product Description
 
 The RAK4270 LoRa Module includes an **STM32L071 MCU** and an **SX1262** LoRa chip, which supports eight spreading factors (SF5 ~ SF12) and signal bandwidth that can be adjusted between 7.8&nbsp;kHz to 500&nbsp;kHz. It has an ultra-low power consumption of 1.08&nbsp;uA in Sleep Mode, but during the Transmit Mode, it can reach the maximum output power of 22&nbsp;dBm. As a receiver, it can achieve a sensitivity of -148&nbsp;dBm.

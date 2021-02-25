@@ -13,7 +13,7 @@ Thank you for choosing **RAK4200 Evaluation Board** in your awesome IoT Project!
 
 * [Quick Start Guide](../Quickstart/)
 * [AT Command Manual](../AT-Command-Manual/)
-
+* [RAK4200 Evaluation Board 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/RAK4200_EVALUATION_BOARD.stp)
 <!-- <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/overview/ebqbxdsu3iazrm9y4jp3.png"
   width="50%"

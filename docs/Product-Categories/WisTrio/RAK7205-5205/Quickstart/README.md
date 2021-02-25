@@ -3,7 +3,6 @@ prev: ../Overview/
 next: ../Datasheet/
 tags:
   - RAK5205
-  - RAK7205
 ---
 # Quick Start Guide
 
@@ -46,9 +45,9 @@ This device released by RAKWireless is already pre-loaded with its latest firmwa
 
 ## Product Configuration
 
-### Interfacing with the RAK7205/RAK5205 WisTrio LPWAN Tracker
+### Interfacing with the RAK5205 WisTrio LPWAN Tracker
 
-To interface with the RAK7205/RAK5205 WisTrio LPWAN Tracker with your Windows PC, you need to download the **[RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/)**.
+To interface with the RAK5205 WisTrio LPWAN Tracker with your Windows PC, you need to download the **[RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/)**.
 
 ::: warning ⚠️ WARNING
 Before powering the RAK5205, you should install the LoRa and GPS antenna first. Not doing so might damage the board.
@@ -163,9 +162,9 @@ Here are the things that you should take note in adding an application:
 Here are the things that you should take note in registering your device:
 
 1. **Device ID** - this is the unique identifier for your RAK5205 WisTrio LPWAN Tracker in your application. You need to enter this manually.
-2. **Device EUI** - this is the unique identifier for your device in the network. You can change it later, if you want.
+2. **Device EUI** - Device EUI of RAK5205 can be found on the sticker label of the RAK811 module. This will ensure you have a unique identification across LoRaWAN networks. You can still change it later, if you want.
 
-Click the following icon and the Device EUI will be automatically generated. The App Key should be in auto generation mode by default.
+The App Key should be in auto generation mode by default.
 
 - Lastly, click the Register button. Now, your device is registered under the corresponding application.
 
@@ -195,17 +194,23 @@ The default LoRa working mode for the RAK5205 is LoRaWAN 1.0.2, while the defaul
 
 1. Set mode to OTAA, device class to Class A and your LoRaWAN region to your correct frequency band, with the following set of commands below. Remember to replace XXX with the your LoRaWAN region. Refer to RAK5205 [Datasheet](/Product-Categories/WisTrio/RAK7205-5205/Datasheet/#rf-requirements) for your frequency plan.
 
-```sh
+```
 at+set_config=lora:join_mode:0
 ```
 
-```sh
+```
 at+set_config=lora:class:0
 ```
 
-```sh
+```
 at+set_config=lora:region:XXX
 ```
+
+
+::: tip 📝 NOTE
+RAK5205 will be sleeping most of the time. You need to input again the command if the reply you get is **Wake up**.
+:::
+
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-otaa-mode/okwyucipaed3fnrarkso.png"
@@ -213,17 +218,17 @@ at+set_config=lora:region:XXX
   caption="Setting up the RAK5205 operation mode"
 />
 
-2. Now that the modes are set, enter these parameters: **Device EUI, Application EUI**, and **App Key** using the commands below. Remember to replace the **"XXXX"** with the corresponding parameter value for your particular case:
+2. Now that RAK5205 is configured to be activated via OTAA, enter these parameters: **Device EUI, Application EUI**, and **App Key** using the commands below. Remember to replace the **"XXXX"** with the corresponding parameter value that matches the LoRaWAN network server.
 
-```sh
+```
 at+set_config=lora:dev_eui:XXXX
 ```
 
-```sh
+```
 at+set_config=lora:app_eui:XXXX
 ```
 
-```sh
+```
 at+set_config=lora:app_key:XXXX
 ```
 
@@ -237,7 +242,7 @@ You should end up with a window as the one in **Figure 15** with **a series of O
 
 3. Finally, execute the join command.
 
-```sh
+```
 at+join
 ```
 
@@ -249,7 +254,7 @@ at+join
 
 4. You can test the connection by sending an uplink frame. Use the following as an example:
 
-```sh
+```
 at+send=lora:1:12345678
 ```
 
@@ -259,10 +264,10 @@ at+send=lora:1:12345678
   caption="Sending an uplink frame"
 />
 
-If you get a response in your TTN live data feed as in Figure 18, then you are all set.
+5. If you get a response in your TTN live data feed as shown in Figure 18, then you are all set.
 
 ::: tip 📝 NOTE
-Be sure to have this window open prior to sending data through the RAK Serial Port,or you will not be able to receive the packet sent. Logging out your The Things Network account would also clear all the data sent and not being able to receive packets sent.
+Be sure to have the TTN console open prior to sending data through the RAK Serial Port. Else, you will not be able to see the packet sent.
 :::
 
 <rk-img
@@ -293,7 +298,7 @@ Be sure to have this window open prior to sending data through the RAK Serial Po
 
 4. Now, you need to update the RAK5205 configuration (mode and parameters). Open the Serial Tool and type the command below to change the region (in case you have not done so already):
 
-```sh
+```
 at+set_config=lora:region:EU868
 ```
 
@@ -306,7 +311,7 @@ at+set_config=lora:region:EU868
 
 5. Change the mode to **ABP** with the command:
 
-```sh
+```
 at+set_config=lora:join_mode:1
 ```
 
@@ -316,17 +321,17 @@ at+set_config=lora:join_mode:1
   caption="Join mode setup"
 />
 
-6. Now that the mode has been changed, enter these parameters: **Device Address**, **Network Session Key**, and **Application Session Key** using the commands listed below. Remember to replace the **"XXXX"** with the corresponding parameter value for your particular case. Refer to Figure 20 for the parameters.
+6. Now that the mode has been changed, enter the parameters listed below which are needed for ABP activation (**Device Address**, **Network Session Key**, and **Application Session Key**). Remember to replace the **"XXXX"** with the corresponding parameter value that matches the LoRaWAN network server. Refer to Figure 20 for the parameters.
 
-```sh
+```
 at+set_config=lora:dev_addr:XXXX
 ```
 
-```sh
+```
 at+set_config=lora:nwks_key:XXXX
 ```
 
-```sh
+```
 at+set_config=lora:apps_key:XXXX
 ```
 
@@ -340,7 +345,7 @@ You should end up with a similar window shown in **Figure 23** with **a series o
 
 7. Finally, execute the join command:
 
-```sh
+```
 at+join
 ```
 
@@ -352,7 +357,7 @@ at+join
 
 8. You can test the connection by sending an uplink frame. Use the following as an example:
 
-```sh
+```
 at+send=lora:1:12345678
 ```
 
@@ -377,7 +382,7 @@ The **ChirpStack** or previously known as LoRaServer project provides open-sourc
 You can use RAK5205 to connect with ChirpStack according to the following steps:
 
 ::: tip 📝 NOTE
-In this section, it is assumed that you have already connected your gateway with TTN correctly. If not, look into the [RAK Documentation Center](https://docs.rakwireless.com/) of your RAK Gateway in hand.
+In this section, it is assumed that you have already connected your gateway to ChirpStack correctly. If not, look into the [RAK Documentation Center](https://docs.rakwireless.com/) of your RAK Gateway in hand.
 :::
 
 1. Open the web page of the ChirpStack which you want to connect with and login.
@@ -420,7 +425,7 @@ In this section, it is assumed that you have already connected your gateway with
   caption="Adding a Node Device"
 />
 
-6. Fill them in. You can generate a **Device EUI** automatically by clicking the Device EUI icon, or you can write the correct Device EUI in the edit box.
+6. Fill them in. The Device EUI of RAK5205 can be found on the sticker label of the RAK811 module. Use this to ensure that you have a unique identification across LoRaWAN networks. You can also generate a random **Device EUI** automatically by clicking the Device EUI icon.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/connecting-to-chirpstack/xigu9w6pypfqr8mgnsld.png"
@@ -471,12 +476,12 @@ In this section, it is assumed that you have already connected your gateway with
 />
 
 ::: tip 📝 NOTE:
-The Application EUI which was into RAK5205 as “**app_eui**” is not needed for ChirpStack.
+The Application EUI which is set into RAK5205 via AT Command as “**app_eui**” is not needed for ChirpStack.
 :::
 
 4. Next, **configure** RAK5205 WisTrio LPWAN Tracker by using **AT commands**. To do this, connect your RAK5205 WisTrio LPWAN Tracker to a PC, power it on and open **RAK Serial Port Tool** on your computer.
 
-```sh
+```
 at+version
 ```
 
@@ -486,15 +491,14 @@ at+version
   caption="RAK Serial Port Tool"
 />
 
-- Now, join our RAK5205 using the OTAA activation mode.
 
 5. If the join mode is not in OTAA, just set the LoRa join mode to **OTAA** and LoRa class to **Class A** by typing the AT commands shown in Figure 38.
 
-```sh
+```
 at+set_config=lora:join_mode:0
 ```
 
-```sh
+```
 at+set_config-lora:class:0
 ```
 
@@ -504,21 +508,21 @@ at+set_config-lora:class:0
   caption="Setting of LoRaWAN mode and class"
 />
 
-6. Type the following AT command to set the **Frequency/Region**, **Device EUI**, **Application EUI**, and **Application Key.** Remember to replace the **"XXX"** and **"XXXX"** with the corresponding parameter value for your particular case:
+6. Type the following AT command to set the **Frequency/Region**, **Device EUI**, **Application EUI**, and **Application Key.** Remember to replace the **"XXXX"** with the corresponding parameter value that matches the LoRaWAN network server.
 
-```sh
+```
 at+set_config=lora:region:XXX
 ```
 
-```sh
+```
 at+set_config=lora:dev_eui:XXXX
 ```
 
-```sh
+```
 at+set_config=lora:app_eui:XXXX
 ```
 
-```sh
+```
 at+set_config=lora:app_key:XXXX
 ```
 
@@ -536,7 +540,7 @@ at+set_config=lora:app_key:XXXX
 
 7. Then, **join** in OTAA mode.
 
-```sh
+```
 at+join
 ```
 
@@ -557,7 +561,7 @@ at+join
 
 9.Try sending data from our RAK5205 WisTrio LPWAN Tracker to the ChirpStack by typing the command below in the serial port.
 
-```sh
+```
 at+send=lora:2:1234567890
 ```
 
@@ -584,7 +588,7 @@ You can see the message on ChirpStack page as shown in Figure 44.
 :::
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/sgmhz031rjwdryeko8cv.png"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/45-activation.png"
   width="100%"
   caption="Chirpstack ABP Activation"
 />
@@ -592,80 +596,80 @@ You can see the message on ChirpStack page as shown in Figure 44.
 2. Then, you can see that there are some parameters for ABP in the “**ACTIVATION**” tab.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/anv0xqjuyslnkiue0ltb.png"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/46-parameters.png"
   width="100%"
   caption="Chirpstack ABP Activation Parameters Needed"
 />
 
 3. Use these parameters to set RAK5205 WisTrio LPWAN Tracker by using AT command. To set **LoRa join** mode to **ABP**, type the following command:
 
-```sh
+```
 at+set_config=lora:join_mode:1
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/iqptivjfhqaf9rkoxfwb.jpg"
-  width="45%"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/47-abp-mode.png"
+  width="80%"
   caption="Chirpstack ABP Join Mode via RAK Serial Port Tool"
 />
 
 4. Set LoRa class to **Class A**.
 
-```sh
+```
 at+set_config=lora:class:0
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/kkm5pwzhi44aif78akij.jpg"
-  width="45%"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/48-class.png"
+  width="80%"
   caption="Chirpstack ABP Set Class via RAK Serial Port Tool"
 />
 
 5. Set the frequency/region to **EU868**.
 
-```sh
+```
 at+set_config=lora:region:EU868
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/hybihb6l6knq8lccnm1h.jpg"
-  width="45%"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/49-region.png"
+  width="80%"
   caption="Chirpstack ABP Set Region/Frequency via RAK Serial Port Tool"
 />
 
 6. Set the **Device Address**.
 
-```sh
+```
 at+set_config=lora:dev_addr:XXXX
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/tpqvwwbxnmlwzqcfgozy.jpg"
-  width="45%"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/50-devaddr.png"
+  width="80%"
   caption="Chirpstack ABP Set Device Address via RAK Serial Port Tool"
 />
 
 7. Set the **Network Session Key**.
 
-```sh
+```
 at+set_config=lora:nwks_key:XXXX
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/gzryq4icdnjuxykqgfhz.jpg"
-  width="45%"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/51-nwkskeys.png"
+  width="80%"
   caption="Chirpstack ABP Set Network Session Key via RAK Serial Port Tool"
 />
 
 8. Set the **Application Session Key**.
 
-```sh
+```
 at+set_config=lora:apps_key:XXXX
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/czhbmtdl7or1c2d6katt.jpg"
-  width="45%"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/52-appskey.png"
+  width="80%"
   caption="Chirpstack ABP Set Application Session Key via RAK Serial Port Tool"
 />
 
@@ -675,13 +679,13 @@ at+set_config=lora:apps_key:XXXX
 
 9. After resetting RAK5205 WisTrio LPWAN Tracker, join in ABP mode.
 
-```sh
+```
 at+join
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/b3oaamuv6fom8bydg1mi.jpg"
-  width="45%"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/53-join.png"
+  width="80%"
   caption="Chirpstack ABP Join via RAK Serial Port Tool"
 />
 
@@ -691,29 +695,63 @@ Actually, it is not needed to join in ABP mode. But you still need to set this A
 
 10. Try to send data from RAK5205 WisTrio LPWAN Tracker to ChirpStack.
 
-```sh
+```
 at+send=lora:2:1234567890
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/elbbdyduu3bbgnopsvns.jpg"
-  width="45%"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/54-lorasend.png"
+  width="80%"
   caption="Chirpstack Sample Data Sent via RAK Serial Port Tool"
 />
 
 - You can then see the data which is just sent from RAK5205 WisTrio LPWAN Tracker on ChirpStack console.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/wv0gms26hbo1cktpspfe.png"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/55-preview.png"
   width="100%"
   caption="Chirpstack Data Received Preview"
 />
+
+#### Configuration of GPS and Sensor Data
+
+##### Transmit Interval
+
+With your RAK5205 already connected to the network server, you can set the interval of sending GPS coordinates and sensor data using the following command: 
+
+```
+at+set_config=lora:send_interval:1:Y 
+```
+
+- where **Y** represents the time interval is seconds. 
+
+##### GPS Satellite Scan Time and Accuracy
+
+The GPS module will try to get a fix from GPS satellites to get the location coordinates. You can modify the satellite scan time of RAK5205. In addition, you can also set the accuracy of GPS coordinates to 4-digit or 6-digit decimal places.
+
+To set the GPS satellite scan time where **X** is in seconds:
+
+```
+at+set_config=device:gps_timeout:X
+```
+
+To set the GPS accuracy to 4-digit if **X** is 0 and 6-digit if **X** is 1:
+
+```
+at+set_config=device:gps_format:X
+```
+
+
 
 ### Decoding Sensor Data on ChirpStack and TTN
 
 #### Analyzing Sensor Data from RAK5205
 
 In the previous section, you have successfully sent some raw data from our RAK5205 LPWAN Tracker to The Things Network, but the problem is that you can't really see the actual sensor data from the payload. In this section, you will solve that and understand what each payload means.
+
+::: tip 📝 NOTE:
+Depending on the GPS coordinates accuracy configured on RAK5205 (either 4-digit or 6-digit), you must use the right decoder that can be downloaded on the RAKwireless [Github repository](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder). 
+:::
 
 Take the payload data in Figure 56, for example.
 
@@ -738,12 +776,12 @@ Now, analyze each data which is in Hexadecimal Format. You will be using the dat
 
 Example data: **01 88 05 37 97 10 9D 59 00 DC 14**
 
-| **Parameter** | **Hex Data** | **Decimal Equivalent** | **Multiplier**      | **True Value** |
-| ------------- | ------------ | ---------------------- | ------------------- | -------------- |
-| **Data Flag** | 01 88        |                        |                     |                |
-| **Latitude**  | 05 37 97     | 341911                 | 0.0001° Signed MSB | 34.1911°       |
-| **Longitude** | 10 9D 59     | 1088857                | 0.0001° Signed MSB | 108.8857°      |
-| **Altitude**  | 00 DC 14     | 56340                  | 0.01&nbsp;m Signed MSB   | 563.4&nbsp;m        |
+| **Parameter** | **Hex Data** | **Decimal Equivalent** | **Multiplier**         | **True Value** |
+| ------------- | ------------ | ---------------------- | ---------------------- | -------------- |
+| **Data Flag** | 01 88        |                        |                        |                |
+| **Latitude**  | 05 37 97     | 341911                 | 0.0001° Signed MSB     | 34.1911°       |
+| **Longitude** | 10 9D 59     | 1088857                | 0.0001° Signed MSB     | 108.8857°      |
+| **Altitude**  | 00 DC 14     | 56340                  | 0.01&nbsp;m Signed MSB | 563.4&nbsp;m   |
 
 ##### 2. Battery Voltage
 
@@ -752,7 +790,7 @@ Example Data: **08 02 01 7A**
 | **Parameter**       | **Hex Data** | **Decimal Equivalent** | **Multiplier** | **True Value** |
 | ------------------- | ------------ | ---------------------- | -------------- | -------------- |
 | **Data Flag**       | 08 02        |                        |                |                |
-| **Battery Voltage** | 01 7A        | 378                    | 0.01 Signed    | 3.78&nbsp;V         |
+| **Battery Voltage** | 01 7A        | 378                    | 0.01 Signed    | 3.78&nbsp;V    |
 
 ##### 3. Humidity
 
@@ -761,45 +799,45 @@ Example Data: **07 68 58**
 | **Parameter** | **Hex Data** | **Decimal Equivalent** | **Multiplier** | **True Value** |
 | ------------- | ------------ | ---------------------- | -------------- | -------------- |
 | **Data Flag** | 07 68        |                        |                |                |
-| **Humidity**  | 58           | 88                     | 0.5% Unsigned | 44.0% RH      |
+| **Humidity**  | 58           | 88                     | 0.5% Unsigned  | 44.0% RH       |
 
 ##### 4. Pressure
 
 Example Data: **06 73 25 6D**
 
-| **Parameter** | **Hex Data** | **Decimal Equivalent** | **Multiplier**       | **True Value** |
-| ------------- | ------------ | ---------------------- | -------------------- | -------------- |
-| **Data Flag** | 06 73        |                        |                      |                |
-| **Pressure**  | 25 6D        | 9581                   | 0.1&nbsp;hPa Unsigned MSB | 958.1&nbsp;hPa      |
+| **Parameter** | **Hex Data** | **Decimal Equivalent** | **Multiplier**            | **True Value** |
+| ------------- | ------------ | ---------------------- | ------------------------- | -------------- |
+| **Data Flag** | 06 73        |                        |                           |                |
+| **Pressure**  | 25 6D        | 9581                   | 0.1&nbsp;hPa Unsigned MSB | 958.1&nbsp;hPa |
 
 ##### 5. Temperature
 
 Example Data: **02 67 01 1D**
 
-| **Parameter**   | **Hex Data** | **Decimal Equivalent** | **Multiplier**    | **True Value** |
-| --------------- | ------------ | ---------------------- | ----------------- | -------------- |
-| **Data Flag**   | 02 67        |                        |                   |                |
-| **Temperature** | 01 1D        | 285                    | 0.1&nbsp;°C Signed MSB | 28.5&nbsp;℃          |
+| **Parameter**   | **Hex Data** | **Decimal Equivalent** | **Multiplier**         | **True Value** |
+| --------------- | ------------ | ---------------------- | ---------------------- | -------------- |
+| **Data Flag**   | 02 67        |                        |                        |                |
+| **Temperature** | 01 1D        | 285                    | 0.1&nbsp;°C Signed MSB | 28.5&nbsp;℃    |
 
 ##### 6. Gas Resistance
 
 Example Data: **04 02 14 AF**
 
-| **Parameter**      | **Hex Data** | **Decimal Equivalent** | **Multiplier** | **True Value** |
-| ------------------ | ------------ | ---------------------- | -------------- | -------------- |
-| **Data Flag**      | 04 02        |                        |                |                |
-| **Gas Resistance** | 14 AF        | 5295                   | 0.01&nbsp;kΩ Signed | 52.95&nbsp;kΩ       |
+| **Parameter**      | **Hex Data** | **Decimal Equivalent** | **Multiplier**      | **True Value** |
+| ------------------ | ------------ | ---------------------- | ------------------- | -------------- |
+| **Data Flag**      | 04 02        |                        |                     |                |
+| **Gas Resistance** | 14 AF        | 5295                   | 0.01&nbsp;kΩ Signed | 52.95&nbsp;kΩ  |
 
 ##### 7. Accelerometer
 
 Example Data: **03 71 FF FF FF DD FC 2E**
 
-| **Parameter**      | **Hex Data** | **Decimal Equivalent** | **Multiplier**     | **True Value** |
-| ------------------ | ------------ | ---------------------- | ------------------ | -------------- |
-| **Data Flag**      | 03 71        |                        |                    |                |
-| **Acceleration X** | FF FF        | -1                     | 0.001&nbsp;g Signed MSB | -0.001&nbsp;g        |
-| **Acceleration Y** | FF DD        | -35                    | 0.001&nbsp;g Signed MSB | -0.035&nbsp;g        |
-| **Acceleration Z** | FC 2E        | -978                   | 0.001&nbsp;g Signed MSB | -0.978&nbsp;g        |
+| **Parameter**      | **Hex Data** | **Decimal Equivalent** | **Multiplier**          | **True Value** |
+| ------------------ | ------------ | ---------------------- | ----------------------- | -------------- |
+| **Data Flag**      | 03 71        |                        |                         |                |
+| **Acceleration X** | FF FF        | -1                     | 0.001&nbsp;g Signed MSB | -0.001&nbsp;g  |
+| **Acceleration Y** | FF DD        | -35                    | 0.001&nbsp;g Signed MSB | -0.035&nbsp;g  |
+| **Acceleration Z** | FC 2E        | -978                   | 0.001&nbsp;g Signed MSB | -0.978&nbsp;g  |
 
 #### Decoding Sensor Data in TTN
 
@@ -1013,48 +1051,59 @@ This section shows how to use LoRa P2P mode. You will be using EU868 as the freq
 
 3. Now, configure them to both work in LoRaP2P mode as follow:
 
-```sh
+```
 at+set_config=lora:work_mode:1
 ```
+::: tip 📝 NOTE
+The device will automatically restart when mode is set to LoRa P2P.
+:::
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/lora-p2p-mode/qytvsg9mx3y4drl7pwrg.png"
-  width="45%"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/lora-p2p-mode/75-p2pmode.png"
+  width="90%"
   caption="P2P Initialization"
 />
 
 4. Then configure LoRaP2P parameters for both of them as follow, for example:
 
-```sh
+```
 at+set_config=lorap2p:869525000:7:0:1:5:5
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/lora-p2p-mode/fyoulppnh8gdz3vawjv7.jpg"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/lora-p2p-mode/76-p2pconfig.png"
   width="90%"
   caption="Configuring P2P in both RAK5205 Nodes"
 />
 
-5. Try to send a message from LoRa Tracker 1 (the right one) to LoRa Tracker 2 (the left one):
+5. Try to send a message from LoRa Tracker 1 (the left one) to LoRa Tracker 2 (the right one):
 
-```sh
+```
 at+send=lorap2p:1234567890
 ```
 
+::: tip 📝 NOTE
+In LoRa P2P mode, RAK5205 is in RX mode by default and will automatically switch to TX mode when it needs to transmit data. After the successful transmission, it will go back again to RX mode. You cannot set RAK5202 exclusively as RX or TX mode.
+:::
+
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/lora-p2p-mode/khjhkisjuxtjb5oxps94.png"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/lora-p2p-mode/77-p2psend-1.png"
   width="90%"
   caption="Message sent and received status in the two Nodes"
 />
 
 6. You can send more messages.
 
-```sh
+```
 at+send=lorap2p:12345678901234567890
 ```
 
+::: tip 📝 NOTE
+RAK5205 in LoRa P2P mode of operation is also compatible to other RUI based devices like WisDuo modules and others as long as the modules are configured in P2P mode as well.
+:::
+
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/lora-p2p-mode/ckbymbjhypol3p0q1bjp.jpg"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/lora-p2p-mode/78-p2psend-2.png"
   width="90%"
   caption="Succeeding Messages sent to the other Node"
 />
@@ -1065,7 +1114,7 @@ Now, you have successfully finished your RAK5205 LPWAN Tracker set up.
 
 ### Burning Bootloader into the Device
 
-Use the the latest firmware for the RAK5205 WisTrio LPWAN Tracker accessible in the RAKwireless [**directory**](https://downloads.rakwireless.com/en/LoRa/WisTrio-LoRa-RAK5205/Firmware/) to avoid potential problems. Burning the Bootloader into the device is done as follows:
+Get the [Bootloader Firmware](https://downloads.rakwireless.com/en/LoRa/WisTrio-LoRa-RAK5205/Firmware/) for the RAK5205 WisTrio LPWAN Tracker from RAKwireless download site. Burning the Bootloader into the device is done as follows:
 
 ::: warning ⚠️ WARNING
 Skip this section if you have a RAK5205 V3.0.0.0 firmware or newer, for it already has a bootloader.
@@ -1090,6 +1139,9 @@ You need to make sure you have the latest firmware on your device. To be able to
 />
 
 3. Connect your RAK5205 to your PC using the USB cable.
+::: tip 📝 NOTE
+The jumper on the BOOT pin must be placed first before connecting to the USB Cable.
+:::
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/mnlyzbqc9pcxtudki9gb.jpg"
@@ -1137,9 +1189,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
   caption="Successful Connection Log to your Device"
 />
 
-Now, start burning the bootloader into the RAK5205 WisTrio LPWAN Tracker.
-
-9. But before that, **erase all data** on the RAK5205 WisTrio LPWAN Tracker referred from Figure 86.
+9. Before uploading the firmware, **erase all data** on the RAK5205 WisTrio LPWAN Tracker as shown on Figure 86.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/tzcxzjuvnvzibznrfcwg.jpg"
@@ -1185,9 +1235,7 @@ Now, start burning the bootloader into the RAK5205 WisTrio LPWAN Tracker.
   caption="Jumper connection removed"
 />
 
-14. Connect RAK5205 with your PC’s USB interface again.
-
-If you have opened the serial port tool, you can see some content as shown in Figure 92.
+14. Connect RAK5205 with your PC’s USB interface again. Open your serial port tool and if you can see boot mode as shown in Figure 92.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/wpwt4lcs7bupbdess4ns.jpg"
@@ -1207,7 +1255,7 @@ If the firmware version of your RAK5205 WisTrio LPWAN Tracker is newer than V3.0
 If you have just burned the bootloader by yourself according to the section 2, it works in boot mode now. If the current version of the RAK5205 firmware is newer than V3.0.0.0, you need to set an AT command to let it work in boot mode.
 :::
 
-```sh
+```
 at+set_config=device:boot
 ```
 
@@ -1217,7 +1265,7 @@ at+set_config=device:boot
   caption="Turning the Boot Mode on"
 />
 
-2. Close the serial port tool and download the [**RAK Upgrade Tool**](https://downloads.rakwireless.com/en/LoRa/RAK612-LoRaButton/Tools/). Then, extract and open the tool.
+2. Close the serial port tool and download the [**RAK Upgrade Tool V1.0**](https://downloads.rakwireless.com/en/LoRa/RAK612-LoRaButton/Tools/). Then, extract and open the tool.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/bhnagxk2lyikpa1rqpmd.jpg"
@@ -1225,7 +1273,7 @@ at+set_config=device:boot
   caption="RAK Upgrade Tool"
 />
 
-3. Click “**Choose File**” button to choose the correct upgrade file.
+3. Get the [RAK5205 Firmware](https://downloads.rakwireless.com/en/LoRa/WisTrio-LoRa-RAK5205/Firmware/) from RAKwireless download site and click “**Choose File**” button to select the firmware file.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/xy32xtmb8urj28pk1cr0.jpg"
@@ -1247,12 +1295,12 @@ at+set_config=device:boot
   caption="Successfully Upgraded your Firmware"
 />
 
-5. Now, close the upgrade tool and open a serial port tool.
+5. Now, close the upgrade tool and open a serial port tool to configure your RAK5205.
 
 - It is recommended to use the **RAK Serial Port Tool** because there are some ready AT commands in this tool which very useful for you. You can get it from the [**RAK directory**](https://downloads.rakwireless.com/en/LoRa/RAK811/Tools/) for free.
 - Choose the correct **COM port** and set the baud rate to **115200**. Then open the serial port and enter the AT command to restart.
 
-```sh
+```
 at+set_config=device:restart
 ```
 
@@ -1283,13 +1331,13 @@ The assembly includes the following
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/gari52wtjjl62ychcxzn.jpg"
-  width="75%"
+  width="70%"
   caption="Assembly List"
 />
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/os7t2xyybsnel3nku0vb.jpg"
-  width="75%"
+  width="70%"
   caption="Assembly List"
 />
 
@@ -1299,7 +1347,7 @@ The assembly includes the following
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/hkvlodlletmm7bjllgf0.jpg"
-  width="100%"
+  width="85%"
   caption="Attached Solar Panel in Cover"
 />
 
@@ -1308,7 +1356,7 @@ The assembly includes the following
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/yk3veg7yrij2xrsln2ws.jpg"
-  width="45%"
+  width="40%"
   caption="Inserting Plug in Cover with no Solar Panel"
 />
 
@@ -1316,7 +1364,7 @@ The assembly includes the following
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/naneciy4etcubtmm0xvl.jpg"
-  width="45%"
+  width="40%"
   caption="Installed Supporting Plate"
 />
 
@@ -1332,7 +1380,7 @@ The assembly includes the following
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/htgbbtejshnbjjopd9dt.jpg"
-  width="45%"
+  width="40%"
   caption="Fixing of RAK5205 in Enclosure"
 />
 
@@ -1340,7 +1388,7 @@ The assembly includes the following
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/roaftyivpwpzljam2c9x.jpg"
-  width="45%"
+  width="40%"
   caption="Attached GPS and LoRa Antenna"
 />
 
@@ -1372,7 +1420,7 @@ The assembly includes the following
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/i7kgsa6tjlixqixruwca.jpg"
-  width="45%"
+  width="40%"
   caption="Enclosure Cover Installed"
 />
 
@@ -1384,7 +1432,7 @@ The assembly includes the following
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/hfdmjo2talujxnwbuqni.jpg"
-  width="45%"
+  width="40%"
   caption="Fixing Installation Kit"
 />
 
@@ -1392,7 +1440,7 @@ The assembly includes the following
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/czouz5aajdzqxpkfvodf.jpg"
-  width="45%"
+  width="40%"
   caption="Drill Holes into Wall according to this Dimension"
 />
 
@@ -1400,7 +1448,7 @@ The assembly includes the following
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/psflyxobbeptcavumxpz.jpg"
-  width="60%"
+  width="50%"
   caption="Mounting of Enclosure in Wall"
 />
 
@@ -1410,7 +1458,7 @@ The assembly includes the following
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/dauvvkgtxw54m8hwdy75.jpg"
-  width="45%"
+  width="40%"
   caption="Installation Kit Attached in Enclosure"
 />
 
@@ -1418,6 +1466,6 @@ The assembly includes the following
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/lkfk2ftqzwgyovwlsjtb.jpg"
-  width="45%"
+  width="40%"
   caption="Enclosure Clamped around the Pole"
 />

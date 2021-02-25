@@ -632,7 +632,7 @@ RAK5010-M and RAK5010 have the same PCB, but their firmware are different and no
 
 | Model     | Version   | Source                                                                                                |
 | --------- | --------- | ----------------------------------------------------------------------------------------------------- |
-| RAK5010-M | V3.0.0.14 | [Download](https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/RAK5010-M_Latest_Firmware.zip) |
+| RAK5010-M | V3.0.0.15 | [Download](https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/RAK5010-M_Latest_Firmware.zip) |
 
 ## Models / Bundles
 

@@ -15,7 +15,9 @@ Thank you for choosing **LoRa Wi-Fi LTE SPD** in your awesome IoT Project! 🎉 
 
 ## Product Description
 
-LA-GT2700 DN1-5 is a Surge Protective Device (SPD) for the protection of the transceiver against over-voltage and surge current induced by lightning. It can be used with a 50&nbsp;Ω system with a frequency range of 0 to 2700&nbsp;MHz and transmission power up to 200&nbsp;W. It is suitable to be used for LoRa, Wi-Fi, and LTE antennas. 
+LLA-GT2700 DN1-5 is a Surge Protective Device (SPD) for the protection of the transceiver against over-voltage and surge current induced by lightning. It can be used with a 50&nbsp;Ω system with a frequency range of 0 to 2700&nbsp;MHz and transmission power up to 200&nbsp;W. It is suitable to be used for LoRa, Wi-Fi, and LTE antennas. 
+
+For the purpose of protecting the indoor equipment and circuitry connected to the LoRa gateway, you need to install an Ethernet port Surge Protection Device (SPD).
 
 ## Product Features
 

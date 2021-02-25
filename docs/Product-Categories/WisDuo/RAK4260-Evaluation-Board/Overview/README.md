@@ -14,7 +14,7 @@ Thank you for choosing **RAK4260 Evaluation Board** in your awesome IoT Project!
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * [Low Level Development](../Low-Level-Development/)
-
+* [RAK4260 Evaluation Board 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/RAK4260_EVALUATION_BOARD.stp)
 
 ## Product Background
 
