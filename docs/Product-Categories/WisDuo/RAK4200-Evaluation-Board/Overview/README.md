@@ -13,6 +13,7 @@ Thank you for choosing **RAK4200 Evaluation Board** in your awesome IoT Project!
 
 * [Quick Start Guide](../Quickstart/)
 * [AT Command Manual](../AT-Command-Manual/)
+* [Datasheet](../Datasheet/)
 * [RAK4200 Evaluation Board 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/RAK4200_EVALUATION_BOARD.stp)
 <!-- <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/overview/ebqbxdsu3iazrm9y4jp3.png"
@@ -23,7 +24,7 @@ Thank you for choosing **RAK4200 Evaluation Board** in your awesome IoT Project!
 
 ## Product Description
 
-**RAK4200 Evaluation Board** is a WisBlock product consisting of [RAK4200 WisDuo LPWAN Module](https://store.rakwireless.com/products/rak4200-lora-module) and RAK5005 Base Board. You can use this development board to access all serial and GPIO ports for easy configuration. RAK4200 includes an STM32L071KB MCU and an SX1276 LoRa transceiver. It has Ultra-Low Power Consumption of 1.5&nbsp;uA in sleep mode and high LoRa output power up to 19&nbsp;dBm max in work mode. The module complies with the LoRaWAN 1.0.2 specification. It also supports LoRa P2P (Point-to-Point) communications. The module is sutiable for various applications that require long-range data acquisition and low power consumption.
+**RAK4200 Evaluation Board** is a WisBlock product consisting of [RAK4200 WisDuo LPWAN Module](https://store.rakwireless.com/products/rak4200-lora-module) and RAK5005 Base Board. You can use this development board to access all serial and GPIO ports for easy configuration. RAK4200 includes an STM32L071KB MCU and an SX1276 LoRa transceiver. It has Ultra-Low Power Consumption of 9.40&nbsp;uA in sleep mode and high LoRa output power up to 19&nbsp;dBm max in work mode. The module complies with the LoRaWAN 1.0.2 specification. It also supports LoRa P2P (Point-to-Point) communications. The module is suitable for various applications that require long-range data acquisition and low power consumption.
 
 <!-- <rk-btn
   src="../Quickstart/"
