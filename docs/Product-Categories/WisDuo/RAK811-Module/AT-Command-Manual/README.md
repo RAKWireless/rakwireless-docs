@@ -17,6 +17,8 @@ The RAK811 module also exposes another serial port through the **Pin 25 (TX3)** 
 
 In the case that the target application only requires one single UART port, then it is recommended to make use of the UART3 to connect to the MCU and reserve the UART1 for future firmware upgrade.
 
+## Links to Quick Start Guide
+
 For AT commands example usage, you can check these sections of quick start guide:
 
 - [TTN OTAA/ABP](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#lorawan-join-mode)

@@ -18,6 +18,14 @@ In addition, the RAK4200 module also exposes another serial port through **Pin 2
 
 UART2 is **Pin 2 (TX2)** and **Pin 1 (RX2)** on modules. In the case that the target application only requires one single UART port, then it is recommended to make use of the UART2 to connect to your MCU and reserved the UART1 for future firmware upgrade.
 
+## Links to Quick Start Guide
+
+For AT commands example usage, you can check these sections of quick start guide:
+
+- [TTN OTAA/ABP](/Product-Categories/WisDuo/RAK4200-Module/Quickstart/#connecting-to-the-things-network-ttn)
+- [ChirpStack OTAA/ABP](/Product-Categories/WisDuo/RAK4200-Module/Quickstart/#connecting-with-chirpstack)
+- [LoRa P2P](/Product-Categories/WisDuo/RAK4200-Module/Quickstart/#lora-p2p-mode)
+
 ### AT Command Syntax
 
 The AT command is based on ASCII characters. A command begins with the prefix `at` and ends with `<CR><LF>` (i.e. `\r\n`). The maximum length is **255 characters** which includes the `<CR><LF>` characters at the end of the command. For the rest of the document, the `\r\n` part is omitted for the sake of clarity.

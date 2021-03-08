@@ -295,7 +295,16 @@ module.exports = {
       download: true,
       sidebarDepth: 4
     }
-
+  ],
+    '/Product-Categories/Accessories/Antenna-Mounting-Kit/': [
+      {
+        title: 'Overview',
+        path: '/Product-Categories/Accessories/Antenna-Mounting-Kit/Overview/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      }
   ],
 
   //hardware-tools

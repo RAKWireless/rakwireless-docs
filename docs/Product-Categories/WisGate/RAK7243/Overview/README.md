@@ -15,6 +15,7 @@ Thank you for choosing **RAK7243 WisGate Developer D3** in your awesome IoT Proj
 * [Environment Test Report](../Testing-Report/)
 * [RAK7243 ready to flash Firmware](https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Firmware/RAK7243_Latest_Firmware.zip)
 
+
 :::tip 📝 NOTE
 Purchasing the [RAK2013 WisLink Cellular Pi Hat](../../RAK2013) separately with the intent of adding a cellular feature in your existing RAK7243 WisGate Developer Gateway is not possible. Hence, purchase the RAK7243C/7244C instead, as it is a specifically modified gateway that is composed of RAK2245 and RAK2013.
 :::

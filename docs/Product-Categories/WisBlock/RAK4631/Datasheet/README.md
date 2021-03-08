@@ -6,7 +6,8 @@ tags:
   - wisblock
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630RAK4631_CE_Cert.zip]
-  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630RAK4631_FCC_Cert.zip]  
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630RAK4631_FCC_Cert.zip] 
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630RAK4631rohs%20report.pdf] 
 
 ---
 

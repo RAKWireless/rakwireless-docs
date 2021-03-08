@@ -16,6 +16,8 @@ Thank you for choosing **RAK7243C WisGate Developer D3+ Gateway** in your awesom
 * [Source Code Repository](https://github.com/RAKWireless/rak_common_for_gateway)
 * [RAK7243C ready to flash Firmware](https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Firmware/RAK7243C_Latest_Firmware.zip)
 
+
+
 ## Product Background
 
 The **RAK7243C WisGate Developer D3+ Gateway** is a complete and cost efficient Gateway Solution that will help you get started in developing a full LoRa System. It is built with the RAK2245 Pi Hat stacked with the Raspberry Pi 3B+ along with the GPS module and Heat Sink, increasing its performance and thermal dissipation, plus a RAK2013 Cellular Pi HAT for cellular connectivity. The housing for the device is durable and entirely built from aluminum.

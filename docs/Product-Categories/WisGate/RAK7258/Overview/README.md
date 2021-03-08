@@ -13,6 +13,7 @@ Thank you for choosing **RAK7258 WisGate Edge Lite** in your awesome IoT Project
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
+* [OpenWRT Recovery Procedure](/Knowledge-Hub/Learn/OpenWRT-Recovery-Procedure/)
 
 
 ## Product Description

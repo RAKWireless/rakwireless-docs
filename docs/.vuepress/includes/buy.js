@@ -452,7 +452,17 @@ export default {
     label: 'GPS SPD',
     img: '/assets/images/accessories/antenna-black/1.png',
     store: 'https://store.rakwireless.com/collections/accessories/products/5-8dbi-fiber-glass-antenna?variant=39264936427718'
-  }
+  },
+  '/Product-Categories/Accessories/Antenna-Mounting-Kit/': {
+    label: 'Antenna Mounting Kit',
+    img: '/assets/images/accessories/antenna-mounting-kit/overview.png',
+    store: 'https://store.rakwireless.com/products/antenna-mounting-kit-1'
+  },
+  '/Product-Categories/Accessories/GPS-Antenna/': {
+    label: 'GPS Antenna',
+    img: '/assets/images/accessories/gps-antenna/gps-antenna.png',
+    store: 'https://store.rakwireless.com/products/gps-antenna'
+  },
 }
 
 
