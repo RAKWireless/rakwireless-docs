@@ -27,7 +27,7 @@ The GPS Antenna is a high-gain and high-efficiency active antenna designed with 
 
 - 1x GPS antenna with cable
 - 2x Mounting bracket with M6 nuts, washer, and spring washer
-- 1x Mounting pole – 150&nbsp;mm, Ф2 5.6&nbsp;mm 
+- 1x Mounting pole – 150&nbsp;mm, Ф25.6&nbsp;mm 
 
 ## Specifications
 
@@ -40,7 +40,7 @@ The GPS Antenna is a high-gain and high-efficiency active antenna designed with 
 | Frequency        | 1559~1577&nbsp;MHz        |
 | Voltage          | DC 3 ±0.3&nbsp;V          |
 | Current          | ≤ 10&nbsp;mA at 3&nbsp;V  |
-| Gain             | 28 ±2&nbsp;B typ          |
+| Gain             | 28 ± 2&nbsp;dB typical    |
 | Noise Figure     | 1.5&nbsp;dB max           |
 | Bandwidth        | 18&nbsp;MHz min           |
 | Output VSWR      | 3.0 max                   |

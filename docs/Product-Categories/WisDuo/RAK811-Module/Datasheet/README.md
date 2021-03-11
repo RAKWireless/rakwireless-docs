@@ -27,26 +27,29 @@ certifications:
 
 ### Description
 
-The RAK811 Low-Power Long Range LoRa Technology Transceiver module provides an easy to use, small size, and low-power solution for long-range wireless data applications. This module complies with Class A & C of LoRaWAN 1.0.2 specifications that can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point to Point (P2P) communication mode which help you in implementing your own customized long-range LoRa network quickly.
+The RAK811 Low-Power Long Range LoRa Technology Transceiver module provides an easy to use, small size, and low-power solution for long-range wireless data applications.
+
+This module complies with Class A & C of LoRaWAN 1.0.2 specifications that can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point to Point (P2P) communication mode which help you in implementing your own customized long-range LoRa network quickly.
 
 The RAK811 module is integrated with Semtech’s SX1276 and STM32. You can configure the mode and operation of the module using AT commands via a UART interface. Also, it offers low power features which is very suitable for battery-powered applications.
 
 ### Features
 
-- Based on **Semtech SX1276**.
-- **LoRaWAN 1.0.2** specification compliant.
-- **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, AS920 and AS923
-- LoRaWAN Activation by OTAA/ABP.
-- LoRa Point to Point (P2P) communication.
-- Easy to use AT Command Set via UART interface with configurable baud rate.
-- Maximum output power 100&nbsp;mW (20&nbsp;dBm), adjustable from 5 to 20&nbsp;dBm.
-- High sensitivity at -148&nbsp;dBm, enabling extremely long range connectivity.
-- Long range - greater than 15&nbsp;km with optimized antenna.
-- Low power consumption: 11&nbsp;μA on on standby.
-- Multi-channel, dual data buffer (256&nbsp;bytes each).
-- LoRa/FSK/GFSK/OOK modulation, bidirectional two-way communication.
-- Long battery life for battery-powered applications.
-- LoRa technology is capable of demodulating 20&nbsp;dB below noise level which significantly improves immunity to interference when combined with integrated forward error.
+- Based on **Semtech SX1276**
+- **LoRaWAN 1.0.2** specification compliant
+- **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, AS920, and AS923
+- LoRaWAN Activation by OTAA/ABP
+- LoRa Point to Point (P2P) communication
+- Easy to use AT Command Set via UART interface with configurable baud rate
+- Maximum output power 100&nbsp;mW (20&nbsp;dBm), adjustable from 5~20&nbsp;dBm
+- High sensitivity at -148&nbsp;dBm, enabling extremely long-range connectivity
+- Long-range - greater than 15&nbsp;km with optimized antenna
+- Low power consumption: 11&nbsp;μA on standby
+- Ultra-Low Power Consumption of 11.9&nbsp;μA (down to 1.11&nbsp;μA @ 2.1&nbsp;V) in sleep mode
+- Multi-channel, dual data buffer (256&nbsp;bytes each)
+- LoRa/FSK/GFSK/OOK modulation, bidirectional two-way communication
+- Long battery life for battery-powered applications
+- LoRa technology is capable of demodulating 20&nbsp;dB below noise level which significantly improves immunity to interference when combined with integrated forward error
 - **Operating temperature**: -30°&nbsp;C ~ 85°&nbsp;C (industrial grade)
 - **Storage temperature**: -40°&nbsp;C ~ 85°&nbsp;C (non-condensing)
 
@@ -148,7 +151,7 @@ Low radio frequency hardware supports bandwidth in the regions of EU433 and CN47
 | SX_RF_RX	      | PB3   		    |
 | SX_RF_PA	      | PA4   		    |
 
-##### RF Switch control logic table
+##### RF Switch Control Logic Table
 
 |**SX_RF_LF**|**SX_RF_RX**|**SX_RF_PA**|**Condition**|
 |------------|------------|------------|-------------|
@@ -228,7 +231,7 @@ High radio frequency hardware supports the regions of EU868, US915, AU915, KR920
 | SX_RF_PA	      | PA4   		    |
 
 
-##### RF Switch control logic table
+##### RF Switch Control Logic Table
 
 |**SX_RF_HF**|**SX_RF_RX**|**SX_RF_PA**|**Condition**|
 |------------|------------|------------|-------------|
@@ -275,13 +278,23 @@ RAK811 supports two UARTs: UART1 (pin6-TX1, pin7-RX1) and UART3 (pin25-TX3, pin2
 | ------- | ------- | ------- | ------- | --------- |
 | VCC     | 2.1     | 3.3     | 3.45    | Volts (V) |
 
-##### Current Consumption
 
-| Feature             | Condition  | Minimum     | Typical | Maximum | Unit |
-| ------------------- | ---------- | ----------- | ------- | ------- | ---- |
-| Current Consumption | TX Power   | 30 (@&nbsp;14&nbsp;dBm) |         |         | mA   |
-|                     | RX Mode    | 5.5         |         |         | mA   |
-|                     | Sleep Mode | 7.2         |         |         | uA   |
+##### Operating Current
+
+| Feature             | Condition  | Minimum                 | Typical | Maximum | Unit |
+| ------------------- | ---------- | ----------------------- | ------- | ------- | ---- |
+| Operating Current   | TX Power   | 30 (@&nbsp;14&nbsp;dBm) |         |         | mA   |
+|                     | RX Mode    | 5.5                     |         |         | mA   |
+
+
+##### Sleep Current
+
+| Feature                   | Condition  | Minimum (2.1V) | Typical (3.3V) | Maximum | Unit |
+| ------------------------- | ---------- | -------------- | -------------- | ------- | ---- |
+| Current Consumption       | EU868      | 8.37           | 11.9           |         | μA   |
+|                           | US915      | 1.11           | 11.8           |         | μA   |
+|                           | CN470      | 1.65           | 3.07           |         | μA   |
+
 
 #### Mechanical Characteristics
 

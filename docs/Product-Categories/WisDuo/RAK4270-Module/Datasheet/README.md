@@ -15,7 +15,7 @@ certifications:
 
 ### Description
 
-The RAK4270 LoRa Module includes an **STM32L071 MCU** and an **SX1262** LoRa chip, which supports eight (8) spreading factors (SF5 ~ SF12) and signal bandwidth that can be adjusted between 7.8&nbsp;kHz to 500&nbsp;kHz. It has an ultra-low power consumption of 1.08&nbsp;uA in Sleep Mode, but during the Transmit Mode, it can reach the maximum output power of 22&nbsp;dBm. As a receiver, it can achieve a sensitivity of -148&nbsp;dBm.
+The RAK4270 LoRa Module includes an **STM32L071 MCU** and an **SX1262** LoRa chip, which supports eight (8) spreading factors (SF5 ~ SF12) and signal bandwidth that can be adjusted between 7.8&nbsp;kHz to 500&nbsp;kHz. It has Ultra-Low Power Consumption of 2.31&nbsp;μA (down to 1.61&nbsp;μA @ 2.0&nbsp;V) in sleep mode, but during the Transmit Mode, it can reach the maximum output power of 22&nbsp;dBm. As a receiver, it can achieve a sensitivity of -148&nbsp;dBm.
 
 The module complies with Class A and C of LoRaWAN 1.0.2 specifications, and it also supports LoRa Point to Point (P2P) communications. The module is suitable for various applications that require long-range data acquisition and low power consumption, such as smart meters, supply chain and logistics tracking, agricultural sensors, and smart cities.
 
@@ -33,7 +33,7 @@ You can configure the mode and operation of the RAK4270 module using [RAK4270 AT
 - Supply voltage: **2.0 to 3.6&nbsp;V**
 - **Supported bands**: (EU433, CN470, IN865, EU868, AU915, US915, KR920, AS920 and AS923)
 - LoRa bandwidth range of 7.8&nbsp;kHz to&nbsp;500 kHz, SF5 to SF12, BR=0.018~62.5&nbsp;kb/s
-- Ultra-low power Consumption: **1.08&nbsp;uA in sleep mode at 2.0&nbsp;V operation**
+- Ultra-Low Power Consumption of 2.31&nbsp;μA (down to 1.61&nbsp;μA @ 2.0&nbsp;V) in sleep mode
 - Arm Cortex-M0+ 32-bit RISC core
 - 128&nbsp;kbytes flash memory with ECC
 - 20&nbsp;kbytes RAM
@@ -127,7 +127,7 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
 | NRESET       | PA0                                 |
 | ANT_SW       | PA11                                |
 
-##### RF Switch control logic table
+##### RF Switch Control Logic table
 
 |**ANT_SW**|**DIO2**|**Condition**|
 |----------|--------|-------------|
@@ -135,9 +135,9 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
 |    0     |     1  |  TX mode    |
 
 
-::: tip 📝 Supplement
-Set Dio2AsRfSwitchControl = false<br>
-Set Dio3AsTxcoControl = enable
+::: tip 📝 Note
+ - Set Dio2AsRfSwitchControl = false<br>
+ - Set Dio3AsTxcoControl = enable
 :::
 
 ##### SWD Programming Tool
@@ -145,7 +145,7 @@ Set Dio3AsTxcoControl = enable
 To upgrade the firmware, the SWD (Serial Wire Debug) interface must be used. A 5-pin JLINK cable has to be connected to the SWD port. These pins are 3v3, GND, SWDIO, SWCLK, and MCU_NRST.
 
 
-##### UARTS ports 
+##### UARTS Ports
 
 There are two UART ports on the RAK4270 module. UART2 (pin1 and pin2) can be used as the AT command port, while the UART1 (pin4 and pin5) can be used both as AT command port and firmware upgrade port. It is recommended to connect the UART2 port to an external MCU and reserve UART1 for debugging and or future firmware upgrade purposes.
 
@@ -155,7 +155,7 @@ The RAK4270 exposes an I2C port, in which the SDA line is assigned to the pin9, 
 
 ##### RF Port
 
-The RAK4270 module exposes two types of RF antenna: IPEX and PAD. The most straightforward way is to use the IPEX antenna port. In such a case, you just connect the antenna to the IPEX connector on the module directly. On the other hand, for specific needs, you can design a PCB trace antenna, Chip antenna, SMA antenna, or spring type antenna. In the latter case, the customer should use the PAD type antenna port exposed by this module. The external antenna should be matched to the 50&nbsp;Ω RF transmission line.
+The RAK4270 module exposes two types of RF antenna: IPEX and PAD. The most straightforward way is to use the IPEX antenna port. In such a case, you just connect the antenna to the IPEX connector on the module directly. On the other hand, for specific needs, you can design a PCB trace antenna, Chip antenna, SMA antenna, or spring type antenna. In the latter case, you should use the PAD type antenna port exposed by this module. The external antenna should be matched to the 50&nbsp;Ω RF transmission line.
 
 ##### VDD Power In
 
@@ -202,15 +202,19 @@ It is recommended to add four decoupling capacitors near the RAK4270 power suppl
 | ------- | ------- | ------- | ------- | --------- |
 | VCC     | 2.0    | 3.3     | 3.45    | Volts (V) |
 
-##### Current Consumption
+##### Operating Current
 
-| Feature             | Condition  | Minimum     | Typical | Maximum | Unit |
-| ------------------- | ---------- | ----------- | ------- | ------- | ---- |
-| Current Consumption | TX Mode    |     35.4 (@&nbsp;1&nbsp;dBm SF7 868Mhz)  |   |   | mA  |
-|                     | RX Mode    |     15.8    |         |         | mA   |
-|                     | Sleep Mode |     1.08     |         |         | uA   |
+| Feature             | Condition  | Minimum                             | Typical | Maximum | Unit |
+| ------------------- | ---------- | ----------------------------------- | ------- | ------- | ---- |
+| Operating Current   | TX Mode    | 35.4 (@&nbsp;1&nbsp;dBm SF7 868Mhz) |         |         | mA   |
+|                     | RX Mode    | 15.8                                |         |         | mA   |
 
+##### Sleep Current
 
+| Feature                   | Condition  | Minimum (2.0V) | Typical (3.3V) | Maximum | Unit |
+| ------------------------- | ---------- | -------------- | -------------- | ------- | ---- |
+| Current Consumption       | EU868      | 1.74           | 2.19           |         | μA   |
+|                           | US915      | 1.61           | 2.31           |         | μA   |
 
 #### Mechanical Characteristics
 
@@ -255,10 +259,10 @@ It is recommended to add four decoupling capacitors near the RAK4270 power suppl
 
 Standard conditions for reflow soldering:
 
-- Pre-heating Ramp (A) (Initial temperature: 150℃): **1~2.5&nbsp;℃/sec**
-- Soaking Time (T2) (150℃~180℃): **60~100&nbsp;sec**
+- Pre-heating Ramp (A) (Initial temperature: 150&nbsp;℃): **1~2.5&nbsp;℃/sec**
+- Soaking Time (T2) (150~180&nbsp;℃): **60~100&nbsp;sec**
 - Peak Temperature (G): **230~250&nbsp;℃**
-- Reflow Time (T3) (>220℃): **30~60&nbsp;sec**
+- Reflow Time (T3) (>220&nbsp;℃): **30~60&nbsp;sec**
 - Ramp-up Rate (B): **0~2.5&nbsp;℃/sec**
 - Ramp-down Rate (C): **1~3&nbsp;℃/sec**
 

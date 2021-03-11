@@ -33,4 +33,4 @@ The GPS Antenna is a high-gain and high-efficiency active antenna designed with 
 
 - 1x GPS antenna with cable
 - 2x Mounting bracket with M6 nuts, washer, and spring washer
-- 1x Mounting pole – 150&nbsp;mm, Ф2 5.6&nbsp;mm 
+- 1x Mounting pole – 150&nbsp;mm, Ф25.6&nbsp;mm 

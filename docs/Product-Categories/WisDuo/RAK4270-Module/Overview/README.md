@@ -18,7 +18,7 @@ Thank you for choosing **RAK4270 WisDuo LPWAN Module** in your awesome IoT Proje
 - [RAK4270 Module 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/PWB-RAK4270.stp)
 ## Product Description
 
-The RAK4270 LoRa Module includes an **STM32L071 MCU** and an **SX1262** LoRa chip, which supports eight spreading factors (SF5 ~ SF12) and signal bandwidth that can be adjusted between 7.8&nbsp;kHz to 500&nbsp;kHz. It has an ultra-low power consumption of 1.08&nbsp;uA in Sleep Mode, but during the Transmit Mode, it can reach the maximum output power of 22&nbsp;dBm. As a receiver, it can achieve a sensitivity of -148&nbsp;dBm.
+The RAK4270 LoRa Module includes an **STM32L071 MCU** and an **SX1262** LoRa chip, which supports eight spreading factors (SF5 ~ SF12) and signal bandwidth that can be adjusted between 7.8&nbsp;kHz to 500&nbsp;kHz. It has Ultra-Low Power Consumption of 2.31&nbsp;μA (down to 1.61&nbsp;μA @ 2.0&nbsp;V) in sleep mode, but during the Transmit Mode, it can reach the maximum output power of 22&nbsp;dBm. As a receiver, it can achieve a sensitivity of -148&nbsp;dBm.
 
 The module complies with Class A and C of LoRaWAN 1.0.2 specifications, and it also supports LoRa Point to Point (P2P) communications. The module is suitable for various applications that require long-range data acquisition and low power consumption, such as smart meters, supply chain and logistics tracking, agricultural sensors, and smart cities.
 
@@ -35,7 +35,7 @@ You can configure the mode and operation of the RAK4270 module using the [AT Com
 - Supply voltage: **2.0 to 3.6&nbsp;V**
 - **Supported bands**: (EU433, CN470, IN865, EU868, AU915, US915, KR920 and AS923)
 - LoRa bandwidth range of 7.8&nbsp;kHz to 500&nbsp;kHz, SF5 to SF12, BR=0.018~62.5&nbsp;kb/s
-- Ultra-low power Consumption: **1.08&nbsp;uA in sleep mode at 2.0&nbsp;V operation**
+- Ultra-Low Power Consumption of 2.31&nbsp;μA (down to 1.61&nbsp;μA @ 2.0V&nbsp;) in sleep mode
 - Arm Cortex-M0+ 32-bit RISC core
 - 128&nbsp;kbytes flash memory with ECC
 - 20&nbsp;kbytes RAM

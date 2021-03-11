@@ -5,6 +5,8 @@ tags:
   - wisgate
 next: false
 prev: ../Troubleshooting/
+certifications:
+  - [RCM, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RCMA0210312001RCM%20cert-RAK7248%20RCM_Australia.pdf]
 ---
 
 # RAK Hotspot Miner Datasheet
@@ -299,3 +301,8 @@ This device complies with Innovation, Science, and Economic Development Canada l
 
 The device complies with RF exposure guidelines, users can obtain Canadian information on RF exposure and compliance. The minimum distance from the body to use the device is 20 cm.
 :::
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />
+

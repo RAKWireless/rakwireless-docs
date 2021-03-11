@@ -23,23 +23,23 @@ certifications:
 
 ### Description
 
-RAK4600 WisDuo LPWAN Module includes an nRF52832 MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumption of 11.2μA in sleep mode, high LoRa output power up to 20dB max in work mode, and BLE output power up to 4dBm.
+RAK4600 WisDuo LPWAN Module includes an nRF52832 MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumption of 13.3&nbsp;μA (down to 11.2&nbsp;μA @ 2.0&nbsp;V) in sleep mode, high LoRa output power up to 20&nbsp;dB max in work mode, and BLE output power up to 4&nbsp;dBm.
 
 The module complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P Point to Point communications. The Module supports BLE 5.0 in addition to LoRa. Its RF communication capabilities (LoRa+BLE) make it suitable for a variety of applications in the IoT field.
 
 ### Features
 
 - LoRa module for Smart City, Smart Agriculture, Smart Industry
-- Compact Form Factor: 15 x 23 x 2.5 mm
+- Compact Form Factor: 15 x 23 x 2.5&nbsp;mm
 - 42 Pin Stamp Pad for PCB SMT mounting
 - I/O ports: UART/I2C/GPIO (optional NFC interface)
-- Temperature range: -40°C to +85°C
-- Supply voltage: 2.0 ~ 3.6V
-- Frequency range: 863–870MHz (EU) / 902–928MHz (US), ISM and SRD systems
-- Low-Power Wireless Systems with 7.8kHz to 500KHz Bandwidth
-- Ultra-Low Power Consumption 11.2μA in Sleep mode
-- LoRa Boost mode with 20dBm output power
-- BLE 5.0 (Tx power -20 to +4 dBm in 4dB steps)
+- Temperature range: -40&nbsp;°C to +85&nbsp;°C
+- Supply voltage: 2.0 ~ 3.6&nbsp;V
+- Frequency range: 863–870&nbsp;MHz (EU) / 902–928&nbsp;MHz (US), ISM and SRD systems
+- Low-Power Wireless Systems with 7.8&nbsp;kHz to 500&nbsp;KHz Bandwidth
+- Ultra-Low Power Consumption of 13.3&nbsp;μA (down to 11.2&nbsp;μA @ 2.0&nbsp;V) in sleep mode
+- LoRa Boost mode with 20&nbsp;dBm output power
+- BLE 5.0 (Tx power -20 to +4&nbsp;dBm in 4&nbsp;dB steps)
 
 ## Specifications
 
@@ -136,32 +136,33 @@ The hardware specifications are categorized into five parts. It discusses the in
 
 ##### LoRa Transceiver IC Connection to RAK4600 Internal nRF52
 
-| **LoRa IC Pin** | **nRF52 IO pins**   |
-|:---------------:|:-------------------:| 
-| DIO0            | P0.27               | 
-| DIO1            | P0.28               | 
-| DIO2            | P0.29               | 
-| DIO3            | P0.30               | 
-| DIO4            | P0.31               |
-| DIO5            | NC                  |
-| SPI1_CLK        | P0.07               | 
-| SPI1_MISO       | P0.06               | 
-| SPI1_MOSI       | P0.05               | 
-| SPI1_NSS        | P0.04               |
-| NRESET          | P0.03               |
-| VCTL1           | P0.16               |
-| VCTL2           | P0.15               |
+| **LoRa IC Pin** | **nRF52 IO Pins** |
+| :-------------: | :---------------: |
+|      DIO0       |       P0.27       |
+|      DIO1       |       P0.28       |
+|      DIO2       |       P0.29       |
+|      DIO3       |       P0.30       |
+|      DIO4       |       P0.31       |
+|      DIO5       |        NC         |
+|    SPI1_CLK     |       P0.07       |
+|    SPI1_MISO    |       P0.06       |
+|    SPI1_MOSI    |       P0.05       |
+|    SPI1_NSS     |       P0.04       |
+|     NRESET      |       P0.03       |
+|      VCTL1      |       P0.16       |
+|      VCTL2      |       P0.15       |
 
-##### RF Switch control logic table
+##### RF Switch Control Logic Table
 
-| **LoRa Mode**  | **VCTL1 GPIO** | **VCTL2 GPIO**  |
-|:---------------|:-------------: |:---------------:|
-| TX mode        | H              |       L         |
-| RX mode        | L              |       H         |
+| **LoRa Mode** | **VCTL1 GPIO** | **VCTL2 GPIO** |
+| :------------ | :------------: | :------------: |
+| TX mode       |       H        |       L        |
+| RX mode       |       L        |       H        |
 
-:::tip 📝 Logic Level
-H level (1.8 - 5.0V)<br> 
-L level (0 V)
+:::tip 📝 Note
+<b>Logic Level</b>
+ - H level (1.8 - 5.0&nbsp;V)<br> 
+ - L level (0&nbsp;V)
 :::
 
 #### RF Characteristics
@@ -184,34 +185,39 @@ The board supports the following LoRaWAN frequency channels shown in the table b
 
 Several current consumption ratings are provided below for detailed RAK4600 WisDuo LPWAN Module usage. Refer to the values presented for your preferred values for specific simulations and calculations.
 
+##### Operating Voltage
+
+| Feature | Minimum | Typical | Maximum | Unit      |
+| ------- | ------- | ------- | ------- | --------- |
+| VCC     | 2.0     | 3.3     | 3.45    | Volts (V) |
+
 ##### Typical Current Consumption
 
 Shown in the table provided below is the typical current consumption of the RAK4600 WisDuo LPWAN Module.
 
-| **Item**              | **Current Consumption** | **Condition**                    |
-| --------------------- | ----------------------- | -------------------------------- |
-| **LoRa TX** @20dBm    | 125mA                   | LoRa @ PA_BOOST & BT sleep       |
-| **LoRa TX** @17dBm    | 92mA                    | LoRa @ PA_BOOST & BT sleep       |
-| **BT TX** @4dBm       | 9mA                     | BT Tx mode & LoRa sleep          |
-| **LoRa RX** @37.5Kbps | 17mA                    |                                  |
-| **BT RX** @2Mbps      | 11.5mA                  |                                  |
-| **Node Sleep**        | 2.0μA                   | The whole board is in sleep mode |
+| **Item**                    | **Current Consumption** | **Condition**              |
+| --------------------------- | ----------------------- | -------------------------- |
+| **LoRa TX** @20&nbsp;dBm    | 125&nbsp;mA             | LoRa @ PA_BOOST & BT sleep |
+| **LoRa TX** @17&nbsp;dBm    | 92&nbsp;mA              | LoRa @ PA_BOOST & BT sleep |
+| **BT TX** @4&nbsp;dBm       | 9&nbsp;mA               | BT Tx mode & LoRa sleep    |
+| **LoRa RX** @37.5&nbsp;Kbps | 17&nbsp;mA              |                            |
+| **BT RX** @2&nbsp;Mbps      | 11.5&nbsp;mA            |                            |
 
 ##### Laboratory Testing
 
 The figures below are showing the average current consumption based on the different test cases.
 
-**Equipments**:
+**Equipment**:
 
-- Power comsumption meter
+- Power consumption meter
 - RAK4600 WisDuo LPWAN Module
 
 **LoRa Packet Sending**
 
-The RAK4600 WisDuo LPWAN Module takes **92.291 ms** to send a LoRa packet which consumes **119 mA** of current.
+The RAK4600 WisDuo LPWAN Module takes **92.291&nbsp;ms** to send a LoRa packet which consumes **119&nbsp;mA** of current.
 
-- **Sending Time**: 92.291 ms
-- **Current consumption**: 119 mA
+- **Sending Time**: 92.291&nbsp;ms
+- **Current consumption**: 119&nbsp;mA
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/datasheet/electrical-characteristics/awyqt4s9r3469vtgai1p.jpg"
@@ -221,10 +227,10 @@ The RAK4600 WisDuo LPWAN Module takes **92.291 ms** to send a LoRa packet which 
 
 **LoRa Packet Receiving**
 
-The RAK4600 WisDuo LPWAN Module takes **30.052 ms** to receive a LoRa packet which consumes **13.8 mA** of current.
+The RAK4600 WisDuo LPWAN Module takes **30.052&nbsp;ms** to receive a LoRa packet which consumes **13.8&nbsp;mA** of current.
 
-- **Receiving Time**: 30.052 ms
-- **Current consumption**: 13.8 mA
+- **Receiving Time**: 30.052&nbsp;ms
+- **Current consumption**: 13.8&nbsp;mA
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/datasheet/electrical-characteristics/ufgf8mxmibztzhezvr6l.jpg"
@@ -232,17 +238,12 @@ The RAK4600 WisDuo LPWAN Module takes **30.052 ms** to receive a LoRa packet whi
   caption="Oscilloscope Screen Capture of LoRa Packet Receiving"
 />
 
-**Sleep Mode**
+##### Sleep Current
 
-The RAK4600 WisDuo LPWAN Module when in sleep mode consumes **11.2 μA** of current.
-
-- **Current consumption**: 11.2 μA
-
-<rk-img
-  src="/assets/images/wisduo/rak4600-module/datasheet/electrical-characteristics/bpm1nbybf4exvnop89yo.jpg"
-  width="70%"
-  caption="Oscilloscope Screen Capture of RAK4600 WisDuo LPWAN Module in sleep mode"
-/>
+| Feature             | Condition | Minimum (2.0&nbsp;V) | Typical (3.3&nbsp;V) | Maximum | Unit |
+| ------------------- | --------- | -------------------- | -------------------- | ------- | ---- |
+| Current Consumption | EU868     | 11.2                 | 13.3                 |         | μA   |
+|                     | US915     | 11.5                 | 12.5                 |         | μA   |
 
 ##### Schematic Diagram
 
@@ -254,7 +255,6 @@ The RAK4600 WisDuo LPWAN Module when in sleep mode consumes **11.2 μA** of curr
 
 #### Mechanical Characteristics
 
-The mechanical dimensions of the RAK4600 WisDuo LPWAN Module are shown in the figures provided in this section.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/datasheet/mechanical-characteristics/jmglqkzpggdkglecgcau.jpg"
@@ -270,8 +270,6 @@ The mechanical dimensions of the RAK4600 WisDuo LPWAN Module are shown in the fi
 
 #### Recommended Reflow Profile
 
-In this section, the recommended Reflow profile for RAK4600 WisDuo LPWAN Module is described with the image below:
-
 <rk-img
   src="/assets/images/wisduo/rak4600-module/datasheet/recommended-reflow-profile/jrhzrgsko4nmfcwpirix.jpg"
   width="70%"
@@ -280,16 +278,16 @@ In this section, the recommended Reflow profile for RAK4600 WisDuo LPWAN Module 
 
 **Standard Conditions for Reflow Soldering**:
 
-- Pre-heating Ramp (A) (Initial temperature: 150℃): 1~2.5℃/sec.
-- Soaking Time (T2) (150℃~180℃): 60sec-100sec;
-- Peak Temperature (G): 230~250℃
-- Reflow Time (T3) (>220℃): 30~60 sec
-- Ramp-up Rate (B): 0~2.5℃/ sec
-- Ramp-down Rate (C): 1~3℃/ sec.
+- Pre-heating Ramp (A) (Initial temperature: 150&nbsp;℃): 1~2.5&nbsp;℃/sec.
+- Soaking Time (T2) (150&nbsp;℃~180&nbsp;℃): 60~100&nbsp;sec;
+- Peak Temperature (G): 230~250&nbsp;℃
+- Reflow Time (T3) (>220&nbsp;℃): 30~60&nbsp;sec
+- Ramp-up Rate (B): 0~2.5&nbsp;℃/ sec
+- Ramp-down Rate (C): 1~3&nbsp;℃/ sec.
 
 ### Software
 
-Download the latest firmware of the RAK4600 WisDuo LPWAN Module  provided in the table below.
+Download the latest firmware of the RAK4600 WisDuo LPWAN Module provided in the table below.
 
 
 #### Firmware
