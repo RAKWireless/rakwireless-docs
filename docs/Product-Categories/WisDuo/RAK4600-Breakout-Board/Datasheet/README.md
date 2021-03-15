@@ -21,7 +21,7 @@ prev: ../Quickstart/
 
 **RAK4600 Breakout Board** is specifically designed to allow easy access to the pins on the board to simplify development and testing. The breakout board is based on the **XBee form factor**, and its main purpose is to allow the RAK4600 stamp module form factor pinout to be transferred to 2.54&nbsp;mm headers.
 
-The board itself has the RAK4600 at its core, integrating an **nRF52832 MCU** and an **SX1276 LoRa chip**. It has Ultra-Low Power Consumption of 11.2&nbsp;uA in sleep mode, high LoRa max output power (20&nbsp;dBm) in work mode, and BLE output power up to 4&nbsp;dBm.
+The board itself has the RAK4600 at its core, integrating an **nRF52832 MCU** and an **SX1276 LoRa chip**. It has Ultra-Low Power Consumption of 13.3&nbsp;μA (down to 11.2&nbsp;μA @ 2.0&nbsp;V) in sleep mode, high LoRa max output power (20&nbsp;dBm) in work mode, and BLE output power up to 4&nbsp;dBm.
 
 The board complies with **LoRaWAN 1.0.2 specification**. It also supports Lora P2P Point to Point communication. 
 
@@ -36,7 +36,7 @@ The RF communication capabilities of the board (LoRa + BLE) make it suitable for
 - LoRa Tx power up to **20&nbsp;dBm**
 - BLE 5.0 (Tx power -20&nbsp;dBm to +4&nbsp;dBm in 4&nbsp;dB steps)
 - Serial Wire Debug (SWD) interface
-- Ultra-Low Power Consumption **11.2&nbsp;uA** in sleep mode
+- Ultra-Low Power Consumption of 13.3&nbsp;μA (down to 11.2&nbsp;μA @ 2.0&nbsp;V) in sleep mode
 - Supply voltage: **2.0 ~ 3.6&nbsp;V**
 - Temperature range: **-40&nbsp;°C to +85&nbsp;°C**
 
@@ -109,7 +109,7 @@ The pin definitions of the RAK4600 Breakout Board are shown in the following tab
 
 | **Pin** | **Name**  | **I/O** | **Description**                              | **Alternate functions**                                 |
 | ------- | --------- | ------- | -------------------------------------------- | ------------------------------------------------------- |
-| 1       | USART2_RX  | I/O     | USART2_RX (GPIO NRF52832 P0.18)              | GPIO, Single wire output, Trace port output             |
+| 1       | USART2_RX | I/O     | USART2_RX (GPIO NRF52832 P0.18)              | GPIO, Single wire output, Trace port output             |
 | 2       | USART2_TX | I/O     | USART2_TX (GPIO NRF52832 P0.19)              | GPIO                                                    |
 | 3       | NFC1      | I/O     | NFC antenna connection GPIO (NRF52832 P0.09) | NFC antenna connection<br>GPIO                          |
 | 4       | NFC2      | I/O     | NFC antenna connection GPIO (NRF52832 P0.10) | NFC antenna connection<br>GPIO                          |
@@ -120,41 +120,41 @@ The pin definitions of the RAK4600 Breakout Board are shown in the following tab
 
 ##### J8 Pin Definitions
 
-| **Pin** |  **Name** | **I/O** | **Description**                 | **Alternate Functions**         |
-| ------- | --------- | ------- | ------------------------------- | ------------------------------- |
-| 1       | VDD       |         | DC 3V3                          | Supply voltage 2.0~3.3&nbsp;V<sub>DC</sub>       |
-| 2       | USART1_TX | I/O     | USART1_TX (GPIO NRF52832 P0.23) | GPIO                            |
-| 3       | USART1_RX | I/O     | USART1_RX (GPIO NRF52832 P0.22) | GPIO                            |
-| 4       | GND       |         | Ground                          |                                 |
-| 5       | MCU_NRST  | I/O     | MCU reset (GPIO NRF52832 P0.03) | GPIO, Configurable as reset pin |
-| 6       | Reserved  | I/O     | Reserved (GPIO NRF52832 P0.14)  | GPIO, Trace port output         |
-| 7       | Reserved  | I/O     | Reserved (GPIO NRF52832 P0.17)  | GPIO                            |
-| 8       | GND       | I/O     | Ground                          |                                 |
+| **Pin** | **Name**  | **I/O** | **Description**                 | **Alternate Functions**                    |
+| ------- | --------- | ------- | ------------------------------- | ------------------------------------------ |
+| 1       | VDD       |         | DC 3V3                          | Supply voltage 2.0~3.3&nbsp;V<sub>DC</sub> |
+| 2       | USART1_TX | I/O     | USART1_TX (GPIO NRF52832 P0.23) | GPIO                                       |
+| 3       | USART1_RX | I/O     | USART1_RX (GPIO NRF52832 P0.22) | GPIO                                       |
+| 4       | GND       |         | Ground                          |                                            |
+| 5       | MCU_NRST  | I/O     | MCU reset (GPIO NRF52832 P0.03) | GPIO, Configurable as reset pin            |
+| 6       | Reserved  | I/O     | Reserved (GPIO NRF52832 P0.14)  | GPIO, Trace port output                    |
+| 7       | Reserved  | I/O     | Reserved (GPIO NRF52832 P0.17)  | GPIO                                       |
+| 8       | GND       | I/O     | Ground                          |                                            |
 
 ##### J4 Pin Definitions
 
-| **Pin** | **Name** | **I/O** | **Description** | **Alternate Functions**   |
-| ------- | -------- | ------- | --------------- | ------------------------- |
-| 1       | GND      |         | Ground          |                           |
+| **Pin** | **Name** | **I/O** | **Description** | **Alternate Functions**                    |
+| ------- | -------- | ------- | --------------- | ------------------------------------------ |
+| 1       | GND      |         | Ground          |                                            |
 | 2       | VDD      |         | DC 3V3          | Supply voltage 2.0~3.3&nbsp;V<sub>DC</sub> |
 
 
 ##### LoRa Transceiver IC Connection to RAK4600 Breakout Board
 
 | **LoRa IC Pin** | **NRF52832 IO pin** |
-|:---------------:|:-------------------:| 
-| DIO0            | P0.27               | 
-| DIO1            | P0.28               | 
-| DIO2            | P0.29               | 
-| DIO3            | P0.30               | 
-| DIO4            | P0.31               |
-| DIO5            | NC                  |
-| SPI1_CLK        | P0.07               | 
-| SPI1_MISO       | P0.06               | 
-| SPI1_MOSI       | P0.05               | 
-| SPI1_NSS        | P0.04               |
-| VCTL1           | P0.16               |
-| VCTL2           | P0.15               |
+| :-------------: | :-----------------: |
+|      DIO0       |        P0.27        |
+|      DIO1       |        P0.28        |
+|      DIO2       |        P0.29        |
+|      DIO3       |        P0.30        |
+|      DIO4       |        P0.31        |
+|      DIO5       |         NC          |
+|    SPI1_CLK     |        P0.07        |
+|    SPI1_MISO    |        P0.06        |
+|    SPI1_MOSI    |        P0.05        |
+|    SPI1_NSS     |        P0.04        |
+|      VCTL1      |        P0.16        |
+|      VCTL2      |        P0.15        |
 
 
 ::: tip 📝 NOTE
@@ -163,10 +163,10 @@ The LoRa Transceiver IC Connection pins are not exposed.
 
 ##### RF Switch control logic table
 
-| **LoRa Mode**  | **VCTL1 GPIO** | **VCTL2 GPIO**  |
-|:---------------|:-------------: |:---------------:|
-| TX mode        | H              |       L         |
-| RX mode        | L              |       H         |
+| **LoRa Mode** | **VCTL1 GPIO** | **VCTL2 GPIO** |
+| :------------ | :------------: | :------------: |
+| TX mode       |       H        |       L        |
+| RX mode       |       L        |       H        |
 
 :::tip 📝 Logic Level
 H level (1.8&nbsp;V - 3.30&nbsp;V)<br> 
@@ -195,14 +195,20 @@ The RAK4600 Breakout Board supports the following LoRa bands:
 
 The table below shows the power consumption of RAK4600 Breakout Board:
 
-| **Item**                       | **Power<br>Consumption** | **Condition**                   |
-| ------------------------------ | ------------------------ | ------------------------------- |
-| Tx mode LoRa @20&nbsp;dBm      | 125&nbsp;mA              | LoRa @ PA_BOOST & BT sleep     |
-| Tx mode LoRa @17&nbsp;dBm      | 92&nbsp;mA               | LoRa @ PA_BOOST & BT sleep     |
-| Tx mode BT @4&nbsp;dBm         | 9&nbsp;mA                | BT Tx mode & LoRa sleep        |
-| Rx mode LoRa<br>@37.5&nbsp;Kbps| 17&nbsp;mA               | LoRa @ Receive mode & BT sleep |
-| Rx mode BT @2&nbsp;Mbps        | 11.5&nbsp;mA             | BT Rx mode & LoRa sleep        |
-| Sleep mode                     | 11.20&nbsp;uA            | LoRa & BT sleep                |
+| **Item**                        | **Power<br>Consumption** | **Condition**                  |
+| ------------------------------- | ------------------------ | ------------------------------ |
+| Tx mode LoRa @20&nbsp;dBm       | 125&nbsp;mA              | LoRa @ PA_BOOST & BT sleep     |
+| Tx mode LoRa @17&nbsp;dBm       | 92&nbsp;mA               | LoRa @ PA_BOOST & BT sleep     |
+| Tx mode BT @4&nbsp;dBm          | 9&nbsp;mA                | BT Tx mode & LoRa sleep        |
+| Rx mode LoRa<br>@37.5&nbsp;Kbps | 17&nbsp;mA               | LoRa @ Receive mode & BT sleep |
+| Rx mode BT @2&nbsp;Mbps         | 11.5&nbsp;mA             | BT Rx mode & LoRa sleep        |
+
+##### Sleep Current
+
+| Feature             | Condition | Minimum (2.0&nbsp;V) | Typical (3.3&nbsp;V) | Maximum | Unit |
+| ------------------- | --------- | -------------------- | -------------------- | ------- | ---- |
+| Current Consumption | EU868     | 11.2                 | 13.3                 |         | μA   |
+|                     | US915     | 11.5                 | 12.5                 |         | μA   |
 
 ##### Schematic Diagram
 

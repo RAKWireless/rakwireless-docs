@@ -274,6 +274,8 @@ The table below lists the operation and storage temperature requirements:
 
 ## Certification
 
+<rk-certifications :params="$page.frontmatter.certifications" />
+
 ### FCC Caution
 
 Any changes or modifications not expressly approved by the party responsible for compliance could void the user's authority to operate the equipment. 
@@ -291,7 +293,7 @@ This equipment has been tested and found to comply with the limits for a Class B
 
 ### FCC Radiation Exposure Statement
 
-This equipment complies with FCC radiation exposure limits set forth for an uncontrolled environment. This equipment should be installed and operated with a minimum distance of 20 cm between the radiator& your body.
+This equipment complies with FCC radiation exposure limits set forth for an uncontrolled environment. This equipment should be installed and operated with a minimum distance of 20 cm between the radiator & your body.
 
 :::warning 📝 ISEDC Warning
 This device complies with Innovation, Science, and Economic Development Canada licence-exempt RSS standard(s). Operation is subject to the following two conditions:
@@ -301,8 +303,3 @@ This device complies with Innovation, Science, and Economic Development Canada l
 
 The device complies with RF exposure guidelines, users can obtain Canadian information on RF exposure and compliance. The minimum distance from the body to use the device is 20 cm.
 :::
-
-## Certification
-
-<rk-certifications :params="$page.frontmatter.certifications" />
-

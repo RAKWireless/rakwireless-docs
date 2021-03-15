@@ -48,6 +48,7 @@ This board is a complete solution in developing your LoRaWAN protocol techniques
 - High sensitivity at -148&nbsp;dBm, enabling extremely long range connectivity.
 - Long-range - greater than 15&nbsp;km with optimized antenna.
 - Low power consumption: 11&nbsp;μA on on standby.
+- Ultra-Low Power Consumption of 11.9&nbsp;μA (down to 1.11&nbsp;μA @ 2.1&nbsp;V) in sleep mode.
 - Multi-channel, dual data buffer (256&nbsp;bytes each).
 - LoRa/FSK/GFSK/OOK modulation, bidirectional two-way communication.
 - Long battery life for battery-powered applications.

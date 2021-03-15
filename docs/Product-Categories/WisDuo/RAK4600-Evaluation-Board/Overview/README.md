@@ -29,7 +29,7 @@ The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P
 - LoRa module for Smart City, Smart Agriculture, Smart Industry
 - Frequency range: 863–870&nbsp;MHz (EU) / 902–928&nbsp;MHz (US), ISM and SRD systems
 - I/O ports: UART/I2C/GPIO (optional NFC interface)
-- Ultra-Low Power Consumption 11.2&nbsp;μA in sleep mode
+- Based on RAK4600 module with a sleep current consumption of 13.3&nbsp;μA (down to 11.2&nbsp;μA @ 2.0&nbsp;V)
 - LoRa Boost mode with 20&nbsp;dBm output power
 - BLE 5.0 (Tx power -20 to +4&nbsp;dBm in 4&nbsp;dB steps)
 

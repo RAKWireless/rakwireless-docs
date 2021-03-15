@@ -20,9 +20,9 @@ prev: ../Quickstart/
 
 ### Description
 
-**RAK4200 Breakout Board** is specifically designed to allow easy access to the pins on the board in order to simplify development and testing. The breakout board footprint is based on XBee form factor and its main purpose is to allow the RAK4200 stamp module pins to be transferred to 2.54mm headers.
+**RAK4200 Breakout Board** is specifically designed to allow easy access to the pins on the board in order to simplify development and testing. The breakout board footprint is based on XBee form factor and its main purpose is to allow the RAK4200 stamp module pins to be transferred to 2.54&nbsp;mm headers.
 
-The board itself has the RAK4200 at its core, integrating an **STM32L071KB MCU** and an **SX1276 LoRa transceiver**. It has Ultra-Low Power Consumption of 11.8 uA in sleep mode and high LoRa output power (19dBm) in work mode.
+The board itself has the RAK4200 at its core, integrating an **STM32L071KB MCU** and an **SX1276 LoRa transceiver**. It has Ultra-Low Power Consumption of 9.40&nbsp;uA (down to 1.08&nbsp;μA @ 2.0&nbsp;V) in sleep mode and high LoRa output power (19&nbsp;dBm) in work mode.
 
 The board complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P Point to Point communication.
 
@@ -30,19 +30,18 @@ The low power, long range LoRa communication capabilities of the board make it s
 
 ### Features
 
-LoRa module for Smart City, Smart Agriculture, Smart Industry
-
+- LoRa module for Smart City, Smart Agriculture, Smart Industry
 - I/O ports: **UART/I2C/GPIO**
-- Frequency range: **863–923 MHz** (entire LoRa high band spectrum)
-- Low-Power Wireless Systems with 7.8kHz to 500KHz Bandwidth
-- LoRa Tx power up to **19dBm**
-- Ultra-Low Power Consumption ** 1.5 uA in sleep mode**
+- Frequency range: **863–923&nbsp;MHz** (entire LoRa high band spectrum)
+- Low-Power Wireless Systems with 7.8&nbsp;kHz to 500&nbsp;kHz Bandwidth
+- LoRa Tx power up to **19&nbsp;dBm**
+- Ultra-Low Power Consumption of 9.40&nbsp;uA (down to 1.08&nbsp;μA @ 2.0&nbsp;V) in sleep mode
 - Core: **ARM 32-bit Cortex M0+** with MPU
-- Up to 128KB flash memory with ECC
-- 20KB RAM
-- 6KB of data EEPROM with ECC
-- Supply voltage: **2.0 ~ 3.6V**
-- Temperature range: **-40°C to +85°C**
+- Up to 128&nbsp;KB flash memory with ECC
+- 20&nbsp;KB RAM
+- 6&nbsp;KB of data EEPROM with ECC
+- Supply voltage: **2.0 ~ 3.6&nbsp;V**
+- Temperature range: **-40&nbsp;°C to +85&nbsp;°C**
 
 ## Specifications
 
@@ -73,8 +72,8 @@ When programming via a RAKDAP1 tool, it is required to have all of the following
 3. **SWCLK**
 4. **GND**
 
-:::tip Note:
-:pencil: For the aforementioned reason, it is best you leave these exposed for programming purposes and not to remap them as GPIOs.
+:::tip 📝 NOTE:
+For the aforementioned reason, it is best you leave these exposed for programming purposes and not to remap them as GPIOs.
 :::
 
 ##### UART Port
@@ -99,13 +98,13 @@ J3 is soldered to the antenna connector. Depending on your choice, it can come w
 
 The SPI interface (**_SPIMOSI, SPI MISO, SPI_CLK_**) is connected to **SX1276** internally.
 
-:::tip Note:
-:pencil: For the aforementioned reason, it is best you leave unconnected.
+:::tip 📝 NOTE:
+For the aforementioned reason, it is best you leave unconnected.
 :::
 
 #### Pin Definition
 
-The figure below shows the pinout of the RAK4200 Breakout Board:
+Figure 2 shows the pinout of the RAK4200 Breakout Board:
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/datasheet/rak4200-breakout-board-pinout.png"
@@ -143,10 +142,10 @@ The pin definitions of RAK4200 Breakout Board are shown in the following tables 
 
 ##### J4 Pin Definitions
 
-| Pin | Name | I/O | Description | Alternate Functions     |
-| --- | ---- | --- | ----------- | ----------------------- |
-| 1   | VDD  | -   | DC3V3       | Supply voltage 2.0~3.3V |
-| 2   | GND  | -   | Ground      | -                       |
+| Pin | Name | I/O | Description | Alternate Functions           |
+| --- | ---- | --- | ----------- | ----------------------------- |
+| 1   | VDD  | -   | DC3V3       | Supply voltage 2.0~3.3&nbsp;V |
+| 2   | GND  | -   | Ground      | -                             |
 
 #### RF Characteristics
 
@@ -165,12 +164,19 @@ The RAK4200 Breakout Board supports the following LoRa bands:
 
 The table below shows the power consumption of RAK4200 Breakout Board:
 
-| Item                    | Power Consumption | Condition                       |
-| ----------------------- | ----------------- | ------------------------------- |
-| Tx mode LoRa @19dBm    | 120mA             | LoRa @ PA_BOOST & BT sleep     |
-| Tx mode LoRa @17dBm    | 87mA              | LoRa @ PA_BOOST & BT sleep     |
-| Rx mode LoRa @37.5Kbps | 15mA              | LoRa @ Receive mode & BT sleep |
-| Sleep mode              | 1.5uA             | LoRa sleep                     |
+| Item                         | Power Consumption | Condition                      |
+| ---------------------------- | ----------------- | ------------------------------ |
+| Tx mode LoRa @19&nbsp;dBm    | 120&nbsp;mA       | LoRa @ PA_BOOST & BT sleep     |
+| Tx mode LoRa @17&nbsp;dBm    | 87&nbsp;mA        | LoRa @ PA_BOOST & BT sleep     |
+| Rx mode LoRa @37.5&nbsp;Kbps | 15&nbsp;mA        | LoRa @ Receive mode & BT sleep |
+
+##### Sleep Current
+
+| Feature             | Condition | Minimum (2.0&nbsp;V) | Typical (3.3&nbsp;V) | Maximum | Unit |
+| ------------------- | --------- | -------------------- | -------------------- | ------- | ---- |
+| Current Consumption | EU868     | 1.08                 | 8.66                 |         | μA   |
+|                     | US915     | 1.14                 | 9.40                 |         | μA   |
+|                     | CN470     | 1.13                 | 7.88                 |         | μA   |
 
 ##### Schematic Diagram
 
@@ -187,7 +193,6 @@ Download the latest firmware and bootloader of the RAK4200 Breakout Board provid
 
 #### Firmware
 
-| Model               | Version   | Source                                                                                           |
-| ------------------- | --------- | ------------------------------------------------------------------------------------------------ |
-| RAK4200 Firmware    | V3.2.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/RAK4200_Latest_Firmware.zip)        |
-| RAK4200 Bootloader | V3.2.3    | [Download](https://downloads.rakwireless.com/LoRa/RAK4200/Bootloader/) |
+| Model              | Version   | Source                                                                                          |
+| ------------------ | --------- | ----------------------------------------------------------------------------------------------- |
+| RAK4200 Firmware   | V3.2.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/RAK4200_Latest_Firmware.zip) |

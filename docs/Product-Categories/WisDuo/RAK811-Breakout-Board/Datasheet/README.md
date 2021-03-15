@@ -46,6 +46,7 @@ The RAK811 Breakout Board complies with Class A & C of LoRaWAN 1.0.2 specificati
 - High sensitivity at -148&nbsp;dBm, enabling extremely long range connectivity.
 - Long-range - greater than 15&nbsp;km with optimized antenna.
 - Low power consumption: 11&nbsp;μA on on standby.
+- Ultra-Low Power Consumption of 11.9&nbsp;μA (down to 1.11&nbsp;μA @ 2.1&nbsp;V) in sleep mode.
 - Multi-channel, dual data buffer (256&nbsp;bytes each).
 - LoRa/FSK/GFSK/OOK modulation, bidirectional two-way communication.
 - Long battery life for battery-powered applications.
@@ -190,7 +191,14 @@ The low radio frequency is applicable to bandwidth of regions EU433 and CN470.
 | ------------------- | ---------- | ----------------------- | ------- | ------- | ---- |
 | Current Consumption | TX Power   | 30 (@&nbsp;14&nbsp;dBm) |         |         | mA   |
 |                     | RX Mode    | 5.5                     |         |         | mA   |
-|                     | Sleep Mode | 7.2                     |         |         | uA   |
+
+##### Sleep Current
+
+| Feature                   | Condition  | Minimum (2.1V) | Typical (3.3V) | Maximum | Unit |
+| ------------------------- | ---------- | -------------- | -------------- | ------- | ---- |
+| Current Consumption       | EU868      | 8.37           | 11.9           |         | μA   |
+|                           | US915      | 1.11           | 11.8           |         | μA   |
+|                           | CN470      | 1.65           | 3.07           |         | μA   |
 
 #### Mechanical Characteristics
 
