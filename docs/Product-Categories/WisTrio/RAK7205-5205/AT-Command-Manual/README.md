@@ -1327,9 +1327,9 @@ OK
 
 
 
-27. <b>`set_config=lora:periodic_rst_interval:<time>` </b>
+27. <b>set_config=lora:periodic_rst_interval:`<time>` </b>
 
-This command is used to set a periodic restart.
+This command is used to set a periodic restart. It is only available on FW versions, starting from **v3.0.0.14.H.R** and **v3.0.0.14.L.R**.
 
 | Operation | Command                                           | Response |
 | --------- | ------------------------------------------------- | -------- |
@@ -1346,6 +1346,7 @@ This command is used to set a periodic restart.
     </tr>
 </table>
 
+<br>
 
 **Example**:
 

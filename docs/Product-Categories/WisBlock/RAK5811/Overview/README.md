@@ -21,8 +21,14 @@ Thank you for choosing **RAK5811 WisBlock 0-5V Interface Module** in your awesom
 
 **Examples**:
 
-* [Sample Code: RAK5811](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK5811_0-5V)
-* [Sample Code: Water Level Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/solutions/Water_Level_Monitoring)
+For All WisBlock Core:
+* [Sample Code: Water Level Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Water_Level_Monitoring)
+
+For WisBlock Core RAK4630:
+* [Sample Code: RAK5811 0-5V](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/IO/RAK5811_0-5V)
+
+For WisBlock Core RAK11200:
+* [Sample Code: RAK5811 0-5V](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/IO/RAK5811_0-5V)
 
 ## Product Description
 

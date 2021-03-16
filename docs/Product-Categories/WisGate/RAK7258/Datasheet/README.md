@@ -3,14 +3,15 @@ tags:
   - datasheet
   - wisgate
 prev: ../Quickstart/
-next: false 
+next: ../Supported-LoRa-Network-Servers/
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/Indoor-Gateway-RAK7258/Certification-Report/RAK7258_CE_Certificate.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/Indoor-Gateway-RAK7258/Certification-Report/RAK7258_FCC_Certificate.zip]
   - [KCC, https://downloads.rakwireless.com/LoRa/Indoor-Gateway-RAK7258/Certification-Report/RAK7258%20_%20KC_certification.pdf]
 ---
 
-# RAK7258 WisGate™ Edge Lite Datasheet
+# RAK7258 WisGate Edge Lite Datasheet
+
 ## Overview
 
 ### Description

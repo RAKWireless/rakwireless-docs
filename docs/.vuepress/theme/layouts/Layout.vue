@@ -163,7 +163,7 @@ export default {
         console.log(!frontmatter.home &&
             frontmatter.sidebar !== false &&
             this.sidebarItems.length !== 0)
-        if (this.ltMdDiv) return this.showDrawer;
+        if (this.ltMdDiv) return this.showDrawer
         else
           return (
             !frontmatter.home &&
@@ -182,6 +182,8 @@ export default {
     shouldShowNavbar() { 
       const { themeConfig } = this.$site
       const { frontmatter } = this.$page
+
+      
       if (frontmatter.navbar === false || themeConfig.navbar === false) {
         return false
       }

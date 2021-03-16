@@ -21,12 +21,16 @@ Thank you for choosing **RAK5802 WisBlock RS485 Interface Module** in your aweso
 
 **Examples**:
 
-* [Sample Code: RAK5802](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK5802_RS485)
-* [Sample Code: Intelligent Agriculture](https://github.com/RAKWireless/WisBlock/tree/master/examples/solutions/Inteligence_Agriculture)
-* [Sample Code: Soil Conductivity Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/solutions/Soil_Conductivity_Monitoring)
-* [Sample Code: PAR Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/solutions/PAR_Monitoring)
-* [Sample Code: Soil pH_Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/solutions/Soil_pH_Monitoring) 
-* [Sample Code: Wind Speed Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/solutions/Wind_Speed_Monitoring) 
+For WisBlock Core RAK4630:
+* [Sample Code: RAK5802 RS485](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/IO/RAK5802_RS485)
+* [Sample Code: Intelligent Agriculture](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Intelligent_Agriculture)
+* [Sample Code: Soil Conductivity Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Soil_Conductivity_Monitoring)
+* [Sample Code: PAR Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/PAR_Monitoring)
+* [Sample Code: Soil pH_Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Soil_pH_Monitoring) 
+* [Sample Code: Wind Speed Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Wind_Speed_Monitoring)
+
+For WisBlock Core RAK11200:
+* [Sample Code: RAK5802 RS485](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/IO/RAK5802_RS485)
 
 
 ## Product Description

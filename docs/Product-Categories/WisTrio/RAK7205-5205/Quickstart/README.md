@@ -16,7 +16,7 @@ tags:
 />
 -->
 
-### What do you need?
+### What Do You Need?
 
 Before going through each and every step in the installation guide of the RAK5205 WisTrio LPWAN Tracker, make sure to prepare the necessary items listed below:
 
@@ -24,14 +24,6 @@ Before going through each and every step in the installation guide of the RAK520
 2. Micro USB Cable
 3. Gateway in Range for Testing
 4. Windows PC
-
-::: tip 📝 NOTE
-This device released by RAKWireless is already pre-loaded with its latest firmware upon manufacturing. If you want to have your device firmware burned or upgraded, refer to the sections below:
-
-1. [Burning the Bootloader](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#burning-bootloader-into-the-device)
-2. [Upgrading the Firmware](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#upgrading-the-firmware)
-:::
-
 
 ### What's Included in the Package?
 
@@ -178,7 +170,7 @@ Depending on which authentication method you want to use, proceed to either the 
 
 #### OTAA Mode
 
-When setting up a new device in TTN, its default mode is **OTAA** or **Over-the-Air Activation**. For configuration, you need the following three parameters: **Device EUI, Application EUI**, and **App Key**. You can get them all from the **Overview page**.
+When setting up a new device in TTN, its default mode is **OTAA** or **Over-the-Air Activation**. For configuration, you need the following three parameters: **Device EUI, Application EUI**, and **App Key**. You can get them all from the **Device Overview** page.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-otaa-mode/s5ezrnlxr9qbwfbtssne.png"
@@ -192,7 +184,7 @@ Now, configure the RAK5205 to work in OTAA mode in the EU868 band, as an example
 The default LoRa working mode for the RAK5205 is LoRaWAN 1.0.2, while the default LoRa join mode is OTAA, and the default LoRa class is Class A.
 :::
 
-1. Set mode to OTAA, device class to Class A and your LoRaWAN region to your correct frequency band, with the following set of commands below. Remember to replace XXX with the your LoRaWAN region. Refer to RAK5205 [Datasheet](/Product-Categories/WisTrio/RAK7205-5205/Datasheet/#rf-requirements) for your frequency plan.
+1. Set mode to OTAA, device class to Class A and your LoRaWAN region to your correct frequency band, with the following set of commands below. Remember to replace XXX with your LoRaWAN region. Refer to RAK5205 [Datasheet](/Product-Categories/WisTrio/RAK7205-5205/Datasheet/#rf-characteristics) for your frequency plan.
 
 ```
 at+set_config=lora:join_mode:0
@@ -208,15 +200,8 @@ at+set_config=lora:region:XXX
 
 
 ::: tip 📝 NOTE
-RAK5205 will be sleeping most of the time. You need to input again the command if the reply you get is **Wake up**.
+RAK5205 will be sleeping most of the time. You need to input again the command if the reply you get is **`Wake up`**.
 :::
-
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-otaa-mode/okwyucipaed3fnrarkso.png"
-  width="90%"
-  caption="Setting up the RAK5205 operation mode"
-/>
 
 2. Now that RAK5205 is configured to be activated via OTAA, enter these parameters: **Device EUI, Application EUI**, and **App Key** using the commands below. Remember to replace the **"XXXX"** with the corresponding parameter value that matches the LoRaWAN network server.
 
@@ -233,45 +218,41 @@ at+set_config=lora:app_key:XXXX
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-otaa-mode/jttmbmkhm0ac0duvap94.png"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-otaa-mode/v14_commands.png"
   width="90%"
   caption="Setting up the RAK5205 OTAA parameters"
 />
 
-You should end up with a window as the one in **Figure 15** with **a series of OK messages**.
+You should end up with a window as the one in Figure 14 with a series of OK replies.
 
-3. Finally, execute the join command.
+3. Finally, execute the join command. If you join successfully, you will see that the device will start to search for satellite signal.
 
 ```
 at+join
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-otaa-mode/eevf8jgjt1p48i17vugw.png"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-otaa-mode/v14_join.png"
   width="90%"
   caption="Join command"
 />
 
-4. You can test the connection by sending an uplink frame. Use the following as an example:
-
-```
-at+send=lora:1:12345678
-```
+4. After the successful join, the device will automatically send uplinks that contains the sensor readings. This will take a while so you have to wait. If you do not see any transmissions, you can set the [time interval via AT command](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#configuration-of-gps-and-sensor-data). Also, if you are working indoor on your first setup, you will not see the GPS coordinates on the payload. The GPS needs to fix first.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-otaa-mode/tsyls5mfkzctes7lh1jg.png"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-otaa-mode/v14_otaa_payload.PNG"
   width="90%"
   caption="Sending an uplink frame"
 />
 
-5. If you get a response in your TTN live data feed as shown in Figure 18, then you are all set.
+5. If everything works ok, you will get a response in your TTN live data feed as shown in Figure 17.
 
 ::: tip 📝 NOTE
-Be sure to have the TTN console open prior to sending data through the RAK Serial Port. Else, you will not be able to see the packet sent.
+Be sure that the TTN console is open before sending the data through the RAK Serial Port. Else, you will not be able to see the packet sent.
 :::
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-otaa-mode/vab3mt37t1tozvj2bg0i.png"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-otaa-mode/ttn_data.PNG"
   width="100%"
   caption="Sending Data to TTN from RAK5205"
 />
@@ -288,7 +269,7 @@ Be sure to have the TTN console open prior to sending data through the RAK Seria
   caption="Switching to ABP mode"
 />
 
-3. Save the mode change and return to the **Device Overview page**. You can copy the keys by pressing the button after the value fields marked in red in Figure 20.
+3. Save the mode change and return to the **Device Overview page**. You can copy the keys by pressing the button after the value fields marked in red in Figure 19.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/dj7tij9ejfoopdheutmh.png"
@@ -296,32 +277,29 @@ Be sure to have the TTN console open prior to sending data through the RAK Seria
   caption="ABP parameters screen"
 />
 
-4. Now, you need to update the RAK5205 configuration (mode and parameters). Open the Serial Tool and type the command below to change the region (in case you have not done so already):
-
-```
-at+set_config=lora:region:EU868
-```
-
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/gkaye44gsjjuxhtptjmv.png"
-  width="90%"
-  caption="Region setup"
-/>
-
-5. Change the mode to **ABP** with the command:
+4. Set mode to **ABP** and device class to **Class A**, respectively. For the LoRaWAN region, set it according to your frequency plan, which can be found in the [Datasheet](/Product-Categories/WisTrio/RAK7205-5205/Datasheet/#rf-characteristics). Replace the XXX with the correct LoRaWAN region. You should end up with a series of OK replies as shown in Figure 20.
 
 ```
 at+set_config=lora:join_mode:1
 ```
 
+```
+at+set_config=lora:class:0
+```
+
+```
+at+set_config=lora:region:XXX 
+```
+
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/xxgmfyq9dkgzu7hcfq4g.png"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/abp_setup.png"
   width="90%"
-  caption="Join mode setup"
+  caption="ABP parameters screen"
 />
 
-6. Now that the mode has been changed, enter the parameters listed below which are needed for ABP activation (**Device Address**, **Network Session Key**, and **Application Session Key**). Remember to replace the **"XXXX"** with the corresponding parameter value that matches the LoRaWAN network server. Refer to Figure 20 for the parameters.
+
+
+5. Now that the mode has been changed, enter the parameters listed which are needed for ABP activation: **Device Address**, **Network Session Key**, and **Application Session Key**. Remember to replace the **"XXXX"** with the corresponding parameter value that matches the LoRaWAN network server. Refer to Figure 19 for the parameters.
 
 ```
 at+set_config=lora:dev_addr:XXXX
@@ -335,42 +313,30 @@ at+set_config=lora:nwks_key:XXXX
 at+set_config=lora:apps_key:XXXX
 ```
 
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/yjupd0dh7ytr1rzqe118.png"
-  width="90%"
-  caption="Setting up the RAK5205 ABP parameters"
-/>
-
-You should end up with a similar window shown in **Figure 23** with **a series of OK messages**.
-
-7. Finally, execute the join command:
+6. Finally, execute the join command:
 
 ```
 at+join
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/y81mijqfbzfvhxlvt8qm.png"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/v14_abp_join.png"
   width="90%"
   caption="Join command"
 />
 
-8. You can test the connection by sending an uplink frame. Use the following as an example:
-
-```
-at+send=lora:1:12345678
-```
+1. After the successful join, the device will automatically send uplinks that contains the sensor readings. This will take a while so you have to wait. If you do not see any transmissions, you can set the [time interval via AT command](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#configuration-of-gps-and-sensor-data). Also, if you are working indoor on your first setup, you will not see the GPS coordinates on the payload. The GPS needs to be fixed first.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/tfs0ngbmzluoex9gl3kn.png"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/v14_abp_payload.png"
   width="90%"
   caption="Sending an uplink frame"
 />
 
-If you get the same response in your TTN live data feed as shown in Figure 26, then you are all set.
+If you get the same response in your TTN live data feed as shown in Figure 23, then you are all set.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/nyce6bmb0fhsfjyi4op6.png"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/ttn_data.PNG"
   width="100%"
   caption="Sending Data to TTN from RAK5205"
 />
@@ -449,7 +415,7 @@ In this section, it is assumed that you have already connected your gateway to C
   caption="Selecting OTAA Activation Mode in ChirpStack"
 />
 
-2. Press “**CREATE DEVICE**” button. You may write the application key by yourself or generate it automatically by clicking the icon highlighted in Figure 34.
+2. Press “**CREATE DEVICE**” button. You may write the application key by yourself or generate it automatically by clicking the icon highlighted in Figure 31.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-otaa-mode/hkmekngvrkk9goqid1pv.png"
@@ -457,17 +423,7 @@ In this section, it is assumed that you have already connected your gateway to C
   caption="Application Key Generation"
 />
 
-3. Click "**SET DEVICE KEYS**” button. Now, you’ve completed the configuration on ChirpStack.
-
-- The Device EUI, which was set in the previous section to your RAK5205 WisTrio LPWAN Tracker as "dev_eui" is the same as highlighted in Figure 35.
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-otaa-mode/mdbj3th73unruqxl98zs.png"
-  width="100%"
-  caption="Device EUI Code"
-/>
-
-- The same with the Application Key, which was set in the previous section as "app_key" is the same as highlighted in Figure 36.
+- The generated Application Key (App Key) highlighted in Figure 32.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-otaa-mode/xrmpjlafrry3ag479lnl.png"
@@ -479,40 +435,28 @@ In this section, it is assumed that you have already connected your gateway to C
 The Application EUI which is set into RAK5205 via AT Command as “**app_eui**” is not needed for ChirpStack.
 :::
 
-4. Next, **configure** RAK5205 WisTrio LPWAN Tracker by using **AT commands**. To do this, connect your RAK5205 WisTrio LPWAN Tracker to a PC, power it on and open **RAK Serial Port Tool** on your computer.
+3. Click "**SET DEVICE-KEYS**” button. Now, you’ve completed the configuration on ChirpStack.
 
-```
-at+version
-```
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-otaa-mode/fqw3e70otnu8ymgnmu79.png"
-  width="45%"
-  caption="RAK Serial Port Tool"
-/>
-
-
-5. If the join mode is not in OTAA, just set the LoRa join mode to **OTAA** and LoRa class to **Class A** by typing the AT commands shown in Figure 38.
+4. You should now configure the device via AT commands. Set mode to OTAA, device class to Class A, and your LoRaWAN region to your correct frequency band, with the following set of commands below. Remember to replace XXX with the your LoRaWAN region. Refer to RAK5205 [Datasheet](/Product-Categories/WisTrio/RAK7205-5205/Datasheet/##rf-characteristics) for your frequency plan.
 
 ```
 at+set_config=lora:join_mode:0
 ```
 
 ```
-at+set_config-lora:class:0
+at+set_config=lora:class:0
 ```
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-otaa-mode/mdjpe1uhxdmahhthbt8w.jpg"
-  width="90%"
-  caption="Setting of LoRaWAN mode and class"
-/>
-
-6. Type the following AT command to set the **Frequency/Region**, **Device EUI**, **Application EUI**, and **Application Key.** Remember to replace the **"XXXX"** with the corresponding parameter value that matches the LoRaWAN network server.
 
 ```
 at+set_config=lora:region:XXX
 ```
+
+
+::: tip 📝 NOTE
+RAK5205 will be sleeping most of the time. You need to input again the command if the reply you get is **`Wake up`**.
+:::
+
+5. Now that RAK5205 is configured to be activated via OTAA, enter these parameters: **Device EUI**, **App EUI**, and **App Key** using the commands below. Remember to replace the **XXXX** with the corresponding parameter value that matches the Chirpstack network server. You can use the same **dev_eui** and **app_eui** when connecting to Chirpstack.
 
 ```
 at+set_config=lora:dev_eui:XXXX
@@ -527,56 +471,31 @@ at+set_config=lora:app_key:XXXX
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-otaa-mode/vugtbybavkertynte382.jpg"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-otaa-mode/v14_commands.png"
   width="90%"
-  caption="Setting of Frequency and Device EUI"
+  caption="Setting up the RAK5205 OTAA parameters"
 />
 
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-otaa-mode/rkeautvpyyd4oquhxvgq.jpg"
-  width="90%"
-  caption="Setting of Application EUI and Key"
-/>
+You should end up with a window as the one in Figure 33 with a series of OK replies.
 
-7. Then, **join** in OTAA mode.
+6. Finally, execute the join command.
 
 ```
 at+join
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-otaa-mode/xlebk2u3xe2ryxo5ss11.png"
-  width="45%"
-  caption="Joining in OTAA"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-otaa-mode/v14_join.png"
+  width="90%"
+  caption="Join command"
 />
 
-
-8. You can view the "**JoinRequest**" and "**JoinAccept**" on ChirpStack console.
+7. You can view the "**JoinRequest**" and "**JoinAccept**" on ChirpStack console. The sensor data will be automatically sent in a programmed interval after a successful join. If you do not see any transmissions, you can set the [time interval via AT command](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#configuration-of-gps-and-sensor-data). Also, if you are working indoor on your first setup, you will not see the GPS coordinates on the payload. The GPS needs to be fixed first.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-otaa-mode/pvt7etzwzprp8nqebfqi.png"
   width="100%"
   caption="Join Request of the Device in the ChirpStack"
-/>
-
-9.Try sending data from our RAK5205 WisTrio LPWAN Tracker to the ChirpStack by typing the command below in the serial port.
-
-```
-at+send=lora:2:1234567890
-```
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-otaa-mode/j7c4lszbgth963mh6kea.png"
-  width="45%"
-  caption="Sending Data to ChirpStack"
-/>
-
-You can see the message on ChirpStack page as shown in Figure 44.
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-otaa-mode/qk5n8nssmvinougxfqk6.png"
-  width="100%"
-  caption="Message Received in ChirpStack"
 />
 
 #### ABP Mode
@@ -601,116 +520,50 @@ You can see the message on ChirpStack page as shown in Figure 44.
   caption="Chirpstack ABP Activation Parameters Needed"
 />
 
-3. Use these parameters to set RAK5205 WisTrio LPWAN Tracker by using AT command. To set **LoRa join** mode to **ABP**, type the following command:
+3. Now that RAK5205 is configured to be activated via ABP, the next step is to setup the device. Set mode to ABP, device class to Class A, and your LoRaWAN region to your correct frequency band, with the following set of commands below. Remember to replace XXX with the your LoRaWAN region. Refer to RAK5205 [Datasheet](/Product-Categories/WisTrio/RAK7205-5205/Datasheet/##rf-characteristics) for your frequency plan.
 
 ```
 at+set_config=lora:join_mode:1
 ```
 
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/47-abp-mode.png"
-  width="80%"
-  caption="Chirpstack ABP Join Mode via RAK Serial Port Tool"
-/>
-
-4. Set LoRa class to **Class A**.
-
 ```
 at+set_config=lora:class:0
 ```
 
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/48-class.png"
-  width="80%"
-  caption="Chirpstack ABP Set Class via RAK Serial Port Tool"
-/>
-
-5. Set the frequency/region to **EU868**.
-
 ```
-at+set_config=lora:region:EU868
+at+set_config=lora:region:XXX
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/49-region.png"
-  width="80%"
-  caption="Chirpstack ABP Set Region/Frequency via RAK Serial Port Tool"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/abp_setup.png"
+  width="100%"
+  caption="ABP parameters screen"
 />
 
-6. Set the **Device Address**.
+4. Now that the mode has been changed, enter the parameters listed below which are needed for ABP activation: **Device Address**, **Network Session Key**, and **Application Session Key**. Remember to replace the **"XXXX"** with the corresponding parameter value that matches the LoRaWAN network server. Refer to Figure 37 for the parameters.
 
 ```
 at+set_config=lora:dev_addr:XXXX
 ```
 
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/50-devaddr.png"
-  width="80%"
-  caption="Chirpstack ABP Set Device Address via RAK Serial Port Tool"
-/>
-
-7. Set the **Network Session Key**.
-
 ```
 at+set_config=lora:nwks_key:XXXX
 ```
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/51-nwkskeys.png"
-  width="80%"
-  caption="Chirpstack ABP Set Network Session Key via RAK Serial Port Tool"
-/>
-
-8. Set the **Application Session Key**.
 
 ```
 at+set_config=lora:apps_key:XXXX
 ```
 
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/52-appskey.png"
-  width="80%"
-  caption="Chirpstack ABP Set Application Session Key via RAK Serial Port Tool"
-/>
-
-::: tip 📝 NOTE:
- After configuring all parameters, you need to reset RAK5205 WisTrio LPWAN Tracker to save the parameters.
-:::
-
-9. After resetting RAK5205 WisTrio LPWAN Tracker, join in ABP mode.
+5. Finally, execute the join command. After a successful join, the sensor data will be automatically sent in a programmed interval. If you do not see any transmissions, you can set the [time interval via AT command](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#configuration-of-gps-and-sensor-data). Also, if you are working indoor on your first setup, you will not see the GPS coordinates on the payload. The GPS needs to be fixed first.
 
 ```
 at+join
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/53-join.png"
-  width="80%"
-  caption="Chirpstack ABP Join via RAK Serial Port Tool"
-/>
-
-::: tip 📝 NOTE:
-Actually, it is not needed to join in ABP mode. But you still need to set this AT command to validate the parameters which you just set for ABP mode.
-:::
-
-10. Try to send data from RAK5205 WisTrio LPWAN Tracker to ChirpStack.
-
-```
-at+send=lora:2:1234567890
-```
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/54-lorasend.png"
-  width="80%"
-  caption="Chirpstack Sample Data Sent via RAK Serial Port Tool"
-/>
-
-- You can then see the data which is just sent from RAK5205 WisTrio LPWAN Tracker on ChirpStack console.
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-abp-mode/55-preview.png"
-  width="100%"
-  caption="Chirpstack Data Received Preview"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/v14_abp_join.png"
+  width="90%"
+  caption="Join command"
 />
 
 #### Configuration of GPS and Sensor Data
@@ -753,7 +606,7 @@ In the previous section, you have successfully sent some raw data from our RAK52
 Depending on the GPS coordinates accuracy configured on RAK5205 (either 4-digit or 6-digit), you must use the right decoder that can be downloaded on the RAKwireless [Github repository](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder). 
 :::
 
-Take the payload data in Figure 56, for example.
+Take the payload data in Figure 40, for example.
 
 Payload: **01 88 05 37 97 10 9D 59 00 DC 14 08 02 01 7A 07 68 58 06 73 25 6D 02 67 01 1D 04 02 14 AF 03 71 FF FF FF DD FC 2E**
 
@@ -843,9 +696,12 @@ Example Data: **03 71 FF FF FF DD FC 2E**
 
 ##### Input Decoding Function in TTN
 
-1. To start with, download the [**decoding function**](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder/blob/master/RUISensorDataDecoder_for_TTN.js).
+1. To start with, you need to get the payload decoder depending on the setup of your GPS data:
+  
+    - [**4-digit coordinates**](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder/blob/master/RUISensorDataDecoder_for_TTN.js)
+    - [**6-digit coordinates**](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder/blob/master/RUISensorDataDecoder_GPS6digitPrecison_for_TTN.js)
 
-2. From your TTN console, go to application page and click the "**Payload Formats**" tab as shown in Figure 58.
+2. From your TTN console, go to application page and click the "**Payload Formats**" tab as shown in Figure 42.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/decoding-sensor-data/i4xmo8ndpvbmx8i6q8tj.jpg"
@@ -863,7 +719,7 @@ Example Data: **03 71 FF FF FF DD FC 2E**
 
 ##### Testing the Validity of Decoding Sensor Data in TTN
 
-Input the listed data below in the "**Payload**" box as shown in Figure 60.
+Input the hex data below in the "**Payload**" box as shown in Figure 44.
 
 Payload data: **01 88 05 37 97 10 9D 59 00 DC 14 08 02 01 7A 07 68 58 06 73 25 6D 02 67 01 1D 04 02 14 AF 03 71 FF FF FF DD FC 2E**
 
@@ -873,7 +729,7 @@ Payload data: **01 88 05 37 97 10 9D 59 00 DC 14 08 02 01 7A 07 68 58 06 73 25 6
   caption="Testing Payload Data"
 />
 
-- Then, click "**Test**" and it will generate a code with the decoded data as shown in Figure 60.
+- Then, click "**Test**" and it will generate a code with the decoded data as also shown in Figure 44.
 
 ```json
 {
@@ -904,7 +760,7 @@ Payload data: **01 88 05 37 97 10 9D 59 00 DC 14 08 02 01 7A 07 68 58 06 73 25 6
 
 #### Testing in Real System in TTN
 
-After the gateway and node go online, click the **uplink data record** from the application data tab to check the decode status. In Figure 61, you can see the data decoded successfully in TTN.
+After the gateway and node go online, click the **uplink data record** from the application data tab to check the decode status. In Figure 45, you can see the data decoded successfully in TTN.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/decoding-sensor-data/gncjz92kenv5h8w39bp0.jpg"
@@ -916,9 +772,13 @@ After the gateway and node go online, click the **uplink data record** from the 
 
 ##### Input Decoding Function in ChirpStack
 
-1. To start with, download the [**decoding function**](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder/blob/master/RUISensorDataDecoder_for_ChirpStack.js).
 
-2. From your ChirpStack, go to application page and click the "**APPLICATION CONFIGURATION**" tab as shown in Figure 62.
+1. To start with, you need to get the payload decoder depending on the setup of your GPS data:
+  
+    - [**4-digit coordinates**](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder/blob/master/RUISensorDataDecoder_for_ChirpStack.js)
+    - [**6-digit coordinates**](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder/blob/master/RUISensorDataDecoder_GPS6digitPrecison_for_ChirpStack.js)
+
+2. From your ChirpStack, go to application page and click the "**APPLICATION CONFIGURATION**" tab as shown in Figure 46.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/decoding-sensor-data/vs8mobszwtkfyqeodvze.jpg"
@@ -938,7 +798,7 @@ After the gateway and node go online, click the **uplink data record** from the 
 
 ##### Testing in Real System in ChirpStack
 
-After the gateway and node go online, click the uplink data record from the application data at "**LIVE DEVICE DATA**" tab to check the decode status. In Figure 64, you can see the data decoded successfully in ChirpStack.
+After the gateway and node go online, click the uplink data record from the application data at "**LIVE DEVICE DATA**" tab to check the decode status. In Figure 48, you can see the data decoded successfully in ChirpStack.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/decoding-sensor-data/grvuetv6kt8qdtnopyuf.jpg"
@@ -955,7 +815,7 @@ MyDevice/Cayenne is a service that allows one to monitor node data in real time 
 Before you can use Cayenne, you need to configure our Application in TTN to properly work with it.
 
 1. Log into your TTN Console and navigate to the desired application and RAK5205 device.
-2. Go to the **Payload Formats** tab as seen in Figure 65 and choose **"Cayenne LPP**".
+2. Go to the **Payload Formats** tab as seen in Figure 49 and choose **"Cayenne LPP**".
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/cayenne-integration/crg46b4kwqgjgutbshaa.jpg"
@@ -979,7 +839,7 @@ Before you can use Cayenne, you need to configure our Application in TTN to prop
   caption="My Devices Integration"
 />
 
-5. You will be redirected to a page the same as shown in Figure 68, where you need to enter a Process ID and select an Access Key (Choose the default key).
+5. You will be redirected to a page the same as shown in Figure 52, where you need to enter a Process ID and select an Access Key (Choose the default key).
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/cayenne-integration/y5ruf9bbupnyvggmjm1d.jpg"
@@ -1029,7 +889,7 @@ If you don't have an account in Cayenne, head on to [https://mydevices.com/cayen
   caption="Setting device parameters"
 />
 
-- If everything went well, you should end up with a screen the same as Figure 74.
+- If everything went well, you should end up with a screen the same as Figure 58.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/cayenne-integration/x80ncxi5xnwkhjlqcqby.jpg"
@@ -1112,19 +972,78 @@ Now, you have successfully finished your RAK5205 LPWAN Tracker set up.
 
 ## Miscellaneous
 
-### Burning Bootloader into the Device
+### Upgrading the Firmware
 
-Get the [Bootloader Firmware](https://downloads.rakwireless.com/en/LoRa/WisTrio-LoRa-RAK5205/Firmware/) for the RAK5205 WisTrio LPWAN Tracker from RAKwireless download site. Burning the Bootloader into the device is done as follows:
+If you want to upgrade the latest version firmware of the module, you can follow this section. The latest firmware can be found in the [software section of RAK7205/RAK5205 Datasheet](/Product-Categories/WisTrio/RAK7205-5205/Datasheet/#firmware).
 
-::: warning ⚠️ WARNING
-Skip this section if you have a RAK5205 V3.0.0.0 firmware or newer, for it already has a bootloader.
+::: tip 📝 NOTE
+The FW zip folder will have .hex and .bin firmware files. The .hex file will contain the bootloader plus the application code while the .bin file will contain only the application code.
 :::
 
-You need to make sure you have the latest firmware on your device. To be able to do this, you need to follow these steps:
+The procedure of updating the firmware will depend on your current firmware. Follow the guides listed below:
 
-1. To start with, download and install the [**STM32CubeProgrammer**](https://www.st.com/en/development-tools/stm32cubeprog.html) tool in your PC. You can also get it in the [RAK directory](https://downloads.rakwireless.com/LoRa/RAK811/Tools/).
+- [For devices with current FW version V3.0.0.14 and up, you must use RAK DFU Tool](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#firmware-update-using-rak-dfu-tool).
+- [For devices with current FW version V3.0.0.12 and below, you must use STM32CubeProgrammer](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#firmware-update-using-rak-dfu-tool).
 
-2. Then, configure your RAK5205 by jumping the “**BOOT**” pin and “**VCC**” pin for boot mode. Refer to Figures 79 and 80.
+#### Firmware update using RAK DFU Tool
+
+This firmware update process is for devices with current firmware **V3.0.0.14 and up**.
+
+1. Download the latest application firmware of the RAK7205/RAK5205.
+
+    - [RAK7205/RAK5205 Latest Firmware](/Product-Categories/WisTrio/RAK7205-5205/Datasheet/#firmware)
+
+2.	Download the RAK Device Firmware Upgrade (DFU) tool.
+    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+
+3.	Connect the RAK7205/RAK5205 to a computer via USB.
+
+4.	Open the RAK Device Firmware Upgrade(DFU) v1.4. Select the serial port and baud rate of the module and click the "Select Port" button.
+
+<rk-img
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/rak7205-device-firmware.png"
+  width="80%"
+  caption="Device Firmware Upgrade Tool"
+/>
+
+5.	Select the application firmware file of the module with the suffix "**.bin**".
+
+<rk-img
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/rak7205-select-firmware.png"
+  width="80%"
+  caption="Select Firmware"
+/>
+
+6.	Click the "**Upgrade**" button to upgrade the device. After the upgrade is complete, the RAK7205/RAK5205 device will be ready to work with the new firmware.
+
+<rk-img
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/rak7205-firmware-upgrading.png"
+  width="80%"
+  caption="Firmware Upgrading"
+/>
+
+
+<rk-img
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/rak7205-upgrade-success.png"
+  width="80%"
+  caption="Upgrade Successful"
+/>
+
+#### Firmware update using STM32CubeProgrammer
+
+This firmware update process is for devices with current firmware **V3.0.0.12 and below**.
+
+::: warning ⚠️ WARNING
+If you already have a deployed IoT project that uses RAK7205/RAK5205 with firmware version V3.0.0.12 and below, be aware that there will be changes on the AT commands reply when you update your firmware to V3.0.0.14 and up.
+:::
+
+1. Download the latest application firmware of the RAK7205/RAK5205.
+
+    - [RAK7205/RAK5205 Latest Firmware](/Product-Categories/WisTrio/RAK7205-5205/Datasheet/#firmware)
+
+2. Download and install the [**STM32CubeProgrammer**](https://www.st.com/en/development-tools/stm32cubeprog.html) tool in your PC. You can also get it in the [RAK directory](https://downloads.rakwireless.com/LoRa/RAK811/Tools/).
+
+3. Then, configure your RAK5205 by jumping the “**BOOT**” pin and “**VCC**” pin for boot mode. Refer to Figures 67 and 68.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/eeh8zvvyderwyp6caxsu.jpg"
@@ -1138,7 +1057,7 @@ You need to make sure you have the latest firmware on your device. To be able to
   caption="Jumper at Boot and VCC pins"
 />
 
-3. Connect your RAK5205 to your PC using the USB cable.
+4. Connect your RAK5205 to your PC using the USB cable.
 ::: tip 📝 NOTE
 The jumper on the BOOT pin must be placed first before connecting to the USB Cable.
 :::
@@ -1149,7 +1068,7 @@ The jumper on the BOOT pin must be placed first before connecting to the USB Cab
   caption="RAK5205 connected to your PC via USB cable"
 />
 
-4. Choose the correct port number in the **COM Port** field. You can check this in the **Device Manager**.
+5. Choose the correct port number in the **COM Port** field. You can check this in the **Device Manager**.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/ct9xcr8m3feyf4hcsuc1.jpg"
@@ -1157,19 +1076,19 @@ The jumper on the BOOT pin must be placed first before connecting to the USB Cab
   caption="Checking COM Port through Device Manager"
 />
 
-5. Open the **STM32CubeProgrammer** tool.
+6. Open the **STM32CubeProgrammer** tool.
 
-6. Select **UART type**. Go to COM Port and look for your RAK5205 Board COM Port (example: COM5).
+7. Select **UART type**. Go to COM Port and look for your RAK5205 Board COM Port (example: COM3).
 
-7. Configure the **baud rate** and **parity**.
+8. Configure the **baud rate** and **parity**.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/kxwsnn5cfc3c7mhdg9kw.jpg"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/uart_settings.PNG"
   width="100%"
   caption="UART Settings in STM32CubeProgrammer"
 />
 
-8. Then, press the “**Connect**” button at the top right corner.
+9. Then, press the “**Connect**” button at the top right corner.
 
 ::: warning ⚠️ WARNING
 If there are some errors in the Log box or it can’t connect, close the STM32CubeProgrammer and reset RAK5205. Then, open the STM32CubeProgrammer and connect again.
@@ -1181,53 +1100,53 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
   caption="Errors Occurred During Connecting"
 />
 
-- You should see a similar log as shown in Figure 85.
+- You should see a similar log as shown in Figure 73.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/fe8qmougdo8brhppqggd.jpg"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/connected.PNG"
   width="100%"
   caption="Successful Connection Log to your Device"
 />
 
-9. Before uploading the firmware, **erase all data** on the RAK5205 WisTrio LPWAN Tracker as shown on Figure 86.
+10. Before uploading the firmware, **erase all data** on the RAK5205 WisTrio LPWAN Tracker as shown on Figure 74.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/tzcxzjuvnvzibznrfcwg.jpg"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/erasing.PNG"
   width="100%"
   caption="Erasing the Data in the Chip"
 />
 
-10. Press “**Open file**” and select the bootloader file in the pop-up window.
+11. Press “**Open file**” and select the latest RAK5205 firmware file in the pop-up window. Be sure to select the .hex file and not the .bin file.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/ldnfi1fr87cxoxwgfbpa.jpg"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/open_file.PNG"
   width="100%"
   caption="Opening the Bootloader file"
 />
 
-11. Click the “**Download**” button to start the burning process.
+12. Click the “**Download**” button to start the burning process.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/gzos6pwkmw5lvbotnxf5.jpg"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/download_button.PNG"
   width="100%"
   caption="Downloading of Bootloader to the device"
 />
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/iteqb0yu5pqaz13he92k.jpg"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/download_running.PNG"
   width="100%"
   caption="Completing the Download of Bootloader into the device"
 />
 
-12. Now, you have successfully burned the firmware into RAK5205 WisTrio LPWAN Tracker.
+13. Now, you have successfully burned the firmware into RAK5205 WisTrio LPWAN Tracker.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/fnx2ybuctwfdgjcdnb9c.jpg"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/download_success.PNG"
   width="100%"
   caption="Successfully Burned the Bootloader to the device"
 />
 
-13. **Disconnect** and close the **STM32CubeProgrammer** tool. Then, power down and remove the connection between BOOT pin and VCC pin to let RAK5205 WisTrio LPWAN Tracker work in normal mode.
+14. **Disconnect** and close the **STM32CubeProgrammer** tool. Then, power down and remove the connection between BOOT pin and VCC pin to let RAK5205 WisTrio LPWAN Tracker work in normal mode.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/nuoi6ddmrpp7ne32p7gm.jpg"
@@ -1235,48 +1154,159 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
   caption="Jumper connection removed"
 />
 
-14. Connect RAK5205 with your PC’s USB interface again. Open your serial port tool and if you can see boot mode as shown in Figure 92.
+15. Connect RAK5205 with your PC’s USB interface again. Open your serial port tool and check your firmware version shown in Figure 80.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/wpwt4lcs7bupbdess4ns.jpg"
-  width="45%"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/v14_test.PNG"
+  width="85%"
+  caption="Updated Firmware"
+/>
+
+#### Legacy Firmware Support (V3.0.0.12)
+
+If you still need to use V3.0.0.12, this is the guide you should follow. The first step is to upload the bootloader code to the RAK7205/RAK5205. Then update the FW using LoRa Button FW update software.
+
+1. Download the legacy bootloader hex file of the RAK7205/RAK5205 compatible to FW V3.0.0.12.
+
+    - [RAK7205/RAK5205 Bootloader FW](https://downloads.rakwireless.com/LoRa/RAK7205-Tracker/Firmware/RUI_RAK5205_BOOT_Version3_0_2.rar)
+
+2. Download and install the [**STM32CubeProgrammer**](https://www.st.com/en/development-tools/stm32cubeprog.html) tool in your PC. You can also get it in the [RAK directory](https://downloads.rakwireless.com/LoRa/RAK811/Tools/).
+
+3. Then, configure your RAK5205 by jumping the “**BOOT**” pin and “**VCC**” pin for boot mode. Refer to Figures 81 and 82.
+
+<rk-img
+  src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/eeh8zvvyderwyp6caxsu.jpg"
+  width="60%"
+  caption="Boot and VCC Pins"
+/>
+
+<rk-img
+  src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/ygkxl9ch7laja72wssxw.jpg"
+  width="60%"
+  caption="Jumper at Boot and VCC pins"
+/>
+
+4. Connect your RAK5205 to your PC using the USB cable.
+::: tip 📝 NOTE
+The jumper on the BOOT pin must be placed first before connecting to the USB Cable.
+:::
+
+<rk-img
+  src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/mnlyzbqc9pcxtudki9gb.jpg"
+  width="50%"
+  caption="RAK5205 connected to your PC via USB cable"
+/>
+
+5. Choose the correct port number in the **COM Port** field. You can check this in the **Device Manager**.
+
+<rk-img
+  src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/ct9xcr8m3feyf4hcsuc1.jpg"
+  width="75%"
+  caption="Checking COM Port through Device Manager"
+/>
+
+6. Open the **STM32CubeProgrammer** tool.
+
+7. Select **UART type**. Go to COM Port and look for your RAK5205 Board COM Port (example: COM3).
+
+8. Configure the **baud rate** and **parity**.
+
+<rk-img
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/uart_settings.PNG"
+  width="100%"
+  caption="UART Settings in STM32CubeProgrammer"
+/>
+
+9. Then, press the “**Connect**” button at the top right corner.
+
+::: warning ⚠️ WARNING
+If there are some errors in the Log box or it can’t connect, close the STM32CubeProgrammer and reset RAK5205. Then, open the STM32CubeProgrammer and connect again.
+:::
+
+<rk-img
+  src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/uu4dimjfeqnzjefqbznv.jpg"
+  width="100%"
+  caption="Errors Occurred During Connecting"
+/>
+
+- You should see a similar log as shown in Figure 87.
+
+<rk-img
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/connected.PNG"
+  width="100%"
+  caption="Successful Connection Log to your Device"
+/>
+
+10. Before uploading the firmware, **erase all data** on the RAK5205 WisTrio LPWAN Tracker as shown on Figure 88.
+
+<rk-img
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/erasing.PNG"
+  width="100%"
+  caption="Erasing the Data in the Chip"
+/>
+
+11. Press “**Open file**” and select the bootloader file in the pop-up window.
+
+<rk-img
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/open_file.PNG"
+  width="100%"
+  caption="Opening the Bootloader file"
+/>
+
+12. Click the “**Download**” button to start the burning process.
+
+<rk-img
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/boot_download_button.PNG"
+  width="100%"
+  caption="Downloading of Bootloader to the device"
+/>
+
+<rk-img
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/boot_download_running.PNG"
+  width="100%"
+  caption="Completing the Download of Bootloader into the device"
+/>
+
+13. Now, you have successfully burned the firmware into RAK5205 WisTrio LPWAN Tracker.
+
+<rk-img
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/boot_download_success.PNG"
+  width="100%"
+  caption="Successfully Burned the Bootloader to the device"
+/>
+
+14. **Disconnect** and close the **STM32CubeProgrammer** tool. Then, power down and remove the connection between BOOT pin and VCC pin to let RAK5205 WisTrio LPWAN Tracker work in normal mode.
+
+<rk-img
+  src="/assets/images/wistrio/rak7205-5205/quickstart/burning-the-bootloader/nuoi6ddmrpp7ne32p7gm.jpg"
+  width="60%"
+  caption="Jumper connection removed"
+/>
+
+15. Connect RAK5205 with your PC’s USB interface again. Open your serial port tool check the version as shown in Figure 94. If it shows the RUI Bootloader Version, the device is now on bootloader mode and ready to get the application firmware.
+
+<rk-img
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/boot_mode_at.PNG"
+  width="85%"
   caption="Successfully Downloading the Bootloader"
 />
 
-You can now start burning the firmware into RAK5205 WisTrio LPWAN Tracker.
 
-### Upgrading the Firmware
+16. You can now on the second step which is burning the V3.0.0.12 firmware into RAK7205/RAK5205 using the LoRa Button Upgrade Tool.
 
-If the firmware version of your RAK5205 WisTrio LPWAN Tracker is newer than V3.0.0.0 or you have just burned the bootloader into RAK5205 WisTrio LPWAN Tracker according to the Burning Bootloader into the Device section, then you just need to burn the upgrade firmware by executing the following steps:
 
-1. Type the command to let the RAK5205 WisTrio LPWAN Tracker work in boot mode.
-
-::: tip 📝 NOTE
-If you have just burned the bootloader by yourself according to the section 2, it works in boot mode now. If the current version of the RAK5205 firmware is newer than V3.0.0.0, you need to set an AT command to let it work in boot mode.
-:::
-
-```
-at+set_config=device:boot
-```
+17. Download the [**RAK Upgrade Tool V1.0**](https://downloads.rakwireless.com/en/LoRa/RAK612-LoRaButton/Tools/). Then, extract and open the tool.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/ak6dmrbeykbyxktghplr.jpg"
-  width="45%"
-  caption="Turning the Boot Mode on"
-/>
-
-2. Close the serial port tool and download the [**RAK Upgrade Tool V1.0**](https://downloads.rakwireless.com/en/LoRa/RAK612-LoRaButton/Tools/). Then, extract and open the tool.
-
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/bhnagxk2lyikpa1rqpmd.jpg"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/lora_button_choose.PNG"
   width="75%"
   caption="RAK Upgrade Tool"
 />
 
-3. Get the [RAK5205 Firmware](https://downloads.rakwireless.com/en/LoRa/WisTrio-LoRa-RAK5205/Firmware/) from RAKwireless download site and click “**Choose File**” button to select the firmware file.
+3. Get the [RAK5205 V3.0.0.12 Firmware](https://downloads.rakwireless.com/LoRa/WisTrio-LoRa-RAK5205/Firmware/History-Release-Version/) from RAKwireless download site and click “**Choose File**” button to select the firmware file.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/xy32xtmb8urj28pk1cr0.jpg"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/lora_button_file.PNG"
   width="75%"
   caption="Choosing the Correct Upgrade file"
 />
@@ -1284,13 +1314,13 @@ at+set_config=device:boot
 4. Click “**Start**” to upgrade. This may take a minute.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/nbn7qmum5do7ivvvva3m.jpg"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/lora_button_sending.PNG"
   width="75%"
   caption="Start Upgrading your Firmware"
 />
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/eprjekj8xxk77om7vbw3.jpg"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/lora_button_success.PNG"
   width="75%"
   caption="Successfully Upgraded your Firmware"
 />
@@ -1298,16 +1328,12 @@ at+set_config=device:boot
 5. Now, close the upgrade tool and open a serial port tool to configure your RAK5205.
 
 - It is recommended to use the **RAK Serial Port Tool** because there are some ready AT commands in this tool which very useful for you. You can get it from the [**RAK directory**](https://downloads.rakwireless.com/en/LoRa/RAK811/Tools/) for free.
-- Choose the correct **COM port** and set the baud rate to **115200**. Then open the serial port and enter the AT command to restart.
-
-```
-at+set_config=device:restart
-```
+- Choose the correct **COM port** and set the baud rate to **115200**. Then open the serial port and check the firmware version.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/nrnvbjsxvodttrumo7x9.jpg"
-  width="45%"
-  caption="Restarting your Firmware"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/v12_test.PNG"
+  width="85%"
+  caption="V3.0.0.12 Firmware"
 />
 
 You have successfully upgraded the new firmware.
@@ -1343,7 +1369,7 @@ The assembly includes the following
 
 1. To start with, assemble the cover of your RAK5205 enclosure.
 
-   a. If a solar panel is necessary, attached it to the cover, as shown in Figure 101, using silicon glue.
+   a. If a solar panel is necessary, attached it to the cover, using silicon glue, as shown in Figure 102.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/hkvlodlletmm7bjllgf0.jpg"
@@ -1360,7 +1386,7 @@ The assembly includes the following
   caption="Inserting Plug in Cover with no Solar Panel"
 />
 
-2. Install the Supporting Plate along with the two M4x5 screws as shown in Figure 103.
+2. Install the Supporting Plate along with the two M4x5 screws as shown in Figure 104.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/naneciy4etcubtmm0xvl.jpg"
@@ -1368,7 +1394,7 @@ The assembly includes the following
   caption="Installed Supporting Plate"
 />
 
-**3.** Using the three M16 Dome plugs and two M12 Dome plugs, plug the opening of the bottom shell (left of Figure 104). Then, if an external antenna or an external interface is needed, replace the corresponding hole with the corresponding cable (right).
+3. Using the three M16 Dome plugs and two M12 Dome plugs, plug the opening of the bottom shell (left of Figure 105). Then, if an external antenna or an external interface is needed, replace the corresponding hole with the corresponding cable (right).
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/rkdtlzgisoimwdls7cgh.jpg"
@@ -1384,7 +1410,7 @@ The assembly includes the following
   caption="Fixing of RAK5205 in Enclosure"
 />
 
-5. Attach the LoRa and GPS antenna at the bottom shell. The LoRa antenna is glued above the M12 Dome plug while the GPS is on the shorter side, as shown in Figure 106.
+5. Attach the LoRa and GPS antenna at the bottom shell. The LoRa antenna is glued above the M12 Dome plug while the GPS is on the shorter side, as shown in Figure 107.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/roaftyivpwpzljam2c9x.jpg"
@@ -1436,7 +1462,7 @@ The assembly includes the following
   caption="Fixing Installation Kit"
 />
 
-2. Using a **Ø5mm drill head**, drill four holes on the wall according to the dimension shown in Figure 112, and then plug the screw anchors in the wall.
+2. Using a **Ø5&nbsp;mm drill head**, drill four holes on the wall according to the dimension shown in Figure 113, and then plug the screw anchors in the wall.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/czouz5aajdzqxpkfvodf.jpg"

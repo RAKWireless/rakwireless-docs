@@ -11,6 +11,7 @@ Thank you for choosing **RAK7240 WisGate Edge Prime** in your awesome IoT Projec
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
+* [Supported LoRa Network Servers](../Supported-LoRa-Network-Servers/)
 * [OpenWRT Recovery Procedure](/Knowledge-Hub/Learn/OpenWRT-Recovery-Procedure/)
 
 ## Product Description

@@ -20,10 +20,12 @@ Thank you for choosing **RAK1920 WisBlock Sensor Adapter Module** in your awesom
 * [WisBlock IO Tutorial](/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
 
 **Examples**
-* [Sample Code: RAK1920 Grove Digital](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK1920_Grove_PIR_AS312) 
-* [Sample Code: RAK1920 Grove I2C](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK1920_Grove_Color_TCS3472) 
-* [Sample Code: RAK1920 MikroBus](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK1920_MikroBUS_Temperature_TMP102)
-* [Sample Code: RAK1920  QWIIC](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK1920_QWIIC_AirQuality_SGP30)
+
+For All WisBlock Core:
+* [Sample Code: RAK1920 Grove Digital](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1920_Grove_PIR_AS312) 
+* [Sample Code: RAK1920 Grove I2C](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1920_Grove_Color_TCS3472) 
+* [Sample Code: RAK1920 MikroBus](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1920_MikroBUS_Temperature_TMP102)
+* [Sample Code: RAK1920  QWIIC](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1920_QWIIC_AirQuality_SGP30)
 
 ## Product Description
 

@@ -13,6 +13,7 @@ Thank you for choosing **RAK7249 WisGate Edge Max** in your awesome IoT Project!
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
+* [Supported LoRa Network Servers](../Supported-LoRa-Network-Servers/)
 * [OpenWRT Recovery Procedure](/Knowledge-Hub/Learn/OpenWRT-Recovery-Procedure/)
 
 

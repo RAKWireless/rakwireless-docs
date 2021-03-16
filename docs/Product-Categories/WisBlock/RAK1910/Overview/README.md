@@ -20,8 +20,12 @@ Thank you for choosing **RAK1910 WisBlock GNSS Location Module** in your awesome
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 
 **Examples**
-* [Sample Code: RAK1910](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK1910_GPS_UBLOX7)
-* [Sample Code: GPS Tracker](https://github.com/RAKWireless/WisBlock/tree/master/examples/solutions/GPS_Tracker)
+
+For All WisBlock Core:
+* [Sample Code: RAK1910](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1910_GPS_UBLOX7)
+
+For WisBlock Core RAK4630:
+* [Sample Code: GPS Tracker](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/GPS_Tracker)
 
 ## Product Description
 

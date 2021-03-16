@@ -36,6 +36,12 @@
             <q-item-label caption>Frequently Asked Questions</q-item-label>
           </q-item-section>
         </q-item>
+        <q-item class="full-width q-py-md" :to="`/Knowledge-Hub/Pin-Mapper`">
+          <q-item-section>
+            <q-item-label>IO Mapping</q-item-label>
+            <q-item-label caption></q-item-label>
+          </q-item-section>
+        </q-item>
       </q-list>
     </rk-dropdown>
     <q-btn

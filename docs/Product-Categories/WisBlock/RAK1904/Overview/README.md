@@ -20,8 +20,12 @@ Thank you for choosing **RAK1904 WisBlock 3-axis Acceleration Sensor** in your a
 
 
 **Examples**
-* [Sample Code: RAK1904](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK1904_Accelerate_LIS3DH)
-* [Sample Code: GPS Tracker](https://github.com/RAKWireless/WisBlock/tree/master/examples/solutions/GPS_Tracker)
+
+For All WisBlock Core:
+* [Sample Code: RAK1904](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1904_Accelerate_LIS3DH)
+
+For WisBlock Core RAK4630:
+* [Sample Code: GPS Tracker](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/GPS_Tracker)
 
 ## Product Description
 

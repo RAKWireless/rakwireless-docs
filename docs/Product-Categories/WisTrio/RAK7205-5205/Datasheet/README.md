@@ -396,5 +396,5 @@ Download the supported firmwares of RAK5205 in the table provided below.
 
 | Model       | Supported Firmwares                   | Version   | Source                                                                                                         |
 | ----------- | ------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------- |
-| RAK5205 - H | EU868 / US915 / AU915 / KR920 / IN865 | V3.0.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK7205-Tracker/Firmware/RAK5205_7205_H_Latest_Firmware.zip) |
-| RAK5205 - L | EU433 / CN470                         | V3.0.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK7205-Tracker/Firmware/RAK5205_7205_L_Latest_Firmware.zip) |
+| RAK5205 - H | EU868 / US915 / AU915 / KR920 / IN865 | V3.0.0.14.H.R | [Download](https://downloads.rakwireless.com/LoRa/RAK7205-Tracker/Firmware/RAK5205_7205_H_Latest_Firmware.zip) |
+| RAK5205 - L | EU433 / CN470                         | V3.0.0.14.L.R | [Download](https://downloads.rakwireless.com/LoRa/RAK7205-Tracker/Firmware/RAK5205_7205_L_Latest_Firmware.zip) |

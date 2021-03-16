@@ -6,8 +6,8 @@ module.exports = [
     {
         text: 'Help',
         items: [
-           {text: 'FAQ', link: '/faq/'},
-          {  text: 'Forum', link: 'https://forum.rakwireless.com/' }
+            { text: 'FAQ', link: '/faq/'},
+            { text: 'Forum', link: 'https://forum.rakwireless.com/' }
         ]
     }
 ]

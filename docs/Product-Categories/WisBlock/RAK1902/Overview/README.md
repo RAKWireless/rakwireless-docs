@@ -20,8 +20,12 @@ Thank you for choosing **RAK1902 WisBlock Barometer Pressure Sensor** in your aw
 
 
 **Examples**
-* [Sample Code: RAK1902](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK1902_Pressure_LPS22HB)
-* [Sample Code: Weather Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/solutions/Weather_Monitoring)
+
+For All WisBlock Core:
+* [Sample Code: RAK1902](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1902_Pressure_LPS22HB)
+
+For WisBlock Core RAK4630:
+* [Sample Code: Weather Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Weather_Monitoring)
 
 ## Product Description
 
