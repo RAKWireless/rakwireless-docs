@@ -310,7 +310,7 @@ In general, the RAK2287's variation is the defined as **RAK2287 - XY**, where **
 
 | Parameter            | Variations                                                                               |
 | -------------------- | ---------------------------------------------------------------------------------------- |
-| X - Model Variant    | S<br>A                                                                              |
+| X - Model Variant    | S<br>M                                                                              |
 | Y - Supported Region | 2 - CN470<br> 3 - EU868<br>4 - US915<br>5 - KR920<br>6 - AS923<br>7 - IN865<br>8 - AU915 |
 
 The table below shows the board order configurations of the RAK2287 WisLink LPWAN Concentrator.
@@ -318,7 +318,8 @@ The table below shows the board order configurations of the RAK2287 WisLink LPWA
 | Model      | SX1302 on board | SX1262 on board | STM32L412Kx on board | GPS module on board | SPI Interface | USB Interface |
 | ---------- | --------------- | --------------- | -------------------- | ------------------- | ------------- | ------------- |
 | RAK2287-SY | √               |                 |                      | √                   | √             |               |
-| RAK2287-AY | √               | √               | √                    | √                   |               | √             |
+| RAK2287-MY | √               |                 |                      |                     | √             |               |
+
 
 ## Certification
 

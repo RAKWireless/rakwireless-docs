@@ -36,7 +36,7 @@ module.exports = {
       sitemap: "/sitemap.xml",
       policies: [{
         userAgent: '*',
-        disallow: [],
+        // disallow: [],
         allow: []
       }]
     },
