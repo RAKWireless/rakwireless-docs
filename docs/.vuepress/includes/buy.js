@@ -41,6 +41,11 @@ export default {
     img: '/assets/images/wislink-lte/rak8213/quickstart/overview/RAK8213_buy.png',
     store: 'https://store.rakwireless.com/products/rak8213-nb-iot-bg96?utm_source=RAK8213WisLinkCellularmPCIe&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisLink/RAK5146/': {
+    label: 'RAK5146 WisLink LPWAN Concentrator',
+    img: '/assets/images/wislink-lora/rak5146/RAK5146.png',
+    store: 'https://store.rakwireless.com/products/wislink-lpwan-concentrator-rak5146'
+  },
 
   //WisDuino
   '/Product-Categories/WisDuino/RAK811-Evaluation-Board/': {
@@ -254,6 +259,23 @@ export default {
     img: '/assets/images/wisgate/rak-hotspot-miner/overview/RAK-Hotspot-Miner_buy.png',
     store: 'https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisGate/RAK7268/': {
+    label: 'RAK7268 WisGate Edge Lite 2',
+    img: '/assets/images/wisgate/rak7268/datasheet/RAK7268.png',
+    store: 'https://store.rakwireless.com/products/wisgate-edge-lite-2-rak7268-rak7268c'
+  },
+  '/Product-Categories/WisGate/RAK7271-7371/': {
+    label: 'RAK7271/RAK7371 WisGate Developer Base',
+    img: '/assets/images/wisgate/rak7271-7371/overview/rak7271-7371.png',
+    store: 'https://store.rakwireless.com/products/wisgate-developer-base'
+  },
+  '/Product-Categories/WisGate/RAK7289/': {
+    label: 'RAK7289 WisGate Edge Pro',
+    img: '/assets/images/wisgate/rak7289/overview/RAK7289.png',
+    store: 'https://store.rakwireless.com/'
+  },
+
+
 
   // WisBlock
   '/Product-Categories/WisBlock/RAK1920/': {

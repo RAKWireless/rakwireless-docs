@@ -1,0 +1,1 @@
+<rk-redirect to="/Product-Categories/WisGate/RAK7271-7371/Overview/" />

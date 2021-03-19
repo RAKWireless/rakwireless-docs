@@ -25,7 +25,7 @@ WisGate Edge is the RAK flagship line of commercial-grade gateways. Gateways fro
 
 <rk-head img="/assets/rakwireless/product-categories/WisGate-Developer.svg">
 
-Developer gateways are small LPWAN base stations designed for indoor projects. It supports multiple backhaul options to choose from such as Ethernet or Cellular. Gateways are compatible with the Raspberry Pi platform with a concentrator attached on top of it. 
+Developer gateways are small LPWAN base stations designed for indoor projects, development, and integration in embedded systems. It supports multiple backhaul options to choose from such as Ethernet or Cellular. 
 
 
 </rk-head>

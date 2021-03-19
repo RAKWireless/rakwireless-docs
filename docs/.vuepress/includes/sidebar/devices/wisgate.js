@@ -283,4 +283,82 @@ module.exports = {
 
 ],
 
+'/Product-Categories/WisGate/RAK7268/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisGate/RAK7268/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisGate/RAK7268/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+
+],
+
+'/Product-Categories/WisGate/RAK7268C/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisGate/RAK7268C/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisGate/RAK7268C/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+
+],
+
+
+'/Product-Categories/WisGate/RAK7271-7371/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisGate/RAK7271-7371/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisGate/RAK7271-7371/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+
+],
+
+'/Product-Categories/WisGate/RAK7289/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisGate/RAK7289/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisGate/RAK7289/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+
+],
+
+
 }
