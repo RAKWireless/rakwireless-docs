@@ -43,10 +43,10 @@ Thus, the **RAK7240 WisGate Edge Prime**, is suited for any use case scenario, b
 
 #### Software
 
-- Built-in LoRa Server **(up to 128 nodes license included, higher tiers require a fee)**
+- Built-in LoRa Server 
 - OpenVPN
 - Software and UI sit on top of **OpenWRT**
-- LoRaWAN 1.0.2
+- LoRaWAN 1.0.3
 - **LoRa Frame filtering** (node whitelisting)
 - **MQTT v3.1** Bridging with **TLS** encryption
 - **Buffering of LoRa frames** in case of NS outage (no data loss)
@@ -107,7 +107,7 @@ The status of the LEDs is described as below. Please refer to the printing of th
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Computing**             | MT7628, DDR2RAM 128MB                                                                                                                                                                                                                                                              |
 | **Wi-Fi Feature**         | • **Frequency**: 2.400-2.4835GHz (802.11b/g/n)<br>• **RX Sensitivity**: -95dBm (Min)<br>• **TX Power**: 20dBm (Max)<br>• **Operation Channels**: 2.4GHz: 1-13                                                                                                                      |
-| **LoRa Feature**         | • **Card**: SX1301 Mini PCIe card (connects maximum of two),<br>• **Channels**: 8 Channels (Optional: 16 channels)<br>• **RX Sensitivity**: -139dBm (Min)<br>• **TX Power**: 25dBm (Max)<br>• **Frequency**: EU433 / CN470 / RU864 / IN865 / EU868 / US915 / AU915 / KR920 / AS923 |
+| **LoRa Feature**         | • **Card**: SX1301 Mini PCIe card (connects maximum of two),<br>• **Channels**: 8 Channels (Optional: 16 channels)<br>• **RX Sensitivity**: -139dBm (Min)<br>• **TX Power**: 27dBm (Max)<br>• **Frequency**: EU433 / CN470 / RU864 / IN865 / EU868 / US915 / AU915 / KR920 / AS923 |
 | **Cellular Feature**      | **Variant for Europe** <br>• LTE FDD: B1/B3/B7/B8/B20/B28A <br>• WCDMA: B1/B8 <br>• GSM: 900/1800MHz <br><br>**Variant for North America** <br>• LTE FDD: B2/B4/B5/B12/B13 <br>• WCDMA: B2/B4/B5                                                                                   |
 | **Power Supply**          | PoE (IEEE 802.3af), 42~57V DC                                                                                                                                                                                                                                                      |
 | **Power Consumption**     | 12 W (typical)                                                                                                                                                                                                                                                                     |
@@ -129,7 +129,7 @@ The status of the LEDs is described as below. Please refer to the printing of th
 | Feature                  | Specifications                                                        |
 | ------------------------ | --------------------------------------------------------------------- |
 | **Operating Frequency**  | EU433 / CN470 / RU864 / IN865 / RU864 / US915 / AU915 / KR920 / AS923 |
-| **Transmit Power**       | 25dBm (Max)                                                           |
+| **Transmit Power**       | 27dBm (Max)                                                           |
 | **Receiver Sensitivity** | -139dBm (Min)                                                         |
 
 ##### Wi-Fi Radio Specifications

@@ -275,9 +275,9 @@ Download the latest firmware of RAK2245 Stamp in the table provided below.
 
 #### Firmware
 
-| **Model**     | **Source**                                                                                       |
-| ------------- | ------------------------------------------------------------------------------------------------ |
-| RAK2245 Stamp | [Download](https://downloads.rakwireless.com/LoRa/RAK2245/Firmware/RAK2245_Lastest_Firmware.zip) |
+| **Model**     | **Source**                                                                                      |
+| ------------- | ----------------------------------------------------------------------------------------------- |
+| RAK2245 Stamp | [Download](https://downloads.rakwireless.com/LoRa/RAK2245/Firmware/RAK2245_Latest_Firmware.zip) |
 
 
 ## Certification

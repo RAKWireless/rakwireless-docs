@@ -87,7 +87,7 @@ The concrete segmentation of the protocol related tasks is outside the scope of 
 The interface of RAK7248 is shown in the figure below.
 
 <rk-img
-  src="/assets/images/wisgate/rak7248/datasheet/interface.png"
+  src="/assets/images/wisgate/rak7248/datasheet/interface.svg"
   width="100%"
   caption="RAK7248 Interfaces"
 />
@@ -176,7 +176,7 @@ It is highly recommended, to use optimized RSSI calibration values, which is par
 
 ###### Overview
 
-The LoRa Antenna with RP-SMA female connector shown in the figure below:
+The LoRa Antenna with RP-SMA male connector shown in the figure below:
 
 <rk-img
   src="/assets/images/wisgate/rak7248/datasheet/lora-antenna.png"
@@ -209,7 +209,7 @@ The antenna's mechanical dimension is shown below:
 
 ###### Overview
 
-The GPS antenna for the WisGate D4H LPWAN Gateway is shown below
+The GPS antenna with SMA Male Connector for the WisGate D4H LPWAN Gateway is shown below
 
 <rk-img
   src="/assets/images/wisgate/rak7248/datasheet/gps-antenna.png"
@@ -302,9 +302,9 @@ The table below lists the operation and storage temperature requirements:
 
 #### Firmware
 
-| **Model** | **Raspberry Pi Board** | **Firmware Version** | **Source** |
-| --------- | ---------------------- | -------------------- | ---------- |
-| RAK7248   | Raspberry Pi 4         |     4.2.5R                 |   [Download](https://downloads.rakwireless.com/LoRa/RAK7248/Firmware/RAK7248_Latest_Firmware.zip)         |
+| **Model** | **Raspberry Pi Board** | **Firmware Version** | **Source**                                                                                      |
+| --------- | ---------------------- | -------------------- | ----------------------------------------------------------------------------------------------- |
+| RAK7248   | Raspberry Pi 4         | 4.2.5R               | [Download](https://downloads.rakwireless.com/LoRa/RAK7248/Firmware/RAK7248_Latest_Firmware.zip) |
 
 #### LoRaWAN
 
@@ -325,8 +325,8 @@ The table below lists the operation and storage temperature requirements:
 
 ## Models / Bundles
 
-| Part  Number | Package                                                      | Description              |
-| ------------ | ------------------------------------------------------------ | ------------------------ |
+| Part  Number | Package                                                                                                     | Description              |
+| ------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------ |
 | RAK7248-03   | 1pc LoRa Antenna <br/>1pc GPS Antenna<br/>1pc Power Adapter<br/>1pc 16G SD card with pre-installed firmware | RAK7248 for EU868 region |
 | RAK7248-04   | 1pc LoRa Antenna <br/>1pc GPS Antenna<br/>1pc Power Adapter<br/>1pc 16G SD card with pre-installed firmware | RAK7248 for US915 region |
 | RAK7248-05   | 1pc LoRa Antenna <br/>1pc GPS Antenna<br/>1pc Power Adapter<br/>1pc 16G SD card with pre-installed firmware | RAK7248 for KR920 region |

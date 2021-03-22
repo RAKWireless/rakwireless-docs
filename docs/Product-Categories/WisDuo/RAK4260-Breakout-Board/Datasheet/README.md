@@ -177,13 +177,13 @@ The RAK4260 Breakout Board supports the following LoRa bands:
 
 ##### Power Consumption
 
-| Item                    | Power Consumption | Condition            |
-| ----------------------- | ----------------- | -------------------- |
+| Item                   | Power Consumption | Condition            |
+| ---------------------- | ----------------- | -------------------- |
 | Tx mode LoRa @20dBm    | 126.3 mA          | PA_BOOST V=3.3V      |
 | Tx mode LoRa @17dBm    | 95.6 mA           | PA_BOOST V=3.3V      |
 | Tx mode LoRa @14dBm    | 33.1 mA (typical) | RFO_HF V=3.3V        |
 | Rx mode LoRa @37.5Kbps | 13.6 mA           | -                    |
-| Sleep mode              | 860 nA            | Backup Mode V = 3.3V |
+| Sleep mode             | 860 nA            | Backup Mode V = 3.3V |
 
 ##### Schematic Diagram
 
@@ -199,6 +199,6 @@ Download the latest firmware of the RAK4260 Breakout Board in the table provided
 
 #### Firmware
 
-| Model   | Source                                                                          |
-| ------- | ------------------------------------------------------------------------------- |
-| **RAK4260** | [Download](https://downloads.rakwireless.com/LoRa/RAK4260/Firmware/RAK4260.rar) |
+| Model   | Source                                                                                          |
+| ------- | ----------------------------------------------------------------------------------------------- |
+| RAK4260 | [Download](https://downloads.rakwireless.com/LoRa/RAK4260/Firmware/RAK4260_Latest_Firmware.rar) |

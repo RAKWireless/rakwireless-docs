@@ -12,7 +12,7 @@ Thank you for choosing **RAK4270 WisDuo LPWAN Module** in your awesome IoT Proje
 
 - [Quick Start Guide](/Product-Categories/WisDuo/RAK4270-Module/Quickstart/)
 - [AT Command Manual](/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/)
-- <a href="/RUI/" target="_blank">RUI Customized Development</a> - RAK811 module supports RUI (RAKwireless Unified Interface) Customized Development.
+- <a href="/RUI/" target="_blank">RUI Customized Development</a> - RAK4270 module supports RUI (RAKwireless Unified Interface) Customized Development.
 - [Low Level Development](/Product-Categories/WisDuo/RAK4270-Module/Low-Level-Development/)
 - [Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/)
 - [RAK4270 Module 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/PWB-RAK4270.stp)

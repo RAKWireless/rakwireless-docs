@@ -20,7 +20,7 @@ tags:
 
 ### Description
 
-The **RAK5010 WisTrio NB-IoT Tracker Pro** is an advanced, highly flexible NB-IoT tracker based on Quectel BG96 LTE Cat M1&NB1, integrated with GPS, BLE, and a variety of sensors. The MCU running the board is a Nordic nRF52840 controller.
+The **RAK5010 WisTrio NB-IoT Tracker Pro** is an advanced, highly flexible eMTC/NB-IoT/EGPRS tracker based on Quectel BG96 LTE Cat M1&NB1, integrated with GPS, BLE, and a variety of sensors. The MCU running the board is a Nordic nRF52840 controller.
 
 With the GPS and BLE features, the device can be used in a wide range of applications from outdoor to indoor scenarios where location-based services are necessary.
 
@@ -30,7 +30,7 @@ This board is particularly suitable to be used as a quick testing and prototypin
 
 ### Features
 
-- **Quectel BG96** with LTE CAT M1, LTE NB1, and GNSS
+- **Quectel BG96** with LTE CAT M1, LTE NB1, EGPRS and GNSS
 - **Nordic nRF52840**, with BLE 5.0 and long-range BLE
 - nRF52840 integrates the ultra-low power microcontroller ARM Cortex-M4 (64&nbsp;Mhz)
 - Built-in humidity and temperature sensor, pressure sensor, 3-axis motion sensor, and ambient light sensor

@@ -160,6 +160,9 @@ On the RAK4600 Evaluation Board, there are three 2.54&nbsp;mm pitch headers used
 | 3              | TX1/UART2_TX | UART2 TX pin                         | P0.19                   |
 | 4              | RX1/UART2_RX | UART2 RX pin                         | P0.18                   |
 
+:::tip 📝 NOTE
+UART serial pins on J10 are only useable as UART by developing custom FW that uses Nordic SDK. These pins can't be used as UART pins on the default RAK4600 FW or RUI compiled FW.
+:::
 
 ###### J11 Pin Definition
 

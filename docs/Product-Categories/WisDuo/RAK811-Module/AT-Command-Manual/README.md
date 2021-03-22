@@ -25,6 +25,16 @@ For AT commands example usage, you can check these sections of quick start guide
 - [ChirpStack OTAA/ABP](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#lorawan-join-mode-2)
 - [LoRa P2P](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#lora-p2p-mode)
 
+## Software Tool
+
+If you don't have a serial port tool yet, it is recommended to download and install the RAK Serial Port Tool. There are some ready-made AT commands in this tool that will be very useful for you.
+
+- [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/)
+
+For more detailed information on how to use this tool, refer to the following guide:
+
+- [RAK Serial Port Tool Guide](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#connect-to-the-rak811)
+
 
 ### AT Command Syntax
 

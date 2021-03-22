@@ -34,10 +34,10 @@ Thus, the **RAK7240 WisGate Edge Prime**, is suited for any use case scenario, b
 
 ### Software
 
-- Built-in LoRa Server **(up to 128 nodes license included, higher tiers require a fee)**
+- Built-in LoRa Server
 - OpenVPN
 - Software and UI sit on top of **OpenWRT**
-- LoRaWAN 1.0.2
+- LoRaWAN 1.0.3
 - **LoRa Frame filtering** (node whitelisting)
 - **MQTT v3.1** Bridging with **TLS** encryption
 - **Buffering of LoRa frames** in case of NS outage (no data loss)

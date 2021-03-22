@@ -61,7 +61,7 @@ The overview covers the board overview of RAK7243C and its block diagram that di
 The following figure shows the basic concept for LoRaWAN system. RAK7243 Pilot Gateway is the central hardware solution for all LoRa based radio communication. It receives and transmits radio messages. The processing of radio messages as well as the protocol related tasks is done by embedded host system (Raspberry Pi). Received and processed radio messages are being sent to a LoRaWAN server. The concrete segmentation of the protocol related tasks is outside the scope of this document
 
 <rk-img
-  src="/assets/images/wisgate/rak7243c/datasheet/3.rak7243-system-structure.png"
+  src="/assets/images/wisgate/rak7243c/datasheet/3.rak7243-system-structure.svg"
   width="80%"
   caption="RAK7243C WisGate Developer D3+ Gateway System Structure"
 />
@@ -99,7 +99,7 @@ RAK2245 Pi HAT(Model Name is: RAK2243) is an LPWAN Concentrator board which foll
 - For detailed information about the RAK2245, Go to the [RAK2245 Pi HAT Datasheet](/Product-Categories/WisLink/RAK2245-Pi-HAT/Datasheet/).
 
 <rk-img
-  src="/assets/images/wisgate/rak7243c/datasheet/6.lora-hardware-structure.jpg"
+  src="/assets/images/wisgate/rak7243c/datasheet/6.lora-hardware-structure.svg"
   width="80%"
   caption="LoRa Hardware Structure"
 />
@@ -172,7 +172,7 @@ The RAK2245 has an excellent transmitter performance. It is highly recommended t
 | Parameter                              | Condition                |   Min    | Typ. |   Max    |
 | -------------------------------------- | ------------------------ | :------: | ---- | :------: |
 | Frequency Range                        |                          | 863 Mhz  |      | 870 Mhz  |
-| Modulation Techniques                  | FSK/LoRa                |          |      |          |
+| Modulation Techniques                  | FSK/LoRa                 |          |      |          |
 | TX Frequency Variation vs. Temperature | Power Level Setting : 20 |  -3 Khz  |      |  +3 Khz  |
 | TX Power Variation vs. Temperature     | Power Level Setting : 20 |  -5 dBm  |      |  +5 dBm  |
 | TX Power Variation                     |                          | -1.5 dBm |      | +1.5 dBm |
@@ -230,7 +230,7 @@ Quectel EG95 is a series of LTE category 4 module optimized specially for M2M an
 
 ##### LoRa
 
-The LoRa Antenna with RP-SMA female connector shown in the figure below:
+The LoRa Antenna with RP-SMA male connector shown in the figure below:
 
 <rk-img
   src="/assets/images/wisgate/rak7243c/datasheet/9.lora-antenna-overview.png"
@@ -262,7 +262,7 @@ The antenna's mechanical dimension is shown below:
 For module built-in BG96, there is one LTE antenna and one GPS antenna. For module
 built-in EG91/EG95, there are two LTE antennas, and no GPS antenna with the module.
 
-The LTE antenna for the Pilot Gateway Pro covers working frequency band
+The LTE antenna for the Developer Gateway with RP-SMA male connector covers working frequency band
 from 824MHz to 2690MHz. The antenna is shown as below.
 
 <rk-img
@@ -291,7 +291,7 @@ from 824MHz to 2690MHz. The antenna is shown as below.
 
 ##### GPS
 
-The GPS antenna for Pilot Gateway is shown below
+The GPS antenna with SMA Male Connector for Developer Gateway is shown below
 
 <rk-img
   src="/assets/images/wisgate/rak7243c/datasheet/13.gps-antenna.jpg"
@@ -383,9 +383,9 @@ Download the latest firmware of RAK7243 and RAK7243C in the table provided below
 
 #### Firmware
 
-| Model                  | Raspberry Pi Board   | Firmware Version | Source                                                                                                             |
-| ---------------------- | -------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------ |
-| RAK7243 WisGate Developer D3 Gateway  | Raspberry Pi 3 / 3B+ | 4.2.0R           | [Download](https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Firmware/RAK7243_Latest_Firmware.zip)  |
+| Model                                  | Raspberry Pi Board   | Firmware Version | Source                                                                                                             |
+| -------------------------------------- | -------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------ |
+| RAK7243 WisGate Developer D3 Gateway   | Raspberry Pi 3 / 3B+ | 4.2.0R           | [Download](https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Firmware/RAK7243_Latest_Firmware.zip)  |
 | RAK7243C WisGate Developer D3+ Gateway | Raspberry Pi 3 / 3B+ | 4.2.0R           | [Download](https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Firmware/RAK7243C_Latest_Firmware.zip) |
 
 ## Models / Bundles

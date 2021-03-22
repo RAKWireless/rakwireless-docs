@@ -34,7 +34,6 @@ This module is an exceptional, complete and cost efficient gateway solution offe
 - 3.3v **Mini PCI-e**, compatible with 3G/LTE card of Mini PCI-e type.
 - Compatible with **3G/LTE card** of Mini PCI-e type.
 - Tx power up to 27dBm, Rx sensitivity down to -139dBm@SF12, BW 125 kHz.
-- Supports latest **LoRaWAN 1.0.2 protocol**.
 - Supports **global license-free frequency band** (EU868,CN470, US915, AS923, AU915, KR920, IN865 and AS920).
 - Supports optional SPI interfaces.
 - Built-in **ZOE-M8Q GPS** module
@@ -310,15 +309,16 @@ In general, the RAK2287's variation is the defined as **RAK2287 - XY**, where **
 
 | Parameter            | Variations                                                                               |
 | -------------------- | ---------------------------------------------------------------------------------------- |
-| X - Model Variant    | S<br>M                                                                              |
+| X - Model Variant    | S<br>M<br>A                                                                               |
 | Y - Supported Region | 2 - CN470<br> 3 - EU868<br>4 - US915<br>5 - KR920<br>6 - AS923<br>7 - IN865<br>8 - AU915 |
 
 The table below shows the board order configurations of the RAK2287 WisLink LPWAN Concentrator.
 
-| Model      | SX1302 on board | SX1262 on board | STM32L412Kx on board | GPS module on board | SPI Interface | USB Interface |
-| ---------- | --------------- | --------------- | -------------------- | ------------------- | ------------- | ------------- |
-| RAK2287-SY | √               |                 |                      | √                   | √             |               |
-| RAK2287-MY | √               |                 |                      |                     | √             |               |
+| Model      | SX1302 on board | STM32L412Kx on board | GPS module on board | SPI Interface | USB Interface |
+| ---------- | --------------- | -------------------- | ------------------- | ------------- | ------------- |
+| RAK2287-SY | √               |                      | √                   | √             |               |
+| RAK2287-MY | √               |                      |                     | √             |               |
+| RAK2287-AY | √               |                      | √                   |               | √             |
 
 
 ## Certification

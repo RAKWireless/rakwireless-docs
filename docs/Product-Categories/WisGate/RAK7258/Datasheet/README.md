@@ -11,13 +11,6 @@ certifications:
 ---
 
 # RAK7258 WisGate™ Edge Lite Datasheet
-
-<!-- <rk-img
-  src="/assets/images/wisgate/rak7258/datasheet/rak7258-overview.png"
-  width="40%"
-  caption="RAK7258 WisGate™ Edge Lite Gateway"
-/> -->
-
 ## Overview
 
 ### Description
@@ -36,12 +29,12 @@ The RAK7258 WisGate Edge Lite package includes a LoRa antenna, mounting screws, 
 
 ### Features
 
-- Full LoRaWAN Stack support (V 1.0.2)
+- Full LoRaWAN Stack support (V 1.0.3)
 - 100M base-T Ethernet with **PoE (802.3 af)**
 - Multi back-haul backup with **Ethernet, WiFi, Cellular** (optional LTE Cat 4)
 - **OpenWRT** software supports with Web UI for easy configuration and monitoring
 - Can integrate with both private (**ChirpStack**) and public (**TTN**) Network Servers
-- Built-in LoRaServer for easy deployment of applications and integration of Gateways **(up to 128 LoRa nodes license included, higher tiers require a fee)**
+- Built-in LoRaServer for easy deployment of applications and integration of Gateways
 - TF card for log backup
 
 ## Specifications
@@ -103,7 +96,7 @@ The status of the LEDs is described as below:
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Computing           | MT7628, DDR2RAM 128MB                                                                                                                                                                                                                                                                                                                  |
 | Wi-Fi Feature       | • **Frequency**: 2.400-2.4835GHz(802.11b/g/n) <br> • **RX Sensitivity**: -95dBm (Min), <br>• **TX Power**: 20dBm (Max) <br> • **Operation Channels**: 2.4GHz: 1-13                                                                                                                                                                     |
-| LoRa Feature       | • SX1301 Mini PCIe card <br> • 8 Channels <br> • **RX Sensitivity**: -142 dBm (Min) <br> • **TX Power**: 27 dBm (Max) <br> • **Frequency**: EU433 / CN470 / EU868 / US915 / AS923 / AU915 / IN865 / KR920                                                                                                                              |
+| LoRa Feature       | • SX1301 Mini PCIe card <br> • 8 Channels <br> • **RX Sensitivity**: -139 dBm (Min) <br> • **TX Power**: 27 dBm (Max) <br> • **Frequency**: EU433 / CN470 / EU868 / US915 / AS923 / AU915 / IN865 / KR920                                                                                                                              |
 | Cellular            | Supports Quectel EG95-E / EG95-NA(IoT/M2M-optimized LTE Cat 4 Module), nonsupport by default <br><br> EG95-E for EMEA Region： <br> • **LTE FDD**: B1/B3/B7/B8/B20/B28A <br> • **WCDMA**: B1/B8 <br> • **GSM/EDGE**: B3/B8 <br><br> EG95-NA for North America Region： <br> • **LTE FDD**: B2/B4/B5/B12/B13 <br> • **WCDMA**: B2/B4/B5 |
 | Power Supply        | • DC 12 Volts - 1 Ampere <br> • POE (IEEE 802.3af), 42~57 VDC                                                                                                                                                                                                                                                                          |
 | Power Consumption   | 12 Watts (typical)                                                                                                                                                                                                                                                                                                                     |

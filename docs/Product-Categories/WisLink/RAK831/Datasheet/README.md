@@ -182,32 +182,32 @@ The RAK831 provides headers at the bottom side, which have a pitch of **2.54 mm*
   caption="RAK831 WisLink LPWAN Concentrator Module Pinout Diagram"
 />
 
-| Pin |    Name    | Type  |         Description         |
-| :-: | :--------: | :---: | :-------------------------: |
-|  1  |    +5V     | POWER |     +5V Supply Voltage      |
-|  2  |    +5V     | POWER |     +5V Supply Voltage      |
-|  3  |    GND     |  GND  |           Ground            |
-|  4  |  LNA_EN_A  | Input | SX1301 Radio C Sample Valid |
-|  5  |    GND     |  GND  | GPS Module LDO: Enable Pin  |
-|  6  |    GND     |  GND  |           Ground            |
-|  7  | RADIO_EN_A | Input |         SX1257_A_EN         |
-|  8  |   PA_G8    | Input |          PA GAIN 0          |
-|  9  | RADIO_EN_B | Input |         SX1257_B_EN         |
-| 10  |   PA_G16   | Input |          PA GAIN 1          |
-| 11  |  PA_EN_A   | Input |            PA EN            |
-| 12  |    GND     |  GND  |           Ground            |
-| 13  | RADIO_RST  |  RST  |      SX1257_A_B RESET       |
-| 14  |    GND     |  GND  |           Ground            |
-| 15  |    CSN     |  SPI  |       SX1301 SPI_NSS        |
-| 16  |    MOSI    |  SPI  |       SX1301 SPI_MOSI       |
-| 17  |    MISO    |  SPI  |       SX1301 SPI_MISO       |
-| 18  |    SCK     |  SPI  |       SX1301 SPI_CLK        |
-| 19  |   RESET    |  RST  |        SX1301 RESET         |
-| 20  |   GPIO0    | GPIO  |         SX1301 GPIO         |
-| 21  |   GPIO1    | GPIO  |         SX1301 GPIO         |
-| 22  |   GPIO2    | GPIO  |         SX1301 GPIO         |
-| 23  |   GPIO3    | GPIO  |         SX1301 GPIO         |
-| 24  |   GPIO4    | GPIO  |         SX1301 GPIO         |
+|  Pin  |    Name    | Type  |         Description         |
+| :---: | :--------: | :---: | :-------------------------: |
+|   1   |    +5V     | POWER |     +5V Supply Voltage      |
+|   2   |    +5V     | POWER |     +5V Supply Voltage      |
+|   3   |    GND     |  GND  |           Ground            |
+|   4   |  LNA_EN_A  | Input | SX1301 Radio C Sample Valid |
+|   5   |    GND     |  GND  | GPS Module LDO: Enable Pin  |
+|   6   |    GND     |  GND  |           Ground            |
+|   7   | RADIO_EN_A | Input |         SX1257_A_EN         |
+|   8   |   PA_G8    | Input |          PA GAIN 0          |
+|   9   | RADIO_EN_B | Input |         SX1257_B_EN         |
+|  10   |   PA_G16   | Input |          PA GAIN 1          |
+|  11   |  PA_EN_A   | Input |            PA EN            |
+|  12   |    GND     |  GND  |           Ground            |
+|  13   | RADIO_RST  |  RST  |      SX1257_A_B RESET       |
+|  14   |    GND     |  GND  |           Ground            |
+|  15   |    CSN     |  SPI  |       SX1301 SPI_NSS        |
+|  16   |    MOSI    |  SPI  |       SX1301 SPI_MOSI       |
+|  17   |    MISO    |  SPI  |       SX1301 SPI_MISO       |
+|  18   |    SCK     |  SPI  |       SX1301 SPI_CLK        |
+|  19   |   RESET    |  RST  |        SX1301 RESET         |
+|  20   |   GPIO0    | GPIO  |         SX1301 GPIO         |
+|  21   |   GPIO1    | GPIO  |         SX1301 GPIO         |
+|  22   |   GPIO2    | GPIO  |         SX1301 GPIO         |
+|  23   |   GPIO3    | GPIO  |         SX1301 GPIO         |
+|  24   |   GPIO4    | GPIO  |         SX1301 GPIO         |
 
 #### RF Characteristics
 
@@ -243,7 +243,7 @@ The table below is for 868 MHz RAK831 WisLink LPWAN Concentrator. Other frequenc
 | Parameter                              | Condition              | Min  | Typ. | Max  | Unit |
 | -------------------------------------- | ---------------------- | ---- | ---- | ---- | ---- |
 | Frequency Range                        |                        | 863  |      | 870  | MHz  |
-| Modulation Techniques                  | FSK/LoRaWAN           |      |      |      |      |
+| Modulation Techniques                  | FSK/LoRaWAN            |      |      |      |      |
 | TX Frequency Variation vs. Temperature | Power Level Setting:20 | -3   |      | +3   | KHz  |
 | TX Power Variation vs. Temperature     | Power Level Setting:20 | -5   |      | +5   | dB   |
 | TX Power Variation                     |                        | -1.5 |      | +1.5 | dB   |
@@ -512,10 +512,10 @@ Download the latest firmware of the RAK831 in the table provided below.
 
 #### Firmware
 
-| Model  | Raspberry Pi Board | Firmware Version | Source                                                                                                                                              |
-| ------ | ------------------ | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| RAK831 | Raspberry Pi 3B+   | V4.1.0           | [Download](https://downloads.rakwireless.com/LoRa/RAK2245-Pi-HAT/Firmware/) |
-| RAK831 | Raspberry Pi 4     | V4.1.0           | [Download](https://downloads.rakwireless.com/LoRa/RAK2245-Pi-HAT/Firmware/) |
+| Model  | Raspberry Pi Board | Firmware Version | Source                                                                                                 |
+| ------ | ------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ |
+| RAK831 | Raspberry Pi 3B+   | V4.1.0           | [Download](https://downloads.rakwireless.com/LoRa/RAK2245-Pi-HAT/Firmware/RAK2245_Latest_Firmware.zip) |
+| RAK831 | Raspberry Pi 4     | V4.1.0           | [Download](https://downloads.rakwireless.com/LoRa/RAK2245-Pi-HAT/Firmware/RAK2245_Latest_Firmware.zip) |
 
 ## Models / Bundles
 

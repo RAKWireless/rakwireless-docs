@@ -89,28 +89,28 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
   caption="RAK4270 Pinout"
 />
  
-|  Pin  |  Name         |  Type |  Description                  |  Alternate Functions                          |
-| ----- | -------       | ----- | --------------                | ----------------------                        |
-| 1     | PA3/UART2_RX  | I     | UART2 Interface (AT Commands) | USART1_RX, I2C1_SDA                           | 
-| 2     | PA2/UART2_TX  | O     | UART2 Interface (AT Commands) | MCO, USART1_TX, I2C1_SCL, I2C3_SMBA           | 
-| 3     | PA1           | I/O   | GPIO                          | SPI1_MOSI, EVENTOUT, USART1_RTS_DE, COMP2_OUT | 
-| 4     | PA9/UART1_TX  | I/O   | UART1 Interface (AT Commands and FW Update) | TIM21_CH1,TIM2_CH3, USART2_TX,LPUART1_TX, COMP2_OUT,COMP2_INM, ADC_IN2 | 
-| 5     | PA10/UART1_RX | I/O   | UART1 Interface (AT Commands and FW Update) | TIM21_CH2,TIM2_CH4, USART2_RX,LPUART1_RX, COMP2_INP,ADC_IN3 | 
-| 6     | PA12/UART1_DE | I/O   | GPIO                          | EVENTOUT,TIM2_CH2,USART2_RT S_DE, TIM21_ETR, USART4_RX,COMP1_INP, ADC_IN1 | 
-| 7     | PA13/SWDIO    | I/O   | SWD debug pin (SWDIO)         | SWDIO, LPUART1_RX | 
-| 8     | PA14/SWCLK    | I/O   | SWD debug pin (SWCLK)         | SWCLK, USART2_TX, LPUART1_TX | 
-| 9     | I2C_SCL       | I/O   | I2C interface                 | USART1_TX,I2C1_SCL, LPTIM1_ETR,COMP2_INP | 
-| 10    | I2C_SDA       | I/O   | I2C interface                 | USART1_RX,I2C1_SDA, LPTIM1_IN2,USART4_CTS, COMP2_INP,VREF_PVD_IN | 
-| 11    | GND           |       | Ground |  | 
-| 12    | RF            | I/O | RF port (reserved), default RF out by IPEX |  | 
-| 13    | GND           |   | Ground |  | 
-| 14    | GND           |  | Ground |  | 
-| 15    | PA11/ANT_SW        | I/O |  ANT_SW | *leave it unconnected on mainboard* | 
-| 16    | PB4           | I/O   | GPIO  | USART1_CTS,SPI1_MISO, TIM3_CH1,I2C3_SDA | 
-| 17    | PA8           | I/O   | GPIO  | USART1_CK,I2C3_SCL, MCO,EVENTOUT | 
-| 18    | MCU_NRST      | I/O   | MCU reset (STM32L071KBU6 NRST) |  | 
-| 19    | GND           |  | Ground | Ground | 
-| 20    | VDD           |  | DC3V3 | Supply voltage 2.0~3.3&nbsp;V | 
+| Pin | Name          | Type | Description                                 | Alternate Functions                                                       |
+| --- | ------------- | ---- | ------------------------------------------- | ------------------------------------------------------------------------- |
+| 1   | PA3/UART2_RX  | I    | UART2 Interface (AT Commands)               | USART1_RX, I2C1_SDA                                                       |
+| 2   | PA2/UART2_TX  | O    | UART2 Interface (AT Commands)               | MCO, USART1_TX, I2C1_SCL, I2C3_SMBA                                       |
+| 3   | PA1           | I/O  | GPIO                                        | Reserved for internal use. Do not connect external circuit.               |
+| 4   | PA9/UART1_TX  | I/O  | UART1 Interface (AT Commands and FW Update) | TIM21_CH1,TIM2_CH3, USART2_TX,LPUART1_TX, COMP2_OUT,COMP2_INM, ADC_IN2    |
+| 5   | PA10/UART1_RX | I/O  | UART1 Interface (AT Commands and FW Update) | TIM21_CH2,TIM2_CH4, USART2_RX,LPUART1_RX, COMP2_INP,ADC_IN3               |
+| 6   | PA12/UART1_DE | I/O  | GPIO                                        | EVENTOUT,TIM2_CH2,USART2_RT S_DE, TIM21_ETR, USART4_RX,COMP1_INP, ADC_IN1 |
+| 7   | PA13/SWDIO    | I/O  | SWD debug pin (SWDIO)                       | SWDIO, LPUART1_RX                                                         |
+| 8   | PA14/SWCLK    | I/O  | SWD debug pin (SWCLK)                       | SWCLK, USART2_TX, LPUART1_TX                                              |
+| 9   | I2C_SCL       | I/O  | I2C interface                               | USART1_TX,I2C1_SCL, LPTIM1_ETR,COMP2_INP                                  |
+| 10  | I2C_SDA       | I/O  | I2C interface                               | USART1_RX,I2C1_SDA, LPTIM1_IN2,USART4_CTS, COMP2_INP,VREF_PVD_IN          |
+| 11  | GND           |      | Ground                                      |                                                                           |
+| 12  | RF            | I/O  | RF port (reserved), default RF out by IPEX  |                                                                           |
+| 13  | GND           |      | Ground                                      |                                                                           |
+| 14  | GND           |      | Ground                                      |                                                                           |
+| 15  | PA11/ANT_SW   | I/O  | ANT_SW                                      | *leave it unconnected on mainboard*                                       |
+| 16  | PB4           | I/O  | GPIO                                        | Reserved for internal use. Do not connect external circuit.               |
+| 17  | PA8           | I/O  | GPIO                                        | USART1_CK,I2C3_SCL, MCO,EVENTOUT                                          |
+| 18  | MCU_NRST      | I/O  | MCU reset (STM32L071KBU6 NRST)              |                                                                           |
+| 19  | GND           |      | Ground                                      | Ground                                                                    |
+| 20  | VDD           |      | DC3V3                                       | Supply voltage 2.0~3.3&nbsp;V                                             |
 
 
 ##### LoRa Transceiver IC Connection to RAK4270 Internal STM32
@@ -204,17 +204,17 @@ It is recommended to add four decoupling capacitors near the RAK4270 power suppl
 
 ##### Operating Current
 
-| Feature             | Condition  | Minimum                             | Typical | Maximum | Unit |
-| ------------------- | ---------- | ----------------------------------- | ------- | ------- | ---- |
-| Operating Current   | TX Mode    | 35.4 (@&nbsp;1&nbsp;dBm SF7 868Mhz) |         |         | mA   |
-|                     | RX Mode    | 15.8                                |         |         | mA   |
+| Feature           | Condition | Minimum                             | Typical | Maximum | Unit |
+| ----------------- | --------- | ----------------------------------- | ------- | ------- | ---- |
+| Operating Current | TX Mode   | 35.4 (@&nbsp;1&nbsp;dBm SF7 868Mhz) |         |         | mA   |
+|                   | RX Mode   | 15.8                                |         |         | mA   |
 
 ##### Sleep Current
 
-| Feature                   | Condition  | Minimum (2.0V) | Typical (3.3V) | Maximum | Unit |
-| ------------------------- | ---------- | -------------- | -------------- | ------- | ---- |
-| Current Consumption       | EU868      | 1.74           | 2.19           |         | μA   |
-|                           | US915      | 1.61           | 2.31           |         | μA   |
+| Feature             | Condition | Minimum (2.0V) | Typical (3.3V) | Maximum | Unit |
+| ------------------- | --------- | -------------- | -------------- | ------- | ---- |
+| Current Consumption | EU868     | 1.74           | 2.19           |         | μA   |
+|                     | US915     | 1.61           | 2.31           |         | μA   |
 
 #### Mechanical Characteristics
 
@@ -272,9 +272,10 @@ Download the latest firmware of the RAK4270 WisDuo LPWAN Module as provided in t
 
 #### Firmware
 
-| Model        | Source |
-| ------------ | ------ |
-| RAK4270      | [Download](https://downloads.rakwireless.com/LoRa/RAK4270/Firmware/) |
+| Model   | Version   | Source                                                                                          |
+| ------- | --------- | ----------------------------------------------------------------------------------------------- |
+| RAK4270 | V3.2.0.15 | [Download](https://downloads.rakwireless.com/LoRa/RAK4270/Firmware/RAK4270_Latest_Firmware.zip) |
+
 
 ## Certification
 

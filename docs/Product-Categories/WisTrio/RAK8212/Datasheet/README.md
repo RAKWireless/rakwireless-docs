@@ -193,7 +193,7 @@ The hardware specification is categorized into six parts. It discusses the pinou
 
 | Item           | Specification                                                                                                                         |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Frequency Band | Cat.M1/Cat.NB1: LTE FDD: B1/B2/B3/B4/B5/B8/B12/B13/B18/B19/B20/B26/B28 LTE TDD: B39 (for Cat.M1 only) <br>EGPRS: 850/900/1800/1900MHz |                                                                                                                                           |
+| Frequency Band | Cat.M1/Cat.NB1: LTE FDD: B1/B2/B3/B4/B5/B8/B12/B13/B18/B19/B20/B26/B28 LTE TDD: B39 (for Cat.M1 only) <br>EGPRS: 850/900/1800/1900MHz |  |
 #### Electrical Characteristics
 
 ##### Power Requirements
@@ -245,7 +245,7 @@ The hardware specification is categorized into six parts. It discusses the pinou
 
 Download the latest firmware of RAK8212 in the table provided below.
 
-| Model     | Version  | Source                                                                                         |
-| --------- | -------- | ---------------------------------------------------------------------------------------------- |
-| RAK8212   | V3.0.0.8 | [Download](https://downloads.rakwireless.com/Cellular/RAK8212/Firmware/RAK8212_V3.0.0.8.rar)   |
-| RAK8212-M |          | [Download](https://downloads.rakwireless.com/Cellular/RAK8212/Firmware/RAK8212-M_V3.0.0.8.rar) |
+| Model     | Version  | Source                                                                                                |
+| --------- | -------- | ----------------------------------------------------------------------------------------------------- |
+| RAK8212   | V3.0.0.8 | [Download](https://downloads.rakwireless.com/Cellular/RAK8212/Firmware/RAK8212_Latest_Firmware.rar)   |
+| RAK8212-M | V3.0.0.8 | [Download](https://downloads.rakwireless.com/Cellular/RAK8212/Firmware/RAK8212-M_Latest_Firmware.rar) |

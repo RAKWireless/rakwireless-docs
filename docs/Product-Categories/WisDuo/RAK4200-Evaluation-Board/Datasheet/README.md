@@ -487,11 +487,11 @@ The RAK4200 has two different models based on its frequency: RAK4200(L) for low 
 
 ##### Power Consumption
 
-| Conditions                                       | Current | Unit  |
-| :----------------------------------------------- | :-----: | :---: |
-| Tx mode LoRa @17&nbsp;dBm                        |   87    |  mA   |
-| Tx mode LoRa @19&nbsp;dBm                        |   120   |  mA   |
-| Rx mode LoRa @37.5&nbsp;Kbps                     |   15    |  mA   |
+| Conditions                   | Current | Unit  |
+| :--------------------------- | :-----: | :---: |
+| Tx mode LoRa @17&nbsp;dBm    |   87    |  mA   |
+| Tx mode LoRa @19&nbsp;dBm    |   120   |  mA   |
+| Rx mode LoRa @37.5&nbsp;Kbps |   15    |  mA   |
    
 ##### Absolute Maximum Ratings
 
@@ -524,9 +524,9 @@ Download the latest firmware of the RAK4200 Evaluation Board in the table provid
 
 #### Firmware 
 
-| Model                | Source                                                                                           |
-| -------------------- | ------------------------------------------------------------------------------------------------ |
-| **RAK4200 Firmware** | [Download](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/RAK4200_Lastest_Firmware.zip) |
+| Model   | Source                                                                                           |
+| ------- | ------------------------------------------------------------------------------------------------ |
+| RAK4200 | [Download](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/RAK4200_Latest_Firmware.zip) |
 
 
 

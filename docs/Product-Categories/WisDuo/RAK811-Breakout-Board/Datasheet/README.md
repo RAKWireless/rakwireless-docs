@@ -187,18 +187,18 @@ The low radio frequency is applicable to bandwidth of regions EU433 and CN470.
 
 ##### Current Consumption
 
-| Feature             | Condition  | Minimum                 | Typical | Maximum | Unit |
-| ------------------- | ---------- | ----------------------- | ------- | ------- | ---- |
-| Current Consumption | TX Power   | 30 (@&nbsp;14&nbsp;dBm) |         |         | mA   |
-|                     | RX Mode    | 5.5                     |         |         | mA   |
+| Feature             | Condition | Minimum                 | Typical | Maximum | Unit |
+| ------------------- | --------- | ----------------------- | ------- | ------- | ---- |
+| Current Consumption | TX Power  | 30 (@&nbsp;14&nbsp;dBm) |         |         | mA   |
+|                     | RX Mode   | 5.5                     |         |         | mA   |
 
 ##### Sleep Current
 
-| Feature                   | Condition  | Minimum (2.1V) | Typical (3.3V) | Maximum | Unit |
-| ------------------------- | ---------- | -------------- | -------------- | ------- | ---- |
-| Current Consumption       | EU868      | 8.37           | 11.9           |         | μA   |
-|                           | US915      | 1.11           | 11.8           |         | μA   |
-|                           | CN470      | 1.65           | 3.07           |         | μA   |
+| Feature             | Condition | Minimum (2.1V) | Typical (3.3V) | Maximum | Unit |
+| ------------------- | --------- | -------------- | -------------- | ------- | ---- |
+| Current Consumption | EU868     | 8.37           | 11.9           |         | μA   |
+|                     | US915     | 1.11           | 11.8           |         | μA   |
+|                     | CN470     | 1.65           | 3.07           |         | μA   |
 
 #### Mechanical Characteristics
 
@@ -255,10 +255,10 @@ Download the latest firmware of the RAK811 Breakout Board — both in low and hi
 
 #### Firmware / OS
 
-| Model     | Version     | Source                                                                            |
-| --------- | ----------- | --------------------------------------------------------------------------------- |
-| RAK811(L) | V3.0.0.14.L | [Download](https://downloads.rakwireless.com/LoRa/RAK811-BreakoutBoard/Firmware/) |
-| RAK811(H) | V3.0.0.14.H | [Download](https://downloads.rakwireless.com/LoRa/RAK811-BreakoutBoard/Firmware/) |
+| Model     | Version     | Source                                                                                                        |
+| --------- | ----------- | ------------------------------------------------------------------------------------------------------------- |
+| RAK811(L) | V3.0.0.14.L | [Download](https://downloads.rakwireless.com/LoRa/RAK811-BreakoutBoard/Firmware/RAK811_L_Latest_Firmware.zip) |
+| RAK811(H) | V3.0.0.14.H | [Download](https://downloads.rakwireless.com/LoRa/RAK811-BreakoutBoard/Firmware/RAK811_H_Latest_Firmware.zip) |
 
 ## Certification
 

@@ -293,9 +293,9 @@ The latest firmware for the RAK4260 WisDuo LPWAN Module is provided in the given
 
 #### Firmware
 
-| Model   | Source                                                                          |
-| ------- | ------------------------------------------------------------------------------- |
-| RAK4260 | [Download](https://downloads.rakwireless.com/LoRa/RAK4260/Firmware/RAK4260.rar) |
+| Model   | Source                                                                                          |
+| ------- | ----------------------------------------------------------------------------------------------- |
+| RAK4260 | [Download](https://downloads.rakwireless.com/LoRa/RAK4260/Firmware/RAK4260_Latest_Firmware.rar) |
 
 ## Certification
 

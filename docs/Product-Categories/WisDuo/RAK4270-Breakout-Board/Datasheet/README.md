@@ -102,7 +102,7 @@ The pin definitions of the RAK4270 Breakout Board are shown in the following tab
 | :---: | -------- | :---: | --------------------------------------------------- | --------------------------------------------------------------------------- |
 |   1   | UART2_RX |   I   | AT command UART (STM32L071KBU6 PA3)                 | USART1_RX, I2C1_SDA                                                         |
 |   2   | UART2_TX |   O   | AT command UART (STM32L071KBU6 PA2)                 | MCO, USART1_TX, I2C1_SCL, I2C3_SMBA                                         |
-|   3   | UART2_DE |  I/O  | GPIO (STM32L071KBU6 PA1)                            | SPI1_MOSI,EVENTOUT, USART1_RTS_DE, COMP2_OUT                                |
+|   3   | UART2_DE |  I/O  | GPIO (STM32L071KBU6 PA1)                            | Reserved for internal use. Do not connect external circuit.                                |
 |   4   | UART1_DE |  I/O  | General GPIO or UART(Reserved) (STM32L071KBU6 PA12) | EVENTOUT, TIM2_CH2, USART2_RTS_DE, TIM21_ETR, USART4_RX, COMP1_INP, ADC_IN1 |
 |   5   | SWDIO    |  I/O  | Programming (STM32L071KBU6 PA13)                    | SWDIO, LPUART1_RX                                                           |
 |   6   | SWCLK    |  I/O  | Programming (STM32L071KBU6 PA14)                    | SWCLK, USART2_TX, LPUART1_TX                                                |
@@ -120,7 +120,7 @@ The pin definitions of the RAK4270 Breakout Board are shown in the following tab
 |   4   | GND      |   -   | Ground                                            | -                                                                                                |
 |   5   | MCU_NRST |  I/O  | MCU reset (STM32L071KBU6 NRST)                    | -                                                                                                |
 |   6   | ANT_SW   |  I/O  | PA11                                              | This pin has been connected to the internal RF switch, so leave it unconnected on the mainboard. |
-|   7   | PB4      |  I/O  | STM32L071KBU6 PB4                                 | GPIO                                                                                             |
+|   7   | PB4      |  I/O  | STM32L071KBU6 PB4                                 | Reserved for internal use. Do not connect external circuit.                                                                                             |
 |   8   | PA8      |  I/O  | STM32L071KBU6 PA8                                 | GPIO                                                                                             |
 
 

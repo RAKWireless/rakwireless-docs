@@ -37,10 +37,10 @@ Thus the RAK7249 is suited for any use case scenario, be it rapid deployment or 
 
 ### Software
 
-- Built-in LoRa Server (**up to 128 nodes license included, higher tiers require a fee**)
+- Built-in LoRa Server
 - OpenVPN
 - Software and UI sit on top of **OpenWRT**
-- LoRaWAN 1.0.2
+- LoRaWAN 1.0.3
 - **LoRa Frame filtering** (node whitelisting)
 - **MQTT v3.1** Bridging with **TLS encryption**
 - **Buffering of LoRa frames** in case of NS outage (no data loss)

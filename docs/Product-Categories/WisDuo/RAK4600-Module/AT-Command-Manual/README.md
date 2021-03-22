@@ -24,6 +24,16 @@ For AT commands example usage, you can check these sections of quick start guide
 - [ChirpStack OTAA/ABP](/Product-Categories/WisDuo/RAK4600-Module/Quickstart/#connecting-with-chirpstack)
 - [LoRa P2P](/Product-Categories/WisDuo/RAK4600-Module/Quickstart/#lora-p2p-mode)
 
+## Software Tool
+
+If you don't have a serial port tool yet, it is recommended to download and install the RAK Serial Port Tool. There are some ready-made AT commands in this tool that will be very useful for you.
+
+- [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/)
+
+For more detailed information on how to use this tool, refer to the following guide:
+
+- [RAK Serial Port Tool Guide](/Product-Categories/WisDuo/RAK4600-Module/Quickstart/#interfacing-with-rak4600)
+
 ### AT Command Syntax
 
 The AT command is based on ASCII characters. A command begins with the prefix `at` and ends with `<CR><LF>` (i.e. \r\n). The maximum length is 255 characters which includes the `<CR><LF>` characters at the end of the command. For the rest of the document, the `\r\n` part is omitted for the sake of clarity.
@@ -987,7 +997,7 @@ This command is used to get all the information related to the current LoRa stat
 
 | Operation | Command                     | Response                  |
 | --------- | --------------------------- | ------------------------- |
-| Read      | `at+set_config=lora:status` | `OK <lora status detail>` |
+| Read      | `at+get_config=lora:status` | `OK <lora status detail>` |
 
 **Parameter**：None
 

@@ -116,7 +116,7 @@ The hardware specification is categorized into six parts. It discusses the inter
 ##### RAK7244 / RAK7244P
 
 <rk-img
-  src="/assets/images/wisgate/rak7244/datasheet/interfaces/interfaces.jpg"
+  src="/assets/images/wisgate/rak7244/datasheet/interfaces/interfaces.svg"
   width="100%"
   caption="RAK7244/RAK7244P Interfaces"
 />
@@ -124,7 +124,7 @@ The hardware specification is categorized into six parts. It discusses the inter
 ##### RAK7244C
 
 <rk-img
-  src="/assets/images/wisgate/rak7244/datasheet/interfaces/rak7244c-interfaces.jpg"
+  src="/assets/images/wisgate/rak7244/datasheet/interfaces/RAK7244C_Interfaces.svg"
   width="100%"
   caption="RAK7244C Interfaces"
 />
@@ -254,7 +254,7 @@ The Quectel EG95 is part of the LTE CAT4 module series that are specially optimi
 
 ##### LoRa
 
-The LoRa Antenna with RP-SMA female connector is shown in the image below:
+The LoRa Antenna with RP-SMA male connector is shown in the image below:
 
 <rk-img
   src="/assets/images/wisgate/rak7244/datasheet/antenna-specifications/ve8scbrbhdlcdaxa8x43.png"
@@ -283,7 +283,8 @@ The figure below shows the antenna's mechanical dimension.
 
 ##### LTE
 
-The LTE antenna for the Developer Gateway covers working frequency band from 824MHz to 2690MHz. The antenna is shown in Figure 14.
+The LTE antenna for the Developer Gateway with RP-SMA male connector covers working frequency band from 824MHz to 2690MHz. The antenna is shown in Figure 14.
+
 
 <rk-img
   src="/assets/images/wisgate/rak7244/datasheet/antenna-specifications/rhh9xrj0pfazqtaegxiv.jpg"
@@ -311,7 +312,7 @@ The LTE antenna for the Developer Gateway covers working frequency band from 824
 
 ##### GPS
 
-The GPS antenna for Pilot Gateway is shown below
+The GPS antenna with SMA male connector for Pilot Gateway is shown below
 
 <rk-img
   src="/assets/images/wisgate/rak7244/datasheet/antenna-specifications/ftzgxoaywuiq7xmy8shj.jpg"

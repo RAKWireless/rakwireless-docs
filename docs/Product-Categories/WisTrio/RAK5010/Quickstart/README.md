@@ -616,7 +616,7 @@ An easy and quick way to get started with your RAK5010 is through using a pre-co
 
 1. Download the DFU package of the RAK5010 WisTrio NB-IoT Tracker Pro and save it on your mobile phone.
 
-    - [**DFU Package**](https://downloads.rakwireless.com/en/Cellular/RAK5010/Firmware/DFU-Package/) 
+    - [**DFU Package**](https://downloads.rakwireless.com/en/Cellular/RAK5010/Firmware/RAK5010_Latest_Firmware.zip) is inside the RAK5010_Latest_Firmware.zip with file name RAK5010_dfu_xxxxxxxxxxxx.zip
 
 2. Make sure the Bluetooth on your mobile is turned on. Open the **nRF Connect** Mobile application, and you will see all BLE devices in range in the scan list.
 

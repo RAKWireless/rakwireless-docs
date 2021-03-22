@@ -74,10 +74,9 @@ For the aforementioned reason, it is best you leave these exposed for programmin
 
 ##### UART Port
 
-There are two UART interfaces on RAK4600 Breakout Board:
+There is one UART interface on RAK4600 Breakout Board:
 
 - **USART1** – recommended for debugging/firmware update
-- **USART2** – recommended for external MCU connection
 
 ##### I2C interface
 
@@ -109,8 +108,8 @@ The pin definitions of the RAK4600 Breakout Board are shown in the following tab
 
 | **Pin** | **Name**  | **I/O** | **Description**                              | **Alternate functions**                                 |
 | ------- | --------- | ------- | -------------------------------------------- | ------------------------------------------------------- |
-| 1       | USART2_RX | I/O     | USART2_RX (GPIO NRF52832 P0.18)              | GPIO, Single wire output, Trace port output             |
-| 2       | USART2_TX | I/O     | USART2_TX (GPIO NRF52832 P0.19)              | GPIO                                                    |
+| 1       | P0.18     | I/O     | GPIO NRF52832 P0.18                          | GPIO, Single wire output, Trace port output             |
+| 2       | P0.19     | I/O     | GPIO NRF52832 P0.19                          | GPIO                                                    |
 | 3       | NFC1      | I/O     | NFC antenna connection GPIO (NRF52832 P0.09) | NFC antenna connection<br>GPIO                          |
 | 4       | NFC2      | I/O     | NFC antenna connection GPIO (NRF52832 P0.10) | NFC antenna connection<br>GPIO                          |
 | 5       | SWDIO     | I/O     | SWD Programming                              | Serial wire debug I/O for debug and programming         |

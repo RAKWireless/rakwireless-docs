@@ -281,19 +281,19 @@ RAK811 supports two UARTs: UART1 (pin6-TX1, pin7-RX1) and UART3 (pin25-TX3, pin2
 
 ##### Operating Current
 
-| Feature             | Condition  | Minimum                 | Typical | Maximum | Unit |
-| ------------------- | ---------- | ----------------------- | ------- | ------- | ---- |
-| Operating Current   | TX Power   | 30 (@&nbsp;14&nbsp;dBm) |         |         | mA   |
-|                     | RX Mode    | 5.5                     |         |         | mA   |
+| Feature           | Condition | Minimum                 | Typical | Maximum | Unit |
+| ----------------- | --------- | ----------------------- | ------- | ------- | ---- |
+| Operating Current | TX Power  | 30 (@&nbsp;14&nbsp;dBm) |         |         | mA   |
+|                   | RX Mode   | 5.5                     |         |         | mA   |
 
 
 ##### Sleep Current
 
-| Feature                   | Condition  | Minimum (2.1V) | Typical (3.3V) | Maximum | Unit |
-| ------------------------- | ---------- | -------------- | -------------- | ------- | ---- |
-| Current Consumption       | EU868      | 8.37           | 11.9           |         | μA   |
-|                           | US915      | 1.11           | 11.8           |         | μA   |
-|                           | CN470      | 1.65           | 3.07           |         | μA   |
+| Feature             | Condition | Minimum (2.1V) | Typical (3.3V) | Maximum | Unit |
+| ------------------- | --------- | -------------- | -------------- | ------- | ---- |
+| Current Consumption | EU868     | 8.37           | 11.9           |         | μA   |
+|                     | US915     | 1.11           | 11.8           |         | μA   |
+|                     | CN470     | 1.65           | 3.07           |         | μA   |
 
 
 #### Mechanical Characteristics
@@ -348,10 +348,10 @@ Download the latest firmware of the RAK811 WisDuo LPWAN Module — both in low a
 
 #### Firmware / OS
 
-| Model     | Version      | Source                                                                                           |
-| --------- | ------------ | ------------------------------------------------------------------------------------------------ |
-| RAK811(L)| V3.0.0.14.L | [Download](https://downloads.rakwireless.com/LoRa/RAK811/Firmware/)  |
-| RAK811(H)| V3.0.0.14.H | [Download](https://downloads.rakwireless.com/LoRa/RAK811/Firmware/) |
+| Model     | Version     | Source                                                                                               |
+| --------- | ----------- | ---------------------------------------------------------------------------------------------------- |
+| RAK811(L) | V3.0.0.14.L | [Download](https://downloads.rakwireless.com/LoRa/RAK811/Firmware/RAK811%28L%29_Latest_Firmware.zip) |
+| RAK811(H) | V3.0.0.14.H | [Download](https://downloads.rakwireless.com/LoRa/RAK811/Firmware/RAK811%28H%29_Latest_Firmware.zip) |
 
 ## Certification
 

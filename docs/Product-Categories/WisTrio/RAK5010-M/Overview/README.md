@@ -1,6 +1,6 @@
 --- 
 rak_img: /assets/images/wistrio/rak5010-m/overview/RAK5010-M_home.png
-rak_desc: RAK5010-M is a flexible NB-IoT tracker with integrated GPS, BLE, and a variety of sensors. The board is equipped with four sensors onboard — humidity and temperature sensor, pressure sensor, 3-axis motion sensor, and ambient light sensor. The MCU running the board is a Nordic nRF52840 controller.
+rak_desc: The RAK5010-M is an advanced, highly flexible eMTC/NB-IoT/eGPRS tracker based on Quectel BG96 LTE Cat M1&NB1, with an integrated with GPS, and BLE for outdoor and indoor applications. It also has built-in sensors such as temperature and humidity, and motion. The MCU running the board is a Nordic nRF52840 microcontroller.
 rak_grp: [wistrio,cellular]
 prev: ../../
 next: ../Quickstart/
@@ -22,7 +22,7 @@ Thank you for choosing **RAK5010-M WisTrio NB-IoT Tracker** in your awesome IoT 
 
 ## Product Description
 
-The **RAK5010-M WisTrio NB-IoT Tracker** is an advanced, highly flexible NB-IoT tracker based on Quectel BG96 LTE Cat M1&NB1, integrated with GPS, BLE, and a variety of sensors. The MCU running the board is a Nordic nRF52840 controller.
+The **RAK5010-M WisTrio NB-IoT Tracker** is an advanced, highly flexible eMTC/NB-IoT/EGPRS tracker based on Quectel BG96 LTE Cat M1&NB1, integrated with GPS, BLE, and a variety of sensors. The MCU running the board is a Nordic nRF52840 controller.
 
 With the GPS and BLE features, the device can be used in a wide range of applications from outdoor to indoor scenarios where location-based services are necessary.
 
@@ -38,7 +38,7 @@ This board is particularly suitable to be used as a quick testing and prototypin
 
 ## Product Features
 
-- **Quectel BG96** with LTE CAT M1, LTE NB1, and GNSS
+- **Quectel BG96** with LTE CAT M1, LTE NB1, EGPRS and GNSS
 - **Nordic nRF52840**, with BLE 5.0 and long-range BLE
 - nRF52840 integrates the ultra-low power microcontroller ARM Cortex-M4 (64&nbsp;Mhz)
 - Built-in humidity and temperature sensor, and 3-axis motion sensor

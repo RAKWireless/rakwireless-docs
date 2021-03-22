@@ -41,10 +41,10 @@ Thus the RAK7249 is suited for any use case scenario, be it rapid deployment or 
 
 #### Software
 
-1. Built-in LoRa Server **(up to 128 LoRa nodes license included, higher tiers require a fee)**
+1. Built-in LoRa Server 
 2. OpenVPN
 3. Software and UI sit on top of **OpenWRT**
-4. LoRaWAN 1.0.2
+4. LoRaWAN 1.0.3
 5. **LoRa Frame filtering** (node whitelisting)
 6. **MQTT v3.1** Bridging with **TLS** encryption
 7. **Buffering of LoRa frames** in case of NS outage (no data loss)
@@ -89,7 +89,7 @@ Actual Devices for RAK7249 WisGate Edge Max and accessories may differ from the 
 - **Flash**:16MB
 - **WiFi**: 2x2 MIMO 802.11b/g/n
 - **LoRa Concentrator:** up to 2 LoRa Concentrator modules for up to 16 LoRa channels
-- **Tx Power**: up to 25dBm
+- **Tx Power**: up to 27dBm
 - **Rx sensitivity**: down to -139dBm.
 - **4G Cellular**: Quectel EG95 for CAT4 cellular network
 - **GPS**: L70 GPS Module
@@ -187,8 +187,8 @@ on the mainboard.
 | Feature             | Specifications                                                                                                                                                                                                                                                                        |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Computing           | MT7628, DDR2RAM 128MB                                                                                                                                                                                                                                                                 |
-| Wi-Fi Feature       | • **Frequency**: 2.400-2.4835GHz(802.11b/g/n) <br> • **RX Sensitivity**: -139dBm (Min) <br> • **TX Power**: 25dBm (Max) <br> • **Operation Channels**: 2.4GHz: 1-13                                                                                                                    |
-| LoRa Feature       | <br> • **Card**: SX1301 Mini PCIe Card (connects maximum of two) <br> • **Channels**: 8 Channels (Optional: 16 channels) <br> • **RX Sensitivity**: -142dBm (Min) <br> • **TX Power**: 27dBm (Max) <br> • **Frequency**: EU433, CN470, EU868, US915 AS920, AS923, AU915, KR920, IN865 |
+| Wi-Fi Feature       | • **Frequency**: 2.400-2.4835GHz(802.11b/g/n) <br> • **RX Sensitivity**: -95dBm (Min) <br> • **TX Power**: 20dBm (Max) <br> • **Operation Channels**: 2.4GHz: 1-13                                                                                                                    |
+| LoRa Feature       | <br> • **Card**: SX1301 Mini PCIe Card (connects maximum of two) <br> • **Channels**: 8 Channels (Optional: 16 channels) <br> • **RX Sensitivity**: -139dBm (Min) <br> • **TX Power**: 27dBm (Max) <br> • **Frequency**: EU433, CN470, EU868, US915 AS920, AS923, AU915, KR920, IN865 |
 | Cellular Feature    | • Supports Quectel EG95-E / EG95-NA(IoT/M2M-optimized LTE Cat 4 Module) <br> • EG95 -E for EMEA Region：<br> • LTE FDD: B1/B3/B7/B8/B20/B28A <br> • WCDMA: B1/B8 <br> • GSM/EDGE: B3/B8 EG95 -NA for North America Region<br> • LTE FDD: B2/B4/B5/B12/B13 <br> • WCDMA: B2/B4/B5      |
 | Power Supply        | PoE(IEEE 802.3af/at-Compliant), 42~57VDC                                                                                                                                                                                                                                              |
 | Power Consumption   | 12W (Typical)                                                                                                                                                                                                                                                                         |
@@ -208,8 +208,8 @@ on the mainboard.
 | Feature              | Specifications                                                        |
 | -------------------- | --------------------------------------------------------------------- |
 | Operating Frequency  | • EU433, CN470, EU868, US915 <br> • AS920, AS923, AU915, KR920, IN865 |
-| Transmit Power       | 27dBm (Max)                                                           |
-| Receiver Sensitivity | -142dBm (Min)                                                         |
+| Transmit Power       | 27dBm (Max)                                                          |
+| Receiver Sensitivity | -139dBm (Min)                                                         |
 
 ##### Wi-Fi
 

@@ -33,7 +33,7 @@ The RAK7258 WisGate Edge Lite package includes a LoRa antenna, mounting screws, 
 
 ## Product Features
 
-- Full LoRaWAN 1.0.2 Stack support
+- Full LoRaWAN 1.0.3 Stack support
 - 100M base-T Ethernet with PoE (802.3 af)
 - Multi back-haul backup with Ethernet, WiFi, Cellular (optional LTE Cat 4)
 - OpenWRT software supports with Web UI for easy configuration and monitoring
