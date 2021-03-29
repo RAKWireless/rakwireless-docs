@@ -36,7 +36,7 @@ Despite its small size this is an 8 channel concentrator module. By integrating 
 - Built-in FT2232H for SPI to USB 2.0 conversion (optional).
 - Operates at 3.3 V, making it compatible with standard 3G/LTE card slots of Mini PCI-e type.
 - Tx power up to 27 dBm, Rx sensitivity down to -139 dBm @ SF12, BW 125 kHz.
-- Supports global license-free frequency band (EU433, CN470, IN865, EU868, US915, AU915, KR920, AS920 and AS923).
+- Supports global license-free frequency band (EU433, CN470, IN865, EU868, US915, AU915, KR920,  and AS923).
 
 ## Specifications
 
@@ -180,7 +180,7 @@ The board supports the following LoRaWAN frequency channels, allowing easy confi
 | Europe        | EU433, EU868    |
 | China         | CN470           |
 | North America | US915           |
-| Asia          | AS923, AS920    |
+| Asia          | AS923,     |
 | Australia     | AU915           |
 | Korea         | KR920           |
 | Indian        | IN865           |

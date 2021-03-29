@@ -45,7 +45,7 @@ The RAK811 module is integrated with Semtech’s SX1276 and STM32. You can confi
 
 - Based on **Semtech SX1276**
 - **LoRaWAN 1.0.2** specification compliant
-- **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, AS920, and AS923
+- **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, and AS923
 - LoRaWAN Activation by OTAA/ABP
 - LoRa Point to Point (P2P) communication
 - Easy to use AT Command Set via UART interface with configurable baud rate

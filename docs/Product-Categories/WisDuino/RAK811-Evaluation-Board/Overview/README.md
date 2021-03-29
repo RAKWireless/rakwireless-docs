@@ -35,7 +35,7 @@ The module integrates the **Semtech SX1276** and a **STM32 Chip** that comes alo
 ## Product Features
 
 - LoRaWAN 1.0.2 Standard support
-- Global LoRaWAN bands supported (EU433, CN470, IN865, EU868, US915, AU915, AS920, KR920, and AS923)
+- Global LoRaWAN bands supported (EU433, CN470, IN865, EU868, US915, AU915, KR920, and AS923)
 - Arduino Uno form factor (standalone or as a shield)
 - Micro USB with UART converter for easy configuring
 - AT commands backed in the firmware, open source platform

@@ -46,7 +46,7 @@ This is the ideal LPWAN tracker board with a built-in sensor available in the ma
 - Supports programmable bit rate up to 300&nbsp;kbps
 - Supports rechargeable battery through micro USB or 5&nbsp;V solar charging ports
 - Supports sleep mode, the power consumption down to 14.5&nbsp;μA
-- Supports global license-free ISM band: EU433, CN470, EU868, US915, AS923, AU915, KR920, IN865 and AS920
+- Supports global license-free ISM band: EU433, CN470, EU868, US915, AS923, AU915, KR920, IN865 and 
 - Supports I2C, GPIOs, UART, and ADC interfaces.
 
 

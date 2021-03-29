@@ -36,7 +36,7 @@ The RAK811 Breakout Board complies with Class A & C of LoRaWAN 1.0.2 specificati
 
 - Based on **Semtech SX1276**.
 - **LoRaWAN 1.0.2** specification compliant.
-- **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, AS920 and AS923.
+- **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, and AS923.
 - LoRaWAN Activation by OTAA/ABP.
 - LoRa Point to Point (P2P) communication.
 - Integrates both **SMA** and **iPEX** antenna connectors.

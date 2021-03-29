@@ -393,9 +393,9 @@ Download the latest firmware of RAK7243 and RAK7243C in the table provided below
 
 | Part Number    | Package                                                                               | Description                                                                                                                  |
 | -------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| RAK7243-1x-142 | With 1x LoRa Antenna, 1x GPS Antenna, 2x LTE Antenna, 1x Power Adapter and 1x SD card | EG95-E version for Cat 4 Cellular, GPS and for EU433 / Cn470 / IN865 / EU868 / US915 / AU915 / AS920 / AS923 / KR920 regions |
-| RAK7243-1x-141 | With 1x LoRa Antenna, 1x GPS Antenna, 2x LTE Antenna, 1x Power Adapter and 1x SD card | ECG95-NA version for Cat 4 Cellular, GPS and for US915 / AU915 / AS920 / AS923 / KR920 regions                               |
-| RAK7243-0x-000 | With 1x LoRa Antenna, 1x GPS Antenna, 1x LTE Antenna, 1x Power Adapter and 1x SD card | Without Cellular version for EU433 / CN470 / IN865 / EU868 / US915 / AU915 / AS920 / AS923 / KR920 regions                   |
+| RAK7243-1x-142 | With 1x LoRa Antenna, 1x GPS Antenna, 2x LTE Antenna, 1x Power Adapter and 1x SD card | EG95-E version for Cat 4 Cellular, GPS and for EU433 / Cn470 / IN865 / EU868 / US915 / AU915 /  / AS923 / KR920 regions |
+| RAK7243-1x-141 | With 1x LoRa Antenna, 1x GPS Antenna, 2x LTE Antenna, 1x Power Adapter and 1x SD card | ECG95-NA version for Cat 4 Cellular, GPS and for US915 / AU915 /  / AS923 / KR920 regions                               |
+| RAK7243-0x-000 | With 1x LoRa Antenna, 1x GPS Antenna, 1x LTE Antenna, 1x Power Adapter and 1x SD card | Without Cellular version for EU433 / CN470 / IN865 / EU868 / US915 / AU915 /  / AS923 / KR920 regions                   |
 
 ## Certification
 

@@ -42,6 +42,6 @@ Overall, this gateway module is the most economical way to create different solu
 - Supports 5 V power supply, integrated level conversion circuit.
 - TX power up to 27dBm, RX sensitivity down to - 139dBm@SF12, BW 125KHz.
 - Supports the LoRaWAN 1.0.2 protocol.
-- Supports global license-free frequency band (EU433, CN470, IN865, EU868, US915, AU915, KR920, AS920 and AS923).
+- Supports global license-free frequency band (EU433, CN470, IN865, EU868, US915, AU915, KR920,  and AS923).
 - Supports SPI interface.
 - Integrated the Ublox MAX-7Q GPS Module.

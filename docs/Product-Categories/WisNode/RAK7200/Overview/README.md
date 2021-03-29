@@ -30,5 +30,5 @@ The device can be used as a quick prototyping tool for LoRaWAN application devel
 - LoRaWAN 1.0.2 Standard support - ABP or OTAA mode.
 - LoRa and GPS antenna are integrated inside the casing.
 - Micro USB for configuration and charging of the battery
-- Supports global license-free frequency band: IN865, EU868, US915, AU915, AS920, KR920, and AS923.
+- Supports global license-free frequency band: IN865, EU868, US915, AU915, KR920, and AS923.
 

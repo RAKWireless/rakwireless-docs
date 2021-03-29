@@ -237,7 +237,7 @@ The following table shows the available features of the RAK7246G WisGate Develop
 
 | **Feature**              | **Specifications**                                                      |
 | ------------------------ | ----------------------------------------------------------------------- |
-| **Operating Frequency**  | • EU433, CN470, EU868, US915<br><br>• AS920, AS923, AU915, KR920, IN865 |
+| **Operating Frequency**  | • EU433, CN470, EU868, US915<br><br>• , AS923, AU915, KR920, IN865 |
 | **Transmit Power**       | 27dBm (Max)                                                             |
 | **Receiver Sensitivity** | -142dBm (Min)                                                           |
 

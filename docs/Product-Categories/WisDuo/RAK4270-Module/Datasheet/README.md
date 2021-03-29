@@ -31,7 +31,7 @@ You can configure the mode and operation of the RAK4270 module using [RAK4270 AT
 - AT commands control interface
 - Temperature range: **-30&nbsp;°C to +85&nbsp;°C**
 - Supply voltage: **2.0 to 3.6&nbsp;V**
-- **Supported bands**: (EU433, CN470, IN865, EU868, AU915, US915, KR920, AS920 and AS923)
+- **Supported bands**: (EU433, CN470, IN865, EU868, AU915, US915, KR920, and AS923)
 - LoRa bandwidth range of 7.8&nbsp;kHz to&nbsp;500 kHz, SF5 to SF12, BR=0.018~62.5&nbsp;kb/s
 - Ultra-Low Power Consumption of 2.31&nbsp;μA (down to 1.61&nbsp;μA @ 2.0&nbsp;V) in sleep mode
 - Arm Cortex-M0+ 32-bit RISC core

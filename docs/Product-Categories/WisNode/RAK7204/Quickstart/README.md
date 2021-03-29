@@ -1290,7 +1290,7 @@ at+set_config=device:boot
 
 :::tip 📝 NOTE:
  Make sure to pick the appropriate bin file depending on the region you are in.
-- "RUI_RAK7204_V3.x.x.x.H" supported regions are: IN865, EU868, US915, AU915, KR920, AS920, AS923
+- "RUI_RAK7204_V3.x.x.x.H" supported regions are: IN865, EU868, US915, AU915, KR920, AS923
 - "RUI_RAK7204_V3.x.x.x.L” supported regions are: EU433, CN470
 Visit this [article](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html) for more information on your local TTN frequency plan.
 :::
