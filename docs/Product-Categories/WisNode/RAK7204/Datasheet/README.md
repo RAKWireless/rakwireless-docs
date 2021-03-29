@@ -88,10 +88,10 @@ The following are the electrical characteristics of RAK7204 WisNode Sense Home. 
 
 ##### Power Consumption
 
-| Parameter                                    | Value | Unit |
-| -------------------------------------------- | ----- | ---- |
-| Standby Current                              | <15   | uA   |
-| Current when Sensors are working             | <10   | mA   |
+| Parameter                                   | Value | Unit |
+| ------------------------------------------- | ----- | ---- |
+| Standby Current                             | <15   | uA   |
+| Current when Sensors are working            | <10   | mA   |
 | Current in when LoRa frames are transmitted | <150  | mA   |
 
 ##### Battery Specifications
@@ -184,10 +184,10 @@ Listed below are the individual specifications of sensors attached within the RA
 
 Download the latest firmware of the RAK7204 in table provided below.
 
-| Model   | Version   | Source                                                                                                  |
-| ------- | --------- | ------------------------------------------------------------------------------------------------------- |
-| RAK7204 | V3.X.0.13 | [Download](https://downloads.rakwireless.com/LoRa/RAK7200-Tracker/Firmware/RAK7200_Latest_Firmware.zip) |
-
+| Model       | Supported Firmwares                   | Version   | Source                                                                                            |
+| ----------- | ------------------------------------- | --------- | ------------------------------------------------------------------------------------------------- |
+| RAK7204 - H | EU868 / US915 / AU915 / KR920 / IN865 | V3.0.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK7204/Firmware/RAK7204_H_Latest_Firmware.rar) |
+| RAK7204 - L | EU433 / CN470                         | V3.0.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK7204/Firmware/RAK7204_L_Latest_Firmware.rar) |
 ## Models / Bundles
 
 ### Ordering Information

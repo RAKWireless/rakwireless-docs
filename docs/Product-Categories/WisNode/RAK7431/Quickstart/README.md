@@ -242,7 +242,7 @@ AT+CLASS=C
 ```
 
 ::: tip 📝 NOTE
-The changes take effect as soon as they are made.
+Changes will take effect as soon as they are made.
 :::
 
 2. Activation mode supports the following two modes: **ABP** and **OTAA**. To set the activation mode (OTAA in this case), you need to execute the AT command:
@@ -1254,4 +1254,188 @@ Application/1/device/60c5a8fffe75404b/tx
         </tr>
 </tbody>
 </table>
+
+
+## Connecting to The Things Network V3 (TTNv3)
+At The Things Conference 2021, it was announced that The Things Network is upgrading to The Things Stack v3.  In this section, it will be shown how to connect RAK7431 WisNode Bridge Serial to The Things Stack.  To login into the TTNv3, head on [here](https://eu1.cloud.thethings.network/console). If you already have a TTN account, you can use your The Things ID credentials to log in.
+
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/ttnv3/image001.png"
+  width="100%"
+  caption="The Things Stack Home Page"
+/>
+
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/ttnv3/image002.png"
+  width="100%"
+  caption="Console Page after successful login"
+/>
+
+::: tip 📝 NOTE
+To be able to connect RAK7431 WisNode Bridge Serial to TTNv3 you should already have connected a gateway in range to TTNv2 or TTNv3, or you have to be sure that you are in the range of a public gateway. 
+:::
+
+### Adding an application
+
+::: tip 📝 NOTE
+This tutorial is for EU868 Frequency band.
+:::
+
+1. To create an application, choose **Create an application** (for new users that do not already have created applications) or **Go to applications** > **+ Add application** (for users that have created applications before).
+
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/ttnv3/image003.png"
+  width="100%"
+  caption="Create an application page"
+/>
+
+2. Fill in the needed information:
+
+- **Owner** Automatically filled by The Things Stack, based on your account or created Organization.
+- **Application ID** - This will be the unique ID of your application in the Network. Note that the ID must contain only lowercase letters, numbers, and dashes (-).
+- **Application name** (optional) - This is the name of your application. 
+- **Description** (optional) – Description of your application. Optional application description; can also be used to save notes about the application.
+
+3. After you fill in the information, click **Create application**. If everything is filled in correctly, you will see the page in Figure 4.
+
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/ttnv3/image004.png"
+  width="100%"
+  caption="Application Overview"
+/>
+
+### Registering and Configuring the Device In OTAA Mode
+
+#### Registering the Device in OTAA Mode
+
+1. From the Application Overview page, click on **+ Add end device**.
+   
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/ttnv3/image005.png"
+  width="100%"
+  caption="Adding a device in OTAA mode"
+/>
+
+2. Below the **Register end device** heading you can find two options for registering a device. Since RAK7431 WisNode Bridge Serial is part of The LoRaWAN Device Repository, you can register it **From The LoRaWAN Repository** option. In the **Brand** dropdown menu find and select **RAKwireless Technology Co.** and a **Model** field will pop up next to it. In it choose **RAK7431 WisNode Bridge Serial**. 
+
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/ttnv3/image006.png"
+  width="100%"
+  caption="Choosing the device"
+/>
+
+3. After choosing the device, three more fields will pop up. 
+
+- **Hardware Ver.** – Version of the hardware. This is the only option, so leave it as default. 
+- **Firmware Ver.** – Version of the firmware. This is the only option, so leave it as default.
+- **Profile (Region)** – Here the region is chosen. 
+
+::: tip 📝 NOTE
+For this example, the EU_863_870 is chosen.
+:::
+
+4. Next, an **Enter registration data** heading will pop up below. Scroll down to enter the required data for the device.
+
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/ttnv3/image007.png"
+  width="100%"
+  caption="Registration Data"
+/>
+
+5. Here you must enter the following information:
+
+- **Frequency plan** – Note: For this example, we will choose Europe 863-870 MHz (SF9 for RX2 - recommended).
+- **AppEUI** - The AppEUI uniquely identifies the owner of the end device. It is provided by the device manufacturer. To get the AppEUI, connect your device via USB cable to your computer. Open RAK Serial Port Tool, choose the correct COM port and BaudRate and run the following command:
+
+```
+AT+APPEUI
+```
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/ttnv3/1.png"
+  width="70%"
+  caption="AppEUI of the device"
+/>
+
+- **DevEUI** - The DevEUI is the unique identifier for this end device. It is provided by the manufacturer and is printed on the label on the back of the device.
+- **AppKey** - The root key to deriving session keys to secure communication between the end device and the application. AppKey can be generated by clicking the **Generate** button <img src="/assets/images/wisnode/rak7431/quickstart/ttnv3/image008.png">.
+-  **End device ID** – The End device ID is automatically filled based on the DevEUI. It can be changed. Note that the end device ID must contain only lowercase letters, numbers, and dashes (-).
+
+::: tip 📝 NOTE
+If you are going to register more than one device of this type, you can choose the option **Register another end device of this type** and be transferred to the same page to register the next device. 
+:::
+
+
+6. After filling in the registration information, click **Register end device**.
+
+#### Configuring the Device in OTAA Mode
+
+1. For configuring the node you will need the following three parameters: **Device EUI, Application EUI**, and **Application Key**. You can see them all in the **Device Overview** page, but since the two EUI's come with the device, you only need the Application Key from there.
+
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/ttnv3/image009.png"
+  width="100%"
+  caption="OTAA device parameters"
+/>
+
+2. Using the RAK Serial Port Tool, set the join mode, device class, and your LoRaWAN region to your correct frequency band, with the following set of AT commands:
+
+- For the join mode (OTAA)
+
+```
+AT+JOINMODE=OTAA
+```
+
+- For the class (Supported classes are: Class A, Class B and Class C. Remember for different classes to change the command with the correct letter, for example for Class B it will be AT+CLASS=B, in this case it is Class A.)
+
+```
+AT+CLASS=A
+```
+
+- For the region (Remember to replace the **frequency band** with the one for your LoRaWAN region. Check [here](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html) for your frequency plan.)
+
+```
+AT+REGION=EU868
+```
+
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/ttnv3/image010.png"
+  width="70%"
+  caption="Setting up the RAK7431 WisNode Bridge Serial operation modes"
+/>
+
+::: tip 📝 NOTE
+The following tutorial is based on using the EU868 frequency band. 
+:::
+
+3. Now that those parameters are set, enter the **App Key**, using the command below. Remember to replace the **"XXXX"** with the corresponding parameter value for your particular case.
+
+```
+AT+APPKEY=XXXX  
+```
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/ttnv3/image011.png"
+  width="70%"
+  caption="Setting up the RAK7431 WisNode Bridge Serial OTAA parameters"
+/>
+
+4. To connect to the LoRaWAN Network after configuration, the device must be restarted. Restart it with the command:
+
+```
+AT+RESTART
+```
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/ttnv3/image012.png"
+  width="70%"
+  caption="Joining the network confirmation"
+/>
+
+You can see in the **Live data** feed that the RAK7431 WisNode Bridge Serial is successfully joined.
+
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/ttnv3/image013.png"
+  width="100%"
+  caption="Receiving data in the Live data feed"
+/>
+
+
 

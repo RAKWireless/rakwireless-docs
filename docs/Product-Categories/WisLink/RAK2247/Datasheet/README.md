@@ -180,7 +180,7 @@ The board supports the following LoRaWAN frequency channels, allowing easy confi
 | Europe        | EU433, EU868    |
 | China         | CN470           |
 | North America | US915           |
-| Asia          | AS923,     |
+| Asia          | AS923           |
 | Australia     | AU915           |
 | Korea         | KR920           |
 | Indian        | IN865           |

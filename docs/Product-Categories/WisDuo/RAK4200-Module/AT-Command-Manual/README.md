@@ -385,14 +385,19 @@ This command is used to obtain the voltage level status of a pin on a module.
 <table>
     <tr>
       <td> pin_num </td>
-      <td> Pin index of the module </td>
+      <td> Pin index of the module <br> (GPIO pins available are Pin 3, Pin 6, Pin 9, and Pin 10) </td>
     </tr>
     <tr>
       <td> status（Return Value） </td>
-      <td> 0: Low Voltage Level <br> 1: High Voltage Level
-    </td>
+      <td> 0: Low Voltage Level <br> 1: High Voltage Level</td>
     </tr>
 </table>
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-module/at-command/RAK4200 GPIO Pins.svg"
+  width="65%"
+  caption="GPIO Pinout for RAK4200"
+/>
 
 **Example**:
 
@@ -417,7 +422,7 @@ This command is used to set the voltage level state (high or low) of a pin on a 
 <tbody>
     <tr>
       <td> pin_num </td>
-      <td> Pin index of the module </td>
+      <td> Pin index of the module <br> (GPIO pins available are Pin 3, Pin 6, Pin 9, and Pin 10) <br> <b> Please refer to Figure 1. </b> </td>
     </tr>
     <tr>
       <td> status </td>
@@ -450,7 +455,7 @@ This command is used to obtain the voltage level of an ADC pin of the module.
 <table>
     <tr>
       <td> pin_num </td>
-      <td> ADC pin index of the module </td>
+      <td> ADC pin index of the module <br> (ADC pin is assigned to Pin 3) </td>
     </tr>
     <tr>
       <td> Voltage（Return Value） </td>
@@ -459,7 +464,11 @@ This command is used to obtain the voltage level of an ADC pin of the module.
     </tr>
 </table>
 
-
+<rk-img
+  src="/assets/images/wisduo/rak4200-module/at-command/RAK4200 ADC Pin.svg"
+  width="65%"
+  caption="ADC Pinout for RAK4200"
+/>
 
 **Example**:
 
@@ -1789,7 +1798,7 @@ Listed are the summary of the pins of the RAK4200 module:
    
 5. **About the RF Antenna Pin**: The RF antenna pin on the RAK4200 module is the Pin 12.
    
-6. **About the ADC Pin**: The ADC pin on the RAK4200 is assigned to the Pin 3.
+6. **About the ADC Pin**: The ADC pin on the RAK4200 is assigned to Pin 3.
    
 7. **About the GPIO pin**: The GPIO pins available on the RAK4200 module are Pin 3, Pin 6, Pin 9, and Pin 10.
 

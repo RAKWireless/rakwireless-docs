@@ -205,11 +205,11 @@ on the mainboard.
 
 ##### LoRa
 
-| Feature              | Specifications                                                        |
-| -------------------- | --------------------------------------------------------------------- |
-| Operating Frequency  | • EU433, CN470, EU868, US915 <br> • , AS923, AU915, KR920, IN865 |
-| Transmit Power       | 27dBm (Max)                                                          |
-| Receiver Sensitivity | -139dBm (Min)                                                         |
+| Feature              | Specifications                                                 |
+| -------------------- | -------------------------------------------------------------- |
+| Operating Frequency  | • EU433, CN470, EU868, US915 <br> • AS923, AU915, KR920, IN865 |
+| Transmit Power       | 27dBm (Max)                                                    |
+| Receiver Sensitivity | -139dBm (Min)                                                  |
 
 ##### Wi-Fi
 

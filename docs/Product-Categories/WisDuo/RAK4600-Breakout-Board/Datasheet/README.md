@@ -95,10 +95,9 @@ Two physical pins can be configured either as NFC antenna pins (factory default)
 
 #### Pin Definition
 
-
 <rk-img
-  src="/assets/images/wisduo/rak4600-breakout-board/datasheet/pin-definition/bqiem8snfmmzg4hl3mk3.jpg"
-  width="65%"
+  src="/assets/images/wisduo/rak4600-breakout-board/datasheet/pin-definition/RAK4600 Breakout Board Pinout.svg"
+  width="75%"
   caption="RAK4600 Breakout Board Pinout"
 />
 
@@ -213,7 +212,7 @@ The table below shows the power consumption of RAK4600 Breakout Board:
 
 
 <rk-img
-  src="/assets/images/wisduo/rak4600-breakout-board/datasheet/schematic-diagram/tyd3goloywnp7wbiflva.png"
+  src="/assets/images/wisduo/rak4600-breakout-board/datasheet/schematic-diagram/RAK4600_breakoutborad_schematic.png"
   width="100%"
   caption="RAK4600 Breakout Board Schematic"
 />

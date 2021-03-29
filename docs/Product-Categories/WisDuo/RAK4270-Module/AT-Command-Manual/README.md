@@ -379,7 +379,7 @@ OK
 
 4. <b>at+get_config=device:gpio:`<pin_num>`</b>
 
-This command is used to obtain the voltage level status of a GPIO pin on a module. The GPIO pin number mapping can be found in the Pin Definition section of the [Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#pin-definition).
+This command is used to obtain the voltage level status of a GPIO pin on a module.
 
 | Operation | Command                               | Response      |
 | --------- | ------------------------------------- | ------------- |
@@ -391,7 +391,7 @@ This command is used to obtain the voltage level status of a GPIO pin on a modul
 <table>
     <tr>
       <td> pin_num </td>
-      <td> Pin index of the module </td>
+      <td> Pin index of the module <br> (GPIO pins available are Pin 3, Pin 6, Pin 9, Pin 10, Pin 16, and Pin 17) </td>
     </tr>
     <tr>
       <td> status（Return Value） </td>
@@ -400,7 +400,11 @@ This command is used to obtain the voltage level status of a GPIO pin on a modul
     </tr>
 </table>
 
-
+<rk-img
+  src="/assets/images/wisduo/rak4270-module/at-command/RAK4270 GPIO Pins.svg"
+  width="54%"
+  caption="GPIO Pinout for RAK4270"
+/>
 
 **Example**:
 
@@ -413,7 +417,7 @@ OK 1
 
 5. <b>at+set_config=device:gpio:`<pin_num>:<status>`</b>
 
-This command is used to set the voltage level state (high or low) of a GPIO pin on a module. For the GPIO pin number mapping, refer to the Pin Definition section of the [Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#pin-definition) for the GPIO pin number mapping. 
+This command is used to set the voltage level state (high or low) of a GPIO pin on a module. 
 
 | Operation | Command                                        | Response |
 | --------- | ---------------------------------------------- | -------- |
@@ -427,7 +431,7 @@ This command is used to set the voltage level state (high or low) of a GPIO pin 
 <tbody>
     <tr>
       <td> pin_num </td>
-      <td> Pin index of the module </td>
+      <td> Pin index of the module <br> (GPIO pins available are Pin 3, Pin 6, Pin 9, Pin 10, Pin 16, and Pin 17) <br> <b> Please refer on Figure 1. </b> </td>
     </tr>
     <tr>
       <td> status </td>
@@ -449,7 +453,7 @@ OK
 
 6. <b> at+get_config=device:adc:`<pin_num>` </b>
 
-This command is used to obtain the voltage level of an ADC pin of the module. The ADC pin number mapping can be found in the Pin Definition section of the [Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#pin-definition).
+This command is used to obtain the voltage level of an ADC pin of the module.
 
 | Operation | Command                              | Response       |
 | --------- | ------------------------------------ | -------------- |
@@ -462,7 +466,7 @@ This command is used to obtain the voltage level of an ADC pin of the module. Th
 <table>
     <tr>
       <td> pin_num </td>
-      <td> ADC pin index of the module </td>
+      <td> ADC pin index of the module <br> (ADC pin is assigned to Pin 3) </td>
     </tr>
     <tr>
       <td> Voltage（Return Value） </td>
@@ -471,7 +475,11 @@ This command is used to obtain the voltage level of an ADC pin of the module. Th
     </tr>
 </table>
 
-
+<rk-img
+  src="/assets/images/wisduo/rak4270-module/at-command/RAK4270 ADC Pin.svg"
+  width="44%"
+  caption="ADC Pinout for RAK4270"
+/>
 
 **Example**:
 
@@ -1806,7 +1814,7 @@ Listed are the summary of the pins of the RAK4270 module:
    
 5. **About the RF Antenna Pin**: The RF antenna pin on the RAK4270 module is the Pin 12.
    
-6. **About the ADC Pin**: The ADC pin on the RAK4270 is assigned to the Pin 3.
+6. **About the ADC Pin**: The ADC pin on the RAK4270 is assigned to Pin 3.
    
 7. **About the GPIO Pin**: The GPIO pins available on the RAK4270 module are Pin 3, Pin 6, Pin 9, Pin 10, Pin 16, and Pin 17.
 

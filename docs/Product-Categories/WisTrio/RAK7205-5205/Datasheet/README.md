@@ -36,7 +36,7 @@ This is the ideal LPWAN tracker board with a built-in sensor available in the ma
 - Supports programmable bit rate up to 300&nbsp;kbps
 - Supports rechargeable battery through micro USB or 5&nbsp;V solar charging ports
 - Supports sleep mode, the power consumption down to 14.5&nbsp;μA
-- Supports global license-free ISM band: EU433, CN470, EU868, US915, AS923, AU915, KR920, IN865 and 
+- Supports global license-free ISM band: EU433, CN470, EU868, US915, AS923, AU915, KR920 and IN865
 - Supports I2C, GPIOs, UART, and ADC interfaces.
 
 ## Specifications
@@ -202,7 +202,7 @@ The board supports all LoRaWAN frequency channels as stated in the table below w
 | Europe        | EU433, EU868    |
 | China         | CN470           |
 | North America | US915           |
-| Asia          | , AS923    |
+| Asia          | AS923           |
 | Australia     | AU915           |
 | Korea         | KR920           |
 | Indian        | IN865           |
@@ -394,7 +394,7 @@ Download the supported firmwares of RAK5205 in the table provided below.
 
 #### Firmware
 
-| Model       | Supported Firmwares                   | Version   | Source                                                                                                                                        |
-| ----------- | ------------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| RAK5205 - H | EU868 / US915 / AU915 / KR920 / IN865 | V3.0.0.12 | [Download](https://downloads.rakwireless.com/LoRa/RAK7205-Tracker/Firmware/RUI_RAK5205_V3.0.0.12.H.T1%28EU868-US915-AU915-KR920-IN865%29.rar) |
-| RAK5205 - L | EU433 / CN470                         | V3.0.0.12 | [Download](https://downloads.rakwireless.com/LoRa/RAK7205-Tracker/Firmware/RUI_RAK5205_V3.0.0.12.L.T1%28EU433-CN470%29.rar)                   |
+| Model       | Supported Firmwares                   | Version   | Source                                                                                                         |
+| ----------- | ------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------- |
+| RAK5205 - H | EU868 / US915 / AU915 / KR920 / IN865 | V3.0.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK7205-Tracker/Firmware/RAK5205_7205_H_Latest_Firmware.zip) |
+| RAK5205 - L | EU433 / CN470                         | V3.0.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK7205-Tracker/Firmware/RAK5205_7205_L_Latest_Firmware.zip) |

@@ -301,6 +301,246 @@ The received data from the WisNode Button 4K can be seen in the web UI of the ga
   caption="Received data"
 />
 
+## Connecting to The Things Network V3 (TTNv3)
+### Overview
+
+At The Things Conference 2021, it was announced that The Things Network is upgrading to The Things Stack v3. In this section, it will be shown how to connect RAK7201 WisNode Button 4K to The Things Stack.  To login into the TTNv3, head on [here](https://eu1.cloud.thethings.network/console). If you already have a TTN account, you can use your The Things ID credentials to log in.
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/image001.png"
+  width="100%"
+  caption="The Things Stack Home Page"
+/>
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/image002.png"
+  width="100%"
+  caption="Console Page after successful login"
+/>
+
+::: tip 📝 NOTE:
+To be able to connect RAK7201 WisNode Button 4K to TTNv3 you should already have connected a gateway in range to TTNv2 or TTNv3, or you have to be sure that you are in the range of a public gateway. 
+:::
+
+### Adding an application
+
+::: tip 📝 NOTE:
+This tutorial is for EU868 Frequency band.
+:::
+
+1. To create an application, choose **Create an application** (for new users that do not already have created applications) or **Go to applications** > **+ Add application** (for users that have created applications before).
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/image003.png"
+  width="100%"
+  caption="Create an application page"
+/>
+
+2. Fill in the needed information:
+
+- **Owner –** Automatically filled by The Things Stack, based on your account or created Organization.
+- **Application ID** - This will be the unique ID of your application in the Network. Note that the ID must contain only lowercase letters, numbers, and dashes (-).
+- **Application name** (optional) - This is the name of your application. 
+- **Description** (optional) – Description of your application. Optional application description; can also be used to save notes about the application.
+
+3. After you fill in the information, click **Create application**. If everything is filled in correctly, you will see the page in Figure 4.
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/image004.png"
+  width="100%"
+  caption="Application Overview"
+/>
+
+### Registering and Configuring the Device In OTAA Mode
+
+#### Registering the Device in OTAA Mode
+
+1. From the Application Overview page, click on **+ Add end device**.
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/image005.png"
+  width="100%"
+  caption="Adding a device in OTAA mode"
+/>
+
+2. Bellow the **Register end device** heading you can find two options for registering a device. Choose **Manually**. For Activation mode choose **Over the air activation (OTAA)** and for the LoRaWAN version choose **MAC V1.0.2** (RAK7201 is LoRaWAN 1.0.2 fully compliant). 
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/image006.png"
+  width="100%"
+  caption="Registering the device in OTAA mode"
+/>
+
+3. To get to the next step of the registration, click **Start**.
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/image007.png"
+  width="100%"
+  caption="Basic settings for OTAA mode"
+/>
+
+4. Fill in the Basic settings for the device:
+
+- **End device ID** - This is the unique identifier for your RAK7201 WisNode Button 4K in your application. You need to enter this manually. Note that the End device ID must contain only lowercase letters, numbers, and dashes (-).
+- **AppEUI** - The AppEUI uniquely identifies the owner of the end device. It is provided by the device manufacturer. To get the AppEUI, connect your device via USB cable to your computer. Open RAK Serial Port Tool, choose the correct COM port and BaudRate and hold Button 1 for 3 seconds to enter the device in Configuration mode. 
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/2.png"
+  width="80%"
+  caption="Configuration mode of RAK7201"
+/>
+
+Then run the following command:
+
+```
+at+get_config=lora:status
+```
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/1.png"
+  width="80%"
+  caption="AppEUI of the device"
+/>
+
+- **DevEUI** - The DevEUI is the unique identifier for this end device. It can be found on a sticker on the back of the device.
+- **End device name** (optional) - A unique, human-readable identifier for your device. You make it up, so be creative. Device IDs cannot be used by multiple devices within the same application.
+- **End device description** (optional) - Optional end device description; can also be used to save notes about the end device.
+
+5. Click **Network layer setting**.
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/image008.png"
+  width="100%"
+  caption="Network layer setting for OTAA mode"
+/>
+
+6. Here you must configure the Network layer settings for the device:
+
+- **Frequency plan -** The frequency plan used by the end device. Note that, for this tutorial, the frequency plan used is Europe 863-870 MHz (SF9 for RX2 – recommended).
+- **Regional Parameters version** - The Regional Parameters specify frequency, dwell time, and other communication settings for different geographical areas. The Regional Parameters version is the version of the LoRa Alliance specification which your device supports. This should be provided by the device manufacturer in a datasheet. For this example, **PHY V1.0.2 REV A** is chosen.
+- **LoRaWAN class capabilities** – Here you can select if your device supports class B, class C, or both. 
+
+7. In **Advanced settings**, you can configure additional settings for your device. 
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/image009.png"
+  width="100%"
+  caption="Advanced network layer settings of the device"
+/>
+
+::: tip 📝 NOTE:
+For this example, these settings will be left as default.
+:::
+
+8. Click **Join settings**.
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/image010.png"
+  width="100%"
+  caption="Join settings for OTAA mode"
+/>
+
+9. Here you must fill in your **Application key** (AppKey) to secure communication between the end device and the application. The AppKey can be generated automatically by clicking the **Generate** button next to the **AppKey** field.
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/image011.png"
+  width="100%"
+  caption="Generate App Key Button"
+/>
+
+10.   In the **Advanced settings**, you can configure more options about your device.
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/image012.png"
+  width="100%"
+  caption="Advanced join settings for OTAA mode"
+/>
+
+::: tip 📝 NOTE:
+For this example, these settings will be left as default.
+:::
+
+11.  Finally, to finish registering your device, click **Add end device**.
+
+#### Configuring the Device in OTAA Mode
+
+1. For configuring the node you will need the following three parameters: **Device EUI, Application EUI**, and **Application Key**. You can see them all in the **Device Overview** page, but since the two EUI's come with the device, you only need the Application Key from there.
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/image013.png"
+  width="100%"
+  caption="OTAA device parameters"
+/>
+
+2. To configure the Button, it must be in **Configuration Mode**. To do that, press **Key 1** for three seconds until all blue LED lights up and you receive confirmation in the RAK Serial Port Tool. Using the RAK Serial Port Tool, set the join mode, device class, and your LoRaWAN region to your correct frequency band, with the following set of AT commands:
+
+- For the join mode (OTAA)
+
+```
+at+set_config=lora:join_mode:0
+```
+
+- For the class (Class A)
+
+```
+at+set_config=lora:class:0
+```
+
+- For the Frequency (Remember to replace the **frequency band** with the one for your LoRaWAN region. Check [here](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html) for your frequency plan.)
+
+```
+at+set_config=lora:region:EU868
+```
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/image014.png"
+  width="80%"
+  caption="Setting up the RAK7201 WisNode Button 4K operation mode"
+/>
+
+::: tip 📝 NOTE:
+The following tutorial is based on using the EU868 frequency band. 
+:::
+
+3. Now that those parameters are set, enter the **App Key**, using the command below. Remember to replace the **"XXXX"** with the corresponding parameter value for your particular case.
+
+```
+at+set_config=lora:app_key:XXXX  
+```
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/image015.png"
+  width="80%"
+  caption="Setting up the RAK7201 WisNode Button 4K OTAA parameters"
+/>
+
+
+4. To connect to the LoRaWAN Network after configuration, the device must be restarted. Run the following command to restart it:
+
+```
+at+set_config=device:restart
+```
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/image016.png"
+  width="80%"
+  caption="Join confirmation"
+/>
+
+
+5. After the successful connection, the data obtained from pressing the buttons will be transmitted to the application server of the gateway.
+   
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/image017.png"
+  width="80%"
+  caption="Transmitted data seen in the RAK Serial Port Tool"
+/>
+
+6. The received data from the WisNode Button 4K can be seen in the **Live data** feed.
+   
+<rk-img
+  src="/assets/images/wisnode/rak7201/ttnv3/image018.png"
+  width="100%"
+  caption="Sending data to The Things Stack from RAK7200 WisNode Track Lite"
+/>
 ## Key Functions
 
 

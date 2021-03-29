@@ -425,7 +425,7 @@ This command is used for obtaining the voltage level status of a pin on a module
 <table>
     <tr>
       <td> pin_num </td>
-      <td> Pin index of the module </td>
+      <td> Pin index of the module <br> (GPIO pins available are Pin 2, Pin 3, Pin 4, Pin 5, Pin 8, Pin 9, Pin 14, Pin 15, Pin 16, Pin 18, Pin 19, Pin 20, Pin 22, Pin 23, and Pin 27) </td>
     </tr>
     <tr>
       <td> status（Return Value） </td>
@@ -434,6 +434,11 @@ This command is used for obtaining the voltage level status of a pin on a module
     </tr>
 </table>
 
+<rk-img
+  src="/assets/images/wisduo/rak811-module/at-command/RAK811 GPIO Pins 02.svg"
+  width="60%"
+  caption="GPIO Pinout for RAK811"
+/>
 
 **Example**:
 
@@ -459,7 +464,7 @@ This command is used for setting the voltage level state (high or low) of a pin 
 <table>
     <tr>
       <td> pin_num </td>
-      <td> Pin index of the module </td>
+       <td> Pin index of the module <br> (GPIO pins available are Pin 2, Pin 3, Pin 4, Pin 5, Pin 8, Pin 9, Pin 14, Pin 15, Pin 16, Pin 18, Pin 19, Pin 20, Pin 22, Pin 23, and Pin 27) <br> <b> Please refer on Figure 1. </b> </td>
     </tr>
     <tr>
       <td> status </td>
@@ -494,7 +499,7 @@ This command is used for obtaining the voltage level of an ADC pin of the module
 <table>
     <tr>
       <td> pin_num </td>
-      <td> ADC pin index of the module. </td>
+      <td> ADC pin index of the module. <br> (ADC pins available are different between the high and low-frequency modules. <br> - For low-frequency modules, the ADC pins are Pin 2, Pin 3, Pin 4, Pin 5, Pin 15, Pin 20, Pin 22, and Pin 23 <br> - For high-frequency modules, the ADC pins are Pin 2, Pin 3, Pin 4, Pin 20, Pin 22, and Pin 23) </td>
     </tr>
     <tr>
       <td> Voltage（Return Value） </td>
@@ -502,6 +507,18 @@ This command is used for obtaining the voltage level of an ADC pin of the module
     </td>
     </tr>
 </table>
+
+<rk-img
+  src="/assets/images/wisduo/rak811-module/at-command/RAK811 LowFreq ADC.svg"
+  width="61%"
+  caption="ADC Pinout on Low-frequency modules for RAK811"
+/>
+
+<rk-img
+  src="/assets/images/wisduo/rak811-module/at-command/RAK811 HighFre ADC.svg"
+  width="39%"
+  caption="ADC Pinout on High-frequency modules for RAK811"
+/>
 
 
 **Example**:
@@ -1887,21 +1904,21 @@ Listed are the summary of the pins of the RAK811 module:
 
 1. **About the SWD Debug Pin**: Pin 10 (SWDIO) and Pin 13 (SWCLK) are used for SWD connection.
 
-2. **About the Power Pin**: The power Pin on the RAK811 module includes VCC/GND, Pin 1, Pin 11, Pin 12, Pin 21, Pin 28, Pin 29, Pin 30, Pin 31, Pin 32, and Pin 34;
+2. **About the Power Pin**: The power pin on the RAK811 module includes VCC/GND, Pin 1, Pin 11, Pin 12, Pin 21, Pin 28, Pin 29, Pin 30, Pin 31, Pin 32, and Pin 34;
 
-3. **About the Reset Pin**: The reset Pin on the RAK811 module is the Pin 24.
+3. **About the Reset Pin**: The reset pin on the RAK811 module is the Pin 24.
 
-4. **About the BOOT Pin**: The BOOT0 Pin on the RAK811 module is Pin 17.
+4. **About the BOOT Pin**: The BOOT0 pin on the RAK811 module is Pin 17.
 
-5. **About the RF Antenna Pin**: The RF antenna Pin on the RAK811 module is the Pin 33.
+5. **About the RF Antenna Pin**: The RF antenna pin on the RAK811 module is the Pin 33.
 
-6. **About the ADC Pin**: The ADC Pins available on the RAK811 are different between the high and low-frequency modules. 
+6. **About the ADC Pin**: The ADC pins available on the RAK811 are different between the high and low-frequency modules. 
 
-- In the low-frequency modules, the ADC Pins are the following: Pin 2, Pin 3, Pin 4, Pin 5, Pin 15, Pin 20, Pin 22, Pin 23. 
+- In the low-frequency modules, the ADC pins are the following: Pin 2, Pin 3, Pin 4, Pin 5, Pin 15, Pin 20, Pin 22, and Pin 23. 
 
-- In the high-frequency modules, the ADC Pins are the following: Pin 2, Pin 3, Pin 4, Pin 20, Pin 22, and Pin 23.
+- In the high-frequency modules, the ADC pins are the following: Pin 2, Pin 3, Pin 4, Pin 20, Pin 22, and Pin 23.
 
-8. **About the GPIO**: The GPIO Pin available on the RAK811 module are the Pin 2, Pin 3, Pin 4, Pin 5, Pin 8, Pin 9, Pin 14, Pin 15, Pin 16, Pin 18, Pin 19, Pin 20, Pin 22, Pin 23, and Pin 27.
+8. **About the GPIO**: The GPIO pins available on the RAK811 module are Pin 2, Pin 3, Pin 4, Pin 5, Pin 8, Pin 9, Pin 14, Pin 15, Pin 16, Pin 18, Pin 19, Pin 20, Pin 22, Pin 23, and Pin 27.
 
 
 :::tip 📝 NOTE:
