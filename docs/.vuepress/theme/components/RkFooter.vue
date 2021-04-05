@@ -48,10 +48,10 @@ export default {
         icon: 'fab fa-facebook-square',
         href: 'https://www.facebook.com/RakwirelessIoT/'
       },
-      // {
-      //   icon: 'fab fa-instagram-square',
-      //   href: 'https://www.instagram.com/rak_wireless/'
-      // },
+      {
+        icon: 'fab fa-instagram-square',
+        href: 'https://www.instagram.com/rak_wireless/'
+      },
       {
         icon: 'fab fa-linkedin',
         href: 'https://www.linkedin.com/company/rak-wireless/'

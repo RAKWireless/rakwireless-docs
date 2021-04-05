@@ -290,7 +290,7 @@ They are stored on the SD card. They are accessible at the Web UI > System > Fil
 </template>
 <template #answer>
 
-Yes. RAKwireless can provide it after singing an NDA to protect our custom-developed software.
+Yes. RAKwireless can provide it after signing an NDA to protect our custom-developed software.
 
 </template>
 </faq>

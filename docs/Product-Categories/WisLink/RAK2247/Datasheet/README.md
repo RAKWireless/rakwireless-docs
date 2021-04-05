@@ -5,8 +5,8 @@ tags:
 prev: ../Quickstart/
 next: false
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247_CE_Certificate.zip]
-  - [FCC, https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247_FCC_Certificate.zip]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247_CE_CERT.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/Shenzhen%20Rakwireless%202AF6B-RAK2247%20FCC%20Grant%20%28C2PC%29.pdf]
   - [IC, https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247_IC_certificate%20.zip]
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247-RCM-Declaration-of-Conformity.pdf]
   - [KCC, https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247_KC_Certificate.zip]

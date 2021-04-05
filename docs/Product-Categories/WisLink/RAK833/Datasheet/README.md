@@ -101,7 +101,7 @@ RAK833 WisLink LPWAN Concentrator includes the SPDT_SEL input for selecting SPI 
 The following table lists the pin numbers of RAK833 WisLink LPWAN Concentrator and its corresponding names and description. Refer to figure below for a pinout diagram.
 
 <rk-img
-  src="/assets/images/wislink-lora/rak833/datasheet/pinout.png"
+  src="/assets/images/wislink-lora/rak833/datasheet/rak833_pinout.svg"
   width="80%"
   caption="RAK833 WisLink LPWAN Concentrator Pinout Diagram"
 />
