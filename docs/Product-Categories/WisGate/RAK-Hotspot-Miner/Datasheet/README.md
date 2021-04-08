@@ -199,7 +199,7 @@ It is highly recommended, to use optimized RSSI calibration values, which is par
 
 ###### Overview
 
-The LoRa Antenna with RP-SMA female connector shown in the figure below:
+The LoRa Antenna with RP-SMA Male connector shown in the figure below:
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot-miner/datasheet/lora-antenna.png"
