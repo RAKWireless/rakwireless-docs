@@ -14,7 +14,7 @@ Thank you for choosing **RAK1904 WisBlock 3-axis Acceleration Sensor** in your a
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
-* [RAK1904 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/RAK1904_VB.step)
+* [RAK1904 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK1904.stp)
 * [24-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 

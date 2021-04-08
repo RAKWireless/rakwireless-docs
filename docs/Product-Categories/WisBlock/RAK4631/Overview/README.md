@@ -16,7 +16,7 @@ Thank you for choosing **RAK4631 WisBlock LPWAN Module** in your awesome IoT Pro
 * [Arduino IDE BSP](/Knowledge-Hub/Learn/Installation-of-Board-Support-Package-in-Arduino-IDE/)
 * [PlatformIO BSP](/Knowledge-Hub/Learn/Board-Support-Package-Installation-in-PlatformIO/)
 * [Bootloader source code and ready to flash file](https://github.com/RAKWireless/WisBlock/tree/master/bootloader)
-* [RAK4631 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/RAK4631_VA.step)
+* [RAK4631 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK4631.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
 
 **Examples:** 
