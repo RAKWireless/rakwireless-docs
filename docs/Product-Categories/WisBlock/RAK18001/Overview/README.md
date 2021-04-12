@@ -22,7 +22,8 @@ Thank you for choosing **RAK18001 WisBlock Buzzer Module** in your awesome IoT P
 
 **Examples**: 
 
-* [Sample Code: Play a melody](https://github.com/RAKWireless/WisBlock/tree/master/examples)
+* [Sample Code: RAK11200 Play a funny song](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/sensors/RAK18001_Buzzer)
+* [Sample Code: RAK4630 Play a funny song](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/sensors/RAK18001_Buzzer)
 
 ## Product Description
 

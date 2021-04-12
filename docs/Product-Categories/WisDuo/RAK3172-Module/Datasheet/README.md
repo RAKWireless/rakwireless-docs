@@ -39,7 +39,7 @@ You can configure the mode and operation of the module using AT commands via a U
 
 ## Specifications
 
-This section covers the hardware and software specifications of RAK3172. Also, it includes the block diagram and the update firmare link of the RAK3172 WisDuo module.
+This section covers the hardware and software specifications of RAK3172. Also, it includes the block diagram and the update firmware link of the RAK3172 WisDuo module.
 
 ### Overview
 
@@ -94,7 +94,7 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
 | 20          | PA9           | I/O      | GPIO only                                                        |
 | 21          | BOOT0         |          | Boot0 mode enable pin - high active                              |
 | 22          | RST           |          | MCU Reset (NRST)                                                 |
-| 23          | GND           |          | GPIO and ADC                                                     |
+| 23          | GND           |          | Ground connections                                               |
 | 24          | VDD           |          | VDD - Voltage Supply                                             |
 | 25          | PA0/ADC4      | I/O      | GPIO and ADC                                                     |
 | 26          | PB2/ADC3      | I/O      | GPIO and ADC                                                     |
@@ -107,7 +107,7 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
 
 #### RF Characteristics
 
-The RAK3172 supports two different frequency variation: RAK3172(L)Low Radio Frequency and RAK3172(H)High Radio Frequency.
+The RAK3172 supports two different frequency variation: RAK3172(L) Low Radio Frequency and RAK3172(H) High Radio Frequency.
 
 ##### Operating Frequencies
 
@@ -134,10 +134,10 @@ The RAK3172 supports two different frequency variation: RAK3172(L)Low Radio Freq
 
 ##### Operating Current
 
-| Feature             | Condition  | Minimum                        | Typical | Maximum | Unit |
-| ------------------- | ---------- | ------------------------------ | ------- | ------- | ---- |
-| Operating Current   | TX Power   | 87 (@&nbsp;20&nbsp;dBm 868Mhz) |         |         | mA   |
-|                     | RX Mode    | 5.22                           |         |         | mA   |
+| Feature           | Condition | Minimum                        | Typical | Maximum | Unit |
+| ----------------- | --------- | ------------------------------ | ------- | ------- | ---- |
+| Operating Current | TX Mode   | 87 (@&nbsp;20&nbsp;dBm 868Mhz) |         |         | mA   |
+|                   | RX Mode   | 5.22                           |         |         | mA   |
 
 ##### Sleep Current
 

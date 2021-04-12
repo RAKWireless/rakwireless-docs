@@ -126,10 +126,6 @@ pip3 install pyocd
 pyocd --version
 ```
 
-```
-pyocd-flashtool --version
-```
-
 <rk-img
   src="/assets/images/accessories/rakdap1-flash-and-debug-tool/5.pyocd-version.png"
   width="75%"

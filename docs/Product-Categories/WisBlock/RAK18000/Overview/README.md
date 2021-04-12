@@ -19,8 +19,9 @@ Thank you for choosing **RAK18000 PDM Stereo Microphone Module** in your awesome
 * [WisBlock IO Tutorial](/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
 
 **Examples**
-* [Sample Code: Stereo PDM Microphone](https://github.com/RAKWireless/WisBlock/tree/master/examples)
 
+* [Sample Code RAK11200: Stereo PDM Microphone](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/IO/RAK18000_Stereo)
+* [Sample Code RAK4630: Stereo PDM Microphone](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/sensors/RAK18000_Stereo)
 
 ## Product Description
 

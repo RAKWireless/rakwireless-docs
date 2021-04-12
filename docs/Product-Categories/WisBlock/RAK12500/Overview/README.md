@@ -21,7 +21,8 @@ Thank you for choosing **RAK12500 WisBlock GNSS Location Module** in your awesom
 
 **Examples**: 
 
-* [Sample Code: GNSS Location](https://github.com/RAKWireless/WisBlock/tree/master/examples)
+* [Sample Code: GNSS Location using I2C](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12500_GPS_ZOE-M8Q/RAK12500_GPS_ZOE-M8Q_IIC)
+* [Sample Code: GNSS Location using UART](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12500_GPS_ZOE-M8Q/RAK12500_GPS_ZOE-M8Q_UART)
 
 ## Product Description
 

@@ -18,12 +18,10 @@ Thank you for choosing **RAK19002 WisBlock Boost Module** in your awesome IoT Pr
 * [24-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 
-
-<!--- I don't know if there is an example
 **Example**
- https://git.rak-internal.net/product-portfolio/wisblock/wisblock-r_d/-/tree/master/WisBlock-Sensor/RAK19002 
-* [RAK19002 example](https://github.com/RAKWireless/WisBlock/)
--->
+
+* [RAK19002 example](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK19002_Boost_TPS61046)
+
 
 ## Product Description
 

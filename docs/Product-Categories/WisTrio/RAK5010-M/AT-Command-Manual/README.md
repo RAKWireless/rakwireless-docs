@@ -21,7 +21,7 @@ The purpose of this section is to demonstrate on how to configure the RAK5010-M 
 | `at+version` | Get the current firmware version number. | 
 | `at+set_config=device:restart` | After set, the device will restart. | 
 | `at+get_config=device:status` | Get all information about the device’s hardware components and their current status. | 
-| `at+set_config=device:sleep:X` | After set, the device will go to sleep or wake up immediately. <br>• 0 - sleep • 1 - wake up | 
+| `at+set_config=device:sleep:X` | After set, the device will go to sleep or wake up immediately. <br>• 1 - sleep • 0 - wake up | 
 | `at+set_config=device:gps:X` |**• X** - 0: close, 1: open, 2: sleep, 3: standby | 
 | `at+set_config=device:cellular:X` | **• X** - 0: close, 1: open | 
 | `at+set_config=cellular:send_interval:X:Y` | Set the interval of sending packet loop. <br>**• X** - 0: off, 1: on. <br>**• Y** - the interval time (ms) This value must be more than 150000 (150s). If the X is set to 1, it means that the device will sleep for Y ms after sending a packet automatically in a loop, until you set X to 0. | 
