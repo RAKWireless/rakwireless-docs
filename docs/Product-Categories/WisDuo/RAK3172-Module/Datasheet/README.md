@@ -1,0 +1,214 @@
+---
+prev: ../AT-Command-Manual/
+tags:
+  - datasheet
+  - wisduo
+---
+
+# RAK3172 WisDuo LPWAN Module Datasheet
+
+
+<!---
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/datasheet/overview/nwgqobrzwanalynildkc.jpg"
+  width="50%"
+  caption="RAK3172 WisDuo LPWAN Module"
+/>
+--->
+
+## Overview
+
+### Description
+
+RAK3172 Low-Power Long Range Transceiver module that is based on STM32WLE5CC chip. It provides an easy to use, small size, low-power solution for long range wireless data applications. This module complies with Class A, B & C of LoRaWAN 1.0.3 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point to Point (P2P) communication mode which helps you in implementing your own customized long-range LoRa network quickly.
+
+You can configure the mode and operation of the module using AT commands via a UART interface. RAK3172 also offers low power features which is very suitable for battery-powered applications.
+
+### Features
+
+- Based on **STM32WLE5CC55**
+- **LoRaWAN 1.0.3** specification compliant
+- **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, RU864, and AS923
+- LoRaWAN Activation by OTAA/ABP
+- LoRa Point to Point (P2P) communication
+- Easy to use AT Command Set via UART interface
+- Long-range - greater than 15&nbsp;km with optimized antenna
+- Ultra-Low Power Consumption of 1.69&nbsp;μA in sleep mode
+- **Supply Voltage**: 2.0&nbsp;V ~ 3.6&nbsp;V
+- **Temperature Range**: -40°&nbsp;C ~ 85°&nbsp;C
+
+## Specifications
+
+This section covers the hardware and software specifications of RAK3172. Also, it includes the block diagram and the update firmare link of the RAK3172 WisDuo module.
+
+### Overview
+
+#### Block Diagram
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/datasheet/interfaces/block-diagram.svg"
+  width="50%"
+  caption="RAK3172 System Block Diagram"
+/>
+
+### Hardware
+
+The hardware specification discusses the interfaces, pinouts and its corresponding functions and diagrams. It also covers the parameters of the both RAK3172 Modules in terms of RF, electrical, mechanical, and operating characteristics. 
+
+#### Interfaces
+
+| Module  | Interfaces               |
+| ------  | ------------------------ |
+| RAK3172 | LPUART1                  |
+
+#### Pin Definition
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/datasheet/pin-definition/rak3172_pin.jpg"
+  width="60%"
+  caption="Board Pinout for RAK3172"
+/>
+
+
+| **Pin No.** | **Name**      | **Type** | **Description**                                                  |
+| ----------- | ------------- | -------- | ---------------------------------------------------------------- |
+| 1           | PA3/UART2_RX  | I        | Reserved - UART2/LPUART1 Interface (AT Commands and FW Update)   |
+| 2           | PA2/UART2_TX  | O        | Reserved - UART2/LPUART1 Interface (AT Commands and FW Update)   |
+| 3           | PA15/ADC5     | I/O      | GPIO and ADC                                                     |
+| 4           | PB6/UART1_TX  | O        | UART1 Interface                                                  |
+| 5           | PB7/UART1_RX  | I        | UART1 Interface                                                  |
+| 6           | PA1           | I/O      | GPIO only                                                        |
+| 7           | PA13/SWDIO    |          | Reserved - SWD debug pin (SWDIO)                                 |
+| 8           | PA14/SWCLK    |          | Reserved - SWD debug pin (SWCLK)                                 |
+| 9           | PA12/I2C_SCL  | I/O      | GPIO and I2C (SCL)                                               |
+| 10          | PA11/I2C_SDA  | I/O      | GPIO and I2C (SDA)                                               |
+| 11          | GND           |          | Ground connections                                               |
+| 12          | RF            |          | RF Port                                                          |      
+| 13          | PA7/SPI1_MOSI | I/O      | GPIO and SPI (MOSI)                                              |
+| 14          | PA6/SPI1_MISO | I/O      | GPIO and SPI (MISO)                                              |
+| 15          | PA5/SPI1_CLK  | I/O      | GPIO and SPI (CLK)                                               |
+| 16          | PA4/SPI_NSS   | I/O      | GPIO and SPI (NSS)                                               |
+| 17          | GND           |          | Ground connections                                               |
+| 18          | GND           |          | Ground connections                                               |
+| 19          | PA8           | I/O      | GPIO only                                                        |
+| 20          | PA9           | I/O      | GPIO only                                                        |
+| 21          | BOOT0         |          | Boot0 mode enable pin - high active                              |
+| 22          | RST           |          | MCU Reset (NRST)                                                 |
+| 23          | GND           |          | GPIO and ADC                                                     |
+| 24          | VDD           |          | VDD - Voltage Supply                                             |
+| 25          | PA0/ADC4      | I/O      | GPIO and ADC                                                     |
+| 26          | PB2/ADC3      | I/O      | GPIO and ADC                                                     |
+| 27          | PB12          | I/O      | GPIO only                                                        |
+| 28          | GND           |          | Ground connections                                               |
+| 29          | PA0           | I/O      | GPIO only                                                        |
+| 30          | PB5           | I/O      | GPIO only                                                        |
+| 31          | PB4/ADC2      | I/O      | GPIO and ADC                                                     |
+| 32          | PB3/ADC1      | I/O      | GPIO and ADC                                                     |
+
+#### RF Characteristics
+
+The RAK3172 supports two different frequency variation: RAK3172(L)Low Radio Frequency and RAK3172(H)High Radio Frequency.
+
+##### Operating Frequencies
+
+| Module     | Region        | Frequency |
+| ---------- | ------------- | --------- |
+| RAK3172(L) | Europe        | EU433     |
+|            | China         | CN470     |
+| RAK3172(H) | Europe        | EU868     |
+|            | North America | US915     |
+|            | Australia     | AU915     |
+|            | Korea         | KR920     |
+|            | Asia          | AS923     |
+|            | India         | IN865     |
+|            | Russia        | RU864     |
+
+#### Electrical Characteristics
+
+##### Operating Voltage
+
+| Feature | Minimum | Typical | Maximum | Unit      |
+| ------- | ------- | ------- | ------- | --------- |
+| VCC     | 2.0     | 3.3     | 3.6     | Volts (V) |
+
+
+##### Operating Current
+
+| Feature             | Condition  | Minimum                        | Typical | Maximum | Unit |
+| ------------------- | ---------- | ------------------------------ | ------- | ------- | ---- |
+| Operating Current   | TX Power   | 87 (@&nbsp;20&nbsp;dBm 868Mhz) |         |         | mA   |
+|                     | RX Mode    | 5.22                           |         |         | mA   |
+
+##### Sleep Current
+
+| Feature                   | Condition  | Minimum (2.1V) | Typical (3.3V) | Maximum | Unit |
+| ------------------------- | ---------- | -------------- | -------------- | ------- | ---- |
+| Current Consumption       | EU868      |                | 1.69           |         | μA   |
+|                           | US915      |                | -              |         | μA   |
+|                           | CN470      |                | 1.69           |         | μA   |
+
+
+#### Mechanical Characteristics
+
+##### Module Dimensions
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/datasheet/board-layout/mechanical_dimension.jpg"
+  width="45%"
+  caption="RAK3172 Physical Dimension"
+/>
+
+##### Layout Recommendation
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/datasheet/board-layout/pad_layout.jpg"
+  width="70%"
+  caption="RAK3172 Layout"
+/>
+
+#### Environmental Characteristics
+
+##### Operating Temperature
+
+| Feature               | Minimum | Typical | Maximum | Unit |
+| --------------------- | ------- | ------- | ------- | ---- |
+| Operating Temperature | -40     | 25      | 85      | °C   |
+
+##### Storage Temperature
+
+| Feature             | Minimum | Typical | Maximum | Unit |
+| ------------------- | ------- | ------- | ------- | ---- |
+| Storage Temperature | -40     |         | 85      | °C   |
+
+##### Recommended Reflow Profile
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/datasheet/reflow-profile/reflow.jpg"
+  width="50%"
+  caption="Reflow Profile for RAK3172"
+/>
+
+Standard conditions for reflow soldering:
+
+- Pre-heating Ramp (A) (Initial temperature: 150&nbsp;℃): **1~2.5&nbsp;℃/sec**
+- Soaking Time (T2) (150~180&nbsp;℃): **60~100&nbsp;sec**
+- Peak Temperature (G): **230~250&nbsp;℃**
+- Reflow Time (T3) (>220&nbsp;℃): **30~60&nbsp;sec**
+- Ramp-up Rate (B): **0~2.5&nbsp;℃/sec**
+- Ramp-down Rate (C): **1~3&nbsp;℃/sec**
+
+### Software
+
+Download the latest firmware of the RAK3172 WisDuo LPWAN Module — both in low and high frequency — provided in the table below.
+
+
+#### Firmware / OS
+
+| Model     | Version     | Source                                                              |
+| --------- | ----------- | ------------------------------------------------------------------- |
+| RAK3172(L) | V3.0.0.1.L | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/) |
+| RAK3172(H) | V3.0.0.1.H | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/) |
+
+<!-- ## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" /> -->

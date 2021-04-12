@@ -44,7 +44,7 @@ export default {
   '/Product-Categories/WisLink/RAK5146/': {
     label: 'RAK5146 WisLink LPWAN Concentrator',
     img: '/assets/images/wislink-lora/rak5146/RAK5146.png',
-    store: 'https://store.rakwireless.com/products/wislink-lpwan-concentrator-rak5146'
+    store: 'https://store.rakwireless.com/products/wislink-lpwan-concentrator-rak5146?utm_source=WisBlockRAK5146&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
   //WisDuino
@@ -206,7 +206,11 @@ export default {
     img: '/assets/images/wisduo/bastwan/overview/BastWAN_Buy.png',
     store: 'https://store.rakwireless.com/products/bastwan-evaluation-board?utm_source=BastWAN&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-
+  '/Product-Categories/WisDuo/RAK3172-Module/': {
+    label: 'RAK3172 WisDuo LPWAN Module',
+    img: '/assets/images/wisduo/rak3172-module/overview/RAK3172_Module_buy.png',
+    store: 'https://store.rakwireless.com/products/wisduo-lpwan-module-rak3172?utm_source=WisBlockRAK3172&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
 
   // Wisgate
   '/Product-Categories/WisGate/RAK7240/': {
@@ -262,17 +266,17 @@ export default {
   '/Product-Categories/WisGate/RAK7268/': {
     label: 'RAK7268 WisGate Edge Lite 2',
     img: '/assets/images/wisgate/rak7268/datasheet/RAK7268.png',
-    store: 'https://store.rakwireless.com/products/wisgate-edge-lite-2-rak7268-rak7268c'
+    store: 'https://store.rakwireless.com/products/wisgate-edge-lite-2-rak7268-rak7268c?utm_source=WisGateRAK7268&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisGate/RAK7271-7371/': {
     label: 'RAK7271/RAK7371 WisGate Developer Base',
     img: '/assets/images/wisgate/rak7271-7371/overview/rak7271-7371.png',
-    store: 'https://store.rakwireless.com/products/wisgate-developer-base'
+    store: 'https://store.rakwireless.com/products/wisgate-developer-base?utm_source=wisgatedeveloperbase&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisGate/RAK7289/': {
     label: 'RAK7289 WisGate Edge Pro',
     img: '/assets/images/wisgate/rak7289/overview/RAK7289.png',
-    store: 'https://store.rakwireless.com/'
+    store: 'https://store.rakwireless.com/products/wisgate-edge-pro-rak7289?utm_source=WisGateRAK7289&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
 
@@ -373,6 +377,54 @@ export default {
     img: '/assets/images/wisblock/rak5811/overview/RAK5811_buy.png',
     store: 'https://store.rakwireless.com/products/rak5811-0-5v-analog-interface?utm_source=RAK5811&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisBlock/RAK18000/': {
+    label: 'RAK18000 PDM Stereo Microphone Module',
+    img: '/assets/images/wisblock/rak18000/overview/RAK18000_buy.png',
+    store: 'https://store.rakwireless.com/products/wisblock-microphone-module-rak18000?utm_source=WisBlockRAK18000&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK15001/': {
+    label: 'RAK15001 WisBlock Flash Module',
+    img: '/assets/images/wisblock/rak15001/overview/RAK15001_buy.png',
+    store: 'https://store.rakwireless.com/products/wisblock-flash-module-rak15001?utm_source=WisBlock15001&utm_medium=Document&utm_campaign=BuyFromStore'
+  },  
+  '/Product-Categories/WisBlock/RAK18001/': {
+    label: 'RAK18001 WisBlock Buzzer Module',
+    img: '/assets/images/wisblock/rak18001/overview/RAK18001_front.png',
+    store: 'https://store.rakwireless.com/products/wisblock-buzzer-module-rak18001?utm_source=WisBlockRAK18001&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK14000/': {
+    label: 'RAK14000 WisBlock E-Ink Display Module',
+    img: '/assets/images/wisblock/rak14000/overview/RAK14000_buy.png',
+    store: 'https://store.rakwireless.com/products/wisblock-epd-module-rak14000?utm_source=WisBlockRAK14000&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK12500/': {
+    label: 'RAK12500 WisBlock GNSS Location Module',
+    img: '/assets/images/wisblock/rak12500/overview/RAK12500_buy.png',
+    store: 'https://store.rakwireless.com/products/wisblock-gnss-location-module-rak12500?utm_source=WisBlockRAK12500&utm_medium=Document&utm_campaign=BuyFromStore'
+  },    
+  '/Product-Categories/WisBlock/RAK19002/': {
+    label: 'RAK19002 WisBlock Boost Module',
+    img: '/assets/images/wisblock/rak19002/overview/RAK19002_buy.png',
+    store: 'https://store.rakwireless.com/products/wisblock-boost-module-rak19002?utm_source=WisBlockRAK19002&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK15000/': {
+    label: 'RAK15000 WisBlock EEPROM Module',
+    img: '/assets/images/wisblock/rak15000/overview/RAK15000_buy.png',
+    store: 'https://store.rakwireless.com/products/wisblock-eeprom-module-rak15000?utm_source=WisBlockRAK15000&utm_medium=Document&utm_campaign=BuyFromStore'
+  }, 
+
+  '/Product-Categories/WisBlock/RAK12003/': {
+    label: 'RAK12003 WisBlock IR Thermometer Module',
+    img: '/assets/images/wisblock/rak12003/overview/RAK12003_buy.png',
+    store: 'https://store.rakwireless.com/products/infrared-temperature-sensor-rak12003?utm_source=WisBlockRAK12003&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+
+  '/Product-Categories/WisBlock/RAK11200/': {
+    label: 'RAK11200 WisCore ESP32 Module',
+    img: '/assets/images/wisblock/rak11200/overview/RAK11200_buy.png',
+    store: 'https://store.rakwireless.com/products/wiscore-esp32-module-rak11200?utm_source=WisBlockRAK11200&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+
 
   // Accessories
   '/Product-Categories/Accessories/RAKARJ14/': {
@@ -474,17 +526,7 @@ export default {
     label: 'GPS SPD',
     img: '/assets/images/accessories/antenna-black/1.png',
     store: 'https://store.rakwireless.com/collections/accessories/products/5-8dbi-fiber-glass-antenna?variant=39264936427718'
-  },
-  '/Product-Categories/Accessories/Antenna-Mounting-Kit/': {
-    label: 'Antenna Mounting Kit',
-    img: '/assets/images/accessories/antenna-mounting-kit/overview.png',
-    store: 'https://store.rakwireless.com/products/antenna-mounting-kit-1'
-  },
-  '/Product-Categories/Accessories/GPS-Antenna/': {
-    label: 'GPS Antenna',
-    img: '/assets/images/accessories/gps-antenna/gps-antenna.png',
-    store: 'https://store.rakwireless.com/products/gps-antenna'
-  },
+  }
 }
 
 
