@@ -9,7 +9,7 @@ tags: RAK811
 
 ## Introduction
 
-The RAK811 module is designed to simplify LoRaWAN and LoRa point to point (P2P) communication. To integrate LoRa technology into your projects, RAK811 implemented easy to use UART communication interface where you can send AT commands. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can even control the available GPIO pins and analog input of RAK811. You can also use any microcontroller with UART interface to control the RAK811 module. 
+The RAK811 module is designed to simplify LoRaWAN and LoRa point-to-point (P2P) communication. To integrate LoRa technology into your projects, RAK811 implemented easy to use UART communication interface where you can send AT commands. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can even control the available GPIO pins and analog input of RAK811. You can also use any microcontroller with UART interface to control the RAK811 module. 
 
 The UART serial communication is exposed on the **UART1 port**, through  **Pin 6 (TX1)** and **Pin 7 (RX1)**. The default parameters of the UART1 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK811 Module Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#rak811-wisduo-lpwan-module-datasheet). You can also see the summary provided in [Appendix IV](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/#appendix-iv-pin-description-of-rak811).
 
@@ -17,7 +17,7 @@ The RAK811 module also exposes another serial port through the **Pin 25 (TX3)** 
 
 In the case that the target application only requires one single UART port, then it is recommended to make use of the UART3 to connect to the MCU and reserve the UART1 for future firmware upgrade.
 
-## Links to Quick Start Guide
+### Links to Quick Start Guide
 
 For AT commands example usage, you can check these sections of quick start guide:
 
@@ -25,7 +25,7 @@ For AT commands example usage, you can check these sections of quick start guide
 - [ChirpStack OTAA/ABP](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#lorawan-join-mode-2)
 - [LoRa P2P](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#lora-p2p-mode)
 
-## Software Tool
+### Software Tool
 
 If you don't have a serial port tool yet, it is recommended to download and install the RAK Serial Port Tool. There are some ready-made AT commands in this tool that will be very useful for you.
 
@@ -67,7 +67,11 @@ at+send=lora:<m>:<n> // Sends data through the LoRa transceiver.
 
 
 
-* **Special Command**: The RAK811 UART port has two operational modes: **Configuration Mode** and **Data Transmission Mode**. When switching from data transmission mode to configuration mode the command to be entered is `+++` and does not contain terminators such as `\ r` and `\ n`.
+* **Special Command**: The RAK811 UART port has two operational modes: **Configuration Mode** (default mode) and **Data Transmission Mode**. Data transmission mode allows you to send ASCII payloads directly to the network server via UART without using any AT Command interface like `at+send=lora:X:YYY`. Data transmission mode is explained further on [Interface Type AT Command](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/#interface-type-at-command) section of this document.
+
+:::tip 📝 NOTE:
+To enable data transmission mode, you need to input `at+set_config=device:uart_mode:<index>:<mode>` command.  To switch back from data transmission mode to configuration mode (AT command default mode), the command to be entered is `+++` and does not contain terminators such as `\r` and `\n`.
+:::
 
 After executing the command, a response is sent back to the external MCU. The usual reply has the following format:
 
@@ -338,12 +342,21 @@ at+set_config=device:uart:1:115200\r\n
 
 2. <b>at+set_config=device:uart_mode:`<index>:<mode>`</b>
 
-This command is used for switching the UART operation between the AT configuration mode and the data transmission mode. 
+This command is used to set the UART operation from AT **configuration mode** to **data transmission mode**.
+
+During **data transmission mode**, all standard AT Commands will not work and the data that you sent to UART will go directly to the network server as ASCII payload with `\r\n`. If you input `AZ`, the network server will receive an uplink hex value of `415A0D0A`. This means **A**=`0x41`, **Z**=`0x5A`, **\r**=`0x0D` and **\n**=`0x0A`.
+
+:::tip 📝 NOTE: 
+
+To switch back from data transmission mode to configuration mode, use `+++` (`+++` without `\ r\ n`).
+
+:::
+
+
 
 | Operation | Command                                         | Response |
 | --------- | ----------------------------------------------- | -------- |
 | Write     | `at+set_config=device:uart_mode:<index>:<mode>` | `OK`     |
-
 
 **Parameter**:
 
@@ -351,24 +364,19 @@ This command is used for switching the UART operation between the AT configurati
     <tr>
       <td> index </td>
       <td> UART Number: 1 or 3. Two UART ports are currently supported starting FW V3.0.0.14.H - UART1 and UART3 </td>
-    </tr>
     <tr>
       <td> mode </td>
-      <td> UART Mode： Only 1 can be selected, which means the UART is set to data transmission mode </td>
+      <td> UART Mode： Only 1 can be selected, which means the UART is set to data transmission mode. </td>
     </tr>
 </table>
 
-:::tip 📝 NOTE: 
 
-To switch from data transmission mode to configuration mode, use `+++` (`+++` without `\ r\ n`).
-
-:::
 
 
 **Example**:
 
 ```
-at+set_config=device:uart_mode:1:1\r\n                         
+at+set_config=device:uart_mode:1:1\r\n
 OK
 
 +++

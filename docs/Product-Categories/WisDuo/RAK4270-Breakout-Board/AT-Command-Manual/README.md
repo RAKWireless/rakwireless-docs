@@ -10,7 +10,7 @@ tags: RAK4270 Breakout Board
 
 ## Introduction
 
-The RAK4270 Breakout Board is designed to simplify LoRaWAN and LoRa point to point (P2P) communication. To integrate LoRa technology to your projects, RAK4270 has easy to use AT commands via UART communication interface. Through these AT commands, you can set the parameters needed for LoRaWAN and LoRa P2P communication.
+The RAK4270 Breakout Board is designed to simplify LoRaWAN and LoRa point-to-point (P2P) communication. To integrate LoRa technology to your projects, RAK4270 has easy to use AT commands via UART communication interface. Through these AT commands, you can set the parameters needed for LoRaWAN and LoRa P2P communication.
 
 In the RAK4270 Breakout Board, the serial communication is exposed on **UART1 port** via **UART1_TX/PA9** and **UART1_RX/PA10**. The default parameters of the UART1 are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. 
 
@@ -47,7 +47,11 @@ at+set_config=<m>:<n>
 at+send=lora:<m>:<n> // Sends data through the LoRa transceiver.
 ```
 
-* **Special Command**: The RAK4270 UART port has two operational modes: **Configuration Mode** and **Data Transmission Mode**. When switching from data transmission mode to configuration mode the command to be entered is `+++` and does not contain terminators such as `\ r` and `\ n`.
+* **Special Command**: The RAK4270 UART port has two operational modes: **Configuration Mode** (default mode) and **Data Transmission Mode**. Data transmission mode allows you to send ASCII payloads directly to the network server via UART without using any AT Command interface like `at+send=lora:X:YYY`. Data transmission mode is explained further on [Interface Type AT Command](/Product-Categories/WisDuo/RAK4270-Breakout-Board/AT-Command-Manual/#interface-type-at-command) section of this document.
+
+:::tip 📝 NOTE:
+To enable data transmission mode, you need to input `at+set_config=device:uart_mode:<index>:<mode>` command.  To switch back from data transmission mode to configuration mode (AT command default mode), the command to be entered is `+++` and does not contain terminators such as `\r` and `\n`.
+:::
 
 After the command is executed by the module, a reply is sent back to the external MCU. In the case the command is successful, the usual reply has the following format:
 
@@ -289,9 +293,20 @@ OK
 
 <br>
 
+
 2. <b>at+set_config=device:uart_mode:`<index>:<mode>`</b>
 
-This command is used to set the UART operation between the AT configuration mode and the data transmission mode.
+This command is used to set the UART operation from AT **configuration mode** to **data transmission mode**.
+
+During **data transmission mode**, all standard AT Commands will not work and the data that you sent to UART will go directly to the network server as ASCII payload with `\r\n`. If you input `AZ`, the network server will receive an uplink hex value of `415A0D0A`. This means **A**=`0x41`, **Z**=`0x5A`, **\r**=`0x0D` and **\n**=`0x0A`.
+
+:::tip 📝 NOTE: 
+
+To switch back from data transmission mode to configuration mode, use `+++` (`+++` without `\ r\ n`).
+
+:::
+
+
 
 | Operation | Command                                         | Response |
 | --------- | ----------------------------------------------- | -------- |
@@ -310,14 +325,7 @@ This command is used to set the UART operation between the AT configuration mode
     </tr>
 </table>
 
-<br>
 
-
-:::tip 📝 NOTE: 
-
-To switch from data transmission mode to configuration mode, use `+++` (`+++` without `\ r\ n`).
-
-:::
 
 
 **Example**:
@@ -331,6 +339,7 @@ OK
 ```
 
 <br>
+
 
 3. <b>at+send=uart:`<index>:<data>`</b>
 
@@ -364,7 +373,7 @@ OK
 
 4. <b>at+get_config=device:gpio:`<pin_num>`</b>
 
-This command is used to obtain the voltage level status of a GPIO pin on a module. The GPIO pin number mapping can be found in the Pin Definition section of the [Datasheet](/Product-Categories/WisDuo/RAK4270-Breakout-Board/Datasheet/#pin-definition).
+This command is used to obtain the voltage level status of a GPIO pin on a module.
 
 | Operation | Command                               | Response      |
 | --------- | ------------------------------------- | ------------- |
@@ -375,7 +384,7 @@ This command is used to obtain the voltage level status of a GPIO pin on a modul
 <table>
     <tr>
       <td> pin_num </td>
-      <td> Pin index of the module </td>
+      <td> Pin index of the module <br> (GPIO pins available on this Breakout board are Pin 3, Pin 6, Pin 9, Pin 10, Pin 16, and Pin 17 of the RAK4270 module) </td>
     </tr>
     <tr>
       <td> status（Return Value） </td>
@@ -384,6 +393,11 @@ This command is used to obtain the voltage level status of a GPIO pin on a modul
     </tr>
 </table>
 
+<rk-img
+  src="/assets/images/wisduo/rak4270-breakout-board/at-command/RAK4270_BB_GPIO_pins.png"
+  width="65%"
+  caption="GPIO Pinout of the RAK4270 Breakout board"
+/>
 
 **Example**:
 
@@ -394,7 +408,7 @@ OK 1
 
 5. <b>at+set_config=device:gpio:`<pin_num>:<status>`</b>
 
-This command is used to set the voltage level state (high or low) of a GPIO pin on a module. For the GPIO pin number mapping, refer to the Pin Definition section of the [Datasheet](/Product-Categories/WisDuo/RAK4270-Breakout-Board/Datasheet/#pin-definition) 
+This command is used to set the voltage level state (high or low) of a GPIO pin on a module.
 
 
 | Operation | Command                                        | Response |
@@ -407,7 +421,7 @@ This command is used to set the voltage level state (high or low) of a GPIO pin 
 <tbody>
     <tr>
       <td> pin_num </td>
-      <td> Pin index of the module </td>
+      <td> Pin index of the module <br> (GPIO pins available on this Breakout board are Pin 3, Pin 6, Pin 9, Pin 10, Pin 16, and Pin 17 of the RAK4270 module) <br> <b> Please refer to Figure 1. </b> </td>
     </tr>
     <tr>
       <td> status </td>
@@ -428,7 +442,7 @@ OK
 
 6. <b> at+get_config=device:adc:`<pin_num>` </b>
 
-This command is used to obtain the voltage level of an ADC pin of the module. The ADC pin number mapping can be found in the Pin Definition section of the [Datasheet](/Product-Categories/WisDuo/RAK4270-Breakout-Board/Datasheet/#pin-definition).
+This command is used to obtain the voltage level of an ADC pin of the module.
 
 | Operation | Command                              | Response       |
 | --------- | ------------------------------------ | -------------- |
@@ -440,7 +454,7 @@ This command is used to obtain the voltage level of an ADC pin of the module. Th
 <table>
     <tr>
       <td> pin_num </td>
-      <td> ADC pin index of the module </td>
+      <td> ADC pin index of the module <br> (ADC pin available on this Breakout board is assigned to Pin 3 of the RAK4270 module) </td>
     </tr>
     <tr>
       <td> Voltage（Return Value） </td>
@@ -448,6 +462,12 @@ This command is used to obtain the voltage level of an ADC pin of the module. Th
     </td>
     </tr>
 </table>
+
+<rk-img
+  src="/assets/images/wisduo/rak4270-breakout-board/at-command/RAK4270_BB_ADC_pins.png"
+  width="65%"
+  caption="ADC Pinout of the RAK4270 Breakout board"
+/>
 
 **Example**:
 
@@ -1724,38 +1744,35 @@ In the following list, M is the length with MAC header and N is the maximum usab
 
 ## Appendix IV: Pin Description of RAK4270 Breakout Board
 
-The pin definition of the RAK4270 Breakout Board can be reviewed in the Pin Definition seciton of the Datasheet:
+The pin definition of the RAK4270 Breakout Board can be reviewed in the [Pin Definition](/Product-Categories/WisDuo/RAK4270-Breakout-Board/Datasheet/#pin-definition) section of the Datasheet.
 
-<rk-img
-  src="/assets/images/wisduo/rak4270-breakout-board/datasheet/2.pin-definition.png"
-  width="40%"
-  caption="RAK4270 Breakout Board Pinout"
-/>
+Listed are the summary of pins of the RAK4270 Breakout Board:
 
-A summary of the pins of the RAK4270 Breakout Board:
+:::tip 📝 NOTE:
+Not all pins of RAK4270 module are exposed on the RAK4270 Breakout board header connectors. Below are the pins available on the RAK4270 Module that are on this Breakout board. For complete RAK4270 module pinouts information, refer to the [datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#pin-definition).
+:::
 
 1. **About the UART pin**:
+    - Pin 5 (RX1) and Pin 4 (TX1) are reserved for UART1.
+    - Pin 1 (RX2) and Pin 2 (TX2) are reserved for UART2. 
+    - During sleep, Pin 5 (RX1) and Pin 1 (RX2) are configured as external interrupt mode, an internal pull-down resistor, and rising edge trigger wake-up, respectively.
   
-  - Pins UART1_TX/PA9 and UART1_RX/PA10 are reserved for UART1.
-  - Pins UART2_TX/PA2 and UART2_RX/PA3 are reserved for UART2. 
-  - During sleep, UART1_RX1/PA10 and UART1_RX1/PA3 are configured as external interrupt mode, internal pull-down resistor, rising edge trigger wake-up.
+2. **About the SWD Debug Pin**: Pin 7 (SWDIO) and Pin 8 (SWCLK) are used for SWD debug port.
+
+3. **About the Power Pin**: The power pins on the RAK4270 module includes VDD on Pin 20 and Ground pins (GND) are on the Pin 11, Pin 13, Pin 14, and Pin 19.
+
+4. **About the Reset Pin**: The reset pin on the RAK4270 module is Pin 18 (MCU_NRST).
+
+5. **About the ADC Pin**: The ADC pin on the RAK4270 module is assigned to Pin 3 (UART2_DE).
+
+6. **About the GPIO Pins**: The GPIO pins available on the RAK4270 module are the following:
   
-2. **About the SWD Debug Pin**: Pins SWDIO/PA13 and SWCLK/PA14 are used for SWD debug port.
-
-3. **About the Reset Pin**: The reset pin on the RAK4270 Breakout Board is MCU_NRST.
-
-
-4. **About the ADC Pin**: The ADC pin on the RAK4270 Breakout Board is assigned to the UART2_DE/PA1. This is called Pin 3 which is based on the RAK4270 pin numbers.
-
-
-5. **About the GPIO Pins**: The pin numbers are based on RAK4270 pin naming. The GPIO pin available on the RAK4270 board are the following:
-  
-  - Pin 3 (UART2_DE/PA1)
-  - Pin 6 (UART1_DE/PA12)
-  - Pin 9 (I2C_SCL/PB6)
-  - Pin 10 (I2C_SDA/PB7)
-  - Pin 16 (PB4)
-  - Pin 17 (PA8)
+    - Pin 3 (UART2_DE/PA1)
+    - Pin 6 (UART1_DE/PA12)
+    - Pin 9 (I2C_SCL/PB6)
+    - Pin 10 (I2C_SDA/PB7)
+    - Pin 16 (PB4)
+    - Pin 17 (PA8)
 
 ::: tip 📝 NOTE
 If you want to use RAK4270 Breakout Board to make a product, you should understand how to upgrade the RAK4270 firmware in future. As mentioned, the firmware of the RAK4270 Breakout Board can be upgraded through the SWD or UART1. Both requires a general-purpose PC.

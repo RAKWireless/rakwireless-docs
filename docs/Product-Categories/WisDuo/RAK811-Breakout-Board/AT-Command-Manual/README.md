@@ -10,7 +10,7 @@ tags:
 
 ## Introduction
 
-The RAK811 Breakout Board is designed to simplify LoRaWAN and LoRa point to point (P2P) communication. To integrate LoRa technology into your projects, RAK811 has easy to use AT commands via UART communication interface. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can even control the available GPIO pins and analog input of RAK811. You can also use any microcontroller with a UART interface to control the RAK811 Breakout Board. 
+The RAK811 Breakout Board is designed to simplify LoRaWAN and LoRa point-to-point (P2P) communication. To integrate LoRa technology into your projects, RAK811 has easy to use AT commands via UART communication interface. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can even control the available GPIO pins and analog input of RAK811. You can also use any microcontroller with a UART interface to control the RAK811 Breakout Board. 
 
 The UART serial communication is exposed on the **UART1 port** through **Pin 6 (TX1)** and **Pin 7 (RX1)**. The default parameters of the UART1 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK811 Breakout Board Datasheet](/Product-Categories/WisDuo/RAK811-Breakout-Board/Datasheet/#rak811-wisduo-lpwan-module-datasheet). You can also see the complete RAK811 Breakout Board pin descriptions in [Appendix IV](/Product-Categories/WisDuo/RAK811-Breakout-Board/AT-Command-Manual/#appendix-iv-pin-description-of-rak811).
 
@@ -51,7 +51,11 @@ at+send=lora:<m>:<n> // Sends data through the LoRa transceiver.
 ```
 
 
-* **Special Command**: The RAK811 UART port has two operational modes: **Configuration Mode** and **Data Transmission Mode**. When switching from data transmission mode to configuration mode, the command to be entered is `+++` and does not contain terminators such as `\ r` and `\ n`.
+* **Special Command**: The RAK811 UART port has two operational modes: **Configuration Mode** (default mode) and **Data Transmission Mode**. Data transmission mode allows you to send ASCII payloads directly to the network server via UART without using any AT Command interface like `at+send=lora:X:YYY`. Data transmission mode is explained further on [Interface Type AT Command](/Product-Categories/WisDuo/RAK811-Breakout-Board/AT-Command-Manual/#interface-type-at-command) section of this document.
+
+:::tip 📝 NOTE:
+To enable data transmission mode, you need to input `at+set_config=device:uart_mode:<index>:<mode>` command.  To switch back from data transmission mode to configuration mode (AT command default mode), the command to be entered is `+++` and does not contain terminators such as `\r` and `\n`.
+:::
 
 After the command is executed by the module, a reply is sent back to the external MCU. If the command is successful, the usual reply has the following format:
 
@@ -316,14 +320,23 @@ at+set_config=device:uart:1:115200\r\n
 ```
 <br>
 
-2. <b>at+set_config=device:uart_mode:`<index>:<mode>` </b>
+2. <b>at+set_config=device:uart_mode:`<index>:<mode>`</b>
 
-This command is used to set the UART operation between the AT configuration mode and the data transmission mode.
+This command is used to set the UART operation from AT **configuration mode** to **data transmission mode**.
+
+During **data transmission mode**, all standard AT Commands will not work and the data that you sent to UART will go directly to the network server as ASCII payload with `\r\n`. If you input `AZ`, the network server will receive an uplink hex value of `415A0D0A`. This means **A**=`0x41`, **Z**=`0x5A`, **\r**=`0x0D` and **\n**=`0x0A`.
+
+:::tip 📝 NOTE: 
+
+To switch back from data transmission mode to configuration mode, use `+++` (`+++` without `\ r\ n`).
+
+:::
+
+
 
 | Operation | Command                                         | Response |
 | --------- | ----------------------------------------------- | -------- |
 | Write     | `at+set_config=device:uart_mode:<index>:<mode>` | `OK`     |
-
 
 **Parameter**:
 
@@ -331,26 +344,19 @@ This command is used to set the UART operation between the AT configuration mode
     <tr>
       <td> index </td>
       <td> UART Number: 1 or 3. Two UART ports are currently supported starting FW V3.0.0.14.H - UART1 and UART3 </td>
-    </tr>
     <tr>
       <td> mode </td>
       <td> UART Mode： Only 1 can be selected, which means the UART is set to data transmission mode. </td>
     </tr>
 </table>
 
-<br>
 
-:::tip 📝 NOTE: 
-
-To switch from data transmission mode to configuration mode, use `+++` (`+++` without `\ r\ n`).
-
-:::
 
 
 **Example**:
 
 ```
-at+set_config=device:uart_mode:1:1\r\n                         
+at+set_config=device:uart_mode:1:1\r\n
 OK
 
 +++
@@ -358,6 +364,7 @@ OK
 ```
 
 <br>
+
 
 3. <b>at+send=uart:`<index>:<data>`</b>
 
@@ -393,8 +400,7 @@ OK
 
 4. <b>at+get_config=device:gpio:`<pin_num>`</b>
 
-This command is used to obtain the voltage level status of a pin on a module. The pin number mapping can be found in the Pin Definition section of the [Datasheet](/Product-Categories/WisDuo/RAK811-Breakout-Board/Datasheet/#pin-definition).
-
+This command is used to obtain the voltage level status of a pin on a module.
 | Operation | Command                               | Response     |
 | --------- | ------------------------------------- | ------------ |
 | Read      | `at+get_config=device:gpio:<pin_num>` | `OK<status>` |
@@ -404,7 +410,7 @@ This command is used to obtain the voltage level status of a pin on a module. Th
 <table>
     <tr>
       <td> pin_num </td>
-      <td> Pin index of the module </td>
+      <td> Pin index of the module <br> (GPIO pins available on this Breakout board are Pin 2, Pin 3, Pin 4, Pin 5, Pin 8, Pin 9, Pin 14, Pin 15, Pin 16, Pin 20, Pin 22, and Pin 23 of the RAK811 module) </td>
     </tr>
     <tr>
       <td> status（Return Value） </td>
@@ -437,7 +443,7 @@ This command is used to set the voltage level state (high or low) of a pin on a 
 <table>
     <tr>
       <td> pin_num </td>
-      <td> Pin index of the module </td>
+      <td> Pin index of the module <br> (GPIO pins available on this Breakout board are Pin 2, Pin 3, Pin 4, Pin 5, Pin 8, Pin 9, Pin 14, Pin 15, Pin 16, Pin 20, Pin 22, and Pin 23 of the RAK811 module) <br> <b> Please refer on Figure 1. </b> </td>
     </tr>
     <tr>
       <td> status </td>
@@ -470,7 +476,7 @@ This command is used to obtain the voltage level of an ADC pin of the board.
 <table>
     <tr>
       <td> pin_num </td>
-      <td> ADC pin index of the module </td>
+      <td> ADC pin index of the module <br> (ADC pins available on this Breakout board are different between high and low-frequency modules. <br> - For low-frequency modules, the ADC pins are Pin 2, Pin 3, Pin 4, Pin 5, Pin 15, Pin 20, Pin 22, and Pin 23 <br> - For high-frequency modules, the ADC pins are in 2, Pin 3, Pin 4, Pin 20, Pin 22, and Pin 23) </td>
     </tr>
     <tr>
       <td> Voltage（Return Value） </td>
@@ -479,6 +485,17 @@ This command is used to obtain the voltage level of an ADC pin of the board.
     </tr>
 </table>
 
+<rk-img
+  src="/assets/images/wisduo/rak811-breakout-board/at-command/RAK811_BBLF_ADC_pins.png"
+  width="65%"
+  caption="ADC Pinout of the RAK811 Breakout board on Low-frequency modules"
+/>
+
+<rk-img
+  src="/assets/images/wisduo/rak811-breakout-board/at-command/RAK811_BBHF_ADC_pins.png"
+  width="65%"
+  caption="ADC Pinout of the RAK811 Breakout board on High-frequency modules"
+/>
 
 **Example**:
 
@@ -1824,29 +1841,59 @@ The pin definition of the RAK811 Breakout Board can be reviewed in the [Pin Defi
 
 Listed are the summary of the pins of the RAK811 Breakout Board:
 
+:::tip 📝 NOTE:
+Not all pins of RAK811 module are exposed on the RAK811 Breakout board header connectors. Below are the pins available on the RAK811 Module that are on this Breakout board. For complete RAK811 module pinouts information, refer to the [datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#pin-definition).
+:::
+
 1. **About the UART Pin**: 
 
-     - Pin 6 (TX1) and Pin 7 (RX1) are reserved for UART1.
-     - Pin 25 (TX3) and Pin 26 (RX3) are reserved for UART3.
+     - Pin 7 (RX1) and Pin 6 (TX1) are reserved for UART1.
+     - Pin 26 (RX3) and Pin 25 (TX3) are reserved for UART3.
      - During sleep, Pin 7 (RX1) and Pin 26 (RX3) are configured as external interrupt mode, internal pull-down resistor, and bilateral edge trigger wake-up.
 
 2. **About the SWD debug Pin**: Pin 10 (SWDIO) and Pin 13 (SWCLK) are used for SWD connection.
 
-3. **About the power Pin**: The power pin on the RAK811 Breakout Board includes VCC/GND, Pin 1, Pin 11, Pin 12, Pin 21, Pin 28, Pin 29, Pin 30, Pin 31, Pin 32, and Pin 34.
+3. **About the power Pin**: The power pin on the RAK811 module includes the VCC pin on Pin 11, and Ground pins (GND) are on the Pin 1, Pin 12, Pin 21, Pin 28, Pin 29, Pin 30, Pin 31, Pin 32, and Pin 34.
 
-4. **About the reset Pin**: The reset pin on the RAK811 Breakout Board is the Pin 24.
+4. **About the reset Pin**: The reset pin on the RAK811 module is the Pin 24 (RST).
 
-5. **About the BOOT Pin**: The BOOT0 Pin on the RAK811 Breakout Board is Pin 17.
+5. **About the BOOT Pin**: The boot Pin on the RAK811 module is Pin 17 (BOOT0).
 
-6. **About the RF antenna Pin**: The RF antenna Pin on the RAK811 Breakout Board is the Pin 33.
+6. **About the RF antenna Pin**: The RF antenna Pin on the RAK811 module is the Pin 33 (RF_OUT).
 
-7. **About the ADC Pin**: The ADC Pins available on the RAK811 are different between the high and low-frequency modules. 
+7. **About the ADC Pin**: The ADC pins available on the RAK811 are different between the high and low-frequency modules. 
 
-- In the low-frequency modules, the ADC Pins are the following: Pin 2, Pin 3, Pin 4, Pin 5, Pin 15, Pin 20, Pin 22, and Pin 23. 
+  - In the low-frequency modules, the ADC Pins are the following:
+    - Pin 2 (PB12)
+    - Pin 3 (PB14)
+    - Pin 4 (PB15)
+    - Pin 5 (PB13)
+    - Pin 15 (PA3)
+    - Pin 20 (PA2)
+    - Pin 22 (PA1)
+    - Pin 23 (PA0)
 
-- In the high-frequency modules, the ADC Pins are the following: Pin 2, Pin 3, Pin 4, Pin 20, Pin 22, and Pin 23.
+  - In the high-frequency modules, the ADC Pins are the following:
+    - Pin 2 (PB12)
+    - Pin 3 (PB14)
+    - Pin 4 (PB15)
+    - Pin 20 (PA2)
+    - Pin 22 (PA1)
+    - Pin 23 (PA0)
 
-8. **About the GPIO**: The GPIO Pin available on the RAK811 Breakout Board are the Pin 2, Pin 3, Pin 4, Pin 5, Pin 8, Pin 9, Pin 14, Pin 15, Pin 16, Pin 18, Pin 19, Pin 20, Pin 22, Pin 23, and Pin 27.
+8. **About the GPIO Pin**: The GPIO pins available on the RAK811 module are the following:
+    - Pin 2
+    - Pin 3
+    - Pin 4
+    - Pin 5
+    - Pin 8
+    - Pin 9
+    - Pin 14
+    - Pin 15
+    - Pin 16
+    - Pin 20
+    - Pin 22
+    - Pin 23
 
 
 :::tip 📝 NOTE:

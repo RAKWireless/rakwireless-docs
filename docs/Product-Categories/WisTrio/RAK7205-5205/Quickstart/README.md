@@ -240,7 +240,7 @@ at+join
 4. After the successful join, the device will automatically send uplinks that contains the sensor readings. This will take a while so you have to wait. If you do not see any transmissions, you can set the [time interval via AT command](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#configuration-of-gps-and-sensor-data). Also, if you are working indoor on your first setup, you will not see the GPS coordinates on the payload. The GPS needs to fix first.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-otaa-mode/v14_otaa_payload.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-otaa-mode/v14_otaa_payload.png"
   width="90%"
   caption="Sending an uplink frame"
 />
@@ -252,7 +252,7 @@ Be sure that the TTN console is open before sending the data through the RAK Ser
 :::
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-otaa-mode/ttn_data.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-otaa-mode/ttn_data.png"
   width="100%"
   caption="Sending Data to TTN from RAK5205"
 />
@@ -325,7 +325,7 @@ at+join
   caption="Join command"
 />
 
-1. After the successful join, the device will automatically send uplinks that contains the sensor readings. This will take a while so you have to wait. If you do not see any transmissions, you can set the [time interval via AT command](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#configuration-of-gps-and-sensor-data). Also, if you are working indoor on your first setup, you will not see the GPS coordinates on the payload. The GPS needs to be fixed first.
+7. After the successful join, the device will automatically send uplinks that contains the sensor readings. This will take a while so you have to wait. If you do not see any transmissions, you can set the [time interval via AT command](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#configuration-of-gps-and-sensor-data). Also, if you are working indoor on your first setup, you will not see the GPS coordinates on the payload. The GPS needs to be fixed first.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/v14_abp_payload.png"
@@ -336,7 +336,7 @@ at+join
 If you get the same response in your TTN live data feed as shown in Figure 23, then you are all set.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/ttn_data.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/ttn_data.png"
   width="100%"
   caption="Sending Data to TTN from RAK5205"
 />
@@ -1083,7 +1083,7 @@ The jumper on the BOOT pin must be placed first before connecting to the USB Cab
 8. Configure the **baud rate** and **parity**.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/uart_settings.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/uart_settings.png"
   width="100%"
   caption="UART Settings in STM32CubeProgrammer"
 />
@@ -1103,7 +1103,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 - You should see a similar log as shown in Figure 73.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/connected.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/connected.png"
   width="100%"
   caption="Successful Connection Log to your Device"
 />
@@ -1111,7 +1111,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 10. Before uploading the firmware, **erase all data** on the RAK5205 WisTrio LPWAN Tracker as shown on Figure 74.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/erasing.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/erasing.png"
   width="100%"
   caption="Erasing the Data in the Chip"
 />
@@ -1119,7 +1119,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 11. Press “**Open file**” and select the latest RAK5205 firmware file in the pop-up window. Be sure to select the .hex file and not the .bin file.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/open_file.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/open_file.png"
   width="100%"
   caption="Opening the Bootloader file"
 />
@@ -1127,13 +1127,13 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 12. Click the “**Download**” button to start the burning process.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/download_button.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/download_button.png"
   width="100%"
   caption="Downloading of Bootloader to the device"
 />
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/download_running.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/download_running.png"
   width="100%"
   caption="Completing the Download of Bootloader into the device"
 />
@@ -1141,7 +1141,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 13. Now, you have successfully burned the firmware into RAK5205 WisTrio LPWAN Tracker.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/download_success.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/download_success.png"
   width="100%"
   caption="Successfully Burned the Bootloader to the device"
 />
@@ -1157,7 +1157,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 15. Connect RAK5205 with your PC’s USB interface again. Open your serial port tool and check your firmware version shown in Figure 80.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/v14_test.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/v14_test.png"
   width="85%"
   caption="Updated Firmware"
 />
@@ -1212,7 +1212,7 @@ The jumper on the BOOT pin must be placed first before connecting to the USB Cab
 8. Configure the **baud rate** and **parity**.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/uart_settings.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/uart_settings.png"
   width="100%"
   caption="UART Settings in STM32CubeProgrammer"
 />
@@ -1232,7 +1232,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 - You should see a similar log as shown in Figure 87.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/connected.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/connected.png"
   width="100%"
   caption="Successful Connection Log to your Device"
 />
@@ -1240,7 +1240,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 10. Before uploading the firmware, **erase all data** on the RAK5205 WisTrio LPWAN Tracker as shown on Figure 88.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/erasing.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/erasing.png"
   width="100%"
   caption="Erasing the Data in the Chip"
 />
@@ -1248,7 +1248,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 11. Press “**Open file**” and select the bootloader file in the pop-up window.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/open_file.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/open_file.png"
   width="100%"
   caption="Opening the Bootloader file"
 />
@@ -1256,13 +1256,13 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 12. Click the “**Download**” button to start the burning process.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/boot_download_button.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/boot_download_button.png"
   width="100%"
   caption="Downloading of Bootloader to the device"
 />
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/boot_download_running.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/boot_download_running.png"
   width="100%"
   caption="Completing the Download of Bootloader into the device"
 />
@@ -1270,7 +1270,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 13. Now, you have successfully burned the firmware into RAK5205 WisTrio LPWAN Tracker.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/boot_download_success.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/boot_download_success.png"
   width="100%"
   caption="Successfully Burned the Bootloader to the device"
 />
@@ -1286,7 +1286,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 15. Connect RAK5205 with your PC’s USB interface again. Open your serial port tool check the version as shown in Figure 94. If it shows the RUI Bootloader Version, the device is now on bootloader mode and ready to get the application firmware.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/boot_mode_at.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/boot_mode_at.png"
   width="85%"
   caption="Successfully Downloading the Bootloader"
 />
@@ -1298,7 +1298,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 17. Download the [**RAK Upgrade Tool V1.0**](https://downloads.rakwireless.com/en/LoRa/RAK612-LoRaButton/Tools/). Then, extract and open the tool.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/lora_button_choose.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/lora_button_choose.png"
   width="75%"
   caption="RAK Upgrade Tool"
 />
@@ -1306,7 +1306,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 3. Get the [RAK5205 V3.0.0.12 Firmware](https://downloads.rakwireless.com/LoRa/WisTrio-LoRa-RAK5205/Firmware/History-Release-Version/) from RAKwireless download site and click “**Choose File**” button to select the firmware file.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/lora_button_file.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/lora_button_file.png"
   width="75%"
   caption="Choosing the Correct Upgrade file"
 />
@@ -1314,13 +1314,13 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 4. Click “**Start**” to upgrade. This may take a minute.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/lora_button_sending.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/lora_button_sending.png"
   width="75%"
   caption="Start Upgrading your Firmware"
 />
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/lora_button_success.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/lora_button_success.png"
   width="75%"
   caption="Successfully Upgraded your Firmware"
 />
@@ -1331,7 +1331,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 - Choose the correct **COM port** and set the baud rate to **115200**. Then open the serial port and check the firmware version.
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/v12_test.PNG"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/v12_test.png"
   width="85%"
   caption="V3.0.0.12 Firmware"
 />

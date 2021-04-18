@@ -9,7 +9,7 @@ tags:
 
 ## Introduction
 
-The RAK4600 Breakout Board is designed to simplify LoRa P2P (peer to peer) and LoRaWAN communication. This board saves you in dealing with complicated SPI protocol with the LoRa transceivers. Instead, a well-known serial communication interface is provided to send commands and request the internal status of the board. This approach allows a straightforward way to integrate LoRa technology into your projects. 
+The RAK4600 Breakout Board is designed to simplify LoRa P2P peer-to-peer and LoRaWAN communication. This board saves you in dealing with complicated SPI protocol with the LoRa transceivers. Instead, a well-known serial communication interface is provided to send commands and request the internal status of the board. This approach allows a straightforward way to integrate LoRa technology into your projects. 
 
 On top of this serial interface, a set of AT commands is defined wherein an external microcontroller will be able to control the RAK4600 Breakout Board as a classic AT modem. Through the AT commands, you can set parameters of the LoRaWAN communication, control the GPIO pins and analog inputs, etc. 
 
@@ -42,7 +42,11 @@ at+set_config=<m>:<n>
 at+send=lora:<m>:<n> // Sends data through the LoRa transceiver.
 ```
 
-* **Special Command**: The RAK4600 UART port has two operational modes: **Configuration Mode** and **Data Transmission Mode**. When switching from data transmission mode to configuration mode, the command to be entered is `+++` and does not contain terminators such as `\ r` and `\ n`.
+* **Special Command**: The RAK4600 UART port has two operational modes: **Configuration Mode** (default mode) and **Data Transmission Mode**. Data transmission mode allows you to send ASCII payloads directly to the network server via UART without using any AT Command interface like `at+send=lora:X:YYY`. Data transmission mode is explained further on [Interface Type AT Command](/Product-Categories/WisDuo/RAK4600-Breakout-Board/AT-Command-Manual/#interface-type-at-command) section of this document.
+
+:::tip 📝 NOTE:
+To enable data transmission mode, you need to input `at+set_config=device:uart_mode:<index>:<mode>` command.  To switch back from data transmission mode to configuration mode (AT command default mode), the command to be entered is `+++` and does not contain terminators such as `\r` and `\n`.
+:::
 
 After the command is executed by the board, a reply is sent back to the external MCU. In the case the command is successful, the usual reply has the following format:
 
@@ -382,41 +386,51 @@ OK
 
 2. <b>at+set_config=device:uart_mode:`<index>:<mode>`</b>
 
-This command is used to set the UART operation between the AT configuration mode and the data transmission mode.
+This command is used to set the UART operation from AT **configuration mode** to **data transmission mode**.
+
+During **data transmission mode**, all standard AT Commands will not work and the data that you sent to UART will go directly to the network server as ASCII payload with `\r\n`. If you input `AZ`, the network server will receive an uplink hex value of `415A0D0A`. This means **A**=`0x41`, **Z**=`0x5A`, **\r**=`0x0D` and **\n**=`0x0A`.
+
+:::tip 📝 NOTE: 
+
+To switch back from data transmission mode to configuration mode, use `+++` (`+++` without `\ r\ n`).
+
+:::
+
+
 
 | Operation | Command                                         | Response |
 | --------- | ----------------------------------------------- | -------- |
 | Write     | `at+set_config=device:uart_mode:<index>:<mode>` | `OK`     |
 
-**Parameter**：
+**Parameter**:
 
-<table style="text-align: left">
-<tbody>
-        <tr>
-            <td>index</td>
-            <td>UART Port Number. Currently, the RAK4600 only supports UART1.</td>
-        </tr>
-        <tr>
-            <td>mode</td>
-            <td>UART Mode： Only ‘1’ can be selected, which means the UART is set to data transmission mode. </td>
-        </tr>
-</tbody>
+<table>
+    <tr>
+      <td> index </td>
+      <td> UART Port Number. Currently, the RAK4600 only supports UART1.  </td>
+    </tr>
+    <tr>
+      <td> mode </td>
+      <td> UART Mode： Only 1 can be selected, which means the UART is set to data transmission mode. </td>
+    </tr>
 </table>
 
-:::tip 📝 NOTE: 
 
-To switch from data transmission mode to configuration mode, use `+++` (`+++` without `\ r\ n`).
 
-:::
 
 **Example**:
+
 ```
-at+set_config=device:uart_mode:1:1\r\n                         
+at+set_config=device:uart_mode:1:1\r\n
 OK
 
 +++
 OK
 ```
+
+<br>
+
+
 ## LoRaWAN Type AT Command
 
 1. <b>at+join</b>
@@ -1702,21 +1716,38 @@ The LoRaWAN stack adds 8 bytes to the user payload. In the following list, M is 
 |    7     |     250     |     242     |
 |  8 ~ 15  | Not Defined | Not Defined |
 
-<!-- Write your comments here 
-## Appendix IV: Pin Description of RAK4600
+## Appendix IV: Pin Description of RAK4600 Breakout Board
 
-The pin definition of the RAK4600 module can be reviewed in the [Pin Definition](/Product-Categories/WisDuo/RAK4600-Module/Datasheet/#pin-definition) section of this documentation.
+The pin definition of the RAK4600 Breakout Board can be reviewed in the [Pin Definition](/Product-Categories/WisDuo/RAK4600-Breakout-Board/Datasheet/#pin-definition) section of the Datasheet.
 
-A summary of the pins of the RAK4600 module:
+Listed are the summary of pins of the RAK4600 Breakout Board:
 
-1. UART pins: Pin 22 (USART1_RX) and pin 23 (USART1_TX). During sleep, pin 22 (USART1_RX) is configured as EXTI, with internal pull-down and rising edge triggering wake-up.
-2. SWD debug pins: Pin 37 (SYS_SWDIO) and pin 38 (SYS_SWDCLK) are used for SWD debug programming.
-3. The power pins on the RAK4600 module includes: VCC pins are pin 40 (3V3_IN) and pin 41 (3V3_IN). And the ground pins (GND) are pin 1, pin 8, pin 12, pin 13, pin 14, pin 16, pin 18, pin 19, pin 20, pin 31, pin 39 and pin 42;
-4.	The reset pin on the RAK4600 module is the pin 36 (MCU_NRST);
-5.	RF antenna pins : The RF antenna pin on the RAK4600 module are the pin15 (RF_BT) BLE antenna and pin 17 (RF_L) LoRa antenna;
-6.	GPIO pins: The pins available for the GPIO on the RAK4600 module are pin 4, pin 5, pin 6, pin 7, pin 9, pin 10, pin 21, and pin 24.
+:::tip 📝 NOTE:
+Not all pins of RAK4600 module are exposed on the RAK4600 Breakout board header connectors. Below are the pins available on the RAK4600 Module that are on this Breakout board. For complete RAK4600 module pinouts information, refer to the [datasheet](/Product-Categories/WisDuo/RAK4600-Module/Datasheet/#pin-definition).
+:::
+
+1. **About the UART Pin**: 
+     - Pin 22 (RX) and Pin 21 (TX) are reserved for UART1.
+     - During sleep, Pin 22 (RX) is configured as external interrupt mode, an internal pull-down resistor, and rising edge trigger wake-up, respectively.
+   
+2. **About the SWD debug Pin**: Pin 37 (SWDIO) and Pin 38 (SWCLK) are used for SWD debug port.
+
+3. **About the Power Pin**: The power pins on the RAK4600 module includes the VCC pins on Pin 40 (3V3_IN) and Pin 41 (3V3_IN), and the Ground pins (GND) are on the Pin 1, Pin 8, Pin 12, Pin 13, Pin 14, Pin 16, Pin 18, Pin 19, Pin 20, Pin 31, Pin 39, and Pin 42.
+
+4.	**About the Reset Pin**: The reset pin on the RAK4600 module is the pin 36 (MCU_NRST).
+
+5.	**About the RF Antenna Pin**: The RF Antenna pins on the RAK4600 module are Pin 15 (RF_BT) BLE antenna and Pin 17 (RF_L) LoRa antenna.
+
+6.	**About the GPIO Pin**: The GPIO pins available on the RAK4600 module are the following:
+     - Pin 4 (I2C1_SDA)
+     - Pin 5 (I2C1_SCL)
+     - Pin 6 (NFC1)
+     - Pin 7 (NFC2)
+     - Pin 9 (P0.18)
+     - Pin 10 (P0.19)
+     - Pin 21 (Reserved / P0.14)
+     - Pin 24 (Reserved / P0.17)
 
 :::tip 📝 NOTE:
 The subsequent firmware upgrade of the product is carried out through the OTA interface.
 :::
--->

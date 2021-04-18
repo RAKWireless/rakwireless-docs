@@ -10,7 +10,7 @@ tags: RAK4270
 
 ## Introduction
 
-The RAK4270 Module is designed to simplify LoRaWAN and LoRa point to point (P2P) communication. To integrate LoRa technology to your projects, RAK4270 has easy to use AT commands via UART communication interface. Through these AT commands, you can set the parameters needed for LoRaWAN and LoRa P2P communication. You can also use any microcontroller with a UART interface to control the RAK4270 module.  
+The RAK4270 Module is designed to simplify LoRaWAN and LoRa point-to-point (P2P) communication. To integrate LoRa technology to your projects, RAK4270 has easy to use AT commands via UART communication interface. Through these AT commands, you can set the parameters needed for LoRaWAN and LoRa P2P communication. You can also use any microcontroller with a UART interface to control the RAK4270 module.  
 
 In the RAK4270, the serial communication is exposed on **UART1 port** via **Pin 4 (TX1)** and **Pin 5 (RX1)**. The default parameters of the UART1 are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and other hardware details, refer to the [RAK4270 Module Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#hardware).
 
@@ -18,7 +18,7 @@ In addition, RAK4270 is exposed to another serial port **UART2**, via **Pin 2 (T
 
 If only one UART is used in your project, it is recommended that you dedicate UART2 for AT commands and UART1 is reserved for firmware upgrade.
 
-## Links to Quick Start Guide
+### Links to Quick Start Guide
 
 For AT commands example usage, you can check these sections of quick start guide:
 
@@ -26,7 +26,7 @@ For AT commands example usage, you can check these sections of quick start guide
 - [ChirpStack OTAA/ABP](/Product-Categories/WisDuo/RAK4270-Module/Quickstart/#connecting-with-chirpstack)
 - [LoRa P2P](/Product-Categories/WisDuo/RAK4270-Module/Quickstart/#lora-p2p-mode)
 
-## Software Tool
+### Software Tool
 
 If you don't have a serial port tool yet, it is recommended to download and install the RAK Serial Port Tool. There are some ready-made AT commands in this tool that will be very useful for you.
 
@@ -61,7 +61,11 @@ at+set_config=<m>:<n>
 at+send=lora:<m>:<n> // Sends data through the LoRa transceiver.
 ```
 
-* **Special Command**: The RAK4270 UART port has two operational modes: **Configuration Mode** and **Data Transmission Mode**. When switching from data transmission mode to configuration mode, the command to be entered is `+++` and does not contain terminators such as `\ r` and `\ n`.
+* **Special Command**: The RAK4270 UART port has two operational modes: **Configuration Mode** (default mode) and **Data Transmission Mode**. Data transmission mode allows you to send ASCII payloads directly to the network server via UART without using any AT Command interface like `at+send=lora:X:YYY`. Data transmission mode is explained further on [Interface Type AT Command](/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/#interface-type-at-command) section of this document.
+
+:::tip 📝 NOTE:
+To enable data transmission mode, you need to input `at+set_config=device:uart_mode:<index>:<mode>` command.  To switch back from data transmission mode to configuration mode (AT command default mode), the command to be entered is `+++` and does not contain terminators such as `\r` and `\n`.
+:::
 
 After the command is executed by the module, a reply is sent back to the external MCU. If the command is successful, the usual reply has the following format:
 
@@ -305,7 +309,17 @@ OK
 
 2. <b>at+set_config=device:uart_mode:`<index>:<mode>`</b>
 
-This command is used to set the UART operation between the AT configuration mode and the data transmission mode.
+This command is used to set the UART operation from AT **configuration mode** to **data transmission mode**.
+
+During **data transmission mode**, all standard AT Commands will not work and the data that you sent to UART will go directly to the network server as ASCII payload with `\r\n`. If you input `AZ`, the network server will receive an uplink hex value of `415A0D0A`. This means **A**=`0x41`, **Z**=`0x5A`, **\r**=`0x0D` and **\n**=`0x0A`.
+
+:::tip 📝 NOTE: 
+
+To switch back from data transmission mode to configuration mode, use `+++` (`+++` without `\ r\ n`).
+
+:::
+
+
 
 | Operation | Command                                         | Response |
 | --------- | ----------------------------------------------- | -------- |
@@ -327,13 +341,6 @@ This command is used to set the UART operation between the AT configuration mode
 
 
 
-:::tip 📝 NOTE: 
-
-To switch from data transmission mode to configuration mode, use `+++` (`+++` without `\ r\ n`).
-
-:::
-
-
 **Example**:
 
 ```
@@ -343,6 +350,7 @@ OK
 +++
 OK
 ```
+
 <br>
 
 3. <b>at+send=uart:`<index>:<data>`</b>

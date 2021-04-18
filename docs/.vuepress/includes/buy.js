@@ -263,6 +263,11 @@ export default {
     img: '/assets/images/wisgate/rak-hotspot-miner/overview/RAK-Hotspot-Miner_buy.png',
     store: 'https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisGate/RAK-Hotspot-Miner-v2/': {
+    label: 'RAK Hotspot Miner v2',
+    img: '/assets/images/wisgate/rak-hotspot-miner-v2/overview/rak_hotspot_miner_v2.png',
+    store: 'https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
   '/Product-Categories/WisGate/RAK7268/': {
     label: 'RAK7268 WisGate Edge Lite 2',
     img: '/assets/images/wisgate/rak7268/datasheet/RAK7268.png',
@@ -526,6 +531,11 @@ export default {
     label: 'GPS SPD',
     img: '/assets/images/accessories/antenna-black/1.png',
     store: 'https://store.rakwireless.com/collections/accessories/products/5-8dbi-fiber-glass-antenna?variant=39264936427718'
+  },
+  '/Product-Categories/Accessories/RAK9720/': {
+    label: 'A - Fix Bracket Kit',
+    img: '/assets/images/accessories/rak9720/datasheet/rak9720.png',
+    store: 'https://store.rakwireless.com/products/a-fix-bracket-kit'
   }
 }
 
