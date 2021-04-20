@@ -34,7 +34,7 @@ tags:
 ## Pictures of the Test Equipment
 
 <rk-img
-  src="/assets/images/wisgate/rak7243/testing-report/1.PNG"
+  src="/assets/images/wisgate/rak7243/testing-report/1.tester.png"
   width="50%"
   caption="Multi-channel temperature tester"
 />
@@ -46,13 +46,13 @@ tags:
 />
 
 <rk-img
-  src="/assets/images/wisgate/rak7243/testing-report/3.PNG"
+  src="/assets/images/wisgate/rak7243/testing-report/3.test_chamber.png"
   width="50%"
   caption="Enviromental test chamber"
 />
 
 <rk-img
-  src="/assets/images/wisgate/rak7243/testing-report/4.PNG"
+  src="/assets/images/wisgate/rak7243/testing-report/4.lora-nodes.png"
   width="50%"
   caption="LoRa nodes"
 />
@@ -113,23 +113,23 @@ c. The LAN port and Wi-Fi work well.
 <rk-img
   src="/assets/images/wisgate/rak7243/testing-report/6.png"
   width="75%"
-  caption="Send and recieve LoRa packets at -40º C"
+  caption="Send and receive LoRa packets at -40º C"
 />
 
 <rk-img
-  src="/assets/images/wisgate/rak7243/testing-report/7.PNG"
+  src="/assets/images/wisgate/rak7243/testing-report/7.lora-packets.png"
   width="75%"
-  caption="Send and recieve packets at 85º C"
+  caption="Send and receive packets at 85º C"
 />
 
 <rk-img
-  src="/assets/images/wisgate/rak7243/testing-report/8.PNG"
+  src="/assets/images/wisgate/rak7243/testing-report/8.wifi.png"
   width="75%"
   caption="Wi-Fi works well at -40º C"
 />
 
 <rk-img
-  src="/assets/images/wisgate/rak7243/testing-report/9.PNG"
+  src="/assets/images/wisgate/rak7243/testing-report/9.wifi.png"
   width="75%"
   caption="Wi-Fi works well at 85º C"
 />

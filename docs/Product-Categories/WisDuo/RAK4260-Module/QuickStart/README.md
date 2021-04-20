@@ -59,7 +59,7 @@ In this document, a RAK4260 module is used as an example. Use a USB to TTL conve
 4. The RAK4260 console output can now be read in the RAK serial port tool as shown in the Figure 2.
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/quickstart/2.serial-capture.PNG"
+  src="/assets/images/wisduo/rak4260-module/quickstart/2.serial.png"
   width="45%"
   caption="RAK Serial Port Tool Connected to RAK4260 Module"
 />  
@@ -85,13 +85,13 @@ The RAK4260 module can be part of this ecosystem, and the objective of this sect
 If you don't have an account yet, head on to the [TTN website](https://www.thethingsnetwork.org/) and create one. Once done, login to your account and go to the Console. 
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/quickstart/4.ttn.PNG"
+  src="/assets/images/wisduo/rak4260-module/quickstart/4.ttn-home.png"
   width="85%"
   caption="The Things Network Home Page"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/quickstart/5.ttn-console.PNG"
+  src="/assets/images/wisduo/rak4260-module/quickstart/5.console.png"
   width="85%"
   caption="TTN Console Page"
 />
@@ -101,7 +101,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
 1. Choose the **APPLICATIONS**.
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/quickstart/6.application-section.PNG"
+  src="/assets/images/wisduo/rak4260-module/quickstart/6.application_section.png"
   width="100%"
   caption="Application Section"
 />
@@ -111,7 +111,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
 
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/quickstart/7.adding-application.PNG"
+  src="/assets/images/wisduo/rak4260-module/quickstart/7.adding_application.png"
   width="100%"
   caption="Adding an Application"
 />
@@ -126,7 +126,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
 3. After you fill in the necessary information, press the "**Add application**" button at the bottom of this page. If you see similar page as shown in Figure 8, then you have successfully registered your application.
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/quickstart/8.application-overview.PNG"
+  src="/assets/images/wisduo/rak4260-module/quickstart/8.application_overview.png"
   width="100%"
   caption="Application Overview"
 />
@@ -144,7 +144,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
 2. Then, register a new device by clicking on the "**register devices**".
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/quickstart/10.adding-device.PNG"
+  src="/assets/images/wisduo/rak4260-module/quickstart/10.adding_device.png"
   width="100%"
   caption="Add your Device"
 />
@@ -160,7 +160,7 @@ The TTN platform can generate these parameters randomly by leaving those fields 
 3. Press the “**Register**” button at the bottom of this page to finish the process. 
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/quickstart/11.device-overview.PNG"
+  src="/assets/images/wisduo/rak4260-module/quickstart/11.device_overview.png"
   width="100%"
   caption="Device Overview"
 />
@@ -251,7 +251,7 @@ Use the serial communication tool to use the guided setup. Based on the firmware
 
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/quickstart/19.Option1-serial.PNG"
+  src="/assets/images/wisduo/rak4260-module/quickstart/19.Option1_serial.png"
   width="40%"
   caption="Demo application response"
 />
@@ -259,13 +259,13 @@ Use the serial communication tool to use the guided setup. Based on the firmware
 2. Make sure to set the proper configuration in-line with the Lora Gateway settings to successfully connect the RAK4260 module to a LoRa network.
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/quickstart/20.join_success.PNG"
+  src="/assets/images/wisduo/rak4260-module/quickstart/20.join-success.png"
   width="40%"
   caption="Join request which shows configured parameters"
 />    
   
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/quickstart/21.application_configuration.PNG"
+  src="/assets/images/wisduo/rak4260-module/quickstart/21.application-configuration.png"
   width="40%"
   caption="Connection successful for OTAA mode"
 />
@@ -273,7 +273,7 @@ Use the serial communication tool to use the guided setup. Based on the firmware
 3. Try to send data after a successful connection to the TTN, by pressing the key "2" for the "Send Data" option.  
   
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/quickstart/22.send_data.PNG"
+  src="/assets/images/wisduo/rak4260-module/quickstart/22.send-data.png"
   width="40%"
   caption="Join request which shows configured parameters"
 />
@@ -288,7 +288,7 @@ Use the serial communication tool to use the guided setup. Based on the firmware
 
 ### Connecting to ChirpStack
 
-This section shows how to connect the RAK4260 LPWAN Module to the ChirpStack platform. As described in the ChripStack website:
+This section shows how to connect the RAK4260 LPWAN Module to the ChirpStack platform. As described in the ChirpStack website:
 
 “ChirpStack provides open-source components for LoRaWAN networks. Together they form a ready-to-use solution including an user-friendly web-interface for device management and APIs for integration. The modular architecture makes it possible to integrate within existing infrastructures. All components are licensed under the MIT license and can be used for commercial purposes.”
 
@@ -331,7 +331,7 @@ The **Application Description** field is just a descriptive text.
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/chirpstack/26.chirpstack-filling-param.png"
   width="100%"
-  caption="Filling the Application Pparameters"
+  caption="Filling the Application Parameters"
 />
 
 #### Registering a New Device

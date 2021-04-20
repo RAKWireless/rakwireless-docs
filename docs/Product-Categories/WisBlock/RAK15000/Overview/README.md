@@ -21,6 +21,8 @@ Thank you for choosing **RAK15000 WisBlock EEPROM Module** in your awesome IoT P
 
 **Example**
 
+For All WisBlock Core:
+
 * [Sample Code: RAK15000 WisBlock EEPROM Module](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK15000_EEPROM_AT24C02)
 
 ## Product Description

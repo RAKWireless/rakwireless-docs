@@ -20,8 +20,9 @@ Thank you for choosing **RAK19002 WisBlock Boost Module** in your awesome IoT Pr
 
 **Example**
 
-* [RAK19002 example](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK19002_Boost_TPS61046)
+For All WisBlock Core:
 
+* [RAK19002 example](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK19002_Boost_TPS61046)
 
 ## Product Description
 

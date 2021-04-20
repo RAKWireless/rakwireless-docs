@@ -76,13 +76,13 @@ The device name used for the setup is "RAK4260" since it is the core of RAK3244 
 If you don't have an account yet, head on to the [TTN website](https://www.thethingsnetwork.org/) and create one. Once done, login to your account and go to the Console. 
 
 <rk-img
-  src="/assets/images/wisduo/bastwan/quickstart/4.ttn.PNG"
+  src="/assets/images/wisduo/bastwan/quickstart/4.ttn-home.png"
   width="100%"
   caption="The Things Network Home Page"
 />
 
 <rk-img
-  src="/assets/images/wisduo/bastwan/quickstart/5.ttn-console.PNG"
+  src="/assets/images/wisduo/bastwan/quickstart/5.ttn_console.png"
   width="100%"
   caption="TTN Console Page"
 />
@@ -92,7 +92,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
 1. Choose **APPLICATIONS**.
 
 <rk-img
-  src="/assets/images/wisduo/bastwan/quickstart/6.application-section.PNG"
+  src="/assets/images/wisduo/bastwan/quickstart/6.application_section.png"
   width="100%"
   caption="Application Section"
 />
@@ -102,7 +102,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
 
 
 <rk-img
-  src="/assets/images/wisduo/bastwan/quickstart/7.adding-application.PNG"
+  src="/assets/images/wisduo/bastwan/quickstart/7.adding_application.png"
   width="100%"
   caption="Adding an Application"
 />
@@ -117,7 +117,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
 3. After you fill in the necessary information, press the "**Add application**" button at the bottom of the page. If you see similar page as shown in Figure 8, then you have successfully registered your application.
 
 <rk-img
-  src="/assets/images/wisduo/bastwan/quickstart/8.application-overview.PNG"
+  src="/assets/images/wisduo/bastwan/quickstart/8.application_overview.png"
   width="100%"
   caption="Application Overview"
 />
@@ -135,7 +135,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
 2. Then, register a new device by clicking on the "**register devices**".
 
 <rk-img
-  src="/assets/images/wisduo/bastwan/quickstart/10.adding-device.PNG"
+  src="/assets/images/wisduo/bastwan/quickstart/10.adding_device.png"
   width="100%"
   caption="Add your Device"
 />
@@ -151,7 +151,7 @@ The TTN platform can generate these parameters randomly by leaving those fields 
 3. Press the “**Register**” button at the bottom of this page to finish the process. 
 
 <rk-img
-  src="/assets/images/wisduo/bastwan/quickstart/11.device-overview.PNG"
+  src="/assets/images/wisduo/bastwan/quickstart/11.device_overview.png"
   width="100%"
   caption="Device Overview"
 />  
