@@ -88,7 +88,7 @@ In this section, the **RAK7431 WisNode Bridge Serial** shall be connected into t
 <rk-img
   src="/assets/images/wisnode/rak7431/quickstart/create-application.png"
   width="100%"
-  caption="Create Application in the Buil-In Network Server"
+  caption="Create Application in the Built-In Network Server"
 />
 
 2. Turn on the **Auto Add LoRa Device** slider. 
@@ -1256,6 +1256,123 @@ Application/1/device/60c5a8fffe75404b/tx
 </table>
 
 
+### Connecting to the Helium Network
+
+Helium has quickly become the most widespread LPWAN communal network with more than 27,000 devices deployed globally. All the RAKwireless node products are compatible with it and the process of adding a device to the network is intuitive and straightforward. This section will focus on giving a brief guide on how to connect the RAK7431 to the network console, assuming that there is a Helium Hotspot within range.
+
+
+Log in or create your account in the [Helium console page](https://www.helium.com/console).
+
+
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/connecting-to-helium-network/1.helium-console.png"
+  width="85%"
+  caption="Helium Console"
+/>
+
+Once registered/logged in, you will end up at the home page where you can see your function tree on the left and your DC balance at the top, as well as several useful links.
+
+
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/connecting-to-helium-network/2.home.png"
+  width="100%"
+  caption="Helium Console Home Screen"
+/>
+
+Go to the **Devices** section in the function tree. If this is your first time doing this, there will be no devices registered. Click the "**+ Add Device**" button to get started.
+
+
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/connecting-to-helium-network/3.device-section.png"
+  width="100%"
+  caption="Devices Section"
+/>
+
+A window will pop up with a set of a field containing the device parameters required for its registration.
+
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/connecting-to-helium-network/4.add-device.png"
+  width="60%"
+  caption="Adding a New Device"
+/>
+
+Fill in a name of your choosing. The Dev EUI, App EUI, and App Key will have random values generated for you by default. Press the eye icon to reveal the values. You can manually replace them with values of your own. For this tutorial, use the default values. Press the "Submit" button and you are done.
+
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/connecting-to-helium-network/5.registered-device.png"
+  width="100%"
+  caption="Helium Devices"
+/>
+
+Now, your RAK7431 is registered and is awaiting activation. For this to happen, you need to import the Dev EUI, App EUI, and App Key in the RAK7431 using the RAK Serial Port Tool.
+
+Open the tool, select the desired port (default baud rate) and open it. Then start importing your settings.
+
+Configure your LoRa band and activation mode. This tutorial will be using the EU868 band and OTAA (the only option available for now with Helium) with device class A (default one, does not need configuring).
+
+- Regional band, device class, and activation mode setting
+
+
+```
+at+joinmode=OTAA
+```
+
+```
+at+region=EU868
+```
+
+
+- Enter the Dev UI
+
+Use the command below by replacing the XXXX with your Device EUI from the Helium console:
+
+
+```
+at+deveui=XXXX
+```
+
+- Enter the App EUI
+
+The same as with the Device EUI, replace the XXXX with your value:
+
+```
+at+appeui=XXXX
+```
+
+- Enter App Key
+
+Finally, fill in the App key with the following command:
+
+
+```
+at+appkey=XXXX
+```
+
+- Join Network
+
+Run the following AT command in order for the node to join the network.
+
+Once the procedure is initiated and successfully complete, you will have a notification in the serial console.
+
+```
+at+restart
+```
+
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/connecting-to-helium-network/6.join.png"
+  width="90%"
+  caption="RAK7431 EUIs and key"
+/>
+
+If you take a look at the Helium console, you will also see the join request packets both in the graph and event log. Your node is now a part of the Helium Network.
+
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/connecting-to-helium-network/7.live-data.png"
+  width="100%"
+  caption="Helium console live device data"
+/>
+
+
 ## Connecting to The Things Network V3 (TTNv3)
 At The Things Conference 2021, it was announced that The Things Network is upgrading to The Things Stack v3.  In this section, it will be shown how to connect RAK7431 WisNode Bridge Serial to The Things Stack.  To login into the TTNv3, head on [here](https://eu1.cloud.thethings.network/console). If you already have a TTN account, you can use your The Things ID credentials to log in.
 
@@ -1296,7 +1413,7 @@ This tutorial is for EU868 Frequency band.
 - **Application name** (optional) - This is the name of your application. 
 - **Description** (optional) – Description of your application. Optional application description; can also be used to save notes about the application.
 
-3. After you fill in the information, click **Create application**. If everything is filled in correctly, you will see the page in Figure 4.
+3. After you fill in the information, click **Create application**. If everything is filled in correctly, you will see the same page, as shown in Figure 53.
 
 <rk-img
   src="/assets/images/wisnode/rak7431/quickstart/ttnv3/image004.png"

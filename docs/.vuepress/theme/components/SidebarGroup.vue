@@ -19,7 +19,7 @@
       :to="item.path"
       @click.native="$emit('toggle')"
     >
-      <span>{{ item.title }}</span>
+      <span class="float-left" style="width:90%">{{ item.title }}</span>
       <span v-if="collapsable" class="arrow" :class="open ? 'down' : 'right'" />
       <div v-if="item.download" class="float-right">
         <q-btn icon="fas fa-download" size="xs" @click="onDownload(item.path)" round flat dense />

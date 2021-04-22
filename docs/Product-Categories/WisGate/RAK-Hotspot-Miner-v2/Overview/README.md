@@ -61,3 +61,4 @@ Range depends on the environment. For rural areas, **up to 10 miles or more**, b
 - Includes Pi ready 'ID EE PROM', GPIO setup, and device tree can be automatically configured
 from vendor information
 - Supports a fully open source LoRaWAN server
+- 2.4 GHz and 5.0 GHz IEEE 802.11b/g/n/ac wireless LAN, Bluetooth 5.0, BLE

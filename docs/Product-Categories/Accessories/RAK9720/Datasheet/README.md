@@ -20,11 +20,10 @@ The new A-fix Bracket Kit from RAKwireless helps you to easily install and optim
 - Easy to install
 
 
-### Specifications 
+## Specifications 
 
-#### Mechanical Characteristics
+### Mechanical Characteristics
 
-##### Dimensions 
 
 <rk-img
   src="/assets/images/accessories/rak9720/datasheet/2.flat-plate.png"
@@ -50,9 +49,9 @@ The new A-fix Bracket Kit from RAKwireless helps you to easily install and optim
   caption="Dimensions of the whole construction"
 />
 
-#### Typical Use
+### Typical Use
 
-##### Wall Mounting
+#### Wall Mounting
 
 <rk-img
   src="/assets/images/accessories/rak9720/datasheet/6.wall-mounting.png"
@@ -60,7 +59,7 @@ The new A-fix Bracket Kit from RAKwireless helps you to easily install and optim
   caption="Wall Mounting"
 />
 
-##### Pole Mounting
+#### Pole Mounting
 
 <rk-img
   src="/assets/images/accessories/rak9720/datasheet/7.pole-mounting.png"

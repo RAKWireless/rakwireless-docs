@@ -4,6 +4,10 @@ next: false
 tags:
   - datasheet
   - wisblock
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/WisBlock/RAK5860/Certification/RAK5860_CE_Cert.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK5860/Certification/Shenzhen%20Rakwireless%202AF6B-RAK5860%20FCC%20Grant.pdf]
+
 ---
 
 # RAK5860 WisBlock NB-IoT Interface Module Datasheet
@@ -290,5 +294,9 @@ The RAK5860 module is designed with an active antenna. The 3V3_S is from WisIO c
   width="50%"
   caption="GNSS Antenna circuit"
 />
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />
 
 

@@ -76,6 +76,12 @@ export default {
           case 'Anatel':
             data.img = '/assets/images/certifications/Anatel.svg'
             break
+          case 'REACH':
+            data.img = '/assets/images/certifications/REACH.jpg'
+            break
+          case 'UKCA':
+            data.img = '/assets/images/certifications/ukca.png'
+            break
           default:
             data.img =
               'https://image.shutterstock.com/image-illustration/white-unknown-document-icon-isolated-600w-1517588975.jpg'

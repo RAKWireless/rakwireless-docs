@@ -536,8 +536,15 @@ export default {
     label: 'A - Fix Bracket Kit',
     img: '/assets/images/accessories/rak9720/datasheet/rak9720.png',
     store: 'https://store.rakwireless.com/products/a-fix-bracket-kit'
+  },
+  '/Product-Categories/Accessories/RAK9733/': {
+    label: 'Pulsar Cable',
+    img: '/assets/images/accessories/rak9733/overview/rak9733.png',
+    store: 'https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733'
+  },
+  '/Product-Categories/Accessories/RAK9731/': {
+    label: 'Pulsar Cable',
+    img: '/assets/images/accessories/rak9731/overview/rak9731.png',
+    store: 'https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733'
   }
 }
-
-
-

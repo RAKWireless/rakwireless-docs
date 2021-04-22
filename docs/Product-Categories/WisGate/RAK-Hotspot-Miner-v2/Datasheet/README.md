@@ -6,7 +6,13 @@ tags:
 next: false
 prev: ../Troubleshooting/
 certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/AT%2050501450%200001_Hotspot%20Miner_CE_cert.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/2AF6B-RAK7248%20JAB_Hotspot%20Miner_FCC_cert.pdf]
+  - [IC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/Hotspot%20Miner_IC_report.pdf]
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RCMA0210312001RCM%20cert-RAK7248%20RCM_Australia.pdf]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/REACH%20REPORT.PDF]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/ROHS%20REACH_Hotspot%20Miner_report.zip]
+  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/AW%2050501452%200001_Hotspot%20Miner_UKCA_cert.pdf]
 ---
 
 # RAK Hotspot Miner v2 Datasheet
@@ -59,6 +65,7 @@ Range depends on the environment. For rural areas, **up to 10 miles or more**, b
 - Includes Pi ready 'ID EE PROM', GPIO setup, and device tree can be automatically configured
 from vendor information
 - Supports a fully open source LoRaWAN server
+- 2.4 GHz and 5.0 GHz IEEE 802.11b/g/n/ac wireless LAN, Bluetooth 5.0, BLE
 
 ## Specifications
 

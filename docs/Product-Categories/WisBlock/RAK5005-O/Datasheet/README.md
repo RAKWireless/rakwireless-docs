@@ -12,16 +12,16 @@ certifications:
 
 ## WisBlock Overview
 
-**WisBlock modules** are part of a series of stackable boards built by RAKWireless for the IoT industry. WisBlock modules support dozens type of CPUs, sensors, and interface circuit boards. This concept allows you to build their own electronic solutions very quickly, using building blocks to materialize their new ideas. Also, through high-speed connectors and easily attachable interconnections, you will be able to composite reliable industrial products.
+**WisBlock modules** are flexible building block design built by RAKWireless for the IoT industry. WisBlock modules support dozens of types of CPUs, sensors, and interface circuit boards. This concept allows you to build their own electronic solutions very quickly, using building blocks to materialize your new ideas. Also, through high-speed connectors and easily attachable interconnections, you will be able to composite reliable industrial products.
 
 WisBlock series modules are divided in the following categories: **Base module**, **Core module**, **Sensor**, and **IO module**.
 
 The **RAK5005-O WisBlock Base** module is a motherboard that allows you to attach a Core, sensors, and IO modules through the standardized expansion connectors. In addition, the WisBlock Base module also comprises the USB ports, indicator LEDs, buttons, and extended IO interfaces.
 
-WisBlock Core module is the core computing and wireless connectivity unit within the WisBlock series. It integrates a MCU, a LoRa, a BLE and other wireless transceiver modules in a single package. The data collected by sensors are processed by the MCU and sent to the cloud through LoRa wireless links. The BLE interface can also be used for short-range communication and indoor positioning function.
+WisBlock Core module is the core computing and wireless connectivity unit within the WisBlock series. It integrates an MCU, a LoRa, a WiFi-BLE, or other wireless transceiver modules in a single package. The data collected by sensors are processed by the MCU and sent to the cloud through LoRa or WiFi wireless links. The BLE interface can also be used for short-range communication and indoor positioning function.
 
-The WisBlock Sensor module integrates **MEMS sensors** of different types, while WisBlock IO comprise digital and analog IO extensions. 
-Each WisBlock Base baseboard can support up to four WisBlock Sensor modules, one WisBlock IO module, and one WisBlock Core module. Sensors on WisBlock Sensor are designed for low power consumption, extending the battery life, different types of sensors  can be combined for specific solutions. To add more flexibility to the solutions, WisBlock IO module can expand various application interfaces, such as industrial sensor interface, display interface, industrial communication protocol, buttons, and LED indicators.
+The WisBlock Sensor module integrates **MEMS sensors** of different types, while WisBlock IO comprises digital and analog IO extensions. 
+Each WisBlock Base baseboard can support up to four WisBlock Sensor modules, one WisBlock IO module, and one WisBlock Core module. Sensors on WisBlock Sensor are designed for low power consumption, extending the battery life, different types of sensors can be combined for specific solutions. To add more flexibility to the solutions, the WisBlock IO module can expand various application interfaces, such as industrial sensor interface, display interface, industrial communication protocol, buttons, and LED indicators.
 
 If the above is not enough to cover all the your IoT requirements, WisBlock supports open-source hardware architecture, therefore, you can also use the standard connectors of WisBlock to develop their own specific function modules and products to meet their specific needs in different industries.
 
@@ -37,7 +37,7 @@ If the above is not enough to cover all the your IoT requirements, WisBlock supp
 
 ### Main Features
 
-*	Stackable building block design, which enables modular function realization and expansion
+*	Flexible building block design, which enables modular function realization and expansion
 *	With high-speed interconnection connectors in the WisBlock Base board to ensure the signal integrity
 *	Supports multiple types of low power MCUs
 *	Supports multiple types of sensors. A single board can support a combination of up to four different types of sensors
@@ -198,11 +198,11 @@ The Micro-B USB connector is compliant with the USB2.0 specification. This USB i
 | 5       | GND             |
 
 
-##### J10, J11, J12 headers
+##### J10, J11, J12 Headers
 
 On the WisBlock, there are three pieces of **2.54&nbsp;mm pitch header** for IO extension. Some data bus and signal from the MCU module are also connected to these headers, such as I2C, UART, ADC, etc.
 
-##### J10 pin definition
+##### J10 Pin Definition
 
 | **Pin** | **Description**                                                                                      |
 | ------- | ---------------------------------------------------------------------------------------------------- |
@@ -212,7 +212,7 @@ On the WisBlock, there are three pieces of **2.54&nbsp;mm pitch header** for IO 
 | 4       | UART1 RX                                                                                             |
 
 
-##### J11 pin definition
+##### J11 Pin Definition
 
 | **Pin** | **Description**                  |
 | ------- | -------------------------------- |
@@ -222,7 +222,7 @@ On the WisBlock, there are three pieces of **2.54&nbsp;mm pitch header** for IO 
 | 4       | VBAT                             |
 
 
-##### J12 pin definition
+##### J12 Pin Definition
 
 | **Pin** | **Description** |
 | ------- | --------------- |
@@ -233,6 +233,14 @@ On the WisBlock, there are three pieces of **2.54&nbsp;mm pitch header** for IO 
 
 
 ##### Battery Connector
+
+The small triangle shows the GND pin.
+
+<rk-img
+  src="/assets/images/wisblock/rak5005-o/datasheet/RAK5005-O-battery.png"
+  width="90%"
+  caption="Battery connector GND pin"
+/>
 
 The pin definition of a Li-ion battery connector is shown in the table below.
 
@@ -247,6 +255,13 @@ The voltage of the battery **must not exceed 4.3V**.
 :::
 
 ##### Solar Panel Connector
+
+The small triangle shows the GND pin.
+<rk-img
+  src="/assets/images/wisblock/rak5005-o/datasheet/RAK5005-O-solar.png"
+  width="90%"
+  caption="Solar Panel connector GND pin"
+/>
 
 The pin definition of the solar panel connector is shown in the table below.
 
@@ -647,7 +662,7 @@ The table below shows the WisBlock Core modules:
 | -------- | -------------------- | ------------ | ------------------------ |
 | RAK4631  | RAK4630              | BLE+LoRa     | Nordic nRF52840 + SX1262 |
 | RAK3401  | RAK3400              | BLE          | Nordic nRF52840          |
-| RAK11200 | --                   | MCU+WiFi+BLE | Espressif ESP32 Wrover   |
+| RAK11200 | --                   | MCU+WiFi+BLE | Espressif ESP32 WROVER   |
 
 <br>
 

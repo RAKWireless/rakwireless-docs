@@ -233,7 +233,6 @@ export default {
       this.isSidebarOpen = false
     })
     
-    this.isMobile();
     // console.log('pages: ', this.$site.pages)
     // console.log('page: ', this.$page)
 
@@ -244,6 +243,7 @@ export default {
     // console.log('sidebaritems: ', this.sidebarItems)
     this.checkRouteName(this.$route.name);
     this.setScript();
+    this.isMobile();
     window.onscroll = this.onPageScroll
     window.onload = () => {
       if (window.location.hash) {

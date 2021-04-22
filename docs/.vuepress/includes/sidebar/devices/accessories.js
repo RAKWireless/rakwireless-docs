@@ -323,6 +323,42 @@ module.exports = {
       download: true,
       sidebarDepth: 4
     }
+  ],
+    '/Product-Categories/Accessories/RAK9733/': [
+      {
+        title: 'Overview',
+        path: '/Product-Categories/Accessories/RAK9733/Overview/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      },
+      {
+        title: 'Datasheet',
+        path: '/Product-Categories/Accessories/RAK9733/Datasheet/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      }
+    ],
+    '/Product-Categories/Accessories/RAK9731/': [
+      {
+        title: 'Overview',
+        path: '/Product-Categories/Accessories/RAK9731/Overview/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      },
+      {
+        title: 'Datasheet',
+        path: '/Product-Categories/Accessories/RAK9731/Datasheet/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      }
 ],
 
 

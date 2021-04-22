@@ -78,6 +78,119 @@ For you to be able to interface with the RAK7201 WisNode Button 4K with your Win
   caption="Checking the firmware version"
 />
 
+### Connecting to Helium  (The People's Network) 
+
+Helium has quickly become the most widespread LPWAN communal network with more than 27,000 devices deployed globally. All our node products are compatible with it and the process of adding a device to the network is intuitive and straightforward. This section will focus on giving a brief guide on how to connect the RAK7201 to the network console, assuming that there is a Helium Hotspot within range.
+
+Log in or create your account [here](https://www.helium.com/console):
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/quickstart/connecting-to-helium/1.png"
+  width="80%"
+  caption="Helium Console"
+/>
+
+Once registered/logged in you will end up at the home page where you can see your function tree on the left and your DC balance at the tops as well as a number of useful links.
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/quickstart/connecting-to-helium/2.png"
+  width="80%"
+  caption="Helium Console home screen"
+/>
+
+
+Go to the "Devices" section in the function tree. If this is your first time doing this there will be no devices registered. Click the "+ Add Device" button to get started
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/quickstart/connecting-to-helium/3.png"
+  width="80%"
+  caption="Helium Console home screen"
+/>
+
+A window will pop up with a set of field containing the device parameters required for its registration (Figure 10):
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/quickstart/connecting-to-helium/4.png"
+  width="80%"
+  caption="Add a New Device"
+/>
+
+Fill a name of your choosing. The Dev EUI, App EUI and App Key (press the eye icon to reveal the values) will have random values generated for you by default. You can manually replace them with values of your own. For the purpose of this tutorial we will stay with the default. Press the "Submit" button and you are done.
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/quickstart/connecting-to-helium/5.png"
+  width="80%"
+  caption="Helium Devices"
+/>
+
+
+Now your RAK7201 is registered and is awaiting activation. For this to happen we need to import the Dev EUI, App EUI and App Key in the RAK7201 using the RAK Serial Port Tool
+
+Open the tool, select the desired port (default baud rate) and open it. Hold Button 1 for 3 seconds to enter configuration mode and start importing your settings.
+
+Configure your LoRa band and activation mode. This tutorial will be using the EU868 band and OTAA (only option available for now with Helium) with device class A (default one, does not need configuring).
+
+- Regional band, device class and activation mode setting
+
+```
+at+set_config=lora:join_mode:0
+```
+
+```
+at+set_config=lora:region:EU868
+```
+
+
+- Enter the Dev UI
+
+Use the command below by replacing the XXXX with your Device EUI from the Helium console:
+
+```
+at+set_config=lora:dev_eui:XXXX
+```
+
+- Enter the App EUI
+
+Same as with the Device EUI, replace the XXXX with your value:
+
+```
+at+set_config=lora:app_eui:XXXX
+```
+
+- Enter App Key
+
+Finally fill in the App key with the command:
+
+```
+at++set_config=lora:app_key:XXXX
+```
+
+- Join Network
+
+Finish executing the join command in order for the node to initiate the join procedure.
+
+Once the procedure is initiated and successfully complete you will have a notification in the serial console
+
+```
+at+join
+```
+
+You output should resemble the one in Figure 12:
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/quickstart/connecting-to-helium/7.png"
+  width="80%"
+  caption="RAK7201 EUIs and key"
+/>
+
+If you take a look at the Helium console you will also see the join request packets both in the graph and event log. Your node is now a part of the Helium Network.
+
+<rk-img
+  src="/assets/images/wisnode/rak7201/quickstart/connecting-to-helium/8.png"
+  width="80%"
+  caption="Helium console live device data"
+/>
+
 ### Connecting to Built-In Server
 
 In this section, we will be connecting the RAK WisNode Button 4K to the Built-In server that is part of all RAK WisGate Series gateways.
@@ -110,7 +223,7 @@ In this section, we will be connecting the RAK WisNode Button 4K to the Built-In
 
 #### Adding the Device to the Application
 
-1. In the created application, click on the **Edit** button as shown in Figure 10.
+1. In the created application, click on the **Edit** button as shown in Figure 17.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/10.png"
@@ -140,7 +253,7 @@ In this section, we will be connecting the RAK WisNode Button 4K to the Built-In
   caption="The device is registered"
 />
 
-### Configuring In OTAA Mode
+#### Configuring In OTAA Mode
 
 
 1. To manage to connect the Button to the Built-In Server in the gateway, a configuration with the correct parameters is needed. Using the AT commands and the RAK Serial Port Tool, the following parameters must be set:
@@ -212,12 +325,12 @@ at+set_config=device:restart
   caption="Received data"
 />
 
-### Configuring in ABP Mode
+#### Configuring in ABP Mode
 
 
 To use the RAK WisNode Button 4K in ABP mode, a change of the activation method is needed. 
 
-1. Go to the Device configuration in the Gateway, as shown in Figure 18 and select the ABP Join mode from the drop-down menu. 
+1. Go to the Device configuration in the Gateway, as shown in Figure 25 and select the ABP Join mode from the drop-down menu. 
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/18.png"
@@ -301,8 +414,7 @@ The received data from the WisNode Button 4K can be seen in the web UI of the ga
   caption="Received data"
 />
 
-## Connecting to The Things Network V3 (TTNv3)
-### Overview
+### Connecting to The Things Network V3 (TTNv3)
 
 At The Things Conference 2021, it was announced that The Things Network is upgrading to The Things Stack v3. In this section, it will be shown how to connect RAK7201 WisNode Button 4K to The Things Stack.  To login into the TTNv3, head on [here](https://eu1.cloud.thethings.network/console). If you already have a TTN account, you can use your The Things ID credentials to log in.
 
@@ -322,7 +434,7 @@ At The Things Conference 2021, it was announced that The Things Network is upgra
 To be able to connect RAK7201 WisNode Button 4K to TTNv3 you should already have connected a gateway in range to TTNv2 or TTNv3, or you have to be sure that you are in the range of a public gateway. 
 :::
 
-### Adding an application
+#### Adding an application
 
 ::: tip 📝 NOTE:
 This tutorial is for EU868 Frequency band.
@@ -343,7 +455,7 @@ This tutorial is for EU868 Frequency band.
 - **Application name** (optional) - This is the name of your application. 
 - **Description** (optional) – Description of your application. Optional application description; can also be used to save notes about the application.
 
-3. After you fill in the information, click **Create application**. If everything is filled in correctly, you will see the page in Figure 4.
+3. After you fill in the information, click **Create application**. If everything is filled in correctly, you will see the page in Figure 34.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/ttnv3/image004.png"
@@ -351,9 +463,9 @@ This tutorial is for EU868 Frequency band.
   caption="Application Overview"
 />
 
-### Registering and Configuring the Device In OTAA Mode
+#### Registering and Configuring the Device In OTAA Mode
 
-#### Registering the Device in OTAA Mode
+##### Registering the Device in OTAA Mode
 
 1. From the Application Overview page, click on **+ Add end device**.
 
@@ -461,7 +573,7 @@ For this example, these settings will be left as default.
 
 11.  Finally, to finish registering your device, click **Add end device**.
 
-#### Configuring the Device in OTAA Mode
+##### Configuring the Device in OTAA Mode
 
 1. For configuring the node you will need the following three parameters: **Device EUI, Application EUI**, and **Application Key**. You can see them all in the **Device Overview** page, but since the two EUI's come with the device, you only need the Application Key from there.
 
@@ -580,7 +692,7 @@ To check the data of the buttons you can execute the command:
 at+get_config=device:status
 ```
 
-The result is shown in Figure 23.
+The result is shown in Figure 51.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/24.png"
