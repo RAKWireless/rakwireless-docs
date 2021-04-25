@@ -1,9 +1,10 @@
 ---
 rak_img: /assets/images/wisblock/rak1910/overview/RAK1910_home.png
-rak_desc: RAK1910 is a WisBlock Sensor which extends the WisBlock system with a U-Blox MAX-7Q GPS module. A ready to use SW library and tutorial makes it easy to build up a GPS based location tracker.
+rak_desc: RAK1910 is a WisBlock Sensor which extends the WisBlock system with a uBlox MAX-7Q GPS module. A ready to use SW library and tutorial makes it easy to build up a GPS based location tracker.
 rak_grp: [wisblock, wissensor]
 prev: 
-next: 
+next: ../Quickstart/
+
 ---
 
 
@@ -11,6 +12,7 @@ next:
 
 Thank you for choosing **RAK1910 WisBlock GNSS Location Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK1910 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
@@ -27,9 +29,15 @@ For All WisBlock Core:
 For WisBlock Core RAK4630:
 * [Sample Code: GPS Tracker](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/GPS_Tracker)
 
+**LoRaWAN GPS Tracker Kits Based on WisBlock RAK1910**
+
+* [LoRaWAN Tracker Kit](https://store.rakwireless.com/collections/kits-bundles/products/wisblock-kit-3-gps-tracker)
+* [LoRaWAN Tracker Kit with Solar Panel](https://store.rakwireless.com/collections/kits-bundles/products/wisblock-kit-2-lora-based-gps-tracker-with-solar-panel)
+
+
 ## Product Description
 
-RAK1910 is a WisBlock Sensor which extends the WisBlock system with a U-Blox MAX-7Q GPS module. A ready to use SW library and tutorial makes it easy to build up a GPS based location tracker.
+RAK1910 is a WisBlock Sensor which extends the WisBlock system with a uBlox MAX-7Q GPS module. A ready to use SW library and tutorial makes it easy to build up a GPS based location tracker.
 
 ## Product Features
 

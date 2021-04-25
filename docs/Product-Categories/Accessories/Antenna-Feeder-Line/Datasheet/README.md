@@ -15,7 +15,6 @@ Antenna Feeder Line cable for **WisGate Edge Prime and Max (RAK7240/7249).**  Th
 - Length variants: 1.5m, 3m, 5m
 - Connector: N-type female to N-type male
 - Frequency Range: 0~3&nbsp;GHz
-- Cable length: 3&nbsp;m and 5&nbsp;m
 - Cable type: LMR195
 - VSWR: ≤ 1.5
 

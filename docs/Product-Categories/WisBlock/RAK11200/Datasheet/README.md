@@ -6,9 +6,10 @@ prev: ../Quickstart/
 next: false
 ---
 
-# RAK11200 WisCore ESP32 Module Datasheet
+# RAK11200 WisBlock WiFi Module Datasheet
 
 ## Overview 
+
 ### Description
 
 **RAK11200** is a **WisBlock Core** module for RAK **WisBlock** based on Espressif ESP32-WROVER. It is a powerful, generic WiFi-BLE MCU module that targets a wide variety of applications. There are two CPU cores that can be individually controlled and the CPU clock frequency is adjustable from 80&nbsp;MHz to 240&nbsp;MHz. The Low Power Deep-Sleep current of ESP32-WROVER is about 10&nbsp;uA. This makes the **RAK11200** an ultra-low power communication solution. **RAK11200** can be comfortably programmed with the Arduino™ IDE or PlatformIO.
@@ -21,7 +22,7 @@ next: false
 * 8&nbsp;MB SPI Pseudo static RAM (PSRAM) 
 * WiFi 802.11 b/g/n (802.11n up to 150&nbsp;Mbps)     
 * Bluetooth v4.2 BR/EDR and BLE specification
-* Rich set of peripherals: RTC, UART, I2C, SPI , SD card interface  
+* Rich set of peripherals: RTC, UART, I2C, SPI, SD card interface  
 * Low power Deep Sleep mode 
 
 
@@ -31,12 +32,12 @@ next: false
 
 #### Board Overview
 
-The RAK11200 WisCore Module back view and front view (top) can be seen in Figure 1.
+The RAK11200 WisBlock WiFi Module back view and front view (top) can be seen in Figure 1.
 
 <rk-img
   src="/assets/images/wisblock/rak11200/datasheet/RAK11200-Back-&-Front.png"
   width="40%"
-  caption="RAK11200 WisCore Module View"
+  caption="RAK11200 WiFi Module Overview"
 />
 
 #### Mounting Sketch
@@ -46,12 +47,12 @@ Figure 2 shows RAK11200 module mounting sketch with the WisBase RAK5005-O board.
 <rk-img
   src="/assets/images/wisblock/rak11200/datasheet/image-20210317120135303.png"
   width="50%"
-  caption="RAK11200 WisCore Mounting Sketch"
+  caption="RAK11200 WiFi Module Mounting Sketch"
 />
 
 ### Hardware
 
-The hardware specification is categorized into four parts. It discuses the interfacing of the module and its corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK11200 WisCore Module.
+The hardware specification is categorized into four parts. It discuses the interfacing of the module and its corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK11200 WisBlock WiFi Module.
 
 :::warning ⚠️ WARNING    
 - Different from other ESP32 boards, the RAK11200 needs to be put _**manually**_ into **download mode**. If you do not force the RAK11200 into **download mode**, you cannot upload your sketch from Arduino IDE (or PlatformIO).

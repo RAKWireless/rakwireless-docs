@@ -1373,7 +1373,7 @@ If you take a look at the Helium console, you will also see the join request pac
 />
 
 
-## Connecting to The Things Network V3 (TTNv3)
+### Connecting to The Things Network V3 (TTNv3)
 At The Things Conference 2021, it was announced that The Things Network is upgrading to The Things Stack v3.  In this section, it will be shown how to connect RAK7431 WisNode Bridge Serial to The Things Stack.  To login into the TTNv3, head on [here](https://eu1.cloud.thethings.network/console). If you already have a TTN account, you can use your The Things ID credentials to log in.
 
 <rk-img
@@ -1392,7 +1392,7 @@ At The Things Conference 2021, it was announced that The Things Network is upgra
 To be able to connect RAK7431 WisNode Bridge Serial to TTNv3 you should already have connected a gateway in range to TTNv2 or TTNv3, or you have to be sure that you are in the range of a public gateway. 
 :::
 
-### Adding an application
+#### Adding an application
 
 ::: tip 📝 NOTE
 This tutorial is for EU868 Frequency band.
@@ -1421,9 +1421,9 @@ This tutorial is for EU868 Frequency band.
   caption="Application Overview"
 />
 
-### Registering and Configuring the Device In OTAA Mode
+#### Registering and Configuring the Device In OTAA Mode
 
-#### Registering the Device in OTAA Mode
+##### Registering the Device in OTAA Mode
 
 1. From the Application Overview page, click on **+ Add end device**.
    
@@ -1484,7 +1484,7 @@ If you are going to register more than one device of this type, you can choose t
 
 6. After filling in the registration information, click **Register end device**.
 
-#### Configuring the Device in OTAA Mode
+##### Configuring the Device in OTAA Mode
 
 1. For configuring the node you will need the following three parameters: **Device EUI, Application EUI**, and **Application Key**. You can see them all in the **Device Overview** page, but since the two EUI's come with the device, you only need the Application Key from there.
 

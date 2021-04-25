@@ -9,7 +9,7 @@ tags:
 
 <rk-img
   src="/assets/images/wisblock/rak11200/quickstart/WisBlock-Assembly.png"
-  width="80%"
+  width="90%"
   caption="WisBlock-Assembly"
 />
 
@@ -201,7 +201,7 @@ Core Debug Level:"No"
 ```
 
 
-2. After uploading successfully, you can see some information, as shown in Figure 11 in the output message area. That means you've uploaded the code into RAK11200 successfully.
+2. After uploading successfully, push the reset button. Then you can see some information, as shown in Figure 11 in the output message area. That means you've uploaded the code into RAK11200 successfully.
 
 <rk-img
   src="/assets/images/wisblock/rak11200/quickstart/ard-install-22.png"
@@ -336,7 +336,7 @@ After installing the Visual Studio Code, you can search for PlatformIO and insta
 
 <rk-img
   src="/assets/images/wisblock/rak11200/quickstart/pio_open_pio_home.png"
-  width="60%"
+  width="90%"
   caption="Visual Studio Code PlatformIO extension"
 />
 
@@ -344,7 +344,7 @@ After installing the Visual Studio Code, you can search for PlatformIO and insta
 
 <rk-img
   src="/assets/images/wisblock/rak11200/quickstart/platformio_espressif.png"
-  width="60%"
+  width="90%"
   caption="Espressif Platform"
 />
 
@@ -352,24 +352,47 @@ After installing the Visual Studio Code, you can search for PlatformIO and insta
 
 <rk-img
   src="/assets/images/wisblock/rak11200/quickstart/platformio_espressif32.png"
-  width="60%"
+  width="90%"
   caption="Espressif Framework"
 />
 
+4. Before running the first RAK11200 project on the PlatformIO, you need to ensure that the framework-arduinoespressif32 is installed. Then import a minimal project named **arduino-blink**. On PIO Home, click on "Project Examples".
+
+<rk-img
+  src="/assets/images/wisblock/rak11200/quickstart/pio-open.png"
+  width="90%"
+  caption="PIO Project Examples"
+/>
+
+5. On "Import Project Example" window type **arduino-blink** and then click on Import button.
+
+<rk-img
+  src="/assets/images/wisblock/rak11200/quickstart/pio-blink.png"
+  width="90%"
+  caption="PIO arduino-blink"
+/>
+
 ### Add WisBlock Core RAK11200 to the Platform
+1. Clone [WisBlock repository](https://github.com/RAKWireless/WisBlock).
+```
+git clone https://github.com/RAKWireless/WisBlock.git
+```
 
-1. Download the file **[wiscore_rak11200.json](https://github.com/RAKWireless/WisBlock/tree/master/PlatformIO/RAK11200/wiscore_rak11200.json)**.     
-
-2. Copy the file **`wiscore_rak11200.json`** to the boards folder of the espressif32 platform folder.
+2. Copy the file **wiscore_rak11200.json** located on folder **<cloned_dir>\WisBlock\PlatformIO\RAK11200** to espressif32 platform folder.
 
 - The platform folder path is similar to the following:
 
-    - Windows: <b>%USER%.platformio\platforms\espressif32\boards</b>
+    - Windows: <b>%userprofile%.platformio\platforms\espressif32\boards</b>
+    - Linux (Ubuntu): <b>$HOME.platformio/platforms/espressif32/boards</b>
 
 ### Add WisBlock Core RAK11200 to the Framework
 
-1. Download the folder **[WisCore_RAK11200_Board](https://github.com/RAKWireless/WisBlock/tree/master/PlatformIO/RAK11200/WisCore_RAK11200_Board).**     
+Copy the folder **WisCore_RAK11200_Board** located on **<cloned_dir>\WisBlock\PlatformIO\RAK11200** to the variants folder inside the espressif32 package folder.
 
-2. Copy the folder **`WisCore_RAK11200_Board`** to the variants folder inside the espressif32 package folder.
+- The espressif32 package folder path is similar to the following:
 
-- Windows: <b>%USER%.platformio\packages\framework-arduinoespressif32</b>
+  - Windows: <b>%userprofile%.platformio\packages\framework-arduinoespressif32\variants</b>
+  - Linux (Ubuntu):  <b>$HOME.platformio/packages/framework-arduinoespressif32/variants</b>
+
+
+

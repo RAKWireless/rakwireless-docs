@@ -6,6 +6,8 @@ prev: ../Low-Level-Development/
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/CE%20Certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/FCC%20Certification.zip]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/REACH%20168304609b%20001-212SVHCs.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RoHS%20168304609a%20001.pdf]
 ---
 
 

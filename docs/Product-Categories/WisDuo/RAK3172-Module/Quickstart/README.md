@@ -388,7 +388,7 @@ With the end-device properly activated, you can now try to send some payload aft
 ```
 AT+SEND=2:12345678
 ```
-Send command format: **`AT+JOIN=<port>:<payload>`**
+Send command format: **`AT+SEND=<port>:<payload>`**
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/OTAA_JOIN.png"
@@ -555,9 +555,9 @@ AT+BAND=4
 
 After configuration of the LoRaWAN parameters, the next step is to setup the device address and sessions keys. You need the use the values from the TTN console. 
 
-- Device address: **260BDE80**
-- Network Session Key: **A585653A949C2B2D44B55E99E94CB533**
-- Application Session Key: **433C7A924F7F6947778FE821525F183A**
+- Device Address: **260BDE80**
+- Application Session Key: **A585653A949C2B2D44B55E99E94CB533**
+- Network Session Key: **433C7A924F7F6947778FE821525F183A**
 
 Set the Device Address.
 
@@ -603,7 +603,7 @@ With the end-device properly activated, you can now try to send some payload aft
 ```
 AT+SEND=3:12341234
 ```
-Send command format: **`AT+JOIN=<port>:<payload>`**
+Send command format: **`AT+SEND=<port>:<payload>`**
 
 :::tip 📝 NOTE:
 
@@ -905,7 +905,7 @@ AT+APPKEY=F921D50CD7D02EE3C5E6142154F274B2
 ```
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/OTAA_EUIS.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/chirp_otaa_eui.png"
   width="65%"
   caption="Configuring LoRa Parameters"
 />
@@ -938,10 +938,10 @@ With the end-device properly activated, you can now try to send some payload aft
 ```
 AT+SEND=2:12345678
 ```
-Send command format: **`AT+JOIN=<port>:<payload>`**
+Send command format: **`AT+SEND=<port>:<payload>`**
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/OTAA_JOIN.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/chirp_otaa_send.png"
   width="70%"
   caption="OTAA Test Sample Data Sent via RAK Serial Port Tool"
 />
@@ -1075,9 +1075,10 @@ AT+BAND=4
 
 After configuration of the LoRaWAN parameters, the next step is to setup the device address and session keys. You need the use the values from the TTN device console. 
 
-- Device address: **26011AF9**
-- Network Session Key: **C280CB8D1DF688BC18601A97025C5488**
+- Device Address: **26011AF9**
 - Application Session Key: **4D42EC5CAF97F03D833CDAf5003F69E1**
+- Network Session Key: **C280CB8D1DF688BC18601A97025C5488**
+
 
 Set the Device Address.
 
@@ -1088,17 +1089,17 @@ AT+DEVADDR=26011AF9
 Set the Application Session Key.
 
 ```
-AT+APPSKEY=C280CB8D1DF688BC18601A97025C5488
+AT+APPSKEY=4D42EC5CAF97F03D833CDAf5003F69E1
 ```
 
 Set the Network Session Key.
 
 ```
-AT+NWKSKEY=4D42EC5CAF97F03D833CDAf5003F69E1
+AT+NWKSKEY=C280CB8D1DF688BC18601A97025C5488
 ```
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABP_EUIS.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/chirp_abp_key.png"
   width="65%"
   caption="Configuring LoRa Parameters"
 />
@@ -1122,12 +1123,12 @@ After 5 or 6 seconds, if the request was successfully received by a LoRa gateway
 You can now try to send some payload after successful join.
 
 ```
-AT+SEND=2:12345678
+AT+SEND=2:12341234
 ```
-Send command format: **`AT+JOIN=<port>:<payload>`**
+Send command format: **`AT+SEND=<port>:<payload>`**
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABP_JOIN.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/chirp_abp_send.png"
   width="70%"
   caption="ABP Test Sample Data Sent via RAK Serial Port Tool"
 />
@@ -1268,7 +1269,7 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
 
 3.	Connect the RAK3172 module with a computer through a USB to TTL. Refer to [Figure 1](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#connect-to-the-rak3172).
 
-4.	Open the Device Firmware Upgrade tool. Select the serial port and baud rate of the module and click the "Select Port" button.
+4.	Open the Device Firmware Upgrade tool. Select the serial port and baud rate (9600) of the module and click the "Select Port" button.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/56.device-firmware.png"

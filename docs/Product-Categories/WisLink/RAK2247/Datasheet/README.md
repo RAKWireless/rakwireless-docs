@@ -8,8 +8,11 @@ certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247_CE_CERT.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/Shenzhen%20Rakwireless%202AF6B-RAK2247%20FCC%20Grant%20%28C2PC%29.pdf]
   - [IC, https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247_IC_certificate%20.zip]
-  - [RCM, https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247-RCM-Declaration-of-Conformity.pdf]
   - [KCC, https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247_KC_Certificate.zip]
+  - [RCM, https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247-RCM-Declaration-of-Conformity.pdf]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247_reach_SZX20-030354-02_EC_21312991_F.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247_rohs_SZX20-030350-01_EC_21312990_F.PDF]
+
 ---
 
 # RAK2247 WisLink LPWAN Concentrator Datasheet

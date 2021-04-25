@@ -104,7 +104,7 @@ Go to the "Devices" section in the function tree. If this is your first time doi
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/connecting-to-helium/3.png"
   width="80%"
-  caption="Helium Console home screen"
+  caption="Helium Devices"
 />
 
 A window will pop up with a set of field containing the device parameters required for its registration (Figure 10):

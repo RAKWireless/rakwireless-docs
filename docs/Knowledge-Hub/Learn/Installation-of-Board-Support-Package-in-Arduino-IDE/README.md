@@ -150,17 +150,27 @@ Once Arduino IDE has been installed successfully, and you've understood the main
   caption="Preferences"
 />
 
-3. Add [**https://downloads.rakwireless.com/Arduino/BSP/package_raknrf_index.json**](https://downloads.rakwireless.com/Arduino/BSP/package_raknrf_index.json) into the **Additional Board Manager URLs**. 
+3. To add the WisBlock Core on your Arduino Boards list, you need to edit the Additional Board Manager URLs. Click the icon as shown in Figure 10.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Installation-of-Board-Support-Package-in-Arduino-IDE/10.adding-rak-package.png"
+  src="/assets/images/knowledge-hub/wisblock/Installation-of-Board-Support-Package-in-Arduino-IDE/add_bsp_icon.png"
   width="75%"
-  caption="Adding RAKwireless nRF Board"
+  caption="Modifying Additional Board Manager URLs"
 />
 
-4. Restart the Arduino IDE.
+1. Copy this URL `https://raw.githubusercontent.com/RAKwireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless_index.json` and paste it on the field as shown in Figure 11. If there are other URLs already there, just add it on the next line. After adding the URL, click OK.
 
-5. Open the Boards Manager from Tools Menu. 
+
+
+<rk-img
+  src="/assets/images/knowledge-hub/wisblock/Installation-of-Board-Support-Package-in-Arduino-IDE/add-bsp-url.png"
+  width="75%"
+  caption="Adding RAKwireless WisBlock Core BSP"
+/>
+ 
+5. Restart the Arduino IDE.
+
+6. Open the Boards Manager from Tools Menu. 
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Installation-of-Board-Support-Package-in-Arduino-IDE/11.boards-manager.png"
@@ -168,16 +178,16 @@ Once Arduino IDE has been installed successfully, and you've understood the main
   caption="Opening Boards Manager"
 />
 
-6. Search and install "**RAKwireless nRF Boards**".
+7. Write **RAK** in the search bar as shown in Figure 13. This will show the available RAKwireless WisBlock Core boards that you can add in your Arduino Board list. Select the WisBlock Core that you have and click **Install**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Installation-of-Board-Support-Package-in-Arduino-IDE/12.installing-rak-nrf.png"
+  src="/assets/images/knowledge-hub/wisblock/Installation-of-Board-Support-Package-in-Arduino-IDE/wisblock_core.png"
   width="75%"
-  caption="Installing RAKwireless nRF Boards"
+  caption="Installing WisBlock Core Boards"
 />
 
 
-7. Once the BSP is installed, select any RAK WisBlock modules which will update your system configuration to use the right compiler and settings for the module.
+8. Once the BSP is installed, select any RAK WisBlock modules which will update your system configuration to use the right compiler and settings for the module.
 
 
 <rk-img
@@ -189,7 +199,7 @@ Once Arduino IDE has been installed successfully, and you've understood the main
 
 ### Examples and Tutorials 
 
-After you selected a RAK board, you can see the examples for all WisBlock modules.
+After selecting a RAK board, you can see the examples for all WisBlock modules.
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Installation-of-Board-Support-Package-in-Arduino-IDE/14.wisblock-modules.png"
@@ -237,9 +247,7 @@ Click on the **Verify/Compile** icon in the menu.
   caption="Compile example"
 />
 
-Congratulations you have successfully installed the LPWAN library and compiled your first WisBlock solution.  
-However, to be able to connect to the LPWAN gateway and the LPWAN server a few more steps are required.  
-Please head over to the full tutorial in our RAK [Github WisBlock repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/communications/LoRa/LoRaWAN) to see how to setup the node's EUI's and keys and how to register the node on the gateway and in the LPWAN server.
+Now, you have successfully installed the LPWAN library and compiled your first WisBlock solution. However, to be able to connect to the LPWAN gateway and the LPWAN server, a few more steps are required. Head on to the full tutorial in the RAK [Github WisBlock repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/communications/LoRa/LoRaWAN) to see how to setup the node's EUI's and keys and how to register the node on the gateway and in the LPWAN server.
 
 ---- 
 For more information about the examples and tutorials, visit RAK [Github WisBlock repository](https://github.com/RAKWireless/WisBlock).

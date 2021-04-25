@@ -121,7 +121,7 @@ Go to the "Devices" section in the function tree. If this is your first time doi
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/connecting-to-helium/no_dev.png"
   width="80%"
-  caption="Helium Console home screen"
+  caption="Helium Devices"
 />
 
 A window will pop up with a set of field containing the device parameters required for its registration (Figure 9):
@@ -147,7 +147,7 @@ Open the tool, select the desired port (default baud rate) and open it. Then sta
 
 Configure your LoRa band and activation mode. This tutorial will be using the EU868 band and OTAA (only option available for now with Helium) with device class A (default one, does not need configuring).
 
-- Regional band, device class and activation mode setting
+- Regional band and activation mode setting
 
 ```
 at+set_config=lora:join_mode:0

@@ -180,7 +180,7 @@ Open the tool, select the desired port (default baud rate) and open it. Then sta
 
 Configure your LoRa band and activation mode. This tutorial will be using the EU868 band and OTAA (the only option available for now with Helium) with device class A (default one, does not need configuring).
 
-- Regional band, device class, and activation mode setting
+- Regional band and activation mode setting
 
 
 ```

@@ -6,9 +6,9 @@ prev: ../../
 next: ../Quickstart/
 ---
 
-# RAK11200 WisCore ESP32 Module
+# RAK11200 WisBlock WiFi Module
 
-Thank you for choosing **RAK11200 WisCore ESP32 Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK11200 WisBlock WiFi Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
 * [Datasheet](../Datasheet/)
 * [RAK11200 Quick Start Guide](../Quickstart/)

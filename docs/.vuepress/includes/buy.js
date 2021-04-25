@@ -425,7 +425,7 @@ export default {
   },
 
   '/Product-Categories/WisBlock/RAK11200/': {
-    label: 'RAK11200 WisCore ESP32 Module',
+    label: 'RAK11200 WisBlock WiFi Module',
     img: '/assets/images/wisblock/rak11200/overview/RAK11200_buy.png',
     store: 'https://store.rakwireless.com/products/wiscore-esp32-module-rak11200?utm_source=WisBlockRAK11200&utm_medium=Document&utm_campaign=BuyFromStore'
   },
