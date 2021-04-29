@@ -209,6 +209,9 @@ Core Debug Level:"No"
   caption="Arduino Done uploading"
 />
 
+:::tip 📝 NOTE
+In case of upload error, the **Upload Speed** must be reduced.
+:::
 
 
 ### Reserved GPIO Pins
@@ -382,8 +385,9 @@ git clone https://github.com/RAKWireless/WisBlock.git
 
 - The platform folder path is similar to the following:
 
-    - Windows: <b>%userprofile%.platformio\platforms\espressif32\boards</b>
-    - Linux (Ubuntu): <b>$HOME.platformio/platforms/espressif32/boards</b>
+  - Windows: <b>%userprofile%\.platformio\platforms\espressif32\boards</b>
+  - Linux (Ubuntu): <b>$HOME/.platformio/platforms/espressif32/boards</b>
+  - Mac OS: <b>/Users/{Your_User_id}/.platformio/platforms/espressif32/boards</b>
 
 ### Add WisBlock Core RAK11200 to the Framework
 
@@ -391,8 +395,9 @@ Copy the folder **WisCore_RAK11200_Board** located on **<cloned_dir>\WisBlock\Pl
 
 - The espressif32 package folder path is similar to the following:
 
-  - Windows: <b>%userprofile%.platformio\packages\framework-arduinoespressif32\variants</b>
-  - Linux (Ubuntu):  <b>$HOME.platformio/packages/framework-arduinoespressif32/variants</b>
+  - Windows: <b>%userprofile%\.platformio\packages\framework-arduinoespressif32\variants</b>
+  - Linux (Ubuntu):  <b>$HOME/.platformio/packages/framework-arduinoespressif32/variants</b>
+  - Mac OS: <b>/Users/{Your_User_id}/.platformio/packages/framework-arduinoespressif32</b>
 
 
 

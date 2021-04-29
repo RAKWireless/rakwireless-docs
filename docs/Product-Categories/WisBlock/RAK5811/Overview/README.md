@@ -1,9 +1,9 @@
 ---
 rak_img: /assets/images/wisblock/rak5811/overview/RAK5811_home.png
-rak_desc: RAK5811 is a WisBlock IO module which extends the WisBlock system with 2 analog input ports. The analog ports have a 0-5V input range and are connected to the WisBlock Core MCU’s analog inputs.
-rak_grp: [wisblock, wisio]
-prev: 
-next: 
+rak_desc: RAK5811 is a WisBlock Interface module which extends the WisBlock system with 2 analog input ports. The analog ports have a 0-5V input range and are connected to the WisBlock Core MCU’s analog inputs.
+rak_grp: [wisblock, wisinterface]
+prev: ../../
+next: ../Datasheet/
 ---
 
 
@@ -17,7 +17,7 @@ Thank you for choosing **RAK5811 WisBlock 0-5V Interface Module** in your awesom
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK5811 3D Model](https://downloads.rakwireless.com/LoRa/WisBlock/WisBlock-3D/pwb-rak5811.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
-* [WisBlock IO Tutorial](/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
+* [WisBlock Interface Tutorial](/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
 
 **Examples**:
 
@@ -32,7 +32,7 @@ For WisBlock Core RAK11200:
 
 ## Product Description
 
-**RAK5811** is a **WisBlock IO** module which extends the **WisBlock** system with 2 analog input ports. The analog ports have a 0-5&nbsp;V input range and are connected to the **WisBlock Core** MCU’s analog inputs.
+**RAK5811** is a **WisBlock Interface** module which extends the **WisBlock** system with 2 analog input ports. The analog ports have a 0-5&nbsp;V input range and are connected to the **WisBlock Core** MCU’s analog inputs.
 
 ## Product Features
 

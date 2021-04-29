@@ -6,14 +6,14 @@ tags:
   - wisblock
 ---
 
-# RAK5804 WisBlock IO Extension Module Datasheet
+# RAK5804 WisBlock Interface Extension Module Datasheet
 
 ## Overview
 
 ### Description
 
 
-The RAK5804 WisBlock IO module, was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module. 
+The RAK5804 WisBlock Interface module, was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module. 
 
 The RAK5804 module is designed as an IO extension module that allow users to connect their own digital or analog devices or sensors to create a customized IoT solution. These sensors are connected through two expansion connectors: J2 and J3. In order to provide power to peripheral devices, 3.3V can be obtained from these expansion connectors. Internal protections allow to shut down the power supply when a short circuit is detected in the peripheral devices. Overcurrent cases are protected through internal PTC thermistors in the power supply circuit.
 
@@ -127,12 +127,12 @@ The RAK5804 module exposes to the user’s application the IO pins, the I2C and 
 #### Pin Definition
 
 
-The RAK5804 module comprises a standard WisBlock IO connector. This IO connector allows the RAK5804 module to be mounted on a WisBlock baseboard, such as the RAK5005-O. The pin order of the connector is shown in Figure 6.
+The RAK5804 module comprises a standard WisBlock Interface connector. This IO connector allows the RAK5804 module to be mounted on a WisBlock baseboard, such as the RAK5005-O. The pin order of the connector is shown in Figure 6.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/datasheet/wisio-connector.png"
   width="50%"
-  caption="RAK5804 WisBlock WisIO connector"
+  caption="RAK5804 WisBlock Interface connector"
 />
 
 | **Pin Number** | **Description** | **Pin Number** | **Description** | 
@@ -207,7 +207,7 @@ The mechanical dimensions of the RAK5804 module is shown in Figure 7 below.
 />
 #### Schematic Diagram
 
-Figure 9 shows the schematic diagram of RAK5804 WisBlock WisIO connector, USB connector and the 10 mechanical holes.
+Figure 9 shows the schematic diagram of RAK5804 WisBlock Interface connector, USB connector and the 10 mechanical holes.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/datasheet/schematic-diagram.png"

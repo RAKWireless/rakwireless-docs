@@ -20,7 +20,7 @@ next: false
 
 ### Description
 
-The RAK2305 module, part of the WisBlock IO series, was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module.
+The RAK2305 module, a part of the WisBlock Wireless series, is designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module.
 
 The RAK2305 module is a 2.4&nbsp;GHz Wi-Fi and Bluetooth in a single module. The core of the module is an ESP32-WROVER-B, which features a PCB antenna. This module is designed to be part of the Internet-of-Things (IoT) applications. It can function as a master or a slave in a Bluetooth network. Internally it supports SPI/I2C/UART interfaces.
 

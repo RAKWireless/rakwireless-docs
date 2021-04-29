@@ -12,7 +12,7 @@ tags:
 
 ### Description
 
-The RAK5811 WisBlock IO module, was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module. RAKWireless has standardized the way modules are interconnected to the baseboards with the WisBlock IO Connectors. This standard connector is a small high-density connector that not only saves spaces on the circuit boards but also allows to implement high-speed communication bus.
+The RAK5811 WisBlock Interface module, was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module. RAKWireless has standardized the way modules are interconnected to the baseboards with the WisBlock Interface Connectors. This standard connector is a small high-density connector that not only saves spaces on the circuit boards but also allows to implement high-speed communication bus.
 
 The RAK5811 is 0-5V analog input interface module. The signal is routed through the IO bus to the WisBlock Core module. Inside of the WisBlock Core module, the MCU digitizes the signal and the sampled data is transmitted, for example, via a LoRa transceiver.
 
@@ -24,7 +24,7 @@ In addition, this module integrates a 12V power supply which can be used to powe
 ### Features 
 
 *	Two 0-5&nbsp;V analog input channels
-*	Support WisBlock IO interface, and is compatible with multiple WisBlock Core modules, such as the RAK4631
+*	Compatible with multiple WisBlock Core modules, such as the RAK4631
 *	10&nbsp;mV conversion accuracy
 *	Supports low power consumption mode, the module can be powered off by WisBlock Core module for saving energy during idle periods
 *	12&nbsp;V output to power external sensors
@@ -64,7 +64,7 @@ As shown in Figure 1, the module provides an output of 12&nbsp;V to power indust
 
 ##### Mounting Sketch
 
-The RAK5811 module is part of the WisBlock IO category, which connects to the baseboard through the IO slot. The installation method is shown in Figure 2:
+The RAK5811 module is part of the WisBlock Interface category, which connects to the baseboard through the IO slot. The installation method is shown in Figure 2:
 
 1. Keep the RAK5811 module parallel to the baseboard, and gently place and plug the WisConnector into the IO slot receptacle of the baseboard. The IO slot has an outer silkscreen to assist with the alignment. At this point, apply force evenly along the module and press again. There will be a sound to confirm the successful completion of the attachment process
 
@@ -214,7 +214,7 @@ A typical application is shown in Figure 11, users can connect up to two 0-5&nbs
   caption="RAK5811 typical application"
 />
 
-## WisBlock Compatability
+## WisBlock Compatibility
 
 In the ecosystem of the WisBlock, the philosophy is to allow users to combine a WisBlock module of one category with WisBlock module of other categories. This is true in most of cases but it’s important to review the compatibility matrix when designing a customized solution. The RAK5811 module are as shown in the Table below:
 

@@ -82,6 +82,9 @@ export default {
           case 'UKCA':
             data.img = '/assets/images/certifications/ukca.png'
             break
+          case 'KC':
+            data.img = '/assets/images/certifications/KCC.png'
+            break
           default:
             data.img =
               'https://image.shutterstock.com/image-illustration/white-unknown-document-icon-isolated-600w-1517588975.jpg'

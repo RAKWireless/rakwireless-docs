@@ -1,7 +1,7 @@
 ---
 rak_img: /assets/images/wisblock/rak2305/overview/RAK2305_home.png
-rak_desc: RAK2305 is a WisBlock IO module which extends the WisBlock system with Wi-Fi and Bluetooth connectivity. It is based on the Espressif ESP32 Wrover module.
-rak_grp: [wisblock, wisio]
+rak_desc: RAK2305 is a WisBlock Wireless module that extends the WisBlock system with Wi-Fi and Bluetooth connectivity. It is based on the Espressif ESP32 Wrover module.
+rak_grp: [wisblock, wiswireless]
 prev: ../../
 next: ../Datasheet/
 
@@ -25,7 +25,7 @@ Thank you for choosing **RAK2305 WisBlock WiFi Interface Module** in your awesom
 
 ## Product Description
 
-**RAK2305** is a **WisBlock IO** module which extends the **WisBlock** system with Wi-Fi and Bluetooth connectivity. It is based on the Espressif ESP32 Wrover module. It communicates with the **WisBlock Core** module over an UART interface using the Espressif AT commands.
+**RAK2305** is a **WisBlock Wireless** module that extends the **WisBlock** system with Wi-Fi and Bluetooth connectivity. It is based on the Espressif ESP32 Wrover module. It communicates with the **WisBlock Core** module over an UART interface using the Espressif AT commands.
 
 <!--
 The RAK2305 module is part of the WisBlock series, specifically, it is one of the modules that belongs to the WisIO category. This module was designed to be part of a production-ready IoT solution in a modular way, and must be combined with a WisCore and a WisBase module.
@@ -41,7 +41,7 @@ The RAK2305 module is a 2.4 GHz Wi-Fi and Bluetooth in a single module. The core
     * Espressif AT command interface     
     * Option to flash custom firmware    
 * **Power consumption control**    
-    * The RAK2305 modules power supply can be controlled by the WisBlock Core MCU to reduce power consumption    .
+    * The RAK2305 modules power supply can be controlled by the WisBlock Core MCU to reduce power consumption.
 * **Size**    
     * 35 x 25&nbsp;mm  
 

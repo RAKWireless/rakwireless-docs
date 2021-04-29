@@ -288,25 +288,25 @@ export default {
 
   // WisBlock
   '/Product-Categories/WisBlock/RAK1920/': {
-    label: 'RAK1920 WisBlock WisIO Module',
+    label: 'RAK1920 WisBlock Interface Module',
     img: '/assets/images/wisblock/rak1920/overview/RAK1920_buy.png',
     store: 'https://store.rakwireless.com/products/rak1920-sensor-adapter-module?utm_source=RAK1920&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
   '/Product-Categories/WisBlock/RAK1921/': {
-    label: 'RAK1921 WisBlock WisIO Module',
+    label: 'RAK1921 WisBlock Display Module',
     img: '/assets/images/wisblock/rak1921/overview/RAK1921_buy.png',
     store: 'https://store.rakwireless.com/products/rak1921-oled-display-panel?utm_source=RAK1921&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
   '/Product-Categories/WisBlock/RAK2305/': {
-    label: 'RAK2305 WisBlock WisIO Module',
+    label: 'RAK2305 WisBlock Wireless Module',
     img: '/assets/images/wisblock/rak2305/overview/RAK2305_buy.png',
     store: 'https://store.rakwireless.com/products/rak2305-wi-fi-extension-board?utm_source=RAK2305&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
   '/Product-Categories/WisBlock/RAK4631/': {
-    label: 'RAK4631 WisBlock WisCore Module',
+    label: 'RAK4631 WisBlock Core Module',
     img: '/assets/images/wisblock/rak4631/overview/RAK4631_buy.png',
     store: 'https://store.rakwireless.com/products/rak4631-lpwan-node?utm_source=RAK4631WisBlockLPWANModule&utm_medium=Document&utm_campaign=BuyFromStore'
   },
@@ -318,25 +318,25 @@ export default {
   },
 
   '/Product-Categories/WisBlock/RAK5801/': {
-    label: 'RAK5801 WisBlock WisIO Module',
+    label: 'RAK5801 WisBlock Interface Module',
     img: '/assets/images/wisblock/rak5801/overview/RAK5801_buy.png',
     store: 'https://store.rakwireless.com/products/rak5801-4-20ma-interface?utm_source=RAK5801&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
   '/Product-Categories/WisBlock/RAK5802/': {
-    label: 'RAK5802 WisBlock WisIO Module',
+    label: 'RAK5802 WisBlock Interface Module',
     img: '/assets/images/wisblock/rak5802/overview/RAK5802_buy.png',
     store: 'https://store.rakwireless.com/products/rak5802-rs485-interface?utm_source=RAK5802&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
   '/Product-Categories/WisBlock/RAK5804/': {
-    label: 'RAK5804 WisBlock WisIO Module',
+    label: 'RAK5804 WisBlock Interface Module',
     img: '/assets/images/wisblock/rak5804/overview/RAK5804_buy.png',
     store: 'https://store.rakwireless.com/products/rak5804-io-extension-board?utm_source=RAK5804&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
   '/Product-Categories/WisBlock/RAK5860/': {
-    label: 'RAK5860 WisBlock WisIO Module',
+    label: 'RAK5860 WisBlock Wireless Module',
     img: '/assets/images/wisblock/rak5860/overview/RAK5860_buy.png',
     store: 'https://store.rakwireless.com/products/rak5860-lte-nb-iot-extension-board?utm_source=RAK5860&utm_medium=Document&utm_campaign=BuyFromStore'
   },

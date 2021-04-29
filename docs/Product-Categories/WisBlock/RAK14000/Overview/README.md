@@ -1,7 +1,7 @@
 ---
 rak_img: /assets/images/wisblock/rak14000/overview/RAK14000_buy.png
-rak_desc: RAK14000 is a WisBlock IO module which consist of an E-Ink Display and Three-Button Module.
-rak_grp: [wisblock, wisio]
+rak_desc: RAK14000 is a WisBlock Display module which consists of an E-Ink Display and Three-Button Module.
+rak_grp: [wisblock, wisdisplay]
 prev: ../../
 next: ../Datasheet/
 ---
@@ -27,7 +27,7 @@ For All WisBlock Core:
 
 ## Product Description
 
-The **RAK14000** is a WisBlock IO module that allows you to connect an E-Ink Display and Three-Button module. E-Ink Displays, also known as **Electronic Paper**, are display that consumes extremely low power. A perfect alternative to the conventional LCD and OLED displays, especially on power-conscious projects. Also, the E-Ink display contents stays visible for days even without any power supply.
+The **RAK14000** is a WisBlock Display module that allows you to connect an E-Ink Display and Three-Button module. E-Ink Displays, also known as **Electronic Paper**, are display that consumes extremely low power. A perfect alternative to the conventional LCD and OLED displays, especially on power-conscious projects. Also, the E-Ink display contents stays visible for days even without any power supply.
 
 ## Product Features  
 

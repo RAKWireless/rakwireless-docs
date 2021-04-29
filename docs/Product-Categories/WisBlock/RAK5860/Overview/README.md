@@ -1,7 +1,7 @@
 ---
 rak_img: /assets/images/wisblock/rak5860/overview/RAK5860_home.png
-rak_desc: RAK5860 is a WisBlock IO module which extends the WisBlock system with LTE NB-IoT connectivity. It is based on the Quectel BG77 module and supports CAT M1 and CAT NB2 connectivity.
-rak_grp: [wisblock, wisio]
+rak_desc: RAK5860 is a WisBlock Wireless module that extends the WisBlock system with LTE NB-IoT connectivity. It is based on the Quectel BG77 module and supports CAT M1 and CAT NB2 connectivity.
+rak_grp: [wisblock, wiswireless]
 prev: ../../
 next: ../Datasheet/
 
@@ -26,7 +26,7 @@ Thank you for choosing **RAK5860 WisBlock NB-IoT Interface Module** in your awes
 
 ## Product Description
 
-RAK5860 is a WisBlock IO module which extends the WisBlock system with LTE NB-IoT connectivity. It is based on the Quectel BG77 module and supports CAT M1 and CAT NB2 connectivity. In addition, it includes a GNSS location option that supports both GPS and Glonass satellites. It can be comfortably programmed with the Quectel AT command interface over the serial connection to the WisBlock Core MCU.
+RAK5860 is a WisBlock Wireless module that extends the WisBlock system with LTE NB-IoT connectivity. It is based on the Quectel BG77 module and supports CAT M1 and CAT NB2 connectivity. In addition, it includes a GNSS location option that supports both GPS and Glonass satellites. It can be comfortably programmed with the Quectel AT command interface over the serial connection to the WisBlock Core MCU.
 
 <!---
 The RAK5860 module is part of the WisBlock series, specifically, it is one of the modules that belongs to the WisIO category. This module was designed to be part of a production-ready IoT solution in a modular way, and must be combined with a WisCore and a WisBase module. 

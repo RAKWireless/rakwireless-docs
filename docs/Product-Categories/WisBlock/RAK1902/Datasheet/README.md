@@ -2,7 +2,7 @@
 tags:
   - datasheet
   - wisblock
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -12,11 +12,13 @@ next: false
 
 ### Description
 
-The RAK1902 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is an ultra-compact piezo-resistive pressure sensor that functions as a digital barometer with I2C interface. The sensing element, which detects absolute pressure, consists of a suspended membrane manufactured through a delicate process developed by ST®.
+The RAK1902 WisBlock Sensor module, part of the RAK Wireless WisBlock series, is an ultra-compact piezo-resistive pressure sensor that functions as a digital barometer with an I2C interface. The sensing element, which detects absolute pressure, consists of a suspended membrane manufactured through a delicate process developed by ST®. The pressure measurement covers the range from 260&nbsp;hPa to 1260&nbsp;hPa and the temperature measurement covers the range from -40&nbsp;°C to 85&nbsp;°C. Measurements accuracy is ±0.1&nbsp;hPa for pressure and ±1.5&nbsp;°C for temperature.
 
 ### Features 
-* **Measurement range**: 260-1260&nbsp;hPa
-* **Sensor accuracy**: ±0.1&nbsp;hPa
+* **Pressure range**: 260-1260&nbsp;hPa
+* **Pressure sensor accuracy**: ±0.1&nbsp;hPa
+* **Temperature range**: -40&nbsp;°C to +85&nbsp;°C
+* **Temperature sensor accuracy**: ±1.5&nbsp;°C
 * **Typical power consumption**: 3&nbsp;uA  
 * **Module Size**: 10 x 10&nbsp;mm
 
@@ -49,7 +51,7 @@ The RAK1902 WisBlock Sensor module comprises a standard WisIO connector. The Wis
 
 :::tip 📝 NOTE:
 
-Only the I2C related pins, VDD and GND are connected to this module.
+Only the I2C related pins, VDD, and GND are connected to this module.
 
 :::
 
@@ -72,6 +74,14 @@ Only the I2C related pins, VDD and GND are connected to this module.
 | P<sub>AccT</sub> | Absolute Accuracy over Temperature | P<sub>op</sub> = 0 to 65&nbsp;°C <br /> after OPC  <br /> P<sub>op</sub> = 0 to 65&nbsp;°C <br /> no OPC |  | ±0.1 <br />  <br />  ±1 |  | hPa |
 | P<sub>noise</sub> | RMS Pressure Sensing Noise | with embedded filtering |  | 0.0075 |  | hPa <br /> RMS |
 | ODR<sub>Pres</sub> | Pressure Output Data Rate |  |  | 1/10/25/50/75 |  | Hz |
+
+##### Temperature Sensor   
+| Symbol | Parameter | Test Condition | Min. | Typ. | Max. | Unit |
+| --     | --        | --             | :-:  | :-:  | :-:  | :-:  |
+| T<sub>op</sub> | Operating Temperature Range |  | -40 |  | +85 | °C |
+| T<sub>sens</sub> | Temperature Sensitivity |  |  | 100 |  | LSB/°C |
+| T<sub>acc</sub> | Temperature Absolute Accuracy | T = 0 to 65 °C |  | ±1.5 |  | °C |
+| ODR<sub>T</sub> | Output Temperature Data Rate |  |  | 1 <br /> 10 <br /> 25 <br /> 50 <br /> 75 |  | Hz |
 
 #### Electrical Characteristics
 

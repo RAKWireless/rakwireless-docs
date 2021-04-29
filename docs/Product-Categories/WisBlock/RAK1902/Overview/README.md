@@ -2,6 +2,8 @@
 rak_img: /assets/images/wisblock/rak1902/overview/RAK1902_home.png
 rak_desc: RAK1902 is a WisBlock Sensor which extends the WisBlock system with a ST KPS22HB barometric pressure sensor. A ready to use SW library and tutorial makes it easy to build up a barometric air pressure data acquisition system.
 rak_grp: [wisblock, wissensor]
+next: ../Quickstart/
+prev: ../../
 
 ---
 
@@ -10,6 +12,7 @@ rak_grp: [wisblock, wissensor]
 
 Thank you for choosing **RAK1902 WisBlock Barometer Pressure Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK1902 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
@@ -27,15 +30,20 @@ For All WisBlock Core:
 For WisBlock Core RAK4630:
 * [Sample Code: Weather Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Weather_Monitoring)
 
+**LoRaWAN Weather Monitoring Kit with WisBlock RAK1902**
+* [LoRaWAN Weather Monitoring Kit](https://store.rakwireless.com/products/wisblock-kit-1-weather-monitor)
+
 ## Product Description
 
-RAK1902 is a WisBlock Sensor which extends the WisBlock system with a ST KPS22HB barometric pressure sensor. A ready to use SW library and tutorial makes it easy to build up a barometric air pressure data acquisition system.
+The RAK1902 WisBlock Sensor module, part of the RAK Wireless WisBlock series, is an ultra-compact piezo-resistive pressure sensor that functions as a digital barometer with an I2C interface. The sensing element, which detects absolute pressure, consists of a suspended membrane manufactured through a delicate process developed by ST®. The pressure measurement covers the range from 260&nbsp;hPa to 1260&nbsp;hPa and the temperature measurement covers the range from -40&nbsp;°C to 85&nbsp;°C. Measurements accuracy is ±0.1&nbsp;hPa for pressure and ±1.5&nbsp;°C for temperature.
 
 ## Product Features
 
 * **Sensor specifications**
     * 260-1260&nbsp;hPa measurement range     
     * ±0.1&nbsp;hPa accuracy     
+    * -40&nbsp;°C to +85&nbsp;°C temperature range
+    * ±1.5&nbsp;°C temperature accuracy 
     * Typical 3&nbsp;uA power consumption    
 
 * **Size**

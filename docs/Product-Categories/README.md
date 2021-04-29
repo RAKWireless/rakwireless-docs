@@ -14,7 +14,7 @@ Below is the hierarchy of the RAK product categories. Navigate through each of t
 
 <br>
 
-![Product Categories](/assets/rakwireless/product-categories/RAK-product-hierarchy-horizontal.png)
+![Product Categories](/assets/rakwireless/product-categories/RAK-product-tree.svg)
 
 <br>
 

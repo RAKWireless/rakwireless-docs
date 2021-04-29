@@ -24,7 +24,7 @@ certifications:
 
 ### Description
 
-The RAK5860 WisBlock IO module is designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module.
+The RAK5860 WisBlock Connect module is designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module.
 
 The RAK5860 is a module designed to work with the RAK5005-O baseboard and it provides wireless communication (LTE Cat M1, LTE Cat NB2) to the final application. This module supports the LTE-FDD network and supports half-duplex operation in the LTE network. It also provides optional GNSS functionality.
 

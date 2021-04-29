@@ -1,7 +1,7 @@
 ---
 rak_img: /assets/images/wisblock/rak18001/overview/RAK18001_front.png
-rak_desc: RAK18001 is a WisBlock Sensor Buzzer module which produces an audible sound using the MLT-5020 Buzzer
-rak_grp: [wisblock, wissensor]
+rak_desc: RAK18001 is a WisBlock Extra Buzzer module which produces an audible sound using the MLT-5020 Buzzer
+rak_grp: [wisblock, wisextra]
 prev: ../../
 next: ../Datasheet/
 
@@ -30,7 +30,7 @@ For WisBlock Core RAK11200:
 
 ## Product Description
 
-The **RAK18001** is a WisBlock Sensor module that uses a **MLT-5020** as its built-in buzzer. It produces an audible high-pitched sound which can be used in various alarm and notifier applications. The sound and loudness can be controlled through PWM (Pulse-Width Modulation) signal from a WisBlock Core. The output sounds and pitch level can be customized to the point that it is even possible to play a small melody! Please see sample code: [RAK18001 Play a melody](https://github.com/RAKWireless/WisBlock/tree/master/examples)
+The **RAK18001** is a WisBlock Extra module that uses a **MLT-5020** as its built-in buzzer. It produces an audible high-pitched sound which can be used in various alarm and notifier applications. The sound and loudness can be controlled through PWM (Pulse-Width Modulation) signal from a WisBlock Core. The output sounds and pitch level can be customized to the point that it is even possible to play a small melody! Please see sample code: [RAK18001 Play a melody](https://github.com/RAKWireless/WisBlock/tree/master/examples)
 
 ## Product Features  
 

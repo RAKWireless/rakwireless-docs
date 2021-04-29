@@ -27,9 +27,7 @@ WisBlock consists of WisBase, WisCore, WisSensor and WisIO modules.
 
 <rk-head img="/assets/rakwireless/product-categories/WisBlock-Base.svg">
 
-WisBlock is build up on a WisBase, a platform carrier that allows easy plug-in of 1 WisCore processing board, 1 WisIO interface board and up to 4 WisSensor boards. WisBase is providing the power supply, battery and solar panel supplies and charging block. In addition, it has connectors for programming and debugging.
-
-<!-- During development phase WisBase allows you to quickly switch between microcontrollers, IO functionality and sensors by simply changing the modules. Repairs and upgrades are easy with WisBase on your final product because modules can be changed with just plug'n'play. For controlling and limiting power consumption of your IoT solution, WisBase enables to control the power supply for the WisSensor and WisIO modules, limiting the power consumption by switching off these modules if they are not needed. -->
+WisBlock is build up on a WisBlock Base board, a platform carrier that allows easy plug-in of one WisBlock Core processing board and multiple WisBlock modules. WisBlock Base provides the power supply, battery and solar panel supplies and charging block. In addition, it has connectors for programming and debugging.
 
 </rk-head>
 
@@ -39,17 +37,28 @@ WisBlock is build up on a WisBase, a platform carrier that allows easy plug-in o
 
 <rk-head img="/assets/rakwireless/product-categories/WisBlock-Core.svg">
 
-WisCore is the processing unit of your IoT solution. Select the processing power based on the requirements of your application from a range of processing boards which starts with low single core to high dual core processing power units are available.
+WisBlock Core is the processing unit of your IoT solution. Select a module matching the requirements of your application. Available modules include low power single core MCU’s and fast dual core MCU’s. Different WisBlock Core modules offer different communication possibilities like LoRa, WiFi, BLE and/or Bluetooth.
 
 </rk-head>
 
 <rk-products :tags="['wisblock', 'wiscore']" />
 
+## WisBlock Wireless
+
+<rk-head img="/assets/rakwireless/product-categories/WisBlock-Wireless.svg">
+
+WisBlock Wireless Modules extend the communication capabilities of WisBlock with the offered WiFi and cellular modem modules. Also, these modules can fit into the IO slot of the WisBlock Base Boards.
+
+</rk-head>
+
+<rk-products :tags="['wisblock', 'wiswireless']" />
+
+
 ## WisBlock Sensor
 
 <rk-head img="/assets/rakwireless/product-categories/WisBlock-Sensor.svg">
 
-WisSensor offers a range of sensors for sensing environmental conditions (temperature, humidity, …), location and movement conditions (GNSS location, accelerometer, …) that you just plug into WisBase makes it easy to complete your application with the required sensors.
+WisBlock Sensor offers a range of sensors for sensing environmental conditions (temperature and humidity), location, and movement conditions (GNSS location and accelerometer). They are easy to install just by plugging them into the WisBase to complete your application with the required sensors.
 
 <!-- WisSensor modules are with 10 x 10mm size small sensor breakout boards. Only the GNSS module is larger with 10 x 22mm and occupies 2 sensor slots on the base board
  -->
@@ -58,7 +67,7 @@ WisSensor offers a range of sensors for sensing environmental conditions (temper
 
 <rk-products :tags="['wisblock', 'wissensor']" />
 
-## WisBlock IO
+<!-- ## WisBlock IO
 
 <rk-head img="/assets/rakwireless/product-categories/WisBlock-IO.svg">
 
@@ -66,4 +75,78 @@ WisIO extensions provide your application with interfaces and communication exte
 
 </rk-head>
 
-<rk-products :tags="['wisblock', 'wisio']" />
+<rk-products :tags="['wisblock', 'wisio']" /> -->
+
+## WisBlock Interface
+
+<rk-head img="/assets/rakwireless/product-categories/WisBlock-Interface.svg">
+
+WisBlock Interface modules provide your application with interfaces to other systems using digital and analog inputs and industry standards like RS485 or 4-20mA communication.
+
+</rk-head>
+
+<rk-products :tags="['wisblock', 'wisinterface']" />
+
+## WisBlock Display
+
+<rk-head img="/assets/rakwireless/product-categories/WisBlock-Display.svg">
+
+WisBlock Display modules add visual display options to WisBlock. WisBlock Display offers graphic displays and LED’s for WisBlock solutions.
+
+</rk-head>
+
+<rk-products :tags="['wisblock', 'wisdisplay']" />
+
+
+## WisBlock Extra
+
+<rk-head img="/assets/rakwireless/product-categories/WisBlock-Extra.svg">
+
+WisBlock Extra modules are add-ons for WisBlock. This category includes extension cables, real-time clock, and other useful modules.
+
+</rk-head>
+
+<rk-products :tags="['wisblock', 'wisextra']" />
+
+
+## WisBlock Storage
+
+<rk-head img="/assets/rakwireless/product-categories/WisBlock-Storage.svg">
+
+WisBlock Storage extends the memory capabilities of WisBlock solutions with different storage options like Flash, EEPROM, or SD-Card slots.
+
+</rk-head>
+
+<rk-products :tags="['wisblock', 'wisstorage']" />
+
+
+## WisBlock Power
+
+<rk-head img="/assets/rakwireless/product-categories/WisBlock-Power.svg">
+
+WisBlock Power Modules extend the power supply options available for WisBlock. Whether you need wireless charging or want to use an alternative green energy resource, the WisBlock Power Modules offer you such solutions. Moreover, a power supply option for external sensors is available as well.
+
+</rk-head>
+
+<rk-products :tags="['wisblock', 'wispower']" />
+
+
+
+<!-- ## WisBlock Motor
+<rk-head img="/assets/rakwireless/product-categories/WisBlock-Motor.svg">
+
+WisBlock Motor Modules utilize the use of external actuators. This enables the option to control electrical motors to WisBlock.
+
+</rk-head>
+
+<rk-products :tags="['wisblock', 'wismotor']" /> -->
+
+
+<!-- ## WisBlock HMI
+<rk-head img="/assets/rakwireless/product-categories/WisBlock-HMI.svg">
+
+WisBlock HMI adds human input options to WisBlock. Touch pads, rotary encoders and similar modules enable human control over your solution.
+
+</rk-head>
+
+<rk-products :tags="['wisblock', 'wishmi']" /> -->

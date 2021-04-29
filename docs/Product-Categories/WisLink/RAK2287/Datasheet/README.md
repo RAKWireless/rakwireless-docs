@@ -122,19 +122,19 @@ The modules have one RF interfaces over a standard UFL connectors (Hirose U. FL-
 
 | **Pin No.** | **Mini PCIEx Pin Rev. 2.0** | **RAK2287 Pin** | **Type** | **Description**                             | **Remarks**                                                                 |
 | ----------- | --------------------------- | --------------- | -------- | ------------------------------------------- | --------------------------------------------------------------------------- |
-| **1**       | WAKE#                       | SX1261_BUSY     | DO       | No Connection by default                    | Reserved for future applications                                            |
+| **1**       | WAKE#                       | NC     |       | No Connection                               |                                                                             |
 | **2**       | 3.3Vaux                     | 3V3             | PI       | 3.3V DC supply                              |                                                                             |
-| **3**       | COEX1                       | SX1261_DIO1     | IO       | No Connection by default                    | Reserved for future applications                                            |
+| **3**       | COEX1                       | NC     |        | No Connection                               |                                                                             |
 | **4**       | GND                         | GND             |          | Ground                                      |                                                                             |
-| **5**       | COEX2                       | SX1261_DIO2     | IO       | No Connection by default                    | Reserved for future applications                                            |
+| **5**       | COEX2                       | NC     |        | No Connection                               |                                                                             |
 | **6**       | 1.5V                        | GPIO(6)         | IO       |                                             | Connect to SX1302’s GPIO[6].                                                |
-| **7**       | CLKREQ#                     | SX1261_NSS      | DI       | No Connection by default                    | Reserved for future applications                                            |
+| **7**       | CLKREQ#                     | NC      |        | No Connection                               |                                                                             |
 | **8**       | UIM_PWR                     | NC              |          | No Connection                               |                                                                             |
 | **9**       | GND                         | GND             |          | Ground                                      |                                                                             |
 | **10**      | UIM_DATA                    | NC              |          | No Connection                               |                                                                             |
-| **11**      | REFCLK-                     | SX1261_NRESET   | DI       | No Connection by default                    | Reserved for future applications                                            |
+| **11**      | REFCLK-                     | NC   |        | No Connection                               |                                                                             |
 | **12**      | UIM_CLK                     | NC              |          | No Connection                               |                                                                             |
-| **13**      | REFCLK+                     | MCU_NRESET      | DI       | No Connection by defaul                     | Reserved for future applications                                            |
+| **13**      | REFCLK+                     | MCU_NRESET      | DI       | No Connection by default                    | Reserved for future applications                                            |
 | **14**      | UIM_RESET                   | NC              |          | No Connection                               |                                                                             |
 | **15**      | GND                         | GND             |          | Ground                                      |                                                                             |
 | **16**      | UIM_VPP                     | NC              |          | No Connection                               |                                                                             |
@@ -297,9 +297,9 @@ Download the latest firmware of the RAK2287 WisLink-LoRa in the table provided b
 
 #### Firmware
 
-| Model   | Raspberry Pi Board  | Firmware Version | Source                                                                                                          |
-| ------- | ------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------- |
-| RAK2287 | Raspberry Pi 3B+, 4 | V4.2.5_20200909        | [Download](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Firmware/RAK2287_Latest_Firmware.zip) |
+| Model   | Raspberry Pi Board  | Firmware Version | Source                                                                                                    |
+| ------- | ------------------- | ---------------- | --------------------------------------------------------------------------------------------------------- |
+| RAK2287 | Raspberry Pi 3B+, 4 | V4.2.5_20200909  | [Download](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Firmware/RAK2287_Latest_Firmware.zip) |
 
 ## Models / Bundles
 
@@ -307,10 +307,10 @@ Download the latest firmware of the RAK2287 WisLink-LoRa in the table provided b
 
 In general, the RAK2287's variation is the defined as **RAK2287 - XY**, where **X is the model variant** and **Y is the supported region**. Take a look at the tables below to know the variants and its individual specification.
 
-| Parameter            | Variations                                                                               |
-| -------------------- | ---------------------------------------------------------------------------------------- |
-| X - Model Variant    | S<br>M<br>A                                                                               |
-| Y - Supported Region | 2 - CN470<br> 3 - EU868<br>4 - US915<br>5 - KR920<br>6 - AS923<br>7 - IN865<br>8 - AU915 |
+| Parameter            | Variations                                                       |
+| -------------------- | ---------------------------------------------------------------- |
+| X - Model Variant    | S; M; A; C                                                       |
+| Y - Supported Region | 3 - EU868; 4 - US915; 5 - KR920; 6 - AS923; 7 - IN865; 8 - AU915 |
 
 The table below shows the board order configurations of the RAK2287 WisLink LPWAN Concentrator.
 
@@ -318,7 +318,8 @@ The table below shows the board order configurations of the RAK2287 WisLink LPWA
 | ---------- | --------------- | -------------------- | ------------------- | ------------- | ------------- |
 | RAK2287-SY | √               |                      | √                   | √             |               |
 | RAK2287-MY | √               |                      |                     | √             |               |
-| RAK2287-AY | √               |                      | √                   |               | √             |
+| RAK2287-AY | √               | √                    | √                   |               | √             |
+| RAK2287-CY | √               | √                    |                     |               | √             |
 
 
 ## Certification

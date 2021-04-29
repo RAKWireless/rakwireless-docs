@@ -12,7 +12,7 @@ tags:
 
 ### Description
 
-The RAK5801 WisBlock IO module, was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module. 
+The RAK5801 WisBlock Interface module, was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module. 
 
 The RAK5801 is a 4-20mA current loop extension module that allows the users to make a IoT solution for analog sensors with 4-20mA interface. This module converts the 4-20mA current signal into voltage range supported by the WisBlock Core module (MCU) for further digitalization and data transmission.
 
@@ -23,7 +23,7 @@ This module integrates a 12V power supply, which can be used  to power external 
 ### Features
 
 -	Two 4-20&nbsp;mA analog inputs.
--	WisBlock IO interface, compatible with multiple WisBlock Core modules, such as RAK4631.
+-	Compatible with multiple WisBlock Core modules, such as RAK4631.
 -	0.005&nbsp;mA conversion accuracy.
 -	Supports low power consumption mode. The module can be powered off by the WisBlock Core module for saving energy during idle periods.
 -	12&nbsp;V output to  power external sensors.
@@ -64,7 +64,7 @@ As shown in Figure 1, the module provides an output of 12V for powering passive 
 
 ##### Mounting Mechanism
 
-The RAK5801 module is part of the WisBlock IO category, which connects to the baseboard through the IO slot. The installation method is shown in the Figure 2.
+The RAK5801 module is part of the WisBlock Interface category, which connects to the baseboard through the IO slot. The installation method is shown in the Figure 2.
 
 1. Keep the RAK5801 module parallel to the baseboard, and gently place and plug  WisConnector into the IO slot receptacle of the baseboard. The IO slot has an outer silkscreen on it to assist with the alignment. At this point, apply force evenly along the module and press again. There will be a sound to confirm the successful completion of the attachment process. 
 

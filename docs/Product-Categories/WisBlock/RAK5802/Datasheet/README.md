@@ -13,7 +13,7 @@ next: false
 
 ### Description
 
-The RAK5802 WisBlock IO module, was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module. 
+The RAK5802 WisBlock Interface module, was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module. 
 
 The RAK5802 is a RS485 Modbus extension module that allows users to provide IoT connectivity to a new/existing solution with an RS485 interface. This module converts the RS485 signals into UART signals. These signals are collected by an MCU located inside of a WisBlock Core module for further data transmission. 
 
@@ -25,7 +25,7 @@ In addition, the RAK5802 supports one I2C interface, customers can use this I2C 
 ### Features
 
 *	RS485 interface and Modbus protocol.
-*	WisBlock IO interface. It is compatible with multiple WisBlock Core modules, such as RAK4631.
+*	Compatible with multiple WisBlock Core modules, such as RAK4631.
 *	Supports up to 16 RS485 nodes
 *	Supports TX/RX signals automatic detection, no need to have DE signal for the RS485 chip.
 *	Low power consumption mode. The module can be powered off by the WisBlock Core module for saving energy during idle periods. 
