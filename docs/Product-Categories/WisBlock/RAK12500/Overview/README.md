@@ -30,12 +30,12 @@ For All WisBlock Core:
 
 The RAK12500 WisBlock GNSS Location Module is designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module.
 
-The RAK12500 uses the u-blox MAX-M8Q module. It supports a wide variety of satellite data protocols such as GPS, GLONASS, QZSS, and BeiDou. This ensures the retrieval of precise location data. The module features exceptional performance, high sensitivity, and minimal acquisition time. A very suitable module for your low-power IoT solution needs.
+The RAK12500 uses the u-blox ZOE-M8Q module. It supports a wide variety of satellite data protocols such as GPS, GLONASS, QZSS, and BeiDou. This ensures the retrieval of precise location data. The module features exceptional performance, high sensitivity, and minimal acquisition time. A very suitable module for your low-power IoT solution needs.
 
 ## Product Features  
 
 * **Module Specification**
-    * Uses the very accurate GNSS Module: **u-blox MAX-M8Q chip**
+    * Uses the very accurate GNSS Module: **u-blox ZOE-M8Q chip**
     * Location Accuracy of ±2.5 meter
     * Velocity Accuracy of ±0.05&nbsp;m/s
     * GPS, GLONASS, QZSS, and BeiDou Satellite support
