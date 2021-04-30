@@ -20,12 +20,12 @@ tags:
 
 The RAK12500 WisBlock GNSS Location Module is designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module.
 
-The RAK12500 uses the u-blox MAX-M8Q module. It supports a wide variety of satellite data protocols such as GPS, GLONASS, QZSS, and BeiDou. This ensures the retrieval of precise location data. The module features exceptional performance, high sensitivity, and minimal acquisition time. A very suitable module for your low-power IoT solution needs.
+The RAK12500 uses the u-blox ZOE-M8Q module. It supports a wide variety of satellite data protocols such as GPS, GLONASS, QZSS, and BeiDou. This ensures the retrieval of precise location data. The module features exceptional performance, high sensitivity, and minimal acquisition time. A very suitable module for your low-power IoT solution needs.
 
 ### Features 
 
 * **Module Specification**
-    * Uses the very accurate GNSS Module: **u-blox MAX-M8Q chip**
+    * Uses the very accurate GNSS Module: **u-blox ZOE-M8Q chip**
     * Location Accuracy of ±2.5 meter
     * Velocity Accuracy of ±0.05&nbsp;m/s
     * GPS, GLONASS, QZSS, and BeiDou Satellite support
@@ -56,11 +56,11 @@ The hardware specification is categorized into five parts that cover the chipset
 
 #### Chipset
 
-The RAK12500 utilizes a very accurate u-blox MAX-M8Q chip. See the manufacturer's [u-blox MAX-M8Q Page](https://www.u-blox.com/en/product/max-m8-series) for more details.  
+The RAK12500 utilizes a very accurate u-blox ZOE-M8Q chip. See the manufacturer's [u-blox ZOE-M8Q Page](https://www.u-blox.com/en/product/zoe-m8-series) for more details.  
 
 | Vendor | Part number |
 | :----: | :---------: |
-| u-blox |   MAX-M8Q   |
+| u-blox |   ZOE-M8Q   |
 
 
 #### Pin Definition
@@ -111,11 +111,11 @@ Figure 4 shows the dimensions and mechanical drawing of the RAK12500 module.
 
 #### Schematic Diagram
 
-Figure 6 shows the schematic diagram of u-blox MAX-M8Q GNSS chip.
+Figure 6 shows the schematic diagram of u-blox ZOE-M8Q GNSS chip.
   
 <rk-img
   src="/assets/images/wisblock/rak12500/datasheet/rak12500-ubloxsch.png"
   width="80%"
-  caption="u-blox MAX-M8Q GNSS Schematic"
+  caption="u-blox ZOE-M8Q GNSS Schematic"
 />
 
