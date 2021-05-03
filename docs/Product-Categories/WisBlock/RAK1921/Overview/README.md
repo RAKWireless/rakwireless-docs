@@ -11,6 +11,7 @@ next: ../Datasheet/
 
 Thank you for choosing **RAK1921 WisBlock OLED Display** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK1921 Quick Start Guide](../Quickstart)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->

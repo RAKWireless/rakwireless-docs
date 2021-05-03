@@ -2,7 +2,8 @@
 rak_img: /assets/images/wisblock/rak1903/overview/RAK1903_home.png
 rak_desc: RAK1903 is a WisBlock Sensor which extends the WisBlock system with a TI OPT3001DNPR light sensor. A ready to use SW library and tutorial makes it easy to build up an ambient light data acquisition system.
 rak_grp: [wisblock, wissensor]
-
+next: ../Quickstart/
+prev: ../../
 ---
 
 
@@ -10,6 +11,7 @@ rak_grp: [wisblock, wissensor]
 
 Thank you for choosing **RAK1903 WisBlock Ambient Light Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK1903 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
@@ -26,6 +28,9 @@ For All WisBlock Core:
 
 For WisBlock Core RAK4630:
 * [Sample Code: Weather Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Weather_Monitoring) 
+
+**LoRaWAN Weather Monitoring Kit with WisBlock RAK1903**
+* [LoRaWAN Weather Monitoring Kit](https://store.rakwireless.com/products/wisblock-kit-1-weather-monitor)
 
 ## Product Description
 

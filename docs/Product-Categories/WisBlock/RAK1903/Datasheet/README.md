@@ -2,7 +2,7 @@
 tags:
   - datasheet
   - wisblock
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 

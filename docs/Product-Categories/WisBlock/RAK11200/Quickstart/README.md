@@ -44,8 +44,7 @@ Read the following items carefully so that WisBlock can be used safely.
 - Use WisBlock according to its hardware specification, including the power supply, the temperature of use, the battery, and so on.
 - Don't submerge WisBlock in liquids, and don't place WisBlock where water can reach.
 - Don't power WisBlock using other power sources which RAK hasn't suggested.
-
-### Software
+- Some WisBlock modules require higher current that can't be provided by USB port alone. In this case, it is recommended to connect a [battery](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector) to WisBlock Base Board.
 
 - There is already a bootloader in every WisBlock core board MCU when you receive the device so that you needn't to flash the bootloader again. Normally, you only need to use it directly or upload new code into it through Arduino IDE. If you accidentally erase the bootloader, contact [RAK forum](forum.rakwireless.com).
 
@@ -139,7 +138,7 @@ Getting started with RAK11200 is simple and straightforward. The first thing you
 />
 
 
-5. Type <b>RAK</b> in the search bar. The RAKwireless WisBlock Core modules will be shown in the window.  
+5. Type **RAK** in the search bar. The RAKwireless WisBlock Core modules will be shown in the window.  
 
 <rk-img
   src="/assets/images/wisblock/rak11200/quickstart/05-add-bsp.png"
@@ -213,6 +212,9 @@ Core Debug Level:"No"
 In case of upload error, the **Upload Speed** must be reduced.
 :::
 
+### Library Management on Arduino
+
+In the Arduino IDE, the Library Manager and the libraries installed are available for every Arduino sketch.
 
 ### Reserved GPIO Pins
 
@@ -248,7 +250,7 @@ OTA stands for Over-The-Air. This feature allows uploading a new program to RAK1
 
 If you already installed the RAKwireless ESP32, then the BasicOTA sketch has also been installed. 
 
-1. Open the Arduino IDE -> File -> Examples-> ArduinoOTA-> BasicOTA
+1. Open the Arduino IDE -> File -> Examples-> ArduinoOTA-> BasicOTA.
 
 <rk-img
   src="/assets/images/wisblock/rak11200/quickstart/arduino-ota-sketch.png"
@@ -385,9 +387,9 @@ git clone https://github.com/RAKWireless/WisBlock.git
 
 - The platform folder path is similar to the following:
 
-  - Windows: <b>%userprofile%\.platformio\platforms\espressif32\boards</b>
-  - Linux (Ubuntu): <b>$HOME/.platformio/platforms/espressif32/boards</b>
-  - Mac OS: <b>/Users/{Your_User_id}/.platformio/platforms/espressif32/boards</b>
+  - Windows: **%userprofile%\.platformio\platforms\espressif32\boards**
+  - Linux (Ubuntu): **$HOME/.platformio/platforms/espressif32/boards**
+  - Mac OS: **/Users/{Your_User_id}/.platformio/platforms/espressif32/boards**
 
 ### Add WisBlock Core RAK11200 to the Framework
 
@@ -395,9 +397,14 @@ Copy the folder **WisCore_RAK11200_Board** located on **<cloned_dir>\WisBlock\Pl
 
 - The espressif32 package folder path is similar to the following:
 
-  - Windows: <b>%userprofile%\.platformio\packages\framework-arduinoespressif32\variants</b>
-  - Linux (Ubuntu):  <b>$HOME/.platformio/packages/framework-arduinoespressif32/variants</b>
-  - Mac OS: <b>/Users/{Your_User_id}/.platformio/packages/framework-arduinoespressif32</b>
+  - Windows: **%userprofile%\.platformio\packages\framework-arduinoespressif32\variants**
+  - Linux (Ubuntu):  **$HOME/.platformio/packages/framework-arduinoespressif32/variants**
+  - Mac OS: **/Users/{Your_User_id}/.platformio/packages/framework-arduinoespressif32**
+
+### Library Management on PlatformIO
+
+The PlatformIO libraries are managed on a per-project basis. You install a library for a specific project and not for the entire IDE.
+Thus it is possible to have the same library working with different versions in two different projects.
 
 
 

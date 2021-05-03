@@ -88,7 +88,7 @@ Only the I2C related pins, interrupt pins, VDD, and GND are connected to this mo
 :::
 
 <rk-img
-  src="/assets/images/wisblock/rak12003/datasheet/RAK12003_connector_pinout.png"
+  src="/assets/images/wisblock/rak12003/datasheet/rak12003_connector_pinout.png"
   width="50%"
   caption="RAK12003 WisBlock Infrared Temperature Sensor connector pinout"
 />

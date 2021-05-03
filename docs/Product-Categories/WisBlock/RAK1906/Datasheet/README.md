@@ -60,10 +60,6 @@ Only the I2C related pin, VDD, and GND are connected to this module.
   caption="RAK1906 WisBlock Environmental Sensor Pinout"
 />
 
-Pins 10, 12, 13, and 15 are connected to the interrupt pins of LIS3DH, refer to the datasheet of LIS3DH for details.
-
-- Pins 10, 12, 13, and 15 are connected to the interrupt pins of LIS3DH, please refer to the datasheet of LIS3DH for details.
-:::
 
 #### Sensors
 

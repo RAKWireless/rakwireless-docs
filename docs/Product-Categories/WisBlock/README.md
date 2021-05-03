@@ -12,7 +12,7 @@ Its modular approach makes it easy to implement low power wide area network (LPW
 Using industry grade connectors WisBlock is not only applicable for rapid prototyping, development of solutions, but the same hardware can be used in the final product and mass production.
 In a small size of just 30 x 60mm WisBlock combines a MCU, LoRa© communication, up to 4 on-board sensors and IO or communication extensions.
 WisBlock solutions can be coded with the easy to use entry level Arduino™ IDE or PlatformIO extension for Atom or MSVC. The Arduino™ framework offers a wide range of libraries that are ready to use. For larger projects WisBlock solutions can be created as well with professional IDE’s like the Segger Embedded Studio or Keil.
-WisBlock consists of WisBase, WisCore, WisSensor and WisIO modules.
+WisBlock consists of WisBlock Base, WisBlock Core, WisBlock Wireless, WisBlock Sensor, WisBlock Interface, WisBlock Display, WisBlock Extra, WisBlock Storage and WisBlock Power.
 
 </rk-head>
 

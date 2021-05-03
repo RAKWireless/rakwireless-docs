@@ -41,7 +41,7 @@ The **RAK14000** module provides an interface to connect an E-Ink Display, which
 The **RAK14000 E-Ink Display Module** is mounted to the IO Slot of a WisBlock Base Board. Figure 1 shows the mounting mechanism of the RAK14000 on a WisBlock Base, such as the RAK5005-O.  
 
 <rk-img
-  src="/assets/images/wisblock/rak14000/datasheet/RAK14000-mounting.png"
+  src="/assets/images/wisblock/rak14000/datasheet/rak14000-mounting.png"
   width="50%"
   caption="RAK14000 Module Mounting"
 />

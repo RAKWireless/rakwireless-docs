@@ -56,7 +56,7 @@ The overview covers the RAK4631 board overview and the mounting mechanics of the
 #### Board Overview
 
 <rk-img
-  src="/assets/images/wisblock/rak4631/datasheet/rak4631_overview.png"
+  src="/assets/images/wisblock/rak4631/datasheet/rak4631overview.png"
   width="80%"
   caption="RAK4631 Overview"
 />

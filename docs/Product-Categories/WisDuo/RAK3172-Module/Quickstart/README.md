@@ -36,21 +36,21 @@ Before going through the step in the installation guide of the RAK3172 WisDuo LP
 
 #### List of Acronyms
 
-| Acronym |        Definition       |
-| ------- | ----------------------- |
-|   DFU   | Device Firmware Upgrade |
-|   JTAG  | Joint Test Action Group |
-|  LoRa  |       Long Range        |
-|  OTAA   |Over-The-Air-Activation  |
-|  ABP    | Activation-By-Personalization (ABP)|
-|  TTN    | The Things Network  |
-|  DEVEUI    |    Device EUI (Extended Unique Identification)  |
-|  APPEUI    |    Application EUI (Extended Unique Identification)  |
-|  APPKEY    |    Application Key   |
-|  DEVADDR   |    Device Address |
-|  NWKSKEY   |    Network Session Key   |
-|  APPSKEY   |    Application Session Key   |
-|  P2P      |     Point to Point  |
+| Acronym | Definition                                       |
+| ------- | ------------------------------------------------ |
+| DFU     | Device Firmware Upgrade                          |
+| JTAG    | Joint Test Action Group                          |
+| LoRa    | Long Range                                       |
+| OTAA    | Over-The-Air-Activation                          |
+| ABP     | Activation-By-Personalization (ABP)              |
+| TTN     | The Things Network                               |
+| DEVEUI  | Device EUI (Extended Unique Identification)      |
+| APPEUI  | Application EUI (Extended Unique Identification) |
+| APPKEY  | Application Key                                  |
+| DEVADDR | Device Address                                   |
+| NWKSKEY | Network Session Key                              |
+| APPSKEY | Application Session Key                          |
+| P2P     | Point to Point                                   |
 
 
 ## Product Configuration
@@ -61,7 +61,7 @@ RAK3172 module can be configured using AT commands via UART interface. You need 
 
 #### Connect to the RAK3172
 
-1. Connect the RAK3172 to the serial port of a general-purpose computer (USB port) using a USB to UART TTL adapter like [RAKDAP1](https://store.rakwireless.com/collections/accessories/products/daplink-tool), as shown in figure 1.
+1. Connect the RAK3172 to the serial port of a general-purpose computer (USB port) using a USB to UART TTL adapter like [RAKDAP1](https://store.rakwireless.com/collections/accessories/products/daplink-tool), as shown in Figure 1.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/RAK3172_UART_Connection.svg"
@@ -101,13 +101,13 @@ In this guide, you need to have a working gateway that is connected to TTN or yo
   caption="RAK3172 in the context of the TTN"
 />
 
-As shown in figure 2, the RAK3172 module is one of the devices located on the left side. In the context of an IoT solution, the objective is to deploy devices to sense relevant process variables and transmit the data to the backend servers located in the cloud. The data will be processed and integrated as part of a larger solution that ultimately could generate efficiency, traceability and predictability capacity among others.
+As shown in Figure 2, the RAK3172 module is one of the devices located on the left side. In the context of an IoT solution, the objective is to deploy devices to sense relevant process variables and transmit the data to the backend servers located in the cloud. The data will be processed and integrated as part of a larger solution that ultimately could generate efficiency, traceability and predictability capacity among others.
 
 The RAK3172 module can be part of this ecosystem, and the objective of this section is to demonstrate how simple it is to send data to the TTN using the LoRaWAN protocol. To achieve this, the RAK3172 module must be located inside of the coverage of a LoRaWAN gateway. 
 
 #### Registration to TTN and Creating LoRaWAN Applications
 
-The first step is to go to [The Things Network platform](https://console.cloud.thethings.network/) and select a cluster as shown on figure 3.
+The first step is to go to [The Things Network platform](https://console.cloud.thethings.network/) and select a cluster as shown on Figure 3.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_1.png"
@@ -133,7 +133,7 @@ To register as a new user to TTN, click on **Login with The Things ID** then sel
 
 You should now be on the step of creating your TTN account. Fill all the necessary details and activate your account.
 
-After creating an account, you should login on the platform using your username/email and password then click **Submit** as shown on figure 6.
+After creating an account, you should login on the platform using your username/email and password then click **Submit** as shown on Figure 6.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_4.png"
@@ -169,7 +169,7 @@ If you have no error on previous step, you should now be on the application cons
 
 #### TTN OTAA Device Registration
 
-You need to go to your application console to be able to register a device. To start adding an OTAA end-device, you need to click **+ Add end device** as shown on figure 10.
+You need to go to your application console to be able to register a device. To start adding an OTAA end-device, you need to click **+ Add end device** as shown on Figure 10.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_8.png"
@@ -191,7 +191,7 @@ To register the module, you need to click first **Manually** then configure the 
   caption="Device activation configuration"
 />
 
-Then you need to put a unique **End device ID** and EUIs (**DevEUI** and **AppEUI**) as shown on figure 13. Check if your module has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI.
+Then you need to put a unique **End device ID** and EUIs (**DevEUI** and **AppEUI**) as shown on Figure 13. Check if your module has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI.
 
 Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
 
@@ -225,7 +225,7 @@ The last step in the registration of a new OTAA end-device is the configuration 
   caption="OTAA AppKey generation and device registration"
 />
 
-You should now be able to see the device on the TTN console after you fully registered your device as shown on figure 16.
+You should now be able to see the device on the TTN console after you fully registered your device as shown on Figure 16.
 
 :::tip 📝 NOTE:
 
@@ -233,7 +233,7 @@ The **AppEUI**, **DevEUI** and **AppKey** are the parameters that you will need 
 
 The three OTAA parameters on the TTN device console are MSB by default. 
 
-These parameters are always accessible on the device console page as shown on figure 16.
+These parameters are always accessible on the device console page as shown on Figure 16.
 :::
 
 <rk-img
@@ -261,15 +261,15 @@ ATE
 
 `ATE` will echo the commands you input to the module which is useful for tracking the commands and troubleshooting.
 
-You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK` as shown on figure 17.
+You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK` as shown on Figure 17.
 
 :::tip 📝 NOTE:
 
-If do not receive an `OK` or any reply, you need to check if the wiring of your UART lines is correct and if the baud is correclty configured to 9600. Also you can check if the device is powered correctly. If you are getting power from USB port, ensure that you have a good USB cable.
+If do not receive an `OK` or any reply, you need to check if the wiring of your UART lines is correct and if the baud is correctly configured to 9600. Also you can check if the device is powered correctly. If you are getting power from USB port, ensure that you have a good USB cable.
 :::
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/AT_START.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/atstart.png"
   width="65%"
   caption="at+version command response"
 />
@@ -322,7 +322,7 @@ AT+BAND=4
 
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/OTAA_CONFIG.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/otaaconfig.png"
   width="65%"
   caption="Configuring LoRa Parameters"
 />
@@ -355,7 +355,7 @@ AT+APPKEY=04FA4E626EF5CF227C969601176275C2
 ```
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/OTAA_EUIS.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/otaaeuis.png"
   width="65%"
   caption="Configuring LoRa Parameters"
 />
@@ -367,14 +367,15 @@ AT+JOIN=1:0:10:8
 ```
 
 Join command format: **`AT+JOIN=w:x:y:z`**
-| Parameter  | Description |
-| ----- | --------------------------------------------- |
-| w     | Join command - 1: joining, 0: stop joining.                   |
-| x     | Auto-join config - 1: auto-join on powerup, 0: no auto-join   |
-| y     | Reattempt interval in seconds (7-255) - 8 is default.                    |
-| z     | Number of join attempts (0-255) - 0 is default.               |
 
-After 5 or 6 seconds, if the request was successfully received by a LoRa gateway, then you should see `+EVT:JOINED` status reply as shown on figure 20.
+| Parameter | Description                                                 |
+| --------- | ----------------------------------------------------------- |
+| w         | Join command - 1: joining, 0: stop joining.                 |
+| x         | Auto-join config - 1: auto-join on powerup, 0: no auto-join |
+| y         | Reattempt interval in seconds (7-255) - 8 is default.       |
+| z         | Number of join attempts (0-255) - 0 is default.             |
+
+After 5 or 6 seconds, if the request was successfully received by a LoRa gateway, then you should see `+EVT:JOINED` status reply as shown on Figure 20.
 
 :::tip 📝 NOTE:
 
@@ -391,7 +392,7 @@ AT+SEND=2:12345678
 Send command format: **`AT+SEND=<port>:<payload>`**
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/OTAA_JOIN.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/otaajoin.png"
   width="70%"
   caption="OTAA Test Sample Data Sent via RAK Serial Port Tool"
 />
@@ -400,7 +401,7 @@ You can see the data sent by the RAK3172 module on the TTN device console *Live 
 
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/OTAA_SEND.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/otaasend.png"
   width="90%"
   caption="OTAA Test Sample Data Sent Viewed in TTN"
 />
@@ -408,7 +409,7 @@ You can see the data sent by the RAK3172 module on the TTN device console *Live 
 
 #### TTN ABP Device Registration
 
-To register an ABP device, you need to go to your application console and select the application where you want your device to be added. Then you need to to click **+ Add end device** as shown in figure 22.
+To register an ABP device, you need to go to your application console and select the application where you want your device to be added. Then you need to to click **+ Add end device** as shown in Figure 22.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_8.png"
@@ -430,7 +431,7 @@ To register the module, you need to click first **Manually** then configure the 
   caption="Manually register device to TTN"
 />
 
-At this step, you need to put a unique **End device ID** and **DevEUI** as shown on figure 25. Check if your module has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI.
+At this step, you need to put a unique **End device ID** and **DevEUI** as shown on Figure 25. Check if your module has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI.
 
 Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
 
@@ -464,7 +465,7 @@ The last step in the registration of a new ABP end-device is the configuration o
   caption="ABP Activation in TTN"
 />
 
-You should now be able to see the device on the TTN console after you fully registered your device as shown on figure 28.
+You should now be able to see the device on the TTN console after you fully registered your device as shown on Figure 28.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_5_abp.png"
@@ -488,15 +489,15 @@ ATE
 
 ATE will echo the commands you input to the module which is useful for tracking the commands and troubleshooting.
 
-You will receive OK when you input the two commands. After setting ATE, you can now see all the commands you input together with the replies. Try again AT and you should see it on the terminal followed by OK as shown on figure 17.
+You will receive OK when you input the two commands. After setting ATE, you can now see all the commands you input together with the replies. Try again AT and you should see it on the terminal followed by OK as shown on Figure 17.
 
 :::tip 📝 NOTE:
 
-If do not receive an `OK` or any reply, you need to check if the wiring of your UART lines is correct and if the baud is correclty configured to 9600. Also you can check if the device is powered correctly. If you are getting power from USB port, ensure that you have a good USB cable.
+If do not receive an `OK` or any reply, you need to check if the wiring of your UART lines is correct and if the baud is correctly configured to 9600. Also you can check if the device is powered correctly. If you are getting power from USB port, ensure that you have a good USB cable.
 :::
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/AT_START.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/atstart.png"
   width="65%"
   caption="at+version command response"
 />
@@ -548,7 +549,7 @@ AT+BAND=4
 
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABP_CONFIG.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconfig.png"
   width="65%"
   caption="Configuring LoRa Parameters"
 />
@@ -578,7 +579,7 @@ AT+NWKSKEY=433C7A924F7F6947778FE821525F183A
 ```
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABP_EUIS.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpeuis.png"
   width="65%"
   caption="Configuring LoRa Parameters"
 />
@@ -590,12 +591,12 @@ AT+JOIN=1:0:8:0
 ```
 
 Join command format: **`AT+JOIN=w:x:y:z`**
-| Parameter  | Description |
-| ----- | --------------------------------------------- |
-| w     | Join command - 1: joining, 0: stop joining.                   |
-| x     | Auto-join config - 1: auto-join on powerup, 0: no auto-join   |
-| y     | Reattempt interval in seconds (7-255) - 8 is default.                    |
-| z     | Number of join attempts (0-255) - 0 is default.               |
+| Parameter | Description                                                 |
+| --------- | ----------------------------------------------------------- |
+| w         | Join command - 1: joining, 0: stop joining.                 |
+| x         | Auto-join config - 1: auto-join on powerup, 0: no auto-join |
+| y         | Reattempt interval in seconds (7-255) - 8 is default.       |
+| z         | Number of join attempts (0-255) - 0 is default.             |
 
 
 With the end-device properly activated, you can now try to send some payload after successful join.
@@ -613,7 +614,7 @@ After checking all the things above, try to send LoRaWAN payloads again.
 :::
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABP_JOIN.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpjoin.png"
   width="70%"
   caption="ABP Test Sample Data Sent via RAK Serial Port Tool"
 />
@@ -622,7 +623,7 @@ You can see the data sent by the RAK3172 module on the TTN device console *Live 
 
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABP_SEND.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpsend.png"
   width="70%"
   caption="OTAA Test Sample Data Sent Viewed in TTN"
 />
@@ -808,15 +809,15 @@ ATE
 
 `ATE` will echo the commands you input to the module which is useful for tracking the commands and troubleshooting.
 
-You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK` as shown on figure 47.
+You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK` as shown on Figure 47.
 
 :::tip 📝 NOTE:
 
-If do not receive an `OK` or any reply, you need to check if the wiring of your UART lines is correct and if the baud is correclty configured to 9600. Also you can check if the device is powered correctly. If you are getting power from USB port, ensure that you have a good USB cable.
+If do not receive an `OK` or any reply, you need to check if the wiring of your UART lines is correct and if the baud is correctly configured to 9600. Also you can check if the device is powered correctly. If you are getting power from USB port, ensure that you have a good USB cable.
 :::
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/AT_START.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/atstart.png"
   width="65%"
   caption="at+version command response"
 />
@@ -869,7 +870,7 @@ AT+BAND=4
 
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/OTAA_CONFIG.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/otaaconfig.png"
   width="65%"
   caption="Configuring LoRa Parameters"
 />
@@ -878,7 +879,7 @@ AT+BAND=4
 After configuration of the LoRaWAN parameters, the next step is to setup the DevEUI and AppKey. You need the use the values from the Chirpstack device console. 
 
 :::tip 📝 NOTE:
-Remember, the Application EUI parameter is not required in the ChirpStack platform; therefore, it possible to use the same id as the Device EUI. 
+The Application EUI parameter is not required in the ChirpStack platform; therefore, it possible to use the same id as the Device EUI. 
 ::: 
 
 - Device EUI: **5E9D1E0857CF25F1**
@@ -917,12 +918,13 @@ AT+JOIN=1:0:10:8
 ```
 
 Join command format: **`AT+JOIN=w:x:y:z`**
-| Parameter  | Description |
-| ----- | --------------------------------------------- |
-| w     | Join command - 1: joining, 0: stop joining.                   |
-| x     | Auto-join config - 1: auto-join on powerup, 0: no auto-join   |
-| y     | Reattempt interval in seconds (7-255) - 8 is default.                    |
-| z     | Number of join attempts (0-255) - 0 is default.               |
+
+| Parameter | Description                                                 |
+| --------- | ----------------------------------------------------------- |
+| w         | Join command - 1: joining, 0: stop joining.                 |
+| x         | Auto-join config - 1: auto-join on powerup, 0: no auto-join |
+| y         | Reattempt interval in seconds (7-255) - 8 is default.       |
+| z         | Number of join attempts (0-255) - 0 is default.             |
 
 After 5 or 6 seconds, if the request was successfully received by a LoRa gateway, then you should see JOINED status reply.
 
@@ -1007,15 +1009,15 @@ ATE
 
 `ATE` will echo the commands you input to the module which is useful for tracking the commands and troubleshooting.
 
-You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK` as shown on figure 54.
+You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK` as shown on Figure 54.
 
 :::tip 📝 NOTE:
 
-If do not receive an `OK` or any reply, you need to check if the wiring of your UART lines is correct and if the baud is correclty configured to 9600. Also you can check if the device is powered correctly. If you are getting power from USB port, ensure that you have a good USB cable.
+If do not receive an `OK` or any reply, you need to check if the wiring of your UART lines is correct and if the baud is correctly configured to 9600. Also you can check if the device is powered correctly. If you are getting power from USB port, ensure that you have a good USB cable.
 :::
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/AT_START.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/atstart.png"
   width="65%"
   caption="at+version command response"
 />
@@ -1068,7 +1070,7 @@ AT+BAND=4
 
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABP_CONFIG.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconfig.png"
   width="65%"
   caption="Configuring LoRa Parameters"
 />
@@ -1111,12 +1113,13 @@ AT+JOIN=1:0:10:8
 ```
 
 Join command format: **`AT+JOIN=w:x:y:z`**
-| Parameter  | Description |
-| ----- | --------------------------------------------- |
-| w     | Join command - 1: joining, 0: stop joining.                   |
-| x     | Auto-join config - 1: auto-join on powerup, 0: no auto-join   |
-| y     | Reattempt interval in seconds (7-255) - 8 is default.                    |
-| z     | Number of join attempts (0-255) - 0 is default.               |
+
+| Parameter | Description                                                 |
+| --------- | ----------------------------------------------------------- |
+| w         | Join command - 1: joining, 0: stop joining.                 |
+| x         | Auto-join config - 1: auto-join on powerup, 0: no auto-join |
+| y         | Reattempt interval in seconds (7-255) - 8 is default.       |
+| z         | Number of join attempts (0-255) - 0 is default.             |
 
 After 5 or 6 seconds, if the request was successfully received by a LoRa gateway, then you should see JOINED status reply.
 
@@ -1156,7 +1159,7 @@ Try again `AT` and you should see it on the terminal followed by `OK`.
 
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/AT_START.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/atstart.png"
   width="90%"
   caption="at+version command response"
 />
@@ -1168,7 +1171,7 @@ AT+NWM=0
 ```
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/P2P_WORKMODE.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/p2pworkmode.png"
   width="90%"
   caption="P2P Mode"
 />
@@ -1202,7 +1205,7 @@ Refer to the [P2P Mode](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Man
 
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/P2P_SETUP.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/p2psetup.png"
   width="90%"
   caption="Configuring P2P in both RAK3172 Module"
 />
@@ -1223,7 +1226,7 @@ AT+PSEND=11223344
 ```
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/P2P_TX_RX.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/p2p_txrx.png"
   width="90%"
   caption="Configuring P2P in both RAK3172 Module"
 />
@@ -1247,11 +1250,11 @@ Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKD
 
 Refer to the table for the minimum hardware and software required to perform the firmware upgrade using J-Link.
 
-| Hardware/Software | Requirement |
-| --- | --- |
-|  Computer |  A Windows/Ubuntu/Mac computer |
-|  Firmware File | Bin firmware file downloaded from the website|
-| Others  |  A USB to TTL module |
+| Hardware/Software | Requirement                                   |
+| ----------------- | --------------------------------------------- |
+| Computer          | A Windows/Ubuntu/Mac computer                 |
+| Firmware File     | Bin firmware file downloaded from the website |
+| Others            | A USB to TTL module                           |
 
 
 

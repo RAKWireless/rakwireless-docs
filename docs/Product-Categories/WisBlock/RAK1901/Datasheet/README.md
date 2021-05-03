@@ -2,7 +2,8 @@
 tags:
   - datasheet
   - wisblock
-prev: ../Overview/
+prev: ../Quickstart/
+next: false
 ---
 
 # RAK1901 WisBlock Temperature and Humidity Sensor Datasheet

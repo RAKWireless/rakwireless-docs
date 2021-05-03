@@ -320,7 +320,7 @@ at+join
 ```
 
 <rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/v14-abp-oin.png"
+  src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/v14-abp-join.png"
   width="90%"
   caption="Join command"
 />

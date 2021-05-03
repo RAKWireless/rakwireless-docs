@@ -50,7 +50,7 @@ The RAK1902 module gives us information about:
 - Barometric Pressure
 - Environment Temperature
 
-RAK1902 module can be connected on any slot of WisBlock Base to communicate with the WisBlock Core. It will work on **SLOT A to D**. Also, it always secure the connection of the WisBlock module by using the compatible screws.
+RAK1902 module can be connected on any slot of WisBlock Base to communicate with the WisBlock Core. It will work on **SLOT A to D**. Also, always secure the connection of the WisBlock module by using the compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak1902/quickstart/rak1902_assembly.png"
@@ -62,7 +62,7 @@ RAK1902 module can be connected on any slot of WisBlock Base to communicate with
 
 ##### Assembling
 
-As shown in Figure 2, the location for Slot A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the module.
+As shown in **Figure 2**, the location for Slot A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the module.
 
 <rk-img
   src="/assets/images/wisblock/rak1902/quickstart/14.wisblock-sensor-silkscreen.png"
@@ -90,7 +90,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
   caption="Detaching silkscreen on the WisBlock module"
 />
 
-3. Apply force to the module at the position of the connector, as shown in Figure 5, to detach the module from the baseboard.
+3. Apply force to the module at the position of the connector, as shown in **Figure 5**, to detach the module from the baseboard.
 
 <rk-img
   src="/assets/images/wisblock/rak1902/quickstart/18.detaching-module.png"
@@ -107,13 +107,13 @@ After all this setup, you can now connect the battery and USB cable to start pro
 
 ### Software Configuration and Example
 
-The RAK1902 is a pressure sensor board that contains LPS22HB. The LPS22HB is an ultra-compact piezoresistive absolute pressure sensor that functions as a digital output barometer. The device comprises a sensing element and an IC interface which communicates through I2C from the sensing element to the application.
+The RAK1902 is a pressure sensor board that contains LPS22HB chip. The LPS22HB is an ultra-compact piezoresistive absolute pressure sensor that functions as a digital output barometer. The device comprises a sensing element and an IC interface which communicates through I2C from the sensing element to the application.
 
 #### Initial Test of the RAK1902 WisBlock Module
 
 If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
 
-1. You need to select first the WisBlock Core you have.
+1. You need to select first the WisBlock Core you have, as shown in **Figure 6** and **Figure 7**.
 
 <rk-img
   src="/assets/images/wisblock/rak1902/quickstart/rak4631_board.png"
@@ -127,54 +127,54 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK11200 as WisBlock Core"
 />
 
-2. The [Basic Sample Code for RAK1902](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1902_Pressure_LPS22HB) in Github will work on all WisBlock Core. You can open the the example codes depending on your WisBlock Core, as shown in Figure 8 and Figure 9. 
+2. The [Basic Sample Code for RAK1902](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1902_Pressure_LPS22HB) in Github will work on all WisBlock Core. You can open the the example codes depending on your WisBlock Core, as shown in **Figure 8** and **Figure 9**. 
 
 <rk-img
   src="/assets/images/wisblock/rak1902/quickstart/rak4631_pressure.png"
   width="100%"
-  caption="Opening RAK1902 example for RAK4631 WisBlock Core"
+  caption="Opening RAK1902 example code for RAK4631 WisBlock Core"
 />
 
 <rk-img
   src="/assets/images/wisblock/rak1902/quickstart/rak11200_pressure.png"
   width="100%"
-  caption="Opening RAK1902 example for RAK11200 WisBlock Core"
+  caption="Opening RAK1902 example code for RAK11200 WisBlock Core"
 />
 
-3. Once the example code is open, install the [Adafruit LPS2X](https://github.com/adafruit/Adafruit_LPS2X) library by clicking the yellow highlighted link, as shown in Figure 10 and Figure 11.
+3. Once the example code is open, install the [Adafruit LPS2X](https://github.com/adafruit/Adafruit_LPS2X) library by clicking the yellow highlighted link, as shown in **Figure 10** and **Figure 11**.
 
 <rk-img
   src="/assets/images/wisblock/rak1902/quickstart/adafruit_lib.png"
   width="100%"
-  caption="Opening RAK1902 example for RAK4631 WisBlock Core"
+  caption="Accessing the library used for RAK1902 Module"
 />
 
 <rk-img
   src="/assets/images/wisblock/rak1902/quickstart/adafruit_done.png"
   width="100%"
-  caption="Opening RAK1902 example for RAK11200 WisBlock Core"
+  caption="Installing the compatible library for RAK1902 Module"
 />
 
-4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in Figure 12 and Figure 13.
+4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 12** and **Figure 13**.
 
 <rk-img
   src="/assets/images/wisblock/rak1902/quickstart/select_port.png"
   width="100%"
-  caption="Opening RAK1902 example for RAK4631 WisBlock Core"
+  caption="Selecting the correct Serial Port"
 />
 
 <rk-img
   src="/assets/images/wisblock/rak1902/quickstart/upload.png"
   width="100%"
-  caption="Opening RAK1902 example for RAK11200 WisBlock Core"
+  caption="Uploading the RAK1902 example code"
 />
 
-5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in <b> Figure 14</b>, then your RAK1902 is properly communicating to the WisBlock core.
+5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 14**, then your RAK1902 is properly communicating to the WisBlock core.
 
 <rk-img
   src="/assets/images/wisblock/rak1902/quickstart/pressure_logs.png"
   width="80%"
-  caption="Reading RAK1902 logs"
+  caption="RAK1902 pressure and temperature data logs"
 />
 
 
@@ -183,7 +183,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
 For WisBlock Core RAK4630, it has an example for [LoRaWAN Weather Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Weather_Monitoring) with RAK1902 Pressure Module. 
    
 <rk-img
-  src="/assets/images/wisblock/rak1902/quickstart/lorawan_pressure.png"
+  src="/assets/images/wisblock/rak1902/quickstart/lorawan_weather.png"
   width="100%"
   caption="LoRaWAN Weather Monitoring example"
 />
