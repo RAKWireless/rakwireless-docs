@@ -13,7 +13,7 @@ The Pulsar cable is a high-grade cable, suitable for all gateways from the **Wis
 
 ###  Features
 
--   Cable length variants: 5&nbsp;m, 10&nbsp;m
+-   Cable length variants: 5&nbsp;m / 16.40&nbsp;ft, 10&nbsp;m / 32.80&nbsp;ft
 -   Connector: RP-SMA male to N-type female
 -   Frequency Range: 0~6&nbsp;GHz
 -   Cable type: LMR400
@@ -22,18 +22,18 @@ The Pulsar cable is a high-grade cable, suitable for all gateways from the **Wis
 
 ## Specifications 
 
-| Feature                    | Specifications               |
-| :------------------------- | ---------------------------- |
-| Model                      | Pulsar cable                 |
-| Frequency range            | 0~6&nbsp;GHz                 |
-| VSWR                       | ≤ 1.5                        |
-| Length                     | 5&nbsp;m, 10&nbsp;m          |
-| Cable type                 | LMR400                       |
-| Impedance                  | 50&nbsp;Ω                    |
-| Color                      | Black                        |
-| Connector type             | RP-SMA male to N-type female |
-| Operation temperature (°C) | -40&nbsp;°C ~ +85&nbsp;°C    |
-| Humidity range             | 5% ~ 95%                     |
+| Feature                    | Specifications                                      |
+| :------------------------- | --------------------------------------------------- |
+| Model                      | Pulsar cable                                        |
+| Frequency range            | 0~6&nbsp;GHz                                        |
+| VSWR                       | ≤ 1.5                                               |
+| Length                     | 5&nbsp;m / 16.40&nbsp;ft, 10&nbsp;m / 32.80&nbsp;ft |
+| Cable type                 | LMR400                                              |
+| Impedance                  | 50&nbsp;Ω                                           |
+| Color                      | Black                                               |
+| Connector type             | RP-SMA male to N-type female                        |
+| Operation temperature (°C) | -40&nbsp;°C ~ +85&nbsp;°C                           |
+| Humidity range             | 5% ~ 95%                                            |
 
 ### Power Loss Report
 
@@ -54,7 +54,7 @@ The Pulsar cable is a high-grade cable, suitable for all gateways from the **Wis
 <rk-img
   src="/assets/images/accessories/rak9733/datasheet/connectors.png"
   width="45%"
-  caption="Connectors Types"
+  caption="Connector Types"
 />
 
 #### Dimensions

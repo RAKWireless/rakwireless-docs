@@ -1497,11 +1497,14 @@ By default, MaxEIRP is considered to be +16&nbsp;dBm.
 
 <b> US915 </b>
 
-| TXPower | Configuration (conducted power) |
+By default, MaxEIRP is considered to be +30&nbsp;dBm based on LoRa Alliance specification.
+However, the module's max TX power is only up to 20&nbsp;dBm. 
+
+| TXPower | Configuration (Conducted Power) |
 | ------- | ------------------------------- |
-| 0       | 30&nbsp;dBm - 2*TXpower         |
-| 1       | 28&nbsp;dBm                     |
-| 2       | 26&nbsp;dBm                     |
+| 0       | MaxEIRP                         |
+| 1       | MaxEIRP - 2&nbsp;dB             |
+| 2       | MaxEIRP - 4&nbsp;dB             |
 | 3 ~ 9   |                                 |
 | 10      | 10&nbsp;dBm                     |
 | 11 ~ 15 | RFU                             |
@@ -1510,7 +1513,8 @@ By default, MaxEIRP is considered to be +16&nbsp;dBm.
 
 <b> AU915 </b>
 
-By default, MaxEIRP is considered to be +30&nbsp;dBm. 
+By default, MaxEIRP is considered to be +30&nbsp;dBm based on LoRa Alliance specification.
+However, the module's max TX power is only up to 20&nbsp;dBm. 
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1562,7 +1566,8 @@ By default, Max EIRP shall be 16&nbsp;dBm.
 
 <b> IN865 </b>
 
-By default, MaxEIRP is considered to be 30&nbsp;dBm. 
+By default, MaxEIRP is considered to be +30&nbsp;dBm based on LoRa Alliance specification.
+However, the module's max TX power is only up to 20&nbsp;dBm. 
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |

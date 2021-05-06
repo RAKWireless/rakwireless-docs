@@ -96,7 +96,7 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
 | 22          | RST           |          | MCU Reset (NRST)                                                 |
 | 23          | GND           |          | Ground connections                                               |
 | 24          | VDD           |          | VDD - Voltage Supply                                             |
-| 25          | PA0/ADC4      | I/O      | GPIO and ADC                                                     |
+| 25          | PA10/ADC4      | I/O      | GPIO and ADC                                                     |
 | 26          | PB2/ADC3      | I/O      | GPIO and ADC                                                     |
 | 27          | PB12          | I/O      | GPIO only                                                        |
 | 28          | GND           |          | Ground connections                                               |

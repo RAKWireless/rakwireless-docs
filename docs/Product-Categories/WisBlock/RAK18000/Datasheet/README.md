@@ -7,7 +7,7 @@ next: false
 ---
 
 
-# RAK18000 PDM Stereo Microphone Module Datasheet
+# RAK18000 WisBlock PDM Stereo Microphone Module Datasheet
 
 ## Overview
 <rk-img
@@ -18,7 +18,7 @@ next: false
 
 ### Description
 
-**RAK18000** is a **WisBlock IO** module that extends the **WisBlock** system with sound sensing capability. It is based on two MP34DT06 microphone modules.
+**RAK18000** is a **WisBlock Sensor** module that extends the **WisBlock** system with sound sensing capability. It is based on two MP34DT06 microphone modules.
 
 The RAK18000 is a digital microphone module that is designed to detect sounds and to support left and right channels. It is also capable of changing microphone orientation on the left or right channel through the switch resistor.
 

@@ -21,7 +21,7 @@ The Pulsar cable is a high-grade cable, suitable for all gateways from the **Wis
 
 ## Product Features
 
--   Cable length variants: 5&nbsp;m, 10&nbsp;m
+-   Cable length variants: 5&nbsp;m / 16.40&nbsp;ft, 10&nbsp;m / 32.80&nbsp;ft
 -   Connector: RP-SMA male to N-type female
 -   Frequency Range: 0~6&nbsp;GHz
 -   Cable type: LMR400

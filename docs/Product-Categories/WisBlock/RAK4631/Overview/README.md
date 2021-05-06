@@ -1,6 +1,8 @@
 ---
 rak_img: /assets/images/wisblock/rak4631/overview/RAK4631_home.png
 rak_desc: RAK4631 is a WisBlock Core module for RAK WisBlock. It extends the WisBlock series with a powerful Nordic nRF52840 MCU that supports Bluetooth 5.0 (Bluetooth Low Energy) and the newest LoRa transceiver from Semtech, the SX1262.
+next: ../Quickstart/
+prev: ../../
 rak_grp: [wisblock, wiscore]
 
 ---
@@ -9,9 +11,9 @@ rak_grp: [wisblock, wiscore]
 
 Thank you for choosing **RAK4631 WisBlock LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK4631 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [Arduino IDE BSP](/Knowledge-Hub/Learn/Installation-of-Board-Support-Package-in-Arduino-IDE/)
 * [PlatformIO BSP](/Knowledge-Hub/Learn/Board-Support-Package-Installation-in-PlatformIO/)
@@ -19,11 +21,11 @@ Thank you for choosing **RAK4631 WisBlock LPWAN Module** in your awesome IoT Pro
 * [RAK4631 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK4631.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
 
-**Examples:** 
-* [Sample Code: LoRa](https://github.com/RAKWireless/WisBlock/tree/master/examples/communications/LoRa)
-* [Sample Code: BLE](https://github.com/RAKWireless/WisBlock/tree/master/examples/communications/BLE)
-* [Sample Code: Battery Level](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK4630_Battery_Level_Detect)
-<!-- * [Sample Code: RAK4630_NOR-Flash](https://github.com/RAKWireless/WisBlock/tree/master/examples/sensors/RAK4630_NOR-Flash) -->
+**Examples:**
+* [RAK4631 example codes on folders **`RAK4630`** and **`common`**](https://github.com/RAKWireless/WisBlock/tree/master/examples)
+* [Sample Code: LoRa](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/communications/LoRa)
+* [Sample Code: BLE](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/communications/BLE)
+* [Sample Code: Battery Level](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/power/RAK4630_Battery_Level_Detect)
 
 ## Product Description
 
