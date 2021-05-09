@@ -56,7 +56,7 @@ By changing the states in the **BOOT0** and **BOOT1** pins of the RAK811, the us
 
 <faq>
 <template #question>
-4. How does OTAA (Over-the-Air Activation) network join works?
+4. How does OTAA (Over-the-Air Activation) network join work?
 </template>
 <template #answer>
 
