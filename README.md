@@ -1,4 +1,4 @@
-![RAK-only-gray](https://github.com/RAKWireless/rakwireless-docs-internal/blob/drafts/docs/.vuepress/public/assets/rakwireless/RAK-only-gray.png)
+![RAK-only-gray](https://github.com/RAKWireless/rakwireless-docs-internal/blob/drafts1/docs/.vuepress/public/assets/rakwireless/RAK-only-gray.png)
 
 
 # RAKwireless 
@@ -59,6 +59,3 @@ Contributions are highly appreciated. Feel free to dive in and follow the [**Con
 * [Store](https://store.rakwireless.com/)
 * [Forum](forum.rakwireless.com)
 * [News](news.rakwireless.com)
-
-
-

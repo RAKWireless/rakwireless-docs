@@ -312,7 +312,7 @@ After 5 or 6 seconds, if the request was successfully received by a LoRa gateway
 8. Try to send a message from the RAK811 Breakout Board.
 
 ```
-at+send:lora:2:1234567890
+at+send=lora:2:1234567890
 ```
 
 <rk-img
@@ -465,7 +465,7 @@ By using the ABP mode in LoRaWAN, it doesn’t require to join a network before 
 8. Try to send a data from the RAK811 Breakout Board to TTN in ABP mode.
 
 ```
-at+send:lora:2:1234567890 
+at+send=lora:2:1234567890 
 ```
 
 <rk-img

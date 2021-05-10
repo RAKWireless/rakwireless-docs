@@ -207,6 +207,190 @@ If you take a look at the Helium console you will also see the join request pack
   width="100%"
   caption="Helium console live device data"
 />
+
+### Configuring the Built-in Server
+
+The procedure for connecting the RAK7204 to the Built-in Server is straightforward and includes going through the following steps:
+
+1. Open a browser and access the Web UI of your WisGate Edge Gateway by entering its IP address in the browser address bar. You will be greeted by the Log in screen. The default user name/password are both **"root".**
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/built-in-server/1.png"
+  width="100%"
+  caption="Built-in Server Log in screen"
+/>
+
+Once you have logged in make sure you are in Network Server mode. By default the gateway is working in this mode, so if this is the first time you are configuring it it should already be set. If this is nit the case go to the Network Server menu, the Network Settings sub menu and select the Network Server option in the Mode drop-down menu:
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/built-in-server/2.png"
+  width="100%"
+  caption="Network Server mode"
+/>
+
+
+2. Start the Device registration process by going to the Application sub menu in the LoRa Network section and creating an application. Enter a name in the field, leave the default type and press "Save & Apply"
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/built-in-server/3.png"
+  width="100%"
+  caption="Creating your application"
+/>
+
+In the following screen you will see fields for the application parameters.
+
+In the Application Configuration sub-window enable the "Auto Add LoRa Device" functionality. Generate a random Application EUI and Application Key via the green arrow button next to the text fields. Note these down as you will need them for the RAK7204 configuration.
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/built-in-server/4.png"
+  width="100%"
+  caption="Application configuration"
+/>
+
+Move to the Payload Formats sub-window and set the payload format to "CayenneLPP" via the drop down menu. This is the format that the RAK7204 uses, thus enabling this functionality will allow you to see the parsed data in the Application Server. Finally enable the "Only forward the parsed data object" functionality, press the "Save & Apply" button to finalize the configuration changes.
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/built-in-server/5.png"
+  width="100%"
+  caption="Payload Format"
+/>
+
+3. Now that your application has been created you need to go to the device section by pressing the "Edit " button.
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/built-in-server/6.png"
+  width="100%"
+  caption="Editing an application"
+/>
+
+Now you are in the "Devices" section and you can add a device by entering its Device EUI, which you can find on a sticker on the back of the RAK7204. Press the "Add" button to proceed.
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/built-in-server/7.png"
+  width="100%"
+  caption="Adding a device"
+/>
+
+In the configuration screen enter a name for your device and leave the rest of the parameters with their default values (the Description is optional). Finish by pressing the "Save & Apply" button.
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/built-in-server/8.png"
+  width="100%"
+  caption="Device parameters"
+/>
+
+Your Device is now added to the Built-in server and you should see it in the "Devices" section.
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/built-in-server/9.png"
+  width="100%"
+  caption="Devices section"
+/>
+
+Next you need to import the same configuration in the RAK7204.
+
+#### Configuring the RAK7204
+
+Start by connecting to your RAK7204 as described in the [Product Configuration section of the Quick Start Guide.](#interfacing-with-the-rak7204-wisnode-sense-home)
+
+Open a terminal and check your firmware version using the command:
+
+```
+at+version
+```
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/built-in-server/10.png"
+  width="70%"
+  caption="Firmware version"
+/>
+
+If there is a newer firmware version at the [link](https://docs.rakwireless.com/Product-Categories/WisNode/RAK7204/Datasheet/#software), update using this [procedure](#burning-the-firmware).
+
+Follow the steps in order to update the RAK7204 configuration and connect it to the Built-in Server
+
+1. Import the **Device EUI** (from the label on the back), **Application EUI** and **Application Key** (you should have noted them down as instructed in the previous section), by executing the following commands in order (replace the "xxxx" with your values).
+
+**Device EUI**
+
+```
+at+set_config=lora:dev_eui:xxxx
+```
+
+**Application EUI**
+
+```
+at+set_config=lora:app_eui:xxxx
+```
+
+**Application Key**
+
+```
+at+set_config=lora:app_key:xxxx
+```
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/built-in-server/11.png"
+  width="70%"
+  caption="Importing EUIs and Key"
+/>
+
+2. Set the activation parameters (**LoRa Region**, **Device Class**, **Activation Mode**). This example will use the **EU868** regional band, **class A**, **OTAA** activation mode.
+
+**LoRa Region**
+
+```
+at+set_config=lora:region:EU868
+```
+
+**Device Class**
+
+```
+at+set_config=lora:class:0
+```
+
+**Activation Mode**
+
+```
+at+set_config=lora:join_mode:0
+```
+
+After executing the last command the node will automatically start the join procedure. If for some reason this is not the case, you can always use the command below to start the activation process:
+
+```
+at+join
+```
+
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/built-in-server/12.png"
+  width="70%"
+  caption="Activation parameters"
+/>
+
+Upon successful registration the following response will be shown in the Serial Tool.
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/built-in-server/13.png"
+  width="70%"
+  caption="Successful Device Join"
+/>
+
+If you check the Devices Section and the Live Device Data in the Devices section you should see the device being online for some time and also some packets, in this case the Join request and an uplink packet where the data is visible in a human readable format (as we chose the Cayenne payload format)
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/built-in-server/14.png"
+  width="100%"
+  caption="Device up-time"
+/>
+
+<rk-img
+  src="/assets/images/wisnode/rak7204/quickstart/built-in-server/15.png"
+  width="100%"
+  caption="Device real time packets"
+/>
+
+Your RAK7204 is now connected to the Built-in server and transmitting data over regular intervals.
 ### Connecting to The Things Network (TTN)
 
 The Things Network is about enabling low power devices to be used in long range gateways that connect to an open-source, decentralized network and exchange data with Applications. Learn more about the Things Network [**here**](https://www.thethingsnetwork.org/docs/).

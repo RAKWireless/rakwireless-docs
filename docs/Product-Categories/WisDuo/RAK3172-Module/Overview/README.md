@@ -30,6 +30,9 @@ You can configure the mode and operation of the module using AT commands via a U
 - LoRa Point to Point (P2P) communication
 - Easy to use AT Command Set via UART interface
 - Long-range - greater than 15&nbsp;km with optimized antenna
+- Arm Cortex-M4 32-bit 
+- 256&nbsp;kbytes flash memory with ECC
+- 64&nbsp;kbytes RAM
 - Ultra-Low Power Consumption of 1.69&nbsp;μA in sleep mode
 - **Supply Voltage**: 2.0&nbsp;V ~ 3.6&nbsp;V
 - **Temperature Range**: -40°&nbsp;C ~ 85°&nbsp;C

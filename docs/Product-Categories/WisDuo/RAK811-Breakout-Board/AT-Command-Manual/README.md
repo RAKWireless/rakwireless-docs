@@ -380,7 +380,7 @@ This command is used for sending data over a UART port.
 <table>
     <tr>
       <td> index </td>
-      <td> UART Port Number. Currently, the RAK811 only supports UART1. </td>
+      <td> UART Number: 1 or 3. Two UART ports are currently supported starting FW V3.0.0.14.H - UART1 and UART3 </td>
     </tr>
     <tr>
       <td> mode </td>
@@ -419,6 +419,11 @@ This command is used to obtain the voltage level status of a pin on a module.
     </tr>
 </table>
 
+<rk-img
+  src="/assets/images/wisduo/rak811-breakout-board/at-command/RAK811_gpio.png"
+  width="60%"
+  caption="GPIO Pinout Mapping for RAK811 Breakout Board"
+/>
 
 **Example**:
 
