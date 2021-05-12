@@ -3,7 +3,7 @@ prev: ../Overview/
 next: false
 ---
 
-# Pulsar Cable Datasheet
+# Pulsar Cable LMR400 Datasheet
 
 ## Overview
 

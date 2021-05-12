@@ -3,7 +3,7 @@ prev: ../Overview/
 next: false
 ---
 
-# Pulsar Cable Datasheet
+# Pulsar Cable LMR400 Datasheet
 
 ## Overview
 
@@ -53,7 +53,7 @@ The Pulsar cable is a high-grade cable, suitable for outdoor applications with *
 <rk-img
   src="/assets/images/accessories/rak9731/datasheet/connectors.png"
   width="45%"
-  caption="Connectors Types"
+  caption="Connector Types"
 />
 
 

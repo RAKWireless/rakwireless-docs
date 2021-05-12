@@ -1,0 +1,1 @@
+<rk-redirect to="/Product-Categories/Accessories/RAK9732/Overview/" />

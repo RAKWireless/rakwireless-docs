@@ -359,6 +359,60 @@ module.exports = {
         download: true,
         sidebarDepth: 4
       }
+    ],
+    '/Product-Categories/Accessories/RAKARP01/': [
+      {
+        title: 'Overview',
+        path: '/Product-Categories/Accessories/RAKARP01/Overview/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      },
+      {
+        title: 'Datasheet',
+        path: '/Product-Categories/Accessories/RAKARP01/Datasheet/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      }
+    ],
+    '/Product-Categories/Accessories/RAK9734/': [
+      {
+        title: 'Overview',
+        path: '/Product-Categories/Accessories/RAK9734/Overview/', 
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      },
+      {
+        title: 'Datasheet',
+        path: '/Product-Categories/Accessories/RAK9734/Datasheet/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      }
+    ],
+    '/Product-Categories/Accessories/RAK9732/': [
+      {
+        title: 'Overview',
+        path: '/Product-Categories/Accessories/RAK9732/Overview/', 
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      },
+      {
+        title: 'Datasheet',
+        path: '/Product-Categories/Accessories/RAK9732/Datasheet/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      }
 ],
 
 

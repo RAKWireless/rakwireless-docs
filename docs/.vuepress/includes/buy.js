@@ -546,5 +546,19 @@ export default {
     label: 'Pulsar Cable',
     img: '/assets/images/accessories/rak9731/overview/rak9731.png',
     store: 'https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733'
+  },
+  '/Product-Categories/Accessories/RAKARP01/': {
+    label: '860-930MHz 12dBi Directional Antenna',
+    img: '/assets/images/accessories/rakarp01/overview/unipolarization-plate.png',
+    store: 'https://store.rakwireless.com/'
+  },
+  '/Product-Categories/Accessories/RAK9734/': {
+    label: 'Pulsar Cable',
+    img: '/assets/images/accessories/rak9734/1.png',
+  },
+  '/Product-Categories/Accessories/RAK9732/': {
+    label: 'Pulsar Cable',
+    img: '/assets/images/accessories/rak9732/overview/rak9732.png',
+    store: 'https://store.rakwireless.com/'
   }
 }
