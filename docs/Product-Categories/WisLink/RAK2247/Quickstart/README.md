@@ -3,6 +3,8 @@ prev: ../Overview/
 next: ../Datasheet/
 tags:
   - RAK2247
+  - quickstart
+  - wislink
 ---
 
 # Quick Start Guide

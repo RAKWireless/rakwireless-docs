@@ -4,6 +4,9 @@ rak_desc: RAK2245 Stamp is an ultra-compact module that has a built-in GPS chip.
 rak_grp: [wislink, lpwan]
 prev: ../../
 next: ../Quickstart/
+tags:
+  - RAK2245 Stamp Edition
+  - wislink
 ---
 
 # RAK2245 Stamp WisLink LPWAN Concentrator

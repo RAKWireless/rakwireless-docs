@@ -4,6 +4,10 @@ rak_desc: RAK7271/7371 WisGate Developer Base is designed for desktop/mobile or 
 rak_grp: [wisgate, developer]
 prev: ../../
 next: ../Datasheet/
+tags:
+    - wisgate
+    - RAK7271
+    - RAK7371
 ---
 
 # RAK7271/RAK7371 WisGate Developer Base

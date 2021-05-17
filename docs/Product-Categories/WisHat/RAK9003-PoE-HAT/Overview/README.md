@@ -5,6 +5,9 @@ rak_desc: RAK9003 PoE HAT is an add-on board with Raspberry Pi form factor which
 rak_grp: wishat
 prev: ../../
 next: ../Datasheet/
+tags:
+  - RAK9003 PoE Pi HAT
+  - wishat
 ---
 
 # RAK9003 PoE Pi HAT

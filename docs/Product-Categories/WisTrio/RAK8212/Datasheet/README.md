@@ -5,6 +5,7 @@ next: ../AT-Command-Manual/
 tags:
   - datasheet
   - wistrio
+  - RAK8212
 ---
 
 # RAK8212 WisTrio iTracker Pro Datasheet

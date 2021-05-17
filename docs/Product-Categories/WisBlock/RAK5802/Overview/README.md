@@ -4,7 +4,9 @@ rak_desc: RAK5802 is a WisBlock Interface module which extends the WisBlock syst
 rak_grp: [wisblock, wisinterface]
 prev: ../../
 next: ../Datasheet/
-
+tags:
+    - wisblock
+    - RAK5802
 ---
 
 # RAK5802 WisBlock RS485 Interface Module

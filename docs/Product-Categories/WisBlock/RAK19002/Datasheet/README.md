@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wisblock
+  - RAK19002
 prev: ../Overview/
 next: false
 ---

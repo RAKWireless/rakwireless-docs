@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wislink
+  - RAK8213
 prev: ../Quickstart/
 next: false
 ---

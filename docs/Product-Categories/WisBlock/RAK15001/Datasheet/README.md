@@ -4,6 +4,7 @@ next: false
 tags:
   - datasheet
   - wisblock
+  - RAK15001
 ---
 
 # RAK15001 WisBlock Flash Module Datasheet

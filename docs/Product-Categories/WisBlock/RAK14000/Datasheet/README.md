@@ -4,6 +4,7 @@ next: false
 tags:
   - datasheet
   - wisblock
+  - RAK14000
 ---
 
 # RAK14000 E-Ink Display Module Datasheet

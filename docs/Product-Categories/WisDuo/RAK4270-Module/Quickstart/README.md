@@ -3,6 +3,8 @@ prev: ../Overview/
 next: ../AT-Command-Manual/
 tags:
   - RAK4270
+  - wisduo
+  - quickstart
 ---
 
 # Quick Start Guide

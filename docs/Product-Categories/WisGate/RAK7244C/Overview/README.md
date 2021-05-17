@@ -5,6 +5,9 @@ rak_desc: RAK7244C is built with the RAK2245 Pi Hat stacked with the newest Rasp
 rak_grp: [wisgate, developer]
 prev: ../../
 next: ../Quickstart/
+tags:
+    - RAK7244C
+    - wisgate
 ---
 
 # RAK7244C WisGate Developer D4+

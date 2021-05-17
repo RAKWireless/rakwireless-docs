@@ -4,8 +4,10 @@ rak_desc: RAK5811 is a WisBlock Interface module which extends the WisBlock syst
 rak_grp: [wisblock, wisinterface]
 prev: ../../
 next: ../Datasheet/
+tags:
+    - RAK5811
+    - wisblock
 ---
-
 
 # RAK5811 WisBlock 0-5V Interface Module
 

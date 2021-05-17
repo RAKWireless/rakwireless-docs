@@ -3,6 +3,7 @@ static_root:
 tags:
   - datasheet
   - wisgate
+  - RAK Hotspot Miner
 next: false
 prev: ../Troubleshooting/
 certifications:

@@ -4,6 +4,9 @@ rak_desc: RAK12500 is a WisBlock Sensor GNSS Location module which utilizes seve
 rak_grp: [wisblock, wissensor]
 prev: ../../
 next: ../Datasheet/
+tags:
+    - wisblock
+    - RAK12500
 ---
 
 # RAK12500 WisBlock GNSS Location Module

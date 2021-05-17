@@ -1,6 +1,10 @@
 ---
 prev: ../Quickstart/
 next: ../Low-Level-Development/
+tags:
+  - wisduo
+  - RAK4200 Breakout Board
+  - AT Command Manual
 ---
 
 

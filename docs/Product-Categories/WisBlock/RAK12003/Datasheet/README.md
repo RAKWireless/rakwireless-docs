@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wisblock
+  - RAK12003
 prev: ../Overview/
 next: false
 ---
@@ -15,6 +16,7 @@ next: false
   width="50%"
   caption="RAK12003 WisBlock Infrared Temperature Sensor "
 />
+
 ### Description
 
 The RAK12003 WisBlock Infrared Temperature Sensor is part of the RAKwireless WisBlock Series. It can be used for an accurate contactless thermal measurement for applications such as General purpose industry, temperature control of moving and hard to reach parts, body temperature measurement, non-contact thermometer for mobile and IoT application.

@@ -2,7 +2,9 @@
 tags:
   - datasheet
   - wisblock
+  - RAK15000
 prev: ../Overview/
+next: false
 ---
 
 # RAK15000 WisBlock EEPROM Module Datasheet

@@ -1,12 +1,16 @@
 ---
 prev: ../Overview/
 next: false
+tags:
+  - R012-4800500
+  - datasheet
 ---
 
 
 # PoE Injector Datasheet
 
 ## Overview
+
 ### Product Description
 
 The RAK PoE injector, model R012-4800500 is a device that allows you to combine power and network connectivity to your PoE enabled devices using the same Cat5/5e or Cat6 twisted pair cable. It is suitable to be used with WisGate Edge Series Gateways, WisGate Developer PoE enabled Gateways, and WisHAT 9003 PoE Raspberry Pi Hat.

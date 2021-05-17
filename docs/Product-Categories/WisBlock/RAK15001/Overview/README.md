@@ -4,6 +4,9 @@ rak_desc: The RAK15001 is a WisBlock NOR Flash Module. It uses GD25Q16CNIG (16Mb
 rak_grp: [wisblock, wisstorage]
 prev: ../../
 next: ../Datasheet/
+tags:
+    - wisblock
+    - RAK15001
 ---
 
 # RAK15001 WisBlock Flash Module

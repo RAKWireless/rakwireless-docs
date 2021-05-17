@@ -2,8 +2,9 @@
 next: ../Datasheet/
 prev: ../Backup/
 tags:
-  - RAK-Hotspot-Miner
+  - RAK Hotspot Miner
   - Troubleshooting
+  - wisgate
 ---
 # Troubleshooting
 

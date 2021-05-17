@@ -2,8 +2,9 @@
 prev: ../Datasheet/
 next: false
 tags:
-  - at-command-manual
+  - AT Command Manual
   - wistrio
+  - RAK7205-5205
 ---
 
 # AT Command Manual

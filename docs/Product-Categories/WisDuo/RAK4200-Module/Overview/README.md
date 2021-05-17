@@ -4,6 +4,9 @@ rak_desc: RAK4200 WisDuo LPWAN Module includes an STM32L071 MCU and an SX1276 Lo
 rak_grp: [wisduo, module]
 prev: ../../
 next: ../Quickstart/
+tags:
+  - RAK4200
+  - wisduo
 ---
 
 # RAK4200 WisDuo LPWAN Module

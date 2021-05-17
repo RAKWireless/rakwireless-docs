@@ -4,6 +4,7 @@ next: false
 tags:
   - datasheet
   - wisblock
+  - RAK5804
 ---
 
 # RAK5804 WisBlock Interface Extension Module Datasheet

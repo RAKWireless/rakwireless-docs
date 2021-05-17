@@ -4,11 +4,14 @@ rak_grp: [wistrio,cellular]
 rak_desc: The RAK5010 is an advanced, highly flexible eMTC/NB-IoT/eGPRS tracker based on Quectel BG96 LTE Cat M1&NB1, with an integrated with GPS, and BLE for outdoor and indoor applications. It also has built-in sensors such as temperature and humidity, motion, pressure, and light. The MCU running the board is a Nordic nRF52840 microcontroller.
 prev: ../../
 next: ../Quickstart/
+tips:
+  - RAK5010
+  - wistrio
 ---
 
 # RAK5010 WisTrio NB-IoT Tracker Pro
 
-Thank you for choosing **RAK5010 WisTrio NB-IoT Tracker Pro** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK5010-M  WisTrio NB-IoT Tracker Pro** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

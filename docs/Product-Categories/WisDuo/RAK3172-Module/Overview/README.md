@@ -4,6 +4,9 @@ rak_desc: RAK3172 Low-Power Long Range Transceiver module that is based on the S
 rak_grp: [wisduo, module]
 prev: ../../
 next: ../Quickstart/
+tags:
+    - RAK3172
+    - wisduo
 ---
 
 # RAK3172 WisDuo LPWAN Module

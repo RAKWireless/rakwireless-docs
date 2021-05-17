@@ -1,7 +1,11 @@
 ---
 prev: ../Datasheet/
 next: false
+tags:
+  - RAKBox-B3
+  - datasheet
 ---
+
 # Installation Guide
 
 ## Assembly List

@@ -3,6 +3,8 @@ prev: ../Overview/
 next: ../Testing-Report/
 tags:
   - RAK7244C
+  - quickstart
+  - wisgate
 ---
 
 # Quick Start Guide

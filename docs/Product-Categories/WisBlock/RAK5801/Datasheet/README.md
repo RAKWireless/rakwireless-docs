@@ -4,6 +4,7 @@ next: false
 tags:
   - datasheet
   - wisblock
+  - RAK5801
 ---
 
 # RAK5801 WisBlock 4-20mA Interface Module Datasheet

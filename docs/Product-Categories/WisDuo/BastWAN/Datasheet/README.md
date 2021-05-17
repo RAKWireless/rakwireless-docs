@@ -2,6 +2,8 @@
 tags:
   - datasheet
   - wisduo
+  - RAK3244
+  - BastWAN
 prev: ../Quickstart/
 next: false
 ---

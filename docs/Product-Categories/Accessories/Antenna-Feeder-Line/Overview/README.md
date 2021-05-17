@@ -5,6 +5,8 @@ rak_grp: [accessories, antennas]
 rak_model: Antenna Feeder Line    
 prev: ../../
 next: ../Datasheet/
+tags: 
+    - Antenna Feeder Line  
 ---
 
 

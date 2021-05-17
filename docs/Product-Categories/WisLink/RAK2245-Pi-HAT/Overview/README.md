@@ -4,6 +4,9 @@ rak_desc: RAK2245 Pi HAT offers complete compatibility with the Raspberry Pi 40-
 rak_grp: [wislink, lpwan]
 prev: ../../
 next: ../Quickstart/
+tags:
+  - RAK2245 Pi HAT
+  - wislink
 ---
 
 # RAK2245 Pi HAT WisLink LPWAN Concentrator

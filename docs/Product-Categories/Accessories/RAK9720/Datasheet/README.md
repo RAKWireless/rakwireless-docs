@@ -1,6 +1,9 @@
 ---
 prev: ../Overview/
 next: false
+tags: 
+  - RAK9720
+  - datasheet
 ---
 
 # A-Fix Bracket Kit Datasheet

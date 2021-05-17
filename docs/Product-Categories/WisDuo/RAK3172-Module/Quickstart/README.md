@@ -1,7 +1,10 @@
 ---
 prev: ../Overview/
 next: ../AT-Command-Manual/
-tags: RAK3172
+tags:
+  - wisduo
+  - quickstart
+  - RAK3172
 ---
 
 # Quick Start Guide

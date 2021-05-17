@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wisduo
+  - RAK4200
 prev: ../Low-Level-Development/
 next: false
 certifications:

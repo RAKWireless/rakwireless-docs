@@ -5,6 +5,8 @@ prev: ../../
 next: ../Datasheet/
 rak_grp: [accessories, enclosures]
 rak_model: RAKBox-B2
+tags:
+    - RAKBox-B2
 ---
 
 # WisBlock RAKBox-B2 Enclosure

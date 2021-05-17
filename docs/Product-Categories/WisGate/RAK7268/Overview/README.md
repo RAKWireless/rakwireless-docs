@@ -4,6 +4,9 @@ rak_desc: The RAK7268 WisGate Edge Lite 2 is a full 8-channel indoor gateway, ba
 rak_grp: [wisgate, edge]
 prev: ../../
 next: ../Datasheet/
+tags:
+    - wisgate
+    - RAK7268
 ---
 
 # RAK7268 WisGate Edge Lite 2

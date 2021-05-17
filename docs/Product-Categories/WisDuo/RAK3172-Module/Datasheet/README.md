@@ -3,6 +3,7 @@ prev: ../AT-Command-Manual/
 tags:
   - datasheet
   - wisduo
+  - RAK3172
 ---
 
 # RAK3172 WisDuo LPWAN Module Datasheet

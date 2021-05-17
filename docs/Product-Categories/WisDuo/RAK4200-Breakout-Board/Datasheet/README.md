@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wisduo
+  - RAK4200 Breakout Board
 prev: ../Quickstart/
 
 ---

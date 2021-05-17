@@ -5,6 +5,8 @@ rak_grp: [accessories, power-supplies]
 rak_model: R012-4800500   
 prev: ../../
 next: ../Datasheet/
+tags:
+  - R012-4800500
 ---
 
 # PoE Injector

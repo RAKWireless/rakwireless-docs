@@ -3,6 +3,8 @@ prev: ../Overview/
 next: ../Datasheet/
 tags:
   - RAK815
+  - quickstart
+  - wistrio
 ---
 
 # Quick Start Guide

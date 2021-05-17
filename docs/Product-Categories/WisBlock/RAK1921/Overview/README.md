@@ -4,6 +4,9 @@ rak_desc: RAK1921 is a WisBlock Display module which extends the WisBlock system
 rak_grp: [wisblock, wisdisplay]
 prev: ../../
 next: ../Datasheet/
+tags:
+  - RAK1921
+  - wisblock
 ---
 
 

@@ -1,6 +1,10 @@
 ---
 prev: ../Overview/
 next: false
+tags:
+  - LA-GT2500 Z5N1-4
+  - GPS SPD
+  - datasheet
 ---
 
 # GPS SPD Datasheet

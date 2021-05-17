@@ -3,6 +3,8 @@ prev: ../Overview/
 next: ../Datasheet/
 tags:
   - RAK7244
+  - wisgate
+  - quickstart
 ---
 
 # Quick Start Guide

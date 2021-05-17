@@ -4,7 +4,9 @@ rak_desc: RAK1920 is a WisBlock Interface module which extends the WisBlock syst
 rak_grp: [wisblock, wisinterface]
 prev: ../../
 next: ../Datasheet/
-
+tags:
+    - RAK1920
+    - wisblock
 ---
 
 # RAK1920 WisBlock Sensor Adapter Module 

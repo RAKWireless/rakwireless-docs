@@ -6,7 +6,7 @@ rak_model: RAK9732
 prev: ../../
 next: ../Datasheet/
 tags:
-    - rak9732
+    - RAK9732
 ---
 
 # Pulsar Cable LMR400

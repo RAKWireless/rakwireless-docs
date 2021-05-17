@@ -4,6 +4,9 @@ rak_desc: RAK833 comes in a compact size built with the mini-PCIe form factor th
 rak_grp: [wislink, lpwan]
 prev: ../../
 next: ../Datasheet/
+tags:
+  - RAK833
+  - wislink
 ---
 
 # RAK833 WisLink LPWAN Concentrator

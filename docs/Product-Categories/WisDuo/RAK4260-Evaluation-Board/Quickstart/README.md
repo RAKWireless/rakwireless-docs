@@ -3,6 +3,8 @@ prev: ../Overview/
 next: ../Low-Level-Development/
 tags:
   - RAK4260 Evaluation Board
+  - wisduo
+  - quickstart
 ---
 
 # Quick Start Guide

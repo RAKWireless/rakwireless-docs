@@ -5,6 +5,9 @@ rak_desc: RAK7243C is built with the Raspberry Pi 3B+ as its core that integrate
 rak_grp: [wisgate, developer]
 prev: ../../
 next: ../Quickstart/
+tags:
+    - RAK7243C
+    - wisgate
 ---
 
 # RAK7243C WisGate Developer D3+

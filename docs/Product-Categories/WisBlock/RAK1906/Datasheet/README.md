@@ -2,7 +2,9 @@
 tags:
   - datasheet
   - wisblock
+  - RAK1906
 prev: ../Overview/
+next: false
 ---
 
 # RAK1906 WisBlock Environmental Sensor Datasheet

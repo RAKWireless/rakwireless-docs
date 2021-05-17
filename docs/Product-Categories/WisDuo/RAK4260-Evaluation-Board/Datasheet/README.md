@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wisduo
+  - RAK4260 Evaluation Board
 prev: ../Low-Level-Development/
 next: false
 certifications:

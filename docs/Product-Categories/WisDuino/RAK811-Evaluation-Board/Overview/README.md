@@ -5,6 +5,9 @@ rak_grp: wisduino
 rak_model: WisNode
 prev: ../../
 next: ../Quickstart/
+tags:
+  - RAK811 Evaluation Board
+  - wisduino
 ---
 
 # WisDuino RAK811 Evaluation Board

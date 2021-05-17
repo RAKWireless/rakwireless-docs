@@ -3,6 +3,9 @@ prev: ../Overview/
 next: false
 tags:
   - BastWAN
+  - RAK3244
+  - quickstart
+  - wisduo
 ---
 
 # Quick Start Guide

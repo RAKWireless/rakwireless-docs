@@ -4,7 +4,9 @@ rak_desc: RAK5860 is a WisBlock Wireless module that extends the WisBlock system
 rak_grp: [wisblock, wiswireless]
 prev: ../../
 next: ../Datasheet/
-
+tags:
+    - wisblock
+    - RAK5860
 ---
 
 # RAK5860 WisBlock NB-IoT Interface Module

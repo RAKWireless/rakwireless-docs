@@ -1,7 +1,10 @@
 ---
 prev: ../Overview/
 next: ../AT-Command-Manual/
-tags: RAK811
+tags:
+  - quickstart
+  - wisduo
+  - RAK811
 ---
 
 # Quick Start Guide

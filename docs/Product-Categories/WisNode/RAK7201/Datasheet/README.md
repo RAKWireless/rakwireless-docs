@@ -4,6 +4,7 @@ next: ../AT-Command-Manual/
 tags:
   - datasheet
   - wisnode
+  - RAK7201
 ---
 
 # RAK7201 WisNode Button 4K Datasheet

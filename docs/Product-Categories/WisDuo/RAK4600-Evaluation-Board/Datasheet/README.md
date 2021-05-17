@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wisduo
+  - RAK4600 Evaluation Board
 prev: ../AT-Command-Manual/
 next: false
 certifications:

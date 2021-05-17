@@ -3,7 +3,10 @@ prev: ../Overview/
 next: ../Datasheet/
 tags:
   - RAK5205
+  - quickstart
+  - wistrio
 ---
+
 # Quick Start Guide
 
 ## Prerequisites

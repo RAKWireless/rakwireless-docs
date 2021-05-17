@@ -2,9 +2,12 @@
 rak_img: /assets/images/wisblock/rak1904/overview/RAK1904_home.png
 rak_desc: RAK1904 is a WisBlock Sensor which extends the WisBlock system with a ST LIS3DH 3-axis acceleration sensor. A ready to use SW library and tutorial makes it easy to build up a motion detection and acceleration data acquisition system.
 rak_grp: [wisblock, wissensor]
-
+prev: ../../
+next: ../Datasheet/
+tags:
+    - wisblock
+    - RAK1904
 ---
-
 
 # RAK1904 WisBlock 3-axis Acceleration Sensor
 

@@ -2,7 +2,9 @@
 prev: ../Overview/
 next: ../Datasheet/
 tags:
-  - RAK2245 Pi Hat
+  - RAK2245 Pi HAT
+  - quickstart
+  - wislink
 ---
 
 # Quick Start Guide

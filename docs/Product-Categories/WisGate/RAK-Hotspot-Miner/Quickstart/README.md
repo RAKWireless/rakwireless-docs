@@ -2,7 +2,9 @@
 next: ../Backup/
 prev: ../Overview/
 tags:
-  - RAK-Hotspot-Miner
+  - RAK Hotspot Miner
+  - quickstart
+  - wisgate
 ---
 # Quick Start Guide
 

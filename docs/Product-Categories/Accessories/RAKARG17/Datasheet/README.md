@@ -1,6 +1,9 @@
 ---
 prev: ../Overview/
 next: false
+tags: 
+    - RAKARG17
+    - datasheet
 ---
 
 # 860-930MHz 5dBi LoRaWAN Antenna Black Datasheet

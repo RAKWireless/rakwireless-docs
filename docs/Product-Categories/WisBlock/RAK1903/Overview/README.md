@@ -4,6 +4,9 @@ rak_desc: RAK1903 is a WisBlock Sensor which extends the WisBlock system with a 
 rak_grp: [wisblock, wissensor]
 next: ../Quickstart/
 prev: ../../
+tags:
+    - RAK1903
+    - wisblock
 ---
 
 

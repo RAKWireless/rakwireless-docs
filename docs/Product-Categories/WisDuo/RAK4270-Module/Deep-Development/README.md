@@ -1,7 +1,9 @@
 ---
 prev: ../LoRaWAN-P2P/AT-Command-Manual/
 next: ../Datasheet/
-tags: RAK4270
+tags:
+  - wsiduo
+  - RAK4270
 ---
 
 

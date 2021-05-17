@@ -3,7 +3,8 @@ prev: ../Datasheet/
 next: false
 tags:
     - RAK7200
-    - at-command-manual
+    - AT Command Manual
+    - wisnode
 ---
 
 # AT Commands for RAK7200

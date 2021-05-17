@@ -5,6 +5,8 @@ rak_grp: [accessories, antennas]
 rak_model: RAK9731 
 prev: ../../
 next: ../Datasheet/
+tags: 
+    - RAK9731
 ---
 
 # Pulsar Cable LMR400

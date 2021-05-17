@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wisgate
+  - RAK7243C
 prev: ../Quickstart/
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Certification-Report/RAK7243_CE_Certificate.zip]

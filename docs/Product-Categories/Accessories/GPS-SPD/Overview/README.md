@@ -5,6 +5,9 @@ rak_grp: [accessories, antennas]
 rak_model: LA-GT2500 Z5N1-4
 prev: ../../
 next: ../Datasheet/
+tags:
+  - LA-GT2500 Z5N1-4
+  - GPS SPD
 ---
 
 # GPS SPD

@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wislink
+  - RAK2245 Stamp Edition
 prev: ../Quickstart/
 next: false
 certifications:

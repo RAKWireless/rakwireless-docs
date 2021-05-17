@@ -3,6 +3,7 @@ prev: ../Overview/
 next: ../Datasheet/
 tags:
   - RAK4631
+  - quickstart
 ---
 
 # Quick Start Guide
@@ -186,7 +187,7 @@ When using the LoRa or Bluetooth Low Energy transceivers, make sure that an ante
 RAK4631 can be power via the USB cable or Li-Ion/LiPo battery via the dedicated connectors as shown in Figure 11. The matching connector for the battery wires is an [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199)
 
 <rk-img
-  src="/assets/images/wisblock/RAK4631/quickstart/battery-connect.png"
+  src="/assets/images/wisblock/rak4631/quickstart/battery-connect.png"
   width="50%"
   caption="WisBlock Base Connection"
 />
@@ -200,7 +201,7 @@ RAK4631 can be power via the USB cable or Li-Ion/LiPo battery via the dedicated 
 The battery can be recharged as well via small solar panel, as shown in Figure 13. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287).
 
 <rk-img
-  src="/assets/images/wisblock/RAK4631/quickstart/solar-connect.png"
+  src="/assets/images/wisblock/rak4631/quickstart/solar-connect.png"
   width="90%"
   caption="Solar Panel Connection"
 />
@@ -233,7 +234,7 @@ To use these examples, you have two options to use in writing your WisBlock code
 To access the example codes of various WisBlock Modules like the RAK1901 and RAK1902, install the [BSP for the Arduino IDE](/Product-Categories/WisBlock/RAK4631/Quickstart/#software) as mentioned in the prerequisite part of the this guide. Getting the code on the example repository is not necessary. You can browse the different examples on the Arduino IDE, as shown in Figure 14.
 
 <rk-img
-  src="/assets/images/wisblock/RAK4631/quickstart/rak4631_gps.png"
+  src="/assets/images/wisblock/rak4631/quickstart/rak4631_gps.png"
   width="100%"
   caption="WisBlock Base Connection"
 />
@@ -249,6 +250,166 @@ Listed are the examples where you can check the Software Setup of the quick star
 ##### RAK4631 on Platform IO
 
 For the Platform IO, get the example codes on the [WisBlock Example code repository](https://github.com/RAKWireless/WisBlock/examples) and add the necessary libraries individually. Then you can compile the example code.
+
+## Miscellaneous
+
+### How to Check if You Have the Updated RAK4631 Bootloader
+
+You need to connect the RAK4631 to PC via USB cable and double click reset button on the WisBlock Base.
+
+There will be a new drive named `RAK4631` that will be shown on your folder explorer. Inside this drive, there will a text file named `INFO_UF2.TXT`, as shown in Figure 15.
+
+<rk-img
+  src="/assets/images/wisblock/rak4631/quickstart/new_drive.png"
+  width="60%"
+  caption="RAK4631 drive content"
+/>
+
+If you open `INFO_UF2.TXT`, you'll see `Date: Mar 31 2021`, as shown in Figure 16.
+
+<rk-img
+  src="/assets/images/wisblock/rak4631/quickstart/info_uf2txt.png"
+  width="40%"
+  caption="INFO_UF2.TXT content"
+/>
+
+If you have a different drive name or older date, it means you do not have the updated RAK4631 Bootloader and you need to update it. 
+
+
+### Updating the Bootloader
+
+RAK4631 WisBlock Core is programmed with a USB bootloader so that you can upload application firmware to it without using any external tools like Jlink and other programmers/debuggers. However, there are situations that you need to update the bootloader when there is an updated version that supports new features, improvements, and bug fixes.
+
+There are various ways to update the bootloader like via USB, Bluetooth, and Jlink. The procedure for these methods is explained in this guide. 
+
+#### Bootloader update via USB
+
+In this method, you need two things:
+
+1. Adafruit-nrfutil utility program.
+2. RAK4631 Bootloader FW.
+
+##### For Windows
+
+Download the [adafruit-nrfutil.exe](https://github.com/adafruit/Adafruit_nRF52_nrfutil/releases/download/%24(APPVEYOR_REPO_TAG_NAME)/adafruit-nrfutil.exe) and the latest [RAK4631 bootloader firmware](https://github.com/RAKWireless/WisBlock/blob/0093b9b5d7ec3c32c3fe3550b797fe364582b083/bootloader/RAK4630/new/RAK4630_bootloader-0.4.1.zip).
+
+:::tip 📝 NOTE
+Detailed information about the RAK4631 Bootloader can be found on the [bootloader repository](https://github.com/RAKWireless/WisBlock/tree/0093b9b5d7ec3c32c3fe3550b797fe364582b083/bootloader/RAK4630). 
+:::
+
+Once you downloaded these files, you need to put them on a same directory/folder in your computer.
+
+For simplicity, this guide will assume the files are in C: drive.
+
+<rk-img
+  src="/assets/images/wisblock/rak4631/quickstart/c_location.png"
+  width="70%"
+  caption="Adafruit-nrfutil and RAK4631 Bootloader file in C: drive"
+/>
+
+When the files are ready, you need to open Windows Command Prompt application. Then you need to change the location to C:\.
+
+`cd C:\`
+
+After that, you can now execute the update using this command.
+
+`adafruit-nrfutil.exe --verbose dfu serial --package RAK4630_bootloader-0.4.1.zip --port COM8 -b 115200 --singlebank --touch 1200`
+
+<rk-img
+  src="/assets/images/wisblock/rak4631/quickstart/success_upload.png"
+  width="100%"
+  caption="RAK4631 Bootloader Updated Successfully"
+/>
+
+You need to determine the right COM port number of your device. COM8 on the command above is only for illustration. You will get an error if you are not connected to the right COM port number.
+
+##### For Linux
+
+You can get and install adafruit-nrfutil via pip3.
+
+`sudo pip3 install adafruit-nrfutil`
+
+or
+
+`pip3 install --user adafruit-nrfutil`
+
+Then download the latest [RAK4631 bootloader firmware](https://github.com/RAKWireless/WisBlock/blob/0093b9b5d7ec3c32c3fe3550b797fe364582b083/bootloader/RAK4630/new/RAK4630_bootloader-0.4.1.zip).
+
+You also need to determine the port name of the RAK4631 using the command:
+
+`ls /dev/tty*`
+
+After determining the port name, go to the directory where the bootloader FW file `RAK4630_bootloader-0.4.1.zip` is located.
+
+Then execute the following command:
+
+`adafruit-nrfutil --verbose dfu serial --package RAK4630_bootloader-0.4.1.zip -p /dev/ttyACM0 -b 115200 --singlebank --touch 1200`
+
+
+##### For macOS
+
+The same with Windows and Linux procedures, download the latest [RAK4631 bootloader firmware](https://github.com/RAKWireless/WisBlock/blob/0093b9b5d7ec3c32c3fe3550b797fe364582b083/bootloader/RAK4630/new/RAK4630_bootloader-0.4.1.zip).
+
+There are two ways to update the RAK4631 bootloader in macOS.
+
+- If you have Python installed, you can follow the same steps for Linux.
+
+- Another way is by creating a macOS executable. To do this method, download [adafruit-nrfutil-macos](https://github.com/adafruit/Adafruit_nRF52_nrfutil/releases/download/%24(APPVEYOR_REPO_TAG_NAME)/adafruit-nrfutil-macos) and make it executable.
+
+Usually, the `adafruit-nrfutil-macos` file will go to the downloads folder. 
+
+The next step after downloading the file is to open the terminal and go to the downloads directory or the location where you put the downloaded file.
+
+`cd /Users/username/Downloads`
+
+And then execute this command:
+
+`chmod +x adafruit-nrfutil-macos`
+
+<rk-img
+  src="/assets/images/wisblock/rak4631/quickstart/macos_executable.png"
+  width="50%"
+  caption="Executable adafruit-nrfutil-macos"
+/>
+
+You also need to determine the port name of the RAK4631 using the command:
+
+`ls /dev/cu.*`.
+
+<rk-img
+  src="/assets/images/wisblock/rak4631/quickstart/macos_checkport.png"
+  width="50%"
+  caption="Checking the RAK4631 USB port connection"
+/>
+
+After all these steps, you can now upload the latest RAK4631 Bootloader Firmware by executing this command:
+
+`adafruit-nrfutil-macos --verbose dfu serial --package RAK4630_bootloader-0.4.1.zip -p /dev/cu.usbmodem411 -b 115200 --singlebank --touch 1200`
+
+<rk-img
+  src="/assets/images/wisblock/rak4631/quickstart/macos_boot_update.png"
+  width="60%"
+  caption="Updated RAK4631 Bootloader"
+/>
+
+Your RAK4631 will now have the updated Bootloader Firmware.
+
+#### Bootloader update via Bluetooth
+
+Updating the firmware via BLE is also possible.
+
+The complete guide is on the [RAK4631 Bootloader repository using BLE](https://github.com/RAKWireless/WisBlock/tree/0093b9b5d7ec3c32c3fe3550b797fe364582b083/bootloader/RAK4630/new).
+
+#### Bootloader update via Jlink
+
+Updating the firmware via Jlink is possible as well.
+
+The complete guide is on the [RAK4631 Bootloader repository using Jlink](https://github.com/RAKWireless/WisBlock/tree/0093b9b5d7ec3c32c3fe3550b797fe364582b083/bootloader/RAK4630).
+
+
+
+
+
 
 
 

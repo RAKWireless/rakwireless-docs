@@ -3,6 +3,8 @@ prev: ../Datasheet/
 next: false
 tags:
   - RAK7246G
+  - wisgate
+  - Environment Test Report
 ---
 
 # Environment Test Report

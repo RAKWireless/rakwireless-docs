@@ -4,7 +4,11 @@ rak_desc: RAK612 LPWAN Button is a remote wireless trigger based on the LoRaWAN 
 rak_grp: [wisnode, button]
 prev: ../../
 next: ../Quickstart/
+tags:
+  - RAK612
+  - wisnode
 ---
+
 # RAK612 WisNode Button
 
 Thank you for choosing **RAK612  WisNode Button** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.

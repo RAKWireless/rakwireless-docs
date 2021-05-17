@@ -2,8 +2,9 @@
 prev: ../Datasheet/
 next: false
 tags:
-  - at-command-manual
+  - AT Command Manual
   - wistrio
+  - RAK8212
 ---
 
 # AT Command Manual

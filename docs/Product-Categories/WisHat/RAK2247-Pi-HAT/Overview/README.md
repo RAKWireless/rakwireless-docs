@@ -5,6 +5,9 @@ rak_desc: RAK2247 Pi HAT is a converter board designed to allow the RAK2247 Conc
 prev: ../../
 next: ../Datasheet/
 rak_model: RAK2247 Pi HAT
+tags: 
+  - RAK2247 Pi HAT
+  - wishat
 ---
 
 # RAK2247 Pi HAT 

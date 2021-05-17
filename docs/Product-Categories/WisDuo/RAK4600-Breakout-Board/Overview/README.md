@@ -6,6 +6,9 @@ rak_grp: [wisduo, breakout]
 prev: ../../
 next: ../Quickstart/
 rak_model: RAK4600-D
+tags:
+  - RAK4600 Breakout Board
+  - wisduo
 ---
 
 # RAK4600 Breakout Board

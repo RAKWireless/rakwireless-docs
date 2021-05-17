@@ -4,7 +4,9 @@ rak_desc: RAK4631 is a WisBlock Core module for RAK WisBlock. It extends the Wis
 next: ../Quickstart/
 prev: ../../
 rak_grp: [wisblock, wiscore]
-
+tags:
+    - RAK4631
+    - wisblock
 ---
 
 # RAK4631 WisBlock LPWAN Module

@@ -3,6 +3,8 @@ prev: ../Overview/
 next: ../AT-Command-Manual/
 tags:
   - RAK612
+  - quickstart
+  - wisnode
 ---
 
 # Quick Start Guide

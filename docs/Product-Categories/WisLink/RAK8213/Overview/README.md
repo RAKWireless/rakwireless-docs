@@ -4,6 +4,9 @@ rak_desc: RAK8213 is an ultra-low power consumption module with a built-in GNSS 
 rak_grp: [wislink, cellular]
 prev: ../../
 next: ../Quickstart/
+tags:
+  - RAK8213
+  - wislink
 ---
 
 # RAK8213 WisLink Cellular mPCIe

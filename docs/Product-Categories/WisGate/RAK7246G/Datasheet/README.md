@@ -3,7 +3,7 @@ static_root: /assets/images/wisgate/rak7246g/datasheet/overview
 tags:
   - datasheet
   - wisgate
-
+  - RAK7246G
 prev: ../Quickstart/
 next: ../Testing-Report/
 ---

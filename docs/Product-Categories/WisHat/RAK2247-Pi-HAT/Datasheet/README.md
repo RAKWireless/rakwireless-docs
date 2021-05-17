@@ -2,8 +2,9 @@
 tags:
   - datasheet
   - wishat
-
+  - RAK2247 Pi HAT
 prev: ../Overview/
+next: false
 ---
 
 # RAK2247 Pi HAT Datasheet

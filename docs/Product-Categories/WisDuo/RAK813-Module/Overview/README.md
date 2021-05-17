@@ -4,7 +4,11 @@ rak_desc: The RAK813 is a combination of the BLE and LoRa in a single module. Th
 rak_grp: [wisduo, module]
 prev: ../../
 next: ../Datasheet/
+tags:
+  - RAK813
+  - wisduo
 ---
+
 # RAK813 BLE+LoRa Module
 Thank you for choosing **RAK813 BLE+LoRa Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 

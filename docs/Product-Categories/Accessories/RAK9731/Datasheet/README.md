@@ -1,6 +1,9 @@
 ---
 prev: ../Overview/
 next: false
+tags: 
+    - RAK9731
+    - datasheet
 ---
 
 # Pulsar Cable LMR400 Datasheet

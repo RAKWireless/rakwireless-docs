@@ -4,6 +4,7 @@ next: false
 tags:
   - datasheet
   - wisblock
+  - RAK5811
 ---
 
 # RAK5811 WisBlock 0-5V Interface Module Datasheet

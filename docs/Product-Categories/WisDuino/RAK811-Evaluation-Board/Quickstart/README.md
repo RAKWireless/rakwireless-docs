@@ -1,7 +1,10 @@
 ---
 prev: ../Overview/
 next: false
-tags: RAK811 Evaluation Board
+tags:
+  - RAK811 Evaluation Board
+  - wisduino
+  - quickstart
 ---
 
 # Quick Start Guide

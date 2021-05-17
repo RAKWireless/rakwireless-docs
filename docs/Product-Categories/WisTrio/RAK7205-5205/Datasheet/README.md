@@ -4,6 +4,7 @@ next: ../AT-Command-Manual/
 tags:
   - datasheet
   - wistrio
+  - RAK5205
 ---
 
 # RAK5205 WisTrio LPWAN Tracker Datasheet

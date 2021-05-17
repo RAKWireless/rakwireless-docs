@@ -1,6 +1,9 @@
 ---
 prev: ../Datasheet/
 next: false
+tags:
+  - RAKBox-B5
+  - Installation Guide
 ---
 
 ## Installation Guide

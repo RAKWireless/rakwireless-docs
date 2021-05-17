@@ -1,6 +1,9 @@
 ---
 prev: ../Overview/
 next: ../Installation/
+tags:
+    - RAKBox-B2
+    - datasheet
 ---
 # WisBlock RAKBox-B2 Enclosure Datasheet
 

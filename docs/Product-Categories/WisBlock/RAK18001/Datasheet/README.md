@@ -4,6 +4,7 @@ next: false
 tags:
   - datasheet
   - wisblock
+  - RAK18001
 ---
 
 # RAK18001 WisBlock Buzzer Module Datasheet

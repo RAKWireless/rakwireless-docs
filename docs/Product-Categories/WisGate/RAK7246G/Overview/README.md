@@ -5,6 +5,9 @@ rak_desc: RAK7246G is a device composed of RAK2246 Pi HAT Concentrator module an
 rak_grp: [wisgate, developer]
 prev: ../../
 next: ../Quickstart/
+tags:
+    - RAK7246G
+    - wisgate
 ---
 
 # RAK7246G WisGate Developer D0

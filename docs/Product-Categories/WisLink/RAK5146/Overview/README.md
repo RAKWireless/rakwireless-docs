@@ -4,6 +4,9 @@ rak_desc: RAK5146 is an LPWAN Concentrator Module with mini-PCIe form factor bas
 rak_grp: [wislink, lpwan]
 prev: ../../
 next: ../Datasheet/
+tags:
+    - RAK5146
+    - wislink
 ---
 
 # RAK5146 WisLink LPWAN Concentrator

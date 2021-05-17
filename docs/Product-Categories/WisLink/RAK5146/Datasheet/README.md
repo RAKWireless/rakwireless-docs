@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wislink
+  - RAK5146
 prev: ../Overview/
 next: false
 ---

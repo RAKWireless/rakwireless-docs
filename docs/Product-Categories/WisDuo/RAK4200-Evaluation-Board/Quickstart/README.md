@@ -3,6 +3,8 @@ prev: ../Overview/
 next: ../AT-Command-Manual/
 tags:
   - RAK4200 Evaluation Board
+  - quickstart
+  - wisduo
 ---
 
 # Quick Start Guide

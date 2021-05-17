@@ -2,7 +2,8 @@
 prev: ../Datasheet/
 next: false
 tags:
-  - at-command-manual
+  - AT Command Maunual
+  - RAK5010
   - wistrio
 ---
 

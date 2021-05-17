@@ -1,6 +1,9 @@
 ---
 prev: ../Overview/
 next: false
+tags:
+  - RAKARP01
+  - datasheet
 ---
 
 # 860-930MHz 12dBi Directional Antenna Datasheet

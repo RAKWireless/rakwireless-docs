@@ -1,7 +1,10 @@
 ---
 prev: ../Quickstart/
 next: ../Low-Level-Development/
-tags: RAK811
+tags:
+  - AT Command Manual
+  - wisduo
+  - RAK811
 ---
 
 

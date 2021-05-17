@@ -6,6 +6,9 @@ rak_grp: [wisduo, evb]
 prev: ../../
 next: ../Quickstart/
 rak_model: RAK4260-E
+tags:
+    - RAK4260 Evaluation Board
+    - wisduo
 ---
 
 # RAK4260 Evaluation Board

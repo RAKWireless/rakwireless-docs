@@ -4,6 +4,9 @@ rak_desc: RAK14000 is a WisBlock Display module which consists of an E-Ink Displ
 rak_grp: [wisblock, wisdisplay]
 prev: ../../
 next: ../Datasheet/
+tags:
+    - wisblock
+    - RAK14000
 ---
 
 # RAK14000 WisBlock E-Ink Display

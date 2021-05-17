@@ -5,6 +5,9 @@ rak_grp: [accessories, antennas]
 rak_model: RAKAGPS1
 prev: ../../
 next: ../Datasheet/
+tags:
+  - GPS Antenna
+  - RAKAGPS1
 ---
 
 # GPS Antenna

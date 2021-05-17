@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wisduo
+  - RAK811 Breakout Board
 prev: ../Quickstart/
 next: ../AT-Command-Manual/
 certifications:

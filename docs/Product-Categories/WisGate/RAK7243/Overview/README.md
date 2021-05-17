@@ -5,6 +5,9 @@ rak_desc: RAK7243 is a RAK2245 Pi HAT stacked on the top of a Single Board Compu
 rak_grp: [wisgate, developer]
 prev: ../../
 next: ../Quickstart/
+tags:
+    - RAK7243
+    - wisgate
 ---
 
 # RAK7243 WisGate Developer D3

@@ -1,7 +1,9 @@
 ---
 prev: ../AT-Command-Manual/
 next: ../Datasheet/
-tags: RAK811
+tags:
+  - wisduo
+  - RAK811
 ---
 
 # Low Level Development Reference

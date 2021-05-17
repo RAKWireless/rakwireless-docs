@@ -5,6 +5,9 @@ rak_desc: RAK7258 is a full 8-channel gateway with a built-in LoRa Server for ea
 rak_grp: [wisgate, edge]
 prev: ../../
 next: ../Quickstart/
+tags:
+    - RAK7258
+    - wisgate
 ---
 
 # RAK7258 WisGate Edge Lite

@@ -2,8 +2,9 @@
 prev: ../Quickstart/
 next: false
 tags:
-  - at-command-manual
+  - AT Command Manual
   - RAK5010-M
+  - wistrio
 ---
 
 # AT Command Manual

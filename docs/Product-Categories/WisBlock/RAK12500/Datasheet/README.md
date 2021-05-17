@@ -4,6 +4,7 @@ next: false
 tags:
   - datasheet
   - wisblock
+  - RAK12500
 ---
 
 # RAK12500 WisBlock GNSS Location Module Datasheet

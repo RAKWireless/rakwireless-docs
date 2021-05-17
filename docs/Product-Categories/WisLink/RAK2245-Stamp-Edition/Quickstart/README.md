@@ -3,6 +3,8 @@ prev: ../Overview/
 next: ../Datasheet/
 tags:
   - RAK2245 Stamp Edition
+  - wislink
+  - quickstart
 ---
 
 # Quick Start Guide

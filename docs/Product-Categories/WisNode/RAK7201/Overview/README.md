@@ -4,6 +4,9 @@ rak_desc: The RAK7201 WisNode Button 4K is a remote wireless trigger device. It 
 rak_grp: [wisnode, button]
 prev: ../../
 next: ../Quickstart/
+tags:
+    - RAK7201
+    - wisnode
 ---
 
 # RAK7201 WisNode Button 4K

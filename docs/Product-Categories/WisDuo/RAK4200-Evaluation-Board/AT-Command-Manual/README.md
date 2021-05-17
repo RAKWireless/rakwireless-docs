@@ -3,6 +3,8 @@ prev: ../Quickstart/
 next: false
 tags:
   - RAK4200 Evaluation Board
+  - wisduo
+  - AT Command Manual
 ---
 
 

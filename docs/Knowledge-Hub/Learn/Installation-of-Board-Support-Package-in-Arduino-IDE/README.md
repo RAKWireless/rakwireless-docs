@@ -158,8 +158,7 @@ Once Arduino IDE has been installed successfully, and you've understood the main
   caption="Modifying Additional Board Manager URLs"
 />
 
-1. Copy this URL `https://raw.githubusercontent.com/RAKwireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless_index.json` and paste it on the field as shown in Figure 11. If there are other URLs already there, just add it on the next line. After adding the URL, click OK.
-
+4. Copy this URL `https://raw.githubusercontent.com/RAKwireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless_index.json` and paste it on the field as shown in Figure 11. If there are other URLs already there, just add it on the next line. After adding the URL, click OK.
 
 
 <rk-img
@@ -167,7 +166,16 @@ Once Arduino IDE has been installed successfully, and you've understood the main
   width="75%"
   caption="Adding RAKwireless WisBlock Core BSP"
 />
- 
+
+:::tip 📝 NOTE
+If you are using Linux, you need to install adafruit-nrfutil via pip.
+
+`sudo pip3 install adafruit-nrfutil` or `pip3 install --user adafruit-nrfutil`
+
+:::
+
+
+
 5. Restart the Arduino IDE.
 
 6. Open the Boards Manager from Tools Menu. 
@@ -251,24 +259,6 @@ Now, you have successfully installed the LPWAN library and compiled your first W
 
 ---- 
 For more information about the examples and tutorials, visit RAK [Github WisBlock repository](https://github.com/RAKWireless/WisBlock).
-
-### Development Version
-
-#### Adafruit's nrfutil tools
-
-The [adafruit-nrfutil](https://github.com/adafruit/Adafruit_nRF52_nrfutil) (derived from Nordic pc-nrfutil) is needed to upload sketch via serial port.
-
-  - For Windows and macOS, pre-built executable binaries are included in the BSP at `tools/adafruit-nrfutil/`. It should work out of the box.
-  - Linux users need to run follow command to install it from PyPi.
-
-```
-$ pip3 install adafruit-nrfutil --user
-```
-
-#### Drivers
-
-  - [SiLabs CP2104 driver](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) might be required for some modules.
-
 
 ## Credits 
 

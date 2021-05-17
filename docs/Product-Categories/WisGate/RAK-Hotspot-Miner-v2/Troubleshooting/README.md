@@ -2,9 +2,11 @@
 next: ../Datasheet/
 prev: ../Quickstart/
 tags:
-  - RAK-Hotspot-Miner-v2
+  - RAK Hotspot Miner v2
   - Troubleshooting
+  - wisgate
 ---
+
 # Troubleshooting
 
 ## Status LEDs

@@ -2,12 +2,12 @@
 tags:
   - datasheet
   - wisblock
+  - RAK5802
 prev: /Product-Categories/WisBlock/RAK5802/Overview/
 next: false
 ---
 
 # RAK5802 WisBlock RS485 Interface Module Datasheet
-
 
 ## Overview
 
@@ -33,8 +33,6 @@ In addition, the RAK5802 supports one I2C interface, customers can use this I2C 
 *	In the field a fast crimping terminals.
 *	Designed with 18&nbsp;kV ESD protection level.
 *	Small dimensions of 35&nbsp;mm x 25&nbsp;mm.
-
-
 
 ## Specifications
 

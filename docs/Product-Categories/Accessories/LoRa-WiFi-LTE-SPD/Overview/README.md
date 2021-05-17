@@ -5,6 +5,8 @@ rak_grp: [accessories, antennas]
 rak_model: LA-GT2700 DN1-5
 prev: ../../
 next: ../Datasheet/
+tags:
+  - LA-GT2700 DN1-5
 ---
 
 # LoRa Wi-Fi LTE SPD 

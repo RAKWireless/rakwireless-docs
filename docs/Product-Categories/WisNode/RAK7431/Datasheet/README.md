@@ -4,6 +4,7 @@ next: ../AT-Command-Manual/
 tags:
   - datasheet
   - wisnode
+  - RAK7431
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK7431/Certification-Report/RAK7431_CE_Certificate.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7431/Certification-Report/RAK7431_FCC_Certificate.zip]  

@@ -1,6 +1,10 @@
 ---
 prev: ../Quickstart/
 next: ../Low-Level-Development/
+tags:
+  - AT Command Manual
+  - RAK4200
+  - wisduo
 ---
 
 

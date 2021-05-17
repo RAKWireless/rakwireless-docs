@@ -3,6 +3,8 @@ prev: ../Quickstart/
 next: ../Low-Level-Development/
 tags: 
    - RAK4600 Breakout Board
+   - wisduo
+   - AT Command Manual
 ---
 
 # RAK4600 Breakout Board AT Command Manual

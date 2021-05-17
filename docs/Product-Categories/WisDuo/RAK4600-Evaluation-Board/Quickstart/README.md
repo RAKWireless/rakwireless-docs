@@ -2,6 +2,8 @@
 prev: ../Overview/
 tags:
   - RAK4600 Evaluation Board
+  - quickstart
+  - wisduo
 ---
 
 # Quick Start Guide

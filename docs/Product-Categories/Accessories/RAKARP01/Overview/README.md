@@ -5,6 +5,8 @@ rak_grp: [accessories, antennas]
 rak_model: RAKARP01
 next: ../Datasheet/
 prev: ../../
+tags: 
+    - RAKARP01
 ---
 
 # 860-930MHz 12dBi Directional Antenna

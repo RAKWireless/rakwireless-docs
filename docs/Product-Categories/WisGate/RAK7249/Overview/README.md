@@ -5,6 +5,9 @@ rak_desc: RAK7249 is designed for outdoor use even in extreme conditions with an
 rak_grp: [wisgate, edge]
 prev: ../../
 next: ../Quickstart/
+tags:
+    - RAK7249
+    - wisgate
 ---
 
 # RAK7249 WisGate Edge Max

@@ -5,6 +5,9 @@ rak_desc: RAK7244 is a base model built with the RAK2245 Pi HAT stacked with the
 rak_grp: [wisgate, developer]
 prev: ../../
 next: ../Quickstart/
+tags:
+    - wisgate
+    - RAK7244
 ---
 
 # RAK7244 WisGate Developer D4

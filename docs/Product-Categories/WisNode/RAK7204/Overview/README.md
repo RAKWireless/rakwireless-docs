@@ -4,6 +4,9 @@ rak_desc: RAK7204 comes in a compact size that serves as an environmental monito
 rak_grp: [wisnode,sense]
 prev: ../../
 next: ../Quickstart/
+tags:
+  - wisnode
+  - RAK7204
 ---
 
 # RAK7204 WisNode Sense Home

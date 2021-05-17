@@ -4,6 +4,9 @@ rak_desc: The RAK4270 module is designed to simplify LoRa peer to peer and LoRaW
 rak_grp: [wisduo, module]
 prev: ../../
 next: ../Quickstart/
+tags:
+    - RAK4270
+    - wisduo
 ---
 
 # RAK4270 WisDuo LPWAN Module

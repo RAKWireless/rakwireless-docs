@@ -4,7 +4,10 @@ rak_desc: RAK3244 BastWAN is a Feather compatible board based on the RAK4260 mod
 rak_grp: [wisduo, breakout]
 prev: ../../
 next: ../Quickstart/
-
+tags:
+    - RAK3244
+    - BastWAN
+    - wisduo
 ---
 
 # RAK3244 BastWAN

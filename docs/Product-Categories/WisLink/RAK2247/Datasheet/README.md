@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wislink
+  - RAK2247
 prev: ../Quickstart/
 next: false
 certifications:

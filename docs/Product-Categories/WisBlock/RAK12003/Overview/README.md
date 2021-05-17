@@ -4,8 +4,10 @@ rak_desc: RAK12003 is a WisBlock Infrared Temperature Sensor which extends the W
 rak_grp: [wisblock, wissensor]
 prev: ../../
 next: ../Datasheet/
+tags:
+    - wisblock
+    - RAK12003
 ---
-
 
 # RAK12003 WisBlock Infrared Temperature Sensor
 

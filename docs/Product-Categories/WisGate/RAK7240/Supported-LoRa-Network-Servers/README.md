@@ -3,6 +3,7 @@ tags:
   - AWS
   - TTN
   - wisgate
+  - RAK7240
 prev: ../Datasheet/
 
 ---

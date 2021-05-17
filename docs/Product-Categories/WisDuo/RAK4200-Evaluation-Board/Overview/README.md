@@ -5,7 +5,9 @@ rak_grp: [wisduo, evb]
 prev: ../../
 next: ../Quickstart/
 rak_model: RAK4200-E
-tags: wisduo
+tags:
+  - wisduo
+  - RAK4200 Evaluation Board
 ---
 
 # RAK4200 Evaluation Board

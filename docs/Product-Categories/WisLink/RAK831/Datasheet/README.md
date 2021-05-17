@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wislink
+  - RAK831
 prev: ../Overview/
 next: false
 certifications:

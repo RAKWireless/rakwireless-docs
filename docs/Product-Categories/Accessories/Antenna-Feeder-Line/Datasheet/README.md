@@ -1,11 +1,15 @@
 ---
 prev: ../Overview/
 next: false
+tags: 
+  - Antenna Feeder Line
+  - datasheet
 ---
 
 # Antenna Feeder Line Datasheet
 
 ## Overview
+
 ### Description
 
 Antenna Feeder Line cable for **WisGate Edge Prime and Max (RAK7240/7249).**  This Feeder Line cable allows you to better positioning the gateway antennas for optimal coverage. You can choose between 1.5m, 3m, and 5m cable length. 

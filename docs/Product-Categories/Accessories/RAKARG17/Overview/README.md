@@ -5,6 +5,8 @@ rak_grp: [accessories, antennas]
 rak_model: RAKARG17
 prev: ../../
 next: ../Datasheet/
+tags: 
+    - RAKARG17
 ---
 
 # 860-930MHz 5dBi LoRaWAN Antenna Black

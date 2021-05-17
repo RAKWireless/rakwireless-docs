@@ -1,6 +1,10 @@
 ---
 prev: ../Overview/
 next: false
+tags:
+  - GPS Antenna
+  - RAKAGPS1
+  - datasheet
 ---
 
 # GPS Antenna Datasheet

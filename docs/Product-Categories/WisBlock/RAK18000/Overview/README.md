@@ -4,6 +4,9 @@ rak_desc: RAK18000 is a WisBlock Sensor PDM Stereo Microphone Module which add s
 rak_grp: [wisblock, wissensor]
 prev: ../../
 next: ../Datasheet/
+tags:
+    - wisblock
+    - RAK18000
 ---
 
 # RAK18000 WisBlock PDM Stereo Microphone Module

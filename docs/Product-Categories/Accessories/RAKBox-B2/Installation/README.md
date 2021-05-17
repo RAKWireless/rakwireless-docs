@@ -1,6 +1,8 @@
 ---
 prev: ../Datasheet/
 next: false
+tags:
+    - RAKBox-B2
 ---
 # Installation Guide
 

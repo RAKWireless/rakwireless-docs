@@ -1,10 +1,12 @@
 ---
 prev: ../Overview/
 next: false
-tags: RAKDAP1
+tags:
+  - RAKDAP1
+  - quickstart
 ---
 
-# Quickstart Guide
+# Quick Start Guide
 
 ## Installation
 

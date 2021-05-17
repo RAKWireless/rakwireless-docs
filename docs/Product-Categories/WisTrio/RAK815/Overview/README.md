@@ -4,6 +4,9 @@ rak_desc: RAK815 is a wireless remote solution that integrates both LoRaWAN 1.0.
 rak_grp: [wistrio, lpwan]
 prev: ../../
 next: ../Quickstart/
+tags:
+  - wistrio
+  - RAK815
 ---
 
 # RAK815 WisTrio LPWAN Tracker

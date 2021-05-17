@@ -3,6 +3,8 @@ prev: ../Overview/
 next: ../Datasheet/
 tags:
   - RAK11200
+  - quickstart
+  - wisblock
 ---
 
 # Quick Start Guide

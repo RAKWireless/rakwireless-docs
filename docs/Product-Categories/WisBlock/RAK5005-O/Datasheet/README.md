@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wisblock
+  - RAK5005-O
 prev: ../Overview/
 next: false
 certifications:

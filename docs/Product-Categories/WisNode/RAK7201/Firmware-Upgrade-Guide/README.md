@@ -1,6 +1,10 @@
 ---
 prev: ../AT-Command-Manual/
 next: false
+tags:
+  - RAK7201
+  - Firmware Upgrade
+  - wisnode
 ---
 
 # Firmware Upgrade Guide

@@ -4,6 +4,7 @@ next: ../AT-Command-Manual/
 tags:
   - datasheet
   - wisnode
+  - RAK7200
 ---
 
 # RAK7200 WisNode Track Lite Datasheet

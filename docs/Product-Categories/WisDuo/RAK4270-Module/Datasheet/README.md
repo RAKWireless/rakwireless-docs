@@ -2,6 +2,7 @@
 tags:
 - datasheet
 - wisduo
+- RAK4270
 prev: ../Low-Level-Development/
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/CE%20Certification.zip]

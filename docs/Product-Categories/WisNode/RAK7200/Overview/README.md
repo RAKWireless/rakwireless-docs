@@ -5,6 +5,9 @@ rak_desc: RAK7200 is a tracker device with a 3.7V rechargeable Li-Ion battery an
 rak_grp: [wisnode,track]
 prev: ../../
 next: ../Quickstart/
+tags:
+    - RAK7200
+    - wisnode
 ---
 
 # RAK7200 WisNode Track Lite

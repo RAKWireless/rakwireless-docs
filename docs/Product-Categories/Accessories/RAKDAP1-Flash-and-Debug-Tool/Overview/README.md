@@ -5,6 +5,8 @@ rak_grp: [accessories, hardware-tools]
 rak_model: RAKDAP1
 prev: ../../
 next: ../Quickstart/
+tags: 
+    - RAKDAP1
 ---
 
 # RAKDAP1 Flash and Debug Tool

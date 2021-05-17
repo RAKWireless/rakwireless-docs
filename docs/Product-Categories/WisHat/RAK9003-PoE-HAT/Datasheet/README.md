@@ -2,7 +2,9 @@
 tags:
   - datasheet
   - wishat
+  - RAK9003 PoE Pi HAT
 prev: ../Overview/
+next: false
 ---
 
 # RAK9003 PoE Pi HAT Datasheet

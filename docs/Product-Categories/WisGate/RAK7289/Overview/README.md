@@ -4,6 +4,9 @@ rak_desc: RAK7289 WisGate Edge Pro is an ideal product for IoT commercial deploy
 rak_grp: [wisgate, edge]
 prev: ../../
 next: ../Datasheet/
+tags:
+    - RAK7289
+    - wisgate
 ---
 
 

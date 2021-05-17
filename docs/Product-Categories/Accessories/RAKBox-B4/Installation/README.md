@@ -1,6 +1,9 @@
 ---
 prev: ../Datasheet/
 next: false
+tags:
+  - RAKBox-B4
+  - Installation Guide
 ---
 
 # Installation Guide

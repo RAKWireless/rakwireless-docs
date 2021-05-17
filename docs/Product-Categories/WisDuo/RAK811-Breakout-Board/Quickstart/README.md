@@ -3,6 +3,8 @@ prev: ../Overview/
 next: ../Datasheet/
 tags:
   - RAK811 Breakout Board
+  - wisduo
+  - quickstart
 ---
 
 # Quick Start Guide

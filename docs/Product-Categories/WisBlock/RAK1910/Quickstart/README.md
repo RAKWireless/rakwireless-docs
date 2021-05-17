@@ -2,9 +2,11 @@
 tags:
   - quickstart
   - wisblock
+  - RAK1910
 prev: ../Overview/ 
 next: ../Datasheet/ 
 ---
+
 # Quick Start Guide
 
 This guide introduces the RAK1910 WisBlock GNSS Location Module and how to program with it. The information obtained from the GPS will then be printed over the USB debug port of the WisBlock Base board.

@@ -1,7 +1,10 @@
 ---
-prev: ../Quick-Start-Guide/Quickstart/
-next: ../Low-Level-Development/
-tags: RAK4600
+prev: ../Low-Level-Development/
+next: ../Datasheet/
+tags:
+    - RAK4600
+    - AT Command Manual
+    - wisduo
 ---
 
 # RAK4600 Module AT Command Manual

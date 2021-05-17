@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wisgate
+  - RAK7244
 prev: ../Quickstart/
 next: false
 certifications:

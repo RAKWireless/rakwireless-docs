@@ -5,6 +5,8 @@ rak_grp: [accessories, antennas]
 rak_model: RAK9720 
 prev: ../../
 next: ../Datasheet/
+tags: 
+    - RAK9720
 ---
 
 

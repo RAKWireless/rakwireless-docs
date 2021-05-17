@@ -1,7 +1,10 @@
 ---
 prev: ../Quickstart/
 next: ../Datasheet/
-tags: RAK3172
+tags:
+    - wisduo
+    - AT Command Manual
+    - RAK3172
 ---
 
 # RAK3172 Module AT Command Manual

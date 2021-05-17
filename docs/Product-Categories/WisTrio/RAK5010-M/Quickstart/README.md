@@ -3,6 +3,8 @@ prev: ../Overview/
 next: ../Datasheet/
 tags:
   - RAK5010-M
+  - quickstart
+  - wistrio
 ---
 
 # Quick Start Guide

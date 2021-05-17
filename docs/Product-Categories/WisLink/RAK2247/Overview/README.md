@@ -4,6 +4,9 @@ rak_desc: RAK2247 is functional to any embedded platform offering a mini-PCIe sl
 rak_grp: [wislink, lpwan]
 prev: ../../
 next: ../Quickstart/
+tags:
+  - RAK2247
+  - wislink
 ---
 
 # RAK2247 WisLink LPWAN Concentrator

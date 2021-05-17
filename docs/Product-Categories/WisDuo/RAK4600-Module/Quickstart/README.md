@@ -1,7 +1,10 @@
 ---
 prev: ../../Overview/
 next: ../AT-Command-Manual/
-tags: RAK4600
+tags:
+  - quickstart
+  - wisduo
+  - RAK4600
 ---
 
 # Quick Start Guide

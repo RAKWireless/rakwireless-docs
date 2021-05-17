@@ -4,6 +4,7 @@ next: ../AT-Command-Manual/
 tags:
   - datasheet
   - wisnode
+  - RAK7204
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK7204/Certification/RAK7204_CE_cert.zip]
 ---

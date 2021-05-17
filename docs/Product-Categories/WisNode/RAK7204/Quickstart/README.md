@@ -3,6 +3,8 @@ prev: ../Overview/
 next: ../Datasheet/
 tags:
   - RAK7204
+  - wisnode
+  - quickstart
 ---
 
 # Quick Start Guide

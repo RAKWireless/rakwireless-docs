@@ -2,8 +2,9 @@
 next: ../Troubleshooting/
 prev: ../Quickstart/
 tags:
-  - RAK-Hotspot-Miner
+  - RAK Hotspot Miner
   - Backup
+  - wisgate
 ---
 
 # SD Card Backup

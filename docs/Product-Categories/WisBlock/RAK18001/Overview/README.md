@@ -4,7 +4,9 @@ rak_desc: RAK18001 is a WisBlock Extra Buzzer module which produces an audible s
 rak_grp: [wisblock, wisextra]
 prev: ../../
 next: ../Datasheet/
-
+tags:
+    - wisblock
+    - RAK18001
 ---
 
 # RAK18001 WisBlock Buzzer Module

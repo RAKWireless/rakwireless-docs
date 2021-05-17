@@ -7,9 +7,13 @@ tags:
   - Antennas
 header:
   title: RAK Antenna RF Connectors 101
-  caption: by <b>RAKwireless Team</b>
+  caption: by <b>Denitsa Prodanova</b>
   img: /assets/images/knowledge-hub/banners/rak5005-O-baseboard-installation-guide.jpg
 posted: 04/16/2021 9:43 AM
+author:
+  name: Denitsa Prodanova
+  about: Denitsa is a Technical Graphics and Documentation Editor at RAKwireless. She is passionate about the arts and believes technology and art go hand in hand.
+  img: /assets/images/knowledge-hub/authors/denitsa.png
 ---
 
 # RAK Antenna RF connectors 101
@@ -87,3 +91,5 @@ For approximating the insertion loss see the SMA section.
 For more detailed explanation about losses refer to [this](https://www.hamradio.me/connectors/uhf-connector-test-results.html?fbclid=IwAR0VV-TMbFf0NLpzMBGqLdtIv8oYPKSeJYVhBZ7hqUCzrd12cCep1gzb4uE) article from Ham Radio.
 
 To ensure you will get the right antenna for your device, just have those references in mind! 
+
+<rk-author />

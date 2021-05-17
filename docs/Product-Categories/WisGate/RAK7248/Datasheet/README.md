@@ -3,6 +3,7 @@ static_root:
 tags:
   - datasheet
   - wisgate
+  - RAK7248
 next: false
 prev: ../Overview/
 certifications:

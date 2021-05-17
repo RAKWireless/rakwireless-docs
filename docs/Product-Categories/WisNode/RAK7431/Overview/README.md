@@ -4,6 +4,9 @@ rak_grp: [wisnode,bridge]
 rak_desc: RAK7431 is designed for industrial applications that relay Modbus data using the LoRaWAN network as a means of wirelessly transmitting to and from the end devices. It can operate in all the LoRaWAN bands within the standard parameters defined by the LoRa Alliance. Hence, it allows good signal quality within the densely populated offices, storehouses, and even within the large factories.
 prev: ../../
 next: ../Quickstart/
+tags:
+  - RAK7431
+  - wisnode
 ---
 
 # RAK7431 WisNode Bridge Serial

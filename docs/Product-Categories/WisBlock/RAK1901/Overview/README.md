@@ -4,8 +4,10 @@ rak_desc: RAK1901 is a WisBlock Sensor which extends the WisBlock system with a 
 rak_grp: [wisblock, wissensor]
 prev: ../../
 next: ../Quickstart/
+tags:
+    - wisduo
+    - RAK1901
 ---
-
 
 # RAK1901 WisBlock Temperature and Humidity Sensor
 

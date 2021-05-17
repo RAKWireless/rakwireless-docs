@@ -6,6 +6,9 @@ rak_grp: [wisgate, developer]
 prev: ../../
 next: ../Quickstart/
 rak_model: RAK Hotspot Miner v2
+tags:
+    - RAK Hotspot Miner v2
+    - wisgate
 ---
 
 # RAK Hotspot Miner v2

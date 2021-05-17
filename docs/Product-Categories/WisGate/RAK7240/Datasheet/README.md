@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wisgate
+  - RAK7240
 prev: ../Quickstart/
 next: ../Supported-LoRa-Network-Servers/
 certifications:

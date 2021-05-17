@@ -4,6 +4,9 @@ rak_desc: RAK11200 is a WisBlock Core module for RAK WisBlock. It extends the Wi
 rak_grp: [wisblock, wiscore]
 prev: ../../
 next: ../Quickstart/
+tags: 
+    - RAK11200
+    - wisduo
 ---
 
 # RAK11200 WisBlock WiFi Module

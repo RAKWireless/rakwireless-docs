@@ -4,6 +4,9 @@ rak_desc: The RAK15000 is a serial EEPROM module that can be mounted to slot A, 
 rak_grp: [wisblock, wisstorage]
 prev: ../../
 next: ../Datasheet/
+tags:
+    - wisblock
+    - RAK15000
 ---
 
 

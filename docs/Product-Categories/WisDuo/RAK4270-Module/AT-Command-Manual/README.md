@@ -1,7 +1,10 @@
 ---
 prev: ../Quickstart/
 next: ../Low-Level-Development/
-tags: RAK4270
+tags:
+  - wisduo
+  - AT Command Manual
+  - RAK4270
 ---
 
 

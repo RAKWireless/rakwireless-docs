@@ -5,6 +5,8 @@ rak_grp: [accessories, antennas]
 rak_model: Antenna Mounting Kit
 prev: ../../
 next: false
+tags:
+  - Antenna Mounting Kit
 ---
 
 # Antenna Mounting Kit

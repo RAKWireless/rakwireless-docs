@@ -1,7 +1,9 @@
 ---
 prev: ../AT-Command-Manual/
 next: ../Datasheet/
-tags: RAK4600
+tags:
+  - wisgate
+  - RAK4600
 ---
 
 # LoRa Module Low Level Development Reference

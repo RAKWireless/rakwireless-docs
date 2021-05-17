@@ -6,7 +6,7 @@ rak_model: RAK9734
 prev: ../../
 next: ../Datasheet/
 tags: 
-    - rak9734
+    - RAK9734
 ---
 
 # Pulsar Cable LMR400

@@ -4,6 +4,9 @@ rak_desc: RAK19002 is a WisBlock Power that supplies 12V DC with up to 50mA. The
 rak_grp: [wisblock, wispower]
 prev: ../../
 next: ../Datasheet/
+tags:
+    - wisblock
+    - RAK19002
 ---
 
 # RAK19002 WisBlock Boost Module

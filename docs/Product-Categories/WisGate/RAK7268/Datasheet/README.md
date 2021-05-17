@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wisgate
+  - RAK7268
 prev: ../Overview/
 next: false 
 certifications:

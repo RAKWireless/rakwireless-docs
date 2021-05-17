@@ -2,8 +2,11 @@
 next: ../Troubleshooting/
 prev: ../Overview/
 tags:
-  - RAK-Hotspot-Miner-v2
+  - RAK Hotspot Miner v2
+  - wisgate
+  - quickstart
 ---
+
 # Quick Start Guide
 
 ## Prerequisites

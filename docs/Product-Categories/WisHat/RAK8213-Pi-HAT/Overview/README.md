@@ -6,6 +6,9 @@ rak_grp: wishat
 prev: ../../
 next: ../Datasheet/
 rak_model: RAK8213 Pi HAT
+tags:
+  - RAK8213 Pi HAT
+  - wishat
 ---
 
 # RAK8213 Pi HAT

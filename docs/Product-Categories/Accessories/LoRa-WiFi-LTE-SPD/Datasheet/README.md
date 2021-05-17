@@ -1,6 +1,9 @@
 ---
 prev: ../Overview/
 next: false
+tags:
+  - LA-GT2700 DN1-5
+  - datasheet
 ---
 
 # LoRa Wi-Fi LTE SPD Datasheet

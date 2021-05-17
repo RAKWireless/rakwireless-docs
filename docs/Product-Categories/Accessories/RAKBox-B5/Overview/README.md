@@ -5,6 +5,8 @@ rak_grp: [accessories, enclosures]
 rak_model: RAKBox-B5
 prev: ../../
 next: ../Datasheet/
+tags:
+    - RAKBox-B5
 ---
 
 # WisBlock RAKBox-B5 Enclosure

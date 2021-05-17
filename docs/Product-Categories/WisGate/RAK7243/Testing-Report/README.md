@@ -3,6 +3,8 @@ prev: ../Quickstart/
 next: false
 tags:
   - RAK7243
+  - Environment Test Report
+  - wisgate
 ---
 
 # Environment Test Report

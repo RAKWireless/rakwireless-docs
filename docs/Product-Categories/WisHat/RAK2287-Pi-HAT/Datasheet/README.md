@@ -5,6 +5,7 @@ next: false
 tags:
   - datasheet
   - wishat
+  - RAK2287 Pi HAT
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification/RAK2287%20CE%20certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification/RAK2287%20FCC%20certification.zip]

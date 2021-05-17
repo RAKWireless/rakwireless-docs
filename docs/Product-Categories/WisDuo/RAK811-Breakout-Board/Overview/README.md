@@ -6,6 +6,9 @@ rak_grp: [wisduo, breakout]
 prev: ../../
 next: ../Quickstart/
 rak_model: RAK811-D
+tags:
+  - RAK811 Breakout Board
+  - wisduo
 ---
 
 # RAK811 Breakout Board

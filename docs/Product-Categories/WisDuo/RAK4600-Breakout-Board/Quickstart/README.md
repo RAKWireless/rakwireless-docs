@@ -3,6 +3,8 @@ prev: ../Overview/
 next: ../Datasheet/
 tags:
   - RAK4600 Breakout Board
+  - wisduo
+  - quickstart
 ---
 
 # Quick Start Guide

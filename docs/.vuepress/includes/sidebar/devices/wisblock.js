@@ -53,6 +53,22 @@ module.exports = {
       download: true,
       sidebarDepth: 4
     },
+	{
+	  title: 'Quick Start Guide',
+      path: '/Product-Categories/WisBlock/RAK2305/Quickstart/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+	{
+	  title: 'Low Level Development',
+      path: '/Product-Categories/WisBlock/RAK2305/Low-Level-Development/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },	
     {
       title: 'Datasheet',
       path: '/Product-Categories/WisBlock/RAK2305/Datasheet/',

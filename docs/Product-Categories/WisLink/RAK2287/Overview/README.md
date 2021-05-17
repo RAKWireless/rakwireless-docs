@@ -4,6 +4,9 @@ rak_desc: RAK2287 is compatible with the 3G/LTE card of the mini-PCIe type. This
 rak_grp: [wislink, lpwan]
 prev: ../../
 next: ../Quickstart/
+tags:
+  - RAK2287
+  - wislink
 ---
 
 # RAK2287 WisLink LPWAN Concentrator

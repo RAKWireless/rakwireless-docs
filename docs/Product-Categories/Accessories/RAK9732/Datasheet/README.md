@@ -2,7 +2,8 @@
 prev: ../Overview/
 next: false
 tags:
-    - rak9732
+    - RAK9732
+    - datasheet
 ---
 
 # Pulsar Cable LMR400 Datasheet

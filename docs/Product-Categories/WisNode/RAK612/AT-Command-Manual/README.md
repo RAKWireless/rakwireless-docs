@@ -3,6 +3,8 @@ prev: ../Quickstart/
 next: false
 tags:
   - RAK612
+  - AT Command Manual
+  - wisnode
 ---
 
 # AT Command Manual

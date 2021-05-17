@@ -1,6 +1,9 @@
 ---
 prev: ../AT-Command-Manual/
 next: ../Datasheet/
+tags:
+  - RAK4200
+  - wisduo
 ---
 
 # LoRa Module Low Level Development

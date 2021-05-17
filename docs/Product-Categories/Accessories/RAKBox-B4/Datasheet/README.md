@@ -1,7 +1,11 @@
 ---
 prev: ../Overview/
 next: ../Installation/
+tags:
+  - RAKBox-B4
+  - datasheet
 ---
+
 # WisBlock RAKBox-B4 Enclosure Datasheet
 
 RAKBox-B4 is an IP67 rated enclosure for outdoor usage. It is designed specifically for the WisBlock products.

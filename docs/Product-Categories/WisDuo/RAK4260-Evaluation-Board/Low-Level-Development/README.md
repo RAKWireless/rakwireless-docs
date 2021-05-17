@@ -3,6 +3,7 @@ prev: ../Quickstart/
 next: ../Datasheet/
 tags:
   - RAK4260 Evaluation Board
+  - wisduo
 ---
 
 # RAK4260 Evaluation Board Low Level Development

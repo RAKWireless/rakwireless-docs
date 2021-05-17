@@ -4,6 +4,7 @@ next: ../AT-Command-Manual/
 tags:
   - datasheet
   - wistrio
+  - RAK5010-M
 ---
 
 # RAK5010-M WisTrio NB-IoT Tracker Datasheet

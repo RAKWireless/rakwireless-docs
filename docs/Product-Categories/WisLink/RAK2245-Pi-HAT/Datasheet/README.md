@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wislink
+  - RAK2245 Pi HAT
 prev: ../Quickstart/
 next: false
 certifications:

@@ -1,10 +1,11 @@
 ---
 prev: ../Quickstart/
 next: ../Datasheet/
-tags: RAK4270 Breakout Board
+tags:
+  - RAK4270 Breakout Board
+  - wisduo
+  - AT Command Manual
 ---
-
-
 
 # RAK4270 Breakout Board AT Command Manual
 

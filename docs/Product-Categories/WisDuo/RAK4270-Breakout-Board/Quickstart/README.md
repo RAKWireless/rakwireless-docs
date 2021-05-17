@@ -3,6 +3,8 @@ prev: ../Overview/
 next: ../AT-Command-Manual/
 tags:
   - RAK4270 Breakout Board
+  - wisduo
+  - quickstart
 ---
 
 # Quick Start Guide

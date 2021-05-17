@@ -4,10 +4,13 @@ rak_desc: RAK811 Low-Power Long Range LoRa Technology Transceiver module provide
 rak_grp: [wisduo, module]
 prev: ../../
 next: ../Quickstart/
-
+tags:
+  - RAK811
+  - wisduo
 ---
 
 # RAK811 WisDuo LPWAN Module
+
 Thank you for choosing **RAK811 WisDuo LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
 <!-- 

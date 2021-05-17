@@ -2,7 +2,9 @@
 tags:
   - datasheet
   - wisblock
+  - RAK1910
 prev: ../Quickstart/
+next: false
 ---
 
 # RAK1910 WisBlock GNSS Location Module Datasheet

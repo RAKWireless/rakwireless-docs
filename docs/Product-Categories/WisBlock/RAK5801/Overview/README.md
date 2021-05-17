@@ -4,6 +4,9 @@ rak_desc: RAK5801 is a WisBlock Interface module which extends the WisBlock syst
 rak_grp: [wisblock, wisinterface]
 prev: ../../
 next: ../Datasheet/
+tags:
+    - wisblock
+    - RAK5801
 ---
 
 # RAK5801 WisBlock 4-20mA Interface Module

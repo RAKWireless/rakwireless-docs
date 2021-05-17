@@ -4,6 +4,9 @@ rak_desc: RAK2013 is compatible with Raspberry Pi 3B+ edition specification. It 
 rak_grp: [wislink, cellular]
 prev: ../../
 next: ../Datasheet/
+tags:
+    - RAK2013
+    - wislink
 ---
 
 # RAK2013 WisLink Cellular Pi HAT

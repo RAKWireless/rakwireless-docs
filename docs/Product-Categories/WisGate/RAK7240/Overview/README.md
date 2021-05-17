@@ -4,6 +4,9 @@ rak_desc: RAK7240 has a built-in GPS module and LoRa Server. This gateway suppor
 rak_grp: [wisgate, edge]
 prev: ../../
 next: ../Quickstart/
+tags:
+    - RAK7240
+    - wisgate
 ---
 
 # RAK7240 WisGate Edge Prime

@@ -2,6 +2,7 @@
 tags:
   - datasheet
   - wisgate
+  - RAK7289
 prev: ../Overview/
 next: false 
 ---

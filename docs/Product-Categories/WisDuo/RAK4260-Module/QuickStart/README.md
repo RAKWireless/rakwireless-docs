@@ -2,7 +2,9 @@
 prev: ../Overview/
 next: ../Datasheet/
 tags:
-  - RAK4260 Module
+  - RAK4260
+  - quickstart
+  - wisduo
 ---
 
 # Quick Start Guide

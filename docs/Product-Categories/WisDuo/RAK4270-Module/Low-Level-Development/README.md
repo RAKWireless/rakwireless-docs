@@ -1,7 +1,9 @@
 ---
 prev: ../AT-Command-Manual/
 next: ../Datasheet/
-tags: RAK4270
+tags: 
+  - wisduo
+  - RAK4270
 ---
 
 

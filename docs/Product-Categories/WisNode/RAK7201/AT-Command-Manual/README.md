@@ -3,6 +3,8 @@ prev: ../Datasheet/
 next: ../Firmware-Upgrade-Guide/
 tags:
   - RAK7201
+  - AT Command Manual
+  - wisnode
 ---
 
 # AT Command Manual

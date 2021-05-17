@@ -5,6 +5,8 @@ rak_grp: [accessories, enclosures]
 rak_model: RAKBox-GW-3
 prev: ../../
 next: false
+tags:
+  - RAKBox-GW-3
 ---
 
 # Outdoor Enclosure Kit H D4/D4+/D4P

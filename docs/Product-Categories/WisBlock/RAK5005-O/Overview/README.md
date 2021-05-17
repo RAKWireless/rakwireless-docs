@@ -4,6 +4,9 @@ rak_desc: RAK5005-O is the base board that connects all WisBlock modules togethe
 rak_grp: [wisblock, wisbase]
 next: ../Datasheet/
 prev: ../../
+tags:
+    - RAK5005-O
+    - wisblock
 ---
 
 

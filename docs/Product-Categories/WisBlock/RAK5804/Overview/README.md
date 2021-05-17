@@ -4,7 +4,9 @@ rak_desc: RAK5804 is a WisBlock Interface module which extends the WisBlock syst
 rak_grp: [wisblock, wisinterface]
 prev: ../../
 next: ../Datasheet/
-
+tags:
+    - wisblock
+    - RAK5804
 ---
 
 # RAK5804 WisBlock Interface Extension Module

@@ -5,6 +5,9 @@ rak_desc: The WisGate Developer D4H RAK7248 is a LoRaWAN® Gateway that consists
 rak_grp: [wisgate, developer]
 prev: ../../
 next: ../Datasheet/
+tags:
+    - wisgate
+    - RAK7248
 ---
 
 # RAK7248 WisGate Developer D4H

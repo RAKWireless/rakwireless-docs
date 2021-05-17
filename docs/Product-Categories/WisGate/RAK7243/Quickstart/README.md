@@ -3,6 +3,8 @@ prev: ../Overview/
 next: ../Testing-Report/
 tags:
   - RAK7243
+  - quickstart
+  - wisgate
 ---
 
 # Quick Start Guide

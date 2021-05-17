@@ -3,6 +3,7 @@ prev: ../Low-Level-Development/
 tags:
   - datasheet
   - wisduo
+  - RAK811
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811%20CE%20Certification.rar]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811%C2%A0FCC%20Certification.rar]

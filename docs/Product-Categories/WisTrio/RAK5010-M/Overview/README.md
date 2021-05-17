@@ -4,6 +4,9 @@ rak_desc: The RAK5010-M is an advanced, highly flexible eMTC/NB-IoT/eGPRS tracke
 rak_grp: [wistrio,cellular]
 prev: ../../
 next: ../Quickstart/
+tags:
+  - wistrio
+  - RAK5010-M
 ---
 
 # RAK5010-M WisTrio NB-IoT Tracker
