@@ -19,7 +19,7 @@ Thank you for choosing **RAK Hotspot Miner**. To help you get started, we have p
 * [Troubleshooting](../Troubleshooting/)
 * [Datasheet](../Datasheet/)
 * [ErP Test Report](https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/CN21UO7L%C2%A0001_TR-signed_extsigned_RAK%20Hotspot%20Miner.pdf)
-
+* [RAK Hotspot Miner Outdoor Case Assembly Guide](.../../../../../Accessories/Outdoor-Enclosure-Kit/Overview/#rak-hotspot-miner-outdoor-case)
 ## Product Background
 
 **Hotspot Details**

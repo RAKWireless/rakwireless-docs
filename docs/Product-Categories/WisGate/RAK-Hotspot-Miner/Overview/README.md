@@ -19,7 +19,7 @@ Thank you for choosing **RAK Hotspot Miner** in your awesome IoT Project! 🎉 T
 * [SD Card Backup](../Backup/)
 * [Troubleshooting](../Troubleshooting/)
 * [Datasheet](../Datasheet/)
-
+* [RAK Hotspot Miner Outdoor Case Assembly Guide](.../../../../../Accessories/Outdoor-Enclosure-Kit/Overview/#rak-hotspot-miner-outdoor-case)
 ## Product Background
 
 **Hotspot Details**
