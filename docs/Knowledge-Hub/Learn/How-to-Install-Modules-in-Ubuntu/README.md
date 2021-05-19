@@ -1,7 +1,7 @@
 ---
 sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
-rak_desc: This document walks through the details on the steps on how to install Raspberry Pi, InfluxDB, and Grafana in Ubuntu. 
+rak_desc: This document walks through the details on the steps on how to install Raspberry Pi, InfluxDB, Grafana, and Telegraf in Ubuntu. 
 tags:
   - Ubuntu
   - Tutorials
@@ -173,5 +173,35 @@ sudo systemctl enable grafana-server.service
   caption="Grafana Server at Boot"
 />
 
+## Installing Telegraf
+
+1. Add the InfluxData repository with the following commands.
+
+```bash
+wget -qO- https://repos.influxdata.com/influxdb.key | sudo apt-key add -
+source /etc/lsb-release
+echo "deb https://repos.influxdata.com/${DISTRIB_ID,,} ${DISTRIB_CODENAME} stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
+```
+
+2. Install and start the Telegraf service.
+
+```bash
+sudo apt-get update && sudo apt-get install telegraf
+sudo systemctl start telegraf
+```
+
+3. Check if the service is active using the command below. 
+
+```bash
+sudo service telegraf status
+```
+ If all went well, you will see what is shown in Figure 8:
+
+
+<rk-img
+  src="/assets/images/knowledge-hub/tutorials/how-to-install-modules-in-ubuntu/ubuntu-telegraf/status.png"
+  width="100%"
+  caption="Telegraf service status running"
+/>
 
 <rk-author />

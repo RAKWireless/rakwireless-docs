@@ -3,7 +3,7 @@ tags:
   - datasheet
   - wisblock
   - RAK1906
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -13,9 +13,7 @@ next: false
 
 ### Description
 
-The RAK1906 WisBlock Environmental Sensor module, part of the RAK Wireless Wisblock series, is a 4-in-1 digital sensor board that comprises gas, humidity pressure, and temperature sensor based on the Bosch® BME680 module. The RAK1906 is ideal for applications such as: indoor air quality, home automation, and building IoT solutions.
-
-### Features
+The RAK1906 WisBlock Environmental Sensor module, part of the RAK WisBlock Sensor series, is a 4-in-1 digital sensor board that comprises gas, humidity pressure, and temperature sensor based on the Bosch® BME680 module. The RAK1906 is ideal for applications such as indoor air quality, home automation, and building IoT solutions. 
 
 ### Features 
 * **Temperature range**: -40&nbsp;°C to 85&nbsp;°C
@@ -31,8 +29,7 @@ The RAK1906 WisBlock Environmental Sensor module, part of the RAK Wireless Wisbl
 <!-- Insert Picture of Sensor with its dimensions -->
 
 #### Mounting
-
-The RAK1906 module can be mounted on the slots: A, B, C, or D of the WisBase board. Figure 1 shows the mounting mechanism of the RAK1906 on a WisBase module, such as the RAK5005-O.
+The RAK1906 module can be mounted on the slots: A, B, C, or D of a WisBlock Base board. Figure 2 shows the mounting mechanism of the RAK1906 on a WisBlock Base board, such as the RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak1906/datasheet/RAK19xx_mounting.png"
@@ -49,7 +46,7 @@ The RAK1906 module can be mounted on the slots: A, B, C, or D of the WisBase boa
 | BOSCH  | BME680      |
 
 #### Pin Definition
-The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1906 module to be mounted on a WisBlock base board, such as RAK5005-O. The pin order of the connector and the definition of the pinout are shown in Figure 2. 
+The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1906 module to be mounted on a WisBlock Base board, such as RAK5005-O. The pin order of the connector and the definition of the pinout are shown in Figure 3. 
 
 
 :::tip 📝 NOTE:
