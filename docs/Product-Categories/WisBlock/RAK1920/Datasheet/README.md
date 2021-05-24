@@ -210,10 +210,18 @@ Table below shows the recommended operating conditions of the RAK1920 module.
 />
 
 #### Schematic Diagram
+
+<rk-img
+  src="/assets/images/wisblock/rak1920/datasheet/schematic.png"
+  width="100%"
+  caption="Schematic Diagram"
+/>
+
 The following sections will describe the schematic of the RAK1920 module, which includes the following:
 
 - Power Supply 
 - IO Connector
+
 
 ##### Power Supply
 
@@ -252,7 +260,7 @@ The RAK1920 module uses only a subset of all the pins available in the IO connec
 
 ###### IO Connector Pin Order 
 
-Figure 14 shows the IO connector’s pin order. The connector is located in the bottom layer of the RAK1920 module.
+Figure 15 shows the IO connector’s pin order. The connector is located in the bottom layer of the RAK1920 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1920/datasheet/wisio-connector-pin-order.jpg"

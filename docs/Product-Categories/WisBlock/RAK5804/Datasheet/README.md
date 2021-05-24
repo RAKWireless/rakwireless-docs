@@ -208,7 +208,7 @@ The mechanical dimensions of the RAK5804 module is shown in Figure 7 below.
 />
 #### Schematic Diagram
 
-Figure 9 shows the schematic diagram of RAK5804 WisBlock Interface connector, USB connector and the 10 mechanical holes.
+Figure 9 shows the schematic diagram of RAK5804 WisBlock Interface connector, USB connector, and the 10 mechanical holes.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/datasheet/schematic-diagram.png"

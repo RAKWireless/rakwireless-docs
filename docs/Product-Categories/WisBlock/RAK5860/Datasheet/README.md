@@ -134,6 +134,7 @@ Figure 5 shows the dimensions of the RAK5860 module.
 
 #### Schematic Diagram
 
+
 The following sections will describe the schematic of the RAK5860 module, which include: 
 
 *	Turn on/off module
@@ -145,7 +146,7 @@ The following sections will describe the schematic of the RAK5860 module, which 
 *	Main Antenna
 *	GNSS Antenna
 
-##### Turn on/off mechanism
+##### Turn On/Off Mechanism
 
 Figure 7 shows a circuit to allow turn on or to turn off the module. By default, the internal Quectel BG77 module is in power off mode, it can be turned on by driving WIS_PWRKEY to high state (positive digital pulse) for a period of 500-1000&nbsp;ms. 
 
@@ -164,7 +165,7 @@ Alternatively, you can send a command **AT+QPOWD** command turn off the internal
 Figure 8 shows the definition of IO connector. 
 
 <rk-img
-  src="/assets/images/wisblock/rak5860/datasheet/wisio.png"
+  src="/assets/images/wisblock/rak5860/datasheet/wisio-connector.png"
   width="75%"
   caption="WisIO Connector Pin Definition"
 />
@@ -181,7 +182,7 @@ The RAK5860 only uses a subset of all the pins available in the IO connector. Th
 | WIS_RX     | UART RXD                          | BG77 MAIN_TX, 1.8&nbsp;V power domain                                                                                                                             |
 
 
-##### IO Connector Pin order
+##### IO Connector Pin Order
 
 Figure 9 shows the IO connector’s pin order. The connector is located in the bottom layer of the RAK5860 module.
 
@@ -191,7 +192,7 @@ Figure 9 shows the IO connector’s pin order. The connector is located in the b
   caption="IO Connector Pin Order"
 />
 
-##### Voltage-level translator
+##### Voltage-level Translator
 
 Within the BG77, all interfaces are designed to work with 1.8&nbsp;V level. RAK5860 features a voltage-level translator in order to down-convert the 3.3&nbsp;V coming from the WisBlock Core module. Figure 10 shows the design of the internal voltage-level translator.
 
@@ -219,12 +220,12 @@ Within the BG77, all interfaces are designed to work with 1.8&nbsp;V level. RAK5
 VDD_EXT is 1.8&nbsp;V, from BG77 internal regulator, BG77 pin 21
 :::
 
-##### SIM card circuit
+##### SIM Card Circuit
 
 The RAK5860 module only supports the 1.8&nbsp;V ESIM/SIM card, the following Figure 12 shows SIM interface circuit. By default, Nano SIM card is used, and eSIM is no mounting. In order to offer good ESD protection, a TVS diode array is added in the SIM card circuitry.
 
 <rk-img
-  src="/assets/images/wisblock/rak5860/datasheet/sim_card.png"
+  src="/assets/images/wisblock/rak5860/datasheet/sim-card.png"
   width="75%"
   caption="SIM Card Circuit"
 />
@@ -251,7 +252,7 @@ The USB connection detection pin input voltage range is 1.3~1.8&nbsp;V. Figure 1
   caption="USB connection detection pin power supply"
 />
 
-##### Power supply for USB PHY circuit
+##### Power Supply for USB PHY Circuit
 
 Figure 15 shows the power supply for USB PHY circuit.
 

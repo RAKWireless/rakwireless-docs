@@ -109,8 +109,8 @@ Figure 4 shows the dimensions and the mechanic drawing of the RAK15000 module.
 #### Schematic Diagram
 
 <rk-img
-  src="/assets/images/wisblock/rak15000/datasheet/rak15000_sch.png"
+  src="/assets/images/wisblock/rak15000/datasheet/schematic.png"
   width="100%"
-  caption="RAK15000 WisBlock EEPROM module schematics"
+  caption="RAK15000 WisBlock EEPROM Module Schematic"
 />
 

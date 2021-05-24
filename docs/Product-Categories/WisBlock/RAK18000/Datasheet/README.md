@@ -111,11 +111,11 @@ Figure 4 shows the dimensions and the mechanical drawing of the RAK18000 module.
 
 ##### WisIO Connector Connection
 
-Figure 6 shows the WisIO Connector connection and the digital microphone data line connected to **IO3** and clock line connected to **IO4**.
+Figure 6 shows the WisIO Connector connection and the digital microphone data line connected to **IO3** and the clock line connected to **IO4**. 
 
 <rk-img
-  src="/assets/images/wisblock/rak18000/datasheet/RAK18000_pin.png"
-  width="30%"
+  src="/assets/images/wisblock/rak18000/datasheet/wisio-connection.png"
+  width="80%"
   caption="RAK18000 PDM Stereo Microphone Module Connection"
 />
 
@@ -124,7 +124,7 @@ Figure 6 shows the WisIO Connector connection and the digital microphone data li
 Figure 7 shows the schematic of RAK18000. The two digital microphones, left or right channel, can be switch through R6, R7, R8, and R9.
 
 <rk-img
-  src="/assets/images/wisblock/rak18000/datasheet/RAK18000_schematic.png"
-  width="90%"
-  caption="RAK18000 PDM Stereo Microphone Module schematics"
+  src="/assets/images/wisblock/rak18000/datasheet/digital-microphone.png"
+  width="100%"
+  caption="RAK18000 PDM Stereo Microphone Module Schematic"
 />

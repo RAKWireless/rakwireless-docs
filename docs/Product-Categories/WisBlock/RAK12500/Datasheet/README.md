@@ -112,11 +112,10 @@ Figure 4 shows the dimensions and mechanical drawing of the RAK12500 module.
 
 #### Schematic Diagram
 
-Figure 6 shows the schematic diagram of u-blox ZOE-M8Q GNSS chip.
   
 <rk-img
-  src="/assets/images/wisblock/rak12500/datasheet/rak12500-ubloxsch.png"
-  width="80%"
-  caption="u-blox ZOE-M8Q GNSS Schematic"
+  src="/assets/images/wisblock/rak12500/datasheet/schematic.png"
+  width="100%"
+  caption="RAK12500 Schematic"
 />
 

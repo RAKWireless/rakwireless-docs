@@ -106,7 +106,7 @@ The Figure 4 shows the dimensions and mechanical drawing of the RAK18001 module.
 The Figure 5 shows the schematic diagram of RAK18001 Module. It consist of the pinouts of both RAK18001 Module and the Built-in Buzzer (MLT-5020).  
 
 <rk-img
-  src="/assets/images/wisblock/rak18001/datasheet/rak18001-pins.png"
-  width="40%"
-  caption="RAK18001 Buzzer Module Schematics"
+  src="/assets/images/wisblock/rak18001/datasheet/schematic.png"
+  width="100%"
+  caption="RAK18001 Buzzer Module Schematic"
 />  

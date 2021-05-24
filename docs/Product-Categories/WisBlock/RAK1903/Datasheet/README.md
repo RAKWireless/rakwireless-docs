@@ -113,7 +113,7 @@ Figure 3 shows the dimensions and the mechanic drawing of the RAK1903 module.
 Figure 5 shows the schematic of the RAK1903 module.
 
 <rk-img
-  src="/assets/images/wisblock/rak1903/datasheet/RAK1903_schematics.png"
-  width="70%"
+  src="/assets/images/wisblock/rak1903/datasheet/rak1903-schematic.png"
+  width="100%"
   caption="RAK1903 WisBlock Sensor schematics"
 />

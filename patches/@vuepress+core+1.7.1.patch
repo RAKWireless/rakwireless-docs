@@ -1,6 +1,6 @@
 diff --git a/node_modules/@vuepress/core/.temp/app-enhancers/0.js b/node_modules/@vuepress/core/.temp/app-enhancers/0.js
 new file mode 100644
-index 0000000..de65fa8
+index 0000000..663f697
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/app-enhancers/0.js
 @@ -0,0 +1 @@
@@ -8,7 +8,7 @@ index 0000000..de65fa8
 \ No newline at end of file
 diff --git a/node_modules/@vuepress/core/.temp/app-enhancers/1.js b/node_modules/@vuepress/core/.temp/app-enhancers/1.js
 new file mode 100644
-index 0000000..972e0c9
+index 0000000..6a503e0
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/app-enhancers/1.js
 @@ -0,0 +1,2 @@
@@ -17,7 +17,7 @@ index 0000000..972e0c9
 \ No newline at end of file
 diff --git a/node_modules/@vuepress/core/.temp/app-enhancers/2.js b/node_modules/@vuepress/core/.temp/app-enhancers/2.js
 new file mode 100644
-index 0000000..0bcb1e0
+index 0000000..a2a6ba7
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/app-enhancers/2.js
 @@ -0,0 +1,2 @@
@@ -26,7 +26,7 @@ index 0000000..0bcb1e0
 \ No newline at end of file
 diff --git a/node_modules/@vuepress/core/.temp/app-enhancers/3.js b/node_modules/@vuepress/core/.temp/app-enhancers/3.js
 new file mode 100644
-index 0000000..c807295
+index 0000000..45234ad
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/app-enhancers/3.js
 @@ -0,0 +1,2 @@
@@ -35,7 +35,7 @@ index 0000000..c807295
 \ No newline at end of file
 diff --git a/node_modules/@vuepress/core/.temp/app-enhancers/4.js b/node_modules/@vuepress/core/.temp/app-enhancers/4.js
 new file mode 100644
-index 0000000..3cd8143
+index 0000000..6198123
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/app-enhancers/4.js
 @@ -0,0 +1 @@
@@ -43,7 +43,7 @@ index 0000000..3cd8143
 \ No newline at end of file
 diff --git a/node_modules/@vuepress/core/.temp/app-enhancers/5.js b/node_modules/@vuepress/core/.temp/app-enhancers/5.js
 new file mode 100644
-index 0000000..31dd82c
+index 0000000..7111f1f
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/app-enhancers/5.js
 @@ -0,0 +1 @@
@@ -51,7 +51,7 @@ index 0000000..31dd82c
 \ No newline at end of file
 diff --git a/node_modules/@vuepress/core/.temp/app-enhancers/6.js b/node_modules/@vuepress/core/.temp/app-enhancers/6.js
 new file mode 100644
-index 0000000..8d34fd7
+index 0000000..4bdf368
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/app-enhancers/6.js
 @@ -0,0 +1 @@
@@ -59,7 +59,7 @@ index 0000000..8d34fd7
 \ No newline at end of file
 diff --git a/node_modules/@vuepress/core/.temp/app-enhancers/data-block.js b/node_modules/@vuepress/core/.temp/app-enhancers/data-block.js
 new file mode 100644
-index 0000000..08e2885
+index 0000000..885d9f6
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/app-enhancers/data-block.js
 @@ -0,0 +1,7 @@
@@ -73,7 +73,7 @@ index 0000000..08e2885
 \ No newline at end of file
 diff --git a/node_modules/@vuepress/core/.temp/app-enhancers/global-components-1.js b/node_modules/@vuepress/core/.temp/app-enhancers/global-components-1.js
 new file mode 100644
-index 0000000..c61095b
+index 0000000..e450c27
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/app-enhancers/global-components-1.js
 @@ -0,0 +1,23 @@
@@ -103,7 +103,7 @@ index 0000000..c61095b
 \ No newline at end of file
 diff --git a/node_modules/@vuepress/core/.temp/dynamic/plugin-redirect-options.js b/node_modules/@vuepress/core/.temp/dynamic/plugin-redirect-options.js
 new file mode 100644
-index 0000000..f746379
+index 0000000..f74b71e
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/dynamic/plugin-redirect-options.js
 @@ -0,0 +1,6 @@
@@ -143,7 +143,7 @@ index 0000000..95ce399
 +]
 diff --git a/node_modules/@vuepress/core/.temp/internal/global-ui.js b/node_modules/@vuepress/core/.temp/internal/global-ui.js
 new file mode 100644
-index 0000000..4ad71d6
+index 0000000..e98d7dd
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/internal/global-ui.js
 @@ -0,0 +1 @@
@@ -151,7 +151,7 @@ index 0000000..4ad71d6
 \ No newline at end of file
 diff --git a/node_modules/@vuepress/core/.temp/internal/layout-components.js b/node_modules/@vuepress/core/.temp/internal/layout-components.js
 new file mode 100644
-index 0000000..e630e6d
+index 0000000..e50b511
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/internal/layout-components.js
 @@ -0,0 +1,7 @@
@@ -165,7 +165,7 @@ index 0000000..e630e6d
 \ No newline at end of file
 diff --git a/node_modules/@vuepress/core/.temp/internal/page-components.js b/node_modules/@vuepress/core/.temp/internal/page-components.js
 new file mode 100644
-index 0000000..157d3db
+index 0000000..f4ce85f
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/internal/page-components.js
 @@ -0,0 +1,332 @@
@@ -504,7 +504,7 @@ index 0000000..157d3db
 \ No newline at end of file
 diff --git a/node_modules/@vuepress/core/.temp/internal/root-mixins.js b/node_modules/@vuepress/core/.temp/internal/root-mixins.js
 new file mode 100644
-index 0000000..e895a31
+index 0000000..1dd2766
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/internal/root-mixins.js
 @@ -0,0 +1,14 @@
@@ -525,7 +525,7 @@ index 0000000..e895a31
 \ No newline at end of file
 diff --git a/node_modules/@vuepress/core/.temp/internal/routes.js b/node_modules/@vuepress/core/.temp/internal/routes.js
 new file mode 100644
-index 0000000..de08930
+index 0000000..b528135
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/internal/routes.js
 @@ -0,0 +1,3787 @@
@@ -4319,7 +4319,7 @@ index 0000000..de08930
 \ No newline at end of file
 diff --git a/node_modules/@vuepress/core/.temp/internal/siteData.js b/node_modules/@vuepress/core/.temp/internal/siteData.js
 new file mode 100644
-index 0000000..0d9624a
+index 0000000..959c75e
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/internal/siteData.js
 @@ -0,0 +1,20653 @@
@@ -24979,7 +24979,7 @@ index 0000000..0d9624a
 \ No newline at end of file
 diff --git a/node_modules/@vuepress/core/.temp/palette.styl b/node_modules/@vuepress/core/.temp/palette.styl
 new file mode 100644
-index 0000000..0ff87f7
+index 0000000..63341da
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/palette.styl
 @@ -0,0 +1,5 @@
@@ -24991,7 +24991,7 @@ index 0000000..0ff87f7
 \ No newline at end of file
 diff --git a/node_modules/@vuepress/core/.temp/style.styl b/node_modules/@vuepress/core/.temp/style.styl
 new file mode 100644
-index 0000000..b9313ed
+index 0000000..736716b
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/style.styl
 @@ -0,0 +1,5 @@
@@ -25003,7 +25003,7 @@ index 0000000..b9313ed
 \ No newline at end of file
 diff --git a/node_modules/@vuepress/core/.temp/transform/ClientComputedMixin.js b/node_modules/@vuepress/core/.temp/transform/ClientComputedMixin.js
 new file mode 100644
-index 0000000..ec763a9
+index 0000000..c550d50
 --- /dev/null
 +++ b/node_modules/@vuepress/core/.temp/transform/ClientComputedMixin.js
 @@ -0,0 +1,128 @@
@@ -25136,58 +25136,3 @@ index 0000000..ec763a9
 +  }
 +}
 \ No newline at end of file
-diff --git a/node_modules/@vuepress/core/lib/client/root-mixins/updateMeta.js b/node_modules/@vuepress/core/lib/client/root-mixins/updateMeta.js
-index 485f544..cc5608f 100644
---- a/node_modules/@vuepress/core/lib/client/root-mixins/updateMeta.js
-+++ b/node_modules/@vuepress/core/lib/client/root-mixins/updateMeta.js
-@@ -37,7 +37,7 @@ export default {
-       const pageMeta = this.$page.frontmatter.meta || []
-       // pageMetaTags have higher priority than siteMetaTags
-       // description needs special attention as it has too many entries
--      return unionBy([{ name: 'description', content: this.$description }],
-+      return unionBy(this.$description ? [{ name: 'description', content: this.$description }] : [],
-         pageMeta, this.siteMeta, metaIdentifier)
-     }
-   },
-@@ -62,8 +62,8 @@ export default {
- function updateMetaTags (newMetaTags, currentMetaTags) {
-   if (currentMetaTags) {
-     [...currentMetaTags]
--          .filter(c => c.parentNode === document.head)
--          .forEach(c => document.head.removeChild(c))
-+      .filter(c => c.parentNode === document.head)
-+      .forEach(c => document.head.removeChild(c))
-   }
-   if (newMetaTags) {
-     return newMetaTags.map(m => {
-diff --git a/node_modules/@vuepress/core/lib/node/Page.js b/node_modules/@vuepress/core/lib/node/Page.js
-index 07f50b4..da476f2 100644
---- a/node_modules/@vuepress/core/lib/node/Page.js
-+++ b/node_modules/@vuepress/core/lib/node/Page.js
-@@ -36,7 +36,7 @@ module.exports = class Page {
-    * @param {string} permalinkPattern
-    */
- 
--  constructor ({
-+  constructor({
-     path: _path,
-     meta,
-     title,
-@@ -46,7 +46,7 @@ module.exports = class Page {
-     permalink,
-     frontmatter = {},
-     permalinkPattern,
--    extractHeaders = ['h2', 'h3']
-+    extractHeaders = ['h2', 'h3', 'h4', 'h5', 'h6']
-   }, context) {
-     this.title = title
-     this._meta = meta
-@@ -132,7 +132,7 @@ module.exports = class Page {
-           this.excerpt = html
-         }
-       } else if (this._filePath.endsWith('.vue')) {
--        const { data = {}} = parseVueFrontmatter(this._content)
-+        const { data = {} } = parseVueFrontmatter(this._content)
-         // When Vue SFCs are source files, make them as layout components directly.
-         this.frontmatter = Object.assign({
-           layout: this.key

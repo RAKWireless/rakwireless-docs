@@ -234,12 +234,11 @@ On the WisBlock, there are three pieces of **2.54&nbsp;mm pitch header** for IO 
 
 
 ##### Battery Connector
-
-The small triangle shows the GND pin.
+The GND pin, as shown in Figure 11, is highlighted in a red box
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/RAK5005-O-battery.png"
-  width="90%"
+  width="50%"
   caption="Battery connector GND pin"
 />
 
@@ -257,19 +256,23 @@ The voltage of the battery **must not exceed 4.3V**.
 
 ##### Solar Panel Connector
 
-The small triangle shows the GND pin.
+The GND pin, as shown in Figure 12, is highlighted in a red box
+
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/RAK5005-O-solar.png"
-  width="90%"
+  width="50%"
   caption="Solar Panel connector GND pin"
 />
 
 The pin definition of the solar panel connector is shown in the table below.
 
+
 | **Pin** | **Pin Name** | **Description**         |
 | ------- | ------------ | ----------------------- |
-| 1       | C0NN_5V      | Positive of solar panel |
-| 2       | GND          | GND                     |
+| 1       | GND          | GND                     |
+| 2       | Vin          | Positive of solar panel |
+
+
 
 :::tip 📝 NOTE
 The output of the solar panel **must not exceed 5.5&nbsp;V**. Otherwise, it may cause permanent damage to the board.
@@ -440,7 +443,7 @@ As for the following table, it shows the pin name and description of each pin in
 
 ##### Connector for WisBlock IO
 
-The WisIO module connector, as shown in Figure 14, is a **40-pin board to board connector**.
+The WisIO module connector, as shown in Figure 15, is a **40-pin board to board connector**.
 
 
 <rk-img
@@ -599,7 +602,7 @@ A 5&nbsp;V Solar panel can be connected to the board via the **P2 connector** to
 
 ##### Board Dimensions
 
-Figure 14 shows the detailed mechanical dimensions of RAK5005-O.
+Figure 16 shows the detailed mechanical dimensions of RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/15.mechanical-dimensions.png"
@@ -627,7 +630,7 @@ The table below lists the operation and storage temperature requirements of RAK5
 
 #### Schematic Diagram
 
-The component schematics diagram of the RAK5005-Oare shown in Figures 17 and 18:
+The component schematics diagram of the RAK5005-O are shown in Figures 17 and 18:
 
 
 <rk-img

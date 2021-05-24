@@ -238,6 +238,8 @@ The RAK4200 WisDuo LPWAN Module takes **46.179&nbsp;ms** to receive a LoRa packe
 
 #### Recommended Reflow Profile
 
+- MSL Rating : Class 3
+
 <!--- In this section, the recommended reflow profile for RAK4200 WisDuo LPWAN Module is described in the image below: --->
 
 <rk-img

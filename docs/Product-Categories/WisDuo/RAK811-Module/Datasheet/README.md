@@ -333,6 +333,7 @@ RAK811 supports two UARTs: UART1 (pin6-TX1, pin7-RX1) and UART3 (pin25-TX3, pin2
 
 Referred to IPC/JEDEC standard:
 
+- MSL Rating : Class 3
 - Peak Temperature : < 250&nbsp;°C
 - Number of Times : ≤ 2 times
 

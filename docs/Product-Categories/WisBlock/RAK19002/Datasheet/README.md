@@ -116,7 +116,7 @@ Figure 4 shows the dimensions and the mechanic drawing of the RAK19002 module.
 Figure 6 shows the schematic of RAK19002 boost module.
 
 <rk-img
-  src="/assets/images/wisblock/rak19002/datasheet/image-20210118145019419.png"
+  src="/assets/images/wisblock/rak19002/datasheet/schematic.png"
   width="100%"
   caption="RAK19002 WisBlock Boost Module Schematic"
 />

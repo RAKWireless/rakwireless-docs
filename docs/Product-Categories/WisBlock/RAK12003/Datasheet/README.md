@@ -138,8 +138,8 @@ Figure 5 shows the dimensions and the mechanic drawing of the RAK12003 module.
 #### Schematic Diagram
 
 <rk-img
-  src="/assets/images/wisblock/rak12003/datasheet/RAK12003_schematic.png"
-  width="70%"
+  src="/assets/images/wisblock/rak12003/datasheet/schematic.png"
+  width="100%"
   caption="RAK12003 WisBlock Infrared Temperature Sensor schematics"
 />
 

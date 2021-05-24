@@ -168,11 +168,18 @@ Figure 6 shows the dimensions and the mechanic drawing of the RAK2305 Module.
 
 #### Schematic Diagram
 
+<rk-img
+  src="/assets/images/wisblock/rak2305/datasheet/schematic.png"
+  width="100%"
+  caption="RAK2305 Schematic Diagram"
+/>
+
+
 The following sections describes the schematic of the RAK2305 module.
 
 ##### Power Supply
 
-Figure 8 shows the schematic of the power supply of the RAK2305 module. In the diagram, VBAT is the battery voltage supplied from the WisBlock Base Board RAK5005-O.
+Figure 9 shows the schematic of the power supply of the RAK2305 module. In the diagram, VBAT is the battery voltage supplied from the WisBlock Base Board RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak2305/datasheet/power_supply.png"
@@ -182,7 +189,7 @@ Figure 8 shows the schematic of the power supply of the RAK2305 module. In the d
 
 ##### IO Connector
 
-Figure 9 shows the pin definition of IO connector. 
+Figure 10 shows the pin definition of IO connector. 
 
 <rk-img
   src="/assets/images/wisblock/rak2305/datasheet/wisio-connector.png"
@@ -203,7 +210,7 @@ Figure 9 shows the pin definition of IO connector.
 
 #####  Connector Pin Order
 
-Figure 10 shows IO connector and its pin order. This connector is located on the bottom side of the module.
+Figure 11 shows IO connector and its pin order. This connector is located on the bottom side of the module.
 
 <rk-img
   src="/assets/images/wisblock/rak2305/datasheet/wisio-connector-pin-order.png"
@@ -213,7 +220,7 @@ Figure 10 shows IO connector and its pin order. This connector is located on the
 
 ##### Core Module
 
-The core component inside of the RAK2305 module is the ESP32-WROVER, which comes with a PCB antenna. The module is designed to work with 3.3&nbsp;V supplied by the baseboard. To prevent any instability on EN (Enable pin), an RC delay circuit is added to this pin, and the EN pin is pulled up to 3.3&nbsp;V by default. Figure 11 shows the section of the schematic that involves the ESP32-WROVER component.
+The core component inside of the RAK2305 module is the ESP32-WROVER, which comes with a PCB antenna. The module is designed to work with 3.3&nbsp;V supplied by the baseboard. To prevent any instability on EN (Enable pin), an RC delay circuit is added to this pin, and the EN pin is pulled up to 3.3&nbsp;V by default. Figure 12 shows the section of the schematic that involves the ESP32-WROVER component.
 
 
 <rk-img

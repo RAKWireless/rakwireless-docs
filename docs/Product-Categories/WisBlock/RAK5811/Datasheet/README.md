@@ -65,7 +65,7 @@ As shown in Figure 1, the module provides an output of 12&nbsp;V to power indust
 
 ##### Mounting Sketch
 
-The RAK5811 module is part of the WisBlock Interface category, which connects to the baseboard through the IO slot. The installation method is shown in Figure 2:
+The RAK5811 module is part of the WisBlock Interface category, which connects to the baseboard through the IO slot. The installation method is shown in Figure 3.
 
 1. Keep the RAK5811 module parallel to the baseboard, and gently place and plug the WisConnector into the IO slot receptacle of the baseboard. The IO slot has an outer silkscreen to assist with the alignment. At this point, apply force evenly along the module and press again. There will be a sound to confirm the successful completion of the attachment process
 
@@ -79,7 +79,7 @@ For detailed instructions, refer to the [WisBlock Installation Guide](/Knowledge
   caption="RAK5811 WisConnector"
 />
 
-2. Secure the RAK5811 module with 3 x M1.2x3 pan head screws as shown in Figure 3 below:
+2. Secure the RAK5811 module with 3 x M1.2x3 pan head screws, as shown in Figure 4.
 
 <rk-img
   src="/assets/images/wisblock/rak5811/datasheet/rak5811-mounting.png"
@@ -200,7 +200,7 @@ Figure 8 shows the dimensions of the module RAK5811 module.
 #### Schematic Diagram
 
 <rk-img
-  src="/assets/images/wisblock/rak5811/datasheet/rak5811-schematic.png"
+  src="/assets/images/wisblock/rak5811/datasheet/schematic-diagram.png"
   width="100%"
   caption="RAK5811 schematic diagram"
 />

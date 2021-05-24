@@ -123,7 +123,7 @@ Figure 4 shows the dimensions and the mechanical drawing of the RAK15001 module.
   
 
 <rk-img
-  src="/assets/images/wisblock/rak15001/datasheet/RAK15001_schematics.png"
-  width="90%"
-  caption="RAK15001 WisBlock NOR Flash schematics"
+  src="/assets/images/wisblock/rak15001/datasheet/schematic.png"
+  width="100%"
+  caption="RAK15001 WisBlock NOR Flash Schematic"
 />

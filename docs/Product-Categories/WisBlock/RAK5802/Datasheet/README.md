@@ -185,7 +185,7 @@ As shown in the figure below, during crimping process, the user should first pre
 #### Schematic Diagram
 
 <rk-img
-  src="/assets/images/wisblock/rak5802/datasheet/schematic-diagram.jpg"
+  src="/assets/images/wisblock/rak5802/datasheet/schematic.png"
   width="100%"
   caption="RAK5802 schematic diagram"
 />

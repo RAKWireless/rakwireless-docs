@@ -228,11 +228,9 @@ The RAK11200 module has a ESP32-WROVER module at its core. Figure 5 shows the co
 
 #### Schematic Diagram
 
-This section shows the schematic diagram of the RAK11200 WisConnector pin connection.
 
-##### WisConnector
 <rk-img
-  src="/assets/images/wisblock/rak11200/datasheet/image-20210310153757891.png"
-  width="50%"
-  caption="RAK11200 WisConnector pin connection"
+  src="/assets/images/wisblock/rak11200/datasheet/schematic.png"
+  width="100%"
+  caption="RAK11200 Schematic Diagram"
 />

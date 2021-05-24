@@ -1017,7 +1017,7 @@ This command is used to set the data rate (DR) of LoRa.
 
 20. <b>at+set_config=lora:tx_power:`<tx_power>`</b>
 
-This command is used to set the RF transmission power level of the LoRa transceiver. The unit is in dBm.
+This command is used to set the RF transmission power level of the LoRa transceiver.
 
 | Operation | Command                                  | Response |
 | --------- | ---------------------------------------- | -------- |
@@ -1029,7 +1029,7 @@ This command is used to set the RF transmission power level of the LoRa transcei
 <table>
     <tr>
       <td>tx_power </td>
-      <td> LoRa transmit power level varies depending on frequency band and DR. Refer to the LoRaWAN 1.0.2 specification or <a href="/Product-Categories/WisDuo/RAK4270-Breakout-Board/AT-Command-Manual/#appendix-ii：tx-power-by-region" >Appendix II</a> for further details. <br> The default is 0.
+      <td> Refer to <a href="/Product-Categories/WisDuo/RAK4270-Breakout-Board/AT-Command-Manual/#appendix-ii：tx-power-by-region" >Appendix II</a> for possible values of tx_power. The table of Appendix II is based on LoRaWAN 1.0.2 specification. LoRa transmit power level varies depending on frequency band.  <br> <br>If the resulting TX power is higher than the capability of LoRa Radio, the output power will be based on the max TX power of the LoRa Radio in the module. For RAK4270 module, the max TX power is 22dBm. Take note of this when using regional bands with MaxEIRP higher than 22dBm like US915, AU915 and IN865 whose MaxEIRP is 30dBm.<br> <br> The default setting is 0. 
  </td>
     </tr>
 </table>

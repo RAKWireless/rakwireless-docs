@@ -116,37 +116,33 @@ Figure 3 shows the dimensions and mechanical drawing of the RAK14000 module.
 #### Schematic Diagram
 
 Figure 4 shows the schematic diagram of WisIO connector:
-  
+
 <rk-img
-  src="/assets/images/wisblock/rak14000/datasheet/rak14000-wisio.png"
-  width="40%"
+  src="/assets/images/wisblock/rak14000/datasheet/wisio-connector.png"
+  width="80%"
   caption="RAK14000 WisIO Connection Schematic"
-/>
+/>  
 
+Figure 5 shows the E-Ink Display Connector Schematic:
 
-Figure 5 shows the E-Ink Display Connector Schematic:  
-  
 <rk-img
-  src="/assets/images/wisblock/rak14000/datasheet/rak14000-sch1.png"
-  width="60%"
+  src="/assets/images/wisblock/rak14000/datasheet/eink.png"
+  width="100%"
   caption="RAK14000 E-Ink Display Connection Schematic"
-/> 
+/>  
 
-Figure 6 shows the E-Ink Display Driver Schematic:  
-  
+Figure 6 shows the E-Ink Display Driver Schematic:
+
 <rk-img
-  src="/assets/images/wisblock/rak14000/datasheet/rak14000-sch2.png"
-  width="60%"
+  src="/assets/images/wisblock/rak14000/datasheet/driver-schematic.png"
+  width="100%"
   caption="RAK14000 E-Ink Display Driver Schematic"
-/> 
+/>  
 
-Figure 7 shows the Three-Button Module Schematic, connected through FPC (Flexible PCB) cable:  
-  
+Figure 7 shows the Three-Button Module Schematic, connected through FPC (Flexible PCB) cable:
+
 <rk-img
-  src="/assets/images/wisblock/rak14000/datasheet/rak14000-sch3.png"
-  width="60%"
+  src="/assets/images/wisblock/rak14000/datasheet/button-connector.png"
+  width="80%"
   caption="RAK14000 Three-Button Module Schematic"
-/> 
-  
-
-
+/>  

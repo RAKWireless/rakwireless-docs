@@ -253,6 +253,8 @@ It is recommended to add four decoupling capacitors near the RAK4270 power suppl
 
 ##### Recommended Reflow Profile
 
+- MSL Rating : Class 3
+
 <rk-img
   src="/assets/images/wisduo/rak4270-module/datasheet/9.reflow.jpg"
   width="50%"

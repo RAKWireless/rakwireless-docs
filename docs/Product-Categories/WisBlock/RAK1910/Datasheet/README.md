@@ -206,7 +206,7 @@ Slot for mounting: **Slot A**
 Figure 5 shows the schematic of the RAK1910 module.
 
 <rk-img
-  src="/assets/images/wisblock/rak1910/datasheet/RAK1910_schematics.png"
-  width="70%"
-  caption="RAK1910 WisBlock GNSS Location Module Schematics"
+  src="/assets/images/wisblock/rak1910/datasheet/rak1910_schematic.png"
+  width="100%"
+  caption="RAK1910 WisBlock GNSS Location Module Schematic"
 />

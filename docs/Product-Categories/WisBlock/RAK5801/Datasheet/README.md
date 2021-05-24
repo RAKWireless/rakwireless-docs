@@ -210,7 +210,7 @@ Refer to Figure 7 below for the mechanical dimensions of the RAK5801 module.
 #### Schematic Diagram
 
 <rk-img
-  src="/assets/images/wisblock/rak5801/datasheet/schematic-diagram.png"
+  src="/assets/images/wisblock/rak5801/datasheet/schematic.png"
   width="100%"
   caption="RAK5801 Schematic Diagram"
 />

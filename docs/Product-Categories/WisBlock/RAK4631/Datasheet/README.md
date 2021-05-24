@@ -162,9 +162,9 @@ Detailed information about the RAK4631 BLE and LoRa antenna can be found on the 
 ##### Schematic Diagram
 
 <rk-img
-  src="/assets/images/wisblock/rak4631/datasheet/rak4631.png"
+  src="/assets/images/wisblock/rak4631/datasheet/schematic.png"
   width="100%"
-  caption="Mechanical Dimensions"
+  caption="RAK4631 Schematic Diagram"
 />
 
 - **WisConnector**: The breakout module allows the RAK4630 stamp module pinout to be transferred by the board-to-board WisConnector.
