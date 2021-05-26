@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak5801/overview/RAK5801_home.png
 rak_desc: RAK5801 is a WisBlock Interface module which extends the WisBlock system with 4-20mA current to voltage converter. It supports up to 2 4-20mA interfaces and voltage supply for connected sensors.
 rak_grp: [wisblock, wisinterface]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK5801
@@ -13,6 +13,7 @@ tags:
 
 Thank you for choosing **RAK5801 WisBlock 4-20mA Interface Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK5801 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->

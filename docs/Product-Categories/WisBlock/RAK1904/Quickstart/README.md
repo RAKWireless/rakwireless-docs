@@ -146,13 +146,13 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
 3. Once the example code is open, install the [SparkFun LIS3DH](https://github.com/sparkfun/SparkFun_LIS3DH_Arduino_Library) library by clicking the yellow highlighted link, as shown in **Figure 10** and **Figure 11**.
 
 <rk-img
-  src="/assets/images/wisblock/rak1904/quickstart/sparkfun_lib.png"
+  src="/assets/images/wisblock/rak1904/quickstart/sparkfun_library.png"
   width="100%"
   caption="Accessing the library used for RAK1904 Module"
 />
 
 <rk-img
-  src="/assets/images/wisblock/rak1904/quickstart/sparkfun_done.png"
+  src="/assets/images/wisblock/rak1904/quickstart/sparkfun_installed.png"
   width="100%"
   caption="Installing the compatible library for RAK1904 Module"
 />

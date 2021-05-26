@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak12500/overview/RAK12500_home.png
 rak_desc: RAK12500 is a WisBlock Sensor GNSS Location module which utilizes several GNSS satellites to proved precise location coordinates within seconds
 rak_grp: [wisblock, wissensor]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK12500
@@ -13,7 +13,7 @@ tags:
 
 Thank you for choosing **RAK12500 WisBlock GNSS Location Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
-
+* [RAK12500 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->

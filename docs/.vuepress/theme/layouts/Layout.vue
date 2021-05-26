@@ -35,7 +35,7 @@
       </q-header>
 
       <q-drawer
-        v-model="showDrawer"
+        v-model="shouldShowDrawer"
         content-class="bg-grey-1 text-grey-9 q-pa-none"
         @show="onDrawerShow"
         @hide="onDrawerHide"
@@ -158,11 +158,6 @@ export default {
     shouldShowDrawer: {
       get() {
         const { frontmatter } = this.$page
-        console.log('Sidebaritems',this.sidebarItems)
-        console.log('ltMdDiv',this.ltMdDiv)
-        console.log(!frontmatter.home &&
-            frontmatter.sidebar !== false &&
-            this.sidebarItems.length !== 0)
         if (this.ltMdDiv) return this.showDrawer
         else
           return (
@@ -352,15 +347,6 @@ export default {
       this.isShow = flag;
     },
     checkRoute(route){
-      const { frontmatter } = this.$page
-      console.log(frontmatter)
-      if(!frontmatter.home &&
-          frontmatter.sidebar !== false &&
-          this.sidebarItems.length !== 0){
-        this.showDrawer = true;      
-      }else {
-        this.showDrawer = false;
-      }
       if(route.path === '/Knowledge-Hub/FAQs/'
         ||route.path === '/Knowledge-Hub/FAQs/General/'
         ||route.path === '/Knowledge-Hub/FAQs/Hardware/'
@@ -375,15 +361,6 @@ export default {
       }
     },
     checkRouteName(routeName){
-      const { frontmatter } = this.$page
-      console.log(frontmatter)
-      if(!frontmatter.home &&
-          frontmatter.sidebar !== false &&
-          this.sidebarItems.length !== 0){
-        this.showDrawer = true;      
-      }else {
-        this.showDrawer = false;
-      }
       if(routeName == 'v-00ca1ee8' || routeName == 'v-339265df' || routeName == 'v-1f7eaef6' || routeName == 'v-83e8fff2'){
         this.setIsShow(true);
        

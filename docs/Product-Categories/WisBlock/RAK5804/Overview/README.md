@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak5804/overview/RAK5804_home.png
 rak_desc: RAK5804 is a WisBlock Interface module which extends the WisBlock system with additional analog and digital interfaces. In addition, it provides an USB interface. 
 rak_grp: [wisblock, wisinterface]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK5804
@@ -13,6 +13,7 @@ tags:
 
 Thank you for choosing **RAK5804 WisBlock Interface Extension Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK5804 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
@@ -23,9 +24,9 @@ Thank you for choosing **RAK5804 WisBlock Interface Extension Module** in your a
 
 ## Product Description
 
-**RAK5804** is a **WisBlock Interface** module which extends the **WisBlock** system with additional analog and digital interfaces. In addition, it provides an USB interface.   
+**RAK5804** is a **WisBlock Interface** module which extends the **WisBlock** system with additional analog and digital interfaces. In addition, it provides a USB interface.   
 
-The interface is available through the two expansion connectors: **J2** and **J3**. To provide power to peripheral devices, the **3.3V** can be obtained from these expansion connectors. Internal protections allow shutting down the power supply when a short circuit is detected in the peripheral devices. Overcurrent cases are protected through **internal PTC thermistors** in the power supply circuit.    
+The interface is available through the two expansion connectors: **J2** and **J3**. To provide power to peripheral devices, the **3.3&nbsp;V** can be obtained from these expansion connectors. Internal protections allow shutting down the power supply when a short circuit is detected in the peripheral devices. Overcurrent cases are protected through **internal PTC thermistors** in the power supply circuit.    
 
 Also, the **RAK5804** module supports a USB interface, which can be used with **RAK5005-O** to access the USB port of MCU of the **WisBlock Core** module of the solution.     
 

@@ -45,8 +45,8 @@
 
 
   <div class="btn-io-map">
-    <button @click="mapPins()" style="background-color:#0c6bc4; color:#ffffff"><span>MAP</span></button>
-    <button @click="clearPins()" style="background-color:#ff0000; color:#ffffff"><span>CLEAR</span></button>
+    <button @click="mapPins" style="background-color:#0c6bc4; color:#ffffff"><span>MAP</span></button>
+    <!-- <button @click="clearPins" style="background-color:#ff0000; color:#ffffff"><span>CLEAR</span></button> -->
   </div>
   <div class="row">
       <div class="col-sm-12 padding-10"  v-show="currentWisIo!==null">
@@ -196,7 +196,8 @@ export default {
       currentWisSensorB : null,
       currentWisSensorC : null,
       currentWisSensorD : null,
-      classStyles : []
+      classStyles : [],
+      renderComponent : true
     }
   ),
   computed : {
@@ -261,9 +262,9 @@ export default {
       let newWisIoBoard = [];
       let classStyles = this.removeDuplicates(this.classStyles);
 
-      this.wisIoBoard.forEach(io=>{
-        let classStyle =  classStyles.filter((cs)=>cs.pin_name===io.pin_name);    
+      this.wisIoBoard.map(io=>{
         
+        let classStyle =  classStyles.filter((cs)=>cs.pin_name===io.pin_name);    
         newWisIoBoard.push({
           func : io.func,
           io_name : io.io_name,
@@ -302,16 +303,10 @@ export default {
       this.wisSensorBoardB = []
       this.wisSensorBoardC = []
       this.wisSensorBoardD = []
+
     },
     async mapPins (){
-      console.log( this.currentWisBase,
-      this.currentWisCore,
-      this.currentWisIo,
-      this.currentWisSensorA,
-      this.currentWisSensorB,
-      this.currentWisSensorC,
-      this.currentWisSensorD,
-      this.classStyles)
+
       let wisCoreObj = WisCore.modules.filter((item)=> item.model === this.currentWisCore);
       let wisIoObj = WisIo.modules.filter((item)=> item.model === this.currentWisIo);
       let wisSensorObjA = WisSensor.modules.filter((item)=>item.model === this.currentWisSensorA);
@@ -338,7 +333,7 @@ export default {
 
     async filterWisIo(wisIoObjFiltered,wisCoreObjFiltered,Pins){
       let wisIoBoard = [];
-      await wisIoObjFiltered.forEach(wisio=>{
+       wisIoObjFiltered.forEach(wisio=>{
         let wisCoreContent = wisCoreObjFiltered.content;
         let wisCoreModel = wisCoreObjFiltered.model;
         wisCoreContent.forEach((wiscore)=>{
