@@ -1,7 +1,7 @@
 ---
 sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
-rak_desc: 
+rak_desc: A short explanatory piece about the RF connectors used in RAK's devices. Have a look and use it as a reference when making decisions about your antenna choice.
 tags:
   - Tutorial
   - Antennas

@@ -233,7 +233,7 @@ module.exports = {
   },
   {
     title: 'Quick Start Guide',
-    path: '/Product-Categories/WisDuo/RAK4260-Module/QuickStart/',
+    path: '/Product-Categories/WisDuo/RAK4260-Module/Quickstart/',
     collapsable: false,
     nested: true,
     download: true,
