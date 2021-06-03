@@ -114,6 +114,14 @@ module.exports = {
       download: true,
       sidebarDepth: 4
     },
+	{
+      title: 'Quick Start Guide',
+      path: '/Product-Categories/WisBlock/RAK5005-O/Quickstart/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
     {
       title: 'Datasheet',
       path: '/Product-Categories/WisBlock/RAK5005-O/Datasheet/',

@@ -555,10 +555,16 @@ export default {
   '/Product-Categories/Accessories/RAK9734/': {
     label: 'Pulsar Cable',
     img: '/assets/images/accessories/rak9734/1.png',
+    store: 'https://store.rakwireless.com/'
   },
   '/Product-Categories/Accessories/RAK9732/': {
     label: 'Pulsar Cable',
     img: '/assets/images/accessories/rak9732/overview/rak9732.png',
     store: 'https://store.rakwireless.com/'
-  }
+  },
+  '/Product-Categories/Accessories/Bobcat-Enclosure-Kit/': {
+    label: 'Bobcat Outdoor Enclosure Kit',
+    img: '/assets/images/accessories/bobcat-enclosure-kit/installation/bobcat_enclosure.png',
+    store: 'https://store.rakwireless.com/products/bobcat-outdoor-enclosure-kit?variant=39856615194822'
+  },
 }

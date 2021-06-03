@@ -114,6 +114,26 @@ module.exports = {
         sidebarDepth: 4
       }
   ],
+  '/Product-Categories/Accessories/Bobcat-Enclosure-Kit/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/Bobcat-Enclosure-Kit/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Installation Guide',
+      path: '/Product-Categories/Accessories/Bobcat-Enclosure-Kit/Installation-Guide/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
+
+
   // antennas
   '/Product-Categories/Accessories/RAKARJ14/': [
     {

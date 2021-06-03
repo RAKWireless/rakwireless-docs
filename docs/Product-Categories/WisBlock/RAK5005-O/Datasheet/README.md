@@ -3,28 +3,23 @@ tags:
   - datasheet
   - wisblock
   - RAK5005-O
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/WisBlock/RAK5005-O/Certification/RSZ201124006-EM-01%20EN%2055032%26EN%2055035%26EN%2061000%20EMC%20Report.pdf]
   - [FCC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK5005-O/Certification/RSZ201124006-EM-00%C2%A0FCC%C2%A0Part%C2%A015B%C2%A0SDoC%26ICES-003%C2%A0Report.pdf]
+
 ---
 
 # RAK5005-O WisBlock Base Board Datasheet
 
 ## WisBlock Overview
 
-**WisBlock modules** are flexible building block design built by RAKWireless for the IoT industry. WisBlock modules support dozens of types of CPUs, sensors, and interface circuit boards. This concept allows you to build their own electronic solutions very quickly, using building blocks to materialize your new ideas. Also, through high-speed connectors and easily attachable interconnections, you will be able to composite reliable industrial products.
+**RAK5005-O WisBlock Base** module is the main board that allows you to attach **WisBlock modules** through the standardized expansion connectors. In addition, the **WisBlock Base** module also comprises a USB port, indicator LEDs, buttons, and extended IO interfaces.
 
-WisBlock series modules are divided in the following categories: **Base module**, **Core module**, **Sensor**, and **IO module**.
+**WisBlock modules** are flexible building block designs built by RAKWireless for the IoT industry. **WisBlock modules** support dozens of types of CPUs, sensors, and interface circuit boards. This concept allows you to build your own electronic solutions very quickly, using building blocks to materialize your new ideas. Also, through high-speed connectors and easily attachable interconnections, you will be able to composite reliable industrial products.
 
-The **RAK5005-O WisBlock Base** module is a motherboard that allows you to attach a Core, sensors, and IO modules through the standardized expansion connectors. In addition, the WisBlock Base module also comprises the USB ports, indicator LEDs, buttons, and extended IO interfaces.
-
-WisBlock Core module is the core computing and wireless connectivity unit within the WisBlock series. It integrates an MCU, a LoRa, a WiFi-BLE, or other wireless transceiver modules in a single package. The data collected by sensors are processed by the MCU and sent to the cloud through LoRa or WiFi wireless links. The BLE interface can also be used for short-range communication and indoor positioning function.
-
-The WisBlock Sensor module integrates **MEMS sensors** of different types, while WisBlock IO comprises digital and analog IO extensions. 
-Each WisBlock Base baseboard can support up to four WisBlock Sensor modules, one WisBlock IO module, and one WisBlock Core module. Sensors on WisBlock Sensor are designed for low power consumption, extending the battery life, different types of sensors can be combined for specific solutions. To add more flexibility to the solutions, the WisBlock IO module can expand various application interfaces, such as industrial sensor interface, display interface, industrial communication protocol, buttons, and LED indicators.
-
-If the above is not enough to cover all the your IoT requirements, WisBlock supports open-source hardware architecture, therefore, you can also use the standard connectors of WisBlock to develop their own specific function modules and products to meet their specific needs in different industries.
+If you can't find a module that fits your IoT requirements, use the standard connectors of WisBlock to develop your own specific function module. WisBlock supports open-source hardware architecture and you can find tutorials showing how to create your own [Awesome WisBlock](https://github.com/RAKWireless/Awesome-WisBlock) module.
 
 
 ### Applications
@@ -56,7 +51,7 @@ WisBlock module can be used for quickly building prototypes. It allows you to se
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/1.wisblock-diagram.svg"
-  width="80%"
+  width="100%"
   caption="WisBlock Ecosystem"
 />
 
@@ -65,18 +60,18 @@ WisBlock series modules are not only for the rapid implementation of engineering
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/2.wisblock-applications.png"
-  width="75%"
+  width="90%"
   caption="WisBlock Applications"
 />
 
 
 ### WisBlock Architecture
 
-WisBlock is designed for modularity, in the Figure 3, the whole ecosystem is depicted. The objective of the architecture is to allow the you to combine different modules to create their own specific solution. A roadmap about the availability of the modules is also shown.
+WisBlock is designed for modularity. In Figure 3, the whole ecosystem is depicted. The objective of the architecture is to allow you to combine different modules to create your own specific solution. A roadmap about the availability of the modules is also shown.
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/3.wisblock-architecture.png"
-  width="75%"
+  width="90%"
   caption="WisBlock Architecture"s
 />
 
@@ -85,9 +80,11 @@ WisBlock is designed for modularity, in the Figure 3, the whole ecosystem is dep
 
 ### Overview
 
+<!--
+The RAK5005-O WisBlock Base, as shown in Figure 4, has one slot reserved for WisBlock Core module, four slots for WisBlock Sensor modules, and one slot for WisBlock Wireless module. Also, there are **2.54&nbsp;mm pitch connectors** for extension interface, such as **I2C**, **UART**, and **GPIO pins**.
+-->
 
-The RAK5005-O baseboard, as shown in Figure 4, has one slot reserved for WisBlock Core module, four slots for WisSensor modules, and one slot for WisIO module. Also, there are **2.54&nbsp;mm pitch connectors** for extension interface, such as **I2C**, **UART**, and **GPIO pins**.
-
+There are six (6) slots on RAK5005-O WisBlock Base. The **CPU SLOT** is reserved for the WisBLock Core module which has the main MCU. The **IO SLOT** is used for IO extension, for example, RS485 module, 4-20&nbsp;mA/0-5&nbsp;V module, Wireless modules. **SLOT A**, **SLOT B**, **SLOT C**, and **SLOT D** are used to connect with the I2C module, while **SLOT A** can be used for GPS board too. Also, there are **2.54&nbsp;mm pitch connectors** for [extension interface](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#j10-j11-j12-headers/), such as **I2C**, **UART**, and **GPIO pins**.
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/4.board-overview.svg"
@@ -98,9 +95,9 @@ The RAK5005-O baseboard, as shown in Figure 4, has one slot reserved for WisBloc
 
 For convenience, there is a USB connector for debugging. It is connected directly to MCU’s USB port (if supported). You can access the internal MCU by connecting to a computer’s USB port directly. This USB connector is also used as a battery charging port.
 
-Each module has method designed to connect and fasten the module easily. These connectors are **high-speed board to board connector**, they provide signal integrity for each data bus. A set of screws are used for attaching the module under the environment with vibrations.
+Each module has a method designed to connect and fasten the module easily. These connectors are **high-speed board to board connector**, they provide signal integrity for each data bus. A set of screws are used for attaching the module under the environment with vibrations.
 
-To avoid electromagnetic interference and heating interference, the sensor connectors on the WisBase are designed to be installed on both sides of the PCB. Also, a sensor module can be attached either on the top layer or the bottom layer of the WisBase board.
+To avoid electromagnetic interference and heating interference, the sensor connectors on the WisBlock Base are designed to be installed on both sides of the PCB. Also, a sensor module can be attached either on the top layer or the bottom layer of the WisBlock Base board.
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/6.bottom-view.png"
@@ -116,6 +113,7 @@ For example, it is recommended to attach a temperature sensor outside of the bas
   caption="Out of the board Temperature Sensor"
 />
 
+
 #### Block Diagram
 
 The block diagram is shown in Figure 7 that shows the internal architecture and external interfaces of the RAK5005-O board.
@@ -124,17 +122,17 @@ The block diagram is shown in Figure 7 that shows the internal architecture and 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/8.block-diagram.png"
   width="90%"
-  caption="RAK5005-O WisBase Block Diagram"
+  caption="RAK5005-O WisBlock Base block diagram"
 />
 
-
+<!-- 
 
 ##### Data Bus of RAK5005-O
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/9.bus-data.png"
   width="80%"
-  caption="RAK5005-O WisBase Data Bus"
+  caption="RAK5005-O WisBlock Base Data Bus"
 />
 
 The MCU in the WisBlock Core module offers the I2C, UART, and SPI data buses to the sensor modules. Through these buses, the MCU can control and retrieve data from the sensors. In addition, the IO module connects to the USB, GPIO, and ADC buses allowing you to access all of the MCU interfaces.
@@ -161,18 +159,19 @@ VDD is generated by the MCU module to drive sensor and IO modules. The MCUs are 
 
 - Set **IO2=1**, 3V3_S is on.
 - Set **IO2=0**, 3V3_S is off.
+-->
 
 ### Hardware
 
-The hardware specification is categorized into six parts. It discusses the interfacing, pinouts, and its corresponding fuctions and diagrams. It also covers the electrical, mechanical, and environmental parameters that include the tabular data of the functionalities and standard values of the RAK5005-O WisBlock Base Board.
+The hardware specification is categorized into six parts. It discusses the interfacing, pinouts, and its corresponding functions and diagrams. It also covers the electrical, mechanical, and environmental parameters that include the tabular data of the functionalities and standard values of the RAK5005-O WisBlock Base Board.
 
 #### Interfaces
 
 RAK5005-O provides the following **interfaces**, **headers**, **jumpers**, **buttons**, and **connectors**:
 
-*	1 connector for WisBlock Core
-*	4 connectors for WisBlock Sensor
-*	1 connector for WisBlock IO
+*	1 connector for CPU Slot
+*	4 connectors for WisBlock Module Slot A to D
+*	1 connector for IO Slot
 *	1 micro USB connector
 *	Sets of 4-pin 2.54&nbsp;mm headers (UART, GPIOS, I2C, power, etc.)
 *	2-pin battery interface
@@ -190,13 +189,13 @@ RAK5005-O provides the following **interfaces**, **headers**, **jumpers**, **but
 
 The Micro-B USB connector is compliant with the USB2.0 specification. This USB interface directly communicates with the connected **WisBlock Core** module. It is also used as a charging input port for the battery. The Micro-B USB pin definition is shown below:
 
-| **Pin** | **Description** |
-| ------- | --------------- |
-| 1       | USB_VBUS (+5V)  |
-| 2       | USB_DM          |
-| 3       | USB_DP          |
-| 4       | NC              |
-| 5       | GND             |
+| **Pin** | **Description**      |
+| ------- | -------------------- |
+| 1       | USB_VBUS (+5&nbsp;V) |
+| 2       | USB_DM               |
+| 3       | USB_DP               |
+| 4       | NC                   |
+| 5       | GND                  |
 
 
 ##### J10, J11, J12 Headers
@@ -234,7 +233,7 @@ On the WisBlock, there are three pieces of **2.54&nbsp;mm pitch header** for IO 
 
 
 ##### Battery Connector
-The GND pin, as shown in Figure 11, is highlighted in a red box
+The GND pin, as shown in Figure 9, is highlighted in a red box
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/RAK5005-O-battery.png"
@@ -251,12 +250,12 @@ The pin definition of a Li-ion battery connector is shown in the table below.
 
 
 :::tip 📝 NOTE
-The voltage of the battery **must not exceed 4.3V**.
+The voltage of the battery **must not exceed 4.3&nbsp;V**.
 :::
 
 ##### Solar Panel Connector
 
-The GND pin, as shown in Figure 12, is highlighted in a red box
+The GND pin, as shown in Figure 10, is highlighted in a red box
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/RAK5005-O-solar.png"
@@ -306,28 +305,28 @@ The **MCU module connector** is a 40-pin board to board connector. It is a high-
 
 The table below shows the pinout of the MCU module connector:
 
-| **Function Name of WisBase** | **Pin Number** | **Pin Number** | **Function Name of WisBase** |
-| ---------------------------- | -------------- | -------------- | ---------------------------- |
-| VBAT                         | 1              | 2              | VBAT                         |
-| GND                          | 3              | 4              | GND                          |
-| 3V3                          | 5              | 6              | 3V3                          |
-| USB+                         | 7              | 8              | USB–                         |
-| VBUS                         | 9              | 10             | SW1                          |
-| TXD0                         | 11             | 12             | RXD0                         |
-| RESET                        | 13             | 14             | LED1                         |
-| LED2                         | 15             | 16             | LED3                         |
-| VDD                          | 17             | 18             | VDD                          |
-| I2C1_SDA                     | 19             | 20             | I2C1_SCL                     |
-| AIN0                         | 21             | 22             | AIN1                         |
-| BOOT0                        | 23             | 24             | IO7                          |
-| SPI_CS                       | 25             | 26             | SPI_CLK                      |
-| SPI_MIS0                     | 27             | 28             | SPI_MOSI                     |
-| IO1                          | 29             | 30             | IO2                          |
-| IO3                          | 31             | 32             | IO4                          |
-| TXD1                         | 33             | 34             | RXD1                         |
-| I2C2_SDA                     | 35             | 36             | I2C2_SCL                     |
-| IO5                          | 37             | 38             | IO6                          |
-| GND                          | 39             | 40             | GND                          |
+| **Function Name of WisBlock Base** | **Pin Number** | **Pin Number** | **Function Name of WisBlock Base** |
+| ---------------------------------- | -------------- | -------------- | ---------------------------------- |
+| VBAT                               | 1              | 2              | VBAT                               |
+| GND                                | 3              | 4              | GND                                |
+| 3V3                                | 5              | 6              | 3V3                                |
+| USB+                               | 7              | 8              | USB–                               |
+| VBUS                               | 9              | 10             | SW1                                |
+| TXD0                               | 11             | 12             | RXD0                               |
+| RESET                              | 13             | 14             | LED1                               |
+| LED2                               | 15             | 16             | LED3                               |
+| VDD                                | 17             | 18             | VDD                                |
+| I2C1_SDA                           | 19             | 20             | I2C1_SCL                           |
+| AIN0                               | 21             | 22             | AIN1                               |
+| BOOT0                              | 23             | 24             | IO7                                |
+| SPI_CS                             | 25             | 26             | SPI_CLK                            |
+| SPI_MIS0                           | 27             | 28             | SPI_MOSI                           |
+| IO1                                | 29             | 30             | IO2                                |
+| IO3                                | 31             | 32             | IO4                                |
+| TXD1                               | 33             | 34             | RXD1                               |
+| I2C2_SDA                           | 35             | 36             | I2C2_SCL                           |
+| IO5                                | 37             | 38             | IO6                                |
+| GND                                | 39             | 40             | GND                                |
 
 <br>
 
@@ -392,7 +391,7 @@ The sensor module connector is a a **24-pin board to board connector**.
 There are four connectors reserved for the sensor modules on the RAK5005-O: **connector A, B, C**, and **D**. The pin definition of **connector A** is different than the definition of the **connector B-D**.
 :::
 
-The pinout definition of the WisSensor module connector on WisBase varies according to its connector, **from A to D**.
+The pinout definition of the WisBlock Modules with 24-pin connector on WisBlock Base varies according to its connector, **from A to D**.
 
 | **Connector D** | **Connector C** | **Connector B** | **Connector A** | **Pin Number** | **Pin Number** | **Connector A** | **Connector B** | **Connector C** | **Connector D** |
 | --------------- | --------------- | --------------- | --------------- | -------------- | -------------- | --------------- | --------------- | --------------- | --------------- |
@@ -441,46 +440,47 @@ As for the following table, it shows the pin name and description of each pin in
 | 24             | RXD1            | NC              | NC              | NC              | NC       | - Not connected.<br>- UART RX signal on connector A                                                                                             |
 
 
-##### Connector for WisBlock IO
+##### Connector for WisBlock IO Slot
 
-The WisIO module connector, as shown in Figure 15, is a **40-pin board to board connector**.
+
+The WisBlock Module IO Slot connector, as shown in Figure 13, is a **40-pin board to board connector**.
 
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/14.wisio-module-connector.png"
   width="35%"
-  caption="WisIO module connector"
+  caption="WisBLock IO slot connector"
 />
 
 
-The pinout definition of the WisIO module connector is shown in the table below. 
+The pinout definition of the WisBlock IO slot module connector is shown in the table below. 
 
-| **Function Name of WisBase** | **Pin Number** | **Pin Number** | **Function Name of WisBase** |
-| ---------------------------- | -------------- | -------------- | ---------------------------- |
-| VBAT                         | 1              | 2              | VBAT                         |
-| GND                          | 3              | 4              | GND                          |
-| 3V3                          | 5              | 6              | 3V3_S                        |
-| USB+                         | 7              | 8              | USB–                         |
-| VBUS                         | 9              | 10             | SW1                          |
-| TXD0                         | 11             | 12             | RXD0                         |
-| RESET                        | 13             | 14             | LED1                         |
-| LED2                         | 15             | 16             | LED3                         |
-| VDD                          | 17             | 18             | VDD                          |
-| I2C1_SDA                     | 19             | 20             | I2C1_SCL                     |
-| AIN0                         | 21             | 22             | AIN1                         |
-| NC                           | 23             | 24             | NC                           |
-| SPI_CS                       | 25             | 26             | SPI_CLK                      |
-| SPI_MISO                     | 27             | 28             | SPI_MOSI                     |
-| IO1                          | 29             | 30             | IO2                          |
-| IO3                          | 31             | 32             | IO4                          |
-| TXD1                         | 33             | 34             | RXD1                         |
-| I2C2_SDA                     | 35             | 36             | I2C2_SCL                     |
-| IO5                          | 37             | 38             | IO6                          |
-| GND                          | 39             | 40             | GND                          |
+| **Function Name of WisBlock Base** | **Pin Number** | **Pin Number** | **Function Name of WisBlock Base** |
+| ---------------------------------- | -------------- | -------------- | ---------------------------------- |
+| VBAT                               | 1              | 2              | VBAT                               |
+| GND                                | 3              | 4              | GND                                |
+| 3V3                                | 5              | 6              | 3V3_S                              |
+| USB+                               | 7              | 8              | USB–                               |
+| VBUS                               | 9              | 10             | SW1                                |
+| TXD0                               | 11             | 12             | RXD0                               |
+| RESET                              | 13             | 14             | LED1                               |
+| LED2                               | 15             | 16             | LED3                               |
+| VDD                                | 17             | 18             | VDD                                |
+| I2C1_SDA                           | 19             | 20             | I2C1_SCL                           |
+| AIN0                               | 21             | 22             | AIN1                               |
+| NC                                 | 23             | 24             | NC                                 |
+| SPI_CS                             | 25             | 26             | SPI_CLK                            |
+| SPI_MISO                           | 27             | 28             | SPI_MOSI                           |
+| IO1                                | 29             | 30             | IO2                                |
+| IO3                                | 31             | 32             | IO4                                |
+| TXD1                               | 33             | 34             | RXD1                               |
+| I2C2_SDA                           | 35             | 36             | I2C2_SCL                           |
+| IO5                                | 37             | 38             | IO6                                |
+| GND                                | 39             | 40             | GND                                |
 
 <br>
 
-As for the following table, it shows the pin name and description of the WisIO module connector.
+As for the following table, it shows the pin name and description of the WisBlock IO module connector.
 
 | **Pin Number** | **Pin Name** | **Type** | **Description**                                                                                   |
 | -------------- | ------------ | -------- | ------------------------------------------------------------------------------------------------- |
@@ -497,7 +497,7 @@ As for the following table, it shows the pin name and description of the WisIO m
 | 11             | TXD0         | I/O      | MCU UART0 TX signal                                                                               |
 | 12             | RXD0         | I/O      | MCU UART0 RX signal                                                                               |
 | 13             | RESET        | I        | Connected to the reset switch, for MCU reset                                                      |
-| 14             | LED1         | I/O      | LED for battery charge indicatior                                                                 |
+| 14             | LED1         | I/O      | LED for battery charge indicator                                                                  |
 | 15             | LED2         | I/O      | LED for custom used                                                                               |
 | 16             | LED3         | I/O      | LED for custom used                                                                               |
 | 17             | VDD          | S        | - Generated by CPU module<br>- Used for power sensor board if the MCU IO level is not 3.3&nbsp;V  |
@@ -551,7 +551,7 @@ The RAK5005-O, as any electronic equipment, is sensitive to **electrostatic disc
 
 ##### Current Consumption
 
-The RAK5005-O designs for **low power IoT products** and the power supply use a low grounding current regulato. When there is no module on RAK5005-O, the **leakage current is lower than 2&nbsp;µA**. With MCU and sensor on it, the sleep current is **lower than 10&nbsp;µA**. When the LoRa module is transmitting, the current may reach to **130&nbsp;mA**.
+The RAK5005-O designs for **low power IoT products** and the power supply uses a low grounding current regulator. When there is no module on RAK5005-O, the **leakage current is lower than 2&nbsp;µA**. With MCU and sensor on it, the sleep current is **lower than 10&nbsp;µA**. When the LoRa module is transmitting, the current may reach to **130&nbsp;mA**.
 
 | **Conditions**                                      | **Current** | **Unit** |
 | --------------------------------------------------- | ----------- | -------- |
@@ -570,7 +570,7 @@ The RAK5005-O WisBlock Base Board can be powered by a battery, connected to the 
 
 <br>
 
-If a rechargeable battery is used, the USB connector is used as a charging port. The voltage and current fed to the battery through the port should not exceed to its charging limits, as shown in the table below.
+If a rechargeable battery is used, the USB connector is used as a charging port. The voltage and current fed to the battery through the port should not exceed its charging limits, as shown in the table below.
 
 | **Parameter**    | **Value**        |
 | ---------------- | ---------------- |
@@ -602,11 +602,11 @@ A 5&nbsp;V Solar panel can be connected to the board via the **P2 connector** to
 
 ##### Board Dimensions
 
-Figure 16 shows the detailed mechanical dimensions of RAK5005-O.
+Figure 14 shows the detailed mechanical dimensions of RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/15.mechanical-dimensions.png"
-  width="80%"
+  width="100%"
   caption="Mechanical Dimensions"
 />
 
@@ -630,7 +630,7 @@ The table below lists the operation and storage temperature requirements of RAK5
 
 #### Schematic Diagram
 
-The component schematics diagram of the RAK5005-O are shown in Figures 17 and 18:
+The component schematics diagram of the RAK5005-O are shown in Figures 16 and 17:
 
 
 <rk-img
@@ -649,81 +649,128 @@ The component schematics diagram of the RAK5005-O are shown in Figures 17 and 18
 
 ## Module Supported
 
-This section discusses the brief introduction about WisBlock module. It helps you to understand and choose the module you want. About the detail of each module, refer to the reference manual of the respective module.
+This section discusses a brief introduction to the WisBlock module. It helps you to understand and choose the module you want. About the detail of each module, refer to the reference manual of the respective module.
 
 ### WisBlock Module in Production
 
-RAK5005-O supports different kind of modules, according to the function and its the position on the RAK5005-O. These modules are classified into three categories:
 
-1. **WisBlock Core**: contains MCU and wireless link transceiver.
-2. **WisBlock Sensor**: integrates MEMS sensor
-3. **WisBlock IO**: to extend digital and analog IO, power supply, and sensors.
+RAK5005-O supports different kind of modules, according to the function and its the position on the RAK5005-O.  WisBlock series modules are divided in the following categories:
 
+- [WisBlock Core](/Product-Categories/WisBlock/#wisblock-core/)
 
+WisBlock Core module is the core computing and wireless connectivity unit within the WisBlock series. It integrates an MCU, a LoRa, a WiFi-BLE, or other wireless transceiver modules in a single package. The data collected by sensors are processed by the MCU and sent to the cloud through LoRa or WiFi wireless links. The BLE interface can also be used for short-range communication and indoor positioning function.
 The table below shows the WisBlock Core modules:
+
+The table below shows the [WisBlock Core modules:
 
 | **P/N**  | **RAK module on it** | **Function** | **Chipset**              |
 | -------- | -------------------- | ------------ | ------------------------ |
 | RAK4631  | RAK4630              | BLE+LoRa     | Nordic nRF52840 + SX1262 |
-| RAK3401  | RAK3400              | BLE          | Nordic nRF52840          |
 | RAK11200 | --                   | MCU+WiFi+BLE | Espressif ESP32 WROVER   |
 
-<br>
+- [WisBlock Wireless](/Product-Categories/WisBlock/#wisblock-wireless/)
 
+WisBlock Wireless modules extend the communication capabilities of WisBlock with the offered Wi-Fi and cellular modem modules. These modules can fit into the IO slot of the WisBlock Base Boards.
+The table shows the WisBlock Wireless modules:
+
+| **P/N** | **Function**            | **Chipset**            |
+| ------- | ----------------------- | ---------------------- |
+| RAK2305 | WiFi Interface Module   | Espressif ESP32 WROVER |
+| RAK5860 | NB-IoT Interface Module | Quectel BG77           |
+
+
+- [WisBlock Sensor](/Product-Categories/WisBlock/#wisblock-sensor/)
+
+WisBlock Sensor offers a range of sensors for sensing environmental conditions (temperature and humidity), location, and movement conditions (GNSS location and accelerometer).
 The table below shows the WisBlock Sensor modules:
 
-| **P/N** | **Function**                  | **Chipset**     |
-| ------- | ----------------------------- | --------------- |
-| RAK1901 | Temperature & Humidity Sensor | Sensirion SHTC3 |
-| RAK1902 | Pressure Sensor               | ST LPS22HB      |
-| RAK1903 | Ambient Light Sensor          | TI OPT3001DNPR  |
-| RAK1904 | 3-axis Sensor                 | ST LIS3DH       |
-| RAK1905 | 9-axis Sensor                 | TDK ICM20948    |
-| RAK1906 | Environmental Sensor          | BOSCH BME680    |
-| RAK1910 | GPS Sensor                    | U-BLOX MAX-7Q   |
+| **P/N**  | **Function**                  | **Chipset**     |
+| -------- | ----------------------------- | --------------- |
+| RAK1901  | Temperature & Humidity Sensor | Sensirion SHTC3 |
+| RAK1902  | Pressure Sensor               | ST LPS22HB      |
+| RAK1903  | Ambient Light Sensor          | TI OPT3001DNPR  |
+| RAK1904  | 3-axis Sensor                 | ST LIS3DH       |
+| RAK1906  | Environmental Sensor          | BOSCH BME680    |
+| RAK1910  | GPS Sensor                    | U-BLOX MAX-7Q   |
+| RAK12003 | Infrared Temperature Sensor   | MLX90632        |
+| RAK18000 | PDM Stereo Microphone Module  | ST MP34DT06     |
 
-<br>
+- [WisBlock Interface](/Product-Categories/WisBlock/#wisblock-interface)
 
-The table shows the WisBlock IO modules:
+WisBlock Interface modules provide your application with interfaces to other systems using digital and analog inputs and industry standards like RS485 or 4-20&nbsp;mA communication.
 
-| P/N     | Function                      | Chipset   |
-| ------- | ----------------------------- | --------- |
-| RAK5801 | 4–20&nbsp;mA sensor interface |           |
-| RAK5802 | RS485 interface               |           |
-| RAK5803 | 0–5&nbsp;V sensor interface   |           |
-| RAK5804 | IO extension board            |           |
-| RAK2305 | WiFi extension board          | ESP32     |
-| RAK2705 | NFC reader board              | ST CR95HF |
-| RAK5860 | NB-IoT                        | BG77      |
-| RAK5804 | IO extension board            |           |
+| **P/N** | **Function**                  |
+| ------- | ----------------------------- |
+| RAK1920 | Sensor Adapter Module         |
+| RAK5801 | 4-20&nbsp;mA Interface Module |
+| RAK5802 | RS485 Interface Module        |
+| RAK5804 | Interface Extension Module    |
+| RAK5811 | 0-5&nbsp;V Interface Module   |
+
+
+- [WisBlock Display](/Product-Categories/WisBlock/#wisblock-display/)
+
+WisBlock Display modules add visual display options to WisBlock. WisBlock Display offers graphic displays and LED’s for WisBlock solutions. The table below shows the WisBlock Display modules:
+
+| **P/N**  | **Function**           | **Chipset** |
+| -------- | ---------------------- | ----------- |
+| RAK1921  | WisBLock OLED Display  | SSD1306     |
+| RAK14000 | WisBLock E-Ink Display |             |
+
+- [WisBlock Extra](/Product-Categories/WisBlock/#wisblock-extra/)
+
+WisBlock Extra modules are add-ons for WisBlock. This category includes extension cables, real-time clock, and other useful modules.
+
+| **P/N**  | **Function**           | **Chipset** |
+| -------- | ---------------------- | ----------- |
+| RAK18001 | WisBlock Buzzer Module | MLT-5020    |
+
+- [WisBlock Storage](/Product-Categories/WisBlock/#wisblock-storage/)
+
+WisBlock Storage extends the memory capabilities of WisBlock solutions with different storage options like Flash, EEPROM, or SD-Card slots.
+The table below shows the [WisBlock Storage](/Product-Categories/WisBlock/#wisblock-storage) modules:
+
+| **P/N**  | **Function**  | **Chipset**            |
+| -------- | ------------- | ---------------------- |
+| RAK15000 | EEPROM Module | Microchip AT24CM02     |
+| RAK15001 | Flash Module  | Gigadevice GD25Q16CNIG |
+
+- [WisBlock Power](/Product-Categories/WisBlock/#wisblock-power)
+
+WisBlock Power modules extend the power supply options available for WisBlock. Whether you need wireless charging or want to use an alternative green energy resource, the WisBlock Power Modules offer you such solutions. Moreover, a power supply option for external sensors is available as well.
+The table below shows the WisBlock Power module:
+
+| **P/N**  | **Function**          | **Chipset** |
+| -------- | --------------------- | ----------- |
+| RAK19002 | WisBlock Boost Module | TPS61046    |
 
 
 ### WisBlock: Function and Data Bus Supported
 
 #### WisBlock Core Function and Data Bus
 
-| RAK4631 Pin Definition | RAK11200 Pin Definition | Function Name of WisBase | Pin Number | Pin Number | Function Name of WisBase | RAK4631 Pin Definition | RAK11200 Pin Definition |
-| ---------------------- | ----------------------- | ------------------------ | ---------- | ---------- | ------------------------ | ---------------------- | ----------------------- |
-| VBAT                   | NC                      | VBAT                     | 1          | 2          | VBAT                     | VBAT                   | NC                      |
-| GND                    | GND                     | GND                      | 3          | 4          | GND                      | GND                    | GND                     |
-| 3V3                    | 3V3                     | VDD                      | 5          | 6          | VDD                      | 3V3                    | 3V3                     |
-| USB+                   | USB_DP                  | USB+                     | 7          | 8          | USB–                     | USB_DN                 | USB–                    |
-| VBUS                   | NC                      | VBUS                     | 9          | 10         | SW1                      | P1.01                  | IO34                    |
-| UART1_TX1              | TXD0                    | TXD0                     | 11         | 12         | RXD0                     | RXD0                   | UART1_RX1               |
-| MCU_RST                | EN                      | RESET                    | 13         | 14         | LED1                     | LED1/P1.03             | IO12                    |
-| LED2/P1.04             | IO2                     | LED2                     | 15         | 16         | LED3                     | P0.02/QSPI_DIO3        | NC                      |
-| 3V3                    | 3V3                     | VDD                      | 17         | 18         | VDD                      | 3V3                    | 3V3                     |
-| I2C1_SDA1/P0.13        | IO4                     | I2C1_SDA                 | 19         | 20         | I2C1_SCL                 | I2C1_SCL1/P0.14        | IO5                     |
-| AIN3/P0.05             | SENSOR_VP/IO36          | AIN0                     | 21         | 22         | AIN1                     | AIN7/P0.31             | SENSOR_VN/IO39          |
-| NC                     | IO0                     | BOOT0                    | 23         | 24         | IO7                      | P0.28/QSPI_DIO2        | NC                      |
-| P0.26/QSPI_CS          | IO32                    | SPI_CS                   | 25         | 26         | SPI_CLK                  | P0.03/QSPI_CLK         | IO33                    |
-| P0.29/QSPI_DIO1        | IO35                    | SPI_MISO_1               | 27         | 28         | SPI_MOSI                 | P0.30/QSPI_DIO0        | IO25                    |
-| P0.17                  | IO14                    | IO1                      | 29         | 30         | IO2                      | P1.02                  | IO27                    |
-| P0.21                  | IO26                    | IO3                      | 31         | 32         | IO4                      | P0.04                  | IO23                    |
-| P0.16                  | IO21                    | TXD1                     | 33         | 34         | RXD1                     | P0.15                  | IO19                    |
-| P0.24                  | IO15                    | I2C2_SDA                 | 35         | 36         | I2C2_SCL                 | P0.25                  | IO18                    |
-| P0.09/NFC1             | IO13                    | IO5                      | 37         | 38         | IO6                      | P0.10/NFC2             | IO22                    |
-| GND                    | GND                     | GND                      | 39         | 40         | GND                      | GND                    | GND                     |
+| RAK4631 Pin Definition | RAK11200 Pin Definition | Function Name of WisBlock Base | Pin Number | Pin Number | Function Name of WisBlock Base | RAK4631 Pin Definition | RAK11200 Pin Definition |
+| ---------------------- | ----------------------- | ------------------------------ | ---------- | ---------- | ------------------------------ | ---------------------- | ----------------------- |
+| VBAT                   | NC                      | VBAT                           | 1          | 2          | VBAT                           | VBAT                   | NC                      |
+| GND                    | GND                     | GND                            | 3          | 4          | GND                            | GND                    | GND                     |
+| 3V3                    | 3V3                     | VDD                            | 5          | 6          | VDD                            | 3V3                    | 3V3                     |
+| USB+                   | USB_DP                  | USB+                           | 7          | 8          | USB–                           | USB_DN                 | USB–                    |
+| VBUS                   | NC                      | VBUS                           | 9          | 10         | SW1                            | P1.01                  | IO34                    |
+| UART1_TX1              | TXD0                    | TXD0                           | 11         | 12         | RXD0                           | RXD0                   | UART1_RX1               |
+| MCU_RST                | EN                      | RESET                          | 13         | 14         | LED1                           | LED1/P1.03             | IO12                    |
+| LED2/P1.04             | IO2                     | LED2                           | 15         | 16         | LED3                           | P0.02/QSPI_DIO3        | NC                      |
+| 3V3                    | 3V3                     | VDD                            | 17         | 18         | VDD                            | 3V3                    | 3V3                     |
+| I2C1_SDA1/P0.13        | IO4                     | I2C1_SDA                       | 19         | 20         | I2C1_SCL                       | I2C1_SCL1/P0.14        | IO5                     |
+| AIN3/P0.05             | SENSOR_VP/IO36          | AIN0                           | 21         | 22         | AIN1                           | AIN7/P0.31             | SENSOR_VN/IO39          |
+| NC                     | IO0                     | BOOT0                          | 23         | 24         | IO7                            | P0.28/QSPI_DIO2        | NC                      |
+| P0.26/QSPI_CS          | IO32                    | SPI_CS                         | 25         | 26         | SPI_CLK                        | P0.03/QSPI_CLK         | IO33                    |
+| P0.29/QSPI_DIO1        | IO35                    | SPI_MISO_1                     | 27         | 28         | SPI_MOSI                       | P0.30/QSPI_DIO0        | IO25                    |
+| P0.17                  | IO14                    | IO1                            | 29         | 30         | IO2                            | P1.02                  | IO27                    |
+| P0.21                  | IO26                    | IO3                            | 31         | 32         | IO4                            | P0.04                  | IO23                    |
+| P0.16                  | IO21                    | TXD1                           | 33         | 34         | RXD1                           | P0.15                  | IO19                    |
+| P0.24                  | IO15                    | I2C2_SDA                       | 35         | 36         | I2C2_SCL                       | P0.25                  | IO18                    |
+| P0.09/NFC1             | IO13                    | IO5                            | 37         | 38         | IO6                            | P0.10/NFC2             | IO22                    |
+| GND                    | GND                     | GND                            | 39         | 40         | GND                            | GND                    | GND                     |
 
 <br>
 
@@ -770,29 +817,29 @@ The WisSensor data bus is divided into four type. The relationship is shown in t
 
 #### WisBlock IO Function and Data Bus
 
-| RAK2305  | RAK2705   | RAK5802  | RAK5801      | Function Name of WisBase | Pin Number | Pin Number | Function Name of WisBase | RAK5801      | RAK5802  | RAK2705   | RAK2305  |
-| -------- | --------- | -------- | ------------ | ------------------------ | ---------- | ---------- | ------------------------ | ------------ | -------- | --------- | -------- |
-| ESP32    | NFC       | RS485    | 4-20&nbsp;mA |                          |            |            |                          | 4-20&nbsp;mA | RS485    | NFC       | ESP32    |
-| VBAT     | VBAT      | VBAT     | VBAT         | VBAT                     | 1          | 2          | VBAT                     | VBAT         | VBAT     | VBAT      | VBAT     |
-| GND      | GND       | GND      | GND          | GND                      | 3          | 4          | GND                      | GND          | GND      | GND       | GND      |
-| NC       | NC        | NC       | NC           | 3V3                      | 5          | 6          | 3V3_S                    | 3V3          | 3V3      | NC        | NC       |
-| NC       | NC        | NC       | NC           | USB+                     | 7          | 8          | USB–                     | NC           | NC       | NC        | NC       |
-| NC       | NC        | NC       | NC           | VBUS                     | 9          | 10         | SW1                      | NC           | NC       | NC        | NC       |
-| TXD0     | NC        | NC       | NC           | TXD0                     | 11         | 12         | RXD0                     | NC           | NC       | NC        | RXD0     |
-| NC       | NC        | NC       | NC           | RESET                    | 13         | 14         | LED1                     | NC           | NC       | NC        | LED1     |
-| LED2     | NC        | NC       | NC           | LED2                     | 15         | 16         | LED3                     | NC           | NC       | NC        | NC       |
-| NC       | NC        | NC       | NC           | VDD                      | 17         | 18         | VDD                      | NC           | NC       | NC        | NC       |
-| I2C1_SDA | NC        | I2C1_SDA | I2C1_SDA     | I2C1_SDA                 | 19         | 20         | I2C1_SCL                 | I2C1_SCL     | I2C1_SCL | NC        | I2C1_SCL |
-| NC       | NC        | AIN0     | AIN0         | AIN0                     | 21         | 22         | AIN1                     | AIN1         | NC       | NC        | NC       |
-| NC       | NC        | NC       | NC           | NC                       | 23         | 24         | NC                       | NC           | NC       | NC        | NC       |
-| SPI_CS   | SPI_CS*   | NC       | NC           | SPI_CS                   | 25         | 26         | SPI_CLK                  | NC           | NC       | SPI_CLK*  | SPI_CLK  |
-| SPI_MISO | SPI_MISO* | NC       | NC           | SPI_MISO                 | 27         | 28         | SPI_MOSI                 | NC           | NC       | SPI_MOSI* | SPI_MOSI |
-| NC       | NC        | NC       | NC           | IO1                      | 29         | 30         | IO2                      | NC           | NC       | NC        | IO2      |
-| NC       | SPI_CS    | NC       | NC           | IO3                      | 31         | 32         | IO4                      | NC           | NC       | SPI_CLK   | NC       |
-| RXD1     | RXD1      | RXD1     | NC           | TXD1                     | 33         | 34         | RXD1                     | NC           | TXD1     | TXD1      | TXD1     |
-| NC       | NC        | NC       | NC           | I2C2_SDA                 | 35         | 36         | I2C2_SCL                 | NC           | NC       | NC        | NC       |
-| NC       | SPI_MISO  | NC       | NC           | IO5                      | 37         | 38         | IO6                      | NC           | NC       | SPI_MOSI  | NC       |
-| GND      | GND       | GND      | GND          | GND                      | 39         | 40         | GND                      | GND          | GND      | GND       | GND      |
+| RAK2305  | RAK2705   | RAK5802  | RAK5801      | Function Name of WisBlock Base | Pin Number | Pin Number | Function Name of WisBlock Base | RAK5801      | RAK5802  | RAK2705   | RAK2305  |
+| -------- | --------- | -------- | ------------ | ------------------------------ | ---------- | ---------- | ------------------------------ | ------------ | -------- | --------- | -------- |
+| ESP32    | NFC       | RS485    | 4-20&nbsp;mA |                                |            |            |                                | 4-20&nbsp;mA | RS485    | NFC       | ESP32    |
+| VBAT     | VBAT      | VBAT     | VBAT         | VBAT                           | 1          | 2          | VBAT                           | VBAT         | VBAT     | VBAT      | VBAT     |
+| GND      | GND       | GND      | GND          | GND                            | 3          | 4          | GND                            | GND          | GND      | GND       | GND      |
+| NC       | NC        | NC       | NC           | 3V3                            | 5          | 6          | 3V3_S                          | 3V3          | 3V3      | NC        | NC       |
+| NC       | NC        | NC       | NC           | USB+                           | 7          | 8          | USB–                           | NC           | NC       | NC        | NC       |
+| NC       | NC        | NC       | NC           | VBUS                           | 9          | 10         | SW1                            | NC           | NC       | NC        | NC       |
+| TXD0     | NC        | NC       | NC           | TXD0                           | 11         | 12         | RXD0                           | NC           | NC       | NC        | RXD0     |
+| NC       | NC        | NC       | NC           | RESET                          | 13         | 14         | LED1                           | NC           | NC       | NC        | LED1     |
+| LED2     | NC        | NC       | NC           | LED2                           | 15         | 16         | LED3                           | NC           | NC       | NC        | NC       |
+| NC       | NC        | NC       | NC           | VDD                            | 17         | 18         | VDD                            | NC           | NC       | NC        | NC       |
+| I2C1_SDA | NC        | I2C1_SDA | I2C1_SDA     | I2C1_SDA                       | 19         | 20         | I2C1_SCL                       | I2C1_SCL     | I2C1_SCL | NC        | I2C1_SCL |
+| NC       | NC        | AIN0     | AIN0         | AIN0                           | 21         | 22         | AIN1                           | AIN1         | NC       | NC        | NC       |
+| NC       | NC        | NC       | NC           | NC                             | 23         | 24         | NC                             | NC           | NC       | NC        | NC       |
+| SPI_CS   | SPI_CS*   | NC       | NC           | SPI_CS                         | 25         | 26         | SPI_CLK                        | NC           | NC       | SPI_CLK*  | SPI_CLK  |
+| SPI_MISO | SPI_MISO* | NC       | NC           | SPI_MISO                       | 27         | 28         | SPI_MOSI                       | NC           | NC       | SPI_MOSI* | SPI_MOSI |
+| NC       | NC        | NC       | NC           | IO1                            | 29         | 30         | IO2                            | NC           | NC       | NC        | IO2      |
+| NC       | SPI_CS    | NC       | NC           | IO3                            | 31         | 32         | IO4                            | NC           | NC       | SPI_CLK   | NC       |
+| RXD1     | RXD1      | RXD1     | NC           | TXD1                           | 33         | 34         | RXD1                           | NC           | TXD1     | TXD1      | TXD1     |
+| NC       | NC        | NC       | NC           | I2C2_SDA                       | 35         | 36         | I2C2_SCL                       | NC           | NC       | NC        | NC       |
+| NC       | SPI_MISO  | NC       | NC           | IO5                            | 37         | 38         | IO6                            | NC           | NC       | SPI_MOSI  | NC       |
+| GND      | GND       | GND      | GND          | GND                            | 39         | 40         | GND                            | GND          | GND      | GND       | GND      |
 
 :::tip 📝 NOTE
 * Can be supported by reworking the hardware.
