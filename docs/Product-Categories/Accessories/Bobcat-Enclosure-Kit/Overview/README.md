@@ -33,3 +33,4 @@ Combined with one of our fiberglass antennas, this kit will allow you to better 
 - RP-SMA female to SMA male adapter
 - RAKBox-GW-4
 - Maximum ambient temperature +40°C
+- IP67 Rated
