@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak18001/overview/RAK18001_front.png
 rak_desc: RAK18001 is a WisBlock Extra Buzzer module which produces an audible sound using the MLT-5020 Buzzer
 rak_grp: [wisblock, wisextra]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK18001
@@ -13,7 +13,7 @@ tags:
 
 Thank you for choosing **RAK18001 WisBlock Buzzer Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
-
+* [RAK18001 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
@@ -48,7 +48,7 @@ The **RAK18001** is a WisBlock Extra module that uses a **MLT-5020** as its buil
 
 ## Prerequisites  
   
-To use the **RAK18001 Buzzer Module**, you need a **Wisblock Base** to plug the module in. The Wisblock Base acts as a power supply for the RAK18001 Buzzer Module. It also consist of several module ports which allows you to plug multiple Buzzer Module or other modules of your choice! Also, you need a **WisBlock Core** to control your module.
+To use the **RAK18001 Buzzer Module**, you need a **WisBlock Base** to plug the module in. The Wisblock Base acts as a power supply for the RAK18001 Buzzer Module. It also consist of several module ports which allows you to plug multiple Buzzer Module or other modules of your choice! Also, you need a **WisBlock Core** to control your module.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the matching screws to ensure intact placement and connection!

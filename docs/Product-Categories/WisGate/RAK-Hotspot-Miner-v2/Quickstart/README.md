@@ -27,6 +27,7 @@ tags:
 
 ## Product Configuration
 
+For Antenna Mounting Scenarios and proper connectivity chain, refer to this [guide](../Troubleshooting/#proper-miner-connection-scenarios-with-the-rak-outdoor-enclosure-antennas) 
 ### Download the Helium App
 
 The application is available for both Android and iOS. You can manually search it or just scan the QR Code provided below:

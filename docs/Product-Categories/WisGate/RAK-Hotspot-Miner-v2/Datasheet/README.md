@@ -12,6 +12,7 @@ certifications:
   - [IC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/Hotspot%20Miner_IC_report.pdf]
   - [IMDA, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/IMDA%20Certification.rar]
   - [KCC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotMiner_KC_certificate.zip)]
+  - [NTC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotMiner_V2.0_PH_certificate.JPG]
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RCMA0210312001RCM%20cert-RAK7248%20RCM_Australia.pdf]
   - [REACH, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/REACH%20REPORT.PDF]
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/ROHS%20REACH_Hotspot%20Miner_report.zip]

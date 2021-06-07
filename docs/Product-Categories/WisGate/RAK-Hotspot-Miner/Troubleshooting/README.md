@@ -15,7 +15,7 @@ The RAK Hotspot Miner includes two (2) small LEDs for status:
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot-miner/troubleshooting/StatusLED.svg"
-  width="30%"
+  width="40%"
   caption="Status LED location"
 /> 
 
@@ -32,3 +32,142 @@ In the case of a constant blinking Green, refer to the following recommendations
 3. Reconnect USB-C power making sure it is plugged in all the way.
 
 
+## Proper Miner connection scenarios with the RAK outdoor enclosure/antennas
+
+### Scenario 1 (Indoor, optimal)
+
+Products Used:
+
+- [RAK Hotspot Miner](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore) 
+- [Magnetic Antenna Base](https://store.rakwireless.com/products/antenna-magnetic-base?utm_source=MagneticAntennaBase&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Fiber Glass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
+
+
+<rk-img
+  src="/assets/images/wisgate/rak-hotspot-miner/troubleshooting/1a.png"
+  width="100%"
+  caption="RAK Hotspot Miner + Magnetic Antenna Base + Fiber Glass Antenna"
+/> 
+
+
+### Scenario 2 (Indoor, suboptimal)
+
+Products Used:
+
+- [RAK Hotspot Miner](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore) 
+- Converter Cable (included with any of the Fiber Glass Antennas)
+- [Fiber Glass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
+  
+<rk-img
+  src="/assets/images/wisgate/rak-hotspot-miner/troubleshooting/2a.png"
+  width="100%"
+  caption="RAK Hotspot Miner + Converter Cable + Fiber Glass Antenna"
+/> 
+
+### Scenario 3 (Outdoor, optimal)
+
+Products Used:
+
+- [RAK Hotspot Miner](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore) 
+- [Outdoor Enclosure Kit RAKBox-GW-3](https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H?variant=37912840863942)
+- [Lightning Arrestor](https://store.rakwireless.com/products/lightning-arrestor)
+- [Fiber Glass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
+
+<rk-img
+  src="/assets/images/wisgate/rak-hotspot-miner/troubleshooting/7a.png"
+  width="100%"
+  caption="RAK Hotspot Miner + Outdoor Enclosure Kit RAKBox-GW-3 + Lightning Arrestor + Fiber Glass Antenna"
+/> 
+
+### Scenario 4 (Outdoor, suboptimal)
+
+Products Used:
+
+- [RAK Hotspot Miner](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore) 
+- Converter Cable (included with any of the Fiber Glass Antennas)
+- [Lightning Arrestor](https://store.rakwireless.com/products/lightning-arrestor)
+- [Fiber Glass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
+
+<rk-img
+  src="/assets/images/wisgate/rak-hotspot-miner/troubleshooting/3a.png"
+  width="100%"
+  caption="RAK Hotspot Miner + Converter Cable + Lightning Arrestor + Fiber Glass Antenna"
+/> 
+
+### Scenario 5 (Outdoor, suboptimal)
+
+Products Used:
+
+- [RAK Hotspot Miner](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore) 
+- [Pulsar Cable LMR400 RAK9733](https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733?variant=39677580935366)
+- [Fiber Glass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
+
+<rk-img
+  src="/assets/images/wisgate/rak-hotspot-miner/troubleshooting/4a.png"
+  width="100%"
+  caption="RAK Hotspot Miner + Pulsar Cable LMR400 RAK9733 + Fiber Glass Antenna"
+/> 
+
+### Scenario 6 (Outdoor, suboptimal)
+
+Products Used:
+
+- [RAK Hotspot Miner](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore) 
+- [Pulsar Cable LMR400 RAK9733](https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733?variant=39677580935366)
+- [Lightning Arrestor](https://store.rakwireless.com/products/lightning-arrestor)
+- [Fiber Glass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
+
+
+<rk-img
+  src="/assets/images/wisgate/rak-hotspot-miner/troubleshooting/5a.png"
+  width="100%"
+  caption="RAK Hotspot Miner + Pulsar Cable LMR400 RAK9733 + Lightning Arrestor + Fiber Glass Antenna"
+/> 
+
+### Scenario 7 (Outdoor, suboptimal)
+
+Products Used:
+
+- [RAK Hotspot Miner](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore) 
+- [Outdoor Enclosure Kit RAKBox-GW-3](https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H?variant=37912840863942)
+- [Fiber Glass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
+
+
+<rk-img
+  src="/assets/images/wisgate/rak-hotspot-miner/troubleshooting/6a.png"
+  width="100%"
+  caption="RAK Hotspot Miner + Outdoor Enclosure Kit RAKBox-GW-3 + Fiber Glass Antenna"
+/> 
+
+### Scenario 8 (Outdoor, suboptimal)
+
+Products Used:
+
+- [RAK Hotspot Miner](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore) 
+- [Outdoor Enclosure Kit RAKBox-GW-3](https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H?variant=37912840863942)
+- [Pulsar Cable LMR400 RAK9731](https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733?variant=39677580935366)
+- [Fiber Glass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
+
+
+<rk-img
+  src="/assets/images/wisgate/rak-hotspot-miner/troubleshooting/8a.png"
+  width="100%"
+  caption="RAK Hotspot Miner + Outdoor Enclosure Kit RAKBox-GW-3 + Pulsar Cable LMR400 RAK9731 + Fiber Glass Antenna"
+/> 
+
+### Scenario 9 (Outdoor, suboptimal)
+
+Products Used:
+
+- [RAK Hotspot Miner](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Outdoor Enclosure Kit RAKBox-GW-3](https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H?variant=37912840863942)
+- [Pulsar Cable LMR400 RAK9731](https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733?variant=39677580935366)
+- [Lightning Arrestor](https://store.rakwireless.com/products/lightning-arrestor)
+- [Fiber Glass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
+
+
+<rk-img
+  src="/assets/images/wisgate/rak-hotspot-miner/troubleshooting/9a.png"
+  width="100%"
+  caption="RAK Hotspot Miner + Outdoor Enclosure Kit RAKBox-GW-3 + Pulsar Cable LMR400 RAK9731 + Lightning Arrestor + Fiber Glass Antenna"
+/> 

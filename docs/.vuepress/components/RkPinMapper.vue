@@ -46,7 +46,7 @@
 
   <div class="btn-io-map">
     <button @click="mapPins" style="background-color:#0c6bc4; color:#ffffff"><span>MAP</span></button>
-    <!-- <button @click="clearPins" style="background-color:#ff0000; color:#ffffff"><span>CLEAR</span></button> -->
+    <button @click="clearPins" style="background-color:#ff0000; color:#ffffff"><span>CLEAR</span></button>
   </div>
   <div class="row">
       <div class="col-sm-12 padding-10"  v-show="currentWisIo!==null">
@@ -288,7 +288,6 @@ export default {
       }
     },
     clearPins(){
-      
       this.currentWisBase = null;
       this.currentWisCore = null;
       this.currentWisIo = null;
@@ -296,13 +295,13 @@ export default {
       this.currentWisSensorB = null;
       this.currentWisSensorC = null;
       this.currentWisSensorD = null;
-      this.classStyles = null;
 
-      this.wisIoBoard = []      
-      this.wisSensorBoardA = []
-      this.wisSensorBoardB = []
-      this.wisSensorBoardC = []
-      this.wisSensorBoardD = []
+      this.classStyles = [];
+      this.wisIoBoard = [];
+      this.wisSensorBoardA = [];
+      this.wisSensorBoardB = [];
+      this.wisSensorBoardC = [];
+      this.wisSensorBoardD = [];
 
     },
     async mapPins (){

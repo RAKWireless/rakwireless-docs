@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/accessories/bobcat-enclosure-kit/installation/bobcat_enclosure.png
+rak_img: /assets/images/accessories/bobcat-enclosure-kit/installation/bobcat.svg
 rak_desc: This kit includes all the necessary parts for your Bobcat Miner 300 Outdoor in a secure and durable casing. 
 rak_grp: [accessories, enclosures]
 rak_model: RAKBox-GW-4B    

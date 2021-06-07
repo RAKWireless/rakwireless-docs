@@ -3,7 +3,7 @@ tags:
   - datasheet
   - wisblock
   - RAK18000
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -19,7 +19,7 @@ next: false
 
 ### Description
 
-**RAK18000** is a **WisBlock Sensor** module that extends the **WisBlock** system with sound sensing capability. It is based on two MP34DT06 microphone modules.
+**RAK18000** is a **WisBlock Sensor** module that extends the **WisBlock** system with sound sensing capability. It is based on two MP34DT06J microphone modules.
 
 The RAK18000 is a digital microphone module that is designed to detect sounds and to support left and right channels. It is also capable of changing microphone orientation on the left or right channel through the switch resistor.
 
@@ -30,7 +30,7 @@ The RAK18000 is a digital microphone module that is designed to detect sounds an
     - 3.3&nbsp;V input voltage
     - 64&nbsp;dB signal-to-noise ratio
     - –26&nbsp;dBFS ± 1&nbsp;dB sensitivity 
-    - Stereo microphone 2 x MP34DT06   
+    - Stereo microphone 2 x MP34DT06J   
     - Low power consumption
   
 * **Size**    

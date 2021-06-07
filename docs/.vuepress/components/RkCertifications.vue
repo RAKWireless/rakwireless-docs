@@ -85,6 +85,9 @@ export default {
           case 'KC':
             data.img = '/assets/images/certifications/KCC.png'
             break
+          case 'NTC':
+            data.img = '/assets/images/certifications/NTC.png'
+            break
           default:
             data.img =
               'https://image.shutterstock.com/image-illustration/white-unknown-document-icon-isolated-600w-1517588975.jpg'

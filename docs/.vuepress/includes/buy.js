@@ -564,7 +564,7 @@ export default {
   },
   '/Product-Categories/Accessories/Bobcat-Enclosure-Kit/': {
     label: 'Bobcat Outdoor Enclosure Kit',
-    img: '/assets/images/accessories/bobcat-enclosure-kit/installation/bobcat_enclosure.png',
+    img: '/assets/images/accessories/bobcat-enclosure-kit/installation/bobcat.png',
     store: 'https://store.rakwireless.com/products/bobcat-outdoor-enclosure-kit?variant=39856615194822'
   },
 }
