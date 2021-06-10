@@ -432,7 +432,43 @@ module.exports = {
         nested: true,
         download: true,
         sidebarDepth: 4
-      }
+      }  
+    ],
+    '/Product-Categories/Accessories/RAKARG18/': [
+      {
+        title: 'Overview',
+        path: '/Product-Categories/Accessories/RAKARG18/Overview/', 
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      },
+      {
+        title: 'Datasheet',
+        path: '/Product-Categories/Accessories/RAKARG18/Datasheet/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      }  
+    ],
+      '/Product-Categories/Accessories/RAKARG19/': [
+        {
+          title: 'Overview',
+          path: '/Product-Categories/Accessories/RAKARG19/Overview/',
+          collapsable: false,
+          nested: true,
+          download: true,
+          sidebarDepth: 4
+        },
+        {
+          title: 'Datasheet',
+          path: '/Product-Categories/Accessories/RAKARG19/Datasheet/',
+          collapsable: false,
+          nested: true,
+          download: true,
+          sidebarDepth: 4
+        }
 ],
 
 

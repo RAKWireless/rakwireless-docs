@@ -567,4 +567,14 @@ export default {
     img: '/assets/images/accessories/bobcat-enclosure-kit/installation/bobcat.png',
     store: 'https://store.rakwireless.com/products/bobcat-outdoor-enclosure-kit?variant=39856615194822'
   },
+  '/Product-Categories/Accessories/RAKARG18/': {
+    label: '863-870 MHz 5 dBi Fiber Glass Antenna',
+    img: ' /assets/images/accessories/rakarg18/5dbi_antenna.png',
+    store: 'https://store.rakwireless.com/products/5dbi-fiber-glass-antenna'
+  },
+  '/Product-Categories/Accessories/RAKARG19/': {
+    label: '902-928MHz 5dBi Fiber Glass Antenna',
+    img: '/assets/images/accessories/rakarg19/5dbi_antenna.png',
+    store: 'https://store.rakwireless.com/'
+  },
 }

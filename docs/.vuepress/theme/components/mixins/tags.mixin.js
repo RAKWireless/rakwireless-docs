@@ -2,6 +2,7 @@ import vars from './vars'
 
 export default {
   created () {
+
     if (typeof this.$ssrContext !== "undefined") {
       // homepage and non-homepage
     
@@ -9,9 +10,10 @@ export default {
         this.$ssrContext.userHeadTags += vars.homeScript;
         this.$ssrContext.userHeadTags += vars.homeOG;
       } else {
-        if (this.$page.path.includes('/Overview/')) {
-          this.$ssrContext.userHeadTags += this.pageOG();
-        }
+        // if (this.$page.path.includes('/Overview/')||this.$page.path.includes('/Datasheet/')) {
+        //   this.$ssrContext.userHeadTags += this.pageOG();
+        // }
+        this.$ssrContext.userHeadTags += this.pageOG();
       }
       // all pages
       this.$ssrContext.userHeadTags += vars.zendesk;
