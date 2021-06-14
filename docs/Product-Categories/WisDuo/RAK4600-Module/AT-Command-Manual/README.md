@@ -342,6 +342,12 @@ at+set_config=device:sleep:0\r\n
 OK Wake Up
 ```
 
+:::tip 📝 NOTE: 
+
+During sleep, Pin 22 (USART1_RX) is automatically configured as a wake up pin and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on this RX pin.
+
+:::
+
 <br>
 
 5. <b>at+get_config=device:status</b>
@@ -1728,7 +1734,7 @@ A summary of the pins of the RAK4600 module:
 
 1. **About the UART Pin**: 
     - Pin 22 (USART1_RX) and Pin 23 (USART1_TX). 
-    - During sleep, Pin 22 (USART1_RX) is configured as EXTI, with internal pull-down and rising edge triggering wake-up.
+    - During sleep, Pin 22 (USART1_RX) is automatically configured as a wake up pin and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on this RX pin.
    
 2. **About the SWD debug Pin**: Pin 37 (SYS_SWDIO) and Pin 38 (SYS_SWDCLK) are used for SWD debug programming.
 3. **About the Power Pin**: The power pins on the RAK4600 module includes the VCC Pins on Pin 40 (3V3_IN) and Pin 41 (3V3_IN), and the ground pins (GND) are on the Pin 1, Pin 8, Pin 12, Pin 13, Pin 14, Pin 16, Pin 18, Pin 19, Pin 20, Pin 31, Pin 39, and Pin 42.

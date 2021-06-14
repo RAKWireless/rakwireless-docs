@@ -249,6 +249,13 @@ OK Sleep
 at+set_config=device:sleep:0\r\n
 OK Wake Up
 ```
+
+:::tip 📝 NOTE: 
+
+During sleep, Pin 5 (RX1) and Pin 1 (RX2) are automatically configured as wake up pins and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
+
+:::
+
 <br>
 
 5. <b>at+get_config=device:status</b>
@@ -1810,7 +1817,7 @@ Not all pins of RAK4200 module are exposed on the RAK4200 Breakout board header 
     
     - Pin 5 (RX1) and  Pin 4 (TX1) are reserved for UART1.
     - Pin 1 (RX2) and Pin 2 (TX2) are reserved for UART2.
-    - During sleep, Pin 5 (RX1) and Pin 1 (RX2) are configured as external interrupt mode, an internal pull-down resistor, and rising edge trigger wake-up, respectively.
+    - During sleep, Pin 5 (RX1) and Pin 1 (RX2) are automatically configured as wake up pins and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
 
 2. **About the SWD Debug Pin**: Pin 7 (SWDIO) and Pin 8 (SWCLK) are used for SWD debug port.
    

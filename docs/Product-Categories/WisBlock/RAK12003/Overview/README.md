@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak12003/overview/RAK12003_home.png
 rak_desc: RAK12003 is a WisBlock Infrared Temperature Sensor which extends the WisBlock system with a non-contact IR thermal sensor. A ready to use software library and tutorial makes it easy to add a thermal sensor to your project.
 rak_grp: [wisblock, wissensor]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK12003
@@ -13,6 +13,7 @@ tags:
 
 Thank you for choosing **RAK12003 WisBlock Infrared Temperature Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK12003 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)

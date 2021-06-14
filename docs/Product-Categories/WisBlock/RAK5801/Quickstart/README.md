@@ -65,7 +65,7 @@ The RAK5801 is a 4-20&nbsp;mA current loop extension module that allows the user
 
 ##### Mounting Mechanism
 
-The RAK5801 module is part of the WisBlock Interface category, which connects to the baseboard through the IO slot. The installation method is shown in the Figures below.
+The RAK5801 module is part of the WisBlock Interface category, which connects to the baseboard through the IO slot. The installation method is shown in the Figures 2 and 3.
 
 1. Keep the RAK5801 module parallel to the baseboard, and gently place and plug WisConnector into the IO slot receptacle of the baseboard. The IO slot has an outer silkscreen on it to assist with the alignment. At this point, apply force evenly along with the module and press again. There will be a sound to confirm the successful completion of the attachment process.
 
@@ -79,7 +79,7 @@ For detailed instructions, refer to the [WisBlock Installation Guide](/Knowledge
   caption="WisConnector"
 />
 
-1. Always secure the RAK5801 module with **3 x M1.2 x3 pan head screws**, as shown in **Figure 3**.
+2. Always secure the RAK5801 module with **3 x M1.2 x3 pan head screws**, as shown in **Figure 3**.
 
 <rk-img
   src="/assets/images/wisblock/rak5801/quickstart/rak5801_mounting.png"

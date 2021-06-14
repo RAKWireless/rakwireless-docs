@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak1920/overview/RAK1920_home.png
 rak_desc: RAK1920 is a WisBlock Interface module which extends the WisBlock system with an adapter board to connect Click Boards (MikroElektronika), QWICC (Sparkfun) based and Grove (Seeed) based sensors to WisBlock.
 rak_grp: [wisblock, wisinterface]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - RAK1920
     - wisblock
@@ -13,6 +13,7 @@ tags:
 
 Thank you for choosing **RAK1920 WisBlock Sensor Adapter Module** in your awesome IoT Project! 🎉 To help you get started, we have provided the necessary documentations for the product.
 
+* [RAK1920 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->

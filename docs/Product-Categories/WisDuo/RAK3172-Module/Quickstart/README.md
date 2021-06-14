@@ -1245,7 +1245,7 @@ In the following sections, two (2) options for flashing new firmware in a RAK317
 
 #### Firmware Upgrade Through DAPLink
 
-Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool) guide in the Accesories Category.
+Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool) guide in the Accessories Category.
 
 #### Firmware Upgrade Through UART1
 

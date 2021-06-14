@@ -284,6 +284,14 @@ at+set_config=device:sleep:0\r\n
 OK Wake Up
 ```
 
+:::tip 📝 NOTE: 
+
+During sleep, Pin 7 (RX1) and Pin 26 (RX3) are automatically configured as wake up pins and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
+
+:::
+
+
+
 <br>
 
 5. <b>at+get_config=device:status</b>
@@ -1916,19 +1924,19 @@ Listed are the summary of the pins of the RAK811 module:
 1. **About the UART Pin**: 
     - Pin 6 (TX1) and Pin 7 (RX1) are reserved for UART1. 
     - Pin 25 (TX3) and Pin 26 (RX3) are reserved for UART3.
-    - During sleep, Pin 7 (RX1), and Pin 26 (RX3) are configured as external interrupt mode, internal pull-down resistor, bilateral edge trigger wake-up.
+    - During sleep, Pin 7 (RX1) and Pin 26 (RX3) are automatically configured as wake up pins and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
 
-1. **About the SWD Debug Pin**: Pin 10 (SWDIO) and Pin 13 (SWCLK) are used for SWD connection.
+2. **About the SWD Debug Pin**: Pin 10 (SWDIO) and Pin 13 (SWCLK) are used for SWD connection.
 
-2. **About the Power Pin**: The power pin on the RAK811 module includes VCC/GND, Pin 1, Pin 11, Pin 12, Pin 21, Pin 28, Pin 29, Pin 30, Pin 31, Pin 32, and Pin 34;
+3. **About the Power Pin**: The power pin on the RAK811 module includes VCC/GND, Pin 1, Pin 11, Pin 12, Pin 21, Pin 28, Pin 29, Pin 30, Pin 31, Pin 32, and Pin 34;
 
-3. **About the Reset Pin**: The reset pin on the RAK811 module is the Pin 24.
+4. **About the Reset Pin**: The reset pin on the RAK811 module is the Pin 24.
 
-4. **About the BOOT Pin**: The BOOT0 pin on the RAK811 module is Pin 17.
+5. **About the BOOT Pin**: The BOOT0 pin on the RAK811 module is Pin 17.
 
-5. **About the RF Antenna Pin**: The RF antenna pin on the RAK811 module is the Pin 33.
+6. **About the RF Antenna Pin**: The RF antenna pin on the RAK811 module is the Pin 33.
 
-6. **About the ADC Pin**: The ADC pins available on the RAK811 are different between the high and low-frequency modules. 
+7. **About the ADC Pin**: The ADC pins available on the RAK811 are different between the high and low-frequency modules. 
 
 - In the low-frequency modules, the ADC pins are the following: Pin 2, Pin 3, Pin 4, Pin 5, Pin 15, Pin 20, Pin 22, and Pin 23. 
 

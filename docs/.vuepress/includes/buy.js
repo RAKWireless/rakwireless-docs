@@ -577,4 +577,9 @@ export default {
     img: '/assets/images/accessories/rakarg19/5dbi_antenna.png',
     store: 'https://store.rakwireless.com/'
   },
+  '/Product-Categories/Accessories/Ethernet-Cable-Gland/': {
+    label: 'Ethernet Cable Gland',
+    img: '/assets/images/accessories/ethernet-cable-gland/ethernet-cable-gland.png',
+    store: 'https://store.rakwireless.com/products/ethernet-cable-gland'
+  },
 }

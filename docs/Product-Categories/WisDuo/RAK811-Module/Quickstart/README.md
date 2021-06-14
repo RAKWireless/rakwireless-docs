@@ -11,12 +11,16 @@ tags:
 
 This guide covers the following topics:
 
-- [TheThingsNetwork Guide](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#connecting-to-the-things-network-ttn) - Creating application and registering OTAA and ABP device on TTN.
-- [RAK811 LoRaWAN AT commands for TTN](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#lorawan-join-mode) - Examples for both OTAA and ABP.
-- [Chirpstack Guide](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#connecting-with-chirpstack) - Creating application and registering OTAA and ABP device on Chirpstack.
-- [RAK811 LoRaWAN AT commands for Chirpstack](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#lorawan-join-mode-2) - Examples for both OTAA and ABP .
-- [LoRa P2P](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#lora-p2p-mode) - Peer to peer communication between two RAK811 modules.
-- [Updating RAK811 FW](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#upgrading-the-firmware) - Procedures on how to update RAK811 module firmware.
+- [The Things Stack (TTN V3) OTAA Guide](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#the-things-stack-otaa-device-registration)
+- [RAK811 OTAA AT Commands for The Things Stack](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#rak811-otaa-configuration-for-the-things-stack)
+- [The Things Stack (TTN V3) ABP Guide](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#the-things-stack-abp-device-registration)
+- [RAK811 ABP AT Commands for The Things Stack](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#rak811-abp-configuration-for-the-things-stack)
+- [Chirpstack OTAA Guide](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#configure-the-otaa-mode-on-the-platform)
+- [RAK811 OTAA AT Commands for Chirpstack](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#configure-the-otaa-mode-on-the-rak811)
+- [Chirpstack ABP Guide](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#configure-the-abp-mode-on-the-platform)
+- [RAK811 ABP AT Commands for Chirpstack](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#configure-the-abp-mode-on-the-rak811)
+- [LoRa P2P Guide](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#lora-p2p-mode)
+- [Updating RAK811 FW Procedure](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#upgrading-the-firmware)
 
 ## Prerequisites
 
@@ -40,13 +44,15 @@ Before going through the step in the installation guide of the RAK811 WisDuo LPW
 
 #### List of Acronyms
 
-| Acronym |        Definition       |
-| ------- | ----------------------- |
-|   DFU   | Device Firmware Upgrade |
-|   JTAG  | Joint Test Action Group |
-|  LoRa  |       Long Range        |
-|  OTAA   |Over-The-Air-Activation  |
-|  ABP    | Activation-By-Personalization (ABP)
+| Acronym | Definition                          |
+| ------- | ----------------------------------- |
+| DFU     | Device Firmware Upgrade             |
+| JTAG    | Joint Test Action Group             |
+| LoRa    | Long Range                          |
+| OTAA    | Over-The-Air-Activation             |
+| ABP     | Activation-By-Personalization (ABP) |
+| TTN     | The Things Network                  |
+| TTS     | The Things Stack                    |
 
 
 ## Product Configuration
@@ -61,7 +67,7 @@ RAK811 module can be configured using AT commands via UART interface. You need a
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/1.module-connection.png"
-  width="75%"
+  width="90%"
   caption="RAK811 Module Connection"
 />
 
@@ -78,151 +84,187 @@ RAK811 module can be configured using AT commands via UART interface. You need a
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/2.rak-serial-port-tool.png"
-  width="40%"
+  width="90%"
   caption="RAK Serial Port Tool Connected to RAK811 module"
 />
 
 ### Configuring RAK811
 
-To connect the RAK811 module to a LoRa P2P connection or a LoRaWAN network, the module must be configured and LoRa parameters must be set by sending AT commands. With a serial communication tool, for example the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools), it is possible to send commands to the RAK811.
-
-Connect the RAK811 module to the computer as described in the previous section. Using the serial communication tool, it is possible to send commands to the RAK811. For example, sending the `at+version` will display the current firmware version as shown in Figure 3. For more supported commands, refer to [AT Commands for RAK811](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/).
+To connect the RAK811 module to a LoRa P2P connection or a LoRaWAN network, the module must be configured and LoRa parameters must be set by sending AT commands. Connect the RAK811 module to the computer as described in the previous section. Using the serial communication tool, for example, the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools), it is possible to send commands to the RAK811. For example, sending the `at+set_config=device:restart` and `at+version` commands will display the current firmware version as shown in Figure 3. For more supported commands, refer to [AT Commands for RAK811](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/).
 
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/3.command-response.png"
-  width="40%"
-  caption="at+version command response"
+  width="90%"
+  caption="AT Command response"
 />
 
-### Connecting to The Things Network (TTN)
+### Connecting to The Things Stack (TTN V3)
 
-In this section, a practical exercise will be performed to show how to connect the RAK811 module to The Things Network (TTN) platform. 
-
+This section will show how to connect the RAK811 module to The Things Stack (TTN V3) platform. 
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/4.ttn-context.png"
-  width="75%"
-  caption="RAK811 in the context of the TTN"
+  width="95%"
+  caption="The Things Stack diagram"
 />
 
-As shown in Figure 4, the RAK811 module is one of the devices located on the left side. In the context of an IoT solution, the objective is to deploy devices to sense relevant process variables and transmit the data to the backend servers located in the cloud. The data will be processed and integrated as part of a larger solution that ultimately could generate efficiency, traceability and predictability capacity among others.
+As shown in Figure 4, The Things Stack is an open source LoRaWAN Network Server suitable for global, geo-distributed public and private deployments as well as for small, local networks. The architecture follows the LoRaWAN Network Reference Model for standards compliancy and interoperability. This project is actively maintained by [The Things Industries](https://www.thethingsindustries.com/).
 
-The RAK811 module can be part of this ecosystem, and the objective of this section is to demonstrate how simple it is to send data to the TTN using the LoRaWAN protocol. To achieve this, the RAK811 module must be located inside of the coverage of a LoRaWAN gateway. 
+LoRaWAN is a protocol for low-power wide area networks. It allows for large scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long range wireless connections.
+
+The RAK811 module can be part of this ecosystem as a device, and the objective of this section is to demonstrate how simple it is to send data to The Things Stack using the LoRaWAN protocol. To achieve this, the RAK811 module must be located inside the coverage of a LoRaWAN gateway connected to The Things Stack server. 
 
 
-<b>Sign up and login</b>
+#### Registration to TTN and Creating LoRaWAN Applications
 
-If you don't have an account yet, head on to the [TTN website](https://www.thethingsnetwork.org/) and create one. Once done, login to your account and go to the Console. 
+The first step is to go to [The Things Network platform](https://console.cloud.thethings.network/) and select a cluster as shown in Figure 5. The Things Industries adds more clusters from time to time so select the one closes to your location. In this guide, Europe 1 is selected.
 
 <rk-img
-  src="/assets/images/wisduo/rak811-module/quickstart/5.ttn.png"
+  src="/assets/images/wisduo/rak811-module/quickstart/t_image_1.png"
   width="100%"
-  caption="The Things Network Home Page"
+  caption="Selecting Cluster in TTN V3"
 />
 
+You can use the same login credentials on the TTN V2 if you have one. If you have no account yet, you need to create one.
+
+To register as a new user to TTN, click on **Login with The Things ID** then select **register** on the next page as shown in Figures 6 and 7.
 
 <rk-img
-  src="/assets/images/wisduo/rak811-module/quickstart/6.ttn-console.png"
+  src="/assets/images/wisduo/rak811-module/quickstart/t_image_2.png"
   width="100%"
-  caption="TTN Console Page"
+  caption="Login using TTN account"
 />
-
-
-#### Create a New Application
-
-1. Choose the “**APPLICATIONS**”. 
-
 
 <rk-img
-  src="/assets/images/wisduo/rak811-module/quickstart/7.application-section.png"
+  src="/assets/images/wisduo/rak811-module/quickstart/t_image_3.png"
   width="100%"
-  caption="Application Section"
+  caption="Registration of new account"
 />
 
-2. Click the “**add application**” button.
+You should now be on the step of creating your TTN account. Fill all the necessary details and activate your account.
 
+After creating an account, you should login on the platform using your username/email and password then click **Submit** as shown in Figure 8.
 
 <rk-img
-  src="/assets/images/wisduo/rak811-module/quickstart/8.adding-application.png"
+  src="/assets/images/wisduo/rak811-module/quickstart/t_image_4.png"
   width="100%"
-  caption="Adding an Application"
+  caption="Logging in to TTN platform"
 />
 
-* Here are the things that you should take note in adding an application:
-
-    * **Application ID** - this will be the unique id of your application in the Network. Note that the characters should be in lower case, no spaces are allowed.
-    * **Description** - this is a short and concise human readable description of your application.
-    * **Application EUI** - this will be generated automatically by The Things Network for convenience.
-    * **Handler Registration** - handler you want to register this application to.
-
-
-3. After you fill in the necessary information, press the "**Add application**" button at the bottom of this page. If you see similar page as shown in Figure 9, then you have successfully registered your application.
-
+You need to click **Authorize** to proceed.
 
 <rk-img
-  src="/assets/images/wisduo/rak811-module/quickstart/9.application-overview.png"
+  src="/assets/images/wisduo/rak811-module/quickstart/t_image_5.png"
   width="100%"
-  caption="Application Overview"
+  caption="Authorization to TTN"
 />
 
-<b>Register a New Device</b>
-
-1. Scroll down until you see the Devices section. Or, you can click the "**Devices**" button at the top. 
+Now that you are logged in to the platform, the next step is to create an application. Click **Create an application**.
 
 <rk-img
-  src="/assets/images/wisduo/rak811-module/quickstart/10.devices.png"
+  src="/assets/images/wisduo/rak811-module/quickstart/t_image_6.png"
   width="100%"
-  caption="Register a New Device"
+  caption="Creating TTN application for your LoRaWAN devices"
 />
 
-2. Then, register a new device by clicking on the "**register devices**".
+To have an application registered, you need to input first the specific details and necessary information about your application then click **Create application**.
+ 
+<rk-img
+  src="/assets/images/wisduo/rak811-module/quickstart/t_image_7.png"
+  width="100%"
+  caption="Details of the TTN application"
+/>
+
+If you have no error on the previous step, you should now be on the application console page. The next step is to add end devices to your The Things Stack application. LoRaWAN specification enforce that each end device has to be personalized and activated. There are two options in registering devices depending on the activation mode selected. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP).
+
+:::tip 📝 NOTE:
+
+Once you have the application in The Things Stack (TTN V3), you need to ensure that you are in coverage of a LoRaWAN gateway that is registered to The Things Stack (TTN V3) as well. Without the coverage of that LoRaWAN gateway, you cannot activate any device that you will register in your application. 
+
+RAKwireless has [LoRaWAN gateways](https://store.rakwireless.com/collections/wisgate) that you can connect to The Things Stack (TTN V3) if no LoRaWAN gateway coverage available in your location.
+
+:::
+
+#### The Things Stack OTAA Device Registration
+
+You need to go to your application console to be able to register a device. To start adding an OTAA end device, you need to click **+ Add end device** as shown in Figure 12.
 
 <rk-img
-  src="/assets/images/wisduo/rak811-module/quickstart/11.adding-device.png"
+  src="/assets/images/wisduo/rak811-module/quickstart/t_image_8.png"
   width="100%"
-  caption="Add your Device"
+  caption="Add end device"
 />
 
-In this form, the device ID must be unique for the application and must be completed with a lower case, alphanumeric characters. The rest of the parameters in the form are very important for the LoRaWAN protocol:
-
-* **Device EUI**
-* **Application Key**
-* **Application EUI**
-
-The TTN platform can generate these parameters randomly by leaving those fields empty or you can enter already existing values. 
-
-
-3. Press the “**Register**” button at the bottom of this page to finish the process. 
-
+To register the module, you need to click first **Manually** then configure the activation method by selecting **Over the air activation (OTAA)** and compatible **LoRaWAN version** then click **Start** button as shown in Figures 13 and 14.
 
 <rk-img
-  src="/assets/images/wisduo/rak811-module/quickstart/12.device-overview.png"
+  src="/assets/images/wisduo/rak811-module/quickstart/t_image_9.png"
   width="100%"
-  caption="Device Overview"
+  caption="Manually register device to The Things Stack"
 />
 
-#### LoRaWAN Join Mode
+<rk-img
+  src="/assets/images/wisduo/rak811-module/quickstart/t_image_10.png"
+  width="100%"
+  caption="Device activation configuration"
+/>
+
+Then you need to put a unique **End device ID** and EUIs (**DevEUI** and **AppEUI**) as shown in Figure 15. Check if your module has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI.
+
+Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
+
+After putting all the details, you need to click **Network layer settings** to proceed to the next step.
+
+:::tip 📝 NOTE:
+
+It is advisable to use a meaningful End device ID, End device name, and End device description that will match your device purpose. The End device ID `rak-device` is for illustration purposes only.
+
+:::
+
+<rk-img
+  src="/assets/images/wisduo/rak811-module/quickstart/t_image_11.png"
+  width="100%"
+  caption="OTAA Device Information"
+/>
+
+Next step is to setup **Frequency plan**, compatible **Regional Parameter version**, and **LoRaWAN class** supported. Then you can click **Join settings**
+
+<rk-img
+  src="/assets/images/wisduo/rak811-module/quickstart/t_image_12.png"
+  width="100%"
+  caption="OTAA Configuration"
+/>
+
+The last step in the registration of a new OTAA end-device is the configuration of the **AppKey**. To get the AppKey, you must click the **generate button**. Then you need to click **Add end device** to finish your new device registration.
+
+<rk-img
+  src="/assets/images/wisduo/rak811-module/quickstart/t_image_13.png"
+  width="100%"
+  caption="OTAA AppKey generation and device registration"
+/>
+
+You should now be able to see the device on The Things Stack console after you fully registered your device as shown in Figure 18.
+
+:::tip 📝 NOTE:
+
+The **AppEUI**, **DevEUI** and **AppKey** are the parameters that you will need to activate your LoRaWAN end device via OTAA. The **AppKey** is hidden by default for security reasons, but you can easily show it by clicking the show button. You can also copy the parameters quickly using the copy button.
+
+The three OTAA parameters on The Things Stack device console are MSB by default. 
+
+These parameters are always accessible on the device console page as shown in Figure 18.
+:::
+
+<rk-img
+  src="/assets/images/wisduo/rak811-module/quickstart/t_image_14.png"
+  width="100%"
+  caption="OTAA device successfully registered to The Things Stack"
+/>
 
 
-The LoRaWAN specification defines that to join in a LoRaWAN network, each end-device has to be personalized and activated. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP). In OTAA, the previously personalized end-device is activated when is deployed or reset. On the other hand, in ABP, the personalization and activation are done as a single step. 
+#### RAK811 OTAA Configuration for The Things Stack
 
-
-Hence, this is referred to as the “**Join Mode**". LoRaWAN allows the OTAA mode and the ABP mode. In this section, the configuration process of these two modes is explained, both on the platform side and the node side.
-
-
-##### OTAA Mode
-
-###### Configure the OTAA Mode on the Platform
-
-As shown in the Figure 12, the default activation mode in TTN is the OTAA mode. Therefore, no further actions are required in the platform side. 
-
-###### Configure the OTAA Mode on the RAK811 module
-
-The RAK811 module supports a series of AT commands to configure its internal parameters and control the functionalities of the module. Physically, the module exposes a serial interface through the USB connector. 
-
-
-To set up the RAK811 module to join the TTN using OTAA, start by connecting the RAK811 module to the Computer (see Figure 1) and open the RAK Serial Port Tool. Wait for the communication to start. It is recommended to test the serial communication and verify the current configuration by sending either of these two AT commands:
+The RAK811 module supports a series of AT commands to configure its internal parameters and control the functionalities of the module. To set up the RAK811 module to join The Things Stack using OTAA, start by connecting the RAK811 module to the Computer (see Figure 1) and open the RAK Serial Port Tool. Wait for the communication to start. It is recommended to test the serial communication and verify the current configuration by sending either of these two AT commands:
 
 ```
 at+set_config=device:restart
@@ -234,8 +276,8 @@ at+version
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/3.command-response.png"
-  width="40%"
-  caption="at+version command response"
+  width="90%"
+  caption="AT Command response"
 />
 
 
@@ -244,9 +286,9 @@ As an example, these are the list of the parameters you need to configure in RAK
 - LoRa join mode: **OTAA**
 - LoRa class: **Class A**
 - LoRa region: **EU868** 
-- Device EUI: **5e9d1e0857cf25f1**
-- Application EUI: **5e9d1e0857cf25f1**
-- Application Key: **f921d50cd7d02ee3c5e6142154f274b2**
+- Device EUI: **1133557799224466**
+- Application EUI: **1000000000000009**
+- Application Key: **04FA4E626EF5CF227C969601176275C2**
 
 
 1. Set the LoRa join mode to OTAA.
@@ -273,31 +315,31 @@ at+set_config=lora:region:EU868
 4. Set the Device EUI.
 
 ```
-at+set_config=lora:dev_eui:5e9d1e0857cf25f1
+at+set_config=lora:dev_eui:1133557799224466
 ```
 
 5. Set the Application EUI.
 
 ```
-at+set_config=lora:app_eui:5e9d1e0857cf25f1
+at+set_config=lora:app_eui:1000000000000009
 ```
 
 6. Set the Application Key.
 
 ```
-at+set_config=lora:app_key:f921d50cd7d02ee3c5e6142154f274b2
+at+set_config=lora:app_key:04FA4E626EF5CF227C969601176275C2
 ```
 
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/14.lora-parameters.png"
-  width="40%"
+  width="90%"
   caption="Configuring LoRa Parameters"
 />
 
 :::tip 📝 NOTE:
 
-After configuring all the parameters, you need to reset your RAK811 Module for saving parameters.
+After configuring all the parameters, you need to reset your RAK811 Module for saving the parameters.
 
 :::
 
@@ -307,7 +349,7 @@ After configuring all the parameters, you need to reset your RAK811 Module for s
 at+join
 ```
 
-After 5 or 6 seconds, if the request was successfully received by a LoRa gateway, then you should see the messages shown in Figure 15.
+After 5 or 6 seconds, if the request is successfully received by a LoRa gateway, then you should see the messages shown in Figure 21.
 
 8. Try to send a message from the RAK811 module.
 
@@ -317,63 +359,89 @@ at+send=lora:2:1234567890
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/15.send-message.png"
-  width="40%"
+  width="90%"
   caption="OTAA Test Sample Data Sent via RAK Serial Port Tool"
 />
 
-You can see the data sent by the RAK811 module on the TTN platform as shown in Figure 16.
+You can see the data sent by the RAK811 module on The Things Stack platform as shown in Figure 22.
 
 
 <rk-img
-  src="/assets/images/wisduo/rak811-module/quickstart/16.message-received.png"
+  src="/assets/images/wisduo/rak811-module/quickstart/otaasend.png"
   width="100%"
-  caption="OTAA Test Sample Data Sent Viewed in TTN"
+  caption="OTAA Test Sample Data Sent Viewed in The Things Stack"
 />
 
 
-##### ABP Mode
+#### The Things Stack ABP Device Registration
 
-###### Configure the ABP mode on the Platform
-
-
-If the ABP mode is preferred by the user, then the TTN platform needs to be configured first accordingly. At TTN, once a device is created, you can select the “**SETTINGS**” section of the “**DEVICE**” and switch the “**Activation Method**”.
+To register an ABP device, you need to go to your application console and select the application where you want your device to be added. Then you need to click **+ Add end device** as shown in Figure 23.
 
 <rk-img
-  src="/assets/images/wisduo/rak811-module/quickstart/17.abp-mode.png"
+  src="/assets/images/wisduo/rak811-module/quickstart/t_image_8.png"
   width="100%"
-  caption="ABP Activation in TTN"
+  caption="Add end device"
 />
 
-* For ABP mode, the TTN parameters needed are the following:
+To register the module, you need to click first **Manually** then configure the activation method by selecting **Activation by personalization (ABP)**, compatible **LoRaWAN version** and click **Start** button as shown in Figures 24 and 25.
 
-  * **Device Address**
-  * **Network Session Key**
-  * **App Session Key**
+<rk-img
+  src="/assets/images/wisduo/rak811-module/quickstart/t_image_9.png"
+  width="100%"
+  caption="Add end device"
+/>
+
+<rk-img
+  src="/assets/images/wisduo/rak811-module/quickstart/image_1_abp.png"
+  width="100%"
+  caption="Manually register device to The Things Stack"
+/>
+
+At this step, you need to put a unique **End device ID** and **DevEUI** as shown in Figure 26. Check if your module has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI.
+
+Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
+
+After putting all the details, you need to click **Network layer settings** to proceed to the next step.
 
 :::tip 📝 NOTE:
-These fields can be left empty in the form and TTN will complete them with random values. In other cases, you can complete them with specific values.
+
+It is advisable to use a meaningful End device ID, End device name, and End device description that will match your device purpose. The End device ID `rak-device-abp` is for illustration purposes only.
+
 :::
 
-
 <rk-img
-  src="/assets/images/wisduo/rak811-module/quickstart/18.abp-parameters.png"
+  src="/assets/images/wisduo/rak811-module/quickstart/image_2_abp.png"
   width="100%"
-  caption="ABP Mode Parameters"
+  caption="Device Information"
 />
 
-The same as the OTAA form, you can leave these fields empty to allow TTN to generate random values or input the specific values that you want.
+Next step is to set up **Frequency plan**, compatible **Regional Parameter version** and **LoRaWAN class** supported. In an ABP device, you also need to generate **Device Address** and **NwkSKey** (Network Session Keys). Then you can click **Application layers settings**
 
 <rk-img
-  src="/assets/images/wisduo/rak811-module/quickstart/19.abp-mode-configuration.png"
+  src="/assets/images/wisduo/rak811-module/quickstart/image_3_abp.png"
   width="100%"
-  caption="ABP Mode Parameters"
+  caption="ABP Configuration in The Things Stack"
 />
 
+The last step in the registration of a new ABP end-device is the configuration of the **AppSKey**. To get the AppSKey, you must click the **generate button**. Then you need to click **Add end device** to finish your new device registration.
 
+<rk-img
+  src="/assets/images/wisduo/rak811-module/quickstart/image_4_abp.png"
+  width="100%"
+  caption="ABP Configuration in The Things Stack"
+/>
 
-###### Configure the ABP mode on the RAK811
+You should now be able to see the device on The Things Stack console after you fully registered your device as shown in Figure 29.
 
-To set up the RAK811 module to join the TTN using ABP, start by connecting the RAK811 module to the Computer (see Figure 1) and open the RAK Serial Port  Tool. Wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
+<rk-img
+  src="/assets/images/wisduo/rak811-module/quickstart/image_5_abp.png"
+  width="100%"
+  caption="RAK811 registered at The Things Stack"
+/>
+
+#### RAK811 ABP Configuration for The Things Stack
+
+To set up the RAK811 module to join The Things Stack using ABP, start by connecting the RAK811 module to the Computer (see Figure 1) and open the RAK Serial Port  Tool. It is recommended to test the serial communication by sending either of these two AT commands:
 
 ```
 at+set_config=device:restart
@@ -385,8 +453,8 @@ at+version
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/3.command-response.png"
-  width="40%"
-  caption="at+version command response"
+  width="90%"
+  caption="AT Command response"
 />
 
 As an example, these are the list of the parameters you need to configure in RAK811: 
@@ -394,9 +462,9 @@ As an example, these are the list of the parameters you need to configure in RAK
 - LoRa join mode: **ABP**
 - LoRa class: **Class A**
 - LoRa region: **EU868** 
-- Device address: **26011af9**
-- Network Session Key: **c280cb8d1df688bc18601a97025c5488**
-- Application Session Key: **4d42ec5caf97f03d833cdaf5003f69e1**
+- Device address: **260BDE80**
+- Network Session Key: **433C7A924F7F6947778FE821525F183A**
+- Application Session Key: **A585653A949C2B2D44B55E99E94CB533**
 
 
 
@@ -422,30 +490,30 @@ at+set_config=lora:region:EU868
 4. Set the Device Address.
 
 ```
-at+set_config=lora:dev_addr:26011af9
+at+set_config=lora:dev_addr:260BDE80
 ```
 
 5. Set the LoRa Network Session Key.
 
 ```
-at+set_config=lora:nwks_key:c280cb8d1df688bc18601a97025c5488
+at+set_config=lora:nwks_key:433C7A924F7F6947778FE821525F183A
 ```
 
 6. Set the LoRa Application Session Key.
 
 ```
-at+set_config=lora:apps_key:4d42ec5caf97f03d833cdaf5003f69e1
+at+set_config=lora:apps_key:A585653A949C2B2D44B55E99E94CB533
 ```
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/21.abp-at-commands.png"
-  width="40%"
+  width="90%"
   caption="AT Command for ABP LoRa parameters via RAK Serial Port Tool"
 />
 
 :::tip 📝 NOTE:
 
-After configuring all parameters, you need to reset RAK8111 Module for saving parameters.
+After configuring all parameters, you need to reset RAK811 Module for saving parameters.
 
 :::
 
@@ -462,19 +530,25 @@ By using the ABP mode in LoRaWAN, it doesn’t require to join a network before 
 
 :::
 
-8. Try to send a data from the RAK811 to TTN in ABP mode.
+8. Try to send a data from the RAK811 to The Things Network in ABP mode.
 
 ```
 at+send=lora:2:1234567890 
 ```
 
 <rk-img
-  src="/assets/images/wisduo/rak811-module/quickstart/22.abp-sending-message.png"
-  width="40%"
+  src="/assets/images/wisduo/rak811-module/quickstart/15.send-message.png"
+  width="90%"
   caption="ABP Test Sample Data Sent via RAK Serial Port Tool"
 />
 
-Then, go to the TTN Console to confirm that the message was properly received.
+You can see the data sent by the RAK811 module on the The Things Stack device console *Live data* section and the *Last seen* info should be few seconds ago.
+
+<rk-img
+  src="/assets/images/wisduo/rak811-module/quickstart/abpsend.png"
+  width="100%"
+  caption="OTAA Test Sample Data Sent Viewed in The Things Stack"
+/>
 
 ### Connecting with ChirpStack
 
@@ -487,7 +561,7 @@ In this section, it shows how to connect the RAK811 module to the ChirpStack pla
   caption="RAK811 Module in the Context of the ChirpStack Platform"
 />
 
-The ChirpStack or previously known as LoRaServer project provides open-source components for building LoRaWAN networks. Like the case of TTN, the RAK811 module is located in the periphery and will transmit the data to the backend servers through a LoRa gateway. Learn more about [ChirpStack](https://www.chirpstack.io/).
+The ChirpStack or previously known as LoRaServer project provides open-source components for building LoRaWAN networks. Like the case of The Things Stack, the RAK811 module is located in the periphery and will transmit the data to the backend servers through a LoRa gateway. Learn more about [ChirpStack](https://www.chirpstack.io/).
 
 :::tip 📝 NOTE:
 
@@ -515,7 +589,7 @@ Login to the ChirpStack server using your account and password.
 
 #### Create a new Application
 
-Go to the Application section as shown in the Figure 24.
+Go to the Application section as shown in the Figure 35.
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/24.chirpstack.png"
@@ -523,7 +597,7 @@ Go to the Application section as shown in the Figure 24.
   caption="Application Section"
 />
 
-By default, you should create a new application, although you can reuse the existing ones. For this setup, create a new Application by clicking on the “**CREATE**” button, and fill the required parameters as shown in the Figures 25 and 26.
+By default, you should create a new application, although you can reuse the existing ones. For this setup, create a new Application by clicking on the “**CREATE**” button, and fill the required parameters as shown in the Figures 36 and 37.
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/25.new-application.png"
@@ -547,7 +621,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 
 <b>Register a New Device</b>
 
-1. Choose the **Application** created in the previous step, then select the **DEVICES** tab as shown in Figures 27 and 28.
+1. Choose the **Application** created in the previous step, then select the **DEVICES** tab as shown in Figures 38 and 39.
 
 2. Once done, click “**+ CREATE**”.
 
@@ -585,7 +659,7 @@ Fill the parameters requested:
 
 * **Device name and Device description**: These are descriptive texts about your device. 
 
-* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in Figure 31. You can also add a specific Device EUI directly in the form. 
+* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in Figure 42. You can also add a specific Device EUI directly in the form. 
 
 * **Device Profile**: 
   * If you want to join in OTAA mode, select “**DeviceProfile_OTAA**”.
@@ -608,7 +682,7 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
 ###### Configure the OTAA Mode on the Platform
 
 
-1. If you have selected “**DeviceProfile_OTAA**” as shown in Figure 32, then after the device is created, an Application Key must be also created for this device. 
+1. If you have selected “**DeviceProfile_OTAA**” as shown in Figure 43, then after the device is created, an Application Key must be also created for this device. 
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/32.otaa.png"
@@ -616,7 +690,7 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
   caption="Chirpstack OTAA Activation"
 />
 
-2. A previously created Application Key can be entered here, or a new one can be generated automatically by clicking the icon highlighted in red in Figure 33:
+2. A previously created Application Key can be entered here, or a new one can be generated automatically by clicking the icon highlighted in red in Figure 44:
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/33.otaa-set-device-keys.png"
@@ -626,7 +700,7 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
 
 3. Once the Application Key is added in the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button. 
 
-* As shown in Figure 34, a new device should be listed in the DEVICES tab. The most important parameters, such as the Device EUI are shown in the summary.
+* As shown in Figure 45, a new device should be listed in the DEVICES tab. The most important parameters, such as the Device EUI are shown in the summary.
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/34.set-device-eui.png"
@@ -634,7 +708,7 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
   caption="Chirpstack OTAA List of Device in the Device Tab"
 />
 
-4. To end the process, it is a good practice to review that the Application Key is properly associated with this device. The Application Key can be verified in the **KEYS(OTAA)** tab as shown in Figure 35.
+4. To end the process, it is a good practice to review that the Application Key is properly associated with this device. The Application Key can be verified in the **KEYS(OTAA)** tab as shown in Figure 46.
 
 
 <rk-img
@@ -666,7 +740,7 @@ at+version
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/3.command-response.png"
-  width="40%"
+  width="90%"
   caption="at+version command response"
 />
 
@@ -730,7 +804,7 @@ at+set_config=lora:app_key:f921d50cd7d02ee3c5e6142154f274b2
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/37.cofigure-lora-parameters.png"
-  width="40%"
+  width="45%"
   caption="Chirpstack OTAA configuration via RAK Serial Port Tool"
 />
 
@@ -746,7 +820,7 @@ at+join
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/38.otaa-join-chirpstack.png"
-  width="40%"
+  width="45%"
   caption="Chirpstack OTAA configuration via RAK Serial Port Tool"
 />
 
@@ -766,11 +840,11 @@ at+send=lora:2:1234567890
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/40.send-message-chirpstack.png"
-  width="40%"
+  width="45%"
   caption="Send a LoRaWAN Message via RAK Serial Port Tool"
 />
 
-- On the ChirpStack platform, you should also see the messages in the LORAWAN FRAMES tab as shown in Figure 41. By convention, messages sent from nodes to gateways are considered as **Uplinks** while messages sent by gateways to nodes are considered as **Downlinks**. 
+- On the ChirpStack platform, you should also see the messages in the LORAWAN FRAMES tab as shown in Figure 52. By convention, messages sent from nodes to gateways are considered as **Uplinks** while messages sent by gateways to nodes are considered as **Downlinks**. 
 
 
 <rk-img
@@ -787,7 +861,7 @@ This concludes the exercise to send data in the OTAA mode.
 
 ###### Configure the ABP Mode on the Platform
 
-During the registration of a new device, if you select “**DeviceProfile_ABP**”, as shown in Figure 42, then the ChirpStack platform will assume that this device will join to the LoRaWAN network using the ABP mode. 
+During the registration of a new device, if you select “**DeviceProfile_ABP**”, as shown in Figure 53, then the ChirpStack platform will assume that this device will join to the LoRaWAN network using the ABP mode. 
 
 
 :::tip 📝 NOTE:
@@ -835,18 +909,18 @@ at+version
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/3.command-response.png"
-  width="40%"
+  width="90%"
   caption="at+version command response"
 />
 
 As an example, these are the list of the parameters you need to configure in RAK811: 
 
-•	LoRa join mode: **ABP**
-•	LoRa class: **Class A**
-•	LoRa region: **EU868** 
-•	Device address: **26011af9**
-•	Network Session Key: **c280cb8d1df688bc18601a97025c5488**
-•	Application Session Key: **4d42ec5caf97f03d833cdaf5003f69e1**
+- LoRa join mode: **ABP**
+- LoRa class: **Class A**
+- LoRa region: **EU868** 
+- Device address: **26011af9**
+- Network Session Key: **c280cb8d1df688bc18601a97025c5488**
+- Application Session Key: **4d42ec5caf97f03d833cdaf5003f69e1**
 
 
 1. Set LoRa join mode to ABP.
@@ -890,7 +964,7 @@ at+set_config=lora:apps_key:4d42ec5caf97f03d833cdaf5003f69e1
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/38.configure-abp-parameters.png"
-  width="40%"
+  width="45%"
   caption="Chirpstack ABP Parameters Configuration via RAK Serial Port Tool"
 />
 
@@ -921,7 +995,7 @@ at+send=lora:2:1234567890
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/45.data-sent-abp.png"
-  width="40%"
+  width="45%"
   caption="Chirpstack Sample Data Sent via RAK Serial Port Tool"
 />
 
@@ -941,7 +1015,7 @@ at+set_config=lora:work_mode:1
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/46.lora-p2p.png"
-  width="40%"
+  width="45%"
   caption="P2P Initialization"
 />
 
@@ -977,7 +1051,7 @@ at+set_config=lorap2p:869525000:7:0:1:5:5
 
 <rk-img
   src="/assets/images/wisduo/rak811-module/quickstart/47.configuring-p2p.png"
-  width="40%"
+  width="45%"
   caption="Configuring P2P in both RAK811 Module"
 />
 
@@ -1020,7 +1094,7 @@ In the following sections, two (2) options for flashing new firmware in a RAK811
 
 #### Firmware Upgrade Through DAPLink
 
-Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool) guide in the Accesories Category.
+Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool) guide in the Accessories Category.
 
 #### Firmware Upgrade Through UART1
 
@@ -1028,11 +1102,11 @@ Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKD
 
 Refer to the table for the minimum hardware and software required to perform the firmware upgrade using J-Link.
 
-| Hardware/Software | Requirement |
-| --- | --- |
-|  Computer |  A Windows/Ubuntu/Mac computer |
-|  Firmware File | Bin firmware file downloaded from the website|
-| Others  |  A USB to TTL module |
+| Hardware/Software | Requirement                                   |
+| ----------------- | --------------------------------------------- |
+| Computer          | A Windows/Ubuntu/Mac computer                 |
+| Firmware File     | Bin firmware file downloaded from the website |
+| Others            | A USB to TTL module                           |
 
 
 
@@ -1041,7 +1115,7 @@ Refer to the table for the minimum hardware and software required to perform the
 Execute the following procedure to upgrade the firmware in Device Firmware Upgrade (DFU) mode through the UART1 interface.
 
 
-1.	Download the latest application firmware of the RAK811.
+1.	Download the latest application firmware of the RAK811 that can be found on the datasheet.
 
     - [RAK811 Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#firmware-os)
 

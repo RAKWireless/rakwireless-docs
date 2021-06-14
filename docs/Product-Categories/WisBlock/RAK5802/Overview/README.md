@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak5802/overview/RAK5802_home.png
 rak_desc: RAK5802 is a WisBlock Interface module which extends the WisBlock system with an industry standard RS485 to serial converter. It supports one RS485 port and voltage supply for connected sensors.
 rak_grp: [wisblock, wisinterface]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK5802
@@ -13,6 +13,7 @@ tags:
 
 Thank you for choosing **RAK5802 WisBlock RS485 Interface Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK5802 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->

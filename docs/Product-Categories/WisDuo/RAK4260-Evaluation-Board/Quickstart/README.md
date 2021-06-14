@@ -482,7 +482,7 @@ These fields can be left empty in the form and TTN will complete them with rando
 
 ### Connecting to ChirpStack
 
-This section shows how to connect the RAK4260 Evaluation Board to the ChirpStack platform. As described in the ChripStack website:
+This section shows how to connect the RAK4260 Evaluation Board to the ChirpStack platform. As described in the ChirpStack website:
 
 “ChirpStack provides open-source components for LoRaWAN networks. Together they form a ready-to-use solution including an user-friendly web-interface for device management and APIs for integration. The modular architecture makes it possible to integrate within existing infrastructures. All components are licensed under the MIT license and can be used for commercial purposes.”
 

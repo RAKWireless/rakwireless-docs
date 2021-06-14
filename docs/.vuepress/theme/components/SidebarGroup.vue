@@ -22,9 +22,9 @@
       <span class="float-left" style="width:90%">{{ item.title }}</span>
       <span v-if="collapsable" class="arrow" :class="open ? 'down' : 'right'" />
       <!-- Temporarily disabled -->
-      <!-- <div v-if="item.download" class="float-right">
+      <div v-if="item.download" class="float-right">
         <q-btn icon="fas fa-download" size="xs" @click="onDownload(item.path)" round flat dense />
-      </div> -->
+      </div>
     </RouterLink>
 
     <p v-else class="sidebar-heading" :class="{ open }" @click="$emit('toggle')">

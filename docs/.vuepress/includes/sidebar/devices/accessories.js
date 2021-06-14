@@ -132,6 +132,24 @@ module.exports = {
       sidebarDepth: 4
     }
   ],
+  '/Product-Categories/Accessories/Ethernet-Cable-Gland/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/Ethernet-Cable-Gland/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/Ethernet-Cable-Gland/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
 
 
   // antennas

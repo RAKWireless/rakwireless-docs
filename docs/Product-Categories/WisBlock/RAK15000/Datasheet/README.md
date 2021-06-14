@@ -3,7 +3,7 @@ tags:
   - datasheet
   - wisblock
   - RAK15000
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -18,7 +18,7 @@ next: false
 
 ### Description
 
-The RAK15000 WisBlock EEPROM module, part of the RAKwireless Wisblock series, is a serial EEPROM module with an I2C interface. Designed to work at low power mode, the standby average consumption is lower than 3&nbsp;µA ( VCC = 5.5&nbsp;V ). The RAK15000 uses Microchip AT24CM02 that provides 2,097,152 bits of Serial Electrically Erasable and Programmable Read-Only Memory (EEPROM), organized as 262,144 words of 8 bits each.
+The RAK15000 WisBlock EEPROM module, part of the RAKwireless WisBlock series, is a serial EEPROM module with an I2C interface. Designed to work at low power mode, the standby average consumption is lower than 3&nbsp;µA ( VCC = 5.5&nbsp;V ). The RAK15000 uses Microchip AT24CM02 that provides 2,097,152 bits of Serial Electrically Erasable and Programmable Read-Only Memory (EEPROM), organized as 262,144 words of 8 bits each.
 
 ### Features
 
@@ -43,7 +43,7 @@ The RAK15000 WisBlock EEPROM module, part of the RAKwireless Wisblock series, is
 
 #### Mounting
 
-The RAK15000 module can be mounted on slots: A, B, C, or D of the WisBase board. Figure 2 shows the mounting mechanism of the RAK15000 on a WisBase module, such as the RAK5005-O.
+The RAK15000 module can be mounted on slots: A, B, C, or D of the WisBlock Base board. Figure 2 shows the mounting mechanism of the RAK15000 on a WisBlock Base module, such as the RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak15000/datasheet/RAK15000_mounting.png"
@@ -62,7 +62,7 @@ The hardware specification is categorized into five parts that cover the chipset
 
 #### Pin Definition
 
-The RAK15000 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK15000 module to be mounted on a WisBlock baseboard, such as the RAK5005-O. The pin order of the connector and the Pinout Definition is shown in Figure 3. 
+The RAK15000 WisBlock Sensor module comprises a standard 24 pin WisConnector. The IO WisConnector allows the RAK15000 module to be mounted on a WisBlock baseboard, such as the RAK5005-O. The pin order of the WisConnector and the Pinout Definition is shown in Figure 3. 
 
 :::tip 📝 NOTE:
 Only the I2C related pins, VDD, and GND are connected to this module.    

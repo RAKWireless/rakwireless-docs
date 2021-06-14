@@ -329,6 +329,12 @@ at+set_config=device:sleep:0\r\n
 OK Wake Up
 ```
 
+:::tip 📝 NOTE: 
+
+During sleep, Pin 22 (USART1_RX) is automatically configured as a wake up pin and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on this RX pin.
+
+:::
+
 <br>
 
 5. <b>at+get_config=device:status</b>
@@ -1735,7 +1741,7 @@ Not all pins of RAK4600 module are exposed on the RAK4600 Breakout board header 
 
 1. **About the UART Pin**: 
      - Pin 22 (RX) and Pin 21 (TX) are reserved for UART1.
-     - During sleep, Pin 22 (RX) is configured as external interrupt mode, an internal pull-down resistor, and rising edge trigger wake-up, respectively.
+     - During sleep, Pin 22 (USART1_RX) is automatically configured as a wake up pin and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on this RX pin.
    
 2. **About the SWD debug Pin**: Pin 37 (SWDIO) and Pin 38 (SWCLK) are used for SWD debug port.
 

@@ -3,7 +3,7 @@ tags:
   - datasheet
   - wisblock
   - RAK12003
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 

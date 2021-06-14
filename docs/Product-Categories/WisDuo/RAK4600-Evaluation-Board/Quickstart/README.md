@@ -211,7 +211,7 @@ Before using RAK4600 on Arduino IDE you need to flash a new bootloader using RAK
 Please refer to [RAKDAP1 Flash and Debug Tool](../../../../../Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool).
 -->
 
-Please refer to <a href="/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool" target="_blank">RAKDAP1 Flash and Debug Tool</a>
+Refer to <a href="/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool" target="_blank">RAKDAP1 Flash and Debug Tool</a>.
 
 2. Check pyOCD installation
 
@@ -241,9 +241,9 @@ Before upload any Arduino example make sure that the RAK4600 is on DFU mode.
 2. Press the reset button and then disconnect RX pin from GND. Now the RAK4600 is on DFU mode.
 :::
 
-## Connecting to The Things Network (TTN)
+## Connecting to The Things Stack (TTN V3)
 
-Please refer to <a href="/Product-Categories/WisDuo/RAK4600-Module/Quickstart/#connecting-to-the-things-network-ttn" target="_blank">Connecting to The Things Network (TTN)</a>
+Refer to <a href="/Product-Categories/WisDuo/RAK4600-Module/Quickstart/#connecting-to-the-things-stack-ttn-v3" target="_blank">Connecting to The Things Network (TTN)</a>.
 
 <!--
 Please refer to [Connecting to The Things Network (TTN)](/Product-Categories/WisDuo/RAK4600-Module/Quick-Start-Guide/Quickstart/#connecting-to-the-things-network-ttn)
@@ -579,7 +579,7 @@ Now, let’s try to send a data from the RAK4600 Evaluation Board to TTN in ABP 
 -->
 ## Connecting with Chirpstack
 
-Please refer to <a href="/Product-Categories/WisDuo/RAK4600-Module/Quickstart/#connecting-with-chirpstack" target="_blank">Connecting with ChirpStack</a>
+Refer to <a href="/Product-Categories/WisDuo/RAK4600-Module/Quickstart/#connecting-with-chirpstack" target="_blank">Connecting with ChirpStack</a>.
 
 
 <!--
@@ -936,6 +936,10 @@ at+send=lora:2:123456789
 />
 -->
 
+
+## LoRa P2P
+Refer to <a href="/Product-Categories/WisDuo/RAK4600-Module/Quickstart/#lora-p2p-mode" target="_blank">LoRa P2P guide.</a>
+
 ## Miscellaneous
 
 ### RAK5005 Core Module Slot Connection to RAK4601
@@ -1011,7 +1015,7 @@ If you want to get a pre-compiled firmware instead of compiling the source code 
 
 #### Flash the firmware using DAPLink and RAKDAP
 
-Please refer to <a href="../../../../../Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool/" target="_blank">RAKDAP1 Flash and Debug Tool</a>
+Refer to <a href="../../../../../Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool/" target="_blank">RAKDAP1 Flash and Debug Tool</a>.
 
 ### Upgrading Firmware through DFU using BLE
 

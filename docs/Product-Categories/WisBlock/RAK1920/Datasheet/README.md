@@ -3,7 +3,7 @@ tags:
   - datasheet
   - wisblock
   - RAK1920
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 

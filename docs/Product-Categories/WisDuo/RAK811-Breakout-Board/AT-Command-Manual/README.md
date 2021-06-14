@@ -263,6 +263,13 @@ at+set_config=device:sleep:0\r\n
 OK Wake Up
 ```
 
+:::tip 📝 NOTE: 
+
+During sleep, Pin 7 (RX1) and Pin 26 (RX3) are automatically configured as wake up pins and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
+
+:::
+
+
 <br>
 
 5. <b>at+get_config=device:status</b>
@@ -1861,7 +1868,7 @@ Not all pins of RAK811 module are exposed on the RAK811 Breakout board header co
 
      - Pin 7 (RX1) and Pin 6 (TX1) are reserved for UART1.
      - Pin 26 (RX3) and Pin 25 (TX3) are reserved for UART3.
-     - During sleep, Pin 7 (RX1) and Pin 26 (RX3) are configured as external interrupt mode, internal pull-down resistor, and bilateral edge trigger wake-up.
+     - During sleep, Pin 7 (RX1) and Pin 26 (RX3) are automatically configured as wake up pins and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
 
 2. **About the SWD debug Pin**: Pin 10 (SWDIO) and Pin 13 (SWCLK) are used for SWD connection.
 
