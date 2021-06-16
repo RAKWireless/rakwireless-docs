@@ -3,7 +3,7 @@ rak_img: /assets/images/wisgate/rak7268/datasheet/RAK7268.png
 rak_desc: The RAK7268 WisGate Edge Lite 2 is a full 8-channel indoor gateway, based on the LoRaWAN protocol, with built-in Ethernet connectivity for a straightforward setup. Additionally, it supports LTE uplink communication connections.
 rak_grp: [wisgate, edge]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisgate
     - RAK7268
@@ -14,6 +14,7 @@ tags:
 
 Thank you for choosing **RAK7268 WisGate Edge Lite 2** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [Quickstart](../Quickstart/)
 * [Datasheet](../Datasheet/)
 
 ## Product Description

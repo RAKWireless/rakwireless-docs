@@ -4,6 +4,7 @@ next: false
 tags:
   - RAKBox-B4
   - Installation Guide
+rak_desc: In this guide, the process of assembling and mounting your RAKBox-B4 will be shown step by step. Strict adherence to the steps guarantees a secured and durable casing.
 ---
 
 # Installation Guide

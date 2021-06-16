@@ -1,4 +1,5 @@
 ---
+rak_desc: Contains instructions and tutorials in installing and deploying your RAK18000. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
 tags:
   - quickstart
   - wisblock
@@ -49,7 +50,7 @@ For more information about RAK18000, refer to the [Datasheet](../Datasheet/).
 RAK18000 module can be connected on the IO slot of WisBlock Base to communicate with the WisBlock Core. Also, always secure the connection of the WisBlock module by using the compatible screws.
 
 <rk-img
-  src="/assets/images/wisblock/RAK18000/quickstart/RAK18000_assembly.png"
+  src="/assets/images/wisblock/rak18000/quickstart/rak18000_assembly.png"
   width="70%"
   caption="RAK18000 connection to WisBlock Base"
 />
@@ -61,7 +62,7 @@ RAK18000 module can be connected on the IO slot of WisBlock Base to communicate 
 As shown in **Figure 2**, the location for the IO slot is properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the module.
 
 <rk-img
-  src="/assets/images/wisblock/RAK18000/quickstart/RAK18000_mounting.png"
+  src="/assets/images/wisblock/rak18000/quickstart/RAK18000_mounting.png"
   width="70%"
   caption="RAK18000 connection to WisBlock Base"
 />
@@ -73,7 +74,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 1. First, remove the screws.  
 
 <rk-img
-  src="/assets/images/wisblock/RAK18000/quickstart/16.removing-screws.png"
+  src="/assets/images/wisblock/rak18000/quickstart/16.removing-screws.png"
   width="70%"
   caption="Removing screws from the WisBlock module"
 />
@@ -81,7 +82,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 2. Once the screws are removed, check the silkscreen of the module to find the correct location where force can be applied.
 
 <rk-img
-  src="/assets/images/wisblock/RAK18000/quickstart/17.detaching-silkscreen.png"
+  src="/assets/images/wisblock/rak18000/quickstart/17.detaching-silkscreen.png"
   width="70%"
   caption="Detaching silkscreen on the WisBlock module"
 />
@@ -89,7 +90,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 3. Apply force to the module at the position of the connector, as shown in **Figure 5**, to detach the module from the baseboard.
 
 <rk-img
-  src="/assets/images/wisblock/RAK18000/quickstart/18.detaching-module.png"
+  src="/assets/images/wisblock/rak18000/quickstart/18.detaching-module.png"
   width="70%"
   caption="Applying even forces on the proper location of a WisBlock module"
 />
@@ -114,7 +115,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
 **Using RAK4631 WisBlock Core**
 
 <rk-img
-  src="/assets/images/wisblock/RAK18000/quickstart/rak4631_board.png"
+  src="/assets/images/wisblock/rak18000/quickstart/rak4631_board.png"
   width="100%"
   caption="Selecting RAK4631 as WisBlock Core"
 />
@@ -122,7 +123,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
 **Using RAK11200 WisBlock Core**
 
 <rk-img
-  src="/assets/images/wisblock/RAK18000/quickstart/rak11200_board.png"
+  src="/assets/images/wisblock/rak18000/quickstart/rak11200_board.png"
   width="100%"
   caption="Selecting RAK11200 as WisBlock Core"
 />
@@ -134,7 +135,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
 Sample code for [RAK4631](https://github.com/RAKWireless/WisBlock/tree/6a8b314f979f6a0c316b38b309d9fc6cd5c9a077/examples/RAK4630/sensors/RAK18000_Stereo) 
 
 <rk-img
-  src="/assets/images/wisblock/RAK18000/quickstart/rak4631_example.png"
+  src="/assets/images/wisblock/rak18000/quickstart/rak4631_example.png"
   width="100%"
   caption="Opening RAK18000 example code for RAK4631 WisBlock Core"
 />
@@ -144,7 +145,7 @@ Sample code for [RAK4631](https://github.com/RAKWireless/WisBlock/tree/6a8b314f9
 Sample code for [RAK11200](https://github.com/RAKWireless/WisBlock/tree/6a8b314f979f6a0c316b38b309d9fc6cd5c9a077/examples/RAK11200/IO/RAK18000_Stereo)
 
 <rk-img
-  src="/assets/images/wisblock/RAK18000/quickstart/rak11200_example.png"
+  src="/assets/images/wisblock/rak18000/quickstart/rak11200_example.png"
   width="100%"
   caption="Opening RAK18000 example code for RAK11200 WisBlock Core"
 />
@@ -152,7 +153,7 @@ Sample code for [RAK11200](https://github.com/RAKWireless/WisBlock/tree/6a8b314f
 3. Open the example code as shown in **Figure 10**.
 
 <rk-img
-  src="/assets/images/wisblock/RAK18000/quickstart/rak18000_code.png"
+  src="/assets/images/wisblock/rak18000/quickstart/rak18000_code.png"
   width="100%"
   caption="Installing the compatible library for RAK18000 Module"
 />
@@ -160,13 +161,13 @@ Sample code for [RAK11200](https://github.com/RAKWireless/WisBlock/tree/6a8b314f
 4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
 
 <rk-img
-  src="/assets/images/wisblock/RAK18000/quickstart/rak18000_select_port.png"
+  src="/assets/images/wisblock/rak18000/quickstart/rak18000_select_port.png"
   width="100%"
   caption="Selecting the correct Serial Port"
 />
 
 <rk-img
-  src="/assets/images/wisblock/RAK18000/quickstart/rak18000_upload.png"
+  src="/assets/images/wisblock/rak18000/quickstart/rak18000_upload.png"
   width="100%"
   caption="Uploading the RAK18000 example code"
 />
@@ -174,7 +175,7 @@ Sample code for [RAK11200](https://github.com/RAKWireless/WisBlock/tree/6a8b314f
 5. When you successfully uploaded the example sketch, open the Serial Plotter of the Arduino IDE to see the sensor's reading logs. To test the sound detection, you can download a sound generating app on your smartphone and sweep frequencies from 1000&nbsp;Hz to 10000&nbsp;Hz. If you see the logs, as shown in **Figure 13**, then your RAK18000 is properly communicating to the WisBlock core.
 
 <rk-img
-  src="/assets/images/wisblock/RAK18000/quickstart/rak18000_logs.png"
+  src="/assets/images/wisblock/rak18000/quickstart/rak18000_logs.png"
   width="100%"
   caption="RAK18000 audio data logs"
 />

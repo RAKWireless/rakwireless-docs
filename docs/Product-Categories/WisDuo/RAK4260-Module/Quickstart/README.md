@@ -1,4 +1,5 @@
 ---
+rak_desc: Contains instructions and tutorials in installing and deploying your RAK4260 Module. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module. 
 prev: ../Overview/
 next: ../Datasheet/
 tags:
@@ -29,7 +30,6 @@ Before going through the quick start guide of RAK4260 WisDuo LPWAN Module, make 
 2. [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 3. [Atmel Studio](https://www.microchip.com/mplab/microchip-studio)
 4. [Sample Code](https://github.com/RAKWireless/RAK4260-LoRaNode-demo)
-
 
 ## Product Configuration
 
@@ -108,9 +108,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
   caption="Application Section"
 />
 
-
 2. Click the “**add application**” button.
-
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/7.adding_application.png"

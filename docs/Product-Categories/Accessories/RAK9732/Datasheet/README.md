@@ -4,6 +4,7 @@ next: false
 tags:
     - RAK9732
     - datasheet
+rak_desc:  Covers the comprehensive information of your RAK9732 Pulsar Cable LMR400 to help you in using it. This information includes technical specifications and characteristics.
 ---
 
 # Pulsar Cable LMR400 Datasheet

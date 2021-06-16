@@ -5,6 +5,7 @@ tags:
   - RAK2013
 prev: ../Overview/
 next: false
+rak_desc: Covers the comprehensive information of your RAK2013 WisLink Cellular Pi HAT to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 ---
 
 # RAK2013 WisLink Cellular Pi HAT Datasheet

@@ -5,6 +5,7 @@ tags:
   - AT Command Manual
   - wistrio
   - RAK7205-5205
+rak_desc: For an easier experience with your  RAK7205 LPWAN Tracker, a comprehensive list of commands in configuring your device is provided.
 ---
 
 # AT Command Manual

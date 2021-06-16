@@ -1,4 +1,5 @@
 ---
+rak_desc: Covers the comprehensive information of your RAK14000 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 prev: ../Overview/
 next: false
 tags:

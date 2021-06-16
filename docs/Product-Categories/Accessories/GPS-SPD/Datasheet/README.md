@@ -5,6 +5,7 @@ tags:
   - LA-GT2500 Z5N1-4
   - GPS SPD
   - datasheet
+rak_desc:  Covers the comprehensive information of your GPS SPD to help you in using it. This information includes technical specifications, characteristics, and requirements.
 ---
 
 # GPS SPD Datasheet

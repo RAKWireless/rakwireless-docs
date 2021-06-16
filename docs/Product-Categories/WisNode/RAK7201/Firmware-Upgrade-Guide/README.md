@@ -1,4 +1,5 @@
 ---
+rak_desc: A step-by-step guide in installing and upgrading the latest firmware of your TAK7201. With this guide, you can ensure that your LoRaWAN Module is always updated, and you can also use this to upload your custom firmware.
 prev: ../AT-Command-Manual/
 next: false
 tags:

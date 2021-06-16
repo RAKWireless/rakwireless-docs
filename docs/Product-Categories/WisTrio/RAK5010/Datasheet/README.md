@@ -5,6 +5,7 @@ tags:
   - datasheet
   - wistrio
   - RAK5010
+rak_desc: Covers the comprehensive information of your RAK5010 WisTrio NB-IoT Tracker Pro to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 ---
 
 # RAK5010 WisTrio NB-IoT Tracker Pro Datasheet

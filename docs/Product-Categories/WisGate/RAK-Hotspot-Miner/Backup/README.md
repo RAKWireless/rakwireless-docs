@@ -1,4 +1,5 @@
 ---
+rak_desc: Guides you on how to back up the files from your RAK Hotspot Miner to either macOS or Windows OS and also, on how to restore images. With these backup tools, it lessens the hassle of saving the SD Card files of your LoRaWAN Gateway.
 next: ../Troubleshooting/
 prev: ../Quickstart/
 tags:

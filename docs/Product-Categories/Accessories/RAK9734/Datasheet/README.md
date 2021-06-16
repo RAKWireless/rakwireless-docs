@@ -4,6 +4,7 @@ next: false
 tags:
     - datasheet
     - RAK9734
+rak_desc:  Covers the comprehensive information of your RAK9734 Pulsar Cable LMR400 to help you in using it. This information includes technical specifications and characteristics.
 ---
 
 # Pulsar Cable LMR400 Datasheet

@@ -1,9 +1,10 @@
 ---
+rak_desc: Covers the comprehensive information of your RAK7268 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 tags:
   - datasheet
   - wisgate
   - RAK7268
-prev: ../Overview/
+prev: ../Quickstart/
 next: false 
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268RAK7268C_CE_Cert.zip]

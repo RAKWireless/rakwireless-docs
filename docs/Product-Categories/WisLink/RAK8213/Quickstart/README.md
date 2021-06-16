@@ -3,6 +3,7 @@ prev: ../Overview/
 next: ../Datasheet/
 tags:
   - RAK8213
+rak_desc: Contains instructions and tutorials in installing and deploying your RAK8213 WisLink Cellular mPCIe. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. 
 ---
 
 # Quick Start Guide

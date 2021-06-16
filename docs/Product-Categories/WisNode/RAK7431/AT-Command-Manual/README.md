@@ -1,4 +1,5 @@
 ---
+rak_desc: For an easier experience with your LoRaWAN Module, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the RAK7431. 
 prev: ../Datasheet/
 next: false
 tags:
@@ -17,17 +18,17 @@ This document applies to Modbus RS485 to LoRaWAN® Bridge products. The supporte
 ### AT Command Syntax
 
 In general, the AT Command for the RAK7431 start with `AT` or `at` and ends with `<CR> <LF>`.
-* At commands can be divided into:
+* AT commands can be divided into:
     * **Reading commands** - read the configuration or status of the device, which is in the format of: `AT+<x>`
     * **Write commands** - write/modify the device configuration, which is in the format of: `AT+<x>=<m>:<n>`
     The command name and parameters are separated by "**=**". If there are multiple parameters, the parameters are separated by "**:**"
     * **Test commands** - is the test command executable, which is in the format of: `AT+<x>=?`
 
-| Condition| Response|
-|--------------------------------|------------------------------|
-|Normal response with information|`<Response><CR><LF>OK<CR><LF>`|
-|Normal response|`OK<CR><LF>`|
-|Response when an error occurs|`ERROR <Error code>:<Error packet><CR><LF>`|
+| Condition                        | Response                                    |
+| -------------------------------- | ------------------------------------------- |
+| Normal response with information | `<Response><CR><LF>OK<CR><LF>`              |
+| Normal response                  | `OK<CR><LF>`                                |
+| Response when an error occurs    | `ERROR <Error code>:<Error packet><CR><LF>` |
 
 ::: tip 📝 NOTE
 AT commands are not case sensitive.
@@ -37,24 +38,24 @@ AT commands are not case sensitive.
 
 The devices are equipped with a standard USB interface for configuring the AT commands. The serial parameters are as follows:
 
-| Parameter  | Value |
-|------------|-------|
-|Baud rate   |115200 |
-|Data bit    |  8    |
-|Stop bit    |  1    |
-|Verification|  No   |
+| Parameter    | Value  |
+| ------------ | ------ |
+| Baud rate    | 115200 |
+| Data bit     | 8      |
+| Stop bit     | 1      |
+| Verification | No     |
 
 ### Common Errors
 
-| Error Code | Description |
-|------------|-------|
-|ERROR 1     |Unsupported command|
-|ERROR 2     |Syntax error|
-|ERROR 3     |Storage failure|
-|ERROR 4     |System busy|
-|ERROR 5     |Parameter format / number error|
-|ERROR 6     |Insufficient resources|
-|ERROR 7     |Parameter out of valid range|
+| Error Code | Description                     |
+| ---------- | ------------------------------- |
+| ERROR 1    | Unsupported command             |
+| ERROR 2    | Syntax error                    |
+| ERROR 3    | Storage failure                 |
+| ERROR 4    | System busy                     |
+| ERROR 5    | Parameter format / number error |
+| ERROR 6    | Insufficient resources          |
+| ERROR 7    | Parameter out of valid range    |
 
 ## LoRaWAN Commands
 
@@ -62,190 +63,190 @@ The devices are equipped with a standard USB interface for configuring the AT co
 
 This command reads or modifies the LoRaWAN Device EUI. The command takes effect after restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read |`AT+DEVEUI`| `<dev_eui>` <br> `OK`|
-|Write|`AT+DEVEUI=<device_eui>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+DEVEUI=?`|`OK`|
+| Operation | AT Command               | Response                                                                                             |
+| --------- | ------------------------ | ---------------------------------------------------------------------------------------------------- |
+| Read      | `AT+DEVEUI`              | `<dev_eui>` <br> `OK`                                                                                |
+| Write     | `AT+DEVEUI=<device_eui>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test      | `AT+DEVEUI=?`            | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**dev_eui** |**Device EUI**:Hexadecimal characters, 16 bytes in length|
+| Parameter   | Information                                               |
+| ----------- | --------------------------------------------------------- |
+| **dev_eui** | **Device EUI**:Hexadecimal characters, 16 bytes in length |
 
 2. <b>AT+REGION</b>
 
 This command reads or modifies the Working Frequency Region/Band of the device. It will take effect after restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read |`AT+REGION`| `<region>` <br> `OK`|
-|Write|`AT+REGION=<region>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+REGION=?`|`OK`|
+| Operation | AT Command           | Response                                                                                             |
+| --------- | -------------------- | ---------------------------------------------------------------------------------------------------- |
+| Read      | `AT+REGION`          | `<region>` <br> `OK`                                                                                 |
+| Write     | `AT+REGION=<region>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test      | `AT+REGION=?`        | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**region** |**Supports frequency bands:** EU433, CN470, CN470ALI, RU864, IN865, EU868, US915, AU915, KR920, AS923|
+| Parameter  | Information                                                                                           |
+| ---------- | ----------------------------------------------------------------------------------------------------- |
+| **region** | **Supports frequency bands:** EU433, CN470, CN470ALI, RU864, IN865, EU868, US915, AU915, KR920, AS923 |
 
 3. <b>AT+JOINMODE</b>
 
 This command reads or modifies the LoRaWAN Activation Mode of the device. It will take effect after restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read |`AT+JOINMODE`| `<mode>` <br> `OK`|
-|Write|`AT+JOINMODE=<mode>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+JOINMODE=?`|`OK`|
+| Operation | AT Command           | Response                                                                                             |
+| --------- | -------------------- | ---------------------------------------------------------------------------------------------------- |
+| Read      | `AT+JOINMODE`        | `<mode>` <br> `OK`                                                                                   |
+| Write     | `AT+JOINMODE=<mode>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test      | `AT+JOINMODE=?`      | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**mode** |**Supported activation mode:** ABP or OTAA|
+| Parameter | Information                                |
+| --------- | ------------------------------------------ |
+| **mode**  | **Supported activation mode:** ABP or OTAA |
 
 4.	<b>AT+PUBLIC</b>
 
 This command reads or modifies the LoRaWAN Public Settings of the device. The working mode is set to Public by default (1 value of the parameter). The modification will take effect after restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read |`AT+PUBLIC`| `<x>` <br> `OK`|
-|Write|`AT+PUBLIC=<x>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+PUBLIC=?`|`OK`|
+| Operation | AT Command      | Response                                                                                             |
+| --------- | --------------- | ---------------------------------------------------------------------------------------------------- |
+| Read      | `AT+PUBLIC`     | `<x>` <br> `OK`                                                                                      |
+| Write     | `AT+PUBLIC=<x>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test      | `AT+PUBLIC=?`   | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**x** |**Is the node working with public LoRaWAN network?**|
-| 0 |Not working in Public mode|
-| 1 |Working in Public mode|
+| Parameter | Information                                          |
+| --------- | ---------------------------------------------------- |
+| **x**     | **Is the node working with public LoRaWAN network?** |
+| 0         | Not working in Public mode                           |
+| 1         | Working in Public mode                               |
 
 5.	<b>AT+CLASS</b>
 
 This command reads or modifies the LoRaWAN working Class of the device. Effective immediately after modification.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read |`AT+CLASS`| `<class>` <br> `OK`|
-|Write|`AT+CLASS=<class>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+CLASS=?`|`OK`|
+| Operation | AT Command         | Response                                                                                             |
+| --------- | ------------------ | ---------------------------------------------------------------------------------------------------- |
+| Read      | `AT+CLASS`         | `<class>` <br> `OK`                                                                                  |
+| Write     | `AT+CLASS=<class>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test      | `AT+CLASS=?`       | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**class** |**Supported device Classes:**|
-| A |Class A|
-| B |Class B|
-| C |Class C|
+| Parameter | Information                   |
+| --------- | ----------------------------- |
+| **class** | **Supported device Classes:** |
+| A         | Class A                       |
+| B         | Class B                       |
+| C         | Class C                       |
 
 6.	<b>AT+APPEUI</b>
 
 The APPEUI parameter is valid when OTAA is activated. The modification will take effect after restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read |`AT+APPEUI`| `<app_eui>` <br> `OK`|
-|Write|`AT+APPEUI=<app_eui>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+APPEUI=?`|`OK`|
+| Operation | AT Command            | Response                                                                                             |
+| --------- | --------------------- | ---------------------------------------------------------------------------------------------------- |
+| Read      | `AT+APPEUI`           | `<app_eui>` <br> `OK`                                                                                |
+| Write     | `AT+APPEUI=<app_eui>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test      | `AT+APPEUI=?`         | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**app_eui** |**Application EUI:** Hexadecimal character, 16 bytes in length|
+| Parameter   | Information                                                    |
+| ----------- | -------------------------------------------------------------- |
+| **app_eui** | **Application EUI:** Hexadecimal character, 16 bytes in length |
 
 7.	<b>AT+APPKEY</b>
 
 The APPKEY parameter is valid in OTAA Activation Mode. The modification will take effect after restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read |`AT+APPKEY`| `<app_key>` <br> `OK`|
-|Write|`AT+APPKEY=<app_key>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+APPKEY=?`|`OK`|
+| Operation | AT Command            | Response                                                                                             |
+| --------- | --------------------- | ---------------------------------------------------------------------------------------------------- |
+| Read      | `AT+APPKEY`           | `<app_key>` <br> `OK`                                                                                |
+| Write     | `AT+APPKEY=<app_key>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test      | `AT+APPKEY=?`         | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**app_key** |**Application Key:** Hexadecimal character, 32 bytes in length|
+| Parameter   | Information                                                    |
+| ----------- | -------------------------------------------------------------- |
+| **app_key** | **Application Key:** Hexadecimal character, 32 bytes in length |
 
 8. <b>AT+DEVADDR</b>
 
 The DEVADDR parameter is valid in ABP Activation Mode. The modification will take effect after restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read |`AT+DEVADDR`| `<dev_addr>` <br> `OK`|
-|Write|`AT+DEVADDR=<dev_addr>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+DEVADDR=?`|`OK`|
+| Operation | AT Command              | Response                                                                                             |
+| --------- | ----------------------- | ---------------------------------------------------------------------------------------------------- |
+| Read      | `AT+DEVADDR`            | `<dev_addr>` <br> `OK`                                                                               |
+| Write     | `AT+DEVADDR=<dev_addr>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test      | `AT+DEVADDR=?`          | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**dev_addr** |**Device Address:** Hexadecimal character, 8 bytes in length|
+| Parameter    | Information                                                  |
+| ------------ | ------------------------------------------------------------ |
+| **dev_addr** | **Device Address:** Hexadecimal character, 8 bytes in length |
 
 9.	<b>AT+APPSKEY</b>
 
 The APPSKEY parameter is valid in ABP Activation Mode. The modification will take effect after restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read |`AT+APPSKEY`| `<apps_key>` <br> `OK`|
-|Write|`AT+APPSKEY=<apps_key>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+APPSKEY=?`|`OK`|
+| Operation | AT Command              | Response                                                                                             |
+| --------- | ----------------------- | ---------------------------------------------------------------------------------------------------- |
+| Read      | `AT+APPSKEY`            | `<apps_key>` <br> `OK`                                                                               |
+| Write     | `AT+APPSKEY=<apps_key>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test      | `AT+APPSKEY=?`          | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**apps_key** |**Application Session Key:** Hexadecimal character, 32 bytes in length|
+| Parameter    | Information                                                            |
+| ------------ | ---------------------------------------------------------------------- |
+| **apps_key** | **Application Session Key:** Hexadecimal character, 32 bytes in length |
 
 10.	<b>AT+NWKSKEY</b>
 
 The NWKSKEY parameter is valid in ABP Activation Mode. The modification will take effect after restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read |`AT+NWKSKEY`| `<nwks_key>` <br> `OK`|
-|Write|`AT+NWKSKEY=<nwkskey>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+NWKSKEY=?`|`OK`|
+| Operation | AT Command             | Response                                                                                             |
+| --------- | ---------------------- | ---------------------------------------------------------------------------------------------------- |
+| Read      | `AT+NWKSKEY`           | `<nwks_key>` <br> `OK`                                                                               |
+| Write     | `AT+NWKSKEY=<nwkskey>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test      | `AT+NWKSKEY=?`         | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**nwks_key** |**Network Session Key:** Hexadecimal character, 32 bytes in length|
+| Parameter    | Information                                                        |
+| ------------ | ------------------------------------------------------------------ |
+| **nwks_key** | **Network Session Key:** Hexadecimal character, 32 bytes in length |
 
 
 11. <b>AT+ADR</b>
 
 Turn on/off the LoRaWAN dynamic rate adjustment function of the device, which is “on” by default. The modification will take effect immediately.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read |`AT+ADR`| `<n>` <br> `OK`|
-|Write|`AT+ADR=<n>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+ADR=?`|`OK`|
+| Operation | AT Command   | Response                                                                                             |
+| --------- | ------------ | ---------------------------------------------------------------------------------------------------- |
+| Read      | `AT+ADR`     | `<n>` <br> `OK`                                                                                      |
+| Write     | `AT+ADR=<n>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test      | `AT+ADR=?`   | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**n** |**Adaptive Data Rate**|
-| 0 |Disable ADR|
-| 1 |Enable ADR|
+| Parameter | Information            |
+| --------- | ---------------------- |
+| **n**     | **Adaptive Data Rate** |
+| 0         | Disable ADR            |
+| 1         | Enable ADR             |
 
 12.	 <b>AT+DATARATE</b>
 
 Read/modify the LoRaWAN DataRate setting of the device, which is valid when the ADR function is turned off. The modification will take effect immediately.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read |`AT+DATARATE`| `<n>` <br> `OK`|
-|Write|`AT+DATARATE=<n>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+DATARATE=?`|`OK`|
+| Operation | AT Command        | Response                                                                                             |
+| --------- | ----------------- | ---------------------------------------------------------------------------------------------------- |
+| Read      | `AT+DATARATE`     | `<n>` <br> `OK`                                                                                      |
+| Write     | `AT+DATARATE=<n>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test      | `AT+DATARATE=?`   | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**n** |**LoRaWAN DataRate**|
-| 0 ~ 7 |DataRate from 0 to 7s is possible.|
+| Parameter | Information                        |
+| --------- | ---------------------------------- |
+| **n**     | **LoRaWAN DataRate**               |
+| 0 ~ 7     | DataRate from 0 to 7s is possible. |
 
 ::: tip 📝 NOTE
 The DataRate value and the default value are related to LoRaWAN regional parameters. Refer to [Appendix I: DataRate list of each region](/Product-Categories/WisNode/RAK7431/Datasheet/at-command.html#appendix-i-data-rate-of-each-region) in this document.
@@ -257,18 +258,18 @@ Turn on/off the LoRaWAN packet confirmation mechanic, which is set to be “on�
 
 When the confirm function is enabled, the packets sent by the device will require the LoRa network server to send an ACK response. Unless a confirmation is received the device will resend the packet. For more information on the resending mechanic refer to “**14. AT+RETRY**”.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read |`AT+CONFIRM`| `<n>` <br> `OK`|
-|Write|`AT+CONFIRM=<n>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+CONFIRM=?`|`OK`|
+| Operation | AT Command       | Response                                                                                             |
+| --------- | ---------------- | ---------------------------------------------------------------------------------------------------- |
+| Read      | `AT+CONFIRM`     | `<n>` <br> `OK`                                                                                      |
+| Write     | `AT+CONFIRM=<n>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test      | `AT+CONFIRM=?`   | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**n** |**Type of uplink packets**|
-| 0 |Unconfirmed uplink packets|
-| 1 |Confirmed uplink packets|
+| Parameter | Information                |
+| --------- | -------------------------- |
+| **n**     | **Type of uplink packets** |
+| 0         | Unconfirmed uplink packets |
+| 1         | Confirmed uplink packets   |
 
 14. <b>AT+RETRY</b>
 
@@ -276,17 +277,17 @@ Set the maximum number of retry attempts of the same LoRaWAN message, that will 
 
 When retry = n (n! = 1), if the device does not receive an ACK of a LoRaWAN message, it will resend the message until the ACK is received, or the retry counter expires.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read |`AT+RETRY`| `<n>` <br> `OK`|
-|Write|`AT+RETRY=<n>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+RETRY=?`|`OK`|
+| Operation | AT Command     | Response                                                                                             |
+| --------- | -------------- | ---------------------------------------------------------------------------------------------------- |
+| Read      | `AT+RETRY`     | `<n>` <br> `OK`                                                                                      |
+| Write     | `AT+RETRY=<n>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test      | `AT+RETRY=?`   | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**n** |**Max resend times**|
-| 1 ~ 8 |The number of retries can be between 1 and 8|
+| Parameter | Information                                  |
+| --------- | -------------------------------------------- |
+| **n**     | **Max resend times**                         |
+| 1 ~ 8     | The number of retries can be between 1 and 8 |
 
 15. <b>AT+CHANNEL</b>
 
@@ -294,21 +295,21 @@ When the LoRaWAN channel plan of the device is CN470 / US915 / AU915, it can be 
 
 When the device is working in one of the following bands this command can only be used for reading the parameters: EU433 / RU864 / IN865 / EU868 / KR920 / AS923.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read |`AT+CHANNEL`| `<id>:<freq>:<drmin>:<drmax>` <br>...<br> `OK`|
-|Write<br>(Only valid when Region<br> is CN470 / US915 / AU915) |`AT+CHANNEL=<startid>:<endid>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+CHANNEL=?`|`OK`|
+| Operation                                                      | AT Command                     | Response                                                                                             |
+| -------------------------------------------------------------- | ------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| Read                                                           | `AT+CHANNEL`                   | `<id>:<freq>:<drmin>:<drmax>` <br>...<br> `OK`                                                       |
+| Write<br>(Only valid when Region<br> is CN470 / US915 / AU915) | `AT+CHANNEL=<startid>:<endid>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test                                                           | `AT+CHANNEL=?`                 | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**id** |Channel ID|
-|**freq** |Center frequency of channel, unit: Hz|
-|**drmin** |DataRate (Min)|
-|**drmax** |DataRate (Max)|
-|**startid** |Start channel ID|
-|**endid** |Stop channel ID|
+| Parameter   | Information                           |
+| ----------- | ------------------------------------- |
+| **id**      | Channel ID                            |
+| **freq**    | Center frequency of channel, unit: Hz |
+| **drmin**   | DataRate (Min)                        |
+| **drmax**   | DataRate (Max)                        |
+| **startid** | Start channel ID                      |
+| **endid**   | Stop channel ID                       |
 
 16. <b>AT+ADDCHANNEL</b>
 
@@ -316,17 +317,17 @@ Add a LoRaWAN channel.
 
 This instruction is valid when the working frequency band of LoRaWAN is EU433 / RU864 / EU868 / KR920 / AS923. The modification will take effect after restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Write|`AT+ADDCHANNEL=<freq>:<drmin>:<drmax>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+ADDCHANNEL=?`|`OK`|
+| Operation | AT Command                             | Response                                                                                             |
+| --------- | -------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Write     | `AT+ADDCHANNEL=<freq>:<drmin>:<drmax>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test      | `AT+ADDCHANNEL=?`                      | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**freq** |Center frequency of channel, unit: Hz|
-|**drmin** |DataRate (Min)|
-|**drmax** |DataRate (Max)|
+| Parameter | Information                           |
+| --------- | ------------------------------------- |
+| **freq**  | Center frequency of channel, unit: Hz |
+| **drmin** | DataRate (Min)                        |
+| **drmax** | DataRate (Max)                        |
 
 17. <b>AT+RMCHANNEL</b>
 
@@ -334,78 +335,78 @@ Delete a LoRaWAN channel.
 
 This instruction is valid when the working frequency band is EU433 / RU864 / EU868 / KR920 / AS923. The modification takes effect after restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Write|`AT+RMCHANNEL=<freq>:<drmin>:<drmax>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+RMCHANNEL=?`|`OK`|
+| Operation | AT Command                            | Response                                                                                             |
+| --------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Write     | `AT+RMCHANNEL=<freq>:<drmin>:<drmax>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test      | `AT+RMCHANNEL=?`                      | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**freq** |Center frequency of channel, unit: Hz|
-|**drmin** |DataRate (Min)|
-|**drmax** |DataRate (Max)|
+| Parameter | Information                           |
+| --------- | ------------------------------------- |
+| **freq**  | Center frequency of channel, unit: Hz |
+| **drmin** | DataRate (Min)                        |
+| **drmax** | DataRate (Max)                        |
 
 18. <b>AT+CHANMASK</b>
 
 Read the currently configured LoRaWAN Channel Mask. It is determined by the currently open channels. This instruction is “read-only”.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+CHANMASK`| `<chanmsk>`<br>`OK`|
-|Test |`AT+CHANMASK=?`|`OK`|
+| Operation | AT Command      | Response            |
+| --------- | --------------- | ------------------- |
+| Read      | `AT+CHANMASK`   | `<chanmsk>`<br>`OK` |
+| Test      | `AT+CHANMASK=?` | `OK`                |
 
 
-| Parameter | Information|
-|------------|-------|
-|**chanmask** |**Channel mask:** Hexadecimal string, right to left corresponding channel ID from low to high|
+| Parameter    | Information                                                                                   |
+| ------------ | --------------------------------------------------------------------------------------------- |
+| **chanmask** | **Channel mask:** Hexadecimal string, right to left corresponding channel ID from low to high |
 
 19. <b>AT+TXPOWER</b>
 
 The TXPOWER parameter is valid when the ADR function is turned off. The modification will take effect immediately.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+TXPOWER`| `<txpwr>`<br>`OK`|
-|Write|`AT+TXPOWER=<txpwr>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+TXPOWER=?`|`OK`|
+| Operation | AT Command           | Response                                                                                             |
+| --------- | -------------------- | ---------------------------------------------------------------------------------------------------- |
+| Read      | `AT+TXPOWER`         | `<txpwr>`<br>`OK`                                                                                    |
+| Write     | `AT+TXPOWER=<txpwr>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test      | `AT+TXPOWER=?`       | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**txpwr** |Transmit power (dBm, floating-point)<br>The value range is 0 ~ maxeirp, and the effective step size is 2dbm, that is, txpwr = maxeirp – 2 * n, and n is an integer greater than or equal to 0<br>The maxeirp is the Maximum EIRP (Equivalent Isotropic Radiated Power) defined for the specific band you are using in the LoRa Alliance documentation.|
+| Parameter | Information                                                                                                                                                                                                                                                                                                                                            |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **txpwr** | Transmit power (dBm, floating-point)<br>The value range is 0 ~ maxeirp, and the effective step size is 2dbm, that is, txpwr = maxeirp – 2 * n, and n is an integer greater than or equal to 0<br>The maxeirp is the Maximum EIRP (Equivalent Isotropic Radiated Power) defined for the specific band you are using in the LoRa Alliance documentation. |
 
 20. <b>AT+PINGNB</b>
 
 Set the PingSlot Number in each Beacon Period for Class B mode. The number of ping slots determines the period of the downlink packet of the device. The modification will take effect after restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+PINGNB`| `<N>`<br>`OK`|
-|Write|`AT+PINGNB=<N>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>`|
-|Test |`AT+PINGNB=?`|`OK`|
+| Operation | AT Command      | Response                                                                                              |
+| --------- | --------------- | ----------------------------------------------------------------------------------------------------- |
+| Read      | `AT+PINGNB`     | `<N>`<br>`OK`                                                                                         |
+| Write     | `AT+PINGNB=<N>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>` |
+| Test      | `AT+PINGNB=?`   | `OK`                                                                                                  |
 
 
-| Parameter | Information|
-|------------|-------|
-|**N** |PingSlot Number in Beacon Period<br>1<br>2<br>4<br>8<br>16<br>32<br>64<br>128|
+| Parameter | Information                                                                   |
+| --------- | ----------------------------------------------------------------------------- |
+| **N**     | PingSlot Number in Beacon Period<br>1<br>2<br>4<br>8<br>16<br>32<br>64<br>128 |
 
 21. <b>AT+LPTP</b>
 
 LoRa Private Transport Protocol (LPTP) is a RAK proprietary message splitting protocol, which can send data with a length exceeding the maximum permissible size, using multiple messages. As it is proprietary it only works with the RAK LoRa networks server built-into our commercial gateways. It is “Off” by default. The modification will take effect immediately.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+LPTP`| `<x>`<br>`OK`|
-|Write|`AT+LPTP=<x>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
-|Test |`AT+LPTP=?`|`OK`|
+| Operation | AT Command    | Response                                                                                             |
+| --------- | ------------- | ---------------------------------------------------------------------------------------------------- |
+| Read      | `AT+LPTP`     | `<x>`<br>`OK`                                                                                        |
+| Write     | `AT+LPTP=<x>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
+| Test      | `AT+LPTP=?`   | `OK`                                                                                                 |
 
 
-| Parameter | Information|
-|------------|-------|
-|**x** |**LPTP status**|
-| 0 |disabled|
-| 1 |enabled|
+| Parameter | Information     |
+| --------- | --------------- |
+| **x**     | **LPTP status** |
+| 0         | disabled        |
+| 1         | enabled         |
 
 ## Data Interface Commands
 
@@ -413,101 +414,101 @@ LoRa Private Transport Protocol (LPTP) is a RAK proprietary message splitting pr
 
 The command is used to read or modify the baud rate of the device's data serial port. The modification will take affect after restarting.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+BAUDRATE`| `<baudrate>`<br>`OK`|
-|Write|`AT+BAUDRATE=<baudrate>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>`|
-|Test |`AT+BAUDRATE=?`|`OK`|
+| Operation | AT Command               | Response                                                                                              |
+| --------- | ------------------------ | ----------------------------------------------------------------------------------------------------- |
+| Read      | `AT+BAUDRATE`            | `<baudrate>`<br>`OK`                                                                                  |
+| Write     | `AT+BAUDRATE=<baudrate>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>` |
+| Test      | `AT+BAUDRATE=?`          | `OK`                                                                                                  |
 
 
-| Parameter | Information|
-|------------|-------|
-|**baudrate** |Baud rate of serial port data:<br>2400<br>4800<br>9600<br>14400<br>19200<br>38400<br>57600<br>115200|
+| Parameter    | Information                                                                                          |
+| ------------ | ---------------------------------------------------------------------------------------------------- |
+| **baudrate** | Baud rate of serial port data:<br>2400<br>4800<br>9600<br>14400<br>19200<br>38400<br>57600<br>115200 |
 
 2. <b>AT+DATABIT</b>
 
 Read or modify the data bit of the serial data. The modification will take effect after restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+BAUDRATE`| `<databit>`<br>`OK`|
-|Write|`AT+BAUDRATE=<databit>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>`|
-|Test |`AT+BAUDRATE=?`|`OK`|
+| Operation | AT Command              | Response                                                                                              |
+| --------- | ----------------------- | ----------------------------------------------------------------------------------------------------- |
+| Read      | `AT+DATABIT`           | `<databit>`<br>`OK`                                                                                   |
+| Write     | `AT+DATABIT=<databit>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>` |
+| Test      | `AT+DATABIT=?`         | `OK`                                                                                                  |
 
 
-| Parameter | Information|
-|------------|-------|
-|**databit** |**Data bit of serial port data:**|
-|7|7th bit|
-|8|8th bit|
+| Parameter   | Information                       |
+| ----------- | --------------------------------- |
+| **databit** | **Data bit of serial port data:** |
+| 7           | 7th bit                           |
+| 8           | 8th bit                           |
 
 3. <b>AT+STOPBIT</b>
 
 Read or modify the serial port data stop bit. The modification will take effect after restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+STOPBIT`| `<stopbit>`<br>`OK`|
-|Write|`Write	AT+STOPBIT=<stopbit>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>`|
-|Test |`AT+STOPBIT=?`|`OK`|
+| Operation | AT Command                   | Response                                                                                              |
+| --------- | ---------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Read      | `AT+STOPBIT`                 | `<stopbit>`<br>`OK`                                                                                   |
+| Write     | `Write	AT+STOPBIT=<stopbit>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>` |
+| Test      | `AT+STOPBIT=?`               | `OK`                                                                                                  |
 
 
-| Parameter | Information|
-|------------|-------|
-|**stopbit** |**Serial stop bit:**|
-| 1 |1bit|
-|1.5|1.5bits|
-| 2 |2bits|
+| Parameter   | Information          |
+| ----------- | -------------------- |
+| **stopbit** | **Serial stop bit:** |
+| 1           | 1bit                 |
+| 1.5         | 1.5bits              |
+| 2           | 2bits                |
 
 4. <b>AT+PARITY</b>
 
 Read or modify the parity check bit of the data. The modification will take effect after restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+PARITY`| `<parity>`<br>`OK`|
-|Write|`AT+PARITY=<parity>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>`|
-|Test |`AT+PARITY=?`|`OK`|
+| Operation | AT Command           | Response                                                                                              |
+| --------- | -------------------- | ----------------------------------------------------------------------------------------------------- |
+| Read      | `AT+PARITY`          | `<parity>`<br>`OK`                                                                                    |
+| Write     | `AT+PARITY=<parity>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>` |
+| Test      | `AT+PARITY=?`        | `OK`                                                                                                  |
 
 
-| Parameter | Information|
-|------------|-------|
-|**parity** |**Parity check:**|
-| NONE |No check|
-| EVEN |Even parity check|
-| ODD  |Odd parity check|
+| Parameter  | Information       |
+| ---------- | ----------------- |
+| **parity** | **Parity check:** |
+| NONE       | No check          |
+| EVEN       | Even parity check |
+| ODD        | Odd parity check  |
 
 5. <b>AT+DTUMODE</b>
 
 Read or modify the operating mode of the device’s data interface. The data interface supports two modes: P2P and MODBUS. The modification will take effect immediately.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+DTUMODE`| `<mode>`<br>`OK`|
-|Write|`AT+DTUMODE=<mode>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>`|
-|Test |`AT+DTUMODE=?`|`OK`|
+| Operation | AT Command          | Response                                                                                              |
+| --------- | ------------------- | ----------------------------------------------------------------------------------------------------- |
+| Read      | `AT+DTUMODE`        | `<mode>`<br>`OK`                                                                                      |
+| Write     | `AT+DTUMODE=<mode>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>` |
+| Test      | `AT+DTUMODE=?`      | `OK`                                                                                                  |
 
 
-| Parameter | Information|
-|------------|-------|
-|**mode** |**Operating mode:**|
-| P2P |Point to point mode|
-| MODBUS |Modbus mode|
+| Parameter | Information         |
+| --------- | ------------------- |
+| **mode**  | **Operating mode:** |
+| P2P       | Point to point mode |
+| MODBUS    | Modbus mode         |
 
 6. <b>AT+MODBUSTIMEOUT</b>
 
 Read or modify the Modbus instruction timeout of the device. It is valid when the data interface is in MODBUS Mode. The modification will take effect immediately.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+MODBUSTIMEOUT`| `<n>`<br>`OK`|
-|Write|`AT+MODBUSTIMEOUT=<n>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>`|
-|Test |`AT+MODBUSTIMEOUT=?`|`OK`|
+| Operation | AT Command             | Response                                                                                              |
+| --------- | ---------------------- | ----------------------------------------------------------------------------------------------------- |
+| Read      | `AT+MODBUSTIMEOUT`     | `<n>`<br>`OK`                                                                                         |
+| Write     | `AT+MODBUSTIMEOUT=<n>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>` |
+| Test      | `AT+MODBUSTIMEOUT=?`   | `OK`                                                                                                  |
 
 
-| Parameter | Information|
-|------------|-------|
-|n |Modbus timeout in ms|
+| Parameter | Information          |
+| --------- | -------------------- |
+| n         | Modbus timeout in ms |
 
 7. <b>AT+TRANSPARENT</b>
 
@@ -519,35 +520,35 @@ In the non-transparent mode, the Modbus execution instruction response data (dat
 
 Non-transparent mode is the default one. The modification will take effect immediately.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+TRANSPARENT`| `<n>`<br>`OK`|
-|Write|`AT+TRANSPARENT=<n>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>`|
-|Test |`AT+TRANSPARENT=?`|`OK`|
+| Operation | AT Command           | Response                                                                                              |
+| --------- | -------------------- | ----------------------------------------------------------------------------------------------------- |
+| Read      | `AT+TRANSPARENT`     | `<n>`<br>`OK`                                                                                         |
+| Write     | `AT+TRANSPARENT=<n>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>` |
+| Test      | `AT+TRANSPARENT=?`   | `OK`                                                                                                  |
 
 
-| Parameter | Information|
-|------------|-------|
-|**n** |**Operating mode:**|
-|0 |non-transparent mode|
-|1 |transparent mode|
+| Parameter | Information          |
+| --------- | -------------------- |
+| **n**     | **Operating mode:**  |
+| 0         | non-transparent mode |
+| 1         | transparent mode     |
 
 8. <b>AT+MODBUSRETRY</b>
 
 When the device works in MODBUS mode, with this command the number of retries, when a MODBUS instruction does not get response, is specified. By default, there is no retransmission value added. The modification will take effect immediately.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+MODBUSRETRY`| `<n>`<br>`OK`|
-|Write|`AT+MODBUSRETRY=<n>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>`|
-|Test |`AT+MODBUSRETRY=?`|`OK`|
+| Operation | AT Command           | Response                                                                                              |
+| --------- | -------------------- | ----------------------------------------------------------------------------------------------------- |
+| Read      | `AT+MODBUSRETRY`     | `<n>`<br>`OK`                                                                                         |
+| Write     | `AT+MODBUSRETRY=<n>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>` |
+| Test      | `AT+MODBUSRETRY=?`   | `OK`                                                                                                  |
 
 
-| Parameter | Information|
-|------------|-------|
-|**n** |**Number of retries:**|
-|0 |No retry|
-|1 ~ 8 |1 ~ 8 retries|
+| Parameter | Information            |
+| --------- | ---------------------- |
+| **n**     | **Number of retries:** |
+| 0         | No retry               |
+| 1 ~ 8     | 1 ~ 8 retries          |
 
 9. <b>AT+ENABLEPOLL</b>
 
@@ -557,98 +558,98 @@ This means that the device will perform a polling operation every given period (
 
 The device turns on timed polling by default. The modification shall take effect after restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+ENABLEPOLL`| `<n>`<br>`OK`|
-|Write|`AT+ENABLEPOLL=<n>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>`|
-|Test |`AT+ENABLEPOLL=?`|`OK`|
+| Operation | AT Command          | Response                                                                                              |
+| --------- | ------------------- | ----------------------------------------------------------------------------------------------------- |
+| Read      | `AT+ENABLEPOLL`     | `<n>`<br>`OK`                                                                                         |
+| Write     | `AT+ENABLEPOLL=<n>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>` |
+| Test      | `AT+ENABLEPOLL=?`   | `OK`                                                                                                  |
 
 
-| Parameter | Information|
-|------------|-------|
-|**n** |**Scheduled polling status:**|
-|0 |Disabled|
-|1 |Enabled|
+| Parameter | Information                   |
+| --------- | ----------------------------- |
+| **n**     | **Scheduled polling status:** |
+| 0         | Disabled                      |
+| 1         | Enabled                       |
 
 10. <b>AT+POLLPERIOD</b>
 
 This command sets/reads the scheduled polling cycle. This command only works if scheduled polling is enabled. The modification takes effect after the next polling cycle or a restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+POLLPERIOD`| `<n>`<br>`OK`|
-|Write|`AT+POLLPERIOD=<n>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>`|
-|Test |`AT+POLLPERIOD=?`|`OK`|
+| Operation | AT Command          | Response                                                                                              |
+| --------- | ------------------- | ----------------------------------------------------------------------------------------------------- |
+| Read      | `AT+POLLPERIOD`     | `<n>`<br>`OK`                                                                                         |
+| Write     | `AT+POLLPERIOD=<n>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>` |
+| Test      | `AT+POLLPERIOD=?`   | `OK`                                                                                                  |
 
 
-| Parameter | Information|
-|------------|-------|
-|**n** |**Polling cycle in seconds**|
+| Parameter | Information                  |
+| --------- | ---------------------------- |
+| **n**     | **Polling cycle in seconds** |
 
 11. <b>AT+ADDPOLL</b>
 
 Add a polling instruction with this command.
 Up to 32 polling instructions are supported. The modification takes effect after the next polling cycle or a restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Write|`AT+ADDPOLL=<n>:<xxxx>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>`|
-|Test |`AT+ADDPOLL=?`|`OK`|
+| Operation | AT Command              | Response                                                                                              |
+| --------- | ----------------------- | ----------------------------------------------------------------------------------------------------- |
+| Write     | `AT+ADDPOLL=<n>:<xxxx>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>` |
+| Test      | `AT+ADDPOLL=?`          | `OK`                                                                                                  |
 
 
-| Parameter | Information|
-|------------|-------|
-|**n** |**Polling instruction ID, value range 1 ~ 127**|
-|xxxx|Polling instruction content, hexadecimal string, maximum instruction length 128 bytes|
+| Parameter | Information                                                                           |
+| --------- | ------------------------------------------------------------------------------------- |
+| **n**     | **Polling instruction ID, value range 1 ~ 127**                                       |
+| xxxx      | Polling instruction content, hexadecimal string, maximum instruction length 128 bytes |
 
 12. <b>AT+RMPOLL</b>
 
 Delete a polling instruction. The modification takes effect after the next polling cycle or a restart
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Write|`AT+RMPOLL=<n>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>`|
-|Test |`AT+RMPOLL=?`|`OK`|
+| Operation | AT Command      | Response                                                                                              |
+| --------- | --------------- | ----------------------------------------------------------------------------------------------------- |
+| Write     | `AT+RMPOLL=<n>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>` |
+| Test      | `AT+RMPOLL=?`   | `OK`                                                                                                  |
 
 
-| Parameter | Information|
-|------------|-------|
-|**n** |**Polling instruction ID, value range 1 ~ 127**|
+| Parameter | Information                                     |
+| --------- | ----------------------------------------------- |
+| **n**     | **Polling instruction ID, value range 1 ~ 127** |
 
 13. <b>AT+POLLTASK</b>
 
 Query the list of scheduled polling instructions.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Write|`AT+POLLTASK`| When it is successful:<br>`<n>:<xxxx>`<br>...<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>`|
-|Test |`AT+POLLTASK=?`|`OK`|
+| Operation | AT Command      | Response                                                                                                       |
+| --------- | --------------- | -------------------------------------------------------------------------------------------------------------- |
+| Write     | `AT+POLLTASK`   | When it is successful:<br>`<n>:<xxxx>`<br>...<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>` |
+| Test      | `AT+POLLTASK=?` | `OK`                                                                                                           |
 
 
-| Parameter | Information|
-|------------|-------|
-|**n** |Polling instruction ID, value range 1 ~ 127|
-|xxxx|Instruction content, hexadecimal string|
+| Parameter | Information                                 |
+| --------- | ------------------------------------------- |
+| **n**     | Polling instruction ID, value range 1 ~ 127 |
+| xxxx      | Instruction content, hexadecimal string     |
 
 14.	<b>AT+ADDSCHEDULETASK</b>
 
 Schedule an instruction. The modification takes effect immediately after setting.
 The time in the command is local time.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Write|`AT+ADDSCHEDULETASK=<id>:<type>:<w>:<h>:<m>:<s>:<data>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>`|
-|Test |`AT+ADDSCHEDULETASK =?`|`OK`|
+| Operation | AT Command                                              | Response                                                                                              |
+| --------- | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Write     | `AT+ADDSCHEDULETASK=<id>:<type>:<w>:<h>:<m>:<s>:<data>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>` |
+| Test      | `AT+ADDSCHEDULETASK =?`                                 | `OK`                                                                                                  |
 
 
-| Parameter | Information|
-|------------|-------|
-|**id** |Task ID，value is： 1 ~ 127|
-|**type**|the type of schedule task:<br>**WEEK** - once a week<br>**DAY** - once a day<br>**HOUR** - once an hour*|
-|**w**|WEEK, only need add the value when the type = WEEK;<br>0 - For Sunday<br>1 ~ 6 For Monday ~ Saturday|
-|**h**|Hour:  0 ~ 23|
-|**m**|Minute： 0 ~ 59|
-|**s**|Second： 0 ~ 59|
+| Parameter | Information                                                                                              |
+| --------- | -------------------------------------------------------------------------------------------------------- |
+| **id**    | Task ID，value is： 1 ~ 127                                                                              |
+| **type**  | the type of schedule task:<br>**WEEK** - once a week<br>**DAY** - once a day<br>**HOUR** - once an hour* |
+| **w**     | WEEK, only need add the value when the type = WEEK;<br>0 - For Sunday<br>1 ~ 6 For Monday ~ Saturday     |
+| **h**     | Hour:  0 ~ 23                                                                                            |
+| **m**     | Minute： 0 ~ 59                                                                                          |
+| **s**     | Second： 0 ~ 59                                                                                          |
 
 ::: tip 📝 NOTE
 *If selected type is HOUR, the parameter `<h>` is not used from the system. 
@@ -658,15 +659,15 @@ The time in the command is local time.
 
 A command to delete a scheduled instruction. The modification takes effect immediately after setting.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Write|`AT+RMSCHEDULETASK=<n>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>`|
-|Test |`AT+RMSCHEDULETASK=?`|`OK`|
+| Operation | AT Command              | Response                                                                                              |
+| --------- | ----------------------- | ----------------------------------------------------------------------------------------------------- |
+| Write     | `AT+RMSCHEDULETASK=<n>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>` |
+| Test      | `AT+RMSCHEDULETASK=?`   | `OK`                                                                                                  |
 
 
-| Parameter | Information|
-|------------|-------|
-|**n** |Task ID，value is: 1 ~ 127|
+| Parameter | Information                |
+| --------- | -------------------------- |
+| **n**     | Task ID，value is: 1 ~ 127 |
 
 ## System Related Commands
 
@@ -674,137 +675,137 @@ A command to delete a scheduled instruction. The modification takes effect immed
 
 With this command, the time zone of the device is set.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+TIMEZONE`|`<TZ>`<br>`OK`|
-|Write|`AT+TIMEZONE=<TZ>`| When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>`|
-|Test |`AT+TIMEZONE=?`|`OK`|
+| Operation | AT Command         | Response                                                                                              |
+| --------- | ------------------ | ----------------------------------------------------------------------------------------------------- |
+| Read      | `AT+TIMEZONE`      | `<TZ>`<br>`OK`                                                                                        |
+| Write     | `AT+TIMEZONE=<TZ>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<message>` |
+| Test      | `AT+TIMEZONE=?`    | `OK`                                                                                                  |
 
 
-| Parameter | Information|
-|------------|-------|
-|**TZ** |UTC time zone: -12 ~ 12|
+| Parameter | Information             |
+| --------- | ----------------------- |
+| **TZ**    | UTC time zone: -12 ~ 12 |
 
 2.	<b>AT+VERSION</b>
 
 Read the firmware version of the device.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+VERSION`| When the modification is successful:<br>`<br><a>.<b>.<cccc>`<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
+| Operation | AT Command   | Response                                                                                                                     |
+| --------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| Read      | `AT+VERSION` | When the modification is successful:<br>`<br><a>.<b>.<cccc>`<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
 
 
-| Parameter | Information|
-|------------|-------|
-|**a.b.cccc** |Firmware Version, for example “1.1.0050”|
+| Parameter    | Information                              |
+| ------------ | ---------------------------------------- |
+| **a.b.cccc** | Firmware Version, for example “1.1.0050” |
 
 3.	<b>AT+SYSLOGLVL</b>
 
 Read or set the system log level.
 The module turns off the system log output by default. The user can modify the log output level through this command. The modification takes effect immediately after setting.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+SYSLOGLVL`|`<TZ>`<br>`OK`|
-|Write|`AT+SYSLOGLVL=<level>`| `OK`|
-|Test |`AT+SYSLOGLVL=?`|`OK`|
+| Operation | AT Command             | Response       |
+| --------- | ---------------------- | -------------- |
+| Read      | `AT+SYSLOGLVL`         | `<TZ>`<br>`OK` |
+| Write     | `AT+SYSLOGLVL=<level>` | `OK`           |
+| Test      | `AT+SYSLOGLVL=?`       | `OK`           |
 
 
-| Parameter | Information|
-|------------|-------|
-|**level** |**Output log level**|
-|0|does not output any logs|
-|1 ~ 6|log with output level less than or equal to the value|
+| Parameter | Information                                           |
+| --------- | ----------------------------------------------------- |
+| **level** | **Output log level**                                  |
+| 0         | does not output any logs                              |
+| 1 ~ 6     | log with output level less than or equal to the value |
 
 4. <b>AT+ECHO</b>
 
 Turns local echo of the AT command-line interface on/off. Echo is turned off by default. It takes effect immediately after modification and is automatically turned off after a restart.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Write|`AT+ECHO=<n>`|When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>`|
+| Operation | AT Command    | Response                                                                                             |
+| --------- | ------------- | ---------------------------------------------------------------------------------------------------- |
+| Write     | `AT+ECHO=<n>` | When the modification is successful:<br>`OK`<br>When modification fails: <br>`ERROR <code>:<packet>` |
 
-| Parameter | Information|
-|------------|-------|
-|**n**|**Local echo**|
-|0|Disabled|
-|1|Enabled|
+| Parameter | Information    |
+| --------- | -------------- |
+| **n**     | **Local echo** |
+| 0         | Disabled       |
+| 1         | Enabled        |
 
 5. <b>AT+BOOT</b>
 
 The device supports switching to boot mode. In boot mode, the dedicated upgrade software can be used for firmware update.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Write|`AT+BOOT`|`<BOOT MODE>`|
+| Operation | AT Command | Response      |
+| --------- | ---------- | ------------- |
+| Write     | `AT+BOOT`  | `<BOOT MODE>` |
 
 6.	<b>AT+RESTART</b>
 Reboot the device.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Write|`AT+RESTART`|`Null`|
+| Operation | AT Command   | Response |
+| --------- | ------------ | -------- |
+| Write     | `AT+RESTART` | `Null`   |
 
 7.	<b>AT+FACTORY</b>
 
 The command restores the device to the factory settings. This operation will last for about 60s. Do not cut off the power supply of the device before it automatically restarts.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Write|`AT+FACTORY`|`Null`|
+| Operation | AT Command   | Response |
+| --------- | ------------ | -------- |
+| Write     | `AT+FACTORY` | `Null`   |
 
 8.	<b>AT+SYSTIME</b>
 
 Show the real running time.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Write|`AT+SYSTIME`|`<time>`<br>`OK`|
+| Operation | AT Command   | Response         |
+| --------- | ------------ | ---------------- |
+| Write     | `AT+SYSTIME` | `<time>`<br>`OK` |
 
-| Parameter | Information|
-|------------|-------|
-|**time**|Timestamp in UNIX format, in seconds|
+| Parameter | Information                          |
+| --------- | ------------------------------------ |
+| **time**  | Timestamp in UNIX format, in seconds |
 
 9.	<b>AT+DATETIME</b>
 
 Show the synchronized with the LoRaWAN Network Server time. Needs LoRaWAN1.0.3 specification support from the server side.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+DATETIME`|`<datetime>`<br>`OK`|
+| Operation | AT Command    | Response             |
+| --------- | ------------- | -------------------- |
+| Read      | `AT+DATETIME` | `<datetime>`<br>`OK` |
 
-| Parameter | Information|
-|------------|-------|
-|**datetime**|Date / Time in YYYY/MM/DD hh:mm:ss|
+| Parameter    | Information                        |
+| ------------ | ---------------------------------- |
+| **datetime** | Date / Time in YYYY/MM/DD hh:mm:ss |
 
 10. <b>AT+SYSINFO</b>
 
 This command gives the system information of the device.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+SYSINFO`|`<model>`<br>`<sn>`<br>`<version>`<br>`<vendor>`<br>`<copyright>`<br>`OK`|
+| Operation | AT Command   | Response                                                                  |
+| --------- | ------------ | ------------------------------------------------------------------------- |
+| Read      | `AT+SYSINFO` | `<model>`<br>`<sn>`<br>`<version>`<br>`<vendor>`<br>`<copyright>`<br>`OK` |
 
-| Parameter | Information|
-|------------|-------|
-|**model**|Model info|
-|**sn**|Product SN info|
-|**version**|Firmware version|
-|**vendor**|Manufacturer info|
-|**copyright**|Copyright info|
+| Parameter     | Information       |
+| ------------- | ----------------- |
+| **model**     | Model info        |
+| **sn**        | Product SN info   |
+| **version**   | Firmware version  |
+| **vendor**    | Manufacturer info |
+| **copyright** | Copyright info    |
 
 11. <b>AT+WAKEUPBYTE</b>
 
 This command allows you to check or change the wake up byte.
 
-| Operation | AT Command | Response |
-|------------|-------| -------|
-|Read|`AT+WAKEUPBYTE`|`<XX>`<br>`<OK>`|
-|Write|`AT+WAKEUPBYTE=<XX>`|`<OK>`|
+| Operation | AT Command           | Response         |
+| --------- | -------------------- | ---------------- |
+| Read      | `AT+WAKEUPBYTE`      | `<XX>`<br>`<OK>` |
+| Write     | `AT+WAKEUPBYTE=<XX>` | `<OK>`           |
 
-| Parameter | Information|
-|------------|-------|
-|**XX**|Wake up byte |
+| Parameter | Information  |
+| --------- | ------------ |
+| **XX**    | Wake up byte |
 
 ::: tip 📝 NOTE
 Default value is 0xAA.
@@ -819,21 +820,21 @@ The event notification format is:
 EVENT:[EVENT_ID]:[EVENT_MSG]:<ADDITIONAL_INFO>
 ```
 
-| Event | Description|
-|------------|-------|
-|**EVENT_ID**| Event ID |
-|**EVENT_MSG**| Event name |
-|**ADDITIONAL_INFO**| Additional information - Optional<br><br>Some events need to output additional information. Multiple additional information sets are separated by ":"|
+| Event               | Description                                                                                                                                           |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **EVENT_ID**        | Event ID                                                                                                                                              |
+| **EVENT_MSG**       | Event name                                                                                                                                            |
+| **ADDITIONAL_INFO** | Additional information - Optional<br><br>Some events need to output additional information. Multiple additional information sets are separated by ":" |
 
 The module supports the following event notifications:
 
-| ID | EVENT_MSG | Description |
-|------------|-------| -------|
-|0|STARTUP|System startup complete|
-|1|JOIN_NETWORK|Successful join to the LoRaWAN network|
-|2|LEAVE_NETWORK|Unsuccessful join to the LoRaWAN network|
-|5|SYSTEM_WAKEUP|System wakeup|
-|6|RESTART|System restart|
+| ID | EVENT_MSG     | Description                              |
+| -- | ------------- | ---------------------------------------- |
+| 0  | STARTUP       | System startup complete                  |
+| 1  | JOIN_NETWORK  | Successful join to the LoRaWAN network   |
+| 2  | LEAVE_NETWORK | Unsuccessful join to the LoRaWAN network |
+| 5  | SYSTEM_WAKEUP | System wakeup                            |
+| 6  | RESTART       | System restart                           |
 
 1. <b>STARTUP Event</b> - Appears after system initialization.
     * **Message format**: 
@@ -882,114 +883,114 @@ EVENT:6:RESTART
 
 ### Uplink Message FPort Definition
 
-|FPort|Message Type|Note|
-|-----|------------|----|
-|1 ~ 128|RS485/232 Scheduled task/poll uplink message|Fport is consistent scheduled task/poll ID|
-|129|Non-transparent mode, reply of remote instruction message||
-|130|In transparent transmission mode, RS485/232 data upload message||
-|131 ~ 223|Reserved|not used|
+| FPort     | Message Type                                                    | Note                                       |
+| --------- | --------------------------------------------------------------- | ------------------------------------------ |
+| 1 ~ 128   | RS485/232 Scheduled task/poll uplink message                    | Fport is consistent scheduled task/poll ID |
+| 129       | Non-transparent mode, reply of remote instruction message                                                   ||
+| 130       | In transparent transmission mode, RS485/232 data upload message                                             ||
+| 131 ~ 223 | Reserved                                                        | not used                                   |
 
 ### Downlink Message FPort Definition
 
-|FPort|Message Type|Note|
-|-----|------------|----|
-|1 ~ 128|Reserved|not used|
-|129|Non-transparent mode, remote instruction||
-|130|RS485/232 downlink data sent remotely in transparent transmission mode||
-|131 ~ 119|Reserved|not used|
-|200|Remote restart command||
-|201|Remote on/off ADR command||
-|202|Remote set working rate command|Valid when ADR is closed|
-|203|Remote set transmit power command|Valid when ADR is closed|
-|204|Remote on/off message acknowledgment||
-|205|Remote settings retransmission at this time|Valid when the confirmed message mechanism is on|
+| FPort     | Message Type                                                           | Note                                             |
+| --------- | ---------------------------------------------------------------------- | ------------------------------------------------ |
+| 1 ~ 128   | Reserved                                                               | not used                                         |
+| 129       | Non-transparent mode, remote instruction                                                                                 ||
+| 130       | RS485/232 downlink data sent remotely in transparent transmission mode                                                   ||
+| 131 ~ 119 | Reserved                                                               | not used                                         |
+| 200       | Remote restart command                                                                                                   ||
+| 201       | Remote on/off ADR command                                                                                                ||
+| 202       | Remote set working rate command                                        | Valid when ADR is closed                         |
+| 203       | Remote set transmit power command                                      | Valid when ADR is closed                         |
+| 204       | Remote on/off message acknowledgment                                                                                     ||
+| 205       | Remote settings retransmission at this time                            | Valid when the confirmed message mechanism is on |
 
 ## Appendix I: Data Rate of Each Region
 
 ### EU433/RU864/EU868/AS923
 
-|Data Rate|   Configuration   |Indicative physical bit rate [bit/s]|
-|---------|-------------------|------------------------------------|
-|   0     |LoRa: SF12 / 125kHz|                 250                |
-|   1     |LoRa: SF11 / 125kHz|                 440                |
-|   2     |LoRa: SF10 / 125kHz|                 980                |
-|   3     |LoRa: SF9 / 125kHz |                 1760               |
-|   4     |LoRa: SF8 / 125kHz |                 3125               |
-|   5     |LoRa: SF7 / 125kHz |                 5470               |
-|   6     |LoRa: SF7 / 250kHz |                 11000              |
-|   7     |FSK: 50kbps        |                 50000              |
-| 8 ~ 15  |RFU                |                                    |
+| Data Rate | Configuration       | Indicative physical bit rate [bit/s] |
+| --------- | ------------------- | ------------------------------------ |
+| 0         | LoRa: SF12 / 125kHz | 250                                  |
+| 1         | LoRa: SF11 / 125kHz | 440                                  |
+| 2         | LoRa: SF10 / 125kHz | 980                                  |
+| 3         | LoRa: SF9 / 125kHz  | 1760                                 |
+| 4         | LoRa: SF8 / 125kHz  | 3125                                 |
+| 5         | LoRa: SF7 / 125kHz  | 5470                                 |
+| 6         | LoRa: SF7 / 250kHz  | 11000                                |
+| 7         | FSK: 50kbps         | 50000                                |
+| 8 ~ 15    | RFU                 |                                      |
 
 ### CN470/KR920 
 
-|Data Rate|   Configuration   |Indicative physical bit rate [bit/s]|
-|---------|-------------------|------------------------------------|
-|   0     |LoRa: SF12 / 125kHz|                 250                |
-|   1     |LoRa: SF11 / 125kHz|                 440                |
-|   2     |LoRa: SF10 / 125kHz|                 980                |
-|   3     |LoRa: SF9 / 125kHz |                 1760               |
-|   4     |LoRa: SF8 / 125kHz |                 3125               |
-|   5     |LoRa: SF7 / 125kHz |                 5470               |
-| 6 ~ 15  |        RFU        |                                    |
+| Data Rate | Configuration       | Indicative physical bit rate [bit/s] |
+| --------- | ------------------- | ------------------------------------ |
+| 0         | LoRa: SF12 / 125kHz | 250                                  |
+| 1         | LoRa: SF11 / 125kHz | 440                                  |
+| 2         | LoRa: SF10 / 125kHz | 980                                  |
+| 3         | LoRa: SF9 / 125kHz  | 1760                                 |
+| 4         | LoRa: SF8 / 125kHz  | 3125                                 |
+| 5         | LoRa: SF7 / 125kHz  | 5470                                 |
+| 6 ~ 15    | RFU                 |                                      |
 
 ### US915 
 
-|Data Rate|   Configuration   |Indicative physical bit rate [bit/s]|
-|---------|-------------------|------------------------------------|
-|   0     |LoRa: SF10 / 125kHz|                 980                |
-|   1     |LoRa: SF9 / 125kHz |                 1760               |
-|   2     |LoRa: SF8 / 125kHz |                 3125               |
-|   3     |LoRa: SF7 / 125kHz |                 5470               |
-|   4     |LoRa: SF8 / 500kHz |                 12500              |
-| 5 ~ 7   |        RFU        |                                    |
-|   8     |LoRa: SF12/500kHz  |                 980                |
-|   9     |LoRa: SF11/500kHz  |                 1760               |
-|   10    |LoRa: SF10/500kHz  |                 3900               |
-|   11    |LoRa: SF9/500kHz   |                 7000               |
-|   12    |LoRa: SF8/500kHz   |                 12500              |
-|   13    |LoRa: SF7/500kHz   |                 21900              |
-| 14 ~ 15 |        RFU        |                                    |
+| Data Rate | Configuration       | Indicative physical bit rate [bit/s] |
+| --------- | ------------------- | ------------------------------------ |
+| 0         | LoRa: SF10 / 125kHz | 980                                  |
+| 1         | LoRa: SF9 / 125kHz  | 1760                                 |
+| 2         | LoRa: SF8 / 125kHz  | 3125                                 |
+| 3         | LoRa: SF7 / 125kHz  | 5470                                 |
+| 4         | LoRa: SF8 / 500kHz  | 12500                                |
+| 5 ~ 7     | RFU                 |                                      |
+| 8         | LoRa: SF12/500kHz   | 980                                  |
+| 9         | LoRa: SF11/500kHz   | 1760                                 |
+| 10        | LoRa: SF10/500kHz   | 3900                                 |
+| 11        | LoRa: SF9/500kHz    | 7000                                 |
+| 12        | LoRa: SF8/500kHz    | 12500                                |
+| 13        | LoRa: SF7/500kHz    | 21900                                |
+| 14 ~ 15   | RFU                 |                                      |
 
 ### AU915 
 
-|Data Rate|   Configuration   |Indicative physical bit rate [bit/s]|
-|---------|-------------------|------------------------------------|
-|   0     |LoRa: SF12 / 125kHz|                 250                |
-|   1     |LoRa: SF11 / 125kHz|                 440                |
-|   2     |LoRa: SF10 / 125kHz|                 980                |
-|   3     |LoRa: SF9 / 125kHz |                 1760               |
-|   4     |LoRa: SF8 / 125kHz |                 3125               |
-|   5     |LoRa: SF7 / 125kHz |                 5470               |
-|   6     |LoRa: SF8/500kHz   |                 12500              |
-|   7     |        RFU        |                 RFU                |
-|   8     |LoRa: SF12/500kHz  |                 980                |
-|   9     |LoRa: SF11/500kHz  |                 1760               |
-|   10    |LoRa: SF10/500kHz  |                 3900               |
-|   11    |LoRa: SF9/500kHz   |                 7000               |
-|   12    |LoRa: SF8/500kHz   |                 12500              |
+| Data Rate | Configuration       | Indicative physical bit rate [bit/s] |
+| --------- | ------------------- | ------------------------------------ |
+| 0         | LoRa: SF12 / 125kHz | 250                                  |
+| 1         | LoRa: SF11 / 125kHz | 440                                  |
+| 2         | LoRa: SF10 / 125kHz | 980                                  |
+| 3         | LoRa: SF9 / 125kHz  | 1760                                 |
+| 4         | LoRa: SF8 / 125kHz  | 3125                                 |
+| 5         | LoRa: SF7 / 125kHz  | 5470                                 |
+| 6         | LoRa: SF8/500kHz    | 12500                                |
+| 7         | RFU                 | RFU                                  |
+| 8         | LoRa: SF12/500kHz   | 980                                  |
+| 9         | LoRa: SF11/500kHz   | 1760                                 |
+| 10        | LoRa: SF10/500kHz   | 3900                                 |
+| 11        | LoRa: SF9/500kHz    | 7000                                 |
+| 12        | LoRa: SF8/500kHz    | 12500                                |
 
 ### IN865
 
-|Data Rate|   Configuration   |Indicative physical bit rate [bit/s]|
-|---------|-------------------|------------------------------------|
-|   0     |LoRa: SF12 / 125kHz|                 250                |
-|   1     |LoRa: SF11 / 125kHz|                 440                |
-|   2     |LoRa: SF10 / 125kHz|                 980                |
-|   3     |LoRa: SF9 / 125kHz |                 1760               |
-|   4     |LoRa: SF8 / 125kHz |                 3125               |
-|   5     |LoRa: SF7 / 125kHz |                 5470               |
-|   6     |RFU                |                 RFU                |
-|   7     |FSK: 50kbps        |                 50000              |
-| 8 ~ 15  |RFU                |                 RFU                |
+| Data Rate | Configuration       | Indicative physical bit rate [bit/s] |
+| --------- | ------------------- | ------------------------------------ |
+| 0         | LoRa: SF12 / 125kHz | 250                                  |
+| 1         | LoRa: SF11 / 125kHz | 440                                  |
+| 2         | LoRa: SF10 / 125kHz | 980                                  |
+| 3         | LoRa: SF9 / 125kHz  | 1760                                 |
+| 4         | LoRa: SF8 / 125kHz  | 3125                                 |
+| 5         | LoRa: SF7 / 125kHz  | 5470                                 |
+| 6         | RFU                 | RFU                                  |
+| 7         | FSK: 50kbps         | 50000                                |
+| 8 ~ 15    | RFU                 | RFU                                  |
 
 ## Appendix II: Modbus Data Encapsulation Protocol
 
 This section describes the definition of the Modbus message encapsulation format.
 
-|Message Command|Message Sequence Number|Data Length| Data |
-|---------------|-----------------------|-----------|------|
-|   DTU_CMD     |       MSER            | MDATA_LEN |MDATA |
-|   1Byte       |       2Byte           | 2Byte     |nByte |
+| Message Command | Message Sequence Number | Data Length | Data  |
+| --------------- | ----------------------- | ----------- | ----- |
+| DTU_CMD         | MSER                    | MDATA_LEN   | MDATA |
+| 1Byte           | 2Byte                   | 2Byte       | nByte |
 
 * **DTU_CMD**: Message Command (Chapter 9.1)
 * **MSER**: Message Sequence Number
@@ -1757,9 +1758,9 @@ This message needs to be sent to the platform whether the LoRa configuration is 
 
 * Format of downlink instruction message:
 
-|DTU_CMD| MSER |MDATA_LEN|MDATA|
-|-------|------|---------|-----|
-| 0x06  |2Byte |  2Byte  |0Byte|
+| DTU_CMD | MSER  | MDATA_LEN | MDATA |
+| ------- | ----- | --------- | ----- |
+| 0x06    | 2Byte | 2Byte     | 0Byte |
 
 * Uplink data message format when execution successful:
 
@@ -1870,9 +1871,9 @@ This message needs to be sent to the platform whether the LoRa configuration is 
 
 * Uplink data message format when execution successful:
 
-|DTU_CMD| MSER |MDATA_LEN|MDATA|
-|-------|------|---------|-----|
-| 0x87  |2Byte |  2Byte  |0Byte|
+| DTU_CMD | MSER  | MDATA_LEN | MDATA |
+| ------- | ----- | --------- | ----- |
+| 0x87    | 2Byte | 2Byte     | 0Byte |
 
 * Uplink data message format when execution failed:
 
@@ -1915,9 +1916,9 @@ This message needs to be sent to the platform whether the DTU configuration is r
 
 * Format of downlink instruction message: 
 
-|DTU_CMD| MSER |MDATA_LEN|MDATA|
-|-------|------|---------|-----|
-| 0x08  |2Byte |  2Byte  |0Byte|
+| DTU_CMD | MSER  | MDATA_LEN | MDATA |
+| ------- | ----- | --------- | ----- |
+| 0x08    | 2Byte | 2Byte     | 0Byte |
 
 * Uplink data message format when execution successful:
 
@@ -2055,9 +2056,9 @@ This message needs to be sent to the platform whether the DTU configuration is r
 
 * Uplink data message format when execution successful:
 
-|DTU_CMD| MSER |MDATA_LEN|MDATA|
-|-------|------|---------|-----|
-| 0x89  |2Byte |  2Byte  |0Byte|
+| DTU_CMD | MSER  | MDATA_LEN | MDATA |
+| ------- | ----- | --------- | ----- |
+| 0x89    | 2Byte | 2Byte     | 0Byte |
 
 * Uplink data message format when execution failed: 
 
@@ -2131,15 +2132,15 @@ It needs to be sent to the platform whether the DTU configuration is read succes
 
 * Format of downlink instruction message: 
 
-|DTU_CMD| MSER |MDATA_LEN|MDATA|
-|-------|------|---------|-----|
-| 0x1D  |2Byte |  2Byte  |0Byte|
+| DTU_CMD | MSER  | MDATA_LEN | MDATA |
+| ------- | ----- | --------- | ----- |
+| 0x1D    | 2Byte | 2Byte     | 0Byte |
 
 * Uplink data message format when execution successful:
 
-|DTU_CMD| MSER |MDATA_LEN|MDATA|
-|-------|------|---------|-----|
-| 0x9D  |2Byte |  2Byte  |0Byte|
+| DTU_CMD | MSER  | MDATA_LEN | MDATA |
+| ------- | ----- | --------- | ----- |
+| 0x9D    | 2Byte | 2Byte     | 0Byte |
 
 * Uplink data message format when execution failed: 
 
@@ -2204,15 +2205,15 @@ It needs to be sent to the platform whether the DTU configuration is read succes
 
 * Format of downlink instruction message: 
 
-|DTU_CMD| MSER |MDATA_LEN|MDATA|
-|-------|------|---------|-----|
-| 0x1E  |2Byte |  2Byte  |0Byte|
+| DTU_CMD | MSER  | MDATA_LEN | MDATA |
+| ------- | ----- | --------- | ----- |
+| 0x1E    | 2Byte | 2Byte     | 0Byte |
 
 * Uplink data message format when execution successful:
 
-|DTU_CMD| MSER |MDATA_LEN|MDATA|
-|-------|------|---------|-----|
-| 0x9E  |2Byte |  2Byte  |0Byte|
+| DTU_CMD | MSER  | MDATA_LEN | MDATA |
+| ------- | ----- | --------- | ----- |
+| 0x9E    | 2Byte | 2Byte     | 0Byte |
 
 * Uplink data message format when execution failed: 
 

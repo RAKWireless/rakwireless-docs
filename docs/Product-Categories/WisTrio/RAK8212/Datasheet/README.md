@@ -6,6 +6,7 @@ tags:
   - datasheet
   - wistrio
   - RAK8212
+rak_desc: Covers the comprehensive information of your RAK8212 WisTrio iTracker Pro to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 ---
 
 # RAK8212 WisTrio iTracker Pro Datasheet

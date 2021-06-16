@@ -1,4 +1,6 @@
 ---
+rak_desc: Walks through different connection scenarios with your RAK Hotspot Miner v2. This includes both the outdoor and indoor enclosure and antennas of RAKwireless suitable for your LoRaWAN Gateway.
+
 next: ../Datasheet/
 prev: ../Quickstart/
 tags:

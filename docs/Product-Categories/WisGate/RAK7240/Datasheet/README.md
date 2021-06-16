@@ -1,4 +1,5 @@
 ---
+rak_desc:
 tags:
   - datasheet
   - wisgate
@@ -111,7 +112,7 @@ The status of the LEDs is described as below. Please refer to the printing of th
 | **Wi-Fi Feature**         | • **Frequency**: 2.400-2.4835GHz (802.11b/g/n)<br>• **RX Sensitivity**: -95dBm (Min)<br>• **TX Power**: 20dBm (Max)<br>• **Operation Channels**: 2.4GHz: 1-13                                                                                                                      |
 | **LoRa Feature**         | • **Card**: SX1301 Mini PCIe card (connects maximum of two),<br>• **Channels**: 8 Channels (Optional: 16 channels)<br>• **RX Sensitivity**: -139dBm (Min)<br>• **TX Power**: 27dBm (Max)<br>• **Frequency**: EU433 / CN470 / RU864 / IN865 / EU868 / US915 / AU915 / KR920 / AS923 |
 | **Cellular Feature**      | **Variant for Europe** <br>• LTE FDD: B1/B3/B7/B8/B20/B28A <br>• WCDMA: B1/B8 <br>• GSM: 900/1800MHz <br><br>**Variant for North America** <br>• LTE FDD: B2/B4/B5/B12/B13 <br>• WCDMA: B2/B4/B5                                                                                   |
-| **Power Supply**          | PoE (IEEE 802.3af) - 42~57V DC; Power Jack - 12V DC                                                                                                                                                                                                                                                      |
+| **Power Supply**          | PoE (IEEE 802.3af) - 42~57V DC                                                                                                                                                                                                                                                    |
 | **Power Consumption**     | 12 W (typical)                                                                                                                                                                                                                                                                     |
 | **Ethernet** (ETH)        | RJ45 (10/100M)                                                                                                                                                                                                                                                                     |
 | **Console**               | RJ45 (RS232)                                                                                                                                                                                                                                                                       |

@@ -4,6 +4,7 @@ next: false
 tags: 
   - Ethernet Cable Gland
   - datasheet
+rak_desc:  Covers the comprehensive information of your Ethernet Cable Gland to help you in using it. This information includes technical specifications, characteristics, and requirements.
 ---
 
 

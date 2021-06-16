@@ -1,4 +1,5 @@
 ---
+rak_desc: Contains instructions and tutorials in installing and deploying your RAK7240. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
 next: ../Datasheet/
 prev: ../Overview/
 tags:
@@ -16,12 +17,12 @@ tags:
   caption="RAK7240 WisGate Edge Prime"
 /> -->
 
-### What do you need?
+### What Do You Need?
 
 1. **RAK7240 WisGate Edge Prime**
 2. A Windows/Mac OS/Linux Computer
 
-### What's included in the Package?
+### What's Included in the Package?
 
 <rk-img
   src="/assets/images/wisgate/rak7240/quickstart/2.package-contents.jpg"

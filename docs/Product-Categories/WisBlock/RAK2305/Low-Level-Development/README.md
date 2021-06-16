@@ -1,4 +1,5 @@
 ---
+rak_desc: Aside from the default RAK firmware on the RAK2305, you can create custom firmware using RUI (RAKwireless Unified Interface) or the actual SDK from the manufacturer of the microcontroller that is used inside the module.
 prev: ../Quickstart/
 next: ../Datasheet/
 tags: RAK2305

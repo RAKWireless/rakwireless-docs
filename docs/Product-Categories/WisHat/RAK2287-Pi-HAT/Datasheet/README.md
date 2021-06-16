@@ -10,7 +10,7 @@ certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification/RAK2287%20CE%20certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification/RAK2287%20FCC%20certification.zip]
   - [IC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification/RAK2287%20IC%20certification.zip]
-
+rak_desc: Covers the comprehensive information of your RAK2287 Pi HAT to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 ---
 
 # RAK2287 Pi HAT Datasheet

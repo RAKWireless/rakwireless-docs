@@ -1,9 +1,11 @@
 ---
+rak_desc: Covers the comprehensive information of your RAK4600 Module to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 tags:
   - datasheet
   - wisduo
   - RAK4600
-prev: ../Deep-Development/
+prev: ../Low-Level-Development/
+next: false
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600%20CE%20Certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600%20FCC%20Certification.zip]

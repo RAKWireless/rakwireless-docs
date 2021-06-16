@@ -5,6 +5,7 @@ tags:
   - Bobcat Outdoor Enclosure Kit
   - Installation Guide
   - RAKBox-GW-4B
+rak_desc: In this guide, the process of assembling and mounting an outdoor case for the Bobcat Miner 300 will be shown step by step. Strict adherence to the steps guarantees a secured and durable outdoor casing.
 ---
 
 # Installation Guide

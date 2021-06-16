@@ -5,6 +5,7 @@ tags:
   - AT Command Manual
   - wistrio
   - RAK8212
+rak_desc: For an easier experience with your RAK8212 WisTrio iTracker Pro, a comprehensive list of commands in configuring your device is provided.
 ---
 
 # AT Command Manual

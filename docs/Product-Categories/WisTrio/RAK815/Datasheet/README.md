@@ -5,6 +5,7 @@ tags:
   - datasheet
   - wistrio
   - RAK815
+rak_desc: Covers the comprehensive information of your RAK815 WisTrio LPWAN Tracker to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 ---
 
 # RAK815 WisTrio LPWAN Tracker Datasheet

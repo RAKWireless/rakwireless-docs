@@ -5,6 +5,7 @@ tags:
   - AT Command Maunual
   - RAK5010
   - wistrio
+rak_desc: For an easier experience with your RAK5010-M WisTrio NB-IoT Tracker Pro, a comprehensive list of commands in configuring your device is provided.
 ---
 
 # AT Command Manual

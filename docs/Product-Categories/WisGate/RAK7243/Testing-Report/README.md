@@ -1,4 +1,5 @@
 ---
+rak_desc: Displays the RAK7243 test requirements and results in different temperature work and storage scenarios. This ensures that your LoRaWAN Gateway can operate efficiently in various conditions.
 prev: ../Quickstart/
 next: false
 tags:

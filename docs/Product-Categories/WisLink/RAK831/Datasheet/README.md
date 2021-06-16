@@ -7,6 +7,7 @@ prev: ../Overview/
 next: false
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK831-LoRa-Gateway/Certification-Report/CE%20Label%20and%20Label%20location_RED.pdf]
+rak_desc: Covers the comprehensive information of your RAK831 WisLink LPWAN Concentrator to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 ---
 
 # RAK831 WisLink LPWAN Concentrator Datasheet

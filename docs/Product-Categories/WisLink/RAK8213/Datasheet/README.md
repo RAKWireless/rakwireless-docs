@@ -5,6 +5,7 @@ tags:
   - RAK8213
 prev: ../Quickstart/
 next: false
+rak_desc: Covers the comprehensive information of your RAK8213 WisLink Cellular mPCIe to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 ---
 
 # RAK8213 WisLink Cellular mPCIe Datasheet
