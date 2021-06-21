@@ -511,9 +511,9 @@ This command allows the user to get the duty cycle time (in seconds). The comman
 
 ### AT+DR 
 
-Description: Duty cycle settings
+Description: Data rate settings
 
-This command allows the user to access and configure duty cycle settings.
+This command allows the user to access and configure data rate settings.
 
 | Command                   | Input Parameter                 | Return Value                                              | Return Code            |
 | ------------------------- | ------------------------------- | --------------------------------------------------------- | ---------------------- |
@@ -1066,13 +1066,13 @@ If Class is C, periodicity parameter is removed.
 
 For class B,
 ```
-> AT+ADDMULC=B:01020304:0102030405060708:0102030405060708:868000000:0:0
+> AT+ADDMULC=B:11223344:11223344556677881122334455667788:11223344556677881122334455667788:868000000:0:0
 
 OK
 ```
 For class C,
 ```
-> AT+ADDMULC=C:01020304:0102030405060708:0102030405060708:868000000:0
+> AT+ADDMULC=C:11223344:11223344556677881122334455667788:11223344556677881122334455667788:868000000:0
 
 OK
 ```

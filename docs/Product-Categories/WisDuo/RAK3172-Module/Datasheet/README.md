@@ -204,15 +204,19 @@ Standard conditions for reflow soldering:
 
 ### Software
 
-Download the latest firmware of the RAK3172 WisDuo LPWAN Module — both in low and high frequency — provided in the table below.
+Download the latest firmware of the RAK3172 WisDuo LPWAN Module provided below. RAK3172(L) and RAK3172(H) uses the same firmware and it will automatically detect the variant of the module being used.
 
+The **bin file** contains the application code only and you need the RAK DFU Tool to upload this file to the module.
+
+The **hex file** contains both the bootloader and the application code. You need to use STM32CubeProgrammer to upload this.
+
+RAK3172 uses UART2 serial pins to upload the latest firmware.
 
 #### Firmware / OS
 
 | Model     | Version     | Source                                                              |
 | --------- | ----------- | ------------------------------------------------------------------- |
-| RAK3172(L) | V3.0.0.1.L | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/) |
-| RAK3172(H) | V3.0.0.1.H | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/) |
+| RAK3172 | V1.0.2 | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/RAK3172_Latest_Firmware.zip) |
 
 <!-- ## Certification
 

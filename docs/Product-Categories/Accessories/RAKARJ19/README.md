@@ -1,1 +1,1 @@
-<rk-redirect to="/Product-Categories/Accessories/RAKARJ19/Overview/" />
+<rk-redirect to="/Product-Categories/Accessories/RAKARJ19/Datasheet/" />

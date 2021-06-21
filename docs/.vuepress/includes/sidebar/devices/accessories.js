@@ -161,12 +161,28 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAKARJ14/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
     }
   ],
   '/Product-Categories/Accessories/RAKARJ15/': [
     {
       title: 'Overview',
       path: '/Product-Categories/Accessories/RAKARJ15/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAKARJ15/Datasheet/',
       collapsable: false,
       nested: true,
       download: true,
@@ -181,12 +197,28 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAKARJ16/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
     }
   ],
   '/Product-Categories/Accessories/RAKARJ17/': [
     {
       title: 'Overview',
       path: '/Product-Categories/Accessories/RAKARJ17/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAKARJ17/Datasheet/',
       collapsable: false,
       nested: true,
       download: true,
@@ -201,12 +233,28 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAKARJ18/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
     }
   ],
   '/Product-Categories/Accessories/RAKARJ19/': [
     {
       title: 'Overview',
       path: '/Product-Categories/Accessories/RAKARJ19/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAKARJ19/Datasheet/',
       collapsable: false,
       nested: true,
       download: true,
@@ -221,11 +269,27 @@ module.exports = {
         nested: true,
         download: true,
         sidebarDepth: 4
+      },
+      {
+        title: 'Datasheet',
+        path: '/Product-Categories/Accessories/RAKA0C52/Datasheet/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
       }
   ],
   '/Product-Categories/Accessories/RAKARG15/': [
     {
       title: 'Overview',
+      path: '/Product-Categories/Accessories/RAKARG15/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
       path: '/Product-Categories/Accessories/RAKARG15/Overview/',
       collapsable: false,
       nested: true,
@@ -237,6 +301,14 @@ module.exports = {
     {
       title: 'Overview',
       path: '/Product-Categories/Accessories/905000-905001/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/905000-905001/Datasheet/',
       collapsable: false,
       nested: true,
       download: true,
@@ -338,6 +410,14 @@ module.exports = {
       {
         title: 'Overview',
         path: '/Product-Categories/Accessories/Antenna-Mounting-Kit/Overview/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      },
+      {
+        title: 'Datasheet',
+        path: '/Product-Categories/Accessories/Antenna-Mounting-Kit/Datasheet/',
         collapsable: false,
         nested: true,
         download: true,

@@ -57,9 +57,11 @@ Before powering on, it is best advice to follow the guidelines below to avoid da
 
 1. Attach the LoRa Antenna.  
 
-2. When you are ready to set up your RAK Hotspot Miner, plugin, and connect the included power supply to the USB-C port on the RAK Hotspot Miner. After 30 seconds, the device should be ready to configure via the app.
+2. When you are ready to set up your RAK Hotspot Miner, plugin, and connect the included power supply to the USB-C port on the RAK Hotspot Miner. 
 
-3. After approximately one minute, the RAK Hotspot Miner will be ready to be added via the Helium app. Select **Set up Hotspot** in the app and follow the prompts, press the Pairing button as requested.
+3. After approximately one minute, the RAK Hotspot Miner will be ready to be added via the Helium app. Press the pairing button on the side to enable the hotspot Pairing mode.
+   
+4. Select **Set up Hotspot** in the app and follow the prompts, press the Pairing button as requested.
    
 :::tip 📝 NOTE
 If in the future you need to connect to the app again, you only need to press the button.
