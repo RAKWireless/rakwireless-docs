@@ -567,6 +567,24 @@ module.exports = {
           download: true,
           sidebarDepth: 4
         }
+      ],
+      '/Product-Categories/Accessories/Antenna-Clip/': [
+        {
+          title: 'Overview',
+          path: '/Product-Categories/Accessories/Antenna-Clip/Overview/',
+          collapsable: false,
+          nested: true,
+          download: true,
+          sidebarDepth: 4
+        },
+        {
+          title: 'Datasheet',
+          path: '/Product-Categories/Accessories/Antenna-Clip/Datasheet/',
+          collapsable: false,
+          nested: true,
+          download: true,
+          sidebarDepth: 4
+        }
 ],
 
 

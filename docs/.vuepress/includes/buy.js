@@ -500,7 +500,7 @@ export default {
   '/Product-Categories/Accessories/905000-905001/': {
     label: '858~878MHz 8dBi Fiber Glass Antenna',
     img: '/assets/images/accessories/905000-905001/antenna_view.png',
-    store: 'https://store.rakwireless.com'
+    store: 'https://store.rakwireless.com/products/fiber-glass-antenna-1'
   },
   '/Product-Categories/Accessories/Outdoor-Enclosure-Kit/': {
     label: 'Outdoor Enclosure Kit H D4/D4+/D4P',
@@ -550,17 +550,17 @@ export default {
   '/Product-Categories/Accessories/RAKARP01/': {
     label: '860-930MHz 12dBi Directional Antenna',
     img: '/assets/images/accessories/rakarp01/overview/unipolarization-plate.png',
-    store: 'https://store.rakwireless.com/'
+    store: 'https://store.rakwireless.com/products/directional-antenna'
   },
   '/Product-Categories/Accessories/RAK9734/': {
     label: 'Pulsar Cable',
     img: '/assets/images/accessories/rak9734/1.png',
-    store: 'https://store.rakwireless.com/'
+    store: 'https://store.rakwireless.com/products/pulsar-cable-lmr400-for-12dbi-directional-antenna?variant=39849945366726'
   },
   '/Product-Categories/Accessories/RAK9732/': {
     label: 'Pulsar Cable',
     img: '/assets/images/accessories/rak9732/overview/rak9732.png',
-    store: 'https://store.rakwireless.com/'
+    store: 'https://store.rakwireless.com/products/pulsar-cable-lmr400-for-12dbi-directional-antenna?variant=39849945333958'
   },
   '/Product-Categories/Accessories/Bobcat-Enclosure-Kit/': {
     label: 'Bobcat Outdoor Enclosure Kit',
@@ -568,18 +568,23 @@ export default {
     store: 'https://store.rakwireless.com/products/bobcat-outdoor-enclosure-kit?variant=39856615194822'
   },
   '/Product-Categories/Accessories/RAKARG18/': {
-    label: '863-870 MHz 5 dBi Fiber Glass Antenna',
+    label: '863-870MHz 5dBi Fiber Glass Antenna',
     img: ' /assets/images/accessories/rakarg18/5dbi_antenna.png',
     store: 'https://store.rakwireless.com/products/5dbi-fiber-glass-antenna'
   },
   '/Product-Categories/Accessories/RAKARG19/': {
     label: '902-928MHz 5dBi Fiber Glass Antenna',
     img: '/assets/images/accessories/rakarg19/5dbi_antenna.png',
-    store: 'https://store.rakwireless.com/'
+    store: 'https://store.rakwireless.com/products/5dbi-fiber-glass-antenna-supports-902-928mhz'
   },
   '/Product-Categories/Accessories/Ethernet-Cable-Gland/': {
     label: 'Ethernet Cable Gland',
     img: '/assets/images/accessories/ethernet-cable-gland/ethernet-cable-gland.png',
     store: 'https://store.rakwireless.com/products/ethernet-cable-gland'
+  },
+  '/Product-Categories/Accessories/Antenna-Clip/': {
+    label: 'Antenna Clip',
+    img: '/assets/images/accessories/antenna-clip/antenna-clip.png',
+    store: 'https://store.rakwireless.com/products/antenna-clip'
   },
 }
