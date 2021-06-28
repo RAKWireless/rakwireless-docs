@@ -8,8 +8,8 @@ tags:
 next: false
 prev: ../Troubleshooting/
 certifications:
-  - [KCC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotMiner_KC_certificate.zip)]
-  - [RCM, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RCMA0210312001RCM%20cert-RAK7248%20RCM_Australia.pdf]
+  - [KCC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotMinerV2.0_KC_Certification.pdf]
+  - [RCM, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotMinerV2.0_RCM_Certification.pdf]
 ---
 
 # RAK Hotspot Miner Datasheet
