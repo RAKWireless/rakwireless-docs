@@ -1116,12 +1116,9 @@ Refer to the table for the minimum hardware and software required to perform the
 Execute the following procedure to upgrade the firmware in Device Firmware Upgrade (DFU) mode through the UART1 interface.
 
 
-1.	Download the latest application firmware of the RAK811 that can be found on the datasheet.
+1.	Download the latest application firmware of the RAK811 that can be found on the [RAK811 Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#firmware-os).
 
-    - [RAK811 Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#firmware-os)
-
-2.	Download the RAK Device Firmware Upgrade (DFU) tool.
-    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+2.	Download the [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/).
 
 3.	Connect the RAK811 module with a computer through a USB to TTL. Refer to [Figure 1](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#connect-to-the-rak811).
 

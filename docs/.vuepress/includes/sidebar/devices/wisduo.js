@@ -523,4 +523,29 @@ module.exports = {
     sidebarDepth: 4
   }
   ],
+  '/Product-Categories/WisDuo/RAK3272S-Breakout-Board/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'AT Command Manual',
+    path: '/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },  
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 5
+  }
+  ],
 }

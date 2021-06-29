@@ -211,6 +211,11 @@ export default {
     img: '/assets/images/wisduo/rak3172-module/overview/RAK3172_Module_buy.png',
     store: 'https://store.rakwireless.com/products/wisduo-lpwan-module-rak3172?utm_source=WisBlockRAK3172&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisDuo/RAK3272S-Breakout-Board/': {
+    label: 'RAK3272S Breakout Board',
+    img: '/assets/images/wisduo/rak3272s-breakout-board/overview/RAK3272S_Breakout_home.png',
+    store: 'https://store.rakwireless.com/'
+  },
 
   // Wisgate
   '/Product-Categories/WisGate/RAK7240/': {

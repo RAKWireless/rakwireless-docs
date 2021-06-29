@@ -1,6 +1,7 @@
 ---
 prev: /Product-Categories/
 displayAllHeaders: true
+rak_desc: RAK provides you two software tools used for upgrading the latest firmware of your RAK device and for the serial communications.
 ---
 
 # Software Tools

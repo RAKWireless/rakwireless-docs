@@ -1,6 +1,7 @@
 ---
 prev: /Product-Categories/
 displayAllHeaders: true
+rak_desc: RAKwireless supports you in the development of your custom application with the RAKwireless Unified Interface (RUI), the RUI API, libraries and example codes.
 ---
 
 # Software APIs and Libraries

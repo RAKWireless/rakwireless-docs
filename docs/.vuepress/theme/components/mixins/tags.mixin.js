@@ -34,6 +34,7 @@ export default {
         .replace(/<title>/g, title)
         .replace(/<pageURL>/g, pageURL)
         .replace(/<imgURL>/g, imgURL)
+        .replace(/<og_description>/g, description)
         .replace(/<description>/g, description)
     }
   }

@@ -14,6 +14,14 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
-    }
+    },
+    {
+      title: 'AT Command Manual',
+      path: '/Product-Categories/WisDuino/RAK811-Evaluation-Board/AT-Command-Manual/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }                                              
   ]
 }

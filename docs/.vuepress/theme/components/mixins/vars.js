@@ -76,7 +76,7 @@ export default {
     <meta property="og:title" content="<title>">
     <meta property="og:site_name" content="RAK Documentation Center">
     <meta property="og:url" content="<pageURL>">
-    <meta property="og:description" content="<description>">
+    <meta property="og:description" content="<og_description>">
     <meta property="og:type" content="website">
     <meta property="og:image" content="<imgURL>">
     <meta name="twitter:card" content="summary_large_image">
@@ -84,6 +84,7 @@ export default {
     <meta name="twitter:title" content="<title>">
     <meta name="twitter:description" content="<description>">
     <meta name="twitter:image" content="<imgURL>">
+    <meta name="description" content="<description>">
   `,
   canonical: `<link rel='canonical' href='<pageURL>'/>`
 }

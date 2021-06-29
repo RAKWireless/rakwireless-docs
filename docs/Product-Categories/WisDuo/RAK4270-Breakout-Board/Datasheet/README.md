@@ -12,7 +12,7 @@ next: false
 
 ## Overview
 
-## Description
+### Description
 
 **RAK4270 Breakout Board** is a simple board specially designed to facilitate the external connection of RAK4270 pins. The main purpose is to access the pins of the stamp module over two (2) rows of 2.54&nbsp;mm headers. Hence, it is convenient to debug the RAK4270 Breakout Board.     
 
@@ -23,7 +23,7 @@ The module complies with the LoRaWAN 1.0.2 protocol, so it can be used for imple
 This module is expected to be controlled by an external controller through its UART interface by sending a set of AT commands. These AT commands control not only the state of this module but also set the LoRaWan communication parameters and payloads (see RAK [AT Command Manual](/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/)).
 
 
-## Features
+### Features
 
 - LoRa module for Smart City, Smart Agriculture, Smart Industry
 - I/O ports: **UART/I2C/GPIO**

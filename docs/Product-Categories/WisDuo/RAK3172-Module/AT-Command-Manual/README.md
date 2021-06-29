@@ -67,7 +67,7 @@ The possible status are:
 | `AT_PARAM_ERROR`         | The input parameter of the command is wrong.         |
 | `AT_BUSY_ERROR`          | The network is busy so the command is not completed. |
 | `AT_TEST_PARAM_OVERFLOW` | The parameter is too long.                           |
-| `AT_NO_NETWORK_JOINED`   | Module is not yet joined to a networrk.              |
+| `AT_NO_NETWORK_JOINED`   | Module is not yet joined to a network.               |
 | `AT_RX_ERROR`            | Error detected during the reception of the command   |
 | `AT_DUTYCYLE_RESTRICTED` | Duty cycle limited and cannot send data              |
 
@@ -705,7 +705,7 @@ This command allows the user to access and configure device network link status.
 Input parameter details:
 0 - Disable Link Check
 1 - Execute Link Check just once on the next payload uplink.
-2 - Module will automatically execulte one time Link Check after every payload uplink.
+2 - Module will automatically execute one time Link Check after every payload uplink.
 
 Reply format:
 

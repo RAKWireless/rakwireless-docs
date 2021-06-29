@@ -10,12 +10,12 @@ tags:
   - wisduino
 ---
 
-# WisDuino RAK811 Evaluation Board
+# RAK811 Evaluation Board
 
-Thank you for choosing **WisDuino RAK811 Evaluation Board** in your awesome IoT Project! 🎉 
-To help you get started, we have provided the necessary documentations for the product.
+Thank you for choosing **RAK811 Evaluation Board** in your awesome IoT Project! 🎉 To help you get started, we have provided the necessary documentations for the product.
 
 * [Quick Start Guide](../Quickstart/)
+* [AT Command Manual](../AT-Command-Manual/)
 
 <!-- <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/overview/o5qqux3jaeyiiuosw0qi.jpg"
@@ -26,9 +26,9 @@ To help you get started, we have provided the necessary documentations for the p
 
 ## Product Background
 
-The **WisDuino RAK811 Evaluation Board** is a development board which comes in an Arduino Uno form factor. It has a built-in MCU which allows it to function as a standalone solution or as an Arduino shield. This board is highly suitable for rapid development and testing, with its form factor and easy access to GPIOs (via the headers), plus the integrated USB-UART convert and port.
+The **RAK811 Evaluation Board** is a development board that comes in an Arduino Uno form factor. It has a built-in MCU which allows it to function as a standalone solution or as an Arduino shield. This board is highly suitable for rapid development and testing, with its form factor and easy access to GPIOs (via the headers), plus the integrated USB-UART convert and port.
 
-The module integrates the **Semtech SX1276** and a **STM32 Chip** that comes along with a firmware which comes with AT command support. It is easy to configure via the Micro USB and connects with LoRaWAN Network Server in just a couple of minutes. Now, rapid testing is made easy.
+The board integrates the **Semtech SX1276** and an **STM32 Chip** that comes along with a firmware which comes with AT command support. It is easy to configure via the Micro USB and connects with LoRaWAN Network Server in just a couple of minutes. Now, rapid testing is made easy.
 
 <!-- <rk-btn
   src="/Product-Categories/WisDuino/RAK811-Evaluation-Board/Quickstart/"
