@@ -435,6 +435,95 @@ export default {
     store: 'https://store.rakwireless.com/products/wiscore-esp32-module-rak11200?utm_source=WisBlockRAK11200&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
+  '/Product-Categories/WisBlock/RAK17000/': {
+    label: 'RAK17000 WisBlock Motor Control Module',
+    img: '/assets/images/wisblock/rak17000/overview/RAK17000_buy.png',
+    store: 'https://store.rakwireless.com/pages/wisblock'
+  },
+    
+  '/Product-Categories/WisBlock/RAK14002/': {
+    label: 'RAK14002 WisBlock 3-channel Touchpad Module',
+    img: '/assets/images/wisblock/rak14002/overview/RAK14002_buy.png',
+    store: 'https://store.rakwireless.com/pages/wisblock'
+  },
+    
+  '/Product-Categories/WisBlock/RAK13005/': {
+    label: 'RAK13005 WisBlock LIN module',
+    img: '/assets/images/wisblock/rak13005/overview/RAK13005_buy.png',
+    store: 'https://store.rakwireless.com/pages/wisblock'
+  },
+    
+  '/Product-Categories/WisBlock/RAK12007/': {
+    label: 'RAK12007 WisBlock Ultrasonic Sensor',
+    img: '/assets/images/wisblock/rak12007/overview/RAK12007_buy.png',
+    store: 'https://store.rakwireless.com/pages/wisblock'
+  },
+    
+  '/Product-Categories/WisBlock/RAK12004/': {
+    label: 'RAK12004 WisBlock MQ2 Gas Sensor',
+    img: '/assets/images/wisblock/rak12004/overview/RAK12004_buy.png',
+    store: 'https://store.rakwireless.com/pages/wisblock'
+  },
+    
+  '/Product-Categories/WisBlock/RAK13004/': {
+    label: 'RAK13004 WisBlock PWM Expansion Module',
+    img: '/assets/images/wisblock/rak13004/overview/rak13004_buy.png',
+    store: 'https://store.rakwireless.com/pages/wisblock'
+  },
+    
+  '/Product-Categories/WisBlock/RAK13003/': {
+    label: 'RAK13003 WisBlock IO Expansion Module',
+    img: '/assets/images/wisblock/rak13003/overview/rak13003_buy.png',
+    store: 'https://store.rakwireless.com/pages/wisblock'
+  },
+    
+  '/Product-Categories/WisBlock/RAK15002/': {
+    label: 'RAK15002 WisBlock SD Card Module',
+    img: '/assets/images/wisblock/rak15002/overview/rak15002_buy.png',
+    store: 'https://store.rakwireless.com/pages/wisblock'
+  },
+    
+  '/Product-Categories/WisBlock/RAK12002/': {
+    label: 'RAK12002 WisBlock RTC module',
+    img: '/assets/images/wisblock/rak12002/overview/rak12002_buy.png',
+    store: 'https://store.rakwireless.com/pages/wisblock'
+  },
+    
+  '/Product-Categories/WisBlock/RAK13002/': {
+    label: 'RAK13002 WisBlock IO Module',
+    img: '/assets/images/wisblock/rak13002/overview/rak13002_buy.png',
+    store: 'https://store.rakwireless.com/pages/wisblock'
+  },
+    
+  '/Product-Categories/WisBlock/RAK19005/': {
+    label: 'RAK19005 WisBlock Sensor Extension Cable',
+    img: '/assets/images/wisblock/rak19005/overview/RAK19005_buy.png',
+    store: 'https://store.rakwireless.com/pages/wisblock'
+  },
+    
+  '/Product-Categories/WisBlock/RAK14001/': {
+    label: 'RAK14001 WisBlock RGB LED Module',
+    img: '/assets/images/wisblock/rak14001/overview/RAK14001_buy.png',
+    store: 'https://store.rakwireless.com/pages/wisblock'
+  },
+    
+  '/Product-Categories/WisBlock/RAK13001/': {
+    label: 'RAK13001 WisBlock Relay IO Module',
+    img: '/assets/images/wisblock/rak13001/overview/RAK13001_buy.png',
+    store: 'https://store.rakwireless.com/pages/wisblock'
+  },
+    
+  '/Product-Categories/WisBlock/RAK19006/': {
+    label: 'RAK19006 WisBlock Wireless Charger',
+    img: '/assets/images/wisblock/rak19006/overview/RAK19006_buy.png',
+    store: 'https://store.rakwireless.com/pages/wisblock'
+  },
+    
+  '/Product-Categories/WisBlock/RAK12005/': {
+    label: 'RAK12005 WisBlock Rain Sensor',
+    img: '/assets/images/wisblock/rak12005/overview/RAK12005_buy.png',
+    store: 'https://store.rakwireless.com/pages/wisblock'
+  },
 
   // Accessories
   '/Product-Categories/Accessories/RAKARJ14/': {
@@ -505,7 +594,7 @@ export default {
   '/Product-Categories/Accessories/905000-905001/': {
     label: '858~878MHz 8dBi Fiber Glass Antenna',
     img: '/assets/images/accessories/905000-905001/antenna_view.png',
-    store: 'https://store.rakwireless.com/products/fiber-glass-antenna-1'
+    store: 'https://store.rakwireless.com'
   },
   '/Product-Categories/Accessories/Outdoor-Enclosure-Kit/': {
     label: 'Outdoor Enclosure Kit H D4/D4+/D4P',
@@ -555,17 +644,17 @@ export default {
   '/Product-Categories/Accessories/RAKARP01/': {
     label: '860-930MHz 12dBi Directional Antenna',
     img: '/assets/images/accessories/rakarp01/overview/unipolarization-plate.png',
-    store: 'https://store.rakwireless.com/products/directional-antenna'
+    store: 'https://store.rakwireless.com/'
   },
   '/Product-Categories/Accessories/RAK9734/': {
     label: 'Pulsar Cable',
     img: '/assets/images/accessories/rak9734/1.png',
-    store: 'https://store.rakwireless.com/products/pulsar-cable-lmr400-for-12dbi-directional-antenna?variant=39849945366726'
+    store: 'https://store.rakwireless.com/'
   },
   '/Product-Categories/Accessories/RAK9732/': {
     label: 'Pulsar Cable',
     img: '/assets/images/accessories/rak9732/overview/rak9732.png',
-    store: 'https://store.rakwireless.com/products/pulsar-cable-lmr400-for-12dbi-directional-antenna?variant=39849945333958'
+    store: 'https://store.rakwireless.com/'
   },
   '/Product-Categories/Accessories/Bobcat-Enclosure-Kit/': {
     label: 'Bobcat Outdoor Enclosure Kit',
@@ -573,14 +662,14 @@ export default {
     store: 'https://store.rakwireless.com/products/bobcat-outdoor-enclosure-kit?variant=39856615194822'
   },
   '/Product-Categories/Accessories/RAKARG18/': {
-    label: '863-870MHz 5dBi Fiber Glass Antenna',
+    label: '863-870 MHz 5 dBi Fiber Glass Antenna',
     img: ' /assets/images/accessories/rakarg18/5dbi_antenna.png',
     store: 'https://store.rakwireless.com/products/5dbi-fiber-glass-antenna'
   },
   '/Product-Categories/Accessories/RAKARG19/': {
     label: '902-928MHz 5dBi Fiber Glass Antenna',
     img: '/assets/images/accessories/rakarg19/5dbi_antenna.png',
-    store: 'https://store.rakwireless.com/products/5dbi-fiber-glass-antenna-supports-902-928mhz'
+    store: 'https://store.rakwireless.com/'
   },
   '/Product-Categories/Accessories/Ethernet-Cable-Gland/': {
     label: 'Ethernet Cable Gland',
@@ -590,6 +679,6 @@ export default {
   '/Product-Categories/Accessories/Antenna-Clip/': {
     label: 'Antenna Clip',
     img: '/assets/images/accessories/antenna-clip/antenna-clip.png',
-    store: 'https://store.rakwireless.com/products/antenna-clip'
+    store: 'https://store.rakwireless.com/'
   },
 }
