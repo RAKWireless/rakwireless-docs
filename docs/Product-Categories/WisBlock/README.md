@@ -131,15 +131,14 @@ WisBlock Power Modules extend the power supply options available for WisBlock. W
 <rk-products :tags="['wisblock', 'wispower']" />
 
 
-
-<!-- ## WisBlock Motor
+## WisBlock Motor
 <rk-head img="/assets/rakwireless/product-categories/WisBlock-Motor.svg">
 
-WisBlock Motor Modules utilize the use of external actuators. This enables the option to control electrical motors to WisBlock.
+WisBlock Motor Modules utilize the use of external actuators. This enables the option to control electrical motors with WisBlock.
 
 </rk-head>
 
-<rk-products :tags="['wisblock', 'wismotor']" /> -->
+<rk-products :tags="['wisblock', 'wismotor']" />
 
 
 <!-- ## WisBlock HMI

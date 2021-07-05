@@ -105,7 +105,7 @@ The RAK Hotspot Miner is the central hardware solution for all LoRa based radio 
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot-miner/datasheet/block-diagram.png"
-  width="65%"
+  width="75%"
   caption="RAK Hotspot Miner Block Diagram"
 />
 
