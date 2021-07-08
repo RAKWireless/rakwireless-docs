@@ -14,7 +14,7 @@ tags:
 
 RAK3172 WisDuo module is based on STM32WLE5CC chip and it is designed to simplify LoRaWAN and LoRa point to point (P2P) communication. To integrate LoRa technology into your projects, RAK3172 implemented easy to use UART communication interface where you can send AT commands. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can also use any microcontroller with UART interface to control the RAK3172 module. 
 
-The UART serial communication is exposed on the **LPUART1 port**, through  **Pin 2 (TX2)** and **Pin 1 (RX2)**. The default parameters of the UART1 communication are **9600 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK3172 Module Datasheet](/Product-Categories/WisDuo/RAK3172-Module/Datasheet/#rak3172-wisduo-lpwan-module-datasheet).
+The UART serial communication is exposed on the UART2 (also identified as **LPUART1 port**), through **Pin 2 (TX2)** and **Pin 1 (RX2)**. The default parameters of the UART2 communication are **9600 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK3172 Module Datasheet](/Product-Categories/WisDuo/RAK3172-Module/Datasheet/#rak3172-wisduo-lpwan-module-datasheet).
 
 ## Links to Quick Start Guide
 
@@ -810,7 +810,7 @@ This command allows the user to get firmware version installed on the device.
 | Command                    | Input Parameter | Return Value                              | Return Code |
 | -------------------------- | --------------- | ----------------------------------------- | ----------- |
 | AT+VER?                    | -               | `AT+VER: Get the version of the firmware` | `OK`        |
-| AT+VER=`<Input Parameter>` | -               | *< V.x.y   >*                             | `OK`        |
+| AT+VER=?                   | -               | *< V.x.y   >*                             | `OK`        |
 
 ## RF Test
 

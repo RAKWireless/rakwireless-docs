@@ -60,8 +60,8 @@ The RAK12002 WisBlock RTC module comprises a standard WisConnector. The WisConne
 :::
 
 <rk-img
-  src="/assets/images/wisblock/rak12002/datasheet/image-20210315142727059.png"
-  width="40%"
+  src="/assets/images/wisblock/rak12002/datasheet/RAK12002_Pinouts.svg"
+  width="50%"
   caption="RAK12002 WisBlock RTC Module Pinout"
 />
 

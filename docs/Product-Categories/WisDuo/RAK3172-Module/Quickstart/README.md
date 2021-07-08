@@ -23,7 +23,7 @@ This guide covers the following topics:
 
 ## Prerequisites
 
-### What do you need?
+### What Do You Need?
 
 Before going through the step in the installation guide of the RAK3172 WisDuo LPWAN Module, make sure to prepare the necessary items listed below:
 
@@ -115,7 +115,7 @@ The first step is to go to [The Things Network platform](https://console.cloud.t
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_1.png"
-  width="85%"
+  width="100%"
   caption="Selecting Cluster in TTN V3"
 />
 
@@ -125,13 +125,13 @@ To register as a new user to TTN, click on **Login with The Things ID** then sel
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_2.png"
-  width="85%"
+  width="100%"
   caption="Login using TTN account"
 />
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_3.png"
-  width="85%"
+  width="100%"
   caption="Registration of new account"
 />
 
@@ -141,7 +141,7 @@ After creating an account, you should login on the platform using your username/
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_4.png"
-  width="85%"
+  width="100%"
   caption="Logging in to TTN platform"
 />
 
@@ -149,7 +149,7 @@ You need to click **Authorize** to proceed.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_5.png"
-  width="85%"
+  width="100%"
   caption="Authorization to TTN"
 />
 
@@ -157,7 +157,7 @@ Now that you are logged in to the platform. The next step is to create an applic
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_6.png"
-  width="85%"
+  width="100%"
   caption="Creating TTN application for your LoRaWAN devices"
 />
 
@@ -165,7 +165,7 @@ To have an application registered, you need to input first the specific details 
  
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_7.png"
-  width="85%"
+  width="100%"
   caption="Details of the TTN application"
 />
 
@@ -177,7 +177,7 @@ You need to go to your application console to be able to register a device. To s
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_8.png"
-  width="85%"
+  width="100%"
   caption="Add end device"
 />
 
@@ -185,13 +185,13 @@ To register the module, you need to click first **Manually** then configure the 
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_9.png"
-  width="85%"
+  width="100%"
   caption="Manually register device to TTN"
 />
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_10.png"
-  width="85%"
+  width="100%"
   caption="Device activation configuration"
 />
 
@@ -209,7 +209,7 @@ It is advisable to use a meaningful End device ID, End device name and End devic
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_11.png"
-  width="85%"
+  width="100%"
   caption="OTAA Device Information"
 />
 
@@ -217,7 +217,7 @@ Next step is to setup **Frequency plan**, compatible **Regional Parameter versio
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_12.png"
-  width="75%"
+  width="100%"
   caption="OTAA Configuration"
 />
 
@@ -225,7 +225,7 @@ The last step in the registration of a new OTAA end-device is the configuration 
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_13.png"
-  width="75%"
+  width="100%"
   caption="OTAA AppKey generation and device registration"
 />
 
@@ -242,7 +242,7 @@ These parameters are always accessible on the device console page as shown on Fi
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_14.png"
-  width="85%"
+  width="100%"
   caption="OTAA device successfully registered to TTN"
 />
 
@@ -274,7 +274,7 @@ If do not receive an `OK` or any reply, you need to check if the wiring of your 
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/atstart.png"
-  width="65%"
+  width="90%"
   caption="at+version command response"
 />
 
@@ -310,6 +310,13 @@ Set the frequency/region to EU868.
 AT+BAND=4
 ```
 
+:::tip 📝 NOTE:
+
+Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK3172 to match the gateway and LoRaWAN network server. This is specially important on Regional Bands like US915, AU915, and CN470.
+
+To configure the masking of channels for the sub-bands, you can use the [AT+MASK command that can be found on the AT Commands Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-mask).
+:::
+
 **List of band parameter options**
 
 | Code  | Regional Band |
@@ -317,7 +324,7 @@ AT+BAND=4
 | 0     | EU433         |
 | 1     | CN470         |
 | 2     | RU864         |
-| 3     | IN865         |
+| 3     | IN890         |
 | 4     | EU868         |
 | 5     | US915         |
 | 6     | AU915         |
@@ -327,7 +334,7 @@ AT+BAND=4
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/otaaconfig.png"
-  width="65%"
+  width="90%"
   caption="Configuring LoRa Parameters"
 />
 
@@ -360,7 +367,7 @@ AT+APPKEY=04FA4E626EF5CF227C969601176275C2
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/otaaeuis.png"
-  width="65%"
+  width="90%"
   caption="Configuring LoRa Parameters"
 />
 
@@ -397,7 +404,7 @@ Send command format: **`AT+SEND=<port>:<payload>`**
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/otaajoin.png"
-  width="70%"
+  width="90%"
   caption="OTAA Test Sample Data Sent via RAK Serial Port Tool"
 />
 
@@ -406,7 +413,7 @@ You can see the data sent by the RAK3172 module on the TTN device console *Live 
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/otaasend.png"
-  width="90%"
+  width="100%"
   caption="OTAA Test Sample Data Sent Viewed in TTN"
 />
 
@@ -417,7 +424,7 @@ To register an ABP device, you need to go to your application console and select
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_8.png"
-  width="75%"
+  width="100%"
   caption="ABP Activation in TTN"
 />
 
@@ -425,13 +432,13 @@ To register the module, you need to click first **Manually** then configure the 
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_9.png"
-  width="75%"
+  width="100%"
   caption="Add end device"
 />
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_1_abp.png"
-  width="75%"
+  width="100%"
   caption="Manually register device to TTN"
 />
 
@@ -449,7 +456,7 @@ It is advisable to use a meaningful End device ID, End device name and End devic
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_2_abp.png"
-  width="75%"
+  width="100%"
   caption="ABP Activation in TTN"
 />
 
@@ -457,7 +464,7 @@ Next step is to setup **Frequency plan**, compatible **Regional Parameter versio
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_3_abp.png"
-  width="75%"
+  width="100%"
   caption="ABP Activation in TTN"
 />
 
@@ -465,7 +472,7 @@ The last step in the registration of a new ABP end-device is the configuration o
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_4_abp.png"
-  width="75%"
+  width="100%"
   caption="ABP Activation in TTN"
 />
 
@@ -473,7 +480,7 @@ You should now be able to see the device on the TTN console after you fully regi
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_5_abp.png"
-  width="75%"
+  width="100%"
   caption="RAK3172 in the context of the TTN"
 />
 
@@ -502,7 +509,7 @@ If do not receive an `OK` or any reply, you need to check if the wiring of your 
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/atstart.png"
-  width="65%"
+  width="90%"
   caption="at+version command response"
 />
 
@@ -537,6 +544,13 @@ Set the frequency/region to EU868.
 AT+BAND=4
 ```
 
+:::tip 📝 NOTE:
+
+Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK3172 to match the gateway and LoRaWAN network server. This is specially important on Regional Bands like US915, AU915, and CN470.
+
+To configure the masking of channels for the sub-bands, you can use the [AT+MASK command that can be found on the AT Commands Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-mask).
+:::
+
 **List of band parameter options**
 
 | Code  | Regional Band |
@@ -544,7 +558,7 @@ AT+BAND=4
 | 0     | EU433         |
 | 1     | CN470         |
 | 2     | RU864         |
-| 3     | IN865         |
+| 3     | IN890         |
 | 4     | EU868         |
 | 5     | US915         |
 | 6     | AU915         |
@@ -554,14 +568,14 @@ AT+BAND=4
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/abpconfig.png"
-  width="65%"
+  width="90%"
   caption="Configuring LoRa Parameters"
 />
 
 After configuration of the LoRaWAN parameters, the next step is to setup the device address and sessions keys. You need the use the values from the TTN console. 
 
 - Device Address: **260BDE80**
-- Application Session Key: **A585653A949C2B2D44B55E99E94CB533**
+- Application Session Key: **A585903A949C2B2D44B55E99E94CB533**
 - Network Session Key: **433C7A924F7F6947778FE821525F183A**
 
 Set the Device Address.
@@ -573,7 +587,7 @@ AT+DEVADDR=260BDE80
 Set the Application Session Key.
 
 ```
-AT+APPSKEY=A585653A949C2B2D44B55E99E94CB533
+AT+APPSKEY=A585903A949C2B2D44B55E99E94CB533
 ```
 
 Set the Network Session Key.
@@ -584,7 +598,7 @@ AT+NWKSKEY=433C7A924F7F6947778FE821525F183A
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/abpeuis.png"
-  width="65%"
+  width="90%"
   caption="Configuring LoRa Parameters"
 />
 
@@ -619,7 +633,7 @@ After checking all the things above, try to send LoRaWAN payloads again.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/abpjoin.png"
-  width="70%"
+  width="90%"
   caption="ABP Test Sample Data Sent via RAK Serial Port Tool"
 />
 
@@ -628,7 +642,7 @@ You can see the data sent by the RAK3172 module on the TTN device console *Live 
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/abpsend.png"
-  width="70%"
+  width="100%"
   caption="OTAA Test Sample Data Sent Viewed in TTN"
 />
 
@@ -744,6 +758,11 @@ Fill the parameters requested:
   * If you want to join in OTAA mode, select “**DeviceProfile_OTAA**”.
   * If you want to join in ABP mode, select “**DeviceProfile_ABP**”.
 
+:::tip 📝 NOTE:
+Device profiles **DeviceProfile_OTAA** and **DeviceProfile_ABP** are only available if you are using the built-in Chirpstack LoRaWAN Server of RAK Gateways.
+
+If you have your own Chirpstack installation, you can set up the device profile with `LoRaWAN MAC version 1.0.3` and `LoRaWAN Regional Parameters revision B` to make it compatible with RAK3172.
+:::
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/31.adding-parameters.png"
@@ -822,7 +841,7 @@ If do not receive an `OK` or any reply, you need to check if the wiring of your 
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/atstart.png"
-  width="65%"
+  width="90%"
   caption="at+version command response"
 />
 
@@ -858,6 +877,13 @@ Set the frequency/region to EU868.
 AT+BAND=4
 ```
 
+:::tip 📝 NOTE:
+
+Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK3172 to match the gateway and LoRaWAN network server. This is specially important on Regional Bands like US915, AU915, and CN470.
+
+To configure the masking of channels for the sub-bands, you can use the [AT+MASK command that can be found on the AT Commands Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-mask).
+:::
+
 **List of band parameter options**
 
 | Code  | Regional Band |
@@ -865,7 +891,7 @@ AT+BAND=4
 | 0     | EU433         |
 | 1     | CN470         |
 | 2     | RU864         |
-| 3     | IN865         |
+| 3     | IN890         |
 | 4     | EU868         |
 | 5     | US915         |
 | 6     | AU915         |
@@ -875,7 +901,7 @@ AT+BAND=4
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/otaaconfig.png"
-  width="65%"
+  width="90%"
   caption="Configuring LoRa Parameters"
 />
 
@@ -911,7 +937,7 @@ AT+APPKEY=F921D50CD7D02EE3C5E6142154F274B2
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/chirp_otaa_eui.png"
-  width="65%"
+  width="90%"
   caption="Configuring LoRa Parameters"
 />
 
@@ -948,7 +974,7 @@ Send command format: **`AT+SEND=<port>:<payload>`**
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/chirp_otaa_send.png"
-  width="70%"
+  width="90%"
   caption="OTAA Test Sample Data Sent via RAK Serial Port Tool"
 />
 
@@ -1022,7 +1048,7 @@ If do not receive an `OK` or any reply, you need to check if the wiring of your 
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/atstart.png"
-  width="65%"
+  width="90%"
   caption="at+version command response"
 />
 
@@ -1058,6 +1084,13 @@ Set the frequency/region to EU868.
 AT+BAND=4
 ```
 
+:::tip 📝 NOTE:
+
+Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK3172 to match the gateway and LoRaWAN network server. This is specially important on Regional Bands like US915, AU915, and CN470.
+
+To configure the masking of channels for the sub-bands, you can use the [AT+MASK command](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-mask) that can be found on the AT Commands Manual.
+:::
+
 **List of band parameter options**
 
 | Code  | Regional Band |
@@ -1065,7 +1098,7 @@ AT+BAND=4
 | 0     | EU433         |
 | 1     | CN470         |
 | 2     | RU864         |
-| 3     | IN865         |
+| 3     | IN890         |
 | 4     | EU868         |
 | 5     | US915         |
 | 6     | AU915         |
@@ -1075,7 +1108,7 @@ AT+BAND=4
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/abpconfig.png"
-  width="65%"
+  width="90%"
   caption="Configuring LoRa Parameters"
 />
 
@@ -1106,7 +1139,7 @@ AT+NWKSKEY=C280CB8D1DF688BC18601A97025C5488
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/chirp_abp_key.png"
-  width="65%"
+  width="90%"
   caption="Configuring LoRa Parameters"
 />
 
@@ -1136,7 +1169,7 @@ Send command format: **`AT+SEND=<port>:<payload>`**
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/chirp_abp_send.png"
-  width="70%"
+  width="90%"
   caption="ABP Test Sample Data Sent via RAK Serial Port Tool"
 />
 
@@ -1215,10 +1248,10 @@ Refer to the [P2P Mode](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Man
 />
 
 
-To set one module as receiver (RX), you need set the value of P2P receive command to 65535.
+To set one module as receiver (RX), you need set the value of P2P receive command to 90535.
 
 ```
-AT+PRECV=65535 
+AT+PRECV=90535 
 ```
 
 With one module configured as RX, the other device will be the TX.

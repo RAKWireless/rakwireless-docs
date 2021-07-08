@@ -17,7 +17,7 @@ Thank you for choosing **RAK13003 WisBlock IO Expansion Module** in your awesome
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK13003 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK13003.stp)
-* [24-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
+* [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 
 **Examples**: 

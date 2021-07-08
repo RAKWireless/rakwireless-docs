@@ -54,8 +54,8 @@ The hardware specification is categorized into four (4) parts. It discusses the 
 The RAK14001 WisBlock module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
 
 <rk-img
-  src="/assets/images/wisblock/rak14001/datasheet/rak14001-pinout.png"
-  width="30%"
+  src="/assets/images/wisblock/rak14001/datasheet/rak14001-pinout.svg"
+  width="70%"
   caption="RAK14001 Pinout Schematic"
 />
 
