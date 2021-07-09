@@ -25,6 +25,7 @@ rak_desc: Contains instructions and tutorials in installing and deploying your R
 3. 16GB SD Card + Card Reader
 4. 5V at least 2A Micro USB Power Supply or USB C Power Supply
 5. A Windows/Mac OS/Linux Computer
+6. The latest RAK2245 firmware files - https://downloads.rakwireless.com/LoRa/RAK2245/Firmware/
 
 
 ### What's included in the Package?
@@ -39,10 +40,10 @@ rak_desc: Contains instructions and tutorials in installing and deploying your R
 
 ### Accessing your Gateway
 
-After burning the image into the SD Card, make sure you have inserted the SD Card with the Latest Firmware installed to the **Raspberry Pi 3B+ / 4 with the RAK2245 Pi Hat LPWAN Concentrator Module** and the LoRa and GPS Antenna attached to it. After which, you can now safely power on the gateway. In this document, several ways in accessing the gateway are provided to have different alternatives for you to choose depending on the availability of the requirements needed.
+After burning the firmware image onto the SD Card, make sure you have inserted the SD Card into the **Raspberry Pi 3B+ / 4 with the RAK2245 Pi Hat LPWAN Concentrator Module** and have the LoRa and GPS Antenna connected. After which, you can now safely power on the gateway. In this document, several ways in accessing the gateway are provided to have different alternatives for you to choose depending on the availability of the requirements needed.
 
 :::warning ⚠️WARNING
-Before powering the Raspberry Pi 3B+ or 4 you should install the LoRa and GPS antennas. Not doing so might damage the boards.
+Before powering the Raspberry Pi 3B+ or 4 you should connect the LoRa and GPS antennas. Not doing so might damage the boards.
 :::
 
 #### Wi-Fi AP Mode
