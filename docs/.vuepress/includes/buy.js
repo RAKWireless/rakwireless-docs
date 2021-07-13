@@ -681,4 +681,14 @@ export default {
     img: '/assets/images/accessories/antenna-clip/antenna-clip.png',
     store: 'https://store.rakwireless.com/products/antenna-clip'
   },
+'/Product-Categories/Accessories/Antenna-Mounting-Kit/': {
+  label: 'Antenna Mounting Kit',
+  img: '/assets/images/accessories/antenna-mounting-kit/overview.png',
+  store: 'https://store.rakwireless.com/products/antenna-mounting-kit-1?_pos=1&_sid=b6c649ba1&_ss=r' 
+  },
+  '/Product-Categories/Accessories/GPS-Antenna/': {
+    label: 'GPS-Antenna',
+    img: '/assets/images/accessories/gps-antenna/gps-antenna.png',
+    store: 'https://store.rakwireless.com/products/gps-antenna' 
+  }
 }

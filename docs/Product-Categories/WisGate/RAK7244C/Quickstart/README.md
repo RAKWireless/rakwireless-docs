@@ -18,14 +18,15 @@ tags:
   caption="RAK7244C Product Overview"
 /> -->
 
-### What do you need?
+### What Do You Need?
 
 1. RAK7244C WisGate Developer D4+ Gateway
-2. 16GB SD Card + Card Reader
-3. 5V at least 3A Micro USB Power Supply
+2. 16&nbsp;GB SD Card + Card Reader
+3. 5&nbsp;V at least 3&nbsp;A Micro USB Power Supply
 4. A Windows/Mac OS/Linux Computer
+5. Latest [RAK7244C Firmware](/Product-Categories/WisGate/RAK7244/Datasheet/#firmware)
 
-### What's included in the Package?
+### What's Included in the Package?
 
 <rk-img
   src="/assets/images/wisgate/rak7244c/quickstart/quick-start-guide/package.png"
@@ -38,10 +39,10 @@ tags:
 
 ### Accessing Your Gateway
 
-After burning the image into the SD Card, make sure you have inserted the SD Card with the Latest Firmware installed to the **RAK7244C WisGate Developer D4+ Gateway** and the LoRa and GPS Antenna attached to it. After which, you can now safely power on the gateway. In this document, several ways in accessing the gateway are provided to have different alternatives for you to choose depending on the availability of the requirements needed.
+After burning the firmware image onto the SD Card, make sure you have inserted the SD Card into the **RAK7244C WisGate Developer D4+ Gateway** and have the LoRa and GPS Antenna connected. After which, you can now safely power on the gateway. In this document, several ways in accessing the gateway are provided to have different alternatives for you to choose depending on the availability of the requirements needed.
 
-::: warning
-Before powering the Raspberry Pi 4 you should install the LoRa and GPS antennas. Not doing so might damage the boards.
+:::warning ⚠️WARNING
+Before powering the Raspberry Pi 4, you should connect the LoRa and GPS antennas. Not doing so might damage the boards.
 :::
 
 #### 1. Wi-Fi AP Mode

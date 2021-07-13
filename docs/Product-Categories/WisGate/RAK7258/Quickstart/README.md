@@ -18,14 +18,14 @@ tags:
   caption="RAK7258 WisGate Edge Lite Internal Board"
 /> -->
 
-### What do you need?
+### What Do You Need?
 
 1. **RAK7258 WisGate Edge Lite**
 2. Ethernet Cable (RJ-45 Port)
 3. A Windows/Mac OS/Linux Computer
 
 
-### What's included in the Package?
+### What's Included in the Package?
 
 <rk-img
   src="/assets/images/wisgate/rak7258/quickstart/2.quickstart/package_contents.jpg"

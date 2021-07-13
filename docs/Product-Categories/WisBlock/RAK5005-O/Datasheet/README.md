@@ -606,10 +606,25 @@ A 5&nbsp;V Solar panel can be connected to the board via the **P2 connector** to
 Figure 14 shows the detailed mechanical dimensions of RAK5005-O.
 
 <rk-img
-  src="/assets/images/wisblock/rak5005-o/datasheet/15.mechanical-dimensions.png"
+  src="/assets/images/wisblock/rak5005-o/datasheet/RAK5005-O-dimension.png"
   width="100%"
   caption="Mechanical Dimensions"
 />
+
+Figures 15 and 16 show the mounting holes location and diameter of RAK5005-O Board.
+
+<rk-img
+  src="/assets/images/wisblock/rak5005-o/datasheet/pwb-rak5005-1.png"
+  width="100%"
+  caption="RAK5005-O Mounting Holes location and diameter"
+/>
+
+<rk-img
+  src="/assets/images/wisblock/rak5005-o/datasheet/pwb-rak5005-2.png"
+  width="100%"
+  caption="RAK5005-O Mounting Holes location and diameter"
+/>
+
 
 ##### WisConnector PCB Layout
 
@@ -631,7 +646,7 @@ The table below lists the operation and storage temperature requirements of RAK5
 
 #### Schematic Diagram
 
-The component schematics diagram of the RAK5005-O are shown in Figures 16 and 17:
+The component schematics diagram of the RAK5005-O are shown in Figures 18 and 19:
 
 
 <rk-img

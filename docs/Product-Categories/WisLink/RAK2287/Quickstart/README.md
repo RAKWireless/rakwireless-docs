@@ -16,7 +16,7 @@ rak_desc: Contains instructions and tutorials in installing and deploying your R
   caption="RAK2287 WisLink LPWAN Concentrator on top of the RAK2003 Pi Hat"
 /> -->
 
-### What do you need?
+### What Do You Need?
 
 The following two sections provide a list of the components and tools you need to get started with the development board. Some of those are included in the package, others you need to provide yourself.
 
@@ -38,7 +38,7 @@ The following two sections provide a list of the components and tools you need t
 
 For an easy and quick way of having a fully functional gateway, a Precompiled Firmware Image is provided. With that, this section gives you step-by-step instructions on how to install the Image into your SD Card used for the gateway.
 
-#### Burn the latest Firmware
+#### Burn the Latest Firmware
 
 1. Download the latest firmware of **[RAK2287](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Firmware/RAK2287_Latest_Firmware.zip)**, that is based on the Raspbian OS.
 2. Use an image writing tool to install the firmware on the SD Card. For this tutorial, you will be using **[Etcher](https://www.balena.io/etcher/),** an open-source utility used for burning image files.

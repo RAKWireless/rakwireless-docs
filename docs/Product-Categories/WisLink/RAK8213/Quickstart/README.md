@@ -16,7 +16,7 @@ rak_desc: Contains instructions and tutorials in installing and deploying your R
   caption="RAK8213 WisLink Cellular mPCIe"
 /> -->
 
-### What do you need?
+### What Do You Need?
 
 The following two sections will provide a list of the components and tools you need in order to get started with the development board. Some of those are included in the package, others you need to provide yourself.
 
@@ -40,7 +40,7 @@ The following two sections will provide a list of the components and tools you n
 
 An easy and quick way to have a fully functional gateway is by using a Precompiled Firmware Image provided. In this document, is the step by step instructions on how to install the Image into your SD Card used for the gateway.
 
-#### Burn the latest Firmware
+#### Burn the Latest Firmware
 
 1. Download the latest firmware **[here](https://downloads.rakwireless.com/Cellular/RAK8213/Firmware/)**, which is based on the Raspbian OS.
 2. You need to use an image writing tool to install the firmware on the SD Card. For this, You will be using **[Etcher](https://www.balena.io/etcher/),** which is an open source utility used for burning image files.
@@ -64,7 +64,7 @@ Click Flash and wait for a couple of minutes until it displays "**Flash Complete
 
 For the RAK8213 module to function as an extension for the Raspberry Pi, you need to assemble several components:
 
-#### SIM card
+#### SIM Card
 
 Insert the SIM card in the slot that sits on the back of the RAK8213. Best do this now as later on, it will be more difficult to access.
 
@@ -199,7 +199,7 @@ As you now have direct access to the Raspberry and its console you can proceed t
 
 Instructions and examples are provided in the following sections.
 
-#### Connect through Wi-Fi (Raspberry Pi built-in)
+#### Connect through Wi-Fi (Raspberry Pi Built-in)
 
 Now that you are logged into the Raspberry, you can proceed to accessing the configuration tool that comes with the RAKwireless firmware. To do so, execute the following steps:
 

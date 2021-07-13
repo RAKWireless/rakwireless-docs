@@ -17,7 +17,7 @@ Thank you for choosing **RAKBox-B3** in your awesome IoT Project! 🎉 To help y
 - [Installation Guide](../Installation/)
 - [RAKBox-B3 3D Model](https://downloads.rakwireless.com/3D_File/Accessory/RAKBox-B3.stp)
 
-## Product description
+## Product Description
 RAKBox-B3 is an IP20 rated enclosure for indoor usage. It is designed specifically for the WisBlock products.
 
 The enclosure is a small and lightweight design. Perfect for setups where space is limited. The slots in the cover allow airflow through the enclosure for applications that measure air temperature and humidity.
@@ -25,4 +25,4 @@ The enclosure is a small and lightweight design. Perfect for setups where space 
 ## Product Features
 
 - IP20 rated
-- Dimensions W x L x H: 90mm x 85mm x34mm
+- Dimensions W x L x H: 90&nbsp;mm x 85&nbsp;mm x34&nbsp;mm

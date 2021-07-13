@@ -290,7 +290,7 @@ module.exports = {
     },
     {
       title: 'Datasheet',
-      path: '/Product-Categories/Accessories/RAKARG15/Overview/',
+      path: '/Product-Categories/Accessories/RAKARG15/Datasheet/',
       collapsable: false,
       nested: true,
       download: true,

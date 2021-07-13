@@ -18,15 +18,16 @@ tags:
   caption="RAK7243 Product Overview"
 /> -->
 
-### What do you need?
+### What Do You Need?
 
 1. RAK7243 WisGate Developer D3
-2. 16GB SD Card (included) + Card Reader
-3. 5V at least 2.5A Micro USB Power Supply
+2. 16&nbsp;GB SD Card (included) + Card Reader
+3. 5&nbsp;V at least 2.5&nbsp;A Micro USB Power Supply
 4. A Windows/Mac OS/Linux Computer
+5. Latest [RAK7243 Firmware](/Product-Categories/WisGate/RAK7243C/Datasheet/#firmware)
 
 
-### What's included in the Package?
+### What's Included in the Package?
 
 <rk-img
   src="/assets/images/wisgate/rak7243/quickstart/2.quickstart/package.png"
@@ -37,12 +38,12 @@ tags:
 
 ## Product Configuration
 
-### Accessing your Gateway
+### Accessing Your Gateway
 
-After burning the image into the SD Card, make sure you have inserted the SD Card with the Latest Firmware installed to the **RAK7243 WisGate Developer D3** and the LoRa and GPS Antenna attached to it. After which, you can now safely power on the gateway. In this section, several ways in accessing the gateway are provided to have different alternatives for you to choose depending on the availability of the requirements needed.
+After burning the firmware image onto the SD Card, make sure you have inserted the SD Card into the **RAK7243 WisGate Developer D3** and have the LoRa and GPS Antenna connected. After which, you can now safely power on the gateway. In this section, several ways in accessing the gateway are provided to have different alternatives for you to choose depending on the availability of the requirements needed.
 
 :::warning ⚠️WARNING
-Before powering the RAK7243 WisGate Developer D3 you should install the LoRa and GPS antennas. Not doing so might damage the boards.
+Before powering the RAK7243 WisGate Developer D3, you should connect the LoRa and GPS antennas. Not doing so might damage the boards.
 :::
 
 #### Wi-Fi AP Mode

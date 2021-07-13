@@ -18,16 +18,17 @@ rak_desc: Contains instructions and tutorials in installing and deploying your R
   caption="RAK2245 Stacked on top of Raspberry Pi 3B+"
 /> -->
 
-### What do you need?
+### What Do You Need?
 
 1. RAK2245 Pi HAT WisLink LPWAN Concentrator
 2. Raspberry Pi 3B+ or Raspberry Pi 4
-3. 16GB SD Card + Card Reader
-4. 5V at least 2A Micro USB Power Supply or USB C Power Supply
+3. 16&nbsp;GB SD Card + Card Reader
+4. 5&nbsp;V at least 2&nbsp;A Micro USB Power Supply or USB C Power Supply
 5. A Windows/Mac OS/Linux Computer
+6. Latest [RAK2245 Pi HAT Firmware](/Product-Categories/WisLink/RAK2245-Pi-HAT/Datasheet/#firmware)
 
 
-### What's included in the Package?
+### What's Included in the Package?
 
 <rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/1.product-overview/2.quick-start/kscc95awtmatlcj3hiof.jpg"
@@ -37,12 +38,12 @@ rak_desc: Contains instructions and tutorials in installing and deploying your R
 
 ## Product Configuration
 
-### Accessing your Gateway
+### Accessing Your Gateway
 
-After burning the image into the SD Card, make sure you have inserted the SD Card with the Latest Firmware installed to the **Raspberry Pi 3B+ / 4 with the RAK2245 Pi Hat LPWAN Concentrator Module** and the LoRa and GPS Antenna attached to it. After which, you can now safely power on the gateway. In this document, several ways in accessing the gateway are provided to have different alternatives for you to choose depending on the availability of the requirements needed.
+After burning the firmware image onto the SD Card, make sure you have inserted the SD Card into the **Raspberry Pi 3B+ / 4 with the RAK2245 Pi Hat LPWAN Concentrator Module** and have the LoRa and GPS Antenna connected. After which, you can now safely power on the gateway. In this document, several ways in accessing the gateway are provided to have different alternatives for you to choose depending on the availability of the requirements needed.
 
 :::warning ⚠️WARNING
-Before powering the Raspberry Pi 3B+ or 4 you should install the LoRa and GPS antennas. Not doing so might damage the boards.
+Before powering the Raspberry Pi 3B+ or 4, you should connect the LoRa and GPS antennas. Not doing so might damage the boards.
 :::
 
 #### Wi-Fi AP Mode

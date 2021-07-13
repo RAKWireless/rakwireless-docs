@@ -24,7 +24,7 @@ Long life is ensured through high-quality processing, and it is compatible with 
 
 The product comes in pairs (two in a package) to ensure secure attachment even for longer antennas.
 
-## Products Features  
+## Product Features  
 
 - Easy to install
 - Unobtrusive design

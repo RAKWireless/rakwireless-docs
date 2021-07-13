@@ -22,9 +22,10 @@ rak_desc: Contains instructions and tutorials in installing and deploying your R
 
 1. **RAK2245 Stamp WisLink LPWAN Concentrator**
 2. Raspberry Pi 3B+
-3. 16GB SD Card + Card Reader
-4. 5V at least 2A Micro USB Power Supply
+3. 16&nbsp;GB SD Card + Card Reader
+4. 5&nbsp;V at least 2&nbsp;A Micro USB Power Supply
 5. A WIndows/Mac OS/Linux Computer
+6. Latest [RAK2245 Stamp Firmware](/Product-Categories/WisLink/RAK2245-Stamp-Edition/Datasheet/#firmware)
 
 ### What's included in the Package?
 
@@ -36,10 +37,10 @@ rak_desc: Contains instructions and tutorials in installing and deploying your R
 
 ### Accessing your Gateway
 
-After burning the image into the SD Card, make sure you have inserted the SD Card with the Latest Firmware installed to the Raspberry Pi with the RAK2245 Stamp WisLink LPWAN Concentrator Concentrator Module and the LoRa and GPS Antenna attached to it. After which, you can now safely power on the gateway. In this document, several ways in accessing the gateway are provided to have different alternatives for you to choose depending on the availability of the requirements needed.
+After burning the firmware image onto the SD Card, make sure you have inserted the SD Card into the **Raspberry Pi with the RAK2245 Stamp WisLink LPWAN Concentrator Module** and have the LoRa and GPS Antenna connected. After which, you can now safely power on the gateway. In this document, several ways in accessing the gateway are provided to have different alternatives for you to choose depending on the availability of the requirements needed.
 
 ::: warning ⚠️ WARNING
-Before powering the Raspberry Pi you should install the LoRa and GPS antennas. Not doing so might damage the boards.
+Before powering the Raspberry Pi, you should connect the LoRa and GPS antennas. Not doing so might damage the boards.
 :::
 
 #### 1. Wi-Fi AP Mode

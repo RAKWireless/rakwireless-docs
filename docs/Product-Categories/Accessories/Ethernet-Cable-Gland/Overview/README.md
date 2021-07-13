@@ -16,7 +16,7 @@ Thank you for choosing **Ethernet Cable Gland** in your awesome IoT Project! ðŸŽ
 - [Datasheet](../Datasheet/)
 
 
-## Product description
+## Product Description
 
 The Ethernet cable gland is designed to safely connect your outdoor equipment with an RJ45 cable for communication and PoE power. It is constructed of two parts to allow to easily connect and disconnect the cable without the need of dismounting the whole gland or even open the gatewayâ€™s enclosure. The waterproof seal and high-quality plastic ensure long and reliable outdoor work.
 

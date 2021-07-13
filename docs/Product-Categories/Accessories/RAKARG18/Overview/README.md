@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/accessories/rakarg18/5dbi_antenna.svg
-rak_desc: RAK’s 5 dBi fiberglass antenna is an outdoor, high-performance antenna, designed to withstand harsh outdoor conditions. It is specially designed for LoRa® in the 863-870MHz band – EU868, IN865, and RU864. 
+rak_desc: The 5 dBi fiberglass antenna is an outdoor, high-performance antenna, designed to withstand harsh outdoor conditions. It is specially designed for LoRa® in the 863-870MHz band – EU868, IN865, and RU864. 
 rak_grp: [accessories, antennas]
 rak_model: RAKARG18
 prev: ../../
@@ -17,7 +17,7 @@ Thank you for choosing **863-870 MHz 5 dBi Fiber Glass Antenna** in your awesome
 
 ## Product Description
 
-RAK’s 5 dBi fiberglass antenna is an outdoor, high-performance antenna, designed to withstand harsh outdoor conditions. It is specially designed for LoRa® in the 863-870MHz band – EU868, IN865, and RU864. 
+The 5&nbsp;dBi fiberglass antenna is an outdoor, high-performance antenna, designed to withstand harsh outdoor conditions. It is specially designed for LoRa® in the 863-870&nbsp;MHz band – EU868, IN865, and RU864. 
 
 The antenna connector is one with the antenna body - this design further increases the resistance of the antenna to external conditions.
 
@@ -28,16 +28,16 @@ This antenna is designed to be directly mounted on the enclosure of the Gateway.
 :::
 ## Product Features
 
-- **Frequency:** 863-870MHz
-- **Gain:** 5.0dBi
+- **Frequency:** 863-870&nbsp;MHz
+- **Gain:** 5.0&nbsp;dBi
 - **VSWR:** ≤1.63
-- **Beamwidth:** 360 degrees
-- **Impedance:** 50 Ohms
+- **Beamwidth:** 360°
+- **Impedance:** 50&nbsp;Ω
 - **Polarization:** Vertical
 - **Radome Body:** Fiberglass
 - **Connector:** N-Type Male
-- **Dimensions:** Փ 27.0 mm x 480.0 mm
-- **Operation Temperature:** -40°C~+75°C
-- **Storage Temperature:** -40°C~+85°C
+- **Dimensions:** Փ 27.0&nbsp;mm x 480.0&nbsp;mm
+- **Operation Temperature:** -40&nbsp;°C ~ +75&nbsp;°C
+- **Storage Temperature:** -40&nbsp;°C ~ +85&nbsp;°C
 - **IP67 rated**
 

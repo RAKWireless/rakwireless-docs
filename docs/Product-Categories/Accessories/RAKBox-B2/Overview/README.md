@@ -25,6 +25,6 @@ The enclosure is a small, lightweight, yet very rigid design. Perfect for setups
 
 ## Product Features
 - IP67/NEMA6 rated
-- Dimensions W x L x H: 95mm x 65mm x 58mm
+- Dimensions W x L x H: 95&nbsp;mm x 65&nbsp;mm x 58&nbsp;mm
 - Optional openings for N-type antenna and external components with a gland
 - Solar Panel

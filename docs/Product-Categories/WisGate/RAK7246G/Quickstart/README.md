@@ -19,15 +19,16 @@ tags:
 /> -->
 
 
-### What do you need?
+### What Do You Need?
 
 1. RAK7246G WisGate Developer D0 Gateway
-2. 16GB SD Card (included) + Card Reader
-3. 5V at least 2.5A Micro USB Power Supply (not included)
+2. 16&nbsp;GB SD Card (included) + Card Reader
+3. 5&nbsp;V at least 2.5&nbsp;A Micro USB Power Supply (not included)
 4. A Windows/Mac OS/Linux Computer
+5. Latest [RAK7246G Firmware](/Product-Categories/WisGate/RAK7246G/Datasheet/#firmware)
 
 
-### What's included in the Package?
+### What's Included in the Package?
 
 <rk-img
   src="/assets/images/wisgate/rak7246g/quickstart/package-contents.png"
@@ -37,12 +38,12 @@ tags:
 
 ## Product Configuration
 
-### Accessing your Gateway
+### Accessing Your Gateway
 
-After burning the image into the SD Card, make sure you have inserted the SD Card with the Latest Firmware installed to the **RAK7246G WisGate Developer D0 Gateway** and the LoRa and GPS Antenna attached to it. After which, you can now safely power on the gateway.
+After burning the firmware image into the SD Card, make sure you have inserted the SD Card into the **RAK7246G WisGate Developer D0 Gateway** and have the LoRa and GPS Antenna connected. After which, you can now safely power on the gateway.
 
 :::warning ⚠️WARNING
-Before powering the RAK7246G WisGate Developer D0 Gateway, you must install the LoRa and GPS antennas. Not doing so might damage the boards.
+Before powering the RAK7246G WisGate Developer D0 Gateway, you must connect the LoRa and GPS antennas. Not doing so might damage the boards.
 :::
 
 #### Wi-Fi AP Mode

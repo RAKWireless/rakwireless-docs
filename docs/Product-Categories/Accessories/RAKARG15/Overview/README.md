@@ -16,7 +16,7 @@ Thank you for choosing **RAKARG15 900-930MHz 8dBi Fiber Glass Antenna** in your 
 
 * [Datasheet](../Datasheet/)
 
-## Features
+## Product Features
 
 -   Frequency Range: 900~930&nbsp;MHz
 -   Max Gain: 8.0&nbsp;dBi
