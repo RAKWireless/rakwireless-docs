@@ -4,7 +4,7 @@ tags:
   - datasheet
   - wisgate
   - RAK7289
-prev: ../Overview/
+prev: ../Supported-LoRa-Network-Servers/
 next: false 
 ---
 

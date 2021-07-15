@@ -16,6 +16,8 @@ Thank you for choosing **RAK7268 WisGate Edge Lite 2** in your awesome IoT Proje
 
 * [Quickstart](../Quickstart/)
 * [Datasheet](../Datasheet/)
+* [Supported LoRa Network Servers](../Supported-LoRa-Network-Servers/)
+
 
 ## Product Description
 

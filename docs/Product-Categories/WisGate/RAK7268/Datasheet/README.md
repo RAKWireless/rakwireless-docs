@@ -4,8 +4,8 @@ tags:
   - datasheet
   - wisgate
   - RAK7268
-prev: ../Quickstart/
-next: false 
+prev: ../Supported-LoRa-Network-Servers/ 
+next: false
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268RAK7268C_CE_Cert.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_FCC_cert.zip]

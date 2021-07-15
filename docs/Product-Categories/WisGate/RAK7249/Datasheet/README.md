@@ -4,8 +4,8 @@ tags:
   - datasheet
   - wisgate
   - RAK7249
-prev: ../Quickstart/
-next: ../Supported-LoRa-Network-Servers/
+prev: ../Supported-LoRa-Network-Servers/
+next: false
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_RED(CE)_Certificate.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_FCC_Certificate.zip]
@@ -175,8 +175,7 @@ The RAK7249 WisGate Edge Max's mainboard provides a Reset key and 6 x LEDs for s
 
 ###### LED Indicators
 
-The status of the LEDs is described as below. Please refer to the printing of the LEDs
-on the mainboard.
+The status of the LEDs is described as below. Please refer to the printing of the LEDs on the mainboard.
 
 | LEDs                            | Status Indication Description                                                                                                                                                                                                                                  |
 | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -189,22 +188,25 @@ on the mainboard.
 
 #### Main Specifications
 
-| Feature             | Specifications                                                                                                                                                                                                                                                                        |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Computing           | MT7628, DDR2RAM 128MB                                                                                                                                                                                                                                                                 |
-| Wi-Fi Feature       | • **Frequency**: 2.400-2.4835GHz(802.11b/g/n) <br> • **RX Sensitivity**: -95dBm (Min) <br> • **TX Power**: 20dBm (Max) <br> • **Operation Channels**: 2.4GHz: 1-13                                                                                                                    |
-| LoRa Feature       | <br> • **Card**: SX1301 Mini PCIe Card (connects maximum of two) <br> • **Channels**: 8 Channels (Optional: 16 channels) <br> • **RX Sensitivity**: -139dBm (Min) <br> • **TX Power**: 27dBm (Max) <br> • **Frequency**: EU433, CN470, EU868, US915 , AS923, AU915, KR920, IN865 |
-| Cellular Feature    | • Supports Quectel EG95-E / EG95-NA(IoT/M2M-optimized LTE Cat 4 Module) <br> • EG95 -E for EMEA Region：<br> • LTE FDD: B1/B3/B7/B8/B20/B28A <br> • WCDMA: B1/B8 <br> • GSM/EDGE: B3/B8 EG95 -NA for North America Region<br> • LTE FDD: B2/B4/B5/B12/B13 <br> • WCDMA: B2/B4/B5      |
-| Power Supply        | PoE(IEEE 802.3af/at-Compliant) - 42~57VDC; Power Jack - 12V DC                                                                                                                                                                                                                         |
-| Power Consumption   | 12W (Typical)                                                                                                                                                                                                                                                                         |
-| ETH                 | RJ45 (10/100Mbps)                                                                                                                                                                                                                                                                     |
-| Antenna             | 5 N-Type Connectors                                                                                                                                                                                                                                                                   |
-| Ingress Protection  | IP67                                                                                                                                                                                                                                                                                  |
-| Enclosure Material  | Aluminum                                                                                                                                                                                                                                                                              |
-| Weight              | Approximately 111.11oz (3.15kg)                                                                                                                                                                                                                                                       |
-| Dimension           | 220mm x 220mm x 104mm                                                                                                                                                                                                                                                                 |
-| Operating Temp      | -30˚C to +55 ˚C                                                                                                                                                                                                                                                                       |
-| Installation method | Pole or Wall mounting                                                                                                                                                                                                                                                                 |
+| Feature               | Specifications                                                                                                                                                                                                                                                                   |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Computing             | MT7628, DDR2RAM 128MB                                                                                                                                                                                                                                                            |
+| Wi-Fi Feature         | • **Frequency**: 2.400-2.4835GHz(802.11b/g/n) <br> • **RX Sensitivity**: -95dBm (Min) <br> • **TX Power**: 20dBm (Max) <br> • **Operation Channels**: 2.4GHz: 1-13                                                                                                               |
+| LoRa Feature          | <br> • **Card**: SX1301 Mini PCIe Card (connects maximum of two) <br> • **Channels**: 8 Channels (Optional: 16 channels) <br> • **RX Sensitivity**: -139dBm (Min) <br> • **TX Power**: 27dBm (Max) <br> • **Frequency**: EU433, CN470, EU868, US915 , AS923, AU915, KR920, IN865 |
+| Cellular Feature      | • Supports Quectel EG95-E / EG95-NA(IoT/M2M-optimized LTE Cat 4 Module) <br> • EG95 -E for EMEA Region：<br> • LTE FDD: B1/B3/B7/B8/B20/B28A <br> • WCDMA: B1/B8 <br> • GSM/EDGE: B3/B8 EG95 -NA for North America Region<br> • LTE FDD: B2/B4/B5/B12/B13 <br> • WCDMA: B2/B4/B5 |
+| Power Supply          | PoE(IEEE 802.3af/at-Compliant) - 42~57VDC; Power Jack - 12V DC                                                                                                                                                                                                                   |
+| Power Consumption     | 12W (Typical)                                                                                                                                                                                                                                                                    |
+| ETH                   | RJ45 (10/100Mbps)                                                                                                                                                                                                                                                                |
+| Antenna               | 5 N-Type Connectors                                                                                                                                                                                                                                                              |
+| Ingress Protection    | IP67                                                                                                                                                                                                                                                                             |
+| Enclosure Material    | Aluminum                                                                                                                                                                                                                                                                         |
+| Weight                | Approximately 111.11oz (3.15kg)                                                                                                                                                                                                                                                  |
+| Dimension             | 220mm x 220mm x 104mm                                                                                                                                                                                                                                                            |
+| Operating Temperature | -30˚C to +55 ˚C                                                                                                                                                                                                                                                                  |
+| Storage Temperature   | -40˚C to +85 ˚C                                                                                                                                                                                                                                                                  |
+| Operating Humidity    | 0% to 95% (non-condensing)                                                                                                                                                                                                                                                       |
+| Storage Humidity      | 0% to 95% (non-condensing)                                                                                                                                                                                                                                                       |
+| Installation method   | Pole or Wall mounting                                                                                                                                                                                                                                                            |
 
 #### RF Specifications
 

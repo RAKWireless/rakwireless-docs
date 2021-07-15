@@ -4,8 +4,8 @@ tags:
   - datasheet
   - wisgate
   - RAK7258
-prev: ../Quickstart/
-next: ../Supported-LoRa-Network-Servers/
+prev: ../Supported-LoRa-Network-Servers/
+next: false
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/Indoor-Gateway-RAK7258/Certification-Report/RAK7258_CE_Certificate.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/Indoor-Gateway-RAK7258/Certification-Report/RAK7258_FCC_Certificate.zip]

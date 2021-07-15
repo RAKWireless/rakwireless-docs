@@ -3,7 +3,7 @@ rak_img: /assets/images/wisgate/rak7289/overview/RAK7289.png
 rak_desc: RAK7289 WisGate Edge Pro is an ideal product for IoT commercial deployment. With its industrial-grade components, it achieves a high standard of reliability.
 rak_grp: [wisgate, edge]
 prev: ../../
-next: ../Datasheet/
+next: ../Supported-LoRa-Network-Servers/
 tags:
     - RAK7289
     - wisgate
@@ -16,6 +16,7 @@ tags:
 Thank you for choosing **RAK7289 WisGate Edge Pro** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
 * [Datasheet](../Datasheet/)
+* [Supported LoRa Network Servers](../Supported-LoRa-Network-Servers/)
 
 ## Product Description
 

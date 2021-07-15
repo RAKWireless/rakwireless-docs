@@ -1,7 +1,7 @@
 ---
 rak_desc: Contains instructions and tutorials in installing and deploying your RAK7258. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
 prev: ../Overview/
-next: ../Datasheet/
+next: ../Supported-LoRa-Network-Servers/
 tags:
   - RAK7258
   - quickstart

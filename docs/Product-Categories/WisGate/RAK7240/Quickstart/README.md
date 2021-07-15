@@ -1,5 +1,5 @@
 ---
-next: ../Datasheet/
+next: ../Supported-LoRa-Network-Servers/
 prev: ../Overview/
 tags:
   - RAK7240
@@ -7,7 +7,7 @@ tags:
   - quickstart
 rak_desc: Contains instructions and tutorials in installing and deploying your RAK7240. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
 ---
-# RAK7240 Quick Start Guide
+# Quick Start Guide
 
 ## Prerequisites
 
