@@ -128,7 +128,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Opening RAK15000 example code for RAK11200 WisBlock Core"
 />
 
-3. Once the example code is open, install the [Adafruit FRAM_I2C](https://github.com/adafruit/Adafruit_FRAM_I2C) library by clicking the link highlighted in yellow, as shown in **Figure 10**.
+3. Once the example code is open, install the latest version of [Adafruit FRAM_I2C](https://github.com/adafruit/Adafruit_FRAM_I2C) library by clicking the link highlighted in yellow, as shown in **Figure 10**.
 
 <rk-img
   src="/assets/images/wisblock/rak15000/quickstart/rak15000_lib.png"

@@ -707,7 +707,7 @@ You can now check that the decoded data is received and republished by AWS by tr
 ```json
  project/sensor/decoded    February 09, 2021, 14:47:21 (UTC+0800)
     {
-        "WirelessDeviceID": 6477ec22-9570-31d5981da021",
+        "WirelessDeviceID": "6477ec22-9570-31d5981da021",
         "PayloadData": "AWcBEA==",
         "WirelessMetadata": {
             "LoRaWAN": {
@@ -782,7 +782,7 @@ Send message from endDevice using AT command: `at+send:lora:1:01670110`. Here is
 
 ```json
     {
-        "device_id: "393331375d387505",
+        "device_id": "393331375d387505",
         "message": "Temperature exceeded 25",
         "temp": 27.2,
         "time": "2021-02-22T07:58:54Z"

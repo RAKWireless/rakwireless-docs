@@ -59,7 +59,7 @@ export default {
   `,
   homeOG: `
     <meta name="title" content="RAKwireless Documentation Center">
-    <meta name="description" content="The RAK® Documentation Center is a perfect place to find comprehensive documents curated by our tech experts that help you explore the potential of our products on the Internet of Things (IoT)."
+    <meta name="description" content="The RAK® Documentation Center is a perfect place to find comprehensive documents curated by our tech experts that help you explore the potential of our products on the Internet of Things (IoT).">
     <meta property="og:title" content="RAKwireless Documentation Center">
     <meta property="og:site_name" content="RAK Documentation Center">
     <meta property="og:url" content="https://docs.rakwireless.com/">
@@ -82,7 +82,7 @@ export default {
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@RAKwireless">
     <meta name="twitter:title" content="<title>">
-    <meta name="twitter:description" content="<description>">
+    <meta name="twitter:description" content="<twitter_description>">
     <meta name="twitter:image" content="<imgURL>">
     <meta name="description" content="<description>">
   `,
