@@ -548,4 +548,37 @@ module.exports = {
     sidebarDepth: 5
   }
   ],
+  '/Product-Categories/WisDuo/RAK3172-Evaluation-Board/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }, 
+  {
+    title: 'AT Command Manual',
+    path: '/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },    
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+  ],
 }

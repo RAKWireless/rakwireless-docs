@@ -28,7 +28,7 @@ You can configure the mode and operation of the module using AT commands via a U
 
 ### Features
 
-- Based on **STM32WLE5CC55**
+- Based on **STM32WLE5CCU6**
 - **LoRaWAN 1.0.3** specification compliant
 - **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, RU864, and AS923
 - LoRaWAN Activation by OTAA/ABP

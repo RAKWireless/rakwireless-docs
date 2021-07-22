@@ -622,11 +622,11 @@ This command allows the user to access and configure masked channels.
 | --------------------------- | --------------- | ------------------------------------------------------------------------------------ | ---------------------- |
 | AT+MASK?                    | -               | `AT+MASK:Set the channel mask, close or open the channel,Only for US915,AU915,CN470` | `OK`                   |
 | AT+MASK=?                   | -               | *< mask >*                                                                           | `OK`                   |
-| AT+MASK=`<Input Parameter>` | *< mask >*      | -                                                                                    | `OK`or`AT+PARAM_ERROR` |
+| AT+MASK=`<Input Parameter>` | *Channels (hex)*      | -                                                                                    | `OK`or`AT+PARAM_ERROR` |
 
 **AT+MASK Input Parameter Options**
 
-| ***< mask >* Sub-Band** | **Channels (hex)** | **US915**   | **AU915**   | **CN470**   |
+| **Sub-Band**            | **Channels (hex)** | **US915**   | **AU915**   | **CN470**   |
 | ----------------------- | ------------------ | ----------- | ----------- | ----------- |
 | ALL                     | 0000               | All Enabled | All Enabled | All enabled |
 | 1                       | 0001               | 0-7         | 0-7         | 0-7         |

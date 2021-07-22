@@ -19,14 +19,14 @@ Thank you for choosing **RAK3172 WisDuo LPWAN Module** in your awesome IoT Proje
 
 ## Product Description
 
-RAK3172 Low-Power Long Range Transceiver module that is based on STM32WLE5CC chip. It provides an easy to use, small size, low-power solution for long range wireless data applications. This module complies with Class A, B & C of LoRaWAN 1.0.3 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point to Point (P2P) communication mode which helps you in implementing your own customized long-range LoRa network quickly.
+RAK3172 is a Low-Power Long Range Transceiver module that is based on STM32WLE5CC chip. It provides an easy to use, small size, low-power solution for long range wireless data applications. This module complies with Class A, B & C of LoRaWAN 1.0.3 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point to Point (P2P) communication mode which helps you in implementing your own customized long-range LoRa network quickly.
 
 You can configure the mode and operation of the module using AT commands via a UART interface. RAK3172 also offers low power features which is very suitable for battery-powered applications.
 
 
 ## Product Features
 
-- Based on **STM32WLE5CC55**
+- Based on **STM32WLE5CCU6**
 - **LoRaWAN 1.0.3** specification compliant
 - **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, RU864, and AS923
 - LoRaWAN Activation by OTAA/ABP

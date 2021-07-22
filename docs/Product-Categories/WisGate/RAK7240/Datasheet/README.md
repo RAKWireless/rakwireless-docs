@@ -151,9 +151,12 @@ The status of the LEDs is described as below. Please refer to the printing of th
 ### Software
 
 RAK7240 supports different software features such as LoRa, Network, and Management.
+#### Firmware
 
-
-#### Software Software
+| Model                      | Firmware Version | Source                                                                                          |
+| -------------------------- | ---------------- | ----------------------------------------------------------------------------------------------- |
+| RAK7240 WisGate Edge Prime | WisGateOS V1.0.2 | [Download](https://downloads.rakwireless.com/LoRa/RAK7240/Firmware/RAK7240_Latest_Firmware.zip) |
+#### Supported Software
 
 <!---Supported Software --->
 

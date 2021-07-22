@@ -232,6 +232,12 @@ The status of the LEDs is described as below. Please refer to the printing of th
 
 RAK7249 supports software in LoRa, Network and Management. Supported features are shown in the table below.
 
+#### Firmware
+
+| Model                    | Firmware Version | Source                                                                                                      |
+| ------------------------ | ---------------- | ----------------------------------------------------------------------------------------------------------- |
+| RAK7249 WisGate Edge Max | WisGateOS V1.0.2 | [Download](https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Firmware/RAK7249_Latest_Firmware.zip) |
+
 #### Supported Software
 
 | LoRa                          | Network            | Management                                   |

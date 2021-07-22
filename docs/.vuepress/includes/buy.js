@@ -216,6 +216,11 @@ export default {
     img: '/assets/images/wisduo/rak3272s-breakout-board/overview/RAK3272S_Breakout_home.png',
     store: 'https://store.rakwireless.com/'
   },
+  '/Product-Categories/WisDuo/RAK3172-Evaluation-Board/': {
+    label: 'RAK3172 Evaluation Board',
+    img: '/assets/images/wisduo/rak3172-evaluation-board/overview/RAK3172E_Evaluation_home.png',
+    store: 'https://store.rakwireless.com/'
+  },
 
   // Wisgate
   '/Product-Categories/WisGate/RAK7240/': {

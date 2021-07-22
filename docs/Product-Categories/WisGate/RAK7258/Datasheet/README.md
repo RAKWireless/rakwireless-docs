@@ -138,6 +138,13 @@ The status of the LEDs is described as below:
 
 RAK7258 supports software in LoRa, Network and Management. Supported features are shown in the table below.
 
+#### Firmware
+
+| Model                    | Firmware Version | Source                                                                                                      |
+| ------------------------ | ---------------- | ----------------------------------------------------------------------------------------------------------- |
+| RAK7258 WisGate Edge Lite | WisGateOS V1.0.2 | [Download](https://downloads.rakwireless.com/LoRa/Indoor-Gateway-RAK7258/Firmware/RAK7258_Latest_Firmware.zip) |
+
+
 #### Software Features
 
 

@@ -100,14 +100,16 @@ In this guide, you need to have a working gateway that is connected to TTN or yo
 :::
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/4.ttn-context.png"
-  width="55%"
-  caption="RAK3172 in the context of the TTN"
+  src="/assets/images/wisduo/rak3172-evaluation-board/quickstart/4.ttn-context.png"
+  width="95%"
+  caption="RAK3172 EVB in the context of the TTN"
 />
 
-As shown in Figure 2, the RAK3172 module is one of the devices located on the left side. In the context of an IoT solution, the objective is to deploy devices to sense relevant process variables and transmit the data to the backend servers located in the cloud. The data will be processed and integrated as part of a larger solution that ultimately could generate efficiency, traceability and predictability capacity among others.
+As shown in Figure 2, The Things Stack (TTN V3) is an open-source LoRaWAN Network Server suitable for global, geo-distributed public and private deployments as well as for small, local networks. The architecture follows the LoRaWAN Network Reference Model for standards compliancy and interoperability. This project is actively maintained by [The Things Industries](https://www.thethingsindustries.com/).
 
-The RAK3172 module can be part of this ecosystem, and the objective of this section is to demonstrate how simple it is to send data to the TTN using the LoRaWAN protocol. To achieve this, the RAK3172 module must be located inside of the coverage of a LoRaWAN gateway. 
+LoRaWAN is a protocol for low-power wide area networks. It allows for large scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long range wireless connections.
+
+The RAK3172 WisDuo module can be part of this ecosystem as a device, and the objective of this section is to demonstrate how simple it is to send data to The Things Stack using the LoRaWAN protocol. To achieve this, the RAK3172 WisDuo module must be located inside the coverage of a LoRaWAN gateway connected to The Things Stack server. 
 
 #### Registration to TTN and Creating LoRaWAN Applications
 
@@ -247,7 +249,7 @@ These parameters are always accessible on the device console page as shown on Fi
 />
 
 
-#### RAK3172 OTAA Configuration for TTN
+#### OTAA Configuration for TTN
 
 The RAK3172 module supports a series of AT commands to configure its internal parameters and control the functionalities of the module. 
 
@@ -315,6 +317,8 @@ AT+BAND=4
 Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK3172 to match the gateway and LoRaWAN network server. This is specially important on Regional Bands like US915, AU915, and CN470.
 
 To configure the masking of channels for the sub-bands, you can use the [AT+MASK command that can be found on the AT Commands Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-mask).
+
+To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
 :::
 
 **List of band parameter options**
@@ -425,7 +429,7 @@ To register an ABP device, you need to go to your application console and select
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_8.png"
   width="100%"
-  caption="ABP Activation in TTN"
+  caption="Adding ABP Device"
 />
 
 To register the module, you need to click first **Manually** then configure the activation method by selecting **Activation by personalization (ABP)**, compatible **LoRaWAN version** and click **Start** button as shown on figures 23 and 24.
@@ -433,13 +437,13 @@ To register the module, you need to click first **Manually** then configure the 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_9.png"
   width="100%"
-  caption="Add end device"
+  caption="Manually register device to TTN"
 />
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_1_abp.png"
   width="100%"
-  caption="Manually register device to TTN"
+  caption="Selecting ABP and LoRaWAN version"
 />
 
 At this step, you need to put a unique **End device ID** and **DevEUI** as shown on Figure 25. Check if your module has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI.
@@ -457,7 +461,7 @@ It is advisable to use a meaningful End device ID, End device name and End devic
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_2_abp.png"
   width="100%"
-  caption="ABP Activation in TTN"
+  caption="ABP Device Information"
 />
 
 Next step is to setup **Frequency plan**, compatible **Regional Parameter version** and **LoRaWAN class** supported. In an ABP device, you also need to generate **Device Address** and **NwkSKey** (Network Session Keys). Then you can click **Application layers settings**
@@ -465,7 +469,7 @@ Next step is to setup **Frequency plan**, compatible **Regional Parameter versio
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_3_abp.png"
   width="100%"
-  caption="ABP Activation in TTN"
+  caption="ABP Device Configuration"
 />
 
 The last step in the registration of a new ABP end-device is the configuration of the **AppSKey**. To get the AppSKey, you must click the **generate button**. Then you need to click **Add end device** to finish your new device registration.
@@ -473,7 +477,7 @@ The last step in the registration of a new ABP end-device is the configuration o
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_4_abp.png"
   width="100%"
-  caption="ABP Activation in TTN"
+  caption="ABP AppSKey generation and device registration"
 />
 
 You should now be able to see the device on the TTN console after you fully registered your device as shown on Figure 28.
@@ -481,10 +485,10 @@ You should now be able to see the device on the TTN console after you fully regi
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_5_abp.png"
   width="100%"
-  caption="RAK3172 in the context of the TTN"
+  caption="ABP device successfully registered to TTN"
 />
 
-#### RAK3172 ABP Configuration for TTN
+#### ABP Configuration for TTN
 
 To set up the RAK3172 module to join the TTN using ABP, start by connecting the RAK3172 module to the Computer (see Figure 1) and open the RAK Serial Port Tool. Select the right COM port and set baudrate to 9600.
 
@@ -549,6 +553,8 @@ AT+BAND=4
 Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK3172 to match the gateway and LoRaWAN network server. This is specially important on Regional Bands like US915, AU915, and CN470.
 
 To configure the masking of channels for the sub-bands, you can use the [AT+MASK command that can be found on the AT Commands Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-mask).
+
+To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
 :::
 
 **List of band parameter options**
@@ -678,7 +684,7 @@ The frequency band used in the demonstration is EU868. Use a high-frequency vers
 
 
 
-#### Create a new Application
+#### Create a New Application
 
 Login to the ChirpStack server using your account and password.
 
@@ -814,7 +820,7 @@ Standard OTAA mode requires the **Device EUI**, **Application Key**, and **Appli
 
 :::
 
-#### RAK3172 OTAA Configuration for Chirpstack
+#### OTAA Configuration for Chirpstack
 
 The RAK3172 module supports a series of AT commands to configure its internal parameters and control the functionalities of the module. 
 
@@ -882,6 +888,8 @@ AT+BAND=4
 Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK3172 to match the gateway and LoRaWAN network server. This is specially important on Regional Bands like US915, AU915, and CN470.
 
 To configure the masking of channels for the sub-bands, you can use the [AT+MASK command that can be found on the AT Commands Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-mask).
+
+To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
 :::
 
 **List of band parameter options**
@@ -1023,7 +1031,7 @@ After selecting the ABP mode, the following parameters appear in the Activation 
 * The parameters can be generated as random numbers by the platform or can be set with user values. Once these parameters are filled properly, the process is completed by clicking on the “**ACTIVATE DEVICE**” button.
 
 
-#### RAK3172 ABP Configuration for Chirpstack
+#### ABP Configuration for Chirpstack
 
 To set up the RAK3172 module to join the Chirpstack using ABP, start by connecting the RAK3172 module to the Computer (see Figure 1) and open the RAK Serial Port Tool. Select the right COM port and set baudrate to 9600.
 
@@ -1089,6 +1097,8 @@ AT+BAND=4
 Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK3172 to match the gateway and LoRaWAN network server. This is specially important on Regional Bands like US915, AU915, and CN470.
 
 To configure the masking of channels for the sub-bands, you can use the [AT+MASK command](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-mask) that can be found on the AT Commands Manual.
+
+To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
 :::
 
 **List of band parameter options**
@@ -1275,13 +1285,13 @@ AT+PSEND=11223344
 
 If you want to upgrade the latest version firmware of the module, you can follow this section. The latest firmware can be found in the software section of [RAK3172 Datasheet](/Product-Categories/WisDuo/RAK3172-Module/Datasheet/#firmware-os).
 
-In the following sections, two (2) options for flashing new firmware in a RAK3172 module are shown: **Upgrade through DAPLink** and **Upgrade through UART1**.
+In the following sections, two (2) options for flashing new firmware in a RAK3172 module are shown: **Upgrade through DAPLink** and **Upgrade through UART2**.
 
 #### Firmware Upgrade Through DAPLink
 
 Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool) guide in the Accessories Category.
 
-#### Firmware Upgrade Through UART1
+#### Firmware Upgrade Through UART2
 
 ##### Minimum Hardware and Software Requirements
 
@@ -1297,7 +1307,7 @@ Refer to the table for the minimum hardware and software required to perform the
 
 ##### Firmware Upgrade Procedure
 
-Execute the following procedure to upgrade the firmware in Device Firmware Upgrade (DFU) mode through the UART1 interface.
+Execute the following procedure to upgrade the firmware in Device Firmware Upgrade (DFU) mode through the UART2 interface.
 
 
 1.	Download the latest application firmware of the RAK3172.

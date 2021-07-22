@@ -32,27 +32,15 @@ LORIOT provides an easy-to-use software platform that enables you to build, oper
 
 1. Log into your LORIOT account.
 
-<rk-img
-  src="/assets/images/wisgate/rak7289/supported-lora-network-servers/loriot/1.homepage.png"
-  width="100%"
-  caption="LORIOT Homepage"
-/> 
+<rk-img src="/assets/images/wisgate/rak7289/supported-lora-network-servers/loriot/1.homepage.png" width="100%" caption="LORIOT Homepage"/>
 
 2. Go to the **Networks** tab of the main menu on the left. You have the option to select **Simple network**, which is automatically generated when you create your account, or you can create a new one to use. For a beginner, it will be easier to use the **Simple network**.
 
-<rk-img
-  src="/assets/images/wisgate/rak7289/supported-lora-network-servers/loriot/2.networks.png"
-  width="100%"
-  caption="Networks List"
-/>
+<rk-img src="/assets/images/wisgate/rak7289/supported-lora-network-servers/loriot/2.networks.png" width="100%" caption="Networks List"/>
 
 3. Open the network by clicking once on its name. Then, click the **+ Add Gateway** button.
 
-<rk-img
-  src="/assets/images/wisgate/rak7289/supported-lora-network-servers/loriot/3.adding-gateway.png"
-  width="100%"
-  caption="Adding a gateway to the network"
-/>
+<rk-img src="/assets/images/wisgate/rak7289/supported-lora-network-servers/loriot/3.adding-gateway.png" width="100%" caption="Adding a gateway to the network"/>
 
 4. In the list of gateways, find and select RAK7249.
 
@@ -60,19 +48,11 @@ LORIOT provides an easy-to-use software platform that enables you to build, oper
 If you are using another model gateway from the WisGate Edge series, you still need to select RAK7249 in this list. This won't affect the performance in any way.
 :::
 
-<rk-img
-  src="/assets/images/wisgate/rak7289/supported-lora-network-servers/loriot/4.selecting-rak7249.png"
-  width="100%"
-  caption="Selecting RAK7249"
-/>
+<rk-img src="/assets/images/wisgate/rak7289/supported-lora-network-servers/loriot/4.selecting-rak7249.png" width="100%" caption="Selecting RAK7249"/>
 
 5. Now, you need to connect to your gateway via SSH. As mentioned, this tutorial will be done with the PuTTY SSH client. Open PuTTY and enter the IP address of your gateway. If your gateway is in AP mode, the address will be **192.168.230.1**.
 
-<rk-img
-  src="/assets/images/wisgate/rak7289/supported-lora-network-servers/loriot/5.putty.png"
-  width="60%"
-  caption="PuTTY Configuration"
-/>
+<rk-img src="/assets/images/wisgate/rak7289/supported-lora-network-servers/loriot/5.putty.png" width="60%" caption="PuTTY Configuration"/>
 
 6. Log in with your root credentials.
 
@@ -82,7 +62,7 @@ If you are using another model gateway from the WisGate Edge series, you still n
 To get the MAC address of your gateway, run the command:
 
 ```shell
-ifconfig eth0 | grep HWaddr 
+ifconfig eth0 | grep HWaddr
 ```
 
 The output should be similar to the following:
@@ -91,19 +71,11 @@ The output should be similar to the following:
 eth0      Link encap:Ethernet  HWaddr 60:C5:A8:XX:XX:XX
 ```
 
-<rk-img
-  src="/assets/images/wisgate/rak7289/supported-lora-network-servers/loriot/6.mac-address.png"
-  width="60%"
-  caption="Getting the MAC address of the gateway"
-/>
+<rk-img src="/assets/images/wisgate/rak7289/supported-lora-network-servers/loriot/6.mac-address.png" width="60%" caption="Getting the MAC address of the gateway"/>
 
-7. Copy the MAC address and fill it out in the registration form for the gateway in LORIOT. Scroll down and press the **Register RAK7249 gateway** button. 
+7. Copy the MAC address and fill it out in the registration form for the gateway in LORIOT. Scroll down and press the **Register RAK7249 gateway** button.
 
-<rk-img
-  src="/assets/images/wisgate/rak7289/supported-lora-network-servers/loriot/7.filling-out.png"
-  width="100%"
-  caption="Filling out the MAC address"
-/>
+<rk-img src="/assets/images/wisgate/rak7289/supported-lora-network-servers/loriot/7.filling-out.png" width="100%" caption="Filling out the MAC address"/>
 
 8. The gateway is now registered and you need to add a security layer to the connection. It is provided by LORIOT's Gateway Software. To get it installed, run the following set of commands in the PuTTY.
 
@@ -112,32 +84,24 @@ eth0      Link encap:Ethernet  HWaddr 60:C5:A8:XX:XX:XX
 cd /tmp
 ```
 
-```shell
+```bash
 wget http://eu1.loriot.io/home/gwsw/loriot-rak-7249-SPI-0-latest.sh -O loriot-install.sh
 ```
 
-```shell
-chmod +x loriot-install.sh
+```bash
+chmod x loriot-install.sh
 ```
 
-```shell
+```bash
 ./loriot-install.sh -f -s eu1.loriot.io
 ```
 
-```shell
-/etc/init.d/packet_forwarder disable ; /etc/init.d/loriot-gw enable ; reboot now
+```bash
+/etc/init.d/packet_forwarder disable; /etc/init.d/loriot-gw enable; reboot now
 ```
 
-<rk-img
-  src="/assets/images/wisgate/rak7289/supported-lora-network-servers/loriot/8.installing.png"
-  width="80%"
-  caption="Installing LORIOT software"
-/>
+<rk-img src="/assets/images/wisgate/rak7289/supported-lora-network-servers/loriot/8.installing.png" width="80%" caption="Installing LORIOT software"/>
 
-Your gateway is now registered and connected to LORIOT. 
+Your gateway is now registered and connected to LORIOT.
 
-<rk-img
-  src="/assets/images/wisgate/rak7289/supported-lora-network-servers/loriot/9.successful-connection.png"
-  width="100%"
-  caption="Successful Connection"
-/>
+<rk-img src="/assets/images/wisgate/rak7289/supported-lora-network-servers/loriot/9.successful-connection.png" width="100%" caption="Successful Connection"/>
