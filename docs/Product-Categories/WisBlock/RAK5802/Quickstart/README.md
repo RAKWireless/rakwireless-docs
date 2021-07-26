@@ -7,7 +7,7 @@ prev: ../Overview/
 next: ../Datasheet/ 
 ---
 
-# Quick Start Guide
+# RAK5802 Quick Start Guide
 
 <!--
 ## Introduction

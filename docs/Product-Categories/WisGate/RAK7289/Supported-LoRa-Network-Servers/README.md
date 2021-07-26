@@ -9,7 +9,7 @@ prev: ../Overview/
 next: ../Datasheet/
 ---
 
-# Supported LoRa Network Servers
+# RAK7289 Supported LoRa Network Servers
 
 ## LORIOT
 

@@ -8,7 +8,7 @@ tags:
   - wisnode
 ---
 
-# AT Command Manual
+# RAK7201 AT Command Manual
 
 ## Overview
 

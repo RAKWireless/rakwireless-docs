@@ -8,7 +8,7 @@ tags:
   - RAK3172
 ---
 
-# Quick Start Guide
+# RAK3172 Module Quick Start Guide
 
 This guide covers the following topics:
 

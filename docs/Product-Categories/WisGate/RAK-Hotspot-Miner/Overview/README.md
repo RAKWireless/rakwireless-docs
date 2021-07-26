@@ -1,7 +1,7 @@
 ---
 static_root: /assets/images/wisgate/rak7248/quickstart/
 rak_img: /assets/images/wisgate/rak-hotspot-miner/overview/RAK-Hotspot-Miner_home.png
-rak_desc: Efficient miner for a new cryptocurrency, Helium (HNT) .Complete set-up in minutes using a smartphone. LongFi™ technology maximizes range and battery life. Low Power – uses about the same amount as a 5W LED bulb. Easily manage Hotspots and tokens from the mobile app
+rak_desc: RAK Hotspot Miner is an efficient miner for a new cryptocurrency, Helium (HNT). It can be set-up completely in minutes using a smartphone and can easily manages Hotspots and tokens from the mobile app. It offers Low Power that uses about the same amount as a 5W LED bulb, and it has LongFi™ technology that maximizes range and battery life.
 rak_grp: [wisgate, developer]
 prev: ../../
 next: ../Quickstart/

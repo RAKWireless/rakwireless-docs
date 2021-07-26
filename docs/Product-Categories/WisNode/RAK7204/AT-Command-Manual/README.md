@@ -6,7 +6,7 @@ tags:
   - RAK7204
 ---
 
-# AT Command Manual
+# RAK7204 AT Command Manual
 
 You can configure your RAK7204 WisNode Sense Home by sending AT Commands via a Serial port tool running on your PC. The following list shows the AT Commands that you can use:
 

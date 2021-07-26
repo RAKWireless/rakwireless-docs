@@ -8,7 +8,7 @@ tags:
 rak_desc: Contains instructions and tutorials in installing and deploying your RAK5205 WisTrio LPWAN Tracker. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
 ---
 
-# Quick Start Guide
+# RAK5205 Quick Start Guide
 
 ## Prerequisites
 

@@ -8,7 +8,7 @@ tags:
   - wisblock
 ---
 
-# Quick Start Guide
+# RAK11200 Quick Start Guide
 
 <rk-img
   src="/assets/images/wisblock/rak11200/quickstart/WisBlock-Assembly.png"

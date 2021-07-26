@@ -1,8 +1,8 @@
 ---
 rak_img: /assets/images/wisblock/rak13001/overview/RAK13001_home.png
-rak_desc: RAK13001 is a WisBlock Interface module which extends the WisBlock system that can isolate input and output between internal and external signal. It is used to programmatically switch on/off devices, which uses a high volatge or high current.
+rak_desc: RAK13001 is a WisBlock Interface module which extends the WisBlock system that can isolate input and output between internal and external signal. It is used to programmatically switch on/off devices, which uses a high voltage or high current.
 rak_grp: [wisblock, wisinterface]
-next: ../Datasheet/
+next: ../Quickstart/
 prev: ../../
 tags:
     - wisblock
@@ -14,11 +14,12 @@ tags:
 
 Thank you for choosing **RAK13001 WisBlock Relay IO Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK13001 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
-* [RAK13001 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/)
+* [RAK13001 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK13001.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 

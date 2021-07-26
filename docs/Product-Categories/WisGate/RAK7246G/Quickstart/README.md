@@ -8,7 +8,7 @@ tags:
   - quickstart
 ---
 
-# Quick Start Guide
+# RAK7246G Quick Start Guide
 
 ## Prerequisites
 

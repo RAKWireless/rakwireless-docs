@@ -69,7 +69,7 @@ The hardware specification is categorized into five parts. It discusses the inte
 RAK4201 is the WisBlock Core CPU module used on RAK4200 Evaluation Board. Figure 2 shows an overview of interfaces found on RAK4200 Evaluation Board.
 
 <rk-img
-  src="/assets/images/wisduo/rak4200-evaluation-board/datasheet/21.0305_RAK4200 Evaluation Board.550.png"
+  src="/assets/images/wisduo/rak4200-evaluation-board/datasheet/rak4200-interfaces.svg"
   width="80%"
   caption="RAK4200 Evaluation Board Interface Overview"
 />

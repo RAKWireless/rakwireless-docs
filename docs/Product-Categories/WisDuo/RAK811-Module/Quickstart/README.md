@@ -8,7 +8,7 @@ tags:
   - RAK811
 ---
 
-# Quick Start Guide
+# RAK811 Module Quick Start Guide
 
 This guide covers the following topics:
 

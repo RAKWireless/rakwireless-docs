@@ -8,7 +8,7 @@ prev: ../Overview/
 next: ../Datasheet/ 
 ---
 
-# Quick Start Guide
+# RAK1904 Quick Start Guide
 
 <!--
 ## Introduction

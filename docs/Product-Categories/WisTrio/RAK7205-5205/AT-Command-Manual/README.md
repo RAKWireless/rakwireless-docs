@@ -8,7 +8,7 @@ tags:
 rak_desc: For an easier experience with your  RAK7205 LPWAN Tracker, a comprehensive list of commands in configuring your device is provided.
 ---
 
-# AT Command Manual
+# RAK5205 AT Command Manual
 
 ## Introduction
 The purpose of this section is to demonstrate on how to configure the  RAK7205 LPWAN Tracker thru the use of AT Commands via a Serial Port Tool running in your Windows PC. The list below shows the AT Commands  available for use:

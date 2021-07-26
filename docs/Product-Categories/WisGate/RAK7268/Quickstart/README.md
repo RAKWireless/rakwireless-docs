@@ -8,7 +8,7 @@ tags:
   - wisgate
 ---
 
-# Quick Start Guide
+# RAK7268 Quick Start Guide
 
 ## Prerequisites
 

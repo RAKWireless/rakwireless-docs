@@ -11,7 +11,7 @@ prev: ../Quickstart/
 ---
 
 
-# Supported LoRa Network Servers
+# RAK7240 Supported LoRa Network Servers
 
 ## Amazon Web Services (AWS)
 

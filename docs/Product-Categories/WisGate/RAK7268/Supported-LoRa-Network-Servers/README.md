@@ -9,7 +9,7 @@ prev: ../Quickstart/
 next: ../Datasheet/
 ---
 
-# Supported LoRa Network Servers
+# RAK7268 Supported LoRa Network Servers
 
 ## Amazon Web Services (AWS)
 

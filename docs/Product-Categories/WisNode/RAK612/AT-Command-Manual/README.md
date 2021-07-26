@@ -8,7 +8,7 @@ tags:
   - wisnode
 ---
 
-# AT Command Manual
+# RAK612 AT Command Manual
 
 The purpose of this section is to demonstrate on how to configure the LPWAN Button thru the use of AT Commands via a Serial Port Tool running in your Windows PC. The list below shows the AT Commands available for use:
 

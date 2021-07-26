@@ -8,7 +8,7 @@ tags:
   - wisnode
 ---
 
-# Quick Start Guide
+# RAK612 Quick Start Guide
 
 ## Prerequisites
 

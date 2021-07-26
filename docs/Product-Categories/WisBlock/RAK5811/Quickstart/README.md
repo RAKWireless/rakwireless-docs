@@ -8,7 +8,7 @@ prev: ../Overview/
 next: ../Datasheet/ 
 ---
 
-# Quick Start Guide
+# RAK5811 Quick Start Guide
 
 ## Prerequisite
 

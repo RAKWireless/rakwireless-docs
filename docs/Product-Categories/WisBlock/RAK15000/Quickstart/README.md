@@ -8,7 +8,7 @@ prev: ../Overview/
 next: ../Datasheet/ 
 ---
 
-# Quick Start Guide
+# RAK15000 Quick Start Guide
 
 ## Prerequisite
 

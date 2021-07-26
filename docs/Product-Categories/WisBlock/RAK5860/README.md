@@ -1,1 +1,5 @@
+---
+rak_desc: RAK5860 is a WisBlock Wireless module that extends the WisBlock system with LTE NB-IoT connectivity. It is based on the Quectel BG77 module and supports CAT M1 and CAT NB2 connectivity.
+---
+
 <rk-redirect to="/Product-Categories/WisBlock/RAK5860/Overview/" />

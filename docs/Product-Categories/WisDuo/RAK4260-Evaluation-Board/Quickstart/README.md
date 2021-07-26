@@ -8,7 +8,7 @@ tags:
   - quickstart
 ---
 
-# Quick Start Guide
+# RAK4260 Evaluation Board Quick Start Guide
 
 <!---
 <rk-img
@@ -17,6 +17,9 @@ tags:
   caption="Back View of the Evaluation Board"
 />
 --->
+## Prerequisites
+
+The following two sections provide a list of the components and tools you need in order to get started with the development board. Some of the components are included in the package, others you need to provide yourself.
 
 ### What Do You Need?
 

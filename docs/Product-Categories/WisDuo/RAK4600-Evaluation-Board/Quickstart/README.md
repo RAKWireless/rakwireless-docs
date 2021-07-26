@@ -7,7 +7,7 @@ tags:
   - wisduo
 ---
 
-# Quick Start Guide
+#  RAK4600 Evaluation Board Quick Start Guide
 
 <!---
 <rk-img
@@ -16,7 +16,7 @@ tags:
   caption="RAK4600 Evaluation Board Bottom View"
 />
 --->
-
+## Prerequisites
 ### What do you need?
 
 Before going through the configuration guide of the RAK4600 Evaluation Board, make sure to prepare the items listed below:

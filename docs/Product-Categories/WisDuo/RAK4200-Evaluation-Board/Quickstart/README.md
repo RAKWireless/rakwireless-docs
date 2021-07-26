@@ -8,7 +8,7 @@ tags:
   - wisduo
 ---
 
-# Quick Start Guide
+# RAK4200 Evaluation Board Quick Start Guide
 
 <!---
 <rk-img

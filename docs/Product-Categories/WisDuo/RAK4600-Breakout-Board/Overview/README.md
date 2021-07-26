@@ -1,7 +1,7 @@
 ---
 static_root: /assets/images/wisduo/rak4600-breakout-board/quickstart/main
 rak_img: /assets/images/wisduo/rak4600-breakout-board/quickstart/main/RAK4600_Breakout_home.png
-rak_desc: The RAK4600 Breakout board is made to quickly evaluate the RAK4600 stamp module. The XBee form factor board allows access to most GPIO's.
+rak_desc: The RAK4600 Breakout board is made to quickly evaluate the RAK4600 Stamp Module. The XBee form factor board allows access to most GPIO's.
 rak_grp: [wisduo, breakout]
 prev: ../../
 next: ../Quickstart/

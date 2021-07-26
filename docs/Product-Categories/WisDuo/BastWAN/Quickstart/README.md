@@ -9,7 +9,7 @@ tags:
   - wisduo
 ---
 
-# Quick Start Guide
+# BastWAN Quick Start Guide
 
 ## Introduction
 

@@ -8,7 +8,7 @@ tags:
   - quickstart
 ---
 
-# Quick Start Guide
+# RAK4260 Breakout Board Quick Start Guide
 
 ## Prerequisites
 

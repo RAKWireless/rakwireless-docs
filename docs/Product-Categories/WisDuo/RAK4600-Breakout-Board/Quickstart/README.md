@@ -8,7 +8,7 @@ tags:
   - quickstart
 ---
 
-# Quick Start Guide
+# RAK4600 Breakout Board Quick Start Guide
 
 This guide covers the following topics:
 

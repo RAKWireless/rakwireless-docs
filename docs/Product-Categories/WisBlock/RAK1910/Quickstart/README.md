@@ -8,7 +8,7 @@ prev: ../Overview/
 next: ../Datasheet/ 
 ---
 
-# Quick Start Guide
+# RAK1910 Quick Start Guide
 
 This guide introduces the RAK1910 WisBlock GNSS Location Module and how to program with it. The information obtained from the GPS will then be printed over the USB debug port of the WisBlock Base board.
 
@@ -385,6 +385,10 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
 
 4. After the successful installation of the library, you can now select the right port and upload the code, as shown in Figure 23.
 
+::: tip 📝 NOTE
+RAK11200 requires Boot0 pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Please check the full details on the [RAK11200 quick start guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+:::
+
 <rk-img
   src="/assets/images/wisblock/rak1910/quickstart/upload.png"
   width="100%"
@@ -402,7 +406,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
 6. If everything is successful, you should now see the GPS coordinates on the Serial Monitor of the Arduino IDE, as shown in Figure 25.
 
 ::: tip 📝 NOTE
-It is possible that you will not see the same serial logs in Figure 26 abruptly at your first power up of the unit since the GPS module will still update its almanac and ephemeris data. The time it takes is called TTFF or `Time to first fix`.
+It is possible that you will not see the same serial logs in Figure 25 abruptly at your first power up of the unit since the GPS module will still update its almanac and ephemeris data. The time it takes is called TTFF or `Time to first fix`.
 
 It can range to more than 2 minutes depending on how good the satellite signals are in your location. After the almanac and ephemeris are updated, TTFF should be shorter, and getting a GPS signal fix will be faster.
 :::

@@ -4,7 +4,7 @@ tags:
   - datasheet
   - wisblock
   - RAK13001
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -14,7 +14,7 @@ next: false
 
 ### Description
 
-RAK13001 is a WisBlock Interface module which extends the WisBlock system to be used on isolated digital input and output applications. There is one digital output that is isolated by an electromechanical relay and one digital input isolated by an opto-couple. The isolated input can be configurated as wet contact (default mode) or dry contact. RAK13001 digital output is used to programmatically switch on/off devices operating at high voltage or current applications.
+RAK13001 is a WisBlock Interface module which extends the WisBlock system to be used on isolated digital input and output applications. There is one digital output that is isolated by an electromechanical relay and one digital input isolated by an opto-couple. The isolated input can be configured as wet contact (default mode) or dry contact. RAK13001 digital output is used to programmatically switch on/off devices operating at high voltage or current applications.
 
 ### Features
 
@@ -78,9 +78,7 @@ The RAK13001 WisBlock module has a 40-pin WisConnector that is compatible to the
 
 ::: tip 📝 NOTE
 - By default, PIN 10 (SW1) on WisConnector is used as DI input, and PIN 32 (IO4) is used as DO output. 
-
 - You can change DI or DO pin by reworking resistors. Some options have been reserved so you can change GPIO to control DI or DO.
-
 - RAK13001 use 3V3_S as power. You need to open 3V3_S when using this module, and also, you can shut down 3V3_S to save power when not using this module.
 :::  
 

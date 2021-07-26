@@ -8,7 +8,7 @@ tags:
   - wisblock
 ---
 
-# Quick Start Guide
+# RAK4631 Quick Start Guide
 
 This guide introduces the RAK4631 WisBlock Core LPWAN Module and how to use it. RAK4631 consists of a nRF52840 MCU and a SX1262 LoRa® chip making it ideal for various IoT projects.
 

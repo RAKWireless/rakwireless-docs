@@ -7,7 +7,7 @@ tags:
   - quickstart
 ---
 
-# Quick Start Guide
+# RAK7204 Quick Start Guide
 
 ## Prerequisites
 

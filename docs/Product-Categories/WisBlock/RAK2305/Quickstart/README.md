@@ -8,7 +8,7 @@ prev: ../Overview/
 next: ../Low-Level-Development/ 
 ---
 
-# Quick Start Guide
+# RAK2305 Quick Start Guide
 
 ## Prerequisites
 

@@ -8,7 +8,7 @@ tags:
   - RAK4600
 ---
 
-# Quick Start Guide
+# RAK4600 Module Quick Start Guide
 
 This guide covers the following topics:
 

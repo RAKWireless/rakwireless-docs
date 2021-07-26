@@ -8,7 +8,7 @@ tags:
   - wisduo
 ---
 
-# Quick Start Guide
+# RAK4260 Module Quick Start Guide
 
 ## Prerequisites
 

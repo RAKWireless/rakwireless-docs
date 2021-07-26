@@ -1,7 +1,7 @@
 ---
 static_root: /assets/images/wisduo/rak4260-evaluation-board/overview
 rak_img: /assets/images/wisduo/rak4260-evaluation-board/overview/RAK4260_Evaluation_home.png
-rak_desc: The RAK4260 Evaluation Board makes it simple to evaluate the RAK4260 stamp module. The base board allows to test WisBlock Sensor and WisBlock IO modules.
+rak_desc: The RAK4260 Evaluation Board makes it simple to evaluate the RAK4260 Stamp Module. The base board allows to test WisBlock Sensor and WisBlock IO modules.
 rak_grp: [wisduo, evb]
 prev: ../../
 next: ../Quickstart/

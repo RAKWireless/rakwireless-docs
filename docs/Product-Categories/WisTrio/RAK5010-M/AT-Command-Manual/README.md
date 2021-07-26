@@ -8,7 +8,7 @@ tags:
 rak_desc: For an easier experience with your RAK5010-M WisTrio NB-IoT Tracker, a comprehensive list of commands in configuring your device is provided.
 ---
 
-# AT Command Manual
+# RAK5010-M AT Command Manual
 
 The purpose of this section is to demonstrate on how to configure the RAK5010-M WisTrio NB-IoT Tracker thru the use of AT Commands via a Serial Port Tool running in your Windows PC. The list below shows the AT Commands available for use:
 

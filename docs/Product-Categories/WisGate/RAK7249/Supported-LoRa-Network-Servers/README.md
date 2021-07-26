@@ -10,7 +10,7 @@ next: ../Datasheet/
 ---
 
 
-# Supported LoRa Network Servers
+# RAK7249 Supported LoRa Network Servers
 
 ## Amazon Web Services (AWS)
 

@@ -8,7 +8,7 @@ tags:
   - quickstart
 ---
 
-# Quick Start Guide
+# RAK Hotspot Miner v2 Quick Start Guide
 
 ## Prerequisites
 

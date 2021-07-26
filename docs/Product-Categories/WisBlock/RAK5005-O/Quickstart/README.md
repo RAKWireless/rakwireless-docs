@@ -8,7 +8,7 @@ tags:
   - wisblock
 ---
 
-# Quick Start Guide
+# RAK5005-O Quick Start Guide
 
 This guide introduces the RAK5005-O WisBlock Base Board and how to use it. 
 

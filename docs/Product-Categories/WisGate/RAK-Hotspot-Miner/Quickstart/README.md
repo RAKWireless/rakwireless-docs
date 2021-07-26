@@ -8,7 +8,7 @@ tags:
   - wisgate
 ---
 
-# Quick Start Guide
+# RAK Hotspot Miner Quick Start Guide
 
 ## Prerequisites
 
