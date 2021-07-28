@@ -5,6 +5,8 @@ tags:
     - RAKARG19
     - datasheet
 rak_desc:  Covers the comprehensive information of your 902-928MHz 5dBi Fiber Glass Antenna to help you in using it. This information includes technical specifications and characteristics.
+rak_img: /assets/images/accessories/rakarg19/5dbi_antenna.svg
+
 ---
 
 

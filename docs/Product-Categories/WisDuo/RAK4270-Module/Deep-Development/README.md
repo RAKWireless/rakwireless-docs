@@ -4,6 +4,9 @@ next: ../Datasheet/
 tags:
   - wsiduo
   - RAK4270
+
+rak_img: /assets/images/wisduo/rak4270-module/overview/RAK4270_Module_Home.png
+
 ---
 
 

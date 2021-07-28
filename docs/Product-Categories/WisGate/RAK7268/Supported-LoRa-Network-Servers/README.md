@@ -1,5 +1,6 @@
 ---
 rak_desc: Contains a comprehensive guide in setting up both your RAK7268 and Amazon Web Services account and permissions. It also includes instructions in connecting and configuring your LoRaWAN Gateway to LORIOT. 
+rak_img: /assets/images/wisgate/rak7268/datasheet/RAK7268.png
 tags:
   - AWS
   - TTN

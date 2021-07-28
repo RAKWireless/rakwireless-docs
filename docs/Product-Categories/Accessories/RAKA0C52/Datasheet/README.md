@@ -5,6 +5,8 @@ tags:
     - RAKA0C52
     - datasheet
 rak_desc:  Covers the comprehensive information of your Magnetic Antenna Base to help you in using it. This information includes technical specifications and characteristics.
+rak_img: /assets/images/accessories/rak0c52/1.antenna-up.png
+
 ---
 
 # Magnetic Antenna Base Datasheet

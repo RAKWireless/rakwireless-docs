@@ -1,5 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK3244 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wisduo/bastwan/overview/BastWAN_Home.svg
 tags:
   - datasheet
   - wisduo

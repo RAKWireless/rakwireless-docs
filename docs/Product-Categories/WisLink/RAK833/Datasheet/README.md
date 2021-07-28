@@ -6,6 +6,7 @@ tags:
 prev: ../Overview/
 next: false
 rak_desc: Covers the comprehensive information of your RAK833 WisLink LPWAN Concentrator to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wislink-lora/rak833/datasheet/RAK833-Concentrator_home.png
 ---
 
 # RAK833 WisLink LPWAN Concentrator Datasheet

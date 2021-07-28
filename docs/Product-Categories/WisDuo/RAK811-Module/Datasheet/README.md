@@ -1,5 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK811 Module to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wisduo/rak811-module/overview/RAK811_Module_home.png
 prev: ../Low-Level-Development/
 tags:
   - datasheet
@@ -71,7 +72,7 @@ This section covers the hardware and software specifications of RAK811. All disc
 
 ### Hardware
 
-The hardware specification discusses the interfaces, pinouts and its corresponding functions and diagrams. It also covers the parameters of the both RAK811 Modules in terms of RF, electrical, mechanical, and operating characteristics. 
+The hardware specification is categorized into six parts. It discusses the pinouts of the module and its corresponding functions and diagrams. It also covers the RF, electrical, environmental, and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK811 Module.
 
 #### Interfaces
 
@@ -265,11 +266,40 @@ High radio frequency hardware supports the regions of EU868, US915, AU915, KR920
 
 ##### Schematic Diagram
 
-
 RAK811 supports two UARTs: UART1 (pin6-TX1, pin7-RX1) and UART3 (pin25-TX3, pin26-RX3). UART1 is used for upgrading firmware, so it is recommended that UART3 be used when connecting with external MCU. 
 
+###### Low Radio Frequency
+
 <rk-img
-  src="/assets/images/wisduo/rak811-module/datasheet/schematic-diagram/ghs8zbyhzisoqxezofnz.jpg"
+  src="/assets/images/wisduo/rak811-module/datasheet/schematic/rak811-lf-schematic1.png"
+  width="100%"
+  caption="RAK811 Low Frequency Schematic Diagram"
+/>
+
+<rk-img
+  src="/assets/images/wisduo/rak811-module/datasheet/schematic/rak811-lf-schematic2.png"
+  width="100%"
+  caption="RAK811 Low Frequency Schematic Diagram"
+/>
+
+###### High Radio Frequency
+
+<rk-img
+  src="/assets/images/wisduo/rak811-module/datasheet/schematic/rak811-hf-schematic1.png"
+  width="100%"
+  caption="RAK811 High Frequency Schematic Diagram"
+/>
+
+<rk-img
+  src="/assets/images/wisduo/rak811-module/datasheet/schematic/rak811-hf-schematic2.png"
+  width="100%"
+  caption="RAK811 High Frequency Schematic Diagram"
+/>
+
+###### Reference Design
+
+<rk-img
+  src="/assets/images/wisduo/rak811-module/datasheet/schematic/rak811-reference-design.png"
   width="100%"
   caption="Reference Design"
 />

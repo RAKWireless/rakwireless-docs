@@ -5,6 +5,8 @@ tags:
   - RAKARJ18
   - datasheet
 rak_desc: Covers the comprehensive information of your RAKARJ18 916MHz Yellow Antenna to help you in using it. This information includes technical specifications and characteristics.
+rak_img: /assets/images/accessories/rakarj18/KRAKBJ2701C00L---916MHz天线_4.png
+
 ---
 
 # RAKARJ18 916MHz Yellow Antenna Datasheet

@@ -5,6 +5,7 @@ tags:
   - Fiber Glass Antenna
   - 905000/905001
 rak_desc: Covers the comprehensive information of your 858-878MHz 8dBi Fiber Glass Antenna to help you in using it. This information includes technical specifications, characteristics, and requirements.
+rak_img: /assets/images/accessories/905000-905001/antenna_view.png
 ---
 
 # 858-878MHz 8dBi Fiber Glass Antenna Datasheet

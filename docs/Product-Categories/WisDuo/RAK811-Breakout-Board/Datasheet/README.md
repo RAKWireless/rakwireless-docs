@@ -1,5 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK811 Breakout Board to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wisduo/rak811-breakout-board/quickstart/overview/RAK811_Breakout_home.svg
 tags:
   - datasheet
   - wisduo
@@ -72,7 +73,7 @@ The **RAK811 Breakout Board** is shown in Figure 1 with its corresponding board 
 
 ### Hardware
 
-The hardware specification discusses the interfaces, pinouts and its corresponding functions and diagrams. It also covers the parameters of the both RAK811 Breakout Board in terms of RF, electrical, mechanical, and operating characteristics. 
+The hardware specification is categorized into six parts. It discusses the pinouts of the board and its corresponding functions and diagrams. It also covers the RF, electrical, environmental, and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK811 Breakout Board.
 
 #### Interfaces
 
@@ -181,6 +182,22 @@ The low radio frequency is applicable to bandwidth of regions EU433 and CN470.
 
 #### Electrical Characteristics
 
+##### Schematic Diagram
+
+
+<rk-img
+  src="/assets/images/wisduo/rak811-breakout-board/datasheet/5.schematic-diagram-for-rak811.jpg"
+  width="100%"
+  caption="RAK811 Schematic Diagram"
+/>
+
+
+<rk-img
+  src="/assets/images/wisduo/rak811-breakout-board/datasheet/6.reference-design.png"
+  width="100%"
+  caption="Reference Design"
+/>
+
 ##### Operating Voltage
 
 | Feature | Minimum | Typical | Maximum | Unit      |
@@ -234,22 +251,6 @@ The low radio frequency is applicable to bandwidth of regions EU433 and CN470.
 | ------------------- | ------- | ------- | ------- | ---- |
 | Storage Temperature | -40     |         | 85      | °C   |
 
-
-#### Schematic Diagram
-
-
-<rk-img
-  src="/assets/images/wisduo/rak811-breakout-board/datasheet/5.schematic-diagram-for-rak811.jpg"
-  width="100%"
-  caption="RAK811 Schematic Diagram"
-/>
-
-
-<rk-img
-  src="/assets/images/wisduo/rak811-breakout-board/datasheet/6.reference-design.jpg"
-  width="100%"
-  caption="Reference Design"
-/>
 
 ### Software
 

@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak14002/overview/RAK14002_buy.png
 rak_desc: RAK14002 is a WisBlock Touch Sensor which extends the WisBlock with a 3-channel Capacitive Touch Sensor. A ready to use SW library and tutorial makes it easy to add a capacitive touchpad to your project.
 rak_grp: [wisblock, wisinterface]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK14002
@@ -14,6 +14,7 @@ tags:
 
 Thank you for choosing **RAK14002 WisBlock Touch Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK14002 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->

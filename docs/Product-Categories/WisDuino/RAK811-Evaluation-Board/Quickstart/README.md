@@ -6,6 +6,8 @@ tags:
   - wisduino
   - quickstart
 rak_desc: Contains instructions and tutorials in installing and deploying your WisDuino RAK811 Evaluation Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
+rak_img: /assets/images/wisduino/rak811-evaluation-board/quickstart/overview/RAK811-wisnode_home.png
+
 ---
 
 # RAK811 Evaluation Board Quick Start Guide

@@ -1,5 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK7204 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wisnode/rak7204/quickstart/1.overview/RAK7204_home.svg
 prev: ../Quickstart/
 next: ../AT-Command-Manual/
 tags:

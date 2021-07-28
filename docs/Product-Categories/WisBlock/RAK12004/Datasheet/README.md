@@ -1,10 +1,11 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK12004 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wisblock/rak12004/overview/RAK12004_buy.png
 tags:
   - datasheet
   - wisblock
   - RAK12004
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -129,7 +130,7 @@ Figure 6 shows the gas detector circuit.
 
 The heater voltage requires a 5&nbsp;V supply which is provided by the 5&nbsp;V step-up converter. This is needed to achieve the standard working temperature of the sensor. The pins 1 and 3 voltage (5&nbsp;V) supply the detect voltage to load resistance R12. The **AOUT** pin is the voltage of load resistance R12 which represents the reading of the U2 sensor.
 
-* **U3** 12-Bit Analog-to-Digital converter with alert function. The U3 power supply is 5&nbsp;V.
+* **U3** ADC121C021 12-Bit Analog-to-Digital converter with alert function. The U3 power supply is 5&nbsp;V.
 
 <rk-img
   src="/assets/images/wisblock/rak12004/datasheet/gas-detector-circuit.png"

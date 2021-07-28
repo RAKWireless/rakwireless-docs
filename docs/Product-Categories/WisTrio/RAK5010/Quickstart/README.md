@@ -6,6 +6,7 @@ tags:
   - quickstart
   - wistrio
 rak_desc: Contains instructions and tutorials in installing and deploying your RAK5010 WisTrio NB-IoT Tracker Pro. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
+rak_img: /assets/images/wistrio/rak5010/quickstart/1.overview/RAK5010_home.png
 ---
 
 # RAK5010 Quick Start Guide

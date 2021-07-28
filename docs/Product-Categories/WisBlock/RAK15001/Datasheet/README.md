@@ -1,5 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK15001 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wisblock/rak15001/overview/RAK15001_home.png
 prev: ../Quickstart/
 next: false
 tags:

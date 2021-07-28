@@ -2,7 +2,7 @@
 rak_img: /assets/images/wisblock/rak14001/overview/RAK14001_home.png
 rak_desc: The RAK14001 is an RGB LED module capable of driving the RGB LEDs up to 20mA per segment via the I2C interface. It uses the NCP5623B of On Semiconductors that has a built−in DC/DC converter. 
 rak_grp: [wisblock, wisdisplay]
-next: ../Datasheet/
+next: ../Quickstart/
 prev: ../../
 tags:
     - wisblock
@@ -14,6 +14,7 @@ tags:
 
 Thank you for choosing **RAK14001 WisBlock RGB LED Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK14001 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
@@ -21,6 +22,12 @@ Thank you for choosing **RAK14001 WisBlock RGB LED Module** in your awesome IoT 
 * [RAK14001 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/)
 * [40-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
+
+**Examples**
+
+For All WisBlock Core:
+* [Sample Code: RAK14001 Gradual Dimming](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK14001_NCP5623_GradualDimming/RAK14001_NCP5623_GradualDimming.ino)
+* [Sample Code: RAK14001 RGB Cycle](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK14001_NCP5623_RGBCycle/RAK14001_NCP5623_RGBCycle.ino)
 
 ## Product Description
 

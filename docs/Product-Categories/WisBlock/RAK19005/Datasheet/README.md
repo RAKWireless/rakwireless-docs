@@ -1,5 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK19005 to help you in using it. This information includes technical specifications, characteristics.
+rak_img: /assets/images/wisblock/rak19005/overview/RAK19005.png
 prev: ../Overview/
 next: false
 tags:

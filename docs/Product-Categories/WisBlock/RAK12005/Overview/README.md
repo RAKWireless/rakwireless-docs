@@ -2,7 +2,7 @@
 rak_img: /assets/images/wisblock/rak12005/overview/RAK12005_home.png
 rak_desc: RAK12005 is a WisBlock Sensor that contains a sensing pad used for detecting water like rain and other electroconductive liquids.
 rak_grp: [wisblock, wissensor]
-next: ../Datasheet/
+next: ../Quickstart/
 prev: ../../
 tags:
     - wisblock
@@ -14,6 +14,7 @@ tags:
 
 Thank you for choosing **RAK12005 WisBlock Rain Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK12005 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
@@ -21,6 +22,11 @@ Thank you for choosing **RAK12005 WisBlock Rain Sensor Module** in your awesome 
 * [RAK12005 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/)
 * [40-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
+
+**Examples**
+
+For All WisBlock Core:
+* [Sample Code: RAK12005](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK12005_WaterDetector/RAK12005_WaterDetector.ino)
 
 ## Product Description
 

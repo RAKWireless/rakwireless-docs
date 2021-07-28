@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK4200 Breakout Board to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-
+rak_img: /assets/images/wisduo/rak4200-breakout-board/quickstart/main/RAK4200_Breakout_home.svg
 tags:
   - datasheet
   - wisduo
@@ -187,6 +187,12 @@ The table below shows the power consumption of RAK4200 Breakout Board:
   src="/assets/images/wisduo/rak4200-breakout-board/datasheet/rak4200-breakout-module-schematic.png"
   width="100%"
   caption="RAK4200 Breakout Board Schematic"
+/>
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-breakout-board/datasheet/rak4200-reference-ckt.png"
+  width="100%"
+  caption="RAK4200 Breakout Board Reference Circuit"
 />
 
 ### Software

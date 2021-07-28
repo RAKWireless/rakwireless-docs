@@ -1,5 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK811 Module to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wisduo/rak813-module/overview/RAK813_home.png
 tags:
 - datasheet
 - wisduo
@@ -87,7 +88,7 @@ The short-range technology nRF52832 (BLE) is paired with the Semtech's SX127x (L
 
 ### Hardware
 
-The hardware specification is categorized into five parts. It discusses the pinouts of the module and its corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK813 Module.
+The hardware specification is categorized into five parts. It discusses the pinouts of the module and its corresponding functions and diagrams. It also covers the electrical, environmental, and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK813 Module.
 
 
 #### Pin Definition
@@ -153,6 +154,26 @@ The hardware specification is categorized into five parts. It discusses the pino
 
 #### Electrical Characteristics
 
+##### Schematic Diagram
+
+<rk-img
+  src="/assets/images/wisduo/rak813-module/datasheet/schematic/rak813-schematic1.png"
+  width="100%"
+  caption="RAK813 Schematic Diagram"
+/>
+
+<rk-img
+  src="/assets/images/wisduo/rak813-module/datasheet/schematic/rak813-schematic2.png"
+  width="100%"
+  caption="RAK813 Schematic Diagram"
+/>
+
+<rk-img
+  src="/assets/images/wisduo/rak813-module/datasheet/schematic/rak813-schematic3.png"
+  width="100%"
+  caption="RAK813 Schematic Diagram"
+/>
+
 ##### Recommended Operation Rating
 
 |     | Minimum | Typical | Maximum | Unit |
@@ -176,7 +197,9 @@ The hardware specification is categorized into five parts. It discusses the pino
   caption="Mechanical Dimensions of RAK813"
 />
 
-#### Recommended Reflow Profile
+#### Environmental Characteristics
+
+##### Recommended Reflow Profile
 
 <rk-img
   src="/assets/images/wisduo/rak813-module/datasheet/reflow-profile/reflow-profile.png"

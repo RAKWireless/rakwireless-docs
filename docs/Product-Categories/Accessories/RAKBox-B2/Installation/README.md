@@ -4,6 +4,8 @@ next: false
 tags:
     - RAKBox-B2
 rak_desc: In this guide, the process of assembling and mounting your RAKBox-B2 will be shown step by step. Strict adherence to the steps guarantees a secured and durable casing.
+rak_img: /assets/images/accessories/rakbox-b2/overview/overview.png
+
 ---
 # Installation Guide
 

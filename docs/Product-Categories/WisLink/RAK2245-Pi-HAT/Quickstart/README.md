@@ -6,6 +6,8 @@ tags:
   - quickstart
   - wislink
 rak_desc: Contains instructions and tutorials in installing and deploying your RAK2245 Pi HAT WisLink LPWAN Concentrator. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LPWAN Concentrator. 
+rak_img: /assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/1.product-overview/1.index/RAK2245-PiHat_home.png
+
 ---
 
 # RAK2245 Pi HAT Quick Start Guide

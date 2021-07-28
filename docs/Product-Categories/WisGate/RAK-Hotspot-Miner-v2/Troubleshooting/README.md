@@ -1,6 +1,6 @@
 ---
 rak_desc: Walks through different connection scenarios with your RAK Hotspot Miner v2. This includes both the outdoor and indoor enclosure and antennas of RAKwireless suitable for your LoRaWAN Gateway.
-
+rak_img: /assets/images/wisgate/rak-hotspot-miner-v2/overview/rak_hotspot_miner_v2.png
 next: ../Datasheet/
 prev: ../Quickstart/
 tags:

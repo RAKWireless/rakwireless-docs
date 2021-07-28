@@ -1,5 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK1920 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wisblock/rak1920/overview/RAK1920_home.png
 tags:
   - datasheet
   - wisblock

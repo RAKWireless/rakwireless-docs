@@ -1,6 +1,7 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK4631 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 prev: ../Quickstart/
+rak_img: /assets/images/wisblock/rak4631/overview/RAK4631_home.png
 next: false
 tags:
   - datasheet

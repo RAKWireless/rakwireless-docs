@@ -5,6 +5,8 @@ tags:
   - RAKBox-B4
   - datasheet
 rak_desc:  Covers the comprehensive information of your WisBlock RAKBox-B4 Enclosure to help you in using it. This information includes technical specifications and characteristics.
+rak_img: /assets/images/accessories/rakbox-b4/overview/overview.png
+
 ---
 
 # WisBlock RAKBox-B4 Enclosure Datasheet

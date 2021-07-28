@@ -5,7 +5,10 @@ tags:
     - RAKBox-B3
     - datasheet
 rak_desc:  Covers the comprehensive information of your WisBlock RAKBox-B3 Enclosure to help you in using it. This information includes technical specifications and characteristics.
+rak_img: /assets/images/accessories/rakbox-b3/overview/overview.png
+
 ---
+
 # WisBlock RAKBox-B3 Enclosure Datasheet
 
 RAKBox-B3 is an IP20 rated enclosure for indoor usage. It is designed specifically for the WisBlock products.

@@ -1,5 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials in installing and deploying your RAK7258. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
+rak_img: /assets/images/wisgate/rak7258/quickstart/1.main/RAK7258_home.png
 prev: ../Overview/
 next: ../Supported-LoRa-Network-Servers/
 tags:

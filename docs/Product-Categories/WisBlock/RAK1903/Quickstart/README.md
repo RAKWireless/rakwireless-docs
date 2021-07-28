@@ -1,5 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials in installing and deploying your RAK1903. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
+rak_img: /assets/images/wisblock/rak1903/overview/RAK1903_home.png
 tags:
   - quickstart
   - wisblock

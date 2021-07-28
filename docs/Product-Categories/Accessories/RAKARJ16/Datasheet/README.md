@@ -5,10 +5,12 @@ tags:
   - RAKARG16
   - datasheet
 rak_desc: Covers the comprehensive information of your RAKARJ16 868MHz White Blade Antenna to help you in using it. This information includes technical specifications and characteristics.
+rak_img: /assets/images/accessories/rakarj16/Black 915MHz Antenna Features.png
+
 ---
 
 # RAKARJ16 915MHz Black Blade Antenna Datasheet
-
+ 
 ## Overview
 
 ### Features

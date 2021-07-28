@@ -14,6 +14,8 @@ certifications:
   - [REACH, https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247_reach_SZX20-030354-02_EC_21312991_F.pdf]
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Certification-Report/RAK2247_rohs_SZX20-030350-01_EC_21312990_F.PDF]
 rak_desc: Covers the comprehensive information of your RAK2247 WisLink LPWAN Concentrator to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wislink-lora/rak2247/quickstart/1.main/RAK2247_home.png
+
 ---
 
 # RAK2247 WisLink LPWAN Concentrator Datasheet

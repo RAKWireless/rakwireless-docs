@@ -2,8 +2,8 @@
 rak_img: /assets/images/wisblock/rak12004/overview/RAK12004_buy.png
 rak_desc: RAK12004 is a WisBlock Sensor Module that extends the WisBlock system with a gas sensor. It enables the user to build a gas and smoke detection system that can send measured data and alarm messages over LoRaWAN.
 rak_grp: [wisblock, wissensor]
+next: ../Quickstart/
 prev: ../../
-next: ../Datasheet/
 tags:
     - wisblock
     - RAK12004
@@ -14,6 +14,7 @@ tags:
 
 Thank you for choosing **RAK12004 WisBlock MQ2 Gas Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK12004 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
@@ -23,17 +24,23 @@ Thank you for choosing **RAK12004 WisBlock MQ2 Gas Sensor** in your awesome IoT 
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 
 
-**Example**
+**Examples**
 
-* [Sample Code: Gas sensor read and display on OLED](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12004_MQ2_read) 
+
+* [Sample Code: MQ2 read sensor data](https://github.com/RAKWireless/RAK-MQx-Library/tree/main/examples/RAK12004_MQ2_Sampling)
+
+* [Sample Code: MQ2 detect smoke and RAK1801 buzzer alarm](https://github.com/RAKWireless/RAK-MQx-Library/tree/main/examples/RAK12004_MQ2_SmokeDetection)
+
+* [Sample Code: MQ2 read sensor data and display on OLED](https://github.com/RAKWireless/RAK-MQx-Library/tree/main/examples/RAK12004_MQ2_read) 
+
 
 ## Product Description
-The RAK12004 is a gas sensor module, part of the RAKWireless WisBlock Sensor series. The sensor used is the MQ-2 from Zhengzhou Winsen Electronics.
+The RAK12004 is a gas sensor module, part of the RAKWireless WisBlock Sensor series. The sensor used is the MQ2 from Zhengzhou Winsen Electronics.
 
 ## Product Features
 
 * **Sensor specifications**
-    * MQ-2 gas sensor
+    * MQ2 gas sensor
     * Sensitivity to LPG, butane, propane, methane, alcohol, hydrogen, smoke, and other flammable steam  
     * I2C Interface
     * Alert function

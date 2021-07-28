@@ -1,5 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials in installing and deploying your RAK7244C. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
+rak_img: /assets/images/wisgate/rak7244c/quickstart/overview/RAK7244C_home.png
 prev: ../Overview/
 next: ../Testing-Report/
 tags:

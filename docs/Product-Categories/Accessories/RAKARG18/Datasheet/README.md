@@ -5,6 +5,8 @@ tags:
     - RAKARG18
     - datasheet
 rak_desc:  Covers the comprehensive information of your 863-870 MHz 5 dBi Fiber Glass Antenna to help you in using it. This information includes technical specifications and characteristics.
+rak_img: /assets/images/accessories/rakarg18/5dbi_antenna.svg
+
 ---
 
 # 863-870 MHz 5 dBi Fiber Glass Antenna Datasheet

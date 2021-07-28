@@ -1,5 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials in installing and deploying your <board/module name>. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
+rak_img: /assets/images/wisnode/rak7431/datasheet/RAK7431_home.png
 prev: ../Overview/
 next: ../Datasheet/
 tags:

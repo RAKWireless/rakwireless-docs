@@ -1,5 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK5802 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wisblock/rak5802/overview/RAK5802_home.png
 tags:
   - datasheet
   - wisblock

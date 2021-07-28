@@ -1,5 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK4200 Module to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wisduo/rak4200-module/overview/RAK4200_Module_home.png
 tags:
   - datasheet
   - wisduo
@@ -224,7 +225,14 @@ The RAK4200 WisDuo LPWAN Module takes **46.179&nbsp;ms** to receive a LoRa packe
 <rk-img
   src="/assets/images/wisduo/rak4200-module/datasheet/schematic.png"
   width="100%"
-  caption="Schematic Diagram"
+  caption="RAK4200 Module Schematic Diagram"
+/>
+
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-module/datasheet/rak4200-reference-ckt.png"
+  width="100%"
+  caption="RAK4200 Module Reference Circuit"
 />
 
 #### Mechanical Characteristics

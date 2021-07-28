@@ -1,5 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK1903 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wisblock/rak1903/overview/RAK1903_home.png
 tags:
   - datasheet
   - wisblock

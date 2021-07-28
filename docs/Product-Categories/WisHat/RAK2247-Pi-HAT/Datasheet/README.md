@@ -6,6 +6,8 @@ tags:
 prev: ../Overview/
 next: false
 rak_desc: Covers the comprehensive information of your RAK2247 Pi HAT to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wishat/rak2247-pi-hat/overview/RAK2247_PiHat_home.png
+
 ---
 
 # RAK2247 Pi HAT Datasheet

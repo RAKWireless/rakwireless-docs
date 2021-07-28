@@ -6,6 +6,8 @@ tags:
   - wisgate
   - quickstart
 rak_desc: Contains instructions and tutorials in installing and deploying your RAK7240. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
+rak_img: /assets/images/wisgate/rak7240/quickstart/RAK7240_home.png
+
 ---
 # RAK7240 Quick Start Guide
 

@@ -1,5 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials in installing and deploying your RAK Hotspot Miner. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
+rak_img: /assets/images/wisgate/rak-hotspot-miner/overview/RAK-Hotspot-Miner_home.svg
 next: ../Backup/
 prev: ../Overview/
 tags:

@@ -1,5 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK7246G to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wisgate/rak7246g/quickstart/RAK7246_home.png
 static_root: /assets/images/wisgate/rak7246g/datasheet/overview
 tags:
   - datasheet

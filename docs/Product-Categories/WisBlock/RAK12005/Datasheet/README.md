@@ -1,10 +1,11 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK12005 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wisblock/rak12005/overview/RAK12005_home.png
 tags:
   - datasheet
   - wisblock
   - RAK12005
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -38,7 +39,7 @@ RAK12005 WisBlock Rain Sensor Module also has a separate sensor PCB, the RAK1203
 
 #### Mounting
 
-The RAK12005 module can be mounted on the IO slot of the WisBlock Base board. **Figure 2** shows the mounting mechanism of the RAK19006 on a WisBlock Base module, such as the RAK5005-O.
+The RAK12005 module can be mounted on the IO slot of the WisBlock Base board. **Figure 2** shows the mounting mechanism of the RAK12005 on a WisBlock Base module, such as the RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak12005/datasheet/mounting-mechanism.png"

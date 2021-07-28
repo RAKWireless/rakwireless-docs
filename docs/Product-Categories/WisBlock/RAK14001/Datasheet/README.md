@@ -1,10 +1,11 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK14001 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wisblock/rak14001/overview/RAK14001_home.png
 tags:
   - datasheet
   - wisblock
   - RAK14001
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 

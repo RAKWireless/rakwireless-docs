@@ -1,5 +1,6 @@
 ---
 rak_desc: Displays the RAK7246G test requirements and results in different temperature work and storage scenarios. This ensures that your LoRaWAN Gateway can operate efficiently in various conditions.
+rak_img: /assets/images/wisgate/rak7246g/quickstart/RAK7246_home.png
 prev: ../Datasheet/
 next: false
 tags:

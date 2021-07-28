@@ -1,5 +1,6 @@
 ---
 rak_desc: Aside from the default RAK FW on the RAK4260 Evaluation Board, you can create custom FW using RUI (RAKwireless Unified Interface) or the actual SDK from the manufacturer of the microcontroller that is used inside the module.
+rak_img: /assets/images/wisduo/rak4260-evaluation-board/overview/RAK4260_Evaluation_home.png
 prev: ../Quickstart/
 next: ../Datasheet/
 tags:

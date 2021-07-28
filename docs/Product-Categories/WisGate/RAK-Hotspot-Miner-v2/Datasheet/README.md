@@ -1,6 +1,7 @@
 ---
 static_root: 
 rak_desc: Covers the comprehensive information of your RAK Hotspot Miner v2 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wisgate/rak-hotspot-miner-v2/overview/rak_hotspot_miner_v2.png
 tags:
   - datasheet
   - wisgate

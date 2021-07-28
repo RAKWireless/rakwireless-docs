@@ -6,6 +6,8 @@ tags:
 prev: ../Overview/
 next: false
 rak_desc: Covers the comprehensive information of your RAK9003 PoE Pi HAT to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wishat/rak9003-poe-hat/datasheet/RAK9003_home.png
+
 ---
 
 # RAK9003 PoE Pi HAT Datasheet

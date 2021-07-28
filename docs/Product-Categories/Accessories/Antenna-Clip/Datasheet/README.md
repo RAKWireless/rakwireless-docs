@@ -5,6 +5,7 @@ tags:
   - Antenna Clip
   - datasheet
 rak_desc: Covers the comprehensive information of your Antenna Clip to help you in using it. This information includes technical specifications, characteristics, and requirements.
+rak_img: /assets/images/accessories/antenna-clip/antenna-clip.png
 ---
 
 # Antenna Clip Datasheet

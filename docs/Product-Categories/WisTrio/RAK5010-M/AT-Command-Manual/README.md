@@ -6,6 +6,7 @@ tags:
   - RAK5010-M
   - wistrio
 rak_desc: For an easier experience with your RAK5010-M WisTrio NB-IoT Tracker, a comprehensive list of commands in configuring your device is provided.
+rak_img: /assets/images/wistrio/rak5010-m/overview/RAK5010-M_home.png
 ---
 
 # RAK5010-M AT Command Manual

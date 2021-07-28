@@ -1,5 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK7268 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wisgate/rak7268/datasheet/RAK7268.png
 tags:
   - datasheet
   - wisgate

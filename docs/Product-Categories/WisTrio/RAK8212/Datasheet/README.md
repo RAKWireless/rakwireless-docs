@@ -7,6 +7,7 @@ tags:
   - wistrio
   - RAK8212
 rak_desc: Covers the comprehensive information of your RAK8212 WisTrio iTracker Pro to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wistrio/rak8212/quickstart/overview/RAK8212_home.svg
 ---
 
 # RAK8212 WisTrio iTracker Pro Datasheet

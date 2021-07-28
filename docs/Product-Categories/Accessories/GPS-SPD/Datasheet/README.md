@@ -6,6 +6,8 @@ tags:
   - GPS SPD
   - datasheet
 rak_desc:  Covers the comprehensive information of your GPS SPD to help you in using it. This information includes technical specifications, characteristics, and requirements.
+rak_img: /assets/images/accessories/gps-spd/lightning_arrestor_gps.png
+
 ---
 
 # GPS SPD Datasheet

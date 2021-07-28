@@ -3,9 +3,10 @@ tags:
   - datasheet
   - wisblock
   - RAK14002
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 rak_desc: Covers the comprehensive information of your RAK14002 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wisblock/rak14002/overview/RAK14002_buy.png
 ---
 
 # RAK14002 WisBlock Touch Sensor Module Datasheet

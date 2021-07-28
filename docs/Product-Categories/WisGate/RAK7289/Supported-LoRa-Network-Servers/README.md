@@ -1,5 +1,6 @@
 ---
 rak_desc: Contains a comprehensive guide in setting up your RAK7289 with the supported LoRa network server. It includes instructions in connecting and configuring your LoRaWAN Gateway to LORIOT.
+rak_img: /assets/images/wisgate/rak7289/overview/RAK7289.png
 tags:
   - AWS
   - TTN
