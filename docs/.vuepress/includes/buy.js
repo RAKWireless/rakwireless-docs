@@ -695,5 +695,10 @@ export default {
     label: 'GPS-Antenna',
     img: '/assets/images/accessories/gps-antenna/gps-antenna.png',
     store: 'https://store.rakwireless.com/products/gps-antenna' 
+  },
+  '/Product-Categories/Accessories/Helical-Base-Magnetic-Antenna/': {
+    label: 'Helical Base Magnetic Antenna',
+    img: '/assets/images/accessories/helical-magnetic-base-antenna/helical-magnetic-base.png',
+    store: 'https://store.rakwireless.com/products/magnetic-antenna' 
   }
 }

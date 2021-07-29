@@ -329,7 +329,7 @@ To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
 | 0     | EU433         |
 | 1     | CN470         |
 | 2     | RU864         |
-| 3     | IN890         |
+| 3     | IN865         |
 | 4     | EU868         |
 | 5     | US915         |
 | 6     | AU915         |
@@ -565,7 +565,7 @@ To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
 | 0     | EU433         |
 | 1     | CN470         |
 | 2     | RU864         |
-| 3     | IN890         |
+| 3     | IN865         |
 | 4     | EU868         |
 | 5     | US915         |
 | 6     | AU915         |
@@ -900,7 +900,7 @@ To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
 | 0     | EU433         |
 | 1     | CN470         |
 | 2     | RU864         |
-| 3     | IN890         |
+| 3     | IN865         |
 | 4     | EU868         |
 | 5     | US915         |
 | 6     | AU915         |
@@ -1109,7 +1109,7 @@ To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
 | 0     | EU433         |
 | 1     | CN470         |
 | 2     | RU864         |
-| 3     | IN890         |
+| 3     | IN865         |
 | 4     | EU868         |
 | 5     | US915         |
 | 6     | AU915         |
@@ -1286,25 +1286,17 @@ AT+PSEND=11223344
 
 If you want to upgrade the latest version firmware of the module, you can follow this section. The latest firmware can be found in the software section of [RAK3172 Datasheet](/Product-Categories/WisDuo/RAK3172-Module/Datasheet/#firmware-os).
 
-In the following sections, two (2) options for flashing new firmware in a RAK3172 module are shown: **Upgrade through DAPLink** and **Upgrade through UART2**.
-
-#### Firmware Upgrade Through DAPLink
-
-Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool) guide in the Accessories Category.
-
 #### Firmware Upgrade Through UART2
 
 ##### Minimum Hardware and Software Requirements
 
-Refer to the table for the minimum hardware and software required to perform the firmware upgrade using J-Link.
+Refer to the table for the minimum hardware and software required to perform the firmware upgrade via UART2.
 
 | Hardware/Software | Requirement                                   |
 | ----------------- | --------------------------------------------- |
 | Computer          | A Windows/Ubuntu/Mac computer                 |
 | Firmware File     | Bin firmware file downloaded from the website |
 | Others            | A USB to TTL module                           |
-
-
 
 ##### Firmware Upgrade Procedure
 

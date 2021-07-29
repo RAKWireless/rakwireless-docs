@@ -2,6 +2,7 @@
 prev: /Product-Categories/
 displayAllHeaders: true
 rak_desc: WisGate is a category of products built by the RAK company for the IoT Industry. It is the backbone of the network where it offers a cost-efficient and wide range of gateway solutions for building LPWAN. These gateways act as an LPWAN base station with multiple backhaul connectivity options. Hence, they are split into two categories— indoor and outdoor gateways.
+rak_img: /assets/rakwireless/product-categories/WisGate.svg
 ---
 
 # WisGate

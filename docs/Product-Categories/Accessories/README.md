@@ -2,6 +2,7 @@
 prev: /Product-Categories/
 displayAllHeaders: true
 rak_desc: With these accessories, you can complete your LoRaWan project. Whether you need antennas, lightning arrestors or a DAPLink programming adapter, you can find it here.
+rak_img: /assets/rakwireless/product-categories/accessory.png
 ---
 
 # Accessories

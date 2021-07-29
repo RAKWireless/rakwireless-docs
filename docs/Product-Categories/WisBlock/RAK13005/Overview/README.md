@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak13005/overview/RAK13005_home.png
 rak_desc: RAK13005 is a WisBlock Interface module that extends the WisBlock system with a LIN module. It is designed for in-vehicle networks using data transmission rates up to 20 kBaud.
 rak_grp: [wisblock, wisinterface]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - RAK13005
     - wisblock
@@ -13,7 +13,7 @@ tags:
 
 Thank you for choosing **RAK13005 WisBlock LIN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
-
+* [RAK13005 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
@@ -25,8 +25,8 @@ Thank you for choosing **RAK13005 WisBlock LIN Module** in your awesome IoT Proj
 
 **Examples**:
 
-* [Sample Code: RAK13005 LIN controller](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK13005_LIN_BUS/LINBusCommunication/RAK13005_linbus_master)
-* [Sample Code: RAK13005 LIN peripheral](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK13005_LIN_BUS/LINBusCommunication/RAK13005_linbus_slaver)
+* [Sample Code: RAK13005 LIN Data Transfer](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK13005_LIN_BUS/LINBusCommunication)
+* [Sample Code: RAK13005 LIN LED Control](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK13005_LIN_BUS/LINBusControlLED)
 
 ## Product Description
 

@@ -585,6 +585,24 @@ module.exports = {
           download: true,
           sidebarDepth: 4
         }
+      ],
+        '/Product-Categories/Accessories/Helical-Base-Magnetic-Antenna/': [
+          {
+            title: 'Overview',
+            path: '/Product-Categories/Accessories/Helical-Base-Magnetic-Antenna/Overview/', 
+            collapsable: false,
+            nested: true,
+            download: true,
+            sidebarDepth: 4
+          },
+          {
+            title: 'Datasheet',
+            path: '/Product-Categories/Accessories/Helical-Base-Magnetic-Antenna/Datasheet/',
+            collapsable: false,
+            nested: true,
+            download: true,
+            sidebarDepth: 4
+          }  
 ],
 
 

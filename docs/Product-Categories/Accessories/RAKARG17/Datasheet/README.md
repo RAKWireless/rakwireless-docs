@@ -42,7 +42,7 @@ rak_img: /assets/images/accessories/antenna-black/1.png
 | Peak Gain              | 5.9&nbsp;dBi                    |
 | VSWR                   | ≤ 2                             |
 | Efficiency             | ≤ 83%                           |
-| Feed Impedance         | 75&nbsp;Ω                       |
+| Feed Impedance         | 50&nbsp;Ω                       |
 | Polarization           | Vertical                        |
 | Cover Material (color) | Fiberglass (black)              |
 | Connector Type         | N-type male                     |

@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak17000/overview/RAK17000_home.png
 rak_desc: RAK17000 is a WisBlock Motor Control Module that easily drives one stepper motor or two DC motors.
 rak_grp: [wisblock, wismotor]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK17000
@@ -13,6 +13,7 @@ tags:
 
 Thank you for choosing **RAK17000 WisBlock Motor Control Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK17000 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
@@ -22,9 +23,15 @@ Thank you for choosing **RAK17000 WisBlock Motor Control Module** in your awesom
 
 **Examples**: 
 
-For All WisBlock Core:
+For WisBlock Core RAK4630:
 
-* [Sample Code: WisBlock Motor Control Module](https://github.com/RAKWireless/WisBlock/tree/master/examples)
+* [Sample Code: DC Motor Control](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/IO/RAK17000_Motor_Driver_DRV8833)
+* [Sample Code: Stepper Motor Control](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/IO/RAK17000_Stepper_Driver_DRV8833)
+
+For WisBlock Core RAK11200:
+
+* [Sample Code: DC Motor Control](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/IO/RAK17000_Motor_Driver_DRV8833)
+* [Sample Code: Stepper Motor Control](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/IO/RAK17000_Stepper_Driver_DRV8833)
 
 ## Product Description
 

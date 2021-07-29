@@ -1,5 +1,5 @@
 ---
-prev: ../Overview/
+prev: ../Quickstart/
 rak_desc: Covers the comprehensive information of your RAK13005 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisblock/rak13005/overview/RAK13005_home.png
 next: false

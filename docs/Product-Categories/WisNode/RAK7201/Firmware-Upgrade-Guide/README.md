@@ -11,7 +11,7 @@ tags:
 
 # Firmware Upgrade Guide
 
-For the RAK7201 to work properly, the latest firmware must be configurated.
+For the RAK7201 to work properly, the latest firmware must be installed.
 
 ## Overview
 
@@ -20,7 +20,7 @@ To upgrade the firmware of the WisNode Button 4K the following will be needed:
 - RAK7201 WisNode Button 4K
 - RAK DFU (Device Firmware Upgrade) Tool. Download it [here](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip).
 - Micro USB cable
-- The latest firmware. Download it here.
+- The latest firmware. Download it [here](https://downloads.rakwireless.com/LoRa/RAK7201/Firmware/RAK7201_Latest_Firmware.zip).
 
 ## Upgrade Process
 

@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisblock
   - RAK17000
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -69,7 +69,7 @@ The RAK17000 WisBlock motor drive module comprises a standard WisBlock connector
 :::
 
 <rk-img
-  src="/assets/images/wisblock/rak17000/datasheet/rak17000_connector_pinout.svg"
+  src="/assets/images/wisblock/rak17000/datasheet/rak17000-pinout.svg"
   width="70%"
   caption="RAK17000 WisBlock Motor Drive Module Pinout"
 />

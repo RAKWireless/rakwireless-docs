@@ -2,6 +2,7 @@
 prev: /Product-Categories/
 displayAllHeaders: true
 rak_desc: WisNode is a category of products built by the RAK company for the IoT Industry. Modules under this category are end-user devices or IoT nodes used to serve a case scenario in a cost-efficient manner.
+rak_img: /assets/rakwireless/product-categories/WisNode.svg
 ---
 
 # WisNode

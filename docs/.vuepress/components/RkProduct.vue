@@ -41,6 +41,9 @@
           <template v-if="cpn">
             CPN: <b>{{ cpn }}</b>
           </template>
+          <template v-else-if="pid">
+            PID: <b>{{ pid }}</b>
+          </template>
           <template v-else>
             Model: <b>{{ model_ }}</b>
           </template>
@@ -69,6 +72,7 @@ export default {
     label: { type: String },
     model: { type: String },
     cpn: { type: String },
+    pid : {type: String},
     v2: { type: Boolean, default: false }
   },
   mixins: [CommonMixin],
@@ -79,6 +83,7 @@ export default {
     name() {
       if (this.v2) return this.label || 'RAK Product'
       if (this.cpn) return this.label || 'RAK Product'
+      if (this.pid) return this.label || 'RAK Product'
 
       try {
         if (this.model) return this.label

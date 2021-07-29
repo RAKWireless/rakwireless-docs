@@ -151,7 +151,7 @@ The RAK3272S module supports the LoRaWAN bands shown in table below. When buying
 
 #### Mechanical Characteristics
 
-Figure 3 show RAK3372 board dimensions.
+Figure 3 show RAK3272S board dimensions.
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/datasheet/dimensions.png"
@@ -160,4 +160,18 @@ Figure 3 show RAK3372 board dimensions.
 />
 
 
+### Software
 
+Download the latest firmware of the RAK3272S Breakout Board provided below. RAK3272SL and RAK3272S use the same firmware, and it will automatically detect the variant of the module being used.
+
+The **bin file** contains the application code only and you need the RAK DFU Tool to upload this file to the module.
+
+The **hex file** contains both the bootloader and the application code. You need to use STM32CubeProgrammer to upload this.
+
+RAK3272S uses UART2 serial pins to upload the latest firmware.
+
+#### Firmware / OS
+
+| Model    | Version | Source                                                                                            |
+| -------- | ------- | ------------------------------------------------------------------------------------------------- |
+| RAK3272S | V1.0.2  | [Download](https://downloads.rakwireless.com/LoRa/RAK3272S/Firmware/RAK3272S_Latest_Firmware.zip) |

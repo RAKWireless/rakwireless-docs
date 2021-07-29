@@ -532,6 +532,14 @@ module.exports = {
     sidebarDepth: 4
   },
   {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },                                                        
+  {
     title: 'AT Command Manual',
     path: '/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/',
     collapsable: false,
