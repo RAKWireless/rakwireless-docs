@@ -103,14 +103,14 @@ The pin definitions of the RAK4270 Breakout Board are shown in the following tab
 
 |  Pin  | Name     |  I/O  | Description                                         | Alternate functions                                                         |
 | :---: | -------- | :---: | --------------------------------------------------- | --------------------------------------------------------------------------- |
-|   1   | UART2_RX |   I   | AT command UART (STM32L071KBU6 PA3)                 | USART1_RX, I2C1_SDA                                                         |
-|   2   | UART2_TX |   O   | AT command UART (STM32L071KBU6 PA2)                 | MCO, USART1_TX, I2C1_SCL, I2C3_SMBA                                         |
-|   3   | UART2_DE |  I/O  | GPIO (STM32L071KBU6 PA1)                            | Reserved for internal use. Do not connect external circuit.                                |
-|   4   | UART1_DE |  I/O  | General GPIO or UART(Reserved) (STM32L071KBU6 PA12) | EVENTOUT, TIM2_CH2, USART2_RTS_DE, TIM21_ETR, USART4_RX, COMP1_INP, ADC_IN1 |
+|   1   | UART2_RX |   I   | AT command UART (STM32L071KBU6 PA3)                 | TIM21_CH2, TIM2_CH4, USART2_RX, LPUART1_RX                                                         |
+|   2   | UART2_TX |   O   | AT command UART (STM32L071KBU6 PA2)                 | TIM21_CH1, TIM2_CH3, USART2_TX, LPUART1_TX, COMP2_OUT                                         |
+|   3   | UART2_DE |  I/O  | GPIO (STM32L071KBU6 PA1)                            | EVENTOUT, TIM2_CH2, USART2_RTS/ USART2_DE, TIM21_ETR, USART4_RX                                |
+|   4   | UART1_DE |  I/O  | General GPIO or UART(Reserved) (STM32L071KBU6 PA12) | SPI1_MOSI,EVENTOUT, USART1_RTS/ USART1_DE, COMP2_OUT |
 |   5   | SWDIO    |  I/O  | Programming (STM32L071KBU6 PA13)                    | SWDIO, LPUART1_RX                                                           |
 |   6   | SWCLK    |  I/O  | Programming (STM32L071KBU6 PA14)                    | SWCLK, USART2_TX, LPUART1_TX                                                |
-|   7   | I2C_SCL  |  I/O  | I2C interface (STM32L071KBU6 PB6)                   | USART1_TX,I2C1_SCL, LPTIM1_ETR,COMP2_INP                                    |
-|   8   | I2C_SDA  |  I/O  | I2C interface (STM32L071KBU6 PB7)                   | USART1_RX,I2C1_SDA, LPTIM1_IN2,USART4_CTS, COMP2_INP,VREF_PVD_IN            |
+|   7   | I2C_SCL  |  I/O  | I2C interface (STM32L071KBU6 PB6)                   | USART1_TX, I2C1_SCL, LPTIM1_ETR                                   |
+|   8   | I2C_SDA  |  I/O  | I2C interface (STM32L071KBU6 PB7)                   | USART1_RX, I2C1_SDA, LPTIM1_IN2, USART4_CTS            |
 
 
 ##### J2 Pin Definitions
@@ -118,13 +118,13 @@ The pin definitions of the RAK4270 Breakout Board are shown in the following tab
 |  Pin  | Name     |  I/O  | Description                                       | Alternate functions                                                                              |
 | :---: | -------- | :---: | ------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 |   1   | VDD      |   -   | DC3V3                                             | Supply voltage 2.0~3.3&nbsp;V                                                                    |
-|   2   | UART1_TX |  I/O  | Upgrade UART or General GPIO (STM32L071KBU6 PA9)  | TIM21_CH1,TIM2_CH3, USART2_TX, PUART1_TX, COMP2_OUT,COMP2_INM, ADC_IN2                           |
-|   3   | UART1_RX |  I/O  | Upgrade UART or General GPIO (STM32L071KBU6 PA10) | TIM21_CH2,TIM2_CH4, USART2_RX,LPUART1_RX, COMP2_INP,ADC_IN3                                      |
+|   2   | UART1_TX |  I/O  | Upgrade UART or General GPIO (STM32L071KBU6 PA9)  | MCO, USART1_TX, I2C1_SCL, I2C3_SMBA                           |
+|   3   | UART1_RX |  I/O  | Upgrade UART or General GPIO (STM32L071KBU6 PA10) | USART1_RX, I2C1_SDA                                      |
 |   4   | GND      |   -   | Ground                                            | -                                                                                                |
 |   5   | MCU_NRST |  I/O  | MCU reset (STM32L071KBU6 NRST)                    | -                                                                                                |
 |   6   | ANT_SW   |  I/O  | PA11                                              | This pin has been connected to the internal RF switch, so leave it unconnected on the mainboard. |
-|   7   | PB4      |  I/O  | STM32L071KBU6 PB4                                 | Reserved for internal use. Do not connect external circuit.                                                                                             |
-|   8   | PA8      |  I/O  | STM32L071KBU6 PA8                                 | GPIO                                                                                             |
+|   7   | PB4      |  I/O  | STM32L071KBU6 PB4                                 | SPI1_MISO, TIM3_CH1, TIM22_CH1, USART1_CTS, USART5_RX, I2C3_SDA                                                                                             |
+|   8   | PA8      |  I/O  | STM32L071KBU6 PA8                                 | MCO, EVENTOUT, USART1_CK, I2C3_SCL                                                                                             |
 
 
 ##### J4 Pin Definitions

@@ -149,9 +149,17 @@ The RAK3272S module supports the LoRaWAN bands shown in table below. When buying
 | ------- | ------- | ------- | ------- | ---- |
 | VCC     | 2.0     | 3.3     | 3.6     | V    |
 
+##### Schematic Diagram
+
+<rk-img
+  src="/assets/images/wisduo/rak3272s-breakout-board/datasheet/rak3272s_schematic.png"
+  width="80%"
+  caption="RAK3272S Schematic Diagram"
+/>
+
 #### Mechanical Characteristics
 
-Figure 3 show RAK3272S board dimensions.
+Figure 4 show RAK3272S board dimensions.
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/datasheet/dimensions.png"

@@ -62,7 +62,9 @@ For input, RAK13001 uses an opto-couple as isolation, and it supports wet contac
 
 ### Hardware Setup
 
-RAK13001 is a WisBlock Interface module which extends the WisBlock system to be used on isolated digital input and output applications. There is one digital output that is isolated by an electromechanical relay which is used to programmatically switch on/off devices operating at high voltage or current applications and one digital input isolated by an opto-couple. The isolated input can be configured as wet contact (default mode) or dry contact. For more information about RAK13001, refer to the [Datasheet](../Datasheet/).
+RAK13001 is a WisBlock Interface module which extends the WisBlock system to be used on isolated digital input and output applications. There is one digital output that is isolated by an electromechanical relay which is used to programmatically switch on/off devices operating at high voltage or current applications and one digital input isolated by an opto-couple. The isolated input can be configured as wet contact (default mode) or dry contact. 
+
+For more information about RAK13001, refer to the [Datasheet](../Datasheet/).
 
 #### Pin Definition
 
@@ -72,9 +74,14 @@ RAK13001 is a WisBlock Interface module which extends the WisBlock system to be 
   caption="RAK13001 Pin Definition"
 />
 
-#### Installation
+::: tip 📝 NOTE
+- **NO1** and **NO2** are Output contacts for the Relay.
+- **K1** and **K2** are Input contacts for the Opto-coupler.
+:::
 
-##### Mounting Mechanism
+#### Assembling and Disassembling of WisBlock Modules
+
+##### Assembling Procedure
 
 The RAK13001 module can be mounted on the IO slot of the WisBlock Base board as shown in **Figure 4**. Also, always secure the connection of the WisBlock module by using the compatible screws.
 

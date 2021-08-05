@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisblock
   - RAK19006
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -15,7 +15,9 @@ next: false
 
 ### Description
 
-The RAK19006 WisBlock wireless charge module was designed to be a part of battery charger. The RAK19006 is highly efficient, Qi-compliant, single-chip wireless power receiver and charger. It integrates the receiver and linear charger and supports up-to 5&nbsp;W applications. This board can be connected with the WisBlock Base board like RAK5005-O through IO slot or through two pogo pins. The chip supports wireless charge and directly battery charging. 
+The RAK19006 WisBlock Wireless Charge Module is designed to be a part of the battery charger. It is highly efficient, Qi-compliant, and has a single-chip wireless power receiver and charger. It integrates the receiver and linear charger and supports up to 5&nbsp;W applications.
+
+This board can be connected with the WisBlock Base board like RAK5005-O through the IO slot or two pogo pins. The chip supports wireless charge and direct battery charging. 
 
 ### Features
 
@@ -24,7 +26,7 @@ The RAK19006 WisBlock wireless charge module was designed to be a part of batter
 - Ultra-low leakage current without transmitter
 - Wireless and wired charge
 - OVP, OCP, and OTP protection
-- Supports up-to 5&nbsp;W applications
+- Supports up to 5&nbsp;W applications
 - Module size: 15 X 25&nbsp;mm
 
 ## Specifications
@@ -50,16 +52,22 @@ The hardware specification discusses the pinouts, and its corresponding function
 The RAK19006 module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
 
 <rk-img
-  src="/assets/images/wisblock/rak19006/datasheet/rak19006-pinout.svg"
-  width="70%"
+  src="/assets/images/wisblock/rak19006/datasheet/rak19006-pinout.png"
+  width="40%"
   caption="RAK19006 Pinout Schematic"
 />
 
 ::: tip 📝 NOTE
-- Only VBAT, GND and VBUS are connected to this module. 
+- Only **GND** and **nEN** are connected to this module.
 
-- VBUS is wired charge input.
+- **nEN** is the chip enable pin, active low. By default, the RAK19006 module is active and **nEN** is not used.
 :::  
+
+<rk-img
+  src="/assets/images/wisblock/rak19006/datasheet/rak19006-img.png"
+  width="60%"
+  caption="RAK19006 Pinout and Connector assignments"
+/>
 
 #### Electrical Characteristics
 
@@ -69,10 +77,10 @@ This sections shows the maximum and minimum ratings of the RAK19006 module and i
 
 | Symbol | Description                     | Min. | Nom. | Max.        | Unit |
 | ------ | ------------------------------- | ---- | ---- | ----------- | ---- |
-| VRECT  | Power voltage range             | 3    | -    | 10          | V    |
-| Vcc    | Logic voltage range             | -    | 5    | 5.5         | V    |
-| IC     | Continuous drive output current | -    | -    | 600&nbsp;mA | mA   |
-| TA     | Ambient Operation temperature   | 0    | -    | 85          | ℃    |
+| VRECT  | Power voltage range             | 3.4  | -    | 16          | V    |
+| Vout   | Output voltage range            | -    | 5    | 5.5         | V    |
+| Iout   | Continuous output current       | -    | 0.6  | 1.1         | A    |
+| TA     | Ambient operation temperature   | -40  | -    | 85          | ℃   |
 
 #### Mechanical Characteristic
 
@@ -106,46 +114,24 @@ The mechanical dimensions of the RAK19006 module is shown in **Figure 3** below.
 
 ##### Charge chip
 
-**Figure 6** shows the schematic of RAK19006 wireless charge chip, when **VBUS** voltage more than 3.6&nbsp;V, the chip will change to wired charge, where **J1** is a coil connector, **J3** and **J4** are pogo pins, **J5** and **J6** are test points.
+**Figure 6** shows the schematic of RAK19006 wireless charge chip, **J3** is a wireless charge coil connector, and **VOUT** is a wireless charge chip output voltage, with a normal voltage of 5&nbsp;V.
 
 <rk-img
   src="/assets/images/wisblock/rak19006/datasheet/charge-chip.png"
-  width="90%"
-  caption="RAK19006 WisBlock Wireless charge Module Schematic"
+  width="70%"
+  caption="RAK19006 WisBlock Wireless Charge Module Schematic"
 />
 
-##### NTC Divider
+##### Output Connector
 
-The RAK19006 linear charger has JEITA compatible function to protect battery safety. The module will adjust the charging current and voltage when battery temperature reaches the JEITA standard. **Figure 7** shows the NTC divider circuit, where **R5** is a NTC resistor.
+**Figure 7** shows the 2-pin cable wireless charge output connector connected to the WisBase solar input connector.
 
 <rk-img
-  src="/assets/images/wisblock/rak19006/datasheet/ntc-divider.png"
-  width="30%"
-  caption="RAK19006 NTC divider circuit"
+  src="/assets/images/wisblock/rak19006/datasheet/output-connector.png"
+  width="40%"
+  caption="RAK19006 WisBlock Wireless Charge Output Connector"
 />
 
-##### Status LED
-
-**Figure 8** shows the charge status of the LED. When charging started, the LED will turn on. 
-
-<rk-img
-  src="/assets/images/wisblock/rak19006/datasheet/status-led.png"
-  width="50%"
-  caption="RAK19006 charge status LED"
-/>
-
-##### Gain, Offset and Current Set
-
-**Figure 9** and **Figure 10** show the wireless charge module's gain, offset and its max charge current.
-
-<rk-img
-  src="/assets/images/wisblock/rak19006/datasheet/goc-schem.png"
-  width="30%"
-  caption="RAK19006 Gain, Offset and Max Charge Current Schematic"
-/>
-
-<rk-img
-  src="/assets/images/wisblock/rak19006/datasheet/goc-compute.png"
-  width="60%"
-  caption="Gain, Offset and Max Charge Current Set"
-/>
+::: tip 📝 NOTE
+- **J2** is a 2-pin connector, **Pin 3** and **Pin 4** are the mounting pads.
+:::

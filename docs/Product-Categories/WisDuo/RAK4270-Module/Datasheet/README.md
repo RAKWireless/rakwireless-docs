@@ -96,23 +96,23 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
  
 | Pin | Name          | Type | Description                                 | Alternate Functions                                                       |
 | --- | ------------- | ---- | ------------------------------------------- | ------------------------------------------------------------------------- |
-| 1   | PA3/UART2_RX  | I    | UART2 Interface (AT Commands)               | USART1_RX, I2C1_SDA                                                       |
-| 2   | PA2/UART2_TX  | O    | UART2 Interface (AT Commands)               | MCO, USART1_TX, I2C1_SCL, I2C3_SMBA                                       |
-| 3   | PA1           | I/O  | GPIO                                        | Reserved for internal use. Do not connect external circuit.               |
-| 4   | PA9/UART1_TX  | I/O  | UART1 Interface (AT Commands and FW Update) | TIM21_CH1,TIM2_CH3, USART2_TX,LPUART1_TX, COMP2_OUT,COMP2_INM, ADC_IN2    |
-| 5   | PA10/UART1_RX | I/O  | UART1 Interface (AT Commands and FW Update) | TIM21_CH2,TIM2_CH4, USART2_RX,LPUART1_RX, COMP2_INP,ADC_IN3               |
-| 6   | PA12/UART1_DE | I/O  | GPIO                                        | EVENTOUT,TIM2_CH2,USART2_RT S_DE, TIM21_ETR, USART4_RX,COMP1_INP, ADC_IN1 |
+| 1   | PA3/UART2_RX  | I    | UART2 Interface (AT Commands)               | TIM21_CH2, TIM2_CH4, USART2_RX, LPUART1_RX                                                       |
+| 2   | PA2/UART2_TX  | O    | UART2 Interface (AT Commands)               | TIM21_CH1, TIM2_CH3, USART2_TX, LPUART1_TX, COMP2_OUT                                      |
+| 3   | PA1           | I/O  | GPIO                                        | EVENTOUT, TIM2_CH2, USART2_RTS/ USART2_DE, TIM21_ETR, USART4_RX               |
+| 4   | PA9/UART1_TX  | I/O  | UART1 Interface (AT Commands and FW Update) | MCO, USART1_TX, I2C1_SCL, I2C3_SMBA    |
+| 5   | PA10/UART1_RX | I/O  | UART1 Interface (AT Commands and FW Update) | USART1_RX, I2C1_SDA               |
+| 6   | PA12/UART1_DE | I/O  | GPIO                                        | SPI1_MOSI,EVENTOUT, USART1_RTS/ USART1_DE, COMP2_OUT |
 | 7   | PA13/SWDIO    | I/O  | SWD debug pin (SWDIO)                       | SWDIO, LPUART1_RX                                                         |
 | 8   | PA14/SWCLK    | I/O  | SWD debug pin (SWCLK)                       | SWCLK, USART2_TX, LPUART1_TX                                              |
-| 9   | I2C_SCL       | I/O  | I2C interface                               | USART1_TX,I2C1_SCL, LPTIM1_ETR,COMP2_INP                                  |
-| 10  | I2C_SDA       | I/O  | I2C interface                               | USART1_RX,I2C1_SDA, LPTIM1_IN2,USART4_CTS, COMP2_INP,VREF_PVD_IN          |
+| 9   | PB6/I2C_SCL       | I/O  | I2C interface                               | USART1_TX, I2C1_SCL, LPTIM1_ETR                                  |
+| 10  | PB7/I2C_SDA       | I/O  | I2C interface                               | USART1_RX, I2C1_SDA, LPTIM1_IN2, USART4_CTS          |
 | 11  | GND           |      | Ground                                      |                                                                           |
 | 12  | RF            | I/O  | RF port (reserved), default RF out by IPEX  |                                                                           |
 | 13  | GND           |      | Ground                                      |                                                                           |
 | 14  | GND           |      | Ground                                      |                                                                           |
 | 15  | PA11/ANT_SW   | I/O  | ANT_SW                                      | *leave it unconnected on mainboard*                                       |
-| 16  | PB4           | I/O  | GPIO                                        | Reserved for internal use. Do not connect external circuit.               |
-| 17  | PA8           | I/O  | GPIO                                        | USART1_CK,I2C3_SCL, MCO,EVENTOUT                                          |
+| 16  | PB4           | I/O  | GPIO                                        | SPI1_MISO, TIM3_CH1, TIM22_CH1, USART1_CTS, USART5_RX, I2C3_SDA               |
+| 17  | PA8           | I/O  | GPIO                                        | MCO, EVENTOUT, USART1_CK, I2C3_SCL                                          |
 | 18  | MCU_NRST      | I/O  | MCU reset (STM32L071KBU6 NRST)              |                                                                           |
 | 19  | GND           |      | Ground                                      | Ground                                                                    |
 | 20  | VDD           |      | DC3V3                                       | Supply voltage 2.0~3.3&nbsp;V                                             |
