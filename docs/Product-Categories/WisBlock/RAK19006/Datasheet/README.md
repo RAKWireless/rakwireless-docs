@@ -60,7 +60,7 @@ The RAK19006 module has a 40-pin WisConnector that is compatible to the WisBlock
 ::: tip 📝 NOTE
 - Only **GND** and **nEN** are connected to this module.
 
-- **nEN** is the chip enable pin, active low. By default, the RAK19006 module is active and **nEN** is not used.
+- **nEN** is the wireless charge chip enable pin, active low. A resistor (R4) is connected to nEN to GND, so by default, this chip is enable. If you want to disable it, pull the nEN to high.
 :::  
 
 <rk-img

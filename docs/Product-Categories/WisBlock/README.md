@@ -2,7 +2,7 @@
 prev: /Product-Categories/
 displayAllHeaders: true
 rak_desc: WisBlock is a product built by the RAK company for the IoT industry. Its modular approach solutions are built like clicking blocks together to realize your ideas making it easier to implement to low power wide area network (LPWAN) into your IoT solution.
-rak_img: /assets/rakwireless/product-categories/WisBlock.svg
+rak_img: /assets/rakwireless/product-categories/WisBlock.png
 ---
 
 # WisBlock

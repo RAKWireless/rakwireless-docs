@@ -13,21 +13,22 @@ tags:
 
 ## Overview
 
-<!-- <rk-img
-  src="/assets/images/wisblock/rak14000/overview/RAK14000_illustrated.png"
+<rk-img
+  src="/assets/images/wisblock/rak14000/datasheet/RAK14000.png"
   width="70%"
   caption="RAK14000 E-Ink Display Module"
-/> -->
+/>
+
 ### Description
 
-The **RAK14000 WisBlock E-Ink Display Module** is designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module.
+The **RAK14000 WisBlock E-Ink Display Module** is designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a WisBlock Base module.
 
-The **RAK14000** module provides an interface to connect an E-Ink Display, which is known to be an extremely power-efficient display. It also allows you to connect a Three-Button Module, which can be used on a different application. All of this can be controlled through a WisBlock Core. 
+The **RAK14000** module provides an interface to connect an E-Ink Display, which is known to be an extremely power-efficient display. The **E-Ink Display** is an Active Matrix Electrophoretic Display (AM EPD) module with 2.9&nbsp;inches active area (296×128 pixels). It also allows you to connect a Three-Button Module, which can be used on a different application. All of this can be controlled through a WisBlock Core. 
 
 ### Features 
 
 *   Input Voltage: 3.3&nbsp;V
-*   Display Size: 2.9 inches
+*   Display Size: 2.9&nbsp;inches
 *   Wide Viewing Angles, with display Resolution of 296 x 128 pixels
 *   Pure Reflective Mode. Very viewable displays!  
 *   On-chip display RAM and oscillator
@@ -41,7 +42,7 @@ The **RAK14000** module provides an interface to connect an E-Ink Display, which
 
 #### Mounting
 
-The **RAK14000 E-Ink Display Module** is mounted to the IO Slot of a WisBlock Base Board. Figure 1 shows the mounting mechanism of the RAK14000 on a WisBlock Base, such as the RAK5005-O.  
+The **RAK14000 E-Ink Display Module** is mounted to the IO Slot of a WisBlock Base Board. Figure 2 shows the mounting mechanism of the RAK14000 on a WisBlock Base, such as the RAK5005-O.  
 
 <rk-img
   src="/assets/images/wisblock/rak14000/datasheet/rak14000-mounting.png"
@@ -55,7 +56,7 @@ The hardware specification covers the pinouts of the board and its functionaliti
 
 #### Pin Definition
 
-The **RAK14000 WisBlock E-Ink Display Module** comprises a standard WisIO connector. The WisIO connector allows the RAK14000 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in Figure 2.
+The **RAK14000 WisBlock E-Ink Display Module** comprises a standard 40-pin WisConnector. The 40-pin WisConnector allows the RAK14000 module to be mounted on a WisBlock Base board, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in Figure 3.
 
 <rk-img
   src="/assets/images/wisblock/rak14000/datasheet/rak14000-pins.png"
@@ -87,7 +88,7 @@ The **RAK14000 WisBlock E-Ink Display Module** comprises a standard WisIO connec
 |     40     |    GND    |     Ground      |     39     |    GND     |            Ground             |
 
 :::tip 📝 NOTE:
-SPI_CS, SPI_MISO, SPI_MOSI, SPI_CLK, IO1, IO3-IO7 are connected to WisIO connector.
+SPI_CS, SPI_MISO, SPI_MOSI, SPI_CLK, IO1, IO3-IO7 are connected to 40-pin WisConnector.
 :::
   
 #### Electrical Characteristics  
@@ -107,7 +108,7 @@ The following specifications apply for: VSS = 0V, VCI = 3.0&nbsp;V, TOPR = 25&nb
 #### Mechanical Characteristics  
   
  
-Figure 3 shows the dimensions and mechanical drawing of the RAK14000 module.  
+Figure 4 shows the dimensions and mechanical drawing of the RAK14000 module.  
   
 <rk-img
   src="/assets/images/wisblock/rak14000/datasheet/rak14000-dimensions.png"
@@ -117,15 +118,15 @@ Figure 3 shows the dimensions and mechanical drawing of the RAK14000 module.
 
 #### Schematic Diagram
 
-Figure 4 shows the schematic diagram of WisIO connector:
+Figure 5 shows the schematic diagram of 40-pin WisConnector:
 
 <rk-img
   src="/assets/images/wisblock/rak14000/datasheet/wisio-connector.png"
   width="80%"
-  caption="RAK14000 WisIO Connection Schematic"
+  caption="RAK14000 40-pin WisConnector Connection Schematic"
 />  
 
-Figure 5 shows the E-Ink Display Connector Schematic:
+Figure 6 shows the E-Ink Display Connector Schematic:
 
 <rk-img
   src="/assets/images/wisblock/rak14000/datasheet/eink.png"
@@ -133,7 +134,7 @@ Figure 5 shows the E-Ink Display Connector Schematic:
   caption="RAK14000 E-Ink Display Connection Schematic"
 />  
 
-Figure 6 shows the E-Ink Display Driver Schematic:
+Figure 7 shows the E-Ink Display Driver Schematic:
 
 <rk-img
   src="/assets/images/wisblock/rak14000/datasheet/driver-schematic.png"
@@ -141,10 +142,10 @@ Figure 6 shows the E-Ink Display Driver Schematic:
   caption="RAK14000 E-Ink Display Driver Schematic"
 />  
 
-Figure 7 shows the Three-Button Module Schematic, connected through FPC (Flexible PCB) cable:
+Figure 8 shows the Three-Button Module Schematic, connected through FPC (Flexible PCB) cable:
 
 <rk-img
   src="/assets/images/wisblock/rak14000/datasheet/button-connector.png"
   width="80%"
   caption="RAK14000 Three-Button Module Schematic"
-/>  
+/>

@@ -13,6 +13,7 @@ tags:
 
 Thank you for choosing **RAK14000 WisBlock E-Ink Display Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK14000 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
@@ -26,7 +27,10 @@ Thank you for choosing **RAK14000 WisBlock E-Ink Display Module** in your awesom
 For All WisBlock Core:
 
 * [Sample Code: Epaper Monochrome](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK14000-Epaper-Monochrome)
+
+<!--
 * [Sample Code: Epaper Tri-Color](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK14000-Epaper-TriColor)
+-->
 
 ## Product Description
 
@@ -47,7 +51,7 @@ The **RAK14000** is a WisBlock Display module that allows you to connect an E-In
 
 ## Prerequisites  
   
-To use the **RAK14000 E-Ink Display Module**, you need a **WisBlock Base** to plug the module in. The WisBlock Base acts as a power supply for the RAK14000 IO Module. Also, you need a **WisBlock Core** to control your module. 
+To use the **RAK14000 E-Ink Display Module**, you need a **WisBlock Base** to plug the module in. The WisBlock Base acts as a power supply for the RAK14000 WisBlock E-Ink module. Also, you need a **WisBlock Core** to control your module. 
   
 After the successful mounting of **RAK14000** module to the IO Port of a WisBlock Base, you can now proceed to interface the E-Ink Display and Three-Button Module.  
 

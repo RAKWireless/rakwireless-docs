@@ -7,6 +7,8 @@ tags:
   - quickstart
   - RAK3172-E
   - RAK3172 Evaluation Board
+rak_img: /assets/images/wisduo/rak3172-evaluation-board/overview/RAK3172E_Evaluation_home.png
+
 ---
 
 # Quick Start Guide

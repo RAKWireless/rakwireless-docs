@@ -22,7 +22,15 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
-    }
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/WisNode/RAK612/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
   ],
   '/Product-Categories/WisNode/RAK7200/': [{
       title: 'Product Overview',

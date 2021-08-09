@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials in installing and deploying your RAK3244. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module. 
-rak_img: /assets/images/wisduo/bastwan/overview/BastWAN_Home.svg
+rak_img: /assets/images/wisduo/bastwan/overview/BastWAN_Home.png
 prev: ../Overview/
 next: false
 tags:

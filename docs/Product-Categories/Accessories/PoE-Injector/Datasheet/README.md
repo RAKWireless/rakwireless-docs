@@ -5,7 +5,7 @@ tags:
   - R012-4800500
   - datasheet
 rak_desc:  Covers the comprehensive information of your PoE Injector to help you in using it. This information includes technical specifications, characteristics, and requirements.
-rak_img: /assets/images/accessories/poe-injector/poe-injector-illustration.svg
+rak_img: /assets/images/accessories/poe-injector/poe-injector-illustration.png
 
 ---
 

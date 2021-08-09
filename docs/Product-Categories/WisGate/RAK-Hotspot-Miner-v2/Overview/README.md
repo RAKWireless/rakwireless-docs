@@ -53,8 +53,8 @@ Range depends on the environment. For rural areas, **up to 10 miles or more**, b
 
 ## Product Features
 
-- Computing with Raspberry Pi4 (Linux)
-- 2&nbsp;GB on-board RAM
+- Uses the Raspberry Pi 4 computer board
+- 2, 4 or 8&nbsp;GB on-board RAM
 - 32&nbsp;GB SD card
 - Based on the LoRa Concentrator Engine: Semtech® SX1302
 - Built-in Heat Sink for thermal heat dissipation management
@@ -62,7 +62,4 @@ Range depends on the environment. For rural areas, **up to 10 miles or more**, b
 - IP30 housing
 - TX power up to 27&nbsp;dBm, RX sensitivity down to -139&nbsp;dBm @SF12, BW 125&nbsp;KHz
 - LoRa Frequency band support: RU864, IN865, EU868, US915, AU915, KR920, AS923.
-- Includes Pi ready 'ID EE PROM', GPIO setup, and device tree can be automatically configured
-from vendor information
-- Supports a fully open source LoRaWAN server
 - 2.4 GHz and 5.0 GHz IEEE 802.11b/g/n/ac wireless LAN, Bluetooth 5.0, BLE

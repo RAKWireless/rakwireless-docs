@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK7243C to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisgate/rak7243c/quickstart/1.product-overview/1.index/RAK7243C_home.svg
+rak_img: /assets/images/wisgate/rak7243c/quickstart/1.product-overview/1.index/RAK7243C_home.png
 tags:
   - datasheet
   - wisgate

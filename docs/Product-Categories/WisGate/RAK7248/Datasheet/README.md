@@ -1,7 +1,7 @@
 ---
 static_root: 
 rak_desc: Covers the comprehensive information of your RAK7248 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisgate/rak7248/overview/RAK7248_home.svg
+rak_img: /assets/images/wisgate/rak7248/overview/RAK7248_home.png
 tags:
   - datasheet
   - wisgate

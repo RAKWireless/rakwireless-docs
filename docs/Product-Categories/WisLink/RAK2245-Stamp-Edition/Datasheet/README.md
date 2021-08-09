@@ -14,8 +14,6 @@ rak_img: /assets/images/wislink-lora/rak2245-stamp-edition/quickstart/overview/R
 
 ---
 
-
-
 # RAK2245 WisLink-LoRa Stamp Edition Datasheet
 
 <!---
@@ -272,7 +270,19 @@ The table below shows the operation temperature range.
 | -------------------------------- | ------- | ----------- | ------- | ----------------------------------------------------------------------------------- |
 | **Normal Operating Temperature** | -40°C   | +25°C       | +85°C   | Normal operating temperature range (fully functional and meets 3GPP specifications) |
 
+#### Mechanical Characteristics
 
+<rk-img
+  src="/assets/images/wislink-lora/rak2245-stamp-edition/datasheet/rak2245-stamp-mechanical-1.png"
+  width="100%"
+  caption="RAK2245 WisLink-LoRa Stamp Edition Mechanical Characteristics "
+/>
+
+<rk-img
+  src="/assets/images/wislink-lora/rak2245-stamp-edition/datasheet/rak2245-stamp-mechanical.png"
+  width="60%"
+  caption="RAK2245 WisLink-LoRa Stamp Edition Mechanical Characteristics Side View "
+/>
 ### Software
 
 Download the latest firmware of RAK2245 Stamp in the table provided below.

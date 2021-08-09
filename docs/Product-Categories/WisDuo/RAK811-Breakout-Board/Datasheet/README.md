@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK811 Breakout Board to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak811-breakout-board/quickstart/overview/RAK811_Breakout_home.svg
+rak_img: /assets/images/wisduo/rak811-breakout-board/quickstart/overview/RAK811_Breakout_home.png
 tags:
   - datasheet
   - wisduo

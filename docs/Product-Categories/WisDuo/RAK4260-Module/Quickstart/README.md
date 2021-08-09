@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials in installing and deploying your RAK4260 Module. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module. 
-rak_img: /assets/images/wisduo/rak4260-module/overview/RAK4260_Module_home.svg
+rak_img: /assets/images/wisduo/rak4260-module/overview/RAK4260_Module_home.png
 prev: ../Overview/
 next: ../Datasheet/
 tags:

@@ -3,7 +3,7 @@ prev: /Introduction/
 next: /Product-Categories/WisGate/
 displayAllHeaders: true
 rak_desc: RAKwireless boasts high-quality devices that utilized the various IoT technologies of today. These devices are meticulously designed by the company's experts making your IoT experience easier and more convenient, whether you are a developer or a beginner.
-rak_img: /assets/rakwireless/product-categories/RAK-product-tree.svg
+rak_img: /assets/rakwireless/product-categories/RAK-product-tree.png
 ---
 
 # Product Categories
