@@ -4,12 +4,12 @@ next: false
 tags: 
     - RAKARG18
     - datasheet
-rak_desc:  Covers the comprehensive information of your 863-870 MHz 5 dBi Fiber Glass Antenna to help you in using it. This information includes technical specifications and characteristics.
+rak_desc:  Covers the comprehensive information of your 863-870 MHz 5 dBi Fiberglass Antenna to help you in using it. This information includes technical specifications and characteristics.
 rak_img: /assets/images/accessories/rakarg18/5dbi_antenna.png
 
 ---
 
-# 863-870 MHz 5 dBi Fiber Glass Antenna Datasheet
+# 863-870 MHz 5 dBi Fiberglass Antenna Datasheet
 
 ## Overview
 
@@ -53,7 +53,7 @@ This antenna is designed to be directly mounted on the enclosure of the Gateway.
 | Feed impedance         | 50 Ohms              |
 | Radiation pattern      | Omni-directional     |
 | Polarization           | Vertical             |
-| Cover material (color) | Fiber glass (white)  |
+| Cover material (color) | Fiberglass (white)  |
 | Connector type         | N-type male          |
 | Dimensions (mm)        | Փ 27.0 mm x 480.0 mm |
 | Operation temp (°C)    | -40 °C ~ +75 °C      |

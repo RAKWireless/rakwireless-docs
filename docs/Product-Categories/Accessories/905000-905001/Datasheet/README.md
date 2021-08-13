@@ -2,13 +2,13 @@
 prev: ../Overview/
 next: false
 tags:
-  - Fiber Glass Antenna
+  - Fiberglass Antenna
   - 905000/905001
-rak_desc: Covers the comprehensive information of your 858-878MHz 8dBi Fiber Glass Antenna to help you in using it. This information includes technical specifications, characteristics, and requirements.
+rak_desc: Covers the comprehensive information of your 858-878MHz 8dBi Fiberglass Antenna to help you in using it. This information includes technical specifications, characteristics, and requirements.
 rak_img: /assets/images/accessories/905000-905001/antenna_view.png
 ---
 
-# 858-878MHz 8dBi Fiber Glass Antenna Datasheet
+# 858-878MHz 8dBi Fiberglass Antenna Datasheet
 
 ## Overview
 
@@ -24,7 +24,7 @@ rak_img: /assets/images/accessories/905000-905001/antenna_view.png
 <rk-img
   src="/assets/images/accessories/905000-905001/antenna_view.png"
   width="70%"
-  caption="858~878MHz 8dBi Fiber Glass Antenna Overview"
+  caption="858~878MHz 8dBi Fiberglass Antenna Overview"
 />
 
 ## Specifications
@@ -37,7 +37,7 @@ rak_img: /assets/images/accessories/905000-905001/antenna_view.png
 | **Efficiency**            | ≤ 69%                          |
 | **Feed Impedance**        | 50&nbsp;Ω                      |
 | **Polarization**          | Vertical                       |
-| **Cover Material(color)** | Fiber glass (White)            |
+| **Cover Material(color)** | Fiberglass (White)            |
 | **Connector Type**        | N-type male                    |
 | **Dimensions (mm)**       | Փ25.0&nbsp;mm x 1300.0&nbsp;mm |
 | **Operation Temp (°C)**   | -30&nbsp;°C ~ +65&nbsp;°C      |
@@ -54,7 +54,7 @@ rak_img: /assets/images/accessories/905000-905001/antenna_view.png
 <rk-img
   src="/assets/images/accessories/905000-905001/vswr.png"
   width="70%"
-  caption="858~878MHz 8dBi Fiber Glass Antenna VSWR graph"
+  caption="858~878MHz 8dBi Fiberglass Antenna VSWR graph"
 />
 
 ### Peak Gain & Efficiency
@@ -105,5 +105,5 @@ rak_img: /assets/images/accessories/905000-905001/antenna_view.png
 <rk-img
   src="/assets/images/accessories/905000-905001/8dBi_dimensions.png"
   width="60%"
-  caption="858~878MHz 8dBi Fiber Glass Atenna dimensions"
+  caption="858~878MHz 8dBi Fiberglass Atenna dimensions"
 />

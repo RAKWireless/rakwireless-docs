@@ -4,12 +4,12 @@ next: false
 tags:
   - RAKARG15
   - datasheet
-rak_desc:  Covers the comprehensive information of your RAKARG15 900-930MHz 8dBi Fiber Glass Antenna to help you in using it. This information includes technical specifications and characteristics.
+rak_desc:  Covers the comprehensive information of your RAKARG15 900-930MHz 8dBi Fiberglass Antenna to help you in using it. This information includes technical specifications and characteristics.
 rak_img: /assets/images/accessories/rakarg15/antenna-overview.png
 
 ---
 
-# 900-930MHz 8dBi Fiber Glass Antenna
+# 900-930MHz 8dBi Fiberglass Antenna
 
 ## Overview
 
@@ -38,7 +38,7 @@ rak_img: /assets/images/accessories/rakarg15/antenna-overview.png
 | **Efficiency**            | ≤65%                          |
 | **Feed Impedance**        | 50&nbsp;Ω                     |
 | **Polarization**          | Vertical                      |
-| **Cover material(color)** | Fiber glass (White)           |
+| **Cover material(color)** | Fiberglass (White)           |
 | **Connector type**        | N-type male                   |
 | **Dimensions (mm)**       | Փ25.0&nbsp;mm x 900.0&nbsp;mm |
 | **Operation Temp (°C)**   | -30&nbsp;°C ~ +65&nbsp;°C     |

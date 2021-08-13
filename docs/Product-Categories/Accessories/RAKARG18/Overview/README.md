@@ -9,9 +9,9 @@ tags:
     - RAKARG18
 ---
 
-# 863-870 MHz 5 dBi Fiber Glass Antenna 
+# 863-870 MHz 5 dBi Fiberglass Antenna 
 
-Thank you for choosing **863-870 MHz 5 dBi Fiber Glass Antenna** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **863-870 MHz 5 dBi Fiberglass Antenna** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
 * [Datasheet](../Datasheet/)
 
