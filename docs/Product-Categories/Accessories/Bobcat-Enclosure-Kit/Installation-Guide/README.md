@@ -39,6 +39,17 @@ A detailed explanation of the procedure of putting the Bobcat Miner 300 inside t
   caption="Positioning of all the plugs"
 />
 
+<rk-img
+  src="/assets/images/accessories/bobcat-enclosure-kit/installation/antenna-connector-assembly.png"
+  width="60%"
+  caption="Assembling the antenna connector"
+/>
+
+<rk-img
+  src="/assets/images/accessories/bobcat-enclosure-kit/installation/covering-antenna-hole.png"
+  width="60%"
+  caption="Covering the second antenna hole"
+/>
 
 3. Fix the mounting plate of the Bobcat miner 300 to the aluminum plate inside the enclosure with two M3*6 screws.
 
@@ -65,7 +76,7 @@ A detailed explanation of the procedure of putting the Bobcat Miner 300 inside t
   caption="Connecting the PoE splitter to the miner"
 />
 
-6. Connect the antenna connector of the enclosure to the antenna connector of the device, as shown in Figure 5.
+6. Connect the antenna connector of the enclosure to the antenna connector of the device, as shown in Figure 7.
 
 <rk-img
   src="/assets/images/accessories/bobcat-enclosure-kit/installation/5.connecting-antenna-connector.png"
@@ -102,7 +113,7 @@ Because of the different variants regarding the connector of the Bobcat Miner 30
 
 Instructions on mounting and securing the mounting kit to the enclosure and the bearing pole.
 
-1. Fix the device bracket on the bottom of the enclosure with four M6*12 screws as shown in Figure 7.
+1. Fix the device bracket on the bottom of the enclosure with four M6*12 screws as shown in Figure 10.
 
 <rk-img
   src="/assets/images/accessories/bobcat-enclosure-kit/installation/8.fixing-the-bracket.png"
