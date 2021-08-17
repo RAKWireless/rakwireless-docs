@@ -21,6 +21,6 @@ Thank you for choosing **860-930MHz 5.9dBi LoRaWAN Antenna Black** in your aweso
 - Max Gain: **5.9&nbsp;dBi**
 - VSWR: **≤ 2**
 - High Efficiency
-- Vertically Polarized Monopole
+- Vertically Polarized Dipole
 - N-type connector
 - Easy to mount with the included Installation kit

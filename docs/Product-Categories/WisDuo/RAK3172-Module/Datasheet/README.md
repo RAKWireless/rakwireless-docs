@@ -1,7 +1,7 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK3172 Module to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisduo/rak3172-module/overview/RAK3172_Module_home.png
-prev: ../AT-Command-Manual/
+prev: ../Low-Level-Development/
 tags:
   - datasheet
   - wisduo

@@ -22,7 +22,7 @@ To achieve better coverage, outdoor antennas need to be installed in an elevated
 <rk-img
   src="/assets/images/accessories/antenna-mounting-kit/1.png"
   width="60%"
-  caption="L-shaped wall mounting pole dimensions"
+  caption="L-shaped wall mounting pole dimensions in mm"
 />
 
 <br>
@@ -40,7 +40,7 @@ To achieve better coverage, outdoor antennas need to be installed in an elevated
 <rk-img
   src="/assets/images/accessories/antenna-mounting-kit/3.png"
   width="40%"
-  caption="Small U-shaped hoisting pole dimensions"
+  caption="Small U-shaped hoisting pole dimensions in mm"
 />
 
 <br>
@@ -58,7 +58,7 @@ To achieve better coverage, outdoor antennas need to be installed in an elevated
 <rk-img
   src="/assets/images/accessories/antenna-mounting-kit/5.png"
   width="60%"
-  caption="Large U-shaped hoisting pole dimensions"
+  caption="Large U-shaped hoisting pole dimensions in mm"
 />
 
 <br>
@@ -76,7 +76,7 @@ To achieve better coverage, outdoor antennas need to be installed in an elevated
 <rk-img
   src="/assets/images/accessories/antenna-mounting-kit/7.png"
   width="40%"
-  caption="I-shaped vertical Mounting rod dimensions"
+  caption="I-shaped vertical Mounting rod dimensions in mm"
 />
 
 <br>

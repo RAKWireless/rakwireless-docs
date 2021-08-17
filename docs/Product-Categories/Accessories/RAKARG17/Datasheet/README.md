@@ -26,7 +26,7 @@ rak_img: /assets/images/accessories/antenna-black/1.png
 - Max Gain: **5.9&nbsp;dBi**
 - VSWR: **≤ 2**
 - High Efficiency
-- Vertically Polarized Monopole
+- Vertically Polarized Dipole
 - N-type connector
 - Easy to mount with the included Installation kit
 
@@ -182,5 +182,5 @@ rak_img: /assets/images/accessories/antenna-black/1.png
 <rk-img
   src="/assets/images/accessories/antenna-black/3.png"
   width="80%"
-  caption="Mechanical Dimensions"
+  caption="Mechanical Dimensions in mm"
 />

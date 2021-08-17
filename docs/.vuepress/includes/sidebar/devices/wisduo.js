@@ -515,6 +515,14 @@ module.exports = {
     sidebarDepth: 4
   },    
   {
+    title: 'Low Level Development',
+    path: '/Product-Categories/WisDuo/RAK3172-Module/Low-Level-Development/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },                                               
+  {
     title: 'Datasheet',
     path: '/Product-Categories/WisDuo/RAK3172-Module/Datasheet/',
     collapsable: false,
