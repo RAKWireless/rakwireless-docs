@@ -3,6 +3,7 @@ prev: ../Overview/
 next: false
 tags:
   - Helical Magnetic Base Antenna
+  - RAKARJ13
   - datasheet
 rak_desc:  Covers the comprehensive information of your Helical Magnetic Base Antenna to help you in using it. This information includes technical specifications, characteristics, and requirements.
 rak_img:

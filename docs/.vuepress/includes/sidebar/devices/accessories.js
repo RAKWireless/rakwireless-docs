@@ -104,15 +104,15 @@ module.exports = {
       sidebarDepth: 4
     },
   ],
-    '/Product-Categories/Accessories/Outdoor-Enclosure-Kit/': [
-      {
-        title: 'Overview',
-        path: '/Product-Categories/Accessories/Outdoor-Enclosure-Kit/Overview/',
-        collapsable: false,
-        nested: true,
-        download: true,
-        sidebarDepth: 4
-      }
+  '/Product-Categories/Accessories/Outdoor-Enclosure-Kit/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/Outdoor-Enclosure-Kit/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
   ],
   '/Product-Categories/Accessories/Bobcat-Enclosure-Kit/': [
     {
@@ -442,168 +442,207 @@ module.exports = {
       sidebarDepth: 4
     }
   ],
-    '/Product-Categories/Accessories/RAK9733/': [
-      {
-        title: 'Overview',
-        path: '/Product-Categories/Accessories/RAK9733/Overview/',
-        collapsable: false,
-        nested: true,
-        download: true,
-        sidebarDepth: 4
-      },
-      {
-        title: 'Datasheet',
-        path: '/Product-Categories/Accessories/RAK9733/Datasheet/',
-        collapsable: false,
-        nested: true,
-        download: true,
-        sidebarDepth: 4
-      }
-    ],
-    '/Product-Categories/Accessories/RAK9731/': [
-      {
-        title: 'Overview',
-        path: '/Product-Categories/Accessories/RAK9731/Overview/',
-        collapsable: false,
-        nested: true,
-        download: true,
-        sidebarDepth: 4
-      },
-      {
-        title: 'Datasheet',
-        path: '/Product-Categories/Accessories/RAK9731/Datasheet/',
-        collapsable: false,
-        nested: true,
-        download: true,
-        sidebarDepth: 4
-      }
-    ],
-    '/Product-Categories/Accessories/RAKARP01/': [
-      {
-        title: 'Overview',
-        path: '/Product-Categories/Accessories/RAKARP01/Overview/',
-        collapsable: false,
-        nested: true,
-        download: true,
-        sidebarDepth: 4
-      },
-      {
-        title: 'Datasheet',
-        path: '/Product-Categories/Accessories/RAKARP01/Datasheet/',
-        collapsable: false,
-        nested: true,
-        download: true,
-        sidebarDepth: 4
-      }
-    ],
-    '/Product-Categories/Accessories/RAK9734/': [
-      {
-        title: 'Overview',
-        path: '/Product-Categories/Accessories/RAK9734/Overview/', 
-        collapsable: false,
-        nested: true,
-        download: true,
-        sidebarDepth: 4
-      },
-      {
-        title: 'Datasheet',
-        path: '/Product-Categories/Accessories/RAK9734/Datasheet/',
-        collapsable: false,
-        nested: true,
-        download: true,
-        sidebarDepth: 4
-      }
-    ],
-    '/Product-Categories/Accessories/RAK9732/': [
-      {
-        title: 'Overview',
-        path: '/Product-Categories/Accessories/RAK9732/Overview/', 
-        collapsable: false,
-        nested: true,
-        download: true,
-        sidebarDepth: 4
-      },
-      {
-        title: 'Datasheet',
-        path: '/Product-Categories/Accessories/RAK9732/Datasheet/',
-        collapsable: false,
-        nested: true,
-        download: true,
-        sidebarDepth: 4
-      }  
-    ],
-    '/Product-Categories/Accessories/RAKARG18/': [
-      {
-        title: 'Overview',
-        path: '/Product-Categories/Accessories/RAKARG18/Overview/', 
-        collapsable: false,
-        nested: true,
-        download: true,
-        sidebarDepth: 4
-      },
-      {
-        title: 'Datasheet',
-        path: '/Product-Categories/Accessories/RAKARG18/Datasheet/',
-        collapsable: false,
-        nested: true,
-        download: true,
-        sidebarDepth: 4
-      }  
-    ],
-      '/Product-Categories/Accessories/RAKARG19/': [
-        {
-          title: 'Overview',
-          path: '/Product-Categories/Accessories/RAKARG19/Overview/',
-          collapsable: false,
-          nested: true,
-          download: true,
-          sidebarDepth: 4
-        },
-        {
-          title: 'Datasheet',
-          path: '/Product-Categories/Accessories/RAKARG19/Datasheet/',
-          collapsable: false,
-          nested: true,
-          download: true,
-          sidebarDepth: 4
-        }
-      ],
-      '/Product-Categories/Accessories/Antenna-Clip/': [
-        {
-          title: 'Overview',
-          path: '/Product-Categories/Accessories/Antenna-Clip/Overview/',
-          collapsable: false,
-          nested: true,
-          download: true,
-          sidebarDepth: 4
-        },
-        {
-          title: 'Datasheet',
-          path: '/Product-Categories/Accessories/Antenna-Clip/Datasheet/',
-          collapsable: false,
-          nested: true,
-          download: true,
-          sidebarDepth: 4
-        }
-      ],
-        '/Product-Categories/Accessories/Helical-Base-Magnetic-Antenna/': [
-          {
-            title: 'Overview',
-            path: '/Product-Categories/Accessories/Helical-Base-Magnetic-Antenna/Overview/', 
-            collapsable: false,
-            nested: true,
-            download: true,
-            sidebarDepth: 4
-          },
-          {
-            title: 'Datasheet',
-            path: '/Product-Categories/Accessories/Helical-Base-Magnetic-Antenna/Datasheet/',
-            collapsable: false,
-            nested: true,
-            download: true,
-            sidebarDepth: 4
-          }  
-],
+  '/Product-Categories/Accessories/RAK9733/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAK9733/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAK9733/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
+  '/Product-Categories/Accessories/RAK9731/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAK9731/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAK9731/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
+  '/Product-Categories/Accessories/RAKARP01/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAKARP01/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAKARP01/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
+  '/Product-Categories/Accessories/RAK9734/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAK9734/Overview/', 
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAK9734/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
+  '/Product-Categories/Accessories/RAK9732/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAK9732/Overview/', 
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAK9732/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }  
+  ],
+  '/Product-Categories/Accessories/RAKARG18/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAKARG18/Overview/', 
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAKARG18/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }  
+  ],
+  '/Product-Categories/Accessories/RAKARG19/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAKARG19/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAKARG19/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
+
+  '/Product-Categories/Accessories/Antenna-Clip/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/Antenna-Clip/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/Antenna-Clip/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
+  '/Product-Categories/Accessories/Helical-Base-Magnetic-Antenna/': [
+    { 
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/Helical-Base-Magnetic-Antenna/Overview/', 
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/Helical-Base-Magnetic-Antenna/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }  
+  ],
+
+  '/Product-Categories/Accessories/Fiber-Glass-Antenna/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/Fiber-Glass-Antenna/Overview/', 
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/Fiber-Glass-Antenna/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }  
+  ],
+
+  '/Product-Categories/Accessories/RAKARG16/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAKARG16/Overview/', 
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAKARG16/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }  
+  ],
 
 
 
