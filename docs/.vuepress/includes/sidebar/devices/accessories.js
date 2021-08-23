@@ -606,10 +606,10 @@ module.exports = {
     }  
   ],
 
-  '/Product-Categories/Accessories/Fiber-Glass-Antenna/': [
+  '/Product-Categories/Accessories/RAKARG14/': [
     {
       title: 'Overview',
-      path: '/Product-Categories/Accessories/Fiber-Glass-Antenna/Overview/', 
+      path: '/Product-Categories/Accessories/RAKARG14/Overview/', 
       collapsable: false,
       nested: true,
       download: true,
@@ -617,7 +617,26 @@ module.exports = {
     },
     {
       title: 'Datasheet',
-      path: '/Product-Categories/Accessories/Fiber-Glass-Antenna/Datasheet/',
+      path: '/Product-Categories/Accessories/RAKARG14/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }  
+  ],
+
+  '/Product-Categories/Accessories/RAKARG13/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAKARG13/Overview/', 
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAKARG13/Datasheet/',
       collapsable: false,
       nested: true,
       download: true,

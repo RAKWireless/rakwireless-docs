@@ -16,7 +16,7 @@ Thank you for choosing **RAK7240 WisGate Edge Prime** in your awesome IoT Projec
 * [Datasheet](../Datasheet/)
 * [Supported LoRa Network Servers](../Supported-LoRa-Network-Servers/)
 * [OpenWRT Recovery Procedure](/Knowledge-Hub/Learn/OpenWRT-Recovery-Procedure/)
-
+* [RAK7240 Latest Firmware](https://downloads.rakwireless.com/LoRa/RAK7240/Firmware/RAK7240_Latest_Firmware.zip)
 ## Product Description
 
 The **RAK7240 WisGate Edge Prime** is an ideal product for large scale LPWAN deployment where cost is essential, however there is no compromises to be made on quality. Its wide range of customization options allow for flexibility when deploying a solution. With its industrial-grade components and high class of ingress protection, it achieves a high standard of reliability.

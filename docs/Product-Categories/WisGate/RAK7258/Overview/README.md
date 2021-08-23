@@ -18,6 +18,7 @@ Thank you for choosing **RAK7258 WisGate Edge Lite** in your awesome IoT Project
 * [Datasheet](../Datasheet/)
 * [Supported LoRa Network Servers](../Supported-LoRa-Network-Servers/)
 * [OpenWRT Recovery Procedure](/Knowledge-Hub/Learn/OpenWRT-Recovery-Procedure/)
+* [RAK7258 Latest Firmware](https://downloads.rakwireless.com/LoRa/Indoor-Gateway-RAK7258/Firmware/RAK7258_Latest_Firmware.zip)
 
 
 ## Product Description

@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak12002/overview/rak12002_home.png
 rak_desc: The RAK12002 is a Real-Time Clock module, part of the RAK Wireless WisBlock Series, which was designed to be real-time clock, the RTC chip is RV-3028-C7 from Micro Crystal, I2C interface
 rak_grp: [wisblock, wisextra]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK12002
@@ -13,6 +13,7 @@ tags:
 
 Thank you for choosing **RAK12002 WisBlock RTC module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK12002 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
@@ -28,7 +29,7 @@ For All WisBlock Core:
 
 ## Product Description
 
-The RAK12002 is a Real-Time Clock module, part of the RAK Wireless WisBlock Series, which was designed to provide real-time clock capabilities on your WisBlock projects. The RTC chip is based on RV-3028-C7 from Micro Crystal which can be interfaced via I2C.
+The RAK12002 is a Real-Time Clock module, part of the RAKwireless WisBlock Series, which was designed to provide real-time clock capabilities on your WisBlock projects. The RTC chip is based on RV-3028-C7 from Micro Crystal which can be interfaced via I2C.
 
 
 ## Product Features

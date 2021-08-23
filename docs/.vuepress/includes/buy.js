@@ -701,15 +701,20 @@ export default {
     img: '/assets/images/accessories/helical-magnetic-base-antenna/helical-magnetic-base.png',
     store: 'https://store.rakwireless.com/products/magnetic-antenna' 
   },
-  '/Product-Categories/Accessories/Fiber-Glass-Antenna/': {
-    label: 'Fiber Glass 860~930 MHz 5.8 dBi Antenna',
-    img: '/assets/images/accessories/fiber-glass/overview.png',
-    store: 'https://store.rakwireless.com/products/fiber-glass-antenna?variant=39705894813894' 
-  },
   '/Product-Categories/Accessories/RAKARG16/': {
     label: '858~878MHz 8dBi Fiber Glass Antenna',
     img: '/assets/images/accessories/905000-905001/antenna_view.png',
     store: 'https://store.rakwireless.com/products/fiber-glass-antenna-1'
+  },
+  '/Product-Categories/Accessories/RAKARG14/': {
+    label: '902-928MHz 5dBi Fiberglass Antenna',
+    img: '/assets/images/accessories/rakarg14/antenna-overview.png',
+    store: 'https://store.rakwireless.com/'
+  },
+  '/Product-Categories/Accessories/RAKARG13/': {
+    label: '863-870MHz 5.8dBi Fiberglass Antenna',
+    img: '/assets/images/accessories/rakarg13/antenna-overview.png',
+    store: 'https://store.rakwireless.com/'
   }
 
 }
