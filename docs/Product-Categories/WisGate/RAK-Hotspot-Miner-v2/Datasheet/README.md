@@ -65,7 +65,7 @@ Range depends on the environment. For rural areas, **up to 10 miles or more**, b
 - 32&nbsp;GB SD card
 - Based on the LoRa Concentrator Engine: Semtech® SX1302
 - Built-in Heat Sink for thermal heat dissipation management
-- Supports 5&nbsp;V / 3&nbsp;A power supply
+- Supports 5&nbsp;V / 2.4&nbsp;A power supply
 - IP30 housing
 - TX power up to 27&nbsp;dBm, RX sensitivity down to -139&nbsp;dBm @SF12, BW 125&nbsp;KHz
 - LoRa Frequency band support: RU864, IN865, EU868, US915, AU915, KR920, AS923.
@@ -236,7 +236,7 @@ The LoRa Antenna with RP-SMA Male connector shown in Figure 5.
 
 #### Electrical Requirements
 
-The RAK Hotspot Miner operates at 5V/ 3A
+The RAK Hotspot Miner operates at 5V/ 2.4A
 
 | **Parameter**      | **Min.** | **Typical** | **Max**     |
 | ------------------ | -------- | ----------- | ----------- |

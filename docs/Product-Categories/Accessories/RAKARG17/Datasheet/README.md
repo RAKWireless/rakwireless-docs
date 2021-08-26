@@ -9,7 +9,7 @@ rak_img: /assets/images/accessories/antenna-black/1.png
 
 ---
 
-# 860-930MHz 5.9dBi LoRaWAN Antenna Black Datasheet
+# 860-930MHz 5.8dBi LoRaWAN Antenna Black Datasheet
 
 ## Overview
 
