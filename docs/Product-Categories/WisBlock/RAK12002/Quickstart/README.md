@@ -200,7 +200,7 @@ The basic example code for the RAK4631 WisBlock Core Module can be found on the 
 3. Click the link to locate the library.
 
 <rk-img
-  src="/assets/images/wisblock/rak12002/quickstart/adding_library.png"
+  src="/assets/images/wisblock/rak12002/quickstart/add_library.png"
   width="100%"
   caption="Locating the required library in the Library Manager"
 />
@@ -209,7 +209,7 @@ The basic example code for the RAK4631 WisBlock Core Module can be found on the 
 4. Install the required library, as shown in **Figure 9**.
 
 <rk-img
-  src="/assets/images/wisblock/rak12002/quickstart/library_install.png"
+  src="/assets/images/wisblock/rak12002/quickstart/install_library.png"
   width="100%"
   caption="Installing the Library"
 />
@@ -218,13 +218,13 @@ The basic example code for the RAK4631 WisBlock Core Module can be found on the 
 5. Select the correct port and upload your code, as shown in **Figure 10** and **Figure 11**.
 
 <rk-img
-  src="/assets/images/wisblock/rak12002/quickstart/selecting_port.png"
+  src="/assets/images/wisblock/rak12002/quickstart/select_port.png"
   width="100%"
   caption="Selecting the correct Serial Port"
 />
 
 <rk-img
-  src="/assets/images/wisblock/rak12002/quickstart/upload.png"
+  src="/assets/images/wisblock/rak12002/quickstart/uploading.png"
   width="100%"
   caption="Uploading code"
 />
@@ -232,7 +232,7 @@ The basic example code for the RAK4631 WisBlock Core Module can be found on the 
 6. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the RAK12002 date/time logs, as shown in **Figure 12**. You will be able to see the Time and Date in the Serial Monitor.
 
 <rk-img
-  src="/assets/images/wisblock/rak12002/quickstart/serial_monitor.png"
+  src="/assets/images/wisblock/rak12002/quickstart/serial-monitor.png"
   width="100%"
   caption="RAK12002 date/time logs"
 />
@@ -241,13 +241,13 @@ The basic example code for the RAK4631 WisBlock Core Module can be found on the 
 7. You can set the time and date in the code, as shown in **Figure 13** and **Figure 14**.
 
 <rk-img
-  src="/assets/images/wisblock/rak12002/quickstart/format.png"
+  src="/assets/images/wisblock/rak12002/quickstart/set-time-and-date.png"
   width="50%"
   caption="Code for setting the time and date in RAK12002"
 />
 
 <rk-img
-  src="/assets/images/wisblock/rak12002/quickstart/format1.png"
+  src="/assets/images/wisblock/rak12002/quickstart/time-and-date-format.png"
   width="50%"
   caption="Time and Date format"
 />
@@ -380,13 +380,13 @@ RAK11200 requires the BOOT0 pin to be configured properly before uploading. If n
 7. You can set the time and date in the code, as shown in **Figure 21** and **Figure 22**.
 
 <rk-img
-  src="/assets/images/wisblock/rak12002/quickstart/format.png"
+  src="/assets/images/wisblock/rak12002/quickstart/set-time-and-date.png"
   width="50%"
   caption="Code for setting the time and date in RAK12002"
 />
 
 <rk-img
-  src="/assets/images/wisblock/rak12002/quickstart/format1.png"
+  src="/assets/images/wisblock/rak12002/quickstart/time-and-date-format.png"
   width="50%"
   caption="Time and Date format"
 />
