@@ -674,7 +674,7 @@ This command is used to access and configure the regional frequency band.
 | Command                     | Input Parameter | Return Value                                                                                                                                     | Return Code              |
 | --------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
 | `AT+BAND?`                  | -               | `AT+BAND`: Set number corresponding to active regions (0: EU433, 1: CN470, 2: RU864, 3: IN865, 4: EU868, 5: US915, 6: AU915, 7: KR920, 8: AS923) | `OK`                     |
-| `AT+BAND=?`                 | -               | `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`                                                                                                      | `OK`                     |
+| `AT+BAND=?`                 | -               | `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8` or `8-1`, `8-2`, `8-3`, `8-4`                                                                                                        | `OK`                     |
 | `AT+BAND=<Input Parameter>` | < 0 to 8 >      | -                                                                                                                                                | `OK` or `AT_PARAM_ERROR` |
 
 
@@ -692,7 +692,10 @@ This command is used to access and configure the regional frequency band.
 | 5    | US915         |
 | 6    | AU915         |
 | 7    | KR920         |
-| 8    | AS923         |
+| 8 or 8-1    | AS923-1         |
+| 8-2  | AS923-2       |
+| 8-3  | AS923-3       |
+| 8-4  | AS923-4       |
 
 16. <b> `AT+LPSEND` </b> 
 
@@ -764,7 +767,7 @@ This section describes the commands related to Class B mode.
 
 1. <b> `AT+PGSLOT` </b> 
 
-Description: Unified Send Data
+Description: Slot Periodicity Command
 
 This command is used to access and configure unicast ping slot periodicity.
 
@@ -776,7 +779,7 @@ This command is used to access and configure unicast ping slot periodicity.
 
 2. <b> `AT+BFREQ` </b> 
 
-Description: Unified Send Data
+Description: Beacon Frequency Command
 
 This command is used to get the current beacon (default broadcast) frequency.
 
@@ -787,9 +790,9 @@ This command is used to get the current beacon (default broadcast) frequency.
 
 3. <b> `AT+LTIME` </b>
 
-Description: Unified Send Data
+Description: Local Time Command
 
-This command is used to get the current beacon (default broadcast) frequency.
+This command is used to access the local time in a UTC format.
 
 | Command      | Input Parameter | Return Value                                 | Return Code |
 | ------------ | --------------- | -------------------------------------------- | ----------- |
@@ -1126,14 +1129,14 @@ This command is used to remove the configured multicat group.
 
 Description: Multicast list
 
-This command allows the get to information about the configured multicat group.
+This command is used to get the information about the configured multicast group.
 
 | Command        | Input Parameter | Return Value                                                        | Return Code |
 | -------------- | --------------- | ------------------------------------------------------------------- | ----------- |
 | `AT+LSTMULC?`  | -               | `AT+RMVMULC`: Get multicast group information                       | `OK`        |
 | `AT+LSTMULC=?` | -               | `MC1:[Class]:[DevAddr]:[NwkSK ey]:[AppSKey]:[Frequency]:[DataRate]` | `OK`        |
 
-## Data Transparent Tranmission
+## Data Transparent Transmission
 
 This section describes the commands related to transparent data transmission in UART.
 

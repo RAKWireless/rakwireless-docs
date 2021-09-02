@@ -127,8 +127,8 @@ The RAK3272S module supports the LoRaWAN bands shown in table below. When buying
 | RAK3272S  | RAK3172P    | Europe        | EU868     |
 |           | RAK3172P    | North America | US915     |
 |           | RAK3172P    | Australia     | AU915     |
-|           | RAK3172P    | Korea         | AS923     |
-|           | RAK3172P    | Asia          | AS923     |
+|           | RAK3172P    | Korea         | KR920     |
+|           | RAK3172P    | Asia          | AS923-1/2/3/4     |
 |           | RAK3272P    | India         | IN865     |
 |           | RAK3272P    | Russia        | RU864     |
 

@@ -31,7 +31,7 @@ You can configure the mode and operation of the module using AT commands via a U
 
 - Based on **STM32WLE5CCU6**
 - **LoRaWAN 1.0.3** specification compliant
-- **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, RU864, and AS923
+- **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, RU864, and AS923-1/2/3/4
 - LoRaWAN Activation by OTAA/ABP
 - LoRa Point to Point (P2P) communication
 - Easy to use AT Command Set via UART interface
@@ -89,7 +89,7 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
 | 9           | PA12/I2C_SCL  | I/O      | GPIO and I2C (SCL)                                               |
 | 10          | PA11/I2C_SDA  | I/O      | GPIO and I2C (SDA)                                               |
 | 11          | GND           |          | Ground connections                                               |
-| 12          | RF            |          | RF Port                                                          |      
+| 12          | RF            |          | RF Port (only available on **RAK3172 No-IPEX connector variant**)|      
 | 13          | PA7/SPI1_MOSI | I/O      | GPIO and SPI (MOSI)                                              |
 | 14          | PA6/SPI1_MISO | I/O      | GPIO and SPI (MISO)                                              |
 | 15          | PA5/SPI1_CLK  | I/O      | GPIO and SPI (CLK)                                               |
@@ -125,7 +125,7 @@ The RAK3172 supports two different frequency variation: RAK3172(L) Low Radio Fre
 |            | North America | US915     |
 |            | Australia     | AU915     |
 |            | Korea         | KR920     |
-|            | Asia          | AS923     |
+|            | Asia          | AS923-1/2/3/4     |
 |            | India         | IN865     |
 |            | Russia        | RU864     |
 
@@ -153,6 +153,13 @@ The RAK3172 supports two different frequency variation: RAK3172(L) Low Radio Fre
 |                           | US915      |                | -              |         | μA   |
 |                           | CN470      |                | 1.69           |         | μA   |
 
+
+
+:::tip 📝 NOTE:
+
+For the reference application schematic of RAK3172 with minimum components requirements, refer to the [RAK3272S Breakout Board Datasheet.](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Datasheet/#schematic-diagram)
+
+:::
 
 #### Mechanical Characteristics
 

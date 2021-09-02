@@ -204,6 +204,25 @@ module.exports = {
     download: true,
     sidebarDepth: 4
   },
+
+  ],
+
+  '/Product-Categories/WisLink/RAK2011/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisLink/RAK2011/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisLink/RAK2011/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
 ]
 
 }

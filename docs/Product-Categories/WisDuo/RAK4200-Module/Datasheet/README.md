@@ -103,7 +103,7 @@ The hardware specification is categorized into five parts. It covers the pinouts
 | 9   | I2C_SCL  | I/O | I2C interface (STM32L071 PB6)                   |
 | 10  | I2C_SDA  | I/O | I2C interface (STM32L071 PB7)                   |
 | 11  | GND      | -   | Ground                                          |
-| 12  | RF       | I/O | RF port (reserved), default RF out by IPEX      |
+| 12  | RF       | I/O | RF port (only available on **RAK4200 No-IPEX connector variant**)|
 | 13  | GND      | -   | Ground                                          |
 | 14  | GND      | -   | Ground                                          |
 | 15  | SPI_CLK  | I/O | Reserved PA5                                    |
@@ -168,7 +168,7 @@ Several current consumption ratings are provided below for a detailed RAK4200 Wi
 
 | Feature | Minimum | Typical | Maximum | Unit      |
 | ------- | ------- | ------- | ------- | --------- |
-| VCC     | 2.0     | 3.3     | 3.45    | Volts (V) |
+| VCC     | 2.0     | 3.3     | 3.6    | Volts (V) |
 
 ##### Laboratory Testing
 

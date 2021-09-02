@@ -31,7 +31,7 @@ certifications:
 
 ### Description
 
-**RAK811 Breakout Board** is an easy to use, compact and low power long-range LoRa technology with wireless transceiver capabilities. It is based on RAK811 stamp module attached to a breakout board on Xbee form factor with standard 2.54&nbsp;mm headers. 
+**RAK811 Breakout Board** is an easy-to-use, compact, and low power long-range LoRa technology with wireless transceiver capabilities. It is based on RAK811 Stamp Module attached to a breakout board on Xbee form factor with standard 2.00&nbsp;mm headers. 
 
 The RAK811 Breakout Board complies with Class A & C of LoRaWAN 1.0.2 specification. Additionally, it supports LoRa Point to Point (P2P) communications which helps you in implementing their own private LoRa wireless applications. You can configure the mode and operation of the module using AT commands via UART interface. RAK811 board also offers low power features which is very suitable for battery-powered applications.
 
@@ -43,7 +43,7 @@ The RAK811 Breakout Board complies with Class A & C of LoRaWAN 1.0.2 specificati
 - LoRaWAN Activation by OTAA/ABP.
 - LoRa Point to Point (P2P) communication.
 - Integrates both **SMA** and **iPEX** antenna connectors.
-- Xbee form factor with standard 2.54&nbsp;mm headers.
+- Xbee form factor with standard 2.00&nbsp;mm headers.
 - Easy to use AT Command Set via UART interface with configurable baud rate.
 - Maximum output power 100&nbsp;mW (20&nbsp;dBm), adjustable from 5 to 20&nbsp;dBm.
 - High sensitivity at -148&nbsp;dBm, enabling extremely long range connectivity.

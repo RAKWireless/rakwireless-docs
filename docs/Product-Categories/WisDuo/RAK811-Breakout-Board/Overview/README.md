@@ -45,7 +45,7 @@ This board is a complete solution in developing your LoRaWAN protocol techniques
 - LoRaWAN Activation by OTAA/ABP.
 - LoRa Point to Point (P2P) communication.
 - Integrates both **SMA** and **iPEX** antenna connectors.
-- Xbee form factor with standard 2.54&nbsp;mm headers.
+- Xbee form factor with standard 2.00&nbsp;mm headers.
 - Easy to use AT Command Set via UART interface with configurable baud rate.
 - Maximum output power 100&nbsp;mW (20&nbsp;dBm), adjustable from 5 to 20&nbsp;dBm.
 - High sensitivity at -148&nbsp;dBm, enabling extremely long range connectivity.

@@ -196,6 +196,16 @@ The RAK4260 Breakout Board supports the following LoRa bands:
   caption="RAK4260 Breakout Board Schematic Diagram"
 />
 
+RAK4260_dimension.png
+
+#### Mechanical Characteristics
+
+<rk-img
+  src="/assets/images/wisduo/rak4260-breakout-board/datasheet/RAK4260_dimension.png"
+  width="50%"
+  caption="RAK3272S Mechanical Dimensions"
+/>
+
 ### Software
 
 Download the latest firmware of the RAK4260 Breakout Board in the table provided.

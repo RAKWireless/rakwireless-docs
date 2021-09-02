@@ -37,7 +37,7 @@ You can configure the mode and operation of the RAK4270 module using [RAK4270 AT
 - AT commands control interface
 - Temperature range: **-30&nbsp;°C to +85&nbsp;°C**
 - Supply voltage: **2.0 to 3.6&nbsp;V**
-- **Supported bands**: (EU433, CN470, IN865, EU868, AU915, US915, KR920, and AS923)
+- **Supported bands**: (EU433, CN470, IN865, EU868, AU915, US915, KR920, and AS923-1/2/3/4)
 - LoRa bandwidth range of 7.8&nbsp;kHz to&nbsp;500 kHz, SF5 to SF12, BR=0.018~62.5&nbsp;kb/s
 - Ultra-Low Power Consumption of 2.31&nbsp;μA (down to 1.61&nbsp;μA @ 2.0&nbsp;V) in sleep mode
 - Arm Cortex-M0+ 32-bit RISC core
@@ -107,7 +107,7 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
 | 9   | PB6/I2C_SCL       | I/O  | I2C interface                               | USART1_TX, I2C1_SCL, LPTIM1_ETR                                  |
 | 10  | PB7/I2C_SDA       | I/O  | I2C interface                               | USART1_RX, I2C1_SDA, LPTIM1_IN2, USART4_CTS          |
 | 11  | GND           |      | Ground                                      |                                                                           |
-| 12  | RF            | I/O  | RF port (reserved), default RF out by IPEX  |                                                                           |
+| 12  | RF            | I/O  | RF port (only available on **RAK4270 No-IPEX connector variant**) |                                                                           |
 | 13  | GND           |      | Ground                                      |                                                                           |
 | 14  | GND           |      | Ground                                      |                                                                           |
 | 15  | PA11/ANT_SW   | I/O  | ANT_SW                                      | *leave it unconnected on mainboard*                                       |
@@ -205,7 +205,7 @@ It is recommended to add four decoupling capacitors near the RAK4270 power suppl
 
 | Feature | Minimum | Typical | Maximum | Unit      |
 | ------- | ------- | ------- | ------- | --------- |
-| VCC     | 2.0    | 3.3     | 3.45    | Volts (V) |
+| VCC     | 2.0     | 3.3     | 3.6    | Volts (V) |
 
 ##### Operating Current
 

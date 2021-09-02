@@ -46,6 +46,11 @@ export default {
     img: '/assets/images/wislink-lora/rak5146/RAK5146.png',
     store: 'https://store.rakwireless.com/products/wislink-lpwan-concentrator-rak5146?utm_source=WisBlockRAK5146&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisLink/RAK2011/': {
+    label: 'RAK2011 WisLink Cellular BG96 Arduino Shield',
+    img: '/assets/images/wislink-lte/rak2011/overview/rak2011-buy.png',
+    store: 'https://store.rakwireless.com/products/rak2011-cellular-board'
+  },
 
   //WisDuino
   '/Product-Categories/WisDuino/RAK811-Evaluation-Board/': {

@@ -575,7 +575,7 @@ This command is used to set the appropriate working frequency band.
 <table>
     <tr>
       <td> region </td>
-      <td> EU433, CN470, IN865, EU868, US915, AU915, KR920, AS923. The default is EU868.
+      <td> EU433, CN470, IN865, EU868, US915, AU915, KR920, AS923-1, AS923-2, AS923-3, AS923-4. The default is EU868.
     </td>
     </tr>
 </table>
@@ -587,10 +587,6 @@ This command is used to set the appropriate working frequency band.
 at+set_config=lora:region:EU868\r\n
 OK
 ```
-
-::: tip 📝 NOTE
-In the AS923 frequency band, the supported frequency plan is "as2" and the dwell time is set to 1.
-:::
 
 <br>
 
@@ -608,7 +604,7 @@ This command is used to read all the LoRa channel information given the current 
 
 ```
 at+get_config=lora:channel\r\n
-OK *0,on,868100000,0,5; *1,on,868300000,0,5; *2,on,868500000,0,5; 3,off,0,0,0; 4,off,0,0,0; 5,off,0,0,0; 6,off,0,0,0; 7,off,0,0,0; *8,on,867100000,0,5; *9,on,867300000,0,5; *10,on,867500000,0,5; *11,on,867700000,0,5; *12,on,867900000,0,5; 13,off,0,0,0; 14,off,0,0,0; 15,off,0,0,0
+OK * 0,on,868100000,0,5; * 1,on,868300000,0,5; * 2,on,868500000,0,5;  3,off,0,0,0;  4,off,0,0,0;  5,off,0,0,0;  6,off,0,0,0;  7,off,0,0,0;  8,off,0,0,0;  9,off,0,0,0; 10,off,0,0,0; 11,off,0,0,0; 12,off,0,0,0; 13,off,0,0,0; 14,off,0,0,0; 15,off,0,0,0 
 ```
 
 ::: tip 📝 NOTE

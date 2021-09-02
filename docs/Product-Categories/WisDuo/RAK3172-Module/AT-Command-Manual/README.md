@@ -110,7 +110,7 @@ This command is used to trigger an MCU reset.
 
 Description: Restore default parameters
 
-This command restores all parameters to the initial default values of the module.
+This command is used to restore all parameters to the initial default values of the module.
 
 | Command | Input Parameter | Return Value | Return Code |
 | ------- | --------------- | ------------ | ----------- |
@@ -121,7 +121,7 @@ This command restores all parameters to the initial default values of the module
 
 Description: Set command echo
 
-This command allows the user to see the AT command input on the Serial Terminal.
+This command is used to see the AT command input on the Serial Terminal.
 
 | Command | Input Parameter | Return Value           | Return Code |
 | ------- | --------------- | ---------------------- | ----------- |
@@ -132,7 +132,7 @@ This command allows the user to see the AT command input on the Serial Terminal.
 
 Description: Serial number
 
-This command can read the device serial number.
+This command is used to read the device serial number.
 
 | Command | Input Parameter | Return Value                          | Return Code |
 | ------- | --------------- | ------------------------------------- | ----------- |
@@ -148,7 +148,7 @@ This section describes the commands related to the activation of the end device.
 
 Description: Device EUI or DEVEUI
 
-This command allows the user to access and configure the device EUI or DEVEUI.
+This command is used to access and configure the device EUI or DEVEUI.
 
 | Command                       | Input Parameter | Return Value                                                  | Return Code              |
 | ----------------------------- | --------------- | ------------------------------------------------------------- | ------------------------ |
@@ -179,7 +179,7 @@ AT_PARAM_ERROR
 
 Description: Application unique identifier
 
-This command allows the user to access and configure the APPEUI.
+This command is used to access and configure the APPEUI.
 
 | Command                       | Input Parameter | Return Value                                               | Return Code              |
 | ----------------------------- | --------------- | ---------------------------------------------------------- | ------------------------ |
@@ -210,7 +210,7 @@ AT_PARAM_ERROR
 
 Description: Application key
 
-This command allows the user to access and configure the APPKEY.
+This command is used to access and configure the APPKEY.
 
 | Command                       | Input Parameter | Return Value                                                                       | Return Code              |
 | ----------------------------- | --------------- | ---------------------------------------------------------------------------------- | ------------------------ |
@@ -241,7 +241,7 @@ AT_PARAM_ERROR
 
 Description: Device address or DEVADDR
 
-This command allows the user to access and configure the device address or DEVADDR.
+This command is used to access and configure the device address or DEVADDR.
 
 | Command                        | Input Parameter | Return Value                                               | Return Code              |
 | ------------------------------ | --------------- | ---------------------------------------------------------- | ------------------------ |
@@ -272,7 +272,7 @@ AT_PARAM_ERROR
 
 Description: Application session key
 
-This command allows the user to access and configure the application session key or APPSKEY.
+This command is used to access and configure the application session key or APPSKEY.
 
 | Command                        | Input Parameter | Return Value                                                                                | Return Code              |
 | ------------------------------ | --------------- | ------------------------------------------------------------------------------------------- | ------------------------ |
@@ -303,7 +303,7 @@ AT_PARAM_ERROR
 
 Description: Network session keys
 
-This command allows the user to access and configure the network session keys or NWKSKEY.
+This command is used to access and configure the network session keys or NWKSKEY.
 
 | Command                        | Input Parameter | Return Value                                                                                | Return Code              |
 | ------------------------------ | --------------- | ------------------------------------------------------------------------------------------- | ------------------------ |
@@ -338,7 +338,7 @@ This section describes the commands related to the joining process of the device
 
 Description: LoRaWAN® network join mode
 
-This command allows the user to access and configure the activation method of the device either OTAA or ABP.
+This command is used to access and configure the activation method of the device either OTAA or ABP.
 
 | Command                    | Input Parameter | Return Value                                                  | Return Code              |
 | -------------------------- | --------------- | ------------------------------------------------------------- | ------------------------ |
@@ -369,7 +369,7 @@ AT_PARAM_ERROR
 
 Description: Confirmed payload mode
 
-This command allows the user to access and configure type of payload of the device.
+This command is used to access and configure type of payload of the device.
 
 | Command                    | Input Parameter | Return Value                               | Return Code            |
 | -------------------------- | --------------- | ------------------------------------------ | ---------------------- |
@@ -381,7 +381,7 @@ This command allows the user to access and configure type of payload of the devi
 
 Description: Join LoRaWAN® network
 
-This command allows the user to join a LoRaWAN® network.
+This command is used to join a LoRaWAN® network.
 
 | Command                     | Input Parameter                                                                                    | Return Value                     | Return Code           |
 | --------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------- | --------------------- |
@@ -403,7 +403,7 @@ This is an asynchronous command. OK means that the device is joining. The comple
 
 Description: Network join status
 
-This command allows the user to check the status of the devices if it is connected to a LoRaWAN® network.
+This command is used to check the status of the devices if it is connected to a LoRaWAN® network.
 
 | Command  | Input Parameter | Return Value                     | Return Code |
 | -------- | --------------- | -------------------------------- | ----------- |
@@ -414,7 +414,7 @@ This command allows the user to check the status of the devices if it is connect
 
 Description: Send payload data
 
-This command allows the user to send LoRaWAN® payload on specific port.
+This command is used to send LoRaWAN® payload on specific port.
 
 | Command                     | Input Parameter      | Return Value                                        | Return Code                                                   |
 | --------------------------- | -------------------- | --------------------------------------------------- | ------------------------------------------------------------- |
@@ -425,7 +425,7 @@ This command allows the user to send LoRaWAN® payload on specific port.
 
 Description: Confirm status
 
-This command allows the user to access the status of the last “SEND” command
+This command is used to access the status of the last “SEND” command
 
 | Command  | Input Parameter | Return Value                                                  | Return Code |
 | -------- | --------------- | ------------------------------------------------------------- | ----------- |
@@ -436,7 +436,7 @@ This command allows the user to access the status of the last “SEND” command
 
 Description: Last received data
 
-This command allows the user to get the last received data in hex format.
+This command is used to get the last received data in hex format.
 
 | Command   | Input Parameter | Return Value                                        | Return Code |
 | --------- | --------------- | --------------------------------------------------- | ----------- |
@@ -461,7 +461,7 @@ This section describes the commands related to the configuration of the LoRaWAN�
 
 Description: Adaptive data rate
 
-This command allows the user to access and configure the adaptive data rate of the module.
+This command is used to access and configure the adaptive data rate of the module.
 
 | Command                    | Input Parameter | Return Value                                                                    | Return Code            |
 | -------------------------- | --------------- | ------------------------------------------------------------------------------- | ---------------------- |
@@ -473,7 +473,7 @@ This command allows the user to access and configure the adaptive data rate of t
 
 Description: LoRaWAN® class
 
-This command allows the user to access and configure the the LoRaWAN® class of the module.
+This command is used to access and configure the the LoRaWAN® class of the module.
 
 | Command                      | Input Parameter | Return Value                                                  | Return Code            |
 | ---------------------------- | --------------- | ------------------------------------------------------------- | ---------------------- |
@@ -491,7 +491,7 @@ This FW of the device supports the LoRaWAN® V1.0.3 stack
 
 Description: Duty cycle settings
 
-This command allows the user to access and configure duty cycle settings.
+This command is used to access and configure duty cycle settings.
 
 | Command                    | Input Parameter | Return Value                                                                  | Return Code            |
 | -------------------------- | --------------- | ----------------------------------------------------------------------------- | ---------------------- |
@@ -503,7 +503,7 @@ This command allows the user to access and configure duty cycle settings.
 
 Description: Get the duty cycle time
 
-This command allows the user to get the duty cycle time (in seconds). The command is only used in the EU868, RU864 and EU433 frequency bands. Other frequency band query will return 0.
+This command is used to get the duty cycle time (in seconds). The command is only used in the EU868, RU864 and EU433 frequency bands. Other frequency band query will return 0.
 
 | Command       | Input Parameter | Return Value                             | Return Code |
 | ------------- | --------------- | ---------------------------------------- | ----------- |
@@ -514,7 +514,7 @@ This command allows the user to get the duty cycle time (in seconds). The comman
 
 Description: Data rate settings
 
-This command allows the user to access and configure data rate settings.
+This command is used to access and configure data rate settings.
 
 | Command                   | Input Parameter                 | Return Value                                              | Return Code            |
 | ------------------------- | ------------------------------- | --------------------------------------------------------- | ---------------------- |
@@ -526,7 +526,7 @@ This command allows the user to access and configure data rate settings.
 
 Description: Join delay on RX1 window
 
-This command allows the user to access and configure the join delay on RX1 window.
+This command is used to access and configure the join delay on RX1 window.
 
 | Command                      | Input Parameter | Return Value                                                                                           | Return Code                              |
 | ---------------------------- | --------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------- |
@@ -538,7 +538,7 @@ This command allows the user to access and configure the join delay on RX1 windo
 
 Description: Join delay on RX2 window
 
-This command allows the user to access and configure the join delay on RX2 window.
+This command is used to access and configure the join delay on RX2 window.
 
 | Command                      | Input Parameter | Return Value                                                                                           | Return Code                                 |
 | ---------------------------- | --------------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------- |
@@ -550,7 +550,7 @@ This command allows the user to access and configure the join delay on RX2 windo
 
 Description: Delay on RX1 window
 
-This command allows the user to access and configure the delay on RX1 window.
+This command is used to access and configure the delay on RX1 window.
 
 | Command                      | Input Parameter | Return Value                                                                         | Return Code                              |
 | ---------------------------- | --------------- | ------------------------------------------------------------------------------------ | ---------------------------------------- |
@@ -562,7 +562,7 @@ This command allows the user to access and configure the delay on RX1 window.
 
 Description: Delay on RX2 window
 
-This command allows the user to access and configure the delay on RX2 window.
+This command is used to access and configure the delay on RX2 window.
 
 | Command                      | Input Parameter | Return Value                                                                         | Return Code                              |
 | ---------------------------- | --------------- | ------------------------------------------------------------------------------------ | ---------------------------------------- |
@@ -574,7 +574,7 @@ This command allows the user to access and configure the delay on RX2 window.
 
 Description: Data Rate on RX2 window
 
-This command allows the user to access and configure the data rate of the RX2 window.
+This command is used to access and configure the data rate of the RX2 window.
 
 | Command                      | Input Parameter | Return Value                                                                | Return Code                              |
 | ---------------------------- | --------------- | --------------------------------------------------------------------------- | ---------------------------------------- |
@@ -586,7 +586,7 @@ This command allows the user to access and configure the data rate of the RX2 wi
 
 Description: Frequency of the RX2 window
 
-This command allows the user to access and configure the frequency of the RX2 window.
+This command is used to access and configure the frequency of the RX2 window.
 
 | Command                      | Input Parameter       | Return Value                                    | Return Code                              |
 | ---------------------------- | --------------------- | ----------------------------------------------- | ---------------------------------------- |
@@ -598,7 +598,7 @@ This command allows the user to access and configure the frequency of the RX2 wi
 
 Description: Transmit Power
 
-This command allows the user to access and configure the transmit power.
+This command is used to access and configure the transmit power.
 
 | Command                    | Input Parameter | Return Value                             | Return Code              |
 | -------------------------- | --------------- | ---------------------------------------- | ------------------------ |
@@ -614,7 +614,7 @@ For example, at EU868, a value of 2 represents **MaxEIRP - 4 dB** where MaxEIRP 
 
 Description: Confirmed payload retransmission
 
-This command allows the user to access and configure the number of retransmission for confirmed payload.
+This command is used to access and configure the number of retransmission for confirmed payload.
 
 | Command                     | Input Parameter | Return Value                                                        | Return Code            |
 | --------------------------- | --------------- | ------------------------------------------------------------------- | ---------------------- |
@@ -626,7 +626,7 @@ This command allows the user to access and configure the number of retransmissio
 
 Description: Setting masked channels
 
-This command allows the user to access and configure masked channels.
+This command is used to access and configure masked channels.
 
 | Command                     | Input Parameter | Return Value                                                                         | Return Code            |
 | --------------------------- | --------------- | ------------------------------------------------------------------------------------ | ---------------------- |
@@ -656,12 +656,12 @@ This command allows the user to access and configure masked channels.
 
 Description: Regional frequency band
 
-This command allows the user to access and configure the regional frequency band.
+This command is used to access and configure the regional frequency band.
 
 | Command                     | Input Parameter | Return Value                                                                                                                             | Return Code              |
 | --------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
 | AT+BAND?                    | -               | `AT+BAND: Set number corresponding to active regions (0: EU433 1: CN470 2: RU864 3: IN865 4: EU868 5: US915 6: AU915 7: KR920 8: AS923)` | `OK`                     |
-| AT+BAND=?                   | -               | `0` , `1` , `2` , `3` , `4` , `5` , `6` , `7` , `8`                                                                                      | `OK`                     |
+| AT+BAND=?                   | -               | `0` , `1` , `2` , `3` , `4` , `5` , `6` , `7` , `8` or `8-1`, `8-2`, `8-3`, `8-4`                                                                                      | `OK`                     |
 | AT+BAND=`<Input Parameter>` | *< 0 to 8 >*    | -                                                                                                                                        | `OK` or `AT_PARAM_ERROR` |
 
 **List of Band Parameter Options**
@@ -676,13 +676,16 @@ This command allows the user to access and configure the regional frequency band
 | 5    | US915         |
 | 6    | AU915         |
 | 7    | KR920         |
-| 8    | AS923         |
+| 8 or 8-1    | AS923-1         |
+| 8-2  | AS923-2       |
+| 8-3  | AS923-3       |
+| 8-4  | AS923-4       |
 
 ### AT+LPSEND 
 
 Description: Long data payload
 
-This command allows the user to long data payload.
+This command is used to send long data payload.
 
 | Command                       | Input Parameter              | Return Value                                               | Return Code              |
 | ----------------------------- | ---------------------------- | ---------------------------------------------------------- | ------------------------ |
@@ -695,7 +698,7 @@ This command allows the user to long data payload.
 
 Description: Network link status
 
-This command allows the user to access and configure device network link status.
+This command is used to access and configure device network link status.
 
 | Command                          | Input Parameter | Return Value                               | Return Code              |
 | -------------------------------- | --------------- | ------------------------------------------ | ------------------------ |
@@ -725,7 +728,7 @@ Reply format:
 
 Description: Unified Send Data
 
-This command allows the user to send unified data on a dedicated port number.
+This command is used to send unified data on a dedicated port number.
 
 | Command                      | Input Parameter                                     | Return Value                                                  | Return Code                                                         |
 | ---------------------------- | --------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------- |
@@ -744,9 +747,9 @@ This section describes the commands related to Class B mode.
 
 ### AT+PGSLOT 
 
-Description: Unified Send Data
+Description: Slot Periodicity Command
 
-This command allows the user to access and configure unicast ping slot periodicity.
+This command is used to access and configure unicast ping slot periodicity.
 
 | Command                       | Input Parameter | Return Value                 | Return Code              |
 | ----------------------------- | --------------- | ---------------------------- | ------------------------ |
@@ -756,9 +759,9 @@ This command allows the user to access and configure unicast ping slot periodici
 
 ### AT+BFREQ 
 
-Description: Unified Send Data
+Description: Beacon Frequency Command
 
-This command allows the user to get the current beacon (default broadcast) frequency.
+This command is used to get the current beacon (default broadcast) frequency.
 
 | Command    | Input Parameter | Return Value                          | Return Code |
 | ---------- | --------------- | ------------------------------------- | ----------- |
@@ -767,9 +770,9 @@ This command allows the user to get the current beacon (default broadcast) frequ
 
 ### AT+LTIME
 
-Description: Unified Send Data
+Description: Local Time Command
 
-This command allows the user to get the current beacon (default broadcast) frequency.
+This command is used to access the local time in a UTC format.
 
 | Command    | Input Parameter | Return Value                                 | Return Code |
 | ---------- | --------------- | -------------------------------------------- | ----------- |
@@ -784,7 +787,7 @@ This section describes the commands on getting device information.
 
 Description: Receive signal strength indicator
 
-This command allows the user to get RSSI value of the last packet received.
+This command is used to get the RSSI value of the last packet received.
 
 | Command   | Input Parameter | Return Value                                        | Return Code |
 | --------- | --------------- | --------------------------------------------------- | ----------- |
@@ -795,7 +798,7 @@ This command allows the user to get RSSI value of the last packet received.
 
 Description: Signal to Noise Ratio
 
-This command allows the user to get SNR value of the last packet received.
+This command is used to get the SNR value of the last packet received.
 
 | Command  | Input Parameter | Return Value                                      | Return Code |
 | -------- | --------------- | ------------------------------------------------- | ----------- |
@@ -806,7 +809,7 @@ This command allows the user to get SNR value of the last packet received.
 
 Description: Version of the firmware
 
-This command allows the user to get firmware version installed on the device.
+This command is used to get the firmware version installed on the device.
 
 | Command                    | Input Parameter | Return Value                              | Return Code |
 | -------------------------- | --------------- | ----------------------------------------- | ----------- |
@@ -823,7 +826,7 @@ This section describes the commands related to RF test management.
 
 Description: Receive Signal Strength Indicator
 
-This command allows the user to get RF RSSI tone test of the device.
+This command is used to get the RF RSSI tone test of the device.
 
 | Command                      | Input Parameter | Return Value                        | Return Code |
 | ---------------------------- | --------------- | ----------------------------------- | ----------- |
@@ -834,7 +837,7 @@ This command allows the user to get RF RSSI tone test of the device.
 
 Description: Start radio frequency tone test
 
-This command allows the user to get RF RSSI tone test of the device.
+This command is used to get the RF RSSI tone test of the device.
 
 | Command                      | Input Parameter | Return Value                   | Return Code             |
 | ---------------------------- | --------------- | ------------------------------ | ----------------------- |
@@ -845,7 +848,7 @@ This command allows the user to get RF RSSI tone test of the device.
 
 Description: Start RF Tx LoRa® test
 
-This command allows the user to set the number of packets to be sent for a PER RF TX test.
+This command is used to set the number of packets to be sent for a PER RF TX test.
 
 | Command                    | Input Parameter        | Return Value                                            | Return Code              |
 | -------------------------- | ---------------------- | ------------------------------------------------------- | ------------------------ |
@@ -856,7 +859,7 @@ This command allows the user to set the number of packets to be sent for a PER R
 
 Description: Start RF Tx LoRa® test
 
-This command allows the user to set the number of packets to be received for a PER RF TX test.
+This command is used to set the number of packets to be received for a PER RF TX test.
 
 | Command                    | Input Parameter        | Return Value                                                | Return Code              |
 | -------------------------- | ---------------------- | ----------------------------------------------------------- | ------------------------ |
@@ -867,7 +870,7 @@ This command allows the user to set the number of packets to be received for a P
 
 Description: Config LoRa® RF test
 
-This command allows the user to access and set LoRa® configuration test.
+This command is used to access and set LoRa® configuration test.
 
 | Command                      | Input Parameter | Return Value                        | Return Code              |
 | ---------------------------- | --------------- | ----------------------------------- | ------------------------ |
@@ -879,7 +882,7 @@ This command allows the user to access and set LoRa® configuration test.
 
 Description: RF Tx hopping test
 
-This command allows the user to access and configure RF Tx hopping test.
+This command is used to access and configure RF Tx hopping test.
 
 | Command                                               | Input Parameter | Return Value                                                                 | Return Code |
 | ----------------------------------------------------- | --------------- | ---------------------------------------------------------------------------- | ----------- |
@@ -890,7 +893,7 @@ This command allows the user to access and configure RF Tx hopping test.
 
 Description: Stop ongoing radio frequency test
 
-This command allows the user to stop the ongoing RF test.
+This command is used to stop the ongoing RF test.
 
 | Command  | Input Parameter | Return Value                    | Return Code |
 | -------- | --------------- | ------------------------------- | ----------- |
@@ -901,7 +904,7 @@ This command allows the user to stop the ongoing RF test.
 
 Description: Set the module in LoRaWAN® Certification mode
 
-This command allows the user to start the RF Rx LoRa test.
+This command is used to start the RF Rx LoRa test.
 
 | Command    | Input Parameter | Return Value                                               | Return Code             |
 | ---------- | --------------- | ---------------------------------------------------------- | ----------------------- |
@@ -916,7 +919,7 @@ This section describes the commands related to LoRa point to point functionality
 
 Description: LoRa® network work mode (LoRaWAN or P2P)
 
-This command allows the user to switch to LoRaWAN or (P2P)point-to-point mode.
+This command is used to switch to LoRaWAN or (P2P)point-to-point mode.
 
 | Command                    | Input Parameter            | Return Value                                                     | Return Code              |
 | -------------------------- | -------------------------- | ---------------------------------------------------------------- | ------------------------ |
@@ -928,7 +931,7 @@ This command allows the user to switch to LoRaWAN or (P2P)point-to-point mode.
 
 Description: P2P mode frequency
 
-This command allows the user to access and configure P2P mode frequency.
+This command is used to access and configure P2P mode frequency.
 
 | Command                      | Input Parameter       | Return Value                        | Return Code              |
 | ---------------------------- | --------------------- | ----------------------------------- | ------------------------ |
@@ -940,7 +943,7 @@ This command allows the user to access and configure P2P mode frequency.
 
 Description: P2P mode spreading factor
 
-This command allows the user to access and configure P2P mode spreading factor.
+This command is used to access and configure P2P mode spreading factor.
 
 | Command                    | Input Parameter | Return Value                                                    | Return Code              |
 | -------------------------- | --------------- | --------------------------------------------------------------- | ------------------------ |
@@ -952,7 +955,7 @@ This command allows the user to access and configure P2P mode spreading factor.
 
 Description: P2P mode bandwidth
 
-This command allows the user to access and configure P2P mode bandwidth.
+This command is used to access and configure P2P mode bandwidth.
 
 | Command                    | Input Parameter        | Return Value                                     | Return Code              |
 | -------------------------- | ---------------------- | ------------------------------------------------ | ------------------------ |
@@ -964,7 +967,7 @@ This command allows the user to access and configure P2P mode bandwidth.
 
 Description: P2P mode coding rate
 
-This command allows the user to access and configure P2P mode coding rate.
+This command is used to access and configure P2P mode coding rate.
 
 | Command                    | Input Parameter        | Return Value                                                 | Return Code              |
 | -------------------------- | ---------------------- | ------------------------------------------------------------ | ------------------------ |
@@ -976,7 +979,7 @@ This command allows the user to access and configure P2P mode coding rate.
 
 Description: P2P mode preamble length
 
-This command allows the user to access and configure P2P mode preamble length.
+This command is used to access and configure P2P mode preamble length.
 
 | Command                    | Input Parameter     | Return Value                                     | Return Code              |
 | -------------------------- | ------------------- | ------------------------------------------------ | ------------------------ |
@@ -988,7 +991,7 @@ This command allows the user to access and configure P2P mode preamble length.
 
 Description: P2P mode TX power
 
-This command allows the user to access and configure P2P mode TX power.
+This command is used to access and configure P2P mode TX power.
 
 | Command                    | Input Parameter  | Return Value                       | Return Code              |
 | -------------------------- | ---------------- | ---------------------------------- | ------------------------ |
@@ -1000,7 +1003,7 @@ This command allows the user to access and configure P2P mode TX power.
 
 Description: P2P configuration settings
 
-This command allows the user to access and configure all P2P mode settings.
+This command is used to access and configure all P2P mode settings.
 
 | Command                    | Input Parameter                                     | Return Value                                        | Return Code              |
 | -------------------------- | --------------------------------------------------- | --------------------------------------------------- | ------------------------ |
@@ -1019,7 +1022,7 @@ Input parameter details:
 
 Description: P2P send data
 
-This command allows the user to send P2P data.
+This command is used to send P2P data.
 
 | Command                      | Input Parameter | Return Value              | Return Code              |
 | ---------------------------- | --------------- | ------------------------- | ------------------------ |
@@ -1030,7 +1033,7 @@ This command allows the user to send P2P data.
 
 Description: P2P receive data window
 
-This command allows the user to configure timeout period for P2P window reception.
+This command is used to configure timeout period for P2P window reception.
 
 | Command                      | Input Parameter    | Return Value                                                             | Return Code              |
 | ---------------------------- | ------------------ | ------------------------------------------------------------------------ | ------------------------ |
@@ -1052,7 +1055,7 @@ This section describes the commands related to multicast group functionality.
 
 Description: Add multicast group
 
-This command allows the user to add new multicast group and multicat parameters.
+This command is used to add new multicast group and multicast parameters.
 
 | Command                        | Input Parameter                                                                | Return Value                            | Return Code              |
 | ------------------------------ | ------------------------------------------------------------------------------ | --------------------------------------- | ------------------------ |
@@ -1082,7 +1085,7 @@ OK
 
 Description: Remove multicast group
 
-This command allows the user to remove the configured multicat group.
+This command is used to remove the configured multicast group.
 
 | Command                        | Input Parameter | Return Value                         | Return Code |
 | ------------------------------ | --------------- | ------------------------------------ | ----------- |
@@ -1093,14 +1096,14 @@ This command allows the user to remove the configured multicat group.
 
 Description: Multicast list
 
-This command allows the get to information about the configured multicat group.
+This command is used to get the information about the configured multicast group.
 
 | Command      | Input Parameter | Return Value                                                         | Return Code |
 | ------------ | --------------- | -------------------------------------------------------------------- | ----------- |
 | AT+LSTMULC?  | -               | `AT+RMVMULC:Get multicast group information`                         | `OK`        |
 | AT+LSTMULC=? | -               | `MC1:[Class]:[DevAddr]:[NwkSK ey]:[AppSKey]:[Frequency]:[Dat arate]` | `OK`        |
 
-## Data Transparent Tranmission
+## Data Transparent Transmission
 
 This section describes the commands related to transparent data transmission in UART.
 
@@ -1108,7 +1111,7 @@ This section describes the commands related to transparent data transmission in 
 
 Description: Set transparent transmission mode
 
-This command allows the user to set the transparent transmission mode.
+This command is used to set the transparent transmission mode.
 
 | Command | Input Parameter | Return Value                                    | Return Code |
 | ------- | --------------- | ----------------------------------------------- | ----------- |
@@ -1119,7 +1122,7 @@ This command allows the user to set the transparent transmission mode.
 
 Description: Stop transparent transmission mode
 
-This command allows the user to stop the transparent transmission mode.
+This command is used to stop the transparent transmission mode.
 
 | Command | Input Parameter | Return Value                              | Return Code |
 | ------- | --------------- | ----------------------------------------- | ----------- |

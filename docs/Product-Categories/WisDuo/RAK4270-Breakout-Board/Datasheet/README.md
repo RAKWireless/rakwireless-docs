@@ -30,7 +30,7 @@ This module is expected to be controlled by an external controller through its U
 - I/O ports: **UART/I2C/GPIO**
 - Temperature range: **-40&nbsp;°C** to **+85&nbsp;°C**
 - Supply voltage: **2.0 ~ 3.6&nbsp;V**
-- Supported bands: EU433, CN470, IN865, EU868, AU915, US915, KR920 and AS923
+- Supported bands: EU433, CN470, IN865, EU868, AU915, US915, KR920, and AS923-1/2/3/4
 - Low-Power Wireless Systems with 7.8&nbsp;kHz to 500&nbsp;kHz bandwidth
 - Ultra-Low Power Consumption of 2.31&nbsp;μA (down to 1.61&nbsp;μA @ 2.0&nbsp;V) in sleep mode
 - Core: ARM 32-bit Cortex – M0+ with MPU

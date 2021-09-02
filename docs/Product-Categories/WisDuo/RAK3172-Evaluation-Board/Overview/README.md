@@ -29,7 +29,7 @@ This module complies with Class A, B & C of LoRaWAN 1.0.3 specifications. It als
 
 - Based on **STM32WLE5CCU6**
 - **LoRaWAN 1.0.3** specification compliant
-- **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, RU864, and AS923
+- **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, RU864, and AS923-1/2/3/4
 - LoRaWAN Activation by OTAA/ABP
 - LoRa Point to Point (P2P) communication
 - Easy to use AT Command Set via UART interface

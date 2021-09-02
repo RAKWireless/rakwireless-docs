@@ -23,7 +23,7 @@ This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications. It al
 
 - Based on **STM32WLE5CCU6**
 - **LoRaWAN 1.0.3** specification compliant
-- **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, RU864, and AS923
+- **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, RU864, and AS923-1/2/3/4
 - LoRaWAN Activation by OTAA/ABP
 - LoRa Point to Point (P2P) communication
 - Easy to use AT Command Set via UART interface
@@ -242,7 +242,7 @@ The RAK3172 supports two different frequency variation: RAK3172(L) Low Radio Fre
 |            | North America | US915     |
 |            | Australia     | AU915     |
 |            | Korea         | KR920     |
-|            | Asia          | AS923     |
+|            | Asia          | AS923-1/2/3/4     |
 |            | India         | IN865     |
 |            | Russia        | RU864     |
 

@@ -106,9 +106,9 @@ The hardware specifications are categorized into five parts. It discusses the in
 | 12      | GND        |         | Ground                                         |
 | 13      | GND        |         | Ground                                         |
 | 14      | GND        |         | Ground                                         |
-| 15      | RF_BT      | I/O     | BLE<br>RF OUT                                  |
+| 15      | RF_BT      | I/O     | BLE<br>RF OUT (only available on **RAK4600 No-IPEX connector variant**)|
 | 16      | GND        |         | Ground                                         |
-| 17      | RF_L       | I/O     | LoRa<br>RF OUT                                 |
+| 17      | RF_L       | I/O     | LoRa<br>RF OUT (only available on **RAK4600 No-IPEX connector variant**)|
 | 18      | GND        |         | Ground                                         |
 | 19      | GND        |         | Ground                                         |
 | 20      | GND        |         | Ground                                         |

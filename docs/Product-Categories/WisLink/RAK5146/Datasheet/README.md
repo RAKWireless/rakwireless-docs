@@ -44,7 +44,7 @@ RAK5146 is a compact LPWAN Gateway Module, making it suitable for integration in
 The board has two UFL interfaces for the LoRa and GNSS antennas and a standard 52 pin connector (mPCIe).
 
 <rk-img
-  src="/assets/images/wislink-lora/rak5146/datasheet/1.png"
+  src="/assets/images/wislink-lora/rak5146/datasheet/RAK5146_Overview.svg"
   width="50%"
   caption="Board Overview"
 />
@@ -240,8 +240,8 @@ Input voltage at **3.3Vaux** must be above the normal operating range minimum li
 The board weighs 16.3 grams, it is 30 mm wide and 50.96 mm tall. The dimensions of the module fall completely within the **PCI Express Mini Card Electromechanical Specification**, except for the card's thickness (5.5 mm at its thickest).
 
 <rk-img
-  src="/assets/images/wislink-lora/rak5146/datasheet/4.png"
-  width="50%"
+  src="/assets/images/wislink-lora/rak5146/datasheet/RAK5146_Dimensions.svg"
+  width="25%"
   caption="Dimensions"
 />
 

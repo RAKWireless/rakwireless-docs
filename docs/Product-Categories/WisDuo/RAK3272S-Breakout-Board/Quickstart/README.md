@@ -336,7 +336,10 @@ To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
 | 5     | US915         |
 | 6     | AU915         |
 | 7     | KR920         |
-| 8     | AS923         |
+| 8 or 8-1     | AS923-1         |
+| 8-2   | AS923-2       |
+| 8-3   | AS923-3       |
+| 8-4   | AS923-4       |
 
 
 <rk-img
@@ -575,7 +578,10 @@ To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
 | 5     | US915         |
 | 6     | AU915         |
 | 7     | KR920         |
-| 8     | AS923         |
+| 8 or 8-1     | AS923-1         |
+| 8-2   | AS923-2       |
+| 8-3   | AS923-3       |
+| 8-4   | AS923-4       |
 
 
 <rk-img
@@ -908,7 +914,10 @@ AT+BAND=4
 | 5     | US915         |
 | 6     | AU915         |
 | 7     | KR920         |
-| 8     | AS923         |
+| 8 or 8-1     | AS923-1         |
+| 8-2   | AS923-2       |
+| 8-3   | AS923-3       |
+| 8-4   | AS923-4       |
 
 
 <rk-img
@@ -1117,7 +1126,10 @@ To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
 | 5     | US915         |
 | 6     | AU915         |
 | 7     | KR920         |
-| 8     | AS923         |
+| 8 or 8-1     | AS923-1         |
+| 8-2   | AS923-2       |
+| 8-3   | AS923-3       |
+| 8-4   | AS923-4       |
 
 
 <rk-img
