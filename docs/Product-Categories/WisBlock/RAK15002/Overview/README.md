@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak15002/overview/rak15002_home.png
 rak_desc: The RAK15002 is a Micro SD card module that can be mounted to the IO slot of the WisBlock Base board. This module uses a 4-line SPI interface to access the SD card and supports the card insert detection feature.
 rak_grp: [wisblock, wisstorage]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK15002
@@ -13,6 +13,7 @@ tags:
 
 Thank you for choosing **RAK15002 WisBlock Micro SD Card Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK15002 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)

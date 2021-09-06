@@ -44,9 +44,9 @@ Before going through each and every step on using RAK5804 WisBlock module, make 
 
 ### Hardware Setup
 
-The RAK5804 module is designed as an IO extension module that allow users to connect external digital and analog modules to create a customized IoT solution. These third-party modules are connected through two expansion connectors: J2 and J3. In addition, the RAK5804 module also supports a USB interface, which can be used to access and program the MCU of the WisBlock Core module of the solution.  For more information about RAK5804, refer to the [Datasheet](../Datasheet/).
+The RAK5804 module is designed as an IO extension module that allows you to connect external digital and analog modules to create a customized IoT solution. These third-party modules are connected through two expansion connectors: J2 and J3. In addition, the RAK5804 module also supports a USB interface, which can be used to access and program the MCU of the WisBlock Core module of the solution.  For more information about RAK5804, refer to the [Datasheet](../Datasheet/).
 
-The RAK5804 module can be mounted on the IO slot of the WisBlock Base board as shown in **Figure 1**. Also, always secure the connection of the WisBlock module by using the compatible screws.
+The RAK5804 module can be mounted on the IO slot of the WisBlock Base board, as shown in **Figure 1**. Also, always secure the connection of the WisBlock module by using the compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/quickstart/rak5804_assembly.png"
@@ -68,7 +68,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 ### Software Configuration and Example
 
-The RAK5804 module exposes to the user’s application the IO pins, I2C and UART communication ports. You can use these ports to connect sensors or modules, digital I/O, analog I/O and slave devices. These ports are routed to the WisBlock Core through the IO connector.
+The RAK5804 module exposes the IO pins, I2C, and UART communication ports. You can use these ports to connect sensors or modules, digital I/O, analog I/O, and slave devices. These ports are routed to the WisBlock Core through the IO connector.
 
 For RAK5804, the accessible GPIO pin assignments are defined as follows in the Arduino IDE:
 - `WB_IO1` for IO1, GPIO1 pin
@@ -102,7 +102,7 @@ This is just an example and illustration on how to use the RAK5804 for external 
   caption="Selecting RAK11200 as WisBlock Core"
 />
 
-2. On the Arduino IDE and go to **Sketch > Include Library > Manage Libraries**. The Library Manager should open, then install the [Adafruit SSD1306](https://github.com/adafruit/Adafruit_SSD1306) and the [Adafruit GFX](https://github.com/adafruit/Adafruit-GFX-Library) libraries as shown in **Figure 6** and **Figure 7**.
+2. On the Arduino IDE, go to **Sketch > Include Library > Manage Libraries**. The Library Manager should open, then install the [Adafruit SSD1306](https://github.com/adafruit/Adafruit_SSD1306) and the [Adafruit GFX](https://github.com/adafruit/Adafruit-GFX-Library) libraries, as shown in **Figure 6** and **Figure 7**.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/quickstart/ssd1306_lib.png"
@@ -222,6 +222,7 @@ void loop() {
   
 }
 ```
+
 4. Then select the right Serial Port and upload the code, as shown in **Figure 8** and **Figure 9**.
 
 <rk-img
@@ -236,7 +237,7 @@ void loop() {
   caption="Uploading the sample code"
 />
 
-5. When you successfully uploaded the sample code, you will now be able to see the RAK logo displayed on your OLED screen as shown in **Figure 10**, which means that the module is properly communicating with the WisBlock core using the I2C protocol.
+5. When you successfully uploaded the sample code, you will now be able to see the RAK logo displayed on your OLED screen, as shown in **Figure 10**, which means that the module is properly communicating with the WisBlock core using the I2C protocol.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/quickstart/rak_oled.png"
@@ -246,7 +247,7 @@ void loop() {
 
 #### GPIO Connection on RAK5804
 
-This is just an example and illustration on how to use the GPIO pins of RAK5804 for external sensors, modules, or devices. There are four (4) GPIO pins available on the RAK5804, you can use any of the GPIO pins as long as your modules, sensors, or devices operates at 3.3&nbsp;V.
+This is just an example and illustration on how to use the GPIO pins of RAK5804 for external sensors, modules, or devices. There are four (4) GPIO pins available on the RAK5804. You can use any of the GPIO pins as long as your modules, sensors, or devices operates at 3.3&nbsp;V.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/quickstart/rak5804_dht11.png"
@@ -268,7 +269,7 @@ This is just an example and illustration on how to use the GPIO pins of RAK5804 
   caption="Selecting RAK11200 as WisBlock Core"
 />
 
-2. On the Arduino IDE and go to **Sketch > Include Library > Manage Libraries**. The Library Manager should open, then install the [Adafruit DHT Sensor](https://github.com/adafruit/DHT-sensor-library) library as shown in **Figure 14**.
+1. On the Arduino IDE, go to **Sketch > Include Library > Manage Libraries**. The Library Manager should open, then install the [Adafruit DHT Sensor](https://github.com/adafruit/DHT-sensor-library) library, as shown in **Figure 14**.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/quickstart/dht_lib.png"
@@ -350,7 +351,7 @@ void loop() {
 
 #### Analog Input (ADC) Connection on RAK5804 
 
-This is just an example and illustration on how to use the ADC pin of RAK5804 for external sensors, modules, or devices. There is only one (1) ADC pin available on the RAK5804 that you can use as long as your modules, sensors, or devices operates at 3.3V.
+This is just an example and illustration on how to use the ADC pin of RAK5804 for external sensors, modules, or devices. There is only one (1) ADC pin available on the RAK5804 that you can use as long as your modules, sensors, or devices operates at 3.3&nbsp;V.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/quickstart/rak5804_lm35.png"

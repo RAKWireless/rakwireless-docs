@@ -24,17 +24,17 @@ Thank you for choosing **RAK5804 WisBlock Interface Extension Module** in your a
 
 ## Product Description
 
-**RAK5804** is a **WisBlock Interface** module which extends the **WisBlock** system with additional analog and digital interfaces. In addition, it provides a USB interface.   
+**RAK5804 WisBlock Interface Extension Module** was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module. 
 
-The interface is available through the two expansion connectors: **J2** and **J3**. To provide power to peripheral devices, the **3.3&nbsp;V** can be obtained from these expansion connectors. Internal protections allow shutting down the power supply when a short circuit is detected in the peripheral devices. Overcurrent cases are protected through **internal PTC thermistors** in the power supply circuit.    
+This module is designed as an IO extension module that allows you to connect your digital or analog devices or sensors to create a customized IoT solution. These sensors are connected through two expansion connectors: **J2** and **J3**. In order to provide power to peripheral devices, 3.3&nbsp;V can be obtained from these expansion connectors. Internal protections allow to shut down the power supply when a short circuit is detected in the peripheral devices. Overcurrent cases are protected through **internal PTC thermistors** in the power supply circuit.
 
-Also, the **RAK5804** module supports a USB interface, which can be used with **RAK5005-O** to access the USB port of MCU of the **WisBlock Core** module of the solution.     
+In addition, the RAK5804 module also supports a USB interface, which can be used with RAK5005-O to access the USB port of MCU of the WisBlock Core module of the solution. 
 
-All external expansion interfaces of the **RAK5804** module are equipped with a TVS protection circuit to avoid damaging the mainboard and **WisBlock Core** circuit with ESD when users plug in or unplug the interface.
+All external expansion interfaces of the RAK5804 module are equipped with TVS protection circuit to avoid damaging the mainboard and WisBlock Core circuit with ESD when users plug in or unplug to the expansion interfaces.
 
 ## Product Features
 
-* **Module specifications**    
+* **Module Specifications**    
     * 1 USB port    
     * 2 I2C port    
     * 1 Serial port    
@@ -46,7 +46,7 @@ All external expansion interfaces of the **RAK5804** module are equipped with a 
     * PTC thermistor to prevent output power overload    
 
 * **Size**    
-    * 15 x 25&nbsp;mm    
+    * **25&nbsp;mm x 15&nbsp;mm**  
 
 ## Prerequisites
 
