@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak13003/overview/rak13003_home.png
 rak_desc: The RAK13003 is an IO expansion module that can be mounted to IO slot of WisBlock Base board. It offers 16 bidirectional I/O ports by using MCP23017 IC from Microchip. The configuration of the module is via I2C interface and it supports both standard and fast I2C modes.
 rak_grp: [wisblock, wisinterface]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK13003
@@ -13,6 +13,7 @@ tags:
 
 Thank you for choosing **RAK13003 WisBlock IO Expansion Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK13003 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)

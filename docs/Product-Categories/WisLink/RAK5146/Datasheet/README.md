@@ -84,7 +84,7 @@ The hardware is categorized into seven parts. It discusses the interfacing, pino
 ##### Pinout Diagram
 
 <rk-img
-  src="/assets/images/wislink-lora/rak5146/datasheet/3.png"
+  src="/assets/images/wislink-lora/rak5146/datasheet/RAK5146_pinout.svg"
   width="80%"
   caption="Pinout Diagram"
 />
