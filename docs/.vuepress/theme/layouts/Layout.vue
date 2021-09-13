@@ -19,6 +19,7 @@
                 <img
                   :src="`/assets/rakwireless/rak-white.svg`"
                   style="width: 7.5rem"
+                  alt="https://docs.rakwireless.com/assets/rakwireless/RAK-only-gray.png"
                 />
                 <!-- </a> -->
               </q-item-section>

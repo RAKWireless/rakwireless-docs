@@ -407,6 +407,14 @@ module.exports = {
   sidebarDepth: 4
 },
 {
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisGate/RAK7271-7371/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
   title: 'Datasheet',
   path: '/Product-Categories/WisGate/RAK7271-7371/Datasheet/',
   collapsable: false,

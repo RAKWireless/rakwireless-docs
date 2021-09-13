@@ -3,7 +3,7 @@ rak_img: /assets/images/wisgate/rak7271-7371/overview/rak7271-7371.png
 rak_desc: RAK7271/7371 WisGate Developer Base is designed for desktop/mobile or embedded systems that converts mPCIe LoRa Concentrator modules to Plug & Play LoRa Concentrators, making for a quick to deploy LPWAN Gateway.
 rak_grp: [wisgate, developer]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisgate
     - RAK7271
@@ -14,6 +14,7 @@ tags:
 
 Thank you for choosing **RAK7271/RAK7371 WisGate Developer Base** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 
 ## Product Description

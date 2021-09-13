@@ -16,6 +16,7 @@ tags:
 Thank you for choosing **Bobcat Outdoor Enclosure Kit** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
 * [Installation Guide](../Installation-Guide/)
+* [Solar Shield Installation Guide](../Solar-Shield/)
 
 
 ## Product Description

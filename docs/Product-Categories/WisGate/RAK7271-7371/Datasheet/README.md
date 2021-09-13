@@ -6,7 +6,7 @@ tags:
   - wisgate
   - RAK7271
   - RAK7371
-prev: ../Overview/
+prev: ../Quickstart/
 next: false 
 ---
 

@@ -130,6 +130,14 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
+    },
+    {
+      title: 'Solar Shield Installation Guide',
+      path: '/Product-Categories/Accessories/Bobcat-Enclosure-Kit/Solar-Shield/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
     }
   ],
   '/Product-Categories/Accessories/Ethernet-Cable-Gland/': [

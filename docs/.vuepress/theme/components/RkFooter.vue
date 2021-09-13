@@ -7,7 +7,7 @@
       style="max-width: 40rem; margin: 1.5rem auto 0 auto;"
     >LoRa® is a registered trademark or service mark of Semtech Corporation or its affiliates. LoRaWAN® is a licensed mark.</div>
     <div class="full-height flex flex-center q-mb-md">
-      <img :src="`/assets/rakwireless/RAK-only-gray.png`" style="width: 20rem" />
+      <img :src="`/assets/rakwireless/RAK-only-gray.png`" style="width: 20rem" alt="https://docs.rakwireless.com/assets/rakwireless/RAK-only-gray.png"/>
       <br />
     </div>
     <div class="column q-mx-md text-center">

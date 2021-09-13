@@ -18,6 +18,9 @@ Thank you for choosing **RAK7289 WisGate Edge Pro** in your awesome IoT Project!
 * [Datasheet](../Datasheet/)
 * [Supported LoRa Network Servers](../Supported-LoRa-Network-Servers/)
 * [Use the MQTT Broker Like a Pro + Examples](/Knowledge-Hub/Learn/Use-the-MQTT-Broker-Like-a-Pro/)
+* [AWS IoT Core Integration](/Knowledge-Hub/Learn/AWS-IoT-Core-Integration/)
+
+
 ## Product Description
 
 **RAK7289 WisGate Edge Pro** is an ideal product for IoT commercial deployment. With its industrial-grade components, it achieves a high standard of reliability.

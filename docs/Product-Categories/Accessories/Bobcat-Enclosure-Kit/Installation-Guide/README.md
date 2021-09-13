@@ -1,6 +1,6 @@
 ---
 prev: ../Overview/
-next: false
+next: /..Solar-Shield/
 tags:
   - Bobcat Outdoor Enclosure Kit
   - Installation Guide
