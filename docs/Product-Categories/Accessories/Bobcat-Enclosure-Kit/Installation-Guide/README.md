@@ -7,7 +7,6 @@ tags:
   - RAKBox-GW-4B
 rak_desc: In this guide, the process of assembling and mounting an outdoor case for the Bobcat Miner 300 will be shown step by step. Strict adherence to the steps guarantees a secured and durable outdoor casing.
 rak_img: /assets/images/accessories/bobcat-enclosure-kit/installation/bobcat.png
-
 ---
 
 # Installation Guide
@@ -25,13 +24,33 @@ The package includes all the necessary parts for this project, without the Bobca
 5. Cover sticker (for the LEDs)
 6. RAKBox-GW-4
 
+## Dimensions
+
+<rk-img
+  src="/assets/images/accessories/bobcat-enclosure-kit/installation/bobcat_dimension_1.svg"
+  width="60%"
+  caption="Bobcat Enclosure Kit Dimension"
+/>
+
+<rk-img
+  src="/assets/images/accessories/bobcat-enclosure-kit/installation/bobcat_dimension_2.svg"
+  width="50%"
+  caption="Bobcat Enclosure Kit Dimension"
+/>
+
+<rk-img
+  src="/assets/images/accessories/bobcat-enclosure-kit/installation/bobcat_dimension_3.svg"
+  width="50%"
+  caption="Bobcat Enclosure Kit Dimension"
+/>
+
 ## Assembly
 
 A detailed explanation of the procedure of putting the Bobcat Miner 300 inside the RAKBox-GW-4.
 
 1. Open the RAKBox-GW-4 enclosure and remove the top cover. 
 
-2. At the opening marked “LoRa1”, position and assemble the antenna connector. Use the remaining plugs to close the openings, as shown in Figure 1. 
+2. At the opening marked “LoRa1”, position and assemble the antenna connector. Use the remaining plugs to close the openings, as shown in Figure 4. 
 
 <rk-img
   src="/assets/images/accessories/bobcat-enclosure-kit/installation/1.positioning.png"
@@ -76,7 +95,7 @@ A detailed explanation of the procedure of putting the Bobcat Miner 300 inside t
   caption="Connecting the PoE splitter to the miner"
 />
 
-6. Connect the antenna connector of the enclosure to the antenna connector of the device, as shown in Figure 7.
+6. Connect the antenna connector of the enclosure to the antenna connector of the device, as shown in Figure 10.
 
 <rk-img
   src="/assets/images/accessories/bobcat-enclosure-kit/installation/5.connecting-antenna-connector.png"
@@ -113,7 +132,7 @@ Because of the different variants regarding the connector of the Bobcat Miner 30
 
 Instructions on mounting and securing the mounting kit to the enclosure and the bearing pole.
 
-1. Fix the device bracket on the bottom of the enclosure with four M6*12 screws as shown in Figure 10.
+1. Fix the device bracket on the bottom of the enclosure with four M6*12 screws as shown in Figure 13.
 
 <rk-img
   src="/assets/images/accessories/bobcat-enclosure-kit/installation/8.fixing-the-bracket.png"

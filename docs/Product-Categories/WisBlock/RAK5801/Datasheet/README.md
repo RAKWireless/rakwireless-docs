@@ -97,6 +97,21 @@ This section covers the pin number of the sensor connector, the definition, and 
   caption="RAK5801 Sensor Connector"
 />
 
+:::tip 📝 NOTE:
+**A0** cannot be used as an analog input channel by default because it is used for measuring battery voltage. But if you need to use **A0**, there are few hardware modifications needed to configure. Please see instructions below.
+
+To enable **A0** as an additional channel:
+
+1. Remove **R7** on the WisBlock Base such as the RAK5005-O to disconnect Vbat sensing.
+2. On RAK5801, remove the 0 Ohms resistor in **R94** and put it to **R95**. Please see **Figure 3**.
+:::
+
+<rk-img
+  src="/assets/images/wisblock/rak5801/datasheet/RAK5801-a0.png"
+  width="50%"
+  caption="A0 Hardware Modifications"
+/>
+
 | **Pin Number** | **Function Description**              |
 | -------------- | ------------------------------------- |
 | 1              | SCL of the I2C interface              |
@@ -109,7 +124,7 @@ This section covers the pin number of the sensor connector, the definition, and 
 | 8              | Analog input 1                        |
 
 
-**Figure 3** shows the pin order for the IO connector of the module. Through this connector, the RAK5801 module is attached to the WisBoard baseboard. 
+**Figure 4** shows the pin order for the IO connector of the module. Through this connector, the RAK5801 module is attached to the WisBoard baseboard. 
 
 <br>
 
@@ -154,7 +169,7 @@ This signal controls the dc-dc power supply on RAK5801, before capturing analog 
 
 ##### Board Dimensions
 
-Refer to **Figure 4** below for the mechanical dimensions of the RAK5801 module.
+Refer to **Figure 5** below for the mechanical dimensions of the RAK5801 module.
 
 <rk-img
   src="/assets/images/wisblock/rak5801/datasheet/mechanical-dimensions.png"
@@ -178,7 +193,7 @@ Refer to **Figure 4** below for the mechanical dimensions of the RAK5801 module.
   caption="RAK5801 Schematic Diagram"
 />
 
-## WisBlock Compatability
+## WisBlock Compatibility
 
 
 Since a WisBlock module can be combined with a variety of different functional modules, the pin functions of the MCU are multiplexed, so the interface expansion module for each specific function may need to be properly adapted for the WisBlock. The compatibility details of the RAK5801 module are as shown in the Table below:
@@ -199,8 +214,8 @@ The RAK5801 is not compatible with RAK4601. The main reason is because RAK4601 d
 :::tip 📝 NOTE 
 <b> 2. RAK5801+RAK4202+RAK5005-O </b> <br>
 In order to combine a RAK5801 module, a RAK4202 (WisBlock Core module), and the RAK5005-O, the following modification must be introduced: 
--	In RAK5005-O, remove the R7 resistor as shown in **Figure 7**.
--	In RAK5801, remove R94 to R95 resistors, and use PA0 of STM32L151 to read the analog data of the channel “analog0”, and use PA2 of STM32L151 to read the analog data of Channel analog1. **Figure 8** shows the resistors R94 and R95 on the RAK5801 module.
+-	In RAK5005-O, remove the R7 resistor as shown in **Figure 8.**
+-	In RAK5801, remove R94 to R95 resistors, and use PA0 of STM32L151 to read the analog data of the channel “analog0”, and use PA2 of STM32L151 to read the analog data of Channel analog1. **Figure 9** shows the resistors R94 and R95 on the RAK5801 module.
 
 This combination has the following restriction: 
 -	The adapted RAK5005-O module will not able to sense the battery voltage anymore. 
@@ -222,8 +237,8 @@ This combination has the following restriction:
 
 <b> 3. RAK5801+RAK4261+RAK5005-O </b> <br>
 In order to combine a RAK5801 module, a RAK4261(WisBlock Core module), and the RAK5005-O, the following modification must be introduced: 
--	In RAK5005-O, remove the R7 resistor. See **Figure 7**. 
--	In RAK5801, remove R94 to R95 resistors (see **Figure 8**), and use PA08 of ATSAMR34 to read the analog data of the channel “analog0”, and use PA09 of ATSAMR34 to read the analog data of Channel analog1.
+-	In RAK5005-O, remove the R7 resistor. See **Figure 8**. 
+-	In RAK5801, remove R94 to R95 resistors (see **Figure 9**), and use PA08 of ATSAMR34 to read the analog data of the channel “analog0”, and use PA09 of ATSAMR34 to read the analog data of Channel analog1.
 
 This combination has the following restriction: 
 -	The adapted RAK5005-O module will not able to sense the battery voltage anymore. 

@@ -181,8 +181,13 @@ The RAK5801 module includes a 12&nbsp;V voltage source which is controlled by th
 
 For RAK5801, the accessible ADC pin assignments are defined as follows in the Arduino IDE:
 
-- `WB_A0` for AIN0, ADC Input pin
+- `WB_IO4` for AIN0, ADC Input pin
 - `WB_A1` for AIN1, ADC Input pin
+
+::: tip 📝 NOTE
+- **WB_IO4** for AIN0 only works for RAK4631 core module.
+- If you will be using the RAK11200 core module, there are few hardware modifications needed to configure. Please check the [Pin Definition](/Product-Categories/WisBlock/RAK5801/Datasheet/#hardware) section in the Datasheet.
+:::
 
 
 #### Sensor Connection on RAK5801

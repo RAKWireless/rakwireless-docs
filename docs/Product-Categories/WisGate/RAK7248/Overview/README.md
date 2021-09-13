@@ -16,6 +16,7 @@ Thank you for choosing **RAK7248 WisGate Developer D4H** in your awesome IoT Pro
 
 <!-- * [Quick Start Guide](../Quickstart/) -->
 * [Datasheet](../Datasheet/)
+* [WisGate Developer Gateway Firmware Setup](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisGate-Developer-Gateway-Firmware-Burning/)
 * [RAK7248 Latest Firmware](https://downloads.rakwireless.com/LoRa/RAK7248/Firmware/RAK7248_Latest_Firmware.zip)
 
 ## Product Background

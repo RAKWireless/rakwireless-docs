@@ -17,6 +17,7 @@ Thank you for choosing **RAK7244C WisGate Developer D4+ Gateway** in your awesom
 * [Datasheet](../../RAK7244/Datasheet/)
 * [Environment Test Report](../Testing-Report/)
 * [Source Code Repository](https://github.com/RAKWireless/rak_common_for_gateway)
+* [WisGate Developer Gateway Firmware Setup](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisGate-Developer-Gateway-Firmware-Burning/)
 * [RAK7244C ready to flash Firmware](https://downloads.rakwireless.com/LoRa/Developer-LoRaWAN-Gateway-RAK7244C/Firmware/RAK7244C_Latest_Firmware.zip)
 * [RAK7244C Outdoor Case Assembly Guide](.../../../../../Accessories/Outdoor-Enclosure-Kit/Overview/#wisgate-developer-d4-rak7244c-outdoor-case)
 

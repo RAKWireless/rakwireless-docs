@@ -17,6 +17,7 @@ Thank you for choosing **RAK7243C WisGate Developer D3+ Gateway** in your awesom
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * [Source Code Repository](https://github.com/RAKWireless/rak_common_for_gateway)
+* [WisGate Developer Gateway Firmware Setup](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisGate-Developer-Gateway-Firmware-Burning/)
 * [RAK7243C ready to flash Firmware](https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Firmware/RAK7243C_Latest_Firmware.zip)
 
 

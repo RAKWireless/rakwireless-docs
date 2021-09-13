@@ -16,6 +16,7 @@ Thank you for choosing **RAK7244 LPWAN Developer D4 Gateway** in your awesome Io
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * [Source Code Repository](https://github.com/RAKWireless/rak_common_for_gateway)
+* [WisGate Developer Gateway Firmware Setup](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisGate-Developer-Gateway-Firmware-Burning/)
 * [RAK7244 ready to flash Firmware](https://downloads.rakwireless.com/LoRa/Developer-LoRaWAN-Gateway-RAK7244%26RAK7244P/Firmware/RAK7244_Latest_Firmware.zip)
 * [RAK7244 Outdoor Case Assembly Guide](.../../../../../Accessories/Outdoor-Enclosure-Kit/Overview/#wisgate-developer-d4-rak7244-outdoor-case)
 
