@@ -251,7 +251,7 @@ The RAK4600 WisDuo LPWAN Module takes **30.052&nbsp;ms** to receive a LoRa packe
 ##### Schematic Diagram
 
 <rk-img
-  src="/assets/images/wisduo/rak4600-module/datasheet/schematic/rak4600-module.png"
+  src="/assets/images/wisduo/rak4600-module/datasheet/schematic/RAK4600_Schematic.png"
   width="100%"
   caption="Schematic Diagram"
 />

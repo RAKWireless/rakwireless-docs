@@ -12,7 +12,7 @@ certifications:
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630RAK4631_FCC_Cert.zip] 
   - [IC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK4631/Certification/RAK4631_IC_Certification.pdf]
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630RAK4631rohs%20report.pdf] 
-
+  - [RCM, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RCM_cert.pdf]
 ---
 
 # RAK4631 WisBlock LPWAN Module Datasheet

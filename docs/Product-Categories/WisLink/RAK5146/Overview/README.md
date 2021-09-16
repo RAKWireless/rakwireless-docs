@@ -13,7 +13,7 @@ tags:
 Thank you for choosing **RAK5146 WisLink LPWAN Concentrator** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
 * [Datasheet](../Datasheet/)
-
+* [RAK5146 USB Latest Firmware](https://downloads.rakwireless.com/LoRa/RAK5146/Firmware/RAK5146_USB_Latest_Firmware.zip)
 ## Product Description
 
 RAK5146 is an LPWAN Concentrator Module with mini-PCIe form factor based on Semtech SX1303 and SX126X for Listen Before Talk feature, which enables easy integration into an existing router or other network equipment with LPWAN Gateway capabilities. It can be used in any embedded platform offering a free mini-PCIe slot with SPI/USB connection. Furthermore, ZOE- M8Q GPS chip is integrated onboard.
