@@ -166,7 +166,7 @@ There are three ways that you can check the logs for debugging purposes on your 
 :::tip 📝 NOTE:
  - For this method, you need a serial port tool which can support DTR function, like Termite. You can download Termite on their [website](https:\/\/www.compuphase.com\/software_termite.htm). 
  - For Linux and MacOS, the alternative is [Coolterm](http://freeware.the-meiers.org/).
- - It is highly recommneded to connect a battery when doing configuration via USB to have a stable serial connection.
+ - It is highly recommended to connect a battery when doing configuration via USB to have a stable serial connection.
 :::
 
 3. After opening the Termite serial tool, configure its setting as shown in Figure 11.
@@ -688,7 +688,7 @@ An easy and quick way to get started with your RAK5010-M is through using a pre-
 <rk-img
   src="/assets/images/wistrio/rak5010-m/quickstart/8.upgrading-firmware/nzilnqodbz6x33uvnpp4.jpg"
   width="40%"
-  caption="DFU Upgrading of RAK5010-M Firmwave via BLE"
+  caption="DFU Upgrading of RAK5010-M Firmware via BLE"
 />
 
 

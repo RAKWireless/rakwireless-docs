@@ -105,5 +105,5 @@ rak_img: /assets/images/accessories/905000-905001/antenna_view.png
 <rk-img
   src="/assets/images/accessories/905000-905001/8dBi_dimensions.png"
   width="60%"
-  caption="858~878MHz 8dBi Fiberglass Atenna dimensions"
+  caption="858~878MHz 8dBi Fiberglass Antenna dimensions"
 />

@@ -332,17 +332,17 @@ The Temperature and Humidity Sensors are an SHTC3 from Sensirion.
 
 The Pressure Sensor is an LPS22HB from ST:
 
-| Symbol  |            Parameter            |                               Test Condition                               |  Min  |      Typ      |  Max  |   Unit   |
-| :-----: | :-----------------------------: | :------------------------------------------------------------------------: | :---: | :-----------: | :---: | :------: |
-|  PTop   |   Operating Temperature Range   |                                     -                                      |  -40  |       -       |  +85  |    °C    |
-| PTfull  | Full Accuracy Temperature Range |                                     -                                      |   0   |       -       |  +65  |    °C    |
-|   Pop   |    Operating Pressure Range     |                                     -                                      |  260  |       -       | 1260  |   hPa    |
-|  Pbits  |      Pressure Output Data       |                                     -                                      |   -   |      24       |   -   | bitsbits |
-|  Psens  |      Pressure Sensitivity       |                                     -                                      |   -   |     4096      |   -   | LSB/hPa  |
-| PAccRel | Relative Accuracy over Pressure |                 • P=800–1100&nbsp;hPa <br>• T = 25&nbsp;°C                 |   -   |     ±0.1      |   -   |   hPa    |
-|  PAccT  |        Absolute Accuracy        | • **After OPC**: Pop=0 to 65&nbsp;°C <br>• **No OPC**: Pop=0 to 65&nbsp;°C |   -   |  ±0.1 <br>±1  |   -   |   hPa    |
-| Pnoise  |   RMS Pressure Sensing Noise    |                          With embedded filtering                           |   -   |    0.0075     |   -   | hPa RMS  |
-| ODRPres |    Pressure Output Data Rate    |                                     -                                      |   -   | 1/10/25/50/75 |   -   |    Hz    |
+| Symbol  |            Parameter            |                               Test Condition                               | Min |      Typ      | Max  |  Unit   |
+| :-----: | :-----------------------------: | :------------------------------------------------------------------------: | :-: | :-----------: | :--: | :-----: |
+|  PTop   |   Operating Temperature Range   |                                     -                                      | -40 |       -       | +85  |   °C    |
+| PTfull  | Full Accuracy Temperature Range |                                     -                                      |  0  |       -       | +65  |   °C    |
+|   Pop   |    Operating Pressure Range     |                                     -                                      | 260 |       -       | 1260 |   hPa   |
+|  Pbits  |      Pressure Output Data       |                                     -                                      |  -  |      24       |  -   |  bits   |
+|  Psens  |      Pressure Sensitivity       |                                     -                                      |  -  |     4096      |  -   | LSB/hPa |
+| PAccRel | Relative Accuracy over Pressure |                 • P=800–1100&nbsp;hPa <br>• T = 25&nbsp;°C                 |  -  |     ±0.1      |  -   |   hPa   |
+|  PAccT  |        Absolute Accuracy        | • **After OPC**: Pop=0 to 65&nbsp;°C <br>• **No OPC**: Pop=0 to 65&nbsp;°C |  -  |  ±0.1 <br>±1  |  -   |   hPa   |
+| Pnoise  |   RMS Pressure Sensing Noise    |                          With embedded filtering                           |  -  |    0.0075     |  -   | hPa RMS |
+| ODRPres |    Pressure Output Data Rate    |                                     -                                      |  -  | 1/10/25/50/75 |  -   |   Hz    |
 ##### 5. 3-Axis Motion Sensor
 
 | Symbol |     Parameter     |             Test Condition             | Min.  | Typ.  | Max.  |   Unit   |

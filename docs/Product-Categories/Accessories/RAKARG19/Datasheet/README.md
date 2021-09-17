@@ -46,14 +46,14 @@ This antenna is designed to be directly mounted on the enclosure of the Gateway.
 | Parameter              | Value                          |
 | ---------------------- | ------------------------------ |
 | Model                  | RAKARG19                       |
-| Frequency Rnge         | 902 ~ 928&nbsp;MHz             |
+| Frequency Range        | 902 ~ 928&nbsp;MHz             |
 | Peak Gain              | 5.1&nbsp;dBi                   |
 | VSWR                   | ≤ 1.47                         |
 | Efficiency             | ≤ 84%                          |
 | Feed Impedance         | 50&nbsp;Ω                      |
 | Radiation Pattern      | Omnidirectional                |
 | Polarization           | Vertical                       |
-| Cover Material (Color) | Fiberglass (White)            |
+| Cover Material (Color) | Fiberglass (White)             |
 | Connector Type         | N-type male                    |
 | Dimensions (mm)        | Փ 27.0&nbsp;mm x 480.0&nbsp;mm |
 | Operation Temp (°C)    | -40&nbsp;°C ~ +75&nbsp;°C      |

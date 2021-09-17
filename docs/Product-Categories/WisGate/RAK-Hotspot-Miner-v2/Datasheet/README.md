@@ -191,14 +191,14 @@ If nothing else is stated, T=25&nbsp;℃, VDD=5&nbsp;V (Typ.).
 
 It is highly recommended to use optimized RSSI calibration values, which is part of the HAL v3.l. For both Radio 1 and 2, the RSSI-Offset should be set at -169.0. The following table gives the typical sensitivity level of the RAK Hotspot Miner.
 
-| **Signal Bandwidtth (Khz)** | **Spreading Factor** | **Sensitivity (dBm)** |
-| :-------------------------: | :------------------: | :-------------------: |
-|             125             |          12          |         -139          |
-|             125             |          7           |         -125          |
-|             250             |          12          |         -136          |
-|             250             |          7           |         -123          |
-|             500             |          12          |         -134          |
-|             500             |          7           |         -120          |
+| **Signal Bandwidth (Khz)** | **Spreading Factor** | **Sensitivity (dBm)** |
+| :------------------------: | :------------------: | :-------------------: |
+|            125             |          12          |         -139          |
+|            125             |          7           |         -125          |
+|            250             |          12          |         -136          |
+|            250             |          7           |         -123          |
+|            500             |          12          |         -134          |
+|            500             |          7           |         -120          |
 
 #### Antenna Specifications
 

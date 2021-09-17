@@ -100,7 +100,7 @@ The WisGate Developer Base supports the LoRaWAN bands in the table below.
 | Korea         | KR920               |
 | Asia          | AS923               |
 
-##### LoRa RF Charactertistics
+##### LoRa RF Characteristics
 
 It is highly recommended to use optimized RSSI calibration values, which is part of the HAL v3.1. For both, Radio 1 and 2, the RSSI-Offset should be set -169.0. The following table gives the typical sensitivity level of the RAK2287 and RAK5146.
 

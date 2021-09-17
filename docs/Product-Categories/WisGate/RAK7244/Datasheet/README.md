@@ -31,7 +31,7 @@ There is a total of 3 configuration options:
 2. **RAK7244C** - this is the Cellular Version that includes the Raspberry Pi 4, RAK2245, and the RAK2013 Cellular Pi Hat
 3. **RAK7244P** - · this version allows for powering the gateway via PoE by adding the RAK9003 Pi HAT to the base configuration (RPi 4 + RAK2245 + RAK9003)
 
-The built-in RAK2245 Pi HAT uses the SX1301 RF front-end chip from Semtech®, which is a powerful LoRa digital processing engine. It is able to receive up to 8 LoRa packets simultaneously sent with different spreading factors on different channels and available in multiple variants so it can be used for all LoRa Allience® frequency bands. This unique capability allows for innovative network architectures to be implemented, that are advantageous over other short-range systems. The built-in RAK2013 Cellular Pi HAT in the RAK7244C, is based on the EG95 from Quectel, which is an LTE CAT4 module optimized specifically for M2M and IoT Applications. The RAK7244P is particularly suitable for deployment in cases where there is existing networking infrastructure and PoE is provisioned.
+The built-in RAK2245 Pi HAT uses the SX1301 RF front-end chip from Semtech®, which is a powerful LoRa digital processing engine. It is able to receive up to 8 LoRa packets simultaneously sent with different spreading factors on different channels and available in multiple variants so it can be used for all LoRa Alliance® frequency bands. This unique capability allows for innovative network architectures to be implemented, that are advantageous over other short-range systems. The built-in RAK2013 Cellular Pi HAT in the RAK7244C, is based on the EG95 from Quectel, which is an LTE CAT4 module optimized specifically for M2M and IoT Applications. The RAK7244P is particularly suitable for deployment in cases where there is existing networking infrastructure and PoE is provisioned.
 
 The RAK7244 WisGate Developer D4 Gateway is ideal for prototyping, proof-of-concept demonstrations or for the evaluation on future deployment scenarios. It includes a ready to use Firmware based on Raspbian OS, that makes it possible to connect the Gateway to any standard LoRaWAN Server. It is developer friendly as the large Raspbian OS community is a well-established one. It is especially suited to addressing a variety of applications like Smart Grids, Intelligent Farms and other IoT Enterprise applications.
 
@@ -233,14 +233,14 @@ T = 25℃ at VDD = 5V (Typ.) as default if nothing else stated.
 
 It is highly recommended, to use optimized RSSI calibration values, which is part of the HAL v3.1. For both, Radio 1 and 2, the RSSI-Offset should be set to -169.0. The following table gives typically sensitivity level of the RAK2245.
 
-| **Signal Bandwidtth (Khz)** | **Spreading Factor** | **Sensitivity (dBm)** |
-| --------------------------- | -------------------- | --------------------- |
-| 125                         | 12                   | -139                  |
-| 125                         | 7                    | -126                  |
-| 250                         | 12                   | -136                  |
-| 250                         | 7                    | -123                  |
-| 500                         | 12                   | -134                  |
-| 500                         | 7                    | -120                  |
+| **Signal Bandwidth (Khz)** | **Spreading Factor** | **Sensitivity (dBm)** |
+| -------------------------- | -------------------- | --------------------- |
+| 125                        | 12                   | -139                  |
+| 125                        | 7                    | -126                  |
+| 250                        | 12                   | -136                  |
+| 250                        | 7                    | -123                  |
+| 500                        | 12                   | -134                  |
+| 500                        | 7                    | -120                  |
 
 ##### Cellular
 

@@ -347,7 +347,7 @@ As shown above, there are 2 operators available: **Vivacom BG** and **Telenor**.
 
 **AT+COPS=1,2,"28403",0**
 
-Selects the network with the numeric identificatory of 28403 (easier to enter than a name). The parameters are as follows:
+Selects the network with the numeric identification of 28403 (easier to enter than a name). The parameters are as follows:
 
 - **1** - for Manual selection
 - **2** - for numeric GSM area location identification number 

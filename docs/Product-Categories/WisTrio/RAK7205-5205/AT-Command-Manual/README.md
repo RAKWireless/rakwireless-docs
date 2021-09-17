@@ -874,9 +874,9 @@ OK
 
 This commands is used to enable multicasting.  
 
-| Operation | Command                                         | Respo |
-| --------- | ----------------------------------------------- | ----- |
-| Write     | `at+set_config=lora:multicastenable:<IsEnable>` | `OK ` |
+| Operation | Command                                         | Response |
+| --------- | ----------------------------------------------- | -------- |
+| Write     | `at+set_config=lora:multicastenable:<IsEnable>` | `OK `    |
 
 <br>
 
@@ -1416,7 +1416,7 @@ This command is used to set the relevant parameters of LoRAP2p mode and is only 
             <td>0:  125&nbsp;KHz<br>1:  250&nbsp;KHz<br>2:  500&nbsp;KHz<br><br>The default is 0.</td>
         </tr>
         <tr>
-            <td>codeingrate</td>
+            <td>codingrate</td>
             <td>1:  4/5<br>2:  4/6<br>3:  4/7<br>4:  4/8<br><br>The default is 1.</td>
         </tr>
         <tr>
@@ -1533,7 +1533,7 @@ OK
 
 2. <b> ` at+set_config=device:gps_format:<accuracy>`</b>
 
-This command is used to configurate the GPS payload format.
+This command is used to configure the GPS payload format.
 
 | Operation | Command                                      | Response |
 | --------- | -------------------------------------------- | -------- |

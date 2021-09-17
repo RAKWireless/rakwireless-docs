@@ -17,7 +17,7 @@ Thank you for choosing **860-930MHz 12dBi Directional Antenna** in your awesome 
 
 ## Product Description
 
-RAKARP01 is a shigh-gain directional antenna is the latest in the RAKwireless LPWAN accessories portfolio. It is specifically useful in scenarios where directional signal reception is necessary, allowing for precise pointing to the field of your main signals, reducing the SNR. The high gain allows for a better reception from high-distance devices. Easy to mount with the included mounting kit.
+RAKARP01 is a high-gain directional antenna is the latest in the RAKwireless LPWAN accessories portfolio. It is specifically useful in scenarios where directional signal reception is necessary, allowing for precise pointing to the field of your main signals, reducing the SNR. The high gain allows for a better reception from high-distance devices. Easy to mount with the included mounting kit.
 
 ## Product Features
 

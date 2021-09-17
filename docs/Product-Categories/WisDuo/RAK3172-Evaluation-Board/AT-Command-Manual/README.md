@@ -430,7 +430,7 @@ This command is used to send LoRaWAN® payload on specific port.
 | Command                     | Input Parameter      | Return Value                                         | Return Code                                                        |
 | --------------------------- | -------------------- | ---------------------------------------------------- | ------------------------------------------------------------------ |
 | `AT+SEND?`                  | -                    | `AT+SEND`: Send data along with the application port | `OK`                                                               |
-| `AT+SEND=<Input Parameter>` | **port**:**payload** | -                                                    | `OK`, `AT_NO_NETOWRK_JOINED`, `AT_PARAM_ERROR`, or `AT_BUSY_ERROR` |
+| `AT+SEND=<Input Parameter>` | **port**:**payload** | -                                                    | `OK`, `AT_NO_NETWORK_JOINED`, `AT_PARAM_ERROR`, or `AT_BUSY_ERROR` |
 
 6.  <b> `AT+CFS` </b>
 
@@ -1118,7 +1118,7 @@ OK
 
 Description: Remove multicast group
 
-This command is used to remove the configured multicat group.
+This command is used to remove the configured multicast group.
 
 | Command                        | Input Parameter | Return Value                         | Return Code |
 | ------------------------------ | --------------- | ------------------------------------ | ----------- |
@@ -1321,7 +1321,7 @@ By default, MaxEIRP is considered to be +14&nbsp;dBm.
 
 <b> AS923 </b>
 
-By default, Max EIRP isconsidered to be 16&nbsp;dBm.
+By default, Max EIRP is considered to be 16&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1662,5 +1662,5 @@ This section describes the output from USB of RAK3172-E that can occur at any po
 |                            |                     | Y0 = represent link status (1: links success, 2: link fail)                                      |
 |                            |                     | Y1 = represent the DemodMargin                                                                   |
 |                            |                     | Y2 = represent the NbGateways                                                                    |
-|                            |                     | Y3 = represent the RSSI of the command’s dowmload                                                |
+|                            |                     | Y3 = represent the RSSI of the command’s download                                                |
 |                            |                     | Y4 = represent the SNR of the command’s download                                                 |

@@ -98,7 +98,7 @@ The figure below summarizes the basic building blocks of the RAK Hotspot Miner. 
 
 #### Block Diagram
 
-The RAK Hotspot Miner is the central hardware solution for all LoRa based radio communication. It receives and transmits radio messages. The processing of radio messages as well as the protocol related tasks is done by the embedded host system (Raspberry Pi 4). Received and processed radio messages are being sent to a LoRaWAN server. The following fgure shows the block diagram of the RAK Hotspot Miner.
+The RAK Hotspot Miner is the central hardware solution for all LoRa based radio communication. It receives and transmits radio messages. The processing of radio messages as well as the protocol related tasks is done by the embedded host system (Raspberry Pi 4). Received and processed radio messages are being sent to a LoRaWAN server. The following figure shows the block diagram of the RAK Hotspot Miner.
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot-miner/datasheet/block-diagram.png"
@@ -188,14 +188,14 @@ T=25℃, VDD=5V (Typ.) if nothing else is stated.
 
 It is highly recommended, to use optimized RSSI calibration values, which is part of the HAL v3.l. For both, Radio 1 and 2, the RSSI-Offset should be set -169.0. The following table gives the typical sensitivity level of the RAK Hotspot Miner.
 
-| **Signal Bandwidtth (Khz)** | **Spreading Factor** | **Sensitivity (dBm)** |
-| :-------------------------: | :------------------: | :-------------------: |
-|             125             |          12          |         -139          |
-|             125             |          7           |         -125          |
-|             250             |          12          |         -136          |
-|             250             |          7           |         -123          |
-|             500             |          12          |         -134          |
-|             500             |          7           |         -120          |
+| **Signal Bandwidth (Khz)** | **Spreading Factor** | **Sensitivity (dBm)** |
+| :------------------------: | :------------------: | :-------------------: |
+|            125             |          12          |         -139          |
+|            125             |          7           |         -125          |
+|            250             |          12          |         -136          |
+|            250             |          7           |         -123          |
+|            500             |          12          |         -134          |
+|            500             |          7           |         -120          |
 
 #### Antenna Specifications
 

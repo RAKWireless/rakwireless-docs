@@ -441,7 +441,7 @@ Application/{{application_ID}}/device/{{device_EUI}}/status
   caption="MQTT.fx Client"
 />
 
-3. On the next window, input the **Broker Adress** and **Broker Port**. If the Client ID is empty press **Generate**. Then click **OK**.
+3. On the next window, input the **Broker Address** and **Broker Port**. If the Client ID is empty press **Generate**. Then click **OK**.
 
 - **Broken Address**: Address of MQTT server – the gateway IP. 
 - **Broker Port**: Consistent with MQTT Broker Port set by the gateway - by default 1883.
@@ -928,7 +928,7 @@ Application/1/device/60c5a8fffe75404b/tx
 
 ```sh
 {
-"comfirmed":true, 
+"confirmed":true, 
 "fPort":129,
 "data":"070001000601050103010"
 }
@@ -983,7 +983,7 @@ Application/1/device/60c5a8fffe75404b/tx
 
 ```sh
 {
-"comfirmed":true, 
+"confirmed":true, 
 "fPort":129, 
 "data":"1D00010000"
 }
@@ -1061,7 +1061,7 @@ Application/1/device/60c5a8fffe75404b/tx
 
 ```sh
 {
-"comfirmed":true, 
+"confirmed":true, 
 "fPort":129, 
 "data":"0800010000"
 }
@@ -1163,7 +1163,7 @@ Application/1/device/60c5a8fffe75404b/tx
 
 ```sh
 {
-"comfirmed":true, 
+"confirmed":true, 
 "fPort":129,
 "data":"09000100080100000E10010050"
 }
@@ -1218,7 +1218,7 @@ Application/1/device/60c5a8fffe75404b/tx
 
 ```sh
 {
-"comfirmed":true,
+"confirmed":true,
 "fPort":129,
 "data":"1E00010000"
 }

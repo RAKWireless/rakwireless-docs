@@ -97,7 +97,7 @@ For flashing the firmware, refer to the [Flash the Firmware Using DAPLink and RA
   
 The RF pins of the RAK4600 Evaluation Board are connected to external antennas through a standard iPEX antenna connector. 
 
-Use Figures 5 and 6 as a reference to indentify the antennas.
+Use Figures 5 and 6 as a reference to identify the antennas.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/3.interfacing/ble-antenna.png"
@@ -316,7 +316,7 @@ UART serial pins on J10 are only useable as UART by developing custom FW that us
 | 2              | GND          | Ground                                                                                         |                         |
 | 3              | SPI_CS       | SPI Chip Select Pin                                                                            | Not connected           |
 | 4              | SPI_CLK      | SPI Clock Pin                                                                                  | Not Connected           |
-| 5              | SPI_MISO     | SPI MISO signal                                                                                | Not connectd            |
+| 5              | SPI_MISO     | SPI MISO signal                                                                                | Not connected            |
 | 6              | SPI_MOSI     | SPI MOSI signal                                                                                | Not connected           |
 | 7              | I2C1_SCL     | I2C clock pin                                                                                  | P0.12                   |
 | 8              | I2C1_SDA     | I2C data  pin                                                                                  | P0.13                   |

@@ -152,7 +152,7 @@ If the OS of your PC is Linux, you should do the same as the Mac OS, except the 
 
 ### Accessing the Internet
 
-Assumings you have successfully logged into your Gateway using SSH. Enter the following command in the command line:
+Assuming you have successfully logged into your Gateway using SSH. Enter the following command in the command line:
 
 ```sh
 sudo gateway-config
@@ -425,7 +425,7 @@ These configurations under this section are only optional and situational.
 
 ##### Reverting to Wi-Fi AP Mode
 
-In the event that you have entered either or both icorrect Wi-Fi SSID and Password in the Wi-Fi Client Mode setup for the RAK7244C WisGate Developer D4+ Gateway to connect to the router, follow these set of steps for you to work again in Wi-Fi AP Mode and redo the setup.
+In the event that you have entered either or both incorrect Wi-Fi SSID and Password in the Wi-Fi Client Mode setup for the RAK7244C WisGate Developer D4+ Gateway to connect to the router, follow these set of steps for you to work again in Wi-Fi AP Mode and redo the setup.
 
 - Remove the SD Card from your RAK7244C WisGate Developer D4+ Gateway and insert it into your PC. Your PC should be able to detect it same with the image below:
 

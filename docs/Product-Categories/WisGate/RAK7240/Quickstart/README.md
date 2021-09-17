@@ -53,7 +53,7 @@ There are two options for installing the RAK7240 WisGate Edge Prime Gateway:
 <rk-img
   src="/assets/images/wisgate/rak7240/quickstart/installation/2.png"
   width="50%"
-  caption="Fixing the Instalation Kit to the RAK7240"
+  caption="Fixing the Installation Kit to the RAK7240"
 />
 
 2. Slide the steel band clamps through the rectangular hole of the installation kit. Wrap the band clamps around the pole, lock them, and then tighten the clamps using a screwdriver.
@@ -71,7 +71,7 @@ There are two options for installing the RAK7240 WisGate Edge Prime Gateway:
 <rk-img
   src="/assets/images/wisgate/rak7240/quickstart/installation/4.png"
   width="50%"
-  caption="RAK7240 wall mounting dimentions"
+  caption="RAK7240 wall mounting dimensions"
 />
 
 2. Using the tapping screws, attach the device to the wall.

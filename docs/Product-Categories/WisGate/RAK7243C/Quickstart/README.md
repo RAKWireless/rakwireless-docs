@@ -424,7 +424,7 @@ These configurations under this section are only optional and situational.
 
 ##### Reverting to Wi-Fi AP Mode
 
-In the event that you have entered either or both icorrect Wi-Fi SSID and Password in the Wi-Fi Client Mode setup for the RAK7243C WisGate Developer D3+ Gateway to connect to the router, follow these set of steps for you to work again in Wi-Fi AP Mode and redo the setup.
+In the event that you have entered either or both incorrect Wi-Fi SSID and Password in the Wi-Fi Client Mode setup for the RAK7243C WisGate Developer D3+ Gateway to connect to the router, follow these set of steps for you to work again in Wi-Fi AP Mode and redo the setup.
 
 - Remove the SD Card from your RAK7243C WisGate Developer D3+ Gateway and insert it into your PC. Your PC should be able to detect it same with the image below:
 
@@ -440,7 +440,7 @@ In the event that you have entered either or both icorrect Wi-Fi SSID and Passwo
 cd > rak_ap
 ```
 
-- Check if the rak_ap file is created succesffuly. If so, re-insert the SD Card into your RAK7243C WisGate Developer D3+ Gateway and it should work again in Wi-Fi AP Mode.
+- Check if the rak_ap file is created successfully. If so, re-insert the SD Card into your RAK7243C WisGate Developer D3+ Gateway and it should work again in Wi-Fi AP Mode.
 
 
 
@@ -572,7 +572,7 @@ First, select option 1 for configuring your Regional Frequency Band
   caption="Regional Frequency Band Option"
 />
 
-Then, set the IP address of the ChirpStack which you want your Lgateway to work with:
+Then, set the IP address of the ChirpStack which you want your gateway to work with:
 
 <rk-img
   src="/assets/images/wisgate/rak7243c/quickstart/2.product-configuration/3.configure-gateway/12.cnm6bvyeuxzzj2uyoes0.png"

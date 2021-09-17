@@ -82,7 +82,7 @@ If this is your first time to connect your RAK7200 WisNode Track Lite to your co
   caption="Missing Driver for the RAK811 LPWAN Evaluation Board"
 />
 
-3. Under "**Other devices**" drop down list, right click the unknown **USB2.0-Serial** driver and choose "**Search automaticaly for updated driver software**". Again, before doing so, make sure to have an internet access or it will fail.
+3. Under "**Other devices**" drop down list, right click the unknown **USB2.0-Serial** driver and choose "**Search automatically for updated driver software**". Again, before doing so, make sure to have an internet access or it will fail.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/interfacing-with-rak7200/ejfeqklgjwmjjky5ewag.png"
@@ -1409,7 +1409,7 @@ By using the ABP mode in LoRaWAN protocol, it doesn’t require to join a networ
 
 :::
 
-Once the RAK7200 joined into a LoRaWAN network, it will start to send periodically the data collected from the GPS and other sensors. Then, go to the ChripStack platform to confirm that the messages ware properly received as shown in Figure 89.
+Once the RAK7200 joined into a LoRaWAN network, it will start to send periodically the data collected from the GPS and other sensors. Then, go to the ChirpStack platform to confirm that the messages ware properly received as shown in Figure 89.
 
 
 <rk-img
@@ -1484,7 +1484,7 @@ In this section, you will upgrade the firmware by using the **STM32CubeProgramme
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/upgrading-the-firmware/69.select-new-firmware.png"
   width="65%"
-  caption="STM32CubeProgrammer Select New Firmaware"
+  caption="STM32CubeProgrammer Select New Firmware"
 />
 
   -	Once the new firmware is loaded, its content is displayed in the tool in hexadecimal format. Now, As shown in Figure 96, press the “**Download**” button to start the burning process. Once finished, a pop-up message will appear.

@@ -971,7 +971,7 @@ This tutorial is for the EU868 Frequency band.
 <rk-img
   src="/assets/images/wisgate/rak7240/supported-lora-network-servers/ttnv3/2.console-page.png"
   width="100%"
-  caption="Console Page afer a successful login"
+  caption="Console Page after a successful login"
 />
 
 2. Fill in the needed information:
@@ -1095,7 +1095,7 @@ Authorization: YOUR_API_KEY
 ```
 
 :::tip 📝 NOTE:
-Replace **YOUR_API_KEY** with the key generated previously. Have in mind that there should be a “**space**” between **Autorization:** and **YOUR_API_KEY**, as shown in the example.
+Replace **YOUR_API_KEY** with the key generated previously. Have in mind that there should be a “**space**” between **Authorization:** and **YOUR_API_KEY**, as shown in the example.
 :::
 
 <rk-img

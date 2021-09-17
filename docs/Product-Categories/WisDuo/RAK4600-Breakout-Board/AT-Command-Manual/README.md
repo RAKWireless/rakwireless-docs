@@ -764,7 +764,7 @@ OK
 
 12. <b>at+set_config=lora:multicastenable:`<IsEnable>`</b>
 
-This command is used to enabe or disable the multicast feature.
+This command is used to enable or disable the multicast feature.
 
 | Operation | Command                                         | Response |
 | --------- | ----------------------------------------------- | -------- |

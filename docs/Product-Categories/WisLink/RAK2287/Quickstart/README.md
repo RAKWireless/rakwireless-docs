@@ -514,7 +514,7 @@ The Things Network is about enabling low power devices to use long range gateway
   caption="Registering your Gateway"
 />
 
-- **Gateway EUI** - refers to the Gatway ID you obtained from the previous step. In case you forgot, just type "**gateway-version**" in the command line. This must be the same with the  gateway's True Gateway ID otherwise you will fail to register your  gateway on TTN.
+- **Gateway EUI** - refers to the Gateway ID you obtained from the previous step. In case you forgot, just type "**gateway-version**" in the command line. This must be the same with the  gateway's True Gateway ID otherwise you will fail to register your  gateway on TTN.
 
 :::tip 📝 NOTE
 Make sure to select the "**I'm using the legacy packet forwarder**" check box.

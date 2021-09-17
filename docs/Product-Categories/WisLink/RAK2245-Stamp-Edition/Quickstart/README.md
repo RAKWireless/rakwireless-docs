@@ -164,7 +164,7 @@ You will now then see a page like the following picture below
 />
 
 1. **Set pi password** - used to set/change the password of the Gateway.
-2. **Set up RAK Gateway LoRa Concenterator** - used to configure the frequency, which the Gateway will operate on, and the LoRa Server which the Gateway will work with.
+2. **Set up RAK Gateway LoRa Concentrator** - used to configure the frequency, which the Gateway will operate on, and the LoRa Server which the Gateway will work with.
 3. **Edit packet-forwarder config-** used to open the global_conf.json file, in order to edit LoRaWAN parameters manually.
 4. **Restart packet -forwarder** - used to restart the LoRa packet forwarded process.
 5. **Configure Wifi** - used to configure the Wi-Fo settings in order to connect to a network.
@@ -177,7 +177,7 @@ If you want to connect through Wi-Fi, it can easily be done with the Wireless ca
 <rk-img
   src="/assets/images/wislink-lora/rak2245-stamp-edition/quickstart/accessing-the-internet/jauv1w36nhok85pnq0vk.png"
   width="100%"
-  caption="Configuration options for WIFII"
+  caption="Configuration options for Wi-Fi"
 />
 
 There are 5 options to choose from in the Wi-Fi configuration menu:
@@ -259,7 +259,7 @@ These configurations under this section are only optional and situational.
 
 ##### Reverting to Wi-Fi AP Mode
 
-In the event that you have entered either or both icorrect Wi-Fi SSID and Password in the Wi-Fi Client Mode setup for the RAK2245 Stamp WisLink LPWAN Concentrator to connect to the router, follow these set of steps for you to work again in Wi-Fi AP Mode and redo the setup.
+In the event that you have entered either or both incorrect Wi-Fi SSID and Password in the Wi-Fi Client Mode setup for the RAK2245 Stamp WisLink LPWAN Concentrator to connect to the router, follow these set of steps for you to work again in Wi-Fi AP Mode and redo the setup.
 
 - Remove the SD Card from your RAK2245 Stamp WisLink LPWAN Concentrator and insert it into your PC. Your PC should be able to detect it same with the image below:
 
@@ -275,7 +275,7 @@ In the event that you have entered either or both icorrect Wi-Fi SSID and Passwo
 cd > rak_ap
 ```
 
-- Check if the rak_ap file is created succesffuly. If so, re-insert the SD Card into your RAK2245 Stamp WisLink LPWAN Concentrator and it should work again in Wi-Fi AP Mode.
+- Check if the rak_ap file is created successfully. If so, re-insert the SD Card into your RAK2245 Stamp WisLink LPWAN Concentrator and it should work again in Wi-Fi AP Mode.
 
 
 
@@ -297,7 +297,7 @@ You will now then see a page like the following picture below
 />
 
 1. **Set pi password** - used to set/change the password of the Gateway.
-2. **Set up RAK Gateway LoRa Concenterator** - used to configure the frequency, which the Gateway will operate on, and the LoRa Server which the Gateway will work with.
+2. **Set up RAK Gateway LoRa Concentrator** - used to configure the frequency, which the Gateway will operate on, and the LoRa Server which the Gateway will work with.
 3. **Edit packet-forwarder config-** used to open the global_conf.json file, in order to edit LoRaWAN parameters manually.
 4. **Restart packet -forwarder** - used to restart the LoRa packet forwarded process.
 5. **Configure Wifi** - used to configure the Wi-Fo settings in order to connect to a network.
@@ -458,7 +458,7 @@ The Things Network is about enabling low power devices to use long range [gatewa
   caption="Registering your Gateway"
 />
 
-- **Gateway EUI** - refers to the Gatway ID you obtained from the previous steps. In case you forgot, just type "**gateway-version**" in the command line. This must be the same with the Gateway's True Gateway ID otherwise you will fail to register your Gateway on TTN.
+- **Gateway EUI** - refers to the Gateway ID you obtained from the previous steps. In case you forgot, just type "**gateway-version**" in the command line. This must be the same with the Gateway's True Gateway ID otherwise you will fail to register your Gateway on TTN.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2245-stamp-edition/quickstart/connection-to-ttn/tdvxaiqw3kzn13hawchq.png"

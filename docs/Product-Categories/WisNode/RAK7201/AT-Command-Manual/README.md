@@ -151,7 +151,7 @@ at+help
 at+set_config=device:restart
 at+get_config=device:status
 at+heartbeat=<interval>
-at+button=<buttton>:<port>:<data>
+at+button=<button>:<port>:<data>
 LoRaWAM AT commands:
 at+join
 at+send=lora:<port>:<data>
@@ -236,13 +236,13 @@ at+heartbeat=1
 OK
 ```
 
-### at+button=\<buttton\>:\<port\>:\<data\>
+### at+button=\<button\>:\<port\>:\<data\>
 
 This command is used to configure every button frame port and data.
 
 | **Command type** | **Command**                         | **Response** |
 | ---------------- | ----------------------------------- | ------------ |
-| Other            | `at+button=<buttton>:<port>:<data>` | `OK`         |
+| Other            | `at+button=<button>:<port>:<data>` | `OK`         |
 
 Parameter：
 

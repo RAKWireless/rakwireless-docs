@@ -43,6 +43,6 @@ The RAK7258 WisGate Edge Lite package includes a LoRa antenna, mounting screws, 
 - Multi back-haul backup with Ethernet, WiFi, Cellular (optional LTE Cat 4)
 - OpenWRT software supports with Web UI for easy configuration and monitoring
 - Can integrate with both private(Chirpstack) and public (TTN) Network Servers
-- Built-in LoRaServer for easey deployment of applications and integration of Gateways
+- Built-in LoRaServer for easy deployment of applications and integration of Gateways
 - TF card for log backup
 

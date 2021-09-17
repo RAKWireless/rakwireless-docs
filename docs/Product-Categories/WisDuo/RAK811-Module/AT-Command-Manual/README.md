@@ -1375,7 +1375,7 @@ This command is used for setting the relevant parameters of LoRAP2p mode and is 
             <td>0:  125&nbsp;kHz<br>1:  250&nbsp;kHz<br>2:  500&nbsp;kHz<br><br>The default is 0.</td>
         </tr>
         <tr>
-            <td>codeingrate</td>
+            <td>codingrate</td>
             <td>1:  4/5<br>2:  4/6<br>3:  4/7<br>4:  4/8<br><br>The default is 1.</td>
         </tr>
         <tr>
@@ -1621,7 +1621,7 @@ By default, MaxEIRP is considered to be +14&nbsp;dBm.
 
 <b> AS923 </b>
 
-By default, Max EIRP isconsidered to be 16&nbsp;dBm.
+By default, Max EIRP is considered to be 16&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1918,7 +1918,7 @@ M in the following list is the length with MAC header, N is the maximum usable p
 
 ## Appendix IV: Pin Description of RAK811
 
-The pin definition of the RAK811 module can be reviewed in the [Pin Definition](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#pin-definition) section of the Datasheets.
+The pin definition of the RAK811 module can be reviewed in the [Pin Definition](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#pin-definition) section of the Datasheet.
 
 
 Listed are the summary of the pins of the RAK811 module:

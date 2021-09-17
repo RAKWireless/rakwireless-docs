@@ -31,7 +31,7 @@ The enclosure is made of transparent acrylic material and has an open design. It
 
 ## WisBlock module support
 
-The enclosure is compatibel with the following WisBlock modules:
+The enclosure is compatible with the following WisBlock modules:
 
 - WisBase RAK5005-O
 - WisCore RAK4631

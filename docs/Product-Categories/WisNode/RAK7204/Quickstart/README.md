@@ -566,7 +566,7 @@ at+send=lora:1:12345678
 If you get a response in your TTN live data feed as in the figure below, than you are all set!
 
 :::tip 📝 NOTE:
-Be sure to have this window opened prior to sending data through the RAK Serial Port or you will not be able to receive the packet sent. Logging out your The Things Network acccount would also clear all the data sent and not being able to receive packets sent.
+Be sure to have this window opened prior to sending data through the RAK Serial Port or you will not be able to receive the packet sent. Logging out your The Things Network account would also clear all the data sent and not being able to receive packets sent.
 :::
 
 <rk-img

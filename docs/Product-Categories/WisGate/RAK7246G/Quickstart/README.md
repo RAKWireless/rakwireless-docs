@@ -394,7 +394,7 @@ The Things Network is about enabling low power devices to use long range gateway
   caption="Registering your Gateway"
 />
 
-* **Gateway EUI** - refers to the Gatway ID you obtained from the previous steps. In case you forgot, just type `gateway-version` in the command line. This must be the same with the Gateway's True Gateway ID otherwise you will fail to register your Gateway on TTN.
+* **Gateway EUI** - refers to the Gateway ID you obtained from the previous steps. In case you forgot, just type `gateway-version` in the command line. This must be the same with the Gateway's True Gateway ID otherwise you will fail to register your Gateway on TTN.
 
 <rk-img
   src="/assets/images/wisgate/rak7246g/quickstart/gateway_id.png"
@@ -510,7 +510,7 @@ src="/assets/images/wisgate/rak7246g/quickstart/resiot_signup.png"
 width="100%"
 caption="ResIOT Sign-up Page"/>
 
-* After clicking the "**Sign up free**" button, a new window shows up in which you will fill in the necessary information to complete your registration. Afterwhich, click the "SIGN UP FREE" button at the bottom of the webpage.
+* After clicking the "**Sign up free**" button, a new window shows up in which you will fill in the necessary information to complete your registration. After which, click the "SIGN UP FREE" button at the bottom of the webpage.
 
 <rk-img 
 src="/assets/images/wisgate/rak7246g/quickstart/resiot_registration.png" 
@@ -558,7 +558,7 @@ width="100%"
 caption="Choosing IMST iC880a + Raspberry Pi for your RAK7246G WisGate Developer D0 Gateway"
 />
 
-* Afterwhich, a new page will show up asking you to fill in the necessary credentials.
+* After which, a new page will show up asking you to fill in the necessary credentials.
 
 <rk-img
 src="/assets/images/wisgate/rak7246g/quickstart/resiot_credentials_gateway.png"

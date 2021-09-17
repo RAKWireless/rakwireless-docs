@@ -1290,7 +1290,7 @@ This command is used to set the relevant parameters of LoRa P2P mode and is only
             <td>0:  125&nbsp;kHz<br>1:  250&nbsp;kHz<br>2:  500&nbsp;kHz<br><br>The default is 0.</td>
         </tr>
         <tr>
-            <td>codeingrate</td>
+            <td>codingrate</td>
             <td>1:  4/5<br>2:  4/6<br>3:  4/7<br>4:  4/8<br><br>The default is 1.</td>
         </tr>
         <tr>

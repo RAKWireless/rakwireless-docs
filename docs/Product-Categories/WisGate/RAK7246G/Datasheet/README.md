@@ -43,7 +43,7 @@ The RAK7246G is an ideal choice for prototype design, concept verification and d
 
 ### Overview
 
-The overview covers the RAK7246G board overview and the block diagram that shows how the componets operatate.
+The overview covers the RAK7246G board overview and the block diagram that shows how the components operate.
 
 #### Board Overview
 ##### Module Overview

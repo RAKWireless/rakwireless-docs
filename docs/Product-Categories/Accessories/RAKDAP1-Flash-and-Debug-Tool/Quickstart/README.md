@@ -64,7 +64,7 @@ pip --version
 <rk-img
   src="/assets/images/accessories/rakdap1-flash-and-debug-tool/3.versions.png"
   width="75%"
-  caption="Checking the Python and pip3 vesions"
+  caption="Checking the Python and pip3 versions"
 />
 
 :::tip 📝 NOTE  

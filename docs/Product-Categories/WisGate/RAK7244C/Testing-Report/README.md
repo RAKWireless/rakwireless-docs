@@ -52,7 +52,7 @@ tags:
 <rk-img
   src="/assets/images/wisgate/rak7244c/testing-report/3.png"
   width="50%"
-  caption="Enviromental test chamber"
+  caption="Environmental test chamber"
 />
 
 <rk-img
@@ -118,13 +118,13 @@ c. The LAN port and Wi-Fi work well.
 <rk-img
   src="/assets/images/wisgate/rak7244c/testing-report/6.png"
   width="75%"
-  caption="Send and recieve LoRa packets at -40º C"
+  caption="Send and receive LoRa packets at -40º C"
 />
 
 <rk-img
   src="/assets/images/wisgate/rak7244c/testing-report/7.png"
   width="75%"
-  caption="Send and recieve packets at 85º C"
+  caption="Send and receive packets at 85º C"
 />
 
 <rk-img

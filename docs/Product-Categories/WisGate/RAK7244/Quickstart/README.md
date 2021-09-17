@@ -265,7 +265,7 @@ These configurations under this section are only optional and situational.
 
 ##### Reverting to Wi-Fi AP Mode
 
-In the event that you have entered either or both icorrect Wi-Fi SSID and Password in the Wi-Fi Client Mode setup for the RAK7244 WisGate Developer D4 Gateway to connect to the router, follow these set of steps for you to work again in Wi-Fi AP Mode and redo the setup.
+In the event that you have entered either or both incorrect Wi-Fi SSID and Password in the Wi-Fi Client Mode setup for the RAK7244 WisGate Developer D4 Gateway to connect to the router, follow these set of steps for you to work again in Wi-Fi AP Mode and redo the setup.
 
 - Remove the SD Card from your RAK7244 WisGate Developer D4 Gateway and insert it into your PC. Your PC should be able to detect it same with the image below:
 
@@ -281,7 +281,7 @@ In the event that you have entered either or both icorrect Wi-Fi SSID and Passwo
 cd > rak_ap
 ```
 
-- Check if the rak_ap file is created succesffuly. If so, re-insert the SD Card into your RAK7244 WisGate Developer D4 Gateway and it should work again in Wi-Fi AP Mode.
+- Check if the rak_ap file is created successfully. If so, re-insert the SD Card into your RAK7244 WisGate Developer D4 Gateway and it should work again in Wi-Fi AP Mode.
 
 
 ### Configuring the Gateway
@@ -398,7 +398,7 @@ After choosing the correct frequency, the success message will appear as shown b
 * **ChirpStack Channel Plan Configuration** - used to configure your Regional Frequency Band.
 * **ChirpStack ADR Configure** - used to enable/disable the Adaptive Data Rate (ADR) functionality.
 
-First, select "**1 ChirpStack Channel-plan configuration**" for configuring your frequency channel. Then, set the IP address of the ChripStack.
+First, select "**1 ChirpStack Channel-plan configuration**" for configuring your frequency channel. Then, set the IP address of the ChirpStack.
 
 <rk-img
   src="/assets/images/wisgate/rak7244/quickstart/6.configure the gateway/chirpstack_channel.png"
@@ -461,7 +461,7 @@ The Things Network is about enabling low power devices to use long range gateway
   caption="Registering your Gateway"
 />
 
-* **Gateway EUI** - refers to the Gatway ID you obtained from the previous steps. In case you forgot, just type `gateway-version` in the command line. This must be the same with the Gateway's True Gateway ID otherwise you will fail to register your Gateway on TTN.
+* **Gateway EUI** - refers to the Gateway ID you obtained from the previous steps. In case you forgot, just type `gateway-version` in the command line. This must be the same with the Gateway's True Gateway ID otherwise you will fail to register your Gateway on TTN.
 
 <rk-img
   src="/assets/images/wisgate/rak7244/quickstart/7.connecting to ttn/gateway_id.png"

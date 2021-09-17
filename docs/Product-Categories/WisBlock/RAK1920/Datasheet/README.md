@@ -214,7 +214,7 @@ Table below shows the recommended operating conditions of the RAK1920 module.
 #### Schematic Diagram
 
 <rk-img
-  src="/assets/images/wisblock/rak1920/datasheet/schematic.png"
+  src="/assets/images/wisblock/rak1920/datasheet/schematic_new.png"
   width="100%"
   caption="Schematic Diagram"
 />
@@ -227,10 +227,15 @@ The following sections will describe the schematic of the RAK1920 module, which 
 
 ##### Power Supply
 
-The RAK1920 module supports 3.3&nbsp;V and 5&nbsp;V options, by default, the 3.3&nbsp;V is used as the power source of sensors. The module integrates a  boost converter from the VBAT to 5&nbsp;V. The VBAT is the battery output voltage, usually between 3.7&nbsp;V and 4.2&nbsp;V. The EN pin enables this boost converter and is controlled by the WisBlock Core module of the overall solution. 
+The RAK1920 module supports 5&nbsp;V option, by default, the 3.3&nbsp;V_S is used as the 3.3&nbsp;V power source of sensors. The module integrates a  boost converter from the VBAT to 5&nbsp;V. The VBAT is the battery output voltage, usually between 3.7&nbsp;V and 4.2&nbsp;V. The EN pin enables this boost converter and is controlled by the WisBlock Core module of the overall solution.
+
+:::warning ⚠️ WARNING    
+The 3V3_S has to be enable via WB_IO2 GPIO. Otherwise, the module will not work.
+:::
+
 
 <rk-img
-  src="/assets/images/wisblock/rak1920/datasheet/power-supply-ckt.jpg"
+  src="/assets/images/wisblock/rak1920/datasheet/power-supply-ckt-new.png"
   width="75%"
   caption="Power supply"
 />
@@ -238,7 +243,7 @@ The RAK1920 module supports 3.3&nbsp;V and 5&nbsp;V options, by default, the 3.3
 ##### IO Connector
 
 <rk-img
-  src="/assets/images/wisblock/rak1920/datasheet/wisio-connector-ckt.jpg"
+  src="/assets/images/wisblock/rak1920/datasheet/wisio-connector-ckt-new.png"
   width="75%"
   caption="IO Connector"
 />

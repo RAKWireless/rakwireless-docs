@@ -68,7 +68,7 @@ Connect the adapter to USB port of your Windows PC.
   caption="RAK4200 module connection"
 />
 
-2. Install a serial comunication tool. Any serial communication tool will work, but it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/).
+2. Install a serial communication tool. Any serial communication tool will work, but it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/).
 
 3. Open the RAK Serial Port Tool.
 
@@ -557,7 +557,7 @@ at+send=lora:2:1234567890
 
 ### Connecting with ChirpStack
 
-This section shows how to connect the RAK4200 module to the ChirpStack platform. As described in the ChripsStack’s website:
+This section shows how to connect the RAK4200 module to the ChirpStack platform. As described in the ChirpsStack’s website:
 
 “The ChirpStack open-source LoRaWAN Network Server stack provides open-source components for LoRaWAN networks. Together they form a ready-to-use solution including a user-friendly web-interface for device management and APIs for integration.
 
@@ -624,7 +624,7 @@ The **Application Description** field is just a descriptive text.
 <rk-img
   src="/assets/images/wisduo/rak4200-module/quickstart/filling-parameters.png"
   width="100%"
-  caption="Filling the Application Pparameters"
+  caption="Filling the Application Parameters"
 />
 
 #### Register a new device in the platform

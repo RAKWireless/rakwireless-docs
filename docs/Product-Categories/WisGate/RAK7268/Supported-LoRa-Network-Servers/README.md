@@ -1094,7 +1094,7 @@ Authorization: YOUR_API_KEY
 ```
 
 ::: tip 📝 NOTE
-Replace **YOUR_API_KEY** with the key generated previously. Have in mind that there should be a “space” between **Autorization:** and **YOUR_API_KEY**, as shown in the example.
+Replace **YOUR_API_KEY** with the key generated previously. Have in mind that there should be a “space” between **Authorization:** and **YOUR_API_KEY**, as shown in the example.
 :::
 
 <rk-img

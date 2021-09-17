@@ -55,7 +55,7 @@ After ensuring the correct wiring connection, you can now flash the bootloader u
 pyocd flash -t atsaml21j18a bootloader-bast-wan-v3.4.0.bin
 ```
 
-Once the command is executed, the bootloader should be flashed successfully. You can now connect the RAK3244 Bastwan to your PC.
+Once the command is executed, the bootloader should be flashed successfully. You can now connect the RAK3244 BastWan to your PC.
 
 ### Setting up the Things Network (TTN)
 

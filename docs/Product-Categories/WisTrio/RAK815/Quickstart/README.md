@@ -46,7 +46,7 @@ This device released by RAKwireless is already pre-loaded with its latest firmwa
 * 1-pc GPS Antenna
 * 1-pc LoRa Antenna
 * 1-pc Rod Antenna
-* 10-pcs Dupoint Lines
+* 10-pcs Dupont Lines
 * 5-pcs Jumping Caps
 * Battery Port Line
 
@@ -63,7 +63,7 @@ Before powering the RAK815 WisTrio LPWAN Tracker, you should install the LoRa an
 1. Using a standard **Micro - USB Cable**, connect your RAK815 WisTrio LPWAN Tracker to your computer.
 
 :::tip 📝 NOTE
-If this is your first time to connect your RAK815 WisTrio LPWAN Tracker to your computer, it should automatically download the USB - Serial Port Chip CP2102, in order for them to communicate propperly. Make sure to have an internet access if you want such automatic installation to be successful. If such process fails, re-plug your Micro - USB cord and proceed to the next step.
+If this is your first time to connect your RAK815 WisTrio LPWAN Tracker to your computer, it should automatically download the USB - Serial Port Chip CP2102, in order for them to communicate properly. Make sure to have an internet access if you want such automatic installation to be successful. If such process fails, re-plug your Micro - USB cord and proceed to the next step.
 :::
 
 2. Go to your **Device Manager** by pressing : **Windows + R** and type `devmgmt.msc` or **search in Start Menu** or right click "**My Computer**" or "**This PC**" and click **Manage**. Look for Other Devices.
@@ -74,7 +74,7 @@ If this is your first time to connect your RAK815 WisTrio LPWAN Tracker to your 
   caption="Missing Driver for the RAK815 WisTrio LPWAN Tracker"
 />
 
-3. Under "**Other devices**" drop down list, an unknown **USB2.0-Serial** driver must appear. Right click into it and choose "**Search automaticaly for updated driver software**". Again, before doing so, make sure to have an internet access or it will fail.
+3. Under "**Other devices**" drop down list, an unknown **USB2.0-Serial** driver must appear. Right click into it and choose "**Search automaticaLly for updated driver software**". Again, before doing so, make sure to have an internet access or it will fail.
 
 <rk-img
   src="/assets/images/wistrio/rak815/quickstart/3interfacing/automatic-install.png"

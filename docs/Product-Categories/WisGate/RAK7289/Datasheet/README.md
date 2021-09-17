@@ -96,7 +96,7 @@ The overview presents the block diagram for the RAK7289 that shows the internal 
         <tr><td>LTE: Internal antenna</td></tr>
         <tr><td>Wi-Fi: Internal antenna</td></tr>
         <tr><td>Ingress protection</td><td>IP67</td><tr>
-        <tr><td>Enclosure material</td><td>Aluminium and plastic</td></tr>
+        <tr><td>Enclosure material</td><td>Aluminum and plastic</td></tr>
         <tr><td>Operating temperature</td><td>-30 ˚C to +55 ˚C</td></tr>
         <tr><td>Installation method</td><td>Pole or wall mounting</td></tr>
     </tbody>

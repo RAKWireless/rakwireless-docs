@@ -270,7 +270,7 @@ These configurations under this section are only optional and situational.
 
 ##### Reverting to Wi-Fi AP Mode
 
-In the event that you have entered either or both icorrect Wi-Fi SSID and Password in the Wi-Fi Client Mode setup for the RAK2245 Pi HAT Edition LPWAN Gateway Concentrator Module to connect to the router, follow these set of steps for you to work again in Wi-Fi AP Mode and redo the setup.
+In the event that you have entered either or both incorrect Wi-Fi SSID and Password in the Wi-Fi Client Mode setup for the RAK2245 Pi HAT Edition LPWAN Gateway Concentrator Module to connect to the router, follow these set of steps for you to work again in Wi-Fi AP Mode and redo the setup.
 
 - Remove the SD Card from your Raspberry Pi with the RAK2245 Pi HAT and insert it into your PC. Your PC should be able to detect it same with the image below:
 
@@ -286,7 +286,7 @@ In the event that you have entered either or both icorrect Wi-Fi SSID and Passwo
 cd > rak_ap
 ```
 
-- Check if the rak_ap file is created succesffuly. If so, re-insert the SD Card into your Raspberry Pi with the RAK2245 Pi HAT Edition LPWAN Gateway Concentrator Module and it should work again in Wi-Fi AP Mode.
+- Check if the rak_ap file is created successfully. If so, re-insert the SD Card into your Raspberry Pi with the RAK2245 Pi HAT Edition LPWAN Gateway Concentrator Module and it should work again in Wi-Fi AP Mode.
 
 
 ### Configuring the Gateway
@@ -403,7 +403,7 @@ After choosing the correct frequency, the success message will appear as shown b
 * **ChirpStack Channel Plan Configuration** - used to configure your Regional Frequency Band.
 * **ChirpStack ADR Configure** - used to enable/disable the Adaptive Data Rate (ADR) functionality.
 
-First, select "**1 ChirpStack Channel-plan configuration**" for configuring your frequency channel. Then, set the IP address of the ChripStack.
+First, select "**1 ChirpStack Channel-plan configuration**" for configuring your frequency channel. Then, set the IP address of the ChirpStack.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/6.configure-the-gateway/chirpstack_channel.png"
@@ -467,7 +467,7 @@ The Things Network is about enabling low power devices to use long range gateway
   caption="Registering your Gateway"
 />
 
-* **Gateway EUI** - refers to the Gatway ID you obtained from the previous steps. In case you forgot, just type `gateway-version` in the command line. This must be the same with the Gateway's True Gateway ID otherwise you will fail to register your Gateway on TTN.
+* **Gateway EUI** - refers to the Gateway ID you obtained from the previous steps. In case you forgot, just type `gateway-version` in the command line. This must be the same with the Gateway's True Gateway ID otherwise you will fail to register your Gateway on TTN.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/7.connecting-to-ttn/gateway_id.png"
@@ -509,7 +509,7 @@ There is a built-in ChirpStack in every RAK Developer gateway if you use the lat
 <rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/8.connecting-to-chirpstack/advanced-ip-scanner.png"
   width="100%"
-  caption="IP address of your Raspbery Pi with the RAK2245 Pi Hat using IP Scanner"
+  caption="IP address of your Raspberry Pi with the RAK2245 Pi Hat using IP Scanner"
 />
 
 * There is a Web-based UI that comes with the ChirpStack instance. Simply open a browser and enter the following credentials:

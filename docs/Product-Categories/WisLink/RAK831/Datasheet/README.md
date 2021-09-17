@@ -449,7 +449,7 @@ The RF switch choose RFSW1 01 2 which has advantage of high Isolation and low in
 | -------- | ------------ | ---------- | ----- | -------- |
 | 1        | 2.7V to 4.6V | VHIGH      | VHIGH | ANT-RF2  |
 | 2        | 2.7V to 4.6V | VLOW       | VHIGH | ANT-RF1  |
-| Shutdown | 2.7V to 4.6V | Dont' Care | VLOW  | Shutdown |
+| Shutdown | 2.7V to 4.6V | Don't Care | VLOW  | Shutdown |
 
 <rk-img
   src="/assets/images/wislink-lora/rak831/datasheet/rf-switch-schematic.png"
@@ -459,7 +459,7 @@ The RF switch choose RFSW1 01 2 which has advantage of high Isolation and low in
 
 #### Electrical Characteristics
 
-Listed in this document are the differenct electrical characteristics of RAK831 WisLink LPWAN Concentrator.
+Listed in this document are the different electrical characteristics of RAK831 WisLink LPWAN Concentrator.
 
 ::: warning ⚠️ WARNING
 Stress exceeding of one or more of the limiting values listed under **Absolute Maximum Ratings** may cause permanent damage to the radio module.
@@ -471,7 +471,7 @@ Stress exceeding of one or more of the limiting values listed under **Absolute M
 | --------------------- | --------- | ---- | ---- | --- | ---- |
 | Supply Voltage(VDD)   |           | -0.3 | 5.0  | 5.5 | V    |
 | Operating Temperature |           | -40  |      | +85 | ℃    |
-| RF Iuput Power        |           |      |      | -15 | dBm  |
+| RF Input Power        |           |      |      | -15 | dBm  |
 
 ::: warning ⚠️ WARNING
 With RF output power level above +15 dBm, a minimum distance to a transmitter should be 1 meter to avoid too large input level.

@@ -260,7 +260,7 @@ sudo reboot
 These configurations under this section are only optional and situational.
 
 ##### Reverting to Wi-Fi AP Mode
-In the event that you have entered either or both icorrect Wi-Fi SSID and Password in the Wi-Fi Client Mode setup for the RAK7243 Developer to connect to the router, follow these set of steps for you to work again in Wi-Fi AP Mode and redo the setup.
+In the event that you have entered either or both incorrect Wi-Fi SSID and Password in the Wi-Fi Client Mode setup for the RAK7243 Developer to connect to the router, follow these set of steps for you to work again in Wi-Fi AP Mode and redo the setup.
 
 * Remove the SD Card from your RAK7243 Developer and insert it into your PC. Your PC should be able to detect it same with the image below:
 
@@ -276,7 +276,7 @@ In the event that you have entered either or both icorrect Wi-Fi SSID and Passwo
 cd > rak_ap
 ```
 
-* Check if the rak_ap file is created succesffuly. If so, re-insert the SD Card into your RAK7243 Developer and it should work again in Wi-Fi AP Mode.
+* Check if the rak_ap file is created successfully. If so, re-insert the SD Card into your RAK7243 Developer and it should work again in Wi-Fi AP Mode.
 
 
 ### Configure the Gateway
@@ -393,7 +393,7 @@ After choosing the correct frequency, the success message will appear as shown b
 * **ChirpStack Channel Plan Configuration** - used to configure your Regional Frequency Band.
 * **ChirpStack ADR Configure** - used to enable/disable the Adaptive Data Rate (ADR) functionality.
 
-First, select "**1 ChirpStack Channel-plan configuration**" for configuring your frequency channel. Then, set the IP address of the ChripStack.
+First, select "**1 ChirpStack Channel-plan configuration**" for configuring your frequency channel. Then, set the IP address of the ChirpStack.
 
 <rk-img
   src="/assets/images/wisgate/rak7243/quickstart/6.configure the gateway/chirpstack_channel.png"
@@ -422,7 +422,7 @@ First, select "**1 ChirpStack Channel-plan configuration**" for configuring your
 
 ### Connecting to the Things Network (TTN)
 
-The Things Network is about enabling low power devices to use long range gateways to connect to an open-source, decentralized network to exchange data with Application. Learn more about the Things Network throught their [documentation](https://www.thethingsnetwork.org/docs/).
+The Things Network is about enabling low power devices to use long range gateways to connect to an open-source, decentralized network to exchange data with Application. Learn more about the Things Network through their [documentation](https://www.thethingsnetwork.org/docs/).
 
 * First, you should have connected your gateway into the internet through the router according to the method which has been introduced in the [Accessing the Internet](#accessing-the-internet) section.
 * Second, config your gateway and choose TTN as the LoRa Server and choose a correct frequency according to the method which has been introduced in the [Configuring the Gateway](/Product-Categories/WisGate/RAK7243/Quickstart/#configure-the-gateway) section.
@@ -456,7 +456,7 @@ The Things Network is about enabling low power devices to use long range gateway
   caption="Registering your Gateway"
 />
 
-* **Gateway EUI** - refers to the Gatway ID you obtained from the previous steps. In case you forgot, just type `gateway-version` in the command line. This must be the same with the gateway's True Gateway ID otherwise you will fail to register your gateway on TTN.
+* **Gateway EUI** - refers to the Gateway ID you obtained from the previous steps. In case you forgot, just type `gateway-version` in the command line. This must be the same with the gateway's True Gateway ID otherwise you will fail to register your gateway on TTN.
 
 <rk-img
   src="/assets/images/wisgate/rak7243/quickstart/7.connecting to ttn/gateway_id.png"

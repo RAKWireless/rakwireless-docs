@@ -41,7 +41,7 @@ RAKBox-B3 is an IP20 rated enclosure for indoor usage. It is designed specifical
 
 ## WisBlock Module Support
 
-The enclosure is compatibel with the following WisBlock modules:
+The enclosure is compatible with the following WisBlock modules:
 
 - WisBase RAK5005-O
 - WisCore RAK4631

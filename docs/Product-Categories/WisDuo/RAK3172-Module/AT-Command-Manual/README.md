@@ -332,7 +332,7 @@ AT_PARAM_ERROR
 
 ## Joining and Sending Data to LoRaWAN® network
 
-This section describes the commands related to the joining process of the device to the LoRaWAN® newtork.
+This section describes the commands related to the joining process of the device to the LoRaWAN® network.
 
 ### AT+NJM 
 
@@ -419,7 +419,7 @@ This command is used to send LoRaWAN® payload on specific port.
 | Command                     | Input Parameter      | Return Value                                        | Return Code                                                   |
 | --------------------------- | -------------------- | --------------------------------------------------- | ------------------------------------------------------------- |
 | AT+SEND?                    | -                    | AT+SEND: send  data along with the application port | OK                                                            |
-| AT+SEND=`<Input Parameter>` | **port**:**payload** | -                                                   | OK , AT_NO_NETOWRK_JOINED , AT_PARAM_ERROR *or* AT_BUSY_ERROR |
+| AT+SEND=`<Input Parameter>` | **port**:**payload** | -                                                   | OK , AT_NO_NETWORK_JOINED , AT_PARAM_ERROR *or* AT_BUSY_ERROR |
 
 ### AT+CFS 
 
@@ -887,7 +887,7 @@ This command is used to access and configure RF Tx hopping test.
 | Command                                               | Input Parameter | Return Value                                                                 | Return Code |
 | ----------------------------------------------------- | --------------- | ---------------------------------------------------------------------------- | ----------- |
 | AT+TTH?                                               | -               | `AT+TTH: Starts RF Tx hopping test from Fstart to Fstop, with Fdelta steps.` | `OK`        |
-| AT+TTH=*<` F start>, <Fstop>, <FDelta>,<P acketNb `>* | -               | -                                                                            | `OK`        |
+| AT+TTH=*<` F start>, <Fstop>, <FDelta>,<PacketNb `>* | -               | -                                                                            | `OK`        |
 
 ### AT+TOFF 
 
@@ -1101,7 +1101,7 @@ This command is used to get the information about the configured multicast group
 | Command      | Input Parameter | Return Value                                                         | Return Code |
 | ------------ | --------------- | -------------------------------------------------------------------- | ----------- |
 | AT+LSTMULC?  | -               | `AT+RMVMULC:Get multicast group information`                         | `OK`        |
-| AT+LSTMULC=? | -               | `MC1:[Class]:[DevAddr]:[NwkSK ey]:[AppSKey]:[Frequency]:[Dat arate]` | `OK`        |
+| AT+LSTMULC=? | -               | `MC1:[Class]:[DevAddr]:[NwkSK ey]:[AppSKey]:[Frequency]:[Datarate]` | `OK`        |
 
 ## Data Transparent Transmission
 
@@ -1288,7 +1288,7 @@ By default, MaxEIRP is considered to be +14&nbsp;dBm.
 
 <b> AS923 </b>
 
-By default, Max EIRP isconsidered to be 16&nbsp;dBm.
+By default, Max EIRP is considered to be 16&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1629,5 +1629,5 @@ This section describes the output from UART lines of RAK3172 that can occur at a
 |                            |                     | Y0 = represent link status (1:links success, 2: link fail)                                       |
 |                            |                     | Y1 = represent the DemodMargin                                                                   |
 |                            |                     | Y2 = represent the NbGateways                                                                    |
-|                            |                     | Y3 = represent the RSSI of the command’s dowmload                                                |
+|                            |                     | Y3 = represent the RSSI of the command’s download                                                |
 |                            |                     | Y4 = represent the SNR of the command’s download                                                 |

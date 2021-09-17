@@ -2,7 +2,7 @@
 prev: ../LoRaWAN-P2P/AT-Command-Manual/
 next: ../Datasheet/
 tags:
-  - wsiduo
+  - wisduo
   - RAK4270
 
 rak_img: /assets/images/wisduo/rak4270-module/overview/RAK4270_Module_Home.png

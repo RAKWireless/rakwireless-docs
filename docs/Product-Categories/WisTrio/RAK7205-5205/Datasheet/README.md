@@ -296,7 +296,7 @@ The antenna environmental requirements are listed in the table below:
 | Axial Ratio (dB) w/ 70&nbsp;mm2 GND Plane        | 3.0                  | ±0.2 |
 | Polarization                                     | Righ-Handle Circular | -    |
 | Impedance (Ω)                                    | 50                   | -    |
-| Frequency Temparature Coefficient (ppm/°C)       | 0 ±10                | -    |
+| Frequency Temperature Coefficient (ppm/°C)       | 0 ±10                | -    |
 
 Amplifier Specifications are listed in the table below:
 

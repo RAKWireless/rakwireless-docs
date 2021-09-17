@@ -145,7 +145,7 @@ The device supports all LoRaWAN frequency bands as the table below. Which is eas
 
 #### Antennas
 
-The RAK7200 WisNode Track Lite has a built-in passive GPS Antenan and an iPex LoRa Antenna. The performance and the parameters of the Antenna are as follows:
+The RAK7200 WisNode Track Lite has a built-in passive GPS Antenna and an iPex LoRa Antenna. The performance and the parameters of the Antenna are as follows:
 
 ##### GPS Antenna
 

@@ -14,7 +14,7 @@ posted: 2/29/2020 10:30 AM
 
 # WisGate Developer Gateway Firmware Setup
 
-This document is a sample demonstration on how to burn the latest firmware of the WisGate Developer Series.
+Flashing an Image to an SD card is an essential process of setting up any gateway device. In this guide, a straightforward process will be shown, the following of which will ensure a successful flashing.
 
 # Firmwares
 
@@ -31,32 +31,47 @@ Welcome to the Developer Gateways Firmware Catalog. Download the latest firmware
 | RAK7246G WisGate Developer D0             | Raspberry Pi Zero W | 4.2.5_20200909   | [Download](https://downloads.rakwireless.com/en/LoRa/NeoPi-Gateway-RAK7246/Firmware/RAK7246_Latest_Firmware.zip)                     |
 | RAK7248 WisGate Developer D4H             | Raspberry Pi 4      | 4.2.7_20210121   | [Download](https://downloads.rakwireless.com/LoRa/RAK7248/Firmware/RAK7248_Latest_Firmware.zip)                                      |
 | RAK7248C WisGate Developer D4H            | Raspberry Pi 4      | 4.2.7_20210121   | [Download](https://downloads.rakwireless.com/LoRa/RAK7248C/Firmware/RAK7248C_Latest_Firmware.zip)                                    |
-# Burn the Firmware
+# Flashing an Image
 
 ::: tip 📝 NOTE:
  All LPWAN Developer Gateways mentioned in the previous section are pre-installed with its latest firmware upon purchase. Follow these steps if you intend to re-install the firmware of your device.
 :::
-1. Download the latest firmware in the [Firmwares](#firmwares) section which is based on the Raspbian OS.
 
-2. An image writing tool is needed to install the downloaded firmware into the SD Card. For this instruction, the open source utility software [Etcher](https://www.balena.io/etcher/) will be used for burning the image file.
+1. Plug the SD card into your PC or laptop.
+2. Download the [balenaEtcher](https://www.balena.io/etcher/) software. There are options for Windows, macOS, and Linux. Clicking the **Download** button will provide you with the software directly, no installation is required.
 
-3. Insert the SD Card into the SD Card reader and plug it into the Computer.
-
-4. Open the Etcher Software and select the necessary settings as shown in Figure 1:
-    * **Select Image Button**: Select the image to be burned in the SD Card
-    * **Select Drive Button**: The SD Card where the firmware will be burned
- 
- <!---
-Feel free to change the description for Select Image and Select Drive buttons
--->
-
-::: tip 📝 NOTE:
- The SD Card should be automatically detected by the Etcher in the Select Drive Button in Figure 1. If not, kindly ensure proper connection.
-:::
-
-<rk-img
-  src="/assets/images/knowledge-hub/user-manual/developer-gateways/firmware-burning/firmwareburn.png"
-  caption="Balena Etcher Software"
+<rk-img 
+  src="/assets/images/knowledge-hub/user-manual/developer-gateways/firmware-burning/1.png"
+  width="60%"
+  caption="balenaEtcher Download Page"
 />
 
-5. Click **"Flash!"** and wait until the process completes automatically.
+3. Open balenaEtcher and click **Flash from file**. Here, you need to select the file that will be flashed on the SD card. Note that the software allows the user to **Flash from URL** and **Clone drive** as well, but in this tutorial, only the **Flash from file** function will be demonstrated.
+
+<rk-img
+  src="/assets/images/knowledge-hub/user-manual/developer-gateways/firmware-burning/2.png"
+  width="60%"
+  caption="balenaEtcher Main Screen"
+/>
+
+4. By clicking on the **Select target** button, you will have the option to choose the SD card that you want to flash.
+
+<rk-img
+  src="/assets/images/knowledge-hub/user-manual/developer-gateways/firmware-burning/3.png"
+  width="60%"
+  caption="Image and target selected"
+/>
+
+5. Click the **Flash** button to finalize the procedure. Wait until the flashing and validating processes are done. When both are completed, your SD card is flashed and ready to use.
+
+<rk-img
+  src="/assets/images/knowledge-hub/user-manual/developer-gateways/firmware-burning/4.png"
+  width="60%"
+  caption="Flashing"
+/>
+
+<rk-img
+  src="/assets/images/knowledge-hub/user-manual/developer-gateways/firmware-burning/5.png"
+  width="60%"
+  caption="Validating"
+/>

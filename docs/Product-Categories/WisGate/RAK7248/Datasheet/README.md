@@ -164,14 +164,14 @@ T=25℃, VDD=5V (Typ.) if nothing else is stated.
 
 It is highly recommended, to use optimized RSSI calibration values, which is part of the HAL v3.1. For both, Radio 1 and 2, the RSSI-Offset should be set -169.0. The following table gives the typical sensitivity level of the RAK2287.
 
-| **Signal Bandwidtth (Khz)** | **Spreading Factor** | **Sensitivity (dBm)** |
-| :-------------------------: | :------------------: | :-------------------: |
-|             125             |          12          |         -139          |
-|             125             |          7           |         -125          |
-|             250             |          12          |         -136          |
-|             250             |          7           |         -123          |
-|             500             |          12          |         -134          |
-|             500             |          7           |         -120          |
+| **Signal Bandwidth (Khz)** | **Spreading Factor** | **Sensitivity (dBm)** |
+| :------------------------: | :------------------: | :-------------------: |
+|            125             |          12          |         -139          |
+|            125             |          7           |         -125          |
+|            250             |          12          |         -136          |
+|            250             |          7           |         -123          |
+|            500             |          12          |         -134          |
+|            500             |          7           |         -120          |
 
 #### Antenna Specifications
 
@@ -322,7 +322,7 @@ The table below lists the operation and storage temperature requirements:
 * Supports WiFi AP mode and Client mode
 * Supports DHCP
 
-#### Managment
+#### Management
 
 * Supports SSH
 

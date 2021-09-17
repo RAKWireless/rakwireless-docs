@@ -58,7 +58,7 @@ The RAK811 module is integrated with Semtech’s SX1276 and STM32. You can confi
 
 ## Specifications
 
-This section covers the hardware and software specifications of RAK811. All discussion presents both versions: RAK811(L) and RAK811(H). Also, it includes the block diagram and the update firmare link of the RAK811 WisDuo module.
+This section covers the hardware and software specifications of RAK811. All discussion presents both versions: RAK811(L) and RAK811(H). Also, it includes the block diagram and the update firmware link of the RAK811 WisDuo module.
 
 ### Overview
 

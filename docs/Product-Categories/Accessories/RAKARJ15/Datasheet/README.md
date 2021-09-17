@@ -9,8 +9,7 @@ rak_img: /assets/images/accessories/rakarj15/White 868MHz Antenna Features.png
 
 ---
 
-# RAKARJ15 868MHz White Blade Antenna
-
+# RAKARJ15 868MHz White Blade Antenna Datasheet
 ## Overview
 
 ### Features

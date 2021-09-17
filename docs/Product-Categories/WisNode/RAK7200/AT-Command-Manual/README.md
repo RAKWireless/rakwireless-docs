@@ -269,7 +269,7 @@ No signal with Satellite.
 MPU9250 sensor:
 Acceleration(g) of X,Y,Z:
 0.00,0.00,0.00
-Gyro(degress/s) of X,Y,Z:
+Gyro(degrees/s) of X,Y,Z:
 0.00,0.00,0.00
 Magnetometer(uT) of X,Y,Z:
 0.00,0.00,0.00
@@ -299,7 +299,7 @@ This command is used for joining to the LoRaWAN network.
 ```
 at+join\r\n
 OK 
-[LoRa]:Joined Successed!
+[LoRa]:Joined Success!
 ```
 
 2. <b> `at+send=lora:<port>:<data>` </b>
@@ -849,7 +849,7 @@ No signal with Satellite.
 MPU9250 sensor:
 Acceleration(g) of X,Y,Z:
 0.02,0.01,1.02
-Gyro(degress/s) of X,Y,Z:
+Gyro(degrees/s) of X,Y,Z:
 -1.01,0.84,0.83
 Magnetometer(uT) of X,Y,Z:
 20.85,63.15,51.75
@@ -924,7 +924,7 @@ OK
 
 2. <b> `at+set_config=device:gps_format:<accuracy>`</b>
 
-This command is used to configurate the GPS payload format.
+This command is used to configure the GPS payload format.
 
 | Operation | Command                                      | Response |
 | --------- | -------------------------------------------- | -------- |
@@ -982,7 +982,7 @@ This command is used to set a certain sensor’s status.
 
 ```
 at+set_config=device:voltage:1\r\n                         
-open voltage detecte.
+open voltage detected.
 OK
 ```
 

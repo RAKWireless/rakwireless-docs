@@ -52,7 +52,7 @@ tags:
 <rk-img
   src="/assets/images/wisgate/rak7243/testing-report/3.test_chamber.png"
   width="50%"
-  caption="Enviromental test chamber"
+  caption="Environmental test chamber"
 />
 
 <rk-img

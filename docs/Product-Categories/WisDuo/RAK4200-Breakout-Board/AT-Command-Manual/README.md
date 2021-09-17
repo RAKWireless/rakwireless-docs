@@ -18,7 +18,7 @@ The RAK4200 Breakout Board is designed to simplify LoRa P2P peer-to-peer and LoR
 
 On top of this serial interface, a set of AT commands is defined. An external microcontroller will be able to control the RAK4200 Breakout Board as a classic AT modem. Through the AT commands, you can set parameters of the LoRaWAN communication, controlling GPIO pins, analog inputs, etc.
 
-In the RAK4200 Breakout Baord, the serial communication is exposed on the **UART1 port**, through **Pin 4 (UART1_TX)** and **Pin 5 (UART1_RX)**. The parameters of the UART1 communication are **115200** / **8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this board and find a schematic circuit of a reference application, refer to [RAK4200 Breakout Board Datasheet](../Datasheet/). A summary is also provided in the [Appendix IV](/Product-Categories/WisDuo/RAK4200-Breakout-Board/AT-Command-Manual/#appendix-iv-pin-description-of-rak4200-breakout-board).
+In the RAK4200 Breakout Board, the serial communication is exposed on the **UART1 port**, through **Pin 4 (UART1_TX)** and **Pin 5 (UART1_RX)**. The parameters of the UART1 communication are **115200** / **8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this board and find a schematic circuit of a reference application, refer to [RAK4200 Breakout Board Datasheet](../Datasheet/). A summary is also provided in the [Appendix IV](/Product-Categories/WisDuo/RAK4200-Breakout-Board/AT-Command-Manual/#appendix-iv-pin-description-of-rak4200-breakout-board).
 
 In addition, the RAK4200 Breakout Board also exposes another serial port through **Pin 2 (UART2_TX)** and **Pin 1 (UART2_RX)**. This port is named UART2. You can use it to connect another MCU or an additional UART peripheral, such as a GPS module.
 
@@ -1291,7 +1291,7 @@ This command is used to set the relevant parameters of LoRa P2P mode and is only
             <td>0:  125&nbsp;kHz<br>1:  250&nbsp;kHz<br>2:  500&nbsp;kHz<br><br>The default is 0.</td>
         </tr>
         <tr>
-            <td>codeingrate</td>
+            <td>codingrate</td>
             <td>1:  4/5<br>2:  4/6<br>3:  4/7<br>4:  4/8<br><br>The default is 1.</td>
         </tr>
         <tr>
@@ -1530,7 +1530,7 @@ By default, MaxEIRP is considered to be +14&nbsp;dBm.
 
 <b>AS923</b>
 
-By default, Max EIRP isconsidered to be 16&nbsp;dBm.
+By default, Max EIRP is considered to be 16&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |

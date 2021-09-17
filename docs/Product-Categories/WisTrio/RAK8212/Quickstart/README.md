@@ -123,7 +123,7 @@ For the complete list of AT Commands available for configuring your RAK8212 WisT
 <rk-img
   src="/assets/images/wistrio/rak8212/quickstart/configuring-your-rak8212/piminlwoxlxa2lcyzjpx.jpg"
   width="80%"
-  caption="AT+command sending throught BLE"
+  caption="AT+command sending through BLE"
 />
 
 4. Click the arrow which is marked by the red box in the picture below, you will see the following page:

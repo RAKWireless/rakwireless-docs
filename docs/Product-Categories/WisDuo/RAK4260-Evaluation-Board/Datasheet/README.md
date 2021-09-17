@@ -63,7 +63,7 @@ The block diagram of the RAK3244 BastWAN shows the various interfaces for the sp
   
 ### Hardware
 
-The hardware specification is categorized into five parts. It covers the interfaces, pin definitions and its corresponding functions. Also, it includes the RF reqirements, electrical and mechanical parameters of the RAK4260 Evaluation Board.
+The hardware specification is categorized into five parts. It covers the interfaces, pin definitions and its corresponding functions. Also, it includes the RF requirements, electrical and mechanical parameters of the RAK4260 Evaluation Board.
 
 #### Interfaces  
   

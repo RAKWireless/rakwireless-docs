@@ -248,7 +248,7 @@ In this section, we will be connecting the RAK WisNode Button 4K to the Built-In
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/12.png"
   width="80%"
-  caption="Configuring the devices setings"
+  caption="Configuring the devices settings"
 />
 
 <rk-img

@@ -9,7 +9,7 @@ rak_img: /assets/images/accessories/rakarj14/White 915MHz Antenna Features.png
 
 ---
 
-# 900-930MHz 8dBi Fiberglass Antenna Datasheet
+# RAKARJ14 915MHz White Blade Antenna Datasheet
 
 ## Overview
 

@@ -9,7 +9,7 @@ rak_img: /assets/images/accessories/rakarg15/antenna-overview.png
 
 ---
 
-# 900-930MHz 8dBi Fiberglass Antenna
+# 900-930MHz 8dBi Fiberglass Antenna Datasheet
 
 ## Overview
 
@@ -103,5 +103,5 @@ rak_img: /assets/images/accessories/rakarg15/antenna-overview.png
 <rk-img
   src="/assets/images/accessories/rakarg15/8dBi_dimensions.png"
   width="60%"
-  caption="RAKARG15 Atenna dimensions"
+  caption="RAKARG15 Antenna dimensions"
 />

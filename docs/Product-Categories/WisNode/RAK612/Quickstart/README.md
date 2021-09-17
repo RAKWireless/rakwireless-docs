@@ -54,7 +54,7 @@ If this is your first time to connect your RAK612 WisNode Button to your compute
   caption="Missing Driver for the RAK612 WisNode Button"
 />
 
-3. Under "**Other devices**" drop down list, an unknown **USB2.0-Serial** driver must appear. Right click into it and choose "**Search automaticaly for updated driver software**". Again, before doing so, make sure to have an internet access or it will fail.
+3. Under "**Other devices**" drop down list, an unknown **USB2.0-Serial** driver must appear. Right click into it and choose "**Search automatically for updated driver software**". Again, before doing so, make sure to have an internet access or it will fail.
 
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/interfacing-with-rak612/automatic-install.png"

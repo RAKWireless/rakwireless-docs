@@ -56,7 +56,7 @@ RAKBox-B4 is an IP67 rated enclosure for outdoor usage. It is designed specifica
 
 ## WisBlock module support
 
-The enclosure is compatibel with the following WisBlock modules:
+The enclosure is compatible with the following WisBlock modules:
 
 - WisBase Base RAK5005-O
 - WisBase Core RAK4631

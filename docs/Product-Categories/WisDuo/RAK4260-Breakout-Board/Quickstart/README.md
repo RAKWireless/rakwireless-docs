@@ -317,7 +317,7 @@ These settings are not adjustable at this stage and if you want to change them y
   caption="Configuration menu"
 />
 
-- Afterwhich, send 1 in order to select EU868 Regional Band. You may also choose a different number as selection depending on your case.
+- After which, send 1 in order to select EU868 Regional Band. You may also choose a different number as selection depending on your case.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/band-selection-menu.png"

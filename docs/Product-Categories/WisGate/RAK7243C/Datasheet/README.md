@@ -184,7 +184,7 @@ The RAK2245 has an excellent transmitter performance. It is highly recommended t
 
 It is highly recommended, to use optimized RSSI calibration values, which is part of the HAL v3.1. For both, Radio 1 and 2, the RSSI-Offset should be set - 169.0. The following table gives typically sensitivity level of the RAK2245.
 
-| Signal Bandwidtth (Khz) | Spreading Factor | Sensitivity (dBm) |
+| Signal Bandwidth (Khz) | Spreading Factor | Sensitivity (dBm) |
 | :---------------------: | :--------------: | :---------------: |
 |           125           |        12        |       -139        |
 |           125           |        7         |       -126        |
