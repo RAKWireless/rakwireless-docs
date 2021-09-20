@@ -14,17 +14,17 @@ tags:
 
 ### Introduction
 
-Using Low Level Development, you can develop your own version of firmware that runs on RAK4260. RAK offers this alternative for advance users who need to have a deeper integration of their solutions with these board.
+Using Low Level Development, you can develop your own firmware that runs on RAK4260. RAK offers this alternative for advance users who need to have a deeper integration of their solutions with this board.
 
 ## How to Implement your App on RAK4260 Evaluation Board
 
 ### Schematic
 
-One of the essential aspects that allow you to develop your own version of firmware is the hardware schematic. This allow the you to understand the connections between the inner MCU and the LoRa transceiver.
+One of the essential aspects that allow you to develop your own firmware is the hardware schematics. This allows you to understand the connections between the inner MCU and the LoRa transceiver.
 
 
 ::: tip 📝 NOTE
-The RAK4260 Evaluation Board covers only the high frequency LoRaWAN bands ( 864&nbsp;MHz to 923&nbsp;MHz).
+The RAK4260 Evaluation Board covers only the high-frequency LoRaWAN bands (864&nbsp;MHz to 923&nbsp;MHz).
 :::
 
 Check [LoRaWAN frequencies by country](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html).
@@ -56,7 +56,7 @@ Before compiling a project for the RAK4260 Evaluation Board, it is necessary to 
   caption="Microchip Studio license"
 />
 
-3. On Select Architeture, choose "SAM".
+3. In Select Architecture, choose "SAM".
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/sam_atmel_studio.png"
@@ -80,7 +80,7 @@ Before compiling a project for the RAK4260 Evaluation Board, it is necessary to 
   caption="Microchip Studio Extensions and Updates"
 />
 
-6. On Extensions and Updates window, click on "**Online**" and then search for "**atmel software framework**". 
+6. In Extensions and Updates window, click on "**Online**" and then search for "**atmel software framework**". 
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/asf.png"
@@ -104,10 +104,10 @@ RAK has already configured a demo firmware for RAK4260 based on Microchip LoRaWA
 
 * [RAK4260 LoRaNode Demo](https://github.com/RAKWireless/RAK4260-LoRaNode-demo)
 
-The Microchip Studio LoRaWAN examples are based on [SAMR34 Xplained Pro](https://www.microchip.com/DevelopmentTools/ProductDetails/dm320111), but RAK260 did not adopt the same GPIO pinout. If you plan to develop a new LoRaWAN application, refer to RAK4260 GPIO pins defined in the [**samr34_xplained_pro.h**](https://github.com/RAKWireless/RAK4260-LoRaNode-demo/blob/master/APPS_ENDDEVICE_DEMO1/src/ASF/sam0/boards/samr34_xplained_pro.h) file.
+The Microchip Studio LoRaWAN examples are based on [SAMR34 Xplained Pro](https://www.microchip.com/DevelopmentTools/ProductDetails/dm320111), but RAK260 did not adopt the same GPIO pinout. If you plan to develop a new LoRaWAN application, refer to the RAK4260 GPIO pins defined in the [**samr34_xplained_pro.h**](https://github.com/RAKWireless/RAK4260-LoRaNode-demo/blob/master/APPS_ENDDEVICE_DEMO1/src/ASF/sam0/boards/samr34_xplained_pro.h) file.
 
 :::tip 📝 NOTE
-This sample firmware is solely for testing purposes only. If you want to use and deploy your own LoRaWAN application, you need to develop a customized firmware based on Microchip LoRaWAN Stack (MLS).
+This sample firmware is solely for testing purposes. If you want to use and deploy your own LoRaWAN application, you need to develop a customized firmware based on Microchip LoRaWAN Stack (MLS).
 :::
 
 1. Clone [RAK4260 github repository](https://github.com/RAKWireless/RAK4260-LoRaNode-demo).
@@ -127,12 +127,12 @@ Go to the cloned directory folder:
 3. Configure demo application parameters
 
 :::tip 📝 NOTE
- On RAK4260-LoRaNode-demo project, the join parameters and activation methods are defined in the [**conf_app.h**](https://github.com/RAKWireless/RAK4260-LoRaNode-demo/blob/master/APPS_ENDDEVICE_DEMO1/src/config/conf_app.h) file. 
+ In the RAK4260-LoRaNode-demo project, the join parameters and activation methods are defined in the [**conf_app.h**](https://github.com/RAKWireless/RAK4260-LoRaNode-demo/blob/master/APPS_ENDDEVICE_DEMO1/src/config/conf_app.h) file. 
 
 :::
 -->
 
-3. Compile RAK4260-LoRaNode-demo solution. On Microchip Studio, select Build -> Build Solution.
+3. Compile RAK4260-LoRaNode-demo solution. In Microchip Studio, select Build -> Build Solution.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/build-demo.png"
@@ -142,7 +142,7 @@ Go to the cloned directory folder:
 
 ### Flash the Firmware Using DAPLink and RAKDAP1
 
-To flash a new firmware, utilize the RAKDAP1, a SWD adapter. Refer to the Figure 10 as reference to connect RAKDAP1 and RAK4600 Evaluation Board.
+To flash a new firmware, use the RAKDAP1, a SWD adapter. Refer to Figure 10 as reference to connect RAKDAP1 and RAK4600 Evaluation Board.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/interfacing/rak4260-evb-connection.svg"
@@ -152,7 +152,7 @@ To flash a new firmware, utilize the RAKDAP1, a SWD adapter. Refer to the Figure
 
 1. Install [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool).
 
-RAKDAP1 uses pyOCD package. pyOCD is an open source Python package for programming and debugging ARM Cortex-M microcontrollers using multiple supported types of USB debug probes.
+RAKDAP1 uses the pyOCD package. pyOCD is an open-source Python package for programming and debugging ARM Cortex-M microcontrollers using multiple supported types of USB debug probes.
 
 2. Check Support Package installation for RAK4260.
 ```
@@ -160,7 +160,7 @@ pyocd list -t -n atsaml21j18a
 ```
 3. Flash the hex file.
 
-As an example, flash the RAK4260-LoRaNode demo project. The hex file of the RAK4260-LoRaNode-demo project is located on folder. Depending on whether you select to compile the **Debug** or **Release** version of the Microchip Studio project.
+As an example, flash the RAK4260-LoRaNode demo project. The hex file of the RAK4260-LoRaNode-demo project is located in a folder, depending on whether you select to compile the **Debug** or **Release** version of the Microchip Studio project.
 
 - **<cloned_dir>\RAK4260-LoRaNode-demo\APPS_ENDDEVICE_DEMO1\Release** 
 - **<cloned_dir>\RAK4260-LoRaNode-demo\APPS_ENDDEVICE_DEMO1\Debug**. 
@@ -187,6 +187,3 @@ pyocd flash -t atsaml21j18a APPS_ENDDEVICE_DEMO1.hex
   width="100%"
   caption="Successful pyOCD flash"
 />
-
-
-
