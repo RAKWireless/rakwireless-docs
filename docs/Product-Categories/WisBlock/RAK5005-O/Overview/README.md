@@ -46,7 +46,7 @@ are designed to be installed on both sides of the PCB. Thus a sensor module can 
 * 1 WisBlock Module compatible with IO Slot
 * 4 WisBlock Modules compatible to Slot A-D
 * 1 USB port for programming and debugging
-* 3.7&nbsp;V Rechargable battery connector
+* 3.7&nbsp;V Rechargeable battery connector
 * 5&nbsp;V Solar Panel connector
 * I2C, UART, GPIO's and analog input accessible with solder contacts
 
@@ -68,7 +68,7 @@ It has as well two user definable LED’s and one power supply/charging indicato
 WisBlock Base is amazingly easy to use and requires only a USB cable to start developing with the system.
 
 :::warning ⚠️ WARNING    
-- Only 3.7-4.2&nbsp;V Rechargable LiPo batteries are supported. Do not use other types of batteries with the system.    
+- Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. Do not use other types of batteries with the system.    
 - Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.    
 
 :::

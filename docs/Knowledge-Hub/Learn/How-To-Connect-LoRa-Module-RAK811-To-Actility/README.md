@@ -135,13 +135,13 @@ In this part, I will use WisNode-Lora EVB to demonstrate how to add our LoRa RAK
 * **Application EUI**: Enter the AppEUI. The AppEUI is a global application ID that uniquely identifies the application provider (i.e., owner) of the device.
 
 :::tip 📝 NOTE
-If you do not have an Applicate EUI, you can create one yourself. It must be a unique string composed of 16 alphanumeric characters.
+If you do not have an Application EUI, you can create one yourself. It must be a unique string composed of 16 alphanumeric characters.
 :::
 
 * **Application key**: Enter the Appkey. The AppKey is a key specific for the end-device that is assigned by the application owner to the end-device and most likely derived from an application-specific root key exclusively known to and under the control of the application provider.
 
 :::tip 📝 NOTE
-If you do not have an Applicate key, you can create one yourself. It must be a unique string composed of 32 alphanumeric characters.
+If you do not have an Application key, you can create one yourself. It must be a unique string composed of 32 alphanumeric characters.
 :::
 
 * **Device Profile**: Actility uses this profile to correctly decode the payload, based on the device type, and display it on our dashboard. Be sure to select the correct profile for your device and which network it will be using.

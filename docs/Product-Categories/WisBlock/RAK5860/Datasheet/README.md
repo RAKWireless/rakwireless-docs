@@ -108,11 +108,11 @@ Table below shows the absolute maximum ratings of the RAK5860 module.
 
 Table below shows the recommended operating conditions of the RAK5860 module.
 
-| **Symbol** | **Description**              | **Min.** | **Nom.** | **Max.** | **Unit** |
-| ---------- | ---------------------------- | -------- | -------- | -------- | -------- |
-| VBAT       | Power Supply for the Modulke | 2.6      | 3.3      | 4.2      | V        |
-| USB_VBUS   | USB Conenction Detection     | 1.3      |          | 1.8      | V        |
-| USBPHY_3P3 | Power for USB PHY Circuit    |          | 3.3      |          | V        |
+| **Symbol** | **Description**             | **Min.** | **Nom.** | **Max.** | **Unit** |
+| ---------- | --------------------------- | -------- | -------- | -------- | -------- |
+| VBAT       | Power Supply for the Module | 2.6      | 3.3      | 4.2      | V        |
+| USB_VBUS   | USB Connection Detection    | 1.3      |          | 1.8      | V        |
+| USBPHY_3P3 | Power for USB PHY Circuit   |          | 3.3      |          | V        |
 
 Figure 5 shows the dimensions of the RAK5860 module.
 

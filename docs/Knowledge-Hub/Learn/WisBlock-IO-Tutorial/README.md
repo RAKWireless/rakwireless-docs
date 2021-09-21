@@ -107,7 +107,7 @@ The template PCB matches the size of standard WisBlock Sensor modules. Make sure
 <rk-img
 src="/assets/images/knowledge-hub/tutorials/wisblock-io-tutorial/IO-Template-PCB.png"
 width="50%"
-caption="Temlate PCB"
+caption="Template PCB"
 />
 
 As you can see, Autodesk Eagle™ complains a lot of DRC dimension errors around the larger mounting whole. The mounting hole and its copper (connected to the GND signal) has to be mechanically located at the edge of the PCB. Autodesk Eagle™ allows only one design rule regarding distance to the PCB edges, hence the DRC errors.  
@@ -116,7 +116,7 @@ If you do not need the whole width (35mm) for your custom IO module, you can red
 ### Important information about the PCB design
 
 - As already said, _**NEVER MOVE THE CONNECTOR AND THE MOUNTING HOLE TO A DIFFERENT LOCATION**_. If you move them, your self-made WisBlock IO will not fit into a WisBlock Base module.
-- Due to the location of the board-to-board connector close to the edge of the PCB, you might have to change the design rules to use 4mil connections, 4mil distance between copper and 0.2mm via diameters. It will depend on your design if it works with the default Autodesk Eagle™ design rules, but mostlikely the wires to the connector pads will not be routeable.
+- Due to the location of the board-to-board connector close to the edge of the PCB, you might have to change the design rules to use 4mil connections, 4mil distance between copper and 0.2mm via diameters. It will depend on your design if it works with the default Autodesk Eagle™ design rules, but most likely the wires to the connector pads will not be routable.
 - We recommend a GND plane on top and bottom layer.
 - Do not place components on the bottom layer. The space between the sensor module and the base board is only 1-2 mm.
 

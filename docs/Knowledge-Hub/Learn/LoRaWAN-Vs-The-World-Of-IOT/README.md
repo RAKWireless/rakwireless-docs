@@ -88,7 +88,7 @@ NB-IoT focuses specifically on indoor coverage, low cost, long battery life, and
 
 |- Uses the existing cellular network infrastructure. <br> - Great range.| - Expensive end-user hardware. <br> - Not suitable for small scale deployment |
 | ------ | ------------ |
-| - **Perfect for deployment in dense urban environments** <br> - **One of the main solutions for smart cities** | - **Expensive due to subscription costs.** <br>- **Not sutable for suburban deployment (farms).** |
+| - **Perfect for deployment in dense urban environments** <br> - **One of the main solutions for smart cities** | - **Expensive due to subscription costs.** <br>- **Not suitable for suburban deployment (farms).** |
 
 Many technology articles compare LoRA and NB-IoT technologies as if they were battling it out for dominance in the IoT market. In reality, these technologies are two branches within an emerging technology ecosystem. Similar to WiFi and Bluetooth, they will most likely to diverge into different niches, rather than directly compete with each other. LoRa and NB-IoT both operate within LPWAN technology. They are two major standards for low-power IoT devices.
 

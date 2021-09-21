@@ -176,7 +176,7 @@ Touch the left pad of the RAK14002 module. If you see the logs, as shown in **Fi
 
 Install the [RAKwireless PlatformIO BSP](https://docs.rakwireless.com/Knowledge-Hub/Learn/Board-Support-Package-Installation-in-PlatformIO/).
 
-After installing your RAK Core board on PlatformIO you can import the entire project to PlaformIO.
+After installing your RAK Core board on PlatformIO you can import the entire project to PlatformIO.
 
 1. Import Arduino Project to PlatformIO.
 

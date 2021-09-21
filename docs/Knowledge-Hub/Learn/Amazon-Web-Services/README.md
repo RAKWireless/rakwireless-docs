@@ -174,7 +174,7 @@ user_name@public_dns_name
   caption="Knowing your Public DNS Name"
 />
 
-* Afterwhich, fill-in the corresponding Host Name as shown in Figure 13 below.
+* After which, fill-in the corresponding Host Name as shown in Figure 13 below.
 
 <rk-img
   src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/13.putty-hostname.png"

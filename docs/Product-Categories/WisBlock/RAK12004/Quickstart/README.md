@@ -240,7 +240,7 @@ To extend the use of the RAK-MQx library, check the link [RAK-MQx Library method
 
 1. Install the [RAKwireless PlatformIO BSP](https://docs.rakwireless.com/Knowledge-Hub/Learn/Board-Support-Package-Installation-in-PlatformIO/).
 
-2. After installing your RAK Core board on PlatformIO, you can import the entire project to PlaformIO.
+2. After installing your RAK Core board on PlatformIO, you can import the entire project to PlatformIO.
 
 3. Import Arduino Project to PlatformIO.
 

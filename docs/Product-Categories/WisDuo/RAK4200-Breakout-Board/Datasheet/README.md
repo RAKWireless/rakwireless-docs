@@ -121,8 +121,8 @@ The pin definitions of RAK4200 Breakout Board are shown in the following tables 
 
 | Pin | Name     | I/O | Description                                     | Alternate functions                                                          |
 | --- | -------- | --- | ----------------------------------------------- | ---------------------------------------------------------------------------- |
-| 1   | UART2_RX | I   | Main UART (STM32L071 PA3)                       | USART1RX, I2C1 SDA                                                           |
-| 2   | UART2_TX | O   | Main UART (STM32L071 PA2)                       | MCO, USART1TX, I2C1 SCL, I2C3_SMBA                                           |
+| 1   | UART2_RX | I   | UART2 Interface (AT Commands) (STM32L071 PA3)                       | USART1RX, I2C1 SDA                                                           |
+| 2   | UART2_TX | O   | UART2 Interface (AT Commands) (STM32L071 PA2)                       | MCO, USART1TX, I2C1 SCL, I2C3_SMBA                                           |
 | 3   | UART2_DE | I/O | GPIO (STM32L071 PA1)                            | SPI1MOSI, EVENT OUT, USART1_RTS_DE, COMP2_OUT                                |
 | 4   | UART1_DE | I/O | GPIO or UART (Reserved) GPIO or UART (Reserved) | EVENT OUT, TIM2_CH2, USART2_RTS_DE, TIM21_ETR, USART4_RX, COMP1_INP, ADC_IN1 |
 | 5   | SWDIO    | I/O | Programming (STM32L071 PA13)                    | SWDIO, LPUART1_RX                                                            |
@@ -135,8 +135,8 @@ The pin definitions of RAK4200 Breakout Board are shown in the following tables 
 | Pin | Name     | I/O | Description                              | Alternate Functions                                                       |
 | --- | -------- | --- | ---------------------------------------- | ------------------------------------------------------------------------- |
 | 1   | VDD      | -   | DC3V3                                    | Supply voltage 2.0~3.3V                                                   |
-| 2   | UART1_TX | I/O | GPIO or UART (Reserved) (STM32L071 PA9)  | TIM21_CH1, TIM2_CH3, USART2_TX, LPUART1_TX, COMP2_OUT, COMP2_INM, ADC_IN2 |
-| 3   | UART1_RX | I/O | GPIO or UART (Reserved) (STM32L071 PA10) | TIM21*CH2, TIM2* CH4, USART2_RX, LPUART1_RX, COMP2_INP, ADC_IN3           |
+| 2   | UART1_TX | I/O | UART1 Interface (AT Commands and FW Update) (STM32L071 PA9)  | TIM21_CH1, TIM2_CH3, USART2_TX, LPUART1_TX, COMP2_OUT, COMP2_INM, ADC_IN2 |
+| 3   | UART1_RX | I/O | UART1 Interface (AT Commands and FW Update) (STM32L071 PA10) | TIM21*CH2, TIM2* CH4, USART2_RX, LPUART1_RX, COMP2_INP, ADC_IN3           |
 | 4   | GND      | -   | Ground                                   | -                                                                         |
 | 5   | MCU_NRST | I/O | MCU reset (STM32L071 NRST)               | -                                                                         |
 | 6   | SPI_CLK  | I/O | Reserved PA5                             | Internal connection to **SX1276 SPI_CLK**                                 |

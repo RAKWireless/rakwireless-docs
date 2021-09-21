@@ -84,7 +84,7 @@ When the buckling process is completed, check that the header and socket are kep
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/7.buckle-header-to-socket.png"
   width="75%"
-  caption="Correct way to buckle the WisCionnector’s header to the socket"
+  caption="Correct way to buckle the WisConnector’s header to the socket"
 />
 
 If after buckling, the header and socket are not in a parallel state (not fully assembled in one place), then press the even force on both sides of the long side to complete the correct buckling.
@@ -93,7 +93,7 @@ If after buckling, the header and socket are not in a parallel state (not fully 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/8.not-parallel.png"
   width="75%"
-  caption="Wisconnector’s header is not parallel to the socket"
+  caption="WisConnector’s header is not parallel to the socket"
 />
 
 When the aforementioned steps are not completed yet, DO NOT apply force to buckle. Otherwise, there will be a risk to damage the connector. When the connector cannot be smoothly buckled down, repeat the alignment step. 

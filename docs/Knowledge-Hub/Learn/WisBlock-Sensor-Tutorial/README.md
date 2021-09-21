@@ -93,7 +93,7 @@ As you can see, Autodesk Eagle™ complains a lot of DRC dimension errors around
 ### Important information about the PCB design
 
 - As already said, _**NEVER MOVE THE CONNECTOR AND THE MOUNTING HOLE TO A DIFFERENT LOCATION**_. If you move them, your self-made WisBlock Sensor will not fit into a WisBlock Base module.
-- Due to the small size of the PCB (10x10mm), you might have to change the design rules to use 4mil connections, 4mil distance between copper and 0.2mm via diameters. It will depend on your design if it works with the default Autodesk Eagle™ design rules, but mostlikely the wires to the connector pads will not be routeable.
+- Due to the small size of the PCB (10x10mm), you might have to change the design rules to use 4mil connections, 4mil distance between copper and 0.2mm via diameters. It will depend on your design if it works with the default Autodesk Eagle™ design rules, but most likely the wires to the connector pads will not be routable.
 - We recommend a GND plane on top and bottom layer.
 - Do not place components on the bottom layer. The space between the sensor module and the base board is only 1-2 mm.
 
@@ -121,7 +121,7 @@ The first thing to check is that we removed most connections from the board-to-b
   caption="Adjusted connector nets"
 />
 
-Only the required nets are left. If you do not remove the unused nets, you will struggle later on in the PCB design because of the mirrored assignement of the signals to the left and right connector row. There will be too many unnecessary connections just between the connector pins.  
+Only the required nets are left. If you do not remove the unused nets, you will struggle later on in the PCB design because of the mirrored assignment of the signals to the left and right connector row. There will be too many unnecessary connections just between the connector pins.  
 For the RTC chip, we need only the supply nets, the I2C nets and 2 IRQ lines. The design around the RTC is taken from the datasheet of the [EnerChip™ CBC34803-M5C](https://www.cymbet.com/wp-content/uploads/2019/02/DS-72-34.pdf).
 
 ### RTC example PCB

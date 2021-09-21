@@ -30,7 +30,7 @@ Now, let’s take a journey through the applications of this great technology an
 ### Smart Agriculture
 Agriculture is one of the most important sectors in many countries in the world. It is the essential to life and the economy.
 
-The application of IoT with the use of LoRaWAN enables maximum efficiencies which reduces environmental impact, maximise yield and minimise expenses. From measuring environmental conditions, which influences crop production, to tracking livestock health indicators, IoT is gradually improving our agricultural system.
+The application of IoT with the use of LoRaWAN enables maximum efficiencies which reduces environmental impact, maximize yield and minimize expenses. From measuring environmental conditions, which influences crop production, to tracking livestock health indicators, IoT is gradually improving our agricultural system.
 
 Since LoRa technology has low power, long range features and wireless qualities, the use of low cost sensors to send signals from the farm to the Cloud where they can be used to improve operations have been employed.
 
@@ -60,7 +60,7 @@ Now let’s see how LoRa technology has enabled efficiencies in the farming worl
 
 6. Smart Soil Sensors
 
-    LoRa based wireless sensors help detect Nitrogen, Phosphorus and Potassium (NPK) levels in the soil. This will help farmers reduce waste and maximise crop yield.
+    LoRa based wireless sensors help detect Nitrogen, Phosphorus and Potassium (NPK) levels in the soil. This will help farmers reduce waste and maximize crop yield.
 
 7. Other Agricultural Applications
 

@@ -41,7 +41,7 @@ The RF communication characteristic of the module (Lora® + BLE) makes it suitab
 
 - TCXO crystal for LoRa chip
 - I/O ports: UART/I2C/GPIO/USB
-- SPI pins and optional NFC interface are accesible using WisBlock IO module
+- SPI pins and optional NFC interface are accessible using WisBlock IO module
 - Temperature range: -40&nbsp;°C to +85&nbsp;°C
 - Supply voltage: 2.0 ~ 3.6&nbsp;V
 - Low-Power Wireless Systems with 7.8&nbsp;KHz to 500&nbsp;KHz Bandwidth

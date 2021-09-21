@@ -67,7 +67,7 @@ OTAA is a method of LoRaWAN network access in the air. Upon powering up, the nod
 - The following are the parameters needed by the node before it can start to enter the network via OTAA:
 
   - APPEUI node custom 8-byte long address
-  - Both the APPKEY of the server and the node are stored in advance and used to encrypt and decrypt the Join_acept message
+  - Both the APPKEY of the server and the node are stored in advance and used to encrypt and decrypt the Join_accept message
   - DevNonce 2-byte random number, used to generate random AppSKey and NwkSKey
 
 - The following steps is the detailed OTAA network join mode:
@@ -163,7 +163,7 @@ a multi-level wildcard.
 
 ```sh
 mosquitto_sub -t "application/123/#" -v  #display everything for the given application ID
-nmosquitto_sub -t "application/123/device/+/rx" -v  #display only the RX payloads for the given application ID"
+mosquitto_sub -t "application/123/device/+/rx" -v  #display only the RX payloads for the given application ID"
 ```
 
 **Events**
@@ -203,7 +203,7 @@ The MQTT integration exposes all events as documented by [Event Types](https://w
 </template>
 <template #answer>
 
-If you have set an incorrect SSID or Password for Wi-Fi Client Mode, insert the SD Card into your PC and in the boot disk, and create a new file "**rak_ap**". Afterwhich, re-insert the SD Card into your Raspberry Pi based gateway and it should work again in Wi-Fi AP Mode.
+If you have set an incorrect SSID or Password for Wi-Fi Client Mode, insert the SD Card into your PC and in the boot disk, and create a new file "**rak_ap**". After which, re-insert the SD Card into your Raspberry Pi based gateway and it should work again in Wi-Fi AP Mode.
 
 ![RAK_AP File](/assets/images/faq/software/item10.png)
 

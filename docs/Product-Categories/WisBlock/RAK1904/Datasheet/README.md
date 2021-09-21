@@ -69,27 +69,25 @@ Pins 10, 12, 13, and 15 are connected to the interrupt pins of LIS3DH, refer to 
 :::
 
 #### Sensors
-
-##### Acceleration Sensor
-
-| Symbol | Parameter        | Test Condition                               | Min. | Typ.  | Max. |   Unit   |
-| ------ | ---------------- | -------------------------------------------- | :--: | :---: | :--: | :------: |
-| FS     | Measurment Range | FS bit set to 00                             |      | ±2.0  |      |    g     |
-|        |                  | FS bit set to 01                             |      | ±4.0  |      |    g     |
-|        |                  | FS bit set to 10                             |      | ±8.0  |      |    g     |
-|        |                  | FS bit set to 10                             |      | ±16.0 |      |    g     |
-| So     | Sensitivity      | FS bit set to 00 <br /> High-resolution mode |      |   1   |      | mg/digit |
-|        |                  | FS bit set to 00 <br /> Normal mode          |      |   4   |      | mg/digit |
-|        |                  | FS bit set to 00 <br /> Low-power mode       |      |  16   |      | mg/digit |
-|        |                  | FS bit set to 01 <br /> High-resolution mode |      |   2   |      | mg/digit |
-|        |                  | FS bit set to 01 <br /> Normal mode          |      |   8   |      | mg/digit |
-|        |                  | FS bit set to 01 <br /> Low-power mode       |      |  32   |      | mg/digit |
-|        |                  | FS bit set to 10 <br /> High-resolution mode |      |   4   |      | mg/digit |
-|        |                  | FS bit set to 10 <br /> Normal mode          |      |  16   |      | mg/digit |
-|        |                  | FS bit set to 10 <br /> Low-power mode       |      |  64   |      | mg/digit |
-|        |                  | FS bit set to 11 <br /> High-resolution mode |      |  12   |      | mg/digit |
-|        |                  | FS bit set to 11 <br /> Normal mode          |      |  48   |      | mg/digit |
-|        |                  | FS bit set to 11 <br /> Low-power mode       |      |  192  |      | mg/digit |
+##### Acceleration Sensor 
+| Symbol | Parameter         | Test Condition                                | Min. | Typ.  | Max. |   Unit   |
+| ------ | ----------------- | --------------------------------------------- | :--: | :---: | :--: | :------: |
+| FS     | Measurement Range | FS bit set to 00                              |      | ±2.0  |      |    g     |
+|        |                   | FS bit set to 01                              |      | ±4.0  |      |    g     |
+|        |                   | FS bit set to 10                              |      | ±8.0  |      |    g     |
+|        |                   | FS bit set to 10                              |      | ±16.0 |      |    g     |
+| So     | Sensitivity       | FS bit set to 00  <br /> High-resolution mode |      |   1   |      | mg/digit |
+|        |                   | FS bit set to 00  <br /> Normal mode          |      |   4   |      | mg/digit |
+|        |                   | FS bit set to 00  <br /> Low-power mode       |      |  16   |      | mg/digit |
+|        |                   | FS bit set to 01  <br /> High-resolution mode |      |   2   |      | mg/digit |
+|        |                   | FS bit set to 01  <br /> Normal mode          |      |   8   |      | mg/digit |
+|        |                   | FS bit set to 01  <br /> Low-power mode       |      |  32   |      | mg/digit |
+|        |                   | FS bit set to 10  <br /> High-resolution mode |      |   4   |      | mg/digit |
+|        |                   | FS bit set to 10  <br /> Normal mode          |      |  16   |      | mg/digit |
+|        |                   | FS bit set to 10  <br /> Low-power mode       |      |  64   |      | mg/digit |
+|        |                   | FS bit set to 11  <br /> High-resolution mode |      |  12   |      | mg/digit |
+|        |                   | FS bit set to 11  <br /> Normal mode          |      |  48   |      | mg/digit |
+|        |                   | FS bit set to 11  <br /> Low-power mode       |      |  192  |      | mg/digit |
 
 #### Electrical Characteristics
 

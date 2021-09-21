@@ -227,8 +227,8 @@ The following tables below shows the pin definitions of the RAK4200 Evaluation B
 | 8              | USB-           | Not connected                                                                                              |                         |
 | 9              | VBUS           | Not connected                                                                                              |                         |
 | 10             | SW1            | Not connected                                                                                              |                         |
-| 11             | USART1_TX      | USART1 TX pin                                                                                              | PA9                     |
-| 12             | USART1_RX      | USART1 RX pin                                                                                              | PA10                    |
+| 11             | USART1_TX      | UART1 Interface (AT Commands and FW Update)                                                                                              | PA9                     |
+| 12             | USART1_RX      | UART1 Interface (AT Commands and FW Update)                                                                                              | PA10                    |
 | 13             | RESET          | Connected to the reset switch for MCU reset                                                                | PA0                     |
 | 14             | LED1           | Red LED for battery charge indicator                                                                       |                         |
 | 15             | LED2           | Green LED for custom use                                                                                   | Not connected           |
@@ -249,8 +249,8 @@ The following tables below shows the pin definitions of the RAK4200 Evaluation B
 | 30             | IO2            | 3V3_S                                                                                                      |                         |
 | 31             | IO3            | Not connected                                                                                              |                         |
 | 32             | IO4            | Not Connected                                                                                              |                         |
-| 33             | TX1/USART2_TX  | USART2 TX pin                                                                                              | PA2                     |
-| 34             | RX1/USART2_RX  | USART2 RX pin                                                                                              | PA3                     |
+| 33             | TX1/USART2_TX  | UART2 Interface (AT Commands)                                                                                              | PA2                     |
+| 34             | RX1/USART2_RX  | UART2 Interface (AT Commands)                                                                                              | PA3                     |
 | 35             | NC             | Not connected                                                                                              |                         |
 | 36             | NC             | Not connected                                                                                              |                         |
 | 37             | NC             | Not connected                                                                                              |                         |

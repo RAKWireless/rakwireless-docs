@@ -19,10 +19,10 @@ RAK3172 Evaluation WisDuo Board is based on the STM32WLE5CCU6 chip and it is des
 The RAK3172 Evaluation Board consists of two modules:    
 - RAK3372 WisBlock Core module    
    The RAK3372 is a module build with the [RAK3172 WisDuo Stamp module](/Product-Categories/WisDuo/RAK3172-Module/Overview) on a WisBlock Core compatible PCB.
-- RAK5005-O base board    
-   The RAK5005-O is a WisBlock Base Board that provides power supply, battery connector, solar panel charging connector, one IO-Slot and 4 small extension slots to use WisBlock modules with the evaluation board. You can find detailed information in the [RAk5005-O documentation](/Product-Categories/WisBlock/RAK5005-O/Overview).     
+- RAK5005-O Base Board    
+   The RAK5005-O is a WisBlock Base Board that provides power supply, battery connector, solar panel charging connector, one IO-Slot and 4 small extension slots to use WisBlock modules with the evaluation board. You can find detailed information in the [RAK5005-O Documentation](/Product-Categories/WisBlock/RAK5005-O/Overview).     
 
-The USB serial communication is exposed on the USB connector o the RAK5005-O base board. The default parameters of the UART2 communication are **9600 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK3172-E Module Datasheet](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Datasheet).
+The USB serial communication is exposed on the USB connector or the RAK5005-O base board. The default parameters of the UART2 communication are **9600 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK3172-E Module Datasheet](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Datasheet).
 
 ## Links to Quick Start Guide
 
@@ -84,530 +84,836 @@ More details on each command description and examples are given in the remainder
 
 :::tip 📝 NOTE:
 
-In the examples of AT Commands on this document, `ATE` is active therefore each input AT Command is printed before the return values and status return code. It is preceded by a **>** symbol to quickly identify it.
+In the examples of AT Commands on this document, `ATE` is active therefore each input AT Command is printed before the return values and status return code.
 
 :::
 
 ## General Commands
 
-This section describes the generic commands related to “**attention**” help list, link control, and CPU `AT_Slave` reset.
+This section describes the generic commands related to “attention” help list, link control and CPU AT_Slave reset.
 
-1. <b> `AT` </b> 
+- [AT](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at)
+- [ATZ - MCU reset](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#atz)
+- [ATR - Restore default parameters](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#atr)
+- [ATE - Echo command](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#ate)
+- [AT+SN - Device serial number](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-sn)
+
+### AT 
 
 Description: Attention
 
-This command is used to check that the UART communication link is working properly.
+This command is used to check that the UART communication link is working properly and to show all available AT commands.
 
 
-| Command | Input Parameter | Return Value | Return Code |
-| ------- | --------------- | ------------ | ----------- |
-| `AT`    | -               | -            | `OK`        |
-    
+| Command | Input Parameter | Return Value              | Return Code |
+| ------- | --------------- | ------------------------- | ----------- |
+| AT      | -               | -                         | `OK`        |
+| AT?     | -               | All available AT commands | `OK`        |
 
-  
-2. <b> `ATZ` </b> 
+**Example**:
+
+```
+AT
+
+OK
+```
+
+### ATZ 
 
 Description: MCU reset
 
 This command is used to trigger an MCU reset.
 
-| Command | Input Parameter | Return Value            | Return Code |
-| ------- | --------------- | ----------------------- | ----------- |
-| `ATZ?`  | -               | `ATZ` Trig an MCU reset | `OK`        |
-| `ATZ`   | -               | No return. MCU resets.  | `OK`        |
+| Command | Input Parameter | Return Value                                | Return Code |
+| ------- | --------------- | ------------------------------------------- | ----------- |
+| ATZ?    | -               | `ATZ:          Triggers a reset of the MCU` | `OK`        |
+| ATZ     | -               | *No return. MCU resets.*                    |             |
 
-3. <b> `ATR` </b> 
+**Example**:
+```
+ATZ
+
+LoRa (R) is a registered trademark or service mark of Semtech Corporation or its affiliates. LoRaWAN (R) is a licensed mark.
+
+______  ___   _   __  _    _ _          _               
+| ___ \/ _ \ | | / / | |  | (_)        | |              
+| |_/ / /_\ \| |/ /  | |  | |_ _ __ ___| | ___  ___ ___ 
+|    /|  _  ||    \  | |/\| | | '__/ _ \ |/ _ \/ __/ __|
+| |\ \| | | || |\  \ \  /\  / | | |  __/ |  __/\__ \__ \
+\_| \_\_| |_/\_| \_/  \/  \/|_|_|  \___|_|\___||___/___/
+========================================================
+RAK3172-H Version:v1.0.2 May 26 2021
+Current Work Mode: LoRaWAN.
+```
+
+### ATR 
 
 Description: Restore default parameters
 
-This command restores all parameters to the initial default values of the module.
+This command is used to restore all parameters to the initial default values of the module.
 
-| Command | Input Parameter | Return Value | Return Code |
-| ------- | --------------- | ------------ | ----------- |
-| `ATR?`  | -               | -            | `OK`        |
-| `ATR`   | -               | -            | `OK`        |
+| Command | Input Parameter | Return Value                               | Return Code |
+| ------- | --------------- | ------------------------------------------ | ----------- |
+| ATR?    | -               | `ATR:          Restore default parameters` | `OK`        |
+| ATR     | -               | -                                          | `OK`        |
 
-3. <b> `ATE` </b> 
+**Example**:
+```
+ATR
+
+LoRa (R) is a registered trademark or service mark of Semtech Corporation or its affiliates. LoRaWAN (R) is a licensed mark.
+
+______  ___   _   __  _    _ _          _               
+| ___ \/ _ \ | | / / | |  | (_)        | |              
+| |_/ / /_\ \| |/ /  | |  | |_ _ __ ___| | ___  ___ ___ 
+|    /|  _  ||    \  | |/\| | | '__/ _ \ |/ _ \/ __/ __|
+| |\ \| | | || |\  \ \  /\  / | | |  __/ |  __/\__ \__ \
+\_| \_\_| |_/\_| \_/  \/  \/|_|_|  \___|_|\___||___/___/
+========================================================
+RAK3172-H Version:v1.0.2 May 26 2021
+Current Work Mode: LoRa P2P.
+```
+
+### ATE 
 
 Description: Set command echo
 
 This command is used to see the AT command input on the Serial Terminal.
 
-| Command | Input Parameter | Return Value           | Return Code |
-| ------- | --------------- | ---------------------- | ----------- |
-| `ATE?`  | -               | `ATE` Set command echo | `OK`        |
-| `ATE`   | -               | -                      | `OK`        |
+| Command | Input Parameter | Return Value                     | Return Code |
+| ------- | --------------- | -------------------------------- | ----------- |
+| ATE?    | -               | `ATE:          Set command echo` | `OK`        |
+| ATE     | -               | -                                | `OK`        |
 
-4. <b>` AT+SN` </b>  
+**Example**:
+```
+ATE
+
+OK
+```
+
+### AT+SN  
 
 Description: Serial number
 
-This command can read the device serial number.
+This command is used to read the device serial number.
 
-| Command   | Input Parameter | Return Value                          | Return Code |
-| --------- | --------------- | ------------------------------------- | ----------- |
-| `AT+SN?`  | -               | `AT+SN` Read the device serial number | `OK`        |
-| `AT+SN=?` | -               | 0080E11500004CF6                      | `OK`        |
+| Command | Input Parameter | Return Value                                  | Return Code |
+| ------- | --------------- | --------------------------------------------- | ----------- |
+| AT+SN?  | -               | `AT+SN:        Read the device serial number` | `OK`        |
+| AT+SN=? | -               | `0080E11500004CF6`                            | `OK`        |
 
+**Example**:
+```
+AT+SN=?
+0080E11500004CF6
+ 
+OK
+```
+## Keys, IDs and EUIs management
 
-## Keys, IDs, and EUIs Management
+This section describes the commands related to the activation of the end device. EUI's and Keys are **MSB first**.  
 
-This section describes the commands related to the activation of the end device. EUI's and Keys are **MSB first**.
+- [AT+DEVEUI - Set or get device EUI](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-deveui)
+- [AT+APPEUI - Set or get application EUI](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-appeui)
+- [AT+APPKEY - Set or get application key](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-appkey)
+- [AT+DEVADDR - Set or get device address](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-devaddr)
+- [AT+APPSKEY - Set or get application session key](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-appskey)
+- [AT+NWKSKEY - Set or get network session key](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-nwkskey)
 
-1. <b> `AT+DEVEUI` </b> 
+### AT+DEVEUI 
 
 Description: Device EUI or DEVEUI
 
 This command is used to access and configure the device EUI or DEVEUI.
 
-| Command                       | Input Parameter | Return Value                                                  | Return Code              |
-| ----------------------------- | --------------- | ------------------------------------------------------------- | ------------------------ |
-| `AT+DEVEUI?`                  | -               | `AT+DEVEUI=<XXXXXXXXXXXXXXXX><CR>`. Get or Set the Device EUI | `OK`                     |
-| `AT+DEVEUI=?`                 | -               | < 8 hex >                                                     | `OK`                     |
-| `AT+DEVEUI=<Input Parameter>` | < 8 hex >       | -                                                             | `OK` or `AT_PARAM_ERROR` |
+| Command                       | Input Parameter | Return Value                              | Return Code              |
+| ----------------------------- | --------------- | ----------------------------------------- | ------------------------ |
+| AT+DEVEUI?                    | -               | `AT+DEVEUI:    Get or set the device EUI` | `OK`                     |
+| AT+DEVEUI=?                   | -               | *< 8 hex >*                               | `OK`                     |
+| AT+DEVEUI=`<Input Parameter>` | *< 8 hex >*     | -                                         | `OK` or `AT_PARAM_ERROR` |
 
 **Examples**:
 
 ```
-> AT+DEVEUI?
-AT+DEVEUI=<XXXXXXXXXXXXXXXX><CR>. Get or Set the Device EUI
+AT+DEVEUI=1122334455667788
 
 OK
-> AT+DEVEUI=1122334455667788
-
-OK
-> AT+DEVEUI=?
+AT+DEVEUI=?
 1122334455667788
 
 OK
-> AT+DEVEUI=112233445566778800
+AT+DEVEUI=112233445566778800
 
 AT_PARAM_ERROR
 ```
 
-2. <b> `AT+APPEUI` </b>  
+### AT+APPEUI  
 
 Description: Application unique identifier
 
 This command is used to access and configure the APPEUI.
 
-| Command                       | Input Parameter | Return Value                                               | Return Code              |
-| ----------------------------- | --------------- | ---------------------------------------------------------- | ------------------------ |
-| `AT+APPEUI?`                  | -               | `AT+APPEUI=<XXXXXXXXXXXXXXXX><CR>`. Get or Set the App Eui | `OK`                     |
-| `AT+APPEUI=?`                 | -               | < 8 hex >                                                  | `OK`                     |
-| `AT+APPEUI=<Input Parameter>` | < 8 hex >       | -                                                          | `OK` or `AT_PARAM_ERROR` |
+| Command                       | Input Parameter | Return Value                                   | Return Code              |
+| ----------------------------- | --------------- | ---------------------------------------------- | ------------------------ |
+| AT+APPEUI?                    | -               | `AT+APPEUI:    Get or set the application EUI` | `OK`                     |
+| AT+APPEUI=?                   | -               | *< 8 hex >*                                    | `OK`                     |
+| AT+APPEUI=`<Input Parameter>` | *< 8 hex >*     | -                                              | `OK` or `AT_PARAM_ERROR` |
 
 **Examples**:
 
 ```
-> AT+APPEUI?
-AT+APPEUI=<XXXXXXXXXXXXXXXX><CR>. Get or Set the App Eui
+AT+APPEUI=0080E11500004CF6
 
 OK
-> AT+APPEUI=0080E11500004CF6
-
-OK
-> AT+APPEUI=?
+AT+APPEUI=?
 0080e11500004cf6
 
 OK
-> AT+APPEUI=0080E11500004CF61234
+AT+APPEUI=0080E11500004CF61234
 
 AT_PARAM_ERROR
 ```
 
-3. <b> `AT+APPKEY` </b> 
+### AT+APPKEY 
 
 Description: Application key
 
 This command is used to access and configure the APPKEY.
 
-| Command                       | Input Parameter | Return Value                                                                       | Return Code              |
-| ----------------------------- | --------------- | ---------------------------------------------------------------------------------- | ------------------------ |
-| `AT+APPKEY?`                  | -               | `AT+APPKEY=<XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX><CR>`. Get or Set the Application Key | `OK`                     |
-| `AT+APPKEY=?`                 | -               | < 16 hex >                                                                         | `OK`                     |
-| `AT+APPKEY=<Input Parameter>` | < 16 hex >      | -                                                                                  | `OK` or `AT_PARAM_ERROR` |
+| Command                       | Input Parameter | Return Value                                   | Return Code              |
+| ----------------------------- | --------------- | ---------------------------------------------- | ------------------------ |
+| AT+APPKEY?                    | -               | `AT+APPKEY:    Get or set the application key` | `OK`                     |
+| AT+APPKEY=?                   | -               | *< 16 hex >*                                   | `OK`                     |
+| AT+APPKEY=`<Input Parameter>` | *< 16 hex >*    | -                                              | `OK` or `AT_PARAM_ERROR` |
 
 **Examples**:
 
 ```
-> AT+APPKEY?
-AT+APPKEY=<XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX><CR>. Get or Set the Application Key
+AT+APPKEY=01020AFBA1CD4D20010230405A6B7F88
 
 OK
-> AT+APPKEY=01020AFBA1CD4D20010230405A6B7F88
-
-OK
-> AT+APPKEY=?
+AT+APPKEY=?
 01020afba1cd4d20010230405a6b7f88
 
 OK
-> AT+APPKEY=01020AFBA1CD4D20010230405A6B7F
+AT+APPKEY=01020AFBA1CD4D20010230405A6B7F
 
 AT_PARAM_ERROR
 ```
 
-4. <b> `AT+DEVADDR` </b> 
+### AT+DEVADDR 
 
 Description: Device address or DEVADDR
 
 This command is used to access and configure the device address or DEVADDR.
 
-| Command                        | Input Parameter | Return Value                                               | Return Code              |
-| ------------------------------ | --------------- | ---------------------------------------------------------- | ------------------------ |
-| `AT+DEVADDR?`                  | -               | `AT+DEVADDR=<XXXXXXXX><CR>`. Get or Set the Device address | `OK`                     |
-| `AT+DEVADDR=?`                 | -               | < 4 hex >                                                  | `OK`                     |
-| `AT+DEVADDR=<Input Parameter>` | < 4 hex >       | -                                                          | `OK` or `AT_PARAM_ERROR` |
+| Command                        | Input Parameter | Return Value                                  | Return Code              |
+| ------------------------------ | --------------- | --------------------------------------------- | ------------------------ |
+| AT+DEVADDR?                    | -               | `AT+DEVADDR:   Get or set the device address` | `OK`                     |
+| AT+DEVADDR=?                   | -               | *< 4 hex >*                                   | `OK`                     |
+| AT+DEVADDR=`<Input Parameter>` | *< 4 hex >*     | -                                             | `OK` or `AT_PARAM_ERROR` |
 
 **Examples**:
 
 ```
-> AT+DEVADDR?
-AT+DEVADDR=<XXXXXXXXXXXXXXXX><CR>. Get or Set the Device EUI
+AT+DEVADDR=01020A0B
 
 OK
-> AT+DEVADDR=01020A0B
-
-OK
-> AT+DEVADDR=?
+AT+DEVADDR=?
 01020a0b
 
 OK
-> AT+DEVADDR=01020A0BCC
+AT+DEVADDR=01020A0BCC
 
 AT_PARAM_ERROR
 ```
 
-5. <b> `AT+APPSKEY` </b> 
+### AT+APPSKEY 
 
 Description: Application session key
 
 This command is used to access and configure the application session key or APPSKEY.
 
-| Command                        | Input Parameter | Return Value                                                                                | Return Code              |
-| ------------------------------ | --------------- | ------------------------------------------------------------------------------------------- | ------------------------ |
-| `AT+APPSKEY?`                  | -               | `AT+APPSKEY=<XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX><CR>`. Get or Set the Application Session Key | `OK`                     |
-| `AT+APPSKEY=?`                 | -               | < 16 hex >                                                                                  | `OK`                     |
-| `AT+APPSKEY=<Input Parameter>` | < 16 hex >      | -                                                                                           | `OK` or `AT_PARAM_ERROR` |
+| Command                        | Input Parameter | Return Value                                           | Return Code              |
+| ------------------------------ | --------------- | ------------------------------------------------------ | ------------------------ |
+| AT+APPSKEY?                    | -               | `AT+APPSKEY:   Get or set the application session key` | `OK`                     |
+| AT+APPSKEY=?                   | -               | *< 16 hex >*                                           | `OK`                     |
+| AT+APPSKEY=`<Input Parameter>` | *< 16 hex >*    | -                                                      | `OK` or `AT_PARAM_ERROR` |
 
 **Examples**:
 
 ```
-> AT+APPSKEY?
-AT+APPSKEY=<XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX><CR>. Get or Set the Application Session Key
+AT+APPSKEY=01020AFBA1CD4D20010230405A6B7F88
 
 OK
-> AT+APPSKEY=01020AFBA1CD4D20010230405A6B7F88
-
-OK
-> AT+APPSKEY=?
+AT+APPSKEY=?
 01020afba1cd4d20010230405a6b7f88
 
 OK
-> AT+APPSKEY=01020AFBA1CD4D20010230405A6B7F
+AT+APPSKEY=01020AFBA1CD4D20010230405A6B7F
 
 AT_PARAM_ERROR
 ```
 
-6. <b> `AT+NWKSKEY` </b> 
+### AT+NWKSKEY 
 
 Description: Network session keys
 
 This command is used to access and configure the network session keys or NWKSKEY.
 
-| Command                        | Input Parameter | Return Value                                                                                | Return Code              |
-| ------------------------------ | --------------- | ------------------------------------------------------------------------------------------- | ------------------------ |
-| `AT+NWKSKEY?`                  | -               | `AT+APPSKEY=<XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX><CR>`. Get or Set the Application Session Key | `OK`                     |
-| `AT+NWKSKEY=?`                 | -               | < 16 hex >                                                                                  | `OK`                     |
-| `AT+NWKSKEY=<Input Parameter>` | < 16 hex >      | -                                                                                           | `OK` or `AT_PARAM_ERROR` |
+| Command                        | Input Parameter | Return Value                                       | Return Code              |
+| ------------------------------ | --------------- | -------------------------------------------------- | ------------------------ |
+| AT+NWKSKEY?                    | -               | `AT+NWKSKEY:   Get or set the network session key` | `OK`                     |
+| AT+NWKSKEY=?                   | -               | *< 16 hex >*                                       | `OK`                     |
+| AT+NWKSKEY=`<Input Parameter>` | *< 16 hex >*    | -                                                  | `OK` or `AT_PARAM_ERROR` |
 
 **Examples**:
 
 ```
-> AT+NWKSKEY?
-AT+NWKSKEY=<XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX><CR>. Get or Set the Network Session Key
+AT+NWKSKEY=01020AFBA1CD4D20010230405A6B7F88
 
 OK
-> AT+NWKSKEY=01020AFBA1CD4D20010230405A6B7F88
-
-OK
-> AT+NWKSKEY=?
+AT+NWKSKEY=?
 01020afba1cd4d20010230405a6b7f88
 
 OK
-> AT+NWKSKEY=01020AFBA1CD4D20010230405A6B7F
+AT+NWKSKEY=01020AFBA1CD4D20010230405A6B7F
 
 AT_PARAM_ERROR
 ```
 
-
-## Joining and Sending Data to LoRaWAN® Network
+## Joining and Sending Data to LoRaWAN® network
 
 This section describes the commands related to the joining process of the device to the LoRaWAN® network.
 
-1. <b> `AT+NJM` </b> 
+- [AT+NJM - Set or get LoRaWAN join mode (OTAA or ABP)](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-njm)
+- [AT+CFM - Configure confirmed/unconfirmed payload](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-cfm)
+- [AT+JOIN - Join command](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-join)
+- [AT+NJS - Check join status](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-njs)
+- [AT+SEND - LoRaWAN payload send](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-send)
+- [AT+CFS - Status of last payload if confirmed or unconfirmed](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-cfs)
+- [AT+RECV - Read last received data](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-recv)
+
+### AT+NJM 
 
 Description: LoRaWAN® network join mode
 
 This command is used to access and configure the activation method of the device either OTAA or ABP.
 
-| Command                    | Input Parameter | Return Value                                                  | Return Code              |
-| -------------------------- | --------------- | ------------------------------------------------------------- | ------------------------ |
-| `AT+NJM?`                  | -               | `AT+NJM` Get or set the network join mode (0 = ABP, 1 = OTAA) | `OK`                     |
-| `AT+NJM=?`                 | -               | 0 or 1                                                        | `OK`                     |
-| `AT+NJM=<Input Parameter>` | 0 or 1          | -                                                             | `OK` or `AT_PARAM_ERROR` |
+| Command                    | Input Parameter | Return Value                                                     | Return Code              |
+| -------------------------- | --------------- | ---------------------------------------------------------------- | ------------------------ |
+| AT+NJM?                    | -               | `AT+NJM:       Get or set the network join mode (0:ABP, 1:OTAA)` | `OK`                     |
+| AT+NJM=?                   | -               | `0` or `1`                                                       | `OK`                     |
+| AT+NJM=`<Input Parameter>` | `0` or `1`      | -                                                                | `OK` or `AT_PARAM_ERROR` |
 
 **Examples**:
 
 ```
-> AT+NJM?
-AT+NJM Get or set the network join mode (0 = ABP, 1 = OTAA)
+AT+NJM=1
 
 OK
-> AT+NJM=1
-
-OK
-> AT+NJM=?
+AT+NJM=?
 1
 
 OK
-> AT+NJM=2
+AT+NJM=2
 
 AT_PARAM_ERROR
 ```
 
-2. <b> `AT+CFM` </b> 
+### AT+CFM 
 
 Description: Confirmed payload mode
 
 This command is used to access and configure type of payload of the device.
 
-| Command                    | Input Parameter | Return Value                                | Return Code              |
-| -------------------------- | --------------- | ------------------------------------------- | ------------------------ |
-| `AT+CFM?`                  | -               | `AT+CFM`: Get or set the confirm mode (0-1) | `OK`                     |
-| `AT+CFM=?`                 | -               | 0 (Unconfirmed) or 1 (Confirmed)            | `OK`                     |
-| `AT+CFM=<Input Parameter>` | 0 or 1          | -                                           | `OK` or `AT_PARAM_ERROR` |
+| Command                    | Input Parameter | Return Value                                                             | Return Code            |
+| -------------------------- | --------------- | ------------------------------------------------------------------------ | ---------------------- |
+| AT+CFM?                    | -               | `AT+CFM:       Get or set the confirm mode (0:unconfirmed, 1:confirmed)` | OK                     |
+| AT+CFM=?                   | -               | 0 *(if Unconfirmed) or* 1 *(if confirmed)*                               | OK                     |
+| AT+CFM=`<Input Parameter>` | 0 or 1          | -                                                                        | OK *or* AT_PARAM_ERROR |
 
-3. <b> `AT+JOIN` </b>
+**Examples**:
+
+```
+AT+CFM=1
+
+OK
+AT+CFM=?
+1
+
+OK
+AT+CFM=2
+
+AT_PARAM_ERROR
+```
+
+### AT+JOIN
 
 Description: Join LoRaWAN® network
 
 This command is used to join a LoRaWAN® network.
 
-| Command                     | Input Parameter                                                                                   | Return Value                     | Return Code             |
-| --------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------- | ----------------------- |
-| `AT+JOIN?`                  | -                                                                                                 | `AT+JOIN`: Join network          | `OK`                    |
-| `AT+JOIN=?`                 | -                                                                                                 | *Param1, Param2, Param3, Param4* | `OK` or `AT_BUSY_ERROR` |
-| `AT+JOIN=<Input Parameter>` | *Param1:Param2:Param3:Param4*                                                                     | -                                | `OK`                    |
-|                             | *Param1* = **Join command**: 1 for joining the network, 0 for stop joining                        |                                  |                         |
-|                             | *Param2* = **Auto-Join config**: 1 for Auto-join on power up), 0 for no auto-join. (0 is default) |                                  |                         |
-|                             | *Param3* = **Reattempt interval**: 7 - 255 seconds (8 is default)                                 |                                  |                         |
-|                             | *Param4* = **No. of join attempts**: 0 - 255 (0 is default)                                       |                                  |                         |
+| Command                     | Input Parameter                                                                                    | Return Value                     | Return Code           |
+| --------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------- | --------------------- |
+| AT+JOIN?                    | -                                                                                                  | `AT+JOIN:      Join network`     | OK                    |
+| AT+JOIN=?                   | -                                                                                                  | *Param1, Param2, Param3, Param4* | OK *or* AT_BUSY_ERROR |
+| AT+JOIN=`<Input Parameter>` | *Param1:Param2:Param3:Param4*                                                                      | -                                | OK                    |
+|                             | *Param1* = **Join command**: 1 for joining the network , 0 for stop joining                        |                                  |                       |
+|                             | *Param2* = **Auto-Join config**: 1 for Auto-join on power up) , 0 for no auto-join. (0 is default) |                                  |                       |
+|                             | *Param3* = **Reattempt interval**: 7 - 255 seconds (8 is default)                                  |                                  |                       |
+|                             | *Param4* = **No. of join attempts**: 0 - 255 (0 is default)                                        |                                  |                       |
 
 :::tip 📝 NOTE:
 
-This is an asynchronous command. **OK** means that the device is joining. The completion of the JOIN can be verified with `AT+NJS=?` command.
+This is an asynchronous command. OK means that the device is joining. The completion of the JOIN can be verified with AT+NJS=? command.
 
 :::
 
-4. <b> `AT+NJS` </b> 
+**Examples**:
+
+Successful join attempt
+```
+AT+JOIN=1:0:10:8
+
+OK
++EVT:JOINED
+```
+
+Failed join attempt
+```
+AT+JOIN=1:0:10:8
+
+OK
++EVT:JOIN FAILED
+```
+:::tip 📝 NOTE:
+
+If joining fails, make sure your device is within the coverage of the gateway. Also ensure that the RAK3172 is in LoRaWAN mode via `AT+NWM=1`, region is correct via `AT+BAND` and the EUIs and keys are correct.
+
+:::
+### AT+NJS 
 
 Description: Network join status
 
 This command is used to check the status of the devices if it is connected to a LoRaWAN® network.
 
-| Command    | Input Parameter | Return Value                  | Return Code |
-| ---------- | --------------- | ----------------------------- | ----------- |
-| `AT+NJS?`  | -               | `AT+NJS`: Get the join status | `OK`        |
-| `AT+NJS=?` | -               | 0 (not joined) or 1 (joined)  | `OK`        |
+| Command  | Input Parameter | Return Value                     | Return Code |
+| -------- | --------------- | -------------------------------- | ----------- |
+| AT+NJS?  | -               | `AT+NJS: Get the join status`    | OK          |
+| AT+NJS=? | -               | 0 *(not joined) or* 1 *(joined)* | OK          |
 
-5. <b> `AT+SEND` </b>
+**Examples**:
+```
+AT+NJS=?
+1
+
+OK
+```
+
+### AT+SEND 
 
 Description: Send payload data
 
 This command is used to send LoRaWAN® payload on specific port.
 
-| Command                     | Input Parameter      | Return Value                                         | Return Code                                                        |
-| --------------------------- | -------------------- | ---------------------------------------------------- | ------------------------------------------------------------------ |
-| `AT+SEND?`                  | -                    | `AT+SEND`: Send data along with the application port | `OK`                                                               |
-| `AT+SEND=<Input Parameter>` | **port**:**payload** | -                                                    | `OK`, `AT_NO_NETWORK_JOINED`, `AT_PARAM_ERROR`, or `AT_BUSY_ERROR` |
+| Command                     | Input Parameter      | Return Value                                              | Return Code                                                   |
+| --------------------------- | -------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| AT+SEND?                    | -                    | `AT+SEND:      Send data along with the application port` | OK                                                            |
+| AT+SEND=`<Input Parameter>` | **port**:**payload** | -                                                         | OK , AT_NO_NETWORK_JOINED , AT_PARAM_ERROR *or* AT_BUSY_ERROR |
 
-6.  <b> `AT+CFS` </b>
+**Examples**:
+
+Unconfirmed Payload
+```
+AT+SEND=2:1234
+
+OK
+```
+Confirm Payload
+```
+AT+SEND=2:1234
+
+OK
++EVT:SEND CONFIRMED OK
+```
+With Downlink from the Network Server. Downlink info: FPort = 3, Payload = 4321.
+```
+AT+SEND=2:1234
+
+OK
++EVT:RX_1, RSSI -52, SNR 9
++EVT:UNICAST
++EVT:3:4321
+```
+### AT+CFS 
 
 Description: Confirm status
 
-This command is used to access the status of the last “SEND” command
+This command is used to access the status of the last confirmed “SEND” command
 
-| Command    | Input Parameter | Return Value                                                      | Return Code |
-| ---------- | --------------- | ----------------------------------------------------------------- | ----------- |
-| `AT+CFS?`  | -               | `AT+CFS`: Get the confirmation status of the last `AT+SEND` (0-1) | `OK`        |
-| `AT+CFS=?` | -               | 0 or 1                                                            | `OK`        |
+| Command  | Input Parameter | Return Value                                                    | Return Code |
+| -------- | --------------- | --------------------------------------------------------------- | ----------- |
+| AT+CFS?  | -               | `AT+CFS: Get the confirmation status of the last AT+SEND (0-1)` | OK          |
+| AT+CFS=? | -               | 0 *or* 1                                                        | OK          |
 
-7. <b> `AT+RECV` </b>
+**Example**:
+Last confirmed uplink packet is successful.
+```
+AT+CFS=?
+1
+
+OK
+```
+Last confirmed uplink packet failed.
+```
+AT+CFS=?
+0
+
+OK
+```
+
+:::tip 📝 NOTE:
+
+`AT+CFS=?` only reflects the status of the last confirmed packet send via `AT+SEND` command. If the last confirmed packet is successful, it will return 1. If the last confirmed packets fails, it will return 0. This is true regardless if you send successful unconfirmed packets in between confirmed payloads. `AT+CFS=?` only tracks the last confirmed packet.
+
+:::
+
+### AT+RECV 
 
 Description: Last received data
 
 This command is used to get the last received data in hex format.
 
-| Command     | Input Parameter | Return Value                                          | Return Code |
-| ----------- | --------------- | ----------------------------------------------------- | ----------- |
-| `AT+RECV?`  | -               | `AT+RECV`: Print the last received data in hex format | `OK`        |
-| `AT+RECV=?` | -               | **port:payload** (in HEX)                             | `OK`        |
+| Command   | Input Parameter | Return Value                                          | Return Code |
+| --------- | --------------- | ----------------------------------------------------- | ----------- |
+| AT+RECV?  | -               | `AT+RECV: Print the last received data in hex format` | OK          |
+| AT+RECV=? | -               | **port:payload** (in HEX)                             | OK          |
 
+**Example**:
+```
+AT+RECV=?
+3:4321
+
+OK
+```
 
 :::tip 📝 NOTE:
 
-When called twice, without new data received between the calls, the second `AT+RECV=?` returns an empty value.
+When called twice, without new data received between the calls, the second AT+RECV=? returns an empty value:
 
-`0:<CR><LF>` <br>
-`<CR><LF>OK<CR><LF>`
+`AT+RECV=?`
 
+`0:`
+
+`OK`
 :::
-
-
 
 ## LoRaWAN® device configuration
 
 This section describes the commands related to the configuration of the LoRaWAN® device.
 
-1. <b> `AT+ADR` </b>
+- [AT+ADR - Set or get ADR - Adaptive Data Rate](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-adr)
+- [AT+CLASS - LoRaWAN Class Configuration](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-class)
+- [AT+DCS - Duty Cycle Settings](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-dcs)
+- [AT+DUTYTIME - Get the duty cycle time](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-dutytime)
+- [AT+DR - Configure and checking data rate](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-dr)
+- [AT+JN1DL - Join delay on RX1 window](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-jn1dl)
+- [AT+JN2DL - Join delay on RX2 window](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-jn2dl)
+- [AT+RX1DL - Delay on RX1 window](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-rx1dl)
+- [AT+RX2DL - Delay on RX2 window](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-rx2dl)
+- [AT+RX2DR - Data Rate on RX2 window](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-rx2dr)
+- [AT+RX2FQ - Frequency of the RX2 window](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-rx2fq)
+- [AT+TXP -  Transmit power](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-txp)
+- [AT+RETY - Confirm payload retransmission](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-rety)
+- [AT+MASK - Setting masked channels](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-mask)
+- [AT+BAND - Regional frequency band](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-band)
+- [AT+LPSEND - Long data payload](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-lpsend)
+- [AT+LINKCHECK - Network link status](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-linkcheck)
+- [AT+USEND - Unified send payload data](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-usend)
+
+### AT+ADR 
 
 Description: Adaptive data rate
 
 This command is used to access and configure the adaptive data rate of the module.
 
-| Command                    | Input Parameter | Return Value                                                                      | Return Code              |
-| -------------------------- | --------------- | --------------------------------------------------------------------------------- | ------------------------ |
-| `AT+ADR?`                  | -               | `AT+ADR=<ADR><CR>`: Get or Set the Adaptive Data Rate setting `ADR=[0:off, 1:on]` | `OK`                     |
-| `AT+ADR=?`                 | -               | 0 (ADR off) or 1 (ARD on)                                                         | `OK`                     |
-| `AT+ADR=<Input Parameter>` | 0 or 1          | -                                                                                 | `OK` or `AT_PARAM_ERROR` |
+| Command                    | Input Parameter | Return Value                                                                    | Return Code            |
+| -------------------------- | --------------- | ------------------------------------------------------------------------------- | ---------------------- |
+| AT+ADR?                    | -               | `AT+ADR:       Get or set the adaptive data rate setting (0:disable, 1:enable)` | OK                     |
+| AT+ADR=?                   | -               | 0 *(ADR off) or* 1 *(ARD on)*                                                   | OK                     |
+| AT+ADR=`<Input Parameter>` | 0 or 1          | -                                                                               | OK *or* AT_PARAM_ERROR |
+**Examples**:
+```
+AT+ADR=1
 
-2. <b> `AT+CLASS`  </b>
+OK
+AT+ADR=?
+1
+
+OK
+```
+
+### AT+CLASS 
 
 Description: LoRaWAN® class
 
 This command is used to access and configure the the LoRaWAN® class of the module.
 
-| Command                      | Input Parameter | Return Value                                                    | Return Code              |
-| ---------------------------- | --------------- | --------------------------------------------------------------- | ------------------------ |
-| `AT+CLASS?`                  | -               | `AT+CLASS=<Class><CR>`: Get or Set the Device `Class=[A, B, C]` | `OK`                     |
-| `AT+CLASS=?`                 | -               | A, B, or C                                                      | `OK`                     |
-| `AT+CLASS=<Input Parameter>` | A, B, or C      | -                                                               | `OK` or `AT_PARAM_ERROR` |
+| Command                      | Input Parameter | Return Value                                          | Return Code            |
+| ---------------------------- | --------------- | ----------------------------------------------------- | ---------------------- |
+| AT+CLASS?                    | -               | `AT+CLASS:     Get or set the device class (A, B, C)` | OK                     |
+| AT+CLASS=?                   | -               | A, B or C                                             | OK                     |
+| AT+CLASS=`<Input Parameter>` | A, B or C       | -                                                     | OK *or* AT_PARAM_ERROR |
+
+**Examples**:
+```
+AT+CLASS=A
+
+OK
+AT+CLASS=?
+A
+
+OK
+```
 
 :::tip 📝 NOTE:
 
-This FW of the device supports the LoRaWAN® V1.0.3 stack.
+When operating in CLASS B, more return value is shown that shows the current state of Class B operation:
 
+| Class B Status and Description |
+| ------------------------------ |
+| `B,S0` = DeviceTimeReq         |
+| `B,S1` = Beacon Searching      |
+| `B,S2` = Beacon Locked         |
+| `B,S3` = Beacon Failed         |
+
+
+Example:
+```
+AT+CLASS=B
+
+OK
+AT+CLASS=?
+B,S0
+
+OK
+```
 :::
 
-3. <b> `AT+DCS` </b>
+
+### AT+DCS 
 
 Description: Duty cycle settings
 
 This command is used to access and configure duty cycle settings.
 
-| Command                    | Input Parameter | Return Value                                                                    | Return Code              |
-| -------------------------- | --------------- | ------------------------------------------------------------------------------- | ------------------------ |
-| `AT+DCS?`                  | -               | `AT+DCS=<DutyCycle><CR>`: Get or Set the ETSI `DutyCycle=[0:disable, 1:enable]` | `OK`                     |
-| `AT+DCS=?`                 | -               | 0 (disabled) or 1 (enabled)                                                     | `OK`                     |
-| `AT+DCS=<Input Parameter>` | 0 or 1          | -                                                                               | `OK` or `AT_PARAM_ERROR` |
+| Command                    | Input Parameter | Return Value                                                                 | Return Code            |
+| -------------------------- | --------------- | ---------------------------------------------------------------------------- | ---------------------- |
+| AT+DCS?                    | -               | `AT+DCS:       Get or set the ETSI duty cycle setting (0:disable, 1:enable)` | OK                     |
+| AT+DCS=?                   | -               | 0 *(disabled) or* 1 *(enabled)*                                              | OK                     |
+| AT+DCS=`<Input Parameter>` | 0 or 1          | -                                                                            | OK *or* AT_PARAM_ERROR |
+**Examples**:
+```
+AT+DCS=1
 
-4. <b> `AT+DUTYTIME` </b>
+OK
+AT+DCS=?
+1
+
+OK
+```
+
+### AT+DUTYTIME 
 
 Description: Get the duty cycle time
 
-This command is used to get the duty cycle time (in seconds). The command is only used in the EU868, RU864, and EU433 frequency bands. Other frequency band query will return 0.
+This command is used to get the duty cycle time (in seconds). The command is only used in the EU868, RU864 and EU433 frequency bands. Other frequency band query will return 0.
 
-| Command         | Input Parameter | Return Value                               | Return Code |
-| --------------- | --------------- | ------------------------------------------ | ----------- |
-| `AT+DUTYTIME?`  | -               | `AT+DUTYTIME`: Get the duty cycle time (s) | `OK`        |
-| `AT+DUTYTIME=?` | -               | `<time is in seconds>`                     | `OK`        |
+| Command       | Input Parameter | Return Value                            | Return Code |
+| ------------- | --------------- | --------------------------------------- | ----------- |
+| AT+DUTYTIME?  | -               | `AT+DUTYTIME:  Get the duty cycle time` | OK          |
+| AT+DUTYTIME=? | -               | `<time is in seconds>`                  | OK          |
 
-5. <b> `AT+DR` </b> 
+**Example**:
+```
+AT+DUTYTIME=?
+0
+
+OK
+```
+
+### AT+DR 
 
 Description: Data rate settings
 
 This command is used to access and configure data rate settings.
 
-| Command                   | Input Parameter | Return Value                                                | Return Code              |
-| ------------------------- | --------------- | ----------------------------------------------------------- | ------------------------ |
-| `AT+DR`?                  | -               | `AT+DR=<DataRate><CR>`: Get or Set the `Tx DataRate=[0..7]` | `OK`                     |
-| `AT+DR=?`                 | -               | `0`,`1`,`2`,`3`,`4`,`5`,`6`,`7`                             | `OK`                     |
-| `AT+DR=<Input Parameter>` | 0,1,2,3,4,5,6,7 | -                                                           | `OK` or `AT_PARAM_ERROR` |
+| Command                   | Input Parameter                 | Return Value                                                         | Return Code            |
+| ------------------------- | ------------------------------- | -------------------------------------------------------------------- | ---------------------- |
+| AT+DR?                    | -                               | `AT+DR:        Get or set the data rate (0-7 corresponding to DR_X)` | `OK`                   |
+| AT+DR=?                   | -                               | `0`,`1`,`2`,`3`,`4`,`5`,`6`,`7`                                      | OK                     |
+| AT+DR=`<Input Parameter>` | `0`,`1`,`2`,`3`,`4`,`5`,`6`,`7` | -                                                                    | OK *or* AT_PARAM_ERROR |
+**Examples**:
+```
+AT+DR=1
 
-6. <b> `AT+JN1DL` </b> 
+OK
+AT+DR=?
+1
+
+OK
+```
+
+:::tip 📝 NOTE:
+
+`AT+DR` command will return `AT+ERROR` if ADR is active via `AT+ADR` command.
+:::
+
+### AT+JN1DL 
 
 Description: Join delay on RX1 window
 
 This command is used to access and configure the join delay on RX1 window.
 
-| Command                      | Input Parameter | Return Value                                                                                           | Return Code                                |
-| ---------------------------- | --------------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------ |
-| `AT+JN1DL?`                  | -               | `AT+JN1Dl`: Get or set the joint accept delay between the end of the Tx and the join Rx window 1 in ms | `OK`                                       |
-| `AT+JN1DL=?`                 | -               | < integer >                                                                                            | `OK` or `AT_BUSY_ERROR`                    |
-| `AT+JN1DL=<Input Parameter>` | < integer >     | -                                                                                                      | `OK`, `AT+BUSY_ERROR`, or `AT_PARAM_ERROR` |
+| Command                      | Input Parameter | Return Value                                                                                          | Return Code                              |
+| ---------------------------- | --------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| AT+JN1DL?                    | -               | `AT+JN1Dl: Get or set the join accept delay between the end of the Tx and the join Rx window 1 in ms` | `OK`                                     |
+| AT+JN1DL=?                   | -               | *< integer >*                                                                                         | `OK` or `AT_BUSY_ERROR`                  |
+| AT+JN1DL=`<Input Parameter>` | *< integer >*   | -                                                                                                     | `OK`,`AT_BUSY_ERROR` or `AT_PARAM_ERROR` |
 
-7. <b> `AT+JN2DL` </b>
+**Examples**:
+```
+AT+JN1DL=5000
+
+OK
+AT+JN1DL=?
+5000
+
+OK
+```
+
+### AT+JN2DL 
 
 Description: Join delay on RX2 window
 
 This command is used to access and configure the join delay on RX2 window.
 
-| Command                      | Input Parameter | Return Value                                                                                           | Return Code                                   |
-| ---------------------------- | --------------- | ------------------------------------------------------------------------------------------------------ | --------------------------------------------- |
-| `AT+JN2DL?`                  | -               | `AT+JN2Dl`: Get or set the joint accept delay between the end of the Tx and the join Rx window 2 in ms | `OK`                                          |
-| `AT+JN2DL=?`                 | -               | < integer >                                                                                            | `OK` or `AT_BUSY_ERROR`                       |
-| `AT+JN2DL=<Input Parameter>` | < integer >     | -                                                                                                      | `OK`, `AT+AT_BUSY_ERROR`, or `AT_PARAM_ERROR` |
+| Command                      | Input Parameter | Return Value                                                                                          | Return Code                              |
+| ---------------------------- | --------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| AT+JN2DL?                    | -               | `AT+JN2Dl: Get or set the join accept delay between the end of the Tx and the join Rx window 2 in ms` | `OK`                                     |
+| AT+JN2DL=?                   | -               | *< integer >*                                                                                         | `OK` or `AT_BUSY_ERROR`                  |
+| AT+JN2DL=`<Input Parameter>` | *< integer >*   | -                                                                                                     | `OK`,`AT_BUSY_ERROR` or `AT_PARAM_ERROR` |
 
-8. <b> `AT+RX1DL` </b> 
+**Examples**:
+```
+AT+JN2DL=6000
+
+OK
+AT+JN2DL=?
+6000
+
+OK
+```
+
+### AT+RX1DL 
 
 Description: Delay on RX1 window
 
 This command is used to access and configure the delay on RX1 window.
 
-| Command                      | Input Parameter | Return Value                                                                         | Return Code                                |
-| ---------------------------- | --------------- | ------------------------------------------------------------------------------------ | ------------------------------------------ |
-| `AT+RX1DL?`                  | -               | `AT+RX1DL`: Get or set the delay between the end of the Tx and the Rx window 1 in ms | `OK`                                       |
-| `AT+RX1DL=?`                 | -               | < integer >                                                                          | `OK` or `AT_BUSY_ERROR`                    |
-| `AT+RX1DL=<Input Parameter>` | < integer >     | -                                                                                    | `OK`, `AT_BUSY_ERROR`, or `AT_PARAM_ERROR` |
+| Command                      | Input Parameter | Return Value                                                                         | Return Code                              |
+| ---------------------------- | --------------- | ------------------------------------------------------------------------------------ | ---------------------------------------- |
+| AT+RX1DL?                    | -               | `AT+RX1DL: Get or set the delay between the end of the Tx and the Rx window 1 in ms` | `OK`                                     |
+| AT+RX1DL=?                   | -               | *< integer >*                                                                        | `OK` or `AT_BUSY_ERROR`                  |
+| AT+RX1DL=`<Input Parameter>` | *< integer >*   | -                                                                                    | `OK`,`AT_BUSY_ERROR` or `AT_PARAM_ERROR` |
 
-9. <b> `AT+RX2DL` </b> 
+**Examples**:
+```
+AT+RX1DL=1000
+
+OK
+AT+RX1DL=?
+1000
+
+OK
+```
+
+### AT+RX2DL 
 
 Description: Delay on RX2 window
 
 This command is used to access and configure the delay on RX2 window.
 
-| Command                      | Input Parameter | Return Value                                                                         | Return Code                                |
-| ---------------------------- | --------------- | ------------------------------------------------------------------------------------ | ------------------------------------------ |
-| `AT+RX2DL?`                  | -               | `AT+RX2DL`: Get or set the delay between the end of the Tx and the Rx window 2 in ms | `OK`                                       |
-| `AT+RX2DL=?`                 | -               | < integer >                                                                          | `OK` or `AT_BUSY_ERROR`                    |
-| `AT+RX2DL=<Input Parameter>` | < integer >     | -                                                                                    | `OK`, `AT_BUSY_ERROR`, or `AT_PARAM_ERROR` |
+| Command                      | Input Parameter | Return Value                                                                         | Return Code                              |
+| ---------------------------- | --------------- | ------------------------------------------------------------------------------------ | ---------------------------------------- |
+| AT+RX2DL?                    | -               | `AT+RX2DL: Get or set the delay between the end of the Tx and the Rx window 2 in ms` | `OK`                                     |
+| AT+RX2DL=?                   | -               | *< integer >*                                                                        | `OK` or `AT_BUSY_ERROR`                  |
+| AT+RX2DL=`<Input Parameter>` | *< integer >*   | -                                                                                    | `OK`,`AT_BUSY_ERROR` or `AT_PARAM_ERROR` |
 
-10. <b> `AT+RX2DR` </b>
+**Examples**:
+```
+AT+RX2DL=6000
+
+OK
+AT+RX2DL=?
+6000
+
+OK
+```
+
+### AT+RX2DR 
 
 Description: Data Rate on RX2 window
 
 This command is used to access and configure the data rate of the RX2 window.
 
-| Command                      | Input Parameter | Return Value                                                                | Return Code                                |
-| ---------------------------- | --------------- | --------------------------------------------------------------------------- | ------------------------------------------ |
-| `AT+RX2DR?`                  | -               | `AT+RX2DR`: Get or set the Rx2 window data rate (0-7) corresponding to DR_X | `OK`                                       |
-| `AT+RX2DR=?`                 | -               | `0`,`1`,`2`,`3`,`4`,`5`,`6`,`7`                                             | `OK` or `AT_BUSY_ERROR`                    |
-| `AT+RX2DR=<Input Parameter>` | 0,1,2,3,4,5,6,7 | -                                                                           | `OK`, `AT_BUSY_ERROR`, or `AT_PARAM_ERROR` |
+| Command                      | Input Parameter | Return Value                                                                | Return Code                              |
+| ---------------------------- | --------------- | --------------------------------------------------------------------------- | ---------------------------------------- |
+| AT+RX2DR?                    | -               | `AT+RX2DR: Get or set the Rx2 window data rate (0-7) corresponding to DR_X` | `OK`                                     |
+| AT+RX2DR=?                   | -               | `0`,`1`,`2`,`3`,`4`,`5`,`6`,`7`                                             | `OK` or `AT_BUSY_ERROR`                  |
+| AT+RX2DR=`<Input Parameter>` | 0,1,2,3,4,5,6,7 | -                                                                           | `OK`,`AT_BUSY_ERROR` or `AT_PARAM_ERROR` |
 
-11. <b> `AT+RX2FQ` </b> 
+**Examples**:
+```
+AT+RX2DR=8
+
+OK
+AT+RX2DR=?
+8
+
+OK
+```
+
+### AT+RX2FQ 
 
 Description: Frequency of the RX2 window
 
 This command is used to access and configure the frequency of the RX2 window.
 
-| Command                      | Input Parameter     | Return Value                                    | Return Code                                |
-| ---------------------------- | ------------------- | ----------------------------------------------- | ------------------------------------------ |
-| `AT+RX2FQ?`                  | -                   | `AT+RX2FQ`: Get or set the Rx2 window frequency | `OK`                                       |
-| `AT+RX2FQ=?`                 | -                   | < Frequency in Hz >                             | `OK` or `AT_BUSY_ERROR`                    |
-| `AT+RX2FQ=<Input Parameter>` | < Frequency in Hz > | -                                               | `OK`, `AT_BUSY_ERROR`, or `AT_PARAM_ERROR` |
+| Command                      | Input Parameter       | Return Value                                    | Return Code                              |
+| ---------------------------- | --------------------- | ----------------------------------------------- | ---------------------------------------- |
+| AT+RX2FQ?                    | -                     | `AT+RX2FQ: Get or set the Rx2 window frequency` | `OK`                                     |
+| AT+RX2FQ=?                   | -                     | *< Frequency in Hz >*                           | `OK` or `AT_BUSY_ERROR`                  |
+| AT+RX2FQ=`<Input Parameter>` | *< Frequency in Hz >* | -                                               | `OK`,`AT_BUSY_ERROR` or `AT_PARAM_ERROR` |
 
-12. <b> `AT+TXP` </b>  
+**Examples**:
+```
+AT+RX2FQ=923300000
+
+OK
+AT+RX2FQ=?
+923300000
+
+OK
+```
+:::tip 📝 NOTE:
+
+RX2 Frequency via `AT+RX2FQ` command have preset value depending on the regional band you selected via `AT+BAND` command.
+:::
+
+### AT+TXP 
 
 Description: Transmit Power
 
@@ -615,37 +921,59 @@ This command is used to access and configure the transmit power.
 
 | Command                    | Input Parameter | Return Value                             | Return Code              |
 | -------------------------- | --------------- | ---------------------------------------- | ------------------------ |
-| `AT+TXP?`                  | -               | `AT+TXP`:  Get or set the transmit power | `OK`                     |
-| `AT+TXP=?`                 | -               | < value >                                | `OK` or `AT+PARAM_ERROR` |
-| `AT+TXP=<Input Parameter>` | < value >       | -                                        | `OK` or `AT_PARAM_ERROR` |
+| AT+TXP?                    | -               | `AT+TXP:  Get or set the transmit power` | `OK`                     |
+| AT+TXP=?                   | -               | *< value >*                              | `OK` or `AT+PARAM_ERROR` |
+| AT+TXP=`<Input Parameter>` | *< value >*     | -                                        | `OK` or `AT_PARAM_ERROR` |
 
 Check [Appendix II Section](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#appendix-ii%EF%BC%9Atx-power-by-region) **TXPower** for the input parameter depending on the frequency band selected.
 
-For example, at EU868, a value of 2 represents **MaxEIRP - 4&nbsp;dB** where MaxEIRP = +16&nbsp;dBm.
+For example, at EU868, a value of 2 represents **MaxEIRP - 4 dB** where MaxEIRP = +16 dBm.
 
-13. <b> `AT+RETY` </b> 
+**Examples**:
+```
+AT+TXP=2
+
+OK
+AT+TXP=?
+2
+
+OK
+```
+
+### AT+RETY 
 
 Description: Confirmed payload retransmission
 
 This command is used to access and configure the number of retransmission for confirmed payload.
 
-| Command                     | Input Parameter | Return Value                                                        | Return Code              |
-| --------------------------- | --------------- | ------------------------------------------------------------------- | ------------------------ |
-| `AT+RETY?`                  | -               | `AT+RETY`: Set the number of retransmissions of Confirm packet data | `OK`                     |
-| `AT+RETY=?`                 | -               | `0`,`1`,`2`,`3`,`4`,`5`,`6`,`7`                                     | `OK`                     |
-| `AT+RETY=<Input Parameter>` | 0,1,2,3,4,5,6,7 | -                                                                   | `OK` or `AT+PARAM_ERROR` |
+| Command                     | Input Parameter | Return Value                                                        | Return Code            |
+| --------------------------- | --------------- | ------------------------------------------------------------------- | ---------------------- |
+| AT+RETY?                    | -               | `AT+RETY: set the number of retransmissions of Confirm packet data` | `OK`                   |
+| AT+RETY=?                   | -               | `0`,`1`,`2`,`3`,`4`,`5`,`6`,`7`                                     | `OK`                   |
+| AT+RETY=`<Input Parameter>` | 0,1,2,3,4,5,6,7 | -                                                                   | `OK`or`AT+PARAM_ERROR` |
 
-14. <b> `AT+MASK` </b> 
+**Examples**:
+```
+AT+RETY=7
+
+OK
+AT+RETY=?
+7
+
+OK
+```
+
+### AT+MASK 
 
 Description: Setting masked channels
 
 This command is used to access and configure masked channels.
 
-| Command                     | Input Parameter | Return Value                                                                                  | Return Code              |
-| --------------------------- | --------------- | --------------------------------------------------------------------------------------------- | ------------------------ |
-| `AT+MASK?`                  | -               | `AT+MASK`: Set the channel mask, close or open the channel. Only for US915, AU915, and CN470. | `OK`                     |
-| `AT+MASK=`?                 | -               | < mask >                                                                                      | `OK`                     |
-| `AT+MASK=<Input Parameter>` | Channels (hex)  | -                                                                                             | `OK` or `AT+PARAM_ERROR` |
+| Command                     | Input Parameter  | Return Value                                                                          | Return Code            |
+| --------------------------- | ---------------- | ------------------------------------------------------------------------------------- | ---------------------- |
+| AT+MASK?                    | -                | `AT+MASK: Set the channel mask, close or open the channel,Only for US915,AU915,CN470` | `OK`                   |
+| AT+MASK=?                   | -                | *< mask >*                                                                            | `OK`                   |
+| AT+MASK=`<Input Parameter>` | *Channels (hex)* | -                                                                                     | `OK`or`AT+PARAM_ERROR` |
 
 **AT+MASK Input Parameter Options**
 
@@ -665,54 +993,86 @@ This command is used to access and configure masked channels.
 | 11           | 0400               | -           | -           | 80-87       |
 | 12           | 0800               | -           | -           | 88-95       |
 
-15. <b> `AT+BAND`  </b>
+**Examples**:
+```
+AT+MASK=0002
+
+OK
+AT+MASK=?
+0002
+
+OK
+```
+
+### AT+BAND 
 
 Description: Regional frequency band
 
 This command is used to access and configure the regional frequency band.
 
-| Command                     | Input Parameter | Return Value                                                                                                                                     | Return Code              |
-| --------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
-| `AT+BAND?`                  | -               | `AT+BAND`: Set number corresponding to active regions (0: EU433, 1: CN470, 2: RU864, 3: IN865, 4: EU868, 5: US915, 6: AU915, 7: KR920, 8: AS923) | `OK`                     |
-| `AT+BAND=?`                 | -               | `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8` or `8-1`, `8-2`, `8-3`, `8-4`                                                                                                        | `OK`                     |
-| `AT+BAND=<Input Parameter>` | < 0 to 8 >      | -                                                                                                                                                | `OK` or `AT_PARAM_ERROR` |
-
-
-
+| Command                     | Input Parameter | Return Value                                                                                                                             | Return Code              |
+| --------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| AT+BAND?                    | -               | `AT+BAND: Set number corresponding to active regions (0: EU433 1: CN470 2: RU864 3: IN865 4: EU868 5: US915 6: AU915 7: KR920 8: AS923)` | `OK`                     |
+| AT+BAND=?                   | -               | `0` , `1` , `2` , `3` , `4` , `5` , `6` , `7` , `8` or `8-1`, `8-2`, `8-3`, `8-4`                                                        | `OK`                     |
+| AT+BAND=`<Input Parameter>` | *< 0 to 8 >*    | -                                                                                                                                        | `OK` or `AT_PARAM_ERROR` |
 
 **List of Band Parameter Options**
 
-| Code | Regional Band |
-| ---- | ------------- |
-| 0    | EU433         |
-| 1    | CN470         |
-| 2    | RU864         |
-| 3    | IN865         |
-| 4    | EU868         |
-| 5    | US915         |
-| 6    | AU915         |
-| 7    | KR920         |
-| 8 or 8-1    | AS923-1         |
-| 8-2  | AS923-2       |
-| 8-3  | AS923-3       |
-| 8-4  | AS923-4       |
+| Code     | Regional Band |
+| -------- | ------------- |
+| 0        | EU433         |
+| 1        | CN470         |
+| 2        | RU864         |
+| 3        | IN865         |
+| 4        | EU868         |
+| 5        | US915         |
+| 6        | AU915         |
+| 7        | KR920         |
+| 8 or 8-1 | AS923-1       |
+| 8-2      | AS923-2       |
+| 8-3      | AS923-3       |
+| 8-4      | AS923-4       |
 
-16. <b> `AT+LPSEND` </b> 
+**Examples**:
+```
+AT+BAND=5
+
+OK
+AT+BAND=?
+5
+
+OK
+```
+
+### AT+LPSEND 
 
 Description: Long data payload
 
-This command is used to long data payload.
+This command is used to send long data payload.
 
 | Command                       | Input Parameter              | Return Value                                               | Return Code              |
 | ----------------------------- | ---------------------------- | ---------------------------------------------------------- | ------------------------ |
-| `AT+LPSEND?`                  | -                            | `AT+LPSEND`: Send long packet data (Maximum is 1024 bytes) | `OK`                     |
-| `AT+LPSEND=<Input Parameter>` | **port**:**ack**:**payload** | -                                                          | `OK` or `AT_PARAM_ERROR` |
+| AT+LPSEND?                    | -                            | `AT+LPSEND: Send long packet data (Maximum is 1024 bytes)` | `OK`                     |
+| AT+LPSEND=`<Input Parameter>` | **port**:**ack**:**payload** | -                                                          | `OK` or `AT_PARAM_ERROR` |
 
-::: tip 📝 NOTE
 *ack*: 0-unconfirmed, 1-confirmed
+
+**Example**:
+
+In this example, payload length is automatically sliced with the DR set to 0. Uplink is sending to port 2 and confirmed.
+```
+AT+LPSEND=2:1:123456789012
+
+OK
++EVT:SEND CONFIRMED OK
++EVT:SEND CONFIRMED OK
+```
+
+:::tip 📝 NOTE:
+The large payload via `AT+LPSEND` will be sliced automatically depending on the DR that follows the LoRaWAN specifications. You can check [Appendix III](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#appendix-iii-maximum-transmission-load-by-region) for the maximum size.
 :::
 
-17. <b> `AT+LINKCHECK` </b> 
+### AT+LINKCHECK 
 
 Description: Network link status
 
@@ -720,9 +1080,9 @@ This command is used to access and configure device network link status.
 
 | Command                          | Input Parameter | Return Value                               | Return Code              |
 | -------------------------------- | --------------- | ------------------------------------------ | ------------------------ |
-| `AT+LINKCHECK?`                  | -               | `AT+LINKCHECK`: Verify Network Link Status | `OK`                     |
-| `AT+LINKCHECK=?`                 | -               | `0`, `1`, `2`                              | `OK`                     |
-| `AT+LINKCHECK=<Input Parameter>` | 0, 1, 2         | -                                          | `OK` or `AT_PARAM_ERROR` |
+| AT+LINKCHECK?                    | -               | `AT+LINKCHECK: Verify Network Link Status` | `OK`                     |
+| AT+LINKCHECK=?                   | -               | `0` , `1` , `2`                            | `OK`                     |
+| AT+LINKCHECK=`<Input Parameter>` | 0 , 1 , 2       | -                                          | `OK` or `AT_PARAM_ERROR` |
 
 Input parameter details:
 0 - Disable Link Check
@@ -733,25 +1093,35 @@ Reply format:
 
 `+EVT:LINKCHECK:Y0,Y1,Y2,Y3,Y4`
 
-- `**Y0**` represent the result of Link Check.
+- **`Y0`** represent the result of Link Check.
     -  0 – represent the Link Check execute success.
     - Non-0 – represent the Link Check execute fail.
-- `**Y1**` represent the DemodMargin.
-- `**Y2**` represent the GwCnt (Number of Gateways that received link check command).
-- `**Y3**` represent the RSSI.
-- `**Y4**` represent the SNR.
+- **`Y1`** represent the DemodMargin.
+- **`Y2`** represent the GwCnt (Number of Gateways that received link check command).
+- **`Y3`** represent the RSSI.
+- **`Y4`** represent the SNR.
 
+Examples:
+```
+AT+LINKCHECK=1
 
-18. <b> `AT+USEND` </b> 
+OK
+AT+SEND=2:12345678
+
+OK
++EVT:LINKCHECK:0,25,1,-53,11
+```
+
+### AT+USEND 
 
 Description: Unified Send Data
 
 This command is used to send unified data on a dedicated port number.
 
-| Command                      | Input Parameter                               | Return Value                                                  | Return Code                                                        |
-| ---------------------------- | --------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------ |
-| `AT+USEND?`                  | -                                             | `AT+USEND`: Unified SEND data along with the application port | `OK`                                                               |
-| `AT+USEND=<Input Parameter>` | **port**:**confirm**:**nbtrials**:**payload** | -                                                             | `OK`, `AT_PARAM_ERROR`, `AT_BUSY_ERROR`, or `AT_NO_NETWORK_JOINED` |
+| Command                      | Input Parameter                                     | Return Value                                                  | Return Code                                                         |
+| ---------------------------- | --------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------- |
+| AT+USEND?                    | -                                                   | `AT+USEND: Unified SEND data along with the application port` | `OK`                                                                |
+| AT+USEND=`<Input Parameter>` | **port** : **confirm** : **nbtrials** : **payload** | -                                                             | `OK` , `AT_PARAM_ERROR` , `AT_BUSY_ERROR` or `AT_NO_NETWORK_JOINED` |
 
 Input parameter details:
 - **port**: value (1 to 223)
@@ -759,90 +1129,167 @@ Input parameter details:
 - **nbtrials**: set the number of retransmissions, value (0 to 7)
 - **payload**: data to be transmitted
 
+Example:
+```
+AT+USEND=1:1:2:1234
 
+OK
++EVT:SEND CONFIRMED OK
+```
 
 ## Class B Mode
 
 This section describes the commands related to Class B mode.
 
-1. <b> `AT+PGSLOT` </b> 
+:::tip 📝 NOTE:
+The commands in these sections work in Class B mode. You need to configure your device to Class B via `AT+CLASS=B` to ensure that 
+:::
+
+- [AT+PGSLOT - Slot Periodicity Command](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-pgslot)
+- [AT+BFREQ - Beacon Frequency Command](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-bfreq)
+- [AT+LTIME - Local Time Command](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-ltime)
+
+### AT+PGSLOT 
 
 Description: Slot Periodicity Command
 
 This command is used to access and configure unicast ping slot periodicity.
 
-| Command                       | Input Parameter | Return Value                 | Return Code              |
-| ----------------------------- | --------------- | ---------------------------- | ------------------------ |
-| `AT+PGSLOT?`                  | -               | `PS`: Get or set periodicity | `OK`                     |
-| `AT+PGSLOT=?`                 | -               | `PS: 0` up to `PS: 7`        | `OK`                     |
-| `AT+PGSLOT=<Input Parameter>` | < 0 to 7 >      | -                            | `OK` or `AT_PARAM_ERROR` |
+| Command                       | Input Parameter | Return Value                   | Return Code              |
+| ----------------------------- | --------------- | ------------------------------ | ------------------------ |
+| AT+PGSLOT?                    | -               | `AT+PGSLOT:    PS:periodicity` | `OK`                     |
+| AT+PGSLOT=?                   | -               | `PS: 0` *up to* `PS: 7`        | `OK`                     |
+| AT+PGSLOT=`<Input Parameter>` | *< 0 to 7 >*    | -                              | `OK` or `AT_PARAM_ERROR` |
 
-2. <b> `AT+BFREQ` </b> 
+Examples:
+```
+AT+PGSLOT=3
+
+OK
+AT+PGSLOT=?
+3
+
+OK
+```
+
+### AT+BFREQ 
 
 Description: Beacon Frequency Command
 
 This command is used to get the current beacon (default broadcast) frequency.
 
-| Command      | Input Parameter | Return Value                         | Return Code |
-| ------------ | --------------- | ------------------------------------ | ----------- |
-| `AT+BFREQ?`  | -               | `AT+BFREQ`: Get the beacon frequency | `OK`        |
-| `AT+BFREQ=?` | -               | `<DRx, psfreq>`                      | `OK`        |
+| Command    | Input Parameter | Return Value                             | Return Code |
+| ---------- | --------------- | ---------------------------------------- | ----------- |
+| AT+BFREQ?  | -               | `AT+BFREQ:     Get the Beacon frequency` | `OK`        |
+| AT+BFREQ=? | -               | *<DRx, psfreq>*                          | `OK`        |
 
-3. <b> `AT+LTIME` </b>
+Examples:
+EU868
+```
+AT+BFREQ=?
+3,869.525
+
+OK
+```
+US915
+```
+AT+BFREQ=?
+8,923.300
+
+OK
+```
+
+### AT+LTIME
 
 Description: Local Time Command
 
 This command is used to access the local time in a UTC format.
 
-| Command      | Input Parameter | Return Value                                 | Return Code |
-| ------------ | --------------- | -------------------------------------------- | ----------- |
-| `AT+LTIME?`  | -               | `AT+LTIME`: Get the local time in UTC format | `OK`        |
-| `AT+LTIME=?` | -               | `LTIME:<hms on MM/DD/YYYY>`                  | `OK`        |
+| Command    | Input Parameter | Return Value                                 | Return Code |
+| ---------- | --------------- | -------------------------------------------- | ----------- |
+| AT+LTIME?  | -               | `AT+LTIME: Get the local time in UTC format` | `OK`        |
+| AT+LTIME=? | -               | `LTIME:`*<hms on MM/DD/YYYY>*                | `OK`        |
 
+Example:
+```
+AT+LTIME=?
+LTIME:03h56m52s on 09/18/2021
 
-
-
-
+OK
+```
 
 ## Device information
 
 This section describes the commands on getting device information.
 
-1. <b> `AT+RSSI`  </b>
+- [AT+RSSI - Receive signal strength indicator](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-rssi)
+- [AT+SNR - Signal to Noise Ratio](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-snr)
+- [AT+VER - Version of the firmware](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-ver)
+
+### AT+RSSI 
 
 Description: Receive signal strength indicator
 
-This command is used to get RSSI value of the last packet received.
+This command is used to get the RSSI value of the last packet received.
 
-| Command     | Input Parameter | Return Value                                        | Return Code |
-| ----------- | --------------- | --------------------------------------------------- | ----------- |
-| `AT+RSSI?`  | -               | `AT+RSSI`: Get the RSSI of the last received packet | `OK`        |
-| `AT+RSSI=?` | -               | < integer > in dBm                                  | `OK`        |
+| Command   | Input Parameter | Return Value                                        | Return Code |
+| --------- | --------------- | --------------------------------------------------- | ----------- |
+| AT+RSSI?  | -               | `AT+RSSI: Get the RSSI of the last received packet` | `OK`        |
+| AT+RSSI=? | -               | *< integer > in dBm*                                | `OK`        |
 
-2. <b> `AT+SNR` </b> 
+:::tip 📝 NOTE:
+`AT+RSSI` will show the RSSI based of the last downlink received. If there is no downlink received yet, it will return 0.
+:::
+
+Example:
+```
+AT+RSSI=?
+-31
+
+OK
+```
+
+### AT+SNR 
 
 Description: Signal to Noise Ratio
 
-This command is used to get SNR value of the last packet received.
+This command is used to get the SNR value of the last packet received.
 
-| Command    | Input Parameter | Return Value                                      | Return Code |
-| ---------- | --------------- | ------------------------------------------------- | ----------- |
-| `AT+SNR?`  | -               | `AT+SNR`: Get the SNR of the last received packet | `OK`        |
-| `AT+SNR=?` | -               | < integer >                                       | `OK`        |
+| Command  | Input Parameter | Return Value                                      | Return Code |
+| -------- | --------------- | ------------------------------------------------- | ----------- |
+| AT+SNR?  | -               | `AT+SNR: Get the SNR of the last received packet` | `OK`        |
+| AT+SNR=? | -               | *< integer >*                                     | `OK`        |
 
-3. <b> `AT+VER` </b>
+:::tip 📝 NOTE:
+`AT+SNR` will show the SNR based of the last downlink received. If there is no downlink received yet, it will return 0.
+:::
+
+Example:
+```
+AT+SNR=?
+8
+
+OK
+```
+
+### AT+VER 
 
 Description: Version of the firmware
 
-This command is used to get firmware version installed on the device.
+This command is used to get the firmware version installed on the device.
 
-| Command    | Input Parameter | Return Value                              | Return Code |
-| ---------- | --------------- | ----------------------------------------- | ----------- |
-| `AT+VER?`  | -               | `AT+VER`: Get the version of the firmware | `OK`        |
-| `AT+VER=?` | -               | < V.x.y >                                 | `OK`        |
+| Command  | Input Parameter | Return Value                              | Return Code |
+| -------- | --------------- | ----------------------------------------- | ----------- |
+| AT+VER?  | -               | `AT+VER: Get the version of the firmware` | `OK`        |
+| AT+VER=? | -               | *< V.x.y   >*                             | `OK`        |
 
+Example:
+```
+AT+VER=?
+V1.0.2
 
-
+OK
+```
 
 ## RF Test
 
@@ -850,208 +1297,458 @@ Description: Radio frequency test management
 
 This section describes the commands related to RF test management.
 
-1. <b> `AT+TRSSI` </b> 
+- [AT+TRSSI - Receive Signal Strength Indicator](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-trssi)
+- [AT+TTONE - Start radio frequency tone test](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-ttone)
+- [AT+TTX - Start RF Tx LoRa® test](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-ttx)
+- [AT+TRX - Start RF Rx LoRa® test](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-trx)
+- [AT+TCONF - LoRa® RF test configuration](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-tconf)
+- [AT+TTH - RF Tx hopping test](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-tth)
+- [AT+TOFF - Stop ongoing radio frequency test](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-toff)
+- [AT+CERTIF - Set the module in LoRaWAN® Certification mode](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-certif)
+
+### AT+TRSSI 
 
 Description: Receive Signal Strength Indicator
 
-This command is used to get RF RSSI tone test of the device.
+This command is used to get the RF RSSI tone test of the device.
 
-| Command                      | Input Parameter | Return Value                        | Return Code |
-| ---------------------------- | --------------- | ----------------------------------- | ----------- |
-| `AT+TRSSI?`                  | -               | `AT+TRSSI`: Start RF RSSI tone test | `OK`        |
-| `AT+TRSSI=<Input Parameter>` | -               | < integer > in dBm                  | `OK`        |
+| Command   | Input Parameter | Return Value                        | Return Code |
+| --------- | --------------- | ----------------------------------- | ----------- |
+| AT+TRSSI? | -               | `AT+TRSSI: Start RF RSSI tone test` | `OK`        |
+| AT+TRSSI  | -               | *[TimeDisplay]: RSSI Value in dBm*  | `OK`        |
 
+Example:
+```
+AT+TRSSI
+1632128999s205:Rx FSK Test
+1632128999s219:>>> RSSI Value= -12 dBm
 
-2. <b> `AT+TTONE` </b> 
+OK
+```
+
+### AT+TTONE 
 
 Description: Start radio frequency tone test
 
-This command is used to get RF RSSI tone test of the device.
+This command is used to get the RF RSSI tone test of the device.
 
-| Command                      | Input Parameter | Return Value                   | Return Code             |
-| ---------------------------- | --------------- | ------------------------------ | ----------------------- |
-| `AT+TTONE?`                  | -               | `AT+TTONE`: Start RF tone test | `OK`                    |
-| `AT+TTONE=<Input Parameter>` | -               | < integer > in dBm             | `OK` or `AT_BUSY_ERROR` |
+| Command   | Input Parameter | Return Value                   | Return Code             |
+| --------- | --------------- | ------------------------------ | ----------------------- |
+| AT+TTONE? | -               | `AT+TTONE: Start RF tone test` | `OK`                    |
+| AT+TTONE  | -               | *[TimeDisplay]:Tx FSK Test*    | `OK` or `AT_BUSY_ERROR` |
 
-3. <b> `AT+TTX` </b>
+Example:
+```
+AT+TTONE
+1632128969s345:Tx FSK Test
+
+OK
+```
+
+### AT+TTX 
 
 Description: Start RF Tx LoRa® test
 
 This command is used to set the number of packets to be sent for a PER RF TX test.
 
-| Command                    | Input Parameter      | Return Value                                           | Return Code              |
-| -------------------------- | -------------------- | ------------------------------------------------------ | ------------------------ |
-| `AT+TTX?`                  | -                    | `AT+TTX`: Set number of packets sent with RF LoRa test | `OK`                     |
-| `AT+TTX=<Input Parameter>` | < 0 < Integer < 64 > | -                                                      | `OK` or `AT_PARAM_ERROR` |
+| Command                    | Input Parameter        | Return Value                                           | Return Code              |
+| -------------------------- | ---------------------- | ------------------------------------------------------ | ------------------------ |
+| AT+TTX?                    | -                      | `AT+TTX: Set number of packets sent with RF LoRa test` | `OK`                     |
+| AT+TTX=`<Input Parameter>` | *< 0 < Integer < 64 >* | -                                                      | `OK` or `AT_PARAM_ERROR` |
 
-4. <b>  `AT+TRX` </b> 
+Example:
+```
+AT+TTX=3
+1632129370s692:Tx LoRa Test
+1632129370s698:Tx 1 of 3
+1632129372s022:OnTxDone
+1v32129372s522:Tx 2 of 3
+1632129373s844:OnTxDone
+1v32129374s344:Tx 3 of 3
+1632129375s666:OnTxDone
 
-Description: Start RF Tx LoRa® test
+OK
+```
+
+### AT+TRX 
+
+Description: Start RF Rx LoRa® test
 
 This command is used to set the number of packets to be received for a PER RF TX test.
 
-| Command                    | Input Parameter      | Return Value                                                | Return Code              |
-| -------------------------- | -------------------- | ----------------------------------------------------------- | ------------------------ |
-| `AT+TRX?`                  | -                    | `AT+TRX`: Set number of packets received with RF LoRa® test | `OK`                     |
-| `AT+TRX=<Input Parameter>` | < 0 < Integer < 64 > | -                                                           | `OK` or `AT_PARAM_ERROR` |
+| Command                    | Input Parameter        | Return Value                                                | Return Code              |
+| -------------------------- | ---------------------- | ----------------------------------------------------------- | ------------------------ |
+| AT+TRX?                    | -                      | `AT+TRX: Set number of packets received with RF LoRa® test` | `OK`                     |
+| AT+TRX=`<Input Parameter>` | *< 0 < Integer < 64 >* | -                                                           | `OK` or `AT_PARAM_ERROR` |
 
-5. <b> `AT+TCONF` </b> 
+Example:
+
+Another separate device should have a simultaneous `AT+TTX=3` command to get the right readings for `AT+TRX=3'.
+```
+AT+TRX=3
+154s047:OnRxDone
+154s047:RssiValue=-24 dBm, SnrValue=7
+154s047:Rx 1 of 3  >>> PER= 0 %
+155s871:OnRxDone
+155s871:RssiValue=-25 dBm, SnrValue=7
+155s871:Rx 2 of 3  >>> PER= 0 %
+157s693:OnRxDone
+157s693:RssiValue=-26 dBm, SnrValue=6
+157s693:Rx 3 of 3  >>> PER= 0 %
+
+OK
+```
+
+### AT+TCONF 
 
 Description: Config LoRa® RF test
 
 This command is used to access and set LoRa® configuration test.
 
-| Command                      | Input Parameter | Return Value                        | Return Code              |
-| ---------------------------- | --------------- | ----------------------------------- | ------------------------ |
-| `AT+TCONF?`                  | -               | `AT+TCONF`: Configure LoRa® RF test | `OK`                     |
-| `AT+TCONF=?`                 | -               | -                                   | `OK` or `AT_ERROR`       |
-| `AT+TCONF=<Input Parameter>` | -               | -                                   | `OK` or `AT_PARAM_ERROR` |
+| Command                      | Input Parameter        | Return Value                        | Return Code              |
+| ---------------------------- | ---------------------- | ----------------------------------- | ------------------------ |
+| AT+TCONF?                    | -                      | `AT+TCONF: Configure LoRa® RF test` | `OK`                     |
+| AT+TCONF=?                   | -                      | *Summary of configuration*          | `OK` or `AT_ERROR`       |
+| AT+TCONF=`<Input Parameter>` | *Check on the example* | -                                   | `OK` or `AT_PARAM_ERROR` |
 
+:::tip 📝 NOTE:
+Guide on Bandwidth parameter (in Hz):
+`0=7812, 1=15625, 2=31250, 3=62500, 4=125000, 5=250000, 6=500000` 
+:::
 
-6. <b> `AT+TTH` </b> 
+Examples:
+```
+AT+TCONF=?
+1: Freq= 868000000 Hz
+2: Power= 14 dBm
+3: Bandwidth= 125000 Hz
+4: SF= 12 
+5: CR= 4/5 
+6: LNA State= 0  
+7: PA Boost State= 0  
+8: modulation LORA
+9: Payload len= 16 Bytes
+10: Frequency deviation not applicable
+11: LowDRopt[0 to 2]= 2 
+12 BT product not applicable
+can be copy/paste in set cmd: AT+TCONF=868000000:14:4:12:4/5:0:0:1:16:25000:2:3
+
+OK
+AT+TCONF=868000000:14:4:12:4/5:0:0:1:16:25000:2:3
+
+OK
+
+```
+
+### AT+TTH 
 
 Description: RF Tx hopping test
 
 This command is used to access and configure RF Tx hopping test.
 
-| Command                                       | Input Parameter | Return Value                                                                | Return Code |
-| --------------------------------------------- | --------------- | --------------------------------------------------------------------------- | ----------- |
-| `AT+TTH?`                                     | -               | `AT+TTH`: Starts RF Tx hopping test from Fstart to Fstop, with Fdelta steps | `OK`        |
-| `AT+TTH=<Fstart>,<Fstop>,<FDelta>,<PacketNb>` | -               | -                                                                           | `OK`        |
+| Command                    | Input Parameter                               | Return Value                                                                 | Return Code |
+| -------------------------- | --------------------------------------------- | ---------------------------------------------------------------------------- | ----------- |
+| AT+TTH?                    | -                                             | `AT+TTH: Starts RF Tx hopping test from Fstart to Fstop, with Fdelta steps.` | `OK`        |
+| AT+TTH=`<Input Parameter>` | **Fstart**,**Fstop**,**FDelta**,**PacketNb** | -                                                                            | `OK`        |
 
-7. <b> `AT+TOFF` </b> 
+Example:
+```
+AT+TTH=p68000000,868300000,100000,4
+1467s836:Tx Hop at 868000000Hz. 0 of 4
+1467s836:Tx LoRa Test
+1467s841:Tx 1 of 1
+1468s176:OnTxDone
+1468s676:Tx Hop at 868100000Hz. 1 of 4
+1468s676:Tx LoRa Test
+1468s681:Tx 1 of 1
+1469s016:OnTxDone
+1469s516:Tx Hop at 868200000Hz. 2 of 4
+1469s516:Tx LoRa Test
+1469s521:Tx 1 of 1
+1469s856:OnTxDone
+1470s356:Tx Hop at 868300000Hz. 3 of 4
+1470s356:Tx LoRa Test
+1470s361:Tx 1 of 1
+1470s696:OnTxDone
+
+OK
+```
+
+### AT+TOFF 
 
 Description: Stop ongoing radio frequency test
 
 This command is used to stop the ongoing RF test.
 
-| Command    | Input Parameter | Return Value                    | Return Code |
-| ---------- | --------------- | ------------------------------- | ----------- |
-| `AT+TOFF?` | -               | `AT+TOFF`: Stop ongoing RF test | `OK`        |
-| `AT+TOFF`  | -               | -                               | `OK`        |
+| Command  | Input Parameter | Return Value                     | Return Code |
+| -------- | --------------- | -------------------------------- | ----------- |
+| AT+TOFF? | -               | `AT+TOFF: Stops ongoing RF test` | `OK`        |
+| AT+TOFF  | -               | -                                | `OK`        |
 
-8. <b> `AT+CERTIF` </b> 
+Example:
+```
+AT+TOFF
+Test Stop
+
+OK
+```
+
+### AT+CERTIF 
 
 Description: Set the module in LoRaWAN® Certification mode
 
 This command is used to start the RF Rx LoRa test.
 
-| Command      | Input Parameter | Return Value                                               | Return Code             |
-| ------------ | --------------- | ---------------------------------------------------------- | ----------------------- |
-| `AT+CERTIF?` | -               | `AT+CERTIF`: Set the module in LoraWAN® Certification mode | `OK`                    |
-| `AT+CERTIF`  | -               | -                                                          | `OK` or `AT_BUSY_ERROR` |
-
-
-
+| Command    | Input Parameter | Return Value                                               | Return Code             |
+| ---------- | --------------- | ---------------------------------------------------------- | ----------------------- |
+| AT+CERTIF? | -               | `AT+CERTIF: Set the module in LoraWAN® Certification mode` | `OK`                    |
+| AT+CERTIF  | -               | -                                                          | `OK` or `AT_BUSY_ERROR` |
 
 ## P2P Mode
 
 This section describes the commands related to LoRa point to point functionality.
 
-1. <b> `AT+NWM` </b> 
+- [AT+NWM - LoRa® network work mode (LoRaWAN or P2P)](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-nwm)
+- [AT+PFREQ - P2P mode frequency](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-pfreq)
+- [AT+PSF - P2P mode spreading factor](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-psf)
+- [AT+PBW - P2P mode bandwidth](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-pbw)
+- [AT+PCR - P2P mode coding rate](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-pcr)
+- [AT+PPL - P2P mode preamble length](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-ppl)
+- [AT+PTP - P2P mode TX power](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-ptp)
+- [AT+P2P - P2P configuration settings](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-p2p)
+- [AT+PSEND - P2P send data](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-psend)
+- [AT+PRECV - P2P receive data window](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-precv)
+
+### AT+NWM 
 
 Description: LoRa® network work mode (LoRaWAN or P2P)
 
-This command is used to switch to LoRaWAN or (P2P) point-to-point mode.
+This command is used to switch to LoRaWAN or (P2P)point-to-point mode.
 
-| Command                    | Input Parameter            | Return Value                                                     | Return Code              |
-| -------------------------- | -------------------------- | ---------------------------------------------------------------- | ------------------------ |
-| `AT+NWM?`                  | -                          | `AT+NWM`: Get or set the network work NWM (0 = P2P, 1 = LoRaWAN) | `OK`                     |
-| `AT+NWM=?`                 | -                          | -                                                                | `OK`                     |
-| `AT+NWM=<Input Parameter>` | `0` - P2P or `1` - LoRaWAN | -                                                                | `OK` or `AT_PARAM_ERROR` |
+| Command                    | Input Parameter            | Return Value                                                 | Return Code              |
+| -------------------------- | -------------------------- | ------------------------------------------------------------ | ------------------------ |
+| AT+NWM?                    | -                          | `AT+NWM: Get or set the network work NWM (0:P2P, 1:LoRaWAN)` | `OK`                     |
+| AT+NWM=?                   | -                          | -                                                            | `OK`                     |
+| AT+NWM=`<Input Parameter>` | `0` *P2P or* `1` *LoRaWAN* | -                                                            | `OK` or `AT_PARAM_ERROR` |
 
-2. <b> `AT+PFREQ` </b> 
+Examples:
+
+LoRa P2P to LoRaWAN
+```
+AT+NWM=0
+
+OK
+AT+NWM=1
+LoRa (R) is a registered trademark or service mark of Semtech Corporation or its affiliates. LoRaWAN (R) is a licensed mark.
+
+______  ___   _   __  _    _ _          _               
+| ___ \/ _ \ | | / / | |  | (_)        | |              
+| |_/ / /_\ \| |/ /  | |  | |_ _ __ ___| | ___  ___ ___ 
+|    /|  _  ||    \  | |/\| | | '__/ _ \ |/ _ \/ __/ __|
+| |\ \| | | || |\  \ \  /\  / | | |  __/ |  __/\__ \__ \
+\_| \_\_| |_/\_| \_/  \/  \/|_|_|  \___|_|\___||___/___/
+========================================================
+RAK3172-H Version:v1.0.2 May 26 2021
+Current Work Mode: LoRaWAN.
+```
+
+LoRaWAN to LoRa P2P
+```
+AT+NWM=1
+
+OK
+AT+NWM=0
+LoRa (R) is a registered trademark or service mark of Semtech Corporation or its affiliates. LoRaWAN (R) is a licensed mark.
+
+______  ___   _   __  _    _ _          _               
+| ___ \/ _ \ | | / / | |  | (_)        | |              
+| |_/ / /_\ \| |/ /  | |  | |_ _ __ ___| | ___  ___ ___ 
+|    /|  _  ||    \  | |/\| | | '__/ _ \ |/ _ \/ __/ __|
+| |\ \| | | || |\  \ \  /\  / | | |  __/ |  __/\__ \__ \
+\_| \_\_| |_/\_| \_/  \/  \/|_|_|  \___|_|\___||___/___/
+========================================================
+RAK3172-H Version:v1.0.2 May 26 2021
+Current Work Mode: LoRa P2P.
+```
+
+
+### AT+PFREQ 
 
 Description: P2P mode frequency
 
 This command is used to access and configure P2P mode frequency.
 
-| Command                      | Input Parameter     | Return Value                        | Return Code              |
-| ---------------------------- | ------------------- | ----------------------------------- | ------------------------ |
-| `AT+PFREQ?`                  | -                   | `AT+PFREQ`: Configure P2P frequency | `OK`                     |
-| `AT+PFREQ=?`                 | -                   | < frequency > in Hz                 | `OK`                     |
-| `AT+PFREQ=<Input Parameter>` | < frequency > in Hz | -                                   | `OK` or `AT_PARAM_ERROR` |
+| Command                      | Input Parameter       | Return Value                        | Return Code              |
+| ---------------------------- | --------------------- | ----------------------------------- | ------------------------ |
+| AT+PFREQ?                    | -                     | `AT+PFREQ: Configure P2P frequency` | `OK`                     |
+| AT+PFREQ=?                   | -                     | *< frequency > in Hz*               | `OK`                     |
+| AT+PFREQ=`<Input Parameter>` | *< frequency > in Hz* | -                                   | `OK` or `AT_PARAM_ERROR` |
 
-3. <b> `AT+PSF` </b> 
+:::tip 📝 NOTE:
+Frequency configuration:
+
+- RAK3172(L) is needed to use the low frequency range 150000000 - 525000000.
+- RAK3172(H) is needed to use the high frequency range 525000000 - 960000000.
+:::
+
+Example:
+```
+AT+PFREQ=868000000
+
+OK
+AT+PFREQ=?
+868000000
+
+OK
+```
+### AT+PSF 
 
 Description: P2P mode spreading factor
 
 This command is used to access and configure P2P mode spreading factor.
 
-| Command                    | Input Parameter | Return Value                                                    | Return Code              |
-| -------------------------- | --------------- | --------------------------------------------------------------- | ------------------------ |
-| `AT+PSF?`                  | -               | `AT+PSF`: Configure P2P SpreadingFactor (6,7, 8, 9, 10, 11, 12) | `OK`                     |
-| `AT+PSF=?`                 | -               | `6`, `7`, `8`, `9`, `10`, `11`, `12`                            | `OK`                     |
-| `AT+PSF=<Input Parameter>` | < 6 to 12 >     | -                                                               | `OK` or `AT_PARAM_ERROR` |
+| Command                    | Input Parameter | Return Value                                                     | Return Code              |
+| -------------------------- | --------------- | ---------------------------------------------------------------- | ------------------------ |
+| AT+PSF?                    | -               | `AT+PSF:       Configure P2P SpreadingFactor (6,7,8,9,10,11,12)` | `OK`                     |
+| AT+PSF=?                   | -               | `6` , `7` , `8` , `9` , `10` , `11` , `12`                       | `OK`                     |
+| AT+PSF=`<Input Parameter>` | *< 6 to 12 >*   | -                                                                | `OK` or `AT_PARAM_ERROR` |
 
-4. <b> `AT+PBW` </b> 
+Examples:
+```
+AT+PSF=9
+
+OK
+AT+PSF=?
+9
+
+OK
+```
+
+### AT+PBW 
 
 Description: P2P mode bandwidth
 
 This command is used to access and configure P2P mode bandwidth.
 
-| Command                    | Input Parameter        | Return Value                                      | Return Code              |
-| -------------------------- | ---------------------- | ------------------------------------------------- | ------------------------ |
-| `AT+PBW?`                  | -                      | `AT+PBW`: Configure P2P Bandwidth (125, 250, 500) | `OK`                     |
-| `AT+PBW=?`                 | -                      | `125`, `250`, or `500`                            | `OK`                     |
-| `AT+PBW=<Input Parameter>` | `125`, `250`, or `500` | -                                                 | `OK` or `AT_PARAM_ERROR` |
+| Command                    | Input Parameter        | Return Value                                     | Return Code              |
+| -------------------------- | ---------------------- | ------------------------------------------------ | ------------------------ |
+| AT+PBW?                    | -                      | `AT+PBW: Configure P2P Bandwidth(125, 250, 500)` | `OK`                     |
+| AT+PBW=?                   | -                      | `125` , `250` or `500`                           | `OK`                     |
+| AT+PBW=`<Input Parameter>` | `125` , `250` or `500` | -                                                | `OK` or `AT_PARAM_ERROR` |
 
-5. <b> `AT+PCR` </b>
+Examples:
+```
+AT+PBW=125
+
+OK
+AT+PBW=?
+125
+
+OK
+```
+
+### AT+PCR 
 
 Description: P2P mode coding rate
 
 This command is used to access and configure P2P mode coding rate.
 
-| Command                    | Input Parameter       | Return Value                                                   | Return Code              |
-| -------------------------- | --------------------- | -------------------------------------------------------------- | ------------------------ |
-| `AT+PCR?`                  | -                     | `AT+PCR`: Configure P2P code rate (4/5=0, 4/6=1, 4/7=2, 4/8=3) | `OK`                     |
-| `AT+PCR=?`                 | -                     | `0`, `1`, `2`, or `3`                                          | `OK`                     |
-| `AT+PCR=<Input Parameter>` | `0`, `1`, `2`, or `3` | -                                                              | `OK` or `AT_PARAM_ERROR` |
+| Command                    | Input Parameter        | Return Value                                                 | Return Code              |
+| -------------------------- | ---------------------- | ------------------------------------------------------------ | ------------------------ |
+| AT+PCR?                    | -                      | `AT+PCR: Configure P2P code rate(4/5=0, 4/6=1, 4/7=2,4/8=3)` | `OK`                     |
+| AT+PCR=?                   | -                      | `0` , `1` , `2` or `3`                                       | `OK`                     |
+| AT+PCR=`<Input Parameter>` | `0` , `1` , `2` or `3` | -                                                            | `OK` or `AT_PARAM_ERROR` |
 
-6. <b> `AT+PPL` </b> 
+Examples:
+```
+AT+PCR=0
+
+OK
+AT+PCR=?
+0
+
+OK
+```
+
+### AT+PPL 
 
 Description: P2P mode preamble length
 
 This command is used to access and configure P2P mode preamble length.
 
-| Command                    | Input Parameter   | Return Value                                      | Return Code              |
-| -------------------------- | ----------------- | ------------------------------------------------- | ------------------------ |
-| `AT+PPL?`                  | -                 | `AT+PPL`: Configure P2P Preamble Length (2-65535) | `OK`                     |
-| `AT+PPL=?`                 | -                 | 2 up to 65535                                 | `OK`                     |
-| `AT+PPL=<Input Parameter>` | 2 up to 65535 | -                                                 | `OK` or `AT_PARAM_ERROR` |
+| Command                    | Input Parameter     | Return Value                                     | Return Code              |
+| -------------------------- | ------------------- | ------------------------------------------------ | ------------------------ |
+| AT+PPL?                    | -                   | `AT+PPL: Configure P2P Preamble Length(2-65535)` | `OK`                     |
+| AT+PPL=?                   | -                   | `2` *up to* `65535`                              | `OK`                     |
+| AT+PPL=`<Input Parameter>` | `2` *up to* `65535` | -                                                | `OK` or `AT_PARAM_ERROR` |
 
-7. <b>  `AT+PTP`  </b>
+Examples:
+```
+AT+PPL=8
+
+OK
+AT+PPL=?
+8
+
+OK
+```
+### AT+PTP 
 
 Description: P2P mode TX power
 
 This command is used to access and configure P2P mode TX power.
 
-| Command                    | Input Parameter | Return Value                        | Return Code              |
-| -------------------------- | --------------- | ----------------------------------- | ------------------------ |
-| `AT+PTP?`                  | -               | `AT+TP`: Configure P2P Power (5-22) | `OK`                     |
-| `AT+PTP=?`                 | -               | 5 up to 22                      | `OK`                     |
-| `AT+PTP=<Input Parameter>` | 5 up to 22  | -                                   | `OK` or `AT_PARAM_ERROR` |
+| Command                    | Input Parameter  | Return Value                       | Return Code              |
+| -------------------------- | ---------------- | ---------------------------------- | ------------------------ |
+| AT+PTP?                    | -                | `AT+TP: Configure P2P Power(5-22)` | `OK`                     |
+| AT+PTP=?                   | -                | `5` *up to* `22`                   | `OK`                     |
+| AT+PTP=`<Input Parameter>` | `5` *up to* `22` | -                                  | `OK` or `AT_PARAM_ERROR` |
 
-8. <b> `AT+P2P` </b> 
+Examples:
+```
+AT+PTP=15
+
+OK
+AT+PTP=?
+15
+
+OK
+```
+
+### AT+P2P 
 
 Description: P2P configuration settings
 
 This command is used to access and configure all P2P mode settings.
 
-| Command                    | Input Parameter                                   | Return Value                                      | Return Code              |
-| -------------------------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------ |
-| `AT+P2P?`                  | -                                                 | `AT+P2P`: Configure P2P all parameters            | `OK`                     |
-| `AT+P2P=?`                 | -                                                 | `<Freq>,<SF>,<Bandwidth>,<CR>,<Preamble>,<Power>` | `OK` or `AT_ERROR`       |
-| `AT+P2P=<Input Parameter>` | `<Freq>,<SF>,<Bandwidth>,<CR>,<Preamble>,<Power>` | -                                                 | `OK` or `AT_PARAM_ERROR` |
+| Command                    | Input Parameter                                     | Return Value                                        | Return Code              |
+| -------------------------- | --------------------------------------------------- | --------------------------------------------------- | ------------------------ |
+| AT+P2P?                    | -                                                   | `AT+P2P: Configure P2P all parameters`              | `OK`                     |
+| AT+P2P=?                   | -                                                   | *`<Freq>,<SF>,<Bandwidth>,<CR>,<Preamble>,<Power>`* | `OK` or `AT_ERROR`       |
+| AT+P2P=`<Input Parameter>` | *`<Freq>,<SF>,<Bandwidth>,<CR>,<Preamble>,<Power>`* | -                                                   | `OK` or `AT_PARAM_ERROR` |
 
 Input parameter details:
 
+- RAK3172(L) is needed to use the low frequency range 150000000 - 525000000.
+- RAK3172(H) is needed to use the high frequency range 525000000 - 960000000.
 - SF: 5 to 12
 - Bandwidth: 125, 250 or 500
 - CR: 0=4/5, 1=4/6, 2=4/7, 3=4/8
-- Power: in dBm. If the value is 14, it means 14&nbsp;dBm.
+- Preamble: 2 to 65535
+- Power: 5 to 22 in dBm. If the value is 14, it means 14&nbsp;dBm.
 
-9. <b> `AT+PSEND` </b>
+Examples:
+```
+AT+P2P=868000000:9:125:0:8:15
+
+OK
+AT+P2P=?
+868000000:9:125:0:8:15
+
+OK
+```
+
+### AT+PSEND 
 
 Description: P2P send data
 
@@ -1059,41 +1756,64 @@ This command is used to send P2P data.
 
 | Command                      | Input Parameter | Return Value              | Return Code              |
 | ---------------------------- | --------------- | ------------------------- | ------------------------ |
-| `AT+PSEND?`                  | -               | `AT+PSEND`: P2P send data | `OK`                     |
-| `AT+PSEND=<Input Parameter>` | < Payload >     | -                         | `OK` or `AT_PARAM_ERROR` |
+| AT+PSEND?                    | -               | `AT+PSEND: P2P send data` | `OK`                     |
+| AT+PSEND=`<Input Parameter>` | *<`Payload`>*   | -                         | `OK` or `AT_PARAM_ERROR` |
 
-10. <b> `AT+PRECV` </b>
+Example:
+```
+AT+PSEND=11223344
+
+OK
+```
+
+:::tip 📝 NOTE:
+To successfully transmit P2P, you must have a another separate device configured the same P2P parameters and with `AT+PRECV` command.
+:::
+
+### AT+PRECV 
 
 Description: P2P receive data window
 
 This command is used to configure timeout period for P2P window reception.
 
-| Command                      | Input Parameter  | Return Value                                                             | Return Code              |
-| ---------------------------- | ---------------- | ------------------------------------------------------------------------ | ------------------------ |
-| `AT+PRECV?`                  | -                | `AT+PRECV`: Set the timeout period for P2P window reception (0-65535) ms | `OK`                     |
-| `AT+PRECV=?`                 | -                | < Time in mSec >                                                         | `OK`                     |
-| `AT+PRECV=<Input Parameter>` | < Time in mSec > | -                                                                        | `OK` or `AT_PARAM_ERROR` |
+| Command                      | Input Parameter    | Return Value                                                             | Return Code              |
+| ---------------------------- | ------------------ | ------------------------------------------------------------------------ | ------------------------ |
+| AT+PRECV?                    | -                  | `AT+PRECV: Set the timeout period for P2P window reception (0-65535) ms` | `OK`                     |
+| AT+PRECV=?                   | -                  | *<`Time in mSec`>*                                                       | `OK`                     |
+| AT+PRECV=`<Input Parameter>` | *<`Time in mSec`>* | -                                                                        | `OK` or `AT_PARAM_ERROR` |
 
 Input parameter details:
 
 - If the value is set to 65535, the device will constantly listen to P2P TX without a timeout. This is the same as setting the device in RX mode.
 - If the value is 0, the device will stop listening to P2P TX data. The device is in TX mode.
 
+Example:
+```
+AT+PRECV=65535
+
+OK
++EVT:RXP2P, RSSI -37, SNR 11
++EVT:11223344
+```
 
 ## Multicast Group
 
 This section describes the commands related to multicast group functionality.
 
-1. <b> `AT+ADDMULC` </b>
+- [AT+ADDMULC - Add multicast group](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-addmulc)
+- [AT+RMVMULC - Remove multicast group](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-rmvmulc)
+- [AT+LSTMULC - Multicast list](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-lstmulc)
+
+### AT+ADDMULC 
 
 Description: Add multicast group
 
 This command is used to add new multicast group and multicast parameters.
 
-| Command                        | Input Parameter                                                              | Return Value                            | Return Code              |
-| ------------------------------ | ---------------------------------------------------------------------------- | --------------------------------------- | ------------------------ |
-| `AT+ADDMULC?`                  | -                                                                            | `AT+ADDMULC`: Add a new multicast group | `OK`                     |
-| `AT+ADDMULC=<Input Parameter>` | `[Class]:[DevAddr]:[NwkSKey]:[AppSKey]:[Frequency]:[Datarate]:[Periodicity]` | -                                       | `OK` or `AT_PARAM_ERROR` |
+| Command                        | Input Parameter                                                                | Return Value                            | Return Code              |
+| ------------------------------ | ------------------------------------------------------------------------------ | --------------------------------------- | ------------------------ |
+| AT+ADDMULC?                    | -                                                                              | `AT+ADDMULC: Add a new multicast group` | `OK`                     |
+| AT+ADDMULC=`<Input Parameter>` | *`[Class]:[DevAddr]:[NwkSKey]:[AppSKey]:[Frequency]:[Datarate]:[Periodicity]`* | -                                       | `OK` or `AT_PARAM_ERROR` |
 
 Input parameter details:
 
@@ -1103,18 +1823,18 @@ If Class is C, periodicity parameter is removed.
 
 For class B,
 ```
-> AT+ADDMULC=B:11223344:11223344556677881122334455667788:11223344556677881122334455667788:868000000:0:0
+AT+ADDMULC=B:11223344:11223344556677881122334455667788:11223344556677881122334455667788:868000000:0:0
 
 OK
 ```
 For class C,
 ```
-> AT+ADDMULC=C:11223344:11223344556677881122334455667788:11223344556677881122334455667788:868000000:0
+AT+ADDMULC=C:11223344:11223344556677881122334455667788:11223344556677881122334455667788:868000000:0
 
 OK
 ```
 
-2. <b> `AT+RMVMULC` </b> 
+### AT+RMVMULC 
 
 Description: Remove multicast group
 
@@ -1122,36 +1842,70 @@ This command is used to remove the configured multicast group.
 
 | Command                        | Input Parameter | Return Value                         | Return Code |
 | ------------------------------ | --------------- | ------------------------------------ | ----------- |
-| `AT+RMVMULC?`                  | -               | `AT+RMVMULC`: Delete multicast group | `OK`        |
-| `AT+RMVMULC=<Input Parameter>` | `<DevAddr>`     | -                                    | `OK`        |
+| AT+RMVMULC?                    | -               | `AT+RMVMULC: Delete multicast group` | `OK`        |
+| AT+RMVMULC=`<Input Parameter>` | *`<DevAddr>`*   | -                                    | `OK`        |
 
-3. <b> `AT+LSTMULC` </b>
+Example:
+
+You can only remove group with address already added.
+```
+AT+RMVMULC=11223344
+
+OK
+```
+### AT+LSTMULC 
 
 Description: Multicast list
 
 This command is used to get the information about the configured multicast group.
 
-| Command        | Input Parameter | Return Value                                                        | Return Code |
-| -------------- | --------------- | ------------------------------------------------------------------- | ----------- |
-| `AT+LSTMULC?`  | -               | `AT+RMVMULC`: Get multicast group information                       | `OK`        |
-| `AT+LSTMULC=?` | -               | `MC1:[Class]:[DevAddr]:[NwkSK ey]:[AppSKey]:[Frequency]:[DataRate]` | `OK`        |
+| Command      | Input Parameter | Return Value                                                        | Return Code |
+| ------------ | --------------- | ------------------------------------------------------------------- | ----------- |
+| AT+LSTMULC?  | -               | `AT+RMVMULC:Get multicast group information`                        | `OK`        |
+| AT+LSTMULC=? | -               | `MC1:[Class]:[DevAddr]:[NwkSK ey]:[AppSKey]:[Frequency]:[Datarate]` | `OK`        |
 
+Examples:
+```
+AT+LSTMULC=?
+MC1:ClassC:11223344:11223344556677881122334455667788:11223344556677881122334455667788:868000000:0
+
+OK
+```
 ## Data Transparent Transmission
 
 This section describes the commands related to transparent data transmission in UART.
 
-1. <b> `ATD`  </b>
+### ATD 
 
 Description: Set transparent transmission mode
 
 This command is used to set the transparent transmission mode.
 
+:::tip 📝 NOTE:
+In data transparent transmission mode, all your input to the uart port will be transmitted to the network server. Standard AT commands will not work. To get out of data transparent transmission mode, you need to input `+++` command without any termination (e.g. CR or LF).
+:::
+
 | Command | Input Parameter | Return Value                                    | Return Code |
 | ------- | --------------- | ----------------------------------------------- | ----------- |
-| `ATD?`  | -               | `ATD`: Enter data transparent transmission mode | `OK`        |
-| `ATD`   | -               | -                                               | `OK`        |
+| ATD?    | -               | `ATD: Enter data transparent transmission mode` | `OK`        |
+| ATD     | -               | -                                               | `OK`        |
 
-2. <b> `+++` </b> 
+Example:
+
+Two packets are transmitted on the demo below. During transparent transmission mode, there is no string shown on the payload sent.
+```
+ATD
+
+OK
+
+OK
++EVT:SEND CONFIRMED OK
+
+OK
++EVT:SEND CONFIRMED OK
+```
+
+### +++ 
 
 Description: Stop transparent transmission mode
 
@@ -1159,9 +1913,12 @@ This command is used to stop the transparent transmission mode.
 
 | Command | Input Parameter | Return Value                              | Return Code |
 | ------- | --------------- | ----------------------------------------- | ----------- |
-| `+++?`  | -               | `+++`: Exit transparent transmission mode | `OK`        |
-| `+++`   | -               | -                                         | `OK`        |
+| +++?    | -               | `+++: Exit transparent transmission mode` | `OK`        |
+| +++     | -               | -                                         | `OK`        |
 
+:::tip 📝 NOTE:
+There must be no any UART termination after `+++`. There must be no CR or LF after the `+++` command else it will be transmitted as payload and the device will continue in Data Transparent Transmission mode.
+:::
 
 ## Appendix 
 
@@ -1637,7 +2394,7 @@ M in the following list is the length with MAC header, N is the maximum usable p
 
 ### Appendix IV: Asynchronous Events
 
-This section describes the output from USB of RAK3172-E that can occur at any point in time while the device is operational.
+This section describes the output from UART lines of RAK3172 that can occur at any point in time while the device is operational.
 
 | Event                      | UART output         | Status description                                                                               |
 | -------------------------- | ------------------- | ------------------------------------------------------------------------------------------------ |
@@ -1659,7 +2416,7 @@ This section describes the output from USB of RAK3172-E that can occur at any po
 | P2P                        | `+EVT:`*< status >* | `00112233` = received binary data format data                                                    |
 |                            |                     | `RXP2P, RSSI -110, SNR 5` = indicates that data has been received on P2P received window.        |
 | Link Check                 | `+EVT:`*< status >* | `LINKCHECK:Y0,Y1,Y2,Y3,Y4`                                                                       |
-|                            |                     | Y0 = represent link status (1: links success, 2: link fail)                                      |
+|                            |                     | Y0 = represent link status (1:links success, 2: link fail)                                       |
 |                            |                     | Y1 = represent the DemodMargin                                                                   |
 |                            |                     | Y2 = represent the NbGateways                                                                    |
 |                            |                     | Y3 = represent the RSSI of the command’s download                                                |

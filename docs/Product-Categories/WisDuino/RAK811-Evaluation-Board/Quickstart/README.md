@@ -1229,7 +1229,7 @@ Same with the hardware, the software library will be based on your board version
 - [Library for WisDuino Board V1.1](https://github.com/RAKWireless/WisNode-Arduino-Library/tree/master/Documents%20and%20tools/WisNodeV1.1%20Arduino%20Library).
 - [Library for WisDuino Board V1.2](https://github.com/RAKWireless/WisNode-Arduino-Library/tree/master/Documents%20and%20tools/WisNodeV1.2%20Arduino%20Library).
 
-Installation guide of these librariess can be found on the [main github repository of WisNode-Arduino-Library](https://github.com/RAKWireless/WisNode-Arduino-Library).
+Installation guide of these libraries can be found on the [main github repository of WisNode-Arduino-Library](https://github.com/RAKWireless/WisNode-Arduino-Library).
 
 These libraries have included LoRaWAN examples both OTAA and ABP, as well as an example for LoRa-P2P communication.
 

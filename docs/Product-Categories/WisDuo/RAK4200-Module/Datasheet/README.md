@@ -92,11 +92,11 @@ The hardware specification is categorized into five parts. It covers the pinouts
 
 | Pin | Name     | I/O | Description                                     |
 | --- | -------- | --- | ----------------------------------------------- |
-| 1   | UART2_RX | I   | Main UART (STM32L071 PA3)                       |
-| 2   | UART2_TX | O   | Main UART (STM32L071 PA2)                       |
+| 1   | UART2_RX | I   | UART2 Interface (AT Commands)  (STM32L071 PA3)  |
+| 2   | UART2_TX | O   | UART2 Interface (AT Commands)  (STM32L071 PA2)  |
 | 3   | UART2_DE | I/O | GPIO (STM32L071 PA1)                            |
-| 4   | UART1_TX | I/O | General GPIO or UART(Reserved) (STM32L071 PA9)  |
-| 5   | UART1_RX | I/O | General GPIO or UART(Reserved) (STM32L071 PA10) |
+| 4   | UART1_TX | O   | UART1 Interface (AT Commands and FW Update) (STM32L071 PA9)  |
+| 5   | UART1_RX | I   | UART1 Interface (AT Commands and FW Update) (STM32L071 PA10) |
 | 6   | UART1_DE | I/O | General GPIO or UART(Reserved) (STM32L071 PA12) |
 | 7   | SWDIO    | I/O | Programming (STM32L071 PA13)                    |
 | 8   | SWCLK    | I/O | Programming (STM32L071 PA14)                    |

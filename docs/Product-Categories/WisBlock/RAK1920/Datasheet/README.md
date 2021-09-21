@@ -130,7 +130,7 @@ Table below shows Grove cable color and function definition.
 
 ##### Qwiic Sensor Interface
 
-The RAK1920 module supports sensors manufactured by SparkFun through the Qwiic Connet interface. Figure 7 shows the Qwiic Connect interface.
+The RAK1920 module supports sensors manufactured by SparkFun through the Qwiic Connect interface. Figure 7 shows the Qwiic Connect interface.
 
 <rk-img
   src="/assets/images/wisblock/rak1920/datasheet/qwicc-connect-interface.png"

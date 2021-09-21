@@ -68,33 +68,33 @@ Figure 2 shows the name of the pins available in the RAK1921 module. This module
 />
 
 
-| **Name** | **Description** | 
-| ---- | ---- | 
-| VCC | Power Supply (2.4 –3.5V) | 
-| GND | Grounding | 
-| SCL | I2C Clock Signal | 
-| SDA | I2C Data Signal | 
+| **Name** | **Description**          |
+| -------- | ------------------------ |
+| VCC      | Power Supply (2.4 –3.5V) |
+| GND      | Grounding                |
+| SCL      | I2C Clock Signal         |
+| SDA      | I2C Data Signal          |
 
 
 #### Electrical Characteristics
 
-The absolute minimum and maximum ratings of the RAK1921 WisBlock OLED Display are presenten in tabular representation. This should be followed accordingly to avoid future damages.
+The absolute minimum and maximum ratings of the RAK1921 WisBlock OLED Display are presented in tabular representation. This should be followed accordingly to avoid future damages.
 
 ##### Absolute Maximum Ratings
 
-| **Symbol** | **Description** | **Minimum** | **Nominal** | **Maximum** | **Unit** | 
-| ---- | ---- | ---- | ---- | ---- | ---- | 
-| Vdd | Power Supply for the Module | –0.5 |  | 3.5 | V | 
-| Temperature | Operation Temperature | –30 |  | 70 | ° C | 
+| **Symbol**  | **Description**             | **Minimum** | **Nominal** | **Maximum** | **Unit** |
+| ----------- | --------------------------- | ----------- | ----------- | ----------- | -------- |
+| Vdd         | Power Supply for the Module | –0.5        |             | 3.5         | V        |
+| Temperature | Operation Temperature       | –30         |             | 70          | ° C      |
 
 
 ##### Operating Conditions
 
-| **Symbol** | **Description** | **Minimum** | **Nominal** | **Maximum** | **Unit** | 
-| ---- | ---- | ---- | ---- | ---- | ---- | 
-| Vdd | Power Supply | 2.4 |  | 3.5 | V | 
-| Lbr | Normal Mode Brightness | 80 | 100 |  | Cd/m² | 
-|  | View Angle | 160 |  |  | degree (°) | 
+| **Symbol** | **Description**        | **Minimum** | **Nominal** | **Maximum** | **Unit**   |
+| ---------- | ---------------------- | ----------- | ----------- | ----------- | ---------- |
+| Vdd        | Power Supply           | 2.4         |             | 3.5         | V          |
+| Lbr        | Normal Mode Brightness | 80          | 100         |             | Cd/m²      |
+|            | View Angle             | 160         |             |             | degree (°) |
 
 #### Mechanical Characteristics
 

@@ -111,7 +111,7 @@ For demonstration, "rakwireless.dyndnss.net" shall be used.
   caption="Create Subdomain Name"
 /> 
 
-3. The DDNS URL is created. The Sumbdomain should now have a password which we will needed to setup the Gateway DDNS Service, full DDNS URL and “ENTER” button that will force the DynDNSS service to get the Gateway current IP.
+3. The DDNS URL is created. The Subdomain should now have a password which we will needed to setup the Gateway DDNS Service, full DDNS URL and “ENTER” button that will force the DynDNSS service to get the Gateway current IP.
 
 <rk-img
   src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/register-ddns-service/subdomain-details.png"
@@ -121,7 +121,7 @@ For demonstration, "rakwireless.dyndnss.net" shall be used.
 
 # Gateway DDNS Service Set-up
 
-1. Log into the Web UI by following the steps in the [Accessin the Web Management Platform](/Knowledge-Hub/Learn/Resources/Web-Management-Platform/#accessing-the-web-management-platform) section.
+1. Log into the Web UI by following the steps in the [Access in the Web Management Platform](/Knowledge-Hub/Learn/Resources/Web-Management-Platform/#accessing-the-web-management-platform) section.
 
 2. In the Web UI, navigate to `Services>Dynamic DNS (Beta)` as shown in Figure 6. For further details, read the [Services](/Knowledge-Hub/Learn/Resources/Web-Management-Platform/#services) section of the Web Management Platform User Manual. 
 

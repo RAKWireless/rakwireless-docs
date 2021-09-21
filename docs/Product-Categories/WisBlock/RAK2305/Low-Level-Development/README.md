@@ -52,7 +52,7 @@ Run the command to get all the submodules updated:
 git submodule update --init
 -->
 
-#### Install Prerequsites
+#### Install Prerequisites
 
 1. Download the latest stable release of [CMake](https://cmake.org/download/) for Windows and run the installer.
 
@@ -111,7 +111,7 @@ Linux(Ubuntu)
 mkdir $HOME/esp
 -->
 
-3. Clone the ESP-AT project. To clone the ESP-AT project into installation directory, excute the commands below:
+3. Clone the ESP-AT project. To clone the ESP-AT project into installation directory, execute the commands below:
 
 ```
 cd %userprofile%\esp

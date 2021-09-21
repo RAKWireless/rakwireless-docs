@@ -1,7 +1,7 @@
 ---
 sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
-rak_desc: This document is a sample demonstration on how to interconnect your WisGate Eddge with its Built-in LoRa Network Server to another WisGate Edge and make an application for the RAK LPWAN Node.
+rak_desc: This document is a sample demonstration on how to interconnect your WisGate Edge with its Built-in LoRa Network Server to another WisGate Edge and make an application for the RAK LPWAN Node.
 tags:
   - Deployment-Guide
   - WisGate
@@ -123,7 +123,7 @@ In this section, we will demonstrate on how to point the External RAK7249-B Macr
   caption="LoRa Gateway MQTT Bridge Configuration"
 />
 
-3. After clicking "**Save & Apply**", all LoRa traffic should be redirected via the Bridge of Gateway-B to the MQTT Brocker of Gateway-A.
+3. After clicking "**Save & Apply**", all LoRa traffic should be redirected via the Bridge of Gateway-B to the MQTT Broker of Gateway-A.
 
 ## Registering RAK7249-B in RAK7249-A's LoRa Network Server
 
