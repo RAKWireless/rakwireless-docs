@@ -7,6 +7,9 @@ prev: ../Overview/
 next: false
 rak_desc: Covers the comprehensive information of your RAK5146 WisLink LPWAN Concentrator to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wislink-lora/rak5146/RAK5146.png
+certifications:
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_FCC_Certification.zip]
+  - [IC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_IC_Certification.pdf]
 ---
 
 # RAK5146 WisLink LPWAN Concentrator Datasheet
@@ -291,3 +294,8 @@ In general, the RAK5146's variation is the defined as **RAK5146 - XYZ**, where *
 | RAK5146-220 | EU868     | √    |      |      |      |
 | RAK5146-215 | EU868     |      | √    |      | √    |
 | RAK5146-210 | EU868     |      | √    |      |      |
+
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />
