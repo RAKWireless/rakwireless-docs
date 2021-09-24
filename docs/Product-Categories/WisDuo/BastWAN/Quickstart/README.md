@@ -14,13 +14,13 @@ tags:
 
 ## Introduction
 
-RAK3244 BastWAN puts the RAK4260 module into a Feather compatible format, developed by [ElectronicCats](http://www.electroniccats.com/). The RAK4260 LPWAN Module that is used as the core of RAK3244 BastWAN is based on Microchip’s SAM R34 (R34J18B). It is a SiP device integrating a 32-bit ARM Cortex -M0+ MCU with a LoRa Transceiver. It offers full coding support with the Arduino™ IDE.
+RAK3244 BastWAN puts the RAK4260 module into a Feather compatible format, developed by [ElectronicCats](http://www.electroniccats.com/). The RAK4260 LPWAN Module used as the core of RAK3244 BastWAN is based on Microchip’s SAM R34 (R34J18B). It is a SiP device integrating a 32-bit ARM Cortex -M0+ MCU with a LoRa Transceiver. It offers full coding support with the Arduino™ IDE.
 
 For more information about the board, check the [ElectronicCats RAK3244 BastWAN repository](https://github.com/ElectronicCats/Bast-WAN).
 
 ## Hardware Setup
 
-The BastWAN is a Feather breakout board with everything you need to get started on your project. 
+The BastWAN is a Feather breakout board with everything you need to get started on your project.
 
 ::: warning ⚠️ WARNING
 Before powering the Feather Board, make sure that you have already connected the included LoRa Antenna. Not doing so might damage the board.
@@ -38,7 +38,7 @@ Before powering the Feather Board, make sure that you have already connected the
 
 ### Burning a Bootloader
 
-RAK3244 BastWAN board comes with pre-flashed bootloader upon purchase. However, if it is necessary to replace the bootloader, you can burn the [bootloader-bast-wan-v3.4.0.bin](https://github.com/RAKWireless/Evaluation_Boards/tree/master/RAK4260/Arduino) with Jlink as demonstrated below:
+RAK3244 BastWAN board comes with a pre-flashed bootloader upon purchase. However, if it is necessary to replace the bootloader, you can burn the [bootloader-bast-wan-v3.4.0.bin](https://github.com/RAKWireless/Evaluation_Boards/tree/master/RAK4260/Arduino) with Jlink as demonstrated below:
 
 <rk-img
   src="/assets/images/wisduo/bastwan/quickstart/download.png"
@@ -48,8 +48,7 @@ RAK3244 BastWAN board comes with pre-flashed bootloader upon purchase. However, 
 
 You can also flash the bootloader by using the [RAKDAP1 Flash and Debug Tool](https://docs.rakwireless.com/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/). The guide on how to connect RAK3244 to RAKDAP1 can be found on [SWD Programming Interface section of RAK3244 datasheet](https://docs.rakwireless.com/Product-Categories/WisDuo/BastWAN/Datasheet/#interfaces).
   
-After ensuring the correct wiring connection, you can now flash the bootloader using pyocd command. If you do not have pyocd installed on your system, check the [pyocd installation guide](https://docs.rakwireless.com/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Quickstart/#pyocd-installation).
-
+After ensuring the correct wiring connection, you can now flash the bootloader using the `pyocd` command. If you do not have pyocd installed on your system, check the [pyocd installation guide](https://docs.rakwireless.com/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Quickstart/#pyocd-installation).
 
 ```
 pyocd flash -t atsaml21j18a bootloader-bast-wan-v3.4.0.bin
@@ -69,12 +68,11 @@ In this section, The Things Network (TTN) and the procedure to set up the platfo
 
 As shown in Figure 2, the RAK3244 BastWAN is one of the devices located on the left side. In the context of an IoT solution, the objective is to deploy devices to sense the relevant process variables and transmit the data to the backend servers located in the cloud. The data will be processed and integrated as part of a larger solution that could generate efficiency, traceability, predictability capacity among others.
 
-The RAK3244 BastWAN can be part of this ecosystem, and the objective of this section is to demonstrate how simple to send data to the TTN using the LoRaWAN protocol. To achieve this, the RAK3244 BastWAN must be located inside the coverage of a LoRaWAN gateway.  
+The RAK3244 BastWAN can be part of this ecosystem, and the objective of this section is to demonstrate how simple to send data to the TTN using the LoRaWAN protocol. To achieve this, the RAK3244 BastWAN must be located inside the coverage of a LoRaWAN gateway.
 
 :::tip 📝 NOTE:
 The device name used for the setup is "RAK4260" since it is the core of RAK3244 BastWAN. You can designate any device name you want on your setup.
 :::
-
 
 <b>Sign up and Login</b>
 
@@ -151,9 +149,9 @@ In this form, the device ID must be unique for the application and must be compl
 * Application Key
 * Application EUI
 
-The TTN platform can generate these parameters randomly by leaving those fields empty, or you can enter already existing values. 
+The TTN platform can generate these parameters randomly by leaving those fields empty, or you can enter already existing values.
 
-3. Press the “**Register**” button at the bottom of this page to finish the process. 
+3. Press the “**Register**” button at the bottom of this page to finish the process.
 
 <rk-img
   src="/assets/images/wisduo/bastwan/quickstart/11.device_overview.png"
@@ -163,10 +161,9 @@ The TTN platform can generate these parameters randomly by leaving those fields 
   
 Now that the Device EUI, Application EUI, and Application Key are defined, you can now proceed with the setup of RAK3244 BastWAN LoRa configurations.
 
-
 ## Using Arduino IDE to Modify and Flash Firmware
 
-In this section, you will be introduced on how to use the RAK3244 BastWAN with Arduino™ IDE. 
+In this section, you will be introduced on how to use the RAK3244 BastWAN with Arduino™ IDE.
 
 ### BSP Installation
 
@@ -212,10 +209,9 @@ If there is already an existing URL on the textbox, click the button at the righ
   caption="RAK3244 BastWAN available in Boards list"
 />
 
-
 ### LoRaWAN Library Installation
 
-RAK3244 BastWAN board uses the Beelan-LoRaWAN library which supports LoRaWAN Class A and Class C implementations operating in EU-868, AS-923, US-915 and AU-915 bands. You can recognize this library as the `<lorawan.h>` on the sample code.   
+RAK3244 BastWAN board uses the Beelan-LoRaWAN library, which supports LoRaWAN Class A and Class C implementations operating in EU-868, AS-923, US-915 and AU-915 bands. You can recognize this library as the `<lorawan.h>` on the sample code.   
   
 In order for the sample code to work, the Beelan-LoRaWAN library must be installed. To do this, navigate to **Tools > Manage Libraries** on Arduino IDE. Then search for **Beelan LoraWAN** and install the latest version of the library. The window indicates if the library is installed, as shown in Figure 15.  
   
@@ -241,7 +237,6 @@ For the RAK3244 BastWAN to successfully connect to a LoRaWAN Platform, several p
 
 The most volatile parameters on LoRaWAN configuration are the Device EUI, Application EUI, and Application Keys. These data must match with the ones on The Thing Network (TTN) platform. Copy the EUIs and Keys from the TTN platform and paste them on the sample source code. Figure 17 shows the lines of codes that should be modified:  
   
-
 <rk-img
   src="/assets/images/wisduo/bastwan/quickstart/dev_app_eui.png"
   width="60%"
@@ -268,9 +263,6 @@ If everything is well, you can now click the **Upload** button and the firmware 
   caption="Uploading of sample source code"
 />
 
-The RAK3244 BastWAN will try to join the LoRaWAN network server, and if it is successful, it will send a string to verify its presence. You can find more details of the operation by examining the sample source code and opening the serial monitor.   
+The RAK3244 BastWAN will try to join the LoRaWAN network server, and if it is successful, it will send a string to verify its presence. You can find more details of the operation by examining the sample source code and opening the serial monitor. 
   
 Feel free to experiment with your own and explore the capabilities of RAK3244 BastWAN.
-
-
-
