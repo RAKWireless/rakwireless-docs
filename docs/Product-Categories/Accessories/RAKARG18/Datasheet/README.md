@@ -11,7 +11,10 @@ rak_img: /assets/images/accessories/rakarg18/5dbi_antenna.png
 
 # 863-870 MHz 5 dBi Fiberglass Antenna Datasheet
 
+
+
 ## Overview
+
 
 ### Product Description
 
@@ -40,7 +43,11 @@ This antenna is designed to be directly mounted on the enclosure of the Gateway.
 - **Storage Temperature:** -40°C~+85°C
 - **IP67 rated**
 
-
+<rk-img
+  src="/assets/images/accessories/rakarg18/1.png"
+  width="30%"
+  caption="RAKARG18 Antenna"
+/>
 ## Specification
 
 | Parameter              | Value                |
