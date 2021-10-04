@@ -17,6 +17,7 @@ Thank you for choosing **RAK7268 WisGate Edge Lite 2** in your awesome IoT Proje
 * [Quickstart](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * [Supported LoRa Network Servers](../Supported-LoRa-Network-Servers/)
+* [Use the MQTT Broker Like a Pro + Examples](/Knowledge-Hub/Learn/Use-the-MQTT-Broker-Like-a-Pro/)
 * [RAK7268 Latest Firmware](https://downloads.rakwireless.com/LoRa/RAK7268/Firmware/RAK7268_Latest_Firmware.zip)
 
 ## Product Description
