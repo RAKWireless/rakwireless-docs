@@ -85,6 +85,13 @@ export default {
     img: '/assets/images/wisnode/rak7431/datasheet/RAK7431_buy.png',
     store: 'https://store.rakwireless.com/products/rak7431?utm_source=RAK7431WisNodeBridge&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisNode/RAK2171/': {
+    label: 'RAK2171 WisNode TrackIt',
+    img: '/assets/images/wisnode/rak2171/overview/RAK2171_buy.png',
+    store: 'https://store.rakwireless.com/products/wisnode-trackit-set-rak2171'
+  },
+
+
 
   //WisTrio
   '/Product-Categories/WisTrio/RAK815/': {

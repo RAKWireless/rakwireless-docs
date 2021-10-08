@@ -171,5 +171,30 @@ module.exports = {
       download: true,
       sidebarDepth: 4
     }
-  ]
+  ],
+  '/Product-Categories/WisNode/RAK2171/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisNode/RAK2171/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisNode/RAK2171/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisNode/RAK2171/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+]
 }
