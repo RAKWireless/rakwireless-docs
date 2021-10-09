@@ -140,6 +140,24 @@ module.exports = {
     }
   ],
 
+  '/Product-Categories/WisBlock/RAK19003/': [{
+      title: 'Product Overview',
+      path: '/Product-Categories/WisBlock/RAK19003/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/WisBlock/RAK19003/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
+
   '/Product-Categories/WisBlock/RAK5801/': [{
       title: 'Product Overview',
       path: '/Product-Categories/WisBlock/RAK5801/Overview/',
@@ -574,6 +592,24 @@ module.exports = {
   sidebarDepth: 4
 }
 ],
+
+'/Product-Categories/WisBlock/RAK19004/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK19004/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK19004/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
     
 '/Product-Categories/WisBlock/RAK15000/': [{
   title: 'Product Overview',
@@ -652,6 +688,24 @@ module.exports = {
 }
 ],
 
+'/Product-Categories/WisBlock/RAK11310/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK11310/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK11310/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],    
+    
 '/Product-Categories/WisBlock/RAK17000/': [{
   title: 'Product Overview',
   path: '/Product-Categories/WisBlock/RAK17000/Overview/',
@@ -697,6 +751,24 @@ module.exports = {
 {
   title: 'Datasheet',
   path: '/Product-Categories/WisBlock/RAK14002/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/RAK14003/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK14003/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK14003/Datasheet/',
   collapsable: false,
   nested: true,
   download: true,
@@ -921,6 +993,25 @@ module.exports = {
   sidebarDepth: 4
 }
 ],
+
+'/Product-Categories/WisBlock/RAK19008/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK19008/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK19008/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
  
 '/Product-Categories/WisBlock/RAK14001/': [{
   title: 'Product Overview',
@@ -1025,6 +1116,24 @@ module.exports = {
   sidebarDepth: 4
 }
 ],
+
+'/Product-Categories/WisBlock/RAK12006/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK12006/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK12006/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
    
 '/Product-Categories/WisBlock/RAK12030/': [{
   title: 'Product Overview',
@@ -1043,5 +1152,130 @@ module.exports = {
   sidebarDepth: 4
 }
 ],
+    
+'/Product-Categories/WisBlock/RAK13101/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK13101/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK13101/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
 
+'/Product-Categories/WisBlock/RAK12010/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK12010/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK12010/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/RAK16000/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK16000/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK16000/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/RAK12015/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK12015/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK12015/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/RAK12012/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK12012/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK12012/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/RAK12011/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK12011/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK12011/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/RAK12009/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK12009/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK12009/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
 }
