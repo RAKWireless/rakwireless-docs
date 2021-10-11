@@ -26,10 +26,11 @@ RAK2171 supports multiple working modes and notification options. When used with
 
 - MTK2323G with built-in Bluetooth and GPS
 - SX1262 LoRa chip
+- Built-in accelerometer
 - Built-in battery: 400 mAh
-- Charger with a magnetic plate 
-- Small size
-- Built-in accelerometer 
+- Charger with a magnetic plate
+- Small size: 42x42x18 mm
+- Low weight: 25 g
 - Operating temperature: -20° C to +60° C
+- IP65 rating
 - Android and iOS application for easy management, configuration, and location tracking
-
