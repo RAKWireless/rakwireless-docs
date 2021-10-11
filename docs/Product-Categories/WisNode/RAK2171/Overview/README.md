@@ -24,7 +24,7 @@ RAK2171 supports multiple working modes and notification options. When used with
 
 ## Product Features
 
-- MTK2323G with built-in Bluetooth and GPS
+- MT2523 with built-in Bluetooth and GPS
 - SX1262 LoRa chip
 - Built-in battery: 400 mAh
 - Charger with a magnetic plate 
