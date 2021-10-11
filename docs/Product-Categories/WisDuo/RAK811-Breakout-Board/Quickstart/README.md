@@ -955,6 +955,12 @@ You have successfully finished your RAK811 Breakout Board set up.
 
 ### Upgrading the Firmware
 
+:::tip 📝 NOTE:
+
+For RAK811 modules with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upgrade your firmware and upload the **.hex file** (not the .bin file) of the [latest RAK811 firmware](https://downloads.rakwireless.com/LoRa/RAK811/Firmware/). The lower versions of the firmware have a different bootloader code and will not work on the RAK DFU Tool.
+
+:::
+
 Execute the following procedure to upgrade the firmware in Device Firmware Upgrade (DFU) mode through the UART1 interface.
 
 

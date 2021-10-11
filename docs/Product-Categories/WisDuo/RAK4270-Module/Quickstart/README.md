@@ -1099,6 +1099,11 @@ at+send=lorap2p:1234567890
 
 Before you start working with the RAK4270, it is recommended to keep the RAK4270 Module updated to the latest version of the firmware. Download the latest [RAK4270 firmware](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#software).
 
+:::tip 📝 NOTE:
+
+For RAK4270 modules with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upgrade your firmware and upload the **.hex file** (not the .bin file) of the [latest RAK4270 firmware](https://downloads.rakwireless.com/LoRa/RAK4270/Firmware/). The lower versions of the firmware have a different bootloader code and will not work on the RAK DFU Tool.
+
+:::
 
 In the following sections, two (2) options for flashing new firmware in a RAK4270 Module are shown: **Upgrade through DAPLink** and **Upgrade through UART1**.
 

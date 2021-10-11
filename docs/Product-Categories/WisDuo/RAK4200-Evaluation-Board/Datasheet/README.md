@@ -525,6 +525,14 @@ Figure 10 shows the actual dimensions of the RAK4200 Evaluation Board measured i
 
 Download the latest firmware of the RAK4200 Evaluation Board in the table provided.
 
+:::tip 📝 NOTE:
+
+The **bin file** contains the application code only and you need the RAK DFU Tool to upload this file to the module.
+
+The **hex file** contains both the bootloader and the application code. You need to use STM32CubeProgrammer to upload this.
+
+:::
+
 #### Firmware 
 
 | Model   | Source                                                                                           |

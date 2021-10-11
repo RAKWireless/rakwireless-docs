@@ -1,6 +1,6 @@
 ---
-rak_desc: Covers the comprehensive information of your RAK7200 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisnode/rak7200/quickstart/overview/RAK7200_home.png
+rak_desc: Covers the comprehensive information of your RAK2171 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_img: /assets/images/wisnode/rak2171/overview/rak2171.png
 prev: ../Quickstart/
 next: false
 tags:
@@ -21,22 +21,22 @@ tags:
 
 ### Description
 
-WisNode TrackIt (RAK2171) is RAKwireless’ latest LoRaWAN GPS tracking device. It comes in a small form factor with rechargeable battery and tracking and configuration application, available for iOS and Android devices. 
+**RAK2171 WisNode TrackIt** is RAKwireless’ latest LoRaWAN GPS tracking device. It comes in a small form factor with rechargeable battery and tracking and configuration application, available for iOS and Android devices. 
 
-RAK2171 supports multiple working modes and notification options. When used with RAK WisGate Edge gateways and in P2P mode you can monitor your tracker on the application map, create geofences, and receive SOS and movement notifications. You can also configure the WisNode TrackIt to work with any third-party LoRaWAN network using the TrackIt application as a configuration tool. 
+RAK2171 supports multiple working modes and notification options. When used with RAK WisGate Edge gateways and in P2P mode, you can monitor your tracker on the application map, create geofences, and receive SOS and movement notifications. You can also configure the WisNode TrackIt to work with any third-party LoRaWAN network using the TrackIt application as a configuration tool. 
 
 ### Features
 
-- MTK2323G with built-in Bluetooth and GPS
+- MT2523 with built-in Bluetooth and GPS
 - SX1262 LoRa chip
-- Built-in battery: 400 mAh
-- Charger with a magnetic plate 
-- Small size
-- Built-in accelerometer 
-- Operating temperature: -20° C to +60° C
+- Built-in accelerometer
+- Built-in battery: 400&nbsp;mAh
+- Charger with a magnetic plate
+- Small size: 42x42x18&nbsp;mm
+- Low weight: 25&nbsp;g
+- Operating temperature: -20&nbsp;°C to +60&nbsp;°C
+- IP65 rating
 - Android and iOS application for easy management, configuration, and location tracking
-
-
 
 
 ## Specifications
@@ -52,17 +52,19 @@ RAK2171 supports multiple working modes and notification options. When used with
 />
 
 
-| Parameter             | Value                                                  |
-| --------------------- | ------------------------------------------------------ |
-| Dimensions            | 42x42x18 mm                                            |
-| Weight                | 25 g                                                   |
-| Operating temperature | -20° C to +60° C                                       |
-| Battery capacity      | 400 mAh                                                |
-| Color                 | Tracker - white / dark grey; charger - black           |
-| Charger               | 5-pin magnetic plate; USB Type-A; cable length - 50 cm |
+| Parameter             | Value                                                              |
+| --------------------- | ------------------------------------------------------------------ |
+| Dimensions            | 42x42x18&nbsp;mm                                                   |
+| Weight                | 25&nbsp;g                                                          |
+| Operating temperature | -20&nbsp;°C to +60&nbsp;°C                                         |
+| Battery capacity      | 400&nbsp;mAh                                                       |
+| Color                 | Tracker: White / Dark Grey <br> Charger: Black                     |
+| Charger               | 5-pin Magnetic Plate <br> USB Type-A <br> Cable Length: 50&nbsp;cm |
 
 
 ### Hardware
+
+The hardware specification is categorized into five parts. It covers the interfacing and the standard values and requirements, such as the RF, electrical, and environmental of the RAK2171 WisNode TrackIt. 
 
 #### Interfaces
 <rk-img
@@ -71,17 +73,17 @@ RAK2171 supports multiple working modes and notification options. When used with
   caption="RAK2171 WisNode TrackIt Interfaces"
 />
 
-##### Buttons and LED's
+##### Buttons and LED
 
-* **Function button -** Used for LED signalization.
+* **Function Button** - Used for LED signalization.
 
-| LED color         | Meaning                    |
-| ----------------- | -------------------------- |
+| LED color          | Meaning                    |
+| ------------------ | -------------------------- |
 | Blue breathing 🔵   | Charging                   |
 | Green steady 🟢     | Battery is full            |
 | Red signal blink 🔴 | Low battery (20% and down) |
 
-* **Power/SOS button** - Used for powering on/off the device and sending SOS signals.
+* **Power/SOS Button** - Used for powering on/off the device and sending SOS signals.
 
 | Press combination            | Function                     | LED color               |
 | ---------------------------- | ---------------------------- | ----------------------- |
@@ -89,14 +91,11 @@ RAK2171 supports multiple working modes and notification options. When used with
 | 5 consecutively clicks       | Sends SOS message to the app | Red flash on            |
 | 5 consecutively clicks again | Cancel SOS message           | Red flash off           |
 
-* **Charging interface** - The device has 3 pins charging port on the back that connects to the magnetic charging plate. 
+* **Charging Interface** - The device has 3 pins charging port on the back that connects to the magnetic charging plate. 
 
 :::tip 📝 NOTE:
 Use the original charging plate and cable only.   
 :::
-
-
-
 
 #### RF Characteristics
 
@@ -111,26 +110,24 @@ The RAK2172 WisNode TrackIt has built-in LoRaWAN, GPS, and Bluetooth antennas.
 
 #### Electrical Characteristics
 
-| Parameter        | Value    |
-| ---------------- | -------- |
-| Batery type      | Lithium  |
-| Battery capacity | 400 mAh  |
-| Charging         | 5 V, 1 A |
+| Parameter        | Value              |
+| ---------------- | ------------------ |
+| Battery Type     | Lithium            |
+| Battery Capacity | 400&nbsp;mAh       |
+| Charging         | 5&nbsp;V, 1&nbsp;A |
 
 #### Environmental Requirements
 
-| Parameter             | Value            |
-| --------------------- | ---------------- |
-| Charging temperature  | +10° C to +45° C |
-| Operating temperature | -20° C to +60° C |
+| Parameter             | Value                      |
+| --------------------- | -------------------------- |
+| Charging temperature  | +10&nbsp;°C to +45&nbsp;°C |
+| Operating temperature | -20&nbsp;°C to +60&nbsp;°C |
 
 ### Software
 
 #### Firmware
 
-
-
-#### Mobile application
+#### Mobile Application
 
 - For Android
 - For iOS

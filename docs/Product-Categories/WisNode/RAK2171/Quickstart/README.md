@@ -14,7 +14,7 @@ tags:
 
 ## Prerequisites
 
-### What do you need?
+### What Do You Need?
 
 Before going through each and every step in the guide of the RAK2171 WisNode TrackIt, make sure to prepare the necessary items listed below:
 
@@ -22,7 +22,7 @@ Before going through each and every step in the guide of the RAK2171 WisNode Tra
 - WisGate Edge gateway
 - An Android or iOS device with Bluetooth
 
-### What’s included in the package?
+### What’s Included in the Package?
 
 - 2pc RAK2171 WisNode TrackIt
 - 2pc Charging cable with magnetic plate
@@ -58,7 +58,7 @@ In this mode, the WisNode TrackIt is configured via the TrackIt application on y
 1. Download and install the **TrackIt App** on your smartphone.
 2. Turn on the Bluetooth on tour smartphone.
 3. Start the **TrackIt App**. Location permission may be requested, allow it.
-4. Agree with the **Terms and Conditions** and the **Privacy Policy** and press the **Sign in with RAK ID** button.
+4. Agree with the **Terms and Conditions** and the **Privacy Policy**, and press the **Sign in with RAK ID** button.
 
 <rk-img
   src="/assets/images/wisnode/rak2171/quickstart/3.jpg"
@@ -66,7 +66,7 @@ In this mode, the WisNode TrackIt is configured via the TrackIt application on y
   caption="Welcome screen"
 />
 
-5. Sign in with your RAK ID or sign up for a new RAK ID if you don’t have an account. If you do not have a RAK ID press the **Create new** link and fill the needed information.
+5. Sign in with your RAK ID or sign up for a new RAK ID if you don’t have an account. If you do not have a RAK ID, press the **Create new** link and fill the needed information.
 
 <rk-img
   src="/assets/images/wisnode/rak2171/quickstart/sign-in.png"
@@ -84,6 +84,7 @@ In this mode, the WisNode TrackIt is configured via the TrackIt application on y
 
 
 7. Hold the **Power button** of your RAK2171 for 3 seconds to turn it on. If the device was turned on previously, you may need to restart it, as the Bluetooth is available for pairing for 3 minutes. 
+
 8. Press the **Start Pairing** in the app. An information screen will be displayed to inform you of the process. 
 
 <rk-img
@@ -92,7 +93,7 @@ In this mode, the WisNode TrackIt is configured via the TrackIt application on y
   caption="Pairing screen"
 />
 
-If the tracker is turned off, or the Bluetooth pair period has expired, you will see a **Tracker not found** message. Restart the tracker and try again.
+If the tracker is turned off or the Bluetooth pair period has expired, you will see a **Tracker not found** message. Restart the tracker and try again.
 
 <rk-img
   src="/assets/images/wisnode/rak2171/quickstart/9.jpg"
@@ -101,7 +102,7 @@ If the tracker is turned off, or the Bluetooth pair period has expired, you will
 />
 
 
-9.  After successful pairing, you will see a configuration screen, where you will be able to change the tracker's default name and the working mode. This section is for the LoRaWAN mode so, press the LoRaWAN button to change the mode from LoRa P2P to LoRaWAN. 
+9. After successful pairing, you will see a configuration screen, where you will be able to change the tracker's default name and the working mode. This section is for the LoRaWAN mode, so press the LoRaWAN button to change the mode from LoRa P2P to LoRaWAN. 
 
 <rk-img
   src="/assets/images/wisnode/rak2171/quickstart/setup-process.png"
@@ -109,8 +110,9 @@ If the tracker is turned off, or the Bluetooth pair period has expired, you will
   caption="Set up screen"
 />
 
-10.   You will see two options, **RAK Embedded NS** and **Third Party NS**. For this mode, press **RAK Embedded NS**.
-11.   Confirm that the gateway is powered and ready by pressing the **GATEWAY ON** button. 
+10. You will see two options: **RAK Embedded NS** and **Third Party NS**. For this mode, press **RAK Embedded NS**.
+
+11. Confirm that the gateway is powered and ready by pressing the **GATEWAY ON** button. 
 
 <rk-img
   src="/assets/images/wisnode/rak2171/quickstart/12.jpg"
@@ -118,7 +120,11 @@ If the tracker is turned off, or the Bluetooth pair period has expired, you will
   caption="Gateway on confirmation"
 />
 
-12.   You will be prompted to connect to the Wi-Fi AP of your RAK gateway. Press the **GO TO WI-FI SETTINGS** button. You will be redirected to your phone's Wi-Fi settings, where you need to find the RAK WisGate Edge gateway Wi Fi AP and connect to it. You will be promoted for the gateway's login credentials. By default, they are **`root/root`.** 
+12. You will be prompted to connect to the Wi-Fi AP of your RAK gateway. Press the **GO TO WI-FI SETTINGS** button. You will be redirected to your phone's Wi-Fi settings, where you need to find the RAK WisGate Edge gateway Wi Fi AP and connect to it. You will be promoted for the gateway's login credentials.
+
+- By default,
+  - Username: **root**
+  - Password: **root**
 
 <rk-img
   src="/assets/images/wisnode/rak2171/quickstart/connecting-wifi.png"
@@ -126,7 +132,7 @@ If the tracker is turned off, or the Bluetooth pair period has expired, you will
   caption="Connect to the gateway's Wi-Fi screen"
 />
 
-13.   After successful login, the TrackIt app will create an application in the gateway's built-In NS and will register the TrackIt device automatically. You are done. Press the **VIEW ON MAP** button to see the WisNode TrackIt location on the application map. 
+13. After successful login, the TrackIt app will create an application in the gateway's built-In NS and will register the TrackIt device automatically. Once you are done, press the **VIEW ON MAP** button to see the WisNode TrackIt location on the application map. 
 
 <rk-img
   src="/assets/images/wisnode/rak2171/quickstart/map.png"
@@ -134,9 +140,9 @@ If the tracker is turned off, or the Bluetooth pair period has expired, you will
   caption="Successful connection screen"
 />
 
-### LoRa Peer-to-peer (P2P) Mode
+### LoRa Peer-to-Peer (P2P) Mode
 
-In this mode, no LoRaWAN gateway is needed but you need at least two RAK2171 devices. One of the trackers is permanently connected via Bluetooth to the TrackIt App on your smartphone and acts a **Host**. The other tracker/s is/are registered as **Client** and send their data to the Host tracker. 
+In this mode, no LoRaWAN gateway is needed, but you need at least two RAK2171 devices. One of the trackers is permanently connected via Bluetooth to the TrackIt App on your smartphone and acts a **Host**. The other tracker/s is/are registered as **Client** and send their data to the Host tracker. 
 
 <rk-img
   src="/assets/images/wisnode/rak2171/quickstart/17.png"
@@ -147,7 +153,7 @@ In this mode, no LoRaWAN gateway is needed but you need at least two RAK2171 dev
 1. Download and install the **TrackIt App** on your smartphone.
 2. Turn on the Bluetooth on tour smartphone.
 3. Start the **TrackIt App**. Location permission may be requested, allow it.
-4. Agree with the **Terms and Conditions** and the **Privacy Policy** and press the **Sign in with RAK ID** button.
+4. Agree with the **Terms and Conditions** and the **Privacy Policy**, and press the **Sign in with RAK ID** button.
 
 
 <rk-img
@@ -156,7 +162,7 @@ In this mode, no LoRaWAN gateway is needed but you need at least two RAK2171 dev
   caption="Welcome screen"
 />
 
-5. Sign in with your RAK ID or sign up for a new RAK ID if you don’t have an account. If you do not have a RAK ID press the **Create new** link and fill the needed information.
+5. Sign in with your RAK ID or sign up for a new RAK ID if you don’t have an account. If you do not have a RAK ID, press the **Create new** link and fill the needed information.
 
 <rk-img
   src="/assets/images/wisnode/rak2171/quickstart/sign-in.png"
@@ -173,6 +179,7 @@ In this mode, no LoRaWAN gateway is needed but you need at least two RAK2171 dev
 />
 
 7. Hold the **Power button** of your RAK2171 for 3 seconds to turn it on. If the device was turned on previously, you may need to restart it, as the Bluetooth is available for pairing for 3 minutes. 
+
 8. Press the **Start Pairing** in the app. An information screen will be displayed to inform you of the process. 
 
 <rk-img
@@ -181,7 +188,7 @@ In this mode, no LoRaWAN gateway is needed but you need at least two RAK2171 dev
   caption="Pairing screen"
 />
 
-If the tracker is turned off, or the Bluetooth pair period has expired, you will see a **Tracker not found** message. Restart the tracker and try again.
+If the tracker is turned off or the Bluetooth pair period has expired, you will see a **Tracker not found** message. Restart the tracker and try again.
 
 <rk-img
   src="/assets/images/wisnode/rak2171/quickstart/9.jpg"
@@ -197,10 +204,10 @@ If the tracker is turned off, or the Bluetooth pair period has expired, you will
   caption="Set up screen"
 />
 
-11.  Select the LoRa P2P mode and press **ADD** Your tracker is added as a **Host**. Press the **VIEW ON MAP** button to see its location. As the Host should be always connected to your smartphone, this is also your position. 
+11. Select the LoRa P2P mode and press **ADD**. Your tracker is now added as a **Host**, then press the **VIEW ON MAP** button to see its location. As the Host should be always connected to your smartphone, this is also your position. 
 
 :::tip 📝 NOTE:
-The first Tracker you add will act as a Host. All other trackers added will be clients. 
+The first Tracker you add will act as a **Host**. All other trackers added will be **Clients**. 
 :::
 
 <rk-img
@@ -209,7 +216,7 @@ The first Tracker you add will act as a Host. All other trackers added will be c
   caption="Host tracker is added"
 />
 
-12.   To add a **Client** tracker, press the **+** button on the map. The adding process is the same as for the **Host**.  If you go to the map and slide up the menu at the bottom, you will see the registered trackers, their role, and battery status.
+12. To add a **Client** tracker, press the **+** button on the map. The adding process is the same as for the **Host**.  If you go to the map and slide up the menu at the bottom, you will see the registered trackers, their role, and battery status.
 
 <rk-img
   src="/assets/images/wisnode/rak2171/quickstart/2021.png"
@@ -218,7 +225,7 @@ The first Tracker you add will act as a Host. All other trackers added will be c
 />
 
 
-### Third-party LoRaWAN Network Server (LNS) Mode
+### Third-Party LoRaWAN Network Server (LNS) Mode
 
 In this mode, any LoRaWAN NS can be used (TTN, Helium, or other). The RAK TrackIt App acts only as a configuration tool for the trackers, no map or location data is available in the App. 
 
@@ -231,7 +238,7 @@ In this mode, any LoRaWAN NS can be used (TTN, Helium, or other). The RAK TrackI
 1. Download and install the **TrackIt App** on your smartphone.
 2. Turn on the Bluetooth on tour smartphone.
 3. Start the **TrackIt App**. Location permission may be requested, allow it.
-4. Agree with the **Terms and Conditions** and the **Privacy Policy** and press the **Sign in with RAK ID** button.
+4. Agree with the **Terms and Conditions** and the **Privacy Policy**, and press the **Sign in with RAK ID** button.
    
 <rk-img
   src="/assets/images/wisnode/rak2171/quickstart/3.jpg"
@@ -239,7 +246,7 @@ In this mode, any LoRaWAN NS can be used (TTN, Helium, or other). The RAK TrackI
   caption="Welcome screen"
 />
 
-5. Sign in with your RAK ID or sign up for a new RAK ID if you don’t have an account. If you do not have a RAK ID press the **Create new** link and fill the needed information.
+5. Sign in with your RAK ID or sign up for a new RAK ID if you don’t have an account. If you do not have a RAK ID, press the **Create new** link and fill the needed information.
 
 <rk-img
   src="/assets/images/wisnode/rak2171/quickstart/sign-in.png"
@@ -257,6 +264,7 @@ In this mode, any LoRaWAN NS can be used (TTN, Helium, or other). The RAK TrackI
 
 
 7. Hold the **Power button** of your RAK2171 for 3 seconds to turn it on. If the device was turned on previously, you may need to restart it, as the Bluetooth is available for pairing for 3 minutes. 
+
 8. Press the **Start Pairing** in the app. An information screen will be displayed to inform you of the process. 
 
 <rk-img
@@ -265,7 +273,7 @@ In this mode, any LoRaWAN NS can be used (TTN, Helium, or other). The RAK TrackI
   caption="Pairing screen"
 />
 
-If the tracker is turned off, or the Bluetooth pair period has expired, you will see a **Tracker not found** message. Restart the tracker and try again.
+If the tracker is turned off or the Bluetooth pair period has expired, you will see a **Tracker not found** message. Restart the tracker and try again.
 
 <rk-img
   src="/assets/images/wisnode/rak2171/quickstart/9.jpg"
@@ -274,7 +282,7 @@ If the tracker is turned off, or the Bluetooth pair period has expired, you will
 />
 
 
-9.  After successful pairing, you will see a configuration screen, where you will be able to change the tracker's default name and the working mode. Press the LoRaWAN button to change the mode from LoRa P2P to LoRaWAN. 
+9. After successful pairing, you will see a configuration screen, where you will be able to change the tracker's default name and the working mode. Press the LoRaWAN button to change the mode from LoRa P2P to LoRaWAN. 
 
 <rk-img
   src="/assets/images/wisnode/rak2171/quickstart/setup-process.png"
@@ -282,7 +290,8 @@ If the tracker is turned off, or the Bluetooth pair period has expired, you will
   caption="Set up screen"
 />
 
-10. You will see two options, **RAK Embedded NS** and **Third Party NS**. For this mode, press **Third Party NS**.
+10. You will see two options: **RAK Embedded NS** and **Third Party NS**. For this mode, press **Third Party NS**.
+
 11. You can see the RAK2171 **Device EUI**, **Application EUI**, **Application Key**, **Class**, and **Join mode**. From the **Region** menu, you can select the LoRaWAN band to be used.
     
 :::tip 📝 NOTE:

@@ -184,3 +184,23 @@ Values listed in the table are values measured with a LoRa frequency of **868&nb
   width="100%"
   caption="RAK4270 Breakout Board Schematic"
 />
+
+### Software
+
+Download the latest firmware of the RAK4270 WisDuo LPWAN Module as provided in the table below.
+
+:::tip 📝 NOTE:
+
+The **bin file** contains the application code only and you need the RAK DFU Tool to upload this file to the module.
+
+The **hex file** contains both the bootloader and the application code. You need to use STM32CubeProgrammer to upload this.
+
+:::
+
+#### Firmware
+
+| Model   | Version   | Source                                                                                          |
+| ------- | --------- | ----------------------------------------------------------------------------------------------- |
+| RAK4270 | V3.3.0.17 | [Download](https://downloads.rakwireless.com/LoRa/RAK4270/Firmware/RAK4270_Latest_Firmware.zip) |
+
+

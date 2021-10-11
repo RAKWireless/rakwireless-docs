@@ -2,7 +2,7 @@
 rak_desc: Contains instructions and tutorials in installing and deploying your RAK4200 Breakout Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module. 
 rak_img: /assets/images/wisduo/rak4200-breakout-board/quickstart/main/RAK4200_Breakout_home.png
 prev: ../Overview/
-next: ../Datasheet/
+next: ../AT-Command-Manual/
 tags:
   - RAK4200 Breakout Board
   - wisduo
@@ -282,4 +282,70 @@ You can see the data sent from RAK4200 Breakout Board on TTN website as shown in
   caption="OTAA Test Sample Data Sent Viewed in The Things Network"
 />
 
+## Miscellaneous
 
+### Firmware Update
+
+Before to start working with the RAK4200, it is recommended to keep the RAK4200 module updated to the latest version of the firmware.
+
+:::tip 📝 NOTE:
+
+For RAK4200 modules with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upgrade your firmware and upload the **.hex file** (not the .bin file) of the [latest RAK4200 firmware](https://downloads.rakwireless.com/en/LoRa/RAK4200/Firmware/). The lower versions of the firmware have a different bootloader code and will not work on the RAK DFU Tool.
+
+:::
+
+In the following sections, two (2) options for flashing new firmware in a RAK4200 module are shown: “**Firmware Upgrade through DAPLink**” and “**Firmware Upgrade through UART1**”.
+
+#### Firmware Upgrade Through DAPLink
+
+Refer to [RAKDAP1 Flash and Debug Tool Quickstart Guide](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool).
+
+
+#### Firmware Upgrade Through UART1
+
+##### Minimum Hardware and Software Requirements
+
+|               |                                           |
+| ------------- | ----------------------------------------- |
+| Computer      | A Windows/Linux/Mac computer              |
+| Firmware File | Bin firmware downloaded from the website. |
+| Others        | A USB to TTL adapter.                     |
+
+##### Firmware Upgrade Procedure
+
+Follow this procedure to upgrade the firmware in Device Firmware Upgrade (DFU) mode through the UART1 interface.
+
+1. Download the latest application firmware of the [RAK4200 module](https://downloads.rakwireless.com/en/LoRa/RAK4200/Firmware/).
+2. Download the RAK Device Firmware Upgrade (DFU) tool. In this folder are the different DFU tools depending on your machine's OS.
+    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+3. Connect the RAK4200 module with a computer through USB to TTL adapter as shown in Figure 18:
+
+4. Open the RAK Device Firmware Upgrade (DFU) tool. Select the serial port and baud rate of the module, and then click on "Select Port" button.
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-breakout-board/quickstart/device-firmware-tool.png"
+  width="70%"
+  caption="Device Firmware Upgrade Tool"
+/>
+
+5. Click on "**Select Firmware**" button and choose the application firmware file of the module with the suffix ". bin".
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-breakout-board/quickstart/select-firmware.png"
+  width="70%"
+  caption="Select firmware"
+/>
+
+6. Click on "**Upgrade**" button to upgrade the device. After the upgrade is complete, the RAK4200 module is now ready to work with the new firmware.
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-breakout-board/quickstart/firmware-upgrading.png"
+  width="70%"
+  caption="Firmware upgrading"
+/>
+
+<rk-img
+  src="/assets/images/wisduo/rak4200-breakout-board/quickstart/upgrade-success.png"
+  width="70%"
+  caption="Upgrade successful"
+/>

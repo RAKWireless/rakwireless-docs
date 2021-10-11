@@ -106,7 +106,7 @@ ERROR: [ErrCode]\r\n
 | 2              | Invalid parameter in the AT command.                                                                                                                                        |
 | 3              | There is an error when reading or writing the flash memory.                                                                                                                 |
 | 4              | There is an error when reading or writing through IIC bus.                                                                                                                  |
-| 5              | There is an error when sending data through the UART port.                                                                                                                  |
+| 5              | There is an error when sending data through the UART port. Check if you exceed 256 bytes UART buffer.                                                                                                                  |
 | 80             | The LoRa transceiver is busy, could not process a new command.                                                                                                              |
 | 81             | LoRa service is unknown. Unknown MAC command received by node. Execute commands that are not supported in the current state, such as sending `at+join` command in P2P mode. |
 | 82             | The LoRa parameters are invalid.                                                                                                                                            |

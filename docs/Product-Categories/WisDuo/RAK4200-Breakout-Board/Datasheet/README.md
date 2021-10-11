@@ -199,6 +199,13 @@ The table below shows the power consumption of RAK4200 Breakout Board:
 
 Download the latest firmware and bootloader of the RAK4200 Breakout Board provided in the table below.
 
+:::tip 📝 NOTE:
+
+The **bin file** contains the application code only and you need the RAK DFU Tool to upload this file to the module.
+
+The **hex file** contains both the bootloader and the application code. You need to use STM32CubeProgrammer to upload this.
+
+:::
 
 #### Firmware
 

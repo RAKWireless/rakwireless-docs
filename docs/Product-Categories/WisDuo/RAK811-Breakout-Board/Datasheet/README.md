@@ -256,6 +256,14 @@ The low radio frequency is applicable to bandwidth of regions EU433 and CN470.
 
 Download the latest firmware of the RAK811 Breakout Board — both in low and high frequency — provided in the table below.
 
+:::tip 📝 NOTE:
+
+The **bin file** contains the application code only and you need the RAK DFU Tool to upload this file to the module.
+
+The **hex file** contains both the bootloader and the application code. You need to use STM32CubeProgrammer to upload this.
+
+:::
+
 #### Firmware / OS
 
 | Model     | Version     | Source                                                                                                        |

@@ -870,6 +870,12 @@ Listed below are the accessible pins and data bus of attached RAK5005 base board
 
 The RAK4200 Evaluation Board bootloader is already pre-installed upon manufacturing, so this bootloader upgrade steps are not necessary. If you find that the bootloader of your RAK4200 Evaluation Board is damaged, contact through the [RAKwireless forum](https://forum.rakwireless.com/).
 
+:::tip 📝 NOTE:
+
+For RAK4200 modules with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upgrade your firmware and upload the **.hex file** (not the .bin file) of the [latest RAK4200 firmware](https://downloads.rakwireless.com/en/LoRa/RAK4200/Firmware/). The lower versions of the firmware have a different bootloader code and will not work on the RAK DFU Tool.
+
+:::
+
 ### Upgrading the Firmware
 
 The following steps show you how to update the firmware for RAK4200 WisDuo LPWAN Module connected to the Baseboard:
@@ -882,19 +888,7 @@ The following steps show you how to update the firmware for RAK4200 WisDuo LPWAN
 
 2. Connect your RAK4200 Evaluation Board in your Windows PC as instructed in the [Interfacing with RAK4200 Evaluation Board](#interfacing-with-rak4200-evaluation-board) section. 
 
-3. Open the RAK Serial Port Tool you have just installed and let RAK4200 work in boot mode by sending an AT command through serial port as follows:
-
-```sh
-at+set_config=device:boot
-```
-
-<rk-img
-  src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/hdtvmsxeqpzo2tx53a2x.jpg"
-  width="80%"
-  caption="Entering Boot Mode"
-/>
-
-4. Close RAK serial port tool, and open RAK firmware upgrade tool on your Windows PC. Make sure to choose the correct COM Port.
+3. Open RAK firmware upgrade tool on your Windows PC. Make sure to choose the correct COM Port.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/rak-upgrade-tool.png"
@@ -902,7 +896,7 @@ at+set_config=device:boot
   caption="RAK Firmware Upgrade Tool"
 />
 
-5. Click on  “**Select Firmware**” button to choose the correct upgrade file:
+4. Click on  “**Select Firmware**” button to choose the correct upgrade file:
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/choose-firmware.png"
@@ -910,7 +904,7 @@ at+set_config=device:boot
   caption="Choosing the Correct Upgrade file"
 />
 
-6. Click on “**Upgrade**” to upgrade. This may take a minute:
+5. Click on “**Upgrade**” to upgrade. This may take a minute:
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/upgrade-firmware.png"
@@ -918,7 +912,7 @@ at+set_config=device:boot
   caption="Firmware Upgrading in Process"
 />
 
-7. If everything went well, you should see the same window as shown in Figure 72.
+6. If everything went well, you should see the same window as shown in Figure 72.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/upgrade-successful.png"
@@ -926,9 +920,9 @@ at+set_config=device:boot
   caption="Successfully Upgraded Firmware"
 />
 
-8. Close the Firmware Upgrade Tool, and open the RAK Serial Port Tool again.
+7. Close the Firmware Upgrade Tool, and open the RAK Serial Port Tool again.
 
-9. Choose the correct **COM port** and set the baud rate to **115200**. Then open the serial port and enter the AT command shown below to restart.
+8. Choose the correct **COM port** and set the baud rate to **115200**. Then open the serial port and enter the AT command shown below to restart.
 
 ```sh
 at+set_config=device:restart

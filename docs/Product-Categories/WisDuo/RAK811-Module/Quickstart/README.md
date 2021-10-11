@@ -1092,6 +1092,12 @@ at+send=lorap2p:1234567890
 
 If you want to upgrade the latest version firmware of the module, you can follow this section. The latest firmware can be found in the software section of [RAK811 Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#firmware-os).
 
+:::tip 📝 NOTE:
+
+For RAK811 modules with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upgrade your firmware and upload the **.hex file** (not the .bin file) of the [latest RAK811 firmware](https://downloads.rakwireless.com/LoRa/RAK811/Firmware/). The lower versions of the firmware have a different bootloader code and will not work on the RAK DFU Tool.
+
+:::
+
 In the following sections, two (2) options for flashing new firmware in a RAK811 module are shown: **Upgrade through DAPLink** and **Upgrade through UART1**.
 
 #### Firmware Upgrade Through DAPLink
