@@ -233,6 +233,11 @@ export default {
     img: '/assets/images/wisduo/rak3172-evaluation-board/overview/RAK3172E_Evaluation_home.png',
     store: 'https://store.rakwireless.com/'
   },
+  '/Product-Categories/WisDuo/RAK11300-Module/': {
+    label: 'RAK11300 WisDuo LPWAN Module',
+    img: '/assets/images/wisduo/rak11300-module/overview/RAK11300_Module_buy.png',
+    store: 'https://store.rakwireless.com/products/wisduo-lpwan-module-rak11300?variant=40953280430278'
+  },
 
   // Wisgate
   '/Product-Categories/WisGate/RAK7240/': {

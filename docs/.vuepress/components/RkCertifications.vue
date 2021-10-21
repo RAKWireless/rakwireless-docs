@@ -3,6 +3,7 @@
     <q-avatar
       v-for="(certi, id) in certifications"
       :key="`certi-${id}`"
+      square
       color="white"
       size="5rem"
       @click="openLink(certi.link)"
@@ -90,6 +91,9 @@ export default {
             break
           case 'NCC':
             data.img = '/assets/images/certifications/NCC.png'
+            break
+          case 'LoRaWAN':
+            data.img = '/assets/images/certifications/lorawan-certified.png'
             break
           default:
             data.img =

@@ -13,6 +13,7 @@ certifications:
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RCM_certification.pdf]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_FCC_certification.zip]
   - [IC, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_ISED_Certificate.pdf]
+  - [LoRaWAN, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_lora_alliance_certification.pdf]
 ---
 
 # RAK3172 WisDuo LPWAN Module Datasheet

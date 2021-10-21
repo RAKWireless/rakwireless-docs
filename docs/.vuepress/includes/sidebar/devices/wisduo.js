@@ -597,4 +597,37 @@ module.exports = {
     sidebarDepth: 4
   }
   ],
+  '/Product-Categories/WisDuo/RAK11300-Module/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisDuo/RAK11300-Module/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }, 
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisDuo/RAK11300-Module/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },                                                
+  {
+    title: 'AT Command Manual',
+    path: '/Product-Categories/WisDuo/RAK11300-Module/AT-Command-Manual/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisDuo/RAK11300-Module/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+  ],
 }
