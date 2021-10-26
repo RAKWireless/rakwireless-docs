@@ -23,7 +23,7 @@ Thank you for choosing **Bobcat Outdoor Enclosure Kit** in your awesome IoT Proj
 
 This kit includes all necessary parts to take your BOBCAT MINER 300 outdoor in a secure and durable casing.
 
-Combined with one of our fiberglass antennas, this kit will allow you to better position your Miner and maximize your rewards without a compromise to harsh outdoor conditions.
+Combined with one of our fiberglass antennas, this kit allows you to better position your Miner and maximize your rewards without a compromise to harsh outdoor conditions.
 
 ## Product Features
 

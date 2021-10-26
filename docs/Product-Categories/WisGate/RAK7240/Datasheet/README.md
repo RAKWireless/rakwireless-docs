@@ -8,7 +8,7 @@ tags:
 prev: ../Supported-LoRa-Network-Servers/
 next: false
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_CE_Certificate.zip]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_CE_certification.pdf]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_FCC_Certificate.zip]
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240-RCM_Test_Report.zip]
   - [IC, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7249_RAK7240_IC_Cert.pdf]

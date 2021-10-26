@@ -158,6 +158,32 @@ module.exports = {
       sidebarDepth: 4
     }
   ],
+  '/Product-Categories/Accessories/SenseCAP-M1-Outdoor-Enclosure-Kit/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/SenseCAP-M1-Outdoor-Enclosure-Kit/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Installation Guide',
+      path: '/Product-Categories/Accessories/SenseCAP-M1-Outdoor-Enclosure-Kit/Installation-Guide/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Solar Shield Installation Guide',
+      path: '/Product-Categories/Accessories/SenseCAP-M1-Outdoor-Enclosure-Kit/Solar-Shield/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
 
 
   // antennas

@@ -154,7 +154,7 @@ The diameter of the pole that is supported by the brackets is 50-100&nbsp;mm. If
 :::
 
 
-1. Hang up the enclosure and fasten it with two M6*12 screws.
+3. Hang up the enclosure and fasten it with two M6*12 screws.
 
 <rk-img
   src="/assets/images/accessories/bobcat-enclosure-kit/installation/10.fixing-the-enclosure.png"

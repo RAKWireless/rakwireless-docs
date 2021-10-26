@@ -7,6 +7,8 @@ tags:
   - datasheet
   - wisnode
   - RAK7201
+certifications:
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK7201/Certification/RAK7201_FCC_Certification.pdf]
 ---
 
 # RAK7201 WisNode Button 4K Datasheet
@@ -175,3 +177,8 @@ The WisNode Button 4K supports LoRaWAN. LoRaWAN supported modes are OTAA and ABP
 | Model   | Description                                                 |
 | ------- | ----------------------------------------------------------- |
 | RAK7201 | 4 keys LoRaWAN button (EU868/IN865/AU915/US915/KR920/AS923) |
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />
+
