@@ -89,6 +89,7 @@ This section describes the generic commands related to “attention” help list
 - [ATR - Restore default parameters](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#atr)
 - [ATE - Echo command](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#ate)
 - [AT+SN - Device serial number](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-sn)
+- [AT+BAUD - Baud rate setting](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-baud)
 
 ### AT 
 
@@ -202,6 +203,37 @@ AT+SN=?
  
 OK
 ```
+
+### AT+BAUD 
+
+Description: Baudrate setting
+
+This command is used to configure the baudrate of the device.
+
+| Command                     | Input Parameter           | Return Value                                                   | Return Code              |
+| --------------------------- | ------------------------- | -------------------------------------------------------------- | ------------------------ |
+| AT+BAUD?                    | -                         | `AT+BAUD:  Get or set the the uart baudrate(4800,9600,115200)` | `OK`                     |
+| AT+BAUD=?                   | -                         | `4800`,`9600` or `115200`                                      | `OK`                     |
+| AT+BAUD=`<Input Parameter>` | `4800`,`9600` or `115200` | -                                                              | `OK` or `AT_PARAM_ERROR` |
+
+:::tip 📝 NOTE:
+You need to restart the module for the new baudrate to take effect. 
+:::
+
+**Example**:
+```
+AT+BAUD=115200
+
+OK
+AT+BAUD=?
+115200
+
+OK
+AT+BAUD=100000
+
+AT_PARAM_ERROR
+```
+
 ## Keys, IDs and EUIs management
 
 This section describes the commands related to the activation of the end device. EUI's and Keys are **MSB first**.  
@@ -624,6 +656,8 @@ This section describes the commands related to the configuration of the LoRaWAN�
 - [AT+LPSEND - Long data payload](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-lpsend)
 - [AT+LINKCHECK - Network link status](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-linkcheck)
 - [AT+USEND - Unified send payload data](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-usend)
+- [AT+PNM - Public Network Mode](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-pnm)
+
 
 ### AT+ADR 
 
@@ -1005,8 +1039,8 @@ This command is used to access and configure the regional frequency band.
 | Command                     | Input Parameter | Return Value                                                                                                                             | Return Code              |
 | --------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
 | AT+BAND?                    | -               | `AT+BAND: Set number corresponding to active regions (0: EU433 1: CN470 2: RU864 3: IN865 4: EU868 5: US915 6: AU915 7: KR920 8: AS923)` | `OK`                     |
-| AT+BAND=?                   | -               | `0` , `1` , `2` , `3` , `4` , `5` , `6` , `7` , `8` or `8-1`, `8-2`, `8-3`, `8-4`                                                                                      | `OK`                     |
-| AT+BAND=`<Input Parameter>` | *< 0 to 8 >*    | -                                                                                                                                        | `OK` or `AT_PARAM_ERROR` |
+| AT+BAND=?                   | -               | `0` , `1` , `2` , `3` , `4` , `5` , `6` , `7` , `8` , `8-1` , `8-1-JP` , `8-2` , `8-3` , `8-4`                                                                                      | `OK`                     |
+| AT+BAND=`<Input Parameter>` | `0` , `1` , `2` , `3` , `4` , `5` , `6` , `7` , `8` , `8-1` , `8-1-JP` , `8-2` , `8-3` , `8-4` | -                                                                                                                                        | `OK` or `AT_PARAM_ERROR` |
 
 **List of Band Parameter Options**
 
@@ -1020,7 +1054,8 @@ This command is used to access and configure the regional frequency band.
 | 5    | US915         |
 | 6    | AU915         |
 | 7    | KR920         |
-| 8 or 8-1    | AS923-1         |
+| 8 or 8-1 | AS923-1   |
+| 8-1-JP | AS923-1 for Japan with LBT support |
 | 8-2  | AS923-2       |
 | 8-3  | AS923-3       |
 | 8-4  | AS923-4       |
@@ -1129,6 +1164,29 @@ OK
 +EVT:SEND CONFIRMED OK
 ```
 
+### AT+PNM
+
+Description: Public Network Mode
+
+This command is used to enable public network mode. This is only available in LoRaWAN mode and it will return `MODE_NOT_SUPPORT` if the device is in P2P mode. Default setting is `1`.
+
+| Command                          | Input Parameter | Return Value                                              | Return Code              |
+| -------------------------------- | --------------- | --------------------------------------------------------- | ------------------------ |
+| AT+PNM?                          | -               | `AT+PNM: Get or set the public network mode (0=off,1=on)` | `OK`                     |
+| AT+PNM=?                         | -               | `0` or `1`                                                | `OK`                     |
+| AT+PNM=`<Input Parameter>`       | `0` or `1`      | -                                                         | `OK` or `AT_PARAM_ERROR` |
+
+Example:
+```
+AT+PNM=1
+
+OK
+AT+PNM=?
+1
+
+OK
+```
+
 ## Class B Mode
 
 This section describes the commands related to Class B mode.
@@ -1217,6 +1275,7 @@ This section describes the commands on getting device information.
 - [AT+RSSI - Receive signal strength indicator](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-rssi)
 - [AT+SNR - Signal to Noise Ratio](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-snr)
 - [AT+VER - Version of the firmware](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-ver)
+- [AT+TIMEREQ - UTC time request](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-timereq)
 
 ### AT+RSSI 
 
@@ -1283,12 +1342,55 @@ V1.0.2
 OK
 ```
 
+### AT+TIMEREQ 
+
+Description: UTC time request
+
+This command is used to get the UTC time. It only works if the device is in LoRaWAN mode and successfully joined.
+
+| Command                        | Input Parameter | Return Value                                      | Return Code                                     |
+| ------------------------------ | --------------- | ------------------------------------------------- | ----------------------------------------------- |
+| AT+TIMEREQ?                    | -               | `AT+TIMEREQ:   Request the current date and time` | `OK`                                            |
+| AT+TIMEREQ=`<Input Parameter>` | `0` or `1`      |                                                   | `OK`,`AT_PARAM_ERROR` or `AT_NO_NETWORK_JOINED` |
+
+:::tip 📝 NOTE:
+With `AT+TIMEREQ` command, you will have an asynchronous reply `+EVT: TIMEREQ OK` after a successful uplink.
+
+You also need to use `AT+LTIME` command to get the exact time data/value.
+:::
+
+Example:
+
+Send `AT+TIMEREQ=1` after a successful join.
+```
++EVT:JOINED
+AT+TIMEREQ=1
+
+OK
+```
+Send an uplink payload and see if `TIMEREQ` is successful.
+```
+AT+SEND=2:12345678
+
+OK
++EVT:TIMEREQ OK
++EVT:SEND CONFIRMED OK
+```
+Check the returned time/value.
+```
+AT+LTIME=?
+LTIME:02h46m12s on 22/10/2021
+
+OK
+```
+
 ## RF Test
 
 Description: Radio frequency test management
 
 This section describes the commands related to RF test management.
 
+- [AT+CW - Send Continuous Wave](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-cw)
 - [AT+TRSSI - Receive Signal Strength Indicator](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-trssi)
 - [AT+TTONE - Start radio frequency tone test](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-ttone)
 - [AT+TTX - Start RF Tx LoRa® test](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-ttx)
@@ -1296,7 +1398,39 @@ This section describes the commands related to RF test management.
 - [AT+TCONF - LoRa® RF test configuration](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-tconf)
 - [AT+TTH - RF Tx hopping test](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-tth)
 - [AT+TOFF - Stop ongoing radio frequency test](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-toff)
-- [AT+CERTIF - Set the module in LoRaWAN® Certification mode](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-certif)
+- [AT+CERTIF - LoRaWAN® Certification mode](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-certif)
+
+### AT+CW 
+
+Description: Send continuous wave
+
+This command is used to enable continuous RF tranmissions with configurable frequency, transmit power and duration.
+
+| Command                                   | Input Parameter               | Return Value                  | Return Code              |
+| ----------------------------------------- | ----------------------------- | ----------------------------- | ------------------------ |
+| AT+CW?                                    | -                             | `AT+CW: Send continuous wave` | `OK`                     |
+| AT+CW=`<Input Parameter>`                 | **freq**:**txpower**:**time** | -                             | `OK` or `AT_PARAM_ERROR` |
+
+:::tip 📝 NOTE:
+Frequency configuration:
+
+- RAK3172(L) is needed to use the low frequency range 150000000 - 600000000.
+- RAK3172(H) is needed to use the high frequency range 600000000 - 960000000.
+
+Txpower:
+- 5 to 22
+
+Time (seconds):
+- 0 - 65535
+
+:::
+
+Example:
+```
+AT+CW=868000000:20:60
+
+OK
+```
 
 ### AT+TRSSI 
 
@@ -1487,14 +1621,35 @@ OK
 
 ### AT+CERTIF 
 
-Description: Set the module in LoRaWAN® Certification mode
+Description: LoRaWAN® Certification mode
 
-This command is used to start the RF Rx LoRa test.
+This command is used to enable LoRaWAN® Certification mode (1-OTAA, 0-ABP).
 
-| Command    | Input Parameter | Return Value                                               | Return Code             |
-| ---------- | --------------- | ---------------------------------------------------------- | ----------------------- |
-| AT+CERTIF? | -               | `AT+CERTIF: Set the module in LoraWAN® Certification mode` | `OK`                    |
-| AT+CERTIF  | -               | -                                                          | `OK` or `AT_BUSY_ERROR` |
+| Command                        | Input Parameter | Return Value                                               | Return Code              |
+| ------------------------------ | --------------- | ---------------------------------------------------------- | ------------------------ |
+| AT+CERTIF?                     | -               | `AT+CERTIF:  Set the module in LoraWAN Certification mode` | `OK`                     |
+| AT+CERTIF=`<Input Parameter>`  | `0` or `1`      | -                                                          | `OK` or `AT_PARAM_ERROR` |
+
+:::tip 📝 NOTE:
+AT+CERTIF puts the timer to handler data transmission equal to 5 s.
+:::
+
+Examples:
+
+OTAA
+```
+AT+CERTIF=1
+
+OK
++EVT:JOINED
+```
+ABP
+```
+AT+CERTIF=0
++EVT:JOINED
+
+OK
+```
 
 ## P2P Mode
 
@@ -1579,8 +1734,8 @@ This command is used to access and configure P2P mode frequency.
 :::tip 📝 NOTE:
 Frequency configuration:
 
-- RAK3172(L) is needed to use the low frequency range 150000000 - 525000000.
-- RAK3172(H) is needed to use the high frequency range 525000000 - 960000000.
+- RAK3172(L) is needed to use the low frequency range 150000000 - 600000000.
+- RAK3172(H) is needed to use the high frequency range 600000000 - 960000000.
 :::
 
 Example:
@@ -1776,7 +1931,8 @@ This command is used to configure timeout period for P2P window reception.
 
 Input parameter details:
 
-- If the value is set to 65535, the device will constantly listen to P2P TX without a timeout. This is the same as setting the device in RX mode.
+- If the value is set to 65534, the device will continuously listen to P2P LoRa TX packets without any timeout. This is the same as setting the device in RX mode.
+- If the value is set to 65535, the device will listen to P2P TX without a timeout. But it will stop listening once a P2P LoRa packet is received to save power.
 - If the value is 0, the device will stop listening to P2P TX data. The device is in TX mode.
 
 Example:
@@ -1871,7 +2027,7 @@ This section describes the commands related to transparent data transmission in 
 
 Description: Set transparent transmission mode
 
-This command is used to set the transparent transmission mode.
+This command is used to set the transparent transmission mode. This only works in LoRaWAN mode.
 
 :::tip 📝 NOTE:
 In data transparent transmission mode, all your input to the uart port will be transmitted to the network server. Standard AT commands will not work. To get out of data transparent transmission mode, you need to input `+++` command without any termination (e.g. CR or LF).

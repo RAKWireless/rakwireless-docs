@@ -1220,4 +1220,4 @@ You need to do either of the two options until the USB Mass Storage `RPI-RP2` sh
   caption="Drag the firmware.uf2 file to RPI-RP2 USB Mass Storage"
 />
 
-
+5. You need to reset the device after updating the `.uf2` firmware file.

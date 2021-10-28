@@ -1274,11 +1274,19 @@ Refer to the [P2P Mode](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Co
 />
 
 
-2. To set one board as receiver (RX), set the value of P2P receive command to 90535.
+2. To set one module as receiver (RX), you need set the value of P2P receive command to 65535.
 
 ```
-AT+PRECV=90535 
+AT+PRECV=65535 
 ```
+
+:::tip 📝 NOTE:
+
+- If AT+PRECV value is set to 65534, the device will continuously listen to P2P LoRa TX packets without any timeout. This is the same as setting the device in RX mode.
+- If AT+PRECV value is set to 65535, the device will listen to P2P TX without a timeout. But it will stop listening once a P2P LoRa packet is received to save power.
+- If AT+PRECV value is 0, the device will stop listening to P2P TX data. The device is in TX mode.
+
+:::
 
 With one board configured as RX, the other device will be the TX.
 
