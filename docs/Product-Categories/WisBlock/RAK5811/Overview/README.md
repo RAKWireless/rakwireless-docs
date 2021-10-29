@@ -22,16 +22,17 @@ Thank you for choosing **RAK5811 WisBlock 0-5V Interface Module** in your awesom
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
 * [WisBlock Interface Tutorial](/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
 
-**Examples**:
+**Examples**
 
-For WisBlock Core RAK4630:
-* [Sample Code: RAK5811 0-5V](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/IO/RAK5811_0-5V)
+* For WisBlock Core **RAK4630:** [Sample Code: RAK5811 0-5V](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/IO/RAK5811_0-5V)
+* For WisBlock Core **RAK11200:** [Sample Code: RAK5811 0-5V](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/IO/RAK5811_0-5V)
+* For WisBlock Core **RAK11310:** [Sample Code: RAK5811 0-5V](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/IO/RAK5811_0-5V)
 
-For WisBlock Core RAK11200:
-* [Sample Code: RAK5811 0-5V](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/IO/RAK5811_0-5V)
+**Complete solution for Water Level Monitoring**
 
-Complete solution for WisBlock Core RAK4630:
-* [Sample Code: Water Level Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Water_Level_Monitoring)
+* For WisBlock Core RAK4630: [Sample Code: Water Level Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Water_Level_Monitoring)
+* For WisBlock Core RAK11310: [Sample Code: Water Level Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/solutions/Weather_Monitoring)
+
 
 ## Product Description
 

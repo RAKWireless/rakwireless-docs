@@ -30,8 +30,8 @@ Before going through each and every step on using RAK19002 WisBlock module, make
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
-- [Solar charger (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
 
 #### Software
 
@@ -129,42 +129,110 @@ For RAK19002, the default accessible IO pin assignments are defined as follows w
 - The maximum recommended current is 50&nbsp;mA  ( V<sub>IN</sub>=3.3&nbsp;V ).
 :::
 
-#### Initial Test of the RAK19002 WisBlock Module
+- [RAK19002 in RAK4631 WisBlock Core Guide](/Product-Categories/WisBlock/RAK19002/Quickstart/#rak19002-in-rak4631-wisblock-core-guide)
+- [RAK19002 in RAK11200 WisBlock Core Guide](/Product-Categories/WisBlock/RAK19002/Quickstart/#rak19002-in-rak11200-wisblock-core-guide)
+- [RAK19002 in RAK11310 WisBlock Core Guide](/Product-Categories/WisBlock/RAK19002/Quickstart/#rak19002-in-rak11310-wisblock-core-guide)
+
+#### RAK19002 in RAK4631 WisBlock Core Guide
 
 If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 7** and **Figure 8**.
+1. First, you need to select the RAK4631 WisBlock Core.
 
 <rk-img
-  src="/assets/images/wisblock/rak19002/quickstart/rak4631_board.png"
+  src="/assets/images/wisblock/rak19002/quickstart/rak4631-board.png"
   width="100%"
   caption="Selecting RAK4631 as WisBlock Core"
 />
 
-<rk-img
-  src="/assets/images/wisblock/rak19002/quickstart/rak11200_board.png"
-  width="100%"
-  caption="Selecting RAK11200 as WisBlock Core"
-/>
-
-2. The [Basic Sample Code for RAK19002](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/sensors/RAK19002_Boost_TPS61046/RAK19002_Boost_TPS61046.ino) in Github will work on all WisBlock Core. You can open the the example codes depending on your WisBlock Core, as shown in **Figure 9** and **Figure 10**. 
+2. The [Basic Sample Code for RAK19002](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/sensors/RAK19002_Boost_TPS61046/RAK19002_Boost_TPS61046.ino) in Github will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 8**.
 
 <rk-img
-  src="/assets/images/wisblock/rak19002/quickstart/rak4631_boost.png"
+  src="/assets/images/wisblock/rak19002/quickstart/rak4631-examplecode.png"
   width="100%"
   caption="Opening RAK19002 example code for RAK4631 WisBlock Core"
 />
 
+3. Once the example code is open, you can now select the right serial port and upload the code, as shown in **Figure 9** and **Figure 10**.
+
 <rk-img
-  src="/assets/images/wisblock/rak19002/quickstart/rak11200_boost.png"
+  src="/assets/images/wisblock/rak19002/quickstart/rak4631-selectport.png"
+  width="100%"
+  caption="Selecting the correct Serial Port"
+/>
+
+<rk-img
+  src="/assets/images/wisblock/rak19002/quickstart/upload.png"
+  width="100%"
+  caption="Uploading the RAK19002 example code"
+/>
+
+4. When you successfully uploaded the example sketch, you can now use the RAK19002 Boost module to power-up your external sensors, modules, or devices. You can use any devices as long as it operates at 12&nbsp;V and up to 50&nbsp;mA.
+
+#### RAK19002 in RAK11200 WisBlock Core Guide
+
+If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
+
+1. First, you need to select the RAK11200 WisBlock Core.
+
+<rk-img
+  src="/assets/images/wisblock/rak19002/quickstart/rak11200-board.png"
+  width="100%"
+  caption="Selecting RAK11200 as WisBlock Core"
+/>
+
+2. The [Basic Sample Code for RAK19002](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/sensors/RAK19002_Boost_TPS61046/RAK19002_Boost_TPS61046.ino) in Github will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 12**.
+
+<rk-img
+  src="/assets/images/wisblock/rak19002/quickstart/rak11200-examplecode.png"
   width="100%"
   caption="Opening RAK19002 example code for RAK11200 WisBlock Core"
 />
 
-3. Once the example code is open, you can now select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
+3. Once the example code is open, you can now select the right serial port and upload the code, as shown in **Figure 13** and **Figure 14**.
+
+::: tip 📝 NOTE
+RAK11200 requires **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+:::
 
 <rk-img
-  src="/assets/images/wisblock/rak19002/quickstart/select_port.png"
+  src="/assets/images/wisblock/rak19002/quickstart/rak11200-selectport.png"
+  width="100%"
+  caption="Selecting the correct Serial Port"
+/>
+
+<rk-img
+  src="/assets/images/wisblock/rak19002/quickstart/upload.png"
+  width="100%"
+  caption="Uploading the RAK19002 example code"
+/>
+
+4. When you successfully uploaded the example sketch, you can now use the RAK19002 Boost module to power-up your external sensors, modules, or devices. You can use any devices as long as it operates at 12&nbsp;V and up to 50&nbsp;mA.
+
+#### RAK19002 in RAK11310 WisBlock Core Guide
+
+If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
+
+1. First, you need to select the RAK11310 WisBlock Core.
+
+<rk-img
+  src="/assets/images/wisblock/rak19002/quickstart/rak11310-board.png"
+  width="100%"
+  caption="Selecting RAK11310 as WisBlock Core"
+/>
+
+2. The [Basic Sample Code for RAK19002](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/sensors/RAK19002_Boost_TPS61046/RAK19002_Boost_TPS61046.ino) in Github will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 16**.
+
+<rk-img
+  src="/assets/images/wisblock/rak19002/quickstart/rak11310-examplecode.png"
+  width="100%"
+  caption="Opening RAK19002 example code for RAK11310 WisBlock Core"
+/>
+
+3. Once the example code is open, you can now select the right serial port and upload the code, as shown in **Figure 17** and **Figure 18**.
+
+<rk-img
+  src="/assets/images/wisblock/rak19002/quickstart/rak11310-selectport.png"
   width="100%"
   caption="Selecting the correct Serial Port"
 />

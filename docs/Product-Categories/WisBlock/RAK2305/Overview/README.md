@@ -24,20 +24,16 @@ Thank you for choosing **RAK2305 WisBlock WiFi Interface Module** in your awesom
 * [WisBlock IO Tutorial](/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
 
 **Examples**
-* [Sample Code: ESP-AT Command Test](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/communications/WiFi/AT_Command_Test)
-* [Sample Code : Connect to Access Point](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/communications/WiFi/connect_ap)
-
-
+* [Sample Code: RAK4630 AT Command Test](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/communications/WiFi/AT_Command_Test)
+* [Sample Code: RAK11300 AT Command Test](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/communications/WiFi/AT_Command_Test)
+* [Sample Code : RAK4630 Connect to Access Point](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/communications/WiFi/connect_ap)
+* [Sample Code : RAK11300 Connect to Access Point](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/communications/WiFi/connect_ap)
 
 ## Product Description
 
-**RAK2305** is a **WisBlock Wireless** module that extends the **WisBlock** system with Wi-Fi and Bluetooth connectivity. It is based on the Espressif ESP32 WROVER module. It communicates with the **WisBlock Core** module over an UART interface using the Espressif AT commands.
+The RAK2305 module, a part of the WisBlock Wireless series, is designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module.
 
-<!--
-The RAK2305 module is part of the WisBlock series, specifically, it is one of the modules that belongs to the WisIO category. This module was designed to be part of a production-ready IoT solution in a modular way, and must be combined with a WisCore and a WisBase module.
-
-The RAK2305 module is a 2.4 GHz Wi-Fi and Bluetooth in a single module. The core of the module is an ESP32-WROVER-B, which features a PCB antenna. This module is designed to be part of the Internet-of-Things (IoT) applications. It can function as a master or a slave in a Bluetooth network. Internally it supports SPI/I2C/UART interfaces.
--->
+The RAK2305 module is a 2.4&nbsp;GHz Wi-Fi and Bluetooth in a single module. The core of the module is an ESP32-WROVER, which features a PCB antenna. This module is designed to be part of the Internet-of-Things (IoT) applications. It can function as a Central or Peripheral in a Bluetooth network. Internally, it supports SPI/I2C/UART interfaces.
 
 ## Product Features
 

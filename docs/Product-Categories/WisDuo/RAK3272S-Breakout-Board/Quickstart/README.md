@@ -326,20 +326,20 @@ To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
 
 **List of band parameter options**
 
-| Code  | Regional Band |
-| ----- | ------------- |
-| 0     | EU433         |
-| 1     | CN470         |
-| 2     | RU864         |
-| 3     | IN865         |
-| 4     | EU868         |
-| 5     | US915         |
-| 6     | AU915         |
-| 7     | KR920         |
-| 8 or 8-1     | AS923-1         |
-| 8-2   | AS923-2       |
-| 8-3   | AS923-3       |
-| 8-4   | AS923-4       |
+| Code     | Regional Band |
+| -------- | ------------- |
+| 0        | EU433         |
+| 1        | CN470         |
+| 2        | RU864         |
+| 3        | IN865         |
+| 4        | EU868         |
+| 5        | US915         |
+| 6        | AU915         |
+| 7        | KR920         |
+| 8 or 8-1 | AS923-1       |
+| 8-2      | AS923-2       |
+| 8-3      | AS923-3       |
+| 8-4      | AS923-4       |
 
 
 <rk-img
@@ -388,12 +388,12 @@ AT+JOIN=1:0:10:8
 
 Join command format: **`AT+JOIN=w:x:y:z`**
 
-| Parameter | Description                                                 |
-| --------- | ----------------------------------------------------------- |
-| w         | Join command - 1: joining, 0: stop joining.                 |
-| x         | Auto-join config - 1: auto-join on powerup, 0: no auto-join |
-| y         | Reattempt interval in seconds (7-255) - 8 is default.       |
-| z         | Number of join attempts (0-255) - 0 is default.             |
+| Parameter | Description                                                  |
+| --------- | ------------------------------------------------------------ |
+| w         | Join command - 1: joining, 0: stop joining.                  |
+| x         | Auto-join config - 1: auto-join on power up, 0: no auto-join |
+| y         | Reattempt interval in seconds (7-255) - 8 is default.        |
+| z         | Number of join attempts (0-255) - 0 is default.              |
 
 5. After 5 or 6 seconds, if the request is successfully received by a LoRa gateway, then you should see `+EVT:JOINED` status reply, as shown in Figure 20.
 
@@ -568,20 +568,20 @@ To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
 
 **List of band parameter options**
 
-| Code  | Regional Band |
-| ----- | ------------- |
-| 0     | EU433         |
-| 1     | CN470         |
-| 2     | RU864         |
-| 3     | IN865         |
-| 4     | EU868         |
-| 5     | US915         |
-| 6     | AU915         |
-| 7     | KR920         |
-| 8 or 8-1     | AS923-1         |
-| 8-2   | AS923-2       |
-| 8-3   | AS923-3       |
-| 8-4   | AS923-4       |
+| Code     | Regional Band |
+| -------- | ------------- |
+| 0        | EU433         |
+| 1        | CN470         |
+| 2        | RU864         |
+| 3        | IN865         |
+| 4        | EU868         |
+| 5        | US915         |
+| 6        | AU915         |
+| 7        | KR920         |
+| 8 or 8-1 | AS923-1       |
+| 8-2      | AS923-2       |
+| 8-3      | AS923-3       |
+| 8-4      | AS923-4       |
 
 
 <rk-img
@@ -904,20 +904,20 @@ AT+BAND=4
 
 **List of band parameter options**
 
-| Code  | Regional Band |
-| ----- | ------------- |
-| 0     | EU433         |
-| 1     | CN470         |
-| 2     | RU864         |
-| 3     | IN865         |
-| 4     | EU868         |
-| 5     | US915         |
-| 6     | AU915         |
-| 7     | KR920         |
-| 8 or 8-1     | AS923-1         |
-| 8-2   | AS923-2       |
-| 8-3   | AS923-3       |
-| 8-4   | AS923-4       |
+| Code     | Regional Band |
+| -------- | ------------- |
+| 0        | EU433         |
+| 1        | CN470         |
+| 2        | RU864         |
+| 3        | IN865         |
+| 4        | EU868         |
+| 5        | US915         |
+| 6        | AU915         |
+| 7        | KR920         |
+| 8 or 8-1 | AS923-1       |
+| 8-2      | AS923-2       |
+| 8-3      | AS923-3       |
+| 8-4      | AS923-4       |
 
 
 <rk-img
@@ -1116,20 +1116,20 @@ To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
 
 **List of band parameter options**
 
-| Code  | Regional Band |
-| ----- | ------------- |
-| 0     | EU433         |
-| 1     | CN470         |
-| 2     | RU864         |
-| 3     | IN865         |
-| 4     | EU868         |
-| 5     | US915         |
-| 6     | AU915         |
-| 7     | KR920         |
-| 8 or 8-1     | AS923-1         |
-| 8-2   | AS923-2       |
-| 8-3   | AS923-3       |
-| 8-4   | AS923-4       |
+| Code     | Regional Band |
+| -------- | ------------- |
+| 0        | EU433         |
+| 1        | CN470         |
+| 2        | RU864         |
+| 3        | IN865         |
+| 4        | EU868         |
+| 5        | US915         |
+| 6        | AU915         |
+| 7        | KR920         |
+| 8 or 8-1 | AS923-1       |
+| 8-2      | AS923-2       |
+| 8-3      | AS923-3       |
+| 8-4      | AS923-4       |
 
 
 <rk-img
@@ -1282,9 +1282,9 @@ AT+PRECV=65535
 
 :::tip 📝 NOTE:
 
-- If AT+PRECV value is set to 65534, the device will continuously listen to P2P LoRa TX packets without any timeout. This is the same as setting the device in RX mode.
-- If AT+PRECV value is set to 65535, the device will listen to P2P TX without a timeout. But it will stop listening once a P2P LoRa packet is received to save power.
-- If AT+PRECV value is 0, the device will stop listening to P2P TX data. The device is in TX mode.
+- If `AT+PRECV` value is set to 65534, the device will continuously listen to P2P LoRa TX packets without any timeout. This is the same as setting the device in RX mode.
+- If `AT+PRECV` value is set to 65535, the device will listen to P2P TX without a timeout. But it will stop listening once a P2P LoRa packet is received to save power.
+- If `AT+PRECV` value is 0, the device will stop listening to P2P TX data. The device is in TX mode.
 
 :::
 

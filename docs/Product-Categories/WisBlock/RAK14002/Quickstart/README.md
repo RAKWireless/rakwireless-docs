@@ -98,7 +98,7 @@ These are the quick links that go directly to the software guide for the specifi
 
 - [RAK14002 in RAK4631 WisBlock Core Guide](/Product-Categories/WisBlock/RAK14002/Quickstart/#rak14002-in-rak4631-wisblock-core-guide)
 - [RAK14002 in RAK11200 WisBlock Core Guide](/Product-Categories/WisBlock/RAK14002/Quickstart/#rak14002-in-rak11200-wisblock-core-guide)
-
+- [RAK14002 in RAK11310 WisBlock Core Guide](/Product-Categories/WisBlock/RAK14002/Quickstart/#rak14002-in-rak11310-wisblock-core-guide)
 
 #### RAK14002 in RAK4631 WisBlock Core Guide
 
@@ -172,48 +172,48 @@ Touch the left pad of the RAK14002 module. If you see the logs, as shown in **Fi
   caption="RAK14002 sensor data logs"
 />
 
-##### PlatformIO Setup (optional)
+##### PlatformIO Setup (Optional)
 
-Install the [RAKwireless PlatformIO BSP](https://docs.rakwireless.com/Knowledge-Hub/Learn/Board-Support-Package-Installation-in-PlatformIO/).
+1. Install the [RAK_PATCH](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md#rak-wisblock-modules-in-platformio)
 
-After installing your RAK Core board on PlatformIO you can import the entire project to PlatformIO.
+After installing your RAK Core board on PlatformIO, you can import the entire project to PlatformIO.
 
-1. Import Arduino Project to PlatformIO.
+2. Import Arduino Project to PlatformIO.
 
-Open PlatformIO PIO Home and select **Import Arduino Project** as shown in **Figure 14**.
+- Open PlatformIO PIO Home and select **Import Arduino Project**, as shown in **Figure 14**.
 <rk-img
   src="/assets/images/wisblock/rak14002/quickstart/pio-home-import.png"
   width="100%"
   caption="Import RAK14002 Arduino Project"
 />
 
-
-Select the **WisBlock Core Board** and check "**Use Libraries installed by the Arduino IDE**" option as shown in **Figure 15** below. Then choose the directory of the RAK14002 Arduino Project.
+- Select the **WisBlock Core Board** and check "**Use Libraries installed by the Arduino IDE**" option, as shown in **Figure 15** below. Then choose the directory of the RAK14002 Arduino Project.
 <rk-img
   src="/assets/images/wisblock/rak14002/quickstart/import-project.png"
   width="100%"
   caption="Select Board and check Import Libraries"
 />
 
-To finish import, click on **Import** button as shown in **Figure 16**.
+- To finish import, click on **Import** button, as shown in **Figure 16**.
 <rk-img
   src="/assets/images/wisblock/rak14002/quickstart/finish-import.png"
   width="100%"
   caption="Select Board and check Import libraries"
 />
 
-2. Build imported project on PlatformIO.
+3. Build imported project on PlatformIO.
 
-Now we can build the project by clicking on highlighted icon as shown in **Figure 17**.
+- Now, you can build the project by clicking on highlighted icon, as shown in **Figure 17**.
+
 <rk-img
   src="/assets/images/wisblock/rak14002/quickstart/build-project.png"
   width="100%"
   caption="Build Arduino imported project"
 />
 
-3. Upload imported project on PlatformIO.
+4. Upload imported project on PlatformIO.
 
-To upload the project on target board, click on the highlighted icon as shown in **Figure 18**.
+- To upload the project on target board, click on the highlighted icon, as shown in **Figure 18**.
 <rk-img
   src="/assets/images/wisblock/rak14002/quickstart/upload-pio-project.png"
   width="100%"
@@ -224,7 +224,7 @@ To upload the project on target board, click on the highlighted icon as shown in
 
 Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
-1. Now select the RAK11200 WisBlock Core as shown in **Figure 19**.
+1. Select the RAK11200 WisBlock Core, as shown in **Figure 19**.
 
 <rk-img
   src="/assets/images/wisblock/rak14002/quickstart/rak11200_board.png"
@@ -236,7 +236,7 @@ Arduino programs are usually referred to as sketches. The sketches for this modu
 
 2. Install the [RAKwireless CAP1293 Library](https://github.com/RAKWireless/RAK14002-CAP1293-Library) using Arduino Library Manager.
 
-On Arduino IDE select: Sketch-> Include Library -> Manage Libraries as shown in **Figure 20**.
+- On Arduino IDE select: Sketch-> Include Library -> Manage Libraries, as shown in **Figure 20**.
 
 <rk-img
   src="/assets/images/wisblock/rak14002/quickstart/rak11200_manage_library.png"
@@ -244,26 +244,30 @@ On Arduino IDE select: Sketch-> Include Library -> Manage Libraries as shown in 
   caption="Select Arduino Library Manager"
 />
 
-On **Library Manager** text area type **RAKwireless CAP1293**
+- On **Library Manager** text area, type **RAKwireless CAP1293**.
 <rk-img
   src="/assets/images/wisblock/rak14002/quickstart/cap1293_lib_manager_rak11200.png"
   width="100%"
   caption="Arduino Library Manager RAKwireless CAP1293"
 />
 
-To finish the installation, click on the **Install** button as shown in **Figure 22**.
+- To finish the installation, click on the **Install** button as shown in **Figure 22**.
 <rk-img
   src="/assets/images/wisblock/rak14002/quickstart/cap1293_install_rak11200.png"
   width="100%"
   caption="Finish RAKwireless CAP1293 Touch Pad Library Installation"
 />
 
-3. Once the library is installed, open the **RAK14002 Example01_BasicReading** example. On Arduino IDE select: File-> Examples -> RAKwireless CAP1293 Touch Pad Library -> RAK14002 Example01_BasicReading as shown in **Figure 23**.
+3. Once the library is installed, open the **Example01_BasicReading** example. 
+
+- On Arduino IDE select: **File** -> **Examples** -> **RAK WisBlock Examples** -> **RAK11200** -> **IO** -> **RAK14002_CAP1903_TouchKey** -> **Example01_BasicReading**, as shown in **Figure 23**.
+
 <rk-img
   src="/assets/images/wisblock/rak14002/quickstart/rak11200_example.png"
   width="100%"
-  caption="Open RAK14002 Example01_BasicReading sketch"
+  caption="Open RAK14002 Example01_BasicReading Sketch"
 />
+
 
 4. You can now select the right serial port and upload the code, as shown in **Figure 24** and  **Figure 25**.
 
@@ -274,7 +278,7 @@ To finish the installation, click on the **Install** button as shown in **Figure
 />
 
 :::tip 📝 NOTE:
-RAK11200 requires BOOT0 pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Please check the full details on the [RAK11200 Quick Start Guide](/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+RAK11200 requires BOOT0 pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
 :::
 
 <rk-img
@@ -293,3 +297,223 @@ Touch the left pad of the RAK14002 module. If you see the logs, as shown in **Fi
   width="80%"
   caption="RAK14002 sensor data logs"
 />
+
+#### RAK14002 in RAK11310 WisBlock Core Guide
+
+Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+
+1. Launch Arduino IDE then select **Tools**-> **Boards**-> **Boards Manager**.
+
+On Boards Manager text area, type **RAK**. The RAKwireless RP Boards will be shown in the window.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rak11310_board.png"
+  width="80%"
+  caption="Boards Manager RAKwireless RP Boards"
+/>
+
+2. Now select the RAKwireless RP Boards and then click on **Install** button, as shown in **Figure 28**.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rak11310_install.png"
+  width="80%"
+  caption="RAKwireless RP Boards install"
+/>
+
+Arduino programs are usually referred to as sketches. The sketches for this module will be available on the Arduino IDE after the Library install.
+
+3. Install the [RAKwireless CAP1293 Library](https://github.com/RAKWireless/RAK14002-CAP1293-Library) using Arduino Library Manager.
+
+- Launch Arduino IDE and select: **Sketch**-> **Include Library** -> **Manage Libraries**, as shown in **Figure 29**.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rak11310_manage_library.png"
+  width="100%"
+  caption="Select Arduino Library Manager"
+/>
+
+- On **Library Manager** text area, type **RAKwireless CAP1293**.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/cap1293_lib_manager_rak11310.png"
+  width="80%"
+  caption="Arduino Library Manager RAKwireless CAP1293"
+/>
+
+- To finish the installation, click on the **Install** button, as shown in **Figure 31**.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/cap1293_install_rak11310.png"
+  width="80%"
+  caption="Finish RAKwireless CAP1293 Touch Pad Library Installation"
+/>
+
+- Once the library is installed, open the RAK14002 Example01_BasicReading example.
+
+4. Launch Arduino IDE  and select: **File** -> **Examples** -> **RAKwireless CAP1293 Touch Pad Library** -> **RAK14002 Example01_BasicReading**, as shown in **Figure 32**. 
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rak11310_example.png"
+  width="80%"
+  caption="Open RAK14002 Example01_BasicReading"
+/>
+
+5. You can now select the right serial port and upload the code, as shown in **Figure 33** and **Figure 34**.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rak11310_select_port.png"
+  width="100%"
+  caption="Selecting the RAK11310 Serial Port"
+/>
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/cap1293_upload_rak11310.png"
+  width="100%"
+  caption="Uploading the RAK14002 example code on RAK11310"
+/>
+
+After successfully uploaded the Example01_BasicReading sketch, open the Serial Monitor of the Arduino IDE to check the sensor's reading logs.
+
+<!-- Add log images here
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/cap1293_upload_rak11200.png"
+  width="100%"
+  caption="Uploading the RAK14002 example code on RAK11310"
+/>
+
+-->
+
+
+##### RAK11310 PlatformIO Setup (Optional)
+
+
+:::tip 📝 NOTE:
+This procedure was tested only on Windows 10 and Ubuntu.
+:::
+
+
+1. First, install Raspberry Pi RP2040 platform.
+
+- Launch Visual Studio Code and select the PIO Home tab **(1)**. Then click on Platforms icon **(2)** and select the Embedded tab **(3)**, as shown in **Figure 35**.
+
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/pio_rak11310.png"
+  width="100%"
+  caption="PIO Home PlatformIO platforms"
+/>
+
+- On Embedded text area, type **Raspberry**. To install the new platform, click on the new **Raspberry PI RP2040** window.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rp2040_select.png"
+  width="100%"
+  caption="PIO Home Raspberry Pi RP2040"
+/>
+
+- Now click on **Install** button, as shown in **Figure 37**.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rp2040_install.png"
+  width="100%"
+  caption="Raspberry PI RP2040 Platform install"
+/>
+
+2. Open a project example that uses the RP2040 Platform.
+
+- On the **PIO Home** tab, click on **Project Examples**.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rp2040_project_example.png"
+  width="100%"
+  caption="Import RP2040 project"
+/>
+
+- To find the RP2040 examples, type **RP2040** on **Import Project Example** text area.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rp2040_import.png"
+  width="50%"
+  caption="Selecting RP2040 project"
+/>
+
+- Choose **arduino-blink** project then click on **Import** button.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rp2040_arduino_blink.png"
+  width="50%"
+  caption="Import arduino-blink project"
+/>
+
+- Click **Yes** button on trust window.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rp2040_trust.png"
+  width="50%"
+  caption="PlatformIO trust authors"
+/>
+
+3. Build the imported project and ignore warnings.
+
+4. Install the **RAK Patch**.
+
+- Download and install the [RAK Patch](https://raw.githubusercontent.com/RAKWireless/WisBlock/master/PlatformIO/RAK_PATCH.zip).
+
+- Unzip the contents of RAK_PATCH.zip into folder RAK_PATCH in your PlatformIO installation folder.
+The table below shows the PlatformIO installation directory for each operating system.
+  
+| PlatformIO path on different OS |                                      |
+| :------------------------------ | :----------------------------------- |
+| Windows 10                      | `%UserProfile%\.platformio\`         |
+| Linux                           | `~/.platformio/`                     |
+| MacOS                           | `/Users/{Your_User_id}/.platformio/` |
+
+- **Figure 42** shows the PlatformIO installation directory on Windows 10.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rak_patch_folder.png"
+  width="70%"
+  caption="RAK patch folder on Windows"
+/>
+
+- Open a command prompt in **`%UserProfile%.platformio\RAK_PATCH`** folder and execute python `./rak_patch.py`.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rak_patch_installed.png"
+  width="70%"
+  caption="RAK patch installed on Windows"
+/>
+
+:::warning ⚠️ WARNING    
+In case of Raspberry PI 2040 platform update on PlatformIO, the RAK_PATH script must be executed again after the platform update.
+:::
+
+5. Check RAK_PATCH installation.
+
+- Select **PIO Home** tab, then click on **+ New Project** button.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rp2040_new_project.png"
+  width="100%"
+  caption="Create new PlatformIO project"
+/>
+
+- A new Project Wizard window will appear.
+ 
+- Type **RAK11300** on **Board**. 
+
+- On the **Name** text area, type the name of your project. 
+
+- To finish the project creation, click on **Finish** button.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rp2040_wizard.png"
+  width="50%"
+  caption="Project Wizard window"
+/>
+
+::: tip 📝 NOTE
+The board list for Raspberry Pi RP2040 Framework shows the **WisBlock RAK11300 (RAKwireless)**.
+:::
+

@@ -32,8 +32,8 @@ Before going through each and every step on using RAK5804 WisBlock module, make 
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
-- [Solar charger (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
 
 #### Software
 
@@ -44,7 +44,7 @@ Before going through each and every step on using RAK5804 WisBlock module, make 
 
 ### Hardware Setup
 
-The RAK5804 module is designed as an IO extension module that allows you to connect external digital and analog modules to create a customized IoT solution. These third-party modules are connected through two expansion connectors: J2 and J3. In addition, the RAK5804 module also supports a USB interface, which can be used to access and program the MCU of the WisBlock Core module of the solution.  For more information about RAK5804, refer to the [Datasheet](../Datasheet/).
+The RAK5804 module is designed as an IO extension module that allows you to connect external digital and analog modules to create a customized IoT solution. These third-party modules are connected through two expansion connectors: J2 and J3. In addition, the RAK5804 module also supports a USB interface, which can be used to access and program the MCU of the WisBlock Core module of the solution. For more information about RAK5804, refer to the [Datasheet](../Datasheet/).
 
 The RAK5804 module can be mounted on the IO slot of the WisBlock Base board, as shown in **Figure 1**. Also, always secure the connection of the WisBlock module by using the compatible screws.
 
@@ -78,7 +78,15 @@ For RAK5804, the accessible GPIO pin assignments are defined as follows in the A
 - `WB_SW1` for SW1 pin
 - `WB_A1` for AIN1, ADC Input pin
 
-#### I2C Connection on RAK5804
+These are the quick links that go directly to the software guide for the specific WisBlock Core module you use:
+
+- [RAK5804 in RAK4631 WisBlock Core Guide](/Product-Categories/WisBlock/RAK5804/Quickstart/#rak5804-in-rak4631-wisblock-core-guide)
+- [RAK5804 in RAK11200 WisBlock Core Guide](/Product-Categories/WisBlock/RAK5804/Quickstart/#rak5804-in-rak11200-wisblock-core-guide)
+- [RAK5804 in RAK11310 WisBlock Core Guide](/Product-Categories/WisBlock/RAK5804/Quickstart/#rak5804-in-rak11310-wisblock-core-guide)
+
+#### RAK5804 in RAK4631 WisBlock Core Guide
+
+##### I2C Connection on RAK5804
 
 This is just an example and illustration on how to use the RAK5804 for external I2C sensors, modules, or devices. You can use any I2C devices as long as it operates at 3.3&nbsp;V.
 
@@ -88,30 +96,24 @@ This is just an example and illustration on how to use the RAK5804 for external 
   caption="Connecting the RAK5804 to the I2C pin of the module"
 />
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 4** and **Figure 5**.
+1. First, you need to select the RAK4631 WisBlock Core.
 
 <rk-img
-  src="/assets/images/wisblock/rak5804/quickstart/rak4631_board.png"
+  src="/assets/images/wisblock/rak5804/quickstart/rak4631-board.png"
   width="100%"
   caption="Selecting RAK4631 as WisBlock Core"
 />
 
-<rk-img
-  src="/assets/images/wisblock/rak5804/quickstart/rak11200_board.png"
-  width="100%"
-  caption="Selecting RAK11200 as WisBlock Core"
-/>
-
-2. On the Arduino IDE, go to **Sketch > Include Library > Manage Libraries**. The Library Manager should open, then install the [Adafruit SSD1306](https://github.com/adafruit/Adafruit_SSD1306) and the [Adafruit GFX](https://github.com/adafruit/Adafruit-GFX-Library) libraries, as shown in **Figure 6** and **Figure 7**.
+2. On the Arduino IDE, go to **Sketch > Include Library > Manage Libraries**. The Library Manager should open, then install the [Adafruit SSD1306](https://github.com/adafruit/Adafruit_SSD1306) and the [Adafruit GFX](https://github.com/adafruit/Adafruit-GFX-Library) libraries, as shown in **Figure 5** and **Figure 6**.
 
 <rk-img
-  src="/assets/images/wisblock/rak5804/quickstart/ssd1306_lib.png"
+  src="/assets/images/wisblock/rak5804/quickstart/ssd1306-lib.png"
   width="70%"
   caption="Installing the Adafruit SSD1306 library"
 />
 
 <rk-img
-  src="/assets/images/wisblock/rak5804/quickstart/gfx_lib.png"
+  src="/assets/images/wisblock/rak5804/quickstart/gfx-lib.png"
   width="70%"
   caption="Installing the Adafruit GFX library"
 />
@@ -223,21 +225,15 @@ void loop() {
 }
 ```
 
-4. Then select the right Serial Port and upload the code, as shown in **Figure 8** and **Figure 9**.
+4. Then select the right Serial Port and upload the code.
 
 <rk-img
-  src="/assets/images/wisblock/rak5804/quickstart/select_port.png"
+  src="/assets/images/wisblock/rak5804/quickstart/rak4631-i2c-selectport.png"
   width="100%"
   caption="Selecting the correct Serial Port"
 />
 
-<rk-img
-  src="/assets/images/wisblock/rak5804/quickstart/upload.png"
-  width="100%"
-  caption="Uploading the sample code"
-/>
-
-5. When you successfully uploaded the sample code, you will now be able to see the RAK logo displayed on your OLED screen, as shown in **Figure 10**, which means that the module is properly communicating with the WisBlock core using the I2C protocol.
+5. When you successfully uploaded the sample code, you will now be able to see the RAK logo displayed on your OLED screen, as shown in **Figure 8**, which means that the module is properly communicating with the WisBlock core using the I2C protocol.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/quickstart/rak_oled.png"
@@ -245,7 +241,7 @@ void loop() {
   caption="RAK logo displayed on OLED screen"
 />
 
-#### GPIO Connection on RAK5804
+##### GPIO Connection on RAK5804
 
 This is just an example and illustration on how to use the GPIO pins of RAK5804 for external sensors, modules, or devices. There are four (4) GPIO pins available on the RAK5804. You can use any of the GPIO pins as long as your modules, sensors, or devices operates at 3.3&nbsp;V.
 
@@ -255,29 +251,23 @@ This is just an example and illustration on how to use the GPIO pins of RAK5804 
   caption="Connecting the RAK5804 to the GPIO pin of the sensor module"
 />
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 12** and **Figure 13**.
+1. First, you need to select the RAK4631 WisBlock Core.
 
 <rk-img
-  src="/assets/images/wisblock/rak5804/quickstart/rak4631_board.png"
+  src="/assets/images/wisblock/rak5804/quickstart/rak4631-board.png"
   width="100%"
   caption="Selecting RAK4631 as WisBlock Core"
 />
 
-<rk-img
-  src="/assets/images/wisblock/rak5804/quickstart/rak11200_board.png"
-  width="100%"
-  caption="Selecting RAK11200 as WisBlock Core"
-/>
-
-1. On the Arduino IDE, go to **Sketch > Include Library > Manage Libraries**. The Library Manager should open, then install the [Adafruit DHT Sensor](https://github.com/adafruit/DHT-sensor-library) library, as shown in **Figure 14**.
+2. On the Arduino IDE, go to **Sketch > Include Library > Manage Libraries**. The Library Manager should open, then install the [Adafruit DHT Sensor](https://github.com/adafruit/DHT-sensor-library) library, as shown in **Figure 11**.
 
 <rk-img
-  src="/assets/images/wisblock/rak5804/quickstart/dht_lib.png"
+  src="/assets/images/wisblock/rak5804/quickstart/dht-lib.png"
   width="70%"
   caption="Installing the Adafruit DHT library"
 />
 
-3. After successful installation of the libraries, you can now copy the following sample code into your Arduino IDE:
+3. After successful installation of the library, you can now copy the following sample code into your Arduino IDE:
 
 ```c
 /********* 
@@ -326,30 +316,24 @@ void loop() {
 }
 ```
 
-4. Then select the right Serial Port and upload the code, as shown in **Figure 15** and **Figure 16**.
+4. Then select the right Serial Port and upload the code.
 
 <rk-img
-  src="/assets/images/wisblock/rak5804/quickstart/port_digital.png"
+  src="/assets/images/wisblock/rak5804/quickstart/rak4631-gpio-selectport.png"
   width="100%"
   caption="Selecting the correct Serial Port"
 />
 
-<rk-img
-  src="/assets/images/wisblock/rak5804/quickstart/upload_digital.png"
-  width="100%"
-  caption="Uploading the sample code"
-/>
-
-5. When you successfully uploaded the sample code, open the Serial Monitor of the Arduino IDE to see the module's reading logs. If you see the logs, as shown in **Figure 17**, then your module or sensor is properly communicating to the WisBlock core using the Digital Interface.
+5. When you successfully uploaded the sample code, open the Serial Monitor of the Arduino IDE to see the module's reading logs. If you see the logs, as shown in **Figure 13**, then your module or sensor is properly communicating to the WisBlock core using the Digital Interface.
 
 <rk-img
-  src="/assets/images/wisblock/rak5804/quickstart/digital_logs.png"
+  src="/assets/images/wisblock/rak5804/quickstart/gpio-logs.png"
   width="80%"
   caption="DHT11 Temp & Humidity data logs"
 />
 
 
-#### Analog Input (ADC) Connection on RAK5804 
+##### Analog Input (ADC) Connection on RAK5804 
 
 This is just an example and illustration on how to use the ADC pin of RAK5804 for external sensors, modules, or devices. There is only one (1) ADC pin available on the RAK5804 that you can use as long as your modules, sensors, or devices operates at 3.3&nbsp;V.
 
@@ -359,16 +343,331 @@ This is just an example and illustration on how to use the ADC pin of RAK5804 fo
   caption="Connecting the RAK5804 to the ADC pin of the sensor module"
 />
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 19** and **Figure 20**.
+1. First, you need to select the RAK4631 WisBlock Core.
 
 <rk-img
-  src="/assets/images/wisblock/rak5804/quickstart/rak4631_board.png"
+  src="/assets/images/wisblock/rak5804/quickstart/rak4631-board.png"
   width="100%"
   caption="Selecting RAK4631 as WisBlock Core"
 />
 
+2. Copy the following sample code into your Arduino IDE:
+
+```c
+/********* 
+ The following code will display the ambient temperature using the LM35 sensor 
+ in the Serial Monitor.
+*********/
+
+#define lm35 WB_A1
+
+int lmVal = 0;
+int tem = 0;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+}
+void loop() {
+  // put your main code here, to run repeatedly:
+  lmVal = analogRead(lm35);
+  tem = (lmVal*330)/1024;
+
+  Serial.print(tem);
+  Serial.print(" Celsius");
+  Serial.println();
+  delay(1000);
+}
+```
+
+3. Then select the right Serial Port and upload the code.
+
 <rk-img
-  src="/assets/images/wisblock/rak5804/quickstart/rak11200_board.png"
+  src="/assets/images/wisblock/rak5804/quickstart/rak4631-adc-selectport.png"
+  width="100%"
+  caption="Selecting the correct Serial Port"
+/>
+
+4. When you successfully uploaded the sample code, open the Serial Monitor of the Arduino IDE to see the module's reading logs. If you see the logs, as shown in **Figure 17**, then your module or sensor is properly communicating to the WisBlock core using the Analog Interface.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/adc-logs.png"
+  width="70%"
+  caption="LM35 Temperature data logs"
+/>
+
+
+#### RAK5804 in RAK11200 WisBlock Core Guide
+
+##### I2C Connection on RAK5804
+
+This is just an example and illustration on how to use the RAK5804 for external I2C sensors, modules, or devices. You can use any I2C devices as long as it operates at 3.3&nbsp;V.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/rak5804_oled.png"
+  width="50%"
+  caption="Connecting the RAK5804 to the I2C pin of the module"
+/>
+
+1. First, you need to select the RAK11200 WisBlock Core.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/rak11200-board.png"
+  width="100%"
+  caption="Selecting RAK11200 as WisBlock Core"
+/>
+
+2. On the Arduino IDE, go to **Sketch > Include Library > Manage Libraries**. The Library Manager should open, then install the [Adafruit SSD1306](https://github.com/adafruit/Adafruit_SSD1306) and the [Adafruit GFX](https://github.com/adafruit/Adafruit-GFX-Library) libraries, as shown in **Figure 20** and **Figure 21**.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/ssd1306-lib.png"
+  width="70%"
+  caption="Installing the Adafruit SSD1306 library"
+/>
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/gfx-lib.png"
+  width="70%"
+  caption="Installing the Adafruit GFX library"
+/>
+
+3. After successful installation of the libraries, you can now copy the following sample code into your Arduino IDE:
+
+```c
+/********* 
+ The following code will display the RAK logo into the OLED Display.
+*********/
+
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
+#define SCREEN_WIDTH 128
+#define SCREEN_HEIGHT 64
+
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
+
+static const unsigned char PROGMEM image_data_Saraarray[] = {
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0xff, 0xe0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x7f, 0xff, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0xff, 0xff, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x0f, 0xff, 0xff, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x3f, 0xff, 0xc0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xff, 0xf8, 0xff, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0xff, 0xcf, 0xff, 0xf8, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0xfe, 0x7f, 0xff, 0xfb, 0xc0, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x07, 0xf9, 0xff, 0xff, 0xf3, 0xf8, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x1e, 0x67, 0x30, 0x3e, 0x07, 0xfe, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0xfe, 0x3f, 0x9f, 0xcf, 0xff, 0xf3, 0xff, 0x80, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0xff, 0x7f, 0xbf, 0xef, 0xff, 0xf8, 0xff, 0xe0, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x01, 0xff, 0x7f, 0xbf, 0xef, 0xff, 0xfb, 0x3f, 0xf0, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x01, 0xff, 0x7f, 0xbf, 0xef, 0xff, 0xf7, 0xdf, 0xf8, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x01, 0xff, 0x7f, 0xbf, 0xe0, 0x00, 0x27, 0xe7, 0xfc, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0xff, 0x3f, 0xbf, 0xe0, 0x0f, 0xf7, 0xf3, 0xfe, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0xff, 0xbf, 0x9f, 0xe0, 0x0f, 0xf3, 0xfb, 0xfe, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x7f, 0xdf, 0xdf, 0xe0, 0x0f, 0xfb, 0xf9, 0xff, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x7f, 0xe7, 0xc7, 0xff, 0xef, 0xfb, 0xfd, 0xff, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x3f, 0xf3, 0x9f, 0xff, 0xef, 0xfb, 0xfd, 0xff, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x0f, 0xfc, 0x3f, 0xff, 0xef, 0xfb, 0xfd, 0xff, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x07, 0xff, 0x3f, 0xff, 0xef, 0xf3, 0xfd, 0xfe, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x01, 0xff, 0xcf, 0xff, 0xc3, 0xe1, 0xf8, 0x7c, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x7f, 0xde, 0x03, 0xfe, 0x1e, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x0f, 0xbf, 0xff, 0xfe, 0x7f, 0xc0, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x3f, 0xff, 0xf9, 0xff, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x3f, 0xff, 0x8f, 0xfe, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x80, 0xff, 0xfc, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x0f, 0xff, 0xff, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1f, 0xff, 0xff, 0xc0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1f, 0xff, 0xfe, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1f, 0xff, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0xff, 0xe0, 0x0f, 0xc0, 0x7c, 0x1f, 0xc0, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0xff, 0xf0, 0x1f, 0xc0, 0x7c, 0x3f, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0x01, 0xf0, 0x3f, 0xe0, 0x7c, 0xfc, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0x01, 0xf0, 0x7d, 0xf0, 0x7f, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0xff, 0xe0, 0x78, 0xf8, 0x7f, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0xff, 0xe0, 0xf8, 0x78, 0x7f, 0xfc, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0x01, 0xf1, 0xff, 0xfc, 0x7c, 0x7e, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0x01, 0xf3, 0xff, 0xfe, 0x7c, 0x1f, 0x80, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0x00, 0xf3, 0xc0, 0x1f, 0x7c, 0x0f, 0xc0, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0x00, 0xf7, 0xc0, 0x1f, 0x7c, 0x07, 0xe0, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+};
+ 
+void setup() {
+    // put your setup code here, to run once:
+  Serial.begin(115200);
+ 
+  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
+    Serial.println(F("SSD1306 allocation failed"));
+    for(;;);
+  }
+  delay(2000); // Pause for 2 seconds
+ 
+  // Clear the buffer.
+  display.clearDisplay();
+  
+  // Draw bitmap on the screen
+  display.drawBitmap(0, 0, image_data_Saraarray, 128, 64, 1);
+  display.display();
+}
+ 
+void loop() {
+    // put your main code here, to run repeatedly:
+  
+}
+```
+
+4. Then select the right Serial Port and upload the code.
+
+::: tip 📝 NOTE
+RAK11200 requires **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+:::
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/rak11200-i2c-selectport.png"
+  width="100%"
+  caption="Selecting the correct Serial Port"
+/>
+
+5. When you successfully uploaded the sample code, you will now be able to see the RAK logo displayed on your OLED screen, as shown in **Figure 23**, which means that the module is properly communicating with the WisBlock core using the I2C protocol.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/rak_oled.png"
+  width="20%"
+  caption="RAK logo displayed on OLED screen"
+/>
+
+##### GPIO Connection on RAK5804
+
+This is just an example and illustration on how to use the GPIO pins of RAK5804 for external sensors, modules, or devices. There are four (4) GPIO pins available on the RAK5804. You can use any of the GPIO pins as long as your modules, sensors, or devices operates at 3.3&nbsp;V.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/rak5804_dht11.png"
+  width="50%"
+  caption="Connecting the RAK5804 to the GPIO pin of the sensor module"
+/>
+
+1. First, you need to select the RAK11200 WisBlock Core.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/rak11200-board.png"
+  width="100%"
+  caption="Selecting RAK11200 as WisBlock Core"
+/>
+
+2. On the Arduino IDE, go to **Sketch > Include Library > Manage Libraries**. The Library Manager should open, then install the [Adafruit DHT Sensor](https://github.com/adafruit/DHT-sensor-library) library, as shown in **Figure 26**.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/dht-lib.png"
+  width="70%"
+  caption="Installing the Adafruit DHT library"
+/>
+
+3. After successful installation of the library, you can now copy the following sample code into your Arduino IDE:
+
+```c
+/********* 
+ The following code will display the temperature & humidity 
+ using the DHT11 sensor in the Serial Monitor.
+*********/
+
+#include "DHT.h"
+
+#define DHTPIN WB_IO2     
+#define DHTTYPE DHT11 
+
+DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+  Serial.begin(9600);
+  Serial.println(F("DHTxx test!"));
+  dht.begin();
+}
+
+void loop() {
+  delay(2000);
+  float h = dht.readHumidity();
+  float t = dht.readTemperature();
+  float f = dht.readTemperature(true);
+  
+  if (isnan(h) || isnan(t) || isnan(f)) {
+    Serial.println(F("Failed to read from DHT sensor!"));
+    return;
+  }
+  
+  float hif = dht.computeHeatIndex(f, h);
+  float hic = dht.computeHeatIndex(t, h, false);
+
+  Serial.print(F("Humidity: "));
+  Serial.print(h);
+  Serial.print(F("%  Temperature: "));
+  Serial.print(t);
+  Serial.print(F("°C "));
+  Serial.print(f);
+  Serial.print(F("°F  Heat index: "));
+  Serial.print(hic);
+  Serial.print(F("°C "));
+  Serial.print(hif);
+  Serial.println(F("°F"));
+}
+```
+
+4. Then select the right Serial Port and upload the code.
+
+::: tip 📝 NOTE
+RAK11200 requires **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 quick start guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+:::
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/rak11200-gpio-selectport.png"
+  width="100%"
+  caption="Selecting the correct Serial Port"
+/>
+
+5. When you successfully uploaded the sample code, open the Serial Monitor of the Arduino IDE to see the module's reading logs. If you see the logs, as shown in **Figure 28**, then your module or sensor is properly communicating to the WisBlock core using the Digital Interface.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/gpio-logs.png"
+  width="80%"
+  caption="DHT11 Temp & Humidity data logs"
+/>
+
+
+##### Analog Input (ADC) Connection on RAK5804 
+
+This is just an example and illustration on how to use the ADC pin of RAK5804 for external sensors, modules, or devices. There is only one (1) ADC pin available on the RAK5804 that you can use as long as your modules, sensors, or devices operates at 3.3&nbsp;V.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/rak5804_lm35.png"
+  width="50%"
+  caption="Connecting the RAK5804 to the ADC pin of the sensor module"
+/>
+
+1. First, you need to select the RAK11200 WisBlock Core.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/rak11200-board.png"
   width="100%"
   caption="Selecting RAK11200 as WisBlock Core"
 />
@@ -402,24 +701,334 @@ void loop() {
 }
 ```
 
-3. Then select the right Serial Port and upload the code, as shown in **Figure 21** and **Figure 22**.
+3. Then select the right Serial Port and upload the code.
+
+::: tip 📝 NOTE
+RAK11200 requires **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 quick start guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+:::
 
 <rk-img
-  src="/assets/images/wisblock/rak5804/quickstart/port_adc.png"
+  src="/assets/images/wisblock/rak5804/quickstart/rak11200-adc-selectport.png"
   width="100%"
   caption="Selecting the correct Serial Port"
 />
 
+4. When you successfully uploaded the sample code, open the Serial Monitor of the Arduino IDE to see the module's reading logs. If you see the logs, as shown in **Figure 32**, then your module or sensor is properly communicating to the WisBlock core using the Analog Interface.
+
 <rk-img
-  src="/assets/images/wisblock/rak5804/quickstart/upload_adc.png"
-  width="100%"
-  caption="Uploading the sample code"
+  src="/assets/images/wisblock/rak5804/quickstart/adc-logs.png"
+  width="70%"
+  caption="LM35 Temperature data logs"
 />
 
-4. When you successfully uploaded the sample code, open the Serial Monitor of the Arduino IDE to see the module's reading logs. If you see the logs, as shown in **Figure 23**, then your module or sensor is properly communicating to the WisBlock core using the Analog Interface.
+#### RAK5804 in RAK11310 WisBlock Core Guide
+
+##### I2C Connection on RAK5804
+
+This is just an example and illustration on how to use the RAK5804 for external I2C sensors, modules, or devices. You can use any I2C devices as long as it operates at 3.3&nbsp;V.
 
 <rk-img
-  src="/assets/images/wisblock/rak5804/quickstart/adc_logs.png"
+  src="/assets/images/wisblock/rak5804/quickstart/rak5804_oled.png"
+  width="50%"
+  caption="Connecting the RAK5804 to the I2C pin of the module"
+/>
+
+1. First, you need to select the RAK11310 WisBlock Core.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/rak11310-board.png"
+  width="100%"
+  caption="Selecting RAK11310 as WisBlock Core"
+/>
+
+2. On the Arduino IDE, go to **Sketch > Include Library > Manage Libraries**. The Library Manager should open, then install the [Adafruit SSD1306](https://github.com/adafruit/Adafruit_SSD1306) and the [Adafruit GFX](https://github.com/adafruit/Adafruit-GFX-Library) libraries, as shown in **Figure 35** and **Figure 36**.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/ssd1306-lib.png"
+  width="70%"
+  caption="Installing the Adafruit SSD1306 library"
+/>
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/gfx-lib.png"
+  width="70%"
+  caption="Installing the Adafruit GFX library"
+/>
+
+3. After successful installation of the libraries, you can now copy the following sample code into your Arduino IDE:
+
+```c
+/********* 
+ The following code will display the RAK logo into the OLED Display.
+*********/
+
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
+#define SCREEN_WIDTH 128
+#define SCREEN_HEIGHT 64
+
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
+
+static const unsigned char PROGMEM image_data_Saraarray[] = {
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0xff, 0xe0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x7f, 0xff, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0xff, 0xff, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x0f, 0xff, 0xff, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x3f, 0xff, 0xc0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xff, 0xf8, 0xff, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0xff, 0xcf, 0xff, 0xf8, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0xfe, 0x7f, 0xff, 0xfb, 0xc0, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x07, 0xf9, 0xff, 0xff, 0xf3, 0xf8, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x1e, 0x67, 0x30, 0x3e, 0x07, 0xfe, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0xfe, 0x3f, 0x9f, 0xcf, 0xff, 0xf3, 0xff, 0x80, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0xff, 0x7f, 0xbf, 0xef, 0xff, 0xf8, 0xff, 0xe0, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x01, 0xff, 0x7f, 0xbf, 0xef, 0xff, 0xfb, 0x3f, 0xf0, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x01, 0xff, 0x7f, 0xbf, 0xef, 0xff, 0xf7, 0xdf, 0xf8, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x01, 0xff, 0x7f, 0xbf, 0xe0, 0x00, 0x27, 0xe7, 0xfc, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0xff, 0x3f, 0xbf, 0xe0, 0x0f, 0xf7, 0xf3, 0xfe, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0xff, 0xbf, 0x9f, 0xe0, 0x0f, 0xf3, 0xfb, 0xfe, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x7f, 0xdf, 0xdf, 0xe0, 0x0f, 0xfb, 0xf9, 0xff, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x7f, 0xe7, 0xc7, 0xff, 0xef, 0xfb, 0xfd, 0xff, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x3f, 0xf3, 0x9f, 0xff, 0xef, 0xfb, 0xfd, 0xff, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x0f, 0xfc, 0x3f, 0xff, 0xef, 0xfb, 0xfd, 0xff, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x07, 0xff, 0x3f, 0xff, 0xef, 0xf3, 0xfd, 0xfe, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x01, 0xff, 0xcf, 0xff, 0xc3, 0xe1, 0xf8, 0x7c, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x7f, 0xde, 0x03, 0xfe, 0x1e, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x0f, 0xbf, 0xff, 0xfe, 0x7f, 0xc0, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x3f, 0xff, 0xf9, 0xff, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x3f, 0xff, 0x8f, 0xfe, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x80, 0xff, 0xfc, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x0f, 0xff, 0xff, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1f, 0xff, 0xff, 0xc0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1f, 0xff, 0xfe, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1f, 0xff, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0xff, 0xe0, 0x0f, 0xc0, 0x7c, 0x1f, 0xc0, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0xff, 0xf0, 0x1f, 0xc0, 0x7c, 0x3f, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0x01, 0xf0, 0x3f, 0xe0, 0x7c, 0xfc, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0x01, 0xf0, 0x7d, 0xf0, 0x7f, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0xff, 0xe0, 0x78, 0xf8, 0x7f, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0xff, 0xe0, 0xf8, 0x78, 0x7f, 0xfc, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0x01, 0xf1, 0xff, 0xfc, 0x7c, 0x7e, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0x01, 0xf3, 0xff, 0xfe, 0x7c, 0x1f, 0x80, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0x00, 0xf3, 0xc0, 0x1f, 0x7c, 0x0f, 0xc0, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x1f, 0x00, 0xf7, 0xc0, 0x1f, 0x7c, 0x07, 0xe0, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+};
+ 
+void setup() {
+    // put your setup code here, to run once:
+  Serial.begin(115200);
+ 
+  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
+    Serial.println(F("SSD1306 allocation failed"));
+    for(;;);
+  }
+  delay(2000); // Pause for 2 seconds
+ 
+  // Clear the buffer.
+  display.clearDisplay();
+  
+  // Draw bitmap on the screen
+  display.drawBitmap(0, 0, image_data_Saraarray, 128, 64, 1);
+  display.display();
+}
+ 
+void loop() {
+    // put your main code here, to run repeatedly:
+  
+}
+```
+
+4. Then select the right Serial Port and upload the code.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/rak11310-i2c-selectport.png"
+  width="100%"
+  caption="Selecting the correct Serial Port"
+/>
+
+5. When you successfully uploaded the sample code, you will now be able to see the RAK logo displayed on your OLED screen, as shown in **Figure 38**, which means that the module is properly communicating with the WisBlock core using the I2C protocol.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/rak_oled.png"
+  width="20%"
+  caption="RAK logo displayed on OLED screen"
+/>
+
+##### GPIO Connection on RAK5804
+
+This is just an example and illustration on how to use the GPIO pins of RAK5804 for external sensors, modules, or devices. There are four (4) GPIO pins available on the RAK5804. You can use any of the GPIO pins as long as your modules, sensors, or devices operates at 3.3&nbsp;V.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/rak5804_dht11.png"
+  width="50%"
+  caption="Connecting the RAK5804 to the GPIO pin of the sensor module"
+/>
+
+1. First, you need to select the RAK11310 WisBlock Core.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/rak11310-board.png"
+  width="100%"
+  caption="Selecting RAK11310 as WisBlock Core"
+/>
+
+2. On the Arduino IDE, go to **Sketch > Include Library > Manage Libraries**. The Library Manager should open, then install the [Adafruit DHT Sensor](https://github.com/adafruit/DHT-sensor-library) library, as shown in **Figure 41**.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/dht-lib.png"
+  width="70%"
+  caption="Installing the Adafruit DHT library"
+/>
+
+3. After successful installation of the library, you can now copy the following sample code into your Arduino IDE:
+
+```c
+/********* 
+ The following code will display the temperature & humidity 
+ using the DHT11 sensor in the Serial Monitor.
+*********/
+
+#include "DHT.h"
+
+#define DHTPIN WB_IO2     
+#define DHTTYPE DHT11 
+
+DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+  Serial.begin(9600);
+  Serial.println(F("DHTxx test!"));
+  dht.begin();
+}
+
+void loop() {
+  delay(2000);
+  float h = dht.readHumidity();
+  float t = dht.readTemperature();
+  float f = dht.readTemperature(true);
+  
+  if (isnan(h) || isnan(t) || isnan(f)) {
+    Serial.println(F("Failed to read from DHT sensor!"));
+    return;
+  }
+  
+  float hif = dht.computeHeatIndex(f, h);
+  float hic = dht.computeHeatIndex(t, h, false);
+
+  Serial.print(F("Humidity: "));
+  Serial.print(h);
+  Serial.print(F("%  Temperature: "));
+  Serial.print(t);
+  Serial.print(F("°C "));
+  Serial.print(f);
+  Serial.print(F("°F  Heat index: "));
+  Serial.print(hic);
+  Serial.print(F("°C "));
+  Serial.print(hif);
+  Serial.println(F("°F"));
+}
+```
+
+4. Then select the right Serial Port and upload the code.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/rak11310-gpio-selectport.png"
+  width="100%"
+  caption="Selecting the correct Serial Port"
+/>
+
+5. When you successfully uploaded the sample code, open the Serial Monitor of the Arduino IDE to see the module's reading logs. If you see the logs, as shown in **Figure 43**, then your module or sensor is properly communicating to the WisBlock core using the Digital Interface.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/gpio-logs.png"
+  width="80%"
+  caption="DHT11 Temp & Humidity data logs"
+/>
+
+
+##### Analog Input (ADC) Connection on RAK5804 
+
+This is just an example and illustration on how to use the ADC pin of RAK5804 for external sensors, modules, or devices. There is only one (1) ADC pin available on the RAK5804 that you can use as long as your modules, sensors, or devices operates at 3.3&nbsp;V.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/rak5804_lm35.png"
+  width="50%"
+  caption="Connecting the RAK5804 to the ADC pin of the sensor module"
+/>
+
+1. First, you need to select the RAK11310 WisBlock Core.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/rak11310-board.png"
+  width="100%"
+  caption="Selecting RAK11310 as WisBlock Core"
+/>
+
+2. Copy the following sample code into your Arduino IDE:
+
+```c
+/********* 
+ The following code will display the ambient temperature using the LM35 sensor 
+ in the Serial Monitor.
+*********/
+
+#define lm35 WB_A1
+
+int lmVal = 0;
+int tem = 0;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+}
+void loop() {
+  // put your main code here, to run repeatedly:
+  lmVal = analogRead(lm35);
+  tem = (lmVal*330)/1024;
+
+  Serial.print(tem);
+  Serial.print(" Celsius");
+  Serial.println();
+  delay(1000);
+}
+```
+
+3. Then select the right Serial Port and upload the code.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/rak11310-adc-selectport.png"
+  width="100%"
+  caption="Selecting the correct Serial Port"
+/>
+
+4. When you successfully uploaded the sample code, open the Serial Monitor of the Arduino IDE to see the module's reading logs. If you see the logs, as shown in **Figure 47**, then your module or sensor is properly communicating to the WisBlock core using the Analog Interface.
+
+<rk-img
+  src="/assets/images/wisblock/rak5804/quickstart/adc-logs.png"
   width="70%"
   caption="LM35 Temperature data logs"
 />

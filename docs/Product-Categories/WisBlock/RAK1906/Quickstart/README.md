@@ -23,8 +23,8 @@ Before going through each and every step on using RAK1906 WisBlock module, make 
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- Li-Ion/LiPo battery (optional)
-- Solar charger (optional)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
 
 #### Software
 
@@ -114,21 +114,28 @@ The BME680 requires a burn-in period to collect accurate readings. The burn-in p
 
 If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 6** and **Figure 7**.
+1. First, you need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 
+RAK4631 Wisblock Core
 <rk-img
   src="/assets/images/wisblock/rak1906/quickstart/rak4631_board.png"
   width="100%"
   caption="Selecting RAK4631 as WisBlock Core"
 />
-
+RAK11200 Wisblock Core
 <rk-img
   src="/assets/images/wisblock/rak1906/quickstart/rak11200_board.png"
   width="100%"
   caption="Selecting RAK11200 as WisBlock Core"
 />
+RAK11310 Wisblock Core
+<rk-img
+  src="/assets/images/wisblock/rak1906/quickstart/rak11310_board.png"
+  width="100%"
+  caption="Selecting RAK11310 as WisBlock Core"
+/>
 
-2. The [RAK1906_Environment_BME680 example](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1906_Environment_BME680) in Github will work on all WisBlock Core. You can open the the example codes depending on your WisBlock Core, as shown in **Figure 8** and **Figure 9**. 
+2. The [RAK1906_Environment_BME680 example](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1906_Environment_BME680) in Github will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 9** to **Figure 11**. 
 
 <rk-img
   src="/assets/images/wisblock/rak1906/quickstart/rak1906-rak4631.png"
@@ -142,7 +149,13 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Opening RAK1906 example code for RAK11200 WisBlock Core"
 />
 
-3. Once the example code is open, install the [Adafruit BME680](https://github.com/adafruit/Adafruit_BME680) library by clicking the yellow highlighted link, as shown in **Figure 10** and **Figure 11**.
+<rk-img
+  src="/assets/images/wisblock/rak1906/quickstart/rak1906-rak11310.png"
+  width="100%"
+  caption="Opening RAK1906 example code for RAK11310 WisBlock Core"
+/>
+
+3. Once the example code is open, install the [Adafruit BME680](https://github.com/adafruit/Adafruit_BME680) library by clicking the yellow highlighted link, as shown in **Figure 12** and **Figure 13**.
 
 <rk-img
   src="/assets/images/wisblock/rak1906/quickstart/adafruit-bme680.png"
@@ -152,7 +165,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
 
 <rk-img
   src="/assets/images/wisblock/rak1906/quickstart/adafruit-lib-manager.png"
-  width="90%"
+  width="80%"
   caption="Installing Adafruit BME680 library"
 />
 
@@ -160,11 +173,11 @@ During the installation, you will be asked to install the **Adafruit Unified Sen
 
 <rk-img
   src="/assets/images/wisblock/rak1906/quickstart/lib-bme680-install-2.png"
-  width="90%"
+  width="80%"
   caption="Installing Adafruit Unified Sensor Library"
 />
 
-4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 13** and **Figure 14**.
+4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 15** and **Figure 16**.
 
 <rk-img
   src="/assets/images/wisblock/rak1906/quickstart/env-mon-port.png"
@@ -199,24 +212,35 @@ Gas = 3.87 KOhms
 
 ## LoRaWAN Environment Monitoring with RAK1906
 
-For WisBlock Core RAK4630, it has an example for [LoRaWAN Environment Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Environment_Monitoring).
-
 This solution shows how to create an environmental data sensor node. The sensor node measures air temperature, air humidity, barometric pressure, and gas levels. After the node joins to server successfully, it then transmits this data periodically to a LoRaWan® server. 
 
-### Hardware Required
+These are the quick links that go directly to the specific WisBlock Core module solution that you can use in your RAK1906 project.
 
-To build this solution, the following hardware is required:
+- [RAK1906 solution for RAK4631](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Environment_Monitoring)
+- [RAK1906 solution for RAK11310](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/solutions/Environment_Monitoring)
+
+### RAK4631 Solution Requirements
 
 - WisBlock Base RAK5005-O * 1pcs   
 - WisBlock Core RAK4631 * 1pcs   
 - WisBlock Sensor RAK1906 * 1pcs
 - WisBlock Display RAK1921 * 1pcs
 - LoRa Gateway * 1pcs  
-
-### Software Required
-
 - [Arduino IDE](https://www.arduino.cc/en/Main/Software)
 - [RAK4630 BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) 
+- [Adafruit BME680 Library](https://github.com/adafruit/Adafruit_BME680)
+- [SX126x-Arduino Library](https://github.com/beegee-tokyo/SX126x-Arduino)
+- [U8g2 library](https://github.com/olikraus/u8g2)
+
+### RAK11310 Solution Requirements
+
+- WisBlock Base RAK5005-O * 1pcs   
+- WisBlock Core RAK11310 * 1pcs   
+- WisBlock Sensor RAK1906 * 1pcs
+- WisBlock Display RAK1921 * 1pcs
+- LoRa Gateway * 1pcs  
+- [Arduino IDE](https://www.arduino.cc/en/Main/Software)
+- [Arduino BSP for RAK11300 module](https://github.com/RAKWireless/RAK-RP-Arduino) 
 - [Adafruit BME680 Library](https://github.com/adafruit/Adafruit_BME680)
 - [SX126x-Arduino Library](https://github.com/beegee-tokyo/SX126x-Arduino)
 - [U8g2 library](https://github.com/olikraus/u8g2)
@@ -255,6 +279,7 @@ Default is **confirmed message**.
 ```
 lmh_confirm g_CurrentConfirm = LMH_CONFIRMED_MSG;
 ```
+
 You can change to unconfirmed message by changing the value to `LMH_UNCONFIRMED_MSG`.
 
 4. Setup device class.
@@ -264,11 +289,12 @@ Default is **Class A**.
 ```
 DeviceClass_t g_CurrentClass = CLASS_A;	
 ```
+
 You can change this to **CLASS_B** (still under development) or **CLASS_C**.
 
 5. Setup the keys.
 
-Configuration keys for OTAA Activation,
+- Configuration keys for OTAA Activation:
 
 ```
 uint8_t nodeDeviceEUI[8] = {0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x33, 0x33};
@@ -276,7 +302,7 @@ uint8_t nodeAppEUI[8] = {0xB8, 0x27, 0xEB, 0xFF, 0xFE, 0x39, 0x00, 0x00};
 uint8_t nodeAppKey[16] = {0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88};
 ```
 
-Configuration keys for ABP Activation,
+- Configuration keys for ABP Activation:
 
 ```
 uint32_t nodeDevAddr = 0x260116F8;
@@ -312,13 +338,15 @@ The default is **20000&nbsp;mS**.
   - Temperature is sent as two bytes, enlarged 100 times for accuracy. For example, 2510 means 25.01 C, sent as 0x09 0xCE.
   - Humidity is sent as two bytes, enlarged 100 times for accuracy. For example, 4173 means 41.73%, sent as  0x10 0x4D.
   - Barometric pressure is sent as four bytes, enlarged 100 times for accuracy. For example, 100945 means 1009.45&nbsp;hPa, sent as 0x00 0x01 0x8A 0x51.
-  - Gas resistance is sent as four bytes,  For example, 63560&nbsp;Ohm, sent as 0x00 0x00 0xF8 0x48.
+  - Gas resistance is sent as four bytes. For example, 63560&nbsp;Ohm, sent as 0x00 0x00 0xF8 0x48.
 
 
 ### Attention
 
 If this example is implemented for the Region US915, DR0 cannot be used because the package size is too large to fit into the allowed payload.    
 
+<!-- add RAK11310 log images
+-->
 When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown below, then your RAK1906 is properly communicating to the WisBlock core.
 
 ```js
@@ -343,6 +371,7 @@ When you successfully uploaded the example sketch, open the Serial Monitor of th
 10:31:34.032 -> lmh_send ok count 4
 
 ```
+
 Data arrives at LoRaWAN server.
 
 <rk-img
@@ -350,4 +379,3 @@ Data arrives at LoRaWAN server.
   width="100%"
   caption="LoRaWAN Environment Monitoring example"
 />
-

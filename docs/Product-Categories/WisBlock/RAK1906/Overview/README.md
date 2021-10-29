@@ -35,6 +35,9 @@ For WisBlock Core RAK4630:
 For WisBlock Core RAK11200:
 * [Sample Code: Weather Display](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/solutions/weather_display)
 
+For WisBlock Core RAK11300:
+* [Sample Code: Environment Monitoring](https://github.com/RAKWireless/WisBlock/blob/master/examples/RAK11300/solutions/Environment_Monitoring)
+
 ## Product Description
 
 RAK1906 is a WisBlock Sensor which extends the WisBlock system with a Bosch BME680 environment sensor. A ready to use SW library and tutorial makes it easy to build up a temperature and humidity data acquisition system.

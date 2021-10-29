@@ -23,9 +23,9 @@ Before going through each and every step on using RAK2305 WisBlock module, make 
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- Li-Ion/LiPo battery (optional)
-- Solar charger (optional)
-- USB to UART TTL adapter (to flash image)
+- [Li-Ion/LiPo battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
+- [Solar panel ](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [USB to UART TTL adapter](https://store.rakwireless.com/products/daplink-tool)(to flash image)
 - Jumper (to flash image)
 
 #### Software
@@ -99,20 +99,66 @@ RAK2305 has a default firmware loaded in it that supports WiFi and BLE related A
 
 The complete list of ESP32 AT Command set can be found in [Espressif AT Command Set online documentation](https://docs.espressif.com/projects/esp-at/en/latest/AT_Command_Set/index.html).
 
-The default baud rate of AT Command UART is 115200.
 
 #### Initial Test of the RAK2305 WisBlock Wireless
 
+The AT commands start with **`AT`** and end with a new line **`(CR LF)`** and the default baud rate of AT Command UART is 115200.
+
 :::warning ⚠️ WARNING    
-Make sure to use the setup() function with timeout.
+Make sure to use the **`setup()`** function with timeout.
 :::
 
-The RAKwireless examples on github shows how to test WisBlock RAK2305 using WisBlock Core:
+```c
+void setup()
+{
+    time_t timeout = millis();
+    // Open serial communications and wait for port to open:
+    Serial.begin(115200);
+    while (!Serial)
+    {
+        if ((millis() - timeout) < 5000)
+        {
+            delay(100);
+        }
+        else
+        {
+            break;
+        }
+    }
+```
 
-  * [ESP-AT Command Test](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/communications/WiFi/AT_Command_Test).
-This example waits for an AT command typed at the console. Then sends that command to RAK2305 and wait for reply.
+1. First, you need to select the WisBlock Core you have.
 
-  * [Connect to Access Point](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/communications/WiFi/connect_ap). This example connects to a known access point and send ping to the address "8.8.8.8" every 5 seconds.
+Selecting RAK4631 as WisBlock Core.
+<rk-img
+  src="/assets/images/wisblock/rak2305/quickstart/rak4631_arduino.png"
+  width="100%"
+  caption="Selecting RAK4631 as WisBlock Core"
+/>
+
+2. Then select RAK11310 as WisBlock Core.
+
+<rk-img
+  src="/assets/images/wisblock/rak2305/quickstart/rak11310_arduino.png"
+  width="100%"
+  caption="Selecting RAK11310 as WisBlock Core"
+/>
+
+#### Examples
+
+For **RAK4631 WisBlock Core**:
+
+
+  * [ESP-AT Command Test](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/communications/WiFi/AT_Command_Test) - This example waits for an AT command typed at the console. Then sends that command to RAK2305 and wait for reply.
+  * [Connect to Access Point](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/communications/WiFi/connect_ap) - This example connects to a known access point and send ping to the address "8.8.8.8" every 5 seconds.
+
+For **RAK11310 WisBlock Core**:
+
+  * [ESP-AT Command Test](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/communications/WiFi/connect_ap) - This example waits for an AT command typed at the console then sends that command to RAK2305 and wait for reply.
+  * [Connect to Access Point](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/communications/WiFi/connect_ap) - This example connects to a known access point and send ping to the address "8.8.8.8" every 5 seconds.
+
+
+For **All WisBlock Core**:
 
 The Espressif examples:
 
@@ -122,7 +168,7 @@ The Espressif examples:
 
 ### (Optional) Flashing a Different ESP-AT Firmware into Your Device
 
-To flash the AT firmware, you need a USB to UART TTL adapter like the [RAKDAP1 Flash and Debug Tool](https://store.rakwireless.com/products/daplink-tool). Connect the USB adapter to RAK2305, as shown in Figure 5.
+To flash the AT firmware, you need a USB to UART TTL adapter like the [RAKDAP1 Flash and Debug Tool](https://store.rakwireless.com/products/daplink-tool). Connect the USB adapter to RAK2305, as shown in **Figure 5**.
 
 <br>
 
@@ -141,7 +187,7 @@ RAK2305 connection with RAKDAP1:
 
 Before starting the firmware upgrade, you need to download [Flash Download Tools for Windows](https://www.espressif.com/en/support/download/other-tools).
 
-1. Open the ESP Flash Download Tool and select **ChipType** and **WorkMode**, as shown in Figure 6. Then click the **OK** button.
+1. Open the ESP Flash Download Tool and select **ChipType** and **WorkMode**, as shown in **Figure 6**. Then click the **OK** button.
 
 <rk-img
   src="/assets/images/wisblock/rak2305/quickstart/esp-fdt.png"
@@ -168,7 +214,7 @@ Before starting the firmware upgrade, you need to download [Flash Download Tools
   caption="ESP Flash download started"
 />
 
-7. Download finished.
+7. Download is now finished.
 
 <rk-img
   src="/assets/images/wisblock/rak2305/quickstart/esp-fdt-finish.png"

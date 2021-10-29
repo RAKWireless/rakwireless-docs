@@ -115,17 +115,16 @@ The pin definitions of the RAK4270 Breakout Board are shown in the following tab
 
 ##### J2 Pin Definitions
 
-|  Pin  | Name     |  I/O  | Description                                       | Alternate functions                                                                              |
-| :---: | -------- | :---: | ------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-|   1   | VDD      |   -   | DC3V3                                             | Supply voltage 2.0~3.3&nbsp;V                                                                    |
-|   2   | UART1_TX |  I/O  | Upgrade UART or General GPIO (STM32L071KBU6 PA9)  | MCO, USART1_TX, I2C1_SCL, I2C3_SMBA                           |
-|   3   | UART1_RX |  I/O  | Upgrade UART or General GPIO (STM32L071KBU6 PA10) | USART1_RX, I2C1_SDA                                      |
-|   4   | GND      |   -   | Ground                                            | -                                                                                                |
-|   5   | MCU_NRST |  I/O  | MCU reset (STM32L071KBU6 NRST)                    | -                                                                                                |
-|   6   | ANT_SW   |  I/O  | PA11                                              | This pin has been connected to the internal RF switch, so leave it unconnected on the mainboard. |
-|   7   | PB4      |  I/O  | STM32L071KBU6 PB4                                 | SPI1_MISO, TIM3_CH1, TIM22_CH1, USART1_CTS, USART5_RX, I2C3_SDA                                                                                             |
-|   8   | PA8      |  I/O  | STM32L071KBU6 PA8                                 | MCO, EVENTOUT, USART1_CK, I2C3_SCL                                                                                             |
-
+| Pin | Name     | I/O | Description                                       | Alternate functions                                             |
+| :-: | -------- | :-: | ------------------------------------------------- | --------------------------------------------------------------- |
+|  1  | VDD      |  -  | DC3V3                                             | Supply voltage 2.0~3.3&nbsp;V                                   |
+|  2  | UART1_TX | I/O | Upgrade UART or General GPIO (STM32L071KBU6 PA9)  | MCO, USART1_TX, I2C1_SCL, I2C3_SMBA                             |
+|  3  | UART1_RX | I/O | Upgrade UART or General GPIO (STM32L071KBU6 PA10) | USART1_RX, I2C1_SDA                                             |
+|  4  | GND      |  -  | Ground                                            | -                                                               |
+|  5  | MCU_NRST | I/O | MCU reset (STM32L071KBU6 NRST)                    | -                                                               |
+|  6  | PA8      | I/O | STM32L071KBU6 PA8                                 | MCO, EVENTOUT, USART1_CK, I2C3_SCL                              |
+|  7  | PB4      | I/O | STM32L071KBU6 PB4                                 | SPI1_MISO, TIM3_CH1, TIM22_CH1, USART1_CTS, USART5_RX, I2C3_SDA |
+|  6  | NC       | I/O | Not Connected                                     | -                                                               |
 
 ##### J4 Pin Definitions
 
