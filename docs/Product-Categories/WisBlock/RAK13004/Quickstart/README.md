@@ -128,7 +128,7 @@ These are the quick links that go directly to the software guide for the specifi
 Shown in Figure 6 is the illustration on how to use the RAK13004 PWM Expansion Module to produce PWM Output. In this example, you can use LEDs for demonstration.
 
 <rk-img
-  src="/assets/images/wisblock/rak13004/quickstart/led_connection.png"
+  src="/assets/images/wisblock/rak13004/quickstart/ledconnection.png"
   width="50%"
   caption="RAK13004 Sending PWM Output to LEDs"
 />
@@ -219,7 +219,7 @@ The basic example code for the RAK4631 WisBlock Core Module can be found on the 
 3. Install the required library, as shown in **Figure 8**.
 
 <rk-img
-  src="/assets/images/wisblock/rak13004/quickstart/adding_library.png"
+  src="/assets/images/wisblock/rak13004/quickstart/addinglibrary.png"
   width="100%"
   caption="Installing the Library"
 />
@@ -228,13 +228,13 @@ The basic example code for the RAK4631 WisBlock Core Module can be found on the 
 4. Select the correct port and upload your code, as shown in **Figure 9** and **Figure 10**.
 
 <rk-img
-  src="/assets/images/wisblock/rak13004/quickstart/selecting_port.png"
+  src="/assets/images/wisblock/rak13004/quickstart/selectingport.png"
   width="100%"
   caption="Selecting the correct Serial Port"
 />
 
 <rk-img
-  src="/assets/images/wisblock/rak13004/quickstart/upload.png"
+  src="/assets/images/wisblock/rak13004/quickstart/uploading_code.png"
   width="100%"
   caption="Uploading code"
 />

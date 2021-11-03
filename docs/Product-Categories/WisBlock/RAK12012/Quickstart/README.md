@@ -1,6 +1,6 @@
 ---
 rak_desc: This contains instructions and tutorials on installing and deploying your RAK12012. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
-rak_img: /assets/images/wisblock/RAK12012/overview/RAK12012_home.png
+rak_img: /assets/images/wisblock/rak12012/overview/RAK12012_home.png
 tags:
   - quickstart
   - wisblock
@@ -48,7 +48,7 @@ The RAK12012, a part of WisBlock Sensor, is an integrated pulse oximetry and hea
 The RAK12012 WisBlock IO Module can be mounted on the IO slot of the WisBlock Base board, as shown in **Figure 1**. Also, always secure the connection of the WisBlock module by using the compatible screws.
 
 <rk-img
-  src="/assets/images/wisblock/RAK12012/quickstart/connection.png"
+  src="/assets/images/wisblock/rak12012/quickstart/connection.png"
   width="50%"
   caption="RAK12012 Connection to WisBlock Base"
 />
@@ -61,7 +61,7 @@ The RAK12012 WisBlock IO Module can be mounted on the IO slot of the WisBlock Ba
 As shown in **Figure 2**, the location for the IO slot is properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
 <rk-img
-  src="/assets/images/wisblock/RAK12012/quickstart/mounting-mechanism.png"
+  src="/assets/images/wisblock/rak12012/quickstart/mounting-mechanism.png"
   width="70%"
   caption="RAK12012 assembly to WisBlock Base"
 />
@@ -73,7 +73,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 1. First, remove the screws.  
 
 <rk-img
-  src="/assets/images/wisblock/RAK12012/quickstart/removing_screw.png"
+  src="/assets/images/wisblock/rak12012/quickstart/removing_screw.png"
   width="70%"
   caption="Removing screws from the WisBlock module"
 />
@@ -81,7 +81,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 2. Once the screws are removed, check the silkscreen of the module to find the correct location where force can be applied.
 
 <rk-img
-  src="/assets/images/wisblock/RAK12012/quickstart/detach_silkscreen.png"
+  src="/assets/images/wisblock/rak12012/quickstart/detach_silkscreen.png"
   width="70%"
   caption="Detaching silkscreen on the WisBlock module"
 />
@@ -89,7 +89,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 3. Apply force to the module at the position of the connector, as shown in **Figure 5**, to detach the module from the baseboard.
 
 <rk-img
-  src="/assets/images/wisblock/RAK12012/quickstart/detach_module.png"
+  src="/assets/images/wisblock/rak12012/quickstart/detach_module.png"
   width="70%"
   caption="Applying even forces on the proper location of a WisBlock module"
 />
@@ -108,19 +108,19 @@ In this example, you will be getting the blood oxygen level indicated as SpO2, w
 1. You need to select first the WisBlock Core you have, as shown in **Figure 6**, **Figure 7**, and **Figure 8**.
 
 <rk-img
-  src="/assets/images/wisblock/RAK12012/quickstart/selectboard4631.png"
+  src="/assets/images/wisblock/rak12012/quickstart/selectboard4631.png"
   width="100%"
   caption="Selecting RAK4631 as WisBlock Core"
 />
 
 <rk-img
-  src="/assets/images/wisblock/RAK12012/quickstart/selectboard11200.png"
+  src="/assets/images/wisblock/rak12012/quickstart/selectboard11200.png"
   width="100%"
   caption="Selecting RAK11200 as WisBlock Core"
 />
 
 <rk-img
-  src="/assets/images/wisblock/RAK12012/quickstart/selectboard11300.png"
+  src="/assets/images/wisblock/rak12012/quickstart/selectboard11300.png"
   width="100%"
   caption="Selecting RAK11300 as WisBlock Core"
 />
@@ -248,13 +248,13 @@ void loop()
 3. Install the required library, as shown in **Figure 9** and **Figure 10**.
 
 <rk-img
-  src="/assets/images/wisblock/RAK12012/quickstart/install_library.png"
+  src="/assets/images/wisblock/rak12012/quickstart/install_library.png"
   width="100%"
   caption="Getting the library"
 />
 
 <rk-img
-  src="/assets/images/wisblock/RAK12012/quickstart/library.png"
+  src="/assets/images/wisblock/rak12012/quickstart/library.png"
   width="100%"
   caption="Installing the library"
 />
@@ -262,13 +262,13 @@ void loop()
 4. Then select the right Serial Port and upload the code, as shown in **Figure 11** and **Figure 12**.
 
 <rk-img
-  src="/assets/images/wisblock/RAK12012/quickstart/select_port.png"
+  src="/assets/images/wisblock/rak12012/quickstart/select_port.png"
   width="100%"
   caption="Selecting the correct Serial Port"
 />
 
 <rk-img
-  src="/assets/images/wisblock/RAK12012/quickstart/upload.png"
+  src="/assets/images/wisblock/rak12012/quickstart/upload.png"
   width="100%"
   caption="Uploading the sample code"
 />
@@ -280,13 +280,13 @@ RAK11200 requires the BOOT0 pin to be configured properly before uploading. If n
 5. When you successfully uploaded the sample code, put any of your finger in the sensor as shown in **Figure 13**. Then, you can open up your serial monitor to get the sensor reading, as shown in **Figure 14**.
 
 <rk-img
-  src="/assets/images/wisblock/RAK12012/quickstart/hand.png"
+  src="/assets/images/wisblock/rak12012/quickstart/hand.png"
   width="60%"
   caption="Placing index finger to get data from the sensor"
 />
 
 <rk-img
-  src="/assets/images/wisblock/RAK12012/quickstart/serial_monitor.png"
+  src="/assets/images/wisblock/rak12012/quickstart/serial_monitor.png"
   width="60%"
   caption="Blood Oxygen Level (SpO2) reading in Serial Monitor"
 />
