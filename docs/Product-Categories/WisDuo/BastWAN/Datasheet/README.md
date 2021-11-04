@@ -20,7 +20,7 @@ The **RAK3244 BastWAN Breakout Board** is specifically designed to be compatible
 
 A notable addition to this breakout board is the ATECC606A **Cryptographic co-processor** with secure hardware-based key storage. This is what makes the RAK3244 BastWAN different compared to the RAK4200 and RAK4600, adding another level of security to future-proof your platform.
 
-The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P2P Point to Point communication. The low power, long-range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, and personal area networks applications such as health/fitness sensors and monitors.
+The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P2P Point-to-Point communication. The low power, long-range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, and personal area networks applications such as health/fitness sensors and monitors.
 
 ### Features
 

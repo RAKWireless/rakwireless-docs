@@ -34,7 +34,7 @@ Thank you for choosing **RAK4600 Breakout Board** in your awesome IoT Project! �
 
 The board itself has the RAK4600 at its core, integrating an **nRF52832 MCU** and an **SX1276 LoRa chip**. It has Ultra-Low Power Consumption of 13.3&nbsp;μA (down to 11.2&nbsp;μA @ 2.0&nbsp;V) in sleep mode, high LoRa max output power (20&nbsp;dBm) in work mode, and BLE output power up to 4&nbsp;dBm.
 
-The board complies with **LoRaWAN 1.0.2 specification**. It also supports Lora P2P Point to Point communication. 
+The board complies with **LoRaWAN 1.0.2 specification**. It also supports Lora P2P Point-to-Point communication. 
 
 The RF communication capabilities of the board (LoRa + BLE) make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, and personal area networks applications (health/fitness sensors and monitors).
 

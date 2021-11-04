@@ -13,7 +13,7 @@ tags:
 
 ## Introduction
 
-RAK11300 WisDuo LPWAN Module is based on the Raspberry Pi RP2040 chip and SX1262 RF transceiver. It provides an easy to use, small size, low-power solution for long range wireless data applications. This module complies with Class A & C of LoRaWAN 1.0.2 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Helium, etc. It also supports LoRa Point to Point (P2P) communication mode which helps you in implementing your own customized long-range LoRa network quickly.
+RAK11300 WisDuo LPWAN Module is based on the Raspberry Pi RP2040 chip and SX1262 RF transceiver. It provides an easy to use, small size, low-power solution for long range wireless data applications. This module complies with Class A & C of LoRaWAN 1.0.2 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Helium, etc. It also supports LoRa Point-to-Point (P2P) communication mode which helps you in implementing your own customized long-range LoRa network quickly.
 
 The AT commands can be interfaced via USB acting as a serial port (Pin 2 **USB_DM** and Pin 3 **USB_DP**) or via UART1 (Pin 10 **TX1** and Pin 9 **RX1**). The default parameter of the AT commands is fixed to **115200 / 8-N-1**. The firmware upgrade is only possible via USB. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK11300 Module Datasheet](/Product-Categories/WisDuo/RAK11300-Module/Datasheet/).
 

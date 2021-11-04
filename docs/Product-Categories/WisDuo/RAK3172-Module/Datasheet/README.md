@@ -1,5 +1,5 @@
 ---
-rak_desc: Covers the comprehensive information of your RAK3172 Module to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Covers the comprehensive information of your RAK3172 Module to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisduo/rak3172-module/overview/RAK3172_Module_home.png
 prev: ../Low-Level-Development/
 tags:
@@ -31,25 +31,25 @@ certifications:
 
 ### Description
 
-RAK3172 Low-Power Long Range Transceiver module that is based on STM32WLE5CC chip. It provides an easy to use, small size, low-power solution for long range wireless data applications. This module complies with Class A, B & C of LoRaWAN 1.0.3 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point to Point (P2P) communication mode which helps you in implementing your own customized long-range LoRa network quickly.
+RAK3172 is a low-power long-range transceiver module based on the STM32WLE5CC chip. It provides an easy-to-use, small-size, low-power solution for long range wireless data applications. This module complies with Class A, B & C of the LoRaWAN 1.0.3 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point-to-Point (P2P) communication mode, which helps you implement your own customized long-range LoRa network quickly.
 
-You can configure the mode and operation of the module using AT commands via a UART interface. RAK3172 also offers low power features which is very suitable for battery-powered applications.
+You can configure the mode and operation of the module using AT commands via a UART interface. RAK3172 also offers low-power features, which is very suitable for battery-powered applications.
 
 ### Features
 
 - Based on **STM32WLE5CCU6**
 - **LoRaWAN 1.0.3** specification compliant
 - **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, RU864, and AS923-1/2/3/4
-- LoRaWAN Activation by OTAA/ABP
-- LoRa Point to Point (P2P) communication
-- Easy to use AT Command Set via UART interface
+- LoRaWAN activation via OTAA/ABP
+- LoRa Point-to-Point (P2P) communication
+- Easy to use AT command set via UART interface
 - Long-range - greater than 15&nbsp;km with optimized antenna
-- Arm Cortex-M4 32-bit 
+- ARM Cortex-M4 32-bit 
 - 256&nbsp;kbytes flash memory with ECC
 - 64&nbsp;kbytes RAM
-- Ultra-Low Power Consumption of 1.69&nbsp;μA in sleep mode
+- Ultra-low-power consumption of 1.69&nbsp;μA in sleep mode
 - **Supply Voltage**: 2.0&nbsp;V ~ 3.6&nbsp;V
-- **Temperature Range**: -40°&nbsp;C ~ 85°&nbsp;C
+- **Temperature range**: -40°&nbsp;C ~ 85°&nbsp;C
 
 ## Specifications
 
@@ -67,7 +67,7 @@ This section covers the hardware and software specifications of RAK3172. Also, i
 
 ### Hardware
 
-The hardware specification discusses the interfaces, pinouts and its corresponding functions and diagrams. It also covers the parameters of the both RAK3172 Modules in terms of RF, electrical, mechanical, and operating characteristics. 
+The hardware specification discusses the interfaces, pinouts and corresponding functions and diagrams. It also covers the parameters of both RAK3172 modules in terms of RF, electrical, mechanical, and operating characteristics.
 
 #### Interfaces
 
@@ -161,8 +161,6 @@ The RAK3172 supports two different frequency variation: RAK3172(L) Low Radio Fre
 |                           | US915      |                | -              |         | μA   |
 |                           | CN470      |                | 1.69           |         | μA   |
 
-
-
 :::tip 📝 NOTE:
 
 For the reference application schematic of RAK3172 with minimum components requirements, refer to the [RAK3272S Breakout Board Datasheet.](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Datasheet/#schematic-diagram)
@@ -220,7 +218,7 @@ Standard conditions for reflow soldering:
 
 ### Software
 
-Download the latest firmware of the RAK3172 WisDuo LPWAN Module provided below. RAK3172(L) and RAK3172(H) uses the same firmware and it will automatically detect the variant of the module being used.
+Download the latest RAK3172 WisDuo LPWAN Module firmware provided below. RAK3172(L) and RAK3172(H) uses the same firmware and it will automatically detect the variant of the module being used.
 
 The **bin file** contains the application code only and you need the RAK DFU Tool to upload this file to the module.
 

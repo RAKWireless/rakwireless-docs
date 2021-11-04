@@ -25,7 +25,7 @@ Thank you for choosing **RAK13003 WisBlock IO Expansion Module** in your awesome
 
 For All WisBlock Core:
 
-* [Sample Code: WisBlock IO Expansion Module](https://github.com/RAKWireless/WisBlock/tree/master/examples)
+* [Sample Code: WisBlock IO Expansion Module](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK13003_GPIO_Expander_IO_MCP32)
 
 ## Product Description
 

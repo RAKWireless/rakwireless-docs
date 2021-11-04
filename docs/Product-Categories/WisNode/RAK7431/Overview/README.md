@@ -1,7 +1,7 @@
 ---
 rak_img: /assets/images/wisnode/rak7431/datasheet/RAK7431_home.png
 rak_grp: [wisnode,bridge]
-rak_desc: RAK7431 is designed for industrial applications that relay Modbus data using the LoRaWAN network as a means of wirelessly transmitting to and from the end devices. It can operate in all the LoRaWAN bands within the standard parameters defined by the LoRa Alliance. Hence, it allows good signal quality within the densely populated offices, storehouses, and even within the large factories.
+rak_desc: RAK7431 is designed for industrial applications that relay Modbus data using the LoRaWAN network as a means of wirelessly transmitting to and from the end-devices. It can operate in all the LoRaWAN bands within the standard parameters defined by the LoRa Alliance. Hence, it allows good signal quality within the densely populated offices, storehouses, and even within the large factories.
 prev: ../../
 next: ../Quickstart/
 tags:
@@ -25,7 +25,7 @@ Thank you for choosing **RAK7431 WisNode Bridge Serial** in your awesome IoT Pro
 
 ## Product Description
 
-RAK7431 WisNode Bridge Serial is an RS485 to LoRaWAN converter designed for industrial applications. The device relays ModBUS data using the LoRaWAN network as means of wirelessly transmitting to and from the end devices.
+RAK7431 WisNode Bridge Serial is an RS485 to LoRaWAN converter designed for industrial applications. The device relays ModBUS data using the LoRaWAN network as means of wirelessly transmitting to and from the end-devices.
 
 RAK7431 can operate in all of the LoRaWAN bands within the standard parameters defined by the LoRa Alliance. Its open environment range is 15+ km and in industrial cases, where there are heavy obstructions in the path of the RF signal performance is improved compared to conventional wireless systems due to the characteristics of LoRa as a modulation technique. This allows for consistently good signal quality within the confines of large factories, densely populated offices, storehouses, etc.
 

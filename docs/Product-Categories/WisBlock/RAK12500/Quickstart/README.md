@@ -156,7 +156,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Opening RAK12500 example code for RAK11200 WisBlock Core"
 />
 
-1. Once the example code is open, install the [SparkFun u-blox GNSS](https://github.com/sparkfun/SparkFun_u-blox_GNSS_Arduino_Library) library by clicking the highlighted link, as shown in **Figure 11** and **Figure 12**.
+3. Once the example code is open, install the [SparkFun u-blox GNSS](https://github.com/sparkfun/SparkFun_u-blox_GNSS_Arduino_Library) library by clicking the highlighted link, as shown in **Figure 11** and **Figure 12**.
 
 <rk-img
   src="/assets/images/wisblock/rak12500/quickstart/rak12500-code.png"

@@ -33,7 +33,7 @@ RAK11300 WisDuo LPWAN Module is based on the Raspberry Pi RP2040 chip and SX1262
 - **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, RU864, and AS923-1/2/3/4
 - LoRaWAN Activation by OTAA/ABP
 - Long-range - greater than 15&nbsp;km with optimized antenna
-- Arm Cortex-M0+ Dual Core
+- ARM Cortex-M0+ Dual Core
 - 133Mhz CPU Clock
 - 246&nbsp;kbytes RAM
 - **Supply Voltage**: 2.0&nbsp;V ~ 3.6&nbsp;V

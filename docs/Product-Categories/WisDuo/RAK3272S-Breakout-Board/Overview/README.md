@@ -25,7 +25,7 @@ RAK3272S Breakout Board is specifically designed to allow easy access to the pin
 
 The board itself has the RAK3172 at its core, integrating a STM32WLE5CC chip, It has Ultra-Low Power Consumption of 1.69&nbsp;uA in sleep mode 
 
-This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications. It also supports LoRa Point to Point (P2P) communication mode which helps you in implementing your own customized long-range LoRa network quickly.
+This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications. It also supports LoRa Point-to-Point (P2P) communication mode which helps you in implementing your own customized long-range LoRa network quickly.
 
 ## Product Features
 

@@ -1,5 +1,5 @@
 ---
-rak_desc: Covers the comprehensive information of your RAK11200 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Provides comprehensive information about your RAK11200 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisblock/rak11200/overview/RAK11200_buy.png
 tags:
   - datasheet
@@ -11,23 +11,22 @@ next: false
 
 # RAK11200 WisBlock WiFi Module Datasheet
 
-## Overview 
+## Overview
 
 ### Description
 
-**RAK11200** is a **WisBlock Core** module for RAK **WisBlock** based on Espressif ESP32-WROVER. It is a powerful, generic WiFi-BLE MCU module that targets a wide variety of applications. There are two CPU cores that can be individually controlled and the CPU clock frequency is adjustable from 80&nbsp;MHz to 240&nbsp;MHz. The Low Power Deep-Sleep current of ESP32-WROVER is about 10&nbsp;uA. This makes the **RAK11200** an ultra-low power communication solution. **RAK11200** can be comfortably programmed with the Arduino™ IDE or PlatformIO.
+**RAK11200** is a **WisBlock Core** module for RAK **WisBlock** based on Espressif ESP32-WROVER. It is a powerful, generic WiFi-BLE MCU module that targets a wide variety of applications. There are two CPU cores that can be individually controlled and the CPU clock frequency is adjustable from 80&nbsp;MHz to 240&nbsp;MHz. The low-power deep-sleep current consumption of the ESP32-WROVER is about 10&nbsp;uA. This makes the **RAK11200** an ultra-low-power communication solution. **RAK11200** can be comfortably programmed with the Arduino™ IDE or PlatformIO.
 
 ### Features
-* Two low-power Xtensa® 32-bit LX6 microprocessors      
+* Two low-power Xtensa® 32-bit LX6 microprocessors
 * Up to 240&nbsp;MHz CPU clock
 * Built-in PCB antenna
-* 4&nbsp;MB External SPI Flash, 520&nbsp;KB RAM   
-* 8&nbsp;MB SPI Pseudo static RAM (PSRAM) 
-* WiFi 802.11 b/g/n (802.11n up to 150&nbsp;Mbps)     
+* 4&nbsp;MB External SPI Flash, 520&nbsp;KB RAM
+* 8&nbsp;MB SPI Pseudo static RAM (PSRAM)
+* WiFi 802.11 b/g/n (802.11n up to 150&nbsp;Mbps)
 * Bluetooth v4.2 BR/EDR and BLE specification
-* Rich set of peripherals: RTC, UART, I2C, SPI, SD card interface  
-* Low power Deep Sleep mode 
-
+* Rich set of peripherals: RTC, UART, I2C, SPI, SD card interface
+* low-power deep-sleep mode
 
 ## Specifications
 
@@ -57,8 +56,8 @@ Figure 2 shows RAK11200 module mounting sketch with the WisBase RAK5005-O board.
 
 The hardware specification is categorized into four parts. It discuses the interfacing of the module and its corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK11200 WisBlock WiFi Module.
 
-:::warning ⚠️ WARNING    
-- Different from other ESP32 boards, the RAK11200 needs to be put _**manually**_ into **download mode**. If you do not force the RAK11200 into **download mode**, you cannot upload your sketch from Arduino IDE (or PlatformIO).
+:::warning ⚠️ WARNING
+- Different from other ESP32 boards, the RAK11200 needs to be put _**manually**_ into **download mode**. If you do not force the RAK11200 into **download mode**, you cannot upload your sketch from Arduino IDE (or PlatformIO) to the board.
 
 - To force the RAK11200 into **download mode**, you need to connect the pin _**BOOT0**_ on the WisBlock Base RAK5005-O to _**GND**_ and push the reset button.
 
@@ -79,7 +78,7 @@ The RAK11200 module provides two UART interfaces: UART0 and UART1. The UART0 can
 
 ###### UART0 Programming Port
 
-To support USB, the RAK11200 has an USB to UART converter onboard to connect the ESP32's UART0 to the USB connector. Figure 4 shows the RAK11200 module UART programming circuit.
+To support USB, the RAK11200 has a USB-to-UART converter onboard to connect the ESP32's UART0 to the USB connector. Figure 4 shows the RAK11200 module UART programming circuit.
 
 <rk-img
   src="/assets/images/wisblock/rak11200/datasheet/image-20210310153554464.png"
@@ -98,16 +97,15 @@ The RAK11200 supports one single SPI Interface in full-duplex or half-duplex com
 
 ##### I2C Interface
 
-The RAK11200 module provides two I2C bus interfaces. The module allows you to access directly to the registers to control I2C interfaces, which adds more flexibility to the design of the final solution. Depending on your configuration, it can serve as an I2C master mode. The I2C interface supports:
+The RAK11200 module provides two I2C bus interfaces. The module allows you to access directly the registers to control I2C interfaces, which adds more flexibility to the design of the final product. Depending on your configuration, it can serve as an I2C master mode. The I2C interface supports:
 
 - Standard mode (100&nbsp;Kbit/s) and Fast mode (400&nbsp;Kbit/s);
 - Up to 5&nbsp;MHz, constrained by the SDA pull-up strength;
 - 7-bit/10-bit addressing mode.
 
-
 #### Pin Definition
 
-The RAK11200 module has a ESP32-WROVER module at its core. Figure 5 shows the core module pins and connection information.
+The RAK11200 module has an ESP32-WROVER module at its core. Figure 5 shows the core module pins and connection information.
 
 <rk-img
   src="/assets/images/wisblock/rak11200/datasheet/image-20210310153453674.png"
@@ -230,9 +228,9 @@ The RAK11200 module has a ESP32-WROVER module at its core. Figure 5 shows the co
 
 #### Schematic Diagram
 
-
 <rk-img
   src="/assets/images/wisblock/rak11200/datasheet/schematic.png"
   width="100%"
   caption="RAK11200 Schematic Diagram"
-/>
+/> 
+**RAK11200** is a **WisBlock Core** module for RAK **WisBlock** based on Espressif ESP32-WROVER. It is a powerful, generic WiFi-BLE MCU module that targets a wide variety of applications. There are two CPU cores that can be individually controlled and the CPU clock frequency is adjustable from 80&nbsp;MHz to 240&nbsp;MHz. The low-power deep-sleep current consumption of the ESP32-WROVER is about 10&nbsp;uA. This makes the **RAK11200** an ultra-low-power communication solution. **RAK11200** can be comfortably programmed with the Arduino™ IDE or PlatformIO.

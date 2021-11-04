@@ -24,7 +24,7 @@ Thank you for choosing **RAK811 Breakout Board** in your awesome IoT Project! ðŸ
 
 RAK811 Breakout Board is an easy to use, compact and low power long range LoRa technology with wireless transceiver capabilities. A combination of RAK811 chipset and RAK811 Breakout Board with Semtech SX1276 at its core which takes advantage of all LoRa features.
 
-The RAK811 Breakout Board complies with the latest LoRaWAN Class A & C protocol specifications with fully supported LoRaWAN 1.0.2 stack in its firmware. It has a simple and straightforward setup and can quickly access LWPA IOT platforms. Additionally, it supports LoRa Point to Point (P2P) communications which helps customers in implementing their own private LoRa network.
+The RAK811 Breakout Board complies with the latest LoRaWAN Class A & C protocol specifications with fully supported LoRaWAN 1.0.2 stack in its firmware. It has a simple and straightforward setup and can quickly access LWPA IOT platforms. Additionally, it supports LoRa Point-to-Point (P2P) communications which helps customers in implementing their own private LoRa network.
 
 The node can work in a number of modes, with different data rates and read data from the attached sensors with the help of its serial AT commands.
 
@@ -43,7 +43,7 @@ This board is a complete solution in developing your LoRaWAN protocol techniques
 - **LoRaWAN 1.0.2** specification compliant.
 - **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, and AS923.
 - LoRaWAN Activation by OTAA/ABP.
-- LoRa Point to Point (P2P) communication.
+- LoRa Point-to-Point (P2P) communication.
 - Integrates both **SMA** and **iPEX** antenna connectors.
 - Xbee form factor with standard 2.00&nbsp;mm headers.
 - Easy to use AT Command Set via UART interface with configurable baud rate.

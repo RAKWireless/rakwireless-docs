@@ -1,5 +1,5 @@
 ---
-rak_desc: Covers the comprehensive information of your RAK1910 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Provides comprehensive information about your RAK1910 to help you get acquainted with it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device's components.
 rak_img: /assets/images/wisblock/rak1910/overview/RAK1910_home.png
 tags:
   - datasheet
@@ -14,19 +14,16 @@ next: false
 ## Overview
 
 ### Description
+The RAK1910 WisBlock GNSS Location Module module, part of the RAK Wireless Wisblock series, is a u-blox MAX-7Q GNSS (GPS, GLONASS, QZSS, and SBAS) module. This module features exceptional performance, high sensitivity, and minimal acquisition time, which makes it suitable for low-power IoT solutions. The RAK1910 positioning module is a GNSS receiver. It receives and tracks the GPS (including SBAS and QZSS) and the GLONASS signals. QZSS and SBAS signals (by default) can be received concurrently with GPS signals.
 
-The RAK1910 WisBlock GNSS Location Module module, part of the RAK Wireless Wisblock series, is a u-blox MAX-7Q GNSS (GPS, GLONASS, QZSS, and SBAS) module. This module features exceptional performance, high sensitivity, and minimal acquisition time which makes it suitable for low-power IoT solutions.
-The RAK1910 positioning module is a GNSS receiver. It receives and tracks the GPS (including SBAS and QZSS) and the GLONASS signals. QZSS and SBAS signals (by default) can be received concurrently with GPS signals.
-
-### Features 
+### Features
 * High accuracy of 2.5&nbsp;m
-* **Update rate**: 10&nbsp;Hz 
-* **Velocity accuracy**: 0.1&nbsp;m/s 
-* **Heading accuracy**: 0.5 degrees 
+* **Update rate**: 10&nbsp;Hz
+* **Velocity accuracy**: 0.1&nbsp;m/s
+* **Heading accuracy**: 0.5 degrees
 * Fast location fix. 29&nbsp;sec from cold start to first fix. 1&nbsp;sec from hot start
-* GPS and GLONASS satellite support 
+* GPS and GLONASS satellite support
 * **Module size**: 10 x 23&nbsp;mm
-
 
 ## Specifications
 
@@ -51,8 +48,7 @@ The RAK1910 module can be mounted only in Slot A of the WisBase board. Figure 1 
 | uBlox  | MAX-7Q      |
 
 #### Pin Definition
-
-The RAK1910 WisBlock GNSS Location Module module comprises a standard WisIO connector. The WisIO connector allows the RAK1910 module to be mounted on a WisBlock baseboard, such as RAK5005. The pin order of the connector and the definition of the pinout are shown in Figure 2.
+The RAK1910 WisBlock GNSS Location Module module features a standard WisConnector, which allows the RAK1910 module to be mounted on a WisBlock baseboard, such as RAK5005. The pin order of the connector and the definition of the pinout are shown in Figure 3.
 
 <rk-img
   src="/assets/images/wisblock/rak1910/datasheet/RAK1910_pin.png"
@@ -61,17 +57,15 @@ The RAK1910 WisBlock GNSS Location Module module comprises a standard WisIO conn
 />
 
 ::: tip 📝 NOTE
-- Only the **UART** related pin, **1PPS** pin, **RESET** pin, **VDD**, and **GRD** are connected to this module. 
-- The RAK1910 module can be installed in the slot A only.
+- Only the **UART**-related pins, **1PPS** pin, **RESET** pin, **VDD**, and **GND** are connected to this module.
+- The RAK1910 module can be installed in Slot A only.
 :::
 
 - The RAK1910 module can be installed in the Slot A only.
 :::
 
 #### Sensors
-
 ##### GNSS Sensor
-
 <table style="text-align: center">
 <thead>
   <tr>
@@ -193,7 +187,7 @@ Figure 3 shows the dimensions and the mechanic drawing of the RAK1910 module.
 
 :::tip 📝 NOTE:
 Slot for mounting: **Slot A**
-1. Because the RAK1910 is double in size and uses the serial connection to the WisBlock Core module, it can be only installed in the RAK5005-O Slot A.
+- Because the RAK1910 is double the size of regular sensor modules, and uses the serial connection to the WisBlock Core module, it can be only installed in the RAK5005-O Slot A.
 :::
 
 ##### WisConnector PCB Layout
@@ -211,4 +205,4 @@ Figure 5 shows the schematic of the RAK1910 module.
   src="/assets/images/wisblock/rak1910/datasheet/rak1910_schematic.png"
   width="100%"
   caption="RAK1910 WisBlock GNSS Location Module Schematic"
-/>
+/>  

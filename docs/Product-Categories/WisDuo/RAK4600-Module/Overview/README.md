@@ -25,7 +25,7 @@ Thank you for choosing **RAK4600 WisDuo LPWAN Module** in your awesome IoT Proje
 
 RAK4600 WisDuo LPWAN Module includes an nRF52832 MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumption of 13.3&nbsp;μA (down to 11.2&nbsp;μA @ 2.0V) in sleep mode, high LoRa output power up to 20dB max in work mode, and BLE output power up to 4dBm.
 
-The module complies with LoRaWAN 1.0.2 specification. It also supports LoRa Point to Point (P2P) communications. The Module supports BLE 5.0 in addition to LoRa. Its RF communication capabilities (LoRa+BLE) make it suitable for a variety of applications in the IoT field.
+The module complies with LoRaWAN 1.0.2 specification. It also supports LoRa Point-to-Point (P2P) communications. The Module supports BLE 5.0 in addition to LoRa. Its RF communication capabilities (LoRa+BLE) make it suitable for a variety of applications in the IoT field.
 
 ## Product Features
 

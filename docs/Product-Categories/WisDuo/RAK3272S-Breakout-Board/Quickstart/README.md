@@ -57,7 +57,7 @@ Before going through the step in the installation guide of the RAK3272S Breakout
 | DEVADDR | Device Address                                   |
 | NWKSKEY | Network Session Key                              |
 | APPSKEY | Application Session Key                          |
-| P2P     | Point to Point                                   |
+| P2P     | Point-to-Point                                   |
 
 
 ## Product Configuration
@@ -110,7 +110,7 @@ In this guide, you need to have a working gateway that is connected to TTN or ha
 
 As shown in Figure 2, The Things Stack (TTN V3) is an open-source LoRaWAN Network Server suitable for global, geo-distributed public and private deployments as well as for small, local networks. The architecture follows the LoRaWAN Network Reference Model for standards compliance and interoperability. This project is actively maintained by [The Things Industries](https://www.thethingsindustries.com/).
 
-LoRaWAN is a protocol for low-power wide area networks. It allows for large scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long-range wireless connections.
+LoRaWAN is a protocol for low-power wide-area networks. It allows for large scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long-range wireless connections.
 
 The RAK3272S Breakout Board can be part of this ecosystem as a device, and the objective of this section is to demonstrate how simple it is to send data to The Things Stack using the LoRaWAN protocol. To achieve this, the RAK3272S Breakout Board must be located inside the coverage of a LoRaWAN gateway connected to The Things Stack server. 
 

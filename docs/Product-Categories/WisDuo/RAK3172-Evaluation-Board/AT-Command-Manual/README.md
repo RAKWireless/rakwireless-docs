@@ -14,19 +14,19 @@ rak_img: /assets/images/wisduo/rak3172-evaluation-board/overview/RAK3172E_Evalua
 
 ## Introduction
 
-RAK3172 Evaluation WisDuo Board is based on the STM32WLE5CCU6 chip and it is designed to simplify LoRaWAN and LoRa point to point (P2P) communication. To integrate LoRa technology into your projects, implemented easy to use USB interface where you can send AT commands. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication.    
+The RAK3172 Evaluation WisDuo Board is based on the STM32WLE5CCU6 chip and it is designed to simplify LoRaWAN and LoRa point-to-point (P2P) communication. To integrate LoRa technology into your projects, we implemented an easy-to-use USB interface, through which you can send AT commands. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication.
 
 The RAK3172 Evaluation Board consists of two modules:    
 - RAK3372 WisBlock Core module    
-   The RAK3372 is a module build with the [RAK3172 WisDuo Stamp module](/Product-Categories/WisDuo/RAK3172-Module/Overview) on a WisBlock Core compatible PCB.
+   The RAK3372 is a module built with the [RAK3172 WisDuo Stamp module](/Product-Categories/WisDuo/RAK3172-Module/Overview) on a WisBlock Core-compatible PCB.
 - RAK5005-O Base Board    
-   The RAK5005-O is a WisBlock Base Board that provides power supply, battery connector, solar panel charging connector, one IO-Slot and 4 small extension slots to use WisBlock modules with the evaluation board. You can find detailed information in the [RAK5005-O Documentation](/Product-Categories/WisBlock/RAK5005-O/Overview).     
+   The RAK5005-O is a WisBlock Base Board that provides power supply, battery connector, solar panel charging connector, one IO-Slot and 4 small extension slots to use WisBlock modules with the evaluation board. You can find detailed information in the [RAK5005-O Documentation](/Product-Categories/WisBlock/RAK5005-O/Overview).
 
-The USB serial communication is exposed on the USB connector or the RAK5005-O base board. The default parameters of the UART2 communication are **9600 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK3172-E Module Datasheet](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Datasheet).
+The USB serial communication is exposed on the USB connector or the RAK5005-O base board. The default parameters of the UART2 communication are **9600 / 8-N-1**. Firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK3172-E Module Datasheet](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Datasheet).
 
 ## Links to Quick Start Guide
 
-For AT commands example usage, you can check these sections of quick start guide:
+For AT commands example usage, you can check these sections of the quick start guide:
 
 - [TTN OTAA Guide](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Quickstart/#ttn-otaa-device-registration) - How to add OTAA device on TTN and what AT commands to use on RAK3172-E OTAA activation.
 - [TTN ABP Guide](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Quickstart/#ttn-abp-device-registration) - How to add ABP device on TTN and what AT commands to use on RAK3172-E ABP activation. 
@@ -36,7 +36,7 @@ For AT commands example usage, you can check these sections of quick start guide
 
 ## AT Command Syntax
 
-The AT command is based on ASCII characters. In general, the AT Command starts with the prefix `AT` and ends with `<CR><LF>` (i.e. `\r\n`). For the rest of the document, the `\r\n` part is omitted for the sake of clarity.
+The AT commands use ASCII characters. In general, an AT command starts with the prefix `AT` and ends with `<CR><LF>` (i.e. `\r\n`). For the rest of this document, the `\r\n` part is omitted for the sake of clarity.
 
 The AT commands have the standard format “`AT+XXX`”, with XXX denoting the command.
 
@@ -49,7 +49,6 @@ There are four available command formats:
 | `AT+XXX=<input parameter>` | Writing configuration on the command              |
 | `AT+XXX`                   | Used to run a command                             |
 
-
 The output of the commands is returned via UART.
 
 The format of the reply is divided into two parts: returned value and the status return code.
@@ -61,13 +60,11 @@ The format of the reply is divided into two parts: returned value and the status
 :::
 
 
-1. **`<value><CR><LF>`** is the first reply when (**`AT+XXX?`**) command description or (**`AT+XXX=?`**) reading value is executed then it will be followed by the status return code. The formats with no return value like (**`AT+XXX=<input parameter>`**) writing configuration command and (**`AT+XXX`**) run command will just reply the status return code.
+1. **`<value><CR><LF>`** is the first reply when (**`AT+XXX?`**) command description or (**`AT+XXX=?`**) reading value is executed. It will be thn followed by a status return code. When there is no return value, like for the (**`AT+XXX=<input parameter>`**) writing configuration command and (**`AT+XXX`**) run command, the status return code only will be returned.
 
+2. **`<CR><LF><STATUS><CR><LF>`** is the second part of the reply, which is the status return code.
 
-2. **`<CR><LF><STATUS><CR><LF>`** is the second part of the reply which is the status return code.
-
-The table below shows the possible status:
-
+The possible status codes are:
 
 | **STATUS RETURN CODE**   | **Description**                                      |
 | ------------------------ | ---------------------------------------------------- |
@@ -84,7 +81,7 @@ More details on each command description and examples are given in the remainder
 
 :::tip 📝 NOTE:
 
-On the examples of AT Commands on this document, `ATE` is active therefore each input AT Command is printed before the return values and status return code.
+In the examples of AT commands on this document, `ATE` is active therefore each AT command is printed before the return values and status return code.
 
 :::
 
@@ -613,7 +610,7 @@ OK
 
 :::tip 📝 NOTE:
 
-`AT+CFS=?` only reflects the status of the last confirmed packet send via `AT+SEND` command. If the last confirmed packet is successful, it will return to 1. If the last confirmed packets fails, it will return to 0. This is true regardless if you send successful unconfirmed packets in between confirmed payloads. `AT+CFS=?` only tracks the last confirmed packet.
+`AT+CFS=?` only reflects the status of the last confirmed packet sent via the `AT+SEND` command. If the last confirmed packet is successful, it will return 1. If the last confirmed packets fails, it will return 0. This is true regardless if you send successful unconfirmed packets in between confirmed payloads. `AT+CFS=?` only tracks the last confirmed packet.
 
 :::
 
@@ -701,7 +698,7 @@ OK
 
 Description: LoRaWAN® class
 
-This command is used to access and configure the the LoRaWAN® class of the module.
+This command is used to access and configure the LoRaWAN® class of the module.
 
 | Command                          | Input Parameter | Return Value                                      | Return Code              |
 | -------------------------------- | --------------- | ------------------------------------------------- | ------------------------ |
@@ -723,7 +720,7 @@ OK
 
 :::tip 📝 NOTE:
 
-When operating in CLASS B, more return value is shown that shows the current state of Class B operation:
+When operating in CLASS B, the current state of Class B operation is also shown:
 
 | Class B Status and Description |
 | ------------------------------ |
@@ -745,7 +742,6 @@ B,S0
 OK
 ```
 :::
-
 
 ### AT+DCS 
 
@@ -777,7 +773,7 @@ OK
 
 Description: Get the duty cycle time
 
-This command is used to get the duty cycle time (in seconds). The command is only used in the EU868, RU864, and EU433 frequency bands. Other frequency band query will return 0.
+This command is used to get the duty cycle time (in seconds). The command is only used in the EU868, RU864 and EU433 frequency bands. Other frequency bands will return 0.
 
 | Command             | Input Parameter | Return Value                           | Return Code |
 | ------------------- | --------------- | -------------------------------------- | ----------- |
@@ -968,8 +964,7 @@ OK
 ```
 :::tip 📝 NOTE:
 
-RX2 Frequency via `AT+RX2FQ` command have preset value depending on the regional band you selected via `AT+BAND` command.
-
+RX2 Frequency via the `AT+RX2FQ` command has a preset value depending on the regional band you selected via the `AT+BAND` command.
 :::
 
 ### AT+TXP 
@@ -1004,7 +999,7 @@ OK
 
 Description: Confirmed payload retransmission
 
-This command is used to access and configure the number of retransmission for confirmed payload.
+This command is used to access and configure the number of retransmissions for confirmed payload.
 
 | Command                         | Input Parameter                 | Return Value                                                        | Return Code              |
 | ------------------------------- | ------------------------------- | ------------------------------------------------------------------- | ------------------------ |
@@ -1124,8 +1119,7 @@ This command is used to send long data payload.
 
 **Example**:
 
-In this example, payload length is automatically sliced with the DR set to 0. Uplink is sending to port 2 and confirmed.
-
+In this example, the payload length is automatically sliced with the DR set to 0. Uplink is sending to port 2 and confirmed.
 ```
 AT+LPSEND=2:1:123456789012
 
@@ -1135,7 +1129,7 @@ OK
 ```
 
 :::tip 📝 NOTE:
-The large payload via `AT+LPSEND` will be sliced automatically depending on the DR that follows the LoRaWAN specifications. You can check [Appendix III](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#appendix-iii-maximum-transmission-load-by-region) for the maximum size.
+The large payload sent via `AT+LPSEND` will be sliced automatically depending on the DR that follows the LoRaWAN specifications. You can check [Appendix III](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#appendix-iii-maximum-transmission-load-by-region) for the maximum size.
 :::
 
 ### AT+LINKCHECK 
@@ -1234,7 +1228,7 @@ OK
 This section describes the commands related to Class B mode.
 
 :::tip 📝 NOTE:
-The commands in these sections work in Class B mode. You need to configure your device to Class B via `AT+CLASS=B`. <!-- to ensure that --> 
+The commands in these sections work in Class B mode. You need to configure your device to Class B via `AT+CLASS=B` to ensure that.
 :::
 
 - [AT+PGSLOT - Slot Periodicity Command](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-pgslot)
@@ -1334,7 +1328,7 @@ This command is used to get the RSSI value of the last packet received.
 | **`AT+RSSI=?`** | -               | *< integer > in dBm*                                | `OK`        |
 
 :::tip 📝 NOTE:
-`AT+RSSI` will show the RSSI based of the last downlink received. If there is no downlink received yet, it will return 0.
+`AT+RSSI` will show the RSSI of the last downlink received. If no downlink was received yet, it will return 0.
 :::
 
 Example:
@@ -1357,7 +1351,7 @@ This command is used to get the SNR value of the last packet received.
 | **`AT+SNR=?`** | -               | *< integer >*                                     | `OK`        |
 
 :::tip 📝 NOTE:
-`AT+SNR` will show the SNR based of the last downlink received. If there is no downlink received yet, it will return 0.
+`AT+SNR` will show the SNR of the last downlink received. If no downlink was received yet, it will return 0.
 :::
 
 **Example**:
@@ -1776,7 +1770,7 @@ Current Work Mode: LoRa P2P.
 
 Description: P2P mode frequency
 
-This command is used to access and configure P2P mode frequency.
+This command is used to access and configure the P2P mode frequency.
 
 | Command                          | Input Parameter       | Return Value                        | Return Code              |
 | -------------------------------- | --------------------- | ----------------------------------- | ------------------------ |
@@ -1805,7 +1799,7 @@ OK
 
 Description: P2P mode spreading factor
 
-This command is used to access and configure P2P mode spreading factor.
+This command is used to access and configure the P2P mode spreading factor.
 
 | Command                        | Input Parameter | Return Value                                               | Return Code              |
 | ------------------------------ | --------------- | ---------------------------------------------------------- | ------------------------ |
@@ -1828,7 +1822,7 @@ OK
 
 Description: P2P mode bandwidth
 
-This command is used to access and configure P2P mode bandwidth.
+This command is used to access and configure the P2P mode bandwidth.
 
 | Command                        | Input Parameter        | Return Value                                      | Return Code              |
 | ------------------------------ | ---------------------- | ------------------------------------------------- | ------------------------ |
@@ -1851,7 +1845,7 @@ OK
 
 Description: P2P mode coding rate
 
-This command is used to access and configure P2P mode coding rate.
+This command is used to access and configure the P2P mode coding rate.
 
 | Command                        | Input Parameter       | Return Value                                                   | Return Code              |
 | ------------------------------ | --------------------- | -------------------------------------------------------------- | ------------------------ |
@@ -1874,7 +1868,7 @@ OK
 
 Description: P2P mode preamble length
 
-This command is used to access and configure P2P mode preamble length.
+This command is used to access and configure the P2P mode preamble length.
 
 | Command                        | Input Parameter   | Return Value                                      | Return Code              |
 | ------------------------------ | ----------------- | ------------------------------------------------- | ------------------------ |
@@ -1896,7 +1890,7 @@ OK
 
 Description: P2P mode TX power
 
-This command is used to access and configure P2P mode TX power.
+This command is used to access and configure the P2P mode TX power.
 
 | Command                        | Input Parameter | Return Value                        | Return Code              |
 | ------------------------------ | --------------- | ----------------------------------- | ------------------------ |
@@ -1967,7 +1961,7 @@ OK
 ```
 
 :::tip 📝 NOTE:
-To successfully transmit P2P, you must have a another separate device configured the same P2P parameters and with `AT+PRECV` command.
+To successfully transmit P2P, you must have another device configured with the same P2P parameters and receive with the `AT+PRECV` command.
 :::
 
 ### AT+PRECV 
@@ -2009,7 +2003,7 @@ This section describes the commands related to multicast group functionality.
 
 Description: Add multicast group
 
-This command is used to add new multicast group and multicast parameters.
+This command is used to add a new multicast group and multicast parameters.
 
 | Command                            | Input Parameter                                                                | Return Value                            | Return Code              |
 | ---------------------------------- | ------------------------------------------------------------------------------ | --------------------------------------- | ------------------------ |
@@ -2018,7 +2012,7 @@ This command is used to add new multicast group and multicast parameters.
 
 Input parameter details:
 
-If Class is C, periodicity parameter is removed.
+If Class is C, the periodicity parameter is removed.
 
 **Examples**:
 
@@ -2048,8 +2042,7 @@ This command is used to remove the configured multicast group.
 
 **Example**:
 
-You can only remove group with address already added.
-
+You can only remove a group with address that was already added.
 ```
 AT+RMVMULC=11223344
 
@@ -2087,7 +2080,7 @@ Description: Set transparent transmission mode
 This command is used to set the transparent transmission mode. This only works in LoRaWAN mode.
 
 :::tip 📝 NOTE:
-In data transparent transmission mode, all your input to the uart port will be transmitted to the network server. Standard AT commands will not work. To get out of data transparent transmission mode, you need to input `+++` command without any termination (e.g. CR or LF).
+In data transparent transmission mode, all your input to the UART port will be transmitted to the network server. Standard AT commands will not work. To get out of data transparent transmission mode, you need to input `+++` command without any termination (e.g. CR or LF).
 :::
 
 | Command | Input Parameter | Return Value                                    | Return Code |
@@ -2122,7 +2115,7 @@ This command is used to stop the transparent transmission mode.
 | **`+++`**  | -               | -                                         | `OK`        |
 
 :::tip 📝 NOTE:
-There must be no any UART termination after `+++`. There must be no CR or LF after the `+++` command, else it will be transmitted as payload, and the device will continue in Data Transparent Transmission mode.
+There must be no UART termination, no CR and/or LF, after the `+++` command, or else it will be transmitted as payload and the device will stay in Data Transparent Transmission mode.
 :::
 
 ## Appendix 
@@ -2599,7 +2592,7 @@ M in the following list is the length with MAC header, N is the maximum usable p
 
 ### Appendix IV: Asynchronous Events
 
-This section describes the output from UART lines of RAK3172 that can occur at any point in time while the device is operational.
+This section describes the output from UART lines from the RAK3172 that can occur at any point in time while the device is operational.
 
 | Event                      | UART output         | Status description                                                                               |
 | -------------------------- | ------------------- | ------------------------------------------------------------------------------------------------ |

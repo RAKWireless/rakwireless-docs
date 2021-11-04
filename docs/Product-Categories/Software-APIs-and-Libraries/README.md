@@ -5,7 +5,7 @@ rak_desc: RAKwireless supports you in the development of your custom application
 rak_img: /assets/rakwireless/product-categories/software-apis&libraries.png
 ---
 
-# Software APIs and Libraries
+# Software, APIs and Libraries
 
 <rk-head img="/assets/rakwireless/product-categories/software-apis&libraries.png" center>
 

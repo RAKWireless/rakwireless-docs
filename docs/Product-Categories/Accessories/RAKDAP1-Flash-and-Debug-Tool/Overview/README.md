@@ -19,7 +19,7 @@ Thank you for choosing **RAKDAP1 Flash and Debug Tool** in your awesome IoT Proj
 
 Many RAKwireless products have an SWD port to flash the bootloader and application SW. The SWD port is used for debugging. **RAKDAP1** is an affordable debug and flash tool to connect your PC to the SWD port. RAKDAP1 has an MCU that is programmed with **DAPLink**.
 
-**DAPLink** is an open-source software project that enables programming and debugging application software on running on Arm Cortex CPUs. Commonly referred to as interface firmware, DAPLink runs on a secondary MCU that is attached to the SWD or JTAG port of the application MCU. This configuration is found on nearly all development boards. It creates a bridge between your development computer and the CPU debug access port. DAPLink enables developers with drag-and-drop programming, a serial port, and CMSIS-DAP based debugging.
+**DAPLink** is an open-source software project that enables programming and debugging application software on running on ARM Cortex CPUs. Commonly referred to as interface firmware, DAPLink runs on a secondary MCU that is attached to the SWD or JTAG port of the application MCU. This configuration is found on nearly all development boards. It creates a bridge between your development computer and the CPU debug access port. DAPLink enables developers with drag-and-drop programming, a serial port, and CMSIS-DAP based debugging.
 
 DAPLink is compatible with all known versions of Windows, Mac OSX, and Linux. Once connected to a computer DAPLink will present itself as a storage device.
 

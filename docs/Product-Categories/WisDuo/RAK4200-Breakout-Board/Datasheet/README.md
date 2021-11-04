@@ -27,7 +27,7 @@ prev: ../Quickstart/
 
 The board itself has the RAK4200 at its core, integrating an **STM32L071KB MCU** and an **SX1276 LoRa transceiver**. It has Ultra-Low Power Consumption of 9.40&nbsp;uA (down to 1.08&nbsp;μA @ 2.0&nbsp;V) in sleep mode and high LoRa output power (19&nbsp;dBm) in work mode.
 
-The board complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P Point to Point communication.
+The board complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P Point-to-Point communication.
 
 The low power, long range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors and monitors, etc.).
 

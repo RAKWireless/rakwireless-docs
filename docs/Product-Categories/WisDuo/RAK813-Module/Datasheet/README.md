@@ -47,7 +47,7 @@ RAK813 supports various protocols, including the newest BLE and LoRaWAN, where c
 - Building in TCXO for high frequency stability
 - Provides multiple band selection including 433/470/868/915 MHz for LoRa, and 2.4GHz for BLE
 - Storage Temperature: -40°C to 85°C
-- Supports LoRa Point to Point Communication in all the bands
+- Supports LoRa Point-to-Point Communication in all the bands
 - FSK, GFSK, and LoRa Technology modulation
 - llP3 = -11dBm
 - Up to 15 km coverage at suburban and up to 5 km coverage at urban area.

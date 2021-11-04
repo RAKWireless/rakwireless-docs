@@ -23,7 +23,7 @@ RAK4260 Evaluation Board is designed to give you a quick start to explore the Lo
 
 The board itself has the RAK4260 as its core, which is a module that utilizes ATSAMR34J18B SiP. The high level of integration allows for outstanding performance: Lora TX Power of up to 20&nbsp;dBm.
 
-The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P2P Point to Point communication. The low power, long-range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, and personal area networks applications such as health/fitness sensors and monitors.
+The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P2P Point-to-Point communication. The low power, long-range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, and personal area networks applications such as health/fitness sensors and monitors.
 
 ### Features
 

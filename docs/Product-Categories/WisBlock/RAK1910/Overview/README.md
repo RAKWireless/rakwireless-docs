@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisblock/rak1910/overview/RAK1910_home.png
-rak_desc: RAK1910 is a WisBlock Sensor which extends the WisBlock system with a uBlox MAX-7Q GPS module. A ready to use SW library and tutorial makes it easy to build up a GPS based location tracker.
+rak_desc: RAK1910 is a WisBlock Sensor that extends the WisBlock system with a uBlox MAX-7Q GPS module. A ready-to-use SW library and tutorial make it easy to build up a GPS-based location tracker.
 rak_grp: [wisblock, wissensor]
 prev: ../../
 next: ../Quickstart/
@@ -39,7 +39,7 @@ For WisBlock Core RAK4630:
 
 ## Product Description
 
-RAK1910 is a WisBlock Sensor which extends the WisBlock system with a uBlox MAX-7Q GPS module. A ready to use SW library and tutorial makes it easy to build up a GPS based location tracker.
+RAK1910 is a WisBlock sensor that extends the WisBlock system with a uBlox MAX-7Q GPS module. A ready-to-use SW library and tutorial make it easy to build up a GPS-based location tracker.
 
 ## Product Features
 
@@ -47,7 +47,7 @@ RAK1910 is a WisBlock Sensor which extends the WisBlock system with a uBlox MAX-
     * High accuracy of 2.5&nbsp;m
     * 10&nbsp;Hz update rate
     * 0.1&nbsp;m/s velocity accuracy
-    * 0.5 degrees Heading accuracy
+    * 0.5 degrees heading accuracy
     * Fast location fix. 29&nbsp;sec from cold start to first fix. 1&nbsp;sec from hot start
     * GPS and GLONASS satellite support 
 

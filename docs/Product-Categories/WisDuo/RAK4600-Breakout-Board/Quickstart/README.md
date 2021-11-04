@@ -238,7 +238,7 @@ This section will show how to connect the RAK4600 Breakout Board to The Things S
 
 As shown in Figure 13, The Things Stack is an open source LoRaWAN Network Server suitable for global, geo-distributed public and private deployments as well as for small, local networks. The architecture follows the LoRaWAN Network Reference Model for standards compliancy and interoperability. This project is actively maintained by [The Things Industries](https://www.thethingsindustries.com/).
 
-LoRaWAN is a protocol for low-power wide area networks. It allows for large scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long range wireless connections.
+LoRaWAN is a protocol for low-power wide-area networks. It allows for large scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long range wireless connections.
 
 The RAK4600 board can be part of this ecosystem as a device, and the objective of this section is to demonstrate how simple it is to send data to the The Things Stack using the LoRaWAN protocol. To achieve this, the RAK4600 must be located inside the coverage of a LoRaWAN gateway connected to The Things Stack server. 
 
@@ -303,7 +303,7 @@ To have an application registered, you need to input first the specific details 
   caption="Details of the TTN application"
 />
 
-If you have no error on the previous step, you should now be on the application console page. The next step is to add end devices to your The Things Stack application. LoRaWAN specification enforces that each end device has to be personalized and activated. There are two options for registering devices depending on the activation mode selected. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP).
+If you have no error on the previous step, you should now be on the application console page. The next step is to add end-devices to your The Things Stack application. LoRaWAN specification enforces that each end device has to be personalized and activated. There are two options for registering devices depending on the activation mode selected. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP).
 
 :::tip 📝 NOTE:
 

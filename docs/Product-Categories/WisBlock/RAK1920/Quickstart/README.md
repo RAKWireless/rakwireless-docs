@@ -112,7 +112,7 @@ The RAK1920 module is a sensor extension module, it supports several defacto-sta
 
 If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 6** and **Figure 7**.
+1. You need to select first the WisBlock Core you have, as shown in **Figure 6**, **Figure 7** and **Figure 8**.
 
 **Using RAK4631 WisBlock Core**
 
@@ -130,7 +130,15 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK11200 as WisBlock Core"
 />
 
-2. The Basic Sample Code for RAK1920 in Github will work on all WisBlock Core. You can open the the example codes depending on your WisBlock Core, as shown in **Figure 8** and **Figure 9**. For this guide we will be using [Grove PIR AS312](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1920_Grove_PIR_AS312)
+**Using RAK11300 WisBlock Core**
+
+<rk-img
+  src="/assets/images/wisblock/rak1920/quickstart/rak11300_board.png"
+  width="100%"
+  caption="Selecting RAK11300 as WisBlock Core"
+/>
+
+2. The Basic Sample Code for RAK1920 in Github will work on all WisBlock Core. You can open the the example codes depending on your WisBlock Core, as shown in **Figure 9**, **Figure 10** and **Figure 11**. For this guide we will be using [Grove PIR AS312](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1920_Grove_PIR_AS312)
 
 **Sample code for RAK4631**
 
@@ -148,7 +156,15 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Opening RAK1920 example code for RAK11200 WisBlock Core"
 />
 
-3. Once the example code is open, you can now select the right serial port and upload the code, as shown in **Figure 10** and **Figure 11**.
+**Sample code for RAK11300**
+
+<rk-img
+  src="/assets/images/wisblock/rak1920/quickstart/rak11300_example.png"
+  width="100%"
+  caption="Opening RAK1920 example code for RAK11300 WisBlock Core"
+/>
+
+3. Once the example code is open, you can now select the right serial port and upload the code, as shown in **Figure 12** and **Figure 13**.
 
 <rk-img
   src="/assets/images/wisblock/rak1920/quickstart/select_port.png"
@@ -162,7 +178,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Uploading the RAK1920 example code"
 />
 
-5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 12**, then your RAK1920 is properly communicating to the WisBlock core.
+5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 14**, then your RAK1920 is properly communicating to the WisBlock core.
 
 <rk-img
   src="/assets/images/wisblock/rak1920/quickstart/pir_logs.png"
