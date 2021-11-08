@@ -15,7 +15,7 @@ rak_img: /assets/images/wisblock/rak13005/overview/RAK13005_home.png
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK13005 WisBlock module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK13005 WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware 
 
@@ -23,8 +23,9 @@ Before going through each and every step on using RAK13005 WisBlock module, make
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
-- [Solar charger (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/products/battery-connector-cable)
+- [Solar charger (optional)](https://store.rakwireless.com/products/solar-panel-connector-cable)
+- External power source ( 5.5&nbsp;V to 27&nbsp;V )
 
 #### Software 
 
@@ -39,7 +40,7 @@ Before going through each and every step on using RAK13005 WisBlock module, make
 
 ### Hardware Setup
 
-RAK13005 is a WisBlock LIN Module that extends the WisBlock system to be used on communication protocol called Local Interconnect Network also known as LIN. This communication is initiated by the automotive industry for the communication of in-vehicle devices on cars. Today, LIN is also used in other applications that requires robust communication line. For more information about RAK13005, refer to the [Datasheet](../Datasheet/).
+RAK13005 is a WisBlock LIN Module that extends the WisBlock system to be used on communication protocol called Local Interconnect Network (LIN). This communication is initiated by the automotive industry for the communication of in-vehicle devices on cars. Today, LIN is also used in other applications that require a robust communication line. For more information about the RAK13005, refer to the [Datasheet](../Datasheet/).
 
 #### Pin Definition
 
@@ -51,7 +52,7 @@ RAK13005 is a WisBlock LIN Module that extends the WisBlock system to be used on
 
 #### LIN Peripheral and Controller Mode Hardware Configuration
 
-By default, the RAK13005 LIN Module is configured as Peripheral (slave), and an SMD resistor must be relocated to make the module operate in Controller mode (master). You need to use a soldering iron to reposition the resistor to make the module a LIN Controller. The resistor location is shown in Figure 2.
+By default, the RAK13005 LIN Module is configured as Peripheral (slave), and an SMD resistor must be relocated to make the module operate in Controller mode (master). You need to use a soldering iron to reposition the resistor to make the module a LIN Controller. The resistor location is shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/rak13005-mod.png"
@@ -126,12 +127,14 @@ These are the quick links that go directly to the software guide for the specifi
 
 - [RAK13005 in RAK4631 WisBlock Core Guide](#rak13005-in-rak4631-wisblock-core-guide)
 - [RAK13005 in RAK11200 WisBlock Core Guide](#rak13005-in-rak11200-wisblock-core-guide)
+- [RAK13005 in RAK11310 WisBlock Core Guide](#rak13005-in-rak11310-wisblock-core-guide)
+
 
 #### RAK13005 in RAK4631 WisBlock Core Guide
 
 ##### Arduino Setup
 
-**Figure 8** is an illustration on how to use two RAK13005 LIN modules for communication application. One RAK13005 is configured as controller and the other RAK13005 is configured as peripheral. The SMD resistors that set the mode are highlighted in yellow box. 
+**Figure 8** is an illustration on how to use two RAK13005 LIN modules for communication applications. One RAK13005 is configured as **Controller** and the other RAK13005 is configured as **Peripheral**. The SMD resistors that set the mode are highlighted in a yellow box. 
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/RAK13005-LIN-Controller-and-Peripheral-Connection.png"
@@ -139,7 +142,9 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Two RAK13005 Interconnection for Controller and Peripheral mode"
 />
 
-1. First, you need to select the RAK4631 WisBlock Core. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) to find the RAK4631 in the Arduino board selection.
+1. Select the RAK4631 WisBlock Core. 
+
+- Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) to find the RAK4631 in the Arduino Boards Manager.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/rak4631-board.png"
@@ -147,7 +152,9 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Selecting RAK4631 as WisBlock Core"
 />
 
-2. Next, install the RAKwireless TLE7259 library by via Arduino Library manager. Select `Sketch` followed by `Include Library` then ` Manage Libraries`.
+2. Next, install the **RAKwireless TLE7259** library using the Arduino Library manager. 
+
+- Select `Sketch` followed by `Include Library` then ` Manage Libraries`.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/managelibraries.png"
@@ -155,7 +162,8 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Open Arduino Library Manager"
 />
 
-3. Search for the RAKwireless TLE7259 on the search box. Select the latest version then click install. 
+- Search for **RAKwireless TLE7259** on the Library Manager text box.
+- Select the latest version of the library then click **Install** button. 
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/tle7259.png"
@@ -163,7 +171,7 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Look for RAKwireless TLE7259 LIN Bus Library"
 />
 
-4. After successful installation, close the Arduino Library window.
+- After successful installation, close the Arduino Library window.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/installed.png"
@@ -171,9 +179,9 @@ These are the quick links that go directly to the software guide for the specifi
   caption="RAKwireless TLE7259 LIN Bus Library Successfully Installed"
 />
 
-5. The example code is now available in your Arduino IDE. Upload `RAK13005_linbus_master` on the RAK13005 module in controller mode and `RAK13005_linbus_slaver` on the RAK13005 module in peripheral mode.
+3. Upload the `RAK13005_linbus_master` **Controller** sketch.
 
-6. Connect the first WisBlock with the RAK13005 module in controller mode and select the `RAK13005_linbus_master`.
+- Connect the first WisBlock with the RAK13005 module in **Controller** mode and select the `RAK13005_linbus_master`.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/example_master.png"
@@ -181,7 +189,7 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Open the code for the RAK13005 Controller"
 />
 
-7. Select the port where RAK4631 WisBlock Core is connected.
+- Select the port where RAK4631 WisBlock Core is connected.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/master_port.png"
@@ -189,21 +197,22 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Select the Serial Port of RAK4631 for the RAK13005 LIN module in controller mode."
 />
 
-8. Then upload the code to the WisBlock Core.
+- Now, upload the `RAK13005_linbus_master` code to the WisBlock Core.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/upload_master.png"
   width="100%"
-  caption="Uploading the Code"
+  caption="Uploading RAK13005_linbus_master code"
 />
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/master_success.png"
   width="100%"
-  caption="Successful Code Upload"
+  caption="Successful code Upload"
 />
 
-9.  After the successful code upload, you can now open the serial terminal and see the Serial output.
+
+- After the successful code upload, you can now open the Serial Monitor and see the Serial output.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/master_output.png"
@@ -211,7 +220,9 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Serial Output of the RAK13005 Controller Mode"
 />
 
-10. After the RAK13005 LIN Controller, you can now prepare the RAK13005 LIN Peripheral. Connect the second WisBlock with the RAK13005 in Peripheral mode then select `RAK13005_linbus_slaver`.
+4. Upload the `RAK13005_linbus_slaver` **Peripheral** sketch.
+
+- Connect the second WisBlock with the RAK13005 in Peripheral mode, then select `RAK13005_linbus_slaver`.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/example_slave.png"
@@ -219,7 +230,7 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Open the code for the RAK13005 Peripheral"
 />
 
-11. Then select the port, which is the additional port from the previous port for the controller. You should see two ports in your Arduino IDE.
+- Select the port, which is the additional port from the previous port for the controller. You should see two ports in your Arduino IDE.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/slave_port.png"
@@ -227,15 +238,21 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Select the Serial Port of RAK4631 for the RAK13005 LIN module in peripheral mode."
 />
 
-12. After ensuring the port matching the RAK13005 LIN Peripheral, you can now upload the code.
+- After ensuring the port matching the RAK13005 LIN Peripheral, you can now upload the `RAK13005_linbus_slaver` code.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/slave_upload.png"
   width="100%"
-  caption="Uploading the Code"
+  caption="Uploading the RAK13005_linbus_slaver code"
 />
 
-13. Then you can see the Serial Output on the RAK13005 Peripheral device receiving the data coming from the RAK13005 Controller device. You must have the external power supply connected to have successful transmissions.
+::: tip 📝 NOTE
+If you experience any error in compiling an example sketch, check the updated code for the RAK13005 WisBlock Core Module that can be found on the [RAK13005 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK13005_LIN_BUS).
+:::
+
+5. Check Serial Monitor output.
+
+- Check the Serial Monitor on the RAK13005 Peripheral device receiving the data coming from the RAK13005 **Controller** device. You must have the external power supply connected to have successful transmissions.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/slave_output.png"
@@ -243,12 +260,11 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Serial Output of the RAK13005 Peripheral Mode"
 />
 
-
 #### RAK13005 in RAK11200 WisBlock Core Guide
 
 ##### Arduino Setup
 
-**Figure 22** is an illustration on how to use two RAK13005 LIN modules for communication application. One RAK13005 is configured as controller and the other RAK13005 is configured as peripheral. The SMD resistors that set the mode are highlighted in yellow box. 
+**Figure 22** is an illustration on how to use two RAK13005 LIN modules for communication application. One RAK13005 is configured as **Controller** and the other RAK13005 is configured as **Peripheral**. The SMD resistors that set the mode are highlighted in a yellow box. 
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/RAK13005-LIN-Controller-and-Peripheral-Connection.png"
@@ -256,15 +272,19 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Two RAK13005 Interconnection for Controller and Peripheral mode"
 />
 
-1. First, you need to select the RAK11200 WisBlock Core. Install [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) to find the RAK4631 in the Arduino board selection.
+ 1. Select the RAK11200 WisBlock Core.
+
+- Install [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) to find the RAK11300 in the Arduino Boards Manager.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/rak11200-board.png"
   width="100%"
-  caption="Selecting RAK4631 as WisBlock Core"
+  caption="Selecting RAK11200 as WisBlock Core"
 />
 
-2. Next, install the RAKwireless TLE7259 library by via Arduino Library manager. Select `Sketch` followed by `Include Library` then ` Manage Libraries`.
+2. Next, install the **RAKwireless TLE7259** library using the Arduino Library manager.
+
+- Select `Sketch` followed by `Include Library` then ` Manage Libraries`.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/managelibraries.png"
@@ -272,7 +292,9 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Open Arduino Library Manager"
 />
 
-3. Search for the RAKwireless TLE7259 on the search box. Select the latest version then click install. 
+- Search for RAKwireless TLE7259 on Library Manager text box.
+
+- Select the latest version then click **Install** button. 
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/tle7259.png"
@@ -280,7 +302,7 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Look for RAKwireless TLE7259 LIN Bus Library"
 />
 
-4. After successful installation, close the Arduino Library window.
+- After successful installation, close the Arduino Library window.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/installed.png"
@@ -288,9 +310,11 @@ These are the quick links that go directly to the software guide for the specifi
   caption="RAKwireless TLE7259 LIN Bus Library Successfully Installed"
 />
 
-5. The example code is now available in your Arduino IDE. Upload the `RAK13005_linbus_master` on the RAK13005 module in controller mode then `RAK13005_linbus_slaver` on the RAK13005 module in peripheral mode.
+3. Upload the `RAK13005_linbus_master` **Controller** sketch.
 
-6. Connect the first WisBlock with the RAK13005 module in controller mode and select the `RAK13005_linbus_master`.
+- Open the `RAK13005_linbus_master` **Controller** sketch.
+
+- Connect the first WisBlock with the RAK13005 module in **Controller** mode and select the `RAK13005_linbus_master`.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/e32_example_master.png"
@@ -298,7 +322,7 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Open the code for the RAK13005 Controller"
 />
 
-7. Select the port where RAK11200 WisBlock Core is connected.
+- Select the port where RAK11200 WisBlock Core is connected.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/e32_master_port.png"
@@ -306,21 +330,21 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Select the Serial Port of RAK11200 for the RAK13005 LIN module in controller mode."
 />
 
-8. Then upload the code to the WisBlock Core.
+- Now, upload the `RAK13005_linbus_master` code to the WisBlock Core.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/e32_upload_master.png"
   width="100%"
-  caption="Uploading the Code"
+  caption="Uploading RAK13005_linbus_master code"
 />
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/e32_master_success.png"
   width="100%"
-  caption="Successful Code Upload"
+  caption="Successful code Upload"
 />
 
-9. After the successful code upload, you can now open the serial terminal and see the Serial output.
+- After the successful code upload, you can now open the Serial Monitor and check the Serial output.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/e32_master_output.png"
@@ -328,7 +352,10 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Serial Output of the RAK13005 Controller Mode"
 />
 
-10. After the RAK13005 LIN Controller, you can now prepare the RAK13005 LIN Peripheral. Connect the second WisBlock with the RAK13005 in Peripheral mode then select `RAK13005_linbus_slaver`.
+
+4. Upload the `RAK13005_linbus_slaver` **Peripheral** sketch.
+
+- Connect the second WisBlock with the RAK13005 in Peripheral mode then select `RAK13005_linbus_slaver`.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/e32_example_slave.png"
@@ -336,33 +363,171 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Open the code for the RAK13005 Peripheral"
 />
 
-11. Then select the port, which is the additional port from the previous port for the controller. You should see two ports in your Arduino IDE.
+- Select the port, which is the additional port from the previous port for the controller. You should see two ports in your Arduino IDE.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/e32_slave_port.png"
   width="100%"
-  caption="Select the Serial Port of RAK4631 for the RAK13005 LIN module in peripheral mode."
+  caption="Select the Serial Port of RAK11200 for the RAK13005 LIN module in Peripheral mode."
 />
 
 :::tip 📝 NOTE:
 RAK11200 requires the BOOT0 pin to be configured properly before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
 :::
 
-12.  After ensuring the port matching the RAK13005 LIN Peripheral, you can now upload the code.
+- After ensuring the port matching the RAK13005 LIN Peripheral, you can now upload the `RAK13005_linbus_slaver` code.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/e32_slave_upload.png"
   width="100%"
-  caption="Uploading the Code"
+  caption="Uploading the RAK13005_linbus_slaver code"
 />
 
+::: tip 📝 NOTE
+If you experience any error in compiling an example sketch, check the updated code for the RAK13005 WisBlock Core Module that can be found on the [RAK13005 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK13005_LIN_BUS).
+:::
 
-13. Then you can see the Serial Output on the RAK13005 Peripheral device receiving the data coming from the RAK13005 Controller device. You must have the external power supply connected to have successful transmissions.
+5. Check Serial Monitor output.
 
-
+- Check the Serial Monitor on the RAK13005 Peripheral device receiving the data coming from the RAK13005 **Controller** device. You must have the external power supply connected to have successful transmissions.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/e32_slave_output.png"
   width="100%"
   caption="Serial Output of the RAK13005 Peripheral Mode"
 />
+
+
+#### RAK13005 in RAK11310 WisBlock Core Guide
+
+##### Arduino Setup
+
+**Figure 36** is an illustration on how to use two RAK13005 LIN modules for communication application. One RAK13005 is configured as **Controller** and the other RAK13005 is configured as **Peripheral**. The SMD resistors that set the mode are highlighted in a yellow box. 
+
+<rk-img
+  src="/assets/images/wisblock/rak13005/quickstart/RAK13005-LIN-Controller-and-Peripheral-Connection.png"
+  width="70%"
+  caption="Two RAK13005 Interconnection for Controller and Peripheral mode"
+/>
+
+1. Select the RAK11300 WisBlock Core. 
+
+- Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) to find the RAK11300 in the Arduino Boards Manager.
+
+<rk-img
+  src="/assets/images/wisblock/rak13005/quickstart/rak11300-board.png"
+  width="100%"
+  caption="Selecting RAK11300 as WisBlock Core"
+/>
+
+2. Next, install the **RAKwireless TLE7259** library using Arduino Library manager. 
+
+- Select `Sketch` followed by `Include Library` then ` Manage Libraries`.
+
+<rk-img
+  src="/assets/images/wisblock/rak13005/quickstart/rak11300-library.png"
+  width="100%"
+  caption="Open Arduino Library Manager"
+/>
+
+- Search for RAKwireless TLE7259 on Library Manager text box. 
+
+- Select the latest version of the library then click **Install** button. 
+
+<rk-img
+  src="/assets/images/wisblock/rak13005/quickstart/rak11300-tle7259.png"
+  width="100%"
+  caption="Look for RAKwireless TLE7259 LIN Bus Library"
+/>
+
+- After successful installation, close the Arduino Library window.
+
+<rk-img
+  src="/assets/images/wisblock/rak13005/quickstart/rak11300-tle7259-installed.png"
+  width="100%"
+  caption="RAKwireless TLE7259 LIN Bus Library Successfully Installed"
+/>
+
+3. Upload the `RAK13005_linbus_master` **Controller** sketch.
+
+- Connect the first WisBlock with the RAK13005 module in **Controller** mode and select the `RAK13005_linbus_master`.
+
+<rk-img
+  src="/assets/images/wisblock/rak13005/quickstart/rak11300-example-master.png"
+  width="100%"
+  caption="Open the code for the RAK13005 Controller"
+/>
+
+- Select the port where RAK11300 WisBlock Core is connected.
+
+<rk-img
+  src="/assets/images/wisblock/rak13005/quickstart/rak11300-master-port.png"
+  width="100%"
+  caption="Select the Serial Port of RAK4631 for the RAK13005 LIN module in controller mode."
+/>
+
+- Now, upload the `RAK13005_linbus_master` code to the WisBlock Core.
+
+<rk-img
+  src="/assets/images/wisblock/rak13005/quickstart/rak11300-upload-master.png"
+  width="100%"
+  caption="Successful code upload"
+/>
+
+<!--
+<rk-img
+  src="/assets/images/wisblock/rak13005/quickstart/master_success.png"
+  width="100%"
+  caption="Successful code Upload"
+/>
+-->
+
+- After the successful code upload, you can now open the Serial Monitor and see the Serial output.
+
+<rk-img
+  src="/assets/images/wisblock/rak13005/quickstart/rak11300-master-output.png"
+  width="100%"
+  caption="Serial Output of the RAK13005 Controller Mode"
+/>
+
+4. Upload the `RAK13005_linbus_slaver` **Peripheral** sketch.
+
+- Connect the second WisBlock with the RAK13005 in Peripheral mode then select `RAK13005_linbus_slaver`.
+
+<rk-img
+  src="/assets/images/wisblock/rak13005/quickstart/rak11300-example-slave.png"
+  width="100%"
+  caption="Open the code for the RAK13005 Peripheral"
+/>
+
+- Select the port, which is the additional port from the previous port for the controller. You should see two ports in your Arduino IDE.
+
+<rk-img
+  src="/assets/images/wisblock/rak13005/quickstart/slave_port.png"
+  width="100%"
+  caption="Select the Serial Port of RAK11300 for the RAK13005 LIN module in peripheral mode."
+/>
+
+- After ensuring the port matching the RAK13005 LIN Peripheral, you can now upload the `RAK13005_linbus_slaver` code.
+
+<rk-img
+  src="/assets/images/wisblock/rak13005/quickstart/rak11300-slave-upload.png"
+  width="100%"
+  caption="Uploading the RAK13005_linbus_slaver code"
+/>
+
+::: tip 📝 NOTE
+If you experience any error in compiling an example sketch, check the updated code for the RAK13005 WisBlock Core Module that can be found on the [RAK13005 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK13005_LIN_BUS).
+:::
+
+5. Check Serial Monitor output.
+
+- Check the Serial Monitor on the RAK13005 Peripheral device receiving the data coming from the RAK13005 **Controller** device. You must have the external power supply connected to have successful transmissions.
+
+<rk-img
+  src="/assets/images/wisblock/rak13005/quickstart/slave_output.png"
+  width="100%"
+  caption="Serial Output of the RAK13005 Peripheral Mode"
+/>
+
+To extend the use of the RAKwireless TLE7259 LIN Bus library, check the [TLE7259 Library methods](https://github.com/RAKWireless/RAK13005-TLE7259-Library#usage).

@@ -106,7 +106,10 @@ export default {
       console.log(p)
     },
     customNav(path) {
-      this.nav(`${window.location.origin}${path}`)
+      if(path.includes('http://') || path.includes('https://')){
+          console.log(path)
+          this.nav(`${path}`)
+      } else this.nav(`${window.location.origin}${path}`)
     }
   }
 }

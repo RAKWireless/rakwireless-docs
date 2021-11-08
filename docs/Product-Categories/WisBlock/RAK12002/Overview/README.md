@@ -25,7 +25,8 @@ Thank you for choosing **RAK12002 WisBlock RTC module** in your awesome IoT Proj
 
 For All WisBlock Core:
 
-* [Sample Code: WisBlock RTC module](https://github.com/RAKWireless/WisBlock/tree/master/examples)
+* [Sample Code: WisBlock RTC module](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12002_RTC_DateTime_RV-3028-C7)
+
 
 ## Product Description
 

@@ -26,11 +26,8 @@ Thank you for choosing **RAK12004 WisBlock MQ2 Gas Sensor** in your awesome IoT 
 
 **Examples**
 
-
 * [Sample Code: MQ2 read sensor data](https://github.com/RAKWireless/RAK-MQx-Library/tree/main/examples/RAK12004_MQ2_Sampling)
-
 * [Sample Code: MQ2 detect smoke and RAK1801 buzzer alarm](https://github.com/RAKWireless/RAK-MQx-Library/tree/main/examples/RAK12004_MQ2_SmokeDetection)
-
 * [Sample Code: MQ2 read sensor data and display on OLED](https://github.com/RAKWireless/RAK-MQx-Library/tree/main/examples/RAK12004_MQ2_read) 
 
 
@@ -44,14 +41,15 @@ The RAK12004 is a gas sensor module, part of the RAKWireless WisBlock Sensor ser
     * Sensitivity to LPG, butane, propane, methane, alcohol, hydrogen, smoke, and other flammable steam  
     * I2C Interface
     * Alert function
-    * Detection range: 300～10000&nbsp;ppm(flammable gas)
+    * Detection range: 300～10000&nbsp;ppm (flammable gas)
     * 3.3&nbsp;V Power Supply
 * **Module Size**
     * 25 x 35&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK12004**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK12004** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+
+To use a **RAK12004**, you need at least a **WisBlock Base** to plug the module in. The **WisBlock Base** should have a connected battery to provide power supply to the **RAK12004** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 ::: warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.

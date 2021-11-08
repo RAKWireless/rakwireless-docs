@@ -21,13 +21,13 @@ Before going through each and every step on using RAK12004 WisBlock MQ2 module, 
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- Li-Ion/LiPo battery (optional)
-- Solar charger (optional)
+- [Li-Ion/LiPo battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable) (required)
+- [Solar charger](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable) (optional)
 
 #### Software
 
 - Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software).
-- To add the RAKwireless Core boards on your Arduino project, install the RAKwireless Arduino BSP. Follow the steps in the [Github repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+- To add the RAKwireless Core boards on your Arduino project, install the RAKwireless Arduino BSP. Follow the steps in the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
 ## Product Configuration
 
@@ -96,6 +96,7 @@ These are the quick links that go directly to the software guide for the specifi
 
 - [RAK12004 in RAK4631 WisBlock Core Guide](/Product-Categories/WisBlock/RAK12004/Quickstart/#rak12004-in-rak4631-wisblock-core-guide)
 - [RAK12004 in RAK11200 WisBlock Core Guide](/Product-Categories/WisBlock/RAK12004/Quickstart/#rak12004-in-rak11200-wisblock-core-guide)
+- [RAK12004 in RAK11310 WisBlock Core Guide](/Product-Categories/WisBlock/RAK12004/Quickstart/#rak12004-in-rak11310-wisblock-core-guide)
 
 
 #### RAK12004 in RAK4631 WisBlock Core Guide
@@ -118,14 +119,17 @@ Arduino programs are usually referred to as sketches.
 
 2. Install the [RAKwireless MQx Library](https://github.com/RAKWireless/RAK-MQx-Library) using Arduino Library Manager.
 
-On the Arduino IDE, select Sketch-> Include Library -> Manage Libraries, as shown in **Figure 7**. On the **Library Manager** text area, type **RAKwireless MQx**. 
+3. On the Arduino IDE, select **Sketch** -> **Include Library** -> **Manage Libraries**, as shown in **Figure 7**.
+
+4. On the **Library Manager** text area, type **RAKwireless MQx**. 
+
 <rk-img
   src="/assets/images/wisblock/rak12004/quickstart/rak-mqx-lib-manager.png"
   width="100%"
   caption="Arduino Library Manager"
 />
 
-3. To finish the installation, click on the **Install** button, as shown in **Figure 8**.
+5. To finish the installation, click on the **Install** button, as shown in **Figure 8**.
 
 <rk-img
   src="/assets/images/wisblock/rak12004/quickstart/rak-mqx-install.png"
@@ -133,7 +137,9 @@ On the Arduino IDE, select Sketch-> Include Library -> Manage Libraries, as show
   caption="Finish RAK-MQx library Installation"
 />
 
-4. Once the library is installed, open the **RAK12004_MQ2_Sampling** example. On the Arduino IDE, select File-> Examples -> RAKWireless MQx Libraries -> RAK12004_MQ2_Sampling, as shown in **Figure 9**.
+6. Once the library is installed, open the **RAK12004_MQ2_Sampling** example.
+
+7. On the Arduino IDE, select **File** -> **Examples** -> **RAKWireless MQx Libraries** -> **RAK12004_MQ2_Sampling**, as shown in **Figure 9**.
 
 <rk-img
   src="/assets/images/wisblock/rak12004/quickstart/rak-mqx-samp.png"
@@ -141,7 +147,7 @@ On the Arduino IDE, select Sketch-> Include Library -> Manage Libraries, as show
   caption="Open RAK12004 MQ2 Sampling Sketch"
 />
 
-5. You can now select the right serial port and upload the code, as shown in **Figure 10** and  **Figure 11**.
+8. You can now select the right serial port and upload the code, as shown in **Figure 10** and  **Figure 11**.
 
 <rk-img
   src="/assets/images/wisblock/rak12004/quickstart/select_port_rak4631.png"
@@ -160,7 +166,7 @@ To extend the use of the RAK-MQx library, check the link [RAK-MQx Library method
 
 <!-- Add log images 
 
-6. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to check the sensor's reading logs. If you see the logs, as shown in **Figure 14**, then your RAK12004 is properly communicating to the WisBlock core.
+9. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to check the sensor's reading logs. If you see the logs, as shown in **Figure 14**, then your RAK12004 is properly communicating to the WisBlock core.
 
 <rk-img
   src="/assets/images/wisblock/rak1903/quickstart/optical_logs.png"
@@ -193,7 +199,7 @@ Arduino programs are usually referred to as sketches.
 4. On the Arduino IDE, select Sketch-> Include Library -> Manage Libraries, as shown in **Figure 13**. On the **Library Manager** text area, type **RAKwireless MQx**. 
 
 <rk-img
-  src="/assets/images/wisblock/rak12004/quickstart/rak-mqx-lib-manager.png"
+  src="/assets/images/wisblock/rak12004/quickstart/mqx_rak11200.png"
   width="100%"
   caption="Arduino Library Manager"
 />
@@ -201,20 +207,22 @@ Arduino programs are usually referred to as sketches.
 5. To finish the installation, click on the **Install** button as shown in **Figure 14**.
 
 <rk-img
-  src="/assets/images/wisblock/rak12004/quickstart/rak-mqx-install.png"
+  src="/assets/images/wisblock/rak12004/quickstart/mqx_rak11200_install.png"
   width="100%"
   caption="Finish RAK-MQx library Installation"
 />
 
-6. Once the library is installed, open the **RAK12004 MQ2 Sampling** example. On the Arduino IDE, select File-> Examples -> RAKWireless MQx Libraries -> RAK12004_MQ2_Sampling, as shown in **Figure 15**.
+6. Once the library is installed, open the **RAK12004 MQ2 Sampling** example.
+
+7. On the Arduino IDE, select **File** -> **Examples** -> **RAKWireless MQx Libraries** -> **RAK12004_MQ2_Sampling**, as shown in **Figure 15**.
 
 <rk-img
-  src="/assets/images/wisblock/rak12004/quickstart/rak-mqx-samp.png"
+  src="/assets/images/wisblock/rak12004/quickstart/rak11200_mq2_sampling.png"
   width="100%"
   caption="Open RAK12004 MQ2 Sampling Sketch"
 />
 
-7. You can now select the right serial port and upload the code, as shown in **Figure 16** and  **Figure 17**.
+8. You can now select the right serial port and upload the code, as shown in **Figure 16** and  **Figure 17**.
 
 <rk-img
   src="/assets/images/wisblock/rak12004/quickstart/select_port_rak11200.png"
@@ -236,54 +244,188 @@ RAK11200 requires the BOOT0 pin to be configured properly before uploading. If n
 
 To extend the use of the RAK-MQx library, check the link [RAK-MQx Library methods](https://github.com/RAKWireless/RAK-MQx-Library#usage)
 
-#### Build RAK12004 Example on PlatformIO IDE
+#### RAK12004 in RAK11310 WisBlock Core Guide
 
-1. Install the [RAKwireless PlatformIO BSP](https://docs.rakwireless.com/Knowledge-Hub/Learn/Board-Support-Package-Installation-in-PlatformIO/).
+##### Arduino Setup
 
-2. After installing your RAK Core board on PlatformIO, you can import the entire project to PlatformIO.
+Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
-3. Import Arduino Project to PlatformIO.
+1. You need to select RAK11310 WisBlock Core.
 
-4. Open PlatformIO PIO Home and select **Import Arduino Project**, as shown in **Figure 18**.
+<rk-img
+  src="/assets/images/wisblock/rak12004/quickstart/rak11310_board.png"
+  width="100%"
+  caption="Selecting RAK11310 as WisBlock Core"
+/>
+
+##### Initial Test of the RAK12004 WisBlock Module
+
+Arduino programs are usually referred to as sketches.
+
+2. Install the [RAKwireless MQx Library](https://github.com/RAKWireless/RAK-MQx-Library) using Arduino Library Manager.
+
+3. On the Arduino IDE, select **Sketch**-> **Include Library** -> **Manage Libraries**, as shown in **Figure 19**.
+
+4. On the **Library Manager** text area, type **RAKwireless MQx**. 
+
+<rk-img
+  src="/assets/images/wisblock/rak12004/quickstart/mqx_rak11310.png"
+  width="100%"
+  caption="Arduino Library Manager"
+/>
+
+4. To finish the installation, click on the **Install** button, as shown in **Figure 20**.
+
+<rk-img
+  src="/assets/images/wisblock/rak12004/quickstart/mqx_rak11310_install.png"
+  width="100%"
+  caption="Finish RAK-MQx library Installation"
+/>
+
+5. Once the library is installed, open the **RAK12004_MQ2_Sampling** example.
+
+6. On the Arduino IDE, select **File**-> **Examples** -> **RAKWireless MQx Libraries** -> **RAK12004_MQ2_Sampling**, as shown in **Figure 21**.
+
+<rk-img
+  src="/assets/images/wisblock/rak12004/quickstart/rak11310_mq2_sampling.png"
+  width="100%"
+  caption="Open RAK12004 MQ2 Sampling Sketch"
+/>
+
+7. You can now select the right serial port and upload the code, as shown in **Figure 22** and  **Figure 23**.
+
+<rk-img
+  src="/assets/images/wisblock/rak12004/quickstart/select_port_rak11310.png"
+  width="100%"
+  caption="Selecting the correct Serial Port"
+/>
+
+<rk-img
+  src="/assets/images/wisblock/rak12004/quickstart/upload_rak11310.png"
+  width="100%"
+  caption="Uploading the RAK12004 example code on RAK11310"
+/>
+
+To extend the use of the RAK-MQx library, check the [RAK-MQx Library methods](https://github.com/RAKWireless/RAK-MQx-Library#usage).
+
+
+#### Build RAK12004 Example on PlatformIO IDE (optional)
+
+
+:::tip 📝 NOTE:
+This procedure was tested only on Windows 10 and Ubuntu.
+:::
+
+
+1. Install the original PlatformIO platform, as shown in [PlatformIO First Install](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md#first-install) section.
+
+- For WisBlock Core RAK4631, install **Nordic nRF52** platform.
+- For WisBlock Core RAK11200, install **Espressif 32** platform.
+- For WisBlock Core RAK11310, install **Raspberry Pi RP2040** platform.
+
+
+2. Open a project example that uses the new installed platform.
+
+3. Launch **Visual Studio Code** and select **PlatformIO PIO Home**.
+
+4. On **PIO Home**, click on **Project Examples**.
+
+5. Choose **arduino-blink** project, then click on **Import** button.
+
+<rk-img
+  src="/assets/images/wisblock/rak12004/quickstart/rp2040_arduino_blink.png"
+  width="50%"
+  caption="Import arduino-blink project"
+/>
+
+6. Click the **Yes** button on the trust window.
+
+<rk-img
+  src="/assets/images/wisblock/rak12004/quickstart/rp2040_trust.png"
+  width="50%"
+  caption="PlatformIO trust authors"
+/>
+
+7. Build the project and ignore warnings and errors.
+
+8. Download and install the [RAK Patch script](https://raw.githubusercontent.com/RAKWireless/WisBlock/master/PlatformIO/RAK_PATCH.zip).
+
+9. Unzip the contents of RAK_PATCH.zip into the folder RAK_PATCH in your PlatformIO installation folder.
+  
+The table below shows the PlatformIO installation directory for each operating system:
+
+  
+| PlatformIO path on different OS |                                      |
+| :------------------------------ | :----------------------------------- |
+| Windows 10                      | `%UserProfile%\.platformio\`         |
+| Linux                           | `~/.platformio/`                     |
+| MacOS                           | `/Users/{Your_User_id}/.platformio/` |
+
+
+**Figure 26** shows the PlatformIO installation directory on Windows 10.
+
+<rk-img
+  src="/assets/images/wisblock/rak12004/quickstart/rak_patch_folder.png"
+  width="70%"
+  caption="RAK patch folder on Windows"
+/>
+
+10.  Open a command prompt in **`%UserProfile%.platformio\RAK_PATCH`** folder and execute python **`./rak_patch.py`**.
+
+<rk-img
+  src="/assets/images/wisblock/rak12004/quickstart/rak_patch_installed.png"
+  width="70%"
+  caption="RAK patch installed on Windows"
+/>
+
+:::warning ⚠️ WARNING    
+In case of any platform update on PlatformIO, the **RAK_PATH** script must be executed again after the platform update.
+:::
+
+11. Import the RAK12004 Arduino Project to PlatformIO.
+
+12. Open **PlatformIO PIO Home** and select **Import Arduino Project**, as shown in **Figure 28**.
 
 <rk-img
   src="/assets/images/wisblock/rak12004/quickstart/pio-home-import.png"
-  width="90%"
+  width="100%"
   caption="Import RAK12004 Arduino Project"
 />
 
-5. Select the **WisBlock Core Board** and check "**Use Libraries installed by the Arduino IDE**", option as shown in **Figure 19**. Then choose the directory of the original Arduino Project.
+13. Select your preferred **WisBlock Core** and check "**Use Libraries installed by the Arduino IDE**" option, as shown in **Figure 29**. 
+
+14. Then choose the directory of the original RAK12004 Arduino Project.
 
 <rk-img
   src="/assets/images/wisblock/rak12004/quickstart/import-project.png"
-  width="90%"
+  width="100%"
   caption="Select Board and check Import Libraries"
 />
 
-6. To finish the import, click on **Import** button, as shown in **Figure 20**.
+15. To finish the import, click on the **Import** button, as shown in **Figure 30**.
 
 <rk-img
   src="/assets/images/wisblock/rak12004/quickstart/finish-import.png"
-  width="90%"
+  width="100%"
   caption="Select Board and check Import libraries"
 />
 
-7. Build the imported project on the PlatformIO.
+16. Build the imported project on the PlatformIO.
 
-Now, you can build the project by clicking on highlighted icon as shown in **Figure 21**.
+Now, you can build the project by clicking on the highlighted icon, as shown in **Figure 31**.
 
 <rk-img
   src="/assets/images/wisblock/rak12004/quickstart/build-project.png"
-  width="90%"
+  width="100%"
   caption="Build Arduino imported project"
 />
 
-8. Upload the imported project on the PlatformIO.
+17. Upload the imported project on the PlatformIO.
 
-9. To upload the project on the target board, click on the highlighted icon as shown in Figure **22**.
+18. To upload the project on the target board, click on the highlighted icon, as shown in **Figure 32**.
 
 <rk-img
   src="/assets/images/wisblock/rak12004/quickstart/upload-pio-project.png"
-  width="90%"
+  width="100%"
   caption="Upload Arduino imported project"
 />

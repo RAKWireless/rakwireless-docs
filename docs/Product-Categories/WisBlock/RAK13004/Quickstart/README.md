@@ -120,6 +120,7 @@ These are the quick links that go directly to the software guide for the specifi
 
 - [RAK13004 in RAK4631 WisBlock Core Guide](/Product-Categories/WisBlock/RAK13004/Quickstart/#rak13004-in-rak4631-wisblock-core-guide)
 - [RAK13004 in RAK11200 WisBlock Core Guide](/Product-Categories/WisBlock/RAK13004/Quickstart/#rak13004-in-rak11200-wisblock-core-guide)
+- [RAK13004 in RAK11300 WisBlock Core Guide](/Product-Categories/WisBlock/RAK13004/Quickstart/#rak13004-in-rak11300-wisblock-core-guide)
 
 #### RAK13004 in RAK4631 WisBlock Core Guide
 
@@ -128,7 +129,7 @@ These are the quick links that go directly to the software guide for the specifi
 Shown in Figure 6 is the illustration on how to use the RAK13004 PWM Expansion Module to produce PWM Output. In this example, you can use LEDs for demonstration.
 
 <rk-img
-  src="/assets/images/wisblock/rak13004/quickstart/ledconnection.png"
+  src="/assets/images/wisblock/rak13004/quickstart/led_connection00.png"
   width="50%"
   caption="RAK13004 Sending PWM Output to LEDs"
 />
@@ -213,13 +214,14 @@ void loop()
 
 ```
 ::: tip 📝 NOTE
-The basic example code for the RAK4631 WisBlock Core Module can be found on the [RAK13004 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK13004_PWM_Expander_PCA9685).
+If you experience any error in compiling the example sketch, check the updated code for the RAK4631 WisBlock Core Module that can be found on the [RAK13004 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK13004_PWM_Expander_PCA9685).
 :::
 
 3. Install the required library, as shown in **Figure 8**.
 
 <rk-img
-  src="/assets/images/wisblock/rak13004/quickstart/addinglibrary.png"
+
+  src="/assets/images/wisblock/rak13004/quickstart/adding_library00.png"
   width="100%"
   caption="Installing the Library"
 />
@@ -228,13 +230,15 @@ The basic example code for the RAK4631 WisBlock Core Module can be found on the 
 4. Select the correct port and upload your code, as shown in **Figure 9** and **Figure 10**.
 
 <rk-img
-  src="/assets/images/wisblock/rak13004/quickstart/selectingport.png"
+
+  src="/assets/images/wisblock/rak13004/quickstart/selecting_port00.png"
   width="100%"
   caption="Selecting the correct Serial Port"
 />
 
 <rk-img
-  src="/assets/images/wisblock/rak13004/quickstart/uploading_code.png"
+
+  src="/assets/images/wisblock/rak13004/quickstart/upload00.png"
   width="100%"
   caption="Uploading code"
 />
@@ -335,7 +339,7 @@ void loop()
 
 ```
 ::: tip 📝 NOTE
-The basic example code for the RAK11200 WisBlock Core Module can be found on the [RAK13004 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK13004_PWM_Expander_PCA9685)
+If you experience any error in compiling the example sketch, check the updated code for the RAK11200 WisBlock Core Module that can be found on the [RAK13004 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK13004_PWM_Expander_PCA9685).
 :::
 
 3. Install the required library, as shown in **Figure 13**.
@@ -369,3 +373,114 @@ RAK11200 requires the BOOT0 pin to be configured properly before uploading. If n
 
 
 
+#### RAK13004 in RAK11300 WisBlock Core Guide
+
+##### Arduino Setup
+
+1. First, you need to select the RAK11300 WisBlock Core, as shown in **Figure 16**.
+
+<rk-img
+  src="/assets/images/wisblock/rak13004/quickstart/rak11300_board.png"
+  width="100%"
+  caption="Selecting RAK11300 as WisBlock Core"
+/>
+
+2. Next, copy the following sample code into your Arduino IDE:
+
+```c
+/**
+   @file RAK13004_PWM_Expander_PCA9685.ino
+   @author rakwireless.com
+   @brief Use IIC to expand 16 PWM. 
+          Control PCA9685 channels 0~15 to output PWM with different duty cycles and time delays. 
+          The frequency can be adjusted supports 24HZ to 1526HZ.
+   @version 0.1
+   @date 2021-3-2
+   @copyright Copyright (c) 2021
+**/
+
+#include <Arduino.h>
+#include <PCA9685.h>  //Click the link to get the library: http://librarymanager/All#PCA9685
+
+PCA9685 PCA9685;
+
+void setup()
+{
+  pinMode(WB_IO2, OUTPUT);
+  digitalWrite(WB_IO2, 1);
+  
+  PCA9685.setupSingleDevice(Wire,0x40);// Library using 0x40(0100 0000) i2c address, and default Wire @400kHz.
+
+  PCA9685.setupOutputEnablePin(WB_IO6);// WB_IO6 active LOW output enable.
+  PCA9685.enableOutputs(WB_IO6);
+
+  PCA9685.setOutputsNotInverted();
+
+  PCA9685.setToFrequency(500); // Set PWM freq to 500Hz (supports 24Hz to 1526Hz)
+  
+  // Set the PWM output of channel 0 .
+  // PWM duty cycle = 50 % (LED on time = 50 %; LED off time = 50 %).
+  // Delay time = 0 % .
+  PCA9685.setChannelDutyCycle(0,  50, 0); 
+  PCA9685.setChannelDutyCycle(1,  50, 25);
+  PCA9685.setChannelDutyCycle(2,  50, 50);
+  PCA9685.setChannelDutyCycle(3,  10, 10);
+  PCA9685.setChannelDutyCycle(4,  20, 20);
+  PCA9685.setChannelDutyCycle(5,  30, 30);
+  PCA9685.setChannelDutyCycle(6,  40, 40);
+  PCA9685.setChannelDutyCycle(7,  50, 50);
+  PCA9685.setChannelDutyCycle(8,  60, 60);
+  PCA9685.setChannelDutyCycle(9,  70, 70);
+  PCA9685.setChannelDutyCycle(10, 80, 80);
+  PCA9685.setChannelDutyCycle(11, 90, 90);
+  PCA9685.setChannelDutyCycle(12, 100, 0);              
+}
+
+void loop()
+{
+  // Use channels 13, 14, 15 to make a simple breathing light example.
+  for(uint8_t i=0 ;i < 100; i+=1)
+  {
+    PCA9685.setChannelDutyCycle(13, i,0);
+    PCA9685.setChannelDutyCycle(14, 100-i,0);
+    PCA9685.setChannelDutyCycle(15, i,0);
+    delay(20);
+  }
+  for(uint8_t i=100 ;i >0; i-=1)
+  {
+    PCA9685.setChannelDutyCycle(13, i,0);
+    PCA9685.setChannelDutyCycle(14, 100-i,0);
+    PCA9685.setChannelDutyCycle(15, i,0);
+    delay(20);
+  }
+}
+
+```
+::: tip 📝 NOTE
+If you experience any error in compiling the example sketch, check the updated code for the RAK11300 WisBlock Core Module that can be found on the [RAK13004 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK13004_PWM_Expander_PCA9685).
+:::
+
+3. Install the required library, as shown in **Figure 17**.
+
+<rk-img
+  src="/assets/images/wisblock/rak13004/quickstart/adding_library11300.png"
+  width="100%"
+  caption="Installing the Library"
+/>
+
+
+4. Select the correct port and upload your code, as shown in **Figure 18** and **Figure 19**.
+
+<rk-img
+  src="/assets/images/wisblock/rak13004/quickstart/selecting_port11300.png"
+  width="100%"
+  caption="Selecting the correct Serial Port"
+/>
+
+<rk-img
+  src="/assets/images/wisblock/rak13004/quickstart/upload11300.png"
+  width="100%"
+  caption="Uploading the code"
+/>
+
+6. When you successfully uploaded the example sketch, you can see that the LEDs are fading in and out.

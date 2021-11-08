@@ -178,10 +178,10 @@ The I2C interface only supports 3.3&nbsp;V type of sensors. The reversed I2C int
 ##### Absolute Maximum Ratings
 
 Table below shows the absolute maximum ratings of the RAK1920 module.
-| **Symbol** | **Description** | **Min.** | **Nom.** | **Max.** | **Unit** | 
-| ---- | ---- | ---- | ---- | ---- | ---- | 
-| VBAT | Power supply for the module | -0.5 |  | 4.2 | V | 
-| Iout | Boost converter output current |  |  | 800 | mA | 
+| **Symbol** | **Description**                | **Min.** | **Nom.** | **Max.** | **Unit** |
+| ---------- | ------------------------------ | -------- | -------- | -------- | -------- |
+| VBAT       | Power supply for the module    | -0.5     |          | 4.2      | V        |
+| Iout       | Boost converter output current |          |          | 50      | mA       |
 
 
 ##### Recommended Operating Conditions

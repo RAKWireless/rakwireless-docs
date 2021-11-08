@@ -47,7 +47,7 @@ The RAK1920 module is a sensor extension module, it supports several defacto-sta
     * 1 Click Board compatible slot     
     * 1 Grove connector compatible with I2C and digital IO boards    
     * 1 Grove connector compatible with UART and analog IO boards     
-    * Support for 5&nbsp;V Grove sensors    
+    * Support for 5&nbsp;V Grove sensors up to 50&nbsp;mA  
     * 1 QWICC compatible connector    
 
 * **Size**    

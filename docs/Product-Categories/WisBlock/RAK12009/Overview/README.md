@@ -2,8 +2,8 @@
 rak_img: /assets/images/wisblock/rak12009/overview/RAK12009_buy.png
 rak_desc: RAK12009 is a WisBlock Sensor Module that extends the WisBlock system with an Alcohol Gas sensor. It enables the user to build an Alcohol detection system that can send measured data and alarm messages over LoRaWAN.
 rak_grp: [wisblock, wissensor]
+next: ../Quickstart/
 prev: ../../
-next: ../Datasheet/
 tags:
     - wisblock
     - RAK12009
@@ -14,8 +14,9 @@ tags:
 
 Thank you for choosing **RAK12009 WisBlock MQ3 Alcohol Gas Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+
+* [RAK12009 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
-* <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK12009 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK12009.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
