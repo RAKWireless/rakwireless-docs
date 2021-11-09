@@ -13,7 +13,7 @@ tags:
 
 # RAK1904 WisBlock 3-axis Acceleration Sensor
 
-Thank you for choosing **RAK1904 WisBlock 3-axis Acceleration Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK1904 WisBlock 3-axis Acceleration Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [RAK1904 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

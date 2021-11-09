@@ -38,6 +38,10 @@ The RAK1904 module can be mounted on the slots: A, B, C, or D of the WisBase boa
 />
 
 ### Hardware
+
+The hardware specification is categorized into six parts. It shows the chipset of the module and discusses the pinouts, sensors, and the corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK1904 WisBlock 3-axis Acceleration Sensor.
+
+
 #### Chipset
 | Vendor | Part number |
 | ------ | ----------- |

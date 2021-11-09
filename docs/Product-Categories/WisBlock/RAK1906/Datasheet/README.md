@@ -179,7 +179,7 @@ Only the I2C related pin, VDD, and GND are connected to this module.
   <tr>
     <td>Supply Current </td>
     <td>I<sub>DD,H</sub></td>
-    <td>1 Hz Forced Mode, <br>Temperature and Humidity Measurement</td>
+    <td>1&nbsp;Hz Forced Mode, <br>Temperature and Humidity Measurement</td>
     <td></td>
     <td>2.1</td>
     <td>2.8</td>
@@ -239,7 +239,7 @@ Only the I2C related pin, VDD, and GND are connected to this module.
   <tr>
     <td>Supply Current</td>
     <td>I<sub>DD,LP</sub></td>
-    <td>1 Hz Forced Mode, Pressure<br>and Temperature, Lowest Power</td>
+    <td>1&nbsp;Hz Forced Mode, Pressure, and Temperature, Lowest Power</td>
     <td></td>
     <td>3.1</td>
     <td>4.2</td>

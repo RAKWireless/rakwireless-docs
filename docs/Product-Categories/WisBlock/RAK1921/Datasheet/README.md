@@ -74,12 +74,12 @@ Be careful in selecting the baseboard, and make sure to choose RAK5005-O because
 />
 
 
-| **Name** | **Description**          |
-| -------- | ------------------------ |
-| VCC      | Power Supply (2.4 –3.5V) |
-| GND      | Grounding                |
-| SCL      | I2C Clock Signal         |
-| SDA      | I2C Data Signal          |
+| **Name** | **Description**                |
+| -------- | ------------------------------ |
+| VCC      | Power Supply (2.4 –3.5&nbsp;V) |
+| GND      | Grounding                      |
+| SCL      | I2C Clock Signal               |
+| SDA      | I2C Data Signal                |
 
 
 #### Electrical Characteristics

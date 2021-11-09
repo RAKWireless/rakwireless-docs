@@ -51,12 +51,11 @@ In addition, the RAK5802 supports one I2C interface, customers can use this I2C 
 
 ### Hardware
 
-The hardware specification is categorized into four parts. It discusses the pinouts of the module and its corresponding functions and diagrams. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK5802 WisBlock™ Module.
+The hardware specification is categorized into four parts. It discusses the pinouts of the module and its corresponding functions and diagrams. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK5802 WisBlock Module.
 
 
 #### Pin Definition
 
-##### RAK5802 Module 
 
 **Figure 2** shows the pin number of the sensor connector of the RAK5802 module.
 
@@ -68,16 +67,16 @@ The hardware specification is categorized into four parts. It discusses the pino
 
 The pin definition of the sensor connector is described in the table below:
 
-| **Pin number** | **Function Description** | 
-| ---- | ---- | 
-| 1 | RS485-B | 
-| 2 | RS485-A | 
-| 3 | GND | 
-| 4 | Power supply from battery on mainboard | 
-| 5 | Analog 1 to MCU | 
-| 6 | 3V3 input | 
-| 7 | SDA for I2C interface | 
-| 8 | SCL for I2C interface | 
+| **Pin number** | **Function Description**               |
+| -------------- | -------------------------------------- |
+| 1              | RS485-B                                |
+| 2              | RS485-A                                |
+| 3              | GND                                    |
+| 4              | Power supply from battery on mainboard |
+| 5              | Analog 1 to MCU                        |
+| 6              | 3V3 input                              |
+| 7              | SDA for I2C interface                  |
+| 8              | SCL for I2C interface                  |
 
 
 #####  WisBlock Interface Connector
@@ -92,47 +91,47 @@ The pin definition of the sensor connector is described in the table below:
 
 The table below shows the functionalities of each pin of the WisBlock Interface connector: 
 
-| **Pin number** | **Description** | **Pin number** | **Description** | 
-| ---- | ---- | ---- | ---- | 
-| 1 | Battery power | 2 | Battery power | 
-| 3 | GND | 4 | GND | 
-| 5 | NC, reserved for 3V3 | 6 | 3.3V power | 
-| 7 | NC | 8 | NC | 
-| 9 | NC | 10 | NC | 
-| 11 | NC | 12 | NC | 
-| 13 | NC | 14 | NC | 
-| 15 | NC | 16 | NC | 
-| 17 | NC | 18 | NC | 
-| 19 | SDA for I2C1 | 20 | SCL for I2C1 | 
-| 21 | Analog1 to MCU | 22 | NC | 
-| 23 | NC | 24 | NC | 
-| 25 | NC | 26 | NC | 
-| 27 | NC | 28 | NC | 
-| 29 | Reserved for DE | 30 | NC | 
-| 31 | NC | 32 | NC | 
-| 33 | UART_TX | 34 | UART_RX | 
-| 35 | NC | 36 | NC | 
-| 37 | NC | 38 | NC | 
-| 39 | GND | 40 | GND | 
+| **Pin number** | **Description**      | **Pin number** | **Description**  |
+| -------------- | -------------------- | -------------- | ---------------- |
+| 1              | Battery power        | 2              | Battery power    |
+| 3              | GND                  | 4              | GND              |
+| 5              | NC, reserved for 3V3 | 6              | 3.3&nbsp;V power |
+| 7              | NC                   | 8              | NC               |
+| 9              | NC                   | 10             | NC               |
+| 11             | NC                   | 12             | NC               |
+| 13             | NC                   | 14             | NC               |
+| 15             | NC                   | 16             | NC               |
+| 17             | NC                   | 18             | NC               |
+| 19             | SDA for I2C1         | 20             | SCL for I2C1     |
+| 21             | Analog1 to MCU       | 22             | NC               |
+| 23             | NC                   | 24             | NC               |
+| 25             | NC                   | 26             | NC               |
+| 27             | NC                   | 28             | NC               |
+| 29             | Reserved for DE      | 30             | NC               |
+| 31             | NC                   | 32             | NC               |
+| 33             | UART_TX              | 34             | UART_RX          |
+| 35             | NC                   | 36             | NC               |
+| 37             | NC                   | 38             | NC               |
+| 39             | GND                  | 40             | GND              |
 
 #### Electrical Characteristics
 
 ##### Absolute Maximum Ratings
 
-| **Symbol** | **Description** | **Min.** | **Nom.** | **Max.** | **Unit** | 
-| ---- | ---- | ---- | ---- | ---- | ---- | 
-| VBAT | Power supply for the module | -0.5 |  | 4.2 | V | 
-| Iout | Step down IC output current |  |  | 1000 | mA | 
-| TEMP | Working temperature | -30 |  | 65 | °C | 
-| Storage | Storage Temperature | -40 |  | 85 | °C | 
+| **Symbol** | **Description**             | **Min.** | **Nom.** | **Max.** | **Unit** |
+| ---------- | --------------------------- | -------- | -------- | -------- | -------- |
+| VBAT       | Power supply for the module | -0.5     |          | 4.2      | V        |
+| Iout       | Step down IC output current |          |          | 1000     | mA       |
+| TEMP       | Working temperature         | -30      |          | 65       | °C       |
+| Storage    | Storage Temperature         | -40      |          | 85       | °C       |
 
 
 ##### Recommended Operating Conditions
 
-| **Symbol** | **Description** | **Min.** | **Nom.** | **Max.** | **Unit** | 
-| ---- | ---- | ---- | ---- | ---- | ---- | 
-| VBAT | Power supply for the<br>module | 2.6 |  | 4.2 | V | 
-| 3V3 | 3.3V power supply | 3.0 | 3.3 | 3.6 | V | 
+| **Symbol** | **Description**             | **Min.** | **Nom.** | **Max.** | **Unit** |
+| ---------- | --------------------------- | -------- | -------- | -------- | -------- |
+| VBAT       | Power supply for the module | 2.6      |          | 4.2      | V        |
+| 3V3        | 3.3&nbsp;V power supply     | 3.0      | 3.3      | 3.6      | V        |
 
 #### Mechanical Characteristics
 

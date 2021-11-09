@@ -68,25 +68,25 @@ Only the I2C related pins, VDD, and GND are connected to this module.
 
 #### Sensors
 ##### Pressure Sensor   
-| Symbol | Parameter | Test Condition | Min. | Typ. | Max. | Unit |
-| --     | --        | --             | :-:  | :-:  | :-:  | :-:  |
-| P<sub>Top</sub> | Operating Temperature Range |  | -40 |  | +85 | °C |
-| PT<sub>full</sub> | Full Accuracy Temperature Range |  | 0 |  | +65 | °C |
-| P<sub>op</sub> | Operating Pressure Range |  | 260 |  | 1260 | hPa |
-| P<sub>bits</sub> | Pressure Output Data |  |  | 24 |  | bits |
-| P<sub>sens</sub> | Pressure Sensitivity |  |  | 4096 |  | LSB/hPa |
-| P<sub>AccRel</sub> | Relative Accuracy over Pressure | P = 800 – 1100&nbsp;hPa <br /> T = 25&nbsp;°C |  | ±0.1 |  | hPa |
-| P<sub>AccT</sub> | Absolute Accuracy over Temperature | P<sub>op</sub> = 0 to 65&nbsp;°C <br /> after OPC  <br /> P<sub>op</sub> = 0 to 65&nbsp;°C <br /> no OPC |  | ±0.1 <br />  <br />  ±1 |  | hPa |
-| P<sub>noise</sub> | RMS Pressure Sensing Noise | with embedded filtering |  | 0.0075 |  | hPa <br /> RMS |
-| ODR<sub>Pres</sub> | Pressure Output Data Rate |  |  | 1/10/25/50/75 |  | Hz |
+| Symbol             | Parameter                          | Test Condition                                                                                           | Min.  |          Typ.           | Max.  |      Unit      |
+| ------------------ | ---------------------------------- | -------------------------------------------------------------------------------------------------------- | :---: | :---------------------: | :---: | :------------: |
+| P<sub>Top</sub>    | Operating Temperature Range        |                                                                                                          |  -40  |                         |  +85  |       °C       |
+| PT<sub>full</sub>  | Full Accuracy Temperature Range    |                                                                                                          |   0   |                         |  +65  |       °C       |
+| P<sub>op</sub>     | Operating Pressure Range           |                                                                                                          |  260  |                         | 1260  |      hPa       |
+| P<sub>bits</sub>   | Pressure Output Data               |                                                                                                          |       |           24            |       |      bits      |
+| P<sub>sens</sub>   | Pressure Sensitivity               |                                                                                                          |       |          4096           |       |    LSB/hPa     |
+| P<sub>AccRel</sub> | Relative Accuracy over Pressure    | P = 800 – 1100&nbsp;hPa <br /> T = 25&nbsp;°C                                                            |       |          ±0.1           |       |      hPa       |
+| P<sub>AccT</sub>   | Absolute Accuracy over Temperature | P<sub>op</sub> = 0 to 65&nbsp;°C <br /> after OPC  <br /> P<sub>op</sub> = 0 to 65&nbsp;°C <br /> no OPC |       | ±0.1 <br />  <br />  ±1 |       |      hPa       |
+| P<sub>noise</sub>  | RMS Pressure Sensing Noise         | with embedded filtering                                                                                  |       |         0.0075          |       | hPa <br /> RMS |
+| ODR<sub>Pres</sub> | Pressure Output Data Rate          |                                                                                                          |       |      1/10/25/50/75      |       |       Hz       |
 
 ##### Temperature Sensor   
-| Symbol | Parameter | Test Condition | Min. | Typ. | Max. | Unit |
-| --     | --        | --             | :-:  | :-:  | :-:  | :-:  |
-| T<sub>op</sub> | Operating Temperature Range |  | -40 |  | +85 | °C |
-| T<sub>sens</sub> | Temperature Sensitivity |  |  | 100 |  | LSB/°C |
-| T<sub>acc</sub> | Temperature Absolute Accuracy | T = 0 to 65 °C |  | ±1.5 |  | °C |
-| ODR<sub>T</sub> | Output Temperature Data Rate |  |  | 1 <br /> 10 <br /> 25 <br /> 50 <br /> 75 |  | Hz |
+| Symbol           | Parameter                     | Test Condition      | Min.  |                   Typ.                    | Max.  |  Unit  |
+| ---------------- | ----------------------------- | ------------------- | :---: | :---------------------------------------: | :---: | :----: |
+| T<sub>op</sub>   | Operating Temperature Range   |                     |  -40  |                                           |  +85  |   °C   |
+| T<sub>sens</sub> | Temperature Sensitivity       |                     |       |                    100                    |       | LSB/°C |
+| T<sub>acc</sub>  | Temperature Absolute Accuracy | T = 0 to 65&nbsp;°C |       |                   ±1.5                    |       |   °C   |
+| ODR<sub>T</sub>  | Output Temperature Data Rate  |                     |       | 1 <br /> 10 <br /> 25 <br /> 50 <br /> 75 |       |   Hz   |
 
 #### Electrical Characteristics
 
