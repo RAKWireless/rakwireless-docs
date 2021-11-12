@@ -24,7 +24,7 @@ The information obtained from the infrared temperature sensor will then be print
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK12003 WisBlock module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK12003 WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware
 
@@ -38,7 +38,7 @@ Before going through each and every step on using RAK12003 WisBlock module, make
 #### Software
 
 - Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software).
-- To add the RAKwireless Core boards on your Arduino board, install the RAKwireless Arduino BSP. Follow the steps in the [Github repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+- To add the RAKwireless Core boards on your Arduino board, install the RAKwireless Arduino BSP. Follow the steps in the [GitHub repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
 ## Product Configuration
 
@@ -53,7 +53,7 @@ The RAK12003 module gives us information about:
 - Object temperatures between -20&nbsp;°C and 100&nbsp;°C
 - Accuracy ±0.2&nbsp;°C within the narrow object temperature range from 35&nbsp;°C to 42&nbsp;°C (medical applications)
 
-RAK12003 module can be connected on any slot of WisBlock Base to communicate with the WisBlock Core. It will work on **SLOT A to D**. Also, always secure the connection of the WisBlock module by using the compatible screws.
+RAK12003 module can be connected to any slot of WisBlock Base to communicate with the WisBlock Core. It will work on **SLOT A to D**. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12003/quickstart/rak12003_assembly.png"
@@ -102,7 +102,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12003 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12003 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
 :::
 
 
@@ -116,7 +116,7 @@ The RAK12003 WisBlock Infrared Temperature Sensor is part of the RAKwireless Wis
 
 If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 6** and **Figure 7**.
+1. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 
 <rk-img
   src="/assets/images/wisblock/rak12003/quickstart/rak4631_board.png"
@@ -130,7 +130,13 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK11200 as WisBlock Core"
 />
 
-2. The [Basic Sample Code for RAK12003](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12003_FIR_MLX90632) in Github will work on all WisBlock Core. You can open the the example codes depending on your WisBlock Core, as shown in **Figure 8** and **Figure 9**. 
+<rk-img
+  src="/assets/images/wisblock/rak12003/quickstart/rak11300_board.png"
+  width="100%"
+  caption="Selecting RAK11300 as WisBlock Core"
+/>
+
+2. The [Basic Sample Code for RAK12003](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12003_FIR_MLX90632) in Github will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 9** to **Figure 11**. 
 
 **Sample code for RAK4631**
 
@@ -148,7 +154,15 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Opening RAK12003 example code for RAK11200 WisBlock Core"
 />
 
-3. Once the example code is open, install the [SparkFun MLX90632](https://github.com/sparkfun/SparkFun_MLX90632_Arduino_Library) library by clicking the yellow highlighted link, as shown in **Figure 10** and **Figure 11**.
+**Sample code for RAK11300**
+
+<rk-img
+  src="/assets/images/wisblock/rak12003/quickstart/rak11300_example.png"
+  width="100%"
+  caption="Opening RAK12003 example code for RAK11300 WisBlock Core"
+/>
+
+3. Once the example code is open, install the [SparkFun MLX90632](https://github.com/sparkfun/SparkFun_MLX90632_Arduino_Library) library by clicking the yellow highlighted link, as shown in **Figure 12** and **Figure 13**.
 
 <rk-img
   src="/assets/images/wisblock/rak12003/quickstart/sparkfun_done.png"
@@ -162,7 +176,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Installing the compatible library for RAK12003 Module"
 />
 
-4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 12** and **Figure 13**.
+4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 14** and **Figure 15**.
 
 <rk-img
   src="/assets/images/wisblock/rak12003/quickstart/select_port.png"
@@ -176,7 +190,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Uploading the RAK12003 example code"
 />
 
-5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 14**, then your RAK12003 is properly communicating to the WisBlock core.
+5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 16**, then your RAK12003 is properly communicating to the WisBlock core.
 
 <rk-img
   src="/assets/images/wisblock/rak12003/quickstart/rak12003_logs.png"

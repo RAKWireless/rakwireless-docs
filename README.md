@@ -1,4 +1,4 @@
-![RAK-only-gray](https://github.com/RAKWireless/rakwireless-docs-internal/blob/drafts1/docs/.vuepress/public/assets/rakwireless/RAK-only-gray.png)
+![RAK-only-gray](https://github.com/RAKWireless/rakwireless-docs-internal/blob/drafts/docs/.vuepress/public/assets/rakwireless/RAK-only-gray.png)
 
 
 # RAKwireless 

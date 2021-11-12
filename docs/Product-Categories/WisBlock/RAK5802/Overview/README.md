@@ -35,6 +35,9 @@ For WisBlock Core RAK4630:
 For WisBlock Core RAK11200:
 * [Sample Code: RAK5802 RS485](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/IO/RAK5802_RS485)
 
+For WisBlock Core RAK11300:
+* [Sample Code: RAK5802 RS485](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/IO/RAK5802_RS485)
+
 
 ## Product Description
 

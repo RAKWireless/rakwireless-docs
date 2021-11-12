@@ -24,7 +24,7 @@ The information obtained from the 3-axis Acceleration Sensor will then be printe
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK1904 WisBlock module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK1904 WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware
 
@@ -54,7 +54,7 @@ The RAK1904 module gives us information about:
 - Free-fall detection
 - Motion detection
 
-RAK1904 module can be connected on any slot of WisBlock Base to communicate with the WisBlock Core. It will work on **SLOT A to D**. Also, always secure the connection of the WisBlock module by using the compatible screws.
+RAK1904 module can be connected to any slot of WisBlock Base to communicate with the WisBlock Core. It will work on **SLOT A to D**. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak1904/quickstart/rak1904_assembly.png"
@@ -103,7 +103,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1904 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1904 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
 :::
 
 
@@ -111,13 +111,13 @@ After all this setup, you can now connect the battery and USB cable to start pro
 
 ### Software Configuration and Example
 
-The RAK1904 is a acceleration sensor board that contains LIS3DH chip. The LIS3DH  is an ultra-low-power high-performance three-axis linear accelerometer belonging to the “nano” family, with digital I2C/SPI serial interface standard output. 
+The RAK1904 is an acceleration sensor board that contains a LIS3DH chip. The LIS3DH  is an ultra-low-power high-performance three-axis linear accelerometer belonging to the “nano” family, with digital I2C/SPI serial interface standard output. 
 
 #### Initial Test of the RAK1904 WisBlock Module
 
 If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 6** and **Figure 7**.
+1. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 
 <rk-img
   src="/assets/images/wisblock/rak1904/quickstart/rak4631_board.png"
@@ -131,7 +131,13 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK11200 as WisBlock Core"
 />
 
-2. The [Basic Sample Code for RAK1904](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1904_Accelerate_LIS3DH) in Github will work on all WisBlock Core. You can open the the example codes depending on your WisBlock Core, as shown in **Figure 8** and **Figure 9**. 
+<rk-img
+  src="/assets/images/wisblock/rak1904/quickstart/rak11300_board.png"
+  width="100%"
+  caption="Selecting RAK11300 as WisBlock Core"
+/>
+
+2. The [Basic Sample Code for RAK1904](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1904_Accelerate_LIS3DH) in Github will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 9** to **Figure 11**. 
 
 <rk-img
   src="/assets/images/wisblock/rak1904/quickstart/rak4631_example.png"
@@ -145,13 +151,13 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Opening RAK1904 example code for RAK11200 WisBlock Core"
 />
 
-3. Once the example code is open, install the [SparkFun LIS3DH](https://github.com/sparkfun/SparkFun_LIS3DH_Arduino_Library) library by clicking the yellow highlighted link, as shown in **Figure 10** and **Figure 11**.
-
 <rk-img
-  src="/assets/images/wisblock/rak1904/quickstart/sparkfun_library.png"
+  src="/assets/images/wisblock/rak1904/quickstart/rak11300_example.png"
   width="100%"
-  caption="Accessing the library used for RAK1904 Module"
+  caption="Opening RAK1904 example code for RAK11300 WisBlock Core"
 />
+
+3. Once the example code is open, install the [SparkFun LIS3DH](https://github.com/sparkfun/SparkFun_LIS3DH_Arduino_Library) library by clicking the yellow-highlighted link, as shown in **Figure 12** and **Figure 13**.
 
 <rk-img
   src="/assets/images/wisblock/rak1904/quickstart/sparkfun_installed.png"
@@ -159,7 +165,15 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Installing the compatible library for RAK1904 Module"
 />
 
-4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 12** and **Figure 13**.
+<rk-img
+  src="/assets/images/wisblock/rak1904/quickstart/sparkfun_library.png"
+  width="100%"
+  caption="Accessing the library used for RAK1904 Module"
+/>
+
+
+
+4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 14** and **Figure 15**.
 
 <rk-img
   src="/assets/images/wisblock/rak1904/quickstart/select_port.png"
@@ -173,7 +187,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Uploading the RAK1904 example code"
 />
 
-5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 14**, then your RAK1904 is properly communicating to the WisBlock core.
+5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 16**, then your RAK1904 is properly communicating to the WisBlock core.
 
 <rk-img
   src="/assets/images/wisblock/rak1904/quickstart/acceleration_logs.png"

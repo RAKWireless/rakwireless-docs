@@ -64,7 +64,7 @@ The RAK16000 WisBlock DC Current Module comprises a standard 40-pin WisIO connec
 
 
 <rk-img
-  src="/assets/images/wisblock/rak16000/datasheet/rak16000_pinout.svg"
+  src="/assets/images/wisblock/rak16000/datasheet/RAK16000_Pinout.svg"
   width="80%"
   caption="RAK16000 WisBlock DC Current Module Pinout"
 />

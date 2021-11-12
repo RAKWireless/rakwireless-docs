@@ -21,7 +21,7 @@ This guide introduces the WisBlock RAK14001 board and how to use it.
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK14001 WisBlock module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK14001 WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware 
 
@@ -29,8 +29,8 @@ Before going through each and every step on using RAK14001 WisBlock module, make
 - [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
-- [Solar charger (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
 
 #### Software 
 
@@ -51,7 +51,7 @@ For more information about RAK14001, refer to the [Datasheet](../Datasheet/).
 
 ##### Assembling Procedure
 
-The RAK14001 module can be mounted on the IO slot of the WisBlock Base board, as shown in **Figure 1**. Also, always secure the connection of the WisBlock module by using the compatible screws.
+The RAK14001 module can be mounted on the IO slot of the WisBlock Base board, as shown in **Figure 1**. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak14001/quickstart/mounting-mechanism.png"
@@ -106,6 +106,7 @@ These are the quick links that go directly to the software guide for the specifi
 
 - [RAK14001 in RAK4631 WisBlock Core Guide](/Product-Categories/WisBlock/RAK14001/Quickstart/#rak14001-in-rak4631-wisblock-core-guide)
 - [RAK14001 in RAK11200 WisBlock Core Guide](/Product-Categories/WisBlock/RAK14001/Quickstart/#rak14001-in-rak11200-wisblock-core-guide)
+- [RAK14001 in RAK11310 WisBlock Core Guide](/Product-Categories/WisBlock/RAK14001/Quickstart/#rak14001-in-rak11310-wisblock-core-guide)
 
 #### RAK14001 in RAK4631 WisBlock Core Guide
 
@@ -132,7 +133,7 @@ void setup() {
   pinMode(WB_IO6, OUTPUT);
   digitalWrite(WB_IO6, HIGH);
 
-  // waits for input in seial monitor
+  // waits for input in serial monitor
   Serial.begin(115200);
   uint32_t t = millis();
   uint32_t timeout = 5000;
@@ -155,7 +156,7 @@ void setup() {
   }
   else
   {
-    Serial.println("RAK14001 Found. Begining execution");
+    Serial.println("RAK14001 Found. Beginning execution");
   }
 }
 
@@ -235,7 +236,8 @@ void loop() {
 
 ```
 ::: tip 📝 NOTE
-The basic example code can be found on these links:
+If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the following:
+
  - [RAK14001 Gradual Dimming WisBlock example repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK14001_NCP5623_GradualDimming/RAK14001_NCP5623_GradualDimming.ino)
  - [RAK14001 RGB Cycle WisBlock example repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK14001_NCP5623_RGBCycle/RAK14001_NCP5623_RGBCycle.ino)
 :::
@@ -281,7 +283,7 @@ void setup() {
   pinMode(WB_IO6, OUTPUT);
   digitalWrite(WB_IO6, HIGH);
 
-  // waits for input in seial monitor
+  // waits for input in serial monitor
   Serial.begin(115200);
   uint32_t t = millis();
   uint32_t timeout = 5000;
@@ -304,7 +306,7 @@ void setup() {
   }
   else
   {
-    Serial.println("RAK14001 Found. Begining execution");
+    Serial.println("RAK14001 Found. Beginning execution");
   }
 }
 
@@ -385,15 +387,16 @@ void loop() {
 ```
 
 ::: tip 📝 NOTE
-The basic example code can be found on these links:
- - [RAK14001 Gradual Dimming WisBlock Example Repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK14001_NCP5623_GradualDimming/RAK14001_NCP5623_GradualDimming.ino)
- - [RAK14001 RGB Cycle WisBlock Example Repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK14001_NCP5623_RGBCycle/RAK14001_NCP5623_RGBCycle.ino)
+If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the following:
+
+ - [RAK14001 Gradual Dimming WisBlock example repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK14001_NCP5623_GradualDimming/RAK14001_NCP5623_GradualDimming.ino)
+ - [RAK14001 RGB Cycle WisBlock example repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK14001_NCP5623_RGBCycle/RAK14001_NCP5623_RGBCycle.ino)
 :::
 
 3. Then you can now select the right port and upload the code, as shown in **Figure 9** and **Figure 10**.
 
 ::: tip 📝 NOTE
-RAK11200 requires **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
 :::
 
 <rk-img
@@ -408,4 +411,149 @@ RAK11200 requires **Boot0** pin to be configured properly first before uploading
   caption="Uploading the RAK14001 Sample code"
 />
 
-4. When you successfully uploaded the example sketch, you'll now be able to see the RAK14001 RGB LED Module emits various colors of light. The three primary colors of red, green, and blue are mixed to compose all kinds of colors by brightness, so you can see colorful light that gradually dim. 
+4. When you successfully uploaded the example sketch, you'll now be able to see the RAK14001 RGB LED Module emits various colors of light. The three primary colors—red, green, and blue—are mixed to compose all kinds of colors by brightness, so you can see colorful light that gradually dim. 
+
+#### RAK14001 in RAK11310 WisBlock Core Guide
+
+##### Arduino Setup
+
+1. First, you need to select the RAK11310 WisBlock Core.
+
+<rk-img
+  src="/assets/images/wisblock/rak14001/quickstart/rak11310-board.png"
+  width="100%"
+  caption="Selecting RAK11310 as WisBlock Core"
+/>
+
+2. Next, copy the following sample code into your Arduino IDE.
+
+```c
+#include <Wire.h>
+#include <NCP5623.h>
+
+NCP5623 rgb;
+
+void setup() {
+  // enable RAK14001
+  pinMode(WB_IO6, OUTPUT);
+  digitalWrite(WB_IO6, HIGH);
+
+  // waits for input in serial monitor
+  Serial.begin(115200);
+  uint32_t t = millis();
+  uint32_t timeout = 5000;
+  while (!Serial)
+  {
+    if (millis() - t > timeout)
+      break;
+  }
+
+  // If using Native I2C
+  Wire.begin();
+  Wire.setClock(100000);
+
+  Serial.println("RAK14001 RGB LED Test");
+
+  if (!rgb.begin())
+  {
+    Serial.println("RAK14001 not found on the I2C line");
+    while (1);
+  }
+  else
+  {
+    Serial.println("RAK14001 Found. Beginning execution");
+  }
+}
+
+/**
+ * LED light up Gradually
+ * 
+ * @param red          0-255
+ * @param green        0-255
+ * @param blue         0-255
+ * @param stepNum      0-31
+ * @param msPerStep    1ms-248ms
+ */
+void gradualLightUp(uint8_t red, uint8_t green, uint8_t blue, uint8_t stepNum, uint8_t msPerStep)
+{
+  rgb.setColor(red, green, blue);
+
+  // set dimming up end, range is 1 to 30
+  rgb.setGradualDimmingUpEnd(stepNum);
+
+  // set dimming step ms, range is 1 ms to 248 ms
+  rgb.setGradualDimming(msPerStep);
+
+  delay(stepNum*msPerStep);
+}
+
+/**
+ * LED dark down Gradually
+ * 
+ * @param red          0-255
+ * @param green        0-255
+ * @param blue         0-255
+ * @param stepNum      0-31
+ * @param msPerStep    1ms-248ms
+ */
+void gradualDarkDown(uint8_t red, uint8_t green, uint8_t blue, uint8_t stepNum, uint8_t msPerStep)
+{
+  rgb.setColor(red, green, blue);
+
+  // set dimming up end, range is 1 to 30
+  rgb.setGradualDimmingDownEnd(31-stepNum);
+
+  // set dimming step ms, range is 1 ms to 248 ms
+  rgb.setGradualDimming(msPerStep);
+
+  delay(stepNum*msPerStep);
+}
+
+void loop() {
+  // RED
+  gradualLightUp(100, 0, 0, 30, 100);
+  gradualDarkDown(100, 0, 0, 30, 100);
+
+  // GREEN
+  gradualLightUp(0, 100, 0, 30, 100);
+  gradualDarkDown(0, 100, 0, 30, 100);
+
+  // BLUE
+  gradualLightUp(0, 0, 100, 30, 100);
+  gradualDarkDown(0, 0, 100, 30, 100);
+  
+  // YELLOW
+  gradualLightUp(100, 100, 0, 30, 100);
+  gradualDarkDown(100, 100, 0, 30, 100);
+
+  // PURPLE
+  gradualLightUp(100, 0, 255, 30, 100);
+  gradualDarkDown(100, 0, 255, 30, 100);
+
+  // CYAN
+  gradualLightUp(0, 100, 100, 30, 100);
+  gradualDarkDown(0, 100, 100, 30, 100);
+
+  // WHITE
+  gradualLightUp(100, 100, 100, 30, 100);
+  gradualDarkDown(100, 100, 100, 30, 100);
+}
+
+```
+
+::: tip 📝 NOTE
+If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the following:
+
+ - [RAK14001 Gradual Dimming WisBlock example repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK14001_NCP5623_GradualDimming/RAK14001_NCP5623_GradualDimming.ino)
+ - [RAK14001 RGB Cycle WisBlock example repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK14001_NCP5623_RGBCycle/RAK14001_NCP5623_RGBCycle.ino)
+:::
+
+3. Then you can now select the right port and upload the code.
+
+<rk-img
+  src="/assets/images/wisblock/rak14001/quickstart/rak11310-selectport.png"
+  width="100%"
+  caption="Selecting the correct Serial Port"
+/>
+
+4. When you successfully uploaded the example sketch, you'll now be able to see the RAK14001 RGB LED Module emits various colors of light. The three primary colors—red, green, and blue—are mixed to compose all kinds of colors by brightness, so you can see colorful light that gradually dim. 
