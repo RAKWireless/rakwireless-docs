@@ -29,7 +29,7 @@ The RAK1903 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is
 
 #### Mounting
 
-The RAK1903 module can be mounted on the slots: A, B, C, or D of the WisBase board. Figure 1 shows the mounting mechanism of the RAK1903 on a WisBase module, such as the RAK5005-O.
+The RAK1903 module can be mounted on the slots: A, B, C, or D of the WisBase board. **Figure 2** shows the mounting mechanism of the RAK1903 on a WisBase module, such as the RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak1903/datasheet/RAK19xx_mounting.png"
@@ -39,14 +39,16 @@ The RAK1903 module can be mounted on the slots: A, B, C, or D of the WisBase boa
 
 ### Hardware
 
-#### Chipset
+The hardware specification is categorized into six parts. It shows the chipset of the module and discusses the pinouts, sensors, and the corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK1903 WisBlock Ambient Light Sensor.
 
+####  Chipset
 | Vendor | Part number |
 | --     | --          |
 | TI     | OPT3001DNPR |
 
 #### Pin Definition
-The RAK1903 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1903 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector the definition of the pinout are shown in Figure 2. 
+
+The RAK1903 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1903 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the definition of the pinout are shown in **Figure 3**. 
 
 :::tip 📝 NOTE:
 
@@ -60,7 +62,9 @@ Only the I2C related pins, interrupt pins, VDD and GND are connected to this mod
   caption="RAK1903 WisBlock Sensor connector pinout"
 />
 
-The pin12 or pin13 are connected to the INT of OPT3001DNPR (See Figure 4). The device has an interrupt reporting system that allows the Controller connected to the I2C bus to go to sleep until a user-defined event occurs. Alternatively, this mechanism can also be used with any system that can take advantage of a single digital signal that indicates whether the light is above or below the levels of interest.
+
+The pin12 or pin13 are connected to the INT of OPT3001DNPR (See **Figure 3**). The device has an interrupt reporting system that allows the Controller connected to the I2C bus to go to sleep until a user-defined event occurs. Alternatively, this mechanism can also be used with any system that can take advantage of a single digital signal that indicates whether the light is above or below the levels of interest.
+
 
 #### Sensors
 
@@ -95,7 +99,7 @@ The pin12 or pin13 are connected to the INT of OPT3001DNPR (See Figure 4). The d
 
 ##### Board Dimensions
 
-Figure 3 shows the dimensions and the mechanic drawing of the RAK1903 module.
+**Figure 4** shows the dimensions and the mechanic drawing of the RAK1903 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1903/datasheet/RAK19xx_mechanic_drawing.png"

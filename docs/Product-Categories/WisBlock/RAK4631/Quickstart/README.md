@@ -17,8 +17,7 @@ This guide introduces the RAK4631 WisBlock Core LPWAN Module and how to use it. 
 
 ### What Do You Need?
 
-
-Before going through each and every step on using RAK4631 WisBlock Core, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK4631 WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware
 
@@ -261,7 +260,7 @@ To use these examples, you have two options: **Arduino IDE** or **Platform IO**.
 
 ##### RAK4631 on Arduino IDE
 
-Some example codes of various WisBlock Modules like the RAK1901 and RAK1902 are available in the Arduino IDE once you install the [BSP for the Arduino IDE](/Product-Categories/WisBlock/RAK4631/Quickstart/#software), as shown in Figure 14. The updated and complete WisBlock examples are still in the [WisBlock Examples](https://github.com/RAKWireless/WisBlock/tree/master/examples).
+To access the example codes of various WisBlock Modules like the RAK1901 and RAK1902, install the [BSP for the Arduino IDE](/Product-Categories/WisBlock/RAK4631/Quickstart/#software) as mentioned in the prerequisite part of the this guide. Getting the code on the example repository is not necessary. As long as you have selected RAK4631 in the Arduino IDE Board Manager, you can browse the different examples on the Arduino IDE easily, as shown in **Figure 14**.
 
 <rk-img
   src="/assets/images/wisblock/rak4631/quickstart/rak4631_gps.png"

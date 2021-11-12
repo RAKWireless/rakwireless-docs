@@ -55,7 +55,7 @@ The overview covers the RAK2305 WisBlock board overview and block diagram. It al
 
 #### Mounting Sketch
 
-Figure 2 shows how RAK2305 module is integrated with the WisBlock Base Board. The mounting sketch is also shown.
+**Figure 2** shows how RAK2305 module is integrated with the WisBlock Base Board. The mounting sketch is also shown.
 
 <rk-img
   src="/assets/images/wisblock/rak2305/datasheet/mounting-sketch.png"
@@ -65,7 +65,7 @@ Figure 2 shows how RAK2305 module is integrated with the WisBlock Base Board. Th
 
 #### Block Diagram
 
-Figure 3 shows the block diagram of the RAK2305 module.
+**Figure 3** shows the block diagram of the RAK2305 module.
 
 <rk-img
   src="/assets/images/wisblock/rak2305/datasheet/RAK2305-block-diagram.png"
@@ -74,8 +74,8 @@ Figure 3 shows the block diagram of the RAK2305 module.
 />
 
 :::tip 📝 NOTE
-1.	VBAT is battery output voltage, the max voltage is 4.2&nbsp;V.
-2.	When IO0 is pulled-down, then UART download mode is selected. When IO0 is pulled-up, flash mode is selected. The default mode of the IO0 pin is pull-up.
+1.	VBAT is the battery output voltage; the max voltage is 4.2&nbsp;V.
+2.	When IO0 is pulled-down, the UART download mode is selected. When IO0 is pulled-up, flash mode is selected. The default mode of the IO0 pin is pull-up.
 :::
 
 ### Hardware 
@@ -101,12 +101,13 @@ The RAK2305 module provides an I2C bus interface. Depending on your configuratio
 - Standard mode (100&nbsp;Kbit/s) and Fast mode (400&nbsp;Kbit/s).
 - Up to 5&nbsp;MHz, constrained by the SDA pull-up strength.
 - 7-bit/10-bit addressing mode.
-The RAK2305 module allows users to access directly to the registers to control I2C interfaces, which add more flexibility in the design of the final solution.
+
+The RAK2305 module allows you to access directly to the registers to control I2C interfaces, which add more flexibility in the design of the final solution.
 
 
 ##### Download Interface
 
-The RAK2305 module uses the UART0 interface to download customized application code into the ESP32’s flash memory. The users can use a USB to UART cable for this purpose. Alternatively, once the RAK2305 is mounted on top of a WisBlock Base Board, such as the RAK5005-0, then users can access the UART0 interface through the RAK5005’s USB interface instead. The pinout of the USB port of the RAK2305 is shown in Figure 4.
+The RAK2305 module uses the UART0 interface to download customized application code into the ESP32’s flash memory. You can use a USB to UART cable for this purpose. Alternatively, once the RAK2305 is mounted on top of a WisBlock Base Board, such as the RAK5005-0, then you can access the UART0 interface through the RAK5005’s USB interface instead. The pinout of the USB port of the RAK2305 is shown in **Figure 4**.
 
 <rk-img
   src="/assets/images/wisblock/rak2305/datasheet/usb-uart0-interface.png"
@@ -120,7 +121,7 @@ Before download, you need to pull down IO0 pin.
 
 #### Pin Definition
 
-Figure 5 shows the Pin Definition of the RAK2305 WisBlock WiFi Interface Module.
+**Figure 5** shows the Pin Definition of the RAK2305 WisBlock WiFi Interface Module.
 
 <rk-img
   src="/assets/images/wisblock/rak2305/datasheet/RAK2305-pin.svg"
@@ -134,17 +135,17 @@ Figure 5 shows the Pin Definition of the RAK2305 WisBlock WiFi Interface Module.
 
 Table below shows the absolute maximum ratings supported by the RAK2305 Module
 
-| **Symbol** | **Description**             | **Min** | **Nom.** | **Max.** | **Unit** |
-| ---------- | --------------------------- | ------- | -------- | -------- | -------- |
-| VBAT       | Power Supply For the Module | 0.5     |          | 4.2      | V        |
-| Iout       | Step Down IC Output Current |         |          | 1000     | mA       |
+| **Symbol**      | **Description**             | **Min** | **Nom.** | **Max.** | **Unit** |
+| --------------- | --------------------------- | ------- | -------- | -------- | -------- |
+| VBAT            | Power Supply for the Module | 0.5     |          | 4.2      | V        |
+| I<sub>out</sub> | Step Down IC Output Current |         |          | 1000     | mA       |
 
 
 ##### Recommended Operating Conditions
 
 | **Symbol** | **Description**             | **Min.** | **Nom.** | **Max.** | **Unit** |
 | ---------- | --------------------------- | -------- | -------- | -------- | -------- |
-| VBAT       | Power Supply For the Module | 2.6      |          | 4.2      | V        |
+| VBAT       | Power Supply for the Module | 2.6      |          | 4.2      | V        |
 | 3V3        | 3.3V Power Supply           |          | 3.3      |          | V        |
 
 
@@ -152,7 +153,7 @@ Table below shows the absolute maximum ratings supported by the RAK2305 Module
 
 ##### Board Dimensions
 
-Figure 6 shows the dimensions and the mechanic drawing of the RAK2305 Module.
+**Figure 6** shows the dimensions and the mechanic drawing of the RAK2305 Module.
 
 <rk-img
   src="/assets/images/wisblock/rak2305/datasheet/rak2305_dimensions.png"
@@ -177,11 +178,11 @@ Figure 6 shows the dimensions and the mechanic drawing of the RAK2305 Module.
 />
 
 
-The following sections describes the schematic of the RAK2305 module.
+The following sections describes the schematic of the RAK2305 module:
 
 ##### Power Supply
 
-Figure 9 shows the schematic of the power supply of the RAK2305 module. In the diagram, VBAT is the battery voltage supplied from the WisBlock Base Board RAK5005-O.
+**Figure 9** shows the schematic of the power supply of the RAK2305 module. In the diagram, VBAT is the battery voltage supplied from the WisBlock Base Board RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak2305/datasheet/power_supply.png"
@@ -191,7 +192,7 @@ Figure 9 shows the schematic of the power supply of the RAK2305 module. In the d
 
 ##### IO Connector
 
-Figure 10 shows the pin definition of IO connector. 
+**Figure 10** shows the pin definition of IO connector. 
 
 <rk-img
   src="/assets/images/wisblock/rak2305/datasheet/wisio-connector.png"
@@ -212,7 +213,7 @@ Figure 10 shows the pin definition of IO connector.
 
 #####  Connector Pin Order
 
-Figure 11 shows IO connector and its pin order. This connector is located on the bottom side of the module.
+**Figure 11** shows IO connector and its pin order. This connector is located on the bottom side of the module.
 
 <rk-img
   src="/assets/images/wisblock/rak2305/datasheet/wisio-connector-pin-order.png"
@@ -222,7 +223,7 @@ Figure 11 shows IO connector and its pin order. This connector is located on the
 
 ##### Core Module
 
-The core component inside of the RAK2305 module is the ESP32-WROVER, which comes with a PCB antenna. The module is designed to work with 3.3&nbsp;V supplied by the baseboard. To prevent any instability on EN (Enable pin), an RC delay circuit is added to this pin, and the EN pin is pulled up to 3.3&nbsp;V by default. Figure 12 shows the section of the schematic that involves the ESP32-WROVER component.
+The core component inside of the RAK2305 module is the ESP32-WROVER, which comes with a PCB antenna. The module is designed to work with 3.3&nbsp;V supplied by the baseboard. To prevent any instability on EN (Enable pin), an RC delay circuit is added to this pin, and the EN pin is pulled up to 3.3&nbsp;V by default. **Figure 12** shows the section of the schematic that involves the ESP32-WROVER component.
 
 
 <rk-img
@@ -232,15 +233,15 @@ The core component inside of the RAK2305 module is the ESP32-WROVER, which comes
 />
 
 
-| **Name**   | **Description**     | **Comment**                                                  |
-| ---------- | ------------------- | ------------------------------------------------------------ |
-| 3.3&nbsp;V | Power Supply        | 3.3&nbsp;V                                                   |
-| GND        | Ground              |                                                              |
-| TXD1/RXD1  | UART1 interface     | Main communication interface                                 |
-| TXD0/RXD0  | UART0 interface     | Interface for firmware update or log output                  |
-| LED1/LED2  | LED interface       | Baseboard LED control                                        |
-| EN         | ESP32 Module Enable | Active High                                                  |
-| STATUS_LED | LED on module       | Active Low                                                   |
-| GPIO0      | BOOT0               | Low: UART Download Mode<br><br>High: FLASH Operation<br>Mode |
+| **Name**   | **Description**     | **Comment**                                             |
+| ---------- | ------------------- | ------------------------------------------------------- |
+| 3.3&nbsp;V | Power Supply        | 3.3&nbsp;V                                              |
+| GND        | Ground              |                                                         |
+| TXD1/RXD1  | UART1 interface     | Main communication interface                            |
+| TXD0/RXD0  | UART0 interface     | Interface for firmware update or log output             |
+| LED1/LED2  | LED interface       | Baseboard LED control                                   |
+| EN         | ESP32 Module Enable | Active High                                             |
+| STATUS_LED | LED on module       | Active Low                                              |
+| GPIO0      | BOOT0               | Low: UART Download Mode <br> High: FLASH Operation Mode |
 
 

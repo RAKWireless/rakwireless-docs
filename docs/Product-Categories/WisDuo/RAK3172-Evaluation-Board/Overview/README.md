@@ -36,5 +36,5 @@ This module complies with Class A, B & C of LoRaWAN 1.0.3 specifications. It als
 - ARM Cortex-M4 32-bit
 - 256&nbsp;kbytes flash memory with ECC
 - 64&nbsp;kbytes RAM
-- **Supply Voltage**: 5V via USB or 3.7-4.2V using Li-Ion Battery
+- **Supply Voltage**: 5&nbsp;V via USB or 3.7-4.2&nbsp;V using Li-Ion Battery
 - **Temperature Range**: -35°&nbsp;C ~ 70°&nbsp;C

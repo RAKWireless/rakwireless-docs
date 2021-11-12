@@ -37,7 +37,7 @@ The RAK1901 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is
 <!-- Insert Picture of Sensor with its dimensions -->
 
 #### Mounting
-The RAK1901 module can be mounted on the slots: A, B, C, or D of the WisBase board. Figure 1 shows the mounting mechanism of the RAK1901 on a WisBase module, such as the RAK5005-O.
+The RAK1901 module can be mounted on the slots: A, B, C, or D of the WisBase board. **Figure 1** shows the mounting mechanism of the RAK1901 on a WisBase module, such as the RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak1901/datasheet/RAK19xx_mounting.png"
@@ -54,7 +54,7 @@ The RAK1901 module can be mounted on the slots: A, B, C, or D of the WisBase boa
 | Sensirion | SHTC3       |
 
 #### Pin Definition
-The RAK1901 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1901 module to be mounted on a WisBlock baseboard, such as the RAK5005-O. The pin order of the connector and the pinout definition is shown in Figure 2. 
+The RAK1901 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1901 module to be mounted on a WisBlock baseboard, such as the RAK5005-O. The pin order of the connector and the pinout definition are shown in **Figure 2**. 
 
 :::tip 📝 NOTE:
 Only the I2C related pins, VDD and GND are connected to this module.    
@@ -106,7 +106,7 @@ Only the I2C related pins, VDD and GND are connected to this module.
 
 ##### Board Dimensions
 
-Figure 3 shows the dimensions and the mechanic drawing of the RAK1901 module.   
+**Figure 3** shows the dimensions and the mechanic drawing of the RAK1901 module.   
 
 <rk-img
   src="/assets/images/wisblock/rak1901/datasheet/RAK19xx_mechanic_drawing.png"
@@ -124,7 +124,7 @@ Figure 3 shows the dimensions and the mechanic drawing of the RAK1901 module.
 
 
 #### Schematic Diagram
-Figure 5 shows the schematic of the RAK1901 module.      
+**Figure 5** shows the schematic of the RAK1901 module.      
 
 <rk-img
   src="/assets/images/wisblock/rak1901/datasheet/rak1901-schematic.png"

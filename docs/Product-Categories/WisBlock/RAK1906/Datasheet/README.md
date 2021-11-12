@@ -31,7 +31,7 @@ The RAK1906 WisBlock Environmental Sensor module, part of the RAK WisBlock Senso
 <!-- Insert Picture of Sensor with its dimensions -->
 
 #### Mounting
-The RAK1906 module can be mounted on the slots: A, B, C, or D of a WisBlock Base board. Figure 2 shows the mounting mechanism of the RAK1906 on a WisBlock Base board, such as the RAK5005-O.
+The RAK1906 module can be mounted on the slots: A, B, C, or D of a WisBlock Base board. **Figure 2** shows the mounting mechanism of the RAK1906 on a WisBlock Base board, such as the RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak1906/datasheet/RAK19xx_mounting.png"
@@ -41,14 +41,15 @@ The RAK1906 module can be mounted on the slots: A, B, C, or D of a WisBlock Base
 
 ### Hardware
 
-#### Chipset
+The hardware specification is categorized into six parts. It shows the chipset of the module and discusses the pinouts, sensors, and the corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK1906 WisBlock Environmental Sensor.
 
+#### Chipset
 | Vendor | Part number |
 | --     | --          |
 | BOSCH  | BME680      |
 
 #### Pin Definition
-The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1906 module to be mounted on a WisBlock Base board, such as RAK5005-O. The pin order of the connector and the definition of the pinout are shown in Figure 3. 
+The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1906 module to be mounted on a WisBlock Base board, such as RAK5005-O. The pin order of the connector and the definition of the pinout are shown in **Figure 3**. 
 
 
 :::tip 📝 NOTE:
@@ -358,7 +359,7 @@ Only the I2C related pin, VDD, and GND are connected to this module.
 
 ##### Board Dimensions
 
-Figure 3 shows the dimensions and the mechanic drawing of the RAK1906 module.
+**Figure 4** shows the dimensions and the mechanic drawing of the RAK1906 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1906/datasheet/RAK19xx_mechanic_drawing.png"

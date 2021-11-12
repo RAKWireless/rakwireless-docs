@@ -15,7 +15,7 @@ next: ../Datasheet/
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK5811 WisBlock module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK5811 WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware 
 
@@ -34,11 +34,11 @@ Before going through each and every step on using RAK5811 WisBlock module, make 
 
 ##### PlatformIO
 
-To use the WisBlock Core modules with PlatformIO, you need to install a small script named RAK_PATCH. The script can be installed on WisBlock Core RAK4631, RAK11200 and RAK11310. Install [RAK_PATCH on PlatformIO](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md).
+To use the WisBlock Core modules with PlatformIO, you need to install a small script named RAK_PATCH. The script can be installed on WisBlock Core RAK4631, RAK11200, and RAK11310. Install [RAK_PATCH on PlatformIO](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md).
 
 ::: warning ⚠️ WARNING    
 RAK_PATCH script was tested only on Windows 10 and Ubuntu.<br>
-In case of Raspberry PI 2040 platform update on PlatformIO, the RAK_PATH script must be executed again after the platform update. 
+In the case of the Raspberry PI 2040 platform update on PlatformIO, the RAK_PATH script must be executed again after the platform update. 
 :::
 
 ## Product Configuration
@@ -49,7 +49,7 @@ To give you a better understanding of how the RAK5811 Module works, the block di
 
 #### Block Diagram
 
-In the RAK5811 module, as shown in Figure 1, the 0-5&nbsp;V input signal is connected to operational amplifier by the R1/R2 voltage divider. The operational amplifier output is routed to an analog input of the MCU to be digitalized by an internal ADC.
+In the RAK5811 module, as shown in **Figure 1**, the 0-5&nbsp;V input signal is connected to the operational amplifier by the R1/R2 voltage divider. The operational amplifier output is routed to an analog input of the MCU to be digitalized by an internal ADC.
 
 <rk-img
   src="/assets/images/wisblock/rak5811/quickstart/rak5811-block-diagram.png"
@@ -115,7 +115,7 @@ To learn more about the Pinout Diagram of the RAK5811 Module, refer to the [Data
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock module is the same. 
 
 1. First, remove the screws.  
 
@@ -125,7 +125,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
   caption="Removing screws from the WisBlock module"
 />
 
-2. Once the screws are removed, check the silkscreen of the module to find the correct location where force can be applier.
+2. Once the screws are removed, check the silkscreen of the module to find the correct location where force can be applied.
 
 <rk-img
   src="/assets/images/wisblock/rak5811/quickstart/detach_silkscreen.png"
@@ -250,10 +250,10 @@ To develop using PlatformIO, you need to install the RAK_PATCH script as describ
 
 3. Configure **Import Arduino Project** parameters:
   
-  - On boards list, select your favorite WisCore. For example: **WisCore RAK11310 Board (RAKwireless)** (Label 1).
+  - On the boards list, select your favorite WisCore. For example: **WisCore RAK11310 Board (RAKwireless)** (Label 1).
   - Check **Use libraries installed by Arduino IDE** (Label 2).
   - Choose the directory of your Arduino project to be imported (Label 3).
-  - To finish import, click on **Import** button (Label 4).
+  - To finish import, click on the **Import** button (Label 4).
 
 <rk-img
   src="/assets/images/wisblock/rak5811/quickstart/pio-import-config.png"
@@ -261,7 +261,7 @@ To develop using PlatformIO, you need to install the RAK_PATCH script as describ
   caption="Configure Import parameters"
 />
 
-4. On Trust author window, click **Yes**.
+4. On the Trust author window, click **Yes**.
 
 <rk-img
   src="/assets/images/wisblock/rak5811/quickstart/pio-trust.png"
@@ -278,7 +278,7 @@ Now, your project is imported successfully.
 />
 
 
-On imported project, check the **platformio.ini** file:
+On the imported project, check the **platformio.ini** file:
 
 The parameter **libs_extra_dirs** is your Arduino library directory.<br>
 In case of upload error, add the parameter **upload_port**. 
@@ -291,7 +291,9 @@ framework = arduino
 lib_extra_dirs = ~/Documents/Arduino/libraries
 upload_port = COM8
 ```
+
 If your project is running on Windows, use the Device Manager program to find correct the COM port allocated.
+
 <rk-img
   src="/assets/images/wisblock/rak5811/quickstart/dev_manager_rak11300.png"
   width="70%"
@@ -323,7 +325,7 @@ analogOversampling(128);
 ```c
 for (i = 0; i < NO_OF_SAMPLES; i++)
 {
-		mcu_ain_raw += analogRead(WB_A1);
+    mcu_ain_raw += analogRead(WB_A1);
 }
 average_raw = mcu_ain_raw / i;
 ```
@@ -333,11 +335,11 @@ average_raw = mcu_ain_raw / i;
 - Reduce input signal to 6/10
 
 ```c
-mcu_ain_voltage = average_raw * 3.0 / 1024; 	// ref 3.0V / 10bit ADC
+mcu_ain_voltage = average_raw * 3.0 / 1024;   // ref 3.0V / 10bit ADC
 
-voltage_sensor = mcu_ain_voltage / 0.6; 		// WisBlock RAK5811 (0 ~ 5V).   Input signal reduced to 6/10 a
+voltage_sensor = mcu_ain_voltage / 0.6;     // WisBlock RAK5811 (0 ~ 5V).   Input signal reduced to 6/10 a
 
-depths = (voltage_sensor * 1000 - 574) * 2.5; 	//Convert to millivolt. 574mv is the default output from sensor
+depths = (voltage_sensor * 1000 - 574) * 2.5;   //Convert to millivolt. 574mv is the default output from sensor
 
 Serial.printf("-------average_value------ = %d\n", average_raw);
 Serial.printf("-------voltage_sensor------ = %f\n", voltage_sensor);
@@ -351,7 +353,7 @@ Serial.printf("-------depths------ = %d mm\n", depths);
 - Enable booster
 
 ```c
-	/* WisBLOCK 5811 Power On*/
+  /* WisBLOCK 5811 Power On*/
 pinMode(WB_IO1, OUTPUT | PULLUP);
 digitalWrite(WB_IO1, HIGH);
 ```
@@ -383,7 +385,7 @@ average_adc_raw = adc_raw / NO_OF_SAMPLES;
 
 ```c{1}
 voltage_mcu_ain = esp_adc_cal_raw_to_voltage(average_adc_raw);
-voltage_sensor = voltage_mcu_ain / 0.6; 	//WisBlock RAK5811 (0 ~ 5V). Input signal reduced to 6/10 and output
+voltage_sensor = voltage_mcu_ain / 0.6;   //WisBlock RAK5811 (0 ~ 5V). Input signal reduced to 6/10 and output
 depths = (voltage_sensor * 1000 - 574) * 2.5; //Convert to millivolt. 574mv is the default V output from sensor
 ```
  

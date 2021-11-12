@@ -103,7 +103,7 @@ As shown in **Figure 4**, during the crimping process, you should first press do
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock module is the same. 
 
 1. First, remove the screws.  
 

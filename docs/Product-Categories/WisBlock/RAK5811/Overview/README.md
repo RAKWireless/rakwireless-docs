@@ -13,7 +13,7 @@ tags:
 
 # RAK5811 WisBlock 0-5V Interface Module
 
-Thank you for choosing **RAK5811 WisBlock 0-5V Interface Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK5811 WisBlock 0-5V Interface Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [RAK5811 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -54,7 +54,7 @@ In addition, this module integrates a 12&nbsp;V power supply. The power supply i
 *	Supports low power consumption mode, the module can be powered off by WisBlock Core module for saving energy during idle periods
 *	12&nbsp;V output to power external sensors
 *	Reserved I2C expansion interface
-*	Fast crimping terminal to easy connect external components on the field
+*	Fast crimping terminal to easily connect external components on the field
 *	Designed with a 2&nbsp;kV ESD protection level
 *	Small dimensions of 35&nbsp;mm x 25&nbsp;mm
 

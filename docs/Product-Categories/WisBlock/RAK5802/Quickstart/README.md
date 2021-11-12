@@ -44,9 +44,9 @@ Before going through each and every step on using the RAK5802 WisBlock module, m
 
 ### Hardware Setup
 
-WisBlock can integrate this module which extends the WisBlock system with an industrial RS485 data transmission interface. 
+WisBlock can integrate this module, which extends the WisBlock system with an industrial RS485 data transmission interface. 
 
-RAK5802 supports one RS485 interface. There are two voltage sources also available on the connectors, which you can use on your external device or circuit. One is the battery voltage via PWR pin, which is directly coming from the battery connected to the WisBlock Base. The other one is the 3.3V regulated output, which comes from the WisBlock Base, as well, and powers the entire WisBlock board, including the WisBlock Core and other connected modules. In addition, an Analog A1 input (via WB_A1 in code) and I2C interface connection are available on the crimping terminal.
+RAK5802 supports one RS485 interface. There are two voltage sources also available on the connectors, which you can use on your external device or circuit. One is the battery voltage via PWR pin, which is directly coming from the battery connected to the WisBlock Base and the other one is the 3.3&nbsp;V regulated output, which comes from the WisBlock Base as well and powers the entire WisBlock board including the WisBlock Core and other connected modules. In addition, an Analog A1 input (via WB_A1 in code) and I2C interface connection are available on the crimping terminal.
 
 <rk-img
   src="/assets/images/wisblock/rak5802/quickstart/rak5802_pinout.png"
@@ -54,7 +54,7 @@ RAK5802 supports one RS485 interface. There are two voltage sources also availab
   caption="RAK5802 sensor connector"
 />
 
-For more information about RAK5802, refer to the [Datasheet](../Datasheet/).
+For more information about the RAK5802, refer to the [Datasheet](../Datasheet/).
 
 The RAK5802 module is part of the WisBlock Interface category, which connects to the base board through the IO slot. Also, always secure the connection of the WisBlock module by using compatible screws.
 
@@ -67,8 +67,7 @@ The RAK5802 module is part of the WisBlock Interface category, which connects to
 #### Installation
 
 ##### Mounting Mechanism
-
-The RAK5802 module is part of the WisBlock Interface category, which connects to the baseboard through the IO slot. The installation method is shown in Figure 3 and Figure 4.
+The RAK5802 module is part of the WisBlock Interface category, which connects to the baseboard through the IO slot. The installation method is shown in the **Figure 3** and **Figure 4**.
 
 1. Keep the RAK5802 module parallel to the baseboard, and gently place and plug WisConnector into the IO slot receptacle of the baseboard. The IO slot has an outer silkscreen on it to assist with the alignment. At this point, apply force evenly along with the module and press again. There will be a sound to confirm the successful completion of the attachment process.
 
@@ -104,7 +103,7 @@ As shown in **Figure 5**, during the crimping process, you should first press do
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock module is the same. 
 
 1. First, remove the screws.  
 

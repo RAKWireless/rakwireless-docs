@@ -31,9 +31,9 @@ certifications:
 
 ### Description
 
-**RAK811 Breakout Board** is an easy-to-use, compact, and low power long-range LoRa technology with wireless transceiver capabilities. It is based on RAK811 Stamp Module attached to a breakout board on Xbee form factor with standard 2.00&nbsp;mm headers. 
+**RAK811 Breakout Board** is an easy-to-use, compact, and low-power long-range LoRa technology with wireless transceiver capabilities. It is based on RAK811 Stamp Module attached to a breakout board on Xbee form factor with standard 2.00&nbsp;mm headers. 
 
-The RAK811 Breakout Board complies with Class A & C of LoRaWAN 1.0.2 specification. Additionally, it supports LoRa Point-to-Point (P2P) communications which helps you in implementing their own private LoRa wireless applications. You can configure the mode and operation of the module using AT commands via UART interface. RAK811 board also offers low power features which is very suitable for battery-powered applications.
+The RAK811 Breakout Board complies with Class A & C of LoRaWAN 1.0.2 specification. Additionally, it supports LoRa Point-to-Point (P2P) communications, which help you in implementing their own private LoRa wireless applications. You can configure the mode and operation of the module using AT commands via the UART interface. RAK811 board also offers low-power features, which are very suitable for battery-powered applications.
 
 ### Features
 
@@ -59,11 +59,11 @@ The RAK811 Breakout Board complies with Class A & C of LoRaWAN 1.0.2 specificati
 
 ## Specifications
 
-This section covers the hardware and software specifications of RAK811 Breakout Board. All discussion presents both versions: RAK811(L) and RAK811(H).
+This section covers the hardware and software specifications of the RAK811 Breakout Board. All discussion presents both versions: RAK811(L) and RAK811(H).
 
 ### Overview
 
-The **RAK811 Breakout Board** is shown in Figure 1 with its corresponding board dimension of **42&nbsp;mm x 25&nbsp;mm**. This board weighs at about **0.2&nbsp;kg**.
+The **RAK811 Breakout Board** is shown in **Figure 1** with its corresponding board dimension of **42&nbsp;mm x 25&nbsp;mm**. This board weighs at about **0.2&nbsp;kg**.
 
 <rk-img
   src="/assets/images/wisduo/rak811-breakout-board/datasheet/2.dimensions.png"
@@ -83,11 +83,11 @@ The hardware specification is categorized into six parts. It discusses the pinou
 
 #### Pin Definition
 
-The RAK811 Breakout Board supports two different frequency variation: **High Radio Frequency** and **Low Radio frequency**.
+The RAK811 Breakout Board supports two different frequency variations: **High Radio Frequency** and **Low Radio frequency**.
 
 ##### High Radio Frequency (RAK811(H))
 
-The high radio frequency hardware support the regions of EU868, US915, AU915, KR920, AS923, and IN865.
+The high radio frequency hardware supports the regions of EU868, US915, AU915, KR920, AS923, and IN865.
 
 ###### High RF Pin Outline
 
@@ -124,7 +124,7 @@ The high radio frequency hardware support the regions of EU868, US915, AU915, KR
 
 ##### Low Radio Frequency (RAK811(L))
 
-The low radio frequency is applicable to bandwidth of regions EU433 and CN470.
+The low radio frequency is applicable to the bandwidth of regions EU433 and CN470.
 
 ###### Low RF Pin Outline
 

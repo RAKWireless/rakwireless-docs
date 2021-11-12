@@ -41,7 +41,7 @@ All external expansion interfaces of the RAK5804 module are equipped with TVS pr
 
 ### Overview
 
-The RAK5804 module can be mounted on the IO slot of the WisBlock Base board. Figure 1 shows the mounting mechanism of the RAK5804 on a WisBlock Base module, such as a RAK5005-O.
+The RAK5804 module can be mounted on the IO slot of the WisBlock Base board. **Figure 1** shows the mounting mechanism of the RAK5804 on a WisBlock Base module, such as a RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/datasheet/mounting-mechanism.png"
@@ -52,7 +52,7 @@ The RAK5804 module can be mounted on the IO slot of the WisBlock Base board. Fig
 
 ### Hardware
 
-The hardware specification is categorized into four parts. It discusses the interfacing, pinouts, and its corresponding functions and diagrams of the module. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK5804 WisBlock™ Module.
+The hardware specification is categorized into four parts. It discusses the interfacing, pinouts and its corresponding functions and diagrams of the module. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK5804 WisBlock™ Module.
 
 #### Interfaces
 
@@ -65,7 +65,7 @@ The J2 and J3 connectors use a [JST SH Connector](https://downloads.rakwireless.
 <rk-img
   src="/assets/images/wisblock/rak5804/datasheet/j-connectors.png"
   width="40%"
-  caption="RAK5804 J2, J3 and J4 I/O connectors"
+  caption="RAK5804 J2, J3, and J4 I/O connectors"
 />
 
 ##### J2 Connector
@@ -135,7 +135,7 @@ The J2 and J3 connectors use a [JST SH Connector](https://downloads.rakwireless.
 #### Pin Definition
 
 
-The RAK5804 module comprises a standard WisBlock Interface connector. This IO connector allows the RAK5804 module to be mounted on a WisBlock baseboard, such as the RAK5005-O. The pin order of the connector is shown in Figure 6.
+The RAK5804 module comprises a standard WisBlock Interface connector. This IO connector allows the RAK5804 module to be mounted on a WisBlock baseboard, such as the RAK5005-O. The pin order of the connector is shown in **Figure 6**.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/datasheet/wisio-connector.png"
@@ -170,7 +170,7 @@ The RAK5804 module comprises a standard WisBlock Interface connector. This IO co
 
 #### Electrical Characteristics
 
-This sections shows the maximum and minimum ratings of the RAK5804 module and its recommended operating conditions. Refer to tables presented below. 
+This section shows the maximum and minimum ratings of the RAK5804 module and its recommended operating conditions. Refer to the tables presented below. 
 
 ##### Absolute Maximum Ratings
 
@@ -197,7 +197,7 @@ This sections shows the maximum and minimum ratings of the RAK5804 module and it
 
 ##### Board Dimensions
 
-The mechanical dimensions of the RAK5804 module is shown in Figure 7 below.
+The mechanical dimensions of the RAK5804 module are shown in **Figure 7**.
 
 
 <rk-img
@@ -216,7 +216,7 @@ The mechanical dimensions of the RAK5804 module is shown in Figure 7 below.
 
 #### Schematic Diagram
 
-Figure 9 shows the schematic diagram of RAK5804 WisBlock Interface connector, USB connector, and the 10 mechanical holes.
+**Figure 9** shows the schematic diagram of the RAK5804 WisBlock Interface connector, USB connector, and the 10 mechanical holes.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/datasheet/schematic-diagram.png"

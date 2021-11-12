@@ -36,7 +36,7 @@ This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications. It al
 
 ## Specifications
 
-This section covers the hardware and software specifications of RAK3172 Evaluation Board. It includes the interfaces, operating parameters, and a link to the RAK3172 board's latest firmware.
+This section covers the hardware and software specifications of the RAK3172 Evaluation Board. It includes the interfaces, operating parameters, and a link to the RAK3172 board's latest firmware.
 
 ### Overview
 
@@ -102,7 +102,7 @@ The USB data bus is connected to a **USB-SERIAL CH340** chip. The **CH340** is a
 
 The RAK3172 Evaluation Board can be powered by a battery via the P1 connector. The battery is not included in the packaging.
 
-Use Figure 6 as a guide to connect the battery. The pin highlighted in the yellow box with the triangle silkscreen mark indicates pin 1 (GND).
+Use **Figure 6** as a guide to connect the battery. The pin highlighted in the yellow box with the triangle silkscreen mark indicates pin 1 (GND).
 
 <rk-img
   src="/assets/images/wisduo/rak3172-evaluation-board/datasheet/interfaces/RAK3172E-battery.png"
@@ -110,7 +110,7 @@ Use Figure 6 as a guide to connect the battery. The pin highlighted in the yello
   caption="RAK3172 EVB battery connector"
 />
 
-The pin definition of RAK3172 Evaluation Board Li-Ion battery connector is shown in the table below. The matching connector for the battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199).
+The pin definition of the RAK3172 Evaluation Board Li-Ion battery connector is shown in the table below. The matching connector for the battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199).
 
 <b> P1 Battery Connector </b>
 
@@ -138,7 +138,7 @@ The voltage of the Li-Ion battery **must not exceed 4.3&nbsp;V**. When connectin
 
 ##### Solar Panel Connector
 
-A 5&nbsp;V solar panel can be connected to the board via the P2 connector to serve the purpose of charging the battery. The solar panel is not included on RAK3172 Evaluation Board packaging. Use Figure 7 as a guide to connect the solar panel. The pin highlighted in the yellow box with triangle silkscreen mark indicates pin 1 (5&nbsp;V of Solar Panel positive).
+A 5&nbsp;V solar panel can be connected to the board via the P2 connector to serve the purpose of charging the battery. The solar panel is not included on RAK3172 Evaluation Board packaging. Use **Figure 7** as a guide to connect the solar panel. The pin highlighted in the yellow box with triangle silkscreen mark indicates pin 1 (5&nbsp;V of Solar Panel positive).
 
 <rk-img
   src="/assets/images/wisduo/rak3172-evaluation-board/datasheet/interfaces/RAK3172E-solar.png"
@@ -146,7 +146,7 @@ A 5&nbsp;V solar panel can be connected to the board via the P2 connector to ser
   caption="RAK3172 EVB solar connector"
 />
 
-The pin definition of RAK3172 Evaluation Board solar panel connector is shown in the table below. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287).
+The pin definition of the RAK3172 Evaluation Board solar panel connector is shown in the table below. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287).
 
 <b> P2 Solar Panel connector </b>
 
@@ -155,7 +155,7 @@ The pin definition of RAK3172 Evaluation Board solar panel connector is shown in
 | 1       | C0NN_5V      | Positive + pin of solar panel |
 | 2       | GND          | GND                           |
 
-The full specification of Solar Panel for RAK3172 Evaluation Board is shown in the table below.
+The full specification of the Solar Panel for the RAK3172 Evaluation Board is shown in the table below.
 
 | **No.** | **Item**        | **Specification**                                        |
 | ------- | --------------- | -------------------------------------------------------- |
@@ -274,7 +274,7 @@ The LDO regulator can operate on the following voltage range:
 
 ### Software
 
-Download the latest firmware for the RAK3172 WisDuo Evaluation Board provided below. RAK3172(L) and RAK3172(H) uses the same firmware and it will automatically detect the variant of the module being used.
+Download the latest firmware for the RAK3172 WisDuo Evaluation Board provided below. RAK3172(L) and RAK3172(H) use the same firmware and it will automatically detect the variant of the module being used.
 
 The **bin file** contains the application code only and you need the RAK DFU Tool to upload this file to the module.
 

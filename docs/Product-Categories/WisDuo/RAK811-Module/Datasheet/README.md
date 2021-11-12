@@ -30,11 +30,11 @@ certifications:
 
 ### Description
 
-The RAK811 Low-Power Long Range LoRa Technology Transceiver module provides an easy to use, small size, and low-power solution for long-range wireless data applications.
+The RAK811 is a Low-Power Long-Range LoRa Technology Transceiver module that provides an easy-to-use, small size, and low-power solution for long-range wireless data applications.
 
-This module complies with Class A & C of LoRaWAN 1.0.2 specifications that can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point-to-Point (P2P) communication mode which help you in implementing your own customized long-range LoRa network quickly.
+This module complies with Class A & C of LoRaWAN 1.0.2 specifications that can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point-to-Point (P2P) communication mode, which helps you in implementing your own customized long-range LoRa network quickly.
 
-The RAK811 module is integrated with Semtech’s SX1276 and STM32. You can configure the mode and operation of the module using AT commands via a UART interface. Also, it offers low power features which is very suitable for battery-powered applications.
+The RAK811 module is integrated with Semtech’s SX1276 and STM32. You can configure the mode and operation of the module using AT commands via a UART interface. Also, it offers low-power features, which are very suitable for battery-powered applications.
 
 ### Features
 
@@ -58,7 +58,7 @@ The RAK811 module is integrated with Semtech’s SX1276 and STM32. You can confi
 
 ## Specifications
 
-This section covers the hardware and software specifications of RAK811. All discussion presents both versions: RAK811(L) and RAK811(H). Also, it includes the block diagram and the update firmware link of the RAK811 WisDuo module.
+This section covers the hardware and software specifications of RAK811. All discussion presents both versions: RAK811(L) and RAK811(H). Also, it includes the block diagram and the updated firmware link of the RAK811 WisDuo module.
 
 ### Overview
 
@@ -82,7 +82,7 @@ The hardware specification is categorized into six parts. It discusses the pinou
 
 #### Pin Definition
 
-The RAK811 supports two different frequency variation: Low Radio Frequency and High Radio Frequency.
+The RAK811 supports two different frequency variations: Low Radio Frequency and High Radio Frequency.
 
 ##### 1. Low Radio Frequency Version (RAK811(L))
 
@@ -380,7 +380,7 @@ Download the latest firmware of the RAK811 WisDuo LPWAN Module — both in low a
 
 :::tip 📝 NOTE:
 
-The **bin file** contains the application code only and you need the RAK DFU Tool to upload this file to the module.
+The **bin file** contains the application code only, and you need the RAK DFU Tool to upload this file to the module.
 
 The **hex file** contains both the bootloader and the application code. You need to use STM32CubeProgrammer to upload this.
 

@@ -24,7 +24,7 @@ The information obtained from the barometer pressure will then be printed over t
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK1902 WisBlock module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK1902 WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware
 

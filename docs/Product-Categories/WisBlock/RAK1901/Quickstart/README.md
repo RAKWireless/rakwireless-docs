@@ -24,7 +24,7 @@ The information obtained from the SHTC3 sensor will then be printed over the USB
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK1901 WisBlock module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK1901 WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware
 

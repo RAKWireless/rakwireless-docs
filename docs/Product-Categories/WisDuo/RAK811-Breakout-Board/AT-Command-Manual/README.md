@@ -14,11 +14,11 @@ tags:
 
 ## Introduction
 
-The RAK811 Breakout Board is designed to simplify LoRaWAN and LoRa point-to-point (P2P) communication. To integrate LoRa technology into your projects, RAK811 has easy to use AT commands via UART communication interface. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can even control the available GPIO pins and analog input of RAK811. You can also use any microcontroller with a UART interface to control the RAK811 Breakout Board. 
+The RAK811 Breakout Board is designed to simplify LoRaWAN and LoRa point-to-point (P2P) communication. To integrate LoRa technology into your projects, RAK811 has easy-to-use AT commands via a UART communication interface. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can even control the available GPIO pins and analog input of RAK811. You can also use any microcontroller with a UART interface to control the RAK811 Breakout Board. 
 
 The UART serial communication is exposed on the **UART1 port** through **Pin 6 (TX1)** and **Pin 7 (RX1)**. The default parameters of the UART1 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK811 Breakout Board Datasheet](/Product-Categories/WisDuo/RAK811-Breakout-Board/Datasheet/#rak811-wisduo-lpwan-module-datasheet). You can also see the complete RAK811 Breakout Board pin descriptions in [Appendix IV](/Product-Categories/WisDuo/RAK811-Breakout-Board/AT-Command-Manual/#appendix-iv-pin-description-of-rak811).
 
-The RAK811 Breakout Board also supports another serial port through the **Pin 25 (TX3)** and **Pin 26 (RX3)**. This port is named as **UART3** with default parameters **115200 / 8-N-1**. You can use UART3 as alternative to UART1 when sending AT commands. You can also use UART3 when developing custom firmware via [RUI](/RUI/).  **UART3 pins are not exposed on RAK811 Breakout Module**. You can use RAK811 Breakout Board or RAK811 Evaluation Board if you need UART3 pins.
+The RAK811 Breakout Board also supports another serial port through the **Pin 25 (TX3)** and **Pin 26 (RX3)**. This port is named **UART3** with default parameters **115200 / 8-N-1**. You can use UART3 as an alternative to UART1 when sending AT commands. You can also use UART3 when developing custom firmware via [RUI](/RUI/).  **UART3 pins are not exposed on RAK811 Breakout Module**. You can use RAK811 Breakout Board or RAK811 Evaluation Board if you need UART3 pins.
 
 For AT commands example usage, you can check these sections of the Quick Start Guide:
 
@@ -31,7 +31,7 @@ For AT commands example usage, you can check these sections of the Quick Start G
 
 The AT command is based on ASCII characters. A command begins with the prefix `AT` or `at` and ends with `<CR><LF>` (i.e. \r\n). The maximum length is **255 characters**, which includes the `<CR><LF>` characters at the end of the command. For the rest of the document, the `\r\n` part is omitted for the sake of clarity.
 
-The AT commands can be classified in the following groups:
+The AT commands can be classified into the following groups:
 
 * **Read Command**: Reads the current configuration or status of the module. The command name and the list of parameters are separated by `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character. 
 
@@ -87,19 +87,19 @@ ERROR: [ErrCode]\r\n
 | 1          | The last command received is an unsupported AT command.                                                                                                                     |
 | 2          | Invalid parameter in the AT command.                                                                                                                                        |
 | 3          | There is an error when reading or writing the flash memory.                                                                                                                 |
-| 4          | There is an error when reading or writing through IIC bus.                                                                                                                  |
+| 4          | There is an error when reading or writing through the IIC bus.                                                                                                                  |
 | 5          | There is an error when sending data through the UART port. Check if you exceed 256 bytes UART buffer.                                                                                                                  |
 | 80         | The LoRa transceiver is busy, could not process a new command.                                                                                                              |
-| 81         | LoRa service is unknown. Unknown MAC command received by node. Execute commands that are not supported in the current state, such as sending `at+join` command in P2P mode. |
+| 81         | LoRa service is unknown. Unknown MAC command received by the node. Execute commands that are not supported in the current state, such as sending the `at+join` command in P2P mode. |
 | 82         | The LoRa parameters are invalid.                                                                                                                                            |
 | 83         | The LoRa parameters are invalid.                                                                                                                                            |
 | 84         | The LoRa data rate (DR) is invalid.                                                                                                                                         |
 | 85         | The LoRa frequency and data rate are invalid.                                                                                                                               |
 | 86         | The device has not joined into a LoRa network.                                                                                                                              |
 | 87         | The length of the packet exceeded the maximum allowed by the LoRa protocol.                                                                                                 |
-| 88         | Service is closed by the server. Due to the limitation of duty cycle, the server will send "SRV_MAC_DUTY_CYCLE_REQ" MAC command to close the service.                      |
+| 88         | Service is closed by the server. Due to the limitation of duty cycle, the server will send the "SRV_MAC_DUTY_CYCLE_REQ" MAC command to close the service.                      |
 | 89         | This is an unsupported region code.                                                                                                                                         |
-| 90         | Duty cycle is restricted. Due to duty cycle, data cannot be sent at this time until the time limit is removed.                                                              |
+| 90         | Duty cycle is restricted. Due to the duty cycle, data cannot be sent at this time until the time limit is removed.                                                              |
 | 91         | No valid LoRa channel could be found.                                                                                                                                       |
 | 92         | No available LoRa channel could be found.                                                                                                                                   |
 | 93         | Status is error. Generally, the internal state of the protocol stack is wrong.                                                                                              |
@@ -267,7 +267,7 @@ OK Wake Up
 
 :::tip 📝 NOTE: 
 
-During sleep, Pin 7 (RX1) and Pin 26 (RX3) are automatically configured as wake up pins and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
+During sleep, Pin 7 (RX1) and Pin 26 (RX3) are automatically configured as wake up pins and in external interrupt mode with an internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
 
 :::
 
@@ -651,7 +651,7 @@ OK *0,on,868100000,0,5; *1,on,868300000,0,5; *2,on,868500000,0,5; 3,off,0,0,0; 4
 
 With "<b>*0,on,868100000,0,5</b>" as an example，the following is the channel parameter analysis:
 
-- `*` at the beginning if the channel is open;
+- `*` at the beginning, if the channel is open;
 - `0` is the channel ID;
 - `on` indicates the current status of the channel;
 - `868100000` is the actual frequency of the channel，unit is Hz;
@@ -927,7 +927,7 @@ OK
 
 14. <b>at+set_config=lora:multicast_apps_key:`<multicast_apps_key>`</b>
 
-This command is used for setting of the Application Session Key for the multicast feature.
+This command is used for the setting of the Application Session Key for the multicast feature.
 
 | Operation | Command                                                      | Response |
 | --------- | ------------------------------------------------------------ | -------- |
@@ -1041,7 +1041,7 @@ OK
 
 18. <b>at+set_config=lora:confirm:`<type>`</b>
 
-This command is used for setting the type messages to be sent: Confirmed/Unconfirmed.
+This command is used for setting the type of messages to be sent: Confirmed/Unconfirmed.
 
 | Operation | Command                             | Response |
 | --------- | ----------------------------------- | -------- |
@@ -1371,7 +1371,7 @@ OK
 
 4. <b>at+send=lorap2p:`<data>`</b>
 
-This command is used to send data through LoRa P2P and only valid when the LoRa work mode is set to LoRa P2P before.
+This command is used to send data through LoRa P2P and is only valid when the LoRa work mode is set to LoRa P2P before.
 
 
 | Operation | Command                  | Response |
@@ -1644,7 +1644,7 @@ By default, MAxEIRP is considered to be +12.15&nbsp;dBm.
 ## Appendix III：Maximum Transmission Load by Region
 
 :::tip 📝 NOTE:
-The LoRaWAN stack adds 8 bytes to the user payload. In the following list, M is the maximum payload size and N is the maximum usable payload size for the user data without MAC header.
+The LoRaWAN stack adds 8 bytes to the user payload. In the following list, M is the maximum payload size and N is the maximum usable payload size for the user data without the MAC header.
 ::::
 
 <b> EU868 </b>
@@ -1860,30 +1860,30 @@ The LoRaWAN stack adds 8 bytes to the user payload. In the following list, M is 
 
 ## Appendix IV: Pin Description of RAK811 Breakout Board
 
-The pin definition of the RAK811 Breakout Board can be reviewed in the [Pin Definition](/Product-Categories/WisDuo/RAK811-Breakout-Board/Datasheet/#pin-definition) section the Datasheet.
+The pin definition of the RAK811 Breakout Board can be reviewed in the [Pin Definition](/Product-Categories/WisDuo/RAK811-Breakout-Board/Datasheet/#pin-definition) section of the Datasheet.
 
 
 Listed are the summary of the pins of the RAK811 Breakout Board:
 
 :::tip 📝 NOTE:
-Not all pins of RAK811 module are exposed on the RAK811 Breakout board header connectors. Below are the pins available on the RAK811 Module that are on this Breakout board. For complete RAK811 module pinouts information, refer to the [datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#pin-definition).
+Not all pins of the RAK811 module are exposed on the RAK811 Breakout board header connectors. Below are the pins available on the RAK811 Module that is on this Breakout board. For complete RAK811 module pinouts information, refer to the [datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#pin-definition).
 :::
 
 1. **About the UART Pin**: 
 
      - Pin 7 (RX1) and Pin 6 (TX1) are reserved for UART1.
      - Pin 26 (RX3) and Pin 25 (TX3) are reserved for UART3.
-     - During sleep, Pin 7 (RX1) and Pin 26 (RX3) are automatically configured as wake up pins and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
+     - During sleep, Pin 7 (RX1) and Pin 26 (RX3) are automatically configured as wake-up pins and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
 
 2. **About the SWD debug Pin**: Pin 10 (SWDIO) and Pin 13 (SWCLK) are used for SWD connection.
 
 3. **About the power Pin**: The power pin on the RAK811 module includes the VCC pin on Pin 11, and Ground pins (GND) are on the Pin 1, Pin 12, Pin 21, Pin 28, Pin 29, Pin 30, Pin 31, Pin 32, and Pin 34.
 
-4. **About the reset Pin**: The reset pin on the RAK811 module is the Pin 24 (RST).
+4. **About the reset Pin**: The reset pin on the RAK811 module is Pin 24 (RST).
 
 5. **About the BOOT Pin**: The boot Pin on the RAK811 module is Pin 17 (BOOT0).
 
-6. **About the RF antenna Pin**: The RF antenna Pin on the RAK811 module is the Pin 33 (RF_OUT).
+6. **About the RF antenna Pin**: The RF antenna Pin on the RAK811 module is Pin 33 (RF_OUT).
 
 7. **About the ADC Pin**: The ADC pins available on the RAK811 are different between the high and low-frequency modules. 
 
@@ -1922,6 +1922,6 @@ Not all pins of RAK811 module are exposed on the RAK811 Breakout board header co
 
 :::tip 📝 NOTE:
 
-If you want to use the RAK811 Breakout Board to make a product, you should understand how to upgrade the RAK811 firmware in the future. As mentioned, the firmware of the RAK811 Breakout Board can be upgraded through the SWD or UART1 port. Both requires a general-purpose PC.
+If you want to use the RAK811 Breakout Board to make a product, you should understand how to upgrade the RAK811 firmware in the future. As mentioned, the firmware of the RAK811 Breakout Board can be upgraded through the SWD or UART1 port. Both require a general-purpose PC.
 
 :::

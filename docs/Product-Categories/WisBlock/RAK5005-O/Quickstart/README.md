@@ -57,7 +57,7 @@ To give you a better understanding of how the WisBlock Base works, the block dia
 
 #### Block Diagram
 
-The block diagram is shown in **Figure 1** that shows the internal architecture and external interfaces of the RAK5005-O board.
+The block diagram, shown in **Figure 1**, shows the internal architecture and external interfaces of the RAK5005-O board.
 
 
 <rk-img
@@ -183,7 +183,7 @@ This guide uses two arrows. Refer to **Figure 4** for its representation.
 
 ##### Detaching a WisConnector
 
-1. To disconnect the header from the socket, pull-out in parallel with even forces.
+1. To disconnect the header from the socket, pull out in parallel with even forces.
 
 
 <rk-img
@@ -222,7 +222,7 @@ This guide uses two arrows. Refer to **Figure 4** for its representation.
 ###### WisBlock Core
 
 
-A WisBlock Core module is designed to be installed on the CPU slot of the RAK5005-O Base Board. As shown in **Figure 16**, the location is properly marked by silkscreen. Follow carefully the procedure defined in [attaching a WisConnector](/Product-Categories/WisBlock/RAK5005-O/Quickstart/#attaching-a-wisconnector/) section in order to attach a Core module.<br> Once attached, fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the WisBlock Core.
+A WisBlock Core module is designed to be installed on the CPU slot of the RAK5005-O Base Board. As shown in **Figure 16**, the location is properly marked by silkscreen. Follow carefully the procedure defined in [attaching a WisConnector](/Product-Categories/WisBlock/RAK5005-O/Quickstart/#attaching-a-wisconnector/) section in order to attach a Core module. Once attached, fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the WisBlock Core.
 
 
 <rk-img
@@ -239,7 +239,9 @@ The RAK1910 GPS module must be installed only on the front side of the RAK5005-O
 
 :::
 
-A WisBlock Sensor module is designed to be installed on the Sensor slot of the RAK5005-O Base Board. There are four (4) available sensor slots in the RAK5005-O Base Board, two (2) on each side of the Base Board. As shown in **Figure 17**, the location of the slots is properly marked by silkscreen.<br> Follow carefully the procedure of the section ,[attaching a WisConnector](/Product-Categories/WisBlock/RAK5005-O/Quickstart/#attaching-a-wisconnector/), to attach a WisBlock Sensor module. Once attached, fix the module with an M1.2 x 3&nbsp;mm screw. 
+A WisBlock Sensor module is designed to be installed on the Sensor slot of the RAK5005-O Base Board. There are four (4) available sensor slots in the RAK5005-O Base Board, two (2) on each side of the Base Board. As shown in **Figure 17**, the location of the slots is properly marked by silkscreen.
+
+Follow carefully the procedure of the section, [attaching a WisConnector](/Product-Categories/WisBlock/RAK5005-O/Quickstart/#attaching-a-wisconnector/), to attach a WisBlock Sensor module. Once attached, fix the module with an M1.2 x 3&nbsp;mm screw. 
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/quickstart/14.wisblock-sensor-silkscreen.png"
@@ -249,7 +251,7 @@ A WisBlock Sensor module is designed to be installed on the Sensor slot of the R
 
 ###### WisBlock IO
 
-A WisBlock IO module is designed to be installed on the IO slot of the RAK5005-O Base Board. There is a single IO slot in the RAK5005-O Base Board. As shown in **Figure 18**, the location is properly marked by silkscreen. Follow carefully the procedure of the section, [attaching a WisConnector](/Product-Categories/WisBlock/RAK5005-O/Quickstart/#attaching-a-wisconnector/), to attach a WisBlock Sensor module. Once attached, fix the module with three pieces of M1.2 x 3mm screws. 
+A WisBlock IO module is designed to be installed on the IO slot of the RAK5005-O Base Board. There is a single IO slot in the RAK5005-O Base Board. As shown in **Figure 18**, the location is properly marked by silkscreen. Follow carefully the procedure of the section, [attaching a WisConnector](/Product-Categories/WisBlock/RAK5005-O/Quickstart/#attaching-a-wisconnector/), to attach a WisBlock Sensor module. Once attached, fix the module with three pieces of M1.2 x 3&nbsp;mm screws. 
 
 
 <rk-img
@@ -301,7 +303,7 @@ Figure 5 shows how to mount a **WisBlock Core** module on top of a **WisBlock Ba
 
 ##### Disassembling WisBlock Core
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock module is the same. 
 
 1. First, remove the screws.  
 
@@ -342,7 +344,7 @@ As shown in Figure 8, the location for Slot A, B, C, and D are properly marked b
 
 ##### Disassembling WisBlock Module
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock module is the same. 
 
 1. First, remove the screws.  
 
@@ -431,6 +433,4 @@ To quickly build your IoT device with less hassle, example codes for WisBlock Co
 
 You can access the codes on the [WisBlock Example code repository](https://github.com/RAKWireless/WisBlock/tree/master/examples). The example codes on folder `common` are compatible with RAK4631 and RAK11200 WisBlock cores.
 
-
- 
 

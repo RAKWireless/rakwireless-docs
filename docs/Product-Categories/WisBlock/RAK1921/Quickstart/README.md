@@ -20,7 +20,7 @@ This guide introduces the WisBlock Sensor RAK1921 board and how to use it.
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK1921 WisBlock module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK1921 WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware 
 
@@ -53,9 +53,7 @@ Install [RAK_PATCH on PlatformIO](https://github.com/RAKWireless/WisBlock/blob/m
 
 ### Hardware Setup
 
-The RAK1921 module is compatible with WisBlock Base Boards. The WisBlock Base Board has a dedicated I2C port with a 2.54&nbsp;mm header (J12) and RAK1921 is assembled, as shown in Figure 1.
-
-**Also, RAK1921 is not compatible with the WisDuo Evaluation Boards (different pinout on the same header J12)**.
+The RAK1921 module is compatible with WisBlock Base Boards. The WisBlock Base Board has a dedicated I2C port with a 2.54&nbsp;mm header (J12) and RAK1921 is assembled, as shown in **Figure 1**. Also, RAK1921 is not compatible with the WisDuo Evaluation Boards (different pinout on the same header J12).
 
 <rk-img
   src="/assets/images/wisblock/rak1921/quickstart/exa-rak1921-rak1906-assy-2.png"
@@ -137,7 +135,7 @@ Selecting RAK11310 as WisBlock Core.
   caption="Install RAK1921 Example libraries"
 />
 
-4. Click on the **Install** button to install **U8g2 Library**.
+4. Click on the **Install** button to install the **U8g2 Library**.
 
 <rk-img
   src="/assets/images/wisblock/rak1921/quickstart/u8g2-arduino.png"
@@ -145,7 +143,7 @@ Selecting RAK11310 as WisBlock Core.
   caption="Install U8g2 Library"
 />
 
-5. Click on the **Install** button to install **Adafruit BME680 Library**.
+5. Click on the **Install** button to install the **Adafruit BME680 Library**.
 
 <rk-img
   src="/assets/images/wisblock/rak1921/quickstart/bme680-arduino.png"
@@ -179,8 +177,9 @@ Click on **Tools** -> **Port** then select the correct COM port.
 #### Testing an Alternative OLED Library for RAK11200
 
 1. In Arduino IDE, select **WisCore RAK11200 Board** on **Tools** -> **Boards Manager** -> **RAKwireless ESP32 modules**.
-
-2. Install **ThingPulse library** on RAK11200. Open Arduino IDE then go to **Sketch** -> **Include Library** -> **Manage Library**. In the Library Manager text area, search for **esp32 oled**, then click the **Install** button.
+2. Install **ThingPulse library** on RAK11200. 
+3. Open Arduino IDE then go to **Sketch** -> **Include Library** -> **Manage Library**. 
+4. In the Library Manager text area, search for **esp32 oled**, then click the **Install** button.
 
 <rk-img
   src="/assets/images/wisblock/rak1921/quickstart/thingpulse-library.png"
@@ -188,7 +187,7 @@ Click on **Tools** -> **Port** then select the correct COM port.
   caption="Install ThingPulse Library on Arduino"
 />
 
-3. After successful installation of the library, open **ThingPulse SimpleDemo example**.
+5. After successful installation of the library, open the **ThingPulse SimpleDemo example**.
 
 <rk-img
   src="/assets/images/wisblock/rak1921/quickstart/thingpulse-example.png"

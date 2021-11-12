@@ -15,7 +15,7 @@ next: ../Datasheet/
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK1906 WisBlock module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK1906 WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware
 
@@ -29,15 +29,15 @@ Before going through each and every step on using RAK1906 WisBlock module, make 
 #### Software
 
 - Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software).
-- Install RAKwireless Arduino BSP and add the RAKwireless Core boards to your **Arduino Boards Manager**. Follow the steps in the [Github repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+- Install the RAKwireless Arduino BSP and add the RAKwireless Core boards to your **Arduino Boards Manager**. Follow the steps in the [Github repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
 ## Product Configuration
 
 ### Hardware Setup
 
-WisBlock can integrate this module which makes it easy to build up an environmental temperature and humidity data acquisition system. 
+WisBlock can integrate this module, which makes it easy to build up an environmental temperature and humidity data acquisition system. 
 
-For more information about RAK1906, refer to the [Datasheet](../Datasheet/).
+For more information about the RAK1906, refer to the [Datasheet](../Datasheet/).
 
 The RAK1906 module gives information about:
 
@@ -127,7 +127,6 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
 
 **RAK4631 WisBlock Core**
 
-RAK4631 Wisblock Core
 <rk-img
   src="/assets/images/wisblock/rak1906/quickstart/rak4631_board.png"
   width="100%"
@@ -170,7 +169,7 @@ RAK4631 Wisblock Core
   caption="Opening RAK1906 example code for RAK11310 WisBlock Core"
 />
 
-3. Once the example code is open, install the [Adafruit BME680](https://github.com/adafruit/Adafruit_BME680) library by clicking the yellow highlighted link, as shown in **Figure 12** and **Figure 13**.
+3. Once the example code is open, install the [Adafruit BME680](https://github.com/adafruit/Adafruit_BME680) library by clicking the link highlighted in yellow, as shown in **Figure 12** and **Figure 13**.
 
 <rk-img
   src="/assets/images/wisblock/rak1906/quickstart/adafruit-bme680.png"
@@ -206,7 +205,7 @@ During the installation, you will be asked to install the **Adafruit Unified Sen
   caption="Uploading the RAK1906 example code"
 />
 
-The RAK1906_Environment_BME680 application gets BME680 sensor data every 5 seconds and print the results on serial port.
+The RAK1906_Environment_BME680 application gets BME680 sensor data every 5 seconds and prints the results on the serial port.
 
 ```js
 Temperature = 30.66 *C
@@ -229,18 +228,18 @@ Gas = 3.87 KOhms
 
 This solution shows how to create an environmental data sensor node. The sensor node measures air temperature, air humidity, barometric pressure, and gas levels. After the node joins to server successfully, it then transmits this data periodically to a LoRaWan® server. 
 
-These are the quick links that go directly to the specific WisBlock Core module solution that you can use in your RAK1906 project.
+These are the quick links that go directly to the specific WisBlock Core module solution that you can use in your RAK1906 project:
 
 - [RAK1906 solution for RAK4631](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Environment_Monitoring)
 - [RAK1906 solution for RAK11310](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/solutions/Environment_Monitoring)
 
 ### RAK4631 Solution Requirements
 
-- WisBlock Base RAK5005-O * 1pcs   
-- WisBlock Core RAK4631 * 1pcs   
-- WisBlock Sensor RAK1906 * 1pcs
-- WisBlock Display RAK1921 * 1pcs
-- LoRa Gateway * 1pcs  
+- 1 pc WisBlock Base RAK5005-O   
+- 1 pc WisBlock Core RAK4631   
+- 1 pc WisBlock Sensor RAK1906
+- 1 pc WisBlock Display RAK1921 
+- 1 pc LoRa Gateway 
 - [Arduino IDE](https://www.arduino.cc/en/Main/Software)
 - [RAK4630 BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) 
 - [Adafruit BME680 Library](https://github.com/adafruit/Adafruit_BME680)
@@ -249,11 +248,11 @@ These are the quick links that go directly to the specific WisBlock Core module 
 
 ### RAK11310 Solution Requirements
 
-- WisBlock Base RAK5005-O * 1pcs   
-- WisBlock Core RAK11310 * 1pcs   
-- WisBlock Sensor RAK1906 * 1pcs
-- WisBlock Display RAK1921 * 1pcs
-- LoRa Gateway * 1pcs  
+- 1 pc WisBlock Base RAK5005-O   
+- 1 pc WisBlock Core RAK11310  
+- 1 pc WisBlock Sensor RAK1906
+- 1 pc WisBlock Display RAK1921
+- 1 pc LoRa Gateway
 - [Arduino IDE](https://www.arduino.cc/en/Main/Software)
 - [Arduino BSP for RAK11300 module](https://github.com/RAKWireless/RAK-RP-Arduino) 
 - [Adafruit BME680 Library](https://github.com/adafruit/Adafruit_BME680)
@@ -267,7 +266,7 @@ There are configurations that you need to setup to ensure that the device can jo
 
 The steps below will explain the default settings and how to configure it.
 
-1. Setup the LoRa Region.
+1. Set up the LoRa Region.
 
 Default region is EU868.
 
@@ -277,7 +276,7 @@ LoRaMacRegion_t g_CurrentRegion = LORAMAC_REGION_EU868;
 
 You can change this to a region that is applicable to you like `LORAMAC_REGION_US915`, `LORAMAC_REGION_AU915`, etc.
 
-2. Setup the LoRaWAN activation method.
+2. Set up the LoRaWAN activation method.
 
 Default is **OTAA**.
 
@@ -287,7 +286,7 @@ bool doOTAA = true;
 
 To configure the device to ABP, you need to make this boolean variable `false`.
 
-3. Setup the message type if confirmed or not.
+3. Set up the message type if confirmed or not.
 
 Default is **confirmed message**.
 
@@ -297,7 +296,7 @@ lmh_confirm g_CurrentConfirm = LMH_CONFIRMED_MSG;
 
 You can change to unconfirmed message by changing the value to `LMH_UNCONFIRMED_MSG`.
 
-4. Setup device class.
+4. Set up device class.
 
 Default is **Class A**.
 
@@ -307,7 +306,7 @@ DeviceClass_t g_CurrentClass = CLASS_A;
 
 You can change this to **CLASS_B** (still under development) or **CLASS_C**.
 
-5. Setup the keys.
+5. Set up the keys.
 
 - Configuration keys for OTAA Activation:
 
@@ -325,7 +324,7 @@ uint8_t nodeNwsKey[16] = {0x7E, 0xAC, 0xE2, 0x55, 0xB8, 0xA5, 0xE2, 0x69, 0x91, 
 uint8_t nodeAppsKey[16] = {0xFB, 0xAC, 0xB6, 0x47, 0xF3, 0x58, 0x45, 0xC7, 0x50, 0x7D, 0xBF, 0x16, 0x8B, 0xA8, 0xC1, 0x7C};
 ```
 
-6. Setup uplink period.
+6. Set up uplink period.
 
 The default is **20000&nbsp;mS**. 
 
@@ -351,7 +350,7 @@ The default is **20000&nbsp;mS**.
   - Byte1 is a marker for the data type, here always 1.    
   - Every byte value is MSB first.
   - Temperature is sent as two bytes, enlarged 100 times for accuracy. For example, 2510 means 25.01 C, sent as 0x09 0xCE.
-  - Humidity is sent as two bytes, enlarged 100 times for accuracy. For example, 4173 means 41.73%, sent as  0x10 0x4D.
+  - Humidity is sent as two bytes, enlarged 100 times for accuracy. For example, 4173 means 41.73%, sent as 0x10 0x4D.
   - Barometric pressure is sent as four bytes, enlarged 100 times for accuracy. For example, 100945 means 1009.45&nbsp;hPa, sent as 0x00 0x01 0x8A 0x51.
   - Gas resistance is sent as four bytes. For example, 63560&nbsp;Ohm, sent as 0x00 0x00 0xF8 0x48.
 

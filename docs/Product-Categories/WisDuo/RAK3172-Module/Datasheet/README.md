@@ -34,9 +34,9 @@ certifications:
 
 ### Description
 
-RAK3172 is a low-power long-range transceiver module based on the STM32WLE5CC chip. It provides an easy-to-use, small-size, low-power solution for long range wireless data applications. This module complies with Class A, B & C of the LoRaWAN 1.0.3 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point-to-Point (P2P) communication mode, which helps you implement your own customized long-range LoRa network quickly.
+RAK3172 is a low-power long-range transceiver module based on the STM32WLE5CC chip. It provides an easy-to-use, small-size, low-power solution for long-range wireless data applications. This module complies with Class A, B, & C of the LoRaWAN 1.0.3 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point-to-Point (P2P) communication mode, which helps you implement your own customized long-range LoRa network quickly.
 
-You can configure the mode and operation of the module using AT commands via a UART interface. RAK3172 also offers low-power features, which is very suitable for battery-powered applications.
+You can configure the mode and operation of the module using AT commands via a UART interface. RAK3172 also offers low-power features, which are very suitable for battery-powered applications.
 
 ### Features
 
@@ -60,7 +60,7 @@ There are two variants available for the RAK3172 Module: (1) with the CE & UKCA 
 :::
 ## Specifications
 
-This section covers the hardware and software specifications of RAK3172. Also, it includes the block diagram and the update firmware link of the RAK3172 WisDuo module.
+This section covers the hardware and software specifications of RAK3172. Also, it includes the block diagram and the updated firmware link of the RAK3172 WisDuo module.
 
 ### Overview
 
@@ -74,7 +74,7 @@ This section covers the hardware and software specifications of RAK3172. Also, i
 
 ### Hardware
 
-The hardware specification discusses the interfaces, pinouts and corresponding functions and diagrams. It also covers the parameters of both RAK3172 modules in terms of RF, electrical, mechanical, and operating characteristics.
+The hardware specification discusses the interfaces, pinouts and its corresponding functions and diagrams. It also covers the parameters of both RAK3172 modules in terms of RF, electrical, mechanical, and operating characteristics.
 
 #### Interfaces
 
@@ -128,21 +128,21 @@ The hardware specification discusses the interfaces, pinouts and corresponding f
 
 #### RF Characteristics
 
-The RAK3172 supports two different frequency variation: RAK3172(L) Low Radio Frequency and RAK3172(H) High Radio Frequency.
+The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Frequency and RAK3172(H) High Radio Frequency.
 
 ##### Operating Frequencies
 
-| Module     | Region        | Frequency |
-| ---------- | ------------- | --------- |
-| RAK3172(L) | Europe        | EU433     |
-|            | China         | CN470     |
-| RAK3172(H) | Europe        | EU868     |
-|            | North America | US915     |
-|            | Australia     | AU915     |
-|            | Korea         | KR920     |
-|            | Asia          | AS923-1/2/3/4     |
-|            | India         | IN865     |
-|            | Russia        | RU864     |
+| Module     | Region        | Frequency     |
+| ---------- | ------------- | ------------- |
+| RAK3172(L) | Europe        | EU433         |
+|            | China         | CN470         |
+| RAK3172(H) | Europe        | EU868         |
+|            | North America | US915         |
+|            | Australia     | AU915         |
+|            | Korea         | KR920         |
+|            | Asia          | AS923-1/2/3/4 |
+|            | India         | IN865         |
+|            | Russia        | RU864         |
 
 #### Electrical Characteristics
 
@@ -155,18 +155,18 @@ The RAK3172 supports two different frequency variation: RAK3172(L) Low Radio Fre
 
 ##### Operating Current
 
-| Feature           | Condition | Minimum                        | Typical | Maximum | Unit |
-| ----------------- | --------- | ------------------------------ | ------- | ------- | ---- |
-| Operating Current | TX Mode   | 87 (@&nbsp;20&nbsp;dBm 868Mhz) |         |         | mA   |
-|                   | RX Mode   | 5.22                           |         |         | mA   |
+| Feature           | Condition | Minimum                              | Typical | Maximum | Unit |
+| ----------------- | --------- | ------------------------------------ | ------- | ------- | ---- |
+| Operating Current | TX Mode   | 87 (@&nbsp;20&nbsp;dBm 868&nbsp;Mhz) |         |         | mA   |
+|                   | RX Mode   | 5.22                                 |         |         | mA   |
 
 ##### Sleep Current
 
-| Feature                   | Condition  | Minimum (2.1V) | Typical (3.3V) | Maximum | Unit |
-| ------------------------- | ---------- | -------------- | -------------- | ------- | ---- |
-| Current Consumption       | EU868      |                | 1.69           |         | μA   |
-|                           | US915      |                | -              |         | μA   |
-|                           | CN470      |                | 1.69           |         | μA   |
+| Feature             | Condition | Minimum (2.1V) | Typical (3.3V) | Maximum | Unit |
+| ------------------- | --------- | -------------- | -------------- | ------- | ---- |
+| Current Consumption | EU868     |                | 1.69           |         | μA   |
+|                     | US915     |                | -              |         | μA   |
+|                     | CN470     |                | 1.69           |         | μA   |
 
 :::tip 📝 NOTE:
 
@@ -225,7 +225,7 @@ Standard conditions for reflow soldering:
 
 ### Software
 
-Download the latest RAK3172 WisDuo LPWAN Module firmware provided below. RAK3172(L) and RAK3172(H) uses the same firmware and it will automatically detect the variant of the module being used.
+Download the latest RAK3172 WisDuo LPWAN Module firmware provided below. RAK3172(L) and RAK3172(H) use the same firmware and it will automatically detect the variant of the module being used.
 
 The **bin file** contains the application code only and you need the RAK DFU Tool to upload this file to the module.
 

@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisduo/rak3172-module/overview/RAK3172_Module_home.png
-rak_desc: RAK3172 Low-Power Long Range Transceiver module that is based on the STM32WLE5CC chip. It provides an easy to use, small size, low-power solution for long range wireless data applications.
+rak_desc: RAK3172 is a low-power long-range transceiver module based on the STM32WLE5CC chip. It provides an easy to use, small size, low-power solution for long-range wireless data applications.
 rak_grp: [wisduo, module]
 prev: ../../
 next: ../Quickstart/
@@ -10,7 +10,7 @@ tags:
 ---
 
 # RAK3172 WisDuo LPWAN Module
-Thank you for choosing **RAK3172 WisDuo LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK3172 WisDuo LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/)
 * [AT Command Manual](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/)
@@ -25,9 +25,9 @@ There are two variants available for the RAK3172 Module: (1) with the CE & UKCA 
 :::
 ## Product Description
 
-RAK3172 is a Low-Power Long Range Transceiver module that is based on STM32WLE5CC chip. It provides an easy to use, small size, low-power solution for long range wireless data applications. This module complies with Class A, B & C of LoRaWAN 1.0.3 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point-to-Point (P2P) communication mode which helps you in implementing your own customized long-range LoRa network quickly.
+RAK3172 is a low-power long-range transceiver module based on the STM32WLE5CC chip. It provides an easy-to-use, small-size, low-power solution for long-range wireless data applications. This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point-to-Point (P2P) communication mode which helps you in implementing your own customized long-range LoRa network quickly.
 
-You can configure the mode and operation of the module using AT commands via a UART interface. RAK3172 also offers low power features which is very suitable for battery-powered applications.
+You can configure the mode and operation of the module using AT commands via a UART interface. RAK3172 also offers low-power features that are very suitable for battery-powered applications.
 
 
 ## Product Features

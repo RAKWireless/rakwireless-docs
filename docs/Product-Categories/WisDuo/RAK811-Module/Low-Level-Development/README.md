@@ -14,7 +14,7 @@ tags:
 
 RAK811 module comes with a standard version of firmware that allows you to configure its functionality via AT commands. This simplicity helps you develop LoRa(P2P) and LoRaWAN projects quickly. 
 
-Further customization of the firmware can be done through the [RUI (RAKwireless Unified Interface) Online compiler](/RUI/). RAK's LoRaWAN node modules support not only out-of-the-box integration via AT commands, but it also allows you to customize RAK811 firmware and access other functionalities of the internal MCU using RUI API. More so, you can adapt and extend the logic in the firmware to meet your requirements.
+Further customization of the firmware can be done through the [RUI (RAKwireless Unified Interface) Online compiler](/RUI/). RAK's LoRaWAN node modules support not only out-of-the-box integration via AT commands but also allow you to customize RAK811 firmware and access other functionalities of the internal MCU using RUI API. More so, you can adapt and extend the logic in the firmware to meet your requirements.
 
 Additionally, RAK offers a third alternative for advanced customers who need to have deeper integration of their solutions with these modules. In this alternative, you could develop your own version of STM32 firmware that runs inside of the RAK811 module. 
 
@@ -27,17 +27,17 @@ One of the essential aspects that allow customers to develop their own version o
 
 :::tip 📝 NOTE:
 
-There are two versions of the RAK811 module: the high-frequency bands RAK811(H) used on EU868, US915, AU915, KR920, AS923, and IN865 , and the low-frequency bands RAK811(L) used on EU433 and CN470. These two modules have few differences in their schematic diagram that you should be aware of when you develop your own firmware. 
+There are two versions of the RAK811 module: the high-frequency bands RAK811(H) used on EU868, US915, AU915, KR920, AS923, and IN865, and the low-frequency bands RAK811(L) used on EU433 and CN470. These two modules have few differences in their schematic diagram that you should be aware of when you develop your own firmware. 
 
 :::
 
 ### Porting Lora Protocol Stack
 
-When implementing the LoRa protocol stack, special attention must be given in the SPI connections since the LoRa transceivers are controlled by the MCU through an SPI interface. Hence, the following are the important pins: **SPI1_MISO, SPI1_MOSI, SPI_NSS, SPI_CLK**. 
+When implementing the LoRa protocol stack, special attention must be given to the SPI connections since the LoRa transceivers are controlled by the MCU through an SPI interface. Hence, the following are the important pins: **SPI1_MISO, SPI1_MOSI, SPI_NSS, SPI_CLK**. 
 
 Additionally, the DIO pins and RF signal paths are significant as well to have functional LoRa communication. Another important thing to consider is the RF switch logic table. The complete details of pin connections can be found on the [RAK811 Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/). 
 
-After that, the **Real-Time Clock (RTC)** must be properly configured in the MCU to ensure accurate timing of protocol stack during the runtime. Finally, the protocol stack code can be added after configuring the other pins.
+After that, the **Real-Time Clock (RTC)** must be properly configured in the MCU to ensure accurate timing of the protocol stack during the runtime. Finally, the protocol stack code can be added after configuring the other pins.
 
 ### Application
 
@@ -47,7 +47,7 @@ Once the porting of the protocol stack is ready, you can focus on the developmen
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;b. Use RAK bootloader and the upgrade the custom firmware by using [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/).
 
-If you want to fully develop your own, you can refer to the schematic diagram and the datasheet of the MCU to implement the code. But if you want to use RAK bootloader, continue reading the next section.
+If you want to fully develop your own, you can refer to the schematic diagram and the datasheet of the MCU to implement the code. But if you want to use the RAK bootloader, continue reading the next section.
 
 ### Bootloader
 
@@ -72,7 +72,7 @@ Finally, the serial port to communicate with the RAK bootloader in these modules
 
 ### Application Requirements
 
-Since the RAK bootloader is stored between the 0x0800 0000 and 0x0800 2FFF segment of the flash memory, your application should be shifted accordingly. In the application code, you need to modify the interrupt vector table address as the following:
+Since the RAK bootloader is stored between the 0x0800 0000 and 0x0800 2FFF segments of the flash memory, your application should be shifted accordingly. In the application code, you need to modify the interrupt vector table address as the following:
 
 SCB->VTOR = FLASH_BASE | 0x3000;
 

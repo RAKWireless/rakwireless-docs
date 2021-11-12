@@ -13,7 +13,7 @@ tags:
 
 # RAK5860 WisBlock NB-IoT Interface Module
 
-Thank you for choosing **RAK5860 WisBlock NB-IoT Interface Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK5860 WisBlock NB-IoT Interface Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 
 * [Datasheet](../Datasheet/)
@@ -66,6 +66,6 @@ To use a **RAK5860**, you need at least a **WisBlock Base** to plug the module i
 
 :::warning ⚠️ WARNING    
 * When using the LTE transceivers, make sure that always an antenna is connected. Using the transceiver without an antenna can damage the system.    
-* The included active GPS antenna must be connected to the iPEX antenna connector on the board. Otherwise the module will not work.    
+* The included active GPS antenna must be connected to the iPEX antenna connector on the board. Otherwise, the module will not work.    
 * Make sure to fix the module with the screws to ensure a proper function.    
 :::

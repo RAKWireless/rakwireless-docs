@@ -11,7 +11,7 @@ tags:
 
 # RAK5804 WisBlock Interface Extension Module
 
-Thank you for choosing **RAK5804 WisBlock Interface Extension Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK5804 WisBlock Interface Extension Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [RAK5804 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
