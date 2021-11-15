@@ -12,7 +12,7 @@ tags:
 
 # RAK1903 WisBlock Ambient Light Sensor 
 
-Thank you for choosing **RAK1903 WisBlock Ambient Light Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK1903 WisBlock Ambient Light Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [RAK1903 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

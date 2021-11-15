@@ -12,7 +12,7 @@ tags:
 
 # RAK5005-O WisBlock Base Board
 
-Thank you for choosing **RAK5005-O WisBlock Base Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK5005-O WisBlock Base Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [RAK5005-O Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

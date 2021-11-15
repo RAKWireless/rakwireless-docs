@@ -22,7 +22,7 @@ This guide introduces the RAK13002 Wisblock IO Module and how to use it.
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK13002 WisBlock module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK13002 WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware
 
@@ -44,7 +44,7 @@ Before going through each and every step on using RAK13002 WisBlock module, make
 
 The RAK13002 WisBlock IO Module is designed as an IO extension module that allows you to connect external digital and analog modules to create a customized IoT solution. It supports two (2) I2C interfaces, two (2) UART interfaces, one (1) SPI Interface, six (6) GPIOs, and two (2) ADC interfaces. For more information about RAK13002, refer to the [Datasheet](../Datasheet/).
 
-The RAK13002 WisBlock IO Module can be mounted on the IO slot of the WisBlock Base board, as shown in **Figure 1**. Also, always secure the connection of the WisBlock module by using the compatible screws.
+The RAK13002 WisBlock IO Module can be mounted on the IO slot of the WisBlock Base board, as shown in **Figure 1**. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak13002/quickstart/connection.png"
@@ -127,7 +127,7 @@ For RAK13002, the accessible GPIO pin assignments are defined as follows in the 
 
 #### I2C Connection on RAK13002
 
-This is just an example and illustration on how to use the RAK13002 for external I2C sensors, modules, or devices. You can use any I2C devices as long as it operates at 3.3&nbsp;V.
+This is just an example and illustration on how to use the RAK13002 for external I2C sensors, modules, or devices. You can use any I2C device as long as it operates at 3.3&nbsp;V.
 
 <rk-img
   src="/assets/images/wisblock/rak13002/quickstart/I2C/lcd_connection.png"
@@ -135,7 +135,7 @@ This is just an example and illustration on how to use the RAK13002 for external
   caption="Connecting the RAK13002 to the I2C backpack of a 16x2 LCD"
 />
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 7** and **Figure 8**.
+1. You need to select first the WisBlock Core you have, as shown in **Figure 7** to **Figure 9**.
 
 <rk-img
   src="/assets/images/wisblock/rak13002/quickstart/selectboard4631.png"
@@ -149,7 +149,13 @@ This is just an example and illustration on how to use the RAK13002 for external
   caption="Selecting RAK11200 as WisBlock Core"
 />
 
-2. On the Arduino IDE, go to **Sketch > Include Library > Manage Libraries**. The Library Manager should open, then install the [LiquidCrystal I2C](https://github.com/johnrickman/LiquidCrystal_I2C) library, as shown in **Figure 9**.
+<rk-img
+  src="/assets/images/wisblock/rak13002/quickstart/rak11300_board.png"
+  width="100%"
+  caption="Selecting RAK11300 as WisBlock Core"
+/>
+
+2. On the Arduino IDE, go to **Sketch > Include Library > Manage Libraries**. The Library Manager should open, then install the [LiquidCrystal I2C](https://github.com/johnrickman/LiquidCrystal_I2C) library, as shown in **Figure 10**.
 
 <rk-img
   src="/assets/images/wisblock/rak13002/quickstart/I2C/i2c_library.png"
@@ -193,7 +199,7 @@ void start_display(){
   
 }
 ```
-4. Then select the right Serial Port and upload the code, as shown in **Figure 10** and **Figure 11**.
+4. Then select the right Serial Port and upload the code, as shown in **Figure 11** and **Figure 12**.
 
 <rk-img
   src="/assets/images/wisblock/rak13002/quickstart/I2C/select_port.png"
@@ -207,7 +213,7 @@ void start_display(){
   caption="Uploading the sample code"
 />
 
-5. When you successfully uploaded the sample code, you will now be able to see the "RAK13002 EXAMPLE" in your LCD screen as shown in **Figure 12**, which means that the module is properly communicating with the WisBlock core using the I2C protocol.
+5. When you successfully uploaded the sample code, you will now be able to see the "RAK13002 EXAMPLE" in your LCD screen, as shown in **Figure 13**, which means that the module is properly communicating with the WisBlock core using the I2C protocol.
 
 <rk-img
   src="/assets/images/wisblock/rak13002/quickstart/I2C/lcd_output.png"
@@ -278,7 +284,7 @@ void loop()
 
 ```
 
-7. Your device's I2C address should be displayed on the Serial Monitor, as shown in **Figure 13**
+7. Your device's I2C address should be displayed on the Serial Monitor, as shown in **Figure 14**.
 
 <rk-img
   src="/assets/images/wisblock/rak13002/quickstart/I2C/serial_scan.png"
@@ -289,7 +295,7 @@ void loop()
 
 #### GPIO Connection on RAK13002
 
-This is just an example and illustration on how to use the GPIO pins of RAK13002 for external sensors, modules, or devices. There are six (6) GPIO pins available on the RAK13002. You can use any of the GPIO pins as long as your modules, sensors, or devices operates at 3.3&nbsp;V.
+This is just an example and illustration on how to use the GPIO pins of RAK13002 for external sensors, modules, or devices. There are six (6) GPIO pins available on the RAK13002. You can use any of the GPIO pins as long as your modules, sensors, or devices operate at 3.3&nbsp;V.
 
 <rk-img
   src="/assets/images/wisblock/rak13002/quickstart/IO/pushbutton.png"
@@ -298,7 +304,7 @@ This is just an example and illustration on how to use the GPIO pins of RAK13002
 />
 
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 15** and **Figure 16**.
+1. You need to select first the WisBlock Core you have, as shown in **Figure 16** to **Figure 18**.
 
 <rk-img
   src="/assets/images/wisblock/rak13002/quickstart/selectboard4631.png"
@@ -310,6 +316,12 @@ This is just an example and illustration on how to use the GPIO pins of RAK13002
   src="/assets/images/wisblock/rak13002/quickstart/selectboard11200.png"
   width="100%"
   caption="Selecting RAK11200 as WisBlock Core"
+/>
+
+<rk-img
+  src="/assets/images/wisblock/rak13002/quickstart/rak11300_board.png"
+  width="100%"
+  caption="Selecting RAK11300 as WisBlock Core"
 />
 
 
@@ -357,7 +369,7 @@ void loop() {
 }
 ```
 
-3. Then select the right Serial Port and upload the code, as shown in **Figure 17** and **Figure 18**.
+3. Then select the right Serial Port and upload the code, as shown in **Figure 19** and **Figure 20**.
 
 <rk-img
   src="/assets/images/wisblock/rak13002/quickstart/IO/select_port.png"
@@ -372,7 +384,7 @@ void loop() {
 />
 
 
-4. When you successfully uploaded the sample code, open the Serial Monitor of the Arduino IDE to see the button's reading logs. Try pressing the button, and if you see the logs, as shown in **Figure 19**, then your module or sensor is properly communicating to the WisBlock core using the Digital Interface.
+4. When you successfully uploaded the sample code, open the Serial Monitor of the Arduino IDE to see the button's reading logs. Try pressing the button, and if you see the logs, as shown in **Figure 21**, then your module or sensor is properly communicating to the WisBlock core using the Digital Interface.
 
 <rk-img
   src="/assets/images/wisblock/rak13002/quickstart/IO/IO_output.png"
@@ -383,7 +395,7 @@ void loop() {
 
 #### Analog Input (ADC) Connection on RAK13002 
 
-This is just an example and illustration on how to use the ADC pin of RAK13002 for external sensors, modules, or devices. There are two (2) ADC pins available on the RAK13002 that you can use as long as your modules, sensors, or devices operates at 3.3&nbsp;V.
+This is just an example and illustration on how to use the ADC pin of RAK13002 for external sensors, modules, or devices. There are two (2) ADC pins available on the RAK13002 that you can use as long as your modules, sensors, or devices operate at 3.3&nbsp;V.
 
 <rk-img
   src="/assets/images/wisblock/rak13002/quickstart/ADC/soil_connection.png"
@@ -391,7 +403,7 @@ This is just an example and illustration on how to use the ADC pin of RAK13002 f
   caption="Connecting the RAK13002 to the ADC pin of the sensor module"
 />
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 21** and **Figure 22**.
+1. You need to select first the WisBlock Core you have, as shown in **Figure 23** to **Figure 25**.
 
 <rk-img
   src="/assets/images/wisblock/rak13002/quickstart/selectboard4631.png"
@@ -403,6 +415,12 @@ This is just an example and illustration on how to use the ADC pin of RAK13002 f
   src="/assets/images/wisblock/rak13002/quickstart/selectboard11200.png"
   width="100%"
   caption="Selecting RAK11200 as WisBlock Core"
+/>
+
+<rk-img
+  src="/assets/images/wisblock/rak13002/quickstart/rak11300_board.png"
+  width="100%"
+  caption="Selecting RAK11300 as WisBlock Core"
 />
 
 2. Copy the following sample code into your Arduino IDE:
@@ -433,7 +451,7 @@ void readSensor(){
 }
 ```
 
-3. Then select the right Serial Port and upload the code, as shown in **Figure 23** and **Figure 24**.
+3. Then select the right Serial Port and upload the code, as shown in **Figure 26** and **Figure 27**.
 
 <rk-img
   src="/assets/images/wisblock/rak13002/quickstart/ADC/select_port.png"
@@ -447,7 +465,7 @@ void readSensor(){
   caption="Uploading the sample code"
 />
 
-4. When you successfully uploaded the sample code, open the Serial Monitor of the Arduino IDE to see the module's reading logs. If you see the logs, as shown in **Figure 25**, then your module or sensor is properly communicating to the WisBlock core using the Analog Interface.
+4. When you successfully uploaded the sample code, open the Serial Monitor of the Arduino IDE to see the module's reading logs. If you see the logs, as shown in **Figure 28**, then your module or sensor is properly communicating to the WisBlock core using the Analog Interface.
 
 <rk-img
   src="/assets/images/wisblock/rak13002/quickstart/ADC/soil_moisture.png"

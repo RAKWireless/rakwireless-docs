@@ -11,7 +11,7 @@ tags:
 
 # RAK13002 WisBlock IO Module
 
-Thank you for choosing **RAK13002 WisBlock IO Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK13002 WisBlock IO Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [RAK13002 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -25,7 +25,7 @@ Thank you for choosing **RAK13002 WisBlock IO Module** in your awesome IoT Proje
 
 For All WisBlock Core:
 
-* [Sample Code: WisBlock IO Module](https://github.com/RAKWireless/WisBlock/tree/master/examples)
+* [Sample Code: WisBlock IO Module](/Product-Categories/WisBlock/RAK13002/Quickstart/#software-configuration-and-example)
 
 ## Product Description
 

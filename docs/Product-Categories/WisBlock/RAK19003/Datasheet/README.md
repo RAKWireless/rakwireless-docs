@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisblock
   - RAK19003
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 
 ---
@@ -127,7 +127,7 @@ On the WisBlock Mini Base board, there are two of 2.54&nbsp;mm pitch header for 
 | 4       | SDA          | I2C1 Data       |
 
 
-###### J7 Header inout 
+###### J7 Header Pinout 
 
 
 | **Pin** | **Pin Name** | **Description** |
@@ -139,7 +139,7 @@ On the WisBlock Mini Base board, there are two of 2.54&nbsp;mm pitch header for 
 
 
 :::tip 📝 NOTE BOOT pin 
-BOOT pin is used on startup configuration or sequence of the WisBlock Core connected to it. It is commonly is for uploading the bootloader and/or application firmware. The requirements of the state of the BOOT pin depend on the specific model of the WisBlock Core used.
+BOOT pin is used on startup configuration or sequence of the WisBlock Core connected to it. It is commonly used for uploading the bootloader and/or application firmware. The requirements of the state of the BOOT pin dependsS on the specific model of the WisBlock Core used.
 :::
 
 ##### Battery Connector

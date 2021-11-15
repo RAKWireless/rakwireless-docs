@@ -12,7 +12,7 @@ tags:
 
 # RAK12005 WisBlock Rain Sensor Module
 
-Thank you for choosing **RAK12005 WisBlock Rain Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK12005 WisBlock Rain Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [RAK12005 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

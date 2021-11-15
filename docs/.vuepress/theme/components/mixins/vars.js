@@ -58,20 +58,42 @@ export default {
     </script>
   `,
   homeOG: `
+    <title>RAKwireless Documentation Center</title>
+
     <meta name="title" content="RAKwireless Documentation Center">
+
     <meta property="og:type" content="website">
-    <meta property="og:title" content="The Official Website of RAKwireless - Where IoT Is Made Easy - RAKwireless - IoT Made Easy">
-    <meta property="og:description" content="RAKwireless is a leading IoT solutions provider that constantly commits to the production of high-quality LoRa® gateways, sensors, kits and accessories for everyone to use.">
-    <meta property="og:image" content="https://www.rakwireless.com/resources/rak/logo/blue-dark-c.png">
-    <meta property="og:url" content="https://www.rakwireless.com/en-us">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:title" content="RAKwireless Documentation Center">
+    <meta property="og:description" content="The RAK Documentation Center is a perfect place to find comprehensive documents curated by our tech experts that help you explore the potential of our products on the Internet of Things (IoT).">
+    <meta property="og:image" content="https://res.rakwireless.com/tracked/rak/logo/rakwireless-logo.png">
     <meta property="og:site_name" content="RAK Documentation Center">
-    <meta property="og:url" content="https://docs.rakwireless.com/">
-    <meta property="og:image" content="https://docs.rakwireless.com/assets/rakwireless/RAK-favicon-blue.png">
+    <meta property="og:url" content="https://docs.rakwireless.com/Introduction/
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@RAKwireless">
+    <meta property="twitter:url" content="https://docs.rakwireless.com/">
     <meta name="twitter:title" content="RAKwireless Documentation Center">
-    <meta name="twitter:description" content="The RAK® Documentation Center is a perfect place to find comprehensive documents curated by our tech experts that help you explore the potential of our products on the Internet of Things (IoT).">
+    <meta name="twitter:description" content="The RAK Documentation Center is a perfect place to find comprehensive documents curated by our tech experts that help you explore the potential of our products on the Internet of Things (IoT).">
+    <meta property="twitter:image" content="https://res.rakwireless.com/tracked/rak/logo/rakwireless-logo.png">
+  `,
+
+  introductionOG: `
+    <title>Introduction | RAKwireless Documentation Center</title>
+
+    <meta name="title" content="Introduction | RAKwireless Documentation Center">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Introduction | RAKwireless Documentation Center">
+    <meta property="og:description" content="The RAK Documentation Center is a perfect place to find comprehensive documents curated by our tech experts that help you explore the potential of our products on the Internet of Things (IoT).">
+    <meta property="og:image" content="https://res.rakwireless.com/tracked/rak/logo/rakwireless-logo.png">
+    <meta property="og:site_name" content="RAK Documentation Center">
+    <meta property="og:url" content="https://docs.rakwireless.com/Introduction/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@RAKwireless">
+    <meta property="twitter:url" content="https://docs.rakwireless.com/Introduction/">
+    <meta name="twitter:title" content="Introduction | RAKwireless Documentation Center">
+    <meta name="twitter:description" content="The RAK Documentation Center is a perfect place to find comprehensive documents curated by our tech experts that help you explore the potential of our products on the Internet of Things (IoT).">
+    <meta property="twitter:image" content="https://res.rakwireless.com/tracked/rak/logo/rakwireless-logo.png">
   `,
   pageOG: `
     <meta property="og:title" content="<title>">

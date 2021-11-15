@@ -2,8 +2,8 @@
 rak_img: /assets/images/wisblock/rak19003/overview/RAK19003_home.png
 rak_desc: RAK19003 is a mini base board that connects a WisBlock Core and two WisBlock modules together. It also provides the power supply for the attached WisBlock modules.
 rak_grp: [wisblock, wisbase]
+next: ../Quickstart/
 prev: ../../
-next: ../Datasheet/
 tags:
     - RAK19003
     - wisblock
@@ -12,8 +12,9 @@ tags:
 
 # RAK19003 WisBlock Mini Base Board
 
-Thank you for choosing **RAK19003 WisBlock Mini Base Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK19003 WisBlock Mini Base Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
+* [RAK19003 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
