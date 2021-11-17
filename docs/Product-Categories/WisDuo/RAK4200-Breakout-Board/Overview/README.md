@@ -12,32 +12,21 @@ tags:
 ---
 
 # RAK4200 Breakout Board
-Thank you for choosing **RAK4200 Breakout Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK4200 Breakout Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
-<!-- 
-<rk-img
-  :src="`${$frontmatter.static_root}/peojuzuyfj5wzl51igyk.jpg`"
-  width="50%"
-  caption="RAK4200 Breakout Board"
-/> -->
+* 
 
 ## Product Description
 
-**RAK4200 Breakout Board** is specifically designed to allow easy access to the pins on the board in order to simplify development and testing. The breakout board footprint is based on XBee form factor and its main purpose is to allow the RAK4200 stamp module pins to be transferred to 2.54&nbsp;mm headers.
+**RAK4200 Breakout Board** is specifically designed to allow easy access to the pins on the board in order to simplify development and testing. The breakout board footprint is based on the XBee form factor, and its main purpose is to allow the RAK4200 stamp module pins to be transferred to 2.54&nbsp;mm headers.
 
 The board itself has the RAK4200 at its core, integrating an **STM32L071KB MCU** and an **SX1276 LoRa transceiver**. It has Ultra-Low Power Consumption of 9.40&nbsp;uA (down to 1.08&nbsp;μA @ 2.0&nbsp;V) in sleep mode and high LoRa output power (19&nbsp;dBm) in work mode.
 
 The board complies with LoRaWAN 1.0.2 specification. It also supports Lora P2P Point-to-Point communication.
 
-The low power, long range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors and monitors, etc.).
-
-<!-- <rk-btn
-  src="/Product-Categories/WisDuo/RAK4200-Breakout-Board/Quickstart/#quick-start-guide"
-  label="Get Started with RAK4200 Breakout Board"
-/> -->
-
+The low-power, long-range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field, such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors and monitors, etc.).
 
 
 ## Product Features

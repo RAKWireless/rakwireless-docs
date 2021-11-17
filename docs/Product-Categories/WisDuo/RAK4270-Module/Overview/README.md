@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisduo/rak4270-module/overview/RAK4270_Module_Home.png
-rak_desc: The RAK4270 module is designed to simplify LoRa peer to peer and LoRaWAN communication. he module is suitable for various applications that require long range data acquisition and low power consumption, such as smart meters, agricultural sensors, and smart cities.
+rak_desc: The RAK4270 module is designed to simplify LoRa peer-to-peer and LoRaWAN communication. the module is suitable for various applications that require long-range data acquisition and low power consumption, such as smart meters, agricultural sensors, and smart cities.
 rak_grp: [wisduo, module]
 prev: ../../
 next: ../Quickstart/
@@ -11,7 +11,7 @@ tags:
 
 # RAK4270 WisDuo LPWAN Module
 
-Thank you for choosing **RAK4270 WisDuo LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK4270 WisDuo LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 - [Quick Start Guide](/Product-Categories/WisDuo/RAK4270-Module/Quickstart/)
 - [AT Command Manual](/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/)
@@ -21,11 +21,11 @@ Thank you for choosing **RAK4270 WisDuo LPWAN Module** in your awesome IoT Proje
 - [RAK4270 Module 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/PWB-RAK4270.stp)
 ## Product Description
 
-The RAK4270 LoRa Module includes an **STM32L071 MCU** and an **SX1262** LoRa chip, which supports eight spreading factors (SF5 ~ SF12) and signal bandwidth that can be adjusted between 7.8&nbsp;kHz to 500&nbsp;kHz. It has Ultra-Low Power Consumption of 2.31&nbsp;μA (down to 1.61&nbsp;μA @ 2.0&nbsp;V) in sleep mode, but during the Transmit Mode, it can reach the maximum output power of 22&nbsp;dBm. As a receiver, it can achieve a sensitivity of -148&nbsp;dBm.
+The RAK4270 LoRa Module includes an **STM32L071 MCU** and an **SX1262** LoRa chip, which supports eight spreading factors (SF5 ~ SF12) and signals bandwidth that can be adjusted between 7.8&nbsp;kHz to 500&nbsp;kHz. It has Ultra-Low Power Consumption of 2.31&nbsp;μA (down to 1.61&nbsp;μA @ 2.0&nbsp;V) in sleep mode, but during the Transmit Mode, it can reach the maximum output power of 22&nbsp;dBm. As a receiver, it can achieve a sensitivity of -148&nbsp;dBm.
 
 The module complies with Class A and C of LoRaWAN 1.0.2 specifications, and it also supports LoRa Point-to-Point (P2P) communications. The module is suitable for various applications that require long-range data acquisition and low power consumption, such as smart meters, supply chain and logistics tracking, agricultural sensors, and smart cities.
 
-You can configure the mode and operation of the RAK4270 module using the [AT Commands](/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/) via a UART interface. Also, it offers low power features which is very suitable for battery powered applications.
+You can configure the mode and operation of the RAK4270 module using the [AT Commands](/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/) via a UART interface. Also, it offers low-power features that are very suitable for battery-powered applications.
 
 ## Features
 

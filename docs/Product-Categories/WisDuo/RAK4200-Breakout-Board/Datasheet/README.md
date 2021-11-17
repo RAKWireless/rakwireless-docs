@@ -23,13 +23,13 @@ prev: ../Quickstart/
 
 ### Description
 
-**RAK4200 Breakout Board** is specifically designed to allow easy access to the pins on the board in order to simplify development and testing. The breakout board footprint is based on XBee form factor and its main purpose is to allow the RAK4200 stamp module pins to be transferred to 2.54&nbsp;mm headers.
+**RAK4200 Breakout Board** is specifically designed to allow easy access to the pins on the board in order to simplify development and testing. The breakout board footprint is based on the XBee form factor, and its main purpose is to allow the RAK4200 stamp module pins to be transferred to 2.54&nbsp;mm headers.
 
 The board itself has the RAK4200 at its core, integrating an **STM32L071KB MCU** and an **SX1276 LoRa transceiver**. It has Ultra-Low Power Consumption of 9.40&nbsp;uA (down to 1.08&nbsp;μA @ 2.0&nbsp;V) in sleep mode and high LoRa output power (19&nbsp;dBm) in work mode.
 
 The board complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P Point-to-Point communication.
 
-The low power, long range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors and monitors, etc.).
+The low-power, long-range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field, such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors and monitors, etc.).
 
 ### Features
 
@@ -50,7 +50,7 @@ The low power, long range LoRa communication capabilities of the board make it s
 
 ### Overview
 
-The RAK4200 Breakout Board is shown in Figure 1. It displays the top view of the board.
+The RAK4200 Breakout Board is shown in **Figure 1**. It displays the top view of the board.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/datasheet/rak4200-breakout-board-illustration.png"
@@ -81,7 +81,7 @@ For the aforementioned reason, it is best you leave these exposed for programmin
 
 ##### UART Port
 
-There are two UART interfaces on RAK4200 Breakout Board:
+There are two UART interfaces on the RAK4200 Breakout Board:
 
 - **UART1** – recommended for debugging/firmware update
 - **UART2** – recommended for external MCU connection.
@@ -107,7 +107,7 @@ For the aforementioned reason, it is best you leave unconnected.
 
 #### Pin Definition
 
-Figure 2 shows the pinout of the RAK4200 Breakout Board:
+**Figure 2** shows the pinout of the RAK4200 Breakout Board:
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/datasheet/rak4200-breakout-board-pinout.png"
@@ -115,14 +115,14 @@ Figure 2 shows the pinout of the RAK4200 Breakout Board:
   caption="RAK4200 Breakout Board Pinout"
 />
 
-The pin definitions of RAK4200 Breakout Board are shown in the following tables below:
+The pin definitions of the RAK4200 Breakout Board are shown in the following tables below:
 
 ##### J1 Pin Definitions
 
 | Pin | Name     | I/O | Description                                     | Alternate functions                                                          |
 | --- | -------- | --- | ----------------------------------------------- | ---------------------------------------------------------------------------- |
-| 1   | UART2_RX | I   | UART2 Interface (AT Commands) (STM32L071 PA3)                       | USART1RX, I2C1 SDA                                                           |
-| 2   | UART2_TX | O   | UART2 Interface (AT Commands) (STM32L071 PA2)                       | MCO, USART1TX, I2C1 SCL, I2C3_SMBA                                           |
+| 1   | UART2_RX | I   | UART2 Interface (AT Commands) (STM32L071 PA3)   | USART1RX, I2C1 SDA                                                           |
+| 2   | UART2_TX | O   | UART2 Interface (AT Commands) (STM32L071 PA2)   | MCO, USART1TX, I2C1 SCL, I2C3_SMBA                                           |
 | 3   | UART2_DE | I/O | GPIO (STM32L071 PA1)                            | SPI1MOSI, EVENT OUT, USART1_RTS_DE, COMP2_OUT                                |
 | 4   | UART1_DE | I/O | GPIO or UART (Reserved) GPIO or UART (Reserved) | EVENT OUT, TIM2_CH2, USART2_RTS_DE, TIM21_ETR, USART4_RX, COMP1_INP, ADC_IN1 |
 | 5   | SWDIO    | I/O | Programming (STM32L071 PA13)                    | SWDIO, LPUART1_RX                                                            |
@@ -132,16 +132,16 @@ The pin definitions of RAK4200 Breakout Board are shown in the following tables 
 
 ##### J2 Pin Definitions
 
-| Pin | Name     | I/O | Description                              | Alternate Functions                                                       |
-| --- | -------- | --- | ---------------------------------------- | ------------------------------------------------------------------------- |
-| 1   | VDD      | -   | DC3V3                                    | Supply voltage 2.0~3.3V                                                   |
+| Pin | Name     | I/O | Description                                                  | Alternate Functions                                                       |
+| --- | -------- | --- | ------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| 1   | VDD      | -   | DC3V3                                                        | Supply voltage 2.0~3.3V                                                   |
 | 2   | UART1_TX | I/O | UART1 Interface (AT Commands and FW Update) (STM32L071 PA9)  | TIM21_CH1, TIM2_CH3, USART2_TX, LPUART1_TX, COMP2_OUT, COMP2_INM, ADC_IN2 |
 | 3   | UART1_RX | I/O | UART1 Interface (AT Commands and FW Update) (STM32L071 PA10) | TIM21*CH2, TIM2* CH4, USART2_RX, LPUART1_RX, COMP2_INP, ADC_IN3           |
-| 4   | GND      | -   | Ground                                   | -                                                                         |
-| 5   | MCU_NRST | I/O | MCU reset (STM32L071 NRST)               | -                                                                         |
-| 6   | SPI_CLK  | I/O | Reserved PA5                             | Internal connection to **SX1276 SPI_CLK**                                 |
-| 7   | SPI_MISO | I/O | Reserved PA6                             | Internal connection to **SX1276 SPI_MISO**                                |
-| 8   | SPI_MISO | I/O | Reserved PA7                             | Internal connection to **SX1276 SPI_MOSI**                                |
+| 4   | GND      | -   | Ground                                                       | -                                                                         |
+| 5   | MCU_NRST | I/O | MCU reset (STM32L071 NRST)                                   | -                                                                         |
+| 6   | SPI_CLK  | I/O | Reserved PA5                                                 | Internal connection to **SX1276 SPI_CLK**                                 |
+| 7   | SPI_MISO | I/O | Reserved PA6                                                 | Internal connection to **SX1276 SPI_MISO**                                |
+| 8   | SPI_MISO | I/O | Reserved PA7                                                 | Internal connection to **SX1276 SPI_MOSI**                                |
 
 ##### J4 Pin Definitions
 
@@ -165,7 +165,7 @@ The RAK4200 Breakout Board supports the following LoRa bands:
 
 ##### Power Consumption
 
-The table below shows the power consumption of RAK4200 Breakout Board:
+The table below shows the power consumption of the RAK4200 Breakout Board:
 
 | Item                         | Power Consumption | Condition                      |
 | ---------------------------- | ----------------- | ------------------------------ |
@@ -201,9 +201,9 @@ Download the latest firmware and bootloader of the RAK4200 Breakout Board provid
 
 :::tip 📝 NOTE:
 
-The **bin file** contains the application code only and you need the RAK DFU Tool to upload this file to the module.
+- The **bin file** contains the application code only and you need the RAK DFU Tool to upload this file to the module.
 
-The **hex file** contains both the bootloader and the application code. You need to use STM32CubeProgrammer to upload this.
+- The **hex file** contains both the bootloader and the application code. You need to use STM32CubeProgrammer to upload this.
 
 :::
 

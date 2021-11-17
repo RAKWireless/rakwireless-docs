@@ -886,7 +886,7 @@ After checking all the things above, try to send LoRaWAN payloads again.
 
 ##### Connecting with ChirpStack
 
-This section shows to connect the RAK3172 module to the ChirpStack platform.
+This section shows how to connect the RAK3172 module to the ChirpStack platform.
 
 
 <rk-img

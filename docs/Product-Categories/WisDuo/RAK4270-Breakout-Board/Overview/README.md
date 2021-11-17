@@ -11,7 +11,7 @@ tags:
 ---
 
 # RAK4270 Breakout Board
-Thank you for choosing **RAK4270 Breakout Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK4270 Breakout Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [AT Command Manual](../AT-Command-Manual/)
@@ -25,7 +25,7 @@ Thank you for choosing **RAK4270 Breakout Board** in your awesome IoT Project! �
 
 The RAK4270 LoRa Module includes an **STM32L071 MCU** and an **SX1262 LoRa chip**, which supports eight (8) spreading factors (**SF5 ~ SF12**) and signal bandwidth that can be adjusted between **7.8&nbsp;kHz** to **500&nbsp;kHz**. It has Ultra-Low Power Consumption of 2.31&nbsp;μA (down to 1.61&nbsp;μA @ 2.0&nbsp;V) in sleep mode, but during the Transmit mode, it can reach the maximum output power of **22&nbsp;dBm**. As a receiver, it can achieve a sensitivity of **-148&nbsp;dBm**. 
 
-The module complies with the LoRaWAN 1.0.2 protocol, so it can be used for implementing LoRa networks or Lora point to point communications. The module is suitable for various applications that require long-range data acquisition and low power consumption, like smart meters, supply chain and logistics tracking, agricultural sensors, smart cities, etc. 
+The module complies with the LoRaWAN 1.0.2 protocol, so it can be used for implementing LoRa networks or Lora point-to-point communications. The module is suitable for various applications that require long-range data acquisition and low power consumption, like smart meters, supply chain and logistics tracking, agricultural sensors, smart cities, etc. 
 
 This module is expected to be controlled by an external controller through its UART interface by sending a set of AT commands. These AT commands control not only the state of this module but also set the LoRaWan communication parameters and payloads (see RAK [AT Command Manual](/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/)).
 

@@ -12,7 +12,7 @@ tags:
 ---
 
 # RAK4600 Breakout Board
-Thank you for choosing **RAK4600 Breakout Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK4600 Breakout Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -36,7 +36,7 @@ The board itself has the RAK4600 at its core, integrating an **nRF52832 MCU** an
 
 The board complies with **LoRaWAN 1.0.2 specification**. It also supports Lora P2P Point-to-Point communication. 
 
-The RF communication capabilities of the board (LoRa + BLE) make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, and personal area networks applications (health/fitness sensors and monitors).
+The RF communication capabilities of the board (LoRa + BLE) make it suitable for a variety of applications in the IoT field, such as home automation, sensor networks, building automation, and personal area networks applications (health/fitness sensors and monitors).
 
 <!-- <rk-btn
   src="/Product-Categories/WisDuo/RAK4600-Breakout-Board/Quickstart/#quick-start-guide"

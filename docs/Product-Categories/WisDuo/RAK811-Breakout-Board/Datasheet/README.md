@@ -83,11 +83,48 @@ The hardware specification is categorized into six parts. It discusses the pinou
 
 #### Pin Definition
 
-The RAK811 Breakout Board supports two different frequency variations: **High Radio Frequency** and **Low Radio frequency**.
+The RAK811 Breakout Board supports two different frequency variations: **Low Radio Frequency** and **High Radio frequency**.
 
-##### High Radio Frequency (RAK811(H))
+##### 1. Low Radio Frequency (RAK811(L))
 
-The high radio frequency hardware supports the regions of EU868, US915, AU915, KR920, AS923, and IN865.
+The low radio frequency is applicable to the bandwidth of regions EU433 and CN470. For more information, refer to the [RF Characteristics](#rf-characteristics).
+
+###### Low RF Pin Outline
+
+<rk-img
+  src="/assets/images/wisduo/rak811-breakout-board/datasheet/3.board-pinout-for-rak811-low-rf.png"
+  width="50%"
+  caption="Board Pinout for RAK811 Breakout Low RF"
+/>
+
+###### Low RF Pin Definition
+
+| **Pin No.** | **Name**       | **Type** | **Description**                             |
+| ----------- | -------------- | -------- | ------------------------------------------- |
+| 1           | VCC 3.3&nbsp;V | P        | Main Power Voltage Source Input             |
+| 2           | PA9/UART1_TX   | O        | UART1 Interface (AT Commands and FW Update) |
+| 3           | PA10/UART1_RX  | I        | UART1 Interface (AT Commands and FW Update) |
+| 4           | PB12/ADC       | I/O      | GPIO and ADC                                |
+| 5           | RST            | I        | Reset Trigger Input, Low Active             |
+| 6           | PA3/ADC        | I/O      | GPIO and ADC                                |
+| 7           | PB5            | I/O      | GPIO only                                   |
+| 8           | PA12           | I/O      | GPIO only                                   |
+| 9           | PB4            |          | Boot mode GPIO enable pin - high active     |
+| 10          | GND            |          | Ground connections                          |
+| 11          | PA0/ADC        | I/O      | GPIO and ADC                                |
+| 12          | PA1/ADC        | I/O      | GPIO and ADC                                |
+| 13          | PA14           |          | SWD Debug Pin (SWCLK)                       |
+| 14          | PA13           |          | SWD Debug Pin SWDIO                         |
+| 15          | PA11           | I/O      | GPIO only                                   |
+| 16          | PB15/ADC       | I/O      | GPIO and ADC                                |
+| 17          | PA2/ADC        | I/O      | GPIO and ADC                                |
+| 18          | PB13/ADC       | I/O      | GPIO and ADC                                |
+| 19          | PA12/ADC       | I/O      | GPIO and ADC                                |
+| 20          | PB14/ADC       | I/O      | GPIO and ADC                                |
+
+##### 2. High Radio Frequency (RAK811(H))
+
+The high radio frequency hardware supports the regions of EU868, US915, AU915, KR920, AS923, and IN865. For more information, refer to the [RF Characteristics](#rf-characteristics).
 
 ###### High RF Pin Outline
 
@@ -122,42 +159,6 @@ The high radio frequency hardware supports the regions of EU868, US915, AU915, K
 | 19          | PA12           | I/O      | GPIO only                                   |
 | 20          | PB14/ADC       | I/O      | GPIO and ADC                                |
 
-##### Low Radio Frequency (RAK811(L))
-
-The low radio frequency is applicable to the bandwidth of regions EU433 and CN470.
-
-###### Low RF Pin Outline
-
-<rk-img
-  src="/assets/images/wisduo/rak811-breakout-board/datasheet/3.board-pinout-for-rak811-low-rf.png"
-  width="50%"
-  caption="Board Pinout for RAK811 Breakout Low RF"
-/>
-
-###### Low RF Pin Definition
-
-| **Pin No.** | **Name**       | **Type** | **Description**                             |
-| ----------- | -------------- | -------- | ------------------------------------------- |
-| 1           | VCC 3.3&nbsp;V | P        | Main Power Voltage Source Input             |
-| 2           | PA9/UART1_TX   | O        | UART1 Interface (AT Commands and FW Update) |
-| 3           | PA10/UART1_RX  | I        | UART1 Interface (AT Commands and FW Update) |
-| 4           | PB12/ADC       | I/O      | GPIO and ADC                                |
-| 5           | RST            | I        | Reset Trigger Input, Low Active             |
-| 6           | PA3/ADC        | I/O      | GPIO and ADC                                |
-| 7           | PB5            | I/O      | GPIO only                                   |
-| 8           | PA12           | I/O      | GPIO only                                   |
-| 9           | PB4            |          | Boot mode GPIO enable pin - high active     |
-| 10          | GND            |          | Ground connections                          |
-| 11          | PA0/ADC        | I/O      | GPIO and ADC                                |
-| 12          | PA1/ADC        | I/O      | GPIO and ADC                                |
-| 13          | PA14           |          | SWD Debug Pin (SWCLK)                       |
-| 14          | PA13           |          | SWD Debug Pin SWDIO                         |
-| 15          | PA11           | I/O      | GPIO only                                   |
-| 16          | PB15/ADC       | I/O      | GPIO and ADC                                |
-| 17          | PA2/ADC        | I/O      | GPIO and ADC                                |
-| 18          | PB13/ADC       | I/O      | GPIO and ADC                                |
-| 19          | PA12/ADC       | I/O      | GPIO and ADC                                |
-| 20          | PB14/ADC       | I/O      | GPIO and ADC                                |
 
 #### RF Characteristics
 
@@ -258,7 +259,7 @@ Download the latest firmware of the RAK811 Breakout Board — both in low and hi
 
 :::tip 📝 NOTE:
 
-The **bin file** contains the application code only and you need the RAK DFU Tool to upload this file to the module.
+The **bin file** contains the application code only, and you need the RAK DFU Tool to upload this file to the module.
 
 The **hex file** contains both the bootloader and the application code. You need to use STM32CubeProgrammer to upload this.
 

@@ -82,11 +82,11 @@ The hardware specification is categorized into six parts. It discusses the pinou
 
 #### Pin Definition
 
-The RAK811 supports two different frequency variations: Low Radio Frequency and High Radio Frequency.
+The RAK811 supports two different frequency variations: **Low Radio Frequency** and **High Radio Frequency**.
 
 ##### 1. Low Radio Frequency Version (RAK811(L))
 
-Low radio frequency hardware supports bandwidth in the regions of EU433 and CN470.
+Low radio frequency hardware supports bandwidth in the regions of EU433 and CN470. For more information, refer to the [RF Characteristics](#rf-characteristics).
 
 ###### Low RF Version Pin Outline
 
@@ -164,7 +164,7 @@ Low radio frequency hardware supports bandwidth in the regions of EU433 and CN47
 
 ##### 2. High Radio Frequency Version (RAK811(H))
 
-High radio frequency hardware supports the regions of EU868, US915, AU915, KR920, AS923, IN865.
+High radio frequency hardware supports the regions of EU868, US915, AU915, KR920, AS923, and IN865. For more information, refer to the [RF Characteristics](#rf-characteristics).
 
 ###### High RF Version Pin Outline
 

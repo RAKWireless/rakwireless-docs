@@ -23,7 +23,7 @@ RAK4260 Evaluation Board is designed to give you a quick start to explore the Lo
 
 The board itself has the RAK4260 as its core, which is a module that utilizes ATSAMR34J18B SiP. The high level of integration allows for outstanding performance: Lora TX Power of up to 20&nbsp;dBm.
 
-The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P2P Point-to-Point communication. The low power, long-range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, and personal area networks applications such as health/fitness sensors and monitors.
+The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P2P Point-to-Point communication. The low-power, long-range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, and personal area networks applications such as health/fitness sensors and monitors.
 
 ### Features
 
@@ -41,7 +41,7 @@ The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P
 ### Overview  
 
  
-The RAK4260 Evaluation Board front view (top) and back view are shown in Figure 1.
+The RAK4260 Evaluation Board front view (top) and back view are shown in **Figure 1**.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/datasheet/rak4260-top-back.png"
@@ -67,7 +67,7 @@ The hardware specification is categorized into five parts. It covers the interfa
 
 #### Interfaces  
   
-Figure 2 shows an overview of interfaces found on RAK4260 Evaluation Board.
+**Figure 2** shows an overview of interfaces found on the RAK4260 Evaluation Board.
   
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/datasheet/rak4260-interfaces.png"
@@ -91,11 +91,11 @@ For the aforementioned reason, it is best you leave these exposed for programmin
  
 ### Flash the Firmware Using DAPLink and RAKDAP1
 
-Refer to section [Flash the Firmware Using DAPLink and RAKDAP1](../Low-Level-Development/#flash-the-firmware-using-daplink-and-rakdap1)
+Refer to section [Flash the Firmware Using DAPLink and RAKDAP1](../Low-Level-Development/#flash-the-firmware-using-daplink-and-rakdap1).
 
 ##### RF Interface  
   
-The RF pin of the RAK4260 Evaluation Board is connected to an external LoRa Antenna through standard iPEX antenna connector.
+The RF pin of the RAK4260 Evaluation Board is connected to an external LoRa Antenna through a standard iPEX antenna connector.
 
 :::warning ⚠️ WARNING
 Before powering the RAK4260 Evaluation Board, you should install the LoRa antenna first. Not doing so might damage the board.
@@ -130,7 +130,7 @@ The following tables below shows the pin definitions of the RAK4260 Evaluation B
 
 ##### J10, J11, J12 2.54&nbsp;mm header
 
-On the RAK4260 Evaluation Board, there are three 2.54&nbsp;mm pitch header used for IO extension. Some data bus and signal from the MCU module are also connected to these headers, such as I2C, UART, ADC, etc.
+On the RAK4260 Evaluation Board, there are three 2.54&nbsp;mm pitch headers used for IO extension. Some data bus and signal from the MCU module are also connected to these headers, such as I2C, UART, ADC, etc.
 
 ##### J10 pin definition
 
@@ -215,7 +215,7 @@ On the RAK4260 Evaluation Board, there are three 2.54&nbsp;mm pitch header used 
 | 39             | GND          | Ground                                                                                                     |                         |
 | 40             | GND          | Ground                                                                                                     |                         |
 
-##### Sensor Module Connector pin definition
+##### Sensor Module Connector Pin Definition
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/datasheet/sensor-module-connector.png"
@@ -225,7 +225,7 @@ On the RAK4260 Evaluation Board, there are three 2.54&nbsp;mm pitch header used 
 
 **Slot A**
 
-| **Pin Number** | **Pin name** | **Description**                                                                                | **Microcontroller pin** |
+| **Pin Number** | **Pin Name** | **Description**                                                                                | **Microcontroller Pin** |
 | -------------- | ------------ | ---------------------------------------------------------------------------------------------- | ----------------------- |
 | 1              | TX1          | UART3 TX pin                                                                                   | PA19                    |
 | 2              | GND          | Ground                                                                                         |                         |
@@ -255,7 +255,7 @@ On the RAK4260 Evaluation Board, there are three 2.54&nbsp;mm pitch header used 
 **Slot B**
 
 
-| **Pin Number** | **Pin name** | **Description**                                                                                | **Microcontroller pin** |
+| **Pin Number** | **Pin Name** | **Description**                                                                                | **Microcontroller Pin** |
 | -------------- | ------------ | ---------------------------------------------------------------------------------------------- | ----------------------- |
 | 1              | NC           | Not connected                                                                                  |                         |
 | 2              | GND          | Ground                                                                                         |                         |
@@ -285,7 +285,7 @@ On the RAK4260 Evaluation Board, there are three 2.54&nbsp;mm pitch header used 
 **Slot C**
 
 
-| **Pin Number** | **Pin name** | **Description**                                                                                | **Microcontroller pin** |
+| **Pin Number** | **Pin Name** | **Description**                                                                                | **Microcontroller Pin** |
 | -------------- | ------------ | ---------------------------------------------------------------------------------------------- | ----------------------- |
 | 1              | NC           | Not connected                                                                                  |                         |
 | 2              | GND          | Ground                                                                                         |                         |
@@ -316,7 +316,7 @@ On the RAK4260 Evaluation Board, there are three 2.54&nbsp;mm pitch header used 
 **Slot D**
 
 
-| **Pin Number** | **Pin name** | **Description**                                                                                            | **Microcontroller pin** |
+| **Pin Number** | **Pin Name** | **Description**                                                                                            | **Microcontroller Pin** |
 | -------------- | ------------ | ---------------------------------------------------------------------------------------------------------- | ----------------------- |
 | 1              | NC           | Not connected                                                                                              |                         |
 | 2              | GND          | Ground                                                                                                     |                         |
@@ -376,8 +376,8 @@ On the RAK4260 Evaluation Board, there are three 2.54&nbsp;mm pitch header used 
 
 ##### Battery Connector
 
-The pin definition of RAK4260 Evaluation Board Li-Ion battery connector is shown in the table below.
-The matching connector for the battery wires is an [JST PHR-2 2mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199).
+The pin definition of the RAK4260 Evaluation Board Li-Ion battery connector is shown in the table below.
+The matching connector for the battery wires is an [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199).
 
 | **Pin** | **Pin Name** | **Description**               |
 | ------- | ------------ | ----------------------------- |
@@ -385,7 +385,7 @@ The matching connector for the battery wires is an [JST PHR-2 2mm pitch female](
 | 2       | VBAT         | Positive + pin of the battery |
 
 
-The full specification of RAK4260 Evaluation Board battery is shown in the table below.
+The full specification of the RAK4260 Evaluation Board battery is shown in the table below.
 
 
 | **No.** | **Item**                  | **Specification**                    |
@@ -408,8 +408,8 @@ When connecting the battery make sure the polarity is correct. Not all connector
 
 ##### Solar Panel Connector
 
-The pin definition of RAK4260 Evaluation Board solar panel connector is shown in the table below.
-The matching connector for the solar panel wires is an [JST ZHR-2 1.5mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287)
+The pin definition of the RAK4260 Evaluation Board solar panel connector is shown in the table below.
+The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287)
 
 | **Pin** | **Pin Name** | **Description**               |
 | ------- | ------------ | ----------------------------- |
@@ -417,7 +417,7 @@ The matching connector for the solar panel wires is an [JST ZHR-2 1.5mm pitch fe
 | 2       | GND          | GND                           |
 
 
-The full specification of Solar Panel for RAK4260 Evaluation Board is shown in the table below.
+The full specification of the Solar Panel for the RAK4260 Evaluation Board is shown in the table below.
 
 
 | **No.** | **Item**        | **Specification**                                        |
@@ -488,7 +488,7 @@ The RAK4260 Evaluation Board supports the following LoRa bands:
 <!-- 
 ##### Sensitivity Level  
   
-The following charts show the receiving sensitivity of RAK4260 Evaluation Board at 866&nbsp;Mhz operating frequency.<br><br>
+The following charts show the receiving sensitivity of the RAK4260 Evaluation Board at 866&nbsp;Mhz operating frequency.<br><br>
 
   
 <rk-img
@@ -559,7 +559,7 @@ Exposure to maximum rating conditions may affect device reliability.
 
 ##### Board Dimensions
   
-Figure 6 shows the actual dimensions of the RAK4260 Evaluation Board measured in millimeters (mm). <br><br>
+**Figure 6** shows the actual dimensions of the RAK4260 Evaluation Board measured in millimeters (mm). <br><br>
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/datasheet/rak4260-mechanical.png"
