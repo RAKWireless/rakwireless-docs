@@ -11,7 +11,7 @@ tags:
 
 # RAK12500 WisBlock GNSS Location Module
 
-Thank you for choosing **RAK12500 WisBlock GNSS Location Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK12500 WisBlock GNSS Location Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [RAK12500 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

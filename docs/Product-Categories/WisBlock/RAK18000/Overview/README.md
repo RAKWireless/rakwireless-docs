@@ -11,9 +11,9 @@ tags:
 
 # RAK18000 WisBlock PDM Stereo Microphone Module
 
-Thank you for choosing **RAK18000 WisBlock PDM Stereo Microphone Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK18000 WisBlock PDM Stereo Microphone Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
-* [RAK18000 Quickstart](../Quickstart/)
+* [RAK18000 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
@@ -31,6 +31,8 @@ For WisBlock Core RAK4630:
 For WisBlock Core RAK11200:
 
 * [Sample Code RAK11200: Stereo PDM Microphone](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/IO/RAK18000_Stereo)
+
+* [Sample Code RAK11300: Stereo PDM Microphone](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/IO/RAK18000_Stereo)
 
 ## Product Description
 

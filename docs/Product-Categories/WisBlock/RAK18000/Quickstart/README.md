@@ -24,7 +24,7 @@ The information obtained from the PDM Stereo Microphone Module will then be prin
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK18000 WisBlock module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK18000 WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware
 
@@ -48,7 +48,7 @@ RAK18000 is a WisBlock Sensor module that extends the WisBlock system with sound
 
 For more information about RAK18000, refer to the [Datasheet](../Datasheet/).
 
-RAK18000 module can be connected on the IO slot of WisBlock Base to communicate with the WisBlock Core. Also, always secure the connection of the WisBlock module by using the compatible screws.
+RAK18000 module can be connected to the IO slot of WisBlock Base to communicate with the WisBlock Core. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak18000/quickstart/rak18000_assembly.png"
@@ -97,7 +97,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK18000 uses I2C communication lines, and it can cause possible conflict especially on other WisBlock Modules connected to Slot A to D of the WisBlock Base. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK18000 uses I2C communication lines, and it can cause possible conflict especially on other WisBlock Modules connected to Slot A to D of the WisBlock Base. 
 :::
 
 
@@ -111,14 +111,14 @@ The RAK18000 is based on two MP34DT06J microphone modules. The RAK18000 is a dig
 
 If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
 
-1. You need to select first the WisBlock Core you have.
+1. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 
 **Using RAK4631 WisBlock Core**
 
 <rk-img
   src="/assets/images/wisblock/rak18000/quickstart/rak4631_board.png"
   width="100%"
-  caption="Selecting RAK4631 as WisBlock Core"
+  caption="Selecting RAK4631 as the WisBlock Core"
 />
 
 **Using RAK11200 WisBlock Core**
@@ -126,24 +126,32 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
 <rk-img
   src="/assets/images/wisblock/rak18000/quickstart/rak11200_board.png"
   width="100%"
-  caption="Selecting RAK11200 as WisBlock Core"
+  caption="Selecting RAK11200 as the WisBlock Core"
 />
 
-2. The Basic Sample Code for RAK18000 in Github will work on all WisBlock Core. You can open the the example codes depending on your WisBlock Core. 
+**Using RAK11300 WisBlock Core**
+
+<rk-img
+  src="/assets/images/wisblock/rak18000/quickstart/rak11300_board.png"
+  width="100%"
+  caption="Selecting RAK11300 as the WisBlock Core"
+/>
+
+2. The Basic Sample Code for RAK18000 in Github will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 9** to **Figure 11**. 
 
 **Using RAK4631 WisBlock Core**
 
-Sample code for [RAK4631](https://github.com/RAKWireless/WisBlock/tree/6a8b314f979f6a0c316b38b309d9fc6cd5c9a077/examples/RAK4630/sensors/RAK18000_Stereo) 
+- Sample code for [RAK4631](https://github.com/RAKWireless/WisBlock/tree/6a8b314f979f6a0c316b38b309d9fc6cd5c9a077/examples/RAK4630/sensors/RAK18000_Stereo) 
 
 <rk-img
   src="/assets/images/wisblock/rak18000/quickstart/rak4631_example.png"
   width="100%"
-  caption="Opening RAK18000 example code for RAK4631 WisBlock Core"
+  caption="Opening the RAK18000 example code for the RAK4631 WisBlock Core"
 />
 
 **Using RAK11200 WisBlock Core**
 
-Sample code for [RAK11200](https://github.com/RAKWireless/WisBlock/tree/6a8b314f979f6a0c316b38b309d9fc6cd5c9a077/examples/RAK11200/IO/RAK18000_Stereo)
+- Sample code for [RAK11200](https://github.com/RAKWireless/WisBlock/tree/6a8b314f979f6a0c316b38b309d9fc6cd5c9a077/examples/RAK11200/IO/RAK18000_Stereo)
 
 <rk-img
   src="/assets/images/wisblock/rak18000/quickstart/rak11200_example.png"
@@ -151,15 +159,18 @@ Sample code for [RAK11200](https://github.com/RAKWireless/WisBlock/tree/6a8b314f
   caption="Opening RAK18000 example code for RAK11200 WisBlock Core"
 />
 
-3. Open the example code as shown in **Figure 10**.
+**Using RAK11300 WisBlock Core**
+
+- Sample code for [RAK11300](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/IO/RAK18000_Stereo)
 
 <rk-img
-  src="/assets/images/wisblock/rak18000/quickstart/rak18000_code.png"
+  src="/assets/images/wisblock/rak18000/quickstart/rak11300_example.png"
   width="100%"
-  caption="Installing the compatible library for RAK18000 Module"
+  caption="Opening RAK18000 example code for RAK11300 WisBlock Core"
 />
 
-4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
+
+3. After opening the sample sketch, choose your WisBlock Core then select the right serial port and upload the code, as shown in **Figure 12** and **Figure 13**.
 
 <rk-img
   src="/assets/images/wisblock/rak18000/quickstart/rak18000_select_port.png"
@@ -173,7 +184,7 @@ Sample code for [RAK11200](https://github.com/RAKWireless/WisBlock/tree/6a8b314f
   caption="Uploading the RAK18000 example code"
 />
 
-5. When you successfully uploaded the example sketch, open the Serial Plotter of the Arduino IDE to see the sensor's reading logs. To test the sound detection, you can download a sound generating app on your smartphone and sweep frequencies from 1000&nbsp;Hz to 10000&nbsp;Hz. If you see the logs, as shown in **Figure 13**, then your RAK18000 is properly communicating to the WisBlock core.
+4. When you successfully uploaded the example sketch, open the Serial Plotter of the Arduino IDE to see the sensor's reading logs. To test the sound detection, you can download a sound generating app on your smartphone and sweep frequencies from 1000&nbsp;Hz to 10000&nbsp;Hz. If you see the logs, as shown in **Figure 14**, then your RAK18000 is properly communicating to the WisBlock core.
 
 <rk-img
   src="/assets/images/wisblock/rak18000/quickstart/rak18000_logs.png"

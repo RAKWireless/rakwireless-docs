@@ -1073,6 +1073,24 @@ module.exports = {
 }
 ],
 
+'/Product-Categories/WisBlock/RAK16001/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK16001/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK16001/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
 '/Product-Categories/WisBlock/RAK19006/': [{
   title: 'Product Overview',
   path: '/Product-Categories/WisBlock/RAK19006/Overview/',

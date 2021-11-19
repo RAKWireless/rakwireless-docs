@@ -15,7 +15,7 @@ next: ../Datasheet/
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK15000 WisBlock module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK15000 WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware
 
@@ -23,8 +23,8 @@ Before going through each and every step on using RAK15000 WisBlock module, make
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
-- [Solar Panel (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/products/battery-connector-cable)
+- [Solar Panel (optional)](https://store.rakwireless.com/products/solar-panel-connector-cable)
 
 #### Software
 
@@ -39,7 +39,7 @@ WisBlock can integrate this module which makes it easy for you to save big data 
 
 For more information about RAK15000, please refer to the [Datasheet](../Datasheet/).
 
-The RAK15000 module can be connected to any slot of WisBlock Base to communicate with the WisBlock Core. It will work on **SLOT A, B, C, or D**. Also, always secure the connection of the WisBlock module by using the compatible screws.
+The RAK15000 module can be connected to any slot of WisBlock Base to communicate with the WisBlock Core. It will work on **SLOT A, B, C, or D**. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak15000/quickstart/rak15000_mounting.png"
@@ -97,75 +97,354 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 The RAK15000 EEPROM has an I2C-Compatible (Two-Wire) Serial Interface. Furthermore, the EEPROM is organized in so-called pages. One page holds 256-byte and there are 1024 pages. Having insight into how the memory cells are organized, is important for write and erase operations.
 
-#### Initial Test of the RAK15000 WisBlock Module
 
-If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
+These are the quick links that go directly to the software guide for the specific WisBlock Core module you use:
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 6** and **Figure 7**.
+- [RAK15000 in RAK4631 WisBlock Core Guide](/Product-Categories/WisBlock/RAK15000/Quickstart/#rak15000-in-rak4631-wisblock-core-guide)
+- [RAK15000 in RAK11200 WisBlock Core Guide](/Product-Categories/WisBlock/RAK15000/Quickstart/#rak15000-in-rak11200-wisblock-core-guide)
+- [RAK15000 in RAK11310 WisBlock Core Guide](/Product-Categories/WisBlock/RAK15000/Quickstart/#rak15000-in-rak11310-wisblock-core-guide)
+
+#### RAK15000 in RAK4631 WisBlock Core Guide
+
+Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+
+1. Now, select the RAK4631 WisBlock Core, as shown in **Figure 6**.
 
 <rk-img
   src="/assets/images/wisblock/rak15000/quickstart/rak4631_board.png"
   width="100%"
-  caption="Selecting RAK4631 as WisBlock Core"
+  caption="Selecting RAK4631 as the WisBlock Core"
 />
 
-<rk-img
-  src="/assets/images/wisblock/rak15000/quickstart/rak11200_board.png"
-  width="100%"
-  caption="Selecting RAK11200 as WisBlock Core"
-/>
 
-2. The [Basic Sample Code for RAK15000](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK15000_EEPROM_AT24C02) in github will work on all WisBlock Core. You can open the the example codes depending on your WisBlock Core, as shown in **Figure 8** and **Figure 9**.
+2. Open the RAK15000 sample code.
+
+You can open the example code for RAK4631 WisBlock Core, as shown in **Figure 7**.
 
 <rk-img
   src="/assets/images/wisblock/rak15000/quickstart/rak4631_rak15000.png"
   width="100%"
-  caption="Opening RAK15000 example code for RAK4631 WisBlock Core"
+  caption="Opening the RAK15000 example code for the RAK4631 WisBlock Core"
 />
 
-<rk-img
-  src="/assets/images/wisblock/rak15000/quickstart/rak11200_rak15000.png"
-  width="100%"
-  caption="Opening RAK15000 example code for RAK11200 WisBlock Core"
-/>
+3. Install **Adafruit FRAM_I2C** Library.
 
-3. Once the example code is open, install the latest version of [Adafruit FRAM_I2C](https://github.com/adafruit/Adafruit_FRAM_I2C) library by clicking the link highlighted in yellow, as shown in **Figure 10**.
+Once the example code is open, install the latest version of [Adafruit FRAM_I2C](https://github.com/adafruit/Adafruit_FRAM_I2C) library by clicking the link highlighted in yellow, as shown in **Figure 8**.
 
 <rk-img
-  src="/assets/images/wisblock/rak15000/quickstart/rak15000_lib.png"
+  src="/assets/images/wisblock/rak15000/quickstart/rak4631_lib.png"
   width="100%"
   caption="Opening Adafruit EEPROM library"
 />
-To finish installation, click on **Install** button highlighted in yellow, as shown in **Figure 11**.
+
+To finish the library installation, click on the **Install** button highlighted in yellow, as shown in **Figure 9**.
 <rk-img
-  src="/assets/images/wisblock/rak15000/quickstart/adafruit_eeprom.png"
+  src="/assets/images/wisblock/rak15000/quickstart/rak4631_adafruit_eeprom.png"
   width="100%"
   caption="Installing the Adafruit EEPROM library"
 />
 
-4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 12** and **Figure 13**.
+4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 10** and **Figure 11**.
 
 <rk-img
-  src="/assets/images/wisblock/rak15000/quickstart/select_port.png"
+  src="/assets/images/wisblock/rak15000/quickstart/rak4631_select_port.png"
   width="100%"
   caption="Selecting the correct Serial Port"
 />
 
 <rk-img
-  src="/assets/images/wisblock/rak15000/quickstart/upload.png"
+  src="/assets/images/wisblock/rak15000/quickstart/rak4631_upload.png"
   width="100%"
   caption="Uploading the RAK15000 example code"
 />
 
 The sketch writes a value to a random address. Then it checks the read value and compares it with the written value.
 
-
-<!-- 
-5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see if it read the content, wrote new data, and erased the data from the Flash module. If you see the logs, as shown in **Figure 14**, then your RAK15000 is properly communicating to the WisBlock core.
+After successful upload, a random number will be written and read to a random address five times.
 
 <rk-img
-  src="/assets/images/wisblock/rak15000/quickstart/flash_logs.png"
+  src="/assets/images/wisblock/rak15000/quickstart/rak4630_logs.png"
+  width="90%"
+  caption="RAK15000 example code logs"
+/>
+
+
+::: tip 📝 NOTE
+If you experience any error in compiling the example sketch, check the updated code for the RAK4630 WisBlock Core Module that can be found on the [RAK4630 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK15000_EEPROM_AT24C02).
+:::
+
+#### RAK15000 in RAK11200 WisBlock Core Guide
+
+Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+
+1. Now, select the RAK11200 WisBlock Core, as shown in **Figure 13**.
+
+<rk-img
+  src="/assets/images/wisblock/rak15000/quickstart/rak11200_board.png"
+  width="100%"
+  caption="Selecting RAK11200 as the WisBlock Core"
+/>
+
+2. Open the RAK15000 sample code.
+
+You can open the example code for RAK11200 WisBlock Core, as shown in **Figure 14**.
+
+<rk-img
+  src="/assets/images/wisblock/rak15000/quickstart/rak11200_rak15000.png"
+  width="100%"
+  caption="Opening the RAK15000 example code for the RAK4631 WisBlock Core"
+/>
+
+3. Install **Adafruit FRAM_I2C** Library.
+
+Once the example code is open, install the latest version of [Adafruit FRAM_I2C](https://github.com/adafruit/Adafruit_FRAM_I2C) library by clicking the link highlighted in yellow, as shown in **Figure 15**.
+
+<rk-img
+  src="/assets/images/wisblock/rak15000/quickstart/rak11200_lib.png"
+  width="100%"
+  caption="Opening the Adafruit EEPROM library"
+/>
+
+To finish the library installation, click on the **Install** button highlighted in yellow, as shown in **Figure 16**.
+<rk-img
+  src="/assets/images/wisblock/rak15000/quickstart/rak11200_adafruit_eeprom.png"
+  width="100%"
+  caption="Installing the Adafruit EEPROM library"
+/>
+
+4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 17** and **Figure 19**.
+
+<rk-img
+  src="/assets/images/wisblock/rak15000/quickstart/rak11200_select_port.png"
+  width="100%"
+  caption="Selecting the correct Serial Port"
+/>
+
+Before uploading your sketch, short circuit BOOT0 and GND pin, and press the reset button. Then click the Upload button as shown below.
+
+<rk-img
+  src="/assets/images/wisblock/rak11200/quickstart/rak11200-Boot0-for-flashing.png"
+  width="50%"
+  caption="Force ESP32 Download mode"
+/>
+
+<rk-img
+  src="/assets/images/wisblock/rak15000/quickstart/rak11200_upload.png"
+  width="100%"
+  caption="Uploading the RAK15000 example code"
+/>
+
+The sketch writes a value to a random address. Then it checks the read value and compares it with the written value.
+
+After successful upload, a random number will be written and read to a random address five times.
+
+<rk-img
+  src="/assets/images/wisblock/rak15000/quickstart/rak11200_logs.png"
+  width="90%"
+  caption="RAK15000 example code logs"
+/>
+
+::: tip 📝 NOTE
+If you experience any error in compiling the example sketch, check the updated code for the RAK11200 WisBlock Core Module that can be found on the [RAK11200 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK15000_EEPROM_AT24C02).
+:::
+
+
+#### RAK15000 in RAK11310 WisBlock Core Guide
+
+Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+
+1. Now, select the RAK11310 WisBlock Core, as shown in **Figure 21**.
+
+<rk-img
+  src="/assets/images/wisblock/rak15000/quickstart/rak11300_board.png"
+  width="100%"
+  caption="Selecting RAK11310 as the WisBlock Core"
+/>
+
+2. Open the RAK15000 sample code.
+
+You can open the example code for RAK11200 WisBlock Core, as shown in **Figure 22**.
+
+<rk-img
+  src="/assets/images/wisblock/rak15000/quickstart/rak11300_rak15000.png"
+  width="100%"
+  caption="Opening the RAK15000 example code for the RAK4631 WisBlock Core"
+/>
+
+3. Install **Adafruit FRAM_I2C** Library.
+
+Once the example code is open, install the latest version of [Adafruit FRAM_I2C](https://github.com/adafruit/Adafruit_FRAM_I2C) library by clicking the link highlighted in yellow, as shown in **Figure 23**.
+
+<rk-img
+  src="/assets/images/wisblock/rak15000/quickstart/rak11200_adafruit_eeprom.png"
+  width="100%"
+  caption="Opening the Adafruit EEPROM library"
+/>
+
+To finish the library installation, click on the **Install** button highlighted in yellow, as shown in **Figure 24**.
+<rk-img
+  src="/assets/images/wisblock/rak15000/quickstart/rak11200_lib.png"
+  width="100%"
+  caption="Installing the Adafruit EEPROM library"
+/>
+
+4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 25** and **Figure 26**.
+
+<rk-img
+  src="/assets/images/wisblock/rak15000/quickstart/rak11300_select_port.png"
+  width="100%"
+  caption="Selecting the correct Serial Port"
+/>
+
+<rk-img
+  src="/assets/images/wisblock/rak15000/quickstart/rak11300_upload.png"
+  width="100%"
+  caption="Uploading the RAK15000 example code"
+/>
+
+The sketch writes a value to a random address. Then it checks the read value and compares it with the written value.
+
+After successful upload, a random number will be written and read to a random address five times.
+
+<rk-img
+  src="/assets/images/wisblock/rak15000/quickstart/rak11300_logs.png"
+  width="90%"
+  caption="RAK15000 example code logs"
+/>
+
+::: tip 📝 NOTE
+If you experience any error in compiling the example sketch, check the updated code for the RAK11300 WisBlock Core Module that can be found on the [RAK11300 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK15000_EEPROM_AT24C02).
+:::
+
+<!-- checking how to import the project to platformio
+
+#### PlatformIO Setup (optional)
+
+1. Install the original PlatformIO platform as showing in [PlatformIO First Install](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md#first-install) section.
+
+- For WisBlock Core RAK4631 install **Nordic nRF52** platform
+- For WisBlock Core RAK11200 install **Espressif 32** platform
+- For WisBlock Core RAK11310 install **Raspberry Pi RP2040** platform
+
+2. Open a project example that uses the new installed platform.
+
+Launch Visual Studio Code and select PlatformIO PIO Home.
+
+On **PIO Home** click on **Project Examples**.
+
+Choose **arduino-blink** project then click on **Import** button.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rp2040_arduino_blink.png"
+  width="50%"
+  caption="Import arduino-blink project"
+/>
+
+Click **Yes** button on trust window.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rp2040_trust.png"
+  width="50%"
+  caption="PlatformIO trust authors"
+/>
+
+3. Build the project and ignore warnings and errors.
+
+4. Download and install the [RAK_PATCH script](https://raw.githubusercontent.com/RAKWireless/WisBlock/master/PlatformIO/RAK_PATCH.zip)
+
+Unzip the contents of RAK_PATCH.zip into folder RAK_PATCH in your PlatformIO installation folder.
+The table below shows the PlatformIO installation directory for each operating system.
+
+
+:::tip 📝 NOTE:
+This procedure was tested only on Windows 10 and Ubuntu.
+:::
+
+| PlatformIO path on different OS   | |   
+| :--- | :--- |    
+| Windows 10 | `%UserProfile%\.platformio\` | 
+| Linux | `~/.platformio/` | 
+| MacOS | `/Users/{Your_User_id}/.platformio/` | 
+
+
+The figure below shows the PlatformIO installation directory on Windows 10.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rak_patch_folder.png"
   width="70%"
-  caption="RAK15000 Read, Write, Erase data "
+  caption="RAK patch folder on Windows"
+/>
+
+Open a command prompt in **%UserProfile%.platformio\RAK_PATCH** folder and execute python ./rak_patch.py.
+
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/rak_patch_installed.png"
+  width="70%"
+  caption="RAK patch installed on Windows"
+/>
+
+:::warning ⚠️ WARNING    
+In case of any platform update on PlatformIO, the RAK_PATCH script must be executed again after the platform update.
+:::
+
+After installing the **RAK_PATCH** on PlatformIO you can import the entire Arduino project to PlatformIO.
+
+5. Import Arduino Project to PlatformIO.
+
+Open PlatformIO PIO Home and select **Import Arduino Project** as shown in **Figure 29**.
+<rk-img
+  src="/assets/images/wisblock/rak15000/quickstart/pio-home-import.png"
+  width="100%"
+  caption="Import RAK15000 Arduino Project"
+/>
+
+Select your favorite **WisBlock Core Board** as shown in **Figure 30**. Then choose the directory of the RAK15000 Arduino Project.
+<rk-img
+  src="/assets/images/wisblock/rak15000/quickstart/import-project.png"
+  width="100%"
+  caption="Select WisBlock Core Board and Arduino project folder"
+/>
+
+To finish import, click on **Import** button as shown in **Figure 31**.
+<rk-img
+  src="/assets/images/wisblock/rak15000/quickstart/finish-import.png"
+  width="100%"
+  caption="Finish project import"
+/>
+
+Click **Yes** button on trust window.
+
+<rk-img
+  src="/assets/images/wisblock/rak15000/quickstart/rp2040_trust.png"
+  width="50%"
+  caption="PlatformIO trust authors"
+/>
+
+```
+[env:wiscore_rak4631]
+platform = nordicnrf52
+board = wiscore_rak4631
+framework = arduino
+upload_port = COM4
+lib_deps = 
+    Adafruit_FRAM_I2C
+```
+
+6. Build imported project on PlatformIO.
+
+Now we can build the project by clicking on highlighted icon as shown in **Figure 32**.
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/build-project.png"
+  width="100%"
+  caption="Build Arduino imported project"
+/>
+
+7. Upload imported project on PlatformIO.
+
+To upload the project on target board, click on the highlighted icon as shown in **Figure 33**.
+<rk-img
+  src="/assets/images/wisblock/rak14002/quickstart/upload-pio-project.png"
+  width="100%"
+  caption="Upload Arduino imported project"
 />
 -->

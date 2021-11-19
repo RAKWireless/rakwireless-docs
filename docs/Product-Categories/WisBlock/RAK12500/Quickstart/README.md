@@ -24,7 +24,7 @@ The information obtained from the WisBlock RAK12500 GNSS Location Module will th
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK12500 GNSS Location WisBlock module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK12500 GNSS Location WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware
 
@@ -55,12 +55,12 @@ The RAK12500 module gives us information about:
 - Direction (heading)
 - SIV (Satellite-in-View)
 
-The RAK12500 WisBlock GNSS Location Module can be mounted to the sensor slot A (UART or I2C Communication) or slot C (I2C Communication only) of the WisBlock Base Board. Also, always secure the connection of the WisBlock module by using the compatible screws.
+The RAK12500 WisBlock GNSS Location Module can be mounted to the sensor slot A (UART or I2C Communication) or slot C (I2C Communication only) of the WisBlock Base Board. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12500/quickstart/rak12500_assembly.png"
   width="70%"
-  caption="RAK12500 connection to WisBlock Base"
+  caption="RAK12500 connection to the WisBlock Base"
 />
 
 #### Assembling and Disassembling of WisBlock Modules
@@ -72,7 +72,7 @@ As shown in **Figure 2**, the location for Slot A and C are properly marked by s
 <rk-img
   src="/assets/images/wisblock/rak12500/quickstart/rak12500-mounting.png"
   width="70%"
-  caption="RAK12500 connection to WisBlock Base"
+  caption="RAK12500 connection to the WisBlock Base"
 />
 
 ##### Disassembling
@@ -109,12 +109,12 @@ Another important part component of RAK12500 is the GPS antenna. You need to ens
 
 <rk-img
   src="/assets/images/wisblock/rak12500/quickstart/rak_12500_gps_antenna.png"
-  width="35%"
+  width="70%"
   caption="GPS antenna"
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12500 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12500 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
 :::
 
 
@@ -122,55 +122,68 @@ After all this setup, you can now connect the battery and USB cable to start pro
 
 ### Software Configuration and Example
 
-The RAK12500 is a very accurate GNSS Module that contains u-blox ZOE-M8Q chip. The ZOE-M8Q features exceptional performance, high sensitivity, and minimal acquisition time, with digital I2C/SPI serial interface standard output. 
+The RAK12500 is a very accurate GNSS Module that contains a u-blox ZOE-M8Q chip. The ZOE-M8Q features exceptional performance, high sensitivity, and minimal acquisition time, with digital I2C/SPI serial interface standard output. 
 
 #### Initial Test of the RAK12500 WisBlock Module
 
 If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 7** and **Figure 8**.
+1. You need to select first the WisBlock Core you have, as shown in **Figure 7** to **Figure 9**.
 
 <rk-img
   src="/assets/images/wisblock/rak12500/quickstart/rak4631_board.png"
   width="100%"
-  caption="Selecting RAK4631 as WisBlock Core"
+  caption="Selecting RAK4631 as the WisBlock Core"
 />
 
 <rk-img
   src="/assets/images/wisblock/rak12500/quickstart/rak11200_board.png"
   width="100%"
-  caption="Selecting RAK11200 as WisBlock Core"
+  caption="Selecting RAK11200 as the WisBlock Core"
 />
 
-2. The [Basic Sample Code for RAK12500](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12500_GPS_ZOE-M8Q) in Github will work on all WisBlock Core. You can open the the example codes depending on your WisBlock Core, as shown in **Figure 9** and **Figure 10**. 
+<rk-img
+  src="/assets/images/wisblock/rak12500/quickstart/rak11300_board.png"
+  width="100%"
+  caption="Selecting RAK11300 as the WisBlock Core"
+/>
+
+2. The [Basic Sample Code for RAK12500](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12500_GPS_ZOE-M8Q) in Github will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 10** to **Figure 12**. 
 
 <rk-img
   src="/assets/images/wisblock/rak12500/quickstart/rak4631_example.png"
   width="100%"
-  caption="Opening RAK12500 example code for RAK4631 WisBlock Core"
+  caption="Opening the RAK12500 example code for the RAK4631 WisBlock Core"
 />
 
 <rk-img
   src="/assets/images/wisblock/rak12500/quickstart/rak11200_example.png"
   width="100%"
-  caption="Opening RAK12500 example code for RAK11200 WisBlock Core"
+  caption="Opening the RAK12500 example code for the RAK11200 WisBlock Core"
 />
 
-3. Once the example code is open, install the [SparkFun u-blox GNSS](https://github.com/sparkfun/SparkFun_u-blox_GNSS_Arduino_Library) library by clicking the highlighted link, as shown in **Figure 11** and **Figure 12**.
+<rk-img
+  src="/assets/images/wisblock/rak12500/quickstart/rak11300_example.png"
+  width="100%"
+  caption="Opening the RAK12500 example code for the RAK11300 WisBlock Core"
+/>
+
+3. Once the example code is open, install the [SparkFun u-blox GNSS](https://github.com/sparkfun/SparkFun_u-blox_GNSS_Arduino_Library) library by clicking the highlighted link, as shown in **Figure 13** and **Figure 14**.
+
 
 <rk-img
   src="/assets/images/wisblock/rak12500/quickstart/rak12500-code.png"
   width="100%"
-  caption="Accessing the library used for RAK12500 Module"
+  caption="Accessing the library used for the RAK12500 Module"
 />
 
 <rk-img
   src="/assets/images/wisblock/rak12500/quickstart/rak12500_library.png"
   width="100%"
-  caption="Installing the compatible library for RAK12500 Module"
+  caption="Installing the compatible library for the RAK12500 Module"
 />
 
-4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 13** and **Figure 14**.
+4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 15** and **Figure 16**.
 
 <rk-img
   src="/assets/images/wisblock/rak12500/quickstart/rak12500_port.png"
@@ -184,7 +197,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Uploading the RAK12500 example code"
 />
 
-5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 15**, then your RAK12500 is properly communicating to the WisBlock core.
+5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 17**, then your RAK12500 is properly communicating to the WisBlock core.
 
 ::: tip 📝 NOTE
 The GPS antenna needs to have an unobstructed view of the sky to be able to receive satellite signals. For the example to work, you should test it outside of a building.

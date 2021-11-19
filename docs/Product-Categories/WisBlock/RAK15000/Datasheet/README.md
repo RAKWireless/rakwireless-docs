@@ -45,7 +45,7 @@ The RAK15000 WisBlock EEPROM module, part of the RAKwireless WisBlock series, is
 
 #### Mounting
 
-The RAK15000 module can be mounted on slots: A, B, C, or D of the WisBlock Base board. Figure 2 shows the mounting mechanism of the RAK15000 on a WisBlock Base module, such as the RAK5005-O.
+The RAK15000 module can be mounted on slots: A, B, C, or D of the WisBlock Base board. **Figure 2** shows the mounting mechanism of the RAK15000 on a WisBlock Base module, such as the RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak15000/datasheet/RAK15000_mounting.png"
@@ -55,16 +55,17 @@ The RAK15000 module can be mounted on slots: A, B, C, or D of the WisBlock Base 
 
 ### Hardware
 
-The hardware specification is categorized into five parts that cover the chipset and pinouts and the corresponding functions and diagrams of the board. It also presents the parameters and their standard values in terms of electrical and mechanical. 
+The hardware specification is categorized into five parts. It covers the chipset of the module and discusses the pinouts and their corresponding functions and diagrams. It also presents the parameters and their standard values in terms of electrical and mechanical of the RAK15000 WisBlock EEPROM Module. 
 
 #### Chipset
+
 | Vendor    | Part number |
 | --------- | ----------- |
 | Microchip | AT24CM02    |
 
 #### Pin Definition
 
-The RAK15000 WisBlock Sensor module comprises a standard 24 pin WisConnector. The IO WisConnector allows the RAK15000 module to be mounted on a WisBlock baseboard, such as the RAK5005-O. The pin order of the WisConnector and the Pinout Definition is shown in Figure 3. 
+The RAK15000 WisBlock Sensor module comprises a standard 24-pin WisConnector. The IO WisConnector allows the RAK15000 module to be mounted on a WisBlock baseboard, such as the RAK5005-O. The pin order of the WisConnector and the pinout definition is shown in **Figure 3**. 
 
 :::tip 📝 NOTE:
 Only the I2C related pins, VDD, and GND are connected to this module.    
@@ -91,7 +92,7 @@ Only the I2C related pins, VDD, and GND are connected to this module.
 
 ##### Board Dimensions
 
-Figure 4 shows the dimensions and the mechanic drawing of the RAK15000 module.
+**Figure 4** shows the dimensions and the mechanic drawing of the RAK15000 module.
 
 <rk-img
   src="/assets/images/wisblock/rak15000/datasheet/RAK15000_mechanic_drawing.png"

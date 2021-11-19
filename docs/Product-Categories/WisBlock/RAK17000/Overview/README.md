@@ -11,7 +11,7 @@ tags:
 
 # RAK17000 WisBlock Motor Control Module
 
-Thank you for choosing **RAK17000 WisBlock Motor Control Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK17000 WisBlock Motor Control Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [RAK17000 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -30,8 +30,12 @@ For WisBlock Core RAK4630:
 
 For WisBlock Core RAK11200:
 
-* [Sample Code: DC Motor Control](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/IO/RAK17000_Motor_Driver_DRV8833)
-* [Sample Code: Stepper Motor Control](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/IO/RAK17000_Stepper_Driver_DRV8833)
+* [Sample Code: DC Motor Control](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/IO/RAK17000_Motor_Driver_DRV8833)
+* [Sample Code: Stepper Motor Control](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/IO/RAK17000_Stepper_Driver_DRV8833)
+
+For WisBlock Core RAK11310:
+
+* [Sample Code: DC Motor Control](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/IO/RAK17000_Motor_Driver_DRV8833)
 
 ## Product Description
 

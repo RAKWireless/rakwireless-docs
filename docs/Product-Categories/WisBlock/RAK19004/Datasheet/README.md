@@ -15,11 +15,10 @@ next: false
 
 ### Description
 
-RAK19004 is a WisBlock Power module that can harness and convert green power such as wind power, hydroelectric power, or solar power into fixed 5V output. The module uses a TPS55165-Q1 from Texas Instruments which is a DC-DC buck-boost converter. Upon startup, the module can have a stable 5V output from a varying input voltage of 2V-36V and its output current can also be as high as 1A.
+RAK19004 is a WisBlock Power module that can harness and convert green power such as wind power, hydroelectric power, or solar power into fixed 5&nbsp;V output. The module uses a TPS55165-Q1 from Texas Instruments, which is a DC-DC buck-boost converter. Upon startup, the module can have a stable 5&nbsp;V output from a varying input voltage of 2&nbsp;V-36&nbsp;V, and its output current can also be as high as 1&nbsp;A.
 
 ::: tip 📝 NOTE
-- The module has a minimum input voltage of 5.3V for startup.
-
+- The module has a minimum input voltage of 5.3&nbsp;V for a startup.
 - RAK19004 doesn't have a WisConnector just like the other WisBlock modules, but it is an external module with four (4) mounting holes, so you can place the module in the position that you want.
 ::: 
 
@@ -39,7 +38,7 @@ The RAK19004 is an external module with four (4) mounting holes, so you can plac
 
 ### Hardware
 
-The hardware specification discusses the pinouts, and its corresponding functions and diagrams of the module. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK19004 WisBlock Module.
+The hardware specification is categorized into four parts. It discusses the pinouts and their corresponding functions and diagrams of the module. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK19004 WisBlock Module.
 
 #### Pin Definition
 
@@ -48,7 +47,7 @@ The RAK19004 have two (2) connectors:
 - SMD connector with a 1.5&nbsp;mm pitch for the **5V Output**.
 
 :::warning ⚠️ WARNING    
-Please **ENSURE** to check correctly the polarity of the cable plugged into the Power Input connector.    
+**ENSURE** to check correctly the polarity of the cable plugged into the Power Input connector.    
 :::
 
 #### Electrical Characteristics
@@ -73,7 +72,7 @@ This section shows the maximum and minimum ratings of the RAK19004 module and it
 
 ##### Board Dimensions
 
-The board dimensions of the RAK19004 module is shown in **Figure 1** below.
+The board dimensions of the RAK19004 module are shown in **Figure 1** below.
 
 <rk-img
   src="/assets/images/wisblock/rak19004/datasheet/board-dimensions.png"
@@ -82,15 +81,13 @@ The board dimensions of the RAK19004 module is shown in **Figure 1** below.
 />
 
 :::warning ⚠️ WARNING    
-Please **ENSURE** to check correctly the polarity of the cable plugged into the Power Input connector.    
+**ENSURE** to check correctly the polarity of the cable plugged into the Power Input connector.    
 :::
 
 ::: tip 📝 NOTE
 
-- The connector **J1** close to SILK **POWER_IN** is for Green Power, users can connect it to Green Power.
-
-- The connector **J3** close to SILK **OUT_5V** is for WisBlock Base, users can connect it to the WisBlock Base by using a cable.
-
+- The connector **J1** close to SILK **POWER_IN** is for Green Power, you can connect it to Green Power.
+- The connector **J3** close to SILK **OUT_5V** is for WisBlock Base, you can connect it to the WisBlock Base by using a cable.
 - Both **J1** and **J3** are positive poles.
 ::: 
 
@@ -102,6 +99,16 @@ Please **ENSURE** to check correctly the polarity of the cable plugged into the 
   src="/assets/images/wisblock/rak19004/datasheet/rak19004-schematic.png"
   width="100%"
   caption="RAK19004 WisBlock Module Schematics"
+/>
+
+##### Reverse Connection Protection
+
+Even if the input is reversed, there will be no damage to the device.
+
+<rk-img
+  src="/assets/images/wisblock/rak19004/datasheet/reverse-protect.png"
+  width="35%"
+  caption="RAK19004 Reverse Protection Diode"
 />
 
 ##### Buck-Boost Converter

@@ -613,6 +613,12 @@ export default {
     store: 'https://store.rakwireless.com/products/wisblock-pir-module-rak12006'
   },
 
+  '/Product-Categories/WisBlock/RAK16001/': {
+    label: 'RAK16001 WisBlock ADC Module',
+    img: '/assets/images/wisblock/rak16001/overview/RAK16001_buy.png',
+    store: 'https://store.rakwireless.com/'
+  },
+
   '/Product-Categories/WisBlock/RAK12009/': {
     label: 'RAK12009 WisBlock Alcohol Gas Module',
     img: '/assets/images/wisblock/rak12009/overview/RAK12009_buy.png',

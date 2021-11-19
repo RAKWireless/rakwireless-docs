@@ -1108,28 +1108,47 @@ OK
 
 Description: Long data payload
 
-This command is used to send long data payload.
+This command is used to send a long data payload up to 1024 bytes. The total number of payload uplinks is dependent on the DR set using `AT+DR` and the frequency band using `AT+BAND`. It follows the limits set on the LoRaWAN Regional Specification.
+
 
 | Command                           | Input Parameter              | Return Value                                               | Return Code              |
 | --------------------------------- | ---------------------------- | ---------------------------------------------------------- | ------------------------ |
 | **`AT+LPSEND?`**                  | -                            | `AT+LPSEND`: Send long packet data (Maximum is 1024 bytes) | `OK`                     |
 | **`AT+LPSEND=<Input Parameter>`** | **port**:**ack**:**payload** | -                                                          | `OK` or `AT_PARAM_ERROR` |
+**ack**: 0-unconfirmed, 1-confirmed
 
-*ack*: 0-unconfirmed, 1-confirmed
+This command exclusively works in RAKwireless WisGate Edge LoRaWAN Gateways, in which the long payload is automatically combined in the backend. You need to activate the long payload mode (**Enable LPTP** switch) in the device configuration in the RAKwireless WisGate Edge LoRaWAN Gateway built-in network server, as shown in **Figure 1**, to enable this functionality in the gateway side. 
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-evaluation-board/at-command/lp_mode.png"
+  width="90%"
+  caption="Enable long payload mode in the device configuration"
+/>
 
 **Example**:
 
-In this example, the payload length is automatically sliced with the DR set to 0. Uplink is sending to port 2 and confirmed.
+In this example, the device is configured in US915 and illustrated to send 100 bytes confirmed payload in different data rate specifically 2, 1, and 0.
+
 ```
-AT+LPSEND=2:1:123456789012
+AT+LPSEND=2:1:1111111111222222222233333333334444444444555555555566666666667777777777888888888899999999990000000000
 
 OK
-+EVT:SEND CONFIRMED OK
-+EVT:SEND CONFIRMED OK
 ```
 
+<rk-img
+  src="/assets/images/wisduo/rak3172-evaluation-board/at-command/lp_at.png"
+  width="90%"
+  caption="AT+LPSEND command"
+/>
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-evaluation-board/at-command/lp_payload.png"
+  width="90%"
+  caption="Payload sent in the network server"
+/>
+
 :::tip 📝 NOTE:
-The large payload sent via `AT+LPSEND` will be sliced automatically depending on the DR that follows the LoRaWAN specifications. You can check [Appendix III](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#appendix-iii-maximum-transmission-load-by-region) for the maximum size.
+The large payload via `AT+LPSEND` will be sliced automatically depending on the DR that follows the LoRaWAN specifications. You can check [Appendix III](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#appendix-iii-maximum-transmission-load-by-region) for the maximum size.
 :::
 
 ### AT+LINKCHECK 
@@ -1961,7 +1980,7 @@ OK
 ```
 
 :::tip 📝 NOTE:
-To successfully transmit P2P, you must have another device configured with the same P2P parameters and receive with the `AT+PRECV` command.
+To successfully transmit P2P, you must have another device configured with the same P2P parameters and ready to receive the payload with the `AT+PRECV` command. The maximum payload in P2P mode is 255 bytes.
 :::
 
 ### AT+PRECV 

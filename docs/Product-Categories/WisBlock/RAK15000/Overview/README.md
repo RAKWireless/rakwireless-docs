@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisblock/rak15000/overview/RAK15000_home.png
-rak_desc: The RAK15000 is a serial EEPROM module that can be mounted to slot A, B, C, or D of RAK5005-O base board. It provides 2‑Mbit (262,144 x 8) of serial EEPROM. The module uses AT24CM02 from Microchip and supports I2C standard mode or fast mode.
+rak_desc: The RAK15000 is a serial EEPROM module that can be mounted to slot A, B, C, or D of the RAK5005-O base board. It provides 2‑Mbit (262,144 x 8) of serial EEPROM. The module uses AT24CM02 from Microchip and supports I2C standard mode or fast mode.
 rak_grp: [wisblock, wisstorage]
 prev: ../../
 next: ../Quickstart/
@@ -12,7 +12,7 @@ tags:
 
 # RAK15000 WisBlock EEPROM Module
 
-Thank you for choosing **RAK15000 WisBlock EEPROM Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK15000 WisBlock EEPROM Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [RAK15000 Quick Start Guide](../Quickstart)
 * [Datasheet](../Datasheet/)
