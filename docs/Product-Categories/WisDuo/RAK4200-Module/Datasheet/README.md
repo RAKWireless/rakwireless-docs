@@ -266,7 +266,6 @@ The RAK4200 WisDuo LPWAN Module takes **46.179&nbsp;ms** to receive a LoRa packe
 - **Ramp-up Rate** (B): 0~2.5&nbsp;℃/ sec;
 - **Ramp-down Rate** (C): 1~3&nbsp;℃/ sec.
 
-
 ### Software
 
 Download the latest firmware of the RAK4200 WisDuo LPWAN Module as provided in the table below.
@@ -284,6 +283,7 @@ The **hex file** contains both the bootloader and the application code. You need
 | Model Source | Source                                                                                          |
 | ------------ | ----------------------------------------------------------------------------------------------- |
 | RAK4200      | [Download](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/RAK4200_Latest_Firmware.zip) |
+
 
 ## Certification
 

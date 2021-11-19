@@ -23,12 +23,12 @@ RAK4600 Evaluation Board is designed to give you a quick start to explore the Lo
 
 The board itself has the RAK4600 as its core, which is a module that utilizes Nordic nRF52832 MCU and an SX1276 LoRa chip. The high level of integration allows for outstanding performance: Lora TX Power of up to 20&nbsp;dBm.
 
-The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P2P Point-to-Point communication. The low power, long-range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, and personal area networks applications such as health/fitness sensors and monitors.
+The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P2P Point-to-Point communication. The low power, long-range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, and personal area networks applications, such as health/fitness sensors and monitors.
 
 ### Features
 
 - LoRa module for Smart City, Smart Agriculture, Smart Industry
-- Frequency range: 863–870&nbsp;MHz (EU) / 902–928&nbsp;MHz (US), ISM and SRD systems
+- Frequency range: 863–870&nbsp;MHz (EU) / 902–928&nbsp;MHz (US), ISM, and SRD systems
 - I/O ports: UART/I2C/GPIO (optional NFC interface)
 - Based on RAK4600 module with a sleep current consumption of 13.3&nbsp;μA (down to 11.2&nbsp;μA @ 2.0&nbsp;V)
 - LoRa Boost mode with 20&nbsp;dBm output power
@@ -38,7 +38,7 @@ The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P
 
 ### Overview  
 
-Figures 1 and 2 show the front and back view of the RAK4600 Evaluation Board front view.
+**Figure 1** and **Figure 2** show the front and back views of the RAK4600 Evaluation Board front view.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/datasheet/rak4600-top.png"
@@ -54,11 +54,11 @@ Figures 1 and 2 show the front and back view of the RAK4600 Evaluation Board fro
   
 ### Hardware
 
-The hardware specification is categorized into five parts. It covers the interfaces, pin definitions and its corresponding functions. Also, it includes the RF requirements, electrical and mechanical parameters of the RAK4600 Evaluation Board.
+The hardware specification is categorized into five parts. It covers the interfaces, pin definitions and their corresponding functions. Also, it includes the RF requirements, electrical and mechanical parameters of the RAK4600 Evaluation Board.
 
 #### Interfaces  
 
-RAK4601 is the WisBlock Core CPU module used on the RAK4600 Evaluation Board. Figure 3 shows an overview of interfaces found on the RAK4600 Evaluation Board.
+RAK4601 is the WisBlock Core CPU module used on the RAK4600 Evaluation Board. **Figure 3** shows an overview of interfaces found on the RAK4600 Evaluation Board.
 
 
 <rk-img
@@ -80,7 +80,7 @@ When programming via the RAKDAP1 DAPLink tool, it is required to have all of the
 For the aforementioned reason, it is best you leave these exposed for programming purposes and not to remap them as GPIOs.
 :::    
 
-Use Figure 4 as guide to connect RAKDAP1 on RAK4600 Evaluation Board.
+Use **Figure 4** as a guide to connect RAKDAP1 on the RAK4600 Evaluation Board.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/datasheet/rak4600-connection.png"
@@ -97,7 +97,7 @@ For flashing the firmware, refer to the [Flash the Firmware Using DAPLink and RA
   
 The RF pins of the RAK4600 Evaluation Board are connected to external antennas through a standard iPEX antenna connector. 
 
-Use Figures 5 and 6 as a reference to identify the antennas.
+Use **Figure 5** and **Figure 6** as a reference to identify the antennas.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/3.interfacing/ble-antenna.png"
@@ -115,7 +115,7 @@ Use Figures 5 and 6 as a reference to identify the antennas.
 Before powering the RAK4600 Evaluation Board, install the LoRa and BLE antenna first. Not doing so might damage the board.
 :::
 
-Use Figure 7 as a reference to connect the antennas.
+Use **Figure 7** as a reference to connect the antennas.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/3.interfacing/u9lgszijijydbyjkgwnx.svg"
@@ -316,7 +316,7 @@ UART serial pins on J10 are only useable as UART by developing custom FW that us
 | 2              | GND          | Ground                                                                                         |                         |
 | 3              | SPI_CS       | SPI Chip Select Pin                                                                            | Not connected           |
 | 4              | SPI_CLK      | SPI Clock Pin                                                                                  | Not Connected           |
-| 5              | SPI_MISO     | SPI MISO signal                                                                                | Not connected            |
+| 5              | SPI_MISO     | SPI MISO signal                                                                                | Not connected           |
 | 6              | SPI_MOSI     | SPI MOSI signal                                                                                | Not connected           |
 | 7              | I2C1_SCL     | I2C clock pin                                                                                  | P0.12                   |
 | 8              | I2C1_SDA     | I2C data  pin                                                                                  | P0.13                   |
@@ -371,9 +371,9 @@ UART serial pins on J10 are only useable as UART by developing custom FW that us
 
 ##### Battery Connector
 
-The RAK5005 WisBase board can be powered by a battery via P1 connector. The battery is not included on RAK4600 Evaluation Board packaging.
+The RAK5005 WisBase board can be powered by a battery via a P1 connector. The battery is not included in the RAK4600 Evaluation Board packaging.
 
-Use Figure 11 as a reference to connect the battery.
+Use **Figure 11** as a reference to connect the battery.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/datasheet/rak4600-p1p2.png"
@@ -381,7 +381,7 @@ Use Figure 11 as a reference to connect the battery.
   caption="RAK4600 EVB battery and solar connector"
 />
 
-The pin definition of RAK600 Evaluation Board Li-Ion battery connector is shown in the table below. The matching connector for the battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199).
+The pin definition of the RAK600 Evaluation Board Li-Ion battery connector is shown in the table below. The matching connector for the battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199).
 
 ##### P1 Battery Connector
 
@@ -391,7 +391,7 @@ The pin definition of RAK600 Evaluation Board Li-Ion battery connector is shown 
 | 2       | VBAT         | Positive + pin of the battery |
 
 
-The full specification of RAK4600 Evaluation Board battery is shown in the table below.
+The full specification of the RAK4600 Evaluation Board battery is shown in the table below.
 
 
 | **No.** | **Item**                  | **Specification**                    |
@@ -408,15 +408,15 @@ The full specification of RAK4600 Evaluation Board battery is shown in the table
 
 
 :::tip 📝 NOTE
-The voltage of the Li-Ion battery **must not exceed 4.3&nbsp;V**.
-When connecting the battery, make sure the polarity is correct. Not all connectors are wired the same.
+- The voltage of the Li-Ion battery **must not exceed 4.3&nbsp;V**.
+- When connecting the battery, make sure the polarity is correct. Not all connectors are wired the same.
 :::
 
 ##### Solar Panel Connector
 
-A 5&nbsp;V solar panel can be connected to the board via the P2 connector to serve for the purpose of charging the battery. The solar panel is not included on RAK4600 Evaluation Board packaging. Use Figure 11 as a guide to connect the solar panel.
+A 5&nbsp;V solar panel can be connected to the board via the P2 connector to serve the purpose of charging the battery. The solar panel is not included on RAK4600 Evaluation Board packaging. Use **Figure 11** as a guide to connect the solar panel.
 
-The pin definition of RAK4600 Evaluation Board solar panel connector is shown in the table below. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287).
+The pin definition of the RAK4600 Evaluation Board solar panel connector is shown in the table below. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287).
 
 <b>P2 Solar Panel connector</b>
 
@@ -426,7 +426,7 @@ The pin definition of RAK4600 Evaluation Board solar panel connector is shown in
 | 2       | GND          | GND                           |
 
 
-The full specification of Solar Panel for RAK4600 Evaluation Board is shown in the table below.
+The full specification of the Solar Panel for the RAK4600 Evaluation Board is shown in the table below.
 
 
 | **No.** | **Item**        | **Specification**                                        |
@@ -467,31 +467,29 @@ The reset push button is connected to the reset pin P0.21 of the RAK4600. When p
   
 ##### Operating Frequencies  
 
-The RAK4600 Evaluation Board supports the LoRaWAN high-frequency region shown in table below.
-
-<b>RAK4600 High</b>
+The RAK4600 Evaluation Board supports the LoRaWAN high-frequency region, as shown in the table below.
   
-| Region        | Frequency (MHz) |
-| ------------- | --------------- |
-| Australia     | AU915           |
-| Asia          | AS923           |
-| Europe        | EU868           |
-| Canada        | US915           |
-| India         | IN865           |
-| Korea         | KR920           |
-| North America | US915           |
+| Module     | Region        | Frequency (MHz) |
+| ---------- | ------------- | --------------- |
+| RAK4600(H) | Australia     | AU915           |
+|            | Asia          | AS923           |
+|            | Europe        | EU868           |
+|            | Canada        | US915           |
+|            | India         | IN865           |
+|            | Korea         | KR920           |
+|            | North America | US915           |
 
 #### Electrical Characteristics
 
 ##### Power Consumption
 
-| Conditions                                       | Current | Unit  |
-| :----------------------------------------------- | :-----: | :---: |
-| Tx mode LoRa @17&nbsp;dBm                        |   92    |  mA   |
-| Tx mode LoRa @20&nbsp;dBm                        |   125   |  mA   |
-| Tx mode BT @4&nbsp;dBm                           |    9    |  mA   |
-| Rx mode LoRa @37.5&nbsp;Kbps                     |   17    |  mA   |
-| Rx mode BT @2&nbsp;Mbps                          |  11.5   |  mA   |
+| Conditions                   | Current | Unit  |
+| :--------------------------- | :-----: | :---: |
+| Tx mode LoRa @17&nbsp;dBm    |   92    |  mA   |
+| Tx mode LoRa @20&nbsp;dBm    |   125   |  mA   |
+| Tx mode BT @4&nbsp;dBm       |    9    |  mA   |
+| Rx mode LoRa @37.5&nbsp;Kbps |   17    |  mA   |
+| Rx mode BT @2&nbsp;Mbps      |  11.5   |  mA   |
 
 ##### Absolute Maximum Ratings
 

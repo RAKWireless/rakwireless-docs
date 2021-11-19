@@ -10,15 +10,8 @@ tags:
 
 #  RAK4600 Evaluation Board Quick Start Guide
 
-<!---
-<rk-img
-  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/2.quick-start-guide/jm6rnmjjsgr5hr1kzynr.jpg"
-  width="50%"
-  caption="RAK4600 Evaluation Board Bottom View"
-/>
---->
 ## Prerequisites
-### What do you need?
+### What Do You Need?
 
 Before going through the configuration guide of the RAK4600 Evaluation Board, make sure to prepare the items listed below:
 
@@ -29,7 +22,7 @@ Before going through the configuration guide of the RAK4600 Evaluation Board, ma
 5. Windows PC
 
 :::tip 📝 NOTE
-This device released by RAKWireless is already pre-loaded with its latest firmware upon manufacture. If you want to have your device's firmware burned or upgraded, please refer to the links below:
+This device released by RAKWireless is already pre-loaded with its latest firmware upon manufacture. If you want to have your device's firmware burned or upgraded, refer to the following links:
 
 1. [Device Firmware Setup](#burning-the-firmware)
 2. [Device Firmware Upgrading](#upgrading-firmware-through-dfu-using-ble)
@@ -48,10 +41,10 @@ This device released by RAKWireless is already pre-loaded with its latest firmwa
 
 ## Interfacing with RAK4600
 
-In order to interface with the Evaluation Board, using a Windows PC, you need to install the RAK Serial Port Tool **[here](https://downloads.rakwireless.com/en/LoRa/Tools/).**
+To interface with the Evaluation Board, using a Windows PC, you need to install the **[RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/)**.
 
 :::warning ⚠️ WARNING
-Before powering the RAK4600 Evaluation Board , you should install the LoRa and BLE Antenna first. Not doing so might damage the board.
+Before powering the RAK4600 Evaluation Board, you should install the LoRa and BLE Antenna first. Not doing so might damage the board.
 :::
 
 <br>
@@ -62,7 +55,7 @@ Before powering the RAK4600 Evaluation Board , you should install the LoRa and B
   caption="LoRa and BLE Antennas"
 />
 
-- Connect your RAK4600 Evaluation Board to your Windows PC using the provided micro USB cable.
+1. Connect your RAK4600 Evaluation Board to your Windows PC using the provided micro USB cable.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/3.interfacing/rzolxz9ojiyg0lkqpkqz.svg"
@@ -70,7 +63,7 @@ Before powering the RAK4600 Evaluation Board , you should install the LoRa and B
   caption="RAK4600 Evaluation Board to Windows PC Connection"
 />
 
-- Open the RAK Serial Port Tool :
+2. Open the RAK Serial Port Tool.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/3.interfacing/rak_serial_tool.png"
@@ -78,7 +71,7 @@ Before powering the RAK4600 Evaluation Board , you should install the LoRa and B
   caption="RAK Serial Port Tool"
 />
 
-- In order to choose the correct COM Port number for your device you need to open your Device Manager by pressing : Windows + R and typing `devmgmt.msc` or search in the Start Menu
+3. To choose the correct COM Port number for your device, open your Device Manager by pressing **Windows + R** and typing `devmgmt.msc`, or search in the Start Menu.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/3.interfacing/dev_manager.png"
@@ -86,13 +79,13 @@ Before powering the RAK4600 Evaluation Board , you should install the LoRa and B
   caption="Device Manager"
 />
 
-- Look for Ports (COM & LPT) and find the name **USB-SERIAL CH340** . Take note of the COM Port Number.
+4. Look for Ports (COM & LPT) and find the name **USB-SERIAL CH340**. Take note of the COM Port Number.
 
 :::tip 📝 NOTE
-If you didn't find any Port with the name USB-Serial CH340, make sure you have installed the the [CH340 Drivers](https://downloads.rakwireless.com/LoRa/RAK811/Tools/CH340%20Drive.rar) on your Windows PC.
+If you didn't find any Port with the name USB-Serial CH340, make sure you have installed the [CH340 Drivers](https://downloads.rakwireless.com/LoRa/RAK811/Tools/CH340%20Drive.rar) on your Windows PC.
 :::
 
-- Choose the Correct Port Number and Baud Rate from the device manager then click Open:
+5. Choose the correct port number and baud rate from the device manager, then click Open.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/3.interfacing/baud.png"
@@ -102,9 +95,9 @@ If you didn't find any Port with the name USB-Serial CH340, make sure you have i
 
 ### Checking Device Logs
 
-1. Open the RAK Serial Port Tool
+1. Open the RAK Serial Port Tool.
 
-2. Press the reset button on the RAK4600 Evaluation Board then you will see the following contents in the Serial Port Tool.
+2. Press the reset button on the RAK4600 Evaluation Board, then you will see the following contents in the Serial Port Tool.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/4.checking-device-logs/rak4600_log.png"
@@ -113,7 +106,7 @@ If you didn't find any Port with the name USB-Serial CH340, make sure you have i
 />
 
 :::tip 📝 NOTE
-You still have to connect the micro usb cable to the RAK4600 Evaluation Board to power the board.
+You still have to connect the micro USB cable to the RAK4600 Evaluation Board to power the board.
 :::
 
 ## Configuring RAK4600
@@ -121,12 +114,12 @@ You still have to connect the micro usb cable to the RAK4600 Evaluation Board to
 You can configure your RAK4600 Evaluation Board by sending AT Commands either through BLE or through micro USB.
 
 :::tip 📝 NOTE:
-For the full list of AT Commands available for configuring your RAK4600, please refer to the [AT Command Manual](../../AT-Command-Manual/).
+For the full list of AT Commands available for configuring your RAK4600, refer to the [AT Command Manual](../../AT-Command-Manual/).
 :::
 
 ### Through Micro USB
 
-1. As mentioned in [Checking Device Logs](#checking-device-logs), if you want to use RAK4600 Evaluation Board through UART, you should connect the RAK4600 to Windows PC as shown in the image below:
+1. As mentioned in [Checking Device Logs](#checking-device-logs), if you want to use the RAK4600 Evaluation Board through UART, you should connect the RAK4600 to Windows PC, as shown in **Figure 7**.
 
 
 <rk-img
@@ -149,7 +142,7 @@ at+version
 
 ### Through BLE
 
-1. In order to configure the RAK4600 through BLE, download and install **nRF Connect for Mobile**. This tool is developed by Nordic Semiconductor and is available on the App Store and Google Play Store.
+1. To configure the RAK4600 through BLE, download and install the **nRF Connect for Mobile**. This tool is developed by Nordic Semiconductor and is available on the App Store and Google Play Store.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5.configuring-rak4600/eponlb3piu1p6noof1np.png"
@@ -157,7 +150,7 @@ at+version
   caption="nRF Connect App in Android and IOS"
 />
 
-2. Make sure the Bluetooth on your mobile is turned on. Open the application and scan for BLE devices. You will see all BLE devices in range in the scan list:
+2. Make sure the Bluetooth on your mobile is turned on. Open the application and scan for BLE devices. You will see all the BLE devices in range in the scan list.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5.configuring-rak4600/rwpeihuyflhu65gopfml.jpg"
@@ -165,7 +158,7 @@ at+version
   caption="Available Bluetooth Devices in the Nordic App"
 />
 
-3. Press the reset button on the RAK4600 Evaluation Board and wait for a couple of seconds. Look for a BLE Device named "RUI-..." in the scan list of the app. Connect to this device and click "**Nordic UART Service**"
+3. Press the reset button on the RAK4600 Evaluation Board and wait for a couple of seconds. Look for a BLE Device named "**RUI-...**" in the scan list of the app. Connect to this device and click "**Nordic UART Service**".
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5.configuring-rak4600/mg6xtfoepu06s33iedyu.jpg"
@@ -177,7 +170,7 @@ at+version
 By default, the BLE signal of the RAK4600 is turned off automatically if no connection is established after 60 seconds. Connect to RAK4600 over BLE immediately after pressing the reset button.
 :::
 
-4. Click on the arrow which is marked by the red box in the picture below, you will see the following page:
+4. Click on the arrow highlighted in a red box, as shown in **Figure 12**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5.configuring-rak4600/r7j95cqwrevod7qtvcsv.jpg"
@@ -187,7 +180,7 @@ By default, the BLE signal of the RAK4600 is turned off automatically if no conn
 
 5. You can now send AT commands to the RAK4600.
 
-- For example, if you want to check the current firmware’s version send the following command:
+- For example, if you want to check the current firmware’s version, send the following command:
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/5.configuring-rak4600/jficmu58afzs3r1hkw5h.jpg"
@@ -206,7 +199,7 @@ By default, the BLE signal of the RAK4600 is turned off automatically if no conn
 
 ## Open Source Framework
 
-Before using RAK4600 on Arduino IDE you need to flash a new bootloader using RAKDAP1 Tool and pyOCD.
+Before using RAK4600 on Arduino IDE, you need to flash a new bootloader using the RAKDAP1 Tool and pyOCD.
 
 1. Install pyOCD.
 <!--
@@ -215,32 +208,32 @@ Please refer to [RAKDAP1 Flash and Debug Tool](../../../../../Product-Categories
 
 Refer to <a href="/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool" target="_blank">RAKDAP1 Flash and Debug Tool</a>.
 
-2. Check pyOCD installation
+2. Check pyOCD installation.
 
 ```sh
 pyocd list
 ```
-3. Clone RAK repository
+3. Clone RAK repository.
 
 ```sh
 git clone https://github.com/RAKWireless/RAK4600_Arduino
 ```
 
-4. Flash bootloader
+4. Flash bootloader.
 
 ```sh
 cd RAK4600_Arduino
 pyocd flash -t nrf52 feather_nrf52832_bootloader.hex
 ```
 
-5. Install BSP support for Arduino as described on section BSP Installation
+5. Install the BSP support for Arduino as described in section BSP Installation.
 
 https://github.com/RAKWireless/RAK4600_Arduino#bsp-installation
 
 :::tip 📝 NOTE:
-Before upload any Arduino example make sure that the RAK4600 is on DFU mode. 
+Before uploading any Arduino example, make sure that the RAK4600 is on DFU mode. 
 1. Connect the RX pin of RAK4600 to GND.
-2. Press the reset button and then disconnect RX pin from GND. Now the RAK4600 is on DFU mode.
+2. Press the reset button and then disconnect the RX pin from GND. Now the RAK4600 is on DFU mode.
 :::
 
 ## Connecting to The Things Stack (TTN V3)
@@ -950,13 +943,13 @@ Refer to <a href="/Product-Categories/WisDuo/RAK4600-Module/Quickstart/#lora-p2p
 
 ### RAK5005 Core Module Slot Connection to RAK4601
   
-The RAK5005 is the base board that connects the RAK4600 Core Module. It creates the power supply for the attached module, and provides additional IO and Sensor support for your project needs.  
+The RAK5005 is the base board that connects the RAK4600 Core Module. It creates the power supply for the attached module and provides additional IO and Sensor support for your project needs.  
 
 ::: tip 📝 NOTE
-RAK4601 is a circuit board module for RAK5005 with pre-soldered RAK4600 LPWAN Module.
+RAK4601 is a circuit board module for RAK5005 with a pre-soldered RAK4600 LPWAN Module.
 :::
   
-Listed below are the accessible pins and data bus of attached RAK5005 base board on the RAK4600 EVB:
+Listed below are the accessible pins and data bus of the attached RAK5005 base board on the RAK4600 EVB:
 
 
 | RAK4601 Pin Definition | Function Name of WisBase | Pin Number | Pin Number | Function Name of WisBase | RAK4601 Pin Definition |
@@ -986,7 +979,7 @@ Listed below are the accessible pins and data bus of attached RAK5005 base board
 
 ### Bluetooth Connection Modes
 
-There are three BLE modes in RAK4600 from the firmware V3.0.0.6 on, the **Peripheral Mode**, the **Central Mode** and the **Beacon Scan Mode**. You can change the work mode of RAK4600’s BLE using the commands provided below which is defined [here](../../RAK4600-Module/AT-Command-Manual/)
+There are three BLE modes in RAK4600 from the firmware V3.0.0.6: the **Peripheral Mode**, the **Central Mode**, and the **Beacon Scan Mode**. You can change the work mode of RAK4600’s BLE using the commands provided below, which is defined in the [AT Command Manual](../../RAK4600-Module/AT-Command-Manual/).
 
 ```sh
 at+set_config=ble:work_mode:X:Y
@@ -1001,22 +994,22 @@ For the Peripheral Mode, you can scan RAK4600’s BLE and connect with it using 
 
 #### BLE Central Mode
 
-For the Central Mode, RAK4600’s BLE will not broadcast so that your mobile devices will not be able to scan it.  This is very useful if you want to make the RAK4600 act as a BLE Gateway wherein BLE Sensor Nodes (up to 20 Devices) can send sensor data.
+For the Central Mode, RAK4600’s BLE will not broadcast, so that your mobile devices will not be able to scan it. This is very useful if you want to make the RAK4600 act as a BLE Gateway wherein BLE Sensor Nodes (up to 20 Devices) can send sensor data.
 
 #### Beacon Scan Mode
 
-For the Beacon Scan mode, RAK4600 can scan around the Beacon signal, it is useful for Beacon use case like iBeacon.
+For the Beacon Scan mode, RAK4600 can scan around the Beacon signal. It is useful for a Beacon use case like iBeacon.
 
 #### RAK4600 BLE Default Settings
 
-By default, the RAK4600 Evaluation Board will work on **Peripheral Mode.** In this mode users can configure it through BLE including DFU easily. It should be noted that after resetting the RAK4600, the user has only 60 seconds to establish a connection with your Mobile Device through BLE based on its power consumption settings. If no connection has been established within 60 seconds, the RAK4600's BLE signal will not be broadcasted and it will enter power saving mode. On the other hand, there is no limitation once you are already connected with the RAK4600's BLE.
+By default, the RAK4600 Evaluation Board will work on **Peripheral Mode.** In this mode, you can configure it through BLE, including DFU. It should be noted that after resetting the RAK4600, you have only 60 seconds to establish a connection with your Mobile Device through BLE based on its power consumption settings. If no connection has been established within 60 seconds, the RAK4600 BLE signal will not be broadcasted, and it will enter power-saving mode. On the other hand, there is no limitation once you are already connected with the RAK4600's BLE.
 
-If you set the RAK4600 to work in Central Mode, the RAK4600 will work first on Peripheral Mode for 30 seconds and if no connection is established after 30 seconds, it will automatically work in **Central Mode.** In this mode,the BLE signal of the RAK4600 will stop broadcasting and will not be visible on your mobile devices up until you change the work mode to peripheral mode or reset the RAK4600 again.
+If you set the RAK4600 to work in Central Mode, the RAK4600 will work first on Peripheral Mode for 30 seconds, and if no connection is established after 30 seconds, it will automatically work in **Central Mode.** In this mode, the BLE signal of the RAK4600 will stop broadcasting and will not be visible on your mobile devices up until you change the work mode to peripheral mode or reset the RAK4600 again.
 
 
 ### Burning the Firmware
 
-If you want to get a pre-compiled firmware instead of compiling the source code by yourself, you can find the latest firmware on RAK website after it is released **[here](https://downloads.rakwireless.com/en/LoRa/RAK4600/Firmware/)**.
+If you want to get a pre-compiled firmware instead of compiling the source code by yourself, you can find the latest firmware on the **[RAK downloads](https://downloads.rakwireless.com/en/LoRa/RAK4600/Firmware/)**.
 
 
 #### Flash the firmware using DAPLink and RAKDAP
@@ -1025,9 +1018,9 @@ Refer to <a href="../../../../../Product-Categories/Accessories/RAKDAP1-Flash-an
 
 ### Upgrading Firmware through DFU using BLE
 
-1. Download the DFU package of the RAK4600 Evaluation Board [**here**](https://downloads.rakwireless.com/LoRa/RAK4600/Firmware/History-Release-Version/DFU-Package/) and save it on your mobile phone.
+1. Download the DFU package of the [**RAK4600 Evaluation Board**](https://downloads.rakwireless.com/LoRa/RAK4600/Firmware/History-Release-Version/DFU-Package/), and save it on your mobile phone.
 
-2. Make sure the Bluetooth on your mobile is turned on. Open the **nRF Connect** Mobile application and you will see all BLE devices in range in the scan list:
+2. Make sure the Bluetooth on your mobile is turned on. Open the **nRF Connect** Mobile application, and you will see all BLE devices in range in the scan list.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/8.upgrading-firmware/mnzoayqdsaquxxdimpnw.jpg"
@@ -1035,10 +1028,10 @@ Refer to <a href="../../../../../Product-Categories/Accessories/RAKDAP1-Flash-an
   caption="Available Bluetooth Devices in the Nordic App"
 />
 
-3. Press the reset button on the RAK4600 and wait for a couple of seconds. Look for a BLE Device named "RUI-..." in the scan list of the app. Connect to this device and click on "**Secure DFU Service**"
+3. Press the reset button on the RAK4600 and wait for a couple of seconds. Look for a BLE Device named "**RUI-...**" in the scan list of the app. Connect to this device and click on "**Secure DFU Service**".
 
 :::tip 📝 NOTE:
- This will be only visible for 60 seconds. More information about Bluetooth Connection Guide can be found here in [here](#bluetooth-connection-modes)
+ This will be only visible for 60 seconds. More information about Bluetooth connection guide can be found in the [BLE Connection Modes](#bluetooth-connection-modes) section.
 :::
 
 <rk-img
@@ -1047,7 +1040,7 @@ Refer to <a href="../../../../../Product-Categories/Accessories/RAKDAP1-Flash-an
   caption="Secure DFU Service in the Nordic App"
 />
 
-4. On “**Secure DFU Service**” click on the button highlighted in red.
+4. On the “**Secure DFU Service**”, click on the button highlighted in red, as shown in **Figure 17**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/8.upgrading-firmware/qxw4hh00xqmcv85df1f7.jpg"
@@ -1055,7 +1048,7 @@ Refer to <a href="../../../../../Product-Categories/Accessories/RAKDAP1-Flash-an
   caption="Buttonless DFU"
 />
 
-5. Now, click on the **red box button** as shown below and press "**Send**" in the **Write Value** pop-up window.
+5. Now, click on the arrow highlighted in a red box, as shown in **Figure 18**. A Write Value window will pop up, then press "**Send**".
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/8.upgrading-firmware/xb1hntew7qrbct9et5hz.jpg"
@@ -1063,7 +1056,7 @@ Refer to <a href="../../../../../Product-Categories/Accessories/RAKDAP1-Flash-an
   caption="Resetting the Bootloader via Bluetooth"
 />
 
-6. Great! Now the RAK4600 is now working in DFU Mode. In the application, you will see the following:
+6. The RAK4600 is now working in DFU Mode. In the application, you will see the same as shown in **Figure 19**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/8.upgrading-firmware/qmi89z3vqxvukvbiodnc.jpg"
@@ -1071,7 +1064,7 @@ Refer to <a href="../../../../../Product-Categories/Accessories/RAKDAP1-Flash-an
   caption="RAK4600 Default Status Overview after Resetting"
 />
 
-7.  In the device list, find a BLE device named "**DfuTarg**" and then click on Connect.
+7.  In the device list, find a BLE device named "**DfuTarg**" and click on **Connect**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/8.upgrading-firmware/g2v0fkj63cbuwtt24mht.jpg"
@@ -1079,24 +1072,13 @@ Refer to <a href="../../../../../Product-Categories/Accessories/RAKDAP1-Flash-an
   caption="RAK4600 Default Bluetooth ID after Resetting"
 />
 
-8. After connected, select the DFU Icon. On Select file type choose **Distribution packet (ZIP)** and press OK. This will then prompt you to select the zip file of the firmware that you have downloaded.
+8. After connecting, select the DFU Icon. On the Select file type, choose **Distribution packet (ZIP)** and press OK. This will then prompt you to select the zip file of the firmware that you have downloaded.
 
-9. The DFU application automatically start to upgrade the firmware of your RAK4600 through DFU over BLE. After upgrading, the application restart the RAK4600 and the DFU mode is disabled. Now you can use the RAK4600 with the latest firmware!
+9. The DFU application automatically starts to upgrade the firmware of your RAK4600 through DFU over BLE. After upgrading, the application restarts the RAK4600, and the DFU mode is disabled. You can now use the RAK4600 with the latest firmware.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/8.upgrading-firmware/pqnewr61x87nv5nrxovs.jpg"
   width="90%"
   caption="Distribution Packet File Type under DFU"
 />
-
-9. The DFU application automatically start to upgrade the firmware of your RAK4600 through DFU over BLE. After upgrading, the application restart the RAK4600 and the DFU mode is disabled. Now you can use the RAK4600 with the latest firmware!
-
-<rk-img
-  src="/assets/images/wisduo/rak4600-evaluation-board/quickstart/8.upgrading-firmware/nzilnqodbz6x33uvnpp4.jpg"
-  width="45%"
-  caption="DFU Upgrading of RAK4600 Firmware via BLE"
-/>
-
-
-
 

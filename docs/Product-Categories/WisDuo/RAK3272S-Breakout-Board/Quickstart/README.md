@@ -1576,7 +1576,7 @@ If your firmware upload always fail, check your current baudrate setting using `
   caption="Device Firmware Upgrade Tool"
 />
 
-5.  Select the application firmware file of the board with the suffix "**.bin**".
+5.  Select the application firmware file of the module with the suffix "**.bin**".
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/2.png"
@@ -1584,7 +1584,7 @@ If your firmware upload always fail, check your current baudrate setting using `
   caption="Select firmware"
 />
 
-6.  Click the "**Upgrade**" button to upgrade the device. After the upgrade is complete, the RAK3272S Breakout Board will be ready to work with the new firmware.
+6.  Click the "**Upgrade**" button to upgrade the device. After the upgrade is complete, the RAK3272S will be ready to work with the new firmware.
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/3.png"

@@ -13,7 +13,7 @@ tags:
 
 ## Introduction
 
-The RAK4600 module is designed to simplify LoRa P2P peer-to-peer) and LoRaWAN communication. This module saves customers to deal with complicated SPI protocol with the LoRa transceivers. Instead, a well-known serial communication interface is provided to send commands and request internal status of the module. This approach allows a straightforward way to integrate LoRa technology into your projects. 
+The RAK4600 module is designed to simplify LoRa P2P peer-to-peer and LoRaWAN communication. This module saves customers in dealing with complicated SPI protocol with the LoRa transceivers. Instead, a well-known serial communication interface is provided to send commands and request the internal status of the module. This approach allows a straightforward way to integrate LoRa technology into your projects. 
 
 On top of this serial interface, a set of AT commands is defined wherein an external microcontroller will be able to control the RAK4600 module as a classic AT modem. Through the AT commands, customers can set parameters of the LoRaWAN communication, controlling GPIO pins, analog inputs, etc. 
 
@@ -61,21 +61,21 @@ For more detailed information on how to use this tool, refer to the following gu
 
 ## AT Command Syntax
 
-The AT command is based on ASCII characters. A command begins with the prefix `at` and ends with `<CR><LF>` (i.e. \r\n). The maximum length is 255 characters which includes the `<CR><LF>` characters at the end of the command. For the rest of the document, the `\r\n` part is omitted for the sake of clarity.
+The AT command is based on ASCII characters. A command begins with the prefix `at` and ends with `<CR><LF>` (i.e. \r\n). The maximum length is 255 characters, which includes the `<CR><LF>` characters at the end of the command. For the rest of the document, the `\r\n` part is omitted for the sake of clarity.
 
-The AT commands can be classified in the following groups:
+The AT commands can be classified into the following groups:
 
-*	**Read Command**: Reads the current configuration or status of the module. The command name and the list of parameters are separated by `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character.
+*   **Read Command**: Reads the current configuration or status of the module. The command name and the list of parameters are separated by the `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character.
 
 ```
 at+get_config=<m>:<n>
 ``` 
-*	**Write Command**: Writes/Modifies the current configuration of the module. The command name and the list of parameters are separated by `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character.
+*   **Write Command**: Writes/Modifies the current configuration of the module. The command name and the list of parameters are separated by the `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character.
 
 ```
 at+set_config=<m>:<n>
 ```
-*	**Operational Commands**: Some commands are neither read nor write commands but are used to execute an action. 
+*   **Operational Commands**: Some commands are neither read nor write commands but are used to execute an action. 
 
 ```
 at+send=lora:<m>:<n> // Sends data through the LoRa transceiver.
@@ -88,7 +88,7 @@ at+send=lora:<m>:<n> // Sends data through the LoRa transceiver.
 To enable data transmission mode, you need to input `at+set_config=device:uart_mode:<index>:<mode>` command.  To switch back from data transmission mode to configuration mode (AT command default mode), the command to be entered is `+++` and does not contain terminators such as `\r` and `\n`.
 :::
 
-After the command is executed by the module, a reply is sent back to the external MCU. In the case the command was successful, the usual reply has the following format:
+After the command is executed by the module, a reply is sent back to the external MCU. In the case the command is successful, the usual reply has the following format:
 
 ```
 OK [information]\r\n
@@ -138,7 +138,7 @@ ERROR: [Err Code]\r\n
         </tr>
         <tr>
             <td>81</td>
-            <td>LoRa service is unknown. Unknown MAC command received by node. Execute commands that are not supported in the current state, such as sending "adjoin" command in P2P mode.</td>
+            <td>LoRa service is unknown. Unknown MAC command received by node. Execute commands that are not supported in the current state, such as sending "`at+join`" command in P2P mode.</td>
         </tr>
         <tr>
             <td>82</td>
@@ -166,7 +166,7 @@ ERROR: [Err Code]\r\n
         </tr>
         <tr>
             <td>88</td>
-            <td>Service is closed by the server. Due to the limitation of duty cycle, the server will send " SRV_MAC_DUTY_CYCLE_REQ" MAC command to close the service.</td>
+            <td>Service is closed by the server. Due to the limitation of the duty cycle, the server will send the "SRV_MAC_DUTY_CYCLE_REQ" MAC command to close the service.</td>
         </tr>
         <tr>
             <td>89</td>
@@ -174,7 +174,7 @@ ERROR: [Err Code]\r\n
         </tr>
         <tr>
             <td>90</td>
-            <td>Duty cycle is restricted. Due to duty cycle, data cannot be sent at this time until the time limit is removed.</td>
+            <td>Duty cycle is restricted. Due to the duty cycle, data cannot be sent at this time until the time limit is removed.</td>
         </tr>
         <tr>
             <td>91</td>
@@ -366,7 +366,7 @@ OK Wake Up
 
 :::tip 📝 NOTE: 
 
-During sleep, Pin 22 (USART1_RX) is automatically configured as a wake up pin and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on this RX pin.
+During sleep, Pin 22 (USART1_RX) is automatically configured as a wake up pin and in external interrupt mode with an internal pull-down resistor. Wake-up will be triggered by a rising edge on this RX pin.
 
 :::
 
@@ -394,7 +394,7 @@ LoRa chip:SX1276
 
 1. <b>at+set_config=device:uart:`<index>:<baud_rate>`</b>
 
-This command is used to configure the baud rate for an UART port.
+This command is used to configure the baud rate for a UART port.
 
 | Operation | Command                                         | Response |
 | --------- | ----------------------------------------------- | -------- |
@@ -421,7 +421,7 @@ Parameter：
 
 This command is used to set the UART operation from AT **configuration mode** to **data transmission mode**.
 
-During **data transmission mode**, all standard AT Commands will not work and the data that you sent to UART will go directly to the network server as ASCII payload with `\r\n`. If you input `AZ`, the network server will receive an uplink hex value of `415A0D0A`. This means **A**=`0x41`, **Z**=`0x5A`, **\r**=`0x0D` and **\n**=`0x0A`.
+During **data transmission mode**, all standard AT Commands will not work, and the data you sent to UART will go directly to the network server as ASCII payload with `\r\n`. If you input `AZ`, the network server will receive an uplink hex value of `415A0D0A`. This means **A**=`0x41`, **Z**=`0x5A`, **\r**=`0x0D` and **\n**=`0x0A`.
 
 :::tip 📝 NOTE: 
 
@@ -586,7 +586,7 @@ OK *0,on,868100000,0,5; *1,on,868300000,0,5; *2,on,868500000,0,5; 3,off,0,0,0; 4
 
 With <b>*0,on,868100000,0,5</b> as an example，the following is the channel parameter analysis:
 
-- `*` at the beginning if the channel is open;
+- `*` at the beginning, if the channel is open;
 - `0` is the channel ID;
 - `on` indicates the current status of the channel;
 - `868100000` is the actual frequency of the channel，unit is Hz;
@@ -655,7 +655,7 @@ OK
 
 <br>
 
-7.	<b>at+set_config=lora:app_eui:`<app_eui>`</b>
+7.  <b>at+set_config=lora:app_eui:`<app_eui>`</b>
 
 This command is used to set the Application EUI parameter for the LoRaWAN OTAA mode.
 
@@ -945,7 +945,7 @@ OK
 
 18. <b>at+set_config=lora:confirm:`<type>`</b>
 
-This command is used to set the type data to be sent: Confirmed/Unconfirmed.
+This command is used to set the type of data to be sent: Confirmed/Unconfirmed.
 
 | Operation | Command                             | Response |
 | --------- | ----------------------------------- | -------- |
@@ -1252,7 +1252,7 @@ OK
 
 4. <b>at+send=lorap2p:`<data>`</b>
 
-This command is used to send data through LoRa P2P and only valid when the LoRa work mode was set to LoRa P2P before.
+This command is used to send data through LoRa P2P and is only valid when the LoRa work mode was set to LoRa P2P before.
 
 | Operation | Command                  | Response |
 | --------- | ------------------------ | -------- |
@@ -1543,7 +1543,7 @@ By default, MAxEIRP is considered to be +12.15&nbsp;dBm.
 ## Appendix III：Maximum Transmission Load by Region
 
 :::tip 📝 NOTE:
-The LoRaWAN stack adds 8 bytes to the user payload. In the following list, M is the maximum payload size and N is the maximum usable payload size for the user data without MAC header.
+The LoRaWAN stack adds 8 bytes to the user payload. In the following list, M is the maximum payload size and N is the maximum usable payload size for the user data without the MAC header.
 ::::
 
 <b>EU868</b>
@@ -1754,19 +1754,19 @@ The LoRaWAN stack adds 8 bytes to the user payload. In the following list, M is 
 
 ## Appendix IV: Pin Description of RAK4600
 
-The pin definition of the RAK4600 module can be reviewed in the [Pin Definition](/Product-Categories/WisDuo/RAK4600-Module/Datasheet/#pin-definition) section of the Datasheet.
+The pin definition of the RAK4600 module can be reviewed in the [Pin Definition](/Product-Categories/WisDuo/RAK4600-Module/Datasheet/#pin-definition) section on the Datasheet.
 
 A summary of the pins of the RAK4600 module:
 
 1. **About the UART Pin**: 
     - Pin 22 (USART1_RX) and Pin 23 (USART1_TX). 
-    - During sleep, Pin 22 (USART1_RX) is automatically configured as a wake up pin and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on this RX pin.
+    - During sleep, Pin 22 (USART1_RX) is automatically configured as a wake up pin and in external interrupt mode with an internal pull-down resistor. Wake-up will be triggered by a rising edge on this RX pin.
    
 2. **About the SWD debug Pin**: Pin 37 (SYS_SWDIO) and Pin 38 (SYS_SWDCLK) are used for SWD debug programming.
 3. **About the Power Pin**: The power pins on the RAK4600 module includes the VCC Pins on Pin 40 (3V3_IN) and Pin 41 (3V3_IN), and the ground pins (GND) are on the Pin 1, Pin 8, Pin 12, Pin 13, Pin 14, Pin 16, Pin 18, Pin 19, Pin 20, Pin 31, Pin 39, and Pin 42.
-4.	**About the Reset Pin**: The reset pin on the RAK4600 module is the Pin 36 (MCU_NRST);
-5.	**About the RF Antenna Pin**: The RF Antenna pins on the RAK4600 module are the pin15 (RF_BT) BLE antenna and Pin 17 (RF_L) LoRa antenna.
-6.	**About the GPIO Pin**: The GPIO pins available on the RAK4600 module are Pin 4, Pin 5, Pin 6, Pin 7, Pin 9, Pin 10, Pin 21, and Pin 24.
+4.  **About the Reset Pin**: The reset pin on the RAK4600 module is the Pin 36 (MCU_NRST);
+5.  **About the RF Antenna Pin**: The RF Antenna pins on the RAK4600 module are the pin15 (RF_BT) BLE antenna and Pin 17 (RF_L) LoRa antenna.
+6.  **About the GPIO Pin**: The GPIO pins available on the RAK4600 module are Pin 4, Pin 5, Pin 6, Pin 7, Pin 9, Pin 10, Pin 21, and Pin 24.
 
 :::tip 📝 NOTE:
 The subsequent firmware upgrade of the product is carried out through the OTA interface.

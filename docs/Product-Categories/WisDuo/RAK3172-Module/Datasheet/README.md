@@ -91,40 +91,40 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
 />
 
 
-| **Pin No.** | **Name**      | **Type** | **Description**                                                   |
-| ----------- | ------------- | -------- | ----------------------------------------------------------------- |
-| 1           | PA3/UART2_RX  | I        | Reserved - UART2/LPUART1 Interface (AT Commands and FW Update)    |
-| 2           | PA2/UART2_TX  | O        | Reserved - UART2/LPUART1 Interface (AT Commands and FW Update)    |
-| 3           | PA15/ADC5     | I/O      | GPIO and ADC                                                      |
-| 4           | PB6/UART1_TX  | O        | UART1 Interface                                                   |
-| 5           | PB7/UART1_RX  | I        | UART1 Interface                                                   |
-| 6           | PA1           | I/O      | GPIO only                                                         |
-| 7           | PA13/SWDIO    |          | Reserved - SWD debug pin (SWDIO)                                  |
-| 8           | PA14/SWCLK    |          | Reserved - SWD debug pin (SWCLK)                                  |
-| 9           | PA12/I2C_SCL  | I/O      | GPIO and I2C (SCL)                                                |
-| 10          | PA11/I2C_SDA  | I/O      | GPIO and I2C (SDA)                                                |
-| 11          | GND           |          | Ground connections                                                |
-| 12          | RF            |          | RF Port (only available on **RAK3172 No-IPEX connector variant**) |
-| 13          | PA7/SPI1_MOSI | I/O      | GPIO and SPI (MOSI)                                               |
-| 14          | PA6/SPI1_MISO | I/O      | GPIO and SPI (MISO)                                               |
-| 15          | PA5/SPI1_CLK  | I/O      | GPIO and SPI (CLK)                                                |
-| 16          | PA4/SPI_NSS   | I/O      | GPIO and SPI (NSS)                                                |
-| 17          | GND           |          | Ground connections                                                |
-| 18          | GND           |          | Ground connections                                                |
-| 19          | PA8           | I/O      | GPIO only                                                         |
-| 20          | PA9           | I/O      | GPIO only                                                         |
-| 21          | BOOT0         |          | Boot0 mode enable pin - high active                               |
-| 22          | RST           |          | MCU Reset (NRST)                                                  |
-| 23          | GND           |          | Ground connections                                                |
-| 24          | VDD           |          | VDD - Voltage Supply                                              |
-| 25          | PA10/ADC4     | I/O      | GPIO and ADC                                                      |
-| 26          | PB2/ADC3      | I/O      | GPIO and ADC                                                      |
-| 27          | PB12          | I/O      | 10&nbsp;kΩ internally **pulled-up for high freq** variant or **pulled-down for low freq** variant|
-| 28          | GND           |          | Ground connections                                                |
-| 29          | PA0           | I/O      | GPIO only                                                         |
-| 30          | PB5           | I/O      | GPIO only                                                         |
-| 31          | PB4/ADC2      | I/O      | GPIO and ADC                                                      |
-| 32          | PB3/ADC1      | I/O      | GPIO and ADC                                                      |
+| **Pin No.** | **Name**      | **Type** | **Description**                                                                                   |
+| ----------- | ------------- | -------- | ------------------------------------------------------------------------------------------------- |
+| 1           | PA3/UART2_RX  | I        | Reserved - UART2/LPUART1 Interface (AT Commands and FW Update)                                    |
+| 2           | PA2/UART2_TX  | O        | Reserved - UART2/LPUART1 Interface (AT Commands and FW Update)                                    |
+| 3           | PA15/ADC5     | I/O      | GPIO and ADC                                                                                      |
+| 4           | PB6/UART1_TX  | O        | UART1 Interface                                                                                   |
+| 5           | PB7/UART1_RX  | I        | UART1 Interface                                                                                   |
+| 6           | PA1           | I/O      | GPIO only                                                                                         |
+| 7           | PA13/SWDIO    |          | Reserved - SWD debug pin (SWDIO)                                                                  |
+| 8           | PA14/SWCLK    |          | Reserved - SWD debug pin (SWCLK)                                                                  |
+| 9           | PA12/I2C_SCL  | I/O      | GPIO and I2C (SCL)                                                                                |
+| 10          | PA11/I2C_SDA  | I/O      | GPIO and I2C (SDA)                                                                                |
+| 11          | GND           |          | Ground connections                                                                                |
+| 12          | RF            |          | RF Port (only available on **RAK3172 No-IPEX connector variant**)                                 |
+| 13          | PA7/SPI1_MOSI | I/O      | GPIO and SPI (MOSI)                                                                               |
+| 14          | PA6/SPI1_MISO | I/O      | GPIO and SPI (MISO)                                                                               |
+| 15          | PA5/SPI1_CLK  | I/O      | GPIO and SPI (CLK)                                                                                |
+| 16          | PA4/SPI_NSS   | I/O      | GPIO and SPI (NSS)                                                                                |
+| 17          | GND           |          | Ground connections                                                                                |
+| 18          | GND           |          | Ground connections                                                                                |
+| 19          | PA8           | I/O      | GPIO only                                                                                         |
+| 20          | PA9           | I/O      | GPIO only                                                                                         |
+| 21          | BOOT0         |          | Boot0 mode enable pin - high active                                                               |
+| 22          | RST           |          | MCU Reset (NRST)                                                                                  |
+| 23          | GND           |          | Ground connections                                                                                |
+| 24          | VDD           |          | VDD - Voltage Supply                                                                              |
+| 25          | PA10/ADC4     | I/O      | GPIO and ADC                                                                                      |
+| 26          | PB2/ADC3      | I/O      | GPIO and ADC                                                                                      |
+| 27          | PB12          | I/O      | 10&nbsp;kΩ internally **pulled-up for high freq** variant or **pulled-down for low freq** variant |
+| 28          | GND           |          | Ground connections                                                                                |
+| 29          | PA0           | I/O      | GPIO only                                                                                         |
+| 30          | PB5           | I/O      | GPIO only                                                                                         |
+| 31          | PB4/ADC2      | I/O      | GPIO and ADC                                                                                      |
+| 32          | PB3/ADC1      | I/O      | GPIO and ADC                                                                                      |
 
 #### RF Characteristics
 
@@ -235,11 +235,11 @@ RAK3172 uses UART2 serial pins to upload the latest firmware.
 
 #### Firmware / OS
 
-| Model          | Version | Source                                                                                          |
-| -------------- | ------- | ----------------------------------------------------------------------------------------------- |
-| RAK3172 (.bin) | RUI3 (default baudrate = 115200) | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest.bin) |
-| RAK3172 (.hex) | RUI3 (default baudrate = 115200) | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest_final.hex) |
-| RAK3172 | **DEPRECATED** V1.0.4 (default baudrate = 9600) | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/RAK3172_Latest_Firmware.zip) |
+| Model          | Version                                         | Source                                                                                          |
+| -------------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| RAK3172 (.bin) | RUI3 (default baudrate = 115200)                | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest.bin)               |
+| RAK3172 (.hex) | RUI3 (default baudrate = 115200)                | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest_final.hex)         |
+| RAK3172        | **DEPRECATED** V1.0.4 (default baudrate = 9600) | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/RAK3172_Latest_Firmware.zip) |
 
 :::warning ⚠️ WARNING
 There are RAK3172 devices loaded with old firmware versions which are not based on RUI3 (RAKwireless Unified Interface V3). These devices have v1.0.4 and below.
