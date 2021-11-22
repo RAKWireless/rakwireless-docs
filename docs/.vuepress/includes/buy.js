@@ -822,6 +822,16 @@ export default {
     label: 'SenseCAP M1 Outdoor Enclosure Kit',
     img: '/assets/images/accessories/sensecap-m1-outdoor-enclosure-kit/installation/sensecap.png ',
     store: 'https://store.rakwireless.com/products/sensecap-outdoor-enclosure-kit'
+  },
+  '/Product-Categories/Accessories/RAK9168/': {
+    label: 'RAK9168 5V/12V 6A/2.5A PoE Splitter',
+    img: '/assets/images/accessories/rak9168/rak9168.png',
+    store: 'https://store.rakwireless.com/products/poe-splitter-rak9168'
+  },
+  '/Product-Categories/Accessories/Angle-Mounting-Plate/': {
+    label: 'Angle Mounting Plate',
+    img: '/assets/images/accessories/angle-mounting-plate/1.jpg',
+    store: 'https://store.rakwireless.com/products/angle-mounting-plate'
   }
 
 }

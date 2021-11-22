@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak13101/overview/RAK13101_home.png
 rak_desc: RAK13101 is a WisBlock Wireless module that extends the WisBlock system to have GSM/GPRS Cellular Network capability using Quectel MC20CE module.
 rak_grp: [wisblock, wiswireless]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK13101
@@ -11,8 +11,9 @@ tags:
 
 # RAK13101 WisBlock GSM/GPRS Module
 
-Thank you for choosing **RAK13101 WisBlock GSM/GPRS Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK13101 WisBlock GSM/GPRS Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
+* [RAK13101 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->

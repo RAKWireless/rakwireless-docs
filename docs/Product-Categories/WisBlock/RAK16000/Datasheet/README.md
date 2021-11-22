@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisblock
   - RAK16000
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 

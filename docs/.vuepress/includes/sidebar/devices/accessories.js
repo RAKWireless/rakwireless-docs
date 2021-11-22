@@ -739,4 +739,42 @@ module.exports = {
     }
 
   ],
+
+  '/Product-Categories/Accessories/RAK9168/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAK9168/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAK9168/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+
+  ],
+  '/Product-Categories/Accessories/Angle-Mounting-Plate/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/Angle-Mounting-Plate/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/Angle-Mounting-Plate/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
 }
