@@ -7,7 +7,7 @@ tags:
   - wisgate
   - RAK7248
 next: false
-prev: ../Overview/
+prev: ../Supported-LoRa-Network-Servers/
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_CE_Certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_FCC_Certification.zip]

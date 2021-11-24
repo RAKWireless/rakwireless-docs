@@ -13,7 +13,7 @@ next: ../Datasheet/
 
 # RAK7258 Supported LoRa Network Servers
 
-## Amazon Web Services (AWS)
+## AWS IoT Core
 
 Execute the following steps to set up your AWS account and permissions:
 
