@@ -21,7 +21,25 @@ In the RAK4600 Breakout Board, the serial communication is exposed on the UART1 
 
 In addition, the RAK4600 Breakout Board also supports BLE. You can use your mobile phone to communicate with the RAK4600 Breakout Board via BLE interface, or you can use the board to scan the surrounding Bluetooth beacon information. Refer to [Bluetooth Connection Modes](/Product-Categories/WisDuo/RAK4600-Breakout-Board/Quickstart/#bluetooth-connection-modes).
 
-### AT Command Syntax
+
+## Content
+
+- [RAK4600 Breakout Board AT Command Manual](#rak4600-breakout-board-at-command-manual)
+  - [Introduction](#introduction)
+  - [Content](#content)
+  - [AT Command Syntax](#at-command-syntax)
+  - [Error Code Table](#error-code-table)
+  - [General AT Command](#general-at-command)
+  - [Interface Type AT Command](#interface-type-at-command)
+  - [LoRaWAN Type AT Command](#lorawan-type-at-command)
+  - [LoRa P2P Type AT Command](#lora-p2p-type-at-command)
+  - [BLE Type AT Command](#ble-type-at-command)
+  - [Appendix I：Data Rate by Region](#appendix-idata-rate-by-region)
+  - [Appendix II：TX Power by Region](#appendix-iitx-power-by-region)
+  - [Appendix III：Maximum Transmission Load by Region](#appendix-iiimaximum-transmission-load-by-region)
+  - [Appendix IV: Pin Description of RAK4600 Breakout Board](#appendix-iv-pin-description-of-rak4600-breakout-board)
+
+## AT Command Syntax
 
 The AT command is based on ASCII characters. A command begins with the prefix `at` and ends with `<CR><LF>` (i.e. \r\n). The maximum length is **255 characters** which includes the `<CR><LF>` characters at the end of the command. For the rest of the document, the `\r\n` part is omitted for the sake of clarity.
 
@@ -67,7 +85,7 @@ The firmware you developed, running in the external MCU, will expect at a minimu
 ```
 ERROR: [Err Code]\r\n
 ```
-### Error Code Table
+## Error Code Table
 
 <table style="text-align: left">
 <thead>

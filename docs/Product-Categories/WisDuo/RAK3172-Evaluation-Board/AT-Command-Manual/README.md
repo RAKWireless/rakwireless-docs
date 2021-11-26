@@ -10,7 +10,7 @@ rak_img: /assets/images/wisduo/rak3172-evaluation-board/overview/RAK3172E_Evalua
 
 ---
 
-# AT Command Manual
+# RAK3172 Evaluation Board AT Command Manual
 
 ## Introduction
 
@@ -34,6 +34,101 @@ For AT commands example usage, you can check these sections of the quick start g
 - [Chirpstack ABP Guide](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Quickstart/#chirpstack-abp-device-registration) - How to add ABP device on Chirpstack and what AT commands to use on RAK3172-E ABP activation.
 - [LoRa P2P](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Quickstart/#lora-p2p-mode) - Point to point communication between two RAK3172-E modules.
 
+
+## Content
+
+- [RAK3172 Evaluation Board AT Command Manual](#rak3172-evaluation-board-at-command-manual)
+  - [Introduction](#introduction)
+  - [Links to Quick Start Guide](#links-to-quick-start-guide)
+  - [Content](#content)
+  - [AT Command Syntax](#at-command-syntax)
+  - [General Commands](#general-commands)
+    - [AT](#at)
+    - [ATZ](#atz)
+    - [ATR](#atr)
+    - [ATE](#ate)
+    - [AT+SN](#atsn)
+    - [AT+BAUD](#atbaud)
+  - [Keys, IDs, and EUIs Management](#keys-ids-and-euis-management)
+    - [AT+DEVEUI](#atdeveui)
+    - [AT+APPEUI](#atappeui)
+    - [AT+APPKEY](#atappkey)
+    - [AT+DEVADDR](#atdevaddr)
+    - [AT+APPSKEY](#atappskey)
+    - [AT+NWKSKEY](#atnwkskey)
+  - [Joining and Sending Data to LoRaWAN® Network](#joining-and-sending-data-to-lorawan-network)
+    - [AT+NJM](#atnjm)
+    - [AT+CFM](#atcfm)
+    - [AT+JOIN](#atjoin)
+    - [AT+NJS](#atnjs)
+    - [AT+SEND](#atsend)
+    - [AT+CFS](#atcfs)
+    - [AT+RECV](#atrecv)
+  - [LoRaWAN® Device Configuration](#lorawan-device-configuration)
+    - [AT+ADR](#atadr)
+    - [AT+CLASS](#atclass)
+    - [AT+DCS](#atdcs)
+    - [AT+DUTYTIME](#atdutytime)
+    - [AT+DR](#atdr)
+    - [AT+JN1DL](#atjn1dl)
+    - [AT+JN2DL](#atjn2dl)
+    - [AT+RX1DL](#atrx1dl)
+    - [AT+RX2DL](#atrx2dl)
+    - [AT+RX2DR](#atrx2dr)
+    - [AT+RX2FQ](#atrx2fq)
+    - [AT+TXP](#attxp)
+    - [AT+RETY](#atrety)
+    - [AT+MASK](#atmask)
+    - [AT+BAND](#atband)
+    - [AT+LPSEND](#atlpsend)
+    - [AT+LINKCHECK](#atlinkcheck)
+    - [AT+USEND](#atusend)
+    - [AT+PNM](#atpnm)
+  - [Class B Mode](#class-b-mode)
+    - [AT+PGSLOT](#atpgslot)
+    - [AT+BFREQ](#atbfreq)
+    - [AT+LTIME](#atltime)
+  - [Device Information](#device-information)
+    - [AT+RSSI](#atrssi)
+    - [AT+SNR](#atsnr)
+    - [AT+VER](#atver)
+    - [AT+TIMEREQ](#attimereq)
+  - [RF Test](#rf-test)
+    - [AT+CW](#atcw)
+    - [AT+TRSSI](#attrssi)
+    - [AT+TTONE](#atttone)
+    - [AT+TTX](#atttx)
+    - [AT+TRX](#attrx)
+    - [AT+TCONF](#attconf)
+    - [AT+TTH](#attth)
+    - [AT+TOFF](#attoff)
+    - [AT+CERTIF](#atcertif)
+  - [P2P Mode](#p2p-mode)
+    - [AT+NWM](#atnwm)
+    - [AT+PFREQ](#atpfreq)
+    - [AT+PSF](#atpsf)
+    - [AT+PBW](#atpbw)
+    - [AT+PCR](#atpcr)
+    - [AT+PPL](#atppl)
+    - [AT+PTP](#atptp)
+    - [AT+P2P](#atp2p)
+    - [AT+PSEND](#atpsend)
+    - [AT+PRECV](#atprecv)
+  - [Multicast Group](#multicast-group)
+    - [AT+ADDMULC](#ataddmulc)
+    - [AT+RMVMULC](#atrmvmulc)
+    - [AT+LSTMULC](#atlstmulc)
+  - [Data Transparent Transmission](#data-transparent-transmission)
+    - [ATD](#atd)
+    - [+++](#)
+  - [Appendix](#appendix)
+    - [Appendix I：Data Rate by Region](#appendix-idata-rate-by-region)
+    - [Appendix II：TX Power by Region](#appendix-iitx-power-by-region)
+    - [Appendix III：Maximum Transmission Load by Region](#appendix-iiimaximum-transmission-load-by-region)
+    - [Appendix IV: Asynchronous Events](#appendix-iv-asynchronous-events)
+
+
+## AT Command Syntax
 
 ## AT Commands List
 
@@ -157,6 +252,8 @@ AT
 OK
 ```
 
+[Back](#content)  
+
 ### ATZ 
 
 Description: MCU reset
@@ -185,6 +282,8 @@ ______  ___   _   __  _    _ _          _
 RAK3172-H Version:v1.0.2 May 26 2021
 Current Work Mode: LoRaWAN.
 ```
+
+[Back](#content)  
 
 ### ATR 
 
@@ -236,6 +335,10 @@ OK
 
 [Back](#content)  
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> eaf7f9d8c (Added Table of Contents to WisDuo and WisDuino AT Command Manual)
 ### AT+SN  
 
 Description: Serial number
@@ -591,6 +694,9 @@ If joining fails, make sure your device is within the coverage of the gateway. A
 
 [Back](#content)  
 
+[Back](#content)  
+
+
 ### AT+NJS 
 
 Description: Network join status
@@ -648,6 +754,7 @@ OK
 +EVT:3:4321
 ```
 
+[Back](#content)  
 
 ### AT+CFS 
 
@@ -916,6 +1023,8 @@ AT+JN1DL=?
 
 OK
 ```
+
+[Back](#content)  
 
 ### AT+JN2DL 
 
@@ -1418,7 +1527,10 @@ LTIME:03h56m52s on 09/18/2021
 OK
 ```
 
-## Device information
+[Back](#content)  
+
+
+## Device Information
 
 This section describes the commands for getting device information.
 
@@ -1739,6 +1851,10 @@ OK
 
 [Back](#content)  
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> eaf7f9d8c (Added Table of Contents to WisDuo and WisDuino AT Command Manual)
 ### AT+TTH 
 
 Description: RF Tx hopping test
@@ -2028,6 +2144,9 @@ AT+PPL=?
 
 OK
 ```
+
+[Back](#content)  
+
 ### AT+PTP 
 
 Description: P2P mode TX power
@@ -2221,6 +2340,7 @@ MC1:ClassC:11223344:11223344556677881122334455667788:112233445566778811223344556
 OK
 ```
 
+[Back](#content)  
 
 #### Data Transparent Transmission
 
@@ -2760,11 +2880,7 @@ This section describes the output from UART lines of RAK3172 that can occur at a
 | Pingslot process           | `+PS:`*< status >*  | `DONE` - At this time, ping slots will be opened periodically. The modem is now in Class B mode. |
 | Class B/C downlink         | `+EVT:`*< status >* | `RX3/RXC, RSSI -110, SNR 5` - Indicates that data has been received on pingslot received window. |
 |                            |                     | `PortNumber:12345678` - Received binary data on PortNumber.                                      |
-<<<<<<< HEAD
 |                            |                     | `UNICAST` - Let the host know that the Rx is in unicast Class B mode.                            |
-=======
-|                            |                     | `UNICAST` - Let the host know that the Rx is in unicast Class B mode.                                |
->>>>>>> 3312de2cc (Grammar and Typos: WisBlock & WisDuo)
 |                            |                     | `MULCAST MC1` - Data received in multicast group 1                                               |
 | Class A downlink           | `+EVT:`*< status >* | `RX1/RX2, RSSI -110, SNR 5`                                                                      |
 |                            |                     | `PortNumber:12345678` - Received binary data on PortNumber.                                      |

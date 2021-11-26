@@ -24,7 +24,24 @@ To get familiar with the pin distribution and other hardware details, refer to [
 
 If only one UART is used in your project, it is recommended that you dedicate UART2 for AT commands and UART1 is reserved for firmware upgrade.
 
-### AT Command Syntax
+
+## Content
+
+- [RAK4270 Breakout Board AT Command Manual](#rak4270-breakout-board-at-command-manual)
+  - [Introduction](#introduction)
+  - [Content](#content)
+  - [AT Command Syntax](#at-command-syntax)
+  - [Error Code Table](#error-code-table)
+  - [General AT Command](#general-at-command)
+  - [Interface Type AT Command](#interface-type-at-command)
+  - [LoRaWAN Type AT Command](#lorawan-type-at-command)
+  - [LoRa P2P Type AT Command](#lora-p2p-type-at-command)
+  - [Appendix I: Data Rate by Region](#appendix-i-data-rate-by-region)
+  - [Appendix II：TX Power by Region](#appendix-iitx-power-by-region)
+  - [Appendix III：Maximum Transmission Load by Region](#appendix-iiimaximum-transmission-load-by-region)
+  - [Appendix IV: Pin Description of RAK4270 Breakout Board](#appendix-iv-pin-description-of-rak4270-breakout-board)
+
+## AT Command Syntax
 
 The AT command is based on ASCII characters. A command begins with the prefix `at` and ends with `<CR><LF>` (i.e. `\r\n`). The maximum length is **255 characters** which includes the `<CR><LF>` characters at the end of the command. For the rest of the document, the `\r\n` part is omitted for the sake of clarity.
 
@@ -74,7 +91,7 @@ The firmware you developed, running in the external MCU, will expect at a minimu
 ERROR: [ErrCode]\r\n
 ```
 
-### Error Code Table
+## Error Code Table
 
 | Error Code | Description                                                                                                                                                                 |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

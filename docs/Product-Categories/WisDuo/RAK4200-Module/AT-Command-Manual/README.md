@@ -42,7 +42,25 @@ For more detailed information on how to use this tool, refer to the following gu
 
 - [RAK Serial Port Tool Guide](/Product-Categories/WisDuo/RAK4200-Module/Quickstart/#connecting-to-the-rak4200-console)
 
-### AT Command Syntax
+## Content
+
+- [RAK4200 Module AT Command Manual](#rak4200-module-at-command-manual)
+  - [Introduction](#introduction)
+    - [Links to Quick Start Guide](#links-to-quick-start-guide)
+    - [Software Tool](#software-tool)
+  - [Content](#content)
+  - [AT Command Syntax](#at-command-syntax)
+  - [Error Code Table](#error-code-table)
+  - [General AT Command](#general-at-command)
+  - [Interface Type AT Command](#interface-type-at-command)
+  - [LoRaWAN Type AT Command](#lorawan-type-at-command)
+  - [LoRa P2P Type AT Command](#lora-p2p-type-at-command)
+  - [Appendix I: Data Rate by Region](#appendix-i-data-rate-by-region)
+  - [Appendix II：TX Power by Region](#appendix-iitx-power-by-region)
+  - [Appendix III：Maximum Transmission Load by Region](#appendix-iiimaximum-transmission-load-by-region)
+  - [Appendix IV: Pin Description of RAK4200](#appendix-iv-pin-description-of-rak4200)
+
+## AT Command Syntax
 
 The AT command is based on ASCII characters. A command begins with the prefix `at` and ends with `<CR><LF>` (i.e. `\r\n`). The maximum length is **255 characters** which includes the `<CR><LF>` characters at the end of the command. For the rest of the document, the `\r\n` part is omitted for the sake of clarity.
 
@@ -89,7 +107,7 @@ ERROR: [ErrCode]\r\n
 ```
 
 
-### Error Code Table
+## Error Code Table
 
 | Error Code | Description                                                                                                                                                                         |
 | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
