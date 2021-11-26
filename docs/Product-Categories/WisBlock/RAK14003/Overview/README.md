@@ -2,7 +2,7 @@
 rak_img: /assets/images/wisblock/rak14003/overview/RAK14003_home.png
 rak_desc: RAK14003 is a WisBlock LED Bar Graph module that can be used to build a multipurpose graphic feedback display.
 rak_grp: [wisblock, wisdisplay]
-next: ../Datasheet/
+next: ../Quickstart/
 prev: ../../
 tags:
     - wisblock
@@ -14,6 +14,7 @@ tags:
 
 Thank you for choosing **RAK14003 WisBlock LED Bar Graph Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
+* [RAK14003 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
@@ -39,7 +40,7 @@ RAK14003 is an LED Bar Graph that is part of WisBlock Display modules. It consis
 
 ## Prerequisites
 
-To use a **RAK14003**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK14003** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK14003**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK14003** module. Furthermore, you need a **WisBlock Core** module to use the LED indicator.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.    
