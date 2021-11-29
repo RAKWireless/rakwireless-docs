@@ -15,7 +15,7 @@ tags:
 Thank you for choosing **RAK7246G WisGate Developer D0 Gateway** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
 * [Quick Start Guide](../Quickstart/)
-* [Supported LoRa Network Servers](../Supported-LoRa-Network-Servers/)
+* [AWS Greengrass V2 Guide](../AWS-Greengrass/)
 * [Datasheet](../Datasheet/)
 * [Environment Test Report](../Testing-Report/)
 * [WisGate Developer Gateway Firmware Setup](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisGate-Developer-Gateway-Firmware-Burning/)

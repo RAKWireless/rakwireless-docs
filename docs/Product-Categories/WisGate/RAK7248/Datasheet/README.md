@@ -7,7 +7,7 @@ tags:
   - wisgate
   - RAK7248
 next: false
-prev: ../Supported-LoRa-Network-Servers/
+prev: ../AWS-Greengrass/
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_CE_Certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_FCC_Certification.zip]

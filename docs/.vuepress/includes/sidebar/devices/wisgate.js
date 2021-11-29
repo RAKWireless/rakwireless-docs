@@ -158,8 +158,8 @@ module.exports = {
       sidebarDepth: 4
     },
     {
-      title: 'Supported LoRa Network Servers',
-      path: '/Product-Categories/WisGate/RAK7246G/Supported-LoRa-Network-Servers/',
+      title: 'AWS IoT Greengrass',
+      path: '/Product-Categories/WisGate/RAK7246G/AWS-Greengrass/',
       collapsable: false,
       nested: true,
       download: true,
@@ -267,6 +267,14 @@ module.exports = {
   {
     title: 'Supported LoRa Network Servers',
     path: '/Product-Categories/WisGate/RAK7248/Supported-LoRa-Network-Servers/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'AWS IoT Greengrass',
+    path: '/Product-Categories/WisGate/RAK7248/AWS-Greengrass/',
     collapsable: false,
     nested: true,
     download: true,
@@ -444,14 +452,6 @@ module.exports = {
 '/Product-Categories/WisGate/RAK7289/': [{
   title: 'Product Overview',
   path: '/Product-Categories/WisGate/RAK7289/Overview/',
-  collapsable: false,
-  nested: true,
-  download: true,
-  sidebarDepth: 4
-},
-{
-  title: 'Supported LoRa Network Servers',
-  path: '/Product-Categories/WisGate/RAK7289/Supported-LoRa-Network-Servers/',
   collapsable: false,
   nested: true,
   download: true,
