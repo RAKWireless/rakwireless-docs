@@ -1231,7 +1231,7 @@ chmod +x loriot-install.sh
 ```
 
 ```
-/etc/init.d/packet_forwarder disable ; /etc/init.d/loriot-gw enable ; reboot now
+/etc/init.d/sx130x_lora_pkt_fwd disable; /etc/init.d/loriot-gw enable; reboot now
 ```
 
 <rk-img
