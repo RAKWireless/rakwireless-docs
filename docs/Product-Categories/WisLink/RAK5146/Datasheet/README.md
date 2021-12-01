@@ -10,6 +10,8 @@ rak_img: /assets/images/wislink-lora/rak5146/RAK5146.png
 certifications:
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_FCC_Certification.zip]
   - [IC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_IC_Certification.pdf]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_CE_Certification.zip ]
+  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_UKCA_Certification.zip]
 ---
 
 # RAK5146 WisLink LPWAN Concentrator Datasheet

@@ -18,325 +18,73 @@ prev: ../Overview/
 Execute the following steps to set up your AWS account and permissions:
 ### Set Up Your AWS Account and Permissions
 
-If you don't have an AWS account, refer to the instructions in the guide here. The relevant sections are **Sign up for an AWS account**and **Create a user and grant permissions**.  
+If you don't have an AWS account, refer to the instructions in the guide here. The relevant sections are **Sign up for an AWS account** and **Create a user and grant permissions**.  
 
 #### Overview 
 
 The high-level steps to get started with AWS IoT Core for LoRaWAN are as follows:
 
 1. Set up Roles and Policies in IAM
-2. Add a Gateway (see section Add the Gateway to AWS IoT)
-3. Add Device(s) (see section Add a LoRaWAN Device to AWS IoT)
+2. Add a Gateway (see section [Add the Gateway to AWS IoT](#add-the-gateway-to-aws-iot))
+3. Add Device(s) (see section [Add a LoRaWAN Device to AWS IoT](#add-a-lorawan-device-to-aws-iot))
     - Verify device and service profiles
     - Set up a Destination to which device traffic will be routed and processed by a rule.  
 
 These steps are discussed as you browse through this guide. For additional details, refer to the AWS LoRaWAN developer guide.
 
-#### Set Up Roles and Policies in IAM
-
-
-Adding an IAM role will allow the Configuration and Update Server (CUPS) to handle the wireless gateway credentials. 
-
-This procedure needs to be done only once but must be performed before a LoRaWAN gateway tries to connect with AWS IoT Core for LoRaWAN.
-
-1. Go to the [IAM Roles](https://console.aws.amazon.com/iam/home#/roles) page on the IAM console.
-2. Choose **Create role**.
-3. On the Create Role page, choose **Another AWS account**. 
-4. Enter your **Account ID**, then select **Next: Permissions**.
-5. In the search box next to the Filter Policies, type **_AWSIoTWirelessGatewayCertManager_**.
-   - If the search results show the policy named **_AWSIoTWirelessGatewayCertManager_**, select it by clicking the checkbox.
-   - If the policy does not exist, create one:
-      - Go to the [IAM console](http://console.aws.amazon.com/iam).
-      - Choose **Policies** from the navigation pane.
-      - Choose **Create Policy**, then select the **JSON** tab to open the policy editor. 
-      - Replace the existing template with trust policy document.
-  
-      ```json
-      {
-      "Version": "2012-10-17",
-      "Statement": [
-      {
-      "Sid": "IoTWirelessGatewayCertManager",
-      "Effect": "Allow",
-      "Action": [
-      "iot:CreateKeysAndCertificate",
-      "iot:DescribeCertificate",
-      "iot:ListCertificates",
-      "iot:RegisterCertificate"
-               ],
-      "Resource": "*"
-                }
-            ]
-      }   
-      ```
-
-      - Choose **Review Policy** to open the Review Page.
-      - For the Name, type _**AWSIoTWirelessGatewayCertManager**_.
-
-   :::tip 📝 NOTE:
-   You must enter the name as **_AWSIoTWirelessGatewayCertManager_** and must not use a different name. This is for consistency with future releases.
-   :::
-
-     - For the **Description**, enter a description of your choice. 
-     - Then choose **Create policy**. You will see a confirmation message showing the policy has been created.
-  
-
-6. Choose **Next: Tags**, then **Next: Review**.
-7. In **Role name**, enter _**IoTWirelessGatewayCertManagerRole**_, and then choose to **Create role**.
-   
-:::tip 📝 NOTE:
-You must not use a different name.  This is for consistency with future releases.
-:::
-
-8. In the confirmation message, choose _**IoTWirelessGatewayCertManagerRole**_ to edit the new role.
-9. In the **Summary**, choose the **Trust relationships** tab, and then choose **Edit trust relationship**.
-10. In the **Policy Document**, change the **Principal** property to represent the IoT Wireless service:
-
-    ```json
-    "Principal": { 
-    "Service": "iotwireless.amazonaws.com"  
-    },
-    ```
-
-- After changing the Principal property, the complete policy document should look like the following:
-
-    ```json
-    {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-    "Effect": "Allow",
-    "Principal": {
-    "Service": "iotwireless.amazonaws.com"
-            },
-    "Action": "sts:AssumeRole",
-    "Condition": {}
-        }
-        ]
-    }
-    ```
-
-11. Choose **Update Trust Policy** to save your changes and exit.
-At this point, you have created the _**IoTWirelessGatewayCertManagerRole**_ and you won't need to do this again.
-
-:::tip 📝 NOTE:
-The examples in this document are intended only for dev environments. All devices in your fleet must have credentials with privileges that authorize only intended actions on specific resources. The specific permission policies can vary for your use case. Identify the permission policies that best meet your business and security requirements. For more information, refer to <a href="https://docs.aws.amazon.com/iot/latest/developerguide/example-iot-policies.html"><b>Example Policies</b></a> and <a href="https://docs.aws.amazon.com/iot/latest/developerguide/security-best-practices.html"><b>Security Best Practices</b></a>
-:::
-
-
-##### Add IAM Role for Destination to AWS IoT Core for LoRaWAN
-
-
-<b> Creating a Policy </b>
-
-Creating a policy gives the role permissions to describe the IoT endpoint and publish messages to AWS IoT.
-
-
-1. Go to the [IAM console](http://console.aws.amazon.com/iam).
-2. Choose **Policies** from the navigation pane.
-3. Choose **Create Policy**, then choose the **JSON** tab to open the policy editor. Replace the existing template with this trust policy document:
-   
-    ```json
-    {
-    "Version": "2012-10-17", 
-    "Statement": [
-    {
-    "Effect": "Allow", 
-    "Action": 
-    [ 
-    "iot:DescribeEndpoint", 
-    "iot:Publish"
-    ],
-    "Resource": "*"
-    }
-    ]
-    }
-    ```
-
-4. Choose **Review Policy** to open the Review page.
-5. For **Name**, enter a name of your choice.
-6. For **Description**, enter a description of your choice.
-7. Choose **Create policy**.  You will see a confirmation message indicating that the policy has been created.
-
-
-<b> Creating the Role </b>
-
-1. In the **IAM console**, choose **Roles** from the navigation pane to open the Roles page.
-2. Choose **Create Role**. 
-3. In **Select type of trusted entity**, choose **Another AWS account**.
-4. In **Account ID**, enter your AWS account ID, and then choose **Next: Permissions**.
-5. Search for the **IAM policy** you just created by entering the policy name in the search bar.
-6. In the search results, select the checkbox corresponding to the policy.
-7. Choose **Next: Tags**. 
-8. Choose **Next: Review** to open the Review page. 
-9. For **Role name**, enter an appropriate name of your choice. 
-10. For **Description**, enter a description of your choice. 
-11. Choose **Create role**.  You will see a confirmation message indicating that your role has been created.
-
-
-<b> Updating Your Trust Policy</b>
-
-Update your role's trust relationship to grant AWS IoT Core for LoRaWAN permission to assume this IAM role when delivering messages from devices to your account.
-
-1. In the IAM console, choose **Roles** from the navigation pane to open the Roles page.
-2. Enter the name of the role you created earlier in the search window and click on the role name in the search results. This opens up the Summary page.
-3. Choose the **Trust relationships** table to navigate to the Trust relationships page.
-4. Choose **Edit trust relationship**. The principal AWS role in your trust policy document defaults to root and must be changed. Replace the existing policy with this:
-   
-    ```json
-    {
-    "Version": "2012-10-17",
-    "Statement": [
-    {
-    "Sid": "",
-    "Effect": "Allow",
-    "Principal": {
-    "Service": "iotwireless.amazonaws.com"
-    },
-    "Action": "sts:AssumeRole",
-    "Condition": {}
-    }
-    ]
-    }
-    ```
-
-5. Choose **Update Trust Policy.** Under Trusted entities, you will see: *The identity provider(s) iotwireless.amazonaws.com*.
-
-
-
 #### Add the Gateway to AWS IoT
 
-##### Requirements
+##### Preparation
 
-To complete setting up your gateway, you need the following:
+Refer to the [online guide](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-onboard-gateways.html) for steps required prior to onboarding your gateway. For more details, check the software section of the [datasheet](/Product-Categories/WisGate/RAK7248/Datasheet/#software).
 
-- **LoRaWAN region**. For example, if the gateway is deployed in a US region, the gateway must support LoRaWAN region US915.
-- **Gateway LNS-protocols**. Currently, the LoRa Basics Station protocol is supported.
-- **Gateway ID (GatewayEUI) or serial number**. This is used to establish the connection between the LNS and the gateway. Consult the documentation for your gateway to locate this value.
-- Add minimum software versions required, including Basics Station 2.0.5.
+##### Frequency Band Selection and Role Setup
+
+Refer to the [online guide](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-rfregion-permissions.html) for information on selecting an appropriate frequency band.
+
+::: tip 📝 NOTE
+
+LoRa® Frequency bands supported by RAK7248 are as follows:
+- RU864
+- IN865
+- EU868
+- US915
+- AU915
+- KR920
+- AS923
+- CN470
+
+You can select an appropriate frequency band from the [RAK store](https://store.rakwireless.com/products/rak7248).
+
+:::
 
 ##### Add the LoRaWAN Gateway
 
-To register the Gateway with AWS IoT Core for LoRaWAN, execute these steps:
-
-1. Go to the [AWS IoT console](http://console.aws.amazon.com/iot). 
-2. Select **Wireless connectivity** in the navigation panel on the left.
-3. Choose **Intro**, and then select **Get started**. This step is needed to pre-populate the default profiles.
-4. Under **Add LoRaWAN gateways and wireless devices**, choose **Add gateway**.
-5. In the **Add gateway** section, fill in the **GatewayEUI** and **Frequency band (RF Region)** fields.
-6. Enter a descriptive name in the **Name** – optional field. It is recommended that you use the GatewayEUI as the name.
-7. Choose **Add gateway**.
-8. On the **Configure your Gateway** page, find the section titled **Gateway certificate**. 
-9. Select **Create certificate**.
-10. Once the **Certificate created and associated with your gateway** message is shown, select **Download certificates** to download the certificate (*xxxxx.cert.pem*) and private key (*xxxxxx.private.key*).
-11. In the section **Provisioning credentials**, choose **Download server trust certificates** to download the **CUPS (cups.trust)** and **LNS (lns.trust)** server trust certificates.
-12. Copy the CUPS and LNS endpoints and save them for use while configuring the gateway.
-13. Choose **Submit** to add the gateway.
-
+To register the gateway with AWS IoT Core for LoRaWAN, follow the steps in the [online guide](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-onboard-gateway-add.html) under the **Add a gateway using the console** section.
 
 #### Add a LoRaWAN Device to AWS IoT
 
-##### Requirements
+##### Preparation 
 
-- Locate and note the following specifications about your endpoint device.
-    - **LoRaWAN Region**: This must match the gateway LoRaWAN region. The following Frequency bands (RF regions) are supported:
-        o	EU868
-        o	US915
-        o	EU433
-    - **MAC Version**: This must be one of the following:
-        o	V1.0.2
-        o	v1.0.3 
-        o	v1.1
-    - OTAA v1.0x and OTAA v1.1 are supported.
-    - ABP v1.0x and ABP v1.1 are supported.
+- Go to the datasheet to learn more about the [RAK4631 WisBlock LPWAN Module](/Product-Categories/WisBlock/RAK4631/Datasheet/#rak4631-wisblock-lpwan-module-datasheet). 
+- Follow the steps in the [online guide](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-onboard-end-devices.html) under the **Before onboarding your wireless device** section, then proceed to the [**Add your wireless device to AWS IoT Core for LoRaWAN**](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-end-devices-add.html) section.
 
-- Locate and note the following information from your device manufacturer: 
-    - For **OTAA v1.0x devices**: DevEUI, AppKey, AppEUI
-    - For **OTAA v1.1 devices**: DevEUI, AppKey, NwkKey, JoinEUI
-    - For **ABP v1.0x devices**: DevEUI, DevAddr, NwkSkey, AppSkey
-    - For **ABP v1.1 devices**: DevEUI, DevAddr, NwkSEnckey, FNwkSIntKey, SNwkSIntKey, AppSKey
 
 
 ##### Verify Profiles
 
-AWS IoT Core for LoRaWAN supports device profiles and service profiles. Device profiles contain the communication and protocol parameter values the device needs to communicate with the network server. Service profiles describe the communication parameters the device needs to communicate with the application server.
+AWS IoT Core for LoRaWAN supports device profiles and service profiles.  Device profiles contain the communication and protocol parameter values the device needs to communicate with the network server. Service profiles describe the communication parameters the device needs to communicate with the application server.
 
-Some pre-defined profiles are available for device and service profiles. Before proceeding, verify that these profile settings match the devices you will be setting up to work with AWS IoT Core for LoRaWAN.
+Some pre-defined profiles are available for device and service profiles.  Before proceeding, verify that these profile settings match the devices you will be setting up to work with AWS IoT Core for LoRaWAN. For more details, refer to the [online guide](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-define-profiles.html) under the **Add profiles to AWS IoT Core for LoRaWAN** section.
 
-
-1. Navigate to the [AWS IoT console](http://console.aws.amazon.com/iot).
-2. In the navigation pane, choose **Wireless connectivity** then select **Profiles**.
-3. In the **Device Profiles** section, there are some pre-defined profiles listed. Check each of the profiles to determine if one of them will work for you.
-4. If not, select **Add device profile** and set up the parameters as needed. For US 915 as an example, the values are as follows:
-      
-      - MacVersion 1.0.3
-      - RegParamsRevision RP002-1.0.1
-      - MaxEirp 10
-      - MaxDutyCycle 10
-      - RfRegion US915
-      - SupportsJoin true
-
-5. Continue once you have a device profile that will work for you.
-6. In the **Service Profiles** section, there are some pre-defined profiles listed. Check each of the profiles to determine if one of them will work for you.
-7. If not, select **Add service profile** and set up the parameters as needed.  As an example, the default service profile parameters are shown below. However, only the _**AddGwMetadata**_ setting can be changed at this time.
-     
-      - UlRate 60
-      - UlBucketSize 4096
-      - DlRate 60
-      - DlBucketSize 4096
-      - AddGwMetadata true
-      - DevStatusReqFreq 24
-      - DrMax 15
-      - TargetPer 5
-      - MinGwDiversity 1
-
-8. Proceed only if you have a device and service profile that will work for you.
-
+::: tip 📝 NOTE
+Proceed only if you have a device and service profile that will work for you.
+:::
 ##### Set Up a Destination for Device Traffic
 
-Because most LoRaWAN devices don't send data to AWS IoT Core for LoRaWAN in a format that can be consumed by AWS services, traffic must first be sent to a Destination.  A Destination represents the AWS IoT rule that processes a device's data for use by AWS services. This AWS IoT rule contains the SQL statement that selects the device's data and the topic rule actions that send the result of the SQL statement to the services that will use it.
+Because most LoRaWAN devices don't send data to AWS IoT Core for LoRaWAN in a format that can be consumed by AWS services, traffic must first be sent to a Destination. A Destination represents the AWS IoT rule that processes a device's data for use by AWS services. This AWS IoT rule contains the SQL statement that selects the device's data and the topic rule actions that send the result of the SQL statement to the services that will use it.
 
-For more information on Destinations, refer to the AWS [LoRaWAN Developer Guide](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan.html).
-
-A destination consists of a **Rule** and a **Role**. To set up the destination, execute the following steps:
-
-1. Navigate to the [AWS IoT console](http://console.aws.amazon.com/iot). 
-2. In the navigation pane, choose **Wireless connectivity**, and then **Destinations**.
-3. Choose **Add Destination**.
-4. On the Add destination page, in the **Permissions** section, select the IAM role you had created earlier from the drop-down.
-5. Under the **Destination details**, enter _**ProcessLoRa**_ as the Destination name, and an appropriate description under **Destination description – optional**.
-
-
-:::tip 📝 NOTE:
-The Destination name can be anything. For getting started and consistency, choose **ProcessLoRa** for the first integration with AWS IoT Core for LoRaWAN.
-:::
-
-5. For **Rule name**, enter _**LoRaWANRouting**_. Ignore the section **Rules configuration – Optional** for now.  The Rule will be set up later in the *"Hello World*" sample application. See Create the IoT Rule for the destination.
-6. Choose **Add Destination**.  You will see a message "_Destination added_", indicating the destination has been successfully added.
-
-
-##### Register the Device
-
-Now, register an endpoint device with AWS IoT Core for LoRaWAN as follows:
-
-1. Go to the [AWS IoT console](http://console.aws.amazon.com/iot).
-2. Select **Wireless connectivity** in the navigation panel on the left.
-3. Select **Devices**, then choose **Add wireless device**.
-4. On the **Add device** page, select the LoRaWAN specification version in the drop-down under **Wireless device specification**.
-5. Under **LoRaWAN specification and wireless device configuration**, enter the **DevEUI** and confirm it in the **Confirm DevEUI** field.
-6. Enter the remaining fields as per the OTAA/ABP choice you made above.
-7. Enter a name for your device in the **Wireless device name – optional field**.
-8. In the **Profiles** section, under **Wireless device profile**, find a drop-down option that corresponds to your device and region. 
-
-:::tip 📝 NOTE:
-Compare your device details to ensure the device profile is correct.  If there are no valid default options, you will have to create a new profile. See the Verify Profiles section.
-:::
-
-9. Choose **Next**.
-10. Choose the destination you created earlier (_ProcessLoRa_) from the drop-down under **Choose destination**.
-11. Choose **Add device**.
-12. You will see a message saying "_Wireless device added_", indicating that your device has been set up successfully.
-
+For more information, refer to the [online guide](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-create-destinations.html) under sections **Add a destination using the console** and **Create an IAM role for your destinations**. Also, refer to **Create rules to process LoRaWAN device messages** section in the [online guide](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-create-destinations.html).
 
 ### Set Up the Gateway
 
@@ -460,7 +208,7 @@ mkdir lns-aws
 cp lns-ttn/station.conf lns-aws/
 ```
 
-11.  Add the certificates that you downloaded earlier to **lns-aws**. (Refer to [Add the LoRaWAN Gateway](#add-the-lorawan-gateway).)
+11. Add the certificates that you downloaded earlier to **lns-aws**. (Refer to [Add the LoRaWAN Gateway](#add-the-lorawan-gateway).)
 
 <rk-img
   src="/assets/images/wisgate/rak7248/supported-lora-network-servers/aws/3.gateway-certificate.png"
@@ -511,7 +259,7 @@ RestartSec=5
 WantedBy=multi-user.target
 ```
 
-14. To apply changes made to the unit, execute the following command:
+14. To apply the changes made to the unit, execute the following command:
 
 ```bash
 sudo systemctl daemon-reload
@@ -558,130 +306,11 @@ If everything is configured properly, your gateway should be online in the AWS I
 
 ### Add End-Devices
 
-This section shows an example of how to join the AWS IoT LoRaWAN server.
+Refer to [RAK4631 Quick Start Guide](/Product-Categories/WisBlock/RAK4631/Quickstart/) to enable communication with the gateway.
 
-1. Add Device Profile.
+#### Connect the Device and Verify the Connection Status
 
-<rk-img
-  src="/assets/images/wisgate/rak7248/supported-lora-network-servers/aws/7.add-device-profile.png"
-  width="70%"
-  caption="Adding the Device Profile"
-/>
-
-
-2. Add Service Profile.
-
-<rk-img
-  src="/assets/images/wisgate/rak7248/supported-lora-network-servers/aws/8.add-service-profile.png"
-  width="70%"
-  caption="Adding the Service Profile"
-/>
-
-3. Add Destination.
-
-Before adding the destination, follow the Add IAM role for Destination to AWS IoT Core for LoRaWAN section to configure IAM policy and role.
-
-<rk-img
-  src="/assets/images/wisgate/rak7248/supported-lora-network-servers/aws/9.add-destination.png"
-  width="70%"
-  caption="Adding Destination"
-/>
-
-
-4. Add Device.
-
-Before adding a device to AWS IoT, retrieve the **DevEui**, **AppEui**, and **AppKey** from the end-device console. You can use the following AT command to obtain the information:
-
-```
-at+get_config=lora:status
-```
-
-For more AT commands, refer to the [RAK4200 AT Command Manual](/Product-Categories/WisDuo/RAK4200-Evaluation-Board/AT-Command-Manual/).
-
-
-```
-at+get_config=lora:status\r\n
-OK Work Mode: LoRaWAN
-Region: EU868
-Send_interval: 600s
-Auto send status: false.
-MulticastEnable: true.
-Multi_Dev_Addr: 260111FD
-Multi_Apps_Key: F13DDFA2619B10411F02F042E1C0F356
-Multi_Nwks_Key: 1D1991F5377C675879C39B6908D437A6
-Join_mode: OTAA
-DevEui: 0000000000000888
-AppEui: 0000000000000888
-AppKey: 00000000000008880000000000000888
-Class: C
-Joined Network:false
-IsConfirm: unconfirm
-AdrEnable: true
-EnableRepeaterSupport: false
-RX2_CHANNEL_FREQUENCY: 869525000, RX2_CHANNEL_DR:0
-RX_WINDOW_DURATION: 3000ms
-RECEIVE_DELAY_1: 1000ms
-RECEIVE_DELAY_2: 2000ms
-JOIN_ACCEPT_DELAY_1: 5000ms
-JOIN_ACCEPT_DELAY_2: 6000ms
-Current Datarate: 4
-Primeval Datarate: 4
-ChannelsTxPower: 0
-UpLinkCounter: 0
-DownLinkCounter: 0
-```
-
-<rk-img
-  src="/assets/images/wisgate/rak7248/supported-lora-network-servers/aws/10.wireless-device-specification.png"
-  width="80%"
-  caption="LoRaWAN specifications and wireless device configuration"
-/>
-
-
-<rk-img
-  src="/assets/images/wisgate/rak7248/supported-lora-network-servers/aws/11.wireless-device-profile.png"
-  width="80%"
-  caption="Choosing a Wireless Device Profile"
-/>
-
-<rk-img
-  src="/assets/images/wisgate/rak7248/supported-lora-network-servers/aws/12.choose-destination.png"
-  width="80%"
-  caption="Choosing a Destination"
-/>
-
-
-
-5. Restart the end-device, and it should join the AWS IoT LoRaWAN server.
-
-```
-EVENT:0:STARTUP
-SYSLOG:4:OTAA Join Request
-SYSLOG:4:OTAA Join Success
-EVENT:1:JOIN_NETWORK
-SYSLOG:4:LoRa Tx :
-```
-
-<rk-img
-  src="/assets/images/wisgate/rak7248/supported-lora-network-servers/aws/13.checking-device.png"
-  width="100%"
-  caption="Checking the device in the LoRaWAN Server"
-/>
-
-6. Use the following AT command to send an uplink message:
-
-```
-at+send:lora:1:1234567890
-``` 
-
-Here is the console log after sending uplink message:
-
-```
-1
-OK
-SYSLOG:4:LoRa Tx : 1234567890
-EVENT:3:LORA_TX_DONE:1:OK
-```
+Follow the instructions in the [online guide](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-device-connection-status.html) to connect your device to AWS IoT Core for LoRaWAN. To verify the connection status, refer to the instructions in the **Check device connection status using the console** section.  You can also check [**View format of uplink messages sent from LoRaWAN devices**](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-uplink-metadata-format.html).
 
 
 ### Verifying Operation
@@ -704,7 +333,7 @@ Create the lambda function to process device messages processed by the destinati
 
 1. Go to the [AWS Lambda console](http://console.aws.amazon.com/lambda).
 2. In the navigation pane, click on **Functions**, then **Create function**.
-3. Select **Author** from scratch.
+3. Select **Author from scratch**.
 4. Under **Basic Information**, enter the function name and choose _**Runtime Python 3.8**_. from the drop-down under **Runtime**.
 5. Click on **Create function**. 
 6. Under **Function code**, paste the copied code into the editor under the _**lambda_function.py**_ tab. 
@@ -771,7 +400,6 @@ Create the lambda function to process device messages processed by the destinati
         return response
 
     ```
-
 7. Once the code has been pasted, choose **Deploy** to deploy the lambda code.
 8. Click on the **Permissions** tab of the lambda function.
 9. Change the **Lambda Role Policy** permission.
@@ -986,9 +614,17 @@ Send message from end-device using AT command: `at+send:lora:1:01670110`. Here i
 
 This section shows how to send downlink payload from AWS IoT LoRaWAN Server to end-device.
 
-1. Install the [AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html).
-2. Deploy [SAM template to AWS](https://github.com/aws-samples/aws-iot-core-lorawan/tree/main/send_downlink_payload).
-3. Send Payload to End Device.
+##### Install the AWS SAM CLI
+
+Follow the instruction in the [online guide](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html) to install the [AWS SAM CLI.
+
+##### Deploy the SAM Template to AWS
+
+Follow the instruction in the Deploy [SAM template to AWS](https://github.com/aws-samples/aws-iot-core-lorawan/tree/main/send_downlink_payload) GitHub.
+
+##### Send Payload to End-Device
+
+1. Send Payload to End-device.
     - Go to the AWS IoT console.
     - In the navigation pane, select **Test**, and choose **MQTT client**.
     - Subscribe to the wildcard topic **#** to receive messages from all topics.
@@ -1066,7 +702,7 @@ You will use IoT Analytics to visually display data via graphs if there is a nee
 
 1. Go to the [AWS IoT Analytics console](http://console.aws.amazon.com/iotanalytics).
 2. In the navigation panel, choose **Data sets**.
-3. Select the data set generated by the Quick Create in Create an IoT Analytics Rule
+3. Select the data set generated by the Quick Create in [**Create an IoT Analytics Rule**](#create-an-iot-analytics-rule).
 4. In the Details section, edit the **SQL query**.
 5. Replace the query with as follows:
 
@@ -1083,18 +719,18 @@ Amazon QuickSight lets you easily create and publish interactive BI dashboards t
 
 1. Go to [AWS Management console](http://console.aws.amazon.com/).
 2. From the management console, enter **QuickSight** in the "_Search for services, features.._" search box.
-3. Click on QuickSight in the search results.
+3. Click on **QuickSight** in the search results.
 4. If you haven't signed up for the service before, go ahead and sign up, as there is a free trial period.
-5. Select the **Standard Edition**, and choose Continue.
-6. Enter a unique name in the field QuickSight account name.
-7. Fill in the Notification email address.
+5. Select the **Standard Edition**, and choose **Continue**.
+6. Enter a unique name in the field **QuickSight account name**.
+7. Fill in the **Notification email address**.
 8. Review the other checkbox options and change them as necessary. The **AWS IoT Analytics** option must be selected.
 9. Choose **Finish**. You will see a confirmation message.
 10. Choose **Go to Amazon QuickSight**.
 11. Select **Datasets**.
 12. Select **New dataset**.
 13. Select **AWS IoT Analytics**.
-14. Under Select an AWS IoT Analytics data set to import, choose the data set created in **Create an IoT Analytics Rule**.
+14. Under Select an AWS IoT Analytics data set to import, choose the data set created in [**Create an IoT Analytics Rule**](#create-an-iot-analytics-rule).
 15. Choose **Create data source**, and then choose **Visualize**.
 16. Select the dataset created, then select **Refresh** or **Schedule Refresh** for a periodic refresh of the dataset.
 
@@ -1110,7 +746,7 @@ You can also visualize the data set as follows:
 4. Select **Content** and ensure there are at least few uplink entries available in the data set. 
 5. Go to the [**QuickSight console**](http://quicksight.aws.amazon.com/).
 6. Choose **New analysis**.
-7. Choose the dataset created in **Create an IoT Analytics Rule**.
+7. Choose the dataset created in [**Create an IoT Analytics Rule**](#create-an-iot-analytics-rule).
 8. To see a chart of your dataset, select the following values:
     - **Time** on the X-axis
     - **Value** as temp (Average)
