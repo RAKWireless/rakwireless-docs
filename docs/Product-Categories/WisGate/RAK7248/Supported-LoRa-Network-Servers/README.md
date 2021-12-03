@@ -13,7 +13,7 @@ prev: ../Overview/
 # RAK7248 Supported LoRa Network Servers
 
 
-## AWS IoT Core
+## AWS IoT Core for LoRaWAN
 
 Execute the following steps to set up your AWS account and permissions:
 ### Set Up Your AWS Account and Permissions

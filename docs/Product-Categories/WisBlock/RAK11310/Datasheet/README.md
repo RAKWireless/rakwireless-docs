@@ -15,22 +15,20 @@ tags:
 
 ### Description
 
-**RAK11310** is a **WisBlock Core** module for RAK hardware IoT platform **WisBlock**. It is powered by an RP2040 ARM Microcontroller developed by the Raspberry Pi Foundation combined with the SX1262 LoRa transceiver from Semtech. **RAK11310** can be programmed via the Arduino™ IDE, PlatformIO or MicroPython.
+**RAK11310** is a **WisBlock Core** module for the RAK hardware IoT platform **WisBlock**. It is powered by an RP2040 ARM microcontroller developed by the Raspberry Pi Foundation, combined with the SX1262 LoRa transceiver from Semtech. **RAK11310** can be programmed via the Arduino™ IDE, PlatformIO or MicroPython.
 
-The RAK11310 WisBlock Core module has a RAK11300 LoRa stamp module in it together with a high-quality connector that is compatible with WisBlock Base boards. It allows an easy way to access the pins of the RAK11310 module in order to simplify the development of IoT devices. 
+The RAK11310 WisBlock Core module has a RAK11300 LoRa stamp module in it together with a high-quality connector that is compatible with WisBlock Base boards. It allows an easy way to access the pins of the RAK11310 module in order to simplify the development of IoT devices.
 
-The module complies with LoRaWAN 1.0.2 protocols, it also supports LoRa point-to-point communication.
+The module complies with LoRaWAN 1.0.2 protocols, and also supports LoRa point-to-point communication.
 
-The RF communication characteristic of the Lora® module makes it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors, and monitors, etc.).
-
+The RF communication characteristic of the Lora module makes it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors, and monitors, etc.).
 
 ### Features
 
- 
 - Based on RAK11300
 - Uses the RP2040 as the main processor
-- Semtech SX1262 low power high range LoRa transceiver     
-- LoRaWan® 1.0.2 protocol stack
+- Semtech SX1262 low power high range LoRa transceiver
+- LoRaWAN 1.0.2 protocol stack
 - **I/O ports**: UART/I2C/GPIO/USB
 - Serial Wire Debug (SWD) interface
 - **Module Size**: 20 x 30&nbsp;mm
@@ -64,12 +62,11 @@ The RAK11310 module is designed to work with the RAK5005-O base board. **Figure 
 
 ### Hardware
 
-The hardware specification is categorized into four parts. It covers the RF, electrical, and mechanical parameters that include the tabular data of the functionalities and standard values. It also shows and discusses the diagram of the RAK11310 WisBlock LPWAN Module.
+The hardware specification is categorized into four parts. It covers the RF, electrical, and mechanical parameters, which include the tabular data of the functionalities and standard values. It also shows and discusses the diagram of the RAK11310 WisBlock LPWAN Module.
 
 #### RF Characteristics
 
-The RAK11310 module supports the LoRaWAN bands, as shown in the table below. There are two types RAK11310 module: **RAK11310(L)** is for the low-frequency band regions and **RAK11310** (no extra suffix) is for the high-frequency band regions. 
-
+The RAK11310 module supports the LoRaWAN bands, as shown in the table below. There are two types RAK11310 module: **RAK11310(L)** is for the low-frequency band regions and **RAK11310** (no extra suffix) is for the high-frequency band regions.
 
 ::: tip 📝 NOTE
 Check the frequency and band regions, as shown in the table, when ordering your RAK11310 WisBlock Core.
@@ -93,7 +90,7 @@ Check the frequency and band regions, as shown in the table, when ordering your 
 ##### Power Consumption
 
 ::: tip 📝 NOTE
-The power consumption will wait the hardware test result. 
+The power consumption will be published after the hardware test results.
 :::
 
 
@@ -138,7 +135,7 @@ The power consumption will wait the hardware test result.
 
 - **WisConnector**: The breakout module allows the RAK11310 stamp module pinout to be transferred by the board-to-board WisConnector.
 
-- **WisConnector Pin Order**: The pin order of the WisConnector is located in the bottom layer of the module.
+- **WisConnector Pin Order**: The pin order of the WisConnector is located on the bottom layer of the module.
 
 - **Core Module**: The breakout module itself has a RAK11310 at its core, and it shows the core module pin and connection information. By default, the NFC function is disabled to conserve the low power characteristic.
 
