@@ -398,14 +398,14 @@ Compare your device details to ensure the device profile is correct.  If there a
 Head on to these guides with your corresponding device to learn how to Setup your Gateway:
 * [RAK7240 WisGate Edge Prime](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7240/Quickstart/#power-on-the-gateway)
 * [RAK7249 WisGate Edge Max](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7249/Quickstart/#power-on-the-gateway)
-* [RAK7258 WisGate Edge Lite](http://localhost:8080/Product-Categories/WisGate/RAK7258/Quickstart/#power-on-the-gateway)
+* [RAK7258 WisGate Edge Lite](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7258/Quickstart/#power-on-the-gateway)
 
 
 #### Set up the Gateway Software
 Head on to these guides with your corresponding device to learn how to access and connect your Gateway:
 * [RAK7240 WisGate Edge Prime](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7240/Quickstart/#access-the-gateway)
 * [RAK7249 WisGate Edge Max](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7249/Quickstart/#access-the-gateway)
-* [RAK7258 WisGate Edge Lite](http://localhost:8080/Product-Categories/WisGate/RAK7258/Quickstart/#access-the-gateway)
+* [RAK7258 WisGate Edge Lite](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7258/Quickstart/#access-the-gateway)
 #### Configure the Gateway Device
 
 1. Using your preferred Web browser, input the aforementioned IP Address and you should see the same Log-in Page shown in the following image. Login the credentials provided below:
@@ -503,7 +503,7 @@ Before adding the destination, follow the Add IAM role for Destination to AWS Io
 
 Before adding a device to AWS IoT, retrieve the **DevEui**, **AppEui**, and **AppKey** from the end Device's console. You can use AT command `at+get_config=lora:status` to obtain the information.
 
-For more AT commands, refer to the [RAK4200 AT Command Manual](/Product-Categories/WisDuo/RAK4200-Evaluation-Board/AT-Command-Manual/).
+For more AT commands, refer to the [RAK4200 AT Command Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK4200-Evaluation-Board/AT-Command-Manual/).
 
 
 ```
