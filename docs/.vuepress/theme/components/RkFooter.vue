@@ -16,9 +16,9 @@
         <a
           href="https://www.rakwireless.com/en-us/?utm_source=RAK-Doc-Home&utm_medium=footer"
           target="_blank"
-        >RAKwireless Technology</a>
+        >RAKwireless Technology Limited</a>
       </span>
-      <span>All rights reserved. 粤ICP备16112976号</span>
+      <span>All rights reserved.</span>
       <div class="row justify-center q-mt-md">
         <q-btn
           v-for="link in links"

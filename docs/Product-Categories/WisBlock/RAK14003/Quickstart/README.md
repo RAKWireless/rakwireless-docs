@@ -226,4 +226,10 @@ If you're using the RAK11200 as your WisBlock Core, the RAK11200 requires the **
   caption="Uploading the RAK14003 example code"
 />
 
-5. When you successfully uploaded the example sketch, you'll see that the LED Bar Graph module lights up in incrementing and decrementing way. Therefore, your RAK14003 is properly communicating to the WisBlock core.
+5. When you successfully uploaded the example sketch, you'll see that the LED Bar Graph module lights up in incrementing and decrementing way as shown below. Therefore, your RAK14003 is properly communicating to the WisBlock core.
+
+<rk-img
+  src="/assets/images/wisblock/rak14003/quickstart/rak14003-vid.gif"
+  width="30%"
+  caption="RAK14003 LED Bar Graph"
+/>

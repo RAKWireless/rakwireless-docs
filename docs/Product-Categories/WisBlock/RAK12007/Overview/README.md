@@ -1,9 +1,9 @@
 ---
 rak_img: /assets/images/wisblock/rak12007/overview/RAK12007_buy.png
-rak_desc: RAK12007 is a WisBlock Ultrasonic Sensor module based on the CS100, an industrial-grade ultrasonic distance measurement chip. A ready to use SW library and tutorial makes it easy to add an ultrasonic sensor for distance measurement or object detection to your project.
+rak_desc: RAK12007 is a WisBlock Ultrasonic Sensor module based on the CS100, an industrial-grade ultrasonic distance measurement chip. A ready-to-use SW library and tutorial make it easy to add an ultrasonic sensor for distance measurement or object detection to your project.
 rak_grp: [wisblock, wissensor]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK12007
@@ -12,8 +12,9 @@ tags:
 
 # RAK12007 WisBlock Ultrasonic Module
 
-Thank you for choosing **RAK12007 WisBlock Ultrasonic Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK12007 WisBlock Ultrasonic Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [RAK12007 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
@@ -30,7 +31,7 @@ For All WisBlock Core:
 
 ## Product Description
 
-RAK12007 is an ultrasonic sensor module based on the CS100, an industrial-grade ultrasonic distance measurement chip. This chip integrates ultrasonic transmitter, ultrasonic receiver, and digital processing circuits. The distance measurement result output is in the form of pulse width.
+RAK12007 is an ultrasonic sensor module based on the CS100, an industrial-grade ultrasonic distance measurement chip. This chip integrates an ultrasonic transmitter, ultrasonic receiver, and digital processing circuits. The distance measurement result output is in the form of the pulse width.
 
 For an ultrasonic detector, there are two main parts: **Emitter** and **Detector**. The emitter transmits an ultrasonic sound wave, and the detector receives back the signal from the emitter reflected by an object. By calculating the travel time and the speed of sound, the distance of the object can be determined.
 
@@ -38,7 +39,7 @@ For an ultrasonic detector, there are two main parts: **Emitter** and **Detector
 
 * **Sensor specifications**
 
-    * Detect range 2&nbsp;cm to  4&nbsp;m
+    * Detect range 2&nbsp;cm to 4&nbsp;m
     * 3.3&nbsp;V power supply
 
 * **Size**

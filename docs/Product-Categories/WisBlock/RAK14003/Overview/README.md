@@ -12,7 +12,7 @@ tags:
 
 # RAK14003 WisBlock LED Bar Graph Module
 
-Thank you for choosing **RAK14003 WisBlock LED Bar Graph Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK14003 WisBlock LED Bar Graph Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK14003 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -31,7 +31,7 @@ RAK14003 is an LED Bar Graph that is part of WisBlock Display modules. It consis
 
 * **Module specifications**
     * LED Bar Graph module
-    * 5 green colour LEDs, 3 yellow colour LEDs，and 2 red colour LEDs
+    * 5 green color LEDs, 3 yellow color LEDs，and 2 red color LEDs
     * Each LED can be controlled separately
     * 3.3&nbsp;V Power Supply
 

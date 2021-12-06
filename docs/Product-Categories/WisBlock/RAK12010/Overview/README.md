@@ -2,7 +2,7 @@
 rak_img: /assets/images/wisblock/rak12010/overview/RAK12010_home.png
 rak_desc: RAK12010 is a WisBlock Sensor that extends the WisBlock system to have ambient light sensing capability. It uses the VEML7700 chip from Vishay Semiconductors with an I2C interface making it easy to build an ambient light data acquisition system.
 rak_grp: [wisblock, wissensor]
-next: ../Datasheet/
+next: ../Quickstart/
 prev: ../../
 tags:
     - wisblock
@@ -12,8 +12,9 @@ tags:
 
 # RAK12010 WisBlock Ambient Light Sensor Module
 
-Thank you for choosing **RAK12010 WisBlock Ambient Light Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK12010 WisBlock Ambient Light Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [RAK12010 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->

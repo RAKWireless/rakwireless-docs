@@ -1,5 +1,5 @@
 ---
-rak_desc: Covers the comprehensive information of your RAK14003 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Covers the comprehensive information of your RAK14003 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisblock/rak14003/overview/RAK14003_home.png
 tags:
   - datasheet
@@ -67,7 +67,7 @@ The RAK14003 module has a 40-pin WisConnector that is compatible to the WisBlock
 
 #### Electrical Characteristics
 
-This sections shows the maximum and minimum ratings of the RAK14003 module and its recommended operating conditions. Refer to the table presented below.
+This section shows the maximum and minimum ratings of the RAK14003 module and its recommended operating conditions. Refer to the table presented below.
 
 ##### Absolute Maximum Ratings
 
