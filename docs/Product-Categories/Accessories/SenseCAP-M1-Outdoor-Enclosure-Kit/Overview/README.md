@@ -32,4 +32,6 @@ Combined with one of our fiberglass antennas, this kit allows you to better posi
 - Pole mounting kit
 - Antenna cable type RG316, with N-type female to SMA female connectors for LoRa antenna. 
 - Cover sticker (for the LEDs)
+- **Gross Weight**: 4kg
+- **Net weight**: 3kg
 - RAKBox-GW-4
