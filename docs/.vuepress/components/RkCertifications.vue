@@ -95,6 +95,9 @@ export default {
           case 'LoRaWAN':
             data.img = '/assets/images/certifications/lorawan-certified.png'
             break
+          case 'JRL':
+            data.img = '/assets/images/certifications/JRL.png'
+            break
           default:
             data.img =
               'https://image.shutterstock.com/image-illustration/white-unknown-document-icon-isolated-600w-1517588975.jpg'

@@ -7,13 +7,14 @@ tags:
   - wisduo
   - RAK3172
 certifications:
-  - [KCC, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_KC_Certification.pdf]
   - [CE,https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_CE_certification.pdf ]
-  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_UKCA_certification.pdf]
-  - [RCM, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RCM_certification.pdf]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_FCC_certification.zip]
   - [IC, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_ISED_Certificate.pdf]
+  - [JRL, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_JRL_certfication.pdf]
+  - [KCC, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_KC_Certification.pdf]
   - [LoRaWAN, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_lora_alliance_certification.pdf]
+  - [RCM, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RCM_certification.pdf]
+  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_UKCA_certification.pdf]
 ---
 
 # RAK3172 WisDuo LPWAN Module Datasheet
