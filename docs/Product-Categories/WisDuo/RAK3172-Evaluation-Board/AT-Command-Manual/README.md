@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials in installing and deploying your RAK3172 Evaluation Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module. 
+rak_desc: For an easier experience with your LoRaWAN Module, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the RAK3172 Evaluation Board. 
 prev: ../Quickstart/
 next: ../Datasheet/
 tags:

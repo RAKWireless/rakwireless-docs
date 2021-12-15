@@ -117,16 +117,16 @@ The hardware specification covers the interfacing of the RAK7289 and its corresp
         <tr><td>Operating Frequency</td><td>ISM band: 2.412~2.472 (GHz)</td></tr>
         <tr><td>Operation Channels</td><td>2.4 GHz: 1-13</td></tr>
         <tr><td rowspan="11">Transmit Power<br>(The max power maybe different<br>depending on local regulations) - per chain</td><td>802.11b</td></tr>
-        <tr><td>&nbsp;&nbsp;&nbsp;-19 dBm @1 Mbps</td></tr>
-        <tr><td>&nbsp;&nbsp;&nbsp;-19 dBm @11 Mbps</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;19 dBm @1 Mbps</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;19 dBm @11 Mbps</td></tr>
         <tr><td>802.11g</td></tr>
-        <tr><td>&nbsp;&nbsp;&nbsp;-18 dBm @6 Mbps</td></tr>
-        <tr><td>&nbsp;&nbsp;&nbsp;-16 dBm @54 Mbps</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;18 dBm @6 Mbps</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;16 dBm @54 Mbps</td></tr>
         <tr><td>802.11n (2.4G)</td></tr>
-        <tr><td>&nbsp;&nbsp;&nbsp;-18 dBm @MCS0 (HT20)</td></tr>
-        <tr><td>&nbsp;&nbsp;&nbsp;-16 dBm @MCS7 (HT20)</td></tr>
-        <tr><td>&nbsp;&nbsp;&nbsp;-17 dBm @MCS0 (HT40) </td></tr>
-        <tr><td>&nbsp;&nbsp;&nbsp;-15 dBm @MCS7 (HT40)</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;18 dBm @MCS0 (HT20)</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;16 dBm @MCS7 (HT20)</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;17 dBm @MCS0 (HT40) </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;15 dBm @MCS7 (HT40)</td></tr>
         <tr><td rowspan="11">Receiver Sensitivity<br>(Typical)</td><td>802.11b</td></tr>
         <tr><td>&nbsp;&nbsp;&nbsp;-95 dBm @1 Mbps</td></tr>
         <tr><td>&nbsp;&nbsp;&nbsp;-88 dBm @11 Mbps</td></tr>

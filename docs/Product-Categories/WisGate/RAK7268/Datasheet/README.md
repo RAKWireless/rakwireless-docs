@@ -175,16 +175,16 @@ The function of the Reset key is as follows:
         <tr><td>Operating Frequency</td><td>ISM band: 2.412~2.472&nbsp;GHz</td></tr>
         <tr><td>Operation Channels</td><td>2.4&nbsp;GHz: 1-13</td></tr>
         <tr><td rowspan="11">Transmit Power<br>(The max power maybe different<br>depending on local regulations) - per chain</td><td>802.11b</td></tr>
-        <tr><td>&nbsp;&nbsp;&nbsp;-19&nbsp;dBm @1&nbsp;Mbps</td></tr>
-        <tr><td>&nbsp;&nbsp;&nbsp;-19&nbsp;dBm @11&nbsp;Mbps</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;19&nbsp;dBm @1&nbsp;Mbps</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;19&nbsp;dBm @11&nbsp;Mbps</td></tr>
         <tr><td>802.11g</td></tr>
-        <tr><td>&nbsp;&nbsp;&nbsp;-18&nbsp;dBm @6&nbsp;Mbps</td></tr>
-        <tr><td>&nbsp;&nbsp;&nbsp;-16&nbsp;dBm @54&nbsp;Mbps</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;18&nbsp;dBm @6&nbsp;Mbps</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;16&nbsp;dBm @54&nbsp;Mbps</td></tr>
         <tr><td>802.11n (2.4G)</td></tr>
-        <tr><td>&nbsp;&nbsp;&nbsp;-18&nbsp;dBm @MCS0 (HT20)</td></tr>
-        <tr><td>&nbsp;&nbsp;&nbsp;-16&nbsp;dBm @MCS7 (HT20)</td></tr>
-        <tr><td>&nbsp;&nbsp;&nbsp;-17&nbsp;dBm @MCS0 (HT40) </td></tr>
-        <tr><td>&nbsp;&nbsp;&nbsp;-15&nbsp;dBm @MCS7 (HT40)</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;18&nbsp;dBm @MCS0 (HT20)</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;16&nbsp;dBm @MCS7 (HT20)</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;17&nbsp;dBm @MCS0 (HT40) </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;15&nbsp;dBm @MCS7 (HT40)</td></tr>
         <tr><td rowspan="11">Receiver Sensitivity<br>(Typical)</td><td>802.11b</td></tr>
         <tr><td>&nbsp;&nbsp;&nbsp;-95&nbsp;dBm @1&nbsp;Mbps</td></tr>
         <tr><td>&nbsp;&nbsp;&nbsp;-88&nbsp;dBm @11&nbsp;Mbps</td></tr>
