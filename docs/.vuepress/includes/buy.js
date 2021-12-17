@@ -702,7 +702,7 @@ export default {
   },  
   '/Product-Categories/WisBlock/RAK14011/': {
     label: 'RAK14011 WisBlock Keypad 4x4 Module',
-    img: '/assets/images/wisblock/rak14011/overview/RAK14011_buy.png',
+    img: '/assets/images/wisblock/rak14011/overview/rak14011_buy.png',
     store: 'https://store.rakwireless.com/products/rak14004-rak14009-rak14010-rak14011-wisblock-keypad-module'
   },
    '/Product-Categories/WisBlock/RAK14004/': {
@@ -810,9 +810,9 @@ export default {
     img: '/assets/images/accessories/antenna-feeder-line/datasheet/cable.png',
     store: 'https://store.rakwireless.com/collections/accessories/products/antenna-feeder-line'
   },
-  '/Product-Categories/Accessories/PoE-Injector/': {
-    label: 'PoE Injector',
-    img: '/assets/images/accessories/poe-injector/poe-injector-illustration.png',
+  '/Product-Categories/Accessories/R012-4800500/': {
+    label: '100M PoE Injector',
+    img: '/assets/images/accessories/r012-4800500/poe-injector-illustration.png',
     store: 'https://store.rakwireless.com/products/poe-injector?variant=37987145384134'
   },
   '/Product-Categories/Accessories/LoRa-WiFi-LTE-SPD/': {
@@ -929,6 +929,11 @@ export default {
     label: 'Angle Mounting Plate',
     img: '/assets/images/accessories/angle-mounting-plate/1.jpg',
     store: 'https://store.rakwireless.com/products/angle-mounting-plate'
+  },
+  '/Product-Categories/Accessories/R025-4800500/': {
+    label: '1000M PoE Injector',
+    img: '/assets/images/accessories/r025-4800500/1000M-PoE-Injector.png',
+    store: 'https://store.rakwireless.com/products/1000m-poe-injector-rp025-4800500yg-098-001'
   }
 
 }

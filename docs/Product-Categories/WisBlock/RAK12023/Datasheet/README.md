@@ -14,7 +14,7 @@ next: false
 ## Overview
 
 <rk-img
-  src="/assets/images/wisblock/rak12023/datasheet/RAK12023.png"
+  src="/assets/images/wisblock/rak12023/datasheet/rak12023.png"
   width="40%"
   caption="RAK12023 WisBlock Soil Moisture Sensor Connector"
 />

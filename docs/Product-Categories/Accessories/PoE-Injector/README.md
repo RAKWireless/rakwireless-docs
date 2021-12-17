@@ -4,4 +4,4 @@ rak_img: /assets/images/accessories/poe-injector/poe-injector-illustration.png
 
 ---
 
-<rk-redirect to="/Product-Categories/Accessories/PoE-Injector/Overview/" />
+<rk-redirect to="/Product-Categories/Accessories/R012-4800500/Overview/" />

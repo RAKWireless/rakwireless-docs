@@ -777,4 +777,41 @@ module.exports = {
       sidebarDepth: 4
     }
   ],
+  '/Product-Categories/Accessories/R012-4800500/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/R012-4800500/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/R012-4800500/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+
+  ],
+  '/Product-Categories/Accessories/R025-4800500/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/R025-4800500/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/R025-4800500/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
 }
