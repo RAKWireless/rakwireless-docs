@@ -1,5 +1,5 @@
 ---
-rak_desc: Covers the comprehensive information of your RAK7258 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Covers the comprehensive information of your RAK7258 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisgate/rak7258/quickstart/1.main/RAK7258_home.png
 tags:
   - datasheet
@@ -21,24 +21,24 @@ certifications:
 
 The **RAK7258 WisGate Edge Lite** is a full 8-channel gateway with built-in Ethernet connectivity for a straightforward setup. Additionally, there is an on-board Wi-Fi setup that allows it to be easily configured via the default Wi-Fi AP mode.
 
-As with the other RAKwireless Industrial Gateways, it also supports MQTT Bridge mode, with the option for TLS authentication.
+As with the other RAKwireless Industrial gateways, it also supports MQTT Bridge mode, with the option for TLS authentication.
 
-Power-over-Ethernet (PoE) is supported to serve cases where wall or ceiling mounting is required without the need to install additional power lines.
+Power-over-Ethernet (PoE) is supported when wall or ceiling mounting is required without the need to install additional power lines.
 
-The open source software for the management and configuration of this gateway device is based on OpenWRT. It has a built-in LoRa packet forwarder and a graphical user interface, allowing for a quick set-up without giving up the freedom of a fully customized solution.
+The open-source software for the management and configuration of this gateway device is based on OpenWRT. It has a built-in LoRa packet forwarder and a graphical user interface, allowing for a quick setup without giving up the freedom of a fully customized solution.
 
-The Gateway has Line-of-Sight (LoS) ranges of up to **15 kilometers**, while for highly urbanized environments it can cover more than **2 kilometers**. It is a perfect solution for any LoRaWAN use case scenario.
+The gateway has Line-of-Sight (LoS) ranges of up to **15 kilometers**, while for highly urbanized environments it can cover more than **2 kilometers**. It is a perfect solution for any LoRaWAN use case scenario.
 
-The RAK7258 WisGate Edge Lite package includes a LoRa antenna, mounting screws, and anchors. It is a full 8-channel gateway with built-in Ethernet connectivity for a straightforward.
+The RAK7258 WisGate Edge Lite package includes a LoRa antenna, mounting screws, and anchors.
 
 ### Features
 
 - Full LoRaWAN Stack support (V 1.0.3)
 - 100M base-T Ethernet with **PoE (802.3 af)**
-- Multi back-haul backup with **Ethernet, WiFi, Cellular** (optional LTE Cat 4)
+- Multi backhaul backup with **Ethernet, WiFi, Cellular** (optional LTE Cat 4)
 - **OpenWRT** software supports with Web UI for easy configuration and monitoring
 - Can integrate with both private (**ChirpStack**) and public (**TTN**) Network Servers
-- Built-in LoRaServer for easy deployment of applications and integration of Gateways
+- Built-in LoRa server for easy deployment of applications and integration of gateways
 - TF card for log backup
 
 ## Specifications
@@ -69,7 +69,7 @@ The hardware specification covers only the interfacing of the RAK7258 and its co
 
 #### Interfaces
 
-The hardware interfaces of RAK7258 WisGate Edge Lite include DC 12V, ETH interface, Console interface, Reset key, USB port, Nano SIM slot, TF Card slot, six (6) Status indicator LEDs, LoRa Antenna connector etc. as shown in the following figure.
+The RAK7258 WisGate Edge Lite's hardware interfaces include DC 12V, an ETH interface, console interface, a reset key, a USB port, a Nano-SIM slot, a TF Card slot, six status indicator LEDs, a LoRa antenna connector, etc. as shown in the following figure.
 
 <rk-img
   src="/assets/images/wisgate/rak7258/datasheet/hardware-interfaces.png"
@@ -78,21 +78,21 @@ The hardware interfaces of RAK7258 WisGate Edge Lite include DC 12V, ETH interfa
 />
 
 ##### Reset Key Functions
-The function of the **Reset** key is as follows:
+The function of the **reset** key is as follows:
 
-1. **Short press**: Restarts the Gateway
-2. **Long press (5 seconds and above)**: Restore Factory Settings
+1. **Short press**: Restarts the gateway
+2. **Long press (5 seconds and above)**: Restore factory settings
 
-The status of the LEDs is described as below:
+The status of the LEDs is described below:
 
 | LEDs | Status Indication Description                                                                                                                                                                                                        |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| PWR  | Power Indicator, Led on when device power on                                                                                                                                                                                         |
-| ETH  | **ON**: linkup <br> **OFF**: linkdown <br>**Flash**: Data Transmitting and Receiving                                                                                                                                                 |
-| LoRa | **ON**: LoRa1 is working <br>**OFF**: LoRa1 is not working <br>**Flash**: Indicate that LoRa1 Packet receiving and sending                                                                                                           |
+| PWR  | Power Indicator, LED on when device powers on                                                                                                                                                                                         |
+| ETH  | **ON**: linkup <br> **OFF**: linkdown <br>**Flash**: Data transmitting and receiving                                                                                                                                                 |
+| LoRa | **ON**: LoRa is working <br>**OFF**: LoRa is not working <br>**Flash**: Indicate that LoRa Packet receiving and sending                                                                                                           |
 | ACT  | Expanded Led indicator, useless                                                                                                                                                                                                      |
 | STAT | Expanded Led indicator, useless                                                                                                                                                                                                      |
-| WLAN | AP Mode : <br>**ON**: WLAN is working<br>**Flash**: Data Transmitting and Receiving <br><br>STA Mode : <br>**Slow Flash (1Hz)**: Connection Disconnected <br>**ON**: Connection Successful <br>**Flash**: Data Receiving and Sending |
+| WLAN | AP Mode: <br>**ON**: WLAN is working<br>**Flash**: Data transmitting and receiving <br><br>STA Mode: <br>**Slow Flash (1Hz)**: Connection disconnected <br>**ON**: Connection successful <br>**Flash**: Data receiving and sending |
 
 #### Main Specifications
 
@@ -101,12 +101,12 @@ The status of the LEDs is described as below:
 | Computing           | MT7628, DDR2RAM 128MB                                                                                                                                                                                                                                                                                                                  |
 | Wi-Fi Feature       | • **Frequency**: 2.400-2.4835GHz(802.11b/g/n) <br> • **RX Sensitivity**: -95dBm (Min), <br>• **TX Power**: 20dBm (Max) <br> • **Operation Channels**: 2.4GHz: 1-13                                                                                                                                                                     |
 | LoRa Feature       | • SX1301 Mini PCIe card <br> • 8 Channels <br> • **RX Sensitivity**: -139 dBm (Min) <br> • **TX Power**: 27 dBm (Max) <br> • **Frequency**: EU433 / CN470 / EU868 / US915 / AS923 / AU915 / IN865 / KR920                                                                                                                              |
-| Cellular            | Supports Quectel EG95-E / EG95-NA(IoT/M2M-optimized LTE Cat 4 Module), nonsupport by default <br><br> EG95-E for EMEA Region： <br> • **LTE FDD**: B1/B3/B7/B8/B20/B28A <br> • **WCDMA**: B1/B8 <br> • **GSM/EDGE**: B3/B8 <br><br> EG95-NA for North America Region： <br> • **LTE FDD**: B2/B4/B5/B12/B13 <br> • **WCDMA**: B2/B4/B5 |
+| Cellular            | Supports Quectel EG95-E / EG95-NA(IoT/M2M-optimized LTE Cat 4 Module), not supported by default <br><br> EG95-E for EMEA Region: <br> • **LTE FDD**: B1/B3/B7/B8/B20/B28A <br> • **WCDMA**: B1/B8 <br> • **GSM/EDGE**: B3/B8 <br><br> EG95-NA for North America Region: <br> • **LTE FDD**: B2/B4/B5/B12/B13 <br> • **WCDMA**: B2/B4/B5 |
 | Power Supply        | • DC 12 Volts - 1 Ampere <br> • POE (IEEE 802.3af), 42~57 VDC                                                                                                                                                                                                                                                                          |
 | Power Consumption   | 12 Watts (typical)                                                                                                                                                                                                                                                                                                                     |
 | Ethernet (ETH)      | RJ-45(10/100M)                                                                                                                                                                                                                                                                                                                         |
 | Console             | RJ-45 (RS232)                                                                                                                                                                                                                                                                                                                          |
-| Antenna             | • **LoRa**: RP-SMA Female Connector <br> • **Wi-Fi**: Internal Antenna                                                                                                                                                                                                                                                                 |
+| Antenna             | • **LoRa**: RP-SMA Female Connector <br> • **Wi-Fi**: Internal antenna                                                                                                                                                                                                                                                                 |
 | LEDs                | LoRa LED(1), Cellular LED (2), POWER LED(1), ETH LED(1), WiFi LED(1)                                                                                                                                                                                                                                                                   |
 | Ingress Protection  | IP30                                                                                                                                                                                                                                                                                                                                   |
 | Enclosure Material  | Plastics                                                                                                                                                                                                                                                                                                                               |
@@ -145,14 +145,12 @@ RAK7258 supports software in LoRa, Network and Management. Supported features ar
 | ------------------------ | ---------------- | ----------------------------------------------------------------------------------------------------------- |
 | RAK7258 WisGate Edge Lite | WisGateOS V1.0.2 | [Download](https://downloads.rakwireless.com/LoRa/Indoor-Gateway-RAK7258/Firmware/RAK7258_Latest_Firmware.zip) |
 
-
 #### Software Features
-
 
 | LoRa                          | Network            | Management                                   |
 | ----------------------------- | ------------------ | -------------------------------------------- |
 | Supports class A, C           | WiFi AP mode       | WEB Management                               |
-| LoRa package forward          | LTE APN setup      | Supports SSH2 , NTP                          |
+| LoRa package forward          | LTE APN setup      | Supports SSH2, NTP                           |
 | Country code setup            | Uplink backup      | Firmware update                              |
 | TX power up setup             | Supports 802.1q    | Supports configure the LoRa Packet Forwarder |
 | Datalogger                    | DHCP Server/Client | Supports Build-in LoRa Server                |
@@ -166,11 +164,11 @@ Order Information
 
 | Part Number    | Package                                                         | Description    |
 | -------------- | --------------------------------------------------------------- | -------------- |
-| RAK7258-01-R01 | 1x RAK7258, 1x LoRa Antenna and 1x Power Adapter retail package | LoRa 8RX EU433 |
-| RAK7258-02-R01 | 1x RAK7258, 1x LoRa Antenna and 1x Power Adapter retail package | LoRa 8RX CN470 |
-| RAK7258-03-R01 | 1x RAK7258, 1x LoRa Antenna and 1x Power Adapter retail package | LoRa 8RX EU868 |
-| RAK7258-04-R01 | 1x RAK7258, 1x LoRa Antenna and 1x Power Adapter retail package | LoRa 8RX US915 |
-| RAK7258-06-R01 | 1x RAK7258, 1x LoRa Antenna and 1x Power Adapter retail package | LoRa 8RX AS923 |
+| RAK7258-01-R01 | 1x RAK7258, 1x LoRa antenna and 1x Power adapter retail package | LoRa 8RX EU433 |
+| RAK7258-02-R01 | 1x RAK7258, 1x LoRa antenna and 1x Power adapter retail package | LoRa 8RX CN470 |
+| RAK7258-03-R01 | 1x RAK7258, 1x LoRa antenna and 1x Power adapter retail package | LoRa 8RX EU868 |
+| RAK7258-04-R01 | 1x RAK7258, 1x LoRa antenna and 1x Power adapter retail package | LoRa 8RX US915 |
+| RAK7258-06-R01 | 1x RAK7258, 1x LoRa antenna and 1x Power adapter retail package | LoRa 8RX AS923 |
 
 ## Certification
 
