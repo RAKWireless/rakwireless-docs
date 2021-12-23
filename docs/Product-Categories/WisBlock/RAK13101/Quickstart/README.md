@@ -50,6 +50,16 @@ You can integrate the RAK13101 module on your WisBlock project to extend its fun
 
 RAK13101 module can be mounted to the IO slot of the WisBlock Base and communicates to the WisBlock Core via UART. The module is activated via `WB_IO5` pin of the WisBlock Core. Two antennas must be connected to the module as well, one for the GNSS antenna port and one for the GSM antenna port. An external battery (Li-Ion/LiPo 3.7-4.2V) is also required to power up the module properly.
 
+:::warning ⚠️ WARNING
+
+- Batteries can cause harm if not handled properly.
+- Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
+- If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause a fire.
+- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
+- Make sure the battery wires match the polarity on the WisBlock Base board. Not all batteries have the same wiring.
+
+:::
+
 <rk-img
   src="/assets/images/wisblock/rak13101/quickstart/rak13101_assembly.png"
   width="80%"
@@ -59,7 +69,7 @@ RAK13101 module can be mounted to the IO slot of the WisBlock Base and communica
 <rk-img
   src="/assets/images/wisblock/rak13101/quickstart/battery-connection.gif"
   width="35%"
-  caption="WisBlock Base battery polarity and connection"
+  caption="WisBlock Base RAK5005-O battery polarity and connection"
 />
 
 

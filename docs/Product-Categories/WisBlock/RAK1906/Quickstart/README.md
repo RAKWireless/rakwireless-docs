@@ -99,7 +99,16 @@ If you will connect other modules to the remaining WisBlock Base slots, check on
 :::
 
 
-After all this setup, you can now connect the battery and USB cable to start programming the RAK1906.
+After all this setup, you can now connect the battery (optional) and USB cable to start programming the RAK1906.
+
+:::warning ⚠️ WARNING
+
+- Battery can cause harm if not handled properly.
+- Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
+- If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause fire.
+- Make sure the battery wires match the polarity on the RAK WisBlock Base Board. Not all batteries have the same wiring.
+- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
+:::
 
 ### Software Configuration and Example
 
@@ -114,7 +123,9 @@ The BME680 requires a burn-in period to collect accurate readings. The burn-in p
 
 If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
 
-1. First, you need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
+1. First, you need to select the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
+
+**RAK4631 WisBlock Core**
 
 RAK4631 Wisblock Core
 <rk-img
@@ -122,13 +133,17 @@ RAK4631 Wisblock Core
   width="100%"
   caption="Selecting RAK4631 as WisBlock Core"
 />
-RAK11200 Wisblock Core
+
+**RAK11200 WisBlock Core**
+
 <rk-img
   src="/assets/images/wisblock/rak1906/quickstart/rak11200_board.png"
   width="100%"
   caption="Selecting RAK11200 as WisBlock Core"
 />
-RAK11310 Wisblock Core
+
+**RAK11310 WisBlock Core**
+
 <rk-img
   src="/assets/images/wisblock/rak1906/quickstart/rak11310_board.png"
   width="100%"

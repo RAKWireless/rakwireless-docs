@@ -50,7 +50,16 @@ Read the following items carefully so that WisBlock can be used safely.
 - Don't power WisBlock using other power sources which RAK hasn't suggested.
 - Some WisBlock modules require higher current that can't be provided by USB port alone. In this case, it is recommended to connect a [battery](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector) to WisBlock Base Board.
 
-- There is already a bootloader in every WisBlock core board MCU when you receive the device so that you needn't to flash the bootloader again. Normally, you only need to use it directly or upload new code into it through Arduino IDE. If you accidentally erase the bootloader, contact [RAK forum](forum.rakwireless.com).
+:::warning ⚠️ WARNING
+
+- Battery can cause harm if not handled properly.
+- Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
+- If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause a fire.x
+- Make sure the battery wires match the polarity on the RAK WisBlock Base Board. Not all batteries have the same wiring.
+- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
+:::
+
+- There is already a bootloader in every WisBlock core board MCU when you receive the device so that you don't need to flash the bootloader again. Normally, you only need to use it directly or upload new code into it through Arduino IDE. If you accidentally erase the bootloader, contact [RAK forum](forum.rakwireless.com).
 
 - Don't unplug any hardware connector when you are uploading code into it, otherwise WisBlock may become unresponsive.
 

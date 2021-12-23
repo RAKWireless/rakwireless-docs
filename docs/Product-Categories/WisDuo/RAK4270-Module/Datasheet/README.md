@@ -289,7 +289,7 @@ The **hex file** contains both the bootloader and the application code. You need
 
 | Model   | Version   | Source                                                                                          |
 | ------- | --------- | ----------------------------------------------------------------------------------------------- |
-| RAK4270 | V3.3.0.17 | [Download](https://downloads.rakwireless.com/LoRa/RAK4270/Firmware/RAK4270_Latest_Firmware.zip) |
+| RAK4270 | V3.3.0.18 | [Download](https://downloads.rakwireless.com/LoRa/RAK4270/Firmware/RAK4270_Latest_Firmware.zip) |
 
 
 ## Certification

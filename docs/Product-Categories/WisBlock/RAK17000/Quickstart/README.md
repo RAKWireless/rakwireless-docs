@@ -23,8 +23,8 @@ Before going through each and every step on using the RAK17000 WisBlock Motor Co
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
-- [Solar charger (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
+- [Li-Ion/LiPo battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
 - DC Motor or Stepper Motor
 
 #### Software 
@@ -43,6 +43,16 @@ RAK17000 is a WisBlock Motor Control Module that extends the WisBlock system to 
 For more information about RAK17000, refer to the [Datasheet](../Datasheet/).
 
 #### Motor Driven by the WisBlock Battery
+
+:::warning ⚠️ WARNING
+
+- Batteries can cause harm if not handled properly.
+- Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
+- If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause a fire.
+- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
+- Make sure the battery wires match the polarity on the WisBlock Base board. Not all batteries have the same wiring.
+
+:::
 
 You need to set a header jumper and short VM and BAT to enable power from the battery of the WisBlock module. You can connect up to two DC motors by using channels A and B. To use channel A, connect the DC motor on A1 and A2. To use channel B, connect the DC motor on B1 and B2. You need to use both channels if you are driving a stepper motor. 
 

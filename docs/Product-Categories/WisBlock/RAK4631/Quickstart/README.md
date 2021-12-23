@@ -57,7 +57,11 @@ In Arduino IDE, once you installed the BSP, the examples for RAK4631 will be aut
 
 #### RAK4631 to WisBlock Base
 
-The RAK4631 will not work without a WisBlock Base board. The WisBlock Base provides a USB connection for programming the RAK4631. It also provides a power source and various interfaces to RAK4631 so that it can be connected to other WisBlock modules via different module slots. To illustrate, RAK4631 can be connected to RAK5005-O WisBlock Base, as shown in Figure 1.
+The RAK4631 will not work without a WisBlock Base board. The WisBlock Base provides a USB connection for programming the RAK4631. It also provides a power source and various interfaces to RAK4631 so that it can be connected to other WisBlock modules via different module slots.
+
+RAKwireless offers many [WisBlock Base Boards](https://store.rakwireless.com/collections/wisblock-base) compatible to WisBlock Core. It is highly recommended for you to look on these WisBlock Base boards to see what matches your requirements in terms of available module slots, power supply options and overall size.
+
+To illustrate, RAK4631 can be connected to RAK5005-O WisBlock Base, as shown in **Figure 1**.
 
 <rk-img
   src="/assets/images/wisblock/rak4631/quickstart/RAK5005-connect.png"
@@ -94,7 +98,7 @@ UART1 and I2C_1 are also exposed on the header of the WisBlock Base board.
 
 #### RAK4631 to WisBlock Modules
 
-RAK4631 WisBlock Core is designed to be interfaced to other WisBlock Modules like sensors, displays, and other interfaces. You need to connect these modules to the compatible slots on the WisBlock Base.
+RAK4631 WisBlock Core is designed to be interfaced to other [WisBlock Modules](https://store.rakwireless.com/pages/wisblock) like sensors, displays, and other interfaces. You need to connect these modules to the compatible slots on the WisBlock Base.
 
 Each WisBlock Modules that will be used with RAK4631 WisBlock Core have a dedicated quick start guide you can follow on how to connect to the WisBlock Base.
 
@@ -189,7 +193,19 @@ When using the LoRa or Bluetooth Low Energy transceivers, make sure that an ante
 
 #### Battery and Solar Connection
 
-RAK4631 can be power via the USB cable or Li-Ion/LiPo battery via the dedicated connectors as shown in Figure 11. The matching connector for the battery wires is an [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199)
+RAK4631 can be powered via the USB cable or Li-Ion/LiPo battery via the dedicated connectors, as shown in **Figure 11**. The matching connector for the battery wires is an [JST PHR-2 2&nbsp;mm pitch female](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable).
+
+This illustration uses RAK5005-O as WisBlock Base. There are other [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) boards available and you need to check the datasheet of the specific WisBlock Base board for the right polarity and other parameters.
+
+:::warning ⚠️ WARNING
+
+- Batteries can cause harm if not handled properly.
+- Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
+- If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause a fire.
+- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
+- Make sure the battery wires match the polarity on the WisBlock Base board. Not all batteries have the same wiring.
+
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak4631/quickstart/battery-connect.png"
@@ -198,12 +214,12 @@ RAK4631 can be power via the USB cable or Li-Ion/LiPo battery via the dedicated 
 />
 
 <rk-img
-  src="/assets/images/wisblock/quickstart/battery-connection.gif"
-  width="25%"
+  src="/assets/images/wisblock/rak4631/quickstart/battery-connection.gif"
+  width="35%"
   caption="Battery Connection"
 />
 
-The battery can be recharged as well via small solar panel, as shown in Figure 13. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287).
+The battery can be recharged as well via small solar panel, as shown in **Figure 13**. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable).
 
 <rk-img
   src="/assets/images/wisblock/rak4631/quickstart/solar-connect.png"
@@ -212,14 +228,6 @@ The battery can be recharged as well via small solar panel, as shown in Figure 1
 />
 
 Specification of the battery and solar panel can be found on the datasheet of the WisBlock Base.
-
-:::warning ⚠️ WARNING
-
-- Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. Do not use other types of batteries with the system.
-- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
-- Make sure the battery wires are matching the polarity on the RAK5005-O board. Not all batteries have the same wiring.
-
-:::
 
 
 ### Software Setup
@@ -322,7 +330,7 @@ uint8_t nodeAppEUI[8] = {0xB8, 0x27, 0xEB, 0xFF, 0xFE, 0x39, 0x00, 0x00};
 uint8_t nodeAppKey[16] = {0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88};
 ```
 
-If configured for OTAA Activation,
+If configured for ABP Activation,
 
 ```
 uint32_t nodeDevAddr = 0x260116F8;

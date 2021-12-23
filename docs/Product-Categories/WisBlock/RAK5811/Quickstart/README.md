@@ -145,6 +145,15 @@ The procedure in disassembling any type of WisBlock modules is the same.
 If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
 :::
 
+:::warning ⚠️ WARNING
+
+- Battery can cause harm if not handled properly.
+- Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
+- If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause fire.
+- Make sure the battery wires match the polarity on the RAK WisBlock Base Board. Not all batteries have the same wiring.
+- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
+:::
+
 ### Software Configuration and Example
 
 #### Arduino Setup

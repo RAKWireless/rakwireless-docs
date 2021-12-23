@@ -116,8 +116,18 @@ Another important component of RAK1910 is the GPS antenna. You need to ensure th
 If you will connect other modules to the remaining WisBlock Base slots, check the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1910 uses UART communication lines and it can cause possible conflicts, especially to some IO modules.
 :::
 
-
 After setting up, you can now connect the battery and USB cable to start programming your WisBlock Core.
+
+:::warning ⚠️ WARNING
+
+- Batteries can cause harm if not handled properly.
+- Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
+- If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause a fire.
+- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
+- Make sure the battery wires match the polarity on the WisBlock Base board. Not all batteries have the same wiring.
+
+:::
+
 
 ### Software Configuration and Example
 
