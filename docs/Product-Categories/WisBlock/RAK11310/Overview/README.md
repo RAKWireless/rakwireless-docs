@@ -1,7 +1,7 @@
 ---
 rak_img: /assets/images/wisblock/rak11310/overview/RAK11310_home.png
-rak_desc: RAK11310 is a WisBlock Core module for RAK WisBlock. It is powered by an RP2040 ARM microcontroller developed by the Raspberry Pi Foundation, combined with the SX1262 LoRa transceiver from Semtech.
-next: ../Datasheet/
+rak_desc: RAK11310 is a WisBlock Core module for RAK WisBlock. It is powered by an RP2040 ARM Microcontroller developed by the Raspberry Pi Foundation combined with the SX1262 LoRa transceiver from Semtech.
+next: ../Quickstart/
 prev: ../../
 rak_grp: [wisblock, wiscore]
 tags:
@@ -13,6 +13,7 @@ tags:
 
 Thank you for choosing **RAK11310 WisBlock LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
+* [RAK11310 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)

@@ -17,7 +17,8 @@ This guide introduces the RAK4631 WisBlock Core LPWAN Module and how to use it. 
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK4631 WisBlock module, make sure to prepare the necessary items listed below:
+
+Before going through each and every step on using RAK4631 WisBlock Core, make sure to prepare the necessary items listed below:
 
 #### Hardware
 
@@ -25,8 +26,8 @@ Before going through each and every step on using RAK4631 WisBlock module, make 
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
 - Your choice of [WisBlock Modules](https://store.rakwireless.com/pages/wisblock)
 - USB Cable
-- Li-Ion/LiPo battery with JST PHR-2 2&nbsp;mm female connector (optional)
-- Solar charger (optional)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
 
 RAK4631 is also included in various WisBlock kits in RAKwireless store:
 
@@ -45,11 +46,17 @@ You can choose Arduino IDE or Platform IO in coding RAK4631 WisBlock Core.
 - Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 - To add the WisBlock Core boards on your Arduino board, you need to install the RAKwireless Arduino BSP. You can follow this complete guide on [adding the BSP in Arduino IDE](https://docs.rakwireless.com/Knowledge-Hub/Learn/Installation-of-Board-Support-Package-in-Arduino-IDE/). You can also have a look on the RAKwireless Arduino BSP [github repository](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
-In Arduino IDE, once you installed the BSP, the examples for RAK4631 will be automatically included on the list of examples when you select WisBlock Core RAK4631 Board in the Board Manager. 
+In Arduino IDE, once you installed the BSP, some examples for RAK4631 will be automatically included on the list of examples when you select WisBlock Core RAK4631 Board in the Board Manager. 
 
 <b>Programming RAK4631 via Platform IO:</b>
 
 - [Platform IO for RAK4631 complete setup guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/Board-Support-Package-Installation-in-PlatformIO/)
+
+:::tip 📝 NOTE
+Updated and complete WisBlock examples can be found in the [WisBlock Examples](https://github.com/RAKWireless/WisBlock/tree/master/examples) repository which contains source codes that you can copy-paste and upload.
+
+Aside from that, each WisBlock Modules has its own quick start guide to help you in your WisBlock journey.
+:::
 
 ## Product Configuration
 
@@ -87,8 +94,8 @@ For RAK5005-O WisBlock Base with RAK4631 WisBlock Core, the accessible GPIO pins
 
 There are usable LEDs as well that can be controlled by the RAK4631 on the WisBlock Base board:
 
-- `WB_LED1` for LED1   
-- `WB_LED2` for LED2
+- `LED_GREEN` 
+- `LED_BLUE`
 
 UART1 and I2C_1 are also exposed on the header of the WisBlock Base board.
 
@@ -104,6 +111,10 @@ Each WisBlock Modules that will be used with RAK4631 WisBlock Core have a dedica
 
 Listed are the quick start guide of some [WisBlock modules you can buy from our store](https://store.rakwireless.com/pages/wisblock):
 
+:::tip 📝 NOTE
+The listed links are just examples. **All WisBlock Modules** have its own quick start guide that you can use a reference to get started on specific modules. 
+:::
+
 - [RAK1901 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1901/Quickstart/)
 - [RAK1902 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1902/Quickstart/)
 - [RAK1903 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1903/Quickstart/)
@@ -112,7 +123,7 @@ Figure 3 shows an illustration on how you can combine various WisBlock Modules w
 
 <rk-img
   src="/assets/images/wisblock/rak4631/quickstart/exa-weather-assy.png"
-  width="70%"
+  width="50%"
   caption="RAK4631 Connection to WisBlock Base and other WisBlock Modules"
 />
 
@@ -172,7 +183,7 @@ Another important part component of RAK4631 are the antennas.
   caption="BLE Antenna"
 />
 
-You need to ensure that it is properly connected to have a good LoRa and BLE signal. You can damage the RF section of the chip if you leave the IPEX connector without antenna connected.
+You need to ensure that the antenna is properly connected to have a good LoRa signal. Do not power the module without an antenna connected to the IPEX connector to avoid damage to the RF section of the chip.
 
 RAK4631 has a label on its sticker where to connect the antennas, as shown in Figure 10.
 
@@ -238,13 +249,13 @@ RAK4631 WisBlock Core is designed to be interfaced to other WisBlock Modules lik
 
 To quickly build your IoT device with less friction, example codes for RAK4631 to be used on all WisBlock Modules are provided. 
 
-You can access the codes on the [WisBlock Example code repository](https://github.com/RAKWireless/WisBlock/examples). The example codes compatible to RAK4631 are in the folders `RAK4630` and `common` of that example repository. 
+You can access the codes on the [WisBlock Example code repository](https://github.com/RAKWireless/WisBlock/tree/master/examples). The example codes compatible only to RAK4631 are in the folders `RAK4631`. The shared examples of the WisBlock Core is in the `common` folder.
 
 To use these examples, you have two options: Arduino IDE or Platform IO.
 
 ##### RAK4631 on Arduino IDE
 
-To access the example codes of various WisBlock Modules like the RAK1901 and RAK1902, install the [BSP for the Arduino IDE](/Product-Categories/WisBlock/RAK4631/Quickstart/#software) as mentioned in the prerequisite part of the this guide. Getting the code on the example repository is not necessary. As long as you selected RAK4631 in the Arduino IDE Board Manager, you can browse the different examples on the Arduino IDE easily, as shown in Figure 14.
+Some example codes of various WisBlock Modules like the RAK1901 and RAK1902 are available in the Arduino IDE once you install the [BSP for the Arduino IDE](/Product-Categories/WisBlock/RAK4631/Quickstart/#software), as shown in Figure 14. The updated and complete WisBlock examples are still in the [WisBlock Examples](https://github.com/RAKWireless/WisBlock/tree/master/examples).
 
 <rk-img
   src="/assets/images/wisblock/rak4631/quickstart/rak4631_gps.png"
@@ -256,13 +267,17 @@ It is highly recommended to also check the dedicated quick start guide that you 
 
 Listed are the examples where you can check the Software Setup on the quick start guide of the following WisBlock Modules:
 
+:::tip 📝 NOTE
+The listed links are just examples. **All WisBlock Modules** have its own quick start guide that you can use a reference to get started on specific modules. 
+:::
+
 - [RAK1901 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1901/Quickstart/)
 - [RAK1902 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1902/Quickstart/)
 - [RAK1903 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1903/Quickstart/)
 
 ##### RAK4631 on Platform IO
 
-For the Platform IO, get the example codes on the [WisBlock Example code repository](https://github.com/RAKWireless/WisBlock/examples) and add the necessary libraries individually. Then you can compile the example code.
+For the Platform IO, get the example codes on the [WisBlock Example code repository](https://github.com/RAKWireless/WisBlock/tree/master/examples) and add the necessary libraries individually. Then you can compile the example code.
 
 #### Connecting RAK4631 to LoRaWAN
 

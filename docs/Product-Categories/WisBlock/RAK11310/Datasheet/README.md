@@ -1,7 +1,7 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK11310 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisblock/rak11310/overview/RAK11310_home.png
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 tags:
   - datasheet

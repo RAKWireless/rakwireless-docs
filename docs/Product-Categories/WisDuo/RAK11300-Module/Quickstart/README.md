@@ -1190,7 +1190,8 @@ If you want to upgrade the latest version firmware of the module, you can follow
 
 ##### Minimum Hardware and Software Requirements
 
-Refer to the table for the minimum hardware and software required to perform the firmware upgrade via UART2.
+Refer to the table for the minimum hardware and software required to perform the firmware upgrade via USB.
+
 | Hardware/Software | Requirement                                   |
 | ----------------- | --------------------------------------------- |
 | Computer          | A Windows/Ubuntu/Mac computer                 |

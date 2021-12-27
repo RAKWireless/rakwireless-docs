@@ -152,6 +152,11 @@ Once Arduino IDE has been installed successfully, and you've understood the main
 
 3. To add the WisBlock Core on your Arduino Boards list, you need to edit the Additional Board Manager URLs. Click the icon as shown in Figure 10.
 
+:::tip 📝 NOTE
+You need to enable verbose output, as well, by clicking the checkboxes `compilation` and `upload`. This will ensure that you will see the important details like warnings and errors during compilation and uploading. 
+:::
+
+
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Installation-of-Board-Support-Package-in-Arduino-IDE/add_bsp_icon.png"
   width="75%"
@@ -186,7 +191,7 @@ If you are using Linux, you need to install adafruit-nrfutil via pip.
   caption="Opening Boards Manager"
 />
 
-7. Write **RAK** in the search bar as shown in Figure 13. This will show the available RAKwireless WisBlock Core boards that you can add in your Arduino Board list. Select the WisBlock Core that you have and click **Install**.
+7. Write **RAK** in the search bar, as shown in Figure 13. This will show the available RAKwireless WisBlock Core boards that you can add in your Arduino Board list. Choose the WisBlock Core that you have, select the updated version from the dropdown list, and click **Install**.
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Installation-of-Board-Support-Package-in-Arduino-IDE/wisblock_core.png"
@@ -201,13 +206,19 @@ If you are using Linux, you need to install adafruit-nrfutil via pip.
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Installation-of-Board-Support-Package-in-Arduino-IDE/13.rakwireless-nrf-modules.png"
   width="75%"
-  caption="Selecting RAKwireless WisBlock Modules"
+  caption="Selecting RAKwireless WisBlock Core"
 />
 
 
 ### Examples and Tutorials 
 
 After selecting a RAK board, you can see the examples for all WisBlock modules.
+
+:::tip 📝 NOTE
+Updated and complete WisBlock examples can be found in the [WisBlock Examples](https://github.com/RAKWireless/WisBlock/tree/master/examples) repository, which contains source codes that you can copy-paste and upload.
+
+Aside from that, each WisBlock Modules has its own quick start guide to help you in your WisBlock journey.
+:::
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Installation-of-Board-Support-Package-in-Arduino-IDE/14.wisblock-modules.png"
