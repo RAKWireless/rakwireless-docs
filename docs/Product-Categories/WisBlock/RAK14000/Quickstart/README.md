@@ -185,24 +185,41 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Adafruit EPD Library Install"
 />
 
-4. You can access the programming guide for the RAK14000 module by opening the example codes, as shown in **Figure 13**. 
-
-::: tip 📝 NOTE
-
-You will need to change this section of the code depending on the E-Paper you are using.
-
-```c
-// 2.13" EPD with SSD1680, width=250 pixels, heigh=122 pixels
-Adafruit_SSD1680 display(250, 122, EPD_MOSI, EPD_SCK, EPD_DC, EPD_RESET,EPD_CS, SRAM_CS, EPD_MISO, EPD_BUSY);
-```
-
-:::
+4. You can access the programming guide for the RAK14000 module by opening the example codes, as shown in **Figure 13**.
 
 <rk-img
   src="/assets/images/wisblock/rak14000/quickstart/example_rak4631_rak14000.png"
   width="100%"
   caption="Opening RAK14000 example for RAK4631 WisBlock Core"
 />
+
+::: tip 📝 NOTE
+
+You will need to change this section of the code if you are using an E-Paper with different resolution from another vendor.
+
+```c
+typedef struct  DEPG {
+   int  width;
+   int  height;
+   int  position1_x;
+   int  position1_y;  
+   int  position2_x;
+   int  position2_y;  
+   int  position3_x;
+   int  position3_y; 
+   int  position4_x;
+   int  position4_y;   
+} DEPG;
+
+// DEPG  DEPG_HP = {250,122,40,20,40,30,40,50,90,40};  //use this for white-black-red version
+DEPG  DEPG_HP = {212,104,30,15,30,25,30,45,80,30};  //  use this for white-black version
+
+Adafruit_SSD1680 display(DEPG_HP.width, DEPG_HP.height, EPD_MOSI,
+                         EPD_SCK, EPD_DC, EPD_RESET,
+                         EPD_CS, SRAM_CS, EPD_MISO,
+                         EPD_BUSY);
+```
+:::
 
 5. After opening the example code, you can now select the right port and upload the code, as shown in **Figure 14** and **Figure 15**.
 
@@ -348,13 +365,32 @@ If you already installed the [RAKwireless Arduino BSP](/Product-Categories/WisBl
 
 ::: tip 📝 NOTE
 
+There are two versions of RAK14000 module for sale in the RAKwireless Store, the [white-black display panel](https://store.rakwireless.com/products/wisblock-epd-module-rak14000?variant=39534109655238) and [white-black-red display panel](https://store.rakwireless.com/products/wisblock-epd-module-rak14000?variant=39534109688006) version.
+
 You will need to change this section of the code depending on the E-Paper you are using.
 
 ```c
-// 2.13" EPD with SSD1680, width=250 pixels, heigh=122 pixels
-Adafruit_SSD1680 display(250, 122, EPD_MOSI, EPD_SCK, EPD_DC, EPD_RESET,EPD_CS, SRAM_CS, EPD_MISO, EPD_BUSY);
-```
+typedef struct  DEPG {
+   int  width;
+   int  height;
+   int  position1_x;
+   int  position1_y;  
+   int  position2_x;
+   int  position2_y;  
+   int  position3_x;
+   int  position3_y; 
+   int  position4_x;
+   int  position4_y;   
+} DEPG;
 
+// DEPG  DEPG_HP = {250,122,40,20,40,30,40,50,90,40};  // use this for 250 x 122 white-black-red
+DEPG  DEPG_HP = {212,104,30,15,30,25,30,45,80,30};  // use this for 212 x 104 white-black 
+
+Adafruit_SSD1680 display(DEPG_HP.width, DEPG_HP.height, EPD_MOSI,
+                         EPD_SCK, EPD_DC, EPD_RESET,
+                         EPD_CS, SRAM_CS, EPD_MISO,
+                         EPD_BUSY);
+```                        
 :::
 
 <rk-img

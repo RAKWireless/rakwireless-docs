@@ -7,6 +7,9 @@ tags:
   - RAK7289
 prev: ../Overview/
 next: false 
+certifications:
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289C_RAK7289_RoHS_Certification.pdf]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289C_RAK7289_REACH_Certification.pdf]
 ---
 
 
@@ -224,3 +227,8 @@ The firmware sits on OpenWRT, which makes it possible to customize it. There is 
 | RAK7289-XYZ |                  |         √         |               |  √   |   √   |            |
 | RAK7289-XYZ |        √         |                   |               |  √   |   √   |     √      |
 | RAK7289-XYZ |                  |         √         |               |  √   |   √   |     √      |
+
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

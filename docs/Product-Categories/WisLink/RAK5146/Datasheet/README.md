@@ -12,6 +12,8 @@ certifications:
   - [IC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_IC_Certification.pdf]
   - [CE, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_CE_Certification.zip ]
   - [UKCA, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_UKCA_Certification.zip]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_REACH_Certification.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_RoHS_Certification.pdf]
 ---
 
 # RAK5146 WisLink LPWAN Concentrator Datasheet
@@ -141,7 +143,7 @@ The hardware is categorized into seven parts. It discusses the interfacing, pino
 | 30      | SMB_CLK            | I2C_SCL       | IO   | HOST SCL                                    | Connect to GPS module ZOE-M8Q's SCL internally, leave open if not in use |
 | 31      | PETn0              | PI_UART_TX    | DI   | HOST UART_TX                                | Connect to GPS module ZOE-M8Q's UART_RT internally, leave open if not in use |
 | 32      | SMB_DATA           | I2C_SDA       | IO   | HOST SDA                                    | Connect to GPS module ZOE-M8Q's SDA internally, leave open if not in use |
-| 33      | PETp0              | PI_UART_RX    | DO   | HOST UART_RX                                | Connect to GPS module ZOE-M8Q's UART_TX internally, leave open if not in use |
+| 33      | PETp0              | PI_UART_RX    | DO   | HOST UART_RX                                |` Connect to GPS module ZOE-M8Q's UART_TX internally, leave open if not in use |
 | 34      | GND                | GND           |      | Ground                                      |                                                              |
 | 35      | GND                | GND           |      | Ground                                      |                                                              |
 | 36      | USB_D-             | USB_DM        | IO   | USB differential data (-)                   | Require differential impedance of 90Ω                        |

@@ -8,7 +8,9 @@ tags:
   - datasheet
 rak_desc: Covers the comprehensive information of your RAK9168 5V/6A 12V/2.5A PoE Splitter to help you in using it. This information includes technical specifications, characteristics, and requirements.
 rak_img: /assets/images/accessories/rak9168/rak9168.png
-
+certifications:
+  - [CE, https://downloads.rakwireless.com/Accessories/RAK9168/Certification/RAK9168_CE_Certification.zip]
+  - [FCC, https://downloads.rakwireless.com/Accessories/RAK9168/Certification/RAK9168_FCC_Certification.zip]
 ---
 
 # RAK9168 5V/6A 12V/2.5A PoE Splitter Datasheet
@@ -127,3 +129,5 @@ The hardware specification is categorized into three parts. It shows the interfa
 
 
 
+## Certification
+<rk-certifications :params="$page.frontmatter.certifications" />

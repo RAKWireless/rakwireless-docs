@@ -1,5 +1,5 @@
 <template>
-  <div class="row q-py-md justify-start items-center q-gutter-md">
+  <div class="row q-py-md justify-start items-center q-gutter-md row-cert">
     <q-avatar
       v-for="(certi, id) in certifications"
       :key="`certi-${id}`"

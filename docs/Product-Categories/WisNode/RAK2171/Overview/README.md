@@ -29,7 +29,7 @@ RAK2171 supports multiple working modes and notification options. When used with
 - Built-in accelerometer
 - Built-in battery: 400&nbsp;mAh
 - Charger with a magnetic plate
-- Small size: 24x24x18&nbsp;mm
+- Small size: 42x42x18&nbsp;mm
 - Low weight: 25&nbsp;g
 - Operating temperature: -20&nbsp;°C to +60&nbsp;°C
 - IP65 rating

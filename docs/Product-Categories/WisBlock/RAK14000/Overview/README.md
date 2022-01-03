@@ -34,18 +34,26 @@ For All WisBlock Core:
 
 ## Product Description
 
-The **RAK14000** is a WisBlock Display module that allows you to connect an E-Ink Display and Three-Button module. E-Ink Displays, also known as **Electronic Paper**, are display that consumes extremely low power. A perfect alternative to the conventional LCD and OLED displays, especially on power-conscious projects. Also, the E-Ink display contents stays visible for days even without any power supply.
+The **RAK14000 WisBlock E-Ink Display Module** is designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a WisBlock Base module.
+
+The **RAK14000** module provides an interface to connect an E-Ink Display, which is known to be an extremely power-efficient display. The **E-Ink Display** is an Active Matrix Electrophoretic Display (AM EPD) module with 2.9&nbsp;inches active area (212 × 104 pixels for White Black Version and 250 x 122 pixels for the White-Black-Red Version). It also allows you to connect a Three-Button Module, which can be used on a different application. All of this can be controlled through a WisBlock Core. 
+
+:::tip 📝 NOTE:
+There are two versions of RAK14000 module for sale in the RAKwireless Store, the [white-black display panel](https://store.rakwireless.com/products/wisblock-epd-module-rak14000?variant=39534109655238) and [white-black-red display panel](https://store.rakwireless.com/products/wisblock-epd-module-rak14000?variant=39534109688006) version.
+:::
 
 ## Product Features  
 
 * **Module Specification**
     * 3.3&nbsp;V Input Voltage, On/Off Control by the WisBlock Core
-    * Display Resolution: 296 x 128 pixels
     * Ultra-wide viewing angle
     * Ultra-low power consumption
     * Includes a Three-Button module
     * E-Ink Display and Three-Button module are connected over FPC (Flexible PCB)
-  
+* **White-Black**
+    * Display Resolution: 212 x 104 pixels
+* **White-Black-Red**
+    * Display Resolution: 250 x 122 pixels
 * **Size**
     * Display Size: 2.9 inches
 

@@ -17,18 +17,28 @@ tags:
 
 The **RAK14000 WisBlock E-Ink Display Module** is designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a WisBlock Base module.
 
-The **RAK14000** module provides an interface to connect an E-Ink Display, which is known to be an extremely power-efficient display. The **E-Ink Display** is an Active Matrix Electrophoretic Display (AM EPD) module with 2.9&nbsp;inches active area (296×128 pixels). It also allows you to connect a Three-Button Module, which can be used on a different application. All of this can be controlled through a WisBlock Core. 
+The **RAK14000** module provides an interface to connect an E-Ink Display, which is known to be an extremely power-efficient display. The **E-Ink Display** is an Active Matrix Electrophoretic Display (AM EPD) module with 2.9&nbsp;inches active area (212 × 104 pixels for White Black Version and 250 x 122 pixels for the White-Black-Red Version). It also allows you to connect a Three-Button Module, which can be used on a different application. All of this can be controlled through a WisBlock Core. 
+
+:::tip 📝 NOTE:
+There are two versions of RAK14000 module for sale in the RAKwireless Store, the [white-black display panel](https://store.rakwireless.com/products/wisblock-epd-module-rak14000?variant=39534109655238) and [white-black-red display panel](https://store.rakwireless.com/products/wisblock-epd-module-rak14000?variant=39534109688006) version.
+:::
 
 ### Features 
 
 *   Input Voltage: 3.3&nbsp;V
 *   Display Size: 2.9&nbsp;inches
-*   Wide Viewing Angles, with display Resolution of 296 x 128 pixels
+*   Wide Viewing Angles
 *   Pure Reflective Mode. Very viewable displays!  
 *   On-chip display RAM and oscillator
 *   Extremely Low Power Consumption! Perfect for power-conscious applications.  
 *   Comes with a 3-Button Module. Application can be customized.
 *   Uses FPC (Flexible PCB) for its Display and Button modules
+
+* **White-Black**
+    * Display Resolution: 212 x 104 pixels
+    
+* **White-Black-Red**
+    * Display Resolution: 250 x 122 pixels
 
 ## Specifications
 
