@@ -26,7 +26,7 @@ Thank you for choosing **RAK1902 WisBlock Barometer Pressure Sensor** in your aw
 
 **Examples**
 
-For All WisBlock Core:
+For All WisBlock Core Modules:
 * [Sample Code: RAK1902](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1902_Pressure_LPS22HB)
 
 For WisBlock Core RAK4630:

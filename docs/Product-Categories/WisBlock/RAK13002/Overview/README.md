@@ -23,7 +23,7 @@ Thank you for choosing **RAK13002 WisBlock IO Module** in your awesome IoT Proje
 
 **Examples**: 
 
-For All WisBlock Core:
+For All WisBlock Core Modules:
 
 * [Sample Code: WisBlock IO Module](/Product-Categories/WisBlock/RAK13002/Quickstart/#software-configuration-and-example)
 

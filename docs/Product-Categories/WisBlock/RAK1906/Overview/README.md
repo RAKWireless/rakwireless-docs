@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisblock/rak1906/overview/RAK1906_home.png
-rak_desc: RAK1906 is a WisBlock Sensor which extends the WisBlock system with a Bosch BME680 environment sensor. A ready to use SW library and tutorial makes it easy to build up a temperature and humidity data acquisition system.
+rak_desc: RAK1906 is a WisBlock Sensor that extends the WisBlock system with a Bosch BME680 environment sensor. A ready-to-use SW library and tutorial make it easy to build a temperature and humidity data acquisition system.
 rak_grp: [wisblock, wissensor]
 prev: ../../
 next: ../Quickstart/
@@ -8,7 +8,6 @@ tags:
     - wisblock
     - RAK1906
 ---
-
 
 # RAK1906 WisBlock Environmental Sensor
 
@@ -23,10 +22,9 @@ Thank you for choosing **RAK1906 WisBlock Environmental Sensor** in your awesome
 * [24-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 
-
 **Examples**
 
-For All WisBlock Core:
+For All WisBlock Core Modules:
 * [Sample Code: RAK1906](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1906_Environment_BME680)
 
 For WisBlock Core RAK4630:
@@ -40,7 +38,7 @@ For WisBlock Core RAK11300:
 
 ## Product Description
 
-RAK1906 is a WisBlock Sensor which extends the WisBlock system with a Bosch BME680 environment sensor. A ready to use SW library and tutorial makes it easy to build up a temperature and humidity data acquisition system.
+The RAK1906 WisBlock Environmental Sensor module, part of the RAK WisBlock Sensor series, is a 4-in-1 digital sensor board that comprises gas, humidity pressure, and temperature sensor, based on the Bosch® BME680 module. The RAK1906 is ideal for applications such as indoor air quality, home automation, and building IoT solutions. 
 
 ## Product Features
 

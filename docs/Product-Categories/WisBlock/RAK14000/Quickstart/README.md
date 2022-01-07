@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials in installing and deploying your RAK14000. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK14000. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
 rak_img: /assets/images/wisblock/rak14000/overview/RAK14000_buy.png
 tags:
   - quickstart
@@ -19,7 +19,6 @@ Before going through each and every step on using RAK14000 WisBlock E-Ink Displa
 
 #### Hardware 
 
-
 - [RAK14000 WisBlock E-Ink Display](https://store.rakwireless.com/products/wisblock-epd-module-rak14000)
 - [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
@@ -38,12 +37,12 @@ Before going through each and every step on using RAK14000 WisBlock E-Ink Displa
 
 ### Hardware Setup
 
-The RAK14000 module is part of the WisBlock Display category and connects to the baseboard through the IO slot. It has an E-Paper and three pushbutton interface that is connected via an FPC connector, as shown in Figure 1. 
+The RAK14000 module is part of the WisBlock Display category and connects to the baseboard through the IO slot. It has an E-Paper and a three-pushbutton interface that is connected via an FPC connector, as shown in Figure 1. 
 
 <rk-img
   src="/assets/images/wisblock/rak14000/quickstart/rak14000-parts.png"
   width="40%"
-  caption="RAK14000 E-Paper and Three Pushbutton Interface"
+  caption="RAK14000 E-Paper and Three-Pushbutton Interface"
 />
 
 #### Assembling and Disassembling of WisBlock Modules
@@ -60,7 +59,7 @@ As shown in **Figure 2**, the location for the IO slot is properly marked by sil
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure to disassemble any type of WisBlock modules is the same. 
 
 1. First, remove the screws.  
 
@@ -86,13 +85,13 @@ The procedure in disassembling any type of WisBlock modules is the same.
   caption="Applying even forces on the proper location of a WisBlock module"
 />
 
-##### Connecting the E-Paper and Three Pushbutton Switch
+##### Connecting the E-Paper and the Three-Pushbutton Switch
 
 ::: tip 📝 NOTE
-Some illustrations are specific to the FPC connector of the Three Pushbutton Switch, but it is also applicable to the E-Paper.
+Some illustrations are specific to the FPC connector of the Three-Pushbutton Switch, but it is also applicable to the E-Paper.
 :::
 
-1. The FPC connectors for the E-Paper and Pushbutton are commonly set to close by default, as shown in **Figure 6**. 
+1. The FPC connectors for the E-Paper and Pushbuttons are commonly set to close by default, as shown in **Figure 6**. 
 
 <rk-img
   src="/assets/images/wisblock/rak14000/quickstart/rak14000-fpc-close.svg"
@@ -100,7 +99,7 @@ Some illustrations are specific to the FPC connector of the Three Pushbutton Swi
   caption="RAK14000 FPC Connector Closed"
 />
 
-2. You need to open the lock of the FPC connector by carefully pulling it up. Then insert fully and carefully the FPC cable of the E-Paper and the Three Pushbutton Switch with the copper trace facing down to the connector, as shown in **Figure 7**.
+2. You need to open the lock of the FPC connector by carefully pulling it up. Then insert fully and carefully the FPC cable of the E-Paper and the Three-Pushbutton Switch with the copper trace facing down to the connector, as shown in **Figure 7**.
 
 ::: tip 📝 NOTE
 The E-Paper can be connected on either of the two FPC connectors. These are J2 and J3 in the RAK14000 board. This gives you flexibility on the orientation of the E-Paper display.
@@ -120,7 +119,7 @@ The E-Paper can be connected on either of the two FPC connectors. These are J2 a
   caption="RAK14000 FPC Correct Connection"
 />
 
-If the copper trace is on top, as shown in **Figure 9**, that is a **wrong connection**, and the E-Paper and Three Push button Switch will not work.
+If the copper trace is on top, as shown in **Figure 9**, that is a **wrong connection**, and the E-Paper and Three-Pushbutton Switch will not work.
 
 <rk-img
   src="/assets/images/wisblock/rak14000/quickstart/rak14000-copper-top.png"
@@ -129,21 +128,20 @@ If the copper trace is on top, as shown in **Figure 9**, that is a **wrong conne
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
+If you will connect other modules to remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. For instance, if you are planning to use it in conjunction with the [EEPROM module](https://store.rakwireless.com/products/wisblock-eeprom-module-rak15000?utm_source=WisBlockRAK15000&utm_medium=Document&utm_campaign=BuyFromStore), since the EPD uses all IO pins, you would have to forego the Three-Pushbutton Switch (uses IO 3, 5 and 6) and put the EEPROM module on slot D (has IO 5 & 6).
 :::
 
 After all this setup, you can now connect the battery and USB cable to start programming your WisBlock Core.
 
 ### Software Configuration and Example
 
-In this example, you will be using E-Paper and Three Pushbutton Switch to demonstrate functionality.
+In this example, you will be using E-Paper and the Three-Pushbutton Switch to demonstrate functionality.
 
 These are the quick links that go directly to the software guide for the specific WisBlock Core module you use:
 
 - [RAK14000 in RAK4631 WisBlock Core Guide](#rak14000-in-rak4631-wisblock-core-guide)
 - [RAK14000 in RAK11200 WisBlock Core Guide](#rak14000-in-rak11200-wisblock-core-guide)
 - [RAK14000 in RAK11310 WisBlock Core Guide](#rak14000-in-rak11310-wisblock-core-guide)
-
 
 #### RAK14000 in RAK4631 WisBlock Core Guide
 
@@ -235,7 +233,7 @@ Adafruit_SSD1680 display(DEPG_HP.width, DEPG_HP.height, EPD_MOSI,
   caption="Uploading the RAK14000 example code"
 />
 
-6. When you successfully uploaded the example sketch, you should be able to see the image output on the E-Paper. You can also see the corresponding button pressed in the Serial Monitor.
+6. Once you have successfully uploaded the example sketch, you should be able to see the image output on the E-Paper. You can also see the corresponding button pressed in the Serial Monitor.
 
 #### RAK14000 in RAK11200 WisBlock Core Guide
 
@@ -296,7 +294,6 @@ Adafruit_SSD1680 display(250, 122, EPD_MOSI,EPD_SCK, EPD_DC, EPD_RESET,EPD_CS, S
 
 :::
 
-
 5. After opening the example code, you can now select the right port and upload the code, as shown in **Figure 20** and **Figure 22**.
 
 <rk-img
@@ -319,7 +316,7 @@ Before uploading your sketch, short circuit **BOOT0** and **GND** pins and press
 />
 
 
-6. When you successfully uploaded the example sketch, you should be able to see the image output on the E-Paper. You can also see the corresponding button pressed in the Serial Monitor.
+6. Once you have successfully uploaded the example sketch, you should be able to see the image output on the E-Paper. You can also see the corresponding button pressed in the Serial Monitor.
 
 #### RAK14000 in RAK11310 WisBlock Core Guide
 
@@ -413,5 +410,4 @@ Adafruit_SSD1680 display(DEPG_HP.width, DEPG_HP.height, EPD_MOSI,
   caption="Uploading the RAK14000 example code"
 />
 
-6. When you successfully uploaded the example sketch, you should be able to see the image output on the E-Paper. You can also see the corresponding button pressed in the Serial Monitor.
-
+6. Once you have successfully uploaded the example sketch, you should be able to see the image output on the E-Paper. You can also see the corresponding button pressed in the Serial Monitor. 

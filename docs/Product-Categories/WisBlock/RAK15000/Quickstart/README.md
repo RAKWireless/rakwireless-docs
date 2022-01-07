@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials in installing and deploying your RAK15000. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK15000. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
 rak_img: /assets/images/wisblock/rak15000/overview/RAK15000_home.png
 tags:
   - quickstart
@@ -35,7 +35,7 @@ Before going through each and every step on using the RAK15000 WisBlock module, 
 
 ### Hardware Setup
 
-WisBlock can integrate this module which makes it easy for you to save big data on such applications that you need to access frequently. The RAK15000 EEPROM Memory module has 1,000,000 write cycles, so it can be used to store constantly changing data.
+WisBlock can integrate this module which makes it easy for you to save a lot of data, making it readily available to applications that need to access it frequently. The RAK15000 EEPROM Memory module has 1,000,000 write cycles, so it can be used to store constantly changing data.
 
 For more information about RAK15000, please refer to the [Datasheet](../Datasheet/).
 
@@ -51,7 +51,7 @@ The RAK15000 module can be connected to any slot of WisBlock Base to communicate
 
 ##### Assembling
 
-As shown in **Figure 2**, the location for Slot A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the module.
+As shown in **Figure 2**, the location for Slot A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more M1.2 x 3&nbsp;mm screws, depending on the module.
 
 <rk-img
   src="/assets/images/wisblock/rak15000/quickstart/wisblock-sensor-silkscreen.png"
@@ -88,14 +88,14 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK15000 uses I2C communication lines, and it can cause possible conflict especially on some IO modules.
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK15000 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. For instance, if you are planning to use it in conjunction with the [EPD module](https://store.rakwireless.com/products/wisblock-epd-module-rak14000?utm_source=WisBlockRAK14000&utm_medium=Document&utm_campaign=BuyFromStore), which uses all IO pins, you would have to forego the 3-key keypad (uses IO 3, 5 and 6) and put the EEPROM module on slot D (has IO 5 & 6).
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
 ### Software Configuration and Example
 
-The RAK15000 EEPROM has an I2C-Compatible (Two-Wire) Serial Interface. Furthermore, the EEPROM is organized in so-called pages. One page holds 256-byte and there are 1024 pages. Having insight into how the memory cells are organized, is important for write and erase operations.
+The RAK15000 EEPROM has an I2C-Compatible (Two-Wire) Serial Interface. Furthermore, the EEPROM is organized in so-called pages. One page holds 256-byte and there are 1024 pages. Having insight into how the memory cells are organized is important for write and erase operations.
 
 
 These are the quick links that go directly to the software guide for the specific WisBlock Core module you use:
@@ -129,7 +129,7 @@ You can open the example code for RAK4631 WisBlock Core, as shown in **Figure 7*
 
 3. Install **Adafruit FRAM_I2C** Library.
 
-Once the example code is open, install the latest version of [Adafruit FRAM_I2C](https://github.com/adafruit/Adafruit_FRAM_I2C) library by clicking the link highlighted in yellow, as shown in **Figure 8**.
+Once the example code is opened, install the latest version of [Adafruit FRAM_I2C](https://github.com/adafruit/Adafruit_FRAM_I2C) library by clicking the link highlighted in yellow, as shown in **Figure 8**.
 
 <rk-img
   src="/assets/images/wisblock/rak15000/quickstart/rak4631_lib.png"

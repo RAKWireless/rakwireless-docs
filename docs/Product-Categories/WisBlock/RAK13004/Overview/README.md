@@ -23,7 +23,7 @@ Thank you for choosing **RAK13004 WisBlock PWM Expander Module** in your awesome
 
 **Examples**: 
 
-For All WisBlock Core:
+For All WisBlock Core Modules:
 
 * [Sample Code: WisBlock PWM Expander Module](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK13004_PWM_Expander_PCA9685)
 

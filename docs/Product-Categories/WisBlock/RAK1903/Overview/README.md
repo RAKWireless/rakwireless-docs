@@ -26,7 +26,7 @@ Thank you for choosing **RAK1903 WisBlock Ambient Light Sensor** in your awesome
 
 **Examples**
 
-For All WisBlock Core:
+For All WisBlock Core Modules:
 * [Sample Code: RAK1903](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1903_Optical_OPT3001)
 
 For WisBlock Core RAK4630:

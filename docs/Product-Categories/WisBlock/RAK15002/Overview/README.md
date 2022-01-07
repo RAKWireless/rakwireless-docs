@@ -23,7 +23,7 @@ Thank you for choosing **RAK15002 WisBlock Micro SD Card Module** in your awesom
 
 **Examples**: 
 
-For All WisBlock Core:
+For All WisBlock Core Modules:
 
 * [Sample Code: WisBlock Micro SD Card Module in RAK4631](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/IO/RAK15002_SD_Card)
 * [Sample Code: WisBlock Micro SD Card Module in RAK11200](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/IO/RAK15002_SD_Card)

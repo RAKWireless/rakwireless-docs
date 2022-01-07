@@ -24,7 +24,7 @@ Thank you for choosing **RAK1901 WisBlock Temperature and Humidity Sensor** in y
 
 **Examples**
 
-For All WisBlock Core:
+For All WisBlock Core Modules:
 * [Sample Code: RAK1901](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1901_Temperature_Humidity_SHTC3)
 
 For WisBlock Core RAK4630:

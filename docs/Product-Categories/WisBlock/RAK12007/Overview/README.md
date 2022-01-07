@@ -26,7 +26,7 @@ Thank you for choosing **RAK12007 WisBlock Ultrasonic Module** in your awesome I
 
 **Examples**
 
-For All WisBlock Core:
+For All WisBlock Core Modules:
 * [Sample Code: RAK12007 OLED Show Distance](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12007_OLED_Show_Distance/)
 
 ## Product Description

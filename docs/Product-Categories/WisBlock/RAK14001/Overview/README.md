@@ -25,7 +25,7 @@ Thank you for choosing **RAK14001 WisBlock RGB LED Module** in your awesome IoT 
 
 **Examples**
 
-For All WisBlock Core:
+For All WisBlock Core Modules:
 * [Sample Code: RAK14001 Gradual Dimming](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK14001_NCP5623_GradualDimming/RAK14001_NCP5623_GradualDimming.ino)
 * [Sample Code: RAK14001 RGB Cycle](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK14001_NCP5623_RGBCycle/RAK14001_NCP5623_RGBCycle.ino)
 

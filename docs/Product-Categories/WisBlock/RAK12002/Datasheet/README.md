@@ -1,5 +1,5 @@
 ---
-rak_desc: Covers the comprehensive information of your RAK12002 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Provides comprehensive information about your RAK12002 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisblock/rak12002/overview/rak12002_home.png
 tags:
   - datasheet
@@ -15,18 +15,18 @@ next: false
 
 ### Description
 
-The RAK12002 is a Real-Time Clock module, part of the RAK Wireless WisBlock Series, which was designed to provide real-time clock capabilities on your WisBlock projects. The RTC chip is based on RV-3028-C7 from Micro Crystal which can be interfaced via I2C.
+The RAK12002 is a Real-Time Clock module, part of the RAK Wireless WisBlock Series, designed to provide real-time clock capabilities to your WisBlock projects. The RTC chip is based on the RV-3028-C7 from Micro Crystal and uses the I2C interface.
 
 ### Features
 
 - Built-in 32.768&nbsp;kHz crystal oscillator
-- Counters for seconds, minutes, hours, date, month, year, and weekday
-- Automatic leap year correction
-- 3.3&nbsp;V Power supply
+- Counters for seconds, minutes, hours, date, month, year, and day of the week.
+- Automatic leap-year correction
+- 3.3&nbsp;V power supply
 - I2C Interface
 - Programmable Clock output
-- Extreme low current consumption 40&nbsp;nA
-- Supper capacitor backup power supply
+- Extreme low-current consumption 40&nbsp;nA
+- Super capacitor backup power supply
 - Small size: 10&nbsp;mm x 10&nbsp;mm
 
 ## Specifications
@@ -35,7 +35,7 @@ The RAK12002 is a Real-Time Clock module, part of the RAK Wireless WisBlock Seri
 
 #### Mounting 
 
-The RAK12002 RTC module can be mounted to the slot A, B, C, and D of the WisBlock Base board. Figure 1 shows the mounting mechanism of the RAK12002 on a WisBlock Base board.
+The RAK12002 RTC module can be mounted on slot A, B, C, or D of the WisBlock Base board. Figure 1 shows the mounting mechanism of the RAK12002 on a WisBlock Base board.
 
 <rk-img
   src="/assets/images/wisblock/rak12002/datasheet/mounting.png"
@@ -45,7 +45,7 @@ The RAK12002 RTC module can be mounted to the slot A, B, C, and D of the WisBloc
 
 ### Hardware
 
-The hardware specification is categorized into five parts. It shows the chipset of the module and discusses the pinouts of the module and its corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12002 WisBlock RTC Module.
+The hardware specification is categorized into five parts. It shows the chipset of the module and discusses the pinouts of the module and its corresponding functions and diagrams. It also covers the electrical and mechanical parameters, which include the tabular data of the functionalities and standard values of the RAK12002 WisBlock RTC Module.
 
 #### Chipset
 | Vendor        | Part number |
@@ -54,7 +54,7 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 #### Pin Definition
 
-The RAK12002 WisBlock RTC module comprises a standard WisConnector. The WisConnector allows the RAK12002 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in Figure 2. 
+The RAK12002 WisBlock RTC module includes a standard WisConnector. The WisConnector allows the RAK12002 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in Figure 2.
 
 :::tip 📝 NOTE:
 **I2C** related pins,**INT**, **CLKOUT**, **3V3**, and **GND** are connected to WisConnector.

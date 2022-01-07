@@ -24,7 +24,7 @@ Thank you for choosing **RAK1920 WisBlock Sensor Adapter Module** in your awesom
 
 **Examples**
 
-For All WisBlock Core:
+For All WisBlock Core Modules:
 * [Sample Code: RAK1920 Grove Digital](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1920_Grove_PIR_AS312) 
 * [Sample Code: RAK1920 Grove I2C](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1920_Grove_Color_TCS3472) 
 * [Sample Code: RAK1920 MikroBus](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1920_MikroBUS_Temperature_TMP102)

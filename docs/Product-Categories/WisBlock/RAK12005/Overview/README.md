@@ -25,7 +25,7 @@ Thank you for choosing **RAK12005 WisBlock Rain Sensor Module** in your awesome 
 
 **Examples**
 
-For All WisBlock Core:
+For All WisBlock Core Modules:
 * [Sample Code: RAK12005](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK12005_WaterDetector/RAK12005_WaterDetector.ino)
 
 ## Product Description

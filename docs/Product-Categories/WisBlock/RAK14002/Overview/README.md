@@ -26,7 +26,7 @@ Thank you for choosing **RAK14002 WisBlock Touch Sensor Module** in your awesome
 
 **Examples**
 
-For All WisBlock Core:
+For All WisBlock Core Modules:
 * [Sample Code: RAK14002](https://github.com/RAKWireless/RAK14002-CAP1293-Library/tree/main/examples)
 
 ## Product Description

@@ -24,7 +24,7 @@ Thank you for choosing **RAK14000 WisBlock E-Ink Display Module** in your awesom
 
 **Examples**: 
 
-For All WisBlock Core:
+For All WisBlock Core Modules:
 
 * [Sample Code: Epaper Monochrome](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK14000-Epaper-Monochrome)
 

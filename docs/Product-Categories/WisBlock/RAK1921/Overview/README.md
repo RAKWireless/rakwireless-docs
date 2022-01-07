@@ -25,7 +25,7 @@ Thank you for choosing **RAK1921 WisBlock OLED Display** in your awesome IoT Pro
 
 **Examples**
 
-For All WisBlock Core:
+For All WisBlock Core Modules:
 * [Sample Code: RAK1921](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK1921_OLED_SSD1306) 
 
 ## Product Description

@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisblock/rak12002/overview/rak12002_home.png
-rak_desc: The RAK12002 is a Real-Time Clock module, part of the RAK Wireless WisBlock Series, which was designed to be real-time clock, the RTC chip is RV-3028-C7 from Micro Crystal, I2C interface
+rak_desc: The RAK12002 is a Real-Time Clock module, part of the RAK Wireless WisBlock Series. The RTC chip is an RV-3028-C7 from Micro Crystal and uses the I2C interface.
 rak_grp: [wisblock, wisextra]
 prev: ../../
 next: ../Quickstart/
@@ -11,7 +11,7 @@ tags:
 
 # RAK12002 WisBlock RTC Module
 
-Thank you for choosing **RAK12002 WisBlock RTC module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK12002 WisBlock RTC module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [RAK12002 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -23,26 +23,25 @@ Thank you for choosing **RAK12002 WisBlock RTC module** in your awesome IoT Proj
 
 **Examples**: 
 
-For All WisBlock Core:
+For All WisBlock Core Modules:
 
 * [Sample Code: WisBlock RTC module](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12002_RTC_DateTime_RV-3028-C7)
 
 
 ## Product Description
 
-The RAK12002 is a Real-Time Clock module, part of the RAKwireless WisBlock Series, which was designed to provide real-time clock capabilities on your WisBlock projects. The RTC chip is based on RV-3028-C7 from Micro Crystal which can be interfaced via I2C.
-
+The RAK12002 is a Real-Time Clock module, part of the RAKwireless WisBlock Series, designed to provide real-time clock capabilities to your WisBlock projects. The RTC chip is based on the RV-3028-C7 from Micro Crystal and uses the I2C interface.
 
 ## Product Features
 
 - Built-in 32.768&nbsp;kHz crystal oscillator
-- Counters for seconds, minutes, hours, date, month, year, and weekday
-- Automatic leap year correction
+- Counters for seconds, minutes, hours, date, month, year, and day of the week.
+- Automatic leap-year correction
 - 3.3&nbsp;V Power supply
 - I2C Interface
 - Programmable Clock output
-- Extreme low current consumption 40&nbsp;nA
-- Supper capacitor backup power supply
+- Extreme low-current consumption 40&nbsp;nA
+- Super capacitor backup power supply
 - small size:10&nbsp;mm x 10&nbsp;mm
 
 ## Prerequisites

@@ -25,7 +25,7 @@ Thank you for choosing **RAK12015 WisBlock Vibration Detection Module** in your 
 
 <!--**Examples**
 
-For All WisBlock Core:
+For All WisBlock Core Modules:
 * [Sample Code: RAK12015](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK12005_WaterDetector/RAK12005_WaterDetector.ino) -->
 
 ## Product Description
