@@ -96,7 +96,7 @@ author:
 <b>Example:</b>
 * Now, let's try to compile an example of WisBlock using PlatformIO. We use the LoRaWAN OTAA example in this document:
 
-[https://github.com/RAKWireless/WisBlock/tree/master/examples/communications/LoRa/LoRaWAN/LoRaWAN_OTAA/](https://github.com/RAKWireless/WisBlock/tree/master/examples/communications/LoRa/LoRaWAN/LoRaWAN_OTAA/)
+[https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/communications/LoRa/LoRaWAN/LoRaWAN_OTAA_ABP](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/communications/LoRa/LoRaWAN/LoRaWAN_OTAA_ABP)
 
 1. Just copy the source code of the .ino file into the main.cpp of the PlatformIO project we just created:
 
