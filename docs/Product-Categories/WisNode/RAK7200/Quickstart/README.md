@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials in installing and deploying your RAK7200. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK7200. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
 rak_img: /assets/images/wisnode/rak7200/quickstart/overview/RAK7200_home.png
 prev: ../Overview/
 next: ../Datasheet/

@@ -12,9 +12,9 @@ tags:
 # RAK7268 WisGate Edge Lite 2
 
 
-Thank you for choosing **RAK7268 WisGate Edge Lite 2** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK7268 WisGate Edge Lite 2** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
-* [Quickstart](../Quickstart/)
+* [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * [Supported LoRa Network Servers](../Supported-LoRa-Network-Servers/)
 * [Use the MQTT Broker Like a Pro + Examples](/Knowledge-Hub/Learn/Use-the-MQTT-Broker-Like-a-Pro/)

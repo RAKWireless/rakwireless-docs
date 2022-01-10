@@ -10,7 +10,7 @@ tags:
 ---
 
 # RAK8212 WisTrio iTracker Pro
-Thank you for choosing **RAK8212 WisTrio iTracker Pro** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK8212 WisTrio iTracker Pro** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

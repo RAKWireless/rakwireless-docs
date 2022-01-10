@@ -10,7 +10,7 @@ tags:
 ---
 
 # RAK7204 WisNode Sense Home
-Thank you for choosing **RAK7204 WisNode Sense Home** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK7204 WisNode Sense Home** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

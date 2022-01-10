@@ -1,5 +1,5 @@
 ---
-rak_desc: Covers the comprehensive information of your RAK14003 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Provides comprehensive information about your RAK14003 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisblock/rak14003/overview/RAK14003_home.png
 tags:
   - datasheet

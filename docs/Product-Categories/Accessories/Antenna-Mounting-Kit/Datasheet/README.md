@@ -4,7 +4,7 @@ next: false
 tags:
   - Antenna Mounting Kit
   - datasheet
-rak_desc: Covers the comprehensive information of your Antenna Mounting Kit to help you in using it. This information includes technical specifications, characteristics, and requirements.
+rak_desc: Provides comprehensive information about your Antenna Mounting Kit to help you use it. This information includes technical specifications, characteristics, and requirements.
 rak_img: /assets/images/accessories/antenna-mounting-kit/overview.png
 
 ---

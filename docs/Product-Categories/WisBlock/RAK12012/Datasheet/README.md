@@ -1,5 +1,5 @@
 ---
-rak_desc: Covers the comprehensive information of your RAK12012 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Provides comprehensive information about your RAK12012 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisblock/rak12012/overview/RAK12012_home.png
 tags:
   - datasheet

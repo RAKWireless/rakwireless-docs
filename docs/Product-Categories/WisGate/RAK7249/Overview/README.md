@@ -12,7 +12,7 @@ tags:
 
 # RAK7249 WisGate Edge Max
 
-Thank you for choosing **RAK7249 WisGate Edge Max** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK7249 WisGate Edge Max** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

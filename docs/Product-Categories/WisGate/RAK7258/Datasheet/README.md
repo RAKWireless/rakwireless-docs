@@ -1,5 +1,5 @@
 ---
-rak_desc: Covers the comprehensive information of your RAK7258 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Provides comprehensive information about your RAK7258 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisgate/rak7258/quickstart/1.main/RAK7258_home.png
 tags:
   - datasheet

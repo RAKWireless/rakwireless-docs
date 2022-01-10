@@ -1,5 +1,5 @@
 ---
-rak_desc: Covers the comprehensive information of your RAK4200 Module to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Provides comprehensive information about your RAK4200 Module to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisduo/rak4200-module/overview/RAK4200_Module_home.png
 tags:
   - datasheet

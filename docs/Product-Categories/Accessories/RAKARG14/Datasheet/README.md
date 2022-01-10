@@ -4,7 +4,7 @@ next: false
 tags:
   - RAKARG14
   - datasheet
-rak_desc: Covers the comprehensive information of your RAKARG14 902-928MHz 5.8dBi Fiberglass Antenna to help you in using it. This information includes technical specifications and characteristics.
+rak_desc: Provides comprehensive information about your RAKARG14 902-928MHz 5.8dBi Fiberglass Antenna to help you use it. This information includes technical specifications and characteristics.
 rak_img: /assets/images/accessories/rakarg14/antenna-overview.png
 
 ---

@@ -4,7 +4,7 @@ next: false
 tags: 
     - RAKARG17
     - datasheet
-rak_desc:  Covers the comprehensive information of your 860-930MHz 5.9dBi LoRaWAN Antenna Black to help you in using it. This information includes technical specifications and characteristics.
+rak_desc: Provides comprehensive information about your 860-930MHz 5.9dBi LoRaWAN Antenna Black to help you use it. This information includes technical specifications and characteristics.
 rak_img: /assets/images/accessories/antenna-black/1.png
 
 ---

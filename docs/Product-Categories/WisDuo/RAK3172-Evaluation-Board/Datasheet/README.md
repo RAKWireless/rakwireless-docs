@@ -1,5 +1,5 @@
 ---
-rak_desc: Covers the comprehensive information of your RAK3172 Evaluation Board to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device's components.
+rak_desc: Provides comprehensive information about your RAK3172 Evaluation Board to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device's components.
 prev: ../AT-Command-Manual/
 tags:
   - datasheet

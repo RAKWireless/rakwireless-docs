@@ -11,7 +11,7 @@ tags:
 
 # 860-930MHz 5.8dBi LoRaWAN Antenna Black
 
-Thank you for choosing **860-930MHz 5.8dBi LoRaWAN Antenna Black** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **860-930MHz 5.8dBi LoRaWAN Antenna Black** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 

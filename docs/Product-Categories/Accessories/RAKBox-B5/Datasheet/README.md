@@ -4,7 +4,7 @@ next: ../Installation/
 tags:
   - RAKBox-B5
   - datasheet
-rak_desc:  Covers the comprehensive information of your WisBlock RAKBox-B5 Enclosure to help you in using it. This information includes technical specifications and characteristics.
+rak_desc: Provides comprehensive information about your WisBlock RAKBox-B5 Enclosure to help you use it. This information includes technical specifications and characteristics.
 rak_img: /assets/images/accessories/rakbox-b5/overview/overview.png
 
 ---

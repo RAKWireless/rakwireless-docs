@@ -1,5 +1,5 @@
 ---
-rak_desc: This contains instructions and tutorials on installing and deploying your RAK12015. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK12015. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
 rak_img: /assets/images/wisblock/rak12015/overview/RAK12015_home.png
 tags:
   - quickstart

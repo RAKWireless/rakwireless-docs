@@ -11,7 +11,7 @@ tags:
 ---
 
 # RAK7244C WisGate Developer D4+
-Thank you for choosing **RAK7244C WisGate Developer D4+ Gateway** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK7244C WisGate Developer D4+ Gateway** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../../RAK7244/Datasheet/)

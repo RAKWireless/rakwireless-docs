@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials in installing and deploying your RAK Hotspot Miner. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK Hotspot Miner. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
 rak_img: /assets/images/wisgate/rak-hotspot-miner/overview/RAK-Hotspot-Miner_home.png
 next: ../Backup/
 prev: ../Overview/
@@ -18,6 +18,10 @@ tags:
 1. **RAK Hotspot Miner**
 2. 32GB microSD Card (included) + Card Reader
 3. USB Type-C Power Adapter (included)
+
+:::warning ⚠️ WARNING
+The SIM card slot of the cellular versions is not hot-swappable. Make sure the gateway is switched off before inserting or ejecting the SIM card.
+:::
 
 ### What's Included in the Package?
 

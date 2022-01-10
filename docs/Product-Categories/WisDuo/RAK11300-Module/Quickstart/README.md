@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials in deploying your RAK11300. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module. 
+rak_desc: Contains instructions and tutorials for deploying your RAK11300. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module. 
 rak_img: /assets/images/wisduo/rak11300-module/overview/RAK11300_Module_home.png
 prev: ../Overview/
 next: ../AT-Command-Manual/

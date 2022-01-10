@@ -4,7 +4,7 @@ next: false
 tags: 
   - Antenna Feeder Line
   - datasheet
-rak_desc: Covers the comprehensive information of your Antenna Feeder Line to help you in using it. This information includes technical specifications, characteristics, and requirements.
+rak_desc: Provides comprehensive information about your Antenna Feeder Line to help you use it. This information includes technical specifications, characteristics, and requirements.
 rak_img: /assets/images/accessories/antenna-feeder-line/datasheet/cable.png
 
 ---

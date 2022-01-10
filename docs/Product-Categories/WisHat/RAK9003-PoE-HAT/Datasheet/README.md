@@ -5,7 +5,7 @@ tags:
   - RAK9003 PoE Pi HAT
 prev: ../Overview/
 next: false
-rak_desc: Covers the comprehensive information of your RAK9003 PoE Pi HAT to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Provides comprehensive information about your RAK9003 PoE Pi HAT to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wishat/rak9003-poe-hat/datasheet/RAK9003_home.png
 
 ---
@@ -24,13 +24,13 @@ rak_img: /assets/images/wishat/rak9003-poe-hat/datasheet/RAK9003_home.png
 
 ### Description
 
-The PoE Pi HAT is an add-on board with Raspberry PI form factor which can be plugged into a Raspberry Pi directly. The PoE Pi HAT makes it possible to power the Raspberry Pi via a standard CAT 5 Ethernet cable.
+The PoE Pi HAT is an add-on board with Raspberry PI form factor, compatible with RPi 3B+ and RPi4 which can be plugged into a Raspberry Pi directly. The PoE Pi HAT makes it possible to power the Raspberry Pi via a standard CAT 5 Ethernet cable.
 
 The PoE Pi HAT is designed to be compatible with the IEEE 802.3af/at Power-over-Ethernet (PoE), it is compatible with both PoE Mode A and Mode B. The PoE Pi HAT signature and control circuit provides the PoE AT compatibility signature and power classification required by the Power Sourcing Equipment (PSE) before applying up to 30W power to the port. The PoE Pi HAT is compatible with Class 0 to Class 4 equipment. The high efficiency DC/DC converter operates over a wide input voltage range and provides a regulated low ripple and low noise output. The DC/DC converter also has built-in overload and short-circuit output protection.
 
 ### Key Features
 
-- Raspberry Pi form factor with a 40pin compatible header (**Pi3 B, Pi4** compatible)
+- Raspberry Pi form factor with a 40pin compatible header (**Pi3 B+, Pi4** compatible)
 - Conforming to the IEEE 802.3af/at (mode A & mode B), **25W Max Load**.
 - Contains physical layer power negotiation circuitry, compatible with **Class 0 to Class 4 equipment**.
 - Wide operating voltage: **42V ~ 57V**.

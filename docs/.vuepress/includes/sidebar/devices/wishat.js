@@ -18,9 +18,9 @@ module.exports = {
     }
   ],
 
-  '/Product-Categories/WisHat/RAK2287-Pi-HAT/': [{
+  '/Product-Categories/WisHat/RAK2287-RAK5146-Pi-HAT/': [{
       title: 'Product Overview',
-      path: '/Product-Categories/WisHat/RAK2287-Pi-HAT/Overview/',
+      path: '/Product-Categories/WisHat/RAK2287-RAK5146-Pi-HAT/Overview/',
       collapsable: false,
       nested: true,
       download: true,
@@ -28,7 +28,7 @@ module.exports = {
     },
     {
       title: 'Datasheet',
-      path: '/Product-Categories/WisHat/RAK2287-Pi-HAT/Datasheet/',
+      path: '/Product-Categories/WisHat/RAK2287-RAK5146-Pi-HAT/Datasheet/',
       collapsable: false,
       nested: true,
       download: true,

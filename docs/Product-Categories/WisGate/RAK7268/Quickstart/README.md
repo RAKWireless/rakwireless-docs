@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials in installing and deploying your RAK7268. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK7268. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
 rak_img: /assets/images/wisgate/rak7268/datasheet/RAK7268.png
 prev: ../Overview/
 next: ../Supported-LoRa-Network-Servers/
@@ -18,6 +18,10 @@ tags:
 1. **RAK7268/RAK7268C WisGate Edge Lite 2**
 2. Ethernet Cable (RJ-45 Port) – for Ethernet connection
 3. A Windows/MacOS/Linux computer
+
+:::warning ⚠️ WARNING
+The SIM card slot of the cellular versions is not hot-swappable. Make sure the gateway is switched off before inserting or ejecting the SIM card.
+:::
 
 ## Product Configuration
 

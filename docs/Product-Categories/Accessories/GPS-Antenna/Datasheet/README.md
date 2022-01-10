@@ -5,7 +5,7 @@ tags:
   - GPS Antenna
   - RAKAGPS1
   - datasheet
-rak_desc:  Covers the comprehensive information of your RAKAGPS1 GPS Antenna to help you in using it. This information includes technical specifications, characteristics, and requirements.
+rak_desc: Provides comprehensive information about your RAKAGPS1 GPS Antenna to help you use it. This information includes technical specifications, characteristics, and requirements.
 rak_img: /assets/images/accessories/gps-antenna/gps-antenna.png
 
 ---

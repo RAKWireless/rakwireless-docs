@@ -11,7 +11,7 @@ tags:
 
 # RAK2245 Stamp WisLink LPWAN Concentrator
 
-Thank you for choosing **RAK2245 Stamp WisLink LPWAN Concentrator** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK2245 Stamp WisLink LPWAN Concentrator** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

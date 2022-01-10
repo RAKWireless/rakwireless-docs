@@ -1,5 +1,5 @@
 ---
-rak_desc: Covers the comprehensive information of your RAK612 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Provides comprehensive information about your RAK612 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisnode/rak612/quickstart/main/RAK612_home.png
 prev: ../AT-Command-Manual/
 next: false

@@ -4,7 +4,7 @@ next: false
 tags:
   - RAKARG14
   - datasheet
-rak_desc:  Covers the comprehensive information of your RAKARG13 863-870MHz 5.8dBi Fiberglass Antenna to help you in using it. This information includes technical specifications and characteristics.
+rak_desc: Provides comprehensive information about your RAKARG13 863-870MHz 5.8dBi Fiberglass Antenna to help you use it. This information includes technical specifications and characteristics.
 rak_img: /assets/images/accessories/rakarg13/antenna-overview.png
 
 ---

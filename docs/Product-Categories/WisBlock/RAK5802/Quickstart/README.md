@@ -6,7 +6,7 @@ tags:
 prev: ../Overview/ 
 next: ../Datasheet/
 rak_img: /assets/images/wisblock/rak5802/overview/RAK5802_home.png
-rak_desc: Contains instructions and tutorials in installing and deploying your RAK5802. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK5802. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
 ---
 
 # RAK5802 Quick Start Guide

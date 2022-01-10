@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisnode/rak7204/quickstart/1.overview/RAK7204_home.png
-rak_desc: Contains instructions and tutorials in installing and deploying your RAK7204 WisNode Sense Home. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK7204 WisNode Sense Home. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
 prev: ../Overview/
 next: ../Datasheet/
 tags:

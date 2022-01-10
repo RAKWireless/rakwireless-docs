@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials in installing and deploying your RAK7243C. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK7243C. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
 rak_img: /assets/images/wisgate/rak7243c/quickstart/1.product-overview/1.index/RAK7243C_home.png
 prev: ../Overview/
 next: ../Datasheet/
@@ -26,6 +26,10 @@ tags:
 3. 5&nbsp;V at least 3&nbsp;A Micro USB Power Supply
 4. A Windows/Mac OS/Linux Computer
 5. Latest [RAK7243C Firmware](/Product-Categories/WisGate/RAK7243C/Datasheet/#firmware)
+
+:::warning ⚠️ WARNING
+The SIM card slot of the cellular versions is not hot-swappable. Make sure the gateway is switched off before inserting or ejecting the SIM card.
+:::
 
 ### What's Included in the Package?
 

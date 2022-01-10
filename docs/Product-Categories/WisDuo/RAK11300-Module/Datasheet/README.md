@@ -1,5 +1,5 @@
 ---
-rak_desc: Covers the comprehensive information of your RAK11300 Module to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Provides comprehensive information about your RAK11300 Module to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisduo/rak11300-module/overview/RAK11300_Module_home.png
 prev: ../AT-Command-Manual/
 tags:

@@ -1,5 +1,5 @@
 ---
-rak_desc: Covers the comprehensive information of your RAK3272S Breakout Board to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Provides comprehensive information about your RAK3272S Breakout Board to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisduo/rak3272s-breakout-board/overview/RAK3272S_Breakout_home.png
 prev: ../AT-Command-Manual/
 next: false

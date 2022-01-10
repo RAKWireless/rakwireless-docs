@@ -1,5 +1,5 @@
 ---
-rak_desc: Covers the comprehensive information of your RAK19008 to help you in using it. This information includes technical specifications, characteristics.
+rak_desc: Provides comprehensive information about your RAK19008 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisblock/rak19008/overview/RAK19008.png
 prev: ../Overview/
 next: false

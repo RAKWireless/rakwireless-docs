@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials in installing and deploying your RAK7249. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK7249. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
 rak_img: /assets/images/wisgate/rak7249/quickstart/1.main/RAK7249_home.png
 prev: ../Overview/
 next: ../Supported-LoRa-Network-Servers/
@@ -25,6 +25,10 @@ tags:
 2. A Windows/Mac OS/Linux Computer
 
 <!-- <rk-btn :params="$page.frontmatter.params.btn1" /> -->
+
+:::warning ⚠️ WARNING
+The SIM card slot of the cellular versions is not hot-swappable. Make sure the gateway is switched off before inserting or ejecting the SIM card.
+:::
 
 ### What's Included in the Package?
 

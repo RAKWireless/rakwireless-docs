@@ -5,7 +5,7 @@ tags:
   - RAK815
   - quickstart
   - wistrio
-rak_desc: Contains instructions and tutorials in installing and deploying your RAK815 WisTrio LPWAN Tracker. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LPWAN Tracker.
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK815 WisTrio LPWAN Tracker. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LPWAN Tracker.
 rak_img: /assets/images/wistrio/rak815/quickstart/1main/RAK815_home.png
 
 ---

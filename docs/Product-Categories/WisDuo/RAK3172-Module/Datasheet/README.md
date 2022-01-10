@@ -1,5 +1,5 @@
 ---
-rak_desc: Covers the comprehensive information of your RAK3172 Module to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Provides comprehensive information about your RAK3172 Module to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisduo/rak3172-module/overview/RAK3172_Module_home.png
 prev: ../Low-Level-Development/
 tags:
@@ -52,6 +52,10 @@ You can configure the mode and operation of the module using AT commands via a U
 - **Supply Voltage**: 2.0&nbsp;V ~ 3.6&nbsp;V
 - **Temperature range**: -40°&nbsp;C ~ 85°&nbsp;C
 
+:::tip 📝 NOTE:
+
+There are two variants available for the RAK3172 Module: (1) with the CE & UKCA Certification Mark and (2) with IC & CE Certification Mark.
+:::
 ## Specifications
 
 This section covers the hardware and software specifications of RAK3172. Also, it includes the block diagram and the update firmware link of the RAK3172 WisDuo module.

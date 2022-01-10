@@ -4,7 +4,7 @@ next: false
 tags:
   - RAKARG14
   - datasheet
-rak_desc: Covers the comprehensive information of your RAKARJ14 900-930MHz 8dBi Fiberglass Antenna to help you in using it. This information includes technical specifications and characteristics.
+rak_desc: Provides comprehensive information about your RAKARJ14 900-930MHz 8dBi Fiberglass Antenna to help you use it. This information includes technical specifications and characteristics.
 rak_img: /assets/images/accessories/rakarj14/White 915MHz Antenna Features.png
 
 ---

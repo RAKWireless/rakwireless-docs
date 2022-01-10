@@ -11,7 +11,7 @@ tags:
 
 # WisBlock RAKBox-B4 Enclosure
 
-Thank you for choosing **RAKBox-B4** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAKBox-B4** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 - [Datasheet](../Datasheet/)
 - [Installation Guide](../Installation/)

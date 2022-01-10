@@ -1,5 +1,5 @@
 ---
-rak_desc: Provides comprehensive information about your RAK1910 to help you get acquainted with it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device's components.
+rak_desc: Provides comprehensive information about your RAK1910 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device's components.
 rak_img: /assets/images/wisblock/rak1910/overview/RAK1910_home.png
 tags:
   - datasheet

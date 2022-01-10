@@ -4,7 +4,7 @@ next: false
 tags:
   - LA-GT2700 DN1-5
   - datasheet
-rak_desc:  Covers the comprehensive information of your LoRa Wi-Fi LTE SPD to help you in using it. This information includes technical specifications, characteristics, and requirements.
+rak_desc: Provides comprehensive information about your LoRa Wi-Fi LTE SPD to help you use it. This information includes technical specifications, characteristics, and requirements.
 rak_img: /assets/images/accessories/lora-wifi-lte-spd/lightning_arrestor.png
 
 ---

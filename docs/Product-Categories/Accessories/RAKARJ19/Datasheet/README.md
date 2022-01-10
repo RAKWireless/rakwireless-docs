@@ -4,7 +4,7 @@ next: False
 tags: 
   - RAKARJ18
   - datasheet
-rak_desc: Covers the comprehensive information of your RAKARJ19 868MHz Gray Antenna to help you in using it. This information includes technical specifications and characteristics.
+rak_desc: Provides comprehensive information about your RAKARJ19 868MHz Gray Antenna to help you use it. This information includes technical specifications and characteristics.
 rak_img: /assets/images/accessories/rakarj19/KRAKBJ2701C00M---868MHz_02.png
 
 ---

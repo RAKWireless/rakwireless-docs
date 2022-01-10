@@ -4,7 +4,7 @@ next: false
 tags:
   - RAKARG15
   - datasheet
-rak_desc:  Covers the comprehensive information of your RAKARG15 900-930MHz 8dBi Fiberglass Antenna to help you in using it. This information includes technical specifications and characteristics.
+rak_desc: Provides comprehensive information about your RAKARG15 900-930MHz 8dBi Fiberglass Antenna to help you use it. This information includes technical specifications and characteristics.
 rak_img: /assets/images/accessories/rakarg15/antenna-overview.png
 
 ---

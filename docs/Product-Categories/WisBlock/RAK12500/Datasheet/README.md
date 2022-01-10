@@ -1,5 +1,5 @@
 ---
-rak_desc: Covers the comprehensive information of your RAK12500 to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Provides comprehensive information about your RAK12500 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisblock/rak12500/overview/RAK12500_home.png
 prev: ../Quickstart/
 next: false

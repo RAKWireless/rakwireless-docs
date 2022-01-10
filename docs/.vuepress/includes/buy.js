@@ -126,8 +126,8 @@ export default {
     img: '/assets/images/wishat/rak2247-pi-hat/overview/RAK2247_PiHat_buy.png',
     store: 'https://store.rakwireless.com/products/rak2247-pi-hat?utm_source=RAK2247PiHAT&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-  '/Product-Categories/WisHat/RAK2287-Pi-HAT/': {
-    label: 'RAK2287 Pi HAT',
+  '/Product-Categories/WisHat/RAK2287-RAK5146-Pi-HAT/': {
+    label: 'RAK2287/RAK5146 Pi HAT',
     img: '/assets/images/wishat/rak2287-pi-hat/overview/RAK2287_buy.png',
     store: 'https://store.rakwireless.com/products/rak2287-pi-hat?utm_source=RAK2287PiHAT&utm_medium=Document&utm_campaign=BuyFromStore'
   },

@@ -4,7 +4,7 @@ next: false
 tags:
   - Antenna Mounting Kit
   - datasheet
-rak_desc: Covers the comprehensive information of your Angle Mounting Plate to help you in using it. This information includes technical specifications, characteristics, and requirements.
+rak_desc: Provides comprehensive information about your Angle Mounting Plate to help you use it. This information includes technical specifications, characteristics, and requirements.
 rak_img: /assets/images/accessories/angle-mounting-plate/1.jpg
 
 ---

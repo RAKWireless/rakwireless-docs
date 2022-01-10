@@ -5,7 +5,7 @@ tags:
   - RAK7240
   - wisgate
   - quickstart
-rak_desc: Contains instructions and tutorials in installing and deploying your RAK7240. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK7240. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
 rak_img: /assets/images/wisgate/rak7240/quickstart/RAK7240_home.png
 
 ---
@@ -23,6 +23,10 @@ rak_img: /assets/images/wisgate/rak7240/quickstart/RAK7240_home.png
 
 1. **RAK7240 WisGate Edge Prime**
 2. A Windows/Mac OS/Linux Computer
+
+:::warning ⚠️ WARNING
+The SIM card slot of the cellular versions is not hot-swappable. Make sure the gateway is switched off before inserting or ejecting the SIM card.
+:::
 
 ### What's Included in the Package?
 

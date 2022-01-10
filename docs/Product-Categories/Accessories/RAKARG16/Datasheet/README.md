@@ -4,7 +4,7 @@ next: false
 tags:
   - Fiberglass Antenna
   - RAKARG16
-rak_desc: Covers the comprehensive information of your 858-878MHz 8dBi Fiberglass Antenna to help you in using it. This information includes technical specifications, characteristics, and requirements.
+rak_desc: Provides comprehensive information about your 858-878MHz 8dBi Fiberglass Antenna to help you use it. This information includes technical specifications, characteristics, and requirements.
 rak_img: /assets/images/accessories/905000-905001/antenna_view.png
 ---
 

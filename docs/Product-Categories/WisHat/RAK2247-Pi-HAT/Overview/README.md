@@ -11,7 +11,7 @@ tags:
 ---
 
 # RAK2247 Pi HAT 
-Thank you for choosing **RAK2247 Pi HAT** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK2247 Pi HAT** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 * [RAK2247 Pi HAT 3D Model](https://downloads.rakwireless.com/3D_File/WisHat/PWB-RAK2247_PI_HAT.stp)

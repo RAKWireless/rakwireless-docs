@@ -11,7 +11,7 @@ tags:
 
 # RAK2171 WisNode TrackIt 
 
-Thank you for choosing **RAK2171 WisNode TrackIt** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK2171 WisNode TrackIt** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

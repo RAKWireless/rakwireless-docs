@@ -4,7 +4,7 @@ next: false
 tags: 
   - RAK9720
   - datasheet
-rak_desc:  Covers the comprehensive information of your A-Fix Bracket Kit to help you in using it. This information includes technical specifications, characteristics, and typical use case scenarios.
+rak_desc: Provides comprehensive information about your A-Fix Bracket Kit to help you use it. This information includes technical specifications, characteristics, and typical use case scenarios.
 rak_img: /assets/images/accessories/rak9720/datasheet/rak9720.png
 
 ---

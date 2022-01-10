@@ -4,7 +4,7 @@ next: false
 tags:
   - RAKARP01
   - datasheet
-rak_desc:  Covers the comprehensive information of your 860-930MHz 12dBi Directional Antenna to help you in using it. This information includes technical specifications and characteristics.
+rak_desc: Provides comprehensive information about your 860-930MHz 12dBi Directional Antenna to help you use it. This information includes technical specifications and characteristics.
 rak_img: /assets/images/accessories/rakarp01/overview/unipolarization-plate.png
 
 ---

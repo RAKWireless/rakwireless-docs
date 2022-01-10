@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials in installing and deploying your RAK7258. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK7258. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
 rak_img: /assets/images/wisgate/rak7258/quickstart/1.main/RAK7258_home.png
 prev: ../Overview/
 next: ../Supported-LoRa-Network-Servers/
@@ -25,6 +25,9 @@ tags:
 2. Ethernet Cable (RJ-45 Port)
 3. A Windows/Mac OS/Linux Computer
 
+:::warning ⚠️ WARNING
+The SIM card slot of the cellular versions is not hot-swappable. Make sure the gateway is switched off before inserting or ejecting the SIM card.
+:::
 
 ### What's Included in the Package?
 

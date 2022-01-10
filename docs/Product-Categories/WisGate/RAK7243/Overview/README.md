@@ -11,7 +11,7 @@ tags:
 ---
 
 # RAK7243 WisGate Developer D3
-Thank you for choosing **RAK7243 WisGate Developer D3** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK7243 WisGate Developer D3** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Source Code Repository](https://github.com/RAKWireless/rak_common_for_gateway)

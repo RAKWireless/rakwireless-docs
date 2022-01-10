@@ -4,7 +4,7 @@ next: False
 tags: 
   - RAKARJ17
   - datasheet
-rak_desc: Covers the comprehensive information of your RAKARJ17 868MHz Black Blade Antenna to help you in using it. This information includes technical specifications and characteristics.
+rak_desc: Provides comprehensive information about your RAKARJ17 868MHz Black Blade Antenna to help you use it. This information includes technical specifications and characteristics.
 rak_img: /assets/images/accessories/rakarj17/Black 868MHz Antenna Features.png
 
 ---

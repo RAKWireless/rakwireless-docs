@@ -6,7 +6,7 @@ tags:
   - power supply
   - accessories
   - datasheet
-rak_desc: Covers the comprehensive information of your RAK9168 5V/6A 12V/2.5A PoE Splitter to help you in using it. This information includes technical specifications, characteristics, and requirements.
+rak_desc: Provides comprehensive information about your RAK9168 5V/6A 12V/2.5A PoE Splitter to help you use it. This information includes technical specifications, characteristics, and requirements.
 rak_img: /assets/images/accessories/rak9168/rak9168.png
 certifications:
   - [CE, https://downloads.rakwireless.com/Accessories/RAK9168/Certification/RAK9168_CE_Certification.zip]
@@ -106,14 +106,16 @@ The hardware specification is categorized into three parts. It shows the interfa
 | Input Voltage      | DC 42-57&nbsp;V |
 | Output Voltage     | DC 5&nbsp;V     |
 | Max Output Current | 6&nbsp;A        |
+| Connector Type     | USB Type-C      |
 
 <b> For 12&nbsp;V Version </b>
 
-| Parameter          | Value           |
-| ------------------ | --------------- |
-| Input Voltage      | DC 42-57&nbsp;V |
-| Output Voltage     | DC 12&nbsp;V    |
-| Max Output Current | 2.5&nbsp;A      |
+| Parameter          | Value                    |
+| ------------------ | ------------------------ |
+| Input Voltage      | DC 42-57&nbsp;V          |
+| Output Voltage     | DC 12&nbsp;V             |
+| Max Output Current | 2.5&nbsp;A               |
+| Connector Type     | Barrel Jack 2.1&nbsp;mmm |
 
 #### Environmental Characteristics
 

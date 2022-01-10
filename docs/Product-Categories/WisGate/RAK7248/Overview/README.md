@@ -12,7 +12,7 @@ tags:
 
 # RAK7248 WisGate Developer D4H
 
-Thank you for choosing **RAK7248 WisGate Developer D4H** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK7248 WisGate Developer D4H** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Supported LoRa Network Servers](../Supported-LoRa-Network-Servers/)
 * [AWS Greengrass V2](../AWS-Greengrass/)

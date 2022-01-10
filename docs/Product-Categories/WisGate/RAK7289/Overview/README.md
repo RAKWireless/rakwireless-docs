@@ -13,7 +13,7 @@ tags:
 # RAK7289 WisGate Edge Pro
 
 
-Thank you for choosing **RAK7289 WisGate Edge Pro** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK7289 WisGate Edge Pro** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 * [Use the MQTT Broker Like a Pro + Examples](/Knowledge-Hub/Learn/Use-the-MQTT-Broker-Like-a-Pro/)

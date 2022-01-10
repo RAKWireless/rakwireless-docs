@@ -12,7 +12,7 @@ tags:
 # Antenna Clip
 
 
-Thank you for choosing **Antenna Clip** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **Antenna Clip** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 

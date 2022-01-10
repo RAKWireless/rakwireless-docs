@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials in installing and deploying your RAK7271-7371. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK7271-7371. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
 rak_img: /assets/images/wisgate/rak7271-7371/overview/rak7271-7371.png
 prev: ../Overview/
 next: ../Datasheet/
@@ -20,6 +20,10 @@ Before going through each and every step in the installation guide of the RAK727
 
 1. WisGate Developer Base RAK7271 or RAK7371
 2. A Host - Linux running PC/laptop or Raspberry Pi
+
+:::warning ⚠️ WARNING
+The SIM card slot of the cellular versions is not hot-swappable. Make sure the gateway is switched off before inserting or ejecting the SIM card.
+:::
 
 ### What’s Included in the Package?
 

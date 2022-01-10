@@ -10,7 +10,7 @@ tags:
 ---
 
 # RAK7205/RAK5205 WisTrio LPWAN Tracker
-Thank you for choosing **RAK7205/RAK5205 WisTrio LPWAN Tracker** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK7205/RAK5205 WisTrio LPWAN Tracker** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

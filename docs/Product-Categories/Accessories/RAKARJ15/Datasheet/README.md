@@ -4,7 +4,7 @@ next: false
 tags:
   - RAKARG15
   - datasheet
-rak_desc: Covers the comprehensive information of your RAKARJ15 868MHz White Blade Antenna to help you in using it. This information includes technical specifications and characteristics.
+rak_desc: Provides comprehensive information about your RAKARJ15 868MHz White Blade Antenna to help you use it. This information includes technical specifications and characteristics.
 rak_img: /assets/images/accessories/rakarj15/White 868MHz Antenna Features.png
 
 ---

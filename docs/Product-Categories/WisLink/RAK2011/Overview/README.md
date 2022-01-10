@@ -3,7 +3,7 @@ rak_img: /assets/images/wislink-lte/rak2011/overview/rak2011-buy.png
 rak_desc: RAK2011 WisLink Cellular BG96 Arduino Shield is a compact cellular communications module that supports Low-Power Wide-Area (LPWA) technology for networking Internet-of-Things (IoT) devices. It can simultaneously support 2G, 4G/LTE, NB-IoT, and GPS, with an additional feature of Voice-over-LTE (VoLTE) for high definition (HD) and uninterrupted voice calls.
 rak_grp: [wislink, cellular]
 prev: ../../
-next: ../Quickstart/
+next: ../Datasheet/
 tags:
   - RAK2011
   - wislink
@@ -11,7 +11,7 @@ tags:
 
 # RAK2011 WisLink Cellular BG96 Arduino Shield
 
-Thank you for choosing **RAK2011 WisLink Cellular BG96 Arduino Shield** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK2011 WisLink Cellular BG96 Arduino Shield** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 

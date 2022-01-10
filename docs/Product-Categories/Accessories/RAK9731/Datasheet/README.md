@@ -4,7 +4,7 @@ next: false
 tags: 
     - RAK9731
     - datasheet
-rak_desc:  Covers the comprehensive information of your RAK9731 Pulsar Cable LMR400 to help you in using it. This information includes technical specifications and characteristics.
+rak_desc: Provides comprehensive information about your RAK9731 Pulsar Cable LMR400 to help you use it. This information includes technical specifications and characteristics.
 rak_img: /assets/images/accessories/rak9731/overview/rak9731.png
 
 ---

@@ -10,7 +10,7 @@ tags:
 ---
 
 # RAK831 WisLink LPWAN Concentrator
-Thank you for choosing **RAK831 WisLink LPWAN Concentrator** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK831 WisLink LPWAN Concentrator** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 * [Source Code Repository](https://github.com/RAKWireless/rak_common_for_gateway)
