@@ -4,7 +4,7 @@ next: false
 tags:
   - R012-4800500
   - datasheet
-rak_desc:  Covers the comprehensive information of your 100M PoE Injector to help you in using it. This information includes technical specifications, characteristics, and requirements.
+rak_desc: Provides comprehensive information about your 100M PoE Injector to help you use it. This information includes technical specifications, characteristics, and requirements.
 rak_img: /assets/images/accessories/r012-4800500/poe-injector-illustration.png
 
 ---
