@@ -233,9 +233,9 @@ RAK3172 uses UART2 serial pins to upload the latest firmware.
 
 #### Firmware / OS
 
-| Model     | Version     | Source                                                              |
-| --------- | ----------- | ------------------------------------------------------------------- |
-| RAK3172 | V1.0.2 | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/RAK3172_Latest_Firmware.zip) |
+| Model   | Version | Source                                                                                          |
+| ------- | ------- | ----------------------------------------------------------------------------------------------- |
+| RAK3172 | V1.0.3  | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/RAK3172_Latest_Firmware.zip) |
 
 ## Certification
 

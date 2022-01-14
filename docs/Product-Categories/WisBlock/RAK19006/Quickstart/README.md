@@ -114,6 +114,14 @@ If you will connect other modules to the remaining WisBlock Base slots, check on
 
 Now, you can connect the battery and USB cable to start programming your WisBlock Core.
 
+:::warning ⚠️ WARNING
+- Batteries can cause harm if not handled properly.
+- Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
+- If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause a fire.
+- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
+- Make sure the battery wires are matching the polarity on the WisBlock Base board. Not all batteries have the same wiring.
+:::
+
 ### Software Configuration and Example
 
 In the following example, you will be using the RAK19006 for the battery charging and will show the power voltage on the [RAK1921 WisBlock OLED Display](https://store.rakwireless.com/products/rak1921-oled-display-panel?_pos=1&_sid=202e07a15&_ss=r).

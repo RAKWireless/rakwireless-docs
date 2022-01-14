@@ -175,6 +175,14 @@ Four-wire transmitters have four wires powered by the source voltage in them. Th
 
 Now, you can connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
+:::warning ⚠️ WARNING
+- Batteries can cause harm if not handled properly.
+- Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
+- If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause a fire.
+- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
+- Make sure the battery wires are matching the polarity on the WisBlock Base board. Not all batteries have the same wiring.
+:::
+
 ### Software Configuration and Example
 
 The RAK5801 module includes a 12&nbsp;V voltage source which is controlled by the WisBlock Core module via IO1 (WB_IO1) of the WisBlock Base. This GPIO must be set to **HIGH** before sampling. The 12&nbsp;V voltage source is designed to provide power supply to 4-20&nbsp;mA sensors. The majority of 4-20&nbsp;mA sensor works in the 9-24&nbsp;V range. Before connecting a sensor to the RAK5801 module, you must be sure that the sensor can safely operate at 12&nbsp;V.
