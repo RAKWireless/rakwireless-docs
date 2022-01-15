@@ -26,6 +26,24 @@ module.exports = {
     }
   ],
 
+  '/Product-Categories/WisBlock/RAK12023/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisBlock/RAK12023/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisBlock/RAK12023/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+],
+
 
   '/Product-Categories/WisBlock/RAK1921/': [{
       title: 'Product Overview',
@@ -669,6 +687,24 @@ module.exports = {
   sidebarDepth: 4
 }
 ],
+
+'/Product-Categories/WisBlock/RAK12016/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK12016/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK12016/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
     
 '/Product-Categories/WisBlock/RAK11200/': [{
   title: 'Product Overview',
@@ -819,6 +855,24 @@ module.exports = {
 {
   title: 'Datasheet',
   path: '/Product-Categories/WisBlock/RAK13005/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/RAK13007/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK13007/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK13007/Datasheet/',
   collapsable: false,
   nested: true,
   download: true,
@@ -1097,9 +1151,35 @@ module.exports = {
 }
 ],
 
+'/Product-Categories/WisBlock/RAK13300/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK13300/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK13300/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
 '/Product-Categories/WisBlock/RAK16001/': [{
   title: 'Product Overview',
   path: '/Product-Categories/WisBlock/RAK16001/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisBlock/RAK16001/Quickstart/',
   collapsable: false,
   nested: true,
   download: true,
@@ -1140,6 +1220,34 @@ module.exports = {
   sidebarDepth: 4
 }
 ],
+
+//
+'/Product-Categories/WisBlock/RAK12017/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK12017/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisBlock/RAK12017/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK12017/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+//
  
 '/Product-Categories/WisBlock/RAK12005/': [{
   title: 'Product Overview',
@@ -1204,6 +1312,24 @@ module.exports = {
 {
   title: 'Datasheet',
   path: '/Product-Categories/WisBlock/RAK12030/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/RAK12035/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK12035/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK12035/Datasheet/',
   collapsable: false,
   nested: true,
   download: true,
@@ -1341,6 +1467,34 @@ module.exports = {
 }
 ],
 
+
+'/Product-Categories/WisBlock/RAK14006/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK14006/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisBlock/RAK14006/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK14006/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+
 '/Product-Categories/WisBlock/RAK12011/': [{
   title: 'Product Overview',
   path: '/Product-Categories/WisBlock/RAK12011/Overview/',
@@ -1386,6 +1540,242 @@ module.exports = {
 {
   title: 'Datasheet',
   path: '/Product-Categories/WisBlock/RAK12009/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/RAK12018/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK12018/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK12018/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/RAK12019/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK12019/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK12019/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+
+'/Product-Categories/WisBlock/RAK13600/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK13600/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK13600/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+'/Product-Categories/WisBlock/RAK14009/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK14009/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK14009/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+'/Product-Categories/WisBlock/RAK14010/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK14010/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK14010/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+'/Product-Categories/WisBlock/RAK14011/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK14011/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK14011/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+
+'/Product-Categories/WisBlock/RAK14004/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK14004/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisBlock/RAK14004/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK14004/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+'/Product-Categories/WisBlock/RAK12014/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK12014/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK12014/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/RAK12013/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK12013/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK12013/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/RAK10700/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK10700/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisBlock/RAK10700/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'AT Command Manual',
+  path: '/Product-Categories/WisBlock/RAK10700/AT-Command-Manual/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK10700/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/RAK10700/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK10700/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisBlock/RAK10700/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'AT Command Manual',
+  path: '/Product-Categories/WisBlock/RAK10700/AT-Command-Manual/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK10700/Datasheet/',
   collapsable: false,
   nested: true,
   download: true,

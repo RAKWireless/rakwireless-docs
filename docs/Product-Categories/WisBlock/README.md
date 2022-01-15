@@ -143,11 +143,11 @@ WisBlock Motor Modules adds the capability to control electric motors for your r
 <rk-products :tags="['wisblock', 'wismotor']" />
 
 
-<!-- ## WisBlock HMI
-<rk-head img="/assets/rakwireless/product-categories/WisBlock-HMI.svg">
+## WisBlock Solutions
+<rk-head img="/assets/rakwireless/product-categories/WisBlock-Solutions.svg">
 
-WisBlock HMI adds human input options to WisBlock. Touch pads, rotary encoders and similar modules enable human control over your solution.
+WisBlock Solutions are ready-to-use products built with WisBlock modules. They come in an enclosure and include firmware already. The firmware is open source and available on our Github WisBlock Repo.
 
 </rk-head>
 
-<rk-products :tags="['wisblock', 'wishmi']" /> -->
+<rk-products :tags="['wisblock', 'wissol']" />

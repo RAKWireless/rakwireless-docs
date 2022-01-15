@@ -319,6 +319,29 @@ export default {
     img: '/assets/images/wisblock/rak1920/overview/RAK1920_buy.png',
     store: 'https://store.rakwireless.com/products/rak1920-sensor-adapter-module?utm_source=RAK1920&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisBlock/RAK12023/': {
+    label: 'RAK12023 WisBlock Soil Moisture Sensor Connector Module',
+    img: '/assets/images/wisblock/rak12023/overview/RAK12023_buy.png',
+    store: 'https://store.rakwireless.com/products/rak12023-rak12035-wisblock-soil-moisture-sensor'
+  },
+
+  '/Product-Categories/WisBlock/RAK13007/': {
+    label: 'RAK13007 WisBlock Relay Module',
+    img: '/assets/images/wisblock/rak13007/overview/RAK13007_buy.png',
+    store: 'https://store.rakwireless.com/products/rak13007-wisblock-relay'
+  },
+
+  '/Product-Categories/WisBlock/RAK12035/': {
+    label: 'RAK12035 WisBlock Soil Sensor Module',
+    img: '/assets/images/wisblock/rak12035/overview/RAK12035_buy.png',
+    store: 'https://store.rakwireless.com/products/rak12023-rak12035-wisblock-soil-moisture-sensor'
+  },
+
+  '/Product-Categories/WisBlock/RAK12013/': {
+    label: 'RAK12013 WisBlock Radar Sensor Module',
+    img: '/assets/images/wisblock/rak12013/overview/RAK12013_buy.png',
+    store: 'https://store.rakwireless.com/products/rak12013-wisblock-radar-sensor'
+  },
 
   '/Product-Categories/WisBlock/RAK1921/': {
     label: 'RAK1921 WisBlock Display Module',
@@ -454,6 +477,11 @@ export default {
     img: '/assets/images/wisblock/rak14000/overview/RAK14000_buy.png',
     store: 'https://store.rakwireless.com/products/wisblock-epd-module-rak14000?utm_source=WisBlockRAK14000&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisBlock/RAK14006/': {
+    label: 'RAK14000 WisBlock Rotary Encoder Module',
+    img: '/assets/images/wisblock/rak14006/overview/RAK14006_buy.png',
+    store: 'https://store.rakwireless.com/products/rak14006-wisblock-rotary-input'
+  },
   '/Product-Categories/WisBlock/RAK12500/': {
     label: 'RAK12500 WisBlock GNSS Location Module',
     img: '/assets/images/wisblock/rak12500/overview/RAK12500_buy.png',
@@ -481,6 +509,12 @@ export default {
     store: 'https://store.rakwireless.com/products/infrared-temperature-sensor-rak12003?utm_source=WisBlockRAK12003&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
+  '/Product-Categories/WisBlock/RAK12016/': {
+    label: 'RAK12016 WisBlock Flex Sensor Module',
+    img: '/assets/images/wisblock/rak12016/overview/RAK12016_buy.png',
+    store: 'https://store.rakwireless.com/products/rak12016-wisblock-flex-sensor'
+  },
+
   '/Product-Categories/WisBlock/RAK11200/': {
     label: 'RAK11200 WisBlock WiFi Module',
     img: '/assets/images/wisblock/rak11200/overview/RAK11200_buy.png',
@@ -504,7 +538,13 @@ export default {
     img: '/assets/images/wisblock/rak13005/overview/RAK13005_buy.png',
     store: 'https://store.rakwireless.com/products/lin-bus-module-rak13005'
   },
-    
+
+  '/Product-Categories/WisBlock/RAK12017/': {
+    label: 'RAK12017 WisBlock IR Detection Module',
+    img: '/assets/images/wisblock/rak12017/overview/RAK12017_buy.png',
+    store: 'https://store.rakwireless.com/products/rak12017-wisblock-ir-sensor'
+  },
+ 
   '/Product-Categories/WisBlock/RAK12007/': {
     label: 'RAK12007 WisBlock Ultrasonic Sensor',
     img: '/assets/images/wisblock/rak12007/overview/RAK12007_buy.png',
@@ -540,11 +580,23 @@ export default {
     img: '/assets/images/wisblock/rak12002/overview/rak12002_buy.png',
     store: 'https://store.rakwireless.com/products/rtc-module-rak12002'
   },
+
+  '/Product-Categories/WisBlock/RAK12019/': {
+    label: 'RAK12019 WisBlock UV Sensor',
+    img: '/assets/images/wisblock/rak12019/overview/RAK12019_buy.png',
+    store: 'https://store.rakwireless.com/products/rak12019-wisblock-uv-sensor'
+  },
     
   '/Product-Categories/WisBlock/RAK13002/': {
     label: 'RAK13002 WisBlock IO Module',
     img: '/assets/images/wisblock/rak13002/overview/rak13002_buy.png',
     store: 'https://store.rakwireless.com/products/adapter-module-rak13002'
+  },
+
+  '/Product-Categories/WisBlock/RAK13300/': {
+    label: 'RAK13300 WisBlock LPWAN Wireless Module',
+    img: '/assets/images/wisblock/rak13300/overview/RAK13300_buy.png',
+    store: 'https://store.rakwireless.com/products/rak13300-wisblock-lpwan'
   },
     
   '/Product-Categories/WisBlock/RAK19005/': {
@@ -588,6 +640,12 @@ export default {
     img: '/assets/images/wisblock/rak12005/overview/RAK12005_buy.png',
     store: 'https://store.rakwireless.com/products/rain-sensor-rak12005-module-and-rak12030-sensor'
   },
+
+  '/Product-Categories/WisBlock/RAK12014/': {
+    label: 'RAK12014 WisBlock ToF Sensor',
+    img: '/assets/images/wisblock/rak12014/overview/RAK12014_buy.png',
+    store: 'https://store.rakwireless.com/products/rak12014-wisblock-tof-sensor'
+  },
     
   '/Product-Categories/WisBlock/RAK13101/': {
     label: 'RAK13101 WisBlock GSM Module',
@@ -616,7 +674,7 @@ export default {
   '/Product-Categories/WisBlock/RAK16001/': {
     label: 'RAK16001 WisBlock ADC Module',
     img: '/assets/images/wisblock/rak16001/overview/RAK16001_buy.png',
-    store: 'https://store.rakwireless.com/'
+    store: 'https://store.rakwireless.com/products/rak16001-wisblock-adc-mmodule'
   },
 
   '/Product-Categories/WisBlock/RAK12009/': {
@@ -631,6 +689,45 @@ export default {
     store: 'https://store.rakwireless.com/products/rak16000'
   },
   
+  '/Product-Categories/WisBlock/RAK14009/': {
+    label: 'RAK14009 WisBlock Keypad 3x3 Module',
+    img: '/assets/images/wisblock/rak14009/overview/RAK14009_buy.png',
+    store: 'https://store.rakwireless.com/products/rak14004-rak14009-rak14010-rak14011-wisblock-keypad-module'
+  },
+  
+  '/Product-Categories/WisBlock/RAK14010/': {
+    label: 'RAK14010 WisBlock Keypad 3x4 Module',
+    img: '/assets/images/wisblock/rak14010/overview/RAK14010_buy.png',
+    store: 'https://store.rakwireless.com/products/rak14004-rak14009-rak14010-rak14011-wisblock-keypad-module'
+  },  
+  '/Product-Categories/WisBlock/RAK14011/': {
+    label: 'RAK14011 WisBlock Keypad 4x4 Module',
+    img: '/assets/images/wisblock/rak14011/overview/RAK14011_buy.png',
+    store: 'https://store.rakwireless.com/products/rak14004-rak14009-rak14010-rak14011-wisblock-keypad-module'
+  },
+   '/Product-Categories/WisBlock/RAK14004/': {
+    label: 'RAK14004 WisBlock Keypad Module',
+    img: '/assets/images/wisblock/rak14004/overview/RAK14004_buy.png',
+    store: 'https://store.rakwireless.com/products/rak14004-rak14009-rak14010-rak14011-wisblock-keypad-module'
+  },
+
+  '/Product-Categories/WisBlock/RAK13600/': {
+    label: 'RAK13600 WisBlock NFC Reader Module',
+    img: '/assets/images/wisblock/rak13600/overview/RAK13600_buy.png',
+    store: 'https://store.rakwireless.com/products/rak13600-wisblock-nfc-reader'
+  },
+  '/Product-Categories/WisBlock/RAK12018/': {
+    label: 'RAK12018 WisBlock Code Scanner',
+    img: '/assets/images/wisblock/rak12018/overview/RAK12018_buy.png',
+    store: 'https://store.rakwireless.com/products/rak12018-wisblock-code-scanner'
+  },  
+    
+  // WisBlock Solutions
+  '/Product-Categories/WisBlock/RAK10700/': {
+    label: 'RAK10700 WisBlock GNSS Tracker for LoRaWAN',
+    img: '/assets/images/wisblock/rak10700/overview/overview.png',
+    store: 'https://store.rakwireless.com/products/lpwan-tracker-solution-kit'
+  },
   
   // Accessories
   '/Product-Categories/Accessories/RAKARJ14/': {
