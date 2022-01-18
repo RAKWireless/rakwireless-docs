@@ -930,9 +930,9 @@ export default {
     img: '/assets/images/accessories/angle-mounting-plate/1.jpg',
     store: 'https://store.rakwireless.com/products/angle-mounting-plate'
   },
-  '/Product-Categories/Accessories/R025-4800500/': {
+  '/Product-Categories/Accessories/RP025-4800500/': {
     label: '1000M PoE Injector',
-    img: '/assets/images/accessories/r025-4800500/1000M-PoE-Injector.png',
+    img: '/assets/images/accessories/rp025-4800500/1000M-PoE-Injector.png',
     store: 'https://store.rakwireless.com/products/1000m-poe-injector-rp025-4800500yg-098-001'
   }
 

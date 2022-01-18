@@ -796,10 +796,10 @@ module.exports = {
     }
 
   ],
-  '/Product-Categories/Accessories/R025-4800500/': [
+  '/Product-Categories/Accessories/RP025-4800500/': [
     {
       title: 'Overview',
-      path: '/Product-Categories/Accessories/R025-4800500/Overview/',
+      path: '/Product-Categories/Accessories/RP025-4800500/Overview/',
       collapsable: false,
       nested: true,
       download: true,
@@ -807,7 +807,7 @@ module.exports = {
     },
     {
       title: 'Datasheet',
-      path: '/Product-Categories/Accessories/R025-4800500/Datasheet/',
+      path: '/Product-Categories/Accessories/RP025-4800500/Datasheet/',
       collapsable: false,
       nested: true,
       download: true,

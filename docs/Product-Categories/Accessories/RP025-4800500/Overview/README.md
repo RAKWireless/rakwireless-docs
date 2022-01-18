@@ -1,12 +1,12 @@
 ---
-rak_img: /assets/images/accessories/r025-4800500/1000M-PoE-Injector.png
+rak_img: /assets/images/accessories/rp025-4800500/1000M-PoE-Injector.png
 rak_desc: The PoE injector (adapter) is a device that allows you to combine power and network connectivity to your PoE-enabled devices using the same Cat5/5e or Cat6 twisted pair cable. 
 rak_grp: [accessories, power-supplies]
-rak_model: R025-4800500 
+rak_model: RP025-4800500 
 prev: ../../
 next: ../Datasheet/
 tags:
-  - R025-4800500
+  - RP025-4800500
 ---
 
 # 1000M PoE Injector

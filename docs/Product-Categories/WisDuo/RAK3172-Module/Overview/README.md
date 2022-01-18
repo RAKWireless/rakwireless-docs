@@ -20,7 +20,7 @@ Thank you for choosing **RAK3172 WisDuo LPWAN Module** in your awesome IoT Proje
 
 :::tip 📝 NOTE:
 
-There are two variants available for the RAK3172 Module: (1) with the CE & UKCA Certification Mark and (2) with IC & CE Certification Mark.
+There are two variants available for the RAK3172 Module: (1) with the CE & UKCA Certification Mark and (2) with FCC, IC & RCM Certification Mark.
 :::
 ## Product Description
 

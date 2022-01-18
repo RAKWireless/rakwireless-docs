@@ -1,10 +1,10 @@
 ---
 rak_desc: Provides comprehensive information about your PoE Injector to help you use it. This information includes technical specifications, characteristics, and requirements.
-rak_img: /assets/images/accessories/r025-4800500/1000M-PoE-Injector.png
+rak_img: /assets/images/accessories/rp025-4800500/1000M-PoE-Injector.png
 prev: ../Overview/
 next: false
 tags:
-  - R025-4800500
+  - RP025-4800500
   - datasheet
 
 ---
@@ -32,7 +32,7 @@ The PoE injector (adapter) is a device that allows you to combine power and netw
 ### Overview
 
 <rk-img
-  src="/assets/images/accessories/r025-4800500/1.r025-4800500.png"
+  src="/assets/images/accessories/rp025-4800500/1.1000m-poe-injector.png"
   width="50%"
   caption="100m PoE Injector overview"
 />
@@ -45,7 +45,7 @@ The PoE injector (adapter) is a device that allows you to combine power and netw
 
 
 <rk-img
-  src="/assets/images/accessories/r025-4800500/2.power-input.png"
+  src="/assets/images/accessories/rp025-4800500/2.power-input.png"
   width="60%"
   caption="Power input interface"
 />
@@ -55,7 +55,7 @@ The PoE injector (adapter) is a device that allows you to combine power and netw
 
 
 <rk-img
-  src="/assets/images/accessories/r025-4800500/3.rj45-poe-lan.png"
+  src="/assets/images/accessories/rp025-4800500/3.rj45-poe-lan.png"
   width="50%"
   caption="RJ45 PoE and LAN interface and pins"
 />
@@ -106,7 +106,7 @@ The PoE injector (adapter) is a device that allows you to combine power and netw
 ### Mechanical Characteristics
 
 <rk-img
-  src="/assets/images/accessories/r025-4800500/4.dimensions.png"
+  src="/assets/images/accessories/rp025-4800500/4.dimensions.png"
   width="80%"
   caption="Mechanical Dimensions"
 />

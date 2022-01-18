@@ -54,7 +54,7 @@ You can configure the mode and operation of the module using AT commands via a U
 
 :::tip 📝 NOTE:
 
-There are two variants available for the RAK3172 Module: (1) with the CE & UKCA Certification Mark and (2) with IC & CE Certification Mark.
+There are two variants available for the RAK3172 Module: (1) with the CE & UKCA Certification Mark and (2) with FCC, IC & RCM Certification Mark.
 :::
 ## Specifications
 
