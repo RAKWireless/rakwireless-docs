@@ -9,6 +9,7 @@ tags:
   - RAK7201
 certifications:
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7201/Certification/RAK7201_FCC_Certification.pdf]
+  - [LoRaWAN, https://downloads.rakwireless.com/LoRa/RAK7201/Certification/RAK7201_LoRaWAN_Certification.pdf]
 ---
 
 # RAK7201 WisNode Button 4K Datasheet

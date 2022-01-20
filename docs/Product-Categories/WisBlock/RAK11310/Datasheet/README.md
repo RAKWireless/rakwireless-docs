@@ -133,12 +133,12 @@ The power consumption will be published after the hardware test results.
   caption="RAK11310 Schematic Diagram"
 />
 
-- **WisConnector**: The breakout module allows the RAK11310 stamp module pinout to be transferred by the board-to-board WisConnector.
+- **WisConnector**: The breakout module exposes the RAK11310 stamp module pinout to the board-to-board WisConnector.
 
 - **WisConnector Pin Order**: The pin order of the WisConnector is located on the bottom layer of the module.
 
-- **Core Module**: The breakout module itself has a RAK11310 at its core, and it shows the core module pin and connection information. By default, the NFC function is disabled to conserve the low power characteristic.
+- **Core Module**: The breakout module itself has a RAK11310 at its core, and it shows the core module pin and connection information. By default, the NFC function is disabled to preserve the low-power characteristic of this core.
 
-- **SWD Interface**: The breakout module exposes an SWD debug interface. Additionally, the RST pin is used for resetting the core module RAK11310.
+- **SWD Interface**: The breakout module exposes an SWD debug interface. Additionally, the RST pin is used to reset the RAK11310 core module.
 
 - **Power Up Automatic Reset**: The breakout module has a power-up automatic reset circuit, and the schematic shows the automatic reset mechanism. This module also can be reset through the WisBlock Base reset pin.
