@@ -11,7 +11,7 @@ tags:
 
 # RAK4631 Quick Start Guide
 
-This guide introduces the RAK4631 WisBlock Core LPWAN Module and how to use it. RAK4631 consists of a nRF52840 MCU and a SX1262 LoRa® chip making it ideal for various IoT projects.
+This guide introduces the RAK4631 WisBlock Core LPWAN Module and how to use it. RAK4631 consists of an nRF52840 MCU and an SX1262 LoRa® chip making it ideal for various IoT projects.
 
 ## Prerequisite
 
@@ -29,7 +29,7 @@ Before going through each and every step on using RAK4631 WisBlock Core, make su
 - [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
 - [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
 
-RAK4631 is also included in various WisBlock kits in RAKwireless store:
+RAK4631 is also included in various WisBlock kits in the RAKwireless store:
 
 - [WisBlock Starter Kit](https://store.rakwireless.com/collections/kits-bundles/products/wisblock-starter-kit) - This includes a RAK4631 with RAK5005-O WisBlock Base board. This kit is ideal to get started immediately with WisBlock.
 - [WisBlock Kit](https://store.rakwireless.com/collections/kits-bundles/products/wisblock-kit?variant=37758662049990) - This is like the Starter Kit but with various WisBlock modules already included on the kit like sensors, IO, and other interfaces.
@@ -44,7 +44,7 @@ You can choose Arduino IDE or Platform IO in coding RAK4631 WisBlock Core.
 <b>Programming RAK4631 via Arduino IDE:</b>
 
 - Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software).
-- To add the WisBlock Core boards on your Arduino board, you need to install the RAKwireless Arduino BSP. You can follow this complete guide on [adding the BSP in Arduino IDE](https://docs.rakwireless.com/Knowledge-Hub/Learn/Installation-of-Board-Support-Package-in-Arduino-IDE/). You can also have a look on the RAKwireless Arduino BSP [github repository](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+- To add the WisBlock Core boards on your Arduino board, you need to install the RAKwireless Arduino BSP. You can follow this complete guide on [adding the BSP in Arduino IDE](https://docs.rakwireless.com/Knowledge-Hub/Learn/Installation-of-Board-Support-Package-in-Arduino-IDE/). You can also have a look at the RAKwireless Arduino BSP [GitHub repository](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
 In Arduino IDE, once you installed the BSP, some examples for RAK4631 will be automatically included on the list of examples when you select WisBlock Core RAK4631 Board in the Board Manager. 
 
@@ -66,7 +66,7 @@ Aside from that, each WisBlock Modules has its own quick start guide to help you
 
 The RAK4631 will not work without a WisBlock Base board. The WisBlock Base provides a USB connection for programming the RAK4631. It also provides a power source and various interfaces to RAK4631 so that it can be connected to other WisBlock modules via different module slots.
 
-RAKwireless offers many [WisBlock Base Boards](https://store.rakwireless.com/collections/wisblock-base) compatible to WisBlock Core. It is highly recommended for you to look on these WisBlock Base boards to see what matches your requirements in terms of available module slots, power supply options and overall size.
+RAKwireless offers many [WisBlock Base Boards](https://store.rakwireless.com/collections/wisblock-base) compatible with WisBlock Core. It is highly recommended for you to look on these WisBlock Base boards to see what matches your requirements in terms of available module slots, power supply options, and overall size.
 
 To illustrate, RAK4631 can be connected to RAK5005-O WisBlock Base, as shown in **Figure 1**.
 
@@ -105,14 +105,14 @@ UART1 and I2C_1 are also exposed on the header of the WisBlock Base board.
 
 #### RAK4631 to WisBlock Modules
 
-RAK4631 WisBlock Core is designed to be interfaced to other [WisBlock Modules](https://store.rakwireless.com/pages/wisblock) like sensors, displays, and other interfaces. You need to connect these modules to the compatible slots on the WisBlock Base.
+RAK4631 WisBlock Core is designed to be interfaced with other [WisBlock Modules](https://store.rakwireless.com/pages/wisblock) like sensors, displays, and other interfaces. You need to connect these modules to the compatible slots on the WisBlock Base.
 
 Each WisBlock Modules that will be used with RAK4631 WisBlock Core have a dedicated quick start guide you can follow on how to connect to the WisBlock Base.
 
 Listed are the quick start guide of some [WisBlock modules you can buy from our store](https://store.rakwireless.com/pages/wisblock):
 
 :::tip 📝 NOTE
-The listed links are just examples. **All WisBlock Modules** have its own quick start guide that you can use a reference to get started on specific modules. 
+The listed links are just examples. **All WisBlock Modules** have their own quick start guide that you can use as a reference to get started on specific modules. 
 :::
 
 - [RAK1901 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1901/Quickstart/)
@@ -151,7 +151,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
   caption="Removing screws from the WisBlock module"
 />
 
-2. Once the screws are removed, check the silkscreen of the module to find the correct location where force can be applier.
+2. Once the screws are removed, check the silkscreen of the module to find the correct location where force can be applied.
 
 <rk-img
   src="/assets/images/wisblock/rak1910/quickstart/17.detaching-silkscreen.png"
@@ -169,7 +169,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 
 #### LoRa and BLE Antenna
 
-Another important part component of RAK4631 are the antennas. 
+Another important part component of RAK4631 is the antennas. 
 
 <rk-img
   src="/assets/images/wisblock/rak4631/quickstart/lora-antenna.png"
@@ -243,13 +243,13 @@ Specification of the battery and solar panel can be found on the datasheet of th
 
 ### Software Setup
 
-RAK4631 WisBlock Core is designed to be interfaced to other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the RAK4631. Before you continue, you should have either the [Arduino BSP or Platform IO already setup](/Product-Categories/WisBlock/RAK4631/Quickstart/#software).
+RAK4631 WisBlock Core is designed to be interfaced with other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the RAK4631. Before you continue, you should have either the [Arduino BSP or Platform IO already setup](/Product-Categories/WisBlock/RAK4631/Quickstart/#software).
 
 #### RAK4631 Example Repository
 
 To quickly build your IoT device with less friction, example codes for RAK4631 to be used on all WisBlock Modules are provided. 
 
-You can access the codes on the [WisBlock Example code repository](https://github.com/RAKWireless/WisBlock/tree/master/examples). The example codes compatible only to RAK4631 are in the folders `RAK4631`. The shared examples of the WisBlock Core is in the `common` folder.
+You can access the codes on the [WisBlock Example code repository](https://github.com/RAKWireless/WisBlock/tree/master/examples). The example codes compatible only with RAK4631 are in the folders `RAK4631`. The shared examples of the WisBlock Core are in the `common` folder.
 
 To use these examples, you have two options: Arduino IDE or Platform IO.
 
@@ -268,7 +268,7 @@ It is highly recommended to also check the dedicated quick start guide that you 
 Listed are the examples where you can check the Software Setup on the quick start guide of the following WisBlock Modules:
 
 :::tip 📝 NOTE
-The listed links are just examples. **All WisBlock Modules** have its own quick start guide that you can use a reference to get started on specific modules. 
+The listed links are just examples. **All WisBlock Modules** have their own quick start guide that you can use as a reference to get started on specific modules. 
 :::
 
 - [RAK1901 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1901/Quickstart/)
@@ -295,7 +295,7 @@ There is an example on how to start with LoRaWAN in the **RAK WisBlock examples*
 
 There are configurations that you need to setup to ensure that the device can join a LoRaWAN Network server.
 
-The guide below will explain the default settings and how to configure it.
+The guide below will explain the default settings and how to configure them.
 
 1. Setup the region.
 
@@ -331,9 +331,9 @@ You can change to unconfirmed message by changing the value to `LMH_UNCONFIRMED_
 Default is **Class A**.
 
 ```
-DeviceClass_t g_CurrentClass = CLASS_A;	
+DeviceClass_t g_CurrentClass = CLASS_A; 
 ```
-You can change this to `CLASS_B` (still underdevelopment) or `CLASS_C`.
+You can change this to `CLASS_B` (still under development) or `CLASS_C`.
 
 5. Setup the keys.
 
@@ -365,7 +365,7 @@ You can make the transmission interval faster or slower by changing this value.
 
 ##### LoRaWAN Payload
 
-This default example will send a string `Hello!` to the LoRaWAN server. This is setup on the `void send_lora_frame(void)` function.
+This default example will send a string `Hello!` to the LoRaWAN server. This is a setup on the `void send_lora_frame(void)` function.
 
 ```
     memset(m_lora_app_data.buffer, 0, LORAWAN_APP_DATA_BUFF_SIZE);
@@ -385,7 +385,7 @@ You can change this section to format your payload.
 
 ##### Formatting the Payload
 
-For illustration, you can check how 32bit **ilat** variable is formatted to 4-byte size array.
+For illustration, you can check how the 32-bit **ilat** variable is formatted to a 4-byte size array.
 
 This is the exact code snippet in formatting the Latitude data of the [GPS Tracker](https://github.com/RAKWireless/WisBlock/blob/master/examples/RAK4630/solutions/GPS_Tracker/GPS_Tracker.ino) example. 
 
@@ -460,15 +460,20 @@ On the other hand, if the error is related to the difficulty of uploading the FW
 
 #### RAK4631 LoRa Mesh via Meshtastic
 
-[Meshtastic](https://meshtastic.org/) is an open source community project that uses LoRa technology to make long-range mesh communicator.
+[Meshtastic](https://meshtastic.org/) is an open-source community project that uses LoRa technology to make a long-range mesh communicator. You need to download the [latest Meshtastic firmware](https://meshtastic.org/firmware) and upload it to your RAK4631 to make it compatible with the Meshtastic network.
 
-RAK4631 Meshtastic FW support is first released on Meshtastic 1.2.30 Beta. You need to [download the 1.2.30 Beta release](https://github.com/meshtastic/Meshtastic-device/releases/download/v1.2.30.80e4bc6/firmware-1.2.30.80e4bc6.zip) to get the RAK4631 Meshtastic FW named `firmware-rak4631-1.2.30.80e4bc6.uf2`.
+:::tip 📝 NOTE
+You need to use the right firmware of Meshtastic for your RAK4631 depending on the WisBlock Base board you use.
 
-To upload this to the RAK4631 board, connect the RAK4631 to the PC via USB. Then double click the reset button on the WisBlock Base board to see the `RAK4631 drive`.
+- RAK5005-O - `firmware-rak4631_5005-w.x.yy.zzzzzzz.uf2`
+- RAK19003 - `firmware-rak4631_19003-w.x.yy.zzzzzzz.uf2`
+:::
 
-You have few seconds to drag the `firmware-rak4631-1.2.30.80e4bc6.uf2` file to the RAK4631. 
+To upload the Meshtastic firmware to the RAK4631 board, connect the RAK4631 to the PC via USB. Then double click the reset button on the WisBlock Base board to see the `RAK4631` drive in your computer.
 
-Once you successfully dragged the Meshtastic FW file, restart the device. After reset, you must have a Meshtastic display on the OLED if you successfully uploaded the Meshtastic firmware.
+You then need to drag the Meshtastic .uf2 firmware file to the `RAK4631` drive. 
+
+Once you successfully dragged the Meshtastic FW file, restart the device. After reset, if the Meshtastic firmware was successfully uploaded, you will see the Meshtastic messages on the OLED display and the serial output.
 
 You can get also get an android device and download Meshtastic App then connect to RAK4631 via Bluetooth.
 
@@ -481,7 +486,7 @@ The bootloader of RAK4631 is not overwritten by the Meshtastic FW. You also over
 
 ## Miscellaneous
 
-### How to Check if You Have the Updated RAK4631 Bootloader
+### How to Check If You Have the Updated RAK4631 Bootloader
 
 You need to connect the RAK4631 to the PC via USB cable and double click reset button on the WisBlock Base.
 
@@ -510,7 +515,7 @@ RAK4631 WisBlock Core is programmed with a USB bootloader so that you can upload
 
 There are various ways to update the bootloader like via USB, Bluetooth, and Jlink. The procedure for these methods is explained in this guide. 
 
-#### Bootloader update via USB
+#### Bootloader Update via USB
 
 In this method, you need two things that must be in the same directory:
 
@@ -525,7 +530,7 @@ Download the [adafruit-nrfutil.exe](https://github.com/adafruit/Adafruit_nRF52_n
 Detailed information about the RAK4631 Bootloader can be found on the [bootloader repository](https://github.com/RAKWireless/WisBlock/blob/master/bootloader/RAK4630). 
 :::
 
-Once you downloaded these files, you need to put them on a same directory/folder in your computer.
+Once you downloaded these files, you need to put them in the same directory/folder on your computer.
 
 For simplicity, this guide will assume the files are in C: drive.
 
@@ -622,25 +627,15 @@ After all these steps, you can now upload the latest RAK4631 Bootloader Firmware
 
 Your RAK4631 will now have the updated Bootloader Firmware.
 
-#### Bootloader update via Bluetooth
+#### Bootloader Update via Bluetooth
 
 Updating the firmware via BLE is also possible.
 
 The complete guide is on the [RAK4631 Bootloader repository using BLE](https://github.com/RAKWireless/WisBlock/tree/master/bootloader/RAK4630#update-over-ble).
 
-#### Bootloader update via Jlink
+#### Bootloader Update via Jlink
 
 Updating the firmware via Jlink is possible as well.
 
 The complete guide is on the [RAK4631 Bootloader repository using Jlink](https://github.com/RAKWireless/WisBlock/tree/master/bootloader/RAK4630#update-over-jlink).
-
-
-
-
-
-
-
-
-
- 
 
