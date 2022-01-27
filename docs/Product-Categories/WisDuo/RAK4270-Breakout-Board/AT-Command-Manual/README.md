@@ -246,6 +246,8 @@ OK Wake Up
 
 During sleep, Pin 5 (RX1) and Pin 1 (RX3) are automatically configured as wake up pins and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
 
+Sleep mode will not work in Class C since the LoRa radio needs to be active all the time to receive downlinks from the network server.
+
 :::
 
 <br>
@@ -1173,7 +1175,7 @@ OK
 
 25. <b>at+set_config=lora:default_parameters</b>
 
-This command is used to restore OTAA, ABP, multicast related network access parameters set at the factory, including dev_eui，app_eui, etc.
+This command is used to restore OTAA, ABP, multicast related network access parameters set at the factory. Specifically the `dev_eui, app_eui, app_key, dev_addr, nwks_key, apps_key, multicast_dev_addr, multicast_apps_key, and multicast_nwks_key`.
 
 | Operation | Command                                 | Response |
 | --------- | --------------------------------------- | -------- |

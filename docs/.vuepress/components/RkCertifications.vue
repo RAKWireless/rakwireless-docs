@@ -98,6 +98,9 @@ export default {
           case 'JRL':
             data.img = '/assets/images/certifications/JRL.png'
             break
+          case 'NBTC':
+            data.img = '/assets/images/certifications/NBTC.png'
+            break
           default:
             data.img =
               'https://image.shutterstock.com/image-illustration/white-unknown-document-icon-isolated-600w-1517588975.jpg'

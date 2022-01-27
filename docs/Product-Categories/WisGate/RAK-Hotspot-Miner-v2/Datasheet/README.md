@@ -20,6 +20,7 @@ certifications:
   - [REACH, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotMinerV2.0_CE_REACH_REPORT.PDF]
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotMinerV2.0_CE__ROHS_REPORT.pdf]
   - [UKCA, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotMinerV2.0_UKCA_Certification.pdf]
+  - [NBTC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotMinerV2.0_NBTC_Certification.zip]
 ---
 
 # RAK Hotspot Miner v2 Datasheet
