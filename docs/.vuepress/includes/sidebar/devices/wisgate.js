@@ -291,9 +291,9 @@ module.exports = {
 
 ],
 
-'/Product-Categories/WisGate/RAK-Hotspot-Miner/': [{
+'/Product-Categories/WisGate/RAK-Hotspot/': [{
   title: 'Product Overview',
-  path: '/Product-Categories/WisGate/RAK-Hotspot-Miner/Overview/',
+  path: '/Product-Categories/WisGate/RAK-Hotspot/Overview/',
   collapsable: false,
   nested: true,
   download: true,
@@ -301,7 +301,7 @@ module.exports = {
 },
 {
   title: 'Quick Start Guide',
-  path: '/Product-Categories/WisGate/RAK-Hotspot-Miner/Quickstart/',
+  path: '/Product-Categories/WisGate/RAK-Hotspot/Quickstart/',
   collapsable: false,
   nested: true,
   download: true,
@@ -309,7 +309,7 @@ module.exports = {
 },
 {
   title: 'SD Card Backup',
-  path: '/Product-Categories/WisGate/RAK-Hotspot-Miner/Backup/',
+  path: '/Product-Categories/WisGate/RAK-Hotspot/Backup/',
   collapsable: false,
   nested: true,
   download: true,
@@ -317,7 +317,7 @@ module.exports = {
 },
 {
   title: 'Troubleshooting',
-  path: '/Product-Categories/WisGate/RAK-Hotspot-Miner/Troubleshooting/',
+  path: '/Product-Categories/WisGate/RAK-Hotspot/Troubleshooting/',
   collapsable: false,
   nested: true,
   download: true,
@@ -325,7 +325,7 @@ module.exports = {
 },
 {
   title: 'Datasheet',
-  path: '/Product-Categories/WisGate/RAK-Hotspot-Miner/Datasheet/',
+  path: '/Product-Categories/WisGate/RAK-Hotspot/Datasheet/',
   collapsable: false,
   nested: true,
   download: true,
@@ -333,9 +333,9 @@ module.exports = {
 }
 
 ],
-'/Product-Categories/WisGate/RAK-Hotspot-Miner-v2/': [{
+'/Product-Categories/WisGate/RAK-Hotspot-v2/': [{
   title: 'Product Overview',
-  path: '/Product-Categories/WisGate/RAK-Hotspot-Miner-v2/Overview/',
+  path: '/Product-Categories/WisGate/RAK-Hotspot-v2/Overview/',
   collapsable: false,
   nested: true,
   download: true,
@@ -343,7 +343,7 @@ module.exports = {
 },
 {
   title: 'Quick Start Guide',
-  path: '/Product-Categories/WisGate/RAK-Hotspot-Miner-v2/Quickstart/',
+  path: '/Product-Categories/WisGate/RAK-Hotspot-v2/Quickstart/',
   collapsable: false,
   nested: true,
   download: true,
@@ -351,7 +351,7 @@ module.exports = {
 },
 {
   title: 'Troubleshooting',
-  path: '/Product-Categories/WisGate/RAK-Hotspot-Miner-v2/Troubleshooting/',
+  path: '/Product-Categories/WisGate/RAK-Hotspot-v2/Troubleshooting/',
   collapsable: false,
   nested: true,
   download: true,
@@ -359,7 +359,7 @@ module.exports = {
 },
 {
   title: 'Datasheet',
-  path: '/Product-Categories/WisGate/RAK-Hotspot-Miner-v2/Datasheet/',
+  path: '/Product-Categories/WisGate/RAK-Hotspot-v2/Datasheet/',
   collapsable: false,
   nested: true,
   download: true,

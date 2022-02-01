@@ -2,7 +2,7 @@
 rak_img: /assets/images/wisblock/rak13007/overview/RAK13007_home.png
 rak_desc:  RAK13007 is a WisBlock Interface module that extends the WisBlock system that can isolate the output between internal and external signals. It is used to programmatically switch on/off devices, which uses a high voltage or high current.
 rak_grp: [wisblock, wisinterface]
-next: ../Datasheet/
+next: ../Quickstart/
 prev: ../../
 tags:
     - wisblock
@@ -14,6 +14,7 @@ tags:
 
 Thank you for choosing **RAK13007 WisBlock Relay Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [RAK13007 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)

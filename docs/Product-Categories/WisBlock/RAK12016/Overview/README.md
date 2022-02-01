@@ -2,7 +2,7 @@
 rak_img: /assets/images/wisblock/rak12016/overview/RAK12016_home.png
 rak_desc: RAK12016 is a flex sensor module that uses an FS-L-0095-103-ST from Spectrasymbol, which can measure the amount of deflection or bending.
 rak_grp: [wisblock, wissensor]
-next: ../Datasheet/
+next: ../Quickstart/
 prev: ../../
 tags:
     - wisblock
@@ -14,6 +14,7 @@ tags:
 
 Thank you for choosing **RAK12016 WisBlock Flex Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
+* [RAK12016 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 <!---* [WisBlock Quick Start Guide](../../Quickstart/)-->

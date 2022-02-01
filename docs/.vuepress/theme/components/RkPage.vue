@@ -1,5 +1,6 @@
 <template>
-  <q-page style="max-width: 1250px; margin: 0 auto; padding: 2rem 2.5rem">
+  <q-page style="max-width: 1250px; margin: 0 auto; padding: 2rem 2.5rem"  >
+    <div v-bind:class="{'custom-page-padding':isKnowledgeHub}">
     <rk-breadcrumbs :sidebar-items="sidebarItems" />
 
     <table id="pdf-container">
@@ -27,6 +28,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <PageEdit />
     <q-separator inset />
@@ -43,7 +45,7 @@ import PdfFooter from './PdfFooter'
 
 export default {
   components: { PageEdit, PageNav, RkBreadcrumbs, PdfHeader, PdfFooter },
-  props: ['sidebarItems'],
+  props: ['sidebarItems','isKnowledgeHub'],
 }
 </script>
 
@@ -54,9 +56,21 @@ export default {
   padding-bottom: 2rem;
   display: block;
 }
+.custom-page-padding {
+  padding-right : 10rem;
+  padding-left : 10rem;
+}
 
 .theme-default-content {
   max-width: 2000px !important;
   padding: 0 !important;
+}
+
+
+@media (max-width: 760px) {
+  .custom-page-padding {
+    padding-right : 0 !important;
+    padding-left : 0 !important;
+  }
 }
 </style>

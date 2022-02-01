@@ -2,7 +2,7 @@
 rak_img: /assets/images/wisblock/rak13300/overview/RAK13300_home.png
 rak_desc: The RAK13300 is a LoRa module based on the SX1262 LoRa chip that provides an easy-to-use, small-size, low-power solution for long-range wireless data applications.
 rak_grp: [wisblock, wiswireless]
-next: ../Datasheet/
+next: ../Quickstart/
 prev: ../../
 tags:
     - overview
@@ -15,7 +15,7 @@ tags:
 
 Thank you for choosing **RAK13300 WisBlock LPWAN Wireless Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
-<!--* [RAK13300 Quick Start Guide](../Quickstart/)-->
+* [RAK13300 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)

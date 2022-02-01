@@ -285,13 +285,13 @@ export default {
     img: '/assets/images/wisgate/rak7248/overview/RAK7248_buy.png',
     store: 'https://store.rakwireless.com/products/rak7248?utm_source=RAK7248WisGateDeveloperD4H&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-  '/Product-Categories/WisGate/RAK-Hotspot-Miner/': {
-    label: 'RAK Hotspot Miner',
+  '/Product-Categories/WisGate/RAK-Hotspot/': {
+    label: 'RAK Hotspot',
     img: '/assets/images/wisgate/rak-hotspot-miner/overview/RAK-Hotspot-Miner_buy.png',
     store: 'https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-  '/Product-Categories/WisGate/RAK-Hotspot-Miner-v2/': {
-    label: 'RAK Hotspot Miner v2',
+  '/Product-Categories/WisGate/RAK-Hotspot-v2/': {
+    label: 'RAK Hotspot v2',
     img: '/assets/images/wisgate/rak-hotspot-miner-v2/overview/rak_hotspot_miner_v2.png',
     store: 'https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore'
   },

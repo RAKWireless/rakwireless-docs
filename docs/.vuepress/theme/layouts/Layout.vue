@@ -52,7 +52,7 @@
       </q-drawer>
       <q-page-container @scroll="onPageScroll">
         <rk-header v-if="shouldHaveHeader" />
-        <rk-page :sidebar-items="sidebarItems" />
+        <rk-page :sidebar-items="sidebarItems" v-bind:isKnowledgeHub="isKnowledgeHub" />
         <rk-zoom />
         <rk-faq-footer v-if="isShow"/>
         <q-page-sticky
@@ -152,6 +152,7 @@ export default {
       showDrawer: true,
       showBack2Top: false,
       disableActiveHash: false,
+      isKnowledgeHub : false
     }
   },
 
@@ -228,7 +229,7 @@ export default {
     this.$router.afterEach(() => {
       this.isSidebarOpen = false
     })
-    
+    let fullPath = this.$route.fullPath
     // console.log('pages: ', this.$site.pages)
     // console.log('page: ', this.$page)
 
@@ -238,6 +239,7 @@ export default {
     // console.log('mounted: ', window.innerHeight, window.innerWidth, min, document.documentElement.style)
     // console.log('sidebaritems: ', this.sidebarItems)
     this.checkRouteName(this.$route.name);
+    this.checkIsKnowledgeHub(fullPath)
     this.setScript();
     this.isMobile();
     window.onscroll = this.onPageScroll
@@ -383,6 +385,14 @@ export default {
       }else {
         this.showDrawer = true;
       }
+    },
+    checkIsKnowledgeHub (fullPath){
+      if((fullPath).includes('/Knowledge-Hub/Learn/') && fullPath.length > 21){
+        this.isKnowledgeHub = true;
+
+      }else {
+        this.isKnowledgeHub = false;
+      }
     }
   },
   watch: {
@@ -390,6 +400,12 @@ export default {
       this.$root.lastPath = oldval.path
     },
     $route(to, from) {
+      
+      if(to.fullPath === '/Knowledge-Hub/Learn/' && (to.fullPath).length <= 21 ){
+        console.log('INSIDE',(to.fullPath).length <= 21 )
+        this.isKnowledgeHub = false;
+      }
+      this.checkIsKnowledgeHub(to.fullPath)
       this.checkRoute(to);
     }
   },

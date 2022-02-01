@@ -1,6 +1,6 @@
 <template>
   <div class="q-gutter-y-md" style="margin: 0 auto">
-    <div class="row justify-end">
+    <div class="row justify-center">
       <q-select
         class="full-width"
         label="Filter tags"
@@ -63,37 +63,40 @@
               {{ article.title }}
             </div>
           </div>
-          <div class="col-2 q-px-md q-py-none">
-            <div class="row q-pa-none">
-              <q-item class="q-pa-none" style="font-size: 0.8rem" dense>
-                <q-item-section>
-                  <div class="row q-gutter-x-sm">
-                    <q-icon name="far fa-calendar" size="0.9rem" />
-                    <div>{{ article.posted || article.lastUpdated || td }}</div>
-                  </div>
-                  <div class="row q-gutter-x-sm q-mt-sm">
-                    <q-icon name="fas fa-tags" size="0.9rem" />
-                    <div>{{ stringTags(article) }}</div>
-                  </div>
-                </q-item-section>
-              </q-item>
-              <q-space />
-              <div class="flex flex-center">
-                <q-btn
-                  icon="fas fa-external-link-alt"
-                  size="0.5rem"
-                  color="grey-7"
-                  @click="
-                    (e) => {
-                      customNav(article.path)
-                      e.stopPropagation()
-                    }
-                  "
-                  round
-                  flat
-                />
+          <div class="q-card-actions">
+            <div class="col-2 q-px-md q-py-none">
+              <div class="row q-pa-none">
+                <q-item class="col-11 q-pa-none" style="font-size: 0.8rem" dense>
+                  <q-item-section>
+                    <div class="row q-gutter-x-sm">
+                      <q-icon name="far fa-calendar" size="0.9rem" />
+                      <div>{{ article.posted || article.lastUpdated || td }}</div>
+                    </div>
+                    <div class="row q-gutter-x-sm q-mt-sm q-mb-sm">
+                      <q-icon class="col-1 self-start" name="fas fa-tags" size="0.9rem" />
+                      <div class="col-10 self-start">{{ stringTags(article) }}</div>
+                    </div>
+                  </q-item-section>
+                </q-item>
+                <q-space />
+                <div class="col-1 flex flex-center">
+                  <q-btn
+                    icon="fas fa-external-link-alt"
+                    size="0.5rem"
+                    color="grey-7"
+                    @click="
+                      (e) => {
+                        customNav(article.path)
+                        e.stopPropagation()
+                      }
+                    "
+                    round
+                    flat
+                  />
+                </div>
               </div>
-            </div>
+          </div>
+          
           </div>
         </rk-card>
       </div>
