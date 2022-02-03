@@ -15,7 +15,7 @@ rak_img: /assets/images/accessories/rak9733/overview/rak9733.png
 
 ### Description
 
-The Pulsar cable is a high-grade cable, suitable for all gateways from the **WisGate Developer** series and the **RAK Hotspot Miner**. This cable allows you to better position the gateway's antennas for optimal coverage.
+The Pulsar cable is a high-grade cable, suitable for all gateways from the **WisGate Developer** series and the **RAK Hotspot**. This cable allows you to better position the gateway's antennas for optimal coverage.
 
 ###  Features
 

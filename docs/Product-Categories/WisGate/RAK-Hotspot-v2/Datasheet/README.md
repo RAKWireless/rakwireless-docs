@@ -1,7 +1,7 @@
 ---
 static_root: 
 rak_desc: Provides comprehensive information about your RAK Hotspot v2 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisgate/rak-hotspot-miner-v2/overview/rak_hotspot_miner_v2.png
+rak_img: /assets/images/wisgate/rak-hotspot-v2/overview/rak_hotspot_v2.png
 tags:
   - datasheet
   - wisgate
@@ -31,30 +31,30 @@ certifications:
 
 **Hotspot Details**
 
-- Efficient miner for a new cryptocurrency, **Helium (HNT)**
+- Efficient for a new cryptocurrency, **Helium (HNT)**
 - Complete set-up in minutes using a smartphone
 - **LongFi technology** maximizes range and battery life without Wi-Fi, cellular or Bluetooth
 - Low Power – only uses about the same amount as an LED light bulb (5W)
 - Easily manage Hotspots and tokens from the mobile app
 - LongFi™ Technology
 
-![longfi](/assets/images/wisgate/rak-hotspot-miner/icons/longfi.png)
+![longfi](/assets/images/wisgate/rak-hotspot/icons/longfi.png)
 
 **Helium LongFi** is a technology architecture that combines the leading wireless technology, LoRaWAN, and the
 Helium Blockchain. LongFi is optimized for miles of range, and long battery life for IoT devices.
 
-![proof-of-coverage](/assets/images/wisgate/rak-hotspot-miner/icons/proof-of-coverage.png)
+![proof-of-coverage](/assets/images/wisgate/rak-hotspot/icons/proof-of-coverage.png)
 
-RAK Hotspot Miners earn Helium when devices connect, and for validating wireless coverage delivered by peers. Using a system called Proof-of-Coverage, RAK Hotspot Miners earn more Helium when they're in range of other RAK Hotspot Miners, but need to be at least 300 meters apart.
+RAK Hotspot earns Helium when devices connect, and for validating wireless coverage delivered by peers. Using a system called Proof-of-Coverage, RAK Hotspot earns more Helium when they're in range of other RAK Hotspot, but need to be at least 300 meters apart.
 
-Range depends on the environment. For rural areas, **up to 10 miles or more**, but more dense areas, **up to a mile**. Single RAK Hotspot Miners earn less as they can only issue Challenges over the internet, and can’t participate in Proof-of-Coverage.
+Range depends on the environment. For rural areas, **up to 10 miles or more**, but more dense areas, **up to a mile**. Single RAK Hotspot earn less as they can only issue Challenges over the internet, and can’t participate in Proof-of-Coverage.
 
-![wireless-coverage](/assets/images/wisgate/rak-hotspot-miner/icons/wireless-coverage.png)
+![wireless-coverage](/assets/images/wisgate/rak-hotspot/icons/wireless-coverage.png)
 
 - Deliver may square miles of coverage from a single RAK Hotspot.
-- Based on initial testing, only about 50 to 100 RAK Hotspot Miners are needed to provide complete coverage for an entire city.
+- Based on initial testing, only about 50 to 100 RAK Hotspot are needed to provide complete coverage for an entire city.
 
-![connect-anything](/assets/images/wisgate/rak-hotspot-miner/icons/connect-anything.png)
+![connect-anything](/assets/images/wisgate/rak-hotspot/icons/connect-anything.png)
 
 - Create a new global network for billions of devices.
 - Any IoT device can become Helium-enabled using readily available off-the-shelf hardware components, software, and a reference design that is open source for anyone to improve upon.
@@ -86,7 +86,7 @@ The overview covers the RAK Hotspot hotspot details and block diagram.
 The outer dimension of RAK Hotspot is **92 x 68.3 x 57.2&nbsp;mm**. 
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner-v2/datasheet/dimensions.svg"
+  src="/assets/images/wisgate/rak-hotspot-v2/datasheet/dimensions.svg"
   width="50%"
   caption="Device Dimensions"
 /> 
@@ -96,7 +96,7 @@ The outer dimension of RAK Hotspot is **92 x 68.3 x 57.2&nbsp;mm**.
 Figure 2 summarizes the basic building blocks of the RAK Hotspot. The RAK2287 is an essential part of it as it provides all LoRaWAN connectivity. It receives and transmits LoRa Frames and takes care of modulating/demodulating the signals among others. The processing of the LoRa Frames, as well as higher-level protocol-related tasks, is done by the embedded host system (Raspberry Pi). Received and processed LoRa Frames are being sent to a LoRaWAN Server. The segmentation of protocol-related tasks is outside the scope of this document.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/datasheet/hotspot-details.png"
+  src="/assets/images/wisgate/rak-hotspot/datasheet/hotspot-details.png"
   width="65%"
   caption="RAK Hotspot System Structure"
 />
@@ -106,7 +106,7 @@ Figure 2 summarizes the basic building blocks of the RAK Hotspot. The RAK2287 is
 The RAK Hotspot is the central hardware solution for all LoRa based radio communication. It receives and transmits radio messages. The processing of radio messages, as well as the protocol-related tasks, is done by the embedded host system (Raspberry Pi 4). Received and processed radio messages are being sent to a LoRaWAN server. Figure 3 shows the block diagram of the RAK Hotspot.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/datasheet/block-diagram.png"
+  src="/assets/images/wisgate/rak-hotspot/datasheet/block-diagram.png"
   width="75%"
   caption="RAK Hotspot Block Diagram"
 />
@@ -121,7 +121,7 @@ The concrete segmentation of the protocol-related tasks is outside the scope of 
 
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner-v2/datasheet/interfaces.svg"
+  src="/assets/images/wisgate/rak-hotspot-v2/datasheet/interfaces.svg"
   width="100%"
   caption="RAK Hotspot Interfaces"
 />
@@ -179,7 +179,7 @@ If nothing else is stated, T=25&nbsp;℃, VDD=5&nbsp;V (Typ.).
 | ------------------------------------------ | ------------------------ | ------------- | -------- | ------------- |
 | **Frequency Range**                        |                          | 863&nbsp;MHz  |          | 870&nbsp;MHz  |
 | **Modulation Techniques**                  | FSK/LoRa                 |               |          |               |
-| **TX Frequency Variation vs. Temperature** | Power Level Setting : 20 | -3&nbsp;KHz   |          | +3&nbsp;KHz   |
+| **TX Frequency Variation vs. Temperature** | Power Level Setting : 20 | -3&nbsp;kHz   |          | +3&nbsp;kHz   |
 | **TX Power Variation vs. Temperature**     | Power Level Setting : 20 | -5&nbsp;dBm   |          | +5&nbsp;dBm   |
 | **TX Power Variation**                     |                          | -1.5&nbsp;dBm |          | +1.5&nbsp;dBm |
 
@@ -210,7 +210,7 @@ It is highly recommended to use optimized RSSI calibration values, which is part
 The LoRa Antenna with RP-SMA Male connector shown in Figure 5.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/datasheet/lora-antenna.png"
+  src="/assets/images/wisgate/rak-hotspot/datasheet/lora-antenna.png"
   width="40%"
   caption="LoRa Antenna"
 />
@@ -219,7 +219,7 @@ The LoRa Antenna with RP-SMA Male connector shown in Figure 5.
 
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/datasheet/lora-antenna-dimension.png"
+  src="/assets/images/wisgate/rak-hotspot/datasheet/lora-antenna-dimension.png"
   width="65%"
   caption="LoRa Antenna Dimension (mm)"
 />

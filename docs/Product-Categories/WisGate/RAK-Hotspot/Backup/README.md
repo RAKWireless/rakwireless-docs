@@ -1,6 +1,6 @@
 ---
 rak_desc: Guides you on how to back up the files from your RAK Hotspot to either macOS or Windows OS and also, on how to restore images. With these backup tools, it lessens the hassle of saving the SD Card files of your LoRaWAN Gateway.
-rak_img: /assets/images/wisgate/rak-hotspot-miner/overview/RAK-Hotspot-Miner_home.png
+rak_img: /assets/images/wisgate/rak-hotspot/overview/RAK-Hotspot-home.png
 next: ../Troubleshooting/
 prev: ../Quickstart/
 tags:
@@ -36,17 +36,17 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
 1. Start by downloading [SD Clone](https://twocanoes.com/products/mac/sd-clone/).
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/mac/1.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/mac/1.png"
   width="100%"
   caption="Download SD Clone"
 />
 
-<!-- ![](/assets/images/wisgate/rak-hotspot-miner/backup/mac/1.png) --->
+<!-- ![](/assets/images/wisgate/rak-hotspot/backup/mac/1.png) --->
 
 2. Once downloaded, open the application. You will be prompted to either buy the full version or continue using the trial (select this option).
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/mac/2.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/mac/2.png"
   width="100%"
   caption="Selecting Clone Trial or Buy Option"
 />
@@ -57,7 +57,7 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
 1. Insert you card, and if you receive the message in the following figure, click "OK".
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/mac/3.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/mac/3.png"
   width="100%"
   caption="SD Clone Authentication"
 />
@@ -67,13 +67,13 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
 
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/mac/4.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/mac/4.png"
   width="100%"
   caption="Accessing SD Storage"
 />
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/mac/5.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/mac/5.png"
   width="100%"
   caption="Allowing SD Clone to Access Files"
 />
@@ -81,7 +81,7 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
 3. Select the "Save Image" button, followed by clicking the "**Save Image...**" button.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/mac/6.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/mac/6.png"
   width="100%"
   caption="Save Image"
 />
@@ -90,7 +90,7 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
 4. This will prompt a window where you select the location you want your image to be created at. Once you click on the blue "Save" button, backup process will start.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/mac/7.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/mac/7.png"
   width="100%"
   caption="Selecting File Folder"
 />
@@ -98,7 +98,7 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
 5. A bar will be displayed indicating the cloning progress in percentage.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/mac/8.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/mac/8.png"
   width="100%"
   caption="Ongoing Cloning Process"
 />
@@ -106,7 +106,7 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
 1. A notification window will prompt once the cloning is done. In this example, it took around 40 minutes to back up a 32&nbsp;GB card housing a Helium Hotspot image.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/mac/9.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/mac/9.png"
   width="100%"
   caption="Clone Complete"
 />
@@ -116,7 +116,7 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
 1. If you want to restore an image, you must first select the storage drive.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/mac/10.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/mac/10.png"
   width="100%"
   caption="Selecting Storage Device"
 />
@@ -124,7 +124,7 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
 2. Select the image in the side panel.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/mac/11.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/mac/11.png"
   width="100%"
   caption="Selecting Image"
 />
@@ -132,7 +132,7 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
 3. Press the "**Restore to Volume...**" button. You will be asked one last time in a new window to confirm; do so by clicking the "**Restore**" button, and you will initiate the process.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/mac/12.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/mac/12.png"
   width="100%"
   caption="Restoring Image to Volume"
 />
@@ -144,7 +144,7 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
 2. Once done, you should see the same window as shown in Figure 12. The interface is minimalistic and easy to use.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/win/1.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/win/1.png"
   width="45%"
   caption="Downloading Win31 Disk Imager"
 />
@@ -155,7 +155,7 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
 1. First, select the drive letter corresponding to the drive where your card is. This is where the image will be copied from.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/win/2.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/win/2.png"
   width="45%"
   caption="Selecting Storage Device"
 />
@@ -164,7 +164,7 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
 2. Next, you need to provide a path to the file the data is going to be backed in. You can do this either by entering it manually in the text box or clicking the folder icon.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/win/3.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/win/3.png"
   width="45%"
   caption="Selecting Image File Path"
 />
@@ -172,7 +172,7 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
 3. If you choose the second option, you need to navigate to the location and still enter a name in the text box. Make sure you add the "**img**" extension to the file, then click the "**Open**" button.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/win/4.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/win/4.png"
   width="70%"
   caption="Entering Image File Name"
 />
@@ -180,7 +180,7 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
 4. Finally, with the path and filename set, start the backup process by pressing the "**Read**" button.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/win/5.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/win/5.png"
   width="45%"
   caption="Start the Backup Process"
 />
@@ -188,7 +188,7 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
 5. The progress bar will start filling up, indicating the level of completion of the procedure. Depending on your image size and cad speeds, the time to completion will vary, so be patient.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/win/6.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/win/6.png"
   width="45%"
   caption="Ongoing Backup Process"
 />
@@ -200,7 +200,7 @@ The restoration procedure is even more streamlined than the backup.
 1. Select the drive you want to flash the backup file to. Make sure you have the correct drive letter.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/win/7.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/win/7.png"
   width="45%"
   caption="Selecting Storage Device"
 />
@@ -208,13 +208,13 @@ The restoration procedure is even more streamlined than the backup.
 2. Navigate to your file either via the folder button or directly enter the a path in the text box.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/win/8.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/win/8.png"
   width="45%"
   caption="Selecting Image File Location"
 />
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/win/9.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/win/9.png"
   width="70%"
   caption="Locating the Image File Path"
 />
@@ -222,7 +222,7 @@ The restoration procedure is even more streamlined than the backup.
 3. Confirm at the prompt with the "**Yes**" button.
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/win/10.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/win/10.png"
   width="30%"
   caption="Start the Restoring Process"
 />
@@ -230,7 +230,7 @@ The restoration procedure is even more streamlined than the backup.
 4. You can monitor progress via the bar. Wait for the process to finish, and you are done. 
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/backup/win/11.png"
+  src="/assets/images/wisgate/rak-hotspot/backup/win/11.png"
   width="45%"
   caption="Ongoing Restoring Process"
 />

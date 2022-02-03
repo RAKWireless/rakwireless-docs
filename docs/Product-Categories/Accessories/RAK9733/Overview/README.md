@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/accessories/rak9733/overview/rak9733.png
-rak_desc: The Pulsar cable is a high-grade cable, suitable for all gateways from the WisGate Developer series and the RAK Hotspot Miner.
+rak_desc: The Pulsar cable is a high-grade cable, suitable for all gateways from the WisGate Developer series and the RAK Hotspot.
 rak_grp: [accessories, antennas]
 rak_model: RAK9733 
 prev: ../../
@@ -19,7 +19,7 @@ Thank you for choosing **Pulsar Cable LMR400** in your awesome IoT Project! 🎉
 
 ## Product Description
 
-The Pulsar cable is a high-grade cable, suitable for all gateways from the **WisGate Developer** series and the **RAK Hotspot Miner**. This cable allows you to better position the gateway's antennas for optimal coverage.
+The Pulsar cable is a high-grade cable, suitable for all gateways from the **WisGate Developer** series and the **RAK Hotspot**. This cable allows you to better position the gateway's antennas for optimal coverage.
 
 ## Product Features
 

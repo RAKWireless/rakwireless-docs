@@ -78,7 +78,7 @@ As a rule of thumb when installing add 2dB loss to the link budget for every 2 c
 
 ### RP-SMA Connectors
 
-The same as SMA but with reversed polarity. Reverse-polarity SMA (RP-SMA) is a variation of the SMA connector specification that reverses the gender of the interface. The term "reverse polarity" here refers only to the gender of the connector's contact pin, not in any way to the signal polarity. It is suitable for indoor solutions. All our indoor antennas, all gateways from the WisGate Developer series, the indoor gateway from the WisGate Edge series, and the famous RAK Hotspot Miner use this type of connector.
+The same as SMA but with reversed polarity. Reverse-polarity SMA (RP-SMA) is a variation of the SMA connector specification that reverses the gender of the interface. The term "reverse polarity" here refers only to the gender of the connector's contact pin, not in any way to the signal polarity. It is suitable for indoor solutions. All our indoor antennas, all gateways from the WisGate Developer series, the indoor gateway from the WisGate Edge series, and the famous RAK Hotspot use this type of connector.
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/rak-rf-connectors/rpsma.png"

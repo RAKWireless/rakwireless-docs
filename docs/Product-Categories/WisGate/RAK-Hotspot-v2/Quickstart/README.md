@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK Hotspot v2. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway/Module. 
-rak_img: /assets/images/wisgate/rak-hotspot-miner-v2/overview/rak_hotspot_miner_v2.png
+rak_img: /assets/images/wisgate/rak-hotspot-v2/overview/rak_hotspot_miner_v2.png
 next: ../Troubleshooting/
 prev: ../Overview/
 tags:
@@ -26,7 +26,7 @@ The SIM card slot of the cellular versions is not hot-swappable. Make sure the g
 ### What's Included in the Package?
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner-v2/quickstart/package-contents.png"
+  src="/assets/images/wisgate/rak-hotspot-v2/quickstart/package-contents.png"
   width="75%"
   caption="Package Contents"
 />
@@ -42,13 +42,13 @@ The application is available for both Android and iOS. You can manually search i
 * [**iOS:**](https://apps.apple.com/ph/app/helium-hotspot/id1450463605)
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/quickstart/qr.png"
+  src="/assets/images/wisgate/rak-hotspot/quickstart/qr.png"
   width="50%"
   caption="QR Codes"
 />
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/quickstart/app.png"
+  src="/assets/images/wisgate/rak-hotspot/quickstart/app.png"
   width="50%"
   caption="iOS and Android App"
 />
@@ -57,7 +57,7 @@ The application is available for both Android and iOS. You can manually search i
 ### Power on the RAK Hotspot
 
 :::warning ⚠️ WARNING
-Before powering on, it is best advice to follow the guidelines below to avoid damaging the RAK Hotspot. Familiarize the interfaces of the product as shown in the  [Interfaces](/Product-Categories/WisGate/RAK-Hotspot-Miner/Datasheet/#interfaces) section of the RAK Hotspot Datasheet.
+Before powering on, it is best advice to follow the guidelines below to avoid damaging the RAK Hotspot. Familiarize the interfaces of the product as shown in the  [Interfaces](/Product-Categories/WisGate/RAK-Hotspot/Datasheet/#interfaces) section of the RAK Hotspot Datasheet.
 :::
 
 1. Attach the LoRa Antenna.  
@@ -77,7 +77,7 @@ If in the future you need to connect to the app again, you only need to press th
 During the setup of your account, you will be asked to input a seed phrase. It is a sequence of 12 words used to recover or transfer your accounts between phones. 
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/quickstart/fill-up.png"
+  src="/assets/images/wisgate/rak-hotspot/quickstart/fill-up.png"
   width="50%"
   caption="Account recovery or transfer keywords"
 />

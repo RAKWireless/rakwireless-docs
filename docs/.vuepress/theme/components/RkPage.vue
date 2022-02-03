@@ -1,6 +1,5 @@
 <template>
-  <q-page style="max-width: 1250px; margin: 0 auto; padding: 2rem 2.5rem"  >
-    <div v-bind:class="{'custom-page-padding':isKnowledgeHub}">
+  <q-page style="max-width: 1250px; margin: 0 auto; padding: 2rem 2.5rem"  v-bind:class="{'custom-page-padding':isKnowledgeHub}">
     <rk-breadcrumbs :sidebar-items="sidebarItems" />
 
     <table id="pdf-container">
@@ -28,8 +27,6 @@
         </tr>
       </tbody>
     </table>
-    </div>
-
     <PageEdit />
     <q-separator inset />
     <PageNav v-bind="{ sidebarItems }" />
@@ -57,8 +54,8 @@ export default {
   display: block;
 }
 .custom-page-padding {
-  padding-right : 10rem;
-  padding-left : 10rem;
+  padding-right : 10rem !important;
+  padding-left : 10rem !important;
 }
 
 .theme-default-content {
@@ -69,8 +66,8 @@ export default {
 
 @media (max-width: 760px) {
   .custom-page-padding {
-    padding-right : 0 !important;
-    padding-left : 0 !important;
+    padding-right : 2rem !important;
+    padding-left : 2rem !important;
   }
 }
 </style>

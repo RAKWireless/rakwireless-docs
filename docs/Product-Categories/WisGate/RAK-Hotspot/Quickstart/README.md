@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK Hotspot . Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
-rak_img: /assets/images/wisgate/rak-hotspot-miner/overview/RAK-Hotspot-Miner_home.png
+rak_img: /assets/images/wisgate/rak-hotspot/overview/RAK-Hotspot-home.png
 next: ../Backup/
 prev: ../Overview/
 tags:
@@ -16,7 +16,7 @@ tags:
 ### What Do You Need?
 
 1. **RAK Hotspot**
-2. 32GB microSD Card (included) + Card Reader
+2. 32&nbsp;GB microSD Card (included) + Card Reader
 3. USB Type-C Power Adapter (included)
 
 :::warning ⚠️ WARNING
@@ -26,7 +26,7 @@ The SIM card slot of the cellular versions is not hot-swappable. Make sure the g
 ### What's Included in the Package?
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/quickstart/package-contents.png"
+  src="/assets/images/wisgate/rak-hotspot/quickstart/package-contents.png"
   width="75%"
   caption="Package Contents"
 />
@@ -41,13 +41,13 @@ The application is available for both Android and iOS. You can manually search i
 * [**iOS:**](https://apps.apple.com/ph/app/helium-hotspot/id1450463605)
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/quickstart/qr.png"
+  src="/assets/images/wisgate/rak-hotspot/quickstart/qr.png"
   width="50%"
   caption="QR Codes"
 />
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/quickstart/app.png"
+  src="/assets/images/wisgate/rak-hotspot/quickstart/app.png"
   width="50%"
   caption="iOS and Android App"
 />
@@ -72,7 +72,7 @@ From powering up the device, you only have 5 minutes to complete the setup. Afte
 During the setup of your account, you will be asked to input 12 words that must be used in order to recover or move accounts between phones. 
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot-miner/quickstart/fill-up.png"
+  src="/assets/images/wisgate/rak-hotspot/quickstart/fill-up.png"
   width="50%"
   caption="Account recovery or transfer keywords"
 />
