@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
+rak_img: /assets/images/knowledge-hub/rak-developer-kit/starter-kit/rak-developer-kit1.png
 rak_desc: This guide provides step-by-step tutorial on how to use your WisBlock Starter Kit and RAK Edge Gateway.
 tags:
   - Tutorial

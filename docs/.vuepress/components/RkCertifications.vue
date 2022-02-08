@@ -101,6 +101,9 @@ export default {
           case 'NBTC':
             data.img = '/assets/images/certifications/NBTC.png'
             break
+          case 'ISED':
+            data.img = '/assets/images/certifications/ISED.png'
+            break
           default:
             data.img =
               'https://image.shutterstock.com/image-illustration/white-unknown-document-icon-isolated-600w-1517588975.jpg'

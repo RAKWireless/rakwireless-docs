@@ -48,7 +48,7 @@ Products Used:
 
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot/troubleshooting/1a.png"
+  src="/assets/images/wisgate/rak-hotspot/troubleshooting/1.png"
   width="100%"
   caption="RAK Hotspot + Magnetic Antenna Base + Fiberglass Antenna"
 /> 
@@ -63,7 +63,7 @@ Products Used:
 - [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
   
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot/troubleshooting/2a.png"
+  src="/assets/images/wisgate/rak-hotspot/troubleshooting/2.png"
   width="100%"
   caption="RAK Hotspot + Converter Cable + Fiberglass Antenna"
 /> 
@@ -78,7 +78,7 @@ Products Used:
 - [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot/troubleshooting/7a.png"
+  src="/assets/images/wisgate/rak-hotspot/troubleshooting/7.png"
   width="100%"
   caption="RAK Hotspot + Outdoor Enclosure Kit RAKBox-GW-3 + Lightning Arrestor + Fiberglass Antenna"
 /> 
@@ -93,7 +93,7 @@ Products Used:
 - [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot/troubleshooting/3a.png"
+  src="/assets/images/wisgate/rak-hotspot/troubleshooting/3.png"
   width="100%"
   caption="RAK Hotspot + Converter Cable + Lightning Arrestor + Fiberglass Antenna"
 /> 
@@ -107,7 +107,7 @@ Products Used:
 - [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot/troubleshooting/4a.png"
+  src="/assets/images/wisgate/rak-hotspot/troubleshooting/4.png"
   width="100%"
   caption="RAK Hotspot + Pulsar Cable LMR400 RAK9733 + Fiberglass Antenna"
 /> 
@@ -123,7 +123,7 @@ Products Used:
 
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot/troubleshooting/5a.png"
+  src="/assets/images/wisgate/rak-hotspot/troubleshooting/5.png"
   width="100%"
   caption="RAK Hotspot + Pulsar Cable LMR400 RAK9733 + Lightning Arrestor + Fiberglass Antenna"
 /> 
@@ -138,7 +138,7 @@ Products Used:
 
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot/troubleshooting/6a.png"
+  src="/assets/images/wisgate/rak-hotspot/troubleshooting/6.png"
   width="100%"
   caption="RAK Hotspot + Outdoor Enclosure Kit RAKBox-GW-3 + Fiberglass Antenna"
 /> 
@@ -154,7 +154,7 @@ Products Used:
 
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot/troubleshooting/8a.png"
+  src="/assets/images/wisgate/rak-hotspot/troubleshooting/8.png"
   width="100%"
   caption="RAK Hotspot + Outdoor Enclosure Kit RAKBox-GW-3 + Pulsar Cable LMR400 RAK9731 + Fiberglass Antenna"
 /> 
@@ -171,7 +171,7 @@ Products Used:
 
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot/troubleshooting/9a.png"
+  src="/assets/images/wisgate/rak-hotspot/troubleshooting/9.png"
   width="100%"
   caption="RAK Hotspot + Outdoor Enclosure Kit RAKBox-GW-3 + Pulsar Cable LMR400 RAK9731 + Lightning Arrestor + Fiberglass Antenna"
 /> 

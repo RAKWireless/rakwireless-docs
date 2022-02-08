@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
+rak_img: /assets/images/knowledge-hub/rak-developer-kit/kit-4/rak-developer-kit4.png
 rak_desc: This guide provides a step-by-step tutorial on how to use your WisBlock Kit 4 and RAK Edge Gateway. 
 tags:
   - Tutorial

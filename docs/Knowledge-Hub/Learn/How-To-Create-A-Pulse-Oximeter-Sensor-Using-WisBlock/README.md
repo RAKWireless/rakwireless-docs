@@ -60,7 +60,7 @@ Here are the parts and materials neede in creating your Pulse Oximeter Sensor wi
 
 <rk-img
   src="\assets\images\knowledge-hub\tutorials\how-to-create-a-pulse-oximeter-sensor-using-wisblock\2.parts-needed.png"
-  width="70%"
+  width="100%"
   caption="Parts needed"
 />
 
@@ -78,8 +78,8 @@ Here are the parts and materials neede in creating your Pulse Oximeter Sensor wi
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\how-to-create-a-pulse-oximeter-sensor-using-wisblock\4.fix-screws.png"
-  width="70%"
+  src="\assets\images\knowledge-hub\tutorials\how-to-create-a-pulse-oximeter-sensor-using-wisblock\4.fix-screws.gif"
+  width="50%"
   caption="Fix all the screws"
 />
 
@@ -89,7 +89,7 @@ Here are the parts and materials neede in creating your Pulse Oximeter Sensor wi
 
 <rk-img
   src="\assets\images\knowledge-hub\tutorials\how-to-create-a-pulse-oximeter-sensor-using-wisblock\5.connect-lcd.png"
-  width="70%"
+  width="90%"
   caption="LCD 2x16 I2C Module configurations"
 />
 

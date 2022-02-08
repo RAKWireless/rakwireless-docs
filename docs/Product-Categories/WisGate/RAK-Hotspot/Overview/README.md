@@ -20,6 +20,11 @@ Thank you for choosing **RAK Hotspot** in your awesome IoT Project! 🎉 To help
 * [Troubleshooting](../Troubleshooting/)
 * [Datasheet](../Datasheet/)
 * [RAK Hotspot Outdoor Case Assembly Guide](.../../../../../Accessories/Outdoor-Enclosure-Kit/Overview/#rak-hotspot-outdoor-case)
+
+**Helium Network Reference Sites**
+* [Helium Status](https://status.helium.com/)
+* [Helium Engineering](https://engineering.helium.com/)
+* [Helium Discord](https://discord.com/invite/helium)
 ## Product Background
 
 **Hotspot Details**

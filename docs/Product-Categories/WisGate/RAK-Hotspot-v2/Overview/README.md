@@ -21,6 +21,11 @@ Thank you for choosing **RAK Hotspot v2** in your awesome IoT Project! 🎉 To h
 * [Datasheet](../Datasheet/)
 * [ErP Test Report](https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotMinerV2.0_ERP_Certification.pdf)
 * [RAK Hotspot Outdoor Case Assembly Guide](.../../../../../Accessories/Outdoor-Enclosure-Kit/Overview/#rak-hotspot-outdoor-case)
+
+**Helium Network Reference Sites**
+* [Helium Status](https://status.helium.com/)
+* [Helium Engineering](https://engineering.helium.com/)
+* [Helium Discord](https://discord.com/invite/helium)
 ## Product Background
 
 **Hotspot Details**

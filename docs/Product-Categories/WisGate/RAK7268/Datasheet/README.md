@@ -13,8 +13,8 @@ certifications:
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RCM%C2%A0cert_RAK7268%26RAK7268C.pdf]
   - [Anatel, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_ANATEL_cert.zip]
   - [IC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_IC_cert.zip]
-  - [KCC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_RAK7268C_KC%20certification.pdf]
   - [SRRC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_SRRC.pdf]
+  - [KC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_KC_Certification.pdf]
 ---
 
 # RAK7268 WisGate Edge Lite 2 Datasheet
