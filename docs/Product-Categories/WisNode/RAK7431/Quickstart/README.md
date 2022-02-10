@@ -443,7 +443,7 @@ Application/{{application_ID}}/device/{{device_EUI}}/status
 
 3. On the next window, input the **Broker Address** and **Broker Port**. If the Client ID is empty press **Generate**. Then click **OK**.
 
-- **Broken Address**: Address of MQTT server – the gateway IP. 
+- **Broker Address**: Address of MQTT server – the gateway IP. 
 - **Broker Port**: Consistent with MQTT Broker Port set by the gateway - by default 1883.
 
 <rk-img
