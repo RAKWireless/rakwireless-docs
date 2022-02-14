@@ -2,7 +2,7 @@
 rak_img: /assets/images/wisblock/rak12035/overview/RAK12035_home.png
 rak_desc: RAK12035 is a WisBlock soil moisture sensor probe that uses capacitive sensing to measure the amount of moisture in the soil and the soil temperature.
 rak_grp: [wisblock, wissensor]
-next: ../Datasheet/
+next: ../Quickstart/
 prev: ../../
 tags:
     - wisblock
@@ -14,6 +14,7 @@ tags:
 
 Thank you for choosing **RAK12035 WisBlock Soil Moisture Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [RAK12035 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)

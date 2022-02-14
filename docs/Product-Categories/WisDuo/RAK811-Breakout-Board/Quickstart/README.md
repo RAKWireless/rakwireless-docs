@@ -901,52 +901,77 @@ This section shows how to use LoRa P2P mode. You will be using EU868 as the freq
 
 2. Next, connect these two RAK811 Breakout Board with PC through UART, and open two serial port tool on PC.
 
-3. Now, configure them to both work in LoRaP2P mode as follow:
+3. Set the RAK811 to work in LoRa P2P mode. Open the RAK Serial Port Tool and send the following command:
 
 ```sh
 at+set_config=lora:work_mode:1
 ```
 
 <rk-img
-  src="/assets/images/wisduo/rak811-breakout-board/quickstart/lora-p2p-mode/qytvsg9mx3y4drl7pwrg.png"
+  src="/assets/images/wisduo/rak811-breakout-board/quickstart/lora-p2p-mode/lora-p2p.png"
   width="45%"
   caption="P2P Initialization"
 />
 
-4. Then, configure LoRaP2P parameters for both of them.
+4. Then, configure LoRa P2P parameters for both of them.
 
-```sh
+
+```
+at+set_config=lorap2p:XXX:Y:Z:A:B:C
+```
+
+
+For this example, the LoRa parameters are the following:
+
+- Link frequency: **869525000&nbsp;Hz**
+- Spreading factor: **7**
+- Bandwidth: **125&nbsp;kHz**
+- Coding Rate: **4/5**
+- Preamble Length: **5**
+- Power: **5&nbsp;dBm**
+
+:::tip 📝 NOTE:
+
+Refer to the [Configuring Using AT Commands](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/) section to learn more about the definition of the parameters used.
+
+:::
+
+Hence, it is translated into the following RAK811 AT command and sent to both units.
+
+```
 at+set_config=lorap2p:869525000:7:0:1:5:5
 ```
 
 <rk-img
-  src="/assets/images/wisduo/rak811-breakout-board/quickstart/lora-p2p-mode/fyoulppnh8gdz3vawjv7.jpg"
-  width="90%"
+  src="/assets/images/wisduo/rak811-breakout-board/quickstart/lora-p2p-mode/configuring-p2p.png"
+  width="45%"
   caption="Configuring P2P in both RAK811 Breakout Board Nodes"
 />
 
-5. Try to send a message from RAK811 Breakout Board 2 (the right one) to RAK811 Breakout Board 1 (the left one):
+5. Set the transmission mode of the module. Unit 1 is configured as the sender, and Unit 2 is set to the receiver by AT command.
 
-```sh
+```
+at+set_config=lorap2p:transfer_mode:2
+
+at+set_config=lorap2p:transfer_mode:1
+```
+
+<rk-img
+  src="/assets/images/wisduo/rak811-breakout-board/quickstart/lora-p2p-mode/mode-setting.png"
+  width="90%"
+  caption="Setting Modes in both RAK811 Module"
+/>
+
+6. Try sending a message from Unit 1 to Unit 2. 
+
+```
 at+send=lorap2p:1234567890
 ```
 
 <rk-img
-  src="/assets/images/wisduo/rak811-breakout-board/quickstart/lora-p2p-mode/khjhkisjuxtjb5oxps94.png"
+  src="/assets/images/wisduo/rak811-breakout-board/quickstart/lora-p2p-mode/sending-message.png"
   width="90%"
-  caption="Message sent and received status in the two Nodes"
-/>
-
-6. You can send more messages.
-
-```sh
-at+send=lorap2p:12345678901234567890
-```
-
-<rk-img
-  src="/assets/images/wisduo/rak811-breakout-board/quickstart/lora-p2p-mode/ckbymbjhypol3p0q1bjp.jpg"
-  width="90%"
-  caption="Succeeding Messages sent to the other Node"
+  caption="Message sent and received status in the two modules"
 />
 
 You have successfully finished your RAK811 Breakout Board set up. 

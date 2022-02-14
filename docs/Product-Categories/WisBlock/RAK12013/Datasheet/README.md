@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisblock
   - RAK12013
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -25,7 +25,7 @@ RAK12013 is a 3.2GHz microwave radar module based on RCWL-9196. It uses the Dopp
 
 ::: tip 📝 NOTE
 1. Radar signals don't interfere with other signals such as LoRa, WiFi, and Bluetooth; but multiple radar signals interfere with each other between single individuals over a distance greater than 1 meter.
-2. The component side of the PCB module is the positive sensing face, while the opposite side is the negative sensing face. The negative sensing face is less effective in terms of sensing.
+2. The component side of the PCB module or the front is the positive sensing face, while the opposite side which is the back is the negative sensing face. The negative sensing face is less effective in terms of sensing.
 ::: 
 
 ### Features

@@ -36,7 +36,7 @@ For All WisBlock Core Modules:
 
 The **RAK14000 WisBlock E-Ink Display Module** is designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a WisBlock Base module.
 
-The **RAK14000** module provides an interface to connect an E-Ink Display, which is known to be an extremely power-efficient display. The **E-Ink Display** is an Active Matrix Electrophoretic Display (AM EPD) module with 2.9&nbsp;inches active area (212 × 104 pixels for White Black Version and 250 x 122 pixels for the White-Black-Red Version). It also allows you to connect a Three-Button Module, which can be used on a different application. All of this can be controlled through a WisBlock Core. 
+The **RAK14000** module provides an interface to connect an E-Ink Display, which is known to be an extremely power-efficient display. The **E-Ink Display** is an Active Matrix Electrophoretic Display (AM EPD) module with 2.13&nbsp;inches active area (212 × 104 pixels for White Black Version and 250 x 122 pixels for the White-Black-Red Version). It also allows you to connect a Three-Button Module, which can be used on a different application. All of this can be controlled through a WisBlock Core. 
 
 :::tip 📝 NOTE:
 There are two versions of RAK14000 module for sale in the RAKwireless Store, the [white-black display panel](https://store.rakwireless.com/products/wisblock-epd-module-rak14000?variant=39534109655238) and [white-black-red display panel](https://store.rakwireless.com/products/wisblock-epd-module-rak14000?variant=39534109688006) version.
@@ -55,7 +55,7 @@ There are two versions of RAK14000 module for sale in the RAKwireless Store, the
 * **White-Black-Red**
     * Display Resolution: 250 x 122 pixels
 * **Size**
-    * Display Size: 2.9 inches
+    * Display Size: 2.13 inches
 
 ## Prerequisites  
   

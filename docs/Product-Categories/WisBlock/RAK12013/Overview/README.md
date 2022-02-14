@@ -2,7 +2,7 @@
 rak_img: /assets/images/wisblock/rak12013/overview/RAK12013_home.png
 rak_desc: RAK12013 is a WisBlock sensor that applies the Doppler radar effect to detect moving objects/motion using microwaves at a 360 degrees angle within 7 meters radius.
 rak_grp: [wisblock, wissensor]
-next: ../Datasheet/
+next: ../Quickstart/
 prev: ../../
 tags:
     - wisblock
@@ -14,6 +14,7 @@ tags:
 
 Thank you for choosing **RAK12013 WisBlock Radar Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [RAK12013 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
