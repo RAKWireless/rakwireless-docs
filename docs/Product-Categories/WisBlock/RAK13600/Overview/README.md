@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak13600/overview/RAK13600_home.png
 rak_desc: RAK13600 is a WisBlock NFC Reader module that enables WisBlock projects to scan NFC and RFID-enabled devices, as well as tags.
 rak_grp: [wisblock, wiswireless]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK13600
@@ -13,6 +13,7 @@ tags:
 
 Thank you for choosing **RAK13600 WisBlock NFC Reader Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
+* [RAK13600 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
@@ -23,7 +24,7 @@ Thank you for choosing **RAK13600 WisBlock NFC Reader Module** in your awesome I
 
 ## Product Description
 
-**RAK13600** is a **WisBlock Interface** NFC reader module based on the PN532 chip. It provides a compact and low-power solution for NFC-related IoT applications. The RAK13600 has an integrated transceiver module used for NFC applications which operate at 13.56&nbsp;MHz and is also based on the standard 80C51 microcontroller core. It supports six (6) different operating modes:
+**RAK13600** is a **WisBlock Wireless** NFC reader module based on the PN532 chip. It provides a compact and low-power solution for NFC-related IoT applications. The RAK13600 has an integrated transceiver module used for NFC applications which operate at 13.56&nbsp;MHz and is also based on the standard 80C51 microcontroller core. It supports six (6) different operating modes:
 
 
 - ISO/IEC 14443A/MIFARE Reader/Writer

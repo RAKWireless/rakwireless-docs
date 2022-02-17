@@ -45,7 +45,7 @@ RAK13005 is a WisBlock LIN Module that extends the WisBlock system to be used on
 #### Pin Definition
 
 <rk-img
-  src="/assets/images/wisblock/rak13005/quickstart/rak13005-pinout.svg"
+  src="/assets/images/wisblock/rak13005/quickstart/rak13005-pinout.png"
   width="30%"
   caption="RAK13005 Pin Definition"
 />
@@ -56,7 +56,7 @@ By default, the RAK13005 LIN Module is configured as Peripheral (slave), and an 
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/rak13005-mod.png"
-  width="60%"
+  width="40%"
   caption="RAK13005 LIN Mode Configuration"
 />
 

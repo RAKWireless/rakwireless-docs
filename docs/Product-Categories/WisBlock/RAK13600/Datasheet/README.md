@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisblock
   - RAK13600
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -15,7 +15,7 @@ next: false
 
 ### Description
 
-**RAK13600** is a **WisBlock Interface** NFC reader module based on the PN532 chip. It provides a compact and low-power solution for NFC-related IoT applications. The RAK13600 has an integrated transceiver module used for NFC applications which operates at 13.56 MHz and is also based on the standard 80C51 microcontroller core. It supports 6 different operating
+**RAK13600** is a **WisBlock Wireless** NFC reader module based on the PN532 chip. It provides a compact and low-power solution for NFC-related IoT applications. The RAK13600 has an integrated transceiver module used for NFC applications which operates at 13.56 MHz and is also based on the standard 80C51 microcontroller core. It supports 6 different operating
 modes:
 
 
