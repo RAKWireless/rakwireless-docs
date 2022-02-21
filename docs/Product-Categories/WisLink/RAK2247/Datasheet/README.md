@@ -82,7 +82,7 @@ RAK2247 WisLink LPWAN Concentrator must be supplied through the **3.3Vaux** pins
 
 ##### SPI Interface
 
-SPI interface is provided on the PCIe*SCK, PCIe* MISO, PCIe*MOSI, PCIe* CSN pins of the system connector. The SPI interface gives access to the configuration register of SX1301 via a synchronous full-duplex protocol. Only the slave side is implemented.
+SPI interface is provided on the PCIe_SCK, PCIe_MISO, PCIe_MOSI, PCIe_CSN pins of the system connector. The SPI interface gives access to the configuration register of SX1301 via a synchronous full-duplex protocol. Only the slave side is implemented.
 
 :::tip 📝 NOTE
 RAK2247-USB version does not have this interface.
@@ -245,10 +245,10 @@ RAK2247 WisLink LPWAN Concentrator is an Electrostatic Sensitive Device and requ
 
 ##### Power Consumption
 
-| Mode             | Condition                                                 | Min. | Typical | Max. |
-| ---------------- | --------------------------------------------------------- | ---- | ------- | ---- |
-| Active-Mode(TX)  | The power of TX channel is 25dBm and 3.3V supply.         |      | 789 mA  |      |
-| Active-Mode(RX ) | TX disabled and RX enabled.                               |      | 422 mA  |      |
+| Mode            | Condition                                         | Min. | Typical | Max. |
+| --------------- | ------------------------------------------------- | ---- | ------- | ---- |
+| Active-Mode(TX) | The power of TX channel is 25dBm and 3.3V supply. |      | 789 mA  |      |
+| Active-Mode(RX) | TX disabled and RX enabled.                       |      | 422 mA  |      |
 
 ##### Power Supply Range
 
@@ -279,7 +279,7 @@ Unless otherwise indicated, all operating condition specifications are at an amb
 RAK2247 card refers to Semtech's reference design of SX1301. The SPI interface or USB interface converts SPI to USB2.0 by FT2232H and can be used on PCIE connector.
 
 <rk-img
-  src="/assets/images/wislink-lora/rak2247/datasheet/schematic-2.png"
+  src="/assets/images/wislink-lora/rak2247/datasheet/schematic-2.jpg"
   width="80%"
   caption="RAK2247 Schematic Diagram"
 />
@@ -298,8 +298,8 @@ The figure below shows the minimum application schematic of the RAK2247 card. Yo
 
 | Model         | Raspberry Pi Board  | Firmware Version | Source                                                                                                            |
 | ------------- | ------------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------- |
-| RAK2247 - SPI | Raspberry Pi 3B+, 4 | V4.2.5R          | [Download](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Firmware/RAK2247_spi_Latest_Firmware.zip) |
-| RAK2247 - USB | Raspberry Pi 3B+, 4 | V4.2.5R          | [Download](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Firmware/RAK2247_usb_Latest_Firmware.zip) |
+| RAK2247 - SPI | Raspberry Pi 3B+, 4 | V4.2.6R          | [Download](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Firmware/RAK2247-SPI_Latest_Firmware.zip) |
+| RAK2247 - USB | Raspberry Pi 3B+, 4 | V4.2.6R          | [Download](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Firmware/RAK2247-USB_Latest_Firmware.zip) |
 
 ## Models / Bundles
 

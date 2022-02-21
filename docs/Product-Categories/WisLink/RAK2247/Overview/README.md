@@ -20,8 +20,8 @@ RAK2247 supports development based on multiple platforms, you can choose suitabl
 
 * **RAK2247 USB/SPI + Raspberry Pi**
   * [Source Code Repository](https://github.com/RAKWireless/rak_common_for_gateway)
-  * [RAK2247 USB + Raspberry Pi Firmware](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Frimware/RAK2247-USB_Latest_Firmware.zip)
-  * [RAK2247 SPI + Raspberry Pi Firmware](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Frimware/RAK2247-SPI_Latest_Firmware.zip)
+  * [RAK2247 USB + Raspberry Pi Firmware](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Firmware/RAK2247-USB_Latest_Firmware.zip)
+  * [RAK2247 SPI + Raspberry Pi Firmware](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Firmware/RAK2247-SPI_Latest_Firmware.zip)
 * **RAK2247 USB + x86 PC**
   * [Source Code Repository](https://github.com/RAKWireless/rak_common_for_gateway)
   * [Quick Start Guide](/Product-Categories/WisLink/RAK2247/Quickstart/#rak2247-x86-linux-pc)

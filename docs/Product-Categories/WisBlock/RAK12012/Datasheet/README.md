@@ -69,7 +69,7 @@ The RAK12012 WisBlock Heart Rate module comprises a standard WisIO connector. Th
  
 ::: tip 📝 NOTE
 - **I2C** related pins: **INT**,**3V3_S**, and **GND** are connected to WisIO connector.
-- The **3V3_S** supply can be disconnected to save power via **WB_IO2**. 
+- **3V3_S** voltage output from the WisBlock Base that powers the RAK12012 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12012 module. 
 :::
 
  <rk-img

@@ -57,6 +57,7 @@ The RAK12015 WisBlock Vibration Detection Module comprises a standard WisIO conn
 
 ::: tip 📝 NOTE
 - The **3V3_S**, **AIN1**, and **GND** are connected to WisIO connector.
+- **3V3_S** voltage output from the WisBlock Base that powers the RAK12015 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12015 module.
 :::
 
 #### Electrical Characteristics

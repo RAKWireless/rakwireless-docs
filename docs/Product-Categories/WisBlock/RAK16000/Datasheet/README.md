@@ -72,7 +72,7 @@ The RAK16000 WisBlock DC Current Module comprises a standard 40-pin WisIO connec
 ::: tip 📝 NOTE
 
 - Only the **I2C** related pins, **3V3_S** and **GND** are connected to the WisIO connector.
-
+- **3V3_S** voltage output from the WisBlock Base that powers the RAK16000 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK16000 module.
 :::  
 
 #### Electrical Characteristics

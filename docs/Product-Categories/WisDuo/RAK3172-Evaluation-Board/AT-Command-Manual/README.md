@@ -1396,7 +1396,7 @@ This command is used to get the firmware version installed on the device.
 
 ```
 AT+VER=?
-V1.0.2
+V1.0.4
 
 OK
 ```

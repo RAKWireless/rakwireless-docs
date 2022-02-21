@@ -568,9 +568,22 @@ or
 
 Then download the latest [RAK4631 bootloader firmware](https://github.com/RAKWireless/WisBlock/blob/master/bootloader/RAK4630/Latest/WisCore_RAK4631_Board_Bootloader.zip).
 
-You also need to determine the port name of the RAK4631 using the command:
+Open a new terminal window and connect the RAK4631 to the PC via USB. Now use the `dmesg` command to display system information and check if the USB device has been recognized by Linux. 
 
-`ls /dev/tty*`
+If the RAK4631 USB device is recognized, a listing for the device similar to the one below will be displayed.
+```
+usb 1-1: New USB device found, idVendor=239a, idProduct=0029, bcdDevice= 1.00
+usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 1-1: Product: WisBlock RAK4631
+usb 1-1: Manufacturer: RAKWireless
+usb 1-1: SerialNumber: XXXXXXXXXXXXXXXX
+usb-storage 1-1:1.2: USB Mass Storage device detected
+scsi host1: usb-storage 1-1:1.2
+usbcore: registered new interface driver usb-storage
+cdc_acm 1-1:1.0: ttyACM0: USB ACM device
+usbcore: registered new interface driver cdc_acm
+```
+The line `cdc_acm 1-1:1.0: ttyACM0: USB ACM device` indicates that the port **/dev/ttyACM0** has been allocated for RAK4631.
 
 After determining the port name, go to the directory where the bootloader FW file `WisCore_RAK4631_Board_Bootloader.zip` is located.
 

@@ -182,4 +182,4 @@ RAK3272S uses UART2 serial pins to upload the latest firmware.
 
 | Model    | Version | Source                                                                                            |
 | -------- | ------- | ------------------------------------------------------------------------------------------------- |
-| RAK3272S | V1.0.3  | [Download](https://downloads.rakwireless.com/LoRa/RAK3272S/Firmware/RAK3272S_Latest_Firmware.zip) |
+| RAK3272S | V1.0.4  | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/RAK3172_Latest_Firmware.zip) |

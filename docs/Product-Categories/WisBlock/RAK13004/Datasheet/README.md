@@ -74,9 +74,9 @@ Figure 2 shows PCA9685 device addressing. Default A5, A4, and A3 are connected t
 The RAK13004 WisBlock PWM Expander Module comprises a standard WisConnector. The WisConnector allows the RAK13004 module to be mounted on a WisBlock Base board. The pin order of the connector and the pinout definition is shown in Figure 3. 
 
 :::tip 📝 NOTE:
-- **I2C** related pins, **OE**，**3V3**, and **GND** are connected to this module.
+- **I2C** related pins, **OE**, **3V3_S**, and **GND** are connected to this module.
 - **OE** output enable pin, low active, internal pull-up, disable output.
-- 3V3 and 3V3_S from WisBlock Base board, but 3V3_S can be controlled by IO2. Default is connected to 3V3_S.
+- **3V3_S** voltage output from the WisBlock Base that powers the RAK13004 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK13004 module.
 :::
 
 <rk-img

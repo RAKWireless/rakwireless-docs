@@ -62,7 +62,7 @@ The RAK12006 module has a 40-pin WisConnector that is compatible to the WisBlock
 ::: tip 📝 NOTE
 - Only **Digital OUT**, **3V3**, and **GND** are connected to WisConnector.
 
-- An optional **3V3_S** supply voltage can be used to turn ON or OFF the RAK12006 module through the **IO2** pin. This can be helpful on low power application.
+- An optional **3V3_S** supply voltage can be used to turn ON or OFF the RAK12006 module through the IO2 pin. This can be helpful on low power application.
 
 - To disable the default **3V3** supply and use the alternative **3V3_S** supply source, the resistor jumpers R1 must be 0&nbsp;Ω and R2 must be NC (not connected).
 :::  
