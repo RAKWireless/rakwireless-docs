@@ -36,6 +36,9 @@ RAK2247 supports development based on multiple platforms, you can choose suitabl
   * [Yocto Quickstart](https://github.com/RAKWireless/RAK833-LoRaGateway-SolidRun-Yocto)
   * [Debian Quickstart](https://github.com/RAKWireless/RAK833-LoRaGateway-SolidRun-Debian)
 
+:::tip 📝 NOTE
+To address the chip shortage and not disrupt our customers' and partners' operations, the RAK2247 SPI is available with SX1308 core.  It can completely replace the RAK2247 with SX1301. The only difference is the operating temperature. For more information, check the [RAK2247 Operating Conditions](../Datasheet/#operating-conditions)
+:::
 ## Product Description
 
 The **RAK2247 WisLink LPWAN Concentrator** is a LoRa Concentrator module with mini-PCIe form factor based on the SX1301. This enables easy integration into routers and other networking equipment, adding gateway capabilities. The module can be used in any embedded platform offering a mini-PCIe slot with an SPI or USB connection.

@@ -524,7 +524,7 @@ In this method, you need two things that must be in the same directory:
 
 ##### For Windows
 
-Download the [adafruit-nrfutil.exe](https://github.com/adafruit/Adafruit_nRF52_nrfutil/releases/download/%24(APPVEYOR_REPO_TAG_NAME)/adafruit-nrfutil.exe) and the latest [RAK4631 bootloader firmware](https://github.com/RAKWireless/WisBlock/blob/master/bootloader/RAK4630/Latest/WisCore_RAK4631_Board_Bootloader.zip).
+Download the [adafruit-nrfutil.exe](https://github.com/adafruit/Adafruit_nRF52_nrfutil/releases/download/%24(APPVEYOR_REPO_TAG_NAME)/adafruit-nrfutil.exe) and the latest [RAK4631 bootloader firmware](https://github.com/RAKWireless/WisBlock/releases).
 
 :::tip 📝 NOTE
 Detailed information about the RAK4631 Bootloader can be found on the [bootloader repository](https://github.com/RAKWireless/WisBlock/blob/master/bootloader/RAK4630). 
@@ -566,7 +566,7 @@ or
 
 `pip3 install --user adafruit-nrfutil`
 
-Then download the latest [RAK4631 bootloader firmware](https://github.com/RAKWireless/WisBlock/blob/master/bootloader/RAK4630/Latest/WisCore_RAK4631_Board_Bootloader.zip).
+Then download the latest [RAK4631 bootloader firmware](https://github.com/RAKWireless/WisBlock/releases).
 
 Open a new terminal window and connect the RAK4631 to the PC via USB. Now use the `dmesg` command to display system information and check if the USB device has been recognized by Linux. 
 
@@ -594,7 +594,7 @@ Then execute the following command:
 
 ##### For macOS
 
-The same with Windows and Linux procedures, download the latest [RAK4631 bootloader firmware](https://github.com/RAKWireless/WisBlock/blob/master/bootloader/RAK4630/Latest/WisCore_RAK4631_Board_Bootloader.zip).
+The same with Windows and Linux procedures, download the latest [RAK4631 bootloader firmware](https://github.com/RAKWireless/WisBlock/releases).
 
 There are two ways to update the RAK4631 bootloader in macOS.
 

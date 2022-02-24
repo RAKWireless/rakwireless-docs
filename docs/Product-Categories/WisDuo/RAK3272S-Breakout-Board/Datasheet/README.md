@@ -81,8 +81,8 @@ Only one I2C and SPI interface of RAK3272S:
 #### Pin Definition
 
 <rk-img
-  src="/assets/images/wisduo/rak3272s-breakout-board/datasheet/pinout.svg"
-  width="50%"
+  src="/assets/images/wisduo/rak3272s-breakout-board/datasheet/pinout.png"
+  width="70%"
   caption="RAK3272S Breakout Board Pinout"
 />
 
@@ -114,7 +114,13 @@ The tables below show the pin definition of the RAK3272S Breakout Board:
 | 6   | SWCLK    | SWD debug pin (SWCLK)                               | PA14            |
 | 7   | UART2_TX | UART2/LPUART1 Interface (AT Commands and FW Update) | PA2             |
 | 8   | UART2_RX | UART2/LPUART1 Interface (AT Commands and FW Update) | PA3             |
-| 9   | PA8      | GPIO                                                | PA8             |
+| 9   | 3V3      | *Power Supply (check warning)                       | -               |
+
+:::warning ⚠️ WARNING
+
+- The J4 pin definition table is applicable to RAK3272S VerC. If you have **RAK3272S VerB**, **pin 9** is **not 3V3** but **connected to PA8**. 
+
+:::
 
 #### RF Characteristics
 

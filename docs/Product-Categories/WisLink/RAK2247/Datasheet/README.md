@@ -20,15 +20,13 @@ rak_img: /assets/images/wislink-lora/rak2247/quickstart/1.main/RAK2247_home.png
 
 # RAK2247 WisLink LPWAN Concentrator Datasheet
 
-<!-- <rk-img
-  src="/assets/images/wislink-lora/rak2247/datasheet/rak2247-overview.png"
-  width="50%"
-  caption="RAK2247 WisLink LPWAN Concentrator"
-/> -->
-
 ## Overview
-
 ### Description
+
+:::tip 📝 NOTE
+To address the chip shortage and not disrupt our customers' and partners' operations, the RAK2247 SPI is available with SX1308 core.  It can completely replace the RAK2247 with SX1301. The only difference is the operating temperature. For more information, check the [RAK2247 Operating Conditions](#operating-conditions)
+:::
+
 
 The **RAK2247 WisLink LPWAN Concentrator** is a LoRa Concentrator module with mini-PCIe form factor based on the SX1301. This enables easy integration into routers and other networking equipment, adding gateway capabilities. The module can be used in any embedded platform offering a mini-PCIe slot with an SPI or USB connection.
 
@@ -266,9 +264,10 @@ Input voltage at **3.3Vaux** must be above the normal operating range minimum li
 
 The table below lists the operation temperature range
 
-| Parameter                    | Min.  | Typical | Max.  | Remarks                                                                            |
-| ---------------------------- | ----- | ------- | ----- | ---------------------------------------------------------------------------------- |
-| Normal operating temperature | -40°C | +25°C   | +85°C | Normal operating temperature range (fully functional and meet 3GPP specifications) |
+| Parameter                                 | Min.  | Typical | Max.  | Remarks                                                                            |
+| ----------------------------------------- | ----- | ------- | ----- | ---------------------------------------------------------------------------------- |
+| Normal operating temperature (**RAK2247-SX1301**) | -40°C | +25°C   | +85°C | Normal operating temperature range (fully functional and meet 3GPP specifications) |
+| Normal operating temperature (**RAK2247-SX1308**) | 0°C   | -       | 70°C  | Normal operating temperature range (fully functional and meet 3GPP specifications) |
 
 :::tip 📝 NOTE
 Unless otherwise indicated, all operating condition specifications are at an ambient temperature of 25°C. Operation beyond the operating conditions is not recommended and extended exposure beyond them may affect device reliability.
