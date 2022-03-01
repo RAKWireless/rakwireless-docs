@@ -63,6 +63,10 @@ export default {
       {
         icon: 'fab fa-youtube-square',
         href: 'http://www.youtube.com/c/RAKwireless/'
+      },
+      {
+        icon: 'fab fa-tiktok',
+        href: 'https://www.tiktok.com/@rakwireless '
       }
     ]
   }),
