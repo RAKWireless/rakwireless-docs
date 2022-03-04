@@ -223,6 +223,24 @@ module.exports = {
     download: true,
     sidebarDepth: 4
   },
+  ],
+
+  '/Product-Categories/WisLink/LX200V50/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisLink/LX200V50/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisLink/LX200V50/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
 ]
 
 }

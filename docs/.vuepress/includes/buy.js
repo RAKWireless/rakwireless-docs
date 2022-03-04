@@ -51,6 +51,11 @@ export default {
     img: '/assets/images/wislink-lte/rak2011/overview/rak2011-buy.png',
     store: 'https://store.rakwireless.com/products/rak2011-cellular-board?utm_source=RAK2011WisLinkCellularBG96ArduinoShield&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisLink/LX200V50/': {
+    label: 'LX200V50 WisLink 1000 Mbps PLC Module + EVB',
+    img: '/assets/images/wislink-plc/lx200v50/overview/lx200v50.png',
+    store: 'https://store.rakwireless.com/'
+  },
 
   //WisDuino
   '/Product-Categories/WisDuino/RAK811-Evaluation-Board/': {

@@ -35,3 +35,12 @@ A collection of cellular modem boards in different form factors, with different 
 </rk-head>
 <rk-products :tags="['wislink', 'cellular']" />
 
+## WisLink PLC
+
+<rk-head img="/assets/rakwireless/product-categories/WisLink-PLC.svg">
+
+A collection of cellular modem boards in different form factors, with different capabilities and set of features. These boards can serve as both backhauls for base stations and routers, and as cellular modems for end-user devices.
+
+
+</rk-head>
+<rk-products :tags="['wislink', 'plc']" />

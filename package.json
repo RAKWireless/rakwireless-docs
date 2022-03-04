@@ -6,7 +6,7 @@
     "prepare": "patch-package"
   },
   "dependencies": {
-    "@quasar/extras": "1.8.2",
+    "@quasar/extras": "^1.12.5",
     "@vuepress/core": "^1.4.1",
     "@vuepress/plugin-back-to-top": "^1.4.1",
     "@vuepress/plugin-medium-zoom": "^1.4.1",

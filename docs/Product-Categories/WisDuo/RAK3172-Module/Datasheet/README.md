@@ -15,6 +15,8 @@ certifications:
   - [LoRaWAN, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_lora_alliance_certification.pdf]
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RCM_certification.pdf]
   - [UKCA, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_UKCA_certification.pdf]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_REACH_Report.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RoHS_Report.pdf]
 ---
 
 # RAK3172 WisDuo LPWAN Module Datasheet
