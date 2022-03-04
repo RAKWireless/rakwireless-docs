@@ -12,7 +12,7 @@ tags:
 
 # RAK19003 WisBlock Mini Base Board
 
-Thank you for choosing **RAK19003 WisBlock Mini Base Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK19003 WisBlock Mini Base Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK19003 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -27,7 +27,7 @@ Thank you for choosing **RAK19003 WisBlock Mini Base Board** in your awesome IoT
 ## Product Description
 
 
-**RAK19003** is a **WisBlock Base** board that connects **WisBlock Core** and **WisBlock Modules**. It provides the power supply and interconnection to the modules attached to it. It has one slot reserved for the WisBlock Core module and two Slot A-B for WisBlock Modules. The WisBlock Core is attached on the top side, and the WisBlock Modules are attached to the bottom side of the RAK19003 WisBlock Base board. Slot B holds modules up to 23&nbsp;mm in size, while Slot A supports 10&nbsp;mm WisBlock Modules. Also, there are two **2.54&nbsp;mm pitch headers** for extension interface with **BOOT**, **I2C**, and **UART** pins.
+**RAK19003** is a **WisBlock Base** board that connects **WisBlock Core** and **WisBlock Modules**. It provides the power supply and interconnection to the modules attached to it. It has one slot reserved for the WisBlock Core module and two Slot C-D for WisBlock Modules. The WisBlock Core is attached on the top side, and the WisBlock Modules are attached to the bottom side of the RAK19003 WisBlock Base board. Slot D holds modules up to 23&nbsp;mm in size, while Slot C supports 10&nbsp;mm WisBlock Modules. Also, there are two **2.54&nbsp;mm pitch headers** for extension interface with **BOOT**, **I2C**, and **UART** pins.
 
 For convenience, there is a Type-C USB connector that is connected directly to WisBlock Core MCU’s USB port (if supported) or to a USB-UART converter depending on the WisBlock Core. It can be used for uploading firmware or serial communication. The USB-C connector is also used as a battery charging port.
 
@@ -36,13 +36,13 @@ WisBlock Modules are connected to the RAK19003 WisBlock Base board via **high-sp
 Using **RAK19003** as your WisBlock Base board, you can make your project compact, which is ideal in small enclosures. You can also use a [RAK19005 WisBlock Sensor Extension Cable](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005) to position WisBlock Modules apart from the WisBlock Base board or in any part of your case. **RAK19003** has connectors for the following:
 
 * 1 WisBlock Core module
-* 2 WisBlock Modules compatible to Slot A-B
+* 2 WisBlock Modules compatible with Slot A-B
 * 1 Type-C USB port for programming and debugging
 * 3.7&nbsp;V Rechargeable battery connector
 * 5&nbsp;V Solar Panel connector
 * 2 Headers with BOOT, I2C, and UART pins accessible with solder contacts
 
-Additionaly, it has two user definable LED’s, one power supply/charging indicator LED and a reset button.
+Additionally, it has two user-definable LEDs - one power supply/charging indicator LED and a reset button.
 
 ## Product Features
 

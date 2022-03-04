@@ -371,16 +371,22 @@ The procedure in disassembling any type of WisBlock modules is the same.
 
 #### Battery Connection
 
-RAK5005-O can be powered via the USB cable or Li-Ion/LiPo battery via the dedicated connectors, as shown in **Figure 22**. The matching connector for the battery wires is an [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199).
+RAK5005-O can be powered via the USB cable or Li-Ion/LiPo battery via the dedicated connectors, as shown in **Figure 22**. The matching connector for the battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199).
 
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/quickstart/battery-connect.png"
   width="40%"
-  caption="Battery Connection"
+  caption="Battery connection"
 />
 
-The battery can be recharged as well via a small Solar Panel, as shown in **Figure 22**. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287). The GND pin of [Battery Connector](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector) is located on edge of the board.
+<rk-img
+  src="/assets/images/wisblock/rak5005-o/quickstart/battery-polarity.png"
+  width="30%"
+  caption="Battery connector polarity"
+/>
+
+The battery can be recharged as well via a small Solar Panel, as shown in **Figure 22**. The matching connector for the solar panel wires is a [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287). The GND pin of the [battery connector](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector) is located on the edge of the board.
 
 :::warning ⚠️ WARNING
 
@@ -392,10 +398,18 @@ The battery can be recharged as well via a small Solar Panel, as shown in **Figu
 :::
 
 #### Solar Panel Connection
+
 <rk-img
   src="/assets/images/wisblock/rak5005-o/quickstart/solar-connect.png"
   width="60%"
-  caption="Solar Panel Connection"
+  caption="Solar panel connection"
+/>
+
+
+<rk-img
+  src="/assets/images/wisblock/rak5005-o/quickstart/solar-polarity.png"
+  width="30%"
+  caption="Solar panel connector polarity"
 />
 
 :::warning ⚠️ WARNING

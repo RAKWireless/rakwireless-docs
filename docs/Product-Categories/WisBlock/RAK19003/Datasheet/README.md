@@ -14,7 +14,7 @@ next: false
 
 ## WisBlock Mini Base Overview
 
-RAK19003 WisBlock Mini Base module is the new main board the allows you to attach WisBlock modules through the standardized expansion connectors. In addition, the WisBlock Mini Base module also comprises a Type-C USB connector, indicator LEDs, button, and sensor connectors.
+RAK19003 WisBlock Mini Base module is the new main board that allows you to attach WisBlock modules through the standardized expansion connectors. In addition, the WisBlock Mini Base module also comprises a Type-C USB connector, indicator LEDs, button, and sensor connectors.
 
 If you can't find a module that fits your IoT requirements, use the standard connectors of WisBlock to develop your own specific function module. WisBlock supports open-source hardware architecture and you can find tutorials showing how to create your own [Awesome WisBlock](https://github.com/RAKWireless/Awesome-WisBlock) module.
 
@@ -42,7 +42,7 @@ If you can't find a module that fits your IoT requirements, use the standard con
 
 ### Overview
 
-**RAK19003** is a **WisBlock Base** board that connects **WisBlock Core** and **WisBlock Modules**. It provides the power supply and interconnection to the modules attached to it. It has one slot reserved for the WisBlock Core module and two Slot A-B for WisBlock Modules. The WisBlock Core is attached on the top side, and the WisBlock Modules are attached to the bottom side of the RAK19003 WisBlock Base board. Slot B holds modules up to 23&nbsp;mm in size, while Slot A supports 10&nbsp;mm WisBlock Modules. Also, there are two **2.54&nbsp;mm pitch headers** for extension interface with **BOOT**, **I2C**, and **UART** pins.
+**RAK19003** is a **WisBlock Base** board that connects **WisBlock Core** and **WisBlock Modules**. It provides the power supply and interconnection to the modules attached to it. It has one slot reserved for the WisBlock Core module and two Slot C-D for WisBlock Modules. The WisBlock Core is attached on the top side, and the WisBlock Modules are attached to the bottom side of the RAK19003 WisBlock Base board. Slot D holds modules up to 23&nbsp;mm in size, while Slot C supports 10&nbsp;mm WisBlock Modules. Also, there are two **2.54&nbsp;mm pitch headers** for extension interface with **BOOT**, **I2C**, and **UART** pins.
 
 For convenience, there is a Type-C USB connector that is connected directly to WisBlock Core MCU’s USB port (if supported) or to a USB-UART converter depending on the WisBlock Core. It can be used for uploading firmware or serial communication. The USB-C connector is also used as a battery charging port.
 
@@ -70,20 +70,20 @@ The block diagram in **Figure 2** shows the internal architecture and external i
 
 ### Hardware
 
-The hardware specification is categorized into six parts. It discusses the interfacing, pinouts, and its corresponding functions and diagrams. It also covers the electrical, mechanical, and environmental parameters that include the tabular data of the functionalities and standard values of the RAK19003 WisBlock Mini Base.
+The hardware specification is categorized into six parts. It discusses the interfacing, pinouts, and their corresponding functions and diagrams. It also covers the electrical, mechanical, and environmental parameters that include the tabular data of the functionalities and standard values of the RAK19003 WisBlock Mini Base.
 
 #### Interfaces
 
 RAK19003 WisBlock Mini Base provides the following interfaces, headers, button, and WisConnectors:
 
 * 1 WisBlock Core module
-* 2 WisBlock Modules compatible to Slot A-B
+* 2 WisBlock Modules compatible with Slot A-B
 * 1 Type-C USB port for programming and debugging
 * 3.7&nbsp;V Rechargeable battery connector
 * 5&nbsp;V Solar Panel connector
 * 2 Headers with BOOT, I2C, and UART pins accessible with solder contacts
 
-Additionally, it has two user definable LED’s, one power supply/charging indicator LED and a reset button.
+Additionally, it has two user-definable LEDs - one power supply/charging indicator LED and a reset button.
 
 **Figure 3** and **Figure 4** show the location of RAK19003 main components.
 
@@ -94,7 +94,7 @@ Additionally, it has two user definable LED’s, one power supply/charging indic
 />
 
 <rk-img
-  src="/assets/images/wisblock/rak19003/datasheet/rak19003-interface-2.svg"
+  src="/assets/images/wisblock/rak19003/datasheet/wisconnector_c_d.png"
   width="50%"
   caption="RAK19003 Bottom View Components"
 />
@@ -115,7 +115,7 @@ The Type-C USB connector is compliant with the USB 2.0 specification. This USB i
 
 ##### J6 and J7 Headers
 
-On the WisBlock Mini Base board, there are two of 2.54&nbsp;mm pitch header for IO extension. BOOT, I2C, and UART pins from the WisBlock Core module are also connected to these headers.
+On the WisBlock Mini Base board, there are two 2.54&nbsp;mm pitch headers for the IO extension. BOOT, I2C, and UART pins from the WisBlock Core module are also connected to these headers.
 
 ###### J6 Header Pinout
 
@@ -139,7 +139,7 @@ On the WisBlock Mini Base board, there are two of 2.54&nbsp;mm pitch header for 
 
 
 :::tip 📝 NOTE BOOT pin 
-BOOT pin is used on startup configuration or sequence of the WisBlock Core connected to it. It is commonly used for uploading the bootloader and/or application firmware. The requirements of the state of the BOOT pin dependsS on the specific model of the WisBlock Core used.
+BOOT pin is used on startup configuration or sequence of the WisBlock Core connected to it. It is commonly used for uploading the bootloader and/or application firmware. The requirements of the state of the BOOT pin depend on the specific model of the WisBlock Core used.
 :::
 
 ##### Battery Connector
@@ -187,7 +187,7 @@ The Reset Push Button is connected to the MCU module. When pushed, it resets the
 
 ##### Connector for WisBlock Core
 
-The **WisCore module connector** is a 40-pin board to board connector. It is a high-speed and high-density connector, with an easy attaching mechanism.
+The **WisCore module connector** is a 40-pin board-to-board connector. It is a high-speed and high-density connector, with an easy attaching mechanism.
 
 <rk-img
   src="/assets/images/wisblock/rak19003/datasheet/12.mcu-module-connector.png"
@@ -222,54 +222,54 @@ The table below shows the pinout of the 40-pin MCU module connector:
 |       39       |                GND                 |       40       |                GND                 |
 
 
-As for the following table, it shows the definition of each pin of WisBlock Core connector:
+As for the following table, it shows the definition of each pin of the WisBlock Core connector:
 
-| **Pin Number** | **Pin Name** | **Type** |                                  **Description**                                  |
-| :------------: | :----------: | :------: | :-------------------------------------------------------------------------------: |
-|       1        |     VBAT     |    S     |                             Power supply from battery                             |
-|       2        |     VBAT     |    S     |                             Power supply from battery                             |
-|       3        |     GND      |    S     |                                      Ground                                       |
-|       4        |     GND      |    S     |                                      Ground                                       |
-|       5        |     3V3      |    S     |                                3.3 V power supply                                 |
-|       6        |     3V3      |    S     |                                3.3 V power supply                                 |
-|       7        |     USB+     |   I/O    |                                      USB D+                                       |
-|       8        |     USB–     |   I/O    |                                      USB D–                                       |
-|       9        |     VBUS     |    S     |                                     USB VBUS                                      |
-|       10       |     SW1      |   I/O    |                                   Not connected                                   |
-|       11       |     TXD0     |   I/O    |                                MCU UART0 TX signal                                |
-|       12       |     RXD0     |   I/O    |                                MCU UART0 RX signal                                |
-|       13       |    RESET     |    I     |                   Connected to the reset switch, for MCU reset                    |
-|       14       |     LED1     |   I/O    |                        LED for battery charging indication                        |
-|       15       |     LED2     |   I/O    |                               LED for custom usage                                |
-|       16       |     LED3     |   I/O    |                               LED for custom usage                                |
-|       17       |     VDD      |    S     |  Generated by MCU module for power sensor board if the MCU IO level is not 3.3 V  |
-|       18       |     VDD      |    S     |  Generated by MCU module for power sensor board if the MCU IO level is not 3.3 V  |
-|       19       |   I2C1_SDA   |   I/O    |                         The first set of I2C data signal                          |
-|       20       |   I2C1_SCL   |   I/O    |                         The first set of I2C clock signal                         |
-|       21       |     AIN0     |    A     |                               Analog input for ADC                                |
-|       22       |     AIN1     |    A     |                               Analog input for ADC                                |
-|       23       |    BOOT0     |    I     | For ST MCU only. The MCU will enter in boot mode if this pin is connected to VDD. |
-|       24       |     IO7      |   I/O    |                                   Not connected                                   |
-|       25       |    SPI_CS    |   I/O    |                              SPI chip select signal                               |
-|       26       |   SPI_CLK    |   I/O    |                                 SPI clock signal                                  |
-|       27       |   SPI_MISO   |   I/O    |                                  SPI MISO signal                                  |
-|       28       |   SPI_MOSI   |   I/O    |                                  SPI MOSI signal                                  |
-|       29       |     IO1      |   I/O    |                                General purpose IO                                 |
-|       30       |     IO2      |   I/O    |                               Used for 3V3_S enable                               |
-|       31       |     IO3      |   I/O    |                                General purpose IO                                 |
-|       32       |     IO4      |   I/O    |                                General purpose IO                                 |
-|       33       |     TXD1     |   I/O    |                                MCU UART1 RX signal                                |
-|       34       |     RXD1     |   I/O    |                                MCU UART1 RX signal                                |
-|       35       |   I2C2_SDA   |   I/O    |                         The second set of I2C data signal                         |
-|       36       |   I2C2_SCL   |   I/O    |                        The second set of I2C clock signal                         |
-|       37       |     IO5      |   I/O    |                                General purpose IO                                 |
-|       38       |     IO6      |   I/O    |                                General purpose IO                                 |
-|       39       |     GND      |    S     |                                      Ground                                       |
-|       40       |     GND      |    S     |                                      Ground                                       |
+| **Pin Number** | **Pin Name** | **Type** |                                   **Description**                                    |
+| :------------: | :----------: | :------: | :----------------------------------------------------------------------------------: |
+|       1        |     VBAT     |    S     |                              Power supply from battery                               |
+|       2        |     VBAT     |    S     |                              Power supply from battery                               |
+|       3        |     GND      |    S     |                                        Ground                                        |
+|       4        |     GND      |    S     |                                        Ground                                        |
+|       5        |     3V3      |    S     |                               3.3&nbsp;V power supply                                |
+|       6        |     3V3      |    S     |                               3.3&nbsp;V power supply                                |
+|       7        |     USB+     |   I/O    |                                        USB D+                                        |
+|       8        |     USB–     |   I/O    |                                        USB D–                                        |
+|       9        |     VBUS     |    S     |                                       USB VBUS                                       |
+|       10       |     SW1      |   I/O    |                                    Not connected                                     |
+|       11       |     TXD0     |   I/O    |                                 MCU UART0 TX signal                                  |
+|       12       |     RXD0     |   I/O    |                                 MCU UART0 RX signal                                  |
+|       13       |    RESET     |    I     |                     Connected to the reset switch, for MCU reset                     |
+|       14       |     LED1     |   I/O    |                         LED for battery charging indication                          |
+|       15       |     LED2     |   I/O    |                                 LED for custom usage                                 |
+|       16       |     LED3     |   I/O    |                                 LED for custom usage                                 |
+|       17       |     VDD      |    S     | Generated by MCU module for power sensor board if the MCU IO level is not 3.3&nbsp;V |
+|       18       |     VDD      |    S     | Generated by MCU module for power sensor board if the MCU IO level is not 3.3&nbsp;V |
+|       19       |   I2C1_SDA   |   I/O    |                           The first set of I2C data signal                           |
+|       20       |   I2C1_SCL   |   I/O    |                          The first set of I2C clock signal                           |
+|       21       |     AIN0     |    A     |                                 Analog input for ADC                                 |
+|       22       |     AIN1     |    A     |                                 Analog input for ADC                                 |
+|       23       |    BOOT0     |    I     |    For ST MCU only. The MCU will enter boot mode if this pin is connected to VDD.    |
+|       24       |     IO7      |   I/O    |                                    Not connected                                     |
+|       25       |    SPI_CS    |   I/O    |                                SPI chip select signal                                |
+|       26       |   SPI_CLK    |   I/O    |                                   SPI clock signal                                   |
+|       27       |   SPI_MISO   |   I/O    |                                   SPI MISO signal                                    |
+|       28       |   SPI_MOSI   |   I/O    |                                   SPI MOSI signal                                    |
+|       29       |     IO1      |   I/O    |                                  General purpose IO                                  |
+|       30       |     IO2      |   I/O    |                                Used for 3V3_S enable                                 |
+|       31       |     IO3      |   I/O    |                                  General purpose IO                                  |
+|       32       |     IO4      |   I/O    |                                  General purpose IO                                  |
+|       33       |     TXD1     |   I/O    |                                 MCU UART1 RX signal                                  |
+|       34       |     RXD1     |   I/O    |                                 MCU UART1 RX signal                                  |
+|       35       |   I2C2_SDA   |   I/O    |                          The second set of I2C data signal                           |
+|       36       |   I2C2_SCL   |   I/O    |                          The second set of I2C clock signal                          |
+|       37       |     IO5      |   I/O    |                                  General purpose IO                                  |
+|       38       |     IO6      |   I/O    |                                  General purpose IO                                  |
+|       39       |     GND      |    S     |                                        Ground                                        |
+|       40       |     GND      |    S     |                                        Ground                                        |
 
 ##### Connectors for WisBlock Sensor
 
-The WisBlock sensor module connector is a **24-pin board to board connector**.
+The WisBlock sensor module connector is a **24-pin board-to-board connector**.
 
 <rk-img
   src="/assets/images/wisblock/rak19003/datasheet/13.wissensor-module-connector.png"
@@ -283,7 +283,7 @@ There are two connectors reserved for the sensor modules on the RAK19003. The pi
 
 <br>
 
-| **Connector A** | **Connector B** | **Pin Number** | **Pin Number** | **Connector A** | **Connector B** |
+| **Connector C** | **Connector D** | **Pin Number** | **Pin Number** | **Connector C** | **Connector D** |
 | :-------------: | :-------------: | :------------: | :------------: | :-------------: | :-------------: |
 |      TXD1       |      TXD1       |       1        |       2        |       GND       |       GND       |
 |     SPI_CS      |     SPI_CS      |       3        |       4        |     SPI_CLK     |     SPI_CLK     |
@@ -301,7 +301,7 @@ There are two connectors reserved for the sensor modules on the RAK19003. The pi
 
 As for the following table, it shows the pin name and description of each pin in the WisSensor module connector.
 
-| **Pin Number** | **Connector A** | **Connector B** | **Type** |                                       **Description**                                       |
+| **Pin Number** | **Connector C** | **Connector D** | **Type** |                                       **Description**                                       |
 | :------------: | :-------------: | :-------------: | :------: | :-----------------------------------------------------------------------------------------: |
 |       1        |      TXD1       |      TXD1       |   I/O    |                                       UART TX signal                                        |
 |       2        |       GND       |       GND       |    S     |                                           Ground                                            |
@@ -311,14 +311,14 @@ As for the following table, it shows the pin name and description of each pin in
 |       6        |    SPI_MOSI     |    SPI_MOSI     |   I/O    |                                       SPI MOSI signal                                       |
 |       7        |    I2C1_SCL     |    I2C1_SCL     |   I/O    |                                      I2C clock signal                                       |
 |       8        |    I2C1_SDA     |    I2C1_SDA     |   I/O    |                                       I2C data signal                                       |
-|       9        |       VDD       |       VDD       |    S     | Generated by CPU module. Used to power sensor board if MCU IO level is not 3.3&nbsp;V    |
-|       10       |       IO6       |       IO4       |   I/O    |   General purpose IO pin. When 3V3_S is used, this pin cannot be used as interrupt input.   |
+|       9        |       VDD       |       VDD       |    S     |    Generated by CPU module. Used to power sensor board if MCU IO level is not 3.3&nbsp;V    |
+|       10       |       IO6       |       IO4       |   I/O    | General purpose IO pin. When 3V3_S is used, this pin cannot be used as an interrupt input.  |
 |       11       |      3V3_S      |      3V3_S      |    S     | 3.3&nbsp;V power supply. This power pin is controlled by IO2 from the WisBlock Core module. |
-|       12       |       IO5       |       IO3       |   I/O    |   General purpose IO pin. When 3V3_S is used, this pin cannot be used as interrupt input.   |
+|       12       |       IO5       |       IO3       |   I/O    | General purpose IO pin. When 3V3_S is used, this pin cannot be used as an interrupt input.  |
 |       13       |       NC        |       NC        |    NC    |                                        Not connected                                        |
 |       14       |      3V3_S      |      3V3_S      |    S     | 3.3&nbsp;V power supply. This power pin is controlled by IO2 from the WisBlock Core module. |
 |       15       |       NC        |       NC        |    NC    |                                        Not connected                                        |
-|       16       |       VDD       |       VDD       |    S     |    Generated by CPU module. Used to power sensor board if the MCU IO level is not 3.3V.     |
+|       16       |       VDD       |       VDD       |    S     | Generated by CPU module. Used to power sensor board if the MCU IO level is not 3.3&nbsp;V.  |
 |       17       |       NC        |       NC        |    NC    |                                        Not connected                                        |
 |       18       |       NC        |       NC        |    NC    |                                        Not connected                                        |
 |       19       |       NC        |       NC        |    NC    |                                        Not connected                                        |
@@ -351,12 +351,12 @@ The **Absolute Maximum Ratings** of the device are shown in the table below. The
 | ESD                                     | 2000            | V    |
 
 :::tip 📝 NOTE
-The RAK19003, as any electronic equipment, is sensitive to **electrostatic discharge (ESD)**. Improper handling can cause permanent damage to module.
+The RAK19003, as any electronic equipment, is sensitive to **electrostatic discharge (ESD)**. Improper handling can cause permanent damage to the module.
 :::
 
 ##### Current Consumption
 
-The RAK19003 is designed for **low power IoT products**. Its power supply uses a high-efficiency low ground current regulator. When there is no module on RAK19003, the **leakage current is lower than 2&nbsp;µA**. With WisBlock Core and WisBlock sensor on it, the sleep current is **lower than 10&nbsp;µA**. When a LoRa module is transmitting, the current may reach to **130&nbsp;mA**.
+The RAK19003 is designed for **low-power IoT products**. Its power supply uses a high-efficiency low ground current regulator. When there is no module on RAK19003, the **leakage current is lower than 2&nbsp;µA**. With WisBlock Core and WisBlock sensor on it, the sleep current is **lower than 10&nbsp;µA**. When a LoRa module is transmitting, the current may reach **130&nbsp;mA**.
 
 | **Conditions**                                                      | **Current** | **Unit** |
 | ------------------------------------------------------------------- | ----------- | -------- |
@@ -367,7 +367,7 @@ The RAK19003 is designed for **low power IoT products**. Its power supply uses a
 
 ##### Battery Connector
 
-The RAK19003 WisBlock Mini Base Board can be powered by a battery, connected to the **P2 connector**. The nominal operating voltage of the battery should be within the range showed in the following table. The matching connector for the battery wires is an [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199)     
+The RAK19003 WisBlock Mini Base Board can be powered by a battery, connected to the **P2 connector**. The nominal operating voltage of the battery should be within the range shown in the following table. The matching connector for the battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199)     
 
 | **Minimum** | **Typical** | **Maximum** | **Unit** |
 | ----------- | ----------- | ----------- | -------- |
@@ -399,7 +399,7 @@ Don't use a non-rechargeable battery.
 
 ##### Solar Panel Connector
 
-A 5&nbsp;V Solar Panel can be connected to the board via the **P1 connector**. The solar panel can also be used to charge the Li-Ion battery. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287).
+A 5&nbsp;V Solar Panel can be connected to the board via the **P1 connector**. The solar panel can also be used to charge the Li-Ion battery. The matching connector for the solar panel wires is a [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287).
 
 
 #### Mechanical Characteristics
@@ -415,7 +415,7 @@ A 5&nbsp;V Solar Panel can be connected to the board via the **P1 connector**. T
 />
 
 
-**Figure 11** and **Figure 12** show the mounting holes location and diameter of RAK19003 Board.
+**Figure 11** and **Figure 12** show the mounting holes location and diameter of the RAK19003 Board.
 
 <rk-img
   src="/assets/images/wisblock/rak19003/datasheet/pwb-rak19003-1.png"
@@ -450,7 +450,7 @@ The table below lists the operation and storage temperature requirements of RAK5
 
 #### Schematic Diagram
 
-The component schematics diagram of the RAK19003 are shown in **Figure 14** and **Figure 15**.
+The component schematics diagram of the RAK19003 is shown in **Figure 14** and **Figure 15**.
 
 <rk-img
   src="/assets/images/wisblock/rak19003/datasheet/image-20210726092320767.png"
