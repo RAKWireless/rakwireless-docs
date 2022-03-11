@@ -10,9 +10,9 @@ next: false
 certifications:
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289C_RAK7289_RoHS_Certification.pdf]
   - [REACH, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289C_RAK7289_REACH_Certification.pdf]
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_CE_Certification.pdf]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_RAK7289V2_CE_Certification.pdf]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_FCC_Certification.pdf]
-  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_UKCA_Certification.pdf]
+  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_RAK7289V2_UKCA_Certification.pdf]
   - [ISED, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_ISED_Certification.zip]
 ---
 
