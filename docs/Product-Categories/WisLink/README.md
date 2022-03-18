@@ -39,7 +39,7 @@ A collection of cellular modem boards in different form factors, with different 
 
 <rk-head img="/assets/rakwireless/product-categories/WisLink-PLC.svg">
 
-A collection of cellular modem boards in different form factors, with different capabilities and set of features. These boards can serve as both backhauls for base stations and routers, and as cellular modems for end-user devices.
+RAK WisLink PLC modules and EVBs are a series of power line communications (PLC) devices that use existing public and private wiring to transmit signals. PLC communications signals are used to transmit high-speed data, voice and video over low-voltage lines, twisted pair and coaxial cable.
 
 
 </rk-head>
