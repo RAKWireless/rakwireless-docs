@@ -14,6 +14,7 @@ certifications:
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_FCC_Certification.pdf]
   - [UKCA, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_RAK7289V2_UKCA_Certification.pdf]
   - [ISED, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_ISED_Certification.zip]
+  - [SRRC, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_SRRC_Certification.pdf]
 ---
 
 

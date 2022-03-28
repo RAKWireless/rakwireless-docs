@@ -15,6 +15,8 @@ certifications:
   - [IC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_IC_cert.zip]
   - [SRRC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_SRRC.pdf]
   - [KC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_KC_Certification.pdf]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268C_RAK7268CV2_RAK7268_RAK7268V2_REACH_Report.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268C_RAK7268CV2_RAK7268_RAK7268V2_RoHS_Report.pdf]
 ---
 
 # RAK7268 WisGate Edge Lite 2 Datasheet
