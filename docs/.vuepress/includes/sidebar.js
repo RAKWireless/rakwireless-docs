@@ -4,6 +4,7 @@ var faqs = require('./sidebar/faqs')
 //var usermanual = require('./sidebar/user-manual')
 //var deploymentGuide = require('./sidebar/deployment-guide')
 var rui = require('./sidebar/rui')
+var rui3 = require('./sidebar/rui3')
 var devices = require('./sidebar/devices')
 var root = require('./sidebar/root')
 
@@ -13,6 +14,7 @@ module.exports = {
   //...usermanual,
   //...deploymentGuide,
   ...rui,
+  ...rui3,
   ...devices,
   ...root
 }

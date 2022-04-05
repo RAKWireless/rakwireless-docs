@@ -11,10 +11,15 @@ tags:
 
 # RAK4631 WisBlock LPWAN Module
 
-Thank you for choosing **RAK4631 WisBlock LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK4631 WisBlock LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+
+::: tip 📝 NOTE
+RAK4631 and RAK4631-R share common hardware and are 100% identical but they have different firmware. **RAK4631-R** is based on RUI V3 which gives you flexibility in developing optimized firmware using the RUI V3 APIs. While **RAK4631**'s firmware is based on arduino port of nRF52840 chip.
+:::
 
 * [RAK4631 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
+* [AT Command Manual](../AT-Command-Manual/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [Arduino IDE BSP](/Knowledge-Hub/Learn/Installation-of-Board-Support-Package-in-Arduino-IDE/)
@@ -34,7 +39,7 @@ Thank you for choosing **RAK4631 WisBlock LPWAN Module** in your awesome IoT Pro
 **RAK4631** is a **WisBlock Core** module for RAK **WisBlock**. It extends the **WisBlock** series with a powerful Nordic nRF52840 MCU that supports Bluetooth 5.0 (Bluetooth Low Energy) and the newest LoRa transceiver from Semtech, the SX1262. The Semtech SX1262 has compared to the older SX127x series a lower power consumption at the same TX power. This makes the **RAK4631** an ultra-low power communication solution.
 **RAK4631** can be comfortably programmed with the Arduino™ IDE or the PlatformIO extension for other IDE's like Atom, MS Visual Code, or Clion.
 
-Both LoRaWan® and LoRa point to point connections are supported by an Arduino™ library.
+Both LoRaWan® and LoRa point-to-point connections are supported by an Arduino™ library.
 
 
 ## Product Features
@@ -42,7 +47,7 @@ Both LoRaWan® and LoRa point to point connections are supported by an Arduino�
 * Nordic nRF52840 ultra-low power MCU    
 * 32-bit ARM® Cortex™-M4 CPU    
 * 64&nbsp;MHz CPU clock    
-* 1&nbsp;MB Flash, 256 KB RAM    
+* 1&nbsp;MB Flash, 256&nbsp;KB RAM    
 * Semtech SX1262 low power high range LoRa transceiver     
 * LoRaWan® 1.0.2 protocol stack     
 * Bluetooth 5.0 protocol stack    

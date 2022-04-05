@@ -49,7 +49,7 @@ The hardware specification is categorized into four parts. It covers the pinouts
 
 #### Pin Definition
 
-The RAK12018 has a standard 40-pin WisConnector which can be mounted directly to the IO slot of WisBlock Base board like RAK5005-O. The pin order of the connector and the pinout definition is shown in Figure 2. 
+The RAK12018 has a standard 40-pin WisConnector which can be mounted directly to the IO slot of WisBlock Base board like RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
 
 <rk-img
   src="/assets/images/wisblock/rak12018/datasheet/RAK12018_Pinouts.svg"
@@ -76,7 +76,7 @@ The pins in the module connected to the WisConnector are **3V3_S**, **GND**, **U
 
 ##### Board Dimensions
 
-Refer to **Figure 5** below for the mechanical dimensions of the RAK5801 module.
+Refer to **Figure 5** below for the mechanical dimensions of the RAK12018 module.
 
 <rk-img
   src="/assets/images/wisblock/rak12018/datasheet/mechanical-dimensions.png"

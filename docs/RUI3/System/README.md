@@ -1,0 +1,675 @@
+# System
+
+## RUI System Data Type
+
+### RAK\_AT\_PERMISSION
+
+The permission setting of AT command
+
+```c
+enum RAK_AT_PERMISSION
+```
+
+| Enumerator                   |                                                                                                |
+| ---------------------------- | ---------------------------------------------------------------------------------------------- |
+| RAK_ATCMD_PERM_READ          | Read permission allows for reading a variable data only and disables any write functionality.  |
+| RAK_ATCMD_PERM_WRITE         | Write permission allows for writing a variable data only and disables any read functionality.  |
+| RAK_ATCMD_PERM_WRITEONCEREAD | Special functionality that allows for setting variable once and only allows for reading after. |
+| RAK_ATCMD_PERM_DISABLE       | Disables the AT command from being used.                                                       |
+
+## Device Information
+### Firmware Version
+
+#### get()
+This api allow user to get the firmware version
+
+```c
+const string get()
+```
+
+
+| **Syntax**     | `api.system.firmwareVersion.get()`                       |
+| -------------- | -------------------------------------------------------- |
+| **Returns**    | firmware version(Type: string)                           |
+
+
+::: details Click to View Example
+```c{8}
+void setup()
+{
+  Serial.begin(115200);
+}
+
+void loop()
+{
+    Serial.printf("Firmware Version: %s\r\n", api.system.firmwareVersion.get().c_str());
+    delay(1000);
+}
+```
+:::
+
+### CLI Version
+
+#### get()
+This api allow user to get the cli version
+
+```c
+const string get()
+```
+
+
+| **Syntax**  | `api.system.cliVersion.get()` |
+| ----------- | ----------------------------- |
+| **Returns** | cli version(Type: string)     |
+
+
+::: details Click to View Example
+```c{8}
+void setup()
+{
+    Serial.begin(115200);
+}
+
+void loop()
+{
+    Serial.printf("AT Command Version: %s\r\n", api.system.cliVersion.get().c_str());
+    delay(1000);
+}
+```
+:::
+
+
+
+### API Version
+
+#### get()
+This api allow user to get the api version
+
+```c
+const string get()
+```
+
+
+| **Syntax**  | `api.system.apiVersion.get()` |
+| ----------- | ----------------------------- |
+| **Returns** | api version(Type: string)     |
+
+
+::: details Click to View Example
+```c{8}
+void setup()
+{
+    Serial.begin(115200);
+}
+
+void loop()
+{
+    Serial.printf("RUI API Version: %s\r\n", api.system.apiVersion.get().c_str());
+    delay(1000);
+}
+```
+:::
+
+### Model ID
+
+#### get()
+This api allow user to get the mode ID
+
+```c
+const string get()
+```
+
+
+| **Syntax**  | `api.system.modelId.get()` |
+| ----------- | -------------------------- |
+| **Returns** | model ID(Type: string)     |
+
+
+::: details Click to View Example
+```c{8}
+void setup()
+{
+    Serial.begin(115200);
+}
+
+void loop()
+{
+    Serial.printf("Model ID: %s\r\n", api.system.modelId.get().c_str());
+    delay(1000);
+}
+```
+:::
+
+### Chip ID
+
+#### get()
+This api allow user to get the chip ID
+
+```c
+const string get()
+```
+
+
+| **Syntax**  | `api.system.chipId.get()` |
+| ----------- | -------------------------- |
+| **Returns** | chip ID(Type: string)    |
+
+
+::: details Click to View Example
+```c{8}
+void setup()
+{
+    Serial.begin(115200);
+}
+
+void loop()
+{
+    Serial.printf("Hardware ID: %s\r\n", api.system.chipId.get().c_str());
+    delay(1000);
+}
+```
+:::
+
+
+
+### Battery
+
+#### get()
+Get the current battery level 
+
+```c
+float get(void)
+```
+
+
+| **Syntax**  | `api.system.bat.get()` |
+| ----------- | ---------------------- |
+| **Returns** | float (Unit: V)        |
+
+
+::: details Click to View Example
+```c{8}
+void setup()
+{
+    Serial.begin(115200);
+}
+
+void loop()
+{
+    Serial.printf("Battery Level: %f\r\n", api.system.bat.get());
+    delay(1000);
+}
+```
+:::
+
+## Flash
+
+### get()
+Read a range of data from user flash partition.
+
+```c
+bool get(uint32_t offset, uint8_t * buf, uint32_t len)
+```
+
+
+| **Syntax**     | `api.system.flash.get(offset, buf, len)`                                                                                              |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **offset** the offset to the start of user flash partition <br> **buf** the buffer for reading the data <br>**len**the length of data |
+| **Returns**    | **TRUE**	for reading data successfully <br> **FALSE** for reading data failure                                                        |
+
+
+### set()
+Write a range of data from user flash partition.
+
+```c
+bool set(uint32_t offset, uint8_t * buf, uint32_t len)
+```
+
+
+| **Syntax**     | `api.system.flash.set(offset, buf, len)`                                                                                              |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **offset** the offset to the start of user flash partition <br> **buf** the buffer for writing the data <br>**len**the length of data |
+| **Returns**    | **TRUE**	for writing data successfully <br> **FALSE** for writing data failure                                                        |
+
+
+
+## Powersave
+
+### cpu()
+Sleep the cpu with default no timeout
+
+```c
+void cpu(int ms_time = POWERSAVE_NO_TIMEOUT)
+```
+
+| **Syntax**     | `api.system.sleep.cpu();`                                               |
+| -------------- | ----------------------------------------------------------------------- |
+| **Parameters** | **ms_time(optional)** - Duration for cpu to sleep(default = no timeout) |
+| **Returns**    | void                                                                 |
+
+
+:::details Click to View Example
+```c{7}
+void setup()
+{
+}
+
+void loop()
+{
+  api.system.sleep.cpu(1000); 
+}
+```
+:::
+
+
+### lora()
+Sleep lora with default no timeout.
+
+```c
+void lora(int ms_time = POWERSAVE_NO_TIMEOUT)
+```
+
+| **Syntax**     | `api.system.sleep.lora();`                                               |
+| -------------- | ----------------------------------------------------------------------- |
+| **Parameters** | **ms_time(optional)** - Duration for cpu to sleep(default = no timeout) |
+| **Returns**    | void                                                                 |
+
+
+:::details Click to View Example
+```c{7}
+void setup()
+{
+}
+
+void loop()
+{
+  api.system.sleep.lora(1000);
+}
+```
+:::
+
+### all()
+Sleep all with default no timeout.
+
+```c
+void all(int ms_time = POWERSAVE_NO_TIMEOUT)
+```
+
+| **Syntax**     | `api.system.sleep.all();`                                                         |
+| -------------- | --------------------------------------------------------------------------------- |
+| **Parameters** | **ms_time(optional)** - Duration for all component to sleep(default = no timeout) |
+| **Returns**    | void                                                                              |
+
+
+:::details Click to View Example
+```c{7}
+void setup()
+{
+}
+
+void loop()
+{
+  api.system.sleep.all(1000);
+}
+```
+:::
+
+### setup()
+Sleep all with default no timeout.
+
+```c
+void setup(RUI_WAKEUP_TRIGGER_MODE mode, uint32_t pin)
+```
+
+| **Syntax**     | `api.system.sleep.setup(mode);`                                                                                             |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **mode** -This decide to use Rising or Falling trigger mode<br> **pin**  This is the pin to be chosen as the wake up source |
+| **Returns**    | void                                                                                                                        |
+
+
+:::details Click to View Example
+```c{3}
+void setup()
+{
+  api.system.sleep.setup(RUI_WAKEUP_FALLING_EDGE);
+}
+
+void loop()
+{
+  api.system.sleep.all(1000);
+}
+```
+:::
+
+
+## Serial
+
+### pword
+#### set()
+This api allow user to set a 1~8 digits password to lock the default serial
+
+```c
+bool set(char * passwd, uint32_t len)
+```
+
+| **Syntax**     | `api.system.pword.set(passwd_Str)` <br> `api.system.pword.set(passwd_Char, len)`                                                                                                       |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **passwd_Str** - the password to lock the Default Serial(Type: string)<br> **passwd_Char** -	the password to lock the Default Serial(Type: char *)<br> **len**- the length of password |
+| **Returns**    | **TRUE**	successfully set a password <br> **FALSE**	failed to set a password                                                                                                           |
+
+
+:::details Click to View Example
+```c{6}
+int loopCount = 0;
+
+void setup()
+{
+  string password = "12345678";
+  api.system.pword.set(password); // set the password to 12345678
+  api.system.pword.lock();        // lock the default port 
+}
+
+void loop()
+{
+  loopCount++; 
+
+      if (loopCount == 60)
+        api.system.pword.unlock();   // unlock the default port after 60 seconds
+
+  delay(1000);
+}
+```
+:::
+
+
+#### lock()
+This api allow user to lock the default serial with the pass set in api.system.pword.set()
+
+::: tip 📝 NOTE
+If you never set a password successfully, the default password will be **00000000**
+:::
+
+```c
+void lock(void)	
+```
+
+| **Syntax**  | `api.system.pword.lock()` |
+| ----------- | ------------------------- |
+| **Returns** | void                      |
+
+
+:::details Click to View Example
+```c{7}
+int loopCount = 0;
+
+void setup()
+{
+    string password = "12345678";
+    api.system.pword.set(password); // set the password to 12345678
+    api.system.pword.lock();        // lock the default port
+}
+
+void loop()
+{
+    loopCount++;
+
+    if (loopCount == 60)
+    api.system.pword.unlock();   // unlock the default port after 60 seconds
+
+    delay(1000);
+}
+```
+:::
+
+
+#### unlock()
+This api allow user to unlock the default serial without password when its locked
+
+```c
+void unlock(void)	
+```
+
+| **Syntax**  | `api.system.pword.unlock()` |
+| ----------- | ------------------------- |
+| **Returns** | void                      |
+
+
+:::details Click to View Example
+```c{15}
+int loopCount = 0;
+
+void setup()
+{
+    string password = "12345678";
+    api.system.pword.set(password); // set the password to 12345678
+    api.system.pword.lock();        // lock the default port
+}
+
+void loop()
+{
+    loopCount++;
+
+    if (loopCount == 60)
+    api.system.pword.unlock();   // unlock the default port after 60 seconds
+
+    delay(1000);
+}
+```
+:::
+
+
+## Misc
+
+### alias
+
+#### set()
+
+Set the alias name for device.
+
+```c
+bool set(char* buf , uint32_t len)
+```
+
+| **Syntax**     | `api.system.alias.set(buf, len)`                                                            |
+| -------------- | ------------------------------------------------------------------------------------------- |
+| **Parameters** | **buf** - the buffer to set alias name <br> **len** - the length of alias name(<= 16 bytes) |
+| **Returns**    | **TRUE**	for setting alias name successfully <br> **FALSE**	for setting alias name failure  |
+
+:::details Click to View Example
+```c
+void setup()
+{
+    Serial.begin(115200);
+    api.system.alias.set("my device",16);
+    char buf[16];
+    Serial.println(api.system.alias.get(buf,16));
+    Serial.println(buf);
+}
+void loop()
+{
+}
+```
+:::
+
+#### get()
+
+Get the alias name for device.
+
+```c
+bool get(char* buf , uint32_t len)
+```
+
+| **Syntax**     | `api.system.alias.get(buf, len)`                                                            |
+| -------------- | ------------------------------------------------------------------------------------------- |
+| **Parameters** | **buf** - the buffer to get alias name <br> **len** - the length of alias name(<= 16 bytes) |
+| **Returns**    | **TRUE**	for getting alias name successfully <br> **FALSE**	for getting alias name failure  |
+
+:::details Click to View Example
+```c
+void setup()
+{
+    Serial.begin(115200);
+    api.system.alias.set("my device",16);
+    char buf[16];
+    Serial.println(api.system.alias.get(buf,16));
+    Serial.println(buf);
+}
+void loop()
+{
+}
+```
+:::
+### atMode
+#### add()
+Provide developers to create AT CMD.
+
+```c
+bool add(char *cmd, char *usage, char *title, PF_handle handle,unsigned int perm = RAK_ATCMD_PERM_WRITE | RAK_ATCMD_PERM_READ);
+```
+
+| **Syntax**     | `api.system.atMode.add(cmd, usage, title, handle, perm)`                                                                                                                                          |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **cmd** the cmd to define cmd name <br> **usage**	the cmd usage <br> **title**	the cmd title <br> **handle**	the handler that this command will execute <br>**perm**	the cmd execution permission |
+
+
+:::details Click to View Example
+```c
+uint32_t led_status;
+
+int led_handle(SERIAL_PORT port, char *cmd, stParam *param) {
+    if (param->argc == 1 && !strcmp(param->argv[0], "?")) {
+        Serial.print(cmd);
+        Serial.print("=");
+        Serial.println(led_status?"HIGH":"LOW");
+    } else if (param->argc == 1) {
+        for (int i = 0 ; i < strlen(param->argv[0]) ; i++) {
+            if (!isdigit(*(param->argv[0]+i))) {
+                return AT_PARAM_ERROR;
+            }
+        }
+
+        led_status = strtoul(param->argv[0], NULL, 10);
+        if (led_status != 0 && led_status != 1) {
+            return AT_PARAM_ERROR;
+        }
+
+        pinMode(GREEN_LED, OUTPUT);
+        pinMode(BLUE_LED, OUTPUT);
+        digitalWrite(GREEN_LED, (led_status == 1)?HIGH:LOW);
+        digitalWrite(BLUE_LED, (led_status == 1)?HIGH:LOW);
+    } else {
+        return AT_PARAM_ERROR;
+    }
+
+    return AT_OK;
+}
+
+void setup()
+{
+    api.system.atMode.add("LED", "This controls both green and blue LEDs.", "LED", led_handle, RAK_ATCMD_PERM_WRITE | RAK_ATCMD_PERM_READ);
+}
+
+void loop()
+{
+}
+```
+:::
+
+
+### CHANGE\_ATCMD\_PERM
+
+Change AT command permission 
+
+PERMISSION LEVEL: 
+* `RAK_ATCMD_PERM_READ`, `RAK_ATCMD_PERM_WRITE`, `RAK_ATCMD_PERM_WRITEONCEREAD`, `RAK_ATCMD_PERM_DISABLE` AT commands' default permission are `RAK_ATCMD_PERM_READ | RAK_ATCMD_PERM_WRITE`
+
+```c
+#define CHANGE_ATCMD_PERM(_atcmd_name, _atcmd_perm)		
+```
+
+**Value:**
+```c
+    ATCMD_ITEM(atcmd_queue, atcmd_permission_item UNIQUE_NAME(permissions)) =   \
+    {                                       \
+    .atcmd_id = _atcmd_name,                \
+    .permission = _atcmd_perm,              \
+    }
+```
+
+:::details Click to View Example
+```c
+CHANGE_ATCMD_PERM("AT+APPKEY", RAK_ATCMD_PERM_READ);
+CHANGE_ATCMD_PERM("AT+APPSKEY", RAK_ATCMD_PERM_WRITE);
+CHANGE_ATCMD_PERM("AT+DEVADDR", RAK_ATCMD_PERM_WRITEONCEREAD);
+CHANGE_ATCMD_PERM("AT+APPEUI", RAK_ATCMD_PERM_DISABLE);
+CHANGE_ATCMD_PERM("AT+NETID", RAK_ATCMD_PERM_READ | RAK_ATCMD_PERM_WRITE);
+CHANGE_ATCMD_PERM("AT+ALIAS", RAK_ATCMD_PERM_READ | RAK_ATCMD_PERM_WRITE);
+CHANGE_ATCMD_PERM("AT+HWID", RAK_ATCMD_PERM_READ | RAK_ATCMD_PERM_WRITE);
+
+void setup()
+{
+}
+
+void loop()
+{
+}
+```
+:::
+
+
+### reboot()
+
+
+```c
+void reboot()
+```
+
+| **Syntax**  | `api.system.reboot()` |
+| ----------- | --------------------- |
+| **Returns** | void                  |
+
+
+:::details Click to View Example
+```c{12}
+int loopCount = 0;
+
+void setup()
+{
+}
+
+void loop()
+{
+  loopCount++;
+
+  if(loopCount == 60)
+    api.system.reboot();  // Reboot after 60 seconds 
+
+  delay(1000);
+}
+```
+:::
+
+
+### restoreDefault()
+
+
+```c
+void restoreDefault()
+```
+
+| **Syntax**  | `api.system.restoreDefault()` |
+| ----------- | ----------------------------- |
+| **Returns** | void                          |
+
+
+:::details Click to View Example
+```c{3}
+void setup()
+{
+  api.system.restoreDefault();
+}
+
+void loop()
+{
+}
+:::

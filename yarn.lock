@@ -924,10 +924,10 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@quasar/extras@1.8.2":
-  version "1.8.2"
-  resolved "https://registry.yarnpkg.com/@quasar/extras/-/extras-1.8.2.tgz#54ff5e0c8fc17763c083c4f0dcd3a60e1b00b4a8"
-  integrity sha512-y3A4OO4DGDxuFyh/X4k5fS17TTxhpPauZv8Qr/0bso+RTk5f+3X4lLAcP7aaiqcBLOV8HsUKpGzNArMleClYgg==
+"@quasar/extras@^1.12.5":
+  version "1.13.3"
+  resolved "https://registry.yarnpkg.com/@quasar/extras/-/extras-1.13.3.tgz#680fcb5dd89d782cc66844d6c3d0ebd275484a6b"
+  integrity sha512-8Tx+iUtg0e+UeSPu2+iJA4joIuIaMGPpV65gNv1/7kINqpAEKi6sXhu/Ahyy/IhZ5o4g1DU9ZGp8CpJKBNwdFA==
 
 "@shigma/stringify-object@^3.3.0":
   version "3.3.0"

@@ -74,4 +74,22 @@ module.exports = {
         sidebarDepth: 4
       },
     ],
+    '/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/': [
+      {
+        title: 'WisGateOS 2 User Manual',
+        path: '/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/Overview/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      },
+      {
+        title: 'Basics Station to TTNv3',
+        path: '/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/Basics-Station-to-TTNv3/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      },
+    ]
   }

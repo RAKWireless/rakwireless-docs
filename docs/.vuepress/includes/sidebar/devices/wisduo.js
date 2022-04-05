@@ -630,4 +630,112 @@ module.exports = {
     sidebarDepth: 4
   }
   ],
+  '/Product-Categories/WisDuo/RAK4630-Module/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisDuo/RAK4630-Module/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisDuo/RAK4630-Module/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4,
+  },
+  {
+    title: 'AT Command Manual',
+    path: '/Product-Categories/WisDuo/RAK4630-Module/AT-Command-Manual/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Device Firmware Update',
+    path: '/Product-Categories/WisDuo/RAK4630-Module/DFU/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },                                               
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisDuo/RAK4630-Module/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  ],
+
+  '/Product-Categories/WisDuo/RAK3172-SiP/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisDuo/RAK3172-SiP/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4,
+  },
+  {
+    title: 'AT Command Manual',
+    path: '/Product-Categories/WisDuo/RAK3172-SiP/AT-Command-Manual/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },                               
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisDuo/RAK3172-SiP/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  ],
+  '/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }, 
+  {
+    title: 'AT Command Manual',
+    path: '/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/AT-Command-Manual/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },                                                  
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+  ],
 }

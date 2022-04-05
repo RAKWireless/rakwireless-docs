@@ -17,7 +17,13 @@
         <q-item class="full-width q-py-md" :to="`/RUI`">
           <q-item-section>
             <q-item-label>RUI</q-item-label>
-            <q-item-label caption>Rakwireless Unified Interface</q-item-label>
+            <q-item-label caption>RAKwireless Unified Interface</q-item-label>
+          </q-item-section>
+        </q-item>
+         <q-item class="full-width q-py-md" :to="`/RUI3/`">
+          <q-item-section>
+            <q-item-label>RUI3</q-item-label>
+            <q-item-label caption>RAKwireless Unified Interface 3</q-item-label>
           </q-item-section>
         </q-item>
       </q-list>
