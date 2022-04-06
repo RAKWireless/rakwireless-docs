@@ -2,7 +2,7 @@
 rak_img: /assets/images/wisblock/rak12014/overview/RAK12014_home.png
 rak_desc: RAK12014 is a Time-of-Flight (TOF) module designed based on VL53L0X from STMicroelectronics. With this, RAK12014 can measure absolute range up to 2 meters. 
 rak_grp: [wisblock, wissensor]
-next: ../Datasheet/
+next: ../Quickstart/
 prev: ../../
 tags:
     - overview
@@ -15,7 +15,7 @@ tags:
 
 Thank you for choosing **RAK12014 WisBlock ToF Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
-<!--* [RAK12014 Quick Start Guide](../Quickstart/)-->
+* [RAK12014 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)

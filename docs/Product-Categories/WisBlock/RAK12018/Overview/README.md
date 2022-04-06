@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak12018/overview/RAK12018_home.png
 rak_desc: RAK12018 WisBlock Code Scanner Module is a WisBlock Interface module capable of scanning 1D or 2D codes. It uses the LV3296 scanner module from RAKINDA that works on bar codes, QR, and other standard 1D/2D codes. 
 rak_grp: [wisblock, wisinterface]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK12018
@@ -13,6 +13,7 @@ tags:
 
 Thank you for choosing **RAK12018 WisBlock Code Scanner Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
+* [RAK12018 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
