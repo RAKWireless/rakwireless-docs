@@ -232,7 +232,7 @@ Replace the module with a new one if discharge time at room temperature is notic
 | Recommended Usage (indoor/outdoor)     | Outdoor                                  |
 | Net Weight (kg)                        | ~8 kg                                    |
 | Dimension (L/W/H, mm)                  | 499x280x75（±3) mm                       |
-
+<!-- 
 ### BMS PCBA Connector Definition
 
 <rk-img
@@ -269,7 +269,7 @@ Replace the module with a new one if discharge time at room temperature is notic
 | 1   | LED      | Signal | LED positive, 3.3V/3mA |
 | 2   | GND      | Signal | LED GND                |
 | 3   | GND      | Signal | Key GND                |
-| 4   | KEY      | Signal | Key                    |
+| 4   | KEY      | Signal | Key                    | -->
 
 ### Interfaces
 

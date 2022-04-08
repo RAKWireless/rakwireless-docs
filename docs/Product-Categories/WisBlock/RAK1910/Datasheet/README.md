@@ -31,7 +31,7 @@ The RAK1910 WisBlock GNSS Location Module module, part of the RAK Wireless Wisbl
 <!-- Insert Picture of Sensor with its dimensions -->
 
 #### Mounting
-The RAK1910 module can be mounted only in Slot A of the WisBase board. Figure 1 shows the mounting mechanism of the RAK1910 on a WisBase module, such as the RAK5005-O.
+The RAK1910 module can be mounted only in slot A of the RAK5005-O base board, or in slot D of the RAK19003 base board. **Figure 1** shows the mounting mechanism of the RAK1910 on a WisBase module, such as the RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak1910/datasheet/RAK1910_mounting.png"
@@ -41,14 +41,16 @@ The RAK1910 module can be mounted only in Slot A of the WisBase board. Figure 1 
 
 ### Hardware
 
-#### Chipset
+The hardware specification is categorized into six parts. It shows the chipset of the module and discusses the pinouts, sensors, and the corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK1910 WisBlock GNSS Location Module.
 
+####  Chipset
 | Vendor | Part number |
 | --     | --          |
 | uBlox  | MAX-7Q      |
 
 #### Pin Definition
-The RAK1910 WisBlock GNSS Location Module module features a standard WisConnector, which allows the RAK1910 module to be mounted on a WisBlock baseboard, such as RAK5005. The pin order of the connector and the definition of the pinout are shown in Figure 3.
+
+The RAK1910 WisBlock GNSS Location Module module features a standard WisConnector, which allows the RAK1910 module to be mounted on a WisBlock baseboard, such as RAK5005-O or RAK19903. The pin order of the connector and the definition of the pinout are shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisblock/rak1910/datasheet/RAK1910_pin.png"
@@ -58,7 +60,6 @@ The RAK1910 WisBlock GNSS Location Module module features a standard WisConnecto
 
 ::: tip 📝 NOTE
 - Only the **UART**-related pins, **1PPS** pin, **RESET** pin, **VDD**, and **GND** are connected to this module.
-- The RAK1910 module can be installed in Slot A only.
 :::
 
 - The RAK1910 module can be installed in the Slot A only.
@@ -186,8 +187,8 @@ Figure 3 shows the dimensions and the mechanic drawing of the RAK1910 module.
 />
 
 :::tip 📝 NOTE:
-Slot for mounting: **Slot A**
-- Because the RAK1910 is double the size of regular sensor modules, and uses the serial connection to the WisBlock Core module, it can be only installed in the RAK5005-O Slot A.
+Slot for mounting: **SLOT A** / **SLOT D**
+- Because the RAK1910 is double the size of regular sensor modules and uses the serial connection to the WisBlock Core module, it can be only installed on the RAK5005-O in **SLOT A**, and on the RAK19003 in **SLOT D**, the full-size slot.
 :::
 
 ##### WisConnector PCB Layout
@@ -205,4 +206,4 @@ Figure 5 shows the schematic of the RAK1910 module.
   src="/assets/images/wisblock/rak1910/datasheet/rak1910_schematic.png"
   width="100%"
   caption="RAK1910 WisBlock GNSS Location Module Schematic"
-/>  
+/> 
