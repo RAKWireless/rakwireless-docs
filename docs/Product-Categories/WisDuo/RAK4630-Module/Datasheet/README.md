@@ -67,52 +67,52 @@ The hardware specification is categorized into three parts. It covers the RF, el
   caption="RAK4630 module pinout diagram"
 />
 
-| **Pin No.** | **Name**                    |
-| ----------- | --------------------------- |
-| 1           | VBUS                        |
-| 2           | USB-                        |
-| 3           | USB+                        |
-| 4           | P0.13/I2C_SDA               |
-| 5           | P0.14/I2C_SCL               |
-| 6           | P0.15/UART2_RX              |
-| 7           | P0.16/UART2_TX              |
-| 8           | P0.17/UART2_DE              |
-| 9           | P0.19/UART1_RX (AT Command) |
-| 10          | P0.20/UART1_TX (AT Command) |
-| 11          | P0.21/UART1_DE              |
-| 12          | P0.10/NFC2                  |
-| 13          | P0.09/NFC1                  |
-| 14          | GND                         |
-| 15          | RF_BT                       |
-| 16          | GND                         |
-| 17          | NRF_RESET                   |
-| 18          | SWDCLK                      |
-| 19          | SWDIO                       |
-| 20          | VBAT_SX                     |
-| 21          | VBAT_IO_SX                  |
-| 22          | GND                         |
-| 23          | P0.24/I2C_SDA_2             |
-| 24          | P0.25/I2C_SCL_2             |
-| 25          | P1.01/SW1                   |
-| 26          | P1.02/SW2                   |
-| 27          | P1.03/LED1                  |
-| 28          | P1.04/LED2                  |
-| 29          | P0.03/QSPI_CLK              |
-| 30          | P0.02/QSPI_DIO3             |
-| 31          | P0.28/QSPI_DIO2             |
-| 32          | P0.29/QSPI_DIO1             |
-| 33          | P0.30/QSPI_DIO0             |
-| 34          | P0.26/QSPI_CS               |
-| 35          | GND                         |
-| 36          | GND                         |
-| 37          | RF_LoRa                     |
-| 38          | GND                         |
-| 39          | P0.31/AIN7                  |
-| 40          | P0.05/AIN3                  |
-| 41          | P0.04/AIN2                  |
-| 42          | GND                         |
-| 43          | VDD_NRF                     |
-| 44          | VBAT_NRF                    |
+| **Pin No.** | **Name**                        |
+| ----------- | ------------------------------- |
+| 1           | VBUS                            |
+| 2           | USB-                            |
+| 3           | USB+                            |
+| 4           | P0.13/I2C_SDA                   |
+| 5           | P0.14/I2C_SCL                   |
+| 6           | P0.15/UART2_RX                  |
+| 7           | P0.16/UART2_TX (RUI3 BOOT Mode) |
+| 8           | P0.17/UART2_DE                  |
+| 9           | P0.19/UART1_RX (AT Command)     |
+| 10          | P0.20/UART1_TX (AT Command)     |
+| 11          | P0.21/UART1_DE                  |
+| 12          | P0.10/NFC2                      |
+| 13          | P0.09/NFC1                      |
+| 14          | GND                             |
+| 15          | RF_BT                           |
+| 16          | GND                             |
+| 17          | NRF_RESET                       |
+| 18          | SWDCLK                          |
+| 19          | SWDIO                           |
+| 20          | VBAT_SX                         |
+| 21          | VBAT_IO_SX                      |
+| 22          | GND                             |
+| 23          | P0.24/I2C_SDA_2                 |
+| 24          | P0.25/I2C_SCL_2                 |
+| 25          | P1.01/SW1                       |
+| 26          | P1.02/SW2                       |
+| 27          | P1.03/LED1                      |
+| 28          | P1.04/LED2                      |
+| 29          | P0.03/QSPI_CLK                  |
+| 30          | P0.02/QSPI_DIO3                 |
+| 31          | P0.28/QSPI_DIO2                 |
+| 32          | P0.29/QSPI_DIO1                 |
+| 33          | P0.30/QSPI_DIO0                 |
+| 34          | P0.26/QSPI_CS                   |
+| 35          | GND                             |
+| 36          | GND                             |
+| 37          | RF_LoRa                         |
+| 38          | GND                             |
+| 39          | P0.31/AIN7                      |
+| 40          | P0.05/AIN3                      |
+| 41          | P0.04/AIN2                      |
+| 42          | GND                             |
+| 43          | VDD_NRF                         |
+| 44          | VBAT_NRF                        |
 
 
 #### RF Characteristics

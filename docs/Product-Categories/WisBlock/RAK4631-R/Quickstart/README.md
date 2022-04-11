@@ -656,7 +656,7 @@ All available commands can be found in the [AT Command Manual](/Product-Categori
 5. Look for a BLE Device named "**RAK.XXXXXX**" in the scanner list of the app and connect to this device.
 
 ::: tip 📝 NOTE
-By default, the BLE signal of the RAK4631-R turns off automatically if no connection is established after 60 seconds. Connect to the BLE signal of the RAK4631-R immediately after pressing the reset button.
+By default, the BLE signal of the RAK4631-R turns off automatically if no connection is established after 30 seconds. Connect to the BLE signal of the RAK4631-R immediately after pressing the reset button.
 :::
 
 <rk-img

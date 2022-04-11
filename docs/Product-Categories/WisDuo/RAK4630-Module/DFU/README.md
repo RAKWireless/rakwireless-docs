@@ -24,6 +24,7 @@ There will be situations in that you need to update the firmware of your RAK4630
    - [iOS App Store](https://apps.apple.com/us/app/nrf-connect-for-mobile/id1054362403)
    - [Android Play Store](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en&gl=US)
 - [DFU Distribution Package](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK4631_latest_dfu_package.zip)
+- [Latest RAK4630 FW DFU Distribution Package](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK4631_latest_dfu_package.zip)
 
 ## Firmware Update via USB
 
@@ -35,96 +36,60 @@ You need to have a direct connection to the USB bus of RAK4630 before you can pr
 
 ### For Windows
 
-#### Setup the nRFutil Utility and Environment
-
-1. Download the [nRFutil.exe](https://github.com/NordicSemiconductor/pc-nrfutil/releases) and the latest [DFU Distribution Package](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK4631_latest_dfu_package.zip). 
-2. Once you downloaded the listed files, put them in the same directory/folder on your computer.
+1. Create a new folder in your `C:\` drive named `RAK4631-R Update`.
+2. Download the [nRFutil.exe](https://github.com/NordicSemiconductor/pc-nrfutil/releases) and the [latest DFU Package](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK4631_latest_dfu_package.zip). Once you downloaded both files, put them in the `RAK4631-R Update` folder you created as shown in Figure 1.
 
 <rk-img
-  src="/assets/images/wisduo/rak4630-module/quickstart/nrfutil-dfu.png"
+  src="/assets/images/wisduo/rak4630-module/dfu/x2_files_needed.png"
   width="70%"
-  caption="nRFutil and DFU package"
+  caption="nRFutil.exe and RAK4630 Latest Firmware"
 />
 
-#### Setup the Device Console Port in Windows
+3. Connect the RAK4630 via USB and check if port has been detected via device manager. In this guide it is detected as COM32. The COM port number is not fixed and can be different depending on the PC. If no port is shown in device manager, you can try to double click reset button on the WisBlock Base and check again.
+
+<rk-img
+  src="/assets/images/wisduo/rak4630-module/dfu/2_device_manager_port_update.png"
+  width="70%"
+  caption="Checking COM Port via Device Manager"
+/>
+
+4. After that, you need to send `AT+BOOT` command to the device via Serial Terminal software. You can follow the [guide on using Tera Term from RAK4631-R documentation](/Product-Categories/WisBlock/RAK4631-R/DFU/#how-to-check-firmware-version-using-tera-term) but instead of checking the firmware version, you have to input `AT+BOOT`. You will see no reply since the module will restart then will be disconnected momentarily before re-establishing again the connection to Tera Term. 
 
 ::: tip 📝 NOTE
-- This section uses Tera Term for the Terminal emulation utility.
-- USB interface is used. Disregard the Baud Rate setting. 
+You have to disconnect the device connection to TeraTerm/Serial Terminal software or close it so that the COM port will be free when you do the firmware update on the next step. Else, you will have error during FW update.
 :::
 
-1. Download the Tera Term Terminal emulator utility or any console utility you prefer. 
+:::warning ⚠️ WARNING
+**Recovery Mode**
 
-2. After downloading and installing the console utility, open the Tera Term and click Setup in the Menu bar.
+If `AT+BOOT` is not possible to be sent to the device, you can enable DFU mode via UART2_TX pin. You need to connect UART2_TX pin to GND then reset the device to enter DFU mode. You can now proceed on the next step and upload the firmware even without the `AT+BOOT` command.
+:::
 
 <rk-img
-  src="/assets/images/wisduo/rak4630-module/quickstart/serial-port.png"
+  src="/assets/images/wisduo/rak4630-module/dfu/x4_boot.png"
   width="70%"
-  caption="Setting up the serial port"
+  caption="AT+BOOT to Initialize Boot Mode"
 />
 
-3. Then click serial port. Check if the port is correct. 
-
-<rk-img
-  src="/assets/images/wisduo/rak4630-module/quickstart/serial-port-setup.png"
-  width="40%"
-  caption="Serial port setup"
-/>
-
-
-<rk-img
-  src="/assets/images/wisduo/rak4630-module/quickstart/device-manager.png"
-  width="70%"
-  caption="Check the port in the device manager"
-/>
-
-#### Check the Device Firmware Version
-
-To get the device firmware version, use the `AT+VER` command. 
-
-```
-AT+VER?
-AT+VER: get the version of the firmware
-
-OK
-
-AT+VER=?
-AT+VER=3.2.0-p2_22q1_final.87
-
-OK
-```
-
-#### Connect the Device To the DFU Mode
-
-To enter the bootloader mode for firmware upgrade, execute the following steps:
-
-1. Type the command `AT+BOOT` in the Tera Term or any terminal you use.
-2. Before upgrading the dfu package, confirm the device into the bootloader mode.
-3. The device will reset automatically.
-4. After that, close the Tera Term to disconnect the device.
-
-```
-AT+BOOT
-```
-
-
-<rk-img
-  src="/assets/images/wisduo/rak4630-module/quickstart/disconnect-device.png"
-  width="70%"
-  caption="Disconnect the device from Tera Term"
-/>
-
-
-#### Firmware Update via USB
-
-1. Open the Windows Command Prompt application, then change the location where you put the [nRFutil utility program](https://github.com/NordicSemiconductor/pc-nrfutil/releases) and [DFU Distribution Package](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK4631_latest_dfu_package.zip). 
-2. After that, you can now execute the update using the following command:
-
-`nrfutil dfu usb-serial -pkg RAK4631_latest_dfu_package.zip -p COM4`
+5. After initiating Boot mode, you can now execute the firmware update. You need to open command prompt and must be in `RAK4631-R Update` folder directory to do the firmware update. This is folder where you place the nRFutil and the latest firmware. You need to input `cd C:/RAK4631-R Update/` followed  by `nrfutil.exe dfu serial -pkg RAK4631_latest_dfu_package.zip -p COM32`. You have to ensure that you have the right `.zip` file name and `COM port number` to avoid errors.
 
 ::: tip 📝 NOTE
-Check if the firmware version is already upgraded.
+You need to change the COM port number in the command based on your PC. In this example, it is COM32 but it can be different in your PC.
 :::
+
+<rk-img
+  src="/assets/images/wisduo/rak4630-module/dfu/x5_sucesss_nrfutil.png"
+  width="90%"
+  caption="FW Update Using nRFutil"
+/>
+
+6. Congrats on the 100% firmware upload, you can now check if the firmware is successful updated by using `AT+VER=?` command. You can follow the [guide on Tera Term from RAK4631-R documentation](/Product-Categories/WisBlock/RAK4631-R/DFU/#how-to-check-firmware-version-using-tera-term) to check the firmware version and to confirm if the device is now updated.
+
+<rk-img
+  src="/assets/images/wisduo/rak4630-module/dfu/x6_version_check_ok.png"
+  width="70%"
+  caption="RAK4631-R Latest Firmware Version Check"
+/>
 
 ### For Linux
 

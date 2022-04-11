@@ -2,7 +2,7 @@
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK2171. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
 rak_img:  /assets/images/wisnode/rak2171/overview/rak2171.png
 prev: ../Overview/
-next: ../Datasheet/
+next: ../Helium-Datacake/
 tags:
   - RAK2171
   - quickstart
@@ -313,3 +313,175 @@ If the tracker is turned off or the Bluetooth pair period has expired, you will 
   width="30%"
   caption="Third Party NS Confirmation"
 />
+
+## TrackIt LoRaWAN Payload
+
+TrackIt is the latest GPS LoRaWAN tracker by RAKwireless. The name hints what is the device’s purpose – to track something, whether it is a person, an asset, an animal, or anything else. In addition to the tracking application, the device can be used to send SOS or a 6-level alarm signal, based on movement, vibration, fall, etc. The different payloads of the device are explained in this section.
+
+
+### Header/ Payload Type/ Message ID
+
+<table>
+ <thead><tr><th colspan="2">1 byte</th><th colspan="2">1 byte</th></tr></thead>
+ <tbody>
+     <tr><td>HEADER</td><td>Payload time</td><td>Reserved</td><td>Message ID</td></tr>
+     <tr><td>2 bit</td><td>6 bit</td><td>3 bit</td><td>5 bit</td></tr>
+ </tbody>
+</table>
+
+- **Header** - by default, the Header is 11. 
+- **Payload type** – different payload types are explained in Table 2.
+- **Message-ID** – an internal counter for the message. The first 5 bits are for the message ID. The other 3 are reserved. 
+
+### Header/ Payload Type
+
+The different payload types that TrackIt can send are explained below. If the GPS has a fix, it will send data of the location. If a 6-level alarm is activated in the application, the device will send a message when the working pattern is activated.
+
+With 5 clicks on the power button, the device will start sending SOS messages. When the SOS is canceled, a message will also be sent.
+
+<table>
+ <tbody>
+  <tr><td>0b’1100 1010</td><td>No Location</td><td>0xCA</td></tr>
+  <tr><td>0b’1100 1011</td><td>Location</td><td>0xCB</td></tr>
+  <tr><td>0b’1100 1100</td><td>Send SOS</td><td>0xCC</td></tr>
+  <tr><td>0b’1100 1101</td><td>Cancel SOS</td><td>0xCD</td></tr>
+  <tr><td>0b’1100 1110</td><td>6-level alarm</td><td>0xCE</td></tr>
+  </tbody>
+</table>
+
+#### Working Patterns in 6-level Alarm
+
+1. Mild Vibration
+2. Violent Vibration
+3. Movement
+4. Mild Shaking
+5. Violent Shaking
+6. Fall
+
+### No Location Payload
+
+The device will send **No location payload** when the GPS has no fix.
+
+<table>
+ <tbody>
+  <tr><td>1 byte</td><td>2 byte</td><td>3-6 byte</td><td>7-10 byte</td><td>11 byte</td><td>12-16 byte</td><td> 16 byte</td></tr>
+  <tr><td>Header/ Payload Type</td><td>Message ID</td><td>Application ID</td><td> Device ID</td><td> Battery Level</td><td> Time</td><td> Status</td></tr>
+ </tbody>
+</table>
+
+1. Header/Payload Type – 1 byte
+2. Message-ID - 1 byte (3 reserved bits + 5 bits to be used for the ID)
+3. Application ID: 4 bytes
+4. Device ID: 4 bytes
+5. Battery: 1 byte
+6. Time: 4 bytes
+7. Status: 1 byte – 8 bits:
+- Bit 0 – shows if Extended Prediction Orbit (EPO) worked. This allows the device to predict where satellites will be in the sky.
+- Bit 1 – shows if the device is charging.
+- Bit 2 and 3 show if there is GPS fix:
+  * 00: open the GPS fix
+  * 01: Locating
+  * 10: Successful
+  * 11: Failed
+    
+### Location Payload
+
+The device will send **Location payload** when the GPS has a fix.
+
+<table>
+ <tbody>
+  <tr><td>1 byte</td><td>2 byte</td><td>3-6 byte</td><td>7-10 byte</td><td>11-14 byte</td><td>15-18 byte</td><td>19 byte</td><td>20 byte</td><td>21 byte</td><td>22-25 byte</td><tr>
+  <tr><td>Header/ Payload Type</td><td>Message ID</td><td>Application ID</td><td> Device ID</td><td> Longitude</td><td> Accuracy</td><td> GPS Start Number</td><td>Battery</td><td>Time</td><td>Status</td></tr>
+ </tbody>
+</table>
+
+1. Header/Payload Type – 1 byte
+2. Message-ID - 1 byte (3 reserved bits + 5 bits to be used for the ID)
+3. Application ID: 4 bytes
+4. Device ID: 4 bytes
+5. Longitude: 4 bytes
+6. Latitude: 4 bytes
+7. Accuracy: 1 byte
+8. GPS Start Number: 1 byte
+9. Battery: 1 byte
+10. Time: 4 bytes
+11. Status: 1 byte
+- Bit 0 – shows if Extended Prediction Orbit (EPO) worked. This allows the device to predict where satellites will be in the sky.
+- Bit 1 – shows if the device is charging
+- Bit 2 and 3 show if there is a GPS fix
+* 00: open the GPS fix
+* 01: Locating
+* 10: Successful
+* 11: Failed
+
+### Send SOS Payload
+
+SOS type payload has two subtypes of payload – SOS without user data and SOS with user data. The user has the option to set information about themselves via the application in the payload – **Name**, **Phone Number**, and **Country code**. To activate the SOS, the user needs to press 5 times the power button of the TrackIt.
+
+#### Payload Without User's Data
+
+<table>
+ <tbody>
+  <tr><td>1 byte</td><td>2 byte</td><td>3-6 byte</td><td>7-10 byte</td><td>11-14 byte</td><td>15-18 byte</td></tr>
+  <tr><td>Header/ Payload Type</td><td>Message ID</td><td>Application ID</td><td> Device ID</td><td> Longitude</td><td> Latitude</td></tr>
+ </tbody>
+</table>
+
+#### Payload With User Data
+
+<table>
+ <tbody>
+  <tr><td>1 byte</td><td>2 byte</td><td>3-6 byte</td><td>7-10 byte</td><td>11-14 byte</td><td>15-18 byte</td><td>19-28 byte</td><td>29-39 byte</td><td>40-50 byte</td><tr>
+  <tr><td>Header/ Payload Type</td><td>Message ID</td><td>Application ID</td><td> Device ID</td><td> Longitude</td><td> Latitude</td><td> Contact Name</td><td>Country Code</td><td>Phone Number</td></tr>
+ </tbody>
+</table>
+
+1. Header/Payload Type – 1 byte
+2. Message-ID - 1 byte (3 reserved bits + 5 bits to be used for the ID)
+3. Application ID: 4 bytes
+4. Device ID: 4 bytes
+5. Longitude: 4 bytes
+6. Latitude: 4 bytes
+7. User’s name: max length is 10 bytes
+8. Country code: max length is 11 bytes
+9. Phone number: max length is 11 bytes
+
+### Cancel SOS Payload
+
+This payload will be sent when the SOS is canceled. To cancel the SOS, the user needs to press 5 times the power button of the TrackIt.
+
+<table>
+ <tbody>
+  <tr><td>1 byte</td><td>2 byte</td><td>3-6 byte</td><td>7-10 byte</td></tr>
+  <tr><td>Header/ Payload Type</td><td>Message ID</td><td>Application ID</td><td> Device ID</td></tr>
+ </tbody>
+</table>
+
+1. Header/Payload Type – 1 byte
+2. Message-ID - 1 byte (3 reserved bits + 5 bits to be used for the ID)
+3. Application ID: 4 bytes
+4. Device ID: 4 bytes
+
+### 6-level Sensitivity Alarm Payload
+
+The 6-level sensitivity alarm is configured in the application of the TrackIt. The device will send data only when a chosen **Working Pattern** is activated. These are the different **Working Patterns** in 6-level alarm:
+
+1. Mild Vibration
+2. Violent Vibration
+3. Movement
+4. Mild Shaking
+5. Violent Shaking
+6. Fall
+
+<table>
+ <tbody>
+  <tr><td>1 byte</td><td>2 byte</td><td>3-6 byte</td><td>7-10 byte</td><td>11 byte</td></tr>
+  <tr><td>Header/ Payload Type</td><td>Message ID</td><td>Application ID</td><td> Device ID</td><td>Level</td></tr>
+ </tbody>
+</table>
+
+1. Header/Payload Type – 1 byte
+2. Message-ID - 1 byte (3 reserved bits + 5 bits to be used for the ID)
+3. Application ID: 4 bytes
+4. Device ID: 4 bytes
+5. Level – 1 byte. 

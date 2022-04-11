@@ -64,10 +64,16 @@ After connecting your RAK4631-R to WisBlock Base, you can immediately update its
   caption="Checking COM Port via Device Manager"
 />
 
-5. After that, you need to send `AT+BOOT` command to the device. You can follow the [guide on using Tera Term](/Product-Categories/WisBlock/RAK4631-R/DFU/#how-to-check-firmware-version-using-tera-term) but instead of checking the firmware version, you have to input `AT+BOOT`. You will see no reply since the module will restart then will be disconnected momentarily before re-establishing again the connection to Tera Term. 
+5. After that, you need to send `AT+BOOT` command to the device via Serial Terminal software. You can follow the [guide on using Tera Term](/Product-Categories/WisBlock/RAK4631-R/DFU/#how-to-check-firmware-version-using-tera-term) but instead of checking the firmware version, you have to input `AT+BOOT`. You will see no reply since the module will restart then will be disconnected momentarily before re-establishing again the connection to Tera Term. 
 
 ::: tip 📝 NOTE
-You have to disconnect the device connection to Tera Term or close it so that the COM port will be free when you do the firmware update on the next step. Else, you will have error during FW update.
+You have to disconnect the device connection to TeraTerm/Serial Terminal software or close it so that the COM port will be free when you do the firmware update on the next step. Else, you will have error during FW update.
+:::
+
+:::warning ⚠️ WARNING
+**Recovery Mode**
+
+If `AT+BOOT` is not possible to be sent to the device, you can enable DFU mode via WisBlock Base TX1 pin. You need to connect TX1 pin to GND then reset the device to enter DFU mode. You can now proceed on the next step and upload the firmware even without the `AT+BOOT` command.
 :::
 
 <rk-img
@@ -76,7 +82,13 @@ You have to disconnect the device connection to Tera Term or close it so that th
   caption="AT+BOOT to Initialize Boot Mode"
 />
 
+
+
 6. After initiating Boot mode, you can now execute the firmware update. You need to open command prompt and must be in `RAK4631-R Update` folder directory to do the firmware update. This is folder where you place the nRFutil and the latest firmware. You need to input `cd C:/RAK4631-R Update/` followed  by `nrfutil.exe dfu serial -pkg RAK4631_latest_dfu_package.zip -p COM32`. You have to ensure that you have the right `.zip` file name and `COM port number` to avoid errors.
+
+::: tip 📝 NOTE
+You need to change the COM port number in the command based on your PC. In this example, it is COM32 but it can be different in your PC.
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak4631-r/dfu/x5_sucesss_nrfutil.png"

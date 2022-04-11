@@ -19,7 +19,6 @@ RAK4631 and RAK4631-R share common hardware and are 100% identical but they have
 
 * [RAK4631 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
-* [AT Command Manual](../AT-Command-Manual/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [Arduino IDE BSP](/Knowledge-Hub/Learn/Installation-of-Board-Support-Package-in-Arduino-IDE/)

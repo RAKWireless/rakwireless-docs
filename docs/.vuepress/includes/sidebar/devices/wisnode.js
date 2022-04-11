@@ -189,6 +189,14 @@ module.exports = {
     sidebarDepth: 4
   },
   {
+    title: 'Helium + Datacake',
+    path: '/Product-Categories/WisNode/RAK2171/Helium-Datacake/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
     title: 'Datasheet',
     path: '/Product-Categories/WisNode/RAK2171/Datasheet/',
     collapsable: false,

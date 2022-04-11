@@ -1152,7 +1152,7 @@ Pauses the program for the amount of time (in microseconds) specified by the par
 #define delayMicroseconds udrv_app_delay_us
 ```
 
-| **Syntax**     | `delayMicroSecond(us);`                      |
+| **Syntax**     | `delayMicroSeconds(us);`                      |
 | -------------- | -------------------------------------------- |
 | **Parameters** | **us** - The number of microseconds to pause |
 
@@ -1169,7 +1169,7 @@ void loop() {
   time = micros();
 
   Serial.println(time); //prints time since program started
-  delayMicrosecond(1000);          // wait a second so as not to send massive amounts of data
+  delayMicroseconds(1000);          // wait a second so as not to send massive amounts of data
 }
 ```
 :::

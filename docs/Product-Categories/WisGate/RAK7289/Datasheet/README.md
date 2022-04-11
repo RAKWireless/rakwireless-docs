@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisgate
   - RAK7289
-prev: ../Overview/
+prev: ../Quickstart/
 next: false 
 certifications:
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289C_RAK7289_RoHS_Certification.pdf]
@@ -27,9 +27,9 @@ certifications:
 
 **RAK7289 WisGate Edge Pro** is an ideal product for IoT commercial deployment. With its industrial-grade components, it achieves a high standard of reliability.
 
-Supports up to 16 LoRa channels, multi backhaul with Ethernet, Wi-Fi, and Cellular connectivity. Optionally there is a dedicated port for different power options, solar panels, and batteries. With its new enclosure design, it allows the LTE, Wi-Fi, and GPS antennas to be inside the enclosure. 
+Supports up to 16 LoRa channels, multi-backhaul with Ethernet, Wi-Fi, and Cellular connectivity. Optionally there is a dedicated port for different power options, solar panels, and batteries. With its new enclosure design, it allows the LTE, Wi-Fi, and GPS antennas to be inside the enclosure. 
 
-The gateway provides for a solid out-of-the-box experience for quick deployment. Additionally, since its software and UI sits on top of OpenWRT it is perfect for the development of custom applications (via the open SDK).
+The gateway provides a solid out-of-the-box experience for quick deployment. Additionally, since its software and UI sits on top of OpenWRT it is perfect for the development of custom applications (via the open SDK).
 
 Thus, the RAK7289 is suited for any use case scenario, be it rapid deployment or customization with regards to UI and functionality.
 
@@ -37,14 +37,14 @@ Thus, the RAK7289 is suited for any use case scenario, be it rapid deployment or
 
 #### Hardware
 
-- **IP67/NEMA-6** industrial grade enclosure with cable glands
+- **IP67/NEMA-6** industrial-grade enclosure with cable glands
 - **PoE (802.3af)** + Surge Protection
 - Dual LoRa Concentrators for up to **16 channels**
-- **Backhaul:** Wi-Fi, LTE and Ethernet
+- **Backhaul:** Wi-Fi, LTE, and Ethernet
 - GPS
-- Supports DC 12V or Solar power supply with Electricity monitoring (Solar Kit optional)
-- Internal antenna for Wi-Fi, GPS and LTE, External antenna for LoRa
-- Dying-Gasp(optional)
+- Supports DC 12&nbsp;V or Solar power supply with Electricity monitoring (Solar Kit optional)
+- Internal antenna for Wi-Fi, GPS, and LTE, External antenna for LoRa
+- Dying-Gasp (optional)
 
 #### Software
 
