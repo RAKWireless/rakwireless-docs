@@ -15,7 +15,6 @@ Thank you for choosing **RAK3172-SiP WisDuo LPWAN SiP** in your awesome IoT Proj
 * [Quick Start Guide](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/)
 * [AT Command Manual](/Product-Categories/WisDuo/RAK3172-SiP/AT-Command-Manual/)
 * [Datasheet](/Product-Categories/WisDuo/RAK3172-SiP/Datasheet/)
-* [RAK3172-SiP 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/3D_RAK3172_SiP.stp)
 
 ## Product Description
 

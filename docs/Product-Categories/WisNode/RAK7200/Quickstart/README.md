@@ -244,7 +244,7 @@ If you take a look at the Helium console, you will also see the join request pac
   caption="Helium console live device data"
 />
 
-
+<!-- 
 
 ### Connecting to The Things Network (TTN)
 
@@ -661,7 +661,7 @@ By using the ABP mode in LoRaWAN, it doesn’t require to join a network before 
 />
 
 
-Once the RAK7200 joined into a LoRaWAN network, it will start to send periodically the data collected from the GPS and other sensors. Then, go to the TTN Console to confirm that the messages ware properly received.
+Once the RAK7200 joined into a LoRaWAN network, it will start to send periodically the data collected from the GPS and other sensors. Then, go to the TTN Console to confirm that the messages ware properly received. -->
 
 ### Connecting to The Things Network V3 (TTNv3)
 
@@ -965,7 +965,7 @@ Request an account in the forum of RAK, then access to server assigned for your 
 
 #### Create a New Application
 
-Go to the Application section as shown in Figure 60.
+Go to the Application section as shown in Figure 33.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/connecting-to-chirpstack/35.application-section.png"
@@ -973,7 +973,7 @@ Go to the Application section as shown in Figure 60.
   caption="Application Section of ChirpStack LoRaServer"
 />
 
-By default, you should create a new Application, although you can reuse the existing ones. For this setup, create a new Application by clicking on the “**CREATE**” button, and fill the required parameters as shown in Figures 61 and 62.
+By default, you should create a new Application, although you can reuse the existing ones. For this setup, create a new Application by clicking on the “**CREATE**” button, and fill the required parameters as shown in Figures 34 and 35.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/connecting-to-chirpstack/36.new-application.png"
@@ -997,7 +997,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 <b>Register a New Device</b>
 
 
-1. Choose the **Application** created in the previous step, then select the **DEVICES** tab as shown in Figures 63 and 64.
+1. Choose the **Application** created in the previous step, then select the **DEVICES** tab as shown in Figures 36 and 37.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/connecting-to-chirpstack/38.application-available.png"
@@ -1028,7 +1028,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 6. Once the node is created, fill-in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
 
 * **Device name and Device description**: These are descriptive texts about your device. 
-* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in Figure 67. You can also add a specific Device EUI directly in the form. 
+* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in Figure 40. You can also add a specific Device EUI directly in the form. 
 * **Device Profile**: 
   * If you want to join in OTAA mode, select “**DeviceProfile_OTAA**”.
   * If you want to join in ABP mode, select “**DeviceProfile_ABP**”.
@@ -1056,7 +1056,7 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
 
 ###### Configure the OTAA Mode on the Platform
 
-1. If you have selected “**DeviceProfile_OTAA**” as shown in Figure 68, then after the device is created, an Application Key must be also created for this device. 
+1. If you have selected “**DeviceProfile_OTAA**” as shown in Figure 41, then after the device is created, an Application Key must be also created for this device. 
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/43.otaa.png"
@@ -1065,7 +1065,7 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
 />
 
 
-2. A previously created Application Key can be entered here, or a new one can be generated automatically by clicking the icon highlighted in red in Figure 69:
+2. A previously created Application Key can be entered here, or a new one can be generated automatically by clicking the icon highlighted in red in Figure 42:
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/44.otaa-set-device-keys.png"
@@ -1075,7 +1075,7 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
 
 3. Once the Application Key is added in the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button. 
 
-* As shown in Figure 70, a new device should be listed in the DEVICES tab. The most important parameters, such as the Device EUI are shown in the summary.
+* As shown in Figure 43, a new device should be listed in the DEVICES tab. The most important parameters, such as the Device EUI are shown in the summary.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/45.list-device.png"
@@ -1084,7 +1084,7 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
 />
 
 
-4. To end the process, it is a good practice to review that the Application Key is properly associated with this device. The Application Key can be verified in the **KEYS(OTAA)** tab as shown in Figure 71.
+4. To end the process, it is a good practice to review that the Application Key is properly associated with this device. The Application Key can be verified in the **KEYS(OTAA)** tab as shown in Figure 44.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/46.application-key.png"
@@ -1222,7 +1222,7 @@ After configuring all parameters, you need to reset RAK7200 Module to save the p
 at+join
 ```
 
-After 5 or 6 seconds, if the request was successfully received by a LoRa gateway, then you should see the messages shown in Figure 78.
+After 5 or 6 seconds, if the request was successfully received by a LoRa gateway, then you should see the messages shown in Figure 51.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/53.otaa-join-chirpstack.png"
@@ -1238,7 +1238,7 @@ After 5 or 6 seconds, if the request was successfully received by a LoRa gateway
   caption="Checking LoRaWAN Joint Request in Chirpstack OTAA Console"
 />
 
-- On the ChirpStack platform, you should also see the messages in the LORAWAN FRAMES tab as shown in Figure 79. 
+- On the ChirpStack platform, you should also see the messages in the LORAWAN FRAMES tab as shown in Figure 52. 
 
 :::tip 📝 NOTE:
 
@@ -1259,7 +1259,7 @@ This concludes the exercise to send data in the OTAA mode.
 ###### Configure the ABP Mode on the Platform
 
 
-During the registration of a new device, if you select “**DeviceProfile_ABP**” or "**DeviceProfile_ABP_CN470**", as shown in Figure 81, then the ChirpStack platform will assume that this device will join to the LoRaWAN network using the ABP mode. 
+During the registration of a new device, if you select “**DeviceProfile_ABP**” or "**DeviceProfile_ABP_CN470**", as shown in Figure 54, then the ChirpStack platform will assume that this device will join to the LoRaWAN network using the ABP mode. 
 
 :::tip 📝 NOTE:
 
@@ -1409,7 +1409,7 @@ By using the ABP mode in LoRaWAN protocol, it doesn’t require to join a networ
 
 :::
 
-Once the RAK7200 joined into a LoRaWAN network, it will start to send periodically the data collected from the GPS and other sensors. Then, go to the ChirpStack platform to confirm that the messages ware properly received as shown in Figure 89.
+Once the RAK7200 joined into a LoRaWAN network, it will start to send periodically the data collected from the GPS and other sensors. Then, go to the ChirpStack platform to confirm that the messages ware properly received as shown in Figure 62.
 
 
 <rk-img
@@ -1452,7 +1452,7 @@ In this section, you will upgrade the firmware by using the **STM32CubeProgramme
   caption="STM32CubeProgrammer UART Communication Parameters"
 />
 
-5. Once the connection parameters were properly set, press the **Connect** button located at the top right corner. If there were problems during the connection, the errors would be shown in Log message box. The usual problem is because the RAK7200 didn’t entered into the boot mode properly. In such cases, you will find similar error messages shown in Figure 92. 
+5. Once the connection parameters were properly set, press the **Connect** button located at the top right corner. If there were problems during the connection, the errors would be shown in Log message box. The usual problem is because the RAK7200 didn’t entered into the boot mode properly. In such cases, you will find similar error messages shown in Figure . 
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/upgrading-the-firmware/66.error-messages.png"
@@ -1471,7 +1471,7 @@ In this section, you will upgrade the firmware by using the **STM32CubeProgramme
 
 7. Once the communication is established with the RAK7200, burn a newer version of firmware into the RAK7200 module:
 
-  - **Erase the existing data**: To avoid unexpected problems during the future usage of the module, it’s a good practice to erase completely the EEPROM before burning the new version of firmware. You can achieve it by clicking on the Erase button highlighted in red square in Figure 94. 
+  - **Erase the existing data**: To avoid unexpected problems during the future usage of the module, it’s a good practice to erase completely the EEPROM before burning the new version of firmware. You can achieve it by clicking on the Erase button highlighted in red square in Figure 67. 
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/upgrading-the-firmware/68.erase-button.png"
@@ -1479,7 +1479,7 @@ In this section, you will upgrade the firmware by using the **STM32CubeProgramme
   caption="STM32CubeProgrammer Erase Button"
 />
 
-  - **Select the desired firmware to burn**: Press the “Open file” tab, see Figure 93, and select the correct firmware file in the pop-up window as shown in Figure 95.
+  - **Select the desired firmware to burn**: Press the “Open file” tab, see Figure 66, and select the correct firmware file in the pop-up window as shown in Figure 68.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/upgrading-the-firmware/69.select-new-firmware.png"
@@ -1487,7 +1487,7 @@ In this section, you will upgrade the firmware by using the **STM32CubeProgramme
   caption="STM32CubeProgrammer Select New Firmware"
 />
 
-  -	Once the new firmware is loaded, its content is displayed in the tool in hexadecimal format. Now, As shown in Figure 96, press the “**Download**” button to start the burning process. Once finished, a pop-up message will appear.
+  -	Once the new firmware is loaded, its content is displayed in the tool in hexadecimal format. Now, As shown in Figure 69, press the “**Download**” button to start the burning process. Once finished, a pop-up message will appear.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/upgrading-the-firmware/70.download-firmware.png"

@@ -395,6 +395,9 @@ If you check the Devices Section and the Live Device Data in the Devices section
 />
 
 Your RAK7204 is now connected to the Built-in server and transmitting data over regular intervals.
+
+<!-- Outdated
+
 ### Connecting to The Things Network (TTN)
 
 The Things Network is about enabling low power devices to be used in long range gateways that connect to an open-source, decentralized network and exchange data with Applications. Learn more about the Things Network [**here**](https://www.thethingsnetwork.org/docs/).
@@ -674,7 +677,7 @@ If you get a response in your TTN live data feed as in the figure below, then yo
   caption="Sending Data to TTN from RAK7204 WisNode Sense Home"
 />
 
-
+ -->
 
 ### Connecting to The Things Network V3 (TTNv3)
 
