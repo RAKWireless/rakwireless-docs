@@ -13,7 +13,7 @@ certifications:
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240-RCM_Test_Report.zip]
   - [IC, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7249_RAK7240_IC_Cert.pdf]
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK-ROHS-ATL202011241747R01-Report.pdf]
-  - [Anatel, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_Anatel_Certificado%2017194-20-10145.pdf]
+  - [Anatel, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_Anatel_certification.pdf]
 ---
 
 # RAK7240 WisGate Edge Prime Datasheet

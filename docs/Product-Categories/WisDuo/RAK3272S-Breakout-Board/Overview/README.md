@@ -16,6 +16,7 @@ Thank you for choosing **RAK3272S Breakout Board** in your awesome IoT Project! 
 
 * [Quick Start Guide](../Quickstart/)
 * [AT Command Manual](../AT-Command-Manual/)
+* [AT Command Migration Guide of RAK3172 to RUI3](https://docs.rakwireless.com/Knowledge-Hub/Learn/AT-Migration-Guide/)
 * [Datasheet](../Datasheet/)
 
 

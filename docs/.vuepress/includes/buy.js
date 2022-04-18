@@ -788,7 +788,7 @@ export default {
   },  
   '/Product-Categories/WisBlock/RAK14011/': {
     label: 'RAK14011 WisBlock Keypad 4x4 Module',
-    img: '/assets/images/wisblock/rak14011/overview/rak14011_buy.png',
+    img: '/assets/images/wisblock/rak14011/overview/RAK14011_home.png',
     store: 'https://store.rakwireless.com/products/rak14004-rak14009-rak14010-rak14011-wisblock-keypad-module?utm_source=RAK14011&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAK14013/': {
