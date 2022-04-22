@@ -284,9 +284,16 @@ RAK3172 uses UART2's serial pins to upload the latest firmware.
 
 #### Firmware / OS
 
-| Model     | Version     | Source                                                              |
-| --------- | ----------- | ------------------------------------------------------------------- |
-| RAK3172   | V1.0.4      | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/RAK3172_Latest_Firmware.zip) |
+| Model   | Version | Source                                                                                          |
+| ------- | ------- | ----------------------------------------------------------------------------------------------- |
+| RAK3172 | RUI3 (default baudrate = 115200)   | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest.bin) |
+| RAK3172 | **DEPRECATED** V1.0.4 (default baudrate = 9600) | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/RAK3172_Latest_Firmware.zip) |
+
+:::warning ⚠️ WARNING
+There are RAK3172 devices loaded with old firmware versions which are not based on RUI3 (RAKwireless Unified Interface V3). These devices have v1.0.4 and below.
+
+If the host microcontroller code is based on this old firmware, we have a [RAK3172 AT Command migration guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/AT-Migration-Guide/) that explain in detail the few differences between the two AT commands set.
+:::
 
 <!-- ## Certification
 

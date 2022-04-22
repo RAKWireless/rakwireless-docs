@@ -1325,10 +1325,16 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
 
 3.	Connect the RAK3172 module with a computer through a USB to TTL. Refer to [Figure 1](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#connect-to-the-rak3172).
 
-4.	Open the Device Firmware Upgrade tool. Select the serial port and baud rate (9600) of the module and click the "Select Port" button.
+4.  Open the Device Firmware Upgrade tool. Select the serial port and baud rate (115200) of the module and click the "Select Port" button.
+
+:::tip 📝 NOTE:
+
+If your firmware upload always fail, check your current baudrate setting using `AT+BAUD=?` command and use that baud rate value in the RAK DFU Tool. You can also check if you selected the right COM port.
+
+:::
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/56.device-firmware.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/1.png"
   width="80%"
   caption="Device Firmware Upgrade Tool"
 />
@@ -1336,22 +1342,22 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
 5.	Select the application firmware file of the module with the suffix "**.bin**".
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/57.select-firmware.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/2.png"
   width="80%"
-  caption="Select Firmware"
+  caption="Select firmware"
 />
 
-6.	Click the "**Upgrade**" button to upgrade the device. After the upgrade is complete, the RAK3172 module will be ready to work with the new firmware.
+6.  Click the "**Upgrade**" button to upgrade the device. After the upgrade is complete, the RAK3172 will be ready to work with the new firmware.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/58.firmware-upgrading.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/3.png"
   width="80%"
-  caption="Firmware Upgrading"
+  caption="Firmware upgrading"
 />
 
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/59.upgrade-success.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/4.png"
   width="80%"
-  caption="Upgrade Successful"
+  caption="Upgrade successful"
 />

@@ -15,9 +15,9 @@ tags:
 
 RAK3172 WisDuo module is based on STM32WLE5CC chip and it is designed to simplify LoRaWAN and LoRa point to point (P2P) communication. To integrate LoRa technology into your projects, RAK3172 implemented easy to use UART communication interface where you can send AT commands. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can also use any microcontroller with UART interface to control the RAK3172 module. 
 
-The UART serial communication is exposed on the UART2 (also identified as **LPUART1 port**), through **Pin 2 (TX2)** and **Pin 1 (RX2)**. The default parameters of the UART2 communication are **9600 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK3172 Module Datasheet](/Product-Categories/WisDuo/RAK3172-Module/Datasheet/#rak3172-wisduo-lpwan-module-datasheet).
+The UART serial communication is exposed on the UART2 (also identified as **LPUART1 port**), through **Pin 2 (TX2)** and **Pin 1 (RX2)**. The default parameters of the UART2 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK3172 Module Datasheet](/Product-Categories/WisDuo/RAK3172-Module/Datasheet/#rak3172-wisduo-lpwan-module-datasheet).
 
-## Links to Quick Start Guide
+### Links to Quick Start Guide
 
 For AT commands example usage, you can check these sections of quick start guide:
 
@@ -27,7 +27,45 @@ For AT commands example usage, you can check these sections of quick start guide
 - [RAK3172 Chirpstack ABP Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#chirpstack-abp-device-registration) - How to add ABP device on Chirpstack and what AT commands to use on RAK3172 ABP activation.
 - [LoRa P2P](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#lora-p2p-mode) - Point to point communication between two RAK3172 modules.
 
-## AT Command Syntax
+## AT Commands List
+
+There are two AT Commands set for RAK3172 depending on the firmware uploaded on the device. 
+
+1. [RUI3 AT Commands](/RUI3/Serial-Operating-Modes/AT-Command-Manual)
+
+The complete list of commands can be found in [RUI3 AT Commands Documentation.](/RUI3/Serial-Operating-Modes/AT-Command-Manual/#content)
+
+:::tip 📝 NOTE:
+In addition, aside on UART2, AT commands can also be interfaced via UART1 **Pin 4 (TX1)** and **Pin 5 (RX1)**. You can configure the settings of UART1 and UART2 interfaces via [RUI3 Serial Operating Modes](/RUI3/Serial-Operating-Modes/#rak-unified-interface-v3-rui3-serial-operating-modes).
+:::
+
+2. [AT Commands (DEPRECATED) - FW version 1.0.4 and below.](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-command-list-of-old-fw-version-1-0-4-and-below-deprecated)
+
+:::warning ⚠️ WARNING
+There are RAK3172 devices loaded with old firmware versions which are not based on RUI3 (RAKwireless Unified Interface V3). These devices have v1.0.4 and below.
+
+If the host microcontroller code is based on this old firmware, we have a [RAK3172 AT Command migration guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/AT-Migration-Guide/) that explain in detail the few differences between the two AT commands set.
+:::
+
+### AT Command list of old FW version 1.0.4 and below (DEPRECATED)
+
+This is the complete list of AT commands based on old FW.
+
+#### Content
+
+  - [General Commands](#general-commands)
+  - [Keys, IDs, and EUIs Management](#keys-ids-and-euis-management)
+  - [Joining and Sending Data to LoRaWAN® Network](#joining-and-sending-data-to-lorawan-network)
+  - [LoRaWAN® Device Configuration](#lorawan-device-configuration)
+  - [Class B Mode](#class-b-mode)
+  - [Device Information](#device-information)
+  - [RF Test](#rf-test)
+  - [P2P Mode](#p2p-mode)
+  - [Multicast Group](#multicast-group)
+  - [Data Transparent Transmission](#data-transparent-transmission)
+  - [Appendix](#appendix)
+
+#### AT Command Syntax
 
 The AT command is based on ASCII characters. In general, the AT Command starts with the prefix `AT` and ends with `<CR><LF>` (i.e. `\r\n`). For the rest of the document, the `\r\n` part is omitted for the sake of clarity.
 
@@ -80,7 +118,7 @@ On the examples of AT Commands on this document, ATE is active therefore each in
 
 :::
 
-## General Commands
+#### General Commands
 
 This section describes the generic commands related to “attention” help list, link control and CPU AT_Slave reset.
 
@@ -235,7 +273,9 @@ AT+BAUD=100000
 AT_PARAM_ERROR
 ```
 
-## Keys, IDs, and EUIs management
+[Back](#content)  
+
+#### Keys, IDs, and EUIs Management
 
 This section describes the commands related to the activation of the end device. EUI's and Keys are **MSB first**.  
 
@@ -408,7 +448,9 @@ AT+NWKSKEY=01020AFBA1CD4D20010230405A6B7F
 AT_PARAM_ERROR
 ```
 
-## Joining and Sending Data to LoRaWAN® Network
+[Back](#content)  
+
+#### Joining and Sending Data to LoRaWAN® Network
 
 This section describes the commands related to the joining process of the device to the LoRaWAN® network.
 
@@ -635,7 +677,9 @@ When called twice, without new data received between the calls, the second AT+RE
 `OK`
 :::
 
-## LoRaWAN® device configuration
+[Back](#content)  
+
+#### LoRaWAN® Device Configuration
 
 This section describes the commands related to the configuration of the LoRaWAN® device.
 
@@ -1213,7 +1257,9 @@ AT+PNM=?
 OK
 ```
 
-## Class B Mode
+[Back](#content)  
+
+#### Class B Mode
 
 This section describes the commands related to Class B mode.
 
@@ -1295,7 +1341,9 @@ LTIME:03h56m52s on 09/18/2021
 OK
 ```
 
-## Device information
+[Back](#content)  
+
+#### Device Information
 
 This section describes the commands on getting device information.
 
@@ -1413,7 +1461,9 @@ LTIME:02h46m12s on 22/10/2021
 OK
 ```
 
-## RF Test
+[Back](#content)  
+
+#### RF Test
 
 Description: Radio frequency test management
 
@@ -1681,7 +1731,9 @@ AT+CERTIF=0
 OK
 ```
 
-## P2P Mode
+[Back](#content)  
+
+#### P2P Mode
 
 This section describes the commands related to LoRa point to point functionality.
 
@@ -1974,7 +2026,9 @@ OK
 +EVT:11223344
 ```
 
-## Multicast Group
+[Back](#content)  
+
+#### Multicast Group
 
 This section describes the commands related to multicast group functionality.
 
@@ -2048,7 +2102,10 @@ MC1:ClassC:11223344:11223344556677881122334455667788:112233445566778811223344556
 
 OK
 ```
-## Data Transparent Transmission
+
+[Back](#content)  
+
+#### Data Transparent Transmission
 
 This section describes the commands related to transparent data transmission in UART.
 
@@ -2097,7 +2154,9 @@ This command is used to stop the transparent transmission mode.
 There must be no any UART termination after `+++`. There must be no CR or LF after the `+++` command else it will be transmitted as payload and the device will continue in Data Transparent Transmission mode.
 :::
 
-## Appendix 
+[Back](#content)  
+
+#### Appendix 
 
 ### Appendix I：Data Rate by Region
 

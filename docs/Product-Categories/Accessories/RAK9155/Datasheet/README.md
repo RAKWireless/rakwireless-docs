@@ -123,7 +123,7 @@ The appearance of the RAK9155 battery system is shown below. The battery system 
 #### Electrical Schematic
 
 <rk-img
-  src="/assets/images/accessories/rak9155/datasheet/3.png"
+  src="/assets/images/accessories/rak9155/datasheet/3.svg"
   width="80%"
   caption="Electrical schematic"
 />
@@ -133,7 +133,7 @@ For reference only, this module does not contain a sampling wiring harness.
 :::
 
 <rk-img
-  src="/assets/images/accessories/rak9155/datasheet/4.png"
+  src="/assets/images/accessories/rak9155/datasheet/4.svg"
   width="80%"
   caption="Wiring schematics"
 />
