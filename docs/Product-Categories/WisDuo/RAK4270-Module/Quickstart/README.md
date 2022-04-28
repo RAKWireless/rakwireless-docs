@@ -324,6 +324,10 @@ at+set_config=lora:dev_eui:1133557799224466
 
 5. Set the Application EUI.
 
+:::tip 📝 NOTE:
+All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error. 
+:::
+
 ```
 at+set_config=lora:app_eui:1000000000000009
 ```

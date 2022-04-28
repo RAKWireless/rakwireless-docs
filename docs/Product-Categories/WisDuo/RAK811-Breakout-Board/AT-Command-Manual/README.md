@@ -743,6 +743,9 @@ This command is used to set the Application EUI parameter for the LoRaWAN OTAA m
     </tr>
 </table>
 
+:::tip 📝 NOTE:
+All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error. 
+:::
 
 **Example**:
 

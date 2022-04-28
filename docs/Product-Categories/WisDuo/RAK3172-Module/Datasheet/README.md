@@ -78,9 +78,9 @@ The hardware specification discusses the interfaces, pinouts and corresponding f
 
 #### Interfaces
 
-| Module  | Interfaces               |
-| ------  | ------------------------ |
-| RAK3172 | LPUART1                  |
+| Module  | Interfaces           |
+| ------- | -------------------- |
+| RAK3172 | UART2/LPUART1, UART1 |
 
 #### Pin Definition
 

@@ -39,7 +39,7 @@ void my_handler(char buf)
 
 void setup()
 {
-    Serial.begin(115200, CUSTOM_MODE);
+    Serial.begin(115200, RAK_CUSTOM_MODE);
 }
 
 void loop()

@@ -87,19 +87,17 @@ The table below shows the supported LoRaWAN Bands of the RAK13300 module:
 
 ##### Absolute Maximum Ratings
 
-| **Symbol** | **Description**               | **Min.** | **Nom.** | **Max.** | **Unit** |
-| ---------- | ----------------------------- | -------- | -------- | -------- | -------- |
-| VBAT_SX    | LoRa chip supply voltage      | -0.5     | -        | 3.9      | V        |
-| VBAT_SX_IO | LoRa chip supply for I/O pins | -0.5     | -        | 3.9      | V        |
-| ESD HBM    | Human body model              | -        | -        | 2000     | V        |
-| ESD  CDM   | Charged device model          | -        | -        | 500      | V        |
+| **Symbol** | **Description**                      | **Min.** | **Nom.** | **Max.** | **Unit** | **Note** |
+| ---------- | ------------------------------------ | -------- | -------- | -------- | -------- | -------- |
+| 3V3_S      | LoRa chip and IO pins supply voltage | -0.5     | 3.3      | 3.9      | V        | Connected internally to VBAT_SX and VBAT_SX_IO |
+| ESD HBM    | Human body model                     | -        | -        | 2000     | V        |          |
+| ESD  CDM   | Charged device model                 | -        | -        | 500      | V        |          |
 
 ##### Recommended Operating Conditions
 
-| **Symbol** | **Description**            | **Min.** | **Nom.** | **Max.** | **Unit** |
-| ---------- | -------------------------- | -------- | -------- | -------- | -------- |
-| VBAT_SX    | SX1262 supply voltage      | 2.0      | 3.3      | 3.7      | V        |
-| VBAT_SX_IO | SX1262 supply for I/O pins | 2.0      | 3.3      | 3.7      | V        |
+| **Symbol** | **Description**                       | **Min.** | **Nom.** | **Max.** | **Unit** | **Note** |
+| ---------- | ------------------------------------- | -------- | -------- | -------- | -------- | -------- |
+| 3V3_S      | LoRa chip and IO pins supply voltage  | 2.0      | 3.3      | 3.7      | V        |Connected internally to VBAT_SX and VBAT_SX_IO |
 
 #### Mechanical Characteristics
 

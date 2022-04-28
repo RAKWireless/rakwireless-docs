@@ -286,6 +286,12 @@ You have to make sure that you are uploading in the right port else it will fail
 cd /Users/username/Downloads
 ```
 
+or you can directly try
+
+```
+cd Downloads
+```
+
 3. Make the `nrfutil-mac.1` executable.
 
 ```
@@ -903,6 +909,12 @@ AT+VER=3.0.0-p1_final.42
 cd /Users/username/Downloads
 ```
 
+or you can directly try
+
+```
+cd Downloads
+```
+
 3. Make the `adafruit-nrfutil-macos` executable.
 
 ```
@@ -956,6 +968,12 @@ After updating the bootloader, you can now upload the RAK4631-R firmware by foll
 
 ```
 cd /Users/username/Downloads
+```
+
+or you can directly try
+
+```
+cd Downloads
 ```
 
 3. Make the `nrfutil-mac.1` executable.

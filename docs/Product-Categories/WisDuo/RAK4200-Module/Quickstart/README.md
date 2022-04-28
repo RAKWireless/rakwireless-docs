@@ -329,7 +329,10 @@ at+set_config=lora:dev_eui:5e9d1e0857cf25f1
 
 Get the Application EUI number from the TTN registration.
 
-Type the command:
+:::tip 📝 NOTE:
+All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error. 
+:::
+
 ```
 at+set_config=lora:app_eui:5e9d1e0857cf25f1
 ```

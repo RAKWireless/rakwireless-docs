@@ -605,9 +605,7 @@ There are two ways to update the RAK4631 bootloader in macOS:
 
 Usually, the `adafruit-nrfutil-macos` file will go to the downloads folder. 
 
-The next step after downloading the file is to open the terminal and go to the downloads directory or the location where you put the downloaded file.
-
-`cd /Users/username/Downloads`
+The next step after downloading the file is to open the terminal and go to the downloads directory or the location where you put the downloaded file. It will be the change directory command where the **username** will depend on your macbook `cd /Users/username/Downloads` or you can directly try `cd Downloads`.
 
 And then execute this command:
 

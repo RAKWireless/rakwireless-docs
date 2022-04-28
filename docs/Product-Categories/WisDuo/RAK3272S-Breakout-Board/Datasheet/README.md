@@ -64,8 +64,8 @@ When programming via a ST-Link tool, it is required to have all of the following
 
 This board has two UART interfaces:
 
-- UART1
-- UART2
+- UART1 (can allow AT commands if configured via RUI3 Serial Port Mode)
+- UART2/LPUART1 (allows AT Commands and FW Update)
 
 ##### I2C and SPI Interface 
 

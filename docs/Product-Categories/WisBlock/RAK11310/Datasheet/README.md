@@ -33,7 +33,7 @@ The RF communication characteristic of the Lora module makes it suitable for a v
 - Serial Wire Debug (SWD) interface
 - **Module Size**: 20 x 30&nbsp;mm
 - **Supply Voltage**: 2.0&nbsp;V ~ 3.6&nbsp;V
-- **Temperature Range**: -40&nbsp;°C ~ 70&nbsp;°C
+- **Temperature Range**: -20&nbsp;°C ~ 70&nbsp;°C
 
 
 ## Specifications

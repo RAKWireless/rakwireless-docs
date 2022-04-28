@@ -28,7 +28,7 @@ RAK11300 WisDuo LPWAN Module is based on the Raspberry Pi RP2040 chip and SX1262
 - 133Mhz CPU Clock
 - 246&nbsp;kbytes RAM
 - **Supply Voltage**: 2.0&nbsp;V ~ 3.6&nbsp;V
-- **Temperature Range**: -40°&nbsp;C ~ 85°&nbsp;C
+- **Temperature Range**: -20°&nbsp;C ~ 85°&nbsp;C
 
 ## Specifications
 
@@ -229,13 +229,13 @@ The RAK11300 supports two different frequency variation: RAK11300(L) Low Radio F
 
 | Feature               | Minimum | Typical | Maximum | Unit |
 | --------------------- | ------- | ------- | ------- | ---- |
-| Operating Temperature | -40     | 25      | 85      | °C   |
+| Operating Temperature | -20     | 25      | 85      | °C   |
 
 ##### Storage Temperature
 
 | Feature             | Minimum | Typical | Maximum | Unit |
 | ------------------- | ------- | ------- | ------- | ---- |
-| Storage Temperature | -40     |         | 85      | °C   |
+| Storage Temperature | -20     |         | 85      | °C   |
 
 ##### Recommended Reflow Profile
 

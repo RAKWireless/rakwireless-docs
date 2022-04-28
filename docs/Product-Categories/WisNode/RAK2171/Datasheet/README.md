@@ -7,6 +7,9 @@ tags:
   - datasheet
   - wisnode
   - RAK2171
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_CE_DOC.pdf]
+  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_UK_certification.pdf]
 ---
 
 # RAK2171 WisNode TrackIt Datasheet
@@ -131,3 +134,7 @@ The RAK2172 WisNode TrackIt has built-in LoRaWAN, GPS, and Bluetooth antennas.
 
 - For Android
 - For iOS
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

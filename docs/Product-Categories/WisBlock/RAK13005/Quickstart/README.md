@@ -19,7 +19,8 @@ Before going through each and every step on using the RAK13005 WisBlock module, 
 
 #### Hardware 
 
-- [RAK13005 WisBlock LIN Module](https://store.rakwireless.com/collections/wisblock-interface/products/lin-bus-module-rak13005)
+- [RAK13005 WisBlock LIN Module - Controller/Master Mode](https://store.rakwireless.com/products/lin-bus-module-rak13005?variant=41796125524166)
+- [RAK13005 WisBlock LIN Module - Peripheral/Slave Mode](https://store.rakwireless.com/products/lin-bus-module-rak13005?variant=41796125556934)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
@@ -52,7 +53,7 @@ RAK13005 is a WisBlock LIN Module that extends the WisBlock system to be used on
 
 #### LIN Peripheral and Controller Mode Hardware Configuration
 
-By default, the RAK13005 LIN Module is configured as Peripheral (slave), and an SMD resistor must be relocated to make the module operate in Controller mode (master). You need to use a soldering iron to reposition the resistor to make the module a LIN Controller. The resistor location is shown in **Figure 2**.
+RAK13005 supports both **Controller(master)** and **Peripheral(slave)** modes. The two modes uses the same RAK13005 circuit design and configuration is simply determined by an SMD resistor. The resistor location is shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/rak13005-mod.png"
