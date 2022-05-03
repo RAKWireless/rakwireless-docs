@@ -34,10 +34,11 @@ module.exports = {
     'robots': {
       host: "https://docs.rakwireless.com/",
       sitemap: "/sitemap.xml",
+      allowAll: true,
       policies: [{
         userAgent: '*',
         // disallow: [],
-        allow: []
+        // allow: []
       }]
     },
     'vuepress-plugin-code-copy': {
