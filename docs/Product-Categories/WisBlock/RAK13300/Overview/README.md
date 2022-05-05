@@ -8,12 +8,14 @@ tags:
     - overview
     - wisblock
     - RAK13300
+    - Semtech
+    - SX1262
 ---
 
 
 # RAK13300 WisBlock LPWAN Wireless Module
 
-Thank you for choosing **RAK13300 WisBlock LPWAN Wireless Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK13300 WisBlock LPWAN Wireless Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK13300 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

@@ -7,12 +7,14 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK15000
+    - Microchip
+    - AT24CM02
 ---
 
 
 # RAK15000 WisBlock EEPROM Module
 
-Thank you for choosing **RAK15000 WisBlock EEPROM Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK15000 WisBlock EEPROM Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK15000 Quick Start Guide](../Quickstart)
 * [Datasheet](../Datasheet/)

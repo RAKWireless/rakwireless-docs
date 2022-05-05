@@ -15,6 +15,8 @@ certifications:
   - [UKCA, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_RAK7289V2_UKCA_Certification.pdf]
   - [ISED, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_ISED_Certification.zip]
   - [SRRC, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_SRRC_Certification.pdf]
+  - [KC, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_RAK7289C_RAK7289V2_RAK7289CV2_KC_cert.pdf]
+  - [RCM, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_RAK7289V2_RCM_certification.pdf]
 ---
 
 

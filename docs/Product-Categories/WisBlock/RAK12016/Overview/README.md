@@ -7,12 +7,14 @@ prev: ../../
 tags:
     - wisblock
     - RAK12016
+    - Spectrasymbol
+    - FS-L-0095-103-ST
 ---
 
 
 # RAK12016 WisBlock Flex Sensor Module
 
-Thank you for choosing **RAK12016 WisBlock Flex Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK12016 WisBlock Flex Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK12016 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

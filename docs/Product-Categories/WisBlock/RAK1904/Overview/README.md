@@ -7,6 +7,8 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK1904
+    - Texas Instruments
+    - LIS3DH
 ---
 
 # RAK1904 WisBlock 3-axis Acceleration Sensor

@@ -7,11 +7,13 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK13600
+    - NXP
+    - PN532
 ---
 
 # RAK13600 WisBlock NFC Reader Module
 
-Thank you for choosing **RAK13600 WisBlock NFC Reader Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK13600 WisBlock NFC Reader Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK13600 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

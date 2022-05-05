@@ -7,11 +7,13 @@ next: ../Datasheet/
 tags:
     - wisblock
     - RAK14000
+    - Solomon Systech Limited
+    - SSD1680
 ---
 
 # RAK14000 WisBlock E-Ink Display
 
-Thank you for choosing **RAK14000 WisBlock E-Ink Display Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK14000 WisBlock E-Ink Display Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK14000 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

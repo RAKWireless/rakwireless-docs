@@ -7,6 +7,8 @@ prev: ../../
 tags:
     - wisblock
     - RAK12010
+    - Vishay Semiconductors
+    - VEML7700
 ---
 
 

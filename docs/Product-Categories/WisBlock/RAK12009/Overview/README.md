@@ -7,12 +7,14 @@ prev: ../../
 tags:
     - wisblock
     - RAK12009
+    - Winsen Electronics
+    - MQ-3
 ---
 
 
 # RAK12009 WisBlock MQ3 Alcohol Gas Sensor Module
 
-Thank you for choosing **RAK12009 WisBlock MQ3 Alcohol Gas Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK12009 WisBlock MQ3 Alcohol Gas Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 
 * [RAK12009 Quick Start Guide](../Quickstart/)

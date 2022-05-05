@@ -7,11 +7,13 @@ next: ../Quickstart/
 tags:
     - RAK5811
     - wisblock
+    - STMicroelectronics
+    - LM2902
 ---
 
 # RAK5811 WisBlock 0-5V Interface Module
 
-Thank you for choosing **RAK5811 WisBlock 0-5V Interface Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK5811 WisBlock 0-5V Interface Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK5811 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

@@ -7,6 +7,8 @@ prev: ../../
 tags:
     - wisblock
     - RAK12029
+    - Texas Instruments
+    - LDC1614
 ---
 
 

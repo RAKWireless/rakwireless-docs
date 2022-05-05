@@ -7,11 +7,13 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK12018
+    - RAKINDA
+    - LV3296
 ---
 
 # RAK12018 WisBlock Code Scanner
 
-Thank you for choosing **RAK12018 WisBlock Code Scanner Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK12018 WisBlock Code Scanner Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK12018 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

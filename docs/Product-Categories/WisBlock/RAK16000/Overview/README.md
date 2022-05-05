@@ -7,12 +7,14 @@ prev: ../../
 tags:
     - wisblock
     - RAK16000
+    - Texas Instruments
+    - INA219BID
 ---
 
 
 # RAK16000 WisBlock DC Current Module
 
-Thank you for choosing **RAK16000 WisBlock DC Current Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK16000 WisBlock DC Current Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK16000 Quick Start Guide](../Quickstart)
 * [Datasheet](../Datasheet/)

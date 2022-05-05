@@ -7,12 +7,14 @@ prev: ../../
 tags:
     - wisblock
     - RAK12006
+    - Senba Sensing Technology Co., Ltd.
+    - AM312
 ---
 
 
 # RAK12006 WisBlock PIR Module
 
-Thank you for choosing **RAK12006 WisBlock PIR Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK12006 WisBlock PIR Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK12006 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

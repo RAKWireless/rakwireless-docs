@@ -7,11 +7,13 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK19002
+    - Texas Instruments
+    - TPS61046
 ---
 
 # RAK19002 WisBlock Boost Module
 
-Thank you for choosing **RAK19002 WisBlock Boost Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK19002 WisBlock Boost Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK19002 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

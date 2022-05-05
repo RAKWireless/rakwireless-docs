@@ -7,12 +7,14 @@ prev: ../../
 tags:
     - wisblock
     - RAK14001
+    - On Semiconductors
+    - NCP5623B
 ---
 
 
 # RAK14001 WisBlock RGB LED Module
 
-Thank you for choosing **RAK14001 WisBlock RGB LED Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK14001 WisBlock RGB LED Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK14001 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

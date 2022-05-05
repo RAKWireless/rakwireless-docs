@@ -8,12 +8,14 @@ tags:
     - overview
     - wisblock
     - RAK12017
+    - Everlight
+    - ITR20001
 ---
 
 
 # RAK12017 WisBlock IR Detection Module
 
-Thank you for choosing **RAK12017 WisBlock IR Detection Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK12017 WisBlock IR Detection Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK12017 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

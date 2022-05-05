@@ -7,11 +7,13 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK12003
+    - Melexis
+    - MLX90632
 ---
 
 # RAK12003 WisBlock Infrared Temperature Sensor
 
-Thank you for choosing **RAK12003 WisBlock Infrared Temperature Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK12003 WisBlock Infrared Temperature Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK12003 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

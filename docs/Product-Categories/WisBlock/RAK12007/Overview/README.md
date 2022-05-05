@@ -7,6 +7,8 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK12007
+    - angoSense
+    - CS100
 ---
 
 

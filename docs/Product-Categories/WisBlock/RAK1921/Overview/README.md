@@ -7,12 +7,14 @@ next: ../Datasheet/
 tags:
   - RAK1921
   - wisblock
+  - Solomon Systech Limited
+  - SSD1306
 ---
 
 
 # RAK1921 WisBlock OLED Display 
 
-Thank you for choosing **RAK1921 WisBlock OLED Display** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK1921 WisBlock OLED Display** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK1921 Quick Start Guide](../Quickstart)
 * [Datasheet](../Datasheet/)

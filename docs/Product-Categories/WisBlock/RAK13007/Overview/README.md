@@ -7,6 +7,8 @@ prev: ../../
 tags:
     - wisblock
     - RAK13007
+    - Omron
+    - G5LE-14 DC3
 ---
 
 

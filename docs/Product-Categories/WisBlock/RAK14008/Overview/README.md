@@ -7,6 +7,8 @@ prev: ../../
 tags:
     - wisblock
     - RAK14008
+    - PixArt Imaging
+    - PAJ7620U2
 ---
 
 

@@ -7,12 +7,14 @@ prev: ../../
 tags:
     - wisblock
     - RAK19004
+    - Texas Instruments
+    - TPS55165-Q1
 ---
 
 
 # RAK19004 WisBlock Green Power Module
 
-Thank you for choosing **RAK19004 WisBlock Green Power Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK19004 WisBlock Green Power Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>

@@ -7,11 +7,13 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK5801
+    - STMicroelectronics
+    - LM2902
 ---
 
 # RAK5801 WisBlock 4-20mA Interface Module
 
-Thank you for choosing **RAK5801 WisBlock 4-20mA Interface Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK5801 WisBlock 4-20mA Interface Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK5801 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

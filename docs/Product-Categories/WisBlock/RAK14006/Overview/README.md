@@ -8,12 +8,14 @@ tags:
     - overview
     - wisblock
     - RAK14006
+    - BOURNS
+    - PEC11L-4125F-S0020
 ---
 
 
 # RAK14006 WisBlock Rotary Encoder Module
 
-Thank you for choosing **RAK14006 WisBlock Rotary Encoder Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK14006 WisBlock Rotary Encoder Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK14006 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

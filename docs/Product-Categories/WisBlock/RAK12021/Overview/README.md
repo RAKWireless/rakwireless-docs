@@ -7,6 +7,8 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK12021
+    - AMS
+    - TCS37725FN
 ---
 
 # RAK12021 WisBlock RGB Sensor Module

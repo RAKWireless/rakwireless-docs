@@ -7,12 +7,14 @@ prev: ../../
 tags:
     - wisblock
     - RAK16001
+    - Texas Instruments
+    - ADS7830
 ---
 
 
 # RAK16001 WisBlock ADC Module
 
-Thank you for choosing **RAK16001 WisBlock ADC Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK16001 WisBlock ADC Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK16001 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

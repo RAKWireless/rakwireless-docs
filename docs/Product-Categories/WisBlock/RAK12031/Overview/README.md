@@ -7,6 +7,8 @@ prev: ../../
 tags:
     - wisblock
     - RAK12031
+    - Omron
+    - EE-SX1041
 ---
 
 

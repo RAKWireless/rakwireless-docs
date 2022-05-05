@@ -7,6 +7,8 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK12025
+    - STMicroelectronics
+    - I3G4250D
 ---
 
 # RAK12025 WisBlock Gyroscope Sensor Module

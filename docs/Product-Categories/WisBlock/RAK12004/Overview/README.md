@@ -7,12 +7,14 @@ prev: ../../
 tags:
     - wisblock
     - RAK12004
+    - Winsen Electronics
+    - MQ-2
 ---
 
 
 # RAK12004 WisBlock MQ2 Gas Sensor Module
 
-Thank you for choosing **RAK12004 WisBlock MQ2 Gas Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK12004 WisBlock MQ2 Gas Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK12004 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

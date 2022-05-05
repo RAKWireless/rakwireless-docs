@@ -8,12 +8,14 @@ tags:
     - overview
     - wisblock
     - RAK12019
+    - Lite-On
+    - LTR-390UV-01
 ---
 
 
 # RAK12019 WisBlock UV Sensor
 
-Thank you for choosing **RAK12019 WisBlock UV Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK12019 WisBlock UV Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK12019 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

@@ -7,11 +7,13 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK18000
+    - STMicroelectronics
+    - MP34DT06J
 ---
 
 # RAK18000 WisBlock PDM Stereo Microphone Module
 
-Thank you for choosing **RAK18000 WisBlock PDM Stereo Microphone Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK18000 WisBlock PDM Stereo Microphone Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK18000 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

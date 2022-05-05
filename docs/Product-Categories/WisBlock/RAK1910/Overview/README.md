@@ -7,6 +7,8 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK1910
+    - u-blox
+    - MAX-7Q
 ---
 
 

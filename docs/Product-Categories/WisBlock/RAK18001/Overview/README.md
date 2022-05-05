@@ -7,11 +7,13 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK18001
+    - Jiangsu Huaneng Electronics
+    - MLT-5020
 ---
 
 # RAK18001 WisBlock Buzzer Module
 
-Thank you for choosing **RAK18001 WisBlock Buzzer Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK18001 WisBlock Buzzer Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK18001 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

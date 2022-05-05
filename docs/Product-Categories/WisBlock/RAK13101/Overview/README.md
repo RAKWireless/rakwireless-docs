@@ -7,11 +7,13 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK13101
+    - Quectel
+    - MC20CE
 ---
 
 # RAK13101 WisBlock GSM/GPRS Module
 
-Thank you for choosing **RAK13101 WisBlock GSM/GPRS Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK13101 WisBlock GSM/GPRS Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK13101 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

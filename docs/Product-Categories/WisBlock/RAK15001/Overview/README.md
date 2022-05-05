@@ -7,11 +7,13 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK15001
+    - GigaDevice
+    - GD25Q16CNIG
 ---
 
 # RAK15001 WisBlock Flash Module
 
-Thank you for choosing **RAK15001 WisBlock Flash Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK15001 WisBlock Flash Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK15001 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

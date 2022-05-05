@@ -7,11 +7,13 @@ next: ../Quickstart/
 tags: 
     - RAK11200
     - wisduo
+    - Espressif
+    - ESP32-WROVER
 ---
 
 # RAK11200 WisBlock WiFi Module
 
-Thank you for choosing **RAK11200 WisBlock WiFi Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK11200 WisBlock WiFi Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 * [RAK11200 Quick Start Guide](../Quickstart/)

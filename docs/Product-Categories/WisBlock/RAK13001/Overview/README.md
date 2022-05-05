@@ -7,12 +7,14 @@ prev: ../../
 tags:
     - wisblock
     - RAK13001
+    - HONGFA
+    - HF46F
 ---
 
 
 # RAK13001 WisBlock Relay IO Module
 
-Thank you for choosing **RAK13001 WisBlock Relay IO Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK13001 WisBlock Relay IO Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK13001 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

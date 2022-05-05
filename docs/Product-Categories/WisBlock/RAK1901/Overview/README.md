@@ -5,13 +5,15 @@ rak_grp: [wisblock, wissensor]
 prev: ../../
 next: ../Quickstart/
 tags:
-    - wisduo
+    - wisblock
     - RAK1901
+    - Sensirion
+    - SHTC3
 ---
 
 # RAK1901 WisBlock Temperature and Humidity Sensor
 
-Thank you for choosing **RAK1901 WisBlock Temperature and Humidity Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK1901 WisBlock Temperature and Humidity Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK1901 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

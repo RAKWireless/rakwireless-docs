@@ -7,11 +7,13 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK13003
+    - Microchip
+    - MCP23017
 ---
 
 # RAK13003 WisBlock IO Expansion Module
 
-Thank you for choosing **RAK13003 WisBlock IO Expansion Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK13003 WisBlock IO Expansion Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK13003 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

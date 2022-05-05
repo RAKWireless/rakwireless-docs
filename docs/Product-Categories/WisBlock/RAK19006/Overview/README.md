@@ -7,12 +7,14 @@ prev: ../../
 tags:
     - wisblock
     - RAK19006
+    - ConvenientPower 
+    - CPS3008
 ---
 
 
 # RAK19006 WisBlock Wireless Charge Module
 
-Thank you for choosing **RAK19006 WisBlock Wireless Charge Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK19006 WisBlock Wireless Charge Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK19006 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

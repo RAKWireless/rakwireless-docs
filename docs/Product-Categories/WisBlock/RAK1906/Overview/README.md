@@ -7,11 +7,13 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK1906
+    - BOSCH
+    - BME680
 ---
 
 # RAK1906 WisBlock Environmental Sensor
 
-Thank you for choosing **RAK1906 WisBlock Environmental Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK1906 WisBlock Environmental Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK1906 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

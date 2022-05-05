@@ -7,6 +7,8 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK13800
+    - WIZnet
+    - W5100S-L
 ---
 
 # RAK13800 WisBlock Ethernet Module

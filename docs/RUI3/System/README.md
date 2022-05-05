@@ -214,7 +214,7 @@ bool get(uint32_t offset, uint8_t * buf, uint32_t len)
 
 | **Syntax**     | `api.system.flash.get(offset, buf, len)`                                                                                              |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **offset** the offset to the start of user flash partition <br> **buf** the buffer for reading the data <br>**len**the length of data |
+| **Parameters** | **offset** the offset to the start of user flash partition (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) <br> **buf** the buffer for reading the data <br>**len**the length of data (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) |
 | **Returns**    | **TRUE**	for reading data successfully <br> **FALSE** for reading data failure                                                        |
 
 
@@ -228,7 +228,7 @@ bool set(uint32_t offset, uint8_t * buf, uint32_t len)
 
 | **Syntax**     | `api.system.flash.set(offset, buf, len)`                                                                                              |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **offset** the offset to the start of user flash partition <br> **buf** the buffer for writing the data <br>**len**the length of data |
+| **Parameters** | **offset** the offset to the start of user flash partition (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) <br> **buf** the buffer for writing the data <br>**len**the length of data (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) |
 | **Returns**    | **TRUE**	for writing data successfully <br> **FALSE** for writing data failure                                                        |
 
 
@@ -289,7 +289,7 @@ void loop()
 :::
 
 ### all()
-Sleep all with default no timeout.
+Sleep all component with default no timeout.
 
 ```c
 void all(int ms_time = POWERSAVE_NO_TIMEOUT)
@@ -315,7 +315,7 @@ void loop()
 :::
 
 ### setup()
-Sleep all with default no timeout.
+Setup the sleep function
 
 ```c
 void setup(RUI_WAKEUP_TRIGGER_MODE mode, uint32_t pin)

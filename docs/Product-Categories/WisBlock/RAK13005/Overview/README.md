@@ -7,11 +7,13 @@ next: ../Quickstart/
 tags:
     - RAK13005
     - wisblock
+    - Infineon
+    - TLE7259-3
 ---
 
 # RAK13005 WisBlock LIN Module
 
-Thank you for choosing **RAK13005 WisBlock LIN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK13005 WisBlock LIN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK13005 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

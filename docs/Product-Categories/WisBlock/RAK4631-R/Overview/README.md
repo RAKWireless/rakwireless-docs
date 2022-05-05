@@ -7,11 +7,15 @@ rak_grp: [wisblock, wiscore]
 tags:
     - RAK4631-R
     - wisblock
+    - Nordic
+    - nRF52840
+    - Semtech
+    - SX1262
 ---
 
 # RAK4631-R WisBlock LPWAN Module
 
-Thank you for choosing **RAK4631-R WisBlock LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK4631-R WisBlock LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 ::: tip 📝 NOTE
 RAK4631-R and RAK4631 share common hardware and are 100% identical, but they have different firmware. **RAK4631-R** is based on RUI3, which gives you flexibility in developing optimized firmware using the RUI3 APIs.

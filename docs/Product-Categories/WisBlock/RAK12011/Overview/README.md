@@ -7,6 +7,8 @@ prev: ../../
 tags:
     - wisblock
     - RAK12011
+    - STMicroelectronics
+    - LPS33HW
 ---
 
 
