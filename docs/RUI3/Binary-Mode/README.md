@@ -17,7 +17,7 @@ void send(RAK_SERIAL_PORT port, uint8_t flag,uint8_t frame_type, uint8_t * paylo
 | **Parameters** | **port**	The port this packet is sent to <br> **List:** <br> `RAK_SERIAL_UART0` `RAK_SERIAL_UART1` `RAK_SERIAL_UART2` `RAK_SERIAL_USB0` `RAK_SERIAL_BLE0` <br>**flag**	flag header of API mode protocol <br>**frame_type**	frame type header of API mode protocol <br> **payload**	packet payload <br> **length**	packet length <br> **response_handler**	one-time handler for this API mode request |
 
 ::: details Click to View Example
-```c
+```c{12}
 void setup()
 {
   Serial2.begin(115200);

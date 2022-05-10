@@ -476,7 +476,7 @@ bool set(char* buf , uint32_t len)
 | **Returns**    | **TRUE**	for setting alias name successfully <br> **FALSE**	for setting alias name failure  |
 
 :::details Click to View Example
-```c
+```c{4}
 void setup()
 {
     Serial.begin(115200);

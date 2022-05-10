@@ -753,7 +753,7 @@ void end(void)
 | **Returns** | void          |
 
 ::: details Click to View Example
-```c
+```c{6}
 void setup() {
   Wire.begin();
 }
@@ -895,7 +895,7 @@ In-between calls to [beginTransmission()](#begintransmission) and [endTransmissi
 | **Returns**    | `write()` will return the number of bytes written, though reading that number is optional(Type: byte)                                          |
 
 ::: details Click to View Example
-```c
+```c{7}
   void setup() {
     Wire.begin();
   }
@@ -910,7 +910,7 @@ In-between calls to [beginTransmission()](#begintransmission) and [endTransmissi
     while(Wire.available()) {
       char c = Wire.read();   
       Serial.print(c);
-  }
+    }
     delay(5000);
 
   }
@@ -931,7 +931,7 @@ virtual int available(void)
 | **Returns** | The number of bytes available for reading |
 
 ::: details Click to View Example
-```c
+```c{12}
 void setup() {
   Wire.begin();
 }
@@ -971,7 +971,7 @@ virtual int read(void)
 :::
 
 ::: details Click to View Example
-```c
+```c{13}
 void setup() {
   Wire.begin();
 }
@@ -1355,7 +1355,7 @@ unsigned long pulseIn(uint8_t pin, uint8_t state, unsigned long timeout = 100000
 | **Returns**    | The length of the pulse (in microseconds) or 0 if no pulse started before the timeout(Type: unsigned long)                                                                                                                   |
 
 ::: details Click to View Example
-```c
+```c{12}
 uint8_t ledPin = 36;
 uint8_t pulsePin = 13;
 unsigned long duration;
@@ -1848,7 +1848,7 @@ Reads a bit of a number.
 | **Returns**    | The value of the bit (0 or 1)                                                                                                       |
 
 ::: details Click to View Example
-```c
+```c{6,9,12,15}
 void setup() {
   Serial.begin(115200);
   Serial.println("Read the bits of 6(0110)");
@@ -1885,7 +1885,7 @@ Sets (writes a 1 to) a bit of a numeric variable.
 | **Returns**    | void                                                                                                                                       |
 
 ::: details Click to View Example
-```c
+```c{10}
 void setup() {
   Serial.begin(115200);
 
@@ -1917,7 +1917,7 @@ Clears (writes a 0 to) a bit of a numeric variable.
 | **Returns**    | The value of the numeric variable after the bit at position n is cleared                                                                       |
 
 ::: details Click to View Example
-```c
+```c{10}
 void setup() {
   Serial.begin(115200);
 
@@ -1949,7 +1949,7 @@ Writes a bit of a numeric variable.
 | **Returns**    | void                                                                                                                                                                                                                   |
 
 ::: details Click to View Example
-```c
+```c{9,12,15,18}
 void setup() {
   Serial.begin(115200);
 
@@ -1995,7 +1995,7 @@ Computes the value of the specified bit (bit 0 is 1, bit 1 is 2, bit 2 is 4, etc
 | **Returns**    | The value of the bit                   |
 
 ::: details Click to View Example
-```c
+```c{5,7}
 void setup() {
   Serial.begin(115200);
 
@@ -2025,7 +2025,7 @@ Extracts the low-order (rightmost) byte of a variable (e.g. a word).
 | **Returns**    | byte                        |
 
 ::: details Click to View Example
-```c
+```c{6,9}
 void setup() {
   Serial.begin(115200);
   Serial.println("Test target 0xABCD");
@@ -2056,7 +2056,7 @@ Extracts the high-order (leftmost) byte of a word (or the second lowest byte of 
 | **Returns**    | byte                        |
 
 ::: details Click to View Example
-```c
+```c{6,9}
 void setup() {
   Serial.begin(115200);
   Serial.println("Test target 0xABCD");
@@ -2125,7 +2125,7 @@ void digitalWrite(uint8_t pin, uint8_t value)
 | **Returns**    | void                                                                   |
 
 ::: details Click to View Example
-```c
+```c{14,16}
 uint8_t ledPin = 36;   // LED connected to digital pin 36
 uint8_t inputPin = 13; // input connected to digital pin 13
 
@@ -2161,7 +2161,7 @@ int digitalRead	(uint8_t pin)
 | **Returns**    | HIGH or LOW(Type: int)                   |
 
 ::: details Click to View Example
-```c
+```c{12}
 uint8_t ledPin = 36;   // LED connected to digital pin 36
 uint8_t inputPin = 13; // input connected to digital pin 13
 
@@ -2228,7 +2228,7 @@ void analogWrite(uint8_t pin, int value)
 | **Returns**    | void                                                                                                                 |
 
 ::: details Click to View Example
-```c
+```c{30,32}
 int val = 0; // variable to write the LED pin
 bool state = false;
 bool ledSwitch = false;

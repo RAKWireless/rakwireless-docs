@@ -1,7 +1,7 @@
 # LoRaWAN
 
 
-## LoRaWAN Data TYpe
+## LoRaWAN Data Type
 
 ### RAK\_LORA\_McSession
 
@@ -288,7 +288,7 @@ bool get(uint8_t * buf, uint32_t len)
 
 
 ::: details Click to View Example
-```c
+```c{21}
 
  // OTAA Application EUI MSB
   uint8_t node_app_eui[8] = {0x0E, 0x0D, 0x0D, 0x01, 0x0E, 0x01, 0x02, 0x03};
@@ -340,7 +340,7 @@ bool set(uint8_t * buf, uint32_t len)
 
 
 ::: details Click to View Example
-```c
+```c{11}
 
     // OTAA Application EUI MSB
     uint8_t node_app_eui[8] = {0x0E, 0x0D, 0x0D, 0x01, 0x0E, 0x01, 0x02, 0x03}; 
@@ -401,7 +401,7 @@ bool get(uint8_t* buf, uint32_t len)
 
 
 ::: details Click to View Example
-```c
+```c{21}
 
 // OTAA Application Key MSB
 uint8_t node_app_key[16] = {0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3E};
@@ -455,7 +455,7 @@ bool set(uint8_t* buf, uint32_t len)
 
 
 ::: details Click to View Example
-```c
+```c{11}
 
 // OTAA Application Key MSB
 uint8_t node_app_key[16] = {0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3E};
@@ -524,7 +524,7 @@ Syntax function can only work in ABP Mode.
 :::
 
 ::: details Click to View Example
-```c
+```c{21}
 
 // ABP Application Session Key
 uint8_t node_app_skey[16] = {0x25, 0xC4, 0xF1, 0xD1, 0x78, 0xC8, 0x8D, 0x01, 0xA8, 0x80, 0xC2, 0x79, 0xA7, 0x9F, 0x34, 0x3B};
@@ -577,7 +577,7 @@ bool set(uint8_t* buf, uint32_t len)
 
 
 ::: details Click to View Example
-```c
+```c{11}
 
 // ABP Application Session Key
 uint8_t node_app_skey[16] = {0x25, 0xC4, 0xF1, 0xD1, 0x78, 0xC8, 0x8D, 0x01, 0xA8, 0x80, 0xC2, 0x79, 0xA7, 0x9F, 0x34, 0x3B};
@@ -643,7 +643,7 @@ The Syntax function can only work in ABP mode.
 
 
 ::: details Click to View Example
-```c
+```c{21}
 
 // ABP Device Address
 uint8_t node_dev_addr[4] = {0x05, 0x05, 0x06, 0x06};
@@ -695,7 +695,7 @@ bool set(uint8_t* buf, uint32_t len)
 
 
 ::: details Click to View Example
-```c
+```c{11}
 
 // ABP Device Address
 uint8_t node_dev_addr[4] = {0x05, 0x05, 0x06, 0x06};
@@ -757,7 +757,7 @@ bool get(uint8_t* buf, uint32_t len)
 
 
 ::: details Click to View Example
-```
+```c{21}
 
 // OTAA Device EUI MSB
 uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
@@ -809,7 +809,7 @@ bool set(uint8_t* buf, uint32_t len)
 
 
 ::: details Click to View Example
-```c
+```c{11}
 
 // OTAA Device EUI MSB
 uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
@@ -875,7 +875,7 @@ Even though the length of network identifier(NetID) is 3 bytes, you should give 
 
 
 ::: details Click to View Example
-```c
+```c{34}
 
 // OTAA Device EUI MSB
 uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
@@ -954,7 +954,7 @@ This function can only work in ABP mode0.
 :::
 
 ::: details Click to View Example
-```c
+```c{21}
 
 // ABP Network Session Key
 uint8_t node_nwk_skey[16] = {0xD6, 0x03, 0x37, 0xAC, 0x97, 0x4C, 0x43, 0x2F, 0xF3, 0x7A, 0xF9, 0xA7, 0x9B, 0xE8, 0x50, 0xF7};
@@ -1005,7 +1005,7 @@ bool set(uint8_t* buf, uint32_t len)
 
 
 ::: details Click to View Example
-```c
+```c{11}
 
 // ABP Network Session Key
 uint8_t node_nwk_skey[16] = {0xD6, 0x03, 0x37, 0xAC, 0x97, 0x4C, 0x43, 0x2F, 0xF3, 0x7A, 0xF9, 0xA7, 0x9B, 0xE8, 0x50, 0xF7};
@@ -1070,8 +1070,7 @@ uint8_t get()
 
 
 ::: details Click to View Example
-```c
-void setup()
+```c{10}
 void setup()
 {
     Serial.begin(115200);
@@ -1111,7 +1110,7 @@ Can only input 0 ~ 7 times.
 
 
 ::: details Click to View Example
-```c
+```c{5}
 void setup()
 {
     Serial.begin(115200);
@@ -1151,8 +1150,7 @@ bool get()
 
 
 ::: details Click to View Example
-```c
-
+```c{10}
 void setup()
 {
     Serial.begin(115200);
@@ -1186,8 +1184,7 @@ bool set(bool value)
 
 
 ::: details Click to View Example
-```c
-
+```c{5}
 void setup()
 {
     Serial.begin(115200);
@@ -1231,7 +1228,7 @@ This API can only work when confirm mode is on.
 
 
 ::: details Click to View Example
-```c
+```c{35}
 // OTAA Device EUI MSB
 uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
 // OTAA Application EUI MSB
@@ -1304,8 +1301,7 @@ bool get()
 
 
 ::: details Click to View Example
-```c
-
+```c{10}
 void setup()
 {
     Serial.begin(115200);
@@ -1315,7 +1311,7 @@ void setup()
 
 void loop()
 {
-    Serial.printf("Network join mode is %s\n\r", api.lorawan.cfm.get() ? "OTAA" : "ABP");
+    Serial.printf("Network join mode is %s\n\r", api.lorawan.njm.get() ? "OTAA" : "ABP");
 
     delay(1000);
 }
@@ -1340,8 +1336,7 @@ bool set(bool value)
 
 
 ::: details Click to View Example
-```c
-
+```c{5}
 void setup()
 {
     Serial.begin(115200);
@@ -1382,7 +1377,7 @@ bool get()
 
 
 ::: details Click to View Example
-```c
+```c{22}
 
 // OTAA Device EUI MSB
 uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
@@ -1434,7 +1429,7 @@ bool join()
 
 
 ::: details Click to View Example
-```c
+```c{25}
 
 // OTAA Device EUI MSB
 uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
@@ -1488,7 +1483,7 @@ bool send(uint8_t length,uint8_t * payload, uint8_t fport, bool confirm = true, 
 
 
 ::: details Click to View Example
-```c
+```c{34}
 
 // OTAA Device EUI MSB
 uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
@@ -1618,7 +1613,7 @@ bool registerRecvCallback(service_lora_recv_cb callback)
 
 
 ::: details Click to View Example
-```c
+```c{36}
 
 void recv_cb(SERVICE_LORA_RECEIVE_T *data) {
   Serial.println("Something received!");
@@ -1702,7 +1697,7 @@ bool registerJoinCallback(service_lora_join_cb callback)
 
 
 ::: details Click to View Example
-```c
+```c{36}
 void recv_cb(SERVICE_LORA_RECEIVE_T *data) {
   Serial.println("Something received!");
   for (int i = 0 ; i < data->BufferSize ; i++) {
@@ -1738,7 +1733,7 @@ void setup()
     api.lorawan.njm.set(1);
     api.lorawan.join();
     api.lorawan.registerRecvCallback(recv_cb);
-api.lorawan.registerJoinCallback(join_cb);
+    api.lorawan.registerJoinCallback(join_cb);
     api.lorawan.registerSendCallback(send_cb);
 
     //wait for Join success
@@ -1784,7 +1779,7 @@ bool registerSendCallback(service_lora_send_cb callback)
 
 
 ::: details Click to View Example
-```c
+```c{38}
 
 void recv_cb(SERVICE_LORA_RECEIVE_T *data) {
   Serial.println("Something received!");
@@ -1821,7 +1816,7 @@ void setup()
     api.lorawan.njm.set(1);
     api.lorawan.join();
     api.lorawan.registerRecvCallback(recv_cb);
-api.lorawan.registerJoinCallback(join_cb);
+    api.lorawan.registerJoinCallback(join_cb);
     api.lorawan.registerSendCallback(send_cb);
 
     //wait for Join success
@@ -1879,8 +1874,7 @@ bool get()
 
 
 ::: details Click to View Example
-```c
-
+```c{10}
 void setup()
 {
     Serial.begin(115200);
@@ -1893,7 +1887,6 @@ void loop()
     Serial.printf("Adaptive data rate is  %s\r\n", api.lorawan.adr.get() ? "Enable" : "Disable");
     delay(1000);
 }
-
 ```
 :::
 
@@ -1913,8 +1906,7 @@ bool set(bool value)
 
 
 ::: details Click to View Example
-```c
-
+```c{5}
 void setup()
 {
     Serial.begin(115200);
@@ -1927,7 +1919,6 @@ void loop()
     Serial.printf("Adaptive data rate is  %s\r\n", api.lorawan.adr.get() ? "Enable" : "Disable");
     delay(1000);
 }
-
 ```
 :::
 
@@ -1955,8 +1946,7 @@ uint8_t get()
 
 
 ::: details Click to View Example
-```c
-
+```c{10}
 void setup()
 {
     Serial.begin(115200);
@@ -2000,8 +1990,7 @@ bool set(uint8_t value)
 
 
 ::: details Click to View Example
-```c
-
+```c{5}
 void setup()
 {
     Serial.begin(115200);
@@ -2052,8 +2041,7 @@ bool get()
 
 
 ::: details Click to View Example
-```c
-
+```c{10}
 void setup()
 {
     Serial.begin(115200);
@@ -2090,8 +2078,7 @@ bool set(uint8_t dutyCycle)
 
 
 ::: details Click to View Example
-```c
-
+```c{5}
 void setup()
 {
     Serial.begin(115200);
@@ -2131,8 +2118,7 @@ uint8_t get()
 
 
 ::: details Click to View Example
-```c
-
+```c{10}
 void setup()
 {
     Serial.begin(115200);
@@ -2165,8 +2151,7 @@ bool set(uint8_t value)
 
 
 ::: details Click to View Example
-```c
-
+```c{5}
 void setup()
 {
     Serial.begin(115200);
@@ -2205,8 +2190,7 @@ int get()
 
 
 ::: details Click to View Example
-```c
-
+```c{10}
 void setup()
 {
     Serial.begin(115200);
@@ -2239,8 +2223,7 @@ bool set(int value)
 
 
 ::: details Click to View Example
-```c
-
+```c{5}
 void setup()
 {
     Serial.begin(115200);
@@ -2278,8 +2261,7 @@ int get()
 
 
 ::: details Click to View Example
-```c
-
+```c{8}
 void setup()
 {
     Serial.begin(115200);
@@ -2309,7 +2291,7 @@ bool set(int value)
 | **Return Values** | **TRUE** for setting join delay success <br> **FALSE** for setting join delay failure |
 
 ::: details Click to View Example
-```c
+```c{5}
 void setup()
 {
     Serial.begin(115200);
@@ -2348,8 +2330,7 @@ bool get()
 
 
 ::: details Click to View Example
-```c
-
+```c{10}
 void setup()
 {
     Serial.begin(115200);
@@ -2382,8 +2363,7 @@ bool set(bool value)
 
 
 ::: details Click to View Example
-```c
-
+```c{5}
 void setup()
 {
     Serial.begin(115200);
@@ -2423,8 +2403,7 @@ int get()
 
 
 ::: details Click to View Example
-```c
-
+```c{10}
 void setup()
 {
     Serial.begin(115200);
@@ -2457,8 +2436,7 @@ bool set(int value)
 
 
 ::: details Click to View Example
-```c
-
+```c{5}
 void setup()
 {
     Serial.begin(115200);
@@ -2496,7 +2474,7 @@ int get()
 
 
 ::: details Click to View Example
-```c
+```c{10}
 void setup()
 {
     Serial.begin(115200);
@@ -2527,7 +2505,7 @@ bool set(int value)
 
 
 ::: details Click to View Example
-```c
+```c{5}
 void setup()
 {
     Serial.begin(115200);
@@ -2564,7 +2542,7 @@ uint8_t get()
 
 
 ::: details Click to View Example
-```c
+```c{10}
 void setup()
 {
     Serial.begin(115200);
@@ -2597,7 +2575,7 @@ bool set(uint8_t value)
 
 
 ::: details Click to View Example
-```c
+```c{5}
 void setup()
 {
     Serial.begin(115200);
@@ -2634,7 +2612,7 @@ long get()
 
 
 ::: details Click to View Example
-```c
+```c{8}
 void setup()
 {
     Serial.begin(115200);
@@ -2671,8 +2649,7 @@ uint8_t get()
 
 
 ::: details Click to View Example
-```c
-
+```c{10}
 void setup()
 {
     Serial.begin(115200);
@@ -2704,7 +2681,7 @@ bool set(uint8_t value)
 
 
 ::: details Click to View Example
-```c
+```c{5}
 void setup()
 {
     Serial.begin(115200);
@@ -2750,7 +2727,7 @@ uint32_t get()
 
 
 ::: details Click to View Example
-```c
+```c{10}
 void setup()
 {
     Serial.begin(115200);
@@ -2784,20 +2761,20 @@ bool set(uint8_t value)
 | **Return Values** | **TRUE** for setting mode of verifying network link status <br> **FALSE**  for setting mode of verifying network link status failure ) |
 
 ::: details Click to View Example
-```c
-  void setup()
-  {
-      Serial.begin(115200);
+```c{5}
+void setup()
+{
+    Serial.begin(115200);
 
-      Serial.printf("Set Verifying network link status %s\r\n", api.lorawan.linkcheck.set(1) ? "Success" : "Fail");
-  }
+    Serial.printf("Set Verifying network link status %s\r\n", api.lorawan.linkcheck.set(1) ? "Success" : "Fail");
+}
 
-  void loop()
-  {
-      Serial.printf("Network link status = %d\r\n", api.lorawan.linkcheck.get());
+void loop()
+{
+    Serial.printf("Network link status = %d\r\n", api.lorawan.linkcheck.get());
 
-      delay(1000);
-  }
+    delay(1000);
+}
 ```
 :::
 
@@ -2828,7 +2805,7 @@ uint8_t get()
 
 
 ::: details Click to View Example
-```c
+```c{33}
 // OTAA Device EUI MSB
 uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
 // OTAA Application EUI MSB
@@ -2883,7 +2860,7 @@ bool set(uint8_t value)
 
 
 ::: details Click to View Example
-```c
+```c{19}
 // OTAA Device EUI MSB
 uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
 // OTAA Application EUI MSB
@@ -2944,7 +2921,7 @@ float get()
 
 
 ::: details Click to View Example
-```c
+```c{32}
 // OTAA Device EUI MSB
 uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
 // OTAA Application EUI MSB
@@ -3005,7 +2982,7 @@ long get()
 
 
 ::: details Click to View Example
-```c
+```c{32}
 // OTAA Device EUI MSB
 uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
 // OTAA Application EUI MSB
@@ -3065,7 +3042,7 @@ beacon_bgw_t get()
 
 
 ::: details Click to View Example
-```c
+```c{34}
 beacon_bgw_t beaconBGW;
 
 // OTAA Device EUI MSB
@@ -3134,7 +3111,7 @@ string get()
 
 
 ::: details Click to View Example
-```c
+```c{32}
 // OTAA Device EUI MSB
 uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
 // OTAA Application EUI MSB
@@ -3202,7 +3179,7 @@ int get()
 
 
 ::: details Click to View Example
-```c
+```c{35}
 // OTAA Device EUI MSB
 uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
 // OTAA Application EUI MSB
@@ -3275,7 +3252,7 @@ int get()
 
 
 ::: details Click to View Example
-```c
+```c{35}
 // OTAA Device EUI MSB
 uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
 // OTAA Application EUI MSB
@@ -3346,7 +3323,7 @@ string get()
 
 
 ::: details Click to View Example
-```c
+```c{8}
 void setup()
 {
     Serial.begin(115200);
@@ -3382,7 +3359,7 @@ bool arssi(RAK_LORA_chan_rssi * iterator)
 
 
 ::: details Click to View Example
-```c
+```c{34}
 // OTAA Device EUI MSB
 uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
 // OTAA Application EUI MSB
@@ -3458,7 +3435,7 @@ bool get(uint16_t * buff)
 
 
 ::: details Click to View Example
-```c
+```c{15}
 uint16_t maskBuff = 0x0003;
 
 void setup()
@@ -3498,7 +3475,7 @@ bool set(uint16_t * value)
 
 
 ::: details Click to View Example
-```c
+```c{8}
 uint16_t maskBuff = 0x0003;
 
 void setup()
@@ -3564,7 +3541,7 @@ int32_t get()
 
 
 ::: details Click to View Example
-```c
+```c{10}
 void setup()
 {
     Serial.begin(115200);
@@ -3601,7 +3578,7 @@ bool set(uint8_t value)
 
 
 ::: details Click to View Example
-```c
+```c{5}
 void setup()
 {
     Serial.begin(115200);
@@ -3648,7 +3625,7 @@ int get()
 
 
 ::: details Click to View Example
-```c
+```c{10}
 void setup()
 {
     Serial.begin(115200);
@@ -3682,8 +3659,7 @@ bool set(uint8_t value)
 | **Return Values** | **TRUE** for setting network working mode success <br>  **FALSE** for setting network working mode failure |
 
 ::: details Click to View Example
-```c
-
+```c{5}
 void setup()
 {
     Serial.begin(115200);
@@ -3726,11 +3702,10 @@ uint32_t get()
 | **Returns** | The frequency for P2P mode |
 
 ::: details Click to View Example
-```c
+```c{10}
 void setup()
 {
     Serial.begin(115200);
-
     Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");   
     Serial.printf("Set P2P mode frequency %s\r\n", api.lorawan.pfreq.set(868000000) ? "Success" : "Fail");   
 }
@@ -3763,11 +3738,10 @@ bool set(uint32_t value)
 
 
 ::: details Click to View Example
-```c
+```c{5}
 void setup()
 {
     Serial.begin(115200);
-
     Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode frequency %s\r\n", api.lorawan.pfreq.set(868000000) ? "Success" : "Fail");
 }
@@ -3804,11 +3778,10 @@ uint8_t get()
 
 
 ::: details Click to View Example
-```c
+```c{10}
 void setup()
 {
     Serial.begin(115200);
-
     Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode spreading factor %s\r\n", api.lorawan.psf.set(12) ? "Success" : "Fail");
 }
@@ -3841,11 +3814,10 @@ bool set(uint8_t value)
 
 
 ::: details Click to View Example
-```c
+```c{5}
 void setup()
 {
     Serial.begin(115200);
-
     Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode spreading factor %s\r\n", api.lorawan.psf.set(12) ? "Success" : "Fail");
 }
@@ -3885,11 +3857,10 @@ uint32_t get()
 
 
 ::: details Click to View Example
-```c
+```c{10}
 void setup()
 {
     Serial.begin(115200);
-
     Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode bandwidth %s\r\n", api.lorawan.pbw.set(125) ? "Success" : "Fail");
 }
@@ -3921,11 +3892,10 @@ bool set(uint32_t value)
 
 
 ::: details Click to View Example
-```c
+```c{5}
 void setup()
 {
     Serial.begin(115200);
-
     Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode bandwidth %s\r\n", api.lorawan.pbw.set(125) ? "Success" : "Fail");
 }
@@ -3963,11 +3933,10 @@ uint8_t get()
 
 
 ::: details Click to View Example
-```c
+```c{10}
 void setup()
 {
     Serial.begin(115200);
-
     Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode code rate %s\r\n", api.lorawan.pcr.set(0) ? "Success" : "Fail");
 }
@@ -3999,11 +3968,10 @@ bool set(uint8_t value)
 
 
 ::: details Click to View Example
-```c
+```c{5}
 void setup()
 {
     Serial.begin(115200);
-
     Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode code rate %s\r\n", api.lorawan.pcr.set(0) ? "Success" : "Fail");
 }
@@ -4044,11 +4012,10 @@ uint16_t get()
 
 
 ::: details Click to View Example
-```c
+```c{10}
 void setup()
 {
     Serial.begin(115200);
-
     Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode preamble length %s\r\n", api.lorawan.ppl.set(8) ? "Success" : "Fail");
 }
@@ -4077,11 +4044,10 @@ bool set(uint16_t value)
 
 
 ::: details Click to View Example
-```c
+```c{5}
 void setup()
 {
     Serial.begin(115200);
-
     Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode preamble length %s\r\n", api.lorawan.ppl.set(8) ? "Success" : "Fail");
 }
@@ -4117,11 +4083,10 @@ This API allows to get P2P TX Power (5-22).
 
 
 ::: details Click to View Example
-```c
+```c{10}
 void setup()
 {
     Serial.begin(115200);
-
     Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode tx power %s\r\n", api.lorawan.ptp.set(22) ? "Success" : "Fail");
 }
@@ -4153,11 +4118,10 @@ bool set(uint8_t value)
 
 
 ::: details Click to View Example
-```c
+```c{5}
 void setup()
 {
     Serial.begin(115200);
-
     Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode tx power %s\r\n", api.lorawan.ptp.set(22) ? "Success" : "Fail");
 }
@@ -4197,7 +4161,7 @@ bool get()
 
 
 ::: details Click to View Example
-```c
+```c{21}
 long startTime;
 uint8_t node_encrypt_key[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
 uint8_t encrypt_buff[8];
@@ -4216,17 +4180,16 @@ void setup()
     Serial.printf("Set P2P mode code rate %s\r\n", api.lorawan.pcr.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode preamble length %s\r\n", api.lorawan.ppl.set(8) ? "Success" : "Fail");
     Serial.printf("Set P2P mode tx power %s\r\n", api.lorawan.ptp.set(22) ? "Success" : "Fail");
-Serial.printf("Set P2P mode encryption status %s\r\n", api.lorawan.encry.set(1) ? "Success" : "Fail");
-Serial.printf("Set P2P mode encryption Key %s\r\n\r\n", api.lorawan.enckey.set(node_encrypt_key, 8) ? "Success" : "Fail");
-
+    Serial.printf("Set P2P mode encryption status %s\r\n", api.lorawan.encry.set(1) ? "Success" : "Fail");
+    Serial.printf("Set P2P mode encryption Key %s\r\n\r\n", api.lorawan.enckey.set(node_encrypt_key, 8) ? "Success" : "Fail");
     Serial.printf("P2P encryption status = %s\r\n", api.lorawan.encry.get() ? "Enable" : "Disable");
 
-api.lorawan.enckey.get(encrypt_buff, 8);
-Serial.printf("P2P encryption Key = 0x");
-    for (int i = 0 ; i < 8 ; i++) {
-        Serial.printf("%02X", encrypt_buff[i]);
-    }
-Serial.println("");
+    api.lorawan.enckey.get(encrypt_buff, 8);
+    Serial.printf("P2P encryption Key = 0x");
+        for (int i = 0 ; i < 8 ; i++) {
+            Serial.printf("%02X", encrypt_buff[i]);
+        }
+    Serial.println("");
   
     randomSeed(millis());
 }
@@ -4272,7 +4235,7 @@ bool set(bool value)
 
 
 ::: details Click to View Example
-```c
+```c{19}
 long startTime;
 uint8_t node_encrypt_key[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
 uint8_t encrypt_buff[8];
@@ -4291,17 +4254,17 @@ void setup()
     Serial.printf("Set P2P mode code rate %s\r\n", api.lorawan.pcr.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode preamble length %s\r\n", api.lorawan.ppl.set(8) ? "Success" : "Fail");
     Serial.printf("Set P2P mode tx power %s\r\n", api.lorawan.ptp.set(22) ? "Success" : "Fail");
-Serial.printf("Set P2P mode encryption status %s\r\n", api.lorawan.encry.set(1) ? "Success" : "Fail");
-Serial.printf("Set P2P mode encryption Key %s\r\n\r\n", api.lorawan.enckey.set(node_encrypt_key, 8) ? "Success" : "Fail");
+    Serial.printf("Set P2P mode encryption status %s\r\n", api.lorawan.encry.set(1) ? "Success" : "Fail");
+    Serial.printf("Set P2P mode encryption Key %s\r\n\r\n", api.lorawan.enckey.set(node_encrypt_key, 8) ? "Success" : "Fail");
 
     Serial.printf("P2P encryption status = %s\r\n", api.lorawan.encry.get() ? "Enable" : "Disable");
 
-api.lorawan.enckey.get(encrypt_buff, 8);
-Serial.printf("P2P encryption Key = 0x");
-    for (int i = 0 ; i < 8 ; i++) {
-        Serial.printf("%02X", encrypt_buff[i]);
-    }
-Serial.println("");
+    api.lorawan.enckey.get(encrypt_buff, 8);
+    Serial.printf("P2P encryption Key = 0x");
+        for (int i = 0 ; i < 8 ; i++) {
+            Serial.printf("%02X", encrypt_buff[i]);
+        }
+    Serial.println("");
   
     randomSeed(millis());
 }
@@ -4354,7 +4317,7 @@ bool get(uint8_t * buff, uint32_t len)
 
 
 ::: details Click to View Example
-```c
+```c{24}
 long startTime;
 uint8_t node_encrypt_key[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
 uint8_t encrypt_buff[8];
@@ -4373,17 +4336,17 @@ void setup()
     Serial.printf("Set P2P mode code rate %s\r\n", api.lorawan.pcr.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode preamble length %s\r\n", api.lorawan.ppl.set(8) ? "Success" : "Fail");
     Serial.printf("Set P2P mode tx power %s\r\n", api.lorawan.ptp.set(22) ? "Success" : "Fail");
-Serial.printf("Set P2P mode encryption status %s\r\n", api.lorawan.encry.set(1) ? "Success" : "Fail");
-Serial.printf("Set P2P mode encryption Key %s\r\n\r\n", api.lorawan.enckey.set(node_encrypt_key, 8) ? "Success" : "Fail");
+    Serial.printf("Set P2P mode encryption status %s\r\n", api.lorawan.encry.set(1) ? "Success" : "Fail");
+    Serial.printf("Set P2P mode encryption Key %s\r\n\r\n", api.lorawan.enckey.set(node_encrypt_key, 8) ? "Success" : "Fail");
 
     Serial.printf("P2P encryption status = %s\r\n", api.lorawan.encry.get() ? "Enable" : "Disable");
 
-api.lorawan.enckey.get(encrypt_buff, 8);
-Serial.printf("P2P encryption Key = 0x");
-    for (int i = 0 ; i < 8 ; i++) {
-        Serial.printf("%02X", encrypt_buff[i]);
-    }
-Serial.println("");
+    api.lorawan.enckey.get(encrypt_buff, 8);
+    Serial.printf("P2P encryption Key = 0x");
+        for (int i = 0 ; i < 8 ; i++) {
+            Serial.printf("%02X", encrypt_buff[i]);
+        }
+    Serial.println("");
   
     randomSeed(millis());
 }
@@ -4430,7 +4393,7 @@ bool set(uint8_t * buff, uint32_t len)
 
 
 ::: details Click to View Example
-```c
+```c{20}
 long startTime;
 uint8_t node_encrypt_key[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
 uint8_t encrypt_buff[8];
@@ -4449,18 +4412,18 @@ void setup()
     Serial.printf("Set P2P mode code rate %s\r\n", api.lorawan.pcr.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode preamble length %s\r\n", api.lorawan.ppl.set(8) ? "Success" : "Fail");
     Serial.printf("Set P2P mode tx power %s\r\n", api.lorawan.ptp.set(22) ? "Success" : "Fail");
-Serial.printf("Set P2P mode encryption status %s\r\n", api.lorawan.encry.set(1) ? "Success" : "Fail");
-Serial.printf("Set P2P mode encryption Key %s\r\n\r\n", api.lorawan.enckey.set(node_encrypt_key, 8) ? "Success" : "Fail");
+    Serial.printf("Set P2P mode encryption status %s\r\n", api.lorawan.encry.set(1) ? "Success" : "Fail");
+    Serial.printf("Set P2P mode encryption Key %s\r\n\r\n", api.lorawan.enckey.set(node_encrypt_key, 8) ? "Success" : "Fail");
 
     Serial.printf("P2P encryption status = %s\r\n", api.lorawan.encry.get() ? "Enable" : "Disable");
 
-api.lorawan.enckey.get(encrypt_buff, 8);
-Serial.printf("P2P encryption Key = 0x");
-    for (int i = 0 ; i < 8 ; i++) {
-        Serial.printf("%02X", encrypt_buff[i]);
-    }
-Serial.println("");
-  
+    api.lorawan.enckey.get(encrypt_buff, 8);
+    Serial.printf("P2P encryption Key = 0x");
+        for (int i = 0 ; i < 8 ; i++) {
+            Serial.printf("%02X", encrypt_buff[i]);
+        }
+    Serial.println("");
+    
     randomSeed(millis());
 }
 
@@ -4579,7 +4542,7 @@ bool registerPRecvCallback(service_lora_p2p_recv_cb_type callback)
  
  
 ::: details Click to View Example
-```c
+```c{28}
 void recv_cb(rui_lora_p2p_recv_t data) {
   Serial.println("Receive something");
 }
@@ -4655,7 +4618,7 @@ bool registerPSendCallback(service_lora_p2p_send_cb_type callback)
 
 
 ::: details Click to View Example
-```c
+```c{29}
 void recv_cb(rui_lora_p2p_recv_t data) {
   Serial.println("Receive something");
 }
@@ -4729,7 +4692,7 @@ bool psend(uint8_t length, uint8_t * payload)
 
 
 ::: details Click to View Example
-```c
+```c{19}
 void setup()
 {
     Serial.begin(115200);
@@ -4777,7 +4740,7 @@ bool addmulc(RAK_LORA_McSession session)
 
 
 ::: details Click to View Example
-```c
+```c{54}
 void setup()
 {
   Serial.begin(115200);
@@ -4865,7 +4828,7 @@ bool rmvmulc(uint32_t devAddr)
 
 
 ::: details Click to View Example
-```c
+```c{64}
 
 // OTAA Device EUI MSB
 uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x88};
@@ -4954,7 +4917,7 @@ bool lstmulc(RAK_LORA_McSession * iterator)
 
 
 ::: details Click to View Example
-```c
+```c{67}
 void setup()
 {
   Serial.begin(115200);

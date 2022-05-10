@@ -600,9 +600,9 @@ Figures 20 and 21 display the average current consumptions based on the differen
 - Oscilloscope
 - RAK5010 WisTrio NB-IoT Tracker Pro
 
-**LoRa Packet Sending**
+**Sending a Cellular Packet**
 
-The RAK5010 WisTrio NB-IoT Tracker Pro takes **489.733&nbsp;ms** to send a LoRa packet which consumes **64.9&nbsp;mA** of current.
+The RAK5010 WisTrio NB-IoT Tracker Pro takes **489.733&nbsp;ms** to send a Cellular packet which consumes **64.9&nbsp;mA** of current.
 
 - **Sending Time**: 489.733&nbsp;ms
 - **Current consumption**: 64.9&nbsp;mA
@@ -610,7 +610,7 @@ The RAK5010 WisTrio NB-IoT Tracker Pro takes **489.733&nbsp;ms** to send a LoRa 
 <rk-img
   src="/assets/images/wistrio/rak5010/datasheet/oscilloscope-screen-capture-of-lora®-packet-sending.jpg"
   width="85%"
-  caption="Oscilloscope Screen Capture of LoRa Packet Sending"
+  caption="Oscilloscope Screen Capture of Sending a Cellular Packet"
 />
 
 **Sleep Mode**

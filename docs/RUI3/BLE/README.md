@@ -110,7 +110,7 @@ void stop(void)
 | **Returns** | void                  |
 
 ::: details Click to View Example
-```c
+```c{3}
 void setup()
 {
   api.ble.uart.stop();
@@ -341,7 +341,7 @@ bool stop()
 
 
 ::: details Click to View Example
-```c
+```c{3}
 void setup()
 {
   api.ble.advertise.stop();
@@ -552,7 +552,7 @@ RAKBleService hrms = RAKBleService(service_uuid[])
 
 
 :::details Click to View Example
-```c
+```c{61}
 #include "Arduino.h"
 #define UUID16_SVC_HEART_RATE 0x180D
 #define UUID16_CHR_HEART_RATE_MEASUREMENT 0x2A37
@@ -687,7 +687,7 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 | **Returns**    | void                                                              |
 
 :::details Click to View Example
-```c
+```c{80}
 #include "Arduino.h"
 #define UUID16_SVC_HEART_RATE 0x180D
 #define UUID16_CHR_HEART_RATE_MEASUREMENT 0x2A37
@@ -806,7 +806,7 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 | **Returns**    | void                                  |
 
 :::details Click to View Example
-```c
+```c{81}
 #include "Arduino.h"
 #define UUID16_SVC_HEART_RATE 0x180D
 #define UUID16_CHR_HEART_RATE_MEASUREMENT 0x2A37
@@ -925,7 +925,7 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 | **Returns**    | void                                                                |
 
 :::details Click to View Example
-```c
+```c{82}
 #include "Arduino.h"
 #define UUID16_SVC_HEART_RATE 0x180D
 #define UUID16_CHR_HEART_RATE_MEASUREMENT 0x2A37
@@ -1044,7 +1044,7 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 
 
 :::details Click to View Example
-```c
+```c{84}
 #include "Arduino.h"
 #define UUID16_SVC_HEART_RATE 0x180D
 #define UUID16_CHR_HEART_RATE_MEASUREMENT 0x2A37
@@ -1162,7 +1162,7 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 | **Returns**    | void                                                    |
 
 :::details Click to View Example
-```c
+```c{69}
 #include "Arduino.h"
 #define UUID16_SVC_HEART_RATE 0x180D
 #define UUID16_CHR_HEART_RATE_MEASUREMENT 0x2A37
@@ -1281,7 +1281,7 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 | **Returns**    | void                                                  |
 
 :::details Click to View Example
-```c
+```c{87}
 #include "Arduino.h"
 #define UUID16_SVC_HEART_RATE 0x180D
 #define UUID16_CHR_HEART_RATE_MEASUREMENT 0x2A37
@@ -1397,7 +1397,7 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 | **Returns** | void                   |
 
 :::details Click to View Example
-```c
+```c{10}
 #include "Arduino.h"
 #define UUID16_SVC_HEART_RATE 0x180D
 #define UUID16_CHR_HEART_RATE_MEASUREMENT 0x2A37
@@ -1509,13 +1509,13 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 ```
 :::
 
-| **Syntax**     | `bslc.setCccWriteCallback(userFunc)` |
+| **Syntax**     | `bslc.setCccdWriteCallback(userFunc)` |
 | -------------- | ------------------------------------ |
 | **Parameters** | **userFunc** - callback function     |
 | **Returns**    | void                                 |
 
 :::details Click to View Example
-```c
+```c{65}
 #include "Arduino.h"
 #define UUID16_SVC_HEART_RATE 0x180D
 #define UUID16_CHR_HEART_RATE_MEASUREMENT 0x2A37
@@ -1632,7 +1632,7 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 | **Returns**    | void                              |
 
 :::details Click to View Example
-```c
+```c{83}
 #include "Arduino.h"
 #define UUID16_SVC_HEART_RATE 0x180D
 #define UUID16_CHR_HEART_RATE_MEASUREMENT 0x2A37
