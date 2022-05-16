@@ -13,14 +13,8 @@ tags:
 
 This guide covers the following topics:
 
-- [TheThingsNetwork Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#connecting-to-the-things-network-ttn) - How to login, register new accounts and create new applications on TTN.
-- [RAK3172 TTN OTAA Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#ttn-otaa-device-registration) - How to add OTAA device on TTN and what AT commands to use on RAK3172 OTAA activation.
-- [RAK3172 TTN ABP Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#ttn-abp-device-registration) - How to add ABP device on TTN and what AT commands to use on RAK3172 ABP activation.
-- [Chirpstack Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#connecting-with-chirpstack) - How to create new applications on Chirpstack. 
-- [RAK3172 Chirpstack OTAA Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#chirpstack-otaa-device-registration) - How to add OTAA device to Chirpstack and what AT commands to use on RAK3172 OTAA activation.
-- [RAK3172 Chirpstack ABP Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#chirpstack-abp-device-registration) - How to add ABP device on Chirpstack and what AT commands to use on RAK3172 ABP activation.
-- [LoRa P2P](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#lora-p2p-mode) - Point to point communication between two RAK3172 modules.
-- [Updating RAK3172-Module FW](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#upgrading-the-firmware) - Procedures on how to update RAK3172 module firmware.
+- [RAK3172 as a Stand-Alone Device Using RUI3](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#rak3172-as-a-stand-alone-device-using-rui3)
+- [RAK3172 as a LoRa/LoRaWAN Modem via AT Command](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#rak3172-as-a-lora-lorawan-modem-via-at-command)
 
 ## Prerequisites
 
@@ -28,15 +22,17 @@ This guide covers the following topics:
 
 Before going through the steps in the installation guide of the RAK3172 WisDuo LPWAN Module, make sure to prepare the necessary items listed below:
 
-#### Hardware Tools
+#### Hardware 
 
-1. RAK3172 WisDuo LPWAN Module 
-2. Computer
-3. USB to UART TTL adapter
+- [RAK3172 WisDuo LPWAN Module](https://store.rakwireless.com/products/wisduo-lpwan-module-rak3172) 
+- Computer
+- USB to UART TTL adapter
 
+#### Software 
 
-#### Software Tools
-1. [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
+- Download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
+- Add [RAK3172 as a supported board in Arduino IDE](/Product-Categories/wisduo/RAK3172-Module/Quickstart/#-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with this JSON URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json`. After that, you can then add **RAKwireless RUI STM32 Boards** via Arduino board manager.
+- [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
 
 #### List of Acronyms
 
@@ -59,13 +55,219 @@ Before going through the steps in the installation guide of the RAK3172 WisDuo L
 
 ## Product Configuration
 
-### Interfacing with RAK3172
+### RAK3172 as a Stand-Alone Device Using RUI3
 
-RAK3172 module can be configured using AT commands via the UART interface. You need a USB to UART TTL adapter to connect the RAK3172 to your computer's USB port and a serial terminal tool. It is highly recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools) so you can easily send AT commands and view the replies from the console output.
+#### Hardware Setup
 
-#### Connect to the RAK3172
+The RAK3172 requires a few hardware connections before you can make it work. The bare minimum requirement is to have the power section properly configured, reset button, antenna, and USB connection.
 
-1. Connect the RAK3172 to the serial port of a general-purpose computer (USB port) using a USB to UART TTL adapter like [RAKDAP1](https://store.rakwireless.com/collections/accessories/products/daplink-tool), as shown in Figure 1.
+:::warning ⚠️ WARNING
+Firmware update is done via UART2 pins. If you will connect the module to an external device that will be interfacing with UART2, take extra precautions in your board design to ensure you can still perform FW update to it. There should be a way in your board design that can disconnect the external device to RAK3172 UART2 before connecting the module to the PC (via USB-UART converter) for the FW update process.
+
+An alternative option to update firmware aside from UART2 is to use SWD pins (SWCLK & SWDIO). This method will require you to use external tools like ST-LINK and RAKDAP1.
+:::
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/rak3172_bare_minimum_schematic.png"
+  width="60%"
+  caption="RAK3172 Minimum Schematic"
+/>
+
+Ensure that the antenna is properly connected to have a good LoRa signal. Also, note that you can damage the RF section of the chip if you power the module without an antenna connected to the IPEX connector.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/wisblock_antenna.png"
+  width="30%"
+  caption="LoRa Antenna"
+/>
+
+RAK3172 has a module variant with an IPEX connector where you can connect the Lora antenna, as shown in **Figure 3**. If the RAK3172 module you ordered is the variant with no IPEX connector, you need to ensure that there is an external antenna connected to **RF pin** (PIN 12) of the module.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/rak3172_module_antenna.png"
+  width="30%"
+  caption="IPEX Connector of RAK3172 for LoRa Antenna"
+/>
+
+
+:::tip 📝 NOTE
+Detailed information about the RAK3172 LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/). 
+:::
+
+:::warning ⚠️ WARNING
+When using the LoRa transceiver, make sure that an antenna is always connected. Using this transceiver without an antenna can damage the module.
+:::
+
+#### Software Setup
+
+The default firmware of RAK3172 is based on RUI3, which allows you to develop your custom firmware to connect sensors and other peripherals to it. To develop your custom firmware using Arduino IDE, you need first to add **RAKwireless RUI STM32 Boards** in the Arduino board manager, which will be discussed in this guide. You can then use RUI3 APIs for your intended application. You can upload the custom firmware via UART. The AT commands of RAK3172 is still available even if you compile custom firmware via RUI3. You can send AT commands via UART2 connection.
+
+##### RAK3172 RUI3 Board Support Package in Arduino IDE
+
+If you don't have an Arduino IDE yet, you can download it on the [Arduino official website](https://www.arduino.cc/en/Main/Software) and follow the installation procedure in the [miscellaneous section](/Product-Categories/wisduo/RAK3172-Module/Quickstart/#arduino-installation) of this document.
+
+::: tip 📝 NOTE   
+**For Windows 10 and up users**:   
+If your Arduino IDE is installed from the Microsoft App Store, you need to reinstall your Arduino IDE by getting it from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
+:::
+
+Once the Arduino IDE has been installed successfully, you can now configure the IDE to add the RAK3172 in its board selection by following these steps.
+
+1. Open Arduino IDE and go to **File** > **Preferences**.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/preferences.png"
+  width="90%"
+  caption="Arduino preferences"
+/>
+
+2. To add the RAK3172 to your Arduino Boards list, edit the **Additional Board Manager URLs**. Click the icon, as shown in **Figure 5**.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/additional-boards.png"
+  width="70%"
+  caption="Modifying Additional Board Manager URLs"
+/>
+
+3. Copy the URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json` and paste it on the field, as shown in **Figure 6**. If there are other URLs already there, just add them on the next line. After adding the URL, click **OK**.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/preferences-url.png"
+  width="90%"
+  caption="Add additional board manager URLs"
+/>
+
+4. Restart the Arduino IDE.
+
+5. Open the Boards Manager from Tools Menu.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/boards-manager.png"
+  width="90%"
+  caption="Opening Arduino boards manager"
+/>
+
+6. Write `RAK` in the search bar, as shown in **Figure 8**. This will show the available RAKwireless module boards that you can add to your Arduino Board list. Select and install the latest version of the  **RAKwireless RUI STM32 Boards**.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/installing-rak.png"
+  width="70%"
+  caption="Installing RAKwireless RUI STM32 boards"
+/>
+
+7. Once the BSP is installed, select  **Tools** > **Boards Manager** > **RAKWireless RUI STM32 Modules** > **WisDuo RAK3172 Evaluation Board**. The RAK3172 Evaluation board uses RAK3172 WisDuo module.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/rui-stm32.png"
+  width="90%"
+  caption="Selecting RAK3172 Module"
+/>
+
+##### Compile an Example with Arduino LED Breathing
+
+1. After completing the steps on adding your RAK3172 to the Arduino IDE, you can now try to run a simple program to test your setup. You need to add two LEDs to the bare minimum schematic of the RAK3172 module, as shown in **Figure 10**.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/rak3172_bare_minimum_schematic_led.png"
+  width="90%"
+  caption="RAK3172 with two LEDs"
+/>
+
+2. Connect the RAK3172 via UART and check RAK3172 COM Port using Windows **Device Manager**. Double-click the reset button if the module is not detected.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/rui-port.png"
+  width="70%"
+  caption="Device manager ports (COM & LPT)"
+/>
+
+3. Choose RAK3172 on board selection select via **Tools** > **Boards Manager** > **RAKWireless RUI STM32 Modules** > **WisDuo RAK3172 Evaluation Board**.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/rui-stm32.png"
+  width="90%"
+  caption="Selecting RAK3172 Module"
+/>
+
+4. Open **Tools** Menu and select a COM port. **COM28** is currently used.
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/select-port.png"
+  width="90%"
+  caption="Select COM port"
+/>
+
+5. You can see the serial monitor icon and click it to connect COM port.
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/serial-mon.png"
+  width="90%"
+  caption="Open Arduino serial monitor"
+/>
+
+6. If the connection is successful, you can send AT Commands to RAK3172. For example: To check the RUI version, type `AT+VER=?` on the text area, then click on the **Send** button, as shown in **Figure 15**.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/at+ver.png"
+  width="90%"
+  caption="Send AT command"
+/>
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/arduino-console.png"
+  width="90%"
+  caption="Arduino serial monitor COM28"
+/>
+
+7. Open **Arduino_Led_Breathing** example code.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/led-example.png"
+  width="90%"
+  caption="Arduino Led Breathing example"
+/>
+
+8. Click on the **Verify** icon to check if you have successfully compiled the example code.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/verify-code.png"
+  width="90%"
+  caption="Verify the example code"
+/>
+
+9. Click the **Upload** icon to send the compiled firmware to your RAK3172.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/upload-code.png"
+  width="90%"
+  caption="Upload the example code"
+/>
+
+10. If the upload is successful, you will see the **Device programmed** message.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/dev-prog.png"
+  width="90%"
+  caption="Device programmed successfully"
+/>
+
+11. After the Device Programmed is completed, you will see that LEDs are blinking.
+
+
+
+### RAK3172 as a Lora/Lorawan Modem via AT Command
+
+#### AT Command via UART2
+
+RAK3172 module can be configured using AT commands via the UART2 interface. You need a USB to UART TTL adapter to connect the RAK3172 to your computer's USB port and a serial terminal tool. You can use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools) so you can easily send AT commands and view the replies from the console output. The RAK Serial Port Tool commands still uses the RUI V2 AT commands by default. You can modify it to have RUI3 AT commands and then save it.
+
+:::warning ⚠️ WARNING
+Firmware update and AT command functionality are done via UART2 pins. If you will connect the module to an external host MCU that will send AT commands via UART2, take extra precautions in your board design to ensure you can still perform FW update to it. There should be a way in your board design that can disconnect the host MCU UART to connect to RAK3172 UART2 before connecting the module to the PC (via USB-UART converter) for the FW update process.
+
+An alternative option to update firmware aside from UART2 is to use SWD pins (SWCLK & SWDIO). This method will require you to use external tools like ST-LINK and RAKDAP1.
+:::
+
+##### Connect to the RAK3172
+
+1. Connect the RAK3172 to the serial port of a general-purpose computer (USB port) using a USB to UART TTL adapter like [RAKDAP1](https://store.rakwireless.com/collections/accessories/products/daplink-tool), as shown in **Figure 21**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/RAK3172_UART_Connection.svg"
@@ -77,19 +279,32 @@ RAK3172 module can be configured using AT commands via the UART interface. You n
 
 3. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows: 
 
- * Baud Rate: **9600 baud**
+ * Baud Rate: **115200 baud**
  * Data Bits: **8 bits**
  * Stop Bits: **1 stop bit**
  * Parity: **NONE**
 
-#### Configuring RAK3172
+##### RAK3172 Configuration for LoRaWAN or LoRa P2P
 
-To enable the RAK3172 module as a LoRa P2P module or a LoRaWAN end-device, the module must be configured and parameters must be set by sending AT commands.
+To enable the RAK3172 module as a LoRa P2P module or a LoRaWAN end-device, the module must be configured and parameters must be set by sending AT commands. You can configure the RAK3172 in two ways:
 
-The first step is to connect the RAK3172 module to the USB-UART converter computer as described in the previous section. Using a serial communication tool, you can now send commands to the RAK3172. For example, sending `AT` will display `OK`. For the details of all supported AT commands, refer to [AT Commands for RAK3172](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/).
+- [LoRaWAN End-Device](/Product-Categories/WisDuo/RAK3172-Module/quickstart/#configuring-rak3172-as-lorawan-end-device) - RAK3172 as LoRaWAN IoT device.
+- [LoRa P2P](/Product-Categories/WisDuo/RAK3172-Module/quickstart/#lora-p2p-mode) - Point-to-point communication between two RAK3172 modules.
 
+#### Configuring RAK3172 as LoRaWAN End-Device
 
-### Connecting to The Things Network (TTN)
+To enable the RAK3172 module as a LoRaWAN end-device, a device must be registered first in the LoRaWAN network server. This guide will cover both TTN and Chirpstack LoRaWAN network servers and the associate AT commands for the RAK3172.
+
+This guide covers the following topics:
+
+- [TheThingsNetwork Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#connecting-to-the-things-network-ttn) - How to login, register new accounts and create new applications on TTN.
+- [RAK3172 TTN OTAA Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#ttn-otaa-device-registration) - How to add OTAA device on TTN and what AT commands to use on RAK3172 OTAA activation.
+- [RAK3172 TTN ABP Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#ttn-abp-device-registration) - How to add ABP device on TTN and what AT commands to use on RAK3172 ABP activation.
+- [Chirpstack Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#connecting-with-chirpstack) - How to create new applications on Chirpstack. 
+- [RAK3172 Chirpstack OTAA Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#chirpstack-otaa-device-registration) - How to add OTAA device to Chirpstack and what AT commands to use on RAK3172 OTAA activation.
+- [RAK3172 Chirpstack ABP Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#chirpstack-abp-device-registration) - How to add ABP device on Chirpstack and what AT commands to use on RAK3172 ABP activation.
+
+##### Connecting to The Things Network (TTN)
 
 In this section, a quick tutorial guide will show how to connect the RAK3172 module to the TTN platform. 
 
@@ -105,15 +320,15 @@ In this guide, you need to have a working gateway that is connected to TTN or yo
   caption="RAK3172 EVB in the context of the TTN"
 />
 
-As shown in Figure 2, The Things Stack (TTN V3) is an open-source LoRaWAN Network Server suitable for global, geo-distributed public and private deployments as well as for small, local networks. The architecture follows the LoRaWAN Network Reference Model for standards compliancy and interoperability. This project is actively maintained by [The Things Industries](https://www.thethingsindustries.com/).
+As shown in **Figure 22**, The Things Stack (TTN V3) is an open-source LoRaWAN Network Server suitable for global, geo-distributed public and private deployments, as well as for small local networks. The architecture follows the LoRaWAN Network Reference Model for standards compliance and interoperability. This project is actively maintained by [The Things Industries](https://www.thethingsindustries.com/).
 
 LoRaWAN is a protocol for low-power wide-area networks. It allows for large scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long-range wireless connections.
 
 The RAK3172 WisDuo module can be part of this ecosystem as a device, and the objective of this section is to demonstrate how simple it is to send data to The Things Stack using the LoRaWAN protocol. To achieve this, the RAK3172 WisDuo module must be located inside the coverage of a LoRaWAN gateway connected to The Things Stack server.
 
-#### Registration to TTN and Creating LoRaWAN Applications
+##### Registration to TTN and Creating LoRaWAN Applications
 
-The first step is to go to [The Things Network platform](https://console.cloud.thethings.network/) and select a cluster as shown on Figure 3.
+1. The first step is to go to [The Things Network platform](https://console.cloud.thethings.network/) and select a cluster, as shown in **Figure 23**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_1.png"
@@ -123,7 +338,7 @@ The first step is to go to [The Things Network platform](https://console.cloud.t
 
 You can use the same login credentials on the TTN V2 if you have one. If you have no account yet, you need to create one.
 
-To register as a new user to TTN, click on **Login with The Things ID** then select **register** on the next page as shown on figures 4 and 5.
+2. To register as a new user to TTN, click on **Login with The Things ID** then select **register** on the next page, as shown in **Figure 24** and **Figure 25**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_2.png"
@@ -139,7 +354,7 @@ To register as a new user to TTN, click on **Login with The Things ID** then sel
 
 You should now be on the step of creating your TTN account. Fill all the necessary details and activate your account.
 
-After creating an account, you should login on the platform using your username/email and password then click **Submit** as shown on Figure 6.
+4. After creating an account, you should log in on the platform using your username/email and password then click **Submit**, as shown in **Figure 26**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_4.png"
@@ -147,7 +362,7 @@ After creating an account, you should login on the platform using your username/
   caption="Logging in to TTN platform"
 />
 
-You need to click **Authorize** to proceed.
+5. Click **Authorize** to proceed.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_5.png"
@@ -173,9 +388,9 @@ To have an application registered, you need to input first the specific details 
 
 If you had no error during the previous step, you should now be on the application console page. The next step is to add end-devices to your TTN application. LoRaWAN specification enforces that each end-device has to be personalized and activated. There are two options for registering devices depending on the activation mode you select. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP).
 
-#### TTN OTAA Device Registration
+##### TTN OTAA Device Registration
 
-You need to go to your application console to be able to register a device. To start adding an OTAA end-device, you need to click **+ Add end device** as shown in Figure 10.
+1. Go to your application console to be able to register a device. To start adding an OTAA end-device, click **+ Add end device**, as shown in **Figure 30**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_8.png"
@@ -183,7 +398,7 @@ You need to go to your application console to be able to register a device. To s
   caption="Add end device"
 />
 
-To register the module, you need to click first **Manually** then configure the activation method by selecting **Over the air activation (OTAA)** and compatible **LoRaWAN version** then click **Start** button as shown on figures 11 and 12.
+2. To register the module, click first **Manually** then configure the activation method by selecting **Over the air activation (OTAA)** and compatible **LoRaWAN version** then click the **Start** button, as shown in **Figure 31** and **Figure 32**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_9.png"
@@ -197,7 +412,7 @@ To register the module, you need to click first **Manually** then configure the 
   caption="Device activation configuration"
 />
 
-Then you need to put a unique **End device ID** and EUIs (**DevEUI** and **AppEUI**) as shown on Figure 13. Check if your module has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI.
+3. Then you need to put a unique **End device ID** and EUIs (**DevEUI** and **AppEUI**), as shown in **Figure 33**. Check if your module has a DevEUI on the sticker or QR that you can scan then use this as the device unique DevEUI.
 
 Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
 
@@ -205,7 +420,7 @@ After putting all the details, you need to click **Network layer settings** to p
 
 :::tip 📝 NOTE:
 
-It is advisable to use a meaningful end-device ID, end-device name and end-device description that will match your device purpose. The end-device ID `rak-device` is for illustration purposes only.
+It is advisable to use a meaningful end-device ID, end-device name, and end-device description that will match your device's purpose. The end-device ID `rak-device` is for illustration purposes only.
 
 :::
 
@@ -231,15 +446,13 @@ The last step in the registration of a new OTAA end-device is the configuration 
   caption="OTAA AppKey generation and device registration"
 />
 
-You should now be able to see the device on the TTN console after you fully register your device as shown in Figure 16.
+You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 36**.
 
 :::tip 📝 NOTE:
 
-The **AppEUI**, **DevEUI** and **AppKey** are the parameters that you will need to activate your LoRaWAN end-device via OTAA. The **AppKey** is hidden by default for security reason but you can easily show it by clicking the show button. You can also copy the parameters quickly using the copy button.
-
-The three OTAA parameters on the TTN device console are MSB by default. 
-
-These parameters are always accessible on the device console page as shown on Figure 16.
+- The **AppEUI**, **DevEUI**, and **AppKey** are the parameters that you will need to activate your LoRaWAN end-device via OTAA. The **AppKey** is hidden by default for security reasons, but you can easily show it by clicking the show button. You can also copy the parameters quickly using the copy button.
+- The three OTAA parameters on the TTN device console are MSB by default. 
+- These parameters are always accessible on the device console page, as shown in **Figure 36**.
 :::
 
 <rk-img
@@ -249,11 +462,11 @@ These parameters are always accessible on the device console page as shown on Fi
 />
 
 
-#### OTAA Configuration for TTN
+##### OTAA Configuration for TTN
 
 The RAK3172 module supports a series of AT commands to configure its internal parameters and control the functionalities of the module. 
 
-To set up the RAK3172 module to join the TTN using OTAA, start by connecting the RAK3172 module to your computer (see Figure 1) and open the RAK Serial Port Tool. Select the right COM port and set the baudrate to 9600.
+1. To set up the RAK3172 module to join the TTN using OTAA, start by connecting the RAK3172 module to your computer (see [Figure 21](/Product-Categories/wisduo/RAK3172-Module/Quickstart/#connect-to-the-rak3172)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify that the current configuration is working by sending these two AT commands:
 
@@ -267,11 +480,11 @@ ATE
 
 `ATE` will echo the commands you input to the module, which is useful for tracking the commands and troubleshooting.
 
-You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK` as shown in Figure 17.
+You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK`, as shown in **Figure 37**.
 
 :::tip 📝 NOTE:
 
-If do not receive an `OK` or any reply, you need to check if the wiring of your UART lines is correct and if the baud is correctly configured to 9600. Also you can check if the device is powered correctly. If you are getting power from USB port, ensure that you have a good USB cable.
+If there is no `OK` or any reply, you need to check if the wiring of your UART lines is correct and if the baud is correctly configured to 115200. Also, you can check if the device is powered correctly. If you are getting power from a USB port, ensure that you have a good USB cable.
 :::
 
 <rk-img
@@ -316,7 +529,7 @@ AT+BAND=4
 
 Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK3172 to match the gateway and LoRaWAN network server. This is especially important for Regional Bands like US915, AU915, and CN470.
 
-To configure the masking of channels for the sub-bands, you can use the [AT+MASK command that can be found on the AT Commands Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-mask).
+To configure the masking of channels for the sub-bands, you can use the `AT+MASK` command that can be found on the [AT Command Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-mask).
 
 To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
 :::
@@ -382,6 +595,11 @@ After EUI and keys configuration, the device can now join the network and send p
 ```
 AT+JOIN=1:0:10:8
 ```
+:::tip 📝 NOTE:
+`AT+JOIN` command parameters are optional. You can configure the settings for auto-join, reattempt interval, and the number of join attempts if your application needs it. If not configured, it will use the default parameter values.
+
+`AT+JOIN` and `AT+JOIN=1` also share the common functionality of trying to join the network.  
+:::
 
 Join command format: **`AT+JOIN=w:x:y:z`**
 
@@ -392,7 +610,7 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | y         | Reattempt interval in seconds (7-255) - 8 is default.       |
 | z         | Number of join attempts (0-255) - 0 is default.             |
 
-After 5 or 6 seconds, if the request was successfully received by a LoRa gateway, you should see `+EVT:JOINED` status reply as shown on Figure 20.
+After 5 or 6 seconds, if the request is successfully received by a LoRa gateway, you should see `+EVT:JOINED` status reply, as shown in **Figure 40**.
 
 :::tip 📝 NOTE:
 
@@ -401,7 +619,7 @@ If the OTAA device failed to join, you need to check if your device is within re
 After checking all the things above, try to join again. 
 :::
 
-With the end-device properly activated, you can now try to send some payload after a successful join.
+1. With the end-device properly activated, you can now try to send some payload after a successful join.
 
 ```
 AT+SEND=2:12345678
@@ -423,9 +641,9 @@ You can see the data sent by the RAK3172 module on the TTN device console *Live 
 />
 
 
-#### TTN ABP Device Registration
+##### TTN ABP Device Registration
 
-To register an ABP device, you need to go to your application console and select the application where you want your device to be added. Then you need to to click **+ Add end device** as shown in Figure 22.
+1. To register an ABP device, go to your application console and select the application where you want your device to be added. Then click **+ Add end device**, as shown in **Figure 42**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_8.png"
@@ -433,7 +651,7 @@ To register an ABP device, you need to go to your application console and select
   caption="Adding ABP Device"
 />
 
-To register the module, you need to click first **Manually** then configure the activation method by selecting **Activation by personalization (ABP)**, compatible **LoRaWAN version** and click **Start** button as shown in figures 23 and 24.
+2. To register the module, you need to click first **Manually** then configure the activation method by selecting **Activation by personalization (ABP)**  compatible **LoRaWAN version** and click the **Start** button, as shown in **Figure 43** and **Figure 44**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_9.png"
@@ -447,7 +665,7 @@ To register the module, you need to click first **Manually** then configure the 
   caption="Selecting ABP and LoRaWAN version"
 />
 
-At this step, you need to put a unique **End device ID** and **DevEUI** as shown in Figure 25. Check if your module has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI.
+3. At this step, you need to put a unique **End device ID** and **DevEUI**, as shown in **Figure 45**. Check if your module has a DevEUI on the sticker or QR that you can scan then use this as the device unique DevEUI.
 
 Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
 
@@ -481,7 +699,7 @@ The last step in the registration of a new ABP end-device is the configuration o
   caption="ABP AppSKey generation and device registration"
 />
 
-You should now be able to see the device on the TTN console after you fully register your device as shown in Figure 28.
+You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 48**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/image_5_abp.png"
@@ -489,9 +707,9 @@ You should now be able to see the device on the TTN console after you fully regi
   caption="ABP device successfully registered to TTN"
 />
 
-#### ABP Configuration for TTN
+##### ABP Configuration for TTN
 
-To set up the RAK3172 module to join the TTN using ABP, start by connecting the RAK3172 module to the computer (see Figure 1) and open the RAK Serial Port Tool. Select the right COM port and set baudrate to 9600.
+1. To set up the RAK3172 module to join the TTN using ABP, start by connecting the RAK3172 module to the computer (see [Figure 21](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#connect-to-the-rak3172)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify the current configuration is working by sending these two AT commands:
 
@@ -505,11 +723,11 @@ ATE
 
 ATE will echo the commands you input to the module, which is useful for tracking the commands and troubleshooting.
 
-You will receive OK when you input the two commands. After setting ATE, you can now see all the commands you input together with the replies. Try again AT and you should see it on the terminal followed by OK as shown in Figure 17.
+2. You will receive OK when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again AT and you should see it on the terminal followed by OK, as shown in **Figure 49**.
 
 :::tip 📝 NOTE:
 
-If do not receive an `OK` or any reply, you need to check if the wiring of your UART lines is correct and if the baud is correctly configured to 9600. Also you can check if the device is powered correctly. If you are getting power from USB port, ensure that you have a good USB cable.
+If there is no `OK` or any reply, you need to check if the wiring of your UART lines is correct and if the baud is correctly configured to 115200. Also, you can check if the device is powered correctly. If you are getting power from a USB port, ensure that you have a good USB cable.
 :::
 
 <rk-img
@@ -553,7 +771,7 @@ AT+BAND=4
 
 Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK3172 to match the gateway and LoRaWAN network server. This is specially important on Regional Bands like US915, AU915, and CN470.
 
-To configure the masking of channels for the sub-bands, you can use the [AT+MASK command that can be found on the AT Commands Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-mask).
+To configure the masking of channels for the sub-bands, you can use the `AT+MASK` command that can be found on the [AT Command Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/#at-mask).
 
 To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
 :::
@@ -582,7 +800,7 @@ To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
   caption="Configuring LoRa Parameters"
 />
 
-After configuration of the LoRaWAN parameters, the next step is to setup the device address and sessions keys. You need the use the values from the TTN console. 
+4. After the configuration of the LoRaWAN parameters, the next step is to set up the device address and session keys. You need the use the values from the TTN console. 
 
 - Device Address: **260BDE80**
 - Application Session Key: **A585903A949C2B2D44B55E99E94CB533**
@@ -627,7 +845,15 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | z         | Number of join attempts (0-255) - 0 is default.             |
 
 
-With the end-device properly activated, you can now try to send some payload after successful join.
+| Parameter | Description                                                  |
+| --------- | ------------------------------------------------------------ |
+| w         | Join command - 1: joining, 0: stop joining.                  |
+| x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
+| y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
+| z         | Number of join attempts (0-255) - 0 is default.              |
+
+
+6. With the end-device properly activated, you can now try to send some payload after a successful join.
 
 ```
 AT+SEND=3:12341234
@@ -656,7 +882,7 @@ You can see the data sent by the RAK3172 module on the TTN device console *Live 
   caption="OTAA Test Sample Data Sent Viewed in TTN"
 />
 
-### Connecting with ChirpStack
+##### Connecting with ChirpStack
 
 In this section, it shows how to connect the RAK3172 module to the ChirpStack platform.
 
@@ -677,20 +903,20 @@ It is assumed that you are using a RAK Gateway and its built-in ChirpStack. Also
 
 * In summary, these are the requirements: 
 
-  1. A ChirpStack online gateway, the frequency band of the nodes should be consistent with the frequency band of the gateway in use.
-      *	[Connect the Gateway with Chirpstack](/Product-Categories/WisGate/RAK7243/Quickstart/#connect-the-gateway-with-chirpstack)
-  2.	The RAK Serial Port Tool provided by RAK
-  3.	RAK3172 module
+  1. In a ChirpStack online gateway, the frequency band of the nodes should be consistent with the frequency band of the gateway in use.
+      * [Connect the Gateway with Chirpstack](/Product-Categories/WisGate/RAK7243/Quickstart/#connect-the-gateway-with-chirpstack)
+  2.  The RAK Serial Port Tool provided by RAK
+  3.  RAK3172 module
 
 :::tip 📝 NOTE:
 The frequency band used in the demonstration is EU868. Use a high-frequency version of RAK3172. The product number should be “**RAK3172 (H)**”.
 :::
 
-#### Create a New Application
+##### Create a New Application
 
 Login to the ChirpStack server using your account and password.
 
-Go to the Application section as shown in the Figure 35.
+2. Go to the Application section, as shown in **Figure 55**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/24.chirpstack.png"
@@ -698,7 +924,7 @@ Go to the Application section as shown in the Figure 35.
   caption="Application Section"
 />
 
-By default, you should create a new application, although you can reuse existing ones. For this setup, create a new Application by clicking on the “**CREATE**” button, and fill the required parameters as shown in the Figures 36 and 37.
+3. By default, you should create a new application, although you can reuse existing ones. For this setup, create a new Application by clicking on the “**CREATE**” button and filling in the required parameters, as shown in **Figure 56** and **Figure 57**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/25.new-application.png"
@@ -722,7 +948,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 
 <b>Register a New Device</b>
 
-1. Choose the **Application** created in the previous step, then select the **DEVICES** tab as shown in Figures 38 and 39.
+1. Choose the **Application** created in the previous step, then select the **DEVICES** tab, as shown in **Figure 58** and **Figure 59**.
 
 2. Once done, click “**+ CREATE**”.
 
@@ -779,9 +1005,9 @@ If you have your own Chirpstack installation, you can set up the device profile 
 />
 
 
-#### Chirpstack OTAA Device Registration
+##### Chirpstack OTAA Device Registration
 
-1. If you have selected “**DeviceProfile_OTAA**” as shown in Figure 43, then after the device is created, an Application Key must be also created for this device. 
+1. If you have selected “**DeviceProfile_OTAA**”, as shown in **Figure 63**, then after the device is created, an Application Key must be also created for this device. 
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/32.otaa.png"
@@ -789,7 +1015,7 @@ If you have your own Chirpstack installation, you can set up the device profile 
   caption="Chirpstack OTAA Activation"
 />
 
-2. A previously created Application Key can be entered here, or a new one can be generated automatically by clicking the icon highlighted in red in Figure 44:
+2. A previously created Application Key can be entered here, or a new one can be generated automatically by clicking the icon highlighted in red in **Figure 64**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/33.otaa-set-device-keys.png"
@@ -799,7 +1025,7 @@ If you have your own Chirpstack installation, you can set up the device profile 
 
 3. Once the Application Key is added in the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button. 
 
-* As shown in Figure 45, a new device should be listed in the DEVICES tab. The most important parameters, such as the Device EUI are shown in the summary.
+* As shown in **Figure 65**, a new device should be listed in the DEVICES tab. The most important parameters, such as the Device EUI, are shown in the summary.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/34.set-device-eui.png"
@@ -807,7 +1033,7 @@ If you have your own Chirpstack installation, you can set up the device profile 
   caption="Chirpstack OTAA List of Device in the Device Tab"
 />
 
-4. To end the process, it is a good practice to review that the Application Key is properly associated with this device. The Application Key can be verified in the **KEYS(OTAA)** tab as shown in Figure 46.
+4. To end the process, it is a good practice to review that the Application Key is properly associated with this device. The Application Key can be verified in the **KEYS(OTAA)** tab, as shown in **Figure 66**.
 
 
 <rk-img
@@ -822,11 +1048,11 @@ Standard OTAA mode requires the **Device EUI**, **Application Key**, and **Appli
 
 :::
 
-#### OTAA Configuration for Chirpstack
+##### OTAA Configuration for Chirpstack
 
 The RAK3172 module supports a series of AT commands to configure its internal parameters and control the functionalities of the module. 
 
-To set up the RAK3172 module to join the Chirpstack using OTAA, start by connecting the RAK3172 module to the Computer (see Figure 1) and open the RAK Serial Port Tool. Select the right COM port and set baudrate to 9600.
+1. To set up the RAK3172 module to join the Chirpstack using OTAA, start by connecting the RAK3172 module to the Computer (see [Figure 21](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#connect-to-the-rak3172)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify that the current configuration is working by sending these two AT commands:
 
@@ -840,11 +1066,11 @@ ATE
 
 `ATE` will echo the commands you input to the module, which is useful for tracking the commands and troubleshooting.
 
-You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK` as shown on Figure 47.
+You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK`, as shown in **Figure 67**.
 
 :::tip 📝 NOTE:
 
-If do not receive an `OK` or any reply, you need to check if the wiring of your UART lines is correct and if the baud is correctly configured to 9600. Also you can check if the device is powered correctly. If you are getting power from USB port, ensure that you have a good USB cable.
+If there is no `OK` or any reply, you need to check if the wiring of your UART lines is correct and if the baud is correctly configured to 115200. Also, you can check if the device is powered correctly. If you are getting power from a USB port, ensure that you have a good USB cable.
 :::
 
 <rk-img
@@ -959,6 +1185,11 @@ After EUI and key configuration, the device can now join the network and send so
 ```
 AT+JOIN=1:0:10:8
 ```
+:::tip 📝 NOTE:
+`AT+JOIN` command parameters are optional. You can configure the settings for auto-join, reattempt interval, and the number of join attempts if your application needs it. If not configured, it will use the default parameter values.
+
+`AT+JOIN` and `AT+JOIN=1` also share the common functionality of trying to join the network.  
+:::
 
 Join command format: **`AT+JOIN=w:x:y:z`**
 
@@ -991,7 +1222,7 @@ Send command format: **`AT+SEND=<port>:<payload>`**
   caption="OTAA Test Sample Data Sent via RAK Serial Port Tool"
 />
 
-On the ChirpStack platform, you should see the join and uplink messages in the LORAWAN FRAMES tab as shown in Figure 51. By convention, messages sent from nodes to gateways are considered as **Uplinks** while messages sent by gateways to nodes are considered as **Downlinks**. 
+On the ChirpStack platform, you should see the join and uplink messages in the LORAWAN FRAMES tab, as shown in **Figure 71**. By convention, messages sent from nodes to gateways are considered as **Uplinks** while messages sent by gateways to nodes are considered as **Downlinks**. 
 
 
 <rk-img
@@ -1000,14 +1231,14 @@ On the ChirpStack platform, you should see the join and uplink messages in the L
   caption="Chirpstack Data Received Preview"
 />
 
-#### Chirpstack ABP Device Registration
+##### Chirpstack ABP Device Registration
 
-During the registration of a new device, if you select “**DeviceProfile_ABP**”, as shown in Figure 52, then the ChirpStack platform will assume that this device will join to the LoRaWAN network using the ABP mode. 
+1. During the registration of a new device, if you select “**DeviceProfile_ABP**”, as shown in **Figure 72**, then the ChirpStack platform will assume that this device will join the LoRaWAN network using the ABP mode. 
 
 
 :::tip 📝 NOTE:
 
-Check “**Disable counting frame verification**”. During the test, when the module is restarted, the frame counting number will be also be restarted from zero. This would cause a synchronization problem with the ChirpStack server treating it as a replay attack. For the testing purpose, it is safe to disable this feature, but remember to activate it in a production environment.
+Check “**Disable counting frame verification**”. During the test, when the module is restarted, the frame counting number will also be restarted from zero. This would cause a synchronization problem with the ChirpStack server treating it as a replay attack. For the testing purpose, it is safe to disable this feature, but remember to activate it in a production environment.
 
 :::
 
@@ -1035,9 +1266,9 @@ After selecting the ABP mode, the following parameters appear in the Activation 
 * The parameters can be generated as random numbers by the platform or can be set with user values. Once these parameters are filled properly, the process is completed by clicking on the “**ACTIVATE DEVICE**” button.
 
 
-#### ABP Configuration for Chirpstack
+##### ABP Configuration for Chirpstack
 
-To set up the RAK3172 module to join the Chirpstack using ABP, start by connecting the RAK3172 module to the Computer (see Figure 1) and open the RAK Serial Port Tool. Select the right COM port and set baudrate to 9600.
+1. To set up the RAK3172 module to join the Chirpstack using ABP, start by connecting the RAK3172 module to the Computer (see [Figure 21](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#connect-to-the-rak3172)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify that the current configuration is working by sending these two AT commands:
 
@@ -1051,11 +1282,11 @@ ATE
 
 `ATE` will echo the commands you input to the module, which is useful for tracking the commands and troubleshooting.
 
-You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK` as shown on Figure 54.
+You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK`, as shown in **Figure 74**.
 
 :::tip 📝 NOTE:
 
-If do not receive an `OK` or any reply, you need to check if the wiring of your UART lines is correct and if the baud is correctly configured to 9600. Also you can check if the device is powered correctly. If you are getting power from USB port, ensure that you have a good USB cable.
+If there is no `OK` or any reply, you need to check if the wiring of your UART lines is correct and if the baud is correctly configured to 115200. Also, you can check if the device is powered correctly. If you are getting power from a USB port, ensure that you have a good USB cable.
 :::
 
 <rk-img
@@ -1165,19 +1396,24 @@ After EUI and keys configuration, the device can now join the network and send s
 ```
 AT+JOIN=1:0:10:8
 ```
+:::tip 📝 NOTE:
+`AT+JOIN` command parameters are optional. You can configure the settings for auto-join, reattempt interval, and the number of join attempts if your application needs it. If not configured, it will use the default parameter values.
+
+`AT+JOIN` and `AT+JOIN=1` also share the common functionality of trying to join the network.  
+:::
 
 Join command format: **`AT+JOIN=w:x:y:z`**
 
-| Parameter | Description                                                 |
-| --------- | ----------------------------------------------------------- |
-| w         | Join command - 1: joining, 0: stop joining.                 |
-| x         | Auto-join config - 1: auto-join on powerup, 0: no auto-join |
-| y         | Reattempt interval in seconds (7-255) - 8 is default.       |
-| z         | Number of join attempts (0-255) - 0 is default.             |
+| Parameter | Description                                                  |
+| --------- | ------------------------------------------------------------ |
+| w         | Join command - 1: joining, 0: stop joining.                  |
+| x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
+| y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
+| z         | Number of join attempts (0-255) - 0 is default.              |
 
 After 5 or 6 seconds, if the request was successfully received by a LoRa gateway, then you should see the JOINED status reply.
 
-You can now try to send some payload after successful join.
+5. You can now try to send some payload after a successful join.
 
 ```
 AT+SEND=2:12341234
@@ -1191,7 +1427,7 @@ Send command format: **`AT+SEND=<port>:<payload>`**
 />
 
 
-### LoRa P2P Mode
+#### LoRa P2P Mode
 
 This section will show you how to set up and connect two RAK3172 units to work in the LoRa P2P mode. The configuration of the RAK3172 units are done by connecting the two modules to a general-purpose computer using a USB-UART converter. The setup of each RAK3172 can be done separately, but testing the LoRa P2P mode will require having both units connected simultaneously. This could be done by having one computer with two USB ports or two computers with one USB port each.
 
@@ -1294,11 +1530,12 @@ AT+PSEND=11223344
 />
 
 
-## Miscellaneous
 
+
+## Miscellaneous
 ### Upgrading the Firmware
 
-If you want to upgrade to the latest version firmware of the module, you can follow this section. The latest firmware can be found in the software section of [RAK3172 Datasheet](/Product-Categories/WisDuo/RAK3172-Module/Datasheet/#firmware-os).
+If you want to upgrade to the latest version of the firmware of the module, you can follow this section. The latest firmware can be found in the software section of [RAK3172 Datasheet](/Product-Categories/WisDuo/RAK3172-Module/Datasheet/#firmware-os).
 
 #### Firmware Upgrade Through UART2
 
@@ -1323,13 +1560,13 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
 2.	Download the RAK Device Firmware Upgrade (DFU) tool.
     - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
-3.	Connect the RAK3172 module with a computer through a USB to TTL. Refer to [Figure 1](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#connect-to-the-rak3172).
+3.  Connect the RAK3172 module with a computer through a USB to TTL. Refer to [Figure 21](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#connect-to-the-rak3172).
 
 4.  Open the Device Firmware Upgrade tool. Select the serial port and baud rate (115200) of the module and click the "Select Port" button.
 
 :::tip 📝 NOTE:
 
-If your firmware upload always fail, check your current baudrate setting using `AT+BAUD=?` command and use that baud rate value in the RAK DFU Tool. You can also check if you selected the right COM port.
+If your firmware upload always fails, check your current baud rate setting using the `AT+BAUD=?` command and use that baud rate value in the RAK DFU Tool. You can also check if you selected the right COM port.
 
 :::
 
@@ -1361,3 +1598,148 @@ If your firmware upload always fail, check your current baudrate setting using `
   width="80%"
   caption="Upgrade successful"
 />
+
+### Arduino Installation
+
+Go to [Arduino official website](https://www.arduino.cc/en/Main/Software) and download the Arduino IDE. You can see the multiple versions available for Windows, Linux, and Mac OS X. Choose the correct version of Arduino IDE and download it.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/1.download-arduino.png"
+  width="100%"
+  caption="Arduino IDE latest version"
+/>
+
+#### For Windows
+
+::: tip 📝 NOTE   
+**For Windows 10 users**:   
+Do **NOT** install the Arduino IDE from the Microsoft App store. Install the original Arduino IDE from the Arduino official website instead, since the Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
+:::
+
+1. Install the Arduino IDE, which you just downloaded, on your Windows PC. 
+
+2. Click **I Agree** then **Next** to proceed.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/2.agreement-license.png"
+  width="45%"
+  caption="Arduino setup license agreement"
+/>
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/3.installation-options.png"
+  width="45%"
+  caption="Arduino setup installation options"
+/>
+
+3. Click **Install**.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/4.installation-folder.png"
+  width="45%"
+  caption="Installing Arduino IDE"
+/>
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/5.installing.png"
+  width="45%"
+  caption="Ongoing installation"
+/>
+
+
+After 100% progress, the Arduino IDE has been installed successfully.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/6.installation-success.png"
+  width="45%"
+  caption="Successful installation"
+/>
+
+#### For Linux
+
+First, you need the check the compatibility with your system and choose between the 32-bit, 64-bit, and ARM versions of the Arduino IDE for Linux.
+
+##### Installing via a tarball
+
+After downloading the correct Arduino version, open a terminal, then run `ls` to check the installation file on the download folder.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/ls-arduino.png"
+  width="90%"
+  caption="Check the download folder"
+/>
+
+
+A tarball is a type of compressed folder, like a `.zip` file, commonly used to distribute software in Linux. To extract the files from the tarball, change the directory to where the downloaded tarball is, then run:
+
+`tar xvf arduino-version.xz`
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/tar-linux.png"
+  width="90%"
+  caption="Tarball extract command"
+/>
+
+When the tar command finishes, run `ls` again. A folder named  **arduino-version** will be created.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/ls-tarball.png"
+  width="90%"
+  caption="Arduino install folder created"
+/>
+
+Change the current directory and go to the newly created folder directory. There will be a file named `install.sh` in the folder. Execute `sudo ./install.sh` to install the Arduino IDE.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/sudo-install.png"
+  width="90%"
+  caption="Arduino install script running"
+/>
+
+The `sudo` command temporarily elevates privileges allowing the installer to complete sensitive tasks without logging in as the root user.
+
+#### For Mac OS X
+
+In Mac OS X, the same as Linux, there is no installation process. It is just a process of decompression, then you can open Arduino IDE successfully.
+
+
+### Arduino IDE Parts Guide
+
+**Figure 96** shows the five (5) parts of Arduino IDE.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/7.arduino-ide.png"
+  width="75%"
+  caption="Arduino IDE"
+/>
+
+1. **IDE Option Menu**
+
+You can configure some general parameters such as the serial port, the board information, the libraries, the edit parameters, and so on.
+
+2. **Operating Buttons**
+
+The operating buttons have five operations:
+
+  - **Verify/Compile** the source code.
+  - **Upload** the compiled code into WisBlock.
+  - **Open** a **New** Arduino IDE window or existing application.
+  - **Save** the current application.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/8.operating-buttons.png"
+  width="30%"
+  caption="Operating buttons"
+/>
+
+
+3. **Code Area**
+
+You can edit the source code, which will be compiled and uploaded into WisBlock later in this area.
+
+4. **State Area**
+
+5. **Output Message Area**
+You can see the output message in this area, whether it's failure or success information.
+
+
