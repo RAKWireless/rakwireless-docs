@@ -38,7 +38,7 @@ The RAK12003 WisBlock Infrared Temperature Sensor is part of the RAKwireless Wis
 * **Size**
     * 10 x 10&nbsp;mm
 
-The refresh rate is the speed that the MLX9063 RAM will be updated with results. It is configurable and the rates are shown in the table below:
+The refresh rate is the speed that the MLX90632 RAM will be updated with results. It is configurable and the rates are shown in the table below:
 
 
 | Refresh Rate (Hz) | Time (ms) |

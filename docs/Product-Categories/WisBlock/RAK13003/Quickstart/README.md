@@ -115,18 +115,11 @@ If you will connect other modules to the remaining WisBlock Base slots, check on
 
 In the following example, you will be using the [RAK13003 WisBlock IO Expansion Module](https://store.rakwireless.com/products/io-expansion-module-rak13003) to power LEDs.
 
+#### Initial Test of the RAK13003 WisBlock Module
 
-These are the quick links that go directly to the software guide for the specific WisBlock Core module you use:
+1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
-- [RAK13003 in RAK4631 WisBlock Core Guide](/Product-Categories/WisBlock/RAK13003/Quickstart/#rak13003-in-rak4631-wisblock-core-guide)
-- [RAK13003 in RAK11200 WisBlock Core Guide](/Product-Categories/WisBlock/RAK13003/Quickstart/#rak13003-in-rak11200-wisblock-core-guide)
-- [RAK13003 in RAK11300 WisBlock Core Guide](/Product-Categories/WisBlock/RAK13003/Quickstart/#rak13003-in-rak11300-wisblock-core-guide)
-
-#### RAK13003 in RAK4631 WisBlock Core Guide
-
-##### Arduino Setup
-
-Shown in **Figure 6** is the illustration on how to use the RAK13003 IO Expansion Module to power ON LEDs using digitalWrite function.
+2. Shown in **Figure 6** is the illustration on how to use the RAK13003 IO Expansion Module to power ON LEDs using digitalWrite function.
 
 <rk-img
   src="/assets/images/wisblock/rak13003/quickstart/led_connection4631.png"
@@ -134,7 +127,7 @@ Shown in **Figure 6** is the illustration on how to use the RAK13003 IO Expansio
   caption="RAK13003 as Output to LEDs"
 />
 
-1. First, you need to select the RAK4631 WisBlock Core.
+3. You need to select first the WisBlock Core you have, as shown in Figure 7 to Figure 9.
 
 <rk-img
   src="/assets/images/wisblock/rak13003/quickstart/board4631.png"
@@ -142,7 +135,19 @@ Shown in **Figure 6** is the illustration on how to use the RAK13003 IO Expansio
   caption="Selecting RAK4631 as WisBlock Core"
 />
 
-2. Next, copy the following sample code into your Arduino IDE.
+<rk-img
+  src="/assets/images/wisblock/rak13003/quickstart/board11200.png"
+  width="100%"
+  caption="Selecting RAK11200 as WisBlock Core"
+/>
+
+<rk-img
+  src="/assets/images/wisblock/rak13003/quickstart/rak11300_board.png"
+  width="100%"
+  caption="Selecting RAK11300 as WisBlock Core"
+/>
+
+4. Next, copy the following sample code into your Arduino IDE.
 
 ```c
 /**
@@ -150,17 +155,17 @@ Shown in **Figure 6** is the illustration on how to use the RAK13003 IO Expansio
    @author rakwireless.com
    @brief Use IIC to expand 16 GPIO. 
           Configure PA input PB output, or PA output PB input.Serial port print GPIO status.
-   @version 0.1
-   @date 2021-2-24
-   @copyright Copyright (c) 2021
+   @version 0.2
+   @date 2022-5-11
+   @copyright Copyright (c) 2022
 **/
 #include <Wire.h>
-#include <Adafruit_MCP23017.h>  //click here to get the library: http://librarymanager/All#Adafruit_MCP23017
+#include "Adafruit_MCP23X17.h"  //http://librarymanager/All#Adafruit_MCP23017
 
-#define PAIN_PBOUT  //PB is set as output here and PA as input.
+#define PAIN_PBOUT //PB is set as output here and PA as input.  
 //#define PAOUT_PBIN 
 
-Adafruit_MCP23017 mcp;
+Adafruit_MCP23X17 mcp;
   
 void setup() 
 {  
@@ -193,7 +198,7 @@ void setup()
 
   Serial.println("MCP23017 GPIO Input Output Test.");
   
-  mcp.begin(); // use default address 0.
+  mcp.begin_I2C(); // use default address 0.
   
 #ifdef PAIN_PBOUT 
   for(int i=0 ;i < 8 ;i++)
@@ -234,14 +239,14 @@ void setup()
     mcp.pinMode(j, INPUT);  // PB input.
   }
   mcp.digitalWrite(0, LOW); // The output state of the PA port can be changed to high or low level.
-  mcp.digitalWrite(1, HIGH);
-  mcp.digitalWrite(2, LOW);
-  mcp.digitalWrite(3, HIGH);
+  mcp.digitalWrite(1, HIGH); // PA1
+  mcp.digitalWrite(2, LOW);  // PA2
+  mcp.digitalWrite(3, HIGH);  // PA3
 
-  mcp.digitalWrite(4, LOW);
-  mcp.digitalWrite(5, HIGH);
-  mcp.digitalWrite(6, LOW);
-  mcp.digitalWrite(7, HIGH);
+  mcp.digitalWrite(4, LOW);  // PA4
+  mcp.digitalWrite(5, HIGH);  // PA5
+  mcp.digitalWrite(6, LOW);  // PA6
+  mcp.digitalWrite(7, HIGH);  //PA7
   Serial.println();
   for(int i=8; i < 16; i++ )
   {
@@ -254,32 +259,33 @@ void setup()
 }
 void loop() 
 {
-  
+  mcp.digitalWrite(8, HIGH); //PIN PB0
+  delay(1000);
+  mcp.digitalWrite(8, LOW); //PIN PB0
+  delay(1000);
 }
-
 ```
 ::: tip 📝 NOTE
-If you experience any error in compiling the example sketch, check the updated code for the RAK4631 WisBlock Core Module that can be found on the [RAK13003 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK13003_GPIO_Expander_IO_MCP32/RAK13003_GPIO_Expander_IO_MCP32.ino).
+If you experience any error in compiling the example sketch, check the updated code for the all WisBlock Core Module that can be found on the [RAK13003 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK13003_GPIO_Expander_IO_MCP32/). Other examples like interrupt and pooling can be found in the github repository as well.
 :::
 
-3. Install the required library, as shown in **Figure 8**.
+5. Install the required library, as shown in **Figure 10**.
 
 <rk-img
   src="/assets/images/wisblock/rak13003/quickstart/adding_library.png"
-  width="100%"
+  width="80%"
   caption="Installing the Library"
 />
 
-4. Choose Version 1.3.0 of the library, as shown in **Figure 9**
+::: tip 📝 NOTE
+The library version required must be at least **ver 2.1.0** to compile the example code successfully.
+:::
 
-<rk-img
-  src="/assets/images/wisblock/rak13003/quickstart/adding_library_v1.3.0.png"
-  width="100%"
-  caption="Selecting Version 1.3.0"
-/>
+6. Select the correct port and upload your code, as shown in **Figure 11** and **Figure 12**.
 
-
-5. Select the correct port and upload your code, as shown in **Figure 10** and **Figure 11**.
+::: tip 📝 NOTE
+If you're using the RAK11200 as your WisBlock Core, the RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak13003/quickstart/selecting_port.png"
@@ -293,372 +299,11 @@ If you experience any error in compiling the example sketch, check the updated c
   caption="Uploading code"
 />
 
-6. When you have successfully uploaded the example sketch, you can see that the LEDs are powered ON. You can also switch PB as INPUT and PA as OUTPUT by changing this line of code shown in **Figure 12**.
+7. When you have successfully uploaded the example sketch, you can see that the LEDs are powered ON and PB0 will have LED blinking output. You can also switch PB as INPUT and PA as OUTPUT by changing this line of code shown in **Figure 13**.
 
 <rk-img
   src="/assets/images/wisblock/rak13003/quickstart/PinSwitch.png"
-  width="100%"
-  caption="Switching between PA and PB"
-/>
-::: tip 📝 NOTE
-You can use **`mcp.digitalWrite(pin_no,state)`** and **`mcp.digitalRead(pin_no)`** to send or read states.
-:::
-
-#### RAK13003 in RAK11200 WisBlock Core Guide
-
-##### Arduino Setup
-
-Shown in **Figure 13** is the illustration on how to use the RAK13003 IO Expansion Module to power ON LEDs using digitalWrite function.
-
-<rk-img
-  src="/assets/images/wisblock/rak13003/quickstart/led_connection11200.png"
-  width="50%"
-  caption="RAK13003 as Output to LEDs"
-/>
-
-1. First, you need to select the RAK11200 WisBlock Core.
-
-<rk-img
-  src="/assets/images/wisblock/rak13003/quickstart/board11200.png"
-  width="100%"
-  caption="Selecting RAK11200 as WisBlock Core"
-/>
-
-2. Next, copy the following sample code into your Arduino IDE.
-
-```c
-/**
-   @file RAK13003_GPIO_Expander_IO_MCP32.ino
-   @author rakwireless.com
-   @brief Use IIC to expand 16 GPIO. 
-          Configure PA input PB output, or PA output PB input.Serial port print GPIO status.
-   @version 0.1
-   @date 2021-2-24
-   @copyright Copyright (c) 2021
-**/
-#include <Wire.h>
-#include <Adafruit_MCP23017.h>  //click here to get the library: http://librarymanager/All#Adafruit_MCP23017
-
-#define PAIN_PBOUT  //PB is set as output here and PA as input.
-//#define PAOUT_PBIN 
-
-Adafruit_MCP23017 mcp;
-  
-void setup() 
-{  
-  pinMode(WB_IO2, OUTPUT);
-  digitalWrite(WB_IO2, 1);
-  
-  // Reset device
-  pinMode(WB_IO4, OUTPUT);
-  digitalWrite(WB_IO4, 1);
-  delay(10);
-  digitalWrite(WB_IO4, 0);
-  delay(10);
-  digitalWrite(WB_IO4, 1);
-  delay(10);
-  
-  // Initialize Serial for debug output
-  time_t timeout = millis();
-  Serial.begin(115200);
-  while (!Serial)
-  {
-    if ((millis() - timeout) < 5000)
-    {
-      delay(100);
-    }
-    else
-    {
-      break;
-    }
-  }
-
-  Serial.println("MCP23017 GPIO Input Output Test.");
-  
-  mcp.begin(); // use default address 0.
-  
-#ifdef PAIN_PBOUT 
-  for(int i=0 ;i < 8 ;i++)
-  {
-    mcp.pinMode(i, INPUT);  // PA input. 
-  }
-  for(int j=8 ;j < 16 ;j++)
-  {
-    mcp.pinMode(j, OUTPUT); // PB output.
-  }
-  mcp.digitalWrite(8, LOW); // The output state of the PB port can be changed to high or low level.
-  mcp.digitalWrite(9, HIGH); //PIN PB1
-  mcp.digitalWrite(10, LOW); //PIN PB2
-  mcp.digitalWrite(11, LOW); //PIN PB3
-
-  mcp.digitalWrite(12, LOW); //PIN PB4
-  mcp.digitalWrite(13, LOW); //PIN PB5
-  mcp.digitalWrite(14, LOW); //PIN PB6 
-  mcp.digitalWrite(15, HIGH);//PIN PB7
-
-  Serial.println();
-  for(int i=0; i < 8; i++ )
-  {
-    if(mcp.digitalRead(i) == 1)
-      Serial.printf("GPIO A %d Read High\r\n",i);
-    else
-      Serial.printf("GPIO A %d Read Low\r\n",i);
-  }
-#endif
-
-#ifdef PAOUT_PBIN 
-  for(int i=0 ;i < 8 ;i++)
-  {
-    mcp.pinMode(i, OUTPUT); // PA output. 
-  }
-  for(int j=8 ;j < 16 ;j++)
-  {
-    mcp.pinMode(j, INPUT);  // PB input.
-  }
-  mcp.digitalWrite(0, LOW); // The output state of the PA port can be changed to high or low level.
-  mcp.digitalWrite(1, HIGH);
-  mcp.digitalWrite(2, LOW);
-  mcp.digitalWrite(3, HIGH);
-
-  mcp.digitalWrite(4, LOW);
-  mcp.digitalWrite(5, HIGH);
-  mcp.digitalWrite(6, LOW);
-  mcp.digitalWrite(7, HIGH);
-  Serial.println();
-  for(int i=8; i < 16; i++ )
-  {
-    if(mcp.digitalRead(i) == 1)
-      Serial.printf("GPIO B %d Read High\r\n",i-8);
-    else
-      Serial.printf("GPIO B %d Read Low\r\n",i-8);
-  }
-#endif
-}
-void loop() 
-{
-  
-}
-```
-::: tip 📝 NOTE
-If you experience any error in compiling the example sketch, check the updated code for the RAK11200 WisBlock Core Module that can be found on the [RAK13003 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK13003_GPIO_Expander_IO_MCP32/RAK13003_GPIO_Expander_IO_MCP32.ino).
-
-:::
-
-3. Install the required library, as shown in **Figure 15**.
-
-<rk-img
-  src="/assets/images/wisblock/rak13003/quickstart/adding_library11200.png"
-  width="100%"
-  caption="Installing the Library"
-/>
-
-4. Choose Version 1.3.0 of the library, as shown in **Figure 16**
-
-<rk-img
-  src="/assets/images/wisblock/rak13003/quickstart/adding_library_v1.3.0.png"
-  width="100%"
-  caption="Selecting Version 1.3.0"
-/>
-
-
-5. Select the correct port and upload your code, as shown in **Figure 17** and **Figure 18**.
-
-<rk-img
-  src="/assets/images/wisblock/rak13003/quickstart/selecting_port11200.png"
-  width="100%"
-  caption="Selecting the correct Serial Port"
-/>
-
-<rk-img
-  src="/assets/images/wisblock/rak13003/quickstart/upload11200.png"
-  width="100%"
-  caption="Uploading code"
-/>
-
-:::tip 📝 NOTE:
-RAK11200 requires the BOOT0 pin to be configured properly before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
-:::
-
-6. When you have successfully uploaded the example sketch, you can see that the LEDs are powered ON. You can also switch PB as INPUT and PA as OUTPUT by changing this line of code shown in **Figure 19**.
-
-<rk-img
-  src="/assets/images/wisblock/rak13003/quickstart/PinSwitch.png"
-  width="100%"
-  caption="Switching between PA and PB"
-/>
-::: tip 📝 NOTE
-You can use **`mcp.digitalWrite(pin_no,state)`** and **`mcp.digitalRead(pin_no)`** to send or read states.
-:::
-
-
-#### RAK13003 in RAK11300 WisBlock Core Guide
-
-##### Arduino Setup
-
-
-1. First, you need to select the RAK11300 WisBlock Core as shown in **Figure 20**.
-
-<rk-img
-  src="/assets/images/wisblock/rak13003/quickstart/rak11300_board.png"
-  width="100%"
-  caption="Selecting RAK11300 as WisBlock Core"
-/>
-
-2. Next, copy the following sample code into your Arduino IDE.
-
-```c
-/**
-   @file RAK13003_GPIO_Expander_IO_MCP32.ino
-   @author rakwireless.com
-   @brief Use IIC to expand 16 GPIO. 
-          Configure PA input PB output, or PA output PB input.Serial port print GPIO status.
-   @version 0.1
-   @date 2021-2-24
-   @copyright Copyright (c) 2021
-**/
-#include <Wire.h>
-#include <Adafruit_MCP23017.h>  //click here to get the library: http://librarymanager/All#Adafruit_MCP23017
-
-#define PAIN_PBOUT  //PB is set as output here and PA as input.
-//#define PAOUT_PBIN 
-
-Adafruit_MCP23017 mcp;
-  
-void setup() 
-{  
-  pinMode(WB_IO2, OUTPUT);
-  digitalWrite(WB_IO2, 1);
-  
-  // Reset device
-  pinMode(WB_IO4, OUTPUT);
-  digitalWrite(WB_IO4, 1);
-  delay(10);
-  digitalWrite(WB_IO4, 0);
-  delay(10);
-  digitalWrite(WB_IO4, 1);
-  delay(10);
-  
-  // Initialize Serial for debug output
-  time_t timeout = millis();
-  Serial.begin(115200);
-  while (!Serial)
-  {
-    if ((millis() - timeout) < 5000)
-    {
-      delay(100);
-    }
-    else
-    {
-      break;
-    }
-  }
-
-  Serial.println("MCP23017 GPIO Input Output Test.");
-  
-  mcp.begin(); // use default address 0.
-  
-#ifdef PAIN_PBOUT 
-  for(int i=0 ;i < 8 ;i++)
-  {
-    mcp.pinMode(i, INPUT);  // PA input. 
-  }
-  for(int j=8 ;j < 16 ;j++)
-  {
-    mcp.pinMode(j, OUTPUT); // PB output.
-  }
-  mcp.digitalWrite(8, LOW); // The output state of the PB port can be changed to high or low level.
-  mcp.digitalWrite(9, HIGH); //PIN PB1
-  mcp.digitalWrite(10, LOW); //PIN PB2
-  mcp.digitalWrite(11, LOW); //PIN PB3
-
-  mcp.digitalWrite(12, LOW); //PIN PB4
-  mcp.digitalWrite(13, LOW); //PIN PB5
-  mcp.digitalWrite(14, LOW); //PIN PB6 
-  mcp.digitalWrite(15, HIGH);//PIN PB7
-
-  Serial.println();
-  for(int i=0; i < 8; i++ )
-  {
-    if(mcp.digitalRead(i) == 1)
-      Serial.printf("GPIO A %d Read High\r\n",i);
-    else
-      Serial.printf("GPIO A %d Read Low\r\n",i);
-  }
-#endif
-
-#ifdef PAOUT_PBIN 
-  for(int i=0 ;i < 8 ;i++)
-  {
-    mcp.pinMode(i, OUTPUT); // PA output. 
-  }
-  for(int j=8 ;j < 16 ;j++)
-  {
-    mcp.pinMode(j, INPUT);  // PB input.
-  }
-  mcp.digitalWrite(0, LOW); // The output state of the PA port can be changed to high or low level.
-  mcp.digitalWrite(1, HIGH);
-  mcp.digitalWrite(2, LOW);
-  mcp.digitalWrite(3, HIGH);
-
-  mcp.digitalWrite(4, LOW);
-  mcp.digitalWrite(5, HIGH);
-  mcp.digitalWrite(6, LOW);
-  mcp.digitalWrite(7, HIGH);
-  Serial.println();
-  for(int i=8; i < 16; i++ )
-  {
-    if(mcp.digitalRead(i) == 1)
-      Serial.printf("GPIO B %d Read High\r\n",i-8);
-    else
-      Serial.printf("GPIO B %d Read Low\r\n",i-8);
-  }
-#endif
-}
-void loop() 
-{
-  
-}
-```
-::: tip 📝 NOTE
-If you experience any error in compiling the example sketch, check the updated code for the RAK11300 WisBlock Core Module that can be found on the [RAK13003 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK13003_GPIO_Expander_IO_MCP32/RAK13003_GPIO_Expander_IO_MCP32.ino).
-:::
-
-3. Install the required library, as shown in **Figure 21**.
-
-<rk-img
-  src="/assets/images/wisblock/rak13003/quickstart/adding_library11300.png"
-  width="100%"
-  caption="Installing the Library"
-/>
-
-4. Choose Version 1.3.0 of the library, as shown in **Figure 22**
-
-<rk-img
-  src="/assets/images/wisblock/rak13003/quickstart/adding_library_v1.3.0.png"
-  width="100%"
-  caption="Selecting Version 1.3.0"
-/>
-
-
-5. Select the correct port and upload your code, as shown in **Figure 23** and **Figure 24**.
-
-<rk-img
-  src="/assets/images/wisblock/rak13003/quickstart/selecting_port11300.png"
-  width="100%"
-  caption="Selecting the correct Serial Port"
-/>
-
-<rk-img
-  src="/assets/images/wisblock/rak13003/quickstart/upload11300.png"
-  width="100%"
-  caption="Uploading code"
-/>
-
-6. When you have successfully uploaded the example sketch, you can see that the LEDs are powered ON. You can also switch PB as INPUT and PA as OUTPUT by changing this line of code shown in **Figure 25**.
-
-<rk-img
-  src="/assets/images/wisblock/rak13003/quickstart/PinSwitch.png"
-  width="100%"
+  width="80%"
   caption="Switching between PA and PB"
 />
 ::: tip 📝 NOTE

@@ -577,7 +577,7 @@ This command provides a way to switch to AT command mode.
 
 :::tip 📝 NOTE
 
-AT Command mode is the default setting of RAK4631-R. For direct use of RUI3 API, you need to use API mode to be set via `AT+APM`.
+AT Command mode is the default setting of RUI3 devices. For direct use of RUI3 API, you need to use API mode to be set via `AT+APM`.
 
 :::
 
@@ -918,8 +918,9 @@ This command is used to join a LoRaWAN network.
 |                             | *Param4* = **No. of join attempts**: 0 - 255 (0 is default).                                      |                                  |                     |
 
 :::tip 📝 NOTE:
-
 This is an asynchronous command. `OK` means that the device is joining. The completion of the JOIN can be verified with the `AT+NJS=?` command.
+
+Parameters of `AT+JOIN` command are optional. You can use `AT+JOIN` directly to join the LoRaWAN network. If no parameters are configured, the device will use the default values.
 
 :::
 
@@ -942,7 +943,7 @@ OK
 ```
 :::tip 📝 NOTE:
 
-If joining fails, make sure your device is within the coverage of the gateway. Also, ensure that the RAK4631-R is in LoRaWAN mode via `AT+NWM=1`. The region is correct via `AT+BAND`, and the EUIs and keys are correct.
+If joining fails, make sure your device is within the coverage of the gateway. Also, ensure that the RUI3 LoRaWAN device is in LoRaWAN mode via `AT+NWM=1`. The region is correct via `AT+BAND`, and the EUIs and keys are correct.
 
 :::
 

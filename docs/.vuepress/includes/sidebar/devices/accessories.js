@@ -1,5 +1,23 @@
 module.exports = {
   // enclosures
+  '/Product-Categories/Accessories/RAK-RPi-DIY-Gateway-Kit/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAK-RPi-DIY-Gateway-Kit/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Installation Guide',
+      path: '/Product-Categories/Accessories/RAK-RPi-DIY-Gateway-Kit/Installation-Guide/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
   '/Product-Categories/Accessories/RAKBox-B2/': [
     {
       title: 'Overview',

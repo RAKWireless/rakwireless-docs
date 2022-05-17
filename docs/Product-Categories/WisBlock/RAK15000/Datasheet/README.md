@@ -68,7 +68,7 @@ The hardware specification is categorized into five parts. It covers the chipset
 The RAK15000 WisBlock Sensor module comprises a standard 24-pin WisConnector. The IO WisConnector allows the RAK15000 module to be mounted on a WisBlock baseboard, such as the RAK5005-O. The pin order of the WisConnector and the pinout definition is shown in **Figure 3**. 
 
 :::tip 📝 NOTE:
-Only the I2C related pins, VDD, and GND are connected to this module.    
+Only the I2C related pins, 3V3_S, and GND are connected to this module.    
 :::
 
 <rk-img

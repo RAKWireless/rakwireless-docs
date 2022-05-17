@@ -104,9 +104,9 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 #### Initial Test of the RAK14003 WisBlock Module
 
-If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**
+2. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**
 
 <rk-img
   src="/assets/images/wisblock/rak14003/quickstart/rak4631-board.png"
@@ -126,19 +126,27 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK11310 as WisBlock Core"
 />
 
-2. Next, copy the following sample code into your Arduino IDE. 
+3. Next, copy the following sample code into your Arduino IDE. 
 
 ```c
+/**
+   @file RAK14003_LED_BAR_MCP32.ino
+   @author rakwireless.com
+   @brief Use MCP23017 to control LED Bar.
+		Colour：2 Red, 3 Yellow, 5 Green	
+   @version 0.2
+   @date 2022-5-11
+   @copyright Copyright (c) 2022
+**/
 #include <Wire.h>
-#include <Adafruit_MCP23X17.h>  //http://librarymanager/All#Adafruit_MCP23017
+#include "Adafruit_MCP23X17.h"  //http://librarymanager/All#Adafruit_MCP23017
 
-#define IIC_ADDRESS 0X24
+#define IIC_ADDRESS 0X24 
 
 Adafruit_MCP23X17 mcp;
   
 void setup() 
 {  
-  Serial.begin(115200);
   pinMode(WB_IO2, OUTPUT);
   digitalWrite(WB_IO2, 1);
   
@@ -151,17 +159,13 @@ void setup()
   digitalWrite(WB_IO4, 1);
   delay(10);
   
-  if (!mcp.begin_I2C(IIC_ADDRESS,&Wire)) {
-    Serial.println("Error.");
-    while (1);
-  }
+  mcp.begin_I2C(IIC_ADDRESS); // use default address 0.
   
   for(int i=0 ;i < 16 ;i++)
   {
     mcp.digitalWrite(i, HIGH);  // Turn off all LEDs. 
     mcp.pinMode(i, OUTPUT);     // Set pins as output.
   }
-
 }
 
 void loop() 
@@ -194,7 +198,7 @@ void loop()
 If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK14003 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK14003_LED_BAR_MCP32) and this sample code in Github will work on all WisBlock Core.
 :::
 
-3. Once the example code is open, install the [Adafruit MCP23017](https://github.com/adafruit/Adafruit-MCP23017-Arduino-Library) library by clicking the yellow highlighted link, as shown in **Figure 9** and **Figure 10**.
+4. Once the example code is open, install the [Adafruit MCP23017](https://github.com/adafruit/Adafruit-MCP23017-Arduino-Library) library by clicking the yellow highlighted link, as shown in **Figure 9** and **Figure 10**.
 
 <rk-img
   src="/assets/images/wisblock/rak14003/quickstart/rak14003-lib.png"
@@ -203,12 +207,16 @@ If you experience any error in compiling the example sketch, check the updated c
 />
 
 <rk-img
-  src="/assets/images/wisblock/rak14003/quickstart/rak14003-libinstall.png"
+  src="/assets/images/wisblock/rak14003/quickstart/adding_library.png"
   width="70%"
   caption="Installing the compatible library for RAK14003 Module"
 />
 
-4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
+::: tip 📝 NOTE
+The library version required must be at least **ver 2.1.0** to compile the example code successfully.
+:::
+
+5. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
 
 ::: tip 📝 NOTE
 If you're using the RAK11200 as your WisBlock Core, the RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
@@ -226,7 +234,7 @@ If you're using the RAK11200 as your WisBlock Core, the RAK11200 requires the **
   caption="Uploading the RAK14003 example code"
 />
 
-5. When you successfully uploaded the example sketch, you'll see that the LED Bar Graph module lights up in incrementing and decrementing way as shown below. Therefore, your RAK14003 is properly communicating to the WisBlock core.
+6. When you successfully uploaded the example sketch, you'll see that the LED Bar Graph module lights up in incrementing and decrementing way as shown below. Therefore, your RAK14003 is properly communicating to the WisBlock core.
 
 <rk-img
   src="/assets/images/wisblock/rak14003/quickstart/rak14003-vid.gif"

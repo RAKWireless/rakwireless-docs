@@ -1039,6 +1039,11 @@ export default {
     label: 'RAK9155 Battery Plus',
     img: '/assets/images/accessories/rak9155/overview/RAK9155.png',
     store: 'https://store.rakwireless.com/products/rak-battery-plus-rak9155?utm_source=RAK9155&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/Accessories/RAK-RPi-DIY-Gateway-Kit/': {
+    label: 'RAK RPi DIY Gateway Kit',
+    img: '/assets/images/accessories/rak-rpi-diy-gateway-kit/7.mounted-concentrator.png',
+    store: 'https://store.rakwireless.com/products/rpi-gateway-kit-for-lorawan'
   }
 
 }
