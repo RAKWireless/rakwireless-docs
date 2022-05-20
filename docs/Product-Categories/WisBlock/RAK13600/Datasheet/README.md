@@ -7,6 +7,11 @@ tags:
   - RAK13600
 prev: ../Quickstart/
 next: false
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13600/Certification/RAK13600%20_CE_CERT.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13600/Certification/RAK13600_FCC_CERT.pdf]
+  - [IC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13600/Certification/RAK13600_ISED_Certificate.pdf ]
+  - [UKCA, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13600/Certification/RAK13600_UKCA_CERT.pdf]
 ---
 
 # RAK13600 WisBlock NFC Reader Module Datasheet
@@ -110,3 +115,8 @@ Refer to **Figure 3** below for the mechanical dimensions of the RAK13600 module
   width="100%"
   caption="RAK13600 Schematic Diagram"
 />
+
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />
