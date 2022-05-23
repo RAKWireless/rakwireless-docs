@@ -248,6 +248,7 @@ function Decoder(bytes, port) {
             decoded.gps = bytes[25] & 0x0C;
             decoded.lng = (((bytes[10] << 24) | (bytes[11] << 16) | (bytes[12] << 8) | bytes[13]) * 0.000001).toFixed(4);
             decoded.lat = (((bytes[14] << 24) | (bytes[15] << 16) | (bytes[16] << 8) | bytes[17]) * 0.000001).toFixed(4);
+            decoded.location = decoded.lat + "," + decoded.lng;
             decoded.acc = bytes[18];
             decoded.gps_start = bytes[19];
             break;
