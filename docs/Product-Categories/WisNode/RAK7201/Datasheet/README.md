@@ -154,12 +154,12 @@ Power consumption:
 
 The RAK7201 comes with a 350 mAh rechargeable LiPo battery inside. In need of replacement, adhere to the specification.
 
-| Parameter               | Value                                   | Unit |
-| ----------------------- | --------------------------------------- | ---- |
-| Nominal Battery Voltage | 3.7                                     | V    |
-| Nominal capacity        | 350                                     | mAh  |
-| Temperature range       | -20º~60º (discharge), 0º-45º (charging) | C    |
-| Battery dimensions      | 5.7x21x37.5                             | mm   |
+| Parameter               | Value                                    | Unit |
+| ----------------------- | ---------------------------------------- | ---- |
+| Nominal Battery Voltage | 3.7                                      | V    |
+| Nominal capacity        | 350                                      | mAh  |
+| Temperature range       | -20º~60º (discharge), 15º-45º (charging) | C    |
+| Battery dimensions      | 5.7x21x37.5                              | mm   |
 
 ### Software
 
