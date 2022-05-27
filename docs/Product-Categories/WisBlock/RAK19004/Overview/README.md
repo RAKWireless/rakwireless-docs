@@ -42,7 +42,7 @@ RAK19004 is a WisBlock Power module that can harness and convert green power suc
 
 ## Prerequisites
 
-To use a **RAK19004**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK19004** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK19004**, you need at least a **WisBlock Base**. RAK19004 doesn't have a WisConnector like the other WisBlock modules: it is an external module with four mounting holes, so you can place it in the position that you want. Furthermore, you need a **WisBlock Core** module.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.    
