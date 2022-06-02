@@ -58,7 +58,7 @@ Before powering the RAK5205, you should install the LoRa and GPS antenna first. 
   caption="RAK5205 GPS and LoRa antenna"
 />
 
-- Connect your RAK5205 WisTrio LPWAN Tracker in your Windows PC using the provided micro-usb cable.
+- Connect your RAK5205 WisTrio LPWAN Tracker to your Windows PC using the provided micro-usb cable.
 - Open the RAK Serial Port Tool.
 
 <rk-img
@@ -78,7 +78,7 @@ Before powering the RAK5205, you should install the LoRa and GPS antenna first. 
 - Look for ports (COM & LPT) and find the name **Silicon Labs CP210X** USB to UART Bridge and take note of the COM Port Number.
 
 ::: tip 📝 NOTE
-If you can't find any port with the name Silicon Labs CP210X, make sure you have installed the **CP210X Drivers** in your Windows PC.
+If you can't find any port with the name Silicon Labs CP210X, make sure you have installed the **CP210X Drivers** on your Windows PC.
 :::
 
 - Choose the correct port number and baud rate from the device manager, then click **Open**.
@@ -123,7 +123,7 @@ In this section, you will be connecting the RAK5205 WisTrio LPWAN Tracker to The
   caption="Adding an Application"
 />
 
-Here are the things that you should take note in adding an application:
+Here are the things that you should take note of in adding an application:
 
 1. **Application ID** - this will be the unique id of your application in the Network. Note that characters should be in lower case, and no spaces are allowed.
 2. **Description** - this is a short and concise human readable description of your application.
@@ -156,7 +156,7 @@ Here are the things that you should take note in adding an application:
   caption="Add your Device"
 />
 
-Here are the things that you should take note in registering your device:
+Here are the things that you should take note of in registering your device:
 
 1. **Device ID** - this is the unique identifier for your RAK5205 WisTrio LPWAN Tracker in your application. You need to enter this manually.
 2. **Device EUI** - Device EUI of RAK5205 can be found on the sticker label of the RAK811 module. This will ensure you have a unique identification across LoRaWAN networks. You can still change it later, if you want.
@@ -228,7 +228,7 @@ at+set_config=lora:app_key:XXXX
   caption="Setting up the RAK5205 OTAA parameters"
 />
 
-You should end up with a window as the one in Figure 14 with a series of OK replies.
+You should end up with a window like the one in Figure 14 with a series of OK replies.
 
 3. Finally, execute the join command. If you join successfully, you will see that the device will start to search for satellite signal.
 
@@ -242,7 +242,7 @@ at+join
   caption="Join command"
 />
 
-4. After the successful join, the device will automatically send uplinks that contains the sensor readings. This will take a while so you have to wait. If you do not see any transmissions, you can set the [time interval via AT command](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#configuration-of-gps-and-sensor-data). Also, if you are working indoor on your first setup, you will not see the GPS coordinates on the payload. The GPS needs to fix first.
+4. After the successful join, the device will automatically send uplinks that contains the sensor readings. This will take a while so you have to wait. If you do not see any transmissions, you can set the [time interval via AT command](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#configuration-of-gps-and-sensor-data). Also, if you are working indoors on your first setup, you will not see the GPS coordinates on the payload. The GPS needs to fix first.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-otaa-mode/v14-otaa-payload.png"
@@ -330,7 +330,7 @@ at+join
   caption="Join command"
 />
 
-7. After the successful join, the device will automatically send uplinks that contains the sensor readings. This will take a while so you have to wait. If you do not see any transmissions, you can set the [time interval via AT command](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#configuration-of-gps-and-sensor-data). Also, if you are working indoor on your first setup, you will not see the GPS coordinates on the payload. The GPS needs to be fixed first.
+7. After the successful join, the device will automatically send uplinks that contains the sensor readings. This will take a while so you have to wait. If you do not see any transmissions, you can set the [time interval via AT command](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#configuration-of-gps-and-sensor-data). Also, if you are working indoors on your first setup, you will not see the GPS coordinates on the payload. The GPS needs to be fixed first.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/ttn-abp-mode/v14-abp-payload.png"
@@ -358,7 +358,7 @@ In this section, it is assumed that you have already connected your gateway to C
 
 1. Open the web page of the ChirpStack which you want to connect with and login.
 
-2. By default, there is already one or more items in this page. You can either use it or create a new item, but for this, create a new item by clicking the “**CREATE**” button.
+2. By default, there are already one or more items on this page. You can either use it or create a new item, but for this, create a new item by clicking the “**CREATE**” button.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/connecting-to-chirpstack/yrgeavaswetbj2xf7sqq.png"
@@ -407,7 +407,7 @@ In this section, it is assumed that you have already connected your gateway to C
 ::: tip 📝 NOTE
 - If you want to join in OTAA mode, select “**device_profile_otaa**” in the “Device-profile” item. 
 - If you want to join in ABP mode and CN470 frequency, select “**DeviceProfile_ABP_CN470**” in the “Device-Profile” item. 
-- If you want to join in ABP mode and other frequencies except AS923 and CN470, select “**device_profile_abp**” in the “Device-profile” item.
+- If you want to join in ABP mode and other frequencies except for AS923 and CN470, select “**device_profile_abp**” in the “Device-profile” item.
 :::
 
 #### OTAA Mode
@@ -428,7 +428,7 @@ In this section, it is assumed that you have already connected your gateway to C
   caption="Application Key Generation"
 />
 
-- The generated Application Key (App Key) highlighted in Figure 32.
+- The generated Application Key (App Key) is highlighted in Figure 32.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-otaa-mode/xrmpjlafrry3ag479lnl.png"
@@ -442,7 +442,7 @@ The Application EUI which is set into RAK5205 via AT Command as “**app_eui**�
 
 3. Click "**SET DEVICE-KEYS**” button. Now, you’ve completed the configuration on ChirpStack.
 
-4. You should now configure the device via AT commands. Set mode to OTAA, device class to Class A, and your LoRaWAN region to your correct frequency band, with the following set of commands below. Remember to replace XXX with the your LoRaWAN region. Refer to RAK5205 [Datasheet](/Product-Categories/WisTrio/RAK7205-5205/Datasheet/##rf-characteristics) for your frequency plan.
+4. You should now configure the device via AT commands. Set mode to OTAA, device class to Class A, and your LoRaWAN region to your correct frequency band, with the following set of commands below. Remember to replace XXX with your LoRaWAN region. Refer to RAK5205 [Datasheet](/Product-Categories/WisTrio/RAK7205-5205/Datasheet/##rf-characteristics) for your frequency plan.
 
 ```
 at+set_config=lora:join_mode:0
@@ -481,7 +481,7 @@ at+set_config=lora:app_key:XXXX
   caption="Setting up the RAK5205 OTAA parameters"
 />
 
-You should end up with a window as the one in Figure 33 with a series of OK replies.
+You should end up with a window like the one in Figure 33 with a series of OK replies.
 
 6. Finally, execute the join command.
 
@@ -495,7 +495,7 @@ at+join
   caption="Join command"
 />
 
-7. You can view the "**JoinRequest**" and "**JoinAccept**" on ChirpStack console. The sensor data will be automatically sent in a programmed interval after a successful join. If you do not see any transmissions, you can set the [time interval via AT command](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#configuration-of-gps-and-sensor-data). Also, if you are working indoor on your first setup, you will not see the GPS coordinates on the payload. The GPS needs to be fixed first.
+7. You can view the "**JoinRequest**" and "**JoinAccept**" on ChirpStack console. The sensor data will be automatically sent in a programmed interval after a successful join. If you do not see any transmissions, you can set the [time interval via AT command](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#configuration-of-gps-and-sensor-data). Also, if you are working indoors on your first setup, you will not see the GPS coordinates on the payload. The GPS needs to be fixed first.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/chirpstack-otaa-mode/pvt7etzwzprp8nqebfqi.png"
@@ -559,7 +559,7 @@ at+set_config=lora:nwks_key:XXXX
 at+set_config=lora:apps_key:XXXX
 ```
 
-5. Finally, execute the join command. After a successful join, the sensor data will be automatically sent in a programmed interval. If you do not see any transmissions, you can set the [time interval via AT command](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#configuration-of-gps-and-sensor-data). Also, if you are working indoor on your first setup, you will not see the GPS coordinates on the payload. The GPS needs to be fixed first.
+5. Finally, execute the join command. After a successful join, the sensor data will be automatically sent in a programmed interval. If you do not see any transmissions, you can set the [time interval via AT command](/Product-Categories/WisTrio/RAK7205-5205/Quickstart/#configuration-of-gps-and-sensor-data). Also, if you are working indoors on your first setup, you will not see the GPS coordinates on the payload. The GPS needs to be fixed first.
 
 ```
 at+join
@@ -622,7 +622,7 @@ Payload: **01 88 05 37 97 10 9D 59 00 DC 14 08 02 01 7A 07 68 58 06 73 25 6D 02 
   caption="Sample Payload"
 />
 
-Now, analyze each data which is in Hexadecimal Format. You will be using the data mentioned above as an example and convert the Hexadecimal Data into Decimal Data using a [converter](https://www.rapidtables.com/convert/number/hex-to-decimal.html?x=FF) to understand it.
+Now, analyze each piece of data that is in Hexadecimal Format You will be using the data mentioned above as an example and convert the Hexadecimal Data into Decimal Data using a [converter](https://www.rapidtables.com/convert/number/hex-to-decimal.html?x=FF) to understand it.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/decoding-sensor-data/lwg2elvxz58fwgheftzw.jpg"
@@ -706,7 +706,7 @@ Example Data: **03 71 FF FF FF DD FC 2E**
     - [**4-digit coordinates**](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder/blob/master/RUISensorDataDecoder_for_TTN.js)
     - [**6-digit coordinates**](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder/blob/master/RUISensorDataDecoder_GPS6digitPrecison_for_TTN.js)
 
-2. From your TTN console, go to application page and click the "**Payload Formats**" tab as shown in Figure 42.
+2. From your TTN console, go to the application page and click the "**Payload Formats**" tab as shown in Figure 42.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/decoding-sensor-data/i4xmo8ndpvbmx8i6q8tj.jpg"
@@ -1415,7 +1415,7 @@ The assembly includes the following
   caption="Fixing of RAK5205 in Enclosure"
 />
 
-5. Attach the LoRa and GPS antenna at the bottom shell. The LoRa antenna is glued above the M12 Dome plug while the GPS is on the shorter side, as shown in Figure 107.
+5. Attach the LoRa and GPS antenna to the bottom shell. The LoRa antenna is glued above the M12 Dome plug while the GPS is on the shorter side, as shown in Figure 107.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/assembly-guide/roaftyivpwpzljam2c9x.jpg"

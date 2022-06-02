@@ -57,13 +57,13 @@ This device released by RAKwireless is already pre-loaded with its latest firmwa
 In order for you to interface with the RAK815 WisTrio LPWAN Tracker with your Windows Machine, you need to download the [**RAK Serial Port Tool**](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
 
 :::warning ⚠️ WARNING
-Before powering the RAK815 WisTrio LPWAN Tracker, you should install the LoRa antenna first . Not doing so might damage the board
+Before powering the RAK815 WisTrio LPWAN Tracker, you should install the LoRa® antenna first . Not doing so might damage the board
 :::
 
 1. Using a standard **Micro - USB Cable**, connect your RAK815 WisTrio LPWAN Tracker to your computer.
 
 :::tip 📝 NOTE
-If this is your first time to connect your RAK815 WisTrio LPWAN Tracker to your computer, it should automatically download the USB - Serial Port Chip CP2102, in order for them to communicate properly. Make sure to have an internet access if you want such automatic installation to be successful. If such process fails, re-plug your Micro - USB cord and proceed to the next step.
+If this is your first time to connecting your RAK815 WisTrio LPWAN Tracker to your computer, it should automatically download the USB - Serial Port Chip CP2102, for them to communicate properly. Make sure to have internet access if you want such automatic installation to be successful. If such process fails, re-plug your Micro - USB cord and proceed to the next step.
 :::
 
 2. Go to your **Device Manager** by pressing : **Windows + R** and type `devmgmt.msc` or **search in Start Menu** or right click "**My Computer**" or "**This PC**" and click **Manage**. Look for Other Devices.
@@ -74,7 +74,7 @@ If this is your first time to connect your RAK815 WisTrio LPWAN Tracker to your 
   caption="Missing Driver for the RAK815 WisTrio LPWAN Tracker"
 />
 
-3. Under "**Other devices**" drop down list, an unknown **USB2.0-Serial** driver must appear. Right click into it and choose "**Search automaticaLly for updated driver software**". Again, before doing so, make sure to have an internet access or it will fail.
+3. Under "**Other devices**" drop down list, an unknown **USB2.0-Serial** driver must appear. Right click on it and choose "**Search automatically for updated driver software**". Again, before doing so, make sure to have internet access or it will fail.
 
 <rk-img
   src="/assets/images/wistrio/rak815/quickstart/3interfacing/automatic-install.png"
@@ -91,7 +91,7 @@ If this is your first time to connect your RAK815 WisTrio LPWAN Tracker to your 
 />
 
 :::tip 📝 NOTE
-In case the previous measures mentioned beforehand does not install the needed driver, go to the [USB - Serial Port Chip CP2102](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) website to manually download and install it.
+In case the previous measures mentioned beforehand do not install the needed driver, go to the [USB - Serial Port Chip CP2102](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) website to manually download and install it.
 :::
 
 Congratulations! :tada: You have just successfully interfaced your RAK815 WisTrio LPWAN Tracker with your computer!
@@ -146,7 +146,7 @@ Along with the following parameters: **Device EUI, Application EUI, App Key for 
 
 #### Modify LoRaWAN Region
 
-The open source code is based on LoRaWAN 1.0.2 modified from, so the supported regions have: **EU868, US915, AS923, AU915, IN865, KR920**. If you want to modify the region, you can modify the macro definition.
+The open source code is based on LoRaWAN 1.0.2 modified, so the supported regions have: **EU868, US915, AS923, AU915, IN865, KR920**. If you want to modify the region, you can modify the macro definition.
 
 <rk-img
   src="/assets/images/wistrio/rak815/quickstart/4configuring-the-lorawan/region-iar.jpg"
@@ -168,7 +168,7 @@ In this section, you will learn the three different open source application demo
 
 #### Log Information
 
-After you finish downloading the application, you can view the Log Information through the serial port defined by the firmware. But first, you need to connect **Pin3 >> Pin5, Pin4 >> Pin6** on the UART switch Interface. Refer to the [RAK815 WisTrio LPWAN Tracker Datasheet](/Product-Categories/WisTrio/RAK815/Datasheet/) for proper reference.
+After you finish downloading the application, you can view the Log Information through the serial port defined by the firmware. But first, you need to connect **Pin3 >> Pin5, Pin4 >> Pin6** on the UART switch Interface. Refer to the [RAK815 WisTrio LPWAN Tracker Datasheet](/Product-Categories/WisTrio/RAK815/Datasheet/) for the proper reference.
 
 :::tip 📝 NOTE
 The serial program used in this demonstration is CommUart Assistant, although you may use other serial terminals.
@@ -233,7 +233,7 @@ send data.
 
 ##### Parameters using LoRaWAN Demo
 
-The LoRaWAN web server provider selected use for this case is The Things Network (TTN). To know more about setting up your LoRa Gateway device, refer to this **[document](https://www.thethingsnetwork.org/labs/story/rak831-lora-gateway-from-package-to-online).**
+The LoRaWAN web server provider selected to use for this case is The Things Network (TTN). To know more about setting up your LoRa Gateway device, refer to this **[document](https://www.thethingsnetwork.org/labs/story/rak831-lora-gateway-from-package-to-online).**
 
 * After getting OTAA or ABP parameters of device from TTN, you can write data into the flash of RAK815 by transmitting data
 through Bluetooth. The format of the data you are sending must be as shown below:
@@ -277,7 +277,7 @@ seconds.
   caption="Device Information Status"
 />
 
-* Similarly with the LoRaWAN Demo, you can also send message through the nRF Connect app you installed. The message can be viewed to our serial terminal as shown in the image below.
+* Similarly with the LoRaWAN Demo, you can also send a message through the nRF Connect app you installed. The message can be viewed on our serial terminal as shown in the image below.
 
 <rk-img
   src="/assets/images/wistrio/rak815/quickstart/5application-demonstration/message-in-serial-port2.jpg"
@@ -306,7 +306,7 @@ for each sensor on the LCD display.
   caption="LoRaWAN Parameters Configuration Status"
 />
 
-* After successfully configuring the parameters, check if your gateway has been set in advance. Reset the device and a message will be sent to your terminal that the device has successfully joined in OTAA. 
+* After successfully configuring the parameters, check if your gateway has been set in advance. Reset the device and a message will be sent to your terminal that the device has successfully joined OTAA. 
 
 <rk-img
   src="/assets/images/wistrio/rak815/quickstart/5application-demonstration/otaa-activation.jpg"
@@ -342,7 +342,7 @@ the Bluetooth BLE device information you scanned to the LoRaWAN server.
 <rk-img
   src="/assets/images/wistrio/rak815/quickstart/5application-demonstration/scanned-ble-ttn-stat.jpg"
   width="75%"
-  caption="Scanned BLE Device Information shown in TTN"
+  caption="Scanned BLE Device Information is shown in TTN"
 />
 
 * In addition, if you connect the LCD to the device LCD expansion interface, you can
@@ -360,7 +360,7 @@ view the real-time status of the device on the LCD
 
 #### Open Source Directory 
 
-The RAK815 WisTrio LPWAN Tracker is an open source hardware where users can get all the information about the product. It includes schematic diagrams, program codes and other references which could be helpful in building your RAK815 projects. 
+The RAK815 WisTrio LPWAN Tracker is an open source hardware where users can get all the information about the product. It includes schematic diagrams, program codes and other references which could help build your RAK815 projects. 
 
 This open source project is based on the official code LoRaWAN 1.0.2 and Nordic
 nRF5 SDK 14.0.0, modified to support IAR8.11 and Keil5 Compiler. 
@@ -447,7 +447,7 @@ To enable the Bluetooth functionality of our device, you must first write the Bl
 
 #### Downloading the Application Code
 
-There are three ways to download your application code into your device: **nRFgo Studio Tool**, **Keil Compiler** and **IAR compiler**.
+There are three ways to download your application code on your device: **nRFgo Studio Tool**, **Keil Compiler** and **IAR compiler**.
 
 ##### Using nRFgo Studio Tool
 
@@ -536,7 +536,7 @@ file in Keil's output directory. This file can also be used by nRFgo Stdio Tool.
 
 ##### Using IAR Compiler
 
-The writing of programs using IAR Compiler has the same steps with the Keil Compiler with different tools but the same functions.
+The writing of programs using IAR Compiler has the same steps as the Keil Compiler with different tools but the same functions.
 
 * First, download and Install the latest version of IAR Compiler through the [IAR Website](https://www.iar.com/).
 * Open the IAR project and click "Make" menu. 
@@ -573,7 +573,7 @@ Congratulations! :tada: You now have completed your firmware setup. Up next will
 
 ### Upgrading the Firmware
 
-Device Firmware Upgrade or DFU is a tool in upgrading your firmware. It is part of the [GitHub Open Source](https://github.com/RAKWireless/RAK813-BreakBoard) project you downloaded for upgrading the firmware of your IAR and Keil Compiler. 
+Device Firmware Upgrade or DFU is a tool for upgrading your firmware. It is part of the [GitHub Open Source](https://github.com/RAKWireless/RAK813-BreakBoard) project you downloaded for upgrading the firmware of your IAR and Keil Compiler. 
 
 <rk-img
   src="/assets/images/wistrio/rak815/quickstart/7upgrading-the-firmware/dfu-file-location.jpg"
@@ -603,7 +603,7 @@ For details on how to program the Bluetooth protocol stack and application firmw
   caption="Programming Bootloader Firmware"
 />
 
-* After all firmware are written, the device will automatically restart. At this time, use your
+* After all, firmware is written, the device will automatically restart. At this time, use your
 mobile phone Bluetooth scan, you will see a device named "**RAK813_DFU**".
 
 <rk-img
@@ -612,7 +612,7 @@ mobile phone Bluetooth scan, you will see a device named "**RAK813_DFU**".
   caption="RAK813 DFU Bluetooth Radio"
 />
 
-* Use the nRF official phone app nRF Connect to connect to the device's Bluetooth. 
+* Use the nRF official phone app nRF connect to the device's Bluetooth. 
 
 * To upgrade the firmware, you need to import the upgraded firmware to your mobile phone. The upgrade file, a zip file, is accessible from the downloaded open source code by following this directory: **RAK813-BreakBoard-master**>> **Doc**>> **Hex**>> **rak815_app_package.zip**. Copy this sample upgrade file to your mobile phone. 
 

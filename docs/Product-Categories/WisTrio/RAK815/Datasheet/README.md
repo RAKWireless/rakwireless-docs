@@ -71,7 +71,7 @@ Shown below is the System Diagram of RAK815 Breakout Board.
 
 ### Hardware
 
-The hardware specification is categorized into three parts. It discusses the interfacing, pinouts, and its corresponding functions and diagrams of the board. It also covers the LoRaWAN frequency parameters necessary for the device setup.
+The hardware specification is categorized into three parts. It discusses the interfacing, pinouts, and their corresponding functions and diagrams of the board. It also covers the LoRaWAN frequency parameters necessary for the device setup.
 
 #### Pin Definition
 
@@ -93,13 +93,13 @@ The pin numbers in the succeeding tables are sorted from top to bottom as shown 
   caption="RAK815 SWD Debug Interface"
 />
 
-| Pin |    Name    | Description                                            |
-| :-: | :--------: | ------------------------------------------------------ |
-|  1  |   VCC3.3   | 3.3V Power Supply                                      |
-|  2  |   SWDIO    | SWD Interface data pin for NRF52832                    |
-|  3  |   SWDCLK   | SWD Interface clock pin for NRF52832                   |
-|  4  | P0.21_NRST | P0.21 for NRF52832, can be used as Reset pin (Button3) |
-|  5  |    GND     | Ground                                                 |
+| Pin |    Name    | Description                                              |
+| :-: | :--------: | -------------------------------------------------------- |
+|  1  |   VCC3.3   | 3.3V Power Supply                                        |
+|  2  |   SWDIO    | SWD Interface data pin for NRF52832                      |
+|  3  |   SWDCLK   | SWD Interface clock pin for NRF52832                     |
+|  4  | P0.21_NRST | P0.21 for NRF52832, can be used as a Reset pin (Button3) |
+|  5  |    GND     | Ground                                                   |
 
 ##### UART Switch Interface
 

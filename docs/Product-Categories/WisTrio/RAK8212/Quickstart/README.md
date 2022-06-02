@@ -76,7 +76,7 @@ You still have to connect the battery to the RAK8212 to power the board.
   caption="J-Link RTT Viewer Connection Parameters"
 />
 
-4. **Connect** to your RAK8212 WisTrio iTracker Pro by navigating through `File>Connect` in the Main Menu. Alternatively, you could just press "**F2**" to do the same process.
+4. **Connect** to your RAK8212 WisTrio iTracker Pro by navigating through **File>Connect** in the Main Menu. Alternatively, you could just press "**F2**" to do the same process.
 
 <rk-img
   src="/assets/images/wistrio/rak8212/quickstart/checking-device-logs/iqb42ghnf0wancwytkfu.png"
@@ -249,7 +249,7 @@ following page as shown in **Figure 16** and in the table provided.
 />
 
 ::: tip 📝 NOTE
-If connection is unsuccessful, please recheck the connections between the RAK8212 WisTrio iTracker Pro, JTAG, and the connecting wires.
+If the connection is unsuccessful, please recheck the connections between the RAK8212 WisTrio iTracker Pro, JTAG, and the connecting wires.
 :::
 
 1. Open the download firmware of the RAK8212 WisTrio iTracker Pro by dragging it into the window as shown in the image below:

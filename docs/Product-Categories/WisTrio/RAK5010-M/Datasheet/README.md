@@ -61,7 +61,7 @@ Figure 1 shows the top view and the interfaces of the RAK5010-M NB-IoT tracker b
   caption="Top View of the Board with Interfaces"
 />
 
-Figure 2 shows the bottom of the board, where Figure 3, the dimensions of the board, and Figure 4 shows the header pin spacing.
+Figure 2 shows the bottom of the board, in Figure 3, the dimensions are shown, and Figure 4 shows the header pin spacing.
 
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/bottom-view-of-the-board-with-interfaces.jpg"
