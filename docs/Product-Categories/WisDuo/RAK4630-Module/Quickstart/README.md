@@ -30,6 +30,10 @@ Before going through the steps in the installation guide of the RAK4630 WisDuo L
 #### Software
 
 - Download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
+:::warning ⚠️ WARNING    
+_**If you are using Windows 10**_.    
+Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Please install the original Arduino IDE from the Arduino official website! The Arduino app from the Microsoft App Store has problems to use third party Board Support Packages.
+:::
 - Add [RAK4630 as a supported board in Arduino IDE](/Product-Categories/wisduo/rak4630-module/Quickstart/#-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with this JSON URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json`. After that, you can then add **RAKwireless RUI nRF Boards** via Arduino board manager.
 - [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
 

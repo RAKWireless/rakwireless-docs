@@ -35,9 +35,23 @@ You can choose the Arduino IDE or Platform IO to code the RAK11310 WisBlock Core
 <b>Programming RAK11310 via Arduino IDE:</b>
 
 - Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software).
+
+:::warning ⚠️ WARNING    
+_**If you are using Windows 10**_.    
+Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, install the original Arduino IDE from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
+:::
+
+:::tip 📝 NOTE
+For Windows users:
+
+After the installation of Arduino IDE, the USB driver must be manually installed. The `post_install.bat` file must be executed with admin rights in Windows. The location of the `.bat` file is in the **Arduino15** folder - `C:\Users\username\AppData\Local\Arduino15\packages\rakwireless\hardware\mbed_rp2040\0.0.6\post_install.bat`. You need to change the `username` in this directory to the actual username. If the USB driver is not installed, your upload of Arduino code to RAK11310 might fail. 
+:::
+
 - To add the WisBlock Core boards to your Arduino IDE, you need to install the RAKwireless Arduino BSP. You can follow this complete guide on [adding the BSP in Arduino IDE](https://docs.rakwireless.com/Knowledge-Hub/Learn/Installation-of-Board-Support-Package-in-Arduino-IDE/). You can also have a look at the RAKwireless Arduino BSP [github repository](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
 In the Arduino IDE, once you installed the BSP, some examples for RAK11310 will be automatically included in the list of examples when you select WisBlock Core RAK11310 Board in the Boards Manager.
+
+
 
 <b>Programming RAK11310 via Platform IO:</b>
 

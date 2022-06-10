@@ -57,8 +57,8 @@ The frame structure of Binary mode protocol is in the following format:
 **Flag**
 - 8-bit flag, which contains frame information such as whether this frame is a transmit request frame or a response frame.
     - Bit 0
-    - **1** - Indicates this is a Transmit Request flag
-    - **0** - Indicates this is a Response flag
+    - **0** - Indicates this is a Transmit Request flag
+    - **1** - Indicates this is a Response flag
     - Bit 1~7 (Reserved for future use)
 
 

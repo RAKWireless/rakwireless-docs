@@ -43,7 +43,13 @@ You can choose Arduino IDE or Platform IO in coding the RAK4631 WisBlock Core.
 
 <b>Programming RAK4631 via Arduino IDE:</b>
 
-- Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software).
+- Download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
+
+:::warning ⚠️ WARNING    
+_**If you are using Windows 10**_.    
+Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, install the original Arduino IDE from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
+:::
+
 - To add the WisBlock Core boards on your Arduino board, you need to install the RAKwireless Arduino BSP. You can follow this complete guide on [adding the BSP in Arduino IDE](https://docs.rakwireless.com/Knowledge-Hub/Learn/Installation-of-Board-Support-Package-in-Arduino-IDE/). You can also have a look at the RAKwireless Arduino BSP [GitHub repository](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
 In Arduino IDE, once you installed the BSP, some examples for RAK4631 will be automatically included on the list of examples when you select WisBlock Core RAK4631 Board in the Board Manager. 

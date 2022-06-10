@@ -3537,8 +3537,8 @@ This command is used to access the LoRa® configuration test.
 | Command            | Input   parameter                                                                                                                            | Return   value                       | Return   code    |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ---------------- |
 | `AT+TCONF?`        | -                                                                                                                                            | `AT+TCONF`: configure LoRa® RF test  | OK               |
-| `AT+TCONF=?`       | -                                                                                                                                            | 868000000,14,0,7,1,0,0,1,4,25000,0,0 | OK               |
-| `AT+TCONF=<Input>` | `<Freq>,<Power>, <Bandwidth>,<LoraSf_datarate>,<CodingRate>,<Lna>,<Modulation>,<PayloadLen>,<PayloadLen>,<FskdDeviation>,<Note>,<BTproduct>` | -                                    | OKAT_PARAM_ERROR |
+| `AT+TCONF=?`       | -                                                                                                                                            | 868000000:14:0:7:1:0:0:1:4:25000:0:0 | OK               |
+| `AT+TCONF=<Input>` | `<Freq>:<Power>:<Bandwidth>:<LoraSf_datarate>:<CodingRate>:<Lna>:<Modulation>:<PayloadLen>:<PayloadLen>:<FskdDeviation>:<Note>:<BTproduct>`| -                                    | OKAT_PARAM_ERROR |
 
 :::tip 📝 NOTE
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
@@ -3550,7 +3550,7 @@ This command is used to access the LoRa® configuration test.
 ```
 /* Example1: Set LoRa RF test configuration */
 
-AT+TCONF=868000000,14,0,7,1,0,0,1,4,25000,0,0
+AT+TCONF=868000000:14:0:7:1:0:0:1:4:25000:0:0
 OK
 
 ```
@@ -3567,8 +3567,8 @@ Starts RF TX hopping test from Start to Fstop, with Fdelta steps.
 | Command          | Input Parameter                        | Return Value                                                                 | Return Code            |
 | ---------------- | -------------------------------------- | ---------------------------------------------------------------------------- | ---------------------- |
 | `AT+TTH?`        | -                                      | `AT+TTH`: start RF Tx hopping test from Fstart to Fstop, with Fdelta steps.  | OK                     |
-| `AT+TTH=?`       | -                                      | 868000000,868500000,100000,6                                                 | OK                     |
-| `AT+TTH=<Input>` | `<Fstart>,<Fstop>,<FDelta>,<PacketNb>` | -                                                                            | OK <br> AT_PARAM_ERROR |
+| `AT+TTH=?`       | -                                      | 868000000:868500000:100000:6                                                 | OK                     |
+| `AT+TTH=<Input>` | `<Fstart>:<Fstop>:<FDelta>:<PacketNb>` | -                                                                            | OK <br> AT_PARAM_ERROR |
 
 :::tip 📝 NOTE
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
@@ -3580,7 +3580,7 @@ Starts RF TX hopping test from Start to Fstop, with Fdelta steps.
 ```
 /* Example: set TX hopping test from 868 to 868,5 MHz with 6 steps of 100 kHz */ # 
 
-AT+TTH=868000000,868500000,100000,6
+AT+TTH=868000000:868500000:100000:6
 OK
 
 Tx Hop at 868000000 Hz

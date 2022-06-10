@@ -9,6 +9,7 @@ var wistrio = require('./wistrio')
 var wisblock = require('./wisblock')
 var accessories = require('./accessories')
 var softwareapislibraries = require('./software-apis-libraries')
+var softwaretools = require('./software-tools')
 
 module.exports = {
   ...wisduino,
@@ -21,5 +22,6 @@ module.exports = {
   ...wistrio,
   ...wisblock,
   ...accessories,
-  ...softwareapislibraries
+  ...softwareapislibraries,
+  ...softwaretools
 }

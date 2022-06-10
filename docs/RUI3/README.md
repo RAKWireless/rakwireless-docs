@@ -8,15 +8,15 @@ The RAKwireless Unified Interface V3 (RUI3) is designed to help IoT developers m
 
 RUI3 is compatible to the following RAK LPWAN modules:
 
-| RAK Devices                                                                      | 
-| -------------------------------------------------------------------------------- | 
-| [RAK4630](/Product-Categories/WisDuo/RAK4630-Module/Overview/)                   | 
-| [RAK4631-R](/Product-Categories/WisBlock/RAK4631-R/Overview/)                    | 
-| [RAK3172](/Product-Categories/WisDuo/RAK3172-Module/Overview/)                   | 
-| [RAK3272S](/Product-Categories/WisBlock/RAK3272S-Breakout-Board/Overview/)       | 
-| [RAK3372 / RAK3172 Evaluation Board](/Product-Categories/WisBlock/RAK3172-Evaluation-Board/Overview/)       | 
-| [RAK3172-SiP](/Product-Categories/WisDuo/RAK3172-SiP/Overview/)                  | 
-| [RAK3272-SiP](/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/Overview/)   | 
+| RAK Devices                                                                                           |
+| ----------------------------------------------------------------------------------------------------- |
+| [RAK4630](/Product-Categories/WisDuo/RAK4630-Module/Overview/)                                        |
+| [RAK4631-R](/Product-Categories/WisBlock/RAK4631-R/Overview/)                                         |
+| [RAK3172](/Product-Categories/WisDuo/RAK3172-Module/Overview/)                                        |
+| [RAK3272S](/Product-Categories/WisBlock/RAK3272S-Breakout-Board/Overview/)                            |
+| [RAK3372 / RAK3172 Evaluation Board](/Product-Categories/WisBlock/RAK3172-Evaluation-Board/Overview/) |
+| [RAK3172-SiP](/Product-Categories/WisDuo/RAK3172-SiP/Overview/)                                       |
+| [RAK3272-SiP](/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/Overview/)                        |
 
 The interfaces of RUI3 to the RAK modules are via UART, USB, BLE, and NFC. The physical and wireless RUI3 interfaces are abstracted to behave as Serial Port where three [RUI3 Serial Operating Modes](/RUI3/Serial-Operating-Modes/#rui3-serial-operating-modes) can be configured by the user. You can check on the modules above to see the quick start guide and datasheet of the specific module.
 
@@ -27,10 +27,10 @@ RAKwireless Unified Interface V3 (RUI3) features are utilized by using its RUI3 
 The RUI3 API is well explained with examples codes in this documentation.
 
 - [Arduino API](/RUI3/Arduino-API/)
-- [System](/RUI3/Arduino-API/)
-- [LoRaWAN](/RUI3/Arduino-API/)
-- [BLE](/RUI3/Arduino-API/)
-- [Binary Mode](/RUI3/Arduino-API/)
+- [System](/RUI3/System/)
+- [LoRaWAN](/RUI3/LoRaWAN/)
+- [BLE](/RUI3/BLE/)
+- [Binary Mode](/RUI3/Binary-Mode/)
 
 For you to compile and upload to the RAK module the RUI3 codes, you need to have an Arduino IDE or Visual Studio IDE in your PC or laptop. The guide on doing this is on the quick start guide of the specific module you are using which is mentioned in the [Hardware Compatibility](/RUI3/#hardware-compatibility) section of this document.
 

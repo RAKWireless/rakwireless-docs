@@ -30,6 +30,12 @@ Before going through each step in the installation guide of the RAK4631-R WisBlo
 ##### Arduino IDE
 
 - Download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
+
+:::warning ⚠️ WARNING    
+_**If you are using Windows 10**_.    
+Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, install the original Arduino IDE from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
+:::
+
 - Add [RAK4631-R as a supported board in Arduino IDE](/Product-Categories/WisBlock/RAK4631-R/Quickstart/#rak4631-r-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with this JSON URL:<br> `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json`.
 - After that, you can then add **RAKwireless RUI nRF Boards** via Arduino board manager.
 

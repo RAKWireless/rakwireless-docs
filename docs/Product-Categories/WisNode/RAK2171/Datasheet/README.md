@@ -1,15 +1,19 @@
 ---
 rak_desc: Provides comprehensive information about your RAK2171 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisnode/rak2171/overview/rak2171.png
-prev: ../Quickstart/
+prev: ../Helium-Datacake/
 next: false
 tags:
   - datasheet
   - wisnode
   - RAK2171
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_CE_DOC.pdf]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_CE_Certification.zip]
   - [UKCA, https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_UK_certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_FCC_Certification.pdf]
+  - [ISED, https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_ISED_Certification.pdf]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_REACH_report.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_ROHS_report.pdf]
 ---
 
 # RAK2171 WisNode TrackIt Datasheet

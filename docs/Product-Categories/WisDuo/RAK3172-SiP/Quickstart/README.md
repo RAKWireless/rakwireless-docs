@@ -13,14 +13,8 @@ tags:
 
 This guide covers the following topics:
 
-- [TheThingsNetwork Guide](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connecting-to-the-things-network-ttn) - How to login, register new accounts and create new applications on TTN.
-- [RAK3172-SiP TTN OTAA Guide](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#ttn-otaa-device-registration) - How to add OTAA device on TTN and what AT commands to use on RAK3172-SiP OTAA activation.
-- [RAK3172-SiP TTN ABP Guide](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#ttn-abp-device-registration) - How to add ABP device on TTN and what AT commands to use on RAK3172-SiP ABP activation.
-- [Chirpstack Guide](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connecting-with-chirpstack) - How to create new applications on Chirpstack. 
-- [RAK3172-SiP Chirpstack OTAA Guide](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#chirpstack-otaa-device-registration) - How to add OTAA device to Chirpstack and what AT commands to use on RAK3172-SiP OTAA activation.
-- [RAK3172-SiP Chirpstack ABP Guide](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#chirpstack-abp-device-registration) - How to add ABP device on Chirpstack and what AT commands to use on RAK3172-SiP ABP activation.
-- [LoRa P2P](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#lora-p2p-mode) - Point to point communication between two RAK3172-SiP.
-- [Updating RAK3172-SiP FW](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#upgrading-the-firmware) - Procedures on how to update RAK3172-SiP firmware.
+- [RAK3172-SiP as a Stand-Alone Device Using RUI3](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#rak3172-sip-as-a-stand-alone-device-using-rui3)
+- [RAK3172-SiP as a LoRa/LoRaWAN Modem via AT Command](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#rak3172-sip-as-a-lora-lorawan-modem-via-at-command)
 
 ## Prerequisites
 
@@ -28,16 +22,27 @@ This guide covers the following topics:
 
 Before going through the steps in the installation guide of the RAK3172-SiP WisDuo LPWAN SiP, make sure to prepare the necessary items listed below:
 
-#### Hardware Tools
+#### Hardware
 
-1. [RAK3172-SiP WisDuo LPWAN SiP](https://store.rakwireless.com/products/wisduo-module-rak3172-sip?utm_source=RAK3172SiP&utm_medium=Document&utm_campaign=BuyFromStore)
-2. Adapter PCB board for the RAK3172-SiP to access UART2 pins
-3. USB-Serial Converter
-2. Computer
+- [RAK3172-SiP WisDuo LPWAN SiP](https://store.rakwireless.com/products/wisduo-module-rak3172-sip?utm_source=RAK3172SiP&utm_medium=Document&utm_campaign=BuyFromStore)
+- Adapter PCB board for the RAK3172-SiP to access UART2 pins
+- USB-Serial Converter
+- Computer
 
+#### Software
 
-#### Software Tools
-1. [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
+- Download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
+
+----
+:::warning ⚠️ WARNING    
+_**If you are using Windows 10**_.    
+Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, install the original Arduino IDE from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
+:::
+
+----
+
+- Add [RAK3172 as a supported board in Arduino IDE](/Product-Categories/wisduo/RAK3172-SiP/Quickstart/#rak3172-sip-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with this JSON URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json`. After that, you can then add **RAKwireless RUI STM32 Boards** via Arduino board manager.
+- [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
 
 #### List of Acronyms
 
@@ -46,7 +51,7 @@ Before going through the steps in the installation guide of the RAK3172-SiP WisD
 | DFU     | Device Firmware Upgrade                          |
 | JTAG    | Joint Test Action Group                          |
 | LoRa    | Long Range                                       |
-| OTAA    | Over-The-Air-Activation                          |
+| OTAA    | Over-The-Air-Activation (OTAA)                   |
 | ABP     | Activation-By-Personalization (ABP)              |
 | TTN     | The Things Network                               |
 | DEVEUI  | Device EUI (Extended Unique Identification)      |
@@ -60,13 +65,219 @@ Before going through the steps in the installation guide of the RAK3172-SiP WisD
 
 ## Product Configuration
 
-### Interfacing with RAK3172-SiP
+### RAK3172-SiP as a Stand-Alone Device Using RUI3
 
-RAK3172-SiP can be configured using AT commands via the UART interface. You need a USB to UART TTL adapter to connect the RAK3172-SiP to your computer's USB port and a serial terminal tool like the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools) so you can easily send AT commands and view the replies from the console output.
+#### Hardware Setup
 
-#### Connect to the RAK3172-SiP 
+The RAK3172-SiP requires a few hardware connections before you can make it work. The bare minimum requirement is to have the power section properly configured, reset button, antenna, and USB connection. 
 
-1. Connect the RAK3172-SiP to the serial port of a general-purpose computer (USB port) using a USB to UART TTL adapter like [RAKDAP1](https://store.rakwireless.com/collections/accessories/products/daplink-tool), as shown in **Figure 1**.
+:::warning ⚠️ WARNING
+Firmware update is done via UART2 pins. If you connect the module to an external device that will be interfacing with UART2, take extra precautions in your board design to ensure you can still perform FW update to it. There should be a way in your board design that can disconnect the external device to RAK3172-SiP UART2 before connecting the module to the PC (via USB-UART converter) for the FW update process.
+
+An alternative option to update firmware aside from UART2 is to use SWD pins (SWCLK & SWDIO). This method will require you to use external tools like ST-LINK or RAKDAP1.
+:::
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/rak3172-sip-schematic.png"
+  width="90%"
+  caption="RAK3172-SiP minimum schematic"
+/>
+
+Ensure that the [antenna](https://store.rakwireless.com/products/pcb-antenna-for-lora) is properly connected to PIN 37 so that to have a good LoRa signal. Also, note that you can damage the RF section of the chip if you power the module without an antenna connected to the J1 using an IPEX connector.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/wisblock_antenna.png"
+  width="30%"
+  caption="IPEX PCB LoRa Antenna"
+/>
+
+You can also use an RP-SMA connector in J2 where you can connect the LoRa [antenna](https://store.rakwireless.com/products/lora-antenna?variant=39942879641798), as shown in **Figure 3**.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/rp-sma-antenna.png"
+  width="30%"
+  caption="RP-SMA LoRa Antenna"
+/>
+
+
+:::tip 📝 NOTE
+Detailed information about the RAK3172-SiP LoRa antenna can be found on the [IPEX PCB](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/) and [RP-SMA](https://downloads.rakwireless.com/Accessories/Antenna/SMA-Antenna/) antenna datasheet. 
+:::
+
+:::warning ⚠️ WARNING
+When using the LoRa transceiver, make sure that an antenna is always connected. Using this transceiver without an antenna can damage the module.
+:::
+
+#### Software Setup
+
+The default firmware of the RAK3172-SiP module is based on RUI3, which allows you to develop your custom firmware to connect sensors and other peripherals to it. To develop your custom firmware using Arduino IDE, first, you need to add **RAKwireless RUI STM32 Boards** in the Arduino board manager, which will be discussed in this guide. You can then use RUI3 APIs for your intended application and upload also the custom firmware via UART. The AT commands of the RAK3172-SiP module is still available even if you compile custom firmware via RUI3. You can send AT commands via UART2 connection.
+
+##### RAK3172-SiP RUI3 Board Support Package in Arduino IDE
+
+If you don't have an Arduino IDE yet, you can download it on the [Arduino official website](https://www.arduino.cc/en/Main/Software) and follow the installation procedure in the [miscellaneous section](/Product-Categories/wisduo/RAK3172-SiP/Quickstart/#miscellaneous) of this document.
+
+::: tip 📝 NOTE   
+**For Windows 10 and up users**:   
+If your Arduino IDE is installed from the Microsoft App Store, you need to reinstall your Arduino IDE by getting it from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
+:::
+
+Once the Arduino IDE has been installed successfully, you can now configure the IDE to add the RAK3172-SiP in its board selection by following these steps:
+
+1. Open Arduino IDE and go to **File** > **Preferences**.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/preferences.png"
+  width="90%"
+  caption="Arduino preferences"
+/>
+
+2. To add the RAK3172-SiP to your Arduino Boards list, edit the **Additional Board Manager URLs**. Click the icon, as shown in **Figure 5**.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/additional-boards.png"
+  width="70%"
+  caption="Modifying Additional Board Manager URLs"
+/>
+
+3. Copy the URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json` and paste it on the field, as shown in **Figure 6**. If there are other URLs already there, just add them on the next line. After adding the URL, click **OK**.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/preferences-url.png"
+  width="90%"
+  caption="Add additional board manager URLs"
+/>
+
+4. Restart the Arduino IDE.
+5. Open the Boards Manager from Tools Menu.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/boards-manager.png"
+  width="90%"
+  caption="Opening Arduino boards manager"
+/>
+
+6. Write `RAK` in the search bar, as shown in **Figure 8**. This will show the available RAKwireless module boards that you can add to your Arduino Board list. Select and install the latest version of the  **RAKwireless RUI STM32 Boards**.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/installing-rak.png"
+  width="70%"
+  caption="Installing RAKwireless RUI STM32 boards"
+/>
+
+7. Once the BSP is installed, select  **Tools** > **Boards Manager** > **RAKWireless RUI STM32 Modules** > **WisDuo RAK3272-SiP Board**. 
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/rui-stm32.png"
+  width="90%"
+  caption="Selecting RAK3272-SiP Board for RAK3172-SiP Module"
+/>
+
+##### Compile an Example with Arduino Serial
+
+1. After completing the steps on adding your RAK3172-SiP to the Arduino IDE, you can now try to run a simple program to test your setup. You need to add a USB connection to the bare minimum schematic of the RAK3172-SiP module, as shown in **Figure 10**.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/rak3172-sip-usb.png"
+  width="90%"
+  caption="RAK3172-SiP with USB to Serial Schematic"
+/>
+
+2. Connect the RAK3172-SiP via UART and check RAK3172-SiP COM Port using Windows **Device Manager**. Double-click the reset button if the module is not detected.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/rui-port.png"
+  width="70%"
+  caption="Device manager ports (COM & LPT)"
+/>
+
+3. Choose RAK3172-SiP on board selection select via **Tools** > **Boards Manager** > **RAKWireless RUI STM32 Modules** > **WisDuo RAK3272-SiP Board**.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/rui-stm32.png"
+  width="90%"
+  caption="Selecting RAK3272-SiP Board for RAK3172-SiP Module"
+/>
+
+4. Open the **Tools** menu and select a COM port. **COM28** is currently used.
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/select-port.png"
+  width="90%"
+  caption="Select COM port"
+/>
+
+5. You can see the serial monitor icon and click it to connect COM port.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/serial-mon.png"
+  width="90%"
+  caption="Open Arduino serial monitor"
+/>
+
+6. If the connection is successful, you can send AT Commands to RAK3172-SiP. For example: To check the RUI version, type `AT+VER=?` on the text area, then click on the **Send** button, as shown in **Figure 15**.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/at+ver.png"
+  width="90%"
+  caption="Send AT command"
+/>
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/arduino-console.png"
+  width="90%"
+  caption="Arduino serial monitor COM28"
+/>
+
+7. Open **Arduino_Serial** example code.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/serial-example.png"
+  width="90%"
+  caption="Arduino Serial example"
+/>
+
+8. Click on the **Verify** icon to check if you have successfully compiled the example code.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/verify-code.png"
+  width="90%"
+  caption="Verify the example code"
+/>
+
+9. Click the **Upload** icon to send the compiled firmware to your RAK3172.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/upload-code.png"
+  width="90%"
+  caption="Upload the example code"
+/>
+
+10. If the upload is successful, you will see the **Device programmed** message.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/dev-prog.png"
+  width="90%"
+  caption="Device programmed successfully"
+/>
+
+11. After the Device Programmed is completed, you will see the working Arduino_Serial example.
+
+
+
+### RAK3172-SiP as a LoRa/LoRaWAN Modem via AT Command
+
+#### AT Command via UART2
+
+RAK3172-SiP module can be configured using AT commands via the UART2 interface. You need a USB to UART TTL adapter to connect the RAK3172-SiP to your computer's USB port and a serial terminal tool. You can use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools) so you can easily send AT commands and view the replies from the console output. The RAK Serial Port Tool commands still uses the RUI V2 AT commands by default. You can modify it to have RUI3 AT commands and then save it.
+
+:::warning ⚠️ WARNING
+Firmware update and AT command functionality is done via UART2 pins. If you will connect the module to an external host MCU that will send AT commands via UART2, take extra precautions in your board design to ensure you can still perform FW update to it. There should be a way in your board design that can disconnect the host MCU UART to connect to RAK3172 UART2 before connecting the module to the PC (via USB-UART converter) for the FW update process.
+
+An alternative option to update firmware aside from UART2 is to use SWD pins (SWCLK & SWDIO). This method will require you to use external tools like ST-LINK or RAKDAP1.
+:::
+
+##### Connect to the RAK3172-SiP 
+
+1. Connect the RAK3172-SiP to the serial port of a general-purpose computer (USB port) using a USB to UART TTL adapter like [RAKDAP1](https://store.rakwireless.com/collections/accessories/products/daplink-tool), as shown in **Figure 21**.
 
 :::tip 📝 NOTE:
 
@@ -80,23 +291,35 @@ There are other connections needed on the RAK3172-SiP aside from the VDD, GND, a
   caption="RAK3172-SiP UART2 connection"
 />
 
-1. Any serial communication tool can be used like the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
-
-2. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows: 
+2. Any serial communication tool can be used. But it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
+3. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows: 
 
  * Baud Rate: **115200 baud**
  * Data Bits: **8 bits**
  * Stop Bits: **1 stop bit**
  * Parity: **NONE**
+ 
+ ##### RAK3172-SiP Configuration for LoRaWAN or LoRa P2P
 
-#### Configuring RAK3172-SiP
+To enable the RAK3172 module as a LoRa P2P module or a LoRaWAN end-device, the module must be configured and parameters must be set by sending AT commands. You can configure the RAK3172 in two ways:
 
-To enable the RAK3172-SiP as a LoRa P2P module or a LoRaWAN end-device, the module must be configured and parameters must be set by sending AT commands.
+- [LoRaWAN End-Device](/Product-Categories/WisDuo/RAK3172-SiP/quickstart/#configuring-rak3172-sip-as-lorawan-end-device) - RAK3172 as LoRaWAN IoT device.
+- [LoRa P2P](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#lora-p2p-mode) - Point to point communication between two RAK3172-SiP.
 
-The first step is to connect the RAK3172-SiP to the USB-UART converter computer as described in the previous section. Using a serial communication tool, you can now send commands to the RAK3172-SiP. For example, sending `AT` will display `OK`. For the details of all supported AT commands, refer to [AT Commands for RAK3172-SiP](/Product-Categories/WisDuo/RAK3172-SiP/AT-Command-Manual/).
+#### Configuring RAK3172-SiP as LoRaWAN End-Device 
 
+To enable the RAK3172-SiP as a LoRaWAN end-device, a device must be registered first in the LoRaWAN network server. This guide will cover both TTN and Chirpstack LoRaWAN network servers and the associate AT commands for the RAK3172-SiP.
 
-### Connecting to The Things Network (TTN)
+This guide covers the following topics:
+
+- [TheThingsNetwork Guide](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connecting-to-the-things-network-ttn) - How to login, register new accounts and create new applications on TTN.
+- [RAK3172-SiP TTN OTAA Guide](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#ttn-otaa-device-registration) - How to add OTAA device on TTN and what AT commands to use on RAK3172-SiP OTAA activation.
+- [RAK3172-SiP TTN ABP Guide](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#ttn-abp-device-registration) - How to add ABP device on TTN and what AT commands to use on RAK3172-SiP ABP activation.
+- [Chirpstack Guide](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connecting-with-chirpstack) - How to create new applications on Chirpstack. 
+- [RAK3172-SiP Chirpstack OTAA Guide](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#chirpstack-otaa-device-registration) - How to add OTAA device to Chirpstack and what AT commands to use on RAK3172-SiP OTAA activation.
+- [RAK3172-SiP Chirpstack ABP Guide](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#chirpstack-abp-device-registration) - How to add ABP device on Chirpstack and what AT commands to use on RAK3172-SiP ABP activation.
+
+##### Connecting to The Things Network (TTN)
 
 In this section, a quick tutorial guide will show how to connect the RAK3172-SiP to the TTN platform. 
 
@@ -112,15 +335,15 @@ In this guide, you need to have a working gateway that is connected to TTN or yo
   caption="RAK3172-SiP EVB in the context of the TTN"
 />
 
-As shown in **Figure 2**, The Things Stack (TTN V3) is an open-source LoRaWAN Network Server suitable for global, geo-distributed public and private deployments, as well as for small local networks. The architecture follows the LoRaWAN Network Reference Model for standards compliancy and interoperability. This project is actively maintained by [The Things Industries](https://www.thethingsindustries.com/).
+As shown in **Figure 22**, The Things Stack (TTN V3) is an open-source LoRaWAN Network Server suitable for global, geo-distributed public and private deployments, as well as for small local networks. The architecture follows the LoRaWAN Network Reference Model for standards compliance and interoperability. This project is actively maintained by [The Things Industries](https://www.thethingsindustries.com/).
 
-LoRaWAN is a protocol for low-power wide-area networks. It allows for large-scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long-range wireless connections.
+LoRaWAN is a protocol for low-power wide-area networks. It allows large-scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long-range wireless connections.
 
 The RAK3172-SiP WisDuo can be part of this ecosystem as a device, and the objective of this section is to demonstrate how simple it is to send data to The Things Stack using the LoRaWAN protocol. To achieve this, the RAK3172-SiP WisDuo must be located inside the coverage of a LoRaWAN gateway connected to The Things Stack server.
 
-#### Registration to TTN and Creating LoRaWAN Applications
+##### Registration to TTN and Creating LoRaWAN Applications
 
-1. The first step is to go to [The Things Network platform](https://console.cloud.thethings.network/) and select a cluster, as shown in **Figure 3**.
+1. The first step is to go to [The Things Network platform](https://console.cloud.thethings.network/) and select a cluster, as shown in **Figure 23**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/image_1.png"
@@ -130,7 +353,7 @@ The RAK3172-SiP WisDuo can be part of this ecosystem as a device, and the object
 
 You can use the same login credentials on the TTN V2 if you have one. If you have no account yet, you need to create one.
 
-2. To register as a new user to TTN, click on **Login with The Things ID** and then select **register** on the next page, as shown in **Figure 4** and **Figure 5**.
+2. To register as a new user to TTN, click on **Login with The Things ID** and then select **register** on the next page, as shown in **Figure 24** and **Figure 25**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/image_2.png"
@@ -146,7 +369,7 @@ You can use the same login credentials on the TTN V2 if you have one. If you hav
 
 3. You should now be on the step of creating your TTN account. Fill in all the necessary details and activate your account.
 
-4. After creating an account, you should log in on the platform using your username/email and password then click **Submit**, as shown in **Figure 6**.
+4. After creating an account, you should log in on the platform using your username/email and password then click **Submit**, as shown in **Figure 26**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/image_4.png"
@@ -180,9 +403,9 @@ You can use the same login credentials on the TTN V2 if you have one. If you hav
 
 8. If you had no error during the previous step, you should now be on the application console page. The next step is to add end-devices to your TTN application. LoRaWAN specification enforces that each end-device has to be personalized and activated. There are two options for registering devices depending on the activation mode you select. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP).
 
-#### TTN OTAA Device Registration
+##### TTN OTAA Device Registration
 
-1. Go to your application console to be able to register a device. To start adding an OTAA end-device, click **+ Add end device**, as shown in **Figure 10**.
+1. Go to your application console to be able to register a device. To start adding an OTAA end-device, click **+ Add end device**, as shown in **Figure 30**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/image_8.png"
@@ -190,7 +413,7 @@ You can use the same login credentials on the TTN V2 if you have one. If you hav
   caption="Add end device"
 />
 
-2. To register the module, click first **Manually** then configure the activation method by selecting **Over the air activation (OTAA)** and compatible **LoRaWAN version** then click the **Start** button, as shown in **Figure 11** and **Figure 12**.
+2. To register the module, click first **Manually** then configure the activation method by selecting **Over the air activation (OTAA)** and compatible **LoRaWAN version** then click the **Start** button, as shown in **Figure 31** and **Figure 32**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/image_9.png"
@@ -204,7 +427,7 @@ You can use the same login credentials on the TTN V2 if you have one. If you hav
   caption="Device activation configuration"
 />
 
-3. Then you need to put a unique **End device ID** and EUIs (**DevEUI** and **AppEUI**), as shown in **Figure 13**. Check if your module has a DevEUI on the sticker or QR that you can scan then use this as the device unique DevEUI.
+3. Then you need to put a unique **End device ID** and EUIs (**DevEUI** and **AppEUI**), as shown in **Figure 33**. Check if your module has a DevEUI on the sticker or QR that you can scan then use this as the device unique DevEUI.
 
 Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
 
@@ -238,7 +461,7 @@ It is advisable to use a meaningful end-device ID, end-device name, and end-devi
   caption="OTAA AppKey generation and device registration"
 />
 
-You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 16**.
+You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 36**.
 
 :::tip 📝 NOTE:
 
@@ -246,7 +469,7 @@ The **AppEUI**, **DevEUI**, and **AppKey** are the parameters that you will need
 
 The three OTAA parameters on the TTN device console are MSB by default. 
 
-These parameters are always accessible on the device console page, as shown in **Figure 16**.
+These parameters are always accessible on the device console page, as shown in **Figure 36**.
 :::
 
 <rk-img
@@ -256,11 +479,11 @@ These parameters are always accessible on the device console page, as shown in *
 />
 
 
-#### OTAA Configuration for TTN
+##### OTAA Configuration for TTN
 
 The RAK3172-SiP supports a series of AT commands to configure its internal parameters and control the functionalities of the module. 
 
-1. To set up the RAK3172-SiP to join the TTN using OTAA, start by connecting the RAK3172-SiP to your computer (see **Figure 1**) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
+1. To set up the RAK3172-SiP to join the TTN using OTAA, start by connecting the RAK3172-SiP to your computer (see **[Figure 21](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connect-to-the-rak3172-sip)**) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify that the current configuration is working by sending these two AT commands:
 
@@ -274,7 +497,7 @@ ATE
 
 `ATE` will echo the commands you input to the module, which is useful for tracking the commands and troubleshooting.
 
-You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK`, as shown in **Figure 17**.
+You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK`, as shown in **Figure 37**.
 
 :::tip 📝 NOTE:
 
@@ -396,7 +619,7 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.        |
 | z         | Number of join attempts (0-255) - 0 is default.              |
 
-After 5 or 6 seconds, if the request is successfully received by a LoRa gateway, you should see a `+EVT:JOINED` status reply, as shown in **Figure 20**.
+After 5 or 6 seconds, if the request is successfully received by a LoRaWAN gateway, you should see a `+EVT:JOINED` status reply, as shown in **Figure 40**.
 
 :::tip 📝 NOTE:
 
@@ -428,9 +651,9 @@ AT+SEND=2:12345678
 />
 
 
-#### TTN ABP Device Registration
+##### TTN ABP Device Registration
 
-1. To register an ABP device, go to your application console and select the application where you want your device to be added. Then click **+ Add end device**, as shown in **Figure 22**.
+1. To register an ABP device, go to your application console and select the application where you want your device to be added. Then click **+ Add end device**, as shown in **Figure 42**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/image_8.png"
@@ -438,7 +661,7 @@ AT+SEND=2:12345678
   caption="Adding ABP device"
 />
 
-2. To register the module, you need to click first **Manually** then configure the activation method by selecting **Activation by personalization (ABP)**  compatible **LoRaWAN version** and click the **Start** button, as shown in **Figure 23** and **Figure 24**.
+2. To register the module, you need to click first **Manually** then configure the activation method by selecting **Activation by personalization (ABP)**  compatible **LoRaWAN version** and click the **Start** button, as shown in **Figure 43** and **Figure 44**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/image_9.png"
@@ -452,7 +675,7 @@ AT+SEND=2:12345678
   caption="Selecting ABP and LoRaWAN version"
 />
 
-3. At this step, you need to put a unique **End device ID** and **DevEUI**, as shown in **Figure 25**. Check if your module has a DevEUI on the sticker or QR that you can scan then use this as the device unique DevEUI.
+3. At this step, you need to put a unique **End device ID** and **DevEUI**, as shown in **Figure 45**. Check if your module has a DevEUI on the sticker or QR that you can scan then use this as the device unique DevEUI.
 
 Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
 
@@ -486,7 +709,7 @@ It is advisable to use a meaningful end-device ID, end-device name, and end-devi
   caption="ABP AppSKey generation and device registration"
 />
 
-You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 28**.
+You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 48**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/image_5_abp.png"
@@ -494,9 +717,9 @@ You should now be able to see the device on the TTN console after you fully regi
   caption="ABP device successfully registered to TTN"
 />
 
-#### ABP Configuration for TTN
+##### ABP Configuration for TTN
 
-1. To set up the RAK3172-SiP to join the TTN using ABP, start by connecting the RAK3172-SiP to the computer (see **Figure 1**) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
+1. To set up the RAK3172-SiP to join the TTN using ABP, start by connecting the RAK3172-SiP to the computer (see **[Figure 21](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connect-to-the-rak3172-sip)**) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify the current configuration is working by sending these two AT commands:
 
@@ -510,7 +733,7 @@ ATE
 
 `ATE` will echo the commands you input to the module, which is useful for tracking the commands and troubleshooting.
 
-2. You will receive OK when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by OK, as shown in **Figure 29**.
+2. You will receive OK when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by OK, as shown in **Figure 49**.
 
 :::tip 📝 NOTE:
 
@@ -565,17 +788,17 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 
 **List of band parameter options**
 
-| Code     | Regional Band |
-| -------- | ------------- |
-| 0        | EU433 (Not Supported) |
-| 1        | CN470 (Not Supported) |
-| 2        | RU864         |
-| 3        | IN865         |
-| 4        | EU868         |
-| 5        | US915         |
-| 6        | AU915         |
-| 7        | KR920         |
-| 8        | AS923         |
+| Code | Regional Band         |
+| ---- | --------------------- |
+| 0    | EU433 (Not Supported) |
+| 1    | CN470 (Not Supported) |
+| 2    | RU864                 |
+| 3    | IN865                 |
+| 4    | EU868                 |
+| 5    | US915                 |
+| 6    | AU915                 |
+| 7    | KR920                 |
+| 8    | AS923                 |
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/abpconfig.png"
@@ -660,7 +883,7 @@ After checking all the things above, try to send LoRaWAN payloads again.
   caption="OTAA test sample data sent viewed in TTN"
 />
 
-### Connecting with ChirpStack
+##### Connecting with ChirpStack
 
 This section shows how to connect the RAK3172-SiP to the ChirpStack platform.
 
@@ -671,7 +894,7 @@ This section shows how to connect the RAK3172-SiP to the ChirpStack platform.
   caption="RAK3172-SiP in the context of the ChirpStack platform"
 />
 
-The ChirpStack, previously known as the LoRaServer project, provides open-source components for building LoRaWAN networks. Like in the case of TTN, the RAK3172-SiP is located in the periphery and will transmit the data to the backend servers through a LoRa gateway. Learn more about [ChirpStack](https://www.chirpstack.io/).
+The ChirpStack, previously known as the LoRaServer project, provides open-source components for building LoRaWAN networks. Like in the case of TTN, the RAK3172-SiP is located in the periphery and will transmit the data to the backend servers through a LoRaWAN gateway. Learn more about [ChirpStack](https://www.chirpstack.io/).
 
 :::tip 📝 NOTE:
 
@@ -690,11 +913,11 @@ It is assumed that you are using a RAK Gateway and its built-in ChirpStack. Also
 The frequency band used in the demonstration is EU868.
 :::
 
-#### Create a New Application
+##### Create a New Application
 
 1. Log in to the ChirpStack server using your account and password.
 
-2. Go to the Application section, as shown in **Figure 35**.
+2. Go to the Application section, as shown in **Figure 55**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/24.chirpstack.png"
@@ -702,7 +925,7 @@ The frequency band used in the demonstration is EU868.
   caption="Application section"
 />
 
-3. By default, you should create a new application, although you can reuse existing ones. For this setup, create a new Application by clicking on the “**CREATE**” button and filling in the required parameters, as shown in **Figure 36** and **Figure 37**.
+3. By default, you should create a new application, although you can reuse existing ones. For this setup, create a new Application by clicking on the “**CREATE**” button and filling in the required parameters, as shown in **Figure 56** and **Figure 57**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/25.new-application.png"
@@ -726,7 +949,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 
 <b>Register a New Device</b>
 
-4. Choose the **Application** created in the previous step, then select the **DEVICES** tab, as shown in **Figure 38** and **Figure 39**.
+4. Choose the **Application** created in the previous step, then select the **DEVICES** tab, as shown in **Figure 58** and **Figure 59**.
 
 5. Once done, click “**+ CREATE**”.
 
@@ -783,9 +1006,9 @@ If you have your own Chirpstack installation, you can set up the device profile 
 />
 
 
-#### Chirpstack OTAA Device Registration
+##### Chirpstack OTAA Device Registration
 
-1. If you have selected “**DeviceProfile_OTAA**”, as shown in **Figure 43**, then after the device is created, an Application Key must be also created for this device. 
+1. If you have selected “**DeviceProfile_OTAA**”, as shown in **Figure 63**, then after the device is created, an Application Key must be also created for this device. 
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/32.otaa.png"
@@ -793,7 +1016,7 @@ If you have your own Chirpstack installation, you can set up the device profile 
   caption="Chirpstack OTAA activation"
 />
 
-2. A previously created Application Key can be entered here, or a new one can be generated automatically by clicking the icon highlighted in red in **Figure 44**.
+2. A previously created Application Key can be entered here, or a new one can be generated automatically by clicking the icon highlighted in red in **Figure 64**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/33.otaa-set-device-keys.png"
@@ -803,7 +1026,7 @@ If you have your own Chirpstack installation, you can set up the device profile 
 
 3. Once the Application Key is added to the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button. 
 
-* As shown in **Figure 45**, a new device should be listed in the DEVICES tab. The most important parameters, such as the Device EUI, are shown in the summary.
+* As shown in **Figure 65**, a new device should be listed in the DEVICES tab. The most important parameters, such as the Device EUI, are shown in the summary.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/34.set-device-eui.png"
@@ -811,7 +1034,7 @@ If you have your own Chirpstack installation, you can set up the device profile 
   caption="Chirpstack OTAA list of device in the device tab"
 />
 
-4. To end the process, it is a good practice to review that the Application Key is properly associated with this device. The Application Key can be verified in the **KEYS(OTAA)** tab, as shown in **Figure 46**.
+4. To end the process, it is a good practice to review that the Application Key is properly associated with this device. The Application Key can be verified in the **KEYS(OTAA)** tab, as shown in **Figure 66**.
 
 
 <rk-img
@@ -826,11 +1049,11 @@ Standard OTAA mode requires the **Device EUI**, **Application Key**, and **Appli
 
 :::
 
-#### OTAA Configuration for Chirpstack
+##### OTAA Configuration for Chirpstack
 
 The RAK3172-SiP supports a series of AT commands to configure its internal parameters and control the functionalities of the module. 
 
-1. To set up the RAK3172-SiP to join the Chirpstack using OTAA, start by connecting the RAK3172-SiP to the Computer (see **Figure 1**) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
+1. To set up the RAK3172-SiP to join the Chirpstack using OTAA, start by connecting the RAK3172-SiP to the Computer (see **[Figure 21](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connect-to-the-rak3172-sip)**) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify that the current configuration is working by sending these two AT commands:
 
@@ -844,7 +1067,7 @@ ATE
 
 `ATE` will echo the commands you input to the module, which is useful for tracking the commands and troubleshooting.
 
-You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK`, as shown in **Figure 47**.
+You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK`, as shown in **Figure 67**.
 
 :::tip 📝 NOTE:
 
@@ -916,7 +1139,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/otaaconfig.png"
   width="90%"
-  caption="Configuring LoRa p arameters"
+  caption="Configuring LoRa parameters"
 />
 
 
@@ -970,7 +1193,7 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
 | z         | Number of join attempts (0-255) - 0 is default.              |
 
-After 5 or 6 seconds, if the request is successfully received by a LoRa gateway, you should see the JOINED status reply.
+After 5 or 6 seconds, if the request is successfully received by a LoRaWAN gateway, you should see the JOINED status reply.
 
 :::tip 📝 NOTE:
 
@@ -993,7 +1216,7 @@ Send command format: **`AT+SEND=<port>:<payload>`**
   caption="OTAA test sample data sent via RAK Serial Port Tool"
 />
 
-On the ChirpStack platform, you should see the join and uplink messages in the LORAWAN FRAMES tab, as shown in **Figure 51**. By convention, messages sent from nodes to gateways are considered as **Uplinks** while messages sent by gateways to nodes are considered as **Downlinks**. 
+On the ChirpStack platform, you should see the join and uplink messages in the LORAWAN FRAMES tab, as shown in **Figure 71**. By convention, messages sent from nodes to gateways are considered as **Uplinks** while messages sent by gateways to nodes are considered as **Downlinks**. 
 
 
 <rk-img
@@ -1002,9 +1225,9 @@ On the ChirpStack platform, you should see the join and uplink messages in the L
   caption="Chirpstack data received preview"
 />
 
-#### Chirpstack ABP Device Registration
+##### Chirpstack ABP Device Registration
 
-1. During the registration of a new device, if you select “**DeviceProfile_ABP**”, as shown in Figure 52, then the ChirpStack platform will assume that this device will join the LoRaWAN network using the ABP mode. 
+1. During the registration of a new device, if you select “**DeviceProfile_ABP**”, as shown in **Figure 72**, then the ChirpStack platform will assume that this device will join the LoRaWAN network using the ABP mode. 
 
 
 :::tip 📝 NOTE:
@@ -1037,9 +1260,9 @@ Then, you can see that there are some parameters for ABP in the **“ACTIVATION�
 3. The parameters can be generated as random numbers by the platform or can be set with user values. Once these parameters are filled in properly, the process is completed by clicking on the “**ACTIVATE DEVICE**” button.
 
 
-#### ABP Configuration for Chirpstack
+##### ABP Configuration for Chirpstack
 
-1. To set up the RAK3172-SiP to join the Chirpstack using ABP, start by connecting the RAK3172-SiP to the Computer (see **Figure 1**) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
+1. To set up the RAK3172-SiP to join the Chirpstack using ABP, start by connecting the RAK3172-SiP to the Computer (see **[Figure 21](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connect-to-the-rak3172-sip)**) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify that the current configuration is working by sending these two AT commands:
 
@@ -1053,7 +1276,7 @@ ATE
 
 `ATE` will echo the commands you input to the module, which is useful for tracking the commands and troubleshooting.
 
-You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK`, as shown in **Figure 54**.
+You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK`, as shown in **Figure 74**.
 
 :::tip 📝 NOTE:
 
@@ -1175,7 +1398,7 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.       |
 | z         | Number of join attempts (0-255) - 0 is default.             |
 
-4. After 5 or 6 seconds, if the request is successfully received by a LoRa gateway, then you should see the JOINED status reply.
+4. After 5 or 6 seconds, if the request is successfully received by a LoRaWAN gateway, then you should see the JOINED status reply.
 
 5. You can now try to send some payload after a successful join.
 
@@ -1191,7 +1414,7 @@ Send command format: **`AT+SEND=<port>:<payload>`**
 />
 
 
-### LoRa P2P Mode
+#### LoRa P2P Mode
 
 This section will show you how to set up and connect two RAK3172-SiP units to work in the LoRa P2P mode. The configuration of the RAK3172-SiP units is done by connecting the two modules to a general-purpose computer using a USB-UART converter. The setup of each RAK3172-SiP can be done separately, but testing the LoRa P2P mode will require having both units connected simultaneously. This could be done by having one computer with two USB ports or two computers with one USB port each.
 
@@ -1271,7 +1494,15 @@ AT+PSEND=11223344
 
 ### Upgrading the Firmware
 
-If you want to upgrade to the latest version of the firmware of the module, you can follow this section. The latest firmware can be found in the software section of [RAK3172-SiP Datasheet](/Product-Categories/WisDuo/RAK3172-Module/Datasheet/#firmware-os).
+If you want to upgrade to the latest version of the firmware of the module, you can follow this section. The latest firmware can be found in the software section of [RAK3172-SiP Datasheet](/Product-Categories/WisDuo/RAK3172-SiP/Datasheet/#firmware-os).
+
+:::tip 📝 NOTE:
+
+**What if the RAK3172-SiP stops responding to AT commands and firmware update?**
+
+You can recover your device by using the .hex file in the datasheet and upload it using STM32CubeProgrammer. The guide on updating STM32 firmware using STM32CubeProgrammer can be found [here](/Knowledge-Hub/Learn/STM32Cube-Programmer-Guide/).
+
+:::
 
 #### Firmware Upgrade Through UART2
 
@@ -1291,12 +1522,12 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
 
 1.  Download the latest application firmware of the RAK3172-SiP.
 
-    - [RAK3172-SiP Datasheet](/Product-Categories/WisDuo/RAK3172-SiP/Datasheet/#firmware-os)
+    - [RAK3172-SiP Firmware](/Product-Categories/WisDuo/RAK3172-SiP/Datasheet/#firmware-os)
 
 2.  Download the RAK Device Firmware Upgrade (DFU) tool.
     - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
-3.  Connect the RAK3172-SiP with a computer through a USB to Serial converter. Refer to [**Figure 1**](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connect-to-the-rak3172-sip).
+3.  Connect the RAK3172-SiP with a computer through a USB to Serial converter. Refer to [**Figure 21**](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connect-to-the-rak3172-sip).
 
 4.  Open the Device Firmware Upgrade tool. Select the serial port and baud rate (115200) of the module and click the "Select Port" button.
 
@@ -1328,3 +1559,149 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
   width="80%"
   caption="Upgrade successful"
 />
+
+### Arduino Installation
+
+Go to the [Arduino official website](https://www.arduino.cc/en/Main/Software) and download the Arduino IDE. You can see the multiple versions available for Windows, Linux, and Mac OS X. Choose the correct version of Arduino IDE and download it.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/1.download-arduino.png"
+  width="100%"
+  caption="Arduino IDE latest version"
+/>
+
+#### For Windows
+
+::: tip 📝 NOTE   
+**For Windows 10 users**:   
+Do **NOT** install the Arduino IDE from the Microsoft App store. Install the original Arduino IDE from the Arduino official website instead, since the Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
+:::
+
+1. Install the Arduino IDE, which you just downloaded, on your Windows PC. 
+2. Click **I Agree** then **Next** to proceed.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/2.agreement-license.png"
+  width="45%"
+  caption="Arduino setup license agreement"
+/>
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/3.installation-options.png"
+  width="45%"
+  caption="Arduino setup installation options"
+/>
+
+3. Click **Install**.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/4.installation-folder.png"
+  width="45%"
+  caption="Installing Arduino IDE"
+/>
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/5.installing.png"
+  width="45%"
+  caption="Ongoing installation"
+/>
+
+
+After 100% progress, the Arduino IDE has been installed successfully.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/6.installation-success.png"
+  width="45%"
+  caption="Successful installation"
+/>
+
+#### For Linux
+
+First, you need the check the compatibility with your system and choose between the 32-bit, 64-bit, and ARM versions of the Arduino IDE for Linux.
+
+##### Installing via a Tarball
+
+After downloading the correct Arduino version, open a terminal, then run `ls` to check the installation file on the download folder.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/ls-arduino.png"
+  width="90%"
+  caption="Check the download folder"
+/>
+
+
+A tarball is a type of compressed folder, like a `.zip` file, commonly used to distribute software in Linux. To extract the files from the tarball, change the directory to where the downloaded tarball is, then run:
+
+```
+tar xvf arduino-version.xz
+```
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/tar-linux.png"
+  width="90%"
+  caption="Tarball extract command"
+/>
+
+When the tar command finishes, run `ls` again. A folder named  **arduino-version** will be created.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/ls-tarball.png"
+  width="90%"
+  caption="Arduino install folder created"
+/>
+
+Change the current directory and go to the newly created folder directory. There will be a file named `install.sh` in the folder. Execute `sudo ./install.sh` to install the Arduino IDE.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/sudo-install.png"
+  width="90%"
+  caption="Arduino install script running"
+/>
+
+The `sudo` command temporarily elevates privileges allowing the installer to complete sensitive tasks without logging in as the root user.
+
+#### For Mac OS X
+
+In Mac OS X, the same as Linux, there is no installation process. It is just a process of decompression, then you can open Arduino IDE successfully.
+
+
+### Arduino IDE Parts Guide
+
+**Figure 96** shows the five (5) parts of Arduino IDE.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/7.arduino-ide.png"
+  width="75%"
+  caption="Arduino IDE"
+/>
+
+1. **IDE Option Menu**
+
+You can configure some general parameters such as the serial port, the board information, the libraries, the edit parameters, and so on.
+
+2. **Operating Buttons**
+
+The operating buttons have five operations:
+
+  - **Verify/Compile** the source code;
+  - **Upload** the compiled code into WisBlock;
+  - **Open** a **New** Arduino IDE window or existing application;
+  - **Save** the current application.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/8.operating-buttons.png"
+  width="30%"
+  caption="Operating buttons"
+/>
+
+
+3. **Code Area**
+
+You can edit the source code, which will be compiled and uploaded into WisBlock later in this area.
+
+4. **State Area**
+
+5. **Output Message Area**
+You can see the output message in this area, whether it's failure or success information.
+
+

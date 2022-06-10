@@ -31,6 +31,12 @@ Before going through the steps in the installation guide of the RAK3172 WisDuo L
 #### Software 
 
 - Download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
+
+:::warning ⚠️ WARNING    
+_**If you are using Windows 10**_.    
+Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, install the original Arduino IDE from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
+:::
+
 - Add [RAK3172 as a supported board in Arduino IDE](/Product-Categories/wisduo/RAK3172-Module/Quickstart/#-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with this JSON URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json`. After that, you can then add **RAKwireless RUI STM32 Boards** via Arduino board manager.
 - [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
 
@@ -41,7 +47,7 @@ Before going through the steps in the installation guide of the RAK3172 WisDuo L
 | DFU     | Device Firmware Upgrade                          |
 | JTAG    | Joint Test Action Group                          |
 | LoRa    | Long Range                                       |
-| OTAA    | Over-The-Air-Activation                          |
+| OTAA    | Over-The-Air-Activation (OTAA)                   |
 | ABP     | Activation-By-Personalization (ABP)              |
 | TTN     | The Things Network                               |
 | DEVEUI  | Device EUI (Extended Unique Identification)      |
@@ -81,7 +87,7 @@ Ensure that the antenna is properly connected to have a good LoRa signal. Also, 
   caption="LoRa Antenna"
 />
 
-RAK3172 has a module variant with an IPEX connector where you can connect the Lora antenna, as shown in **Figure 3**. If the RAK3172 module you ordered is the variant with no IPEX connector, you need to ensure that there is an external antenna connected to **RF pin** (PIN 12) of the module.
+RAK3172 has a module variant with an IPEX connector where you can connect the LoRa antenna, as shown in **Figure 3**. If the RAK3172 module you ordered is the variant with no IPEX connector, you need to ensure that there is an external antenna connected to **RF pin** (PIN 12) of the module.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/rak3172_module_antenna.png"
@@ -253,7 +259,7 @@ Once the Arduino IDE has been installed successfully, you can now configure the 
 
 
 
-### RAK3172 as a Lora/Lorawan Modem via AT Command
+### RAK3172 as a LoRa/LoRaWAN Modem via AT Command
 
 #### AT Command via UART2
 
@@ -1537,6 +1543,14 @@ AT+PSEND=11223344
 
 If you want to upgrade to the latest version of the firmware of the module, you can follow this section. The latest firmware can be found in the software section of [RAK3172 Datasheet](/Product-Categories/WisDuo/RAK3172-Module/Datasheet/#firmware-os).
 
+:::tip 📝 NOTE:
+
+**What if the RAK3172 module stops responding to AT commands and firmware update?**
+
+You can recover your device by using the `.hex` file in the datasheet and upload it using STM32CubeProgrammer. The guide on updating STM32 firmware using STM32CubeProgrammer can be found in the [Learn section](/Knowledge-Hub/Learn/STM32Cube-Programmer-Guide/).
+
+:::
+
 #### Firmware Upgrade Through UART2
 
 ##### Minimum Hardware and Software Requirements
@@ -1555,7 +1569,7 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
 
 1.	Download the latest application firmware of the RAK3172.
 
-    - [RAK3172 Datasheet](/Product-Categories/WisDuo/RAK3172-Module/Datasheet/#firmware-os)
+    - [RAK3172 Firmware](/Product-Categories/WisDuo/RAK3172-Module/Datasheet/#firmware-os)
 
 2.	Download the RAK Device Firmware Upgrade (DFU) tool.
     - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
@@ -1721,9 +1735,9 @@ You can configure some general parameters such as the serial port, the board inf
 
 The operating buttons have five operations:
 
-  - **Verify/Compile** the source code.
-  - **Upload** the compiled code into WisBlock.
-  - **Open** a **New** Arduino IDE window or existing application.
+  - **Verify/Compile** the source code;
+  - **Upload** the compiled code into WisBlock;
+  - **Open** a **New** Arduino IDE window or existing application;
   - **Save** the current application.
 
 <rk-img

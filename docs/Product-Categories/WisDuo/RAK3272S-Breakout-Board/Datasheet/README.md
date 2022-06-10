@@ -188,7 +188,8 @@ RAK3272S uses UART2 serial pins to upload the latest firmware.
 
 | Model   | Version | Source                                                                                          |
 | ------- | ------- | ----------------------------------------------------------------------------------------------- |
-| RAK3272S | RUI3 (default baudrate = 115200)   | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest.bin) |
+| RAK3272S(.bin) | RUI3 (default baudrate = 115200)   | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest.bin) |
+| RAK3272S(.hex) | RUI3 (default baudrate = 115200)   | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest_final.hex) |
 | RAK3272S | **DEPRECATED** V1.0.4 (default baudrate = 9600) | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/RAK3172_Latest_Firmware.zip) |
 
 :::warning ⚠️ WARNING

@@ -235,9 +235,10 @@ RAK3172 uses UART2 serial pins to upload the latest firmware.
 
 #### Firmware / OS
 
-| Model   | Version | Source                                                                                          |
-| ------- | ------- | ----------------------------------------------------------------------------------------------- |
-| RAK3172 | RUI3 (default baudrate = 115200)    | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest.bin) |
+| Model          | Version | Source                                                                                          |
+| -------------- | ------- | ----------------------------------------------------------------------------------------------- |
+| RAK3172 (.bin) | RUI3 (default baudrate = 115200) | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest.bin) |
+| RAK3172 (.hex) | RUI3 (default baudrate = 115200) | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest_final.hex) |
 | RAK3172 | **DEPRECATED** V1.0.4 (default baudrate = 9600) | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/RAK3172_Latest_Firmware.zip) |
 
 :::warning ⚠️ WARNING

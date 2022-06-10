@@ -1,7 +1,8 @@
 ---
 prev: /Product-Categories/
 displayAllHeaders: true
-rak_desc: RAK provides you two software tools used for upgrading the latest firmware of your RAK device and for the serial communications.
+rak-group: software-tools
+rak_desc: RAK provides you three software tools used for flashing and configuring the firmware of your RAK device.
 rak_img: /assets/rakwireless/product-categories/software-tools.png 
 ---
 
@@ -9,8 +10,9 @@ rak_img: /assets/rakwireless/product-categories/software-tools.png
 
 <rk-head img="/assets/rakwireless/product-categories/software-tools.png" center>
 
-RAK provides you two software tools used for upgrading the latest firmware of your RAK device and for the serial communications.
+RAK provides you three software tools used for flashing and configuring the firmware of your RAK device.
 
 </rk-head>
-
 <rk-products :tags="['software-tools']" />
+
+
