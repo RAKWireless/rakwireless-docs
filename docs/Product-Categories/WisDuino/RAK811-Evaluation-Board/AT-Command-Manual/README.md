@@ -17,11 +17,11 @@ The WisDuino RAK811 Evaluation Board module is designed to simplify LoRaWAN and 
 
 The UART serial communication is exposed on the **UART1 port**, through  **Pin 6 (TX1)** and **Pin 7 (RX1)**. The default parameters of the UART1 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module to the WisDuino RAK811 Evaluation Board, it is important to check the [WisDuino RAK811 Evaluation Board Schematic](https://downloads.rakwireless.com/LoRa/WisNode/Hardware-Specification/WisNode-LoRa_Schematic.pdf).
 
-The WisDuino RAK811 Evaluation Board has a USB-UART converter that is why the configuration can be started immediately by just connecting it on the USB port of a host computer.
+The WisDuino RAK811 Evaluation Board has a USB-UART converter that is why the configuration can be started immediately by just connecting it to the USB port of a host computer.
 
 ### Links to Quick Start Guide
 
-For AT commands example usage, you can check these sections of quick start guide:
+For AT commands example usage, you can check these sections of the quick start guide:
 
 - [TTN OTAA/ABP](/Product-Categories/WisDuino/RAK811-Evaluation-Board/Quickstart/#lorawan-join-mode)
 - [ChirpStack OTAA/ABP](/Product-Categories/WisDuino/RAK811-Evaluation-Board/Quickstart/#lorawan-join-mode-2)
@@ -34,11 +34,29 @@ If you don't have a serial port tool yet, it is recommended to download and inst
 - [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/)
 
 
-### AT Command Syntax
+## Content
+
+- [RAK811 Evaluation Board AT Command Manual](#rak811-evaluation-board-at-command-manual)
+  - [Introduction](#introduction)
+    - [Links to Quick Start Guide](#links-to-quick-start-guide)
+    - [Software Tool](#software-tool)
+  - [Content](#content)
+  - [AT Command Syntax](#at-command-syntax)
+  - [Error Code Table](#error-code-table)
+  - [General AT Command](#general-at-command)
+  - [Interface Type AT Command](#interface-type-at-command)
+  - [LoRaWAN Type AT Command](#lorawan-type-at-command)
+  - [LoRa P2P Type AT Command](#lora-p2p-type-at-command)
+  - [Appendix I：Data Rate by Region](#appendix-idata-rate-by-region)
+  - [Appendix II：TX Power by Region](#appendix-iitx-power-by-region)
+  - [Appendix III：Maximum Transmission Load by Region](#appendix-iiimaximum-transmission-load-by-region)
+  - [Appendix IV: Pin Description of RAK811](#appendix-iv-pin-description-of-rak811)
+
+## AT Command Syntax
 
 The AT command is based on ASCII characters. In general, the AT Command starts with the prefix `AT` or `at` and ends with `<CR><LF>` (i.e. \r\n). The maximum length is **255 characters** which includes the `<CR><LF>` characters at the end of the command. For the rest of the document, the `\r\n` part is omitted for the sake of clarity.
 
-The AT commands can be classified in the following groups:
+The AT commands can be classified into the following groups:
 
 * **Read Command**: Reads the current configuration or status of the module. The command name and the list of parameters are separated by `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character. 
 
@@ -78,32 +96,32 @@ Only the read commands have information in the replied message, while Write comm
 :::
 
 
-After sending a successful command to the module, the firmware developed, running in the external MCU, will expect at a minimum string of `Ok\r\n`. On the other hand, when the command is not successfully executed by the module, you will receive a response with the following format:
+After sending a successful command to the module, the firmware developed, running in the external MCU, will expect at a minimum string of `Ok\r\n`. On the other hand, when the command is not successfully executed by the module, you will receive a response in the following format:
 
 ```
 ERROR: [ErrCode]\r\n
 ```
 
-### Error Code Table
+## Error Code Table
 
 | **Error Code** | **Description**                                                                                                                                                             |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1              | The last command received is an unsupported AT command.                                                                                                                     |
 | 2              | Invalid parameter in the AT command.                                                                                                                                        |
 | 3              | There is an error when reading or writing the flash memory.                                                                                                                 |
-| 4              | There is an error when reading or writing through IIC bus.                                                                                                                  |
+| 4              | There is an error when reading or writing through the IIC bus.                                                                                                                  |
 | 5              | There is an error when sending data through the UART port.                                                                                                                  |
 | 80             | The LoRa transceiver is busy, could not process a new command.                                                                                                              |
-| 81             | LoRa service is unknown. Unknown MAC command received by node. Execute commands that are not supported in the current state, such as sending `at+join` command in P2P mode. |
+| 81             | LoRa service is unknown. Unknown MAC command received by the node. Execute commands that are not supported in the current state, such as sending `at+join` command in P2P mode. |
 | 82             | The LoRa parameters are invalid.                                                                                                                                            |
 | 83             | The LoRa parameters are invalid.                                                                                                                                            |
 | 84             | The LoRa data rate (DR) is invalid.                                                                                                                                         |
 | 85             | The LoRa frequency and data rate are invalid.                                                                                                                               |
 | 86             | The device has not joined into a LoRa network.                                                                                                                              |
 | 87             | The length of the packet exceeded that maximum allowed by the LoRa protocol.                                                                                                |
-| 88             | Service is closed by the server. Due to the limitation of duty cycle, the server will send "SRV_MAC_DUTY_CYCLE_REQ" MAC command to close the service.                       |
+| 88             | Service is closed by the server. Due to the limitation of the duty cycle, the server will send "SRV_MAC_DUTY_CYCLE_REQ" MAC command to close the service.                       |
 | 89             | This is an unsupported region code.                                                                                                                                         |
-| 90             | Duty cycle is restricted. Due to duty cycle, data cannot be sent at this time until the time limit is removed.                                                              |
+| 90             | Duty cycle is restricted. Due to the duty cycle, data cannot be sent at this time until the time limit is removed.                                                              |
 | 91             | No valid LoRa channel could be found.                                                                                                                                       |
 | 92             | No available LoRa channel could be found.                                                                                                                                   |
 | 93             | Status is error. Generally, the internal state of the protocol stack is wrong.                                                                                              |
@@ -274,7 +292,7 @@ OK Wake Up
 
 :::tip 📝 NOTE: 
 
-During sleep, Pin 7 (RX1) and Pin 26 (RX3) are automatically configured as wake up pins and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
+During sleep, Pin 7 (RX1) and Pin 26 (RX3) are automatically configured as wake-up pins and in external interrupt mode with an internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
 
 :::
 
@@ -539,7 +557,7 @@ OK 1663mV
 
 1. <b>at+join</b>
 
-This command is used for joining to the LoRaWAN network. 
+This command is used for joining the LoRaWAN network. 
 
 | Operation | Command   | Response          |
 | --------- | --------- | ----------------- |
@@ -672,7 +690,7 @@ OK *0,on,868100000,0,5; *1,on,868300000,0,5; *2,on,868500000,0,5; 3,off,0,0,0; 4
 
 With <b>*0,on,868100000,0,5</b> as an example，the following is the channel parameter analysis:
 
-- `*` at the beginning if the channel is open;
+- `*` at the beginning, if the channel is open;
 - `0` is the channel ID;
 - `on` indicates the current status of the channel;
 - `868100000` is the actual frequency of the channel，unit is Hz;
@@ -1068,7 +1086,7 @@ OK
 
 18. <b>at+set_config=lora:confirm:`<type>`</b>
 
-This command is used to set the type data to be sent: Confirmed/Unconfirmed.
+This command is used to set the type of data to be sent: Confirmed/Unconfirmed.
 
 | Operation | Command                             | Response |
 | --------- | ----------------------------------- | -------- |
@@ -1912,13 +1930,13 @@ Listed are the summary of the pins of the RAK811 module:
 1. **About the UART Pin**: 
     - Pin 6 (TX1) and Pin 7 (RX1) are reserved for UART1. 
     - Pin 25 (TX3) and Pin 26 (RX3) are reserved for UART3.
-    - During sleep, Pin 7 (RX1) and Pin 26 (RX3) are automatically configured as wake up pins and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
+    - During sleep, Pin 7 (RX1) and Pin 26 (RX3) are automatically configured as wake-up pins and in external interrupt mode with an internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
 
 2. **About the SWD Debug Pin**: Pin 10 (SWDIO) and Pin 13 (SWCLK) are used for SWD connection.
 
 3. **About the Power Pin**: The power pin on the RAK811 module includes VCC/GND, Pin 1, Pin 11, Pin 12, Pin 21, Pin 28, Pin 29, Pin 30, Pin 31, Pin 32, and Pin 34;
 
-4. **About the Reset Pin**: The reset pin on the RAK811 module is the Pin 24.
+4. **About the Reset Pin**: The reset pin on the RAK811 module is Pin 24.
 
 5. **About the BOOT Pin**: The BOOT0 pin on the RAK811 module is Pin 17.
 
@@ -1935,6 +1953,6 @@ Listed are the summary of the pins of the RAK811 module:
 
 :::tip 📝 NOTE:
 
-The pinout mapping of RAK811 module to the [WisDuino RAK811 Evaluation Board can be found on the Schematic](https://downloads.rakwireless.com/LoRa/WisNode/Hardware-Specification/WisNode-LoRa_Schematic.pdf)
+The pinout mapping of the RAK811 module to the [WisDuino RAK811 Evaluation Board can be found on the Schematic](https://downloads.rakwireless.com/LoRa/WisNode/Hardware-Specification/WisNode-LoRa_Schematic.pdf)
 
 :::

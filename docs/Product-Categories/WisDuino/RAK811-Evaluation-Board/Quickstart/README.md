@@ -40,7 +40,7 @@ This guide covers the following topics:
 
 ### What do you need?
 
-Before going through in the installation guide of the WisDuino RAK811 Evaluation Board, make sure to prepare the necessary items listed below:
+Before going through the installation guide of the WisDuino RAK811 Evaluation Board, make sure to prepare the necessary items listed below:
 
 1. **WisDuino RAK811 Evaluation Board**
 2. Micro- USB cable
@@ -49,7 +49,7 @@ Before going through in the installation guide of the WisDuino RAK811 Evaluation
 
 ::: tip 📝 NOTE
 
-The bootloader of the WisDuino RAK811 Evaluation Board is already pre-installed upon manufacturing, so flashing the bootloader is not necessary for you to perform. If you find that the bootloader of your RAK811 Evaluation Board damaged, kindly contact the support though the [RAKwireless forum](https://forum.rakwireless.com/). However, if you want to upgrade the firmware of the device, refer to the section [Firmware Upgrading](/Product-Categories/WisDuino/RAK811-Evaluation-Board/Quickstart/#upgrading-the-firmware).
+The bootloader of the WisDuino RAK811 Evaluation Board is already pre-installed upon manufacturing, so flashing the bootloader is not necessary for you to perform. If you find that the bootloader of your RAK811 Evaluation Board is damaged, contact the support through the [RAKwireless forum](https://forum.rakwireless.com/). However, if you want to upgrade the firmware of the device, refer to the section [Firmware Upgrading](/Product-Categories/WisDuino/RAK811-Evaluation-Board/Quickstart/#upgrading-the-firmware).
 
 :::
 
@@ -80,7 +80,7 @@ Before powering the RAK811 Evaluation Board, install the LoRa antenna first. Not
 />
 
 ::: tip 📝 NOTE
-If this is your first time connecting you RAK811 Evaluation Board to the computer, it should automatically download the CH340 driver for them to communicate properly. Make sure to have an internet access if you want such automatic installation to be successful. If such process fails, re-plug your Micro-USB cord and proceed to the next step.
+If this is your first time connecting your RAK811 Evaluation Board to the computer, it should automatically download the CH340 driver for them to communicate properly. Make sure to have internet access if you want such automatic installation to be successful. If such process fails, re-plug your Micro-USB cord and proceed to the next step.
 :::
 
 2. Any serial communication tool can be used; but, it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
@@ -92,7 +92,7 @@ If this is your first time connecting you RAK811 Evaluation Board to the compute
  * Stop Bits: **1 stop bit**
  * Parity: **NONE**
 
-4. The RAK811 console output can be read in the RAK Serial Port Tool, as shown in Figure 2.
+4. The RAK811 console output can be read in the RAK Serial Port Tool, as shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/2.rak-serial-port-tool.png"
@@ -102,7 +102,7 @@ If this is your first time connecting you RAK811 Evaluation Board to the compute
 
 ### Configuring the RAK811
 
-To connect the RAK811 board to a LoRa P2P connection or a LoRaWAN network, the board must be configured and LoRa parameters must be set by sending AT commands. Connect the RAK811 board to the computer as described in the previous section. Using the serial communication tool, for example, the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools), it is possible to send commands to the RAK811. For example, sending the `at+set_config=device:restart` and `at+version` commands will display the current firmware version as shown in Figure 3. For more supported commands, refer to [AT Commands for RAK811 Evaluation Board](/Product-Categories/WisDuino/RAK811-Evaluation-Board/AT-Command-Manual/).
+To connect the RAK811 board to a LoRa P2P connection or a LoRaWAN network, the board must be configured and LoRa parameters must be set by sending AT commands. Connect the RAK811 board to the computer as described in the previous section. Using the serial communication tool, for example, the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools), it is possible to send commands to the RAK811. For example, sending the `at+set_config=device:restart` and `at+version` commands will display the current firmware version, as shown in **Figure 3**. For more supported commands, refer to [AT Commands for RAK811 Evaluation Board](/Product-Categories/WisDuino/RAK811-Evaluation-Board/AT-Command-Manual/).
 
 
 <rk-img
@@ -121,16 +121,16 @@ This section will show how to connect the RAK811 board to The Things Stack (TTN 
   caption="The Things Stack diagram"
 />
 
-As shown in Figure 4, The Things Stack is an open source LoRaWAN Network Server suitable for global, geo-distributed public and private deployments as well as for small, local networks. The architecture follows the LoRaWAN Network Reference Model for standards compliancy and interoperability. This project is actively maintained by [The Things Industries](https://www.thethingsindustries.com/).
+As shown in **Figure 4**, The Things Stack is an open-source LoRaWAN Network Server suitable for global, geo-distributed public and private deployments as well as for small, local networks. The architecture follows the LoRaWAN Network Reference Model for standards compliancy and interoperability. This project is actively maintained by [The Things Industries](https://www.thethingsindustries.com/).
 
-LoRaWAN is a protocol for low-power wide-area networks. It allows for large scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long range wireless connections.
+LoRaWAN is a protocol for low-power wide-area networks. It allows for large-scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long-range wireless connections.
 
 The RAK811 board can be part of this ecosystem as a device, and the objective of this section is to demonstrate how simple it is to send data to The Things Stack using the LoRaWAN protocol. To achieve this, the RAK811 board must be located inside the coverage of a LoRaWAN gateway connected to The Things Stack server. 
 
 
 #### Registration to TTN and Creating LoRaWAN Applications
 
-1. The first step is to go to [The Things Network platform](https://console.cloud.thethings.network/) and select a cluster, as shown in Figure 5. The Things Industries adds more clusters from time to time so select the one closes to your location. In this guide, Europe 1 is selected.
+1. The first step is to go to [The Things Network platform](https://console.cloud.thethings.network/) and select a cluster, as shown in **Figure 5**. The Things Industries adds more clusters from time to time so select the one closes to your location. In this guide, Europe 1 is selected.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/t_image_1.png"
@@ -140,7 +140,7 @@ The RAK811 board can be part of this ecosystem as a device, and the objective of
 
 You can use the same login credentials on the TTN V2 if you have one. If you have no account yet, you need to create one.
 
-2. To register as a new user to TTN, click on **Login with The Things ID** then select **register** on the next page as shown in Figures 6 and 7.
+2. To register as a new user to TTN, click on **Login with The Things ID** then select **register** on the next page as shown in **Figure 6** and **Figure 7**.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/t_image_2.png"
@@ -154,9 +154,9 @@ You can use the same login credentials on the TTN V2 if you have one. If you hav
   caption="Registration of new account"
 />
 
-3. You should now be on the step of creating your TTN account. Fill all the necessary details and activate your account.
+3. You should now be on the step of creating your TTN account. Fill in all the necessary details and activate your account.
 
-4. After creating an account, you should login on the platform using your username/email and password then click **Submit**, as shown in Figure 8.
+4. After creating an account, you should log in on the platform using your username/email and password then click **Submit**, as shown in **Figure 8**.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/t_image_4.png"
@@ -188,19 +188,19 @@ You can use the same login credentials on the TTN V2 if you have one. If you hav
   caption="Details of the TTN application"
 />
 
-If you have no error on the previous step, you should now be on the application console page. The next step is to add end-devices to your The Things Stack application. LoRaWAN specification enforce that each end device has to be personalized and activated. There are two options in registering devices depending on the activation mode selected. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP).
+If you have no error on the previous step, you should now be on the application console page. The next step is to add end-devices to your The Things Stack application. LoRaWAN specifications enforce that each end device has to be personalized and activated. There are two options in registering devices depending on the activation mode selected. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP).
 
 :::tip 📝 NOTE:
 
 Once you have the application in The Things Stack (TTN V3), you need to ensure that you are in coverage of a LoRaWAN gateway that is registered to The Things Stack (TTN V3) as well. Without the coverage of that LoRaWAN gateway, you cannot activate any device that you will register in your application. 
 
-RAKwireless has [LoRaWAN gateways](https://store.rakwireless.com/collections/wisgate) that you can connect to The Things Stack (TTN V3) if no LoRaWAN gateway coverage available in your location.
+RAKwireless has [LoRaWAN gateways](https://store.rakwireless.com/collections/wisgate) that you can connect to The Things Stack (TTN V3) if no LoRaWAN gateway coverage is available in your location.
 
 :::
 
 #### The Things Stack OTAA Device Registration
 
-1. Go to your application console to register a device. To start adding an OTAA end device, click **+ Add end device**, as shown in Figure 12.
+1. Go to your application console to register a device. To start adding an OTAA end device, click **+ Add end device**, as shown in **Figure 12**.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/t_image_8.png"
@@ -208,7 +208,7 @@ RAKwireless has [LoRaWAN gateways](https://store.rakwireless.com/collections/wis
   caption="Add end device"
 />
 
-2. To register the board, click first **Manually**, configure the activation method by selecting **Over the air activation (OTAA)** and compatible **LoRaWAN version**, then click **Start** button as shown in Figures 13 and 14.
+2. To register the board, click first **Manually**, configure the activation method by selecting **Over the air activation (OTAA)** and compatible **LoRaWAN version**, then click **Start** button, as shown in **Figure 13** and **Figure 14**.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/t_image_9.png"
@@ -222,7 +222,7 @@ RAKwireless has [LoRaWAN gateways](https://store.rakwireless.com/collections/wis
   caption="Device activation configuration"
 />
 
-3. Then you need to put a unique **End device ID** and EUIs (**DevEUI** and **AppEUI**), as shown in Figure 15. Check if your board has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI. The **AppEUI** cannot be all zero as well for the RAK811 Evaluation Board, else the device will have errors when it connects to the network server.
+3. Then you need to put a unique **End device ID** and EUIs (**DevEUI** and **AppEUI**), as shown in **Figure 15**. Check if your board has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI. The **AppEUI** cannot be all zero as well for the RAK811 Evaluation Board, else the device will have errors when it connects to the network server.
 
 4. Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
 
@@ -240,7 +240,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
   caption="OTAA Device Information"
 />
 
-6. Next step is to setup **Frequency plan**, compatible **Regional Parameter version**, and **LoRaWAN class** supported. Then you can click **Join settings**.
+6. Next step is to set up **Frequency plan**, compatible **Regional Parameter version**, and **LoRaWAN class** supported. Then you can click **Join settings**.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/t_image_12.png"
@@ -256,7 +256,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
   caption="OTAA AppKey generation and device registration"
 />
 
-You should now be able to see the device on The Things Stack console after you fully registered your device, as shown in Figure 18.
+You should now be able to see the device on The Things Stack console after you fully register your device, as shown in **Figure 18**.
 
 :::tip 📝 NOTE:
 
@@ -264,7 +264,7 @@ You should now be able to see the device on The Things Stack console after you f
 
 - The three OTAA parameters on The Things Stack device console are MSB by default. 
 
-- These parameters are always accessible on the device console page, as shown in Figure 18.
+- These parameters are always accessible on the device console page, as shown in **Figure 1**8.
 :::
 
 <rk-img
@@ -276,7 +276,7 @@ You should now be able to see the device on The Things Stack console after you f
 
 #### RAK811 OTAA Configuration for The Things Stack
 
-The RAK811 board supports a series of AT commands to configure its internal parameters and control the functionalities of the module. To set up the RAK811 Evaluation Board to join The Things Stack using OTAA, you need to connect to PC via USB cable and open the RAK Serial Port Tool. Wait for the communication to start. It is recommended to test the serial communication and verify the current configuration by sending either of these two AT commands:
+The RAK811 board supports a series of AT commands to configure its internal parameters and control the functionalities of the module. To set up the RAK811 Evaluation Board to join The Things Stack using OTAA, you need to connect to the PC via USB cable and open the RAK Serial Port Tool. Wait for the communication to start. It is recommended to test the serial communication and verify the current configuration by sending either of these two AT commands:
 
 :::tip 📝 NOTE:
 
@@ -311,7 +311,7 @@ As an example, these are the list of the parameters you need to configure in RAK
 
 :::tip 📝 NOTE:
 
-You need to set valid values to the Device EUI, Application EUI, and Application Key. It cannot be all zero values else it will cause error once the device attempt to join the network server.
+You need to set valid values to the Device EUI, Application EUI, and Application Key. It cannot be all zero values else it will cause an error once the device attempts to join the network server.
 
 :::
 
@@ -373,7 +373,7 @@ After configuring all the parameters, you need to reset your RAK811 Module for s
 at+join
 ```
 
-After 5 or 6 seconds, if the request is successfully received by a LoRa gateway, then you should see the messages shown in Figure 21.
+After 5 or 6 seconds, if the request is successfully received by a LoRa gateway, then you should see the messages shown in **Figure 21**.
 
 8. Try to send a message from the RAK811 board.
 
@@ -387,7 +387,7 @@ at+send=lora:2:1234567890
   caption="OTAA Test Sample Data Sent via RAK Serial Port Tool"
 />
 
-You can see the data sent by the RAK811 board on The Things Stack platform, as shown in Figure 22.
+You can see the data sent by the RAK811 board on The Things Stack platform, as shown in **Figure 22**.
 
 
 <rk-img
@@ -399,7 +399,7 @@ You can see the data sent by the RAK811 board on The Things Stack platform, as s
 
 #### The Things Stack ABP Device Registration
 
-1. To register an ABP device, you need to go to your application console and select the application where you want your device to be added. Then you need to click **+ Add end device** as shown in Figure 23.
+1. To register an ABP device, you need to go to your application console and select the application where you want your device to be added. Then you need to click **+ Add end device**, as shown in **Figure 23**.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/t_image_8.png"
@@ -407,7 +407,7 @@ You can see the data sent by the RAK811 board on The Things Stack platform, as s
   caption="Add end device"
 />
 
-2. To register the board, click first **Manually** then configure the activation method by selecting **Activation by personalization (ABP)**, compatible **LoRaWAN version** and click **Start** button, as shown in Figures 24 and 25.
+2. To register the board, click first **Manually** then configure the activation method by selecting **Activation by personalization (ABP)**, compatible **LoRaWAN version** and click **Start** button, as shown in **Figure 24** and **Figure 25**.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/t_image_9.png"
@@ -421,7 +421,7 @@ You can see the data sent by the RAK811 board on The Things Stack platform, as s
   caption="Manually register device to The Things Stack"
 />
 
-3. At this step, you need to put a unique **End device ID** and **DevEUI**, as shown in Figure 26. Check if your board has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI.
+3. At this step, you need to put a unique **End device ID** and **DevEUI**, as shown in **Figure 26**. Check if your board has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI.
 
 4. Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
 
@@ -455,7 +455,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
   caption="ABP Configuration in The Things Stack"
 />
 
-You should now be able to see the device on The Things Stack console after you fully registered your device, as shown in Figure 29.
+You should now be able to see the device on The Things Stack console after you fully register your device, as shown in **Figure 29**.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/image_5_abp.png"
@@ -465,7 +465,7 @@ You should now be able to see the device on The Things Stack console after you f
 
 #### RAK811 ABP Configuration for The Things Stack
 
-To set up the RAK811 Evaluation Board to join The Things Stack using ABP, you need to connect to PC via USB cable and open the RAK Serial Port Tool. It is recommended to test the serial communication by sending either of these two AT commands:
+To set up the RAK811 Evaluation Board to join The Things Stack using ABP, you need to connect to the PC via USB cable and open the RAK Serial Port Tool. It is recommended to test the serial communication by sending either of these two AT commands:
 
 :::tip 📝 NOTE:
 
@@ -497,7 +497,7 @@ As an example, these are the list of the parameters you need to configure in RAK
 
 :::tip 📝 NOTE:
 
-You need to set valid values to the Device address, Network Session Key, and Application Session Key. It cannot be all zero values else it will cause error once the device attempt to join the network server.
+You need to set valid values to the Device address, Network Session Key, and Application Session Key. It cannot be all zero values else it will cause an error once the device attempts to join the network server.
 
 :::
 
@@ -547,7 +547,7 @@ at+set_config=lora:apps_key:A585653A949C2B2D44B55E99E94CB533
 
 :::tip 📝 NOTE:
 
-After configuring all the parameters, you need to reset RAK811 Evaluation board for saving the parameters.
+After configuring all the parameters, you need to reset the RAK811 Evaluation board for saving the parameters.
 
 :::
 
@@ -560,11 +560,11 @@ at+join
 
 :::tip 📝 NOTE:
 
-By using the ABP mode in LoRaWAN, it doesn’t require to join a network before sending a LoRaWAN package. But to keep the consistency of internal states of the firmware of the RAK811 board, it still required to send at+join command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
+By using the ABP mode in LoRaWAN, it doesn’t require to join a network before sending a LoRaWAN package. But to keep the consistency of internal states of the firmware of the RAK811 board, it is still required to send `at+join` command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
 
 :::
 
-8. Try to send a data from the RAK811 to The Things Network in ABP mode.
+8. Try to send data from the RAK811 to The Things Network in ABP mode.
 
 ```
 at+send=lora:2:1234567890 
@@ -576,7 +576,7 @@ at+send=lora:2:1234567890
   caption="ABP Test Sample Data Sent via RAK Serial Port Tool"
 />
 
-You can see the data sent by the RAK811 board on the The Things Stack device console *Live data* section and the *Last seen* info should be few seconds ago.
+You can see the data sent by the RAK811 board on The Things Stack device console *Live data* section and the *Last seen* info should be a few seconds ago.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/abpsend.png"
@@ -595,7 +595,7 @@ In this section, it shows how to connect the RAK811 board to the ChirpStack plat
   caption="RAK811 Evaluation Board in the Context of the ChirpStack Platform"
 />
 
-The ChirpStack or previously known as LoRaServer project provides open-source components for building LoRaWAN networks. Like the case of The Things Stack, the RAK811 board is located in the periphery and will transmit the data to the backend servers through a LoRa gateway. Learn more about [ChirpStack](https://www.chirpstack.io/).
+The ChirpStack or previously known as the LoRaServer project provides open-source components for building LoRaWAN networks. Like the case of The Things Stack, the RAK811 board is located in the periphery and will transmit the data to the backend servers through a LoRa gateway. Learn more about [ChirpStack](https://www.chirpstack.io/).
 
 :::tip 📝 NOTE:
 
@@ -606,9 +606,9 @@ It is assumed that you are using RAK Gateway and its built-in ChirpStack or RAK 
 * In summary, these are the requirements: 
 
   1. Have ChirpStack online gateway, the frequency band of the nodes should be consistent with the frequency band of the gateway in use.
-      *	[Connect the Gateway with Chirpstack](/Product-Categories/WisGate/RAK7243/Quickstart/#connect-the-gateway-with-chirpstack)
-  2.	The RAK Serial Port Tool provided by RAK
-  3.	RAK811 board
+      * [Connect the Gateway with Chirpstack](/Product-Categories/WisGate/RAK7243/Quickstart/#connect-the-gateway-with-chirpstack)
+  2.  The RAK Serial Port Tool provided by RAK
+  3.  RAK811 board
 
 :::tip 📝 NOTE:
 The frequency band used in the demonstration is EU868. Use a high-frequency version of RAK811. The product number should be “**RAK811 (H)**”.
@@ -623,7 +623,7 @@ Login to the ChirpStack server using your account and password.
 
 #### Create a new Application
 
-1. Go to the Application section, as shown in the Figure 35.
+1. Go to the Application section, as shown in **Figure 35**.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/24.chirpstack.png"
@@ -631,7 +631,7 @@ Login to the ChirpStack server using your account and password.
   caption="Application Section"
 />
 
-2. By default, you should create a new application, although you can reuse the existing ones. For this setup, create a new Application by clicking on the “**CREATE**” button, and fill the required parameters, as shown in the Figures 36 and 37.
+2. By default, you should create a new application, although you can reuse the existing ones. For this setup, create a new Application by clicking on the “**CREATE**” button, and filling the required parameters, as shown in **Figure 36** and **Figure 37**.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/25.new-application.png"
@@ -655,7 +655,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 
 <b>Register a New Device</b>
 
-1. Choose the **Application** created in the previous step, then select the **DEVICES** tab, as shown in Figures 38 and 39.
+1. Choose the **Application** created in the previous step, then select the **DEVICES** tab, as shown in **Figure 38** and **Figure 39**.
 
 2. Once done, click “**+ CREATE**”.
 
@@ -687,13 +687,13 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 />
 
 
-6. Once the node is created, fill-in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
+6. Once the node is created, fill in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
 
-Fill the parameters requested:
+Fill in the parameters requested:
 
 * **Device name and Device description**: These are descriptive texts about your device. 
 
-* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in Figure 42. You can also add a specific Device EUI directly in the form. 
+* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red, as shown in **Figure 42**. You can also add a specific Device EUI directly in the form. 
 
 * **Device Profile**: 
   * If you want to join in OTAA mode, select “**DeviceProfile_OTAA**”.
@@ -703,7 +703,7 @@ Fill the parameters requested:
 :::tip 📝 NOTE:
 Device profiles **DeviceProfile_OTAA** and **DeviceProfile_ABP** are only available if you are using the built-in Chirpstack LoRaWAN Server of RAK Gateways.
 
-If you have your own Chirpstack installation, you can setup the device profile with `LoRaWAN MAC version 1.0.2` and `LoRaWAN Regional Parameters revision A` to make it compatible with RAK811.
+If you have your own Chirpstack installation, you can set up the device profile with `LoRaWAN MAC version 1.0.2` and `LoRaWAN Regional Parameters revision A` to make it compatible with RAK811.
 :::
 
 <rk-img
@@ -722,7 +722,7 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
 ###### Configure the OTAA Mode on the Platform
 
 
-1. If you have selected “**DeviceProfile_OTAA**” as shown in Figure 43, then after the device is created, an Application Key must be also created for this device. 
+1. If you have selected “**DeviceProfile_OTAA**”, as shown in **Figure 43**, then after the device is created, an Application Key must be also created for this device. 
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/32.otaa.png"
@@ -730,7 +730,7 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
   caption="Chirpstack OTAA Activation"
 />
 
-2. A previously created Application Key can be entered here, or a new one can be generated automatically by clicking the icon highlighted in red in Figure 44:
+2. A previously created Application Key can be entered here, or a new one can be generated automatically by clicking the icon highlighted in red in **Figure 44**:
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/33.otaa-set-device-keys.png"
@@ -738,9 +738,9 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
   caption="Chirpstack OTAA Set Application Keys"
 />
 
-3. Once the Application Key is added in the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button. 
+3. Once the Application Key is added to the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button. 
 
-* As shown in Figure 45, a new device should be listed in the DEVICES tab. The most important parameters, such as the Device EUI are shown in the summary.
+* As shown in **Figure 45**, a new device should be listed in the DEVICES tab. The most important parameters, such as the Device EUI are shown in the summary.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/34.set-device-eui.png"
@@ -748,7 +748,7 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
   caption="Chirpstack OTAA List of Device in the Device Tab"
 />
 
-4. To end the process, it is a good practice to review that the Application Key is properly associated with this device. The Application Key can be verified in the **KEYS(OTAA)** tab, as shown in Figure 46.
+4. To end the process, it is a good practice to review that the Application Key is properly associated with this device. The Application Key can be verified in the **KEYS(OTAA)** tab, as shown in **Figure 46**.
 
 
 <rk-img
@@ -759,7 +759,7 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
 
 :::tip 📝 NOTE:
 
-Standard OTAA mode requires the **Device EUI**, **Application Key**, and **Application EUI**, but in the ChirpStack’s implementation, only the Device EUI and the Application Key are mandatory. The Application EUI is not required and not recorded in the Application tab. Nevertheless, the Application EUI is a mandatory parameter in the RAK811 board’s firmware. In order to resolve this mismatch, you can reuse the Device EUI as the Application EUI during the configuration in the side of the node. 
+Standard OTAA mode requires the **Device EUI**, **Application Key**, and **Application EUI**, but in the ChirpStack’s implementation, only the Device EUI and the Application Key are mandatory. The Application EUI is not required and not recorded in the Application tab. Nevertheless, the Application EUI is a mandatory parameter in the RAK811 board’s firmware. In order to resolve this mismatch, you can reuse the Device EUI as the Application EUI during the configuration on the side of the node. 
 
 :::
 
@@ -772,7 +772,7 @@ The RAK811 board supports a series of [AT commands](/Product-Categories/WisDuino
 If you got any error related to the AT Commands, you can always check the [Error Code Table](/Product-Categories/WisDuino/RAK811-Evaluation-Board/AT-Command-Manual/#error-code-table) to get more insights.
 :::
 
-To set up the RAK811 Evaluation Board to join Chirpstack using OTAA, you need to connect to PC via USB cable and open the RAK Serial Port Tool. Wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
+To set up the RAK811 Evaluation Board to join Chirpstack using OTAA, you need to connect to the PC via USB cable and open the RAK Serial Port Tool. Wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
 
 ```
 at+set_config=device:restart
@@ -802,7 +802,7 @@ As an example, these are the list of the parameters you need to configure in RAK
 
 :::tip 📝 NOTE:
 
-You need to set valid values to the Device EUI, Application EUI, and Application Key. It cannot be all zero values else it will cause error once the device attempt to join the network server.
+You need to set valid values to the Device EUI, Application EUI, and Application Key. It cannot be all zero values else it will cause an error once the device attempts to join the network server.
 
 :::
 
@@ -840,12 +840,12 @@ at+set_config=lora:app_eui:5e9d1e0857cf25f1
 ```
 
 :::tip 📝 NOTE:
-Remember, the Application EUI parameter is not required in the ChirpStack platform; therefore, it possible to use the same id as the Device EUI. Otherwise, the firmware will complain. 
+Remember, the Application EUI parameter is not required in the ChirpStack platform; therefore, it is possible to use the same id as the Device EUI. Otherwise, the firmware will complain. 
 ::: 
 
 6. Set the Application Key.
 
-- Get the Application Key from ChirpStack console.
+- Get the Application Key from the ChirpStack console.
 
 ```
 at+set_config=lora:app_key:f921d50cd7d02ee3c5e6142154f274b2
@@ -858,7 +858,7 @@ at+set_config=lora:app_key:f921d50cd7d02ee3c5e6142154f274b2
 />
 
 :::tip 📝 NOTE:
-After configuring all the parameters, you need to reset RAK811 Evaluation Board to save the parameters.
+After configuring all the parameters, you need to reset the RAK811 Evaluation Board to save the parameters.
 :::
 
 7. After resetting, start to join.
@@ -873,7 +873,7 @@ at+join
   caption="Chirpstack OTAA configuration via RAK Serial Port Tool"
 />
 
-8. You can then see the JoinRequest and JoinAccept on ChirpStack page.
+8. You can then see the JoinRequest and JoinAccept on the ChirpStack page.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/39.chirpstack-console.png"
@@ -881,7 +881,7 @@ at+join
   caption="Checking LoRaWAN Joint Request in Chirpstack OTAA Console"
 />
 
-9. Try to send a data from RAK811 Evaluation Board to ChirpStack.
+9. Try to send data from RAK811 Evaluation Board to ChirpStack.
 
 ```
 at+send=lora:2:1234567890 
@@ -893,7 +893,7 @@ at+send=lora:2:1234567890
   caption="Send a LoRaWAN Message via RAK Serial Port Tool"
 />
 
-- On the ChirpStack platform, you should also see the messages in the LORAWAN FRAMES tab, as shown in Figure 52. By convention, messages sent from nodes to gateways are considered as **Uplinks** while messages sent by gateways to nodes are considered as **Downlinks**. 
+- On the ChirpStack platform, you should also see the messages in the LORAWAN FRAMES tab, as shown in **Figure 52**. By convention, messages sent from nodes to gateways are considered as **Uplinks** while messages sent by gateways to nodes are considered as **Downlinks**. 
 
 
 <rk-img
@@ -910,7 +910,7 @@ This concludes the exercise to send data in the OTAA mode.
 
 ###### Configure the ABP Mode on the Platform
 
-1. During the registration of a new device, if you select “**DeviceProfile_ABP**”, as shown in Figure 53, then the ChirpStack platform will assume that this device will join to the LoRaWAN network using the ABP mode. 
+1. During the registration of a new device, if you select “**DeviceProfile_ABP**”, as shown in **Figure 53**, then the ChirpStack platform will assume that this device will join the LoRaWAN network using the ABP mode. 
 
 
 :::tip 📝 NOTE:
@@ -931,9 +931,9 @@ Check “**Disable counting frame verification**”. During the test, when the m
 
 Then, you can see that there are some parameters for ABP in the **“ACTIVATION”** item:
 
-  *	**Device address**
-  *	**Network Session Key**
-  *	**Application Session Key**
+  * **Device address**
+  * **Network Session Key**
+  * **Application Session Key**
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/43.abp-activation-parameters.png"
@@ -941,12 +941,12 @@ Then, you can see that there are some parameters for ABP in the **“ACTIVATION�
   caption="Chirpstack ABP Activation Parameters Needed"
 />
 
-3. The parameters can be generated as random numbers by the platform or can be set with user values. Once these parameters are filled properly, the process is completed by clicking on the “**ACTIVATE DEVICE**” button.
+3. The parameters can be generated as random numbers by the platform or can be set with user values. Once these parameters are filled in properly, the process is completed by clicking on the “**ACTIVATE DEVICE**” button.
 
 
 ###### Configure the ABP Mode on the RAK811
 
-In the following steps, you will configure the RAK811 board to work in the ABP mode. To set up the RAK811 Evaluation Board to join Chirpstack using ABP, you need to connect to PC via USB cable and open the RAK Serial Port Tool. Wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
+In the following steps, you will configure the RAK811 board to work in the ABP mode. To set up the RAK811 Evaluation Board to join Chirpstack using ABP, you need to connect to the PC via USB cable and open the RAK Serial Port Tool. Wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
 
 :::tip 📝 NOTE:
 
@@ -979,7 +979,7 @@ As an example, these are the list of the parameters you need to configure in RAK
 
 :::tip 📝 NOTE:
 
-You need to set valid values to the Device address, Network Session Key, and Application Session Key. It cannot be all zero values else it will cause error once the device attempt to join the network server.
+You need to set valid values to the Device address, Network Session Key, and Application Session Key. It cannot be all zero values else it will cause an error once the device attempts to join the network server.
 
 :::
 
@@ -1030,11 +1030,11 @@ at+set_config=lora:apps_key:4d42ec5caf97f03d833cdaf5003f69e1
 
 :::tip 📝 NOTE:
 
-After configuring all the parameters, you need to reset RAK811 Evaluation Board for saving the parameters.
+After configuring all the parameters, you need to reset the RAK811 Evaluation Board for saving the parameters.
 
 :::
 
-7. After resetting RAK811 Evaluation Board, join in ABP mode.
+7. After resetting the RAK811 Evaluation Board, join in ABP mode.
 
 ```
 at+join
@@ -1042,12 +1042,12 @@ at+join
 
 :::tip 📝 NOTE:
 
-By using the ABP mode in LoRaWAN protocol, it doesn’t require to join a network before sending LoRaWAN package. But, to keep the consistency of internal states of the firmware of the RAK811 board, it still required to send `at+join` command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
+By using the ABP mode in the LoRaWAN protocol, it doesn’t require to join a network before sending the LoRaWAN package. But, to keep the consistency of internal states of the firmware of the RAK811 board, it is still required to send `at+join` command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
 
 :::
 
 
-8. Try to send a data from RAK811 Evaluation Board to ChirpStack.
+8. Try to send data from RAK811 Evaluation Board to ChirpStack.
 
 ```
 at+send=lora:2:1234567890 
@@ -1108,7 +1108,7 @@ Refer to the [Configuring Using AT Commands](/Product-Categories/WisDuino/RAK811
 
 :::
 
-Hence, it is translated into the following RAK811 AT command and send to both units.
+Hence, it is translated into the following RAK811 AT command and sent to both units.
 
 ```
 at+set_config=lorap2p:869525000:7:0:1:5:5
@@ -1155,7 +1155,7 @@ at+send=lorap2p:1234567890
 
 :::tip 📝 NOTE:
 
-For RAK811 Evaluation Board with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upload the HEX file of the [Latest RAK811 Firmware](https://downloads.rakwireless.com/LoRa/RAK811/Firmware/). 
+For the RAK811 Evaluation Board with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upload the HEX file of the [Latest RAK811 Firmware](https://downloads.rakwireless.com/LoRa/RAK811/Firmware/). 
 
 :::
 
@@ -1163,13 +1163,13 @@ If the firmware version of your RAK811 Evaluation Board is V3.0.0.14 and up, you
 
 Execute the following procedure to upgrade the firmware in Device Firmware Upgrade (DFU) mode through the UART1 interface.
 
-1.	Download the latest application firmware of the RAK811 that can be found on the [RAK811 Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#firmware-os).
+1.  Download the latest application firmware of the RAK811 that can be found on the [RAK811 Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#firmware-os).
 
-2.	Download the [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/).
+2.  Download the [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/).
 
-3.	Connect the RAK811 Evaluation Board to the computer via USB cable.
+3.  Connect the RAK811 Evaluation Board to the computer via USB cable.
 
-4.	Open the Device Firmware Upgrade tool. Select the serial port and baud rate of the module and click the "Select Port" button.
+4.  Open the Device Firmware Upgrade tool. Select the serial port and baud rate of the module and click the "Select Port" button.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/56.device-firmware.png"
@@ -1177,7 +1177,7 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
   caption="Device Firmware Upgrade Tool"
 />
 
-5.	Select the application firmware file of the module with the suffix "**.bin**".
+5.  Select the application firmware file of the module with the suffix "**.bin**".
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/57.select-firmware.png"
@@ -1185,7 +1185,7 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
   caption="Select Firmware"
 />
 
-6.	Click the "**Upgrade**" button to upgrade the device. After the upgrade is complete, the RAK811 board will be ready to work with the new firmware.
+6.  Click the "**Upgrade**" button to upgrade the device. After the upgrade is complete, the RAK811 board will be ready to work with the new firmware.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/58.firmware-upgrading.png"
@@ -1217,7 +1217,7 @@ The updated hardware and software guide on interfacing the RAK811 Evaluation Boa
 
 The guide uses Arduino Uno as the host but can be adapted on other boards as well.
 
-There are two versions of RAK811 Evaluation Board and hardware configuration will depending on the board version.
+There are two versions of the RAK811 Evaluation Board and hardware configuration will depend on the board version.
 
 - [WisDuino RAK811 Evaluation Board V1.1 guide](https://github.com/RAKWireless/WisNode-Arduino-Library/blob/master/Documents%20and%20tools/WisNodeV1.1%20Arduino%20Library/RAK811%20WisNode%20V1.1%20Hardware.md).
 - [WisDuino RAK811 Evaluation Board V1.2 guide](https://github.com/RAKWireless/WisNode-Arduino-Library/blob/master/Documents%20and%20tools/WisNodeV1.2%20Arduino%20Library/RAK811%20WisNode%20V1.2%20Hardware.md).
@@ -1229,11 +1229,11 @@ Same with the hardware, the software library will be based on your board version
 - [Library for WisDuino Board V1.1](https://github.com/RAKWireless/WisNode-Arduino-Library/tree/master/Documents%20and%20tools/WisNodeV1.1%20Arduino%20Library).
 - [Library for WisDuino Board V1.2](https://github.com/RAKWireless/WisNode-Arduino-Library/tree/master/Documents%20and%20tools/WisNodeV1.2%20Arduino%20Library).
 
-Installation guide of these libraries can be found on the [main github repository of WisNode-Arduino-Library](https://github.com/RAKWireless/WisNode-Arduino-Library).
+The installation guide of these libraries can be found on the [main GitHub repository of WisNode-Arduino-Library](https://github.com/RAKWireless/WisNode-Arduino-Library).
 
-These libraries have included LoRaWAN examples both OTAA and ABP, as well as an example for LoRa-P2P communication.
+These libraries have included LoRaWAN examples of both OTAA and ABP, as well as an example for LoRa-P2P communication.
 
 ::: warning ⚠️ WARNING
-The library uses Software Serial library of Arduino to communicate to the RAK811 via pin 10 and pin 11. 
-Because of this, the RAK811 needs to be configured to 9600 baud rate for the this library to work.
+The library uses the Software Serial library of Arduino to communicate to the RAK811 via pin 10 and pin 11. 
+Because of this, the RAK811 needs to be configured to a 9600 baud rate for this library to work.
 :::
