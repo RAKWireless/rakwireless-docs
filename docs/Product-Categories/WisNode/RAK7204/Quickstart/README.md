@@ -54,7 +54,7 @@ The included battery is **non rechargeable**. Please do note that when configuri
 - Connect your RAK7204 WisNode Sense Home in your Windows Machine using the provided micro-usb cable.
 
 <rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/3.interfacing/rak7204-pc.png"
+  src="/assets/images/wisnode/rak7204/quickstart/3.interfacing/rak7204-pc.svg"
   width="70%"
   caption="RAK7204 WisNode Sense Home to Laptop Connection"
 />
@@ -1741,7 +1741,7 @@ You can burn the bootloader in your RAK7204 WisNode Sense Home by following the 
 3. Connect the RAK7204 WisNode Sense Home on your Windows PC's USB Interface and press the RST Button or power it on again.  Open the STM32CubeProgrammer Software and Select UART type.
 
 <rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/3.interfacing/rak7204-pc.png"
+  src="/assets/images/wisnode/rak7204/quickstart/3.interfacing/rak7204-pc.svg"
   width="70%"
   caption="USB Interface"
 />

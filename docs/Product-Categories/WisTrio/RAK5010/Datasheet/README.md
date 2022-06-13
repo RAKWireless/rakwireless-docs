@@ -33,13 +33,13 @@ This board is particularly suitable to be used as a quick testing and prototypin
 
 ### Features
 
-- **Quectel BG96** with LTE CAT M1, LTE NB1, EGPRS and GNSS
+- **Quectel BG96** with LTE CAT M1, LTE NB1, EGPRS, and GNSS
 - **Nordic nRF52840**, with BLE 5.0 and long-range BLE
-- nRF52840 integrates the ultra-low power microcontroller ARM Cortex-M4 (64&nbsp;Mhz)
+- nRF52840 integrates the ultra-low-power microcontroller ARM Cortex-M4 (64&nbsp;Mhz)
 - Built-in humidity and temperature sensor, pressure sensor, 3-axis motion sensor, and ambient light sensor
 - iPEX connectors for the LoRa and GPS antenna and an on-board ceramic antenna for the BLE
 - Nano SIM and ESIM options
-- Can be powered by either Micro USB, 3.7&nbsp;V rechargeable battery or a 5&nbsp;V Solar Panel port
+- Can be powered by either Micro USB, 3.7&nbsp;V rechargeable battery, or a 5&nbsp;V Solar Panel port
 - Multiple interfaces, I2C, UART, GPIO, and ADC
 
 ## Specifications
@@ -51,7 +51,7 @@ The overview presents the RAK5010 WisTrio top view and its block diagram that sh
 
 #### Module Overview
 
-Figure 1 shows the top view and the interfaces of the RAK5010 NB-IoT tracker board.
+**Figure 1** shows the top view and the interfaces of the RAK5010 NB-IoT tracker board.
 
 <rk-img
   src="/assets/images/wistrio/rak5010/datasheet/top-view-of-the-board-with-interfaces.jpg"
@@ -59,7 +59,7 @@ Figure 1 shows the top view and the interfaces of the RAK5010 NB-IoT tracker boa
   caption="Top View of the Board with Interfaces"
 />
 
-Figure 2 shows the bottom of the board, where Figure 3, the dimensions of the board, and Figure 4 shows the header pin spacing.
+**Figure 2** shows the bottom of the board, where **Figure 3** is the dimensions of the board, and **Figure 4** shows the header pin spacing.
 
 <rk-img
   src="/assets/images/wistrio/rak5010/datasheet/bottom-view-of-the-board-with-interfaces.jpg"
@@ -81,7 +81,7 @@ Figure 2 shows the bottom of the board, where Figure 3, the dimensions of the bo
 
 #### Block Diagram
 
-The block diagram below shows the internal architecture and external interfaces of the RAK5010 board.
+The block diagram in **Figure 5** shows the internal architecture and external interfaces of the RAK5010 board.
 
 <rk-img
   src="/assets/images/wistrio/rak5010/datasheet/block-diagram.png"
@@ -91,7 +91,7 @@ The block diagram below shows the internal architecture and external interfaces 
 
 ### Hardware
 
-The hardware specification is categorized into seven parts. It discusses the interfacing, pinouts, and its corresponding functions and diagrams. It also covers the standard parameters of the board in terms of Electrical, Mechanical and Environmental of which the tabular data of the functionalities and the standard values are presented. Moreover, a thorough discussion of the RAK5010 specification is included in this section.
+The hardware specification is categorized into seven parts. It discusses the interfacing, pinouts, and its corresponding functions and diagrams. It also covers the standard parameters of the board in terms of Electrical, Mechanical, and Environmental of which the tabular data of the functionalities and the standard values are presented. Moreover, a thorough discussion of the RAK5010 specification is included in this section.
 
 #### Interfaces
 
@@ -114,7 +114,7 @@ There are two antenna connectors:
 ##### Micro-B USB Interface
 
 A standard Micro-B USB is compliant with USB 2.0 standard specification. This USB interface is connected to the USB port of NRF52840 for default. It also can connect to BG96 by reworking some resistors on the board. If this USB port is connected to the BG96, BG96 AT command port, GNSS port, and debug port can be accessed through this USB. It is also used as a charge input port for the battery. The Micro-B USB pin
-definition is shown in Figure 6:
+the definition is shown in **Figure 6**:
 
 <rk-img
   src="/assets/images/wistrio/rak5010/datasheet/usb-connector-pinout.png"
@@ -130,7 +130,7 @@ definition is shown in Figure 6:
 |   4   |          NC          |
 |   5   |         GND          |
 
-This USB port is also used as port for charging the battery.
+This USB port is also used as a port for charging the battery.
 
 ##### LEDs
 
@@ -144,7 +144,7 @@ Three LEDs are used to indicate operating status. Listed in the table are their 
 
 ##### RESET Push Button
 
-Reset Push Button is used to reset the nRF52840. You can control the BG96 reset with by the firmware of the nRF52840.
+Reset Push Button is used to reset the nRF52840. You can control the BG96 reset with the firmware of the nRF52840.
 
 ##### PWRKEY Push Button
 
@@ -152,7 +152,7 @@ When the BG96 is in power off mode, it can be turned back on to normal mode by h
 
 ##### IO Connections between the BG96 and the nRF52840
 
-The nRF52840 communicates with the BG96 primarily though the UART interface. There is, however, additional signaling between the two modules. This is for the purpose of auto monitoring of status indicators and control. The pin mapping is shown below:
+The nRF52840 communicates with the BG96 primarily through the UART interface. There is, however, additional signaling between the two modules. This is for auto-monitoring of status indicators and control. The pin mapping is shown below:
 
 | Function of BG96 | PIN definition on nRF52840  |
 | :--------------: | :-------------------------: |
@@ -209,7 +209,7 @@ The output of the solar panel cannot exceed 5.5&nbsp;V. Otherwise, it may cause 
 
 ##### J9
 
-J9 is J-LINK connector, with J-LINK debugger, you can program and debug nRF52840.
+J9 is a J-LINK connector, with a J-LINK debugger, you can program and debug nRF52840.
 
 |  Pin  | Pin Name |                       Description                        |
 | :---: | :------: | :------------------------------------------------------: |
@@ -219,10 +219,10 @@ J9 is J-LINK connector, with J-LINK debugger, you can program and debug nRF52840
 |   4   |   GND    |                           GND                            |
 
 :::tip 📝 NOTE
-VDD of J9 should connect to the PIN1 of SEGGER J-LINK (see Figure 8) debugger for SWDIO/SWDCLK reference voltage. If this pin is not connected correctly, the J-LINK logic level may not set to VDD of nrf52840, and it may damage the nrf52840.
+VDD of J9 should connect to the PIN1 of SEGGER J-LINK (see **Figure 8**) debugger for SWDIO/SWDCLK reference voltage. If this pin is not connected correctly, the J-LINK logic level may not be set to VDD of nrf52840, and it may damage the nrf52840.
 :::
 
-Figure 8 shows the definition of 20-Pin segger J-LINK connector.
+**Figure 8** shows the definition of a 20-Pin segger J-LINK connector.
 
 <rk-img
   src="/assets/images/wistrio/rak5010/datasheet/j-link-pinout.png"
@@ -332,17 +332,17 @@ The Temperature and Humidity Sensors are an SHTC3 from Sensirion.
 
 The Pressure Sensor is an LPS22HB from ST:
 
-| Symbol  |            Parameter            |                               Test Condition                               | Min |      Typ      | Max  |  Unit   |
-| :-----: | :-----------------------------: | :------------------------------------------------------------------------: | :-: | :-----------: | :--: | :-----: |
-|  PTop   |   Operating Temperature Range   |                                     -                                      | -40 |       -       | +85  |   °C    |
-| PTfull  | Full Accuracy Temperature Range |                                     -                                      |  0  |       -       | +65  |   °C    |
-|   Pop   |    Operating Pressure Range     |                                     -                                      | 260 |       -       | 1260 |   hPa   |
-|  Pbits  |      Pressure Output Data       |                                     -                                      |  -  |      24       |  -   |  bits   |
-|  Psens  |      Pressure Sensitivity       |                                     -                                      |  -  |     4096      |  -   | LSB/hPa |
-| PAccRel | Relative Accuracy over Pressure |                 • P=800–1100&nbsp;hPa <br>• T = 25&nbsp;°C                 |  -  |     ±0.1      |  -   |   hPa   |
-|  PAccT  |        Absolute Accuracy        | • **After OPC**: Pop=0 to 65&nbsp;°C <br>• **No OPC**: Pop=0 to 65&nbsp;°C |  -  |  ±0.1 <br>±1  |  -   |   hPa   |
-| Pnoise  |   RMS Pressure Sensing Noise    |                          With embedded filtering                           |  -  |    0.0075     |  -   | hPa RMS |
-| ODRPres |    Pressure Output Data Rate    |                                     -                                      |  -  | 1/10/25/50/75 |  -   |   Hz    |
+| Symbol  |            Parameter            |                               Test Condition                               |  Min  |      Typ      |  Max  |  Unit   |
+| :-----: | :-----------------------------: | :------------------------------------------------------------------------: | :---: | :-----------: | :---: | :-----: |
+|  PTop   |   Operating Temperature Range   |                                     -                                      |  -40  |       -       |  +85  |   °C    |
+| PTfull  | Full Accuracy Temperature Range |                                     -                                      |   0   |       -       |  +65  |   °C    |
+|   Pop   |    Operating Pressure Range     |                                     -                                      |  260  |       -       | 1260  |   hPa   |
+|  Pbits  |      Pressure Output Data       |                                     -                                      |   -   |      24       |   -   |  bits   |
+|  Psens  |      Pressure Sensitivity       |                                     -                                      |   -   |     4096      |   -   | LSB/hPa |
+| PAccRel | Relative Accuracy over Pressure |                 • P=800–1100&nbsp;hPa <br>• T = 25&nbsp;°C                 |   -   |     ±0.1      |   -   |   hPa   |
+|  PAccT  |        Absolute Accuracy        | • **After OPC**: Pop=0 to 65&nbsp;°C <br>• **No OPC**: Pop=0 to 65&nbsp;°C |   -   |  ±0.1 <br>±1  |   -   |   hPa   |
+| Pnoise  |   RMS Pressure Sensing Noise    |                          With embedded filtering                           |   -   |    0.0075     |   -   | hPa RMS |
+| ODRPres |    Pressure Output Data Rate    |                                     -                                      |   -   | 1/10/25/50/75 |   -   |   Hz    |
 ##### 5. 3-Axis Motion Sensor
 
 | Symbol |     Parameter     |             Test Condition             | Min.  | Typ.  | Max.  |   Unit   |
@@ -353,7 +353,7 @@ The Pressure Sensor is an LPS22HB from ST:
 |        |                   |            FS bit set to 11            |       | ±16.0 |       |    g     |
 |   So   |    Sensitivity    | FS bit set to 00; High-resolution mode |       |   1   |       | mg/digit |
 |        |                   |     FS bit set to 00; Normal mode      |       |   4   |       | mg/digit |
-|        |                   |    FS bit set to 00; Low Power mode    |       |  16   |       | mg/digit |
+|        |                   |    FS bit set to 00; Low-Power mode    |       |  16   |       | mg/digit |
 |        |                   | FS bit set to 01; High-resolution mode |       |   2   |       | mg/digit |
 |        |                   |     FS bit set to 01; Normal mode      |       |   8   |       | mg/digit |
 |        |                   |    FS bit set to 01; Low-power mode    |       |  32   |       | mg/digit |
@@ -393,7 +393,7 @@ The Ambient Light Sensor is an OPT3001 from TI:
   caption="iPEX onboard connector for the LTE antenna"
 />
 
-A PCB antenna (Figure 11) is included with the board. In case you want to use another antenna, keep in mind that you need to have the proper connector (iPEX) and have it tuned to the frequency band of operation in your region.
+A PCB antenna (**Figure 11**) is included with the board. In case you want to use another antenna, keep in mind that you need to have the proper connector (iPEX) and have it tuned to the frequency band of operation in your region.
 
 <rk-img
   src="/assets/images/wistrio/rak5010/datasheet/pcb-lte-antenna-with-pigtail.png"
@@ -431,7 +431,7 @@ The antenna environmental requirements are listed in the table below:
 
 ###### GPS Antenna Power Supply Control
 
-To support low power and long battery life, the active GPS antenna power supply should be shut down when the system doesn’t access the data from the GPS module. The GPS power supply is controlled by nRF52840 with MOSFET. The pin map of GPS_EN on Nrf52840 is P1.09, and the circuit is shown in Figures 13 and 14.
+To support low power and long battery life, the active GPS antenna power supply should be shut down when the system doesn’t access the data from the GPS module. The GPS power supply is controlled by nRF52840 with MOSFET. The pin map of GPS_EN on Nrf52840 is P1.09, and the circuit is shown in **Figure 13** and **Figure 14**.
 
 <rk-img
   src="/assets/images/wistrio/rak5010/datasheet/circuit-diagram.png"
@@ -456,17 +456,17 @@ To support low power and long battery life, the active GPS antenna power supply 
   caption="GPS Antenna"
 />
 
-| Item                                         | Specifications        | PET  |
-| -------------------------------------------- | --------------------- | ---- |
-| Range of Receiving Frequency                 | 1575.42±1.1           | ±2.5 |
-| Center Frequency (MHz) w/ 30mm2 (2 GND plane | 1575.42               | ±3.0 |
-| Bandwidth (MHz) (Return Loss ≤ -10dB)        | ≥10                   | ±0.5 |
-| VSWR (in Center Frequency)                   | ≤1.5                  | ±0.5 |
-| Gain (Zenith) (dBi Typ.) w/ 70mm2 GND Plane  | 4.5                   | ±0.5 |
-| Axial Ratio (dB) w/ 70mm2 GND Plane          | 3.0                   | ±0.2 |
-| Polarization                                 | Right-Handed Circular |      |
-| Impedance (Ω)                                | 50                    |      |
-| Frequency Temperature Coefficient (ppm/ºC)   | 0±10                  |      |
+| Item                                               | Specifications        | PET  |
+| -------------------------------------------------- | --------------------- | ---- |
+| Range of Receiving Frequency                       | 1575.42±1.1           | ±2.5 |
+| Center Frequency (MHz) w/ 30&nbsp;mm2 (2 GND plane | 1575.42               | ±3.0 |
+| Bandwidth (MHz) (Return Loss ≤ -10&nbsp;dB)        | ≥10                   | ±0.5 |
+| VSWR (in Center Frequency)                         | ≤1.5                  | ±0.5 |
+| Gain (Zenith) (dBi Typ.) w/ 70&nbsp;mm2 GND Plane  | 4.5                   | ±0.5 |
+| Axial Ratio (dB) w/ 70&nbsp;mm2 GND Plane          | 3.0                   | ±0.2 |
+| Polarization                                       | Right-Handed Circular |      |
+| Impedance (Ω)                                      | 50                    |      |
+| Frequency Temperature Coefficient (ppm/ºC)         | 0±10                  |      |
 
 ###### Amplifier Specifications
 
@@ -488,7 +488,7 @@ To support low power and long battery life, the active GPS antenna power supply 
 | Noise Coefficient | ≤ 2.0            | ≤ 2.0            | ≤ 2.0            |
 
 :::tip 📝 NOTE
-**1. High Temperature Test**: Soap in temperature (85&nbsp;°C) and humidity (95%) chamber for 24-hour and return to normal temperature (at least for 1-hour) without visual shape change. <br> **2. Low Temperature Test**: Soap in temperature (-40&nbsp;°C) chamber for 24-hour and return to normal temperature (at least for 1-hour) without visual shape change.
+**1. High-Temperature Test**: Soap in temperature (85&nbsp;°C) and humidity (95%) chamber for 24-hour and return to normal temperature (at least for 1-hour) without visual shape change. <br> **2. Low-Temperature Test**: Soap in temperature (-40&nbsp;°C) chamber for 24-hour and return to normal temperature (at least for 1-hour) without visual shape change.
 :::
 
 ###### Environmental Requirements
@@ -534,7 +534,7 @@ Functional operation of the device under the conditions listed is not advised. H
 |                 ESD                 |       2000        |
 
 :::warning ⚠️ WARNING
-The RAK5010, as any electronic equipment, is sensitive to electrostatic discharge (ESD). Improper handling can cause permanent damage to module.
+The RAK5010, as any electronic equipment, is sensitive to electrostatic discharge (ESD). Improper handling can cause permanent damage to the module.
 :::
 
 ##### Current Consumption
@@ -573,7 +573,7 @@ A suitable Li-Ion battery should have the following parameters:
 |     Capacity      | As required |
 | Discharge Current |  2&nbsp;A   |
 
-A 5&nbsp;V solar panel can be connected to the board via the P1 connector to serve for the purpose of charging the battery. 
+A 5&nbsp;V solar panel can be connected to the board via the P1 connector to serve the purpose of charging the battery. 
 
 
 :::warning ⚠️ WARNING
@@ -593,7 +593,7 @@ To avoid damage both to the battery and board:
 
 ##### Laboratory Testings
 
-Figures 20 and 21 display the average current consumptions based on the different test cases.
+**Figure 20** and **Figure 21** display the average current consumptions based on the different test cases.
 
 **Equipments**:
 
@@ -657,7 +657,7 @@ The table below lists the operation and storage temperature requirements:
 Download the latest firmware version of the RAK5010 WisTrio provided in the download link below. 
 
 :::warning ⚠️ WARNING
-RAK5010 and RAK5010-M have the same PCB, but their firmware are different and not interchangeable.
+RAK5010 and RAK5010-M have the same PCB, but their firmware is different and not interchangeable.
 :::
 
 | Model   | Version   | Source                                                                                              |

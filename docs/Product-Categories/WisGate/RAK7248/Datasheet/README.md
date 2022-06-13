@@ -194,7 +194,7 @@ The antenna's mechanical dimension is shown below:
 
 <rk-img
   src="/assets/images/wisgate/rak7248/datasheet/lora-antenna-dimension.png"
-  width="40%"
+  width="60%"
   caption="LoRa® Antenna Dimension (mm)"
 />
 
@@ -217,7 +217,7 @@ The GPS antenna with SMA Male Connector for the WisGate D4H LPWAN Gateway is sho
 
 <rk-img
   src="/assets/images/wisgate/rak7248/datasheet/gps-antenna.png"
-  width="30%"
+  width="40%"
   caption="GPS Antenna"
 />
 
@@ -227,7 +227,7 @@ The antenna's mechanical dimension is shown below:
 
 <rk-img
   src="/assets/images/wisgate/rak7248/datasheet/gps-antenna-dimension.png"
-  width="40%"
+  width="60%"
   caption="GPS Antenna Dimensions"
 />
 

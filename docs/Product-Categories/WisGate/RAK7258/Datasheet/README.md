@@ -50,7 +50,7 @@ The overview shows the circuit board of RAK7258. It also presents the block diag
 #### Circuit Board (Main Electronic Circuit Board)
 
 <rk-img
-  src="/assets/images/wisgate/rak7258/datasheet/board_overview.png"
+  src="/assets/images/wisgate/rak7258/datasheet/board_overview.svg"
   width="80%"
   caption="RAK7258 WisGate Edge Lite Circuit Board"
 />
