@@ -11,13 +11,9 @@ next: false
 
 # RAK1901 WisBlock Temperature and Humidity Sensor Datasheet
 
-## Overview
 
-<rk-img
-  src="/assets/images/wisblock/rak1901/datasheet/RAK1901.svg"
-  width="50%"
-  caption="RAK1901 WisBlock Sensor"
-/>
+
+## Overview
 
 ### Description
 
@@ -69,7 +65,6 @@ Only the I2C related pins, VDD and GND are connected to this module.
 />
 
 #### Sensors
-
 ##### Temperature Sensor
 
 | Parameter          | Conditions |    Value    | Units |
@@ -81,8 +76,7 @@ Only the I2C related pins, VDD and GND are connected to this module.
 | Response Time      |   τ 63%    |  <5 to 30   |   s   |
 | Long-term Drift    |    Typ.    |    <0.2     | °C/y  |
 
-###### Humidity Sensor
-
+###### Humidity Sensor 
 | Parameter          | Conditions |  Value   | Units |
 | ------------------ | :--------: | :------: | :---: |
 | Accuracy Tolerance |    Typ.    |   ±2.0   |  %RH  |
@@ -94,9 +88,7 @@ Only the I2C related pins, VDD and GND are connected to this module.
 | Long-term Drift    |    Typ.    |  <0.25   | %RH/y |
 
 #### Electrical Characteristics
-
 ##### Recommended Operating Conditions
-
 | Symbol            | Description                      | Min | Nom. | Max | Unit |
 | ----------------- | -------------------------------- | :-: | :--: | :-: | :--: |
 | V<sub>DD</sub>    | Power supply for the module      | 1.6 | 3.3  | 3.6 |  V   |
@@ -133,3 +125,4 @@ Only the I2C related pins, VDD and GND are connected to this module.
   width="100%"
   caption="RAK1901 WisBlock Sensor schematics"
 />
+

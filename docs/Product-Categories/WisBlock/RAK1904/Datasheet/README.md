@@ -15,6 +15,7 @@ next: false
 
 ### Description
 
+
 The RAK1904 WisBlock 3-axis Acceleration Sensor, part of the RAK Wireless Wisblock series, is an ultra-low-power high-performance three-axis linear accelerometer with a digital I2C interface. The device features ultra-low-power operational modes that allow advanced power saving and smart embedded functions.
 The accelerometer of the RAK1904 module can be dynamically configured to work in the scales of ±2g/±4g/±8g/±16g, and capable of measuring accelerations with output data rates from 1&nbsp;Hz to 5.3&nbsp;kHz.
 
@@ -23,8 +24,8 @@ The accelerometer of the RAK1904 module can be dynamically configured to work in
 * **Data acquisition rates**: from 1&nbsp;Hz to 5.3&nbsp;kHz 
 * **Module size**: 10 x 10&nbsp;mm
 
-## Specifications
 
+## Specifications
 ### Overview
 <!-- Insert Picture of Sensor with its dimensions -->
 
@@ -51,24 +52,15 @@ The hardware specification is categorized into six parts. It shows the chipset o
 
 The RAK1904 WisBlock 3-axis Acceleration Sensor comprises a standard WisIO connector. This WisIO connector allows the RAK1904 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the definition of the pinout are shown in **Figure 3**. 
 
-:::tip 📝 NOTE:
-Only the I2C related pins, interrupt pins, VDD, and GND are connected to this module.
-:::
-
-
 <rk-img
   src="/assets/images/wisblock/rak1904/datasheet/RAK1904_pin.png"
   width="60%"
   caption="RAK1904 WisBlock Sensor Pinout Diagram"
 />
 
-:::tip 📝 NOTE:
-Pins 10, 12, 13, and 15 are connected to the interrupt pins of LIS3DH, refer to the datasheet of LIS3DH for details.
-:::
 
 :::tip 📝 NOTE:
 - Only the I2C related pins, interrupt pins, VDD, and GND are connected to this module.
-
 - Pins 10, 12, 13, and 15 are connected to the interrupt pins of LIS3DH, refer to the datasheet of LIS3DH for details.
 :::
 
@@ -94,9 +86,7 @@ Pins 10, 12, 13, and 15 are connected to the interrupt pins of LIS3DH, refer to 
 |        |                   | FS bit set to 11  <br /> Low-power mode       |       |  192  |       | mg/digit |
 
 #### Electrical Characteristics
-
 ##### Recommended Operating Conditions
-
 | Symbol          | Description                 | Min. | Nom. | Max. | Unit |
 | --------------- | --------------------------- | :--: | :--: | :--: | :--: |
 | V<sub>DD</sub>  | Power supply for the module | 1.71 | 2.5  | 3.6  |  V   |
@@ -133,3 +123,4 @@ Figure 5 shows the schematic of the RAK1904 module.
   width="100%"
   caption="RAK1904 WisBlock Sensor schematics"
 />
+

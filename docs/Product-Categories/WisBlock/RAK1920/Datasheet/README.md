@@ -169,6 +169,7 @@ The I2C interface only supports 3.3&nbsp;V type of sensors. The reversed I2C int
 
 :::
 
+
 <rk-img
   src="/assets/images/wisblock/rak1920/datasheet/reserved-i2c-interface.svg"
   width="50%"

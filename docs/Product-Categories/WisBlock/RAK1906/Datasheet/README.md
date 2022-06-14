@@ -26,7 +26,6 @@ The RAK1906 WisBlock Environmental Sensor module, part of the RAK WisBlock Senso
 * **Module size**: 10 x 10&nbsp;mm
 
 ## Specifications
-
 ### Overview
 <!-- Insert Picture of Sensor with its dimensions -->
 
@@ -43,9 +42,10 @@ The RAK1906 module can be mounted on the slots: A, B, C, or D of a WisBlock Base
 
 The hardware specification is categorized into six parts. It shows the chipset of the module and discusses the pinouts, sensors, and the corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK1906 WisBlock Environmental Sensor.
 
-#### Chipset
+
+####  Chipset
 | Vendor | Part number |
-| --     | --          |
+| ------ | ----------- |
 | BOSCH  | BME680      |
 
 #### Pin Definition
@@ -64,9 +64,7 @@ Only the I2C related pin, VDD, and GND are connected to this module.
 
 
 #### Sensors
-
-##### Temperature Sensor
-
+##### Temperature Sensor 
 <table  style="text-align: center">
 <thead>
   <tr>
@@ -128,7 +126,6 @@ Only the I2C related pin, VDD, and GND are connected to this module.
 </table>
 
 ##### Humidity Sensor
-
 <table style="text-align: center">
 <thead>
   <tr>
@@ -198,7 +195,6 @@ Only the I2C related pin, VDD, and GND are connected to this module.
 </table>
 
 ##### Pressure Sensor
-
 <table style="text-align: center">
 <thead>
   <tr>
@@ -273,7 +269,6 @@ Only the I2C related pin, VDD, and GND are connected to this module.
 </table>
 
 ##### AQI Sensor
-
 <table style="text-align: center">
 <thead>
   <tr>
@@ -344,9 +339,7 @@ Only the I2C related pin, VDD, and GND are connected to this module.
 </table>
 
 #### Electrical Characteristics
-
 ##### Recommended Operating Conditions
-
 | Symbol            | Description                 | Min. | Nom. | Max. | Unit |
 | ----------------- | --------------------------- | :--: | :--: | :--: | :--: |
 | V<sub>DD</sub>    | Power supply for the module | 1.71 | 1.8  | 3.6  |  V   |

@@ -14,7 +14,8 @@ next: false
 ## Overview
 
 ### Description
-The RAK1903 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is a single-chip ambient light sensor, measuring the intensity of  light in the visible range. The precise spectral response and strong IR rejection of the device enables the RAK1903 module to accurately measure the intensity of light as seen by human eyes regardless of light sources. The strong IR rejection also aids in maintaining high accuracy when the industrial design requires to mount the sensor under dark glass due to aesthetics reasons. The RAK1903 module is designed for systems that create light-based experiences for humans. It is an ideal replacement for photodiodes, photoresistors, or other ambient light sensors with less visible range matching and IR rejection.
+
+The RAK1903 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is a single-chip ambient light sensor, measuring the intensity of light in the visible range. The precise spectral response and strong IR rejection of the device enables the RAK1903 module to accurately measure the intensity of light as seen by human eyes regardless of light sources. The strong IR rejection also aids in maintaining high accuracy when the industrial design requires to mount the sensor under dark glass due to aesthetic reasons. The RAK1903 module is designed for systems that create light-based experiences for humans. It is an ideal replacement for photodiodes, photoresistors, or other ambient light sensors with less visible range matching and IR rejection.
 
 ### Features 
 * **Measurement range**: 0.01 to 83865&nbsp;lux
@@ -23,7 +24,6 @@ The RAK1903 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is
 * **Module size**: 10 x 10&nbsp;mm
 
 ## Specifications
-
 ### Overview
 <!-- Insert Picture of Sensor with its dimensions -->
 
@@ -41,27 +41,18 @@ The RAK1903 module can be mounted on the slots: A, B, C, or D of the WisBase boa
 
 The hardware specification is categorized into six parts. It shows the chipset of the module and discusses the pinouts, sensors, and the corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK1903 WisBlock Ambient Light Sensor.
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 808827651 (Minor Changes in the following WisBlock)
 ####  Chipset
 | Vendor | Part number |
-| --     | --          |
+| ------ | ----------- |
 | TI     | OPT3001DNPR |
 
 #### Pin Definition
-<<<<<<< HEAD
 
 The RAK1903 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1903 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the definition of the pinout are shown in **Figure 3**. 
-=======
-The RAK1903 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1903 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the definition of the pinout are shown in Figure 3. 
->>>>>>> 808827651 (Minor Changes in the following WisBlock)
 
 :::tip 📝 NOTE:
 
-Only the I2C related pins, interrupt pins, VDD and GND are connected to this module.
+Only the I2C related pins, interrupt pins, VDD, and GND are connected to this module.
 
 :::
 
@@ -76,25 +67,6 @@ The pin12 or pin13 are connected to the INT of OPT3001DNPR (See **Figure 3**). T
 
 
 #### Sensors
-<<<<<<< HEAD
-
-##### Ambient Light Sensor
-
-| Parameter                                                   | Test Condition                                                                                    | Min. |     Typ.     |     Max.      |         Unit         |
-| ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ---- | :----------: | :-----------: | :------------------: |
-| Peak irradiance spectral responsibility                     |                                                                                                   |      |     550      |               |          nm          |
-| Resolution (LSB)                                            | Lowest full-scale range, RN[3:0] = 0000b                                                          |      |     0.01     |               |         lux          |
-| Full-scale illuminance                                      |                                                                                                   |      |   83865.6    |               |         lux          |
-| Measurement output result                                   | 0.64 lux per ADC code <br /> 2620.90 lux full-scale <br /> (RN[3:0] = 0110) <br /> 2000 lux input | 2812 |     3125     |     3437      |      ADC codes       |
-|                                                             |                                                                                                   | 1800 |     2000     |     2200      |         lux          |
-| Relative accuracy between gain ranges                       |                                                                                                   |      |     0.2%     |               |
-| Infrared response (850 nm)                                  |                                                                                                   |      |     0.2%     |               |
-| Light source variation (incandescent, halogen, fluorescent) | Bare device <br /> no cover glass                                                                 |      |      4%      |               |                      |
-| Linearity                                                   | Input luminance > 40 lux <br /> Input luminance < 40 lux                                          |      | 2% <br /> 5% |               |                      |
-| Measured drift across temperature                           | Input luminance = 2000 lux                                                                        |      |     0.01     |               |         %/°C         |
-| Dark condition, ADC output                                  | 0.01 lux per ADC code                                                                             |      |  0 <br /> 0  | 3 <br /> 0.03 | ADC codes <br /> lux |
-| Half-power angle                                            | 50% of full-power reading                                                                         |      |      47      |               |       degrees        |
-=======
 ##### Ambient Light Sensor   
 | Parameter                                                   | Test Condition                                                                                                   | Min. |     Typ.     |     Max.      |         Unit         |
 | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---- | :----------: | :-----------: | :------------------: |
@@ -110,12 +82,9 @@ The pin12 or pin13 are connected to the INT of OPT3001DNPR (See **Figure 3**). T
 | Measured drift across temperature                           | Input luminance = 2000&nbsp;lux                                                                                  |      |     0.01     |               |         %/°C         |
 | Dark condition, ADC output                                  | 0.01&nbsp;lux per ADC code                                                                                       |      |  0 <br /> 0  | 3 <br /> 0.03 | ADC codes <br /> lux |
 | Half-power angle                                            | 50% of full-power reading                                                                                        |      |      47      |               |       degrees        |
->>>>>>> 808827651 (Minor Changes in the following WisBlock)
 
 #### Electrical Characteristics
-
 ##### Recommended Operating Conditions
-
 | Symbol           | Description                 | Min. | Nom. | Max. | Unit |
 | ---------------- | --------------------------- | :--: | :--: | :--: | :--: |
 | V<sub>DD</sub>   | Power supply for the module | 1.6  |      | 3.6  |  V   |
@@ -143,6 +112,7 @@ The pin12 or pin13 are connected to the INT of OPT3001DNPR (See **Figure 3**). T
 />
 
 #### Schematic Diagram
+
 Figure 5 shows the schematic of the RAK1903 module.
 
 <rk-img
@@ -150,3 +120,4 @@ Figure 5 shows the schematic of the RAK1903 module.
   width="100%"
   caption="RAK1903 WisBlock Sensor schematics"
 />
+

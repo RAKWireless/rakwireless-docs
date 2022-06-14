@@ -26,9 +26,7 @@ The RAK1902 WisBlock Sensor module, part of the RAK Wireless WisBlock series, is
 * **Module Size**: 10 x 10&nbsp;mm
 
 ## Specifications
-
 ### Overview
-
 <!-- Insert Picture of Sensor with it's dimensions -->
 
 #### Mounting
@@ -42,11 +40,9 @@ The RAK1902 module can be mounted on the slots: A, B, C, or D of the WisBase boa
 
 ### Hardware
 
-
 The hardware specification is categorized into four parts. It shows the chipset of the module and discusses the pinouts, sensors, and the corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK1902 WisBlock Barometer Pressure Sensor.
 
-#### Chipset
-
+####  Chipset
 | Vendor | Part number |
 | ------ | ----------- |
 | ST     | LPS22HB     |
@@ -89,9 +85,7 @@ Only the I2C related pins, VDD, and GND are connected to this module.
 | ODR<sub>T</sub>  | Output Temperature Data Rate  |                     |       | 1 <br /> 10 <br /> 25 <br /> 50 <br /> 75 |       |   Hz   |
 
 #### Electrical Characteristics
-
 ##### Recommended Operating Conditions
-
 | Symbol           | Description                 | Min. | Nom. | Max. | Unit |
 | ---------------- | --------------------------- | :--: | :--: | :--: | :--: |
 | V<sub>DD</sub>   | Power supply for the module | 1.7  |      | 3.6  |  V   |
@@ -120,10 +114,11 @@ Only the I2C related pins, VDD, and GND are connected to this module.
 />
 
 #### Schematic Diagram
-Figure 5 shows the schematic of the RAK1902 module.
+**Figure 5** shows the schematic of the RAK1902 module. 
 
 <rk-img
   src="/assets/images/wisblock/rak1902/datasheet/RAK1902_schematics.png"
-  width="70%"
+  width="100%"
   caption="RAK1902 WisBlock Sensor schematics"
 />
+

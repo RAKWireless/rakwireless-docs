@@ -32,6 +32,7 @@ The RAK1910 WisBlock GNSS Location Module module, part of the RAK Wireless Wisbl
 
 #### Mounting
 The RAK1910 module can be mounted only in slot A of the RAK5005-O base board, or in slot D of the RAK19003 base board. **Figure 2** shows the mounting mechanism of the RAK1910 on a WisBase module, such as the RAK5005-O.
+
 <rk-img
   src="/assets/images/wisblock/rak1910/datasheet/RAK1910_mounting.png"
   width="50%"
