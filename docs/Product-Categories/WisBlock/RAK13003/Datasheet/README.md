@@ -74,7 +74,7 @@ The RAK13003 WisBlock IO Expansion Module comprises a standard expansion. The ex
 
 <rk-img
   src="/assets/images/wisblock/rak13003/datasheet/rak13003_pinout.svg"
-  width="70%"
+  width="80%"
   caption="RAK13003 WisBlock IO Expansion Module Pinout"
 />
 

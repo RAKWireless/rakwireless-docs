@@ -221,7 +221,6 @@ This guide uses two arrows. Refer to **Figure 4** for its representation.
 
 ###### WisBlock Core
 
-
 A WisBlock Core module is designed to be installed on the CPU slot of the RAK5005-O Base Board. As shown in **Figure 16**, the location is properly marked by silkscreen. Follow carefully the procedure defined in [attaching a WisConnector](/Product-Categories/WisBlock/RAK5005-O/Quickstart/#attaching-a-wisconnector/) section in order to attach a Core module. Once attached, fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the WisBlock Core.
 
 
@@ -425,7 +424,7 @@ The full specification of the [Solar Panel Connection](/Product-Categories/WisBl
 
 ### Software Setup
 
-The WisBlock Core is designed to be interfaced with other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the WisBlock Core. Before you continue, you should have either an [Arduino BSP or PlatformIO already setup](/Product-Categories/WisBlock/RAK5005-O/Quickstart/#software/).
+The WisBlock Core is designed to be interfaced with other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the WisBlock Core. Before you continue, you should have either an [Arduino BSP or PlatformIO already set up](/Product-Categories/WisBlock/RAK5005-O/Quickstart/#software/).
 
 #### WisBlock Examples Repository
 

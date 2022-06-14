@@ -54,7 +54,7 @@ The RAK15002 WisBlock SD Card Module comprises a standard WisConnector. The WisC
 
 <rk-img
   src="/assets/images/wisblock/rak15002/datasheet/rak15002_pinout.svg"
-  width="70%"
+  width="80%"
   caption="RAK15002 WisBlock SD Card Module Pinout"
 />
 

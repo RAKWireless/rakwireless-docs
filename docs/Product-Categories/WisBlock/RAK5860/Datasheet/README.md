@@ -59,11 +59,13 @@ The overview shows the realistic view of the RAK5860 module and its block diagra
   caption="RAK5860 Board Realistic View (Front)"
 />
 
+
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/board-overview-2.png"
   width="60%"
   caption="RAK5860 Board Realistic View (Back)"
 />
+
 
 #### Mounting Sketch
 
@@ -113,7 +115,7 @@ The table below shows the recommended operating conditions of the RAK5860 module
 | USB_VBUS   | USB Connection Detection    | 1.3      |          | 1.8      | V        |
 | USBPHY_3P3 | Power for USB PHY Circuit   |          | 3.3      |          | V        |
 
-Figure 5 shows the dimensions of the RAK5860 module.
+
 
 #### Mechanical Characteristics
 
@@ -285,7 +287,7 @@ The RAK5860 module’s main antenna has a reserve π-type matching circuit for b
   caption="Main Antenna Circuit"
 />
 
-##### GNNS Antenna
+##### GNSS Antenna
 
 The RAK5860 module is designed with an active antenna. The 3V3_S is from the WisIO connector, and a U.FL connector is used for the GNSS antenna. **Figure 18** shows the GNSS antenna circuit.
 
