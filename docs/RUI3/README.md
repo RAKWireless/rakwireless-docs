@@ -36,3 +36,8 @@ For you to compile and upload to the RAK module the RUI3 codes, you need to have
 
 The RAK LPWAN modules with RUI3 can also be interfaced to external host via [AT command mode](/RUI3/Serial-Operating-Modes/AT-Command-Manual/) and [Binary command mode](/RUI3/Serial-Operating-Modes/Binary-Command-Manual/). Custom serial interface can also be created by the user using [Custom Mode](/RUI3/Serial-Operating-Modes/Custom-Mode/).
 
+#### RUI3 Supported IDE
+
+- [Visual Studio Code](/RUI3/Supported-IDE/VSCode/)
+- [Visual Studio IDE](/Product-Categories/WisBlock/RAK4631-R/Quickstart/#programming-rak4631-r-via-visual-studio-ide)
+

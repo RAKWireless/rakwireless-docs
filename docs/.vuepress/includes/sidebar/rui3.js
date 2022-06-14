@@ -6,7 +6,7 @@ module.exports = {
         sidebarDepth: 4,
         children: [
           ['/RUI3/', 'Getting Started'],
-     
+          ['/RUI3/Supported-IDE/','RUI3 Supported IDE' ],    
         ]
       },
       {
