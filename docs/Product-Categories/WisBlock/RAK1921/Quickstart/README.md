@@ -107,7 +107,7 @@ Selecting RAK11310 as WisBlock Core.
 />
 
 
-2. The [Basic Sample Code for RAK1921](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK1921_OLED_SSD1306) will work on all WisBlock Core. You can open the the example codes depending on your WisBlock Core, as shown in Figures 6 to 8. 
+2. The [Basic Sample Code for RAK1921](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK1921_OLED_SSD1306) will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 6** to **Figure 8**. 
 
 <rk-img
   src="/assets/images/wisblock/rak1921/quickstart/rak4631-rak1921.png"
@@ -127,7 +127,7 @@ Selecting RAK11310 as WisBlock Core.
   caption="Opening RAK1921 example for RAK11310 WisBlock Core"
 />
 
-3. Before compiling the project, it is necessary to install the libraries. Just click on the links highlighted in red in Figure 9 to install each library.
+3. Before compiling the project, it is necessary to install the libraries. Just click on the links highlighted in red, as shown in **Figure 9**, to install each library.
 
 <rk-img
   src="/assets/images/wisblock/rak1921/quickstart/rak1921-library.png"
@@ -151,7 +151,7 @@ Selecting RAK11310 as WisBlock Core.
   caption="Install Adafruit BME680 Library"
 />
 
-6. After successful installation of the library, you can now select the right port and upload the code, as shown in Figures 12 to 14.
+6. After successful installation of the library, you can now select the right port and upload the code, as shown in **Figure 12** to **Figure 14**.
 
 Click on **Tools** -> **Port** then select the correct COM port.
 
@@ -177,8 +177,9 @@ Click on **Tools** -> **Port** then select the correct COM port.
 #### Testing an Alternative OLED Library for RAK11200
 
 1. In Arduino IDE, select **WisCore RAK11200 Board** on **Tools** -> **Boards Manager** -> **RAKwireless ESP32 modules**.
-2. Install **ThingPulse library** on RAK11200. 
-3. Open Arduino IDE then go to **Sketch** -> **Include Library** -> **Manage Library**. 
+
+2. Install **ThingPulse library** on RAK11200.
+3. Open Arduino IDE then go to **Sketch** -> **Include Library** -> **Manage Library**.
 4. In the Library Manager text area, search for **esp32 oled**, then click the **Install** button.
 
 <rk-img
@@ -207,7 +208,7 @@ You can check the other [SSD1306 examples](https://github.com/ThingPulse/esp8266
 
 You can import your ThingPulse arduino project to PlatformIO. To perform this test, you need to install [RAK_PATCH on PlatformIO](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md).
 
-1. Open **PlatformIO** -> **PIO Home** and select **Import Arduino Project**, as shown in Figure 18.
+1. Open **PlatformIO** then **PIO Home**, and select **Import Arduino Project**, as shown in **Figure 18**.
 
 <rk-img
   src="/assets/images/wisblock/rak1921/quickstart/pio-import.png"

@@ -13,7 +13,7 @@ tags:
 
 # RAK2305 WisBlock WiFi Interface Module
 
-Thank you for choosing **RAK2305 WisBlock WiFi Interface Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK2305 WisBlock WiFi Interface Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK2305 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

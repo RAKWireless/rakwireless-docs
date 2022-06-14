@@ -69,7 +69,7 @@ The overview covers the RAK2305 WisBlock board overview and block diagram. It al
 
 <rk-img
   src="/assets/images/wisblock/rak2305/datasheet/RAK2305-block-diagram.png"
-  width="50%"
+  width="60%"
   caption="RAK2305 Block Diagram"
 />
 

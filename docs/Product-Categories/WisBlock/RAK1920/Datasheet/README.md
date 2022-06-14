@@ -43,7 +43,7 @@ The RAK1920 module supports Mikroe’s Click Boards, Sparkfun’s Qwiic Connect,
 
 <rk-img
   src="/assets/images/wisblock/rak1920/datasheet/rak1920_interface.png"
-  width="50%"
+  width="60%"
   caption="RAK1920 sensor extension interface "
 />
 
@@ -73,24 +73,24 @@ The RAK1920 supports all the Click boards modules manufactured by Mikroe through
   caption="Mikroe’s mikroBUS® interface"
 />
 
-| Pin No. | Label    | Pin Definition                |
-|---------|----------|-------------------------------|
-| 1       | A0       | Analog                        |
-| 2       | RESET    | Reset                         |
-| 3       | SPI_CS   | SPI Chip Select               |
-| 4       | SPI_CK   | SPI Clock                     |
-| 5       | SPI_MISO | SPI Master Input Slave Output |
-| 6       | SPI_MOSI | SPI Master Output Slave Input |
-| 7       | +3.3&nbsp;V    | VCC 3.3&nbsp;V Power                |
-| 8       | GND      | Reference Ground              |
-| 9       | GND      | Reference Ground              |
-| 10      | +5&nbsp;V      | VCC 5.5&nbsp;V Power                |
-| 11      | I2C_SDA  | I2C Data                      |
-| 12      | I2C_SCL  | I2C Clock                     |
-| 13      | UART_TX  | UART Transmit                 |
-| 14      | UART_RX  | UART Receive                  |
-| 15      | INT      | Hardware Interrupt            |
-| 16      | PWM      | PWM Input                     |
+| Pin No. | Label       | Pin Definition                |
+| ------- | ----------- | ----------------------------- |
+| 1       | A0          | Analog                        |
+| 2       | RESET       | Reset                         |
+| 3       | SPI_CS      | SPI Chip Select               |
+| 4       | SPI_CK      | SPI Clock                     |
+| 5       | SPI_MISO    | SPI Master Input Slave Output |
+| 6       | SPI_MOSI    | SPI Master Output Slave Input |
+| 7       | +3.3&nbsp;V | VCC 3.3&nbsp;V Power          |
+| 8       | GND         | Reference Ground              |
+| 9       | GND         | Reference Ground              |
+| 10      | +5&nbsp;V   | VCC 5.5&nbsp;V Power          |
+| 11      | I2C_SDA     | I2C Data                      |
+| 12      | I2C_SCL     | I2C Clock                     |
+| 13      | UART_TX     | UART Transmit                 |
+| 14      | UART_RX     | UART Receive                  |
+| 15      | INT         | Hardware Interrupt            |
+| 16      | PWM         | PWM Input                     |
 
 
 ##### Grove Sensor Interfaces 
@@ -122,12 +122,12 @@ By default, the I2C is enabled in the RAK1920 module, but if it is required, the
 
 Table below shows Grove cable color and function definition.
 
-| **Pin** | **Color** | **Function** | 
-| ---- | ---- | ---- | 
-| 1 | Yellow | Digital IO1 /ADC CH1 /UART RX /I2C Cock | 
-| 2 | White | Digital IO2 /ADC CH2 /UART TX /I2C Data | 
-| 3 | Red | VCC | 
-| 4 | Black | GND | 
+| **Pin** | **Color** | **Function**                            |
+| ------- | --------- | --------------------------------------- |
+| 1       | Yellow    | Digital IO1 /ADC CH1 /UART RX /I2C Cock |
+| 2       | White     | Digital IO2 /ADC CH2 /UART TX /I2C Data |
+| 3       | Red       | VCC                                     |
+| 4       | Black     | GND                                     |
 
 
 ##### Qwiic Sensor Interface
@@ -150,12 +150,12 @@ The RAK1920 module supports sensors manufactured by SparkFun through the Qwiic C
 
 The table below shows the Qwiic Connect cable color and function definition:
 
-| **Pin** | **Color** | **Function** | 
-| ---- | ---- | ---- | 
-| 1 | Yellow | I2C Clock | 
-| 2 | Blue | I2C Data | 
-| 3 | Red | 3.3&nbsp;V | 
-| 4 | Black | GND | 
+| **Pin** | **Color** | **Function** |
+| ------- | --------- | ------------ |
+| 1       | Yellow    | I2C Clock    |
+| 2       | Blue      | I2C Data     |
+| 3       | Red       | 3.3&nbsp;V   |
+| 4       | Black     | GND          |
 
 
 ##### Reserved I2C Interface
@@ -170,8 +170,8 @@ The I2C interface only supports 3.3&nbsp;V type of sensors. The reversed I2C int
 :::
 
 <rk-img
-  src="/assets/images/wisblock/rak1920/datasheet/reserved-i2c-interface.png"
-  width="35%"
+  src="/assets/images/wisblock/rak1920/datasheet/reserved-i2c-interface.svg"
+  width="50%"
   caption="Reserved I2C Interface"
 />
 
@@ -184,7 +184,7 @@ Table below shows the absolute maximum ratings of the RAK1920 module:
 | **Symbol** | **Description**                | **Min.** | **Nom.** | **Max.** | **Unit** |
 | ---------- | ------------------------------ | -------- | -------- | -------- | -------- |
 | VBAT       | Power supply for the module    | -0.5     |          | 4.2      | V        |
-| Iout       | Boost converter output current |          |          | 50      | mA       |
+| Iout       | Boost converter output current |          |          | 50       | mA       |
 
 
 ##### Recommended Operating Conditions
