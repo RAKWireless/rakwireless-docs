@@ -2206,7 +2206,7 @@ This command is used to remove the configured multicast group.
 
 Example:
 
-You can only remove a group with an address that was already added.
+You can only remove a group with the address already added.
 ```
 AT+RMVMULC=11223344
 
