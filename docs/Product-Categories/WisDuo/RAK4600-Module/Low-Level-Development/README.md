@@ -4,7 +4,7 @@ rak_img: /assets/images/wisduo/rak4600-module/overview/RAK4600_Module_home.png
 next: ../AT-Command-Manual/
 prev: ../Quickstart/
 tags:
-  - wisgate
+  - wisduo
   - RAK4600
 ---
 

@@ -352,7 +352,7 @@ The RAK3172 Evaluation Board can be part of this ecosystem as a device, and the 
   caption="Selecting Cluster in TTN V3"
 />
 
-You can use the same login credentials on the TTN V2 if you have one. If you have no account yet, you need to create one.
+ You can use the same login credentials on the TTN V2 if you have one. If you have no account yet, you need to create one.
 
 2. To register as a new user to TTN, click on **Login with The Things ID** then select **register** on the next page, as shown in **Figure 24** and **Figure 25**.
 
@@ -448,7 +448,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
   caption="OTAA Device Information"
 />
 
-5. Next step is to setup **Frequency plan**, compatible **Regional Parameter version**, and **LoRaWAN class** supported. Then you can click **Join settings**
+5. Next step is to set up **Frequency plan**, compatible **Regional Parameter version**, and **LoRaWAN class** supported. Then you can click **Join settings**
 
 <rk-img
   src="/assets/images/wisduo/rak3172-evaluation-board/quickstart/image_12.png"
@@ -579,7 +579,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 />
 
 
-3. After configuration of the LoRaWAN parameters, the next step is to setup the EUIs and key. You need the use the values from the TTN console. 
+3. After the configuration of the LoRaWAN parameters, the next step is to set up the EUIs and key. You need the use the values from the TTN console. 
 
 
 - Device EUI: **1133557799224466**
@@ -702,7 +702,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
   caption="ABP Device Information"
 />
 
-6. Next step is to setup **Frequency plan**, compatible **Regional Parameter version**, and **LoRaWAN class** supported. In an ABP device, you also need to generate **Device Address** and **NwkSKey** (Network Session Keys). Then you can click **Application layers settings**
+6. Next step is to set up **Frequency plan**, compatible **Regional Parameter version**, and **LoRaWAN class** supported. In an ABP device, you also need to generate **Device Address** and **NwkSKey** (Network Session Keys). Then you can click **Application layers settings**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-evaluation-board/quickstart/image_3_abp.png"
@@ -819,7 +819,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
   caption="Configuring LoRa Parameters"
 />
 
-3. After configuration of the LoRaWAN parameters, the next step is to setup the device address and sessions keys. You need the use the values from the TTN console. 
+3. After configuration of the LoRaWAN parameters, the next step is to set up the device address and sessions keys. You need the use the values from the TTN console. 
 
 - Device Address: **260BDE80**
 - Application Session Key: **A585903A949C2B2D44B55E99E94CB533**
@@ -1159,7 +1159,7 @@ AT+BAND=4
 />
 
 
-3. After configuration of the LoRaWAN parameters, the next step is to setup the DevEUI and AppKey. You need the use the values from the Chirpstack device console. 
+3. After the configuration of the LoRaWAN parameters, the next step is to set up the DevEUI and AppKey. You need the use the values from the Chirpstack device console. 
 
 :::tip 📝 NOTE:
 The Application EUI parameter is not required in the ChirpStack platform; therefore, it is possible to use the same id as the Device EUI. 
@@ -1372,7 +1372,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
   caption="Configuring LoRa Parameters"
 />
 
-3. After configuration of the LoRaWAN parameters, the next step is to setup the device address and session keys. You need the use the values from the TTN device console. 
+3. After the configuration of the LoRaWAN parameters, the next step is to set up the device address and session keys. You need the use the values from the TTN device console. 
 
 - Device Address: **26011AF9**
 - Application Session Key: **4D42EC5CAF97F03D833CDAf5003F69E1**

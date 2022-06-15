@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisduo
   - RAK4600
-prev: ../Low-Level-Development/
+prev: ../AT-Command-Manual/
 next: false
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600%20CE%20Certification.zip]
