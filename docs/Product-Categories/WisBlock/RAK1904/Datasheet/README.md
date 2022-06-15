@@ -30,7 +30,7 @@ The accelerometer of the RAK1904 module can be dynamically configured to work in
 <!-- Insert Picture of Sensor with its dimensions -->
 
 #### Mounting
-The RAK1904 module can be mounted on the slots: A, B, C, or D of the WisBase board. **Figure 2** shows the mounting mechanism of the RAK1904 on a WisBase module, such as the RAK5005-O.
+The RAK1904 module can be mounted on the slots: A, B, C, or D of the WisBase board. **Figure 1** shows the mounting mechanism of the RAK1904 on a WisBase module, such as the RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak1904/datasheet/RAK19xx_mounting.png"
@@ -50,7 +50,7 @@ The hardware specification is categorized into six parts. It shows the chipset o
 
 #### Pin Definition
 
-The RAK1904 WisBlock 3-axis Acceleration Sensor comprises a standard WisIO connector. This WisIO connector allows the RAK1904 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the definition of the pinout are shown in **Figure 3**. 
+The RAK1904 WisBlock 3-axis Acceleration Sensor comprises a standard WisIO connector. This WisIO connector allows the RAK1904 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the definition of the pinout are shown in **Figure 2**. 
 
 <rk-img
   src="/assets/images/wisblock/rak1904/datasheet/RAK1904_pin.png"
@@ -99,7 +99,7 @@ The RAK1904 WisBlock 3-axis Acceleration Sensor comprises a standard WisIO conne
 
 ##### Board Dimensions
 
-**Figure 4** shows the dimensions and the mechanic drawing of the RAK1904 module.
+**Figure 3** shows the dimensions and the mechanic drawing of the RAK1904 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1904/datasheet/RAK19xx_mechanic_drawing.png"

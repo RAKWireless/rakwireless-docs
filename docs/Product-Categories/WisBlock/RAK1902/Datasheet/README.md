@@ -30,7 +30,7 @@ The RAK1902 WisBlock Sensor module, part of the RAK Wireless WisBlock series, is
 <!-- Insert Picture of Sensor with it's dimensions -->
 
 #### Mounting
-The RAK1902 module can be mounted on the slots: A, B, C, or D of the WisBase board. **Figure 2** shows the mounting mechanism of the RAK1902 on a WisBase module, such as the RAK5005-O.
+The RAK1902 module can be mounted on the slots: A, B, C, or D of the WisBase board. **Figure 1** shows the mounting mechanism of the RAK1902 on a WisBase module, such as the RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak1902/datasheet/RAK19xx_mounting.png"
@@ -48,7 +48,7 @@ The hardware specification is categorized into four parts. It shows the chipset 
 | ST     | LPS22HB     |
 
 #### Pin Definition
-The RAK1902 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1902 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the pinout definition are shown in **Figure 3**. 
+The RAK1902 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1902 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the pinout definition are shown in **Figure 2**. 
 
 :::tip 📝 NOTE:
 
@@ -98,7 +98,7 @@ Only the I2C related pins, VDD, and GND are connected to this module.
 
 ##### Board Dimensions
 
-**Figure 4** shows the dimensions and the mechanic drawing of the RAK1902 module.    
+**Figure 3** shows the dimensions and the mechanic drawing of the RAK1902 module.    
 
 <rk-img
   src="/assets/images/wisblock/rak1902/datasheet/RAK19xx_mechanic_drawing.png"
@@ -119,7 +119,7 @@ Only the I2C related pins, VDD, and GND are connected to this module.
 
 <rk-img
   src="/assets/images/wisblock/rak1902/datasheet/RAK1902_schematics.png"
-  width="100%"
+  width="70%"
   caption="RAK1902 WisBlock Sensor schematics"
 />
 

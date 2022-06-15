@@ -49,7 +49,7 @@ The hardware specification is categorized into four parts. It discusses the inte
 
 #### Interfaces
 
-The RAK1921 module is compatible with the RAK5005-O WisBoard baseboard. The RAK5005-O has reserved a dedicated I2C port with a 2.54&nbsp;mm header, as shown in the red rectangle in **Figure 2**, in which the RAK1921 can be attached. 
+The RAK1921 module is compatible with the RAK5005-O WisBoard baseboard. The RAK5005-O has reserved a dedicated I2C port with a 2.54&nbsp;mm header, as shown in the red rectangle in **Figure 1**, in which the RAK1921 can be attached. 
 
 <rk-img
   src="/assets/images/wisblock/rak1921/datasheet/interface.png"
@@ -65,7 +65,7 @@ Be careful in selecting the baseboard, and make sure to choose RAK5005-O because
 
 #### Pin Definition
 
-**Figure 3** shows the name of the pins available in the RAK1921 module. This module supports an I2C interface.  
+**Figure 2** shows the name of the pins available in the RAK1921 module. This module supports an I2C interface.  
 
 <rk-img
   src="/assets/images/wisblock/rak1921/datasheet/RAK1921-pin-definition.png"
