@@ -144,7 +144,7 @@ Use **Figure 2** and **Figure 3** as a reference to identify the antennas.
 - Connect your USB to a UART adapter to the pin header on the RAK4600 Breakout Board via a set of 4 Dupont lines. Use **Figure 4** as a reference on wiring the device properly.
 
 <rk-img
-  src="/assets/images/wisduo/rak4600-breakout-board/quickstart/interfacing/powering-and-interfacing.png"
+  src="/assets/images/wisduo/rak4600-breakout-board/quickstart/interfacing/powering-and-interfacing.svg"
   width="100%"
   caption="Powering up and interfacing with the board"
 />

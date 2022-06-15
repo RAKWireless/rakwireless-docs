@@ -50,8 +50,8 @@ The RF communication capabilities of the board (LoRa + BLE) make it suitable for
 The RAK4600 Breakout Board is shown in **Figure 1** which displays the top view of the module.
 
 <rk-img
-  src="/assets/images/wisduo/rak4600-breakout-board/datasheet/board-overview/cwr7pftlffhyogeuzahz.jpg"
-  width="35%"
+  src="/assets/images/wisduo/rak4600-breakout-board/datasheet/board-overview/cwr7pftlffhyogeuzahz.svg"
+  width="25%"
   caption="RAK4600 Breakout Board Illustration"
 />
 
@@ -211,7 +211,7 @@ The table below shows the power consumption of the RAK4600 Breakout Board:
 | Current Consumption | EU868     | 11.2                 | 13.3                 |         | μA   |
 |                     | US915     | 11.5                 | 12.5                 |         | μA   |
 
-##### Schematic Diagram
+#### Schematic Diagram
 
 
 <rk-img

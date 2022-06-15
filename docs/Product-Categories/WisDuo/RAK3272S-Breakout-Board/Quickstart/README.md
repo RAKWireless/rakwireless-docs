@@ -1553,11 +1553,7 @@ Refer to the table for the minimum hardware and software required to perform the
 Execute the following procedure to upgrade the firmware in Device Firmware Upgrade (DFU) mode through the USB interface.
 
 
-<<<<<<< HEAD
 1.  Download the latest application firmware of the RAK3272S.
-=======
-1.  Download the latest application firmware of the RAK3172.
->>>>>>> 71a76bb5d (Grammar and Typos for the remaining WisDuo and WisBlock)
 
     - [RAK3272S Firmware](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Datasheet/#firmware-os)
 

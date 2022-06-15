@@ -82,9 +82,9 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
 
 #### Interfaces
 
-| Module | Interfaces   |
-| ------ | ------------ |
-| RAK4270 | UART1, UART2, I2C, GPIO|
+| Module  | Interfaces              |
+| ------- | ----------------------- |
+| RAK4270 | UART1, UART2, I2C, GPIO |
 
 #### Pin Definition
 
@@ -120,24 +120,24 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
 
 ##### LoRa Transceiver IC Connection to RAK4270 Internal STM32
 
-| **LoRa IC Pin** | **STM32 GPIO**                   |
-| ------------ | ----------------------------------- | 
-| DIO1         | PB1                                 | 
-| DIO2         | PB5                                 | 
-| SPI1_SCK     | PA5                                 | 
-| SPI1_MISO    | PA6                                 | 
-| SPI1_MOSI    | PA7                                 | 
-| SPI1_NSS     | PA4                                 |
-| BUSY         | PB0                                 |
-| NRESET       | PA0                                 |
-| ANT_SW       | PA11                                |
+| **LoRa IC Pin** | **STM32 GPIO** |
+| --------------- | -------------- |
+| DIO1            | PB1            |
+| DIO2            | PB5            |
+| SPI1_SCK        | PA5            |
+| SPI1_MISO       | PA6            |
+| SPI1_MOSI       | PA7            |
+| SPI1_NSS        | PA4            |
+| BUSY            | PB0            |
+| NRESET          | PA0            |
+| ANT_SW          | PA11           |
 
 ##### RF Switch Control Logic table
 
-|**ANT_SW**|**DIO2**|**Condition**|
-|----------|--------|-------------|
-|    1     |     0  |  RX mode    |
-|    0     |     1  |  TX mode    |
+| **ANT_SW** | **DIO2** | **Condition** |
+| ---------- | -------- | ------------- |
+| 1          | 0        | RX mode       |
+| 0          | 1        | TX mode       |
 
 
 ::: tip 📝 Note
@@ -178,16 +178,16 @@ It is recommended to add four decoupling capacitors near the RAK4270 power suppl
 ##### Operating Frequencies
 
 
-| Module    | Region        | Frequency |
-| --------- | ------------- | --------- |
+| Module     | Region        | Frequency |
+| ---------- | ------------- | --------- |
 | RAK4270(L) | Europe        | EU433     |
-|           | China         | CN470     |
+|            | China         | CN470     |
 | RAK4270(H) | Europe        | EU868     |
-|           | North America | US915     |
-|           | Australia     | AU915     |
-|           | Korea         | KR920     |
-|           | Asia          | AS923     |
-|           | India         | IN865     |
+|            | North America | US915     |
+|            | Australia     | AU915     |
+|            | Korea         | KR920     |
+|            | Asia          | AS923     |
+|            | India         | IN865     |
 
 #### Electrical Characteristics
 
@@ -199,7 +199,6 @@ It is recommended to add four decoupling capacitors near the RAK4270 power suppl
   width="100%"
   caption="RAK4270 Schematic Diagram"
 />
-
 
 ##### Operating Voltage
 

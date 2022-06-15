@@ -66,7 +66,7 @@ This section covers the hardware and software specifications of the RAK811 Break
 The **RAK811 Breakout Board** is shown in **Figure 1** with its corresponding board dimension of **42&nbsp;mm x 25&nbsp;mm**. This board weighs at about **0.2&nbsp;kg**.
 
 <rk-img
-  src="/assets/images/wisduo/rak811-breakout-board/datasheet/2.dimensions.png"
+  src="/assets/images/wisduo/rak811-breakout-board/datasheet/2.dimensions.svg"
   width="45%"
   caption="RAK811 Breakout Board Dimensions"
 />

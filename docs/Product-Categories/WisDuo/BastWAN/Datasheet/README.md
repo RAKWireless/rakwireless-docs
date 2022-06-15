@@ -93,7 +93,7 @@ For the aforementioned reason, it is best you leave these exposed for programmin
 The proper connection between the DapLink tool and RAK3244 BastWAN Breakout Board is illustrated in **Figure 4**.
 
 <rk-img
-  src="/assets/images/wisduo/bastwan/datasheet/rak3244_daplink.png"
+  src="/assets/images/wisduo/bastwan/datasheet/rak3244_daplink.svg"
   width="45%"
   caption="RAK3244 BastWAN Breakout Board Pinout for DapLink tool"
 />
