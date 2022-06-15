@@ -11,6 +11,7 @@ next: false
 
 # RAK1906 WisBlock Environmental Sensor Datasheet
 
+
 ## Overview
 
 ### Description
@@ -348,6 +349,7 @@ Only the I2C related pin, VDD, and GND are connected to this module.
 | I<sub>DD</sub>    | Pressure Measure current    |  -   | 714  |  -   |  uA  |
 | I<sub>DD</sub>    | Temperature Measure current |  -   | 350  |  -   |  uA  |
 
+
 #### Mechanical Characteristics
 
 ##### Board Dimensions
@@ -377,3 +379,4 @@ Figure 5 shows the schematic of the RAK1906 module.
   width="100%"
   caption="RAK1906 WisBlock Environmental Sensor schematics"
 />
+

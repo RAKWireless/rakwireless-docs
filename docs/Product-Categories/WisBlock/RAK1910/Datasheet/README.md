@@ -173,6 +173,7 @@ The RAK1910 WisBlock GNSS Location Module module features a standard WisConnecto
 | I<sub>cc</sub>   | Acquisition                 |  -   |  22  |  -   |  mA  |
 | I<sub>cc</sub>   | Tracking                    |  -   | 17.5 |  -   |  mA  |
 
+
 #### Mechanical Characteristics
 
 ##### Board Dimensions

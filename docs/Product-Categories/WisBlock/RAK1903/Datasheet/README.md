@@ -85,11 +85,12 @@ The pin12 or pin13 are connected to the INT of OPT3001DNPR (See **Figure 3**). T
 
 #### Electrical Characteristics
 ##### Recommended Operating Conditions
-| Symbol           | Description                 | Min. | Nom. | Max. | Unit |
-| ---------------- | --------------------------- | :--: | :--: | :--: | :--: |
-| V<sub>DD</sub>   | Power supply for the module | 1.6  |      | 3.6  |  V   |
-| I<sub>shut</sub> | Shutdown current            |  -   | 0.4  |  -   |  uA  |
-| I<sub>DD</sub>   | Active VDD=3.6V             |  -   | 3.7  |  -   |  uA  |
+| Symbol           | Description                      | Min. | Nom. | Max. | Unit |
+| ---------------- | -------------------------------- | :--: | :--: | :--: | :--: |
+| V<sub>DD</sub>   | Power supply for the module      | 1.6  |      | 3.6  |  V   |
+| I<sub>shut</sub> | Shutdown current                 |  -   | 0.4  |  -   |  uA  |
+| I<sub>DD</sub>   | Active V<sub>DD</sub>=3.6&nbsp;V |  -   | 3.7  |  -   |  uA  |
+
 
 #### Mechanical Characteristics
 

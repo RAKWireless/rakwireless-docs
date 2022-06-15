@@ -58,11 +58,11 @@ The RAK1904 WisBlock 3-axis Acceleration Sensor comprises a standard WisIO conne
   caption="RAK1904 WisBlock Sensor Pinout Diagram"
 />
 
-
 :::tip 📝 NOTE:
 - Only the I2C related pins, interrupt pins, VDD, and GND are connected to this module.
 - Pins 10, 12, 13, and 15 are connected to the interrupt pins of LIS3DH, refer to the datasheet of LIS3DH for details.
 :::
+
 
 #### Sensors
 ##### Acceleration Sensor 
@@ -91,8 +91,9 @@ The RAK1904 WisBlock 3-axis Acceleration Sensor comprises a standard WisIO conne
 | --------------- | --------------------------- | :--: | :--: | :--: | :--: |
 | V<sub>DD</sub>  | Power supply for the module | 1.71 | 2.5  | 3.6  |  V   |
 | I<sub>pdn</sub> | Power-down current          |  -   | 0.5  |  -   |  uA  |
-| I<sub>DD </sub> | @50Hz                       |  -   |  11  |  -   |  uA  |
-| I<sub>DD </sub> | @1Hz                        |  -   |  2   |  -   |  uA  |
+| I<sub>DD </sub> | @50&nbsp;Hz                 |  -   |  11  |  -   |  uA  |
+| I<sub>DD </sub> | @1&nbsp;Hz                  |  -   |  2   |  -   |  uA  |
+
 
 #### Mechanical Characteristics
 
@@ -115,7 +116,6 @@ The RAK1904 WisBlock 3-axis Acceleration Sensor comprises a standard WisIO conne
 />
 
 #### Schematic Diagram
-
 Figure 5 shows the schematic of the RAK1904 module.
 
 <rk-img

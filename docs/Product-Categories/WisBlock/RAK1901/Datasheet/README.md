@@ -10,9 +10,6 @@ next: false
 ---
 
 # RAK1901 WisBlock Temperature and Humidity Sensor Datasheet
-
-
-
 ## Overview
 
 ### Description
@@ -94,7 +91,8 @@ Only the I2C related pins, VDD and GND are connected to this module.
 | V<sub>DD</sub>    | Power supply for the module      | 1.6 | 3.3  | 3.6 |  V   |
 | I<sub>sleep</sub> | Sleep current                    |  -  | 0.3  |  -  |  uA  |
 | I<sub>DD</sub>    | Measure current (normal mode)    |  -  | 430  |     |  uA  |
-| I<sub>DD</sub>    | Measure current (low power mode) |  -  | 270  |  -  |  uA  |
+| I<sub>DD</sub>    | Measure current (low-power mode) |  -  | 270  |  -  |  uA  |
+
 
 #### Mechanical Characteristics
 
