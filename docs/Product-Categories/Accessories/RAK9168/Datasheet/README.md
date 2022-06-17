@@ -69,7 +69,7 @@ The hardware specification is categorized into three parts. It shows the interfa
 
 <rk-img
   src="/assets/images/accessories/rak9168/poe-input.png"
-  width="50%"
+  width="40%"
   caption="RAK9168 PoE Input"
 />
 
@@ -81,19 +81,19 @@ The hardware specification is categorized into three parts. It shows the interfa
 
 <rk-img
   src="/assets/images/accessories/rak9168/5v-output.png"
-  width="50%"
+  width="40%"
   caption="RAK9168 PoE Output 5V"
 />
 
 
 - <b> 12&nbsp;V Version </b>
 
-**Figure 5** shows the DC 12&nbsp;V and the ethernet output for the 12&nbsp;V version.
+**Figure 6** shows the DC 12&nbsp;V and the ethernet output for the 12&nbsp;V version.
 
 <rk-img
   src="/assets/images/accessories/rak9168/12v-output.png"
-  width="50%"
-  caption="RAK9168 PoE Output 5V"
+  width="40%"
+  caption="RAK9168 PoE Output 12V"
 />
 
 #### Electrical Characteristics

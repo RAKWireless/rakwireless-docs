@@ -16,6 +16,7 @@ Thank you for choosing **RAK8213 WisLink Cellular mPCIe** in your awesome IoT Pr
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * [RAK8213 3D Model](https://downloads.rakwireless.com/3D_File/WisLink/PWB-RAK8213.stp)
+* [Quick Start Guide for Raspberry Pi and RAK LPWAN Concentrators](https://docs.rakwireless.com/Knowledge-Hub/Learn/Raspberry-Pi-and-RAK-LPWAN-Concentrators/)
 
 <!-- <rk-img
   src="/assets/images/wislink-lte/rak8213/datasheet/wgohpslr9gz7vggih3uh.png"

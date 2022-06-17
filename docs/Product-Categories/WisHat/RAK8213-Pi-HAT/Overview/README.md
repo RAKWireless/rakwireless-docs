@@ -16,7 +16,8 @@ Thank you for choosing **RAK8213 Pi HAT** in your awesome IoT Project! 🎉 To h
 
 * [Datasheet](../Datasheet/)
 * [RAK8213 Pi HAT 3D Model](https://downloads.rakwireless.com/3D_File/WisHat/PWB-RAK8213_PI_HAT.stp)
-
+* [Quick Start Guide for Raspberry Pi and RAK LPWAN Concentrators](https://docs.rakwireless.com/Knowledge-Hub/Learn/Raspberry-Pi-and-RAK-LPWAN-Concentrators/)
+  
 <!-- <rk-img
   :src="`${$frontmatter.static_root}/rak8213-pi-hat.png`"
   width="75%"

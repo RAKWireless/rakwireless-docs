@@ -18,6 +18,7 @@ Thank you for choosing **RAK2245 Pi HAT WisLink LPWAN Concentrator** in your awe
 * [Source Code Repository](https://github.com/RAKWireless/rak_common_for_gateway)
 * [RAK2245 Pi HAT ready to flash Firmware](https://downloads.rakwireless.com/LoRa/RAK2245-Pi-HAT/Firmware/RAK2245_Latest_Firmware.zip)
 * [RAK2245 Pi HAT 3D Model](https://downloads.rakwireless.com/3D_File/WisLink/PWB-RAK2245_PI_HAT.stp)
+* [Quick Start Guide for Raspberry Pi and RAK LPWAN Concentrators](https://docs.rakwireless.com/Knowledge-Hub/Learn/Raspberry-Pi-and-RAK-LPWAN-Concentrators/)
 
 <!-- <rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/datasheet/rak2245-pihat-overview.png"

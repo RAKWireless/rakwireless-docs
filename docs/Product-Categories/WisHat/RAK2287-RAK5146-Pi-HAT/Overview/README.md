@@ -16,7 +16,7 @@ Thank You For choosing **RAK2287/RAK5146 Pi HAT** in your awesome IoT Project! ð
 
 * [Datasheet](../Datasheet/)
 * [RAK2287 Pi HAT 3D Model](https://downloads.rakwireless.com/3D_File/WisHat/PWB-RAK2287_PI_HAT.stp)
-
+* [Quick Start Guide for Raspberry Pi and RAK LPWAN Concentrators](https://docs.rakwireless.com/Knowledge-Hub/Learn/Raspberry-Pi-and-RAK-LPWAN-Concentrators/)
 
 <!-- <rk-img
   :src="`${$frontmatter.static_root}/1.rak2287-pi-hat.png`"
