@@ -125,3 +125,31 @@ For example, the last four bits of the MAC address are 0F:01, and the IP address
   width="100%"
   caption="Web UI Login Page"
 />
+
+
+### Access the Internet
+
+#### Connect through Wi-Fi
+
+Go into the **Network>Wi-Fi** menu and make sure to select **Client** in the **Mode** field. Enter or click "**Scan**" to choose your **ESSID**, select the right **Encryption** method and enter the correct **Key**.
+
+<rk-img
+  src="/assets/images/wisgate/rak7268/quickstart/4.png"
+  width="100%"
+  caption="Connect through Wi-Fi Credentials"
+/>
+
+:::tip 📝 NOTE:
+Assuming you have entered the correct parameter values you should get an IP address assigned by your Wi-Fi router's (AP) built-in DHCP server. You can use this new IP address to log in via a web browser (same way as in AP mode).
+:::
+
+#### Connect through Ethernet
+
+Connect the one end of the Ethernet cable to the Ethernet on the Gateway and the other end to your router. The router’s DHCP server should assign an IP Address to the Gateway. You can change the default settings below if you wish (Full details in the [WisGateOS User Manual](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS/Overview/#overview)).
+
+<rk-img
+  src="/assets/images/wisgate/rak7268/quickstart/5.png"
+  width="100%"
+  caption="Connect through Ethernet Settings"
+/>
+

@@ -942,19 +942,14 @@ After login to the device using the web browser, the system log can be viewed fr
   caption="Troubleshooting"
 />
 
-## The Things Network (TTN)
-
-### Connecting to TTNv3
-
-
-At The Things Conference 2021, it was announced that The Things Network is upgrading to The Things Stack v3. 
+## The Things Network v3 (TTNv3)
 
 In this section, it will be shown how to connect RAK7258 WisGate Edge Lite to TTNv3. 
 
 To login into the TTNv3, head on to the TTN [site](https://eu1.cloud.thethings.network/console). If you already have a TTN account, you can use your The Things ID credentials to log in.
 
 <rk-img
-  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/1.home-page.png"
+  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/1.png"
   width="100%"
   caption="The Things Stack Home Page"
 />
@@ -963,29 +958,24 @@ To login into the TTNv3, head on to the TTN [site](https://eu1.cloud.thethings.n
 This tutorial is for the EU868 Frequency band.
 :::
 
-#### Register the Gateway
+### Register the Gateway
 
 1. To register a commercial gateway, choose **Register a gateway** (for new users that do not already have a registered gateway) or go to **Gateways** > **+ Add gateway** (for users that have registered gateways before).
 
 
 <rk-img
-  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/2.console-page.png"
+  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/2.png"
   width="100%"
-  caption="Console Page afer a successful login"
+  caption="Console Page after a successful login"
 />
 
 2. Fill in the needed information:
 
 - **Owner**: Automatically filled by The Things Stack, based on your account or created Organization.
-
 - **Gateway ID**: This will be the unique ID of your gateway in the Network. Note that the ID must contain only lowercase letters, numbers, and dashes (-).
-
 - **Gateway EUI**: A 64 bit extended unique identifier for your gateway. The gateway's EUI can be found either on the sticker on the casing or by going to the **LoRa Network Settings** page in the **LoRa Gateway** menu accessible via the Web UI. Instructions on how to access your gateway via Web UI can be found in the [Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7258/Quickstart/#access-the-gateway).
-
 - **Gateway name**: A name for your gateway.
-
 - **Gateway description (optional)**: Optional gateway description; can also be used to save notes about the gateway.
-
 - **Gateway Server address**: The address of the Gateway Server to connect to.
 
 :::tip 📝 NOTE:
@@ -995,33 +985,27 @@ This tutorial is based on using the EU868 frequency band, so the server address 
 - **Frequency plan**: The frequency plan used by the gateway.
 
 :::tip 📝 NOTE:
-For this tutorial, the Europe 863-870&nbsp;MHz (SF9 for RX2 - recommended) is used.
+For this tutorial, the Europe 863-870&nbsp;MHz (SF12 for RX2 - recommended) is used.
 :::
 
 - The other settings are optional and can be changed to satisfy your requirements.
 
 <rk-img
-  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/3.adding-a-gateway.png"
+  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/3.png"
   width="100%"
   caption="Adding a gateway"
 />
 
 3. To register your gateway, scroll down and click **Create gateway**.
 
-<rk-img
-  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/4.register-the-gateway.png"
-  width="100%"
-  caption="Registering the gateway"
-/>
-
 TTNv3 supports TLS server authentication and Client token, which requires a trust file and a key file to configure the gateway to successfully connect it to the network.
 
-#### Generating the Token
+### Generating the Token
 
 1. To generate a key file, from the **Overview page** of the registered Gateway navigate to **API keys**.
 
 <rk-img
-  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/5.overview-page.png"
+  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/4.png"
   width="100%"
   caption="Overview page"
 />
@@ -1029,7 +1013,7 @@ TTNv3 supports TLS server authentication and Client token, which requires a trus
 2. In the **API keys page**, choose **+ Add API key**.
 
 <rk-img
-  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/6.api.png"
+  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/5.png"
   width="100%"
   caption="API key page"
 />
@@ -1037,7 +1021,7 @@ TTNv3 supports TLS server authentication and Client token, which requires a trus
 3. In the **Name field**, type the name of your key (for example - mykey). Choose **Grant individual rights** and select **Link as Gateway to a Gateway for traffic exchange, i.e. read uplink and write downlink**.
 
 <rk-img
-  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/7.generate-api.png"
+  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/6.png"
   width="100%"
   caption="Generating an API key"
 />
@@ -1045,7 +1029,7 @@ TTNv3 supports TLS server authentication and Client token, which requires a trus
 4. To generate the key, choose **Create API key**. The following window will pop up, telling you to copy the key you just generated.
 
 <rk-img
-  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/8.copy-generated-key.png"
+  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/7.png"
   width="70%"
   caption="Copying the generated key"
 />
@@ -1056,14 +1040,14 @@ Copy the key and save it in a .txt file (or other), because you won’t be able 
 
 5.  Click **I have copied the key** to proceed. 
 
-#### Configuring the Gateway
+### Configuring the Gateway
 
 1. To configure the gateway access it via the Web UI. To learn how to do that, refer to the [Quickstart Guide](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7258/Quickstart/#access-the-gateway). 
 
 2. Navigate to **LoRa Network** > **Network Settings** > **Mode** drop-down menu > choose **Basics Station**.
 
 <rk-img
-  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/9.switching-mode.png"
+  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/8.png"
   width="100%"
   caption="Changing the working mode"
 />
@@ -1072,7 +1056,6 @@ Copy the key and save it in a .txt file (or other), because you won’t be able 
 
 
 - **Server**: For server, choose **LNS Server**.
-
 - **URI**: This is the link to The Things Stack server. 
 
 
@@ -1081,12 +1064,9 @@ For this tutorial, you are connecting the gateway to the European cluster. For E
 :::
 
 - **Port**: The LNS Server uses port 8887. Type in **8887**.
-
 - **Authentication Mode**: Choose **TLS server authentication and Client token**. When selected, the trust and the token field will show up.
-
-- **trust**: For trust, use the **Let’s Encrypt ISRG ROOT X1 Trust** certificate. You can download and check the [certificate](https://letsencrypt.org/certs/isrgrootx1.pem).
-  
-- **token**: This is the generated **API key**. The key must start with **Authorization:**. 
+  - **trust**: For trust, use the **Let’s Encrypt ISRG ROOT X1 Trust** certificate. You can download and check the [certificate](https://letsencrypt.org/certs/isrgrootx1.pem).
+  - **token**: This is the generated **API key**. The key must start with **Authorization:**. 
 
 For example, 
 
@@ -1099,7 +1079,7 @@ Replace **YOUR_API_KEY** with the key generated previously. Have in mind that th
 :::
 
 <rk-img
-  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/10.basic-station.png"
+  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/9.png"
   width="100%"
   caption="LoRa Basics Station settings"
 />
@@ -1109,14 +1089,13 @@ Replace **YOUR_API_KEY** with the key generated previously. Have in mind that th
 You can now see that your gateway is connected to TTNv3 as Basics Station.
 
 <rk-img
-  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/11.success.png"
+  src="/assets/images/wisgate/rak7258/supported-lora-network-servers/ttnv3/10.png"
   width="100%"
   caption="Successful connection"
 />
 
 
 ## LORIOT
-
 
 In this tutorial, you will learn how to connect RAK7258 WisGate Edge Lite to LORIOT. 
 

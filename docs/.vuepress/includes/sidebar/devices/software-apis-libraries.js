@@ -91,5 +91,15 @@ module.exports = {
         download: true,
         sidebarDepth: 4
       },
+    ],
+    '/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2-Extensions/': [
+      {
+        title: 'WisGateOS 2 Extensions',
+        path: '/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2-Extensions/Overview/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      },
     ]
   }

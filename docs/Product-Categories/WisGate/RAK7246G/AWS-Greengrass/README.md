@@ -6,23 +6,23 @@ tags:
   - Greengrass
   - wisgate
   - RAK7246G
-next: ../Datasheet/
+next: ../Supported-LoRa-Network-Servers/
 prev: ../Quickstart/
 
 ---
 
 # AWS IoT Greengrass v2
 
-To learn more about AWS IoT GreengrassV2, refer to aws documentation to see [how it works](https://docs.aws.amazon.com/greengrass/v2/developerguide/how-it-works.html) and [what's new](https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-v2-whats-new.html) about it.
+To learn more about AWS IoT GreengrassV2, refer to aws documentation to see [how it works](https://docs.aws.amazon.com/greengrass/v2/developerguide/how-it-works.html) and [what is new](https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-v2-whats-new.html) about it.
 
 
 ## Set Up Your Development Environment
 
 ### Tools Installation (IDEs, Toolchains, SKDs)
 
-- RAK7246 and RAK7246G are based on Raspberry Pi Zero(0) SBC. By default, the latest Raspbian OS based on Linux is used. More information and the available releases can be found [Raspberry Pi site](https://www.raspberrypi.com/software/).
+- RAK7246 and RAK7246G are based on Raspberry Pi Zero (0) SBC. By default, the latest Raspbian OS based on Linux is used. More information and the available releases can be found [Raspberry Pi site](https://www.raspberrypi.com/software/).
 - RAKwireless provides a ready-to-use image to be flashed on the SD card. You can find the latest firmware in the [RAK downloads](https://downloads.rakwireless.com/LoRa/NeoPi-Gateway-RAK7246/Firmware/RAK7246_Latest_Firmware.zip).
-- If you want to compile the code that runs the gateway by yourself, you can find it in the [GitHub repo](https://github.com/RAKWireless/rak_common_for_gateway).
+- If you want to compile the code that runs the gateway by yourself, you can find it in the [GitHub - RAKWireless/rak_common_for_gateway](https://github.com/RAKWireless/rak_common_for_gateway).
 - The main service is the [LoRa packet forwarder](https://github.com/Lora-net/packet_forwarder).
 
 For additional references, you can refer to the following RAK links:
@@ -46,7 +46,7 @@ Outlined steps in creating your account and permission are provided in this sect
 2. Create a user and grant permissions. 
 3. Open the AWS IoT console
 
-Pay special attention to the Notes.
+Pay special attention to the **Notes**.
 
 ## Create Resources in AWS IoT
 
@@ -55,7 +55,7 @@ Outlined steps in creating resources in AWS IoT are provided in this section. Fo
 1. Create an AWS IoT Policy.
 2. Create a thing object. 
 
-Pay special attention to the Notes.
+Pay special attention to the **Notes**.
 
  
 ## Install the AWS Command Line Interface
@@ -77,7 +77,7 @@ If you don’t need to build an image with Greengrass prerequisites, you can dow
 ### Flash Raspberry Image to SD Card
 
 1. Download the latest [Raspberry Pi OS Lite](https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit).
-2. Flash Raspberry Pi OS Lite to SD Card. Download the [balenaEtcher](https://www.balena.io/etcher/) software. 
+2. Flash Raspberry Pi OS Lite to SD card. Download the [balenaEtcher](https://www.balena.io/etcher/) software. 
     - There are options for Windows, macOS, and Linux. Clicking the **Download** button will provide you with the software directly, no installation is required.
 3. Flash Raspberry Pi OS Lite to SD Card.
     - For more information about the gateway firmware setup, refer to the [WisGate Developer Gateway Firmware Setup](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisGate-Developer-Gateway-Firmware-Burning/).
@@ -86,12 +86,12 @@ If you don’t need to build an image with Greengrass prerequisites, you can dow
 <rk-img
   src="/assets/images/wisgate/rak7246g/supported-lora-network-servers/aws/1.flash-raspberry-pi.png"
   width="80%"
-  caption="Flashing Raspberry Pi OS Lite to SD Card"
+  caption="Flashing Raspberry Pi OS Lite to SD card"
 />
 
 ### Enable SSH
 
-To enable SSH, create an empty file called **`ssh`** under disk **`boot`**,where you flash the image.
+To enable SSH, create an empty file called `ssh` under disk `boot`, where you will flash the image.
 
 ### Install and Configure
 
@@ -123,9 +123,9 @@ To enable SSH, create an empty file called **`ssh`** under disk **`boot`**,where
    ```bash
    $ sudo apt install -y openjdk-8-jdk
    ```
-6. Run the following command to download the AWS IoT Greengrass Core software. Make sure you are in the home directory or switch to your home directory using **`cd ~`**.
+6. Run the following command to download the AWS IoT Greengrass Core software. Make sure you are in the home directory or switch to your home directory using `cd ~`.
    ```bash
-   $ curl -s https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-nucleus-latest.zip > greengrass-nucleus-latest.zip
+   $ curl -s https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-nucleus-latest.zip > green
    ```
 7. By downloading this software, you agree to the [Greengrass Core Software License Agreement](https://greengrass-release-license.s3.us-west-2.amazonaws.com/greengrass-license-v1.pdf).
 8. Run the following command to unzip the software and remove the ZIP file. Replace **GreengrassInstaller** with the name of the destination folder.
@@ -136,7 +136,10 @@ To enable SSH, create an empty file called **`ssh`** under disk **`boot`**,where
 ### Build the Image
 
 1. Insert the SD card into your computer.
-2. Use the `sudo fdisk -l` command to check where is your SD card mounted.
+2. Use the following command to check where is your SD card mounted:
+   ```
+   sudo fdisk -l
+   ```
 3. Completely clone the SD card using the following command:
    ```bash
    $ sudo dd if=/dev/sdb of=RAK7246_with_greengrass_clone.img
@@ -147,17 +150,17 @@ To enable SSH, create an empty file called **`ssh`** under disk **`boot`**,where
     $ chmod +x pishrink.sh     
     $ sudo mv pishrink.sh /usr/local/bin  
     ```
-5. To shrink the image, using the following command:
+5. To shrink the image, use the following command:
    ```bash
    $ sudo pishrink.sh RAK7246_with_greengrass_clone.img RAK7246_with_greengrass.img
    ```
 6. Compress the image to `.zip`.
 
-## Verify If Java Is Available
+## Verify if Java is Available
 
 1. Insert the SD card into the device.
 2. Power on.
-3. Once the system has booted, verify that java is available using the command:
+3. Once the system has booted, verify that Java is available using the command:
     ```bash
     java --version
     ```
@@ -199,7 +202,7 @@ Run the following commands to provide the credentials to the AWS IoT Greengrass 
 #### Run the Installer
 
 1. Run the installer using the command provided. Modify the values as per your region, install directory, and set up the **thing** name. 
-2. Use the **--provision true** option to have the installer set up the "thing" and required policies for you. If you prefer to configure Greengrass manually, see the [online guide](https://docs.aws.amazon.com/greengrass/v2/developerguide/manual-installation.html).
+2. Use the `--provision true` option to have the installer set up the **thing** and required policies for you. If you prefer to configure Greengrass manually, see the [online guide](https://docs.aws.amazon.com/greengrass/v2/developerguide/manual-installation.html).
    ```bash
    sudo -E java -Droot="/greengrass/v2" -Dlog.store=FILE \
 
@@ -233,7 +236,7 @@ Run the following commands to provide the credentials to the AWS IoT Greengrass 
    ```bash
    aws greengrassv2 list-effective-deployments --core-device-thing-name thing-name
    ```
-5. When the status is SUCCEEDED, run the following command to verify that the Greengrass CLI is installed and runs on your device. Replace `/greengrass/v2` with the path to the base folder on your device as needed.
+5. When the status is SUCCEEDED, run the following command to verify whether the Greengrass CLI is installed and runs on your device. Replace `/greengrass/v2` with the path to the base folder on your device as needed.
    ```bash
    /greengrass/v2/bin/greengrass-cli help
    ```
@@ -244,7 +247,7 @@ In Greengrass v2, components can be created on the edge device and uploaded to t
 
 ### Create the Component on Your Edge Device
 
-To create, deploy, test, update, and manage a simple component on your device, refer to the following online guide:[**To create a Hello World component**](https://docs.aws.amazon.com/greengrass/v2/developerguide/getting-started.html). 
+To create, deploy, test, update, and manage a simple component on your device, refer to the following online guide: [**To create a Hello World component**](https://docs.aws.amazon.com/greengrass/v2/developerguide/getting-started.html). 
 
 ### Upload the Hello World Component
 
@@ -252,7 +255,7 @@ To upload your component to the cloud, where it can be deployed to other devices
 
 ## Debugging
 
-If you experience any issues, you can check the logs located in the **/var/log/** directory. 
+If you experience any issues, you can check the logs located in the `**/var/log/**` directory. 
 
 ## Troubleshooting
 

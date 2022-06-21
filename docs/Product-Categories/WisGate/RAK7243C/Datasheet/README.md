@@ -5,7 +5,8 @@ tags:
   - datasheet
   - wisgate
   - RAK7243C
-prev: ../Quickstart/
+prev: ../Supported-LoRa-Network-Servers/
+next: false
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Certification-Report/RAK7243_CE_Certificate.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Certification-Report/RAK7243_FCC_Certificate.zip]

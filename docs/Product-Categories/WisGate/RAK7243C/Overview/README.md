@@ -12,9 +12,10 @@ tags:
 
 # RAK7243C WisGate Developer D3+
 
-Thank you for choosing **RAK7243C WisGate Developer D3+ Gateway** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK7243C WisGate Developer D3+ Gateway** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentations for your product.
 
 * [Quick Start Guide](../Quickstart/)
+* [Supported LoRa Network Servers](../Supported-LoRa-Network-Servers/)
 * [Datasheet](../Datasheet/)
 * [Source Code Repository](https://github.com/RAKWireless/rak_common_for_gateway)
 * [WisGate Developer Gateway Firmware Setup](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisGate-Developer-Gateway-Firmware-Burning/)

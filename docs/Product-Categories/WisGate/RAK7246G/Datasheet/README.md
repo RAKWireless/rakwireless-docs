@@ -6,7 +6,7 @@ tags:
   - datasheet
   - wisgate
   - RAK7246G
-prev: ../AWS-Greengrass/
+prev: ../Supported-LoRa-Network-Servers/
 next: ../Testing-Report/
 ---
 

@@ -142,7 +142,6 @@ The operating buttons have five operations:
   caption="Operating Buttons"
 />
 
-
 3. **Code Area**
 
 You can edit the source code, which will be compiled and uploaded into the RAK device later in this area.
@@ -151,6 +150,77 @@ You can edit the source code, which will be compiled and uploaded into the RAK d
 
 5. **Output Message Area**
 You can see the output message in this area, whether it's failure or success information.
+
+### Software Setup
+
+To develop your custom RUI3 firmware using Arduino IDE, you need first to install RUI3 Board Support Package using the Arduino Boards Manager. Then you can then use [RUI3 Arduino APIs](https://docs.rakwireless.com/RUI3/Arduino-API/) for your intended application.
+
+#### Install RUI3 Board Support Package in Arduino IDE
+
+1. Open Arduino IDE and go to File -> Preferences.
+
+<rk-img
+  src="/assets/images/rui3/vs/arduino-preferences.png"
+  width="100%"
+  caption="Arduino IDE Preferences"
+/>
+
+2. To add the RUI3 Board Support on Arduino Boards list, edit the Additional Board Manager URLs. Click the icon, as shown below.
+
+<rk-img
+  src="/assets/images/rui3/vs/additional-boards.png"
+  width="90%"
+  caption="Modifying Additional Board Manager URLs"
+/>
+
+3. Copy the URL below and paste it on the highlighted field.
+
+```json
+https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json
+```
+
+If there are other URLs already there, just add them on the next line. After adding the URL, click OK.
+<rk-img
+  src="/assets/images/rui3/vs/preferences-url.png"
+  width="100%"
+  caption="Add additional board manager URLs"
+/>
+
+4. Restart the Arduino IDE an open the Boards Manager from Tools Menu.
+
+<rk-img
+  src="/assets/images/rui3/vs/boards-manager.png"
+  width="100%"
+  caption=" Opening Arduino Boards Manager"
+/>
+
+5. Write `RAK` in the search bar as shown in **Figure 17**. This will show the available RAKwireless module boards that you can add to your Arduino Board list.
+
+<rk-img
+  src="/assets/images/rui3/vs/rui3-bsp.png"
+  width="90%"
+  caption="Installing RUI3 Board Support Package"
+/>
+
+6. Now click on the area highlighted in blue to choose your preferred board: 
+
+Install RAKWireless RUI nRF Boards.
+
+<rk-img
+  src="/assets/images/rui3/vs/rui3-nrf.png"
+  width="90%"
+  caption="Installing RUI3 nRF Board Support Package"
+/>
+
+Install RAKWireless RUI STM32 Boards.
+
+<rk-img
+  src="/assets/images/rui3/vs/rui3-stm32.png"
+  width="90%"
+  caption="Installing RUI3 STM32 Board Support Package"
+/>
+
+7. To finish the installation click on the **Install** button.
 
 ## Visual Studio Code (Arduino Extension)
 
@@ -170,7 +240,7 @@ You can use Visual Studio Code by installing the Arduino Extension. The Arduino 
   caption="Visual Studio Code selecting the Extensions view"
 />
 
-2. The **Extensions** available are shown on the left side. On the **Extensions** text area, type **Arduino**, then click on the **Arduino for Visual Studio Code** icon as shown in **Figure 14**.
+2. The **Extensions** available are shown on the left side. On the **Extensions** text area, type **Arduino**, then click on the **Arduino for Visual Studio Code** icon as shown in **Figure 21**.
 
 <rk-img
   src="/assets/images/rui3/vscode/ext-arduino.png"
@@ -186,7 +256,7 @@ You can use Visual Studio Code by installing the Arduino Extension. The Arduino 
   caption="Installing Arduino for Visual Studio Code Extension"
 />
 
-4. To build the RUI3 examples, install the **Microsoft C/C++ Extensions Pack**. On the **Extensions** text area, type and select **C/C++ Extension Pack**, as shown in **Figure 16**. To finish, click the **Install** button.
+4. To build the RUI3 examples, install the **Microsoft C/C++ Extensions Pack**. On the **Extensions** text area, type and select **C/C++ Extension Pack**, as shown in **Figure 23**. To finish, click the **Install** button.
 
 <rk-img
   src="/assets/images/rui3/vscode/c-ext-pack.png"
@@ -238,7 +308,7 @@ https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main
   caption="Configuring RAK boards on Arduino Board Manager"
 />
 
-10. In some cases, it is possible to select the version to be installed, as shown in **Figure 22**.
+10. In some cases, it is possible to select the version to be installed, as shown in **Figure 29**.
 
 <rk-img
   src="/assets/images/rui3/vscode/rak4631-version.png"
@@ -247,10 +317,10 @@ https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main
 />
 
 
-11. If you want to change later your selected board and configure its specific settings, click the highlighted area shown in **Figure 23**.
+11. If you want to change later your selected board and configure its specific settings, click the highlighted area shown in **Figure 30**.
 
 <rk-img
-  src="/assets/images/rui3//vscode/board-manager-update.png"
+  src="/assets/images/rui3/vscode/board-manager-update.png"
   width="100%"
   caption="Modifying the Arduino Board Manager on Visual Studio Code"
 />
@@ -263,7 +333,7 @@ https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main
   caption="Select the Serial Port using extension configuration"
 />
 
-Alternatively, you can configure the serial port by clicking the COM port, as shown in the highlighted part of **Figure 25**.
+Alternatively, you can configure the serial port by clicking the COM port, as shown in the highlighted part of **Figure 32**.
 
 <rk-img
   src="/assets/images/rui3/vscode/select-port.png"
@@ -289,7 +359,7 @@ Alternatively, you can configure the serial port by clicking the COM port, as sh
   caption="Open Arduino Led Breathing"
 />
 
-2. **Figure 28** shows the two commonly used options for Arduino Visual Studio Code development: **Upload** and **Verify**. The icon highlighted in yellow is the **Arduino Upload** button, and the other one, in blue, is the **Arduino Verify** option.
+2. **Figure 35** shows the two commonly used options for Arduino Visual Studio Code development: **Upload** and **Verify**. The icon highlighted in yellow is the **Arduino Upload** button, and the other one, in blue, is the **Arduino Verify** option.
 
 <rk-img
   src="/assets/images/rui3/vscode/build-icons.png"
@@ -308,7 +378,7 @@ The F1 key or keyboard shortcut `<CTRL><SHIFT><P>` brings up the **Command Palet
 
 If you have PIO (PlatformIO) extension installed, you need to disable it for the workspace in use. The two extensions have conflicts with each other. 
 
-Select **Extensions** icon and type **PlatformIO** on the text area. Now click on the gear icon on PlatformIO, then select the **Disable (Workspace)** option, as shown in **Figure 29**.
+Select **Extensions** icon and type **PlatformIO** on the text area. Now click on the gear icon on PlatformIO, then select the **Disable (Workspace)** option, as shown in **Figure 36**.
 
 <rk-img
   src="/assets/images/rui3/vscode/pio-disable.png"
@@ -328,7 +398,7 @@ Both PlatformIO and Arduino extension in Visual Studio Code use the same keyboar
   caption="Open Arduino Upload shortcut"
 />
 
-2. Click the **pen** icon, as shown in **Figure 31**.
+2. Click the **pen** icon, as shown in **Figure 38**.
 
 <rk-img
   src="/assets/images/rui3/vscode/arduino-shortcut.png"
@@ -346,7 +416,7 @@ Both PlatformIO and Arduino extension in Visual Studio Code use the same keyboar
 
 #### Faster Build Configuration
 
-For your sketch to compile faster, edit the `arduino.json` file in the `.vscode` folder of your sketch, then set the path to the `build` folder. Now the Visual Studio Code will compile only the changed files and not the whole source code.
+For your sketch to compile faster, edit the `arduino.json` file in the folder `.vscode` of your sketch, then set the path to the `build` folder. Now the Visual Studio Code will compile only the changed files and not the whole source code.
 
 ```json
 "output" : "build"
@@ -373,7 +443,7 @@ Check the new **build** folder on Visual Studio Code Explorer.
 
 #### Visual Studio IDE Download and Installation
 
-If you don't have Visual Studio IDE yet, download the installer on [Visual Studio IDE Community 2019](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes), as shown in **Figure 35**.
+If you don't have Visual Studio IDE yet, download the installer on [Visual Studio IDE Community 2019](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes), as shown in **Figure 42**.
 
 
 <rk-img
@@ -517,6 +587,26 @@ https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main
   width="90%"
   caption="Arduino RAKwireless Board Manager"
 />
+
+Now click on the area highlighted in blue to choose your preferred board: 
+
+Install RAKWireless RUI nRF Boards.
+
+<rk-img
+  src="/assets/images/rui3/vs/rui3-nrf.png"
+  width="90%"
+  caption="Installing RUI3 nRF Board Support Package"
+/>
+
+Install RAKWireless RUI STM32 Boards.
+
+<rk-img
+  src="/assets/images/rui3/vs/rui3-stm32.png"
+  width="90%"
+  caption="Installing RUI3 STM32 Board Support Package"
+/>
+
+7. To finish the installation click on the **Install** button.
 
 ::: tip 📝 NOTE   
 If the examples do not appear on the Micro Explorer window, then you need to restart Visual Studio IDE.

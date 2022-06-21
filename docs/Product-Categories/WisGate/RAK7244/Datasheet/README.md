@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisgate
   - RAK7244
-prev: ../Quickstart/
+prev: ../Supported-LoRa-Network-Servers/
 next: false
 certifications:
   - [RoHS, https://downloads.rakwireless.com/LoRa/Developer-LoRaWAN-Gateway-RAK7244%26RAK7244P/Certification/ROHS-ATL202012091807R01-Report.pdf]

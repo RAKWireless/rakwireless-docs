@@ -53,6 +53,22 @@ module.exports = {
       sidebarDepth: 4
     },
     {
+      title: 'Supported LoRa Network Servers',
+      path: '/Product-Categories/WisGate/RAK7243/Supported-LoRa-Network-Servers/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/WisGate/RAK7243/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
       title: 'Miscellaneous',
       collapsable: false,
       sidebarDepth: 4,
@@ -79,14 +95,21 @@ module.exports = {
       sidebarDepth: 4
     },
     {
+      title: 'Supported LoRa Network Servers',
+      path: '/Product-Categories/WisGate/RAK7243C/Supported-LoRa-Network-Servers/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
       title: 'Datasheet',
       path: '/Product-Categories/WisGate/RAK7243C/Datasheet/',
       collapsable: false,
       nested: true,
       download: true,
       sidebarDepth: 4
-    },
-
+    }
   ],
 
   '/Product-Categories/WisGate/RAK7244/': [{
@@ -100,6 +123,14 @@ module.exports = {
     {
       title: 'Quick Start Guide',
       path: '/Product-Categories/WisGate/RAK7244/Quickstart/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Supported LoRa Network Servers',
+      path: '/Product-Categories/WisGate/RAK7244/Supported-LoRa-Network-Servers/',
       collapsable: false,
       nested: true,
       download: true,
@@ -126,6 +157,22 @@ module.exports = {
     {
       title: 'Quick Start Guide',
       path: '/Product-Categories/WisGate/RAK7244C/Quickstart/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Supported LoRa Network Servers',
+      path: '/Product-Categories/WisGate/RAK7244C/Supported-LoRa-Network-Servers/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/WisGate/RAK7244C/Datasheet/',
       collapsable: false,
       nested: true,
       download: true,
@@ -160,6 +207,14 @@ module.exports = {
     {
       title: 'AWS IoT Greengrass',
       path: '/Product-Categories/WisGate/RAK7246G/AWS-Greengrass/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Supported LoRa Network Servers',
+      path: '/Product-Categories/WisGate/RAK7246G/Supported-LoRa-Network-Servers/',
       collapsable: false,
       nested: true,
       download: true,
@@ -460,6 +515,14 @@ module.exports = {
 {
   title: 'Quick Start Guide',
   path: '/Product-Categories/WisGate/RAK7289/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Supported LoRa Network Servers',
+  path: '/Product-Categories/WisGate/RAK7289/Supported-LoRa-Network-Servers/',
   collapsable: false,
   nested: true,
   download: true,
