@@ -28,7 +28,7 @@ The board itself has the RAK4600 at its core, integrating an **nRF52832 MCU** an
 
 The board complies with **LoRaWAN 1.0.2 specification**. It also supports Lora P2P Point-to-Point communication. 
 
-The RF communication capabilities of the board (LoRa + BLE) make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, and personal area networks applications (health/fitness sensors and monitors).
+The RF communication capabilities of the board (LoRa + BLE) make it suitable for a variety of applications in the IoT field, such as home automation, sensor networks, building automation, and personal area networks applications (health/fitness sensors and monitors).
 
 ### Features
 
@@ -47,17 +47,17 @@ The RF communication capabilities of the board (LoRa + BLE) make it suitable for
 
 ### Overview
 
-The RAK4600 Breakout Board is shown in Figure 1 that displays the top view of the module.
+The RAK4600 Breakout Board is shown in **Figure 1** which displays the top view of the module.
 
 <rk-img
-  src="/assets/images/wisduo/rak4600-breakout-board/datasheet/board-overview/cwr7pftlffhyogeuzahz.jpg"
-  width="35%"
+  src="/assets/images/wisduo/rak4600-breakout-board/datasheet/board-overview/cwr7pftlffhyogeuzahz.svg"
+  width="25%"
   caption="RAK4600 Breakout Board Illustration"
 />
 
 ### Hardware
 
-Hardware specification is categorized into five parts that covers the interfacing, pinouts, and its corresponding functions and diagrams. It also covers the RF and electrical parameters that include the tabular data of the functionalities and standard values of the RAK4600 Breakout Board.
+Hardware specification is categorized into five parts. It covers the interfacing, pinouts and their corresponding functions and diagrams. It also covers the RF and electrical parameters that include the tabular data of the functionalities and standard values of the RAK4600 Breakout Board.
 
 
 #### Interfaces
@@ -77,7 +77,7 @@ For the aforementioned reason, it is best you leave these exposed for programmin
 
 ##### UART Port
 
-There is one UART interface on RAK4600 Breakout Board:
+There is one UART interface on the RAK4600 Breakout Board:
 
 - **USART1** – recommended for debugging/firmware update
 
@@ -108,16 +108,16 @@ The pin definitions of the RAK4600 Breakout Board are shown in the following tab
 
 ##### J7 Pin Definitions
 
-| **Pin** | **Name**  | **I/O** | **Description**                              | **Alternate functions**                                 |
-| ------- | --------- | ------- | -------------------------------------------- | ------------------------------------------------------- |
-| 1       | P0.18     | I/O     | GPIO NRF52832 P0.18                          | GPIO, Single wire output, Trace port output             |
-| 2       | P0.19     | I/O     | GPIO NRF52832 P0.19                          | GPIO                                                    |
-| 3       | NFC1      | I/O     | NFC antenna connection GPIO (NRF52832 P0.09) | NFC antenna connection<br>GPIO                          |
-| 4       | NFC2      | I/O     | NFC antenna connection GPIO (NRF52832 P0.10) | NFC antenna connection<br>GPIO                          |
-| 5       | SWDIO     | I/O     | SWD Programming                              | Serial wire debug I/O for debug and programming         |
-| 6       | SWCLK     | I/O     | SWD Programming                              | Serial wire debug clock input for debug and programming |
-| 7       | I2C_SCL   | I/O     | I2C (GPIO NRF52832 P0.12)                    | GPIO                                                    |
-| 8       | I2C_SDA   | I/O     | I2C (GPIO NRF52832 P0.13)                    | GPIO                                                    |
+| **Pin** | **Name** | **I/O** | **Description**                              | **Alternate functions**                                 |
+| ------- | -------- | ------- | -------------------------------------------- | ------------------------------------------------------- |
+| 1       | P0.18    | I/O     | GPIO NRF52832 P0.18                          | GPIO, Single wire output, Trace port output             |
+| 2       | P0.19    | I/O     | GPIO NRF52832 P0.19                          | GPIO                                                    |
+| 3       | NFC1     | I/O     | NFC antenna connection GPIO (NRF52832 P0.09) | NFC antenna connection<br>GPIO                          |
+| 4       | NFC2     | I/O     | NFC antenna connection GPIO (NRF52832 P0.10) | NFC antenna connection<br>GPIO                          |
+| 5       | SWDIO    | I/O     | SWD Programming                              | Serial wire debug I/O for debug and programming         |
+| 6       | SWCLK    | I/O     | SWD Programming                              | Serial wire debug clock input for debug and programming |
+| 7       | I2C_SCL  | I/O     | I2C (GPIO NRF52832 P0.12)                    | GPIO                                                    |
+| 8       | I2C_SDA  | I/O     | I2C (GPIO NRF52832 P0.13)                    | GPIO                                                    |
 
 ##### J8 Pin Definitions
 
@@ -162,7 +162,7 @@ The pin definitions of the RAK4600 Breakout Board are shown in the following tab
 The LoRa Transceiver IC Connection pins are not exposed.
 :::
 
-##### RF Switch control logic table
+##### RF Switch Control Logic Table
 
 | **LoRa Mode** | **VCTL1 GPIO** | **VCTL2 GPIO** |
 | :------------ | :------------: | :------------: |
@@ -194,15 +194,15 @@ The RAK4600 Breakout Board supports the following LoRa bands:
 
 ##### Power Consumption
 
-The table below shows the power consumption of RAK4600 Breakout Board:
+The table below shows the power consumption of the RAK4600 Breakout Board:
 
-| **Item**                        | **Power<br>Consumption** | **Condition**                  |
-| ------------------------------- | ------------------------ | ------------------------------ |
-| Tx mode LoRa @20&nbsp;dBm       | 125&nbsp;mA              | LoRa @ PA_BOOST & BT sleep     |
-| Tx mode LoRa @17&nbsp;dBm       | 92&nbsp;mA               | LoRa @ PA_BOOST & BT sleep     |
-| Tx mode BT @4&nbsp;dBm          | 9&nbsp;mA                | BT Tx mode & LoRa sleep        |
-| Rx mode LoRa<br>@37.5&nbsp;Kbps | 17&nbsp;mA               | LoRa @ Receive mode & BT sleep |
-| Rx mode BT @2&nbsp;Mbps         | 11.5&nbsp;mA             | BT Rx mode & LoRa sleep        |
+| **Item**                        | **Power Consumption** | **Condition**                  |
+| ------------------------------- | --------------------- | ------------------------------ |
+| Tx mode LoRa @20&nbsp;dBm       | 125&nbsp;mA           | LoRa @ PA_BOOST & BT sleep     |
+| Tx mode LoRa @17&nbsp;dBm       | 92&nbsp;mA            | LoRa @ PA_BOOST & BT sleep     |
+| Tx mode BT @4&nbsp;dBm          | 9&nbsp;mA             | BT Tx mode & LoRa sleep        |
+| Rx mode LoRa<br>@37.5&nbsp;Kbps | 17&nbsp;mA            | LoRa @ Receive mode & BT sleep |
+| Rx mode BT @2&nbsp;Mbps         | 11.5&nbsp;mA          | BT Rx mode & LoRa sleep        |
 
 ##### Sleep Current
 
@@ -211,7 +211,7 @@ The table below shows the power consumption of RAK4600 Breakout Board:
 | Current Consumption | EU868     | 11.2                 | 13.3                 |         | μA   |
 |                     | US915     | 11.5                 | 12.5                 |         | μA   |
 
-##### Schematic Diagram
+#### Schematic Diagram
 
 
 <rk-img

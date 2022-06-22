@@ -15,11 +15,11 @@ tags:
 
 ### Description
 
-RAK3272S Breakout Board is specifically designed to allow easy access to the pins on the board in order to simplify development and testing. The breakout board footprint is based on the XBee form factor and its main purpose is to allow the RAK3172 stamp module pins to be transferred to 2.54&nbsp;mm headers.
+RAK3272S Breakout Board is specifically designed to allow easy access to the pins on the board in order to simplify development and testing. The breakout board footprint is based on the XBee form factor, and its main purpose is to allow the RAK3172 stamp module pins to be transferred to 2.54&nbsp;mm headers.
 
-The board itself has the RAK3172 at its core, integrating a STM32WLE5CC chip, It has Ultra-Low Power Consumption of 1.69&nbsp;uA in sleep mode 
+The board itself has the RAK3172 at its core, integrating a STM32WLE5CC chip. It has Ultra-Low Power Consumption of 1.69&nbsp;uA in sleep mode.
 
-This module complies with Class A, B & C of LoRaWAN 1.0.3 specifications. It also supports LoRa Point-to-Point (P2P) communication mode which helps you in implementing your own customized long-range LoRa network quickly.
+This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications. It also supports LoRa Point-to-Point (P2P) communication mode, which helps you in implementing your own customized long-range LoRa network quickly.
 
 ### Features
 
@@ -35,7 +35,7 @@ This module complies with Class A, B & C of LoRaWAN 1.0.3 specifications. It als
 
 ### Overview
 
-The top view of the RAK3272S Breakout Board is shown in Figure 1.
+The top view of the RAK3272S Breakout Board is shown in **Figure 1**.
 
 
 <rk-img
@@ -76,7 +76,7 @@ Only one I2C and SPI interface of RAK3272S:
 
 ##### RF Interface
 
-**J3** is soldered to the antenna connector. Depending on your choice, it can come with either SMA or IPEX style connector. Make sure to select the one you need when ordering.
+**J3** is soldered to the antenna connector. Depending on your choice, it comes with either SMA or IPEX style connector. Make sure to select the one you need when ordering.
 
 #### Pin Definition
 
@@ -124,19 +124,19 @@ The tables below show the pin definition of the RAK3272S Breakout Board:
 
 #### RF Characteristics
 
-The RAK3272S module supports the LoRaWAN bands shown in table below. When buying a RAK3272S module, pay attention to specify the correct core module RAK3372PL or RAK3372 for your region. In which L for low-frequency regions, no suffix(RAK3172P) means High-frequency.
+The RAK3272S module supports the LoRaWAN bands shown in the table below. When buying a RAK3272S module, pay attention to specify the correct core module RAK3372PL or RAK3372 for your region. In which L for low-frequency regions, no suffix (RAK3172P) means High-frequency.
 
-| Module    | Core Module | Region        | Frequency |
-| --------- | ----------- | ------------- | --------- |
-| RAK3272SL | RAK3172PL   | Europe        | EU433     |
-|           | RAK3172PL   | China         | CN470     |
-| RAK3272S  | RAK3172P    | Europe        | EU868     |
-|           | RAK3172P    | North America | US915     |
-|           | RAK3172P    | Australia     | AU915     |
-|           | RAK3172P    | Korea         | KR920     |
-|           | RAK3172P    | Asia          | AS923-1/2/3/4     |
-|           | RAK3272P    | India         | IN865     |
-|           | RAK3272P    | Russia        | RU864     |
+| Module    | Core Module | Region        | Frequency     |
+| --------- | ----------- | ------------- | ------------- |
+| RAK3272SL | RAK3172PL   | Europe        | EU433         |
+|           | RAK3172PL   | China         | CN470         |
+| RAK3272S  | RAK3172P    | Europe        | EU868         |
+|           | RAK3172P    | North America | US915         |
+|           | RAK3172P    | Australia     | AU915         |
+|           | RAK3172P    | Korea         | KR920         |
+|           | RAK3172P    | Asia          | AS923-1/2/3/4 |
+|           | RAK3272P    | India         | IN865         |
+|           | RAK3272P    | Russia        | RU864         |
 
 #### Electrical Characteristics
 
@@ -165,7 +165,7 @@ The RAK3272S module supports the LoRaWAN bands shown in table below. When buying
 
 #### Mechanical Characteristics
 
-Figure 4 show RAK3272S board dimensions.
+**Figure 4** show RAK3272S board dimensions.
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/datasheet/dimensions.png"

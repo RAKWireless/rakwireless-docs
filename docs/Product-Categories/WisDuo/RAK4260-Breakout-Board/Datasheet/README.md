@@ -22,31 +22,32 @@ prev: ../Quickstart/
 
 ### Description
 
-The **RAK4260 Breakout Board** is specifically designed to allow easy access to the pins on the board in order to simplify development and testing. The breakout board utilized is of an **Xbee form factor** and its main purpose is to allow the RAK4260 stamp module form factor pinout to be transferred to 2.54 mm headers. This makes it more convenient for developer to debug their solution.
+The **RAK4260 Breakout Board** is specifically designed to allow easy excess to the pins on the board in order to simplify development and testing. The breakout board utilized is of an **Xbee form factor** and its main purpose is to allow the RAK4260 stamp module form factor pinout to be transferred to 2.54&nbsp;mm headers. This makes it more convenient for a developer to debug their solution.
 
-The board itself has the RAK4260 at its core, which is a module that utilizes the **ATSAMR34J18B SiP**. This high level of integration allows for outstanding performance: 860 nA in sleep mode and LoRa TX Power of up to 20 dBm.
+The board itself has the RAK4260 at its core, which is a module that utilizes the **ATSAMR34J18B SIP**. This high level of integration allows for outstanding performance: 860&nbsp;nA in sleep mode and LoRa TX Power of up to 20&nbsp;dBm.
 
-A notable addition to this Breakout Board is the **ATECC608A Cryptographic co-processor** with secure hardware-based key storage. This is what makes this board different (compared to the RAK4200 and RAK4600), adding another level of security in order to future proof your platform.
+A notable addition to this Breakout Board is the **ATECC608A Cryptographic co-processor** with secure hardware-based key storage. This is what makes this board different (compared to the RAK4200 and RAK4600), adding another level of security in order to future-proof your platform.
 
-The board complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P Point-to-Point communication.
+The board complies with LoRaWAN 1.0.2 protocols. It also supports Lora® Point-to-Point communication.
 
-The low power, long range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors and monitors, etc.).
+The low-power, long-range LoRa communication capabilities of the board make it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors and monitors, etc.).
+
 
 ### Features
 
 - LoRa module for Smart City, Smart Agriculture, Smart Industry
 - I/O ports: **UART/I2C/SPI/ADC**
-- Frequency range: 863–923 MHz (entire LoRa high band spectrum)
-- Low-Power Wireless Systems with 7.8 kHz to 500 KHz Bandwidth
-- LoRa Tx power up to 20dBm
-- Ultra-Low Power Consumption 860 nA in sleep mode
-- Core: ARM 32-bit Cortex – M0+ with MPU
-- Up to 256KB flash memory with ECC
-- 32 KB RAM
-- 6 KB of data EEPROM with ECC
-- ATECC608A cryptographic core
-- Supply voltage: 2.0V ~ 3.6V
-- Temperature range: -40°C to +85°C
+- Frequency range: 863–923&nbsp;MHz (entire LoRa high band spectrum)
+- Low-Power Wireless Systems with 7.8&nbsp;kHz to 500&nbsp;kHz Bandwidth
+- LoRa Tx power up to **20&nbsp;dBm**
+- Ultra-Low Power Consumption **860&nbsp;nA in sleep mode**
+- Core: **ARM 32-bit Cortex – M0+** with MPU
+- Up to 256&nbsp;KB flash memory with ECC
+- 32&nbsp;KB RAM
+- 6&nbsp;KB of data EEPROM with ECC
+- **ATECC608A** cryptographic core
+- Supply voltage: **2.0&nbsp;V ~ 3.6&nbsp;V**
+- Temperature range: **-40&nbsp;°C to +85&nbsp;°C**
 
 ## Specifications
 
@@ -68,14 +69,14 @@ The RAK4260 Breakout Board is shown in Figures 1 and 2 that display the top and 
 
 ### Hardware
 
-The hardware specification is categorized into five part. It discusses the interfacing, pinouts, and its corresponding functions and diagrams. It also covers the RF and electrical parameters of the RAK4260 Breakout Board that include the tabular data of the functionalities and standard values of the RAK4260 Breakout Board.
+The hardware specification is categorized into five parts. It discusses the interfacing, pinouts and its corresponding functions and diagrams. It also covers the RF and electrical parameters that include the tabular data of the functionalities and standard values of the RAK4260 Breakout Board.
 
 
 #### Interfaces
 
 ##### SWD Programming Interface
 
-When programming via a DAPLink tool, it is required to have all of the following 4 pins connected to your DAPLink  tool:
+When programming via a DAPLink tool, it is required to have all of the following four (4) pins connected to your DAPLink tool:
 
 1. **3V3**
 2. **SWDIO**
@@ -83,20 +84,20 @@ When programming via a DAPLink tool, it is required to have all of the following
 4. **GND**
 
 
-::: tip Note:
-:pencil: For the aforementioned reason, it is best you leave these exposed for programming purposes and not to remap them as GPIOs.
+::: tip 📝 NOTE
+For the aforementioned reason, it is best you leave these exposed for programming purposes and not to remap them as GPIOs.
 :::
 
 ##### UART Port
 
-There are two UART interfaces on RAK4200 Breakout Board:
+There are two UART interfaces on the RAK4200 Breakout Board:
 
-- **UART1** – default interface
+- **UART1** – the default interface
 - **UART3** – reserved, can also act as GPIOs.
 
 ##### I2C Interface
 
-**I2C_SCL** and **I2C_SDA** are connected to the ATECC608A crypto chip for the purpose of developing cryptographic applications: network end-point key management and exchange small message and PII data encryption, secure boot and protected download, ecosystem control and anti-cloning.
+**I2C_SCL** and **I2C_SDA** are connected to the ATECC608A crypto chip for the purpose of developing cryptographic applications: network end-point key management and exchange small message and PII data encryption, secure boot and protected download, ecosystem control, and anti-cloning.
 
 ##### RF Interface
 
@@ -105,7 +106,7 @@ There are two UART interfaces on RAK4200 Breakout Board:
 #### Pin Definition
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-breakout-board/datasheet/pinout.jpg"
+  src="/assets/images/wisduo/rak4260-breakout-board/datasheet/pinout.svg"
   width="65%"
   caption="RAK4260 Breakout Board Pinout"
 />
@@ -154,17 +155,17 @@ The tables below show the pin definition of the RAK4260 Breakout Board:
 
 ##### J13 Pin Definitions
 
-| Pin | Name | I/O | Description | Alternate Functions          |
-| --- | ---- | --- | ----------- | ---------------------------- |
-| 1   | GND  |     | Ground      | GND                          |
-| 2   | VDD  |     | DC3V3       | Supply voltage 2.0 V ~ 3.3 V |
+| Pin | Name | I/O | Description | Alternate Functions                    |
+| --- | ---- | --- | ----------- | -------------------------------------- |
+| 1   | GND  |     | Ground      | GND                                    |
+| 2   | VDD  |     | DC3V3       | Supply voltage 2.0&nbsp;V ~ 3.3&nbsp;V |
 
 ##### J14 Pin Definitions
 
-| Pin | Name | I/O | Description | Alternate Functions          |
-| --- | ---- | --- | ----------- | ---------------------------- |
-| 1   | GND  |     | Ground      | GND                          |
-| 2   | VDD  |     | DC3V3       | Supply voltage 2.0 V ~ 3.3 V |
+| Pin | Name | I/O | Description | Alternate Functions                    |
+| --- | ---- | --- | ----------- | -------------------------------------- |
+| 1   | GND  |     | Ground      | GND                                    |
+| 2   | VDD  |     | DC3V3       | Supply voltage 2.0&nbsp;V ~ 3.3&nbsp;V |
 
 #### RF Characteristics
 
@@ -180,13 +181,13 @@ The RAK4260 Breakout Board supports the following LoRa bands:
 
 ##### Power Consumption
 
-| Item                   | Power Consumption | Condition            |
-| ---------------------- | ----------------- | -------------------- |
-| Tx mode LoRa @20dBm    | 126.3 mA          | PA_BOOST V=3.3V      |
-| Tx mode LoRa @17dBm    | 95.6 mA           | PA_BOOST V=3.3V      |
-| Tx mode LoRa @14dBm    | 33.1 mA (typical) | RFO_HF V=3.3V        |
-| Rx mode LoRa @37.5Kbps | 13.6 mA           | -                    |
-| Sleep mode             | 860 nA            | Backup Mode V = 3.3V |
+| Item                         | Power Consumption      | Condition                  |
+| ---------------------------- | ---------------------- | -------------------------- |
+| Tx mode LoRa @20&nbsp;dBm    | 126.3&nbsp;mA          | PA_BOOST V=3.3&nbsp;V      |
+| Tx mode LoRa @17&nbsp;dBm    | 95.6&nbsp;mA           | PA_BOOST V=3.3&nbsp;V      |
+| Tx mode LoRa @14&nbsp;dBm    | 33.1&nbsp;mA (typical) | RFO_HF V=3.3&nbsp;V        |
+| Rx mode LoRa @37.5&nbsp;Kbps | 13.6&nbsp;mA           | -                          |
+| Sleep mode                   | 860&nbsp;nA            | Backup Mode V = 3.3&nbsp;V |
 
 ##### Schematic Diagram
 

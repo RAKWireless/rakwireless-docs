@@ -15,7 +15,7 @@ tags:
 
 ### What Do You Need?
 
-Before going through the quick start guide of RAK4260 WisDuo LPWAN Module, make sure to prepare the necessary items listed below:
+Before going through the quick start guide of the RAK4260 WisDuo LPWAN Module, make sure to prepare the necessary items listed below:
 
 #### Hardware Tools
 
@@ -36,13 +36,13 @@ Before going through the quick start guide of RAK4260 WisDuo LPWAN Module, make 
 
 ### Interfacing with RAK4260
 
-During the configuration of the module, a guided setup is available on the console output. You can connect to the console of RAK4260 module through the UART interface.  
+During the configuration of the module, a guided setup is available on the console output. You can connect to the console of the RAK4260 module through the UART interface.  
   
 #### Connect to the RAK4260
 
 In this document, a RAK4260 module is used as an example. Use a USB to TTL converter to connect to the module.  
   
-1. Connect the RAK4260 to the USB port of a general-purpose computer (Windows PC) using a USB to TTL module (3.3&nbsp;V), as shown in the Figure 1.
+1. Connect the RAK4260 to the USB port of a general-purpose computer (Windows PC) using a USB to TTL module (3.3&nbsp;V), as shown in Figure 1.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/1.USB-TTL.png"
@@ -59,7 +59,7 @@ In this document, a RAK4260 module is used as an example. Use a USB to TTL conve
  * Stop Bits: **1 stop bit**
  * Parity: **NONE**
 
-4. The RAK4260 console output can now be read in the RAK serial port tool as shown in the Figure 2.
+4. The RAK4260 console output can now be read in the RAK serial port tool, as shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/2.serial.png"
@@ -67,7 +67,7 @@ In this document, a RAK4260 module is used as an example. Use a USB to TTL conve
   caption="RAK Serial Port Tool Connected to RAK4260 Module"
 />  
   
-Before establishing a LoRa Connection using the RAK4260 Module, several configurations must be set first, which will be discussed on the next sections.
+Before establishing a LoRa Connection using the RAK4260 Module, several configurations must be set first, which will be discussed in the next sections.
   
 ### Connecting to the Things Network (TTN)
 
@@ -79,13 +79,13 @@ In this section, a practical exercise will be performed to show how to connect t
   caption="RAK4260 in the context of the TTN"
 />
 
-As shown in Figure 3, the RAK4260 module is one of the devices located on the left side. In the context of an IoT solution, the objective is to deploy devices to sense the relevant process variables and transmit the data to the backend servers located in the cloud. The data will be processed and integrated as part of a larger solution that could generate efficiency, traceability, predictability capacity among others.
+As shown in **Figure 3**, the RAK4260 module is one of the devices located on the left side. In the context of an IoT solution, the objective is to deploy devices to sense the relevant process variables and transmit the data to the backend servers located in the cloud. The data will be processed and integrated as part of a larger solution that could generate efficiency, traceability, and predictability capacity among others.
 
 The RAK4260 module can be part of this ecosystem, and the objective of this section is to demonstrate how simple to send data to the TTN using the LoRaWAN protocol. To achieve this, the RAK4260 module must be located inside of the coverage of a LoRaWAN gateway.  
 
-<b>Sign up and login</b>
+<b>Sign up and log in</b>
 
-If you don't have an account yet, head on to the [TTN website](https://www.thethingsnetwork.org/) and create one. Once done, login to your account and go to the Console. 
+If you don't have an account yet, head on to the [TTN website](https://www.thethingsnetwork.org/) and create one. Once done, log in to your account and go to the Console. 
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/4.ttn-home.png"
@@ -117,14 +117,14 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
   caption="Adding an Application"
 />
 
-* Here are the things that you should take note in adding an application:
+* Here are the things that you should take note of in adding an application:
 
     * **Application ID** - this will be the unique ID of your application in the Network. Note that the characters should be in lower case, no spaces are allowed.
-    * **Description** - this is a short and concise human readable description of your application.
+    * **Description** - this is a short and concise human-readable description of your application.
     * **Application EUI** - this will be generated automatically by The Things Network for convenience.
     * **Handler Registration** - handler you want to register this application to.
     
-3. After you fill in the necessary information, press the "**Add application**" button at the bottom of this page. If you see similar page as shown in Figure 8, then you have successfully registered your application.
+3. After you fill in the necessary information, press the "**Add application**" button at the bottom of this page. If you see a similar page, as shown in **Figure 8**, then you have successfully registered your application.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/8.application_overview.png"
@@ -150,7 +150,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
   caption="Add your Device"
 />
 
-In this form, the device ID must be unique for the application and must be completed with a lower case, alphanumeric characters. The rest of the parameters in the form are very important for the LoRaWAN protocol:
+In this form, the device ID must be unique for the application and must be completed with lower case, alphanumeric characters. The rest of the parameters in the form are very important for the LoRaWAN protocol:
 
 * Device EUI
 * Application Key
@@ -168,7 +168,7 @@ The TTN platform can generate these parameters randomly by leaving those fields 
 
 ### Configuring RAK4260 LPWAN Module
   
-To connect the RAK4260 module to a Lora-P2P Connection or a LoRaWAN network, the module must be configured and Lora parameters must be set properly. This can be done by modifying the LoRa parameters on the firmware source code and flashing it into the module. The following section will guide you through the process of doing this using Atmel Studio.
+To connect the RAK4260 module to a LoRa P2P Connection or a LoRaWAN network, the module must be configured and LoRa parameters must be set properly. This can be done by modifying the LoRa parameters on the firmware source code and flashing it into the module. The following section will guide you through the process of doing this using Atmel Studio.
 
 #### Parameter and Firmware Setup  
 
@@ -184,7 +184,7 @@ To connect your device with TTN, execute the following steps. To do this, fill i
   caption="Atmel Studio Main Page"
 />
 
-2. Go to `File → Open → Project/Solution`.
+2. Go to **File** → **Open** → **Project/Solution**.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/ttn/13.open-the-sample-project.png"
@@ -192,7 +192,7 @@ To connect your device with TTN, execute the following steps. To do this, fill i
   caption="Open the sample project"
 />
 
-3. Go to the folder where you downloaded the GitHub repository, and select the "**APPS_ENDDEVICE_DEMO1**" project file (it is in the directory with the same name as the file). Then click Open.
+3. Go to the folder where you downloaded the GitHub repository, and select the "**APPS_ENDDEVICE_DEMO1**" project file (it is in the directory with the same name as the file). Then click **Open**.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/ttn/14.demo-firmware-project-file.png"
@@ -200,7 +200,7 @@ To connect your device with TTN, execute the following steps. To do this, fill i
   caption="Demo firmware project file"
 />
 
-4. Once your project has loaded up, you will be presented with a file structure that contains folders and files that you can edit. You need to copy the values of the three (3) parameters shown in Figure 11 (**Device, Application EUI, and Application Key**) into the corresponding fields in the “**conf_app.h**” file. It is contained in the scr config folder that you can access via Solution Explorer tree.
+4. Once your project has loaded up, you will be presented with a file structure that contains folders and files that you can edit. You need to copy the values of the three (3) parameters shown in **Figure 11** (**Device, Application EUI, and Application Key**) into the corresponding fields in the “**conf_app.h**” file. It is contained in the scr config folder that you can access via Solution Explorer tree.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/ttn/15.otaa_atmel_studio.png"
@@ -208,11 +208,11 @@ To connect your device with TTN, execute the following steps. To do this, fill i
   caption="Device configuration file (OTAA parameters)"
 />
 
-5. After replacing the default values with the one for the device you registered with TTN, you can proceed to compile the project. There is no need to edit anything else in order to compile a firmware that will allow you to connect to the TTN network.
+5. After replacing the default values with the one for the device you registered with TTN, you can proceed to compile the project. There is no need to edit anything else in order to compile firmware that will allow you to connect to the TTN network.
 
 ###### Compile the Code
 
-1. Compile the code by going to the `Build → Build Solution`.
+1. Compile the code by going to the **Build** → **Build Solution**.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/ttn/16.build_solution.png"
@@ -220,7 +220,7 @@ To connect your device with TTN, execute the following steps. To do this, fill i
   caption="Compiling the code"
 />
 
-2. The Output should have no errors, as shown in Figure 17.
+2. The output should have no errors, as shown in **Figure 17**.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/ttn/17.successful-compiling-of-the-code.png"
@@ -230,7 +230,7 @@ To connect your device with TTN, execute the following steps. To do this, fill i
 
 ###### Flashing the Firmware
 
-Once compiled, you can find the output file in the “**Debug**” folder of the directory where you downloaded the firmware. See Figure 18.
+Once compiled, you can find the output file in the “**Debug**” folder of the directory where you downloaded the firmware. See **Figure 18**.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/ttn/18.firmware-hex-file.png"
@@ -246,9 +246,9 @@ Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKD
   
 ##### Connecting to TTN
 
-1. Connect your USB to TTL adapter to the corresponding pins of RAK4260, which have been discussed on the earlier section. Refer to Figure 1.
+1. Connect your USB to the TTL adapter to the corresponding pins of RAK4260, which have been discussed in the earlier section. Refer to **Figure 1**.
   
-Use the serial communication tool to use the guided setup. Based on the firmware you flashed to the RAK4260 Module, it is configured in OTAA Mode. To initiate the connection to TTN, press the key "1" to enter into the Demo Application. A list of frequencies will appear on the console output, choose the one that suits your application. In this example, EU868 is used for the region, since it was the configured parameter at the LoRa gateway. Sample console output is shown in Figure 19.
+Use the serial communication tool to use the guided setup. Based on the firmware you flashed to the RAK4260 Module, it is configured in OTAA Mode. To initiate the connection to TTN, press the key "1" to enter into the Demo Application. A list of frequencies will appear on the console output, choose the one that suits your application. In this example, EU868 is used for the region, since it was the configured parameter at the LoRa gateway. Sample console output is shown in **Figure 19**.
 
 
 <rk-img
@@ -257,7 +257,7 @@ Use the serial communication tool to use the guided setup. Based on the firmware
   caption="Demo application response"
 />
 
-2. Make sure to set the proper configuration in-line with the Lora Gateway settings to successfully connect the RAK4260 module to a LoRa network.
+2. Make sure to set the proper configuration in-line with the LoRa Gateway settings to successfully connect the RAK4260 module to a LoRa network.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/20.join-success.png"
@@ -291,7 +291,7 @@ Use the serial communication tool to use the guided setup. Based on the firmware
 
 This section shows how to connect the RAK4260 LPWAN Module to the ChirpStack platform. As described in the ChirpStack website:
 
-“ChirpStack provides open-source components for LoRaWAN networks. Together they form a ready-to-use solution including an user-friendly web-interface for device management and APIs for integration. The modular architecture makes it possible to integrate within existing infrastructures. All components are licensed under the MIT license and can be used for commercial purposes.”
+“ChirpStack provides open-source components for LoRaWAN networks. Together they form a ready-to-use solution including a user-friendly web interface for device management and APIs for integration. The modular architecture makes it possible to integrate within existing infrastructures. All components are licensed under the MIT license and can be used for commercial purposes.”
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/chirpstack/24.loraserver.png"
@@ -307,9 +307,9 @@ To register the device to the ChirpStack network server, you must choose either 
 
 #### Create a New Application
 
-1. To connect RAK4260 Module to ChirpStack, first, you need to create an Application.
+1. To connect the RAK4260 Module to ChirpStack, first, you need to create an Application.
 
-2. Go to the Applications section then click on “**+ CREATE**” button.
+2. Go to the Applications section then click on the “**+ CREATE**” button.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/chirpstack/25.chirpstack-create-new-app.png"
@@ -317,11 +317,11 @@ To register the device to the ChirpStack network server, you must choose either 
   caption="Creating a new Application"
 />
 
-3. Create an Application named **rak4260_node**. Fill the required fields as shown in the Figure 25. 
+3. Create an Application named **rak4260_node**. Fill in the required fields, as shown in **Figure 25**. 
    
 4. To finish, click the “**CREATE APPLICATION**” button. 
 
-ChirpStack LoraServer supports multiple system configurations, with only one by default. By default, a new Application should be created, although it is possible to reuse the existing ones.
+ChirpStack LoRaServer supports multiple system configurations, with only one by default. By default, a new Application should be created, although it is possible to reuse the existing ones.
 
 * Application Name: **rak4260_node**
 * Application Description: **RAK4260 Module application**
@@ -345,7 +345,7 @@ The **Application Description** field is just a descriptive text.
   caption="List of applications created"
 />
 
-2. Select the “**DEVICES**” tab as shown in Figure 28.
+2. Select the “**DEVICES**” tab, as shown in **Figure 28**.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/chirpstack/28.chirpstack-device-tab.png"
@@ -367,11 +367,11 @@ The **Application Description** field is just a descriptive text.
   caption="New device registration form"
 />
 
-4. Fill the parameters requested as appears in the Figure 30:
+4. Fill in the parameters requested as appears in **Figure 30**:
 
-*	**Device name** and **Device description**: These are just descriptive texts. 
-*	**Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in the Figure 31. You can also add a specific Device EUI directly in the form. 
-*	**Device-profile**: To join in OTAA mode, select “**device_profile_otaa**” or "**device_profile_abp**" to join in ABP mode. 
+* **Device name** and **Device description**: These are just descriptive texts. 
+* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in **Figure 31**. You can also add a specific Device EUI directly in the form. 
+* **Device-profile**: To join in OTAA mode, select “**device_profile_otaa**” or "**device_profile_abp**" to join in ABP mode. 
 
 :::tip 📝 NOTE:
 ChirpStack doesn’t support AS923 in ABP mode.
@@ -409,9 +409,9 @@ The LoRaWAN specification defines that to join a LoRaWAN network, each end-devic
   caption="Application Key for the OTAA mode in the device registration form"
 />
 
-3. Once the Application Key is added in the form, the process can be finalized by clicking the “**SET DEVICE-KEYS**” button. 
+3. Once the Application Key is added to the form, the process can be finalized by clicking the “**SET DEVICE-KEYS**” button. 
 
-* As shown in Figure 34, a new device should be listed in the  “**DEVICES**” tab. The most important parameters, such as the “**Device EUI**” are shown in the summary. 
+* As shown in **Figure 34**, a new device should be listed in the  “**DEVICES**” tab. The most important parameters, such as the “**Device EUI**”, are shown in the summary. 
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/chirpstack/34.chirpstack-deveui.png"
@@ -437,7 +437,7 @@ Standard OTAA mode requires the Device EUI, Application Key, and the Application
 
 During the registration of a new device, if “**device_profile_abp**” is selected, then the ChirpStack platform will assume that this device will join the LoRaWAN network using the ABP mode. 
 
-1. Fill the parameters requested as appears in the Figure 36:
+1. Fill in the parameters requested as appears in **Figure 36**:
 
 * **Device name** and **Device description**: These are just descriptive texts.
 * **Device EUI**: You can also add a specific Device EUI directly in the form. 
@@ -454,11 +454,11 @@ Check the **Disable frame-counter validation** to prevent the node-side counting
   caption="ChirpStack Console, configuring a device in ABP mode"
 />
 
-After selecting the ABP mode, the following parameters appear in the “**ACTIVATION**” tab, as shown in the Figure 37.
+After selecting the ABP mode, the following parameters appear in the “**ACTIVATION**” tab, as shown in **Figure 37**.
 
-*	**Device address**
-*	**Network session key**
-*	**Application session key**
+* **Device address**
+* **Network session key**
+* **Application session key**
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/chirpstack/37.chirpstack-abp-param.png"
@@ -472,7 +472,7 @@ After selecting the ABP mode, the following parameters appear in the “**ACTIVA
 
 ###### View LoRaWAN OTAA Frames
 
-1. Go to Applications->rak4260-node->Devices->rak4260-node, then select “**LORAWAN FRAMES**” tab.
+1. Go to **Applications** -> **rak4260-node** -> **Devices** -> **rak4260-node**, then select the “**LORAWAN FRAMES**” tab.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/chirpstack/38.otaa-activation.png"
@@ -480,7 +480,7 @@ After selecting the ABP mode, the following parameters appear in the “**ACTIVA
   caption="OTAA activation frame"
 />
 
-2. Go to Applications > rak4260-node > Devices > rak4260-node, then select “**DEVICE DATA**” tab.
+2. Go to **Applications** -> **rak4260-node** -> **Devices** -> **rak4260-node**, then select “**DEVICE DATA**” tab.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/chirpstack/39.otaa-data.png"
@@ -490,7 +490,7 @@ After selecting the ABP mode, the following parameters appear in the “**ACTIVA
 
 ###### View LoRaWAN ABP Frames 
 
-1. Go to Applications->rak4260-node->Devices->rak4260-abp, then select “**LORAWAN FRAMES**” tab.
+1. Go to **Applications** -> **rak4260-node** -> **Devices** -> **rak4260-abp**, then select the “**LORAWAN FRAMES**” tab.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/chirpstack/40.chirpstack-abp-frame.png"
@@ -498,7 +498,7 @@ After selecting the ABP mode, the following parameters appear in the “**ACTIVA
   caption="LoRaWAN ABP frame"
 />
 
-2. Go to Applications->rak4260-node->Devices->rak4260-abp, then select “**DEVICE DATA**” tab.
+2. Go to **Applications** -> **rak4260-node** -> **Devices** -> **rak4260-abp**, then select “**DEVICE DATA**” tab.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/quickstart/chirpstack/41.chirpstack-abp-data.png"

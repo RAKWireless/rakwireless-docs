@@ -314,11 +314,11 @@ This guide covers the following topics:
 
 ##### Connecting to The Things Network (TTN)
 
-In this section, a quick tutorial guide will show how to connect the RAK3272S Breakout Board to TTN platform. 
+In this section, a quick tutorial guide will show how to connect the RAK3272S Breakout Board to the TTN platform. 
 
 :::tip 📝 NOTE:
 
-In this guide, you need to have a working gateway that is connected to TTN or have a coverage of TTN community network.
+In this guide, you need to have a working gateway that is connected to TTN or coverage of the TTN community network.
 
 :::
 
@@ -330,7 +330,7 @@ In this guide, you need to have a working gateway that is connected to TTN or ha
 
 As shown in **Figure 22**, The Things Stack (TTN V3) is an open-source LoRaWAN Network Server suitable for global, geo-distributed public and private deployments, as well as for small, local networks. The architecture follows the LoRaWAN Network Reference Model for standards compliance and interoperability. This project is actively maintained by [The Things Industries](https://www.thethingsindustries.com/).
 
-LoRaWAN is a protocol for low-power wide-area networks. It allows for large scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long-range wireless connections.
+LoRaWAN is a protocol for low-power wide-area networks. It allows for large-scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long-range wireless connections.
 
 The RAK3272S Breakout Board can be part of this ecosystem as a device, and the objective of this section is to demonstrate how simple it is to send data to The Things Stack using the LoRaWAN protocol. To achieve this, the RAK3272S Breakout Board must be located inside the coverage of a LoRaWAN gateway connected to The Things Stack server. 
 
@@ -360,7 +360,7 @@ To register as a new user to TTN, click on **Login with The Things ID**, then se
   caption="Registration of new account"
 />
 
-3. You should now be on the step of creating your TTN account. Fill all the necessary details and activate your account.
+3. You should now be on the step of creating your TTN account. Fill in all the necessary details and activate your account.
 
 4. After creating an account, log in to the platform using your username/email and password, then click **Submit**, as shown in **Figure 26**.
 
@@ -426,11 +426,11 @@ LoRaWAN specifications enforce that each end-device has to be personalized and a
 
 Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
 
-4. After putting all the details, click **Network layer settings** to proceed on the next step.
+4. After putting all the details, click **Network layer settings** to proceed to the next step.
 
 :::tip 📝 NOTE:
 
-It is advisable to use a meaningful End device ID, End device name, and End device description that will match your device purpose. The End device ID `rak-device` is for illustration purpose only.
+It is advisable to use a meaningful End device ID, End device name, and End device description that will match your device purpose. The End device ID `rak-device` is for illustration purposes only.
 
 :::
 
@@ -440,7 +440,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
   caption="OTAA Device Information"
 />
 
-5. Next step is to setup **Frequency plan**, compatible **Regional Parameter version**, and **LoRaWAN class** supported. Then you can click **Join settings**.
+5. Next step is to set up **Frequency plan**, compatible **Regional Parameter version**, and **LoRaWAN class** supported. Then you can click **Join settings**.
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/image_12.png"
@@ -537,11 +537,11 @@ AT+BAND=4
 
 :::tip 📝 NOTE:
 
-Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK3272S to match the gateway and LoRaWAN network server. This is specially important on Regional Bands like US915, AU915, and CN470.
+Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK3272S to match the gateway and LoRaWAN network server. This is especially important on Regional Bands like US915, AU915, and CN470.
 
-To configure the masking of channels for the sub-bands, you can use the [AT+MASK command](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-mask) that can be found on the AT Commands Manual.
+To configure the masking of channels for the sub-bands, you can use the `AT+MASK` command that can be found on the [AT Command Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-mask).
 
-To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
+To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 :::
 
 **List of band parameter options**
@@ -569,7 +569,7 @@ To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
 />
 
 
-3. After configuration of the LoRaWAN parameters, the next step is to setup the EUIs and key. You need the use the values from the TTN console. 
+3. After the configuration of the LoRaWAN parameters, the next step is to set up the EUIs and key. You need the use the values from the TTN console. 
 
 
 - Device EUI: **1133557799224466**
@@ -600,7 +600,7 @@ AT+APPKEY=04FA4E626EF5CF227C969601176275C2
   caption="Configuring LoRa Parameters"
 />
 
-4. After EUI and keys configuration, the device can now join the network and send payload.
+4. After EUI and keys configuration, the device can now join the network and send a payload.
 
 ```
 AT+JOIN=1:0:10:8
@@ -611,8 +611,8 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | Parameter | Description                                                  |
 | --------- | ------------------------------------------------------------ |
 | w         | Join command - 1: joining, 0: stop joining.                  |
-| x         | Auto-join config - 1: auto-join on power up, 0: no auto-join |
-| y         | Reattempt interval in seconds (7-255) - 8 is default.        |
+| x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
+| y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
 | z         | Number of join attempts (0-255) - 0 is default.              |
 
 5. After 5 or 6 seconds, if the request is successfully received by a LoRaWAN gateway, then you should see `+EVT:JOINED` status reply, as shown in **Figure 40**.
@@ -678,11 +678,11 @@ AT+SEND=2:12345678
 
 Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
 
-5. After putting all the details, click **Network layer settings** to proceed on the next step.
+5. After putting all the details, click **Network layer settings** to proceed to the next step.
 
 :::tip 📝 NOTE:
 
-It is advisable to use a meaningful End device ID, End device name, and End device description that will match your device purpose. The End device ID `rak-device-abp` is for illustration purpose only.
+It is advisable to use a meaningful End device ID, End device name, and End device description that will match your device purpose. The End device ID `rak-device-abp` is for illustration purposes only.
 
 :::
 
@@ -692,7 +692,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
   caption="ABP Device Information"
 />
 
-6. Next step is to setup **Frequency plan**, compatible **Regional Parameter version**, and **LoRaWAN class** supported. In an ABP device, you also need to generate **Device Address** and **NwkSKey** (Network Session Keys). Then you can click **Application layers settings**
+6. Next step is to set up **Frequency plan**, compatible **Regional Parameter version**, and **LoRaWAN class** supported. In an ABP device, you also need to generate **Device Address** and **NwkSKey** (Network Session Keys). Then you can click **Application layers settings**
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/image_3_abp.png"
@@ -779,11 +779,11 @@ AT+BAND=4
 
 :::tip 📝 NOTE:
 
-Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK3272S to match the gateway and LoRaWAN network server. This is specially important on Regional Bands like US915, AU915, and CN470.
+Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK3272S to match the gateway and LoRaWAN network server. This is especially important on Regional Bands like US915, AU915, and CN470.
 
-To configure the masking of channels for the sub-bands, you can use the [AT+MASK command that can be found on the AT Commands Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-mask).
+To configure the masking of channels for the sub-bands, you can use the `AT+MASK` command that can be found on the [AT Command Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-mask).
 
-To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
+To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 :::
 
 **List of band parameter options**
@@ -810,7 +810,7 @@ To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
   caption="Configuring LoRa Parameters"
 />
 
-3. After configuration of the LoRaWAN parameters, the next step is to setup the device address and sessions keys. You need the use the values from the TTN console. 
+3. After configuration of the LoRaWAN parameters, the next step is to set up the device address and sessions keys. You need the use the values from the TTN console. 
 
 - Device Address: **260BDE80**
 - Application Session Key: **A585903A949C2B2D44B55E99E94CB533**
@@ -848,12 +848,12 @@ AT+JOIN=1:0:8:0
 
 Join command format: **`AT+JOIN=w:x:y:z`**
 
-| Parameter | Description                                                 |
-| --------- | ----------------------------------------------------------- |
-| w         | Join command - 1: joining, 0: stop joining.                 |
-| x         | Auto-join config - 1: auto-join on powerup, 0: no auto-join |
-| y         | Reattempt interval in seconds (7-255) - 8 is default.       |
-| z         | Number of join attempts (0-255) - 0 is default.             |
+| Parameter | Description                                                  |
+| --------- | ------------------------------------------------------------ |
+| w         | Join command - 1: joining, 0: stop joining.                  |
+| x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
+| y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
+| z         | Number of join attempts (0-255) - 0 is default.              |
 
 
 5. With the end-device properly activated, you can now try to send some payload after successful join.
@@ -908,9 +908,9 @@ It is assumed that you are using RAK Gateway and its built-in ChirpStack. Also, 
 * In summary, these are the requirements: 
 
   1. Have ChirpStack online gateway, the frequency band of the nodes should be consistent with the frequency band of the gateway in use.
-      *	[Connect the Gateway with Chirpstack](/Product-Categories/WisGate/RAK7243/Quickstart/#connect-the-gateway-with-chirpstack)
-  2.	The RAK Serial Port Tool provided by RAK
-  3.	RAK3272S Breakout Board
+      * [Connect the Gateway with Chirpstack](/Product-Categories/WisGate/RAK7243/Quickstart/#connect-the-gateway-with-chirpstack)
+  2.  The RAK Serial Port Tool provided by RAK
+  3.  RAK3272S Breakout Board
 
 :::tip 📝 NOTE:
 The frequency band used in the demonstration is EU868. Use a high-frequency version of RAK3272S. The product number should be “**RAK3272S (H)**”.
@@ -920,7 +920,7 @@ The frequency band used in the demonstration is EU868. Use a high-frequency vers
 
 ##### Create a New Application
 
-1. Login to the ChirpStack server using your account and password.
+1. Log in to the ChirpStack server using your account and password.
 
 2. Go to the Application section, as shown in **Figure 55**.
 
@@ -986,9 +986,9 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 />
 
 
-6. Once the node is created, fill-in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
+6. Once the node is created, fill in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
 
-Fill the parameters requested:
+Fill in the parameters requested:
 
 * **Device name and Device description**: These are descriptive texts about your device. 
 
@@ -1006,7 +1006,7 @@ Fill the parameters requested:
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/31.adding-parameters.png"
   width="100%"
-  caption="Generate a New Device EUI "
+  caption="Generate a New Device EUI"
 />
 
 ##### Chirpstack OTAA Device Registration
@@ -1027,7 +1027,7 @@ Fill the parameters requested:
   caption="Chirpstack OTAA Set Application Keys"
 />
 
-3. Once the Application Key is added in the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button. 
+3. Once the Application Key is added to the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button. 
 
 * As shown in **Figure 65**, a new device should be listed in the DEVICES tab. The most important parameters, such as the Device EUI are shown in the summary.
 
@@ -1047,7 +1047,7 @@ Fill the parameters requested:
 
 :::tip 📝 NOTE:
 
-Standard OTAA mode requires the **Device EUI**, **Application Key**, and **Application EUI**, but in the ChirpStack’s implementation, only the Device EUI and the Application Key are mandatory. The Application EUI is not required and not recorded in the Application tab. Nevertheless, you can reuse the Device EUI as the Application EUI during the configuration in the side of the node. 
+Standard OTAA mode requires the **Device EUI**, **Application Key**, and **Application EUI**, but in the ChirpStack’s implementation, only the Device EUI and the Application Key are mandatory. The Application EUI is not required and not recorded in the Application tab. Nevertheless, you can reuse the Device EUI as the Application EUI during the configuration on the side of the node. 
 
 :::
 
@@ -1115,11 +1115,11 @@ AT+BAND=4
 
 :::tip 📝 NOTE:
 
-- Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK3272S to match the gateway and LoRaWAN network server. This is specially important on Regional Bands like US915, AU915, and CN470.
+- Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK3272S to match the gateway and LoRaWAN network server. This is especially important on Regional Bands like US915, AU915, and CN470.
 
-- To configure the masking of channels for the sub-bands, you can use the [AT+MASK command that can be found on the AT Commands Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-mask).
+- To configure the masking of channels for the sub-bands, you can use the `AT+MASK` command that can be found on the [AT Command Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-mask).
 
-- To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
+- To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 :::
 
 **List of band parameter options**
@@ -1147,10 +1147,10 @@ AT+BAND=4
 />
 
 
-3. After configuration of the LoRaWAN parameters, the next step is to setup the DevEUI and AppKey. You need the use the values from the Chirpstack device console. 
+3. After the configuration of the LoRaWAN parameters, the next step is to set up the DevEUI and AppKey. You need the use the values from the Chirpstack device console. 
 
 :::tip 📝 NOTE:
-The Application EUI parameter is not required in the ChirpStack platform; therefore, it possible to use the same id as the Device EUI. 
+The Application EUI parameter is not required in the ChirpStack platform; therefore, it is possible to use the same id as the Device EUI. 
 ::: 
 
 - Device EUI: **5E9D1E0857CF25F1**
@@ -1194,7 +1194,7 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | --------- | ----------------------------------------------------------- |
 | w         | Join command - 1: joining, 0: stop joining.                 |
 | x         | Auto-join config - 1: auto-join on powerup, 0: no auto-join |
-| y         | Reattempt interval in seconds (7-255) - 8 is default.       |
+| y         | Reattempt interval in seconds (7-255) - 8 is the default.   |
 | z         | Number of join attempts (0-255) - 0 is default.             |
 
 
@@ -1251,9 +1251,9 @@ Check “**Disable counting frame verification**”. During the test, when the b
 
 2. After selecting the ABP mode, the following parameters appear in the Activation tab, then you can see that there are some parameters for ABP in the **“ACTIVATION”** item:
 
-  *	**Device address**
-  *	**Network Session Key**
-  *	**Application Session Key**
+  * **Device address**
+  * **Network Session Key**
+  * **Application Session Key**
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/43.abp-activation-parameters.png"
@@ -1261,7 +1261,7 @@ Check “**Disable counting frame verification**”. During the test, when the b
   caption="Chirpstack ABP Activation Parameters Needed"
 />
 
-3. The parameters can be generated as random numbers by the platform or can be set with user values. Once these parameters are filled properly, the process is completed by clicking on the “**ACTIVATE DEVICE**” button.
+3. The parameters can be generated as random numbers by the platform or can be set with user values. Once these parameters are filled in properly, the process is completed by clicking on the “**ACTIVATE DEVICE**” button.
 
 
 ##### ABP Configuration for Chirpstack
@@ -1327,11 +1327,11 @@ AT+BAND=4
 
 :::tip 📝 NOTE:
 
-Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK3272S to match the gateway and LoRaWAN network server. This is specially important on Regional Bands like US915, AU915, and CN470.
+Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK3272S to match the gateway and LoRaWAN network server. This is especially important on Regional Bands like US915, AU915, and CN470.
 
-To configure the masking of channels for the sub-bands, you can use the [AT+MASK command](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-mask) that can be found on the AT Commands Manual.
+To configure the masking of channels for the sub-bands, you can use the `AT+MASK` command that can be found on the [AT Command Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-mask).
 
-To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
+To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 :::
 
 **List of band parameter options**
@@ -1358,7 +1358,7 @@ To illustrate, you can use use sub-band 2 by sending the command `AT+MASK=0002`.
   caption="Configuring LoRa Parameters"
 />
 
-3. After configuration of the LoRaWAN parameters, the next step is to setup the device address and session keys. You need to use the values from the TTN device console. 
+3. After the configuration of the LoRaWAN parameters, the next step is to set up the device address and session keys. You need to use the values from the TTN device console. 
 
 - Device Address: **26011AF9**
 - Application Session Key: **4D42EC5CAF97F03D833CDAf5003F69E1**
@@ -1397,12 +1397,12 @@ AT+JOIN=1:0:10:8
 
 Join command format: **`AT+JOIN=w:x:y:z`**
 
-| Parameter | Description                                                 |
-| --------- | ----------------------------------------------------------- |
-| w         | Join command - 1: joining, 0: stop joining.                 |
-| x         | Auto-join config - 1: auto-join on powerup, 0: no auto-join |
-| y         | Reattempt interval in seconds (7-255) - 8 is default.       |
-| z         | Number of join attempts (0-255) - 0 is default.             |
+| Parameter | Description                                                  |
+| --------- | ------------------------------------------------------------ |
+| w         | Join command - 1: joining, 0: stop joining.                  |
+| x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
+| y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
+| z         | Number of join attempts (0-255) - 0 is default.              |
 
 5. After 5 or 6 seconds, if the request is successfully received by a LoRaWAN gateway, then you should see JOINED status reply.
 
@@ -1447,7 +1447,7 @@ Try again `AT` and you should see it on the terminal followed by `OK`.
   caption="at+version command response"
 />
 
-1. To setup the RAK3272S to work in LoRa P2P mode, you need to input the work mode command on both RAK3272S Breakout Board.
+1. To set up the RAK3272S to work in LoRa P2P mode, you need to input the work mode command on both RAK3272S Breakout Board.
 
 ```
 AT+NWM=0
@@ -1461,7 +1461,7 @@ AT+NWM=0
 
 :::tip 📝 NOTE:
 
-You might need to input `ATE` command again to ensure that your succeeding commands on P2P mode echo on the terminal.
+You might need to input the `ATE` command again to ensure that your succeeding commands on P2P mode echo on the terminal.
 
 :::
 
@@ -1494,7 +1494,7 @@ Refer to the [P2P Mode](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Co
 />
 
 
-2. To set one module as receiver (RX), you need set the value of P2P receive command to 65535.
+2. To set one module as a receiver (RX), you need to set the value of the P2P receive command to 65535.
 
 ```
 AT+PRECV=65535 
@@ -1502,9 +1502,9 @@ AT+PRECV=65535
 
 :::tip 📝 NOTE:
 
-- If `AT+PRECV` value is set to 65534, the device will continuously listen to P2P LoRa TX packets without any timeout. This is the same as setting the device in RX mode.
-- If `AT+PRECV` value is set to 65535, the device will listen to P2P TX without a timeout. But it will stop listening once a P2P LoRa packet is received to save power.
-- If `AT+PRECV` value is 0, the device will stop listening to P2P TX data. The device is in TX mode.
+- If the `AT+PRECV` value is set to 65534, the device will continuously listen to P2P LoRa TX packets without any timeout. This is the same as setting the device in RX mode.
+- If the `AT+PRECV` value is set to 65535, the device will listen to P2P TX without a timeout. But it will stop listening once a P2P LoRa packet is received to save power.
+- If the `AT+PRECV` value is 0, the device will stop listening to P2P TX data. The device is in TX mode.
 
 :::
 
@@ -1526,7 +1526,7 @@ AT+PSEND=11223344
 ## Miscellaneous
 ### Upgrading the Firmware
 
-If you want to upgrade the latest version firmware of the module, you can follow this section. The latest firmware can be found in the software section of [RAK3272S Datasheet](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Datasheet/#firmware-os).
+If you want to upgrade to the latest version firmware of the module, you can follow this section. The latest firmware can be found in the software section of [RAK3272S Datasheet](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Datasheet/#firmware-os).
 
 :::tip 📝 NOTE:
 
@@ -1557,7 +1557,7 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
 
     - [RAK3272S Firmware](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Datasheet/#firmware-os)
 
-2.	Download the RAK Device Firmware Upgrade (DFU) tool.
+2.  Download the RAK Device Firmware Upgrade (DFU) tool.
     - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 3.  Connect the RAK3272S Breakout Board to the computer via a USB-Serial adapter. Refer to [Figure 21](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Quickstart/#connect-to-the-rak3272s-breakout-board).

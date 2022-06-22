@@ -24,7 +24,7 @@ The information obtained from the barometer pressure will then be printed over t
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK1902 WisBlock module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK1902 WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware
 
@@ -44,9 +44,9 @@ Before going through each and every step on using RAK1902 WisBlock module, make 
 
 ### Hardware Setup
 
-WisBlock can integrate this module which calculates temperature and makes it easy to build up a barometric air pressure data acquisition system. 
+WisBlock can integrate this module, which calculates temperature and makes it easy to build up a barometric air pressure data acquisition system. 
 
-For more information about RAK1902, refer to the [Datasheet](../Datasheet/).
+For more information about the RAK1902, refer to the [Datasheet](../Datasheet/).
 
 The RAK1902 module gives us information about:
 

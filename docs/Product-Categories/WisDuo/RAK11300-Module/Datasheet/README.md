@@ -15,7 +15,7 @@ tags:
 
 ### Description
 
-RAK11300 WisDuo LPWAN Module is based on the Raspberry Pi RP2040 chip and SX1262 RF transceiver. It provides an easy to use, small size, low-power solution for long range wireless data applications. This module complies with Class A & C of LoRaWAN 1.0.2 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Helium, etc.
+RAK11300 WisDuo LPWAN Module is based on the Raspberry Pi RP2040 chip and SX1262 RF transceiver. It provides an easy-to-use, small-size, low-power solution for long-range wireless data applications. This module complies with Class A & C of LoRaWAN 1.0.2 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Helium, etc.
 
 ### Features
 
@@ -32,7 +32,7 @@ RAK11300 WisDuo LPWAN Module is based on the Raspberry Pi RP2040 chip and SX1262
 
 ## Specifications
 
-This section covers the hardware and software specifications of RAK11300.It also includes the block diagram of the module showing its interfaces. 
+This section covers the hardware and software specifications of RAK11300. It also includes the block diagram of the module showing its interfaces. 
 
 ### Overview
 
@@ -46,13 +46,13 @@ This section covers the hardware and software specifications of RAK11300.It also
 
 ### Hardware
 
-The hardware specification discusses the interfaces, pinouts and its corresponding functions and diagrams. It also covers the parameters of the both RAK11300 Modules in terms of RF, electrical, mechanical, and operating characteristics. 
+The hardware specification is categorized into six parts. It shows the interfaces of the module and discusses the pinouts and their corresponding functions and diagrams. It also covers the RF, electrical, mechanical, and environmental parameters of the RAK11300 WisDuo LPWAN Module. 
 
 #### Interfaces
 
-| Module  | Interfaces               |
-| ------  | ------------------------ |
-| RAK11300 | UART, USB                |
+| Module   | Interfaces |
+| -------- | ---------- |
+| RAK11300 | UART, USB  |
 
 #### Pin Definition
 
@@ -64,7 +64,7 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
 
 ##### Pin Description
 
-The Table below shows the pin definition and description of RAK11300.
+The table below shows the pin definition and description of RAK11300:
 
 | Type | Description    |
 | ---- | -------------- |
@@ -122,10 +122,10 @@ The Table below shows the pin definition and description of RAK11300.
 
 ##### SWD Interface
 
-| Pin Name | Pin No. | Type  | Description                               |
-| -------- | ------- | ----- | ----------------------------------------- |
-| SWCLK    | 19      | Debug | SWD clock input for debug and programming |
-| SWDIO    | 20      | Debug | SWD I/O for debug and programming         |
+| Pin Name | Pin No. | Type  | Description                                   |
+| -------- | ------- | ----- | --------------------------------------------- |
+| SWCLK    | 19      | Debug | SWD clock input for debugging and programming |
+| SWDIO    | 20      | Debug | SWD I/O for debugging and programming         |
 
 ##### RESET
 
@@ -135,9 +135,9 @@ The Table below shows the pin definition and description of RAK11300.
 
 ##### Antenna Interface
 
-| Pin Name | Pin No. | Type | Description            | Comment                                          |
-| -------- | ------- | ---- | ---------------------- | ------------------------------------------------ |
-| RF_LoRa  | 38      | IO   | LoRa antenna interface | 50Ω Impedance<br/>This pin can't be used on modules with IPEX connector. If unused, keep this pin open. |
+| Pin Name | Pin No. | Type | Description            | Comment                                                                                                          |
+| -------- | ------- | ---- | ---------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| RF_LoRa  | 38      | IO   | LoRa antenna interface | 50&nbsp;Ω Impedance<br/>This pin can't be used on modules with an IPEX connector. If unused, keep this pin open. |
 
 ##### ADC and GPIO
 
@@ -155,7 +155,7 @@ The Table below shows the pin definition and description of RAK11300.
 
 #### RF Characteristics
 
-The RAK11300 supports two different frequency variation: RAK11300(L) Low Radio Frequency and RAK11300 High Radio Frequency.
+The RAK11300 supports two different frequency variations: RAK11300(L) Low Radio Frequency and RAK11300(H) High Radio Frequency.
 
 ##### Operating Frequencies
 
@@ -163,7 +163,7 @@ The RAK11300 supports two different frequency variation: RAK11300(L) Low Radio F
 | ----------- | --------- | --------- |
 | RAK11300(L) | Europe    | EU433     |
 |             | China     | CN470     |
-| RAK11300    | Europe    | EU868     |
+| RAK11300(H) | Europe    | EU868     |
 |             | America   | US915     |
 |             | Australia | AU915     |
 |             | Korea     | KR920     |
@@ -175,34 +175,34 @@ The RAK11300 supports two different frequency variation: RAK11300(L) Low Radio F
 
 ##### Recommended Operating Conditions
 
-| **Symbol** | **Description**             | **Min.** | **Nom.** | **Max.** | **Unit** |
-| ---------- | --------------------------- | -------- | -------- | -------- | -------- |
-| VBAT_SX    | SX1262  supply voltage      | 2.0      | 3.3      | 3.7      | V        |
-| VBAT_SX_IO | SX1262  supply for I/O pins | 2.0      | 3.3      | 3.7      | V        |
-| DVDD       | Power supply  of MCU        | 2.0      | 3.3      | 3.6      | V        |
-| AVDD       | ADC Reference Voltage       | -        | 3.3      | -        | V        |
+| **Symbol** | **Description**            | **Min.** | **Nom.** | **Max.** | **Unit** |
+| ---------- | -------------------------- | -------- | -------- | -------- | -------- |
+| VBAT_SX    | SX1262 supply voltage      | 2.0      | 3.3      | 3.7      | V        |
+| VBAT_SX_IO | SX1262 supply for I/O pins | 2.0      | 3.3      | 3.7      | V        |
+| DVDD       | Power supply  of MCU       | 2.0      | 3.3      | 3.6      | V        |
+| AVDD       | ADC Reference Voltage      | -        | 3.3      | -        | V        |
 
 <!-- ##### Power Consumption
 
-**Note:** The power consumption data is to be updated with latest test result. 
+**Note:** The power consumption data is to be updated with the latest test result. 
 
 | **Item**                | **Power  Consumption** | **Condition**         |
 | ----------------------- | ---------------------- | --------------------- |
 | Tx  mode LoRa @20dBm    | -                      | LoRa  @ PA_BOOST      |
 | Tx  mode LoRa @17dBm    | -                      | LoRa  @ PA_BOOST      |
 | Rx  mode LoRa @37.5Kbps | -                      | LoRa  @ Receive  mode |
-| Sleep  mode current     | -                      | LoRa  sleep           | -->
+| Sleep  mode current     | -                      | LoRa  sleep           | --> |
 
 ##### Absolute Maximum Ratings
 
-| **Symbol** | **Description**                | **Min.** | **Nom.** | **Max.** | **Unit** |
-| ---------- | ------------------------------ | -------- | -------- | -------- | -------- |
-| VBAT_SX    | LoRa  chip supply voltage      | -0.5     | -        | 3.9      | V        |
-| VBAT_SX_IO | LoRa  chip supply for I/O pins | -0.5     | -        | 3.9      | V        |
-| DVDD       | Supply for the MCU             | -0.5     | -        | 3.6      |          |
-| AVDD       | ADC Reference Voltage          | -0.5     | -        | 3.6      |          |
-| ESD HBM    | Human  Body Model              | -        | -        | 2000     | V        |
-| ESD  CDM   | Charged  Device Model          | -        | -        | 500      | V        |
+| **Symbol** | **Description**               | **Min.** | **Nom.** | **Max.** | **Unit** |
+| ---------- | ----------------------------- | -------- | -------- | -------- | -------- |
+| VBAT_SX    | LoRa chip supply voltage      | -0.5     | -        | 3.9      | V        |
+| VBAT_SX_IO | LoRa chip supply for I/O pins | -0.5     | -        | 3.9      | V        |
+| DVDD       | Supply for the MCU            | -0.5     | -        | 3.6      |          |
+| AVDD       | ADC Reference Voltage         | -0.5     | -        | 3.6      |          |
+| ESD HBM    | Human Body Model              | -        | -        | 2000     | V        |
+| ESD  CDM   | Charged Device Model          | -        | -        | 500      | V        |
 
 
 #### Mechanical Characteristics
@@ -259,6 +259,6 @@ Standard conditions for reflow soldering:
 Download the latest firmware of the RAK11300 WisDuo LPWAN Module provided below.
 
 #### Firmware / OS
-| Model     | Version     | Source                                                              |
-| --------- | ----------- | ------------------------------------------------------------------- |
-| RAK11300  | V1.0.0 | [Download](https://downloads.rakwireless.com/LoRa/RAK11300/Firmware/RAK11300_Latest_Firmware.zip) |
+| Model    | Version | Source                                                                                            |
+| -------- | ------- | ------------------------------------------------------------------------------------------------- |
+| RAK11300 | V1.0.0  | [Download](https://downloads.rakwireless.com/LoRa/RAK11300/Firmware/RAK11300_Latest_Firmware.zip) |

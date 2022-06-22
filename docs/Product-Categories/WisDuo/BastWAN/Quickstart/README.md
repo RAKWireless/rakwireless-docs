@@ -56,9 +56,9 @@ pyocd flash -t atsaml21j18a bootloader-bast-wan-v3.4.0.bin
 
 Once the command is executed, the bootloader should be flashed successfully. You can now connect the RAK3244 BastWan to your PC.
 
-### Setting up the Things Network (TTN)
+### Setting up The Things Network (TTN)
 
-In this section, The Things Network (TTN) and the procedure to set up the platform to connect with RAK3244 BastWAN is explained.
+In this section, The Things Network (TTN) and the procedure to set up the platform to connect with RAK3244 BastWAN are explained.
 
 <rk-img
   src="/assets/images/wisduo/bastwan/quickstart/3.ttn-context.png"
@@ -66,7 +66,7 @@ In this section, The Things Network (TTN) and the procedure to set up the platfo
   caption="RAK3244 BastWAN in the context of the TTN"
 />
 
-As shown in Figure 2, the RAK3244 BastWAN is one of the devices located on the left side. In the context of an IoT solution, the objective is to deploy devices to sense the relevant process variables and transmit the data to the backend servers located in the cloud. The data will be processed and integrated as part of a larger solution that could generate efficiency, traceability, predictability capacity among others.
+As shown in **Figure 2**, the RAK3244 BastWAN is one of the devices located on the left side. In the context of an IoT solution, the objective is to deploy devices to sense the relevant process variables and transmit the data to the backend servers located in the cloud. The data will be processed and integrated as part of a larger solution that could generate efficiency, traceability, predictability capacity among others.
 
 The RAK3244 BastWAN can be part of this ecosystem, and the objective of this section is to demonstrate how simple to send data to the TTN using the LoRaWAN protocol. To achieve this, the RAK3244 BastWAN must be located inside the coverage of a LoRaWAN gateway.
 
@@ -76,7 +76,7 @@ The device name used for the setup is "RAK4260" since it is the core of RAK3244 
 
 <b>Sign up and Login</b>
 
-If you don't have an account yet, head on to the [TTN website](https://www.thethingsnetwork.org/) and create one. Once done, login to your account and go to the Console. 
+If you don't have an account yet, head on to the [TTN website](https://www.thethingsnetwork.org/) and create one. Once done, log in to your account and go to the Console. 
 
 <rk-img
   src="/assets/images/wisduo/bastwan/quickstart/4.ttn-home.png"
@@ -110,14 +110,14 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
   caption="Adding an Application"
 />
 
-* Here are the things that you should take note in adding an application:
+* Here are the things that you should take note of in adding an application:
 
     * **Application ID** - this will be the unique ID of your application in the Network. Note that the characters should be in lower case, no spaces are allowed.
-    * **Description** - this is a short and concise human readable description of your application.
+    * **Description** - this is a concise human-readable description of your application.
     * **Application EUI** - this will be generated automatically by The Things Network for convenience.
     * **Handler Registration** - handler you want to register this application to.
     
-3. After you fill in the necessary information, press the "**Add application**" button at the bottom of the page. If you see similar page as shown in Figure 8, then you have successfully registered your application.
+3. After you fill in the necessary information, press the "**Add application**" button at the bottom of the page. If you see a similar page as shown in **Figure 8**, then you have successfully registered your application.
 
 <rk-img
   src="/assets/images/wisduo/bastwan/quickstart/8.application_overview.png"
@@ -143,7 +143,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
   caption="Add your Device"
 />
 
-In this form, the device ID must be unique for the application and must be completed with a lower case, alphanumeric characters. The rest of the parameters in the form are very important for the LoRaWAN protocol:
+In this form, the device ID must be unique for the application and must be completed with lower case, alphanumeric characters. The rest of the parameters in the form are very important for the LoRaWAN protocol:
 
 * Device EUI
 * Application Key
@@ -176,7 +176,7 @@ In this section, you will be introduced on how to use the RAK3244 BastWAN with A
 />
 
 :::tip 📝 NOTE:
-If there is already an existing URL on the textbox, click the button at the right end of the field. This will open an editing window, allowing you to paste the above URL onto a new line as demonstrated in Figure 12.
+If there is already an existing URL on the textbox, click the button at the right end of the field. This will open an editing window, allowing you to paste the above URL onto a new line as demonstrated in **Figure 12**.
 :::
 
 <rk-img
@@ -211,9 +211,9 @@ If there is already an existing URL on the textbox, click the button at the righ
 
 ### LoRaWAN Library Installation
 
-RAK3244 BastWAN board uses the Beelan-LoRaWAN library, which supports LoRaWAN Class A and Class C implementations operating in EU-868, AS-923, US-915 and AU-915 bands. You can recognize this library as the `<lorawan.h>` on the sample code.   
+RAK3244 BastWAN board uses the Beelan-LoRaWAN library, which supports LoRaWAN Class A and Class C implementations operating in EU-868, AS-923, US-915, and AU-915 bands. You can recognize this library as the `<lorawan.h>` on the sample code.   
   
-In order for the sample code to work, the Beelan-LoRaWAN library must be installed. To do this, navigate to **Tools > Manage Libraries** on Arduino IDE. Then search for **Beelan LoraWAN** and install the latest version of the library. The window indicates if the library is installed, as shown in Figure 15.  
+In order for the sample code to work, the Beelan-LoRaWAN library must be installed. To do this, navigate to **Tools > Manage Libraries** on Arduino IDE. Then search for **Beelan LoraWAN** and install the latest version of the library. The window indicates if the library is installed, as shown in **Figure 15**.  
   
 <rk-img
   src="/assets/images/wisduo/bastwan/quickstart/library-installed.png"
@@ -221,7 +221,7 @@ In order for the sample code to work, the Beelan-LoRaWAN library must be install
   caption="Beelan LoRaWAN library installed"
 />
 
-Visit the [Beelan-LoRaWAN official github repository](https://github.com/BeelanMX/Beelan-LoRaWAN) for more information.
+Visit the [Beelan-LoRaWAN official GitHub repository](https://github.com/BeelanMX/Beelan-LoRaWAN) for more information.
 
 ## First Test
 
@@ -235,7 +235,7 @@ The following sections will demonstrate how to modify LoRaWAN parameters to esta
 
 For the RAK3244 BastWAN to successfully connect to a LoRaWAN Platform, several parameters must be properly configured. Not doing so will result in connection failure.
 
-The most volatile parameters on LoRaWAN configuration are the Device EUI, Application EUI, and Application Keys. These data must match with the ones on The Thing Network (TTN) platform. Copy the EUIs and Keys from the TTN platform and paste them on the sample source code. Figure 17 shows the lines of codes that should be modified:  
+The most volatile parameters on LoRaWAN configuration are the Device EUI, Application EUI, and Application Keys. These data must match with the ones on The Thing Network (TTN) platform. Copy the EUIs and Keys from the TTN platform and paste them on the sample source code. **Figure 17** shows the lines of codes that should be modified:  
   
 <rk-img
   src="/assets/images/wisduo/bastwan/quickstart/dev_app_eui.png"

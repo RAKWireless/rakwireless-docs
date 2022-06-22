@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisblock/rak1921/overview/RAK1921_home.png
-rak_desc: RAK1921 is a WisBlock Display module which extends the WisBlock system with an OLED display. A ready to use SW library and tutorial makes it easy to visualize data of your WisBlock solution.
+rak_desc: RAK1921 is a WisBlock Display module, which extends the WisBlock system with an OLED display. A ready to use SW library and tutorial makes it easy to visualize data of your WisBlock solution.
 rak_grp: [wisblock, wisdisplay]
 prev: ../../
 next: ../Datasheet/
@@ -32,7 +32,7 @@ For All WisBlock Core Modules:
 
 ## Product Description
 
-**RAK1921** is a **WisBlock Display** module which extends the **WisBlock** system with an OLED display. A ready to use SW library and tutorial makes it easy to visualize data of your **WisBlock** solution.
+**RAK1921** is a **WisBlock Display** module, which extends the **WisBlock** system with an OLED display. A ready to use SW library and tutorial makes it easy to visualize data of your **WisBlock** solution.
 
 <!--
 The RAK1921 module is part of the WisBlock series that belongs to the accessory category. This module was designed to be part of a production-ready IoT solution in a modular way. As part of the accessory category, it is not mandatory to be part of a final solution, but on a certain occasion, it provides competitive advantages and improves the usability of the final solution.
@@ -62,7 +62,7 @@ RAK1921 is an OLED display module with a **128×64 dot matrix**. The main charac
     * Low Power Consumption    
 
 * **Size**
-    * 27.8 x 27.3 mm    
+    * 27.8 x 27.3&nbsp;mm    
 
 ## Prerequisites
 

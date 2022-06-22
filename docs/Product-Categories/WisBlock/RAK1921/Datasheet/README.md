@@ -15,19 +15,25 @@ prev: ../Overview/
 
 ### Description
 
-The RAK1921 module part of the WisBlock series, is one of the modules that belong to the accessory category. This module was designed to be part of a production-ready IoT solution in a modular way. As part of the accessory category, it is not mandatory to be part of the final solution, but for certain cases can provide competitive advantages and improves the usability of the final solution. 
 
-RAK1921 is an OLED display module with a 128×64 dot matrix. The main characteristics of this module are: high brightness, self-emission, high contrast ratio, slim/thin outline, wide viewing angle, wide temperature range, and low power consumption.
+The RAK1921 module, part of the WisBlock series, is one of the modules that belong to the accessory category. This module was designed to be part of a production-ready IoT solution in a modular way. As part of the accessory category, it is not mandatory to be part of the final solution, but for certain cases can provide competitive advantages and improves the usability of the final solution. 
+
+RAK1921 is an OLED display module with a 128×64 dot matrix. The main characteristics of this module are the following: high brightness, self-emission, high contrast ratio, slim/thin outline, wide viewing angle, wide temperature range, and low power consumption.
 
 
 ### Features
 
-- Display Color: **White**
-- Dot Matrix: **128×64**
-- Driver IC: **SSD1306**
-- Interface: **IIC**
-- Wide range of operating temperature: **-30°–70°&nbsp;C**
-- Compatible RAK5005-O header interface
+* **Module specifications**
+    * 0.96&nbsp;in OLED display     
+    * 128x64 pixel resolution    
+    * Bright white color on black background     
+    * I2C interface    
+    * Driver IC: SSD1306    
+    * Slim/thin Outline    
+    * Wide Viewing Angle    
+    * Wide Temperature Range    
+    * Low Power Consumption    
+    * Module size: 27.8 x 27.3&nbsp;mm    
 
 ## Specifications
 
@@ -43,7 +49,7 @@ The hardware specification is categorized into four parts. It discusses the inte
 
 #### Interfaces
 
-The RAK1921 module is compatible with RAK5005-O WisBoard baseboard. The RAK5005-O has reserved a dedicated I2C port with a 2.54&nbsp;mm header, as shown in the red rectangle in Figure 2, in which the RAK1921 can be attached. 
+The RAK1921 module is compatible with the RAK5005-O WisBoard baseboard. The RAK5005-O has reserved a dedicated I2C port with a 2.54&nbsp;mm header, as shown in the red rectangle in **Figure 1**, in which the RAK1921 can be attached. 
 
 <rk-img
   src="/assets/images/wisblock/rak1921/datasheet/interface.png"
@@ -54,12 +60,12 @@ The RAK1921 module is compatible with RAK5005-O WisBoard baseboard. The RAK5005-
 
 
 :::tip 📝 NOTE:
-Be careful in selecting the baseboard, and make sure that RAK5005-O is chosen, because the RAK5005 is not compatible with the RAK1921 WisBlock OLED Display.
+Be careful in selecting the baseboard, and make sure to choose RAK5005-O because the RAK5005 is not compatible with the RAK1921 WisBlock OLED Display.
 :::
 
 #### Pin Definition
 
-Figure 2 shows the name of the pins available in the RAK1921 module. This module supports an I2C interface.  
+**Figure 2** shows the name of the pins available in the RAK1921 module. This module supports an I2C interface.  
 
 <rk-img
   src="/assets/images/wisblock/rak1921/datasheet/RAK1921-pin-definition.png"
@@ -68,12 +74,12 @@ Figure 2 shows the name of the pins available in the RAK1921 module. This module
 />
 
 
-| **Name** | **Description**          |
-| -------- | ------------------------ |
-| VCC      | Power Supply (2.4 –3.5V) |
-| GND      | Grounding                |
-| SCL      | I2C Clock Signal         |
-| SDA      | I2C Data Signal          |
+| **Name** | **Description**                |
+| -------- | ------------------------------ |
+| VCC      | Power Supply (2.4 –3.5&nbsp;V) |
+| GND      | Grounding                      |
+| SCL      | I2C Clock Signal               |
+| SDA      | I2C Data Signal                |
 
 
 #### Electrical Characteristics

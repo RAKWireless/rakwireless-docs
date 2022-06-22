@@ -24,7 +24,7 @@ The information obtained from the Sensor Adapter Module will then be printed ove
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK1920 WisBlock module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK1920 WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware
 
@@ -45,9 +45,9 @@ Before going through each and every step on using RAK1920 WisBlock module, make 
 
 ### Hardware Setup
 
-RAK1920 is a WisBlock Interface module which extends the WisBlock system with an adapter board to connect Click Boards (MikroElektronika), QWICC (Sparkfun) based, and Grove (Seeed) based sensors to WisBlock. 
+RAK1920 is a WisBlock Interface module, which extends the WisBlock system with an adapter board to connect Click Boards (MikroElektronika), QWICC (Sparkfun) based, and Grove (Seeed) based sensors to WisBlock. 
 
-For more information about RAK1920, refer to the [Datasheet](../Datasheet/).
+For more information about the RAK1920, refer to the [Datasheet](../Datasheet/).
 
 RAK1920 module is part of the WisBlock Interface category, which connects to the base board through the IO slot. Also, always secure the connection of the WisBlock module by using the compatible screws.
 

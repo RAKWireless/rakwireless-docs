@@ -15,7 +15,7 @@ next: ../Low-Level-Development/
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK2305 WisBlock module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK2305 WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware
 
@@ -34,11 +34,11 @@ Before going through each and every step on using RAK2305 WisBlock module, make 
 
 ESP-AT is a project developed by Espressif to integrate connectivity into customers’ products. It aims to reduce software development costs and allows you to create new products quickly. AT is the abbreviation for Attention. These commands come from Hayes commands that were used by the Hayes smart modems.
 
-ESP-AT is based on ESP-IDF, the official development framework for the ESP32. On this solution, a WisBlock Core works as an Initiator and the WisBlock Wireless RAK2305 is the target. The initiator sends AT commands via UART to the target and receives AT responses back. The AT commands are processed on target one by one. Therefore, you should wait for the previous command to be executed before sending out the next one. You can develop your own AT commands based on the ESP-AT project and implement more features according to your needs. Check [Low Level Development](../Low-Level-Development/) section.
+ESP-AT is based on ESP-IDF, the official development framework for the ESP32. On this solution, a WisBlock Core works as an Initiator and the WisBlock Wireless RAK2305 is the target. The initiator sends AT commands via UART to the target and receives AT responses back. The AT commands are processed on target one by one. Therefore, you should wait for the previous command to be executed before sending out the next one. You can develop your own AT commands based on the ESP-AT project and implement more features according to your needs. Check the [Low Level Development](../Low-Level-Development/) section.
 
 Two RAK2305 ESP-AT firmware versions are available:
 - [RAK2305-Basic-WIFI-BLE-AT.bin](https://github.com/RAKWireless/WisBlock/blob/master/bootloader/RAK2305/RAK2305-Basic-WIFI-BLE-AT.bin)：The Factory bin version with WiFi and BLE AT commands. This is the default firmware uploaded to the RAK2305.
-- [RAK2305-Basic-WIFI-HTTP-MQTT-AT.bin](https://github.com/RAKWireless/WisBlock/blob/master/bootloader/RAK2305/RAK2305-Basic-WIFI-HTTP-MQTT-AT.bin): With WiFi, MQTT and HTTP AT Commands. If a user wants to use MQTT and HTTP AT Commands, this firmware is needed.
+- [RAK2305-Basic-WIFI-HTTP-MQTT-AT.bin](https://github.com/RAKWireless/WisBlock/blob/master/bootloader/RAK2305/RAK2305-Basic-WIFI-HTTP-MQTT-AT.bin): With WiFi, MQTT and HTTP AT Commands. If you want to use the MQTT and HTTP AT Commands, this firmware is needed.
 
 ## Product Configuration
 
@@ -46,7 +46,7 @@ Two RAK2305 ESP-AT firmware versions are available:
 
 RAK2305 WisBlock WiFi Interface Module can only be connected with WisBlock Base Board through the **IO SLOT**. The **IO SLOT** is used by the RAK2305 to communicate with the WisBlock Core. Also, always secure the connection of the WisBlock module by using the compatible screws.
 
-For more information about RAK2305, refer to the [Datasheet](../Datasheet/).
+For more information about the RAK2305, refer to the [Datasheet](../Datasheet/).
 
 <rk-img
   src="/assets/images/wisblock/rak2305/quickstart/rak2305-assembly.png"
@@ -58,7 +58,7 @@ For more information about RAK2305, refer to the [Datasheet](../Datasheet/).
 
 ##### Assembling
 
-There is only a single **IO SLOT** in the WisBlock Base Board to connect the RAK2305. As shown in Figure 2, the location of the slot is properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
+There is only a single **IO SLOT** in the WisBlock Base Board to connect the RAK2305. As shown in **Figure 2**, the location of the slot is properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
 <rk-img
   src="/assets/images/wisblock/rak2305/quickstart/wisbloc-io-silkscreen.png"
@@ -68,7 +68,7 @@ There is only a single **IO SLOT** in the WisBlock Base Board to connect the RAK
 
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK2305 uses UART communication lines on **IO SLOT**.
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK2305 uses UART communication lines on the **IO SLOT**.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock.
@@ -94,7 +94,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
   caption="Detaching silkscreen on the WisBlock module"
 />
 
-3. Apply force to the module at the position of the connector, as shown in Figure 4, to detach the module from the baseboard.
+3. Apply force to the module at the position of the connector, as shown in **Figure 4**, to detach the module from the baseboard.
 
 <rk-img
   src="/assets/images/wisblock/rak2305/quickstart/detaching-module.png"
@@ -106,7 +106,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 RAK2305 has a default firmware loaded in it that supports WiFi and BLE related AT Commands. If you need to have HTTP or MQTT functionality, you need to upload a different [firmware](https://github.com/RAKWireless/WisBlock/blob/master/bootloader/RAK2305/RAK2305-Basic-WIFI-HTTP-MQTT-AT.bin) that supports those features.
 
-The complete list of ESP32 AT Command set can be found in [Espressif AT Command Set online documentation](https://docs.espressif.com/projects/esp-at/en/latest/AT_Command_Set/index.html).
+The complete list of ESP32 AT Command set can be found in the [Espressif AT Command Set online documentation](https://docs.espressif.com/projects/esp-at/en/latest/AT_Command_Set/index.html).
 
 
 #### Initial Test of the RAK2305 WisBlock Wireless
@@ -205,7 +205,7 @@ Before starting the firmware upgrade, you need to download [Flash Download Tools
 />
 
 2. Choose **SPIDownload** tab.
-3. Click on **...** icon and choose the bin file at address 0x0. 
+3. Click on the **...** icon and choose the bin file at address 0x0. 
 4. Select **DoNotChgBin** to use the default configuration. 
 5. Select the **COM** port of the USB adapter and use 921600 for **BAUD**.
 
@@ -215,7 +215,7 @@ Before starting the firmware upgrade, you need to download [Flash Download Tools
   caption="ESP Flash Download Tool Configuration"
 />
 
-6. To start Flash Download, click on **START** button.
+6. To start Flash Download, click on the **START** button.
 
 <rk-img
   src="/assets/images/wisblock/rak2305/quickstart/esp-fdt-downl.png"

@@ -54,11 +54,11 @@ git submodule update --init
 
 #### Install Prerequisites
 
-1. Download the latest stable release of [CMake](https://cmake.org/download/) for Windows and run the installer.
+1. Download and install the latest stable release of [CMake](https://cmake.org/download/) for Windows.
 
-2. Download and install latest stable Windows release of [ninja](https://github.com/ninja-build/ninja/releases).
+2. Download and install the latest stable Windows release of [ninja](https://github.com/ninja-build/ninja/releases).
 
-3. Open Windows Command Prompt: Press **Windows+R** to open “**Run**” box. Type “**cmd**” and then click “**OK**”. If you have already installed python, check the installed version. If you don't have python installed, use the link below as a guide.<br>
+3. Open the Windows Command Prompt: Press **Windows+R** to open “**Run**” box. Type “**cmd**” and then click “**OK**”. If you have already installed python, check the installed version. If you don't have python installed, use the link below as a guide.<br>
    
 - [How to install Python](https://www.c-sharpcorner.com/article/how-to-install-python-3-8-in-windows/)
 
@@ -91,11 +91,11 @@ python -m pip install pyyaml xlrd click
 
 - [mconf-idf](https://github.com/espressif/kconfig-frontends/releases/)
 
-8. Download and install [github for windows](https://git-scm.com/downloads).
+8. Download and install [GitHub for windows](https://git-scm.com/downloads).
 
 #### Clone and Build the ESP-AT Project
 
-Connect the RAK2305 on USB to UART adapter as described on [Flash ESP-AT Firmware into Your Device](/Product-Categories/WisBlock/RAK2305/Quickstart/#flash-esp-at-firmware-into-your-device/) section.
+Connect the RAK2305 on USB to UART adapter as described on the [Flash ESP-AT Firmware into Your Device](/Product-Categories/WisBlock/RAK2305/Quickstart/#flash-esp-at-firmware-into-your-device/) section.
 
 1. Open Windows Command Prompt:
 
@@ -121,14 +121,14 @@ cd esp-at
 
 The project will be cloned into the folder **esp-at**.
 
-4. Configure ESP-AT project. To configure your ESP-AT project, execute the commands below.
+4. Configure ESP-AT project. To configure your ESP-AT project, execute the commands below:
 
 ```
 cd %userprofile%\esp\esp-at
 python build.py menuconfig
 ```
 
-5. Select **PLATFORM_ESP32** on **Platform Name**. Select **WROVER-32** on **Module Name**. On Enable Silent Mode option, select **1**.
+5. Select **PLATFORM_ESP32** on the **Platform Name**. Select **WROVER-32** on the **Module Name**. On the Enable Silent Mode option, select **1**.
 
 <rk-img
   src="/assets/images/wisblock/rak2305/lowlevel/esp-at-menuconfig.png"
@@ -171,14 +171,14 @@ python build.py flash
 
 #### How to Proceed in Case of Compilation Error
 
-1. The esp-at project uses its own version of ESP-IDF. If you need to remove an old ESP-IDF version, execute the following command.
+1. The esp-at project uses its own version of ESP-IDF. If you need to remove an old ESP-IDF version, execute the following command:
 
 ```
 cd %userprofile%\esp\esp-at
 rmdir /s /q  esp-idf
 ```
 
-2. In case of a build error related to ESP-IDF in the compilation, it is recommended to update ESP-IDF environment variables. Update environment variables, remove last build, then do a new build.
+2. In case of a build error related to ESP-IDF in the compilation, it is recommended to update ESP-IDF environment variables. Update environment variables, remove the last build, then do a new build.
 
 ```
 cd %userprofile%\esp\esp-at\esp-idf
@@ -190,7 +190,7 @@ python build.py build
 python build.py flash
 ```
 
-3. In case of a unknown build error, first, try to found the error. Then remove the **build** folder and do a new build.
+3. In case of a unknown build error, first, try to find the error. Then remove the **build** folder and do a new build.
 
 ```
 cd %userprofile%\esp\esp-at
@@ -227,18 +227,18 @@ The link below shows a complete list of AT commands. Not all commands are availa
 
 #### User-Defined AT Commands
 
-The structure, at_cmd_struct, is used to define four types of commands.
+The structure, `at_cmd_struct`, is used to define four types of commands.
 
-1. Test command:  **AT+COMMAND=?**
+1. Test command:  **`AT+COMMAND=?`**
 <br>Query parameters and scope of the various parameters of the Set command.
 
-2. Query command: **AT+COMMAND?**
+2. Query command: **`AT+COMMAND?`**
 <br>This command returns the value of the current parameter and also can return some additional information.
 
-3. Set commands: **AT+COMMAND=...**
+3. Set commands: **`AT+COMMAND=...`**
 <br>Set the value of a parameter(s) **...** to the AT command and run this command.
 
-4. Execute commands: **AT+COMMAND**<br>
+4. Execute commands: **`AT+COMMAND`**<br>
 This kind of command executes instructions without parameters.
 <br>
 
@@ -254,12 +254,12 @@ typedef struct {
 } esp_at_cmd_struct;
 ```
 
-As an example, a new command called **AT+RAKCMD** is created. The following is the complete definition of this new command:
+As an example, a new command called **`AT+RAKCMD`** is created. The following is the complete definition of this new command:
 
-1. Test command: **AT+RAKCMD=?**
-2. Query command: **AT+RAKCMD?**
-3. Setup command: **AT+RAKCMD=param_1,param_2,param_3,…**
-4. Execute command: **AT+RAKCMD**
+1. Test command: **`AT+RAKCMD=?`**
+2. Query command: **`AT+RAKCMD?`**
+3. Setup command: **`AT+RAKCMD=param_1,param_2,param_3,…`**
+4. Execute command: **`AT+RAKCMD`**
 
 Because of no arguments, the execute command is used to achieve it. The sample code is as follows:
 

@@ -12,7 +12,7 @@ tags:
 
 # RAK3272S Breakout Board
 
-Thank you for choosing **RAK3272S Breakout Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK3272S Breakout Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [AT Command Manual](../AT-Command-Manual/)
@@ -22,11 +22,11 @@ Thank you for choosing **RAK3272S Breakout Board** in your awesome IoT Project! 
 
 ## Product Description
 
-RAK3272S Breakout Board is specifically designed to allow easy access to the pins on the board in order to simplify development and testing. The breakout board footprint is based on the XBee form factor and its main purpose is to allow the RAK3172 stamp module pins to be transferred to 2.54&nbsp;mm headers.
+RAK3272S Breakout Board is specifically designed to allow easy access to the pins on the board in order to simplify development and testing. The breakout board footprint is based on the XBee form factor, and its main purpose is to allow the RAK3172 stamp module pins to be transferred to 2.54&nbsp;mm headers.
 
-The board itself has the RAK3172 at its core, integrating a STM32WLE5CC chip, It has Ultra-Low Power Consumption of 1.69&nbsp;uA in sleep mode 
+The board itself has the RAK3172 at its core, integrating a STM32WLE5CC chip. It has Ultra-Low Power Consumption of 1.69&nbsp;uA in sleep mode.
 
-This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications. It also supports LoRa Point-to-Point (P2P) communication mode which helps you in implementing your own customized long-range LoRa network quickly.
+This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications. It also supports LoRa Point-to-Point (P2P) communication mode, which helps you in implementing your own customized long-range LoRa network quickly.
 
 ## Product Features
 

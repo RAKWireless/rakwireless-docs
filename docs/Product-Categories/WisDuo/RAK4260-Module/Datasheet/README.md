@@ -32,7 +32,7 @@ The SAM R34 chip provides a number of highly configurable peripherals (configura
 
 It is a perfect solution for any LoRaWAN end node developer. The integration of the MCU and LoRa Transceiver reduces size and minimizes costs. Having such a compact solution within a single package reduces time to market and allows for rapid development and deployment for a number of scenarios.
 
-RAK4260 is a solution that is cost efficient and flexible that can be deployed in a wide variety of IoT scenarios that require the long-range connectivity and great battery life that LoRaWAN provides.
+RAK4260 is a solution that is cost-efficient and flexible that can be deployed in a wide variety of IoT scenarios that require the long-range connectivity and great battery life that LoRaWAN provides.
 
 ### Features
 
@@ -40,7 +40,7 @@ RAK4260 is a solution that is cost efficient and flexible that can be deployed i
 - 32-bit ARM Cortex M0+ MCU and LoRa Transceiver
 - Small form factor: 15&nbsp;mm x 15&nbsp;mm  compact package
 - 256&nbsp;KB Flash and 40&nbsp;KB RAM accommodates application code and stack
-- Most cost and size effective solution, eliminating need for external MCU
+- Most cost and size effective solution, eliminating the need for external MCU
 - Fully supported 862 to 1020&nbsp;MHz frequency coverage
 - Receive Sensitivity down to -148&nbsp;dBm
 - Maximum Transmit Power up to 20&nbsp;dBm
@@ -55,7 +55,7 @@ The overview section covers the RAK4260 WisDuo LPWAN Module board overview where
 
 #### Board Overview
 
-Figures 1 and 2 present the different views of the RAK4260 chip labelled for proper reference.
+**Figure 1** and **Figure 2** present the different views of the RAK4260 chip labeled for the proper reference.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-module/datasheet/rak4260-module-top-view.png"
@@ -89,7 +89,7 @@ The hardware specifications are categorized into five parts. It presents the sch
 Provided in this section is the pinout of the RAK4260 WisDuo LPWAN Module.
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/datasheet/rak4260-board-pinout.jpg"
+  src="/assets/images/wisduo/rak4260-module/datasheet/rak4260-board-pinout.svg"
   width="70%"
   caption="RAK4260 Board Pinout"
 />
@@ -186,12 +186,12 @@ Shown in the table provided below is the power consumption of the RAK4260 WisDuo
 |    OUTPUT POWER 17&nbsp;dB    | 95.6&nbsp;mA(typical) |   PA_BOOST V=3.3&nbsp;V    |
 |    OUTPUT POWER 14&nbsp;dB    |     33.1&nbsp;mA      |    RFO_HF V=3.3&nbsp;V     |
 |         Receive mode          |     13.6&nbsp;mA      |             -              |
-|          Sleep mode           |      860&nbsp;nA      | V = 3.3&nbsp;V Backup Mode |
+|          Sleep mode           |      860&nbsp;nA      | V=3.3&nbsp;V Backup Mode |
 
 ##### OUTPUT POWER 20&nbsp;dB(MAX)PA_BOOST mode
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/datasheet/output-power-20db.jpg"
+  src="/assets/images/wisduo/rak4260-module/datasheet/output-power-20db.svg"
   width="80%"
   caption="OUTPUT POWER 20&nbsp;dB(MAX)"
 />
@@ -199,7 +199,7 @@ Shown in the table provided below is the power consumption of the RAK4260 WisDuo
 ##### OUTPUT POWER 17&nbsp;dB(PA_BOOST mode)
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/datasheet/output-power-17db.jpg"
+  src="/assets/images/wisduo/rak4260-module/datasheet/output-power-17db.svg"
   width="80%"
   caption="OUTPUT POWER 17&nbsp;dB"
 />
@@ -207,7 +207,7 @@ Shown in the table provided below is the power consumption of the RAK4260 WisDuo
 ##### OUTPUT POWER 14&nbsp;dB(RFO_HF mode)
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/datasheet/output-power-14db.jpg"
+  src="/assets/images/wisduo/rak4260-module/datasheet/output-power-14db.svg"
   width="80%"
   caption="OUTPUT POWER 14&nbsp;dB"
 />
@@ -215,7 +215,7 @@ Shown in the table provided below is the power consumption of the RAK4260 WisDuo
 ##### Receive Mode
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/datasheet/receive-mode.jpg"
+  src="/assets/images/wisduo/rak4260-module/datasheet/receive-mode.svg"
   width="80%"
   caption="Receive Mode"
 />
@@ -223,7 +223,7 @@ Shown in the table provided below is the power consumption of the RAK4260 WisDuo
 ##### Sleep Mode
 
 <rk-img
-  src="/assets/images/wisduo/rak4260-module/datasheet/sleep-mode.jpg"
+  src="/assets/images/wisduo/rak4260-module/datasheet/sleep-mode.svg"
   width="80%"
   caption="Sleep Mode"
 />

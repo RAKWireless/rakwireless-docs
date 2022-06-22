@@ -14,9 +14,9 @@ tags:
 
 ### Introduction
 
-Using Low Level Development, you can develop your own firmware that runs on RAK4260. RAK offers this alternative for advance users who need to have a deeper integration of their solutions with this board.
+Using Low Level Development, you can develop your own firmware that runs on RAK4260. RAK offers this alternative for advanced users who need to have deeper integration of their solutions with this board.
 
-## How to Implement your App on RAK4260 Evaluation Board
+## How to Implement your App on the RAK4260 Evaluation Board
 
 ### Schematic
 
@@ -27,7 +27,7 @@ One of the essential aspects that allow you to develop your own firmware is the 
 The RAK4260 Evaluation Board covers only the high-frequency LoRaWAN bands (864&nbsp;MHz to 923&nbsp;MHz).
 :::
 
-Check [LoRaWAN frequencies by country](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html).
+Check the [LoRaWAN frequencies by country](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html).
 
 ### Microchip LoRaWAN Stack (MLS)
 
@@ -40,7 +40,7 @@ Before compiling a project for the RAK4260 Evaluation Board, it is necessary to 
 
 * [Microchip Studio](https://www.microchip.com/mplab/microchip-studio)
 
-1. Download and install Microchip Studio web installer.
+1. Download and install the Microchip Studio web installer.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/microchip_studio.png"
@@ -72,7 +72,7 @@ Before compiling a project for the RAK4260 Evaluation Board, it is necessary to 
   caption="ASF skip install"
 />
 
-5. Launch Microchip Studio then select Tools->Extensions and Updates.
+5. Launch Microchip Studio then select **Tools** -> **Extensions and Updates**.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/microchip_extensions.png"
@@ -80,7 +80,7 @@ Before compiling a project for the RAK4260 Evaluation Board, it is necessary to 
   caption="Microchip Studio Extensions and Updates"
 />
 
-6. In Extensions and Updates window, click on "**Online**" and then search for "**atmel software framework**". 
+6. In the Extensions and Updates window, click on "**Online**" and then search for "**atmel software framework**". 
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/asf.png"
@@ -88,9 +88,9 @@ Before compiling a project for the RAK4260 Evaluation Board, it is necessary to 
   caption="ASF install"
 />
 
-7. Select "**Atmel Software Framework**" and click on "**Download**" button to install it.
+7. Select "**Atmel Software Framework**" and click on the "**Download**" button to install it.
 
-8. To finish installation, launch Microchip Studio then go to Tools -> Device Pack Manager. Search for "**SAMR34**" and install "**SAMR34_DFP**" pack.
+8. To finish the installation, launch Microchip Studio then go to **Tools** -> **Device Pack Manager**. Search for "**SAMR34**" and install "**SAMR34_DFP**" pack.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/samr34_pack.png"
@@ -98,7 +98,7 @@ Before compiling a project for the RAK4260 Evaluation Board, it is necessary to 
   caption="SAMR34 pack install"
 />
 
-### Build RAK4260 LoRaNode Demo project
+### Build RAK4260 LoRaNode Demo Project
 
 RAK has already configured a demo firmware for RAK4260 based on Microchip LoRaWAN Stack (MLS) that can be downloaded freely for testing purposes in this Github Repository: 
 
@@ -110,15 +110,15 @@ The Microchip Studio LoRaWAN examples are based on [SAMR34 Xplained Pro](https:/
 This sample firmware is solely for testing purposes. If you want to use and deploy your own LoRaWAN application, you need to develop a customized firmware based on Microchip LoRaWAN Stack (MLS).
 :::
 
-1. Clone [RAK4260 github repository](https://github.com/RAKWireless/RAK4260-LoRaNode-demo).
+1. Clone the [RAK4260 GitHub repository](https://github.com/RAKWireless/RAK4260-LoRaNode-demo).
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/github-repo.png"
   width="100%"
-  caption="RAK4260 Github Repository"
+  caption="RAK4260 GitHub Repository"
 />
 
-2. Open and configure RAK4260-LoRaNode-demo solution.
+2. Open and configure the RAK4260-LoRaNode-demo solution.
 
 Go to the cloned directory folder: 
 **<cloned_dir>\RAK4260-LoRaNode-demo\APPS_ENDDEVICE_DEMO1**. Then double click on file "**APPS_ENDDEVICE_DEMO1.atsln**" to open Solution on Microchip Studio.
@@ -132,7 +132,7 @@ Go to the cloned directory folder:
 :::
 -->
 
-3. Compile RAK4260-LoRaNode-demo solution. In Microchip Studio, select Build -> Build Solution.
+3. Compile RAK4260-LoRaNode-demo solution. In Microchip Studio, select **Build** -> **Build Solution**.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/build-demo.png"
@@ -142,7 +142,7 @@ Go to the cloned directory folder:
 
 ### Flash the Firmware Using DAPLink and RAKDAP1
 
-To flash a new firmware, use the RAKDAP1, a SWD adapter. Refer to Figure 10 as reference to connect RAKDAP1 and RAK4600 Evaluation Board.
+To flash a new firmware, use the RAKDAP1, an SWD adapter. Refer to Figure 10 as a reference to connect RAKDAP1 and RAK4600 Evaluation Board.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/interfacing/rak4260-evb-connection.svg"
@@ -150,7 +150,7 @@ To flash a new firmware, use the RAKDAP1, a SWD adapter. Refer to Figure 10 as r
   caption="RAK4260 Evaluation Board connected to RAKDAP1"
 />
 
-1. Install [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool).
+1. Install the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool).
 
 RAKDAP1 uses the pyOCD package. pyOCD is an open-source Python package for programming and debugging ARM Cortex-M microcontrollers using multiple supported types of USB debug probes.
 

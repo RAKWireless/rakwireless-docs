@@ -25,7 +25,7 @@ The RAK4270 LoRa Module includes an **STM32L071 MCU** and an **SX1262** LoRa chi
 
 The module complies with Class A and C of LoRaWAN 1.0.2 specifications, and it also supports LoRa Point-to-Point (P2P) communications. The module is suitable for various applications that require long-range data acquisition and low power consumption, such as smart meters, supply chain and logistics tracking, agricultural sensors, and smart cities.
 
-You can configure the mode and operation of the RAK4270 module using [RAK4270 AT Commands](/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/) via a UART interface. Also, it offers low power features which is very suitable for battery powered applications.
+You can configure the mode and operation of the RAK4270 module using [RAK4270 AT Commands](/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/) via a UART interface. Also, it offers low-power features that are very suitable for battery-powered applications.
 
 
 ### Product Features
@@ -57,7 +57,7 @@ The overview shows the module top view and its block diagram where the core and 
 
 #### Board Overview
 
-Figure 1 shows the top view of the RAK4270 LoRa module. The dimensions of the module are 15 x 15.5 x 2.5&nbsp;mm
+**Figure 1** shows the top view of the RAK4270 LoRa module. The dimensions of the module are 15 x 15.5 x 2.5&nbsp;mm
 
 <rk-img
   src="/assets/images/wisduo/rak4270-module/datasheet/1.rak4270.png"
@@ -68,7 +68,7 @@ Figure 1 shows the top view of the RAK4270 LoRa module. The dimensions of the mo
 
 #### Block Diagram
 
-The block diagram representing the RAK4270 LoRa module is shown in Figure 2. External interfaces are outlined in the diagram.
+The block diagram representing the RAK4270 LoRa module is shown in **Figure 2**. External interfaces are outlined in the diagram.
 
 <rk-img
   src="/assets/images/wisduo/rak4270-module/datasheet/2.block-diagram.png"
@@ -78,13 +78,13 @@ The block diagram representing the RAK4270 LoRa module is shown in Figure 2. Ext
 
 ### Hardware
 
-The hardware specification discusses the interfaces, pinouts and its corresponding functions and diagrams. It also covers the parameters of RAK4270 Module in terms of RF, electrical, mechanical, and environmental characteristics. 
+The hardware specification discusses the interfaces, pinouts and its corresponding functions and diagrams. It also covers the parameters of the RAK4270 Module in terms of RF, electrical, mechanical, and environmental characteristics. 
 
 #### Interfaces
 
-| Module | Interfaces   |
-| ------ | ------------ |
-| RAK4270 | UART1, UART2, I2C, GPIO|
+| Module  | Interfaces              |
+| ------- | ----------------------- |
+| RAK4270 | UART1, UART2, I2C, GPIO |
 
 #### Pin Definition
 
@@ -94,50 +94,50 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
   caption="RAK4270 Pinout"
 />
  
-| Pin | Name          | Type | Description                                 | Alternate Functions                                                       |
-| --- | ------------- | ---- | ------------------------------------------- | ------------------------------------------------------------------------- |
-| 1   | PA3/UART2_RX  | I    | UART2 Interface (AT Commands)               | TIM21_CH2, TIM2_CH4, USART2_RX, LPUART1_RX                                                       |
-| 2   | PA2/UART2_TX  | O    | UART2 Interface (AT Commands)               | TIM21_CH1, TIM2_CH3, USART2_TX, LPUART1_TX, COMP2_OUT                                      |
-| 3   | PA1           | I/O  | GPIO                                        | EVENTOUT, TIM2_CH2, USART2_RTS/ USART2_DE, TIM21_ETR, USART4_RX               |
-| 4   | PA9/UART1_TX  | I/O  | UART1 Interface (AT Commands and FW Update) | MCO, USART1_TX, I2C1_SCL, I2C3_SMBA    |
-| 5   | PA10/UART1_RX | I/O  | UART1 Interface (AT Commands and FW Update) | USART1_RX, I2C1_SDA               |
-| 6   | PA12/UART1_DE | I/O  | GPIO                                        | SPI1_MOSI,EVENTOUT, USART1_RTS/ USART1_DE, COMP2_OUT |
-| 7   | PA13/SWDIO    | I/O  | SWD debug pin (SWDIO)                       | SWDIO, LPUART1_RX                                                         |
-| 8   | PA14/SWCLK    | I/O  | SWD debug pin (SWCLK)                       | SWCLK, USART2_TX, LPUART1_TX                                              |
-| 9   | PB6/I2C_SCL       | I/O  | I2C interface                               | USART1_TX, I2C1_SCL, LPTIM1_ETR                                  |
-| 10  | PB7/I2C_SDA       | I/O  | I2C interface                               | USART1_RX, I2C1_SDA, LPTIM1_IN2, USART4_CTS          |
-| 11  | GND           |      | Ground                                      |                                                                           |
-| 12  | RF            | I/O  | RF port (only available on **RAK4270 No-IPEX connector variant**) |                                                                           |
-| 13  | GND           |      | Ground                                      |                                                                           |
-| 14  | GND           |      | Ground                                      |                                                                           |
-| 15  | PA11/ANT_SW   | I/O  | ANT_SW                                      | *leave it unconnected on mainboard*                                       |
-| 16  | PB4           | I/O  | GPIO                                        | SPI1_MISO, TIM3_CH1, TIM22_CH1, USART1_CTS, USART5_RX, I2C3_SDA               |
-| 17  | PA8           | I/O  | GPIO                                        | MCO, EVENTOUT, USART1_CK, I2C3_SCL                                          |
-| 18  | MCU_NRST      | I/O  | MCU reset (STM32L071KBU6 NRST)              |                                                                           |
-| 19  | GND           |      | Ground                                      | Ground                                                                    |
-| 20  | VDD           |      | DC3V3                                       | Supply voltage 2.0~3.3&nbsp;V                                             |
+| Pin | Name          | Type | Description                                                       | Alternate Functions                                             |
+| --- | ------------- | ---- | ----------------------------------------------------------------- | --------------------------------------------------------------- |
+| 1   | PA3/UART2_RX  | I    | UART2 Interface (AT Commands)                                     | TIM21_CH2, TIM2_CH4, USART2_RX, LPUART1_RX                      |
+| 2   | PA2/UART2_TX  | O    | UART2 Interface (AT Commands)                                     | TIM21_CH1, TIM2_CH3, USART2_TX, LPUART1_TX, COMP2_OUT           |
+| 3   | PA1           | I/O  | GPIO                                                              | EVENTOUT, TIM2_CH2, USART2_RTS/ USART2_DE, TIM21_ETR, USART4_RX |
+| 4   | PA9/UART1_TX  | I/O  | UART1 Interface (AT Commands and FW Update)                       | MCO, USART1_TX, I2C1_SCL, I2C3_SMBA                             |
+| 5   | PA10/UART1_RX | I/O  | UART1 Interface (AT Commands and FW Update)                       | USART1_RX, I2C1_SDA                                             |
+| 6   | PA12/UART1_DE | I/O  | GPIO                                                              | SPI1_MOSI,EVENTOUT, USART1_RTS/ USART1_DE, COMP2_OUT            |
+| 7   | PA13/SWDIO    | I/O  | SWD debug pin (SWDIO)                                             | SWDIO, LPUART1_RX                                               |
+| 8   | PA14/SWCLK    | I/O  | SWD debug pin (SWCLK)                                             | SWCLK, USART2_TX, LPUART1_TX                                    |
+| 9   | PB6/I2C_SCL   | I/O  | I2C interface                                                     | USART1_TX, I2C1_SCL, LPTIM1_ETR                                 |
+| 10  | PB7/I2C_SDA   | I/O  | I2C interface                                                     | USART1_RX, I2C1_SDA, LPTIM1_IN2, USART4_CTS                     |
+| 11  | GND           |      | Ground                                                            |                                                                 |
+| 12  | RF            | I/O  | RF port (only available on **RAK4270 No-IPEX connector variant**) |                                                                 |
+| 13  | GND           |      | Ground                                                            |                                                                 |
+| 14  | GND           |      | Ground                                                            |                                                                 |
+| 15  | PA11/ANT_SW   | I/O  | ANT_SW                                                            | *leave it unconnected on mainboard*                             |
+| 16  | PB4           | I/O  | GPIO                                                              | SPI1_MISO, TIM3_CH1, TIM22_CH1, USART1_CTS, USART5_RX, I2C3_SDA |
+| 17  | PA8           | I/O  | GPIO                                                              | MCO, EVENTOUT, USART1_CK, I2C3_SCL                              |
+| 18  | MCU_NRST      | I/O  | MCU reset (STM32L071KBU6 NRST)                                    |                                                                 |
+| 19  | GND           |      | Ground                                                            | Ground                                                          |
+| 20  | VDD           |      | DC3V3                                                             | Supply voltage 2.0~3.3&nbsp;V                                   |
 
 
 ##### LoRa Transceiver IC Connection to RAK4270 Internal STM32
 
-| **LoRa IC Pin** | **STM32 GPIO**                   |
-| ------------ | ----------------------------------- | 
-| DIO1         | PB1                                 | 
-| DIO2         | PB5                                 | 
-| SPI1_SCK     | PA5                                 | 
-| SPI1_MISO    | PA6                                 | 
-| SPI1_MOSI    | PA7                                 | 
-| SPI1_NSS     | PA4                                 |
-| BUSY         | PB0                                 |
-| NRESET       | PA0                                 |
-| ANT_SW       | PA11                                |
+| **LoRa IC Pin** | **STM32 GPIO** |
+| --------------- | -------------- |
+| DIO1            | PB1            |
+| DIO2            | PB5            |
+| SPI1_SCK        | PA5            |
+| SPI1_MISO       | PA6            |
+| SPI1_MOSI       | PA7            |
+| SPI1_NSS        | PA4            |
+| BUSY            | PB0            |
+| NRESET          | PA0            |
+| ANT_SW          | PA11           |
 
 ##### RF Switch Control Logic table
 
-|**ANT_SW**|**DIO2**|**Condition**|
-|----------|--------|-------------|
-|    1     |     0  |  RX mode    |
-|    0     |     1  |  TX mode    |
+| **ANT_SW** | **DIO2** | **Condition** |
+| ---------- | -------- | ------------- |
+| 1          | 0        | RX mode       |
+| 0          | 1        | TX mode       |
 
 
 ::: tip 📝 Note
@@ -152,15 +152,15 @@ To upgrade the firmware, the SWD (Serial Wire Debug) interface must be used. A 5
 
 ##### UARTS Ports
 
-There are two UART ports on the RAK4270 module. UART2 (pin1 and pin2) can be used as the AT command port, while the UART1 (pin4 and pin5) can be used both as AT command port and firmware upgrade port. It is recommended to connect the UART2 port to an external MCU and reserve UART1 for debugging and or future firmware upgrade purposes.
+There are two UART ports on the RAK4270 module. UART2 (pin1 and pin2) can be used as the AT command port, while UART1 (pin4 and pin5) can be used both as AT command port and firmware upgrade port. It is recommended to connect the UART2 port to an external MCU and reserve UART1 for debugging and or future firmware upgrade purposes.
 
 ##### I2C Port
 
-The RAK4270 exposes an I2C port, in which the SDA line is assigned to the pin9, and the SCL line is assigned to pin10. This I2C port allows you to control additional slave sensors with the RAK4270 using I2C protocol. The RAK4270 will be the master. If the I2C port is used, then external pull-up resistors must be added to the SDA and SCL lines. The recommended value of the resistors is 10&nbsp;kΩ. You can develop your own firmware or use [RUI (RAKwireless Unified Interface) Online compiler](/RUI/) to use this port.
+The RAK4270 exposes an I2C port, in which the SDA line is assigned to pin9, and the SCL line is assigned to pin10. This I2C port allows you to control additional slave sensors with the RAK4270 using the I2C protocol. The RAK4270 will be the master. If the I2C port is used, then external pull-up resistors must be added to the SDA and SCL lines. The recommended value of the resistors is 10&nbsp;kΩ. You can develop your own firmware or use the [RUI (RAKwireless Unified Interface) Online compiler](/RUI/) to use this port.
 
 ##### RF Port
 
-The RAK4270 module exposes two types of RF antenna: IPEX and PAD. The most straightforward way is to use the IPEX antenna port. In such a case, you just connect the antenna to the IPEX connector on the module directly. On the other hand, for specific needs, you can design a PCB trace antenna, Chip antenna, SMA antenna, or spring type antenna. In the latter case, you should use the PAD type antenna port exposed by this module. The external antenna should be matched to the 50&nbsp;Ω RF transmission line.
+The RAK4270 module exposes two types of RF antenna: IPEX and PAD. The most straightforward way is to use the IPEX antenna port. In such a case, you just connect the antenna to the IPEX connector on the module directly. On the other hand, for specific needs, you can design a PCB trace antenna, Chip antenna, SMA antenna, or spring type antenna. In the latter case, you should use the PAD-type antenna port exposed by this module. The external antenna should be matched to the 50&nbsp;Ω RF transmission line.
 
 ##### VDD Power In
 
@@ -178,16 +178,16 @@ It is recommended to add four decoupling capacitors near the RAK4270 power suppl
 ##### Operating Frequencies
 
 
-| Module    | Region        | Frequency |
-| --------- | ------------- | --------- |
+| Module     | Region        | Frequency |
+| ---------- | ------------- | --------- |
 | RAK4270(L) | Europe        | EU433     |
-|           | China         | CN470     |
+|            | China         | CN470     |
 | RAK4270(H) | Europe        | EU868     |
-|           | North America | US915     |
-|           | Australia     | AU915     |
-|           | Korea         | KR920     |
-|           | Asia          | AS923     |
-|           | India         | IN865     |
+|            | North America | US915     |
+|            | Australia     | AU915     |
+|            | Korea         | KR920     |
+|            | Asia          | AS923     |
+|            | India         | IN865     |
 
 #### Electrical Characteristics
 
@@ -200,12 +200,11 @@ It is recommended to add four decoupling capacitors near the RAK4270 power suppl
   caption="RAK4270 Schematic Diagram"
 />
 
-
 ##### Operating Voltage
 
 | Feature | Minimum | Typical | Maximum | Unit      |
 | ------- | ------- | ------- | ------- | --------- |
-| VCC     | 2.0     | 3.3     | 3.6    | Volts (V) |
+| VCC     | 2.0     | 3.3     | 3.6     | Volts (V) |
 
 ##### Operating Current
 
@@ -279,7 +278,7 @@ Download the latest firmware of the RAK4270 WisDuo LPWAN Module as provided in t
 
 :::tip 📝 NOTE:
 
-The **bin file** contains the application code only and you need the RAK DFU Tool to upload this file to the module.
+The **bin file** contains the application code only, and you need the RAK DFU Tool to upload this file to the module.
 
 The **hex file** contains both the bootloader and the application code. You need to use STM32CubeProgrammer to upload this.
 

@@ -14,6 +14,7 @@ next: false
 ## Overview
 
 ### Description
+
 The RAK1910 WisBlock GNSS Location Module module, part of the RAK Wireless Wisblock series, is a u-blox MAX-7Q GNSS (GPS, GLONASS, QZSS, and SBAS) module. This module features exceptional performance, high sensitivity, and minimal acquisition time, which makes it suitable for low-power IoT solutions. The RAK1910 positioning module is a GNSS receiver. It receives and tracks the GPS (including SBAS and QZSS) and the GLONASS signals. QZSS and SBAS signals (by default) can be received concurrently with GPS signals.
 
 ### Features
@@ -26,7 +27,6 @@ The RAK1910 WisBlock GNSS Location Module module, part of the RAK Wireless Wisbl
 * **Module size**: 10 x 23&nbsp;mm
 
 ## Specifications
-
 ### Overview
 <!-- Insert Picture of Sensor with its dimensions -->
 
@@ -45,8 +45,8 @@ The hardware specification is categorized into six parts. It shows the chipset o
 
 ####  Chipset
 | Vendor | Part number |
-| --     | --          |
-| uBlox  | MAX-7Q      |
+| ------ | ----------- |
+| u-Blox | MAX-7Q      |
 
 #### Pin Definition
 
@@ -60,10 +60,9 @@ The RAK1910 WisBlock GNSS Location Module module features a standard WisConnecto
 
 ::: tip 📝 NOTE
 - Only the **UART**-related pins, **1PPS** pin, **RESET** pin, **VDD**, and **GND** are connected to this module.
-:::
-
 - The RAK1910 module can be installed in the Slot A only.
 :::
+
 
 #### Sensors
 ##### GNSS Sensor
@@ -174,11 +173,12 @@ The RAK1910 WisBlock GNSS Location Module module features a standard WisConnecto
 | I<sub>cc</sub>   | Acquisition                 |  -   |  22  |  -   |  mA  |
 | I<sub>cc</sub>   | Tracking                    |  -   | 17.5 |  -   |  mA  |
 
+
 #### Mechanical Characteristics
 
 ##### Board Dimensions
 
-Figure 3 shows the dimensions and the mechanic drawing of the RAK1910 module.
+**Figure 3** shows the dimensions and the mechanic drawing of the RAK1910 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1910/datasheet/RAK1910_mechanic_drawing.png"

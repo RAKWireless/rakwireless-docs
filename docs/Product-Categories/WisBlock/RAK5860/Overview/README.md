@@ -66,6 +66,6 @@ To use a **RAK5860**, you need at least a **WisBlock Base** to plug the module i
 
 :::warning ⚠️ WARNING    
 * When using the LTE transceivers, make sure that always an antenna is connected. Using the transceiver without an antenna can damage the system.    
-* The included active GPS antenna must be connected to the iPEX antenna connector on the board. Otherwise the module will not work.    
+* The included active GPS antenna must be connected to the iPEX antenna connector on the board. Otherwise, the module will not work.    
 * Make sure to fix the module with the screws to ensure a proper function.    
 :::

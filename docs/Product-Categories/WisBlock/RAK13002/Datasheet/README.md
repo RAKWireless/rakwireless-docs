@@ -53,7 +53,7 @@ The RAK13002 WisBlock Adaptor Module comprises a standard WisConnector connector
 
 <rk-img
   src="/assets/images/wisblock/rak13002/datasheet/rak13002_pinout.svg"
-  width="70%"
+  width="80%"
   caption="RAK13002 WisBlock Adaptor Module Pinout"
 />
 

@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisblock/rak1910/overview/RAK1910_home.png
-rak_desc: RAK1910 is a WisBlock Sensor that extends the WisBlock system with a uBlox MAX-7Q GPS module. A ready-to-use SW library and tutorial make it easy to build up a GPS-based location tracker.
+rak_desc: RAK1910 is a WisBlock Sensor that extends the WisBlock system with a u-Blox MAX-7Q GPS module. A ready-to-use SW library and tutorial make it easy to build up a GPS-based location tracker.
 rak_grp: [wisblock, wissensor]
 prev: ../../
 next: ../Quickstart/
@@ -14,7 +14,7 @@ tags:
 
 # RAK1910 WisBlock GNSS Location Module
 
-Thank you for choosing **RAK1910 WisBlock GNSS Location Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK1910 WisBlock GNSS Location Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [RAK1910 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -41,7 +41,7 @@ For WisBlock Core RAK4630:
 
 ## Product Description
 
-RAK1910 is a WisBlock sensor that extends the WisBlock system with a uBlox MAX-7Q GPS module. A ready-to-use SW library and tutorial make it easy to build up a GPS-based location tracker.
+The RAK1910 WisBlock GNSS Location Module module, part of the RAK Wireless Wisblock series, is a u-blox MAX-7Q GNSS (GPS, GLONASS, QZSS, and SBAS) module. This module features exceptional performance, high sensitivity, and minimal acquisition time, which makes it suitable for low-power IoT solutions. The RAK1910 positioning module is a GNSS receiver. It receives and tracks the GPS (including SBAS and QZSS) and the GLONASS signals. QZSS and SBAS signals (by default) can be received concurrently with GPS signals.
 
 ## Product Features
 
@@ -63,6 +63,6 @@ To use a **RAK1910**, you need at least a **WisBlock Base** to plug the module i
 The **RAK1910** module can only be used in the **WisBlock Base** sensor slot **A**. It occupies two sensor slots.
 
 :::warning ⚠️ WARNING    
-* The included active GPS antenna must be connected to the iPEX antenna connector on the board. Otherwise the module will not work.
+* The included active GPS antenna must be connected to the iPEX antenna connector on the board. Otherwise, the module will not work.
 * Make sure to fix the module with the screws to ensure a proper function.    
 ::: 

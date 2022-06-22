@@ -11,7 +11,7 @@ tags:
 
 # RAK4260 WisDuo LPWAN Module
 
-Thank you for choosing **RAK4260 WisDuo LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK4260 WisDuo LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -26,7 +26,7 @@ Thank you for choosing **RAK4260 WisDuo LPWAN Module** in your awesome IoT Proje
 
 ## Product Description
 
-The **RAK4260 WisDuo LPWAN Module** is based on **Microchip’s ATSAMR34J18B**. It is a SiP device integrating a 32-bit ARM Cortex M0+ MCU with a LoRa Transceiver in a 15 millimeter x 15 millimeter compact package.
+The **RAK4260 WisDuo LPWAN Module** is based on **Microchip’s ATSAMR34J18B**. It is a SiP device integrating a 32-bit ARM Cortex M0+ MCU with a LoRa Transceiver in a 15&nbsp;mm x 15&nbsp;mm compact package.
 
 The SAMR chip provides a number of highly configurable peripherals (configurable as I2C/SPI/UART interfaces). There are 12-bit ADC in addition to the aforementioned.
 
@@ -45,13 +45,13 @@ RAK4260 is a solution that is cost efficient and flexible that can be deployed i
 
 - Industry's lowest power LoRa SiP device
 - 32-bit ARM Cortex M0+ MCU and LoRa Transceiver
-- Small form factor: 15 millimeter x 15 millimeter compact package
-- 256KB Flash and 40 KB RAM accommodates application code and stack
-- Most cost and size effective solution, eliminating need for external MCU
-- Fully supported 862 to 1020 MHz frequency coverage
-- Receive Sensitivity down to -148 dBm
-- Maximum Transmit Power up to 20 dBm
-- Low RX current of 17mA (typical)
+- Small form factor: 15&nbsp;mm x 15&nbsp;mm compact package
+- 256&nbsp;KB Flash and 40&nbsp;KB RAM accommodates application code and stack
+- Most cost and size effective solution, eliminating the need for external MCU
+- Fully supported 862 to 1020&nbsp;MHz frequency coverage
+- Receive Sensitivity down to -148&nbsp;dBm
+- Maximum Transmit Power up to 20&nbsp;dBm
+- Low RX current of 17&nbsp;mA (typical)
 - LoRa Technology, (G)FSK, (G)MSK
 
 <!-- <rk-btn

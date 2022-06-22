@@ -30,7 +30,7 @@ Before going through each and every step in the installation guide of the RAK420
 5. RAKDAP1 DAPLink Tool
 
 ::: tip 📝 NOTE
-To have an optimal antenna matching for the Low and High LoRa bands, there are two types of modules with different hardware. The L type module only works for the 433MHz and 470MHz LoRa bands. The H type module is for the 868MHz to 923MHz (the rest of the spectrum). Note that the hardware is specific for your selected band and can't be changed.
+To have an optimal antenna matching for the Low and High LoRa bands, there are two types of modules with different hardware. The L-type module only works for the 433&nbsp;MHz and 470&nbsp;MHz LoRa bands. The H type module is for the 868&nbsp;MHz to 923&nbsp;MHz (the rest of the spectrum). Note that the hardware is specific for your selected band and can't be changed.
 :::
 
 ### What's included in the Package?
@@ -42,7 +42,7 @@ To have an optimal antenna matching for the Low and High LoRa bands, there are t
 - 13pcs - Dupont Lines
 
 ::: tip 📝 NOTE
-This device released by RAKwireless is already pre-loaded with its latest firmware upon manufacturing. If you want to have your device firmware burned or upgraded, refer to the documentations below:
+This device released by RAKwireless is already pre-loaded with its latest firmware upon manufacturing. If you want to have your device firmware burned or upgraded, refer to the documentation below:
 
 1. [Burning the Bootloader into the Device](#burning-the-bootloader-into-the-device)
 2. [Upgrading the Firmware](#upgrading-the-firmware)
@@ -50,21 +50,21 @@ This device released by RAKwireless is already pre-loaded with its latest firmwa
 
 ## Interfacing with RAK4200 Evaluation Board
 
-To interface with the RAK4200 Evaluation Board with your Windows PC, you need to download the RAK Serial Port Tool **[here](https://downloads.rakwireless.com/en/LoRa/Tools/).**
+To interface with the RAK4200 Evaluation Board with your Windows PC, you need to download the [**RAK Serial Port Tool**](https://downloads.rakwireless.com/en/LoRa/Tools/).
 
 ::: warning ⚠️ WARNING
 Before powering the RAK4200 Evaluation Board, you should install the LoRa antenna first. Not doing so might damage the board
 :::
 
-- Connect your RAK4200 Evaluation Board to your Windows PC using the provided micro USB cable.
+1. Connect your RAK4200 Evaluation Board to your Windows PC using the provided micro USB cable.
 
   <rk-img
-    src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/3.interfacing/kq51hnmw5xoquykfd1dw.png"
+    src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/3.interfacing/kq51hnmw5xoquykfd1dw.svg"
     width="65%"
     caption="RAK4200 Evaluation Board to Laptop Connection"
   />
 
-- Open the RAK Serial Port Tool :
+2. Open the RAK Serial Port Tool:
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/3.interfacing/gnm0smmpj2hiaaxv65m2.png"
@@ -72,7 +72,7 @@ Before powering the RAK4200 Evaluation Board, you should install the LoRa antenn
   caption="RAK Serial Port Tool"
 />
 
-- Go to Device Manager by pressing: Windows + R and typing devmgmt.msc or search in the Start Menu.
+3. Go to Device Manager by pressing **Windows + R** and typing **devmgmt.msc** or search in the Start Menu.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/3.interfacing/cj2yhkexwphkmkscqoxb.png"
@@ -80,13 +80,13 @@ Before powering the RAK4200 Evaluation Board, you should install the LoRa antenn
   caption="Device Manager"
 />
 
-- Look for Ports (COM & LPT) and find the name **USB-SERIAL CH340**. Take note of the COM Port Number.
+4. Look for Ports (COM & LPT) and find the name **USB-SERIAL CH340**. Take note of the COM Port Number.
 
 ::: tip 📝 NOTE
-If you didn't find any port with the name **USB-SERIAL CH340**, make sure you have installed the CH340 drivers in your Windows PC.
+If you didn't find any port with the name **USB-SERIAL CH340**, make sure you have installed the CH340 drivers on your Windows PC.
 :::
 
-- Choose the correct Port Number from the Device Manager, select 115200 Baudrate then click Open button:
+5. Choose the correct Port Number from the Device Manager, select 115200 as the baud rate then click the **Open** button:
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/3.interfacing/gqq1izhoofyqj6ecrgaa.png"
@@ -96,9 +96,9 @@ If you didn't find any port with the name **USB-SERIAL CH340**, make sure you ha
 
 ## Connecting to The Things Network (TTN)
 
-The Things Network is about enabling low power devices to be used in long range gateways that connect to an open-source, decentralized network and exchange data with Applications. Learn more about [**The Things Network**](https://www.thethingsnetwork.org/docs/).
+The Things Network is about enabling low-power devices to be used in long-range gateways that connect to an open-source, decentralized network and exchange data with Applications. Learn more about [**The Things Network**](https://www.thethingsnetwork.org/docs/).
 
-In this section, you will be connecting the RAK4200 Evaluation Board to The Things Network (TTN). If you don't have an account yet, head on to [https://www.thethingsnetwork.org/](https://www.thethingsnetwork.org/) and create one. Once done, log in to your account then go to the console as shown in Figure 5.
+In this section, you will be connecting the RAK4200 Evaluation Board to The Things Network (TTN). If you don't have an account yet, head on to [https://www.thethingsnetwork.org/](https://www.thethingsnetwork.org/) and create one. Once done, log in to your account then go to the console, as shown in **Figure 5**.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/4.connecting-to-ttn/szwxvka0wyqg5ybjrffb.png"
@@ -112,7 +112,7 @@ In this section, you will be connecting the RAK4200 Evaluation Board to The Thin
   caption="TTN Console Page"
 />
 
-- Choose "**APPLICATIONS**"
+1. Choose "**APPLICATIONS**"
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/4.connecting-to-ttn/bfbdxer0da06nxv0bymr.png"
@@ -120,7 +120,7 @@ In this section, you will be connecting the RAK4200 Evaluation Board to The Thin
   caption="Application Page"
 />
 
-- Click the "**add application**" button
+2. Click the "**add application**" button
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/4.connecting-to-ttn/eixjrjjdmpc4bstoyleu.png"
@@ -128,14 +128,14 @@ In this section, you will be connecting the RAK4200 Evaluation Board to The Thin
   caption="Adding an Application"
 />
 
-Here are the things that you should take note in adding an application:
+Here are the things that you should take note of in adding an application:
 
-1. **Application ID**: a unique ID on the TTN network that should be in lower case with no spaces
-2. **Description**: This is a short and concise human readable description of your application
-3. **Application EUI**: automatically generated by TTN
-4. **Handler Registration**: select the handler you want to register this application to
+   1. **Application ID**: A unique ID on the TTN network that should be in lower case with no spaces.
+   2. **Description**: This is a short and concise human-readable description of your application.
+   3. **Application EUI**: Automatically generated by TTN.
+   4. **Handler Registration**: Select the handler you want to register this application to.
 
-- After you fill in the necessary information, press the "**Add application**" button at the bottom of this page. If you see the following page, this means that you have successfully registered your application.
+3.  After you fill in the necessary information, press the "**Add application**" button at the bottom of this page. If you see the following page, this means that you have successfully registered your application.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/4.connecting-to-ttn/nyiksw5ezoobdkqaifft.png"
@@ -143,7 +143,7 @@ Here are the things that you should take note in adding an application:
   caption="Application Overview"
 />
 
-- Scroll down until you see the Devices section, or you can also click the "**Devices**" button at the top:
+4. Scroll down until you see the Devices section, or you can also click the "**Devices**" button at the top.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/4.connecting-to-ttn/ow74swwqofv1gxxj0qbk.png"
@@ -151,7 +151,7 @@ Here are the things that you should take note in adding an application:
   caption="Device Section"
 />
 
-- Click "**Register device"**
+5. Click "**Register device"**
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/4.connecting-to-ttn/m0diwppr3c6uq2fzcmnb.png"
@@ -159,14 +159,14 @@ Here are the things that you should take note in adding an application:
   caption="Add your Device"
 />
 
-Here are the things that you should take note when registering your device:
+Here are the things that you should take note of when registering your device:
 
-1. **Device ID**: a unique identifier for your RAK4200 Evaluation Board in your application, and must be entered manually.
-2. **Device EUI**: a unique identifier for your device in the network. You can change it later, if you want.
+  1. **Device ID**: a unique identifier for your RAK4200 Evaluation Board in your application, and must be entered manually.
+  2. **Device EUI**: a unique identifier for your device in the network. You can change it later if you want.
 
-Click the following icon and the Device EUI will be automatically generated. The App Key should be in auto generation mode by default.
+Click the following icon and the Device EUI will be automatically generated. The App Key should be in auto-generation mode by default.
 
-- Lastly, click the Register button. Now your device is registered under the corresponding application.
+6. Lastly, click the Register button. Now, your device is registered under the corresponding application.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/4.connecting-to-ttn/uvhfpgf50yodwdl9dxp7.png"
@@ -178,7 +178,7 @@ Depending on which authentication method you want to use, proceed to either the 
 
 ### OTAA Mode
 
-When setting up a new device in TTN, its default is to join in OTAA mode. For this configuration, you need the following three parameters: **Device EUI, Application EUI** and **App Key**. You can get them all from the **Overview page**.
+When setting up a new device in TTN, its default is to join in OTAA mode. For this configuration, you need the following three parameters: **Device EUI, Application EUI**, and **App Key**. You can get them all from the **Overview page**.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/4.connecting-to-ttn/ttn-otaa/otjgr7rhyejvmsx4i4km.png"
@@ -187,7 +187,7 @@ When setting up a new device in TTN, its default is to join in OTAA mode. For th
 />
 
 ::: tip 📝 NOTE
-As an example, join in OTAA mode, EU868 frequency and the default LoRa class is Class A.
+As an example, join in OTAA mode, EU868 frequency, and the default LoRa class is Class A.
 :::
 
 1. Set the LoRa join mode to **OTAA**:
@@ -267,10 +267,10 @@ at+set_config=lora:app_key:XXXX
 />
 
 ::: tip 📝 NOTE
-After configuring all parameters, you need to reset RAK4200 Evaluation Board to save the parameters!
+After configuring all parameters, you need to reset the RAK4200 Evaluation Board to save the parameters!
 :::
 
-7. After resetting RAK4200 Evaluation Board, join in OTAA mode:
+7. After resetting the RAK4200 Evaluation Board, join in OTAA mode:
 
 ```sh
 at+join
@@ -294,7 +294,7 @@ at+send=lora:2:1234567890
   caption="OTAA Test Sample Data Sent via RAK Serial Port Tool"
 />
 
-You can see the data sent from RAK4200 Evaluation Board on TTN website as shown in Figure 22.
+You can see the data sent from the RAK4200 Evaluation Board on the TTN website, as shown in **Figure 22**.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/4.connecting-to-ttn/ttn-otaa/vdrrdeh7oifamkrwvryn.jpg"
@@ -304,7 +304,7 @@ You can see the data sent from RAK4200 Evaluation Board on TTN website as shown 
 
 ### ABP Mode
 
-1. First, change the activation method to ABP as shown in Figure 23.
+1. First, change the activation method to ABP, as shown in **Figure 23**.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/4.connecting-to-ttn/ttn-abp/bryeyppqcyb1amkfs4po.png"
@@ -312,7 +312,7 @@ You can see the data sent from RAK4200 Evaluation Board on TTN website as shown 
   caption="APB Activation in The Things Network"
 />
 
-2. Three parameters will be used to setup RAK4200 Evaluation Board on ABP mode: **Device Address**, **Network Session Key**, and **App Session Key**.
+2. Three parameters will be used to set up the RAK4200 Evaluation Board on ABP mode: **Device Address**, **Network Session Key**, and **App Session Key**.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/4.connecting-to-ttn/ttn-abp/bryeyppqcyb1amkfs4po.png"
@@ -397,7 +397,7 @@ at+set_config=lora:apps_key:XXXX
 />
 
 ::: tip 📝 NOTE
-After configuring all parameters, you need to reset RAK4200 Evaluation Board to save the parameters.
+After configuring all the parameters, you need to reset the RAK4200 Evaluation Board to save the parameters.
 :::
 
 9. After resetting your RAK4200 Evaluation Board, join in **ABP mode**:
@@ -413,7 +413,7 @@ at+join
 />
 
 ::: tip 📝 NOTE
-There is no need to join in ABP mode; but, you still need to set this AT command to validate the parameters which you just set for ABP mode
+There is no need to join in ABP mode; but, you still need to set this AT command to validate the parameters which you just set for ABP mode.
 :::
 
 Try to send data from the RAK4200 Evaluation Board to TTN in ABP mode.
@@ -426,14 +426,14 @@ Try to send data from the RAK4200 Evaluation Board to TTN in ABP mode.
 
 ## Connecting with Chirpstack
 
-The **ChirpStack** or previously known as LoRaServer project provides open-source components for building LoRaWAN networks. For more details, refer to [**ChirpStack website**](https://www.chirpstack.io/).
+The **ChirpStack**, previously known as the LoRaServer project, provides open-source components for building LoRaWAN networks. For more details, refer to [**ChirpStack website**](https://www.chirpstack.io/).
 
 :::tip 📝 NOTE
 In this document, it is assumed that you are using a LoRa gateway with the ChirpStack configured successfully. If not, have a look at RAK documents for more details: [RAK LPWAN Gateway](/Product-Categories/WisGate).
 
 :::
 
-1. Open the web page of the ChirpStack which you want to connect with, and login.
+1. Open the web page of the ChirpStack, which you want to connect with, and log in.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/wgk31ykcgwp2gbzicmut.png"
@@ -442,10 +442,10 @@ In this document, it is assumed that you are using a LoRa gateway with the Chirp
 />
 
 :::tip 📝 NOTE
-By default, there is already one or more items in this page. You can either use it or create a new item.
+By default, there is already one or more items on this page. You can either use it or create a new item.
 :::
 
-2. Create a new item by clicking the “**CREATE**” button, and fill up the necessary items.
+2. Create a new item by clicking the “**CREATE**” button, and filling in the necessary items.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/l8na6pcdsvjl0lrqznyr.png"
@@ -461,7 +461,7 @@ By default, there is already one or more items in this page. You can either use 
   caption="Chirpstack Applications Available"
 />
 
-4. The list of items are then provided the same with Figure 35. Click on the new item created.
+4. The list of items is then provided the same with **Figure 35**. Click on the new item created.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/r2ikjxdaluvfxbqhaccc.png"
@@ -477,7 +477,7 @@ By default, there is already one or more items in this page. You can either use 
   caption="Chirpstack Adding Node into the  RAK4200 Evaluation Board "
 />
 
-6. Once the node is created, fill-in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
+6. Once the node is created, fill in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
    
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/bx0hvot72klwrnznnbig.png"
@@ -495,7 +495,7 @@ By default, there is already one or more items in this page. You can either use 
   caption="Chirpstack OTAA Activation"
 />
 
-2. Click “**CREATE DEVICE**” then generate the application key in this page. You can write it by yourself or generate it automatically by clicking the following icon and press “**SET DEVICE-KEYS**”.
+2. Click “**CREATE DEVICE**” then generate the application key on this page. You can write it by yourself or generate it automatically by clicking the following icon and pressing “**SET DEVICE-KEYS**”.
 
 <rk-img
   src=" /assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/otaa/b7nijxtl27bnr6mtgn6u.png"
@@ -528,7 +528,10 @@ The Application EUI which will be set into RAK4200 Evaluation Board as “app_eu
 6. Power it **ON** and open **RAK Serial Port Tool** on your Windows PC as instructed in the [Interfacing with RAK4200 Evaluation Board](#interfacing-with-evaluation-board) section.
 
 ::: tip 📝 NOTE
-The default join mode is **OTAA**, the default class is **Class A** and the default region is **EU868**.
+The default settings are as follows:
+  - Join mode: **OTAA**
+  - Class: **Class A** 
+  - Region: **EU868**
 :::
 
 7. If the **join mode** is not in OTAA, just set the LoRa join mode to **OTAA** as follows:
@@ -604,7 +607,7 @@ at+set_config=lora:app_key:XXXX
 />
 
 ::: tip 📝 NOTE
-After configuring all parameters, you need to reset RAK4200 Evaluation Board to save the parameters.
+After configuring all the parameters, you need to reset the RAK4200 Evaluation Board to save the parameters.
 :::
 
 13. After reset, send join command:
@@ -619,7 +622,7 @@ at+join
   caption="Chirpstack OTAA Join via RAK Serial Port Tool"
 />
 
-14. You can see the **JoinRequest** and **JoinAccept** on ChirpStack page:
+14. You can see the **JoinRequest** and **JoinAccept** on the ChirpStack page:
 
 <rk-img
   src=" /assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/otaa/szgnpputwklp26s1epwd.png"
@@ -627,7 +630,7 @@ at+join
   caption=" Chirpstack OTAA JoinRequest and JoinAccept"
 />
 
-15. Try to send data from RAK4200 Evaluation Board to ChirpStack:
+15. Try to send data from the RAK4200 Evaluation Board to ChirpStack:
 
 ```sh
 at+send=lora:2:1234567890
@@ -639,7 +642,7 @@ at+send=lora:2:1234567890
   caption="Chirpstack OTAA Sample Data Sent via RAK Serial Port Tool"
 />
 
-- You can then see the message on ChirpStack page the same as shown in Figure 52.
+- You can then see the message on the ChirpStack page the same, as shown in **Figure 52**.
 
 <rk-img
   src=" /assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/otaa/y8olaqg8ywggopiglkdv.png"
@@ -662,7 +665,7 @@ The frequency AS923 in ABP Mode is not supported in Chirpstack.
   caption="Chirpstack ABP Activation"
 />
 
-2. As highlighted in Figure 54, you can see the ABP parameters in the “**ACTIVATION**” item:
+2. As highlighted in **Figure 54**, you can see the ABP parameters in the “**ACTIVATION**” item:
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/abp/n3ragennimcdzazgxhyp.png"
@@ -670,7 +673,7 @@ The frequency AS923 in ABP Mode is not supported in Chirpstack.
   caption="Chirpstack ABP Activation Parameters Needed"
 />
 
-3. Use these parameters to set RAK4200 Evaluation Board by using AT command. Set **LoRa join** mode to **ABP**:
+3. Use these parameters to set the RAK4200 Evaluation Board by using AT command. Set **LoRa join** mode to **ABP**:
 
 ```sh
 at+set_config=lora:join_mode:1
@@ -743,10 +746,10 @@ at+set_config=lora:apps_key:XXXX
 />
 
 ::: tip 📝 NOTE
-After configuring all parameters, you need to reset RAK4200 Evaluation Board to save the parameters!
+After configuring all the parameters, you need to reset the RAK4200 Evaluation Board to save the parameters.
 :::
 
-9. After resetting RAK4200 Evaluation Board, join in ABP mode:
+9. After resetting the RAK4200 Evaluation Board, join in ABP mode:
 
 ```sh
 at+join
@@ -762,7 +765,7 @@ at+join
 It is not needed to join in ABP mode; but, you still need to set this AT command to validate the parameters which you just set for ABP mode.
 :::
 
-10. Try to send data from RAK4200 Evaluation Board to ChirpStack:
+10. Try to send data from the RAK4200 Evaluation Board to ChirpStack:
 
 ```sh
 at+send=lora:2:123456789
@@ -774,7 +777,7 @@ at+send=lora:2:123456789
   caption="Chirpstack Sample Data Sent via RAK Serial Port Tool"
 />
 
-- You can see the data which is just sent from RAK4200 Evaluation Board on ChirpStack page:
+- You can see the data which is just sent from the RAK4200 Evaluation Board on the ChirpStack page:
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/abp/fnw0xofynzzxjxhjuhrv.png"
@@ -786,9 +789,9 @@ at+send=lora:2:123456789
 
 In this section, using P2P on the RAK4200 will be discussed. You will be using EU868 as the frequency; although, it is applicable also to other standard bands.
 
-1. First, find two RAK4200 Evaluation Board which can work on EU868 frequency, and make sure their firmware version is not less than V3.0.0.1.
-2. Next, connect these two RAK4200 Evaluation Board with your Windows PC through UART, and open two serial port tool.
-3. Now, configure them to both work in LoRa P2P mode as follow:
+1. First, find two RAK4200 Evaluation Board that can work on EU868 frequency, and make sure their firmware version is not less than V3.0.0.1.
+2. Next, connect these two RAK4200 Evaluation Board with your Windows PC through UART, and open two serial port tools.
+3. Now, configure them to both works in LoRa P2P mode as follow:
 
 ```sh
 at+set_config=lora:work_mode:1
@@ -822,7 +825,7 @@ Refer to the [AT Command Manual](/Product-Categories/WisDuo/RAK4200-Evaluation-B
   caption="Message sent and received status in the two nodes"
 />
 
-6. Success! Now, you can send more messages.
+6. Now, you can send more messages.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/6.lorap2p/gbvh6jy5olovvt0fjyib.jpg"
@@ -838,10 +841,10 @@ Refer to the [AT Command Manual](/Product-Categories/WisDuo/RAK4200-Evaluation-B
 The RAK5005 is the base board that connects the RAK4200 Core Module. It creates the power supply for the attached module and provides additional IO and Sensor support for your project needs.    
   
 ::: tip 📝 NOTE
-RAK4201 is a circuit board module for RAK5005 with pre-soldered RAK4200 LPWAN Module.
+RAK4201 is a circuit board module for RAK5005 with a pre-soldered RAK4200 LPWAN Module.
 :::
   
-Listed below are the accessible pins and data bus of attached RAK5005 base board on the RAK4200 EVB:
+Listed below are the accessible pins and data bus of the attached RAK5005 base board on the RAK4200 EVB:
 
 
 | RAK4201 Pin Definition | Function Name of WisBase | Pin Number | Pin Number | Function Name of WisBase | RAK4201 Pin Definition |
@@ -882,9 +885,9 @@ For RAK4200 modules with firmware version V3.0.0.12 and below, you need to use t
 
 ### Upgrading the Firmware
 
-The following steps show you how to update the firmware for RAK4200 WisDuo LPWAN Module connected to the Baseboard:
+The following steps show you how to update the firmware for the RAK4200 WisDuo LPWAN Module connected to the Baseboard:
 
-1. Download and install the software needed in your PC.
+1. Download and install the software needed on your PC.
 
 - [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)
 - [RAK4200 Firmware](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/RAK4200_Latest_Firmware.zip)
@@ -892,7 +895,7 @@ The following steps show you how to update the firmware for RAK4200 WisDuo LPWAN
 
 2. Connect your RAK4200 Evaluation Board in your Windows PC as instructed in the [Interfacing with RAK4200 Evaluation Board](#interfacing-with-rak4200-evaluation-board) section. 
 
-3. Open RAK firmware upgrade tool on your Windows PC. Make sure to choose the correct COM Port.
+3. Open the RAK firmware upgrade tool on your Windows PC. Make sure to choose the correct COM Port.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/rak-upgrade-tool.png"
@@ -900,7 +903,7 @@ The following steps show you how to update the firmware for RAK4200 WisDuo LPWAN
   caption="RAK Firmware Upgrade Tool"
 />
 
-4. Click on  “**Select Firmware**” button to choose the correct upgrade file:
+4. Click on the “**Select Firmware**” button to choose the correct upgrade file:
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/choose-firmware.png"
@@ -908,7 +911,7 @@ The following steps show you how to update the firmware for RAK4200 WisDuo LPWAN
   caption="Choosing the Correct Upgrade file"
 />
 
-5. Click on “**Upgrade**” to upgrade. This may take a minute:
+5. Click on “**Upgrade**” to upgrade. This may take a minute.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/upgrade-firmware.png"
@@ -916,7 +919,7 @@ The following steps show you how to update the firmware for RAK4200 WisDuo LPWAN
   caption="Firmware Upgrading in Process"
 />
 
-6. If everything went well, you should see the same window as shown in Figure 72.
+6. If everything went well, you should see the same window, as shown in **Figure 72**.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/7.upgrading/upgrade-successful.png"
@@ -926,7 +929,7 @@ The following steps show you how to update the firmware for RAK4200 WisDuo LPWAN
 
 7. Close the Firmware Upgrade Tool, and open the RAK Serial Port Tool again.
 
-8. Choose the correct **COM port** and set the baud rate to **115200**. Then open the serial port and enter the AT command shown below to restart.
+8. Choose the correct **COM port** and set the baud rate to **115200**. Then open the serial port and enter the AT command shown below to restart:
 
 ```sh
 at+set_config=device:restart
@@ -942,4 +945,4 @@ This information means that you have uploaded the Firmware successfully!
 
 ### Firmware Upgrade Through DAPLink
 
-Refer to [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool)
+Refer to [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool).

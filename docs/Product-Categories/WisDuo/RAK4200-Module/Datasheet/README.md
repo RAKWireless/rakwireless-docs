@@ -85,7 +85,7 @@ The hardware specification is categorized into five parts. It covers the pinouts
 <!---Provided in this section is the Pinout of the RAK4200 WisDuo LPWAN Module.--->
 
 <rk-img
-  src="/assets/images/wisduo/rak4200-module/datasheet/pinout-for-rak4200.png"
+  src="/assets/images/wisduo/rak4200-module/datasheet/pinout-for-rak4200.svg"
   width="65%"
   caption="Pinout for RAK4200"
 />
@@ -266,14 +266,13 @@ The RAK4200 WisDuo LPWAN Module takes **46.179&nbsp;ms** to receive a LoRa packe
 - **Ramp-up Rate** (B): 0~2.5&nbsp;℃/ sec;
 - **Ramp-down Rate** (C): 1~3&nbsp;℃/ sec.
 
-
 ### Software
 
 Download the latest firmware of the RAK4200 WisDuo LPWAN Module as provided in the table below.
 
 :::tip 📝 NOTE:
 
-The **bin file** contains the application code only and you need the RAK DFU Tool to upload this file to the module.
+The **bin file** contains the application code only, and you need the RAK DFU Tool to upload this file to the module.
 
 The **hex file** contains both the bootloader and the application code. You need to use STM32CubeProgrammer to upload this.
 
@@ -284,6 +283,7 @@ The **hex file** contains both the bootloader and the application code. You need
 | Model Source | Source                                                                                          |
 | ------------ | ----------------------------------------------------------------------------------------------- |
 | RAK4200      | [Download](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/RAK4200_Latest_Firmware.zip) |
+
 
 ## Certification
 

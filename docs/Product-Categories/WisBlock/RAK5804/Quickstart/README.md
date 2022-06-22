@@ -24,7 +24,7 @@ The information obtained from the external modules will then be printed over the
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK5804 WisBlock module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK5804 WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware
 
@@ -46,7 +46,7 @@ Before going through each and every step on using RAK5804 WisBlock module, make 
 
 The RAK5804 module is designed as an IO extension module that allows you to connect external digital and analog modules to create a customized IoT solution. These third-party modules are connected through two expansion connectors: J2 and J3. In addition, the RAK5804 module also supports a USB interface, which can be used to access and program the MCU of the WisBlock Core module of the solution. For more information about RAK5804, refer to the [Datasheet](../Datasheet/).
 
-The RAK5804 module can be mounted on the IO slot of the WisBlock Base board, as shown in **Figure 1**. Also, always secure the connection of the WisBlock module by using the compatible screws.
+The RAK5804 module can be mounted on the IO slot of the WisBlock Base board, as shown in **Figure 1**. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/quickstart/rak5804_assembly.png"
@@ -96,7 +96,7 @@ These are the quick links that go directly to the software guide for the specifi
 
 ##### I2C Connection on RAK5804
 
-This is just an example and illustration on how to use the RAK5804 for external I2C sensors, modules, or devices. You can use any I2C devices as long as it operates at 3.3&nbsp;V.
+This is just an example and illustration on how to use the RAK5804 for external I2C sensors, modules, or devices. You can use any I2C device as long as it operates at 3.3&nbsp;V.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/quickstart/rak5804_oled.png"
@@ -251,7 +251,7 @@ void loop() {
 
 ##### GPIO Connection on RAK5804
 
-This is just an example and illustration on how to use the GPIO pins of RAK5804 for external sensors, modules, or devices. There are four (4) GPIO pins available on the RAK5804. You can use any of the GPIO pins as long as your modules, sensors, or devices operates at 3.3&nbsp;V.
+This is just an example and illustration on how to use the GPIO pins of RAK5804 for external sensors, modules, or devices. There are four (4) GPIO pins available on the RAK5804. You can use any of the GPIO pins as long as your modules, sensors, or devices operate at 3.3&nbsp;V.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/quickstart/rak5804_dht11.png"
@@ -343,7 +343,7 @@ void loop() {
 
 ##### Analog Input (ADC) Connection on RAK5804 
 
-This is just an example and illustration on how to use the ADC pin of RAK5804 for external sensors, modules, or devices. There is only one (1) ADC pin available on the RAK5804 that you can use as long as your modules, sensors, or devices operates at 3.3&nbsp;V.
+This is just an example and illustration on how to use the ADC pin of RAK5804 for external sensors, modules, or devices. There is only one (1) ADC pin available on the RAK5804 that you can use as long as your modules, sensors, or devices operate at 3.3&nbsp;V.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/quickstart/rak5804_lm35.png"
@@ -409,7 +409,7 @@ void loop() {
 
 ##### I2C Connection on RAK5804
 
-This is just an example and illustration on how to use the RAK5804 for external I2C sensors, modules, or devices. You can use any I2C devices as long as it operates at 3.3&nbsp;V.
+This is just an example and illustration on how to use the RAK5804 for external I2C sensors, modules, or devices. You can use any I2C device as long as it operates at 3.3&nbsp;V.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/quickstart/rak5804_oled.png"
@@ -549,7 +549,7 @@ void loop() {
 4. Then select the right Serial Port and upload the code.
 
 ::: tip 📝 NOTE
-RAK11200 requires **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
 :::
 
 <rk-img
@@ -568,7 +568,7 @@ RAK11200 requires **Boot0** pin to be configured properly first before uploading
 
 ##### GPIO Connection on RAK5804
 
-This is just an example and illustration on how to use the GPIO pins of RAK5804 for external sensors, modules, or devices. There are four (4) GPIO pins available on the RAK5804. You can use any of the GPIO pins as long as your modules, sensors, or devices operates at 3.3&nbsp;V.
+This is just an example and illustration on how to use the GPIO pins of RAK5804 for external sensors, modules, or devices. There are four (4) GPIO pins available on the RAK5804. You can use any of the GPIO pins as long as your modules, sensors, or devices operate at 3.3&nbsp;V.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/quickstart/rak5804_dht11.png"
@@ -644,7 +644,7 @@ void loop() {
 4. Then select the right Serial Port and upload the code.
 
 ::: tip 📝 NOTE
-RAK11200 requires **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 quick start guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
 :::
 
 <rk-img
@@ -664,7 +664,7 @@ RAK11200 requires **Boot0** pin to be configured properly first before uploading
 
 ##### Analog Input (ADC) Connection on RAK5804 
 
-This is just an example and illustration on how to use the ADC pin of RAK5804 for external sensors, modules, or devices. There is only one (1) ADC pin available on the RAK5804 that you can use as long as your modules, sensors, or devices operates at 3.3&nbsp;V.
+This is just an example and illustration on how to use the ADC pin of RAK5804 for external sensors, modules, or devices. There is only one (1) ADC pin available on the RAK5804 that you can use as long as your modules, sensors, or devices operate at 3.3&nbsp;V.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/quickstart/rak5804_lm35.png"
@@ -712,7 +712,7 @@ void loop() {
 3. Then select the right Serial Port and upload the code.
 
 ::: tip 📝 NOTE
-RAK11200 requires **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 quick start guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
 :::
 
 <rk-img
@@ -733,7 +733,7 @@ RAK11200 requires **Boot0** pin to be configured properly first before uploading
 
 ##### I2C Connection on RAK5804
 
-This is just an example and illustration on how to use the RAK5804 for external I2C sensors, modules, or devices. You can use any I2C devices as long as it operates at 3.3&nbsp;V.
+This is just an example and illustration on how to use the RAK5804 for external I2C sensors, modules, or devices. You can use any I2C device as long as it operates at 3.3&nbsp;V.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/quickstart/rak5804_oled.png"
@@ -888,7 +888,7 @@ void loop() {
 
 ##### GPIO Connection on RAK5804
 
-This is just an example and illustration on how to use the GPIO pins of RAK5804 for external sensors, modules, or devices. There are four (4) GPIO pins available on the RAK5804. You can use any of the GPIO pins as long as your modules, sensors, or devices operates at 3.3&nbsp;V.
+This is just an example and illustration on how to use the GPIO pins of RAK5804 for external sensors, modules, or devices. There are four (4) GPIO pins available on the RAK5804. You can use any of the GPIO pins as long as your modules, sensors, or devices operate at 3.3&nbsp;V.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/quickstart/rak5804_dht11.png"
@@ -980,7 +980,7 @@ void loop() {
 
 ##### Analog Input (ADC) Connection on RAK5804 
 
-This is just an example and illustration on how to use the ADC pin of RAK5804 for external sensors, modules, or devices. There is only one (1) ADC pin available on the RAK5804 that you can use as long as your modules, sensors, or devices operates at 3.3&nbsp;V.
+This is just an example and illustration on how to use the ADC pin of RAK5804 for external sensors, modules, or devices. There is only one (1) ADC pin available on the RAK5804 that you can use as long as your modules, sensors, or devices operate at 3.3&nbsp;V.
 
 <rk-img
   src="/assets/images/wisblock/rak5804/quickstart/rak5804_lm35.png"

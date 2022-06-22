@@ -47,7 +47,7 @@ certifications:
 
 ### Overview
 
-The RAK4200 Evaluation Board front view (top) and back view are shown in Figures 1 and 2.
+The RAK4200 Evaluation Board front view (top) and back view are shown in **Figure 1** and **Figure 2**.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/datasheet/21.0302_RAK4200 Evaluation Board.543.png"
@@ -67,7 +67,7 @@ The hardware specification is categorized into five parts. It discusses the inte
 
 #### Interfaces
 
-RAK4201 is the WisBlock Core CPU module used on RAK4200 Evaluation Board. Figure 2 shows an overview of interfaces found on RAK4200 Evaluation Board.
+RAK4201 is the WisBlock Core CPU module used on the RAK4200 Evaluation Board. **Figure 2** shows an overview of interfaces found on the RAK4200 Evaluation Board.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/datasheet/rak4200-interfaces.svg"
@@ -93,7 +93,8 @@ For the aforementioned reason, it is best you leave these pins exposed for progr
 Refer to section [RAKDAP1-Flash-and-Debug-Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool)
 
 
-Use Figure 3 as guide to connect RAKDAP1 on RAK4200 Evaluation Board.
+Use **Figure 3** as a guide to connect RAKDAP1 on RAK4200 Evaluation Board.
+
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/datasheet/rak4200_dap.png"
   width="65%"
@@ -102,7 +103,7 @@ Use Figure 3 as guide to connect RAKDAP1 on RAK4200 Evaluation Board.
 
 ##### RF Interface
 
-The RF output pin of the RAK4200 Evaluation Board is connected to an external antenna through standard iPEX antenna connector.
+The RF output pin of the RAK4200 Evaluation Board is connected to an external antenna through a standard iPEX antenna connector.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/datasheet/lora-pcb-antenna.png"
@@ -113,6 +114,7 @@ The RF output pin of the RAK4200 Evaluation Board is connected to an external an
 :::warning ⚠️ WARNING
 Before powering the RAK4200 Evaluation Board, you should install the LoRa antenna first. Not doing so might damage the board.
 :::
+
 ##### USB Interface 
 
 The Micro-B USB connector is compliant with the USB 2.0 specification. The pin definition of the USB interface is shown below:
@@ -227,8 +229,8 @@ The following tables below shows the pin definitions of the RAK4200 Evaluation B
 | 8              | USB-           | Not connected                                                                                              |                         |
 | 9              | VBUS           | Not connected                                                                                              |                         |
 | 10             | SW1            | Not connected                                                                                              |                         |
-| 11             | USART1_TX      | UART1 Interface (AT Commands and FW Update)                                                                                              | PA9                     |
-| 12             | USART1_RX      | UART1 Interface (AT Commands and FW Update)                                                                                              | PA10                    |
+| 11             | USART1_TX      | UART1 Interface (AT Commands and FW Update)                                                                | PA9                     |
+| 12             | USART1_RX      | UART1 Interface (AT Commands and FW Update)                                                                | PA10                    |
 | 13             | RESET          | Connected to the reset switch for MCU reset                                                                | PA0                     |
 | 14             | LED1           | Red LED for battery charge indicator                                                                       |                         |
 | 15             | LED2           | Green LED for custom use                                                                                   | Not connected           |
@@ -249,8 +251,8 @@ The following tables below shows the pin definitions of the RAK4200 Evaluation B
 | 30             | IO2            | 3V3_S                                                                                                      |                         |
 | 31             | IO3            | Not connected                                                                                              |                         |
 | 32             | IO4            | Not Connected                                                                                              |                         |
-| 33             | TX1/USART2_TX  | UART2 Interface (AT Commands)                                                                                              | PA2                     |
-| 34             | RX1/USART2_RX  | UART2 Interface (AT Commands)                                                                                              | PA3                     |
+| 33             | TX1/USART2_TX  | UART2 Interface (AT Commands)                                                                              | PA2                     |
+| 34             | RX1/USART2_RX  | UART2 Interface (AT Commands)                                                                              | PA3                     |
 | 35             | NC             | Not connected                                                                                              |                         |
 | 36             | NC             | Not connected                                                                                              |                         |
 | 37             | NC             | Not connected                                                                                              |                         |
@@ -386,9 +388,9 @@ The following tables below shows the pin definitions of the RAK4200 Evaluation B
 
 ##### Battery Connector
 
-The RAK5005 WisBase board can be powered by a battery via P1 connector, and the battery is not included on RAK4200 Evaluation Board packaging.
+The RAK5005 WisBase board can be powered by a battery via a P1 connector, and the battery is not included on the RAK4200 Evaluation Board packaging.
 
-Use Figure 8 as guide to connect the battery. The red triangle indicates pin 1.
+Use **Figure 8** as a guide to connect the battery. The red triangle indicates pin 1.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/datasheet/rak4200-p1.png"
@@ -396,7 +398,7 @@ Use Figure 8 as guide to connect the battery. The red triangle indicates pin 1.
   caption="RAK4200 EVB battery connector"
 />
 
-The pin definition of RAK600 Evaluation Board Li-Ion battery connector is shown in the table below. The matching connector for the battery wires is an [JST PHR-2 2mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199).
+The pin definition of the RAK600 Evaluation Board Li-Ion battery connector is shown in the table below. The matching connector for the battery wires is an [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199).
 
 P1 Battery connector
 
@@ -406,7 +408,7 @@ P1 Battery connector
 | 2       | VBAT         | Positive + pin of the battery |
 
 
-The full specification of RAK4200 Evaluation Board battery is shown in the table below.
+The full specification of the RAK4200 Evaluation Board battery is shown in the table below.
 
 
 | **No.** | **Item**                  | **Specification**                    |
@@ -428,7 +430,7 @@ The voltage of the Li-Ion battery **must not exceed 4.3&nbsp;V**. When connectin
 
 ##### Solar Panel Connector
 
-A 5&nbsp;V solar panel can be connected to the board via the P2 connector to serve for the purpose of charging the battery. The solar panel is not included on RAK4200 Evaluation Board packaging. Use Figure 9 as guide to connect the solar panel. The red triangle indicates pin 1.
+A 5&nbsp;V solar panel can be connected to the board via a P2 connector to serve the purpose of charging the battery. The solar panel is not included on RAK4200 Evaluation Board packaging. Use **Figure 9** as a guide to connect the solar panel. The red triangle indicates pin 1.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/datasheet/rak4200-p2.png"
@@ -436,7 +438,7 @@ A 5&nbsp;V solar panel can be connected to the board via the P2 connector to ser
   caption="RAK4200 EVB solar connector"
 />
 
-The pin definition of RAK4200 Evaluation Board solar panel connector is shown in the table below. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287).
+The pin definition of the RAK4200 Evaluation Board solar panel connector is shown in the table below. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287).
 
 P2 Solar Panel connector
 
@@ -446,7 +448,7 @@ P2 Solar Panel connector
 | 2       | GND          | GND                           |
 
 
-The full specification of Solar Panel for RAK4200 Evaluation Board is shown in the table below.
+The full specification of the Solar Panel for the RAK4200 Evaluation Board is shown in the table below.
 
 
 | **No.** | **Item**        | **Specification**                                        |
@@ -512,7 +514,7 @@ Exposure to maximum rating conditions may affect device reliability.
 
 ##### Board Dimensions
   
-Figure 10 shows the actual dimensions of the RAK4200 Evaluation Board measured in millimeters (mm). <br><br>
+**Figure 10** shows the actual dimensions of the RAK4200 Evaluation Board measured in millimeters (mm). <br><br>
 
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/datasheet/rak4200-mechanical.png"
@@ -535,8 +537,8 @@ The **hex file** contains both the bootloader and the application code. You need
 
 #### Firmware 
 
-| Model   | Source                                                                                           |
-| ------- | ------------------------------------------------------------------------------------------------ |
+| Model   | Source                                                                                          |
+| ------- | ----------------------------------------------------------------------------------------------- |
 | RAK4200 | [Download](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/RAK4200_Latest_Firmware.zip) |
 
 

@@ -13,7 +13,7 @@ tags:
 
 # RAK811 Breakout Board
 
-Thank you for choosing **RAK811 Breakout Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK811 Breakout Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [AT Command Manual](../AT-Command-Manual/)

@@ -16,7 +16,7 @@ next: false
 
 ### Description
 
-The **RAK3244 BastWAN Breakout Board** is specifically designed to be compatible with **Feather format** while still harnessing the power of RAK4260 module. The board itself has the RAK4260 as its core, which is a module that utilizes ATSAMR34J18B SiP. The high level of integration allows for outstanding performance: Lora TX Power of up to 20&nbsp;dBm.
+The **RAK3244 BastWAN Breakout Board** is specifically designed to be compatible with **Feather format** while still harnessing the power of the RAK4260 module. The board itself has the RAK4260 as its core, which is a module that utilizes ATSAMR34J18B SiP. The high level of integration allows for outstanding performance: Lora TX Power of up to 20&nbsp;dBm.
 
 A notable addition to this breakout board is the ATECC606A **Cryptographic co-processor** with secure hardware-based key storage. This is what makes the RAK3244 BastWAN different compared to the RAK4200 and RAK4600, adding another level of security to future-proof your platform.
 
@@ -29,7 +29,7 @@ The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P
 - 256&nbsp;KB of FLASH + 32KB of RAM
 - 32.768&nbsp;kHz crystal for clock generation & RTC
 - 3.3&nbsp;V regulator with 500&nbsp;mA peak current output
-- USB native support, comes with USB bootloader and serial port debugging
+- USB native support, comes with a USB bootloader and serial port debugging
 - Up to 20 GPIO pins
 - Hardware Serial, hardware I2C, hardware SPI support
 - PWM outputs on all pins
@@ -45,7 +45,7 @@ The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P
 
 ### Overview  
   
-The RAK3244 BastWAN Breakout Board is shown in Figure 1, which displays the top and back view of the board, respectively.<br><br>
+The RAK3244 BastWAN Breakout Board is shown in **Figure 1**, which displays the top and back view of the board, respectively.<br><br>
 
 <rk-img
   src="/assets/images/wisduo/bastwan/datasheet/rak3244-front-back.svg"
@@ -65,11 +65,11 @@ The block diagram of the RAK3244 BastWAN shows the various interfaces for the sp
 
 ### Hardware
 
-The hardware specification is categorized into four parts. It discuses the interfacing, pinouts and its corresponding functions and diagrams. It also covers the RF and mechanical parameters of the RAK3244 BastWAN Breakout Board.
+The hardware specification is categorized into four parts. It discusses the interfacing, pinouts and its corresponding functions and diagrams. It also covers the RF and mechanical parameters of the RAK3244 BastWAN Breakout Board.
 
 #### Interfaces  
   
-Figure 3 shows the overview of interfaces found on RAK3244 BastWAN Breakout Board.
+**Figure 3** shows the overview of interfaces found on the RAK3244 BastWAN Breakout Board.
   
 <rk-img
   src="/assets/images/wisduo/bastwan/datasheet/rak3244-interface.svg"
@@ -90,17 +90,17 @@ When programming via a DAPLink tool, it is required to have all of the following
 For the aforementioned reason, it is best you leave these exposed for programming purposes and not to remap them as GPIOs.
 :::    
   
-The proper connection between the DapLink tool and RAK3244 BastWAN Breakout Board is illustrated in Figure 4.
+The proper connection between the DapLink tool and RAK3244 BastWAN Breakout Board is illustrated in **Figure 4**.
 
 <rk-img
-  src="/assets/images/wisduo/bastwan/datasheet/rak3244_daplink.png"
+  src="/assets/images/wisduo/bastwan/datasheet/rak3244_daplink.svg"
   width="45%"
   caption="RAK3244 BastWAN Breakout Board Pinout for DapLink tool"
 />
 
 ##### I2C Interface
 
-**I2C_SCL** and **I2C_SDA** are connected to the ATECC608A crypto chip for the purpose of developing cryptographic applications: network end-point key management and exchange small message and PII data encryption, secure boot and protected download, ecosystem control and anti-cloning. Additional I2C peripherals can be added using the breakout pins on connector J3.
+**I2C_SCL** and **I2C_SDA** are connected to the ATECC608A crypto chip for the purpose of developing cryptographic applications: network end-point key management and exchange small message and PII data encryption, secure boot and protected download, ecosystem control, and anti-cloning. Additional I2C peripherals can be added using the breakout pins on connector J3.
 
 ##### RF Interface  
   
@@ -225,7 +225,7 @@ The following charts show the receiving sensitivity of RAK3244 BastWAN at 866&nb
 
 ##### Board Dimensions
   
-Figure 9 shows the actual dimensions of the RAK3244 BastWAN Breakout Board measured in millimeters (mm). <br><br>
+**Figure 9** shows the actual dimensions of the RAK3244 BastWAN Breakout Board measured in millimeters (mm). <br><br>
 
 <rk-img
   src="/assets/images/wisduo/bastwan/datasheet/rak3244_mechanical.png"

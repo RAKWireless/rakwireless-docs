@@ -14,7 +14,7 @@ rak_img: /assets/images/wisduo/rak3272s-breakout-board/overview/RAK3272S_Breakou
 
 ## Introduction
 
-RAK3272S  Breakout Board is based on STM32WLE5CC chip and it is designed to simplify LoRaWAN and LoRa point to point (P2P) communication. To integrate LoRa technology into your projects, RAK3272S  implemented easy to use UART communication interface where you can send AT commands. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can also use any microcontroller with UART interface to control the RAK3272S  board. 
+RAK3272S  Breakout Board is based on STM32WLE5CC chip and it is designed to simplify LoRaWAN and LoRa point-to-point (P2P) communication. To integrate LoRa technology into your projects, RAK3272S is implemented with an easy-to-use UART communication interface, where you can send AT commands. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can also use any microcontroller with a UART interface to control the RAK3272S  board. 
 
 The UART serial communication is exposed on the **UART2 (also identified as LPUART1 port)**, through **Pin 7 (TX2)** and **Pin 8 (RX2)**. The default parameters of the UART2 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK3272S  Breakout Board Datasheet](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Datasheet/#rak3272s-breakout-board-datasheet).
 
@@ -83,35 +83,35 @@ The format of the reply is divided into two parts: returned value and the status
 :::
 
 
-1. **`<value><CR><LF>`** is the first reply when (**`AT+XXX?`**) command description or (**`AT+XXX=?`**) reading value is executed then it will be followed by the status return code. The formats with no return value like (**`AT+XXX=<input parameter>`**) writing configuration command and (**`AT+XXX`**) run command will just reply the status return code.
+1. **`<value><CR><LF>`** is the first reply when (**`AT+XXX?`**) command description or (**`AT+XXX=?`**) reading value is executed then it will be followed by the status return code. The formats with no return value like (**`AT+XXX=<input parameter>`**) writing configuration command and (**`AT+XXX`**) run command will just reply to the status return code.
 
 
-2. **`<CR><LF><STATUS><CR><LF>`** is the second part of the reply which is the status return code.
+2. **`<CR><LF><STATUS><CR><LF>`** is the second part of the reply, which is the status return code.
 
 The possible status codes are:
-
-| **STATUS RETURN CODE**   | **Description**                                      |
-| ------------------------ | ---------------------------------------------------- |
-| `OK`                     | Command executed correctly without error.            |
-| `AT_ERROR`               | Generic error or input is not supported.             |
-| `AT_PARAM_ERROR`         | The input parameter of the command is wrong.         |
-| `AT_BUSY_ERROR`          | The network is busy so the command is not completed. |
-| `AT_TEST_PARAM_OVERFLOW` | The parameter is too long.                           |
-| `AT_NO_NETWORK_JOINED`   | Module is not yet joined to a network.               |
-| `AT_RX_ERROR`            | Error detected during the reception of the command.  |
-| `AT_DUTYCYLE_RESTRICTED` | Duty cycle limited and cannot send data.             |
+ 
+| **STATUS RETURN CODE**   | **Description**                                       |
+| ------------------------ | ----------------------------------------------------- |
+| `OK`                     | Command executed correctly without error.             |
+| `AT_ERROR`               | Generic error or input is not supported.              |
+| `AT_PARAM_ERROR`         | The input parameter of the command is wrong.          |
+| `AT_BUSY_ERROR`          | The network is busy, so the command is not completed. |
+| `AT_TEST_PARAM_OVERFLOW` | The parameter is too long.                            |
+| `AT_NO_NETWORK_JOINED`   | Module is not yet joined to a network.                |
+| `AT_RX_ERROR`            | Error detected during the reception of the command.   |
+| `AT_DUTYCYLE_RESTRICTED` | Duty cycle limited and cannot send data.              |
 
 More details on each command description and examples are given in the remainder of this section. 
 
 :::tip 📝 NOTE:
 
-On the examples of AT Commands on this document, ATE is active therefore each input AT Command is printed before the return values and status return code.
+On the examples of AT Commands on this document, `ATE` is active; therefore, each input AT Command is printed before the return values and status return code.
 
 :::
 
 #### General Commands
 
-This section describes the generic commands related to “attention” help list, link control and CPU AT_Slave reset.
+This section describes the generic commands related to the “attention” help list, link control, and CPU `AT_Slave` reset.
 
 - [AT](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at)
 - [ATZ - MCU reset](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#atz)
@@ -171,6 +171,8 @@ RAK3172-H Version:v1.0.2 May 26 2021
 Current Work Mode: LoRaWAN.
 ```
 
+[Back](#content)  
+
 ### ATR 
 
 Description: Restore default parameters
@@ -199,6 +201,8 @@ RAK3172-H Version:v1.0.2 May 26 2021
 Current Work Mode: LoRa P2P.
 ```
 
+[Back](#content)  
+
 ### ATE 
 
 Description: Set command echo
@@ -216,6 +220,8 @@ ATE
 
 OK
 ```
+
+[Back](#content)  
 
 ### AT+SN  
 
@@ -236,17 +242,19 @@ AT+SN=?
 OK
 ```
 
+[Back](#content)  
+
 ### AT+BAUD 
 
 Description: Baudrate setting
 
-This command is used to configure the baudrate of the device.
+This command is used to configure the baud rate of the device.
 
-| Command                         | Input Parameter           | Return Value                                                  | Return Code              |
-| ------------------------------- | ------------------------- | ------------------------------------------------------------- | ------------------------ |
-| **`AT+BAUD?`**                  | -                         | `AT+BAUD`: Get or set the uart baud rate (4800, 9600, 115200) | `OK`                     |
-| **`AT+BAUD=?`**                 | -                         | `4800`, `9600`, or `115200`                                   | `OK`                     |
-| **`AT+BAUD=<Input Parameter>`** | `4800`,`9600` or `115200` | -                                                             | `OK` or `AT_PARAM_ERROR` |
+| Command                         | Input Parameter            | Return Value                                                  | Return Code              |
+| ------------------------------- | -------------------------- | ------------------------------------------------------------- | ------------------------ |
+| **`AT+BAUD?`**                  | -                          | `AT+BAUD`: Get or set the UART baud rate (4800, 9600, 115200) | `OK`                     |
+| **`AT+BAUD=?`**                 | -                          | `4800`,`9600`, or `115200`                                    | `OK`                     |
+| **`AT+BAUD=<Input Parameter>`** | `4800`,`9600`, or `115200` | -                                                             | `OK` or `AT_PARAM_ERROR` |
 
 :::tip 📝 NOTE:
 You need to restart the module for the new baud rate to take effect. 
@@ -270,7 +278,7 @@ AT_PARAM_ERROR
 
 #### Keys, IDs, and EUIs Management
 
-This section describes the commands related to the activation of the end device. EUI's and Keys are **MSB first**.  
+This section describes the commands related to the activation of the end device. EUI's and Keys are **MSB first**.  
 
 - [AT+DEVEUI - Set or get device EUI](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-deveui)
 - [AT+APPEUI - Set or get application EUI](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-appeui)
@@ -306,6 +314,8 @@ AT+DEVEUI=112233445566778800
 AT_PARAM_ERROR
 ```
 
+[Back](#content)  
+
 ### AT+APPEUI  
 
 Description: Application unique identifier
@@ -332,6 +342,8 @@ AT+APPEUI=0080E11500004CF61234
 
 AT_PARAM_ERROR
 ```
+
+[Back](#content)  
 
 ### AT+APPKEY 
 
@@ -360,6 +372,8 @@ AT+APPKEY=01020AFBA1CD4D20010230405A6B7F
 AT_PARAM_ERROR
 ```
 
+[Back](#content)  
+
 ### AT+DEVADDR 
 
 Description: Device address or DEVADDR
@@ -387,6 +401,8 @@ AT+DEVADDR=01020A0BCC
 AT_PARAM_ERROR
 ```
 
+[Back](#content)  
+
 ### AT+APPSKEY 
 
 Description: Application session key
@@ -413,6 +429,8 @@ AT+APPSKEY=01020AFBA1CD4D20010230405A6B7F
 
 AT_PARAM_ERROR
 ```
+
+[Back](#content)  
 
 ### AT+NWKSKEY 
 
@@ -482,11 +500,13 @@ AT+NJM=2
 AT_PARAM_ERROR
 ```
 
+[Back](#content)  
+
 ### AT+CFM 
 
 Description: Confirmed payload mode
 
-This command is used to access and configure type of payload of the device.
+This command is used to access and configure the type of payload of the device.
 
 | Command                        | Input Parameter | Return Value                                                     | Return Code              |
 | ------------------------------ | --------------- | ---------------------------------------------------------------- | ------------------------ |
@@ -509,9 +529,11 @@ AT+CFM=2
 AT_PARAM_ERROR
 ```
 
+[Back](#content)  
+
 ### AT+JOIN
 
-Description: Join LoRaWAN® network
+Description: Join the LoRaWAN® network
 
 This command is used to join a LoRaWAN® network.
 
@@ -527,7 +549,7 @@ This command is used to join a LoRaWAN® network.
 
 :::tip 📝 NOTE:
 
-This is an asynchronous command. OK means that the device is joining. The completion of the JOIN can be verified with `AT+NJS=?` command.
+This is an asynchronous command. OK means that the device is joining. The completion of the JOIN can be verified with the `AT+NJS=?` command.
 
 :::
 
@@ -550,9 +572,12 @@ OK
 ```
 :::tip 📝 NOTE:
 
-If joining fails, make sure your device is within the coverage of the gateway. Also, ensure that the RAK3172 is in LoRaWAN mode via `AT+NWM=1`, the region is correct via `AT+BAND` and the EUIs and keys are correct.
+If joining fails, make sure your device is within the coverage of the gateway. Also, ensure that the RAK3172 is in LoRaWAN mode via `AT+NWM=1`, the region is correct via `AT+BAND`, and the EUIs and keys are correct.
 
 :::
+
+[Back](#content)  
+
 ### AT+NJS 
 
 Description: Network join status
@@ -572,16 +597,18 @@ AT+NJS=?
 OK
 ```
 
+[Back](#content)  
+
 ### AT+SEND 
 
 Description: Send payload data
 
-This command is used to send LoRaWAN® payload on a specific port.
+This command is used to send the LoRaWAN® payload to a specific port.
 
-| Command                         | Input Parameter      | Return Value                                          | Return Code                                                       |
-| ------------------------------- | -------------------- | ----------------------------------------------------- | ----------------------------------------------------------------- |
-| **`AT+SEND?`**                  | -                    | `AT+SEND1`: Send data along with the application port | `OK`                                                              |
-| **`AT+SEND=<Input Parameter>`** | **port**:**payload** | -                                                     | `OK`, `AT_NO_NETWORK_JOINED`, `AT_PARAM_ERROR` or `AT_BUSY_ERROR` |
+| Command                         | Input Parameter      | Return Value                                          | Return Code                                                        |
+| ------------------------------- | -------------------- | ----------------------------------------------------- | ------------------------------------------------------------------ |
+| **`AT+SEND?`**                  | -                    | `AT+SEND1`: Send data along with the application port | `OK`                                                               |
+| **`AT+SEND=<Input Parameter>`** | **port**:**payload** | -                                                     | `OK`, `AT_NO_NETWORK_JOINED`, `AT_PARAM_ERROR`, or `AT_BUSY_ERROR` |
 
 **Examples**:
 
@@ -608,6 +635,7 @@ OK
 +EVT:3:4321
 ```
 
+[Back](#content)  
 
 ### AT+CFS 
 
@@ -639,9 +667,11 @@ OK
 
 :::tip 📝 NOTE:
 
-`AT+CFS=?` only reflects the status of the last confirmed packet send via `AT+SEND` command. If the last confirmed packet is successful, it will return 1. If the last confirmed packets fails, it will return 0. This is true regardless if you send successful unconfirmed packets in between confirmed payloads. `AT+CFS=?` only tracks the last confirmed packet.
+`AT+CFS=?` only reflects the status of the last confirmed packet sent via the `AT+SEND` command. If the last confirmed packet is successful, it will return 1. If the last confirmed packets fail, it will return 0. This is true regardless if you send successful unconfirmed packets in between confirmed payloads. `AT+CFS=?` only tracks the last confirmed packet.
 
 :::
+
+[Back](#content)  
 
 ### AT+RECV 
 
@@ -723,11 +753,13 @@ AT+ADR=?
 OK
 ```
 
+[Back](#content)  
+
 ### AT+CLASS 
 
 Description: LoRaWAN® class
 
-This command is used to access and configure the the LoRaWAN® class of the module.
+This command is used to access and configure the LoRaWAN® class of the module.
 
 | Command                          | Input Parameter | Return Value                                      | Return Code              |
 | -------------------------------- | --------------- | ------------------------------------------------- | ------------------------ |
@@ -771,6 +803,8 @@ OK
 :::
 
 
+[Back](#content)  
+
 ### AT+DCS 
 
 Description: Duty cycle settings
@@ -780,7 +814,7 @@ This command is used to access and configure duty cycle settings.
 | Command                        | Input Parameter | Return Value                                                           | Return Code              |
 | ------------------------------ | --------------- | ---------------------------------------------------------------------- | ------------------------ |
 | **`AT+DCS?`**                  | -               | `AT+DCS`: Get or set the ETSI duty cycle setting (0:disable, 1:enable) | `OK`                     |
-| **`AT+DCS=?`**                 | -               | 0 *(disabled) or* 1 *(enabled)*                                        | `OK`                     |
+| **`AT+DCS=?`**                 | -               | 0 *(disabled)* or 1 *(enabled)*                                        | `OK`                     |
 | **`AT+DCS=<Input Parameter>`** | 0 or 1          | -                                                                      | `OK` or `AT_PARAM_ERROR` |
 
 
@@ -795,11 +829,13 @@ AT+DCS=?
 OK
 ```
 
+[Back](#content)  
+
 ### AT+DUTYTIME 
 
 Description: Get the duty cycle time
 
-This command is used to get the duty cycle time (in seconds). The command is only used in the EU868, RU864, and EU433 frequency bands. Other frequency band query will return 0.
+This command is used to get the duty cycle time (in seconds). The command is only used in the EU868, RU864, and EU433 frequency bands. Other frequency band queries will return 0.
 
 | Command             | Input Parameter | Return Value                           | Return Code |
 | ------------------- | --------------- | -------------------------------------- | ----------- |
@@ -813,6 +849,8 @@ AT+DUTYTIME=?
 
 OK
 ```
+
+[Back](#content)  
 
 ### AT+DR 
 
@@ -839,14 +877,16 @@ OK
 
 :::tip 📝 NOTE:
 
-`AT+DR` command will return `AT+ERROR` if ADR is active via `AT+ADR` command.
+`AT+DR` command will return `AT+ERROR` if ADR is active via the `AT+ADR` command.
 :::
+
+[Back](#content)  
 
 ### AT+JN1DL 
 
 Description: Join delay on RX1 window
 
-This command is used to access and configure the join delay on RX1 window.
+This command is used to access and configure the join delay on the RX1 window.
 
 | Command                          | Input Parameter | Return Value                                                                                          | Return Code                                |
 | -------------------------------- | --------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------ |
@@ -866,11 +906,13 @@ AT+JN1DL=?
 OK
 ```
 
+[Back](#content)  
+
 ### AT+JN2DL 
 
 Description: Join delay on RX2 window
 
-This command is used to access and configure the join delay on RX2 window.
+This command is used to access and configure the join delay on the RX2 window.
 
 | Command                          | Input Parameter | Return Value                                                                                          | Return Code                                |
 | -------------------------------- | --------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------ |
@@ -889,11 +931,13 @@ AT+JN2DL=?
 OK
 ```
 
+[Back](#content)  
+
 ### AT+RX1DL 
 
 Description: Delay on RX1 window
 
-This command is used to access and configure the delay on RX1 window.
+This command is used to access and configure the delay on the RX1 window.
 
 | Command                          | Input Parameter | Return Value                                                                         | Return Code                                |
 | -------------------------------- | --------------- | ------------------------------------------------------------------------------------ | ------------------------------------------ |
@@ -913,11 +957,13 @@ AT+RX1DL=?
 OK
 ```
 
+[Back](#content)  
+
 ### AT+RX2DL 
 
 Description: Delay on RX2 window
 
-This command is used to access and configure the delay on RX2 window.
+This command is used to access and configure the delay on the RX2 window.
 
 | Command                          | Input Parameter | Return Value                                                                         | Return Code                                |
 | -------------------------------- | --------------- | ------------------------------------------------------------------------------------ | ------------------------------------------ |
@@ -935,6 +981,8 @@ AT+RX2DL=?
 
 OK
 ```
+
+[Back](#content)  
 
 ### AT+RX2DR 
 
@@ -960,6 +1008,8 @@ AT+RX2DR=?
 OK
 ```
 
+[Back](#content)  
+
 ### AT+RX2FQ 
 
 Description: Frequency of the RX2 window
@@ -984,8 +1034,10 @@ OK
 ```
 :::tip 📝 NOTE:
 
-RX2 Frequency via `AT+RX2FQ` command have preset value depending on the regional band you selected via `AT+BAND` command.
+RX2 Frequency via the `AT+RX2FQ` command has a preset value depending on the regional band you selected via the `AT+BAND` command.
 :::
+
+[Back](#content)  
 
 ### AT+TXP 
 
@@ -1001,7 +1053,7 @@ This command is used to access and configure the transmit power.
 
 Check [Appendix II Section](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#appendix-ii%EF%BC%9Atx-power-by-region) **TXPower** for the input parameter depending on the frequency band selected.
 
-For example, at EU868, a value of 2 represents **MaxEIRP - 4&nbsp;dB** where MaxEIRP = +16&nbsp;dBm.
+For example, at EU868, a value of 2 represents **MaxEIRP - 4&nbsp;dB**, where MaxEIRP = +16&nbsp;dBm.
 
 **Examples**:
 ```
@@ -1014,11 +1066,13 @@ AT+TXP=?
 OK
 ```
 
+[Back](#content)  
+
 ### AT+RETY 
 
 Description: Confirmed payload retransmission
 
-This command is used to access and configure the number of retransmission for confirmed payload.
+This command is used to access and configure the number of retransmission for confirmed payloads.
 
 | Command                         | Input Parameter                        | Return Value                                                        | Return Code              |
 | ------------------------------- | -------------------------------------- | ------------------------------------------------------------------- | ------------------------ |
@@ -1036,6 +1090,8 @@ AT+RETY=?
 
 OK
 ```
+
+[Back](#content)  
 
 ### AT+MASK 
 
@@ -1078,6 +1134,8 @@ AT+MASK=?
 OK
 ```
 
+[Back](#content)  
+
 ### AT+BAND 
 
 Description: Regional frequency band
@@ -1118,6 +1176,8 @@ AT+BAND=?
 
 OK
 ```
+
+[Back](#content)  
 
 ### AT+LPSEND 
 
@@ -1166,11 +1226,13 @@ OK
 The large payload via `AT+LPSEND` will be sliced automatically depending on the DR that follows the LoRaWAN specifications. You can check [Appendix III](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#appendix-iii-maximum-transmission-load-by-region) for the maximum size.
 :::
 
+[Back](#content)  
+
 ### AT+LINKCHECK 
 
 Description: Network link status
 
-This command is used to access and configure device network link status.
+This command is used to access and configure the device network link status.
 
 | Command                              | Input Parameter | Return Value                               | Return Code              |
 | ------------------------------------ | --------------- | ------------------------------------------ | ------------------------ |
@@ -1181,7 +1243,7 @@ This command is used to access and configure device network link status.
 Input parameter details:
 0 - Disable Link Check
 1 - Execute Link Check just once on the next payload uplink.
-2 - Module will automatically execute one time Link Check after every payload uplink.
+2 - Module will automatically execute one-time Link Check after every payload uplink.
 
 Reply format:
 
@@ -1191,7 +1253,7 @@ Reply format:
     -  0 – represents the Link Check execute success.
     - Non-0 – represents the Link Check execute fail.
 - **`Y1`** represents the DemodMargin.
-- **`Y2`** represents the GwCnt (Number of Gateways that received link check command).
+- **`Y2`** represents the GwCnt (Number of gateways that received link check command).
 - **`Y3`** represents the RSSI.
 - **`Y4`** represents the SNR.
 
@@ -1205,6 +1267,8 @@ AT+SEND=2:12345678
 OK
 +EVT:LINKCHECK:0,25,1,-53,11
 ```
+
+[Back](#content)  
 
 ### AT+USEND 
 
@@ -1231,11 +1295,13 @@ OK
 +EVT:SEND CONFIRMED OK
 ```
 
+[Back](#content)  
+
 ### AT+PNM
 
 Description: Public Network Mode
 
-This command is used to enable public network mode. This is only available in LoRaWAN mode and it will return `MODE_NOT_SUPPORT` if the device is in P2P mode. Default setting is `1`.
+This command is used to enable public network mode. This is only available in LoRaWAN mode and it will return `MODE_NOT_SUPPORT` if the device is in P2P mode. The default setting is `1`.
 
 | Command                        | Input Parameter | Return Value                                               | Return Code              |
 | ------------------------------ | --------------- | ---------------------------------------------------------- | ------------------------ |
@@ -1262,7 +1328,7 @@ OK
 This section describes the commands related to Class B mode.
 
 :::tip 📝 NOTE:
-The commands in these sections work in Class B mode. You need to configure your device to Class B via `AT+CLASS=B` to ensure that these commands will work.
+The commands in these sections work in Class B mode. You need to configure your device to Class B via `AT+CLASS=B` to ensure that these commands will work. 
 :::
 
 - [AT+PGSLOT - Slot Periodicity Command](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-pgslot)
@@ -1293,6 +1359,8 @@ AT+PGSLOT=?
 OK
 ```
 
+[Back](#content)  
+
 ### AT+BFREQ 
 
 Description: Beacon Frequency Command
@@ -1319,6 +1387,8 @@ AT+BFREQ=?
 
 OK
 ```
+
+[Back](#content)  
 
 ### AT+LTIME
 
@@ -1363,7 +1433,7 @@ This command is used to get the RSSI value of the last packet received.
 
 
 :::tip 📝 NOTE:
-`AT+RSSI` will show the RSSI based of the last downlink received. If there is no downlink received yet, it will return 0.
+`AT+RSSI` will show the RSSI based on the last downlink received. If there is no downlink received yet, it will return 0.
 :::
 
 Example:
@@ -1373,6 +1443,8 @@ AT+RSSI=?
 
 OK
 ```
+
+[Back](#content)  
 
 ### AT+SNR 
 
@@ -1387,7 +1459,7 @@ This command is used to get the SNR value of the last packet received.
 
 
 :::tip 📝 NOTE:
-`AT+SNR` will show the SNR based of the last downlink received. If there is no downlink received yet, it will return 0.
+`AT+SNR` will show the SNR based on the last downlink received. If there is no downlink received yet, it will return 0.
 :::
 
 **Example**:
@@ -1397,6 +1469,8 @@ AT+SNR=?
 
 OK
 ```
+
+[Back](#content)  
 
 ### AT+VER 
 
@@ -1417,6 +1491,8 @@ V1.0.4
 OK
 ```
 
+[Back](#content)  
+
 ### AT+TIMEREQ 
 
 Description: UTC time request
@@ -1429,9 +1505,9 @@ This command is used to get the UTC time. It only works if the device is in LoRa
 | **`AT+TIMEREQ=<Input Parameter>`** | `0` or `1`      |                                                 | `OK`,`AT_PARAM_ERROR`, or `AT_NO_NETWORK_JOINED` |
 
 :::tip 📝 NOTE:
-With `AT+TIMEREQ` command, you will have an asynchronous reply `+EVT: TIMEREQ OK` after a successful uplink.
+With the `AT+TIMEREQ` command, you will have an asynchronous reply `+EVT: TIMEREQ OK` after a successful uplink.
 
-You also need to use `AT+LTIME` command to get the exact time data/value.
+You also need to use the `AT+LTIME` command to get the exact time data/value.
 :::
 
 **Example**:
@@ -1479,9 +1555,9 @@ This section describes the commands related to RF test management.
 
 ### AT+CW 
 
-Description: Send continuous wave
+Description: Send a continuous wave
 
-This command is used to enable continuous RF tranmissions with configurable frequency, transmit power and duration.
+This command is used to enable continuous RF transmissions with configurable frequency, transmit power, and duration.
 
 | Command                       | Input Parameter               | Return Value                  | Return Code              |
 | ----------------------------- | ----------------------------- | ----------------------------- | ------------------------ |
@@ -1491,8 +1567,8 @@ This command is used to enable continuous RF tranmissions with configurable freq
 :::tip 📝 NOTE:
 Frequency configuration:
 
-- RAK3172(L) is needed to use the low frequency range 150000000 - 600000000.
-- RAK3172(H) is needed to use the high frequency range 600000000 - 960000000.
+- RAK3172(L) is needed to use the low-frequency range 150000000 - 600000000.
+- RAK3172(H) is needed to use the high-frequency range 600000000 - 960000000.
 
 Txpower:
 - 5 to 22
@@ -1508,6 +1584,8 @@ AT+CW=868000000:20:60
 
 OK
 ```
+
+[Back](#content)  
 
 ### AT+TRSSI 
 
@@ -1529,6 +1607,8 @@ AT+TRSSI
 OK
 ```
 
+[Back](#content)  
+
 ### AT+TTONE 
 
 Description: Start radio frequency tone test
@@ -1547,6 +1627,8 @@ AT+TTONE
 
 OK
 ```
+
+[Back](#content)  
 
 ### AT+TTX 
 
@@ -1572,6 +1654,8 @@ AT+TTX=3
 
 OK
 ```
+
+[Back](#content)  
 
 ### AT+TRX 
 
@@ -1602,6 +1686,8 @@ AT+TRX=3
 
 OK
 ```
+
+[Back](#content)  
 
 ### AT+TCONF 
 
@@ -1644,16 +1730,18 @@ OK
 
 ```
 
+[Back](#content)  
+
 ### AT+TTH 
 
 Description: RF Tx hopping test
 
 This command is used to access and configure RF Tx hopping test.
 
-| Command                        | Input Parameter                              | Return Value                                                                 | Return Code |
-| ------------------------------ | -------------------------------------------- | ---------------------------------------------------------------------------- | ----------- |
-| **`AT+TTH?`**                  | -                                            | `AT+TTH`: Starts RF Tx hopping test from Fstart to Fstop, with Fdelta steps. | `OK`        |
-| **`AT+TTH=<Input Parameter>`** | **Fstart**,**Fstop**,**FDelta**,**PacketNb** | -                                                                            | `OK`        |
+| Command                        | Input Parameter                                 | Return Value                                                                 | Return Code |
+| ------------------------------ | ----------------------------------------------- | ---------------------------------------------------------------------------- | ----------- |
+| **`AT+TTH?`**                  | -                                               | `AT+TTH`: Starts RF Tx hopping test from Fstart to Fstop, with Fdelta steps. | `OK`        |
+| **`AT+TTH=<Input Parameter>`** | **Fstart**, **Fstop**, **FDelta**, **PacketNb** | -                                                                            | `OK`        |
 
 **Example**:
 ```
@@ -1678,6 +1766,8 @@ AT+TTH=p68000000,868300000,100000,4
 OK
 ```
 
+[Back](#content)  
+
 ### AT+TOFF 
 
 Description: Stop ongoing radio frequency test
@@ -1696,6 +1786,8 @@ Test Stop
 
 OK
 ```
+
+[Back](#content)  
 
 ### AT+CERTIF 
 
@@ -1815,8 +1907,8 @@ This command is used to access and configure P2P mode frequency.
 :::tip 📝 NOTE:
 Frequency configuration:
 
-- RAK3172(L) is needed to use the low frequency range 150000000 - 600000000.
-- RAK3172(H) is needed to use the high frequency range 600000000 - 960000000.
+- RAK3172(L) is needed to use the low-frequency range 150000000 - 600000000.
+- RAK3172(H) is needed to use the high-frequency range 600000000 - 960000000.
 :::
 
 **Example**:
@@ -1830,11 +1922,13 @@ AT+PFREQ=?
 OK
 ```
 
+[Back](#content)  
+
 ### AT+PSF 
 
 Description: P2P mode spreading factor
 
-This command is used to access and configure P2P mode spreading factor.
+This command is used to access and configure the P2P mode spreading factor.
 
 | Command                        | Input Parameter | Return Value                                                     | Return Code              |
 | ------------------------------ | --------------- | ---------------------------------------------------------------- | ------------------------ |
@@ -1852,6 +1946,8 @@ AT+PSF=?
 
 OK
 ```
+
+[Back](#content)  
 
 ### AT+PBW 
 
@@ -1876,11 +1972,13 @@ AT+PBW=?
 OK
 ```
 
+[Back](#content)  
+
 ### AT+PCR 
 
 Description: P2P mode coding rate
 
-This command is used to access and configure P2P mode coding rate.
+This command is used to access and configure the P2P mode coding rate.
 
 | Command                        | Input Parameter       | Return Value                                                   | Return Code              |
 | ------------------------------ | --------------------- | -------------------------------------------------------------- | ------------------------ |
@@ -1898,6 +1996,8 @@ AT+PCR=?
 
 OK
 ```
+
+[Back](#content)  
 
 ### AT+PPL 
 
@@ -1921,6 +2021,9 @@ AT+PPL=?
 
 OK
 ```
+
+[Back](#content)  
+
 ### AT+PTP 
 
 Description: P2P mode TX power
@@ -1944,6 +2047,8 @@ AT+PTP=?
 OK
 ```
 
+[Back](#content)  
+
 ### AT+P2P 
 
 Description: P2P configuration settings
@@ -1958,8 +2063,8 @@ This command is used to access and configure all P2P mode settings.
 
 Input parameter details:
 
-- RAK3172(L) is needed to use the low frequency range 150000000 - 525000000.
-- RAK3172(H) is needed to use the high frequency range 525000000 - 960000000.
+- RAK3172(L) is needed to use the low-frequency range 150000000 - 525000000.
+- RAK3172(H) is needed to use the high-frequency range 525000000 - 960000000.
 - SF: 5 to 12
 - Bandwidth: 125, 250 or 500
 - CR: 0=4/5, 1=4/6, 2=4/7, 3=4/8
@@ -1976,6 +2081,8 @@ AT+P2P=?
 
 OK
 ```
+
+[Back](#content)  
 
 ### AT+PSEND 
 
@@ -1999,11 +2106,13 @@ OK
 To successfully transmit P2P, you must have another device configured with the same P2P parameters and ready to receive the payload with the `AT+PRECV` command. The maximum payload in P2P mode is 255 bytes.
 :::
 
+[Back](#content)  
+
 ### AT+PRECV 
 
 Description: P2P receive data window
 
-This command is used to configure timeout period for P2P window reception.
+This command is used to configure the timeout period for P2P window reception.
 
 | Command                          | Input Parameter    | Return Value                                                             | Return Code              |
 | -------------------------------- | ------------------ | ------------------------------------------------------------------------ | ------------------------ |
@@ -2040,7 +2149,7 @@ This section describes the commands related to multicast group functionality.
 
 Description: Add multicast group
 
-This command is used to add new multicast group and multicast parameters.
+This command is used to add a new multicast group and multicast parameters.
 
 | Command                            | Input Parameter                                                                | Return Value                            | Return Code              |
 | ---------------------------------- | ------------------------------------------------------------------------------ | --------------------------------------- | ------------------------ |
@@ -2048,7 +2157,7 @@ This command is used to add new multicast group and multicast parameters.
 | **`AT+ADDMULC=<Input Parameter>`** | *`[Class]:[DevAddr]:[NwkSKey]:[AppSKey]:[Frequency]:[Datarate]:[Periodicity]`* | -                                       | `OK` or `AT_PARAM_ERROR` |
 Input parameter details:
 
-If Class is C, periodicity parameter is removed.
+If Class is C, the periodicity parameter is removed.
 
 **Examples**:
 
@@ -2065,6 +2174,8 @@ AT+ADDMULC=C:11223344:11223344556677881122334455667788:1122334455667788112233445
 OK
 ```
 
+[Back](#content)  
+
 ### AT+RMVMULC 
 
 Description: Remove multicast group
@@ -2078,12 +2189,15 @@ This command is used to remove the configured multicast group.
 
 Example:
 
-You can only remove group with address already added.
+You can only remove a group with the address already added.
 ```
 AT+RMVMULC=11223344
 
 OK
 ```
+
+[Back](#content)  
+
 ### AT+LSTMULC 
 
 Description: Multicast list
@@ -2116,7 +2230,7 @@ Description: Set transparent transmission mode
 This command is used to set the transparent transmission mode. This only works in LoRaWAN mode.
 
 :::tip 📝 NOTE:
-In data transparent transmission mode, all your input to the uart port will be transmitted to the network server. Standard AT commands will not work. To get out of data transparent transmission mode, you need to input `+++` command without any termination (e.g. CR or LF).
+In data transparent transmission mode, all your input to the UART port will be transmitted to the network server. Standard AT commands will not work. To get out of data transparent transmission mode, you need to input the `+++` command without any termination (e.g. CR or LF).
 :::
 
 | Command | Input Parameter | Return Value                                    | Return Code |
@@ -2126,7 +2240,7 @@ In data transparent transmission mode, all your input to the uart port will be t
 
 **Example**:
 
-Two packets are transmitted on the demo below. During transparent transmission mode, there is no string shown on the payload sent.
+Two packets are transmitted on the demo below. During a transparent transmission mode, there is no string shown on the payload sent.
 ```
 ATD
 
@@ -2138,6 +2252,8 @@ OK
 OK
 +EVT:SEND CONFIRMED OK
 ```
+
+[Back](#content)  
 
 ### +++ 
 
@@ -2632,28 +2748,28 @@ M in the following list is the length with MAC header, N is the maximum usable p
 
 This section describes the output from UART lines of RAK3172 that can occur at any point in time while the device is operational.
 
-| Event                      | UART output         | Status description                                                                               |
-| -------------------------- | ------------------- | ------------------------------------------------------------------------------------------------ |
-| Beacon acquisition process | `+BC:`*< status >*  | `FAILED` - Beacon sync failed                                                                    |
-|                            |                     | `DONE` - Switch to classB mode                                                                   |
-|                            |                     | `LOST` - No Beacon received for 2 hours, switch to classA                                        |
-|                            |                     | `LOCKED` - Receive Beacon                                                                        |
-| Pingslot process           | `+PS:`*< status >*  | `DONE` - At this time, ping slots will be opened periodically. The modem is now in Class B mode. |
-| Class B/C downlink         | `+EVT:`*< status >* | `RX3/RXC, RSSI -110, SNR 5` - Indicates that data has been received on pingslot received window. |
-|                            |                     | `PortNumber:12345678` - Received binary data on PortNumber.                                      |
-|                            |                     | `UNICAST` - Let the host know that the Rx is in unicast Class B mode.                            |
-|                            |                     | `MULCAST MC1` - Data received in multicast group 1                                               |
-| Class A downlink           | `+EVT:`*< status >* | `RX1/RX2, RSSI -110, SNR 5`                                                                      |
-|                            |                     | `PortNumber:12345678` - Received binary data on PortNumber.                                      |
-| Join                       | `+EVT:`*< status >* | `JOIN FAILED`                                                                                    |
-|                            |                     | `JOINED`                                                                                         |
-| Confirm                    | `+EVT:`*< status >* | `SEND CONFIRMED OK`                                                                              |
-|                            |                     | `SEND CONFIRMED FAILED`                                                                          |
-| P2P                        | `+EVT:`*< status >* | `00112233` - Received binary data format data                                                    |
-|                            |                     | `RXP2P, RSSI -110, SNR 5` - Indicates that data has been received on P2P received window.        |
-| Link Check                 | `+EVT:`*< status >* | `LINKCHECK:Y0,Y1,Y2,Y3,Y4`                                                                       |
-|                            |                     | Y0 - represents link status (1:links success, 2: link fail)                                      |
-|                            |                     | Y1 - represents the DemodMargin                                                                  |
-|                            |                     | Y2 - represents the NbGateways                                                                   |
-|                            |                     | Y3 - represents the RSSI of the command’s download                                               |
-|                            |                     | Y4 - represents the SNR of the command’s download                                                |
+| Event                      | UART output         | Status description                                                                                |
+| -------------------------- | ------------------- | ------------------------------------------------------------------------------------------------- |
+| Beacon acquisition process | `+BC:`*< status >*  | `FAILED` - Beacon sync failed                                                                     |
+|                            |                     | `DONE` - Switch to Class B mode                                                                   |
+|                            |                     | `LOST` - No Beacon received for 2 hours, switch to Class A                                        |
+|                            |                     | `LOCKED` - Receive Beacon                                                                         |
+| Pingslot process           | `+PS:`*< status >*  | `DONE` - At this time, ping slots will be opened periodically. The modem is now in Class B mode.  |
+| Class B/C downlink         | `+EVT:`*< status >* | `RX3/RXC, RSSI -110, SNR 5` - Indicates that data has been received on ping slot received window. |
+|                            |                     | `PortNumber:12345678` - Received binary data on PortNumber.                                       |
+|                            |                     | `UNICAST` - Let the host know that the Rx is in unicast Class B mode.                             |
+|                            |                     | `MULCAST MC1` - Data received in multicast group 1                                                |
+| Class A downlink           | `+EVT:`*< status >* | `RX1/RX2, RSSI -110, SNR 5`                                                                       |
+|                            |                     | `PortNumber:12345678` - Received binary data on PortNumber.                                       |
+| Join                       | `+EVT:`*< status >* | `JOIN FAILED`                                                                                     |
+|                            |                     | `JOINED`                                                                                          |
+| Confirm                    | `+EVT:`*< status >* | `SEND CONFIRMED OK`                                                                               |
+|                            |                     | `SEND CONFIRMED FAILED`                                                                           |
+| P2P                        | `+EVT:`*< status >* | `00112233` - Received binary data format data                                                     |
+|                            |                     | `RXP2P, RSSI -110, SNR 5` - Indicates that data has been received on P2P received window.         |
+| Link Check                 | `+EVT:`*< status >* | `LINKCHECK:Y0,Y1,Y2,Y3,Y4`                                                                        |
+|                            |                     | Y0 - represents link status (1: links success, 2: link fail)                                      |
+|                            |                     | Y1 - represents the DemodMargin                                                                   |
+|                            |                     | Y2 - represents the NbGateways                                                                    |
+|                            |                     | Y3 - represents the RSSI of the command’s download                                                |
+|                            |                     | Y4 - represents the SNR of the command’s download                                                 |

@@ -25,15 +25,15 @@ This module integrates a 12&nbsp;V power supply, which can be used to power exte
 
 ### Features
 
--	Two 4-20&nbsp;mA analog inputs
--	Compatible with multiple WisBlock Core modules, such as RAK4631
--	0.005&nbsp;mA conversion accuracy
--	Supports low power consumption mode. The module can be powered off by the WisBlock Core module for saving energy during idle periods.
--	12&nbsp;V output to  power external sensors
--	Reserved I2C expansion interface
--	Fast crimping terminals
--	Designed with a 2&nbsp;kV ESD protection level
--	Small dimensions of 35&nbsp;mm x 25&nbsp;mm
+- Two 4-20&nbsp;mA analog inputs
+- Compatible with multiple WisBlock Core modules, such as RAK4631
+- 0.005&nbsp;mA conversion accuracy
+- Supports low power consumption mode. The module can be powered off by the WisBlock Core module for saving energy during idle periods.
+- 12&nbsp;V output to  power external sensors
+- Reserved I2C expansion interface
+- Fast crimping terminals
+- Designed with a 2&nbsp;kV ESD protection level
+- Small dimensions of 35&nbsp;mm x 25&nbsp;mm
 
 ## Specifications
 
@@ -68,7 +68,7 @@ The hardware specification is categorized into four parts. It discusses the pino
 
 #### Device Specification
 
-The following table shows the parameters and the description of the RAK5801 WisBlock 4-20mA Interface Module:
+The following table shows the parameters and the description of the RAK5801 WisBlock 4-20&nbsp;mA Interface Module:
 
 | **Parameter**                    | **Description**                                                         |
 | -------------------------------- | ----------------------------------------------------------------------- |
@@ -98,12 +98,12 @@ This section covers the pin number of the sensor connector, the definition, and 
 />
 
 :::tip 📝 NOTE:
-**A0** cannot be used as an analog input channel by default because it is used for measuring battery voltage. But if you need to use **A0**, there are few hardware modifications needed to configure. Please see instructions below.
+**A0** cannot be used as an analog input channel by default because it is used for measuring battery voltage. But if you need to use **A0**, there are few hardware modifications needed to configure. 
 
 To enable **A0** as an additional channel:
 
 1. Remove **R7** on the WisBlock Base such as the RAK5005-O to disconnect Vbat sensing.
-2. On RAK5801, remove the 0 Ohms resistor in **R94** and put it to **R95**. Please see **Figure 3**.
+2. On RAK5801, remove the 0 Ohms resistor in **R94** and put it to **R95**. See **Figure 3**.
 :::
 
 <rk-img
@@ -136,7 +136,7 @@ To enable **A0** as an additional channel:
 
 <br>
 
-The functionalities of each pins of the WisIO connector are tabulated below.
+The functionalities of each pin of the WisIO connector are tabulated below:
 
 | **Pin Number** | **Description**      | **Pin Number** | **Description** |
 | -------------- | -------------------- | -------------- | --------------- |
@@ -162,7 +162,7 @@ The functionalities of each pins of the WisIO connector are tabulated below.
 | 39             | GND                  | 40             | GND             |
 
 :::tip 📝 NOTE:
-This signal controls the dc-dc power supply on RAK5801, before capturing analog signal, set this pin to high to enable power for RAK5801.
+This signal controls the dc-dc power supply on RAK5801, before capturing the analog signal, set this pin to high to enable power for RAK5801.
 :::
 
 #### Mechanical Characteristics
@@ -195,30 +195,30 @@ Refer to **Figure 5** below for the mechanical dimensions of the RAK5801 module.
 
 ## WisBlock Compatibility
 
-
-Since a WisBlock module can be combined with a variety of different functional modules, the pin functions of the MCU are multiplexed, so the interface expansion module for each specific function may need to be properly adapted for the WisBlock. The compatibility details of the RAK5801 module are as shown in the Table below:
+Since a WisBlock module can be combined with a variety of different functional modules, the pin functions of the MCU are multiplexed, so the interface expansion module for each specific function may need to be properly adapted for the WisBlock. The compatibility details of the RAK5801 module are as shown in the table below:
 
 | **WisBlock Module**  | **Adaptable Module** | **Description**                                                                |
 | -------------------- | -------------------- | ------------------------------------------------------------------------------ |
-| WisBase Base board   | RAK5005/RAK5005-O    | RAK5801 is designed to be assembled in the IO slot of RAK5005-O baseboard.     |
+| WisBase Base board   | RAK5005/RAK5005-O    | RAK5801 is designed to be assembled in the IO slot of the RAK5005-O baseboard. |
 | WisBlock Core Module | RAK4631              | RAK5801 is compatible with RAK4631.                                            |
-|                      | RAK4201              | Please select RAK4201L-ADC for the low band or RAK4201H-ADC for the high band. |
-|                      | RAK4202              | Please refer to Note 2 for hardware adaptions to the RAK5005-O and RAK5801.    |
-|                      | RAK4261              | Please refer to Note 3 for hardware adaptions to the RAK5005-O and RAK5801.    |
+|                      | RAK4201              | Select RAK4201L-ADC for the low band or RAK4201H-ADC for the high band.        |
+|                      | RAK4202              | Refer to Note 2 for hardware adaptions to the RAK5005-O and RAK5801.           |
+|                      | RAK4261              | Refer to Note 3 for hardware adaptions to the RAK5005-O and RAK5801.           |
 
 :::tip 📝 NOTE 
 <b> 1. The RAK5801+RAK4601 </b> <br>
-The RAK5801 is not compatible with RAK4601. The main reason is because RAK4601 doesn’t expose any ADC pin through the RAK5005-O baseboard.
+The RAK5801 is not compatible with RAK4601. The main reason is that RAK4601 doesn’t expose any ADC pin through the RAK5005-O baseboard.
 :::
 
 :::tip 📝 NOTE 
-<b> 2. RAK5801+RAK4202+RAK5005-O </b> <br>
+<b> 2. RAK5801+RAK4202+RAK5005-O </b> 
+
 In order to combine a RAK5801 module, a RAK4202 (WisBlock Core module), and the RAK5005-O, the following modification must be introduced: 
--	In RAK5005-O, remove the R7 resistor as shown in **Figure 8.**
--	In RAK5801, remove R94 to R95 resistors, and use PA0 of STM32L151 to read the analog data of the channel “analog0”, and use PA2 of STM32L151 to read the analog data of Channel analog1. **Figure 9** shows the resistors R94 and R95 on the RAK5801 module.
+- In RAK5005-O, remove the R7 resistor, as shown in **Figure 8**.
+- In RAK5801, remove R94 to R95 resistors. Use **PA0 of STM32L151** to read the analog data of the channel “analog0” and **PA2 of STM32L151** to read the analog data of Channel analog1. **Figure 9** shows the resistors R94 and R95 on the RAK5801 module.
 
 This combination has the following restriction: 
--	The adapted RAK5005-O module will not able to sense the battery voltage anymore. 
+- The adapted RAK5005-O module will not be able to sense the battery voltage anymore. 
 :::
 
 <rk-img
@@ -235,11 +235,13 @@ This combination has the following restriction:
 
 :::tip 📝 NOTE 
 
-<b> 3. RAK5801+RAK4261+RAK5005-O </b> <br>
+<b> 3. RAK5801+RAK4261+RAK5005-O </b>
+
 In order to combine a RAK5801 module, a RAK4261(WisBlock Core module), and the RAK5005-O, the following modification must be introduced: 
--	In RAK5005-O, remove the R7 resistor. See **Figure 8**. 
--	In RAK5801, remove R94 to R95 resistors (see **Figure 9**), and use PA08 of ATSAMR34 to read the analog data of the channel “analog0”, and use PA09 of ATSAMR34 to read the analog data of Channel analog1.
+
+- In RAK5005-O, remove the R7 resistor. See **Figure 8**. 
+- In RAK5801, remove R94 to R95 resistors (see **Figure 9**). Use **PA08 of ATSAMR34** to read the analog data of the channel “analog0” and **PA09 of ATSAMR34** to read the analog data of Channel analog1.
 
 This combination has the following restriction: 
--	The adapted RAK5005-O module will not able to sense the battery voltage anymore. 
+- The adapted RAK5005-O module will not be able to sense the battery voltage anymore. 
 :::

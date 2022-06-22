@@ -16,7 +16,7 @@ tags:
 
 RAK4270 module comes with a standard version of firmware that allows you to configure its functionality via AT commands. This simplicity helps you develop LoRa(P2P) and LoRaWAN projects quickly. 
 
-Further customization of the firmware can be done through the [RUI (RAKwireless Unified Interface) Online compiler](/RUI/). RAK's LoRa modules support not only out-of-the-box integration via AT commands, but it also allows you to customize RAK4270 firmware and access other functionalities of the internal MCU using RUI API. More so, you can adapt and extend the logic in the firmware to meet your requirements.
+Further customization of the firmware can be done through the [RUI (RAKwireless Unified Interface) Online compiler](/RUI/). RAK's LoRa modules support not only out-of-the-box integration via AT commands but also allow you to customize RAK4270 firmware and access other functionalities of the internal MCU using RUI API. More so, you can adapt and extend the logic in the firmware to meet your requirements.
 
 Additionally, RAK offers a third alternative for advanced customers who need to have deeper integration of their solutions with these modules. In this alternative, you could develop your own version of STM32 firmware that runs inside of the RAK4270 module. 
 
@@ -24,28 +24,28 @@ Additionally, RAK offers a third alternative for advanced customers who need to 
 
 ### Schematic
 
-One of the essential aspects that allows you to develop your own version of firmware is the [RAK4270 Hardware Schematic](https://downloads.rakwireless.com/LoRa/RAK4270/Hardware-Specification/). This allows the you to understand the module’s pinout and the connections between the internal STM32 MCU and the LoRa transceiver. Other important details can be found on [RAK4270 Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/).
+One of the essential aspects that allows you to develop your own version of firmware is the [RAK4270 Hardware Schematic](https://downloads.rakwireless.com/LoRa/RAK4270/Hardware-Specification/). This allows you to understand the module’s pinout and the connections between the internal STM32 MCU and the LoRa transceiver. Other important details can be found on [RAK4270 Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/).
 
 :::tip 📝 NOTE:
 
-There are two versions of the RAK4270 module: the high-frequency band RAK4270(H) used on EU868, US915, AU915, KR920, AS923, and IN865, and the low-frequency band RAK4270(L) used on EU433 and CN470 . These two modules share the same schematic diagram which will be helpful to you when you develop your own firmware. 
+There are two versions of the RAK4270 module: the high-frequency band RAK4270(H) used on EU868, US915, AU915, KR920, AS923, and IN865, and the low-frequency band RAK4270(L) used on EU433 and CN470. These two modules share the same schematic diagram which will be helpful to you when you develop your own firmware. 
 
 :::
 
 ### Porting Lora Protocol Stack
 
-When implementing the LoRa protocol stack, special attention must be given in the SPI connections since the LoRa transceivers are controlled by the MCU through an SPI   interface. Hence, the following are the important pins: **SPI1_MISO, SPI1_MOSI, SPI_NSS, SPI_CLK**. 
+When implementing the LoRa protocol stack, special attention must be given to the SPI connections since the LoRa transceivers are controlled by the MCU through an SPI interface. Hence, the following are the important pins: **SPI1_MISO, SPI1_MOSI, SPI_NSS, SPI_CLK**. 
 
 Additionally, the DIO pins and RF signal paths are significant as well to have functional LoRa communication. Another important thing to consider is the RF switch logic table. The complete details of pin connections can be found on the [RAK4270 Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/). 
 
-After that, the **Real-Time Clock (RTC)** must be properly configured in the MCU to ensure accurate timing of protocol stack during the runtime. Finally, the protocol stack code can be added after configuring the other pins.
+After that, the **Real-Time Clock (RTC)** must be properly configured in the MCU to ensure accurate timing of the protocol stack during the runtime. Finally, the protocol stack code can be added after configuring the other pins.
 
 ### Application
 
-Once the porting the protocol stack is ready, you can focus on the development of their applications. There are two options:
+Once the porting protocol stack is ready, you can focus on the development of their applications. There are two options:
 
-- Do not use the original bootloader that comes in RAK modules from the factory. In the case, the customer must provide his own version of bootloader.
-- Use RAK's bootloader and the upgrade the custom firmware by using RAK’s Device Firmware Upgrade Tool. You can download it from here:
+- Do not use the original bootloader that comes in RAK modules from the factory. In this case, the customer must provide his own version of the bootloader.
+- Use RAK's bootloader and upgrade the custom firmware by using RAK’s Device Firmware Upgrade Tool. You can download it from here:
   - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/RAK_Device_Firmware_Upgrade_Tool_v1.4.zip)
   - [Device Firmware Upgrade Tool for MacOS](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/RAK_Device_Firmware_Upgrade_Tool_v1.4_MacOS.zip)
   - [Device Firmware Upgrade Tool for Ubuntu](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/RAK_Device_Firmware_Upgrade_Tool_v1.4_Ubuntu.zip)
@@ -56,7 +56,7 @@ If you want to fully develop your own, you can refer to the schematic diagram an
 
 #### Bootloader Introduction
 
-In any MCU, after the power is connected, the system bootloader is in charge to bootstrap all the necessary to setup the Interrupt Vector table, initialize variables, and jump to the address of the main() symbol.
+In any MCU, after the power is connected, the system bootloader is in charge to bootstrap all the necessary to set up the Interrupt Vector table, initialize variables, and jump to the address of the main() symbol.
 
 In Figure 1, it shows a usual memory map for an ARM Cortex M0+ MCU, which is the architecture of the MCU of the RAK4270.
 
@@ -76,11 +76,11 @@ Finally, the serial port to communicate with the RAK’s bootloader in these mod
 
 #### Application Requirements
 
-Since the RAK’s bootloader is stored between the 0x0800 0000 and 0x0800 2FFF segment of the flash memory, your application should be shifted accordingly. In the application code, you need to modify the interrupt vector table address as the following:
+Since the RAK’s bootloader is stored between the 0x0800 0000 and 0x0800 2FFF segments of the flash memory, your application should be shifted accordingly. In the application code, you need to modify the interrupt vector table address as the following:
 
 `SCB->VTOR = FLASH_BASE | 0x3000`
 
-In linker, script must be updated accordingly. For example, in case you use GCC, modify your linker script as the following:
+In the linker, the script must be updated accordingly. For example, in case you use GCC, modify your linker script as follows:
 
 `FLASH (rx) : ORIGIN = 0x8003000, LENGTH = 116K`
 

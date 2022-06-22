@@ -47,13 +47,13 @@ Before going through the step in the installation guide of the RAK4600 WisDuo LP
 
 #### Definition of Terms
 
-##### List of acronyms
+##### List of Acronyms
 
 <table style="text-align: left">
 <tbody>
         <tr>
             <td>ABP</td>
-            <td>Activation By Personalization</td>
+            <td>Activation-By-Personalization</td>
         </tr>
         <tr>
             <td>BLE</td>
@@ -73,7 +73,7 @@ Before going through the step in the installation guide of the RAK4600 WisDuo LP
         </tr>
         <tr>
             <td>OTAA</td>
-            <td>Over The Air Activation</td>
+            <td>Over-The-Air-Activation</td>
         </tr>
         <tr>
             <td>TTN</td>
@@ -81,7 +81,7 @@ Before going through the step in the installation guide of the RAK4600 WisDuo LP
         </tr>
         <tr>
             <td>P2P</td>
-            <td>Peer to peer communication</td>
+            <td>Peer-to-peer communication</td>
         </tr>
         <tr>
             <td>SWD</td>
@@ -95,13 +95,13 @@ Before going through the step in the installation guide of the RAK4600 WisDuo LP
 
 ### Interfacing with RAK4600
 
-In this section, a RAK4600 module is used for demonstration. Use a USB to TTL adapter to connect to the module. In case the RAK4600 module is mounted on an evaluation board or on a custom PCB, use the appropriate interface to connect to the serial port.
+In this section, a RAK4600 module is used for demonstration. Use a USB to TTL adapter to connect to the module. In case the RAK4600 module is mounted on an evaluation board or a custom PCB, use the appropriate interface to connect to the serial port.
 
 :::warning ⚠️ WARNING
 Before powering the RAK4600 Module, you should install the LoRa and BLE Antenna first. Not doing so might damage the board.
 :::
 
- Use Figure 1 as reference to connect the antennas.
+ Use **Figure 1** as a reference to connect the antennas.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/RAK4600_Module_Antenna_Label.svg"
@@ -109,9 +109,9 @@ Before powering the RAK4600 Module, you should install the LoRa and BLE Antenna 
   caption="RAK4600 Module antenna connection "
 />
 
-1. Connect the RAK4600 to USB to TTL adapter, as shown in Figure 2.
+1. Connect the RAK4600 to USB to the TTL adapter, as shown in **Figure 2**.
 
-In general, the pin marked as TX of the adapter must be connected to the USART1_RX pin of the RAK4600, and the RX pin of the adapter connects to RAK4600 USART1_TX pin.
+In general, the pin marked as TX of the adapter must be connected to the USART1_RX pin of the RAK4600, and the RX pin of the adapter connects to the RAK4600 USART1_TX pin.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/usb-ttl.png"
@@ -123,7 +123,7 @@ In general, the pin marked as TX of the adapter must be connected to the USART1_
 
     * [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
 
-3.	Configure the serial communication tool by selecting the proper port of the computer UART port and configure the link as: **115200 baud, 8 bits, no parity bit, and 1 stop bit**.
+3.  Configure the serial communication tool by selecting the proper port of the computer UART port and configure the link as **115200 baud, 8 bits, no parity bit, and 1 stop bit**.
 
 * Choose the correct COM Port number for your device. Go to your Device Manager by pressing **Windows + R** and type `devmgmt.msc` or search in the Start Menu.
 
@@ -135,7 +135,7 @@ In general, the pin marked as TX of the adapter must be connected to the USART1_
 
 * Look for Ports (COM & LPT). Find the name of your USB UART Module driver and take note of the COM Port Number.
 
-4.	The RAK4600 console output can now be read in the RAK serial port tool as shown in Figure 4.
+4.  The RAK4600 console output can now be read in the RAK serial port tool, as shown in **Figure 4**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/rak-serial-port-connected.png"
@@ -147,11 +147,11 @@ In general, the pin marked as TX of the adapter must be connected to the USART1_
 
 #### Through UART
 
-To connect the RAK4600 module to a LoRa P2P connection or a LoRaWAN network, the module must be configured and LoRa parameters must be set by sending AT commands through the UART interface.
+To connect the RAK4600 module to a LoRa P2P connection or a LoRaWAN network, the module must be configured, and the LoRa parameters must be set by sending AT commands through the UART interface.
 
-Connect the RAK4600 module to the computer as described in the previous section. Using the serial communication tool, it is possible to send commands to the RAK4600, for example, sending the `at+version` will display the current firmware version as shown in Figure 5.
+Connect the RAK4600 module to the computer as described in the previous section. Using the serial communication tool, it is possible to send commands to the RAK4600. For example, sending the `at+version` will display the current firmware version, as shown in **Figure 5**.
 
-The full set of RAK4600 AT commands can be found in Appendix I.
+The full set of RAK4600 AT commands can be found in [Appendix I](/Product-Categories/WisDuo/RAK4600-Module/AT-Command-Manual/#appendix-i：data-rate-by-region).
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/at-version-response.png"
@@ -163,9 +163,9 @@ The full set of RAK4600 AT commands can be found in Appendix I.
 
 To configure the RAK4600 through BLE, execute the following steps. 
 
-1. Install the “**nRF Connect**” or “**nRF Master Control Panel (BLE)**” app provided by Nordic Semiconductor.
+1. Install the “**nRF Connect**” or the “**nRF Master Control Panel (BLE)**” app provided by Nordic Semiconductor.
 2. Open the app on the mobile device and scan for BLE devices.
-3. Reset the RAK4600 module. After a few seconds, a list of BLE devices will be shown. The RAK4600 is listed as “**RUI-XX: XX: XX**"
+3. Reset the RAK4600 module. After a few seconds, a list of BLE devices will be shown. The RAK4600 is listed as “**RUI-XX: XX: XX**".
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/nordic-scan.jpg"
@@ -177,7 +177,7 @@ To configure the RAK4600 through BLE, execute the following steps.
 Connect within 60 seconds after resetting the RAK4600. After that time, the BLE broadcast will be stopped.
 :::
 
-4.	After pressing the “**CONNECT**” button, a list will be displayed as shown in Figure 7. 
+4. After pressing the “**CONNECT**” button, a list will be displayed, as shown in **Figure 7**. 
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/ble-connect.jpg"
@@ -185,15 +185,15 @@ Connect within 60 seconds after resetting the RAK4600. After that time, the BLE 
   caption="Options to connect to the RAK4600"
 />
 
-5.	Select the service named “**Nordic UART Service**”.
-6.	To receive data from mobile, enable notification on TX Characteristic by clicking on the arrow.
+5. Select the service named “**Nordic UART Service**”.
+6. To receive data from mobile, enable notification on TX Characteristic by clicking on the arrow.
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/ble-enable.png"
   width="30%"
   caption="Enable notifications from mobile phone"
 />
 
-7.	Write a value on RX Characteristic by clicking on the arrow.
+7. Write a value on RX Characteristic by clicking on the arrow.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/ble-send-at-command.png"
@@ -201,7 +201,7 @@ Connect within 60 seconds after resetting the RAK4600. After that time, the BLE 
   caption="Send AT command"
 />
 
-7.	A small input window will pop-up. This is where AT commands shall be typed. 
+8. A small input window will pop up. This is where you will input the AT commands. 
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/ble-at-command-input.png"
@@ -209,9 +209,9 @@ Connect within 60 seconds after resetting the RAK4600. After that time, the BLE 
   caption="nRF app AT command input window"
 />
 
-8.	Send AT commands to RAK4600 in this dialog. 
+9. Send AT commands to RAK4600 in this dialog. 
 
-    * For example, to check the current firmware version, type “at+version” then click on “SEND” button.
+    * For example, to check the current firmware version, type “`at+version`” then click on the **“SEND”** button.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/ble-send-at-version.jpg"
@@ -237,16 +237,16 @@ This section will show how to connect the RAK4600 module to The Things Stack (TT
   caption="The Things Stack diagram"
 />
 
-As shown in Figure 13, The Things Stack is an open source LoRaWAN Network Server suitable for global, geo-distributed public and private deployments as well as for small, local networks. The architecture follows the LoRaWAN Network Reference Model for standards compliancy and interoperability. This project is actively maintained by [The Things Industries](https://www.thethingsindustries.com/).
+As shown in **Figure 13**, The Things Stack is an open-source LoRaWAN Network Server suitable for global, geo-distributed public and private deployments as well as for small, local networks. The architecture follows the LoRaWAN Network Reference Model for standards compliancy and interoperability. This project is actively maintained by [The Things Industries](https://www.thethingsindustries.com/).
 
-LoRaWAN is a protocol for low-power wide-area networks. It allows for large scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long range wireless connections.
+LoRaWAN is a protocol for low-power wide-area networks. It allows for large-scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long-range wireless connections.
 
 The RAK4600 module can be part of this ecosystem as a device, and the objective of this section is to demonstrate how simple it is to send data to The Things Stack using the LoRaWAN protocol. To achieve this, the RAK4600 module must be located inside the coverage of a LoRaWAN gateway connected to The Things Stack server. 
 
 
 #### Registration to TTN and Creating LoRaWAN Applications
 
-The first step is to go to [The Things Network platform](https://console.cloud.thethings.network/) and select a cluster as shown in Figure 14. The Things Industries adds more clusters from time to time so select the one closes to your location. In this guide, Europe 1 is selected.
+The first step is to go to [The Things Network platform](https://console.cloud.thethings.network/) and select a cluster, as shown in **Figure 14**. The Things Industries adds more clusters from time to time, so select the one closes to your location. In this guide, Europe 1 is selected.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/t_image_1.png"
@@ -256,7 +256,7 @@ The first step is to go to [The Things Network platform](https://console.cloud.t
 
 You can use the same login credentials on the TTN V2 if you have one. If you have no account yet, you need to create one.
 
-To register as a new user to TTN, click on **Login with The Things ID** then select **register** on the next page as shown in Figures 15 and 16.
+1. To register as a new user to TTN, click on **Login with The Things ID**, then select **register** on the next page, as shown in **Figure 15** and **Figure 16**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/t_image_2.png"
@@ -270,9 +270,9 @@ To register as a new user to TTN, click on **Login with The Things ID** then sel
   caption="Registration of new account"
 />
 
-You should now be on the step of creating your TTN account. Fill in all the necessary details and activate your account.
+2. You should now be on the step of creating your TTN account. Fill in all the necessary details and activate your account.
 
-After creating an account, you should login on the platform using your username/email and password then click **Submit** as shown in Figure 17.
+3. After creating an account, log in to the platform using your username/email and password, then click **Submit**, as shown in **Figure 17**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/t_image_4.png"
@@ -280,7 +280,7 @@ After creating an account, you should login on the platform using your username/
   caption="Logging in to TTN platform"
 />
 
-You need to click **Authorize** to proceed.
+4. Click **Authorize** to proceed.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/t_image_5.png"
@@ -288,7 +288,7 @@ You need to click **Authorize** to proceed.
   caption="Authorization to TTN"
 />
 
-Now that you are logged in to the platform, the next step is to create an application. Click **Create an application**.
+5. Now that you are logged in to the platform, the next step is to create an application. Click **Create an application**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/t_image_6.png"
@@ -296,7 +296,7 @@ Now that you are logged in to the platform, the next step is to create an applic
   caption="Creating TTN application for your LoRaWAN devices"
 />
 
-To have an application registered, you need to input first the specific details and necessary information about your application then click **Create application**.
+6. To have an application registered, input first the specific details and necessary information about your application, then click **Create application**.
  
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/t_image_7.png"
@@ -308,15 +308,15 @@ If you have no error on the previous step, you should now be on the application 
 
 :::tip 📝 NOTE:
 
-Once you have the application in The Things Stack (TTN V3), you need to ensure that you are in a coverage of a LoRaWAN gateway that is registered to The Things Stack (TTN V3) as well. Without the coverage of that LoRaWAN gateway, you cannot activate any device that you will register in your application. 
+Once you have the application in The Things Stack (TTN V3), you need to ensure that you are in coverage of a LoRaWAN gateway that is registered to The Things Stack (TTN V3) as well. Without the coverage of that LoRaWAN gateway, you cannot activate any device that you will register in your application. 
 
-RAKwireless has [LoRaWAN gateways](https://store.rakwireless.com/collections/wisgate) that you can connect to The Things Stack (TTN V3) if no LoRaWAN gateway coverage available in your location.
+RAKwireless has [LoRaWAN gateways](https://store.rakwireless.com/collections/wisgate) that you can connect to The Things Stack (TTN V3) if no LoRaWAN gateway coverage is available in your location.
 
 :::
 
 #### The Things Stack OTAA Device Registration
 
-You need to go to your application console to be able to register a device. To start adding an OTAA end device, you need to click **+ Add end device** as shown in Figure 21.
+1. Go to your application console to be able to register a device. To start adding an OTAA end device, click **+ Add end device**, as shown in **Figure 21**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/t_image_8.png"
@@ -324,7 +324,7 @@ You need to go to your application console to be able to register a device. To s
   caption="Add end device"
 />
 
-To register the module, you need to click first **Manually** then configure the activation method by selecting **Over the air activation (OTAA)** and compatible **LoRaWAN version** then click **Start** button as shown in Figures 22 and 23.
+2. To register the module, you need to click first **Manually** then configure the activation method by selecting **Over the air activation (OTAA)** and compatible **LoRaWAN version**, then click the **Start** button, as shown in **Figure 22** and **Figure 23**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/t_image_9.png"
@@ -338,11 +338,11 @@ To register the module, you need to click first **Manually** then configure the 
   caption="Device activation configuration"
 />
 
-Then you need to put a unique **End device ID** and EUIs (**DevEUI** and **AppEUI**) as shown in Figure 24. Check if your module has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI.
+3. Then, input a unique **End device ID** and EUIs (**DevEUI** and **AppEUI**), as shown in **Figure 24**. Check if your module has a DevEUI on sticker or QR that you can scan, then use this as the device unique DevEUI.
 
 Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
 
-After putting all the details, you need to click **Network layer settings** to proceed to the next step.
+4. After putting all the details, click **Network layer settings** to proceed to the next step.
 
 :::tip 📝 NOTE:
 
@@ -356,7 +356,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
   caption="OTAA Device Information"
 />
 
-Next step is to setup **Frequency plan**, compatible **Regional Parameter version**, and **LoRaWAN class** supported. Then you can click **Join settings**
+5. Next step is to set up **Frequency plan**, compatible **Regional Parameter version**, and **LoRaWAN class** supported. Then you can click **Join settings**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/t_image_12.png"
@@ -364,7 +364,7 @@ Next step is to setup **Frequency plan**, compatible **Regional Parameter versio
   caption="OTAA Configuration"
 />
 
-The last step in the registration of a new OTAA end-device is the configuration of the **AppKey**. To get the AppKey, you must click the **generate button**. Then you need to click **Add end device** to finish your new device registration.
+6. The last step in the registration of a new OTAA end-device is the configuration of the **AppKey**. To get the AppKey, you must click the **generate button**, then click **Add end device** to finish your new device registration.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/t_image_13.png"
@@ -372,15 +372,15 @@ The last step in the registration of a new OTAA end-device is the configuration 
   caption="OTAA AppKey generation and device registration"
 />
 
-You should now be able to see the device on The Things Stack console after you fully registered your device as shown in Figure 27.
+You should now be able to see the device on The Things Stack console after you fully registered your device, as shown in **Figure 27**.
 
 :::tip 📝 NOTE:
 
-The **AppEUI**, **DevEUI** and **AppKey** are the parameters that you will need to activate your LoRaWAN end device via OTAA. The **AppKey** is hidden by default for security reasons, but you can easily show it by clicking the show button. You can also copy the parameters quickly using the copy button.
+The **AppEUI**, **DevEUI**, and **AppKey** are the parameters you will need to activate your LoRaWAN end device via OTAA. The **AppKey** is hidden by default for security reasons, but you can easily show it by clicking the show button. You can also copy the parameters quickly using the copy button.
 
 The three OTAA parameters on The Things Stack device console are MSB by default. 
 
-These parameters are always accessible on the device console page as shown in Figure 27.
+These parameters are always accessible on the device console page, as shown in **Figure 27**.
 :::
 
 <rk-img
@@ -392,7 +392,7 @@ These parameters are always accessible on the device console page as shown in Fi
 
 #### RAK4600 OTAA Configuration for The Things Stack
 
-The RAK4600 module supports a series of AT commands to configure its internal parameters and control the functionalities of the module. To set up the RAK4600 module to join The Things Stack using OTAA, start by connecting the RAK4600 module to the Computer (see Figure 1) and open the RAK Serial Port Tool. Wait for the communication to start. It is recommended to test the serial communication and verify the current configuration by sending either of these two AT commands:
+The RAK4600 module supports a series of AT commands to configure its internal parameters and control the functionalities of the module. To set up the RAK4600 module to join The Things Stack using OTAA, start by connecting the RAK4600 module to the computer (see **Figure 1**) and open the RAK Serial Port Tool. Wait for the communication to start. It is recommended to test the serial communication and verify the current configuration by sending either of these two AT commands:
 
 ```
 at+set_config=device:restart
@@ -433,7 +433,7 @@ at+set_config=lora:class:0
 
 3. Set the frequency/region to EU868.
 
-* Refer in the [RAK4600 Datasheet](/Product-Categories/WisDuo/RAK4600-Module/Datasheet/#rf-characteristics) for the list of supported frequencies.
+* Refer to the [RAK4600 Datasheet](/Product-Categories/WisDuo/RAK4600-Module/Datasheet/#rf-characteristics) for the list of supported frequencies.
 
 
 ```
@@ -471,7 +471,7 @@ at+set_config=lora:app_key:04FA4E626EF5CF227C969601176275C2
 
 :::tip 📝 NOTE:
 
-After configuring all the parameters, you need to reset your RAK4600 Module for saving the parameters.
+After configuring all the parameters, you need to reset your RAK4600 Module to save the parameters.
 
 :::
 
@@ -481,7 +481,7 @@ After configuring all the parameters, you need to reset your RAK4600 Module for 
 at+join
 ```
 
-After 5 or 6 seconds, if the request is successfully received by a LoRa gateway, then you should see the messages shown in Figure 30.
+After 5 or 6 seconds, if the request is successfully received by a LoRa gateway, then you should see the messages shown in **Figure 30**.
 
 8. Try to send a message from the RAK4600 module.
 
@@ -495,7 +495,7 @@ at+send=lora:2:1234567890
   caption="OTAA Test Sample Data Sent via RAK Serial Port Tool"
 />
 
-You can see the data sent by the RAK4600 module on The Things Stack platform as shown in Figure 31.
+You can see the data sent by the RAK4600 module on The Things Stack platform, as shown in **Figure 31**.
 
 
 <rk-img
@@ -507,7 +507,7 @@ You can see the data sent by the RAK4600 module on The Things Stack platform as 
 
 #### The Things Stack ABP Device Registration
 
-To register an ABP device, you need to go to your application console and select the application where you want your device to be added. Then you need to click **+ Add end device** as shown in Figure 32.
+1. To register an ABP device, go to your application console and select the application where you want your device to be added, then click **+ Add end device**, as shown in **Figure 32**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/t_image_8.png"
@@ -515,7 +515,7 @@ To register an ABP device, you need to go to your application console and select
   caption="Add end device"
 />
 
-To register the module, you need to click first **Manually** then configure the activation method by selecting **Activation by personalization (ABP)**, compatible **LoRaWAN version** and click **Start** button as shown in Figures 33 and 34.
+2. To register the module, you need to click first **Manually** then configure the activation method by selecting **Activation by personalization (ABP)**, compatible **LoRaWAN version**, and click the **Start** button, as shown in **Figure 33** and **Figure 34**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/t_image_9.png"
@@ -529,15 +529,15 @@ To register the module, you need to click first **Manually** then configure the 
   caption="Manually register device to The Things Stack"
 />
 
-At this step, you need to put a unique **End device ID** and **DevEUI** as shown in Figure 35. Check if your module has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI.
+3. At this step, you need to put a unique **End device ID** and **DevEUI**, as shown in **Figure 35**. Check if your module has a DevEUI on sticker or QR that you can scan, then use this as the device unique DevEUI.
 
 Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
 
-After putting all the details, you need to click **Network layer settings** to proceed to the next step.
+4. After putting all the details, click **Network layer settings** to proceed to the next step.
 
 :::tip 📝 NOTE:
 
-It is advisable to use a meaningful End device ID, End device name, and End device description that will match your device purpose. The End device ID `rak-device-abp` is for illustration purpose only.
+It is advisable to use a meaningful End device ID, End device name, and End device description that will match your device purpose. The End device ID `rak-device-abp` is for illustration purposes only.
 
 :::
 
@@ -547,7 +547,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
   caption="Device Information"
 />
 
-Next step is to set up **Frequency plan**, compatible **Regional Parameter version** and **LoRaWAN class** supported. In an ABP device, you also need to generate **Device Address** and **NwkSKey** (Network Session Keys). Then you can click **Application layers settings**
+5. Next step is to set up **Frequency plan**, compatible **Regional Parameter version**, and **LoRaWAN class** supported. In an ABP device, you also need to generate **Device Address** and **NwkSKey** (Network Session Keys). Then, you can click **Application layers settings**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/image_3_abp.png"
@@ -555,7 +555,7 @@ Next step is to set up **Frequency plan**, compatible **Regional Parameter versi
   caption="ABP Configuration in The Things Stack"
 />
 
-The last step in the registration of a new ABP end-device is the configuration of the **AppSKey**. To get the AppSKey, you must click the **generate button**. Then you need to click **Add end device** to finish your new device registration.
+6. The last step in the registration of a new ABP end-device is the configuration of the **AppSKey**. To get the AppSKey, you must click the **generate button**, then click **Add end device** to finish your new device registration.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/image_4_abp.png"
@@ -563,7 +563,7 @@ The last step in the registration of a new ABP end-device is the configuration o
   caption="ABP Configuration in The Things Stack"
 />
 
-You should now be able to see the device on The Things Stack console after you fully registered your device as shown in Figure 38.
+You should now be able to see the device on The Things Stack console after you fully registered your device, as shown in **Figure 38**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/image_5_abp.png"
@@ -573,7 +573,7 @@ You should now be able to see the device on The Things Stack console after you f
 
 #### RAK4600 ABP Configuration for The Things Stack
 
-To set up the RAK4600 module to join The Things Stack using ABP, start by connecting the RAK4600 module to the Computer (see Figure 1) and open the RAK Serial Port  Tool. It is recommended to test the serial communication by sending either of these two AT commands:
+To set up the RAK4600 module to join The Things Stack using ABP, start by connecting the RAK4600 module to the computer (see **Figure 1**) and open the RAK Serial Port Tool. It is recommended to test the serial communication by sending either of these two AT commands:
 
 ```
 at+set_config=device:restart
@@ -613,7 +613,7 @@ at+set_config=lora:class:0
 
 3. Set the frequency/region to EU868.
 
-- Refer in the [RAK4600 Datasheet](/Product-Categories/WisDuo/RAK4600-Module/Datasheet/#rf-characteristics) for the list of supported frequencies.
+- Refer to the [RAK4600 Datasheet](/Product-Categories/WisDuo/RAK4600-Module/Datasheet/#rf-characteristics) for the list of supported frequencies.
 
 ```
 at+set_config=lora:region:EU868
@@ -643,11 +643,8 @@ at+set_config=lora:apps_key:A585653A949C2B2D44B55E99E94CB533
   caption="AT Command for ABP LoRa parameters via RAK Serial Port Tool"
 />
 
-:::tip 📝 NOTE:
 
-After configuring all the parameters, you need to reset RAK4600 Module for saving the parameters.
-
-:::
+After configuring all the parameters, you need to reset the RAK4600 Module to save the parameters.
 
 
 7. After resetting, join in ABP mode.
@@ -658,11 +655,11 @@ at+join
 
 :::tip 📝 NOTE:
 
-By using the ABP mode in LoRaWAN, it doesn’t require to join a network before sending a LoRaWAN package. But to keep the consistency of internal states of the firmware of the RAK4600 module, it is still required to send `at+join` command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
+By using the ABP mode in LoRaWAN, it doesn’t require to join a network before sending a LoRaWAN package. But to keep the consistency of internal states of the firmware of the RAK4600 module, it is still required to send the `at+join` command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
 
 :::
 
-8. Try to send a data from the RAK4600 to The Things Network in ABP mode.
+8. Try to send data from the RAK4600 to The Things Network in ABP mode.
 
 ```
 at+send=lora:2:1234567890 
@@ -686,7 +683,7 @@ You can see the data sent by the RAK4600 module on The Things Stack device conso
 
 This section shows how to connect the RAK4600 to the ChirpStack platform. As described in the ChirpStack website:
 
-“The ChirpStack open-source LoRaWAN Network Server stack provides open-source components for LoRaWAN networks. Together they form a ready-to-use solution including a user-friendly web-interface for device management and APIs for integration. The modular architecture makes it possible to integrate within existing infrastructures. All components are licensed under the MIT license and can be used for commercial purposes.”
+“The ChirpStack open-source LoRaWAN Network Server stack provides open-source components for LoRaWAN networks. Together they form a ready-to-use solution including a user-friendly web interface for device management and APIs for integration. The modular architecture makes it possible to integrate within existing infrastructures. All components are licensed under the MIT license and can be used for commercial purposes.”
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/chirpstack-architecture.png"
@@ -694,30 +691,30 @@ This section shows how to connect the RAK4600 to the ChirpStack platform. As des
   caption="RAK4600 in the context of the ChirpStack platform"
 />
 
-The architecture of the ChirpStack platform is shown in Figure 43. Similar to the case of TTN, the RAK4600 is located in the periphery and will transmit the data to the backend servers through a LoRa gateway. More information about this architecture can be found at [https://www.chirpstack.io/](https://www.chirpstack.io/).
+The architecture of the ChirpStack platform is shown in **Figure 43**. Similar to the case of TTN, the RAK4600 is located in the periphery and will transmit the data to the backend servers through a LoRa gateway. More information about this architecture can be found at [https://www.chirpstack.io/](https://www.chirpstack.io/).
 
-* In this section, it is assumed that you are using a RAK LoRa gateway, such as RAK7243. The gateway must be configured and registered previously to ChirpStack deployment. More information about that can be found at: [Connect the Gateway with Chirpstack](/Product-Categories/WisGate/RAK7243/Quickstart/#connect-the-gateway-with-chirpstack)
+* In this section, it is assumed that you are using a RAK LoRa gateway, such as RAK7243. The gateway must be configured and registered previously to ChirpStack deployment. More information can be found in the [Connect the Gateway with Chirpstack](/Product-Categories/WisGate/RAK7243/Quickstart/#connect-the-gateway-with-chirpstack) section.
 
 :::tip 📝 NOTE:
 The frequency band used in this example is EU868 which is supported by the high-frequency version of RAK4600.
 :::
 
-* This are the steps needed in order to send data to the ChirpStack platform from a RAK4600 module: 
+* These are the steps needed to send data to the ChirpStack platform from a RAK4600 module: 
 
-  1. Create a new Application.
-  2. Register a new device on the platform: 
+  1. Create a new Application
+  2. Register a new device on the platform
   3. Configure the Join Mode:
-      *	OTAA mode on the platform
-      *	OTAA mode on the RAK4600
-      *	ABP mode on the platform
-      *	ABP mode on the RAK4600 
+      * OTAA mode on the platform
+      * OTAA mode on the RAK4600
+      * ABP mode on the platform
+      * ABP mode on the RAK4600 
   4. Send data from the RAK4600 and receive it at the platform
 
 The following section gives the details of each of these aforementioned steps. As usual, you must choose to use either ABP or OTAA mode to register the device to the network server.
 
 #### Create a new Application
 
-Go to the Application section then click on “**+ CREATE**” button.
+1. Go to the Application section, then click on the “**+ CREATE**” button.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/chirpstack-applications.png"
@@ -726,7 +723,7 @@ Go to the Application section then click on “**+ CREATE**” button.
 />
 
 
-ChirpStack LoraServer supports multiple system configurations, with only one by default. By default, a new Application should be created, although it is possible to reuse the existing ones. For this setup, create a new Application by clicking on the "**CREATE APPLICATION**" button.
+2. ChirpStack LoraServer supports multiple system configurations, with only one by default. By default, a new Application should be created, although it is possible to reuse the existing ones. For this setup, create a new Application by clicking on the "**CREATE APPLICATION**" button.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/chirpstack-create-new-app.png"
@@ -734,7 +731,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   caption="Creating a new Application on the RAK’s ChirpStack LoRaServer"
 />
 
-Create an Application named “**rak_node_test**”. Fill the required parameters as shown in Figure 46. To finish, click on **CREATE APPLICATION** button. 
+3. Create an Application named “**rak_node_test**”. Fill in the required parameters, as shown in **Figure 46**. To finish, click on the **CREATE APPLICATION** button. 
 
 * **Application Name**: rak_node_test
 * **Application Description**: test 
@@ -751,7 +748,7 @@ The **Application Description** field is just a descriptive text.
 
 <b>Register a new Device</b>
 
-1. Click on the Application “**rak_node_test**” created in the previous step.
+4. Click on the Application “**rak_node_test**” created in the previous step.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/chirpstack-list-app.png"
@@ -759,7 +756,7 @@ The **Application Description** field is just a descriptive text.
   caption="List of applications created on the RAK’s ChirpStack LoRaServer"
 />
 
-2. Select the “**DEVICES**” tab as shown in Figure 48.
+5. Select the “**DEVICES**” tab, as shown in **Figure 48**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/chirpstack-device-tab.png"
@@ -767,7 +764,7 @@ The **Application Description** field is just a descriptive text.
   caption="Device tab of an Application on the RAK’s ChirpStack LoRaServer"
 />
 
-3. Inside of the “DEVICES” tab, create a new device (LoRa node) by clicking on the “**+ CREATE**” button. 
+6. Inside of the “DEVICES” tab, create a new device (LoRa node) by clicking on the “**+ CREATE**” button. 
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/chirpstack-add-device.png"
@@ -781,11 +778,11 @@ The **Application Description** field is just a descriptive text.
   caption="New device registration form on the RAK’s ChirpStack LoRaServer"
 />
 
-Fill the parameters requested as appears in Figure 50:
+7. Fill the parameters requested as appears in **Figure 50**.
 
-*	**Device name** and **Device description**: These are just descriptive texts. 
-*	**Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in Figure 51. You can also add a specific Device EUI directly in the form. 
-*	**Device-profile**: To join in OTAA mode, select “**device_profile_otaa**” or “**device_profile_abp**” to join in ABP mode. 
+* **Device name** and **Device description**: These are just descriptive texts. 
+* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in Figure 51. You can also add a specific Device EUI directly in the form. 
+* **Device-profile**: To join in OTAA mode, select “**device_profile_otaa**” or “**device_profile_abp**” to join in ABP mode. 
 
 :::tip 📝 NOTE:
 ChirpStack doesn’t support AS923 in ABP mode.
@@ -799,11 +796,11 @@ ChirpStack doesn’t support AS923 in ABP mode.
 
 #### LoRaWAN Join Mode
 
-The LoRaWAN specification defines that to join in a LoRaWAN network, each end-device has to be personalized and activated. Activation can be done either via Over-The-Air-Activation (OTAA) or via Activation-By-Personalization (ABP). In OTAA the end-device previously personalized is activated when is deployed or reset. In ABP, personalization and activation are done as a single step.
+The LoRaWAN specification defines that to join in a LoRaWAN network, each end-device has to be personalized and activated. Activation can be done either via Over-The-Air-Activation (OTAA) or via Activation-By-Personalization (ABP). In OTAA, the end-device previously personalized is activated when deployed or reset. In ABP, personalization and activation are done as a single step.
 
 ##### OTAA Mode
 
-###### Configure the OTAA mode on the platform
+###### Configure the OTAA Mode on the Platform
 
 1. If you have selected “**device_profile_otaa**”, then after the device is created, an Application Key must be also created for this device. 
 
@@ -813,7 +810,7 @@ The LoRaWAN specification defines that to join in a LoRaWAN network, each end-de
   caption="Choosing OTAA mode in the device registration form"
 />
 
-2. A previously created Application Key can be entered here or a new one can be generated automatically by clicking on the icon highlighted in red :
+2. A previously created Application Key can be entered here, or a new one can be generated automatically by clicking on the icon highlighted in red.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/chirpstack-otaa-appkey.png"
@@ -821,9 +818,9 @@ The LoRaWAN specification defines that to join in a LoRaWAN network, each end-de
   caption="Application Key for the OTAA mode in the device registration form"
 />
 
-3. Once the Application Key is added in the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button. 
+3. Once the Application Key is added to the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button. 
 
-* As shown in Figure 54, a new device should be listed in the  “**DEVICES**” tab. The most important parameters, such as the **Device EUI** are shown in the summary. 
+* As shown in **Figure 54**, a new device should be listed in the  “**DEVICES**” tab. The most important parameters, such as the **Device EUI** are shown in the summary. 
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/chirpstack-deveui.png"
@@ -840,14 +837,14 @@ The LoRaWAN specification defines that to join in a LoRaWAN network, each end-de
 />
 
 :::tip 📝 NOTE:
-Standard OTAA mode requires the Device EUI, Application Key, and the Application EUI, but in the ChirpStack’s implementation, only Device EUI and the Application Key are mandatory. The Application EUI is not required and is not recorded in the Application tab. Nevertheless, the Application EUI is a mandatory parameter in the RAK4600 module firmware. To resolve this mismatch, you can reuse the Device EUI as the Application EUI during the configuration in the side of the node. 
+Standard OTAA mode requires the Device EUI, Application Key, and the Application EUI, but in the ChirpStack’s implementation, only Device EUI and the Application Key are mandatory. The Application EUI is not required and is not recorded in the Application tab. Nevertheless, the Application EUI is a mandatory parameter in the RAK4600 module firmware. To resolve this mismatch, you can reuse the Device EUI as the Application EUI during the configuration on the side of the node. 
 :::
 
 ###### Configure the OTAA mode on the RAK4600
 
 RAK4600 complies with the LoRaWAN 1.0.2 specification. By default, the LoRa join mode is **OTAA** and the LoRa Class is **Class A**.
 
-To set up the RAK4600 to join ChirpStack using OTAA, start by connecting the RAK4600 to the Computer as shown in section [Interfacing with RAK4600](#interfacing-with-rak4600). Open the RAK Serial Port Tool, wait for the communication to start. It is recommended to test the serial communication by sending an AT command as:
+To set up the RAK4600 to join ChirpStack using OTAA, start by connecting the RAK4600 to the computer as shown in section [Interfacing with RAK4600](#interfacing-with-rak4600). Open the RAK Serial Port Tool and wait for the communication to start. It is recommended to test the serial communication by sending an AT command as:
 
 ```
 at+get_config=lora:status
@@ -864,62 +861,60 @@ at+version
 
 As an example, the following parameters will be configured in RAK4600:
 
-*	**LoRa join mode**: OTAA
-*	**LoRa class**: Class A
-*	**LoRa region**: EU868 
-*	**Device EUI**: d045f054b2797f7c (from ChirpStack registration)
-*	**Application EUI**: d045f054b2797f7c (from ChirpStack registration)
-*	**Application Key**: 2cb29aefe344c0d7b044e7a7d3afda6d (from ChirpStack registration)
+* **LoRa join mode**: OTAA
+* **LoRa class**: Class A
+* **LoRa region**: EU868 
+* **Device EUI**: d045f054b2797f7c (from ChirpStack registration)
+* **Application EUI**: d045f054b2797f7c (from ChirpStack registration)
+* **Application Key**: 2cb29aefe344c0d7b044e7a7d3afda6d (from ChirpStack registration)
 
 1. Set the LoRa join mode to OTAA.
-
-Type the command:
 
 ```
 at+set_config=lora:join_mode:0
 ```
 
-2.	Set the LoRa Class to Class A.
-
-Type the command:
+2.  Set the LoRa Class to Class A.
 
 ```
 at+set_config=lora:class:0
 ```
-3.	Set the frequency/region.
+3.  Set the frequency/region.
 
-The supported frequencies are listed in the [Datasheet](/Product-Categories/WisDuo/RAK4600-Module/Datasheet/#rf-characteristics). For Europe region, type the command: 
+- Refer to the [RAK4600 Datasheet](/Product-Categories/WisDuo/RAK4600-Module/Datasheet/#rf-characteristics) for the list of supported frequencies.
+
+For the Europe region, type the command: 
 
 ```
 at+set_config=lora:region:EU868
 ```
 
 :::tip 📝 NOTE:
-Remember that the device frequency shall be in the same frequency band than the Gateway.
+Remember that the device frequency shall be in the same frequency band as the gateway.
 :::
 
-4.	Set the Device EUI.
+4.  Set the Device EUI.
 
- Get the Device EUI number from ChirpStack register. Type the command:
+Get the Device EUI number from the ChirpStack register. 
 
 ```
 at+set_config=lora:dev_eui:d045f054b2797f7c
 ```
 
-5.	Set the Application EUI.
+5.  Set the Application EUI.
 
-Get the Application EUI number from the ChirpStack register. Type the command:
+Get the Application EUI number from the ChirpStack register. 
 
 ```
 at+set_config=lora:app_eui:d045f054b2797f7c
 ```
 :::tip 📝 NOTE:
-Remember, the Application EUI parameter was not required in the ChirpStack platform, therefore it possible to use the same id as the Device EUI. Otherwise, the firmware will complain. 
+Remember, the Application EUI parameter is not required in the ChirpStack platform; therefore, it is possible to use the same id as the Device EUI. Otherwise, the firmware will complain. 
 ::: 
 
-6.	Set the Application Key.
+6.  Set the Application Key.
 
-Get the Application Key from the TTN register. Type the command:
+Get the Application Key from the TTN register. 
 
 ```
 at+set_config=lora:app_key:2cb29aefe344c0d7b044e7a7d3afda6d
@@ -929,7 +924,7 @@ at+set_config=lora:app_key:2cb29aefe344c0d7b044e7a7d3afda6d
 
 Reset the RAK4600 to save the parameters. 
 
-Figure 57 summarizes the set of commands sent over the console for setting the OTAA mode on the RAK4600
+**Figure 57** summarizes the set of commands sent over the console for setting the OTAA mode on the RAK4600
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/chirpstack-otaa-param-config.png"
@@ -939,13 +934,12 @@ Figure 57 summarizes the set of commands sent over the console for setting the O
 
 8. Command the RAK4600 to join in OTAA mode
 
-Type the command:
 
 ```
 at+join
 ```
 
-* After 5 or 6 seconds, if the request was successfully received by a LoRa gateway, then “**OK Join Success**” message will be shown. 
+* After 5 or 6 seconds, if the request is successfully received by a LoRa gateway, then the “**OK Join Success**” message will be shown. 
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/chirpstack-otaa-success.png"
@@ -961,7 +955,7 @@ at+join
   caption="ChirpStack Console, checking LoRaWAN join request"
 />
 
-9.	Send data from RAK4600 to ChirpStack 
+9.  Send data from RAK4600 to ChirpStack 
 
 For example, to send the string 1234567890 over LoRa port 2, type the command:
  
@@ -976,10 +970,10 @@ at+send=lora:2:1234567890
   caption="RAK Serial Port Tool, send a LoRaWAN message"
 />
 
-On the ChirpStack platform, the messages shall appear in the “**LORAWAN FRAMES**” tab as shown in Figure 61.<br>
+On the ChirpStack platform, the messages shall appear in the “**LORAWAN FRAMES**” tab, as shown in **Figure 61**.
 
 :::tip 📝 NOTE:
-By convention, messages sent from nodes to gateway are considered as **UPLINK** while message send by gateway to nodes are considered as a **DOWNLINK**. 
+By convention, messages sent from nodes to the gateway are considered as **UPLINK**, while messages sent by the gateway to nodes are considered as a **DOWNLINK**. 
 :::
 
 <rk-img
@@ -990,19 +984,19 @@ By convention, messages sent from nodes to gateway are considered as **UPLINK** 
 
 ##### ABP Mode
 
-###### Configure the ABP mode on the platform
+###### Configure the ABP Mode on the Platform
 
 During the registration of a new device, if “**device_profile_abp**” is selected, then the ChirpStack platform will assume that this device will join the LoRaWAN network using the ABP mode. 
 
-Fill the parameters requested as appears in Figure 62:
+1. Fill in the parameters requested, as appears in **Figure 62**:
 
 * **Device name** and **Device description**: These are just descriptive texts.
 * **Device EUI**: You can also add a specific Device EUI directly in the form. 
 
-Once these parameters are filled, click on “**CREATE DEVICE**” button. 
+2. Once these parameters are filled, click on the “**CREATE DEVICE**” button. 
 
 :::tip 📝 NOTE:
-Check Disable counting frame verification to prevent the node-side counting frame counting from starting from zero after the node is powered on during the test, and the server cannot synchronize the node-side counting, causing the transmission to fail.
+Check **Disable counting frame verification** to prevent the node-side frame counting from starting from zero after the node is powered on during the test. The server cannot synchronize the node-side counting, causing the transmission to fail.
 :::
 
 <rk-img
@@ -1011,11 +1005,11 @@ Check Disable counting frame verification to prevent the node-side counting fram
   caption="ChirpStack Console, configuring a device in ABP mode"
 />
 
-After selecting the ABP mode, the following parameters appear in the **ACTIVATION** tab below: 
+3. After selecting the ABP mode, the following parameters appear in the **ACTIVATION** tab below: 
 
-*	**Device address**
-*	**Network Session Key**
-*	**Application Session Key**
+* **Device address**
+* **Network Session Key**
+* **Application Session Key**
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/chirpstack-abp-param.png"
@@ -1030,7 +1024,7 @@ After selecting the ABP mode, the following parameters appear in the **ACTIVATIO
 
 RAK4600 complies with the LoRaWAN 1.0.2 specification. The RAK4600 LoRa join mode is **OTAA** by default and the LoRa Class is **Class A**.
 
-To set up the RAK4600 module to join ChirpStack using ABP start by connecting the RAK4600 to the Computer as shown in section [Interfacing with RAK4600](#interfacing-with-rak4600). Open the RAK Serial Port Tool, wait for the communication to start. It is recommended to test the serial communication by sending an AT command as:
+To set up the RAK4600 module to join ChirpStack using ABP, start by connecting the RAK4600 to the computer as shown in section [Interfacing with RAK4600](#interfacing-with-rak4600). Open the RAK Serial Port Tool, wait for the communication to start. It is recommended to test the serial communication by sending an AT command as:
 
 ```
 at+get_config=lora:status
@@ -1049,68 +1043,67 @@ at+version
 
 As an example, the following parameters will be configured in RAK4600:
 
-*	**LoRa join mode**: ABP
-*	**LoRa class**: Class A
-*	**LoRa region**: EU868 
-*	**Device address**: 26011af9 (from ChirpStack registration)
-*	**Network Session Key**: c280cb8d1df688bc18601a97025c5488 (from ChirpStack registration)
-*	**Application Session Key**: 4d42ec5caf97f03d833cdaf5003f69e1 (from ChirpStack registration)
+* **LoRa join mode**: ABP
+* **LoRa class**: Class A
+* **LoRa region**: EU868 
+* **Device address**: 26011af9 (from ChirpStack registration)
+* **Network Session Key**: c280cb8d1df688bc18601a97025c5488 (from ChirpStack registration)
+* **Application Session Key**: 4d42ec5caf97f03d833cdaf5003f69e1 (from ChirpStack registration)
 
 1. Set the LoRa join mode to ABP.
 
-Type the command:
 
 ```
 at+set_config=lora:join_mode:1
 ```
 
-2.	Set the LoRa Class to Class A.
+2. Set the LoRa Class to Class A.
 
-Type the command:
 
 ```
 at+set_config=lora:class:0
 ```
 
-3.	Set the frequency/region.
+3. Set the frequency/region.
 
-The supported frequencies are listed in the [Datasheet](/Product-Categories/WisDuo/RAK4600-Module/Datasheet/#rf-characteristics). For Europe region, type the command: 
+- Refer to the [RAK4600 Datasheet](/Product-Categories/WisDuo/RAK4600-Module/Datasheet/#rf-characteristics) for the list of supported frequencies.
+
+For the Europe region, type the command: 
 
 ```
 at+set_config=lora:region:EU868
 ```
 
-4.	Set the Device Address.
+4. Set the Device Address.
 
-Get the Device Address from ChirpStack registration. For example, to set the LoRa Device Address to “**26011af9**”, type the command:
+Get the Device Address from ChirpStack registration.
+
 
 ```
 at+set_config=lora:dev_addr:26011af9
 ```
 
-5.	Set the Network Session Key.
+5. Set the Network Session Key.
 
 Get the Network Session Key from the ChirpStack registration. 
-For example, to set the LoRa Network Session Key to “**c280cb8d1df688bc18601a97025c5488**”, type the command:
 
 ```
 at+set_config=lora:nwks_key:c280cb8d1df688bc18601a97025c5488
 ```
 
-6.	Set the Application Key.
+6. Set the Application Key.
 
-Get the Network Session Key from the ChirpStack registration.
-For example, to set the LoRa Network Session Key to “**4d42ec5caf97f03d833cdaf5003f69e1**”, type the command:
+Get the Application Key from the ChirpStack registration.
 
 ```
 at+set_config=lora:apps_key: 4d42ec5caf97f03d833cdaf5003f69e1
 ```
 
-7.	Save RAK4600 parameters.
+7. Save RAK4600 parameters.
 
 Reset the RAK4600 to save the parameters. 
 
-Figure 55 summarizes the set of commands sent over the console for setting the ABP mode on the RAK4600.
+**Figure 55** summarizes the set of commands sent over the console for setting the ABP mode on the RAK4600.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/chirpstack-abp-param-serial.png"
@@ -1118,15 +1111,14 @@ Figure 55 summarizes the set of commands sent over the console for setting the A
   caption="RAK4600 LoRa parameters configuration over the Serial Port Tool"
 />
 
-8.	Command the RAK4600 to join in ABP mode.
+8.  Command the RAK4600 to join in ABP mode.
 
-Type the command:
 
 ```
 at+join
 ```
 
-Almost immediately after sending the command, the “**OK Join Success**” should be replied in the console as shown in Figure 66.
+Almost immediately after sending the command, the “**OK Join Success**” should be replied to in the console, as shown in **Figure 66**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/abp-join.png"
@@ -1135,7 +1127,7 @@ Almost immediately after sending the command, the “**OK Join Success**” shou
 />
 
 :::tip 📝 NOTE:
-The ABP mode in LoRaWAN doesn’t require to join a network before sending a LoRaWAN package. But, in order to keep the consistency of internal states of the firmware of the RAK4600, it is still required to send at+join command in the ABP mode.
+The ABP mode in LoRaWAN doesn’t require to join a network before sending a LoRaWAN package. But, to keep the consistency of internal states of the firmware of the RAK4600, it is still required to send the `at+join` command in the ABP mode.
 :::
 
 9. Send data from RAK4600 to ChirpStack.
@@ -1145,14 +1137,16 @@ For example, to send the string 1234567890 over LoRa port 2, type the command:
 ```
 at+send=lora:2:1234567890
 ```
+
 The console will feedback with an “OK” message.
+
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/abp-send-reply.png"
   width="45%"
   caption="RAK Serial Port Tool ABP message sent "
 />
 
-The sent data shall be displayed on the ChirpStack console on **LORAWAN FRAMES** tab.
+The sent data shall be displayed on the ChirpStack console on the **LORAWAN FRAMES** tab.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/chirpstack-console-abp-uplink.png"
@@ -1166,9 +1160,9 @@ This section will show how to set and link two RAK4600 units to work in LoRa P2P
 
 1. The two RAK4600 units shall be set to operate at the same frequency, for this demonstration: **EU868**.
 
-2. As shown in the previous sections, the setup of the RAK4600 units is done by connecting them with a general-purpose computer through the UART port as shown in section [Interfacing with RAK4600](#interfacing-with-rak4600). The setup of each RAK4600 can be done separately, but testing the LoRa P2P mode will require having both units connected simultaneously to a UART port (This could be one computer with 2 ports or 2 computers with one UART port each).
+2. As shown in the previous sections, the setup of the RAK4600 units is done by connecting them with a general-purpose computer through the UART port, as shown in section [Interfacing with RAK4600](#interfacing-with-rak4600). The setup of each RAK4600 can be done separately, but testing the LoRa P2P mode will require having both units connected simultaneously to a UART port (This could be one computer with two (2) ports or two (2) computers with one UART port each).
 
-3. To set the RAK4600 to work in LoRa P2P mode, open the RAK Serial port tool and send the command as in Figure 69:
+3. To set the RAK4600 to work in LoRa P2P mode, open the RAK Serial port tool and send the command, as shown in **Figure 69**.
 
 ```
 at+set_config=lora:work_mode:1
@@ -1179,7 +1173,7 @@ at+set_config=lora:work_mode:1
   caption="RAK4600 setting to LoRa P2P mode"
 />
 
-4. Configure the LoRa P2P parameters for both units. The command for setting the parameters has the format.
+4. Configure the LoRa P2P parameters for both units. The command for setting the parameters has the following format:
 
 ```
 at+set_config=lorap2p:XXX:Y:Z:A:B:C
@@ -1187,22 +1181,22 @@ at+set_config=lorap2p:XXX:Y:Z:A:B:C
 
 * Based on the [AT Commands for RAK4600](/Product-Categories/WisDuo/RAK4600-Module/LoRaWAN-P2P/AT-Command-Manual/), the parameters are:
 
-  *	**XXX**: Frequency in Hz.
-  *	**Y**: Spreading factor, [6, 7, 8, 9, 10, 11, 12].
-  *	**Z**: Bandwidth, [0:125&nbsp;kHz, 1:250&nbsp;kHz, 2:500&nbsp;kHz]
-  *	**A**: Coding Rate, [1: 4/5, 2: 4/6, 3: 4/7, 4: 4/8]
-  *	**B**: Preamble Length, 5~65535.
-  *	**C**: Power in dBm, 5~20.
+  * **XXX**: Frequency in Hz.
+  * **Y**: Spreading factor, [6, 7, 8, 9, 10, 11, 12].
+  * **Z**: Bandwidth, [0:125&nbsp;kHz, 1:250&nbsp;kHz, 2:500&nbsp;kHz]
+  * **A**: Coding Rate, [1: 4/5, 2: 4/6, 3: 4/7, 4: 4/8]
+  * **B**: Preamble Length, 5~65535.
+  * **C**: Power in dBm, 5~20.
 
 For this example, the LoRa parameters are:
-*	**Link frequency**: 869525000&nbsp;Hz
-*	**Spreading factor**:7
-*	**Bandwidth**: 125&nbsp;kHz
-*	**Coding Rate**:4/5
-*	**Preamble Length**: 5
-*	**Power**: 5&nbsp;dBm
+* **Link frequency**: 869525000&nbsp;Hz
+* **Spreading factor**:7
+* **Bandwidth**: 125&nbsp;kHz
+* **Coding Rate**:4/5
+* **Preamble Length**: 5
+* **Power**: 5&nbsp;dBm
 
-5. The set parameters are translated into the following RAK4600 AT command that is sent to both units as shown in Figure 70:
+5. The set parameters are translated into the following RAK4600 AT command that is sent to both units, as shown in **Figure 70**.
 
 ```
 at+set_config=lorap2p:869525000:7:0:1:5:5
@@ -1215,11 +1209,11 @@ at+set_config=lorap2p:869525000:7:0:1:5:5
 />
 
 6. Next, set the transmission mode of the RAK4600. In this example, Unit 1 is set to sender mode, and Unit 2 is set to receiver mode by AT command.
-  * **Unit 1** (Sender):		
+  * **Unit 1** (Sender):    
 ```
 at+set_config=lorap2p:transfer_mode:2
 ```
-  * **Unit 2** (Receiver):	
+  * **Unit 2** (Receiver):  
 ```
 at+set_config=lorap2p:transfer_mode:1
 ```
@@ -1235,6 +1229,7 @@ at+set_config=lorap2p:transfer_mode:1
 ```
 at+send=lorap2p:1234567890
 ```
+
 * The message will be automatically received by Unit 2.
 
 <rk-img
@@ -1245,17 +1240,17 @@ at+send=lorap2p:1234567890
 
 ### Bluetooth Interface
 
-Starting with the firmware version V3.0.0.6, there are three BLE modes in RAK4600 module: **Peripheral mode**, **Central mode**, and **Beacon scan mode**. 
+Starting with the firmware version V3.0.0.6, there are three BLE modes in the RAK4600 module: **Peripheral mode**, **Central mode**, and **Beacon scan mode**. 
 
 1. **Peripheral mode**: In this mode, you can scan RAK4600 BLE and connect with it using your normal mobile devices.
-2. **Central mode**: The RAK4600 BLE will not broadcast so that your normal mobile devices will not able to scan it. But it is useful for IoT use case, for example, you can connect some BLE sensor node to the RAK4600. By setting the RAK4600 in the central mode, the RAK4600 acts as a BLE gateway. In the central mode, "Nordic UART Service" is supported.
+2. **Central mode**: The RAK4600 BLE will not broadcast so that your normal mobile devices will not be able to scan it, but it is useful for IoT use case. For example, you can connect some BLE sensor nodes to the RAK4600. By setting the RAK4600 in the central mode, the RAK4600 acts as a BLE gateway. In the central mode, "Nordic UART Service" is supported.
 3. **Beacon scan mode**: The RAK4600 will scan the surrounding BLE signal. This mode is useful to scan for beacons like iBeacon near you.
 
 :::tip 📝 NOTE:
-For the central and beacon scan patterns, you need to use the API development of RUI to play its role. Refer to the following link for BLE related API interfaces: [RUI API Reference](/RUI/)
+For the central and beacon scan patterns, you need to use the API development of RUI to play its role. For BLE related API interfaces, refer to [RUI API Reference](/RUI/). 
 :::
 
-By default, RAK4600 BLE will work in the peripheral mode so that you can configure it over BLE including DFU easily. Note that every time after resetting, you have only 60 seconds to connect your mobile device with RAK4600 over BLE. If you don’t connect with RAK4600 in 60 seconds after resetting it, the RAK4600 BLE radio will not broadcast to reduce power consumption. There is no limitation once your mobile device has connected with RAK4600 over BLE in 60 seconds.
+By default, RAK4600 BLE will work in the peripheral mode so that you can configure it over BLE, including DFU. Every time after resetting, you have only 60 seconds to connect your mobile device with RAK4600 over BLE. If you don’t connect with RAK4600 in 60 seconds after resetting it, the RAK4600 BLE radio will not broadcast to reduce power consumption. There is no limitation once your mobile device has connected with RAK4600 over BLE in 60 seconds.
 
 Surely, you can set RAK4600 BLE to work in the central mode. After a RAK4600 module reset, there will be 30 seconds that RAK4600 BLE radio works in the peripheral mode. In peripheral mode, you can connect to RAK4600 through BLE using your mobile device and configure RAK4600 over BLE. But if you don’t connect with RAK4600 through BLE in 30 seconds, the RAK4600 BLE radio will change to central mode automatically. In central mode, RAK4600 can not be scanned by your mobile devices until you change the work mode to the peripheral or reset RAK4600 again.
 
@@ -1264,7 +1259,7 @@ Surely, you can set RAK4600 BLE to work in the central mode. After a RAK4600 mod
 
 ### Upgrading the Firmware
 
-Before to start working with the RAK4600, it is recommended to keep the RAK4600 updated to the latest version of the firmware. The latest firmware can be found in the software section of the [RAK4600 Module Datasheet](../../../../../Product-Categories/WisDuo/RAK4600-Module/Datasheet/#firmware).
+Before you start working with the RAK4600, it is recommended to keep the RAK4600 updated to the latest version of the firmware. The latest firmware can be found in the software section of the [RAK4600 Module Datasheet](../../../../../Product-Categories/WisDuo/RAK4600-Module/Datasheet/#firmware).
 
 In the following sections, two (2) options for flashing new firmware in a RAK4600 are shown: **Upgrade through DAPLink** and **Upgrade through BLE**.
 
@@ -1382,15 +1377,15 @@ The table shows the minimum hardware and software required to perform the firmwa
 
 ##### Upgrade Procedure
 
-Follow this procedure in order to upgrade the firmware in Device Firmware Upgrade (DFU) mode through the Bluetooth Low Energy (BLE) interface.
+Follow this procedure to upgrade the firmware in Device Firmware Upgrade (DFU) mode through the Bluetooth Low Energy (BLE) interface.
 
-1.	Download the latest DFU package of the RAK4600 from here: [https://downloads.rakwireless.com/LoRa/RAK4600/Firmware/DFU-Package/](https://downloads.rakwireless.com/LoRa/RAK4600/Firmware/)
+1.  Download the latest DFU package of the [RAK4600)]https://downloads.rakwireless.com/LoRa/RAK4600/Firmware/).
 
-2.	Install the mobile app named “**nRF Connect**” or “**nRF Master Control Panel (BLE)**” which are developed by the Nordic Semiconductor company. 
+2.  Install the mobile app named “**nRF Connect**” or “**nRF Master Control Panel (BLE)**", which are developed by the Nordic Semiconductor company. 
 
-3.	Open the Nordic mobile app and scan for BLE signal. 
+3.  Open the Nordic mobile app and scan for the BLE signal. 
 
-4.	After resetting the RAK4600, its BLE interface should broadcast a device name with format “**RUI_XX:XX:XX**” during 60 seconds as shown in the image below. Refer to the [Bluetooth Interface](/Product-Categories/WisDuo/RAK4600-Module/LoRaWAN®-P2P/Quickstart/#bluetooth-interface) to know more.
+4.  After resetting the RAK4600, its BLE interface should broadcast a device name with the format “**RUI_XX:XX:XX**” for 60 seconds, as shown in **Figure 73**. Refer to the [Bluetooth Interface](/Product-Categories/WisDuo/RAK4600-Module/LoRaWAN®-P2P/Quickstart/#bluetooth-interface) to know more.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/ble-rak4600-device.png"
@@ -1398,9 +1393,9 @@ Follow this procedure in order to upgrade the firmware in Device Firmware Upgrad
   caption="RAK4600 BLE device name"
 />
 
-5.	Select the device and press **CONNECT**.
+5.  Select the device and press **CONNECT**.
 
-6.	Select **Secure DFU Service** and enable the “**Indications**” option by pressing the icon highlighted in red in Figure 74.
+6.  Select **Secure DFU Service** and enable the “**Indications**” option by pressing the icon highlighted in red in **Figure 74**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/ble-disable-notif.png"
@@ -1408,7 +1403,7 @@ Follow this procedure in order to upgrade the firmware in Device Firmware Upgrad
   caption="Enable the “Indications” option"
 />
 
-7.	On Buttonless DFU, click on the up arrow, then a pop up menu should appear as shown in Figure 75.
+7.  On the Buttonless DFU, click on the up arrow, then a pop-up menu should appear, as shown in **Figure 75**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/ble-bootloader-mode.png"
@@ -1416,9 +1411,9 @@ Follow this procedure in order to upgrade the firmware in Device Firmware Upgrad
   caption="Pop up menu to enter to the bootloader mode"
 />
 
-8.	Press the **SEND** button to reset the RAK4600 and to enter into the DFU mode. 
+8.  Press the **SEND** button to reset the RAK4600 and to enter into the DFU mode. 
 
-9.	Scan again with the Nordic app and a device named **DfuTarg** should appear as shown in Figure 76.
+9.  Scan again with the Nordic app, and a device named **DfuTarg** should appear, as shown in **Figure 76**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/ble-nordic-scan.png"
@@ -1426,9 +1421,9 @@ Follow this procedure in order to upgrade the firmware in Device Firmware Upgrad
   caption="Nordic app scan with RAK4600 in DFU mode"
 />
 
-10.	Press **CONNECT**, then click the icon highlighted in red (DFU).
+10. Press **CONNECT**, then click the icon highlighted in red (DFU).
 
-11.	Select the **Distribution packet (ZIP)** option in the pop up menu and press **OK**.
+11. Select the **Distribution packet (ZIP)** option in the pop-up menu and press **OK**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/dfu-icon.png"
@@ -1436,7 +1431,7 @@ Follow this procedure in order to upgrade the firmware in Device Firmware Upgrad
   caption="DFU icon"
 />
 
-11.	Select the **Distribution packet (ZIP)** option in the pop up menu and press **OK**.
+11. Select the **Distribution packet (ZIP)** option in the pop-up menu and press **OK**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/dfu-mode-optios.png"
@@ -1444,7 +1439,7 @@ Follow this procedure in order to upgrade the firmware in Device Firmware Upgrad
   caption="DFU mode options"
 />
 
-12.	In the dialog menu, select the DFU package that was downloaded in step 1. After that, it will start to update the firmware through DFU over BLE interface. The upgrade progress will be shown the same as Figure 79.
+12. In the dialog menu, select the DFU package that was downloaded. After that, it will start to update the firmware through DFU over the BLE interface. The upgrade progress will be shown the same as Figure 79.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/dfu-firmware-update.png"
@@ -1452,6 +1447,6 @@ Follow this procedure in order to upgrade the firmware in Device Firmware Upgrad
   caption="DFU firmware update progress"
 />
 
-13.	Upon completion, the RAK4600 will restart automatically, and DFU connection will be terminated.
+13. Upon completion, the RAK4600 will restart automatically, and the DFU connection will be terminated.
 
-Now the RAK4600 is ready to work with the new firmware.
+Now, the RAK4600 is ready to work with the new firmware.

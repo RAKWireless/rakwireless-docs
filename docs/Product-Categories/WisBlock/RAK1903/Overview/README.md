@@ -39,7 +39,7 @@ For WisBlock Core RAK4630:
 
 ## Product Description
 
-RAK1903 is a WisBlock Sensor which extends the WisBlock system with a TI OPT3001DNPR light sensor. A ready to use SW library and tutorial makes it easy to build up an ambient light data acquisition system.
+The RAK1903 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is a single-chip ambient light sensor, measuring the intensity of light in the visible range. The precise spectral response and strong IR rejection of the device enables the RAK1903 module to accurately measure the intensity of light as seen by human eyes regardless of light sources. The strong IR rejection also aids in maintaining high accuracy when the industrial design requires to mount the sensor under dark glass due to aesthetic reasons. The RAK1903 module is designed for systems that create light-based experiences for humans. It is an ideal replacement for photodiodes, photoresistors, or other ambient light sensors with less visible range matching and IR rejection.
 
 ## Product Features
 

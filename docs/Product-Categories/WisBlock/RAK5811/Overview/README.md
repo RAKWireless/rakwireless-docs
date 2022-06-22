@@ -54,7 +54,7 @@ In addition, this module integrates a 12&nbsp;V power supply. The power supply i
 *	Supports low power consumption mode, the module can be powered off by WisBlock Core module for saving energy during idle periods
 *	12&nbsp;V output to power external sensors
 *	Reserved I2C expansion interface
-*	Fast crimping terminal to easy connect external components on the field
+*	Fast crimping terminal to easily connect external components on the field
 *	Designed with a 2&nbsp;kV ESD protection level
 *	Small dimensions of 35&nbsp;mm x 25&nbsp;mm
 

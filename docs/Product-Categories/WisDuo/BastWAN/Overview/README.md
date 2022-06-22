@@ -12,7 +12,7 @@ tags:
 
 # RAK3244 BastWAN
 
-Thank you for choosing **RAK3244 BastWAN** in your awesome IoT Project! 🎉 To help you get started, we have provided the necessary documentations for the product.
+Thank you for choosing **RAK3244 BastWAN** in your awesome IoT Project! 🎉 To help you get started, we have provided the necessary documentation for the product.
 
 - [Quick Start Guide](../Quickstart/)
 - [Datasheet](../Datasheet/)

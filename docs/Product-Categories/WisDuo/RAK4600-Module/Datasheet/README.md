@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisduo
   - RAK4600
-prev: ../Low-Level-Development/
+prev: ../AT-Command-Manual/
 next: false
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600%20CE%20Certification.zip]
@@ -28,7 +28,7 @@ certifications:
 
 RAK4600 WisDuo LPWAN Module includes an nRF52832 MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumption of 13.3&nbsp;μA (down to 11.2&nbsp;μA @ 2.0&nbsp;V) in sleep mode, high LoRa output power up to 20&nbsp;dB max in work mode, and BLE output power up to 4&nbsp;dBm.
 
-The module complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P Point-to-Point communications. The Module supports BLE 5.0 in addition to LoRa. Its RF communication capabilities (LoRa+BLE) make it suitable for a variety of applications in the IoT field.
+The module complies with LoRaWAN 1.0.2 specification. It supports LoRa Point-to-Point (P2P) communications and also the BLE 5.0, in addition to LoRa. Its RF communication capabilities (LoRa+BLE) make it suitable for a variety of applications in the IoT field.
 
 ### Features
 
@@ -90,51 +90,51 @@ The hardware specifications are categorized into five parts. It discusses the in
   caption="RAK4600 Board Pinout"
 />
 
-| **Pin** | **Name**   | **I/O** | **Description**                                |
-| ------- | ---------- | ------- | ---------------------------------------------- |
-| 1       | GND        |         | Ground                                         |
-| 2       | NC         |         | No Connection                                  |
-| 3       | NC         |         | No Connection                                  |
-| 4       | I2C1_SDA   | I/O     | I2C, General purpose I/O (P0.13)               |
-| 5       | I2C1_SDL   | I/O     | I2C, General purpose I/O (P0.12)               |
-| 6       | NFC1       | I/O     | General<br>purpose I/O、NFC antenna connection |
-| 7       | NFC2       | I/O     | General<br>purpose I/O、NFC antenna connection |
-| 8       | GND        |         | Ground                                         |
-| 9       |P0.18  | I/O     | General purpose I/O P0.18       |
-| 10      | P0.19  | I/O     | General purpose I/O P0.19      |
-| 11      | NC         |         | No Connection                                  |
-| 12      | GND        |         | Ground                                         |
-| 13      | GND        |         | Ground                                         |
-| 14      | GND        |         | Ground                                         |
-| 15      | RF_BT      | I/O     | BLE<br>RF OUT (only available on **RAK4600 No-IPEX connector variant**)|
-| 16      | GND        |         | Ground                                         |
-| 17      | RF_L       | I/O     | LoRa<br>RF OUT (only available on **RAK4600 No-IPEX connector variant**)|
-| 18      | GND        |         | Ground                                         |
-| 19      | GND        |         | Ground                                         |
-| 20      | GND        |         | Ground                                         |
-| 21      | Reserved   | I/O     | General<br>purpose I/O (P0.14)                 |
-| 22      | USART1_RX  | I/O     | USART1_RX<br>(General purpose I/O P0.22)       |
-| 23      | USART1_TX  | I/O     | USART1_TX<br>(General purpose I/O P0.23)       |
-| 24      | Reserved   | I/O     | General<br>purpose I/O P0.17                   |
-| 25      | NC         |         | No Connection                                  |
-| 26      | NC         |         | No Connection                                  |
-| 27      | NC         |         | No Connection                                  |
-| 28      | NC         |         | No Connection                                  |
-| 29      | NC         |         | No Connection                                  |
-| 30      | NC         |         | No Connection                                  |
-| 31      | GND        |         | Ground                                         |
-| 32      | NC         |         | No Connection                                  |
-| 33      | NC         |         | No Connection                                  |
-| 34      | NC         |         | No Connection                                  |
-| 34      | NC         |         | No Connection                                  |
-| 35      | NC         |         | No Connection                                  |
-| 36      | MCU_NRST   | I/O     | MCU<br>reset                                   |
-| 37      | SYS_SWDIO  | I/O     | SYS_SWDIO                                      |
-| 38      | SYS_SWDCLK | I/O     | SYS_SWDCLK                                     |
-| 39      | GND        |         | Ground                                         |
-| 40      | 3V3_IN     |         | Input<br>power                                 |
-| 41      | 3V3_IN     |         | Input<br>power                                 |
-| 42      | GND        |         | Ground                                         |
+| **Pin** | **Name**   | **I/O** | **Description**                                                       |
+| ------- | ---------- | ------- | --------------------------------------------------------------------- |
+| 1       | GND        |         | Ground                                                                |
+| 2       | NC         |         | No Connection                                                         |
+| 3       | NC         |         | No Connection                                                         |
+| 4       | I2C1_SDA   | I/O     | I2C, General purpose I/O (P0.13)                                      |
+| 5       | I2C1_SDL   | I/O     | I2C, General purpose I/O (P0.12)                                      |
+| 6       | NFC1       | I/O     | General purpose I/O、NFC antenna connection                           |
+| 7       | NFC2       | I/O     | General purpose I/O、NFC antenna connection                           |
+| 8       | GND        |         | Ground                                                                |
+| 9       | P0.18      | I/O     | General purpose I/O p0.18                                             |
+| 10      | P0.19      | I/O     | General purpose I/O p0.19                                             |
+| 11      | NC         |         | No Connection                                                         |
+| 12      | GND        |         | Ground                                                                |
+| 13      | GND        |         | Ground                                                                |
+| 14      | GND        |         | Ground                                                                |
+| 15      | RF_BT      | I/O     | BLE RF OUT (only available on **RAK4600 No-IPEX connector variant**)  |
+| 16      | GND        |         | Ground                                                                |
+| 17      | RF_L       | I/O     | LoRa RF OUT (only available on **RAK4600 No-IPEX connector variant**) |
+| 18      | GND        |         | Ground                                                                |
+| 19      | GND        |         | Ground                                                                |
+| 20      | GND        |         | Ground                                                                |
+| 21      | Reserved   | I/O     | General purpose I/O (P0.14)                                           |
+| 22      | USART1_RX  | I/O     | USART1_RX (General purpose I/O P0.22)                                 |
+| 23      | USART1_TX  | I/O     | USART1_TX (General purpose I/O P0.23)                                 |
+| 24      | Reserved   | I/O     | General purpose I/O P0.17                                             |
+| 25      | NC         |         | No Connection                                                         |
+| 26      | NC         |         | No Connection                                                         |
+| 27      | NC         |         | No Connection                                                         |
+| 28      | NC         |         | No Connection                                                         |
+| 29      | NC         |         | No Connection                                                         |
+| 30      | NC         |         | No Connection                                                         |
+| 31      | GND        |         | Ground                                                                |
+| 32      | NC         |         | No Connection                                                         |
+| 33      | NC         |         | No Connection                                                         |
+| 34      | NC         |         | No Connection                                                         |
+| 34      | NC         |         | No Connection                                                         |
+| 35      | NC         |         | No Connection                                                         |
+| 36      | MCU_NRST   | I/O     | MCU reset                                                             |
+| 37      | SYS_SWDIO  | I/O     | SYS_SWDIO                                                             |
+| 38      | SYS_SWDCLK | I/O     | SYS_SWDCLK                                                            |
+| 39      | GND        |         | Ground                                                                |
+| 40      | 3V3_IN     |         | Input power                                                           |
+| 41      | 3V3_IN     |         | Input power                                                           |
+| 42      | GND        |         | Ground                                                                |
 
 
 ##### LoRa Transceiver IC Connection to RAK4600 Internal nRF52
@@ -208,7 +208,7 @@ Shown in the table provided below is the typical current consumption of the RAK4
 
 ##### Laboratory Testing
 
-The figures below are showing the average current consumption based on the different test cases.
+**Figure 4** and **Figure 5** shows the average current consumption based on the different test cases.
 
 **Equipment**:
 

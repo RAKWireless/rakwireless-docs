@@ -11,6 +11,7 @@ next: false
 
 # RAK1906 WisBlock Environmental Sensor Datasheet
 
+
 ## Overview
 
 ### Description
@@ -26,12 +27,11 @@ The RAK1906 WisBlock Environmental Sensor module, part of the RAK WisBlock Senso
 * **Module size**: 10 x 10&nbsp;mm
 
 ## Specifications
-
 ### Overview
 <!-- Insert Picture of Sensor with its dimensions -->
 
 #### Mounting
-The RAK1906 module can be mounted on the slots: A, B, C, or D of a WisBlock Base board. Figure 2 shows the mounting mechanism of the RAK1906 on a WisBlock Base board, such as the RAK5005-O.
+The RAK1906 module can be mounted on the slots: A, B, C, or D of a WisBlock Base board. **Figure 1** shows the mounting mechanism of the RAK1906 on a WisBlock Base board, such as the RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak1906/datasheet/RAK19xx_mounting.png"
@@ -41,14 +41,16 @@ The RAK1906 module can be mounted on the slots: A, B, C, or D of a WisBlock Base
 
 ### Hardware
 
-#### Chipset
+The hardware specification is categorized into six parts. It shows the chipset of the module and discusses the pinouts, sensors, and the corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK1906 WisBlock Environmental Sensor.
 
+
+####  Chipset
 | Vendor | Part number |
-| --     | --          |
+| ------ | ----------- |
 | BOSCH  | BME680      |
 
 #### Pin Definition
-The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1906 module to be mounted on a WisBlock Base board, such as RAK5005-O. The pin order of the connector and the definition of the pinout are shown in Figure 3. 
+The RAK1906 WisBlock Environmental Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1906 module to be mounted on a WisBlock Base board, such as RAK5005-O. The pin order of the connector and the definition of the pinout are shown in **Figure 2**. 
 
 
 :::tip 📝 NOTE:
@@ -63,9 +65,7 @@ Only the I2C related pin, VDD, and GND are connected to this module.
 
 
 #### Sensors
-
-##### Temperature Sensor
-
+##### Temperature Sensor 
 <table  style="text-align: center">
 <thead>
   <tr>
@@ -127,7 +127,6 @@ Only the I2C related pin, VDD, and GND are connected to this module.
 </table>
 
 ##### Humidity Sensor
-
 <table style="text-align: center">
 <thead>
   <tr>
@@ -178,7 +177,7 @@ Only the I2C related pin, VDD, and GND are connected to this module.
   <tr>
     <td>Supply Current </td>
     <td>I<sub>DD,H</sub></td>
-    <td>1 Hz Forced Mode, <br>Temperature and Humidity Measurement</td>
+    <td>1&nbsp;Hz Forced Mode, <br>Temperature and Humidity Measurement</td>
     <td></td>
     <td>2.1</td>
     <td>2.8</td>
@@ -197,7 +196,6 @@ Only the I2C related pin, VDD, and GND are connected to this module.
 </table>
 
 ##### Pressure Sensor
-
 <table style="text-align: center">
 <thead>
   <tr>
@@ -238,7 +236,7 @@ Only the I2C related pin, VDD, and GND are connected to this module.
   <tr>
     <td>Supply Current</td>
     <td>I<sub>DD,LP</sub></td>
-    <td>1 Hz Forced Mode, Pressure<br>and Temperature, Lowest Power</td>
+    <td>1&nbsp;Hz Forced Mode, Pressure, and Temperature, Lowest Power</td>
     <td></td>
     <td>3.1</td>
     <td>4.2</td>
@@ -272,7 +270,6 @@ Only the I2C related pin, VDD, and GND are connected to this module.
 </table>
 
 ##### AQI Sensor
-
 <table style="text-align: center">
 <thead>
   <tr>
@@ -343,9 +340,7 @@ Only the I2C related pin, VDD, and GND are connected to this module.
 </table>
 
 #### Electrical Characteristics
-
 ##### Recommended Operating Conditions
-
 | Symbol            | Description                 | Min. | Nom. | Max. | Unit |
 | ----------------- | --------------------------- | :--: | :--: | :--: | :--: |
 | V<sub>DD</sub>    | Power supply for the module | 1.71 | 1.8  | 3.6  |  V   |
@@ -354,11 +349,12 @@ Only the I2C related pin, VDD, and GND are connected to this module.
 | I<sub>DD</sub>    | Pressure Measure current    |  -   | 714  |  -   |  uA  |
 | I<sub>DD</sub>    | Temperature Measure current |  -   | 350  |  -   |  uA  |
 
+
 #### Mechanical Characteristics
 
 ##### Board Dimensions
 
-Figure 3 shows the dimensions and the mechanic drawing of the RAK1906 module.
+**Figure 3** shows the dimensions and the mechanic drawing of the RAK1906 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1906/datasheet/RAK19xx_mechanic_drawing.png"
@@ -383,3 +379,4 @@ Figure 5 shows the schematic of the RAK1906 module.
   width="100%"
   caption="RAK1906 WisBlock Environmental Sensor schematics"
 />
+

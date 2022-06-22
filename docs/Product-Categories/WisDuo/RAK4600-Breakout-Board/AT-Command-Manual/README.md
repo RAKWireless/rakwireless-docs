@@ -21,19 +21,37 @@ In the RAK4600 Breakout Board, the serial communication is exposed on the UART1 
 
 In addition, the RAK4600 Breakout Board also supports BLE. You can use your mobile phone to communicate with the RAK4600 Breakout Board via BLE interface, or you can use the board to scan the surrounding Bluetooth beacon information. Refer to [Bluetooth Connection Modes](/Product-Categories/WisDuo/RAK4600-Breakout-Board/Quickstart/#bluetooth-connection-modes).
 
-### AT Command Syntax
+
+## Content
+
+- [RAK4600 Breakout Board AT Command Manual](#rak4600-breakout-board-at-command-manual)
+  - [Introduction](#introduction)
+  - [Content](#content)
+  - [AT Command Syntax](#at-command-syntax)
+  - [Error Code Table](#error-code-table)
+  - [General AT Command](#general-at-command)
+  - [Interface Type AT Command](#interface-type-at-command)
+  - [LoRaWAN Type AT Command](#lorawan-type-at-command)
+  - [LoRa P2P Type AT Command](#lora-p2p-type-at-command)
+  - [BLE Type AT Command](#ble-type-at-command)
+  - [Appendix I：Data Rate by Region](#appendix-idata-rate-by-region)
+  - [Appendix II：TX Power by Region](#appendix-iitx-power-by-region)
+  - [Appendix III：Maximum Transmission Load by Region](#appendix-iiimaximum-transmission-load-by-region)
+  - [Appendix IV: Pin Description of RAK4600 Breakout Board](#appendix-iv-pin-description-of-rak4600-breakout-board)
+
+## AT Command Syntax
 
 The AT command is based on ASCII characters. A command begins with the prefix `at` and ends with `<CR><LF>` (i.e. \r\n). The maximum length is **255 characters** which includes the `<CR><LF>` characters at the end of the command. For the rest of the document, the `\r\n` part is omitted for the sake of clarity.
 
 The AT commands can be classified into the following groups:
 
-* **Read Command**: Reads the current configuration or status of the board. The command name and the list of parameters are separated by `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character.
+* **Read Command**: Reads the current configuration or status of the board. The command name and the list of parameters are separated by the `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character.
   
 ```
 at+get_config=<m>:<n>
 ```
 
-* **Write Command**: Writes/Modifies the current configuration of the board. The command name and the list of parameters are separated by `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character.
+* **Write Command**: Writes/Modifies the current configuration of the board. The command name and the list of parameters are separated by the `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character.
   
 ```
 at+set_config=<m>:<n>
@@ -67,7 +85,7 @@ The firmware you developed, running in the external MCU, will expect at a minimu
 ```
 ERROR: [Err Code]\r\n
 ```
-### Error Code Table
+## Error Code Table
 
 <table style="text-align: left">
 <thead>
@@ -103,7 +121,7 @@ ERROR: [Err Code]\r\n
         </tr>
         <tr>
             <td>81</td>
-            <td>LoRa service is unknown. Unknown MAC command received by the node. Execute commands that are not supported in the current state, such as sending the "adjoin" command in P2P mode.</td>
+            <td>LoRa service is unknown. Unknown MAC command received by the node. Execute commands that are not supported in the current state, such as sending the "<code>at+join</code>" command in P2P mode.</td>
         </tr>
         <tr>
             <td>82</td>
@@ -131,7 +149,7 @@ ERROR: [Err Code]\r\n
         </tr>
         <tr>
             <td>88</td>
-            <td>Service is closed by the server. Due to the limitation of duty cycle, the server will send "SRV_MAC_DUTY_CYCLE_REQ" MAC command to close the service.</td>
+            <td>Service is closed by the server. Due to the limitation of the duty cycle, the server will send the "SRV_MAC_DUTY_CYCLE_REQ" MAC command to close the service.</td>
         </tr>
         <tr>
             <td>89</td>
@@ -139,7 +157,7 @@ ERROR: [Err Code]\r\n
         </tr>
         <tr>
             <td>90</td>
-            <td>Duty cycle is restricted. Due to duty cycle, data cannot be sent at this time until the time limit is removed.</td>
+            <td>Duty cycle is restricted. Due to the duty cycle, data cannot be sent at this time until the time limit is removed.</td>
         </tr>
         <tr>
             <td>91</td>
@@ -333,7 +351,7 @@ OK Wake Up
 
 :::tip 📝 NOTE: 
 
-During sleep, Pin 22 (USART1_RX) is automatically configured as a wake up pin and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on this RX pin.
+During sleep, Pin 22 (USART1_RX) is automatically configured as a wake-up pin and in external interrupt mode with an internal pull-down resistor. Wake-up will be triggered by a rising edge on this RX pin.
 
 :::
 
@@ -479,7 +497,7 @@ This command is used to send data via LoRaWAN.
         </tr>
         <tr>
             <td>data</td>
-            <td>The sending data format is in hexadecimal format. The possible values are between **00-FF**. The board internally will cast every two characters into a byte before sending it to the LoRa transceiver. The maximum length varies depending on the band frequency and DR (LoRaWAN standard). Refer to <a href="/Product-Categories/WisDuo/RAK4600-Module/AT-Command-Manual/#appendix-iii：maximum-transmission-load-by-region" >Appendix III</a>.</td>
+            <td>The sending data format is in hexadecimal format. The possible values are between <b>00-FF</b>. The board internally will cast every two characters into a byte before sending it to the LoRa transceiver. The maximum length varies depending on the band frequency and DR (LoRaWAN standard). Refer to <a href="/Product-Categories/WisDuo/RAK4600-Module/AT-Command-Manual/#appendix-iii：maximum-transmission-load-by-region" >Appendix III</a>.</td>
         </tr>
 </tbody>
 </table>
@@ -564,7 +582,7 @@ OK *0,on,868100000,0,5; *1,on,868300000,0,5; *2,on,868500000,0,5; 3,off,0,0,0; 4
 
 With <b>*0,on,868100000,0,5</b> as an example，the following is the channel parameter analysis:
 
-- `*` at the beginning if the channel is open;
+- `*` at the beginning, if the channel is open;
 - `0` is the channel ID;
 - `on` indicates the current status of the channel;
 - `868100000` is the actual frequency of the channel，unit is Hz;
@@ -631,7 +649,7 @@ OK
 
 <br>
 
-7.	<b>at+set_config=lora:app_eui:`<app_eui>`</b>
+7.  <b>at+set_config=lora:app_eui:`<app_eui>`</b>
 
 This command is used to set the Application EUI parameter for the LoRaWAN OTAA mode.
 
@@ -981,7 +999,7 @@ This command is used to set the RF transmission power level of the LoRa transcei
 <table>
     <tr>
       <td>tx_power </td>
-      <td> Refer to <a href="/Product-Categories/WisDuo/RAK4600-Breakout-Board/AT-Command-Manual/#appendix-ii：tx-power-by-region" >Appendix II</a> for possible values of tx_power. The table of Appendix II is based on LoRaWAN 1.0.2 specification. LoRa transmit power level varies depending on frequency band.  <br> <br>If the resulting TX power is higher than the capability of LoRa Radio, the output power will be based on the max TX power of the LoRa Radio in the module. For RAK4600 module, the max TX power is 20dBm. Take note of this when using regional bands with MaxEIRP higher than 20dBm like US915, AU915 and IN865 whose MaxEIRP is 30dBm.<br> <br> The default setting is 0. 
+      <td> Refer to <a href="/Product-Categories/WisDuo/RAK4600-Breakout-Board/AT-Command-Manual/#appendix-ii：tx-power-by-region" >Appendix II</a> for possible values of tx_power. The table of Appendix II is based on LoRaWAN 1.0.2 specification. LoRa transmit power level varies depending on frequency band.  <br> <br>If the resulting TX power is higher than the capability of LoRa Radio, the output power will be based on the max TX power of the LoRa Radio in the module. For RAK4600 module, the max TX power is 20&nbsp;dBm. Take note of this when using regional bands with MaxEIRP higher than 20&nbsp;dBm like US915, AU915 and IN865 whose MaxEIRP is 30&nbsp;dBm.<br> <br> The default setting is 0. 
  </td>
     </tr>
 </table>
@@ -1239,7 +1257,7 @@ OK
 
 4. <b>at+send=lorap2p:`<data>`</b>
 
-This command is used to send data through LoRa P2P and only valid when the LoRa work mode is set to LoRa P2P before.
+This command is used to send data through LoRa P2P and is only valid when the LoRa work mode is set to LoRa P2P before.
 
 | Operation | Command                  | Response |
 | --------- | ------------------------ | -------- |
@@ -1529,7 +1547,7 @@ By default, MAxEIRP is considered to be +12.15&nbsp;dBm.
 ## Appendix III：Maximum Transmission Load by Region
 
 :::tip 📝 NOTE:
-The LoRaWAN stack adds 8 bytes to the user payload. In the following list, M is the maximum payload size and N is the maximum usable payload size for the user data without MAC header.
+The LoRaWAN stack adds 8 bytes to the user payload. In the following list, M is the maximum payload size and N is the maximum usable payload size for the user data without the MAC header.
 ::::
 
 <b>EU868</b>
@@ -1742,22 +1760,22 @@ The pin definition of the RAK4600 Breakout Board can be reviewed in the [Pin Def
 Listed are the summary of pins of the RAK4600 Breakout Board:
 
 :::tip 📝 NOTE:
-Not all pins of RAK4600 module are exposed on the RAK4600 Breakout board header connectors. Below are the pins available on the RAK4600 Module that are on this Breakout board. For complete RAK4600 module pinouts information, refer to the [datasheet](/Product-Categories/WisDuo/RAK4600-Module/Datasheet/#pin-definition).
+Not all pins of the RAK4600 module are exposed on the RAK4600 Breakout board header connectors. Below are the pins available on the RAK4600 Module that is on this Breakout board. For complete RAK4600 module pinouts information, refer to the [datasheet](/Product-Categories/WisDuo/RAK4600-Module/Datasheet/#pin-definition).
 :::
 
 1. **About the UART Pin**: 
      - Pin 22 (RX) and Pin 21 (TX) are reserved for UART1.
-     - During sleep, Pin 22 (USART1_RX) is automatically configured as a wake up pin and in external interrupt mode with internal pull-down resistor. Wake-up will be triggered by a rising edge on this RX pin.
+     - During sleep, Pin 22 (USART1_RX) is automatically configured as a wake up pin and in external interrupt mode with an internal pull-down resistor. Wake-up will be triggered by a rising edge on this RX pin.
    
 2. **About the SWD debug Pin**: Pin 37 (SWDIO) and Pin 38 (SWCLK) are used for SWD debug port.
 
 3. **About the Power Pin**: The power pins on the RAK4600 module includes the VCC pins on Pin 40 (3V3_IN) and Pin 41 (3V3_IN), and the Ground pins (GND) are on the Pin 1, Pin 8, Pin 12, Pin 13, Pin 14, Pin 16, Pin 18, Pin 19, Pin 20, Pin 31, Pin 39, and Pin 42.
 
-4.	**About the Reset Pin**: The reset pin on the RAK4600 module is the pin 36 (MCU_NRST).
+4.  **About the Reset Pin**: The reset pin on the RAK4600 module is Pin 36 (MCU_NRST).
 
-5.	**About the RF Antenna Pin**: The RF Antenna pins on the RAK4600 module are Pin 15 (RF_BT) BLE antenna and Pin 17 (RF_L) LoRa antenna.
+5.  **About the RF Antenna Pin**: The RF Antenna pins on the RAK4600 module are Pin 15 (RF_BT) BLE antenna and Pin 17 (RF_L) LoRa antenna.
 
-6.	**About the GPIO Pin**: The GPIO pins available on the RAK4600 module are the following:
+6.  **About the GPIO Pin**: The GPIO pins available on the RAK4600 module are the following:
      - Pin 4 (I2C1_SDA)
      - Pin 5 (I2C1_SCL)
      - Pin 6 (NFC1)

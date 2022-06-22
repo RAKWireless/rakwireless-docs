@@ -24,7 +24,7 @@ The information obtained from the SHTC3 sensor will then be printed over the USB
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK1901 WisBlock module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK1901 WisBlock module, make sure to prepare the necessary items listed below:
 
 #### Hardware
 
@@ -48,7 +48,7 @@ Before going through each and every step on using RAK1901 WisBlock module, make 
 
 WisBlock can integrate this module which makes it easy to build up an environmental temperature and humidity data acquisition system. 
 
-For more information about RAK1901, refer to the [Datasheet](../Datasheet/).
+For more information about the RAK1901, refer to the [Datasheet](../Datasheet/).
 
 The RAK1901 module gives information about:
 
@@ -133,7 +133,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK4631 as WisBlock Core"
 />
 
-2. The [Basic Sample Code for RAK1901](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1901_Temperature_Humidity_SHTC3) in Github will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core as shown in **Figure 7**. 
+2. The [Basic Sample Code for RAK1901](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1901_Temperature_Humidity_SHTC3) in Github will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 7**. 
 
 <rk-img
   src="/assets/images/wisblock/rak1901/quickstart/rak4631-examplecode.png"
@@ -190,7 +190,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK11200 as WisBlock Core"
 />
 
-2. The [Basic Sample Code for RAK1901](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1901_Temperature_Humidity_SHTC3) in Github will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core as shown in **Figure 14**. 
+2. The [Basic Sample Code for RAK1901](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1901_Temperature_Humidity_SHTC3) in Github will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 14**. 
 
 <rk-img
   src="/assets/images/wisblock/rak1901/quickstart/rak11200-examplecode.png"
@@ -250,7 +250,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK11310 as WisBlock Core"
 />
 
-2. The [Basic Sample Code for RAK1901](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1901_Temperature_Humidity_SHTC3) in Github will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core as shown in **Figure 21**. 
+2. The [Basic Sample Code for RAK1901](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1901_Temperature_Humidity_SHTC3) in Github will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 21**. 
 
 <rk-img
   src="/assets/images/wisblock/rak1901/quickstart/rak11310-examplecode.png"
