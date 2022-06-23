@@ -93,10 +93,15 @@ void set(uint8_t)
 Sets the data rate in bits per second (baud) for serial data transmission
 
 ```c
-void begin (uint32_t  baud, RAK_SERIAL_MODE  mode = RAK_DEFAULT_MODE) 
+Serial.begin(baud);
 ```
 
-| **Syntax**     | `Serial.begin(baud);` <br> `Serial.begin(baud, mode);`                                                                                                                                                                                                             |
+```c
+Serial.begin(baud, mode);
+```
+
+
+| **Function**   | `void begin (uint32_t  baud, RAK_SERIAL_MODE  mode = RAK_DEFAULT_MODE) `                                                                                                                                                                                           |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Parameters** | **baud** - The baudrate to set for the Serial. <br> **mode(optional)** - The mode that use UART in different way (if not assigned, `RAK_DEFAULT_MODE` is chosen). <br> List: <br> `RAK_AT_MODE` <br> `RAK_API_MODE` <br> `RAK_CUSTOM_MODE` <br> `RAK_DEFAULT_MODE` |
 | **Returns**    | void                                                                                                                                                                                                                                                               |
@@ -119,12 +124,12 @@ void loop() {
 End connection of the Serial with flushing all data.
 
 ```c
-void end(void)
+Serial.end();
 ```
 
-| **Syntax**  | `Serial.end();` |
-| ----------- | --------------- |
-| **Returns** | void            |
+| **Function** | `void end(void)` |
+| ------------ | ---------------- |
+| **Returns**  | void             |
 
 ::: details Click to View Example
 ```c{6}
@@ -142,17 +147,17 @@ void loop() {
 To lock the Serial port of the device.
 
 ::: tip 📝 NOTE
-1. If you never set a password successfully, the default password will be 00000000
-2. Serial.lock can only lock the Serial Which is in AT Command mode.
-3. Serial.lock will lock all Serial that is on AT Command mode.
+1. If you never set a password successfully, the default password will be `00000000`.
+2. `Serial.lock` can only lock the Serial which is in AT Command mode.
+3. `Serial.lock` will lock all Serial that is on AT Command mode.
 4. Due that Serial lock and unlock is system-wise operation for all Serial ports in AT Command mode, the Serial could be unlocked from either one or more Serial ports which are in AT Command mode.
 :::
 
 ```c
-void lock(bool locked)
+Serial.lock(locked);
 ```
 
-| **Syntax**     | `Serial.lock(locked);`                                                  |
+| **Function**   | `void lock(bool locked)`                                                |
 | -------------- | ----------------------------------------------------------------------- |
 | **Parameters** | **locked** - giving true to lock the device, false to unlock the device |
 | **Returns**    | void                                                                    |
@@ -178,10 +183,15 @@ void loop() {
 Set up the password to unlock the device when locked.
 
 ```c
-bool password(char * new_passwd, size_t len)	
+Serial.password(str);	
 ```
 
-| **Syntax**     | `Serial.password(str);` <br> `Serial.password(new_passwd, len);`                                                                                                 |
+```c
+Serial.password(new_passwd, len);
+```
+
+
+| **Function**   | `bool password(char * new_passwd, size_t len)`                                                                                                                   |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **str** - a string to set for unlocking the device <br> **new_passwd** - a char array to set for unlocking the device <br> **len** -	the length of your password |
 | **Returns**    | **TRUE** - for success <br> **FALSE** - for failure                                                                                                              |
@@ -208,18 +218,22 @@ void loop() {
 Writes a byte sequence to a specified serial port.
 
 ```c
-virtual size_t write(const uint8_t* buf, size_t size)	
+Serial.write(val);	
+```
+```c
+Serial.write(buf, size);
 ```
 
+
 ::: tip 📝 NOTE
-This function is a virtual function that declared in Print.h.
+This function is a virtual function that declared in `Print.h`.
 :::
 
 
-| **Syntax**     | `Serial.write(val);` <br> `Serial.write(buf, size);`                                                                                                           |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **val** - a value to send as a single byte <br> **buf** -	an array to send as a series of bytes <br> **size**  - the number of bytes to be sent from the array |
-| **Returns**    | number of bytes sent successfully(Type: size_t)                                                                                                                |
+| **Function**   | `virtual size_t write(const uint8_t* buf, size_t size)`                                                                                                       |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **val** - a value to send as a single byte <br> **buf** -	an array to send as a series of bytes <br> **size** - the number of bytes to be sent from the array |
+| **Returns**    | number of bytes sent successfully (Type: size_t)                                                                                                              |
 
 ::: details Click to View Example
 ```c{6,7}
@@ -239,7 +253,7 @@ void loop() {
 Gets the number of bytes available for reading from the specified serial port.
 
 ```c
-virtual int available(void)
+Serial.available();
 ```
 
 ::: tip 📝 NOTE
@@ -247,9 +261,9 @@ virtual int available(void)
 :::
 
 
-| **Syntax**  | `Serial.available();`                                                               |
-| ----------- | ----------------------------------------------------------------------------------- |
-| **Returns** | the	number of bytes available for reading from the specified serial port(Type: int) |
+| **Function** | `virtual int available(void)`                                                        |
+| ------------ | ------------------------------------------------------------------------------------ |
+| **Returns**  | the number of bytes available for reading from the specified serial port (Type: int) |
 
 ::: details Click to View Example
 ```c{7}
@@ -271,17 +285,17 @@ void loop() {
 Reads incoming serial data.
 
 ```c
-virtual int read(void)
+Serial.read();
 ```
 
 ::: tip 📝 NOTE
 `Serial.read()` inherits from the Stream utility class.
 :::
 
-| **Syntax**        | `Serial.read();`                                                 |
-| ----------------- | --------------------------------------------------------------- |
-| **Returns**       | The first byte of incoming serial data available(Type: int32_t) |
-| **Return Values** | **-1** Read fail, get nothing from the specified serial port    |
+| **Function**      | `virtual int read(void)`                                         |
+| ----------------- | ---------------------------------------------------------------- |
+| **Returns**       | The first byte of incoming serial data available (Type: int32_t) |
+| **Return Values** | **-1** Read fail, get nothing from the specified serial port     |
 
 ::: details Click to View Example
 ```c{9}
@@ -302,13 +316,14 @@ void loop() {
 ### peek()
 
 Returns the next byte (character) of incoming serial data without removing it from the internal serial buffer. That is, successive calls to peek() will return the same character, as will the next call to [read()](#read).
+
 ```c
-virtual int peek(void)
+Serial.peek();
 ```
 
-| **Syntax**  | `Serial.peek();`                                                                            |
-| ----------- | ------------------------------------------------------------------------------------------- |
-| **Returns** | The first byte of incoming serial data available (or -1 if no data is available)(Type: int) |
+| **Function** | `virtual int peek(void)`                                                                     |
+| ------------ | -------------------------------------------------------------------------------------------- |
+| **Returns**  | The first byte of incoming serial data available (or -1 if no data is available) (Type: int) |
 
 ::: details Click to View Example
 ```c{11}
@@ -333,15 +348,15 @@ void loop() {
 :::
 ### flush()
 
-Waits for the transmission of outgoing serial data to complete
+Waits for the transmission of outgoing serial data to complete.
 
 ```c
-virtual void flush(void)	
+Serial.flush();	
 ```
 
-| **Syntax**  | `Serial.flush();` |
-| ----------- | ----------------- |
-| **Returns** | void              |
+| **Function** | `virtual void flush(void)` |
+| ------------ | -------------------------- |
+| **Returns**  | void                       |
 
 ::: details Click to View Example
 ```c{8}
@@ -358,15 +373,20 @@ void loop() {
 :::
 ### print()
 
-Prints data to the serial port as human-readable ASCII text. This command can take many forms. Numbers are printed using an ASCII character for each digit. Floats are similarly printed as ASCII digits, defaulting to two decimal places. Bytes are sent as a single character. Characters and strings are sent as is
+Prints data to the serial port as human-readable ASCII text. This command can take many forms. Numbers are printed using an ASCII character for each digit. Floats are similarly printed as ASCII digits, defaulting to two decimal places. Bytes are sent as a single character. Characters and strings are sent as is.
+
 ```c
-size_t print(long, int=DEC)		
+Serial.print(val);		
 ```
 
-| **Syntax**     | `Serial.print(val);` <br> `Serial.print(val,format);`                                     |
-| -------------- | ----------------------------------------------------------------------------------------- |
-| **Parameters** | **val** - the value to print, allows any data type                                        |
-| **Returns**    | returns the number of bytes written, though reading that number is optional(Type: size_t) |
+```c
+Serial.print(val,format);
+```
+
+| **Function**   | `size_t print(long, int=DEC)`                                                              |
+| -------------- | ------------------------------------------------------------------------------------------ |
+| **Parameters** | **val** - the value to print, allows any data type                                         |
+| **Returns**    | returns the number of bytes written, though reading that number is optional (Type: size_t) |
 
 ::: details Click to View Example
 ```c{7-19}
@@ -413,19 +433,23 @@ void loop() {
 } 
 ```
 :::
+
 ### println()
 
-Prints data to the serial port as human-readable ASCII text followed by a carriage return character (ASCII 13, or '') and a newline character (ASCII 10, or '
-'). This command takes the same form as Serial.print().
+Prints data to the serial port as human-readable ASCII text followed by a carriage return character (ASCII 13, or '') and a newline character (ASCII 10, or ''). This command takes the same form as `Serial.print()`.
 
 ```c
-size_t println(int, int=DEC)		
+Serial.print(val);		
 ```
 
-| **Syntax**     | `Serial.print(val);` <br> `Serial.print(val,format);`                                     |
-| -------------- | ----------------------------------------------------------------------------------------- |
-| **Parameters** | **val** - the value to print, allows any data type                                        |
-| **Returns**    | returns the number of bytes written, though reading that number is optional(Type: size_t) |
+```c
+Serial.print(val,format);
+```
+
+| **Function**   | `size_t println(int, int=DEC)`                                                             |
+| -------------- | ------------------------------------------------------------------------------------------ |
+| **Parameters** | **val** - the value to print, allows any data type                                         |
+| **Returns**    | returns the number of bytes written, though reading that number is optional (Type: size_t) |
 
 ::: details Click to View Example
 ```c{13-17}
@@ -454,15 +478,16 @@ void loop() {
 :::
 ### printf()
 
-To output formatted text over Serial without the need to create a char array first, fill it with snprintf() and then send it with Serial.println
+To output formatted text over Serial without the need to create a char array first, fill it with snprintf() and then send it with `Serial.println`.
+
 ```c
-size_t printf(const char * val,	...)	
+Serial.printf(val);	
 ```
 
-| **Syntax**     | `Serial.printf(val);`                                                                      |
-| -------------- | ----------------------------------------------------------------------------------------- |
-| **Parameters** | **val**                                                                                   |
-| **Returns**    | returns the number of bytes written, though reading that number is optional(Type: size_t) |
+| **Function**   | `size_t printf(const char * val,	...)`                                                     |
+| -------------- | ------------------------------------------------------------------------------------------ |
+| **Parameters** | **val**                                                                                    |
+| **Returns**    | returns the number of bytes written, though reading that number is optional (Type: size_t) |
 
 ::: details Click to View Example
 ```c{10}
@@ -480,18 +505,19 @@ void loop()
 
 ```
 :::
+
 ### setTimeout()
 
 This API is used to set the timeout value for read/write/flush API.
 
 ```c
-void setTimeout(unsigned long timeout)	
+Serial.setTimeout(timeout);	
 ```
 
-| **Syntax**     | `Serial.setTimeout(timeout);`   |
-| -------------- | ------------------------------- |
-| **Parameters** | **timeout** - the timeout value |
-| **Returns**    | void                            |
+| **Function**   | `void setTimeout(unsigned long timeout)` |
+| -------------- | ---------------------------------------- |
+| **Parameters** | **timeout** - the timeout value          |
+| **Returns**    | void                                     |
 
 ::: details Click to View Example
 ```c{5}
@@ -508,17 +534,18 @@ void loop() {
 }
 ```
 :::
+
 ### getTimeout()
 
 This API is used to get the timeout value for read/write/flush API.
 
 ```c
-unsigned long getTimeout(void)	
+Serial.getTimeout(timeout);	
 ```
 
-| **Syntax**  | `Serial.getTimeout(timeout);`             |
-| ----------- | ----------------------------------------- |
-| **Returns** | The value of timeout(Type: unsigned long) |
+| **Function** | `unsigned long getTimeout(void)`           |
+| ------------ | ------------------------------------------ |
+| **Returns**  | The value of timeout (Type: unsigned long) |
 
 ::: details Click to View Example
 ```c{7}
@@ -538,20 +565,21 @@ void loop() {
 
 ### readBytes()
 
-Read characters from Stream into buffer terminates if length characters have been read, or timeout (see [setTimeout](#settimeout))
+Read characters from Stream into buffer terminates if length characters have been read, or timeout (see [setTimeout](#settimeout)).
 
 ```c
-size_t readBytes(char* buffer,size_t length)		
+Serial.readBytes(buffer, length);		
 ```
+
 ::: tip 📝 NOTE
 `Serial.readBytes()` inherits from the Stream utility class.
 :::
 
 
-| **Syntax**     | `Serial.readBytes(buffer, length);`                                                           |
+| **Function**   | `size_t readBytes(char* buffer,size_t length)`                                                |
 | -------------- | --------------------------------------------------------------------------------------------- |
 | **Parameters** | **buffer** - The buffer to store the bytes in. <br> **length** - The number of bytes to read. |
-| **Returns**    | The number of bytes placed in the buffer(Type: `size_t`)                                      |
+| **Returns**    | The number of bytes placed in the buffer (Type: `size_t`)                                     |
 
 ::: details Click to View Example
 ```c{12}
@@ -582,12 +610,13 @@ void loop() {
 }
 ```
 :::
+
 ### readBytesUntil()
 
-As readBytes with terminator character Terminates if length characters have been read, timeout, or if the terminator character detected
+As readBytes with terminator character Terminates if length characters have been read, timeout, or if the terminator character detected.
 
 ```c
-size_t readBytesUntil(char terminator, char* buffer, size_t length)	
+Serial.readBytesUntil(terminator, buffer, length);
 ```
 
 ::: tip 📝 NOTE
@@ -595,7 +624,7 @@ size_t readBytesUntil(char terminator, char* buffer, size_t length)
 :::
 
 
-| **Syntax**     | `Serial.readBytesUntil(terminator, buffer, length);`                                                                                          |
+| **Function**   | `size_t readBytesUntil(char terminator, char* buffer, size_t length)`                                                                         |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **terminator** - The character to search for <br> **buffer** - The buffer to store the bytes in <br> **length** - The number of bytes to read |
 | **Returns**    | `size_t`                                                                                                                                      |
@@ -629,22 +658,23 @@ void loop() {
 }
 ```
 :::
+
 ### readString
 
 Reads characters from a Stream into a String The function terminates if it times out (see [setTimeout()](#settimeout)).
 
 
 ```c
-String readString()	
+Serial.readString();
 ```
 
 ::: tip 📝 NOTE
 `Serial.readString()` inherits from the Stream utility class.
 :::
 
-| **Syntax**  | `Serial.readString();`                          |
-| ----------- | ----------------------------------------------- |
-| **Returns** | A **String** read from a Stream(Type: `String`) |
+| **Function** | `String readString()`                            |
+| ------------ | ------------------------------------------------ |
+| **Returns**  | A **String** read from a Stream (Type: `String`) |
 
 ::: details Click to View Example
 ```c{11}
@@ -672,12 +702,13 @@ void loop() {
 }
 ```
 :::
+
 ### readStringUntil()
 
 Reads characters from the serial buffer into a String. The function terminates if it times out (see [setTimeout()](#settimeout)).
 
 ```c
-String readStringUntil(char	terminator)	
+Serial.readStringUntil(terminator);	
 ```
 
 ::: tip 📝 NOTE
@@ -685,9 +716,9 @@ String readStringUntil(char	terminator)
 :::
 
 
-| **Syntax**  | `Serial.readStringUntil(terminator);`                                                              |
-| ----------- | -------------------------------------------------------------------------------------------------- |
-| **Returns** | The entire **String** read from the serial buffer, up to the terminator character(Type: `String`). |
+| **Function** | `String readStringUntil(char	terminator)`                                                          |
+| ------------ | -------------------------------------------------------------------------------------------------- |
+| **Returns**  | The entire **String** read from the serial buffer, up to the terminator character(Type: `String`). |
 
 ::: details Click to View Example
 ```c{11}
@@ -720,15 +751,15 @@ void loop() {
 
 ### begin()
 
-Initiate the Wire library and join the I2C bus as a master
+Initiate the Wire library and join the I2C bus as a master.
 
 ```c
-void begin(void)
+Wire.begin();
 ```
 
-| **Syntax**  | `Wire.begin();` |
-| ----------- | --------------- |
-| **Returns** | void            |
+| **Function** | `void begin(void)` |
+| ------------ | ------------------ |
+| **Returns**  | void               |
 
 
 :::details Click to View Example
@@ -741,16 +772,17 @@ void loop() {
 }
 ```
 :::
+
 ### end()
 
 End the I2C bus
 ```c
-void end(void)	
+Wire.end();	
 ```
 
-| **Syntax**  | `Wire.end();` |
-| ----------- | ------------- |
-| **Returns** | void          |
+| **Function** | `void end(void)` |
+| ------------ | ---------------- |
+| **Returns**  | void             |
 
 ::: details Click to View Example
 ```c{6}
@@ -763,15 +795,16 @@ void loop() {
 }
 ```
 :::
+
 ### setClock()
 
-This function modifies the clock frequency for I2C communication. I2C slave devices have no minimum working clock frequency, however 100KHz is usually the baseline
+This function modifies the clock frequency for I2C communication. I2C slave devices have no minimum working clock frequency, however 100&nbsp;kHz is usually the baseline.
 
 ```c
-void setClock(uint32_t freq)
+Wire.setClock(freq);
 ```
 
-| **Syntax**     | `Wire.setClock(freq);`                                                                                                             |
+| **Function**   | `void setClock(uint32_t freq)`                                                                                                     |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **freq**	- The value (in Hertz) of desired communication clock. Accepted values are 100000 (standard mode) and 400000 (fast mode). |
 | **Returns**    | void                                                                                                                               |
@@ -787,15 +820,16 @@ void loop() {
 }
 ```
 :::
+
 ### beginTransmission()
 
-Begin a transmission to the I2C slave device with the given address. Subsequently, queue bytes for transmission with the write() function and transmit them by calling [endTransmission()](#endtransmission)
+Begin a transmission to the I2C slave device with the given address. Subsequently, queue bytes for transmission with the write() function and transmit them by calling [endTransmission()](#endtransmission).
 
 ```c
-void beginTransmission(uint8_t address)
+Wire.beginTransmission(address);
 ```
 
-| **Syntax**     | `Wire.beginTransmission(address);`                           |
+| **Function**   | `void beginTransmission(uint8_t address)`                    |
 | -------------- | ------------------------------------------------------------ |
 | **Parameters** | **address** - The 7-bit address of the device to transmit to |
 | **Returns**    | void                                                         |
@@ -816,16 +850,20 @@ void loop() {
 
 ### endTransmission()
 
-Ends a transmission to a slave device that was begun by [beginTransmission()](#begintransmission) and transmits the bytes that were queued by write()
+Ends a transmission to a slave device that was begun by [beginTransmission()](#begintransmission) and transmits the bytes that were queued by `write()`.
 
 ```c
-uint32_t endTransmission(uint8_t sendStop = false)	
+Wire.endTransmission();	
 ```
 
-| **Syntax**     | `Wire.endTransmission();` <br> `Wire.endTransmission(sendStop);`                                                                                                                               |
+```c
+Wire.endTransmission(sendStop);
+```
+
+| **Function**   | `uint32_t endTransmission(uint8_t sendStop = false)`                                                                                                                                           |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **sendStop(optional)** <br> - **true** will send a stop message, releasing the bus after transmission. <br>  - **false** will send a restart, keeping the connection active (default = false). |
-| **Returns**    | 0	- success <br>  1- fail                                                                                                                                                                      |
+| **Returns**    | 0	- success <br> 1- fail                                                                                                                                                                       |
 
 ::: details Click to View Example
 ```c{8}
@@ -842,16 +880,21 @@ void loop() {
 :::
 ### requestFrom()
 
-Used by the master to request bytes from a slave device. The bytes may then be retrieved with the [available()](#available-2) and [read()](#read-2) functions
+Used by the master to request bytes from a slave device. The bytes may then be retrieved with the [available()](#available-2) and [read()](#read-2) functions.
 
 ```c
-uint8_t requestFrom(uint8_t	address, uint8_t quantity, uint8_t sendStop)		
+Wire.requestFrom(address, quantity);
 ```
 
-| **Syntax**     | `Wire.requestFrom(address, quantity);`  <br> `Wire.requestFrom(address, quantity, sendStop);`                                                                                                                                                                                                                                               |
+```c
+Wire.requestFrom(address, quantity, sendStop);
+```
+
+
+| **Function**   | `uint8_t requestFrom(uint8_t	address, uint8_t quantity, uint8_t sendStop)`                                                                                                                                                                                                                                                                  |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **address** - The 7-bit address of the device to request bytes from <br> **quantity** - The number of bytes to request <br>  **sendStop** <br> - **true** will send a stop message after the request, releasing the bus. <br> - **false** will continually send a restart after the request, keeping the connection active(default = false) |
-| **Returns**    | The number of bytes returned from the slave device(Type: byte)                                                                                                                                                                                                                                                                              |
+| **Returns**    | The number of bytes returned from the slave device (Type: byte)                                                                                                                                                                                                                                                                             |
 
 ::: details Click to View Example
 ```c{10}
@@ -878,10 +921,14 @@ void loop() {
 
 ### write()
 
-Writes data to a slave device
+Writes data to a slave device.
 
 ```c
-virtual size_t write(const uint8_t* data, size_t size)	
+Wire.write(value);
+```
+
+```c
+Wire.write(data, size);
 ```
 
 ::: tip 📝 NOTE
@@ -889,10 +936,10 @@ In-between calls to [beginTransmission()](#begintransmission) and [endTransmissi
 :::
 
 
-| **Syntax**     | `Wire.write(value);` <br> `Wire.write(data, size);`                                                                                            |
+| **Function**   | `virtual size_t write(const uint8_t* data, size_t size)`                                                                                       |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **value** - A value to send as a single byte <br> **data** - An array of data to send as bytes <br> **size** - The number of bytes to transmit |
-| **Returns**    | `write()` will return the number of bytes written, though reading that number is optional(Type: byte)                                          |
+| **Returns**    | `write()` will return the number of bytes written, though reading that number is optional (Type: byte)                                         |
 
 ::: details Click to View Example
 ```c{7}
@@ -919,16 +966,16 @@ In-between calls to [beginTransmission()](#begintransmission) and [endTransmissi
 
 ### available()
 
-Returns the number of bytes available for retrieval with [read()](#read-2)
+Returns the number of bytes available for retrieval with [read()](#read-2).
 
 ```c
-virtual int available(void)	
+Wire.available();
 ```
 
 
-| **Syntax**  | `Wire.available();`                       |
-| ----------- | ----------------------------------------- |
-| **Returns** | The number of bytes available for reading |
+| **Function** | `virtual int available(void)`             |
+| ------------ | ----------------------------------------- |
+| **Returns**  | The number of bytes available for reading |
 
 ::: details Click to View Example
 ```c{12}
@@ -958,12 +1005,12 @@ void loop() {
 Reads a byte that was transmitted from a slave device to a master
 
 ```c
-virtual int read(void)
+Wire.read();
 ```
 
-| **Syntax**  | `Wire.read();`         |
-| ----------- | ---------------------- |
-| **Returns** | The next byte received |
+| **Function** | `virtual int read(void)` |
+| ------------ | ------------------------ |
+| **Returns**  | The next byte received   |
 
 
 ::: tip 📝 NOTE
@@ -997,42 +1044,40 @@ void loop() {
 
 ### begin()
 
-Initializes the SPI bus by setting SCK, MOSI, and SS to outputs, pulling SCK and MOSI low, and SS high
+Initializes the SPI bus by setting SCK, MOSI, and SS to outputs, pulling SCK and MOSI low, and SS high.
 
 ```c
-void begin()	
+SPI.begin()
 ```
 
-| **Syntax**  | `SPI.begin()` |
-| ----------- | ------------- |
-| **Returns** | void          |
+| **Function** | `void begin()` |
+| ------------ | -------------- |
+| **Returns**  | void           |
 
 ### end()
 
-Disables the SPI bus
+Disables the SPI bus.
 
 ```c
-void end()	
+SPI.end()	
 ```
 
-| **Syntax**  | `SPI.end()` |
-| ----------- | ------------- |
-| **Returns** | void          |
+| **Function** | `void end()` |
+| ------------ | ------------ |
+| **Returns**  | void         |
 
 ### transfer16()
 
 SPI transfer is based on a simultaneous send and receive: the received data is returned in receivedVal16.
 
 ```c
-uint16_t transfer16	(uint16_t data)	
+receivedVal16 = SPI.transfer16(val16)	
 ```
 
-| **Syntax**     | `receivedVal16 = SPI.transfer16(val16)`                     |
+| **Function**   | `uint16_t transfer16	(uint16_t data)`                       |
 | -------------- | ----------------------------------------------------------- |
-| **Parameters** | **val16**	- the two bytes variable to send out over the bus |
+| **Parameters** | **val16** - the two bytes variable to send out over the bus |
 | **Returns**    | the received data                                           |
-
-
 
 
 ### transfer()
@@ -1040,79 +1085,82 @@ uint16_t transfer16	(uint16_t data)
 SPI transfer is based on a simultaneous send and receive: the received data is returned in receivedVal. In case of buffer transfers the received data is stored in the buffer in-place.
 
 ```c
-void transfer(void* buf, size_t count)	
+receivedVal = SPI.transfer(val)
 ```
 
-| **Syntax**     | `receivedVal = SPI.transfer(val)` <br> `SPI.transfer(buffer, size)`                               |
+```c
+SPI.transfer(buffer, size)
+```
+
+
+| **Function**   | `void transfer(void* buf, size_t count)`                                                          |
 | -------------- | ------------------------------------------------------------------------------------------------- |
-| **Parameters** | **val** -	the byte to send out over the bus <br> **buffer** -	the array of data to be transferred |
+| **Parameters** | **val** - the byte to send out over the bus <br> **buffer** - the array of data to be transferred |
 | **Returns**    | the  received data                                                                                |
-
-
 
 ### beginTransaction()
 
-Initializes the SPI bus using the defined SPISettings
+Initializes the SPI bus using the defined SPISettings.
 
 ```c
-void beginTransaction(SPISettings settings)	
+SPI.beginTransactions(mySetting)	
 ```
 
-| **Syntax**     | `SPI.beginTransactions(mySetting)`                           |
+| **Function**   | `void beginTransaction(SPISettings settings)`                |
 | -------------- | ------------------------------------------------------------ |
 | **Parameters** | **mySetting** - the chosen settings according to SPISettings |
 | **Returns**    | void                                                         |
 
 ### endTransaction()
 
-Stop using the SPI bus
+Stops using the SPI bus.
 
 ```c
-void endTransaction()
+SPI.endTransaction()
 ```
 
-| **Syntax**  | `SPI.endTransaction()` |
-| ----------- | ---------------------- |
-| **Returns** | void                   |
+| **Function** | `void endTransaction()` |
+| ------------ | ----------------------- |
+| **Returns**  | void                    |
 
 ### setBitOrder()
 
-Sets the order of the bits shifted out of and into the SPI bus, either LSBFIRST (least-significant bit first) or MSBFIRST (most-significant bit first)
+Sets the order of the bits shifted out of and into the SPI bus, either LSBFIRST (least-significant bit first) or MSBFIRST (most-significant bit first).
 
 ```c
-void setBitOrder(BitOrder order)	
+SPI.setBitOrder(order)	
 ```
 
-| **Syntax**     | `SPI.setBitOrder(order)`              |
-| -------------- | ------------------------------------- |
-| **Parameters** | **order**	either LSBFIRST or MSBFIRST |
-| **Returns**    | void                                  |
+| **Function**   | `void setBitOrder(BitOrder order)`      |
+| -------------- | --------------------------------------- |
+| **Parameters** | **order** - either LSBFIRST or MSBFIRST |
+| **Returns**    | void                                    |
 
 ### setDataMode()
 
-Sets the SPI data mode: that is, clock polarity and phase
+Sets the SPI data mode: that is, clock polarity and phase.
 
 ```c
-void setDataMode(uint8_t mode)
+SPI.setDataMode(mode)
 ```
 
-| **Syntax**     | `SPI.setDataMode(mode)`                                         |
-| -------------- | --------------------------------------------------------------- |
-| **Parameters** | **mode**	- SPI_MODE0 <br>SPI_MODE1 <br> SPI_MODE2 <br>SPI_MODE3 |
-| **Returns**    | void                                                            |
+| **Function**   | `void setDataMode(uint8_t mode)`                                 |
+| -------------- | ---------------------------------------------------------------- |
+| **Parameters** | **mode**	- SPI_MODE0 <br>SPI_MODE1 <br> SPI_MODE2 <br> SPI_MODE3 |
+| **Returns**    | void                                                             |
 
 ### setClockDivider()
 
-Sets the SPI clock divider relative to the system clock
+Sets the SPI clock divider relative to the system clock.
 
 ```c
-void setClockDivider(uint32_t uc_div)	
+SPI.setClockDivider(divider)	
 ```
 
-| **Syntax**     | `SPI.setClockDivider(divider)`                                                                                                                                       |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **divider**	- SPI_CLOCK_DIV2 <br>SPI_CLOCK_DIV4 <br>SPI_CLOCK_DIV8 <br>SPI_CLOCK_DIV16 <br>SPI_CLOCK_DIV32 <br>SPI_CLOCK_DIV64 <br>SPI_CLOCK_DIV128 SPI_CLOCK_DIV256 |
-| **Returns**    | void                                                                                                                                                                 |
+| **Function**   | `void setClockDivider(uint32_t uc_div)`                                                                                                                                    |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **divider** - SPI_CLOCK_DIV2 <br> SPI_CLOCK_DIV4 <br> SPI_CLOCK_DIV8 <br> SPI_CLOCK_DIV16 <br> SPI_CLOCK_DIV32 <br> SPI_CLOCK_DIV64 <br> SPI_CLOCK_DIV128 SPI_CLOCK_DIV256 |
+| **Returns**    | void                                                                                                                                                                       |
 
 ## Time
 
@@ -1121,10 +1169,10 @@ void setClockDivider(uint32_t uc_div)
 Pauses the program for the amount of time (in milliseconds) specified as parameter. (There are 1000 milliseconds in a second.)
 
 ```c
-#define delay  udrv_app_delay_ms
+delay(ms);
 ```
 
-| **Syntax**     | `delay(ms);`                                 |
+| **Function**   | `#define delay  udrv_app_delay_ms`           |
 | -------------- | -------------------------------------------- |
 | **Parameters** | **ms** - The number of milliseconds to pause |
 
@@ -1144,17 +1192,18 @@ void loop() {
 }
 ```
 :::
+
 ### delayMicroseconds
 
-Pauses the program for the amount of time (in microseconds) specified by the parameter. There are a thousand microseconds in a millisecond and a million microseconds in a second
+Pauses the program for the amount of time (in microseconds) specified by the parameter. There are a thousand microseconds in a millisecond and a million microseconds in a second.
 
 ```c
-#define delayMicroseconds udrv_app_delay_us
+delayMicroSeconds(us);
 ```
 
-| **Syntax**     | `delayMicroSeconds(us);`                      |
-| -------------- | -------------------------------------------- |
-| **Parameters** | **us** - The number of microseconds to pause |
+| **Function**   | `#define delayMicroseconds udrv_app_delay_us` |
+| -------------- | --------------------------------------------- |
+| **Parameters** | **us** - The number of microseconds to pause  |
 
 
 ::: details Click to View Example
@@ -1173,17 +1222,18 @@ void loop() {
 }
 ```
 :::
+
 ### millis
 
-Returns the number of milliseconds passed since the device began running the current program
+Returns the number of milliseconds passed since the device began running the current program.
 
 ```c
-unsigned long millis()
+millis();
 ```
 
-| **Syntax**  | `millis();`                                                                                         |
-| ----------- | --------------------------------------------------------------------------------------------------- |
-| **Returns** | The number of milliseconds since the device began running the current program(Type: unsigned long). |
+| **Function** | `unsigned long millis()`                                                                             |
+| ------------ | ---------------------------------------------------------------------------------------------------- |
+| **Returns**  | The number of milliseconds since the device began running the current program (Type: unsigned long). |
 
 ::: details Click to View Example
 ```c{8}
@@ -1204,15 +1254,15 @@ void loop() {
 
 ### micros
 
-Returns the number of microseconds since the device began running the current program
+Returns the number of microseconds since the device began running the current program.
 
 ```c
 unsigned long micros()	
 ```
 
-| **Syntax**  | `micros();`                                                                                    |
-| ----------- | ---------------------------------------------------------------------------------------------- |
-| **Returns** | Number of microseconds since the device began running the current program(Type: unsigned long) |
+| **Function** | `micros();`                                                                                     |
+| ------------ | ----------------------------------------------------------------------------------------------- |
+| **Returns**  | Number of microseconds since the device began running the current program (Type: unsigned long) |
 
 ::: details Click to View Example
 ```c{8}
@@ -1230,6 +1280,7 @@ void loop() {
 }
 ```
 :::
+
 ## AdvancedIO
 
 ### tone()
@@ -1237,13 +1288,14 @@ void loop() {
 Generates a square wave of the specified frequency (and 50% duty cycle) on a pin. A duration can be specified, otherwise the wave continues until a call to [noTone()](#notone). Only one tone can be generated at a time. If a tone is already playing on a different pin, the call to tone() will have no effect. If the tone is playing on the same pin, the call will set its frequency.
 
 ```c
-void tone(uint8_t pin, uint32_t frequency, uint64_t duration = 0)	
+tone(pin, frequency);
 ```
 
+```c
+tone(pin, frequency, duration);
+```
 
-
-
-| **Syntax**     | `tone(pin, frequency);` <br> `tone(pin, frequency, duration);`                                                                                                                                                                                      |
+| **Function**   | `void tone(uint8_t pin, uint32_t frequency, uint64_t duration = 0)`                                                                                                                                          |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Parameters** | **pin** - The device pin on which to generate the tone <br> **frequency** - The frequency of the tone in hertz <br> **duration(optional)** - The duration of the tone in milliseconds (default = no timeout) |
 | **Returns**    | void                                                                                                                                                                                                         |
@@ -1278,14 +1330,13 @@ void loop() {
 
 ### noTone()
 
-Stops the generation of a square wave triggered by [tone()](#tone)
+Stops the generation of a square wave triggered by [tone()](#tone).
 
 ```c
-void noTone(uint8_t pin)
+noTone(pin);
 ```	
 
-
-| **Syntax**     | `noTone(pin);`                                                |
+| **Function**   | `void noTone(uint8_t pin)`                                    |
 | -------------- | ------------------------------------------------------------- |
 | **Parameters** | **pin** - The device pin on which to stop generating the tone |
 | **Returns**    | void                                                          |
@@ -1317,14 +1368,16 @@ void loop() {
 }
 ```
 :::
+
 ### shiftOut()
 
 Shifts out a byte of data one bit at a time. Starts from either the most (i.e. the leftmost) or least (rightmost) significant bit. Each bit is written in turn to a data pin, after which a clock pin is pulsed (taken high, then low) to indicate that the bit is available.
+
 ```c
-void shiftOut(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, uint8_t val)	
+shiftOut(dataPin, clockPin, bitOrder, val);
 ```
 
-| **Syntax**     | `shiftOut(dataPin, clockPin, bitOrder, val);`                                                                                                                                                                                                                              |
+| **Function**   | `void shiftOut(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, uint8_t val)`                                                                                                                                                                                          |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **dataPin** - The pin on which to output each bit <br> **clockPin** - The pin to toggle once the dataPin has been set to the correct value <br> **bitOrder** - Which order to shift out the bits, either **MSBFIRST** or **LSBFIRST** <br> **val** - The data to shift out |
 | **Returns**    | void                                                                                                                                                                                                                                                                       |
@@ -1332,24 +1385,30 @@ void shiftOut(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, uint8_t val)
 ### shiftIn()
 
 Shifts in a byte of data one bit at a time. Starts from either the most (i.e. the leftmost) or least (rightmost) significant bit. For each bit, the clock pin is pulled high, the next bit is read from the data line, and then the clock pin is taken low.
+
 ```c
-uint32_t shiftIn(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder)	
+byte incoming = shiftIn(dataPin, clockPin, bitOrder);	
 ```
 
-| **Syntax**     | `byte incoming = shiftIn(dataPin, clockPin, bitOrder);`                                                                                                                                                                                |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Function**   | `uint32_t shiftIn(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder)`                                                                                                                                                               |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **dataPin** - The pin on which to output each bit <br> **clockPin** - The pin to toggle once the dataPin has been set to the correct value <br> **bitOrder** - Which order to shift out the bits, either **MSBFIRST** or **LSBFIRST** |
-| **Returns**    | The value read(Type: byte);                                                                                                                                                                                                            |
+| **Returns**    | The value read(Type: byte);                                                                                                                                                                                                           |
 
 
 ### pulseIn()
 
 Reads a pulse (either HIGH or LOW) on a pin. For example, if value is HIGH, pulseIn() waits for the pin to go from LOW to HIGH, starts timing, then waits for the pin to go LOW and stops timing. Returns the length of the pulse in microseconds or gives up and returns 0 if no complete pulse was received within the timeout.
+
 ```c
-unsigned long pulseIn(uint8_t pin, uint8_t state, unsigned long timeout = 1000000L)	
+pulseIn(pin, state);
 ```
 
-| **Syntax**     | `pulseIn(pin, state);`    <br> `pulseIn(pin, state, timeout);`                                                                                                                                                               |
+```c
+pulseIn(pin, state, timeout);
+```
+
+| **Function**   | `unsigned long pulseIn(uint8_t pin, uint8_t state, unsigned long timeout = 1000000L)`                                                                                                                                        |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **pin** - The pin on which you want to read a pulse <br> **state** - Type of pulse to read: either HIGH or LOW <br> **timeout(optional)** - The number of microseconds to wait for the pulse to start; default is one second |
 | **Returns**    | The length of the pulse (in microseconds) or 0 if no pulse started before the timeout(Type: unsigned long)                                                                                                                   |
@@ -1386,26 +1445,30 @@ void loop() {
 `pulseInLong()` is an alternative to `pulseIn()` which is better at handling long pulse and interrupt affected scenarios
 
 ```c
-unsigned long pulseInLong(uint8_t pin, uint8_t state, unsigned long timeout = 1000000L)	
+pulseInLong(pin, state);
 ```
 
-| **Syntax**     | `pulseInLong(pin, state);` <br> `pulseInLong(pin, state, timeout);`                                                                                                                                                           |
+```c
+pulseInLong(pin, state, timeout);
+```
+
+| **Function**   | `unsigned long pulseInLong(uint8_t pin, uint8_t state, unsigned long timeout = 1000000L)`                                                                                                                                     |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **pin** - The pin on which you want to read a pulse <br> **state** - Type of pulse to read: either HIGH or LOW <br> **timeout(optional)** - The number of microseconds to wait for the pulse to start; default is one second. |
 | **Returns**    | The length of the pulse (in microseconds) or 0 if no pulse started before the timeout(Type: unsigned long).                                                                                                                   |
 
-## Characters
 
+## Characters
 
 ### isAlphaNumeric()
 
-Analyze if a char is alphanumeric (that is a letter or a numbers). Returns true if thisChar contains either a number or a letter
+Analyze if a char is alphanumeric (that is a letter or a numbers). Returns true if thisChar contains either a number or a letter.
 
 ```c
-boolean isAlphaNumeric(int thisChar)	
+isAlphaNumeric(thisChar);	
 ```
 
-| **Syntax**     | `isAlphaNumeric(thisChar);`                                                              |
+| **Function**   | `boolean isAlphaNumeric(int thisChar)`                                                   |
 | -------------- | ---------------------------------------------------------------------------------------- |
 | **Parameters** | **thisChar**	variable(Type: char)                                                        |
 | **Returns**    | **TRUE**: The character is alphanumeric<br> **FALSE**: The character is not alphanumeric |
@@ -1433,16 +1496,16 @@ void loop() {
 
 ### isAlpha()
 
-Analyze if a char is alpha (that is a letter). Returns true if thisChar contains a letter
+Analyze if a char is alpha (that is a letter). Returns true if thisChar contains a letter.
 
 ```c
-boolean isAlpha(int thisChar)	
+isAlpha(thisChar);
 ```
 
-| **Syntax**     | `isAlpha(thisChar);`                                                               |
-| -------------- | ---------------------------------------------------------------------------------- |
-| **Parameters** | **thisChar**	variable(Type: char)                                                  |
-| **Returns**    | **TRUE**	: The character is a letter<br> **FALSE**	: The character is not a letter |
+| **Function**   | `boolean isAlpha(int thisChar)`                                                   |
+| -------------- | --------------------------------------------------------------------------------- |
+| **Parameters** | **thisChar**	variable(Type: char)                                                 |
+| **Returns**    | **TRUE**: The character is a letter<br> **FALSE**	: The character is not a letter |
 
 ::: details Click to View Example
 ```c {6}
@@ -1464,20 +1527,18 @@ void loop() {
 ```
 :::
 
-
-
 ### isAscii()
 
-Analyze if a char is Ascii. Returns true if thisChar contains an Ascii character
+Analyze if a char is Ascii. Returns true if thisChar contains an Ascii character.
 
 ```c
-boolean isAscii(int thisChar)	
+isAscii(thisChar);	
 ```
 
-| **Syntax**     | `isAscii(thisChar);`                                                          |
-| -------------- | ----------------------------------------------------------------------------- |
-| **Parameters** | **thisChar**	variable(Type: char)                                             |
-| **Returns**    | **TRUE**	: The character is Ascii <br> **FALSE**	: The character is not Ascii |
+| **Function**   | `boolean isAscii(int thisChar)`                                              |
+| -------------- | ---------------------------------------------------------------------------- |
+| **Parameters** | **thisChar**	variable(Type: char)                                            |
+| **Returns**    | **TRUE**: The character is Ascii <br> **FALSE**	: The character is not Ascii |
 
 
 ::: details Click to View Example
@@ -1502,16 +1563,16 @@ void loop() {
 
 ### isWhitespace
 
-Analyze if a char is a space character. Returns true if the argument is a space or horizontal tab ('')
+Analyze if a char is a space character. Returns true if the argument is a space or horizontal tab ('').
 
 ```c
-boolean isWhitespace(int thisChar)	
+isWhitespace(thisChar);	
 ```
 
-| **Syntax**     | `isWhitespace(thisChar);`                                                                      |
-| -------------- | ---------------------------------------------------------------------------------------------- |
-| **Parameters** | **thisChar**	variable(Type: char)                                                              |
-| **Returns**    | **TRUE**	: The character is a space or tab<br> **FALSE**	: The character is not a space or tab |
+| **Function**   | `boolean isWhitespace(int thisChar)`                                                         |
+| -------------- | -------------------------------------------------------------------------------------------- |
+| **Parameters** | **thisChar**	variable(Type: char)                                                            |
+| **Returns**    | **TRUE**: The character is a space or tab<br> **FALSE**: The character is not a space or tab |
 
 ::: details Click to View Example
 ```c {6}
@@ -1536,16 +1597,16 @@ void loop() {
 
 ### isControl()
 
-Analyze if a char is a control character. Returns true if thisChar is a control character
+Analyze if a char is a control character. Returns true if thisChar is a control character.
 
 ```c
-boolean isControl(int thisChar)	
+isControl(thisChar);	
 ```
 
-| **Syntax**     | `isControl(thisChar);`                                                                                   |
-| -------------- | -------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **thisChar**	variable(Type: char)                                                                        |
-| **Returns**    | **TRUE**	: The character is a control character<br> **FALSE**	: The character is not a control character |
+| **Function**   | `boolean isControl(int thisChar)`                                                                       |
+| -------------- | ------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **thisChar**	variable(Type: char)                                                                       |
+| **Returns**    | **TRUE**: The character is a control character <br> **FALSE**: The character is not a control character |
 
 ::: details Click to View Example
 ```c {6}
@@ -1573,13 +1634,13 @@ void loop() {
 Analyze if a char is a digit (that is a number). Returns true if thisChar is a number.
 
 ```c
-boolean isDigit(int thisChar)	
+isDigit(thisChar);	
 ```
 
-| **Syntax**     | `isDigit(thisChar);`                                                                |
-| -------------- | ----------------------------------------------------------------------------------- |
-| **Parameters** | **thisChar**	variable(Type: char)                                                   |
-| **Returns**    | **TRUE**	: The character is a number <br> **FALSE**	: The character is not a number |
+| **Function**   | `boolean isDigit(int thisChar)`                                                   |
+| -------------- | --------------------------------------------------------------------------------- |
+| **Parameters** | **thisChar**	variable(Type: char)                                                 |
+| **Returns**    | **TRUE**: The character is a number <br> **FALSE**: The character is not a number |
 
 ::: details Click to View Example
 ```c {6}
@@ -1601,20 +1662,18 @@ void loop() {
 ```
 :::
 
-
-
 ### isGraph()
 
-Analyze if a char is printable with some content (space is printable but has no content). Returns true if thisChar is printable
+Analyze if a char is printable with some content (space is printable but has no content). Returns true if thisChar is printable.
 
 ```c
-boolean isGraph(int thisChar)	
+isGraph(thisChar);	
 ```
 
-| **Syntax**     | `isGraph(thisChar);`                                                                 |
-| -------------- | ------------------------------------------------------------------------------------ |
-| **Parameters** | **thisChar**	variable(Type: char)                                                    |
-| **Returns**    | **TRUE**	: The character is printable<br> **FALSE**	: The character is not printable |
+| **Function**   | `boolean isGraph(int thisChar)`                                                     |
+| -------------- | ----------------------------------------------------------------------------------- |
+| **Parameters** | **thisChar**	variable(Type: char)                                                   |
+| **Returns**    | **TRUE**: The character is printable <br> **FALSE**: The character is not printable |
 
 ::: details Click to View Example
 ```c {6}
@@ -1638,15 +1697,16 @@ void loop() {
 
 ### isLowerCase()
 
-Analyze if a char is lower case (that is a letter in lower case). Returns true if thisChar contains a letter in lower case
+Analyze if a char is lower case (that is a letter in lower case). Returns true if thisChar contains a letter in lower case.
+
 ```c
-boolean isLowerCase(int thisChar)	
+isLowerCase(thisChar);	
 ```
 
-| **Syntax**     | `isLowerCase(thisChar);`                                                                |
-| -------------- | --------------------------------------------------------------------------------------- |
-| **Parameters** | **thisChar**	variable(Type: char)                                                       |
-| **Returns**    | **TRUE**	: The character is lower case <br> **FALSE**	: The character is not lower case |
+| **Function**   | `boolean isLowerCase(int thisChar)`                                                   |
+| -------------- | ------------------------------------------------------------------------------------- |
+| **Parameters** | **thisChar**	variable(Type: char)                                                     |
+| **Returns**    | **TRUE**: The character is lower case <br> **FALSE**: The character is not lower case |
 
 ::: details Click to View Example
 ```c {6}
@@ -1672,14 +1732,15 @@ void loop() {
 ### isPrintable()
 
 Analyze if a char is printable (that is any character that produces an output, even a blank space). Returns true if thisChar is printable
+
 ```c
-boolean isPrintable(int thisChar)	
+isPrintable(thisChar);	
 ```
 
-| **Syntax**     | `isPrintable(thisChar);`                                                             |
-| -------------- | ------------------------------------------------------------------------------------ |
-| **Parameters** | **thisChar**	variable(Type: char)                                                    |
-| **Returns**    | **TRUE**	: The character is printable<br> **FALSE**	: The character is not printable |
+| **Function**   | `boolean isPrintable(int thisChar)`                                                 |
+| -------------- | ----------------------------------------------------------------------------------- |
+| **Parameters** | **thisChar**	variable(Type: char)                                                   |
+| **Returns**    | **TRUE**: The character is printable <br> **FALSE**: The character is not printable |
 
 ::: details Click to View Example
 ```c {6}
@@ -1700,18 +1761,19 @@ void loop() {
 }
 ```
 :::
+
 ### isPunct()
 
-Analyze if a char is punctuation (that is a comma, a semicolon, an exclamation mark and so on). Returns true if thisChar is punctuation
+Analyze if a char is punctuation (that is a comma, a semicolon, an exclamation mark and so on). Returns true if thisChar is punctuation.
 
 ```c
-boolean isPunct(int thisChar)	
+isPunct(thisChar);	
 ```
 
-| **Syntax**     | `isPunct(thisChar);`                                                                         |
-| -------------- | -------------------------------------------------------------------------------------------- |
-| **Parameters** | **thisChar**	variable(Type: char)                                                            |
-| **Returns**    | **TRUE**	: The character is a punctuation<br> **FALSE**	: The character is not a punctuation |
+| **Function**   | `boolean isPunct(int thisChar)`                                                            |
+| -------------- | ------------------------------------------------------------------------------------------ |
+| **Parameters** | **thisChar**	variable(Type: char)                                                          |
+| **Returns**    | **TRUE**: The character is a punctuation<br> **FALSE**: The character is not a punctuation |
 
 ::: details Click to View Example
 ```c {6}
@@ -1735,15 +1797,16 @@ void loop() {
 
 ### isSpace()
 
-Analyze if a char is a white-space character. Returns true if the argument is a space, form feed (''), newline (''), carriage return (''), horizontal tab (''), or vertical tab ('')
+Analyze if a char is a white-space character. Returns true if the argument is a space, form **feed ('')**, **newline ('')**, **carriage return ('')**, **horizontal tab ('')**, or **vertical tab ('')**.
+
 ```c
-boolean isSpace(int thisChar)	
+isSpace(thisChar);	
 ```
 
-| **Syntax**     | `isSpace(thisChar);`                                                                     |
-| -------------- | ---------------------------------------------------------------------------------------- |
-| **Parameters** | **thisChar**	variable(Type: char)                                                        |
-| **Returns**    | **TRUE**	: The character is white-space<br> **FALSE**	: The character is not white-space |
+| **Function**   | `boolean isSpace(int thisChar)`                                                         |
+| -------------- | --------------------------------------------------------------------------------------- |
+| **Parameters** | **thisChar**	variable(Type: char)                                                       |
+| **Returns**    | **TRUE**: The character is white-space <br> **FALSE**: The character is not white-space |
 
 ::: details Click to View Example
 ```c {6}
@@ -1765,18 +1828,18 @@ void loop() {
 ```
 :::
 
-
 ### isUpperCase()
 
-Analyze if a char is upper case (that is, a letter in upper case). Returns true if thisChar is upper case
+Analyze if a char is upper case (that is, a letter in upper case). Returns true if thisChar is upper case.
+
 ```c
-boolean isUpperCase(int thisChar)	
+isUpperCase(thisChar);	
 ```
 
-| **Syntax**     | `isUpperCase(thisChar);`                                                               |
-| -------------- | -------------------------------------------------------------------------------------- |
-| **Parameters** | **thisChar**	variable(Type: char)                                                      |
-| **Returns**    | **TRUE**	: The character is upper case<br> **FALSE**	: The character is not upper case |
+| **Function**   | `boolean isUpperCase(int thisChar)`                                                   |
+| -------------- | ------------------------------------------------------------------------------------- |
+| **Parameters** | **thisChar**	variable(Type: char)                                                     |
+| **Returns**    | **TRUE**: The character is upper case <br> **FALSE**: The character is not upper case |
 
 ::: details Click to View Example
 ```c {6}
@@ -1800,15 +1863,16 @@ void loop() {
 
 ### isHexadecimalDigit()
 
-Analyze if a char is an hexadecimal digit (A-F, 0-9). Returns true if thisChar contains an hexadecimal digit
+Analyze if a char is an hexadecimal digit (A-F, 0-9). Returns true if thisChar contains an hexadecimal digit.
+
 ```c
-boolean isHexadecimalDigit(int thisChar)	
+isHexadecimalDigit(thisChar);	
 ```
 
-| **Syntax**     | `isHexadecimalDigit(thisChar);`                                                                            |
-| -------------- | ---------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **thisChar**	variable(Type: char)                                                                          |
-| **Returns**    | **TRUE**	: The character is an hexadecimal digit<br> **FALSE**	: The character is not an hexadecimal digit |
+| **Function**   | `boolean isHexadecimalDigit(int thisChar)`                                                                |
+| -------------- | --------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **thisChar**	variable(Type: char)                                                                         |
+| **Returns**    | **TRUE**: The character is an hexadecimal digit <br> **FALSE**: The character is not an hexadecimal digit |
 
 ::: details Click to View Example
 ```c {6}
@@ -1838,11 +1902,10 @@ void loop() {
 Reads a bit of a number.
 
 ```c
-#define bitRead(value, bit)(((value) >> (bit)) & 0x01)
+bitRead(value, bit);
 ```
 
-
-| **Syntax**     | `bitRead(value, bit);`                                                                                                              |
+| **Function**   | `#define bitRead(value, bit)(((value) >> (bit)) & 0x01)`                                                                            |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **value** - The number from which to read <br> **bit** - Which bit to read, starting at 0 for the least-significant (rightmost) bit |
 | **Returns**    | The value of the bit (0 or 1)                                                                                                       |
@@ -1876,10 +1939,10 @@ void loop() {
 Sets (writes a 1 to) a bit of a numeric variable.
 
 ```c
-#define bitSet(value, bit)((value) |= (1UL << (bit)))
+bitSet(value, bit);
 ```
 
-| **Syntax**     | `bitSet(value, bit);`                                                                                                                      |
+| **Function**   | `#define bitSet(value, bit)((value)                                                                                                        | = (1UL << (bit)))` |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Parameters** | **value** - The numeric variable whose bit to set <br> **bit** - Which bit to set, starting at 0 for the least-significant (rightmost) bit |
 | **Returns**    | void                                                                                                                                       |
@@ -1908,10 +1971,10 @@ void loop() {
 Clears (writes a 0 to) a bit of a numeric variable.
 
 ```c
-#define bitClear(value,	bit)((value) &= ~(1UL << (bit)))
+bitClear(value, bit);
 ```
 
-| **Syntax**     | `bitClear(value, bit);`                                                                                                                        |
+| **Function**   | `#define bitClear(value,	bit)((value) &= ~(1UL << (bit)))`                                                                                     |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **value** - The numeric variable whose bit to clear <br> **bit** - Which bit to clear, starting at 0 for the least-significant (rightmost) bit |
 | **Returns**    | The value of the numeric variable after the bit at position n is cleared                                                                       |
@@ -1940,10 +2003,10 @@ void loop() {
 Writes a bit of a numeric variable.
 
 ```c
-#define bitWrite(value,	bit, bitvalue) ((bitvalue) ? bitSet(value, bit) : bitClear(value, bit))
+bitWrite(value, bit, bitvalue);
 ```
 
-| **Syntax**     | `bitWrite(value, bit, bitvalue);`                                                                                                                                                                                      |
+| **Function**   | `#define bitWrite(value,	bit, bitvalue) ((bitvalue) ? bitSet(value, bit) : bitClear(value, bit))`                                                                                                                      |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **value** - The numeric variable to which to write <br> **bit** - Which bit of the number to write, starting at 0 for the least-significant (rightmost) bit <br> **bitvalue** - The value to write to the bit (0 or 1) |
 | **Returns**    | void                                                                                                                                                                                                                   |
@@ -1983,13 +2046,13 @@ void loop() {
 
 ### bit
 
-Computes the value of the specified bit (bit 0 is 1, bit 1 is 2, bit 2 is 4, etc.)
+Computes the value of the specified bit. (bit 0 is 1, bit 1 is 2, bit 2 is 4, etc.)
 
 ```c
-#define bit(b)(1UL << (b))
+bit(b);
 ```
 
-| **Syntax**     | `bit(b);`                              |
+| **Function**   | `#define bit(b)(1UL << (b))`           |
 | -------------- | -------------------------------------- |
 | **Parameters** | **b** - The bit whose value to compute |
 | **Returns**    | The value of the bit                   |
@@ -2016,13 +2079,13 @@ void loop() {
 Extracts the low-order (rightmost) byte of a variable (e.g. a word).
 
 ```c
-#define lowByte(w)((uint8_t) ((w) & 0xff))
+lowByte(w);
 ```
 
-| **Syntax**     | `lowByte(w);`               |
-| -------------- | --------------------------- |
-| **Parameters** | **w** - A value of any type |
-| **Returns**    | byte                        |
+| **Function**   | `#define lowByte(w)((uint8_t) ((w) & 0xff))` |
+| -------------- | -------------------------------------------- |
+| **Parameters** | **w** - A value of any type                  |
+| **Returns**    | byte                                         |
 
 ::: details Click to View Example
 ```c{6,9}
@@ -2044,16 +2107,16 @@ void loop() {
 
 ### highByte
 
-Extracts the high-order (leftmost) byte of a word (or the second lowest byte of a larger data type)
+Extracts the high-order (leftmost) byte of a word (or the second lowest byte of a larger data type).
 
 ```c
-#define highByte(w)((uint8_t)((w) >> 8))
+highByte(w);
 ```
 
-| **Syntax**     | `highByte(w);`              |
-| -------------- | --------------------------- |
-| **Parameters** | **w** - A value of any type |
-| **Returns**    | byte                        |
+| **Function**   | `#define highByte(w)((uint8_t)((w) >> 8))` |
+| -------------- | ------------------------------------------ |
+| **Parameters** | **w** - A value of any type                |
+| **Returns**    | byte                                       |
 
 ::: details Click to View Example
 ```c{6,9}
@@ -2081,10 +2144,10 @@ void loop() {
 Configures the specified pin to behave either as an input or an output.
 
 ```c
-void pinMode(uint8_t pin, uint8_t mode)	
+pinMode(pin, mode);
 ```
 
-| **Syntax**     | `pinMode(pin, mode);`                                                                        |
+| **Function**   | `void pinMode(uint8_t pin, uint8_t mode)`                                                    |
 | -------------- | -------------------------------------------------------------------------------------------- |
 | **Parameters** | **pin** - The pin which you want to set <br> **mode** - `INPUT`, `OUTPUT`, or `INPUT_PULLUP` |
 | **Returns**    | void                                                                                         |
@@ -2116,10 +2179,10 @@ void loop()
 Writes a HIGH or a LOW value to a digital pin.
 
 ```c
-void digitalWrite(uint8_t pin, uint8_t value)	
+digitalWrite(pin, value);
 ```
 
-| **Syntax**     | `digitalWrite(pin, value);`                                                     |
+| **Function**   | `void digitalWrite(uint8_t pin, uint8_t value)`                        |
 | -------------- | ---------------------------------------------------------------------- |
 | **Parameters** | **pin** - The pin which you want to write <br> **value** - HIGH or LOW |
 | **Returns**    | void                                                                   |
@@ -2152,10 +2215,10 @@ Reads the value from a specified digital pin, either HIGH or LOW.
 
 
 ```c
-int digitalRead	(uint8_t pin)	
+digitalRead(pin);
 ```
 
-| **Syntax**     | `digitalRead(pin);`                       |
+| **Function**   | `int digitalRead	(uint8_t pin)`          |
 | -------------- | ---------------------------------------- |
 | **Parameters** | **pin** - The pin which you want to read |
 | **Returns**    | HIGH or LOW(Type: int)                   |
@@ -2191,11 +2254,11 @@ void loop()
 Reads the value from the specified analog pin.
 
 ```c
-int analogRead(uint8_t pin)	
+analogRead(pin);
 ```
 
 
-| **Syntax**     | `analogRead(pin);`                                      |
+| **Function**   | `int analogRead(uint8_t pin)`                           |
 | -------------- | ------------------------------------------------------- |
 | **Parameters** | **pin** - The name of the analog input pin to read from |
 | **Returns**    | The analog reading on the pin(Type: int)                |
@@ -2206,23 +2269,24 @@ int analogRead(uint8_t pin)
 Configures the reference voltage used for analog input.
 
 ```c
-void analogReference(uint8_t type)	
+analogReference(type);	
 ```
 
-| **Syntax**     | `analogReference(type);`                                                                                                                                                      |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **type** - Which type of reference to use <br> Type List: <br> `RAK_ADC_MODE_DEFAULT`<br> `RAK_ADC_MODE_3_0` <br>`RAK_ADC_MODE_2_4` <br> `RAK_ADC_MODE_1_8` <br>`RAK_ADC_MODE_1_2` |
-| **Returns**    | void                                                                                                                                                                          |
+| **Function**   | `void analogReference(uint8_t type)`                                                                                                                                               |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **type** - Which type of reference to use <br> Type list: <br> `RAK_ADC_MODE_DEFAULT`<br> `RAK_ADC_MODE_3_0` <br>`RAK_ADC_MODE_2_4` <br> `RAK_ADC_MODE_1_8` <br>`RAK_ADC_MODE_1_2` |
+| **Returns**    | void                                                                                                                                                                               |
 
 
 ### analogWrite()
 
-Writes an analog value (PWM wave) to a pin. Can be used to light a LED at varying brightnesses or drive a motor at various speeds. After a call to analogWrite(), the pin will generate a steady rectangular wave of the specified duty cycle until the next call to analogWrite()
+Writes an analog value (PWM wave) to a pin. Can be used to light a LED at varying brightnesses or drive a motor at various speeds. After a call to `analogWrite()`, the pin will generate a steady rectangular wave of the specified duty cycle until the next call to `analogWrite()`.
+
 ```c
-void analogWrite(uint8_t pin, int value)	
+analogWrite(pin, value);	
 ```
 
-| **Syntax**     | `analogWrite(pin, value);`                                                                                           |
+| **Function**   | `void analogWrite(uint8_t pin, int value)`                                                                           |
 | -------------- | -------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **pin** - The pin which you want to read <br> **value** - The duty cycle: between 0 (always off) and 255 (always on) |
 | **Returns**    | void                                                                                                                 |
@@ -2267,19 +2331,18 @@ void loop() {
 ```
 :::
 
-
 ### analogReadResolution()
 
-analogReadResolution() is an extension of the Analog API for the Zero, Due, MKR family, Nano 33 (BLE and IoT), and Portenta.
+`analogReadResolution()` is an extension of the Analog API for the Zero, Due, MKR family, Nano 33 (BLE and IoT), and Portenta.
 
-Sets the size (in bits) of the value returned by analogRead(). It defaults to 10 bits (returns values between 0-1023) for backward compatibility with AVR based boards.
+Sets the size (in bits) of the value returned by `analogRead()`. It defaults to 10 bits (returns values between 0-1023) for backward compatibility with AVR based boards.
 
 
 ```c
-void analogReadResolution(uint8_t bits)	
+analogReadResolution(bits);	
 ```
 
-| **Syntax**     | `analogReadResolution(bits);`                                                                                                                                                                                                                                                      |
+| **Function**   | `void analogReadResolution(uint8_t bits)`                                                                                                                                                                                                                                          |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **bits** - Determines the resolution (in bits) of the value returned by the `analogRead()` function. You can set this between 1 and 32. You can also set the resolutions higher than the supported 12 or 16 bits, but values returned by `analogRead()` will suffer approximation. |
 | **Returns**    | void                                                                                                                                                                                                                                                                               |
@@ -2289,10 +2352,10 @@ void analogReadResolution(uint8_t bits)
 analogWriteResolution() is an extension of the Analog API for the Arduino Due. It sets the resolution of the `analogWrite()` function. It defaults to 8 bits (values between 0-255) for backward compatibility with AVR based boards.
 
 ```c
-void analogWriteResolution(uint8_t bits)	
+analogWriteResolution(bits);	
 ```
 
-| **Syntax**     | `analogWriteResolution(bits);`                                                                                                                                                                                                                                                                                                             |
+| **Function**   | `void analogWriteResolution(uint8_t bits)`                                                                                                                                                                                                                                                                                                 |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Parameters** | **bits** - Determines the resolution (in bits) of the values used in the `analogWrite()` function. The value can range from 1 to 32. If you choose a resolution higher or lower than your board’s hardware capabilities, the value used in `analogWrite()` will be either truncated if it’s too high or padded with zeros if it’s too low. |
 | **Returns**    | void                                                                                                                                                                                                                                                                                                                                       |
@@ -2303,15 +2366,15 @@ void analogWriteResolution(uint8_t bits)
 
 ### interrupts()
 
-Re-enables interrupts after they’ve been disabled by noInterrupts().
+Re-enables interrupts after they’ve been disabled by `noInterrupts()`.
 
 ```c
-void interrupts(void)
+interrupts();
 ```
 
-| **Syntax**  | `interrupts();` |
-| ----------- | --------------- |
-| **Returns** | void            |
+| **Function** | `void interrupts(void)` |
+| ------------ | ----------------------- |
+| **Returns**  | void                    |
 
 ::: details Click to View Example
 ```c{7}
@@ -2332,12 +2395,12 @@ void loop() {
 Disables interrupts. You can re-enable them with `interrupts()`.
 
 ```c
-void noInterrupts(void)	
+noInterrupts();	
 ```
 
-| **Syntax**  | `noInterrupts();` |
-| ----------- | ----------------- |
-| **Returns** | void              |
+| **Function** | `void noInterrupts(void)` |
+| ------------ | ------------------------- |
+| **Returns**  | void                      |
 
 ::: details Click to View Example
 ```c{5}
@@ -2358,13 +2421,13 @@ void loop() {
 Digital Pins With Interrupts. See also [AttachInterrupt](https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/)
 
 ```c
-void attachInterrupt(uint32_t pin, void(*)(void) userFunc, int mode)
+attachInterrupt(pin, ISR, mode);
 ```	
 
-| **Syntax**     | `attachInterrupt(pin, ISR, mode);`                                                                                                                                                                                                                                                                                                 |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **pin** - The number of the interrupt <br> **ISR** - The ISR to call when the interrupt occurs; this function must take no parameters and return nothing. This function  is sometimes referred to as an interrupt service routine. <br>  **mode** - Defines when the interrupt should be triggered (LOW, CHANGE, RISING, FALLING). |
-| **Returns**    | void                                                                                                                                                                                                                                                                                                                               |
+| **Function**   | `void attachInterrupt(uint32_t pin, void(*)(void) userFunc, int mode)`                                                                                                                                                                                                                                                            |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **pin** - The number of the interrupt <br> **ISR** - The ISR to call when the interrupt occurs; this function must take no parameters and return nothing. This function is sometimes referred to as an interrupt service routine. <br>  **mode** - Defines when the interrupt should be triggered (LOW, CHANGE, RISING, FALLING). |
+| **Returns**    | void                                                                                                                                                                                                                                                                                                                              |
 
 ::: details Click to View Example
 ```c{15}
@@ -2402,11 +2465,11 @@ void loop()
 Turns off the given interrupt.
 
 ```c
-void detachInterrupt(uint32_t pin)	
+detachInterrupt(pin);	
 ```
 
 
-| **Syntax**     | `detachInterrupt(pin);`                          |
+| **Function**   | `void detachInterrupt(uint32_t pin)`             |
 | -------------- | ------------------------------------------------ |
 | **Parameters** | **pin** - The number of the interrupt to disable |
 | **Returns**    | void                                             |
@@ -2449,10 +2512,15 @@ void loop()
 The random function generates pseudo-random numbers.
 
 ```c
-long random(long min, long max)	
+random(max);	
 ```
 
-| **Syntax**     | `random(max);` <br> `random(min, max);`                                                                                               |
+```c
+random(min, max);
+```
+
+
+| **Function**   | `long random(long min, long max)`                                                                                                     |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **min(optional)** - Lower bound of the random value, inclusive(default = 0) <br> **max** - Upper bound of the random value, exclusive |
 | **Returns**    | A random number between min and max-1(Type: long)                                                                                     |
@@ -2490,14 +2558,15 @@ void loop()
 
 ### randomSeed()
 
-randomSeed() initializes the pseudo-random number generator, causing it to start at an arbitrary point in its random sequence. This sequence, while very long, and random, is always the same.
-If it is important for a sequence of values generated by random() to differ, on subsequent executions of a sketch, use randomSeed() to initialize the random number generator with a fairly random input, such as analogRead() on an unconnected pin
+`randomSeed()` initializes the pseudo-random number generator, causing it to start at an arbitrary point in its random sequence. This sequence, while very long, and random, is always the same.
+If it is important for a sequence of values generated by `random()` to differ, on subsequent executions of a sketch, use `randomSeed()` to initialize the random number generator with a fairly random input, such as `analogRead()` on an unconnected pin.
+
 ```c
-void randomSeed	(unsigned long seed)
+randomSeed(seed);
 ```
 
 
-| **Syntax**     | `randomSeed(seed);`                                      |
+| **Function**   | `void randomSeed	(unsigned long seed)`                   |
 | -------------- | -------------------------------------------------------- |
 | **Parameters** | **seed**	number to initialize the pseudo-random sequence |
 | **Returns**    | void                                                     |

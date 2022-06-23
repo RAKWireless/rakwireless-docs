@@ -26,7 +26,7 @@ rak_img: /assets/images/wislink-lora/rak2245-stamp-edition/quickstart/overview/R
 2. Raspberry Pi 3B+
 3. 16&nbsp;GB SD Card + Card Reader
 4. 5&nbsp;V at least 2&nbsp;A Micro USB Power Supply
-5. A WIndows/Mac OS/Linux Computer
+5. A Windows/Mac OS/Linux Computer
 6. Latest [RAK2245 Stamp Firmware](/Product-Categories/WisLink/RAK2245-Stamp-Edition/Datasheet/#firmware)
 
 ### What's included in the Package?
@@ -79,7 +79,7 @@ You can also connect your PC with the Gateway through an Ethernet cable. By defa
   caption="Ethernet Properties"
 />
 
-- By default, it will obtain an IP Address automatically. Click the Option "Use the following IP Address" and enter the IP Address: `192.168.10.20` and press OK.
+- By default, it will obtain an IP Address automatically. Click the Option "Use the following IP Address" and enter the IP Address: `192.168.10.20` and press **OK**.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2245-stamp-edition/quickstart/accessing-your-gateway/yuukphgmct3ux8g9iyae.png"
@@ -87,7 +87,7 @@ You can also connect your PC with the Gateway through an Ethernet cable. By defa
   caption="TCP/IPv4 Properties"
 />
 
-Now , you should be able to access your Gateway from your PC successfully using the IP Address `192.168.10.10`through SSH.
+Now, you should be able to access your Gateway from your PC successfully using the IP Address `192.168.10.10`through SSH.
 
 #### Log into the Gateway via SSH
 
@@ -230,7 +230,7 @@ Please ensure to input the correct Wi-Fi SSID and Password or you will not be ab
 
 #### Connect through Ethernet
 
-If you want to connect to router through Ethernet Cable, do the following steps:
+If you want to connect to the router through Ethernet Cable, do the following steps:
 
 - In the main configuration menu, choose **“6 Configure LAN”**. This will let you set up a static IP address for the Gateway’s Ethernet adapter.
 - Just fill a static IP Address according to the IP address of the router you want to connect. Please note that the gateway and the router must be in the same network segment, otherwise the connection will fail.
@@ -304,7 +304,7 @@ You will now then see a page like the following picture below
 6. **Configure LAN** - used to configure the Ethernet adapter settings.
 
 ::: tip 📝 NOTE
-A unique ID will be generated in for Gateway. This is also called Gateway EUI and is essential for registering the gateway with any LoRa Network Server (TTN, Chirpstack).
+A unique ID will be generated for Gateway. This is also called Gateway EUI and is essential for registering the gateway with any LoRa Network Server (TTN, Chirpstack).
 :::
 
 There is also another way to get your "Gateway ID", just enter the command below in the command line:
@@ -444,7 +444,7 @@ The Things Network is about enabling low power devices to use long range [gatewa
   caption="The Things Network Console Page"
 />
 
-- All of your Registered Gateways will be displayed here in this page. Click "**register gateway**"
+- All of your Registered Gateways will be displayed here on this page. Click "**register gateway**"
 
 <rk-img
   src="/assets/images/wislink-lora/rak2245-stamp-edition/quickstart/connection-to-ttn/cgjbjaswugygc8dqsmui.png"
@@ -476,7 +476,7 @@ Make sure to select the \"**I'm using the legacy packet forwarder**\" check box.
 - **Location** - Choose the location of the Gateway by entering its coordinates. This is reflected on the Gateway World Map.
 - **Antenna Placement** - Where is your antenna placed? Is it placed indoors or outdoors?
 
-Click Register Gateway and wait for a couple of minutes . If the status of your gateway is **Connected**, Congratulations! :tada: Your Gateway is now connected to the The Things Network (TTN).
+Click Register Gateway and wait for a couple of minutes. If the status of your gateway is **Connected**, Congratulations! :tada: Your Gateway is now connected to The Things Network (TTN).
 
 <rk-img
   src="/assets/images/wislink-lora/rak2245-stamp-edition/quickstart/connection-to-ttn/emhpgxht6ngagrutweaj.png"

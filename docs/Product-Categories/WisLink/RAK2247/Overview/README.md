@@ -10,7 +10,7 @@ tags:
 ---
 
 # RAK2247 WisLink LPWAN Concentrator
-Thank you for choosing **RAK2247 WisLink LPWAN Concentrator** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK2247 WisLink LPWAN Concentrator** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -44,12 +44,12 @@ To address the chip shortage and not disrupt our customers' and partners' operat
 
 The **RAK2247 WisLink LPWAN Concentrator** is a LoRa Concentrator module with mini-PCIe form factor based on the SX1301. This enables easy integration into routers and other networking equipment, adding gateway capabilities. The module can be used in any embedded platform offering a mini-PCIe slot with an SPI or USB connection.
 
-Despite its small size this is an 8 channel concentrator module. By integrating it together with a computing core a fully fledged gateway solution can easily be created.
+Despite its small size, this is an 8 channel concentrator module. By integrating it together with a computing core a fully fledged gateway solution can easily be created.
 
 ## Product Features
 
 - Mini PCIe form factor, mounted heat-sink.
-- SX1301 base band processor emulates 49 x LoRa demodulators, 10 parallel demodulation paths. It supports 8 uplinks channel and 1 downlink channel.
+- SX1301 base band processor emulates 49 x LoRa demodulators, 10 parallel demodulation paths. It supports 8 uplinks channels and 1 downlink channel.
 - 2 x SX125x Tx/Rx front-ends high/low frequency.
 - Built-in FT2232H for SPI to USB 2.0 conversion (optional).
 - Operates at 3.3 V, making it compatible with standard 3G/LTE card slots of Mini PCI-e type.

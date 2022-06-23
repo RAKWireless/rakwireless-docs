@@ -71,7 +71,7 @@ Shown below is the System Diagram of the RAK815 Breakout Board.
 
 ### Hardware
 
-The hardware specification is categorized into three parts. It discusses the interfacing, pinouts, and its corresponding functions and diagrams of the board. It also covers the LoRaWAN frequency parameters necessary for the device setup.
+The hardware specification is categorized into three parts. It discusses the interfacing, pinouts, and their corresponding functions and diagrams of the board. It also covers the LoRaWAN frequency parameters necessary for the device setup.
 
 #### Pin Definition
 

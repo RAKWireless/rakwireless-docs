@@ -277,10 +277,10 @@ RAKLorawan::appeui
 This API allows the user to get the global application identifier. 
 
 ```c
-bool get(uint8_t * buf, uint32_t len)
+api.lorawan.appeui.get(buf, len);
 ```
 
-| **Syntax**        | `api.lorawan.appeui.get(buf, len);`                                                        |
+| **Function**      | `bool get(uint8_t * buf, uint32_t len)`                                                    |
 | ----------------- | ------------------------------------------------------------------------------------------ |
 | **Parameters**    | **`buf`**: the buffer to get AppEUI <br> **`len`**: the length of AppEUI (must be 8 bytes) |
 | **Returns**       | bool                                                                                       |
@@ -329,10 +329,10 @@ bool get(uint8_t * buf, uint32_t len)
 This API allows the user to set the global application identifier.
 
 ```c
-bool set(uint8_t * buf, uint32_t len)
+api.lorawan.appeui.set(buf, len);
 ```
 
-| **Syntax**        | `api.lorawan.appeui.set(buf, len);`                                                        |
+| **Function**      | `bool set(uint8_t * buf, uint32_t len)`                                                    |
 | ----------------- | ------------------------------------------------------------------------------------------ |
 | **Parameters**    | **`buf`**: the buffer to set AppEUI <br> **`len`**: the length of AppEUI (must be 8 bytes) |
 | **Returns**       | bool                                                                                       |
@@ -390,10 +390,10 @@ RAKLorawan::appkey
 This API allows the user to get the application key.
 
 ```c
-bool get(uint8_t* buf, uint32_t len)
+api.lorawan.appkey.get(buf, len);
 ```
 
-| **Syntax**        | `api.lorawan.appkey.get(buf, len);`                                                         |
+| **Function**      | `bool get(uint8_t* buf, uint32_t len)`                                                      |
 | ----------------- | ------------------------------------------------------------------------------------------- |
 | **Parameters**    | **`buf`**: the buffer to get AppKey <br> **`len`**: the length of AppKey (must be 16 bytes) |
 | **Returns**       | bool                                                                                        |
@@ -444,10 +444,10 @@ void loop()
 This API allows the user to set the application key.
 
 ```c
-bool set(uint8_t* buf, uint32_t len)
+api.lorawan.appkey.set(buf, len);
 ```
 
-| **Syntax**        | `api.lorawan.appkey.set(buf, len);`                                                         |
+| **Function**      | `bool set(uint8_t* buf, uint32_t len)`                                                      |
 | ----------------- | ------------------------------------------------------------------------------------------- |
 | **Parameters**    | **`buf`**: the buffer to set AppKey <br> **`len`**: the length of AppKey (must be 16 bytes) |
 | **Returns**       | bool                                                                                        |
@@ -498,7 +498,7 @@ void loop()
 This API allows the user to get or set the application session key.
 
 ```c
-RAKLorawan::appskey
+api.lorawan.appskey.get(buf, len);
 ```
 
 #### get()
@@ -509,7 +509,7 @@ This API allows the user to get the application session key.
 bool get(uint8_t* buf, uint32_t len)
 ```
 
-| **Syntax**        | `api.lorawan.appskey.get(buf, len);`                                                          |
+| **Function**      | `RAKLorawan::appskey`                                                                         |
 | ----------------- | --------------------------------------------------------------------------------------------- |
 | **Parameters**    | **`buf`**: the buffer to get AppSKey <br> **`len`**: the length of AppSKey (must be 16 bytes) |
 | **Returns**       | bool                                                                                          |
@@ -566,10 +566,10 @@ void loop()
 This API allows the user to set the application session key.
 
 ```c
-bool set(uint8_t* buf, uint32_t len)
+api.lorawan.appskey.set(buf, len);
 ```
 
-| **Syntax**        | `api.lorawan.appskey.set(buf, len);`                                                          |
+| **Function**      | `bool set(uint8_t* buf, uint32_t len)`                                                        |
 | ----------------- | --------------------------------------------------------------------------------------------- |
 | **Parameters**    | **`buf`**: the buffer to set AppSKey <br> **`len`**: the length of AppSKey (must be 16 bytes) |
 | **Returns**       | bool                                                                                          |
@@ -627,10 +627,10 @@ RAKLorawan::daddr
 This API allows the user to get the device address.
 
 ```c
-bool get(uint8_t* buf, uint32_t len)
+api.lorawan.daddr.get(buf, len);
 ```
 
-| **Syntax**        | `api.lorawan.daddr.get(buf, len);`                                                                               |
+| **Function**      | `bool get(uint8_t* buf, uint32_t len)`                                                                             |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------ |
 | **Parameters**    | **`buf`**: the buffer to get the device address <br> **`len`**: the length of the device address (must be 4 bytes) |
 | **Returns**       | bool                                                                                                               |
@@ -684,10 +684,10 @@ void loop()
 This API allows the user to set the device address.
 
 ```c
-bool set(uint8_t* buf, uint32_t len)
+api.lorawan.daddr.set(buf, len);
 ```
 
-| **Syntax**        | `api.lorawan.daddr.set(buf, len);`                                                                               |
+| **Function**      | `bool set(uint8_t* buf, uint32_t len)`                                                                             |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------ |
 | **Parameters**    | **`buf`**: the buffer to set the device address <br> **`len`**: the length of the device address (must be 4 bytes) |
 | **Returns**       | bool                                                                                                               |
@@ -746,10 +746,10 @@ RAKLorawan::deui
 This API allows the user to get the global end-device ID.
 
 ```c
-bool get(uint8_t* buf, uint32_t len)
+api.lorawan.deui.get(buf, len);
 ```
 
-| **Syntax**        | `api.lorawan.deui.get(buf, len);`                                                                          |
+| **Function**      | `bool get(uint8_t* buf, uint32_t len)`                                                                     |
 | ----------------- | ---------------------------------------------------------------------------------------------------------- |
 | **Parameters**    | **`buf`**: the buffer to get the device EUI <br> **`len`**: the length of the device EUI (must be 8 bytes) |
 | **Returns**       | bool                                                                                                       |
@@ -798,10 +798,10 @@ void loop()
 This API allows the user to set the global end-device ID.
 
 ```c
-bool set(uint8_t* buf, uint32_t len)
+api.lorawan.deui.set(buf, len);
 ```
 
-| **Syntax**        | `api.lorawan.deui.set(buf, len);`                                                                          |
+| **Function**      | `bool set(uint8_t* buf, uint32_t len)`                                                                     |
 | ----------------- | ---------------------------------------------------------------------------------------------------------- |
 | **Parameters**    | **`buf`**: the buffer to set the device EUI <br> **`len`**: the length of the device EUI (must be 8 bytes) |
 | **Returns**       | bool                                                                                                       |
@@ -860,10 +860,10 @@ RAKLorawan::netid
 This API allows the user to get the network identifier (NetID). 
 
 ```c
-bool get(uint8_t* buf, uint32_t len)
+api.lorawan.netid.get(buf, len);
 ```
 
-| **Syntax**        | `api.lorawan.netid.get(buf, len);`                                                                                                         |
+| **Function**      | `bool get(uint8_t* buf, uint32_t len)`                                                                                                     |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Parameters**    | **`buf`**: the buffer to get the network identifier (NetID) <br> **`len`**: the length of the network identifier (NetID) (must be 3 bytes) |
 | **Returns**       | bool                                                                                                                                       |
@@ -937,10 +937,10 @@ RAKLorawan::nwkskey
 This API allows the user to get the network session key.
 
 ```c
-bool get(uint8_t* buf, uint32_t len)
+api.lorawan.nwkskey.get(buf, len);
 ```
 
-| **Syntax**        | `api.lorawan.nwkskey.get(buf, len);`                                                                                          |
+| **Function**      | `bool get(uint8_t* buf, uint32_t len)`                                                                                        |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters**    | **`buf`**: the buffer to get the network session key <br> **`len`**: the length of the network session key (must be 16 bytes) |
 | **Returns**       | bool                                                                                                                          |
@@ -995,10 +995,10 @@ void loop()
 This API allows the user to set the network session key.
 
 ```c
-bool set(uint8_t* buf, uint32_t len)
+api.lorawan.nwkskey.set(buf, len);
 ```
 
-| **Syntax**     | `api.lorawan.nwkskey.set(buf, len);`                                                                                          |
+| **Function**   | `bool set(uint8_t* buf, uint32_t len)`                                                                                        |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **`buf`**: the buffer to set the network session key <br> **`len`**: the length of the network session key (must be 16 bytes) |
 | **Returns**    | **TRUE** for setting the network session key successfully <br> **FALSE** for setting the network session key failure          |
@@ -1060,13 +1060,13 @@ This API allows to get the times of retransmission of Confirm packet data.
 
 
 ```c
-uint8_t get()	
+api.lorawan.rety.get();	
 ```
 
 
-| **Syntax**  | `api.lorawan.rety.get();`          |
-| ----------- | ---------------------------------- |
-| **Returns** | the retry times for retransmission |
+| **Function** | `uint8_t get()`                    |
+| ------------ | ---------------------------------- |
+| **Returns**  | the retry times for retransmission |
 
 
 ::: details Click to View Example
@@ -1094,10 +1094,10 @@ void loop()
 This API allows to set the times of retransmission of Confirm packet data.
 
 ```c
-bool set(uint8_t value)	
+api.lorawan.rety.set(value);
 ```
 
-| **Syntax**        | `api.lorawan.rety.set(value);`                                                         |
+| **Function**      | `bool set(uint8_t value)`                                                              |
 | ----------------- | -------------------------------------------------------------------------------------- |
 | **Parameters**    | **value** - the retry times for retransmission                                         |
 | **Returns**       | bool                                                                                   |
@@ -1140,12 +1140,12 @@ RAKLorawan::cfm
 This API allows the user to get the notification on received data coming from the network.
 
 ```c
-bool get()
+api.lorawan.cfm.get();
 ```
 
-| **Syntax**        | `api.lorawan.cfm.get();`                                                                          |
-| ----------------- | ------------------------------------------------------------------------------------------------- |
-| **Returns**       | bool                                                                                              |
+| **Function**      | `bool get()`                                                                                        |
+| ----------------- | --------------------------------------------------------------------------------------------------- |
+| **Returns**       | bool                                                                                                |
 | **Return Values** | **TRUE** - LoRaWAN uplink is not on confirm mode <br> **FALSE** - LoRaWAN uplink is on confirm mode |
 
 
@@ -1173,10 +1173,10 @@ void loop()
 This API allows the user to set the notification on received data coming from the network.
 
 ```c
-bool set(bool value)
+api.lorawan.cfm.set(value);
 ```
 
-| **Syntax**        | `api.lorawan.cfm.set(value);`                                                             |
+| **Function**      | `bool set(bool value)`                                                                    |
 | ----------------- | ----------------------------------------------------------------------------------------- |
 | **Parameters**    | **value**: the mode of confirm mode to set                                                |
 | **Returns**       | bool                                                                                      |
@@ -1214,12 +1214,12 @@ RAKLorawan::cfs
 This API allows the user to access the status of the last **SEND** command.
 
 ```c
-bool get()
+api.lorawan.cfs.get();
 ```
 
-| **Syntax**  | `api.lorawan.cfs.get();`                                   |
-| ----------- | ---------------------------------------------------------- |
-| **Returns** | **TRUE**: Confirm success <br>  **FALSE**: Confirm failure |
+| **Function** | `bool get()`                                               |
+| ------------ | ---------------------------------------------------------- |
+| **Returns**  | **TRUE**: Confirm success <br>  **FALSE**: Confirm failure |
 
 
 ::: tip 📝 NOTE
@@ -1291,10 +1291,10 @@ This API allows the user to access the network join mode.
 This API allows the user to get the network join mode.
 
 ```c
-bool get()
+api.lorawan.njm.get();
 ```
 
-| **Syntax**        | `api.lorawan.njm.get();`           |
+| **Function**      | `bool get()`                       |
 | ----------------- | ---------------------------------- |
 | **Returns**       | bool                               |
 | **Return Values** | **TRUE**: OTAA <br> **FALSE**: ABP |
@@ -1325,10 +1325,10 @@ void loop()
 This API allows the user to set the network join mode.
 
 ```c
-bool set(bool value)
+api.lorawan.njm.set(value);
 ```
 
-| **Syntax**        | `api.lorawan.njm.set(value);`                                                                       |
+| **Function**      | `bool set(bool value)`                                                                              |
 | ----------------- | --------------------------------------------------------------------------------------------------- |
 | **Parameters**    | **value**: the mode of network join mode <br> **ABP** - 0 <br> **OTAA** - 1                         |
 | **Returns**       | bool                                                                                                |
@@ -1367,10 +1367,10 @@ RAKLorawan::njs
 This API allows the user to get the current status of the LoRa® link.
 
 ```c
-bool get()
+api.lorawan.njs.get();
 ```
 
-| **Syntax**        | `api.lorawan.njs.get();`                                |
+| **Function**      | `bool get()`                                            |
 | ----------------- | ------------------------------------------------------- |
 | **Returns**       | bool                                                    |
 | **Return Values** | **TRUE**: Network join <br> **FALSE**: Network not join |
@@ -1419,10 +1419,10 @@ void loop()
 This API does a join request to the network.
 
 ```c
-bool join()
+api.lorawan.join();
 ```
 
-| **Syntax**        | `api.lorawan.join();`                                      |
+| **Function**      | `bool join()`                                              |
 | ----------------- | ---------------------------------------------------------- |
 | **Returns**       | bool                                                       |
 | **Return Values** | **TRUE** for join success  <br> **FALSE** for join failure |
@@ -1471,15 +1471,22 @@ void loop()
 This API provides the way to send data on a dedicated port number.
 
 ```c
-bool send(uint8_t length,uint8_t * payload, uint8_t fport, bool confirm = true, uint8_t retry)
+api.lorawan.send(length, payload, fport);
 ```
 
+```c
+api.lorawan.send(length, payload, fport, confirm);
+```
 
-| **Syntax**        | `api.lorawan.send(length, payload, fport);` <br> `api.lorawan.send(length, payload, fport, confirm);` <br> `api.lorawan.send(length, payload, fport, confirm, retry);`                                                                                                                                |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters**    | **length** - the length of the payload <br> **payload** - the date to uplink <br> **fport** - allow 1 ~ 223 <br> **confirm** - Override cfm setting to get confirm message from gateway (just for this time) <br> **retry** - 	Override retry setting to retry if sending failed (just for this time) |
-| **Returns**       | bool                                                                                                                                                                                                                                                                                                  |
-| **Return Values** | **TRUE** for sending uplink success <br> **FALSE** for sending uplink                                                                                                                                                                                                                                 |
+```c
+api.lorawan.send(length, payload, fport, confirm, retry);
+```
+
+| **Function**      | `bool send(uint8_t length,uint8_t * payload, uint8_t fport, bool confirm = true, uint8_t retry)`                                                                                                                                                                                                     |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters**    | **length** - the length of the payload <br> **payload** - the date to uplink <br> **fport** - allow 1 ~ 223 <br> **confirm** - Override cfm setting to get confirm message from gateway (just for this time) <br> **retry** - Override retry setting to retry if sending failed (just for this time) |
+| **Returns**       | bool                                                                                                                                                                                                                                                                                                 |
+| **Return Values** | **TRUE** for sending uplink success <br> **FALSE** for sending uplink                                                                                                                                                                                                                                |
 
 
 ::: details Click to View Example
@@ -1535,13 +1542,13 @@ This API provides a way to send long packet (1024 bytes) text data.
 
 
 ```c
-bool lpsend	(uint8_t port, bool ack, uint8_t * payload, int	length)	
+api.lorawan.lpsend(port, ack, payload, length);
 ```
 
 
-| **Syntax**        | `api.lorawan.lpsend(port, ack, payload, length);`                                                                                                                                                     |
+| **Function**      | `bool lpsend(uint8_t port, bool ack, uint8_t * payload, int length)`                                                                                                                                  |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters**    | **port**	- application port to be transmitted  <br> **ack** - indicate this is a confirmed message or not  <br>  **payload**	the date you want to send   <br>  **length** - the length of the payload |
+| **Parameters**    | **port** - application port to be transmitted  <br> **ack** - indicate this is a confirmed message or not  <br>  **payload**	the date you want to send   <br>  **length** - the length of the payload |
 | **Returns**       | bool                                                                                                                                                                                                  |
 | **Return Values** | **TRUE** for sending data success <br> **FALSE** for sending data failure                                                                                                                             |
 
@@ -1600,14 +1607,14 @@ This API is used to register a callback function, so that application can be not
 
 
 ```c
-bool registerRecvCallback(service_lora_recv_cb callback)
+api.lorawan.registerRecvCallback(service_lora_recv_cb callback);
 ```
 
 
 
-| **Syntax**        | `api.lorawan.registerRecvCallback(service_lora_recv_cb callback);`                                  |
+| **Function**      | `bool registerRecvCallback(service_lora_recv_cb callback)`                                          |
 | ----------------- | --------------------------------------------------------------------------------------------------- |
-| **Parameters**    | **The** callback function                                                                          |
+| **Parameters**    | **The** callback function                                                                           |
 | **Returns**       | bool                                                                                                |
 | **Return Values** | **TRUE** for setting callback function success <br> **FALSE** for setting callback function failure |
 
@@ -1685,13 +1692,13 @@ void loop()
 This API is used to register a callback function, so that application can be notified when joining process is done.
 
 ```c
-bool registerJoinCallback(service_lora_join_cb callback)	
+api.lorawan.registerJoinCallback(service_lora_join_cb callback);	
 ```
 
 
-| **Syntax**        | `api.lorawan.registerJoinCallback(service_lora_join_cb callback);`                                  |
+| **Function**      | `bool registerJoinCallback(service_lora_join_cb callback)`                                          |
 | ----------------- | --------------------------------------------------------------------------------------------------- |
-| **Parameters**    | **The** callback function                                                                          |
+| **Parameters**    | **The** callback function                                                                           |
 | **Returns**       | bool                                                                                                |
 | **Return Values** | **TRUE** for setting callback function success <br> **FALSE** for setting callback function failure |
 
@@ -1767,13 +1774,13 @@ void loop()
 This API is used to register a callback function, so that application can be notified when uplink process is done.
 
 ```c
-bool registerSendCallback(service_lora_send_cb callback)	
+api.lorawan.registerSendCallback(service_lora_send_cb callback);	
 ```
 
 
-| **Syntax**        | `api.lorawan.registerSendCallback(service_lora_send_cb callback);`                                  |
+| **Function**      | `bool registerSendCallback(service_lora_send_cb callback)`                                          |
 | ----------------- | --------------------------------------------------------------------------------------------------- |
-| **Parameters**    | **The** callback function                                                                          |
+| **Parameters**    | **The** callback function                                                                           |
 | **Returns**       | bool                                                                                                |
 | **Return Values** | **TRUE** for setting callback function success <br> **FALSE** for setting callback function failure |
 
@@ -1864,10 +1871,10 @@ The default value of the ADR is 1 (enabled).
 This API allows the user to get the adaptive data rate.
 
 ```c
-bool get()
+api.lorawan.adr.get();
 ```
 
-| **Syntax**        | `api.lorawan.adr.get();`                                                          |
+| **Function**      | `bool get()`                                                                      |
 | ----------------- | --------------------------------------------------------------------------------- |
 | **Returns**       | bool                                                                              |
 | **Return Values** | **TRUE** - enable adaptive data rate  <br> **FALSE** - disable adaptive data rate |
@@ -1895,10 +1902,10 @@ void loop()
 This API allows the user to set the adaptive data rate.
 
 ```c
-bool set(bool value)
+api.lorawan.adr.set(value);
 ```
 
-| **Syntax**        | `api.lorawan.adr.set(value);`                                                                 |
+| **Function**      | `bool set(bool value)`                                                                        |
 | ----------------- | --------------------------------------------------------------------------------------------- |
 | **Parameters**    | **value** - the status of adaptive data rate                                                  |
 | **Returns**       | bool                                                                                          |
@@ -1936,10 +1943,10 @@ RAKLorawan::deviceClass
 This API allows the user to get the LoRaWAN® class.
 
 ```c
-uint8_t get()
+api.lorawan.deviceClass.get();
 ```
 
-| **Syntax**        | `api.lorawan.deviceClass.get();`                          |
+| **Function**      | `uint8_t get()`                                           |
 | ----------------- | --------------------------------------------------------- |
 | **Returns**       | the **LoRaWan** class (Type: **int**)                     |
 | **Return Values** | **0** - Class A <br> **1** - Class B <br> **2** - Class C |
@@ -1979,10 +1986,10 @@ void loop()
 This API allows the user to set the LoRaWAN® class.
 
 ```c
-bool set(uint8_t value)
+api.lorawan.deviceClass.set(value);
 ```
 
-| **Syntax**        | `api.lorawan.deviceClass.set(value);`                                                       |
+| **Function**      | `bool set(uint8_t value)`                                                                   |
 | ----------------- | ------------------------------------------------------------------------------------------- |
 | **Parameters**    | **value** - the LoRaWAN class                                                               |
 | **Returns**       | bool                                                                                        |
@@ -2031,10 +2038,10 @@ RAKLorawan::dcs
 This API allows the user to get the duty cycle parameter.
 
 ```c
-bool get()
+api.lorawan.dcs.get();
 ```
 
-| **Syntax**        | `api.lorawan.dcs.get();`                                          |
+| **Function**      | `bool get()`                                                      |
 | ----------------- | ----------------------------------------------------------------- |
 | **Returns**       | bool                                                              |
 | **Return Values** | **TRUE** - enable duty cycle  <br> **FALSE** - disable duty cycle |
@@ -2065,11 +2072,11 @@ This API allows the user to set the duty cycle parameter.
 
 
 ```c
-bool set(uint8_t dutyCycle)	
+api.lorawan.dcs.set(dutyCycle);
 ```
 
 
-| **Syntax**        | `api.lorawan.dcs.set(dutyCycle);`                                                   |
+| **Function**      | `bool set(uint8_t dutyCycle)`                                                       |
 | ----------------- | ----------------------------------------------------------------------------------- |
 | **Parameters**    | **dutyCycle** - the LoRaWAN duty cycle                                              |
 | **Returns**       | bool                                                                                |
@@ -2109,12 +2116,12 @@ RAKLorawan::dr
 This API allows the user to get the data rate.
 
 ```c
-uint8_t get()
+api.lorawan.dr.get();
 ```
 
-| **Syntax**  | `api.lorawan.dr.get();` |
-| ----------- | ----------------------- |
-| **Returns** | the data rate           |
+| **Function** | `uint8_t get()` |
+| ------------ | --------------- |
+| **Returns**  | the data rate   |
 
 
 ::: details Click to View Example
@@ -2140,10 +2147,10 @@ This API allows the user to set the data rate.
 
 
 ```c
-bool set(uint8_t value)
+api.lorawan.dr.set(value);
 ```
 
-| **Syntax**        | `api.lorawan.dr.set(value);`                                                            |
+| **Function**      | `bool set(uint8_t value)`                                                               |
 | ----------------- | --------------------------------------------------------------------------------------- |
 | **Parameters**    | **value** - the data rate                                                               |
 | **Returns**       | bool                                                                                    |
@@ -2181,12 +2188,12 @@ RAKLorawan::jn1dl
 This API allows the user to get the data rate.
 
 ```c
-int get()
+api.lorawan.jn1dl.get();
 ```
 
-| **Syntax**  | `api.lorawan.jn1dl.get();`                    |
-| ----------- | --------------------------------------------- |
-| **Returns** | the join delay on RX window 1 (Type: **int**) |
+| **Function** | `int get()`                                   |
+| ------------ | --------------------------------------------- |
+| **Returns**  | the join delay on RX window 1 (Type: **int**) |
 
 
 ::: details Click to View Example
@@ -2212,10 +2219,10 @@ void loop()
 This API allows the user to set the join delay on RX window 1.
 
 ```c
-bool set(int value)
+api.lorawan.jn1dl.set(value);
 ```
 
-| **Syntax**        | `api.lorawan.jn1dl.set(value);`                                                       |
+| **Function**      | `bool set(int value)`                                                                 |
 | ----------------- | ------------------------------------------------------------------------------------- |
 | **Parameters**    | **value** - the join delay on RX window 1                                             |
 | **Returns**       | bool                                                                                  |
@@ -2252,12 +2259,12 @@ RAKLorawan::jn2dl
 This API allows the user to access the join delay on RX window 2.
 
 ```c
-int get()
+api.lorawan.jn2dl.get();
 ```
 
-| **Syntax**  | `api.lorawan.jn2dl.get();`                     |
-| ----------- | ---------------------------------------------- |
-| **Returns** | the join delay on RX window 2 (Type: **bool**) |
+| **Function** | `int get()`                                    |
+| ------------ | ---------------------------------------------- |
+| **Returns**  | the join delay on RX window 2 (Type: **bool**) |
 
 
 ::: details Click to View Example
@@ -2281,10 +2288,10 @@ void loop()
 This API allows the user to set the join delay on RX window 2.
 
 ```c
-bool set(int value)
+api.lorawan.jn2dl.set(value);
 ```
 
-| **Syntax**        | `api.lorawan.jn2dl.set(value);`                                                       |
+| **Function**      | `bool set(int value)`                                                                 |
 | ----------------- | ------------------------------------------------------------------------------------- |
 | **Parameters**    | **value** - the join delay on RX window 2                                             |
 | **Returns**       | bool                                                                                  |
@@ -2320,10 +2327,10 @@ RAKLorawan::pnm
 This API allows the user to get the public network mode.
 
 ```c
-bool get()
+api.lorawan.pnm.get();
 ```
 
-| **Syntax**        | `api.lorawan.pnm.get();`         |
+| **Function**      | `bool get()`                     |
 | ----------------- | -------------------------------- |
 | **Returns**       | bool                             |
 | **Return Values** | **TRUE**: On <br> **FALSE**: Off |
@@ -2352,10 +2359,10 @@ void loop()
 This API allows the user to set the public network mode.
 
 ```c
-bool set(bool value)
+api.lorawan.pnm.set(value);
 ```
 
-| **Syntax**        | `api.lorawan.pnm.set(value);`                                                                            |
+| **Function**      | `bool set(bool value)`                                                                                   |
 | ----------------- | -------------------------------------------------------------------------------------------------------- |
 | **Parameters**    | **value** - the public network mode                                                                      |
 | **Returns**       | bool                                                                                                     |
@@ -2394,12 +2401,12 @@ RAKLorawan::rx1dl
 This API allows the user to get the delay of the received window 1.
 
 ```c
-int get()
+api.lorawan.rx1dl.get();
 ```
 
-| **Syntax**  | `api.lorawan.rx1dl.get();`         |
-| ----------- | ---------------------------------- |
-| **Returns** | the delay of the received window 1 |
+| **Function** | `int get()`                        |
+| ------------ | ---------------------------------- |
+| **Returns**  | the delay of the received window 1 |
 
 
 ::: details Click to View Example
@@ -2425,10 +2432,10 @@ void loop()
 This API allows the user to set the delay of the received window 1.
 
 ```c
-bool set(int value)
+api.lorawan.rx1dl.set(value);
 ```
 
-| **Syntax**        | `api.lorawan.rx1dl.set(value);`                                              |
+| **Function**      | `bool set(int value)`                                                        |
 | ----------------- | ---------------------------------------------------------------------------- |
 | **Parameters**    | **value** - the delay of the received window 1                               |
 | **Returns**       | bool                                                                         |
@@ -2465,12 +2472,12 @@ RAKLorawan::rx2dl
 This API allows the user to get the delay of the received window 2
 
 ```c
-int get()
+api.lorawan.rx2dl.get();
 ```
 
-| **Syntax**  | `api.lorawan.rx2dl.get();`         |
-| ----------- | ---------------------------------- |
-| **Returns** | the delay of the received window 2 |
+| **Function** | `int get()`                        |
+| ------------ | ---------------------------------- |
+| **Returns**  | the delay of the received window 2 |
 
 
 ::: details Click to View Example
@@ -2494,14 +2501,14 @@ void loop()
 This API allows the user to set the delay of the received window 2
 
 ```c
-bool set(int value)
+api.lorawan.rx2dl.set(value)
 ```
 
-| **Syntax**        | `api.lorawan.rx2dl.set(value)`                                              |
-| ----------------- | ---------------------------------------------------------------------------- |
+| **Function**      | `bool set(int value)`                                                       |
+| ----------------- | --------------------------------------------------------------------------- |
 | **Parameters**    | **value** - the delay of the received window 2                              |
-| **Returns**       | bool                                                                         |
-| **Return Values** | **TRUE** for setting delay success  <br> **FALSE** for setting delay failure |
+| **Returns**       | bool                                                                        |
+| **Return Values** | **TRUE** for setting delay success <br> **FALSE** for setting delay failure |
 
 
 ::: details Click to View Example
@@ -2533,12 +2540,12 @@ RAKLorawan::rx2dr
 This API allows the user to get the data rate of received window 2.
 
 ```c
-uint8_t get()
+api.lorawan.rx2dr.get();
 ```
 
-| **Syntax**  | `api.lorawan.rx2dr.get();`         |
-| ----------- | ---------------------------------- |
-| **Returns** | the data rate of received window 2 |
+| **Function** | `uint8_t get()`                    |
+| ------------ | ---------------------------------- |
+| **Returns**  | the data rate of received window 2 |
 
 
 ::: details Click to View Example
@@ -2564,14 +2571,14 @@ void loop()
 This API allows the user to set the data rate of received window 2.
 
 ```c
-bool set(uint8_t value)
+api.lorawan.rx2dr.set(value);
 ```
 
-| **Syntax**        | `api.lorawan.rx2dr.set(value);`                                                       |
-| ----------------- | ------------------------------------------------------------------------------------- |
-| **Parameters**    | **value** - the date rate of received window 2                                        |
-| **Returns**       | bool                                                                                  |
-| **Return Values** | **TRUE** for setting data rate success  <br>  **FALSE** for setting data rate failure |
+| **Function**      | `bool set(uint8_t value)`                                                           |
+| ----------------- | ----------------------------------------------------------------------------------- |
+| **Parameters**    | **value** - the date rate of received window 2                                      |
+| **Returns**       | bool                                                                                |
+| **Return Values** | **TRUE** for setting data rate success <br> **FALSE** for setting data rate failure |
 
 
 ::: details Click to View Example
@@ -2603,12 +2610,12 @@ RAKLorawan::rx2fq
 This API allows the user to access the frequency of the received window 2.
 
 ```c
-long get()
+api.lorawan.rx2fq.get();
 ```
 
-| **Syntax**  | `api.lorawan.rx2fq.get();`             |
-| ----------- | -------------------------------------- |
-| **Returns** | the frequency of the received window 2 |
+| **Function** | `long get()`                           |
+| ------------ | -------------------------------------- |
+| **Returns**  | the frequency of the received window 2 |
 
 
 ::: details Click to View Example
@@ -2640,12 +2647,12 @@ This API allows the user to get the transmit power.
 
 
 ```c
-uint8_t get()
+api.lorawan.txp.get();
 ```
 
-| **Syntax**  | `api.lorawan.txp.get();`   |
-| ----------- | -------------------------- |
-| **Returns** | the LoRaWAN transmit power |
+| **Function** | `uint8_t get()`            |
+| ------------ | -------------------------- |
+| **Returns**  | the LoRaWAN transmit power |
 
 
 ::: details Click to View Example
@@ -2671,10 +2678,10 @@ void loop()
 This API allows the user to set the transmit power.
 
 ```c
-bool set(uint8_t value)
+api.lorawan.txp.set(value);
 ```
 
-| **Syntax**     | `api.lorawan.txp.set(value);`                                                                  |
+| **Function**   | `bool set(uint8_t value)`                                                                      |
 | -------------- | ---------------------------------------------------------------------------------------------- |
 | **Parameters** | **value** - the LoRaWAN transmit power                                                         |
 | **Returns**    | **TRUE** for setting transmit power success <br>  **FALSE** for setting transmit power failure |
@@ -2715,11 +2722,11 @@ This API allows the user to verify network link status.
 
 
 ```c
-uint32_t get()
+api.lorawan.linkcheck.get();
 ```
 
 
-| **Syntax**        | `api.lorawan.linkcheck.get();`                                                                                                                              |
+| **Function**      | `uint32_t get()`                                                                                                                                            |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Returns**       | The mode of verifying network link status                                                                                                                   |
 | **Return Values** | **0** disable link check <br> **1** execute link check one time <br> **2** module will automatically execute one time link check after every upload of data |
@@ -2751,10 +2758,10 @@ This API allows the user to set the network link status.
 
 
 ```c
-bool set(uint8_t value)	
+api.lorawan.linkcheck.set(value);
 ```
 
-| **Syntax**        | `api.lorawan.linkcheck.set(value);`                                                                                                    |
+| **Function**      | `bool set(uint8_t value)`                                                                                                              |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters**    | **value** - 	the mode of verifying network link status                                                                                 |
 | **Returns**       | bool                                                                                                                                   |
@@ -2795,12 +2802,12 @@ RAKLorawan::pgslot
 This API allows the user to get the unicast ping slot periodicity.
 
 ```c
-uint8_t get()
+api.lorawan.pgslot.get();
 ```
 
-| **Syntax**  | `api.lorawan.pgslot.get();` |
-| ----------- | --------------------------- |
-| **Returns** | the ping slot periodicity   |
+| **Function** | `uint8_t get()`           |
+| ------------ | ------------------------- |
+| **Returns**  | the ping slot periodicity |
 
 
 
@@ -2849,10 +2856,10 @@ void loop()
 This API allows the user to set the unicast ping slot periodicity.
 
 ```c
-bool set(uint8_t value)
+api.lorawan.pgslot.set(value);
 ```
 
-| **Syntax**        | `api.lorawan.pgslot.set(value);`                                                                               |
+| **Function**      | `bool set(uint8_t value)`                                                                                      |
 | ----------------- | -------------------------------------------------------------------------------------------------------------- |
 | **Parameters**    | **value** - the unicast ping slot periodicity                                                                  |
 | **Returns**       | bool                                                                                                           |
@@ -2901,7 +2908,7 @@ void loop()
 
 ### bfreq
 
-This API allows the user to access the current beacon (default broadcast) frequency
+This API allows the user to access the current beacon (default broadcast) frequency.
 
 ```c
 RAKLorawan::bfreq
@@ -2912,12 +2919,12 @@ RAKLorawan::bfreq
 This API allows the user to access the current beacon (default broadcast) frequency.
 
 ```c
-float get()
+api.lorawan.bfreq.get();
 ```
 
-| **Syntax**  | `api.lorawan.bfreq.get();`                    |
-| ----------- | --------------------------------------------- |
-| **Returns** | the current beacon frequency (Type: **long**) |
+| **Function** | `float get()`                                 |
+| ------------ | --------------------------------------------- |
+| **Returns**  | the current beacon frequency (Type: **long**) |
 
 
 ::: details Click to View Example
@@ -2973,12 +2980,12 @@ RAKLorawan::btime
 This API allows the user to access the current beacon time.
 
 ```c
-long get()
+api.lorawan.btime.get()
 ```
 
-| **Syntax**  | `api.lorawan.btime.get()`  |
-| ----------- | -------------------------- |
-| **Returns** | the current beacon time(b) |
+| **Function** | `long get()`               |
+| ------------ | -------------------------- |
+| **Returns**  | the current beacon time(b) |
 
 
 ::: details Click to View Example
@@ -3033,12 +3040,12 @@ RAKLorawan::bgw
 This API allows the user to access the gateway GPS coordinate, NetID, and GwID.
 
 ```c
-beacon_bgw_t get()
+api.lorawan.bgw.get();
 ```
 
-| **Syntax**  | `api.lorawan.bgw.get();` |
-| ----------- | ------------------------ |
-| **Returns** | `beacon_bgw_t`           |
+| **Function** | `beacon_bgw_t get()` |
+| ------------ | -------------------- |
+| **Returns**  | `beacon_bgw_t`       |
 
 
 ::: details Click to View Example
@@ -3102,12 +3109,12 @@ RAKLorawan::bgw
 This API allows the user to get the local time in a UTC format.
 
 ```c
-string get()
+api.lorawan.ltime.get();
 ```
 
-| **Syntax**  | `api.lorawan.ltime.get();`                      |
-| ----------- | ----------------------------------------------- |
-| **Returns** | the local time in a UTC format (Type: **bool**) |
+| **Function** | `string get()`                                  |
+| ------------ | ----------------------------------------------- |
+| **Returns**  | the local time in a UTC format (Type: **bool**) |
 
 
 ::: details Click to View Example
@@ -3170,12 +3177,12 @@ When the connection is successful, get the RSSI of the last received packet.
 This API allows the user to access the RSSI on reception.
 
 ```c
-int get()
+api.lorawan.rssi.get();
 ```
 
-| **Syntax**  | `api.lorawan.rssi.get();`             |
-| ----------- | ------------------------------------- |
-| **Returns** | the RSSI on reception (Type: **int**) |
+| **Function** | `int get()`                           |
+| ------------ | ------------------------------------- |
+| **Returns**  | the RSSI on reception (Type: **int**) |
 
 
 ::: details Click to View Example
@@ -3243,12 +3250,12 @@ When the connection is successful, get the SNR of the last received packet.
 This API allows the user to get the SNR of the last received packet.
 
 ```c
-int get()
+api.lorawan.snr.get();
 ```
 
-| **Syntax**  | `api.lorawan.snr.get();`                            |
-| ----------- | --------------------------------------------------- |
-| **Returns** | the SNR of the last received packet (Type: **int**) |
+| **Function** | `int get()`                                         |
+| ------------ | --------------------------------------------------- |
+| **Returns**  | the SNR of the last received packet (Type: **int**) |
 
 
 ::: details Click to View Example
@@ -3313,12 +3320,12 @@ RAKLorawan::ver
 This API allows the user to get the LoRaWAN version.
 
 ```c
-string get()
+api.lorawan.ver.get();
 ```
 
-| **Syntax**  | `api.lorawan.ver.get();`               |
-| ----------- | -------------------------------------- |
-| **Returns** | the LoRaWAN version (Type: **string**) |
+| **Function** | `string get()`                         |
+| ------------ | -------------------------------------- |
+| **Returns**  | the LoRaWAN version (Type: **string**) |
 
 
 
@@ -3346,13 +3353,13 @@ This API can access all open channel rssi.
 
 
 ```c
-bool arssi(RAK_LORA_chan_rssi * iterator)	
+api.lorawan.arssi(chan_arssi);
 ```
 
 
-| **Syntax**        | `api.lorawan.arssi(chan_arssi);`                                           |
+| **Function**      | `bool arssi(RAK_LORA_chan_rssi * iterator)`                                |
 | ----------------- | -------------------------------------------------------------------------- |
-| **Parameters**    | **chan_arssi** - the structure array to store arssi                         |
+| **Parameters**    | **chan_arssi** - the structure array to store arssi                        |
 | **Returns**       | bool                                                                       |
 | **Return Values** | **TRUE** for getting arssi success <br> **Fail** for getting arssi failure |
 
@@ -3423,11 +3430,11 @@ RAKLorawan::mask
 This API allows the user to get the channel mask, close or open the channel.
 
 ```c
-bool get(uint16_t * buff)	
+api.lorawan.mask.get(buff);	
 ```
 
 
-| **Syntax**        | `api.lorawan.mask.get(buff);`                                                             |
+| **Function**      | `bool get(uint16_t * buff)`                                                               |
 | ----------------- | ----------------------------------------------------------------------------------------- |
 | **Parameters**    | **buff** - the buffer to store channel mask                                               |
 | **Returns**       | bool                                                                                      |
@@ -3463,11 +3470,11 @@ void loop()
 This API allows the user to set the channel mask, close or open the channel.
 
 ```c
-bool set(uint16_t * value)	
+api.lorawan.mask.set(value);	
 ```
 
 
-| **Syntax**        | `api.lorawan.mask.set(value);`                                                              |
+| **Function**      | `bool set(uint16_t * value)`                                                                |
 | ----------------- | ------------------------------------------------------------------------------------------- |
 | **Parameters**    | **value** - the buffer to set the channel mask                                              |
 | **Returns**       | bool                                                                                        |
@@ -3530,11 +3537,11 @@ This API gets the number corresponding to active regions.
 
 
 ```c
-int32_t get()	
+api.lorawan.band.get();	
 ```
 
 
-| **Syntax**        | `api.lorawan.band.get();`                                                                                                                                             |
+| **Function**      | `int32_t get()`                                                                                                                                                       |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Returns**       | the active region                                                                                                                                                     |
 | **Return Values** | **0** - EU433  <br>  **1** - CN470 <br> **2** - RU864 <br> **3**	IN865 <br> **4** - EU868 <br> **5**	- US915 <br> **6** - AU915 <br> **7** - KR920 <br> **8** - AS923 |
@@ -3565,12 +3572,11 @@ This API set number corresponding to active regions.
 
 
 ```c
-
-bool set(uint8_t value)	
+api.lorawan.band.set(value);	
 ```
 
 
-| **Syntax**        | `api.lorawan.band.set(value);`                                                               |
+| **Function**      | `bool set(uint8_t value)`                                                                    |
 | ----------------- | -------------------------------------------------------------------------------------------- |
 | **Parameters**    | **value** - the active region to set                                                         |
 | **Returns**       | bool                                                                                         |
@@ -3613,11 +3619,11 @@ RAKLorawan::nwm
 This API allows to get the network working mode (0 = P2P, 1 = LoRaWAN, 2 = FSK).
 
 ```c
-int get()
+api.lorawan.nwm.get();
 ```
 
 
-| **Syntax**        | `api.lorawan.nwm.get();`                                         |
+| **Function**      | `int get()`                                                      |
 | ----------------- | ---------------------------------------------------------------- |
 | **Returns**       | the network working mode                                         |
 | **Return Values** | **0** - P2P mode <br> **1** - LoRaWAN mode <br> **2** - FSK mode |
@@ -3647,12 +3653,10 @@ void loop()
 This API allows to set the network working mode (0 = P2P, 1 = LoRaWAN, 2 = FSK).
 
 ```c
-
-bool set(uint8_t value)	
+api.lorawan.nwm.set(value);
 ```
 
-
-| **Syntax**        | `api.lorawan.nwm.set(value));`                                                                             |
+| **Function**      | `bool set(uint8_t value)	`                                                                                 |
 | ----------------- | ---------------------------------------------------------------------------------------------------------- |
 | **Parameters**    | **value** - the network working mode                                                                       |
 | **Returns**       | bool                                                                                                       |
@@ -3693,13 +3697,13 @@ RAKLorawan::pfreq
 This API allows to get the P2P frequency.
 
 ```c
-uint32_t get()
+api.lorawan.pfreq.get();
 ```
 
 
-| **Syntax**  | `api.lorawan.pfreq.get();` |
-| ----------- | -------------------------- |
-| **Returns** | The frequency for P2P mode |
+| **Function** | `uint32_t get()`           |
+| ------------ | -------------------------- |
+| **Returns**  | The frequency for P2P mode |
 
 ::: details Click to View Example
 ```c{10}
@@ -3727,10 +3731,10 @@ This API allows to set the P2P frequency.
 
 
 ```c
-bool set(uint32_t value)	
+api.lorawan.pfreq.set(value);	
 ```
 
-| **Syntax**        | `api.lorawan.pfreq.set(value);`                                                      |
+| **Function**      | `bool set(uint32_t value)`                                                           |
 | ----------------- | ------------------------------------------------------------------------------------ |
 | **Parameters**    | **value** - the frequency for P2P mode                                               |
 | **Returns**       | bool                                                                                 |
@@ -3769,12 +3773,12 @@ RAKLorawan::psf
 This API allows to get P2P Spreading Factor (6, 7, 8, 9, 10, 11, 12).
 
 ```c
-uint8_t get()	
+api.lorawan.psf.get();	
 ```
 
-| **Syntax**  | `api.lorawan.psf.get();` |
-| ----------- | ------------------------ |
-| **Returns** | The P2P spreading factor |
+| **Function** | `uint8_t get()`          |
+| ------------ | ------------------------ |
+| **Returns**  | The P2P spreading factor |
 
 
 ::: details Click to View Example
@@ -3801,12 +3805,12 @@ void loop()
 This API allows to set P2P Spreading Factor (6,7, 8, 9, 10, 11, 12).
 
 ```c
-bool set(uint8_t value)	
+api.lorawan.psf.set(value);	
 ```
 
 
 
-| **Syntax**        | `api.lorawan.psf.set(value);`                                                                              |
+| **Function**      | `bool set(uint8_t value)`                                                                                  |
 | ----------------- | ---------------------------------------------------------------------------------------------------------- |
 | **Parameters**    | **value** - the P2P spreading factor                                                                       |
 | **Returns**       | bool                                                                                                       |
@@ -3847,13 +3851,13 @@ RAKLorawan::pbw
 This API allows to get P2P bandwidth (125, 250, 500).
 
 ```c
-uint32_t get()
+api.lorawan.pbw.get();
 ```
 
 
-| **Syntax**  | `api.lorawan.pbw.get();` |
-| ----------- | ------------------------ |
-| **Returns** | The P2P bandwidth        |
+| **Function** | `uint32_t get()`  |
+| ------------ | ----------------- |
+| **Returns**  | The P2P bandwidth |
 
 
 ::: details Click to View Example
@@ -3880,11 +3884,11 @@ void loop()
 This API allow to set P2P Bandwidth (125, 250, 500).
 
 ```c
-bool set(uint32_t value)
+api.lorawan.pbw.set(value);
 ```
 
 
-| **Syntax**        | `api.lorawan.pbw.set(value);`                                                                 |
+| **Function**      | `bool set(uint32_t value)`                                                                    |
 | ----------------- | --------------------------------------------------------------------------------------------- |
 | **Parameters**    | **value** - the P2P bandwidth                                                                 |
 | **Returns**       | bool                                                                                          |
@@ -3924,12 +3928,12 @@ RAKLorawan::pcr
 This API allows to get code rate for the P2P mode.
 
 ```c
-uint8_t get()
+api.lorawan.pcr.get();
 ```
 
-| **Syntax**  | `api.lorawan.pcr.get();` |
-| ----------- | ------------------------ |
-| **Returns** | The code rate            |
+| **Function** | `uint8_t get()` |
+| ------------ | --------------- |
+| **Returns**  | The code rate   |
 
 
 ::: details Click to View Example
@@ -3957,10 +3961,10 @@ This API allows to set code rate for the P2P mode.
 
 
 ```c
-bool set(uint8_t value)	
+api.lorawan.pcr.set(value);	
 ```
 
-| **Syntax**        | `api.lorawan.pcr.set(value);`                                                        |
+| **Function**      | `bool set(uint8_t value)`                                                            |
 | ----------------- | ------------------------------------------------------------------------------------ |
 | **Parameters**    | **value** - the code rate for P2P mode                                               |
 | **Returns**       | bool                                                                                 |
@@ -4003,12 +4007,12 @@ This API allows to get P2P Preamble Length (2-65535).
 
 
 ```c
-uint16_t get()
+api.lorawan.ppl.get();
 ```
 
-| **Syntax**     | `api.lorawan.ppl.get();` |
-| -------------- | ------------------------ |
-| **Returns** | The Preamble length      |
+| **Function** | `uint16_t get()`    |
+| ------------ | ------------------- |
+| **Returns**  | The Preamble length |
 
 
 ::: details Click to View Example
@@ -4034,10 +4038,10 @@ void loop()
 This API allows to set P2P Preamble Length (2-65535).
 
 ```c
-bool set(uint16_t value)	
+api.lorawan.ppl.set(value);	
 ```
 
-| **Syntax**     | `api.lorawan.ppl.set(value);`                                                                                     |
+| **Function**   | `bool set(uint16_t value)`                                                                                        |
 | -------------- | ----------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **value** - the P2P preamble length(2-65536)                                                                      |
 | **Returns**    | **TRUE** for setting P2P preamble length success <br> **FALSE** for setting preamble length fail (Type: **bool**) |
@@ -4077,9 +4081,14 @@ RAKLorawan::ptp
 This API allows to get P2P TX Power (5-22).
 
 
-| **Syntax**  | `api.lorawan.ptp.get();`  |
-| ----------- | ------------------------- |
-| **Returns** | The Tx power for P2P mode |
+```c
+api.lorawan.ptp.get();
+```
+
+
+| **Function** | `uint8_t value`           |
+| ------------ | ------------------------- |
+| **Returns**  | The Tx power for P2P mode |
 
 
 ::: details Click to View Example
@@ -4106,11 +4115,11 @@ This API allows to set P2P TX Power (5-22).
 
 
 ```c
-bool set(uint8_t value)	
+api.lorawan.ptp.set(value);
 ```
 
 
-| **Syntax**        | `api.lorawan.ptp.set(value);`                                                             |
+| **Function**      | `bool set(uint8_t value)`                                                                 |
 | ----------------- | ----------------------------------------------------------------------------------------- |
 | **Parameters**    | **value** - the P2P Tx power                                                              |
 | **Returns**       | bool                                                                                      |
@@ -4151,10 +4160,10 @@ RAKLorawan::encry
 This API allows to get the status of P2P mode encryption.
 
 ```c
-bool get()	
+api.lorawan.encry.get();	
 ```
 
-| **Syntax**        | `api.lorawan.encry.get();`                                                              |
+| **Function**      | `bool get()`                                                                            |
 | ----------------- | --------------------------------------------------------------------------------------- |
 | **Returns**       | bool                                                                                    |
 | **Return Values** | **TRUE**: P2P mode encryption is enable  <br> **FALSE**: P2P mode encryption is disable |
@@ -4224,10 +4233,10 @@ This API allows to enable or disable P2P mode encryption.
 
 
 ```c
-bool set(bool value)	
+api.lorawan.encry.set(value);	
 ```
 
-| **Syntax**        | `api.lorawan.encry.set(value);`                                                                           |
+| **Function**      | `bool set(bool value)`                                                                                    |
 | ----------------- | --------------------------------------------------------------------------------------------------------- |
 | **Parameters**    | **value** - the status of P2P mode encryption                                                             |
 | **Returns**       | bool                                                                                                      |
@@ -4305,11 +4314,11 @@ RAKLorawan::enckey
 This API allows to get the key of P2P mode encryption.
 
 ```c
-bool get(uint8_t * buff, uint32_t len)
+api.lorawan.enckey.get(buff, len);
 ```
 
 
-| **Syntax**        | `api.lorawan.enckey.get(buff, len);`                                                                        |
+| **Function**      | `bool get(uint8_t * buff, uint32_t len)`                                                                    |
 | ----------------- | ----------------------------------------------------------------------------------------------------------- |
 | **Parameters**    | **buff**	- the buffer to store encryption key <br> **len** - the length of encryption key (must be 8 bytes) |
 | **Returns**       | bool                                                                                                        |
@@ -4381,10 +4390,10 @@ This API allows to set the key of P2P mode encryption.
 
 
 ```c
-bool set(uint8_t * buff, uint32_t len)	
+api.lorawan.enckey.set(buff, len);	
 ```
 
-| **Syntax**        | `api.lorawan.enckey.set(buff, len);`                                                                      |
+| **Function**      | `bool set(uint8_t * buff, uint32_t len)`                                                                  |
 | ----------------- | --------------------------------------------------------------------------------------------------------- |
 | **Parameters**    | **buff** - the buffer to set encryption key <br> **len** - the length of encryption key (must be 8 bytes) |
 | **Returns**       | bool                                                                                                      |
@@ -4465,12 +4474,12 @@ RAKLorawan::pbr
 This API allows to get the P2P FSK modem bitrate (600&nbsp;b/s - 307200&nbsp;b/s).
 
 ```c
-uint32_t get()	
+api.lorawan.pbr.get();	
 ```
 
-| **Syntax**  | `api.lorawan.pbr.get();`  |
-| ----------- | ------------------------- |
-| **Returns** | The P2P FSK modem bitrate |
+| **Function** | `uint32_t get()`          |
+| ------------ | ------------------------- |
+| **Returns**  | The P2P FSK modem bitrate |
 
 
 #### set()
@@ -4479,13 +4488,13 @@ This API allows to set the P2P FSK modem bitrate (600&nbsp;b/s - 307200&nbsp;b/s
 
 
 ```c
-bool set(uint32_t value)
+api.lorawan.pbr.get();
 ```
 
 
-| **Syntax**     | `api.lorawan.pbr.get();` |
-| -------------- | ------------------------ |
-| **Parameters** | value                    |
+| **Function**   | `bool set(uint32_t value)` |
+| -------------- | -------------------------- |
+| **Parameters** | value                      |
 
 
 ### pfdev
@@ -4501,12 +4510,12 @@ RAKLorawan::pfdev
 This API allows to get the P2P FSK modem frequency deviation.
 
 ```c
-uint32_t get()	
+api.lorawan.pfdev.get();	
 ```
 
-| **Syntax**  | `api.lorawan.pfdev.get();`            |
-| ----------- | ------------------------------------- |
-| **Returns** | The P2P FSK modem frequency deviation |
+| **Function** | `uint32_t get()`                      |
+| ------------ | ------------------------------------- |
+| **Returns**  | The P2P FSK modem frequency deviation |
 
 
 
@@ -4516,12 +4525,12 @@ uint32_t get()
 This API allows to set the P2P FSK modem frequency deviation.
 
 ```c
-bool set(uint32_t value)	
+api.lorawan.pfdev.set(value);	
 ```
 
-| **Syntax**     | `api.lorawan.pfdev.set(value);` |
-| -------------- | ------------------------------- |
-| **Parameters** | value                           |
+| **Function**   | `bool set(uint32_t value)` |
+| -------------- | -------------------------- |
+| **Parameters** | value                      |
 
 
 ### registerPRecvCallback()
@@ -4530,11 +4539,11 @@ This API is used to register a callback function, so that application can be not
 
 
 ```c
-bool registerPRecvCallback(service_lora_p2p_recv_cb_type callback)	
+api.lorawan.registerPRecvCallback(service_lora_p2p_recv_cb_type callback);	
 ```
 
 
-| **Syntax**        | `api.lorawan.registerPRecvCallback(service_lora_p2p_recv_cb_type callback);`                        |
+| **Function**      | `bool registerPRecvCallback(service_lora_p2p_recv_cb_type callback)`                                |
 | ----------------- | --------------------------------------------------------------------------------------------------- |
 | **Parameters**    | **The** - callback function                                                                         |
 | **Returns**       | bool                                                                                                |
@@ -4606,10 +4615,10 @@ void loop()
 This API is used to register a callback function, so that application can be notified when P2P uplink process is done.
 
 ```c
-bool registerPSendCallback(service_lora_p2p_send_cb_type callback)	
+api.lorawan.registerPSendCallback(service_lora_p2p_send_cb_type callback);	
 ```
 
-| **Syntax**        | `api.lorawan.registerPSendCallback(service_lora_p2p_send_cb_type callback);`                        |
+| **Function**      | `bool registerPSendCallback(service_lora_p2p_send_cb_type callback)`                                |
 | ----------------- | --------------------------------------------------------------------------------------------------- |
 | **Parameters**    | **The** - callback function                                                                         |
 | **Returns**       | bool                                                                                                |
@@ -4681,10 +4690,10 @@ This API provides the way to P2P send data.
 
 
 ```c
-bool psend(uint8_t length, uint8_t * payload)	
+api.lorawan.psend(length, payload);	
 ```
 
-| **Syntax**        | `api.lorawan.psend(length, payload);`                                                       |
+| **Function**      | `bool psend(uint8_t length, uint8_t * payload)`                                             |
 | ----------------- | ------------------------------------------------------------------------------------------- |
 | **Parameters**    | **length** - the length of the payload <br> **payload** - the data send to the other device |
 | **Returns**       | bool                                                                                        |
@@ -4727,11 +4736,11 @@ void loop()
 This API adds a new multicast group configure multicast parameters.
 
 ```c
-bool addmulc(RAK_LORA_McSession session)	
+api.lorawan.addmulc(session);	
 ```
 
 
-| **Syntax**        | `api.lorawan.addmulc(session);`                                                                |
+| **Function**      | `bool addmulc(RAK_LORA_McSession session)`                                                     |
 | ----------------- | ---------------------------------------------------------------------------------------------- |
 | **Parameters**    | **session** - The structure of session                                                         |
 | **Returns**       | bool                                                                                           |
@@ -4816,11 +4825,11 @@ void loop()
 This API allows the removal of a configured multicast group.
 
 ```c
-bool rmvmulc(uint32_t devAddr)	
+api.lorawan.rmvmulc(devAddr);	
 ```
 
 
-| **Syntax**        | `api.lorawan.rmvmulc(devAddr);`                                   |
+| **Function**      | `bool rmvmulc(uint32_t devAddr)`                                  |
 | ----------------- | ----------------------------------------------------------------- |
 | **Parameters**    | **devAddr** - the address to remove a multicast group             |
 | **Returns**       | bool                                                              |
@@ -4906,10 +4915,10 @@ void loop()
 This command can view current configured multicast group information.
 
 ```c
-bool lstmulc(RAK_LORA_McSession * iterator)	
+api.lorawan.lstmulc(&multicast_list);	
 ```
 
-| **Syntax**        | `api.lorawan.lstmulc(&multicast_list);`                                                  |
+| **Function**      | `bool lstmulc(RAK_LORA_McSession * iterator)`                                            |
 | ----------------- | ---------------------------------------------------------------------------------------- |
 | **Parameters**    | **multicast_list** - a RAK_LORA_McSession variable                                       |
 | **Returns**       | bool                                                                                     |

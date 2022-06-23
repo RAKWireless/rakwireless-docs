@@ -28,9 +28,9 @@ rak_img: /assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/1.product
 **RAK2245 Pi HAT** is a module with Raspberry PI form factor. It can be plugged into
 Raspberry PI such as Raspberry Pi 3 Model B+ as a complete RF front end of gateway. It supports eight channels and is available for LoRaWAN global frequency bands. The board is the smallest gateway concentrator which integrates the **Ublox MAX-7Q GPS Module** and heat sink.
 
-The board can provide low data rate LoRa radio links in ultra-fast speed. It is powered by a **Semtech SX1301** transceiver concentrator that is capable of managing packets from many remotely dispersed end-points. Two Semtech SX125X are integrated for RF front end I/Q transceivers.
+The board can provide low data rate LoRa radio links at ultra-fast speed. It is powered by a **Semtech SX1301** transceiver concentrator that is capable of managing packets from many remotely dispersed end-points. Two Semtech SX125X are integrated for RF front end I/Q transceivers.
 
-The RAK2245 Pi HAT is a complete and cost efficient gateway solution that can help you develop a full LoRa system. This is an economical way to create different solutions like smart grid, intelligent farm and other IoT applications. It is also ideal for manufacturing small series that can expand into more applications.
+The RAK2245 Pi HAT is a complete and cost efficient gateway solution that can help you develop a full LoRa system. This is an economical way to create different solutions like smart grids, intelligent farms and other IoT applications. It is also ideal for manufacturing small series that can expand into more applications.
 
 ### Features
 
@@ -78,7 +78,7 @@ The hardware is categorized into five parts. It discusses the interfacing, pinou
 The SX1301 digital baseband chip contains **ten (10) programmable reception paths**. Those
 paths have differentiated levels of programmability and allow different use cases. It is
 important to understand the differences between those demodulation paths to make the
-best possible use from the system.
+best possible use of the system.
 
 ##### Power Supply
 
@@ -104,7 +104,7 @@ There are two digital IO PINs, which give the user an interface to reset the GPS
 
 ##### LEDs
 
-There are **three (3) Green LED** that indicates the status of PWR, TX, RX.
+There are **three (3) Green LED** that indicate the status of PWR, TX, RX.
 
 ##### Antenna RF Interface
 
@@ -215,7 +215,7 @@ The RAK2245 Pi HAT has an excellent transmitter performance. It is highly recomm
 
 ##### Receiver RF
 
-We recommended you to use optimized RSSI calibration values which is part of HAL v3.1. For both Radio 1 and 2, the RSSI-offset should be set to -169. The following table gives typical sensitivity level of RAK2245 Pi HAT.
+We recommended that you to use optimized RSSI calibration values which are part of HAL v3.1. For both Radio 1 and 2, the RSSI-offset should be set to -169. The following table gives the typical sensitivity level of RAK2245 Pi HAT.
 
 | Signal Bandwidth (Khz) | Spreading Factor | Sensitivity (dBm) |
 | :--------------------: | :--------------: | :---------------: |
@@ -232,7 +232,7 @@ The following are the electrical characteristics of RAK2245 Pi HAT. [Contact us]
 
 ##### Absolute Maximum Rating
 
-The values and range given below are all in accordance with Absolute Maximum Rating System (IEC 134)
+The values and range given below are all in accordance with the Absolute Maximum Rating System (IEC 134)
 
 | Parameter             | Description       | Min.  | Typ. | Max    |
 | --------------------- | ----------------- | ----- | ---- | ------ |
@@ -256,7 +256,7 @@ The table below lists the maximum ESD
 |                                          |     |         | 8kV | Air Discharge according to IEC 61000-4-2     |
 
 :::tip 📝 NOTE
-The module is an Electrostatic Sensitive Device and require special precautions when handling.
+The module is an Electrostatic Sensitive Device and requires special precautions when handling.
 :::
 
 ##### Power Consumption

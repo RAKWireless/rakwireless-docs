@@ -21,16 +21,17 @@ enum RAK_AT_PERMISSION
 ### Firmware Version
 
 #### get()
-This api allow user to get the firmware version
+
+This api allows user to get the firmware version.
 
 ```c
-const string get()
+api.system.firmwareVersion.get()
 ```
 
 
-| **Syntax**     | `api.system.firmwareVersion.get()`                       |
-| -------------- | -------------------------------------------------------- |
-| **Returns**    | firmware version(Type: string)                           |
+| **Syntax**  | `const string get()`           |
+| ----------- | ------------------------------ |
+| **Returns** | firmware version(Type: string) |
 
 
 ::: details Click to View Example
@@ -51,16 +52,17 @@ void loop()
 ### CLI Version
 
 #### get()
-This api allow user to get the cli version
+
+This api allows user to get the cli version.
 
 ```c
-const string get()
+api.system.cliVersion.get()
 ```
 
 
-| **Syntax**  | `api.system.cliVersion.get()` |
-| ----------- | ----------------------------- |
-| **Returns** | cli version(Type: string)     |
+| **Syntax**  | `const string get()`      |
+| ----------- | ------------------------- |
+| **Returns** | cli version(Type: string) |
 
 
 ::: details Click to View Example
@@ -79,20 +81,20 @@ void loop()
 :::
 
 
-
 ### API Version
 
 #### get()
-This api allow user to get the api version
+
+This api allows user to get the api version.
 
 ```c
-const string get()
+api.system.apiVersion.get()
 ```
 
 
-| **Syntax**  | `api.system.apiVersion.get()` |
-| ----------- | ----------------------------- |
-| **Returns** | api version(Type: string)     |
+| **Syntax**  | `const string get()`      |
+| ----------- | ------------------------- |
+| **Returns** | api version(Type: string) |
 
 
 ::: details Click to View Example
@@ -113,16 +115,17 @@ void loop()
 ### Model ID
 
 #### get()
-This api allow user to get the mode ID
+
+This api allows user to get the mode ID.
 
 ```c
-const string get()
+api.system.modelId.get()
 ```
 
 
-| **Syntax**  | `api.system.modelId.get()` |
-| ----------- | -------------------------- |
-| **Returns** | model ID(Type: string)     |
+| **Syntax**  | `const string get()`   |
+| ----------- | ---------------------- |
+| **Returns** | model ID(Type: string) |
 
 
 ::: details Click to View Example
@@ -143,16 +146,17 @@ void loop()
 ### Chip ID
 
 #### get()
-This api allow user to get the chip ID
+
+This api allows user to get the chip ID.
 
 ```c
-const string get()
+api.system.chipId.get()
 ```
 
 
-| **Syntax**  | `api.system.chipId.get()` |
-| ----------- | -------------------------- |
-| **Returns** | chip ID(Type: string)    |
+| **Syntax**  | `const string get()`  |
+| ----------- | --------------------- |
+| **Returns** | chip ID(Type: string) |
 
 
 ::: details Click to View Example
@@ -171,20 +175,20 @@ void loop()
 :::
 
 
-
 ### Battery
 
 #### get()
-Get the current battery level 
+
+Gets the current battery level.
 
 ```c
-float get(void)
+api.system.bat.get()
 ```
 
 
-| **Syntax**  | `api.system.bat.get()` |
-| ----------- | ---------------------- |
-| **Returns** | float (Unit: V)        |
+| **Syntax**  | `float get(void)` |
+| ----------- | ----------------- |
+| **Returns** | float (Unit: V)   |
 
 
 ::: details Click to View Example
@@ -205,47 +209,50 @@ void loop()
 ## Flash
 
 ### get()
-Read a range of data from user flash partition.
+
+Reads a range of data from user flash partition.
 
 ```c
-bool get(uint32_t offset, uint8_t * buf, uint32_t len)
+api.system.flash.get(offset, buf, len)
 ```
 
 
-| **Syntax**     | `api.system.flash.get(offset, buf, len)`                                                                                              |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Syntax**     | `bool get(uint32_t offset, uint8_t * buf, uint32_t len)`                                                                                                                                                                                                                                                                                                                                    |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **offset** the offset to the start of user flash partition (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) <br> **buf** the buffer for reading the data <br>**len**the length of data (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) |
-| **Returns**    | **TRUE**	for reading data successfully <br> **FALSE** for reading data failure                                                        |
+| **Returns**    | **TRUE**	for reading data successfully <br> **FALSE** for reading data failure                                                                                                                                                                                                                                                                                                              |
 
 
 ### set()
-Write a range of data from user flash partition.
+
+Writes a range of data from user flash partition.
 
 ```c
-bool set(uint32_t offset, uint8_t * buf, uint32_t len)
+api.system.flash.set(offset, buf, len)
 ```
 
 
-| **Syntax**     | `api.system.flash.set(offset, buf, len)`                                                                                              |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Syntax**     | `bool set(uint32_t offset, uint8_t * buf, uint32_t len)`                                                                                                                                                                                                                                                                                                                                    |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **offset** the offset to the start of user flash partition (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) <br> **buf** the buffer for writing the data <br>**len**the length of data (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) |
-| **Returns**    | **TRUE**	for writing data successfully <br> **FALSE** for writing data failure                                                        |
+| **Returns**    | **TRUE**	for writing data successfully <br> **FALSE** for writing data failure                                                                                                                                                                                                                                                                                                              |
 
 
 
 ## Powersave
 
 ### cpu()
-Sleep the cpu with default no timeout
+
+Sleeps the cpu with default no timeout.
 
 ```c
-void cpu(int ms_time = POWERSAVE_NO_TIMEOUT)
+api.system.sleep.cpu();
 ```
 
-| **Syntax**     | `api.system.sleep.cpu();`                                               |
+| **Syntax**     | `void cpu(int ms_time = POWERSAVE_NO_TIMEOUT)`                          |
 | -------------- | ----------------------------------------------------------------------- |
 | **Parameters** | **ms_time(optional)** - Duration for cpu to sleep(default = no timeout) |
-| **Returns**    | void                                                                 |
+| **Returns**    | void                                                                    |
 
 
 :::details Click to View Example
@@ -263,16 +270,17 @@ void loop()
 
 
 ### lora()
-Sleep lora with default no timeout.
+
+Sleeps lora with default no timeout.
 
 ```c
-void lora(int ms_time = POWERSAVE_NO_TIMEOUT)
+api.system.sleep.lora();
 ```
 
-| **Syntax**     | `api.system.sleep.lora();`                                               |
+| **Syntax**     | `void lora(int ms_time = POWERSAVE_NO_TIMEOUT)`                         |
 | -------------- | ----------------------------------------------------------------------- |
 | **Parameters** | **ms_time(optional)** - Duration for cpu to sleep(default = no timeout) |
-| **Returns**    | void                                                                 |
+| **Returns**    | void                                                                    |
 
 
 :::details Click to View Example
@@ -289,13 +297,14 @@ void loop()
 :::
 
 ### all()
-Sleep all component with default no timeout.
+
+Sleeps all the component with default no timeout.
 
 ```c
-void all(int ms_time = POWERSAVE_NO_TIMEOUT)
+api.system.sleep.all();
 ```
 
-| **Syntax**     | `api.system.sleep.all();`                                                         |
+| **Syntax**     | `void all(int ms_time = POWERSAVE_NO_TIMEOUT)`                                    |
 | -------------- | --------------------------------------------------------------------------------- |
 | **Parameters** | **ms_time(optional)** - Duration for all component to sleep(default = no timeout) |
 | **Returns**    | void                                                                              |
@@ -315,16 +324,17 @@ void loop()
 :::
 
 ### setup()
-Setup the sleep function
+
+Sets up the sleep function.
 
 ```c
-void setup(RUI_WAKEUP_TRIGGER_MODE mode, uint32_t pin)
+api.system.sleep.setup(mode);
 ```
 
-| **Syntax**     | `api.system.sleep.setup(mode);`                                                                                             |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **mode** -This decide to use Rising or Falling trigger mode<br> **pin**  This is the pin to be chosen as the wake up source |
-| **Returns**    | void                                                                                                                        |
+| **Syntax**     | `void setup(RUI_WAKEUP_TRIGGER_MODE mode, uint32_t pin)`                                                                      |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **mode** - This decide to use Rising or Falling trigger mode<br> **pin** - This is the pin to be chosen as the wake up source |
+| **Returns**    | void                                                                                                                          |
 
 
 :::details Click to View Example
@@ -346,16 +356,21 @@ void loop()
 
 ### pword
 #### set()
-This api allow user to set a 1~8 digits password to lock the default serial
+
+This api allows user to set a 1~8 digits password to lock the default serial.
 
 ```c
-bool set(char * passwd, uint32_t len)
+api.system.pword.set(passwd_Str)
 ```
 
-| **Syntax**     | `api.system.pword.set(passwd_Str)` <br> `api.system.pword.set(passwd_Char, len)`                                                                                                       |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **passwd_Str** - the password to lock the Default Serial(Type: string)<br> **passwd_Char** -	the password to lock the Default Serial(Type: char *)<br> **len**- the length of password |
-| **Returns**    | **TRUE**	successfully set a password <br> **FALSE**	failed to set a password                                                                                                           |
+```c
+api.system.pword.set(passwd_Char, len)
+```
+
+| **Syntax**     | `bool set(char * passwd, uint32_t len)`                                                                                                                                                   |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **passwd_Str** - the password to lock the Default Serial(Type: string) <br> **passwd_Char** - the password to lock the Default Serial(Type: char *) <br> **len** - the length of password |
+| **Returns**    | **TRUE**	successfully set a password <br> **FALSE**	failed to set a password                                                                                                              |
 
 
 :::details Click to View Example
@@ -383,19 +398,20 @@ void loop()
 
 
 #### lock()
-This api allow user to lock the default serial with the pass set in api.system.pword.set()
+
+This api allows user to lock the default serial with the pass set in `api.system.pword.set()`.
 
 ::: tip 📝 NOTE
-If you never set a password successfully, the default password will be **00000000**
+If you never set a password successfully, the default password will be **00000000**.
 :::
 
 ```c
-void lock(void)	
+api.system.pword.lock()	
 ```
 
-| **Syntax**  | `api.system.pword.lock()` |
-| ----------- | ------------------------- |
-| **Returns** | void                      |
+| **Syntax**  | `void lock(void)` |
+| ----------- | ----------------- |
+| **Returns** | void              |
 
 
 :::details Click to View Example
@@ -423,15 +439,15 @@ void loop()
 
 
 #### unlock()
-This api allow user to unlock the default serial without password when its locked
+This api allows user to unlock the default serial without password when its locked.
 
 ```c
-void unlock(void)	
+api.system.pword.unlock()	
 ```
 
-| **Syntax**  | `api.system.pword.unlock()` |
-| ----------- | ------------------------- |
-| **Returns** | void                      |
+| **Syntax**  | `void unlock(void)` |
+| ----------- | ------------------- |
+| **Returns** | void                |
 
 
 :::details Click to View Example
@@ -464,13 +480,13 @@ void loop()
 
 #### set()
 
-Set the alias name for device.
+Sets the alias name for device.
 
 ```c
-bool set(char* buf , uint32_t len)
+api.system.alias.set(buf, len)
 ```
 
-| **Syntax**     | `api.system.alias.set(buf, len)`                                                            |
+| **Syntax**     | `bool set(char* buf , uint32_t len)`                                                        |
 | -------------- | ------------------------------------------------------------------------------------------- |
 | **Parameters** | **buf** - the buffer to set alias name <br> **len** - the length of alias name(<= 16 bytes) |
 | **Returns**    | **TRUE**	for setting alias name successfully <br> **FALSE**	for setting alias name failure  |
@@ -493,13 +509,13 @@ void loop()
 
 #### get()
 
-Get the alias name for device.
+Gets the alias name for device.
 
 ```c
-bool get(char* buf , uint32_t len)
+api.system.alias.get(buf, len)
 ```
 
-| **Syntax**     | `api.system.alias.get(buf, len)`                                                            |
+| **Syntax**     | `bool get(char* buf , uint32_t len)`                                                        |
 | -------------- | ------------------------------------------------------------------------------------------- |
 | **Parameters** | **buf** - the buffer to get alias name <br> **len** - the length of alias name(<= 16 bytes) |
 | **Returns**    | **TRUE**	for getting alias name successfully <br> **FALSE**	for getting alias name failure  |
@@ -521,15 +537,16 @@ void loop()
 :::
 ### atMode
 #### add()
-Provide developers to create AT CMD.
+
+Provides developers to create AT CMD.
 
 ```c
-bool add(char *cmd, char *usage, char *title, PF_handle handle,unsigned int perm = RAK_ATCMD_PERM_WRITE | RAK_ATCMD_PERM_READ);
+api.system.atMode.add(cmd, usage, title, handle, perm)
 ```
 
-| **Syntax**     | `api.system.atMode.add(cmd, usage, title, handle, perm)`                                                                                                                                          |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **cmd** the cmd to define cmd name <br> **usage**	the cmd usage <br> **title**	the cmd title <br> **handle**	the handler that this command will execute <br>**perm**	the cmd execution permission |
+| **Syntax**     | `bool add(char *cmd, char *usage, char *title, PF_handle handle,unsigned int perm = RAK_ATCMD_PERM_WRITE                                                                                                  | RAK_ATCMD_PERM_READ);` |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **cmd** - the cmd to define cmd name <br> **usage** - the cmd usage <br> **title** - the cmd title <br> **handle** - the handler that this command will execute <br>**perm**	the cmd execution permission |
 
 
 :::details Click to View Example
@@ -578,10 +595,10 @@ void loop()
 
 ### CHANGE\_ATCMD\_PERM
 
-Change AT command permission 
+Changes AT command permission.
 
 PERMISSION LEVEL: 
-* `RAK_ATCMD_PERM_READ`, `RAK_ATCMD_PERM_WRITE`, `RAK_ATCMD_PERM_WRITEONCEREAD`, `RAK_ATCMD_PERM_DISABLE` AT commands' default permission are `RAK_ATCMD_PERM_READ | RAK_ATCMD_PERM_WRITE`
+* `RAK_ATCMD_PERM_READ`, `RAK_ATCMD_PERM_WRITE`, `RAK_ATCMD_PERM_WRITEONCEREAD`, `RAK_ATCMD_PERM_DISABLE` AT commands' default permission are `RAK_ATCMD_PERM_READ | RAK_ATCMD_PERM_WRITE`.
 
 ```c
 #define CHANGE_ATCMD_PERM(_atcmd_name, _atcmd_perm)		
@@ -621,12 +638,12 @@ void loop()
 
 
 ```c
-void reboot()
+api.system.reboot()
 ```
 
-| **Syntax**  | `api.system.reboot()` |
-| ----------- | --------------------- |
-| **Returns** | void                  |
+| **Syntax**  | `void reboot()` |
+| ----------- | --------------- |
+| **Returns** | void            |
 
 
 :::details Click to View Example
@@ -654,12 +671,12 @@ void loop()
 
 
 ```c
-void restoreDefault()
+api.system.restoreDefault()
 ```
 
-| **Syntax**  | `api.system.restoreDefault()` |
-| ----------- | ----------------------------- |
-| **Returns** | void                          |
+| **Syntax**  | `void restoreDefault()` |
+| ----------- | ----------------------- |
+| **Returns** | void                    |
 
 
 :::details Click to View Example

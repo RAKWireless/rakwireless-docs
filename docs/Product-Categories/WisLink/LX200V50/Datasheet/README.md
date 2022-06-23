@@ -90,7 +90,7 @@ The hardware specification is categorized into five parts. It shows the interfac
 
 ##### Evaluation Board (EVB)
 
-The EVB can be used for the customer's product development and testing, and can also be used as a part of the research and development products. The baseboard is designed for all the external interface circuits required by the module, including coupling parts such as 3.3&nbsp;V BUCK, Ethernet RJ45, PLC coupling transmission transformer, and other interfaces. It is mainly the interface. The structure of each product is different. The auxiliary interface evaluation board is designed to be convenient for testing.
+The EVB can be used for the customer's product development and testing, and can also be used as a part of the research and development of products. The baseboard is designed for all the external interface circuits required by the module, including coupling parts such as 3.3&nbsp;V BUCK, Ethernet RJ45, PLC coupling transmission transformer, and other interfaces. It is mainly the interface. The structure of each product is different. The auxiliary interface evaluation board is designed to be convenient for testing.
 
 **Figure 2** shows the interfaces of the evaluation board.
 

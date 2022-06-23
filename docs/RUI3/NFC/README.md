@@ -9,31 +9,32 @@
 ## begin
 
 ```c
-void begin()
+api.nfc.begin();
 ```
 
-| **Remarks**    | `api.nfc.begin();` |
-| -------------- | ------------------ |
-| **Parameters** |                    |
-| **Return**     |                    |
+| **Remarks**    | `void begin()` |
+| -------------- | -------------- |
+| **Parameters** |                |
+| **Return**     |                |
 
 ## write
 
 ```c
-void write(uint8_t const * code, uint32_t code_size, uint8_t const * payload, uint32_t payload_size)
+api.nfc.write(code, payload);
 ```
-| **Remarks**    | `api.nfc.write(code, payload);` |
-| -------------- | ------------------------------- |
-| **Parameters** | - code <br> - payload           |
-| **Return**     |                                 |
+
+| **Remarks**    | `void write(uint8_t const * code, uint32_t code_size, uint8_t const * payload, uint32_t payload_size)` |
+| -------------- | ------------------------------------------------------------------------------------------------------ |
+| **Parameters** | - code <br> - payload                                                                                  |
+| **Return**     |                                                                                                        |
 
 ## start
 
 ```c
-void start()	
+api.nfc.start();	
 ```
 
-| **Remarks**    | `api.nfc.start();` |
-| -------------- | ------------------ |
-| **Parameters** |                    |
-| **Return**     |                    |
+| **Remarks**    | `void start()` |
+| -------------- | -------------- |
+| **Parameters** |                |
+| **Return**     |                |

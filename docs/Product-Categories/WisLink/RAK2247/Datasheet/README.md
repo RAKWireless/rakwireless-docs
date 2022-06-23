@@ -30,12 +30,12 @@ To address the chip shortage and not disrupt our customers' and partners' operat
 
 The **RAK2247 WisLink LPWAN Concentrator** is a LoRa Concentrator module with mini-PCIe form factor based on the SX1301. This enables easy integration into routers and other networking equipment, adding gateway capabilities. The module can be used in any embedded platform offering a mini-PCIe slot with an SPI or USB connection.
 
-Despite its small size this is an 8 channel concentrator module. By integrating it together with a computing core a fully fledged gateway solution can easily be created.
+Despite its small size, this is an 8 channel concentrator module. By integrating it together with a computing core a fully fledged gateway solution can easily be created.
 
 ### Features
 
 - Mini PCIe form factor, mounted heat-sink.
-- SX1301 base band processor emulates 49 x LoRa demodulators, 10 parallel demodulation paths. It supports 8 uplinks channel and 1 downlink channel.
+- SX1301 base band processor emulates 49 x LoRa demodulators, 10 parallel demodulation paths. It supports 8 uplinks channels and 1 downlink channel.
 - 2 x SX125x Tx/Rx front-ends high/low frequency.
 - Built-in FT2232H for SPI to USB 2.0 conversion (optional).
 - Operates at 3.3 V, making it compatible with standard 3G/LTE card slots of Mini PCI-e type.
@@ -46,11 +46,11 @@ Despite its small size this is an 8 channel concentrator module. By integrating 
 
 ### Overview
 
-The overview shows the top and back view of the RAK2247 board. It also presents the block diagram that discusses how the board works. 
+The overview shows the top and back views of the RAK2247 board. It also presents the block diagram that discusses how the board works. 
 
 #### Board Overview
 
-The outer dimension of the RAK2247 WisLink LPWAN Concentrator is **50.95 millimeters x 30.0 millimeters x 10.4 millimeters**. The board with top-side and bottom-side keep-out areas, and all other dimension is defined by PCI Express Mini Card Electromechanical Specification except for the card thickness. And the thickness 10.4 millimeters which includes the 8 millimeter heat sink.
+The outer dimension of the RAK2247 WisLink LPWAN Concentrator is **50.95 millimeters x 30.0 millimeters x 10.4 millimeters**. The board with top-side and bottom-side keep-out areas, and all other dimensions are defined by PCI Express Mini Card Electromechanical Specification except for the card thickness. And the thickness 10.4 millimeters which includes the 8 millimeter heat sink.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2247/datasheet/board-overview-rak2247.jpg"
@@ -60,7 +60,7 @@ The outer dimension of the RAK2247 WisLink LPWAN Concentrator is **50.95 millime
 
 #### Block Diagram
 
-RAK2247 WisLink LPWAN Concentrator integrates one SX1301 chip and two SX1255/7. The other chip is for RF signal, which represents the core of the device. This provides the related LoRa modem and processing functionalities. Additional signal conditioning circuitry is implemented for PCI Express Mini Card compliance, and one uFL connectors are available for external antennas integration.
+RAK2247 WisLink LPWAN Concentrator integrates one SX1301 chip and two SX1255/7. The other chip is for RF signal, which represents the core of the device. This provides the related LoRa modem and processing functionalities. Additional signal conditioning circuitry is implemented for PCI Express Mini Card compliance, and one uFL connector is available for external antennas integration.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2247/datasheet/block-diagram.png"
@@ -88,7 +88,7 @@ RAK2247-USB version does not have this interface.
 
 ##### USB Interface
 
-RAK2247 WisLink LPWAN Concentrator can support the high speed USB to SPI by FT2232HL, it includes a USB 2.0 compliant interface with maximum 480 Mb/s data rate, representing the interface for any communication with an external host application processor. The module itself acts as a USB device and can be connected to any USB host equipped with compatible drivers. For more information, please refer to the [datasheet](https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT2232H.pdf) of FT2232HL.
+RAK2247 WisLink LPWAN Concentrator can support the high speed USB to SPI by FT2232HL, it includes a USB 2.0 compliant interface with a maximum 480 Mb/s data rate, representing the interface for any communication with an external host application processor. The module itself acts as a USB device and can be connected to any USB host equipped with compatible drivers. For more information, please refer to the [datasheet](https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT2232H.pdf) of FT2232HL.
 
 :::tip 📝 NOTE
 RAK2247-SPI version does not have this interface.
@@ -108,7 +108,7 @@ Three (3) Green LED for indicating the status of **PWR**, **TX**, **RX**.
 
 ##### Antenna RF Interface
 
-The modules have one RF interfaces over a standard uFL connectors (Hirose U. FL-RSMT) with a characteristic impedance of **50Ω**. The RF port (J1) supports both Tx and Rx, providing the antenna interface.
+The modules have one RF interface over a standard uFL connector (Hirose U. FL-RSMT) with a characteristic impedance of **50Ω**. The RF port (J1) supports both Tx and Rx, providing the antenna interface.
 
 #### Pin Definition
 
@@ -191,7 +191,7 @@ The board supports the following LoRaWAN frequency channels, allowing easy confi
 
 ##### RF Characteristics
 
-The following table gives typically sensitivity level of the RAK2247 WisLink LPWAN Concentrator.
+The following table gives typical sensitivity level of the RAK2247 WisLink LPWAN Concentrator.
 
 | Signal Bandwidth [KHz] | Spreading Factor | Sensitivity [dBm] |
 | ---------------------- | ---------------- | ----------------- |
@@ -206,7 +206,7 @@ The following table gives typically sensitivity level of the RAK2247 WisLink LPW
 
 Exceeding the device's rating on one or more listed in the Absolute Maximum Rating section may cause permanent damage. These are stress ratings only.
 Operating the module at these or at any conditions other than those specified in the Operating Conditions sections of the specification should be avoided. Exposure to Absolute Maximum Rating conditions for extended periods may affect device reliability.
-The operating condition range define those limit within which the functionality of the device is guaranteed. Where application information is given, it is advisory only and does not form part of the specification.
+The operating condition range defines those limits within which the functionality of the device is guaranteed. Where application information is given, it is advisory only and does not form part of the specification.
 
 ##### Absolute Maximum Rating
 

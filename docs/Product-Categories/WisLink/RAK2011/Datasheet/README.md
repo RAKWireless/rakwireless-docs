@@ -53,7 +53,7 @@ RAK2011 can be used as a development platform in tandem with external microcontr
 
 #### Board Overview
 
-Figure 1 shows part identification on top view of RAK2011 WisLink Cellular BG96 Arduino Shield.
+Figure 1 shows part identification on the top view of RAK2011 WisLink Cellular BG96 Arduino Shield.
 
 
 <rk-img
@@ -64,7 +64,7 @@ Figure 1 shows part identification on top view of RAK2011 WisLink Cellular BG96 
 
 
 
-The underside and dimension of the RAK2011 is shown in Figure 2:
+The underside and dimension of the RAK2011 are shown in Figure 2:
 
 <rk-img
   src="/assets/images/wislink-lte/rak2011/datasheet/rak2011-bottom-view.svg"
@@ -87,7 +87,7 @@ The block diagram in Figure 3 shows the internal architecture and external inter
 
 ### Hardware
 
-The hardware specification is categorized into seven parts. It discuses the interfacing of the module and its corresponding functions and diagrams. It also covers the electrical, environmental, mechanical, and the antenna parameters that include the tabular data of the functionalities and standard values of the RAK2011 WisLink Cellular BG96 Arduino Shield.
+The hardware specification is categorized into seven parts. It discusses the interfacing of the module and its corresponding functions and diagrams. It also covers the electrical, environmental, mechanical, and antenna parameters that include the tabular data of the functionalities and standard values of the RAK2011 WisLink Cellular BG96 Arduino Shield.
 
 #### Interfaces
 
@@ -120,7 +120,7 @@ The RAK2011 WisLink Cellular BG96 Arduino Shield can operate in the following mo
 
 **2. Extended Idle Mode DRX (e-I-DRX)**
 
-BG96 module may negotiate with the network, via non-access stratum signaling, the use of e-I-DRX for reducing power consumption while being available for mobile terminating data and/or network originated functions within a certain period dependent on the DRX cycle value.
+BG96 module may negotiate with the network, via non-access stratum signaling, the use of e-I-DRX for reducing power consumption while being available for mobile terminating data and/or network originated functions within a certain period depending on the DRX cycle value.
 
 **3. Airplane Mode**
    
@@ -133,7 +133,7 @@ BG96 module may negotiate with the network, via non-access stratum signaling, th
 
 **5. Sleep Mode**
 
-In this mode, the current consumption of the BG96 module will be reduced to a lower level. During this mode, the BG96 module can still receive paging message, SMS and TCP/UDP data from the network.
+In this mode, the current consumption of the BG96 module will be reduced to a lower level. During this mode, the BG96 module can still receive paging messages, SMS and TCP/UDP data from the network.
 
 **6. Power Saving Mode (PSM)**
 
@@ -141,7 +141,7 @@ The BG96 module may enter into Power Saving Mode for reducing its power consumpt
 
 **7. Power OFF Mode**
 
-In this mode, the power management unit shuts down the power supply. The software is not active and the serial interfaces are not accessible, but operating voltage remains applied.
+In this mode, the power management unit shuts down the power supply. The software is not active and the serial interfaces are not accessible, but the operating voltage remains applied.
 
 
 
@@ -244,7 +244,7 @@ The mapping of Arduino headers on the RAK2011 WisLink Cellular BG96 Arduino Shie
 
 ##### PCM Voice Header
 
-A standard 2x4 (2.54&nbsp;mm) male header is used to provide one Pulse Code Modulation (PCM) digital interface and one I2C interface to external CODEC extension board.
+A standard 2x4 (2.54&nbsp;mm) male header is used to provide one Pulse Code Modulation (PCM) digital interface and one I2C interface to the external CODEC extension board.
 
 
 <rk-img
@@ -313,7 +313,7 @@ PCM voice header pin definition is shown in the table below:
 </tbody>
 </table>
 
-The reference design for external CODEC extension board is shown in Figure 9:
+The reference design for the external CODEC extension board is shown in Figure 9:
 
 
 <rk-img
@@ -326,7 +326,7 @@ The reference design for external CODEC extension board is shown in Figure 9:
 
 ##### Analog Input & Digital I/O Header
 
-A standard 2x3 (2.54&nbsp;mm) male header is used to provide two (2) analog input (ADC0 and ADC1) and two (2) digital input and output port pins (GPIO0 and GPIO1) to an optional external extension board for additional features that may utilize these analog Input and digital I/O port pins. The analog input and digital I/O header pin layout is in Figure 10:
+A standard 2x3 (2.54&nbsp;mm) male header is used to provide two (2) analog input (ADC0 and ADC1) and two (2) digital input and output port pins (GPIO0 and GPIO1) to an optional external extension board for additional features that may utilize these analog Input and digital I/O port pins. The analog input and digital I/O header pin layout are in Figure 10:
 
 
 <rk-img
@@ -463,7 +463,7 @@ The analog Input/Digital I/O header signal definition is shown in the table belo
 
 ###### Overview
 
-The cellular (LTE/GSM) antenna for the RAK2011 covers working frequency band from 824&nbsp;MHz to 2690&nbsp;MHz.
+The cellular (LTE/GSM) antenna for the RAK2011 covers the working frequency band from 824&nbsp;MHz to 2690&nbsp;MHz.
 
 
 <rk-img
@@ -732,7 +732,7 @@ The table below lists all the supported cellular (LTE/GSM) operating frequencies
 
 ##### Power Requirements
 
-The RAK2011 can be powered by +5&nbsp;V from a MCU baseboard via Arduino header (POWER) if used as an Arduino Shield. It can also be powered by +5&nbsp;V out of Micro-B USB if used as a standalone modem.
+The RAK2011 can be powered by +5&nbsp;V from an MCU baseboard via Arduino header (POWER) if used as an Arduino Shield. It can also be powered by +5&nbsp;V out of Micro-B USB if used as a standalone modem.
 
 
 | Parameter              | Min.       | Max.        |

@@ -42,13 +42,13 @@ Before going through each and every step in the installation and guide of the RA
 ## Product Configuration
 
 ### RAK2247 + x86 Linux PC
-This section explains the basic steps on how to interface the RAK2247 WisLink LPWAN Concentrator with a Linux Operating System in a computer.
+This section explains the basic steps on how to interface the RAK2247 WisLink LPWAN Concentrator with a Linux Operating System on a computer.
 
 <!-- * The following devices are necessary for the interface:
   * RAK2247 WisLink LPWAN Concentrator
   * [mPCIe to USB Board](https://store.rakwireless.com/products/mpcie-to-usb-board) -->
 
-1. Insert the RAK2247 mPCIe board into the USB carrier board and plugged into a free USB port of your PC. Your Linux PC should recognized it as a USB device.
+1. Insert the RAK2247 mPCIe board into the USB carrier board and plugged into a free USB port of your PC. Your Linux PC should recognize it as a USB device.
 
 :::tip 📝 NOTE:
  If you want to connect the **RAK2247 mPCIe board** to the **Linux PC** directly, make sure to have the PERST# signal (Pin 22) pulled down.

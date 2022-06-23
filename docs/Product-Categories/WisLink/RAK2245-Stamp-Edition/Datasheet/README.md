@@ -30,9 +30,9 @@ rak_img: /assets/images/wislink-lora/rak2245-stamp-edition/quickstart/overview/R
 
 The **RAK2245 WisLink-LoRa Stamp Edition** is a complete and cost efficient gateway solution base on Semtech SX1301 fully utilizing the LoRa System. This LPWAN Concentrator module supports eight channels and is available for all LoRaWAN international standard bands.
 
-The Stamp form factor feature enables easy integration into the system's main board, providing LoRaWAN functionality.This ultra compact module measures just 60mm x 30mm x 14.9mm, believed to be the world’s smallest gateway module which has a built-in GPS chip. It comes with a mounted heat-sink that improves the thermal heat dissipation and overall performance of the device.
+The Stamp form factor feature enables easy integration into the system's main board, providing LoRaWAN functionality. This ultra compact module measures just 60mm x 30mm x 14.9mm, believed to be the world’s smallest gateway module which has a built-in GPS chip. It comes with a mounted heat-sink that improves the thermal heat dissipation and overall performance of the device.
 
-Overall, this gateway module is the most economical way to create different solutions like smart grid, intelligent farm and other IoT applications. It is also ideal for manufacturing small series that can expand into more applications.
+Overall, this gateway module is the most economical way to create different solutions like smart grids, intelligent farms and other IoT applications. It is also ideal for manufacturing small series that can expand into more applications.
 
 ### Features
 
@@ -77,9 +77,9 @@ The hardware is categorized into five parts. It discusses the interfacing, pinou
 #### Interfaces
 
 The SX1301 digital baseband chip contains 10 programmable reception paths. These
-paths have different levels of programmability and has a variety of cases. It is
+paths have different levels of programmability and have a variety of cases. It is
 important to understand the differences between those demodulation paths to make the
-best possible use from the system.
+best possible use of the system.
 
 ##### Power Supply
 
@@ -113,7 +113,7 @@ The modules have two RF interfaces for LoRa and GPS antennas over the standard U
 
 #### Pin Definition
 
-The pinout diagram for the RAK2245 WisLink-LoRa Stamp Edition is shown by the figure below.
+The pinout diagram for the RAK2245 WisLink-LoRa Stamp Edition is shown in the figure below.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2245-stamp-edition/datasheet/pin-definition/fahimiuydovhvpxrmcl9.jpg"
@@ -172,7 +172,7 @@ The board supports the following LoRaWAN frequency channels shown in the table b
 
 ##### Transmitter RF
 
-The RAK2245 WisLink-LoRa Stamp Edition has an excellent transmitter performance . It is highly recommended to use an optimized configuration for the power level
+The RAK2245 WisLink-LoRa Stamp Edition has an excellent transmitter performance. It is highly recommended to use an optimized configuration for the power level
 configuration, which is part of the HAL. This results in a mean RF output power
 level and current consumption.
 
@@ -208,7 +208,7 @@ level and current consumption.
 
 ##### Receiver RF
 
-We recommended you to use optimized RSSI calibration values which is part of HAL v3.1. For both Radio 1 and 2, the RSSI-offset should be set to -169. The following table shows typical sensitivity level of RAK2245 WisLink-LoRa Stamp Edition -LPWAN Gateway Concentrator Module.
+We recommended that you use optimized RSSI calibration values which are part of HAL v3.1. For both Radio 1 and 2, the RSSI-offset should be set to -169. The following table shows typical sensitivity level of RAK2245 WisLink-LoRa Stamp Edition -LPWAN Gateway Concentrator Module.
 
 | **Signal Bandwidth (KHz)** | **Spreading Factor** | **Sensitivity (dBm)** |
 | -------------------------- | -------------------- | --------------------- |
@@ -225,7 +225,7 @@ The following are the electrical characteristics of RAK2245 WisLink-LoRa Stamp E
 
 ##### Absolute Maximum Rating
 
-The values and range given below are all in accordance with Absolute Maximum Rating System (IEC 134).
+The values and range given below are all in accordance with the Absolute Maximum Rating System (IEC 134).
 
 | **Parameter**             | **Description**   | **Min** | **Typical** | **Max** |
 | ------------------------- | ----------------- | ------- | ----------- | ------- |
@@ -249,7 +249,7 @@ The table below shows the maximum ESD.
 |                                             |         |             | 8000V   | Air Discharge according to IEC 61000-4-2     |
 
 ::: tip 📝 NOTE
-The module is an Electrostatic Sensitive Device and require special precautions when
+The module is an Electrostatic Sensitive Device and requires special precautions when
 handling.
 :::
 

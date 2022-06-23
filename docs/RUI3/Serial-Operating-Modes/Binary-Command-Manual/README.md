@@ -31,10 +31,10 @@ You can enable Binary mode by sending `AT+APM` if you are in AT Command Mode and
 
 The frame structure of Binary mode protocol is in the following format: 
 
-| Start Delimiter |   Length  | Frame Type |  Flag  | Payload | Checksum |
+| Start Delimiter | Length    | Frame Type | Flag   | Payload | Checksum |
 | --------------- | --------- | ---------- | ------ | ------- | -------- |
 | 0x7E            | MSB First |            |        |         |          |
-| 1 Byte          | 2 Bytes   | 1 Byte     | 1 Byte | N Bytes | 1 Byte   |       
+| 1 Byte          | 2 Bytes   | 1 Byte     | 1 Byte | N Bytes | 1 Byte   |
 
 
 **Start Delimiter**	
@@ -86,8 +86,8 @@ If an API mode device receives a frame with frame type 0x01, the payload data wi
 The expected frame payload of the built-in AT command handler is in the following format:
 
 
-| Length  |  Flag  | ATCMD ID | Payload | 
-| ------- | ------ | -------- | ------- | 
+| Length  | Flag   | ATCMD ID | Payload |
+| ------- | ------ | -------- | ------- |
 | 2 Bytes | 1 Byte | 1 Byte   | N Bytes |
 
 
@@ -122,97 +122,97 @@ The expected frame payload of the built-in AT command handler is in the followin
 It is composed of 1 byte ID which represents which AT command should be selected. For CLI version 1.6.0, the following is the ATCMD ID mapping table:
 
 
-| ATCMD ID  | AT Command Name | Description              |
-| --------- | --------------- | ------------------------ |
-| 0         | AT or AT?       | Attention and Short Help |
-| 1         | ATZ             | MCU Reset |
-| 2         | -               | Reserved for Future Use |
-| 3         | ATR             | Restore default parameters |
-| 4         | AT+BOOT         | Bootloader mode |
-| 5         | AT+BUILDTIME    | Build time of the firmware |
-| 6         | AT+REPOINFO     | Repo Information |
-| 7         | AT+VER          | Version of the firmware |
-| 8         | AT+CLIVER       | Version of the AT command |
-| 9         | AT+APIVER       | Version of the API |
-| 10        | AT+LOCK         | Lock the AT command serial port |
-| 11        | AT+PW0RD        | Set the AT command serial port password | 
-| 12        | AT+BAUD         | Set the Serial Port Baud Rate | 
-| 13        | AT+HWMODEL      | The string of the hardware model |
-| 14        | AT+HWID         | The string of the hardware id |
-| 15        | AT+BAT          | Battery Level |
-| 16        | AT+APPEUI       | Application Identifier |
-| 17        | AT+APPKEY       | Application Key |
-| 18        | AT+APPSKEY      | Application Session Key |
-| 19        | AT+DEVADDR      | Device Address |
-| 20        | AT+DEVEUI       | Device EUI |
-| 21        | AT+NETID        | Network ID |
-| 22        | AT+NWKSKEY      | Network Session Key |
-| 23        | AT+CFM          | Confirm Mode |
-| 24        | AT+CFS          | Confirm Status |
-| 25        | AT+JOIN         | Join LoRaWAN® Network |
-| 26        | AT+NJM          | LoRaWAN® Network Join Mode |
-| 27        | AT+NJS          | LoRaWAN® Network Join Status |
-| 28        | AT+RECV         | Last Received Data |
-| 29        | AT+SEND         | Send Data |
-| 30        | AT+RETY         | Confirm Packet Retransmission |
-| 31        | AT+ADR          | Adaptive Rate |
-| 32        | AT+CLASS        | LoRaWAN® Class |
-| 33        | AT+DCS          | Duty Cycle Settings |
-| 34        | AT+DR           | Data Rate |
-| 35        | AT+JN1DL        | Join Delay on RX Window 1 |
-| 36        | AT+JN2DL        | Join Delay on RX Window 2 |
-| 37        | AT+PNM          | Public Network Mode |
-| 38        | AT+RX1DL        | Delay of the Received Window 1 |
-| 39        | AT+RX2DL        | Delay of the Received Window 2 |
-| 40        | AT+RX2DR        | Data Rate of the Received Window 2 |
-| 41        | AT+RX2FQ        | Frequency of the Received Window 2 |
-| 42        | AT+TXP          | Transmit Power |
-| 43        | AT+LINKCHECK    | Verify Network Link Status |
-| 44        | AT+PGSLOT       | Periodicity |
-| 45        | AT+BFREQ        | Beacon Frequency |
-| 46        | AT+BTIME        | Beacon Time |
-| 47        | AT+BGW          | Gateway GPS coordinate, NetID and GwID |
-| 48        | AT+LTIME        | Local Time |
-| 49        | AT+RSSI         | RSSI on Reception |
-| 50        | AT+SNR          | Signal Noise Ratio |
-| 51        | AT+MASK         | Set the channel mask, close or open the channel |
-| 52        | AT+CHE          | Eight Channel mode |
-| 53        | AT+CHS          | Single Channel mode |
-| 54        | AT+BAND         | Active Region |
-| 55        | AT+NWM          | LoRaWAN® Network Work Mode |
-| 56        | AT+PFREQ        | P2P mode Frequency |
-| 57        | AT+PSF          | P2P mode Spreading Factor |
-| 58        | AT+PBW          | P2P mode Bandwidth |
-| 59        | AT+PCR          | P2P mode Code Rate |
-| 60        | AT+PPL          | P2P mode Preamble Length |
-| 61        | AT+PTP          | P2P mode TX Power |
-| 62        | AT+PSEND        | P2P Send Data |
-| 63        | AT+PRECV        | P2P Received Data |
-| 64        | AT+ENCRY        | P2P Encryption Enabled |
-| 65        | AT+ENCKEY       | P2P Encryption KEY |
-| 66        | AT+P2P          | View P2P All Parameters |
-| 67        | AT+PBR          | P2P FSK Modem Bitrate |
-| 68        | AT+PFDEV        | P2P FSK Modem Frequency Deviation |
-| 69        | AT+ADDMULC      | Add a new multicast group |
-| 70        | AT+RMVMULC      | Remove multicast group |
-| 71        | AT+LSTMULC      | Multicast list |
-| 72        | AT+ATM          | AT Command mode |
-| 73        | AT+APM          | Binary Command mode|
-| 74        | -               | Reserved for Future Use |
-| 75        | AT+ARSSI        | Inquire All Channel RSSI |
-| 76        | -               | Reserved for Future Use |
-| 77        | -               | Reserved for Future Use |
-| 78        | -               | Reserved for Future Use |
-| 79        | -               | Reserved for Future Use |
-| 80        | -               | Reserved for Future Use |
-| 81        | -               | Reserved for Future Use |
-| 82        | -               | Reserved for Future Use |
-| 83        | AT+LPSEND       | Long Packet Data |
-| 84        | -               | Reserved for Future Use |
-| 85        | AT+SLEEP        |  |
-| 86        | -               | Reserved for Future Use |
-| 87        | AT+FSN          | Serial Number |
-| 88        | AT+ALIAS        | Alias name of the device |
+| ATCMD ID | AT Command Name | Description                                     |
+| -------- | --------------- | ----------------------------------------------- |
+| 0        | AT or AT?       | Attention and Short Help                        |
+| 1        | ATZ             | MCU Reset                                       |
+| 2        | -               | Reserved for Future Use                         |
+| 3        | ATR             | Restore default parameters                      |
+| 4        | AT+BOOT         | Bootloader mode                                 |
+| 5        | AT+BUILDTIME    | Build time of the firmware                      |
+| 6        | AT+REPOINFO     | Repo Information                                |
+| 7        | AT+VER          | Version of the firmware                         |
+| 8        | AT+CLIVER       | Version of the AT command                       |
+| 9        | AT+APIVER       | Version of the API                              |
+| 10       | AT+LOCK         | Lock the AT command serial port                 |
+| 11       | AT+PW0RD        | Set the AT command serial port password         |
+| 12       | AT+BAUD         | Set the Serial Port Baud Rate                   |
+| 13       | AT+HWMODEL      | The string of the hardware model                |
+| 14       | AT+HWID         | The string of the hardware id                   |
+| 15       | AT+BAT          | Battery Level                                   |
+| 16       | AT+APPEUI       | Application Identifier                          |
+| 17       | AT+APPKEY       | Application Key                                 |
+| 18       | AT+APPSKEY      | Application Session Key                         |
+| 19       | AT+DEVADDR      | Device Address                                  |
+| 20       | AT+DEVEUI       | Device EUI                                      |
+| 21       | AT+NETID        | Network ID                                      |
+| 22       | AT+NWKSKEY      | Network Session Key                             |
+| 23       | AT+CFM          | Confirm Mode                                    |
+| 24       | AT+CFS          | Confirm Status                                  |
+| 25       | AT+JOIN         | Join LoRaWAN Network                            |
+| 26       | AT+NJM          | LoRaWAN Network Join Mode                       |
+| 27       | AT+NJS          | LoRaWAN Network Join Status                     |
+| 28       | AT+RECV         | Last Received Data                              |
+| 29       | AT+SEND         | Send Data                                       |
+| 30       | AT+RETY         | Confirm Packet Retransmission                   |
+| 31       | AT+ADR          | Adaptive Rate                                   |
+| 32       | AT+CLASS        | LoRaWAN Class                                   |
+| 33       | AT+DCS          | Duty Cycle Settings                             |
+| 34       | AT+DR           | Data Rate                                       |
+| 35       | AT+JN1DL        | Join Delay on RX Window 1                       |
+| 36       | AT+JN2DL        | Join Delay on RX Window 2                       |
+| 37       | AT+PNM          | Public Network Mode                             |
+| 38       | AT+RX1DL        | Delay of the Received Window 1                  |
+| 39       | AT+RX2DL        | Delay of the Received Window 2                  |
+| 40       | AT+RX2DR        | Data Rate of the Received Window 2              |
+| 41       | AT+RX2FQ        | Frequency of the Received Window 2              |
+| 42       | AT+TXP          | Transmit Power                                  |
+| 43       | AT+LINKCHECK    | Verify Network Link Status                      |
+| 44       | AT+PGSLOT       | Periodicity                                     |
+| 45       | AT+BFREQ        | Beacon Frequency                                |
+| 46       | AT+BTIME        | Beacon Time                                     |
+| 47       | AT+BGW          | Gateway GPS coordinate, NetID and GwID          |
+| 48       | AT+LTIME        | Local Time                                      |
+| 49       | AT+RSSI         | RSSI on Reception                               |
+| 50       | AT+SNR          | Signal Noise Ratio                              |
+| 51       | AT+MASK         | Set the channel mask, close or open the channel |
+| 52       | AT+CHE          | Eight Channel mode                              |
+| 53       | AT+CHS          | Single Channel mode                             |
+| 54       | AT+BAND         | Active Region                                   |
+| 55       | AT+NWM          | LoRaWAN Network Work Mode                       |
+| 56       | AT+PFREQ        | P2P mode Frequency                              |
+| 57       | AT+PSF          | P2P mode Spreading Factor                       |
+| 58       | AT+PBW          | P2P mode Bandwidth                              |
+| 59       | AT+PCR          | P2P mode Code Rate                              |
+| 60       | AT+PPL          | P2P mode Preamble Length                        |
+| 61       | AT+PTP          | P2P mode TX Power                               |
+| 62       | AT+PSEND        | P2P Send Data                                   |
+| 63       | AT+PRECV        | P2P Received Data                               |
+| 64       | AT+ENCRY        | P2P Encryption Enabled                          |
+| 65       | AT+ENCKEY       | P2P Encryption KEY                              |
+| 66       | AT+P2P          | View P2P All Parameters                         |
+| 67       | AT+PBR          | P2P FSK Modem Bitrate                           |
+| 68       | AT+PFDEV        | P2P FSK Modem Frequency Deviation               |
+| 69       | AT+ADDMULC      | Add a new multicast group                       |
+| 70       | AT+RMVMULC      | Remove multicast group                          |
+| 71       | AT+LSTMULC      | Multicast list                                  |
+| 72       | AT+ATM          | AT Command mode                                 |
+| 73       | AT+APM          | Binary Command mode                             |
+| 74       | -               | Reserved for Future Use                         |
+| 75       | AT+ARSSI        | Inquire All Channel RSSI                        |
+| 76       | -               | Reserved for Future Use                         |
+| 77       | -               | Reserved for Future Use                         |
+| 78       | -               | Reserved for Future Use                         |
+| 79       | -               | Reserved for Future Use                         |
+| 80       | -               | Reserved for Future Use                         |
+| 81       | -               | Reserved for Future Use                         |
+| 82       | -               | Reserved for Future Use                         |
+| 83       | AT+LPSEND       | Long Packet Data                                |
+| 84       | -               | Reserved for Future Use                         |
+| 85       | AT+SLEEP        |                                                 |
+| 86       | -               | Reserved for Future Use                         |
+| 87       | AT+FSN          | Serial Number                                   |
+| 88       | AT+ALIAS        | Alias name of the device                        |
 
 ## General Commands
 
@@ -222,21 +222,21 @@ This section describes the generic commands related to the device.
 
 Description: Attention
 
-The following table explains how to build a frame to execute the "AT" AT command:
+The following table explains how to build a frame to execute the `AT` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Execution                          |
-| `ATCMD ID`      | 8               | 0x00  | AT: Attention                      |
-| Checksum        | 9               | 0x02  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Execution                          |
+| `ATCMD ID`      | 8       | 0x00  | AT: Attention                      |
+| Checksum        | 9       | 0x02  |                                    |
 
 **Example:**
 
@@ -256,21 +256,21 @@ This command is not supported by API mode because API mode is designed for M2M c
 
 Description: MCU Reset
 
-The following table explains how to build a frame to execute the "ATZ" AT command:
+The following table explains how to build a frame to execute the `ATZ` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Execution                          |
-| `ATCMD ID`      | 8               | 0x00  | AT: MCU Reset                      |
-| Checksum        | 9               | 0x03  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Execution                          |
+| `ATCMD ID`      | 8       | 0x00  | AT: MCU Reset                      |
+| Checksum        | 9       | 0x03  |                                    |
 
 **Example:**
 
@@ -284,21 +284,21 @@ Send **ATZ**
 
 Description: Restore default parameters
 
-The following table explains how to build a frame to execute the "ATR" AT command:
+The following table explains how to build a frame to execute the `ATR` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Execution                          |
-| `ATCMD ID`      | 8               | 0x03  | ATR                      |
-| Checksum        | 9               | 0x04  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Execution                          |
+| `ATCMD ID`      | 8       | 0x03  | ATR                                |
+| Checksum        | 9       | 0x04  |                                    |
 
 **Example:**
 
@@ -312,21 +312,21 @@ Send **ATR**
 
 Description: Bootloader mode
 
-The following table explains how to build a frame to execute the "AT+BOOT" AT command:
+The following table explains how to build a frame to execute the `AT+BOOT` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Execution                          |
-| `ATCMD ID`      | 8               | 0x04  | AT+BOOT                      |
-| Checksum        | 9               | 0x03  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Execution                          |
+| `ATCMD ID`      | 8       | 0x04  | AT+BOOT                            |
+| Checksum        | 9       | 0x03  |                                    |
 
 **Example:**
 
@@ -340,21 +340,21 @@ Send **AT+BOOT**
 
 Description: Build time of the firmware
 
-The following table explains how to build a frame to execute the "AT+BUILDTIME=?" AT command:
+The following table explains how to build a frame to execute the `AT+BUILDTIME=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                          |
-| `ATCMD ID`      | 8               | 0x05  | AT+BUILDTIME                      |
-| Checksum        | 9               | 0x03  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x05  | AT+BUILDTIME                       |
+| Checksum        | 9       | 0x03  |                                    |
 
 **Example:**
 
@@ -369,21 +369,21 @@ Send **AT+BUILDTIME=?**
 
 Description: Repo Information
 
-The following table explains how to build a frame to execute the "AT+REPOINFO=?" AT command:
+The following table explains how to build a frame to execute the `AT+REPOINFO=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                          |
-| `ATCMD ID`      | 8               | 0x06  | AT+REPOINFO                      |
-| Checksum        | 9               | 0x03  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x06  | `AT+REPOINFO`                      |
+| Checksum        | 9       | 0x03  |                                    |
 
 **Example:**
 
@@ -401,21 +401,21 @@ Send **AT+REPOINFO=?**
 
 Description: The version of the firmware
 
-The following table explains how to build a frame to execute the "AT+VER=?" AT command:
+The following table explains how to build a frame to execute the `AT+VER=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                          |
-| `ATCMD ID`      | 8               | 0x07  | AT+VER                     |
-| Checksum        | 9               | 0x04  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x07  | `AT+VER`                           |
+| Checksum        | 9       | 0x04  |                                    |
 
 **Example:**
 
@@ -432,21 +432,21 @@ Send **AT+VER=?**
 
 Description: The version of the AT Command
 
-The following table explains how to build a frame to execute the "AT+CLIVER=?" AT command:
+The following table explains how to build a frame to execute the `AT+CLIVER=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                          |
-| `ATCMD ID`      | 8               | 0x08  | AT+VER                     |
-| Checksum        | 9               | 0x02  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x08  | `AT+VER`                           |
+| Checksum        | 9       | 0x02  |                                    |
 
 **Example:**
 
@@ -463,21 +463,21 @@ Send **AT+CLIVER=?**
 
 Description: The version of the AT Command
 
-The following table explains how to build a frame to execute the "AT+APIVER=?" AT command:
+The following table explains how to build a frame to execute the `AT+APIVER=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                          |
-| `ATCMD ID`      | 8               | 0x09  | AT+VER                     |
-| Checksum        | 9               | 0x03  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x09  | `AT+VER`                           |
+| Checksum        | 9       | 0x03  |                                    |
 
 **Example:**
 
@@ -494,21 +494,21 @@ Send **AT+APIVER=?**
 
 Description: The string of the hardware model
 
-The following table explains how to build a frame to execute the "AT+HWMODEL=?" AT command:
+The following table explains how to build a frame to execute the `AT+HWMODEL=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                          |
-| `ATCMD ID`      | 8               | 0x0D  | AT+HWMODEL                     |
-| Checksum        | 9               | 0x04  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x0D  | `AT+HWMODEL`                       |
+| Checksum        | 9       | 0x04  |                                    |
 
 **Example:**
 
@@ -525,21 +525,21 @@ Send **AT+HWMODEL=?**
 
 Description: The string of the hardware ID
 
-The following table explains how to build a frame to execute the "AT+HWID=?" AT command:
+The following table explains how to build a frame to execute the `AT+HWID=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                          |
-| `ATCMD ID`      | 8               | 0x0E  | AT+HWID                     |
-| Checksum        | 9               | 0x04  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x0E  | `AT+HWID`                          |
+| Checksum        | 9       | 0x04  |                                    |
 
 **Example:**
 
@@ -556,21 +556,21 @@ Send **AT+HWID=?**
 
 Description: Battery level
 
-The following table explains how to build a frame to execute the "AT+BAT=?" AT command:
+The following table explains how to build a frame to execute the `AT+BAT=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                          |
-| `ATCMD ID`      | 8               | 0x0F  | AT+BAT                    |
-| Checksum        | 9               | 0x05  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x0F  | `AT+BAT`                           |
+| Checksum        | 9       | 0x05  |                                    |
 
 **Example:**
 
@@ -588,25 +588,25 @@ Send **AT+BAT=?**
 
 ### AT+SLEEP
 
-The following table explains how to build a frame to execute the "AT+SLEEP" AT command:
+The following table explains how to build a frame to execute the `AT+SLEEP` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x08  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x04  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Execution                          |
-| `ATCMD ID`      | 8               | 0x55  | ATSLEEP                            |
-| `Payload`       | 9               | 0x00  | Example data                       |
-|                 | 10              | 0x00  |                                    |
-|                 | 11              | 0x00  |                                    |
-|                 | 12              | 0x10  |                                    |
-| Checksum        | 13              | 0x08  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x08  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x04  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Execution                          |
+| `ATCMD ID`      | 8       | 0x55  | `AT+SLEEP`                         |
+| `Payload`       | 9       | 0x00  | Example data                       |
+|                 | 10      | 0x00  |                                    |
+|                 | 11      | 0x00  |                                    |
+|                 | 12      | 0x10  |                                    |
+| Checksum        | 13      | 0x08  |                                    |
 
 **Example:**
 
@@ -622,31 +622,31 @@ Send **AT+SLEEP**
 
 Description: Lock the AT Command serial port 
 
-This command is not supported by Binary mode because both AT+LOCK and AT+PWORD are designed for AT Command Mode to prevent the device from human input, so they have no effect when the operating mode is API Mode.
+This command is not supported by Binary mode because both `AT+LOCK` and `AT+PWORD` are designed for AT Command Mode to prevent the device from human input, so they have no effect when the operating mode is API Mode.
 
 ### AT+PWORD
 
-This command is not supported by Binary mode because both AT+LOCK and AT+PWORD are designed for AT Command Mode to prevent the device from human input, so they have no effect when the operating mode is API Mode.
+This command is not supported by Binary mode because both `AT+LOCK` and `AT+PWORD` are designed for AT Command Mode to prevent the device from human input, so they have no effect when the operating mode is API Mode.
 
 ### AT+BAUD
 
 Description: Set the serial port baud rate 
 
-The following table explains how to build a frame to execute the "AT+BAUD=?" AT command:
+The following table explains how to build a frame to execute the `AT+BAUD=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x0C  | AT+BAUD                            |
-| Checksum        | 9               | 0x03  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x0C  | `AT+BAUD`                          |
+| Checksum        | 9       | 0x03  |                                    |
 
 
 **Example:**
@@ -660,25 +660,25 @@ Send **AT+BAUD=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x0C 0x00 0x06
 ```
 
-The following table explains how to build a frame to execute the "AT+BAUD=115200" AT command:
+The following table explains how to build a frame to execute the `AT+BAUD=115200` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x08  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x04  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Write                              |
-| `ATCMD ID`      | 8               | 0x0C  | AT+BAUD                            |
-| `Payload`       | 9               | 0x00  | Example data:                      |
-|                 | 10              | 0x01  | 115200 = 0x0001C200                |
-|                 | 11              | 0xC2  |                                    |
-|                 | 12              | 0x00  |                                    |
-| Checksum        | 13              | 0x09  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x08  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x04  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Write                              |
+| `ATCMD ID`      | 8       | 0x0C  | `AT+BAUD`                          |
+| `Payload`       | 9       | 0x00  | Example data:                      |
+|                 | 10      | 0x01  | 115200 = 0x0001C200                |
+|                 | 11      | 0xC2  |                                    |
+|                 | 12      | 0x00  |                                    |
+| Checksum        | 13      | 0x09  |                                    |
 
 
 **Example:**
@@ -699,21 +699,21 @@ Description: Application Identifier
 
 This command is used to access the unique application identifier.
 
-The following table explains how to build a frame to execute the "AT+APPEUI=?" AT command:
+The following table explains how to build a frame to execute the `AT+APPEUI=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x10  | AT+APPEUI: Application Identifier                          |
-| Checksum        | 9               | 0x02  |                                    |
+| Frame Field     | Offset  | Value | Description                         |
+| --------------- | ------- | ----- | ----------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                     |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length          |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length          |
+| Frame Type      | 3       | 0x01  | AT command                          |
+| FLAG            | 4       | 0x00  | Request                             |
+| Payload         |         |       |                                     |
+| `Length`        | 5       | 0x00  | AT command protocol payload length  |
+|                 | 6       | 0x00  | AT command protocol payload length  |
+| `Flag`          | 7       | 0x00  | Read                                |
+| `ATCMD ID`      | 8       | 0x10  | `AT+APPEUI`: Application Identifier |
+| Checksum        | 9       | 0x02  |                                     |
 
 
 **Example:**
@@ -727,29 +727,29 @@ Send **AT+APPEUI=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x10 0x00 0x05
 ```
 
-The following table explains how to build a frame to execute the "AT+APPEUI=0102030405060708" AT command:
+The following table explains how to build a frame to execute the `AT+APPEUI=0102030405060708` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | -               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x0C  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x08  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x0C  | AT+APPEUI                          |
-| `Payload`       | 9               | 0x01  | Example data:                      |
-|                 | 10              | 0x02  |                                    |
-|                 | 11              | 0x03  |                                    |
-|                 | 12              | 0x04  |                                    |
-|                 | 13              | 0x05  |                                    |
-|                 | 14              | 0x06  |                                    |
-|                 | 15              | 0x07  |                                    |
-|                 | 16              | 0x08  |                                    |
-| Checksum        | 17              | 0x11  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | -       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x0C  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x08  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x0C  | `AT+APPEUI`                        |
+| `Payload`       | 9       | 0x01  | Example data:                      |
+|                 | 10      | 0x02  |                                    |
+|                 | 11      | 0x03  |                                    |
+|                 | 12      | 0x04  |                                    |
+|                 | 13      | 0x05  |                                    |
+|                 | 14      | 0x06  |                                    |
+|                 | 15      | 0x07  |                                    |
+|                 | 16      | 0x08  |                                    |
+| Checksum        | 17      | 0x11  |                                    |
 
 
 **Example:**
@@ -764,21 +764,21 @@ Send **AT+APPEUI=0102030405060708**
 
 Description: Application Key
 
-The following table explains how to build a frame to execute the "AT+APPKEY=?" AT command:
+The following table explains how to build a frame to execute the `AT+APPKEY=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                          |
-| `ATCMD ID`      | 8               | 0x11  | AT+APPKEY: Application Key                    |
-| Checksum        | 9               | 0x03  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x11  | `AT+APPKEY`: Application Key       |
+| Checksum        | 9       | 0x03  |                                    |
 
 **Example:**
 
@@ -791,37 +791,37 @@ Send **AT+APPKEY=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x11 0x00 0x06
 ```
 
-The following table explains how to build a frame to request a remote Binary mode device to execute the "AT+APPKEY=01020304050607080102030405060708" AT Command:
+The following table explains how to build a frame to request a remote Binary mode device to execute the `AT+APPKEY=01020304050607080102030405060708` AT Command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | -               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x14  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x10  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x11  | AT+APPKEY: Application Key         |
-| `Payload`       | 9               | 0x01  | Example data:                      |
-|                 | 10              | 0x02  |                                    |
-|                 | 11              | 0x03  |                                    |
-|                 | 12              | 0x04  |                                    |
-|                 | 13              | 0x05  |                                    |
-|                 | 14              | 0x06  |                                    |
-|                 | 15              | 0x07  |                                    |
-|                 | 16              | 0x08  |                                    |
-|                 | 17              | 0x01  |                                    |
-|                 | 18              | 0x02  |                                    |
-|                 | 19              | 0x03  |                                    |
-|                 | 20              | 0x04  |                                    |
-|                 | 21              | 0x05  |                                    |
-|                 | 22              | 0x06  |                                    |
-|                 | 23              | 0x07  |                                    |
-|                 | 24              | 0x08  |                                    |
-| Checksum        | 25              | 0x1F  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | -       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x14  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x10  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x11  | `AT+APPKEY`: Application Key       |
+| `Payload`       | 9       | 0x01  | Example data:                      |
+|                 | 10      | 0x02  |                                    |
+|                 | 11      | 0x03  |                                    |
+|                 | 12      | 0x04  |                                    |
+|                 | 13      | 0x05  |                                    |
+|                 | 14      | 0x06  |                                    |
+|                 | 15      | 0x07  |                                    |
+|                 | 16      | 0x08  |                                    |
+|                 | 17      | 0x01  |                                    |
+|                 | 18      | 0x02  |                                    |
+|                 | 19      | 0x03  |                                    |
+|                 | 20      | 0x04  |                                    |
+|                 | 21      | 0x05  |                                    |
+|                 | 22      | 0x06  |                                    |
+|                 | 23      | 0x07  |                                    |
+|                 | 24      | 0x08  |                                    |
+| Checksum        | 25      | 0x1F  |                                    |
 
 **Example:**
 
@@ -836,21 +836,21 @@ Send **AT+APPKEY=01020304050607080102030405060708**
 
 Description: Application Session Key
 
-The following table explains how to build a frame to execute the "AT+APPSKEY=?" AT command:
+The following table explains how to build a frame to execute the `AT+APPSKEY=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                          |
-| `ATCMD ID`      | 8               | 0x12  | AT+APPSKEY: Application Session Key          |
-| Checksum        | 9               | 0x03  |                                    |
+| Frame Field     | Offset  | Value | Description                           |
+| --------------- | ------- | ----- | ------------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                       |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length            |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length            |
+| Frame Type      | 3       | 0x01  | AT command                            |
+| FLAG            | 4       | 0x00  | Request                               |
+| Payload         |         |       |                                       |
+| `Length`        | 5       | 0x00  | AT command protocol payload length    |
+|                 | 6       | 0x00  | AT command protocol payload length    |
+| `Flag`          | 7       | 0x00  | Read                                  |
+| `ATCMD ID`      | 8       | 0x12  | `AT+APPSKEY`: Application Session Key |
+| Checksum        | 9       | 0x03  |                                       |
 
 **Example:**
 
@@ -865,37 +865,37 @@ Send **AT+APPSKEY=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x12 0x00 0x06
 ```
 
-The following table explains how to build a frame to request a remote Binary mode device to execute the "AT+APPSKEY=01020304050607080102030405060708" AT Command:
+The following table explains how to build a frame to request a remote Binary mode device to execute the `AT+APPSKEY=01020304050607080102030405060708` AT Command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | -               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x14  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x10  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x11  | AT+APPKEY: Application Session Key         |
-| `Payload`       | 9               | 0x01  | Example data:                      |
-|                 | 10              | 0x02  |                                    |
-|                 | 11              | 0x03  |                                    |
-|                 | 12              | 0x04  |                                    |
-|                 | 13              | 0x05  |                                    |
-|                 | 14              | 0x06  |                                    |
-|                 | 15              | 0x07  |                                    |
-|                 | 16              | 0x08  |                                    |
-|                 | 17              | 0x01  |                                    |
-|                 | 18              | 0x02  |                                    |
-|                 | 19              | 0x03  |                                    |
-|                 | 20              | 0x04  |                                    |
-|                 | 21              | 0x05  |                                    |
-|                 | 22              | 0x06  |                                    |
-|                 | 23              | 0x07  |                                    |
-|                 | 24              | 0x08  |                                    |
-| Checksum        | 25              | 0x1F  |                                    |
+| Frame Field     | Offset  | Value | Description                          |
+| --------------- | ------- | ----- | ------------------------------------ |
+| START DELIMITER | -       | 0x7E  |                                      |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length           |
+|                 | 2 (LSB) | 0x14  | Binary mode payload length           |
+| Frame Type      | 3       | 0x01  | AT command                           |
+| FLAG            | 4       | 0x00  | Request                              |
+| Payload         |         |       |                                      |
+| `Length`        | 5       | 0x00  | AT command protocol payload length   |
+|                 | 6       | 0x10  | AT command protocol payload length   |
+| `Flag`          | 7       | 0x02  | Write                                |
+| `ATCMD ID`      | 8       | 0x11  | `AT+APPKEY`: Application Session Key |
+| `Payload`       | 9       | 0x01  | Example data:                        |
+|                 | 10      | 0x02  |                                      |
+|                 | 11      | 0x03  |                                      |
+|                 | 12      | 0x04  |                                      |
+|                 | 13      | 0x05  |                                      |
+|                 | 14      | 0x06  |                                      |
+|                 | 15      | 0x07  |                                      |
+|                 | 16      | 0x08  |                                      |
+|                 | 17      | 0x01  |                                      |
+|                 | 18      | 0x02  |                                      |
+|                 | 19      | 0x03  |                                      |
+|                 | 20      | 0x04  |                                      |
+|                 | 21      | 0x05  |                                      |
+|                 | 22      | 0x06  |                                      |
+|                 | 23      | 0x07  |                                      |
+|                 | 24      | 0x08  |                                      |
+| Checksum        | 25      | 0x1F  |                                      |
 
 **Example:**
 
@@ -910,21 +910,21 @@ Send **AT+APPSKEY=01020304050607080102030405060708**
 
 Description: Device Address
 
-The following table explains how to build a frame to execute the "AT+DEVADDR=?" AT command:
+The following table explains how to build a frame to execute the `AT+DEVADDR=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                          |
-| `ATCMD ID`      | 8               | 0x13  | AT+DEVADDR: Device Address          |
-| Checksum        | 9               | 0x04  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x13  | `AT+DEVADDR`: Device Address       |
+| Checksum        | 9       | 0x04  |                                    |
 
 
 **Example:**
@@ -939,25 +939,25 @@ Send **AT+DEVADDR=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x13 0x00 0x07
 ```
 
-The following table explains how to build a frame to request a remote Binary mode device to execute the "AT+DEVADDR=01020304" AT Command:
+The following table explains how to build a frame to request a remote Binary mode device to execute the `AT+DEVADDR=01020304` AT Command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | -               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x14  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x04  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x13  | AT+DEVADDR: Device Address         |
-| `Payload`       | 9               | 0x01  | Example data:                      |
-|                 | 10              | 0x02  |                                    |
-|                 | 11              | 0x03  |                                    |
-|                 | 12              | 0x04  |                                    |
-| Checksum        | 13              | 0x0B  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | -       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x14  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x04  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x13  | `AT+DEVADDR`: Device Address       |
+| `Payload`       | 9       | 0x01  | Example data:                      |
+|                 | 10      | 0x02  |                                    |
+|                 | 11      | 0x03  |                                    |
+|                 | 12      | 0x04  |                                    |
+| Checksum        | 13      | 0x0B  |                                    |
 
 **Example:**
 
@@ -972,21 +972,21 @@ Send **AT+DEVADDR=01020304**
 
 Description: Device AEUI
 
-The following table explains how to build a frame to execute the "AT+DEVEUI=?" AT command:
+The following table explains how to build a frame to execute the `AT+DEVEUI=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                          |
-| `ATCMD ID`      | 8               | 0x14  | AT+DEVEUI: Device EUI          |
-| Checksum        | 9               | 0x03  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x14  | `AT+DEVEUI`: Device EUI            |
+| Checksum        | 9       | 0x03  |                                    |
 
 
 **Example:**
@@ -1000,29 +1000,29 @@ Send **AT+DEVEUI=?** from the address "0xB" to the address "0xC"
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x14 0x00 0x06
 ```
 
-The following table explains how to build a frame to request a remote Binary mode device to execute the "AT+DEVEUI=0102030405060708" AT Command:
+The following table explains how to build a frame to request a remote Binary mode device to execute the `AT+DEVEUI=0102030405060708` AT Command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | -               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x0C  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x08  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x14  | AT+DEVADDR: Device EUI         |
-| `Payload`       | 9               | 0x01  | Example data:                      |
-|                 | 10              | 0x02  |                                    |
-|                 | 11              | 0x03  |                                    |
-|                 | 12              | 0x04  |                                    |
-|                 | 13              | 0x05  |                                    |
-|                 | 14              | 0x06  |                                    |
-|                 | 15              | 0x07  |                                    |
-|                 | 16              | 0x08  |                                    |
-| Checksum        | 17              | 0x12  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | -       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x0C  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x08  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x14  | `AT+DEVADDR`: Device EUI           |
+| `Payload`       | 9       | 0x01  | Example data:                      |
+|                 | 10      | 0x02  |                                    |
+|                 | 11      | 0x03  |                                    |
+|                 | 12      | 0x04  |                                    |
+|                 | 13      | 0x05  |                                    |
+|                 | 14      | 0x06  |                                    |
+|                 | 15      | 0x07  |                                    |
+|                 | 16      | 0x08  |                                    |
+| Checksum        | 17      | 0x12  |                                    |
 
 **Example:**
 
@@ -1036,21 +1036,21 @@ Send **AT+DEVEUI=0102030405060708**
 
 Description: Network ID
 
-The following table explains how to build a frame to execute the "AT+NETID=?" AT command:
+The following table explains how to build a frame to execute the `AT+NETID=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                          |
-| `ATCMD ID`      | 8               | 0x15  | AT+NETID: Network Identifier (NetID)         |
-| Checksum        | 9               | 0x04  |                                    |
+| Frame Field     | Offset  | Value | Description                            |
+| --------------- | ------- | ----- | -------------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                        |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length             |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length             |
+| Frame Type      | 3       | 0x01  | AT command                             |
+| FLAG            | 4       | 0x00  | Request                                |
+| Payload         |         |       |                                        |
+| `Length`        | 5       | 0x00  | AT command protocol payload length     |
+|                 | 6       | 0x00  | AT command protocol payload length     |
+| `Flag`          | 7       | 0x00  | Read                                   |
+| `ATCMD ID`      | 8       | 0x15  | `AT+NETID`: Network Identifier (NetID) |
+| Checksum        | 9       | 0x04  |                                        |
 
 
 **Example:**
@@ -1068,21 +1068,21 @@ Send **AT+NETID=?**
 
 Description: Network Session Key
 
-The following table explains how to build a frame to execute the "AT+NWKSKEY=?" AT command:
+The following table explains how to build a frame to execute the `AT+NWKSKEY=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                          |
-| `ATCMD ID`      | 8               | 0x16  | AT+NWKSKEY: Network Session Key          |
-| Checksum        | 9               | 0x04  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x16  | `AT+NWKSKEY`: Network Session Key  |
+| Checksum        | 9       | 0x04  |                                    |
 
 **Example:**
 
@@ -1096,37 +1096,37 @@ Send **AT+NWKSKEY=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x16 0x00 0x07
 ```
 
-The following table explains how to build a frame to request a remote Binary mode device to execute the "AT+NWKSKEY=01020304050607080102030405060708" AT Command:
+The following table explains how to build a frame to request a remote Binary mode device to execute the `AT+NWKSKEY=01020304050607080102030405060708` AT Command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | -               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x14  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x10  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x16  | AT+NWKSKEY: Network Session Key         |
-| `Payload`       | 9               | 0x01  | Example data:                      |
-|                 | 10              | 0x02  |                                    |
-|                 | 11              | 0x03  |                                    |
-|                 | 12              | 0x04  |                                    |
-|                 | 13              | 0x05  |                                    |
-|                 | 14              | 0x06  |                                    |
-|                 | 15              | 0x07  |                                    |
-|                 | 16              | 0x08  |                                    |
-|                 | 17              | 0x01  |                                    |
-|                 | 18              | 0x02  |                                    |
-|                 | 19              | 0x03  |                                    |
-|                 | 20              | 0x04  |                                    |
-|                 | 21              | 0x05  |                                    |
-|                 | 22              | 0x06  |                                    |
-|                 | 23              | 0x07  |                                    |
-|                 | 24              | 0x08  |                                    |
-| Checksum        | 25              | 0x20  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | -       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x14  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x10  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x16  | `AT+NWKSKEY`: Network Session Key  |
+| `Payload`       | 9       | 0x01  | Example data:                      |
+|                 | 10      | 0x02  |                                    |
+|                 | 11      | 0x03  |                                    |
+|                 | 12      | 0x04  |                                    |
+|                 | 13      | 0x05  |                                    |
+|                 | 14      | 0x06  |                                    |
+|                 | 15      | 0x07  |                                    |
+|                 | 16      | 0x08  |                                    |
+|                 | 17      | 0x01  |                                    |
+|                 | 18      | 0x02  |                                    |
+|                 | 19      | 0x03  |                                    |
+|                 | 20      | 0x04  |                                    |
+|                 | 21      | 0x05  |                                    |
+|                 | 22      | 0x06  |                                    |
+|                 | 23      | 0x07  |                                    |
+|                 | 24      | 0x08  |                                    |
+| Checksum        | 25      | 0x20  |                                    |
 
 **Example:**
 
@@ -1150,21 +1150,21 @@ Description: Confirm Mode
 
 This command is used to configure the uplink payload to be confirmed or unconfirmed type.
 
-The following table explains how to build a frame to execute the "AT+CFM=?" AT command:
+The following table explains how to build a frame to execute the `AT+CFM=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x17  | AT+CFM: Confirm Mode               |
-| Checksum        | 9               | 0x05  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x17  | `AT+CFM`: Confirm Mode             |
+| Checksum        | 9       | 0x05  |                                    |
 
 
 **Example:**
@@ -1178,22 +1178,22 @@ Send **AT+CFM=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x17 0x00 0x08
 ```
 
-The following table explains how to build a frame to execute the "AT+CFM=1" AT command:
+The following table explains how to build a frame to execute the `AT+CFM=1` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x01  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x17  | AT+CFM: Confirm Mode               |
-| `Payload`       | 9               | 0x01  | Example data                       |
-| Checksum        | 10              | 0x08  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x01  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x17  | `AT+CFM`: Confirm Mode             |
+| `Payload`       | 9       | 0x01  | Example data                       |
+| Checksum        | 10      | 0x08  |                                    |
 
 
 **Example:**
@@ -1210,21 +1210,21 @@ Description: Confirm Status
 
 This command is used to access the status of the last **SEND** command.
 
-The following table explains how to build a frame to execute the "AT+CFS=?" AT command:
+The following table explains how to build a frame to execute the `AT+CFS=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x18  | AT+CFS: Confirm Status             |
-| Checksum        | 9               | 0x03  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x18  | `AT+CFS`: Confirm Status           |
+| Checksum        | 9       | 0x03  |                                    |
 
 **Example:**
 
@@ -1239,25 +1239,25 @@ Send **AT+CFS=?**
 
 ### AT+JOIN
 
-Description: Join LoRaWAN® Network 
+Description: Join LoRaWAN Network 
 
 This command is used to join a LoRaWAN network.
 
-The following table explains how to build a frame to execute the "AT+JOIN=?" AT command:
+The following table explains how to build a frame to execute the `AT+JOIN=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x19  | AT+JOIN: Join LoRa Network         |
-| Checksum        | 9               | 0x04  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x19  | `AT+JOIN`: Join LoRa Network       |
+| Checksum        | 9       | 0x04  |                                    |
 
 **Example:**
 
@@ -1270,25 +1270,25 @@ Send **AT+JOIN=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x19 0x00 0x07
 ```
 
-The following table explains how to build a frame to execute the "AT+JOIN=1,1,8,8" AT command:
+The following table explains how to build a frame to execute the `AT+JOIN=1,1,8,8` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x08  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x04  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x19  | AT+JOIN: Join LoRa Network         |
-| `Payload`       | 9               | 0x01  | Example data                       |
-|                 | 10              | 0x01  | Example data                       |
-|                 | 11              | 0x08  | Example data                       |
-|                 | 12              | 0x08  | Example data                       |
-| Checksum        | 13              | 0x0A  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x08  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x04  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x19  | `AT+JOIN`: Join LoRa Network       |
+| `Payload`       | 9       | 0x01  | Example data                       |
+|                 | 10      | 0x01  | Example data                       |
+|                 | 11      | 0x08  | Example data                       |
+|                 | 12      | 0x08  | Example data                       |
+| Checksum        | 13      | 0x0A  |                                    |
 
 **Example:**
 
@@ -1302,25 +1302,25 @@ Send **AT+JOIN=1,1,8,8**
 
 ### AT+NJM
 
-Description: LoRaWAN® Network Join Mode
+Description: LoRaWAN Network Join Mode
 
 This command is used to access the network join mode.
 
-The following table explains how to build a frame to execute the "AT+NJM=?" AT command:
+The following table explains how to build a frame to execute the `AT+NJM=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x1A  | AT+NJM: LoRa Network Join Mode     |
-| Checksum        | 9               | 0x04  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x1A  | `AT+NJM`: LoRa Network Join Mode   |
+| Checksum        | 9       | 0x04  |                                    |
 
 **Example:**
 
@@ -1333,22 +1333,22 @@ Send **AT+NJM=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x1A 0x01 0x08
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x1A 0x00 0x07
 ```
-The following table explains how to build a frame to execute the "AT+NJM=1" AT command:
+The following table explains how to build a frame to execute the `AT+NJM=1` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x01  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x1A  | AT+NJM: LoRa Network Join Mode     |
-| `Payload`       | 9               | 0x01  | Example data                       |
-| Checksum        | 10              | 0x07  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x01  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x1A  | `AT+NJM`: LoRa Network Join Mode   |
+| `Payload`       | 9       | 0x01  | Example data                       |
+| Checksum        | 10      | 0x07  |                                    |
 
 **Example:**
 
@@ -1362,25 +1362,25 @@ Send **AT+NJM=1**
 
 ### AT+NJS
 
-Description: LoRaWAN® Network Join status 
+Description: LoRaWAN Network Join status 
 
 This command is used to access the current activation status of the device. It shows if the device joined or not in a LoRaWAN network.
 
-The following table explains how to build a frame to execute the "AT+NJS=?" AT command:
+The following table explains how to build a frame to execute the `AT+NJS=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x1B  | AT+NJS: LoRa Network Join Status   |
-| Checksum        | 9               | 0x05  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x1B  | `AT+NJS`: LoRa Network Join Status |
+| Checksum        | 9       | 0x05  |                                    |
 
 **Example:**
 
@@ -1399,21 +1399,21 @@ Description: Last Received Data
 
 This command is used to access the last received data in hex format.
 
-The following table explains how to build a frame to execute the "AT+RECV=?" AT command:
+The following table explains how to build a frame to execute the `AT+RECV=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x1C  | AT+RECV: Last Received Data        |
-| Checksum        | 9               | 0x04  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x1C  | `AT+RECV`: Last Received Data      |
+| Checksum        | 9       | 0x04  |                                    |
 
 **Example:**
 
@@ -1432,24 +1432,24 @@ Description: Send Data
 
 This command provides the way to send data on a dedicated port number.
 
-The following table explains how to build a frame to execute the "AT+SEND" AT command:
+The following table explains how to build a frame to execute the `AT+SEND` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x07  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x03  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Execution                          |
-| `ATCMD ID`      | 8               | 0x1D  | AT+SEND: Send Data                 |
-| `Payload`       | 9               | 0x0C  | Example data                       |
-|                 | 10              | 0x34  | Example data                       |
-|                 | 11              | 0x56  | Example data                       |
-| Checksum        | 12              | 0x11  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x07  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x03  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Execution                          |
+| `ATCMD ID`      | 8       | 0x1D  | `AT+SEND`: Send Data               |
+| `Payload`       | 9       | 0x0C  | Example data                       |
+|                 | 10      | 0x34  | Example data                       |
+|                 | 11      | 0x56  | Example data                       |
+| Checksum        | 12      | 0x11  |                                    |
 
 **Example:**
 
@@ -1467,24 +1467,24 @@ Description: Long Packet Data
 
 This command provides the way to send long packet text data.
 
-The following table explains how to build a frame to execute the "AT+LPSEND" AT command:
+The following table explains how to build a frame to execute the `AT+LPSEND` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x08  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x04  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Execution                          |
-| `ATCMD ID`      | 8               | 0x53  | AT+LPSEND: Long Packet Data        |
-| `Payload`       | 9               | 0x0C  | Example data                       |
-|                 | 10              | 0x01  | Example data                       |
-|                 | 12              | 0x56  | Example data                       |
-| Checksum        | 13              | 0x11  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x08  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x04  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Execution                          |
+| `ATCMD ID`      | 8       | 0x53  | `AT+LPSEND`: Long Packet Data      |
+| `Payload`       | 9       | 0x0C  | Example data                       |
+|                 | 10      | 0x01  | Example data                       |
+|                 | 12      | 0x56  | Example data                       |
+| Checksum        | 13      | 0x11  |                                    |
 
 **Example:**
 
@@ -1502,21 +1502,21 @@ Description: Confirm Packet Retransmission
 
 This command sets the number of retransmissions of confirmed packet data.
 
-The following table explains how to build a frame to execute the "AT+RETY=?" AT command:
+The following table explains how to build a frame to execute the `AT+RETY=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                            |
-| --------------- | --------------- | ----- | -------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                        |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length             |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length             |
-| Frame Type      | 3               | 0x01  | AT command                             |
-| FLAG            | 4               | 0x00  | Request                                |
-| Payload         |                 |       |                                        |
-| `Length`        | 5               | 0x00  | AT command protocol payload length     |
-|                 | 6               | 0x00  | AT command protocol payload length     |
-| `Flag`          | 7               | 0x00  | Read                                   |
-| `ATCMD ID`      | 8               | 0x1E  | AT+RETY: Confirm Packet Retransmission |
-| Checksum        | 9               | 0x05  |                                        |
+| Frame Field     | Offset  | Value | Description                              |
+| --------------- | ------- | ----- | ---------------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                          |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length               |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length               |
+| Frame Type      | 3       | 0x01  | AT command                               |
+| FLAG            | 4       | 0x00  | Request                                  |
+| Payload         |         |       |                                          |
+| `Length`        | 5       | 0x00  | AT command protocol payload length       |
+|                 | 6       | 0x00  | AT command protocol payload length       |
+| `Flag`          | 7       | 0x00  | Read                                     |
+| `ATCMD ID`      | 8       | 0x1E  | `AT+RETY`: Confirm Packet Retransmission |
+| Checksum        | 9       | 0x05  |                                          |
 
 **Example:**
 
@@ -1528,22 +1528,22 @@ Send **AT+RETY=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x1E 0x00 0x08
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x1E 0x00 0x08
 ```
-The following table explains how to build a frame to execute the "AT+RETY=1" AT command:
+The following table explains how to build a frame to execute the `AT+RETY=1` AT command:
 
-| Frame Field     | Offset          | Value | Description                            |
-| --------------- | --------------- | ----- | -------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                        |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length             |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length             |
-| Frame Type      | 3               | 0x01  | AT command                             |
-| FLAG            | 4               | 0x00  | Request                                |
-| Payload         |                 |       |                                        |
-| `Length`        | 5               | 0x00  | AT command protocol payload length     |
-|                 | 6               | 0x01  | AT command protocol payload length     |
-| `Flag`          | 7               | 0x02  | Write                                  |
-| `ATCMD ID`      | 8               | 0x1E  | AT+RETY: Confirm Packet Retransmission |
-| `Payload`       | 9               | 0x01  | Example data                           |
-| Checksum        | 10              | 0x08  |                                        |
+| Frame Field     | Offset  | Value | Description                              |
+| --------------- | ------- | ----- | ---------------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                          |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length               |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length               |
+| Frame Type      | 3       | 0x01  | AT command                               |
+| FLAG            | 4       | 0x00  | Request                                  |
+| Payload         |         |       |                                          |
+| `Length`        | 5       | 0x00  | AT command protocol payload length       |
+|                 | 6       | 0x01  | AT command protocol payload length       |
+| `Flag`          | 7       | 0x02  | Write                                    |
+| `ATCMD ID`      | 8       | 0x1E  | `AT+RETY`: Confirm Packet Retransmission |
+| `Payload`       | 9       | 0x01  | Example data                             |
+| Checksum        | 10      | 0x08  |                                          |
 
 **Example:**
 
@@ -1565,21 +1565,21 @@ Description: Adaptive Rate
 
 This command is used to access the adaptive data rate.
 
-The following table explains how to build a frame to execute the "AT+ADR=?" AT command:
+The following table explains how to build a frame to execute the `AT+ADR=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x1F  | AT+ADR: Adaptive Rate              |
-| Checksum        | 9               | 0x06  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x1F  | `AT+ADR`: Adaptive Rate            |
+| Checksum        | 9       | 0x06  |                                    |
 
 
 **Example:**
@@ -1593,22 +1593,22 @@ Send **AT+ADR=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x1F 0x00 0x09
 ```
 
-The following table explains how to build a frame to execute the "AT+ADR=1" AT command:
+The following table explains how to build a frame to execute the `AT+ADR=1` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x01  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x1F  | AT+ADR: Adaptive Rate              |
-| `Payload`       | 9               | 0x01  | Example data                       |
-| Checksum        | 10              | 0x09  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x01  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x1F  | `AT+ADR`: Adaptive Rate            |
+| `Payload`       | 9       | 0x01  | Example data                       |
+| Checksum        | 10      | 0x09  |                                    |
 
 
 **Example:**
@@ -1621,25 +1621,25 @@ Send **AT+ADR=1**
 
 ### AT+CLASS
 
-Description: LoRaWAN® Class
+Description: LoRaWAN Class
 
-This command is used to access the LoRaWAN® class.
+This command is used to access the LoRaWAN class.
 
-The following table explains how to build a frame to execute the "AT+CLASS=?" AT command:
+The following table explains how to build a frame to execute the `AT+CLASS=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                            |
-| --------------- | --------------- | ----- | -------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                        |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length             |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length             |
-| Frame Type      | 3               | 0x01  | AT command                             |
-| FLAG            | 4               | 0x00  | Request                                |
-| Payload         |                 |       |                                        |
-| `Length`        | 5               | 0x00  | AT command protocol payload length     |
-|                 | 6               | 0x00  | AT command protocol payload length     |
-| `Flag`          | 7               | 0x00  | Read                                   |
-| `ATCMD ID`      | 8               | 0x20  | AT+CLASS: LoRaWAN® Class               |
-| Checksum        | 9               | 0x02  |                                        |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x20  | `AT+CLASS`: LoRaWAN Class          |
+| Checksum        | 9       | 0x02  |                                    |
 
 **Example:**
 
@@ -1651,22 +1651,22 @@ Send **AT+CLASS=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x20 0x41 0x07
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x20 0x00 0x05
 ```
-The following table explains how to build a frame to execute the "AT+RETY=C" AT command:
+The following table explains how to build a frame to execute the `AT+RETY=C` AT command:
 
-| Frame Field     | Offset          | Value | Description                            |
-| --------------- | --------------- | ----- | -------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                        |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length             |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length             |
-| Frame Type      | 3               | 0x01  | AT command                             |
-| FLAG            | 4               | 0x00  | Request                                |
-| Payload         |                 |       |                                        |
-| `Length`        | 5               | 0x00  | AT command protocol payload length     |
-|                 | 6               | 0x01  | AT command protocol payload length     |
-| `Flag`          | 7               | 0x02  | Write                                  |
-| `ATCMD ID`      | 8               | 0x20  | AT+CLASS: LoRaWAN® Class               |
-| `Payload`       | 9               | 0x43  | Example data                           |
-| Checksum        | 10              | 0x07  |                                        |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x01  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x20  | `AT+CLASS`: LoRaWAN Class          |
+| `Payload`       | 9       | 0x43  | Example data                       |
+| Checksum        | 10      | 0x07  |                                    |
 
 **Example:**
 
@@ -1684,21 +1684,21 @@ Description: Duty Cycle Settings
 
 This command is used to access and configure duty cycle settings.
 
-The following table explains how to build a frame to execute the "AT+DCS=?" AT command:
+The following table explains how to build a frame to execute the `AT+DCS=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                            |
-| --------------- | --------------- | ----- | -------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                        |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length             |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length             |
-| Frame Type      | 3               | 0x01  | AT command                             |
-| FLAG            | 4               | 0x00  | Request                                |
-| Payload         |                 |       |                                        |
-| `Length`        | 5               | 0x00  | AT command protocol payload length     |
-|                 | 6               | 0x00  | AT command protocol payload length     |
-| `Flag`          | 7               | 0x00  | Read                                   |
-| `ATCMD ID`      | 8               | 0x21  | AT+DCS: Duty Cycle Settings            |
-| Checksum        | 9               | 0x03  |                                        |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x21  | `AT+DCS`: Duty Cycle Settings      |
+| Checksum        | 9       | 0x03  |                                    |
 
 **Example:**
 
@@ -1710,22 +1710,22 @@ Send **AT+DCS=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x21 0x01 0x07
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x21 0x00 0x06
 ```
-The following table explains how to build a frame to execute the "AT+DCS=1" AT command:
+The following table explains how to build a frame to execute the `AT+DCS=1` AT command:
 
-| Frame Field     | Offset          | Value | Description                            |
-| --------------- | --------------- | ----- | -------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                        |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length             |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length             |
-| Frame Type      | 3               | 0x01  | AT command                             |
-| FLAG            | 4               | 0x00  | Request                                |
-| Payload         |                 |       |                                        |
-| `Length`        | 5               | 0x00  | AT command protocol payload length     |
-|                 | 6               | 0x01  | AT command protocol payload length     |
-| `Flag`          | 7               | 0x02  | Write                                  |
-| `ATCMD ID`      | 8               | 0x21  | AT+DCS: Duty Cycle Settings            |
-| `Payload`       | 9               | 0x01  | Example data                           |
-| Checksum        | 10              | 0x06  |                                        |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x01  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x21  | `AT+DCS`: Duty Cycle Settings      |
+| `Payload`       | 9       | 0x01  | Example data                       |
+| Checksum        | 10      | 0x06  |                                    |
 
 **Example:**
 
@@ -1743,21 +1743,21 @@ Description: Data Rate
 
 This command is used to access and configure data rate settings.
 
-The following table explains how to build a frame to execute the "AT+DR=?" AT command:
+The following table explains how to build a frame to execute the `AT+DR=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                            |
-| --------------- | --------------- | ----- | -------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                        |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length             |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length             |
-| Frame Type      | 3               | 0x01  | AT command                             |
-| FLAG            | 4               | 0x00  | Request                                |
-| Payload         |                 |       |                                        |
-| `Length`        | 5               | 0x00  | AT command protocol payload length     |
-|                 | 6               | 0x00  | AT command protocol payload length     |
-| `Flag`          | 7               | 0x00  | Read                                   |
-| `ATCMD ID`      | 8               | 0x22  | AT+DR: Data Rate                       |
-| Checksum        | 9               | 0x03  |                                        |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x22  | `AT+DR`: Data Rate                 |
+| Checksum        | 9       | 0x03  |                                    |
 
 **Example:**
 
@@ -1769,22 +1769,22 @@ Send **AT+DR=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x22 0x00 0x06
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x22 0x00 0x06
 ```
-The following table explains how to build a frame to execute the "AT+DR=1" AT command:
+The following table explains how to build a frame to execute the `AT+DR=1` AT command:
 
-| Frame Field     | Offset          | Value | Description                            |
-| --------------- | --------------- | ----- | -------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                        |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length             |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length             |
-| Frame Type      | 3               | 0x01  | AT command                             |
-| FLAG            | 4               | 0x00  | Request                                |
-| Payload         |                 |       |                                        |
-| `Length`        | 5               | 0x00  | AT command protocol payload length     |
-|                 | 6               | 0x01  | AT command protocol payload length     |
-| `Flag`          | 7               | 0x02  | Write                                  |
-| `ATCMD ID`      | 8               | 0x22  | AT+DR: Data Rate                       |  
-| `Payload`       | 9               | 0x01  | Example data                           |
-| Checksum        | 10              | 0x06  |                                        |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x01  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x22  | `AT+DR`: Data Rate                 |
+| `Payload`       | 9       | 0x01  | Example data                       |
+| Checksum        | 10      | 0x06  |                                    |
 
 **Example:**
 
@@ -1800,23 +1800,23 @@ Send **AT+DR=1**
 
 Description: Join Delay on RX Window 1
 
-This command is used to access the join delay on RX Window 1. The range of acceptable values is 1 to 14 seconds. Whenever **AT+JN1DL** is updated, **AT+JN2DL** is also updated automatically.
+This command is used to access the join delay on RX Window 1. The range of acceptable values is 1 to 14 seconds. Whenever **`AT+JN1DL`** is updated, **`AT+JN2DL`** is also updated automatically.
 
-The following table explains how to build a frame to execute the "AT+JN1DL=?" AT command:
+The following table explains how to build a frame to execute the `AT+JN1DL=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                            |
-| --------------- | --------------- | ----- | -------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                        |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length             |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length             |
-| Frame Type      | 3               | 0x01  | AT command                             |
-| FLAG            | 4               | 0x00  | Request                                |
-| Payload         |                 |       |                                        |
-| `Length`        | 5               | 0x00  | AT command protocol payload length     |
-|                 | 6               | 0x00  | AT command protocol payload length     |
-| `Flag`          | 7               | 0x00  | Read                                   |
-| `ATCMD ID`      | 8               | 0x23  | AT+JN1DL: Join Delay on RX Window 1    |
-| Checksum        | 9               | 0x04  |                                        |
+| Frame Field     | Offset  | Value | Description                           |
+| --------------- | ------- | ----- | ------------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                       |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length            |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length            |
+| Frame Type      | 3       | 0x01  | AT command                            |
+| FLAG            | 4       | 0x00  | Request                               |
+| Payload         |         |       |                                       |
+| `Length`        | 5       | 0x00  | AT command protocol payload length    |
+|                 | 6       | 0x00  | AT command protocol payload length    |
+| `Flag`          | 7       | 0x00  | Read                                  |
+| `ATCMD ID`      | 8       | 0x23  | `AT+JN1DL`: Join Delay on RX Window 1 |
+| Checksum        | 9       | 0x04  |                                       |
 
 **Example:**
 
@@ -1828,25 +1828,25 @@ Send **AT+JN1DL=?**
 << 0x7E 0x00 0x08 0x01 0x01 0x00 0x04 0x01 0x23 0x00 0x00 0x00 0x05 0x09
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x23 0x00 0x07
 ```
-The following table explains how to build a frame to execute the "AT+JN1DL=5" AT command:
+The following table explains how to build a frame to execute the `AT+JN1DL=5` AT command:
 
-| Frame Field     | Offset          | Value | Description                            |
-| --------------- | --------------- | ----- | -------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                        |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length             |
-|                 | 2 (LSB)         | 0x08  | Binary mode payload length             |
-| Frame Type      | 3               | 0x01  | AT command                             |
-| FLAG            | 4               | 0x00  | Request                                |
-| Payload         |                 |       |                                        |
-| `Length`        | 5               | 0x00  | AT command protocol payload length     |
-|                 | 6               | 0x04  | AT command protocol payload length     |
-| `Flag`          | 7               | 0x02  | Write                                  |
-| `ATCMD ID`      | 8               | 0x23  | AT+JN1DL: Join Delay on RX Window 1    |  
-| `Payload`       | 9               | 0x00  | Example data                           |
-|                 | 10              | 0x00  | Example data                           |
-|                 | 11              | 0x00  | Example data                           |
-|                 | 12              | 0x05  | Example data                           |
-| Checksum        | 13              | 0x08  |                                        |
+| Frame Field     | Offset  | Value | Description                           |
+| --------------- | ------- | ----- | ------------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                       |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length            |
+|                 | 2 (LSB) | 0x08  | Binary mode payload length            |
+| Frame Type      | 3       | 0x01  | AT command                            |
+| FLAG            | 4       | 0x00  | Request                               |
+| Payload         |         |       |                                       |
+| `Length`        | 5       | 0x00  | AT command protocol payload length    |
+|                 | 6       | 0x04  | AT command protocol payload length    |
+| `Flag`          | 7       | 0x02  | Write                                 |
+| `ATCMD ID`      | 8       | 0x23  | `AT+JN1DL`: Join Delay on RX Window 1 |
+| `Payload`       | 9       | 0x00  | Example data                          |
+|                 | 10      | 0x00  | Example data                          |
+|                 | 11      | 0x00  | Example data                          |
+|                 | 12      | 0x05  | Example data                          |
+| Checksum        | 13      | 0x08  |                                       |
 
 **Example:**
 
@@ -1862,23 +1862,23 @@ Send **AT+JN1DL=5**
 
 Description: Join Delay on RX Window 2
 
-This command is used to access the join delay on RX Window 2. The range of acceptable values is 2 to 15 seconds. Whenever **AT+JN2DL** is updated, **AT+JN1DL** is also updated automatically.
+This command is used to access the join delay on RX Window 2. The range of acceptable values is 2 to 15 seconds. Whenever **`AT+JN2DL`** is updated, **`AT+JN1DL`** is also updated automatically.
 
-The following table explains how to build a frame to execute the "AT+JN2DL=?" AT command:
+The following table explains how to build a frame to execute the `AT+JN2DL=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                            |
-| --------------- | --------------- | ----- | -------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                        |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length             |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length             |
-| Frame Type      | 3               | 0x01  | AT command                             |
-| FLAG            | 4               | 0x00  | Request                                |
-| Payload         |                 |       |                                        |
-| `Length`        | 5               | 0x00  | AT command protocol payload length     |
-|                 | 6               | 0x00  | AT command protocol payload length     |
-| `Flag`          | 7               | 0x00  | Read                                   |
-| `ATCMD ID`      | 8               | 0x24  | AT+JN2DL: Join Delay on RX Window 2    |
-| Checksum        | 9               | 0x03  |                                        |
+| Frame Field     | Offset  | Value | Description                           |
+| --------------- | ------- | ----- | ------------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                       |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length            |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length            |
+| Frame Type      | 3       | 0x01  | AT command                            |
+| FLAG            | 4       | 0x00  | Request                               |
+| Payload         |         |       |                                       |
+| `Length`        | 5       | 0x00  | AT command protocol payload length    |
+|                 | 6       | 0x00  | AT command protocol payload length    |
+| `Flag`          | 7       | 0x00  | Read                                  |
+| `ATCMD ID`      | 8       | 0x24  | `AT+JN2DL`: Join Delay on RX Window 2 |
+| Checksum        | 9       | 0x03  |                                       |
 
 **Example:**
 
@@ -1890,25 +1890,25 @@ Send **AT+JN2DL=?**
 << 0x7E 0x00 0x08 0x01 0x01 0x00 0x04 0x01 0x24 0x00 0x00 0x00 0x06 0x08
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x24 0x00 0x06
 ```
-The following table explains how to build a frame to execute the "AT+JN2DL=6" AT command:
+The following table explains how to build a frame to execute the `AT+JN2DL=6` AT command:
 
-| Frame Field     | Offset          | Value | Description                            |
-| --------------- | --------------- | ----- | -------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                        |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length             |
-|                 | 2 (LSB)         | 0x08  | Binary mode payload length             |
-| Frame Type      | 3               | 0x01  | AT command                             |
-| FLAG            | 4               | 0x00  | Request                                |
-| Payload         |                 |       |                                        |
-| `Length`        | 5               | 0x00  | AT command protocol payload length     |
-|                 | 6               | 0x04  | AT command protocol payload length     |
-| `Flag`          | 7               | 0x02  | Write                                  |
-| `ATCMD ID`      | 8               | 0x24  | AT+JN2DL: Join Delay on RX Window 2    |
-| `Payload`       | 9               | 0x00  | Example data                           |
-|                 | 10              | 0x00  | Example data                           |
-|                 | 11              | 0x00  | Example data                           |
-|                 | 12              | 0x06  | Example data                           |
-| Checksum        | 13              | 0x07  |                                        |
+| Frame Field     | Offset  | Value | Description                           |
+| --------------- | ------- | ----- | ------------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                       |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length            |
+|                 | 2 (LSB) | 0x08  | Binary mode payload length            |
+| Frame Type      | 3       | 0x01  | AT command                            |
+| FLAG            | 4       | 0x00  | Request                               |
+| Payload         |         |       |                                       |
+| `Length`        | 5       | 0x00  | AT command protocol payload length    |
+|                 | 6       | 0x04  | AT command protocol payload length    |
+| `Flag`          | 7       | 0x02  | Write                                 |
+| `ATCMD ID`      | 8       | 0x24  | `AT+JN2DL`: Join Delay on RX Window 2 |
+| `Payload`       | 9       | 0x00  | Example data                          |
+|                 | 10      | 0x00  | Example data                          |
+|                 | 11      | 0x00  | Example data                          |
+|                 | 12      | 0x06  | Example data                          |
+| Checksum        | 13      | 0x07  |                                       |
 
 **Example:**
 
@@ -1926,21 +1926,21 @@ Description: Public Network Mode
 
 This command is used to access the public network mode.
 
-The following table explains how to build a frame to execute the "AT+PNM=?" AT command:
+The following table explains how to build a frame to execute the `AT+PNM=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                            |
-| --------------- | --------------- | ----- | -------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                        |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length             |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length             |
-| Frame Type      | 3               | 0x01  | AT command                             |
-| FLAG            | 4               | 0x00  | Request                                |
-| Payload         |                 |       |                                        |
-| `Length`        | 5               | 0x00  | AT command protocol payload length     |
-|                 | 6               | 0x00  | AT command protocol payload length     |
-| `Flag`          | 7               | 0x00  | Read                                   |
-| `ATCMD ID`      | 8               | 0x25  | AT+PNM: Public Network Mode            |
-| Checksum        | 9               | 0x04  |                                        |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x25  | `AT+PNM`: Public Network Mode      |
+| Checksum        | 9       | 0x04  |                                    |
 
 **Example:**
 
@@ -1952,22 +1952,22 @@ Send **AT+PNM=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x25 0x01 0x08
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x25 0x00 0x07
 ```
-The following table explains how to build a frame to execute the "AT+PNM=1" AT command:
+The following table explains how to build a frame to execute the `AT+PNM=1` AT command:
 
-| Frame Field     | Offset          | Value | Description                            |
-| --------------- | --------------- | ----- | -------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                        |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length             |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length             |
-| Frame Type      | 3               | 0x01  | AT command                             |
-| FLAG            | 4               | 0x00  | Request                                |
-| Payload         |                 |       |                                        |
-| `Length`        | 5               | 0x00  | AT command protocol payload length     |
-|                 | 6               | 0x01  | AT command protocol payload length     |
-| `Flag`          | 7               | 0x02  | Write                                  |
-| `ATCMD ID`      | 8               | 0x25  | AT+PNM: Public Network Mode            |
-| `Payload`       | 9               | 0x01  | Example data                           |
-| Checksum        | 10              | 0x07  |                                        |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x01  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x25  | `AT+PNM`: Public Network Mode      |
+| `Payload`       | 9       | 0x01  | Example data                       |
+| Checksum        | 10      | 0x07  |                                    |
 
 **Example:**
 
@@ -1983,23 +1983,23 @@ Send **AT+PNM=1**
 
 Description: Delay of the Received Window 1
 
-This command is used to access the delay of the received Window 1. The range of acceptable values is 1 to 14 seconds. Whenever **AT+RX1DL** is updated, **AT+RX2DL** is also updated automatically.
+This command is used to access the delay of the received Window 1. The range of acceptable values is 1 to 14 seconds. Whenever **`AT+RX1DL`** is updated, **`AT+RX2DL`** is also updated automatically.
 
-The following table explains how to build a frame to execute the "AT+RX1DL=?" AT command:
+The following table explains how to build a frame to execute the `AT+RX1DL=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                              |
-| --------------- | --------------- | ----- | ---------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                          |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length               |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length               |
-| Frame Type      | 3               | 0x01  | AT command                               |
-| FLAG            | 4               | 0x00  | Request                                  |
-| Payload         |                 |       |                                          |
-| `Length`        | 5               | 0x00  | AT command protocol payload length       |
-|                 | 6               | 0x00  | AT command protocol payload length       |
-| `Flag`          | 7               | 0x00  | Read                                     |
-| `ATCMD ID`      | 8               | 0x26  | AT+RX1DL: Delay of the Received Window 1 |
-| Checksum        | 9               | 0x04  |                                          |
+| Frame Field     | Offset  | Value | Description                                |
+| --------------- | ------- | ----- | ------------------------------------------ |
+| START DELIMITER | 0       | 0x7E  |                                            |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length                 |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length                 |
+| Frame Type      | 3       | 0x01  | AT command                                 |
+| FLAG            | 4       | 0x00  | Request                                    |
+| Payload         |         |       |                                            |
+| `Length`        | 5       | 0x00  | AT command protocol payload length         |
+|                 | 6       | 0x00  | AT command protocol payload length         |
+| `Flag`          | 7       | 0x00  | Read                                       |
+| `ATCMD ID`      | 8       | 0x26  | `AT+RX1DL`: Delay of the Received Window 1 |
+| Checksum        | 9       | 0x04  |                                            |
 
 **Example:**
 
@@ -2011,25 +2011,25 @@ Send **AT+RX1DL=?**
 << 0x7E 0x00 0x08 0x01 0x01 0x00 0x04 0x01 0x26 0x00 0x00 0x00 0x01 0x08
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x26 0x00 0x07
 ```
-The following table explains how to build a frame to execute the "AT+RX1DL=1" AT command:
+The following table explains how to build a frame to execute the `AT+RX1DL=1` AT command:
 
-| Frame Field     | Offset          | Value | Description                              |
-| --------------- | --------------- | ----- | --------------------------------------   |
-| START DELIMITER | 0               | 0x7E  |                                          |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length               |
-|                 | 2 (LSB)         | 0x08  | Binary mode payload length               |
-| Frame Type      | 3               | 0x01  | AT command                               |
-| FLAG            | 4               | 0x00  | Request                                  |
-| Payload         |                 |       |                                          |
-| `Length`        | 5               | 0x00  | AT command protocol payload length       |
-|                 | 6               | 0x04  | AT command protocol payload length       |
-| `Flag`          | 7               | 0x02  | Write                                    |
-| `ATCMD ID`      | 8               | 0x26  | AT+RX1DL: Delay of the Received Window 1 |  
-| `Payload`       | 9               | 0x00  | Example data                             |
-|                 | 10              | 0x00  | Example data                             |
-|                 | 11              | 0x00  | Example data                             |
-|                 | 12              | 0x01  | Example data                             |
-| Checksum        | 13              | 0x07  |                                          |
+| Frame Field     | Offset  | Value | Description                                |
+| --------------- | ------- | ----- | ------------------------------------------ |
+| START DELIMITER | 0       | 0x7E  |                                            |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length                 |
+|                 | 2 (LSB) | 0x08  | Binary mode payload length                 |
+| Frame Type      | 3       | 0x01  | AT command                                 |
+| FLAG            | 4       | 0x00  | Request                                    |
+| Payload         |         |       |                                            |
+| `Length`        | 5       | 0x00  | AT command protocol payload length         |
+|                 | 6       | 0x04  | AT command protocol payload length         |
+| `Flag`          | 7       | 0x02  | Write                                      |
+| `ATCMD ID`      | 8       | 0x26  | `AT+RX1DL`: Delay of the Received Window 1 |
+| `Payload`       | 9       | 0x00  | Example data                               |
+|                 | 10      | 0x00  | Example data                               |
+|                 | 11      | 0x00  | Example data                               |
+|                 | 12      | 0x01  | Example data                               |
+| Checksum        | 13      | 0x07  |                                            |
 
 **Example:**
 
@@ -2045,23 +2045,23 @@ Send **AT+RX1DL=1**
 
 Description: Delay of the Received Window 2
 
-This command is used to access the delay of the received Window 2. The range of acceptable values is 2 to 15 seconds. Whenever **AT+RX2DL** is updated, **AT+RX1DL** is also updated automatically.
+This command is used to access the delay of the received Window 2. The range of acceptable values is 2 to 15 seconds. Whenever **`AT+RX2DL`** is updated, **`AT+RX1DL`** is also updated automatically.
 
-The following table explains how to build a frame to execute the "AT+RX2DL=?" AT command:
+The following table explains how to build a frame to execute the `AT+RX2DL=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                              |
-| --------------- | --------------- | ----- | ---------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                          |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length               |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length               |
-| Frame Type      | 3               | 0x01  | AT command                               |
-| FLAG            | 4               | 0x00  | Request                                  |
-| Payload         |                 |       |                                          |
-| `Length`        | 5               | 0x00  | AT command protocol payload length       |
-|                 | 6               | 0x00  | AT command protocol payload length       |
-| `Flag`          | 7               | 0x00  | Read                                     |
-| `ATCMD ID`      | 8               | 0x27  | AT+RX2DL: Delay of the Received Window 2 |
-| Checksum        | 9               | 0x05  |                                          |
+| Frame Field     | Offset  | Value | Description                                |
+| --------------- | ------- | ----- | ------------------------------------------ |
+| START DELIMITER | 0       | 0x7E  |                                            |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length                 |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length                 |
+| Frame Type      | 3       | 0x01  | AT command                                 |
+| FLAG            | 4       | 0x00  | Request                                    |
+| Payload         |         |       |                                            |
+| `Length`        | 5       | 0x00  | AT command protocol payload length         |
+|                 | 6       | 0x00  | AT command protocol payload length         |
+| `Flag`          | 7       | 0x00  | Read                                       |
+| `ATCMD ID`      | 8       | 0x27  | `AT+RX2DL`: Delay of the Received Window 2 |
+| Checksum        | 9       | 0x05  |                                            |
 
 **Example:**
 
@@ -2073,25 +2073,25 @@ Send **AT+RX2DL=?**
 << 0x7E 0x00 0x08 0x01 0x01 0x00 0x04 0x01 0x27 0x00 0x00 0x00 0x02 0x09
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x27 0x00 0x08 
 ```
-The following table explains how to build a frame to execute the "AT+RX2DL=2" AT command:
+The following table explains how to build a frame to execute the `AT+RX2DL=2` AT command:
 
-| Frame Field     | Offset          | Value | Description                              |
-| --------------- | --------------- | ----- | --------------------------------------   |
-| START DELIMITER | 0               | 0x7E  |                                          |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length               |
-|                 | 2 (LSB)         | 0x08  | Binary mode payload length               |
-| Frame Type      | 3               | 0x01  | AT command                               |
-| FLAG            | 4               | 0x00  | Request                                  |
-| Payload         |                 |       |                                          |
-| `Length`        | 5               | 0x00  | AT command protocol payload length       |
-|                 | 6               | 0x04  | AT command protocol payload length       |
-| `Flag`          | 7               | 0x02  | Write                                    |
-| `ATCMD ID`      | 8               | 0x27  | AT+RX2DL: Delay of the Received Window 2 |  
-| `Payload`       | 9               | 0x00  | Example data                             |
-|                 | 10              | 0x00  | Example data                             |
-|                 | 11              | 0x00  | Example data                             |
-|                 | 12              | 0x02  | Example data                             |
-| Checksum        | 13              | 0x08  |                                          |
+| Frame Field     | Offset  | Value | Description                                |
+| --------------- | ------- | ----- | ------------------------------------------ |
+| START DELIMITER | 0       | 0x7E  |                                            |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length                 |
+|                 | 2 (LSB) | 0x08  | Binary mode payload length                 |
+| Frame Type      | 3       | 0x01  | AT command                                 |
+| FLAG            | 4       | 0x00  | Request                                    |
+| Payload         |         |       |                                            |
+| `Length`        | 5       | 0x00  | AT command protocol payload length         |
+|                 | 6       | 0x04  | AT command protocol payload length         |
+| `Flag`          | 7       | 0x02  | Write                                      |
+| `ATCMD ID`      | 8       | 0x27  | `AT+RX2DL`: Delay of the Received Window 2 |
+| `Payload`       | 9       | 0x00  | Example data                               |
+|                 | 10      | 0x00  | Example data                               |
+|                 | 11      | 0x00  | Example data                               |
+|                 | 12      | 0x02  | Example data                               |
+| Checksum        | 13      | 0x08  |                                            |
 
 **Example:**
 
@@ -2109,21 +2109,21 @@ Description: Data Rate of the Received Window 2
 
 This command is used to access the data rate of received window 2.
 
-The following table explains how to build a frame to execute the "AT+RX2DR=?" AT command:
+The following table explains how to build a frame to execute the `AT+RX2DR=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                                  |
-| --------------- | --------------- | ----- | -------------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                              |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length                   |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length                   |
-| Frame Type      | 3               | 0x01  | AT command                                   |
-| FLAG            | 4               | 0x00  | Request                                      |
-| Payload         |                 |       |                                              |
-| `Length`        | 5               | 0x00  | AT command protocol payload length           |
-|                 | 6               | 0x00  | AT command protocol payload length           |
-| `Flag`          | 7               | 0x00  | Read                                         |
-| `ATCMD ID`      | 8               | 0x28  | AT+RX2DR: Data Rate of the Received Window 2 |
-| Checksum        | 9               | 0x03  |                                              |
+| Frame Field     | Offset  | Value | Description                                    |
+| --------------- | ------- | ----- | ---------------------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                                |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length                     |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length                     |
+| Frame Type      | 3       | 0x01  | AT command                                     |
+| FLAG            | 4       | 0x00  | Request                                        |
+| Payload         |         |       |                                                |
+| `Length`        | 5       | 0x00  | AT command protocol payload length             |
+|                 | 6       | 0x00  | AT command protocol payload length             |
+| `Flag`          | 7       | 0x00  | Read                                           |
+| `ATCMD ID`      | 8       | 0x28  | `AT+RX2DR`: Data Rate of the Received Window 2 |
+| Checksum        | 9       | 0x03  |                                                |
 
 **Example:**
 
@@ -2135,22 +2135,22 @@ Send **AT+RX2DR=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x28 0x08 0x07
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x28 0x00 0x06
 ```
-The following table explains how to build a frame to execute the "AT+RX2DR=8" AT command:
+The following table explains how to build a frame to execute the `AT+RX2DR=8` AT command:
 
-| Frame Field     | Offset          | Value | Description                                  |
-| --------------- | --------------- | ----- | -------------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                              |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length                   |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length                   |
-| Frame Type      | 3               | 0x01  | AT command                                   |
-| FLAG            | 4               | 0x00  | Request                                      |
-| Payload         |                 |       |                                              |
-| `Length`        | 5               | 0x00  | AT command protocol payload length           |
-|                 | 6               | 0x01  | AT command protocol payload length           |
-| `Flag`          | 7               | 0x02  | Write                                        |
-| `ATCMD ID`      | 8               | 0x28  | AT+RX2DR: Data Rate of the Received Window 2 | 
-| `Payload`       | 9               | 0x08  | Example data                                 |
-| Checksum        | 10              | 0x06  |                                              |
+| Frame Field     | Offset  | Value | Description                                    |
+| --------------- | ------- | ----- | ---------------------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                                |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length                     |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length                     |
+| Frame Type      | 3       | 0x01  | AT command                                     |
+| FLAG            | 4       | 0x00  | Request                                        |
+| Payload         |         |       |                                                |
+| `Length`        | 5       | 0x00  | AT command protocol payload length             |
+|                 | 6       | 0x01  | AT command protocol payload length             |
+| `Flag`          | 7       | 0x02  | Write                                          |
+| `ATCMD ID`      | 8       | 0x28  | `AT+RX2DR`: Data Rate of the Received Window 2 |
+| `Payload`       | 9       | 0x08  | Example data                                   |
+| Checksum        | 10      | 0x06  |                                                |
 
 **Example:**
 
@@ -2168,21 +2168,21 @@ Description: Frequency of the Received Window 2
 
 This command is used to access the frequency of the received window 2.
 
-The following table explains how to build a frame to execute the "AT+RX2FQ=?" AT command:
+The following table explains how to build a frame to execute the `AT+RX2FQ=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                                  |
-| --------------- | --------------- | ----- | -------------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                              |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length                   |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length                   |
-| Frame Type      | 3               | 0x01  | AT command                                   |
-| FLAG            | 4               | 0x00  | Request                                      |
-| Payload         |                 |       |                                              |
-| `Length`        | 5               | 0x00  | AT command protocol payload length           |
-|                 | 6               | 0x00  | AT command protocol payload length           |
-| `Flag`          | 7               | 0x00  | Read                                         |
-| `ATCMD ID`      | 8               | 0x29  | AT+RX2FQ: Frequency of the Received Window 2 |
-| Checksum        | 9               | 0x04  |                                              |
+| Frame Field     | Offset  | Value | Description                                    |
+| --------------- | ------- | ----- | ---------------------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                                |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length                     |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length                     |
+| Frame Type      | 3       | 0x01  | AT command                                     |
+| FLAG            | 4       | 0x00  | Request                                        |
+| Payload         |         |       |                                                |
+| `Length`        | 5       | 0x00  | AT command protocol payload length             |
+|                 | 6       | 0x00  | AT command protocol payload length             |
+| `Flag`          | 7       | 0x00  | Read                                           |
+| `ATCMD ID`      | 8       | 0x29  | `AT+RX2FQ`: Frequency of the Received Window 2 |
+| Checksum        | 9       | 0x04  |                                                |
 
 **Example:**
 
@@ -2194,25 +2194,25 @@ Send **AT+RX2FQ=?**
 << 0x7E 0x00 0x08 0x01 0x01 0x00 0x04 0x01 0x29 0x37 0x08 0x70 0xA0 0x12
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x29 0x00 0x07
 ```
-The following table explains how to build a frame to execute the "AT+RX2FQ=923300000" AT command:
+The following table explains how to build a frame to execute the `AT+RX2FQ=923300000` AT command:
 
-| Frame Field     | Offset          | Value | Description                                  |
-| --------------- | --------------- | ----- | -------------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                              |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length                   |
-|                 | 2 (LSB)         | 0x08  | Binary mode payload length                   |
-| Frame Type      | 3               | 0x01  | AT command                                   |
-| FLAG            | 4               | 0x00  | Request                                      |
-| Payload         |                 |       |                                              |
-| `Length`        | 5               | 0x00  | AT command protocol payload length           |
-|                 | 6               | 0x04  | AT command protocol payload length           |
-| `Flag`          | 7               | 0x02  | Write                                        |
-| `ATCMD ID`      | 8               | 0x29  | AT+RX2FQ: Frequency of the Received Window 2 |
-| `Payload`       | 9               | 0x37  | Example data                                 |
-|                 | 10              | 0x08  | Example data                                 |
-|                 | 11              | 0x70  | Example data                                 |
-|                 | 12              | 0xA0  | Example data                                 |
-| Checksum        | 13              | 0x11  |                                              |
+| Frame Field     | Offset  | Value | Description                                    |
+| --------------- | ------- | ----- | ---------------------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                                |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length                     |
+|                 | 2 (LSB) | 0x08  | Binary mode payload length                     |
+| Frame Type      | 3       | 0x01  | AT command                                     |
+| FLAG            | 4       | 0x00  | Request                                        |
+| Payload         |         |       |                                                |
+| `Length`        | 5       | 0x00  | AT command protocol payload length             |
+|                 | 6       | 0x04  | AT command protocol payload length             |
+| `Flag`          | 7       | 0x02  | Write                                          |
+| `ATCMD ID`      | 8       | 0x29  | `AT+RX2FQ`: Frequency of the Received Window 2 |
+| `Payload`       | 9       | 0x37  | Example data                                   |
+|                 | 10      | 0x08  | Example data                                   |
+|                 | 11      | 0x70  | Example data                                   |
+|                 | 12      | 0xA0  | Example data                                   |
+| Checksum        | 13      | 0x11  |                                                |
 
 **Example:**
 
@@ -2230,21 +2230,21 @@ Description: Transmit Power
 
 This command is used to access the transmit power.
 
-The following table explains how to build a frame to execute the "AT+TXP=?" AT command:
+The following table explains how to build a frame to execute the `AT+TXP=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                                  |
-| --------------- | --------------- | ----- | -------------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                              |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length                   |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length                   |
-| Frame Type      | 3               | 0x01  | AT command                                   |
-| FLAG            | 4               | 0x00  | Request                                      |
-| Payload         |                 |       |                                              |
-| `Length`        | 5               | 0x00  | AT command protocol payload length           |
-|                 | 6               | 0x00  | AT command protocol payload length           |
-| `Flag`          | 7               | 0x00  | Read                                         |
-| `ATCMD ID`      | 8               | 0x2A  | AT+TXP: Transmit Power                       |
-| Checksum        | 9               | 0x04  |                                              |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x2A  | `AT+TXP`: Transmit Power           |
+| Checksum        | 9       | 0x04  |                                    |
 
 **Example:**
 
@@ -2256,22 +2256,22 @@ Send **AT+TXP=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x2A 0x00 0x07
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x2A 0x00 0x07
 ```
-The following table explains how to build a frame to execute the "AT+TXP=0" AT command:
+The following table explains how to build a frame to execute the `AT+TXP=0` AT command:
 
-| Frame Field     | Offset          | Value | Description                                  |
-| --------------- | --------------- | ----- | -------------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                              |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length                   |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length                   |
-| Frame Type      | 3               | 0x01  | AT command                                   |
-| FLAG            | 4               | 0x00  | Request                                      |
-| Payload         |                 |       |                                              |
-| `Length`        | 5               | 0x00  | AT command protocol payload length           |
-|                 | 6               | 0x01  | AT command protocol payload length           |
-| `Flag`          | 7               | 0x02  | Write                                        |
-| `ATCMD ID`      | 8               | 0x2A  | AT+TXP: Transmit Power                       |
-| `Payload`       | 9               | 0x00  | Example data                                 |
-| Checksum        | 10              | 0x06  |                                              |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x01  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x2A  | `AT+TXP`: Transmit Power           |
+| `Payload`       | 9       | 0x00  | Example data                       |
+| Checksum        | 10      | 0x06  |                                    |
 
 **Example:**
 
@@ -2289,21 +2289,21 @@ Description: Verify Network Link Status
 
 This command is used to access and configure the device network link status.
 
-The following table explains how to build a frame to execute the "AT+LINKCHECK=?" AT command:
+The following table explains how to build a frame to execute the `AT+LINKCHECK=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                                  |
-| --------------- | --------------- | ----- | -------------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                              |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length                   |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length                   |
-| Frame Type      | 3               | 0x01  | AT command                                   |
-| FLAG            | 4               | 0x00  | Request                                      |
-| Payload         |                 |       |                                              |
-| `Length`        | 5               | 0x00  | AT command protocol payload length           |
-|                 | 6               | 0x00  | AT command protocol payload length           |
-| `Flag`          | 7               | 0x00  | Read                                         |
-| `ATCMD ID`      | 8               | 0x2B  | AT+LINKCHECK: Verify Network Link Status     |
-| Checksum        | 9               | 0x05  |                                              |
+| Frame Field     | Offset  | Value | Description                                |
+| --------------- | ------- | ----- | ------------------------------------------ |
+| START DELIMITER | 0       | 0x7E  |                                            |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length                 |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length                 |
+| Frame Type      | 3       | 0x01  | AT command                                 |
+| FLAG            | 4       | 0x00  | Request                                    |
+| Payload         |         |       |                                            |
+| `Length`        | 5       | 0x00  | AT command protocol payload length         |
+|                 | 6       | 0x00  | AT command protocol payload length         |
+| `Flag`          | 7       | 0x00  | Read                                       |
+| `ATCMD ID`      | 8       | 0x2B  | `AT+LINKCHECK`: Verify Network Link Status |
+| Checksum        | 9       | 0x05  |                                            |
 
 **Example:**
 
@@ -2315,22 +2315,22 @@ Send **AT+LINKCHECK=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x2B 0x00 0x08
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x2B 0x00 0x08
 ```
-The following table explains how to build a frame to execute the "AT+LINKCHECK=1" AT command:
+The following table explains how to build a frame to execute the `AT+LINKCHECK=1` AT command:
 
-| Frame Field     | Offset          | Value | Description                                  |
-| --------------- | --------------- | ----- | -------------------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                              |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length                   |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length                   |
-| Frame Type      | 3               | 0x01  | AT command                                   |
-| FLAG            | 4               | 0x00  | Request                                      |
-| Payload         |                 |       |                                              |
-| `Length`        | 5               | 0x00  | AT command protocol payload length           |
-|                 | 6               | 0x01  | AT command protocol payload length           |
-| `Flag`          | 7               | 0x02  | Write                                        |
-| `ATCMD ID`      | 8               | 0x2B  | AT+LINKCHECK: Verify Network Link Status     |
-| `Payload`       | 9               | 0x01  | Example data                                 |
-| Checksum        | 10              | 0x08  |                                              |
+| Frame Field     | Offset  | Value | Description                                |
+| --------------- | ------- | ----- | ------------------------------------------ |
+| START DELIMITER | 0       | 0x7E  |                                            |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length                 |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length                 |
+| Frame Type      | 3       | 0x01  | AT command                                 |
+| FLAG            | 4       | 0x00  | Request                                    |
+| Payload         |         |       |                                            |
+| `Length`        | 5       | 0x00  | AT command protocol payload length         |
+|                 | 6       | 0x01  | AT command protocol payload length         |
+| `Flag`          | 7       | 0x02  | Write                                      |
+| `ATCMD ID`      | 8       | 0x2B  | `AT+LINKCHECK`: Verify Network Link Status |
+| `Payload`       | 9       | 0x01  | Example data                               |
+| Checksum        | 10      | 0x08  |                                            |
 
 **Example:**
 
@@ -2352,21 +2352,21 @@ Description: Periodicity
 
 This command is used to get or set the unicast ping slot periodicity.
 
-The following table explains how to build a frame to execute the "AT+PGSLOT=?" AT command:
+The following table explains how to build a frame to execute the `AT+PGSLOT=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x2C  | AT+PGSLOT: Periodicity             |
-| Checksum        | 9               | 0x04  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x2C  | `AT+PGSLOT`: Periodicity           |
+| Checksum        | 9       | 0x04  |                                    |
 
 
 **Example:**
@@ -2380,22 +2380,22 @@ Send **AT+PGSLOT=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x2C 0x00 0x07
 ```
 
-The following table explains how to build a frame to execute the "AT+PGSLOT=1" AT command:
+The following table explains how to build a frame to execute the `AT+PGSLOT=1` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x01  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x2C  | AT+PGSLOT: Periodicity             |
-| `Payload`       | 9               | 0x01  | Example data:                      |
-| Checksum        | 10              | 0x07  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x01  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x2C  | `AT+PGSLOT`: Periodicity           |
+| `Payload`       | 9       | 0x01  | Example data:                      |
+| Checksum        | 10      | 0x07  |                                    |
 
 
 **Example:**
@@ -2412,21 +2412,21 @@ Description: Beacon Frequency
 
 This command is used to get or set beacon frequency.
 
-The following table explains how to build a frame to execute the "AT+BFREQ=?" AT command:
+The following table explains how to build a frame to execute the `AT+BFREQ=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x2D  | AT+BFREQ                           |
-| Checksum        | 9               | 0x05  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x2D  | `AT+BFREQ`                         |
+| Checksum        | 9       | 0x05  |                                    |
 
 
 **Example:**
@@ -2446,21 +2446,21 @@ Description: Beacon Time
 
 This command is used to get or set beacon time.
 
-The following table explains how to build a frame to execute the "AT+BTIME=?" AT command:
+The following table explains how to build a frame to execute the `AT+BTIME=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x2E  | AT+BTIME                           |
-| Checksum        | 9               | 0x05  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x2E  | `AT+BTIME`                         |
+| Checksum        | 9       | 0x05  |                                    |
 
 
 **Example:**
@@ -2480,21 +2480,21 @@ Description: Gateway GPS coordinate, NetID, and GwID
 
 This command is used to get or set Gateway GPS coordinate, NetID, and GwID.
 
-The following table explains how to build a frame to execute the "AT+BGW=?" AT command:
+The following table explains how to build a frame to execute the `AT+BGW=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x2F  | AT+BGW                             |
-| Checksum        | 9               | 0x06  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x2F  | `AT+BGW`                           |
+| Checksum        | 9       | 0x06  |                                    |
 
 
 **Example:**
@@ -2514,21 +2514,21 @@ Description: Local Time
 
 This command is used to get or set local time.
 
-The following table explains how to build a frame to execute the "AT+BGW=?" AT command:
+The following table explains how to build a frame to execute the `AT+BGW=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x30  | AT+LTIME                           |
-| Checksum        | 9               | 0x03  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x30  | `AT+LTIME`                         |
+| Checksum        | 9       | 0x03  |                                    |
 
 
 **Example:**
@@ -2552,21 +2552,21 @@ Description: RSSI on reception
 
 This command is used to access the RSSI on reception.
 
-The following table explains how to build a frame to execute the "AT+RSSI=?" AT command:
+The following table explains how to build a frame to execute the `AT+RSSI=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x31  | AT+RSSI                            |
-| Checksum        | 9               | 0x04  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x31  | `AT+RSSI`                          |
+| Checksum        | 9       | 0x04  |                                    |
 
 
 **Example:**
@@ -2586,21 +2586,21 @@ Description: Signal Noise Ratio
 
 This command is used to access the Signal Noise Ratio.
 
-The following table explains how to build a frame to execute the "AT+SNR=?" AT command:
+The following table explains how to build a frame to execute the `AT+SNR=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x32  | AT+SNR                             |
-| Checksum        | 9               | 0x04  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x32  | `AT+SNR`                           |
+| Checksum        | 9       | 0x04  |                                    |
 
 
 **Example:**
@@ -2625,21 +2625,21 @@ Description: Set the channel mask, close or open the channel
 
 This command configures the channel of the device by setting the hexadecimal channel mask.
 
-The following table explains how to build a frame to execute the "AT+MASK=?" AT command:
+The following table explains how to build a frame to execute the `AT+MASK=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x33  | AT+MASK                            |
-| Checksum        | 9               | 0x05  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x33  | `AT+MASK`                          |
+| Checksum        | 9       | 0x05  |                                    |
 
 
 **Example:**
@@ -2653,23 +2653,23 @@ Send **AT+MASK=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x33 0x00 0x08
 ```
 
-The following table explains how to build a frame to execute the "AT+PGSLOT=1" AT command:
+The following table explains how to build a frame to execute the `AT+PGSLOT=1` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x06  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x02  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x33  | AT+MASK                            |
-| `Payload`       | 9               | 0x00  | Example data:                      |
-|                 | 10              | 0x01  |                                    |
-| Checksum        | 11              | 0x08  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x06  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x02  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x33  | `AT+MASK`                          |
+| `Payload`       | 9       | 0x00  | Example data:                      |
+|                 | 10      | 0x01  |                                    |
+| Checksum        | 11      | 0x08  |                                    |
 
 
 **Example:**
@@ -2687,21 +2687,21 @@ Description: Single Channel Mode
 
 This command configures the channel of the device into single channel mode.
 
-The following table explains how to build a frame to execute the "AT+CHS=?" AT command:
+The following table explains how to build a frame to execute the `AT+CHS=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x35  | AT+CHS                             |
-| Checksum        | 9               | 0x05  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x35  | `AT+CHS`                           |
+| Checksum        | 9       | 0x05  |                                    |
 
 
 **Example:**
@@ -2715,26 +2715,26 @@ Send **AT+CHS=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x35 0x00 0x08
 ```
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+CHS=902700000" AT command: 
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+CHS=902700000` AT command: 
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x08  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x04  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x35  | AT+CHS                             |
-| `Payload`       |                 |       |                                    |
-|                 | 9               | 0x35  | Example data:                      |
-|                 | 10              | 0xCE  |                                    |
-|                 | 11              | 0x1B  |                                    |
-|                 | 12              | 0xE0  |                                    |
-| Checksum        | 13              | 0x17  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x08  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x04  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x35  | `AT+CHS`                           |
+| `Payload`       |         |       |                                    |
+|                 | 9       | 0x35  | Example data:                      |
+|                 | 10      | 0xCE  |                                    |
+|                 | 11      | 0x1B  |                                    |
+|                 | 12      | 0xE0  |                                    |
+| Checksum        | 13      | 0x17  |                                    |
 
 
 **Example:**
@@ -2753,21 +2753,21 @@ Description: Active Region
 
 This command get or set the device active region.
 
-The following table explains how to build a frame to execute the "AT+BAND=?" AT command:
+The following table explains how to build a frame to execute the `AT+BAND=?` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x36  | AT+BAND                            |
-| Checksum        | 9               | 0x05  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x36  | `AT+BAND`                          |
+| Checksum        | 9       | 0x05  |                                    |
 
 
 **Example:**
@@ -2781,23 +2781,23 @@ Send **AT+BAND=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x36 0x00 0x08
 ```
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+BAND=5" AT command: 
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+BAND=5` AT command: 
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x01  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x36  | AT+BAND                             |
-| `Payload`       |                 |       |                                    |
-|                 | 9               | 0x05  | Example data:                      |
-| Checksum        | 10              | 0x09  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x01  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x36  | `AT+BAND`                          |
+| `Payload`       |         |       |                                    |
+|                 | 9       | 0x05  | Example data:                      |
+| Checksum        | 10      | 0x09  |                                    |
 
 
 **Example:**
@@ -2820,21 +2820,21 @@ Description: LoRa® network work mode
 
 Switch to point-to-point mode, or LoRaWAN mode [0:Point-to-point, 1:LoRaWAN].
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+NWM=?" AT command: 
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+NWM=?` AT command: 
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x37  | AT+NWM                             |
-| Checksum        | 9               | 0x06  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x37  | `AT+NWM`                           |
+| Checksum        | 9       | 0x06  |                                    |
 
 
 **Example:**
@@ -2848,22 +2848,22 @@ Send **AT+NWM=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x37 0x00 0x09
 ```
 
-The following table explains how to build a frame to execute the "AT+NWM=0" AT command:
+The following table explains how to build a frame to execute the `AT+NWM=0` AT command:
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x01  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x37  | AT+NWM                             |
-| `Payload`       | 9               | 0x00  | Example data:                      |
-| Checksum        | 10              | 0x08  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x01  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x37  | `AT+NWM`                           |
+| `Payload`       | 9       | 0x00  | Example data:                      |
+| Checksum        | 10      | 0x08  |                                    |
 
 
 **Example:**
@@ -2880,21 +2880,21 @@ Description: P2P mode Frequency
 
 This command is used to get or set P2P frequency. 
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+PFREQ=?" AT command: 
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+PFREQ=?` AT command: 
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x38  | AT+PFREQ                           |
-| Checksum        | 9               | 0x04  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x38  | `AT+PFREQ`                         |
+| Checksum        | 9       | 0x04  |                                    |
 
 
 **Example:**
@@ -2908,25 +2908,25 @@ Send **AT+PFREQ=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x38 0x00 0x07
 ```
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+PFREQ=868000000" AT command: 
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+PFREQ=868000000` AT command: 
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x04  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x38  | AT+PFREQ                           |
-| `Payload`       | 9               | 0x33  |                                    |
-|                 | 10              | 0xBC  |                                    |
-|                 | 11              | 0xA1  |                                    |
-|                 | 12              | 0x00  |                                    |
-| Checksum        | 13              | 0x12  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x04  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x38  | `AT+PFREQ`                         |
+| `Payload`       | 9       | 0x33  |                                    |
+|                 | 10      | 0xBC  |                                    |
+|                 | 11      | 0xA1  |                                    |
+|                 | 12      | 0x00  |                                    |
+| Checksum        | 13      | 0x12  |                                    |
 
 
 **Example:**
@@ -2945,21 +2945,21 @@ Description: P2P mode Spreading Factor
 
 This command is used to get or set P2P spreading factor. 
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+PSF=?" AT command: 
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+PSF=?` AT command: 
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x39  | AT+PSF                             |
-| Checksum        | 9               | 0x05  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x39  | `AT+PSF`                           |
+| Checksum        | 9       | 0x05  |                                    |
 
 
 **Example:**
@@ -2973,22 +2973,22 @@ Send **AT+PSF=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x39 0x00 0x08
 ```
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+PSF=7" AT command:  
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+PSF=7` AT command:  
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x01  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x39  | AT+PSF                             |
-| `Payload`       | 9               | 0x07  |                                    |
-| Checksum        | 10              | 0x0A  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x01  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x39  | `AT+PSF`                           |
+| `Payload`       | 9       | 0x07  |                                    |
+| Checksum        | 10      | 0x0A  |                                    |
 
 
 **Example:**
@@ -3007,21 +3007,21 @@ Description: P2P mode Bandwidth
 
 This command is used to get or set P2P bandwidth. 
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+PBW=?" AT command:  
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+PBW=?` AT command:  
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x3A  | AT+PBW                             |
-| Checksum        | 9               | 0x05  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x3A  | `AT+PBW`                           |
+| Checksum        | 9       | 0x05  |                                    |
 
 
 **Example:**
@@ -3035,25 +3035,25 @@ Send **AT+PBW=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x3A 0x00 0x08
 ```
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+PBW=125" AT command:  
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+PBW=125` AT command:  
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x08  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x04  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x3A  | AT+PBW                             |
-| `Payload`       | 9               | 0x00  |                                    |
-|                 | 10              | 0x00  |                                    |
-|                 | 11              | 0x00  |                                    |
-|                 | 12              | 0x7D  |                                    |
-| Checksum        | 13              | 0x0D  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x08  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x04  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x3A  | `AT+PBW`                           |
+| `Payload`       | 9       | 0x00  |                                    |
+|                 | 10      | 0x00  |                                    |
+|                 | 11      | 0x00  |                                    |
+|                 | 12      | 0x7D  |                                    |
+| Checksum        | 13      | 0x0D  |                                    |
 
 
 **Example:**
@@ -3072,21 +3072,21 @@ Description: P2P mode Code Rate
 
 This command is used to get or set P2P code rate. 
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+PCR=?" AT command:   
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+PCR=?` AT command:   
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x3B  | AT+PCR                             |
-| Checksum        | 9               | 0x06  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x3B  | `AT+PCR`                           |
+| Checksum        | 9       | 0x06  |                                    |
 
 
 **Example:**
@@ -3100,22 +3100,22 @@ Send **AT+PCR=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x3B 0x00 0x09
 ```
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+PCR=1" AT command:   
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+PCR=1` AT command:   
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x01  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x3B  | AT+PCR                             |
-| `Payload`       | 9               | 0x01  |                                    |
-| Checksum        | 10              | 0x09  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x01  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x3B  | `AT+PCR`                           |
+| `Payload`       | 9       | 0x01  |                                    |
+| Checksum        | 10      | 0x09  |                                    |
 
 
 **Example:**
@@ -3134,21 +3134,21 @@ Description: P2P mode Preamble Length
 
 This command is used to get or set P2P preamble length. 
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+PPL=?" AT command:    
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+PPL=?` AT command:    
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x3C  | AT+PPL                             |
-| Checksum        | 9               | 0x05  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x3C  | `AT+PPL`                           |
+| Checksum        | 9       | 0x05  |                                    |
 
 
 **Example:**
@@ -3162,23 +3162,23 @@ Send **AT+PPL=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x3C 0x00 0x08
 ```
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+PPL=8" AT command:   
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+PPL=8` AT command:   
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x02  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x3C  | AT+PPL                             |
-| `Payload`       | 9               | 0x00  |                                    |
-|                 | 10              | 0x08  |                                    |
-| Checksum        | 11              | 0x08  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x02  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x3C  | `AT+PPL`                           |
+| `Payload`       | 9       | 0x00  |                                    |
+|                 | 10      | 0x08  |                                    |
+| Checksum        | 11      | 0x08  |                                    |
 
 
 **Example:**
@@ -3197,21 +3197,21 @@ Description: P2P mode TX Power
 
 This command is used to get or set P2P TX power. 
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+PTP=?" AT command:    
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+PTP=?` AT command:    
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x3D  | AT+PTP                             |
-| Checksum        | 9               | 0x06  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x3D  | `AT+PTP`                           |
+| Checksum        | 9       | 0x06  |                                    |
 
 
 **Example:**
@@ -3225,22 +3225,22 @@ Send **AT+PTP=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x3D 0x00 0x09
 ```
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+PTP=13" AT command:    
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+PTP=13` AT command:    
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x01  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x3D  | AT+PTP                             |
-| `Payload`       | 9               | 0x0D  |                                    |
-| Checksum        | 10              | 0x0B  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x01  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x3D  | `AT+PTP`                           |
+| `Payload`       | 9       | 0x0D  |                                    |
+| Checksum        | 10      | 0x0B  |                                    |
 
 
 **Example:**
@@ -3259,24 +3259,24 @@ Description: P2P Send Data
 
 This command is used to send P2P data. 
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+PSEND=123456" AT command:     
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+PSEND=123456` AT command:     
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x07  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x03  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Read                               |
-| `ATCMD ID`      | 8               | 0x3E  | AT+PSEND                           |
-|                 | 9               | 0x12  |                                    |
-|                 | 10              | 0x34  |                                    |
-|                 | 11              | 0x56  |                                    |
-| Checksum        | 12              | 0x12  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x07  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x03  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Read                               |
+| `ATCMD ID`      | 8       | 0x3E  | `AT+PSEND`                         |
+|                 | 9       | 0x12  |                                    |
+|                 | 10      | 0x34  |                                    |
+|                 | 11      | 0x56  |                                    |
+| Checksum        | 12      | 0x12  |                                    |
 
 
 **Example:**
@@ -3295,25 +3295,25 @@ Description: P2P Received Data
 
 This command is used to send P2P data. 
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+PRECV=1000" AT command:    
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+PRECV=1000` AT command:    
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x08  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x04  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x3F  | AT+PRECV                           |
-| `Payload`       | 9               | 0x00  |                                    |
-|                 | 10              | 0x00  |                                    |
-|                 | 11              | 0x03  |                                    |
-|                 | 12              | 0xE8  |                                    |.
-| Checksum        | 13              | 0x0F  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x08  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x04  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x3F  | `AT+PRECV`                         |
+| `Payload`       | 9       | 0x00  |                                    |
+|                 | 10      | 0x00  |                                    |
+|                 | 11      | 0x03  |                                    |
+|                 | 12      | 0xE8  |                                    |
+| Checksum        | 13      | 0x0F  |                                    |
 
 
 **Example:**
@@ -3332,21 +3332,21 @@ Description: P2P Encryption Enabled
 
 This command is used to get or set P2P encryption. 
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+ENCRY=?" AT command:     
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+ENCRY=?` AT command:     
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x40  | AT+ENCRY                           |
-| Checksum        | 9               | 0x02  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x40  | `AT+ENCRY`                         |
+| Checksum        | 9       | 0x02  |                                    |
 
 
 **Example:**
@@ -3360,22 +3360,22 @@ Send **AT+ENCRY=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x40 0x00 0x05
 ```
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+ENCRY=1" AT command:     
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+ENCRY=1` AT command:     
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x05  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x01  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x40  | AT+ENCRY                           |
-| `Payload`       | 9               | 0x01  |                                    |
-| Checksum        | 10              | 0x05  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x05  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x01  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x40  | `AT+ENCRY`                         |
+| `Payload`       | 9       | 0x01  |                                    |
+| Checksum        | 10      | 0x05  |                                    |
 
 
 **Example:**
@@ -3394,21 +3394,21 @@ Description: P2P Encryption KEY
 
 This command is used to get or set P2P encryption key. 
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+ENCKEY=?" AT command    
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+ENCKEY=?` AT command    
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x04  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x00  | AT command protocol payload length |
-| `Flag`          | 7               | 0x00  | Read                               |
-| `ATCMD ID`      | 8               | 0x41  | AT+ENCKEY                          |
-| Checksum        | 9               | 0x03  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x00  | Read                               |
+| `ATCMD ID`      | 8       | 0x41  | `AT+ENCKEY`                        |
+| Checksum        | 9       | 0x03  |                                    |
 
 
 **Example:**
@@ -3422,29 +3422,29 @@ Send **AT+ENCKEY=?**
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x41 0x00 0x06
 ```
 
-The following table explains how to build a frame to request a remote API mode device to execute the "AT+ENCKEY=0102030405060708" AT command:     
+The following table explains how to build a frame to request a remote API mode device to execute the `AT+ENCKEY=0102030405060708` AT command:     
 
-| Frame Field     | Offset          | Value | Description                        |
-| --------------- | --------------- | ----- | ---------------------------------- |
-| START DELIMITER | 0               | 0x7E  |                                    |
-| Length          | 1 (MSB)         | 0x00  | Binary mode payload length         |
-|                 | 2 (LSB)         | 0x0C  | Binary mode payload length         |
-| Frame Type      | 3               | 0x01  | AT command                         |
-| FLAG            | 4               | 0x00  | Request                            |
-| Payload         |                 |       |                                    |
-| `Length`        | 5               | 0x00  | AT command protocol payload length |
-|                 | 6               | 0x08  | AT command protocol payload length |
-| `Flag`          | 7               | 0x02  | Write                              |
-| `ATCMD ID`      | 8               | 0x41  | AT+ENCKEY                          |
-| `Payload`       | 9               | 0x01  |                                    |
-|                 | 10              | 0x02  |                                    |
-|                 | 11              | 0x03  |                                    |
-|                 | 12              | 0x04  |                                    |
-|                 | 13              | 0x05  |                                    |
-|                 | 14              | 0x06  |                                    |
-|                 | 15              | 0x07  |                                    |
-|                 | 16              | 0x08  |                                    |
-| Checksum        | 17              | 0x12  |                                    |
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x0C  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x08  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Write                              |
+| `ATCMD ID`      | 8       | 0x41  | `AT+ENCKEY`                        |
+| `Payload`       | 9       | 0x01  |                                    |
+|                 | 10      | 0x02  |                                    |
+|                 | 11      | 0x03  |                                    |
+|                 | 12      | 0x04  |                                    |
+|                 | 13      | 0x05  |                                    |
+|                 | 14      | 0x06  |                                    |
+|                 | 15      | 0x07  |                                    |
+|                 | 16      | 0x08  |                                    |
+| Checksum        | 17      | 0x12  |                                    |
 
 
 

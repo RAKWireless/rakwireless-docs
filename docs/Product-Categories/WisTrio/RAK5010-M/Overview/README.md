@@ -10,7 +10,7 @@ tags:
 ---
 
 # RAK5010-M WisTrio NB-IoT Tracker
-Thank you for choosing **RAK5010-M WisTrio NB-IoT Tracker** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK5010-M WisTrio NB-IoT Tracker** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

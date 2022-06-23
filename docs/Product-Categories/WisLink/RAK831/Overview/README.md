@@ -10,7 +10,7 @@ tags:
 ---
 
 # RAK831 WisLink LPWAN Concentrator
-Thank you for choosing **RAK831 WisLink LPWAN Concentrator** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK831 WisLink LPWAN Concentrator** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 * [Source Code Repository](https://github.com/RAKWireless/rak_common_for_gateway)
@@ -23,17 +23,17 @@ Thank you for choosing **RAK831 WisLink LPWAN Concentrator** in your awesome IoT
 
 ## Product Description
 
-The concentrator module **RAK831** is designed for a wide variety of applications like **Smart Metering**, **IoT** (Internet of Things) and **M2M** (Machine-to-machine) applications. It is a multi- channel high performance Transceiver module designed to receive several LoRa packets simultaneously using different spreading factors on multiple channels. The concentrator module RAK831 can be integrated into a gateway as a complete RF front-end of this gateway. It provides the possibility to enable robust communication between a gateway and a huge amount of LoRa end-nodes spread over a wide range of distance. The RAK831 needs a host system for proper operation.
+The concentrator module **RAK831** is designed for a wide variety of applications like **Smart Metering**, **IoT** (Internet of Things) and **M2M** (Machine-to-machine) applications. It is a multi-channel high performance Transceiver module designed to receive several LoRa packets simultaneously using different spreading factors on multiple channels. The concentrator module RAK831 can be integrated into a gateway as a complete RF front-end of this gateway. It provides the possibility to enable robust communication between a gateway and a huge amount of LoRa end-nodes spread over a wide range of distance. The RAK831 needs a host system for proper operation.
 
-This is an ideal modular product to help you realize the whole Lora® system development. With the USB-SPI converter module FT2232, you can quickly make the software development in your PC. Also, you can integrate the concentrator module to your production product to realize the gateway function. This is very economic way to address for a huge variety of applications like Smart Grid, Intelligent Farm, intelligent Farm and Other IoT applications.
+This is an ideal modular product to help you realize the whole Lora® system development. With the USB-SPI converter module FT2232, you can quickly make the software development in your PC. Also, you can integrate the concentrator module to your production product to realize the gateway function. This is a very economic way to address a huge variety of applications like Smart Grid, Intelligent Farm, intelligent Farm and Other IoT applications.
 
-The RAK831 needs a host system like Raspberry Pi or WisAP (OpenWRT based) or WisCam for proper operation . The host processor can be a PC or MCU that will be connected to RAK831 via USB or SPI.
+The RAK831 needs a host system like Raspberry Pi or WisAP (OpenWRT based) or WisCam for proper operation. The host processor can be a PC or MCU that will be connected to RAK831 via USB or SPI.
 
 RAK831 is able to receive up to 8 LoRa packets simultaneously sent with different spreading factors on different channels. This unique capability allows the implementation of innovative network architectures advantageous over other short range systems:
 
-End-point nodes (e.g. sensor nodes) can change frequency with each transmission in a random pattern. This provides vast improvement of the system robustness in terms of interference immunity and radio channel diversity.
+End-point nodes (e.g. sensor nodes) can change the frequency with each transmission in a random pattern. This provides a vast improvement of the system robustness in terms of interference immunity and radio channel diversity.
 
-Applications possible with the RAK831 include Smart Metering , Wireless Star Networks, Home, Building, Industrial automation, Remote Control, Wireless Sensors Network, M2M, IoT and Wireless Alarm and Security Systems.
+Applications possible with the RAK831 include Smart Metering, Wireless Star Networks, Home, Building, Industrial automation, Remote Control, Wireless Sensors Network, M2M, IoT and Wireless Alarm and Security Systems.
 
 <!-- <rk-btn
   src="../Quickstart/"
@@ -42,7 +42,7 @@ Applications possible with the RAK831 include Smart Metering , Wireless Star Net
 
 ## Product Features
 
-- **Compact size** 80 mm 50 mm x 5 mm
+- **Compact size** 80 mm x 50 mm x 5 mm
 - LoRaWAN modulation technology
 - **Frequency bands**: 433 MHz, 470 MHz, 868 MHz, 915 MHz
 - Orthogonal spreading factors

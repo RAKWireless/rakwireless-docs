@@ -26,12 +26,12 @@ rak_img: /assets/images/wistrio/rak7205-5205/quickstart/overview/RAK5205_home.pn
 
 The **RAK5205 WisTrio LPWAN Tracker board** is built on the Semtech SX1276 chip, with the STM32L1 MCU at its core. It is a feature-packed sensor board with LoRa connectivity and built-in GPS. It provides various interfaces for easy application development.
 
-This is the ideal LPWAN tracker board with a built-in sensor available in the market. It is best used as a quick prototyping module for Internet-of-Things and LoRaWAN Network integration. Its perfect use cases for IoT applications include asset tracking, smart vehicle management, and location-based services.
+This is the ideal LPWAN tracker board with a built-in sensor available on the market. It is best used as a quick prototyping module for Internet-of-Things and LoRaWAN Network integration. Its perfect use cases for IoT applications include asset tracking, smart vehicle management, and location-based services.
 
 ### Features
 
 - Compatible with **96Boards IoT Edition Specification**
-- With **SX1276 LoRa** long-range and **Ublox Max 7Q GPS** modems which allow to enable the GPS low power mode
+- With **SX1276 LoRa** long-range and **Ublox Max 7Q GPS** modems which allow to enabling the GPS low power mode
 - Integrated the ultra-low-power microcontroller **ARM Cortex-M3 STM32L1**
 - Built-in environmental **sensor BME680** (gas, pressure, humidity, temperature) and **3-axis MEMS sensor LIS3DH** (accelerometer)
 - **SMA/iPEX antenna** optional for LoRa and GPS
@@ -58,7 +58,7 @@ Figure 1 shows the top view and external interfaces of the RAK5205 LPWAN tracker
   caption="RAK5205 WisTrio LPWAN Tracker Interfaces"
 />
 
-The dimension and the bottom view of the board is shown below. Sensor ICs are also labeled for your reference.
+The dimension and the bottom view of the board are shown below. Sensor ICs are also labeled for your reference.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-dimension-and-sensors-available.svg"
@@ -69,7 +69,7 @@ The dimension and the bottom view of the board is shown below. Sensor ICs are al
 
 ### Hardware
 
-The hardware specification is categorized into eight parts. It discusses the interfacing, pinouts, and its corresponding functions and diagrams. It also covers the parameters and standard values in terms of electrical, environmental mechanical and the antennas specifications. 
+The hardware specification is categorized into eight parts. It discusses the interfacing, pinouts, and their corresponding functions and diagrams. It also covers the parameters and standard values in terms of electrical, environmental mechanical and the antennas specifications. 
 
 #### Interfaces
 
@@ -251,7 +251,7 @@ Here is the iPEX LoRa Antenna Interface:
 
 ##### GPS Antenna
 
-The GPS antenna and interfaces for RAK5205 tracker board is shown in Figure 9:
+The GPS antenna and interfaces for RAK5205 tracker board are shown in Figure 9:
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/datasheet/sma-female-interface-for-gps.jpg"
@@ -327,7 +327,7 @@ Environmental test performance specifications are listed below:
 
 ###### Working Mode
 
-The board supports to enable the GPS low-power mode. It has a 3-axis MEMS Sensor LIS3DH, which can detect the user's motion status. When the device is stationary, it will enter the low power sleep mode, reducing the overall power consumption and increase battery life. The power consumption is shown in the following table.
+The board supports to enabling the GPS low-power mode. It has a 3-axis MEMS Sensor LIS3DH, which can detect the user's motion status. When the device is stationary, it will enter the low power sleep mode, reducing the overall power consumption and increasing battery life. The power consumption is shown in the following table.
 
 | Mode        | Power Consumption                                   |
 | ----------- | --------------------------------------------------- |
@@ -393,7 +393,7 @@ The table below lists the operation and storage temperature requirements:
 
 ### Software
 
-Download the supported firmwares of RAK5205 in the table provided below. 
+Download the supported firmware of RAK5205 in the table provided below. 
 
 #### Firmware
 

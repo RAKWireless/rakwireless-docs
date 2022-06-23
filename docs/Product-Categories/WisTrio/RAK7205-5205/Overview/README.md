@@ -10,7 +10,7 @@ tags:
 ---
 
 # RAK7205/RAK5205 WisTrio LPWAN Tracker
-Thank you for choosing **RAK7205/RAK5205 WisTrio LPWAN Tracker** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK7205/RAK5205 WisTrio LPWAN Tracker** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -30,11 +30,11 @@ This is the ideal LPWAN tracker board with a built-in sensor available in the ma
 ## Product Features
 
 - Compatible with **96Boards IoT Edition Specification**
-- With **SX1276 LoRa** long-range and **Ublox Max 7Q GPS** modems which allow to enable the GPS low power mode
+- With **SX1276 LoRa** long-range and **Ublox Max 7Q GPS** modems which allow enabling the GPS low power mode
 - Integrated the ultra-low-power microcontroller **ARM Cortex-M3 STM32L1**
 - Built-in environmental **sensor BME680** (gas, pressure, humidity, temperature) and **3-axis MEMS sensor LIS3DH** (accelerometer)
 - **SMA/iPEX antenna** optional for LoRa and GPS
-- Supports latest LoRaWAN 1.0.2 protocol, activation by OTAA/ABP
+- Supports the latest LoRaWAN® 1.0.2 protocol, activation by OTAA/ABP
 - Supports programmable bit rate up to 300&nbsp;kbps
 - Supports rechargeable battery through micro USB or 5&nbsp;V solar charging ports
 - Supports sleep mode, the power consumption down to 14.5&nbsp;μA

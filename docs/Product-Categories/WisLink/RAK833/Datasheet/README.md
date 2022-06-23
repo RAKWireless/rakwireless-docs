@@ -21,15 +21,15 @@ rak_img: /assets/images/wislink-lora/rak833/datasheet/RAK833-Concentrator_home.p
 
 ### Description
 
-The **RAK833 WisLink LPWAN Concentrator** is a family of LoRa concentrator modules with mini PCIe form factor based on SX1301, which enables an easy integration into an existing routers and other network equipments with gateway capabilities.This can be used in any embedded platform offering a free mini-PCIe slot with USB and SPI connectivity.
+The **RAK833 WisLink LPWAN Concentrator** is a family of LoRa concentrator modules with a mini PCIe form factor based on SX1301, which enables easy integration into existing routers and other network equipment with gateway capabilities. This can be used in any embedded platform offering a free mini-PCIe slot with USB and SPI connectivity.
 
-RAK833 WisLink LPWAN Concentrator is a complete and cost efficient gateway solution offering up to 10 programmable parallel demodulation paths. It is targeted at smart metering fixed networks and Internet of Things applications with up to 500 nodes per square kilometer (km²) in moderately interfered environment. These modules have the industry standard PCI Express Mini Card form factor which enables easy integration into an application board.
+RAK833 WisLink LPWAN Concentrator is a complete and cost efficient gateway solution offering up to 10 programmable parallel demodulation paths. It is targeted at smart metering fixed networks and Internet of Things applications with up to 500 nodes per square kilometer (km²) in a moderately interfered environment. These modules have the industry standard PCI Express Mini Card form factor which enables easy integration into an application board.
 
 ### Product Features
 
 - Full LoRaWAN 1.0.2 stack support
 - Compact size in the form of a mPCIe 52pin form factor card
-- SX1301 base band processor emulates 49 x LoRa demodulators, 10 parallel demodulation paths. It supports 8 uplinks channel and 1 downlink channel.
+- SX1301 base band processor emulates 49 x LoRa demodulators, 10 parallel demodulation paths. It supports 8 uplinks channels and 1 downlink channel.
 - Max Tx Power of 20dBm
 - RX sensitivity of -136dBm
 - Compatible with 3.3V mPCIe type slots, common for 3G/LTE modules
@@ -40,7 +40,7 @@ RAK833 WisLink LPWAN Concentrator is a complete and cost efficient gateway solut
 
 ### Overview
 
-The overview shows the top and back view of the RAK833 board. It also presents the block diagram that shows how the board works. 
+The overview shows the top and back views of the RAK833 board. It also presents the block diagram that shows how the board works. 
 
 #### Board Overview
 
@@ -66,7 +66,7 @@ The hardware is categorized into seven parts. It discusses the interfacing, pino
 
 ##### GPS_PPS
 
-The RAK833 WisLink LPWAN Concentrator includes the GPS_PPS input for received packets time-stamped. It integrates **one (1) SX1301** chip, **two (2) SX1255/7**, and other chip for RF signal, which represents the core of the device, providing the related LoRa modem and processing functionalities. Additional signal conditioning circuitry is implemented for PCI Express Mini Card compliance, and one u.FL connectors are available for external antennas integration.
+The RAK833 WisLink LPWAN Concentrator includes the GPS_PPS input for received packets time-stamped. It integrates **one (1) SX1301** chip, **two (2) SX1255/7**, and another chip for RF signal, which represents the core of the device, providing the related LoRa modem and processing functionalities. Additional signal conditioning circuitry is implemented for PCI Express Mini Card compliance, and one u.FL connector is available for external antennas integration.
 
 ##### Module supply input
 
@@ -86,7 +86,7 @@ An SPI interface is provided on the PCIe*SCK, PCIe* MISO, PCIe*MOSI, PCIe* CSN p
 This feature is not available for RAK833-SPI version
 :::
 
-RAK833 WisLink LPWAN Concentrator can support the high speed USB to SPI by **FT2232H**, it includes a high-speed USB 2.0 compliant interface with maximum 480 Mb/s data rate, representing the interface for any communication with an external host application processor. The module itself acts as a USB device and can be connected to any USB host equipped with compatible drivers. For more information, please refer to the data sheet of [**FT2232H**](https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT2232H.pdf).
+RAK833 WisLink LPWAN Concentrator can support the high speed USB to SPI by **FT2232H**, it includes a high-speed USB 2.0 compliant interface with a maximum 480 Mb/s data rate, representing the interface for any communication with an external host application processor. The module itself acts as a USB device and can be connected to any USB host equipped with compatible drivers. For more information, please refer to the datasheet of [**FT2232H**](https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT2232H.pdf).
 
 ##### RESET
 
@@ -101,7 +101,7 @@ RAK833 WisLink LPWAN Concentrator includes the SPDT_SEL input for selecting SPI 
 
 #### Pin Definition
 
-The following table lists the pin numbers of RAK833 WisLink LPWAN Concentrator and its corresponding names and description. Refer to figure below for a pinout diagram.
+The following table lists the pin numbers of RAK833 WisLink LPWAN Concentrator and its corresponding names and description. Refer to the figure below for a pinout diagram.
 
 <rk-img
   src="/assets/images/wislink-lora/rak833/datasheet/rak833_pinout.svg"
@@ -206,7 +206,7 @@ The product is not protected against over-voltage or reversed voltages. If neces
 ##### Maximum Electrostatic Discharge (ESD)
 
 :::tip 📝 NOTE
-RAK833 WisLink LPWAN Concentrator are Electrostatic Sensitive Devices and require special precautions when handling.
+RAK833 WisLink LPWAN Concentrators are Electrostatic Sensitive Devices and require special precautions when handling.
 :::
 
 | Parameter                                | Min | Typical | Max  | Unit | Remarks                                      |
@@ -249,7 +249,7 @@ Input voltage at **3.3Vaux** must be above the normal operating range minimum li
 
 #### Mechanical Characteristics
 
-RAK833 WisLink LPWAN Concentrator is fully compliant to the **52-pin PCI Express Full-Mini Card Type F2** form factor, with top-side and bottom-side keep-out areas, with 50.95 millimeter nominal length, 30 millimeter nominal width and all the other dimensions as defined by the PCI Express Mini Card Electromechanical Specification except for the card thickness with a nominal value of 3.7 millimeter. The weight of the RAK833 WisLink LPWAN Concentrator is about 9.7 grams.
+RAK833 WisLink LPWAN Concentrator is fully compliant with **52-pin PCI Express Full-Mini Card Type F2** form factor, with top-side and bottom-side keep-out areas, with 50.95 millimeters nominal length, 30 millimeters nominal width and all the other dimensions as defined by the PCI Express Mini Card Electromechanical Specification except for the card thickness with a nominal value of 3.7 millimeters. The weight of the RAK833 WisLink LPWAN Concentrator is about 9.7 grams.
 
 <rk-img
   src="/assets/images/wislink-lora/rak833/datasheet/rak833-lpwan-gateway-concentrator-module-mechanical-characteristics.png"
@@ -259,7 +259,7 @@ RAK833 WisLink LPWAN Concentrator is fully compliant to the **52-pin PCI Express
 
 #### Schematic Diagrams
 
-RAK833 WisLink LPWAN Concentrator refer Semtech’s reference design of SX1301, and a 4 chancel SPDT to switch SPI of SX1301 to PCI edge connector or FT2232H which converts SPI to USB2.0 interface.
+RAK833 WisLink LPWAN Concentrator refers Semtech’s reference design of SX1301, and a 4 chancel SPDT to switch SPI of SX1301 to PCI edge connector or FT2232H which converts SPI to USB2.0 interface.
 
 <rk-img
   src="/assets/images/wislink-lora/rak833/datasheet/interface-schematic-diagram.jpg"

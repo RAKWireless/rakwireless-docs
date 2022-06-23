@@ -11,7 +11,7 @@ tags:
 
 # RAK2245 Pi HAT WisLink LPWAN Concentrator
 
-Thank you for choosing **RAK2245 Pi HAT WisLink LPWAN Concentrator** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK2245 Pi HAT WisLink LPWAN Concentrator** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -27,7 +27,7 @@ Thank you for choosing **RAK2245 Pi HAT WisLink LPWAN Concentrator** in your awe
 /> -->
 
 :::tip 📝 NOTE
-Purchasing the [RAK2013 WisLink Cellular Pi Hat](../../RAK2013) separately with the intent of adding a cellular feature in your existing RAK2245 Pi HAT is not possible. Hence, purchase the RAK7243C/7244C instead, as it is a specifically modified gateway that is composed of RAK2245 and RAK2013.
+Purchasing the [RAK2013 WisLink Cellular Pi Hat](../../RAK2013) separately with the intent of adding a cellular feature to your existing RAK2245 Pi HAT is not possible. Hence, purchase the RAK7243C/7244C instead, as it is a specifically modified gateway that is composed of RAK2245 and RAK2013.
 :::
 
 ## Product Description
@@ -35,9 +35,9 @@ Purchasing the [RAK2013 WisLink Cellular Pi Hat](../../RAK2013) separately with 
 **RAK2245 Pi HAT** is a module with Raspberry PI form factor. It can be plugged into
 Raspberry PI such as Raspberry Pi 3 Model B+ as a complete RF front end of gateway. It supports eight channels and is available for LoRaWAN global frequency bands. The board is the smallest gateway concentrator which integrates the **Ublox MAX-7Q GPS Module** and heat sink.
 
-The board can provide low data rate LoRa radio links in ultra-fast speed. It is powered by a **Semtech SX1301** transceiver concentrator that is capable of managing packets from many remotely dispersed end-points. Two Semtech SX125X are integrated for RF front end I/Q transceivers.
+The board can provide low data rate LoRa radio links at ultra-fast speed. It is powered by a **Semtech SX1301** transceiver concentrator that is capable of managing packets from many remotely dispersed end-points. Two Semtech SX125X are integrated for RF front end I/Q transceivers.
 
-The RAK2245 Pi HAT is a complete and cost efficient gateway solution that can help you develop a full LoRa system. This is an economical way to create different solutions like smart grid, intelligent farm and other IoT applications. It is also ideal for manufacturing small series that can expand into more applications.
+The RAK2245 Pi HAT is a complete and cost efficient gateway solution that can help you develop a full LoRa system. This is an economical way to create different solutions like smart grids, intelligent farms and other IoT applications. It is also ideal for manufacturing small series that can expand into more applications.
 
 <!-- <rk-btn
   src="../Quickstart/"

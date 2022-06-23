@@ -55,7 +55,7 @@ The board is of standard mPCIe size. The top of the board is populated by the **
 
 #### Block Diagram
 
-The RAK8213 card integrates **one BG96 module** which represent the core of the device. This provides the related NB-IoT modem and processing functionalities. Additional signal conditioning circuitry is implemented for PCI Express Mini Card compliance, and two UFL connectors are available for external antennas integration.
+The RAK8213 card integrates **one BG96 module** which represents the core of the device. This provides the related NB-IoT modem and processing functionalities. Additional signal conditioning circuitry is implemented for PCI Express Mini Card compliance, and two UFL connectors are available for external antennas integration.
 
 <rk-img
   src="/assets/images/wislink-lte/rak8213/datasheet/fiw7l6fsapdalh4oizrn.png"
@@ -65,7 +65,7 @@ The RAK8213 card integrates **one BG96 module** which represent the core of the 
 
 ### Hardware
 
-The hardware is categorized into seven parts. It discusses the pinouts and its corresponding functions and diagrams. It also covers the parameters and standard values of the board. 
+The hardware is categorized into seven parts. It discusses the pinouts and their corresponding functions and diagrams. It also covers the parameters and standard values of the board. 
 
 #### Pin Definition
 
@@ -173,9 +173,9 @@ The following table describes the detailed features of RAK8213 module:
 ::: tip 📝 NOTE
 \*\* means under development.
 
-_(1)_ Within operation temperature range, the module is 3GPP compliant.
+_(1)_ Within the operation temperature range, the module is 3GPP compliant.
 
-_(2)_ Within extended temperature range, the module remains the ability to establish and maintain a voice, SMS, data transmission, emergency call, etc. There is no unrecoverable malfunction. There are also no effects on radio spectrum and no harm to radio network. Only one or more parameters like Pout might reduce in their value and exceed the specified tolerances. When the temperature returns to the normal operating temperature levels, the module will meet 3GPP specifications again.
+_(2)_ Within an extended temperature range, the module remains the ability to establish and maintain a voice, SMS, data transmission, emergency call, etc. There is no unrecoverable malfunction. There are also no effects on radio spectrum and no harm to the radio network. Only one or more parameters like Pout might reduce in their value and exceed the specified tolerances. When the temperature returns to the normal operating temperature levels, the module will meet 3GPP specifications again.
 :::
 
 #### GNSS Receiver
@@ -415,7 +415,7 @@ The following table shows the electrostatic discharge characteristics of RAK8213
 
 #### Mechanical Characteristics
 
-The board only weighs 128.6 grams, its length is 51 mm while its width is 30 mm. The dimensions of the module fall completely within the **PCI Express Mini Card Electromechanical Specification**, with except of the card's thickness (nominal value of 4.9 mm).
+The board only weighs 128.6 grams, its length is 51 mm while its width is 30 mm. The dimensions of the module fall completely within the **PCI Express Mini Card Electromechanical Specification**, except for the card's thickness (nominal value of 4.9 mm).
 
 <rk-img
   src="/assets/images/wislink-lte/rak8213/datasheet/RAK8213_Dimensions.png"

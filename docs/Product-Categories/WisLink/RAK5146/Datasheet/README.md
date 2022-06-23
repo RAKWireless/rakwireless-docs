@@ -32,8 +32,8 @@ This module is an exceptional, complete, and cost-efficient gateway solution off
 ### Product Features
 
 - Designed based on **Mini PCI-e form factor**.
-- **SX1303 baseband processor** emulates 8x 8 channel LoRa packet detectors, 8x SF5-SF12 LoRa demodulators, 8x SF5-SF10 LoRa demodulators, one 125 /250 / 500 kHz high-speed LoRa demodulator, and one (G)FSK demodulator.
-- 3.3v **Mini PCI-e**, compatible with **3G/LTE card** of Mini PCI-e type. 
+- **SX1303 baseband processor** emulates 8 x 8 channels LoRa packet detectors, 8x SF5-SF12 LoRa demodulators, 8x SF5-SF10 LoRa demodulators, one 125 /250 / 500 kHz high-speed LoRa demodulator, and one (G)FSK demodulator.
+- 3.3V **Mini PCI-e**, compatible with **3G/LTE card** of Mini PCI-e type. 
 - Tx power up to 27dBm, Rx sensitivity down to -139dBm@SF12, BW 125 kHz. 
 - Supports **global license-free frequency band** (EU868, CN470, US915, AS923, AU915, KR920, IN865).
 - Supports optional **SPI/USB** interfaces. 
@@ -45,11 +45,11 @@ This module is an exceptional, complete, and cost-efficient gateway solution off
 
 ### Overview
 
-The overview shows the top and back view of the RAK5146 board. It also presents the block diagram that discusses how the board works.
+The overview shows the top and back views of the RAK5146 board. It also presents the block diagram that discusses how the board works.
 
 #### Board Overview
 
-RAK5146 is a compact LPWAN Gateway Module, making it suitable for integration in systems where mass and size constraints are essential. It has been designed with the PCI Express Mini Card form factor in mind, so it can easily become a part of products that comply with the standard, where they allow for cards with a thickness of at least 5.5 mm.
+RAK5146 is a compact LPWAN Gateway Module, making it suitable for integration in systems where mass and size constraints are essential. It has been designed with the PCI Express Mini Card form factor in mind, so it can easily become a part of products that comply with the standard, where they allow cards with a thickness of at least 5.5 mm.
 
 The board has two UFL interfaces for the LoRa and GNSS antennas and a standard 52 pin connector (mPCIe).
 
@@ -87,7 +87,7 @@ The hardware is categorized into seven parts. It discusses the interfacing, pino
   
 - **RESET** - RAK5146 SPI card includes the RESET active-high input signal to reset the radio operations as specified by the SX1303 Specification. RAK5146 USB card’s RESET is controlled by MCU.
   
-- **Antenna RF Interface** - The module have one RF interface over a standard UFL connector (Hirose U. FL-R-SMT) with a characteristic impedance of 50Ω. The RF port (J1) supports both Tx and Rx, providing the antenna interface.
+- **Antenna RF Interface** - The module has one RF interface over a standard UFL connector (Hirose U. FL-R-SMT) with a characteristic impedance of 50Ω. The RF port (J1) supports both Tx and Rx, providing the antenna interface.
 
 #### Pin Definition
 
@@ -216,7 +216,7 @@ The limiting values given below are following the Absolute Maximum Rating System
 | Tstg    | Storage temperature   |                                            | -40 °C | 85 °C     |
 
 :::warning ⚠️ WARNING
-The product is not protected against overvoltage or reversed voltages. If necessary, voltage spikes exceeding the power supply voltage specification, given in table above, must be limited to values within the specified boundaries by using appropriate protection devices.
+The product is not protected against overvoltage or reversed voltages. If necessary, voltage spikes exceeding the power supply voltage specification, given in the table above, must be limited to values within the specified boundaries by using appropriate protection devices.
 :::
 
 ##### Maximum ESD
@@ -279,7 +279,7 @@ RAK5146 concentrator module refers to Semtech's reference design for SX1303. The
 
 ## Models / Bundles            
 
-In general, the RAK5146's variation is the defined as **RAK5146 - XYZ**, where **X, Y, Z is the model variant**. Take a look at the tables below to know the variants and their specification.
+In general, the RAK5146's variation is defined as **RAK5146 - XYZ**, where **X, Y, Z is the model variant**. Take a look at the tables below to know the variants and their specification.
 
 | Symbol                  | Description                                               |
 | ----------------------- | --------------------------------------------------------- |

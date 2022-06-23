@@ -10,7 +10,7 @@ tags:
 ---
 
 # RAK8212 WisTrio iTracker Pro
-Thank you for choosing **RAK8212 WisTrio iTracker Pro** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK8212 WisTrio iTracker Pro** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -25,14 +25,14 @@ Thank you for choosing **RAK8212 WisTrio iTracker Pro** in your awesome IoT Proj
 
 ## Product Description
 
-The **RAK8212 WisTrio iTracker Pro** is versatile developer board aimed at aiding in quick prototypes using NB-IOT. The board includes
+The **RAK8212 WisTrio iTracker Pro** is a versatile developer board aimed at aiding in quick prototypes using NB-IoT. The board includes
 a vast array of connectivity options like **NB-IoT**, **Bluetooth 5.0** and **GPS** and sensors like an **accelerometer**, **light sensor** and **barometric sensor**. At the heart of the module is the venerable **Nordic NRF52832 BLE** processor. The NB-IoT connectivity
 is provided by the **Quectel BG96 module**. The RAK8212 module is **Arduino friendly** and can be programmed using the IDE.
 The board also provides **SWD interface** for programming the **NRF52832** core. The combination of BLE and NB-IoT
 provides flexible low power consumption development along with myriad of application option ranging from telemetry to
 live tracking and environment sensing.
 
-Applications can be made with the RAK8212 like Vehicle location/fleet transportation management, Safety monitoring of old/young children, Animal protection and animal husbandry management, Loss of assets / personnel positioning and Other remote, battery powered applications.
+Applications can be made with the RAK8212 like Vehicle location/fleet transportation management, Safety monitoring of minor children, Animal protection and animal husbandry management, Loss of assets / personnel positioning and Other remote, battery powered applications.
 
 <!-- <rk-btn
   src="/Product-Categories/WisTrio/RAK8212/Quickstart/"

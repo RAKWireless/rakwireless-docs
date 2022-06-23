@@ -11,7 +11,7 @@ tags:
 
 # RAK2245 Stamp WisLink LPWAN Concentrator
 
-Thank you for choosing **RAK2245 Stamp WisLink LPWAN Concentrator** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK2245 Stamp WisLink LPWAN Concentrator** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -28,9 +28,9 @@ Thank you for choosing **RAK2245 Stamp WisLink LPWAN Concentrator** in your awes
 
 The **RAK2245 Stamp WisLink LPWAN Concentrator** is a complete and cost efficient gateway solution base on Semtech SX1301 fully utilizing the LoRa System. This LPWAN Concentrator module supports eight channels and is available for all LoRaWAN international standard bands.
 
-The Stamp form factor feature enables easy integration into the system's main board, providing LoRaWAN functionality.This ultra compact module measures just 60mm x 30mm x 14.9mm, believed to be the world’s smallest gateway module which has a built-in GPS chip. It comes with a mounted heat-sink that improves the thermal heat dissipation and overall performance of the device.
+The Stamp form factor feature enables easy integration into the system's main board, providing LoRaWAN functionality. This ultra compact module measures just 60mm x 30mm x 14.9mm, believed to be the world’s smallest gateway module which has a built-in GPS chip. It comes with a mounted heat-sink that improves the thermal heat dissipation and overall performance of the device.
 
-Overall, this gateway module is the most economical way to create different solutions like smart grid, intelligent farm and other IoT applications. It is also ideal for manufacturing small series that can expand into more applications.
+Overall, this gateway module is the most economical way to create different solutions like smart grids, intelligent farms and other IoT applications. It is also ideal for manufacturing small series that can expand into more applications.
 
 <!-- <rk-btn
   src="../quickstart/"

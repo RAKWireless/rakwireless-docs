@@ -41,7 +41,7 @@ For an easy and quick way of having a fully functional gateway, a Precompiled Fi
 
 #### Burn the Latest Firmware
 
-1. Download the latest firmware of **[RAK2287](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Firmware/RAK2287_Latest_Firmware.zip)**, that is based on the Raspbian OS.
+1. Download the latest firmware of **[RAK2287](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Firmware/RAK2287_Latest_Firmware.zip)**, which is based on the Raspbian OS.
 2. Use an image writing tool to install the firmware on the SD Card. For this tutorial, you will be using **[Etcher](https://www.balena.io/etcher/),** an open-source utility used for burning image files.
 3. Insert your SD Card into the SD Card reader and plug it into your computer.
 4. Open the Etcher Software, and select the downloaded image file through the ( **Label - 1** ) button in the image below.
@@ -64,7 +64,7 @@ To create a functioning RAK2287 WisLink LPWAN Concentrator, you need to put seve
 
 #### Mount the Concentrator
 
-Insert your **RAK2287 mPCIe card** into the mPCIe slot on the **RAK2003 Pi HAT**. Make sure the card fits snugly into the connector, it should end up sticking out in a **45-degree angle**. Gently press it down and fasten with 2 screws. If you have positioned the card right, the screw holes on the RAK2287 will match the ones on the RAK2003. Use **Figure 1** as reference.
+Insert your **RAK2287 mPCIe card** into the mPCIe slot on the **RAK2003 Pi HAT**. Make sure the card fits snugly into the connector, it should end up sticking out at a **45-degree angle**. Gently press it down and fasten it with 2 screws. If you have positioned the card right, the screw holes on the RAK2287 will match the ones on the RAK2003. Use **Figure 1** as reference.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/2prerequisites/3.assembly-of-the-concentrator-and-hat.jpg"
@@ -82,7 +82,7 @@ It is not recommended to have the device powered with the antennas detached. Thi
 
 #### Mount the HAT
 
-Take the RAK2003, that now has the RAK2287 securely sitting on top and insert it over the Raspberry Pi. Both the Pi and the HAT have a **40-pin connector** that should fit together when pressed on top of each other.
+Take the RAK2003, which now has the RAK2287 securely sitting on top and insert it over the Raspberry Pi. Both the Pi and the HAT have a **40-pin connector** that should fit together when pressed on top of each other.
 
 #### SD Card
 
@@ -151,7 +151,7 @@ You can also connect your PC with the gateway through an Ethernet cable. By defa
   caption="TCP/IPv4 Properties"
 />
 
-Now , you should be able to access your gateway from your PC successfully using the IP Address `192.168.10.10`through SSH.
+Now, you should be able to access your gateway from your PC successfully using the IP Address `192.168.10.10`through SSH.
 
 ### Log into the Gateway via SSH
 
@@ -235,7 +235,7 @@ Then, you will see a page the same as figure 1.
 6. **Configure LAN** - used to configure the Ethernet adapter settings.
 
 :::tip 📝 NOTE
-A unique ID will be generated in for gateway. This is also called Gateway EUI squared in red in the figure above and is essential for registering the gateway with any LoRa Network Server (TTN, ChirpStack).
+A unique ID will be generated for the gateway. This is also called Gateway EUI squared in red in the figure above and is essential for registering the gateway with any LoRa Network Server (TTN, ChirpStack).
 :::
 
 There is also another way to get your "Gateway ID", just enter the command below in the command line:
@@ -500,7 +500,7 @@ The Things Network is about enabling low power devices to use long range gateway
   caption="The Things Network Console Page"
 />
 
-- All of your Registered Gateways will be displayed here in this page. Click "**register gateway**"
+- All of your Registered Gateways will be displayed here on this page. Click "**register gateway**"
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/5connecting-to-the-ttn/3.add-gateway.png"
@@ -533,7 +533,7 @@ Make sure to select the "**I'm using the legacy packet forwarder**" check box.
   caption="Gateway overview"
 />
 
-Click Register Gateway and wait for a couple of minutes . If the status of your gateway is "**Connected**" same as in **Figure 5** as reference, Congratulations! Your gateway is now connected to the The Things Network (TTN).
+Click Register Gateway and wait for a couple of minutes. If the status of your gateway is "**Connected**" same as in **Figure 5** as reference, Congratulations! Your gateway is now connected to the The Things Network (TTN).
 
 
 ### Connect the Gateway with Chirpstack

@@ -24,21 +24,21 @@ rak_img: /assets/images/wislink-lora/rak831/datasheet/RAK831_home.png
 
 ### Description
 
-The concentrator module **RAK831** is designed for a wide variety of applications like **Smart Metering**, **IoT** (Internet of Things) and **M2M** (Machine-to-machine) applications. It is a multi- channel high performance Transceiver module designed to receive several LoRa packets simultaneously using different spreading factors on multiple channels. The concentrator module RAK831 can be integrated into a gateway as a complete RF front-end of this gateway. It provides the possibility to enable robust communication between a gateway and a huge amount of LoRa end-nodes spread over a wide range of distance. The RAK831 needs a host system for proper operation.
+The concentrator module **RAK831** is designed for a wide variety of applications like **Smart Metering**, **IoT** (Internet of Things) and **M2M** (Machine-to-machine) applications. It is a multi-channel high performance Transceiver module designed to receive several LoRa packets simultaneously using different spreading factors on multiple channels. The concentrator module RAK831 can be integrated into a gateway as a complete RF front-end of this gateway. It provides the possibility to enable robust communication between a gateway and a huge amount of LoRa end-nodes spread over a wide range of distance. The RAK831 needs a host system for proper operation.
 
-This is an ideal modular product to help you realize the whole Lora® system development. With the USB-SPI converter module FT2232, you can quickly make the software development in your PC. Also, you can integrate the concentrator module to your production product to realize the gateway function. This is very economic way to address for a huge variety of applications like Smart Grid, Intelligent Farm, intelligent Farm and Other IoT applications.
+This is an ideal modular product to help you realize the whole Lora® system development. With the USB-SPI converter module FT2232, you can quickly make the software development in your PC. Also, you can integrate the concentrator module to your production product to realize the gateway function. This is a very economic way to address a huge variety of applications like Smart Grid, Intelligent Farm, intelligent Farm and Other IoT applications.
 
-The RAK831 needs a host system like Raspberry Pi or WisAP (OpenWRT based) or WisCam for proper operation . The host processor can be a PC or MCU that will be connected to RAK831 via USB or SPI.
+The RAK831 needs a host system like Raspberry Pi or WisAP (OpenWRT based) or WisCam for proper operation. The host processor can be a PC or MCU that will be connected to RAK831 via USB or SPI.
 
 RAK831 is able to receive up to 8 LoRa packets simultaneously sent with different spreading factors on different channels. This unique capability allows the implementation of innovative network architectures advantageous over other short range systems:
 
-End-point nodes (e.g. sensor nodes) can change frequency with each transmission in a random pattern. This provides vast improvement of the system robustness in terms of interference immunity and radio channel diversity.
+End-point nodes (e.g. sensor nodes) can change the frequency with each transmission in a random pattern. This provides a vast improvement of the system robustness in terms of interference immunity and radio channel diversity.
 
-Applications possible with the RAK831 include Smart Metering , Wireless Star Networks, Home, Building, Industrial automation, Remote Control, Wireless Sensors Network, M2M, IoT and Wireless Alarm and Security Systems.
+Applications possible with the RAK831 include Smart Metering, Wireless Star Networks, Home, Building, Industrial automation, Remote Control, Wireless Sensors Network, M2M, IoT and Wireless Alarm and Security Systems.
 
 ### Features
 
-- **Compact size** 80 mm 50 mm x 5 mm
+- **Compact size** 80 mm x 50 mm x 5 mm
 - LoRaWAN modulation technology
 - **Frequency bands**: 433 MHz, 470 MHz, 868 MHz, 915 MHz
 - Orthogonal spreading factors
@@ -77,7 +77,7 @@ The Concentrator Module currently available is in SPI version with its board sho
 
 ##### Module Dimensions
 
-The outer dimensions of the RAK831 are given by **80 mm x 50mm** with ± 0.2 mm tolerance. The RAK831 provide four drills for screwing the PCB to another unit each with a drill diameter of 3 mm.
+The outer dimensions of the RAK831 are given by **80 mm x 50mm** with ± 0.2 mm tolerance. The RAK831 provides four drills for screwing the PCB to another unit each with a drill diameter of 3 mm.
 
 <rk-img
   src="/assets/images/wislink-lora/rak831/datasheet/rak831-dimensions.png"
@@ -89,7 +89,7 @@ The outer dimensions of the RAK831 are given by **80 mm x 50mm** with ± 0.2 mm 
 
 ##### SX1301
 
-The RAK831 includes Semtech’s SX1301 which is a digital baseband chip which includes a massive digital signal processing engine specifically designed to offer breakthrough gateway capabilities in the ISM bands worldwide. SX1301 integrates the LoRa concentrator IP.
+The RAK831 includes Semtech’s SX1301 which is a digital baseband chip that includes a massive digital signal processing engine specifically designed to offer breakthrough gateway capabilities in the ISM bands worldwide. SX1301 integrates the LoRa concentrator IP.
 
 <rk-img
   src="/assets/images/wislink-lora/rak831/datasheet/block-diagram-sx1301.png"
@@ -113,19 +113,19 @@ It is highly recommended to fully re-use the latest HAL as provided by Semtech o
   caption="RAK831 WisLink LPWAN Concentrator Block Diagram"
 />
 
-The SX1301 digital baseband chip contains ten (10) programmable reception paths. These paths have differentiated levels of programmability and allow different use cases. It is important to understand the differences between these demodulation paths to make the best possible use from the system.
+The SX1301 digital baseband chip contains ten (10) programmable reception paths. These paths have differentiated levels of programmability and allow different use cases. It is important to understand the differences between these demodulation paths to make the best possible use of the system.
 
 ###### IF8 LORA® channel
 
-This channel is connected to one SX1257 using any arbitrary intermediate frequency within the allowed range. This channel is LoRa only. The demodulation bandwidth can be configured to be 125, 250 or 500 kHz. The data rate can be configured to any of the LoRa available data rates (SF7 to SF12) but, as opposed to IF0 to IF7, only the configured data rate will be demodulated. This channel is intended to serve as a high speed backhaul link to other gateways or infrastructure equipment. This demodulation path is compatible with the signal transmitted by the SX1272 and SX1276 chip family.
+This channel is connected to one SX1257 using any arbitrary intermediate frequency within the allowed range. This channel is LoRa only. The demodulation bandwidth can be configured to be 125, 250 or 500 kHz. The data rate can be configured to any of the LoRa available data rates (SF7 to SF12) but, as opposed to IF0 to IF7, only the configured data rate will be demodulated. This channel is intended to serve as a high speed backhaul link to other gateways or infrastructure equipment. This demodulation path is compatible with the signal transmitted by the SX1272 and SX1276 chip families.
 
 ###### IF9 (G) FSK channel
 
-The IF9 channel is connected to a GFSK demodulator. The channel bandwidth and bit rate can be adjusted. This demodulator offers a very high level of configurability, going well beyond the scope of this document. The demodulator characteristics are essentially the same than the GFSK demodulator implemented on the SX1232 and SX1272 Semtech chips. This demodulation path can demodulate any legacy FSK or GFSK formatted signal.
+The IF9 channel is connected to a GFSK demodulator. The channel bandwidth and bit rate can be adjusted. This demodulator offers a very high level of configurability, going well beyond the scope of this document. The demodulator characteristics are essentially the same as the GFSK demodulator implemented on the SX1232 and SX1272 Semtech chips. This demodulation path can demodulate any legacy FSK or GFSK formatted signal.
 
 ###### IF0 to IF7 LORA® channels
 
-Those channels are connected to one SX1257. The channel bandwidth is 125 kHz and cannot be modified or configured. Each channel IF frequency can be individually configured. On each of those channels any data rate can be received without prior configuration.
+Those channels are connected to one SX1257. The channel bandwidth is 125 kHz and cannot be modified or configured. Each channel IF frequency can be individually configured. On each of those channels, any data rate can be received without prior configuration.
 
 Several packets using different data rates (different spreading factors) may be demodulated simultaneously even on the same channel. Those channels are intended to be used for a massive asynchronous star network of 10000’s of sensor nodes. Each sensor may use a random channel (amongst IF0 to IF7) and a different data rate for any transmission.
 
@@ -157,7 +157,7 @@ The hardware is categorized into five parts. It discusses the interfacing, pinou
 
 The connector on the bottom side provides an SPI connection, which allows direct access to the Sx1301 SPI interface. This gives the target system the possibility to use existing SPI interfaces to communicate.
 
-After powering up RAK831 , it is required to **reset** SX1301 via **PIN 19.** If the HAL driver from Github is used this functionality is already implemented.
+After powering up RAK831, it is required to **reset** SX1301 via **PIN 19.** If the HAL driver from Github is used this functionality is already implemented.
 
 ###### GPS PPS
 
@@ -165,7 +165,7 @@ In case of available PPS signals in the target system, it is possible to connect
 
 ###### Digital IOs
 
-There are five GPIOs of the Sx1301 available, which gives the user some possibilities to get information about the system status. Theses pins are the same, as they are used for the LEDs on the RAK831.
+There are five GPIOs of the Sx1301 available, which gives the user some possibilities to get information about the system status. These pins are the same, as they are used for the LEDs on the RAK831.
 
 As default setting the LEDs
 
@@ -178,7 +178,7 @@ As default setting the LEDs
 
 #### Pin Definition
 
-The RAK831 provides headers at the bottom side, which have a pitch of **2.54 mm**. The description of the pins is given by the table below.
+The RAK831 provides headers at the bottom side, which have a pitch of **2.54 mm**. The description of the pins is given in the table below.
 
 <rk-img
   src="/assets/images/wislink-lora/rak831/datasheet/pin-assignment.png"
@@ -217,7 +217,7 @@ The RAK831 provides headers at the bottom side, which have a pitch of **2.54 mm*
 
 ##### Transmitter RF Characteristics
 
-The RAK831 has an excellent transmitter performance . It is highly recommended to use the optimized configuration for the power level configuration, which is part of the HAL. This results in a mean RF output power level and current consumption.
+The RAK831 has excellent transmitter performance. It is highly recommended to use the optimized configuration for the power level configuration, which is part of the HAL. This results in a mean RF output power level and current consumption.
 
 | PA Control | DAC Control | MIX Control | DIG Gain | Nominal RF Power Level \[dBm\] |
 | :--------: | :---------: | :---------: | :------: | :----------------------------: |
@@ -238,7 +238,7 @@ The RAK831 has an excellent transmitter performance . It is highly recommended t
 |     2      |      3      |     13      |    0     |               19               |
 |     2      |      3      |     14      |    0     |               20               |
 
-At **T=25℃, VDD=5V(Typ.)** if nothing else stated:
+At **T=25℃, VDD=5V(Typ.)** if nothing else is stated:
 
 :::tip 📝 NOTE
 The table below is for 868 MHz RAK831 WisLink LPWAN Concentrator. Other frequencies are also supported such as 433 MHz, 470 MHz, and 915 MHz Frequency Range.
@@ -269,11 +269,11 @@ The following table gives typically sensitivity level of the RAK831 :
 
 ##### RF Key Components
 
-This section introduces the key components in RAK831 and help the developer to utilize the system to realize own system level design.
+This section introduces the key components in RAK831 and helps the developer to utilize the system to realize a system level design.
 
 **1. LDO**
 
-The system power supply is provided by the external 5V DC power supply. SX1 301 and related clock crystal is powered by Dual output LDO transformer outputs 1 .8V and 3.3V in order to meet the normal working condition of SX1 301 . Other key components are powered by LDO transformer output 3.3V. To be aware of the system design of LDO's power supply enable is provided by the output GPIO of SX1 301 as default. The connection method of pin enable should be kept same as Semtech official code. At the same time, System design also need to keep flexibility and all LDO enable should be connect to pin DB24. For this case, user can run the official reference code in this board, and also can change all external enable clock as they need for achieve the flexibility debugging.
+The system power supply is provided by the external 5V DC power supply. SX1 301 and related clock crystal is powered by Dual output LDO transformer outputs 1 .8V and 3.3V in order to meet the normal working condition of SX1 301. Other key components are powered by LDO transformer output 3.3V. To be aware of the system design of LDO's power supply enable is provided by the output GPIO of SX1 301 as default. The connection method of pin enable should be kept the same as Semtech official code. At the same time, System design also needs to keep flexibility and all LDO enable should be connected to pin DB24. For this case, the user can run the official reference code in this board, and also can change all external enable clock as they need to achieve the flexibility debugging.
 
 **2. Power amplifier**
 
@@ -443,7 +443,7 @@ The Power amplifier chooses RFMD LF Power Amplifier and built in two steps gain.
 
 **3. RF switch**
 
-The RF switch choose RFSW1 01 2 which has advantage of high Isolation and low insertion loss. This chip handling the switch between Tx and Rx. The Control logic as below image.Specially need highlight that the pin of CTRL was controlled by SX1 301 ’s GPIO through output signal of LNA_EN_A, the Pin of EN was controlled by SX1 301 ’s GPIO through output signal of RADIO_EN_A. Simultaneously,it also can be controlled by external input signal through DB24.
+The RF switch chooses RFSW1 01 2 which has advantage of high Isolation and low insertion loss. This chip handles the switch between Tx and Rx. The Control logic as the image below. Especially need highlight that the pin of CTRL was controlled by SX1 301 ’s GPIO through the output signal of LNA_EN_A, the Pin of EN was controlled by SX1 301 ’s GPIO through the output signal of RADIO_EN_A. Simultaneously, it also can be controlled by an external input signal through DB24.
 
 | State    | VDD          | CTRL       | EN    | RF Path  |
 | -------- | ------------ | ---------- | ----- | -------- |
@@ -462,7 +462,7 @@ The RF switch choose RFSW1 01 2 which has advantage of high Isolation and low in
 Listed in this document are the different electrical characteristics of RAK831 WisLink LPWAN Concentrator.
 
 ::: warning ⚠️ WARNING
-Stress exceeding of one or more of the limiting values listed under **Absolute Maximum Ratings** may cause permanent damage to the radio module.
+Stress greater than one or more of the limiting values listed under **Absolute Maximum Ratings** may cause permanent damage to the radio module.
 :::
 
 ##### Absolute Maximum Ratings
@@ -474,7 +474,7 @@ Stress exceeding of one or more of the limiting values listed under **Absolute M
 | RF Input Power        |           |      |      | -15 | dBm  |
 
 ::: warning ⚠️ WARNING
-With RF output power level above +15 dBm, a minimum distance to a transmitter should be 1 meter to avoid too large input level.
+With RF output power level above +15 dBm, a minimum distance to a transmitter should be 1 meter to avoid a too large input level.
 :::
 
 ##### Global Electrical Characteristics

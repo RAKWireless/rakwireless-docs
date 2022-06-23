@@ -22,11 +22,11 @@ rak_img: /assets/images/wislink-lte/rak2013/datasheet/RAK2013_home.png
 
 ### Description
 
-The RAK2013 is a Raspberry Pi 3B+ edition cellular communications module that supports Low-Power Wide-Area (LPWA) connectivity to Internet-of-Things (IoT) devices. It has several configuration options including BG96 / EG91 / EG95 for 4G/LTE, NB-IoT, CAT-M, CAT1 or CAT 4 cellular protocol. This device integrates audio codec and audio amplifier supporting Voice-over-LTE (VoLTE) in high definition (HD) and uninterrupted voice calls. For easy use, there are earphone connector, MIC connector and speaker connector with audio amplifier.
+The RAK2013 is a Raspberry Pi 3B+ edition cellular communications module that supports Low-Power Wide-Area (LPWA) connectivity to Internet-of-Things (IoT) devices. It has several configuration options including BG96 / EG91 / EG95 for 4G/LTE, NB-IoT, CAT-M, CAT1 or CAT 4 cellular protocol. This device integrates an audio codec and audio amplifier supporting Voice-over-LTE (VoLTE) in high definition (HD) and uninterrupted voice calls. For easy use, there are an earphone connector, MIC connector and speaker connector with an audio amplifier.
 
 The module is supported with extendable sensor board connected that follows the mikroBus standard. MikroBus has many kinds of sensor board, such as temperature, humidity, 3 axis sensor and light sensor, allowing easy sensor data transmission. Because of its wide range of supported sensors, it is suitable for applications such as environmental monitoring and presence sensing, that require cellular connectivity.
 
-The RAK2013 is compatible with RAK2245 Pi HAT module via the onboard 40 pin header. It can function as a cellular backhaul to gateway, providing an even greater flexibility for IoT solutions that require cellular as an option for ensuring service reliability.
+The RAK2013 is compatible with RAK2245 Pi HAT module via the onboard 40 pin header. It can function as a cellular backhaul to a gateway, providing even greater flexibility for IoT solutions that require cellular as an option for ensuring service reliability.
 
 ### Features
 
@@ -51,7 +51,7 @@ The overview shows the top view of the RAK2013 WisLink Cellular Pi HAT and its c
 
 #### Module Overview
 
-Here is the top view and external interfaces of RAK2013 WisLink Cellular Pi HAT add-on board.
+Here are the top view and external interfaces of RAK2013 WisLink Cellular Pi HAT add-on board.
 
 <rk-img
   src="/assets/images/wislink-lte/rak2013/datasheet/components-of-rak2013-cellular.jpg"
@@ -85,11 +85,11 @@ The diagram below shows the internal architecture and external interfaces of RAK
 
 ### Hardware
 
-The hardware is categorized into eight parts. It discusses the interfacing, pinouts and its corresponding functions and diagrams. It also covers the parameters and standard values of the board in terms of electrical, mechanical and environmental. 
+The hardware is categorized into eight parts. It discusses the interfacing, pinouts and their corresponding functions and diagrams. It also covers the parameters and standard values of the board in terms of electrical, mechanical and environmental. 
 
 #### Interfaces
 
-It is built with **Quectel BG96/EG91/EG95 module** and compatible with **Raspberry Pi HAT**. It provides the following interfaces, headers, jumpers, button and connectors:
+It is built with **Quectel BG96/EG91/EG95 module** and is compatible with **Raspberry Pi HAT**. It provides the following interfaces, headers, jumpers, button and connectors:
 
 - 40-pins Raspberry connector
 - Micro USB
@@ -228,11 +228,11 @@ The table below shows the pin connections of the raspberry connector.
 
 ##### Frequency Bands and Data Rate
 
-RAK2013 supports different frequency bands based on module mounted on the board.
+RAK2013 supports different frequency bands based on the module mounted on the board.
 
 ###### BG96 Module
 
-**BG96** is a series of LTE Cat M1/Cat NB1/EGPRS module offering a maximum data rate of **300Kbps downlink** and **375Kbps uplink**.
+**BG96** is a series of LTE Cat M1/Cat NB1/EGPRS modules offering a maximum data rate of **300Kbps downlink** and **375Kbps uplink**.
 
 | Frequency     | BG96                                    |
 | ------------- | --------------------------------------- |
@@ -264,7 +264,7 @@ RAK2013 supports different frequency bands based on module mounted on the board.
 
 #### Antennas
 
-For module built-in BG96, there is one LTE antenna and one GPS antenna. For module built-in EG91/EG95, there are two LTE antennas, and no GPS antenna with the module.
+For module built-in BG96, there is one LTE antenna and one GPS antenna. For module built-in EG91/EG95, there are two LTE antennas and no GPS antenna with the module.
 
 ##### 1. LTE Antenna
 
@@ -278,7 +278,7 @@ For module built-in BG96, there is one LTE antenna and one GPS antenna. For modu
 
 ###### Antenna Dimension
 
-The LTE antenna for the RAK2013 covers working frequency band from **824 MHz to 2690 MHz**.
+The LTE antenna for the RAK2013 covers a working frequency band from **824 MHz to 2690 MHz**.
 
 <rk-img
   src="/assets/images/wislink-lte/rak2013/datasheet/lte-antenna-dimension.jpg"
@@ -407,7 +407,7 @@ The environmental test performance specifications are listed below:
 
 ##### Power Requirements
 
-The RAK2013 board operates at 5 volts. It can be powered by micro USB with 5V or powered by the Raspberry Pi board though 40-pin connector. Be cautious because the current of RAK2013 is about 300mA for average when working in CAT- M1 mode, it can be reach to 2A for peak when working in GSM900 mode. So you must carefully evaluate your power adapter’s rating.
+The RAK2013 board operates at 5 volts. It can be powered by micro USB with 5V or powered by the Raspberry Pi board through 40-pin connector. Be cautious because the current of RAK2013 is about 300mA on average when working in CAT- M1 mode, it can be reached to 2A for peak when working in GSM900 mode. So you must carefully evaluate your power adapter’s rating.
 
 |          Parameter          | Min | Typical |   Max   |
 | :-------------------------: | :-: | :-----: | :-----: |
@@ -419,14 +419,14 @@ The RAK2013 board operates at 5 volts. It can be powered by micro USB with 5V or
 
 ##### Module Dimensions
 
-Here is the detailed dimension of RAK2013 module. For full specification including electrical requirements, please visit this [**site**](https://github.com/raspberrypi/hats).
+Here is the detailed dimension of RAK2013 module. For full specifications including electrical requirements, please visit this [**site**](https://github.com/raspberrypi/hats).
 
 **Minimum HAT requirements**:
 
 - The board must be 65 x 56 mm or 65 x 56.5 mm.
 - The board must have 3 mm radius corners.
-- It must have 4 mounting holes in corners and should follow mounting hole specifications.
-- The board must have full 40W GPIO connector.
+- It must have 4 mounting holes in the corners and should follow mounting hole specifications.
+- The board must have a full 40W GPIO connector.
 
 **Mounting Holes specifications**:
 
@@ -435,7 +435,7 @@ Here is the detailed dimension of RAK2013 module. For full specification includi
 - Mounting holes should be drilled to 2.75 ± 0.5 mm.
 
 :::tip 📝 NOTE
-It is recommended to provide slots or cutouts for camera and display flexes so camera and display can still be used with the HAT attached.
+It is recommended to provide slots or cutouts for camera and display flexes so the camera and display can still be used with the HAT attached.
 :::
 
 <rk-img
@@ -474,7 +474,7 @@ Here is the BG96 and Raspberry Interface of RAK2013:
   caption="BG96 and Raspberry Interface"
 />
 
-Below is the audio codec and amplifier schematics of RAK2013:
+Below are the audio codec and amplifier schematics of RAK2013:
 
 <rk-img
   src="/assets/images/wislink-lte/rak2013/datasheet/audio-codec-and-amplifier.jpg"

@@ -11,7 +11,7 @@ tags:
 
 # RAK8213 WisLink Cellular mPCIe
 
-Thank you for choosing **RAK8213 WisLink Cellular mPCIe** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK8213 WisLink Cellular mPCIe** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

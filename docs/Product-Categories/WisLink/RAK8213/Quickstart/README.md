@@ -20,7 +20,7 @@ rak_img: /assets/images/wislink-lte/rak8213/quickstart/overview/RAK8213_home.png
 
 ### What Do You Need?
 
-The following two sections will provide a list of the components and tools you need in order to get started with the development board. Some of those are included in the package, others you need to provide yourself.
+The following two sections will provide a list of the components and tools you need to get started with the development board. Some of those are included in the package, others you need to provide yourself.
 
 #### Hardware Tools
 
@@ -112,7 +112,7 @@ Insert the SD card with the Firmware you flashed in the previous step into the S
 
 #### Boot
 
-Power the raspberry Pi via the **Micro USB port (Pi3) / USB type C port (Pi4)**. As this is going to be the first time to boot the OS, wait for a couple of minutes for everything to set up.
+Power the Raspberry Pi via the **Micro USB port (Pi3) / USB type C port (Pi4)**. As this is going to be the first time to boot the OS, wait for a couple of minutes for everything to set up.
 
 :::tip 📝 NOTE
 It is recommended to use at least a **2A power supply**.
@@ -140,7 +140,7 @@ By default, the firmware is configured to operate the Raspberry Pi in Wi-Fi AP m
 
 ##### 1. Windows OS
 
-SSH (Secure Shell) is used to login to a remote machine and to execute commands. There are several free and good SSH Clients available such as [**Putty**](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), [**BitVise SSH Client**](https://www.bitvise.com/ssh-client-download), and [**MobaXterm**](https://mobaxterm.mobatek.net/). You are free to choose one that fits your needs, however, in this guide, you will be using Putty.
+SSH (Secure Shell) is used to login to a remote machine and execute commands. There are several free and good SSH Clients available such as [**Putty**](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), [**BitVise SSH Client**](https://www.bitvise.com/ssh-client-download), and [**MobaXterm**](https://mobaxterm.mobatek.net/). You are free to choose one that fits your needs, however, in this guide, you will be using Putty.
 
 After installation, open Putty and connect with the OS through Wi-Fi AP mode. The IP address is 192.168.230.1.
 
@@ -197,13 +197,13 @@ Open the terminal of Mac OS. Enter **root mode** by typing the following command
 
 ### Connecting to a Network
 
-As you now have direct access to the Raspberry and its console you can proceed to configuring it to connect to a network, rather act as an AP for other devices.
+As you now have direct access to the Raspberry and its console you can proceed to configure it to connect to a network, rather than act as an AP for other devices.
 
 Instructions and examples are provided in the following sections.
 
 #### Connect through Wi-Fi (Raspberry Pi Built-in)
 
-Now that you are logged into the Raspberry, you can proceed to accessing the configuration tool that comes with the RAKwireless firmware. To do so, execute the following steps:
+Now that you are logged into Raspberry, you can proceed to access the configuration tool that comes with the RAKwireless firmware. To do so, execute the following steps:
 
 1. Enter the following command and select option **1 Configure WIFI.**
 
@@ -423,7 +423,7 @@ In this command, the message is to be sent. In this example, the message has a l
 {"k":"YOUR_DEVICE_KEY_HERE","d":"RAKwireless!","t":"_TOPIC1_"}
 ```
 
-- **" k"** - a string of 8 character is used as **Device Key** for authentication.
+- **" k"** - a string of 8 characters is used as **Device Key** for authentication.
 - **"d"** - a string of data that is the **Message Payload.**
 - **"t"** - a string or an array of strings with message tags to be used as **Message Topics**.
 
@@ -449,7 +449,7 @@ You will need a **Device Key** that ties to your Hologram SIM (**this tutorial a
   caption="Hologram Dashboard Device Key"
 />
 
-Now that you have your key, you can replace it for the **k** parameter. You can leave the message and the topic as per the example, which leads to the code line to follow if you use the copied key in figure 8.
+Now that you have your key, you can replace it with the **k** parameter. You can leave the message and the topic as per the example, which leads to the code line to follow if you use the copied key in figure 8.
 
 The end message for this example is as follows:
 
@@ -465,7 +465,7 @@ SEND OK
 
 #### Command Summary
 
-Listed below are the summary of commands with their corresponding outputs:
+Listed below is the summary of commands with their corresponding outputs:
 
 ```sh
 AT+CPIN? 

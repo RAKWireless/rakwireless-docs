@@ -11,7 +11,7 @@ rak_img: /assets/images/wistrio/rak8212/quickstart/overview/RAK8212_home.png
 
 # RAK8212 AT Command Manual
 
-The purpose of this section is to demonstrate on how to configure the RAK8212 WisTrio iTracker Pro thru the use of AT Commands via Bluetooth. The list below shows the AT Commands available for use:
+The purpose of this section is to demonstrate how to configure the RAK8212 WisTrio iTracker Pro thru the use of AT Commands via Bluetooth. The list below shows the AT Commands available for use:
 
 | **AT Command**                                                      | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
