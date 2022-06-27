@@ -43,7 +43,7 @@ The default firmware of RAK4630 is based on RUI3 (RAKwireless Unified Interface)
 - LoRa PA Boost mode with 22&nbsp;dBm output power
 - BLE5.0 (Tx power -20 to +4&nbsp;dBm in 4&nbsp;dB steps)
 - Serial Wire Debug (SWD) interface
-- Module size: 15 x 23&nbsp;mm
+- Module size: 15 x 23 x 3&nbsp;mm
 
 ## Specifications
 
@@ -75,7 +75,7 @@ The hardware specification is categorized into three parts. It covers the RF, el
 | 4           | P0.13/I2C_SDA                   |
 | 5           | P0.14/I2C_SCL                   |
 | 6           | P0.15/UART2_RX                  |
-| 7           | P0.16/UART2_TX (RUI3 BOOT Mode) |
+| 7           | P0.16/UART2_TX                  |
 | 8           | P0.17/UART2_DE                  |
 | 9           | P0.19/UART1_RX (AT Command)     |
 | 10          | P0.20/UART1_TX (AT Command)     |
@@ -132,7 +132,7 @@ Detailed information about the RAK4630 BLE and LoRa antenna can be found on the 
 | Canada        | US915            | RAK4630(H)  |
 | Australia     | AU915            | RAK4630(H)  |
 | Korea         | KR920            | RAK4630(H)  |
-| Asia          | AS923            | RAK4630(H)  |
+| Asia          | AS923-1/2/3/4    | RAK4630(H)  |
 | China         | CN470            | RAK4630(L)  |
 
 #### Electrical Characteristics
@@ -167,6 +167,21 @@ Detailed information about the RAK4630 BLE and LoRa antenna can be found on the 
 | VDD_NRF    | NRF52840 power supply              | 2.0      | 3.3      | 3.6      | V        |
 | VBUS       | VBUS USB supply voltage            | 4.35     | 5.0      | 5.5      | V        |
 | VBAT_NRF   | NRF52840 high voltage power supply | 2.5      |          | 5.5      | V        |
+
+##### Schematic Diagram
+
+<rk-img
+  src="/assets/images/wisduo/rak4630-module/datasheet/schematic-1.png"
+  width="95%"
+  caption="SX1262 Section"
+/>
+
+<rk-img
+  src="/assets/images/wisduo/rak4630-module/datasheet/schematic-2.png"
+  width="95%"
+  caption="nRF51840 and Module Pinout"
+/>
+
 
 #### Mechanical Characteristics
 

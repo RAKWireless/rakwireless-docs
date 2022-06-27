@@ -252,6 +252,12 @@ Once the Arduino IDE has been installed successfully, you can now configure the 
 
 9. Click the **Upload** icon to send the compiled firmware to your RAK3172.
 
+:::tip 📝 NOTE:
+RAK3172-E should automatically go to BOOT mode when the firmware is uploaded via Arduino IDE.
+
+If BOOT mode is not initiated, double click the reset button to force BOOT mode.
+:::
+
 <rk-img
   src="/assets/images/wisduo/rak3172-evaluation-board/quickstart/upload-code.png"
   width="90%"
@@ -1544,6 +1550,10 @@ If you want to upgrade to the latest version firmware of the board, you can foll
 
 You can recover your device by using the `.hex` file in the datasheet and uploading it using STM32CubeProgrammer. The guide on updating STM32 firmware using STM32CubeProgrammer can be found in the [Learn section](/Knowledge-Hub/Learn/STM32Cube-Programmer-Guide/).
 
+:::warning ⚠️ WARNING
+
+Uploading the **`.hex`** file via STM32CubeProgrammer will erase all configured data on the device.
+
 :::
 
 #### Firmware Upgrade Through USB
@@ -1562,6 +1572,11 @@ Refer to the table for the minimum hardware and software required to perform the
 
 Execute the following procedure to upgrade the firmware in Device Firmware Upgrade (DFU) mode through the USB interface.
 
+:::tip 📝 NOTE:
+RAK3172-E should automatically go to BOOT mode when the firmware is uploaded via RAK DFU Tool or WisToolBox.
+
+If BOOT mode is not initiated, double click the reset button to force BOOT mode.
+:::
 
 1.  Download the latest application firmware of the RAK3172.
 

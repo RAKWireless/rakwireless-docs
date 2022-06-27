@@ -182,7 +182,17 @@ The **bin file** contains the application code only and you need the RAK DFU Too
 
 The **hex file** contains both the bootloader and the application code. You need to use STM32CubeProgrammer to upload this.
 
+:::warning ⚠️ WARNING
+Uploading the **`.hex`** file via STM32CubeProgrammer will erase all configured data on the device.
+:::
+
 RAK3272S uses UART2 serial pins to upload the latest firmware.
+
+:::tip 📝 NOTE:
+RAK3272S should automatically go to BOOT mode when the firmware is uploaded via RAK DFU Tool or WisToolBox.
+
+If BOOT mode is not initiated, pull to ground the RESET pin twice (or double click the reset button if available) to force BOOT mode.
+:::
 
 #### Firmware / OS
 
@@ -195,5 +205,5 @@ RAK3272S uses UART2 serial pins to upload the latest firmware.
 :::warning ⚠️ WARNING
 There are RAK3172 devices loaded with old firmware versions which are not based on RUI3 (RAKwireless Unified Interface V3). These devices have v1.0.4 and below.
 
-If the host microcontroller code is based on this old firmware, we have a [RAK3172 AT Command migration guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/AT-Migration-Guide/) that explain in detail the few differences between the two AT commands set.
+If the host microcontroller code is based on this old firmware, refer to [RAK3172 AT Command migration guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/AT-Migration-Guide/), which explains in detail the few differences between the two AT commands set.
 :::

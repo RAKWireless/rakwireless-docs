@@ -12,7 +12,7 @@
 api.nfc.begin();
 ```
 
-| **Remarks**    | `void begin()` |
+| **Function**   | `void begin()` |
 | -------------- | -------------- |
 | **Parameters** |                |
 | **Return**     |                |
@@ -23,7 +23,7 @@ api.nfc.begin();
 api.nfc.write(code, payload);
 ```
 
-| **Remarks**    | `void write(uint8_t const * code, uint32_t code_size, uint8_t const * payload, uint32_t payload_size)` |
+| **Function**   | `void write(uint8_t const * code, uint32_t code_size, uint8_t const * payload, uint32_t payload_size)` |
 | -------------- | ------------------------------------------------------------------------------------------------------ |
 | **Parameters** | - code <br> - payload                                                                                  |
 | **Return**     |                                                                                                        |
@@ -34,7 +34,7 @@ api.nfc.write(code, payload);
 api.nfc.start();	
 ```
 
-| **Remarks**    | `void start()` |
+| **Function**   | `void start()` |
 | -------------- | -------------- |
 | **Parameters** |                |
 | **Return**     |                |

@@ -46,7 +46,7 @@ The hardware specification is categorized into six parts. It shows the chipset o
 #### Chipset
 | Vendor | Part number |
 | ------ | ----------- |
-| TI     | LIS3DH      |
+| STMicroelectronics     | LIS3DH      |
 
 #### Pin Definition
 

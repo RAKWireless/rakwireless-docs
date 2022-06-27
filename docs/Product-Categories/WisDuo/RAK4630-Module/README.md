@@ -4,4 +4,4 @@ rak_img: /assets/images/wisduo/rak4630-module/overview/RAK4630_Module_buy.png
 
 ---
 
-<rk-redirect to="/Product-Categories/WisDuo/RAK4630/Overview/" />
+<rk-redirect to="/Product-Categories/WisDuo/RAK4630-Module/Overview/" />

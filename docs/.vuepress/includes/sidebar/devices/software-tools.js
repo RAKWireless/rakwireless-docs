@@ -9,7 +9,7 @@ module.exports = {
         sidebarDepth: 4
       },
 	  {
-        title: 'WisToolBox Desktop',
+        title: 'WisToolBox for Desktop',
         path: '/Product-Categories/Software-Tools/WisToolBox/WisToolBoxDesktop/',
         collapsable: false,
         nested: true,
@@ -17,7 +17,7 @@ module.exports = {
         sidebarDepth: 4
       },
 	  {
-        title: 'WisToolBox Mobile',
+        title: 'WisToolBox',
         path: '/Product-Categories/Software-Tools/WisToolBox/WisToolBoxMobile/',
         collapsable: false,
         nested: true,

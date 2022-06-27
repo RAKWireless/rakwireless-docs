@@ -13,6 +13,10 @@ AT command is the initial setting in the default serial port used on RUI3 device
 
 `AT+ATM` command on a Serial Port will switch its serial operating mode to AT Command mode.
 
+During AT mode, the RUI3 powered device is compatible to WisToolBox.
+
+[WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview/) is a software tool that setups the LoRa parameters and configurations of the RUI3-powered device and also manages firmware updates.
+
 ### Devices that supports RUI3 AT Commands
 
 | RAK Modules                                                                                        |
@@ -70,6 +74,7 @@ More details on each command description and examples are given in the remainder
   - [General Commands](#general-commands)
     - [AT](#at)
     - [AT?](#at-1)
+    - [ATE](#ate)
     - [ATZ](#atz)
     - [ATR](#atr)
     - [AT+BOOT](#at-boot)
@@ -192,6 +197,26 @@ This command provides short help for all the supported commands.
 
 [Back](#content)
 
+### ATE
+
+Description: AT Command Echo
+
+This command is used to see the AT command input on the Serial Terminal.
+
+| Command | Input Parameter | Return Value                                | Return Code |
+| ------- | --------------- | ------------------------------------------- | ----------- |
+| `AT`    | -               | -                                           | OK          |
+| `AT?`   | -               | `ATE`: toggle the At Command echo available | OK          |
+
+**Example:**
+
+```
+ATE
+OK
+```
+
+[Back](#content)
+
 ### ATZ
 
 Description: MCU Reset
@@ -233,16 +258,26 @@ Description: Bootloader mode
    
 This command causes the device to enter Bootloader mode to upgrade firmware.
 
-| Command    | Input Parameter | Return Value                                                  | Return Code           |
-| ---------- | --------------- | ------------------------------------------------------------- | --------------------- |
-| `AT+BOOT?` | -               | `AT+BOOT`: enter bootloader mode for firmware upgrade         | OK                    |
-| `AT+BOOT`  | -               | No return value. The MCU is reset and enters bootloader mode. | OK <br> AT_BUSY_ERROR |
+| Command    | Input Parameter | Return Value                                          | Return Code |
+| ---------- | --------------- | ----------------------------------------------------- | ----------- |
+| `AT+BOOT?` | -               | `AT+BOOT`: enter bootloader mode for firmware upgrade | OK          |
+| `AT+BOOT`  | -               | `<BOOT MODE>`                                         |             |
+
+**Example:**
+
+```
+AT+BOOT
+<BOOT MODE>
+```
 
 :::tip 📝 NOTE:
+To escape BOOT MODE, execute `at+run` command. This is will end the BOOT MODE then restart the RUI3 device.
+
 `AT_BUSY_ERROR` is returned when the bootloader process is already running.
 :::
 
 [Back](#content)
+
 ### AT+SN
 
 Description: Serial number 
@@ -2969,28 +3004,28 @@ Description: LoRa® network work mode
   
 Switch to point-to-point mode, or LoRaWAN mode [0:Point-to-point, 1:LoRaWAN].
 
-| Command          | Input Parameter | Return Value                                                                           | Return Code            |
-| ---------------- | --------------- | -------------------------------------------------------------------------------------- | ---------------------- |
-| ` AT+NWM? `      | -               | `AT+NWM`: get or set the network working mode (0 = P2P_LORA, 1 = LoRaWAN, 2 = P2P_FSK) | OK                     |
-| `AT+NWM=?`       | -               | -                                                                                      | OK                     |
-| `AT+NWM=<Input>` | 0 or 1          | -                                                                                      | OK <br> AT_PARAM_ERROR |
+| Command          | Input Parameter | Return Value                                                                           | Return Code |
+| ---------------- | --------------- | -------------------------------------------------------------------------------------- | ----------- |
+| ` AT+NWM? `      | -               | `AT+NWM`: get or set the network working mode (0 = P2P_LORA, 1 = LoRaWAN, 2 = P2P_FSK) | OK          |
+| `AT+NWM=?`       | -               | 0,1,2                                                                                  | OK          |
+| `AT+NWM=<Input>` | 0 or 1          | *The RUI3 device will restart automatically to switch network work mode*               | -           |
 
 **Example:**
 ```
 AT+NWM=?
-AT+NWM=0
-OK
-
 AT+NWM=1
 OK
 
-AT+NWM=2
-AT_PARAM_ERROR
+AT+NWM=0
+RAKwireless RAK3172-E Example
+------------------------------------------------------
+Current Work Mode: LoRa P2P.
 ```
 
 :::tip 📝 NOTE
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
 - In this case, the default value is 1.
+- On RAK4630/RAK4631, the device will restart which requieres reconnection to detect it again via UART. 
 :::
 
 [Back](#content)
@@ -3217,15 +3252,44 @@ This command provides configuration the timeout period for P2P window reception.
 | `AT+PRECV? `       | -               | `AT+PRECV`: enter P2P RX mode for a period of time (ms) | OK          |
 | `AT+PRECV=<Input>` | `<time>`        | -                                                       | OK          |
 
-**Example:**
+When valid LoRa P2P packets are received, the format is RSSI, SNR and Payload.
+
+`+EVT:RXP2P:-30:13:1234`
+
+- RSSI = -30
+- SNR = 13
+- Payload = 1234
+
+**Examples:**
+
+1. P2P LoRa RX configurable duration value is from 1 to 65533 ms. In this example, the device will wait for LoRa P2P Packets for 30 seconds. It will automatically disable RX mode and switch to TX mode after the timeout. The callback after timeout is `+EVT:RXP2P RECEIVE TIMEOUT`.
 ```
 AT+PRECV=30000
 OK
 ```
+2. If the value is set to **65535**, the device will listen to P2P LoRa packets without timeout but it will stop listening once a P2P LoRa packet is received. The device is configured to RX mode until a LoRa P2P packet is received. After the reception, it will disable RX mode and automatically switch to TX mode.
+```
+AT+PRECV=65535
+OK
+```
+3. If the value is set to **65534**, the device will continuously listen to P2P LoRa packets without any timeout. **The device is in RX mode**. It will continuously be listed to LoRa P2P packets.
+```
+AT+PRECV=65534
+OK
+```
+:::tip 📝 NOTE
+If configured in continuous RX mode `AT+PRECV=65534`, any new values to `AT+PRECV` will not be accepted. RX mode must be disabled first via `AT+PRECV=0`.
+:::
+4. If the value is 0, the device will stop listening to P2P LoRa packets. It disables LoRa P2P RX mode and switch to TX mode.
+```
+AT+PRECV=0
+OK
+```
 
 :::tip 📝 NOTE
-- `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
-- `<Input>`: 1 decimal integer and the range of values is 0~65535. Setting the special value of 65535 means that the module will enter the receiving mode until it receives P2P data. When the device is in receive mode, input`<time>` = 0, exit the receiving mode.
+- LoRa P2P default setting is TX mode. This consumes lower power compared to RX mode where the radio is always listening for LoRa packets.
+- `AT_BUSY_ERROR` is returned if the device is configured to RX mode and still waiting for LoRa P2P packets.
+- `AT_PARAM_ERROR` is returned when the setting is wrong or malformed value.
 :::
 
 [Back](#content)

@@ -8,7 +8,7 @@ next: ../WisToolBoxMobile/
 ---
 
 
-# WisToolBox Desktop
+# WisToolBox for Desktop
 
 ## Installation
 
@@ -32,8 +32,8 @@ The WisToolBox Desktop application is currently available only on RUI3 devices. 
 | [RAK4630](/Product-Categories/WisDuo/RAK4630-Module/Overview/)                                         | 
 | [RAK4631-R](/Product-Categories/WisBlock/RAK4631-R/Overview/)                                          | 
 | [RAK3172](/Product-Categories/WisDuo/RAK3172-Module/Overview/)                                         | 
-| [RAK3272S](/Product-Categories/WisBlock/RAK3272S-Breakout-Board/Overview/)                             | 
-| [RAK3372 / RAK3172 Evaluation Board](/Product-Categories/WisBlock/RAK3172-Evaluation-Board/Overview/)  | 
+| [RAK3272S](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Overview/)                             | 
+| [RAK3372 / RAK3172 Evaluation Board](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Overview/)  | 
 | [RAK3172-SiP](/Product-Categories/WisDuo/RAK3172-SiP/Overview/)                                        | 
 | [RAK3272-SiP](/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/Overview/)                         | 
 

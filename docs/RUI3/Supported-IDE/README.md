@@ -439,9 +439,7 @@ Check the new **build** folder on Visual Studio Code Explorer.
 
 ## Visual Studio IDE
 
-### Programming RAK4631-R via Visual Studio IDE
-
-#### Visual Studio IDE Download and Installation
+### Visual Studio IDE Download and Installation
 
 If you don't have Visual Studio IDE yet, download the installer on [Visual Studio IDE Community 2019](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes), as shown in **Figure 42**.
 
@@ -612,7 +610,7 @@ Install RAKWireless RUI STM32 Boards.
 If the examples do not appear on the Micro Explorer window, then you need to restart Visual Studio IDE.
 :::
 
-#### Compile an Example with RAK4631-R
+### Compile an Example with RAK4631-R
 
 1. Launch Visual Studio IDE and select **Extensions** -> **VMicro**. Click on the Dropdown icon, then scroll and select **WisBlock Core RAK4631**.
 
@@ -715,7 +713,7 @@ AT+VER=?
   caption="UART console output"
 />
 
-#### Compile an Example with RAK3172
+### Compile an Example with RAK3172
 
 
 1. Launch Visual Studio IDE and select **Extensions** -> **VMicro**. Click on the Dropdown icon, then scroll and select **WisDuo RAK3172 Evaluation Board**.

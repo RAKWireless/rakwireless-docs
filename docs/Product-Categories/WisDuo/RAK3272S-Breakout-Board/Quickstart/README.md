@@ -245,6 +245,12 @@ Once the Arduino IDE has been installed successfully, you can now configure the 
 
 9. Click the **Upload** icon to send the compiled firmware to your RAK3272S.
 
+:::tip 📝 NOTE:
+RAK3272S should automatically go to BOOT mode when the firmware is uploaded via RAK DFU Tool or WisToolBox.
+
+If BOOT mode is not initiated, pull to ground the RESET pin twice (or double click the reset button if available) to force BOOT mode.
+:::
+
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/upload-code.png"
   width="90%"
@@ -1534,6 +1540,10 @@ If you want to upgrade to the latest version firmware of the module, you can fol
 
 You can recover your device by using the .hex file in the datasheet and upload it using STM32CubeProgrammer. The guide on updating STM32 firmware using STM32CubeProgrammer can be found [here](/Knowledge-Hub/Learn/STM32Cube-Programmer-Guide/).
 
+:::warning ⚠️ WARNING
+
+ Uploading the **`.hex`** file via STM32CubeProgrammer will erase all configured data on the device.
+
 :::
 
 #### Firmware Upgrade Through UART2
@@ -1552,6 +1562,11 @@ Refer to the table for the minimum hardware and software required to perform the
 
 Execute the following procedure to upgrade the firmware in Device Firmware Upgrade (DFU) mode through the USB interface.
 
+:::tip 📝 NOTE:
+RAK3272S should automatically go to BOOT mode when the firmware is uploaded via RAK DFU Tool or WisToolBox.
+
+If BOOT mode is not initiated, pull to ground the RESET pin twice (or double click the reset button if available) to force BOOT mode.
+:::
 
 1.  Download the latest application firmware of the RAK3272S.
 

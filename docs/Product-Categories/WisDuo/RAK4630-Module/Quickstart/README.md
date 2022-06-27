@@ -220,6 +220,12 @@ Once the Arduino IDE has been installed successfully, you can now configure the 
 
 9. Click the **Upload** icon to send the compiled firmware to your RAK4630.
 
+:::tip 📝 NOTE:
+RAK4630 should automatically go to BOOT mode when the firmware is uploaded via Arduino IDE.
+
+If BOOT mode is not initiated, pull to ground the RESET pin twice (or double click the reset button if available) to force BOOT mode.
+:::
+
 <rk-img
   src="/assets/images/wisduo/rak4630-module/quickstart/upload-code.png"
   width="90%"
@@ -415,6 +421,12 @@ RAK4630 supports the following regions:
 />
 
 4. The last step is to upload the code by clicking the **Upload** icon. Take note that you should select the right board and port, as shown in the previous example [LED Blinking](/Product-Categories/WisDuo/RAK4630-Module/Quickstart/#compile-an-example-with-arduino-led-breathing).
+
+:::tip 📝 NOTE:
+RAK4630 should automatically go to BOOT mode when the firmware is uploaded via Arduino IDE.
+
+If BOOT mode is not initiated, pull to ground the RESET pin twice (or double click the reset button if available) to force BOOT mode.
+:::
 
 <rk-img
   src="/assets/images/wisduo/rak4630-module/quickstart/lorawan_upload.png"

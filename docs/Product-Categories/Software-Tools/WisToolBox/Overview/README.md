@@ -8,6 +8,12 @@ prev: ../Software-Tools/
 
 # WisToolBox 
 
+:::warning ⚠️WARNING
+
+WisToolBox is still in **BETA stage**. For comments, support, ideas and inquiries on how to become part of the **Beta program**, you can send us a message at *inquiry@rakwireless.com*.
+
+:::
+
 ## Description
 
 WisToolBox is a complementary software tool for **RUI3-based RAK modules**. It is available as a computer application and as a mobile app. It also supports different operating systems - Windows, Linux, MacOS, Android and iOS. WisToolBox is primarily used for device configuration and management via intuitive user interface.
@@ -25,6 +31,7 @@ WisToolBox is a complementary software tool for **RUI3-based RAK modules**. It i
 
 ## User Guides
  
-- [WisToolBox Desktop](/Product-Categories/Software-Tools/WisToolBox/WisToolBoxDesktop/)
-- [WisToolBox Mobile](/Product-Categories/Software-Tools/WisToolBox/WisToolBoxMobile/)
+- [WisToolBox](/Product-Categories/Software-Tools/WisToolBox/WisToolBoxMobile/)
+- [WisToolBox for Desktop](/Product-Categories/Software-Tools/WisToolBox/WisToolBoxDesktop/)
+
 

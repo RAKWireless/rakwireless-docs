@@ -8,7 +8,7 @@ next: false
 ---
 
 
-# WisToolBox Mobile
+# WisToolBox
 
 ## Installation
 

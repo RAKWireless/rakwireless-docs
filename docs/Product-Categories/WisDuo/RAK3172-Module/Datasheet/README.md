@@ -231,7 +231,17 @@ The **bin file** contains the application code only and you need the RAK DFU Too
 
 The **hex file** contains both the bootloader and the application code. You need to use STM32CubeProgrammer to upload this.
 
+:::warning ⚠️ WARNING
+Uploading the **`.hex`** file via STM32CubeProgrammer will erase all configured data on the device.
+:::
+
 RAK3172 uses UART2 serial pins to upload the latest firmware. 
+
+:::tip 📝 NOTE:
+RAK3172 should automatically go to BOOT mode when the firmware is uploaded via RAK DFU Tool or WisToolBox.
+
+If BOOT mode is not initiated, pull to ground the RESET pin twice (or double click the reset button if available) to force BOOT mode.
+:::
 
 #### Firmware / OS
 

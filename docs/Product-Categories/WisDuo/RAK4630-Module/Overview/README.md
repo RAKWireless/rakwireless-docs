@@ -37,5 +37,5 @@ The default firmware of RAK4630 is based on RUI3 (RAKwireless Unified Interface)
 - LoRa PA Boost mode with 22&nbsp;dBm output power
 - BLE 5.0 (Tx power -20 to +4&nbsp;dBm in 4&nbsp;dB steps)
 - Serial Wire Debug (SWD) interface
-- Module size: 15 x 23&nbsp;mm
+- Module size: 15 x 23 x 3&nbsp;mm
 

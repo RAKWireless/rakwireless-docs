@@ -34,7 +34,9 @@ The RUI3 API is well explained with examples codes in this documentation.
 
 For you to compile and upload to the RAK module the RUI3 codes, you need to have an Arduino IDE or Visual Studio IDE in your PC or laptop. The guide on doing this is on the quick start guide of the specific module you are using which is mentioned in the [Hardware Compatibility](/RUI3/#hardware-compatibility) section of this document.
 
-The RAK LPWAN modules with RUI3 can also be interfaced to external host via [AT command mode](/RUI3/Serial-Operating-Modes/AT-Command-Manual/) and [Binary command mode](/RUI3/Serial-Operating-Modes/Binary-Command-Manual/). Custom serial interface can also be created by the user using [Custom Mode](/RUI3/Serial-Operating-Modes/Custom-Mode/).
+The RAK LPWAN modules with RUI3 can also be interfaced with an external host via [AT command mode](/RUI3/Serial-Operating-Modes/AT-Command-Manual/) and [Binary command mode](/RUI3/Serial-Operating-Modes/Binary-Command-Manual/). A custom serial interface can be created by the user using [Custom Mode](/RUI3/Serial-Operating-Modes/Custom-Mode/). When the serial interface is configured for Custom mode, the standard AT commands are disabled and will not be accepted anymore by the module unless switched again to AT mode.
+
+[WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview/) is also a compatible software tool to RUI3-powered devices. It can set up the LoRa parameters and configurations of the device and can also manage firmware updates.
 
 #### RUI3 Supported IDE
 

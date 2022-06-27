@@ -29,9 +29,9 @@ api.system.firmwareVersion.get()
 ```
 
 
-| **Syntax**  | `const string get()`           |
-| ----------- | ------------------------------ |
-| **Returns** | firmware version(Type: string) |
+| **Function** | `const string get()`           |
+| ------------ | ------------------------------ |
+| **Returns**  | firmware version(Type: string) |
 
 
 ::: details Click to View Example
@@ -60,9 +60,9 @@ api.system.cliVersion.get()
 ```
 
 
-| **Syntax**  | `const string get()`      |
-| ----------- | ------------------------- |
-| **Returns** | cli version(Type: string) |
+| **Function** | `const string get()`      |
+| ------------ | ------------------------- |
+| **Returns**  | cli version(Type: string) |
 
 
 ::: details Click to View Example
@@ -92,9 +92,9 @@ api.system.apiVersion.get()
 ```
 
 
-| **Syntax**  | `const string get()`      |
-| ----------- | ------------------------- |
-| **Returns** | api version(Type: string) |
+| **Function** | `const string get()`      |
+| ------------ | ------------------------- |
+| **Returns**  | api version(Type: string) |
 
 
 ::: details Click to View Example
@@ -123,9 +123,9 @@ api.system.modelId.get()
 ```
 
 
-| **Syntax**  | `const string get()`   |
-| ----------- | ---------------------- |
-| **Returns** | model ID(Type: string) |
+| **Function** | `const string get()`   |
+| ------------ | ---------------------- |
+| **Returns**  | model ID(Type: string) |
 
 
 ::: details Click to View Example
@@ -154,9 +154,9 @@ api.system.chipId.get()
 ```
 
 
-| **Syntax**  | `const string get()`  |
-| ----------- | --------------------- |
-| **Returns** | chip ID(Type: string) |
+| **Function** | `const string get()`  |
+| ------------ | --------------------- |
+| **Returns**  | chip ID(Type: string) |
 
 
 ::: details Click to View Example
@@ -186,9 +186,9 @@ api.system.bat.get()
 ```
 
 
-| **Syntax**  | `float get(void)` |
-| ----------- | ----------------- |
-| **Returns** | float (Unit: V)   |
+| **Function** | `float get(void)` |
+| ------------ | ----------------- |
+| **Returns**  | float (Unit: V)   |
 
 
 ::: details Click to View Example
@@ -217,7 +217,7 @@ api.system.flash.get(offset, buf, len)
 ```
 
 
-| **Syntax**     | `bool get(uint32_t offset, uint8_t * buf, uint32_t len)`                                                                                                                                                                                                                                                                                                                                    |
+| **Function**   | `bool get(uint32_t offset, uint8_t * buf, uint32_t len)`                                                                                                                                                                                                                                                                                                                                    |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **offset** the offset to the start of user flash partition (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) <br> **buf** the buffer for reading the data <br>**len**the length of data (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) |
 | **Returns**    | **TRUE**	for reading data successfully <br> **FALSE** for reading data failure                                                                                                                                                                                                                                                                                                              |
@@ -232,7 +232,7 @@ api.system.flash.set(offset, buf, len)
 ```
 
 
-| **Syntax**     | `bool set(uint32_t offset, uint8_t * buf, uint32_t len)`                                                                                                                                                                                                                                                                                                                                    |
+| **Function**   | `bool set(uint32_t offset, uint8_t * buf, uint32_t len)`                                                                                                                                                                                                                                                                                                                                    |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **offset** the offset to the start of user flash partition (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) <br> **buf** the buffer for writing the data <br>**len**the length of data (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) |
 | **Returns**    | **TRUE**	for writing data successfully <br> **FALSE** for writing data failure                                                                                                                                                                                                                                                                                                              |
@@ -249,7 +249,7 @@ Sleeps the cpu with default no timeout.
 api.system.sleep.cpu();
 ```
 
-| **Syntax**     | `void cpu(int ms_time = POWERSAVE_NO_TIMEOUT)`                          |
+| **Function**   | `void cpu(int ms_time = POWERSAVE_NO_TIMEOUT)`                          |
 | -------------- | ----------------------------------------------------------------------- |
 | **Parameters** | **ms_time(optional)** - Duration for cpu to sleep(default = no timeout) |
 | **Returns**    | void                                                                    |
@@ -277,7 +277,7 @@ Sleeps lora with default no timeout.
 api.system.sleep.lora();
 ```
 
-| **Syntax**     | `void lora(int ms_time = POWERSAVE_NO_TIMEOUT)`                         |
+| **Function**   | `void lora(int ms_time = POWERSAVE_NO_TIMEOUT)`                         |
 | -------------- | ----------------------------------------------------------------------- |
 | **Parameters** | **ms_time(optional)** - Duration for cpu to sleep(default = no timeout) |
 | **Returns**    | void                                                                    |
@@ -304,7 +304,7 @@ Sleeps all the component with default no timeout.
 api.system.sleep.all();
 ```
 
-| **Syntax**     | `void all(int ms_time = POWERSAVE_NO_TIMEOUT)`                                    |
+| **Function**   | `void all(int ms_time = POWERSAVE_NO_TIMEOUT)`                                    |
 | -------------- | --------------------------------------------------------------------------------- |
 | **Parameters** | **ms_time(optional)** - Duration for all component to sleep(default = no timeout) |
 | **Returns**    | void                                                                              |
@@ -331,7 +331,7 @@ Sets up the sleep function.
 api.system.sleep.setup(mode);
 ```
 
-| **Syntax**     | `void setup(RUI_WAKEUP_TRIGGER_MODE mode, uint32_t pin)`                                                                      |
+| **Function**   | `void setup(RUI_WAKEUP_TRIGGER_MODE mode, uint32_t pin)`                                                                      |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **mode** - This decide to use Rising or Falling trigger mode<br> **pin** - This is the pin to be chosen as the wake up source |
 | **Returns**    | void                                                                                                                          |
@@ -367,7 +367,7 @@ api.system.pword.set(passwd_Str)
 api.system.pword.set(passwd_Char, len)
 ```
 
-| **Syntax**     | `bool set(char * passwd, uint32_t len)`                                                                                                                                                   |
+| **Function**   | `bool set(char * passwd, uint32_t len)`                                                                                                                                                   |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **passwd_Str** - the password to lock the Default Serial(Type: string) <br> **passwd_Char** - the password to lock the Default Serial(Type: char *) <br> **len** - the length of password |
 | **Returns**    | **TRUE**	successfully set a password <br> **FALSE**	failed to set a password                                                                                                              |
@@ -409,9 +409,9 @@ If you never set a password successfully, the default password will be **0000000
 api.system.pword.lock()	
 ```
 
-| **Syntax**  | `void lock(void)` |
-| ----------- | ----------------- |
-| **Returns** | void              |
+| **Function** | `void lock(void)` |
+| ------------ | ----------------- |
+| **Returns**  | void              |
 
 
 :::details Click to View Example
@@ -445,9 +445,9 @@ This api allows user to unlock the default serial without password when its lock
 api.system.pword.unlock()	
 ```
 
-| **Syntax**  | `void unlock(void)` |
-| ----------- | ------------------- |
-| **Returns** | void                |
+| **Function** | `void unlock(void)` |
+| ------------ | ------------------- |
+| **Returns**  | void                |
 
 
 :::details Click to View Example
@@ -486,7 +486,7 @@ Sets the alias name for device.
 api.system.alias.set(buf, len)
 ```
 
-| **Syntax**     | `bool set(char* buf , uint32_t len)`                                                        |
+| **Function**   | `bool set(char* buf , uint32_t len)`                                                        |
 | -------------- | ------------------------------------------------------------------------------------------- |
 | **Parameters** | **buf** - the buffer to set alias name <br> **len** - the length of alias name(<= 16 bytes) |
 | **Returns**    | **TRUE**	for setting alias name successfully <br> **FALSE**	for setting alias name failure  |
@@ -515,7 +515,7 @@ Gets the alias name for device.
 api.system.alias.get(buf, len)
 ```
 
-| **Syntax**     | `bool get(char* buf , uint32_t len)`                                                        |
+| **Function**   | `bool get(char* buf , uint32_t len)`                                                        |
 | -------------- | ------------------------------------------------------------------------------------------- |
 | **Parameters** | **buf** - the buffer to get alias name <br> **len** - the length of alias name(<= 16 bytes) |
 | **Returns**    | **TRUE**	for getting alias name successfully <br> **FALSE**	for getting alias name failure  |
@@ -544,7 +544,7 @@ Provides developers to create AT CMD.
 api.system.atMode.add(cmd, usage, title, handle, perm)
 ```
 
-| **Syntax**     | `bool add(char *cmd, char *usage, char *title, PF_handle handle,unsigned int perm = RAK_ATCMD_PERM_WRITE                                                                                                  | RAK_ATCMD_PERM_READ);` |
+| **Function**   | `bool add(char *cmd, char *usage, char *title, PF_handle handle,unsigned int perm = RAK_ATCMD_PERM_WRITE                                                                                                  | RAK_ATCMD_PERM_READ);` |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **cmd** - the cmd to define cmd name <br> **usage** - the cmd usage <br> **title** - the cmd title <br> **handle** - the handler that this command will execute <br>**perm**	the cmd execution permission |
 
@@ -641,9 +641,9 @@ void loop()
 api.system.reboot()
 ```
 
-| **Syntax**  | `void reboot()` |
-| ----------- | --------------- |
-| **Returns** | void            |
+| **Function** | `void reboot()` |
+| ------------ | --------------- |
+| **Returns**  | void            |
 
 
 :::details Click to View Example
@@ -674,9 +674,9 @@ void loop()
 api.system.restoreDefault()
 ```
 
-| **Syntax**  | `void restoreDefault()` |
-| ----------- | ----------------------- |
-| **Returns** | void                    |
+| **Function** | `void restoreDefault()` |
+| ------------ | ----------------------- |
+| **Returns**  | void                    |
 
 
 :::details Click to View Example

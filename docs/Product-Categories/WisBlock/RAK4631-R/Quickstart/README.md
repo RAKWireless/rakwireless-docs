@@ -342,6 +342,12 @@ Once Arduino IDE has been installed successfully, and you've understood the main
 
 7. Click the Upload icon to upload the example code.
 
+:::tip 📝 NOTE:
+RAK4631-R should automatically go to BOOT Mode when firmware is being uploaded via Arduino IDE.
+
+If BOOT Mode is not initiated, pull to ground the RESET pin twice (or double click reset button if available) to force BOOT Mode.
+:::
+
 <rk-img
   src="/assets/images/wisblock/rak4631-r/quickstart/upload-code.png"
   width="90%"
@@ -567,6 +573,12 @@ You can also install RAKwireless RUI nRF Boards using the [RAK4631-R Board Suppo
 />
 
 7. Click on the **Build and Upload** icon to flash the project on RAK4631-R.
+
+:::tip 📝 NOTE:
+RAK4631-R should automatically go to BOOT mode when the firmware is uploaded via Arduino IDE.
+		
+If BOOT mode is not initiated, pull to ground the RESET pin twice (or double click the reset button if available) to force BOOT mode.
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak4631-r/quickstart/vs-build-upload.png"

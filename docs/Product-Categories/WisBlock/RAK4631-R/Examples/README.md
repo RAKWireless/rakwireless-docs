@@ -241,6 +241,12 @@ After configuring the important LoRaWAN parameters in code, you need to ensure t
 
 The last step is to upload the code by clicking the **Upload** icon. Then you must see **Done uploading** if everything is successful.
 
+:::tip 📝 NOTE:
+RAK4631-R should automatically go to BOOT mode when the firmware is uploaded via Arduino IDE.
+
+If BOOT mode is not initiated, pull to ground the RESET pin twice (or double click the reset button if available) to force BOOT mode.
+:::
+
 <rk-img
   src="/assets/images/wisblock/rak4631-r/examples/5_successful_upload.png"
   width="80%"
