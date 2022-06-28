@@ -1,7 +1,7 @@
 ---
 rak_img: /assets/rakwireless/rak-blue-dark.png
-rak_desc: This document describes in detail the functionality of the WisGateOS 2. The interface builds on top of OpenWRT and all gateway products of the RAK72xx line share it. It also functions as a reference for several products with similar functionality.
-rak_grp: software-apis-and-libraries
+rak_desc: WisGateOS 2 features an extension functionality, which provides additional features and functions that can be added or removed, based on the user's needs. Later this year RAKwireless will provide the option for our users to build their own extensions. 
+rak_grp: [software-apis-and-libraries, wisgateos]
 prev: ../Software-APIs-and-Libraries/
 next:  false
 tags:

@@ -16,7 +16,7 @@ certifications:
   - [IMDA, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_IMDA_Certification.zip]
   - [Ukraine, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_Ukraine_Certification.pdf]
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_RCM_Certification.pdf]
-
+  - [Anatel, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_ANATEL_Certification.pdf]
 ---
 
 # RAK7248 WisGate Developer D4H Gateway Datasheet

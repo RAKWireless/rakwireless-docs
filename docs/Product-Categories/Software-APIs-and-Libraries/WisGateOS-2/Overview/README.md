@@ -1,7 +1,7 @@
 ---
 rak_img: /assets/rakwireless/rak-blue-dark.png
 rak_desc: This document describes in detail the functionality of the WisGateOS 2. The interface builds on top of OpenWRT and all gateway products of the RAK72xx line share it. It also functions as a reference for several products with similar functionality.
-rak_grp: software-apis-and-libraries
+rak_grp: [software-apis-and-libraries, wisgateos]
 prev: ../Software-APIs-and-Libraries/
 next: ../Basics-Station-to-TTNv3/
 tags:
