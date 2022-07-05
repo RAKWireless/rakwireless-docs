@@ -11,7 +11,7 @@ tags:
 ---
 
 # RAK2247 Pi HAT 
-Thank you for choosing **RAK2247 Pi HAT** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK2247 Pi HAT** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 * [RAK2247 Pi HAT 3D Model](https://downloads.rakwireless.com/3D_File/WisHat/PWB-RAK2247_PI_HAT.stp)
@@ -31,7 +31,7 @@ Moreover, there is a **GPS** on the HAT that enhances your RAK2247 with localiza
 
 - Pi HAT form factor
 - mPCIe slot
-- GPS Module (MAX-7Q) module integrated in the HAT
+- GPS Module (MAX-7Q) module integrated into the HAT
 
 ## Package Contents
 

@@ -24,7 +24,7 @@ Moreover, there is a **GPS** on the HAT that enhances your RAK2247 with localiza
 
 - Pi HAT form factor
 - mPCIe slot
-- GPS Module (MAX-7Q) module integrated in the HAT
+- GPS Module (MAX-7Q) module integrated into the HAT
 
 ### Package Contents
 
@@ -37,7 +37,7 @@ Moreover, there is a **GPS** on the HAT that enhances your RAK2247 with localiza
 
 #### Block Diagram
 
-The RAK2247 Pi HAT maps the RAK2247 pins from the 52-pin mPCIe connector to the 40-pin Raspberry Pi connector. Refer to the block diagram in figure 1 below and pin mapping table in the following section – Pin Definition.
+The RAK2247 Pi HAT maps the RAK2247 pins from the 52-pin mPCIe connector to the 40-pin Raspberry Pi connector. Refer to the block diagram in figure 1 below and the pin mapping table in the following section – Pin Definition.
 
 <rk-img
   src="/assets/images/wishat/rak2247-pi-hat/datasheet/block-diagram.svg"

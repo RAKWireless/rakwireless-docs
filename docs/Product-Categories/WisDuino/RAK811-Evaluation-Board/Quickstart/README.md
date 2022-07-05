@@ -80,7 +80,7 @@ Before powering the RAK811 Evaluation Board, install the LoRa antenna first. Not
 />
 
 ::: tip 📝 NOTE
-If this is your first time connecting your RAK811 Evaluation Board to the computer, it should automatically download the CH340 driver for them to communicate properly. Make sure to have internet access if you want such automatic installation to be successful. If such process fails, re-plug your Micro-USB cord and proceed to the next step.
+If this is your first time connecting your RAK811 Evaluation Board to the computer, it should automatically download the CH340 driver for them to communicate properly. Make sure to have internet access if you want such automatic installation to be successful. If such a process fails, re-plug your Micro-USB cord and proceed to the next step.
 :::
 
 2. Any serial communication tool can be used; but, it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
@@ -121,7 +121,7 @@ This section will show how to connect the RAK811 board to The Things Stack (TTN 
   caption="The Things Stack diagram"
 />
 
-As shown in **Figure 4**, The Things Stack is an open-source LoRaWAN Network Server suitable for global, geo-distributed public and private deployments as well as for small, local networks. The architecture follows the LoRaWAN Network Reference Model for standards compliancy and interoperability. This project is actively maintained by [The Things Industries](https://www.thethingsindustries.com/).
+As shown in **Figure 4**, The Things Stack is an open-source LoRaWAN Network Server suitable for global, geo-distributed public and private deployments as well as for small, local networks. The architecture follows the LoRaWAN Network Reference Model for standards compliance and interoperability. This project is actively maintained by [The Things Industries](https://www.thethingsindustries.com/).
 
 LoRaWAN is a protocol for low-power wide-area networks. It allows for large-scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long-range wireless connections.
 
@@ -130,7 +130,7 @@ The RAK811 board can be part of this ecosystem as a device, and the objective of
 
 #### Registration to TTN and Creating LoRaWAN Applications
 
-1. The first step is to go to [The Things Network platform](https://console.cloud.thethings.network/) and select a cluster, as shown in **Figure 5**. The Things Industries adds more clusters from time to time so select the one closes to your location. In this guide, Europe 1 is selected.
+1. The first step is to go to [The Things Network platform](https://console.cloud.thethings.network/) and select a cluster, as shown in **Figure 5**. The Things Industries adds more clusters from time to time so select the one close to your location. In this guide, Europe 1 is selected.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/t_image_1.png"
@@ -188,7 +188,7 @@ You can use the same login credentials on the TTN V2 if you have one. If you hav
   caption="Details of the TTN application"
 />
 
-If you have no error on the previous step, you should now be on the application console page. The next step is to add end-devices to your The Things Stack application. LoRaWAN specifications enforce that each end device has to be personalized and activated. There are two options in registering devices depending on the activation mode selected. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP).
+If you have no error on the previous step, you should now be on the application console page. The next step is to add end-devices to your The Things Stack application. LoRaWAN specifications enforce that each end device has to be personalized and activated. There are two options for registering devices depending on the activation mode selected. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP).
 
 :::tip 📝 NOTE:
 
@@ -222,7 +222,7 @@ RAKwireless has [LoRaWAN gateways](https://store.rakwireless.com/collections/wis
   caption="Device activation configuration"
 />
 
-3. Then you need to put a unique **End device ID** and EUIs (**DevEUI** and **AppEUI**), as shown in **Figure 15**. Check if your board has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI. The **AppEUI** cannot be all zero as well for the RAK811 Evaluation Board, else the device will have errors when it connects to the network server.
+3. Then you need to put a unique **End device ID** and EUIs (**DevEUI** and **AppEUI**), as shown in **Figure 15**. Check if your board has a DevEUI on sticker or QR that you can scan then use this as the device’s unique DevEUI. The **AppEUI** cannot be all zero as well for the RAK811 Evaluation Board, else the device will have errors when it connects to the network server.
 
 4. Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
 
@@ -230,7 +230,7 @@ RAKwireless has [LoRaWAN gateways](https://store.rakwireless.com/collections/wis
 
 :::tip 📝 NOTE:
 
-It is advisable to use a meaningful End device ID, End device name, and End device description that will match your device purpose. The End device ID `rak-device` is for illustration purposes only.
+It is advisable to use a meaningful End device ID, End device name, and End device description that will match your device's purpose. The End device ID `rak-device` is for illustration purposes only.
 
 :::
 
@@ -421,7 +421,7 @@ You can see the data sent by the RAK811 board on The Things Stack platform, as s
   caption="Manually register device to The Things Stack"
 />
 
-3. At this step, you need to put a unique **End device ID** and **DevEUI**, as shown in **Figure 26**. Check if your board has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI.
+3. At this step, you need to put a unique **End device ID** and **DevEUI**, as shown in **Figure 26**. Check if your board has a DevEUI on sticker or QR that you can scan then use this as the device’s unique DevEUI.
 
 4. Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
 
@@ -429,7 +429,7 @@ You can see the data sent by the RAK811 board on The Things Stack platform, as s
 
 :::tip 📝 NOTE:
 
-It is advisable to use a meaningful End device ID, End device name, and End device description that will match your device purpose. The End device ID `rak-device-abp` is for illustration purposes only.
+It is advisable to use a meaningful End device ID, End device name, and End device description that will match your device's purpose. The End device ID `rak-device-abp` is for illustration purposes only.
 
 :::
 
@@ -631,7 +631,7 @@ Login to the ChirpStack server using your account and password.
   caption="Application Section"
 />
 
-2. By default, you should create a new application, although you can reuse the existing ones. For this setup, create a new Application by clicking on the “**CREATE**” button, and filling the required parameters, as shown in **Figure 36** and **Figure 37**.
+2. By default, you should create a new application, although you can reuse the existing ones. For this setup, create a new Application by clicking on the “**CREATE**” button, and filling in the required parameters, as shown in **Figure 36** and **Figure 37**.
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/25.new-application.png"
@@ -672,7 +672,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   caption="Device Tab of an Application"
 />
 
-3. Once inside of the DEVICE tab, create a new device (LoRaWAN node) by clicking on the “**+ CREATE**” button. 
+3. Once inside the DEVICE tab, create a new device (LoRaWAN node) by clicking on the “**+ CREATE**” button. 
 
 <rk-img
   src="/assets/images/wisduino/rak811-evaluation-board/quickstart/29.adding-node.png"
@@ -915,7 +915,7 @@ This concludes the exercise to send data in the OTAA mode.
 
 :::tip 📝 NOTE:
 
-Check “**Disable counting frame verification**”. During the test, when the module is restarted, the frame counting number will be also be restarted from zero. This would cause a synchronization problem with the ChirpStack server treating it as a replay attack. For the testing purpose, it is safe to disable this feature, but remember to activate it in a production environment.
+Check “**Disable counting frame verification**”. During the test, when the module is restarted, the frame counting number will also be restarted from zero. This would cause a synchronization problem with the ChirpStack server treating it as a replay attack. For the testing purpose, it is safe to disable this feature, but remember to activate it in a production environment.
 
 :::
 

@@ -17,7 +17,7 @@ The WisDuino RAK811 Evaluation Board module is designed to simplify LoRaWAN and 
 
 The UART serial communication is exposed on the **UART1 port**, through  **Pin 6 (TX1)** and **Pin 7 (RX1)**. The default parameters of the UART1 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module to the WisDuino RAK811 Evaluation Board, it is important to check the [WisDuino RAK811 Evaluation Board Schematic](https://downloads.rakwireless.com/LoRa/WisNode/Hardware-Specification/WisNode-LoRa_Schematic.pdf).
 
-The WisDuino RAK811 Evaluation Board has a USB-UART converter that is why the configuration can be started immediately by just connecting it to the USB port of a host computer.
+The WisDuino RAK811 Evaluation Board has a USB-UART converter, that is why the configuration can be started immediately by just connecting it to the USB port of a host computer.
 
 ### Links to Quick Start Guide
 
@@ -54,7 +54,7 @@ If you don't have a serial port tool yet, it is recommended to download and inst
 
 ## AT Command Syntax
 
-The AT command is based on ASCII characters. In general, the AT Command starts with the prefix `AT` or `at` and ends with `<CR><LF>` (i.e. \r\n). The maximum length is **255 characters** which includes the `<CR><LF>` characters at the end of the command. For the rest of the document, the `\r\n` part is omitted for the sake of clarity.
+The AT command is based on ASCII characters. In general, the AT Command starts with the prefix `AT` or `at` and ends with `<CR><LF>` (i.e. \r\n). The maximum length is **255 characters** which include the `<CR><LF>` characters at the end of the command. For the rest of the document, the `\r\n` part is omitted for the sake of clarity.
 
 The AT commands can be classified into the following groups:
 
@@ -76,7 +76,7 @@ at+set_config=<m>:<n>
 at+send=lora:<m>:<n> // Sends data through the LoRa transceiver.
 ```
 
-* **Special Command**: The RAK811 UART port has two operational modes: **Configuration Mode** (default mode) and **Data Transmission Mode**. Data transmission mode allows you to send ASCII payloads directly to the network server via UART without using any AT Command interface like `at+send=lora:X:YYY`. Data transmission mode is explained further on [Interface Type AT Command](/Product-Categories/WisDuino/RAK811-Evaluation-Board/AT-Command-Manual/#interface-type-at-command) section of this document.
+* **Special Command**: The RAK811 UART port has two operational modes: **Configuration Mode** (default mode) and **Data Transmission Mode**. Data transmission mode allows you to send ASCII payloads directly to the network server via UART without using any AT Command interface like `at+send=lora:X:YYY`. Data transmission mode is explained further in [Interface Type AT Command](/Product-Categories/WisDuino/RAK811-Evaluation-Board/AT-Command-Manual/#interface-type-at-command) section of this document.
 
 :::tip 📝 NOTE:
 To enable data transmission mode, you need to input `at+set_config=device:uart_mode:<index>:<mode>` command.  To switch back from data transmission mode to configuration mode (AT command default mode), the command to be entered is `+++` and does not contain terminators such as `\r` and `\n`.
@@ -96,7 +96,7 @@ Only the read commands have information in the replied message, while Write comm
 :::
 
 
-After sending a successful command to the module, the firmware developed, running in the external MCU, will expect at a minimum string of `Ok\r\n`. On the other hand, when the command is not successfully executed by the module, you will receive a response in the following format:
+After sending a successful command to the module, the firmware developed, running in the external MCU, will expect a minimum string of `Ok\r\n`. On the other hand, when the command is not successfully executed by the module, you will receive a response in the following format:
 
 ```
 ERROR: [ErrCode]\r\n
@@ -1705,7 +1705,7 @@ By default, MAxEIRP is considered to be +12.15&nbsp;dBm.
 ## Appendix III：Maximum Transmission Load by Region
 
 :::tip 📝 NOTE:
-M in the following list is the length with MAC header, and N is the maximum usable payload size for the user data without MAC header.
+M in the following list is the length with the MAC header, and N is the maximum usable payload size for the user data without the MAC header.
 
 :::
 
@@ -1925,7 +1925,7 @@ M in the following list is the length with MAC header, and N is the maximum usab
 The pin definition of the RAK811 Evaluation Board can be reviewed in the [Pin Definition](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#pin-definition) section of the Datasheet.
 
 
-Listed are the summary of the pins of the RAK811 module:
+Listed is the summary of the pins of the RAK811 module:
 
 1. **About the UART Pin**: 
     - Pin 6 (TX1) and Pin 7 (RX1) are reserved for UART1. 
