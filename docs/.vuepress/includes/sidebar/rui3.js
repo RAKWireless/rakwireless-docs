@@ -10,7 +10,7 @@ module.exports = {
         ]
       },
       {
-        title: 'RUI API',
+        title: 'RUI3 API',
         collapsable: false,
         sidebarDepth: 4,
         children: [
@@ -32,5 +32,19 @@ module.exports = {
           ['/RUI3/Serial-Operating-Modes/Custom-Mode/', 'Custom Mode'],
         ]
       },
+	  {
+        title: 'RUI3 BLE Examples',
+        collapsable: false,
+        sidebarDepth: 4,
+		children: [
+		  ['/RUI3/RUI3-BLE-Examples/', 'BLE Introduction'],
+		  ['/RUI3/RUI3-BLE-Examples/BLE_Beacon/', 'BLE Beacon'],
+		  ['/RUI3/RUI3-BLE-Examples/BLE_Beacon_Custom_Payload/', 'BLE Beacon Custom Payload'],
+		  ['/RUI3/RUI3-BLE-Examples/BLE_Configuration/', 'BLE Configuration'],
+		  ['/RUI3/RUI3-BLE-Examples/BLE_Uart/', 'BLE UART'],
+		  ['/RUI3/RUI3-BLE-Examples/BLE_Scanner/', 'BLE Scanner'],
+		  ['/RUI3/RUI3-BLE-Examples/BLE_Custom_Service/', 'BLE Custom Service'],		  
+		]
+	  },
     ],
   }
