@@ -117,7 +117,7 @@ In this section, several ways in accessing the gateway are provided to have diff
 
 #### Wi-Fi AP Mode
 
-By default, the Gateway will work in Wi-Fi AP Mode which means that you can find an SSID named like "**RAK7258_XXXX**" on your PC's Wi-Fi Network List. "**XXXX**" is is the last two bytes of the Gateway MAC address.
+By default, the Gateway will work in Wi-Fi AP Mode which means that you can find an SSID named like "**RAK7258_XXXX**" on your PC's Wi-Fi Network List. "**XXXX**" is the last two bytes of the Gateway MAC address.
 
 :::tip 📝 NOTE:
  No password is required to connect via Wi-Fi
