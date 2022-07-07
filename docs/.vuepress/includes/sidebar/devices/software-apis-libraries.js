@@ -101,5 +101,15 @@ module.exports = {
         download: true,
         sidebarDepth: 4
       },
+    ],
+    '/Product-Categories/Software-APIs-and-Libraries/WisDM/': [
+      {
+        title: 'WisDM User Manual',
+        path: '/Product-Categories/Software-APIs-and-Libraries/WisDM/Overview/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      },
     ]
   }

@@ -330,35 +330,32 @@ logger = logging.getLogger(FUNCTION_NAME)
 logger.setLevel(logging.INFO)
 
 def decode(event):
-    data_base64 = event.get("PayloadData")
-data_decoded = base64.b64decode(data_base64)
+  data_base64 = event.get("PayloadData")
+  data_decoded = base64.b64decode(data_base64)
 
-    result = {
-        "devEui": event.get("WirelessMetadata").get("LoRaWAN").get("DevEui"),
-        "fPort": event.get("WirelessMetadata").get("LoRaWAN").get("FPort"),
-        "freq": event.get("WirelessMetadata").get("LoRaWAN").get("Frequency"),
-        "timestamp": event.get("WirelessMetadata").get("LoRaWAN").get("Timestamp")
-    }
+  result = {
+      "devEui": event.get("WirelessMetadata").get("LoRaWAN").get("DevEui"),
+      "fPort": event.get("WirelessMetadata").get("LoRaWAN").get("FPort"),
+      "freq": event.get("WirelessMetadata").get("LoRaWAN").get("Frequency"),
+      "timestamp": event.get("WirelessMetadata").get("LoRaWAN").get("Timestamp")
+  }
 
-    if data_decoded[DATA_TYPES] == TYPE_TEMP:
-        temp = (data_decoded[DATA_TYPES + 1] << 8) | (data_decoded[DATA_TYPES + 2])
-        temp = ctypes.c_int16(temp).value
-        result['temperature'] = temp / 10
+  if data_decoded[DATA_TYPES] == TYPE_TEMP:
+      temp = (data_decoded[DATA_TYPES + 1] << 8) | (data_decoded[DATA_TYPES + 2])
+      temp = ctypes.c_int16(temp).value
+      result['temperature'] = temp / 10
 
-    return result
-
+  return result
 
 def lambda_handler(event, context):
-    data = decode(event)
-logger.info("Data: %s" % json.dumps(data))
+  data = decode(event)
+  logger.info("Data: %s" % json.dumps(data))
 
-    response = client.publish(
-        topic = event.get("WirelessMetadata").get("LoRaWAN").get("DevEui") + "/project/sensor/decoded",
-qos = 0,
-        payload = json.dumps(data)
-    )
+  response = client.publish(
+      topic = event.get("WirelessMetadata").get("LoRaWAN").get("DevEui") + "/project/sensor/decoded", qos = 0, payload = json.dumps(data)
+  )
 
-    return response
+  return response
 ```
 
 - Once the code has been pasted, choose **Deploy** to deploy the lambda code.
@@ -454,10 +451,11 @@ In this section, create the IoT rule that forwards the device payload to your ap
 You can now check that the decoded data is received and republished by AWS by triggering a condition or event on the device itself.  
 - Go to the AWS IoT console. In the navigation pane, select **Test**, and choose **MQTT client**.
 - Subscribe to the wildcard topic '#" to receive messages from all topics.
-- Send message from endDevice using AT command: `at+send:lora:1:01670110`.
+- Send message from endDevice using AT command: `at+send=1:01670110`.
 - You should see traffic similar to that shown below.
 
 ```json
+    
     393331375d387505/project/sensor/decoded           February 09, 2021, 14:47:21 (UTC+0800)
     {
     "devEui": "393331375d387505",
@@ -467,6 +465,7 @@ You can now check that the decoded data is received and republished by AWS by tr
     "temperature": 27.2
     }
 ```
+
 
 ```json
  project/sensor/decoded    February 09, 2021, 14:47:21 (UTC+0800)
@@ -544,15 +543,15 @@ Now, add a new rule to send an Amazon SNS notification when certain conditions a
 
 After adding the rule for Amazon SNS notification, you should receive a text message when hitting the event.
 
-Send message from endDevice using AT command: `at+send:lora:1:01670110`. Here is the message from mobile after sending an uplink message.
+Send message from endDevice using AT command: `at+send=1:01670110`. Here is the message from mobile after sending an uplink message.
 
 ```json
-    {
-        "device_id": "393331375d387505",
-        "message": "Temperature exceeded 25",
-        "temp": 27.2,
-        "time": "2021-02-22T07:58:54Z"
-    }
+{
+    "device_id": "393331375d387505",
+    "message": "Temperature exceeded 25",
+    "temp": 27.2,
+    "time": "2021-02-22T07:58:54Z"
+}
 ```
 
 ##### Send Downlink Payload

@@ -241,61 +241,57 @@ Create the lambda function to process device messages processed by the destinati
 4. Under **Basic Information**, enter the function name and choose _**Runtime Python 3.8**_. from the drop-down under **Runtime**.
 5. Click **Create function**. 
 6. Under **Function code**, paste the copied code into the editor under the _**lambda_function.py**_ tab. 
-    ```python
-    import base64
-    import json
-    import logging
-    import ctypes
-    import boto3
+```python
+import base64
+import json
+import logging
+import ctypes
+import boto3
 
-    # define function name
-    FUNCTION_NAME = "RAK-HelloWorld"
+# define function name
+FUNCTION_NAME = "RAK-HelloWorld"
 
-    # Second Byte in Payload represents Data Types
-    # Low Power Payload Reference: https://developers.mydevices.com/cayenne/docs/lora/
-    DATA_TYPES = 1
+# Second Byte in Payload represents Data Types
+# Low Power Payload Reference: https://developers.mydevices.com/cayenne/docs/lora/
+DATA_TYPES = 1
 
-    # Type Temperature
-    TYPE_TEMP = 0x67
+# Type Temperature
+TYPE_TEMP = 0x67
 
-    # setup iot-data client for boto3
-    client = boto3.client('iot-data')
+# setup iot-data client for boto3
+client = boto3.client('iot-data')
 
-    # setup logger
-    logger = logging.getLogger(FUNCTION_NAME)
-    logger.setLevel(logging.INFO)
+# setup logger
+logger = logging.getLogger(FUNCTION_NAME)
+logger.setLevel(logging.INFO)
 
-    def decode(event):
-        data_base64 = event.get("PayloadData")
-    data_decoded = base64.b64decode(data_base64)
+def decode(event):
+  data_base64 = event.get("PayloadData")
+  data_decoded = base64.b64decode(data_base64)
 
-        result = {
-            "devEui": event.get("WirelessMetadata").get("LoRaWAN").get("DevEui"),
-            "fPort": event.get("WirelessMetadata").get("LoRaWAN").get("FPort"),
-            "freq": event.get("WirelessMetadata").get("LoRaWAN").get("Frequency"),
-            "timestamp": event.get("WirelessMetadata").get("LoRaWAN").get("Timestamp")
-        }
+  result = {
+      "devEui": event.get("WirelessMetadata").get("LoRaWAN").get("DevEui"),
+      "fPort": event.get("WirelessMetadata").get("LoRaWAN").get("FPort"),
+      "freq": event.get("WirelessMetadata").get("LoRaWAN").get("Frequency"),
+      "timestamp": event.get("WirelessMetadata").get("LoRaWAN").get("Timestamp")
+  }
 
-        if data_decoded[DATA_TYPES] == TYPE_TEMP:
-            temp = (data_decoded[DATA_TYPES + 1] << 8) | (data_decoded[DATA_TYPES + 2])
-            temp = ctypes.c_int16(temp).value
-            result['temperature'] = temp / 10
+  if data_decoded[DATA_TYPES] == TYPE_TEMP:
+      temp = (data_decoded[DATA_TYPES + 1] << 8) | (data_decoded[DATA_TYPES + 2])
+      temp = ctypes.c_int16(temp).value
+      result['temperature'] = temp / 10
 
-        return result
+  return result
 
 
-    def lambda_handler(event, context):
-        data = decode(event)
-    logger.info("Data: %s" % json.dumps(data))
+def lambda_handler(event, context):
+  data = decode(event)
+  logger.info("Data: %s" % json.dumps(data))
 
-        response = client.publish(
-            topic = event.get("WirelessMetadata").get("LoRaWAN").get("DevEui") + "/project/sensor/decoded",
-    qos = 0,
-            payload = json.dumps(data)
-        )
+  response = client.publish(topic = event.get("WirelessMetadata").get("LoRaWAN").get("DevEui") + "/project/sensor/decoded", qos = 0, payload = json.dumps(data))
 
-        return response
-    ```
+  return response
+```
 7. Once the code has been pasted, choose **Deploy** to deploy the lambda code.
 8. Click the **Configuration** tab of the lambda function and head to the **Permissions** menu.
 9. Change the **Lambda Role Policy** permission.
@@ -392,43 +388,42 @@ You can now check that the decoded data is received and republished by AWS by tr
 
 - Go to the AWS IoT console. In the navigation pane, select **Test**, and choose **MQTT client**.
 - Subscribe to the wildcard topic **#** to receive messages from all topics.
-- Send message from endDevice using AT command: `at+send:lora:1:01670110`.
+- Send message from endDevice using AT command: `at+send=1:01670110`.
 - You should see traffic similar as shown below:
 
 ```json
-        393331375d387505/project/sensor/decoded           February 09, 2021, 14:47:21 (UTC+0800)
-        {
-        "devEui": "393331375d387505",
-        "fPort": 1,
-        "freq": "867100000",
-        "timestamp": "2021-02-09T06:47:20Z",
-        "temperature": 27.2
-        }
-    ```
+393331375d387505/project/sensor/decoded           February 09, 2021, 14:47:21 (UTC+0800)
+{
+"devEui": "393331375d387505",
+"fPort": 1,
+"freq": "867100000",
+"timestamp": "2021-02-09T06:47:20Z",
+"temperature": 27.2
+}
+```
 
-
-    ```json
-    project/sensor/decoded    February 09, 2021, 14:47:21 (UTC+0800)
-        {
-            "WirelessDeviceID": "6477ec22-9570-31d5981da021",
-            "PayloadData": "AWcBEA==",
-            "WirelessMetadata": {
-                "LoRaWAN": {
-                    "DataRate": "4",
-                    "DevEui": "393331375d387505",
-                    "FPort": 1,
-                    "Frequency": "867100000",
-                    "Gateways": [
-                        {
-                            "GatewayEui": "ac1ff09fffe014bd5",
-                            "Rssi": -103,
-                            "Snr": 8.5
-                        }
-                    ],
-                    "Timestamp": "2021-02-09T06:47:20Z"
+```json
+project/sensor/decoded    February 09, 2021, 14:47:21 (UTC+0800)
+  {
+    "WirelessDeviceID": "6477ec22-9570-31d5981da021",
+    "PayloadData": "AWcBEA==",
+    "WirelessMetadata": {
+        "LoRaWAN": {
+            "DataRate": "4",
+            "DevEui": "393331375d387505",
+            "FPort": 1,
+            "Frequency": "867100000",
+            "Gateways": [
+                {
+                    "GatewayEui": "ac1ff09fffe014bd5",
+                    "Rssi": -103,
+                    "Snr": 8.5
                 }
-            }
+            ],
+            "Timestamp": "2021-02-09T06:47:20Z"
         }
+    }
+  }
 ```
 
 #### Configuring Amazon SNS
@@ -467,7 +462,7 @@ Now, add a new rule to send an Amazon SNS notification when certain conditions a
 4. Enter the Name as `text_alert` and provide an appropriate **Description**.
 5. Under the **Rule query statement**, enter the following query:
   ```sql
-      SELECT devEui as device_id, "Temperature exceeded 25" as message, temperature as temp, timestamp as time FROM '+/project/sensor/decoded' where temperature > 25
+  SELECT devEui as device_id, "Temperature exceeded 25" as message, temperature as temp, timestamp as time FROM '+/project/sensor/decoded' where temperature > 25
   ```
 6. Choose **Add action**.
 7. Choose **Send a message as an SNS push notification**.
@@ -482,15 +477,15 @@ Now, add a new rule to send an Amazon SNS notification when certain conditions a
 
 After adding the rule for Amazon SNS notification, you should receive a text message when hitting the event.
 
-Send message from end-device using AT command: `at+send:lora:1:01670110`. Here is the message from mobile after sending an uplink message:
+Send message from end-device using AT command: `at+send=1:01670110`. Here is the message from mobile after sending an uplink message:
 
 ```json
-    {
-        "device_id": "393331375d387505",
-        "message": "Temperature exceeded 25",
-        "temp": 27.2,
-        "time": "2021-02-22T07:58:54Z"
-    }
+{
+    "device_id": "393331375d387505",
+    "message": "Temperature exceeded 25",
+    "temp": 27.2,
+    "time": "2021-02-22T07:58:54Z"
+}
 ```
 
 #### Send Downlink Payload
@@ -520,22 +515,22 @@ Follow the instruction in the [Deploy SAM template to AWS](https://github.com/aw
 
 5. You should see traffic on AWS similar as shown below:
 
-    ```json
-        downlink/status/6477ec22-9570-4fea-9668-31d5981da021   February 09, 2021, 15:09:29 (UTC+0800)
-        {
-            "sendresult": {
-                "status": 200,
-                "RequestId": "4f1d36e1-8316-4436-8e9d-2207e3711755",
-                "MessageId": "60223529-0011d9f5-0095-0008",
-                "ParameterTrace": {
-                    "PayloadDate": "QQ==",
-                    "WirelessDeviceId": "6477ec22-9570-4fea-9668-31d5981da021",
-                    "Fport": 1,
-                    "TransmitMode": 1
-                }
-            }
-        }
-    ```
+```json
+  downlink/status/6477ec22-9570-4fea-9668-31d5981da021   February 09, 2021, 15:09:29 (UTC+0800)
+  {
+      "sendresult": {
+          "status": 200,
+          "RequestId": "4f1d36e1-8316-4436-8e9d-2207e3711755",
+          "MessageId": "60223529-0011d9f5-0095-0008",
+          "ParameterTrace": {
+              "PayloadDate": "QQ==",
+              "WirelessDeviceId": "6477ec22-9570-4fea-9668-31d5981da021",
+              "Fport": 1,
+              "TransmitMode": 1
+          }
+      }
+  }
+```
 
 
 <rk-img
