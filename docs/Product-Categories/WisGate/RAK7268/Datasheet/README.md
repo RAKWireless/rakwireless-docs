@@ -8,16 +8,17 @@ tags:
 prev: ../Supported-LoRa-Network-Servers/ 
 next: false
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268%26RAK7268V2%26RAK7268C%26RAK7268CV2_CE_cert.pdf]
-  - [FCC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_RAK7268V2_FCC_certification.pdf]
-  - [RCM, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RCM%C2%A0cert_RAK7268%26RAK7268C.pdf]
-  - [Anatel, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_ANATEL_cert.zip]
-  - [IC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_IC_cert.zip]
-  - [SRRC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_SRRC.pdf]
+  - [ANATEL, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_ANATEL_Certification.zip]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268%26RAK7268V2%26RAK7268C%26RAK7268CV2_CE_Certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_RAK7268V2_FCC_Certification.pdf]
+  - [IC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_IC_Certification.zip]
   - [KC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_KC_Certification.pdf]
+  - [RCM, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268%26RAK7268V2%26RAK7268C%26RAK7268CV2_RCM_Certification.pdf]
   - [REACH, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268C_RAK7268CV2_RAK7268_RAK7268V2_REACH_Report.pdf]
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268C_RAK7268CV2_RAK7268_RAK7268V2_RoHS_Report.pdf]
-  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268%26RAK7268V2%26RAK7268C%26RAK7268CV2_UK_cert.pdf]
+  - [SRRC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_SRRC_Certification.pdf]
+  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268%26RAK7268V2%26RAK7268C%26RAK7268CV2_UK_Certification.pdf]
+  - [RSM, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268%26RAK7268V2%26RAK7268C%26RAK7268CV2_RSM_Certification.pdf]
 ---
 
 # RAK7268 WisGate Edge Lite 2 Datasheet

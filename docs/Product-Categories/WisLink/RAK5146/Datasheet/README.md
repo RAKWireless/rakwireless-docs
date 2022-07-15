@@ -8,15 +8,16 @@ next: false
 rak_desc: Provides comprehensive information about your RAK5146 WisLink LPWAN Concentrator to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wislink-lora/rak5146/RAK5146.png
 certifications:
+  - [ANATEL, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_ANATEL_Certification.pdf]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_CE_Certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_FCC_Certification.zip]
   - [IC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_IC_Certification.pdf]
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_CE_Certification.zip ]
-  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_UKCA_Certification.zip]
+  - [JRL, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_JRL_certification.pdf]
+  - [KCC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_KC_Certification.pdf]
   - [REACH, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_REACH_Certification.pdf]
-  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_RoHS_Certification.pdf]
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_RCM_Certification.pdf]
-  - [KC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_KC_Certification.pdf]
-  - [Anatel, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_ANATEL_Certification.pdf ]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_RoHS_Certification.pdf]
+  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_UKCA_Certification.zip]
 ---
 
 # RAK5146 WisLink LPWAN Concentrator Datasheet

@@ -5,8 +5,6 @@ tags:
   - RAK831
 prev: ../Overview/
 next: false
-certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK831-LoRa-Gateway/Certification-Report/CE%20Label%20and%20Label%20location_RED.pdf]
 rak_desc: Provides comprehensive information about your RAK831 WisLink LPWAN Concentrator to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wislink-lora/rak831/datasheet/RAK831_home.png
 
@@ -532,6 +530,3 @@ Order Information
 | RAK831_868 | 868MHz         |
 | RAK831_915 | 915MHz         |
 
-## Certification
-
-<rk-certifications :params="$page.frontmatter.certifications" />

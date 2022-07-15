@@ -7,16 +7,6 @@ prev: ../Overview/
 next: false
 rak_desc: Provides comprehensive information about your RAK2011 WisLink Cellular BG96 Arduino Shield to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wislink-lte/rak2011/overview/rak2011-buy.png
-certifications:
-  - [CE, ]
-  - [FCC, ]
-  - [IC, ]
-  - [KCC, ]
-  - [RoHS, ]
-  - [RCM, ]
-  - [IMDA, ]
-  - [MIC, ]
-  - 
 ---
 
 # RAK2011 WisLink Cellular BG96 Arduino Shield Datasheet

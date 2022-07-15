@@ -8,13 +8,13 @@ tags:
 prev: ../Supported-LoRa-Network-Servers/
 next: false
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_CE_certification.pdf]
-  - [FCC, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_FCC_Certificate.zip]
-  - [IC, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_RAK7240_IC_Cert.pdf]
-  - [RCM, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249-RCM-Declaration-of-Conformity.pdf]
-  - [RoHS, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249-ROHS-ATL20191105773R01-Report.pdf]
+  - [CE, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_CE_Certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_FCC_Certification.zip]
+  - [IC, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_IC_Certification.pdf]
   - [IP67, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_Enclosure_IP67_Test_Report.pdf]
-  - [REACH, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_REACH_Report.PDF]
+  - [RCM, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_RCM_Certification.zip]
+  - [REACH, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_REACH_Report.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_RoHS_Test_Report.pdf]
 ---
 
 # RAK7249 WisGate Edge Max Datasheet

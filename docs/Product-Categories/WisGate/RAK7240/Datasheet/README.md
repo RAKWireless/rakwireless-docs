@@ -8,12 +8,13 @@ tags:
 prev: ../Supported-LoRa-Network-Servers/
 next: false
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_CE_certification.pdf]
-  - [FCC, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_FCC_Certificate.zip]
-  - [RCM, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240-RCM_Test_Report.zip]
-  - [IC, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7249_RAK7240_IC_Cert.pdf]
-  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK-ROHS-ATL202011241747R01-Report.pdf]
-  - [Anatel, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_Anatel_certification.pdf]
+  - [ANATEL, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_ANATEL_Certification.pdf]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_CE_Certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_FCC_Certification.zip]
+  - [IC, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_IC_Certification.pdf]
+  - [IP65, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_IP65_Certification.pdf]
+  - [RCM, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_RCM_Certification.zip]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_RoHS_Certification.pdf]
 ---
 
 # RAK7240 WisGate Edge Prime Datasheet

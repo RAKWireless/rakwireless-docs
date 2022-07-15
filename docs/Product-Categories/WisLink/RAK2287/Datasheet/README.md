@@ -6,10 +6,14 @@ tags:
 prev: ../Quickstart/
 next: false
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287%20CE%20certification.zip]
-  - [FCC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287%20FCC%20certification.zip]
-  - [IC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287%20IC%20certification.zip]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_CE_Certification.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_FCC_Certification.zip]
+  - [IC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_IC_Certification.zip]
   - [KCC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_KCC_Certificate.zip]
+  - [NCC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_NCC_Certification.pdf]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_REACH_Report.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_RoHS_Report.pdf]
+
 rak_desc: Provides comprehensive information about your RAK2287 WisLink LPWAN Concentrator to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wislink-lora/rak2287/quickstart/1main/RAK2287_home.png
 ---

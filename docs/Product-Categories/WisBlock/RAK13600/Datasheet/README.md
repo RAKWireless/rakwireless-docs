@@ -8,10 +8,10 @@ tags:
 prev: ../Quickstart/
 next: false
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13600/Certification/RAK13600%20_CE_CERT.pdf]
-  - [FCC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13600/Certification/RAK13600_FCC_CERT.pdf]
-  - [IC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13600/Certification/RAK13600_ISED_Certificate.pdf ]
-  - [UKCA, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13600/Certification/RAK13600_UKCA_CERT.pdf]
+  - [CE, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13600/Certification/RAK13600_CE_Certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13600/Certification/RAK13600_FCC_Certification.pdf]
+  - [ISED, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13600/Certification/RAK13600_ISED_Certification.pdf]
+  - [UKCA, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13600/Certification/RAK13600_UKCA_Certification.pdf]
 ---
 
 # RAK13600 WisBlock NFC Reader Module Datasheet

@@ -6,7 +6,9 @@ tags:
     - datasheet
 rak_desc: Provides comprehensive information about your RAK9733 Pulsar Cable LMR400 to help you use it. This information includes technical specifications and characteristics.
 rak_img: /assets/images/accessories/rak9733/overview/rak9733.png
-
+certifications:
+  - [REACH, https://downloads.rakwireless.com/Accessories/Pulsar-Cable/Certification/Pulsar_Cable_REACH_Report.pdf]
+  - [RoHS, https://downloads.rakwireless.com/Accessories/Pulsar-Cable/Certification/Pulsar_Cable_RoHS_Report.pdf]
 ---
 
 # Pulsar Cable LMR400 Datasheet
@@ -77,3 +79,8 @@ The Pulsar cable is a high-grade cable, suitable for all gateways from the **Wis
 - 2 - N-type female connector for LMR400 cable
 - 3 - LMR400 cable
 - 4 - Ø13x25 heat shrinkable adhesive tube
+
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

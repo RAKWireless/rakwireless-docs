@@ -8,7 +8,7 @@ tags:
   - wisnode
   - RAK7204
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK7204/Certification/RAK7204_CE_cert.zip]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK7204/Certification/RAK7204_CE_Certification.zip]
 ---
 
 # RAK7204 WisNode Sense Home Datasheet

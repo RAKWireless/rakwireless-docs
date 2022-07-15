@@ -8,10 +8,10 @@ tags:
   - wisblock
   - RAK11310
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_CE_cert.pdf]
-  - [FCC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_FCC_Certificate.zip]
-  - [IC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_ISED_Certificate.pdf]
-  - [UKCA, https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_UKCA_cert.pdf]
+  - [CE, https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_CE_Certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_FCC_Certification.zip]
+  - [ISED, https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_ISED_Certification.pdf]
+  - [UKCA, https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_UKCA_Certification.pdf]
 ---
 
 # RAK11310 WisBlock LPWAN Module Datasheet

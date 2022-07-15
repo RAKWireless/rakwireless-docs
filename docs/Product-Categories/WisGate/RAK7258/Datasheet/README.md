@@ -8,9 +8,9 @@ tags:
 prev: ../Supported-LoRa-Network-Servers/
 next: false
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/Indoor-Gateway-RAK7258/Certification-Report/RAK7258_CE_Certificate.zip]
-  - [FCC, https://downloads.rakwireless.com/LoRa/Indoor-Gateway-RAK7258/Certification-Report/RAK7258_FCC_Certificate.zip]
-  - [KCC, https://downloads.rakwireless.com/LoRa/Indoor-Gateway-RAK7258/Certification-Report/RAK7258%20_%20KC_certification.pdf]
+  - [CE, https://downloads.rakwireless.com/LoRa/Indoor-Gateway-RAK7258/Certification-Report/RAK7258_CE_Certification.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/Indoor-Gateway-RAK7258/Certification-Report/RAK7258_FCC_Certification.zip]
+  - [KCC, https://downloads.rakwireless.com/LoRa/Indoor-Gateway-RAK7258/Certification-Report/RAK7258_KC_Certification.pdf]
 ---
 
 # RAK7258 WisGate Edge Lite Datasheet

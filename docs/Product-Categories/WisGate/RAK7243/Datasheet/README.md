@@ -8,8 +8,8 @@ tags:
 prev: ../Supported-LoRa-Network-Servers/
 next: ../Testing-Report/
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Certification-Report/RAK7243_CE_Certificate.zip]
-  - [FCC, https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Certification-Report/RAK7243_FCC_Certificate.zip]
+  - [CE, https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Certification-Report/RAK7243_CE_Certification.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Certification-Report/RAK7243_FCC_Certification.zip]
 ---
 
 # RAK7243 WisGate Developer D3 Datasheet

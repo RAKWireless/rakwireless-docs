@@ -8,8 +8,9 @@ tags:
 prev: ../Quickstart/
 next: false
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/WisBlock/RAK5005-O/Certification/RSZ201124006-EM-01%20EN%2055032%26EN%2055035%26EN%2061000%20EMC%20Report.pdf]
-  - [FCC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK5005-O/Certification/RSZ201124006-EM-00%C2%A0FCC%C2%A0Part%C2%A015B%C2%A0SDoC%26ICES-003%C2%A0Report.pdf]
+  - [CE, https://downloads.rakwireless.com/LoRa/WisBlock/RAK5005-O/Certification/RAK5005-O_CE_Certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK5005-O/Certification/RAK5005-O_FCC_Certification.pdf]
+
 
 ---
 

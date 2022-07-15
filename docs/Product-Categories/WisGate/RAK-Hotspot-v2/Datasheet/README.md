@@ -10,20 +10,20 @@ next: false
 prev: ../Troubleshooting/
 certifications:
   - [BSMI, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_BSMI_Certification.pdf]
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotV2.0_CE_Certification.pdf]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_CE_Certification.pdf]
   - [ERP, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_ERP_Certification.pdf]
-  - [FCC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotV2.0_FCC_Certification.pdf]
-  - [IC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotV2.0_IC_Report.pdf]
-  - [IMDA, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotV2.0_IMDA_Certification.zip]
-  - [KCC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotV2.0_KC_Certification.pdf]
-  - [NBTC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotV2.0_NBTC_Certification.zip]
-  - [NCC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotV2.0_NCC_Certification.pdf]
-  - [NTC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotV2.0_NTC_Certification.jpg]
-  - [RCM, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotV2.0_RCM_Certification.pdf]
-  - [REACH, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotV2.0_CE_REACH_REPORT.PDF]
-  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotV2.0_CE__ROHS_REPORT.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_FCC_Certification.pdf]
+  - [IC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_IC_Report.pdf]
+  - [IMDA, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_IMDA_Certification.zip]
+  - [KCC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_KC_Certification.pdf]
+  - [NBTC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_NBTC_Certification.zip]
+  - [NCC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_NCC_Certification.pdf]
+  - [NTC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_NTC_Certification.jpg]
+  - [RCM, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_RCM_Certification.pdf]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_CE_REACH_REPORT.PDF]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_CE__ROHS_REPORT.pdf]
   - [SUBTEL, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_SUBTEL_Certification.pdf]
-  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK_Hotspot_Miner/Certification/RAK7248_HotspotV2.0_UKCA_Certification.pdf]
+  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_UKCA_Certification.pdf]
 ---
 
 # RAK Hotspot v2 Datasheet

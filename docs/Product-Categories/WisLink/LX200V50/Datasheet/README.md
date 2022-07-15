@@ -7,7 +7,9 @@ prev: ../Overview/
 next: false
 rak_desc: Provides comprehensive information about your LX200V50 WisLink 1000 Mbps PLC Module + EVB to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wislink-plc/lx200v50/overview/lx200v50.png
-
+certifications:
+  - [CE, https://downloads.rakwireless.com/PLC/LX200V50/Certification/RAK_PLC_LX200V50_CE_Certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/PLC/LX200V50/Certification/RAK_PLC_LX200V50_FCC_Certification.pdf]
 ---
 
 # LX200V50 WisLink 1000 Mbps PLC Module + EVB Datasheet

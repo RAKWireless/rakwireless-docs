@@ -7,11 +7,13 @@ tags:
 - RAK4270
 prev: ../Low-Level-Development/
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/CE%20Certification.zip]
-  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/FCC%20Certification.zip]
-  - [REACH, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/REACH%20168304609b%20001-212SVHCs.pdf]
-  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RoHS%20168304609a%20001.pdf]
-  - [KC, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270%28H%29_KC_cert.pdf]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_CE_Certification.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_FCC_Certification.zip]
+  - [JRL, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_JRL_Certification.zip]
+  - [KC, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_KC_Certification.pdf]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_REACH_Certification.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_RoHS_Certification.pdf]
+
 ---
 
 

@@ -8,8 +8,8 @@ tags:
 prev: ../AT-Command-Manual/
 next: false
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600%20CE%20Certification.zip]
-  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600%20FCC%20Certification.zip]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600_CE_Certification.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600_FCC_Certification.zip]
 ---
 
 # RAK4600 WisDuo LPWAN Module Datasheet

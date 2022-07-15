@@ -8,8 +8,8 @@ tags:
 prev: ../Low-Level-Development/
 next: false
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200H_CE_Certificate.zip]
-  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200_FCC_certification.zip]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK4260H/Certification-Report/RAK4260H_CE_Certification.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4260H/Certification-Report/RAK4260H_FCC_Certification.zip]
   
 ---
 

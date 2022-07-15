@@ -8,10 +8,10 @@ tags:
 prev: ../Quickstart/
 next: false
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13300/Certification/RAK13300_CE_certification.pdf]
-  - [FCC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13300/Certification/RAK11300_FCC_Certificate.zip]
-  - [IC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13300/Certification/RAK11300_ISED_Certificate.pdf] 
-  - [UKCA, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13300/Certification/RAK13300_UKCA_certification.pdf]
+  - [CE, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13300/Certification/RAK13300_CE_Certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13300/Certification/RAK13300_FCC_Certification.zip]
+  - [ISED, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13300/Certification/RAK13300_ISED_Certification.pdf] 
+  - [UKCA, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13300/Certification/RAK13300_UKCA_Certification.pdf]
 ---
 
 # RAK13300 WisBlock LPWAN Wireless Module Datasheet
