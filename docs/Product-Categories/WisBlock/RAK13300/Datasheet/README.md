@@ -7,6 +7,11 @@ tags:
   - RAK13300
 prev: ../Quickstart/
 next: false
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13300/Certification/RAK13300_CE_certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13300/Certification/RAK11300_FCC_Certificate.zip]
+  - [IC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13300/Certification/RAK11300_ISED_Certificate.pdf] 
+  - [UKCA, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13300/Certification/RAK13300_UKCA_certification.pdf]
 ---
 
 # RAK13300 WisBlock LPWAN Wireless Module Datasheet
@@ -153,3 +158,7 @@ The table below shows the supported LoRaWAN Bands of the RAK13300 module:
 - **J1** is an IPEX Connector for LoRa antenna.
 :::
 
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

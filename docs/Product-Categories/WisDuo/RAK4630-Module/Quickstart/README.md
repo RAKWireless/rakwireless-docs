@@ -242,6 +242,201 @@ If BOOT mode is not initiated, pull to ground the RESET pin twice (or double cli
 
 11. After the Device Programmed is completed, you will see that LEDs are blinking.
 
+##### RAK4630 IO Pins and Peripherals
+
+In this section will be discussed how to use and access the pinouts of RAK4630 using RUI3 APIs. It shows basic code on using digital IO, analog input, UART, and I2C.
+
+###### How to use Digital IO
+
+<rk-img
+  src="/assets/images/wisduo/rak4630-module/quickstart/rak4630-digital.png"
+  width="90%"
+  caption="Available Digital I/O pins in RAK4630"
+/>
+
+You can use any of the pin as shown in **Figure 22** as Digital Pin by replacing the dot `.` to underscore `_`. See the example code below.
+
+```c
+/*
+ RAK4631 Digital I/O Example
+
+ You can use any of the following as Digital I/O:
+
+ P0_03
+ P0_04
+ P0_05
+ P0_09
+ P0_10
+ P0_13
+ P0_14
+ P0_17
+ P0_19
+ P0_21
+ P0_24
+ P0_25
+ P0_26
+ P0_28
+ P0_29
+ P0_30
+ P0_31
+ P1_01
+ P1_02
+ P1_03
+ P1_04
+*/
+
+void setup()
+{
+  pinMode(P0_04, OUTPUT); //Change the P0_04 to any digital pin you want. Also, you can set this to INPUT or OUTPUT
+}
+
+void loop()
+{
+  digitalWrite(P0_04,HIGH); //Change the P0_04 to any digital pin you want. Also, you can set this to HIGH or LOW state.
+  delay(1000); // delay for 1 second
+  digitalWrite(P0_04,LOW); //Change the P0_04 to any digital pin you want. Also, you can set this to HIGH or LOW state.
+  delay(1000); // delay for 1 second
+}
+```
+
+###### How to use Analog Input
+
+<rk-img
+  src="/assets/images/wisduo/rak4630-module/quickstart/rak4630-analog.png"
+  width="70%"
+  caption="Available Analog Input pins in RAK4630"
+/>
+
+You can use any of the pin as shown in **Figure 23** as Analog Input Pin by replacing the dot `.` to underscore `_`. See the example code below.
+
+```c
+#define analogPin P0_05  // or you can use P0_31
+
+int val = 0;  // variable to store the value read
+
+void setup() 
+{
+  Serial.begin(115200); 
+}
+
+void loop() 
+{
+  val = analogRead(analogPin);  // read the input pin
+  Serial.println(val);          // debug value
+}
+```
+
+###### How to use Serial Interfaces
+
+**UART**
+
+There are two UART peripherals available on RAK4630. There are also different [Serial Operating Modes](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/#rui3-serial-operating-modes) possible in RUI3 namely Binary Mode, AT Mode and Custom Mode.
+
+
+| **Serial Port**           | **Serial Instance Assignment** | **Default Mode**  |
+| ------------------------- | ------------------------------ | ----------------- |
+| UART1 (pin 19, 20)        | Serial0                        | AT Command        |  
+| UART2 (pin 15, 16)        | Serial1                        | Custom Mode       |  
+
+
+<rk-img
+  src="/assets/images/wisduo/rak4630-module/quickstart/rak4630-uart.png"
+  width="70%"
+  caption="Available UART pins in RAK4630"
+/>
+
+
+Example Code
+
+```c
+void setup() 
+{
+  Serial0.begin(115200); //use Serial0 for UART1 and Serial1 for UART2 //you can designate separate baudrate for each.
+}
+
+void loop() 
+{
+  Serial0.println("RAK4630 TEST!");
+  delay(1000); // delay for 1 second
+}
+```
+
+**I2C**
+
+<rk-img
+  src="/assets/images/wisduo/rak4630-module/quickstart/rak4630-i2c.png"
+  width="70%"
+  caption="Available I2C pins in RAK4630"
+/>
+
+Make sure you have an I2C device connected to specified I2C pins to run the example code below.
+
+```c
+#include <Wire.h>
+ 
+ 
+void setup()
+{
+  Wire.begin();
+ 
+  Serial.begin(115200);
+  while (!Serial);            
+  Serial.println("\nI2C Scanner");
+}
+ 
+ 
+void loop()
+{
+  byte error, address;
+  int nDevices;
+ 
+  Serial.println("Scanning...");
+ 
+  nDevices = 0;
+  for(address = 1; address < 127; address++ )
+  {
+    // The i2c_scanner uses the return value of
+    // the Write.endTransmisstion to see if
+    // a device did acknowledge to the address.
+    Wire.beginTransmission(address);
+    error = Wire.endTransmission();
+ 
+    if (error == 0)
+    {
+      Serial.print("I2C device found at address 0x");
+      if (address<16)
+        Serial.print("0");
+      Serial.print(address,HEX);
+      Serial.println("  !");
+ 
+      nDevices++;
+    }
+    else if (error==4)
+    {
+      Serial.print("Unknown error at address 0x");
+      if (address<16)
+        Serial.print("0");
+      Serial.println(address,HEX);
+    }    
+  }
+  if (nDevices == 0)
+    Serial.println("No I2C devices found\n");
+  else
+    Serial.println("done\n");
+ 
+  delay(5000);           // wait 5 seconds for next scan
+}
+```
+
+**SPI**
+
+<rk-img
+  src="/assets/images/wisduo/rak4630-module/quickstart/rak4630-spi.png"
+  width="60%"
+  caption="Available SPI pins in RAK4630"
+/>
+
+
 
 ##### LoRaWAN Example
     

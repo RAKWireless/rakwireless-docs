@@ -9,11 +9,11 @@ tags:
   - RAK2171
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_CE_Certification.zip]
-  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_UK_certification.pdf]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_FCC_Certification.pdf]
   - [ISED, https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_ISED_Certification.pdf]
   - [REACH, https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_REACH_report.pdf]
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_ROHS_report.pdf]
+  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_UK_certification.pdf]
 ---
 
 # RAK2171 WisNode TrackIt Datasheet

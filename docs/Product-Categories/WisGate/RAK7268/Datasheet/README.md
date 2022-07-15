@@ -8,7 +8,7 @@ tags:
 prev: ../Supported-LoRa-Network-Servers/ 
 next: false
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268RAK7268C_CE_Cert.zip]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268%26RAK7268V2%26RAK7268C%26RAK7268CV2_CE_cert.pdf]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_RAK7268V2_FCC_certification.pdf]
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RCM%C2%A0cert_RAK7268%26RAK7268C.pdf]
   - [Anatel, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_ANATEL_cert.zip]
@@ -17,6 +17,7 @@ certifications:
   - [KC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_KC_Certification.pdf]
   - [REACH, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268C_RAK7268CV2_RAK7268_RAK7268V2_REACH_Report.pdf]
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268C_RAK7268CV2_RAK7268_RAK7268V2_RoHS_Report.pdf]
+  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268%26RAK7268V2%26RAK7268C%26RAK7268CV2_UK_cert.pdf]
 ---
 
 # RAK7268 WisGate Edge Lite 2 Datasheet

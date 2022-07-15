@@ -7,6 +7,11 @@ tags:
   - datasheet
   - wisblock
   - RAK11310
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_CE_cert.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_FCC_Certificate.zip]
+  - [IC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_ISED_Certificate.pdf]
+  - [UKCA, https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_UKCA_cert.pdf]
 ---
 
 # RAK11310 WisBlock LPWAN Module Datasheet
@@ -142,3 +147,8 @@ The power consumption will be published after the hardware test results.
 - **SWD Interface**: The breakout module exposes an SWD debug interface. Additionally, the RST pin is used to reset the RAK11310 core module.
 
 - **Power Up Automatic Reset**: The breakout module has a power-up automatic reset circuit, and the schematic shows the automatic reset mechanism. This module also can be reset through the WisBlock Base reset pin.
+
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

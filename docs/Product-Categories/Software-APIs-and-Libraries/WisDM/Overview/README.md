@@ -146,7 +146,7 @@ After choosing the work mode and the band that the location will operate on, con
 
 The further configurations for the three possible work modes differ in the following way:
 
-### Location in Packet Forwarder Work Mode
+#### Location in Packet Forwarder Work Mode
 
 If you opt for advanced frequency options, you will see the following options:
 
@@ -158,7 +158,7 @@ If you opt for advanced frequency options, you will see the following options:
 
 By choosing the channel plan, the fields related to the frequency configuration of the location and the gateways registered are automatically configured based on the LoRaWAN specification.
 
-### Basics Station Work Mode
+#### Basics Station Work Mode
 
 When creating a new location in Basics Station work mode, you need to set up the following configurations:
 
@@ -172,7 +172,7 @@ When creating a new location in Basics Station work mode, you need to set up the
 - **Authentication mode** -  to strengthen the connection security to the LNS, you can choose from different authentication methods - TLS server authentication, TLS server and Client authentication, TLS server authentication, and client token. 
 
 
-### Location in Built-In Network Server Work Mode
+#### Location in Built-In Network Server Work Mode
 
 When creating a new location in built-in network server work mode, you need to set up the following configurations:
 
@@ -215,16 +215,7 @@ When creating a new location in built-in network server work mode, you need to s
   caption="Integration interface enabled"
 />
 
-### Members
-
-You can add and manage the members of the **Organization** after creating and setting up the organization. In WisDM, there are four types of roles. Each one of them has different rights variety. 
-
-- **Organization admin** – a role with full access to all organization assets. The organization admin has all the rights and can make changes.
-- **Organization supervisor** – a role with access to all organization assets but can’t make changes.
-- **Location admin** – a role that has full access to several Locations stated by the organization admin. 
-- **Location supervisor** – a role that has access to several Locations stated by the organization admin but can’t make changes. 
-
-### Adding a Gateway to a Location
+#### Adding a Gateway to a Location
 
 To start the process of adding a gateway to a location in a packet forwarder work mode, click the **Add gateway** button.
 
@@ -271,6 +262,16 @@ To add a gateway to a location in built-in network server work mode, you need to
   caption="Adding a gateway to a location in built-in network server mode"
 />
 
+### Members
+
+You can add and manage the members of the **Organization** after creating and setting up the organization. In WisDM, there are four types of roles. Each one of them has different rights variety. 
+
+- **Organization admin** – a role with full access to all organization assets. The organization admin has all the rights and can make changes.
+- **Organization supervisor** – a role with access to all organization assets but can’t make changes.
+- **Location admin** – a role that has full access to several Locations stated by the organization admin. 
+- **Location supervisor** – a role that has access to several Locations stated by the organization admin but can’t make changes. 
+
+
 ### Menu Structure
 
 
@@ -297,7 +298,7 @@ More about payment security can be found on the [FAQ](https://support.wisdm.rakw
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisdm/overview/22.pricing.png"
-  width="90%"
+  width="100%"
   caption="Pricing plans"
 />
 

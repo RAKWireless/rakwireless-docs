@@ -7,6 +7,9 @@ tags:
   - RAK7243
 prev: ../Supported-LoRa-Network-Servers/
 next: ../Testing-Report/
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Certification-Report/RAK7243_CE_Certificate.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Certification-Report/RAK7243_FCC_Certificate.zip]
 ---
 
 # RAK7243 WisGate Developer D3 Datasheet
@@ -308,3 +311,8 @@ Download the latest firmware of RAK7243 and RAK7243C in the table provided below
 | :------------------------------------: | :-----------------: | :--------------: | :----------------------------------------------------------------------------------------------------------------: |
 |  RAK7243 WisGate Developer D3 Gateway  | Raspberry Pi 3/ 3B+ |     4.2.6.R      | [Download](https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Firmware/RAK7243_Latest_Firmware.zip)  |
 | RAK7243C WisGate Developer D3+ Gateway | Raspberry Pi 3/ 3B+ |     4.2.6.R      | [Download](https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Firmware/RAK7243C_Latest_Firmware.zip) |
+
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

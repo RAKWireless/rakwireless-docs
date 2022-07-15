@@ -8,15 +8,17 @@ tags:
 prev: ../Quickstart/
 next: false 
 certifications:
-  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289C_RAK7289_RoHS_Certification.pdf]
-  - [REACH, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289C_RAK7289_REACH_Certification.pdf]
   - [CE, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_RAK7289V2_CE_Certification.pdf]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_FCC_Certification.pdf]
-  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_RAK7289V2_UKCA_Certification.pdf]
   - [ISED, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_ISED_Certification.zip]
-  - [SRRC, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_SRRC_Certification.pdf]
   - [KC, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_RAK7289C_RAK7289V2_RAK7289CV2_KC_cert.pdf]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289C_RAK7289_REACH_Certification.pdf]
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_RAK7289V2_RCM_certification.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289C_RAK7289_RoHS_Certification.pdf]
+  - [RSM, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289C_RAK7289CV2_RSM_certification.pdf]
+  - [SRRC, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_SRRC_Certification.pdf]
+  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_RAK7289V2_UKCA_Certification.pdf]
+
 ---
 
 
