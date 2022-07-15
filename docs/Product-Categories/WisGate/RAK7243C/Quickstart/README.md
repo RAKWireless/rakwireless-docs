@@ -46,7 +46,7 @@ The SIM card slot of the cellular versions is not hot-swappable. Make sure the g
 After burning the firmware image onto the SD Card, make sure you have inserted the SD Card into the **RAK7243C WisGate Developer D3+ Gateway** and have the LoRa, GPS, and LTE Antenna connected. To learn more on how to burn the image, check the [Learn section](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisGate-Developer-Gateway-Firmware-Burning/).
 
 
-After which, you can now safely power on the gateway. In this section, several ways in accessing the gateway are provided to have different alternatives for you to choose depending on the availability of the requirements needed.
+After which, you can now safely power on the gateway. In this section, several ways to access the gateway are provided to have different alternatives for you to choose from depending on the availability of the requirements needed.
 
 ::: warning
 Before powering the Raspberry Pi 3B+, you should connect the LoRa, GPS, and LTE antennas. Not doing so might damage the boards.
@@ -113,7 +113,7 @@ SSH (Secure Shell) is typically used to log in to a remote machine and execute c
 
 - If you have connected to the gateway through **Wi-Fi AP Mode**, the IP Address is `192.168.230.1`
 - If you have connected to the gateway through **Ethernet**, the IP Address is `192.168.10.10`
-- It will then prompt you to enter the username and password. The default username and password is provided below:
+- It will then prompt you to enter the username and password. The default username and password are provided below:
   - **Username**: pi
   - **Password**: raspberry
 
@@ -161,7 +161,7 @@ Once you have logged successfully into your gateway through SSH, you will see th
 
 ##### Linux OS
 
-If the OS of your PC is Linux, you should do the same as the Mac OS, except the root mode.
+If the OS of your PC is Linux, you should do the same as the Mac OS, except for the root mode.
 
 ### Accessing the Internet
 
@@ -171,7 +171,7 @@ Assuming you have successfully logged into your gateway using SSH. Enter the fol
 sudo gateway-config
 ```
 
-The, you will see a page the same as **Figure 11**.
+Then, you will see a page the same as **Figure 11**.
 
 <rk-img
   src="/assets/images/wisgate/rak7243c/quickstart/1.accessing-internet/config-options.png"
@@ -180,7 +180,7 @@ The, you will see a page the same as **Figure 11**.
 />
 
 1. **Set pi password** - used to set/change the password of the gateway.
-2. **Setup RAK Gateway Channel Plan** - used to configure the frequency, which the gateway will operate on, and the LoRaWAN Server which the gateway will work with.
+2. **Setup RAK Gateway Channel Plan** - used to configure the frequency, on which the gateway will operate, and the LoRaWAN Server which the gateway will work with.
 3. **Restart packet-forwarder** - used to restart the LoRa packet forwarder.
 4. **Edit packet-forwarder config** - used to open the `global_conf.json` file, to edit LoRaWAN parameters manually.
 5. **Configure WIFI** - used to configure the Wi-Fi settings in order to connect to a network.
@@ -257,10 +257,10 @@ To enable Wi-Fi Client Mode, you have to disable AP Mode first.
 
 #### Connect through Ethernet
 
-If you want to connect to router through Ethernet cable, do the following steps:
+If you want to connect to the router through an Ethernet cable, do the following steps:
 
 - In the main configuration menu, choose **6 Configure LAN**. This will let you set up a static IP address for the gateway’s Ethernet adapter.
-- Type a static IP Address according to the IP address of the router you want to connect. The gateway and the router must be in the same network segment, otherwise the connection will fail.
+- Type a static IP Address according to the IP address of the router you want to connect. The gateway and the router must be in the same network segment, otherwise, the connection will fail.
 - By default, the IP Address of the gateway's Ethernet is `192.168.10.10`
 
 <rk-img
@@ -336,14 +336,14 @@ Then you will see a page like in **Figure 20**.
 />
 
 1. **Set pi password** - used to set/change the password of the gateway.
-2. **Setup RAK Gateway Channel Plan** - used to configure the frequency, which the gateway will operate on, and the LoRaWAN Server which the gateway will work with.
+2. **Setup RAK Gateway Channel Plan** - used to configure the frequency, on which the gateway will operate, and the LoRaWAN Server which the gateway will work with.
 3. **Restart packet-forwarder** - used to restart the LoRa packet forwarder.
 4. **Edit packet-forwarder config**- used to open the `global_conf.json` file, to edit LoRaWAN parameters manually.
 5. **Configure WIFI** - used to configure the Wi-Fi settings in order to connect to a network.
 6. **Configure LAN** - used to configure the Ethernet adapter settings.
 
 :::tip 📝 NOTE:
- A unique ID will be generated in for gateway. This is also called **Gateway EUI** and is essential for registering the gateway with any LoRa Network Server (TTN and ChirpStack).
+ A unique ID will be generated for the gateway. This is also called **Gateway EUI** and is essential for registering the gateway with any LoRa Network Server (TTN and ChirpStack).
 :::
 
 
@@ -490,7 +490,7 @@ If you want to use ChirpStack for LoRa Network server, refer to the Supported Lo
 
 #### Connect through an LTE Network
 
-The RAK7243C comes with the RAK2013 Cellular, making it capable of connecting through LTE network. In this section, you will learn on how to connect your gateway to an LTE network.
+The RAK7243C comes with the RAK2013 Cellular, making it capable of connecting through LTE network. In this section, you will learn how to connect your gateway to an LTE network.
 
 1. Insert a SIM card of the appropriate type and size into the SIM card slot. Power on the gateway. 
 2. Log into the gateway through SSH, and enter the following command:
@@ -563,7 +563,7 @@ This may take a couple of seconds. After that, you'll see the available LTE netw
 />
 
 ::: tip 📝 NOTE:
-**Figure 39** shows the available LTE network in China. These information may vary depending on the available network in your region. For instance in China, the available network are `CHINA MOBILE`, `CHN-UNICOM`, or `CHN-CT`.
+**Figure 39** shows the available LTE network in China. This information may vary depending on the available network in your region. For instance, in China, the available networks are `CHINA MOBILE`, `CHN-UNICOM`, or `CHN-CT`.
 :::
 
 7. Next, execute the AT command below to set the information of the LTE network operator that you want to use.
@@ -590,7 +590,7 @@ Then, using the sample AT command described above, the command will be:
 Lastly, you will receive `OK`, which means you have successfully configured the LTE network.
 
 ::: tip 📝 NOTE:
-To exit Minicom, press `Enter`, `Ctrl + A` then press `Q`. A pop up will appear and choose **Yes**.
+To exit Minicom, press `Enter`, `Ctrl + A` then press `Q`. A pop-up will appear and choose **Yes**.
 :::
 
 8. Proceed to set the **APN name** for the **pppd** process. From the main configuration menu, choose **6 Configure APN name**.
@@ -605,7 +605,7 @@ To exit Minicom, press `Enter`, `Ctrl + A` then press `Q`. A pop up will appear 
 9. Then, you will see the window option below where you can change the APN Name or retain its default name.
 
 ::: tip 📝 NOTE:
-If you want to modify the APN Name, make it sure it is a real and valid APN Name.
+If you want to modify the APN Name, make sure it is a real and valid APN Name.
 :::
 
 <rk-img
@@ -639,7 +639,7 @@ There will be a series of logs. After that, you will see the following informati
   caption="IP address Information"
 />
 
-You will be assigned with an IP address (local and remote) along with the DNS addresses. Having these information signifies that your connection has successfully established.
+You will be assigned an IP address (local and remote) along with the DNS addresses. Having this information signifies that your connection has been  successfully established.
 
 Also, do not forget to re-enable the automatic LTE connection on start up
 

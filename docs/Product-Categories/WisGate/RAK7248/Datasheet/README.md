@@ -27,7 +27,7 @@ certifications:
 
 The WisGate Developer D4H RAK7248 is a LoRaWAN® Gateway that consists of Raspberry Pi4, RAK2287 Concentrator, and RAK2287 Pi HAT. RAK2287 includes a GPS module and a heat sink for better performance and thermal heat dissipation management, and its housing is built with an aluminum casing.
 
-For the build-in RAK2287, it uses the **SX1302 chip** from Semtech which built-in LoRa® concentrator IP core is a powerful digital signal processing engine. It can receive up to **8 LoRa packets** with different spreading factors on different channels and available in multiple variants so it can be used for international standard bands. This unique capability allows implementing innovative network architectures advantageous over other short-range systems. RAK2287 Pi HAT is a converter board with Raspberry Pi form factor that enables the RAK2287 module to be mounted on the top of the Raspberry Pi. It integrates one (1) 40-pin female Pi HAT connector and one mPCIe connector to connect RAK2287 to the Raspberry Pi 4.
+For the build-in RAK2287, it uses the **SX1302 chip** from Semtech which built-in LoRa® concentrator IP core is a powerful digital signal processing engine. It can receive up to **8 LoRa packets** with different spreading factors on different channels and is available in multiple variants so it can be used for international standard bands. This unique capability allows implementing innovative network architectures advantageous over other short-range systems. RAK2287 Pi HAT is a converter board with Raspberry Pi form factor that enables the RAK2287 module to be mounted on top of the Raspberry Pi. It integrates one (1) 40-pin female Pi HAT connector and one mPCIe connector to connect RAK2287 to the Raspberry Pi 4.
 
 RAK7248 is ideal for prototyping, proof-of-concept demonstration, or evaluation. It includes a ready to use LoRaWAN Gateway OS that can be connected to a LoRaWAN server. Also, it is developer-friendly and simple even for no-so-tech users to set up a LoRaWAN system. It has to be the best value and function for connectivity to address a variety of applications like Smart Grid, Intelligent Farm, and other IoT enterprise applications.
 
@@ -72,7 +72,7 @@ The figure below summarizes the basic building blocks of RAK7248. The RAK2287 is
 
 #### Block Diagram
 
-RAK7248 is the central hardware solution for all LoRa based radio communication. It receives and transmits radio messages. The processing of radio messages as well as the protocol related tasks is done by the embedded host system (Raspberry Pi4). Received and processed radio messages are being sent to a LoRaWAN server. The following figure shows the block diagram of RAK7248.
+RAK7248 is the central hardware solution for all LoRa based radio communication. It receives and transmits radio messages. The processing of radio messages as well as the protocol related tasks are done by the embedded host system (Raspberry Pi4). Received and processed radio messages are being sent to a LoRaWAN server. The following figure shows the block diagram of RAK7248.
 
 <rk-img
   src="/assets/images/wisgate/rak7248/datasheet/rak7248-block-diagram.png"
@@ -180,7 +180,7 @@ It is highly recommended, to use optimized RSSI calibration values, which is par
 
 ###### Overview
 
-The LoRa Antenna with RP-SMA male connector shown in the figure below:
+The LoRa Antenna with RP-SMA male connector is shown in the figure below:
 
 <rk-img
   src="/assets/images/wisgate/rak7248/datasheet/lora-antenna.png"
@@ -274,8 +274,8 @@ Environmental test performance specifications are listed below:
 | **Noise Coefficient** | ≤ 2.0            | ≤ 2.0             | ≤ 2.0            |
 
 :::tip 📝 NOTE
-1. **High Temperature**: For 24 hours, the device was enclosed into a chamber with temperature and humidity set to 85ºC and 95%, respectively. Then, for at least an hour, the temperature is set back to normal. **The device experienced no physical deformation.**
-2. **Low Temperature**: For 24 hours, the device was enclosed into a chamber with a temperature set to -40ºC.Then, for at least an hour, the temperature is set back to normal. **The device experienced no physical deformation.**
+1. **High Temperature**: For 24 hours, the device was enclosed in a chamber with temperature and humidity set to 85ºC and 95%, respectively. Then, for at least an hour, the temperature is set back to normal. **The device experienced no physical deformation.**
+2. **Low Temperature**: For 24 hours, the device was enclosed in a chamber with a temperature set to -40ºC. Then, for at least an hour, the temperature is set back to normal. **The device experienced no physical deformation.**
 :::
 
 #### Electrical Requirements

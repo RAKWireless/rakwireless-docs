@@ -11,7 +11,7 @@ tags:
 ---
 
 # RAK7244C WisGate Developer D4+
-Thank you for choosing **RAK7244C WisGate Developer D4+ Gateway** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK7244C WisGate Developer D4+ Gateway** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Supported LoRa Network Servers](../Supported-LoRa-Network-Servers/)
@@ -33,7 +33,7 @@ Pilot Gateway Pro is ideal for prototyping, proof-of-concept demonstration, or e
 ## Product Features
 
 - Preassembled, fully functioning gateway
-- **SX1301 baseband processor**, emulates 49 x LoRa demodulators 10 programmable parallel demodulation paths, support 8 uplinks channel and 1 downlink channel
+- **SX1301 baseband processor**, emulates 49 x LoRa demodulators 10 programmable parallel demodulation paths, supports 8 uplinks channels and 1 downlink channel
 - Support optional cellular module (Quectel BG96 or EG91 or EG95) for NB-IOT/CAT-M/CAT1 LTE/CAT4 LTE 
 - Built-in **Ublox MAX-7Q GPS Module**
 - Built-in heat sink for thermal heat dissipation management 

@@ -57,7 +57,7 @@ The application is available for both Android and iOS. You can manually search i
 ### Power on the RAK Hotspot
 
 :::warning ⚠️ WARNING
-Before powering on, it is best advice to follow the guidelines below to avoid damaging the RAK Hotspot. Familiarize the interfaces of the product as shown in the  [Interfaces](/Product-Categories/WisGate/RAK-Hotspot/Datasheet/#interfaces) section of the RAK Hotspot Datasheet.
+Before powering on, the best advice is to follow the guidelines below to avoid damaging the RAK Hotspot. Familiarize the interfaces of the product as shown in the  [Interfaces](/Product-Categories/WisGate/RAK-Hotspot/Datasheet/#interfaces) section of the RAK Hotspot Datasheet.
 :::
 
 1. Attach the LoRa Antenna.  

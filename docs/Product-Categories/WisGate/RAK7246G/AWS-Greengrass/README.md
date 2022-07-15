@@ -13,7 +13,7 @@ prev: ../Quickstart/
 
 # AWS IoT Greengrass v2
 
-To learn more about AWS IoT GreengrassV2, refer to aws documentation to see [how it works](https://docs.aws.amazon.com/greengrass/v2/developerguide/how-it-works.html) and [what is new](https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-v2-whats-new.html) about it.
+To learn more about AWS IoT GreengrassV2, refer to AWS documentation to see [how it works](https://docs.aws.amazon.com/greengrass/v2/developerguide/how-it-works.html) and [what is new](https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-v2-whats-new.html) about it.
 
 
 ## Set Up Your Development Environment
@@ -22,7 +22,7 @@ To learn more about AWS IoT GreengrassV2, refer to aws documentation to see [how
 
 - RAK7246 and RAK7246G are based on Raspberry Pi Zero (0) SBC. By default, the latest Raspbian OS based on Linux is used. More information and the available releases can be found [Raspberry Pi site](https://www.raspberrypi.com/software/).
 - RAKwireless provides a ready-to-use image to be flashed on the SD card. You can find the latest firmware in the [RAK downloads](https://downloads.rakwireless.com/LoRa/NeoPi-Gateway-RAK7246/Firmware/RAK7246_Latest_Firmware.zip).
-- If you want to compile the code that runs the gateway by yourself, you can find it in the [GitHub - RAKWireless/rak_common_for_gateway](https://github.com/RAKWireless/rak_common_for_gateway).
+- If you want to compile the code that runs the gateway by yourself, you can find it in [GitHub - RAKWireless/rak_common_for_gateway](https://github.com/RAKWireless/rak_common_for_gateway).
 - The main service is the [LoRa packet forwarder](https://github.com/Lora-net/packet_forwarder).
 
 For additional references, you can refer to the following RAK links:
@@ -60,7 +60,7 @@ Pay special attention to the **Notes**.
  
 ## Install the AWS Command Line Interface
 
-Installing the CLI is needed to complete the instructions in this guide. To install the AWS CLI on your host machine, refer to the instructions found at the [Installing the AWS CLI v2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) guide. 
+Installing the CLI is needed to complete the instructions in this guide. To install the AWS CLI on your host machine, refer to the instructions found in the [Installing the AWS CLI v2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) guide. 
 
 Once you have installed AWS CLI, configure it as per the instructions in this [online guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-config). Set the appropriate values for Access key ID, Secret access key, and AWS Region. You can set the output format to `json` if you prefer.
 
@@ -96,7 +96,7 @@ To enable SSH, create an empty file called `ssh` under disk `boot`, where you wi
 ### Install and Configure
 
 1. Insert the SD card into RAK7246 and power it on.
-2. Use the `sudo raspi-config` command, enable the spi and i2c interface, disable login shell over serial, and enable serial port hardware.
+2. Use the `sudo raspi-config` command, enable the SPI and I2C interface, disable login shell over serial, and enable serial port hardware.
 3. Clone the installer and start the installation:
    ```bash
    $ sudo apt update; sudo apt install git -y
@@ -201,7 +201,7 @@ Run the following commands to provide the credentials to the AWS IoT Greengrass 
 
 #### Run the Installer
 
-1. Run the installer using the command provided. Modify the values as per your region, install directory, and set up the **thing** name. 
+1. Run the installer using the command provided. Modify the values as per your region, install the directory, and set up the **thing** name. 
 2. Use the `--provision true` option to have the installer set up the **thing** and required policies for you. If you prefer to configure Greengrass manually, see the [online guide](https://docs.aws.amazon.com/greengrass/v2/developerguide/manual-installation.html).
    ```bash
    sudo -E java -Droot="/greengrass/v2" -Dlog.store=FILE \

@@ -13,7 +13,7 @@ tags:
 
 # RAK Hotspot
 
-Thank you for choosing **RAK Hotspot** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK Hotspot** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [SD Card Backup](../Backup/)
@@ -38,18 +38,18 @@ Thank you for choosing **RAK Hotspot** in your awesome IoT Project! 🎉 To help
 
 ![longfi](/assets/images/wisgate/rak-hotspot/icons/longfi.png)
 
-**Helium LongFi** is a technology architecture that combines a leading wireless technology, LoRaWAN, and the Helium Blockchain. LongFi is optimized for miles of range, and long battery life for IoT devices.
+**Helium LongFi** is a technology architecture that combines leading wireless technology, LoRaWAN, and the Helium Blockchain. LongFi is optimized for miles of range, and long battery life for IoT devices.
 
 ![proof-of-coverage](/assets/images/wisgate/rak-hotspot/icons/proof-of-coverage.png)
 
-RAK Hotspot earns Helium when devices connect, and for validating wireless coverage delivered by peers. Using a system called Proof-of-Coverage, RAK Hotspot earns more Helium when they are in range of other RAK Hotspot, but need to be at least 300 meters apart.
+RAK Hotspot earns Helium when devices connect, and for validating wireless coverage delivered by peers. Using a system called Proof-of-Coverage, RAK Hotspot earns more Helium when they are in the range of other RAK Hotspot, but need to be at least 300 meters apart.
 
 Range depends on the environment: for rural areas, **up to 10 miles or more**, but for more dense areas, **up to a mile**. Single RAK Hotspot earns less as they can only issue Challenges over the internet and cannot participate in Proof-of-Coverage.
 
 ![wireless-coverage](/assets/images/wisgate/rak-hotspot/icons/wireless-coverage.png)
 
-- Deliver may square miles of coverage from a single RAK Hotspot
-- Based on initial testing, only about 50 to 100 RAK Hotspot are needed to provide complete
+- Deliver many square miles of coverage from a single RAK Hotspot
+- Based on initial testing, only about 50 to 100 RAK Hotspots are needed to provide complete
 coverage for an entire city.
 
 ![connect-anything](/assets/images/wisgate/rak-hotspot/icons/connect-anything.png)

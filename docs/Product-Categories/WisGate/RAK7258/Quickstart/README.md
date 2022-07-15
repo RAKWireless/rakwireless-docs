@@ -109,7 +109,7 @@ The function of the **Reset** key is as follows:
 
 ### Access the Gateway
 
-In this section, several ways in accessing the gateway are provided to have different alternatives for you to choose depending on the availability of the requirements needed.
+In this section, several ways of accessing the gateway are provided to have different alternatives for you to choose form depending on the availability of the requirements needed.
 
 :::warning ⚠️ WARNING
  Do not power the device if the LoRa Antenna port has been left open to avoid potential damage in the RAK7258 WisGate Edge Lite."

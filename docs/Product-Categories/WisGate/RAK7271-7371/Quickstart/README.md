@@ -49,7 +49,7 @@ The WisGate Developer Base is a device designed for integration with desktop, mo
 
 ::: tip 📝 NOTE
 
-It is assumed that your Raspberry Pi has already been installed with an [OS](https://www.raspberrypi.org/software/operating-systems) and has an internet access. You must also have an access to it over SSH or directly to the command line interface (CLI).
+It is assumed that your Raspberry Pi has already been installed with an [OS](https://www.raspberrypi.org/software/operating-systems) and has internet access. You must also have an access to it over SSH or directly to the command line interface (CLI).
 :::
 
 1. Connect the WisGate Developer Base with the included cable: Type-C end in the Developer Base and Type-A in one of the Raspberry Pi USB ports. 
@@ -60,7 +60,7 @@ It is assumed that your Raspberry Pi has already been installed with an [OS](htt
   caption="Connecting the WisGate Developer Base to the Raspberry Pi"
 />
 
-2. After connecting the Developer Base to the Pi, the Power Led will be steady green. This mean that the Base is properly powered.  
+2. After connecting the Developer Base to the Pi, the Power Led will be steady green. This means that the Base is properly powered.  
 
 <rk-img
   src="/assets/images/wisgate/rak7271-7371/quickstart/3.power-on.png"
@@ -96,11 +96,11 @@ pi@raspberrypi:~ $
 
 ### Install the Software  
 
-To be able to use the Base, an installation and configuration of the software is needed. 
+To be able to use the Base, the installation and configuration of the software are needed. 
 
 1. To download the software, you need to execute the following commands in the CLI:
 
-- This command will check for the latest updates of the OS and download the Git tool that will allow to download the software:
+- This command will check for the latest updates of the OS and download the Git tool that will allow downloading the software:
 
 ```
 sudo apt update; sudo apt install git -y
@@ -134,7 +134,7 @@ sudo ./install.sh
 
 ::: tip 📝 NOTE
 
-Have in mind that the script will also install ChirpStack—an open-source LoRaWAN® Network Server stack. This will allow you to create fully functional LoRaWAN Server locally on the Raspberry Pi.
+Have in mind that the script will also install ChirpStack—an open-source LoRaWAN® Network Server stack. This will allow you to create a fully functional LoRaWAN Server locally on the Raspberry Pi.
 
 :::
 

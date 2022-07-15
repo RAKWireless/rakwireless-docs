@@ -12,7 +12,7 @@ tags:
 
 # RAK7271/RAK7371 WisGate Developer Base
 
-Thank you for choosing **RAK7271/RAK7371 WisGate Developer Base** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK7271/RAK7371 WisGate Developer Base** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -23,7 +23,7 @@ The RAK Developer Base is a device designed for integration with desktop/mobile/
 
 This new approach allows for it to be easily integrated into existing hardware like routers, industrial PC, etc., adding LoRaWAN gateway capabilities (for example turning a laptop into a testbed LoRaWAN gateway by simply plugging it in and running the software stack)
 
-As it features a fully functioning concentrators modules it is capable of working with 8 uplink and 1 downlink channels at SF7-12 (RAK2287) / SF5-12 (RAK5146). 
+As it features fully functioning concentrators modules it is capable of working with 8 uplink and 1 downlink channels at SF7-12 (RAK2287) / SF5-12 (RAK5146). 
 
 The RAK Developer Base is an ideal solution for LPWAN deployments where integration with existing hardware is crucial, or scenarios when on the go deployment is required, for drive testing or coverage evaluation in mobile scenarios.
 

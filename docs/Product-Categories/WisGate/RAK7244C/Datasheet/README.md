@@ -23,7 +23,7 @@ Pilot Gateway Pro is ideal for prototyping, proof-of-concept demonstration, or e
 ### Features
 
 - Preassembled, fully functioning gateway
-- **SX1301 baseband processor**, emulates 49 x LoRa demodulators 10 programmable parallel demodulation paths, support 8 uplinks channel and 1 downlink channel
+- **SX1301 baseband processor**, emulates 49 x LoRa demodulators 10 programmable parallel demodulation paths, supports 8 uplinks channels and 1 downlink channel
 - Support optional cellular module (Quectel BG96 or EG91 or EG95) for NB-IOT/CAT-M/CAT1 LTE/CAT4 LTE 
 - Built-in **Ublox MAX-7Q GPS Module**
 - Built-in heat sink for thermal heat dissipation management 
@@ -230,7 +230,7 @@ Quectel EG95 is a series of LTE category four (4) modules optimized especially f
 
 ##### LoRa
 
-The LoRa Antenna with RP-SMA male connector shown in **Figure 7**.
+The LoRa Antenna with RP-SMA male connector is shown in **Figure 7**.
 
 <rk-img
   src="/assets/images/wisgate/rak7244c/datasheet/7.lora-antenna.png"

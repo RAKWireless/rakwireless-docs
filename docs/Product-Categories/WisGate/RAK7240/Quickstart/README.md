@@ -122,7 +122,7 @@ To better protect the Ethernet cable gland and the antenna connector from the we
 First and foremost, screw on the antennas. All 5 of them should be installed, two (2) antennas on the **bottom** (**Wi-Fi**, **GPS**) and three (3) on the **top** (**LoRa**, **LTE**)
 
 :::warning ⚠️ WARNING
-Do not power the device if any antenna port has been left open. In case you do not desire to use one or more antenna feature, make sure to terminate the port with a **50 Ohm load**.
+Do not power the device if any antenna port has been left open. In case you do not desire to use one or more antenna features, make sure to terminate the port with a **50 Ohm load**.
 :::
 
 2. Power on the Gateway

@@ -24,11 +24,11 @@ certifications:
 
 ### Description
 
-The **RAK7243C WisGate Developer D3+ Gateway** is a device that consists of Raspberry Pi 3B+, RAK2245 Pi HAT which includes a GPS module and a Heat Sink for better performance and thermal heat dissipation management, and a RAK2013 Cellular Pi HAT and it’s housing is built with an aluminum casing.
+The **RAK7243C WisGate Developer D3+ Gateway** is a device that consists of Raspberry Pi 3B+, RAK2245 Pi HAT which includes a GPS module and a Heat Sink for better performance and thermal heat dissipation management, and a RAK2013 Cellular Pi HAT and its housing is built with an aluminum casing.
 
-For the build-in RAK2245 Pi HAT, it uses the SX1301 chip from Semtech which built-in LPWAN concentrator IP core is a powerful digital signal processing engine. It is able to receive up to 8 LoRa packets simultaneously sent with different spreading factors on different channels and available in multiple variants so it can be used for international standard bands. This unique capability allows to implement innovative network architectures advantageous over other short range systems. For the build-in RAK2013 Cellular Pi HAT, it supports optional QUECTEL BG96 / EG91 / EG95 which can supports NB-IOT / CAT-M / CAT1 LTE / CAT4 LTE. It follows Raspberry Pi specifications and is easy to mount with Raspberry Pi and RAK2245 Pi HAT module.
+For the build-in RAK2245 Pi HAT, it uses the SX1301 chip from Semtech which built-in LPWAN concentrator IP core is a powerful digital signal processing engine. It is able to receive up to 8 LoRa packets simultaneously sent with different spreading factors on different channels and is available in multiple variants so it can be used for international standard bands. This unique capability allows to implement innovative network architectures advantageous over other short range systems. For the build-in RAK2013 Cellular Pi HAT, it supports optional QUECTEL BG96 / EG91 / EG95 which can support NB-IOT / CAT-M / CAT1 LTE / CAT4 LTE. It follows Raspberry Pi specifications and is easy to mount with Raspberry Pi and RAK2245 Pi HAT module.
 
-Pilot Gateway Pro is ideal for prototyping, proof-of-concept demonstration or for the evaluation. It includes a ready to use gateway OS that can be connected to a LoRaWan® server. Also it is developer friendly and simple even for no-so-techy users to set up LoRaWan® system. It has to be the best value and function for connectivity to address a variety of applications like Smart Grid, Intelligent Farm and other IoT enterprise applications.
+Pilot Gateway Pro is ideal for prototyping, proof-of-concept demonstration or the evaluation. It includes a ready to use gateway OS that can be connected to a LoRaWan® server. Also, it is developer friendly and simple even for no-so-techy users to set up the system for LoRaWAN®. It has to be the best value and function for connectivity to address a variety of applications like Smart Grid, Intelligent Farm and other IoT enterprise applications.
 
 ### Features
 
@@ -62,7 +62,7 @@ The overview covers the board overview of RAK7243C and its block diagram that di
 
 #### Block Diagram
 
-The following figure shows the basic concept for LoRaWAN system. RAK7243 Pilot Gateway is the central hardware solution for all LoRa based radio communication. It receives and transmits radio messages. The processing of radio messages as well as the protocol related tasks is done by embedded host system (Raspberry Pi). Received and processed radio messages are being sent to a LoRaWAN server. The concrete segmentation of the protocol related tasks is outside the scope of this document
+The following figure shows the basic concept of the of the system for LoRaWAN®. RAK7243 Pilot Gateway is the central hardware solution for all LoRa based radio communication. It receives and transmits radio messages. The processing of radio messages as well as the protocol related tasks are done by an embedded host system (Raspberry Pi). Received and processed radio messages are being sent to a LoRaWAN server. The concrete segmentation of the protocol related tasks is outside the scope of this document
 
 <rk-img
   src="/assets/images/wisgate/rak7243c/datasheet/3.rak7243-system-structure.svg"
@@ -83,7 +83,7 @@ The hardware specification is categorized into six parts. It discusses the inter
 />
 
 :::tip 📝 NOTE
-LTE Antenna(DIV) is only using for the EG91 / EG95 Version and reserved for BG96 Version
+LTE Antenna(DIV) is only used for the EG91 / EG95 Version and reserved for the BG96 Version.
 :::
 
 #### Pin Definition
@@ -98,7 +98,7 @@ The RAK7243C WisGate Developer D3+ Gateway is composed of the LPWAN Concentrator
   caption="RAK2245 Pi HAT"
 />
 
-RAK2245 Pi HAT(Model Name is: RAK2243) is an LPWAN Concentrator board which follows the Pi HAT standard, and can be mounted to Pi board with 40-pin connector.
+RAK2245 Pi HAT(Model Name is: RAK2243) is an LPWAN Concentrator board that follows the Pi HAT standard and can be mounted to Pi board with 40-pin connector.
 
 - For detailed information about the RAK2245, Go to the [RAK2245 Pi HAT Datasheet](/Product-Categories/WisLink/RAK2245-Pi-HAT/Datasheet/).
 
@@ -116,9 +116,9 @@ RAK2245 Pi HAT(Model Name is: RAK2243) is an LPWAN Concentrator board which foll
   caption="RAK2013 Cellular Pi HAT"
 />
 
-RAK2013 is an add-on board following Raspberry Pi HAT standard. It can transmit UART data from Raspberry Pi to Cellular network. It can support several cellular protocol, such as NB-IOT, CAT-M, CAT1 or CAT 4, by choosing different modular on the board.
+RAK2013 is an add-on board following Raspberry Pi HAT standard. It can transmit UART data from Raspberry Pi to a Cellular network. It can support several cellular protocols, such as NB-IOT, CAT-M, CAT1 or CAT 4, by choosing different modular on the board.
 
-The RAK2013 integrates audio codec and audio amplifier on it, with carrier operator's network, it can support VoLTE function. For easy use, there are earphone connector, MIC connector and speaker connector with audio amplifier
+The RAK2013 integrates an audio codec and amplifier on it, with the carrier operator's network, it can support VoLTE function. For easy use, there are earphone connector, MIC connector and speaker connector with audio amplifier
 
 - For detailed information about the RAK2013, go to [RAK2013 Cellular Datasheet](/Product-Categories/WisLink/RAK2013/Datasheet/).
 
@@ -171,7 +171,7 @@ The RAK2245 has an excellent transmitter performance. It is highly recommended t
 |     3      |      3      |     13      |    0     |              26              |
 |     3      |      3      |     14      |    0     |              27              |
 
-- T=25℃, VDD=5V (Typ.) if nothing else stated.
+- T=25℃, VDD=5V (Typ.) if nothing else is stated.
 
 | Parameter                              | Condition                |   Min    | Typ. |   Max    |
 | -------------------------------------- | ------------------------ | :------: | ---- | :------: |
@@ -183,7 +183,7 @@ The RAK2245 has an excellent transmitter performance. It is highly recommended t
 
 ###### Receiver RF
 
-It is highly recommended, to use optimized RSSI calibration values, which is part of the HAL v3.1. For both, Radio 1 and 2, the RSSI-Offset should be set - 169.0. The following table gives typically sensitivity level of the RAK2245.
+It is highly recommended, to use optimized RSSI calibration values, which is part of the HAL v3.1. For both, Radio 1 and 2, the RSSI-Offset should be set - 169.0. The following table gives the typical sensitivity level of the RAK2245.
 
 | Signal Bandwidth (Khz) | Spreading Factor | Sensitivity (dBm) |
 | :---------------------: | :--------------: | :---------------: |
@@ -234,7 +234,7 @@ Quectel EG95 is a series of LTE category 4 module optimized specially for M2M an
 
 ##### LoRa
 
-The LoRa Antenna with RP-SMA male connector shown in the figure below:
+The LoRa Antenna with RP-SMA male connector is shown in the figure below:
 
 <rk-img
   src="/assets/images/wisgate/rak7243c/datasheet/9.lora-antenna-overview.png"
@@ -266,8 +266,8 @@ The antenna's mechanical dimension is shown below:
 For module built-in BG96, there is one LTE antenna and one GPS antenna. For module
 built-in EG91/EG95, there are two LTE antennas, and no GPS antenna with the module.
 
-The LTE antenna for the Developer Gateway with RP-SMA male connector covers working frequency band
-from 824MHz to 2690MHz. The antenna is shown as below.
+The LTE antenna for the Developer Gateway with RP-SMA male connector covers the working frequency band
+from 824MHz to 2690MHz. The antenna is shown below.
 
 <rk-img
   src="/assets/images/wisgate/rak7243c/datasheet/11.lte-antenna.jpg"

@@ -100,7 +100,7 @@ When it comes to RAK7244 WisGate Developer D4 Gateway, there are two (2) ways to
 
 ### Using the Built-In ChirpStack
 
-There is a built-in ChirpStack in every RAK Developer gateway if you use the latest firmware or `rak_common_for_gateway` repository.
+There is a built-in ChirpStack in every RAK Developer gateway if you use the latest firmware or the `rak_common_for_gateway` repository.
 
 - When you use it for the first time after burning the latest firmware, the gateway will work in the **EU868 Band**, and it will use the built-in ChirpStack as its default LoRa Server. If you don't want to change the frequency or LoRa Server, you don't have to do anything as this will be configured automatically when the gateway boots.
 
@@ -144,7 +144,7 @@ It is advisable to **change your password** to tighten the security of your acco
 
 ### Using an Independent ChirpStack
 
-You can setup an independent ChirpStack by yourself and can set a ChirpStack in AWS. Refer to the [AWS guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/Amazon-Web-Services/). If you want to run ChirpStack on a different host/cloud, then refer to the [guide](https://www.chirpstack.io/guides/debian-ubuntu/) in the ChirpStack site.
+You can setup an independent ChirpStack by yourself and can set a ChirpStack in AWS. Refer to the [AWS guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/Amazon-Web-Services/). If you want to run ChirpStack on a different host/cloud, then refer to the [guide](https://www.chirpstack.io/guides/debian-ubuntu/) on the ChirpStack site.
 
 
 :::warning ⚠️ WARNING

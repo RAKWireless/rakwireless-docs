@@ -12,7 +12,7 @@ tags:
 
 # RAK7244 WisGate Developer D4
 
-Thank you for choosing **RAK7244 LPWAN Developer D4 Gateway** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK7244 LPWAN Developer D4 Gateway** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Supported LoRa Network Servers](../Supported-LoRa-Network-Servers/)
@@ -31,9 +31,9 @@ Purchasing the [RAK2013 WisLink Cellular Pi Hat](../../RAK2013) separately with 
 
 The **RAK7244 WisGate Developer D4 Gateway** is a complete and cost efficient Gateway Solution that will help you get started in developing a full LoRa System. It is built with the **RAK2245 Pi HAT** stacked with the newest **Raspberry Pi 4**, along with the GPS module and Heat Sink, increasing its performance and thermal dissipation. The housing for the device is durable and entirely built from aluminum.
 
-The gateway has a powerful LoRa digital signal processing engine from Semtech SX1301 RF front end chip. It is capable of receiving up to 8 LoRa packets simultaneously sent with different spreading factors on different channels. It is available in multiple variants to be accessible in all LoRa Alliance® frequency bands. This breakthrough allows innovative network architectures to be implemented that has a huge impact over other short range systems.
+The gateway has a powerful LoRa digital signal processing engine from Semtech SX1301 RF front end chip. It is capable of receiving up to 8 LoRa packets simultaneously sent with different spreading factors on different channels. It is available in multiple variants to be accessible in all LoRa Alliance® frequency bands. This breakthrough allows innovative network architectures to be implemented that have a huge impact on other short range systems.
 
-Overall, this gateway has various functionalities that are ideal for prototyping, proof-of-concept demonstrations and evaluation on future deployment scenarios. With its ready to use Raspbian based firmware, it is now possible to connect the Gateway to any standard LoRaWAN Server. The device is capable of tackling applications related to Smart Grids, Intelligent Farms and other IoT Enterprise applications.
+Overall, this gateway has various functionalities that are ideal for prototyping, proof-of-concept demonstrations and evaluation of future deployment scenarios. With its ready to use Raspbian based firmware, it is now possible to connect the Gateway to any standard LoRaWAN Server. The device is capable of tackling applications related to Smart Grids, Intelligent Farms and other IoT Enterprise applications.
 
 
 ## Product Features

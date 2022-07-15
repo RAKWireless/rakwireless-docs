@@ -19,10 +19,9 @@ certifications:
 
 **RAK5005-O WisBlock Base** module is the main board that allows you to attach **WisBlock modules** through the standardized expansion connectors. In addition, the **WisBlock Base** module also comprises a USB port, indicator LEDs, buttons, and extended IO interfaces.
 
-**WisBlock modules** are flexible building block designs built by RAKWireless for the IoT industry. **WisBlock modules** support dozens of types of CPUs, sensors, and interface circuit boards. This concept allows you to build your own electronic solutions very quickly, using building blocks to materialize your new ideas. Also, through high-speed connectors and easily attachable interconnections, you will be able to composite reliable industrial products.
+**WisBlock modules** are flexible building blocks built by RAKWireless for the IoT industry. **WisBlock modules** support dozens of types of CPUs, sensors, and interface circuit boards. This concept allows you to build your own electronic solutions very quickly, using building blocks to materialize your new ideas. Also, through high-speed connectors and easily attachable interconnections, you will be able to build reliable industrial products.
 
 If you can't find a module that fits your IoT requirements, use the standard connectors of WisBlock to develop your own specific function module. WisBlock supports open-source hardware architecture and you can find tutorials showing how to create your own [Awesome WisBlock](https://github.com/RAKWireless/Awesome-WisBlock) module.
-
 
 ### Applications
 
@@ -35,21 +34,20 @@ If you can't find a module that fits your IoT requirements, use the standard con
 
 ### Main Features
 
-* Flexible building block design, which enables modular function realization and expansion
-* With high-speed interconnection connectors in the WisBlock Base board to ensure the signal integrity
-* Supports multiple types of low power MCUs
-* Supports multiple types of sensors. A single board can support a combination of up to four different types of sensors
-* Provides an interface for additional extensions
-* Low power battery power supply
-* Supports lithium battery charging
-* Supports solar charging
-* Fulfills Industrial level design
-* Compact size, the minimum size is: 60 x 30&nbsp;mm
-
+* Flexible building block design, which enables modular function realization and expansion.
+* With high-speed interconnection connectors in the WisBlock Base board to ensure the signal integrity.
+* Supports multiple types of low-power MCUs.
+* Supports multiple types of sensors. A single board can support a combination of up to four different types of sensors.
+* Provides an interface for additional extensions.
+* Low-power battery power supply.
+* Supports lithium battery charging.
+* Supports solar charging.
+* Fulfills Industrial level design.
+* Compact size, the minimum size is: 60 x 30&nbsp;mm.
 
 ### Typical Application
 
-WisBlock module can be used for quickly building prototypes. It allows you to select and combine different functional modules, sensors to implement a customized product in a very short period.
+WisBlock can be used for quickly building prototypes. It allows you to select and combine different functional modules, sensors to implement a customized product in a very short period.
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/1.wisblock-diagram.svg"
@@ -57,15 +55,13 @@ WisBlock module can be used for quickly building prototypes. It allows you to se
   caption="WisBlock Ecosystem"
 />
 
-
-WisBlock series modules are not only for the rapid implementation of engineering prototypes but it is also designed for massive production-ready applications. The modules can be used together with RAK industrial protective housing to create products ready for industrial environments. Under the unified management of WisDM, a complete end-to-end IoT solution is formed by aggregating data of wireless nodes through the RAK industrial gateways.
+WisBlock modules are not only for the rapid implementation of engineering prototypes but are also designed for massive production-ready applications. The modules can be used together with RAK industrial protective housing to create products ready for industrial environments. Under the unified management of WisDM, a complete end-to-end IoT solution is formed by aggregating data of wireless nodes through the RAK industrial gateways.
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/2.wisblock-applications.png"
   width="90%"
   caption="WisBlock Applications"
 />
-
 
 ### WisBlock Architecture
 
@@ -77,12 +73,11 @@ WisBlock is designed for modularity. In **Figure 3**, the whole ecosystem is dep
   caption="WisBlock Architecture"s
 />
 
-
 ## Specifications
 
 ### Overview
 
-There are six (6) slots on RAK5005-O WisBlock Base. The **CPU SLOT** is reserved for the WisBLock Core module which has the main MCU. The **IO SLOT** is used for IO extension, for example, RS485 module, 4-20&nbsp;mA/0-5&nbsp;V module, Wireless modules. **SLOT A**, **SLOT B**, **SLOT C**, and **SLOT D** are used to connect with the I2C module, while **SLOT A** can be used for GPS board too. Also, there are **2.54&nbsp;mm pitch connectors** for [extension interface](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#j10-j11-j12-headers/), such as **I2C**, **UART**, and **GPIO pins**.
+There are six (6) slots on RAK5005-O WisBlock Base. The **CPU SLOT** is reserved for the WisBLock Core module, which has the main MCU. The **IO SLOT** is used for IO extension, for example, RS485 module, 4-20&nbsp;mA/0-5&nbsp;V module, Wireless modules. **SLOT A**, **SLOT B**, **SLOT C**, and **SLOT D** are used to connect with the I2C module, while **SLOT A** can be used for the GPS board too. Also, there are **2.54&nbsp;mm pitch connectors** for [extension interface](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#j10-j11-j12-headers/), such as **I2C**, **UART**, and **GPIO pins**.
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/4.board-overview.svg"
@@ -90,8 +85,7 @@ There are six (6) slots on RAK5005-O WisBlock Base. The **CPU SLOT** is reserved
   caption="RAK5005-O Top and Bottom View"
 />
 
-
-For convenience, there is a USB connector for debugging. It is connected directly to MCU’s USB port (if supported). You can access the internal MCU by connecting to a computer’s USB port directly. This USB connector is also used as a battery charging port.
+For convenience, there is a USB connector for debugging. It is connected directly to the MCU’s USB port (if supported). You can access the internal MCU by connecting to a computer’s USB port directly. This USB connector is also used as a battery charging port.
 
 Each module has a method designed to connect and fasten the module easily. These connectors are **high-speed board-to-board connectors**, they provide signal integrity for each data bus. A set of screws are used for attaching the module under the environment with vibrations.
 
@@ -103,7 +97,7 @@ To avoid electromagnetic interference and heating interference, the sensor conne
   caption="Bottom view of the board with interfaces"
 />
 
-For example, it is recommended to attach a temperature sensor outside of the base board, as shown in **Figure 6**. It allows getting more accurate measurements since the temperature sensor located in the top layer of the base board could be interfered with by the heating introduced by other modules.
+For example, it is recommended to attach a temperature sensor outside of the base board, as shown in **Figure 6**. It allows getting more accurate measurements since the the heating introduced by other modules could interfere with the temperature sensor located on the top layer of the base board.
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/7.temperature-sensor-out.png"
@@ -111,11 +105,9 @@ For example, it is recommended to attach a temperature sensor outside of the bas
   caption="Out of the board Temperature Sensor"
 />
 
-
 #### Block Diagram
 
 The block diagram, shown in **Figure 7**, shows the internal architecture and external interfaces of the RAK5005-O board.
-
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/8.block-diagram.png"
@@ -135,9 +127,7 @@ The block diagram, shown in **Figure 7**, shows the internal architecture and ex
 
 The MCU in the WisBlock Core module offers the I2C, UART, and SPI data buses to the sensor modules. Through these buses, the MCU can control and retrieve data from the sensors. In addition, the IO module connects to the USB, GPIO, and ADC buses allowing you to access all of the MCU interfaces.
 
-Some types of MCU have fewer IO pins. In such cases, not all the pins of the data bus are connected. For example, only I2C and UART are connected. Some MCU IO pins have an alternate function, you can modify its function by software or rework the hardware to redefine the function of IO. Refer to the datasheet of WisBlock Core to get all the details.
-
-
+Some types of MCU have fewer IO pins. In such cases, not all the pins of the data bus are connected. For example, only I2C and UART are connected. Some MCU IO pins have an alternate function, you can modify their function by software or rework the hardware to redefine the function of the IO pins. Refer to the datasheet of WisBlock Core to get all the details.
 
 ##### Power Supply Diagram of RAK5005-O
 
@@ -149,11 +139,11 @@ Some types of MCU have fewer IO pins. In such cases, not all the pins of the dat
 
 The RAK5005-O is designed to be powered by a battery and provides the charger circuitry for **lithium batteries**. The charger circuitry can be connected to a wall outlet charger through the micro USB connector, or the specific connector for a solar panel.
 
-A low quiescent current LDO is used for generating 3.3&nbsp;V. This 3.3&nbsp;V power supply drives the consumption of the WisBlock Core module the sensor modules, and the IO module directly. The max current supported by the 3.3&nbsp;V LDO is 750&nbsp;mA.
+A low quiescent current LDO is used to generate 3.3&nbsp;V. This 3.3&nbsp;V power supply drives the consumption of the WisBlock Core module, the sensor modules, and the IO module directly. The max current supported by the 3.3&nbsp;V LDO is 750&nbsp;mA.
 
 VDD is generated by the MCU module to drive sensor and IO modules. The MCUs are usually powered by the 3.3&nbsp;V, and can provide different levels of voltage: 3.3&nbsp;V, 2.5&nbsp;V, and 1.8&nbsp;V to their IO pins through regulators in the WisBlock Core board.
 
-3V3_S is another 3.3&nbsp;V power supply, it can be controlled by the MCU in order to disconnect the power sensors during idle periods to save power. 3V3_S is controlled by the IO2 pin on the WisBlock Core board. 
+3V3_S is another 3.3&nbsp;V power supply, it can be controlled by the MCU in order to disconnect the power sensors during idle periods to save power. 3V3_S is controlled by the IO2 pin on the WisBlock Core board.
 
 - Set **IO2=1**, 3V3_S is on.
 - Set **IO2=0**, 3V3_S is off.
@@ -161,7 +151,7 @@ VDD is generated by the MCU module to drive sensor and IO modules. The MCUs are 
 
 ### Hardware
 
-The hardware specification is categorized into six parts. It discusses the interfacing, pinouts, and their corresponding functions and diagrams. It also covers the electrical, mechanical, and environmental parameters that include the tabular data of the functionalities and standard values of the RAK5005-O WisBlock Base Board.
+The hardware specification is split into six parts. It discusses the interfacing, pinouts, and their corresponding functions and diagrams. It also covers the electrical, mechanical, and environmental parameters that include the tabular data of the functionalities and standard values of the RAK5005-O WisBlock Base Board.
 
 #### Interfaces
 
@@ -195,10 +185,9 @@ The Micro-B USB connector is compliant with the USB2.0 specification. This USB i
 | 4       | NC                   |
 | 5       | GND                  |
 
-
 ##### J10, J11, J12 Headers
 
-On the WisBlock, there are three pieces of **2.54&nbsp;mm pitch header** for IO extension. Some data bus and signal from the MCU module are also connected to these headers, such as I2C, UART, ADC, etc.
+On the WisBlock, there are three **2.54&nbsp;mm pitch headers** for IO extension. Some data bus and signals from the MCU module are also connected to these headers, such as I2C, UART, ADC, etc.
 
 ##### J10 Pin Definition
 
@@ -209,7 +198,6 @@ On the WisBlock, there are three pieces of **2.54&nbsp;mm pitch header** for IO 
 | 3       | UART1 TX                                                                                             |
 | 4       | UART1 RX                                                                                             |
 
-
 ##### J11 Pin Definition
 
 | **Pin** | **Description**                  |
@@ -219,7 +207,6 @@ On the WisBlock, there are three pieces of **2.54&nbsp;mm pitch header** for IO 
 | 3       | - IO2<br>- Used for 3V3_S enable |
 | 4       | VBAT                             |
 
-
 ##### J12 Pin Definition
 
 | **Pin** | **Description** |
@@ -228,7 +215,6 @@ On the WisBlock, there are three pieces of **2.54&nbsp;mm pitch header** for IO 
 | 2       | GND             |
 | 3       | I2C clock       |
 | 4       | I2C data        |
-
 
 ##### Battery Connector
 The GND pin, as shown in **Figure 9**, is highlighted in a red box
@@ -246,7 +232,6 @@ The pin definition of a Li-ion battery connector is shown in the table below.
 | 1       | GND          | GND                     |
 | 2       | VBAT         | Positive of the battery |
 
-
 :::tip 📝 NOTE
 The voltage of the battery **must not exceed 4.3&nbsp;V**.
 :::
@@ -263,13 +248,10 @@ The GND pin, as shown in **Figure 10**, is highlighted in a red box
 
 The pin definition of the solar panel connector is shown in the table below.
 
-
 | **Pin** | **Pin Name** | **Description**         |
 | ------- | ------------ | ----------------------- |
 | 1       | GND          | GND                     |
 | 2       | Vin          | Positive of solar panel |
-
-
 
 :::tip 📝 NOTE
 The output of the solar panel **must not exceed 5.5&nbsp;V**. Otherwise, it may cause permanent damage to the board.
@@ -287,13 +269,11 @@ Three LEDs are used to indicate the operating status. Below are the functions of
 
 The Reset Push Button is connected to the MCU module. When pushed, it resets the MCU.
 
-
 #### Pin Definition
 
 ##### Connector for WisBlock Core
 
 The **MCU module connector** is a 40-pin board-to-board connector. It is a high-speed and high-density connector, with an easy attaching mechanism.
-
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/12.mcu-module connector.png"
@@ -373,7 +353,6 @@ As for the following table, it shows the definition of each pin of WisBlock Core
 | 39             | GND          | S        | Ground                                                                               |
 | 40             | GND          | S        | Ground                                                                               |
 
-
 ##### Connectors for WisBlock Sensor
 
 The sensor module connector is a **24-pin board to board connector**.
@@ -383,7 +362,6 @@ The sensor module connector is a **24-pin board to board connector**.
   width="35%"
   caption="WisSensor module connector"
 />
-
 
 :::tip 📝 NOTE
 There are four connectors reserved for the sensor modules on the RAK5005-O: **connector A, B, C**, and **D**. The pin definition of **connector A** is different from the definition of the **connector B-D**.
@@ -408,7 +386,7 @@ The pinout definition of the WisBlock Modules with 24-pin connector on WisBlock 
 
 <br>
 
-As for the following table, it shows the pin name and description of each pin in the WisSensor module connector.
+The following table shows the pin name and description of each pin in the WisSensor module connector.
 
 | **Pin Number** | **Connector A** | **Connector B** | **Connector C** | **Connector D** | **Type** | **Description**                                                                                                                                |
 | -------------- | --------------- | --------------- | --------------- | --------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -424,32 +402,28 @@ As for the following table, it shows the pin name and description of each pin in
 | 10             | IO2             | IO1             | IO4             | IO6             | I/O      | - General purpose IO.<br>- IO2 control the power switch of 3V3_S. When 3V3_s function is used, Io2 can not be used as interrupt of the sensor. |
 | 11             | 3V3_S           | 3V3_S           | 3V3_S           | 3V3_S           | S        | - 3.3&nbsp;V power supply<br>- Can be shutdown by the CPU module.                                                                              |
 | 12             | IO1             | IO2             | IO3             | IO5             | I/O      | - General purpose IO<br>- IO controls the power switch of 3V3_S. When 3V3_S function is used, IO2 cannot be used as interrupt of the sensor.   |
-| 13             | NC              | NC              | NC              | NC              | NC       | Not connect                                                                                                                                    |
+| 13             | NC              | NC              | NC              | NC              | NC       | Not connected                                                                                                                                  |
 | 14             | 3V3_S           | 3V3_S           | 3V3_S           | 3V3_S           | S        | - 3.3&nbsp;V power supply<br>- Can be shutdown by CPU module                                                                                   |
-| 15             | NC              | NC              | NC              | NC              | NC       | Not connect                                                                                                                                    |
-| 16             | VDD             | VDD             | VDD             | VDD             | S        | - Generates by CPU module<br>- Use for power sensor board if the MCU IO level is not 3.3V.                                                     |
-| 17             | NC              | NC              | NC              | NC              | NC       | Not connect                                                                                                                                    |
-| 18             | NC              | NC              | NC              | NC              | NC       | Not connect                                                                                                                                    |
-| 19             | NC              | NC              | NC              | NC              | NC       | Not connect                                                                                                                                    |
-| 20             | NC              | NC              | NC              | NC              | NC       | Not connect                                                                                                                                    |
-| 21             | NC              | NC              | NC              | NC              | NC       | Not connect                                                                                                                                    |
-| 22             | NC              | NC              | NC              | NC              | NC       | Not connect                                                                                                                                    |
+| 15             | NC              | NC              | NC              | NC              | NC       | Not connected                                                                                                                                  |
+| 16             | VDD             | VDD             | VDD             | VDD             | S        | - Generated by CPU module<br>- Use for power sensor board if the MCU IO level is not 3.3V.                                                     |
+| 17             | NC              | NC              | NC              | NC              | NC       | Not connected                                                                                                                                  |
+| 18             | NC              | NC              | NC              | NC              | NC       | Not connected                                                                                                                                  |
+| 19             | NC              | NC              | NC              | NC              | NC       | Not connected                                                                                                                                  |
+| 20             | NC              | NC              | NC              | NC              | NC       | Not connected                                                                                                                                  |
+| 21             | NC              | NC              | NC              | NC              | NC       | Not connected                                                                                                                                  |
+| 22             | NC              | NC              | NC              | NC              | NC       | Not connected                                                                                                                                  |
 | 23             | GND             | GND             | GND             | GND             | S        | Ground                                                                                                                                         |
 | 24             | RXD1            | NC              | NC              | NC              | NC       | - Not connected.<br>- UART RX signal on connector A                                                                                            |
 
-
 ##### Connector for WisBlock IO Slot
 
-
 The WisBlock Module IO Slot connector, as shown in **Figure 13**, is a **40-pin board to board connector**.
-
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/14.wisio-module-connector.png"
   width="35%"
   caption="WisBLock IO slot connector"
 />
-
 
 The pinout definition of the WisBlock IO slot module connector is shown in the table below. 
 
@@ -504,8 +478,8 @@ As for the following table, it shows the pin name and description of the WisBloc
 | 20             | I2C1_SCL     | I/O      | The first set of I2C clock signal                                                                 |
 | 21             | AIN0         | A        | Analog input for ADC                                                                              |
 | 22             | AIN1         | A        | Analog input for ADC                                                                              |
-| 23             | NC           | NC       | Not connect                                                                                       |
-| 24             | NC           | NC       | Not connect                                                                                       |
+| 23             | NC           | NC       | Not connected                                                                                     |
+| 24             | NC           | NC       | Not connected                                                                                     |
 | 25             | SPI_CS       | I/O      | SPI chip select signal                                                                            |
 | 26             | SP_CLK       | I/O      | SPI clock                                                                                         |
 | 27             | SPI_MISO     | I/O      | SPI MISO signal                                                                                   |
@@ -554,9 +528,8 @@ The RAK5005-O is designed for **low-power IoT products** and the power supply us
 | **Conditions**                                      | **Current** | **Unit** |
 | --------------------------------------------------- | ----------- | -------- |
 | Leakage current, without any module on RAK5005-O    | 2           | µA       |
-| Idle current, with MCU and sensor, is in sleep mode | 10          | µA       |
-| Working current, with LoRa module, is transmitting  | 130         | µA       |
-
+| Idle current, with MCU and sensor, in sleep mode    | 10          | µA       |
+| Working current, with LoRa module, transmitting     | 130         | mA       |
 
 ##### Battery and Solar Panel Specification
 
@@ -586,11 +559,9 @@ A suitable Li-Ion battery should have the following parameters as shown in the t
 | Capacity          | As required          |
 | Discharge current | At least 500&nbsp;mA |
 
-
 :::tip 📝 NOTE
 If a non-rechargeable battery is connected to the RAK5005-O, rework the hardware by removing the R17 on the bottom of RAK5005-O to disconnect the charger circuit. Otherwise, the USB port with try to charge the battery, and will damage the non-rechargeable battery, might damage the board, and is considered a fire or explode hazard.
 :::
-
 
 ##### Solar Panel Connector
 
@@ -622,7 +593,6 @@ A 5&nbsp;V Solar panel can be connected to the board via the **P2 connector** to
   caption="RAK5005-O Mounting Holes location and diameter"
 />
 
-
 ##### WisConnector PCB Layout
 
 <rk-img
@@ -645,13 +615,11 @@ The table below lists the operation and storage temperature requirements of RAK5
 
 The component schematics diagram of the RAK5005-O are shown in **Figure 18** and **Figure 19**:
 
-
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/16.schematic1.png"
   width="100%"
   caption="RAK5005-O Schematic Diagram"
 />
-
 
 <rk-img
   src="/assets/images/wisblock/rak5005-o/datasheet/17.schematic2.png"
@@ -659,20 +627,17 @@ The component schematics diagram of the RAK5005-O are shown in **Figure 18** and
   caption="RAK5005-O Schematic Diagram"
 />
 
+## Modules Supported
 
-## Module Supported
-
-This section discusses a brief introduction to the WisBlock module. It helps you to understand and choose the module you want. About the detail of each module, refer to the reference manual of the respective module.
+This section discusses a brief introduction to the WisBlock modules. It helps you to understand and choose the modules you want. About the detail of each module, refer to the reference manual of the respective module.
 
 ### WisBlock Module in Production
 
-
-RAK5005-O supports different kinds of modules, according to the function and its position on the RAK5005-O.  WisBlock series modules are divided into the following categories:
+RAK5005-O supports different kinds of modules, according to the function and its position on the RAK5005-O. WisBlock series modules are divided into the following categories:
 
 - [WisBlock Core](/Product-Categories/WisBlock/#wisblock-core/)
 
-WisBlock Core module is the core computing and wireless connectivity unit within the WisBlock series. It integrates an MCU, a LoRa, a WiFi-BLE, or other wireless transceiver modules in a single package. The data collected by sensors are processed by the MCU and sent to the cloud through LoRa or WiFi wireless links. The BLE interface can also be used for short-range communication and indoor positioning function.
-
+WisBlock Core module is the core computing and wireless connectivity unit within the WisBlock series. It integrates an MCU, a LoRa module, a WiFi-BLE module, or other wireless transceiver modules in a single package. The data collected by sensors are processed by the MCU and sent to the cloud through LoRa or WiFi wireless links. The BLE interface can also be used for short-range communication and indoor positioning function.
 
 The table below shows the WisBlock Core modules:
 
@@ -691,7 +656,6 @@ The table shows the WisBlock Wireless modules:
 | ------- | ----------------------- | ---------------------- |
 | RAK2305 | WiFi Interface Module   | Espressif ESP32 WROVER |
 | RAK5860 | NB-IoT Interface Module | Quectel BG77           |
-
 
 - [WisBlock Sensor](/Product-Categories/WisBlock/#wisblock-sensor/)
 
@@ -722,7 +686,6 @@ WisBlock Interface modules provide your application with interfaces to other sys
 | RAK5804 | Interface Extension Module    |
 | RAK5811 | 0-5&nbsp;V Interface Module   |
 
-
 - [WisBlock Display](/Product-Categories/WisBlock/#wisblock-display/)
 
 WisBlock Display modules add visual display options to WisBlock. WisBlock Display offers graphic displays and LED for WisBlock solutions. The table below shows the WisBlock Display modules:
@@ -742,13 +705,13 @@ WisBlock Extra modules are add-ons for WisBlock. This category includes extensio
 
 - [WisBlock Storage](/Product-Categories/WisBlock/#wisblock-storage/)
 
-WisBlock Storage extends the memory capabilities of WisBlock solutions with different storage options like Flash, EEPROM, or SD-Card slots.
-The table below shows the [WisBlock Storage](/Product-Categories/WisBlock/#wisblock-storage) modules:
+WisBlock Storage extends the memory capabilities of WisBlock solutions with different storage options like Flash, EEPROM, or SD-Card slots. The table below shows the [WisBlock Storage](/Product-Categories/WisBlock/#wisblock-storage) modules:
 
 | **P/N**  | **Function**  | **Chipset**            |
 | -------- | ------------- | ---------------------- |
 | RAK15000 | EEPROM Module | Microchip AT24CM02     |
 | RAK15001 | Flash Module  | Gigadevice GD25Q16CNIG |
+| RAK15002 | SD Card       | SD Card Module         |
 
 - [WisBlock Power](/Product-Categories/WisBlock/#wisblock-power)
 
@@ -759,7 +722,6 @@ The table below shows the WisBlock Power module:
 | **P/N**  | **Function**          | **Chipset** |
 | -------- | --------------------- | ----------- |
 | RAK19002 | WisBlock Boost Module | TPS61046    |
-
 
 ### WisBlock: Function and Data Bus Supported
 

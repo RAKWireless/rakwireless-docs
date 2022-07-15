@@ -27,7 +27,7 @@ Pilot Gateway Pro is ideal for prototyping, proof-of-concept demonstration, or e
 ### Features
 
 - Preassembled, fully functioning gateway
-- **SX1301 baseband processor**, emulates 49 x LoRa demodulators 10 programmable parallel demodulation paths, support 8 uplinks channel and 1 downlink channel
+- **SX1301 baseband processor**, emulates 49 x LoRa demodulators 10 programmable parallel demodulation paths, supports 8 uplinks channel and 1 downlink channel
 - Built-in **Ublox MAX-7Q GPS Module**
 - Built-in heat sink for thermal heat dissipation management 
 - Supports 5&nbsp;V / 2.5&nbsp;A power supply
@@ -174,7 +174,7 @@ It is highly recommended, to use optimized RSSI calibration values, which is par
 
 ##### LoRa
 
-The LoRa Antenna with RP-SMA male connector shown in **Figure 7**.
+The LoRa Antenna with RP-SMA male connector is shown in **Figure 7**.
 
 <rk-img
   src="/assets/images/wisgate/rak7243/datasheet/7.lora-antenna.png"

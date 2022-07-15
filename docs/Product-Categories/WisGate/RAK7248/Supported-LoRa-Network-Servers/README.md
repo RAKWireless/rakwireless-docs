@@ -144,7 +144,7 @@ cd basicstation
 ```
 
 :::tip 📝 NOTE:
-Run the following commands in the basicstaion directory.
+Run the following commands in the basicstation directory.
 :::
 
 4. Install all the dependencies by running the following command:
@@ -153,7 +153,7 @@ Run the following commands in the basicstaion directory.
 make platform=corecell variant=std
 ```
 
-5. Replace the file `loragw_stts751.c` file using following command:
+5. Replace the file `loragw_stts751.c` file using the following command:
 
 
 ```bash
@@ -222,7 +222,7 @@ cp lns-ttn/station.conf lns-aws/
   caption="Provisioning Credentials"
 />
 
-12. All the configurations about basics stations are ready. You should now have the files as follows:
+12. All the configurations for basics stations are ready. You should now have the files as follows:
 
 ```bash
 pi@rak-gateway:~/basicstation/examples/corecell/lns-aws $ ls -al
@@ -265,7 +265,7 @@ WantedBy=multi-user.target
 sudo systemctl daemon-reload
 ```
 
-15. Restart the ttn-gateway service to load the new service configuration. Unit file must be restated if you modify the running unit file.
+15. Restart the ttn-gateway service to load the new service configuration. The unit file must be restarted if you modify the running unit file.
 
 ```bash
 sudo systemctl restart ttn-gateway.service
@@ -455,7 +455,7 @@ Create the lambda function to process device messages processed by the destinati
 14. Configure the MQTT client to subscribe to "**#**" (all topics).
 15. Click on **Test** in the Lambda function page to generate the test event you just created.
 16. Verify the published data in the AWS IoT Core MQTT Test client:
-    - Open another window. Go to **AWS IoT Console**, select **Test** under Subscription Topic, **enter #** and select to **Subscribe to topic**.
+    - Open another window. Go to **AWS IoT Console**, select **Test** under Subscription Topic, **enter #** and select **Subscribe to topic**.
     - The output should look similar to this:
 
         ```json
@@ -489,7 +489,7 @@ In this section, you create the IoT rule that forwards the device payload to you
 5. Leave the default Rule query statement '**SELECT * FROM 'iot/topic**' unchanged. This query has no effect at this time, as traffic is currently forwarded to the rules engine based on the destination.
 6. Under **Set one or more actions**, choose **Add action**.
 7. On the Select an action page, choose **Republish a message to an AWS IoT topic**. Scroll down, and choose **Configure action**.
-8. On the Configure action page, for Topic, enter **_project/sensor/decoded_**.The AWS IoT Rules Engine will forward messages to this topic.
+8. On the Configure action page, for Topic, enter **_project/sensor/decoded_**. The AWS IoT Rules Engine will forward messages to this topic.
 9. Under **Choose or create a role to grant AWS IoT access to perform this action**, select **Create Role**.
 10. For Name, enter a name of your choice.
 11. Choose **Create role** to complete the role creation.  You will see a "**Policy Attached**" tag next to the role name, indicating that the Rules Engine has been permitted to execute the action.
@@ -612,7 +612,7 @@ Send message from end-device using AT command: `at+send:lora:1:01670110`. Here i
 
 #### Send Downlink Payload
 
-This section shows how to send downlink payload from AWS IoT LoRaWAN Server to end-device.
+This section shows how to send a downlink payload from AWS IoT LoRaWAN Server to end-device.
 
 ##### Install the AWS SAM CLI
 
@@ -734,7 +734,7 @@ Amazon QuickSight lets you easily create and publish interactive BI dashboards t
 15. Choose **Create data source**, and then choose **Visualize**.
 16. Select the dataset created, then select **Refresh** or **Schedule Refresh** for a periodic refresh of the dataset.
 
-#### Testing Your "Hello Word" Application
+#### Testing Your "Hello World" Application
 
 Using your device, create a condition to generate an event such as a high-temperature condition. If the temperature is above the configured threshold, then you will receive a text alert on your phone. This alert will include key parameters about the alert.
 
@@ -743,7 +743,7 @@ You can also visualize the data set as follows:
 1. Go to the [AWS IoT Analytics console](http://console.aws.amazon.com/iotanalytics).
 2. Choose **Data sets**.
 3. Select the dataset created earlier.
-4. Select **Content** and ensure there are at least few uplink entries available in the data set. 
+4. Select **Content** and ensure there are at least a few uplink entries available in the data set. 
 5. Go to the [**QuickSight console**](http://quicksight.aws.amazon.com/).
 6. Choose **New analysis**.
 7. Choose the dataset created in [**Create an IoT Analytics Rule**](#create-an-iot-analytics-rule).

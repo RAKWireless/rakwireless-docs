@@ -12,7 +12,7 @@ tags:
 
 # RAK7246G WisGate Developer D0
 
-Thank you for choosing **RAK7246G WisGate Developer D0 Gateway** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK7246G WisGate Developer D0 Gateway** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [AWS Greengrass V2 Guide](../AWS-Greengrass/)

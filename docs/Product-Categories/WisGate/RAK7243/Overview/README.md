@@ -39,7 +39,7 @@ Pilot Gateway Pro is ideal for prototyping, proof-of-concept demonstration, or e
 ## Product Features
 
 - Preassembled, fully functioning gateway
-- **SX1301 baseband processor**, emulates 49 x LoRa demodulators 10 programmable parallel demodulation paths, support 8 uplinks channel and 1 downlink channel
+- **SX1301 baseband processor**, emulates 49 x LoRa demodulators 10 programmable parallel demodulation paths, supports 8 uplinks channel and 1 downlink channel
 - Built-in **Ublox MAX-7Q GPS Module**
 - Built-in heat sink for thermal heat dissipation management 
 - Supports 5&nbsp;V / 2.5&nbsp;A power supply

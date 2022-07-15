@@ -46,7 +46,7 @@ The SIM card slot of the cellular versions is not hot-swappable. Make sure the g
 
 After burning the firmware image onto the SD card, make sure you have inserted the SD card into the **RAK7243 WisGate Developer D3 Gateway** and have the LoRa and GPS Antenna connected. To learn more on how to burn the image, check the [Learn section](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisGate-Developer-Gateway-Firmware-Burning/).
 
-After which, you can now safely power on the gateway. In this section, several ways in accessing the gateway are provided to have different alternatives for you to choose depending on the availability of the requirements needed.
+After which, you can now safely power on the gateway. In this section, several ways to access the gateway are provided to have different alternatives for you to choose from depending on the availability of the requirements needed.
 
 :::warning ⚠️WARNING
 Before powering the Raspberry Pi 3B+, you should connect the LoRa and GPS antennas. Not doing so might damage the boards.
@@ -159,7 +159,7 @@ Once you have logged successfully into your gateway through SSH, you will see th
 
 ##### Linux OS
 
-If the OS of your PC is Linux, you should do the same as the Mac OS, except the root mode.
+If the OS of your PC is Linux, you should do the same as the Mac OS, except for the root mode.
 
 
 ### Accessing the Internet
@@ -170,7 +170,7 @@ Assuming you have successfully logged into your gateway using SSH. Enter the fol
 sudo gateway-config
 ```
 
-The, you will see a page the same as **Figure 11**.
+Then, you will see a page the same as **Figure 11**.
 
 <rk-img
   src="/assets/images/wisgate/rak7243/quickstart/5.accessing the internet/config-options.png"
@@ -179,7 +179,7 @@ The, you will see a page the same as **Figure 11**.
 />
 
 1. **Set pi password** - used to set/change the password of the gateway.
-2. **Setup RAK Gateway Channel Plan** - used to configure the frequency, which the gateway will operate on, and the LoRaWAN Server which the gateway will work with.
+2. **Setup RAK Gateway Channel Plan** - used to configure the frequency, on which the gateway will operate on, and the LoRaWAN Server which the gateway will work with.
 3. **Restart packet-forwarder** - used to restart the LoRa packet forwarder.
 4. **Edit packet-forwarder config** - used to open the `global_conf.json` file, to edit LoRaWAN parameters manually.
 5. **Configure WIFI** - used to configure the Wi-Fi settings in order to connect to a network.
@@ -253,7 +253,7 @@ To enable Wi-Fi Client Mode, you have to disable AP Mode first.
 
 #### Connect through Ethernet
 
-If you want to connect to router through Ethernet cable, do the following steps:
+If you want to connect to the router through an Ethernet cable, do the following steps:
 
 - In the main configuration menu, choose **6 Configure LAN**. This will let you set up a static IP address for the gateway’s Ethernet adapter.
 - Type a static IP address according to the IP address of the router you want to connect. The gateway and the router must be in the same network segment, otherwise the connection will fail.
@@ -330,7 +330,7 @@ Then you will see a page like in **Figure 20**.
 />
 
 1. **Set pi password** - used to set/change the password of the gateway.
-2. **Setup RAK Gateway Channel Plan** - used to configure the frequency, which the gateway will operate on, and the LoRaWAN Server which the gateway will work with.
+2. **Setup RAK Gateway Channel Plan** - used to configure the frequency, on which the gateway will operate, and the LoRaWAN Server which the gateway will work with.
 3. **Restart packet-forwarder** - used to restart the LoRa packet forwarder.
 4. **Edit packet-forwarder config**- used to open the `global_conf.json` file, to edit LoRaWAN parameters manually.
 5. **Configure WIFI** - used to configure the Wi-Fi settings in order to connect to a network.

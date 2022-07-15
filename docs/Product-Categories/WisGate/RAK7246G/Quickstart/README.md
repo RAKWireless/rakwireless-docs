@@ -46,7 +46,7 @@ The SIM card slot of the cellular versions is not hot-swappable. Make sure the g
 
 After burning the firmware image onto the SD Card, make sure you have inserted the SD card into the **RAK7246/RAK7246G WisGate Developer D0/D0+ Gateway** and have the LoRa and GPS Antenna connected. To learn more on how to burn the image, check the [Learn section](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisGate-Developer-Gateway-Firmware-Burning/).
 
-After which, you can now safely power on the gateway. In this section, several ways in accessing the gateway are provided to have different alternatives for you to choose depending on the availability of the requirements needed.
+After which, you can now safely power on the gateway. In this section, several ways to access the gateway are provided to have different alternatives for you to choose from depending on the availability of the requirements needed.
 
 :::warning ⚠️WARNING
 Before powering the Raspberry Pi 4, you should connect the LoRa and GPS antennas. Not doing so might damage the boards.
@@ -82,7 +82,7 @@ SSH (Secure Shell) is typically used to log in to a remote machine and execute c
   caption="Putty Software for SSH in Windows"
 />
 
-- It will then prompt you to enter the username and password. The default username and password is provided below:
+- It will then prompt you to enter the username and password. The default username and password are provided below:
   - **Username**: pi
   - **Password**: raspberry
 
@@ -147,7 +147,7 @@ You will now then see a page the same as **Figure 8**.
 />
 
 1. **Set pi password**- used to set/change the password of the gateway.
-2. **Set RAK Gateway Channel Plan** - used to configure the frequency, which the gateway will operate on, and the LoRaWAN server which the gateway will work with.
+2. **Set RAK Gateway Channel Plan** - used to configure the frequency, on which the gateway will operate, and the LoRaWAN server which the gateway will work with.
 3. **Restart packet-forwarder** - used to restart the LoRa packet forwarder.
 4. **Edit packet-forwarder config** - used to open the `global_conf.json` file, to edit LoRaWAN parameters manually.
 5. **Configure WIFI** - used to configure the Wi-Fi settings to connect to a network.
@@ -172,7 +172,7 @@ There are 5 options to choose from in the Wi-Fi configuration menu:
 2. **Enable Client Mode/Disable AP Mode** - the gateway will work in Wi-Fi Client mode after rebooting, while Wi-FI AP Mode will be disabled.
 3. **Modify SSID and pwd for AP Mode** - used to modify the SSID and password of the Wi-Fi AP. Only works if the Wi-Fi AP Mode is enabled.
 4. **Add New SSID for Client** - this is used if you want to connect to a new Wi-Fi Network. Only works in Wi-Fi Client mode.
-5. **Change Wi-Fi Country** - this is used to modify the resident country to match with Wi-Fi standards.
+5. **Change Wi-Fi Country** - this is used to modify the resident country to match Wi-Fi standards.
 
 :::warning ⚠️ WARNING
 To enable Wi-Fi Client Mode, you have to disable first the AP Mode.
@@ -206,7 +206,7 @@ Make sure to input the correct Wi-Fi SSID and password, or you will not be able 
   caption="SSID of the network you want to connect"
 />
 
-- Type the password. If there is none, leave empty.
+- Type the password. If there is none, leave it empty.
 
 <rk-img
   src="/assets/images/wisgate/rak7246g/quickstart/accessing-internet/set-password.png"
@@ -222,7 +222,7 @@ The configurations under this section are only optional and situational.
 
 If you have entered either or both incorrect Wi-Fi SSID and password in the Wi-Fi Client Mode setup for the RAK7244C WisGate Developer D4+ Gateway to connect to the router, follow these set of steps for you to work again in Wi-Fi AP Mode and redo the setup.
 
-- Remove the SD card from your RAK7244C WisGate Developer D4+ Gateway and insert it into your PC. Your PC should be able to detect it same with **Figure 16**.
+- Remove the SD card from your RAK7244C WisGate Developer D4+ Gateway and insert it into your PC. Your PC should be able to detect it same as **Figure 16**.
 
 <rk-img
   src="/assets/images/wisgate/rak7246g/quickstart/accessing-internet/rak-ap-file.png"
@@ -257,14 +257,14 @@ Then you will see a page like **Figure 17**.
 />
 
 1. **Set pi password** - used to set/change the password of the gateway.
-2. **Setup RAK Gateway Channel Plan** - used to configure the frequency, which the gateway will operate on, and the LoRaWAN Server which the gateway will work with.
+2. **Setup RAK Gateway Channel Plan** - used to configure the frequency, on which the gateway will operate, and the LoRaWAN Server which the gateway will work with.
 3. **Restart packet-forwarder** - used to restart the LoRa packet forwarder.
 4. **Edit packet-forwarder config**- used to open the `global_conf.json` file, to edit LoRaWAN parameters manually.
 5. **Configure WIFI** - used to configure the Wi-Fi settings in order to connect to a network.
 6. **Configure LAN** - used to configure the Ethernet adapter settings.
 
 ::: tip 📝 NOTE:
-A unique ID will be generated in for the gateway. This is also called **gateway EUI** and is essential for registering the gateway with any LoRa Network Server (TTN and ChirpStack).
+A unique ID will be generated for the gateway. This is also called **gateway EUI** and is essential for registering the gateway with any LoRa Network Server (TTN and ChirpStack).
 :::
 
 There is also another way to get your gateway ID, just enter the command below in the command line:
@@ -299,7 +299,7 @@ It is a good security practice to change the default password **raspberry**, whi
   caption="Confirm password change"
 />
 
-3. A success message for changing password will then pop up.
+3. A success message for changing the password will then pop up.
 
 <rk-img
   src="/assets/images/wisgate/rak7246g/quickstart/configure-gateway/success_pwd_change.png"

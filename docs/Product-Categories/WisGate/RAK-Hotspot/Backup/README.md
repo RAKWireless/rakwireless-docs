@@ -17,7 +17,7 @@ RAK
 
 1. **RAK Hotspot**
 2. USB microSD Card Reader
-3. 32GB or larger microSD Card (optional, to store the backup). To maintain similar performance we recommend a UHS-I compliant microSD card, for example Sandisk&trade; High Endurance or Extreme.
+3. 32GB or larger microSD Card (optional, to store the backup). To maintain similar performance we recommend a UHS-I compliant microSD card, for example, Sandisk&trade; High Endurance or Extreme.
 
 
 ### Power Down the RAK Hotspot
@@ -54,7 +54,7 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
 
 ### Image Backup
 
-1. Insert you card, and if you receive the message in the following figure, click "OK".
+1. Insert your card, and if you receive the message in the following figure, click "OK".
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot/backup/mac/3.png"
@@ -87,7 +87,7 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
 />
 
 
-4. This will prompt a window where you select the location you want your image to be created at. Once you click on the blue "Save" button, backup process will start.
+4. This will prompt a window where you select the location you want your image to be created at. Once you click on the blue "Save" button, the backup process will start.
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot/backup/mac/7.png"
@@ -205,7 +205,7 @@ The restoration procedure is even more streamlined than the backup.
   caption="Selecting Storage Device"
 />
 
-2. Navigate to your file either via the folder button or directly enter the a path in the text box.
+2. Navigate to your file either via the folder button or directly enter the path in the text box.
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot/backup/win/8.png"

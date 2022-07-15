@@ -122,7 +122,7 @@ You must use the Wi-Fi MAIN connector to connect the Wi-Fi antenna.
   caption="Adding Spacers"
 />
 
-11. Connect the cables like shown in Figure 10.
+11. Connect the cables as shown in Figure 10.
 * Connect the PH2.0 socket on the motherboard and the charging PCB board with the 2pin signal cable. 
 * Connect the DC socket of the charging PCB board and the battery socket with a DC Plug cable.
 * Plug the output plug of the battery into the DC socket of the motherboard.
@@ -221,7 +221,7 @@ This document shows the step-by-step guide on how to set-up the Solar Panel and 
 ##### Solar Panel
 
 ###### 1. Dimensions
-The dimension of the Solar Panel included in the kit is **665 x 815 millimeter**. Provided in the image below is the detailed dimensions of the solar panel for extended functions. 
+The dimension of the Solar Panel included in the kit is **665 x 815 millimeter**. Provided in the image below are the detailed dimensions of the solar panel for extended functions. 
 
 <rk-img
   src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Solar Panel and Battery Kit Installation/sp-dimensions.jpg"
@@ -231,7 +231,7 @@ The dimension of the Solar Panel included in the kit is **665 x 815 millimeter**
 
 ###### 2. Electrical Characteristics
 
-The table below is the electric characteristics of the Solar Panel included in the kit. It is best advised to have your electric parameters within the set values to maximize its functions and to avoid damage which could furtherly affect your RAK7249 - Macro Outdoor Gateway's performance.
+The table below is the electric characteristics of the Solar Panel included in the kit. It is best advised to have your electric parameters within the set values to maximize its functions and to avoid damage that could furtherly affect your RAK7249 - Macro Outdoor Gateway's performance.
 
 | Maximum Power (Pmax) | 80 Watts | 
 | ---- | ---- | 
@@ -285,10 +285,10 @@ Tighten the bolts as possible as the battery is quite heavy.
   caption="Mounting the Battery to the Bracket"
 />
 
-3. Connect input port power cable of the Lithium Battery to the screw terminals on the back of the Solar Panel. The image below shows the connection on the back of the solar panel.
+3. Connect the input port power cable of the Lithium Battery to the screw terminals on the back of the Solar Panel. The image below shows the connection on the back of the solar panel.
 
 :::warning ⚠️ WARNING
-Make sure to follow the connection in the image below as interchanging the wires would reverse the polarity. Reversing the polarity when connecting the battery is dangerous and may cause fire.
+Make sure to follow the connection in the image below as interchanging the wires would reverse the polarity. Reversing the polarity when connecting the battery is dangerous and may cause a fire.
 :::
 
 <rk-img
@@ -297,7 +297,7 @@ Make sure to follow the connection in the image below as interchanging the wires
   caption="Lithium Battery Input Cord to Solar Panel Connection"
 />
 
-4. The following image then shows where the cable connection between the solar panel entering the input terminal on the battery performed in **Step 3**.
+4. The following image then shows where the cable connection between the solar panel entering the input terminal on the battery is performed in **Step 3**.
 
 <rk-img
   src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Solar Panel and Battery Kit Installation/battery-spanel-outside.jpg"
@@ -318,7 +318,7 @@ Make sure to follow the connection in the image below as interchanging the wires
 :::
 
 :::tip 📝 NOTE
- If you live in extreme condition environment that result in operational time significantly less than 4 days, reconsider into increasing the battery capacity and installing a solar panel with greater power output to compensate such issues.
+ If you live in an extreme condition environment that results in operational time significantly less than 4 days, reconsider increasing the battery capacity and installing a solar panel with greater power output to compensate such issues.
 :::
 
 6. Mount the whole installation you have assembled on top of a circular pole. Put the panel facing up and insert the pole in the pipe opening on the bottom of the construction. Make sure the pole is of a sufficiently small diameter to fit with a recommended value of **65 millimeters**. Use **6 pieces of M8-bolts** to fix the bottom to the construction as shown in the image below. 
@@ -332,7 +332,7 @@ Make sure to follow the connection in the image below as interchanging the wires
 
 ### Lightning Protection
 
-In this document, we will be discussing on how to setup your lightning surge protection system whether be your RAK7249 WisGate Edge Max situated outdoor or indoor. Such protection system must be taken into consideration to ensure a fully functional Gateway without interruption or damage from the lightings.
+In this document, we will be discussing how to set up your lightning surge protection system whether be your RAK7249 WisGate Edge Max situated outdoor or indoor. Such protection system must be taken into consideration to ensure a fully functional Gateway without interruption or damage from the lightings.
 
 <rk-img
   src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Lighting Protection/Diagram.jpg"
@@ -354,7 +354,7 @@ as in the picture).
 
 ##### Gateway Grounding
 
-Additionally it is recommended to use another 10 AWG or better grounding wire to
+Additionally, it is recommended to use another 10 AWG or better grounding wire to
 connect the screw terminal on the bottom right side of the Gateway casing to the
 grounding rail (bar).
 

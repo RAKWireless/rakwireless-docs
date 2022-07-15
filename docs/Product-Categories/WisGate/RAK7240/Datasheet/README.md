@@ -28,7 +28,7 @@ certifications:
 
 ### Description
 
-The **RAK7240 WisGate Edge Prime** is an ideal product for large scale LPWAN deployment where cost is essential, however there is no compromises to be made on quality. Its wide range of customization options allow for flexibility when deploying a solution. With its industrial-grade components and high class of ingress protection, it achieves a high standard of reliability.
+The **RAK7240 WisGate Edge Prime** is an ideal product for large scale LPWAN deployment where cost is essential, however, there is no compromises to be made on quality. Its wide range of customization options allows for flexibility when deploying a solution. With its industrial-grade components and high class of ingress protection, it achieves a high standard of reliability.
 
 The Gateway provides for a solid out of the box experience where quick deployment is required. Additionally, since its software and User Interface sit on top of OpenWRT, it is perfect for the development of custom applications (**via the open SDK**).
 
@@ -94,7 +94,7 @@ The hardware interfaces of **RAK7240 WisGate Edge Prime** include five (5) anten
 
 ##### LED Indicators
 
-The status of the LEDs is described as below. Please refer to the printing of the LEDs on the main board.
+The status of the LEDs is described as below. Please refer to the printing of the LEDs on the mainboard.
 
 | **LEDs**                          | **Status Indication Description**                                                                                                                                                                                                  |
 | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

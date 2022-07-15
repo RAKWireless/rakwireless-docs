@@ -24,7 +24,7 @@ next: ../Testing-Report/
 
 ### Description
 
-The RAK7246G is a LoRaWAN Developer gateway with GPS function. It is a device composed of a the RAK2246 Pi HAT LPWAN Concentrator module and a Raspberry Pi Zero W.
+The RAK7246G is a LoRaWAN Developer gateway with GPS function. It is a device composed of the RAK2246 Pi HAT LPWAN Concentrator module and a Raspberry Pi Zero W.
 
 The RAK2246 Pi HAT is based on a Semtech SX1308 chip, which allows for simultaneous reception over 8 LoRa channels, which cover the entirety of the international high frequency LoRaWAN space.
 
@@ -34,7 +34,7 @@ The RAK7246G is an ideal choice for prototype design, concept verification and d
 
 - Using **SX1308** baseband processor couple with dual **SX1257**, full 8 uplink channels and 1 downlink channel LoRaWAN Gateway
 - Built-in Ublox **MAX-7Q GPS** module
-- The pre-installed radiator guarantees stable thermal performance
+- The pre-installed radiator guarantees a stable thermal performance
 - Tx max **20 dBm**, Rx min **-139 dBm** @ SF12 at 125kHz
 - Covers the entirety of the **LoRa high frequency band space:** RU864, IN865, EU868, US915, AU915, KR920, AS923;
 - Power supply rating **5V / 2.5A (not included).**
@@ -138,7 +138,7 @@ The unique multi data-rate multi-channel demodulation capacity SF7 to SF12 and o
 
 ### Hardware
 
-The hardware specification is categorized into four parts. It includes the interfacing, pinouts and its corresponding functionalities and diagram. It also presents the features of RAK7246G and its parameters.
+The hardware specification is categorized into four parts. It includes the interfacing, pinouts and their corresponding functionalities and diagram. It also presents the features of RAK7246G and its parameters.
 
 
 #### Interfaces
@@ -275,7 +275,7 @@ Also supports 915 Frequency Range.
 
 It is highly recommended, to use optimized RSSI calibration values, which is part of the HAL v3.1. For both, Radio 1 and Radio 2, the RSSI-Offset should be set to -169.0. (It is highly recommended, to use optimized RSSI calibration values, which is part of the HAL v3.1. For both, Radio 1 and Radio 2, the RSSI-Offset should be set to -169.0. )
 
-The following table gives typically sensitivity level of the RAK2246:
+The following table gives typical sensitivity level of the RAK2246:
 
 | **Signal Bandwidth (kHz)** | **Spreading Factor** | **Sensitivity (dBm)** |
 | -------------------------- | -------------------- | --------------------- |
@@ -288,7 +288,7 @@ The following table gives typically sensitivity level of the RAK2246:
 
 ##### RF Key Components
 
-This section introduces the key components in the RAK2246 in order to help developers to utilize the system at its fullest in their designs.
+This section introduces the key components in the RAK2246 in order to help developers to utilize the system to its fullest in their designs.
 
 **1. DC-DC regulator**
 
@@ -339,11 +339,11 @@ Download the latest firmware of RAK7246G in the table provided below. The suppor
 
 #### LoRaWAN Systems, Network Approach
 
-LoRaWAN technology has “Public” and “Private” networks. In both cases the usage of a concentrator module is a must if a multichannel performance is required. Public networks are operator-managed (e.g. telecom companies) networks, whereas private networks are individually managed networks.
+LoRaWAN technology has “Public” and “Private” networks. In both cases, the usage of a concentrator module is a must if a multichannel performance is required. Public networks are operator-managed (e.g. telecom companies) networks, whereas private networks are individually managed networks.
 
 LoRaWAN networks are typically star or multiple-star networks, where a gateway relays the packets between the end-nodes and a central network server. For private network approaches, the server can also be implemented on the gateway host.
 
-Due to the long range LoRa provides the connection between the end-nodes and the gateway (RAK2246) is always a direct link. Repeaters are not common in a LoRaWAN network.
+Due to the long range, LoRa provides the connection between the end-nodes and the gateway (RAK2246) is always a direct link. Repeaters are not common in a LoRaWAN network.
 
 Depending on the used spreading factor and signal bandwidth, different data rates (0.3 kbps to ~22 kbps) and sensitivities down to -142.5 dBm are possible. Spreading factor and signal bandwidth are a trade-off between data rate and communication range.
 
@@ -363,9 +363,9 @@ Due to the fact that spreading factors are orthogonal and the RAK2246 Concentrat
 
 ##### Firmware
 
-The LoRa MAC specification is currently driven by the companies Semtech, IBM and Actility. Currently all available software, firmware and documentation can be found and downloaded from the open source project LoRa-net hosted on [https://github.com/Lora-net](https://github.com/Lora-net).
+The LoRa MAC specification is currently driven by the companies Semtech, IBM and Actility. Currently, all available software, firmware and documentation can be found and downloaded from the open source project LoRa-net hosted on [https://github.com/Lora-net](https://github.com/Lora-net).
 
-This project hosts all parts that are needed to run a network-based on LoRa technology. It includes the node firmware (several hardware platforms are supported), the gateway host software (HAL driver for SX1308, packet forwarder) and a server implementation.
+This project hosts all parts that are needed to run a network-based on LoRa technology. It includes the node firmware (several hardware platforms are supported), the gateway host software (HAL driver for SX1308, packet forwarder) and server implementation.
 
 It is highly recommended to utilize the latest HAL as provided by Semtech.
 

@@ -31,9 +31,9 @@ There is a total of 3 configuration options:
 2. **RAK7244C** - this is the Cellular Version that includes the Raspberry Pi 4, RAK2245, and the RAK2013 Cellular Pi Hat
 3. **RAK7244P** - · this version allows for powering the gateway via PoE by adding the RAK9003 Pi HAT to the base configuration (RPi 4 + RAK2245 + RAK9003)
 
-The built-in RAK2245 Pi HAT uses the SX1301 RF front-end chip from Semtech®, which is a powerful LoRa digital processing engine. It is able to receive up to 8 LoRa packets simultaneously sent with different spreading factors on different channels and available in multiple variants so it can be used for all LoRa Alliance® frequency bands. This unique capability allows for innovative network architectures to be implemented, that are advantageous over other short-range systems. The built-in RAK2013 Cellular Pi HAT in the RAK7244C, is based on the EG95 from Quectel, which is an LTE CAT4 module optimized specifically for M2M and IoT Applications. The RAK7244P is particularly suitable for deployment in cases where there is existing networking infrastructure and PoE is provisioned.
+The built-in RAK2245 Pi HAT uses the SX1301 RF front-end chip from Semtech®, which is a powerful LoRa digital processing engine. It is able to receive up to 8 LoRa packets simultaneously sent with different spreading factors on different channels and is available in multiple variants so it can be used for all LoRa Alliance® frequency bands. This unique capability allows for innovative network architectures to be implemented, that are advantageous over other short-range systems. The built-in RAK2013 Cellular Pi HAT in the RAK7244C is based on the EG95 from Quectel, which is an LTE CAT4 module optimized specifically for M2M and IoT Applications. The RAK7244P is particularly suitable for deployment in cases where there is existing networking infrastructure and PoE is provisioned.
 
-The RAK7244 WisGate Developer D4 Gateway is ideal for prototyping, proof-of-concept demonstrations or for the evaluation on future deployment scenarios. It includes a ready to use Firmware based on Raspbian OS, that makes it possible to connect the Gateway to any standard LoRaWAN Server. It is developer friendly as the large Raspbian OS community is a well-established one. It is especially suited to addressing a variety of applications like Smart Grids, Intelligent Farms and other IoT Enterprise applications.
+The RAK7244 WisGate Developer D4 Gateway is ideal for prototyping, proof-of-concept demonstrations or evaluation of future deployment scenarios. It includes a ready to use Firmware based on Raspbian OS, that makes it possible to connect the Gateway to any standard LoRaWAN Server. It is developer friendly as the large Raspbian OS community is a well-established one. It is especially suited to addressing a variety of applications like Smart Grids, Intelligent Farms and other IoT Enterprise applications.
 
 ### Features
 
@@ -70,7 +70,7 @@ The overview covers the RAK7244 board overview and block diagram of the three co
 
 #### Board Overview
 
-The outer dimensions of Casing are 92 x 68.3 x 57.2mm (LxWxH) as shown below. They are the same for all 3 models: RAK7244/7244C/7244P. The example in Figure 3 is RAK7244C
+The outer dimensions of Casing are 92mm x 68.3mm x 57.2mm (LxWxH) as shown below. They are the same for all 3 models: RAK7244/7244C/7244P. The example in Figure 3 is RAK7244C
 
 <rk-img
   src="/assets/images/wisgate/rak7244/datasheet/board-overview/board-overview.jpg"
@@ -102,7 +102,7 @@ The figure below summarizes the basic building blocks of RAK7244P. It has the sa
 
 ##### RAK7244C
 
-The figure below summarizes the basic building blocks of RAK7244C. It has the same functionality as far as LoRaWAN goes as RAK7244. Its backhaul capabilities, however are enhanced, with the additional of the RAK2013 Cellular HAT. This allows the Gateway to use its LTE modem to forward data to the Cloud.
+The figure below summarizes the basic building blocks of RAK7244C. It has the same functionality as far as LoRaWAN goes as RAK7244. Its backhaul capabilities, however, are enhanced, with the additional of the RAK2013 Cellular HAT. This allows the Gateway to use its LTE modem to forward data to the Cloud.
 
 <rk-img
   src="/assets/images/wisgate/rak7244/datasheet/system-structure/wmishmfyonwnd31mgbph.png"
@@ -112,7 +112,7 @@ The figure below summarizes the basic building blocks of RAK7244C. It has the sa
 
 ### Hardware
 
-The hardware specification is categorized into six parts. It discusses the interfacing, pinouts, and its corresponding functions and diagrams. It also covers the parameters of operating frequencies, antenna, electrical, and environmental.
+The hardware specification is categorized into six parts. It discusses the interfacing, pinouts, and their corresponding functions and diagrams. It also covers the parameters of operating frequencies, antenna, electrical, and environmental.
 
 #### Interfaces
 
@@ -166,7 +166,7 @@ For detailed information about the RAK2245 Pi Hat, Go to the [RAK2245 Pi Hat Dat
 
 ##### RAK2013 Pi HAT
 
-The RAK2013 is an add-on board based on the Raspberry Pi HAT standard that can transmit UART data from Raspberry Pi to the Cellular network. It supports several cellular protocol, such as NB-IOT, CAT-M, CAT1 or CAT 4, by choosing different modular on the board. The device is capable of integrating audio codec and audio amplifier along with the carrier operator's network, plus it supports Voice Over LTE (VoLTE) function. It is easy to use with the earphone connector, MIC connector and speaker connector having audio amplifier.
+The RAK2013 is an add-on board based on the Raspberry Pi HAT standard that can transmit UART data from Raspberry Pi to the Cellular network. It supports several cellular protocols, such as NB-IoT, CAT-M, CAT1 or CAT 4, by choosing different modular on the board. The device is capable of integrating audio codec and audio amplifier along with the carrier operator's network, plus it supports Voice Over LTE (VoLTE) function. It is easy to use with the earphone connector, MIC connector and speaker connector having an audio amplifier.
 
 <rk-img
   src="/assets/images/wisgate/rak7244/datasheet/hardware-structure/wkdg3qk1cnrg3sqhaqsc.png"
@@ -197,7 +197,7 @@ All models of the Developer Gateway support all LoRaWAN bands.
 
 ###### Transmitter RF
 
-The RAK2245 has an excellent transmitter performance. It is highly recommended to use an optimized configuration for the power level configuration, which is part of the HAL. This results are in a mean RF output power level and current consumption.
+The RAK2245 has an excellent transmitter performance. It is highly recommended to use an optimized configuration for the power level configuration, which is part of the HAL. These results are in a mean RF output power level and current consumption.
 
 | **PA Control** | **DAC Control** | **MIX Control** | **DIG Gain** | **Nominal RF Power Level (dBm)** |
 | -------------- | --------------- | --------------- | ------------ | -------------------------------- |
@@ -231,7 +231,7 @@ T = 25℃ at VDD = 5V (Typ.) as default if nothing else stated.
 
 ###### Receiver RF
 
-It is highly recommended, to use optimized RSSI calibration values, which is part of the HAL v3.1. For both, Radio 1 and 2, the RSSI-Offset should be set to -169.0. The following table gives typically sensitivity level of the RAK2245.
+It is highly recommended, to use optimized RSSI calibration values, which is part of the HAL v3.1. For both, Radio 1 and 2, the RSSI-Offset should be set to -169.0. The following table gives typical sensitivity level of the RAK2245.
 
 | **Signal Bandwidth (Khz)** | **Spreading Factor** | **Sensitivity (dBm)** |
 | -------------------------- | -------------------- | --------------------- |
@@ -244,7 +244,7 @@ It is highly recommended, to use optimized RSSI calibration values, which is par
 
 ##### Cellular
 
-The Quectel EG95 is part of the LTE CAT4 module series that are specially optimized for Machine to Machine (M2M) and Internet of Things (IoT) applications. Adopted from 3GPP Rel. 11 LTE technology, which delivers a data rates of 150Mbps downlink and 50Mbps uplink.
+The Quectel EG95 is part of the LTE CAT4 module series that are specially optimized for Machine to Machine (M2M) and Internet of Things (IoT) applications. Adopted from 3GPP Rel. 11 LTE technology, which delivers data rates of 150Mbps downlink and 50Mbps uplink.
 
 | **Frequency**  | **EG95-E**                     | **EG95-NA**              |
 | -------------- | ------------------------------ | ------------------------ |
@@ -286,7 +286,7 @@ The figure below shows the antenna's mechanical dimension.
 
 ##### LTE
 
-The LTE antenna for the Developer Gateway with RP-SMA male connector covers working frequency band from 824MHz to 2690MHz. The antenna is shown in Figure 14.
+The LTE antenna for the Developer Gateway with RP-SMA male connector the covers working frequency band from 824MHz to 2690MHz. The antenna is shown in Figure 14.
 
 
 <rk-img
@@ -392,7 +392,7 @@ The Pilot Gateway Pro operates at 5V/2.5A, that are provisioned through an USB T
 
 #### Environmental Requirements
 
-The table below lists the operation and storage temperature requirements for RAK7244C:
+The table below lists the operation and storage temperature requirements for RAK7244:
 
 | **Parameter**                   | **Min.** | **Typical** | **Max** |
 | ------------------------------- | -------- | ----------- | ------- |
@@ -402,7 +402,7 @@ The table below lists the operation and storage temperature requirements for RAK
 
 ### Software
 
-Download the latest firmware of RAK7244X series in the table provided below.
+Download the latest firmware of the RAK7244X series in the table provided below.
 
 #### Firmware
 

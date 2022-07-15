@@ -244,17 +244,17 @@ If BOOT mode is not initiated, pull to ground the RESET pin twice (or double cli
 
 ##### RAK4630 IO Pins and Peripherals
 
-In this section will be discussed how to use and access the pinouts of RAK4630 using RUI3 APIs. It shows basic code on using digital IO, analog input, UART, and I2C.
+This section discusses how to use and access the pinouts of RAK4630 using RUI3 APIs. It shows basic code on using digital IO, analog input, UART, and I2C.
 
-###### How to use Digital IO
+###### How to Use Digital IO
 
 <rk-img
   src="/assets/images/wisduo/rak4630-module/quickstart/rak4630-digital.png"
   width="90%"
-  caption="Available Digital I/O pins in RAK4630"
+  caption="Available digital I/O pins in RAK4630"
 />
 
-You can use any of the pin as shown in **Figure 22** as Digital Pin by replacing the dot `.` to underscore `_`. See the example code below.
+You can use any of the pins, as shown in **Figure 22**, as Digital Pin by replacing the dot `.` to underscore `_`. See the example code below.
 
 ```c
 /*
@@ -299,7 +299,7 @@ void loop()
 }
 ```
 
-###### How to use Analog Input
+###### How to Uuse Analog Input
 
 <rk-img
   src="/assets/images/wisduo/rak4630-module/quickstart/rak4630-analog.png"
@@ -307,7 +307,7 @@ void loop()
   caption="Available Analog Input pins in RAK4630"
 />
 
-You can use any of the pin as shown in **Figure 23** as Analog Input Pin by replacing the dot `.` to underscore `_`. See the example code below.
+You can use any of the pins, as shown in **Figure 23**, as Analog Input Pin by replacing the dot `.` to underscore `_`. See the example code below.
 
 ```c
 #define analogPin P0_05  // or you can use P0_31
@@ -326,11 +326,11 @@ void loop()
 }
 ```
 
-###### How to use Serial Interfaces
+###### How to Use Serial Interfaces
 
 **UART**
 
-There are two UART peripherals available on RAK4630. There are also different [Serial Operating Modes](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/#rui3-serial-operating-modes) possible in RUI3 namely Binary Mode, AT Mode and Custom Mode.
+There are two UART peripherals available on RAK4630. There are also different [Serial Operating Modes](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/#rui3-serial-operating-modes) possible in RUI3, namely Binary Mode, AT Mode, and Custom Mode.
 
 
 | **Serial Port**           | **Serial Instance Assignment** | **Default Mode**  |

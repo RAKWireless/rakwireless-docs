@@ -12,7 +12,7 @@ tags:
 
 # RAK7248 WisGate Developer D4H
 
-Thank you for choosing **RAK7248 WisGate Developer D4H** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK7248 WisGate Developer D4H** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Supported LoRa Network Servers](../Supported-LoRa-Network-Servers/)
 * [AWS Greengrass V2](../AWS-Greengrass/)
@@ -24,7 +24,7 @@ Thank you for choosing **RAK7248 WisGate Developer D4H** in your awesome IoT Pro
 
 The RAK7248 WisGate Developer D4H RAK7248 is a LoRaWAN® Gateway that consists of Raspberry Pi4, RAK2287 Concentrator, and RAK2287 Pi HAT. RAK2287 includes a GPS module and a heat sink for better performance and thermal heat dissipation management, and its housing is built with an aluminum casing.
 
-For the build-in RAK2287, it uses the **SX1302 chip** from Semtech which built-in LoRa® concentrator IP core is a powerful digital signal processing engine. It can receive up to **8 LoRa packets** with different spreading factors on different channels and available in multiple variants so it can be used for international standard bands. This unique capability allows implementing innovative network architectures advantageous over other short-range systems. RAK2287 Pi HAT is a converter board with Raspberry Pi form factor that enables the RAK2287 module to be mounted on the top of the Raspberry Pi. It integrates one (1) 40-pin female Pi HAT connector and one mPCIe connector to connect RAK2287 to the Raspberry Pi 4.
+For the build-in RAK2287, it uses the **SX1302 chip** from Semtech which built-in LoRa® concentrator IP core is a powerful digital signal processing engine. It can receive up to **8 LoRa packets** with different spreading factors on different channels and is available in multiple variants so it can be used for international standard bands. This unique capability allows implementing innovative network architectures advantageous over other short-range systems. RAK2287 Pi HAT is a converter board with Raspberry Pi form factor that enables the RAK2287 module to be mounted on top of the Raspberry Pi. It integrates one (1) 40-pin female Pi HAT connector and one mPCIe connector to connect RAK2287 to the Raspberry Pi 4.
 
 RAK7248 is ideal for prototyping, proof-of-concept demonstration, or evaluation. It includes a ready to use LoRaWAN Gateway OS that can be connected to a LoRaWAN server. Also, it is developer-friendly and simple even for no-so-tech users to set up a LoRaWAN system. It has to be the best value and function for connectivity to address a variety of applications like Smart Grid, Intelligent Farm, and other IoT enterprise applications.
 

@@ -46,7 +46,7 @@ The SIM card slot of the cellular versions is not hot-swappable. Make sure the g
 
 After burning the firmware image onto the SD Card, make sure you have inserted the SD Card into the **RAK7244C WisGate Developer D4+ Gateway** and have the LoRa and GPS Antenna connected. After which, you can now safely power on the gateway. 
 
-In this document, several ways in accessing the gateway are provided to have different alternatives for you to choose depending on the availability of the requirements needed.
+In this document, several ways to access the gateway are provided to have different alternatives for you to choose from depending on the availability of the requirements needed.
 
 :::warning ⚠️WARNING
 Before powering the Raspberry Pi 4, you should connect the LoRa, GPS, and LTE antennas. Not doing so might damage the boards.
@@ -181,8 +181,8 @@ You will now then see a page the same as **Figure 11**.
 />
 
 1. **Set pi password** - used to set/change the password of the gateway.
-2. **Setup RAK Gateway LoRa Concentrator** - used to configure the frequency, which the gateway will operate on, and the LoRaWAN Server which the gateway will work with.
-3. **Restart packet -forwarder** - used to restart the LoRa packet forwarded process.
+2. **Setup RAK Gateway LoRa Concentrator** - used to configure the frequency, on which the gateway will operate, and the LoRaWAN Server which the gateway will work with.
+3. **Restart packet -forwarder** - used to restart the LoRa packet forwarding process.
 4. **Edit packet-forwarder config-** used to open the `global_conf.json` file, in order to edit LoRaWAN parameters manually.
 5. **Configure WiFi** - used to configure the Wi-Fi settings in order to connect to a network.
 6. **Configure LAN** - used to configure the Ethernet adapter settings.
@@ -213,7 +213,7 @@ There are 5 options to choose from in the Wi-Fi configuration menu:
 2. **Enable Client Mode/Disable AP Mode** - the gateway will work in Wi-Fi Client mode after rebooting, while Wi-FI AP Mode will be disabled.
 3. **Modify SSID and pwd for AP Mode** - used to modify the SSID and password of the Wi-Fi AP. Only works if the Wi-Fi AP Mode is enabled.
 4. **Add New SSID for Client** - this is used if you want to connect to a new Wi-Fi network. Only works in Wi-Fi Client mode.
-5. **Change Wi-Fi Country** - this is used to modify the resident country to match with Wi-Fi standards.
+5. **Change Wi-Fi Country** - this is used to modify the resident country to match Wi-Fi standards.
 
 :::warning ⚠️ WARNING
 To enable Wi-Fi Client Mode, you have to disable first the AP Mode.
@@ -247,7 +247,7 @@ Make sure to input the correct Wi-Fi SSID and Password, or you will not be able 
   caption="SSID of the network you want to connect"
 />
 
-- Type the password. If there is none, leave empty.
+- Type the password. If there is none, leave it empty.
 
 <rk-img
   src="/assets/images/wisgate/rak7244c/quickstart/1.accessing-internet/set-password.png"
@@ -257,7 +257,7 @@ Make sure to input the correct Wi-Fi SSID and Password, or you will not be able 
 
 #### Connect through Ethernet
 
-If you want to connect to router through Ethernet Cable, do the following steps:
+If you want to connect to the router through an Ethernet Cable, do the following steps:
 
 - In the main configuration menu, choose **6 Configure LAN**. This will let you set up a static IP address for the gateway’s Ethernet adapter.
 - Fill in a static IP Address according to the IP address of the router you want to connect to. Please note that the gateway and the router must be in the same network segment; otherwise, the connection will fail.
@@ -293,7 +293,7 @@ The configurations under this section are only optional and situational.
 
 If you have entered either or both incorrect Wi-Fi SSID and password in the Wi-Fi Client Mode setup for the RAK7244C WisGate Developer D4+ Gateway to connect to the router, follow these set of steps for you to work again in Wi-Fi AP Mode and redo the setup.
 
-- Remove the SD card from your RAK7244C WisGate Developer D4+ Gateway and insert it into your PC. Your PC should be able to detect it same with **Figure 19**.
+- Remove the SD card from your RAK7244C WisGate Developer D4+ Gateway and insert it into your PC. Your PC should be able to detect it same as **Figure 19**.
 
 <rk-img
   src="/assets/images/wisgate/rak7244c/quickstart/1.accessing-internet/rak-ap-file.png"
@@ -327,14 +327,14 @@ Then you will see a page like **Figure 20**:
 />
 
 1. **Set pi password** - used to set/change the password of the gateway.
-2. **Setup RAK Gateway Channel Plan** - used to configure the frequency, which the gateway will operate on, and the LoRaWAN Server which the gateway will work with.
+2. **Setup RAK Gateway Channel Plan** - used to configure the frequency, on which the gateway will operate, and the LoRaWAN Server which the gateway will work with.
 3. **Restart packet-forwarder** - used to restart the LoRa packet forwarder.
 4. **Edit packet-forwarder config**- used to open the `global_conf.json` file, to edit LoRaWAN parameters manually.
 5. **Configure WIFI** - used to configure the Wi-Fi settings in order to connect to a network.
 6. **Configure LAN** - used to configure the Ethernet adapter settings.
 
 ::: tip 📝 NOTE:
-A unique ID will be generated in for the gateway. This is also called **gateway EUI** and is essential for registering the gateway with any LoRa Network Server (TTN and ChirpStack).
+A unique ID will be generated for the gateway. This is also called **gateway EUI** and is essential for registering the gateway with any LoRa Network Server (TTN and ChirpStack).
 :::
 
 There is also another way to get your gateway ID, just enter the command below in the command line:
@@ -553,7 +553,7 @@ This may take a couple of seconds. After that, you'll see the available LTE netw
 />
 
 ::: tip 📝 NOTE:
-**Figure 39** shows the available LTE network in China. These information may vary depending on the available network in your region. For instance in China, the available network are `CHINA MOBILE`, `CHN-UNICOM`, or `CHN-CT`.
+**Figure 39** shows the available LTE network in China. This information may vary depending on the available network in your region. For instance, in China, the available network are `CHINA MOBILE`, `CHN-UNICOM`, or `CHN-CT`.
 :::
 
 7. Next, execute the AT command below to set the information of the LTE network operator that you want to use.
@@ -580,7 +580,7 @@ Then, using the sample AT command described above, the command will be:
 Lastly, you will receive `OK`, which means you have successfully configured the LTE network.
 
 ::: tip 📝 NOTE:
-To exit Minicom, press `Enter`, `Ctrl + A` then press `Q`. A pop up will appear and choose **Yes**.
+To exit Minicom, press `Enter`, `Ctrl + A` then press `Q`. A pop-up will appear and choose **Yes**.
 :::
 
 8. Proceed to set the **APN name** for the **pppd** process. From the main configuration menu, choose **6 Configure APN name**.
@@ -594,7 +594,7 @@ To exit Minicom, press `Enter`, `Ctrl + A` then press `Q`. A pop up will appear 
 9. Then, you will see the window option below where you can change the APN Name or retain its default name.
 
 ::: tip 📝 NOTE:
-If you want to modify the APN Name, make it sure it is a real and valid APN Name.
+If you want to modify the APN Name, make sure it is a real and valid APN Name.
 :::
 
 <rk-img
@@ -628,9 +628,9 @@ There will be a series of logs. After that, you will see the following informati
   caption="IP address Information"
 />
 
-You will be assigned with an IP address (local and remote) along with the DNS addresses. Having these information signifies that your connection has successfully established.
+You will be assigned with an IP address (local and remote) along with the DNS addresses. Having this information signifies that your connection has been  successfully established.
 
-Also, do not forget to re-enable the automatic LTE connection on start up
+Also, do not forget to re-enable the automatic LTE connection on startup
 
 <rk-img
   src="/assets/images/wisgate/rak7244c/quickstart/1.accessing-internet/lte-connection-enabling.png"

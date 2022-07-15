@@ -13,7 +13,7 @@ tags:
 
 # RAK Hotspot v2
 
-Thank you for choosing **RAK Hotspot v2** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK Hotspot v2** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 
 * [Quick Start Guide](../Quickstart/)
@@ -39,7 +39,7 @@ Thank you for choosing **RAK Hotspot v2** in your awesome IoT Project! 🎉 To h
 
 ![longfi](/assets/images/wisgate/rak-hotspot/icons/longfi.png)
 
-**Helium LongFi** is a technology architecture that combines a leading wireless technology, LoRaWAN, and the Helium Blockchain. LongFi is optimized for miles of range, and long battery life for IoT devices.
+**Helium LongFi** is a technology architecture that combines leading wireless technology, LoRaWAN, and the Helium Blockchain. LongFi is optimized for miles of range, and long battery life for IoT devices.
 
 ![proof-of-coverage](/assets/images/wisgate/rak-hotspot/icons/proof-of-coverage.png)
 
@@ -49,8 +49,8 @@ Range depends on the environment. For rural areas, **up to 10 miles or more**, b
 
 ![wireless-coverage](/assets/images/wisgate/rak-hotspot/icons/wireless-coverage.png)
 
-- Deliver may square miles of coverage from a single RAK Hotspot
-- Based on initial testing, only about 50 to 100 RAK Hotspot are needed to provide complete coverage for an entire city.
+- Deliver many square miles of coverage from a single RAK Hotspot
+- Based on initial testing, only about 50 to 100 RAK Hotspots are needed to provide complete coverage for an entire city.
 
 ![connect-anything](/assets/images/wisgate/rak-hotspot/icons/connect-anything.png)
 

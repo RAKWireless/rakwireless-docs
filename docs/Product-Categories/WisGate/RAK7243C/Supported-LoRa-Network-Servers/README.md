@@ -101,7 +101,7 @@ When it comes to RAK7243C WisGate Developer D3+ Gateway, there are two (2) ways 
 
 ### Using the Built-In ChirpStack
 
-There is a built-in ChirpStack in every RAK Developer gateway if you use the latest firmware or `rak_common_for_gateway` repository.
+There is a built-in ChirpStack in every RAK Developer gateway if you use the latest firmware or the `rak_common_for_gateway` repository.
 
 - When you use it for the first time after burning the latest firmware, the gateway will work in the **EU868 Band**, and it will use the built-in ChirpStack as its default LoRa Server. If you don't want to change the frequency or LoRa Server, you don't have to do anything as this will be configured automatically when the gateway boots.
 
@@ -133,7 +133,7 @@ It is advisable to **change your password** to tighten the security of your acco
   caption="Available gateway in Chirpstack"
 />
 
-- Go to **Gateways** and see the **Last seen status**. It must be a few seconds ago, which signifies that the gateway is visible in the ChirpStack server.
+- Go to **Gateways** and see the **Last seen status**. It must be a few seconds ago, which signifies that the gateway is visible on the ChirpStack server.
 
 <rk-img
   src="/assets/images/wisgate/rak7243c/supported-lora-network-servers/chirpstack/8.seen-status.png"

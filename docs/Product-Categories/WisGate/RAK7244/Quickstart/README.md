@@ -45,7 +45,7 @@ The SIM card slot of the cellular versions is not hot-swappable. Make sure the g
 
 After burning the firmware image onto the SD card, make sure you have inserted the SD card into the **RAK7244 WisGate Developer D4 Gateway** and have the LoRa and GPS antenna connected. To learn more on how to burn the image, check the [Learn section](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisGate-Developer-Gateway-Firmware-Burning/).
 
-After which, you can now safely power on the gateway. In this section, several ways in accessing the gateway are provided to have different alternatives for you to choose depending on the availability of the requirements needed.
+After which, you can now safely power on the gateway. In this section, several ways to access the gateway are provided to have different alternatives for you to choose from depending on the availability of the requirements needed.
 
 :::warning ⚠️WARNING
 Before powering the Raspberry Pi 4, you should connect the LoRa and GPS antennas. Not doing so might damage the boards.
@@ -175,7 +175,7 @@ You will now then see a page the same as **Figure 11**.
 />
 
 1. **Set pi password** - used to set/change the password of the gateway.
-2. **Setup RAK Gateway Channel Plan** - used to configure the frequency, which the gateway will operate on, and the LoRaWAN Server which the gateway will work with.
+2. **Setup RAK Gateway Channel Plan** - used to configure the frequency, on which the gateway will operate, and the LoRaWAN Server which the gateway will work with.
 3. **Restart packet-forwarder** - used to restart the LoRa packet forwarder.
 4. **Edit packet-forwarder config** - used to open the `global_conf.json` file, to edit LoRaWAN parameters manually.
 5. **Configure WIFI** - used to configure the Wi-Fi settings in order to connect to a network.
@@ -249,10 +249,10 @@ Make sure to input the correct Wi-Fi SSID and password or you will not be able t
 
 #### Connect through Ethernet
 
-If you want to connect to router through Ethernet cable, do the following steps:
+If you want to connect to the router through an Ethernet cable, do the following steps:
 
 - In the main configuration menu, choose **6 Configure LAN**. This will let you set up a static IP address for the gateway’s Ethernet adapter.
-- Type a static IP address according to the IP address of the router you want to connect. The gateway and the router must be in the same network segment, otherwise the connection will fail.
+- Type a static IP address according to the IP address of the router you want to connect. The gateway and the router must be in the same network segment, otherwise, the connection will fail.
 - By default, the IP address of the gateway's Ethernet is `192.168.10.10`
 
 <rk-img
@@ -324,14 +324,14 @@ Then you will see a page like in **Figure 20**.
 />
 
 1. **Set pi password** - used to set/change the password of the gateway.
-2. **Setup RAK Gateway Channel Plan** - used to configure the frequency, which the gateway will operate on, and the LoRaWAN server which the gateway will work with.
+2. **Setup RAK Gateway Channel Plan** - used to configure the frequency, on which the gateway will operate, and the LoRaWAN server which the gateway will work with.
 3. **Restart packet-forwarder** - used to restart the LoRa packet forwarder.
 4. **Edit packet-forwarder config**- used to open the `global_conf.json` file, to edit LoRaWAN parameters manually.
 5. **Configure WIFI** - used to configure the Wi-Fi settings in order to connect to a network.
 6. **Configure LAN** - used to configure the Ethernet adapter settings.
 
 :::tip 📝 NOTE:
- A unique ID will be generated in for gateway. This is also called **Gateway EUI** and is essential for registering the gateway with any LoRa network server (TTN and ChirpStack).
+ A unique ID will be generated for the gateway. This is also called **Gateway EUI** and is essential for registering the gateway with any LoRa network server (TTN and ChirpStack).
 :::
 
 There is also another way to get your **Gateway ID**. Just enter the command below in the command line:
@@ -366,7 +366,7 @@ It is a good security practice to change the default password **raspberry**, whi
   caption="Confirm password change"
 />
 
-3. A success message for changing password will then pop up.
+3. A success message for changing the password will then pop up.
 
 <rk-img
   src="/assets/images/wisgate/rak7244/quickstart/6.configure the gateway/success_pwd_change.png"

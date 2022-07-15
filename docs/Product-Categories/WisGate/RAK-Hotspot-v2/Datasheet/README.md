@@ -50,12 +50,12 @@ Helium Blockchain. LongFi is optimized for miles of range, and long battery life
 
 RAK Hotspot earns Helium when devices connect, and for validating wireless coverage delivered by peers. Using a system called Proof-of-Coverage, RAK Hotspot earns more Helium when they're in range of other RAK Hotspot, but need to be at least 300 meters apart.
 
-Range depends on the environment. For rural areas, **up to 10 miles or more**, but more dense areas, **up to a mile**. Single RAK Hotspot earn less as they can only issue Challenges over the internet, and can’t participate in Proof-of-Coverage.
+Range depends on the environment. For rural areas, **up to 10 miles or more**, but in more dense areas, **up to a mile**. Single RAK Hotspot earn less as they can only issue Challenges over the internet, and can’t participate in Proof-of-Coverage.
 
 ![wireless-coverage](/assets/images/wisgate/rak-hotspot/icons/wireless-coverage.png)
 
-- Deliver may square miles of coverage from a single RAK Hotspot.
-- Based on initial testing, only about 50 to 100 RAK Hotspot are needed to provide complete coverage for an entire city.
+- Deliver many square miles of coverage from a single RAK Hotspot.
+- Based on initial testing, only about 50 to 100 RAK Hotspots are needed to provide complete coverage for an entire city.
 
 ![connect-anything](/assets/images/wisgate/rak-hotspot/icons/connect-anything.png)
 
@@ -82,11 +82,11 @@ from vendor information
 
 ### Overview
 
-The overview covers the RAK Hotspot hotspot details and block diagram.
+The overview covers the RAK Hotspot details and block diagram.
 
 #### Board Overview
 
-The outer dimension of RAK Hotspot is **92 x 68.3 x 57.2&nbsp;mm**. 
+The outer dimensions of RAK Hotspot is **92 mm x 68.3 mm x 57.2&nbsp;mm**. 
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot-v2/datasheet/dimensions.svg"
@@ -210,7 +210,7 @@ It is highly recommended to use optimized RSSI calibration values, which is part
 
 ###### Overview
 
-The LoRa Antenna with RP-SMA Male connector shown in Figure 5.
+The LoRa Antenna with RP-SMA Male connector is shown in Figure 5.
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot/datasheet/lora-antenna.png"
@@ -279,7 +279,8 @@ The table below lists the operation and storage temperature requirements:
 #### Network Protocol Stack
 
 * Supports 802.11ac
-* Supports Wi-Fi AP mode and Client mode Supports DHCP
+* Supports Wi-Fi AP mode and Client mode 
+* Supports DHCP
 
 
 ## Certification

@@ -19,7 +19,7 @@ certifications:
 
 ### Description
 
-The **RAK7258 WisGate Edge Lite** is a full 8-channel gateway with built-in Ethernet connectivity for a straightforward setup. Additionally, there is an on-board Wi-Fi setup that allows it to be easily configured via the default Wi-Fi AP mode.
+The **RAK7258 WisGate Edge Lite** is a full 8-channel gateway with built-in Ethernet connectivity for a straightforward setup. Additionally, there is an onboard Wi-Fi setup that allows it to be easily configured via the default Wi-Fi AP mode.
 
 As with the other RAKwireless Industrial gateways, it also supports MQTT Bridge mode, with the option for TLS authentication.
 
