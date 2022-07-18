@@ -15,6 +15,10 @@ tags:
 
 Thank you for choosing **RAK13800 WisBlock Ethernet Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+::: tip 📝 NOTE
+RAK13800 can be POE enabled by mounting its daughter power board [WisBlock RAK19018 POE Module](/Product-Categories/WisBlock/RAK19018/Overview).
+:::
+
 * [RAK13800 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>

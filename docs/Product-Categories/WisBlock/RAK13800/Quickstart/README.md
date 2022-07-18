@@ -20,6 +20,7 @@ Before going through each and every step on using the RAK13800 WisBlock module, 
 #### Hardware 
 
 - [RAK13800 WisBlock Ethernet Module](https://store.rakwireless.com/products/rak13800-wisblock-ethernet-interface)
+- [RAK19018 WisBlock POE Module (optional)](https://store.rakwireless.com/products/rak19018-poe-power-board-for-rak13800)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
@@ -47,6 +48,10 @@ Based on the choice of the WisBlock Core, select a Development Environment:
 The RAK13800 WisBlock Ethernet Module must be mounted on the IO slot of the WisBlock Base board, as shown in the highlighted red area. 
 
 To use RAK13800 in your project, you need to connect a [Wisblock Core](/Product-Categories/WisBlock/#wisblock-core), as shown in the highlighted green area.
+
+::: tip 📝 NOTE
+RAK13800 can be POE enabled by mounting its daughter power board [WisBlock RAK19018 POE Module](/Product-Categories/WisBlock/RAK19018/Overview).
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak13800/quickstart/rak13800_connection.png"

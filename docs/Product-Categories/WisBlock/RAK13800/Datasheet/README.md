@@ -11,8 +11,6 @@ next: false
 
 # RAK13800 WisBlock Ethernet Module Datasheet
 
-## Overview
-
 ## Description
 
 RAK13800 is an Ethernet module based on the W5100S-L chip from WIZnet. The module has an embedded Internet Controller Chip that integrates a Hardwired TCP/IP stack with 10/100 Ethernet MAC and PHY. It is truly a one-chip solution for stable internet connectivity.
@@ -21,6 +19,9 @@ The RAK13800 TCP/IP stack supports TCP, UDP, IPv4, ICMP, ARP, IGMP, and PPPoE ‚Ä
 
 The user can develop an Ethernet application easily by using the simple SOCKETs program instead of handling a complex Ethernet controller. W5100S-L provides four independent SOCKETs to be used simultaneously and 16KB internal memory for RX/TX data communication buffer.
 
+::: tip üìù NOTE
+RAK13800 can be POE enabled by mounting its daughter power board [WisBlock RAK19018 POE Module](/Product-Categories/WisBlock/RAK19018/Overview).
+:::
 
 ### Features
 

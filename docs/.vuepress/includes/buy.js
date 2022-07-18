@@ -333,10 +333,40 @@ export default {
 
 
   // WisBlock
+  '/Product-Categories/WisBlock/RAK12047/': {
+    label: 'RAK12047 WisBlock VOC Sensor Module',
+    img: '/assets/images/wisblock/rak12047/overview/RAK12047_buy.png',
+    store: 'https://store.rakwireless.com/products/rak12047-voc-sensor-sensirion-sgp40?utm_source=RAK12047&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK12033/': {
+    label: 'RAK12033 WisBlock 6-Axis Accelerometer Sensor Module',
+    img: '/assets/images/wisblock/rak12033/overview/RAK12033_buy.png',
+    store: 'https://store.rakwireless.com/products/rak12033-6-axis-accelerometer?utm_source=RAK12033&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
   '/Product-Categories/WisBlock/RAK1920/': {
     label: 'RAK1920 WisBlock Interface Module',
     img: '/assets/images/wisblock/rak1920/overview/RAK1920_buy.png',
     store: 'https://store.rakwireless.com/products/rak1920-sensor-adapter-module?utm_source=RAK1920&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAKBox-UO100x75x38/': {
+    label: 'WisBlock Unify Outdoor Enclosure 100x75x38',
+    img: '/assets/images/wisblock/rakbox-uo100x75x38/overview/uo_buy.png',
+    store: 'https://store.rakwireless.com/products/unify-enclosure-ip65-100-75-38?utm_source=RAKBox-UO100x75x38&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAKBox-UO150x100x45/': {
+    label: 'WisBlock Unify Outdoor Enclosure 150x100x45',
+    img: '/assets/images/wisblock/rakbox-uo150x100x45/overview/uo_buy.png',
+    store: 'https://store.rakwireless.com/products/unify-enclosure-ip65-150-100-45?utm_source=RAKBox-UO150x100x45&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAKBox-Accessories/': {
+    label: 'WisBlock Unify Enclosure Accessories',
+    img: '/assets/images/wisblock/rakbox-accessories/overview/uo_buy.png',
+    store: 'https://store.rakwireless.com/collections/wisblock-enclosure'
+  },
+  '/Product-Categories/WisBlock/RAK19018/': {
+    label: 'RAK19018 WisBlock PoE Module',
+    img: '/assets/images/wisblock/rak19018/overview/RAK19018_buy.png',
+    store: 'https://store.rakwireless.com/products/rak19018-poe-module-for-rak13800?utm_source=RAK19018&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAK14008/': {
     label: 'RAK14008 WisBlock Gesture Sensor Module',
@@ -348,12 +378,12 @@ export default {
     img: '/assets/images/wisblock/rak12031/overview/RAK12031_buy.png',
     store: 'https://store.rakwireless.com/products/rak12028-rak12031-wisblock-through-beam-fork-sensor?utm_source=RAK12031&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-    '/Product-Categories/WisBlock/RAK12028/': {
+  '/Product-Categories/WisBlock/RAK12028/': {
     label: 'RAK12028 WisBlock T-Beam-Fork Connector Module',
     img: '/assets/images/wisblock/rak12028/overview/RAK12028_buy.png',
     store: 'https://store.rakwireless.com/products/rak12028-rak12031-wisblock-through-beam-fork-sensor?utm_source=RAK12028&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-    '/Product-Categories/WisBlock/RAK12021/': {
+  '/Product-Categories/WisBlock/RAK12021/': {
     label: 'RAK12021 WisBlock RGB Sensor Module',
     img: '/assets/images/wisblock/rak12021/overview/RAK12021_buy.png',
     store: 'https://store.rakwireless.com/products/rak12021-wisblock-rgb-sensor?utm_source=RAK12021&utm_medium=Document&utm_campaign=BuyFromStore'
@@ -365,12 +395,12 @@ export default {
     store: 'https://store.rakwireless.com/products/rak12023-rak12035-wisblock-soil-moisture-sensor?utm_source=RAK12023&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
-'/Product-Categories/WisBlock/RAK12025/': {
+  '/Product-Categories/WisBlock/RAK12025/': {
     label: 'RAK12025 WisBlock Gyroscope Sensor Module',
     img: '/assets/images/wisblock/rak12025/overview/RAK12025_buy.png',
     store: 'https://store.rakwireless.com/products/rak12025-gyroscope-sensor-module?utm_source=RAK12025&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-  
+
   '/Product-Categories/WisBlock/RAK13007/': {
     label: 'RAK13007 WisBlock Relay Module',
     img: '/assets/images/wisblock/rak13007/overview/RAK13007_buy.png',
@@ -412,13 +442,13 @@ export default {
     img: '/assets/images/wisblock/rak11310/overview/RAK11310_buy.png',
     store: 'https://store.rakwireless.com/collections/wisblock-core/products/rak11310-wisblock-lpwan-module?utm_source=RAK11310WisBlockCoreModule&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-    
+
   '/Product-Categories/WisBlock/RAK5005-O/': {
     label: 'RAK5005-O WisBlock WisBase Board',
     img: '/assets/images/wisblock/rak5005-o/overview/RAK5005-O_buy.png',
     store: 'https://store.rakwireless.com/products/rak5005-o-base-board?utm_source=RAK5005-OWisBlockBaseBoard&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-  
+
   '/Product-Categories/WisBlock/RAK19003/': {
     label: 'RAK19003 WisBlock Mini Base Board',
     img: '/assets/images/wisblock/rak19003/overview/RAK19003_buy.png',
@@ -431,6 +461,17 @@ export default {
     store: 'https://store.rakwireless.com/products/rak19001-wisblock-dual-io-base-board?utm_source=RAK19001&utm_medium=Document&utm_campaign=BuyFromStore'
   },    
     
+  '/Product-Categories/WisBlock/RAK19016/': {
+    label: 'RAK19016 WisBlock 5-24V Power Slot Module',
+    img: '/assets/images/wisblock/rak19016/overview/RAK19016_buy.png',
+    store: 'https://store.rakwireless.com/products/rak19016-5-24v-power-slot-module?utm_source=RAK19016&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK19012/': {
+    label: 'RAK19012 WisBlock USB Li-Ion Solar Power Module',
+    img: '/assets/images/wisblock/rak19012/overview/RAK19012_buy.png',
+    store: 'https://store.rakwireless.com/products/rak19012-usb-lipo-solar-power-slot-module?utm_source=RAK19012&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+
   '/Product-Categories/WisBlock/RAK5801/': {
     label: 'RAK5801 WisBlock Interface Module',
     img: '/assets/images/wisblock/rak5801/overview/RAK5801_buy.png',
@@ -524,7 +565,7 @@ export default {
     label: 'RAK15001 WisBlock Flash Module',
     img: '/assets/images/wisblock/rak15001/overview/RAK15001_buy.png',
     store: 'https://store.rakwireless.com/products/wisblock-flash-module-rak15001?utm_source=WisBlock15001&utm_medium=Document&utm_campaign=BuyFromStore'
-  },  
+  },
   '/Product-Categories/WisBlock/RAK18001/': {
     label: 'RAK18001 WisBlock Buzzer Module',
     img: '/assets/images/wisblock/rak18001/overview/RAK18001_front.png',
@@ -545,7 +586,7 @@ export default {
     img: '/assets/images/wisblock/rak14012/overview/RAK14012_home.png',
     store: 'https://store.rakwireless.com/products/rak14012-wisblock-16x16-rgb-led-matrix?utm_source=WisBlockRAK14012&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-    '/Product-Categories/WisBlock/RAK14007/': {
+  '/Product-Categories/WisBlock/RAK14007/': {
     label: 'RAK14007 WisBlock Interface Module',
     img: '/assets/images/wisblock/rak14007/overview/rak14007_buy.png',
     store: 'https://store.rakwireless.com/products/rak14007-wisblock-interface-module?utm_source=RAK14007&utm_medium=Document&utm_campaign=BuyFromStore'
@@ -554,7 +595,7 @@ export default {
     label: 'RAK12500 WisBlock GNSS Location Module',
     img: '/assets/images/wisblock/rak12500/overview/RAK12500_buy.png',
     store: 'https://store.rakwireless.com/products/wisblock-gnss-location-module-rak12500?utm_source=WisBlockRAK12500&utm_medium=Document&utm_campaign=BuyFromStore'
-  },    
+  },
   '/Product-Categories/WisBlock/RAK19002/': {
     label: 'RAK19002 WisBlock Boost Module',
     img: '/assets/images/wisblock/rak19002/overview/RAK19002_buy.png',
@@ -569,7 +610,7 @@ export default {
     label: 'RAK15000 WisBlock EEPROM Module',
     img: '/assets/images/wisblock/rak15000/overview/RAK15000_buy.png',
     store: 'https://store.rakwireless.com/products/wisblock-eeprom-module-rak15000?utm_source=WisBlockRAK15000&utm_medium=Document&utm_campaign=BuyFromStore'
-  }, 
+  },
 
   '/Product-Categories/WisBlock/RAK12003/': {
     label: 'RAK12003 WisBlock IR Thermometer Module',
@@ -594,13 +635,13 @@ export default {
     img: '/assets/images/wisblock/rak17000/overview/RAK17000_buy.png',
     store: 'https://store.rakwireless.com/products/motor-control-module-rak17000?utm_source=RAK17000&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-    
+
   '/Product-Categories/WisBlock/RAK14002/': {
     label: 'RAK14002 WisBlock 3-channel Touchpad Module',
     img: '/assets/images/wisblock/rak14002/overview/RAK14002_buy.png',
     store: 'https://store.rakwireless.com/products/3-channel-touch-pad-module-rak14002?utm_source=RAK14002&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-    
+
   '/Product-Categories/WisBlock/RAK13005/': {
     label: 'RAK13005 WisBlock LIN module',
     img: '/assets/images/wisblock/rak13005/overview/RAK13005_buy.png',
@@ -612,31 +653,31 @@ export default {
     img: '/assets/images/wisblock/rak12017/overview/RAK12017_buy.png',
     store: 'https://store.rakwireless.com/products/rak12017-wisblock-ir-sensor?utm_source=RAK12017&utm_medium=Document&utm_campaign=BuyFromStore'
   },
- 
+
   '/Product-Categories/WisBlock/RAK12007/': {
     label: 'RAK12007 WisBlock Ultrasonic Sensor',
     img: '/assets/images/wisblock/rak12007/overview/RAK12007_buy.png',
     store: 'https://store.rakwireless.com/products/ultrasonic-sensor-module-rak12007?utm_source=RAK12007&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-    
+
   '/Product-Categories/WisBlock/RAK12004/': {
     label: 'RAK12004 WisBlock MQ2 Gas Sensor',
     img: '/assets/images/wisblock/rak12004/overview/RAK12004_buy.png',
     store: 'https://store.rakwireless.com/products/mq2-gas-sensor-module-rak12004?utm_source=RAK12004&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-    
+
   '/Product-Categories/WisBlock/RAK13004/': {
     label: 'RAK13004 WisBlock PWM Expansion Module',
     img: '/assets/images/wisblock/rak13004/overview/rak13004_buy.png',
     store: 'https://store.rakwireless.com/products/pwm-expansion-module-rak13004?utm_source=RAK13004&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-    
+
   '/Product-Categories/WisBlock/RAK13003/': {
     label: 'RAK13003 WisBlock IO Expansion Module',
     img: '/assets/images/wisblock/rak13003/overview/rak13003_buy.png',
     store: 'https://store.rakwireless.com/products/io-expansion-module-rak13003?utm_source=RAK13003&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-    
+
   '/Product-Categories/WisBlock/RAK15002/': {
     label: 'RAK15002 WisBlock SD Card Module',
     img: '/assets/images/wisblock/rak15002/overview/rak15002_buy.png',
@@ -648,7 +689,7 @@ export default {
     img: '/assets/images/wisblock/rak12001/overview/RAK12001_home.png',
     store: 'https://store.rakwireless.com/products/rak12001-fingerprint-module?utm_source=RAK12001&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-    
+
   '/Product-Categories/WisBlock/RAK12002/': {
     label: 'RAK12002 WisBlock RTC module',
     img: '/assets/images/wisblock/rak12002/overview/rak12002_buy.png',
@@ -660,13 +701,13 @@ export default {
     img: '/assets/images/wisblock/rak12019/overview/RAK12019_buy.png',
     store: 'https://store.rakwireless.com/products/rak12019-wisblock-uv-sensor?utm_source=RAK12019&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-    
+
   '/Product-Categories/WisBlock/RAK12029/': {
     label: 'RAK12029 WisBlock Inductive Sensor Module',
     img: '/assets/images/wisblock/rak12029/overview/RAK12029_buy.png',
     store: 'https://store.rakwireless.com/products/rak12029-wisblock-inductive-sensor?utm_source=RAK12029&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-    
+
   '/Product-Categories/WisBlock/RAK13002/': {
     label: 'RAK13002 WisBlock IO Module',
     img: '/assets/images/wisblock/rak13002/overview/rak13002_buy.png',
@@ -678,19 +719,19 @@ export default {
     img: '/assets/images/wisblock/rak13300/overview/RAK13300_buy.png',
     store: 'https://store.rakwireless.com/products/rak13300-wisblock-lpwan?utm_source=RAK13300&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-    
+
   '/Product-Categories/WisBlock/RAK19005/': {
     label: 'RAK19005 WisBlock Sensor Extension Cable',
     img: '/assets/images/wisblock/rak19005/overview/RAK19005_buy.png',
     store: 'https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005?utm_source=RAK19005&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-   
+
   '/Product-Categories/WisBlock/RAK19008/': {
     label: 'RAK19008 WisBlock IO Extension Cable',
     img: '/assets/images/wisblock/rak19008/overview/RAK19008_buy.png',
     store: 'https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008?utm_source=RAK19008&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-  
+
   '/Product-Categories/WisBlock/RAK14001/': {
     label: 'RAK14001 WisBlock RGB LED Module',
     img: '/assets/images/wisblock/rak14001/overview/RAK14001_buy.png',
@@ -702,19 +743,31 @@ export default {
     img: '/assets/images/wisblock/rak14003/overview/RAK14003_buy.png',
     store: 'https://store.rakwireless.com/products/wisblock-led-bar-module-rak14003?utm_source=RAK14003&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-    
+
   '/Product-Categories/WisBlock/RAK13001/': {
     label: 'RAK13001 WisBlock Relay IO Module',
     img: '/assets/images/wisblock/rak13001/overview/RAK13001_buy.png',
     store: 'https://store.rakwireless.com/products/relay-io-rak13001?utm_source=RAK13001&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-    
+
   '/Product-Categories/WisBlock/RAK19006/': {
     label: 'RAK19006 WisBlock Wireless Charger',
     img: '/assets/images/wisblock/rak19006/overview/RAK19006_buy.png',
     store: 'https://store.rakwireless.com/products/wireless-charge-module-rak19006?utm_source=RAK19006&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-    
+
+  '/Product-Categories/WisBlock/RAK19013/': {
+    label: 'RAK19013 WisBlock LiPo Solar Power Slot Module',
+    img: '/assets/images/wisblock/rak19013/overview/rak19013_buy.png',
+    store: 'https://store.rakwireless.com/products/rak19013-lipo-solar-power-slot-module?utm_source=RAK19013&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+
+  '/Product-Categories/WisBlock/RAK19015/': {
+    label: 'RAK19015 WisBlock Battery Power Slot Module',
+    img: '/assets/images/wisblock/rak19015/overview/RAK19015_buy.png',
+    store: 'https://store.rakwireless.com/products/rak19015-battery-power-slot-module?utm_source=RAK19015&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+
   '/Product-Categories/WisBlock/RAK12005/': {
     label: 'RAK12005 WisBlock Rain Sensor',
     img: '/assets/images/wisblock/rak12005/overview/RAK12005_buy.png',
@@ -726,7 +779,7 @@ export default {
     img: '/assets/images/wisblock/rak12014/overview/RAK12014_buy.png',
     store: 'https://store.rakwireless.com/products/rak12014-wisblock-tof-sensor?utm_source=RAK12014&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-    
+
   '/Product-Categories/WisBlock/RAK13101/': {
     label: 'RAK13101 WisBlock GSM Module',
     img: '/assets/images/wisblock/rak13101/overview/RAK13101_buy.png',
@@ -744,7 +797,7 @@ export default {
     img: '/assets/images/wisblock/rak12010/overview/RAK12010_buy.png',
     store: 'https://store.rakwireless.com/products/wisblock-ambient-light-sensor-rak12010?utm_source=RAK12010&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-  
+
   '/Product-Categories/WisBlock/RAK12006/': {
     label: 'RAK12006 WisBlock PIR Module',
     img: '/assets/images/wisblock/rak12006/overview/RAK12006_buy.png',
@@ -774,18 +827,24 @@ export default {
     img: '/assets/images/wisblock/rak16000/overview/RAK16000_buy.png',
     store: 'https://store.rakwireless.com/products/rak16000?utm_source=RAK16000&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-  
+
+  '/Product-Categories/WisBlock/RAK16002/': {
+    label: 'RAK16002 WisBlock DC Current Module',
+    img: '/assets/images/wisblock/rak16002/overview/RAK16002_buy.png',
+    store: 'https://store.rakwireless.com/products/rak16002-coulomb-sensor?utm_source=RAK16002&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+
   '/Product-Categories/WisBlock/RAK14009/': {
     label: 'RAK14009 WisBlock Keypad 3x3 Module',
     img: '/assets/images/wisblock/rak14009/overview/RAK14009_buy.png',
     store: 'https://store.rakwireless.com/products/rak14004-rak14009-rak14010-rak14011-wisblock-keypad-module?utm_source=RAK14009&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-  
+
   '/Product-Categories/WisBlock/RAK14010/': {
     label: 'RAK14010 WisBlock Keypad 3x4 Module',
     img: '/assets/images/wisblock/rak14010/overview/RAK14010_buy.png',
     store: 'https://store.rakwireless.com/products/rak14004-rak14009-rak14010-rak14011-wisblock-keypad-module?utm_source=RAK14010&utm_medium=Document&utm_campaign=BuyFromStore'
-  },  
+  },
   '/Product-Categories/WisBlock/RAK14011/': {
     label: 'RAK14011 WisBlock Keypad 4x4 Module',
     img: '/assets/images/wisblock/rak14011/overview/RAK14011_home.png',
@@ -796,7 +855,7 @@ export default {
     img: '/assets/images/wisblock/rak14013/overview/rak14013_buy.png',
     store: 'https://store.rakwireless.com/products/rak14007-rak14013-wisblock-joystick-interface?utm_source=RAK14013&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-   '/Product-Categories/WisBlock/RAK14004/': {
+  '/Product-Categories/WisBlock/RAK14004/': {
     label: 'RAK14004 WisBlock Keypad Module',
     img: '/assets/images/wisblock/rak14004/overview/RAK14004_buy.png',
     store: 'https://store.rakwireless.com/products/rak14004-rak14009-rak14010-rak14011-wisblock-keypad-module?utm_source=RAK14004&utm_medium=Document&utm_campaign=BuyFromStore'
@@ -811,16 +870,36 @@ export default {
     label: 'RAK12018 WisBlock Code Scanner',
     img: '/assets/images/wisblock/rak12018/overview/RAK12018_buy.png',
     store: 'https://store.rakwireless.com/products/rak12018-wisblock-code-scanner?utm_source=RAK12018&utm_medium=Document&utm_campaign=BuyFromStore'
-  },  
+  },
   '/Product-Categories/WisBlock/RAK19007/': {
     label: 'RAK19007 WisBlock Base Board 2nd Gen',
     img: '/assets/images/wisblock/rak19007/overview/RAK19007_buy.png',
     store: 'https://store.rakwireless.com/products/rak19007-wisblock-base-board-2nd-gen?utm_source=RAK19007&utm_medium=Document&utm_campaign=BuyFromStore'
-  },    
+  },
+  '/Product-Categories/WisBlock/RAK19010/': {
+    label: 'RAK19010 WisBlock Base Board with Power Slot',
+    img: '/assets/images/wisblock/rak19010/overview/RAK19010_buy.png',
+    store: 'https://store.rakwireless.com/products/rak19010-base-board-with-power-slot?utm_source=RAK19010&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK19011/': {
+    label: 'WisBlock Dual IO Base Board with Power Slot',
+    img: '/assets/images/wisblock/rak19011/overview/RAK19011_buy.png',
+    store: 'https://store.rakwireless.com/products/rak19011-max-base-board-third-generation?utm_source=RAK19011&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK19009/': {
+    label: 'RAK19009 WisBlock Mini Base Board with Power Slot',
+    img: '/assets/images/wisblock/rak19009/overview/RAK19009_buy.png',
+    store: 'https://store.rakwireless.com/products/rak19009-mini-base-board-with-power-slot?utm_source=RAK19009&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
   '/Product-Categories/WisBlock/RAK13800/': {
     label: 'RAK13800 WisBlock Ethernet Module',
     img: '/assets/images/wisblock/rak13800/overview/RAK13800_buy.png',
     store: 'https://store.rakwireless.com/products/rak13800-wisblock-ethernet-interface?utm_source=RAK13800&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK12034/': {
+    label: 'RAK12034 Wisblock 9-Axis Sensor Module',
+    img: '/assets/images/wisblock/rak12034/overview/RAK12034_buy.png',
+    store: 'https://store.rakwireless.com/products/rak12034-9-axis-accelerometer?utm_source=RAK12034&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   // WisBlock Solutions
   '/Product-Categories/WisBlock/RAK10700/': {
@@ -828,7 +907,7 @@ export default {
     img: '/assets/images/wisblock/rak10700/overview/overview.png',
     store: 'https://store.rakwireless.com/products/lpwan-tracker-solution-kit?utm_source=RAK10700&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-  
+
   // Accessories
   '/Product-Categories/Accessories/RAKARJ14/': {
     label: 'RAKARJ14 915MHz White Blade Antenna',
@@ -985,20 +1064,20 @@ export default {
     img: '/assets/images/accessories/antenna-clip/antenna-clip.png',
     store: 'https://store.rakwireless.com/products/antenna-clip?utm_source=AntennaClip&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-'/Product-Categories/Accessories/Antenna-Mounting-Kit/': {
-  label: 'Antenna Mounting Kit',
-  img: '/assets/images/accessories/antenna-mounting-kit/overview.png',
-  store: 'https://store.rakwireless.com/products/antenna-mounting-kit-1?utm_source=AntennaMountingKit&utm_medium=Document&utm_campaign=BuyFromStore' 
+  '/Product-Categories/Accessories/Antenna-Mounting-Kit/': {
+    label: 'Antenna Mounting Kit',
+    img: '/assets/images/accessories/antenna-mounting-kit/overview.png',
+    store: 'https://store.rakwireless.com/products/antenna-mounting-kit-1?utm_source=AntennaMountingKit&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/Accessories/GPS-Antenna/': {
     label: 'GPS-Antenna',
     img: '/assets/images/accessories/gps-antenna/gps-antenna.png',
-    store: 'https://store.rakwireless.com/products/gps-antenna?utm_source=GPSAntenna&utm_medium=Document&utm_campaign=BuyFromStore' 
+    store: 'https://store.rakwireless.com/products/gps-antenna?utm_source=GPSAntenna&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/Accessories/Helical-Base-Magnetic-Antenna/': {
     label: 'Helical Base Magnetic Antenna',
     img: '/assets/images/accessories/helical-magnetic-base-antenna/helical-magnetic-base.png',
-    store: 'https://store.rakwireless.com/products/magnetic-antenna?utm_source=HelicalBaseMagneticAntenna&utm_medium=Document&utm_campaign=BuyFromStore' 
+    store: 'https://store.rakwireless.com/products/magnetic-antenna?utm_source=HelicalBaseMagneticAntenna&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/Accessories/RAKARG16/': {
     label: '858~878MHz 8dBi Fiber Glass Antenna',

@@ -150,3 +150,13 @@ WisBlock Solutions are ready-to-use products built with WisBlock modules. They c
 </rk-head>
 
 <rk-products :tags="['wisblock', 'wissol']" />
+
+
+## WisBlock Enclosure 
+<rk-head img="/assets/rakwireless/product-categories/WisBlock-Enclosures.svg">
+
+WisBlock Unify Enclosure is designed specifically for WisBlock Modules. It supports different mounting accessory options both for indoor and outdoor IoT device deployments.
+
+</rk-head>
+
+<rk-products :tags="['wisblock', 'wisenclosure']" />
