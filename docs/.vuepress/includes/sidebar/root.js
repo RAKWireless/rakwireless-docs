@@ -7,14 +7,20 @@ module.exports = {
       sidebarDepth: 4
     },
     {
-      title: 'Certification',
-      path: '/Certification/',
+      title: 'Release Notes',
+      path: '/Release-Notes/',
       collapsable: false,
       sidebarDepth: 4
     },
     {
       title: 'Firmware',
       path: '/Firmware/',
+      collapsable: false,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Certification',
+      path: '/Certification/',
       collapsable: false,
       sidebarDepth: 4
     },

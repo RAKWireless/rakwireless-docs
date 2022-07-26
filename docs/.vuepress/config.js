@@ -23,6 +23,8 @@ module.exports = {
     displayAllHeaders: false,
     activeHeaderLinks: false // handled by quasar theme
   },
+  host: "0.0.0.0",
+  port : 0000,
   plugins: {
     'sitemap': {
       hostname: 'https://docs.rakwireless.com/',

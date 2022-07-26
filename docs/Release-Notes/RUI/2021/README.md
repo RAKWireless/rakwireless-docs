@@ -1,0 +1,1 @@
+<rk-redirect to="/Release-Notes/RUI/" />
