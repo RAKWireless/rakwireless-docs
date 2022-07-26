@@ -16,7 +16,7 @@
         transition-show="flip-down"
         transition-hide="flip-up"
         content-class="bg-white text-grey-9"
-        auto-close
+        :auto-close=computedAutoClose
         fit
         max-width="15rem"
         @hide="opened=false"
@@ -34,7 +34,8 @@
 export default {
   props: {
     label: { type: String },
-    v2: { type: Boolean, default: false }
+    v2: { type: Boolean, default: false },
+    autoClose: { type: Boolean, default: true }
   },
   data: () => ({
     opened: false
@@ -45,6 +46,9 @@ export default {
         column: this.v2,
         'no-wrap': true
       }
+    },
+    computedAutoClose(){
+      return this.autoClose
     }
   }
 }

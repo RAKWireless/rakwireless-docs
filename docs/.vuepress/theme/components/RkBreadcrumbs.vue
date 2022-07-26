@@ -4,7 +4,7 @@
       <template v-slot:separator>
         <q-icon size="1.5em" name="chevron_right" color="primary" />
       </template>
-      <q-breadcrumbs-el icon="home" to="/" />
+      <q-breadcrumbs-el icon="home" :to="`/`" />
       <q-breadcrumbs-el
         v-for="item in items"
         :key="item.path"

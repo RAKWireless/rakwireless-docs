@@ -13,7 +13,7 @@
         <OutboundLink />
       </a>
 
-      <RouterLink v-else class="prev" :to="prev.path">{{ prev.title || prev.path }}</RouterLink>
+      <RouterLink v-else class="prev" :to="prev?.path">{{ prev.title || prev.path }}</RouterLink>
     </span>
     
     <q-space />
@@ -29,7 +29,7 @@
         <OutboundLink />
       </a>
 
-      <RouterLink v-else :to="next.path">{{ next.title || next.path }}</RouterLink> →
+      <RouterLink v-else :to="next?.path">{{ next.title || next.path }}</RouterLink> →
     </span>
   </div>
 </template>
@@ -52,8 +52,13 @@ export default {
     next() {
       return resolvePageLink(LINK_TYPES.NEXT, this)
     }
-  }
+  },
+  mounted(){
+  console.log(this.prev?.path)
+  console.log(this.next?.path)
 }
+}
+
 
 function resolvePrev(page, items) {
   return find(page, items, -1)
