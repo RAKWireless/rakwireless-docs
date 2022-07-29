@@ -13,9 +13,9 @@ tags:
 ---
 
 
-# RAK12017 WisBlock IR Detection Module
+# RAK12017 WisBlock IR Detection Sensor Module
 
-Thank you for choosing **RAK12017 WisBlock IR Detection Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK12017 WisBlock IR Detection Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [RAK12017 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -25,10 +25,9 @@ Thank you for choosing **RAK12017 WisBlock IR Detection Module** in your awesome
 * [40-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
 * [WisBlock IO Tutorial](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
 
-<!--**Examples** -->
+**Examples**
 
-<!--For All WisBlock Core: -->
-<!--* [Sample Code: RAK12012](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK12005_WaterDetector/RAK12005_WaterDetector.ino)-->
+* [Sample Code: RAK12017_IR_ITR20001T](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12017_IR_ITR20001T)
 
 ## Product Description
 
@@ -41,6 +40,8 @@ The RAK12017 is an IR detection module. This module uses ITR20001 optical switch
     * Detect whether IR Signal is reflected back
     * λP=940&nbsp;nm
     * 3.3&nbsp;V Power supply
+    * Current Consumption: < 21&nbsp;mA
+    * Chipset: Everlight ITR20001
     * Infrared Line Tracking Range: 1&nbsp;cm to 5&nbsp;cm
 
 * **Module Size**
@@ -48,7 +49,7 @@ The RAK12017 is an IR detection module. This module uses ITR20001 optical switch
 
 ## Prerequisites
 
-To use a **RAK12017**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK12017** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK12017**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12017** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.    

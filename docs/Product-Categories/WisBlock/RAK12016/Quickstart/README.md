@@ -28,7 +28,7 @@ Before going through each and every step on using the RAK12016 WisBlock module, 
 #### Hardware
 
 - [RAK12016 WisBlock Flex Sensor Module](https://store.rakwireless.com/products/rak12016-wisblock-flex-sensor)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) with IO slot
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
 - [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
@@ -46,6 +46,8 @@ Before going through each and every step on using the RAK12016 WisBlock module, 
 RAK12016 is a flex sensor module, a part of the RAKwireless WisBlock Sensor series. It uses an FS-L-0095-103-ST from Spectrasymbol, which can measure the amount of deflection or bending.
 
 For more information about RAK12016, refer to the [Datasheet](../Datasheet/).
+
+RAK12016 module can be connected to the IO slot of [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) to communicate with the WisBlock Core, as shown in **Figure 1**. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12016/quickstart/rak12016-assembly.png"
@@ -73,7 +75,7 @@ The Flex sensor can only be bent in one direction. Thus, bending the sensor in t
 
 ##### Assembling
 
-The RAK12016 module can be mounted on the IO slot of the WisBlock Base board, as shown in **Figure 3**. Also, always secure the connection of the WisBlock module by using compatible screws.
+As shown in **Figure 3**, the location for the IO slot is properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12016/quickstart/mounting-mechanism.png"
@@ -127,9 +129,9 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 #### Initial Test of the RAK12016 WisBlock Module
 
-If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
-1. You need to select first the WisBlock Core you have.
+2. You need to select first the WisBlock Core you have.
 
 **RAK4631 Board**
 
@@ -155,8 +157,9 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK11310 as WisBlock Core"
 />
 
-2. Next, copy the following sample code into your Arduino IDE:
+3. Next, copy the following sample code into your Arduino IDE:
 
+::: details Click Here to View Example Code
 ```c
 /**
    @file RAK12016_Flex_FSL0095103ST.ino
@@ -238,11 +241,12 @@ void loop() {
 }
 
 ```
+:::
 ::: tip 📝 NOTE
 If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12016 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12016_Flex_FSL0095103ST). This sample code in Github will work on all WisBlock Core.
 :::
 
-3. Once the example code is open, install the [RAKWireless MQx](https://github.com/RAKWireless/RAK-MQx-Library) library by clicking the yellow highlighted link, as shown in **Figure 10** and **Figure 11**.
+4. Once the example code is open, install the [RAKWireless MQx](https://github.com/RAKWireless/RAK-MQx-Library) library by clicking the yellow highlighted link, as shown in **Figure 10** and **Figure 11**.
 
 <rk-img
   src="/assets/images/wisblock/rak12016/quickstart/rak12016-lib.png"
@@ -257,7 +261,7 @@ If you experience any error in compiling the example sketch, check the updated c
 />
 
 
-4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 12** and **Figure 13**.
+5. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 12** and **Figure 13**.
 
 ::: tip 📝 NOTE
 If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
@@ -275,7 +279,7 @@ If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the *
   caption="Uploading the RAK12016 example code"
 />
 
-4. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs, as shown in **Figure 14**. Try to bend the flex sensor, and you will see that the resistance readings increase, as well as the bent degrees. Therefore, your RAK12016 is properly communicating to the WisBlock core.
+6. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs, as shown in **Figure 14**. Try to bend the flex sensor, and you will see that the resistance readings increase, as well as the bent degrees. Therefore, your RAK12016 is properly communicating to the WisBlock core.
 
 <rk-img
   src="/assets/images/wisblock/rak12016/quickstart/rak12016-logs.png"

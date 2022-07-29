@@ -25,9 +25,10 @@ Before going through each and every step on using the RAK12005 WisBlock module, 
 #### Hardware 
 
 - [RAK12005 & RAK12030 WisBlock Rain Sensor Module](https://store.rakwireless.com/products/rain-sensor-rak12005-module-and-rak12030-sensor?_pos=1&_sid=a90925657&_ss=r)
-- [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/) with IO slot
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
+- [RAK19008 WisBlock IO Extension Cable (optional)](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008)
 - [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
 - [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
 
@@ -80,7 +81,7 @@ The RAK12005 module produces an output voltage depending on the resistance of th
 
 ##### Mounting Mechanism
 
-The RAK12005 module can be mounted on the IO slot of the WisBlock Base board, as shown in **Figure 4**. Also, always secure the connection of the WisBlock module by using compatible screws.
+The RAK12005 module can be mounted on the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board, as shown in **Figure 4**. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12005/quickstart/mounting-mechanism.png"
@@ -122,6 +123,14 @@ If you will connect other modules to the remaining WisBlock Base slots, check on
 
 Now, you can connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
+:::warning ⚠️ WARNING
+- Batteries can cause harm if not handled properly.
+- Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
+- If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause a fire.
+- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
+- Make sure the battery wires match the polarity on the WisBlock Base board. Not all batteries have the same wiring.
+:::
+
 ### Software Configuration and Example
 
 In our example, you will be using the RAK12005 and RAK12030 sensors for detecting water or rain.
@@ -130,17 +139,13 @@ For RAK12005, the accessible pin assignments are defined as follows in the Ardui
 
 - `WB_IO6` for Water Sensor Input pin
 
-These are the quick links that go directly to the software guide for the specific WisBlock Core module you use:
+#### Initial Test of the RAK12005 WisBlock Module
 
-- [RAK12005 in RAK4631 WisBlock Core Guide](/Product-Categories/WisBlock/RAK12005/Quickstart/#rak12005-in-rak4631-wisblock-core-guide)
-- [RAK12005 in RAK11200 WisBlock Core Guide](/Product-Categories/WisBlock/RAK12005/Quickstart/#rak12005-in-rak11200-wisblock-core-guide)
-- [RAK12005 in RAK11310 WisBlock Core Guide](/Product-Categories/WisBlock/RAK12005/Quickstart/#rak12005-in-rak11310-wisblock-core-guide)
+1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
-#### RAK12005 in RAK4631 WisBlock Core Guide
+2. You need to select first the WisBlock Core you have.
 
-##### Arduino Setup
-
-1. First, you need to select the RAK4631 WisBlock Core.
+**RAK4631 Board**
 
 <rk-img
   src="/assets/images/wisblock/rak12005/quickstart/rak4631-board.png"
@@ -148,8 +153,27 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Selecting RAK4631 as WisBlock Core"
 />
 
-2. Next, copy the following sample code into your Arduino IDE.
+**RAK11200 Board**
 
+<rk-img
+  src="/assets/images/wisblock/rak12005/quickstart/rak11200-board.png"
+  width="100%"
+  caption="Selecting RAK11200 as WisBlock Core"
+/>
+
+**RAK11310 Board**
+
+<rk-img
+  src="/assets/images/wisblock/rak12005/quickstart/rak11310-board.png"
+  width="100%"
+  caption="Selecting RAK11310 as WisBlock Core"
+/>
+
+
+
+3. Next, copy the following sample code into your Arduino IDE.
+
+::: details Click Here to View Example Code
 ```c
 /**
  * @file RAK12005_WaterDetector.ino
@@ -184,12 +208,17 @@ void loop()
 }
 
 ```
-
-::: tip 📝 NOTE
-If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12005 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12005_WaterDetector).
 :::
 
-3. Then you can now select the right port and upload the code, as shown in **Figure 9** and **Figure 10**.
+::: tip 📝 NOTE
+If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12005 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12005_WaterDetector). This sample code in Github will work on all WisBlock Core.
+:::
+
+4. Then you can now select the right port and upload the code, as shown in **Figure 11** and **Figure 12**.
+
+::: tip 📝 NOTE
+If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak12005/quickstart/select-port.png"
@@ -203,145 +232,4 @@ If you experience any error in compiling the example sketch, check the updated c
   caption="Uploading the RAK12005 Sample code"
 />
 
-4. When you successfully uploaded the example sketch, you'll now be able to test the RAK12005 Rain Sensor module. Try pouring water on the copper traces of the RAK12030 and you'll be able to see that the blue and green LED of the WisBlock solution lights up when there is a presence of water, and then switched off when there is no presence of water or dry.
-
-#### RAK12005 in RAK11200 WisBlock Core Guide
-
-##### Arduino Setup
-
-1. First, you need to select the RAK11200 WisBlock Core.
-
-<rk-img
-  src="/assets/images/wisblock/rak12005/quickstart/rak11200-board.png"
-  width="100%"
-  caption="Selecting RAK11200 as WisBlock Core"
-/>
-
-2. Next, copy the following sample code into your Arduino IDE.
-```c
-/**
- * @file RAK12005_WaterDetector.ino
- * @author rakwireless.com
- * @brief use RAK12005 water detector module to detect rain
- * @version 0.1
- * @date 2021-05-24
- * @copyright Copyright (c) 2021
- */
-#define SENSOR_PIN  WB_IO6   // Attach Water sensor to Arduino Digital Pin WB_IO6
-
-void setup() 
-{
-   pinMode(SENSOR_PIN, INPUT);   // The Water Sensor is an Input
-   pinMode(LED_GREEN, OUTPUT);  // The LED is an Output
-   pinMode(LED_BLUE, OUTPUT);   // The LED is an Output
-}
-void loop() 
-{
-
-   /* The water sensor will switch HIGH when water is detected.
-    when water is detected turn LED on, and switch off when no water is present */
-   if( digitalRead(SENSOR_PIN) == HIGH) 
-   {
-      digitalWrite(LED_GREEN,HIGH);   //turn on
-      digitalWrite(LED_BLUE,HIGH);
-   }else 
-   {
-      digitalWrite(LED_GREEN,LOW);
-      digitalWrite(LED_BLUE,LOW);
-   }
-}
-
-```
-
-::: tip 📝 NOTE
-If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12005 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12005_WaterDetector).
-:::
-
-3. Then you can now select the right port and upload the code, as shown in **Figure 12** and **Figure 13**.
-
-::: tip 📝 NOTE
-RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 quick start guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
-:::
-
-<rk-img
-  src="/assets/images/wisblock/rak12005/quickstart/rak11200-select-port.png"
-  width="100%"
-  caption="Selecting the correct Serial Port"
-/>
-
-<rk-img
-  src="/assets/images/wisblock/rak12005/quickstart/rak11200-upload.png"
-  width="100%"
-  caption="Uploading the RAK12005 Sample code"
-/>
-
-4. When you successfully uploaded the example sketch, you'll now be able to test the RAK12005 Rain Sensor module. Try pouring water on the copper traces of the RAK12030 and you'll be able to see that the blue and green LED of the WisBlock solution lights up when there is a presence of water, and then switched off when there is no presence of water or dry.
-
-
-#### RAK12005 in RAK11310 WisBlock Core Guide
-
-##### Arduino Setup
-
-1. First, you need to select the RAK11310 WisBlock Core.
-
-<rk-img
-  src="/assets/images/wisblock/rak12005/quickstart/rak11310-board.png"
-  width="100%"
-  caption="Selecting RAK11310 as WisBlock Core"
-/>
-
-2. Next, copy the following sample code into your Arduino IDE.
-```c
-/**
- * @file RAK12005_WaterDetector.ino
- * @author rakwireless.com
- * @brief use RAK12005 water detector module to detect rain
- * @version 0.1
- * @date 2021-05-24
- * @copyright Copyright (c) 2021
- */
-#define SENSOR_PIN  WB_IO6   // Attach Water sensor to Arduino Digital Pin WB_IO6
-
-void setup() 
-{
-   pinMode(SENSOR_PIN, INPUT);   // The Water Sensor is an Input
-   pinMode(LED_GREEN, OUTPUT);  // The LED is an Output
-   pinMode(LED_BLUE, OUTPUT);   // The LED is an Output
-}
-void loop() 
-{
-
-   /* The water sensor will switch HIGH when water is detected.
-    when water is detected turn LED on, and switch off when no water is present */
-   if( digitalRead(SENSOR_PIN) == HIGH) 
-   {
-      digitalWrite(LED_GREEN,HIGH);   //turn on
-      digitalWrite(LED_BLUE,HIGH);
-   }else 
-   {
-      digitalWrite(LED_GREEN,LOW);
-      digitalWrite(LED_BLUE,LOW);
-   }
-}
-
-```
-
-::: tip 📝 NOTE
-If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12005 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12005_WaterDetector).
-:::
-
-3. Then you can now select the right port and upload the code, as shown in **Figure 15** and **Figure 16**.
-
-<rk-img
-  src="/assets/images/wisblock/rak12005/quickstart/rak11310-selectport.png"
-  width="100%"
-  caption="Selecting the correct Serial Port"
-/>
-
-<rk-img
-  src="/assets/images/wisblock/rak12005/quickstart/rak11310-upload.png"
-  width="100%"
-  caption="Uploading the RAK12005 Sample code"
-/>
-
-4. When you successfully uploaded the example sketch, you'll now be able to test the RAK12005 Rain Sensor module. Try pouring water on the copper traces of the RAK12030 and you'll be able to see that the blue and green LED of the WisBlock solution lights up when there is a presence of water, and then switched off when there is no presence of water or dry.
+5. When you successfully uploaded the example sketch, you'll now be able to test the RAK12005 Rain Sensor module. Try pouring water on the copper traces of the RAK12030 and you'll be able to see that the blue and green LED of the WisBlock solution lights up when there is a presence of water, and then switched off when there is no presence of water or dry.

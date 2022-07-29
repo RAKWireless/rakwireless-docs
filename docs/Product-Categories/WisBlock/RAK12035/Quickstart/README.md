@@ -28,7 +28,7 @@ Before going through each and every step on using the RAK12035 WisBlock module, 
 #### Hardware
 
 - [RAK12023 & RAK12035 WisBlock Soil Moisture Sensor Module](https://store.rakwireless.com/products/rak12023-rak12035-wisblock-soil-moisture-sensor)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) with IO slot
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
 - [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
@@ -130,8 +130,6 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 #### Initial Test of the RAK12035 WisBlock Module
 
-If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
-
 :::warning ⚠️ IMPORTANT
 Before you use the Soil Moisture sensor, you need to calibrate it. Please install the example sketch for calibration. The calibration values will be saved on the RAK12035 sensor itself so that you can read them back later from the sensor. In the first step, the sensor is calibrated by reading the sensor values while the sensor is in the air. In the next step submerge the sensor in water (only to the white line on the sensor). After the calibration is finished, the example sketch will save the calibration values directly in the sensor. The value measured in the air corresponds to 0% RH, the value measured in water corresponds to 100% RH.
 
@@ -146,7 +144,9 @@ The calibration method in air and water is not very precise. To get more precise
   caption="Burying the RAK12035 sensor probe into the plant soil"
 />
 
-1. You need to select first the WisBlock Core you have.
+1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+
+2. You need to select first the WisBlock Core you have.
 
 **RAK4631 Board**
 
@@ -172,10 +172,11 @@ The calibration method in air and water is not very precise. To get more precise
   caption="Selecting RAK11310 as WisBlock Core"
 />
 
-2. Calibrating the sensor is a **MUST**. Please follow first the steps on [RAK12023 Quick Start Guide](/Product-Categories/WisBlock/RAK12023/Quickstart/#software-configuration-and-example) (Upon this guide, it will teach you how to calibrate your sensor properly.) before proceeding to **STEP 3** below.
+3. Calibrating the sensor is a **MUST**. Please follow first the steps on [RAK12023 Quick Start Guide](/Product-Categories/WisBlock/RAK12023/Quickstart/#software-configuration-and-example) (Upon this guide, it will teach you how to calibrate your sensor properly.) before proceeding to **STEP 3** below.
 
-3. After following **STEP 2** on how to calibrate the sensor, copy the following sample code into your Arduino IDE. 
+4. After following **STEP 2** on how to calibrate the sensor, copy the following sample code into your Arduino IDE. 
 
+::: details Click Here to View Example Code
 ```c
 /**
  * @file RAK12035_Soil_Humidity.ino
@@ -273,6 +274,7 @@ void loop()
 }
 
 ```
+:::
 ::: tip 📝 NOTE
 If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12035 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12035_SoilMoisture) and this sample code in Github will work on all WisBlock Core.
 
@@ -283,7 +285,7 @@ Other sample code in the WisBlock Github Repository:
 - [RAK12035 Soil Moisture](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12035_SoilMoisture/RAK12035_Soil_Humidity)
 :::
 
-3. Once the example code is open, you can now select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
+5. Once the example code is open, you can now select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
 
 ::: tip 📝 NOTE
 If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
@@ -301,7 +303,7 @@ If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the *
   caption="Uploading the RAK12035 example code"
 />
 
-4. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs, as shown in **Figure 13**. Try to bury the RAK12035 sensor probe into the soil, and you'll be able to see the soil's capacitance, moisture, and temperature.
+6. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs, as shown in **Figure 13**. Try to bury the RAK12035 sensor probe into the soil, and you'll be able to see the soil's capacitance, moisture, and temperature.
    
 ::: tip 📝 NOTE   
 Before burying the RAK12035 sensor probe, following the [Recommended Depth](/Product-Categories/WisBlock/RAK12035/Quickstart/#recommended-depth) of the RAK12035 Sensor probe is **required**. 

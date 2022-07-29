@@ -9,7 +9,7 @@ prev: ../Quickstart/
 next: false
 ---
 
-# RAK12006 WisBlock PIR Module Datasheet
+# RAK12006 WisBlock PIR Sensor Module Datasheet
 
 ## Overview
 
@@ -23,6 +23,7 @@ The RAK12006 is a Pyroelectric Infrared Radial (PIR) module. It is designed to d
 - Built-in filter, screen the interference by other frequency  
 - Schmitt Trigger Output REL  
 - 3.3&nbsp;V Power supply
+- Chipset: Senba Sensing Technology AM312
 - **Module size:** 15 X 25&nbsp;mm
 
 ## Specifications
@@ -31,7 +32,7 @@ The RAK12006 is a Pyroelectric Infrared Radial (PIR) module. It is designed to d
 
 #### Mounting
 
-The RAK12006 module can be mounted on the IO slot of the WisBlock Base board. **Figure 1** shows the mounting mechanism of the RAK12006 on a WisBlock Base module, such as the RAK5005-O.
+The RAK12006 WisBlock PIR Sensor Module can be mounted to the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. **Figure 1** shows the mounting mechanism of the RAK12006 on a WisBlock Base module.
 
 <rk-img
   src="/assets/images/wisblock/rak12006/datasheet/mounting-mechanism.png"
@@ -41,7 +42,7 @@ The RAK12006 module can be mounted on the IO slot of the WisBlock Base board. **
 
 ### Hardware
 
-The hardware specification is categorized into five parts. It shows the chipset of the module and discusses the pinouts and its corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12006 WisBlock PIR Module.
+The hardware specification is categorized into five parts. It shows the chipset of the module and discusses the pinouts and its corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12006 WisBlock PIR Sensor Module.
 
 #### Chipset
 

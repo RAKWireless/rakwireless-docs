@@ -14,7 +14,7 @@ Go to the official Arduino website and download the [Arduino IDE](https://www.ar
 
 <rk-img
   src="/assets/images/rui3/vs/1.download-arduino.png"
-  width="100%"
+  width="90%"
   caption="Arduino IDE latest version"
 />
 
@@ -73,7 +73,7 @@ First, you need the check the compatibility with your system and choose between 
 
 <rk-img
   src="/assets/images/rui3/vs/ls-arduino.png"
-  width="90%"
+  width="100%"
   caption="Check the download folder"
 />
 
@@ -86,7 +86,7 @@ tar xvf arduino-version.xz
 
 <rk-img
   src="/assets/images/rui3/vs/tar-linux.png"
-  width="90%"
+  width="100%"
   caption="Tarball extract command"
 />
 
@@ -94,7 +94,7 @@ tar xvf arduino-version.xz
 
 <rk-img
   src="/assets/images/rui3/vs/ls-tarball.png"
-  width="90%"
+  width="100%"
   caption="Arduino install folder created"
 />
 
@@ -102,7 +102,7 @@ tar xvf arduino-version.xz
 
 <rk-img
   src="/assets/images/rui3/vs/sudo-install.png"
-  width="90%"
+  width="100%"
   caption="Arduino install script running"
 />
 
@@ -157,7 +157,7 @@ To develop your custom RUI3 firmware using Arduino IDE, you need first to instal
 
 #### Install RUI3 Board Support Package in Arduino IDE
 
-1. Open Arduino IDE and go to File -> Preferences.
+1. Open Arduino IDE and go to `File -> Preferences`.
 
 <rk-img
   src="/assets/images/rui3/vs/arduino-preferences.png"
@@ -169,7 +169,7 @@ To develop your custom RUI3 firmware using Arduino IDE, you need first to instal
 
 <rk-img
   src="/assets/images/rui3/vs/additional-boards.png"
-  width="90%"
+  width="80%"
   caption="Modifying Additional Board Manager URLs"
 />
 
@@ -198,17 +198,17 @@ If there are other URLs already there, just add them on the next line. After add
 
 <rk-img
   src="/assets/images/rui3/vs/rui3-bsp.png"
-  width="90%"
+  width="80%"
   caption="Installing RUI3 Board Support Package"
 />
 
-6. Now click on the area highlighted in blue to choose your preferred board: 
+6. Now click the area highlighted in blue to choose your preferred board: 
 
 Install RAKWireless RUI nRF Boards.
 
 <rk-img
   src="/assets/images/rui3/vs/rui3-nrf.png"
-  width="90%"
+  width="80%"
   caption="Installing RUI3 nRF Board Support Package"
 />
 
@@ -216,11 +216,121 @@ Install RAKWireless RUI STM32 Boards.
 
 <rk-img
   src="/assets/images/rui3/vs/rui3-stm32.png"
-  width="90%"
+  width="80%"
   caption="Installing RUI3 STM32 Board Support Package"
 />
 
-7. To finish the installation click on the **Install** button.
+7. To finish the installation click the **Install** button.
+
+#### Install RUI3 Libraries into Arduino IDE
+
+You can extend the capabilities of Arduino IDE using RUI3 Libraries.
+
+The Arduino Libraries for RUI3 are available at [RUI3 Library](https://downloads.rakwireless.com/RUI/RUI3/Library/). To use a RUI3 Library on your project you need to install the Library in the Arduino IDE as shown in the next section.
+
+##### Importing a ZIP Library
+
+This guide shows how to install the [RAK1906 WisBlock Environmental Sensor](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1906/Overview/) RUI3 Library on Arduino IDE. 
+
+You can mount the RAK1906 to the WisBlock Base Board by following the [RAK1906 Hardware Setup](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1906/Quickstart/#hardware-setup) guide. Mounting other [WisBlock Sensors](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-sensor) uses a similar procedure.
+
+1. Download [RAK1906 RUI3 Library](https://downloads.rakwireless.com/RUI/RUI3/Library/RAKwireless_RAK1906_Environment_BME680.zip) `.zip` file.
+
+2. Launch Arduino IDE, navigate to `Sketch -> Include Library -> Add .ZIP Library...` as shown below.
+
+<rk-img
+  src="/assets/images/rui3/vs/lib-include.png"
+  width="100%"
+  caption="Include RUI3 Library"
+/>
+
+3. You will be prompted to select the Library you would like to add. Navigate to the `.zip` file's location and open it.
+<rk-img
+  src="/assets/images/rui3/vs/lib-zip-folder.png"
+  width="70%"
+  caption="Select RUI3 ZIP Library"
+/>
+
+##### Open and Build RUI3 Library Example
+
+1. Launch Arduino IDE, navigate to File -> Examples -> RAKWireless RAK1906 Environment BME680 -> Example1_BasicReading as shown below.
+
+<rk-img
+  src="/assets/images/rui3/vs/rak1906-example.png"
+  width="100%"
+  caption="Open RUI3 RAK1906 Library Example"
+/>
+
+::: tip 📝 NOTE
+To view the Arduino Examples, you must select the RUI3 Board under Tools-> Board-> RAKwireless RUI3 board.  
+:::
+
+2. Now click `Upload` button to build and flash the sketch.
+
+<rk-img
+  src="/assets/images/rui3/vs/rak1906-upload.png"
+  width="100%"
+  caption="Build RUI3 RAK1906 Library Example"
+/>
+
+3. After the build finishes, open Arduino Serial Monitor to check the RAK1906 Example logs.
+
+<rk-img
+  src="/assets/images/rui3/vs/rak1906-logs.png"
+  width="80%"
+  caption="RUI3 RAK1906 Library Example Logs"
+/>
+
+
+#### Build Smart_Farm Monitoring RUI3 Example
+
+This example monitors data from temperature, pressure and humidity sensor over a LoRaWAN network using the [LoRaWAN RUI3](/RUI3/LoRaWAN/) API.
+
+1. Download RUI3 Libraries:
+
+- [RAK1901 RUI3 Library](https://downloads.rakwireless.com/RUI/RUI3/Library/RAKwireless_RAK1901_Temperature_and_Humidity_SHTC3.zip).
+- [RAK1902 RUI3 Library](https://downloads.rakwireless.com/RUI/RUI3/Library/RAKwireless_RAK1902_Pressure_LPS22HB.zip).
+
+2. Install both Libraries on Arduino IDE as described in [Import a ZIP Library](#importing-a-zip-library) section.
+
+3. Launch Arduino IDE, navigate to `File -> Examples -> RAK WisBlock RUI Example -> Application_Scenario -> LoRa -> Smart_Farm` as shown below.
+
+<rk-img
+  src="/assets/images/rui3/vs/rui3-smart-example.png"
+  width="100%"
+  caption="Open RUI3 Smart_Farm Example"
+/>
+
+4. The LoRaWAN parameters below must be configured based on the Regional Band, EUIs and APPKEY from the LoRaWAN Network Server device registration. The RUI3 device must be within a working LoRaWAN gateway registered on the same LoRaWAN Network and operating at the same Regional Band as well.
+
+```c
+#define SMART_FARM_BAND     (RAK_REGION_EU868)
+#define SMART_FARM_DEVEUI   {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x88}
+#define SMART_FARM_APPEUI   {0x0E, 0x0D, 0x0D, 0x01, 0x0E, 0x01, 0x02, 0x0E}
+#define SMART_FARM_APPKEY   {0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3E}
+```
+It is highly recommended to read the section **LoRaWAN Example**:
+
+- [LoRaWAN Example RAK3172](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#lorawan-example).
+- [LoRaWAN Example RAK4631-R](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK4631-R/Examples/#lorawan-example).
+
+
+5. Now click `Upload` button to build and flash to sketch.
+
+<rk-img
+  src="/assets/images/rui3/vs/rui3-smart-upload.png"
+  width="100%"
+  caption="Build and upload RUI3 Smart_Farm Example"
+/>
+
+6. After the build finishes, open Arduino Serial Monitor to check the Smart_Farm project log messages.
+
+<rk-img
+  src="/assets/images/rui3/vs/rui3-smart-log.png"
+  width="80%"
+  caption="Arduino Serial Monitor RUI3 Smart_Farm Example"
+/>
+
 
 ## Visual Studio Code (Arduino Extension)
 
@@ -240,7 +350,7 @@ You can use Visual Studio Code by installing the Arduino Extension. The Arduino 
   caption="Visual Studio Code selecting the Extensions view"
 />
 
-2. The **Extensions** available are shown on the left side. On the **Extensions** text area, type **Arduino**, then click on the **Arduino for Visual Studio Code** icon as shown in **Figure 21**.
+2. The **Extensions** available are shown on the left side. On the **Extensions** text area, type **Arduino**, then click the **Arduino for Visual Studio Code** icon as shown in **Figure 29**.
 
 <rk-img
   src="/assets/images/rui3/vscode/ext-arduino.png"
@@ -256,7 +366,7 @@ You can use Visual Studio Code by installing the Arduino Extension. The Arduino 
   caption="Installing Arduino for Visual Studio Code Extension"
 />
 
-4. To build the RUI3 examples, install the **Microsoft C/C++ Extensions Pack**. On the **Extensions** text area, type and select **C/C++ Extension Pack**, as shown in **Figure 23**. To finish, click the **Install** button.
+4. To build the RUI3 examples, install the **Microsoft C/C++ Extensions Pack**. On the **Extensions** text area, type and select **C/C++ Extension Pack**, as shown in **Figure 31**. To finish, click the **Install** button.
 
 <rk-img
   src="/assets/images/rui3/vscode/c-ext-pack.png"
@@ -264,7 +374,7 @@ You can use Visual Studio Code by installing the Arduino Extension. The Arduino 
   caption="Installing Microsoft C/C++ Extension"
 />
 
-5. Now install the RAK BSP. Click on **Manage** -> **Settings**.
+5. Now install the RAK BSP. Click  **Manage** -> **Settings**.
 
 <rk-img
   src="/assets/images/rui3/vscode/manage-settings.png"
@@ -308,7 +418,7 @@ https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main
   caption="Configuring RAK boards on Arduino Board Manager"
 />
 
-10. In some cases, it is possible to select the version to be installed, as shown in **Figure 29**.
+10. In some cases, it is possible to select the version to be installed, as shown in **Figure 37**.
 
 <rk-img
   src="/assets/images/rui3/vscode/rak4631-version.png"
@@ -317,7 +427,7 @@ https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main
 />
 
 
-11. If you want to change later your selected board and configure its specific settings, click the highlighted area shown in **Figure 30**.
+11. If you want to change later your selected board and configure its specific settings, click the highlighted area shown in **Figure 38**.
 
 <rk-img
   src="/assets/images/rui3/vscode/board-manager-update.png"
@@ -333,7 +443,7 @@ https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main
   caption="Select the Serial Port using extension configuration"
 />
 
-Alternatively, you can configure the serial port by clicking the COM port, as shown in the highlighted part of **Figure 32**.
+Alternatively, you can configure the serial port by clicking the COM port, as shown in the highlighted part of **Figure 40**.
 
 <rk-img
   src="/assets/images/rui3/vscode/select-port.png"
@@ -359,7 +469,7 @@ Alternatively, you can configure the serial port by clicking the COM port, as sh
   caption="Open Arduino Led Breathing"
 />
 
-2. **Figure 35** shows the two commonly used options for Arduino Visual Studio Code development: **Upload** and **Verify**. The icon highlighted in yellow is the **Arduino Upload** button, and the other one, in blue, is the **Arduino Verify** option.
+2. **Figure 43** shows the two commonly used options for Arduino Visual Studio Code development: **Upload** and **Verify**. The icon highlighted in yellow is the **Arduino Upload** button, and the other one, in blue, is the **Arduino Verify** option.
 
 <rk-img
   src="/assets/images/rui3/vscode/build-icons.png"
@@ -378,7 +488,7 @@ The F1 key or keyboard shortcut `<CTRL><SHIFT><P>` brings up the **Command Palet
 
 If you have PIO (PlatformIO) extension installed, you need to disable it for the workspace in use. The two extensions have conflicts with each other. 
 
-Select **Extensions** icon and type **PlatformIO** on the text area. Now click on the gear icon on PlatformIO, then select the **Disable (Workspace)** option, as shown in **Figure 36**.
+Select **Extensions** icon and type **PlatformIO** on the text area. Now click the gear icon on PlatformIO, then select the **Disable (Workspace)** option, as shown in **Figure 44**.
 
 <rk-img
   src="/assets/images/rui3/vscode/pio-disable.png"
@@ -398,7 +508,7 @@ Both PlatformIO and Arduino extension in Visual Studio Code use the same keyboar
   caption="Open Arduino Upload shortcut"
 />
 
-2. Click the **pen** icon, as shown in **Figure 38**.
+2. Click the **Open** icon, as shown in **Figure 46**.
 
 <rk-img
   src="/assets/images/rui3/vscode/arduino-shortcut.png"
@@ -437,11 +547,203 @@ Check the new **build** folder on Visual Studio Code Explorer.
 />
 
 
+### Developing a RUI3 Library Project using Visual Studio Code IDE
+
+#### Prerequisite
+
+1. Download [RAK1906](https://downloads.rakwireless.com/RUI/RUI3/Library/RAKwireless_RAK1901_Temperature_and_Humidity_SHTC3.zip) RUI3 Library.
+
+2. Make sure the sensor is mounted as described in the [RAK1906 Hardware Setup section](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1906/Quickstart/#hardware-setup).
+
+
+#### Software Configuration
+
+1. Install the Library on Arduino IDE as described in [Import a ZIP Library](#importing-a-zip-library) section.
+
+
+2. Launch Arduino IDE, navigate to `Sketch -> Include Library -> Add .ZIP Library...` as shown below.
+
+<rk-img
+  src="/assets/images/rui3/vscode/lib-include.png"
+  width="100%"
+  caption="Include RUI3 Library"
+/>
+
+
+3. You will be prompted to select the Library you would like to add. Navigate to the `.zip` file's location and open it.
+<rk-img
+  src="/assets/images/rui3/vscode/lib-zip-folder.png"
+  width="70%"
+  caption="Select RUI3 ZIP file"
+/>
+
+The RUI3 Library will be installed into your Arduino Sketchbook's `libraries` folder.<br>
+You can view your Sketchbook folder by opening Arduino IDE and navigating to `File -> Preferences` as shown below.
+<rk-img
+  src="/assets/images/rui3/vscode/sketchbook-folder.png"
+  width="70%"
+  caption="SketchBook Location"
+/>
+
+4. Now launch Visual Studio Code and open Arduino Sketchbook folder by navigating to `File -> Open Folder...`.
+
+Select the Arduino `libraries` folder you'd like to open in the IDE. It should be the library's top-level directory, where `src` and `examples` directories are contained. To complete the installation click the **Select Folder** button.
+
+<rk-img
+  src="/assets/images/rui3/vscode/open-folder.png"
+  width="70%"
+  caption="Arduino Library Sketch folder"
+/>
+
+5. Open the **RAKwireless_RAK1906_Environment_BME680** project using the Command Palette by typing `<CTRL><SHIFT>P` or **F1** key.<br> Then type `Arduino: Examples`. 
+
+<rk-img
+  src="/assets/images/rui3/vscode/vscode-example.png"
+  width="100%"
+  caption="Select Arduino Custom Library Example"
+/>
+
+Select the `Examples from Custom Library` folder.
+
+<rk-img
+  src="/assets/images/rui3/vscode/bme680-project.png"
+  width="100%"
+  caption="Open Arduino Custom Library Example"
+/>
+
+6. Inside `Examples from Custom Library` folder, select the project `RAKwireless_RAK1906_Environment_BME680` by clicking on
+ `Example1_BasicReading` icon.<br>A new Visual Studio Code window will open.
+
+<rk-img
+  src="/assets/images/rui3/vscode/bme680-open.png"
+  width="100%"
+  caption="Open Arduino Custom Library Example"
+/>
+
+Connect your RUI3 board to USB port.
+
+
+7. Click `<Select Board Type>` and `<Select Serial Port>` to configure the project.
+<rk-img
+  src="/assets/images/rui3/vscode/vs-project-config.png"
+  width="100%"
+  caption="Configure RAKwireless_RAK1906_Environment_BME680 project"
+/>
+
+8. Click `Upload` icon to build and flash the firmware.
+
+<rk-img
+  src="/assets/images/rui3/vscode/vs-ino-build.png"
+  width="100%"
+  caption="Build RAKwireless_RAK1906_Environment_BME680 project"
+/>
+
+::: tip 📝 NOTE
+Don't forget to add [Faster Build Configuration](#faster-build-configuration) to `RAKwireless_RAK1906_Environment_BME680` project.   
+:::
+
+### Build Smart_Farm Monitoring RUI3 Example on Visual Studio Code IDE
+
+This example monitors data from temperature, pressure and humidity sensor over a LoRaWAN network using the [LoRaWAN RUI3](/RUI3/LoRaWAN/) API.
+
+
+#### Prerequisite
+
+The RUI3 device is a LoRaWAN end-device that needs to be within range of a LoRaWAN gateway. The gateway needs to be registered to a LoRaWAN network server(LNS) or with a built-in network server.
+It is highly recommended to read the section **LoRaWAN Example**:
+
+- [LoRaWAN Example RAK3172](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#lorawan-example)
+- [LoRaWAN Example RAK4631-R](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK4631-R/Examples/#lorawan-example)
+
+Make sure the sensors are mounted as described in the **Hardware Setup** section of the Quick Start Guides.
+
+- [RAK1901 Hardware Setup](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1901/Quickstart/#hardware-setup)
+- [RAK1902 Hardware Setup](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1902/Quickstart/#hardware-setup)
+
+#### Software Configuration
+
+1. Download RUI3 Libraries:
+
+- [RAK1901 RUI3 Library](https://downloads.rakwireless.com/RUI/RUI3/Library/RAKwireless_RAK1901_Temperature_and_Humidity_SHTC3.zip)
+- [RAK1902 RUI3 Library](https://downloads.rakwireless.com/RUI/RUI3/Library/RAKwireless_RAK1902_Pressure_LPS22HB.zip)
+
+
+2. Install both Libraries on Arduino IDE as described in [Import a ZIP Library](#importing-a-zip-library) section.
+
+
+3. Open the [**Command Palette**](/RUI3/VSCode/#command-palette) by typing `<CTRL><SHIFT>P` or **F1 key**. Then type **Arduino: Board Config** on the text area or choose from the list.
+
+<rk-img
+  src="/assets/images/rui3/vscode/vscode-bc.png"
+  width="100%"
+  caption="Arduino Visual Studio IDE Board Configuration"
+/>
+
+On **Arduino Board Configuration** window, click the highlighted icon to select your RUI3 board:<br>
+RAK4631
+<rk-img
+  src="/assets/images/rui3/vscode/bc-rak4631.png"
+  width="100%"
+  caption="Arduino Board Configuration RAK4631"
+/>
+
+RAK3172
+<rk-img
+  src="/assets/images/rui3/vscode/bc-rak3172.png"
+  width="100%"
+  caption="Arduino Board Configuration RAK3172"
+/>
+
+RAK3272-SIP
+<rk-img
+  src="/assets/images/rui3/vscode/bc-rak3272-sip.png"
+  width="100%"
+  caption="Arduino Board Configuration RAK3172-SIP"
+/>
+
+4. Open the **Command Palette** again by typing `<CTRL><SHIFT>P` or F1 key. Then type `Arduino:Examples` on the text area or choose from the list. 
+
+<rk-img
+  src="/assets/images/rui3/vscode/vscode-examples.png"
+  width="100%"
+  caption="Open Arduino Examples"
+/>
+
+5. Now check the `RUI_V3_examples` folder of your RUI3 hardware. Click `Smart_Farm` icon and a new Visual Studio Code window will open.
+
+<rk-img
+  src="/assets/images/rui3/vscode/smart-vscode-rak4631.png"
+  width="100%"
+  caption="RUI3 RAK4631 Examples"
+/>
+
+Connect your RUI3 board to USB.
+
+6. Check the `Select Serial Port` icon to configure the Serial Port of the project.
+
+<rk-img
+  src="/assets/images/rui3/vscode/smart-example-vscode.png"
+  width="100%"
+  caption="Smart_Farm Example configure Serial Port"
+/>
+
+6. Click **Upload** icon to flash the `Smart_Farm` example on RUI3 hardware.
+
+<rk-img
+  src="/assets/images/rui3/vscode/ino-upload.png"
+  width="100%"
+  caption="Upload Smart_Farm Example"
+/>
+::: tip 📝 NOTE
+Don't forget to add [Faster Build Configuration](#faster-build-configuration) to `Smart_Farm` project.   
+:::
+
+
 ## Visual Studio IDE
 
 ### Visual Studio IDE Download and Installation
 
-If you don't have Visual Studio IDE yet, download the installer on [Visual Studio IDE Community 2019](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes), as shown in **Figure 42**.
+If you don't have Visual Studio IDE yet, download the installer on [Visual Studio IDE Community 2019](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes), as shown in **Figure 67**.
 
 
 <rk-img
@@ -484,11 +786,11 @@ If you don't have Visual Studio IDE yet, download the installer on [Visual Studi
 
 4. After restarting your computer, download the [Arduino IDE for Visual Studio 2019](https://www.visualmicro.com/page/Arduino-Visual-Studio-Downloads.aspx).
 
-      - Alternative link: [Arduino IDE for Visual Studio 2019](https://1drv.ms/u/s!AsT00oFsGAmRoO4JVG47LeCEaM5-cQ?e=IZ9bnD)
+   - Alternative link: [Arduino IDE for Visual Studio 2019](https://1drv.ms/u/s!AsT00oFsGAmRoO4JVG47LeCEaM5-cQ?e=IZ9bnD)
 
 <rk-img
   src="/assets/images/wisblock/rak4631-r/quickstart/arduino-vs-2019.png"
-  width="100%"
+  width="90%"
   caption="Arduino IDE for Visual Studio"
 />
 
@@ -534,7 +836,7 @@ If you don't have Visual Studio IDE yet, download the installer on [Visual Studi
   caption="Visual Studio Community 2019 Micro Explorer configuration"
 />
 
-3. A **Micro Explorer** window appears. Under the IDE tab, select IDE **Arduino 1.6/1.8**, then click on the **IDE Locations** to open the IDE Locations window.
+3. A **Micro Explorer** window appears. Under the IDE tab, select IDE **Arduino 1.6/1.8**, then click the **IDE Locations** to open the IDE Locations window.
 
 <rk-img
   src="/assets/images/rui3/vs/micro-explorer-window.png"
@@ -548,7 +850,7 @@ If you don't have Visual Studio IDE yet, download the installer on [Visual Studi
 - Check if the Arduino IDE is already installed on folder `C:\Program Files (x86)\Arduino`.
 - Copy the RUI URL below, and paste it on **Optional addition boards manager urls**.
 
-```
+```json
 https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json
 ```
 
@@ -561,7 +863,7 @@ https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main
 5. Restart the Visual Studio IDE to finish the Extension configuration.
 
 - Open the **Visual Micro Explorer** on the **Extensions** -> **vMicro** -> **Visual Micro Explorer**.
-- Click on the **Board Manager** tab, then type **RAK** in the text area. The Micro Explorer screen shows all RAK platforms installed and available for installation. If there is any update, it will also be displayed.
+- Click the **Board Manager** tab, then type **RAK** in the text area. The Micro Explorer screen shows all RAK platforms installed and available for installation. If there is any update, it will also be displayed.
 
 <rk-img
   src="/assets/images/rui3/vs/rak-micro-explorer.png"
@@ -574,7 +876,7 @@ https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main
 - Launch Arduino IDE and select **Tools** -> **Board Manager**.
 <rk-img
   src="/assets/images/rui3/vs/arduino-tools.png"
-  width="90%"
+  width="100%"
   caption="Arduino Tool Board Manager"
 />
 
@@ -586,7 +888,7 @@ https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main
   caption="Arduino RAKwireless Board Manager"
 />
 
-Now click on the area highlighted in blue to choose your preferred board: 
+Now click the area highlighted in blue to choose your preferred board: 
 
 Install RAKWireless RUI nRF Boards.
 
@@ -604,7 +906,7 @@ Install RAKWireless RUI STM32 Boards.
   caption="Installing RUI3 STM32 Board Support Package"
 />
 
-7. To finish the installation click on the **Install** button.
+7. To finish the installation click the **Install** button.
 
 ::: tip 📝 NOTE   
 If the examples do not appear on the Micro Explorer window, then you need to restart Visual Studio IDE.
@@ -612,7 +914,7 @@ If the examples do not appear on the Micro Explorer window, then you need to res
 
 ### Compile an Example with RAK4631-R
 
-1. Launch Visual Studio IDE and select **Extensions** -> **VMicro**. Click on the Dropdown icon, then scroll and select **WisBlock Core RAK4631**.
+1. Launch Visual Studio IDE and select **Extensions** -> **VMicro**. Click the Dropdown icon, then scroll and select **WisBlock Core RAK4631**.
 
 <rk-img
   src="/assets/images/rui3/vs/rak-nrf.png"
@@ -628,7 +930,7 @@ If the examples do not appear on the Micro Explorer window, then you need to res
   caption="Creating a New Arduino project"
 />
 
-3. Open the **Visual Micro Explorer** window, then select **Extensions** -> **VMicro** -> **Visual Micro Explorer**.
+3. Open the **Visual Micro Explorer** window,  by navigating to **Extensions** -> **VMicro** -> **Visual Micro Explorer**.
 
 <rk-img
   src="/assets/images/rui3/vs/vs-micro-explorer.png"
@@ -653,26 +955,6 @@ If the examples do not appear on the Micro Explorer window, then you need to res
   caption="Visual Micro - Help and Examples"
 />
 
-<!--
-
-4. Now, close the **Micro Explorer** window and open the Arduino sketch on the **Solution Explorer** window:
-- Click on the **x** icon to close `Micro Explorer`. 
-- Click on the **triangle** icon to open `Solution Explorer`.
-
-<rk-img
-  src="/assets/images/rui3/vs/vs-open-sketch.png"
-  width="100%"
-  caption="RAK4631 Solution Explorer"
-/>
-
-5. In the Solution Explorer, under RAK4631, click the `RAK4631.ino` file.
-
-<rk-img
-  src="/assets/images/rui3/vs/vs-ino.png"
-  width="100%"
-  caption="Opening the RAK4631.ino file"
-/>
--->
 
 6. Configure **Solution**, **Platform**, and **Serial Port** of the project. Click the dropdown and choose the following:
 
@@ -716,7 +998,7 @@ AT+VER=?
 ### Compile an Example with RAK3172
 
 
-1. Launch Visual Studio IDE and select **Extensions** -> **VMicro**. Click on the Dropdown icon, then scroll and select **WisDuo RAK3172 Evaluation Board**.
+1. Launch Visual Studio IDE and select **Extensions** -> **VMicro**. Click the dropdown icon, then scroll and select **WisDuo RAK3172 Evaluation Board**.
 
 <rk-img
   src="/assets/images/rui3/vs/rak-stm32.png"
@@ -732,7 +1014,7 @@ AT+VER=?
   caption="Creating a New Arduino project"
 />
 
-3. Open the **Visual Micro Explorer** window, the click **Extensions** -> **VMicro** -> **Visual Micro Explorer**
+3. Open the **Visual Micro Explorer** window, by navigating to **Extensions** -> **VMicro** -> **Visual Micro Explorer**
 
 <rk-img
   src="/assets/images/rui3/vs/vs-micro-explorer.png"
@@ -776,3 +1058,191 @@ AT+VER=?
   width="100%"
   caption="Build and upload the RAK3172 project"
 />
+
+### Developing a RUI3 Library Project using Visual Studio IDE
+
+This guide shows how to install the [RAK1906 WisBlock Environmental Sensor](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1906/Overview/) RUI3 Library on Visual Studio IDE.
+
+You can mount the RAK1906 to the WisBlock Base Board by following the [RAK1906 Hardware Setup](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1906/Quickstart/#hardware-setup) guide. Mounting other [WisBlock Sensors](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-sensor) uses a similar procedure.
+
+#### Prerequisite
+
+- Import [RAK1906 ZIP library](#importing-a-zip-library) on Arduino IDE.
+
+- Make sure the sensor is mounted as described in the [RAK1906 Hardware Setup section](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1906/Quickstart/#hardware-setup).
+
+#### Software Configuration
+
+1. Download [RAK1906 RUI3 Library](https://downloads.rakwireless.com/RUI/RUI3/Library/RAKwireless_RAK1906_Environment_BME680.zip) `.zip` file.
+
+2. Launch Arduino IDE, navigate to `Sketch -> Include Library -> Add .ZIP Library...` as shown below.
+
+<rk-img
+  src="/assets/images/rui3/vs/lib-include.png"
+  width="100%"
+  caption="Include RUI3 Library"
+/>
+
+3. You will be prompted to select the Library you would like to add. Navigate to the `.zip` file's location and open it.
+<rk-img
+  src="/assets/images/rui3/vs/lib-zip-folder.png"
+  width="80%"
+  caption="Select RUI3 ZIP file"
+/>
+
+The RUI3 Library will be installed into your Arduino Sketchbook's `libraries` folder.<br>
+You can view your Sketchbook folder by opening Arduino IDE and navigating to `File -> Preferences` as shown below.
+
+<rk-img
+  src="/assets/images/rui3/vs/sketchbook-folder.png"
+  width="80%"
+  caption="SketchBook Location"
+/>
+
+#### Build and Configure Visual Studio RUI3 Library project
+
+1. Connect your RUI3 board to USB port to configure the RUI3 project.
+
+2. Launch Visual Studio IDE then open **Visual Micro Explorer** by navigating to `Extensions -> vMicro -> Board`. Click arrow down icon if you want to change the `Board Configuration`.
+
+Select RAK3172 Evaluation Board:
+
+<rk-img
+  src="/assets/images/rui3/vs/vs-rak3172.png"
+  width="100%"
+  caption="Selecting RAK3172 Evaluation Board"
+/>
+
+Select RAK4631 Board:
+<rk-img
+  src="/assets/images/rui3/vs/vs-rak4631.png"
+  width="100%"
+  caption="Selecting RAK4631 Board"
+/>
+
+
+2. Relaunch Visual Studio IDE then open `Visual Micro Explorer` by navigating to `Extensions -> vMicro -> Visual Micro Explorer`.
+
+<rk-img
+  src="/assets/images/rui3/vs/vm-explorer.png"
+  width="100%"
+  caption="Open Visual Micro Explorer"
+/>
+
+3. On the Micro Explorer window, click the **Examples** tab.
+
+<rk-img
+  src="/assets/images/rui3/vs/vs-examples.png"
+  width="100%"
+  caption="Visual Micro Explorer Examples"
+/>
+
+
+4. The RUI3 examples can be located on folder `Library Examples`. Click  `Example1_BasicReading` to open the project on Visual Studio IDE.
+<rk-img
+  src="/assets/images/rui3/vs/vs-rui3-example.png"
+  width="100%"
+  caption="RAKWireless Library Examples"
+/>
+
+::: tip 📝 NOTE   
+If the examples do not appear on the Micro Explorer window, then you need to restart Visual Studio IDE.
+:::
+
+5. Click **Open Copy** button to open RUI3 Library project on Visual Studio IDE.
+<rk-img
+  src="/assets/images/rui3/vs/vs-open-copy.png"
+  width="100%"
+  caption="RUI3 Library Open Copy project"
+/>
+
+6. Don't forget to configure the Serial Port.
+<rk-img
+  src="/assets/images/rui3/vs/vs-serial-port.png"
+  width="100%"
+  caption="RUI3 Library configure Serial Port"
+/>
+
+7. To flash the project on target board, click the `Build and Upload` icon. 
+
+<rk-img
+  src="/assets/images/rui3/vs/vs-build-rui3.png"
+  width="100%"
+  caption="RUI3 Library Build project"
+/>
+
+
+
+#### Build and Configure Visual Studio Smart_Farm project
+
+1. First install the [Smart_Farm](#build-smart-farm-monitoring-rui3-example) Project on Arduino IDE. The **Arduino IDE VSIX** extension will inherit the Arduino examples.
+
+
+2. Launch Visual Studio IDE and select `Extensions -> VMicro`.<br> 
+Navigate to `Board` option, then click dropdown icon and select your favorite RUI3 board.<br> 
+Also configure the Serial Port by typing on `Port or IP` text area or click the dropdown icon as shown below.
+
+<rk-img
+  src="/assets/images/rui3/vs/vs-explorer.png"
+  width="100%"
+  caption="Configure RUI3 Project using Visual Micro Explorer"
+/>
+
+Relaunch Visual Studio IDE to update **Visual Micro Explorer** configuration.
+ 
+3. Open **Visual Micro Explorer** by navigating to `Extensions -> vMicro -> Visual Micro Explorer` then click the `Examples` tab.
+
+<rk-img
+  src="/assets/images/rui3/vs/vs-examples-tab.png"
+  width="100%"
+  caption="Visual Micro Explorer Examples"
+/>
+
+
+4. Navigate to `RUI3_V3_examples` folder then click `Smart_Farm`as shown below.
+
+<rk-img
+  src="/assets/images/rui3/vs/vs-smart.png"
+  width="100%"
+  caption="Visual Micro Explorer Smart_Farm Example"
+/>
+
+
+5. Click **Open Copy** button to open `Smart_Farm` project on Visual Studio IDE.
+<rk-img
+  src="/assets/images/rui3/vs/smart-open-copy.png"
+  width="100%"
+  caption="Open Smart_Farm Example on Visual Studio IDE"
+/>
+
+
+6. The `Smart_Farm` project can be located on `Solution Explorer` window.<br> 
+Close `Micro Explorer` window and then click `Smart_Farm.ino`
+
+<rk-img
+  src="/assets/images/rui3/vs/sol-smart.png"
+  width="100%"
+  caption="Visual Studio IDE Solution Explorer"
+/>
+
+
+7. Click the `Build and Upload` icon to flash the project on RUI3 board.
+
+<rk-img
+  src="/assets/images/rui3/vs/smart-build.png"
+  width="100%"
+  caption="Build and Upload Smart_Farm project"
+/>
+
+8. After the build finishes, check the `Output` window.
+
+<rk-img
+  src="/assets/images/rui3/vs/smart-build-ok.png"
+  width="100%"
+  caption="Successful build Smart_Farm project"
+/>
+
+
+::: tip 📝 NOTE   
+If you can't find the Smart_Farm project on the Micro Explorer window, then try to restart Visual Studio IDE.
+:::

@@ -131,11 +131,11 @@
                       </q-item-label>
                       <q-list dense >
                         <q-item dense class="list-height">
-                          <a href="/Product-Categories/Software-Tools/DFU/Overview/"
+                          <a href="https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/"
                           class="text-weight-light text-grey-7 text-caption">DFU Tool</a>
                         </q-item>
                         <q-item dense class="list-height">
-                          <a href="/Product-Categories/Software-Tools/Serial-Port/Overview/"
+                          <a href="https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip"
                           class="text-weight-light text-grey-7 text-caption">Serial Port Tool</a>
                         </q-item>
                       </q-list>
@@ -157,11 +157,11 @@
                   <q-item class="item-align">
                     <q-item-section>
                       <q-item-label>
-                        <a href="/Product-Categories/Software-APIs-and-Libraries/WisGateOS/Overview/" class="text-grey-10 text-weight-regular text-subtitle2">WisGate OS2</a>
+                        <a href="/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/Overview/" class="text-grey-10 text-weight-regular text-subtitle2">WisGate OS2</a>
                       </q-item-label>
                       <q-list dense >
                         <q-item dense>
-                          <a href="/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/Overview/" 
+                          <a href="/Product-Categories/Software-APIs-and-Libraries/WisGateOS/Overview/" 
                           class="text-weight-light text-grey-7 text-caption"
                           >WisGate OS</a>
                         </q-item>

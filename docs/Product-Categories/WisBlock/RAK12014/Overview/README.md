@@ -25,6 +25,10 @@ Thank you for choosing **RAK12014 WisBlock ToF Sensor Module** in your awesome I
 * [24-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 
+**Example**
+
+[Sample Code: RAK12014_VL53L0X_Laser_Radar](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12014_VL53L0X_Laser_Radar)
+
 <!--**Examples** -->
 
 <!--For All WisBlock Core: -->
@@ -45,13 +49,15 @@ The VL53L0X's 940&nbsp;nm VCSEL emitter (Vertical-Cavity Surface-Emitting Laser)
     * I2C Interface
     * Xshutdown (reset) and interrupt GPIO
     * 2.6&nbsp;V ~ 3.5&nbsp;V power supply
+    * Current Consumption: 3&nbsp;uA - 19&nbsp;mA
+    * Chipset: STMicroelectronics VL53L0X
 
 * **Module Size**
     * 10&nbsp;mm x 10&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK12014**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK12014** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK12014**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12014** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.    

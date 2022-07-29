@@ -45,13 +45,16 @@ RAK1901 is a WisBlock Sensor which extends the WisBlock system with a Sensirion 
     * ±2.0&nbsp;°C temperature accuracy 
     * -40&nbsp;°C to +125&nbsp;°C temperature range
     * ±2.0% RH humidity accuracy 
-    * 0 to 100% humidity range   
+    * 0 to 100% humidity range  
+    * Voltage Supply: 3.3&nbsp;V
+    * Current Consumption: 0.3&nbsp;uA to 270&nbsp;uA
+    * Chipset: Sensirion SHTC3 
 * **Size**
     * 10 x 10&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK1901**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK1901** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK1901**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK1901** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function. 

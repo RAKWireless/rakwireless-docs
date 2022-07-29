@@ -15,14 +15,14 @@ tags:
 
 ### Description
 
-The RAK3272-SiP Breakout Board was designed to allow easy access to the RAK3172-SiP pins to simplify development and testing. The microcontroller GPIO pins are accessible via 2.54&nbsp;mm headers. The breakout board itself has a RAK3172-SiP (based on STM32WLE5) as its core. The STM32WLE5 is part of [STM32WLE5x](https://www.st.com/en/microcontrollers-microprocessors/stm32wlex.html) family. This core is based on an Arm® Cortex®‐M4 core running at 48&nbsp;MHz, and a sub-GHz radio based on Semtech SX126x. 
+The RAK3272-SiP Breakout Board was designed to allow easy access to the RAK3172-SiP pins to simplify development and testing. The microcontroller GPIO pins are accessible via 2.54&nbsp;mm headers. The breakout board itself has a RAK3172-SiP (based on STM32WLE5JC) as its core. The STM32WLE5JC is part of [STM32WLE5x](https://www.st.com/en/microcontrollers-microprocessors/stm32wlex.html) family. This core is based on an Arm® Cortex®‐M4 core running at 48&nbsp;MHz, and a sub-GHz radio based on Semtech SX126x. 
 
 The board complies with Class A, B, & C of LoRaWAN 1.0.3 specifications and also features LoRa Point-to-Point (P2P) communication mode, which helps you in implementing your own customized long-range LoRa network quickly. It is also RUI3 compatible which allows you to create custom firmware using RUI3 APIs.
 
 ## Features
 
 - 32-bit Arm® Cortex®‐M4 48&nbsp;MHz MCU and sub-GHz Semtech SX126x radio
-- Chipset STM32WLE5 (single-core)
+- Chipset STM32WLE5JC (single-core)
 - I/O ports: UART/I2C/GPIO/SPI
 - 32 MHz&nbsp;TXCO and 32&nbsp;KHz xtal
 - RUI3 API compatible

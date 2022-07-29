@@ -13,6 +13,12 @@ next: false
 
 ## Overview
 
+<rk-img
+  src="/assets/images/wisblock/rak16000/datasheet/rak16000_overview.png"
+  width="50%"
+  caption="RAK16000 Top and Back View"
+/>
+
 ### Description
 
 RAK16000 is a part of the WisBlock Sensor Series that is capable of measuring DC current in the range of 0 to 3&nbsp;A in a voltage range of 0 to 26&nbsp;V. With the two measured DC values, you get the power consumption by multiplying the current and voltage. Additionally, this module uses the INA219BID from Texas Instruments that offers high accuracy maximum rate of 0.5% over temperature.
@@ -26,21 +32,16 @@ RAK16000 is a part of the WisBlock Sensor Series that is capable of measuring DC
   * 100&nbsp;mΩ shunt resistor can provide a resolution of up to 0.1&nbsp;mA
   * I2C interface
   * 3.3&nbsp;V Power supply
+  * Chipset: Texas Instruments INA219BID
   * 15&nbsp;mm x 25&nbsp;mm
 
 ## Specifications
 
 ### Overview
 
-<rk-img
-  src="/assets/images/wisblock/rak16000/datasheet/rak16000_overview.png"
-  width="50%"
-  caption="RAK16000 Top and Back View"
-/>
-
 #### Mounting
 
-The RAK16000 module can be mounted on the IO slot of the WisBlock Base board. **Figure 2** shows the mounting mechanism of the RAK16000 on a WisBlock Base module, such as the RAK5005-O.
+The RAK16000 WisBlock DC Current Module can be mounted to the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. **Figure 2** shows the mounting mechanism of the RAK16000 on a WisBlock Base module.
 
 <rk-img
   src="/assets/images/wisblock/rak16000/datasheet/image-20210225140433974.png"
@@ -60,8 +61,7 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 #### Pin Definition
 
-The RAK16000 WisBlock DC Current Module comprises a standard 40-pin WisIO connector compatible with the WisBlock Base IO Slot. The WisIO connector allows the RAK16000 module to be mounted to a WisBlock Base board, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 3.**
-
+The RAK16000 WisBlock DC Current Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK16000 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 <rk-img
   src="/assets/images/wisblock/rak16000/datasheet/RAK16000_Pinout.svg"
@@ -71,7 +71,7 @@ The RAK16000 WisBlock DC Current Module comprises a standard 40-pin WisIO connec
 
 ::: tip 📝 NOTE
 
-- Only the **I2C** related pins, **3V3_S** and **GND** are connected to the WisIO connector.
+- Only the **I2C** related pins, **3V3_S** and **GND** are connected to the WisConnector.
 - **3V3_S** voltage output from the WisBlock Base that powers the RAK16000 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK16000 module.
 :::  
 

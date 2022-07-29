@@ -12,9 +12,9 @@ tags:
 ---
 
 
-# RAK1902 WisBlock Barometer Pressure Sensor
+# RAK1902 WisBlock Barometer Pressure Sensor Module
 
-Thank you for choosing **RAK1902 WisBlock Barometer Pressure Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK1902 WisBlock Barometer Pressure Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [RAK1902 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -39,7 +39,7 @@ For WisBlock Core RAK4630:
 
 ## Product Description
 
-The RAK1902 WisBlock Sensor module, part of the RAK Wireless WisBlock series, is an ultra-compact piezo-resistive pressure sensor that functions as a digital barometer with an I2C interface. The sensing element, which detects absolute pressure, consists of a suspended membrane manufactured through a delicate process developed by ST®. The pressure measurement covers the range from 260&nbsp;hPa to 1260&nbsp;hPa and the temperature measurement covers the range from -40&nbsp;°C to 85&nbsp;°C. Measurements accuracy is ±0.1&nbsp;hPa for pressure and ±1.5&nbsp;°C for temperature.
+The RAK1902 WisBlock Barometer Pressure Sensor Module, part of the RAK Wireless WisBlock series, is an ultra-compact piezo-resistive pressure sensor that functions as a digital barometer with an I2C interface. The sensing element, which detects absolute pressure, consists of a suspended membrane manufactured through a delicate process developed by ST®. The pressure measurement covers the range from 260&nbsp;hPa to 1260&nbsp;hPa and the temperature measurement covers the range from -40&nbsp;°C to 85&nbsp;°C. Measurements accuracy is ±0.1&nbsp;hPa for pressure and ±1.5&nbsp;°C for temperature.
 
 ## Product Features
 
@@ -48,14 +48,16 @@ The RAK1902 WisBlock Sensor module, part of the RAK Wireless WisBlock series, is
     * ±0.1&nbsp;hPa accuracy     
     * -40&nbsp;°C to +85&nbsp;°C temperature range
     * ±1.5&nbsp;°C temperature accuracy 
-    * Typical 3&nbsp;uA power consumption    
+    * Voltage Supply: 3.3&nbsp;V
+    * Current Consumption: 1&nbsp;uA to 12&nbsp;uA   
+    * Chipset: ST LPS22HB 
 
 * **Size**
     * 10 x 10&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK1902**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK1902** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK1902**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK1902** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.    

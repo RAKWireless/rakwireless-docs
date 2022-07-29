@@ -11,9 +11,9 @@ tags:
     - BME680
 ---
 
-# RAK1906 WisBlock Environmental Sensor
+# RAK1906 WisBlock Environmental Sensor Module
 
-Thank you for choosing **RAK1906 WisBlock Environmental Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK1906 WisBlock Environmental Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK1906 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -40,11 +40,14 @@ For WisBlock Core RAK11300:
 
 ## Product Description
 
-The RAK1906 WisBlock Environmental Sensor module, part of the RAK WisBlock Sensor series, is a 4-in-1 digital sensor board that comprises gas, humidity pressure, and temperature sensor, based on the Bosch® BME680 module. The RAK1906 is ideal for applications such as indoor air quality, home automation, and building IoT solutions. 
+The RAK1906 WisBlock Environmental Sensor Module, part of the RAK WisBlock Sensor series, is a 4-in-1 digital sensor board that comprises gas, humidity, pressure, and temperature sensor, based on the Bosch® BME680 module. The RAK1906 is ideal for applications such as indoor air quality, home automation, and building IoT solutions. 
 
 ## Product Features
 
 * **Sensor specifications**
+    * Voltage Supply: 3.3&nbsp;V
+    * Current Consumption: 0.15&nbsp;uA to 350&nbsp;uA
+    * Chipset: BOSCH BME680
     * Temperature range: -40&nbsp;°C to 85&nbsp;°C
     * Humidity range: 0 to 100%
     * Pressure range: 300&nbsp;hPa to 1100&nbsp;hPa
@@ -56,7 +59,7 @@ The RAK1906 WisBlock Environmental Sensor module, part of the RAK WisBlock Senso
 
 ## Prerequisites
 
-To use a **RAK1906**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK1906** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK1906**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK1906** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 ::: warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.

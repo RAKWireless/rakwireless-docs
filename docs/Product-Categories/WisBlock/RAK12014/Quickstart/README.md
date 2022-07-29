@@ -15,15 +15,15 @@ next: ../Datasheet/
 
 ### What Do You Need?
 
-Before going through each and every step on using the RAK12014 WisBlock ToF Sensor, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK12014 WisBlock ToF Sensor Module, make sure to prepare the necessary items listed below:
 
 #### Hardware
 
-- [RAK12014 WisBlock ToF Sensor](https://store.rakwireless.com/products/rak12014-wisblock-tof-sensor)
+- [RAK12014 WisBlock ToF Sensor Module](https://store.rakwireless.com/products/rak12014-wisblock-tof-sensor)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [RAK19008 WisBlock IO Extension Cable](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008)
+- [RAK19005 WisBlock Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005)
 - [Li-Ion/LiPo battery (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
 - [Solar charger (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
 
@@ -38,7 +38,7 @@ Before going through each and every step on using the RAK12014 WisBlock ToF Sens
 
 The RAK12014, a part of the RAKwireless WisBlock Sensor Series, is a Time-of-Flight (ToF) module designed based on VL53L0X from STMicroelectronics. The VL53L0X is a ToF laser-ranging module, providing accurate distance measurement up to 2&nbsp;m. For more information about RAK12014, refer to the [Datasheet](../Datasheet/).
 
-This sensor module can be mounted on any Sensor slot of the WisBlock Base board, as shown in **Figure 1**. Also, always secure the connection of the WisBlock module by using compatible screws.
+RAK12014 module can be connected to the sensor's slot of [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) to communicate with the WisBlock Core, as shown in **Figure 1**. It will work on **SLOT C to F**. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12014/quickstart/connection.png"
@@ -51,7 +51,7 @@ This sensor module can be mounted on any Sensor slot of the WisBlock Base board,
 ##### Assembling
 
 
-As shown in **Figure 2**, the location for Slot A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
+As shown in **Figure 2**, the location for Slot A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12014/quickstart/mounting.png"
@@ -99,7 +99,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 - Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
 - If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause a fire.
 - Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
-- Make sure the battery wires match the polarity on the RAK5005-O board. Not all batteries have the same wiring.
+- Make sure the battery wires match the polarity on the WisBlock Base board. Not all batteries have the same wiring.
 
 :::
 
@@ -107,8 +107,11 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 In this example, you will be able to measure distance via Serial Monitor.
 
+1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
+2. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
+
+**RAK4631 Board**
 
 <rk-img
   src="/assets/images/wisblock/rak12014/quickstart/selectboard4631.png"
@@ -116,11 +119,15 @@ In this example, you will be able to measure distance via Serial Monitor.
   caption="Selecting RAK4631 as WisBlock Core"
 />
 
+**RAK11200 Board**
+
 <rk-img
   src="/assets/images/wisblock/rak12014/quickstart/selectboard11200.png"
   width="100%"
   caption="Selecting RAK11200 as WisBlock Core"
 />
+
+**RAK11310 Board**
 
 <rk-img
   src="/assets/images/wisblock/rak12014/quickstart/selectboard11300.png"
@@ -129,8 +136,9 @@ In this example, you will be able to measure distance via Serial Monitor.
 />
 
 
-2. Copy the example code below:
+3. Copy the example code below:
 
+::: details Click Here to View Example Code
 ```c
 /**
    @file RAK12014_Distance_Detection.ino
@@ -191,12 +199,13 @@ void loop() {
   delay(300);
 }
 ```
+:::
 
-If you experience any error in compiling the example sketch, check the updated code for the RAK12014 WisBlock ToF Sensor that can be found on the [RAK12014 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12014_VL53L0X_Laser_Radar/RAK12014_Distance_Detection).
+::: tip 📝 NOTE
+If you experience any error in compiling the example sketch, check the updated code for the RAK12014 WisBlock ToF Sensor Module that can be found on the [RAK12014 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12014_VL53L0X_Laser_Radar/RAK12014_Distance_Detection).
+:::
 
-
-
-3. Install the required library, as shown in **Figure 9** and **Figure 10**.
+4. Install the required library, as shown in **Figure 9** and **Figure 10**.
 
 <rk-img
   src="/assets/images/wisblock/rak12014/quickstart/library_link.png"
@@ -211,7 +220,11 @@ If you experience any error in compiling the example sketch, check the updated c
 />
 
 
-4. Select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
+5. Select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
+
+::: tip 📝 NOTE
+If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak12014/quickstart/select_port.png"
@@ -225,11 +238,8 @@ If you experience any error in compiling the example sketch, check the updated c
   caption="Uploading the sample code"
 />
 
-:::tip 📝 NOTE:
-RAK11200 requires the BOOT0 pin to be configured properly before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
-:::
 
-5. When you have successfully uploaded the sample code, you may open up your serial monitor as shown in **Figure 13**. You can try to experiment with the data by moving the sensor away from the detected surface.
+6. When you have successfully uploaded the sample code, you may open up your serial monitor as shown in **Figure 13**. You can try to experiment with the data by moving the sensor away from the detected surface.
 
 <rk-img
   src="/assets/images/wisblock/rak12014/quickstart/serial_monitor.png"
@@ -237,6 +247,3 @@ RAK11200 requires the BOOT0 pin to be configured properly before uploading. If n
   caption="Serial monitor reading"
 />
 
-:::tip 📝 NOTE:
-You can also try the other code example for the RAK12014 ToF Sensor module, which can be found on the [RAK12014 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12014_VL53L0X_Laser_Radar).
-:::

@@ -51,7 +51,11 @@ The RAK12011 module gives information about:
 - Barometric Pressure
 - Environment Temperature
 
-RAK12011 module can be connected to any slot of WisBlock Base to communicate with the WisBlock Core. It will work on **SLOT A to D**. Also, always secure the connection of the WisBlock module by using compatible screws.
+RAK12011 module can be connected to the sensor's slot of [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) to communicate with the WisBlock Core, as shown in **Figure 1**. It will work on **SLOT A, C to F**. Also, always secure the connection of the WisBlock module by using compatible screws.
+
+:::tip 📝 NOTE:
+RAK12011 has one digital output line, so you need one GPIO from WisBlock Core. It means RAK12011 should be used on a sensor slot with one available GPIO. However, WB_IO2 is used to control 3V3_S. Hence, RAK12011 is used only on slots without WB_IO2 like sensor slots A, C to F on WisBlock Base board. 
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak12011/quickstart/rak12011-assembly.png"
@@ -63,7 +67,7 @@ RAK12011 module can be connected to any slot of WisBlock Base to communicate wit
 
 ##### Assembling
 
-As shown in **Figure 2**, the location for Slot A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the module.
+As shown in **Figure 2**, the location for Slot A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the module.
 
 <rk-img
   src="/assets/images/wisblock/rak12011/quickstart/mounting-mechanism.png"
@@ -106,13 +110,23 @@ If you will connect other modules to the remaining WisBlock Base slots, check on
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
+:::warning ⚠️ WARNING
+- Batteries can cause harm if not handled properly.
+- Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
+- If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause a fire.
+- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
+- Make sure the battery wires match the polarity on the WisBlock Base board. Not all batteries have the same wiring.
+:::
+
 ### Software Configuration and Example
 
 #### Initial Test of the RAK12011 WisBlock Module
 
-If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
+2. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
+
+**RAK4631 Board**
 
 <rk-img
   src="/assets/images/wisblock/rak12011/quickstart/rak4631-board.png"
@@ -120,11 +134,15 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK4631 as WisBlock Core"
 />
 
+**RAK11200 Board**
+
 <rk-img
   src="/assets/images/wisblock/rak12011/quickstart/rak11200-board.png"
   width="100%"
   caption="Selecting RAK11200 as WisBlock Core"
 />
+
+**RAK11310 Board**
 
 <rk-img
   src="/assets/images/wisblock/rak12011/quickstart/rak11310-board.png"
@@ -132,8 +150,9 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK11310 as WisBlock Core"
 />
 
-2. Next, copy the following sample code into your Arduino IDE:
+3. Next, copy the following sample code into your Arduino IDE:
 
+::: details Click Here to View Example Code
 ```c
 /**
    @file RAK1902_MEMS_Pressure_LPS33HW.ino
@@ -210,11 +229,13 @@ void loop() {
 }
 
 ```
+:::
+
 ::: tip 📝 NOTE
 If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12011 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12011_MEMS_Pressure_LPS33HW) and this sample code in Github will work on all WisBlock Core.
 :::
 
-3. Once the example code is open, install the [Adafruit LPS2X](https://github.com/adafruit/Adafruit_LPS2X) library by clicking the yellow highlighted link, as shown in **Figure 9** and **Figure 10**.
+4. Once the example code is open, install the [Adafruit LPS2X](https://github.com/adafruit/Adafruit_LPS2X) library by clicking the yellow highlighted link, as shown in **Figure 9** and **Figure 10**.
 
 <rk-img
   src="/assets/images/wisblock/rak12011/quickstart/rak12011-lib.png"
@@ -228,7 +249,7 @@ If you experience any error in compiling the example sketch, check the updated c
   caption="Installing the compatible library for RAK12011 Module"
 />
 
-4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
+5. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
 
 ::: tip 📝 NOTE
 If you're using the RAK11200 as your WisBlock Core, the RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
@@ -246,7 +267,7 @@ If you're using the RAK11200 as your WisBlock Core, the RAK11200 requires the **
   caption="Uploading the RAK12011 example code"
 />
 
-5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 13**, then your RAK12011 is properly communicating to the WisBlock core.
+6. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 13**, then your RAK12011 is properly communicating to the WisBlock core.
 
 <rk-img
   src="/assets/images/wisblock/rak12011/quickstart/rak12011-logs.png"

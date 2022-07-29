@@ -72,7 +72,7 @@ Only the I2C related pins, 3V3_S, and GND are connected to this module.
 :::
 
 <rk-img
-  src="/assets/images/wisblock/rak15000/datasheet/RAK15000_pin.png"
+  src="/assets/images/wisblock/rak15000/datasheet/RAK15000_pinout.svg"
   width="60%"
   caption="RAK15000 WisBlock module Pinout Diagram"
 />

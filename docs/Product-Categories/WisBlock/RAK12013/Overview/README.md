@@ -24,6 +24,10 @@ Thank you for choosing **RAK12013 WisBlock Radar Sensor Module** in your awesome
 * [40-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
 * [WisBlock IO Tutorial](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
 
+**Example**
+
+[Sample Code: RAK12013_Radar_3GHZ](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12013_Radar_3GHZ)
+
 
 ## Product Description
 
@@ -38,6 +42,8 @@ RAK12013 is a 3.2&nbsp;GHz microwave radar module based on RCWL-9196. It uses th
 
 * **Module specifications**
     * 3.3&nbsp;V Power Supply
+    * Current Consumption: < 3&nbsp;uA
+    * Chipset: RCWL RCWL-9196
     * Motion Detection Module
     * Detection Distance: 5 - 7 meters
     * Detection Area: 360 degrees angle with no blind spot
@@ -49,7 +55,7 @@ RAK12013 is a 3.2&nbsp;GHz microwave radar module based on RCWL-9196. It uses th
 
 ## Prerequisites
 
-To use a **RAK12013**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK12013** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK12013**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12013** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.    

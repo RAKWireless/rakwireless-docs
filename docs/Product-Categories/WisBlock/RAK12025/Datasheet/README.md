@@ -13,12 +13,16 @@ next: false
 
 ## Overview
 
-
+<rk-img
+  src="/assets/images/wisblock/rak12025/datasheet/rak12025_module.png"
+  width="40%"
+  caption="RAK12025 WisBlock Gyroscope Sensor Module"
+/>
 
 ### Description
 
 
-RAK12025 is a gyroscope module, part of the RAKWireless WisBlock Sensor series. The module is based on I3G4250D from ST. The I3G4250D is a low-power 3-axis angular rate sensor able to provide unprecedented stability at a zero-rate level and sensitivity over temperature and time. It includes a sensing element and a digital interface capable of providing the measured angular rate. With I3G4250D, RAK12025 can measure rotation speed and report data through a standard I2C digital interface.
+RAK12025 is a gyroscope module, part of the RAKWireless WisBlock Sensor series. The module is based on I3G4250D from STMicroelectronics. The I3G4250D is a low-power 3-axis angular rate sensor able to provide unprecedented stability at a zero-rate level and sensitivity over temperature and time. It includes a sensing element and a digital interface capable of providing the measured angular rate. With I3G4250D, RAK12025 can measure rotation speed and report data through a standard I2C digital interface. 
 
 ### Features 
 * **Gyroscope  module**
@@ -27,23 +31,20 @@ RAK12025 is a gyroscope module, part of the RAKWireless WisBlock Sensor series. 
 * **16-bit rate value data output**
 * **8-bit temperature data output**
 * **Module size**: 10 x 10&nbsp;mm
+* **Power Supply Voltage**: 3.3&nbsp;V
+* **Current Consumption**: 5&nbsp;uA - 6.1&nbsp;mA
+* **Chipset**: STMicroelectronics I3G4250D
 
 
 ## Specifications
 ### Overview
 
-<rk-img
-  src="/assets/images/wisblock/rak12025/datasheet/rak12025_module.png"
-  width="40%"
-  caption="RAK12025 WisBlock Gyroscope Sensor Module"
-/>
-
 #### Mounting
 
-The RAK12025 Gyroscope module can be mounted to the sensor slot of the WisBlock Base board. **Figure 2** shows the mounting mechanism of the RAK12025 on a WisBlock Base board module, such as the RAK5005-O.
+**Figure 1** shows the mounting mechanism of the RAK12025 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12025 module can be mounted on the slots: **C, D, E, & F**.
 
 :::tip 📝 NOTE:
-RAK12025 has two digital output lines, so you need two GPIOs from WisCore. It means RAK12025 should be used on a sensor slot with two available GPIOs. However, WB_IO2 is used to control 3V3_S. Hence, RAK12025 is used only on slots without WB_IO2 like sensor slots C and D on RAK5005-O. 
+RAK12025 has two digital output lines, so you need two GPIOs from WisBlock Core. It means RAK12025 should be used on a sensor slot with two available GPIOs. However, WB_IO2 is used to control 3V3_S. Hence, RAK12025 is used only on slots without WB_IO2 like sensor slots C and D on WisBlock Base board. 
 :::
 
 <rk-img
@@ -58,13 +59,13 @@ The hardware specification is categorized into six parts. It shows the chipset o
 
 
 #### Chipset
-| Vendor | Part number |
-| ------ | ----------- |
-| ST     | I3G4250D    |
+| Vendor             | Part number |
+| ------------------ | ----------- |
+| STMicroelectronics | I3G4250D    |
 
 #### Pin Definition
 
-The RAK12025 WisBlock gyroscope module comprises a standard Wisblock sensor connector. The connector allows the RAK12025 module to be mounted to a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 3**. 
+The RAK12025 WisBlock Gyroscope Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK12025 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 :::tip 📝 NOTE:
 **I2C** related pin, **INT2**, **INT1**, **3V3_S**, and **GND** are connected to Wisblock connector.
@@ -76,18 +77,20 @@ The RAK12025 WisBlock gyroscope module comprises a standard Wisblock sensor conn
   caption="RAK12025 pinouts"
 />
 
+If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse depends on what slot the module is plugged in. The following table shows the default IO used for different slots:
+
 The table below shows the default IOs used for different slots using INT1:  
   
 | SLOT C | SLOT D | SLOT E | SLOT F |
 | ------ | ------ | ------ | ------ |
-| IO4    | IO6    | IO3    | IO5    |
+| WB_IO4 | WB_IO6 | WB_IO3 | WB_IO5 |
 
 
 When using INT2, the default IOs used for different slots is shown in the table below: 
   
 | SLOT C | SLOT D | SLOT E | SLOT F |
 | ------ | ------ | ------ | ------ |
-| IO3    | IO5    | IO4    | IO6    |
+| WB_IO3 | WB_IO5 | WB_IO4 | WB_IO6 |
 
 #### Sensors
 

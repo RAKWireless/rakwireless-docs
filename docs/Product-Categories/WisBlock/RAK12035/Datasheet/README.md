@@ -35,6 +35,7 @@ Because you need to bury the RAK12035 sensor probe into the soil, the electronic
 - Measures soil moisture
 - I2C address is programmable
 - Calibration via software
+- Chipset: Atmel ATTINY441-SSU
 - Module size: 18.1 x 149&nbsp;mm
 
 ## Specifications
@@ -42,6 +43,12 @@ Because you need to bury the RAK12035 sensor probe into the soil, the electronic
 ### Hardware
 
 The hardware specification is categorized into three (3) parts. It discusses the pinouts and their corresponding functions and diagrams of the module. It also covers the mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK12035 WisBlock Soil Moisture Sensor Module.
+
+####  Chipset
+
+| Vendor | Part number   |
+| ------ | ------------- |
+| Atmel  | ATTINY441-SSU |
 
 
 #### Pin Definition

@@ -15,7 +15,7 @@ next: false
 
 ### Description
 
-RAK12028 is a Through-Beam-Fork (TBF) connector module. It has one (1) standard WisBlock sensor connector, which you can connect with the WisBlock Base such as RAK5005-O. It also has one (1) 6-pins connector dedicated to the RAK12031. The [RAK12031](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK12031/Overview/) is a separate Through-Beam-Fork sensor that can be connected to the RAK12028 connector module using a cable.
+RAK12028 is a Through-Beam-Fork (TBF) connector module. It has one (1) standard WisBlock sensor connector, which you can connect with the WisBlock Base. It also has one (1) 6-pins connector dedicated to the RAK12031. The [RAK12031](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK12031/Overview/) is a separate Through-Beam-Fork sensor that can be connected to the RAK12028 connector module using a cable.
 
 
 ### Features
@@ -29,7 +29,7 @@ RAK12028 is a Through-Beam-Fork (TBF) connector module. It has one (1) standard 
 
 #### Mounting
 
-The RAK12028 module can be mounted on the slots: A, B, C, or D of a WisBlock Base board. **Figure 1** shows the mounting mechanism of the RAK12028 on a WisBlock Base board, such as the RAK5005-O.
+**Figure 1** shows the mounting mechanism of the RAK12028 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12028 module can be mounted on the slots: **A, C, D, E, & F**.
 
 <rk-img
   src="/assets/images/wisblock/rak12028/datasheet/mounting-mechanism.png"
@@ -44,7 +44,7 @@ The hardware specification is categorized into three (3) parts. It discusses the
 
 #### Pin Definition
 
-The RAK12028 WisBlock TBF Connector Module comprises a standard 24-pin WisConnector. The WisConnector allows the RAK12028 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the Pinout Definition is shown in **Figure 2**.
+The RAK12028 WisBlock TBF Connector Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK12028 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisblock/rak12028/datasheet/RAK12028_Pinout.svg"
@@ -56,7 +56,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
   
 | SLOT A | SLOT C | SLOT D | SLOT E | SLOT F |
 | :----: | :----: | :----: | :----: | :----: |
-|  IO1   |  IO3   |  IO5   |  IO4   |  IO6   |
+| WB_IO1 | WB_IO3 | WB_IO5 | WB_IO4 | WB_IO6 |
 
 ::: tip 📝 NOTE
 - Only **I2C** related pin, **3V3_S**, **GND**, and two (2) **GPIO** are connected to the WisConnector.

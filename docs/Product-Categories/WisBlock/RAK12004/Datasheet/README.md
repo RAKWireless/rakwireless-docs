@@ -33,6 +33,7 @@ The RAK12004 is a gas sensor module, part of the RAKWireless WisBlock Sensor ser
 * Alert function
 * Detection Range: 300～10000&nbsp;ppm (flammable gas)
 * 3.3&nbsp;V Power Supply
+* Chipset: Winsen MQ-2
 * **Module size**: 25 x 35&nbsp;mm
 
 ## Specifications
@@ -40,7 +41,7 @@ The RAK12004 is a gas sensor module, part of the RAKWireless WisBlock Sensor ser
 
 #### Mounting
 
-The RAK12004 MQ2 Gas Sensor module can be mounted to the IO slot of the WisBlock Base Board. Figure 1 shows the mounting mechanism of the RAK12004 on a WisBlock Base module, such as the RAK5005-O.
+The RAK12004 WisBlock MQ2 Gas Sensor Module can be mounted to the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. **Figure 1** shows the mounting mechanism of the RAK12005 on a WisBlock Base module.
 
 <rk-img
   src="/assets/images/wisblock/rak12004/datasheet/rak12004_mounting.png"
@@ -62,7 +63,7 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 #### Pin Definition
 
-The RAK12004 WisBlock MQ2 Gas Sensor Module comprises a standard 40-pin WisConnector. The WisConnector allows the RAK12004 module to mounted to a WisBlock Base Board, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in Figure 2. 
+The RAK12004 WisBlock MQ2 Gas Sensor Module comprises a standard 40-pin WisConnector. The WisConnector allows the RAK12004 module to mounted to a WisBlock Base Board. The pin order of the connector and the pinout definition is shown in Figure 2. 
 
 
 :::tip 📝 NOTE:

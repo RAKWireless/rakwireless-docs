@@ -19,7 +19,8 @@ Before going through each and every step on using the RAK12029 WisBlock Inductiv
 #### Hardware
 
 - [RAK12029 WisBlock Inductive Sensor Module](https://store.rakwireless.com/products/rak12029-wisblock-inductive-sensor)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK19008 WisBlock IO Extension Cable (optional)](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) with IO slot
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
 - [Li-Ion/LiPo battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable) (required)
@@ -48,7 +49,7 @@ Also, always secure the connection of the WisBlock module by using compatible sc
 
 ##### Assembling
 
-As shown in **Figure 2**, the location for the IO slot is properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the module.
+As shown in **Figure 2**, the location for the IO slot is properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the module.
 
 <rk-img
   src="/assets/images/wisblock/rak12029/quickstart/rak12029_mounting.png"
@@ -91,12 +92,11 @@ If you will connect other modules to the remaining WisBlock Base slots, check on
 After all this setup, you can now connect the battery(optional) and USB cable to start programming your WisBlock Core.
 
 :::warning ⚠️ WARNING
-
-- Battery can cause harm if not handled properly.
+- Batteries can cause harm if not handled properly.
 - Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
 - If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause a fire.
-- Make sure the battery wires match the polarity on the RAK WisBlock Base Board. Not all batteries have the same wiring.
 - Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
+- Make sure the battery wires match the polarity on the WisBlock Base board. Not all batteries have the same wiring.
 :::
 
 ### Software Configuration and Example
@@ -105,30 +105,34 @@ RAK12029 is a metal detection sensor module based on the LDC1614 from Texas Inst
 
 #### Initial Test of the RAK12029 WisBlock Inductive Sensor Module
 
-If you have already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
+2. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 
+**RAK4631 Board**
 <rk-img
   src="/assets/images/wisblock/rak12029/quickstart/rak4631_board.png"
   width="100%"
   caption="Selecting RAK4631 as WisBlock Core"
 />
 
+**RAK11200 Board**
 <rk-img
   src="/assets/images/wisblock/rak12029/quickstart/rak11200_board.png"
   width="100%"
   caption="Selecting RAK11200 as WisBlock Core"
 />
 
+**RAK11310 Board**
 <rk-img
   src="/assets/images/wisblock/rak12029/quickstart/rak11300_board.png"
   width="100%"
   caption="Selecting RAK11300 as WisBlock Core"
 />
 
-2. Copy the example code below:
+3. Copy the example code below:
 
+::: details Click Here to View Example Code
 ```c
 /**
    @file Single_channel_detection.ino
@@ -212,11 +216,13 @@ void loop()
 }
 
 ```
-:::tip 📝 NOTE:
-RAK12029 has other example codes and can be found on the [RAK12029-LDC1614 Inductive Sensor Module Code Repository](https://github.com/RAKWireless/RAK12029-LDC1614/tree/main/examples).
 :::
 
-3. Install the [RAKwireless Inductive Sensor Module Library](https://github.com/RAKWireless/RAK12029-LDC1614)library by clicking the red-highlighted link then click install, as shown in **Figure 9** and **Figure 10**.
+:::tip 📝 NOTE:
+If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12029 WisBlock Example Code Repository](https://github.com/RAKWireless/RAK12029-LDC1614/tree/main/examples) and this sample code in Github will work on all WisBlock Core.
+:::
+
+4. Install the [RAKwireless Inductive Sensor Module Library](https://github.com/RAKWireless/RAK12029-LDC1614)library by clicking the red-highlighted link then click install, as shown in **Figure 9** and **Figure 10**.
 
 <rk-img
   src="/assets/images/wisblock/rak12029/quickstart/rak12029_4631_library.png"
@@ -230,7 +236,11 @@ RAK12029 has other example codes and can be found on the [RAK12029-LDC1614 Induc
   caption="Installing the library of RAK12029"
 />
 
-4. Then select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
+5. Then select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
+
+::: tip 📝 NOTE
+If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak12029/quickstart/select_port_rak4631.png"
@@ -244,11 +254,7 @@ RAK12029 has other example codes and can be found on the [RAK12029-LDC1614 Induc
   caption="Uploading the sample code"
 />
 
-:::tip 📝 NOTE:
-RAK11200 requires the BOOT0 pin to be configured properly before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
-:::
-
-5. When you have successfully uploaded the sample code, place any metal or coin in the sensor, as shown in **Figure 13**. Then, you can open up your serial monitor to get the sensor readings, as shown in **Figure 14**.
+6. When you have successfully uploaded the sample code, place any metal or coin in the sensor, as shown in **Figure 13**. Then, you can open up your serial monitor to get the sensor readings, as shown in **Figure 14**.
 
 <rk-img
   src="/assets/images/wisblock/rak12029/quickstart/rak12029_sensor_testing.png"

@@ -1,192 +1,179 @@
 module.exports = {
   '/Product-Categories/WisLink/RAK831/': [{
-      title: 'Product Overview',
-      path: '/Product-Categories/WisLink/RAK831/Overview/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    },
-    {
-      title: 'Datasheet',
-      path: '/Product-Categories/WisLink/RAK831/Datasheet/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    }
+    title: 'Product Overview',
+    path: '/Product-Categories/WisLink/RAK831/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisLink/RAK831/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
   ],
-
   '/Product-Categories/WisLink/RAK833/': [{
-      title: 'Product Overview',
-      path: '/Product-Categories/WisLink/RAK833/Overview/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    },
-    {
-      title: 'Datasheet',
-      path: '/Product-Categories/WisLink/RAK833/Datasheet/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    }
+    title: 'Product Overview',
+    path: '/Product-Categories/WisLink/RAK833/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisLink/RAK833/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
   ],
-
   '/Product-Categories/WisLink/RAK2013/': [{
-      title: 'Product Overview',
-      path: '/Product-Categories/WisLink/RAK2013/Overview/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    },
-    {
-      title: 'Datasheet',
-      path: '/Product-Categories/WisLink/RAK2013/Datasheet/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    }
+    title: 'Product Overview',
+    path: '/Product-Categories/WisLink/RAK2013/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisLink/RAK2013/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
   ],
-
   '/Product-Categories/WisLink/RAK2245-Pi-HAT/': [{
-      title: 'Product Overview',
-      path: '/Product-Categories/WisLink/RAK2245-Pi-HAT/Overview/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    },
-    {
-      title: 'Quick Start Guide',
-      path: '/Product-Categories/WisLink/RAK2245-Pi-HAT/Quickstart/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    },
-    {
-      title: 'Datasheet',
-      path: '/Product-Categories/WisLink/RAK2245-Pi-HAT/Datasheet/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    },
-
+    title: 'Product Overview',
+    path: '/Product-Categories/WisLink/RAK2245-Pi-HAT/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisLink/RAK2245-Pi-HAT/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisLink/RAK2245-Pi-HAT/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
   ],
-
   '/Product-Categories/WisLink/RAK2245-Stamp-Edition/': [{
-      title: 'Product Overview',
-      path: '/Product-Categories/WisLink/RAK2245-Stamp-Edition/Overview/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    },
-    {
-      title: 'Quick Start Guide',
-      path: '/Product-Categories/WisLink/RAK2245-Stamp-Edition/Quickstart/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    },
-    {
-      title: 'Datasheet',
-      path: '/Product-Categories/WisLink/RAK2245-Stamp-Edition/Datasheet/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    },
-
+    title: 'Product Overview',
+    path: '/Product-Categories/WisLink/RAK2245-Stamp-Edition/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisLink/RAK2245-Stamp-Edition/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisLink/RAK2245-Stamp-Edition/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
   ],
-
   '/Product-Categories/WisLink/RAK2247/': [{
-      title: 'Product Overview',
-      path: '/Product-Categories/WisLink/RAK2247/Overview/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    },
-    {
-      title: 'Quick Start Guide',
-      path: '/Product-Categories/WisLink/RAK2247/Quickstart/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    },
-    {
-      title: 'Datasheet',
-      path: '/Product-Categories/WisLink/RAK2247/Datasheet/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    }
-
+    title: 'Product Overview',
+    path: '/Product-Categories/WisLink/RAK2247/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisLink/RAK2247/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisLink/RAK2247/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
   ],
-
   '/Product-Categories/WisLink/RAK2287/': [{
-      title: 'Product Overview',
-      path: '/Product-Categories/WisLink/RAK2287/Overview/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    },
-    {
-      title: 'Quick Start Guide',
-      path: '/Product-Categories/WisLink/RAK2287/Quickstart/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    },
-    {
-      title: 'Datasheet',
-      path: '/Product-Categories/WisLink/RAK2287/Datasheet/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    },
-
+    title: 'Product Overview',
+    path: '/Product-Categories/WisLink/RAK2287/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisLink/RAK2287/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisLink/RAK2287/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
   ],
-
-
   '/Product-Categories/WisLink/RAK8213/': [{
-      title: 'Product Overview',
-      path: '/Product-Categories/WisLink/RAK8213/Overview/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    },
-    {
-      title: 'Quick Start Guide',
-      path: '/Product-Categories/WisLink/RAK8213/Quickstart/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    },
-    {
-      title: 'Datasheet',
-      path: '/Product-Categories/WisLink/RAK8213/Datasheet/',
-      collapsable: false,
-      nested: true,
-      download: true,
-      sidebarDepth: 4
-    },
-
+    title: 'Product Overview',
+    path: '/Product-Categories/WisLink/RAK8213/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisLink/RAK8213/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisLink/RAK8213/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
   ],
   '/Product-Categories/WisLink/RAK5146/': [{
     title: 'Product Overview',
@@ -204,9 +191,7 @@ module.exports = {
     download: true,
     sidebarDepth: 4
   },
-
   ],
-
   '/Product-Categories/WisLink/RAK2011/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisLink/RAK2011/Overview/',
@@ -224,7 +209,6 @@ module.exports = {
     sidebarDepth: 4
   },
   ],
-
   '/Product-Categories/WisLink/LX200V50/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisLink/LX200V50/Overview/',
@@ -241,6 +225,22 @@ module.exports = {
     download: true,
     sidebarDepth: 4
   },
-]
-
+  ],
+  '/Product-Categories/WisLink/RAK5146L/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisLink/RAK5146L/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisLink/RAK5146L/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  ],
 }

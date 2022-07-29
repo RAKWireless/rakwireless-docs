@@ -29,7 +29,9 @@ The RAK18000 is a digital microphone module that is designed to detect sounds an
 
 * **Module Specifications**   
    
-    - 3.3&nbsp;V input voltage
+    - Voltage Supply: 3.3&nbsp;V
+    - Current Consumption: 5&nbsp;µA to 650&nbsp;µA
+    - Chipset: ST MP34DT06J
     - 64&nbsp;dB signal-to-noise ratio
     - –26&nbsp;dBFS ± 1&nbsp;dB sensitivity 
     - Stereo microphone 2 x MP34DT06J   
@@ -44,7 +46,7 @@ The RAK18000 is a digital microphone module that is designed to detect sounds an
 
 #### Mounting 
 
-The RAK18000 module can be mounted to the slot IO of the WisBase board. Figure 2 shows the mounting mechanism of the RAK18000 on a WisBase module, such as the RAK5005-O.
+The RAK18000 WisBlock PDM Stereo Microphone Module can be mounted to the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. **Figure 2** shows the mounting mechanism of the RAK18000 on a WisBlock Base module.
 
 <rk-img
   src="/assets/images/wisblock/rak18000/datasheet/RAK18000_mounting.png"
@@ -63,10 +65,10 @@ The hardware specification is categorized into five parts that cover the chipset
 
 #### Pin Definition
 
-The RAK18000 PDM Stereo Microphone Module comprises a standard WisIO connector. The WisIO connector allows the RAK18000 module to be mounted to a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the Pinout Definition is shown in Figure 3. 
+The RAK18000 WisBlock PDM Stereo Microphone Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK18000 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 :::tip 📝 NOTE:
-**DMIC1**, **DMCLK**, **3V3**, and **GND** are connected to WisIO connector.  
+**DMIC1**, **DMCLK**, **3V3**, and **GND** are connected to WisConnector.  
 :::
 
 <rk-img
@@ -111,9 +113,9 @@ Figure 4 shows the dimensions and the mechanical drawing of the RAK18000 module.
 
 #### Schematic Diagram
 
-##### WisIO Connector Connection
+##### WisConnector Connection
 
-Figure 6 shows the WisIO Connector connection and the digital microphone data line connected to **IO3** and the clock line connected to **IO4**. 
+Figure 6 shows the WisConnector connection and the digital microphone data line connected to **IO3** and the clock line connected to **IO4**. 
 
 <rk-img
   src="/assets/images/wisblock/rak18000/datasheet/wisio-connection.png"

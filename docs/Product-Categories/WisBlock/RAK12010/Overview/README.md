@@ -25,6 +25,10 @@ Thank you for choosing **RAK12010 WisBlock Ambient Light Sensor Module** in your
 * [24-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 
+**Example**
+
+[Sample Code: RAK12010_VEML7700_Light](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12010_VEML7700_Light)
+
 ## Product Description
 
 RAK12010 is a WisBlock Sensor that extends the WisBlock system to have ambient light sensing capability. It uses the VEML7700 chip from Vishay Semiconductors with an I2C interface making it easy to build an ambient light data acquisition system.
@@ -38,13 +42,15 @@ RAK12010 is a WisBlock Sensor that extends the WisBlock system to have ambient l
     * **Ambient Light Resolution:** 0.0036&nbsp;lx
     * Excellent temperature compensation
     * 3.3&nbsp;V Power Supply
+    * Current Consumption: < 2 - 45&nbsp;uA
+    * Chipset: Vishay Semiconductors VEML7700
 
 * **Module Size**
     * 10 x 10&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK12010**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK12010** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK12010**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base**  provides power supply to the **RAK12010** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.    

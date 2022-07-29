@@ -24,6 +24,8 @@ For an ultrasonic detector, there are two main parts: **Emitter** and **Detector
 
 * Detect Range: 2&nbsp;cm to 4&nbsp;m
 * 3.3&nbsp;V Power supply
+* Standby Current: < 170&nbsp;uA
+* Chipset: angoSense CS100
 * **Module size**: 25 x 48&nbsp;mm
 
 ## Specifications
@@ -56,8 +58,7 @@ For an ultrasonic detector, there are two main parts: **Emitter** and **Detector
 
 #### Mounting
 
-The RAK12007 module can be mounted on the IO slot of a WisBlock Base board. Figure 4 shows the mounting mechanism of the RAK12007 module on a WisBlock Base module, such as the RAK5005-O.
-
+The RAK12007 WisBlock Ultrasonic Sensor Module can be mounted to the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. **Figure 4** shows the mounting mechanism of the RAK12007 on a WisBlock Base module.
 
 <rk-img
   src="/assets/images/wisblock/rak12007/datasheet/rak12007-mounting.png"
@@ -89,10 +90,9 @@ The RAK12007 WisBlock module has a 40-pin WisConnector that is compatible with t
 
 :::tip 📝 NOTE:
 
-- **PD**, **ECHO**, **TRIG**, **3V3_S (optional)**, **3V3 (default)**, and **GND** are connected to WisIO connector. 
+- **PD**, **ECHO**, **TRIG**, **3V3_S (optional)**, **3V3 (default)**, and **GND** are connected to WisConnector. 
 - **3V3_S (optional)** voltage output from the WisBlock Base that powers the RAK12007 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12007 module.
 :::
-
 
 #### Electrical Characteristics
 

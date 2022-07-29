@@ -22,6 +22,9 @@ Thank you for choosing **RAK12035 WisBlock Soil Moisture Sensor Module** in your
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK12035 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK12035.stp)
 
+**Example**
+- [Sample Code: RAK12035_SoilMoisture](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12035_SoilMoisture)
+
 ## Product Description
 
 RAK12035 is a soil sensor probe module based on the ATTINY441-SSU microcontroller from Atmel. It uses capacitive sensing to measure moisture. A 1&nbsp;MHz square wave is the output from the chip through a resistor into a big pad, and the surrounding ground plane acts as a parasitic capacitor. Both the resistor and the capacitor form a low-pass filter whose cutoff frequency changes when there is a change in capacitance. 
@@ -39,13 +42,14 @@ Because you need to bury the RAK12035 sensor probe into the soil, the electronic
     * Measures soil moisture
     * I2C address is programmable
     * Calibration via software
+    * Chipset: Atmel ATTINY441-SSU
 
 * **Size**
     * 18.1 x 149&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK12035** sensor, you need to connect it to **RAK12023** Soil Moisture Connector. You also need a **WisBlock Base** to plug the module in. **WisBlock Base** provides the power supply for the soil sensor module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK12035** sensor, you need to connect it to **RAK12023** Soil Moisture Connector. You also need a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12035**. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
 - Make sure to fix the module with the screws to ensure a proper function. 

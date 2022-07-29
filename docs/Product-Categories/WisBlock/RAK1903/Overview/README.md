@@ -12,9 +12,9 @@ tags:
 ---
 
 
-# RAK1903 WisBlock Ambient Light Sensor 
+# RAK1903 WisBlock Ambient Light Sensor Module
 
-Thank you for choosing **RAK1903 WisBlock Ambient Light Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK1903 WisBlock Ambient Light Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [RAK1903 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -39,21 +39,23 @@ For WisBlock Core RAK4630:
 
 ## Product Description
 
-The RAK1903 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is a single-chip ambient light sensor, measuring the intensity of light in the visible range. The precise spectral response and strong IR rejection of the device enables the RAK1903 module to accurately measure the intensity of light as seen by human eyes regardless of light sources. The strong IR rejection also aids in maintaining high accuracy when the industrial design requires to mount the sensor under dark glass due to aesthetic reasons. The RAK1903 module is designed for systems that create light-based experiences for humans. It is an ideal replacement for photodiodes, photoresistors, or other ambient light sensors with less visible range matching and IR rejection.
+The RAK1903 WisBlock Ambient Light Sensor Module, part of the RAK Wireless Wisblock series, is a single-chip ambient light sensor, measuring the intensity of light in the visible range. The precise spectral response and strong IR rejection of the device enables the RAK1903 module to accurately measure the intensity of light as seen by human eyes regardless of light sources. The strong IR rejection also aids in maintaining high accuracy when the industrial design requires to mount the sensor under dark glass due to aesthetic reasons. The RAK1903 module is designed for systems that create light-based experiences for humans. It is an ideal replacement for photodiodes, photoresistors, or other ambient light sensors with less visible range matching and IR rejection.
 
 ## Product Features
 
 * **Sensor specifications**
     * 0.01 to 83865 lux measurement range     
     * Optical filtering to match human eye    
-    * Typical 1.8&nbsp;uA power consumption    
+    * Voltage Supply: 3.3&nbsp;V
+    * Current Consumption: 0.4&nbsp;uA to 3.7&nbsp;uA
+    * Chipset: TI OPT3001DNPR    
 
 * **Size**
     * 10 x 10&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK1903**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK1903** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK1903**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK1903** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.

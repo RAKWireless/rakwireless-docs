@@ -10,17 +10,27 @@ next: false
 ---
 
 # RAK1901 WisBlock Temperature and Humidity Sensor Datasheet
+
 ## Overview
+
+<rk-img
+  src="/assets/images/wisblock/rak1901/datasheet/RAK1901.svg"
+  width="50%"
+  caption="RAK1901 WisBlock Sensor"
+/>
 
 ### Description
 
-The RAK1901 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is a digital temperature and humidity sensor with  I2C interface. Designed to work at low power mode, the average consumption is lower than 0.5&nbsp;uA. The humidity measurement covers the range from 0 to 100% RH and the temperature measurement covers the range from -40&nbsp;°C to 125&nbsp;°C. Measurements accuracy is ±2%RH for humidity and ±0.2&nbsp;°C for temperature.    
+RAK1901 is a WisBlock Sensor which extends the WisBlock system with a Sensirion SHTC3 temperature and humidity sensor. A ready to use SW library and tutorial makes it easy to build up an environmental temperature and humidity data acquisition system. 
 
 ### Features
 * **Temperature sensor accuracy**: ±2.0&nbsp;°C 
 * **Temperature range**:  -40&nbsp;°C to +125&nbsp;°C
 * **Humidity sensor accuracy**:±2.0% RH 
 * **Humidity range**:0 to 100% 
+* **Voltage Supply**: 3.3&nbsp;V
+* **Current Consumption**: 0.3&nbsp;uA to 270&nbsp;uA
+* **Chipset**: Sensirion SHTC3
 * **Module size**: 10 x 10&nbsp;mm
 
 ## Specifications
@@ -30,7 +40,8 @@ The RAK1901 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is
 <!-- Insert Picture of Sensor with its dimensions -->
 
 #### Mounting
-The RAK1901 module can be mounted on the slots: A, B, C, or D of the WisBase board. **Figure 1** shows the mounting mechanism of the RAK1901 on a WisBase module, such as the RAK5005-O.
+
+**Figure 1** shows the mounting mechanism of the RAK1901 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK1901 module can be mounted on the slots: **A, B, C, D, E, & F**.
 
 <rk-img
   src="/assets/images/wisblock/rak1901/datasheet/RAK19xx_mounting.png"
@@ -49,17 +60,25 @@ The hardware specification is categorized into six parts. It shows the chipset o
 | Sensirion | SHTC3       |
 
 #### Pin Definition
-The RAK1901 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1901 module to be mounted on a WisBlock baseboard, such as the RAK5005-O. The pin order of the connector and the pinout definition are shown in **Figure 2**. 
 
-:::tip 📝 NOTE:
-Only the I2C related pins, VDD and GND are connected to this module.    
-:::
+The RAK1901 WisBlock Temperature and Humidity Sensor comprises a standard WisBlock connector. The WisBlock connector allows the RAK1901 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
 <rk-img
-  src="/assets/images/wisblock/rak1901/datasheet/RAK1901_pin.png"
+  src="/assets/images/wisblock/rak1901/datasheet/RAK1901_pinout.svg"
   width="60%"
   caption="RAK1901 WisBlock Sensor Pinout Diagram"
 />
+
+:::tip 📝 NOTE:
+Only the **I2C** related pins, **VDD** and **GND** are connected to this module.    
+:::
+
+If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse depends on what slot the module is plugged in. The following table shows the default IO used for different slots:
+
+| SLOT A | SLOTB  | SLOT C | SLOT D | SLOT E | SLOT F |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| WB_IO1 | WB_IO2 | WB_IO3 | WB_IO5 | WB_IO4 | WB_IO6 |
+
 
 #### Sensors
 ##### Temperature Sensor

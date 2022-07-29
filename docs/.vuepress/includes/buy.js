@@ -46,6 +46,11 @@ export default {
     img: '/assets/images/wislink-lora/rak5146/RAK5146.png',
     store: 'https://store.rakwireless.com/products/wislink-lpwan-concentrator-rak5146?utm_source=WisBlockRAK5146&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisLink/RAK5146L/': {
+    label: 'RAK5146L WisLink LPWAN Concentrator',
+    img: '/assets/images/wislink-lora/rak5146l/RAK5146L.png',
+    store: 'https://store.rakwireless.com/products/wislink-lpwan-concentrator-rak5146?utm_source=WisBlockRAK5146L&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
   '/Product-Categories/WisLink/RAK2011/': {
     label: 'RAK2011 WisLink Cellular BG96 Arduino Shield',
     img: '/assets/images/wislink-lte/rak2011/overview/rak2011-buy.png',
@@ -459,8 +464,8 @@ export default {
     label: 'RAK19001 WisBlock Dual IO Base Board',
     img: '/assets/images/wisblock/rak19001/overview/RAK19001_buy.png',
     store: 'https://store.rakwireless.com/products/rak19001-wisblock-dual-io-base-board?utm_source=RAK19001&utm_medium=Document&utm_campaign=BuyFromStore'
-  },    
-    
+  },
+
   '/Product-Categories/WisBlock/RAK19016/': {
     label: 'RAK19016 WisBlock 5-24V Power Slot Module',
     img: '/assets/images/wisblock/rak19016/overview/RAK19016_buy.png',

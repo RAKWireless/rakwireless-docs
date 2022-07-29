@@ -9,18 +9,20 @@ prev: ../Quickstart/
 next: false
 ---
 
-# RAK1903 WisBlock Ambient Light Sensor Datasheet
+# RAK1903 WisBlock Ambient Light Sensor Module Datasheet
 
 ## Overview
 
 ### Description
 
-The RAK1903 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is a single-chip ambient light sensor, measuring the intensity of light in the visible range. The precise spectral response and strong IR rejection of the device enables the RAK1903 module to accurately measure the intensity of light as seen by human eyes regardless of light sources. The strong IR rejection also aids in maintaining high accuracy when the industrial design requires to mount the sensor under dark glass due to aesthetic reasons. The RAK1903 module is designed for systems that create light-based experiences for humans. It is an ideal replacement for photodiodes, photoresistors, or other ambient light sensors with less visible range matching and IR rejection.
+The RAK1903 WisBlock Ambient Light Sensor Module, part of the RAK Wireless Wisblock series, is a single-chip ambient light sensor, measuring the intensity of light in the visible range. The precise spectral response and strong IR rejection of the device enables the RAK1903 module to accurately measure the intensity of light as seen by human eyes regardless of light sources. The strong IR rejection also aids in maintaining high accuracy when the industrial design requires to mount the sensor under dark glass due to aesthetic reasons. The RAK1903 module is designed for systems that create light-based experiences for humans. It is an ideal replacement for photodiodes, photoresistors, or other ambient light sensors with less visible range matching and IR rejection.
 
 ### Features 
 * **Measurement range**: 0.01 to 83865&nbsp;lux
 * Optical filtering to match human eye
-* **Typical power consumption**:  1.8&nbsp;uA 
+* **Voltage Supply**: 3.3&nbsp;V
+* **Current Consumption**: 0.4&nbsp;uA to 3.7&nbsp;uA
+* **Chipset**: TI OPT3001DNPR
 * **Module size**: 10 x 10&nbsp;mm
 
 ## Specifications
@@ -29,7 +31,7 @@ The RAK1903 WisBlock Sensor module, part of the RAK Wireless Wisblock series, is
 
 #### Mounting
 
-The RAK1903 module can be mounted on the slots: A, B, C, or D of the WisBase board. **Figure 1** shows the mounting mechanism of the RAK1903 on a WisBase module, such as the RAK5005-O.
+**Figure 2** shows the mounting mechanism of the RAK1903 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK1903 module can be mounted on the slots: **A, C, D, E, & F**.
 
 <rk-img
   src="/assets/images/wisblock/rak1903/datasheet/RAK19xx_mounting.png"
@@ -39,7 +41,7 @@ The RAK1903 module can be mounted on the slots: A, B, C, or D of the WisBase boa
 
 ### Hardware
 
-The hardware specification is categorized into six parts. It shows the chipset of the module and discusses the pinouts, sensors, and the corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK1903 WisBlock Ambient Light Sensor.
+The hardware specification is categorized into six parts. It shows the chipset of the module and discusses the pinouts, sensors, and the corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK1903 WisBlock Ambient Light Sensor Module.
 
 ####  Chipset
 | Vendor | Part number |
@@ -48,22 +50,26 @@ The hardware specification is categorized into six parts. It shows the chipset o
 
 #### Pin Definition
 
-The RAK1903 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1903 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the definition of the pinout are shown in **Figure 2**. 
 
-:::tip 📝 NOTE:
-
-Only the I2C related pins, interrupt pins, VDD, and GND are connected to this module.
-
-:::
+The RAK1903 WisBlock Ambient Light Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK1903 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 <rk-img
-  src="/assets/images/wisblock/rak1903/datasheet/RAK1903_connector_pinout.png"
-  width="50%"
+  src="/assets/images/wisblock/rak1903/datasheet/RAK1903_pinout.svg"
+  width="60%"
   caption="RAK1903 WisBlock Sensor connector pinout"
 />
 
+:::tip 📝 NOTE:
+Only the **I2C** related pins, **INT** pins, **VDD**, and **GND** are connected to this module.
+:::
 
 The pin12 or pin13 are connected to the INT of OPT3001DNPR (See **Figure 3**). The device has an interrupt reporting system that allows the Controller connected to the I2C bus to go to sleep until a user-defined event occurs. Alternatively, this mechanism can also be used with any system that can take advantage of a single digital signal that indicates whether the light is above or below the levels of interest.
+
+If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse depends on what slot the module is plugged in. The following table shows the default IO used for different slots:
+
+| SLOT A | SLOT B | SLOT C | SLOT D | SLOT E | SLOT F |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| WB_IO1 | WB_IO2 | WB_IO3 | WB_IO5 | WB_IO4 | WB_IO6 |
 
 
 #### Sensors
@@ -85,12 +91,12 @@ The pin12 or pin13 are connected to the INT of OPT3001DNPR (See **Figure 3**). T
 
 #### Electrical Characteristics
 ##### Recommended Operating Conditions
-| Symbol           | Description                      | Min. | Nom. | Max. | Unit |
-| ---------------- | -------------------------------- | :--: | :--: | :--: | :--: |
-| V<sub>DD</sub>   | Power supply for the module      | 1.6  |      | 3.6  |  V   |
-| I<sub>shut</sub> | Shutdown current                 |  -   | 0.4  |  -   |  uA  |
-| I<sub>DD</sub>   | Active V<sub>DD</sub>=3.6&nbsp;V |  -   | 3.7  |  -   |  uA  |
 
+| Symbol           | Description                      | Min.  | Nom.  | Max.  | Unit  |
+| ---------------- | -------------------------------- | :---: | :---: | :---: | :---: |
+| V<sub>DD</sub>   | Power supply for the module      |  1.6  |  3.3  |  3.6  |   V   |
+| I<sub>shut</sub> | Shutdown current                 |   -   |  0.4  |   -   |  uA   |
+| I<sub>DD</sub>   | Active V<sub>DD</sub>=3.6&nbsp;V |   -   |  3.7  |   -   |  uA   |
 
 #### Mechanical Characteristics
 

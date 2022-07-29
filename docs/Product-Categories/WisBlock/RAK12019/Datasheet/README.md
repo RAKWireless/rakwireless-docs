@@ -9,7 +9,7 @@ prev: ../Quickstart/
 next: false
 ---
 
-# RAK12019 WisBlock UV Sensor Datasheet
+# RAK12019 WisBlock UV Sensor Module Datasheet
 
 ## Overview
 
@@ -28,6 +28,8 @@ The RAK12019 is an Ambient Light sensor (ALS) or Ultraviolet Light Sensor (UVS),
  - Close to human eye spectral response
  - Automatic rejection for 50&nbsp;Hz/60&nbsp;Hz lighting flicker
  - Operating voltage ranges: 1.7&nbsp;V to 3.6&nbsp;V
+ - Current Consumption: 1&nbsp;uA - 110&nbsp;uA
+ - Chipset: Lite-On LTR-390UV-01
  - Operating temperature ranges: -40 to +85&nbsp;ºC
  - Built-in temperature compensation circuit
  - Programmable interrupt function for ALS, UVS with upper and lower thresholds
@@ -40,7 +42,7 @@ The RAK12019 is an Ambient Light sensor (ALS) or Ultraviolet Light Sensor (UVS),
 
 #### Mounting
 
-The RAK12019 WisBlock UV Sensor can be mounted to the IO slot of the WisBlock Base board. **Figure 1** shows the mounting mechanism of the RAK12019 on a WisBlock Base board, such as the [RAK5005-O](https://store.rakwireless.com/products/rak5005-o-base-board).
+**Figure 1** shows the mounting mechanism of the RAK12019 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12019 module can be mounted on the slots: **C, D, E, & F**.
 
 <rk-img
   src="/assets/images/wisblock/rak12019/datasheet/mounting.png"
@@ -51,14 +53,20 @@ The RAK12019 WisBlock UV Sensor can be mounted to the IO slot of the WisBlock Ba
 
 ### Hardware
 
-The hardware specification is categorized into four parts. It shows the pinouts and their corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12019 WisBlock UV Sensor.
+The hardware specification is categorized into four parts. It shows the pinouts and their corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12019 WisBlock UV Sensor Module.
+
+####  Chipset
+
+| Vendor  | Part number  |
+| ------- | ------------ |
+| Lite-On | LTR-390UV-01 |
 
 #### Pin Definition
 
-The RAK12019 WisBlock UV Sensor comprises a standard WisIO connector. The WisIO connector allows the RAK12019 module to be mounted to a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 2**.
+The RAK12019 WisBlock UV Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK12019 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 ::: tip 📝 NOTE
-- **I2C** related pin, **INT** pin, **3V3_S** and **GND** are connected to WisIO connector
+- **I2C** related pin, **INT** pin, **3V3_S** and **GND** are connected to WisConnector
 :::
 
  <rk-img
@@ -66,6 +74,12 @@ The RAK12019 WisBlock UV Sensor comprises a standard WisIO connector. The WisIO 
   width="60%"
   caption="RAK12019 WisBlock UV Sensor Pinout"
 />
+
+If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse depends on what slot the module is plugged in. The following table shows the default IO used for different slots:
+
+| SLOT C | SLOT D | SLOT E | SLOT F |
+| ------ | ------ | ------ | ------ |
+| WB_IO3 | WB_IO5 | WB_IO4 | WB_IO6 |
   
 
 #### Electrical Characteristics

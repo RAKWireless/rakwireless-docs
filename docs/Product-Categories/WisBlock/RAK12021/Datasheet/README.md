@@ -26,6 +26,8 @@ RAK12021 is a WisBlock RGB Sensor that extends the WisBlock system which is base
 * Low power (2.5&nbsp;uA sleep current)
 * I2C interface
 * 3.3&nbsp;V power supply
+* Current Consumption: 2.5&nbsp;uA - 235&nbsp;uA
+* Chipset: AMS TCS37725FN
 * **Module size**: 10 x 10&nbsp;mm
 
 ## Specifications
@@ -34,7 +36,8 @@ RAK12021 is a WisBlock RGB Sensor that extends the WisBlock system which is base
 <!-- Insert Picture of Sensor with its dimensions -->
 
 #### Mounting
-The RAK12021 module can be mounted on the slots **A, C, and D** of a WisBlock Base board. **Figure 1** shows the mounting mechanism of the RAK12021 on a WisBlock Base board, such as the RAK5005-O.
+
+**Figure 1** shows the mounting mechanism of the RAK12021 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12021 module can be mounted on the slots: **A, C, D, E, & F**.
 
 <rk-img
   src="/assets/images/wisblock/rak12021/datasheet/rak12021-mounting.png"
@@ -44,10 +47,17 @@ The RAK12021 module can be mounted on the slots **A, C, and D** of a WisBlock Ba
 
 ### Hardware
 
-The hardware specification is categorized into four parts. It shows the pinouts and the corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12021 WisBlock RGB Sensor.
+The hardware specification is categorized into four parts. It shows the pinouts and the corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12021 WisBlock RGB Sensor Module.
+
+####  Chipset
+
+| Vendor | Part number |
+| ------ | ----------- |
+|  AMS   | TCS37725FN  |
 
 #### Pin Definition
-The RAK12021 WisBlock RGB Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK12021 module to be mounted on a WisBlock Base board, such as RAK5005-O. The pin order of the connector and the definition of the pinout are shown in **Figure 2**. 
+
+The RAK12021 WisBlock RGB Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK12021 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisblock/rak12021/datasheet/RAK12021_Pinout.svg"
@@ -55,11 +65,15 @@ The RAK12021 WisBlock RGB Sensor module comprises a standard WisIO connector. Th
   caption="RAK12021 pinout"
 />
 
-The following table shows the default IO used for different slots:
+If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse depends on what slot the module is plugged in. The following table shows the default IO used for different slots:
   
 | SLOT A | SLOT C | SLOT D | SLOT E | SLOT F |
-| :----: | :----: | :----: | :----: | :----: |
-|  IO1   |  IO3   |  IO5   |  IO4   |  IO6   |
+| ------ | ------ | ------ | ------ | ------ |
+| WB_IO1 | WB_IO3 | WB_IO5 | WB_IO4 | WB_IO6 |
+
+| INT (Interrupt Pin) |
+| ------------------- |
+|       WB_IO2        |
 
 :::tip 📝 NOTE:
 - Only the **I2C** related pin, **SENSOR_INT**, **3V3_S**, and **GND** are connected to this module. 

@@ -17,8 +17,8 @@ Before going through each and every step on using the RAK12009 WisBlock MQ3 Alco
 
 #### Hardware
 
-- [RAK12009](https://store.rakwireless.com/products/mq2-gas-sensor-module-rak12004)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK12009 WisBlock MQ3 Alcohol Gas Sensor Module](https://store.rakwireless.com/products/mq2-gas-sensor-module-rak12004)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) with IO slot
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
 - [Li-Ion/LiPo battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable) (required)
@@ -33,7 +33,7 @@ Before going through each and every step on using the RAK12009 WisBlock MQ3 Alco
 
 ### Hardware Setup
 
-RAK12009 module is a part of the WisBlock Sensor category that extends the WisBlock system with a gas sensor alert system. The RAK12009 connects to the WisBlock Base Board through the IO slot. **Figure 1** shows the assembly of a [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core) (highlighted in green) and the module RAK12009 (highlighted in red). Also, always secure the connection of the WisBlock module by using the compatible screws. For more information about RAK12009, refer to the [Datasheet](../Datasheet/).
+RAK12009 module is a part of the WisBlock Sensor category that extends the WisBlock system with a gas sensor alert system. The RAK12009 connects to the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board through the IO slot. **Figure 1** shows the assembly of a [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core) (highlighted in green) and the module RAK12009 (highlighted in red). Also, always secure the connection of the WisBlock module by using the compatible screws. For more information about RAK12009, refer to the [Datasheet](../Datasheet/).
 
 <rk-img
   src="/assets/images/wisblock/rak12009/quickstart/rak12009_assembly.png"
@@ -45,7 +45,7 @@ RAK12009 module is a part of the WisBlock Sensor category that extends the WisBl
 
 ##### Assembling
 
-As shown in **Figure 2**, the location for the IO slot is properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the module.
+As shown in **Figure 2**, the location for the IO slot is properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the module.
 
 <rk-img
   src="/assets/images/wisblock/rak12009/quickstart/rak12004_mounting.png"
@@ -89,32 +89,25 @@ If you will connect other modules to the remaining WisBlock Base slots, check on
 After all this setup, you can now connect the battery and USB cable to start programming your WisBlock Core.
 
 :::warning ⚠️ WARNING
-
-- Battery can cause harm if not handled properly.
+- Batteries can cause harm if not handled properly.
 - Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
-- If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause fire.
-- Make sure the battery wires are matching the polarity on the RAK WisBlock Base Board. Not all batteries have the same wiring.
+- If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause a fire.
 - Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
+- Make sure the battery wires match the polarity on the WisBlock Base board. Not all batteries have the same wiring.
 :::
 
 ### Software Configuration and Example
 
 The RAK12009 has an electronic sensor used for sensing the concentration of gases in the air. It contains a sensing material whose resistance changes when it comes in contact with the gas. Concentrations of the gas are measured using a voltage divider network present in the sensor. The output of the sensing element is connected to a 12-bit ADC (ADC121C021) which communicates through I2C to the application.
 
-These are the quick links that go directly to the software guide for the specific WisBlock Core module you use:
 
-- [RAK12009 in RAK4631 WisBlock Core Guide](/Product-Categories/WisBlock/RAK12009/Quickstart/#rak12009-in-rak4631-wisblock-core-guide)
-- [RAK12009 in RAK11200 WisBlock Core Guide](/Product-Categories/WisBlock/RAK12009/Quickstart/#rak12009-in-rak11200-wisblock-core-guide)
-- [RAK12009 in RAK11310 WisBlock Core Guide](/Product-Categories/WisBlock/RAK12009/Quickstart/#rak12009-in-rak11310-wisblock-core-guide)
+#### Initial Test of the RAK12009 WisBlock Module
 
+1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
-#### RAK12009 in RAK4631 WisBlock Core Guide
+2. You need to select first the WisBlock Core you have.
 
-##### Arduino Setup
-
-Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
-
-1. You need to select RAK4631 WisBlock Core.
+**RAK4631 Board**
 
 <rk-img
   src="/assets/images/wisblock/rak12009/quickstart/rak4631_board.png"
@@ -122,15 +115,27 @@ Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless
   caption="Selecting RAK4631 as WisBlock Core"
 />
 
-##### Initial Test of the RAK12009 WisBlock Module
+**RAK11200 Board**
 
-Arduino programs are usually referred to as sketches.
+<rk-img
+  src="/assets/images/wisblock/rak12009/quickstart/rak11200_board.png"
+  width="100%"
+  caption="Selecting RAK11200 as WisBlock Core"
+/>
 
-2. Install the [RAKwireless MQx Library](https://github.com/RAKWireless/RAK-MQx-Library) using Arduino Library Manager.
+**RAK11310 Board**
 
-3. Launch Arduino IDE and select **Sketch**-> **Include Library** -> **Manage Libraries**, as shown in **Figure 7**.
+<rk-img
+  src="/assets/images/wisblock/rak12009/quickstart/rak11310_board.png"
+  width="100%"
+  caption="Selecting RAK11310 as WisBlock Core"
+/>
 
-4. On the **Library Manager** text area, type **RAKwireless MQx**.
+3. Install the [RAKwireless MQx Library](https://github.com/RAKWireless/RAK-MQx-Library) using Arduino Library Manager.
+
+4. Launch Arduino IDE and select **Sketch**-> **Include Library** -> **Manage Libraries**, as shown in **Figure 9**.
+
+5. On the **Library Manager** text area, type **RAKwireless MQx**.
 
 <rk-img
   src="/assets/images/wisblock/rak12009/quickstart/rak-mqx-lib-manager.png"
@@ -138,7 +143,7 @@ Arduino programs are usually referred to as sketches.
   caption="Arduino Library Manager"
 />
 
-5. To finish the installation, click on the **Install** button, as shown in **Figure 8**.
+6. To finish the installation, click on the **Install** button, as shown in **Figure 10**.
 
 <rk-img
   src="/assets/images/wisblock/rak12009/quickstart/rak-mqx-install.png"
@@ -146,9 +151,9 @@ Arduino programs are usually referred to as sketches.
   caption="Finish RAK-MQx library Installation"
 />
 
-6. Once the library is installed, open the **RAK12009_MQ3_Alcohol_Detection** example.
+7. Once the library is installed, open the **RAK12009_MQ3_Alcohol_Detection** example.
 
-7. On the Arduino IDE, select **File** -> **Examples** -> **RAKWireless MQx library** -> **RAK12009_MQ3_Alcohol_Detection**, as shown in **Figure 9**.
+8. On the Arduino IDE, select **File** -> **Examples** -> **RAKWireless MQx library** -> **RAK12009_MQ3_Alcohol_Detection**, as shown in **Figure 11**.
 
 <rk-img
   src="/assets/images/wisblock/rak12009/quickstart/rak12009_mqx_rak4631.png"
@@ -156,7 +161,15 @@ Arduino programs are usually referred to as sketches.
   caption="Open RAK12009 MQ3 Alcohol Detection Sketch"
 />
 
-8. You can now select the right serial port and upload the code, as shown in **Figure 10** and  **Figure 11**.
+::: tip 📝 NOTE
+If you experience any error in compiling the example sketch, check the updated code for the RAK12009 WisBlock MQ3 Alcohol Gas Sensor Module that can be found on the [RAK12009 WisBlock Example Code Repository](https://github.com/RAKWireless/RAK-MQx-Library/tree/main/examples).
+:::
+
+9. You can now select the right serial port and upload the code, as shown in **Figure 12** and  **Figure 13**.
+
+::: tip 📝 NOTE
+If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak12009/quickstart/select_port_rak4631.png"
@@ -184,140 +197,6 @@ To extend the use of the RAK-MQx library, check the [RAK-MQx Library methods](ht
 />
 
 -->
-
-#### RAK12009 in RAK11200 WisBlock Core Guide
-
-##### Arduino Setup
-
-1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
-
-2. You need to select RAK11200 WisBlock Core.
-
-<rk-img
-  src="/assets/images/wisblock/rak12009/quickstart/rak11200_board.png"
-  width="100%"
-  caption="Selecting RAK11200 as WisBlock Core"
-/>
-
-##### Initial Test of the RAK12009 WisBlock Module
-
-Arduino programs are usually referred to as sketches.
-
-3. Install the [RAKwireless MQx Library](https://github.com/RAKWireless/RAK-MQx-Library) using Arduino Library Manager.
-
-4. Launch Arduino IDE and select **Sketch**-> **Include Library** -> **Manage Libraries**, as shown in **Figure 13**.
-
-5. On the **Library Manager** text area, type **RAKwireless MQx**. 
-
-<rk-img
-  src="/assets/images/wisblock/rak12009/quickstart/mqx_rak11200.png"
-  width="100%"
-  caption="Arduino Library Manager"
-/>
-
-6. To finish the installation, click on the **Install** button, as shown in **Figure 14**.
-
-<rk-img
-  src="/assets/images/wisblock/rak12009/quickstart/mqx_rak11200_install.png"
-  width="100%"
-  caption="Finish RAK-MQx library Installation"
-/>
-
-7. Once the library is installed, open the **RAK12009_MQ3_Alcohol_Detection** example. 
-
-8. On the Arduino IDE, select **File** -> **Examples** -> **RAKWireless MQx library** -> **RAK12009_MQ3_Alcohol_Detection**, as shown in **Figure 15**.
-
-<rk-img
-  src="/assets/images/wisblock/rak12009/quickstart/rak12009_mqx_rak11200.png"
-  width="100%"
-  caption="Open RAK12009 MQ3 Alcohol Detection Sketch"
-/>
-
-9. You can now select the right serial port and upload the code, as shown in **Figure 16** and  **Figure 17**.
-
-<rk-img
-  src="/assets/images/wisblock/rak12009/quickstart/select_port_rak11200.png"
-  width="100%"
-  caption="Selecting the correct Serial Port"
-/>
-
-
-:::tip 📝 NOTE:
-RAK11200 requires the BOOT0 pin to be configured properly before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
-:::
-
-<rk-img
-  src="/assets/images/wisblock/rak12009/quickstart/upload_rak11200.png"
-  width="100%"
-  caption="Uploading the RAK12009 example code on RAK11200"
-/>
-
-
-To extend the use of the RAK-MQx library, check the [RAK-MQx Library methods](https://github.com/RAKWireless/RAK-MQx-Library#usage)
-
-#### RAK12009 in RAK11310 WisBlock Core Guide
-
-##### Arduino Setup
-
-Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
-
-1. You need to select RAK11310 WisBlock Core.
-
-<rk-img
-  src="/assets/images/wisblock/rak12009/quickstart/rak11310_board.png"
-  width="100%"
-  caption="Selecting RAK11310 as WisBlock Core"
-/>
-
-##### Initial Test of the RAK12009 WisBlock Module
-
-Arduino programs are usually referred to as sketches.
-
-2. Install the [RAKwireless MQx Library](https://github.com/RAKWireless/RAK-MQx-Library) using Arduino Library Manager.
-
-3. Launch Arduino IDE and select **Sketch** -> **Include Library** -> **Manage Libraries**, as shown in **Figure 19**. 
-
-4. On the **Library Manager** text area, type **RAKwireless MQx**. 
-
-<rk-img
-  src="/assets/images/wisblock/rak12009/quickstart/mqx_rak11310.png"
-  width="100%"
-  caption="Arduino Library Manager"
-/>
-
-5. To finish the installation, click on the **Install** button, as shown in **Figure 20**.
-
-<rk-img
-  src="/assets/images/wisblock/rak12009/quickstart/mqx_rak11310_install.png"
-  width="100%"
-  caption="Finish RAK-MQx library Installation"
-/>
-
-6. Once the library is installed, open the **RAK12009_MQ3_Alcohol_Detection** example. 
-
-7. On the Arduino IDE, select **File** -> **Examples** -> **RAKWireless MQx Libraries** -> **RAK12004_MQ2_Sampling**, as shown in **Figure 21**.
-
-<rk-img
-  src="/assets/images/wisblock/rak12009/quickstart/rak11310_mq3_read.png"
-  width="100%"
-  caption="Open RAK12009 MQ3 Sampling Sketch"
-/>
-
-8. You can now select the right serial port and upload the code, as shown in **Figure 22** and  **Figure 23**.
-
-<rk-img
-  src="/assets/images/wisblock/rak12009/quickstart/select_port_rak11310.png"
-  width="100%"
-  caption="Selecting the correct Serial Port"
-/>
-
-<rk-img
-  src="/assets/images/wisblock/rak12009/quickstart/upload_rak11310.png"
-  width="100%"
-  caption="Uploading the RAK12009 example code on RAK11310"
-/>
-
-To extend the use of the RAK-MQx library, check the [RAK-MQx Library methods](https://github.com/RAKWireless/RAK-MQx-Library#usage)
 
 #### Build RAK12009 Example on PlatformIO IDE (optional)
 

@@ -19,7 +19,7 @@ Before going through each and every step on using the RAK1906 WisBlock module, m
 
 #### Hardware
 
-- [RAK1906](https://store.rakwireless.com/collections/wisblock-sensor/products/rak1906-bme680-environment-sensor)
+- [RAK1906 WisBlock Environmental Sensor Module](https://store.rakwireless.com/collections/wisblock-sensor/products/rak1906-bme680-environment-sensor)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
@@ -46,7 +46,7 @@ The RAK1906 module gives information about:
 - Ambient Air Temperature
 - Environment Humidity
 
-RAK1906 module can be connected to any slot of WisBlock Base to communicate with the WisBlock Core. It will work on **SLOT A to D**. Also, always secure the connection of the WisBlock module by using the compatible screws.
+RAK1906 module can be connected to the sensor's slot of [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) to communicate with the WisBlock Core, as shown in **Figure 1**. It will work on **SLOT A to F**. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak1906/quickstart/rak1906_assembly.png"
@@ -58,7 +58,7 @@ RAK1906 module can be connected to any slot of WisBlock Base to communicate with
 
 ##### Assembling
 
-As shown in **Figure 2**, the location for Slot A, B, C, and D are properly marked by silkscreen. Slots C and D are located on bottom of WisBlock Base. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with a M1.2 x 3&nbsp;mm screw.
+As shown in **Figure 2**, the location for Slot A, B, C, and D are properly marked by silkscreen. Slots C and D are located on bottom of WisBlock Base. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with a M1.2 x 3&nbsp;mm screw.
 
 <rk-img
   src="/assets/images/wisblock/rak1906/quickstart/wisblock-sensor-silkscreen.png"
@@ -102,12 +102,11 @@ If you will connect other modules to the remaining WisBlock Base slots, check on
 After all this setup, you can now connect the battery (optional) and USB cable to start programming the RAK1906.
 
 :::warning ⚠️ WARNING
-
-- Battery can cause harm if not handled properly.
+- Batteries can cause harm if not handled properly.
 - Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
-- If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause fire.
-- Make sure the battery wires match the polarity on the RAK WisBlock Base Board. Not all batteries have the same wiring.
+- If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause a fire.
 - Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
+- Make sure the battery wires match the polarity on the WisBlock Base board. Not all batteries have the same wiring.
 :::
 
 ### Software Configuration and Example
@@ -121,9 +120,9 @@ The BME680 requires a burn-in period to collect accurate readings. The burn-in p
 
 #### Initial Test of the RAK1906 WisBlock Module
 
-If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
-1. First, you need to select the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
+2. You need to select the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 
 **RAK4631 WisBlock Core**
 
@@ -149,27 +148,110 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK11310 as WisBlock Core"
 />
 
-2. The [RAK1906_Environment_BME680 example](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1906_Environment_BME680) in Github will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 9** to **Figure 11**. 
+3. Next, copy the following sample code into your Arduino IDE:
 
-<rk-img
-  src="/assets/images/wisblock/rak1906/quickstart/rak1906-rak4631.png"
-  width="100%"
-  caption="Opening RAK1906 example code for RAK4631 WisBlock Core"
-/>
+::: details Click Here to View Example Code
+```c
+/**
+   @file RAK1906_Environment_BEM680.ino
+   @author rakwireless.com
+   @brief Setup and read values from bme680 sensor
+   @version 0.1
+   @date 2020-12-28
+   @copyright Copyright (c) 2020
+**/
 
-<rk-img
-  src="/assets/images/wisblock/rak1906/quickstart/rak1906-rak11200.png"
-  width="100%"
-  caption="Opening RAK1906 example code for RAK11200 WisBlock Core"
-/>
+#include <Wire.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_BME680.h> // Click to install library: http://librarymanager/All#Adafruit_BME680
 
-<rk-img
-  src="/assets/images/wisblock/rak1906/quickstart/rak1906-rak11310.png"
-  width="100%"
-  caption="Opening RAK1906 example code for RAK11310 WisBlock Core"
-/>
+Adafruit_BME680 bme;
+// Might need adjustments
+#define SEALEVELPRESSURE_HPA (1010.0)
 
-3. Once the example code is open, install the [Adafruit BME680](https://github.com/adafruit/Adafruit_BME680) library by clicking the link highlighted in yellow, as shown in **Figure 12** and **Figure 13**.
+void bme680_init()
+{
+  Wire.begin();
+
+  if (!bme.begin(0x76)) {
+    Serial.println("Could not find a valid BME680 sensor, check wiring!");
+    return;
+  }
+
+  // Set up oversampling and filter initialization
+  bme.setTemperatureOversampling(BME680_OS_8X);
+  bme.setHumidityOversampling(BME680_OS_2X);
+  bme.setPressureOversampling(BME680_OS_4X);
+  bme.setIIRFilterSize(BME680_FILTER_SIZE_3);
+  bme.setGasHeater(320, 150); // 320*C for 150 ms
+}
+
+void bme680_get()
+{
+  Serial.print("Temperature = ");
+  Serial.print(bme.temperature);
+  Serial.println(" *C");
+
+  Serial.print("Pressure = ");
+  Serial.print(bme.pressure / 100.0);
+  Serial.println(" hPa");
+
+  Serial.print("Humidity = ");
+  Serial.print(bme.humidity);
+  Serial.println(" %");
+
+  Serial.print("Gas = ");
+  Serial.print(bme.gas_resistance / 1000.0);
+  Serial.println(" KOhms");
+
+  Serial.println();
+}
+
+void setup()
+{
+  // Initialize the built in LED
+  pinMode(LED_BUILTIN, OUTPUT);
+  digitalWrite(LED_BUILTIN, LOW);
+
+  // Initialize Serial for debug output
+  Serial.begin(115200);
+
+  time_t serial_timeout = millis();
+  // On nRF52840 the USB serial is not available immediately
+  while (!Serial)
+  {
+    if ((millis() - serial_timeout) < 5000)
+    {
+      delay(100);
+      digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
+    }
+    else
+    {
+      break;
+    }
+  }
+
+  bme680_init();
+}
+
+void loop()
+{
+  if (! bme.performReading())
+  {
+    Serial.println("Failed to perform reading :(");
+  }
+  bme680_get();
+  delay(5000);
+}
+
+```
+:::
+
+::: tip 📝 NOTE
+If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK1906 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1906_Environment_BME680) and this sample code in Github will work on all WisBlock Core.
+:::
+
+4. Once the example code is open, install the [Adafruit BME680](https://github.com/adafruit/Adafruit_BME680) library by clicking the link highlighted in yellow, as shown in **Figure 9** and **Figure 10**.
 
 <rk-img
   src="/assets/images/wisblock/rak1906/quickstart/adafruit-bme680.png"
@@ -191,7 +273,11 @@ During the installation, you will be asked to install the **Adafruit Unified Sen
   caption="Installing Adafruit Unified Sensor Library"
 />
 
-4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 15** and **Figure 16**.
+5. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 15** and **Figure 16**.
+
+::: tip 📝 NOTE
+If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak1906/quickstart/env-mon-port.png"
@@ -205,7 +291,7 @@ During the installation, you will be asked to install the **Adafruit Unified Sen
   caption="Uploading the RAK1906 example code"
 />
 
-The RAK1906_Environment_BME680 application gets BME680 sensor data every 5 seconds and prints the results on the serial port.
+6. The RAK1906_Environment_BME680 application gets BME680 sensor data every 5 seconds and prints the results on the serial port.
 
 ```js
 Temperature = 30.66 *C
@@ -235,7 +321,7 @@ These are the quick links that go directly to the specific WisBlock Core module 
 
 ### RAK4631 Solution Requirements
 
-- 1 pc WisBlock Base RAK5005-O   
+- 1 pc WisBlock Base board   
 - 1 pc WisBlock Core RAK4631   
 - 1 pc WisBlock Sensor RAK1906
 - 1 pc WisBlock Display RAK1921 
@@ -248,7 +334,7 @@ These are the quick links that go directly to the specific WisBlock Core module 
 
 ### RAK11310 Solution Requirements
 
-- 1 pc WisBlock Base RAK5005-O   
+- 1 pc WisBlock Base board   
 - 1 pc WisBlock Core RAK11310  
 - 1 pc WisBlock Sensor RAK1906
 - 1 pc WisBlock Display RAK1921

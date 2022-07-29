@@ -2051,24 +2051,24 @@ This command sets the node to eight-channel mode.
 | Command          | Input Parameter | Return Value                                                          | Return Code             |
 | ---------------- | --------------- | --------------------------------------------------------------------- | ----------------------- |
 | `AT+CHE?`        | -               | `AT+CHE`: get or set eight channels mode (only for US915 AU915 CN470) | OK                      |
-| `AT+CHE=?`       | -               | `<value`>                                                             | OK                      |
+| `AT+CHE=?`       | -               | `<value>`                                                             | OK                      |
 | `AT+CHE=<Input>` | `<value>`       | -                                                                     | OK <br>  AT_PARAM_ERROR |
 
 
 **Example:**
 
 ```
-AT+CHE=1
+AT+CHE=1:2:3:4
 OK
 
 AT+CHE=?
-AT+CHE=1
+AT+CHE=1:2:3:4
 OK
 ```
 
 :::tip 📝 NOTE
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
-- In this case, the eight-channel mode is only for US915, AU915, CN470. US915 / AU915 range of values is 0~9, and CN470 range of values is 0~12. e.g. `AT+CHE=1,2,3,4` to enable ch0~31. `<value>`: maximum 12 decimal numbers and the range of values depends on region.
+- In this case, the eight-channel mode is only for US915, AU915, CN470. US915 / AU915 range of values is 0~9, and CN470 range of values is 0~12. e.g. `AT+CHE=1:2:3:4` to enable ch0~31. `<value>`: maximum 12 decimal numbers and the range of values depends on region.
 - According to LoRaWAN Regional Parameters v1.0.3revA, the first 64 channels are numbered 0 to 63, starting at 902.3&nbsp;MHz and increments linearly by 200&nbsp;kHz to 914.9&nbsp;MHz. The next eight (8) channels numbered 64 to 71 are starting at 903.0&nbsp;MHz and increments linearly by 1.6&nbsp;MHz to 914.2&nbsp;MHz.
 :::
 
@@ -3008,7 +3008,7 @@ Switch to point-to-point mode, or LoRaWAN mode [0:Point-to-point, 1:LoRaWAN].
 | ---------------- | --------------- | -------------------------------------------------------------------------------------- | ----------- |
 | ` AT+NWM? `      | -               | `AT+NWM`: get or set the network working mode (0 = P2P_LORA, 1 = LoRaWAN, 2 = P2P_FSK) | OK          |
 | `AT+NWM=?`       | -               | 0,1,2                                                                                  | OK          |
-| `AT+NWM=<Input>` | 0 or 1          | *The RUI3 device will restart automatically to switch network work mode*               | -           |
+| `AT+NWM=<Input>` | 0,1,2           | *The RUI3 device will restart automatically to switch network work mode*               | -           |
 
 **Example:**
 ```
@@ -3090,7 +3090,7 @@ OK
 
 :::tip 📝 NOTE
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
--  In this case, the default value is **7**, and the Spreading Factor range of values is **6~12.** P2P is an SW proprietary protocol, and it depends on HW support the range of Spreading Factors SF6~SF12.
+-  In this case, the default value is **7**, and the Spreading Factor range of values is **5~12.** P2P is an SW proprietary protocol, and it depends on HW support the range of Spreading Factors SF5~SF12.
 :::
 
 
@@ -3278,7 +3278,8 @@ AT+PRECV=65534
 OK
 ```
 :::tip 📝 NOTE
-If configured in continuous RX mode `AT+PRECV=65534`, any new values to `AT+PRECV` will not be accepted. RX mode must be disabled first via `AT+PRECV=0`.
+If configured in continuous RX mode `AT+PRECV=65534`, any new values to `AT+PRECV` will not be accepted. RX mode must be disabled first via `AT+PRECV=0`. 
+During continuous RX mode, there are many LoRa P2P parameters that cannot be modified as well. `AT+PRECV` must be set to zero first. 
 :::
 4. If the value is 0, the device will stop listening to P2P LoRa packets. It disables LoRa P2P RX mode and switch to TX mode.
 ```
@@ -3365,7 +3366,7 @@ This command provides configuration of all parameters for the P2P mode.
 | ---------------- | ------------------------------------------------------------------------------------------ | --------------------------------------- | ---------------------- |
 | `AT+P2P?`        | -                                                                                          | `AT+P2P`: get or set all P2P parameters | OK                     |
 | `AT+P2P=?`       | -                                                                                          | -                                       | OK <br> AT_BUSY_ERROR  |
-| `AT+P2P=<param>` | `<Frequency>, <Spreading Factor>, <Bandwidth>, <Code Rate>, <Preamble Length>, <TX Power>` | -                                       | OK <br> AT_PARAM_ERROR |
+| `AT+P2P=<param>` | `<Frequency>:<Spreading Factor>:<Bandwidth>:<Code Rate>:<Preamble Length>:<TX Power>` | -                                       | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
@@ -3374,12 +3375,12 @@ AT+P2P=868000000:12:125:3:200:14
 OK
 
 AT+P2P=868:12:300:3:200:14
-AT_PARAM_ERROR(error on bandwidth setting)
+AT_PARAM_ERROR
 ```
 
 :::tip 📝 NOTE
 - `AT_PARAM_ERROR` is returned when setting a wrong or malformed value.
-- In this case, the default value is “868000000,7,125,0,8,14”. 
+- In this case, the default value is “868000000:7:125:0:8:14”. 
 - Frequency = {150000000-960000000}, SF = {6, 7, 8, 9, 10, 11, 12}, Bandwidth = {125, 250, 500}, CR = {4/5=0, 4/6=1, 4/7=2, 4/8=3}, Preamble Length = {2-65535}, TX Power = {5-22}.
 - RUI3 LoRa/LoRaWAN devices are divided into two variants - Low Frequency and High Frequency. Examples are the RAK4630(L) and RAK4630(H) devices.
 

@@ -12,9 +12,9 @@ tags:
 ---
 
 
-# RAK12006 WisBlock PIR Module
+# RAK12006 WisBlock PIR Sensor Module
 
-Thank you for choosing **RAK12006 WisBlock PIR Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK12006 WisBlock PIR Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
 * [RAK12006 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -22,7 +22,11 @@ Thank you for choosing **RAK12006 WisBlock PIR Module** in your awesome IoT Proj
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK12006 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK12006.stp)
 * [40-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
-* [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
+* [WisBlock IO Tutorial](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
+
+**Examples**
+
+[Sample Code: RAK12006_MotionDetection](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12006_MotionDetection)
 
 ## Product Description
 
@@ -35,13 +39,14 @@ The RAK12006 is a Pyroelectric Infrared Radial (PIR) module. It is designed to d
     * Built-in filter, screen the interference by other frequency
     * Schmitt Trigger Output REL
     * 3.3&nbsp;V Power supply
+    * Chipset: Senba Sensing Technology AM312
 
 * **Size**
     * 15 x 25&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK12006**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK12006** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK12006**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12006** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.    

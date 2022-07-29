@@ -31,6 +31,8 @@ RAK12013 is a 3.2GHz microwave radar module based on RCWL-9196. It uses the Dopp
 ### Features
 
 - 3.3&nbsp;V Power Supply
+- Current Consumption: < 3&nbsp;uA
+- Chipset: RCWL RCWL-9196
 - Motion Detection Module
 - Detection Distance: 5 - 7 meters
 - Detection Area: 360 degrees angle with no blind spot
@@ -44,7 +46,7 @@ RAK12013 is a 3.2GHz microwave radar module based on RCWL-9196. It uses the Dopp
 
 #### Mounting
 
-The RAK12013 module can be mounted on the IO slot of the WisBlock Base board. **Figure 2** shows the mounting mechanism of the RAK12013 on a WisBlock Base module, such as the RAK5005-O.
+The RAK12013 WisBlock Radar Sensor Module can be mounted to the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. **Figure 2** shows the mounting mechanism of the RAK12013 on a WisBlock Base module.
 
 <rk-img
   src="/assets/images/wisblock/rak12013/datasheet/mounting.png"
@@ -55,6 +57,12 @@ The RAK12013 module can be mounted on the IO slot of the WisBlock Base board. **
 ### Hardware
 
 The hardware specification is categorized into four (4) parts. It discusses the pinouts and their corresponding functions and diagrams of the module. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK12013 WisBlock Radar Sensor Module.
+
+#### Chipset
+
+| Vendor | Part number |
+| ------ | ----------- |
+| RCWL   |  RCWL-9196  |
 
 
 #### Pin Definition

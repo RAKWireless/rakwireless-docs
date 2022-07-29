@@ -22,7 +22,10 @@ Thank you for choosing **RAK14008 WisBlock Gesture Sensor Module** in your aweso
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK14008 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK14008.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
-* [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
+* [WisBlock IO Tutorial](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
+
+**Example**
+- [Sample Code: RAK14008_Gesture_PAJ7620](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK14008_Gesture_PAJ7620)
 
 ## Product Description
 
@@ -41,6 +44,7 @@ RAK14008 is a gesture sensor module based on PAJ7620U2. It is designed for gestu
     * Ambient light noise cancellation
     * VBAT：3.2-5.5&nbsp;V
     * VCC：2.8-3.3&nbsp;V
+    * Chipset: PixArt Imaging PAJ7620U2
     * Operating Temperature: -40&nbsp;°C ~ 85&nbsp;°C
     * Storage Temperature:-40&nbsp;°C ~ 125&nbsp;°C
 
@@ -50,7 +54,7 @@ RAK14008 is a gesture sensor module based on PAJ7620U2. It is designed for gestu
 
 ## Prerequisites
 
-To use a **RAK14008**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK14008** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK14008**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK14008** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.    

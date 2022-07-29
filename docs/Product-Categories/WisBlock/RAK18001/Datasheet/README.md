@@ -62,7 +62,7 @@ The RAK18001 WisBlock Buzzer Module comprises a standard WisSensor connector. Th
 
 <rk-img
   src="/assets/images/wisblock/rak18001/datasheet/rak18001-pinouts.png"
-  width="50%"
+  width="60%"
   caption="RAK18001 Buzzer Module Pinout Diagram"
 />
 

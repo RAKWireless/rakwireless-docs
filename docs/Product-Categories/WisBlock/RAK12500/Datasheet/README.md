@@ -35,6 +35,9 @@ The RAK12500 uses the u-blox ZOE-M8Q module. It supports a wide variety of satel
     * Serial and I2C communication to WisBlock Core support
     * 10&nbsp;Hz Update Rate
     *	29 seconds Location Fix from Cold Start, 1 second from Hot Start
+    * Operating Voltage: 3.3&nbsp;V
+    * Operating Current: < 15&nbsp;µA
+    * Chipset: u-blox ZOE-M8Q
   
 * **Size**
     * Module Size: 10&nbsp;mm x 23&nbsp;mm
@@ -45,7 +48,7 @@ The RAK12500 uses the u-blox ZOE-M8Q module. It supports a wide variety of satel
 
 #### Mounting
 
-The RAK12500 WisBlock GNSS Location Module can be mounted to the sensor slot A (UART or I2C Communication) or slot C (I2C Communication only) of the WisBlock Base Board. Figure 2 shows the mounting mechanism of the RAK12500 on a WisBlock Base, such as the RAK5005-O.  
+**Figure 2** shows the mounting mechanism of the RAK12500 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12500 module can be mounted on the slots: **SLOT A (UART / I2C Communication) or SLOT C (I2c Communication Only)**.
 
 <rk-img
   src="/assets/images/wisblock/rak12500/datasheet/RAK12500-mounting.png"
@@ -68,7 +71,7 @@ The RAK12500 utilizes a very accurate u-blox ZOE-M8Q chip. See the manufacturer'
 
 #### Pin Definition
 
-The RAK12500 WisBlock GNSS Location Module comprises a standard WisSensor connector. The WisSensor connector allows the RAK12500 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in Figure 3.
+The RAK12500 WisBlock GNSS Location Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK12500 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 <rk-img
   src="/assets/images/wisblock/rak12500/datasheet/rak12500-sch1.png"
@@ -79,6 +82,12 @@ The RAK12500 WisBlock GNSS Location Module comprises a standard WisSensor connec
 :::tip 📝 NOTE:
 Only the UART and I2C related pin, 1PPS pin, RESET pin, VDD, and GND are connected to this module
 :::
+
+If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse depends on what slot the module is plugged in. The following table shows the default IO used for different slots:
+
+| SLOT A     | SLOT C   |
+| ---------- | -------- |
+| UART / I2C | I2C Only |
 
 #### Electrical Characteristics  
   

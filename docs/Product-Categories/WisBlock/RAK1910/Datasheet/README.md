@@ -13,11 +13,20 @@ next: false
 
 ## Overview
 
+<rk-img
+  src="/assets/images/wisblock/rak1910/datasheet/RAK1910.svg"
+  width="50%"
+  caption="RAK1910 WisBlock GNSS Location Module"
+/>
+
 ### Description
 
 The RAK1910 WisBlock GNSS Location Module module, part of the RAK Wireless Wisblock series, is a u-blox MAX-7Q GNSS (GPS, GLONASS, QZSS, and SBAS) module. This module features exceptional performance, high sensitivity, and minimal acquisition time, which makes it suitable for low-power IoT solutions. The RAK1910 positioning module is a GNSS receiver. It receives and tracks the GPS (including SBAS and QZSS) and the GLONASS signals. QZSS and SBAS signals (by default) can be received concurrently with GPS signals.
 
 ### Features
+* **Voltage Supply**: 3.3&nbsp;V
+* **Current Consumption**: 15&nbsp;uA to 22&nbsp;mA
+* **Chipset**: u-Blox MAX-7Q
 * High accuracy of 2.5&nbsp;m
 * **Update rate**: 10&nbsp;Hz
 * **Velocity accuracy**: 0.1&nbsp;m/s
@@ -31,7 +40,8 @@ The RAK1910 WisBlock GNSS Location Module module, part of the RAK Wireless Wisbl
 <!-- Insert Picture of Sensor with its dimensions -->
 
 #### Mounting
-The RAK1910 module can be mounted only in slot A of the RAK5005-O base board, or in slot D of the RAK19003 base board. **Figure 1** shows the mounting mechanism of the RAK1910 on a WisBase module, such as the RAK5005-O.
+
+**Figure 2** shows the mounting mechanism of the RAK12001 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12001 module can be mounted on the slots: **A, E, F**.
 
 <rk-img
   src="/assets/images/wisblock/rak1910/datasheet/RAK1910_mounting.png"
@@ -50,11 +60,11 @@ The hardware specification is categorized into six parts. It shows the chipset o
 
 #### Pin Definition
 
-The RAK1910 WisBlock GNSS Location Module module features a standard WisConnector, which allows the RAK1910 module to be mounted on a WisBlock baseboard, such as RAK5005-O or RAK19903. The pin order of the connector and the definition of the pinout are shown in **Figure 2**.
+The RAK1910 WisBlock GNSS Location Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK1910 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 <rk-img
   src="/assets/images/wisblock/rak1910/datasheet/RAK1910_pin.png"
-  width="70%"
+  width="60%"
   caption="RAK1910 WisBlock GNSS Location Module Pinout Diagram"
 />
 
@@ -62,6 +72,12 @@ The RAK1910 WisBlock GNSS Location Module module features a standard WisConnecto
 - Only the **UART**-related pins, **1PPS** pin, **RESET** pin, **VDD**, and **GND** are connected to this module.
 - The RAK1910 module can be installed in the Slot A only.
 :::
+
+If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse depends on what slot the module is plugged in. The following table shows the default IO used for different slots:
+
+| SLOT A | SLOT E | SLOT F |
+| ------ | ------ | ------ |
+| WB_IO1 | WB_IO4 | WB_IO6 |
 
 
 #### Sensors
@@ -165,14 +181,12 @@ The RAK1910 WisBlock GNSS Location Module module features a standard WisConnecto
 #### Electrical Characteristics
 
 ##### Recommended Operating Conditions
-
-| Symbol           | Description                 | Min. | Nom. | Max. | Unit |
-| ---------------- | --------------------------- | :--: | :--: | :--: | :--: |
-| V<sub>DD</sub>   | Power supply for the module | 2.7  | 3.0  | 3.6  |  V   |
-| I<sub>BCKP</sub> | Backup battery current      |  -   |  15  |  -   |  uA  |
-| I<sub>cc</sub>   | Acquisition                 |  -   |  22  |  -   |  mA  |
-| I<sub>cc</sub>   | Tracking                    |  -   | 17.5 |  -   |  mA  |
-
+| Symbol           | Description                 | Min.  | Nom.  | Max.  | Unit  |
+| ---------------- | --------------------------- | :---: | :---: | :---: | :---: |
+| V<sub>DD</sub>   | Power supply for the module |  2.7  |  3.3  |  3.6  |   V   |
+| I<sub>BCKP</sub> | Backup battery current      |   -   |  15   |   -   |  uA   |
+| I<sub>cc</sub>   | Acquisition                 |   -   |  22   |   -   |  mA   |
+| I<sub>cc</sub>   | Tracking                    |   -   | 17.5  |   -   |  mA   |
 
 #### Mechanical Characteristics
 
@@ -185,11 +199,6 @@ The RAK1910 WisBlock GNSS Location Module module features a standard WisConnecto
   width="60%"
   caption="RAK1910 WisBlock GNSS Location Module Mechanic Drawing"
 />
-
-:::tip 📝 NOTE:
-Slot for mounting: **SLOT A** / **SLOT D**
-- Because the RAK1910 is double the size of regular sensor modules and uses the serial connection to the WisBlock Core module, it can be only installed on the RAK5005-O in **SLOT A**, and on the RAK19003 in **SLOT D**, the full-size slot.
-:::
 
 ##### WisConnector PCB Layout
 

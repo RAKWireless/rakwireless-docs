@@ -28,6 +28,7 @@ RAK12005 WisBlock Rain Sensor Module also has a separate sensor PCB, the RAK1203
 ### Features
 
 - 3.3&nbsp;V Power supply (disconnect option to save power)
+- Chipset: Microchip MCP606
 - Digital output
 - Configurable detection threshold via trimmer
 - Module size: 15 X 25&nbsp;mm
@@ -39,7 +40,7 @@ RAK12005 WisBlock Rain Sensor Module also has a separate sensor PCB, the RAK1203
 
 #### Mounting
 
-The RAK12005 module can be mounted on the IO slot of the WisBlock Base board. **Figure 2** shows the mounting mechanism of the RAK12005 on a WisBlock Base module, such as the RAK5005-O.
+The RAK12005 WisBlock Rain Sensor Module can be mounted to the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. **Figure 2** shows the mounting mechanism of the RAK12005 on a WisBlock Base module.
 
 <rk-img
   src="/assets/images/wisblock/rak12005/datasheet/mounting-mechanism.png"
@@ -51,18 +52,24 @@ The RAK12005 module can be mounted on the IO slot of the WisBlock Base board. **
 
 The hardware specification discusses the pinouts and its corresponding functions and diagrams of the module. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK12005 WisBlock™ Module.
 
+#### Chipset
+
+| Vendor    | Part number |
+| --------- | ----------- |
+| Microchip |  MCP606     |
+
 #### Pin Definition
 
 The RAK12005 WisBlock module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 3**. 
 
 <rk-img
-  src="/assets/images/wisblock/rak12005/datasheet/rak12005-pinout.svg"
-  width="80%"
+  src="/assets/images/wisblock/rak12005/datasheet/RAK12005_pinout.svg"
+  width="60%"
   caption="RAK12005 WisBlock Rain Sensor Pinout"
 />
 
 ::: tip 📝 NOTE
-- Only **OUT**, **3V3_S**, **3V3**, and **GND** are connected to WisConnector. **3V3_S** can be turn on or off on WisBlock Base through **IO2**. Default use **3V3** for this module.
+- Only **OUT**, **3V3_S (optional)**, **3V3**, and **GND** are connected to WisConnector. **3V3_S** can be turn on or off on WisBlock Base through **IO2**. Default use **3V3** for this module.
 :::  
 
 #### Electrical Characteristics

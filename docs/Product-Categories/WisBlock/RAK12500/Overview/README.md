@@ -48,13 +48,16 @@ The RAK12500 uses the u-blox ZOE-M8Q module. It supports a wide variety of satel
     * Serial and I2C communication to WisBlock Core support
     * 10&nbsp;Hz Update Rate
     * 29 seconds Location Fix from Cold Start, 1 second from Hot Start
+    * Operating Voltage: 3.3&nbsp;V
+    * Operating Current: < 15&nbsp;µA
+    * Chipset: u-blox ZOE-M8Q
   
 * **Size**
     * Module Size: 10&nbsp;mm x 23&nbsp;mm
 
 ## Prerequisites  
   
-To use the **RAK12500 WisBlock GNSS Location Module**, you need a **Wisblock Base** to plug the module in. The Wisblock Base acts as a power supply for the RAK12500 GNSS Location Module. Also, you need a **WisBlock Core** to control your module.
+To use the **RAK12500 WisBlock GNSS Location Module**, you need a **Wisblock Base** to plug the module in. The **Wisblock Base** provides power supply to the **RAK12500** GNSS Location Module. Also, you need a **WisBlock Core** to control your module.
 
 
 :::warning ⚠️ WARNING    

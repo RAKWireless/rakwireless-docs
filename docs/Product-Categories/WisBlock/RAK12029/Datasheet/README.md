@@ -32,6 +32,8 @@ RAK12029 is a metal detection sensor module based on the LDC1614 from Texas Inst
 * 28-bit LDC
 * Immunity to DC magnetic fields and magnets
 * 3.3&nbsp;V Power supply
+* Operating Current: 0.2&nbsp;uA to 2.1&nbsp;mA
+* Chipset: Texas Instruments LDC1614
 * **Module size**: 25 x 35&nbsp;mm
 
 ## Specifications
@@ -39,7 +41,7 @@ RAK12029 is a metal detection sensor module based on the LDC1614 from Texas Inst
 
 #### Mounting
 
-The RAK12029 metal detection sensor module can be mounted to the IO Slot of the WisBlock Base board. **Figure 2** shows the mounting mechanism of the RAK12029 to a WisBlock Base module, such as the RAK5005-O.
+The RAK12029 WisBlock Inductive Sensor Module can be mounted to the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. **Figure 2** shows the mounting mechanism of the RAK12029 on a WisBlock Base module.
 
 <rk-img
   src="/assets/images/wisblock/rak12029/datasheet/rak12029_mounting.png"
@@ -60,8 +62,7 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 #### Pin Definition
 
-The RAK12029 WisBlock inductive sensor module comprises a standard WisBlock IO Slot connector. The WisBlock IO Slot connector allows the RAK12029 module to be mounted to a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 3**. 
-
+The RAK12029 WisBlock Inductive Sensor comprises a standard WisBlock connector. The WisBlock connector allows the RAK12029 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 :::tip 📝 NOTE:
 * **I2C** related pin, **3V3_S**, and **GND** are connected to WisIO connector.

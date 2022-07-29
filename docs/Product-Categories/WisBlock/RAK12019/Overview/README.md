@@ -27,8 +27,7 @@ Thank you for choosing **RAK12019 WisBlock UV Sensor** in your awesome IoT Proje
 
 **Examples**
 
-For All WisBlock Core:
-* [Sample Code: RAK12019](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/sensors/RAK12019_UVlight_LTR390/RAK12019_UVlight_LTR390.ino)
+* [Sample Code: RAK12019_UVlight_LTR390](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12019_UVlight_LTR390)
 
 ## Product Description
 
@@ -45,6 +44,8 @@ The RAK12019 is an Ambient Light Sensor (ALS) or Ultraviolet Light Sensor (UVS),
     * Close to human eye spectral response
     * Automatic rejection for 50&nbsp;Hz/60&nbsp;Hz lighting flicker
     * Operating voltage ranges: 1.7&nbsp;V to 3.6&nbsp;V
+    * Current Consumption: 1&nbsp;uA - 110&nbsp;uA
+    * Chipset: Lite-On LTR-390UV-01
     * Operating temperature ranges: -40 to +85&nbsp;ºC
     * Built-in temperature compensation circuit
     * Programmable interrupt function for ALS, UVS with upper and lower thresholds
@@ -55,7 +56,7 @@ The RAK12019 is an Ambient Light Sensor (ALS) or Ultraviolet Light Sensor (UVS),
 
 ## Prerequisites
 
-To use a **RAK12019**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK12019** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK12019**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12019** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.    

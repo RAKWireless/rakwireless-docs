@@ -11,9 +11,9 @@ tags:
     - LIS3DH
 ---
 
-# RAK1904 WisBlock 3-axis Acceleration Sensor
+# RAK1904 WisBlock 3-axis Acceleration Sensor Module
 
-Thank you for choosing **RAK1904 WisBlock 3-axis Acceleration Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK1904 WisBlock 3-axis Acceleration Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [RAK1904 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -35,20 +35,25 @@ For WisBlock Core RAK4630:
 
 ## Product Description
 
-RAK1904 is a WisBlock Sensor which extends the WisBlock system with a ST LIS3DH 3-axis acceleration sensor. A ready to use SW library and tutorial makes it easy to build up a motion detection and acceleration data acquisition system.
+RAK1904 is a WisBlock Sensor which extends the WisBlock system with a ST LIS3DH 3-axis acceleration sensor. A ready to use SW library and tutorial makes it easy to build up a motion detection and acceleration data acquisition system. It has an ultra-low-power high-performance three-axis linear accelerometer with a digital I2C interface. The device features ultra-low-power operational modes that allow advanced power saving and smart embedded functions.
+
+The accelerometer of the RAK1904 module can be dynamically configured to work in the scales of ±2g/±4g/±8g/±16g, and capable of measuring accelerations with output data rates from 1&nbsp;Hz to 5.3&nbsp;kHz.
 
 ## Product Features
 
 * **Sensor specifications**
     * User select able scales of ±2g/±4g/±8g/±16g     
     * Data acquisition rates from 1&nbsp;Hz to 5.3&nbsp;kHz   
+    * Voltage Supply: 3.3&nbsp;V
+    * Current Consumption: 0.5&nbsp;uA to 11&nbsp;uA
+    * Chipset: ST LIS3DH
 
 * **Size**
     * 10 x 10&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK1904**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK1904** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK1904**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK1904** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.

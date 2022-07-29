@@ -20,12 +20,16 @@ Thank you for choosing **RAK12028 WisBlock T-Beam-Fork Connector Module** in you
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK12028 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK12028.stp)
 * [24-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
-* [WisBlock IO Tutorial](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
+* [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
+
+**Example**
+
+- [Sample Code: RAK12031_T_Fork_SX1041](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12031_T_Fork_SX1041)
 
 
 ## Product Description
 
-RAK12028 is a Through-Beam-Fork (TBF) connector module. It has one (1) standard WisBlock sensor connector, which you can connect with the WisBlock Base such as RAK5005-O. It also has one (1) 6-pins connector dedicated to the RAK12031. The [RAK12031](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK12031/Overview/) is a separate Through-Beam-Fork sensor that can be connected to the RAK12028 connector module using a cable.
+RAK12028 is a Through-Beam-Fork (TBF) connector module. It has one (1) standard WisBlock sensor connector, which you can connect with the WisBlock Base. It also has one (1) 6-pins connector dedicated to the RAK12031. The [RAK12031](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK12031/Overview/) is a separate Through-Beam-Fork sensor that can be connected to the RAK12028 connector module using a cable.
 
 ## Product Features
 
@@ -37,7 +41,7 @@ RAK12028 is a Through-Beam-Fork (TBF) connector module. It has one (1) standard 
 
 ## Prerequisites
 
-To use a **RAK12028**, you need to connect at least one **RAK12031** Through-Beam-Fork Sensor. You also need a **WisBlock Base** to plug the module in. **WisBlock Base** provides the power supply for the TBF sensor module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK12028**, you need to connect at least one **RAK12031** Through-Beam-Fork Sensor and also a **WisBlock Base** to plug the module in. **WisBlock Base** provides the power supply to the **RAK12028** module. Furthermore, you need a **WisBlock Core** module to use the connector and sensor.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.    

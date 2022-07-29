@@ -34,6 +34,8 @@ For WisBlock Core RAK11200:
 
 * [Sample Code RAK11200: Stereo PDM Microphone](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/IO/RAK18000_Stereo)
 
+For WisBlock Core RAK11310:
+
 * [Sample Code RAK11300: Stereo PDM Microphone](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/IO/RAK18000_Stereo)
 
 ## Product Description
@@ -45,7 +47,9 @@ The RAK18000 is a digital microphone module that is designed to detect sounds an
 ## Product Features
 
 * **Module specifications**    
-    - 3.3&nbsp;V input voltage
+    - Voltage Supply: 3.3&nbsp;V
+    - Current Consumption: 5&nbsp;µA to 650&nbsp;µA
+    - Chipset: ST MP34DT06J
     - 64&nbsp;dB signal-to-noise ratio
     - –26&nbsp;dBFS ± 1&nbsp;dB sensitivity 
     - Stereo microphone 2 x MP34DT06J   
@@ -56,7 +60,7 @@ The RAK18000 is a digital microphone module that is designed to detect sounds an
 
 ## Prerequisites
 
-To use a **RAK18000**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK18000** module. Furthermore, you need a **WisBlock Core** module to use the sensor.   
+To use a **RAK18000**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK18000** module. Furthermore, you need a **WisBlock Core** module to use the module.   
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.

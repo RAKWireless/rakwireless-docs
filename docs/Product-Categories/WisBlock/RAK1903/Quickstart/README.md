@@ -28,10 +28,11 @@ Before going through each and every step on using the RAK1903 WisBlock module, m
 
 #### Hardware
 
-- [RAK1903](https://store.rakwireless.com/collections/wisblock-sensor/products/rak1903-opt3001dnpr-ambient-light-sensor)
+- [RAK1903 WisBlock Ambient Light Sensor Module](https://store.rakwireless.com/collections/wisblock-sensor/products/rak1903-opt3001dnpr-ambient-light-sensor)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
+- [RAK19005 WisBlock Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005)
 - [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
 - [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
 
@@ -52,7 +53,7 @@ The RAK1903 module gives us information about:
 
 - Ambient Light
 
-RAK1903 module can be connected to any slot of WisBlock Base to communicate with the WisBlock Core. It will work on **SLOT A to D**. Also, always secure the connection of the WisBlock module by using compatible screws.
+RAK1903 module can be connected to the sensor's slot of [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) to communicate with the WisBlock Core, as shown in **Figure 1**. It will work on **SLOT A to F**. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak1903/quickstart/rak1903_assembly.png"
@@ -64,7 +65,7 @@ RAK1903 module can be connected to any slot of WisBlock Base to communicate with
 
 ##### Assembling
 
-As shown in **Figure 2**, the location for Slot A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the module.
+As shown in **Figure 2**, the location for Slot A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the module.
 
 <rk-img
   src="/assets/images/wisblock/rak1903/quickstart/14.wisblock-sensor-silkscreen.png"
@@ -104,25 +105,27 @@ The procedure in disassembling any type of WisBlock modules is the same.
 If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1903 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
 :::
 
+After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
-After all this setup, you can now connect the battery and USB cable to start programming your WisBlock Core.
+:::warning ⚠️ WARNING
+- Batteries can cause harm if not handled properly.
+- Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
+- If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause a fire.
+- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
+- Make sure the battery wires match the polarity on the WisBlock Base board. Not all batteries have the same wiring.
+:::
 
 ### Software Configuration and Example
 
 The RAK1903 is an ambient optical sensor board that contains an OPT3001DNPR chip. The OPT3001DNPR is a single-chip lux meter, measuring the intensity of optical as visible by the human eye. The device comprises a sensing element and an IC interface that communicates through I2C from the sensing element to the application.
 
-These are the quick links that go directly to the software guide for the specific WisBlock Core module you use:
+#### Initial Test of the RAK1903 WisBlock Module
 
-- [RAK1903 in RAK4631 WisBlock Core Guide](/Product-Categories/WisBlock/RAK1903/Quickstart/#rak1903-in-rak4631-wisblock-core-guide)
-- [RAK1903 in RAK11200 WisBlock Core Guide](/Product-Categories/WisBlock/RAK1903/Quickstart/#rak1903-in-rak11200-wisblock-core-guide)
-- [RAK1903 in RAK11310 WisBlock Core Guide](/Product-Categories/WisBlock/RAK1903/Quickstart/#rak1903-in-rak11310-wisblock-core-guide)
-- [LoRaWAN Weather Monitoring with RAK1903](/Product-Categories/WisBlock/RAK1903/Quickstart/#lorawan-weather-monitoring-with-rak1903)
+1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
-#### RAK1903 in RAK4631 WisBlock Core Guide
+2. You need to select the WisBlock Core you have.
 
-If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
-
-1. First, you need to select the RAK4631 WisBlock Core.
+**RAK4631 Board**
 
 <rk-img
   src="/assets/images/wisblock/rak1903/quickstart/rak4631-board.png"
@@ -130,15 +133,179 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK4631 as WisBlock Core"
 />
 
-2. The [Basic Sample Code for RAK1903](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1903_Optical_OPT3001) in Github will work on ALL WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 7**. 
+**RAK11200 Board**
 
 <rk-img
-  src="/assets/images/wisblock/rak1903/quickstart/rak4631-examplecode.png"
+  src="/assets/images/wisblock/rak1903/quickstart/rak11200-board.png"
   width="100%"
-  caption="Opening RAK1903 example code for RAK4631 WisBlock Core"
+  caption="Selecting RAK11200 as WisBlock Core"
 />
 
-3. Once the example code is open, install the [ClosedCube OPT3001](https://github.com/closedcube/ClosedCube_OPT3001_Arduino) library by clicking the yellow highlighted link, as shown in **Figure 8** and **Figure 9**.
+**RAK11310 Board**
+
+<rk-img
+  src="/assets/images/wisblock/rak1903/quickstart/rak11310-board.png"
+  width="100%"
+  caption="Selecting RAK11310 as WisBlock Core"
+/>
+
+3. Next, copy the following sample code into your Arduino IDE:
+
+::: details Click Here to View Example Code
+```c
+/**
+   @file RAK1903_Optical_OPT3001.ino
+   @author rakwireless.com
+   @brief Setup and read values from a opt3001 sensor
+   @version 0.1
+   @date 2020-12-28
+   @copyright Copyright (c) 2020
+**/
+
+#include <Wire.h>
+#include <ClosedCube_OPT3001.h> // Click here to get the library: http://librarymanager/All#OPT3001
+
+// Forward declarations for functions
+void printError(String text, OPT3001_ErrorCode error);
+
+ClosedCube_OPT3001 g_opt3001;
+#define OPT3001_ADDRESS 0x44
+
+
+void configureSensor()
+{
+  OPT3001_Config newConfig;
+
+  newConfig.RangeNumber = B1100;
+  newConfig.ConvertionTime = B0;
+  newConfig.Latch = B1;
+  newConfig.ModeOfConversionOperation = B11;
+
+  OPT3001_ErrorCode errorConfig = g_opt3001.writeConfig(newConfig);
+  if (errorConfig != NO_ERROR)
+    printError("OPT3001 configuration", errorConfig);
+  else
+  {
+    OPT3001_Config sensorConfig = g_opt3001.readConfig();
+    Serial.println("OPT3001 Current Config:");
+    Serial.println("------------------------------");
+
+    Serial.print("Conversion ready (R):");
+    Serial.println(sensorConfig.ConversionReady, HEX);
+
+    Serial.print("Conversion time (R/W):");
+    Serial.println(sensorConfig.ConvertionTime, HEX);
+
+    Serial.print("Fault count field (R/W):");
+    Serial.println(sensorConfig.FaultCount, HEX);
+
+    Serial.print("Flag high field (R-only):");
+    Serial.println(sensorConfig.FlagHigh, HEX);
+
+    Serial.print("Flag low field (R-only):");
+    Serial.println(sensorConfig.FlagLow, HEX);
+
+    Serial.print("Latch field (R/W):");
+    Serial.println(sensorConfig.Latch, HEX);
+
+    Serial.print("Mask exponent field (R/W):");
+    Serial.println(sensorConfig.MaskExponent, HEX);
+
+    Serial.print("Mode of conversion operation (R/W):");
+    Serial.println(sensorConfig.ModeOfConversionOperation, HEX);
+
+    Serial.print("Polarity field (R/W):");
+    Serial.println(sensorConfig.Polarity, HEX);
+
+    Serial.print("Overflow flag (R-only):");
+    Serial.println(sensorConfig.OverflowFlag, HEX);
+
+    Serial.print("Range number (R/W):");
+    Serial.println(sensorConfig.RangeNumber, HEX);
+
+    Serial.println("------------------------------");
+  }
+}
+
+void opt3001_read_data()
+{
+  OPT3001 result = g_opt3001.readResult();
+  if (result.error == NO_ERROR)
+  {
+    Serial.print("OPT3001");
+    Serial.print(": ");
+    Serial.print(result.lux);
+    Serial.println(" lux");
+
+    uint16_t luminosity = result.lux;
+  }
+  else
+  {
+    printError("OPT3001", result.error);
+  }
+}
+
+void printResult(String text, OPT3001 result)
+{
+  if (result.error == NO_ERROR)
+  {
+    Serial.print(text);
+    Serial.print(": ");
+    Serial.print(result.lux);
+    Serial.println(" lux");
+  }
+  else
+  {
+    printError(text, result.error);
+  }
+}
+void printError(String text, OPT3001_ErrorCode error)
+{
+  Serial.print(text);
+  Serial.print(": [ERROR] Code #");
+  Serial.println(error);
+}
+void setup()
+{
+	time_t timeout = millis();
+	Serial.begin(115200);
+	while (!Serial)
+	{
+    if ((millis() - timeout) < 5000)
+    {
+      delay(100);
+    }
+    else
+    {
+      break;
+    }
+	}
+
+	/* opt3001 init */
+	g_opt3001.begin(OPT3001_ADDRESS);
+	Serial.print("OPT3001 Manufacturer ID");
+	Serial.println(g_opt3001.readManufacturerID());
+	Serial.print("OPT3001 Device ID");
+	Serial.println(g_opt3001.readDeviceID());
+
+	configureSensor();
+	printResult("High-Limit", g_opt3001.readHighLimit());
+	printResult("Low-Limit", g_opt3001.readLowLimit());
+}
+
+void loop()
+{
+	opt3001_read_data();
+	delay(1000);
+}
+```
+:::
+
+::: tip 📝 NOTE
+If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK1903 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1903_Optical_OPT3001) and this sample code in Github will work on all WisBlock Core.
+:::
+
+4. Once the example code is open, install the [ClosedCube OPT3001](https://github.com/closedcube/ClosedCube_OPT3001_Arduino) library by clicking the yellow highlighted link, as shown in **Figure 9** and **Figure 10**.
 
 <rk-img
   src="/assets/images/wisblock/rak1903/quickstart/rak1903-lib.png"
@@ -152,7 +319,11 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Installing the compatible library for RAK1903 Module"
 />
 
-4. After successful installation of the library, you can now select the right serial port and upload the code as shown in **Figure 10** and **Figure 11**.
+5. After successful installation of the library, you can now select the right serial port and upload the code as shown in **Figure 11** and **Figure 12**.
+
+::: tip 📝 NOTE
+If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak1903/quickstart/rak4631-selectport.png"
@@ -166,123 +337,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Uploading the RAK1903 example code"
 />
 
-5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 12**, then your RAK1903 is properly communicating to the WisBlock core.
-
-<rk-img
-  src="/assets/images/wisblock/rak1903/quickstart/rak1903-logs.png"
-  width="80%"
-  caption="RAK1903 ambient light data logs"
-/>
-
-#### RAK1903 in RAK11200 WisBlock Core Guide
-
-If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
-
-1. First, you need to select the RAK11200 WisBlock Core.
-
-<rk-img
-  src="/assets/images/wisblock/rak1903/quickstart/rak11200-board.png"
-  width="100%"
-  caption="Selecting RAK11200 as WisBlock Core"
-/>
-
-2. The [Basic Sample Code for RAK1903](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1903_Optical_OPT3001) in Github will work on ALL WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 14**. 
-
-<rk-img
-  src="/assets/images/wisblock/rak1903/quickstart/rak11200-examplecode.png"
-  width="100%"
-  caption="Opening RAK1903 example code for RAK11200 WisBlock Core"
-/>
-
-3. Once the example code is open, install the [ClosedCube OPT3001](https://github.com/closedcube/ClosedCube_OPT3001_Arduino) library by clicking the yellow highlighted link, as shown in **Figure 15** and **Figure 16**.
-
-<rk-img
-  src="/assets/images/wisblock/rak1903/quickstart/rak1903-lib.png"
-  width="100%"
-  caption="Accessing the library used for RAK1903 Module"
-/>
-
-<rk-img
-  src="/assets/images/wisblock/rak1903/quickstart/rak1903-libinstall.png"
-  width="70%"
-  caption="Installing the compatible library for RAK1903 Module"
-/>
-
-4. After successful installation of the library, you can now select the right serial port and upload the code as shown in **Figure 17** and **Figure 18**.
-
-::: tip 📝 NOTE
-RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
-:::
-
-<rk-img
-  src="/assets/images/wisblock/rak1903/quickstart/rak11200-selectport.png"
-  width="100%"
-  caption="Selecting the correct Serial Port"
-/>
-
-<rk-img
-  src="/assets/images/wisblock/rak1903/quickstart/rak11200-upload.png"
-  width="100%"
-  caption="Uploading the RAK1903 example code"
-/>
-
-5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 19**, then your RAK1903 is properly communicating to the WisBlock core.
-
-<rk-img
-  src="/assets/images/wisblock/rak1903/quickstart/rak1903-logs.png"
-  width="80%"
-  caption="RAK1903 ambient light data logs"
-/>
-
-#### RAK1903 in RAK11310 WisBlock Core Guide
-
-If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
-
-1. First, you need to select the RAK11310 WisBlock Core.
-
-<rk-img
-  src="/assets/images/wisblock/rak1903/quickstart/rak11310-board.png"
-  width="100%"
-  caption="Selecting RAK11310 as WisBlock Core"
-/>
-
-2. The [Basic Sample Code for RAK1903](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1903_Optical_OPT3001) in Github will work on ALL WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 21**. 
-
-<rk-img
-  src="/assets/images/wisblock/rak1903/quickstart/rak11310-examplecode.png"
-  width="100%"
-  caption="Opening RAK1903 example code for RAK11310 WisBlock Core"
-/>
-
-3. Once the example code is open, install the [ClosedCube OPT3001](https://github.com/closedcube/ClosedCube_OPT3001_Arduino) library by clicking the yellow highlighted link, as shown in **Figure 22** and **Figure 23**.
-
-<rk-img
-  src="/assets/images/wisblock/rak1903/quickstart/rak1903-lib.png"
-  width="100%"
-  caption="Accessing the library used for RAK1903 Module"
-/>
-
-<rk-img
-  src="/assets/images/wisblock/rak1903/quickstart/rak1903-libinstall.png"
-  width="70%"
-  caption="Installing the compatible library for RAK1903 Module"
-/>
-
-4. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 24** and **Figure 25**.
-
-<rk-img
-  src="/assets/images/wisblock/rak1903/quickstart/rak11310-selectport.png"
-  width="100%"
-  caption="Selecting the correct Serial Port"
-/>
-
-<rk-img
-  src="/assets/images/wisblock/rak1903/quickstart/rak11310-upload.png"
-  width="100%"
-  caption="Uploading the RAK1903 example code"
-/>
-
-5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 26**, then your RAK1903 is properly communicating to the WisBlock core.
+6. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 13**, then your RAK1903 is properly communicating to the WisBlock core.
 
 <rk-img
   src="/assets/images/wisblock/rak1903/quickstart/rak1903-logs.png"

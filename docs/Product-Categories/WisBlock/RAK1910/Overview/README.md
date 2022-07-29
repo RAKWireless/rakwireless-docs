@@ -46,6 +46,9 @@ The RAK1910 WisBlock GNSS Location Module module, part of the RAK Wireless Wisbl
 ## Product Features
 
 * **Sensor specifications**
+    * Voltage Supply: 3.3&nbsp;V
+    * Current Consumption: 15&nbsp;uA to 22&nbsp;mA
+    * Chipset: u-Blox MAX-7Q
     * High accuracy of 2.5&nbsp;m
     * 10&nbsp;Hz update rate
     * 0.1&nbsp;m/s velocity accuracy
@@ -58,9 +61,7 @@ The RAK1910 WisBlock GNSS Location Module module, part of the RAK Wireless Wisbl
 
 ## Prerequisites
 
-To use a **RAK1910**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK1910** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
-
-The **RAK1910** module can only be used in the **WisBlock Base** sensor slot **A**. It occupies two sensor slots.
+To use a **RAK1910**, you need at least a **WisBlock Base** and a **GPS Antenna** to plug the module in. **WisBlock Base** provides power supply to the **RAK1910** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
 * The included active GPS antenna must be connected to the iPEX antenna connector on the board. Otherwise, the module will not work.

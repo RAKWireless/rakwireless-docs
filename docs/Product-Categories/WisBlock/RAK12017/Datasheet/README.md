@@ -9,7 +9,7 @@ prev: ../Quickstart/
 next: false
 ---
 
-# RAK12017 WisBlock IR Detection Module Datasheet
+# RAK12017 WisBlock IR Detection Sensor Module Datasheet
 
 ## Overview
 
@@ -23,6 +23,8 @@ The RAK12017 is an IR detection module. This module uses ITR20001 optical switch
 - Detect whether IR Signal is reflected back
 - λP=940&nbsp;nm
 - 3.3&nbsp;V Power supply
+- Current Consumption: < 21&nbsp;mA
+- Chipset: Everlight ITR20001
 - Infrared Line Tracking Range: 1&nbsp;cm to 5&nbsp;cm
 - Module Size: 15&nbsp;mm x 25&nbsp;mm
 
@@ -32,7 +34,7 @@ The RAK12017 is an IR detection module. This module uses ITR20001 optical switch
 
 #### Mounting
 
-The RAK12017 WisBlock IR Detection Module can be mounted to IO slot of the WisBlock Base board. **Figure 1** shows the mounting mechanism of the RAK12017 on a WisBlock Base board, such as the [RAK5005-O](https://store.rakwireless.com/products/rak5005-o-base-board).
+The RAK12017 WisBlock IR Detection Sensor Module can be mounted to the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. **Figure 1** shows the mounting mechanism of the RAK12017 on a WisBlock Base module.
 
 <rk-img
   src="/assets/images/wisblock/rak12017/datasheet/mounting.png"
@@ -45,14 +47,20 @@ The RAK12017 WisBlock IR Detection Module can be mounted to IO slot of the WisBl
 :::
 
 ### Hardware
-The hardware specification is categorized into four parts. It discusses the pinouts and their corresponding functions and diagrams of the module. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12017 WisBlock IR Detection Module.
+The hardware specification is categorized into four parts. It discusses the pinouts and their corresponding functions and diagrams of the module. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12017 WisBlock IR Detection Sensor Module.
+
+####  Chipset
+
+| Vendor    | Part number |
+| --------- | ----------- |
+| Everlight | ITR20001    |
 
 #### Pin Definition
 
-The RAK12017 WisBlock IR Detection Module comprises a standard WisIO connector. The WisIO connector allows the RAK12017 module to be mounted to a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 2**.
+The RAK12017 WisBlock IR Detection Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK12017 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
 ::: tip 📝 NOTE
-- **3V3_S**, **GND**, **AIN1**, **OUT** are connected to WisIO connector.
+- **3V3_S**, **GND**, **AIN1**, **OUT** are connected to WisConnector.
 :::
 
  <rk-img

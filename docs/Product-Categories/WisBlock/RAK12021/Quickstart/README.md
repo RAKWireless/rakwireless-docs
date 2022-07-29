@@ -22,6 +22,7 @@ Before going through each and every step on using the RAK12021 WisBlock module, 
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
+- [RAK19005 WisBlock Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005)
 - [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
 - [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
 
@@ -38,7 +39,7 @@ RAK12021 is a WisBlock RGB Sensor that extends the WisBlock system which is base
 
 For more information about RAK12021, refer to the [Datasheet](../Datasheet/).
 
-RAK12021 module can be connected to the sensor's slot of WisBlock Base to communicate with the WisBlock Core. It will work on **SLOT A, C, to F**. Also, always secure the connection of the WisBlock module by using compatible screws.
+RAK12021 module can be connected to the sensor's slot of [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) to communicate with the WisBlock Core, as shown in **Figure 1**. It will work on **SLOT A, C to F**. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12021/quickstart/rak12021-assembly.png"
@@ -51,7 +52,7 @@ RAK12021 module can be connected to the sensor's slot of WisBlock Base to commun
 
 ##### Assembling
 
-As shown in **Figure 2**, the location for Slot A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the module.
+As shown in **Figure 2**, the location for Slot A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the module.
 
 <rk-img
   src="/assets/images/wisblock/rak12021/quickstart/mounting-mechanism.png"
@@ -106,10 +107,9 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 #### Initial Test of the RAK12021 WisBlock Module
 
-If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
-
-1. You need to select first the WisBlock Core you have.
+2. You need to select first the WisBlock Core you have.
 
 **RAK4631 Board**
 
@@ -135,8 +135,9 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK11310 as WisBlock Core"
 />
 
-2. Next, copy the following sample code into your Arduino IDE:
+3. Next, copy the following sample code into your Arduino IDE:
 
+::: details Click Here to View Example Code
 ```c
 /**
    @file RAK12021_RGBC_Auto_Gain_TCS37725.ino
@@ -220,11 +221,12 @@ void loop()
 }
 
 ```
+:::
 ::: tip 📝 NOTE
-If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12021 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock). This sample code in Github will work on all WisBlock Core.
+If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12021 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12021_RGBC_TCS37725). This sample code in Github will work on all WisBlock Core.
 :::
 
-3. Once the example code is open, install the [RAK12021-TCS3772](https://github.com/RAKWireless/RAK12021-TCS37725) library by clicking the yellow-highlighted link, as shown in **Figure 9** and **Figure 10**.
+4. Once the example code is open, install the [RAK12021-TCS3772](https://github.com/RAKWireless/RAK12021-TCS37725) library by clicking the yellow-highlighted link, as shown in **Figure 9** and **Figure 10**.
 
 <rk-img
   src="/assets/images/wisblock/rak12021/quickstart/rak12021-lib.png"
@@ -239,7 +241,7 @@ If you experience any error in compiling the example sketch, check the updated c
 />
 
 
-4. After the successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
+5. After the successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
 
 ::: tip 📝 NOTE
 If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
@@ -257,7 +259,7 @@ If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the *
   caption="Uploading the RAK12021 example code"
 />
 
-4. When you have successfully uploaded the example sketch, open the serial monitor of the Arduino IDE and set the baud rate correctly. You will then see the sensor's output, as shown in **Figure 13**, and also the color values for Red, Green, Blue, and Clear. Therefore, your RAK12021 is properly communicating to the WisBlock core. 
+6. When you have successfully uploaded the example sketch, open the serial monitor of the Arduino IDE and set the baud rate correctly. You will then see the sensor's output, as shown in **Figure 13**, and also the color values for Red, Green, Blue, and Clear. Therefore, your RAK12021 is properly communicating to the WisBlock core. 
 
 <rk-img
   src="/assets/images/wisblock/rak12021/quickstart/rak12021-logs.png"

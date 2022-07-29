@@ -9,19 +9,19 @@ prev: ../Quickstart/
 next: false
 ---
 
-# RAK12003 WisBlock Infrared Temperature Sensor Datasheet
+# RAK12003 WisBlock Infrared Temperature Sensor Module Datasheet
 
 ## Overview
 
 <rk-img
   src="/assets/images/wisblock/rak12003/datasheet/RAK12003.png"
   width="50%"
-  caption="RAK12003 WisBlock Infrared Temperature Sensor "
+  caption="RAK12003 WisBlock Infrared Temperature Sensor Module "
 />
 
 ### Description
 
-The RAK12003 WisBlock Infrared Temperature Sensor is part of the RAKwireless WisBlock Series. It can be used for an accurate contactless thermal measurement for applications such as General purpose industry, temperature control of moving and hard to reach parts, body temperature measurement, non-contact thermometer for mobile and IoT application.
+The RAK12003 WisBlock Infrared Temperature Sensor Module is part of the RAKwireless WisBlock Series. It can be used for an accurate contactless thermal measurement for applications such as General purpose industry, temperature control of moving and hard to reach parts, body temperature measurement, non-contact thermometer for mobile and IoT application.
 
 ### Features 
 
@@ -33,7 +33,9 @@ The RAK12003 WisBlock Infrared Temperature Sensor is part of the RAKwireless Wis
   * 50&nbsp;° field of view
   * -20&nbsp;°C to 85&nbsp;°C operational temperature range
   * Refresh rate configurable between 0.5&nbsp;Hz to 64&nbsp;Hz
+  * Power Supply Voltage: 3.3V - 3.6V
   * Sleep current: < 2.5&nbsp;µA 
+  * Chipset: Melexis MLX90632SLD-DCB-000-RE
 
 * **Size**
     * 10 x 10&nbsp;mm
@@ -59,7 +61,7 @@ The refresh rate is the speed that the MLX90632 RAM will be updated with results
 
 #### Mounting
 
-The RAK12003 module can be mounted on slots A, B, C, or D of the WisBase board. Figure 2 shows the mounting mechanism of the RAK12003 on a WisBase module, such as the RAK5005-O.
+**Figure 2** shows the mounting mechanism of the RAK12003 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12003 module can be mounted on the slots: **A, B, C, D, E, & F**.
 
 <rk-img
   src="/assets/images/wisblock/rak12003/datasheet/RAK12003_mounting.png"
@@ -85,15 +87,15 @@ The hardware specification is categorized into five parts that cover the chipset
 
 #### Pin Definition
 
-The RAK12003 WisBlock Infrared Temperature Sensor comprises a standard WisIO connector. The WisIO connector allows the RAK12003 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the Pinout Definition is shown in Figure 4. 
+The RAK12003 WisBlock Infrared Temperature Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK12003 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 4**.
 
 :::tip 📝 NOTE:
-Only the I2C related pins, interrupt pins, VDD, and GND are connected to this module.
+Only the **I2C** related pins, **VDD**, and **GND** are connected to this module.
 :::
 
 <rk-img
-  src="/assets/images/wisblock/rak12003/datasheet/rak12003_connector_pinout.png"
-  width="50%"
+  src="/assets/images/wisblock/rak12003/datasheet/RAK12003_pinout.svg"
+  width="60%"
   caption="RAK12003 WisBlock Infrared Temperature Sensor connector pinout"
 />
 
@@ -146,6 +148,6 @@ Figure 5 shows the dimensions and the mechanic drawing of the RAK12003 module.
 />
 
 :::tip 📝 I2C address and pull-up
-By default, the ADDR pin is connected to GND, and R1, R2, R3 are not connected. WisBase board has pull-up resistors and the I2C 7-bit slave address is 0x3a.
+By default, the ADDR pin is connected to GND, and R1, R2, R3 are not connected. The WisBlock Base board has pull-up resistors and the I2C 7-bit slave address is 0x3a.
 :::
 

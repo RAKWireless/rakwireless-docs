@@ -22,11 +22,13 @@ The RAK12001 is a fingerprint sensor module based on GROW R307. This module supp
 
 - Fingerprint Sensor Module
 - Interface: UART
-- 3.3&nbsp;V Power supply (with built-in 5&nbsp;V boost converter)
 - Window dimension: 19&nbsp;mm x 21&nbsp;mm
 - Character file size: 256 bytes
 - Scanning speed: < 0.3 second
 - Verification speed: < 0.2 second
+- 3.3&nbsp;V Power supply (with built-in 5&nbsp;V boost converter)
+- Current Consumption: 50&nbsp;mA
+- Fingerprint Module: GROW R307
 - Module size: 10&nbsp;mm x 23&nbsp;mm
 
 ## Specifications
@@ -35,7 +37,7 @@ The RAK12001 is a fingerprint sensor module based on GROW R307. This module supp
 
 #### Mounting
 
-The RAK12001 WisBlock Fingerprint Sensor Module can be mounted to the sensor slot of the WisBlock Base board. **Figure 1** shows the mounting mechanism of the RAK12001 on a WisBlock Base board, such as the [RAK5005-O](https://store.rakwireless.com/products/rak5005-o-base-board).
+**Figure 1** shows the mounting mechanism of the RAK12001 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. It can be mounted on the double-size sensor slots with UART pins like slots **A, E, & F** (also on slot **C** but only with [RAK19003 Mini Base board](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK19003/Overview/#product-description)).
 
 <rk-img
   src="/assets/images/wisblock/rak12001/datasheet/mounting.png"
@@ -47,12 +49,18 @@ The RAK12001 WisBlock Fingerprint Sensor Module can be mounted to the sensor slo
 ### Hardware
 The hardware specification is categorized into four parts. It discusses the pinouts and their corresponding functions and diagrams of the module. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12001 WisBlock Fingerprint Sensor.
 
+#### Fingerprint Module
+
+| Vendor  | Part number |
+| ------- | ----------- |
+| GROW    |   R307      |
+
 #### Pin Definition
 
-The RAK12001 WisBlock Fingerprint Sensor comprises a standard WisBlock connector. The WisBlock connector allows the RAK12001 module to be mounted to a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 2**.
+The RAK12001 WisBlock Fingerprint Sensor comprises a standard WisBlock connector. The WisBlock connector allows the RAK12001 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
 ::: tip 📝 NOTE
-- **UART Tx/Rx** pins, **TOUCH**, **3V3_S**, and **GND** are connected to WisBlock Connector.
+- **UART Tx/Rx** pins, **TOUCH**, **3V3_S (optional)**, and **GND** are connected to WisBlock Connector.
 :::
 
  <rk-img
@@ -60,12 +68,6 @@ The RAK12001 WisBlock Fingerprint Sensor comprises a standard WisBlock connector
   width="80%"
   caption="RAK12001 WisBlock Fingerprint Sensor Module Pinout"
 />
-
-The following table shows the default IO used for different slots:
-
-| SLOT A | SLOT B | SLOT C | SLOT D | SLOT E | SLOT F |
-| ------ | ------ | ------ | ------ | ------ | ------ |
-| IO1    | IO2    | IO3    | IO5    | IO4    | IO6    |
 
 ::: tip 📝 NOTE
 - Slot B is not recommended because the IO2 pin is used to control power supply 3V3_S.

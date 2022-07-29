@@ -28,6 +28,7 @@ RAK12016 is a flex sensor module, a part of the RAKWireless WisBlock Sensor seri
 - Measure bending between 1 to 180 degrees
 - Accuracy to 1 degree
 - 3.3&nbsp;V Power Supply
+- Chipset: Spectrasymbol FS-L-0095-103-ST 
 - Module size: 15 X 25&nbsp;mm
 
 ## Specifications
@@ -36,7 +37,7 @@ RAK12016 is a flex sensor module, a part of the RAKWireless WisBlock Sensor seri
 
 #### Mounting
 
-The RAK12016 module can be mounted on the IO slot of the WisBlock Base board. **Figure 2** shows the mounting mechanism of the RAK12016 on a WisBlock Base module, such as the RAK5005-O.
+The RAK12016 WisBlock Flex Sensor Module can be mounted to the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. **Figure 2** shows the mounting mechanism of the RAK12016 on a WisBlock Base module.
 
 <rk-img
   src="/assets/images/wisblock/rak12016/datasheet/mounting-mechanism.png"
@@ -52,9 +53,15 @@ The RAK12016 module can be mounted on the IO slot of the WisBlock Base board. **
 
 The hardware specification is categorized into four parts. It discusses the pinouts and their corresponding functions and diagrams of the module. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK12016 WisBlock Module.
 
+####  Chipset
+
+|    Vendor     |   Part number    |
+| ------------- | ---------------- |
+| Spectrasymbol | FS-L-0095-103-ST |
+
 #### Pin Definition
 
-The RAK12016 module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 3**. 
+The RAK12016 WisBlock Flex Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK12016 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 <rk-img
   src="/assets/images/wisblock/rak12016/datasheet/rak12016-pinout.svg"

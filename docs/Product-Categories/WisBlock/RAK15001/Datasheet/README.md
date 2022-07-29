@@ -77,7 +77,7 @@ Only the **VDD**, **GND**, and **Standard SPI** related pins are connected to th
 
 <rk-img
   src="/assets/images/wisblock/rak15001/datasheet/RAK15001_Pinout.svg"
-  width="50%"
+  width="60%"
   caption="RAK15001 WisBlock NOR Flash Pinout Diagram"
 />
 

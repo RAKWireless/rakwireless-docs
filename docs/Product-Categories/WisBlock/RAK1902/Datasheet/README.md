@@ -9,20 +9,28 @@ prev: ../Quickstart/
 next: false
 ---
 
-# RAK1902 WisBlock Barometer Pressure Sensor Datasheet
+# RAK1902 WisBlock Barometer Pressure Sensor Module Datasheet
 
 ## Overview
 
+<rk-img
+  src="/assets/images/wisblock/rak1902/datasheet/RAK1902.svg"
+  width="50%"
+  caption="RAK1902 WisBlock Sensor"
+/>
+
 ### Description
 
-The RAK1902 WisBlock Sensor module, part of the RAK Wireless WisBlock series, is an ultra-compact piezo-resistive pressure sensor that functions as a digital barometer with an I2C interface. The sensing element, which detects absolute pressure, consists of a suspended membrane manufactured through a delicate process developed by ST®. The pressure measurement covers the range from 260&nbsp;hPa to 1260&nbsp;hPa and the temperature measurement covers the range from -40&nbsp;°C to 85&nbsp;°C. Measurements accuracy is ±0.1&nbsp;hPa for pressure and ±1.5&nbsp;°C for temperature.
+The RAK1902 WisBlock Barometer Pressure Sensor Module, part of the RAK Wireless WisBlock series, is an ultra-compact piezo-resistive pressure sensor that functions as a digital barometer with an I2C interface. The sensing element, which detects absolute pressure, consists of a suspended membrane manufactured through a delicate process developed by ST®. The pressure measurement covers the range from 260&nbsp;hPa to 1260&nbsp;hPa and the temperature measurement covers the range from -40&nbsp;°C to 85&nbsp;°C. Measurements accuracy is ±0.1&nbsp;hPa for pressure and ±1.5&nbsp;°C for temperature.
 
 ### Features 
 * **Pressure range**: 260-1260&nbsp;hPa
 * **Pressure sensor accuracy**: ±0.1&nbsp;hPa
 * **Temperature range**: -40&nbsp;°C to +85&nbsp;°C
 * **Temperature sensor accuracy**: ±1.5&nbsp;°C
-* **Typical power consumption**: 3&nbsp;uA  
+* **Voltage Suppply**: 3.3&nbsp;V
+* **Current Consumption**: 1&nbsp;uA to 12&nbsp;uA  
+* **Chipset**: ST LPS22HB
 * **Module Size**: 10 x 10&nbsp;mm
 
 ## Specifications
@@ -30,7 +38,8 @@ The RAK1902 WisBlock Sensor module, part of the RAK Wireless WisBlock series, is
 <!-- Insert Picture of Sensor with it's dimensions -->
 
 #### Mounting
-The RAK1902 module can be mounted on the slots: A, B, C, or D of the WisBase board. **Figure 1** shows the mounting mechanism of the RAK1902 on a WisBase module, such as the RAK5005-O.
+
+**Figure 2** shows the mounting mechanism of the RAK1902 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK1902 module can be mounted on the slots: **A, B, C, D, E, & F**.
 
 <rk-img
   src="/assets/images/wisblock/rak1902/datasheet/RAK19xx_mounting.png"
@@ -48,19 +57,24 @@ The hardware specification is categorized into four parts. It shows the chipset 
 | ST     | LPS22HB     |
 
 #### Pin Definition
-The RAK1902 WisBlock Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK1902 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the pinout definition are shown in **Figure 2**. 
 
-:::tip 📝 NOTE:
-
-Only the I2C related pins, VDD, and GND are connected to this module.
-
-:::
+The RAK1902 WisBlock Barometer Pressure Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK1902 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 <rk-img
-  src="/assets/images/wisblock/rak1902/datasheet/RAK1902_connector_pinout.png"
+  src="/assets/images/wisblock/rak1902/datasheet/RAK1902_pinout.svg"
   width="60%"
   caption="RAK1902 WisBlock Sensor connector pinout"
 />
+
+:::tip 📝 NOTE:
+Only the **I2C** related pins, **VDD**, and **GND** are connected to this module.
+:::
+
+If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse depends on what slot the module is plugged in. The following table shows the default IO used for different slots:
+
+| SLOT A | SLOT B  | SLOT C | SLOT D | SLOT E | SLOT F |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| WB_IO1 | WB_IO2 | WB_IO3 | WB_IO5 | WB_IO4 | WB_IO6 |
 
 #### Sensors
 ##### Pressure Sensor   
@@ -86,13 +100,13 @@ Only the I2C related pins, VDD, and GND are connected to this module.
 
 #### Electrical Characteristics
 ##### Recommended Operating Conditions
-| Symbol           | Description                   | Min. | Nom. | Max. | Unit |
-| ---------------- | ----------------------------- | :--: | :--: | :--: | :--: |
-| V<sub>DD</sub>   | Power supply for the module   | 1.7  |      | 3.6  |  V   |
-| I<sub>shut</sub> | shutdown current              |  -   |  1   |  -   |  uA  |
-| I<sub>DD</sub>   | @ ODR 1&nbsp;Hz LC_EN bit = 0 |  -   |  12  |  -   |  uA  |
-| I<sub>DD</sub>   | @ ODR 1&nbsp;Hz LC_EN bit = 1 |  -   |  3   |  -   |  uA  |
 
+| Symbol           | Description                   | Min.  | Nom.  | Max.  | Unit  |
+| ---------------- | ----------------------------- | :---: | :---: | :---: | :---: |
+| V<sub>DD</sub>   | Power supply for the module   |  1.7  |  3.3  |  3.6  |   V   |
+| I<sub>shut</sub> | shutdown current              |   -   |   1   |   -   |  uA   |
+| I<sub>DD</sub>   | @ ODR 1&nbsp;Hz LC_EN bit = 0 |   -   |  12   |   -   |  uA   |
+| I<sub>DD</sub>   | @ ODR 1&nbsp;Hz LC_EN bit = 1 |   -   |   3   |   -   |  uA   |
 
 #### Mechanical Characteristics
 

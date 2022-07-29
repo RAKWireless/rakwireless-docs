@@ -24,6 +24,7 @@ The RAK12009 is an Alcohol Gas Sensor module, part of the RAKWireless WisBlock S
 * I2C Interface, 7-bit I2C Address: 0x54
 * Detection Range: 25 to 500&nbsp;ppm (Alcohol Gas)
 * 3.3&nbsp;V or VBAT Power Supply
+* Chipset: Winsen MQ-3B
 * **Module size**: 25 x 35&nbsp;mm
 
 ## Specifications
@@ -32,7 +33,7 @@ The RAK12009 is an Alcohol Gas Sensor module, part of the RAKWireless WisBlock S
 
 #### Mounting
 
-The WisBlock MQ3 Alcohol Gas Sensor can be mounted to the sensor slot IO of a WisBlock Base board. Figure 1 shows the mounting mechanism of the RAK12009 on a WisBlock Base board, such as the RAK5005-O.
+The RAK12009 WisBlock MQ3 Alcohol Gas Sensor Module can be mounted to the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. **Figure 1** shows the mounting mechanism of the RAK12009 on a WisBlock Base module.
 
 <rk-img
   src="/assets/images/wisblock/rak12009/datasheet/image-20210225140319101.png"
@@ -52,11 +53,10 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 #### Pin Definition
 
-The WisBlock MQ3 Alcohol Gas Sensor module comprises a standard WisIO connector. The WisIO connector allows the RAK12009 module mounted to a WisBlock Base board, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
-
+The RAK12009 WisBlock MQ3 Alcohol Gas Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK12009 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
 :::tip 📝 NOTE:
-- **I2C** related pins, **ALERT**, **EN**, **VBAT**, **3V3**, and **GND** are connected to WisIO connector.
+- **I2C** related pins, **ALERT**, **EN**, **VBAT**, **3V3**, and **GND** are connected to WisConnector.
 - **VBAT** is the battery voltage input, max voltage is 4.2&nbsp;V.
 :::
 

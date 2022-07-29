@@ -22,10 +22,13 @@ Thank you for choosing **RAK12023 WisBlock Soil Moisture Sensor Connector Module
 * [40-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
 * [WisBlock IO Tutorial](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
 
+**Example**
+* [RAK12035_SoilMoisture](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12035_SoilMoisture)
+
 
 ## Product Description
 
-RAK12023 is a soil moisture connector module. It has one (1) standard WisBlock IO connector, which you can connect with the WisBlock Base such as RAK5005-O. It also has three (3) connectors dedicated to the RAK12035. RAK12035 is a separate soil moisture sensor probe that can be connected to the RAK12023 module. RAK12023 is capable of a connection of up to three RAK12035 soil moisture sensor probes simultaneously.
+RAK12023 is a soil moisture connector module. It has one (1) standard WisBlock IO connector, which you can connect with the WisBlock Base. It also has three (3) connectors dedicated to the RAK12035. RAK12035 is a separate soil moisture sensor probe that can be connected to the RAK12023 module. RAK12023 is capable of a connection of up to three RAK12035 soil moisture sensor probes simultaneously.
 
 ## Product Features
 
@@ -38,7 +41,7 @@ RAK12023 is a soil moisture connector module. It has one (1) standard WisBlock I
 
 ## Prerequisites
 
-To use a **RAK12023**, you need to connect at least one **RAK12035** Soil Moisture Sensor. You also need a **WisBlock Base** to plug the module in. **WisBlock Base** provides the power supply for the soil sensor module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK12023**, you need to connect at least one **RAK12035** Soil Moisture Sensor and a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12023** and **RAK12035**. Furthermore, you need a **WisBlock Core** module to use the connector.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.    

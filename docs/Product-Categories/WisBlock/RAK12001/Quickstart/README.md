@@ -19,11 +19,11 @@ Before going through each and every step on using RAK12001 WisBlock Fingerprint 
 
 #### Hardware
 
-- [RAK12001 WisBlock Fingerprint Sensor](https://store.rakwireless.com/products/rak12001-fingerprint-module?utm_source=RAK12001&utm_medium=Document&utm_campaign=BuyFromStore)
+- [RAK12001 WisBlock Fingerprint Sensor Module](https://store.rakwireless.com/products/rak12001-fingerprint-module?utm_source=RAK12001&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [RAK19008 WisBlock IO Extension Cable](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008)
+- [RAK19008 WisBlock IO Extension Cable (optional)](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008)
 - [Li-Ion/LiPo battery (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
 - [Solar charger (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
 
@@ -38,7 +38,7 @@ Before going through each and every step on using RAK12001 WisBlock Fingerprint 
 
 The RAK12001 is a fingerprint sensor module based on GROW R307. This module supports both fingerprint enrollment and fingerprint matching. For more information about RAK12001, refer to the [Datasheet](../Datasheet/).
 
-The RAK12001 WisBlock Fingerprint Sensor can be mounted on the IO slot of the WisBlock Base board, as shown in **Figure 1**. Also, always secure the connection of the WisBlock module by using compatible screws.
+RAK12001 module can be connected to the sensor's slot of [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) to communicate with the WisBlock Core, as shown in **Figure 1**. It can be mounted on the double-size sensor slots with UART pins like slots **A, E, & F** (also on slot **C** but only with [RAK19003 Mini Base board](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK19003/Overview/#product-description)). Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12001/quickstart/connection.png"
@@ -51,7 +51,7 @@ The RAK12001 WisBlock Fingerprint Sensor can be mounted on the IO slot of the Wi
 ##### Assembling
 
 
-As shown in **Figure 2**, the location for the sensor slots is properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
+As shown in **Figure 2**, the location for the sensor slots is properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12001/quickstart/mounting.png"
@@ -93,22 +93,21 @@ If you will connect other modules to the remaining WisBlock Base slots, check on
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
-:::warning ⚠️ WARNING
-
+::::warning ⚠️ WARNING
 - Batteries can cause harm if not handled properly.
 - Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
 - If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause a fire.
 - Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
-- Make sure the battery wires match the polarity on the RAK5005-O board. Not all batteries have the same wiring.
-
-:::
+- Make sure the battery wires match the polarity on the WisBlock Base board. Not all batteries have the same wiring.
+::::
 
 ### Software Configuration and Example
 
 In this example, you will be able to enroll and verify your fingerprint.
 
+1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
+2. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 
 <rk-img
   src="/assets/images/wisblock/rak12001/quickstart/selectboard4631.png"
@@ -129,7 +128,7 @@ In this example, you will be able to enroll and verify your fingerprint.
 />
 
 
-2. Copy the example code below:
+3. Copy the example code below:
 
 ::: details Click here to View Example
 ```c
@@ -664,10 +663,15 @@ void print_help(void)
 ```
 :::
 
-If you experience any error in compiling the example sketch, check the updated code for the RAK12001 WisBlock Fingerprint Sensor that can be found on the [RAK12001 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/sensor/).
+:::tip 📝 NOTE:
+If you experience any error in compiling the example sketch, check the updated code for the RAK12001 WisBlock Fingerprint Sensor that can be found on the [RAK12001 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12001_FingerPrint).
+:::
 
+4. Select the right Serial Port and upload the code, as shown in **Figure 9** and **Figure 10**.
 
-3. Select the right Serial Port and upload the code, as shown in **Figure 9** and **Figure 10**.
+::: tip 📝 NOTE
+If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak12001/quickstart/select_port.png"
@@ -680,10 +684,6 @@ If you experience any error in compiling the example sketch, check the updated c
   width="100%"
   caption="Uploading the sample code"
 />
-
-:::tip 📝 NOTE:
-RAK11200 requires the BOOT0 pin to be configured properly before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
-:::
 
 5. When you have successfully uploaded the sample code, you may open up your serial monitor, as shown in **Figure 11**.
 

@@ -19,9 +19,10 @@ Before going through each and every step on using the RAK14008 WisBlock module, 
 #### Hardware
 
 - [RAK14008 WisBlock Gesture Sensor Module](https://store.rakwireless.com/products/rak14008-wisblock-gesture-sensor?utm_source=RAK14008&utm_medium=Document&utm_campaign=BuyFromStore)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) with IO slot
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
+- [RAK19008 WisBlock IO Extension Cable (optional)](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008)
 - [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
 - [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
 
@@ -37,6 +38,9 @@ Before going through each and every step on using the RAK14008 WisBlock module, 
 RAK14008 is a gesture sensor module based on PAJ7620U2. It is designed for gesture recognition applications with an I2C digital interface. It can recognize nine (9) human hand gesticulations such as moving up, down, left, right, forward, backward, circle-clockwise, circle-counter clockwise, and waving. It also offers built-in proximity detection in sensing approaching or departing objects from the sensor.
 
 For more information about RAK14008, refer to the [Datasheet](../Datasheet/).
+
+RAK14008 module can be connected to the IO slot of [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) to communicate with the WisBlock Core, as shown in **Figure 1**. Also, always secure the connection of the WisBlock module by using compatible screws.
+
 
 <rk-img
   src="/assets/images/wisblock/rak14008/quickstart/rak14008-assembly.png"
@@ -103,10 +107,9 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 #### Initial Test of the RAK14008 WisBlock Module
 
-If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
-
-1. You need to select first the WisBlock Core you have.
+2. You need to select first the WisBlock Core you have.
 
 **RAK4631 Board**
 
@@ -132,8 +135,9 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK11310 as WisBlock Core"
 />
 
-2. Next, copy the following sample code into your Arduino IDE:
+3. Next, copy the following sample code into your Arduino IDE:
 
+::: details Click Here to View Example Code
 ```c
 /**
    @file RAK14008_Gesture_Recognize_PAJ7620.ino
@@ -253,13 +257,13 @@ void loop()
   delay(100);
 }
 
-
 ```
+:::
 ::: tip 📝 NOTE
-If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK14008 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock) and this sample code in Github will work on all WisBlock Core.
+If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK14008 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK14008_Gesture_PAJ7620) and this sample code in Github will work on all WisBlock Core.
 :::
 
-3. Once the example code is open, install the [PAJ7620](https://github.com/acrandal/RevEng_PAJ7620) library by clicking the yellow highlighted link, as shown in **Figure 9** and **Figure 10**.
+4. Once the example code is open, install the [PAJ7620](https://github.com/acrandal/RevEng_PAJ7620) library by clicking the yellow highlighted link, as shown in **Figure 9** and **Figure 10**.
 
 <rk-img
   src="/assets/images/wisblock/rak14008/quickstart/rak14008-lib.png"
@@ -274,7 +278,7 @@ If you experience any error in compiling the example sketch, check the updated c
 />
 
 
-4. After the successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
+5. After the successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
 
 ::: tip 📝 NOTE
 If you're using the RAK11200 as your WisBlock Core, the RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
@@ -292,7 +296,7 @@ If you're using the RAK11200 as your WisBlock Core, the RAK11200 requires the **
   caption="Uploading the RAK14008 example code"
 />
 
-4. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE, set the baud rate correctly, and once you have made a gesture or movement in front of the RAK14008 sensor, you'll be able to see the sensor's output as shown below in **Figure 13**. Therefore, your RAK14008 is properly communicating to the WisBlock core. 
+6. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE, set the baud rate correctly, and once you have made a gesture or movement in front of the RAK14008 sensor, you'll be able to see the sensor's output as shown below in **Figure 13**. Therefore, your RAK14008 is properly communicating to the WisBlock core. 
 
 <rk-img
   src="/assets/images/wisblock/rak14008/quickstart/rak14008-data.png"

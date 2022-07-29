@@ -117,9 +117,9 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 #### Initial Test of the RAK12013 WisBlock Module
 
-If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
-1. You need to select first the WisBlock Core you have.
+2. You need to select first the WisBlock Core you have.
 
 **RAK4631 Board**
 
@@ -145,8 +145,9 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK11310 as WisBlock Core"
 />
 
-2. Next, copy the following sample code into your Arduino IDE:
+3. Next, copy the following sample code into your Arduino IDE:
 
+::: details Click Here to View Example Code
 ```c
 /**
    @file RAK12013_Rader_3GHZ.ino
@@ -219,11 +220,13 @@ void loop()
 }
 
 ```
+:::
+
 ::: tip 📝 NOTE
 If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12013 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12013_Radar_3GHZ) and this sample code in Github will work on all WisBlock Core.
 :::
 
-3. Once the example code is open, you can now select the right serial port and upload the code, as shown in **Figure 10** and **Figure 11**.
+4. Once the example code is open, you can now select the right serial port and upload the code, as shown in **Figure 10** and **Figure 11**.
 
 ::: tip 📝 NOTE
 If you're using the RAK11200 as your WisBlock Core, the RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
@@ -241,7 +244,7 @@ If you're using the RAK11200 as your WisBlock Core, the RAK11200 requires the **
   caption="Uploading the RAK12013 example code"
 />
 
-4. When you successfully uploaded the example sketch, open the serial monitor of the Arduino IDE to see the sensor's reading logs, as shown in **Figure 12**. You'll be able to see that the led from your WisBlock Base board, lights into blue whenever there is movement or motion, and lights to green whenever there is no movement or motion at all. Therefore, your RAK12013 is properly communicating to the WisBlock core.
+5. When you successfully uploaded the example sketch, open the serial monitor of the Arduino IDE to see the sensor's reading logs, as shown in **Figure 12**. You'll be able to see that the led from your WisBlock Base board, lights into blue whenever there is movement or motion, and lights to green whenever there is no movement or motion at all. Therefore, your RAK12013 is properly communicating to the WisBlock core.
 
 <rk-img
   src="/assets/images/wisblock/rak12013/quickstart/rak12013-serial.png"

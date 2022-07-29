@@ -22,7 +22,7 @@ Thank you for choosing **RAK16000 WisBlock DC Current Module** in your awesome I
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK16000 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK16000.stp)
 * [40-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
-* [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
+* [WisBlock IO Tutorial](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
 
 **Example**
 * [Sample Code: Get DC current from sensor](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK16000_DcCurrent_INA219)
@@ -43,6 +43,7 @@ RAK16000 is a part of the WisBlock Sensor Series that is capable of measuring DC
   * 100&nbsp;mΩ shunt resistor can provide a resolution of up to 0.1&nbsp;mA
   * I2C interface
   * 3.3&nbsp;V Power Supply
+  * Chipset: Texas Instruments INA219BID
 
 * **Module Size**
     * 15 x 25&nbsp;mm
@@ -54,7 +55,7 @@ RAK16000 is a part of the WisBlock Sensor Series that is capable of measuring DC
 
 ## Prerequisites
 
-To use a **RAK16000**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK16000** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK16000**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK16000** module. Furthermore, you need a **WisBlock Core** module to use the module.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.    

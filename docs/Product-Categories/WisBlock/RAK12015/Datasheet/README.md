@@ -9,7 +9,7 @@ prev: ../Quickstart/
 next: false
 ---
 
-# RAK12015 WisBlock Vibration Detection Module Datasheet
+# RAK12015 WisBlock Vibration Detection Sensor Module Datasheet
 
 ## Overview
 
@@ -21,6 +21,7 @@ The RAK12015, a part of WisBlock Sensor, is a Vibration Detection Module that us
 
 - Vibration Detection
 - 3.3&nbsp;V Power Supply
+- Chipset: ANT-801S
 - Module Size: 15&nbsp;mm x 25&nbsp;mm
 
 
@@ -30,7 +31,7 @@ The RAK12015, a part of WisBlock Sensor, is a Vibration Detection Module that us
 
 #### Mounting 
 
-The RAK12015 module can be mounted to the IO slot of the WisBase board. **Figure 1** shows the mounting mechanism of the RAK12015 on a WisBase module, such as the [RAK5005-O](https://store.rakwireless.com/products/rak5005-o-base-board).
+The RAK12015 WisBlock Vibration Detection Sensor Module can be mounted to the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. **Figure 1** shows the mounting mechanism of the RAK12015 on a WisBlock Base module.
 
 <rk-img
   src="/assets/images/wisblock/rak12015/datasheet/mounting.png"
@@ -43,11 +44,18 @@ The sensor (ANT-801S) can be taken out of PCB by connector (J2 on PCB of RAK1201
 
 ### Hardware
 
-The hardware specification is categorized into four parts. It discusses the pinouts and its corresponding functions and diagrams of the module. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12015 WisBlock Vibration Detection Module.
+The hardware specification is categorized into four parts. It discusses the pinouts and its corresponding functions and diagrams of the module. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12015 WisBlock Vibration Detection Sensor Module.
+
+#### Chipset
+
+| Vendor | Part number |
+| ------ | ----------- |
+|        |  ANT-801S   |
 
 #### Pin Definition
 
-The RAK12015 WisBlock Vibration Detection Module comprises a standard WisIO connector. The WisIO connector allows the RAK12015 module to be mounted to a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
+The RAK12015 WisBlock Vibration Detection Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK12015 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 2**.
+
   ​                                       
 <rk-img
   src="/assets/images/wisblock/rak12015/datasheet/RAK12015_pinout.svg"
@@ -56,7 +64,7 @@ The RAK12015 WisBlock Vibration Detection Module comprises a standard WisIO conn
 />
 
 ::: tip 📝 NOTE
-- The **3V3_S**, **AIN1**, and **GND** are connected to WisIO connector.
+- The **3V3_S**, **AIN1**, and **GND** are connected to WisConnector.
 - **3V3_S** voltage output from the WisBlock Base that powers the RAK12015 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12015 module.
 :::
 

@@ -15,12 +15,12 @@ next: ../Datasheet/
 
 ### What Do You Need?
 
-Before going through each and every step on using RAK12017 WisBlock IR Sensor, make sure to prepare the necessary items listed below:
+Before going through each and every step on using RAK12017 WisBlock IR Detection Sensor Module, make sure to prepare the necessary items listed below:
 
 #### Hardware
 
-- [RAK12017 WisBlock IR Sensor](https://store.rakwireless.com/)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK12017 WisBlock IR Detection Sensor Module](https://store.rakwireless.com/)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) with IO slot
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
 - [RAK19008 WisBlock IO Extension Cable](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008)
@@ -38,7 +38,7 @@ Before going through each and every step on using RAK12017 WisBlock IR Sensor, m
 
 The RAK12017 is an IR detection module. This module uses ITR20001 optical switch from Everlight to detect whether the IR Signal reflects. For more information about RAK12017, refer to the [Datasheet](../Datasheet/).
 
-The RAK12017 WisBlock IR Sensor can be mounted on the IO slot of the WisBlock Base board, as shown in **Figure 1**. Also, always secure the connection of the WisBlock module by using compatible screws.
+RAK12017 module can be connected to the IO slot of [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) to communicate with the WisBlock Core, as shown in **Figure 1**. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12017/quickstart/connection.png"
@@ -51,7 +51,7 @@ The RAK12017 WisBlock IR Sensor can be mounted on the IO slot of the WisBlock Ba
 ##### Assembling
 
 
-As shown in **Figure 2**, the location for the IO slot is properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
+As shown in **Figure 2**, the location for the IO slot is properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12017/quickstart/mounting.png"
@@ -94,34 +94,36 @@ If you will connect other modules to the remaining WisBlock Base slots, check on
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
 :::warning ⚠️ WARNING
-
 - Batteries can cause harm if not handled properly.
 - Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
 - If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause a fire.
 - Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
-- Make sure the battery wires match the polarity on the RAK5005-O board. Not all batteries have the same wiring.
-
+- Make sure the battery wires match the polarity on the WisBlock Base board. Not all batteries have the same wiring.
 :::
 
 ### Software Configuration and Example
 
 In this example, you will be able to see if the IR Status is sensing or not using the Serial Monitor.
 
+1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
-1. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
+2. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 
+**RAK4631 Board**
 <rk-img
   src="/assets/images/wisblock/rak12017/quickstart/selectboard4631.png"
   width="100%"
   caption="Selecting RAK4631 as WisBlock Core"
 />
 
+**RAK11200 Board**
 <rk-img
   src="/assets/images/wisblock/rak12017/quickstart/selectboard11200.png"
   width="100%"
   caption="Selecting RAK11200 as WisBlock Core"
 />
 
+**RAK11310 Board**
 <rk-img
   src="/assets/images/wisblock/rak12017/quickstart/selectboard11300.png"
   width="100%"
@@ -129,8 +131,9 @@ In this example, you will be able to see if the IR Status is sensing or not usin
 />
 
 
-2. Copy the example code below.
+3. Copy the example code below.
 
+::: details Click Here to View Example Code
 ```c
 /**
    @file RAK12017_Detect_Switch.ino
@@ -183,11 +186,16 @@ void loop()
   delay(500);
 }
 ```
+:::
+::: tip 📝 NOTE
+If you experience any error in compiling the example sketch, check the updated code for the RAK12017 WisBlock IR Detection Sensor Module that can be found on the [RAK12017 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK12017_IR_ITR20001T/RAK12017_Detect_Switch/RAK12017_Detect_Switch.ino).
+:::
 
-If you experience any error in compiling the example sketch, check the updated code for the RAK12017 WisBlock IR Sensor that can be found on the [RAK12017 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK12017_IR_ITR20001T/RAK12017_Detect_Switch/RAK12017_Detect_Switch.ino).
+4. Select the right Serial Port and upload the code, as shown in **Figure 9** and **Figure 10**.
 
-
-3. Select the right Serial Port and upload the code, as shown in **Figure 9** and **Figure 10**.
+::: tip 📝 NOTE
+If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak12017/quickstart/select_port.png"
@@ -200,10 +208,6 @@ If you experience any error in compiling the example sketch, check the updated c
   width="100%"
   caption="Uploading the sample code"
 />
-
-:::tip 📝 NOTE:
-RAK11200 requires the BOOT0 pin to be configured properly before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
-:::
 
 5. When you have successfully uploaded the sample code, you may open up your serial monitor as shown in **Figure 11**.
 

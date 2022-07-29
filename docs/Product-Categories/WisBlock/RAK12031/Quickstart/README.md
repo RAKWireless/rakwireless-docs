@@ -35,11 +35,11 @@ Before going through each and every step on using the RAK12031 WisBlock module, 
 
 ### Hardware Setup
 
-RAK12031 is a WisBlock T-Beam-Fork (TBF) sensor module that is based on EE-SX1041 from Omron. It can detect the presence of small moving objects, measure the speed of rotation, linear motion, and more. RAK12031 is a separate TBF sensor and have two (2) connectors, which can be connected to the [RAK12028 TBF Connector module](/Product-Categories/WisBlock/RAK12028/Overview/) or by using a [RAK19005 WisBlock Sensor Extension Cable](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK19005/Overview/) to connect it to the WisBlock Base such as the RAK5005-O.
+RAK12031 is a WisBlock T-Beam-Fork (TBF) sensor module that is based on EE-SX1041 from Omron. It can detect the presence of small moving objects, measure the speed of rotation, linear motion, and more. RAK12031 is a separate TBF sensor and have two (2) connectors, which can be connected to the [RAK12028 TBF Connector module](/Product-Categories/WisBlock/RAK12028/Overview/) or by using a [RAK19005 WisBlock Sensor Extension Cable](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK19005/Overview/) to connect it to the WisBlock Base.
 
 For more information about RAK12031, refer to the [Datasheet](../Datasheet/).
 
-RAK12031 module can be connected to the sensor's slot of WisBlock Base to communicate with the WisBlock Core. It will work on **SLOT A, C to F**. Also, always secure the connection of the WisBlock module by using compatible screws.
+RAK12031 module can be connected to the sensor's slot of [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) to communicate with the WisBlock Core, as shown in **Figure 1**. It will work on **SLOT A, C to F**. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12031/quickstart/rak12031-assembly.png"
@@ -58,7 +58,7 @@ RAK12031 module can be connected to the sensor's slot of WisBlock Base to commun
 
 ##### Assembling
 
-As shown in **Figure 3**, the location for Slots A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the module.
+As shown in **Figure 3**, the location for Slots A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the module.
 
 <rk-img
   src="/assets/images/wisblock/rak12031/quickstart/mounting-mechanism.png"
@@ -113,10 +113,9 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 #### Initial Test of the RAK12031 WisBlock Module
 
-If you have already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
-
-1. You need to select first the WisBlock Core you have.
+2. You need to select first the WisBlock Core you have.
 
 **RAK4631 Board**
 
@@ -142,7 +141,9 @@ If you have already installed the [RAKwireless Arduino BSP](https://github.com/R
   caption="Selecting RAK11310 as WisBlock Core"
 />
 
-2. Next, copy the following sample code into your Arduino IDE:
+3. Next, copy the following sample code into your Arduino IDE:
+
+::: details Click Here to View Example Code
 
 ```c
 /**
@@ -222,11 +223,16 @@ void loop()
 }
 
 ```
+:::
 ::: tip 📝 NOTE
-If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12031 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock) and this sample code in Github will work on all WisBlock Core.
+If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12031 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12031_T_Fork_SX1041) and this sample code in Github will work on all WisBlock Core.
 :::
 
-3. Once the example code is open, you can now select the right serial port and upload the code, as shown in **Figure 10** and **Figure 11**.
+4. Once the example code is open, you can now select the right serial port and upload the code, as shown in **Figure 10** and **Figure 11**.
+
+::: tip 📝 NOTE
+If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak12031/quickstart/rak4631-selectport.png"
@@ -241,7 +247,7 @@ If you experience any error in compiling the example sketch, check the updated c
 />
 
 
-4. When you have successfully uploaded the example sketch, open the serial monitor of the Arduino IDE and set the baud rate correctly. You will be able to see the sensor's output, as shown in **Figure 12**. Try to place an object in the middle of the of T-Beam-Fork Sensor. If the presence of the object and the rotation speed, then your RAK12031 is properly communicating with the WisBlock core. 
+5. When you have successfully uploaded the example sketch, open the serial monitor of the Arduino IDE and set the baud rate correctly. You will be able to see the sensor's output, as shown in **Figure 12**. Try to place an object in the middle of the of T-Beam-Fork Sensor. If the presence of the object and the rotation speed, then your RAK12031 is properly communicating with the WisBlock core. 
 
 <rk-img
   src="/assets/images/wisblock/rak12031/quickstart/rak12031-data.png"

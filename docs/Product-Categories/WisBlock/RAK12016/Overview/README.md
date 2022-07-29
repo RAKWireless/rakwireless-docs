@@ -23,7 +23,10 @@ Thank you for choosing **RAK12016 WisBlock Flex Sensor Module** in your awesome 
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK12016 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK12016.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
-* [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
+* [WisBlock IO Tutorial](/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
+
+**Example**
+* [Sample Code: RAK12016_Flex_FSL0095103ST](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12016_Flex_FSL0095103ST)
 
 ## Product Description
 
@@ -35,13 +38,14 @@ RAK12016 is a flex sensor module, a part of the RAKWireless WisBlock Sensor seri
     * Measure bending between 1 to 180 degrees
     * Accuracy to 1 degree
     * 3.3&nbsp;V Power Supply
+    * Chipset: Spectrasymbol FS-L-0095-103-ST
 
 * **Size**
     * 15 x 25&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK12016**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK12016** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK12016**, you need at least a **FS-L-0095-103-ST Flex Sensor** and **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12016** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.    

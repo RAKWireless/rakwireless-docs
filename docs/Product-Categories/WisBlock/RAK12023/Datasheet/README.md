@@ -21,7 +21,7 @@ next: false
 
 ### Description
 
-RAK12023 is a soil moisture connector module. It has one (1) standard WisBlock IO connector, which you can connect with the WisBlock Base such as RAK5005-O. It also has three (3) connectors dedicated to the RAK12035. RAK12035 is a separate soil moisture sensor probe that can be connected to the RAK12023 module. RAK12023 is capable of a connection of up to three RAK12035 soil moisture sensor probes simultaneously.
+RAK12023 is a soil moisture connector module. It has one (1) standard WisBlock IO connector, which you can connect with the WisBlock Base. It also has three (3) connectors dedicated to the RAK12035. RAK12035 is a separate soil moisture sensor probe that can be connected to the RAK12023 module. RAK12023 is capable of a connection of up to three RAK12035 soil moisture sensor probes simultaneously.
 
 
 ### Features
@@ -36,7 +36,7 @@ RAK12023 is a soil moisture connector module. It has one (1) standard WisBlock I
 
 #### Mounting
 
-The RAK12023 module can be mounted on the IO slot of the WisBlock Base board. **Figure 2** shows the mounting mechanism of the RAK12023 on a WisBlock Base module, such as the RAK5005-O.
+The RAK12023 WisBlock Soil Sensor Connector Module can be mounted to the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. **Figure 2** shows the mounting mechanism of the RAK12023 on a WisBlock Base module.
 
 <rk-img
   src="/assets/images/wisblock/rak12023/datasheet/mounting-mechanism.png"
@@ -51,7 +51,7 @@ The hardware specification is categorized into three (3) parts. It discusses the
 
 #### Pin Definition
 
-The RAK12023 module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 3**. 
+The RAK12023 WisBlock Soil Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK12023 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 <rk-img
   src="/assets/images/wisblock/rak12023/datasheet/rak12023-pinout.svg"

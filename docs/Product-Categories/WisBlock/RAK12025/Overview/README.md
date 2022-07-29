@@ -31,7 +31,7 @@ For All WisBlock Core Modules:
 
 ## Product Description
 
-RAK12025 is a gyroscope module, part of the RAKWireless WisBlock Sensor series. The module is based on I3G4250D from ST. The I3G4250D is a low-power 3-axis angular rate sensor able to provide unprecedented stability at a zero-rate level and sensitivity over temperature and time. It includes a sensing element and a digital interface capable of providing the measured angular rate. With I3G4250D, RAK12025 can measure rotation speed and report data through a standard I2C digital interface. 
+RAK12025 is a gyroscope module, part of the RAKWireless WisBlock Sensor series. The module is based on I3G4250D from STMicroelectronics. The I3G4250D is a low-power 3-axis angular rate sensor able to provide unprecedented stability at a zero-rate level and sensitivity over temperature and time. It includes a sensing element and a digital interface capable of providing the measured angular rate. With I3G4250D, RAK12025 can measure rotation speed and report data through a standard I2C digital interface. 
 
 ## Product Features
 
@@ -41,13 +41,16 @@ RAK12025 is a gyroscope module, part of the RAKWireless WisBlock Sensor series. 
     * 16-bit rate value data output
     * 8-bit temperature data output
     * Two digital output lines (interrupt and data ready)
+    * Power Supply Voltage: 3.3&nbsp;V
+    * Current Consumption: 5&nbsp;uA - 6.1&nbsp;mA
+    * Chipset: STMicroelectronics I3G4250D
 
 * **Size**
     * 10 x 10&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK12025**, you need at least a **WisBlock Base board** to plug the module in. **WisBlock Base board** is the power supply for the **RAK12025** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK12025**, you need at least a **WisBlock Base board** to plug the module in. **WisBlock Base board** provides power supply to the **RAK12025** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.

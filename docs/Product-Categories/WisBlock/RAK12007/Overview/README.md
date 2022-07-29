@@ -12,9 +12,9 @@ tags:
 ---
 
 
-# RAK12007 WisBlock Ultrasonic Module
+# RAK12007 WisBlock Ultrasonic Sensor Module
 
-Thank you for choosing **RAK12007 WisBlock Ultrasonic Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK12007 WisBlock Ultrasonic Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK12007 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -23,12 +23,11 @@ Thank you for choosing **RAK12007 WisBlock Ultrasonic Module** in your awesome I
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK12007 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK12007.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
-* [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
+* [WisBlock IO Tutorial](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
 
 
 **Examples**
 
-For All WisBlock Core Modules:
 * [Sample Code: RAK12007 OLED Show Distance](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12007_OLED_Show_Distance/)
 
 ## Product Description
@@ -43,13 +42,15 @@ For an ultrasonic detector, there are two main parts: **Emitter** and **Detector
 
     * Detect range 2&nbsp;cm to 4&nbsp;m
     * 3.3&nbsp;V power supply
+    * Standby Current: < 170&nbsp;uA
+    * Chipset: angoSense CS100
 
 * **Size**
     * 25 x 48&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK12007**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK12007** module. Furthermore, you need a **WisBlock Core** module to develop your application for the **RAK12007** module.
+To use a **RAK12007**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12007** module. Furthermore, you need a **WisBlock Core** module to develop your application for the **RAK12007** sensor module.
 
 ::: warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.

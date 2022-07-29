@@ -9,7 +9,7 @@ prev: ../Quickstart/
 next: false
 ---
 
-# RAK12012 WisBlock Heart Rate Module Datasheet
+# RAK12012 WisBlock Heart Rate Sensor Module Datasheet
 
 ## Overview
 
@@ -26,6 +26,8 @@ The RAK12012, a part of WisBlock Sensor, is an integrated pulse oximetry and hea
 - Fast Data Output Capability  
 - -40&nbsp;°C to +85&nbsp;°C Operating Temperature Range  
 - 3.3&nbsp;V Power supply
+- Operating Current: 0.7 - 1200&nbsp;uA
+- Chipset: Maxim Integrated MAX30102
 - Module Size: 25&nbsp;mm x 35&nbsp;mm
 
 ## Specifications
@@ -34,12 +36,12 @@ The RAK12012, a part of WisBlock Sensor, is an integrated pulse oximetry and hea
 
 #### Mounting
 
-The RAK12012 Heart Rate module can be mounted to IO slot of the WisBlock Base board. **Figure 1** shows the mounting mechanism of the RAK12012 on a WisBlock Base board, such as the [RAK5005-O](https://store.rakwireless.com/products/rak5005-o-base-board).
+The RAK12012 WisBlock Heart Rate Sensor Module can be mounted to the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. **Figure 1** shows the mounting mechanism of the RAK12012 on a WisBlock Base module.
 
 <rk-img
   src="/assets/images/wisblock/rak12012/datasheet/mounting.png"
   width="60%"
-  caption="RAK12012 WisBlock Heart Rate Module Mounting"
+  caption="RAK12012 WisBlock Heart Rate Sensor Module Mounting"
 />
 
 With the [RAK19008 FPC Cable](https://store.rakwireless.com/)，RAK12012 can separated from the WisBlock Base board. The two (2) slots of the board are for the rubber bands. The rubber bands can help to press the sensor against the finger or wrist.
@@ -47,13 +49,13 @@ With the [RAK19008 FPC Cable](https://store.rakwireless.com/)，RAK12012 can sep
 <rk-img
   src="/assets/images/wisblock/rak12012/datasheet/rak12012-labels.svg"
   width="70%"
-  caption="RAK12012 WisBlock Heart Rate Module Mounting With Rubber Band"
+  caption="RAK12012 WisBlock Heart Rate Sensor Module Mounting With Rubber Band"
 />
 
 
 ### Hardware
 
-The hardware specification is categorized into five parts. It shows the chipset of the module and discusses the pinouts and its corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12012 WisBlock Heart Rate Module.
+The hardware specification is categorized into five parts. It shows the chipset of the module and discusses the pinouts and its corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12012 WisBlock Heart Rate Sensor Module.
 
 #### Chipset
 
@@ -64,8 +66,7 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 #### Pin Definition
 
-The RAK12012 WisBlock Heart Rate module comprises a standard WisIO connector. The WisIO connector allows the RAK12012 module to be mounted to a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 3**. 
-
+The RAK12012 WisBlock Heart Rate Sensor comprises a standard WisBlock connector. The WisBlock connector allows the RAK12012 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
  
 ::: tip 📝 NOTE
 - **I2C** related pins: **INT**,**3V3_S**, and **GND** are connected to WisIO connector.
@@ -75,7 +76,7 @@ The RAK12012 WisBlock Heart Rate module comprises a standard WisIO connector. Th
  <rk-img
   src="/assets/images/wisblock/rak12012/datasheet/rak12012_pinout.svg"
   width="80%"
-  caption="RAK12012 WisBlock Heart Rate Module Pinout"
+  caption="RAK12012 WisBlock Heart Rate Sensor Module Pinout"
 />
   
 
@@ -112,7 +113,7 @@ The RAK12012 WisBlock Heart Rate module comprises a standard WisIO connector. Th
  <rk-img
   src="/assets/images/wisblock/rak12012/datasheet/rak12012-dimension.svg"
   width="60%"
-  caption="RAK12012 WisBlock Heart Rate Module Dimensions"
+  caption="RAK12012 WisBlock Heart Rate Sensor Module Dimensions"
 />
 
 
@@ -134,7 +135,7 @@ The RAK12012 WisBlock Heart Rate module comprises a standard WisIO connector. Th
 <rk-img
   src="/assets/images/wisblock/rak12012/datasheet/power_supply.png"
   width="80%"
-  caption="RAK12012 WisBlock Heart Rate Module Power Supply"
+  caption="RAK12012 WisBlock Heart Rate Sensor Module Power Supply"
 />
 
 

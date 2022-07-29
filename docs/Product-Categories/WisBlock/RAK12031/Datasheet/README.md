@@ -21,11 +21,13 @@ next: false
 
 ### Description
 
-RAK12031 is a WisBlock T-Beam-Fork (TBF) sensor module that is based on EE-SX1041 from Omron. It can detect the presence of small moving objects, measure the speed of rotation, linear motion, and more. RAK12031 is a separate TBF sensor and have two (2) connectors, which can be connected to the [RAK12028 TBF Connector module](/Product-Categories/WisBlock/RAK12028/Overview/) or by using a [RAK19005 WisBlock Sensor Extension Cable](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK19005/Overview/) to connect it to the WisBlock Base such as the RAK5005-O.
+RAK12031 is a WisBlock T-Beam-Fork (TBF) sensor module that is based on EE-SX1041 from Omron. It can detect the presence of small moving objects, measure the speed of rotation, linear motion, and more. RAK12031 is a separate TBF sensor and have two (2) connectors, which can be connected to the [RAK12028 TBF Connector module](/Product-Categories/WisBlock/RAK12028/Overview/) or by using a [RAK19005 WisBlock Sensor Extension Cable](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK19005/Overview/) to connect it to the WisBlock Base.
 
 
 ### Features
 
+- Operating Voltage: 3.3&nbsp;V
+- Chipset: Omron EE-SX1041
 - T-Fork module
 - Detect presence of small moving objects
 - Method for measurement velocity with grating
@@ -39,16 +41,22 @@ RAK12031 is a WisBlock T-Beam-Fork (TBF) sensor module that is based on EE-SX104
 
 #### Mounting
 
-The RAK12031 has four (4) mounting holes, so you can fix the module in the position you want and it can also be connected to RAK12028 or RAK19005 to connect it to the WisBlock Base, such as the RAK5005-O.
+The RAK12031 has four (4) mounting holes, so you can fix the module in the position you want. It can also be connected to [RAK12028](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK12028/Overview/#product-description) or you can use a [RAK19005 WisBlock Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005) to connect it directly to the WisBlock Base.
 
 ### Hardware
 
 The hardware specification is categorized into four (4) parts. It discusses the pinouts and their corresponding functions and diagrams of the module. Also, it shows the electrical and mechanical characteristics of the RAK12031 WisBlock T-Beam-Fork Sensor Module.
 
+####  Chipset
+
+| Vendor | Part number |
+| ------ | ----------- |
+| Omron  | EE-SX1041   |
+
 
 #### Pin Definition
 
-The RAK12031 module has two (2) connectors, one standard 24-pin WisBlock Sensor connector and the other one is the 6-pin connector that can be connected to the RAK12028. The pin order of the 24-pin WisBlock Sensor connector and the pinout definition are shown in **Figure 2**. 
+The RAK12031 module has two (2) connectors, one standard 24-pin WisBlock Sensor connector and the other one is the 6-pin connector that can be connected to the RAK12028. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
 
 <rk-img
   src="/assets/images/wisblock/rak12031/datasheet/rak12031-pinouts.svg"
@@ -57,10 +65,10 @@ The RAK12031 module has two (2) connectors, one standard 24-pin WisBlock Sensor 
 />
 
 If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse depends on what slot the module is plugged in. The following table shows the default IO used for different slots:
-  
+
 | SLOT A | SLOT C | SLOT D | SLOT E | SLOT F |
 | :----: | :----: | :----: | :----: | :----: |
-|  IO1   |  IO3   |  IO5   |  IO4   |  IO6   |
+| WB_IO1 | WB_IO3 | WB_IO5 | WB_IO4 | WB_IO6 |
 
 ::: tip 📝 NOTE
 - Only **3V3_S**, **GND**, and **OUTPUT** signal from EE-SX1041 are connected to the two (2) connectors of the module.

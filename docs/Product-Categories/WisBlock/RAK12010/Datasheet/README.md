@@ -25,6 +25,8 @@ RAK12010 is a WisBlock Sensor that extends the WisBlock system to have ambient l
 - **Ambient Light Resolution:** 0.0036&nbsp;lx
 - Excellent temperature compensation
 - 3.3&nbsp;V Power Supply
+- Current Consumption: < 2 - 45&nbsp;uA
+- Chipset: Vishay Semiconductors VEML7700
 - **Module size:** 10 X 10&nbsp;mm
 
 ## Specifications
@@ -33,7 +35,7 @@ RAK12010 is a WisBlock Sensor that extends the WisBlock system to have ambient l
 
 #### Mounting
 
-The RAK12010 module can be mounted on sensor slots: **A , B, C, or D** of the WisBlock Base board. **Figure 1** shows the mounting mechanism of the RAK12010 on a WisBlock Base module, such as the RAK5005-O.
+**Figure 1** shows the mounting mechanism of the RAK12010 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12010 module can be mounted on the slots: **A, B, C, D, E, & F**.
 
 <rk-img
   src="/assets/images/wisblock/rak12010/datasheet/mounting-mechanism.png"
@@ -52,7 +54,7 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 #### Pin Definition
 
-The RAK12010 module has a 24-pin WisConnector that is compatible to the WisBlock Base Sensor's Slot. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
+The RAK12010 WisBlock Ambient Light Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK12010 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
 
 <rk-img
   src="/assets/images/wisblock/rak12010/datasheet/rak12010_pinout.svg"
@@ -64,7 +66,7 @@ The RAK12010 module has a 24-pin WisConnector that is compatible to the WisBlock
 - Only **I2C** related pins, **3V3_S**, and **GND** are connected to the WisConnector.
 
 - **3V3_S** voltage output from the WisBlock Base that powers the RAK12010 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12010 module.
-:::  
+::: 
 
 #### Electrical Characteristics
 

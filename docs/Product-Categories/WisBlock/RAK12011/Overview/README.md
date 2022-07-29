@@ -24,6 +24,10 @@ Thank you for choosing **RAK12011 WisBlock Barometer WT Sensor Module** in your 
 * [24-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 
+**Example**
+
+[Sample Code: RAK12011_MEMS_Pressure_LPS33HW](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12011_MEMS_Pressure_LPS33HW)
+
 ## Product Description
 
 The RAK12011 is a Barometric Pressure sensor module that is part of the RAKWireless WisBlock Sensor series. It uses an LPS33HW MEMS sensor from STMicroelectronics with both barometric pressure and temperature data obtainable via an I2C interface. The pressure sensor has a water-resistant package and is combined with the three-proof paint in the RAK12011 PCB. This makes the module ideal on a barometric air pressure data acquisition system even in an environment prone to water exposure.
@@ -39,13 +43,16 @@ The RAK12011 is a Barometric Pressure sensor module that is part of the RAKWirel
     * Embedded Temperature Compensation
     * Low current consumption down to 3&nbsp;μA 
     * Via I2C interface
+    * Supply Voltage: 3.3&nbsp;V
+    * Current Consumption: 1-15&nbsp;uA
+    * Chipset: STMicroelectronics LPS33HW
 
 * **Size**
     * 10 x 10&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK12011**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK12011** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
+To use a **RAK12011**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12011** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.    

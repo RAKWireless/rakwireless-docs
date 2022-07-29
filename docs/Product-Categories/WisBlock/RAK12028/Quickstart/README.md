@@ -22,6 +22,7 @@ Before going through each and every step on using the RAK12028 WisBlock module, 
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
+- [RAK19005 WisBlock Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005)
 - [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
 - [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
 
@@ -34,11 +35,11 @@ Before going through each and every step on using the RAK12028 WisBlock module, 
 
 ### Hardware Setup
 
-RAK12028 is a Through-Beam-Fork (TBF) connector module. It has one (1) standard WisBlock sensor connector, which you can connect with the WisBlock Base such as RAK5005-O. It also has one (1) 6-pins connector dedicated to the RAK12031. The [RAK12031](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK12031/Overview/) is a separate Through-Beam-Fork sensor that can be connected to the RAK12028 connector module using a cable.
+RAK12028 is a Through-Beam-Fork (TBF) connector module. It has one (1) standard WisBlock sensor connector, which you can connect with the WisBlock Base. It also has one (1) 6-pins connector dedicated to the RAK12031. The [RAK12031](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK12031/Overview/) is a separate Through-Beam-Fork sensor that can be connected to the RAK12028 connector module using a cable.
 
 For more information about RAK12028, refer to the [Datasheet](../Datasheet/).
 
-RAK12028 module can be connected to the sensor's slot of WisBlock Base to communicate with the WisBlock Core. It will work on **SLOT A, C to F**. Also, always secure the connection of the WisBlock module by using compatible screws.
+RAK12028 module can be connected to the sensor's slot of [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) to communicate with the WisBlock Core, as shown in **Figure 1**. It will work on **SLOT A, C to F**. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12028/quickstart/rak12028-assembly.png"
@@ -51,7 +52,7 @@ RAK12028 module can be connected to the sensor's slot of WisBlock Base to commun
 
 ##### Assembling
 
-As shown in **Figure 2**, the location for Slots A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the module.
+As shown in **Figure 2**, the location for Slots A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the module.
 
 <rk-img
   src="/assets/images/wisblock/rak12028/quickstart/mounting-mechanism.png"

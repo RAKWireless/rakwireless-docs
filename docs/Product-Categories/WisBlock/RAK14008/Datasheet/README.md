@@ -29,6 +29,7 @@ RAK14008 is a gesture sensor module based on PAJ7620U2. It is designed for gestu
 - Ambient light noise cancellation
 - VBAT：3.2-5.5&nbsp;V
 - VCC：2.8-3.3&nbsp;V
+- Chipset: PixArt Imaging PAJ7620U2
 - Operating Temperature: -40&nbsp;°C ~ 85&nbsp;°C
 - Storage Temperature :-40&nbsp;°C ~ 125&nbsp;°C
 - Module size: 25 X 15&nbsp;mm
@@ -39,7 +40,7 @@ RAK14008 is a gesture sensor module based on PAJ7620U2. It is designed for gestu
 
 #### Mounting
 
-The RAK14008 module can be mounted on the IO slot of the WisBlock Base board. **Figure 1** shows the mounting mechanism of the RAK14008 on a WisBlock Base module, such as a RAK5005-O.
+The RAK14008 WisBlock Gesture Sensor Module can be mounted to the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. **Figure 1** shows the mounting mechanism of the RAK14008 on a WisBlock Base module.
 
 <rk-img
   src="/assets/images/wisblock/rak14008/datasheet/mounting-mechanism.png"
@@ -51,9 +52,15 @@ The RAK14008 module can be mounted on the IO slot of the WisBlock Base board. **
 
 The hardware specification is categorized into four parts. It discusses the pinouts and their corresponding functions and diagrams of the module. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK14008 WisBlock Module.
 
+####  Chipset
+
+| Vendor         | Part number |
+| -------------- | ----------- |
+| PixArt Imaging | PAJ7620U2   |
+
 #### Pin Definition
 
-The RAK14008 WisBlock module has a 40-pin WisConnector that is compatible with the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
+The RAK14008 WisBlock Gesture Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK14008 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisblock/rak14008/datasheet/RAK14008_Pinout.svg"

@@ -11,9 +11,9 @@ tags:
     - MLX90632
 ---
 
-# RAK12003 WisBlock Infrared Temperature Sensor
+# RAK12003 WisBlock Infrared Temperature Sensor Module
 
-Thank you for choosing **RAK12003 WisBlock Infrared Temperature Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK12003 WisBlock Infrared Temperature Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
 
 * [RAK12003 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -25,13 +25,11 @@ Thank you for choosing **RAK12003 WisBlock Infrared Temperature Sensor** in your
 
 **Examples**: 
 
-For All WisBlock Core Modules:
-
 * [Sample Code: WisBlock Infrared Temperature Sensor Module](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12003_FIR_MLX90632)
 
 ## Product Description
 
-The RAK12003 WisBlock Infrared Temperature Sensor is part of the RAKwireless WisBlock Series. It can be used for an accurate contactless thermal measurement for applications such as General purpose industry, temperature control of moving and hard to reach parts, body temperature measurement, non-contact thermometer for mobile and IoT application.
+The RAK12003 WisBlock Infrared Temperature Sensor Module is part of the RAKwireless WisBlock Series. It can be used for an accurate contactless thermal measurement for applications such as General purpose industry, temperature control of moving and hard to reach parts, body temperature measurement, non-contact thermometer for mobile and IoT application.
 
 
 ## Product Features
@@ -44,14 +42,16 @@ The RAK12003 WisBlock Infrared Temperature Sensor is part of the RAKwireless Wis
   * 50&nbsp;° field of view
   * -20&nbsp;°C to 85&nbsp;°C operational temperature range
   * Refresh rate configurable between 0.5&nbsp;Hz to 64&nbsp;Hz
+  * Power Supply Voltage: 3.3V - 3.6V
   * Sleep current: < 2.5&nbsp;µA 
+  * Chipset: Melexis MLX90632SLD-DCB-000-RE
 
 * **Size**
     * 10 x 10&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK12003**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK12003** module. Furthermore, you need a **WisBlock Core** module to use the module.
+To use a **RAK12003**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12003** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with the screws to ensure a proper function.

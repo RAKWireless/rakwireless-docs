@@ -22,7 +22,7 @@ Thank you for choosing **RAK12029 WisBlock Inductive Sensor Module** in your awe
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK12029 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK12029.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
-* [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
+* [WisBlock IO Tutorial](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
 
 
 **Examples**
@@ -43,6 +43,8 @@ RAK12029 is a metal detection sensor module based on the LDC1614 from Texas Inst
 * 28-bit LDC
 * Immunity to DC magnetic fields and magnets
 * 3.3&nbsp;V Power supply
+* Operating Current: 0.2&nbsp;uA to 2.1&nbsp;mA
+* Chipset: Texas Instruments LDC1614
 * **Module size**: 25 x 35&nbsp;mm
 
 ## Prerequisites

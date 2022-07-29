@@ -5,6 +5,12 @@ rak_img: /assets/rakwireless/RAK-favicon-blue.png
 
 # Getting Started
 
+:::tip 📝 NOTE:
+This document is about RUI V2. The development of this framework is already discontinued. RUI V2 is only compatible to old modules RAK811, RAK4200, RAK4600 and RAK4270.
+
+[RUI3](/RUI3/#overview) is the new version of RAKwireless Unified Interface and primarily supports RAK3172, RAK3172-SiP and RAK4630. RUI3 is not compatible to old RAK modules.
+:::
+
 ## Overview
 
 RAKwireless is a leading provider of low-power, wide-area Internet of Things (IoT) solutions in the industry. It provides from basic modules to complex but modular solutions for the IoT, smart city, and smart agriculture sectors.

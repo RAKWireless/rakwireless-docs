@@ -27,6 +27,9 @@ The RAK12011 is a Barometric Pressure sensor module that is part of the RAKWirel
 - Embedded Temperature Compensation
 - Low current consumption down to 3&nbsp;μA
 - Via I2C interface
+- Supply Voltage: 3.3&nbsp;V
+- Current Consumption: 1-15&nbsp;uA
+- Chipset: STMicroelectronics LPS33HW
 - **Module size: 10** X 10&nbsp;mm
 
 ## Specifications
@@ -35,7 +38,11 @@ The RAK12011 is a Barometric Pressure sensor module that is part of the RAKWirel
 
 #### Mounting
 
-The RAK12011 module can be mounted on the sensor slots: **A, B, C, or D** of the WisBlock Base board. **Figure 1** shows the mounting mechanism of the RAK12011 on a WisBlock Base module, such as the RAK5005-O.
+**Figure 1** shows the mounting mechanism of the RAK12011 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12011 module can be mounted on the slots: **A, C, D, E, & F**.
+
+:::tip 📝 NOTE:
+RAK12011 has one digital output line, so you need one GPIO from WisBlock Core. It means RAK12011 should be used on a sensor slot with one available GPIO. However, WB_IO2 is used to control 3V3_S. Hence, RAK12011 is used only on slots without WB_IO2 like sensor slots A, C to F on WisBlock Base board. 
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak12011/datasheet/mounting-mechanism.png"
@@ -55,7 +62,7 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 #### Pin Definition
 
-The RAK12011 module has a 24-pin WisConnector that is compatible to the WisBlock Sensor's Slot. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
+The RAK12011 WisBlock Fingerprint Sensor comprises a standard WisBlock connector. The WisBlock connector allows the RAK12011 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisblock/rak12011/datasheet/rak12011_pinout.svg"
@@ -68,8 +75,17 @@ The RAK12011 module has a 24-pin WisConnector that is compatible to the WisBlock
 
 - **3V3_S** voltage output from the WisBlock Base that powers the RAK12011 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12011 module.
 
-- RAK12011 can work in a wet environment, but the WisBlock Base module, such as the RAK5005-O is not water-resistant. You can use an extension cable like the [RAK19005 FPC Cable](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005?_pos=1&_sid=b3ef15d4e&_ss=r) to position your RAK12011 sensor apart from the WisBlock Base module.
+- RAK12011 can work in a wet environment, but the WisBlock Base board is not water-resistant. You can use an extension cable like the [RAK19005 FPC Cable](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005?_pos=1&_sid=b3ef15d4e&_ss=r) to position your RAK12011 sensor apart from the WisBlock Base module.
 :::  
+
+If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse depends on what slot the module is plugged in. The following table shows the default IO used for different slots:
+
+The table below shows the default IOs used for different slots using INT:  
+
+| SLOT A | SLOT C | SLOT D | SLOT E | SLOT F |
+| -------| ------ | ------ | ------ | ------ |
+| WB_IO1 | WB_IO3 | WB_IO5 | WB_IO4 | WB_IO6 |
+
 
 #### Electrical Characteristics
 

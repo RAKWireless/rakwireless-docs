@@ -27,6 +27,8 @@ The VL53L0X's 940&nbsp;nm VCSEL emitter (Vertical-Cavity Surface-Emitting Laser)
 - I2C Interface
 - Xshutdown (reset) and interrupt GPIO
 - 2.6&nbsp;V ~ 3.5&nbsp;V power supply
+- Current Consumption: 3&nbsp;uA - 19&nbsp;mA
+- Chipset: STMicroelectronics VL53L0X
 - Module Size: 10&nbsp;mm x 10&nbsp;mm
 
 ## Specifications
@@ -35,7 +37,7 @@ The VL53L0X's 940&nbsp;nm VCSEL emitter (Vertical-Cavity Surface-Emitting Laser)
 
 #### Mounting
 
-The RAK12014 WisBlock ToF Sensor Module can be mounted to the IO slot of the WisBlock Base board. **Figure 1** shows the mounting mechanism of the RAK12014 on a WisBlock Base board, such as the [RAK5005-O](https://store.rakwireless.com/products/rak5005-o-base-board).
+**Figure 1** shows the mounting mechanism of the RAK12014 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12014 module can be mounted on the slots: **C, D, E, & F**.
 
 <rk-img
   src="/assets/images/wisblock/rak12014/datasheet/mounting.png"
@@ -48,12 +50,19 @@ The RAK12014 WisBlock ToF Sensor Module can be mounted to the IO slot of the Wis
 
 The hardware specification is categorized into four parts. It shows the pinouts and their corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12014 WisBlock ToF Sensor Module.
 
+#### Chipset
+
+| Vendor             | Part number |
+| ------------------ | ----------- |
+| STMicroelectronics |   VL53L0X   |
+
 #### Pin Definition
 
-The RAK12014 WisBlock ToF Sensor Module comprises a standard WisIO connector. The WisIO connector allows the RAK12014 module to be mounted to a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 2**.
+The RAK12014 WisBlock ToF Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK12014 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
 ::: tip 📝 NOTE
 - **I2C** related pins: **XSHUT(RESET)**, **INT**, **3V3_S**, and **GND** are connected to WisBlock connector.
+- **3V3_S** voltage output from the WisBlock Base that powers the RAK12014 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12014 module.
 :::
 
  <rk-img
@@ -61,7 +70,21 @@ The RAK12014 WisBlock ToF Sensor Module comprises a standard WisIO connector. Th
   width="70%"
   caption="RAK12014 WisBlock ToF Sensor Module Pinout"
 />
-  
+
+If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse depends on what slot the module is plugged in. The following table shows the default IO used for different slots:
+
+**INT (Interrupt Pin)**
+
+| SLOT C | SLOT D | SLOT E | SLOT F |
+| ------ | ------ | ------ | ------ |
+| WB_IO3 | WB_IO5 | WB_IO4 | WB_IO6 |
+
+**SHUT (Shutdown Pin)**
+
+| SLOT C | SLOT D | SLOT E | SLOT F |
+| ------ | ------ | ------ | ------ |
+| WB_IO4 | WB_IO6 | WB_IO3 | WB_IO5 |
+
 
 #### Electrical Characteristics
 

@@ -60,8 +60,14 @@ The overview covers the RAK4631-R board overview and the mounting mechanics of t
 
 <rk-img
   src="/assets/images/wisblock/rak4631/datasheet/rak4631overview.png"
-  width="80%"
+  width="65%"
   caption="RAK4631-R Overview"
+/>
+
+<rk-img
+  src="/assets/images/wisblock/rak4631/datasheet/rak4630-rak4631.png"
+  width="30%"
+  caption="RAK4630 in RAK4631-R WisBlock Core"
 />
 
 <!---
@@ -82,7 +88,7 @@ Add these two images when the illustrations are correct already.
 
 #### Mounting Sketch
 
-The RAK4631-R module is designed to work with Wisblock Base Boards. **Figure 2** shows how a RAK4631-R module should be mounted on top of the WisBlock RAK5005-O Base Board.
+The RAK4631-R module is designed to work with Wisblock Base Boards. **Figure 3** shows how a RAK4631-R module should be mounted on top of the WisBlock RAK5005-O Base Board.
 
 <rk-img
   src="/assets/images/wisblock/rak4631/datasheet/mounting-sketch.png"
