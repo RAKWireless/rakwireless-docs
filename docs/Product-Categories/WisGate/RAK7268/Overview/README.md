@@ -11,7 +11,6 @@ tags:
 
 # RAK7268 WisGate Edge Lite 2
 
-
 Thank you for choosing **RAK7268 WisGate Edge Lite 2** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)

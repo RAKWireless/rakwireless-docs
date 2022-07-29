@@ -11,14 +11,7 @@ next: ../Datasheet/
 
 # RAK13101 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock RAK13101 GSM/GPRS Module and how to start using it.
-
-The example in this guide will allow you to send AT commands to the Quectel MC20CE module via USB connection using serial terminal.
-
--->
 
 ## Prerequisite
 

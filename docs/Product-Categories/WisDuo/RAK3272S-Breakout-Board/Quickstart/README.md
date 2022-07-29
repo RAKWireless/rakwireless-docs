@@ -509,7 +509,6 @@ If there is no `OK` or any reply, you need to check if the wiring of your UART l
   caption="at+version command response"
 />
 
-
 2. The next step is to configure the OTAA LoRaWAN parameters in RAK3272S: 
 
 - LoRa work mode: **LoRaWAN**
@@ -573,7 +572,6 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
   width="90%"
   caption="Configuring LoRa Parameters"
 />
-
 
 3. After the configuration of the LoRaWAN parameters, the next step is to set up the EUIs and key. You need the use the values from the TTN console. 
 
@@ -751,7 +749,6 @@ If there is no `OK` or any reply, you need to check if the wiring of your UART l
   caption="at+version command response"
 />
 
-
 2. The next step is to configure the ABP LoRaWAN parameters in RAK3272S: 
 
 - LoRa work mode: **LoRaWAN**
@@ -860,7 +857,6 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
 | z         | Number of join attempts (0-255) - 0 is default.              |
-
 
 5. With the end-device properly activated, you can now try to send some payload after successful join.
 
@@ -990,7 +986,6 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   width="100%"
   caption="Chirpstack Adding Node into the RAK3272S Module"
 />
-
 
 6. Once the node is created, fill in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
 
@@ -1152,7 +1147,6 @@ AT+BAND=4
   caption="Configuring LoRa Parameters"
 />
 
-
 3. After the configuration of the LoRaWAN parameters, the next step is to set up the DevEUI and AppKey. You need the use the values from the Chirpstack device console. 
 
 :::tip 📝 NOTE:
@@ -1162,7 +1156,6 @@ The Application EUI parameter is not required in the ChirpStack platform; theref
 - Device EUI: **5E9D1E0857CF25F1**
 - Application EUI: **5E9D1E0857CF25F1**
 - Application Key: **F921D50CD7D02EE3C5E6142154F274B2**
-
 
 Set the Device EUI.
 
@@ -1202,7 +1195,6 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | x         | Auto-join config - 1: auto-join on powerup, 0: no auto-join |
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.   |
 | z         | Number of join attempts (0-255) - 0 is default.             |
-
 
 5. After 5 or 6 seconds, if the request is successfully received by a LoRaWAN gateway, then you should see JOINED status reply.
 
@@ -1254,7 +1246,6 @@ Check “**Disable counting frame verification**”. During the test, when the b
   caption="ChirpStack Console, Configuring a Device"
 />
 
-
 2. After selecting the ABP mode, the following parameters appear in the Activation tab, then you can see that there are some parameters for ABP in the **“ACTIVATION”** item:
 
   * **Device address**
@@ -1298,7 +1289,6 @@ If there is no `OK` or any reply, you need to check if the wiring of your UART l
   width="90%"
   caption="at+version command response"
 />
-
 
 2. The next step is to configure the ABP LoRaWAN parameters in RAK3272S: 
 
@@ -1369,7 +1359,6 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 - Device Address: **26011AF9**
 - Application Session Key: **4D42EC5CAF97F03D833CDAf5003F69E1**
 - Network Session Key: **C280CB8D1DF688BC18601A97025C5488**
-
 
 Set the Device Address.
 
@@ -1498,7 +1487,6 @@ Refer to the [P2P Mode](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Co
   width="90%"
   caption="Configuring P2P in both RAK3272S Breakout Board"
 />
-
 
 2. To set one module as a receiver (RX), you need to set the value of the P2P receive command to 65535.
 
@@ -1660,7 +1648,6 @@ Do **NOT** install the Arduino IDE from the Microsoft App store. Install the ori
   caption="Ongoing installation"
 />
 
-
 After 100% progress, the Arduino IDE has been installed successfully.
 
 <rk-img
@@ -1682,7 +1669,6 @@ After downloading the correct Arduino version, open a terminal, then run `ls` to
   width="90%"
   caption="Check the download folder"
 />
-
 
 A tarball is a type of compressed folder, like a `.zip` file, commonly used to distribute software in Linux. To extract the files from the tarball, change the directory to where the downloaded tarball is, then run:
 

@@ -51,7 +51,6 @@ The RAK13009 WisBlock QWIIC can be mounted on any Sensor slot of the WisBlock Ba
 
 ##### Assembling
 
-
 As shown in **Figure 2**, the location for sensor slots is properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
 <rk-img
@@ -114,7 +113,6 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 In this example, you will be able to see the I2C address of the device you connected using the QWIIC interface.
 
-
 1. You need to select first the WisBlock Core you have, as shown in **Figure 7** to **Figure 9**.
 
 <rk-img
@@ -134,7 +132,6 @@ In this example, you will be able to see the I2C address of the device you conne
   width="100%"
   caption="Selecting RAK11300 as WisBlock Core"
 />
-
 
 2. On the Arduino IDE, go to **Sketch > Include Library > Manage Libraries**. The Library Manager should open, then install the [LiquidCrystal I2C](https://github.com/johnrickman/LiquidCrystal_I2C) library, as shown in **Figure 10**.
 
@@ -180,7 +177,6 @@ void start_display(){
   
 }
 ```
-
 
 4. Select the right Serial Port and upload the code, as shown in **Figure 11** and **Figure 12**.
 

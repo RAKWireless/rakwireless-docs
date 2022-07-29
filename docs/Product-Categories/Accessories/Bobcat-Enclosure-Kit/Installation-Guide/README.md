@@ -108,7 +108,6 @@ A detailed explanation of the procedure of putting the Bobcat Miner 300 inside t
 Because of the different variants regarding the connector of the Bobcat Miner 300 (SMA or RP-SMA), an adapter is provided that will guarantee the compatibility of the enclosure to your miner regardless of the connector. When assembling your Outdoor Enclosure Kit, keep in mind that the adapter may be needed at this step.
 :::
 
-
 7. Fix the plate with the miner inside the enclosure with four M3*6 screws.
 
 <rk-img
@@ -152,7 +151,6 @@ Instructions on mounting and securing the mounting kit to the enclosure and the 
 :::tip 📝 NOTE:
 The diameter of the pole that is supported by the brackets is 50-100&nbsp;mm. If the pole diameter is more than this value, the steel strips can be used. The standard mounting kit does not include steel strips. If needed, they should be purchased separately.
 :::
-
 
 3. Hang up the enclosure and fasten it with two M6*12 screws.
 

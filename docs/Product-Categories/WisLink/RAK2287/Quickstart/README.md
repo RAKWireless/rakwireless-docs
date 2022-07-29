@@ -11,11 +11,7 @@ rak_img: /assets/images/wislink-lora/rak2287/quickstart/1main/RAK2287_home.png
 
 ## Prerequisites
 
-<!-- <rk-img
-  src="/assets/images/wislink-lora/rak2287/quickstart/2prerequisites/1.rak2287-on-top-of-rak2003.png"
-  width="50%"
-  caption="RAK2287 WisLink LPWAN Concentrator on top of the RAK2003 Pi Hat"
-/> -->
+
 
 ### What Do You Need?
 

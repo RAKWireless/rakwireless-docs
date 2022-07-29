@@ -315,7 +315,6 @@ Before uploading your sketch, short circuit **BOOT0** and **GND** pins and press
   caption="Uploading the RAK14000 example code"
 />
 
-
 6. Once you have successfully uploaded the example sketch, you should be able to see the image output on the E-Paper. You can also see the corresponding button pressed in the Serial Monitor.
 
 #### RAK14000 in RAK11310 WisBlock Core Guide

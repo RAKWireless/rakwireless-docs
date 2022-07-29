@@ -132,8 +132,9 @@ at+version
 
 ### Connecting to the Helium Network
 
-Helium has quickly become the most widespread LPWAN communal network with more than 27,000 devices deployed globally. All the RAKwireless node products are compatible with it and the process of adding a device to the network is intuitive and straightforward. This section will focus on giving a brief guide on how to connect the RAK7200 to the network console, assuming that there is a Helium Hotspot within range.
+Helium has quickly become the most widespread LPWAN communal network with more than 27,000 devices deployed globally. All the RAKwireless node products are compatible with it and the process of adding a device to the network is intuitive and straightforward.
 
+This section will focus on giving a brief guide on how to connect the RAK7200 to the network console, assuming that there is a Helium Hotspot within range.
 
 Log in or create your account in the [Helium console page](https://www.helium.com/console).
 
@@ -141,7 +142,7 @@ Log in or create your account in the [Helium console page](https://www.helium.co
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/connecting-to-helium-network/1.helium-console.png"
   width="85%"
-  caption="Helium Console"
+  caption="Helium console"
 />
 
 Once registered/logged in, you will end up at the home page where you can see your function tree on the left and your DC balance at the top, as well as several useful links.
@@ -150,16 +151,16 @@ Once registered/logged in, you will end up at the home page where you can see yo
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/connecting-to-helium-network/2.home.png"
   width="100%"
-  caption="Helium Console Home Screen"
+  caption="Helium console home screen"
 />
 
-Go to the **Devices** section in the function tree. If this is your first time doing this there will be no devices registered. Click the "**+ Add Device**" button to get started.
+Go to the **Devices** section in the function tree. If this is your first time doing this, there will be no devices registered. Click the **+ Add Device** button to get started.
 
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/connecting-to-helium-network/3.device-section.png"
   width="100%"
-  caption="Devices Section"
+  caption="Devices section"
 />
 
 A window will pop up with a set of a field containing the device parameters required for its registration.
@@ -167,18 +168,18 @@ A window will pop up with a set of a field containing the device parameters requ
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/connecting-to-helium-network/4.add-device.png"
   width="60%"
-  caption="Adding a New Device"
+  caption="Adding a new device"
 />
 
-Fill in a name of your choosing. The Dev EUI, App EUI, and App Key will have random values generated for you by default. Press the eye icon to reveal the values. You can manually replace them with values of your own. For this tutorial, use the default values. Press the "Submit" button and you are done.
+Fill in a name of your choosing. The **Dev EUI**, **App EUI**, and **App Key** will have random values generated for you by default. Press the eye icon to reveal the values. You can manually replace them with values of your own. For this tutorial, use the default values. Press the **Submit** button, and you are done.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/connecting-to-helium-network/5.registered-device.png"
   width="100%"
-  caption="Helium Devices"
+  caption="Helium devices"
 />
 
-Now, your RAK7200 is registered and is awaiting activation. For this to happen, you need to import the Dev EUI, App EUI, and App Key in the RAK7200 using the RAK Serial Port Tool.
+Now, your RAK7200 is registered and is awaiting activation. For this to happen, you need to import the Dev EUI, App EUI, and App Key in the RAK7200 using the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
 
 Open the tool, select the desired port (default baud rate) and open it. Then start importing your settings.
 
@@ -222,9 +223,7 @@ at++set_config=lora:app_key:XXXX
 
 - Join Network
 
-Finish executing the join command in order for the node to initiate the join procedure.
-
-Once the procedure is initiated and successfully complete, you will have a notification in the serial console.
+Finish executing the join command in order for the node to initiate the join procedure. Once the procedure is initiated and successfully complete, you will have a notification in the serial console.
 
 ```
 at+join
@@ -244,427 +243,9 @@ If you take a look at the Helium console, you will also see the join request pac
   caption="Helium console live device data"
 />
 
-<!-- 
 
-### Connecting to The Things Network (TTN)
-
-In this section, a practical exercise will be performed to show how to connect the RAK7200 module to The Thing Network (TTN) platform. 
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/connecting-to-ttn/7.ttn-context.png"
-  width="75%"
-  caption="RAK7200 in the context of the TTN"
-/>
-
-
-As shown in Figure 14, the RAK7200 module is one of the devices located on the left side. In the context of an IoT solution, the objective is to deploy devices to sense the relevant process variables and transmit the data to the backend servers located in the cloud. The data will be processed and integrated as part of a larger solution that, ultimately, could generate efficiency, traceability, predictability capacity among others.
-
-The RAK7200 module can be part of this ecosystem, and the objective of this section is to demonstrate how simple is to send data to the TTN using the LoRaWAN protocol. To achieve this, the RAK7200 module must be located inside of the coverage of a LoRaWAN gateway. 
-
-<b>Sign up and login</b>
-
-
-If you don't have an account yet, head on to the [TTN website](https://www.thethingsnetwork.org/) and create one. Once done, login to your account and go to the Console. 
-
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/connecting-to-ttn/8.ttn.png"
-  width="100%"
-  caption="The Things Network Home Page"
-/>
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/connecting-to-ttn/9.ttn-console.png"
-  width="100%"
-  caption="TTN Console Page"
-/>
-
-#### Create a New Application
-
-1. Choose the **APPLICATIONS**. 
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/connecting-to-ttn/10.application-section.png"
-  width="100%"
-  caption="Application Section"
-/>
-
-2. Click the “**add application**” button.
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/connecting-to-ttn/11.adding-application.png"
-  width="100%"
-  caption="Adding an Application"
-/>
-
-* Here are the things that you should take note in adding an application:
-
-    * **Application ID** - this will be the unique ID of your application in the Network. Note that the characters should be in lower case, no spaces are allowed.
-    * **Description** - this is a short and concise human readable description of your application.
-    * **Application EUI** - this will be generated automatically by The Things Network for convenience.
-    * **Handler Registration** - handler you want to register this application to.
-
-
-3. After you fill in the necessary information, press the "**Add application**" button at the bottom of this page. If you see the same page as shown in Figure 19, this means that you have successfully registered your application.
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/connecting-to-ttn/12.application-overview.png"
-  width="100%"
-  caption="Application Overview"
-/>
-
-<b>Register a New Device</b>
-
-1. Scroll down until you see the Devices section. Or, you can click the "**Devices**" button at the top. 
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/connecting-to-ttn/13.devices.png"
-  width="100%"
-  caption="Register a New Device"
-/>
-
-
-2. Then, register a new device by clicking on the "**register devices**".
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/connecting-to-ttn/14.adding-device.png"
-  width="100%"
-  caption="Add your Device"
-/>
-
-In this form, the device ID must be unique for the application and must be completed with a lower case, alphanumeric characters. The rest of the parameters in the form are very important for the LoRaWAN protocol:
-
-* Device EUI
-* Application Key
-* Application EUI
-
-The TTN platform can generate these parameters randomly by leaving those fields empty. Or, you can enter already existing values. 
-
-3. Press the “**Register**” button at the bottom of this page to finish the process. 
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/connecting-to-ttn/15.device-overview.png"
-  width="100%"
-  caption="Device Overview"
-/>
-
-#### LoRaWAN Join Mode
-
-The LoRaWAN specification defines that to join in a LoRaWAN network, each end-device has to be personalized and activated. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP). In OTAA, the previously personalized end-device is activated when is deployed or reset. On the other hand, in ABP, the personalization and activation are done as a single step. 
-
-
-Hence, this is referred to as the “**Join Mode**". LoRaWAN allows the OTAA mode and the ABP mode. In this section, the configuration process of these two modes is explained, both on the platform side and the node side.
-
-
-##### OTAA Mode
-
-###### Configure the OTAA Mode on the Platform
-
-
-As shown in the Figure 22, the default activation mode in TTN is the OTAA mode. Therefore, no further actions are required in the platform side. 
-
-
-To set up the RAK7200 module to join the TTN using OTAA, start by connecting the RAK7200 module to the Computer (see Figure 1) and open the RAK Serial Port Tool. Wait for the communication to start. It is recommended to test the serial communication and verify the current configuration by sending either of these two AT commands:
-
-```
-at+get_config=lora:status
-```
-
-```
-at+version
-```
-
-By default, the parameters configured in the RAK7200 modules are:
-
-- LoRa join mode: **OTAA**
-- LoRa class: **Class A**
-- LoRa region: **AU915** 
-- Device EUI: **00605E75749FCD6D**
-- Application EUI: **00605E75749FCD6D**
-- Application Key: **4E2003296FC5CD26F46940A6DAFA9D1**
-
-1. Set the LoRa join mode to OTAA.
-
-```
-at+set_config=lora:join_mode:0
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/ttn-otaa-mode/16.join-mode.png"
-  width="40%"
-  caption="Setting LoRa Join Mode to OTAA Mode"
-/>
-
-2. Set the LoRa class to Class A.
-
-```
-at+set_config=lora:class:0
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/ttn-otaa-mode/17.lora-class.png"
-  width="40%"
-  caption="Setting LoRa Class Parameter"
-/>
-
-3. Set the frequency/region to AU915.
-
-* Refer in the [RAK7200 Datasheet](/Product-Categories/WisNode/RAK7200/Datasheet/#rf-characteristics) for the list of supported frequencies.
-
-
-```
-at+set_config=lora:region:AU915
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/ttn-otaa-mode/18.lora-region.png"
-  width="40%"
-  caption="Setting LoRa Frequency/Region Parameter"
-/>
-
-
-4. Set the Device EUI.
-
-```
-at+set_config=lora:dev_eui:00605E75749FCD6D
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/ttn-otaa-mode/19.device-eui.png"
-  width="40%"
-  caption="Setting LoRa Device EUI Parameter"
-/>
-
-5. Set the Application EUI.
-
-```
-at+set_config=lora:app_eui:00605E75749FCD6D
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/ttn-otaa-mode/20.app-eui.png"
-  width="40%"
-  caption="Setting LoRa Application EUI Parameter"
-/>
-
-
-:::tip 📝 NOTE:
-
-The Device EUI parameter is not needed for the ChirpStack platform, therefore you will use the same ID as the Device EUI. Otherwise, the firmware will compliant. 
-
-:::
-
-
-6. Set the Application Key.
-
-```
-at+set_config=lora:app_key:4E2003296FC5CD26F46940A6DAFA9D1
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/ttn-otaa-mode/21.app-key.png"
-  width="40%"
-  caption="Setting LoRa Application Key Parameter"
-/>
-
-:::tip 📝 NOTE:
-
-After configuring all the parameters, you need to reset your RAK7200 Module for saving parameters.
-
-:::
-
-
-7. After resetting, join in OTAA mode.
-
-```
-at+join
-```
-
-After 5 or 6 seconds, if the request was successfully received by a LoRa gateway, then you should see the messages shown in Figure 29.
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/ttn-otaa-mode/22.join-command.png"
-  width="40%"
-  caption="Join into a LoRaWAN Network"
-/>
-
-Once joined into the LoRaWAN network, the RAK7200 firmware will start to send the data periodically. As shown in Figure 30, data will be saved in the TTN platform. 
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/ttn-otaa-mode/23.messaged-received.png"
-  width="100%"
-  caption="OTAA Test Sample Data Sent Viewed in TTN"
-/>
-
-##### ABP Mode
-
-###### Configure the ABP mode on the Platform
-
-If the ABP mode is preferred, then the TTN platform needs to be configured first. At TTN, once a device is created, you can select the “**SETTINGS**” section of the “**DEVICE**” and switch the “**Activation Method**”.
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/ttn-abp-mode/24.abp-mode.png"
-  width="100%"
-  caption="ABP Activation in TTN"
-/>
-
-* For ABP mode, the TTN parameters needed are the following:
-
-  * **Device Address**
-  * **Network Session Key**
-  * **App Session Key**
-
-
-:::tip 📝 NOTE:
-These fields can be left empty in the form. TTN will automatically generate random values. In other cases, you can fill them with specific values.
-:::
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/ttn-abp-mode/25.abp-parameters.png"
-  width="100%"
-  caption="ABP Mode Parameters"
-/>
-
-The same as the OTAA form, you can leave these fields empty to allow TTN to generate random values or input the specific values that you want.
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/ttn-abp-mode/26.abp-mode-configuration.png"
-  width="100%"
-  caption="ABP Mode Parameters"
-/>
-
-
-###### Configure the ABP mode on the RAK7200
-
-
-To set up the RAK7200 module in joining the TNN using ABP, start by connecting the RAK7200 module to the Computer (see Figure 1) and open the RAK Serial Port Tool. Wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
-
-
-```
-at+get_config=lora:status
-```
-
-```
-at+version
-```
-
-As an example, these are the list of the parameters you need to configure in RAK7200: 
-
-- LoRa join mode: **ABP**
-- LoRa class: **Class A**
-- LoRa region: **AU915** 
-- Device address: **000781fb9**
-- Network Session Key: **c280cb8d1df688bc18601a97025c588**
-- Application Session Key: **4d42ec5caf97f03d833cdaf5003f69e1**
-
-
-1. Set the LoRa join mode to ABP.
-
-```
-at+set_config=lora:join_mode:1
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/ttn-abp-mode/27.join-mode.png"
-  width="40%"
-  caption="Setting LoRa Join Mode to ABP Mode"
-/>
-
-
-2. Set the LoRa class to Class A.
-
-```
-at+set_config=lora:class:0
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/ttn-abp-mode/28.lora-class.png"
-  width="40%"
-  caption="Setting LoRa Class Parameter"
-/>
-
-3. Set the frequency/region to AU915.
-
-* Refer in the [RAK7200 Datasheet](/Product-Categories/WisNode/RAK7200/Datasheet/#rf-characteristics) for the list of supported frequencies.
-
-
-```
-at+set_config=lora:region:AU915
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/ttn-abp-mode/29.lora-region.png"
-  width="40%"
-  caption="Setting LoRa Frequency/Region Parameter"
-/>
-
-
-4. Set the Device Address.
-
-```
-at+set_config=lora:dev_addr:00781fb9
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/ttn-abp-mode/30.device-address.png"
-  width="40%"
-  caption="Setting LoRa Device Address Parameter"
-/>
-
-5. Set the LoRa Network Session Key.
-
-```
-at+set_config=lora:nwks_key:c280cb8d1df688bc18601a97025c588
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/ttn-abp-mode/31.network-session.png"
-  width="40%"
-  caption="Setting LoRa Network Session Parameter"
-/>
-
-6. Set the LoRa Application Session Key.
-
-```
-at+set_config=lora:apps_key:4d42ec5caf97f03d833cdaf5003f69e1
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/ttn-abp-mode/32.app-session.png"
-  width="40%"
-  caption="Setting LoRa Application Session Parameter"
-/>
-
-:::tip 📝 NOTE:
-
-After configuring all parameters, you need to reset RAK7200 Module for saving parameters.
-
-:::
-
-7. After resetting, join in OTAA mode.
-
-```
-at+join
-```
-
-:::tip 📝 NOTE:
-
-By using the ABP mode in LoRaWAN, it doesn’t require to join a network before sending a LoRaWAN package. But to keep the consistency of internal states of the firmware of the RAK7200 module, it is still required to send at+join command in the ABP mode. This time, the firmware should reply almost immediately with an “OK”.
-
-:::
-
-
-<rk-img
-  src="/assets/images/wisnode/rak7200/quickstart/ttn-abp-mode/33.join-command.png"
-  width="40%"
-  caption="Join into a LoRaWAN Network"
-/>
-
-
-Once the RAK7200 joined into a LoRaWAN network, it will start to send periodically the data collected from the GPS and other sensors. Then, go to the TTN Console to confirm that the messages ware properly received. -->
 
 ### Connecting to The Things Network V3 (TTNv3)
-
 
 At The Things Conference 2021, it was announced that The Things Network is upgrading to The Things Stack v3. 
 
@@ -701,7 +282,6 @@ First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud
   width="100%"
   caption="Create an application page"
 />
-
 
 2. Fill in the needed information. After filling in, click **Create application**.
 
@@ -775,7 +355,6 @@ First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud
 
    - **End device description** (optional) - Optional end device description; can also be used to save notes about the end device.
 
-
 5. Click **Network layer setting**.
 
     <rk-img
@@ -841,7 +420,6 @@ For this example, these settings will be left as default.
 
 ##### Configuring the Device in OTAA Mode
 
-
 1. For configuring the node, you will need the following three parameters: **Device EUI, Application EUI**, and **Application Key**. You can see them all on the **Device Overview** page. But since the two EUI's come with the device, you only need the Application Key from there.
 
     <rk-img
@@ -885,7 +463,6 @@ Remember to replace the **frequency band** with the one for your LoRaWAN region.
 :::tip 📝 NOTE:
 The following tutorial is based on using the EU868 frequency band.
 :::
-
 
 3. Now that those parameters are set, enter the **App Key**, using the command below. Remember to replace the **"XXXX"** with the corresponding parameter value for your particular case.
 
@@ -996,7 +573,6 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 
 <b>Register a New Device</b>
 
-
 1. Choose the **Application** created in the previous step, then select the **DEVICES** tab as shown in Figures 36 and 37.
 
 <rk-img
@@ -1064,7 +640,6 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
   caption="Chirpstack OTAA Activation"
 />
 
-
 2. A previously created Application Key can be entered here, or a new one can be generated automatically by clicking the icon highlighted in red in Figure 42:
 
 <rk-img
@@ -1082,7 +657,6 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
   width="100%"
   caption="Chirpstack OTAA List of Device"
 />
-
 
 4. To end the process, it is a good practice to review that the Application Key is properly associated with this device. The Application Key can be verified in the **KEYS(OTAA)** tab as shown in Figure 44.
 
@@ -1114,7 +688,6 @@ at+get_config=lora:status
 at+version
 ```
 
-
 As an example, these are the list of the parameters you need to configure in RAK7200: 
 
 - LoRa join mode: **OTAA**
@@ -1123,8 +696,6 @@ As an example, these are the list of the parameters you need to configure in RAK
 - Device EUI: **744d4452dd39037c**
 - Application EUI: **70B3D57ED001C544**
 - Application Key: **4E2003296FC5CD26F46940A6DAFA9D1**
-
-
 
 1. Set the LoRa join mode to OTAA.
 
@@ -1165,7 +736,6 @@ at+set_config=lora:region:AU915
   caption="Setting LoRa Frequency/Region Parameter"
 />
 
-
 4. Set the Device EUI.
 
 ```
@@ -1177,7 +747,6 @@ at+set_config=lora:dev_eui:744d4452dd39037c
   width="40%"
   caption="Setting LoRa Device EUI Parameter"
 />
-
 
 5. Set the Application EUI.
 
@@ -1195,7 +764,6 @@ at+set_config=lora:app_eui:70B3D57ED001C544
 Remember, the Application EUI parameter was not required in the ChirpStack platform. Therefore, it is possible to use the same ID as the Device EUI. Otherwise, the firmware will complain. 
 ::: 
 
- 
 6. Set the Application Key.
 
 - Get the Application Key from the TTN register.
@@ -1214,7 +782,6 @@ at+set_config=lora:app_key:4E2003296FC5CD26F46940A6DAFA9D1
 :::tip 📝 NOTE:
 After configuring all parameters, you need to reset RAK7200 Module to save the parameters.
 :::
-
 
 7. After resetting, start to join.
 
@@ -1258,7 +825,6 @@ This concludes the exercise to send data in the OTAA mode.
 
 ###### Configure the ABP Mode on the Platform
 
-
 During the registration of a new device, if you select “**DeviceProfile_ABP**” or "**DeviceProfile_ABP_CN470**", as shown in Figure 54, then the ChirpStack platform will assume that this device will join to the LoRaWAN network using the ABP mode. 
 
 :::tip 📝 NOTE:
@@ -1292,7 +858,6 @@ After selecting the ABP mode, the following parameters appear in the Activation 
 
 ###### Configure the ABP mode on the RAK7200
 
-
 In the following steps, you will configure the RAK7200 module to work in the ABP mode. To set up the RAK7200 module to join ChirpStack using ABP start by connecting the RAK7200 module to the Computer (see Figure 1) and open the RAK Serial Port Tool, wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
 
 ```
@@ -1324,7 +889,6 @@ at+set_config=lora:join_mode:1
   caption="Setting LoRa Join Mode to ABP Mode"
 />
 
-
 2. Set LoRa class to Class A.
 
 ```
@@ -1336,8 +900,6 @@ at+set_config=lora:class:0
   width="40%"
   caption="Setting LoRa Class Parameter"
 />
-
-
 
 3. Set the frequency/region to AU915.
 
@@ -1459,7 +1021,6 @@ In this section, you will upgrade the firmware by using the **STM32CubeProgramme
   width="90%"
   caption="Error Messages Received when not in Boot Mode"
 />
-
 
 6. After connecting successfully, the STM32CubeProgrammer will display **Data read successfully** in the log message box.
 

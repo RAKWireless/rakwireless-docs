@@ -42,7 +42,7 @@ Because you need to bury the RAK12035 sensor probe into the soil, the electronic
 
 ### Hardware
 
-The hardware specification is categorized into three (3) parts. It discusses the pinouts and their corresponding functions and diagrams of the module. It also covers the mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK12035 WisBlock Soil Moisture Sensor Module.
+The hardware specification is categorized into four (4) parts. It shows the chipset of the module and discusses the pinouts and their corresponding functions and diagrams. It also covers the mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK12035 WisBlock Soil Moisture Sensor Module.
 
 ####  Chipset
 

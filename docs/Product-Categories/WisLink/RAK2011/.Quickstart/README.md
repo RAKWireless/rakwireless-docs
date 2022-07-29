@@ -110,7 +110,6 @@ AT+COPS=1,0,"CHN-CT",9 // Manually connect NB-IoT network
   caption="NB-IoT UDP Communication Test"
 />
 
-
 6. After setting the configuration, send `AT+CSQ` to check network signal strength. If there is a signal strength value, it indicates the module has connected to NB-IoT network. You can also send `AT+CGREG?` to check the connection status of the network to determine whether or not to connect to the network:
 
 
@@ -119,7 +118,6 @@ AT+COPS=1,0,"CHN-CT",9 // Manually connect NB-IoT network
   width="80%"
   caption="Check Network Signal Strength"
 />
-
 
 7. After connecting to the network, you need to set up the APN and activate the APN network. You can set the APN by sending the following commands:
 
@@ -136,7 +134,6 @@ AT+QIACT? // Query the APN assigned IP address
   caption="Setup and Activate APN"
 />
 
-
 8. After activating the APN, you can establish a UDP connection. (In China Telecom’s NB-IoT network, you must first inform the operator of your server’s IP address. The operator will make binding before the connection is successful. The behavior of other networks might be different).
 
 ```
@@ -149,7 +146,6 @@ AT+QISTATE? // Query connection is successful
   width="80%"
   caption="Establish UDP Connection"
 />
-
 
 9. When sending data to the server, there will be a prompt to receive data "recv". If there is no prompt you can send the following commands to check if there is data reception:
 
@@ -246,7 +242,6 @@ To start with, create an [Hologram account](https://dashboard.hologram.io/accoun
   caption="Input your SIM information"
 />
 
-
 4. Then enter the SIM card information interface. After waiting for a period of time, you will see the "Live" status.
 
 
@@ -299,7 +294,6 @@ AT+QISEND=0,0      // Query data is sent successfully
   caption="Sending query data"
 />
 
-
 If the data is sent successfully, you can see the sent information on your interface of the Hologram Dashboard.
 
 
@@ -336,7 +330,6 @@ AT+QIRD=11,1500    // Read the received data, 11 is the returned Socket identifi
   caption="Create a TCP server"
 />
 
-
 After creating a successful TCP server, you need to return to the Hologram Dashboard interface, click on the "send to device" button, and then fill in the data to be sent. The PORT is the TCP server port of your board. Fill in and click "Send data message".
 
 
@@ -345,7 +338,6 @@ After creating a successful TCP server, you need to return to the Hologram Dashb
   width="80%"
   caption="Send a message"
 />
-
 
 After sending the data in the Hologram Dashboard, the board will receive a message of "recv, 11" indicating that the board have already received the data. At this time, sending the `AT+QIRD=11,1500` command to obtain the received data.
 

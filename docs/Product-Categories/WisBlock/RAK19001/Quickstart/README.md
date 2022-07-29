@@ -58,7 +58,6 @@ The block diagram shown in **Figure 1** shows the internal architecture and exte
   caption="RAK19001 WisBlock Base block diagram"
 />
 
-
 The MCU in the WisBlock Core module offers the I2C, UART, and SPI data buses to the sensor and IO modules. Through these buses, the MCU can control and retrieve data from the sensors. The RAK19001 WisBlock Base board connects all these modules.
 
 The RAK19001 is designed to be powered by either rechargeable or non-rechargeable battery. The rechargeable battery it supports is Li-Ion and provides the necessary charger IC on-board. The charger circuitry can be connected to a wall outlet charger through the Type-C USB connector or via the solar panel connector.
@@ -194,7 +193,6 @@ This guide uses two arrows. Refer to **Figure 2** for its representation.
 
 ###### WisBlock Core
 
-
 A WisBlock Core module is designed to be installed on the CPU slot of the RAK19001 Base Board. As shown in **Figure 14**, the location is properly marked by silkscreen. Follow carefully the procedure defined in [attaching a WisConnector](/Product-Categories/WisBlock/RAK19001/Quickstart/#attaching-a-wisconnector/) section in order to attach a Core module. Once attached, fix the module  with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the WisBlock Core. 
 
 
@@ -205,7 +203,6 @@ A WisBlock Core module is designed to be installed on the CPU slot of the RAK190
 />
 
 ###### WisBlock Sensor
-
 
 A WisBlock Sensor module is designed to be installed on the sensor slot of the RAK19001 Base Board. There are six (6) available sensor slots in the RAK19001 Base Board. As shown in **Figure 15**, the location of the slots is properly marked by silkscreen. Follow carefully the procedure of the section, [attaching a WisConnector](/Product-Categories/WisBlock/RAK19001/Quickstart/#attaching-a-wisconnector/), to attach a WisBlock Sensor module. Once attached, fix the module with an M1.2 x 3&nbsp;mm screw. 
 

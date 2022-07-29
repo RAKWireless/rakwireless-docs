@@ -11,11 +11,7 @@ rak_img: /assets/images/wislink-lte/rak8213/quickstart/overview/RAK8213_home.png
 
 # RAK8213 WisLink Cellular mPCIe Datasheet
 
-<!-- <rk-img
-  src="/assets/images/wislink-lte/rak8213/datasheet/wgohpslr9gz7vggih3uh.png"
-  width="30%"
-  caption="RAK8213 WisLink Cellular mPCIe"
-/> -->
+
 
 ## Overview
 

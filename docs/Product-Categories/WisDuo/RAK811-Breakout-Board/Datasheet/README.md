@@ -19,13 +19,7 @@ certifications:
 
 # RAK811 Breakout Board Datasheet
 
-<!---
-<rk-img
-  src="/assets/images/wisduo/rak811-breakout-board/datasheet/1.rak811-breakout.png"
-  width="50%"
-  caption="RAK811 Breakout Board"
-/>
---->
+
 
 ## Overview
 
@@ -230,13 +224,7 @@ The high radio frequency hardware supports the regions of EU868, US915, AU915, K
   caption="RAK811 Physical Dimension"
 />
 
-<!-- ##### Layout Recommendation
 
-<rk-img
-  src="/assets/images/wisduo/rak811-breakout-board/datasheet/8.rak811-layout.jpg"
-  width="75%"
-  caption="RAK811 Layout"
-/> -->
 
 #### Environmental Characteristics
 

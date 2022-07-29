@@ -11,13 +11,7 @@ tags:
 
 # RAK4200 Evaluation Board Quick Start Guide
 
-<!---
-<rk-img
-    src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/2.quick-start-guide/kgkvn088cnoef6gqfxa6.jpg"
-    width="50%"
-    caption="RAK4200 Evaluation Board"
-  />
---->
+
 
 ### What Do You Need?
 
@@ -837,13 +831,13 @@ Refer to the [AT Command Manual](/Product-Categories/WisDuo/RAK4200-Evaluation-B
 ## Miscellaneous
 
 ### RAK5005 Core Module Slot Connection to RAK4201
-  
+
 The RAK5005 is the base board that connects the RAK4200 Core Module. It creates the power supply for the attached module and provides additional IO and Sensor support for your project needs.    
   
 ::: tip 📝 NOTE
 RAK4201 is a circuit board module for RAK5005 with a pre-soldered RAK4200 LPWAN Module.
 :::
-  
+
 Listed below are the accessible pins and data bus of the attached RAK5005 base board on the RAK4200 EVB:
 
 

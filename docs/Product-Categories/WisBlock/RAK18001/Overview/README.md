@@ -18,7 +18,7 @@ Thank you for choosing **RAK18001 WisBlock Buzzer Module** in your awesome IoT P
 * [RAK18001 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
+
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK18001 Buzzer Module 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK18001.stp)
 * [24-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
@@ -49,7 +49,7 @@ The **RAK18001** is a WisBlock Extra module that uses a **MLT-5020** as its buil
     * Built-in Buzzer Size: 5mm x 5mm x 2mm
 
 ## Prerequisites  
-  
+
 To use the **RAK18001 Buzzer Module**, you need a **WisBlock Base** to plug the module in. The Wisblock Base acts as a power supply for the RAK18001 Buzzer Module. It also consist of several module ports which allows you to plug multiple Buzzer Module or other modules of your choice! Also, you need a **WisBlock Core** to control your module.
 
 :::warning ⚠️ WARNING    

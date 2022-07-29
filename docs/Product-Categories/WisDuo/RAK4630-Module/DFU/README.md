@@ -164,7 +164,6 @@ AT+BOOT
 
 `nrfutil dfu usb-serial -pkg RAK4631_latest_dfu_package.zip -p /dev/ttyACM0`
 
-
 5. To check the device firmware version in the minicom console, enter the following AT command:
 
 ```
@@ -241,36 +240,14 @@ This section covers how to update your RAK4630 firmware wirelessly via BLE. Firs
 />
 
 
-<!--
 
-::: tip 📝 NOTE
-
-iOS and Android are supported. 
- - iOS: 6. OTA DFU over BLE 
- - Android: 7. OTA DFU over BLE
-:::
-
--->
 
 ### For iOS
 
-<!--
 
-#### iOS and nRF Connect Version
-
-iOS 14.4 to do OTA DFU over BLE and nRF Connect is using the application version of 2.4.11.
-
-<rk-img
-  src="/assets/images/wisduo/rak4630-module/quickstart/ios-nrfconnect.png"
-  width="90%"
-  caption="iOS 14.4 and nRF Connect 2.4.11"
-/>
-
---->
 
 
 #### OTA DFU over BLE
-
 
 1. Download the [DFU package](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK4631_latest_dfu_package.zip) of the RAK4630 and save it on your mobile phone.
 
@@ -289,7 +266,7 @@ Make sure the Bluetooth on your mobile is on.
   width="40%"
   caption="Available Bluetooth Devices"
 />
- 
+
 4. Look for a BLE Device named **RAK.XXXXXX** in the scanner list of the app. Connect to this device and then click on the **Client** tab.
 
 ::: tip 📝 NOTE
@@ -302,7 +279,6 @@ By default, the BLE signal of the RAK4630 is turned off automatically if no conn
   caption="Secure DFU service"
 />
 
-
 5. Choose "**Secure DFU Service**" and click the button highlighted in red, as shown in **Figure 13**.
 
 
@@ -312,7 +288,6 @@ By default, the BLE signal of the RAK4630 is turned off automatically if no conn
   caption="Buttonless DFU"
 />
 
-
 7. A **Write Value** window will pop up. Select **Bool** tab, move the switch from `False` to `True` then press **Write** button.
 
 <rk-img
@@ -320,7 +295,6 @@ By default, the BLE signal of the RAK4630 is turned off automatically if no conn
   width="70%"
   caption="Resetting the bootloader via Bluetooth"
 />
-
 
 8. Now, the RAK4630 is now working in DFU Mode. In the application, you will see the default status overview of RAK4630.
 
@@ -330,7 +304,6 @@ By default, the BLE signal of the RAK4630 is turned off automatically if no conn
   caption="RAK4630 default status overview after resetting"
 />
 
-
 9. In the Scanner list, find a BLE device named **DfuTarg** and then click the **Connect** button.
 
 
@@ -339,7 +312,6 @@ By default, the BLE signal of the RAK4630 is turned off automatically if no conn
   width="40%"
   caption="RAK4630 Default Bluetooth ID after Resetting"
 />
-
 
 10. After connected, select the **DFU** tab, then click **Open Document Picker**. This will prompt you to select the Distribution packet zip file of the firmware you have downloaded. Press **OK**, and it will automatically start to upgrade the firmware of your RAK4630 through DFU over BLE.
 
@@ -355,7 +327,6 @@ By default, the BLE signal of the RAK4630 is turned off automatically if no conn
 You can upload the Distribution packet (ZIP) file to [iCloud Services](https://www.icloud.com/) and download it to your smartphone. 
 :::
 
-
 11. After upgrading, the module restarts, and the DFU connection will be disconnected. Now, you can use your RAK4630 with the latest firmware.
 
 
@@ -369,20 +340,7 @@ You can upload the Distribution packet (ZIP) file to [iCloud Services](https://w
 
 ### For Android
 
-<!--
 
-#### Android and nRF Connect version
-
-Android 6.0 to do OTA DFU over BLE and nRF Connect is using the application version of 4.24.3.
-
-
-<rk-img
-  src="/assets/images/wisduo/rak4630-module/quickstart/android-nrfconnect.png"
-  width="70%"
-  caption="Android 6.0 and nRF Connect 4.24.3"
-/>
-
---->
 
 
 #### OTA DFU Over BLE
@@ -418,7 +376,6 @@ By default, the BLE signal of the RAK4630 is turned off automatically if no conn
   caption="Secure DFU service in the Nordic App"
 />
 
-
 5. Choose "**Secure DFU Services**" and click the button highlighted in red, as shown in **Figure 21**.
 
 <rk-img
@@ -426,7 +383,6 @@ By default, the BLE signal of the RAK4630 is turned off automatically if no conn
   width="40%"
   caption="Buttonless DFU"
 />
-
 
 6. Click the arrow up button highlighted in a red box.
 
@@ -438,7 +394,6 @@ By default, the BLE signal of the RAK4630 is turned off automatically if no conn
   caption="Resetting the Bootloader via Bluetooth"
 />
 
-
 8. Now, the RAK4630 is now working in DFU Mode. In the application, you will see the default status overview of RAK4630.
 
 
@@ -447,7 +402,6 @@ By default, the BLE signal of the RAK4630 is turned off automatically if no conn
   width="40%"
   caption="RAK4630 default status overview after resetting"
 />
-
 
 9. In the Devices list, find a BLE device named **DfuTarg** and click on the **Connect** button.
 
@@ -472,8 +426,6 @@ After connecting, click on the **DFU** icon highlighted in red, as shown below.
 ::: tip 📝 NOTE
 You can upload the Distribution packet (ZIP) file to Google Drive and download it to your smartphone. 
 :::
-
-
 
 11.  After upgrading, the module restarts, and the DFU connection will be disconnected. Now, you can use your RAK4630 with the latest firmware.
 

@@ -10,7 +10,6 @@ tags:
 
 # RAKARJ17 868MHz Black Blade Antenna
 
-
 Thank you for choosing **RAKARJ17 868MHz Black Blade Antenna** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)

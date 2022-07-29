@@ -257,7 +257,6 @@ Once Arduino IDE has been installed successfully, and you've understood the main
   caption="Add additional Board Manager URLs"
 />
 
-
 4. Restart the Arduino IDE.
 
 5. Open the Boards Manager from Tools Menu.
@@ -284,95 +283,7 @@ Once Arduino IDE has been installed successfully, and you've understood the main
   caption="Selecting RAKwireless WisBlock Modules"
 />
 
-<!-- 
-#### Compile an Example with Arduino LED Breathing
 
-
-1. Check RAK4631-R COM Port using Windows **Device Manager**.
-
-<rk-img
-  src="/assets/images/wisblock/rak4631-r/quickstart/rui-port.png"
-  width="70%"
-  caption="Device Manager Ports (COM & LPT)"
-/>
-
-2. Open Tools Menu and select Port: **COM4** currently used.
-<rk-img
-  src="/assets/images/wisblock/rak4631-r/quickstart/select-port.png"
-  width="90%"
-  caption="Select COM port"
-/>
-
-3. You can see the Serial Monitor icon and click it to connect COM port.
-<rk-img
-  src="/assets/images/wisblock/rak4631-r/quickstart/serial-mon.png"
-  width="90%"
-  caption="Open Arduino Serial Monitor"
-/>
-
-4. If the connection is successful, you can send AT Commands to RAK4631-R. For example: To check the RUI version type `AT+VER=?` on the text area then click on the **Send** button, as shown below.
-
-<rk-img
-  src="/assets/images/wisblock/rak4631-r/quickstart/at+ver.png"
-  width="90%"
-  caption="Send AT command"
-/>
-
-<rk-img
-  src="/assets/images/wisblock/rak4631-r/quickstart/arduino-console.png"
-  width="90%"
-  caption="Arduino Serial Monitor COM4"
-/>
-
-5. Open **Arduino_Led_Breathing**  example code.
-
-<rk-img
-  src="/assets/images/wisblock/rak4631-r/quickstart/led-example.png"
-  width="90%"
-  caption="Led Breathing example"
-/>
-
-6. Click on the Verify icon to verify the example code.
-
-<rk-img
-  src="/assets/images/wisblock/rak4631-r/quickstart/verify-code.png"
-  width="90%"
-  caption="Verify the example code"
-/>
-
-7. Click the Upload icon to upload the example code.
-
-:::tip 📝 NOTE:
-RAK4631-R should automatically go to BOOT Mode when firmware is being uploaded via Arduino IDE.
-
-If BOOT Mode is not initiated, pull to ground the RESET pin twice (or double click reset button if available) to force BOOT Mode.
-:::
-
-<rk-img
-  src="/assets/images/wisblock/rak4631-r/quickstart/upload-code.png"
-  width="90%"
-  caption="Upload the example code"
-/>
-
-8. If the upload is successful, you will see the **Device programmed** message.
-
-<rk-img
-  src="/assets/images/wisblock/rak4631-r/quickstart/dev-prog.png"
-  width="90%"
-  caption="Device programmed successfully"
-/>
-
-9. After Device Programmed is completed you will see that RAK5005-O Blue/Green LED is blinking.
-
-<rk-img
-  src="/assets/images/wisblock/rak4631-r/quickstart/compile-example/Picture7.jpg"
-  width="70%"
-  caption="RAK4631-R with RAK5005-O Base Board Blue/Green LED is blinking"
-/> 
-
-At this point, you are now ready to explore more applications in the [Demo and Examples](/Product-Categories/WisBlock/RAK4631-R/Examples/#lorawan-application-scenario-example) section of this document.
-
--->
 
 #### Programming RAK4631-R via Visual Studio IDE
 
@@ -462,7 +373,6 @@ Install the Visual Studio Community 2019, which you just downloaded, on your Win
   width="100%"
   caption="Visual Studio Community 2019"
 />
-
 
 2. In the Menu tab, click **Extensions** and select **vMicr** then **Visual Micro Explorer**.
 
@@ -576,7 +486,7 @@ You can also install RAKwireless RUI nRF Boards using the [RAK4631-R Board Suppo
 
 :::tip 📝 NOTE:
 RAK4631-R should automatically go to BOOT mode when the firmware is uploaded via Arduino IDE.
-		
+
 If BOOT mode is not initiated, pull to ground the RESET pin twice (or double click the reset button if available) to force BOOT mode.
 :::
 
@@ -605,58 +515,12 @@ AT+VER=?
   caption="UART console output"
 />
 
-<!-- 
-1. Launch Visual Studio 2019 then click on `Create a new project` as shown below.
 
-<rk-img
-  src="/assets/images/wisblock/rak4631-r/quickstart/vs-new-project.png"
-  width="80%"
-  caption="Create new Arduino Project on Visual Studio 2019"
-/>
-
-2. Choose the `Arduino Simple Empty Project` then click on **Next** button.
-
-<rk-img
-  src="/assets/images/wisblock/rak4631-r/quickstart/vs-templates.png"
-  width="80%"
-  caption="Arduino project templates"
-/>
-
-3. Choose a Project name and check `Place Solution and project in the same directory`. You can choose your project folder using the `Location` option. To finish the configuration click on **Create** button.
-
-<rk-img
-  src="/assets/images/wisblock/rak4631-r/quickstart/vs-arduino-config.png"
-  width="80%"
-  caption="Configure your new project"
-/>
-
-<rk-img
-  src="/assets/images/wisblock/rak4631-r/quickstart/vs-create-window.png"
-  width="50%"
-  caption="Creating Visual Studio 2019 project"
-/>
-
-4. 
-Click the Extensions -> Visual Micro Explorer -> Examples -> Library Examples
--> RUI_V3_examples.
-
-After Upgrade Complete you can use your preferred console UART tool, to connect with COM port.
-port. If the connection is successful then you will see the output messages.
-
--->
 
 
 #### AT Command Over BLE
 
 This section shows how to use AT Commands over BLE using a Serial Bluetooth Terminal.
-
-<!--
-<rk-img
-  src="/assets/images/wisblock/rak4631-r/quickstart/android-serial-ble.png"
-  width="70%"
-  caption="Android 6.0 and Serial Bluetooth Terminal 1.3.5"
-/>
---->
 
 All available commands can be found in the [AT Command Manual](/Product-Categories/WisBlock/RAK4631-R/AT-Command-Manual/#general-commands) of RAK4631-R.
 
@@ -765,7 +629,6 @@ Do **NOT** install the Arduino IDE from the Microsoft App store. Install the ori
   caption="Ongoing Installation"
 />
 
-
 After 100% progress, the Arduino IDE has been installed successfully.
 
 <rk-img
@@ -787,7 +650,6 @@ First, you need the check the compatibility with your system and choose between 
   width="90%"
   caption="Check the download folder"
 />
-
 
 2. A tarball is a type of compressed folder, like a `.zip` file, commonly used to distribute software in Linux. To extract the files from the tarball, change the directory to where the downloaded tarball is, then run:
 
@@ -850,7 +712,6 @@ The operating buttons have five operations:
   width="35%"
   caption="Operating Buttons"
 />
-
 
 3. **Code Area**
 

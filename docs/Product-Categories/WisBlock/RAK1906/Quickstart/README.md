@@ -98,7 +98,6 @@ The procedure in disassembling any type of WisBlock modules is the same.
 If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1906 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
 :::
 
-
 After all this setup, you can now connect the battery (optional) and USB cable to start programming the RAK1906.
 
 :::warning ⚠️ WARNING
@@ -120,7 +119,7 @@ The BME680 requires a burn-in period to collect accurate readings. The burn-in p
 
 #### Initial Test of the RAK1906 WisBlock Module
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 
@@ -347,7 +346,6 @@ These are the quick links that go directly to the specific WisBlock Core module 
 
 ### Configuring LoRaWAN
 
-
 There are configurations that you need to setup to ensure that the device can join a LoRaWAN Network server.
 
 The steps below will explain the default settings and how to configure it.
@@ -445,8 +443,6 @@ The default is **20000&nbsp;mS**.
 
 If this example is implemented for the Region US915, DR0 cannot be used because the package size is too large to fit into the allowed payload.    
 
-<!-- add RAK11310 log images
--->
 When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown below, then your RAK1906 is properly communicating to the WisBlock core.
 
 ```js

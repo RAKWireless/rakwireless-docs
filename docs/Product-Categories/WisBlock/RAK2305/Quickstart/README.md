@@ -166,7 +166,6 @@ For **RAK11310 WisBlock Core**:
   * [ESP-AT Command Test](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/communications/WiFi/connect_ap) - This example waits for an AT command typed at the console then sends that command to RAK2305 and wait for reply.
   * [Connect to Access Point](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/communications/WiFi/connect_ap) - This example connects to a known access point and send ping to the address "8.8.8.8" every 5 seconds.
 
-
 For **All WisBlock Core**:
 
 The Espressif examples:

@@ -13,13 +13,7 @@ rak_img: /assets/images/wistrio/rak7205-5205/quickstart/overview/RAK5205_home.pn
 
 ## Prerequisites
 
-<!---
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/quickstart/quick-start-guide/lzqkvgwzjeol3o5no5ej.jpg"
-  width="70%"
-  caption="RAK5205 Package Contents"
-/>
--->
+
 
 ### What Do You Need?
 
@@ -301,8 +295,6 @@ at+set_config=lora:region:XXX
   width="90%"
   caption="ABP parameters screen"
 />
-
-
 
 5. Now that the mode has been changed, enter the parameters listed which are needed for ABP activation: **Device Address**, **Network Session Key**, and **Application Session Key**. Remember to replace the **"XXXX"** with the corresponding parameter value that matches the LoRaWAN network server. Refer to Figure 19 for the parameters.
 
@@ -776,7 +768,6 @@ After the gateway and node go online, click the **uplink data record** from the 
 #### Decoding Sensor Data in ChirpStack
 
 ##### Input Decoding Function in ChirpStack
-
 
 1. To start with, you need to get the payload decoder depending on the setup of your GPS data:
   
@@ -1296,9 +1287,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
   caption="Successfully Downloading the Bootloader"
 />
 
-
 16. You can now on the second step which is burning the V3.0.0.12 firmware into RAK7205/RAK5205 using the LoRa Button Upgrade Tool.
-
 
 17. Download the [**RAK Upgrade Tool V1.0**](https://downloads.rakwireless.com/en/LoRa/RAK612-LoRaButton/Tools/). Then, extract and open the tool.
 

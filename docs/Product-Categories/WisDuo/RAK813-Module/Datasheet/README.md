@@ -10,13 +10,7 @@ prev: ../Overview/
 
 # RAK813 BLE+LoRa Module Datasheet
 
-<!---
-<rk-img
-  src="/assets/images/wisduo/rak813-module/datasheet/overview/RAK813.jpg"
-  width="30%"
-  caption="RAK813 Module"
-/>
---->
+
 
 ## Overview
 

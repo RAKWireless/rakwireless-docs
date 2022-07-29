@@ -345,7 +345,6 @@ There are two UART peripherals available on RAK4630. There are also different [S
   caption="Available UART pins in RAK4630"
 />
 
-
 Example Code
 
 ```c
@@ -373,8 +372,7 @@ Make sure you have an I2C device connected to specified I2C pins to run the exam
 
 ```c
 #include <Wire.h>
- 
- 
+
 void setup()
 {
   Wire.begin();
@@ -383,8 +381,7 @@ void setup()
   while (!Serial);            
   Serial.println("\nI2C Scanner");
 }
- 
- 
+
 void loop()
 {
   byte error, address;
@@ -439,7 +436,7 @@ void loop()
 
 
 ##### LoRaWAN Example
-    
+
 This example illustrates how to program RAK4630 as a stand-alone LoRaWAN end-device via RUI3 Arduino APIs. To use RAK4630 as a LoRaWAN end-device, it needs to be within reach of a working **LoRaWAN gateway** registered to a **LoRaWAN network server(LNS)** or with a built-in network server.
 
 Moreover, this guide will use the internal network server of the [WisGate Edge RAK7268](https://store.rakwireless.com/products/wisgate-edge-lite-2-rak7268-rak7268c) LoRawan gateway. RAK offers various models of WisGate LoRaWAN gateways that you can buy from the [RAK store](https://store.rakwireless.com/collections/wisgate). This guide is focused on the configuration of RAK4630 as a LoRaWAN end-device.
@@ -558,7 +555,6 @@ After a successful registration of the RAK4630 device to the LoRaWAN Network Ser
   width="90%"
   caption="OTAA LoRaWAN application example"
 />
-
 
 2. In the example code, you need to modify the device EUI (DEVEUI) and application key (APPKEY).
 
@@ -890,7 +886,6 @@ If you haven't received an `OK` or any reply, you need to check if you selected 
   caption="at+version command response"
 />
 
-
 2. The next step is to configure the OTAA LoRaWAN parameters in RAK4630: 
 
 - LoRa work mode: **LoRaWAN**
@@ -952,13 +947,11 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
   caption="Configuring LoRa Parameters"
 />
 
-
 3. After the configuration of the LoRaWAN parameters, the next step is to set up the EUIs and key. You need the use the values from the TTN console.
 
 - Device EUI: **1133557799224466**
 - Application EUI: **1000000000000009**
 - Application Key: **04FA4E626EF5CF227C969601176275C2**
-
 
 Set the Device EUI.
 
@@ -1126,7 +1119,6 @@ If you haven't received an `OK` or any reply, you need to check if the wiring of
   caption="at+version command response"
 />
 
-
 3. The next step is to configure the ABP LoRaWAN parameters in RAK4630: 
 
 - LoRa work mode: **LoRaWAN**
@@ -1232,7 +1224,6 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
 | z         | Number of join attempts (0-255) - 0 is default.              |
-
 
 6. With the end-device properly activated, you can now try to send some payload after a successful join.
 
@@ -1361,7 +1352,6 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   caption="Chirpstack adding node into the RAK4630 Module"
 />
 
-
 6. Once the node is created, fill in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
 
 Fill in the parameters requested:
@@ -1459,7 +1449,6 @@ If you haven't received an `OK` or any reply, you need to check if the wiring of
   caption="at+version command response"
 />
 
-
 2. The next step is to configure the OTAA LoRaWAN parameters in RAK4630: 
 
 - LoRa work mode: **LoRaWAN**
@@ -1521,7 +1510,6 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
   caption="Configuring LoRa parameters"
 />
 
-
 3. After the configuration of the LoRaWAN parameters, the next step is to set up the DevEUI and AppKey. You need the use the values from the Chirpstack device console. 
 
 :::tip 📝 NOTE:
@@ -1531,7 +1519,6 @@ The Application EUI parameter is not required in the ChirpStack platform; theref
 - Device EUI: **5E9D1E0857CF25F1**
 - Application EUI: **5E9D1E0857CF25F1**
 - Application Key: **F921D50CD7D02EE3C5E6142154F274B2**
-
 
 Set the Device EUI.
 
@@ -1668,7 +1655,6 @@ If haven't received an `OK` or any reply, you need to check if the wiring of you
   caption="at+version command response"
 />
 
-
 2. The next step is to configure the ABP LoRaWAN parameters in RAK4630: 
 
 - LoRa work mode: **LoRaWAN**
@@ -1735,7 +1721,6 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 - Device Address: **26011AF9**
 - Application Session Key: **4D42EC5CAF97F03D833CDAf5003F69E1**
 - Network Session Key: **C280CB8D1DF688BC18601A97025C5488**
-
 
 Set the Device Address.
 
@@ -1851,7 +1836,6 @@ Refer to the [P2P Mode](/Product-Categories/WisDuo/rak4630-module/AT-Command-Man
 
 :::
 
-
 3. To set one module as a receiver (RX), you need to set the value of the P2P receive command to 65535.
 
 ```
@@ -1882,14 +1866,6 @@ AT+PSEND=11223344
 #### AT Command over BLE
 
 This section shows how to use AT Commands over BLE using a Serial Bluetooth Terminal.
-
-<!--
-<rk-img
-  src="/assets/images/wisduo/rak4630-module/quickstart/android-serial-ble.png"
-  width="70%"
-  caption="Android 6.0 and Serial Bluetooth Terminal 1.3.5"
-/>
---->
 
 All available commands can be found in the [AT Command Manual](/Product-Categories/wisduo/rak4630-module/AT-Command-Manual/#general-commands) section of this document.
 
@@ -2000,7 +1976,6 @@ Do **NOT** install the Arduino IDE from the Microsoft App store. Install the ori
   caption="Ongoing installation"
 />
 
-
 After 100% progress, the Arduino IDE has been installed successfully.
 
 <rk-img
@@ -2022,7 +1997,6 @@ After downloading the correct Arduino version, open a terminal, then run `ls` to
   width="90%"
   caption="Check the download folder"
 />
-
 
 A tarball is a type of compressed folder, like a `.zip` file, commonly used to distribute software in Linux. To extract the files from the tarball, change the directory to where the downloaded tarball is, then run:
 
@@ -2085,7 +2059,6 @@ The operating buttons have five operations:
   width="30%"
   caption="Operating buttons"
 />
-
 
 3. **Code Area**
 

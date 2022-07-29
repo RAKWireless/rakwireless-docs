@@ -11,14 +11,7 @@ next: ../Datasheet/
 
 # RAK13300 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock RAK13300 LPWAN Wireless Module and how to start using it.
-
-The example in this guide will allow you to receive data via LoRaP2P from another end device.
-
--->
 
 ## Prerequisite
 
@@ -191,7 +184,6 @@ If you have already installed the [RAKwireless Arduino BSP](https://github.com/R
   caption="Selecting RAK11200 as WisBlock Core"
 />
 
-
 2. Next, copy the following sample code into your Arduino IDE:
 
 ```c
@@ -322,8 +314,6 @@ void OnRxError(void)
 }
 ```
 
-
-
 3. You can now select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
 
 :::tip 📝 NOTE:
@@ -352,7 +342,6 @@ If you experience any error in compiling the example sketch, check the updated c
 ##### Setting up the Dummy Transmitter
 
 In this example, you will be using RAK11310 as the WisBlock Core and RAK19003 as the WisBlock Base for the dummy transmitter.
-
 
 1. You need to select RAK11310 as your WisBlock Core, as shown in **Figure 13**.
 
@@ -426,7 +415,6 @@ If you have already installed the [RAKwireless Arduino BSP](https://github.com/R
   width="90%"
   caption="Selecting RAK11200 as WisBlock Core"
 />
-
 
 2. Next, copy the following sample code into your Arduino IDE:
 
@@ -544,8 +532,6 @@ void send()
   Radio.Send(TxdBuffer, 5);
 }
 ```
-
-
 
 3. You can now select the right serial port and upload the code, as shown in **Figure 21** and **Figure 22**.
 

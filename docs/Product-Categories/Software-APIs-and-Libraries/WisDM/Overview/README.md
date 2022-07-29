@@ -316,14 +316,3 @@ More about the subscription plans and what they provide can be found on the [FAQ
 
 For more information about the subscription plan management, refer to the [FAQ](https://support.wisdm.rakwireless.com/hc/en-us/sections/4410156421399-Subscription) page. 
 
-
-<!--
-
-## Coming Soon
-
-- System log
-- Configurable trigger-based alerts
-- Performance status
-- Dashboard enhancement
-
--->

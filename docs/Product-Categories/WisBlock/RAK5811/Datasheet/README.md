@@ -217,16 +217,7 @@ In the ecosystem of WisBlock, the philosophy is to allow users to combine a WisB
 The RAK5811 is not compatible with RAK4601. The main reason is that RAK4601 doesn’t expose any ADC pin through the RAK5005-O baseboard.
 :::
 
-<!--
-:::tip 📝 NOTE 2:  RAK5801+RAK4202+RAK5005-O
-In order to combine a RAK5811 module, a RAK4202 which is a WisBlock Core module, and the RAK5005-O, the following modification must be introduced: 
-- In RAK5005-O, remove the R7. The R7 resistor is shown in **Figure 12**.
-- In RAK5811, remove R94 to R95, and use PA0 of STM32L151 to read the analog data of the channel “analog0”, and use PA2 of STM32L151 to read the analog data of Channel analog1. **Figure 13** shows the resistors R94 and R95 on the RAK5811 module.
 
-This combination has the following restrictions: 
-- The adapted RAK5005-O will not support battery power collection.
-:::
--->
 
 <rk-img
   src="/assets/images/wisblock/rak5811/datasheet/r7.png"

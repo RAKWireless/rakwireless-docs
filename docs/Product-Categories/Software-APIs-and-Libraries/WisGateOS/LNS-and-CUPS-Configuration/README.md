@@ -31,7 +31,6 @@ If you already have a TTN account, you can use your The Things ID credentials an
   caption="Console Page After a Successful Login"
 />
 
-
 2. Fill in the necessary information:
 
 - **Owner** â€“ Automatically filled by The Things Stack, based on user's account or created Organization.
@@ -41,7 +40,7 @@ If you already have a TTN account, you can use your The Things ID credentials an
 - **Gateway description (optional)** - Optional gateway description; can also be used to save notes about the gateway.
 - **Gateway Server address** - The address of the Gateway Server to connect to.
 - **Frequency plan** - The frequency plan for your region used by the gateway.
-  
+
 The other settings are optional and can be changed to satisfy your requirements.
 
 
@@ -51,7 +50,6 @@ The other settings are optional and can be changed to satisfy your requirements.
   caption="Adding a Gateway"
 />
 
-
 1. Scroll down and click **Create gateway**.
 
 <rk-img
@@ -59,7 +57,6 @@ The other settings are optional and can be changed to satisfy your requirements.
   width="100%"
   caption="Register the Gateway"
 />
-
 
 TTNv3 supports TLS server authentication and Client token, which requires a trust file and a key file in configuring the gateway to successfully connect it to the network. You can connect also the gateway to TTN V3 by using LNS or CUPS Server.
 
@@ -77,7 +74,6 @@ If you are going to use LNS server to connect to TTN V3, you need to generate a 
   caption="Overview Page"
 />
 
-
 2. In the **API keys page**, choose **+ Add API key**.
 
 
@@ -87,7 +83,6 @@ If you are going to use LNS server to connect to TTN V3, you need to generate a 
   caption="API Key Page"
 />
 
-
 3. The **Name field** is the name of the key, and you can type a name of your taste (for example: LNS_key). Then choose **Grant individual rights** and select **Link as Gateway to a Gateway for traffic exchange, i.e. read uplink and write downlink**.
 
 
@@ -96,7 +91,6 @@ If you are going to use LNS server to connect to TTN V3, you need to generate a 
   width="100%"
   caption="Generating an API LNS Key"
 />
-
 
 4. To generate the key, choose **Create API key**. A window will pop up, telling you to copy the generated key. 
 
@@ -128,9 +122,8 @@ The generated key must be copied and saved to a .txt file (or other), as it wonâ
   caption="Changing the Working Mode"
 />
 
-
 3. To set the changes, you need to select **Switch mode**. After that, the **Basics Station Configuration** pane settings will show up. 
-   
+
 4. To connect the gateway to TTNv3, the following parameters must be configured:
 
 - **Server** â€“ For server, you need to choose **LNS Server**.
@@ -160,7 +153,6 @@ You need to replace **LNS_API_KEY** with the key generated previously. There sho
   caption="LoRa Basics Station Settings"
 />
 
-
 5. To save the changes, click **Save & Apply**.
 
 If everything is configured right, the gateway should be connected to TTNv3 as Basics Station:
@@ -184,7 +176,6 @@ If everything is configured right, the gateway should be connected to TTNv3 as B
   caption="Overview Page"
 />
 
-
 2. On the **API keys page**, choose **+ Add API key**.
 
 <rk-img
@@ -192,7 +183,6 @@ If everything is configured right, the gateway should be connected to TTNv3 as B
   width="100%"
   caption="API Key Page"
 />
-
 
 3. In the **Name field**, type the name of their LNS key (for example - LNS_key). Choose **Grant individual rights**, then select **Link as Gateway to a Gateway for traffic exchange, i.e. read uplink and write downlink**.
 
@@ -202,7 +192,6 @@ If everything is configured right, the gateway should be connected to TTNv3 as B
   width="100%"
   caption="Generating a LNS API Key"
 />
-
 
 4. To generate the key, choose **Create API key**. The following window will pop up, telling you to copy the generated key. 
 
@@ -218,7 +207,6 @@ If everything is configured right, the gateway should be connected to TTNv3 as B
 
 The key must be copied and saved to a .txt file (or other), as it wonâ€™t be able to be viewed or copied after that.
 :::
-
 
 5. Click **I have copied the key** to proceed.
 
@@ -242,7 +230,6 @@ The key must be copied and saved to a .txt file (or other), as it wonâ€™t be abl
 The generated key must be copied and saved to a .txt file (or other), as it wonâ€™t be able to be viewed or copied after that.
 :::
 
-
 7. Click **I have copied the key** to proceed.
 
 8. Click on **General settings** and scroll down to **LoRa Basics Station LNS Authentication Key** and paste the copied **LNS** key there.
@@ -253,7 +240,6 @@ The generated key must be copied and saved to a .txt file (or other), as it wonâ
   width="100%"
   caption="Configuring the LNS Authentication Key"
 />
-
 
 9. To save the changes, click **Save changes**.
 
@@ -270,7 +256,6 @@ The generated key must be copied and saved to a .txt file (or other), as it wonâ
   width="100%"
   caption="Changing the Working Mode"
 />
-
 
 3. Select **Switch mode** to apply the change. After that, the **Basics Station Configuration** pane settings will show up. 
 
@@ -300,7 +285,6 @@ You need to replace **CUPS_API_KEY** with the key generated previously. There sh
   width="100%"
   caption="LoRa Basics Station Settings"
 />
-
 
 5. To save the changes, click **Save & Apply**.
 

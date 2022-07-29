@@ -14,13 +14,7 @@ certifications:
 
 # RAK4600 WisDuo LPWAN Module Datasheet
 
-<!---
-<rk-img
-  src="/assets/images/wisduo/rak4600-module/datasheet/overview/yb23mhfij8dwh5muoavk.png"
-  width="45%"
-  caption="RAK4600 WisDuo LPWAN Module"
-/>
---->
+
 
 ## Overview
 
@@ -59,9 +53,7 @@ The overview section covers the RAK4600 WisDuo LPWAN Module board overview where
   caption="RAK4600 WisDuo Top View™"
 />
 
-<!-- The figure above shows the top view of the RAK4600 WisDuo LPWAN Module. The dimensions of the Module are 15 x 23 x 2.5 mm. 
-(Mechanical Characteristics)
---->
+
 
 #### Block Diagram
 
@@ -80,7 +72,7 @@ The hardware specifications are categorized into five parts. It discusses the in
 
 #### Pin Definition
 
-<!---Provided in this section is the Pinout of the RAK4600 WisDuo LPWAN Module.--->
+
 
 
 

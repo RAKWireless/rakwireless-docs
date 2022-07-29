@@ -11,14 +11,7 @@ next: ../Datasheet/
 
 # RAK12500 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock RAK12500 GNSS Location Module and how to program with it.
-
-The information obtained from the WisBlock RAK12500 GNSS Location Module will then be printed over the USB debug port of the WisBlock Base board.
-
--->
 
 ## Prerequisite
 
@@ -133,7 +126,7 @@ The RAK12500 is a very accurate GNSS Module that contains a u-blox ZOE-M8Q chip.
 
 #### Initial Test of the RAK12500 WisBlock Module
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have, as shown in **Figure 7** to **Figure 9**.
 

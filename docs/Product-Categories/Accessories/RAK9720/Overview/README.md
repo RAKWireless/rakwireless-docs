@@ -12,7 +12,6 @@ tags:
 
 # A-Fix Bracket Kit
 
-
 Thank you for choosing **A-Fix Bracket Kit** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)

@@ -22,6 +22,5 @@ To use the utility, just press the **Perform reboot** button and your device wil
   caption="Performing Reboot"
 />
 
-
 After the reboot is complete, you will be asked to login into the gateway anew.
 

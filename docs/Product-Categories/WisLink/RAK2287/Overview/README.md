@@ -19,11 +19,7 @@ Thank you for choosing **RAK2287 WisLink LPWAN Concentrator** in your awesome Io
 * [RAK2287 3D Model](https://downloads.rakwireless.com/3D_File/WisLink/PWB-RAK2287.stp)
 * [Quick Start Guide for Raspberry Pi and RAK LPWAN Concentrators](https://docs.rakwireless.com/Knowledge-Hub/Learn/Raspberry-Pi-and-RAK-LPWAN-Concentrators/)
   
-<!-- <rk-img
-  src="/assets/images/wislink-lora/rak2287/datasheet/overview/aprgtyyf6arxkxu7rjyl.jpg"
-  width="50%"
-  caption="RAK2287 WisLink LPWAN Concentrator"
-/> -->
+
 
 ## Product Description
 
@@ -31,10 +27,7 @@ Thank you for choosing **RAK2287 WisLink LPWAN Concentrator** in your awesome Io
 
 This module is an exceptional, complete and cost efficient gateway solution offering up to 10 programmable parallel demodulation paths, an 8 x 8 channel LoRa packet detectors, 8 x SF5-SF12 LoRa demodulators and 8 x SF5-SF10 LoRa demodulators. It is capable of detecting uninterrupted combination of packets at 8 different spreading factors and 10 channels with continuous demodulation of up to 16 packets. This product is best for smart metering fixed networks and Internet-of-Things (IoT) applications, that can cover up to 500 nodes per km² in an environment of moderate interference.
 
-<!-- <rk-btn
-  src="../Quickstart/"
-  label="Get Started with RAK2287 WisLink LPWAN Concentrator"
-/> -->
+
 
 ## Product Features
 

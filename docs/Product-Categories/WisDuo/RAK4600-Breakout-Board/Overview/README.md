@@ -22,11 +22,7 @@ Thank you for choosing **RAK4600 Breakout Board** in your awesome IoT Project! �
 * [RAK4600 Breakout 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/PWB-RAK4600%20Breakout%20Board.stp)
 
 
-<!-- <rk-img
-  :src="`${$frontmatter.static_root}/rak4600-breakout-module.png`"
-  width="50%"
-  caption="RAK4600 Breakout Board"
-/> -->
+
 
 ## Product Description
 
@@ -38,12 +34,7 @@ The board complies with **LoRaWAN 1.0.2 specification**. It also supports Lora P
 
 The RF communication capabilities of the board (LoRa + BLE) make it suitable for a variety of applications in the IoT field, such as home automation, sensor networks, building automation, and personal area networks applications (health/fitness sensors and monitors).
 
-<!-- <rk-btn
-  src="/Product-Categories/WisDuo/RAK4600-Breakout-Board/Quickstart/#quick-start-guide"
-  label="Get Started with RAK4600 LPWAN Evaluation Board"
-/>
 
-<rk-quick-links :params="$page.frontmatter.params.qlinks1" /> -->
 
 ## Product Features
 
@@ -58,8 +49,4 @@ The RF communication capabilities of the board (LoRa + BLE) make it suitable for
 - Supply voltage: **2.0 ~ 3.6&nbsp;V**
 - Temperature range: **-40&nbsp;°C to +85&nbsp;°C**
 
-<!-- <rk-btn
-  src="https://store.rakwireless.com/products/rak4600-breakout-board"
-  label="Buy a RAK4600 Breakout Board"
-  _blank
-/> -->
+

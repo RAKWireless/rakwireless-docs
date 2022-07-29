@@ -11,13 +11,6 @@ next: ../Datasheet/
 
 # RAK12006 Quick Start Guide
 
-<!--
-## Introduction
-
-This guide introduces the RAK12006 WisBlock PIR Module and how to program with it.
-
-
--->
 
 ## Prerequisite
 
@@ -111,7 +104,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 #### Initial Test of the RAK12006 WisBlock Module
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 

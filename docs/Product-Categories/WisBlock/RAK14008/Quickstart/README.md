@@ -107,7 +107,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 #### Initial Test of the RAK14008 WisBlock Module
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have.
 
@@ -276,7 +276,6 @@ If you experience any error in compiling the example sketch, check the updated c
   width="65%"
   caption="Installing the compatible library for RAK14008 Module"
 />
-
 
 5. After the successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
 

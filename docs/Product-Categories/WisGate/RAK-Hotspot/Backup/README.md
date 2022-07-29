@@ -41,8 +41,6 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
   caption="Download SD Clone"
 />
 
-<!-- ![](/assets/images/wisgate/rak-hotspot/backup/mac/1.png) --->
-
 2. Once downloaded, open the application. You will be prompted to either buy the full version or continue using the trial (select this option).
 
 <rk-img
@@ -61,7 +59,6 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
   width="100%"
   caption="SD Clone Authentication"
 />
-
 
 2. Next, the application will request access to your SD storage, then click "**OK**" in both windows.
 
@@ -85,7 +82,6 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
   width="100%"
   caption="Save Image"
 />
-
 
 4. This will prompt a window where you select the location you want your image to be created at. Once you click on the blue "Save" button, the backup process will start.
 
@@ -159,7 +155,6 @@ Take care in removing the microSD card from the Hotspot. It is fragile; hence, u
   width="45%"
   caption="Selecting Storage Device"
 />
-
 
 2. Next, you need to provide a path to the file the data is going to be backed in. You can do this either by entering it manually in the text box or clicking the folder icon.
 

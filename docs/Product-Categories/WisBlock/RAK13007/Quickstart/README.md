@@ -11,13 +11,7 @@ next: ../Datasheet/
 
 # RAK13007 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the RAK13007 WisBlock Relay Module and how to program with it.
-
-
--->
 
 ## Prerequisite
 
@@ -187,7 +181,6 @@ If you have already installed the [RAKwireless Arduino BSP](https://github.com/R
 **/
 #include <Wire.h>
 
-
 void setup() {
   pinMode(WB_IO2, OUTPUT);
   digitalWrite(WB_IO2, HIGH);
@@ -195,7 +188,6 @@ void setup() {
   // Initialize serial for output.
   Serial.begin(115200);
 }
-
 
 void loop() {
   digitalWrite(WB_IO4, LOW);

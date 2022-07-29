@@ -12,13 +12,7 @@ certifications:
 ---
 
 # RAK7204 WisNode Sense Home Datasheet
-<!---
-<rk-img
-  src="/assets/images/wisnode/rak7204/datasheet/rak7204-overview.png"
-  width="30%"
-  caption="RAK7204 WisNode Sense Home"
-/>
--->
+
 
 ## Overview
 
@@ -85,7 +79,6 @@ See the supported range in the table below:
 | Korea         | KR920                |
 
 #### Electrical Characteristics
-
 
 The following are the electrical characteristics of RAK7204 WisNode Sense Home. [Contact us](mailto:support@rakwireless.com) if you need other details for your project.
 

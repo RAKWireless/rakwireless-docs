@@ -12,13 +12,7 @@ rak_img: /assets/images/wistrio/rak815/quickstart/1main/RAK815_home.png
 
 # RAK815 WisTrio LPWAN Tracker Datasheet
 
-<!---
-<rk-img
-  src="/assets/images/wistrio/rak815/datasheet/rak815-board.png"
-  width="30%"
-  caption="RAK815 Breakout Board"
-/>
--->
+
 
 ## Overview
 

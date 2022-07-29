@@ -18,20 +18,13 @@ Thank you for choosing **RAK8213 Pi HAT** in your awesome IoT Project! 🎉 To h
 * [RAK8213 Pi HAT 3D Model](https://downloads.rakwireless.com/3D_File/WisHat/PWB-RAK8213_PI_HAT.stp)
 * [Quick Start Guide for Raspberry Pi and RAK LPWAN Concentrators](https://docs.rakwireless.com/Knowledge-Hub/Learn/Raspberry-Pi-and-RAK-LPWAN-Concentrators/)
   
-<!-- <rk-img
-  :src="`${$frontmatter.static_root}/rak8213-pi-hat.png`"
-  width="75%"
-  caption="RAK8213 Pi Hat"
-/> -->
+
 
 ## Product Background
 
 **RAK8213 Pi HAT** is designed to work in conjunction with the **RAK8213 NB-IoT module**. It works as a converter for the RAK8213 mPCIe module to the **40-pin header connector** on the Raspberry Pi. Thus, the RAK8213 HAT allows one to easily add NB-IoT functionality to any Raspberry Pi.
 
-<!-- <rk-btn
-  src="/Product-Categories/WisHat/RAK8213-Pi-HAT/Datasheet/"
-  label="Get Started with RAK8213 Pi HAT"
-/> -->
+
 
 ## Product Features
 

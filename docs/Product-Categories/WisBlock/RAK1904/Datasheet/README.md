@@ -21,9 +21,9 @@ next: false
 
 ### Description
 
-RAK1904 is a WisBlock Sensor which extends the WisBlock system with a ST LIS3DH 3-axis acceleration sensor. A ready to use SW library and tutorial makes it easy to build up a motion detection and acceleration data acquisition system. It has an ultra-low-power high-performance three-axis linear accelerometer with a digital I2C interface. The device features ultra-low-power operational modes that allow advanced power saving and smart embedded functions.
+RAK1904 is a WisBlock Sensor that extends the WisBlock system with an ST LIS3DH 3-axis acceleration sensor. A ready-to-use SW library and tutorial make it easy to build up a motion detection and acceleration data acquisition system. It has an ultra-low-power high-performance three-axis linear accelerometer with a digital I2C interface. The device features ultra-low-power operational modes that allow advanced power saving and smart embedded functions.
 
-The accelerometer of the RAK1904 module can be dynamically configured to work in the scales of ±2g/±4g/±8g/±16g, and capable of measuring accelerations with output data rates from 1&nbsp;Hz to 5.3&nbsp;kHz.
+The accelerometer of the RAK1904 module can be dynamically configured to work in the scales of ±2g/±4g/±8g/±16g and is capable of measuring accelerations with output data rates from 1&nbsp;Hz to 5.3&nbsp;kHz.
 
 ### Features 
 * **User selectable scales**: ±2g/±4g/±8g/±16g
@@ -35,7 +35,7 @@ The accelerometer of the RAK1904 module can be dynamically configured to work in
 
 ## Specifications
 ### Overview
-<!-- Insert Picture of Sensor with its dimensions -->
+
 
 #### Mounting
 

@@ -50,7 +50,6 @@ RAK12014 module can be connected to the sensor's slot of [WisBlock Base](https:/
 
 ##### Assembling
 
-
 As shown in **Figure 2**, the location for Slot A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
 <rk-img
@@ -107,7 +106,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 In this example, you will be able to measure distance via Serial Monitor.
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 
@@ -135,7 +134,6 @@ In this example, you will be able to measure distance via Serial Monitor.
   caption="Selecting RAK11300 as WisBlock Core"
 />
 
-
 3. Copy the example code below:
 
 ::: details Click Here to View Example Code
@@ -154,8 +152,6 @@ In this example, you will be able to measure distance via Serial Monitor.
 #include <Wire.h>
 #include <vl53l0x_class.h>      // Click to install library: http://librarymanager/All#stm32duino_vl53l0x
 VL53L0X sensor_vl53l0x(&Wire, WB_IO2); 
-
-
 
 void setup() {
   pinMode(WB_IO2, OUTPUT);
@@ -181,7 +177,6 @@ void setup() {
     Serial.println("Init sensor_vl53l0x failed...");
   }
 }
-
 
 void loop() {
   // Read Range.
@@ -219,7 +214,6 @@ If you experience any error in compiling the example sketch, check the updated c
   caption="Installing the library"
 />
 
-
 5. Select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
 
 ::: tip 📝 NOTE
@@ -237,7 +231,6 @@ If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the *
   width="100%"
   caption="Uploading the sample code"
 />
-
 
 6. When you have successfully uploaded the sample code, you may open up your serial monitor as shown in **Figure 13**. You can try to experiment with the data by moving the sensor away from the detected surface.
 

@@ -17,7 +17,6 @@ To use the WisToolBox Desktop, make sure you meet the two requirements:
 1. A connected RAK device;
 2. An active internet connection the first time after the WisToolBox app starts. The application will update the latest configuration.
 
-
 The WisToolBox Desktop is available both in Windows and macOS. 
 
   * [Windows](https://www.microsoft.com/store/productId/9P6691TTW3J5)

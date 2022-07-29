@@ -143,7 +143,7 @@ Here are the main NMEA statements that the RAK1910 GPS receiver supports. Others
 - **NMEA VTG**: Provides information about the speed and course of the GPS receiver.
 - **NMEA GLL**: Provides information about the location of the GPS receiver.
 
-The most important NMEA statements are the GGA (Global positioning system fix data) statement, which provide time and position, together with GPS fixing-related data (number of satellites in use, and the resulting HDOP, age of differential data if in use, etc...); the RMC (Recommended Minimum data) statement, which provides location, course and speed, and date/time; and the GSA (GNSS DOP and Active Satellites) statement, which provides information about the GPS receiver operating mode, satellites used for navigation, and DOP (dilution of precision) values.
+The most important NMEA statements are the GGA (Global positioning system fix data) statement, which provides time and position, together with GPS fixing-related data (number of satellites in use, and the resulting HDOP, age of differential data if in use, etc.). The RMC (Recommended Minimum data) statement, which provides location, course, speed, and date/time; and the GSA (GNSS DOP and Active Satellites) statement, which provides information about the GPS receiver operating mode, satellites used for navigation, and DOP (dilution of precision) values.
 
 :::warning ⚠️ WARNING
 * The included active GPS antenna must be **securely attached** to the iPEX antenna connector on the board. This is very important, otherwise the module will not work.
@@ -152,7 +152,7 @@ The most important NMEA statements are the GGA (Global positioning system fix da
 
 #### Initial Test of the RAK1910 WisBlock Module
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select the WisBlock Core you have.
 
@@ -201,7 +201,6 @@ TinyGPS gps;
 String tmp_data = "";
 int direction_S_N = 0;  //0--S, 1--N
 int direction_E_W = 0;  //0--E, 1--W
-
 
 void setup()
 {
@@ -254,7 +253,6 @@ void direction_parse(String tmp)
         direction_S_N = 1;
     }
 }
-
 
 void loop()
 {

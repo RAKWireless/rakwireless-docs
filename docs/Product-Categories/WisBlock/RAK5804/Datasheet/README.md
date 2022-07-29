@@ -134,7 +134,6 @@ The J2 and J3 connectors use a [JST SH Connector](https://downloads.rakwireless.
 
 #### Pin Definition
 
-
 The RAK5804 module comprises a standard WisBlock Interface connector. This IO connector allows the RAK5804 module to be mounted on a WisBlock baseboard, such as the RAK5005-O. The pin order of the connector is shown in **Figure 6**.
 
 <rk-img

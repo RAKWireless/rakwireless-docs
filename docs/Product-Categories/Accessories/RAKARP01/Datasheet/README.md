@@ -89,7 +89,7 @@ RAKARP01 is a high-gain directional antenna is the latest in the RAKwireless LPW
 />
 
 1. Determine the placement of the antenna, take it and the accessories out of the package, and prepare your tools (a wrench).
-   
+
 2. Install the antenna to a ∅ 30 ~ 75&nbsp;mm mounting pole using the clamps, screw bolts, and saw-tooth clamps as shown in Figure 3. 
 
 3. Position the antenna and the pole in parallel, adjust the height, then fully tighten the upper and lower clamps' nuts.

@@ -17,12 +17,7 @@ Thank you for choosing **RAK811 Evaluation Board** in your awesome IoT Project! 
 * [Quick Start Guide](../Quickstart/)
 * [AT Command Manual](../AT-Command-Manual/)
 
-<!-- <rk-img
-  src="/assets/images/wisduino/rak811-evaluation-board/quickstart/overview/o5qqux3jaeyiiuosw0qi.jpg"
-  width="60%"
-  figure-number="1"
-  caption="WisDuino RAK811 Evaluation Board"
-/> -->
+
 
 ## Product Background
 
@@ -30,10 +25,7 @@ The **RAK811 Evaluation Board** is a development board that comes in an Arduino 
 
 The board integrates the **Semtech SX1276** and an **STM32 Chip** that comes along with firmware, which comes with AT command support. It is easy to configure via the Micro USB and connects with LoRaWAN Network Server in just a couple of minutes. Now, rapid testing is made easy.
 
-<!-- <rk-btn
-  src="/Product-Categories/WisDuino/RAK811-Evaluation-Board/Quickstart/"
-  label="Get Started with RAK811 WisDuino™"
-/> -->
+
 
 ## Product Features
 

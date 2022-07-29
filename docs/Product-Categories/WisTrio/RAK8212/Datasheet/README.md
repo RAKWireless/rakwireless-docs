@@ -12,13 +12,7 @@ rak_img: /assets/images/wistrio/rak8212/quickstart/overview/RAK8212_home.png
 
 # RAK8212 WisTrio iTracker Pro Datasheet
 
-<!---
-<rk-img
-  :src="`${$frontmatter.static_root}/rak8212-overview.png`"
-  width="30%"
-  caption="RAK8212 WisTrio iTracker Pro"
-/>
--->
+
 
 ## Overview
 

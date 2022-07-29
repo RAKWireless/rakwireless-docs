@@ -14,11 +14,7 @@ certifications:
 
 # RAK7243C WisGate Developer D3+ Gateway Datasheet
 
-<!-- <rk-img
-  src="/assets/images/wisgate/rak7243c/datasheet/1.rak7243c-overview.png"
-  width="50%"
-  caption="RAK7243C WisGate Developer D3+ Gateway"
-/> -->
+
 
 ## Overview
 
@@ -52,7 +48,7 @@ The overview covers the board overview of RAK7243C and its block diagram that di
 
 #### Board Overview
 
-<!--- The outer dimension of Pilot Gateway is **92 x 68.3 x 53.5 mm** as shown below --->
+
 
 <rk-img
   src="/assets/images/wisgate/rak7243c/datasheet/2.rak7243-dimensions.png"

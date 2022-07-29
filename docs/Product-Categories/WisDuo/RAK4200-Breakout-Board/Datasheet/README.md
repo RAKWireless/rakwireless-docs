@@ -11,13 +11,7 @@ prev: ../Quickstart/
 
 # RAK4200 Breakout Board Datasheet
 
-<!---
-<rk-img
-  src="/assets/images/wisduo/rak4200-breakout-board/datasheet/rak4200-breakout-module.png"
-  width="50%"
-  caption="RAK4200 Breakout Board"
-/>
--->
+
 
 ## Overview
 
@@ -59,7 +53,6 @@ The RAK4200 Breakout Board is shown in **Figure 1**. It displays the top view of
 />
 
 ### Hardware
-
 
 The hardware specification is categorized into four parts. It discusses the interfacing, pinouts, and its corresponding functions and diagrams. It also covers the electrical, mechanical, and environmental parameters that include the tabular data of the functionalities and standard values of the RAK4200 Breakout Board.
 

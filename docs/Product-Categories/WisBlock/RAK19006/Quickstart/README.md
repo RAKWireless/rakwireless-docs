@@ -11,11 +11,7 @@ next: ../Datasheet/
 
 # RAK19006 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock RAK19006 board and how to use it.
--->
 
 ## Prerequisite
 

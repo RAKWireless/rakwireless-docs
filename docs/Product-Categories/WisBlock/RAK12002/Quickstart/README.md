@@ -11,11 +11,7 @@ next: ../Datasheet/
 
 # RAK12002 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock RAK12002 board and how to use it.
--->
 
 ## Prerequisite
 
@@ -206,7 +202,6 @@ If you experience any error in compiling the example sketch, check the updated c
   caption="Locating the required library in the Library Manager"
 />
 
-
 4. Install the required library, as shown in **Figure 9**.
 
 <rk-img
@@ -214,7 +209,6 @@ If you experience any error in compiling the example sketch, check the updated c
   width="100%"
   caption="Installing the Library"
 />
-
 
 5. Select the correct port and upload your code, as shown in **Figure 10** and **Figure 11**.
 
@@ -237,7 +231,6 @@ If you experience any error in compiling the example sketch, check the updated c
   width="100%"
   caption="RAK12002 date/time logs"
 />
-
 
 7. You can set the time and date in the code, as shown in **Figure 13** and **Figure 14**.
 
@@ -341,7 +334,6 @@ If you experience any error in compiling the example sketch, check the updated c
   caption="Locating the required library in the Library Manager"
 />
 
-
 4. Install the required library, as shown in **Figure 17**.
 
 <rk-img
@@ -349,7 +341,6 @@ If you experience any error in compiling the example sketch, check the updated c
   width="100%"
   caption="Installing the Library"
 />
-
 
 5. Select the correct port and upload your code, as shown in **Figure 18** and **Figure 19**.
 
@@ -376,7 +367,6 @@ RAK11200 requires the BOOT0 pin to be configured properly before uploading. If n
   width="100%"
   caption="RAK12002 date/time logs"
 />
-
 
 7. You can set the time and date in the code, as shown in **Figure 21** and **Figure 22**.
 
@@ -481,7 +471,6 @@ If you experience any error in compiling the example sketch, check the updated c
   caption="Locating the required library in the Library Manager"
 />
 
-
 4. Install the required library, as shown in **Figure 25**.
 
 <rk-img
@@ -489,7 +478,6 @@ If you experience any error in compiling the example sketch, check the updated c
   width="100%"
   caption="Installing the Library"
 />
-
 
 5. Select the correct port and upload your code, as shown in **Figure 26** and **Figure 27**.
 
@@ -505,7 +493,6 @@ If you experience any error in compiling the example sketch, check the updated c
   caption="Uploading code"
 />
 
-
 6. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the RAK12002 date/time logs, as shown in **Figure 28**. You will be able to see the Time and Date in the Serial Monitor.
 
 <rk-img
@@ -513,7 +500,6 @@ If you experience any error in compiling the example sketch, check the updated c
   width="100%"
   caption="RAK12002 date/time logs"
 />
-
 
 7. You can set the time and date in the code, as shown in **Figure 29** and **Figure 30**.
 

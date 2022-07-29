@@ -18,7 +18,7 @@ prev: ../Quickstart/
 
 Execute the following steps to set up your AWS account and permissions:
 
-<!-- ## Set up Your AWS Account and Permissions --->
+
 
 ### Set up Roles and Policies in IAM
 
@@ -117,7 +117,6 @@ The examples in this document are intended only for dev environments. All device
 <b> Creating a Policy </b>
 
 Creating a policy gives the role permissions to describe the IoT endpoint and publish messages to AWS IoT.
-
 
 1. Go to the [IAM console](http://console.aws.amazon.com/iam).
 2. Choose **Policies** from the navigation pane.
@@ -362,7 +361,6 @@ Navigate to **System** > **Backup/Flash Firmware** > **Flash new firmware image*
   caption="Configuring Network Mode to Basic Station"
 />
 
-
 5. Configure URI, Port, and Authentication Mode.
 
 <rk-img
@@ -393,7 +391,6 @@ This section shows an example of how to join the AWS IoT LoRaWAN server.
   caption="Adding the Device Profile"
 />
 
-
 2. Add Service Profile.
 
 <rk-img
@@ -411,7 +408,6 @@ Before adding the destination, follow the Add IAM role for Destination to AWS Io
   width="70%"
   caption="Adding Destination"
 />
-
 
 4. Add Device.
 
@@ -574,7 +570,6 @@ def decode(event):
 
     return result
 
-
 def lambda_handler(event, context):
     data = decode(event)
     logger.info('Data: %s' % json.dumps(data))
@@ -670,7 +665,7 @@ In this section, create the IoT rule that forwards the device payload to your ap
     :::tip 📝 NOTE:
     The **Name of your Rule** is the information needed when you provision devices to run on AWS IoT Core for LoRaWAN.
     :::
- 
+
 5. Leave the default Rule query statement: '**SELECT * FROM 'iot/topic**' unchanged. This query has no effect at this time, as traffic is currently forwarded to the rules engine based on the destination.
 6. Under Set one or more actions, choose **Add action**.
 7. On the Select an action page, choose **Republish a message to an AWS IoT topic**. Scroll down and choose **Configure action**.
@@ -857,7 +852,7 @@ You will use IoT Analytics to visually display data via graphs if there is a nee
 ```sql
 SELECT * FROM 'project/sensor/decoded'
 ```
-    
+
 6. Choose **Add action**.
 7. Select **Send a message to IoT Analytics**.
 8. Choose **Configure Action**.

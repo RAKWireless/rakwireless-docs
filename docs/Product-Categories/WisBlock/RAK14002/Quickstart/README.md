@@ -47,7 +47,6 @@ RAK14002 module is part of the WisBlock Interface category and extends the WisBl
 
 ##### Assembling
 
-
 As shown in **Figure 2**, the location for the IO slot is properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
 
@@ -88,7 +87,6 @@ The procedure in disassembling any type of WisBlock modules is the same.
 ::: tip 📝 NOTE
 If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK14002 uses I2C and IO pins it can cause possible conflict especially on some IO modules. 
 :::
-
 
 After all this setup, you can now connect the battery and USB cable to start programming your WisBlock Core.
 
@@ -277,7 +275,6 @@ Arduino programs are usually referred to as sketches. The sketches for this modu
   caption="Open RAK14002 Example01_BasicReading Sketch"
 />
 
-
 4. You can now select the right serial port and upload the code, as shown in **Figure 24** and  **Figure 25**.
 
 <rk-img
@@ -295,7 +292,6 @@ RAK11200 requires BOOT0 pin to be configured properly first before uploading. If
   width="100%"
   caption="Uploading the RAK14002 example code on RAK11200"
 />
-
 
 5. When you successfully uploaded the Example01_BasicReading sketch, open the Serial Monitor of the Arduino IDE to check the sensor's reading logs. 
 
@@ -383,16 +379,6 @@ Arduino programs are usually referred to as sketches. The sketches for this modu
 
 After successfully uploaded the Example01_BasicReading sketch, open the Serial Monitor of the Arduino IDE to check the sensor's reading logs.
 
-<!-- Add log images here
-
-<rk-img
-  src="/assets/images/wisblock/rak14002/quickstart/cap1293_upload_rak11200.png"
-  width="100%"
-  caption="Uploading the RAK14002 example code on RAK11310"
-/>
-
--->
-
 
 ##### RAK11310 PlatformIO Setup (Optional)
 
@@ -400,7 +386,6 @@ After successfully uploaded the Example01_BasicReading sketch, open the Serial M
 :::tip 📝 NOTE:
 This procedure was tested only on Windows 10 and Ubuntu.
 :::
-
 
 1. First, install Raspberry Pi RP2040 platform.
 

@@ -362,7 +362,6 @@ If you experience any error in compiling an example sketch, check the updated co
   caption="Serial Output of the RAK13005 Controller Mode"
 />
 
-
 4. Upload the `RAK13005_linbus_slaver` **Peripheral** sketch.
 
 - Connect the second WisBlock with the RAK13005 in Peripheral mode then select `RAK13005_linbus_slaver`.
@@ -484,13 +483,7 @@ If you experience any error in compiling an example sketch, check the updated co
   caption="Successful code upload"
 />
 
-<!--
-<rk-img
-  src="/assets/images/wisblock/rak13005/quickstart/master_success.png"
-  width="100%"
-  caption="Successful code Upload"
-/>
--->
+
 
 - After the successful code upload, you can now open the Serial Monitor and see the Serial output.
 

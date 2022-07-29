@@ -95,7 +95,6 @@ Only the read commands have information in the replied message, while Write comm
 
 :::
 
-
 After sending a successful command to the module, the firmware developed, running in the external MCU, will expect a minimum string of `Ok\r\n`. On the other hand, when the command is not successfully executed by the module, you will receive a response in the following format:
 
 ```
@@ -218,7 +217,6 @@ LoRaWAN AT commands:
   at+get_config=lora:status
   at+set_config=lora:dutycycle_enable:X
   at+set_config=lora:send_repeat_cnt:X
-
 
 LoRaP2P AT commands:
 
@@ -701,7 +699,6 @@ With <b>*0,on,868100000,0,5</b> as an example，the following is the channel par
 
 <br>
 
-
 5. <b>at+set_config=lora:ch_mask:`<channel_number>:<status>`</b>
 
 This command is used to enable (on) or disable (off) a channel in the current region.
@@ -1054,7 +1051,6 @@ OK
 
 <br>
 
-
 17. <b>at+set_config=lora:class:`<class>`</b>
 
 This command is used to set LoRaWAN class to Class A, Class B, or Class C.
@@ -1271,7 +1267,6 @@ OK
 
 <br>
 
-
 24. <b>at+set_config=lora: send_repeat_cnt:`<num>`</b>
 
 This command is used to set the number of retransmitting attempts on an uplink message. When activated, the board will resend a message if its corresponding ACK (downlink) is not received after sending a confirmed uplink message. The default value is 0, which means that the board will not resend any message by default.
@@ -1454,7 +1449,6 @@ at+send=lorap2p:1234\r\n
 OK
 ```
 
-
 In LoRa P2P mode, the receiving node receives the data and outputs the data in the following format:
 
 ```
@@ -1556,7 +1550,7 @@ at+recv=<RSSI>,<SNR>,< Data Length >:< Data >
 ## Appendix II：TX Power by Region
 
 <b> EU868 </b>
- 
+
 By default, MaxEIRP is considered to be +16&nbsp;dBm. 
 
 | TXPower | Configuration (EIRP) |
@@ -1667,7 +1661,6 @@ However, the module's max TX power is only up to 20&nbsp;dBm.
 
 
 <b> CN470 </b>
-
 
 By default, MaxEIRP is considered to be +19.15&nbsp;dBm.
 
@@ -1923,7 +1916,6 @@ M in the following list is the length with the MAC header, and N is the maximum 
 ## Appendix IV: Pin Description of RAK811
 
 The pin definition of the RAK811 Evaluation Board can be reviewed in the [Pin Definition](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#pin-definition) section of the Datasheet.
-
 
 Listed is the summary of the pins of the RAK811 module:
 

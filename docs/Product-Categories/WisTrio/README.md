@@ -30,7 +30,6 @@ A tracker module with a built-in GPS, LoRa connectivity, and a variety of sensor
 
 <rk-head img="/assets/rakwireless/product-categories/WisTrio-Cellular.svg">
 
-
 A collection of cellular tracker modules with GPS and BLE features, and a variety of sensors.
 
 </rk-head>

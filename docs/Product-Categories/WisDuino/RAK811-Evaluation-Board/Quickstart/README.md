@@ -28,15 +28,7 @@ This guide covers the following topics:
 
 ## Prerequisites
 
-<!---
 
-<rk-img
-  src="/assets/images/wisduino/rak811-evaluation-board/quickstart/quick-start-guide/bv4v5828qbdlkrann1xt.jpg"
-  width="40%"
-  caption="WisDuino RAK811 Evaluation Board"
-/>
-
---->
 
 ### What do you need?
 
@@ -299,7 +291,6 @@ at+version
   caption="AT Command response"
 />
 
-
 As an example, these are the list of the parameters you need to configure in RAK811: 
 
 - LoRa join mode: **OTAA**
@@ -551,7 +542,6 @@ After configuring all the parameters, you need to reset the RAK811 Evaluation bo
 
 :::
 
-
 7. After resetting, join in ABP mode.
 
 ```
@@ -686,7 +676,6 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   caption="Chirpstack Adding Node into the Evaluation Board"
 />
 
-
 6. Once the node is created, fill in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
 
 Fill in the parameters requested:
@@ -720,7 +709,6 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
 ##### OTAA Mode
 
 ###### Configure the OTAA Mode on the Platform
-
 
 1. If you have selected “**DeviceProfile_OTAA**”, as shown in **Figure 43**, then after the device is created, an Application Key must be also created for this device. 
 
@@ -788,8 +776,6 @@ at+version
   width="90%"
   caption="at+version command response"
 />
-
-
 
 As an example, these are the list of the parameters you need to configure in RAK811: 
 
@@ -926,7 +912,6 @@ Check “**Disable counting frame verification**”. During the test, when the m
   caption="ChirpStack Console, Configuring a Device"
 />
 
-
 2. After selecting the ABP mode, the following parameters appear in the Activation tab: 
 
 Then, you can see that there are some parameters for ABP in the **“ACTIVATION”** item:
@@ -1046,7 +1031,6 @@ By using the ABP mode in the LoRaWAN protocol, it doesn’t require to join a ne
 
 :::
 
-
 8. Try to send data from RAK811 Evaluation Board to ChirpStack.
 
 ```
@@ -1084,14 +1068,12 @@ at+set_config=lora:work_mode:1
   caption="P2P Initialization"
 />
 
-
 4. Then, configure LoRa P2P parameters for both of them.
 
 
 ```
 at+set_config=lorap2p:XXX:Y:Z:A:B:C
 ```
-
 
 For this example, the LoRa parameters are the following:
 
@@ -1120,7 +1102,6 @@ at+set_config=lorap2p:869525000:7:0:1:5:5
   caption="Configuring P2P in both RAK811 Evaluation Board"
 />
 
-
 5. Set the transmission mode of the module. Unit 1 is configured as the sender, and Unit 2 is set to the receiver by AT command.
 
 ```
@@ -1134,7 +1115,6 @@ at+set_config=lorap2p:transfer_mode:1
   width="90%"
   caption="Setting Modes in both RAK811 Evaluation Board"
 />
-
 
 6. Try sending a message from Unit 1 to Unit 2. 
 

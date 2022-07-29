@@ -13,11 +13,7 @@ tags:
 
 ## Prerequisites
 
-<!-- <rk-img
-  src="/assets/images/wisgate/rak7244/quickstart/2.quickstart/rak7244_overview2.jpg"
-  width="100%"
-  caption="RAK7244 Product Overview"
-/> -->
+
 
 ### What Do You Need?
 
@@ -441,7 +437,6 @@ If you want to use TTN for LoRa network server, you can skip the **If the Server
   width="75%"
   caption="Configure ChirpStack channel plan"
 />
-
 
 First, select **1 ChirpStack Channel-plan configuration** for configuring your frequency channel.
 

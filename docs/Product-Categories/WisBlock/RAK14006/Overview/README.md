@@ -25,10 +25,10 @@ Thank you for choosing **RAK14006 WisBlock Rotary Encoder Module** in your aweso
 * [40-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
 * [WisBlock IO Tutorial](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
 
-<!--**Examples** -->
 
-<!--For All WisBlock Core: -->
-<!--* [Sample Code: RAK12012](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK12005_WaterDetector/RAK12005_WaterDetector.ino)-->
+
+
+
 
 ## Product Description
 

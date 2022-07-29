@@ -41,7 +41,6 @@ This guide is for the EU868 frequency band.
   caption="TTN console homepage"
 />
 
-
 3. Fill in the needed information:
 - **Owner**- Automatically filled by The Things Stack, based on the user's account or created Organization.
 - **Gateway ID** - This will be the unique ID of the user's gateway in the Network. Note that the ID must contain only lowercase letters, numbers, and dashes (-).
@@ -65,7 +64,6 @@ This guide is for the EU868 frequency band.
   caption="Adding a gateway"
 />
 
-
 4. To register the gateway, scroll down and click **Create gateway**. 
 
 
@@ -74,7 +72,6 @@ This guide is for the EU868 frequency band.
   width="100%"
   caption="Registering the gateway"
 />
-
 
 TTNv3 supports **TLS Server Authentication** and **Client token**, which require a trust file and a key file to configure the gateway to successfully connect it to the network. You can connect your gateway to TTNv3 by using either LNS or CUPS Server.
 
@@ -99,7 +96,6 @@ TTNv3 supports **TLS Server Authentication** and **Client token**, which require
   caption="API key page"
 />
 
-
 3. In the **Name field**, type the name of the key (for example - Ins_key). Choose **Grant individual rights** and select **Link as Gateway to a Gateway for traffic exchange, i.e. read uplink and write downlink.**
 
 <rk-img
@@ -107,7 +103,6 @@ TTNv3 supports **TLS Server Authentication** and **Client token**, which require
   width="100%"
   caption="Generating an API key"
 />
-
 
 4. To generate the key, choose the **Create API key**. A window will pop up, prompting to copy the generated key. 
 
@@ -136,7 +131,6 @@ Copy the key and save it in a `.txt` file (or other) because you won't be able t
   width="100%"
   caption="Changing the working mode"
 />
-
 
 3. Expand the Basics Station settings by clicking **Configure Basics Station server setup.**
 
@@ -181,7 +175,6 @@ Authorization: YOUR_API_KEY
   caption="Basics Station settings"
 />
 
-
 4. To save the changes, click **Save Changes**.
 
 Now, the gateway is connected to TTNv3 as Basics Station.
@@ -215,7 +208,6 @@ Now, the gateway is connected to TTNv3 as Basics Station.
   caption="API key page"
 />
 
-
 3. In the **Name field**, type the name for the LNS key (for example - lns_key). Choose **Grant individual rights** and select **Link as Gateway to a Gateway for traffic exchange, i.e. read uplink and write downlink.**
 
 <rk-img
@@ -223,7 +215,6 @@ Now, the gateway is connected to TTNv3 as Basics Station.
   width="100%"
   caption="Generating an API key"
 />
-
 
 4. To generate the key, click **Create API key**. The following window will pop up, prompting to copy the generated key.
 
@@ -236,7 +227,6 @@ Now, the gateway is connected to TTNv3 as Basics Station.
 :::warning ⚠️ WARNING
 Copy the key and save it in a `.txt` file (or other) because you won't be able to view or copy your key afterward. 
 :::
-
 
 5. Click **I have copied the key** to proceed to generate the LNS key.
 
@@ -253,7 +243,6 @@ Copy the key and save it in a `.txt` file (or other) because you won't be able t
   caption="Generating a CUPS key"
 />
 
-
 7. Click on the **Create API key.**
 
 <rk-img
@@ -261,7 +250,6 @@ Copy the key and save it in a `.txt` file (or other) because you won't be able t
   width="70%"
   caption="Copying CUPS key"
 />
-
 
 8. Click **I have copied the key** to proceed. 
 
@@ -272,7 +260,6 @@ Copy the key and save it in a `.txt` file (or other) because you won't be able t
   width="100%"
   caption="Configuring the LNS authentication keys"
 />
-
 
 10.  Scroll down and click **Save changes** to save the settings. 
 
@@ -296,7 +283,6 @@ Copy the key and save it in a `.txt` file (or other) because you won't be able t
   caption="Expand Basics Station settings"
 />
 
-
 4. To connect the gateway to TTNv3 with CUPS Server, configure the following parameters:
 
 - **Basics Station Server Type**– For server type, choose **CUPS Server**.
@@ -314,7 +300,7 @@ For this tutorial, the gateway is connected to the European cluster. For Europe 
 - **Authentication Mode** – Choose **TLS server authentication and Client token**. When selected, the **Trust (CA Certificate) and Client token field** will show up.
 - **Trust (CA Certificate)** – For trust upload the **Let’s Encrypt ISRG ROOT X1 Trust** certificate by clicking **choose file**. The file with the certificate can be downloaded [directly](https://letsencrypt.org/certs/isrgrootx1.pem).
 - **Client Token** - This is the generated CUPS key. The key must start with **Authorization:**.
-  
+
 For example:
   
   ```

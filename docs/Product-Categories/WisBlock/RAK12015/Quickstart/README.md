@@ -11,12 +11,7 @@ next: ../Datasheet/
 
 # RAK12015 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the RAK12015 WisBlock Vibration Detection Module and how to use it.
-
--->
 
 ## Prerequisite
 
@@ -56,7 +51,6 @@ RAK12015 module can be connected to the IO slot of [WisBlock Base](https://docs.
 #### Assembling and Disassembling of WisBlock Modules
 
 ##### Assembling
-
 
 As shown in **Figure 2**, the location for the IO slot is properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
@@ -137,7 +131,6 @@ In this example, you will monitor if this sensor is triggered by nearby vibratio
   caption="Selecting RAK11300 as WisBlock Core"
 />
 
-
 3. Copy the example code below:
 
 ::: details Click Here to View Example Code
@@ -208,7 +201,6 @@ void interruptHandle1(void)
 If you experience any error in compiling the example sketch, check the updated code for the RAK12015 WisBlock Vibration Detection Sensor Module that can be found on the [RAK12015 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/561cfc8ad9d1b0f8c8f2e5c7223f5fd4d45f273f/examples/common/IO/RAK12015_Shock_801S.ino)
 :::
 
-
 4. Then select the right Serial Port and upload the code, as shown in **Figure 9** and **Figure 10**.
 
 ::: tip 📝 NOTE
@@ -242,10 +234,4 @@ If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the *
   caption="Triggered sensor reading in Serial Monitor"
 />
 
-<!--You can adjust the sensor's sensitivity by adjusting the potentiometer using a flat screwdriver as shown in **Figure 13**
 
-<rk-img
-  src="/assets/images/wisblock/rak12015/quickstart/potentiometer.png"
-  width="60%"
-  caption="RAK12015 Sensitivity Adjustment"
-/>-->

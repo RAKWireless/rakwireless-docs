@@ -25,7 +25,7 @@ RUI3 is compatible to the following RAK LPWAN modules:
 | [RAK3172-SiP](/Product-Categories/WisDuo/RAK3172-SiP/Overview/)                                       | [RAK3172-SiP RUI3 Guide](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#rak3172-sip-as-a-stand-alone-device-using-rui3)
 | [RAK3272-SiP](/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/Overview/)                        | [RAK3272-SiP RUI3 Guide](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/Quickstart/#rak3272-sip-breakout-board-as-a-stand-alone-device-using-rui3)
 
-The interfaces of RUI3 to the RAK modules are via UART, USB, BLE, and NFC. The physical and wireless RUI3 interfaces are abstracted to behave as Serial Port where three [RUI3 Serial Operating Modes](/RUI3/Serial-Operating-Modes/#rui3-serial-operating-modes) can be configured by the user. You can check on the modules above to see the quick start guide and datasheet of the specific module.
+The interfaces of RUI3 to the RAK modules are via UART, USB, BLE, and NFC. The physical and wireless RUI3 interfaces are abstracted to behave as Serial Port, where three [RUI3 Serial Operating Modes](/RUI3/Serial-Operating-Modes/#rui3-serial-operating-modes) can be configured by the user. You can check the modules above to see the quick start guide and datasheet of the specific module.
 
 ### RUI3 Software Guide
 
@@ -49,7 +49,7 @@ For you to compile and upload to the RAK module the RUI3 codes, you need to have
 
 The RAK LPWAN modules with RUI3 can also be interfaced with an external host via [AT command mode](/RUI3/Serial-Operating-Modes/AT-Command-Manual/) and [Binary command mode](/RUI3/Serial-Operating-Modes/Binary-Command-Manual/). A custom serial interface can be created by the user using [Custom Mode](/RUI3/Serial-Operating-Modes/Custom-Mode/). When the serial interface is configured for Custom mode, the standard AT commands are disabled and will not be accepted anymore by the module unless switched again to AT mode.
 
-[WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview/) is also a compatible software tool to RUI3-powered devices. It can set up the LoRa parameters and configurations of the device and can also manage firmware updates.
+[WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview/) is also a compatible software tool with RUI3-powered devices. It can set up the LoRa parameters and configurations of the device and can also manage firmware updates.
 
 #### RUI3 Supported IDE
 

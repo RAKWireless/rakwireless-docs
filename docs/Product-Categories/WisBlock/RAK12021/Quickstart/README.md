@@ -92,7 +92,6 @@ The procedure in disassembling any type of WisBlock modules is the same.
 If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12021 uses I2C communication lines, and it can cause possible conflict, especially on some IO modules. 
 :::
 
-
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
 :::warning ⚠️ WARNING
@@ -239,7 +238,6 @@ If you experience any error in compiling the example sketch, check the updated c
   width="65%"
   caption="Installing the compatible library for RAK12021 Module"
 />
-
 
 5. After the successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
 

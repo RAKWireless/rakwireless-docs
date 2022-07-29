@@ -11,12 +11,7 @@ next: ../Datasheet/
 
 # RAK12012 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the RAK12012 Wisblock IO Module and how to use it.
-
--->
 
 ## Prerequisite
 
@@ -57,7 +52,6 @@ The RAK12012 WisBlock IO Module can be mounted on the IO slot of the WisBlock Ba
 #### Assembling and Disassembling of WisBlock Modules
 
 ##### Assembling
-
 
 As shown in **Figure 2**, the location for the IO slot is properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
@@ -113,7 +107,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 In this example, you will be getting the blood oxygen level indicated as SpO2, which is the percent saturation of oxygen in the blood.
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have, as shown in **Figure 6**, **Figure 7**, and **Figure 8**.
 
@@ -140,7 +134,6 @@ In this example, you will be getting the blood oxygen level indicated as SpO2, w
   width="100%"
   caption="Selecting RAK11300 as WisBlock Core"
 />
-
 
 3. Copy the example code below.
 

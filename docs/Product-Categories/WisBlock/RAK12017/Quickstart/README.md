@@ -1,5 +1,5 @@
 ---
-rak_desc: This contains instructions and tutorials on installing and deploying your RAK12017. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
+rak_desc: Ccontains instructions and tutorials on installing and deploying your RAK12017. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
 rak_img: /assets/images/wisblock/rak12017/overview/RAK12017_buy.png
 tags:
   - quickstart
@@ -49,7 +49,6 @@ RAK12017 module can be connected to the IO slot of [WisBlock Base](https://docs.
 #### Assembling and Disassembling of WisBlock Modules
 
 ##### Assembling
-
 
 As shown in **Figure 2**, the location for the IO slot is properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
@@ -105,7 +104,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 In this example, you will be able to see if the IR Status is sensing or not using the Serial Monitor.
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 
@@ -129,7 +128,6 @@ In this example, you will be able to see if the IR Status is sensing or not usin
   width="100%"
   caption="Selecting RAK11300 as WisBlock Core"
 />
-
 
 3. Copy the example code below.
 

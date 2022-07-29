@@ -16,7 +16,7 @@ Thank you for choosing **RAK5804 WisBlock Interface Extension Module** in your a
 * [RAK5804 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
+
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK5804 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK5804.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)

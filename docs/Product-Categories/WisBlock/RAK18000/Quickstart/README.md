@@ -11,14 +11,7 @@ next: ../Datasheet/
 
 # RAK18000 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock RAK18000 PDM Stereo Microphone Module and how to program with it.
-
-The information obtained from the PDM Stereo Microphone Module will then be printed over the USB debug port of the WisBlock Base board.
-
--->
 
 ## Prerequisite
 
@@ -116,7 +109,7 @@ The RAK18000 is based on two MP34DT06J microphone modules. The RAK18000 is a dig
 
 #### Initial Test of the RAK18000 WisBlock Module
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 
@@ -183,7 +176,6 @@ If you experience any error in compiling the example sketch, check the updated c
 - [RAK18000 for RAK11200](https://github.com/RAKWireless/WisBlock/tree/6a8b314f979f6a0c316b38b309d9fc6cd5c9a077/examples/RAK11200/IO/RAK18000_Stereo)
 - [RAK18000 for RAK11310](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/IO/RAK18000_Stereo)
 :::
-
 
 4. After opening the sample sketch, choose your WisBlock Core then select the right serial port and upload the code, as shown in **Figure 12** and **Figure 13**.
 

@@ -13,11 +13,7 @@ tags:
 
 ## Prerequisites
 
-<!-- <rk-img
-  src="/assets/images/wisgate/rak7258/quickstart/2.quickstart/rak7258-overview2.jpg"
-  width="75%"
-  caption="RAK7258 WisGate Edge Lite Internal Board"
-/> -->
+
 
 ### What Do You Need?
 

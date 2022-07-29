@@ -18,7 +18,7 @@ Thank you for choosing **RAK1904 WisBlock 3-axis Acceleration Sensor Module** in
 * [RAK1904 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
+
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK1904 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK1904.stp)
 * [24-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
@@ -35,9 +35,9 @@ For WisBlock Core RAK4630:
 
 ## Product Description
 
-RAK1904 is a WisBlock Sensor which extends the WisBlock system with a ST LIS3DH 3-axis acceleration sensor. A ready to use SW library and tutorial makes it easy to build up a motion detection and acceleration data acquisition system. It has an ultra-low-power high-performance three-axis linear accelerometer with a digital I2C interface. The device features ultra-low-power operational modes that allow advanced power saving and smart embedded functions.
+RAK1904 is a WisBlock Sensor that extends the WisBlock system with an ST LIS3DH 3-axis acceleration sensor. A ready-to-use SW library and tutorial make it easy to build up a motion detection and acceleration data acquisition system. It has an ultra-low-power high-performance three-axis linear accelerometer with a digital I2C interface. The device features ultra-low-power operational modes that allow advanced power saving and smart embedded functions.
 
-The accelerometer of the RAK1904 module can be dynamically configured to work in the scales of ±2g/±4g/±8g/±16g, and capable of measuring accelerations with output data rates from 1&nbsp;Hz to 5.3&nbsp;kHz.
+The accelerometer of the RAK1904 module can be dynamically configured to work in the scales of ±2g/±4g/±8g/±16g and is capable of measuring accelerations with output data rates from 1&nbsp;Hz to 5.3&nbsp;kHz.
 
 ## Product Features
 

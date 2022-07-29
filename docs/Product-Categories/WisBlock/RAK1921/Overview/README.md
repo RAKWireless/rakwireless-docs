@@ -19,7 +19,7 @@ Thank you for choosing **RAK1921 WisBlock OLED Display** in your awesome IoT Pro
 * [RAK1921 Quick Start Guide](../Quickstart)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
+
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK1921 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK1921.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
@@ -34,19 +34,7 @@ For All WisBlock Core Modules:
 
 **RAK1921** is a **WisBlock Display** module, which extends the **WisBlock** system with an OLED display. A ready to use SW library and tutorial makes it easy to visualize data of your **WisBlock** solution.
 
-<!--
-The RAK1921 module is part of the WisBlock series that belongs to the accessory category. This module was designed to be part of a production-ready IoT solution in a modular way. As part of the accessory category, it is not mandatory to be part of a final solution, but on a certain occasion, it provides competitive advantages and improves the usability of the final solution.
 
-RAK1921 is an OLED display module with a **128×64 dot matrix**. The main characteristics of this module are the following:
-
-- High Brightness
-- Self-emission
-- High Contrast Ratio
-- Slim/thin Outline
-- Wide Viewing Angle
-- Wide Temperature Range
-- Low Power Consumption
--->
 
 ## Product Features
 

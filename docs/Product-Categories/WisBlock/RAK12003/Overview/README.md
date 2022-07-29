@@ -13,7 +13,7 @@ tags:
 
 # RAK12003 WisBlock Infrared Temperature Sensor Module
 
-Thank you for choosing **RAK12003 WisBlock Infrared Temperature Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK12003 WisBlock Infrared Temperature Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK12003 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -42,7 +42,7 @@ The RAK12003 WisBlock Infrared Temperature Sensor Module is part of the RAKwirel
   * 50&nbsp;° field of view
   * -20&nbsp;°C to 85&nbsp;°C operational temperature range
   * Refresh rate configurable between 0.5&nbsp;Hz to 64&nbsp;Hz
-  * Power Supply Voltage: 3.3V - 3.6V
+  * Power Supply Voltage: 3.3&nbsp;V - 3.6&nbsp;V
   * Sleep current: < 2.5&nbsp;µA 
   * Chipset: Melexis MLX90632SLD-DCB-000-RE
 

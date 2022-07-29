@@ -18,7 +18,7 @@ Thank you for choosing **RAK14000 WisBlock E-Ink Display Module** in your awesom
 * [RAK14000 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
+
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK14000 E-Ink Display Module 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK14000.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
@@ -30,9 +30,7 @@ For All WisBlock Core Modules:
 
 * [Sample Code: Epaper Monochrome](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK14000-Epaper-Monochrome)
 
-<!--
-* [Sample Code: Epaper Tri-Color](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK14000-Epaper-TriColor)
--->
+
 
 ## Product Description
 
@@ -60,9 +58,9 @@ There are two versions of RAK14000 module for sale in the RAKwireless Store, the
     * Display Size: 2.13 inches
 
 ## Prerequisites  
-  
+
 To use the **RAK14000 E-Ink Display Module**, you need a **WisBlock Base** to plug the module in. The WisBlock Base acts as a power supply for the RAK14000 WisBlock E-Ink module. Also, you need a **WisBlock Core** to control your module. 
-  
+
 After the successful mounting of **RAK14000** module to the IO Port of a WisBlock Base, you can now proceed to interface the E-Ink Display and Three-Button Module.  
 
 

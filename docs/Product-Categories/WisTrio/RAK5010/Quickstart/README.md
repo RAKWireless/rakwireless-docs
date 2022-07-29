@@ -13,13 +13,7 @@ rak_img: /assets/images/wistrio/rak5010/quickstart/1.overview/RAK5010_home.png
 
 ## Prerequisites
 
-<!---
-<rk-img
-  src="/assets/images/wistrio/rak5010/quickstart/2.quick-start-guide/fqyo41hvkupnrljccsam.jpg"
-  width="30%"
-  caption="Front View of RAK5010"
-/>
--->
+
 
 ### What do you need?
 
@@ -105,7 +99,6 @@ There are three ways that you can check the logs for debugging purposes on your 
 | Flash Size | 1028&nbsp;KB | 
 | RAM Size | 256&nbsp;KB | 
 
-
 4. Connect to your RAK5010 by navigating through **File>Connect** in the Main Menu. Alternatively, you could just press "**F2**" to do the same process.
 
 <rk-img
@@ -136,7 +129,6 @@ There are three ways that you can check the logs for debugging purposes on your 
   width="90%"
   caption="RAK5010 and USB-UART Connection"
 />  
-
 
 2. Open a serial port tool in your PC. If you don't have a serial port tool yet, download and install the RAK Serial Port Tool.
   
@@ -219,7 +211,6 @@ at+version
   caption="nRF Connect App in Android and IOS"
 />  
 
-
 2. Make sure the Bluetooth on your mobile is turned on. Open the application and you will see all BLE devices in range in the scan list.
 
 
@@ -284,7 +275,6 @@ In this section, you will learn more on how to connect Cellular Network of your 
 
 As described in the previous section, there are three ways to configure our RAK5010: through UART, BLE, and micro USB. For this section, configuring the RAK5010 through UART is used as an example.
 
-
 There are two ways to connect and send packets to Cellular Network: **Manual** and **Automatic**.
 
 #### 1. Connecting Cellular Network and Sending Packet over Cellular Manually
@@ -336,7 +326,6 @@ at+set_config=cellular:(AT+COPS=1,0,"CHINA MOBILE",0)
   width="70%"
   caption="Configuring the Operator"
 /> 
-
 
 Now, continue to configure the network:
 
@@ -641,7 +630,6 @@ An easy and quick way to get started with your RAK5010 is through using a pre-co
   width="80%"
   caption="Secure DFU Service in the Nordic App"
 />
-
 
 4. Choose **Secure DFU Service** and click the button highlighted in red as shown in Figure 45.
 

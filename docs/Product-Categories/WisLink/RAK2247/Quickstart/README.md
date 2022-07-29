@@ -14,11 +14,7 @@ rak_img: /assets/images/wislink-lora/rak2247/quickstart/1.main/RAK2247_home.png
 
 ## Prerequisites
 
-<!-- <rk-img
-  src="/assets/images/wislink-lora/rak2247/quickstart/2.quickstart/rak2247_1.png"
-  width="100%"
-  caption="RAK2247 WisLink LPWAN Concentrator Components"
-/> -->
+
 
 ### What Do You Need?
 
@@ -26,9 +22,7 @@ Before going through each and every step in the installation and guide of the RA
 
 1. RAK2247 WisLink LPWAN Concentrator
 2. [mPCIe to USB Board](https://store.rakwireless.com/products/mpcie-to-usb-board)
-   <!-- 2. RAK2247 Pi Hat (Not included in the package) -->
-   <!-- 3. Raspberry Pi 3B+ (Not included in the package)  -->
-   <!-- 4. 16GB SD Card (included) + Card Reader -->
+
 3. A Windows/Mac OS/Linux Computer
 
 ### What's Included in the Package?
@@ -43,10 +37,6 @@ Before going through each and every step in the installation and guide of the RA
 
 ### RAK2247 + x86 Linux PC
 This section explains the basic steps on how to interface the RAK2247 WisLink LPWAN Concentrator with a Linux Operating System on a computer.
-
-<!-- * The following devices are necessary for the interface:
-  * RAK2247 WisLink LPWAN Concentrator
-  * [mPCIe to USB Board](https://store.rakwireless.com/products/mpcie-to-usb-board) -->
 
 1. Insert the RAK2247 mPCIe board into the USB carrier board and plugged into a free USB port of your PC. Your Linux PC should recognize it as a USB device.
 
@@ -103,7 +93,6 @@ GATEWAY_EUI_NIC=”wlx6045bdf0cf64h0”
 
 Again, the values are just an example. Remember to do this for all 3 files in step 4.
 
-
 5. Change the `global_conf.json` that will be copied during installation by replacing the `global_conf.eu_863_870.json` in the end of the (install.sh file)[https://github.com/RAKWireless/rak_common_for_gateway/blob/master/lora/rak2247_usb/install.sh] to one of those inside `/global_conf` or a custom one. (**EU868 is the default**)
 ```sh
 cp global_conf/global_conf.eu_863_870.json $INSTALL_DIR/packet_forwarder/lora_pkt_fwd/global_conf.json
@@ -143,7 +132,6 @@ cp -rf packet_forwarder /opt/ttn-gateway/
 cp ../ttn-gateway.service /lib/systemd/system/
 systemctl enable ttn-gateway.service
 ```
-
 
 8. Save “**install.sh**” file and execute it in order to install: 
 

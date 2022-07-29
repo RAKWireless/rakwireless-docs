@@ -27,7 +27,7 @@ Moreover, it supports different types of mounting options such as pole, wall, DI
 
 ## Enclosure Mechanical Dimensions
 
-<!-- Insert enclosure's mechanical dimensions -->
+
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/s-enclosure.png"

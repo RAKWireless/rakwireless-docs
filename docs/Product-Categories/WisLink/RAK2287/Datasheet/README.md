@@ -20,11 +20,7 @@ rak_img: /assets/images/wislink-lora/rak2287/quickstart/1main/RAK2287_home.png
 
 # RAK2287 WisLink LPWAN Concentrator Datasheet
 
-<!-- <rk-img
-  src="/assets/images/wislink-lora/rak2287/datasheet/overview/aprgtyyf6arxkxu7rjyl.jpg"
-  width="50%"
-  caption="RAK2287 WisLink LPWAN Concentrator"
-/> -->
+
 
 ## Overview
 

@@ -102,7 +102,6 @@ brew install libusb
 
 #### Linux
 
-
 Open the terminal on your Linux machine and type the following command:
 
 ```
@@ -218,7 +217,6 @@ But before installing, check the list first to know the required package for you
     </tr>
 </tbody>
 </table>
-
 
 To install the support package, use the following command:    
 

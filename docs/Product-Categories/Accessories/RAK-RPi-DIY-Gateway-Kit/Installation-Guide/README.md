@@ -81,7 +81,6 @@ Skip the following step if the version of your kit is the non-cellular one, and 
   caption="Mounting the concentrator to the Pi HAT"
 />
 
-
 5. Mount the RAK2287 / RAK5146 Pi HAT with the attached concentrator on top of the RAK2013 WisLink Cellular HAT (in the cellular variant) or directly on the Raspberry Pi 4 (in the non-cellular variant). Secure the Pi HAT with 4 roundhead bolts (2,5 mm in outside diameter).
 
 <rk-img
@@ -89,7 +88,6 @@ Skip the following step if the version of your kit is the non-cellular one, and 
   width="60%"
   caption="Mounting the Pi HAT to the assembly"
 />
-
 
 6. Before mounting the RAK5146 LPWAN concentrator, fix RP-SMA Female and SMA Female connectors on the upper holes of the enclosure by using the included washers and nuts.
 
@@ -103,7 +101,6 @@ The RP-SMA Female connector is for the LoRa IPEX connector of the RAK5146 LPWAN 
   caption="Mounted concentrator"
 />
 
-
 7. To close the enclosure, attach the top heatsink plate on top using four flathead bolts.
 
 <rk-img
@@ -111,7 +108,6 @@ The RP-SMA Female connector is for the LoRa IPEX connector of the RAK5146 LPWAN 
   width="60%"
   caption=" Mounting top heatsink cover on the enclosure"
 />
-
 
 8. Attach the LoRa, GPS, and LTE (only in the Cellular variant) antennas to the DIY gateway by screwing them to the corresponding connectors on the side. 
 

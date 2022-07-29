@@ -42,7 +42,6 @@ You can also use a [RAK19005 WisBlock Sensor Extension Cable](https://store.rakw
 - **Size**    
     * **RAK19010** has a size of only 30 x 60&nbsp;mm, which lets you create solutions that fit into the smallest housings.
 
-
 If you can't find a WisBlock module that fits your IoT requirements, use the standard connectors of WisBlock to develop your specific function module. WisBlock supports open-source hardware architecture and you can find tutorials showing how to create your own [Awesome WisBlock](https://github.com/RAKWireless/Awesome-WisBlock) module.
 
 ### Applications
@@ -269,7 +268,6 @@ The table below shows the pinout of the 40-pin power module connector:
 |       35       |              I2C2_SDA              |       36       |              I2C2_SCL              |
 |       37       |                IO5                 |       38       |                IO6                 |
 |       39       |                GND                 |       40       |                GND                 |
-
 
 As for the following table, it shows the definition of each pin of the WisBlock Power connector:
 
@@ -511,7 +509,6 @@ The RAK19010, like any electronic equipment, is sensitive to **electrostatic dis
 />
 
 #### Environmental Characteristics
-
 
 The table below lists the operation and storage temperature requirements of RAK19010:
 

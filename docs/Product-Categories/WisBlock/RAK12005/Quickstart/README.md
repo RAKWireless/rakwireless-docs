@@ -8,11 +8,6 @@ prev: ../Overview/
 next: ../Datasheet/ 
 ---
 
-<!--
-## Introduction
-
-This guide introduces the WisBlock RAK12005 board and how to use it.
--->
 
 # RAK12005 Quick Start Guide
 
@@ -141,7 +136,7 @@ For RAK12005, the accessible pin assignments are defined as follows in the Ardui
 
 #### Initial Test of the RAK12005 WisBlock Module
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have.
 
@@ -168,8 +163,6 @@ For RAK12005, the accessible pin assignments are defined as follows in the Ardui
   width="100%"
   caption="Selecting RAK11310 as WisBlock Core"
 />
-
-
 
 3. Next, copy the following sample code into your Arduino IDE.
 

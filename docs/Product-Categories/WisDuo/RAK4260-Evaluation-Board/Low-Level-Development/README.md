@@ -123,15 +123,6 @@ This sample firmware is solely for testing purposes. If you want to use and depl
 Go to the cloned directory folder: 
 **<cloned_dir>\RAK4260-LoRaNode-demo\APPS_ENDDEVICE_DEMO1**. Then double click on file "**APPS_ENDDEVICE_DEMO1.atsln**" to open Solution on Microchip Studio.
 
-<!--
-3. Configure demo application parameters
-
-:::tip 📝 NOTE
- In the RAK4260-LoRaNode-demo project, the join parameters and activation methods are defined in the [**conf_app.h**](https://github.com/RAKWireless/RAK4260-LoRaNode-demo/blob/master/APPS_ENDDEVICE_DEMO1/src/config/conf_app.h) file. 
-
-:::
--->
-
 3. Compile RAK4260-LoRaNode-demo solution. In Microchip Studio, select **Build** -> **Build Solution**.
 
 <rk-img

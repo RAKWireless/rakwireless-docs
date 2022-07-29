@@ -1,24 +1,17 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK1901. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
 rak_img: /assets/images/wisblock/rak1901/overview/RAK1901_home.png
+prev: ../Overview/ 
+next: ../Datasheet/ 
 tags:
   - quickstart
   - wisblock
   - RAK1901
-prev: ../Overview/ 
-next: ../Datasheet/ 
 ---
 
 # RAK1901 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock Sensor RAK1901 Temp & Humidity board and how to program with it.
-
-The information obtained from the SHTC3 sensor will then be printed over the USB debug port of the WisBlock Base board.
-
--->
 
 ## Prerequisite
 
@@ -124,7 +117,7 @@ The RAK1901 is a Temperature & Humidity sensor board that contains the SHTC3 chi
 
 #### Initial Test of the RAK1901 WisBlock Module
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have.
 
@@ -283,7 +276,6 @@ void loop()
 If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK1901 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1901_Temperature_Humidity_SHTC3) and this sample code in Github will work on all WisBlock Core.
 :::
 
-
 3. Once the example code is open, install the [SparkFun SHTC3](https://github.com/sparkfun/SparkFun_SHTC3_Arduino_Library) library by clicking the yellow highlighted link, as shown in **Figure 9** and **Figure 10**.
    
 <rk-img
@@ -315,7 +307,6 @@ If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the *
   width="100%"
   caption="Uploading the RAK1901 example code"
 />
-
 
 5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 13**, then your RAK1901 is properly communicating to the WisBlock core.
 

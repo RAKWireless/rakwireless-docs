@@ -11,13 +11,7 @@ next: ../Datasheet/
 
 # RAK14003 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the RAK14003 WisBlock LED Bar Graph Module and how to program with it.
-
-
--->
 
 ## Prerequisite
 
@@ -97,7 +91,6 @@ The procedure in disassembling any type of WisBlock modules is the same.
 If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK14003 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
 :::
 
-
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
 ### Software Configuration and Example
@@ -144,7 +137,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 #define IIC_ADDRESS 0X24 
 
 Adafruit_MCP23X17 mcp;
-  
+
 void setup() 
 {  
   pinMode(WB_IO2, OUTPUT);

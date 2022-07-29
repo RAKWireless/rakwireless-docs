@@ -13,11 +13,7 @@ certifications:
 
 # RAK7244 WisGate Developer D4 Gateway Datasheet
 
-<!-- <rk-img
-  src="/assets/images/wisgate/rak7244/datasheet/emefrtsevzyv5dulz1hs.png"
-  width="75%"
-  caption="RAK7244C Fully Assembled"
-/> -->
+
 
 ## Overview
 

@@ -40,7 +40,6 @@ The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P
 
 ### Overview  
 
- 
 The RAK4260 Evaluation Board front view (top) and back view are shown in **Figure 1**.
 
 <rk-img
@@ -49,17 +48,7 @@ The RAK4260 Evaluation Board front view (top) and back view are shown in **Figur
   caption="RAK4260 Evaluation Board front and back view"
 />
 
-<!-- 
-#### Block Diagram
 
-The block diagram of the RAK3244 BastWAN shows the various interfaces for the specific functionalities set in the product overview. <br><br>
-
-<rk-img
-  src="/assets/images/wisduo/bastwan/datasheet/rak3244-block-diagram.svg"
-  width="80%"
-  caption="RAK4260 Evaluation Board Block Diagram"
-/>
--->
   
 ### Hardware
 
@@ -94,7 +83,7 @@ For the aforementioned reason, it is best you leave these exposed for programmin
 Refer to section [Flash the Firmware Using DAPLink and RAKDAP1](../Low-Level-Development/#flash-the-firmware-using-daplink-and-rakdap1).
 
 ##### RF Interface  
-  
+
 The RF pin of the RAK4260 Evaluation Board is connected to an external LoRa Antenna through a standard iPEX antenna connector.
 
 :::warning ⚠️ WARNING
@@ -102,7 +91,6 @@ Before powering the RAK4260 Evaluation Board, you should install the LoRa antenn
 :::
 
 ##### USB Interface 
-
 
 The Micro-B USB connector is compliant with the USB2.0 specification. The pin definition of the USB interface is shown below:
 
@@ -343,36 +331,7 @@ On the RAK4260 Evaluation Board, there are three 2.54&nbsp;mm pitch headers used
 | 23             | GND          | Ground                                                                                                     |                         |
 | 24             | NC           | Not connected                                                                                              |                         |
 
-<!--
 
-| **Pin Number** | **Connector** |
-| -------------- | ------------- | ---------- |
-| 1              |               | A          |
-| 2              |               | Ground     | A, B, C, D                                                                         |
-| 3              |               | A, B, C, D | SPI Chip Select Pin                                                                |
-| 4              |               | A, B, C, D | SPI Clock Pin                                                                      |
-| 5              | SPI_MISO      |            |                                                                                    |
-| 6              | SPI_MOSI      |            |                                                                                    |
-| 7              | I2C1_SCL      |            |                                                                                    |
-| 8              | I2C1_SDA      |            |                                                                                    |
-| 9              | VDD           |            |                                                                                    |
-| 10             |               |            |                                                                                    |
-| 11             | 3V3_S         | A, B, C, D | 3.3V power supply, can be shutdown by CPU module                                   |
-| 12             |               |            |                                                                                    |
-| 13             |               |            |                                                                                    |
-| 14             | 3V3_S         | A, B, C, D | 3.3V power supply, can be shutdown by CPU module                                   |
-| 15             | NC            |            | Not connected                                                                      |
-| 16             | VDD           |            | Generate by CPU module, use for power sensor board if the MCU IO level is not 3.3V |
-| 17             | NC            |            | Not connected                                                                      |
-| 18             | NC            |            | Not connected                                                                      |
-| 19             | NC            |            | Not connected                                                                      |
-| 20             | NC            |            | Not connected                                                                      |
-| 21             | NC            |            | Not connected                                                                      |
-| 22             | NC            |            | Not connected                                                                      |
-| 23             | GND           | Ground     | A, B, C, D                                                                         |
-| 24             | RXD1          | A          | UART RX signal on Connector A                                                      |
-
--->
 
 ##### Battery Connector
 
@@ -383,7 +342,6 @@ The matching connector for the battery wires is an [JST PHR-2 2&nbsp;mm pitch fe
 | ------- | ------------ | ----------------------------- |
 | 1       | GND          | Ground                        |
 | 2       | VBAT         | Positive + pin of the battery |
-
 
 The full specification of the RAK4260 Evaluation Board battery is shown in the table below.
 
@@ -415,7 +373,6 @@ The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pi
 | ------- | ------------ | ----------------------------- |
 | 1       | C0NN_5V      | Positive + pin of solar panel |
 | 2       | GND          | GND                           |
-
 
 The full specification of the Solar Panel for the RAK4260 Evaluation Board is shown in the table below.
 
@@ -475,7 +432,7 @@ L  = Low level <br>
 #### RF Requirements  
   
 ##### Operating Frequencies  
-  
+
 The RAK4260 Evaluation Board supports the following LoRa bands:  
   
 | Region        | Frequency (MHz) |
@@ -485,51 +442,7 @@ The RAK4260 Evaluation Board supports the following LoRa bands:
 | Australia     | AU915           |
 | Asia          | AS923           |
 
-<!-- 
-##### Sensitivity Level  
-  
-The following charts show the receiving sensitivity of the RAK4260 Evaluation Board at 866&nbsp;Mhz operating frequency.<br><br>
 
-  
-<rk-img
-  src="/assets/images/wisduo/bastwan/datasheet/rak3244_sensitivity1.png"
-  width="80%"
-  caption="RAK3244 BastWAN Breakout Board Sensitivity Levels"
-/>
-
-<br>
-
-<rk-img
-  src="/assets/images/wisduo/bastwan/datasheet/rak3244_sensitivity2.png"
-  width="55%"
-  caption="RAK3244 BastWAN Breakout Board Sensitivity Plot @ SF7"
-/>
-
-<br>
-
-<rk-img
-  src="/assets/images/wisduo/bastwan/datasheet/rak3244_sensitivity3.png"
-  width="55%"
-  caption="RAK3244 BastWAN Breakout Board Sensitivity Plot @ SF12"
-/>
-
-
-#### Electrical Characteristics
-
-##### Power Consumption  
-  
-| Item                   | Power Consumption | Condition |
-| ---------------------- | ----------------- | --------- |
-| Output Power 20dB(MAX) | TBD               | -         |
-| Output Power 17dB      | TBD               | -         |
-| Output Power 14dB      | TBD               | -         |
-| Receive mode           | TBD               | -         |
-| Sleep mode             | TBD               | -         |
-
-::: tip Note:
-:pencil:TBD : To be disclosed
-:::  
--->
 #### Electrical Characteristics
 
 ##### Power Consumption

@@ -19,7 +19,6 @@ Thank you for choosing **RAK15000 WisBlock EEPROM Module** in your awesome IoT P
 * [RAK15000 Quick Start Guide](../Quickstart)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!-- * [WisBlock Quick Start Guide](../../Quickstart/) -->
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK15000 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK15000.stp)
 * [24-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)

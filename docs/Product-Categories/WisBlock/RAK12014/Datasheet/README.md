@@ -48,7 +48,7 @@ The VL53L0X's 940&nbsp;nm VCSEL emitter (Vertical-Cavity Surface-Emitting Laser)
 
 ### Hardware
 
-The hardware specification is categorized into four parts. It shows the pinouts and their corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12014 WisBlock ToF Sensor Module.
+The hardware specification is categorized into five (5) parts. It shows the chipset and the pinouts and their corresponding functions and diagrams of the module. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12014 WisBlock ToF Sensor Module.
 
 #### Chipset
 

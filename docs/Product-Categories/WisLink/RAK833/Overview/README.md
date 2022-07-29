@@ -28,11 +28,7 @@ Thank you for choosing **RAK833 WisLink LPWAN Concentrator** in your awesome IoT
   * [RAK833 SPI + OpenWRT Source Code Repository](https://github.com/RAKWireless/RAK831-LoRaGateway-OpenWRT-MT7628)
   * [RAK833 SPI + OpenWRT Firmware](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/MT7628-Firmware/RAK833%26RAK2247_SPI_MT7628_OpenWRT_V2.0_20190505.bin)
 * [Quick Start Guide for Raspberry Pi and RAK LPWAN Concentrators](https://docs.rakwireless.com/Knowledge-Hub/Learn/Raspberry-Pi-and-RAK-LPWAN-Concentrators/)
-<!-- <rk-img
-  src="/assets/images/wislink-lora/rak833/datasheet/rak833.png"
-  width="60%"
-  caption="RAK833 WisLink LPWAN Concentrator"
-/> -->
+
 
 ## Product Description
 
@@ -40,10 +36,7 @@ The **RAK833 WisLink LPWAN Concentrator** is a family of LoRa concentrator modul
 
 RAK833 WisLink LPWAN Concentrator is a complete and cost efficient gateway solution offering up to 10 programmable parallel demodulation paths. It is targeted at smart metering fixed networks and Internet of Things applications with up to 500 nodes per square kilometer (km²) in amoderately interfered environment. These modules have the industry standard PCI Express Mini Card form factor which enables easy integration into an application board.
 
-<!-- <rk-btn
-  src="../Quickstart/"
-  label="Get Started with RAK833 WisLink LPWAN Concentrator"
-/> -->
+
 
 ## Product Features
 

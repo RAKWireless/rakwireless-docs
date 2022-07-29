@@ -220,7 +220,6 @@ The steel strips **ONLY** support 60-85&nbsp;mm diameter of pole.
 | :---: | :----------: |
 | Small |    1 & 4     |
 
-
 3. Lastly, follow the steps below, as also shown in **Figure 19**:
 
 - **Step 1**: Use a Φ5&nbsp;mm drill head to drill holes on the wall. Drill at least 55-60&nbsp;mm in depth.

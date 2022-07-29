@@ -47,7 +47,7 @@ You can configure the mode and operation of the RAK4270 module using [RAK4270 AT
 - 20&nbsp;kbytes RAM
 - 6&nbsp;kbytes of data EEPROM with ECC
 
-<!--- Add regulation here --->
+
 
 
 
@@ -263,7 +263,6 @@ It is recommended to add four decoupling capacitors near the RAK4270 power suppl
   width="50%"
   caption="RAK4270 Recommended Reflow Profile"
 />
-
 
 Standard conditions for reflow soldering:
 

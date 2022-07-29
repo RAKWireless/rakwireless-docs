@@ -31,7 +31,6 @@ The **RAK7243 WisGate Developer D3 Gateway** is a device that consists of Raspbe
 
 For the built-in RAK2245 Pi HAT, the SX1301 chip from Semtech is used, which is a built-in LPWAN concentrator IP core, a powerful digital signal processing engine. It can receive up to 8 LoRa packets simultaneously sent with different spreading factors on different channels and is available in multiple variants, so it can be used for international standard bands. This unique capability allows for the implementation of innovative network architectures advantageous over other short-range systems. 
 
-
 Pilot Gateway Pro is ideal for prototyping, proof-of-concept demonstration, or evaluation. It includes a ready-to-use gateway OS that can be connected to a LoRaWan server. Also, it is developer-friendly and even for not-so-techy users to set up the LoRaWan system. It has to be the best value and function for connectivity to address a variety of applications like Smart Grid, Intelligent Farm, and other IoT enterprise applications.
 
 

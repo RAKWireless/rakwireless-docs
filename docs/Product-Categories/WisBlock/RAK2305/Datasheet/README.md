@@ -11,14 +11,6 @@ next: false
 
 # RAK2305 WisBlock WiFi Interface Module Datasheet
 
-<!--
-<rk-img
-  src="/assets/images/wisblock/rak2305/datasheet/rak2305.png"
-  width="50%"
-  caption="RAK2305 WisBlock WiFi Interface Module"
-/>
--->
-
 ## Overview
 
 ### Description
@@ -26,7 +18,6 @@ next: false
 The RAK2305 module, a part of the WisBlock Wireless series, is designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module.
 
 The RAK2305 module is a 2.4&nbsp;GHz Wi-Fi and Bluetooth in a single module. The core of the module is an ESP32-WROVER, which features a PCB antenna. This module is designed to be part of the Internet-of-Things (IoT) applications. It can function as a Central or Peripheral in a Bluetooth network. Internally, it supports SPI/I2C/UART interfaces.
-
 
 ### Features
 
@@ -43,7 +34,6 @@ The RAK2305 module is a 2.4&nbsp;GHz Wi-Fi and Bluetooth in a single module. The
 
 The overview covers the RAK2305 WisBlock board overview and block diagram. It also shows how to mount the board into to the baseboard. 
 
-
 #### Board Overview
 
 <rk-img
@@ -51,7 +41,6 @@ The overview covers the RAK2305 WisBlock board overview and block diagram. It al
   width="40%"
   caption="Board Overview"
 />
-
 
 #### Mounting Sketch
 
@@ -82,7 +71,6 @@ The overview covers the RAK2305 WisBlock board overview and block diagram. It al
 
 The hardware specification is categorized into four parts. It discuses the interfacing of the module and its corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK2305 WisBlock WiFi Interface Module.
 
-
 #### Interfaces
 
 ##### UART Interface
@@ -103,7 +91,6 @@ The RAK2305 module provides an I2C bus interface. Depending on your configuratio
 - 7-bit/10-bit addressing mode.
 
 The RAK2305 module allows you to access directly to the registers to control I2C interfaces, which add more flexibility in the design of the final solution.
-
 
 ##### Download Interface
 
@@ -140,14 +127,12 @@ Table below shows the absolute maximum ratings supported by the RAK2305 Module
 | VBAT            | Power Supply for the Module | 0.5     |          | 4.2      | V        |
 | I<sub>out</sub> | Step Down IC Output Current |         |          | 1000     | mA       |
 
-
 ##### Recommended Operating Conditions
 
 | **Symbol** | **Description**             | **Min.** | **Nom.** | **Max.** | **Unit** |
 | ---------- | --------------------------- | -------- | -------- | -------- | -------- |
 | VBAT       | Power Supply for the Module | 2.6      |          | 4.2      | V        |
 | 3V3        | 3.3V Power Supply           |          | 3.3      |          | V        |
-
 
 #### Mechanical Characteristics
 
@@ -210,7 +195,6 @@ The following sections describes the schematic of the RAK2305 module:
 | LED1/LED2 | LED interface                  | To control the base board’s LED                |
 | EN        | ESP32 module Enable            | Active High                                    |
 
-
 #####  Connector Pin Order
 
 **Figure 11** shows IO connector and its pin order. This connector is located on the bottom side of the module.
@@ -225,13 +209,11 @@ The following sections describes the schematic of the RAK2305 module:
 
 The core component inside of the RAK2305 module is the ESP32-WROVER, which comes with a PCB antenna. The module is designed to work with 3.3&nbsp;V supplied by the baseboard. To prevent any instability on EN (Enable pin), an RC delay circuit is added to this pin, and the EN pin is pulled up to 3.3&nbsp;V by default. **Figure 12** shows the section of the schematic that involves the ESP32-WROVER component.
 
-
 <rk-img
   src="/assets/images/wisblock/rak2305/datasheet/core_module.png"
   width="80%"
   caption="RAK2305 Core Component's Schematic"
 />
-
 
 | **Name**   | **Description**     | **Comment**                                             |
 | ---------- | ------------------- | ------------------------------------------------------- |
@@ -243,5 +225,3 @@ The core component inside of the RAK2305 module is the ESP32-WROVER, which comes
 | EN         | ESP32 Module Enable | Active High                                             |
 | STATUS_LED | LED on module       | Active Low                                              |
 | GPIO0      | BOOT0               | Low: UART Download Mode <br> High: FLASH Operation Mode |
-
-

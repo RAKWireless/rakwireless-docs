@@ -37,7 +37,7 @@ The RAK1910 WisBlock GNSS Location Module module, part of the RAK Wireless Wisbl
 
 ## Specifications
 ### Overview
-<!-- Insert Picture of Sensor with its dimensions -->
+
 
 #### Mounting
 

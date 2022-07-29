@@ -11,11 +11,7 @@ next: ../Datasheet/
 
 # RAK15002 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock RAK15002 board and how to use it.
--->
 
 ## Prerequisite
 
@@ -135,7 +131,6 @@ The Micro SD Card should be formatted as FAT before using. You can use [SD Card 
 ### Software Configuration and Example
 
 In the following example, you will be using the [RAK15002 WisBlock SD Card Module](https://store.rakwireless.com/collections/wisblock-storage/products/sd-card-module-rak15002).
-
 
 These are the quick links that go directly to the software guide for the specific WisBlock Core module you use:
 
@@ -360,7 +355,6 @@ If you experience any error in compiling the example sketch, check the updated c
   caption="Locating the required library in the Library Manager"
 />
 
-
 4. Install the required library, as shown in **Figure 12**.
 
 <rk-img
@@ -368,7 +362,6 @@ If you experience any error in compiling the example sketch, check the updated c
   width="100%"
   caption="Installing the Library"
 />
-
 
 5. Select the correct port and upload your code, as shown in **Figure 13** and **Figure 14**.
 
@@ -391,7 +384,6 @@ If you experience any error in compiling the example sketch, check the updated c
   width="100%"
   caption="RAK15002 logs"
 />
-
 
 7. To verify the content, you can use a card reader and open the text file generated, as shown in **Figure 16** and **Figure 17**.
 
@@ -638,7 +630,6 @@ If you experience any error in compiling the example sketch, check the updated c
   caption="Locating the required library in the Library Manager"
 />
 
-
 4. Install the required library, as shown in **Figure 21**.
 
 <rk-img
@@ -646,7 +637,6 @@ If you experience any error in compiling the example sketch, check the updated c
   width="100%"
   caption="Installing the Library"
 />
-
 
 5. Select the correct port and upload your code, as shown in **Figure 22** and **Figure 23**.
 
@@ -675,7 +665,6 @@ RAK11200 requires the BOOT0 pin to be configured properly before uploading. If n
   caption="RAK15002 logs"
 />
 
-
 7. To verify the content, you can use a card reader and open the text file generated, as shown in **Figure 25** and **Figure 26**.
 
 <rk-img
@@ -693,7 +682,6 @@ RAK11200 requires the BOOT0 pin to be configured properly before uploading. If n
 #### RAK15002 in RAK11300 WisBlock Core Guide
 
 ##### Arduino Setup
-
 
 1. Select the RAK11300 WisBlock Core, as shown in **Figure 27**.
 
@@ -903,7 +891,6 @@ If you experience any error in compiling the example sketch, check the updated c
   caption="Locating the required library in the Library Manager"
 />
 
-
 4. Install the required library, as shown in **Figure 29**.
 
 <rk-img
@@ -911,7 +898,6 @@ If you experience any error in compiling the example sketch, check the updated c
   width="100%"
   caption="Installing the Library"
 />
-
 
 5. Select the correct port and upload your code, as shown in **Figure 30** and **Figure 31**.
 
@@ -927,7 +913,6 @@ If you experience any error in compiling the example sketch, check the updated c
   caption="Uploading code"
 />
 
-
 6. When you have successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the RAK15002 read/write message, as shown in **Figure 32**. You will be able to see the status and the function performed on your SD Card.
 
 <rk-img
@@ -935,7 +920,6 @@ If you experience any error in compiling the example sketch, check the updated c
   width="100%"
   caption="RAK15002 logs"
 />
-
 
 7. To verify the content, you can use a card reader and open the text file generated, as shown in **Figure 33** and **Figure 34**.
 

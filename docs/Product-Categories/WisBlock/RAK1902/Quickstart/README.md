@@ -1,24 +1,17 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK1902. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
 rak_img: /assets/images/wisblock/rak1902/overview/RAK1902_home.png
+prev: ../Overview/ 
+next: ../Datasheet/ 
 tags:
   - quickstart
   - wisblock
   - RAK1902
-prev: ../Overview/ 
-next: ../Datasheet/ 
 ---
 
 # RAK1902 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock Sensor RAK1902 Barometer board and how to program with it.
-
-The information obtained from the barometer pressure will then be printed over the USB debug port of the WisBlock Base board.
-
--->
 
 ## Prerequisite
 
@@ -106,7 +99,6 @@ The procedure in disassembling any type of WisBlock modules is the same.
 If you will connect other modules to remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1902 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
 :::
 
-
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
 :::warning ⚠️ WARNING
@@ -123,7 +115,7 @@ The RAK1902 is a pressure sensor board that contains LPS22HB chip. The LPS22HB i
 
 #### Initial Test of the RAK1902 WisBlock Module
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select the WisBlock Core you have.
 

@@ -8,7 +8,7 @@ tags:
 prev: ../Supported-LoRa-Network-Servers/ 
 next: false
 certifications:
-  - [ANATEL, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_ANATEL_Certification.zip]
+  - [Anatel, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_ANATEL_Certification.zip]
   - [CE, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268%26RAK7268V2%26RAK7268C%26RAK7268CV2_CE_Certification.pdf]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_RAK7268V2_FCC_Certification.pdf]
   - [IC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_IC_Certification.zip]

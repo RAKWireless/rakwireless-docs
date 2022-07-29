@@ -13,11 +13,7 @@ tags:
 
 ## Prerequisites
 
-<!-- <rk-img
-  src="/assets/images/wisgate/rak7243c/quickstart/1.product-overview/2.quick-start/1.s9bghtz7l7a7ivpbkwce.jpg"
-  width="75%"
-  caption="Raspberry Pi , RAK2013, and RAK2245 Pi Hat"
-/> -->
+
 
 ### What Do You Need?
 
@@ -44,7 +40,6 @@ The SIM card slot of the cellular versions is not hot-swappable. Make sure the g
 ### Accessing Your Gateway
 
 After burning the firmware image onto the SD Card, make sure you have inserted the SD Card into the **RAK7243C WisGate Developer D3+ Gateway** and have the LoRa, GPS, and LTE Antenna connected. To learn more on how to burn the image, check the [Learn section](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisGate-Developer-Gateway-Firmware-Burning/).
-
 
 After which, you can now safely power on the gateway. In this section, several ways to access the gateway are provided to have different alternatives for you to choose from depending on the availability of the requirements needed.
 
@@ -346,7 +341,6 @@ Then you will see a page like in **Figure 20**.
  A unique ID will be generated for the gateway. This is also called **Gateway EUI** and is essential for registering the gateway with any LoRa Network Server (TTN and ChirpStack).
 :::
 
-
 There is also another way to get your **Gateway ID**. Just enter the command below in the command line:
 
 ```
@@ -453,7 +447,6 @@ When a channel plan is selected, the gateway is configured to connect to the nea
   caption="Configure ChirpStack channel plan"
 />
 
-
 First, select **1 ChirpStack Channel-plan configuration** for configuring your frequency channel.
 
 <rk-img
@@ -544,7 +537,6 @@ Two configuration options are available for your LTE.
 If you cannot see the `at`, which you just entered. Try to hold `CTRL+A`, then press `Z`, then `E`. This should allow you to go to the command entering mode.
 :::
 
-
 6. Next, execute the AT command `at+cops=?` to look for all available LTE networks in range.
 
 <rk-img
@@ -552,7 +544,6 @@ If you cannot see the `at`, which you just entered. Try to hold `CTRL+A`, then p
   width="60%"
   caption="AT Command for LTE network query"
 />
-
 
 This may take a couple of seconds. After that, you'll see the available LTE network information similar to **Figure 39**.
 
@@ -600,7 +591,6 @@ To exit Minicom, press `Enter`, `Ctrl + A` then press `Q`. A pop-up will appear 
   width="75%"
   caption="Configure APN name"
 />
-
 
 9. Then, you will see the window option below where you can change the APN Name or retain its default name.
 

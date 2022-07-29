@@ -215,7 +215,6 @@ The NWKSKEY parameter is valid in ABP Activation Mode. The modification will tak
 | ------------ | ------------------------------------------------------------------ |
 | **nwks_key** | **Network Session Key:** Hexadecimal character, 32 bytes in length |
 
-
 11. <b>AT+ADR</b>
 
 Turn on/off the LoRaWAN dynamic rate adjustment function of the device, which is “on” by default. The modification will take effect immediately.

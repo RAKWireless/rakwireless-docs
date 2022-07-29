@@ -11,11 +11,7 @@ rak_img: /assets/images/wislink-lora/rak833/datasheet/RAK833-Concentrator_home.p
 
 # RAK833 WisLink LPWAN Concentrator Datasheet
 
-<!-- <rk-img
-  src="/assets/images/wislink-lora/rak833/datasheet/rak833.png"
-  width="60%"
-  caption="RAK833 WisLink LPWAN Concentrator"
-/> -->
+
 
 ## Overview
 

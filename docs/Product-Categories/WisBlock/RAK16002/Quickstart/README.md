@@ -126,7 +126,6 @@ These are the quick links that go directly to the software guide for the specifi
 
 ##### Arduino Setup
 
-
 1. Select the RAK4631 WisBlock Core. 
 
 Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) to find the RAK4631 in the Arduino Boards Manager.
@@ -297,7 +296,6 @@ Click on the **Install** button to finish the library installation.
   caption="Arduino Library Manager GROVE-Coulomb_Counter"
 />
 
-
 4. Now, you can select the right port and upload the code, as shown in **Figure 10** and **Figure 11**.
 
 <rk-img
@@ -328,10 +326,6 @@ If you experience any error in compiling an example sketch, check the updated co
 #### RAK16002 in RAK11200 WisBlock Core Guide
 
 ##### Arduino Setup
-
-<!-- Add how to use image
-
--->
 
 1. Select the RAK11200 WisBlock Core. 
 
@@ -488,7 +482,6 @@ void interruptRoutine()
 ```
 :::
 
-
 3. Once the example sketch is open, install the **GROVE-Coulomb_Counter** library by clicking the red-highlighted link, as shown in **Figure 14** and **Figure 15**.
 
 <rk-img
@@ -504,7 +497,6 @@ Click on the **Install** button to finish library installation.
   caption="Install GROVE-Coulomb_Counter Library"
 />
 
-
 4. Now, you can select the right port and upload the code, as shown in **Figure 16** and **Figure 18**.
 
 <rk-img
@@ -512,7 +504,6 @@ Click on the **Install** button to finish library installation.
   width="100%"
   caption="Selecting the correct Serial Port"
 />
-
 
 Before uploading your sketch, short circuit **BOOT0** and **GND** pin and press the reset button. Then click the **Upload** button.
 
@@ -527,7 +518,6 @@ Before uploading your sketch, short circuit **BOOT0** and **GND** pin and press 
   width="100%"
   caption="Uploading the RAK16002 sample code"
 />
-
 
 After a successful upload, open the Arduino Serial Monitor by clicking **Tools** -> **Serial Monitor** and check the charge, capacity, and charge percentage.
 
@@ -546,10 +536,6 @@ If you experience any error in compiling an example sketch, check the updated co
 
 
 ##### Arduino Setup
-
-<!-- Add how to use image
-
--->
 
 1. Select the RAK11310 WisBlock Core. 
 
@@ -705,7 +691,6 @@ void interruptRoutine()
 ```
 :::
 
-
 3. Once the example sketch is open, install the **GROVE-Coulomb_Counter** library by clicking the red-highlighted link, as shown in **Figure 21** and **Figure 22**.
 
 <rk-img
@@ -721,7 +706,6 @@ Click on the **Install** button to finish library installation.
   caption="Install GROVE-Coulomb_Counter Library"
 />
 
-
 4. Now, you can select the correct port and upload the code, as shown in **Figure 23** and **Figure 24**.
 
 <rk-img
@@ -735,7 +719,6 @@ Click on the **Install** button to finish library installation.
   width="100%"
   caption="Uploading the RAK16002 Sample code"
 />
-
 
 After a successful upload, open the Arduino Serial Monitor by clicking **Tools** -> **Serial Monitor** and check the charge, capacity, and charge percentage.
 

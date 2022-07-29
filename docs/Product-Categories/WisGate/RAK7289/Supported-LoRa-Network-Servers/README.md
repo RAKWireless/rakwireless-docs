@@ -62,7 +62,6 @@ You can select an appropriate frequency band from the [RAK store](https://store.
 
 ##### Add the LoRaWAN Gateway
 
-
 To register the gateway with AWS IoT Core for LoRaWAN, follow the steps in the [online guide](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-onboard-gateway-add.html) under the **Add a gateway using the console** section.
 
 #### Add a LoRaWAN Device to AWS IoT
@@ -175,7 +174,6 @@ No password is required to connect via Wi-Fi.
   caption="Logging in to WisGate OS 2"
 />
 
-
 3. Navigate to LoRa, change **Work Mode** to **Basics Station**. Select **LNS Server** from Server, then select **TLS Server** and **Client Authentication** from Authentication Mode.
 
 <rk-img
@@ -211,7 +209,6 @@ To verify the connection status, refer to the instructions in the **Check gatewa
 Refer to [RAK4631 Quick Start Guide](/Product-Categories/WisBlock/RAK4631/Quickstart/) to enable communication with the gateway.
 
 #### Connect the Device and Verify the Connection Status
-
 
 Follow the instructions in the [online guide](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-device-connection-status.html) to connect your device to AWS IoT Core for LoRaWAN. 
 
@@ -282,7 +279,6 @@ def decode(event):
       result['temperature'] = temp / 10
 
   return result
-
 
 def lambda_handler(event, context):
   data = decode(event)
@@ -382,7 +378,6 @@ In this step, create the IoT rule that forwards the device payload to your appli
 16. Select the Lambda function created earlier and choose **Add action**.
 17. Then, choose **Create rule**.
 18. A "**Success**" message will be displayed at the top of the panel, and the destination has a rule bound to it.
-
 
 You can now check that the decoded data is received and republished by AWS by triggering a condition or event on the device itself.  
 
@@ -691,7 +686,6 @@ For this tutorial, we will use Europe 863-870 MHz (SF12 for RX2 - recommended).
   width="100%"
   caption="Adding a gateway"
 />
-
 
 3. To register your gateway, scroll down and click **Create gateway**.
 

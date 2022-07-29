@@ -19,7 +19,7 @@ Thank you for choosing **RAK12010 WisBlock Ambient Light Sensor Module** in your
 * [RAK12010 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
+
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK12010 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK12010.stp)
 * [24-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)

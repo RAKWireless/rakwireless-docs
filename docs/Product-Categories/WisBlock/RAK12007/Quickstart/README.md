@@ -11,12 +11,6 @@ next: ../Datasheet/
 
 # RAK12007 Quick Start Guide
 
-<!--
-## Introduction
-
-This guide introduces the RAK12007 WisBlock Ultrasonic Module and how to use it.
-
--->
 
 ## Prerequisite
 
@@ -57,7 +51,6 @@ The RAK12007 WisBlock Ultrasonic Sensor Module can be mounted on the IO slot of 
 #### Assembling and Disassembling of WisBlock Modules
 
 ##### Assembling
-
 
 As shown in **Figure 2**, the location for the IO slot is properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
@@ -115,7 +108,7 @@ In this example, you will monitor the distance of the object in front of your RA
 
 #### Initial Test of the RAK12007 WisBlock Module
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 
@@ -142,7 +135,6 @@ In this example, you will monitor the distance of the object in front of your RA
   width="100%"
   caption="Selecting RAK11300 as WisBlock Core"
 />
-
 
 3. Copy the example code below:
 
@@ -307,7 +299,6 @@ void oled_init()
   caption="Installation of Adafruit GFX Library and Companion Library"
 />
 
-
 5. Then select the right Serial Port and upload the code, as shown in **Figure 12** and **Figure 13**.
 
 :::tip 📝 NOTE:
@@ -325,8 +316,6 @@ RAK11200 requires the BOOT0 pin to be configured properly before uploading. If n
   width="100%"
   caption="Uploading the sample code"
 />
-
-
 
 6. When you have successfully uploaded the sample code, you should see the distance displayed on the RAK1921 WisBlock OLED Display, as shown in **Figure 14**. Then, you can open up your serial monitor to get the sensor reading, as shown in **Figure 15**.
 

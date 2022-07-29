@@ -286,7 +286,6 @@ at+version
   caption="AT Command response"
 />
 
-
 As an example, these are the list of the parameters you need to configure in RAK4270: 
 
 - LoRa join mode: **OTAA**
@@ -295,7 +294,6 @@ As an example, these are the list of the parameters you need to configure in RAK
 - Device EUI: **1133557799224466**
 - Application EUI: **1000000000000009**
 - Application Key: **04FA4E626EF5CF227C969601176275C2**
-
 
 1. Set the LoRa join mode to OTAA.
 
@@ -476,8 +474,6 @@ As an example, these are the list of the parameters you need to configure in RAK
 - Network Session Key: **433C7A924F7F6947778FE821525F183A**
 - Application Session Key: **A585653A949C2B2D44B55E99E94CB533**
 
-
-
 1. Set the LoRa join mode to ABP.
 
 ```
@@ -526,7 +522,6 @@ at+set_config=lora:apps_key:A585653A949C2B2D44B55E99E94CB533
 After configuring all the parameters, you need to reset the RAK4270 Breakout Board to save the parameters.
 
 :::
-
 
 7. After resetting, join in ABP mode.
 
@@ -590,7 +585,6 @@ In this section, you need the following requirements:
 The frequency band used in the test is EU868, use the high-frequency version of the RAK4270 Breakout Board.
 :::
 
-
 Before you start, you must choose which mode you are going to use, whether in OTAA or ABP mode, to register the device to the network server.
 
 
@@ -619,7 +613,6 @@ Login to the ChirpStack server using your account and password.
 
 * For this setup, create an Application named “**rak_node_test**”.
 
-
 ChirpStack LoraServer supports multiple system configurations, with only one by default. 
 
 * **Service profile**: field is to select the system profile.
@@ -635,7 +628,6 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 <b>Register a New Device</b>
 
 3. Choose the **Application** created in the previous step, then select the **DEVICES** tab, as shown in **Figure 38** and **Figure 39**.
-
 
 4. Once done, click “**CREATE APPLICATION**”.
 
@@ -693,7 +685,6 @@ In LoRaWAN, there are two (2) ways a node can connect itself to the LoRaWAN netw
 
 ###### Configure the OTAA Mode on the Platform
 
-
 1. If you have selected “**DeviceProfile_OTAA**”, as shown in **Figure 43**, then after the device is created, an Application Key must be also created for this device. 
 
 <rk-img
@@ -720,7 +711,6 @@ In LoRaWAN, there are two (2) ways a node can connect itself to the LoRaWAN netw
   caption="Chirpstack OTAA List of Device in the Device Tab"
 />
 
-
 4. To end the process, it is a good practice to review that the Application Key is properly associated with this device. The Application Key can be verified in the **KEYS(OTAA)** tab, as shown in **Figure 46**.
 
 
@@ -738,7 +728,6 @@ Standard OTAA mode requires the **Device EUI**, **Application Key**, and the **A
 :::
 
 ###### Configure the OTAA mode on the RAK4270 Breakout Board
-
 
 The RAK4270 Breakout Board supports a series of [AT commands](/Product-Categories/WisDuo/RAK4270-Breakout-Board/AT-Command-Manual/) to configure its internal parameters and control the functionalities of the module. 
 
@@ -767,7 +756,6 @@ As an example, these are the list of the parameters you need to configure in the
 - Device EUI: **5e9d1e0857cf25f1**
 - Application EUI: **5e9d1e0857cf25f1**
 - Application Key: **f921d50cd7d02ee3c5e6142154f274b2**
-
 
 1. Set the LoRa join mode to OTAA.
 
@@ -841,7 +829,6 @@ at+join
   caption="Chirpstack OTAA Join the Network via RAK Serial Port Tool"
 />
 
-
 8. You can then see the JoinRequest and JoinAccept on the ChirpStack page.
 
 <rk-img
@@ -849,7 +836,6 @@ at+join
   width="100%"
   caption="Checking LoRaWAN Joint Request in Chirpstack OTAA Console"
 />
-
 
 9. Try to send data from the RAK4270 Breakout Board to ChirpStack.
 
@@ -999,7 +985,6 @@ By using the ABP mode in the LoRaWAN protocol, it doesn’t require to join a ne
 
 :::
 
-
 8. Try to send data from the RAK4270 Breakout Board to ChirpStack.
 
 ```
@@ -1032,14 +1017,12 @@ at+set_config=lora:work_mode:1
   caption="P2P Initialization"
 />
 
-
 4. Then, configure LoRa P2P parameters for both of them.
 
 
 ```
 at+set_config=lorap2p:XXX:Y:Z:A:B:C
 ```
-
 
 For this example, the LoRa parameters are the following:
 
@@ -1083,8 +1066,6 @@ at+set_config=lorap2p:transfer_mode:1
   width="80%"
   caption="Setting Modes in both RAK4270 Breakout Board"
 />
-
-
 
 6. Try to send a message from Unit 1 to Unit 2. 
 
@@ -1138,7 +1119,6 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
 
     - [RAK4270 Firmware](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#software)
 
-
 2.  Download the RAK Device Firmware Upgrade (DFU) tool. 
     - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
@@ -1151,7 +1131,6 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
   width="80%"
   caption="Device Firmware Upgrade Tool"
 />
-
 
 5.  Select the application firmware file of the module with the suffix "**.bin**".
 

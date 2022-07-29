@@ -50,7 +50,6 @@ RAK12019 module can be connected to the sensor's slot of [WisBlock Base](https:/
 
 ##### Assembling
 
-
 As shown in **Figure 2**, the location for Slot A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
 <rk-img
@@ -105,7 +104,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 In this example, you will be able to see the Lux and ALS or UVS and UVI data via Serial Monitor.
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 
@@ -129,7 +128,6 @@ In this example, you will be able to see the Lux and ALS or UVS and UVI data via
   width="100%"
   caption="Selecting RAK11300 as WisBlock Core"
 />
-
 
 3. Copy the example code below:
 
@@ -293,7 +291,6 @@ If you experience any error in compiling the example sketch, check the updated c
   width="100%"
   caption="Installing the Library"
 />
-
 
 5. Select the right Serial Port and upload the code, as shown in **Figure 11** and **Figure 12**.
 

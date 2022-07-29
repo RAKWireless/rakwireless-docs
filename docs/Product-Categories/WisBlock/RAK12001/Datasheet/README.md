@@ -47,9 +47,9 @@ The RAK12001 is a fingerprint sensor module based on GROW R307. This module supp
 
 
 ### Hardware
-The hardware specification is categorized into four parts. It discusses the pinouts and their corresponding functions and diagrams of the module. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12001 WisBlock Fingerprint Sensor.
+The hardware specification is categorized into five (5) parts. It shows the chipset of the module and discusses the pinouts and their corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12001 WisBlock Fingerprint Sensor.
 
-#### Fingerprint Module
+#### Chipset
 
 | Vendor  | Part number |
 | ------- | ----------- |
@@ -93,17 +93,6 @@ The RAK12001 WisBlock Fingerprint Sensor comprises a standard WisBlock connector
   width="60%"
   caption="RAK12001 WisBlock Fingerprint Sensor Module Dimensions"
 />
-
-<!--
-##### WisConnector PCB Layout
-
-<rk-img
-  src="/assets/images/wisblock/rak12001/datasheet/pcb_footprint.png"
-  width="100%"
-  caption="WisConnector PCB Footprint and Recommendations"
-/>
-
--->
 
 
 #### Schematic Diagram

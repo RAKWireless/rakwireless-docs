@@ -15,13 +15,7 @@ tags:
 
 The following two sections provide a list of the components and tools you need in order to get started with the development board. Some of the components are included in the package, others you need to provide yourself.
 
-<!---
-<rk-img
-  src="/assets/images/wisduo/rak4260-breakout-board/quickstart/main/rak4260-breakout.png"
-  width="50%"
-  caption="RAK4260 Breakout Board"
-/>
--->
+
 
 
 ### What Do You Need?

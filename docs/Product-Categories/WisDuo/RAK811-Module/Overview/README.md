@@ -13,12 +13,7 @@ tags:
 
 Thank you for choosing **RAK811 WisDuo LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
-<!-- 
-<rk-img
-  src="/assets/images/wisduo/rak811-module/overview/nwgqobrzwanalynildkc.jpg"
-  width="40%"
-  caption="RAK811 WisDuo LPWAN Module"
-/> -->
+
 
 * [Quick Start Guide](/Product-Categories/WisDuo/RAK811-Module/Quickstart/)
 * [AT Command Manual](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/)
@@ -37,12 +32,7 @@ This module complies with Class A & C of LoRaWAN 1.0.2 specifications. It can ea
 
 The RAK811 module is integrated with Semtech’s SX1276 and STM32. You can configure the mode and operation of the module using AT commands via a UART interface. RAK811 also offers low-power features, which are very suitable for battery-powered applications.
 
-<!-- <rk-btn
-  src="../Datasheet/"
-  label="View Datasheet for the RAK811 WisDuo LPWAN Module"
-/>
 
-<rk-quick-links :params="$page.frontmatter.params.qlinks1"/> -->
 
 ## Product Features
 
@@ -64,8 +54,3 @@ The RAK811 module is integrated with Semtech’s SX1276 and STM32. You can confi
 - **Operating temperature**: -30°&nbsp;C ~ 85°&nbsp;C (industrial grade)
 - **Storage temperature**: -40°&nbsp;C ~ 85°&nbsp;C (non-condensing)
 
-<!-- <rk-btn
-  src="https://store.rakwireless.com/products/rak811-lpwan-module"
-  label="Buy a RAK811 WisDuo LPWAN Module"
-  _blank
-/> -->

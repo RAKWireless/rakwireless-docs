@@ -17,14 +17,7 @@ RAK11300 WisDuo LPWAN Module is based on the Raspberry Pi RP2040 chip and SX1262
 
 The AT commands can be interfaced via USB acting as a serial port (Pin 2 **USB_DM** and Pin 3 **USB_DP**) or via UART1 (Pin 10 **TX1** and Pin 9 **RX1**). The default parameter of the AT commands is fixed to **115200 / 8-N-1**. The firmware upgrade is only possible via USB. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK11300 Module Datasheet](/Product-Categories/WisDuo/RAK11300-Module/Datasheet/).
 
-<!---
-## Links to Quick Start Guide
-For AT commands example usage, you can check these sections of quick start guide:
-- [RAK11300 TTN OTAA Guide](/Product-Categories/WisDuo/RAK11300-Module/Quickstart/#ttn-otaa-device-registration) - How to add OTAA device on TTN and what AT commands to use on RAK11300 OTAA activation.
-- [RAK11300 TTN ABP Guide](/Product-Categories/WisDuo/RAK11300-Module/Quickstart/#ttn-abp-device-registration) - How to add ABP device on TTN and what AT commands to use on RAK11300 ABP activation. 
-- [RAK11300 Chirpstack OTAA Guide](/Product-Categories/WisDuo/RAK11300-Module/Quickstart/#chirpstack-otaa-device-registration) - How to add OTAA device to Chirpstack and what AT commands to use on RAK11300 OTAA activation.
-- [RAK11300 Chirpstack ABP Guide](/Product-Categories/WisDuo/RAK11300-Module/Quickstart/#chirpstack-abp-device-registration) - How to add ABP device on Chirpstack and what AT commands to use on RAK11300 ABP activation.
---->
+
 
 ## Content
 
@@ -77,7 +70,6 @@ There are four available command formats:
 | `AT+XXX=<input parameter>` | Writing configuration on the command              |
 | `AT+XXX`                   | Used to run a command                             |
 
-
 The output of the commands is returned via UART.
 
 The format of the reply is divided into two parts: returned value and the status return code.
@@ -88,9 +80,7 @@ The format of the reply is divided into two parts: returned value and the status
 
 :::
 
-
 1. **`<value><CR><LF>`** is the first reply when (**`AT+XXX?`**) command description or (**`AT+XXX=?`**) reading value is executed then it will be followed by the status return code. The formats with no return value like (**`AT+XXX=<input parameter>`**) writing configuration command and (**`AT+XXX`**) run command will just reply to the status return code.
-
 
 2. **`<CR><LF><STATUS><CR><LF>`** is the second part of the reply which is the status return code.
 
@@ -1216,7 +1206,7 @@ OK
 ### Appendix II TX Power by Region
 
 <b> EU868 </b>
- 
+
 By default, MaxEIRP is considered to be +16&nbsp;dBm. 
 
 | TXPower | Configuration (EIRP) |
@@ -1321,7 +1311,7 @@ By default, MaxEIRP is considered to be 30&nbsp;dBm.
 <br>
 
 <b> RU864 </b>
- 
+
 By default, MaxEIRP is considered to be +16&nbsp;dBm. 
 
 | TXPower | Configuration (EIRP) |

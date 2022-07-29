@@ -92,7 +92,6 @@ The procedure in disassembling any type of WisBlock module is the same.
 If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
 :::
 
-
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
 :::warning ⚠️ WARNING

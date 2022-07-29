@@ -39,7 +39,6 @@ This module integrates a 12&nbsp;V power supply, which can be used to power exte
 
 ### Overview
 
-
 The overview discusses the block diagram of the board. It also shows the installation mechanism on how to mount the board into the baseboard.
 
 

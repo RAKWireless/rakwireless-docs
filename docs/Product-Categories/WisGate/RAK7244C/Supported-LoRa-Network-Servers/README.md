@@ -49,7 +49,6 @@ In this section, you will learn how to connect RAK7244C WisGate Developer D4+ Ga
   caption="Adding a new gateway"
 />
 
-
 7. Fill in the required information and click **Create gateway** to register your gateway.
 
 <rk-img

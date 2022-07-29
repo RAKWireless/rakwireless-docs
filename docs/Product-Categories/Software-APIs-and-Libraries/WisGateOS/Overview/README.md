@@ -36,18 +36,15 @@ By default, the gateway is configured to work in Access Point (AP) mode. It has 
   - UI user: **root** 
   - UI password: **root** 
 
-
 ### WAN port (DHCP IP) mode 
 
 Connect the Ethernet cable to the port marked “ETH” and the other end to your router. Use the same credentials for the Web UI as for AP mode.
-
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/1.login.png"
   width="100%"
   caption="Login Page"
 />
-
 
 ## Web Management Platform
 
@@ -61,13 +58,11 @@ This is where statistics about the Gateway behavior can be monitored in real tim
 
 The page consists of several areas where you can see the overview of some metrics and basic information about the gateway upon logging in the browser displays the page in Figure 2.
 
-
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/2.overview.png"
   width="100%"
   caption="Overview Page"
 />
-
 
 - **Received** - Shows the total number of uplink LoRa messages received by the gateway. Here are displayed not only messages from devices connected to the gateway directly but from any device that is within the coverage of the gateway and transmitting LoRa messages.
 - **Transmitted** - Shows the total number of downlink LoRa messages sent by the gateway.
@@ -109,11 +104,9 @@ Filter the packets by choosing any of the following:
 - **DevAddr** – Filter the packets by the node address. Only packets from the selected node will show in the logger and the others will be ignored.
 - **Hide CRC_ERR packet** – When it is selected, no "CRC" check error message will be displayed.
 
-
 #### System Log
 
 On this page, you can see the complete system logs. It is useful mainly for debugging purposes. The System Log reports both system information and actual data from LoRa frames coming from the end nodes. 
-
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/4.system-log.png"
@@ -128,7 +121,6 @@ On the top right corner, you can find the button there:
 #### Firewall
 
 This section shows only information about traffic on different ports, addresses, etc. It is organized in tables; however, there are no configuration options here, and this is only for observation. There is a dedicated sub-section for the Firewall Settings in the Network section, where you can actually configure rather than only observe. The only actions you can perform here are to “**Reset Counters**” or “**Restart Firewall**” via the links on the top left.
-
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/5.firewall.png"
@@ -172,7 +164,6 @@ When **Static address** is selected, other settings that can be done:
   caption="WAN Interface with Static Address Page"
 />
 
-
 **IPv4 address** - The network address in Internet Protocol version 4.
 
 **IPv4 netmask** - The subnet mask in Internet Protocol version 4.
@@ -195,13 +186,11 @@ When **Static address** is selected, other settings that can be done:
 
 This page is where you can make changes on the Cellular connectivity. 
 
-
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/9.cellular-interface.png"
   width="100%"
   caption="Cellular Interface Page"
 />
-
 
 - **Status** - This shows the **Uptime**, **MAC-Address**, **RX** (received packets), and **TX** (sent packets).
 - **LTE network is enabled** - A button that enables/disables the interface. 
@@ -221,13 +210,11 @@ This page is where you can make changes in the Wireless connection. Enabling/Dis
   - **Key** - In selecting an Encryption, a **Key** field will pop up. You must enter a password, which will be used to connect to the AP.
   - **Hidden** - You can hide the AP by enabling this. 
 
-
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/10.access-point.png"
   width="100%"
   caption="Access Point Mode"
 />
-
 
 - **Client** – Only the wireless client will be active. By this mode, you can easily connect the gateway to a wireless network. When selecting this mode, a “**Wireless Client**” field will appear. 
   - **ESSID** - You must type the name of the wireless network, to which they want to connect the gateway to.
@@ -277,7 +264,6 @@ When **Static address** is selected, more settings pop up:
   - **Wireless Access Point** - See **Access Point** configuration to set up AP protection.
   - **Wireless Client** - See **Client** configuration to connect the gateway to a wireless network.
 
-
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/13.access-client-mode.png"
   width="100%"
@@ -295,13 +281,11 @@ This is where you can perform checks via the built-in tools: **Ping**, **Tracero
 
 You can either enter an URL or an IP Address in the text box and execute the command with the button. Both IPv4 and IPv6 are supported (chosen via the drop-down menu). The results are conveniently displayed in a CLI box.
 
-
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/14.diagnostics.png"
   width="100%"
   caption="Diagnostics Page"
 />
-
 
 #### Firewall
 
@@ -311,23 +295,19 @@ The Firewall page has a few separated tabs:
 
 - **General Settings** – This tab has two fields. The first field is the “**General Settings**” tab where general settings can be done: **Enable/Disable SYN-flood protection**, **Drop invalid packets on/off**, and **Input/Output/Forward settings**. The second field is for Zones settings where you can set up separate settings for the zones.
 
-
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/15.general-settings.png"
   width="100%"
   caption="General Settings Tab"
 />
 
-
 - **Port Forwards** – This tab allows you to set up the port forwards. Port forwarding allows remote computers on the Internet to connect to a specific computer or service within the private LAN. In the tab, there is a register with the port forwards that are already set up, and below is a couple of fields to set up a new port forward. 
-
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/16.port-tab.png"
   width="100%"
   caption="Port Forwards Tab"
 />
-
 
 - **Traffic Rules** - This tab allows you to set up the traffic rules. Traffic rules define policies for packets traveling between different zones, for example, to reject traffic between certain hosts or to open WAN ports on the router. 
 
@@ -337,16 +317,13 @@ The Firewall page has a few separated tabs:
   caption="Traffic Rules Tab"
 />
 
-
 - **Custom Rules** – This tab allows you to execute arbitrary iptables commands which are not otherwise covered by the firewall framework. The rules that will be written is interpreted as a shell script.
-
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/18.custom-rules.png"
   width="100%"
   caption="Custom Rules Tab"
 />
-
 
 #### Multi WAN
 
@@ -358,12 +335,9 @@ In the Multi WAN menu, you can can set a priority for all the interfaces. If hig
   caption="Multi WAN Tab"
 />
 
-
 ### Channel Plan
 
 In the Channel Plan, you can set up the operating frequency of the gateway. These frequency channels are the ones that the gateway will use to both receiving and transmitting from/to LoRa nodes. The first field on the page is for the **Region** that the gateway is set to. You can also change the region, corresponding to the frequency band for their country. The other modifications that can be done are **LoRaWAN Public** (on/off), **Multi-SF LoRa Channel**, **Standard Lora Channel**, and **FSK Channel**.
-
-
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/20.channel-plan.png"
@@ -379,7 +353,6 @@ There is also the button **Conform to LoRaWAN** that when turned off, it will gi
   width="100%"
   caption="Switch to Advanced Mode Tab"
 />
-
 
 ### LoRa Network
 
@@ -417,7 +390,6 @@ Here, the working mode of the gateway is set up. In the **LoRaWAN Network Settin
   - **Beacon Bandwidth** - The bandwidth the beacon is going to use. 
   - **Beacon Tx Power** - This is the transmit power of the beacon.
 
-
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/23.beacon-setup.png"
   width="100%"
@@ -425,7 +397,7 @@ Here, the working mode of the gateway is set up. In the **LoRaWAN Network Settin
 />
 
 - **Packet Filter**
-  
+
   - **Enable White List Mode** - Enable/disable the functionality that can filter incoming traffic and only forward packets from certain nodes to optimize bandwidth usage over the backhaul. 
   - **OUI List** - A white list filtering option.
   - **Network ID List** - A white list filtering option. 
@@ -436,24 +408,20 @@ Here, the working mode of the gateway is set up. In the **LoRaWAN Network Settin
   - **Join Count 1** - Maximum count of join requests allowed during Join Interval.
   - **Join Count 2** - Maximum count of join requests allowed during the Join Period.
 
-
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/24.packet-filter.png"
   width="100%"
   caption="Packet Filter Tab"
 />
 
-
 - **GPS Information**
   - **Fake GPS** - You can turn on/off the fake GPS functionality and manually set **Latitude**, **Longitude**, and **Altitude**.
-
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/25.gps-information.png"
   width="100%"
   caption="GPS Information Tab"
 />
-
 
 ##### MQTT Bridge Settings
 
@@ -471,16 +439,13 @@ If you choose an **MQTT Bridge** option in the **Protocol** field of the **Gener
   - **Enable User Authentication** - This function enables Encryption of the transmitted data. You need to configure the Certificates used to encrypt the data to secure authentication being performed.
   - **SSL/TLS Mode** - When enabled (disabled by default), you can choose between three modes, **CA signed server certificate**, **Self-signed server certificate**, and **Self-signed server & client certificate**, with their corresponding options.
 
-
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/26.general-setup.png"
   width="100%"
   caption="General Setup Tab"
 />
 
-
   - **MQTT Topic Template Setup** - There are two types of templates, depending on which LoRa Network Server Type you have have chosen.
-
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/27.chirpstack-2x.png"
@@ -488,13 +453,11 @@ If you choose an **MQTT Bridge** option in the **Protocol** field of the **Gener
   caption="ChirpStack 2.x Topic Template"
 />
 
-
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/28.chirpstack-3x.png"
   width="100%"
   caption="ChirpStack 3.x Topic Template"
 />
-
 
 ##### Basics Station
 
@@ -526,7 +489,6 @@ Network Server is the place where the configuration of the Built-in Network Serv
   caption="Network Server Configuration"
 />
 
-
 - **Network Server Settings**:
 
   - **Region** - The field only displays the chosen region. It can’t be changed here as this is done in the Channel Plan menu.
@@ -544,7 +506,7 @@ Network Server is the place where the configuration of the Built-in Network Serv
   - **Disable Frame-counter Validate** - This function turns on/off the Frame counter validation.
   - **Device-status request interval (sec)** - This shows how often should the end-devices be polled for their status Log Level.
   - **Statistic Period** - Shows how often the statistics will be gathered.
-  
+
 - **Beacon Setup**
 
   - **Beacon Period** -  How often the beacon is broadcasted.
@@ -558,7 +520,6 @@ Network Server is the place where the configuration of the Built-in Network Serv
 
 
 For a detailed tutorial on how to configure your gateway when using either LNS or CUPS server, refer to <a href="/Product-Categories/Software-APIs-and-Libraries/WisGateOS/LNS-and-CUPS-Configuration/"><b>LNS and CUPS Configuration</b></a> documentation.
-
 
 ##### Network Server Status
 
@@ -602,7 +563,6 @@ In this tab, you can add external gateways to work with the LoRa Network Server.
   - **Enable User Authentication** - This function enables Encryption of the transmitted data. You need to configure the Certificates used to encrypt the data to secure authentication being performed.
   - **SSL/TLS Mode** - When enabled (disabled by default), you can choose between three modes **CA signed server certificate**, **Self-signed server certificate**, and **Self-signed server & client certificate**, with their corresponding options.
 
-
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/32.general-setup.png"
   width="100%"
@@ -611,13 +571,11 @@ In this tab, you can add external gateways to work with the LoRa Network Server.
 
 - **MQTT Topic** - Here, the topic templates can be found.
 
-
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/33.mqtt.png"
   width="100%"
   caption="MQTT Topic Tab"
 />
-
 
 #### Application
 
@@ -633,7 +591,6 @@ Here, an application where a device can be registered and decrypt its data paylo
 To create an Application, type the name of the application in the name field, choose one of the options in the Type drop-down menu, and click the **Add** button.
 
 If there are any created applications, they will be shown as a list with the option to access and edit them.
-
 
 #### Global Integration
 
@@ -652,13 +609,11 @@ In this section, you can do an integration of the Built-in LoRa Application Serv
   - **SSL/TLS Mode** - When enabled (disabled by default), you can choose between three modes **CA signed server certificate**, **Self-signed server certificate**, and **Self-signed server & client certificate**, with their corresponding options.
   - **Join/Uplink/Downlink/Ack/Topic/Status/Multicast Downlink Topics** - MQTT Templates of the Topics. These are just templates the topics should not be changed.
 
-
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/35.mqtt-mode.png"
   width="100%"
   caption="Generic MQTT Mode Settings"
 />
-
 
 - **AWS IoT Core** mode:
   - **AWS URL** - The address of the AWS.
@@ -666,7 +621,6 @@ In this section, you can do an integration of the Built-in LoRa Application Serv
   - **CA Certificate** - CA certificate provided by the AWS IoT Core.
   - **Vendor Certificate** - Certificate for the gateway, generated by AWS IoT Core.
   - **Vendor Key** - Private key for the gateway, generated by AWS IoT Core.
-
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/36.aws-iot.png"
@@ -678,12 +632,9 @@ In this section, you can do an integration of the Built-in LoRa Application Serv
 
 For a detailed tutorial on how to configure your gateway when using either LNS or CUPS server, refer to <a href="/Product-Categories/Software-APIs-and-Libraries/WisGateOS/Global-Integration/"><b>Global Integration</b></a> documentation.
 
-
-
 #### Multicast Group
 
 Here, you have the option to create and manage multicast groups of nodes to use for bulk-action downlinks.
-
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/37.multicast.png"
@@ -693,7 +644,6 @@ Here, you have the option to create and manage multicast groups of nodes to use 
 
 
 To create a Multicast Group, type the name of it in the name field and click the **Add** button. If there are any created groups, they will be shown as a list with the option to access and edit them.
-
 
 ### Services
 
@@ -707,9 +657,8 @@ In this section, you can configure the DDNS. Dynamic DNS (DDNS) allows the gatew
   caption="Dynamic DNS (Beta) Page"
 />
 
-
 - **Hints** - The **Show more** clickable text shows hints on how to configure the Dynamic DNS. A detailed tutorial on how to configure DDNS can be found in the [Knowledge Hub][https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK-Industrial-LPWAN-Gateway-Remote-Management-DDNS/].
-  
+
 - **Overview** – You can change the global settings by pressing the text **To change global settings click here**. This will affect DDNS as a whole (both IPv4 and IPv6, for example).
 
 If you want to have separate settings/rules for IPv4/IPv6, you need to define two sets, one for each. This can be done by filling in a name in the text box and pressing the **Add** button.
@@ -720,12 +669,9 @@ An IPv4 example is created by default. You can configure its parameters by press
 
 For a detailed tutorial on how to configure the DDNSe to access the gateway, refer to <a href="/Product-Categories/Software-APIs-and-Libraries/WisGateOS/Configuring-DDNS/"><b>Configuring DDNS</b></a> documentation.
 
-
-
 #### OpenVPN Tunnels
 
 This section shows you how to create a VPN tunnel.
-
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/39.openvpn.png"
@@ -744,9 +690,7 @@ To create a tunnel, type a name for the **Custom Openvpn Configuration** and cli
   caption="Configuration Tab"
 />
 
-
 - **Upload file** - Instead of manually typing the certificate, you can upload the certificates from file.
-
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/41.file-tab.png"
@@ -758,8 +702,6 @@ To create a tunnel, type a name for the **Custom Openvpn Configuration** and cli
 
 For a detailed tutorial in the configuring the OpenVIP, refer to <a href="/Product-Categories/Software-APIs-and-Libraries/WisGateOS/OpenVPN-Configuration/"><b>OpenVPN Configuration</b></a> documentation.
 
-
-
 ### System
 
 In this section, you can configure the basic aspects of the device like its Hostname or Timezone.
@@ -767,9 +709,9 @@ In this section, you can configure the basic aspects of the device like its Host
 - **System Properties**
 
   - **General Settings** - You can set the **Local Time**. By clicking the **Sync with browser** button, you can sync the internal clock of the gateway with the time of the browser.
-  
+
   - **Hostname** - The name of the gateway. You can change it to a desired one. 
-    
+
   - **Timezone** - The time-zone of the gateway. It is a good practice to set it to the time zone of your location for synchronization (Default is UTC). Syncing the clock of the gateway is good for monitoring and debugging. 
 
 <rk-img
@@ -777,7 +719,7 @@ In this section, you can configure the basic aspects of the device like its Host
   width="100%"
   caption="General Settings Tab"
 />
-  
+
   - **Logging** - You can configure how to keep a log of system events. 
   - **System log buffer size** - You can set size of the log in KiB.
   - **External system log server** - Set the address of the external server, where the logs will be stored.
@@ -785,13 +727,12 @@ In this section, you can configure the basic aspects of the device like its Host
   - **Log output level** - You can select what type of log output you want to save Debug, Info, Notice, Warning, Error, Critical, Alert, or Emergency.
   - **Cron Log Level** -  This is the level of the cron log: **Normal**, **Debug**, or **Warning**.
 
-
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/43.logging-tab.png"
   width="100%"
   caption="Logging Tab"
 />
-  
+
   - **Language** - In this tab, you can change the language of the Web UI. From the drop-down menu, you can choose a preferred language and click on **Save & Apply** to set the new language. Default (**auto**) is English.
 
 <rk-img
@@ -799,7 +740,6 @@ In this section, you can configure the basic aspects of the device like its Host
   width="100%"
   caption="Language Tab"
 />
-
 
 - **Time Synchronization**
   - **Enable NTP client** - Enables/disables the NTP (Network Time Protocol) client for the clock synchronization. 
@@ -813,13 +753,11 @@ In this section, you can configure the basic aspects of the device like its Host
   - **Disable** -  The light will be off regardless of **warning**.
   - **warning** - in terms of this tool warnings cold occur  either due to no internet connection or packet forwarder issues. 
 
-
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/45.breathing-light.png"
   width="100%"
   caption="Breathing Light Page"
 />
-
 
 #### Administration
 
@@ -831,7 +769,6 @@ From this tab, you can change the administrator password for accessing the Web U
   caption="Administration Page"
 />
 
-
 #### Backup / Flash Firmware
 
 In this section, you can generate a backup of the configuration files, perform a factory reset, restore a backup, or flash new firmware.
@@ -842,14 +779,12 @@ In this section, you can generate a backup of the configuration files, perform a
   caption="Backup / Flash Firmware Page"
 />
 
-
 - **Backup / Restore**
   - **Generate archive** - Generates and downloads an archive of the current configuration.
   - **Perform reset** - Resets the Gateway to the default settings.
   - **Restore backup** - You can upload a previously generated archive via the **Choose File** button to restore the configuration settings at the time of its making.
 
 - **Flash new firmware image** - You can update the firmware by flashing a bin file. This is done by using the **Choose File** button to select the location of the new firmware file and the **Flash Image…** button to initiate the flashing process. There is a tick box to toggle the option of keeping the current settings of the Gateway.
-
 
 ::: tip 📝 NOTE
 
@@ -859,11 +794,9 @@ The **Keep settings** check box is selected by default, as unchecking it will re
 
 For a detailed tutorial in the Backup or Restore process, refer to <a href="/Product-Categories/Software-APIs-and-Libraries/WisGateOS/Backup-Restore-Explanation/"><b>Backup and Restore Explanation</b></a> documentation.
 
-
 #### Reboot
 
 In this tab, you can reboot the gateway. All the unsaved changes will be discarded.
-
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/48.reboot.png"
@@ -875,12 +808,9 @@ In this tab, you can reboot the gateway. All the unsaved changes will be discard
 
 For more details, refer to <a href="/Product-Categories/Software-APIs-and-Libraries/WisGateOS/Reboot-Process/"><b>Reboot Process</b></a> documentation.
 
-
-
 #### File Browser
 
 This section gives you access to the files in the **root** partition. System logs can be downloaded from here.
-
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/49.file-browser.png"
@@ -890,12 +820,9 @@ This section gives you access to the files in the **root** partition. System log
 
 For more details, refer to <a href="/Product-Categories/Software-APIs-and-Libraries/WisGateOS/File-Browser-Explanation/"><b>File Browser Explanation</b></a> documentation.
 
-
-
 ### WisDM
 
 In this tab, you can enable/disable the WisDM functionality. More information about WisDM can be found in the [RAK News Hub](https://news.rakwireless.com/managing-over-the-air-with-wisdm/).
-
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos/main/50.wisdm.png"
@@ -903,12 +830,9 @@ In this tab, you can enable/disable the WisDM functionality. More information ab
   caption="WisDM Page"
 />
 
-
 - **Enable** - Enables/disables the WisDM.
 
 - **Company** - The name of the company/user that owns the gateway. For easier management and navigation, use the name of the organization with the WisDM account.
 
 - **Enable FOTA** - When enabled, the gateway can be upgraded to a newer firmware version via the WisDM. If you want to upgrade the firmware via the Web UI, this function must be disabled. 
-
-
 

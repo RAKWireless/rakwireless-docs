@@ -63,30 +63,7 @@ enum RAK_PWM_RESOLUTION
 | RAK_PWM_RESOLUTION_14BIT | 14 bit resolution |
 
 ## Serial
-<!-- 
-### apiMode
 
-```c
-apiMode(SERIAL_PORT port)
-```
-
-### myAddr
-
-```c
-myAddr(SERIAL_PORT port)
-```
-
-### get
-
-```c
-uint8_t get()	
-```
-
-### set
-
-```c
-void set(uint8_t)	
-``` -->
 
 ### begin()
 

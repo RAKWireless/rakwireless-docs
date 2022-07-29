@@ -269,7 +269,6 @@ OK
 
 <br>
 
-
 5. <b> `at+get_config=device:status` </b>
 
 This command is used to obtain the current status of the device.
@@ -1156,7 +1155,6 @@ OK
 
 <br>
 
-
 20. <b> at+set_config=lora:work_mode:`<mode>` </b>
 
 This command is used to set the Working Mode: 
@@ -1203,8 +1201,6 @@ Initialization OK
 ```
 
 <br>
-
-
 
 21. <b> at+set_config=lora:dutycycle_enable:`<status>` </b>
 
@@ -1266,9 +1262,6 @@ OK
 ```
 
 <br>
-
-
-
 
 23. <b> at+set_config=lora:multicast_dev_addr:`<multicast_dev_addr>` </b>
 
@@ -1360,7 +1353,6 @@ OK
 ```
 
 <br>
-
 
 26. <b>set_config=lora:default_parameters </b>
 
@@ -1464,8 +1456,6 @@ OK
 
 <br>
 
-
-
 2. <b> at+set_config=lorap2p:transfer_mode:`<mode>` </b>
 
 This command is used to switch the state of the LoRa transceiver between sending and receiving state, and it’s only valid when the LoRa mode was set to LoRaP2P before.
@@ -1521,7 +1511,6 @@ This command is used to send data through LoRaP2P, and only valid when the LoRa 
 at+send=lorap2p:1234\r\n                         
 OK
 ```
-
 
 In LoRa P2P mode, the receiving node receives the data and outputs the data in the following format:
 
@@ -1631,7 +1620,7 @@ at+recv=<RSSI>,<SNR>,< Data Length >:< Data >
 ## Appendix II：TX Power by Region
 
 <b> EU868 </b>
- 
+
 By default, MaxEIRP is considered to be +16&nbsp;dBm. 
 
 | TXPower | Configuration (EIRP) |

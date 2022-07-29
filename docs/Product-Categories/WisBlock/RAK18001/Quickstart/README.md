@@ -11,11 +11,7 @@ next: ../Datasheet/
 
 # RAK18001 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock RAK18001 Buzzer module and how to program with it.
--->
 
 ## Prerequisite
 

@@ -43,7 +43,6 @@ Additionally, it has two user-definable LEDs, one power supply/charging indicato
 
 :::
 
-
 If you can't find a WisBlock module that fits your IoT requirements, use the standard connectors of WisBlock to develop your specific function module. WisBlock supports open-source hardware architecture and you can find tutorials showing how to create your own [Awesome WisBlock](https://github.com/RAKWireless/Awesome-WisBlock) module.
 
 ### Applications
@@ -241,7 +240,6 @@ The **WisBlock Core module connector** is a 40-pin board-to-board connector. It 
   width="45%"
   caption=" WisBlock Core module connector"
 />
-
 
 The table below shows the pinout of the 40-pin WisBlock core connector:
 
@@ -493,7 +491,6 @@ A 5&nbsp;V solar panel can be connected to the board via the **P1 connector**. T
 
 #### Environmental Characteristics
 
-
 The table below lists the operation and storage temperature requirements of RAK19007:
 
 | **Parameter**                 | **Minimum** | **Typical** | **Maximum** |
@@ -503,7 +500,6 @@ The table below lists the operation and storage temperature requirements of RAK1
 | Storage Temperature Range     | –40&nbsp;ºC | +25&nbsp;ºC | +80&nbsp;ºC |
 
 #### Schematic Diagram
-
 
 The component schematics diagram of the RAK19007 is shown in **Figure 15** and **Figure 16**.
 
@@ -518,10 +514,3 @@ The component schematics diagram of the RAK19007 is shown in **Figure 15** and *
   width="100%"
   caption="RAK19007 schematic diagram (Slots)"
 />
-
-<!-- Add certifications
-## Certification
-
-<rk-certifications :params="$page.frontmatter.certifications" />
-
--->

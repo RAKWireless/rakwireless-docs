@@ -17,12 +17,7 @@ Thank you for choosing **RAK612  WisNode Button** in your awesome IoT Project! ð
 * [AT Command Manual](../AT-Command-Manual/)
 * [Datasheet](../Datasheet/)
 
-<!-- <rk-img
-  src="/assets/images/wisnode/rak612/quickstart/main/RAK612.svg"
-  width="60%"
-  figure-number="1"
-  caption="RAK612 WisNode Button"
-/> -->
+
 
 ## Product Description
 
@@ -30,10 +25,7 @@ The **RAK612 WisNode Button** is a remote wireless trigger device. It supports u
 
 The RAK612 WisNode Button is suitable for a variety of Smart Home applications: Entertainment system control, Control of Lights, as a Snooze Button for your Alarms, or a Remote trigger. With long-range wireless connectivity, amazing battery life, and four programmable buttons, the possibilities are only limited by your imagination!
 
-<!-- <rk-btn
-  src="/Product-Categories/WisNode/RAK612/Quickstart/"
-  label="Get Started with RAK612 WisNode Button"
-/> -->
+
 
 ## Product Features
 

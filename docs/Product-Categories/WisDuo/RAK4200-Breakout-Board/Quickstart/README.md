@@ -13,14 +13,7 @@ tags:
 
 ## Prerequisites
 
-<!---
 
-<rk-img
-  src="/assets/images/wisduo/rak4200-breakout-board/quickstart/main/peojuzuyfj5wzl51igyk.jpg"
-  width="50%"
-  caption="RAK4200 Breakout Board"
-/>
---->
 
 ### What do you need?
 

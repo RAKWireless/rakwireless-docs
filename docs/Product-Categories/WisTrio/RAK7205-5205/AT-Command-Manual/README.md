@@ -186,7 +186,6 @@ LoRaWAN AT commands:
   at+set_config=lora:dutycycle_enable:X
   at+set_config=lora:send_repeat_cnt:X
 
-
 LoRaP2P AT commands:
 
   at+set_config=lorap2p:XXX:Y:Z:A:B:C
@@ -255,7 +254,6 @@ OK Wake Up
 ```
 
 <br>
-
 
 5. <b> at+get_config=device:status </b>
 
@@ -1020,7 +1018,6 @@ OK
 
 <br>
 
-
 17. <b> at+set_config=lora:class:`<class>` </b>
 
 This command is used to set the LoRaWAN class to Class A, Class B, or Class C.
@@ -1328,8 +1325,6 @@ OK
 
 <br>
 
-
-
 27. <b>set_config=lora:periodic_rst_interval:`<time>` </b>
 
 This command is used to set a periodic restart. It is only available on FW versions, starting from **v3.0.0.14.H.R** and **v3.0.0.14.L.R**.
@@ -1492,7 +1487,6 @@ at+send=lorap2p:1234\r\n
 OK
 ```
 
-
 In LoRa P2P mode, the receiving node receives the data and outputs the data in the following format:
 
 ```
@@ -1653,7 +1647,7 @@ OK
 ## Appendix II：TX Power by Region
 
 <b> EU868 </b>
- 
+
 By default, MaxEIRP is considered to be +16&nbsp;dBm. 
 
 | TXPower | Configuration (EIRP) |

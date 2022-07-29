@@ -9,11 +9,7 @@ prev: ../Overview/
 next: ../Datasheet/ 
 ---
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock RAK5801 board and how to use it.
--->
 # RAK5801 Quick Start Guide
 
 ## Prerequisite

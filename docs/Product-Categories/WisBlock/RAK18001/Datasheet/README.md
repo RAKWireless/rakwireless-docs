@@ -49,7 +49,7 @@ The RAK18001 Buzzer Module can be mounted to any IO Slots (A, B, C, or D) of Wis
 />  
   
 ### Hardware  
-  
+
 The RAK18001 uses the MLT-5020 Buzzer. Please see manufacturer's [MLT-5020 Buzzer Page](https://lcsc.com/product-detail/Buzzers_Jiangsu-Huaneng-Elec-MLT-5020_C94598.html) for more details.  
 
 | Vendor               | Part number |
@@ -81,7 +81,7 @@ However, you can switch these two terminals by connecting the PWM1 to R6 and PWM
 | IO2    | IO1    | IO4    | IO5    |
 
 #### Electrical Characteristics    
-  
+
 The table below shows the RAK18001 Buzzer Module electrical characteristics:  
   
 | Symbol          | Description                   | Min. | Nom. | Max. | Unit |
@@ -94,7 +94,7 @@ The table below shows the RAK18001 Buzzer Module electrical characteristics:
 #### Mechanical Characteristics  
   
 ##### Board Dimensions  
-  
+
 The Figure 4 shows the dimensions and mechanical drawing of the RAK18001 module.  
   
 <rk-img

@@ -21,7 +21,6 @@ next: false
 
 ### Description
 
-
 RAK12025 is a gyroscope module, part of the RAKWireless WisBlock Sensor series. The module is based on I3G4250D from STMicroelectronics. The I3G4250D is a low-power 3-axis angular rate sensor able to provide unprecedented stability at a zero-rate level and sensitivity over temperature and time. It includes a sensing element and a digital interface capable of providing the measured angular rate. With I3G4250D, RAK12025 can measure rotation speed and report data through a standard I2C digital interface. 
 
 ### Features 
@@ -55,7 +54,7 @@ RAK12025 has two digital output lines, so you need two GPIOs from WisBlock Core.
 
 ### Hardware
 
-The hardware specification is categorized into six parts. It shows the chipset of the module and discusses the pinouts, sensors, and the corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12025 WisBlock Gyroscope Sensor Module.
+The hardware specification is categorized into six (6) parts. It shows the chipset of the module and discusses the pinouts, sensors, and the corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12025 WisBlock Gyroscope Sensor Module.
 
 
 #### Chipset
@@ -84,7 +83,6 @@ The table below shows the default IOs used for different slots using INT1:
 | SLOT C | SLOT D | SLOT E | SLOT F |
 | ------ | ------ | ------ | ------ |
 | WB_IO4 | WB_IO6 | WB_IO3 | WB_IO5 |
-
 
 When using INT2, the default IOs used for different slots is shown in the table below: 
   

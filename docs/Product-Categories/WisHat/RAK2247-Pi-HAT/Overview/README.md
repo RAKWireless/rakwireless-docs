@@ -22,10 +22,7 @@ RAK2247 Pi HAT is a **converter board** designed to allow the RAK2247 Concentrat
 
 Moreover, there is a **GPS** on the HAT that enhances your RAK2247 with localization and timing data.
 
-<!-- <rk-btn
-  src="/Product-Categories/WisHat/RAK2247-Pi-HAT/Datasheet/"
-  label="Get Started with RAK2247 Pi HAT "
-/> -->
+
 
 ## Product Features
 

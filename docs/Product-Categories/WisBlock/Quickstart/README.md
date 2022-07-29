@@ -1,8 +1,8 @@
 ---
-sidebar: auto
-sidebarDepth: 4
 rak_desc: WisBlock is a modular system that makes it easy to implement a low power wide area network (LPWAN) into your IoT solution. WisBlock is going with your solution from rapid prototyping to mass production without the need to create new hardware modules for each step.
 rak_img: /assets/images/wisblock/quickstart/wisblock.png
+sidebar: auto
+sidebarDepth: 4
 ---
 
 # WisBlock Quick Start Guide
@@ -88,53 +88,15 @@ Once you are done setting up your software environment, you can access the examp
 
 WisBlock Base is the baseboard that connects the WisBlock Core board with the WisBlock IO and WisBlock Sensor modules.
 
-<!--- Insert Image
-
-<rk-img
-  src=""
-  width="100%"
-  caption=""
-/>
-
---->
-
 The standard WisBlock Base has a USB interface that connects with the core MCU's USB pins so that you can use Arduino™ IDE to upload and debug it directly. Depending on the version a WisBlock Base has three to six module slots:
 
 - One “CPU-SLOT” which is used for the WisBlock Core module.
 - One to eight slots for WisBlock Sensor modules, named “SLOT A”, “SLOT B”, “SLOT C”, and so on.
 - One or two “IO SLOT” for WisBlock IO modules like the RS485 board, 4~20&nbsp;mA or 0~5&nbsp;V board, Wi-Fi board, Cellular board.
 
-<!--- Insert Image
-
-<rk-img
-  src=""
-  width="100%"
-  caption=""
-/>
-
---->
-
 WisBlock Base is the power supply for all WisBlock modules. It supports 5&nbsp;V USB input, battery supply, and a solar panel to recharge the battery.
 
-<!--- Insert Image
-<rk-img
-  src=""
-  width="100%"
-  caption=""
-/>
---->
-
 WisBlock Core, WisBlock Sensor, and WisBlock IO modules are connected to WisBlock Base by just plugging them into the corresponding slots.
-
-<!--- Insert Image
-
-<rk-img
-  src=""
-  width="100%"
-  caption=""
-/>
-
---->
 
 To make sure the modules are properly connected, use screws to keep them in their slots.
 

@@ -23,7 +23,6 @@ While browsing through the directory, you will see a structure of folders where 
   caption="Main Directory"
 />
 
-
 2. Select the folder and from the subfolders select syslog/.
 
 <rk-img
@@ -31,7 +30,6 @@ While browsing through the directory, you will see a structure of folders where 
   width="100%"
   caption="Subdirectories"
 />
-
 
 3. Select the `.log.tgz` archive that you want to download and click on it to download it.
 

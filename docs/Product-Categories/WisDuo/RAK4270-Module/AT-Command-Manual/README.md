@@ -1853,15 +1853,15 @@ Listed are the summary of the pins of the RAK4270 module:
     - During sleep, Pin 5 (RX1) and Pin 1 (RX3) are automatically configured as wake up pins and in external interrupt mode with an internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
 
 2. **About the SWD Debug Pin**: Pin 7 (SWDIO) and Pin 8 (SWCLK) are used for SWD debug port.
-   
+
 3. **About the Power Pin**: The power pins on the RAK4270 module include VCC on Pin 20 and GND on Pin 11, Pin 13, Pin 14, and Pin 19.
 
 4. **About the Reset Pin**: The reset pin on the RAK4270 module is Pin 18.
-   
+
 5. **About the RF Antenna Pin**: The RF antenna pin on the RAK4270 module is the Pin 12.
-   
+
 6. **About the ADC Pin**: The ADC pin on the RAK4270 is assigned to Pin 3.
-   
+
 7. **About the GPIO Pin**: The GPIO pins available on the RAK4270 module are Pin 3, Pin 6, Pin 9, Pin 10, Pin 16, and Pin 17.
 
 ::: tip 📝 NOTE

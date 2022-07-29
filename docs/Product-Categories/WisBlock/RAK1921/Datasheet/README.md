@@ -15,7 +15,6 @@ prev: ../Overview/
 
 ### Description
 
-
 The RAK1921 module, part of the WisBlock series, is one of the modules that belong to the accessory category. This module was designed to be part of a production-ready IoT solution in a modular way. As part of the accessory category, it is not mandatory to be part of the final solution, but for certain cases can provide competitive advantages and improves the usability of the final solution. 
 
 RAK1921 is an OLED display module with a 128×64 dot matrix. The main characteristics of this module are the following: high brightness, self-emission, high contrast ratio, slim/thin outline, wide viewing angle, wide temperature range, and low power consumption.
@@ -37,10 +36,7 @@ RAK1921 is an OLED display module with a 128×64 dot matrix. The main characteri
 
 ## Specifications
 
-<!---
-### Overview
-#### Mounting
---->
+
 
 ### Hardware
 

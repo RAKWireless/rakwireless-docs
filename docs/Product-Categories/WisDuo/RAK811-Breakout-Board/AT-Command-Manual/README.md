@@ -91,7 +91,6 @@ Only Read Commands have information in the replied message, while Write Commands
 
 :::
 
-
 The firmware developed running in the external MCU will expect at a minimum string of `Ok\r\n` after sending a successful command to the board. On the other hand, when the command is not successfully executed by the board, you will receive a response in the following format:
 
 ```
@@ -213,7 +212,6 @@ LoRaWAN AT commands:
   at+get_config=lora:status
   at+set_config=lora:dutycycle_enable:X
   at+set_config=lora:send_repeat_cnt:X
-
 
 LoRaP2P AT commands:
 
@@ -393,7 +391,6 @@ OK
 ```
 
 <br>
-
 
 3. <b>at+send=uart:`<index>:<data>`</b>
 
@@ -1027,7 +1024,6 @@ OK
 
 <br>
 
-
 17. <b>at+set_config=lora:class:`<class>`</b>
 
 This command is used to set LoRaWAN class to Class A, Class B, or Class C.
@@ -1516,7 +1512,7 @@ at+recv=<RSSI>,<SNR>,<Data Length>:<Data>
 ### Appendix II：TX Power by Region
 
 <b> EU868 </b>
- 
+
 By default, MaxEIRP is considered to be +16&nbsp;dBm. 
 
 | TXPower | Configuration (EIRP) |
@@ -1881,7 +1877,6 @@ The LoRaWAN stack adds 8 bytes to the user payload. In the following list, M is 
 ### Appendix IV: Pin Description of RAK811 Breakout Board
 
 The pin definition of the RAK811 Breakout Board can be reviewed in the [Pin Definition](/Product-Categories/WisDuo/RAK811-Breakout-Board/Datasheet/#pin-definition) section of the Datasheet.
-
 
 Listed are the summary of the pins of the RAK811 Breakout Board:
 

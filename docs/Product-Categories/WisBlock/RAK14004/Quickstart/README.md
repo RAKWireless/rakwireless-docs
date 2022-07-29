@@ -211,7 +211,6 @@ void write_to_Atmega328p(uint8_t reg, uint8_t data)
   Wire.endTransmission();    // stop transmitting
 }
 
-
 void KeyPad_Print(void)
 {
   if (InterruptFlag == 1)
@@ -421,7 +420,6 @@ void write_to_Atmega328p(uint8_t reg, uint8_t data)
   Wire.write(data);
   Wire.endTransmission();    // stop transmitting
 }
-
 
 void KeyPad_Print(void)
 {
@@ -642,7 +640,6 @@ void write_to_Atmega328p(uint8_t reg, uint8_t data)
   Wire.endTransmission();    // stop transmitting
 }
 
-
 void KeyPad_Print(void)
 {
   if (InterruptFlag == 1)
@@ -732,7 +729,7 @@ void loop() {
 
 4. When you successfully uploaded the sample code, open the Serial Monitor of the Arduino IDE to check the module's reading logs. If you see the logs, as shown in **Figure 27**, then your RAK14004 module is properly communicating to the WisBlock Core using the I2C interface.
 
-<!-- Replace image -->
+
 <rk-img
   src="/assets/images/wisblock/rak14004/quickstart/4x4-log.png"
   width="80%"

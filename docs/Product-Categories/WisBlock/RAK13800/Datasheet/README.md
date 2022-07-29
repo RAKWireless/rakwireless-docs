@@ -117,7 +117,6 @@ The RAK13800 WisBlock Ethernet module comprises a standard 40-pin IO Connector. 
 
 ##### Board Dimensions
 
-
 Refer to **Figure 5** below for the mechanical dimensions of the RAK13800 module.
 
 <rk-img

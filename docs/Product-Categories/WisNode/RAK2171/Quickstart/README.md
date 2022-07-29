@@ -54,7 +54,6 @@ In this mode, the WisNode TrackIt is configured via the TrackIt application on y
   caption="LoRaWAN mode"
 />
 
-
 1. Download and install the **TrackIt App** on your smartphone.
 2. Turn on the Bluetooth on tour smartphone.
 3. Start the **TrackIt App**. Location permission may be requested, allow it.
@@ -82,7 +81,6 @@ In this mode, the WisNode TrackIt is configured via the TrackIt application on y
   caption="Add tracker and Start Pairing screen"
 />
 
-
 7. Hold the **Power button** of your RAK2171 for 3 seconds to turn it on. If the device was turned on previously, you may need to restart it, as the Bluetooth is available for pairing for 3 minutes. 
 
 8. Press the **Start Pairing** in the app. An information screen will be displayed to inform you of the process. 
@@ -100,7 +98,6 @@ If the tracker is turned off or the Bluetooth pair period has expired, you will 
   width="30%"
   caption="Pairing screen"
 />
-
 
 9. After successful pairing, you will see a configuration screen, where you will be able to change the tracker's default name and the working mode. This section is for the LoRaWAN mode, so press the LoRaWAN button to change the mode from LoRa P2P to LoRaWAN. 
 
@@ -262,7 +259,6 @@ In this mode, any LoRaWAN NS can be used (TTN, Helium, or other). The RAK TrackI
   caption="Add tracker and Start Pairing screen"
 />
 
-
 7. Hold the **Power button** of your RAK2171 for 3 seconds to turn it on. If the device was turned on previously, you may need to restart it, as the Bluetooth is available for pairing for 3 minutes. 
 
 8. Press the **Start Pairing** in the app. An information screen will be displayed to inform you of the process. 
@@ -280,7 +276,6 @@ If the tracker is turned off or the Bluetooth pair period has expired, you will 
   width="30%"
   caption="Pairing screen"
 />
-
 
 9. After successful pairing, you will see a configuration screen, where you will be able to change the tracker's default name and the working mode. Press the LoRaWAN button to change the mode from LoRa P2P to LoRaWAN. 
 

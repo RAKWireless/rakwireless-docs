@@ -18,7 +18,7 @@ Thank you for choosing **RAK5802 WisBlock RS485 Interface Module** in your aweso
 * [RAK5802 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
+
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK5802 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK5802.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
@@ -49,15 +49,7 @@ The **RAK5802** module features one RS485 interface. A protection circuity is ad
 
 In addition, the **RAK5802** supports one I2C interface to connect external sensors.
 
-<!--
-The RAK5802 module is part of the WisBlock series, specifically, it is one of the modules that belongs to the WisIO category. This module was designed to be part of a production-ready IoT solution in a modular way, and must be combined with a WisCore and a WisBase module.
 
-The RAK5802 is a RS485 ModBus extension module that allows users to provide IoT connectivity to a new/existing solution with RS485 interface. This module converts the RS485 signals into UART signals. These signals are collected by a MCU located inside of a WisCore module for further data transmission. 
-
-The RAK5802 module features one RS485 interface. Inside, a protection circuity is added to protect against ESD hazard. The RAK5802 module complies with the IEC61000-4-2 standard and can protect up to 18 KV HBM ESD.
-
-In addition, the RAK5802 supports one I2C interface, customer can use this I2C interface to connect external sensors.
--->
 
 ## Product Features
 

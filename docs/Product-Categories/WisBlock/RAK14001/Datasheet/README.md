@@ -108,15 +108,6 @@ The mechanical dimensions of the RAK14001 module is shown in **Figure 3** below.
   caption="RAK14001 WisBlock Module Schematics"
 />
 
-<!-- ##### 40-pin WisConnector
-
-**Figure 6** shows the WisConnector connection. **EN** is connected to power chip enable pin, High active. **VBAT** is battery voltage, maximum of 4.2&nbsp;V.
-
-<rk-img
-  src="/assets/images/wisblock/rak14001/datasheet/rak14001-wisio.png"
-  width="30%"
-  caption="RAK14001 WisConnector"
-/> -->
 
 ##### Power Supply
 

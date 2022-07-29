@@ -111,7 +111,6 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 In this example, you will be scanning a generic QR code and the reading will be displayed on the Arduino serial monitor.
 
-
 1. You need to select first the WisBlock Core you have, as shown in **Figure 7** to **Figure 9**.
 
 <rk-img
@@ -131,7 +130,6 @@ In this example, you will be scanning a generic QR code and the reading will be 
   width="100%"
   caption="Selecting RAK11300 as WisBlock Core"
 />
-
 
 2. Copy the example code below and paste it into the Arduino IDE:
 
@@ -189,7 +187,6 @@ void loop()
 ```
 
 If you experience any error in compiling the example sketch, check the updated code for the RAK12018 WisBlock Code Scanner Module that can be found on the [RAK12018 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK12018_CodeReader_LV3296/RAK12018_CodeReader_LV3296.ino).
-
 
 3. Select the right serial port and upload the code, as shown in **Figure 10** and **Figure 11**.
 

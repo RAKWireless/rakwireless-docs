@@ -150,7 +150,6 @@ The table below shows the pinout of the 40-pin MCU module connector:
 |       37       |                IO5                 |       38       |                IO6                 |
 |       39       |                GND                 |       40       |                GND                 |
 
-
 As for the following table, it shows the definition of each pin of the WisBlock Core connector:
 
 | **Pin Number** | **Pin Name** | **Type** |                                   **Description**                                    |
@@ -232,7 +231,6 @@ The table below shows the pinout of the 40-pin Power module connector:
 |       35       |              I2C2_SDA              |       36       |              I2C2_SCL              |
 |       37       |                IO5                 |       38       |                IO6                 |
 |       39       |                GND                 |       40       |                GND                 |
-
 
 As for the following table, it shows the definition of each pin of the WisBlock Power connector:
 

@@ -37,7 +37,6 @@ To protect their AP, you can choose between three encryption types. In the drop-
 **WPA-PSK/WPA2-PSK Mixed Mode** is the recommended type of encryption. 
 :::
 
-
 When the desired protection is chosen, a **Key** field will pop up. In the **Key** field, enter a password to protect the AP. The green arrows ![13.a](/assets/images/software-apis-and-library/wisgateos/subdocument1/13.a.png) on the right will show/hide the password.
 
 
@@ -46,7 +45,6 @@ When the desired protection is chosen, a **Key** field will pop up. In the **Key
   width="100%"
   caption="Access Point Password"
 />
-
 
 Optionally, you can hide the AP by enabling the **Hidden** option. To connect to a hidden AP, you must manually type the ESSID, choose the correct encryption type, and type the password. 
 
@@ -69,7 +67,6 @@ In the **ESSID** field, you can type the name of their wireless network manually
   caption="Client ESSID Available Networks"
 />
 
-
 In the **Encryption** field, you must choose what encryption is used by the network. After the correct one is selected, a **Key** field will pop up.
 
 
@@ -78,7 +75,6 @@ In the **Encryption** field, you must choose what encryption is used by the netw
   width="100%"
   caption="Client Encryption and Password"
 />
-
 
 In the **Key** field, you must type the password that protects the wireless network. The green arrows ![13.a](/assets/images/software-apis-and-library/wisgateos/subdocument1/13.a.png) right to the field will show/hide the password.
 
@@ -92,7 +88,6 @@ In the **DHCP mode**, there is not much to configure. The DHCP server of the rou
   width="100%"
   caption="DHCP Client Protocol"
 />
-
 
 If you chooses the Static address protocol, it can set a static IP address for the gateway. This way, after a reboot or restart of the router, the gateway will keep the assigned IP address.
 

@@ -16,12 +16,7 @@ Thank you for choosing **RAK8212 WisTrio iTracker Pro** in your awesome IoT Proj
 * [Datasheet](../Datasheet/)
 * [AT Command Manual](../AT-Command-Manual/)
 
-<!-- <rk-img
-  src="/assets/images/wistrio/rak8212/quickstart/overview/mbu3h7u9ykxyd0yfzkln.jpg"
-  width="40%"
-  figure-number="1"
-  caption="RAK8212 WisTrio iTracker Pro"
-/> -->
+
 
 ## Product Description
 
@@ -34,10 +29,7 @@ live tracking and environment sensing.
 
 Applications can be made with the RAK8212 like Vehicle location/fleet transportation management, Safety monitoring of minor children, Animal protection and animal husbandry management, Loss of assets / personnel positioning and Other remote, battery powered applications.
 
-<!-- <rk-btn
-  src="/Product-Categories/WisTrio/RAK8212/Quickstart/"
-  label="Get Started with RAK8212 WisTrio iTracker Pro"
-/> -->
+
 
 ## Product Features
 

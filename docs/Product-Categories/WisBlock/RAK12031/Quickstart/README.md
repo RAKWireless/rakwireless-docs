@@ -98,7 +98,6 @@ The procedure in disassembling any type of WisBlock module is the same.
 If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
 :::
 
-
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
 :::warning ⚠️ WARNING
@@ -113,7 +112,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 #### Initial Test of the RAK12031 WisBlock Module
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have.
 
@@ -245,7 +244,6 @@ If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the *
   width="100%"
   caption="Uploading the RAK12031 example code"
 />
-
 
 5. When you have successfully uploaded the example sketch, open the serial monitor of the Arduino IDE and set the baud rate correctly. You will be able to see the sensor's output, as shown in **Figure 12**. Try to place an object in the middle of the of T-Beam-Fork Sensor. If the presence of the object and the rotation speed, then your RAK12031 is properly communicating with the WisBlock core. 
 

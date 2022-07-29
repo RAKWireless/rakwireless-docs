@@ -33,7 +33,7 @@ RAK12021 is a WisBlock RGB Sensor that extends the WisBlock system which is base
 ## Specifications
 
 ### Overview
-<!-- Insert Picture of Sensor with its dimensions -->
+
 
 #### Mounting
 
@@ -47,7 +47,7 @@ RAK12021 is a WisBlock RGB Sensor that extends the WisBlock system which is base
 
 ### Hardware
 
-The hardware specification is categorized into four parts. It shows the pinouts and the corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12021 WisBlock RGB Sensor Module.
+The hardware specification is categorized into five (5) parts. It shows the chipset of the module and discusses the pinouts and their corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12021 WisBlock RGB Sensor Module.
 
 ####  Chipset
 

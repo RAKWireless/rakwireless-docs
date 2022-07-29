@@ -69,19 +69,7 @@ As shown in **Figure 2**, the location for the IO slot is properly marked by sil
 />
 
 
-<!--
-##### RAK13001 Connector Crimping Mechanism
 
-The RAK13001 features a fast-crimping terminal connector to simplify and ensure the wiring process on the fields. The fast-crimping terminal can support cable with a width between 20&nbsp;AWG to 24&nbsp;AWG. The usual stripping length is around 6 to 7&nbsp;mm. 
-
-As shown in **Figure 5**, during the crimping process, you should first press down and maintain the spring head of the crimping terminal firmly, then insert the stripped cable head into the corresponding connector’s hole. Once inserted correctly, release the spring head, and the crimping process is completed.
-
-<rk-img
-  src="/assets/images/wisblock/rak13001/quickstart/crimping_process.png"
-  width="40%"
-  caption="RAK13001 Module Connector"
-/>
--->
 
 ##### Disassembling Procedure
 
@@ -175,7 +163,6 @@ Now, you can connect the battery (optional) and USB cable to start programming y
 #define I2C_ADDRESS 0x41
 
 INA219_WE ina219 = INA219_WE(I2C_ADDRESS);
-
 
 void setup()
 {
@@ -291,7 +278,6 @@ Click on the **Install** button to finish library installation.
   width="100%"
   caption="Arduino Library Manager INA219_WE"
 />
-
 
 5. Now, you can select the right port and upload the code, as shown in **Figure 11** and **Figure 12**.
 

@@ -78,7 +78,6 @@ The Angle Mounting Plate will help you place your antenna easily and securely at
   caption="Fixing the coupler"
 />
 
-
 2. Install the mounting plate with the two U-shaped brackets, securing them with a plain washer, a spring lock washer, and a hexagon nut at each end. 
 
 <rk-img

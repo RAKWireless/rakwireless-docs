@@ -11,14 +11,7 @@ rak_desc: Contains instructions and tutorials for installing and deploying your 
 
 # RAK5802 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock RS485 Interface Module and how to program with it.
-
-The information obtained from the RS485 Interface Module will then be printed over the USB debug port of the WisBlock Base board.
-
--->
 
 ## Prerequisite
 

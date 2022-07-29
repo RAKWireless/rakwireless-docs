@@ -13,11 +13,7 @@ rak_img: /assets/images/wisgate/rak7240/quickstart/RAK7240_home.png
 
 ## Prerequisites
 
-<!-- <rk-img
-  src="/assets/images/wisgate/rak7240/quickstart/1.rak7240-overview.jpg"
-  width="70%"
-  caption="RAK7240 WisGate Edge Prime"
-/> -->
+
 
 ### What Do You Need?
 

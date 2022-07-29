@@ -52,6 +52,8 @@ The RAK12005 WisBlock Rain Sensor Module can be mounted to the IO slot of the [W
 
 The hardware specification discusses the pinouts and its corresponding functions and diagrams of the module. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK12005 WisBlock™ Module.
 
+The hardware specification is categorized into five parts. It shows the chipset of the module and discusses the pinouts and their corresponding functions and diagrams. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK12005 WisBlock Rain Sensor Module.
+
 #### Chipset
 
 | Vendor    | Part number |

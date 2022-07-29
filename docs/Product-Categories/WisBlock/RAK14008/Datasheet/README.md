@@ -50,7 +50,7 @@ The RAK14008 WisBlock Gesture Sensor Module can be mounted to the IO slot of the
 
 ### Hardware
 
-The hardware specification is categorized into four parts. It discusses the pinouts and their corresponding functions and diagrams of the module. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK14008 WisBlock Module.
+The hardware specification is categorized into five (5) parts. It shows the chipset of the module and discusses the pinouts and their corresponding functions and diagrams. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK14008 WisBlock Module.
 
 ####  Chipset
 

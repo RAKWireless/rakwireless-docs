@@ -13,11 +13,7 @@ tags:
 Thank you for choosing **RAK813 BLE+LoRa Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
-<!-- <rk-img
-  src="/assets/images/wisduo/rak813-module/datasheet/overview/RAK813.jpg"
-  width="30%"
-  caption="RAK813 Module"
-/> -->
+
 
 ## Product Description
 
@@ -31,12 +27,7 @@ The RAK813 module uses TCXO as the LoRa clock source, so at different temperatur
 
 RAK813 supports various protocols, including the newest BLE and LoRaWAN, where customers can choose a multi frequency, including 433&nbsp;MHz, 470&nbsp;MHz, 868&nbsp;MHz, and 915&nbsp;MHz.
 
-<!-- <rk-btn
-  src="../Datasheet/"
-  label="View Datasheet for the RAK813 BLE+LoRa ModuleModule Module"
-/>
 
-<rk-quick-links :params="$page.frontmatter.params.qlinks1"/> -->
 
 ## Product Features
 

@@ -119,8 +119,9 @@ AT+VER=?
 
 ### Connecting to the Helium Network
 
-Helium has quickly become the most widespread LPWAN communal network with more than 400,000 hotspots deployed globally at the beginning of 2021. All the RAKwireless node products are compatible with it, and the process of adding a device to the network is intuitive and straightforward. This section will focus on giving a brief guide on how to connect the GNSS Tracker to the network console, assuming that there is a Helium Hotspot within range.
+Helium has quickly become the most widespread LPWAN communal network with more than 400,000 hotspots deployed globally at the beginning of 2021. All the RAKwireless node products are compatible with it, and the process of adding a device to the network is intuitive and straightforward.
 
+This section will focus on giving a brief guide on how to connect the GNSS Tracker to the network console, assuming that there is a Helium Hotspot within range.
 
 1. Login or create your account on the [Helium console page](https://www.helium.com/console).
 
@@ -128,7 +129,7 @@ Helium has quickly become the most widespread LPWAN communal network with more t
 <rk-img
   src="/assets/images/wisblock/rak10700/quickstart/connecting-to-helium-network/1.helium-console.png"
   width="85%"
-  caption="Helium Console"
+  caption="Helium console"
 />
 
 2. Once registered and logged in, you will end up at the home page where you can see your function tree on the left and your DC balance at the top, as well as several useful links.
@@ -137,7 +138,7 @@ Helium has quickly become the most widespread LPWAN communal network with more t
 <rk-img
   src="/assets/images/wisblock/rak10700/quickstart/connecting-to-helium-network/2.home.png"
   width="100%"
-  caption="Helium Console Home Screen"
+  caption="Helium console home screen"
 />
 
 3. Go to the **Devices** section in the function tree. If this is your first time doing this, there will be no devices registered. Click the **+ Add Device** button to get started.
@@ -146,7 +147,7 @@ Helium has quickly become the most widespread LPWAN communal network with more t
 <rk-img
   src="/assets/images/wisblock/rak10700/quickstart/connecting-to-helium-network/3.device-section.png"
   width="100%"
-  caption="Devices Section"
+  caption="Devices section"
 />
 
 4. A window will pop up with a set of fields containing the device parameters required for its registration.
@@ -154,25 +155,25 @@ Helium has quickly become the most widespread LPWAN communal network with more t
 <rk-img
   src="/assets/images/wisblock/rak10700/quickstart/connecting-to-helium-network/4.add-device.png"
   width="60%"
-  caption="Adding a New Device"
+  caption="Adding a new device"
 />
 
-5. Fill in a name of your choosing. The Dev EUI, App EUI, and App Key will have random values generated for you by default. Press the eye icon to reveal the values. You can manually replace them with values of your own. For this tutorial, use the default values. Press the **Submit** button, and you are done.
+5. Fill in a name of your choosing. The **Dev EUI**, **App EUI**, and **App Key** will have random values generated for you by default. Press the eye icon to reveal the values. You can manually replace them with values of your own. For this tutorial, use the default values. Press the **Submit** button, and you are done.
 
 <rk-img
   src="/assets/images/wisblock/rak10700/quickstart/connecting-to-helium-network/5.registered-device.png"
   width="100%"
-  caption="Helium Devices"
+  caption="Helium devices"
 />
 
-6. To see the decoded values in the Helium Console, you need to create a **Flow** that decodes the data.
+6. To see the decoded values in the Helium Console, create a **Flow** that decodes the data.
 
 - First, go to **Functions** in the Helium Console and create a new function. For the name, you can choose anything, the function type needs to be **Decoder**. For the format, choose **Cayenne LPP**.
 
 <rk-img
   src="/assets/images/wisblock/rak10700/quickstart/connecting-to-helium-network/5a-add-function.png"
   width="100%"
-  caption="Helium Decoder"
+  caption="Helium decoder"
 />
  
 - Next, go to **Flows** in the Helium Console and create a new flow. Connect your device to the flow that you just created.
@@ -180,9 +181,9 @@ Helium has quickly become the most widespread LPWAN communal network with more t
 <rk-img
   src="/assets/images/wisblock/rak10700/quickstart/connecting-to-helium-network/5b-add-flow.png"
   width="100%"
-  caption="Helium Flow"
+  caption="Helium flow"
 />
- 
+
 7. Now, your GNSS Tracker is registered and is awaiting activation. For this to happen, you need to import the Dev EUI, App EUI, and App Key in the GNSS Tracker using the Serial Port Tool.
 
 8. Open the tool, select the desired port (default baud rate) and open it. Then start importing your settings.
@@ -313,7 +314,6 @@ First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud
   caption="Create an application page"
 />
 
-
 2. Fill in the needed information. After filling in, click **Create application**.
 
    - **Owner** - Automatically filled by The Things Stack, based on your account or created organization.
@@ -380,7 +380,6 @@ First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud
    - **End device name** (optional) - A unique, human-readable identifier for your device. You make it up, so be creative. Device IDs cannot be used by multiple devices within the same application.
    - **End device description** (optional) - Optional end device description; can also be used to save notes about the end device.
 
-
 5. Click **Network layer setting**.
 
     <rk-img
@@ -444,7 +443,6 @@ For this example, these settings will be left as default.
 
 ##### Configuring the Device in OTAA Mode
 
-
 1. For configuring the node, you will need the following three parameters: **Device EUI, Application EUI**, and **Application Key**. You can see them all on the **Device Overview** page. But since the two EUI's come with the device, you only need the Application Key from there.
 
     <rk-img
@@ -488,7 +486,6 @@ Remember to replace the **frequency band** with the one for your LoRaWAN region.
 :::tip 📝 NOTE:
 The following tutorial is based on using the EU868 frequency band.
 :::
-
 
 3. Now that those parameters are set, enter the **App Key**, using the command below. Remember to replace the **`XXXX`** with the corresponding parameter value for your particular case.
 
@@ -539,7 +536,6 @@ The ChirpStack, previously known as the LoRaServer project, provides open-source
 In this guide, it is assumed that you are using a RAK LoRa gateway, such as RAK7249. The gateway must be configured and registered previously to a Chirpstack deployment. For further information, check the Chirpstack documents for more details.
 
 :::
-
 
 In this section, you need the following requirements:
 
@@ -682,7 +678,6 @@ Parameters for the Device Profile:
 
 #### Register a New Device
 
-
 1. Choose the **Application** created in the previous step, then select the **DEVICES** tab, as shown in **Figure 45** and **Figure 46**.
 
 <rk-img
@@ -775,7 +770,6 @@ AT+STATUS=?
 AT+VER=?
 ```
 
-
 As an example, the following are the list of the parameters you need to configure in GNSS Tracker: 
 
 - LoRa join mode: **OTAA**
@@ -784,8 +778,6 @@ As an example, the following are the list of the parameters you need to configur
 - Device EUI: **000d75e6564dc103**
 - Application EUI: **Not used by Chirpstack**
 - Application Key: **56D622507C0F5017E4E87F7EDE7839D5**
-
-
 
 1. Set the LoRa join mode to OTAA.
 
@@ -830,7 +822,6 @@ AT+APPKEY=56D622507C0F5017E4E87F7EDE7839D5
 :::tip 📝 NOTE:
 After configuring all the parameters, you need to reset the GNSS Tracker to save the parameters.
 :::
-
 
 7. After resetting, start to join.
 
@@ -879,7 +870,6 @@ As the payload decoder is set as Cayenne LPP in the device profile, the data is 
 
 ###### Configure the ABP Mode on the Platform
 
-
 During the registration of a new device for OTAA join mode, you select **LPWAN-Tracker-OTAA**. To switch the device to ABP join mode, you need to change the Device Profile from **`LPWAN-Tracker-OTAA`** to **`LPWAN-Tracker-ABP`**, as shown in **Figure 57**, in the device **CONFIGURATION** tab 
 
 :::tip 📝 NOTE:
@@ -919,7 +909,6 @@ In Chirpstack, after selecting the ABP mode, the following parameters appear in 
 
 
 ###### Configure the ABP Mode on the GNSS Tracker
-
 
 In the following steps, you will configure the GNSS Tracker to work in the ABP mode. To set up the GNSS Tracker to join ChirpStack using ABP start by connecting the GNSS Tracker to the Computer (see **Figure 2**). Open the Serial Port Tool and wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
 
@@ -1055,7 +1044,7 @@ AT+P2P=916100000:7:125:0:8:22
 />
 
 3. The data is decoded in Cayenne LPP format and will require a decoder in your receiver module to get the values.    
-   
+
 The next paragraph is explaining the payload format. If your receiver is using firmware based on Arduino, you can use a Cayenne LPP Decoder library like the [CayenneLPPdec](https://github.com/gmag11/CayenneLPPdec) to decode the payload.
 
 <rk-img
@@ -1143,10 +1132,6 @@ This application uses the RAK1904 acceleration sensor only for the detection of 
 ##### Upgrading the Firmware
 
 Before you start working with the GNSS Tracker, it is recommended to keep the GNSS Tracker updated to the latest version of the firmware. Download the latest [GNSS Tracker firmware](/Product-Categories/WisBlock/RAK10700/Datasheet/#software).
-
-<!--
-In this section, you will see how to update the device over USB or BLE.
--->
 
 
 ##### Custom Firmware

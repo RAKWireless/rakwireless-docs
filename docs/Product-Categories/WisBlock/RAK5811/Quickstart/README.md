@@ -204,7 +204,6 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Opening RAK5811 example for RAK11310 WisBlock Core"
 />
 
-
 3. After opening the example code, you can now select the right port and upload the code, as shown in **Figure 15** and **Figure 16**.
 
 <rk-img
@@ -237,7 +236,6 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
 #### PlatformIO Setup (Optional)
 
 To develop using PlatformIO, you need to install the RAK_PATCH script as described in the section [PlatformIO](/Product-Categories/WisBlock/RAK5811/Quickstart/#platformio).
-
 
 1. Open the [RAK5811 Arduino example](/Product-Categories/WisBlock/RAK5811/Quickstart/#software-configuration-and-example). Then install the libraries, build the project, and save the sketch.
 
@@ -276,7 +274,6 @@ Now, your project is imported successfully.
   width="100%"
   caption="Imported Arduino project"
 />
-
 
 On the imported project, check the **platformio.ini** file:
 

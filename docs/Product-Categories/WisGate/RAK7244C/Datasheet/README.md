@@ -92,7 +92,6 @@ The RAK7244C WisGate Developer D4+ Gateway is composed of the LPWAN Concentrator
   caption="RAK2245 Pi HAT"
 />
 
-
 RAK2245 Pi HAT is an LPWAN Concentrator board that follows the Pi HAT standard and can be mounted to a Pi board with a 40-pin connector.
 
 - For detailed information about the RAK2245, go to the [RAK2245 Pi HAT Datasheet](https://docs.rakwireless.com/Product-Categories/WisLink/RAK2245-Pi-HAT/Datasheet/).

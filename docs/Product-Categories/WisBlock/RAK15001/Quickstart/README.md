@@ -11,11 +11,7 @@ next: ../Datasheet/
 
 # RAK15001 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock RAK15001 WisBlock Flash module and how to program with it.
--->
 
 ## Prerequisite
 
@@ -151,7 +147,6 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting the correct Serial Port"
 />
 
-
 5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see if it read the content, wrote new data, and erased the data from the Flash module. If you see the logs, as shown in **Figure 11**, then your RAK15001 is properly communicating to the WisBlock core.
 
 <rk-img
@@ -206,7 +201,6 @@ RAK11200 requires the **Boot0** pin to be configured properly first before uploa
   caption="Selecting the correct Serial Port"
 />
 
-
 5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see if it read the content, wrote new data, and erased the data from the Flash module. If you see the logs, as shown in **Figure 17**, then your RAK15001 is properly communicating to the WisBlock core.
 
 <rk-img
@@ -256,7 +250,6 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   width="100%"
   caption="Selecting the correct Serial Port"
 />
-
 
 5. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see if it read the content, wrote new data, and erased the data from the Flash module. If you see the logs, as shown in **Figure 23**, then your RAK15001 is properly communicating to the WisBlock core.
 

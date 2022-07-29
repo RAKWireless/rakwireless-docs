@@ -78,7 +78,6 @@ sudo apt-get install git
   caption="Installing git"
 />
 
-
 3. Now, you have to clone the tool and run the **generate-CA.sh** script. After the execution, the newly created files will be in the same directory as the script itself:
 
 ```
@@ -99,7 +98,6 @@ sudo ./generate-CA.sh
   width="100%"
   caption="Generating the Certificates"
 />
-
 
 4. Set up the Mosquitto Broker
 
@@ -122,7 +120,6 @@ sudo cp raspberrypi.key /etc/mosquitto/certs/
   width="100%"
   caption="Moving the Certificates"
 />
-
 
 5. To finish the broker setup, you need to configure it. Navigate to **/etc/mosquitto/mosquitto.conf** with the command:
 
@@ -147,7 +144,6 @@ The changes that need to be made in the file are listed in the table:
   caption="Mosquitto Configuration"
 />
 
-
 6. Restart the Mosquitto service to load the configuration file.
 
 ```
@@ -168,9 +164,7 @@ cat ca.crt
   caption="Mosquitto Configuration"
 />
 
-
 Make sure to copy only the certificate as even one extra symbol could make the certificate invalid.
-
 
 8. In the gateway’s Web UI, navigate to **LoRa Network** > **Global Integration** and do the following setup:
 
@@ -191,9 +185,7 @@ Make sure to copy only the certificate as even one extra symbol could make the c
   caption="Global Integration setup"
 />
 
-
 9. Click **Save & Apply** and the configuration will be ready.
-
 
 10. Test on the connection by subscribing to one of the gateway’s topics via **Mosquitto clients**. To install **mosquitto-clients**, use the following command:
 

@@ -53,7 +53,7 @@ The RAK12019 is an Ambient Light sensor (ALS) or Ultraviolet Light Sensor (UVS),
 
 ### Hardware
 
-The hardware specification is categorized into four parts. It shows the pinouts and their corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12019 WisBlock UV Sensor Module.
+The hardware specification is categorized into five (5) parts. It shows the chipset of the module and the pinouts and their corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12019 WisBlock UV Sensor Module.
 
 ####  Chipset
 

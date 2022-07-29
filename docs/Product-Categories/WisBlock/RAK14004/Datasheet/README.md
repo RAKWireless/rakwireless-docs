@@ -85,33 +85,7 @@ The RAK14004 comprises a standard WisBlock IO 40-pin connector. The WisBlock IO 
 
 
 
-<!--
 
-| **Pin Number** | **Description** | **Pin Number** | **Description**                   |
-| -------------- | --------------- | -------------- | --------------------------------- |
-| 1              | Battery Power   | 2              | Battery Power                     |
-| 3              | GND             | 4              | GND                               |
-| 5              | 3V3 Power       | 6              | NC, Power Reserved for 3.3&nbsp;V |
-| 7              | USB+            | 8              | USB–                              |
-| 9              | VBUS            | 10             | SW1                               |
-| 11             | NC              | 12             | NC                                |
-| 13             | NC              | 14             | LED1                              |
-| 15             | LED2            | 16             | NC                                |
-| 17             | NC              | 18             | NC                                |
-| 19             | SDA for I2C1    | 20             | SCL for I2C1                      |
-| 21             | NC              | 22             | Analog1 to MCU                    |
-| 23             | NC              | 24             | NC                                |
-| 25             | NC              | 26             | NC                                |
-| 27             | NC              | 28             | NC                                |
-| 29             | IO1             | 30             | IO2                               |
-| 31             | IO3             | 32             | IO4                               |
-| 33             | TXD1            | 34             | RXD1                              |
-| 35             | SDA for I2C2    | 36             | SCL for I2C2                      |
-| 37             | NC              | 38             | NC                                |
-| 39             | GND             | 40             | GND                               |
-
-<br>
--->
 
 #### Electrical Characteristics
 
@@ -148,17 +122,6 @@ The RAK14004 comprises a standard WisBlock IO 40-pin connector. The WisBlock IO 
 
 The RAK14004 uses a Microchip ATMEGA328PB-AU microcontroller for matrix keyboard scanning and identification. A cable is used to connect RAK14004 to keypad modules such as RAK14009.
 
-<!-- 
-#####  WisBlock Connector
-
-Figure 5 shows the 40-pin WisBlock IO connector . **I2C** related pin, **UART** related pin, **RESET**, **3V3**,**INT**, and **GND** are connected to WisIO connector.
-
-<rk-img
-  src="/assets/images/wisblock/rak14004/datasheet/image-20211101180008267.png"
-  width="40%"
-  caption="MCU Debug connector"
-/>
--->
 ##### MCU Schematic
 
 
@@ -219,12 +182,4 @@ Do not connect to this header or you lose the warranty and your RAK14004 will no
   caption="RAK14004 Schematic Diagram Part 2"
 />
 
-<!--
-**Figure 9** shows the schematic diagram of the RAK14004 WisBlock Interface connector.
 
-<rk-img
-  src="/assets/images/wisblock/rak5804/datasheet/schematic-diagram.png"
-  width="100%"
-  caption="RAK14004 Schematic Diagram"
-/>
--->

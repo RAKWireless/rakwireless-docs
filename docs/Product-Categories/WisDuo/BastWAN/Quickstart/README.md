@@ -28,13 +28,7 @@ Before powering the Feather Board, make sure that you have already connected the
 
 ## Software Setup
 
-<!-- The board is like below.
 
-<rk-img
-  src="/assets/images/wisduo/bastwan/quickstart/bastwan.png"
-  width="40%"
-  caption="BastWAN Board"
-/> -->
 
 ### Burning a Bootloader
 
@@ -47,7 +41,7 @@ RAK3244 BastWAN board comes with a pre-flashed bootloader upon purchase. However
 />
 
 You can also flash the bootloader by using the [RAKDAP1 Flash and Debug Tool](https://docs.rakwireless.com/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/). The guide on how to connect RAK3244 to RAKDAP1 can be found on [SWD Programming Interface section of RAK3244 datasheet](https://docs.rakwireless.com/Product-Categories/WisDuo/BastWAN/Datasheet/#interfaces).
-  
+
 After ensuring the correct wiring connection, you can now flash the bootloader using the `pyocd` command. If you do not have pyocd installed on your system, check the [pyocd installation guide](https://docs.rakwireless.com/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Quickstart/#pyocd-installation).
 
 ```
@@ -100,7 +94,6 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
   caption="Application Section"
 />
 
-
 2. Click the “**add application**” button.
 
 
@@ -116,7 +109,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
     * **Description** - this is a concise human-readable description of your application.
     * **Application EUI** - this will be generated automatically by The Things Network for convenience.
     * **Handler Registration** - handler you want to register this application to.
-    
+
 3. After you fill in the necessary information, press the "**Add application**" button at the bottom of the page. If you see a similar page as shown in **Figure 8**, then you have successfully registered your application.
 
 <rk-img
@@ -158,7 +151,7 @@ The TTN platform can generate these parameters randomly by leaving those fields 
   width="100%"
   caption="Device Overview"
 />  
-  
+
 Now that the Device EUI, Application EUI, and Application Key are defined, you can now proceed with the setup of RAK3244 BastWAN LoRa configurations.
 
 ## Using Arduino IDE to Modify and Flash Firmware
@@ -212,7 +205,7 @@ If there is already an existing URL on the textbox, click the button at the righ
 ### LoRaWAN Library Installation
 
 RAK3244 BastWAN board uses the Beelan-LoRaWAN library, which supports LoRaWAN Class A and Class C implementations operating in EU-868, AS-923, US-915, and AU-915 bands. You can recognize this library as the `<lorawan.h>` on the sample code.   
-  
+
 In order for the sample code to work, the Beelan-LoRaWAN library must be installed. To do this, navigate to **Tools > Manage Libraries** on Arduino IDE. Then search for **Beelan LoraWAN** and install the latest version of the library. The window indicates if the library is installed, as shown in **Figure 15**.  
   
 <rk-img
@@ -228,7 +221,7 @@ Visit the [Beelan-LoRaWAN official GitHub repository](https://github.com/BeelanM
 For a quick test, a sample source code is provided for a LoRaWAN Class A node with OTAA support. Download the source code and open it with Arduino IDE.
 
 - [Example source code for RAK3244 BastWAN](https://github.com/RAKWireless/Evaluation_Boards/tree/master/RAK4260/Arduino/send-class-A-OTAA)  
-  
+
 The following sections will demonstrate how to modify LoRaWAN parameters to establish a connection with The Things Network (TTN).
 
 ### Modifying LoRaWAN Parameters
@@ -244,9 +237,9 @@ The most volatile parameters on LoRaWAN configuration are the Device EUI, Applic
 />
 
 ### Compiling and Flashing the Firmware
-  
+
 Now that the LoRaWAN parameters are set, you can now run the sample program.
-  
+
 Click the **Verify** button on the upper left of Arduino IDE to compile the code. Before uploading the sample firmware, make sure that the RAK3244 BastWAN is connected and recognized by your PC. To verify this, there must be an assigned port on the **Tools** toolbar of Arduino IDE. It should not be grayed out.  
 
 <rk-img
@@ -254,7 +247,7 @@ Click the **Verify** button on the upper left of Arduino IDE to compile the code
   width="100%"
   caption="Compilation of sample source code"
 />
-  
+
 If everything is well, you can now click the **Upload** button and the firmware should be flashed to your RAK3244 BastWAN.
 
 <rk-img
@@ -264,5 +257,5 @@ If everything is well, you can now click the **Upload** button and the firmware 
 />
 
 The RAK3244 BastWAN will try to join the LoRaWAN network server, and if it is successful, it will send a string to verify its presence. You can find more details of the operation by examining the sample source code and opening the serial monitor. 
-  
+
 Feel free to experiment with your own and explore the capabilities of RAK3244 BastWAN.

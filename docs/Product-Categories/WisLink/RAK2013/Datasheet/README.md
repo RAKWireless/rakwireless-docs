@@ -12,11 +12,7 @@ rak_img: /assets/images/wislink-lte/rak2013/datasheet/RAK2013_home.png
 
 # RAK2013 WisLink Cellular Pi HAT Datasheet
 
-<!-- <rk-img
-  src="/assets/images/wislink-lte/rak2013/datasheet/rak2013.jpg"
-  width="50%"
-  caption="RAK2013 WisLink Cellular Pi HAT Board"
-/> -->
+
 
 ## Overview
 

@@ -11,13 +11,7 @@ rak_img: /assets/images/wistrio/rak5010/quickstart/1.overview/RAK5010_home.png
 
 # RAK5010 WisTrio NB-IoT Tracker Pro Datasheet
 
-<!---
-<rk-img
-  src="/assets/images/wistrio/rak5010/datasheet/rak5010-wis-trio-nb-iot-tracker.jpg"
-  width="40%"
-  caption="RAK5010 WisTrio NB-IoT Tracker Pro"
-/>
--->
+
 
 ## Overview
 

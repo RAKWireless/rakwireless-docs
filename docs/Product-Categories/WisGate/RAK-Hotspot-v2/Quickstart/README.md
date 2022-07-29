@@ -65,7 +65,7 @@ Before powering on, the best advice is to follow the guidelines below to avoid d
 2. When you are ready to set up your RAK Hotspot, plugin, and connect the included power supply to the USB-C port on the RAK Hotspot. 
 
 3. After approximately one minute, the RAK Hotspot will be ready to be added via the Helium app. Press the pairing button on the side to enable the hotspot Pairing mode.
-   
+
 4. Select **Set up Hotspot** in the app and follow the prompts, press the Pairing button as requested.
    
 :::tip 📝 NOTE

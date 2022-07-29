@@ -44,7 +44,7 @@ The sensor (ANT-801S) can be taken out of PCB by connector (J2 on PCB of RAK1201
 
 ### Hardware
 
-The hardware specification is categorized into four parts. It discusses the pinouts and its corresponding functions and diagrams of the module. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12015 WisBlock Vibration Detection Sensor Module.
+The hardware specification is categorized into five (5) parts. It shows the chipset of the module and discusses the pinouts and their corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12015 WisBlock Vibration Detection Sensor Module.
 
 #### Chipset
 

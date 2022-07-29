@@ -320,6 +320,14 @@ module.exports = {
     sidebarDepth: 4
   },
   {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisGate/RAK7248/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
     title: 'Supported LoRa Network Servers',
     path: '/Product-Categories/WisGate/RAK7248/Supported-LoRa-Network-Servers/',
     collapsable: false,

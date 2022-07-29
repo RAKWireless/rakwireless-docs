@@ -13,11 +13,7 @@ tags:
 
 ## Prerequisites
 
-<!-- <rk-img
-  src="/assets/images/wisgate/rak7243/quickstart/2.quickstart/rak7243_overview2.jpg"
-  width="75%"
-  caption="RAK7243 Product Overview"
-/> -->
+
 
 ### What Do You Need?
 

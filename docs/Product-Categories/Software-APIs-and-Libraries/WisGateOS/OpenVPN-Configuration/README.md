@@ -10,7 +10,6 @@ tags:
 
 # OpenVPN Configuration
 
-
 This detailed explanation assumes that you already have an AWS EC2 Instance with Ubuntu Server 18.04 LTS running on it.
 
 
@@ -167,7 +166,6 @@ sudo nano /etc/openvpn/server/interface-up.sh
 ```
 sudo chmod +x /etc/openvpn/server/interface-up.sh
 ```
-
 
 5. Start OpenVPN. If you want OpenVPN to run on instance startup, then run the command:
 
@@ -348,11 +346,7 @@ sudo nano /etc/openvpn/server/ip_pool.txt
   caption="Successful Connection Log"
 />
 
-
-
 There should be only one client and its IP address visible now. This is the PC connected to the OpenVPN Server. Later, the gateway also should be visible.
-
-
 
 8. Setup OpenVPN client on LoRa gateway.
 
@@ -407,7 +401,6 @@ sudo nano /etc/openvpn/server/ip_pool.txt
   width="70%"
   caption="OpenVPN Connected Client 2"
 />
-
 
 The IP address of the gateway should be in the second entry.
 

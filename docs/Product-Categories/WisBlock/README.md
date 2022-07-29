@@ -61,22 +61,11 @@ WisBlock Wireless Modules extend the communication capabilities of WisBlock with
 
 WisBlock Sensor offers a range of sensors for sensing environmental conditions (temperature and humidity), location, and movement conditions (GNSS location and accelerometer). They are easy to install just by plugging them into the WisBase to complete your application with the required sensors.
 
-<!-- WisSensor modules are with 10 x 10mm size small sensor breakout boards. Only the GNSS module is larger with 10 x 22mm and occupies 2 sensor slots on the base board
- -->
 
 </rk-head>
 
 <rk-products :tags="['wisblock', 'wissensor']" />
 
-<!-- ## WisBlock IO
-
-<rk-head img="/assets/rakwireless/product-categories/WisBlock-IO.svg">
-
-WisIO extensions provide your application with interfaces and communication extensions that are not covered by WisCore or WisSensor blocks. This includes : IO connectors to add user interfaces like keyboards, buttons and displays, adapter for third party sensor boards from Seeed Grove, Sparkfun QWICC and MikroElektronika Click! Boards, sensor interfaces , communication modules , alternative power supplies.
-
-</rk-head>
-
-<rk-products :tags="['wisblock', 'wisio']" /> -->
 
 ## WisBlock Interface
 

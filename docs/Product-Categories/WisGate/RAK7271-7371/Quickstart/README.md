@@ -221,7 +221,6 @@ sudo make
   caption="Installing the Software"
 />
 
-
 After the compilation has successfully finished, you need to configure the correct channel plan and set the correct `global_conf.json` file to be used from the packet forwarder. 
 
 6. Open the Packet forwarder folder with the following code:
@@ -242,7 +241,6 @@ After the compilation has successfully finished, you need to configure the corre
   caption="Listing the Content of the Folder"
 />
 
-
 8. You can see that there is a different example configuration files for different LoRaWAN bands and different types of concentrators. In this setup, you are using RAK Developer Base, which is the USB, and the EU868 band. Run this command to rename the correct file to `global_conf.json`:
 
 ```
@@ -255,7 +253,6 @@ After the compilation has successfully finished, you need to configure the corre
   caption="Listing the Content of the Folder After Renaming"
 />
 
-
 9. Now, you can start the packet forwarder process, which will bridge the LoRaWAN radio part with the Network Server. Use the command: 
 
 ```
@@ -267,7 +264,6 @@ sudo ./lora_pkt_fwd
   width="80%"
   caption="Starting the Packet Forwarder"
 />
-
 
 10. At the end of this example, you can see the concentrator's EUI. Save it somewhere as it will be needed to register your gateway in the Network Server later.
 
@@ -320,7 +316,6 @@ sudo make
   caption="Installing the Software"
 />
 
-
 After the compilation has successfully finished, you need to configure the correct channel plan and set the correct `global_conf.json` file to be used from the packet forwarder. 
 
 5. Open the Packet forwarder folder with the following command:
@@ -341,7 +336,6 @@ ls -l
   caption="Listing the Content of the Folder"
 />
 
-
 7. You can see that there is a different example configuration files for different LoRaWAN bands and different types of concentrators. In this setup, you are using RAK Developer Base, which is the USB, and the EU868 band. Run this command to rename the correct file to `global_conf.json`:
 
 ```
@@ -355,7 +349,6 @@ ls -l
   caption="Listing the Content of the Folder After Renaming"
 />
 
-
 8. Now, you can start the packet forwarder process, which will bridge the LoRaWAN radio part with the Network Server. Use the command: 
 
 ```
@@ -367,7 +360,6 @@ sudo ./lora_pkt_fwd
   width="80%"
   caption="Starting the Packet Forwarder"
 />
-
 
 9. At the end of this example, you can see the concentrator's EUI. Save it somewhere as it will be needed to register your gateway in the Network Server later.
 
@@ -435,7 +427,6 @@ sudo gateway-config
   caption="Configuration Options"
 />
 
-
 6. Then, the configuration file will open for editing:
 
 <rk-img
@@ -443,7 +434,6 @@ sudo gateway-config
   width="80%"
   caption="File Content Configuration "
 />
-
 
 7. Find the **"gateway_conf"** part:
 
@@ -467,7 +457,6 @@ sudo gateway-config
   width="60%"
   caption="Changing the server address"
 />
-
 
 9. To save the changes, press **Ctrl+X** and confirm with **Y** for Yes. 
 
@@ -503,7 +492,6 @@ Gateway ID: B827EBFFFE7AFF6A.
 pi@rak-gateway:~ $
 ```
 
-
 13. Open the TTN website in your browser, login, and navigate to the console page. Click on **+Add Gateway button**. 
 
 <rk-img
@@ -511,7 +499,6 @@ pi@rak-gateway:~ $
   width="100%"
   caption="Adding Gateway"
 />
-
 
 14. Fill the EUI and the needed data as description, channel plan, etc. If you have followed the steps correctly, you will see your gateway as connected, having activity.
 

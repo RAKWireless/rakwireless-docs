@@ -19,7 +19,7 @@ Thank you for choosing **RAK14002 WisBlock Touch Sensor Module** in your awesome
 * [RAK14002 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
+
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK14002 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK14002.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)

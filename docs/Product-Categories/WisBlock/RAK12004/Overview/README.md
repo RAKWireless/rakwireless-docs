@@ -14,12 +14,12 @@ tags:
 
 # RAK12004 WisBlock MQ2 Gas Sensor Module
 
-Thank you for choosing **RAK12004 WisBlock MQ2 Gas Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK12004 WisBlock MQ2 Gas Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK12004 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
+
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK12004 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK12004.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
@@ -50,7 +50,6 @@ The RAK12004 is a gas sensor module, part of the RAKWireless WisBlock Sensor ser
     * 25 x 35&nbsp;mm
 
 ## Prerequisites
-
 
 To use a **RAK12004**, you need at least a **WisBlock Base** and a **Li-Ion/LiPo Battery** to plug the module in. The **WisBlock Base** provides power supply to the **RAK12004** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 

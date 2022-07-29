@@ -26,13 +26,7 @@ This guide covers the following topics:
 
 ## Prerequisites
 
-<!---
-<rk-img
-  src="/assets/images/wisduo/rak4600-breakout-board/quickstart/main/rak4600-breakout-module.png"
-  width="50%"
-  caption="RAK4600 Breakout Board"
-/>
---->
+
 
 ### What Do You Need?
 
@@ -407,7 +401,6 @@ at+version
   caption="AT Command response"
 />
 
-
 As an example, these are the list of the parameters you need to configure in RAK4600: 
 
 - LoRa join mode: **OTAA**
@@ -416,7 +409,6 @@ As an example, these are the list of the parameters you need to configure in RAK
 - Device EUI: **1133557799224466**
 - Application EUI: **1000000000000009**
 - Application Key: **04FA4E626EF5CF227C969601176275C2**
-
 
 1. Set the LoRa join mode to OTAA.
 
@@ -597,8 +589,6 @@ As an example, these are the list of the parameters you need to configure in RAK
 - Network Session Key: **433C7A924F7F6947778FE821525F183A**
 - Application Session Key: **A585653A949C2B2D44B55E99E94CB533**
 
-
-
 1. Set the LoRa join mode to ABP.
 
 ```
@@ -647,7 +637,6 @@ at+set_config=lora:apps_key:A585653A949C2B2D44B55E99E94CB533
 After configuring all the parameters, you need to reset the RAK4600 Module to save the parameters.
 
 :::
-
 
 7. After resetting, join in ABP mode.
 
@@ -725,7 +714,6 @@ The following section gives the details of each of these aforementioned steps. B
   width="100%"
   caption="Application Section"
 />
-
 
 2. ChirpStack LoraServer supports multiple system configurations, with only one by default. By default, a new Application should be created, although it is possible to reuse the existing ones. For this setup, create a new Application by clicking on the "**CREATE APPLICATION**" button.
 
@@ -875,7 +863,6 @@ As an example, the following parameters will be configured in the RAK4600 Breako
 - Application EUI: **d045f054b2797f7c** (from ChirpStack registration)
 - Application Key: **2cb29aefe344c0d7b044e7a7d3afda6d** (from ChirpStack registration)
 
-
 1. Set the LoRa join mode to **OTAA**.
 
 
@@ -890,7 +877,6 @@ at+set_config=lora:join_mode:0
 at+set_config=lora:class:0
 ```
 3.  Set the frequency/region to EU868 (for Europe).
-
 
 Refer to the [Datasheet](/Product-Categories/WisDuo/RAK4600-Breakout-Board/Datasheet/#rf-characteristics) for the list of supported frequencies.
 
@@ -1001,7 +987,6 @@ Check **Disable frame-counter validation** to prevent the node-side counting fra
   caption="Configuring a Device in ABP Mode"
 />
 
-
 2. Once these parameters are filled, click on the “**CREATE DEVICE**” button. 
 
 After selecting the ABP mode, the following parameters appear in the “**ACTIVATION**” tab: 
@@ -1019,7 +1004,6 @@ After selecting the ABP mode, the following parameters appear in the “**ACTIVA
 * The parameters can be generated as random numbers by the platform or can be set with user values. Once these parameters are filled properly, the process is completed by clicking on the “**(RE)ACTIVATE DEVICE**” button.
 
 ###### Configure the ABP mode on the RAK4600 Breakout Board
-
 
 RAK4600 Breakout Board complies with the LoRaWAN 1.0.2 specification. By default, the LoRa join mode is **OTAA**, and the LoRa Class is **Class A**.
 
@@ -1049,7 +1033,6 @@ As an example, the following parameters will be configured in RAK4600:
 - Device address: **26011af9** (from ChirpStack registration)
 - Network Session Key: **c280cb8d1df688bc18601a97025c5488** (from ChirpStack registration)
 - Application Session Key: **4d42ec5caf97f03d833cdaf5003f69e1** (from ChirpStack registration)
-
 
 1. Set the LoRa join mode to **ABP**.
 
@@ -1119,8 +1102,6 @@ The ABP mode in LoRaWAN doesn’t require to join a network before sending a LoR
   width="45%"
   caption="RAK Serial Port Tool join LoRaWAN in ABP mode."
 />
-
-
 
 9. Try to send data from the RAK4600 Breakout Board to ChirpStack.
 

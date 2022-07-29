@@ -19,7 +19,7 @@ Thank you for choosing **RAK2305 WisBlock WiFi Interface Module** in your awesom
 * [Datasheet](../Datasheet/)
 * [Low Level Development](../Low-Level-Development/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
+
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK2305 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK2305.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)

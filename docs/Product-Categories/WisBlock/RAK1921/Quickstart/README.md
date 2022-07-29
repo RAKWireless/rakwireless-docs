@@ -9,11 +9,7 @@ prev: ../Overview/
 next: ../Datasheet/ 
 ---
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock Sensor RAK1921 board and how to use it.
--->
 # RAK1921 Quick Start Guide
 
 ## Prerequisite
@@ -105,7 +101,6 @@ Selecting RAK11310 as WisBlock Core.
   width="100%"
   caption="Selecting RAK11310 as WisBlock Core"
 />
-
 
 2. The [Basic Sample Code for RAK1921](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK1921_OLED_SSD1306) will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 6** to **Figure 8**. 
 

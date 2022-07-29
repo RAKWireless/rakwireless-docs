@@ -13,13 +13,7 @@ rak_img: /assets/images/wistrio/rak8212/quickstart/overview/RAK8212_home.png
 
 ## Prerequisite
 
-<!---
-<rk-img
-  src="/assets/images/wistrio/rak8212/quickstart/quick-start-guide/fwpbygibxrjxoyn6cvje.jpg"
-  width="70%"
-  caption="RAK8212 WisTrio iTracker Pro"
-/>
--->
+
 
 ### What do you need?
 

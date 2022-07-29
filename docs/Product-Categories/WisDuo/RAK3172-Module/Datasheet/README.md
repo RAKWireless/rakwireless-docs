@@ -23,13 +23,7 @@ certifications:
 # RAK3172 WisDuo LPWAN Module Datasheet
 
 
-<!---
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/datasheet/overview/nwgqobrzwanalynildkc.jpg"
-  width="50%"
-  caption="RAK3172 WisDuo LPWAN Module"
-/>
---->
+
 
 ## Overview
 

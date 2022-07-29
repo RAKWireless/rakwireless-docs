@@ -11,13 +11,7 @@ tags:
 
 # RAK4260 Evaluation Board Quick Start Guide
 
-<!---
-<rk-img
-  src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/2quick-start-guide/rak4260-overview2.png"
-  width="50%"
-  caption="Back View of the Evaluation Board"
-/>
---->
+
 ## Prerequisites
 
 The following two sections provide a list of the components and tools you need in order to get started with the development board. Some of the components are included in the package, others you need to provide yourself.
@@ -40,149 +34,7 @@ Before going through each and every step in the installation guide of the RAK426
 * 2-pcs 4-pin Header
 * 9-pcs Dupont Lines
 
-<!--
-## RAK4260 Development Platform
 
-Before compiling a project for the RAK4260 Evaluation Board it is necessary Microchip Studio integrated development platform (IDP).
-
-* [Microchip Studio](https://www.microchip.com/mplab/microchip-studio)
-
-1. Download and install Microchip Studio web installer.
-
-<rk-img
-  src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/microchip_studio.png"
-  width="80%"
-  caption="Microchip Studio web installer"
-/>
-
-2. Agree to the license terms and conditions.
-<rk-img
-  src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/agree.png"
-  width="40%"
-  caption="Microchip Studio license"
-/>
-
-3. On Select Architeture, choose "SAM".
-
-<rk-img
-  src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/sam_atmel_studio.png"
-  width="40%"
-  caption="Microchip Studio Architecture"
-/>
-
-4. Don't select "Atmel Software Framework and Examples Project" yet. Do it later. 
-
-<rk-img
-  src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/asf_dont.png"
-  width="40%"
-  caption="ASF skip install"
-/>
-
-5. Launch Microchip Studio then select Tools->Extensions and Updates.
-
-<rk-img
-  src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/microchip_extensions.png"
-  width="100%"
-  caption="Microchip Studio Extensions and Updates"
-/>
-6. On Extensions and Updates window, click on "**Online**" and then search for "**atmel software 
-framework**". 
-<rk-img
-  src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/asf.png"
-  width="100%"
-  caption="ASF install"
-/>
-7. Select "**Atmel Software Framework**" and click on "**Download**" button to install it.
-
-8. To finish installation, launch Microchip Studio then go to Tools -> Device Pack Manager. Search for "**SAMR34**" and install "**SAMR34_DFP**" pack.
-
-<rk-img
-  src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/samr34_pack.png"
-  width="100%"
-  caption="SAMR34 pack install"
-/>
-
-### Build RAK4260 LoRaNode Demo project
-
-RAK has already configured a demo firmware for RAK4260 based on Microchip LoRaWAN Stack (MLS) that can be downloaded freely for testing purposes in this Github Repository: 
-* [RAK4260 LoRaNode Demo](https://github.com/RAKWireless/RAK4260-LoRaNode-demo)
-
-
-:::tip 📝 NOTE
-This sample firmware is solely for testing purposes only. If you want to use and deploy your own LoRaWAN application, you need to develop a customized firmware based on Microchip LoRaWAN Stack (MLS).
-:::
-
-1. Clone [RAK4260 github repository](https://github.com/RAKWireless/RAK4260-LoRaNode-demo).
-
-<rk-img
-  src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/github-repo.png"
-  width="100%"
-  caption="RAK4260 Github Repository"
-/>
-
-2. Open and configure RAK4260-LoRaNode-demo solution.
-
-Go to the cloned directory folder : 
-**<cloned_dir>\RAK4260-LoRaNode-demo\APPS_ENDDEVICE_DEMO1**. Then double click on file "**APPS_ENDDEVICE_DEMO1.atsln**".
-
-3. Configure demo application parameters
-
-:::tip 📝 NOTE
- On RAK4260-LoRaNode-demo project, the join parameters and activation methods are defined in the [**conf_app.h**](https://github.com/RAKWireless/RAK4260-LoRaNode-demo/blob/master/APPS_ENDDEVICE_DEMO1/src/config/conf_app.h) file. 
-
-:::
-
-4. Compile RAK4260-LoRaNode-demo solution
-
-Launch Microchip Studio then select Build->Build Solution
-
-### Flash the Firmware Using DAPLink and RAKDAP1
-
-To flash a new firmware, utilize the RAKDAP1, a SWD adapter. Refer to the figure below as reference to connect RAKDAP1 and RAK4600 Evaluation Board.
-
-<rk-img
-  src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/interfacing/rak4260-evb-connection.svg"
-  width="75%"
-  caption="RAK4260 Evaluation Board connected to RAKDAP1"
-/>
-
-1. Install [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#rakdap1-flash-and-debug-tool).
-
-RAKDAP1 uses pyOCD package. pyOCD is an open source Python package for programming and debugging ARM Cortex-M microcontrollers using multiple supported types of USB debug probes.
-
-2. Check Support Package installation for RAK4260.
-```
-pyocd list -t -n atsaml21j18a
-```
-3. Flash the hex file.
-
-As an example let's flash the RAK4260-LoRaNode demo project. The hex file of the RAK4260-LoRaNode-demo project is located on folder. <br>**<cloned_dir>\RAK4260-LoRaNode-demo\APPS_ENDDEVICE_DEMO1\Release** or
-<br>**<cloned_dir>\RAK4260-LoRaNode-demo\APPS_ENDDEVICE_DEMO1\Debug**.<br>
-Depending on whether you selected to compile the **Debug** or **Release** version of the Microchip Studio project.
-
-<rk-img
-  src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/microchip_studio_config.png"
-  width="100%"
-  caption="Microchip Studio Solution Configurations"
-/>
-
-<rk-img
-  src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/microchip_hex.png"
-  width="90%"
-  caption="RAK4260 hex file"
-/>
-
-```
-pyocd flash -t atsaml21j18a APPS_ENDDEVICE_DEMO1.hex
-```
-
-<rk-img
-  src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/pyocd_flash.png"
-  width="100%"
-  caption="Successful pyOCD flash"
-/>
-
--->
 
 ## Product Configuration
 
@@ -250,13 +102,7 @@ In this section, you will be connecting the RAK4260 Evaluation Board to The Thin
 />
 
 - Choose “**APPLICATIONS**”
-<!--
-<rk-img
-  src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/5ttn/application-page.png"
-  width="100%"
-  caption="Application Page"
-/>
--->
+
 
 #### Adding an Application
 
@@ -405,7 +251,7 @@ You must choose one LoRaWAN activation method and modify the join parameter's de
 The default join mode is **OTAA**, and the default frequency is **EU868**. After resetting it, RAK4260 will join automatically if the **dev_eui**, **app_eui**, and **app_key**  parameters have been configured correctly in the source code.
 
 5. Connect the RAK4260 Evaluation board and configure [RAK Serial Port Tool](#interfacing-with-the-rak4260-evaluation-board).
- 
+
 6. Press the “**reset button**” on your RAK5005 Baseboard Module. If everything works perfectly, you should see the same message shown in **Figure 14**.
 
 <rk-img
@@ -444,9 +290,7 @@ The default join mode is **OTAA**, and the default frequency is **EU868**. After
   caption="Data received by the TTN"
 />
 
-<!--
-8. The Microchip Studio LoRaWAN examples are based on [SAMR34 Xplained Pro](https://www.microchip.com/DevelopmentTools/ProductDetails/dm320111), but RAK260 did not adopt the same GPIO pinout. If you need to develop a new LoRaWAN application, refer to RAK4260 GPIO pins defined in the [**samr34_xplained_pro.h**](https://github.com/RAKWireless/RAK4260-LoRaNode-demo/blob/master/APPS_ENDDEVICE_DEMO1/src/ASF/sam0/boards/samr34_xplained_pro.h) file.
--->
+
 
 #### ABP Mode
 
@@ -516,7 +360,7 @@ To register the device to the ChirpStack network server, you must choose either 
 />
 
 3. Create an Application named **rak4260_node**. Fill in the required fields, as shown in **Figure 24**. 
-   
+
 4. To finish, click the “**CREATE APPLICATION**” button. 
 
 ChirpStack LoraServer supports multiple system configurations, with only one by default. By default, a new Application should be created, although it is possible to reuse the existing ones.
@@ -714,8 +558,6 @@ The RAK460 P2P demo can be cloned using the following link:
 
 - [RAK4260 long-range P2P](https://github.com/RAKWireless/Evaluation_Boards.git)
 
-
-
 Use the p2p-rak4260 branch, as shown in **Figure 40**.
 
 <rk-img
@@ -742,13 +584,13 @@ Use the p2p-rak4260 branch, as shown in **Figure 40**.
 ## Miscellaneous  
   
 ### RAK5005 Core Module Slot Connection to RAK4261
-  
+
 The RAK5005 is the base board that connects the RAK4260 Core Module. It creates the power supply for the attached module and provides additional IO and Sensor support for your project needs.  
 
 ::: tip 📝 NOTE
 RAK4261 is a circuit board module for RAK5005 with a pre-soldered RAK4260 LPWAN Module.
 :::
-  
+
 Listed below are the accessible pins and data bus of the attached RAK5005 base board on the RAK4260 EVB:
 
 

@@ -19,11 +19,7 @@ certifications:
 
 # RAK7249 WisGate Edge Max Datasheet
 
-<!-- <rk-img
-  src="/assets/images/wisgate/rak7249/datasheet/rak7249-macro-outdoor-gateway.png"
-  width="75%"
-  caption="RAK7249 WisGate Edge Max"
-/> -->
+
 
 ## Overview
 

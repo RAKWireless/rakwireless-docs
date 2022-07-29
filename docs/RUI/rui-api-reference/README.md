@@ -8,13 +8,7 @@ rak_img: /assets/rakwireless/RAK-favicon-blue.png
 # Getting Started
 
 Welcome to the Official Rakwireless Unified Interface (RUI) API. Our API for easy platform integration for your business. You can easily build an IoT Software for your custom hardware IoT blocks in just few minutes!
-<!-- 
-<rk-img
-  :src="`${$frontmatter.static_root}/piopsq3luadbo6ysug2v.jpg`"
-  width="100%"
-  figure-number="1"
-  caption="System Architecture"
-/> -->
+
 
 ### Document Guide
 

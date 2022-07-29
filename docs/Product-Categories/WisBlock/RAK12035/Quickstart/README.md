@@ -11,13 +11,7 @@ next: ../Datasheet/
 
 # RAK12035 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the RAK12035 WisBlock Soil Moisture Sensor Module and how to program with it.
-
-
--->
 
 ## Prerequisite
 
@@ -131,7 +125,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 #### Initial Test of the RAK12035 WisBlock Module
 
 :::warning ⚠️ IMPORTANT
-Before you use the Soil Moisture sensor, you need to calibrate it. Please install the example sketch for calibration. The calibration values will be saved on the RAK12035 sensor itself so that you can read them back later from the sensor. In the first step, the sensor is calibrated by reading the sensor values while the sensor is in the air. In the next step submerge the sensor in water (only to the white line on the sensor). After the calibration is finished, the example sketch will save the calibration values directly in the sensor. The value measured in the air corresponds to 0% RH, the value measured in water corresponds to 100% RH.
+Before you use the Soil Moisture sensor, you need to calibrate it. Install the example sketch for calibration. The calibration values will be saved on the RAK12035 sensor itself so that you can read them back later from the sensor. In the first step, the sensor is calibrated by reading the sensor values while the sensor is in the air. In the next step submerge the sensor in water (only to the white line on the sensor). After the calibration is finished, the example sketch will save the calibration values directly in the sensor. The value measured in the air corresponds to 0% RH, the value measured in water corresponds to 100% RH.
 
 **REMARK**
 
@@ -144,7 +138,7 @@ The calibration method in air and water is not very precise. To get more precise
   caption="Burying the RAK12035 sensor probe into the plant soil"
 />
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have.
 
@@ -172,7 +166,7 @@ The calibration method in air and water is not very precise. To get more precise
   caption="Selecting RAK11310 as WisBlock Core"
 />
 
-3. Calibrating the sensor is a **MUST**. Please follow first the steps on [RAK12023 Quick Start Guide](/Product-Categories/WisBlock/RAK12023/Quickstart/#software-configuration-and-example) (Upon this guide, it will teach you how to calibrate your sensor properly.) before proceeding to **STEP 3** below.
+3. Calibrating the sensor is a **MUST**. Follow first the steps on [RAK12023 Quick Start Guide](/Product-Categories/WisBlock/RAK12023/Quickstart/#software-configuration-and-example) (Upon this guide, it will teach you how to calibrate your sensor properly.) before proceeding to **STEP 3** below.
 
 4. After following **STEP 2** on how to calibrate the sensor, copy the following sample code into your Arduino IDE. 
 

@@ -52,8 +52,6 @@ Figure 1 shows part identification on the top view of RAK2011 WisLink Cellular B
   caption="RAK2011 WisLink Cellular BG96 Arduino Shield Top View"
 />
 
-
-
 The underside and dimension of the RAK2011 are shown in Figure 2:
 
 <rk-img
@@ -146,7 +144,6 @@ A standard Micro-B USB compliant with the USB 2.0 standard specification is used
   caption="Micro-USB Interface"
 />
 
-
 The Micro-B USB pin definition is shown below:
 
 | Pin | Description          |
@@ -184,7 +181,6 @@ The RESET push button is used to reset the BG96 module. To reset the BG96 module
 />
 
 ##### LED Indicators
-
 
 Three LEDs are used to indicate the operating status. Below are the functions of the LEDs:
 
@@ -242,7 +238,6 @@ A standard 2x4 (2.54&nbsp;mm) male header is used to provide one Pulse Code Modu
   width="50%"
   caption="PCM Voice Header"
 />
-
 
 PCM voice header pin definition is shown in the table below:
 
@@ -325,7 +320,6 @@ A standard 2x3 (2.54&nbsp;mm) male header is used to provide two (2) analog inpu
   caption="Analog Input & Digital I/O Header"
 />
 
-
 The analog Input/Digital I/O header signal definition is shown in the table below:
 
 
@@ -387,7 +381,6 @@ A standard 1x4 (2.54&nbsp;mm) male header is used to provide a serial port (UART
   width="50%"
   caption="Debug Header"
 />
-
 
 The analog Input/Digital I/O header signal definition is shown in the table below:
 
@@ -483,7 +476,6 @@ The Voltage Standard Wave Radio (VSWR) plot is shown in Figure 15:
   width="80%"
   caption="Cellular (LTE/GSM) Antenna Parameter"
 />
-
 
 The VSWR data is shown in the table below:
 
@@ -611,7 +603,6 @@ The antenna environmental requirements are listed in the table below:
 
 ###### GPS Antenna Parameter
 
-
 The GPS Antenna specifications and Post Environmental Tolerance (PET) are listed in the table below:
 
 
@@ -626,7 +617,6 @@ The GPS Antenna specifications and Post Environmental Tolerance (PET) are listed
 | Polarization                                     | Right-Handed Circular | -    |
 | Impedance (Ω)                                    | 50                    | -    |
 | Frequency/Temperature Coefficient (ppm/ºC)       | 0±10                  | -    |
-
 
 Amplifier Specifications are listed in the table below:
 
@@ -745,11 +735,4 @@ The table below lists the operation and storage temperature requirements:
 
 
 
-<!-- #### Mechanical Characteristics
 
-
-<rk-img
-  src="/assets/images/wislink-lte/rak2011/datasheet/mechanical-dimension.png"
-  width="60%"
-  caption="RAK2011 Mechanical Dimension"
-/> -->

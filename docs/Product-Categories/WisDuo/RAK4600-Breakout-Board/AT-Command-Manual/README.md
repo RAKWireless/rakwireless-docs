@@ -238,7 +238,6 @@ OK V3.3.0.14
 
 <br>
 
-
 2. <b>at+help</b>
 
 This command is used to obtain all the AT commands supported by the current firmware.
@@ -288,7 +287,6 @@ LoRaWAN AT commands:
   at+get_config=lora:status
   at+set_config=lora:dutycycle_enable:X
   at+set_config=lora:send_repeat_cnt:X
-
 
 LoRa P2P AT commands:
   at+set_config=lorap2p:XXX:Y:Z:A:B:C
@@ -679,7 +677,6 @@ OK
 
 <br>
 
-
 8. <b>at+set_config=lora:app_key:`<app_key>`</b>
 
 This command is used to set the Application Key parameter for the LoRaWAN OTAA mode.
@@ -834,7 +831,6 @@ OK
 ```
 
 <br>
-
 
 14. <b>at+set_config=lora:multicast_apps_key:`<multicast_apps_key>`</b>
 
@@ -1766,7 +1762,7 @@ Not all pins of the RAK4600 module are exposed on the RAK4600 Breakout board hea
 1. **About the UART Pin**: 
      - Pin 22 (RX) and Pin 21 (TX) are reserved for UART1.
      - During sleep, Pin 22 (USART1_RX) is automatically configured as a wake up pin and in external interrupt mode with an internal pull-down resistor. Wake-up will be triggered by a rising edge on this RX pin.
-   
+
 2. **About the SWD debug Pin**: Pin 37 (SWDIO) and Pin 38 (SWCLK) are used for SWD debug port.
 
 3. **About the Power Pin**: The power pins on the RAK4600 module includes the VCC pins on Pin 40 (3V3_IN) and Pin 41 (3V3_IN), and the Ground pins (GND) are on the Pin 1, Pin 8, Pin 12, Pin 13, Pin 14, Pin 16, Pin 18, Pin 19, Pin 20, Pin 31, Pin 39, and Pin 42.

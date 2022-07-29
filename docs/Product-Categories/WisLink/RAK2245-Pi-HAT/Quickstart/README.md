@@ -14,11 +14,7 @@ rak_img: /assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/1.product
 
 ## Prerequisites
 
-<!-- <rk-img
-  src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/1.product-overview/2.quick-start/kyvjuiay9xyyvzkxjphu.jpg"
-  width="70%"
-  caption="RAK2245 Stacked on top of Raspberry Pi 3B+"
-/> -->
+
 
 ### What Do You Need?
 

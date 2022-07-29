@@ -105,12 +105,8 @@ The GPIO assignments are defined in the RAK11200 variant.h file of the Arduino B
 Getting started with RAK11200 is simple and straightforward. The first thing you need is to set up your software development environment. We have made detailed tutorials on how to set up Arduino™ IDE and the PlatformIO extension to be ready to use the WisBlock 11200.
 
 ## Arduino IDE BSP Installation
-<!-- Replace Links 
-1. [Setup Arduino™ IDE](https://git.rak-internal.net/product-portfolio/wisblock/wisblock-public/wisblock/-/tree/master/quickstart/RAK11200#arduino-ide-bsp-installation)
--->
 
 ### Install RAKWireless ESP32 BSP on Arduino Boards Manager
-
 
 1. To add board support for RAK11200 on Arduino, start Arduino IDE and open the Preferences window (**File** > **Preferences**).     
 
@@ -120,8 +116,6 @@ Getting started with RAK11200 is simple and straightforward. The first thing you
   caption="Arduino File Preferences Window"
 />
 
-
-
 2. In the **Preferences** window, look for **Additional Boards Manager URLs** and click the icon on the right side.
 
 <rk-img
@@ -129,8 +123,6 @@ Getting started with RAK11200 is simple and straightforward. The first thing you
   width="90%"
   caption="Arduino Preferences"
 />
-
-
 
 3. Copy `https://raw.githubusercontent.com/RAKwireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless_index.json` and paste it into the new window.   
 
@@ -150,7 +142,6 @@ Getting started with RAK11200 is simple and straightforward. The first thing you
   caption="Arduino Boards Manager"
 />
 
-
 5. Type **RAK** in the search bar. The RAKwireless WisBlock Core modules will be shown in the window.  
 
 <rk-img
@@ -158,7 +149,7 @@ Getting started with RAK11200 is simple and straightforward. The first thing you
   width="90%"
   caption="Arduino Tools Boards Manager"
 />
-    
+
 6. Select RAKwireless ESP32 Boards and click on **Install** button. 
 
 _**Depending on your connection speed, the installation can take some time. Just be patient.**_
@@ -211,7 +202,6 @@ Flash Mode:"QIO"
 Partition Scheme:"Default 4MB with spiffs(1.2MB APP/1.5MB SPIFFS)"
 Core Debug Level:"No"
 ```
-
 
 2. After uploading successfully, push the reset button. Then you can see some information, as shown in Figure 11 in the output message area. That means you've uploaded the code into RAK11200 successfully.
 

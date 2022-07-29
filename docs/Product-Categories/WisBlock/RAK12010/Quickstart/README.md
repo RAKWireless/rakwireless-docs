@@ -11,14 +11,6 @@ next: ../Datasheet/
 
 # RAK12010 Quick Start Guide
 
-<!--
-## Introduction
-
-This guide introduces the RAK12010 WisBlock Ambient Light Sensor and how to program with it.
-
-
--->
-
 ## Prerequisite
 
 ### What Do You Need?
@@ -116,7 +108,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 #### Initial Test of the RAK12010 WisBlock Module
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 
@@ -276,7 +268,7 @@ If you're using the RAK11200 as your WisBlock Core, the RAK11200 requires the **
   caption="Uploading the RAK12010 example code"
 />
 
-6. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 13**, then your RAK12010 is properly communicating to the WisBlock core. The values changes depending on the brightness/illuminance level of the ambient light.
+6. When you successfully uploaded the example sketch, open the serial monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 13**, then your RAK12010 is properly communicating to the WisBlock core. The values changes depending on the brightness/illuminance level of the ambient light.
 
 <rk-img
   src="/assets/images/wisblock/rak12010/quickstart/rak12010-logs.png"

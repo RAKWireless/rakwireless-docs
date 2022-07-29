@@ -27,7 +27,7 @@ The RAK1903 WisBlock Ambient Light Sensor Module, part of the RAK Wireless Wisbl
 
 ## Specifications
 ### Overview
-<!-- Insert Picture of Sensor with its dimensions -->
+
 
 #### Mounting
 
@@ -49,7 +49,6 @@ The hardware specification is categorized into six parts. It shows the chipset o
 | TI     | OPT3001DNPR |
 
 #### Pin Definition
-
 
 The RAK1903 WisBlock Ambient Light Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK1903 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 

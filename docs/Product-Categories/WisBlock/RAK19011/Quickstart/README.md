@@ -57,7 +57,6 @@ The block diagram shown in **Figure 1** shows the internal architecture and exte
   caption="RAK19011 WisBlock Dual IO Base Board with Power Slot block diagram"
 />
 
-
 The MCU in the WisBlock Core module offers the I2C, UART, and SPI data buses to the sensor and IO modules. Through these buses, the MCU can control and retrieve data from the sensors. The RAK19011 WisBlock Dual IO Base Board with Power Slot board connects all these modules.
 
 
@@ -184,7 +183,6 @@ This guide uses two arrows. Refer to **Figure 2** for its representation.
 
 ###### WisBlock Core
 
-
 A WisBlock Core module is designed to be installed on the CPU slot of the RAK19011 WisBlock Dual IO Base Board with Power Slot. As shown in **Figure 14**, the location is properly marked by silkscreen. Follow carefully the procedure defined in [attaching a WisConnector](#attaching-a-wisconnector) section in order to attach a Core module. Once attached, fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the WisBlock Core. 
 
 
@@ -197,7 +195,6 @@ A WisBlock Core module is designed to be installed on the CPU slot of the RAK190
 
 ###### WisBlock Power
 
-
 A WisBlock Power module is designed to be installed on the Power slot of the RAK19011 WisBlock Dual IO Base Board with a Power Slot. As shown in **Figure 15**, the location is properly marked by silkscreen. Follow carefully the procedure defined in [attaching a WisConnector](#attaching-a-wisconnector) section in order to attach a Core module. Once attached, fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the WisBlock Core. 
 
 
@@ -208,7 +205,6 @@ A WisBlock Power module is designed to be installed on the Power slot of the RAK
 />
 
 ###### WisBlock Sensor
-
 
 A WisBlock Sensor module is designed to be installed on the sensor slot of the RAK19011 WisBlock Dual IO Base Board with Power Slot. There are six (6) available sensor slots in the RAK19011 WisBlock Dual IO Base Board with Power Slot. As shown in **Figure 16**, the location of the slots is properly marked by silkscreen. Follow carefully the procedure of the section, [attaching a WisConnector](#attaching-a-wisconnector), to attach a WisBlock Sensor module. Once attached, fix the module with an M1.2 x 3&nbsp;mm screw. 
 

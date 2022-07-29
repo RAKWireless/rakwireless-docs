@@ -412,7 +412,6 @@ OK
 
 <br>
 
-
 4. <b>at+get_config=device:gpio:`<pin_num>`</b>
 
 This command is used to obtain the voltage level status of a GPIO pin on a module.
@@ -1849,15 +1848,15 @@ Not all pins of the RAK4200 module are exposed on the RAK4200 Breakout board hea
     - During sleep, Pin 5 (RX1) and Pin 1 (RX2) are automatically configured as wake-up pins and in external interrupt mode with an internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
 
 2. **About the SWD Debug Pin**: Pin 7 (SWDIO) and Pin 8 (SWCLK) are used for SWD debug port.
-   
+
 3. **About the Power Pin**: The power pins on the RAK4200 module include VDD on Pin 20 and Ground pins (GND) are on Pin 11, Pin 13, Pin 14, and Pin 19.
 
 4. **About the Reset Pin**: The reset pin on the RAK4200 module is Pin 18 (MCU_NRST).
-   
+
 5. **About the RF Antenna Pin**: The RF antenna pin on the RAK4200 module is the Pin 12.
-   
+
 6. **About the ADC Pin**: The ADC pin on the RAK4200 module is assigned to Pin 3 (UART2_DE).
-   
+
 7. **About the GPIO pin**: The GPIO pins available on the RAK4200 module are the following:
     - Pin 3 (UART2_DE)
     - Pin 6 (UART1_DE)

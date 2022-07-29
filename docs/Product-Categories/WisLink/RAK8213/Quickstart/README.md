@@ -12,11 +12,7 @@ rak_img: /assets/images/wislink-lte/rak8213/quickstart/overview/RAK8213_home.png
 
 ## Prerequisites
 
-<!-- <rk-img
-  src="/assets/images/wislink-lte/rak8213/quickstart/prerequisites/rak8213.png"
-  width="25%"
-  caption="RAK8213 WisLink Cellular mPCIe"
-/> -->
+
 
 ### What Do You Need?
 
@@ -244,7 +240,6 @@ To enable the Wi-Fi Client Mode, you have to disable first the AP Mode.
   width="100%"
   caption="Client mode enabled"
 />
-
 
 4. Once Wi-Fi AP Mode is enabled, you will automatically return to the main configuration menu (figure 1). Select option **1 Configure WIFI** then choose option **4 Add New SSID for Client.**
 

@@ -13,13 +13,7 @@ tags:
 
 ## Prerequisites
 
-<!---
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/2.quick-start-guide/s9kfxgy3q8qiuydxxkrk.jpg"
-  width="40%"
-  caption="RAK7204 WisNode Sense Home Front View"
-/>
--->
+
 
 ### What do you need?
 Before going through each and every step in the installation guide of the RAK7204 WisNode Sense Home, make sure to prepare the necessary items listed below:
@@ -101,51 +95,53 @@ If you didn't find any Port with the name Silicon Labs CP210x USB to UART Bridge
 
 ### Connecting to Helium (The People's Network) 
 
-Helium has quickly become the most widespread LPWAN communal network with more than 27,000 devices deployed globally. All our node products are compatible with it and the process of adding a device to the network is intuitive and straightforward. This section will focus on giving a brief guide on how to connect the RAK7204 to the network console, assuming that there is a Helium Hotspot within range.
+Helium has quickly become the most widespread LPWAN communal network with more than 27,000 devices deployed globally. All our node products are compatible with it and the process of adding a device to the network is intuitive and straightforward. 
+
+This section will focus on giving a brief guide on how to connect the RAK7204 to the network console, assuming that there is a Helium Hotspot within range.
 
 Log in or create your account [here](https://www.helium.com/console):
 
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/connecting-to-helium/1.png"
   width="70%"
-  caption="Helium Console"
+  caption="Helium console"
 />
 
-Once registered/logged in you will end up at the home page where you can see your function tree on the left and your DC balance at the tops as well as a number of useful links.
+Once registered/logged in, you will end up at the home page where you can see your function tree on the left and your DC balance at the tops as well as a number of useful links.
 
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/connecting-to-helium/home.png"
   width="80%"
-  caption="Helium Console home screen"
+  caption="Helium console home screen"
 />
 
-Go to the "Devices" section in the function tree. If this is your first time doing this there will be no devices registered. Click the "+ Add Device" button to get started
+Go to the **Devices** section in the function tree. If this is your first time doing this there will be no devices registered. Click the **+ Add Device** button to get started.
 
 
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/connecting-to-helium/no_dev.png"
   width="80%"
-  caption="Helium Devices"
+  caption="Helium devices"
 />
 
-A window will pop up with a set of field containing the device parameters required for its registration (Figure 9):
+A window will pop up with a set of field containing the device parameters required for its registration.
 
 
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/connecting-to-helium/red_device.png"
   width="60%"
-  caption="Add a New Device"
+  caption="Add a new device"
 />
 
-Fill a name of your choosing. The Dev EUI, App EUI and App Key (press the eye icon to reveal the values) will have random values generated for you by default. You can manually replace them with values of your own. For the purpose of this tutorial we will stay with the default. Press the "Submit" button and you are done.
+Fill in a name of your choosing. The **Dev EUI**, **App EUI**, and **App Key** will have random values generated for you by default. Press the eye icon to reveal the values. You can manually replace them with values of your own. For this tutorial, use the default values. Press the **Submit** button, and you are done.
 
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/connecting-to-helium/reged_device.png"
   width="80%"
-  caption="Helium Devices"
+  caption="Helium devices"
 />
 
-Now your RAK7204 is registered and is awaiting activation. For this to happen we need to import the Dev EUI, App EUI and App Key in the RAK7204 using the RAK Serial Port Tool
+Now your RAK7204 is registered and is awaiting activation. For this to happen, you need to import the Dev EUI, App EUI and App Key in the RAK7204 using the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
 
 Open the tool, select the desired port (default baud rate) and open it. Then start importing your settings.
 
@@ -180,7 +176,7 @@ at+set_config=lora:app_eui:XXXX
 
 - Enter App Key
 
-Finally fill in the App key with the command:
+Finally, fill in the App key with the command:
 
 ```
 at++set_config=lora:app_key:XXXX
@@ -204,8 +200,8 @@ You output should resemble the one in Figure 11:
   caption="RAK7204 EUIs and key"
 />
 
+If you take a look at the Helium console, you will also see the join request packets both in the graph and event log. Your node is now a part of the Helium Network.
 
-If you take a look at the Helium console you will also see the join request packets both in the graph and event log. Your node is now a part of the Helium Network.
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/connecting-to-helium/joined.png"
   width="100%"
@@ -231,7 +227,6 @@ Once you have logged in make sure you are in Network Server mode. By default the
   width="100%"
   caption="Network Server mode"
 />
-
 
 2. Start the Device registration process by going to the Application sub menu in the LoRa Network section and creating an application. Enter a name in the field, leave the default type and press "Save & Apply"
 
@@ -396,288 +391,7 @@ If you check the Devices Section and the Live Device Data in the Devices section
 
 Your RAK7204 is now connected to the Built-in server and transmitting data over regular intervals.
 
-<!-- Outdated
 
-### Connecting to The Things Network (TTN)
-
-The Things Network is about enabling low power devices to be used in long range gateways that connect to an open-source, decentralized network and exchange data with Applications. Learn more about the Things Network [**here**](https://www.thethingsnetwork.org/docs/).
-
-In this section, we will be connecting the RAK7204 WisNode Sense Home to The Things Network (TTN). If you don't have an account yet, head on to [https://www.thethingsnetwork.org/](https://www.thethingsnetwork.org/) and create one. Once done, Log in to your account and go to the console which can be found here:
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/szwxvka0wyqg5ybjrffb.png"
-  width="100%"
-  caption="The Things Network Home Page"
-/>
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/jf9flba2uoyc3wt2k9lw.png"
-  width="100%"
-  caption="TTN Console Page"
-/>
-
-- Choose "**APPLICATIONS**"
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/bfbdxer0da06nxv0bymr.png"
-  width="100%"
-  caption="Application Page"
-/>
-
-#### Adding An Application
-
-- Click the "**add application**" button
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/eixjrjjdmpc4bstoyleu.png"
-  width="100%"
-  caption="Adding an Application"
-/>
-
-Here are the things that you should take note in adding an application:
-
-1. **Application ID** - this will be the unique id of your application in the Network. Please note that characters should be in lower case, no spaces are allowed.
-2. **Description** - this is a short and concise human readable description of your application.
-3. **Application EUI** - this will be generated automatically by The Things Network for convenience.
-4. **Handler Registration** - handler you want to register this application to.
-
-- After you fill in the necessary information, press the "**Add application**" button at the bottom of this page. If you see the following page, this means that you have successfully registered your application.
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/nyiksw5ezoobdkqaifft.png"
-  width="100%"
-  caption="Application Overview"
-/>
-
-##### Register Device
-
-- Scroll down until you see the Devices section, or you can also click the "**Devices**" button at the top:
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/ow74swwqofv1gxxj0qbk.png"
-  width="100%"
-  caption="Device Section"
-/>
-
-- Click "**Register device "**
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/m0diwppr3c6uq2fzcmnb.png"
-  width="100%"
-  caption="Add your Device"
-/>
-
-Here are the things that you should take note in registering your device:
-
-1. **Device ID** - this is the unique identifier for your RAK7204 WisNode Sense Home in your application. You need to enter this manually.
-2. **Device EUI** - this is the unique identifier for your device in the network. You can change it later, if you want.
-
-Click the following icon and the Device EUI will be automatically generated. The App Key should be in auto generation mode by default.
-
-- Lastly, click the Register button. Now, your device is registered under the corresponding application.
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/uvhfpgf50yodwdl9dxp7.png"
-  width="100%"
-  caption="Device Overview"
-/>
-
-Depending on which authentication method you want to use ,proceed to either the [OTAA Mode](/Product-Categories/WisNode/RAK7204/Quickstart/#otaa-mode) or [ABP mode](/Product-Categories/WisNode/RAK7204/Quickstart/#abp-mode) section.
-
-#### OTAA Mode
-
-When setting up a new device in TTN it defaults to OTAA mode. For configuring it you need the following three parameters: **Device EUI, Application EUI** and **App Key**. You can get them all from the **Overview page**.
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/otaa/pyqpw2ihstlgeqv68pbs.png"
-  width="100%"
-  caption="Device OTAA Parameters"
-/>
-
-Now, let us configure the RAK7204 WisNode Sense Home to work in OTAA mode in the EU868 band, as an example.
-
-:::tip 📝 NOTE:
-The default LoRa working mode for the RAK7204 WisNode Sense Home is LoRaWAN 1.0.2, while the default LoRa join mode is OTAA, and the default LoRa class is Class A.
-:::
-
-1. Set mode to **OTAA**, device class to **Class A** and your LoRaWAN region to your correct frequency band, with the following set of commands below. Remember to replace **XXX** with the your LoRaWAN region, check [here](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html) for your frequency plan.
-
-```sh
-at+set_config=lora:join_mode:0
-```
-
-```sh
-at+set_config=lora:class:0
-```
-
-```sh
-at+set_config=lora:region:XXX
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/otaa/okwyucipaed3fnrarkso.png"
-  width="90%"
-  caption="Setting up the RAK7204 WisNode Sense Home operation mode"
-/>
-
-2. Now that the modes are set, enter the parameters: : **Device EUI, Application EUI** and **App Key**. Use the commands below. Remember to replace the **"XXXX"** with the corresponding parameter value for your particular case:
-
-```sh
-at+set_config=lora:dev_eui:XXXX
-```
-
-```sh
-at+set_config=lora:app_eui:XXXX
-```
-
-```sh
-at+set_config=lora:app_key:XXXX
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/otaa/jttmbmkhm0ac0duvap94.png"
-  width="90%"
-  caption="Setting up the RAK7204 WisNode Sense Home OTAA parameters"
-/>
-
-- You should end up with a window as the one in the figure above with **a series of OK messages**.
-
-3. Finally, execute the join command:
-
-```sh
-at+join
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/otaa/eevf8jgjt1p48i17vugw.png"
-  width="90%"
-  caption="Join Command"
-/>
-
-4. You can test the connection by sending an uplink frame. Use the following for example:
-
-```sh
-at+send=lora:1:12345678
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/otaa/tsyls5mfkzctes7lh1jg.png"
-  width="90%"
-  caption="Sending an uplink frame"
-/>
-
-If you get a response in your TTN live data feed as in the figure below, than you are all set!
-
-:::tip 📝 NOTE:
-Be sure to have this window opened prior to sending data through the RAK Serial Port or you will not be able to receive the packet sent. Logging out your The Things Network account would also clear all the data sent and not being able to receive packets sent.
-:::
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/otaa/tj6whmvvp8hwldemo31b.png"
-  width="100%"
-  caption="Sending Data to TTN from RAK7204 WisNode Sense Home"
-/>
-
-#### ABP Mode
-
-1. To join the ABP mode, go to device settings and switch the activation method to **ABP**.
-2. The **Device Address**, **Network Session Key** and **App Session Key** will be generated automatically by default.
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/abp/bs9ladvinybe4v0fqowm.png"
-  width="100%"
-  caption="Switching to ABP mode"
-/>
-
-3. Save the mode change and return to the **Device Overview page**. You can copy the keys by pressing the button after the value fields marked in red in the figure below.
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/abp/ytbwh3dd3u6ul6mw174p.png"
-  width="100%"
-  caption="ABP parameters screen"
-/>
-
-4. Now we need to update the RAK7204 WisNode Sense Home configuration (mode and parameters). Open the Serial Tool and type the command below to change the region (in case you have not done so already):
-
-```sh
-at+set_config=lora:region:EU868
-```
-
-- As you can see in the figure below, as we were in the same region (EU868), there was no change.
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/abp/gkaye44gsjjuxhtptjmv.png"
-  width="90%"
-  caption="Region setup"
-/>
-
-5. Change the mode to **ABP** with the command:
-
-```sh
-at+set_config=lora:join_mode:1
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/abp/xxgmfyq9dkgzu7hcfq4g.png"
-  width="90%"
-  caption="Join mode setup"
-/>
-
-6. Now that the mode has been changed, enter the parameters: **Device Address, Network Session Key**, and **Application Session Key**. Use the commands below. Remember to replace the **"XXXX"** with the corresponding parameter value for your particular case (Figure 31 for reference of the parameters):
-
-```sh
-at+set_config=lora:dev_addr:XXXX
-```
-
-```sh
-at+set_config=lora:nwks_key:XXXX
-```
-
-```sh
-at+set_config=lora:apps_key:XXXX
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/abp/yjupd0dh7ytr1rzqe118.png"
-  width="90%"
-  caption="Setting up the RAK7204 WisNode Sense Home ABP parameters"
-/>
-
-You should end up with a window as the one in the figure above with **a series of OK messages**.
-
-7. Finally, execute the join command:
-
-```sh
-at+join
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/abp/y81mijqfbzfvhxlvt8qm.png"
-  width="90%"
-  caption="Join command"
-/>
-
-8. You can test the connection by sending an uplink frame. Use the following as an example:
-
-```sh
-at+send=lora:1:12345678
-```
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/abp/tfs0ngbmzluoex9gl3kn.png"
-  width="90%"
-  caption="Sending an uplink frame"
-/>
-
-If you get a response in your TTN live data feed as in the figure below, then you are all set!
-
-<rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/abp/uos1gg9ucwza8nmlt3v6.png"
-  width="100%"
-  caption="Sending Data to TTN from RAK7204 WisNode Sense Home"
-/>
-
- -->
 
 ### Connecting to The Things Network V3 (TTNv3)
 
@@ -748,7 +462,6 @@ First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud
   caption="Adding a device in OTAA mode"
 />
 
-
 2. Below the **Register end device** heading, you can find two options for registering a device. Choose **Manually**.
     - For Activation mode, choose **Over the air activation (OTAA)**
     - For the LoRaWAN version, choose **MAC V1.0.2** (RAK7204 is LoRaWAN 1.0.2 fully compliant). 
@@ -758,7 +471,6 @@ First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud
   width="100%"
   caption="Registering the device in OTAA mode"
 />
-
 
 3. To get to the next step of the registration, click **Start**.
 
@@ -819,7 +531,6 @@ For this example, these settings will be left as default.
 
 :::
 
-
 8. Click **Join settings**.
 
     <rk-img
@@ -854,7 +565,6 @@ For this example, these settings will be left as default.
 
 
 ##### Configuring the Device in OTAA Mode
-
 
 1. For configuring the node, you will need the following three parameters: **Device EUI, Application EUI**, and **Application Key**. You can see them all on the **Device Overview** page. But since the two EUI's come with the device, you only need the Application Key from there.
 
@@ -911,7 +621,6 @@ at+set_config=lora:app_key:XXXX
   width="90%"
   caption="Setting up the RAK7204 WisNode Sense Home OTAA parameters"
 />
-
 
 4. Finally, execute the join command:
 
@@ -1151,7 +860,6 @@ at+send=lora:2:1234567890
   caption="Switching to ABP Mode"
 />
 
-
 2. Then you can see that there are some parameters for ABP in the “**ACTIVATION**” item:
 
 <rk-img
@@ -1280,7 +988,6 @@ Example Data: **04 02 22 72**
 | ---- | ---- | ---- | ---- | ---- | 
 | Data flag | 04 02 |  |  |  | 
 | Gas Resistance | 22 72 | 8818 | 0.01 kΩ Signed | 88.18 kΩ | 
-
 
 For further details about the LPP format, you can take a look at this **[link.](https://developers.mydevices.com/cayenne/docs/lora/#lora-cayenne-low-power-payload-overview)**
 
@@ -1700,13 +1407,11 @@ or you can close the ADR feature of RAK7204 WisNode Sense Home by using this AT 
 at+set_config=lora:adr:0
 ```
 
-
 There is also an AT command which is used to set the DataRate(DR):
 
 | AT Command | Description | 
 | ---- | ---- | 
 | `at+set_config=lora:dr:X` | Set the DR of LoRa Node. <br>**• X** : the number of DR. Generally, the value of X can be 0~5. More details, please check the LoRaWAN 1.0.2 specification. | 
-
 
 For example, if you want to set the current DR to DR0, you just do as follow: 
 ```sh

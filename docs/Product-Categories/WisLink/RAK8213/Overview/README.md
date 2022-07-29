@@ -18,11 +18,7 @@ Thank you for choosing **RAK8213 WisLink Cellular mPCIe** in your awesome IoT Pr
 * [RAK8213 3D Model](https://downloads.rakwireless.com/3D_File/WisLink/PWB-RAK8213.stp)
 * [Quick Start Guide for Raspberry Pi and RAK LPWAN Concentrators](https://docs.rakwireless.com/Knowledge-Hub/Learn/Raspberry-Pi-and-RAK-LPWAN-Concentrators/)
 
-<!-- <rk-img
-  src="/assets/images/wislink-lte/rak8213/datasheet/wgohpslr9gz7vggih3uh.png"
-  width="30%"
-  caption="RAK8213 WisLink Cellular mPCIe"
-/> -->
+
 
 ## Product Description
 
@@ -31,11 +27,7 @@ The **RAK8213** is a multi-band LTE Cat M1/Cat NB1/EGPRS module based on the **Q
 RAK8213’s built-in GNSS module can support **GPS, GLONASS, BeiDou/Compass, Galileo, QZSS, integrated GNSS** greatly simplifies product design and provides faster, more accurate and more reliable positioning.
 
 Rich Internet protocol, industry-standard interfaces (USB/UART/I2C/Status indicators) and rich features (applicable to Windows XP, Windows Vista, Windows 7/8/8.1/10, Linux drivers for Linux and Android) Modules that extend applicability are suitable for a wide range of M2M applications such as wireless POS, smart metering, and tracking.
-<!-- 
-<rk-btn
-  src="../Quickstart/"
-  label="Get Started with RAK8213 WisLink Cellular mPCIe"
-/> -->
+
 
 ## Product Features
 

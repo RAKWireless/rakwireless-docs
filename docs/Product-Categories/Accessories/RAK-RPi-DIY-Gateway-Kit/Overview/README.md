@@ -16,7 +16,6 @@ tags:
 
 # RAK RPi DIY Gateway Kit
 
-
 Thank you for choosing **RAK RPi DIY Gateway Kit** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Installation Guide](../Installation-Guide/)

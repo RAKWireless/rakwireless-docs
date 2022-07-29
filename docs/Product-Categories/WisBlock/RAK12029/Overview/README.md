@@ -49,7 +49,6 @@ RAK12029 is a metal detection sensor module based on the LDC1614 from Texas Inst
 
 ## Prerequisites
 
-
 To use a **RAK12029**, you need at least a **WisBlock Base** to plug the module in. The **WisBlock Base** should have a connected battery to provide power supply to the **RAK12029** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 ::: warning ⚠️ WARNING    

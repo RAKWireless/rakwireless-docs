@@ -11,12 +11,7 @@ next: ../Datasheet/
 
 # RAK19002 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the RAK19002 Wisblock Boost board and how to use and program with it.
-
--->
 
 ## Prerequisite
 
@@ -110,7 +105,6 @@ The procedure in disassembling any type of WisBlock modules is the same.
 ::: tip 📝 NOTE
 If you will connect other modules to remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. 
 :::
-
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 

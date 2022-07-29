@@ -12,7 +12,6 @@ tags:
 
 # RAK7289 WisGate Edge Pro
 
-
 Thank you for choosing **RAK7289 WisGate Edge Pro** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)

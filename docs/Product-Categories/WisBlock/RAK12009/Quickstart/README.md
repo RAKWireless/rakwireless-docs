@@ -85,7 +85,6 @@ The procedure in disassembling any type of WisBlock modules is the same.
 If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12009 uses I2C and IO pins. It can cause possible conflict, especially on some IO modules. 
 :::
 
-
 After all this setup, you can now connect the battery and USB cable to start programming your WisBlock Core.
 
 :::warning ⚠️ WARNING
@@ -103,7 +102,7 @@ The RAK12009 has an electronic sensor used for sensing the concentration of gase
 
 #### Initial Test of the RAK12009 WisBlock Module
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have.
 
@@ -185,19 +184,6 @@ If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the *
 
 To extend the use of the RAK-MQx library, check the [RAK-MQx Library methods](https://github.com/RAKWireless/RAK-MQx-Library#usage).
 
-
-<!-- Add log images 
-
-9. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to check the sensor's reading logs. If you see the logs, as shown in **Figure 14**, then your RAK12009 is properly communicating to the WisBlock core.
-
-<rk-img
-  src="/assets/images/wisblock/rak1903/quickstart/optical_logs.png"
-  width="80%"
-  caption="RAK12009 data logs"
-/>
-
--->
-
 #### Build RAK12009 Example on PlatformIO IDE (optional)
 
 
@@ -205,13 +191,11 @@ To extend the use of the RAK-MQx library, check the [RAK-MQx Library methods](ht
 This procedure was tested only on Windows 10 and Ubuntu.
 :::
 
-
 1. Install the original PlatformIO platform, as shown in [PlatformIO First Install](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md#first-install) section.
 
 - For WisBlock Core RAK4631, install **Nordic nRF52** platform.
 - For WisBlock Core RAK11200, install **Espressif 32** platform.
 - For WisBlock Core RAK11310, install **Raspberry Pi RP2040** platform.
-
 
 2. Open a project example that uses the new installed platform.
 

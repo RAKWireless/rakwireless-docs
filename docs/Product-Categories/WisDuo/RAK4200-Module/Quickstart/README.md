@@ -526,7 +526,6 @@ Right after sending the command, the “**OK Join Success**” should be replied
   caption="RAK Serial port tool join LoRaWAN in ABP mode"
 />
 
-
 9. Send data from RAK4200 to ChirpStack.
 
 To send the string 1234567890 over LoRa port 2, type the command:
@@ -565,7 +564,6 @@ The modular architecture makes it possible to integrate within existing infrastr
 />
 
 The architecture of the ChirpStack platform is shown in **Figure 28**. Similar to the case of TTN, the RAK4200 module is located in the periphery and will transmit the data to the backend servers through a LoRa gateway. For more information about this architecture, refer to [Chirpstack website](https://www.chirpstack.io/).
-
 
 In this section, it is assumed that you are using a RAK LoRa gateway, such as RAK7243. The gateway must be configured to ChirpStack deployment. More information about that can be found at [Connect the Gateway with Chirpstack](/Product-Categories/WisGate/RAK7243/Quickstart/#connect-the-gateway-with-chirpstack).
 
@@ -923,7 +921,6 @@ at+set_config=lora:region:EU868
 ```
 
 * Refer to the [RAK4200 Datasheet](/Product-Categories/WisDuo/RAK4200-Module/Datasheet/#operating-frequencies) for the list of supported frequencies.
-
 
 4. Set the Device Address.
 

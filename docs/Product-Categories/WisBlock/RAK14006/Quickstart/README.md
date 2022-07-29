@@ -50,7 +50,6 @@ The RAK14006 WisBlock Rotary Encoder Module can be mounted on the IO slot of the
 
 ##### Assembling
 
-
 As shown in **Figure 2**, the location for the IO slot is properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
 <rk-img
@@ -126,7 +125,6 @@ In this example, you will be getting the rotation position of the knob or if it 
   caption="Selecting RAK11300 as WisBlock Core"
 />
 
-
 2. Copy the example code below.
 
 ```c
@@ -200,7 +198,6 @@ void handle_3(){
 ```
 
 If you experience any error in compiling the example sketch, check the updated code for the RAK14006 WisBlock Rotary Encoder Module that can be found on the [RAK14006 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK14006_Rotary_Encoder/RAK14006_Rotary_Encoder.ino)
-
 
 3. Select the right serial port and upload the code, as shown in **Figure 9** and **Figure 10**.
 

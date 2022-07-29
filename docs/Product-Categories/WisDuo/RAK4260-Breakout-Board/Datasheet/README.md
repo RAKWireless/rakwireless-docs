@@ -10,13 +10,7 @@ prev: ../Quickstart/
 
 # RAK4260 Breakout Board Datasheet
 
-<!--
-<rk-img
-  src="/assets/images/wisduo/rak4260-breakout-board/datasheet/rak4260-breakout.jpg"
-  width="50%"
-  caption="RAK4260 WisDuo LPWAN Breakout Module"
-/>
--->
+
 
 ## Overview
 

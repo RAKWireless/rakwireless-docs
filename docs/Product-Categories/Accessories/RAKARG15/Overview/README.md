@@ -11,7 +11,6 @@ tags:
 
 # 900-930MHz 8dBi Fiberglass Antenna
 
-
 Thank you for choosing **RAKARG15 900-930MHz 8dBi Fiberglass Antenna** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)

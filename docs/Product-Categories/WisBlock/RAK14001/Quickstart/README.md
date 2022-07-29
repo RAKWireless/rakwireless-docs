@@ -11,11 +11,7 @@ next: ../Datasheet/
 
 # RAK14001 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock RAK14001 board and how to use it.
--->
 
 ## Prerequisite
 

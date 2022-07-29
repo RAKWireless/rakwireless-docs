@@ -86,15 +86,6 @@ This section shows the maximum and minimum ratings of the RAK14003 module and it
 
 Table below shows the LED parameters. Color Code & Chip Characteristic: (Test Condition: IF=20&nbsp;mA)
 
-<!-- 
-**Figure 3** below shows the LED parameters.
-
-<rk-img
-  src="/assets/images/wisblock/rak14003/datasheet/led-parameter.png"
-  width="80%"
-  caption="RAK14003 LED Parameters"
-/> -->
-
 <table>
 <thead>
   <tr>

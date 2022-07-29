@@ -20,11 +20,7 @@ Thank you for choosing **RAK2245 Pi HAT WisLink LPWAN Concentrator** in your awe
 * [RAK2245 Pi HAT 3D Model](https://downloads.rakwireless.com/3D_File/WisLink/PWB-RAK2245_PI_HAT.stp)
 * [Quick Start Guide for Raspberry Pi and RAK LPWAN Concentrators](https://docs.rakwireless.com/Knowledge-Hub/Learn/Raspberry-Pi-and-RAK-LPWAN-Concentrators/)
 
-<!-- <rk-img
-  src="/assets/images/wislink-lora/rak2245-pi-hat-edition/datasheet/rak2245-pihat-overview.png"
-  width="50%"
-  caption="RAK2245 Pi Hat"
-/> -->
+
 
 :::tip 📝 NOTE
 Purchasing the [RAK2013 WisLink Cellular Pi Hat](../../RAK2013) separately with the intent of adding a cellular feature to your existing RAK2245 Pi HAT is not possible. Hence, purchase the RAK7243C/7244C instead, as it is a specifically modified gateway that is composed of RAK2245 and RAK2013.
@@ -39,10 +35,7 @@ The board can provide low data rate LoRa radio links at ultra-fast speed. It is 
 
 The RAK2245 Pi HAT is a complete and cost efficient gateway solution that can help you develop a full LoRa system. This is an economical way to create different solutions like smart grids, intelligent farms and other IoT applications. It is also ideal for manufacturing small series that can expand into more applications.
 
-<!-- <rk-btn
-  src="../Quickstart/"
-  label="Get Started with RAK2245 Pi HAT WisLink LPWAN Concentrator"
-/> -->
+
 
 ## Product Features
 

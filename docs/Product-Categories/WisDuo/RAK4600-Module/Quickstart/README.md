@@ -408,7 +408,6 @@ at+version
   caption="AT Command response"
 />
 
-
 As an example, these are the list of the parameters you need to configure in RAK4600: 
 
 - LoRa join mode: **OTAA**
@@ -417,7 +416,6 @@ As an example, these are the list of the parameters you need to configure in RAK
 - Device EUI: **1133557799224466**
 - Application EUI: **1000000000000009**
 - Application Key: **04FA4E626EF5CF227C969601176275C2**
-
 
 1. Set the LoRa join mode to OTAA.
 
@@ -598,8 +596,6 @@ As an example, these are the list of the parameters you need to configure in RAK
 - Network Session Key: **433C7A924F7F6947778FE821525F183A**
 - Application Session Key: **A585653A949C2B2D44B55E99E94CB533**
 
-
-
 1. Set the LoRa join mode to ABP.
 
 ```
@@ -643,9 +639,7 @@ at+set_config=lora:apps_key:A585653A949C2B2D44B55E99E94CB533
   caption="AT Command for ABP LoRa parameters via RAK Serial Port Tool"
 />
 
-
 After configuring all the parameters, you need to reset the RAK4600 Module to save the parameters.
-
 
 7. After resetting, join in ABP mode.
 
@@ -721,7 +715,6 @@ The following section gives the details of each of these aforementioned steps. A
   width="100%"
   caption="Application section of the RAK’s ChirpStack LoRaServer"
 />
-
 
 2. ChirpStack LoraServer supports multiple system configurations, with only one by default. By default, a new Application should be created, although it is possible to reuse the existing ones. For this setup, create a new Application by clicking on the "**CREATE APPLICATION**" button.
 
@@ -1021,7 +1014,6 @@ Check **Disable counting frame verification** to prevent the node-side frame cou
 
 ###### Configure the ABP mode on the RAK4600
 
-
 RAK4600 complies with the LoRaWAN 1.0.2 specification. The RAK4600 LoRa join mode is **OTAA** by default and the LoRa Class is **Class A**.
 
 To set up the RAK4600 module to join ChirpStack using ABP, start by connecting the RAK4600 to the computer as shown in section [Interfacing with RAK4600](#interfacing-with-rak4600). Open the RAK Serial Port Tool, wait for the communication to start. It is recommended to test the serial communication by sending an AT command as:
@@ -1267,86 +1259,7 @@ In the following sections, two (2) options for flashing new firmware in a RAK460
 
 Refer to [RAKDAP1 Flash and Debug Tool Overview](../../../../../Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview)
 
-<!--
-Refer to the [RAKDAP1 Flash and Debug Tool](/Knowledge-Hub/Learn/RAKDAP1-Flash-and-Debug-Tool/) guide in the Knowledge Hub.
-To flash a new firmware we use RAKDAP1 tool a SWD adapter. It requires the Python3 tool pyocd on your computer.
 
-##### Installing Environment
-
-1.  Install Python3   
-
-Because **pyocd** needs the **Python environment**, we must install **Python3**. We can download the Python3 package from Python website: [https://www.python.org/downloads/](https://www.python.org/downloads/) and install it using the default configuration. After installing successfully, we can check the version as follow:    
-
-<rk-img
-  src="/assets/images/wisduo/rak4600-module/quickstart/py_ver_check.png"
-  width="45%"
-  caption="Check Python version"
-/> 
-
-:::tip 📝 NOTE:
-If the Python version is above 3.4, pip3 is automatically installed. But if not, we should install pip3 manually.     
-:::
-
-2. Install pyocd using pip
-
-Use the following command to install pyocd:     
-
-```
-pip3 install pyocd   
-```
-
-* After installation, check the version of pyocd as follow:    
-
-<rk-img
-  src="/assets/images/wisduo/rak4600-module/quickstart/pyocd_ver_check.png"
-  width="20%"
-  caption="Check pyocd version"
-/> 
-   
-3. Install the support package for the MCU
-
-After installing pyocd successfully we need to install the support package for the MCU. The command format is:
-
-```
-pyocd pack --install <MCU model>
-```
-
-**Example**: The MCU model for this board is **nrf52832** so the correct command is:
-
-```
-pyocd pack --install nrf52
-```
-
-The support packages are MDK packages. You can see a complete list at [https://www.keil.com/dd2/Pack/](https://www.keil.com/dd2/Pack/).
-
-##### Flash the firmware using DAPLink and RAKDAP1
-
-1. Connect the board to RAKDAP1
-
-Connect the 4 debug/programming SWD pins of the board to the RAKDAP1 adapter(| VCC | GND | SWIO | SWCLK |)
-
-<rk-img
-  src="/assets/images/wisduo/rak4600-module/quickstart/rak4600-swd.png"
-  width="60%"
-  caption="RAK4600 to SWD debug pins"
-/> 
-
-2. Flash the latest firmware
-
-To flash the latest firmware version the command is:
-
-```
-pyocd flash -target nrf52 <path/to/file.bin>
-```    
-
-* Depending on the size of the file, the flashing can take several minutes. The success or failure of the flashing will be shown in the command line:    
-
-<rk-img
-  src="/assets/images/wisduo/rak4600-module/quickstart/pyocd_flash_log.png"
-  width="65%"
-  caption="PYOCD flash log"
-/>
--->
 
 #### Through BLE
 

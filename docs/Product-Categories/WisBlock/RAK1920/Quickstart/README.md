@@ -11,14 +11,7 @@ next: ../Datasheet/
 
 # RAK1920 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock Sensor RAK1920 WisBlock Sensor Adapter Module and how to program with it.
-
-The information obtained from the Sensor Adapter Module will then be printed over the USB debug port of the WisBlock Base board.
-
--->
 
 ## Prerequisite
 
@@ -99,7 +92,6 @@ The procedure in disassembling any type of WisBlock modules is the same.
 ::: tip 📝 NOTE
 If you will connect other modules to remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1920 uses UART and I2C communication lines, and it can cause possible conflict especially on other WisBlock Modules connected to Slot A to D of the WisBlock Base.
 :::
-
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 

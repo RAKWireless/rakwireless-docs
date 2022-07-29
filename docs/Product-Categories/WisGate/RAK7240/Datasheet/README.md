@@ -8,7 +8,7 @@ tags:
 prev: ../Supported-LoRa-Network-Servers/
 next: false
 certifications:
-  - [ANATEL, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_ANATEL_Certification.pdf]
+  - [Anatel, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_ANATEL_Certification.pdf]
   - [CE, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_CE_Certification.pdf]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_FCC_Certification.zip]
   - [IC, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_IC_Certification.pdf]
@@ -19,11 +19,7 @@ certifications:
 
 # RAK7240 WisGate Edge Prime Datasheet
 
-<!-- <rk-img
-  src="/assets/images/wisgate/rak7240/datasheet/1.rak7240-overview.jpg"
-  width="100%"
-  caption="RAK7240 WisGate Edge Prime"
-/> -->
+
 
 ## Overview
 
@@ -160,7 +156,7 @@ RAK7240 supports different software features such as LoRa, Network, and Manageme
 | RAK7240 WisGate Edge Prime | WisGateOS V1.0.2 | [Download](https://downloads.rakwireless.com/LoRa/RAK7240/Firmware/RAK7240_Latest_Firmware.zip) |
 #### Supported Software
 
-<!---Supported Software --->
+
 
 | LoRa                          | Network                        | Management                                   |
 | ----------------------------- | ------------------------------ | -------------------------------------------- |

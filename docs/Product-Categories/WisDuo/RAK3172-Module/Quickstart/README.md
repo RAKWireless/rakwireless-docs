@@ -415,11 +415,7 @@ RAK3172 supports the following regions:
   caption="Updating to US915 and setting up channel mask"
 />
 
-<!-- 
 
-<img src="/assets/images/wisduo/rak3172-module/quickstart/select-port.png"  />
-
--->
 :::tip 📝 NOTE:
 
 - Make sure you have configured the correct RAK board before uploading the code. See [Configure RAK3172 on Boards Manager](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#configure-rak3172-on-boards-manager) section.
@@ -879,7 +875,6 @@ If there is no `OK` or any reply, you need to check if the wiring of your UART l
   caption="at+version command response"
 />
 
-
 2. The next step is to configure the OTAA LoRaWAN parameters in RAK3172: 
 
 - LoRa work mode: **LoRaWAN**
@@ -944,13 +939,11 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
   caption="Configuring LoRa Parameters"
 />
 
-
 3. After the configuration of the LoRaWAN parameters, the next step is to set up the EUIs and key. You need the use the values from the TTN console.
 
 - Device EUI: **1133557799224466**
 - Application EUI: **1000000000000009**
 - Application Key: **04FA4E626EF5CF227C969601176275C2**
-
 
 Set the Device EUI.
 
@@ -1123,7 +1116,6 @@ If there is no `OK` or any reply, you need to check if the wiring of your UART l
   caption="at+version command response"
 />
 
-
 3. The next step is to configure the ABP LoRaWAN parameters in RAK3172: 
 
 - LoRa work mode: **LoRaWAN**
@@ -1232,7 +1224,6 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
 | z         | Number of join attempts (0-255) - 0 is default.              |
-
 
 6. With the end-device properly activated, you can now try to send some payload after a successful join.
 
@@ -1361,7 +1352,6 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   caption="Chirpstack Adding Node into the RAK3172 Module"
 />
 
-
 6. Once the node is created, fill in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
 
 Fill in the parameters requested:
@@ -1461,7 +1451,6 @@ If there is no `OK` or any reply, you need to check if the wiring of your UART l
   caption="at+version command response"
 />
 
-
 2. The next step is to configure the OTAA LoRaWAN parameters in RAK3172: 
 
 - LoRa work mode: **LoRaWAN**
@@ -1526,7 +1515,6 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
   caption="Configuring LoRa Parameters"
 />
 
-
 3. After the configuration of the LoRaWAN parameters, the next step is to set up the DevEUI and AppKey. You need the use the values from the Chirpstack device console. 
 
 :::tip 📝 NOTE:
@@ -1536,7 +1524,6 @@ The Application EUI parameter is not required in the ChirpStack platform; theref
 - Device EUI: **5E9D1E0857CF25F1**
 - Application EUI: **5E9D1E0857CF25F1**
 - Application Key: **F921D50CD7D02EE3C5E6142154F274B2**
-
 
 Set the Device EUI.
 
@@ -1678,7 +1665,6 @@ If there is no `OK` or any reply, you need to check if the wiring of your UART l
   caption="at+version command response"
 />
 
-
 2. The next step is to configure the ABP LoRaWAN parameters in RAK3172: 
 
 - LoRa work mode: **LoRaWAN**
@@ -1748,7 +1734,6 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 - Device Address: **26011AF9**
 - Application Session Key: **4D42EC5CAF97F03D833CDAf5003F69E1**
 - Network Session Key: **C280CB8D1DF688BC18601A97025C5488**
-
 
 Set the Device Address.
 
@@ -1883,7 +1868,6 @@ Refer to the [P2P Mode](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Man
   caption="Configuring P2P in both RAK3172 Module"
 />
 
-
 3. To set one module as a receiver (RX), you need to set the value of the P2P receive command to 65535.
 
 ```
@@ -2002,149 +1986,6 @@ If your firmware upload always fails, check your current baud rate setting using
 
 Refer to [Software section](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#software).
 
-<!-- 
 
-Go to [Arduino official website](https://www.arduino.cc/en/Main/Software) and download the Arduino IDE. You can see the multiple versions available for Windows, Linux, and Mac OS X. Choose the correct version of Arduino IDE and download it.
-
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/1.download-arduino.png"
-  width="100%"
-  caption="Arduino IDE latest version"
-/>
-
-#### For Windows
-
-::: tip 📝 NOTE   
-**For Windows 10 users**:   
-Do **NOT** install the Arduino IDE from the Microsoft App store. Install the original Arduino IDE from the Arduino official website instead, since the Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
-:::
-
-1. Install the Arduino IDE, which you just downloaded, on your Windows PC. 
-
-2. Click **I Agree** then **Next** to proceed.
-
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/2.agreement-license.png"
-  width="45%"
-  caption="Arduino setup license agreement"
-/>
-
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/3.installation-options.png"
-  width="45%"
-  caption="Arduino setup installation options"
-/>
-
-3. Click **Install**.
-
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/4.installation-folder.png"
-  width="45%"
-  caption="Installing Arduino IDE"
-/>
-
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/5.installing.png"
-  width="45%"
-  caption="Ongoing installation"
-/>
-
-
-After 100% progress, the Arduino IDE has been installed successfully.
-
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/6.installation-success.png"
-  width="45%"
-  caption="Successful installation"
-/>
-
-#### For Linux
-
-First, you need the check the compatibility with your system and choose between the 32-bit, 64-bit, and ARM versions of the Arduino IDE for Linux.
-
-##### Installing via a tarball
-
-After downloading the correct Arduino version, open a terminal, then run `ls` to check the installation file on the download folder.
-
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ls-arduino.png"
-  width="90%"
-  caption="Check the download folder"
-/>
-
-
-A tarball is a type of compressed folder, like a `.zip` file, commonly used to distribute software in Linux. To extract the files from the tarball, change the directory to where the downloaded tarball is, then run:
-
-`tar xvf arduino-version.xz`
-
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/tar-linux.png"
-  width="90%"
-  caption="Tarball extract command"
-/>
-
-When the tar command finishes, run `ls` again. A folder named  **arduino-version** will be created.
-
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ls-tarball.png"
-  width="90%"
-  caption="Arduino install folder created"
-/>
-
-Change the current directory and go to the newly created folder directory. There will be a file named `install.sh` in the folder. Execute `sudo ./install.sh` to install the Arduino IDE.
-
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/sudo-install.png"
-  width="90%"
-  caption="Arduino install script running"
-/>
-
-The `sudo` command temporarily elevates privileges allowing the installer to complete sensitive tasks without logging in as the root user.
-
-#### For Mac OS X
-
-In Mac OS X, the same as Linux, there is no installation process. It is just a process of decompression, then you can open Arduino IDE successfully.
-
-
-### Arduino IDE Parts Guide
-
-**Figure 105** shows the five (5) parts of Arduino IDE.
-
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/7.arduino-ide.png"
-  width="75%"
-  caption="Arduino IDE"
-/>
-
-1. **IDE Option Menu**
-
-You can configure some general parameters such as the serial port, the board information, the libraries, the edit parameters, and so on.
-
-2. **Operating Buttons**
-
-The operating buttons have five operations:
-
-  - **Verify/Compile** the source code;
-  - **Upload** the compiled code into WisBlock;
-  - **Open** a **New** Arduino IDE window or existing application;
-  - **Save** the current application.
-
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/8.operating-buttons.png"
-  width="30%"
-  caption="Operating buttons"
-/>
-
-
-3. **Code Area**
-
-You can edit the source code, which will be compiled and uploaded into WisBlock later in this area.
-
-4. **State Area**
-
-5. **Output Message Area**
-You can see the output message in this area, whether it's failure or success information.
-
--->
 
 

@@ -45,39 +45,7 @@ The project is available on Arduino IDE **RAK WisBlock RUI Examples**.
 
 This sketch shows [RUI3 BLE API](/RUI3/BLE/) configuration parameters that can be used in your RUI3 project.<br>
 
-<!--
 
-2. Now select the BLE_Configuration project on : `File -> Examples -> RAK WisBlock RUI examples -> Example -> BLE_Configuration`. 
-<rk-img
-  src="/assets/images/rui3/ble_examples/ble-conf-arduino.png"
-  width="100%"
-  caption="RAK WisBlock RUI BLE Configuration example"
-/>
-
-3. Once the example code is open, you can now select the correct serial port, as shown in **Figure 6**.
-
-<rk-img
-  src="/assets/images/rui3/ble_examples/arduino-port.png"
-  width="100%"
-  caption="Selecting the correct serial port"
-/>
-
-4. The last step is to upload the code by clicking the highlighted **Upload** icon.
-
-<rk-img
-  src="/assets/images/rui3/ble_examples/ble-conf-upload.png"
-  width="100%"
-  caption="Uploading the BLE_Configuration example code"
-/>
-
-5. You should now be able to see the project logs on the Serial Monitor of Arduino IDE.
-
-<rk-img
-  src="/assets/images/rui3/ble_examples/ble-conf-log.png"
-  width="90%"
-  caption="Serial Monitor BLE_Configuration log"
-/>
--->
 
 ## Configurable Parameters
 

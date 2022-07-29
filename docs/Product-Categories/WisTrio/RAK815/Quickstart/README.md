@@ -14,13 +14,7 @@ rak_img: /assets/images/wistrio/rak815/quickstart/1main/RAK815_home.png
 
 ## Prerequisite
 
-<!---
-<rk-img
-  src="/assets/images/wistrio/rak815/quickstart/2quick-start-guide/rak815-overview.jpg"
-  width="30%"
-  caption="RAK815 WisTrio LPWAN Tracker"
-/>
--->
+
 
 ### What do you need?
 
@@ -643,7 +637,6 @@ upper right corner.
   width="80%"
   caption="Upgrade Progress Chart"
 />
-
 
 8. After the program upgrade is complete, reset the device and you will see that your device's Bluetooth broadcast name has changed.
 

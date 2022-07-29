@@ -22,7 +22,7 @@ Thank you for choosing **RAK7201 WisNode Button 4K** in your awesome IoT Project
 
 The **RAK7201 WisNode Button 4K** is a remote wireless trigger device. It supports user-defined functions for each key and is based on the LoRaWAN 1.0.2 protocol. Supported LoRaWAN bands are IN865, EU868, AU915, US915, KR920, and AS923.
 
-The Button is suitable for a variety of Smart Home applications: Entertainment system control ,Control of Lights, as a Snooze Button for your Alarms, or a Remote trigger. With long range wireless connectivity, amazing battery life, and four programmable buttons, there are a ton of applications this device can fit into.
+This WisNode Button is suitable for a variety of Smart Home applications. Including, but not limited to, entertainment system control, control of lights, a snooze button for the alarms, or a remote trigger. A device with long-range wireless connectivity, amazing battery life, and four programmable buttons. There are tons of applications this device can fit into.
 
 ## Product Features
 

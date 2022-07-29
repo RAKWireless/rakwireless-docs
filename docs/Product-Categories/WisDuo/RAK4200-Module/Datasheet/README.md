@@ -17,13 +17,7 @@ certifications:
 
 # RAK4200 WisDuo LPWAN Module Datasheet
 
-<!--
-<rk-img
-  src="/assets/images/wisduo/rak4200-module/datasheet/overview.png"
-  width="50%"
-  caption="RAK4200 Module"
-/>
---->
+
 
 ## Overview
 
@@ -58,9 +52,7 @@ The overview covers the RAK4200 WisDuo board overview where the front and back v
 
 #### Board Overview
 
-<!---The figure below shows the top view of the RAK4200 WisDuo LPWAN Module. The dimensions of the Module are 15 x 15.5 x 2.5 mm.
-(Mechanical Characteristics)
---->
+
 
 <rk-img
   src="/assets/images/wisduo/rak4200-module/datasheet/back_view.png"
@@ -70,7 +62,7 @@ The overview covers the RAK4200 WisDuo board overview where the front and back v
 
 #### Block Diagram
 
-<!--- The block diagram below shows the external interfaces of the RAK4200 WisDuo LPWAN Module. --->
+
 
 <rk-img
   src="/assets/images/wisduo/rak4200-module/datasheet/block-diagram.png"
@@ -84,7 +76,7 @@ The hardware specification is categorized into five parts. It covers the pinouts
 
 #### Pin Definition
 
-<!---Provided in this section is the Pinout of the RAK4200 WisDuo LPWAN Module.--->
+
 
 <rk-img
   src="/assets/images/wisduo/rak4200-module/datasheet/pinout-for-rak4200.svg"
@@ -239,7 +231,7 @@ The RAK4200 WisDuo LPWAN Module takes **46.179&nbsp;ms** to receive a LoRa packe
 
 #### Mechanical Characteristics
 
-<!---The following figure is the mechanical dimensions of the RAK4200 WisDuo LPWAN Module.--->
+
 
 <rk-img
   src="/assets/images/wisduo/rak4200-module/datasheet/mechanical-dimensions.jpg"
@@ -251,7 +243,7 @@ The RAK4200 WisDuo LPWAN Module takes **46.179&nbsp;ms** to receive a LoRa packe
 
 - MSL Rating : Class 3
 
-<!--- In this section, the recommended reflow profile for RAK4200 WisDuo LPWAN Module is described in the image below: --->
+
 
 <rk-img
   src="/assets/images/wisduo/rak4200-module/datasheet/recommended-reflow-profile.jpg"

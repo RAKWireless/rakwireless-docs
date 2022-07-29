@@ -24,13 +24,7 @@ This guide covers the following topics:
 
 ## Prerequisites
 
-<!--
-<rk-img
-  src="/assets/images/wisduo/rak811-breakout-board/quickstart/quick-start-guide/dzsrvm2eaasyt3shktdh.png"
-  width="35%"
-  caption="RAK811 Breakout Board"
-/>
---->
+
 
 ### What Do You Need?
 
@@ -276,7 +270,6 @@ at+version
   caption="AT Command response"
 />
 
-
 As an example, these are the list of the parameters you need to configure in RAK811: 
 
 - LoRa join mode: **OTAA**
@@ -285,7 +278,6 @@ As an example, these are the list of the parameters you need to configure in RAK
 - Device EUI: **1133557799224466**
 - Application EUI: **1000000000000009**
 - Application Key: **04FA4E626EF5CF227C969601176275C2**
-
 
 1. Set the LoRa join mode to OTAA.
 
@@ -466,8 +458,6 @@ As an example, these are the list of the parameters you need to configure in RAK
 - Network Session Key: **433C7A924F7F6947778FE821525F183A**
 - Application Session Key: **A585653A949C2B2D44B55E99E94CB533**
 
-
-
 1. Set the LoRa join mode to ABP.
 
 ```
@@ -516,7 +506,6 @@ at+set_config=lora:apps_key:A585653A949C2B2D44B55E99E94CB533
 After configuring all the parameters, you need to reset RAK811 Board for saving the parameters.
 
 :::
-
 
 7. After resetting, join in ABP mode.
 
@@ -924,7 +913,6 @@ at+set_config=lora:work_mode:1
 at+set_config=lorap2p:XXX:Y:Z:A:B:C
 ```
 
-
 For this example, the LoRa parameters are the following:
 
 - Link frequency: **869525000&nbsp;Hz**
@@ -992,7 +980,6 @@ For RAK811 modules with firmware version V3.0.0.12 and below, you need to use th
 
 Execute the following procedure to upgrade the firmware in Device Firmware Upgrade (DFU) mode through the UART1 interface.
 
-
 1.	Download the latest application firmware of the RAK811 that can be found on the datasheet.
     - [RAK811 Breakout Board Datasheet](/Product-Categories/WisDuo/RAK811-Breakout-Board/Datasheet/#firmware-os)
 
@@ -1038,6 +1025,5 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
 ```sh
 at+set_config=device:restart
 ```
-
 
 If you want to configure your RAK811 Breakout Board using the available **AT commands**, check the [AT Commands for RAK811 Breakout Board](/Product-Categories/WisDuo/RAK811-Breakout-Board/AT-Command-Manual/). 

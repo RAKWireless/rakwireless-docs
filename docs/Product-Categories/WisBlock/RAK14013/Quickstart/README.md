@@ -48,7 +48,6 @@ The RAK14013 WisBlock Joystick Module can be mounted on the IO slot of the WisBl
 
 ##### Assembling
 
-
 As shown in **Figure 2**, the location for the IO slot is properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
 <rk-img
@@ -124,7 +123,6 @@ In this example, you will be getting the rotation position of the knob or if it 
   caption="Selecting RAK11300 as WisBlock Core"
 />
 
-
 2. Copy the example code below:
 
 ```c
@@ -156,7 +154,6 @@ In this example, you will be getting the rotation position of the knob or if it 
 #define JOYSTICK_GET_X_RIGHT_THREHOLD 0x0D // (r)   2 bytes, get the analog quantity. Range:0-1024
 #define JOYSTICK_GET_Y_UP_THREHOLD    0x0E // (r)   2 bytes, get the analog quantity. Range:0-1024
 #define JOYSTICK_GET_Y_DOWN_THREHOLD  0x0F // (r)   2 bytes, get the analog quantity. Range:0-1024
-
 
 uint8_t flag = 0;
 
@@ -292,7 +289,6 @@ void write_to_ttiny441(uint8_t reg, uint8_t *data, uint8_t length)
 ```
 
 If you experience any error in compiling the example sketch, check the updated code for the RAK14013 WisBlock Joystick Module that can be found on the [RAK14013 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock).
-
 
 3. Select the right serial port and upload the code, as shown in **Figure 9** and **Figure 10**.
 

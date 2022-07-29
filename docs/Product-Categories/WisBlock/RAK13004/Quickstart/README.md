@@ -11,11 +11,7 @@ next: ../Datasheet/
 
 # RAK13004 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock RAK13004 board and how to use it.
--->
 
 ## Prerequisite
 
@@ -53,8 +49,6 @@ The RAK13004 is a PWM expansion module that can be mounted to the IO slot of Wis
 | **Row 3**  | CH4      | CH5      | CH10     | CH11     |
 | **Row 4**  | CH6      | CH7      | CH8      | CH9      |
 | **Row 5**  | GND      | VCC      | GND      | VCC      |
-
-
 
 For more information about RAK13004, refer to the [Datasheet](../Datasheet/).
 
@@ -114,7 +108,6 @@ If you will connect other modules to the remaining WisBlock Base slots, check on
 ### Software Configuration and Example
 
 In the following example, you will be using the [RAK13004 WisBlock PWM Expansion Module](https://store.rakwireless.com/products/pwm-expansion-module-rak13004?_pos=1&_sid=0e99f2d3e&_ss=r) to set up fading in and out LEDs.
-
 
 These are the quick links that go directly to the software guide for the specific WisBlock Core module you use:
 
@@ -225,7 +218,6 @@ If you experience any error in compiling the example sketch, check the updated c
   width="100%"
   caption="Installing the Library"
 />
-
 
 4. Select the correct port and upload your code, as shown in **Figure 9** and **Figure 10**.
 
@@ -350,7 +342,6 @@ If you experience any error in compiling the example sketch, check the updated c
   caption="Installing the Library"
 />
 
-
 4. Select the correct port and upload your code, as shown in **Figure 14** and **Figure 15**.
 
 <rk-img
@@ -467,7 +458,6 @@ If you experience any error in compiling the example sketch, check the updated c
   width="100%"
   caption="Installing the Library"
 />
-
 
 4. Select the correct port and upload your code, as shown in **Figure 18** and **Figure 19**.
 

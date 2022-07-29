@@ -10,13 +10,7 @@ prev: ../Quickstart/
 
 # RAK4600 Breakout Board Datasheet
 
-<!---
-<rk-img
-  src="/assets/images/wisduo/rak4600-breakout-board/datasheet/overview/xfnxl2vaseqi9anuveom.jpg"
-  width="60%"
-  caption="RAK4600 Breakout Board"
-/>
---->
+
 
 ## Overview
 

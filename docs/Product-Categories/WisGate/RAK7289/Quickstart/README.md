@@ -171,7 +171,6 @@ Should you fail to adhere to the recommendations in this document RAKwireless ca
 
 ### Power on the Gateway
 
-
 In this section, it is assumed that you have read and performed the procedures listed in the **Installation** part of this document. 
 
 1. Attach all antennas to the Gateway (one LoRa antenna for 8-channel gateways, two LoRa antennas for 16-channel gateways).
@@ -282,7 +281,6 @@ In this example, you can access the gateway on the `169.254.15.1` address.
   width="100%"
   caption="Wi-Fi settings"
 />
-
 
 2. From the drop-down **Mode** menu choose **Client** (or **Access Point + Client** if you want to see the gateway's AP). 
 3. You can either click the **Scan** button to choose your **ESSID** or manually type the ESSID of the network in the provided field.

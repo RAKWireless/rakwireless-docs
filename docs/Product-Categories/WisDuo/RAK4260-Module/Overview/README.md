@@ -18,11 +18,7 @@ Thank you for choosing **RAK4260 WisDuo LPWAN Module** in your awesome IoT Proje
 * [Microchip LoRaWAN Stack (MLS) Demo](https://github.com/RAKWireless/RAK4260-LoRaNode-demo)
 * [RAK4260 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/PWB-RAK4260.stp)
 
-<!-- <rk-img
-  src="/assets/images/wisduo/rak4260-module/overview/rak4260.png"
-  width="50%"
-  caption="RAK4260 WisDuo LPWAN Module"
-/> -->
+
 
 ## Product Description
 
@@ -34,12 +30,7 @@ It is a perfect solution for any LoRaWAN end node developer. The integration of 
 
 RAK4260 is a solution that is cost efficient and flexible that can be deployed in a wide variety of IoT scenarios that require the long range connectivity and great battery life that LoRaWAN provides.
 
-<!-- <rk-btn
-  src="../Datasheet/"
-  label="View Datasheet for the RAK4260 WisDuo LPWAN Module"
-/>
 
-<rk-quick-links :params="$page.frontmatter.params.qlinks1"/> -->
 
 ## Product Features
 
@@ -54,8 +45,4 @@ RAK4260 is a solution that is cost efficient and flexible that can be deployed i
 - Low RX current of 17&nbsp;mA (typical)
 - LoRa Technology, (G)FSK, (G)MSK
 
-<!-- <rk-btn
-  src="https://store.rakwireless.com/products/rak4260-lora-module"
-  label="Buy a RAK4260 WisDuo LPWAN Module"
-  _blank
-/> -->
+

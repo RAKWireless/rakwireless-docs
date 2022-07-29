@@ -18,10 +18,9 @@ Thank you for choosing **RAK3172-SiP WisDuo LPWAN SiP** in your awesome IoT Proj
 
 ## Product Description
 
-RAK3172-SiP is a low-power long-range transceiver based on STM32WLE5JC SoC in a System-in-Package form factor. It provides an easy-to-use, small-size, low-power solution for long-range wireless data applications. This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point-to-Point (P2P) communication mode which helps you in implementing your own customized long-range LoRa network quickly.
+RAK3172-SiP is a low-power long-range transceiver based on STM32WLE5JC SoC in a System-in-Package form factor. It provides an easy-to-use, small-size, low-power solution for long-range wireless data applications. This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports, LoRa Point-to-Point (P2P) communication mode, which helps you in implementing your own customized long-range LoRa network quickly.
 
 You can configure the mode and operation of the RAK3172-SiP using AT commands via a UART interface or create custom firmware using RUI3 API. RAK3172-SiP is very small in size and offers low-power features that are very suitable for battery-powered applications.
-
 
 ## Product Features
 

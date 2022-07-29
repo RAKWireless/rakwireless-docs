@@ -11,13 +11,7 @@ next: false
 
 # RAK1920 WisBlock Sensor Adapter Module Datasheet
 
-<!--
-<rk-img
-  src="/assets/images/wisblock/rak1920/datasheet/htkmdakt0tdhi3ixvzpj.jpg"
-  width="35%"
-  caption="RAK1920 WisBlock Sensor Adapter Module"
-/>
--->
+
 
 ## Overview
 
@@ -118,7 +112,6 @@ By default, the I2C is enabled in the RAK1920 module, but if it is required, the
   width="35%"
   caption="Grove Sensor cables"
 />
-
 
 Table below shows Grove cable color and function definition.
 

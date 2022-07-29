@@ -11,7 +11,6 @@ tags:
 
 # Angle Mounting Plate
 
-
 Thank you for choosing **Angle Mounting Plate** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)

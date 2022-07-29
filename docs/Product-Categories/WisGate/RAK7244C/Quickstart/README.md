@@ -13,11 +13,7 @@ tags:
 
 ## Prerequisites
 
-<!-- <rk-img
-  src="/assets/images/wisgate/rak7244c/quickstart/quick-start-guide/fendmvbfrguhtcxjnewh.jpg"
-  width="90%"
-  caption="RAK7244C Product Overview"
-/> -->
+
 
 ### What Do You Need?
 
@@ -447,7 +443,6 @@ If you want to use TTN for LoRa Network server, you can skip the **If the Server
   caption="Configure ChirpStack channel plan"
 />
 
-
 First, select **1 ChirpStack Channel-plan configuration** for configuring your frequency channel.
 
 <rk-img
@@ -510,7 +505,6 @@ Two configuration options are available for your LTE.
 />
 
 3. Next, you need to configure the LTE network operator’s information. Make sure to disable the automatic connection on the start-up feature before starting.
-
 
 4. Execute the command below in the console to start the minicom tool:
    

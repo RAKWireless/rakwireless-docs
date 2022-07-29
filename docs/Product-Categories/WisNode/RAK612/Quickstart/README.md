@@ -13,13 +13,7 @@ tags:
 
 ## Prerequisites
 
-<!---
-<rk-img
-  src="/assets/images/wisnode/rak612/quickstart/quick-start-guide/rak612-overview.jpg"
-  width="50%"
-  caption="RAK612 WisNode Button"
-/>
--->
+
 
 ### What do you need?
 

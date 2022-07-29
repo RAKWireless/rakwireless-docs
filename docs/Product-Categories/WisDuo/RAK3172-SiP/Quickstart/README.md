@@ -510,7 +510,6 @@ If haven't received an `OK` or any reply, you need to check if the wiring of you
   caption="at+version command response"
 />
 
-
 2. The next step is to configure the OTAA LoRaWAN parameters in RAK3172-SiP: 
 
 - LoRa work mode: **LoRaWAN**
@@ -572,13 +571,11 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
   caption="Configuring LoRa parameters"
 />
 
-
 3. After the configuration of the LoRaWAN parameters, the next step is to set up the EUIs and key. You need the use the values from the TTN console.
 
 - Device EUI: **1133557799224466**
 - Application EUI: **1000000000000009**
 - Application Key: **04FA4E626EF5CF227C969601176275C2**
-
 
 Set the Device EUI.
 
@@ -746,7 +743,6 @@ If haven't received an `OK` or any reply, you need to check if the wiring of you
   caption="at+version command response"
 />
 
-
 3. The next step is to configure the ABP LoRaWAN parameters in RAK3172-SiP: 
 
 - LoRa work mode: **LoRaWAN**
@@ -851,7 +847,6 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
 | z         | Number of join attempts (0-255) - 0 is default.              |
-
 
 6. With the end-device properly activated, you can now try to send some payload after a successful join.
 
@@ -980,7 +975,6 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   caption="Chirpstack adding node into the RAK3172-SiP module"
 />
 
-
 7. Once the node is created, fill in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
 
 Fill in the parameters requested:
@@ -1080,7 +1074,6 @@ If haven't received an `OK` or any reply, you need to check if the wiring of you
   caption="at+version command response"
 />
 
-
 2. The next step is to configure the OTAA LoRaWAN parameters in RAK3172-SiP: 
 
 - LoRa work mode: **LoRaWAN**
@@ -1142,7 +1135,6 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
   caption="Configuring LoRa parameters"
 />
 
-
 3. After the configuration of the LoRaWAN parameters, the next step is to set up the DevEUI and AppKey. You need the use the values from the Chirpstack device console. 
 
 :::tip 📝 NOTE:
@@ -1152,7 +1144,6 @@ The Application EUI parameter is not required in the ChirpStack platform; theref
 - Device EUI: **5E9D1E0857CF25F1**
 - Application EUI: **5E9D1E0857CF25F1**
 - Application Key: **F921D50CD7D02EE3C5E6142154F274B2**
-
 
 Set the Device EUI.
 
@@ -1289,7 +1280,6 @@ If haven't received an `OK` or any reply, you need to check if the wiring of you
   caption="at+version command response"
 />
 
-
 2. The next step is to configure the ABP LoRaWAN parameters in RAK3172-SiP: 
 
 - LoRa work mode: **LoRaWAN**
@@ -1358,7 +1348,6 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 - Application Session Key: **4D42EC5CAF97F03D833CDAf5003F69E1**
 - Network Session Key: **C280CB8D1DF688BC18601A97025C5488**
 
-
 Set the Device Address.
 
 ```
@@ -1426,7 +1415,6 @@ It is recommended to start by testing the serial communication and verify the cu
   caption="AT Command Test"
 />
 
-
 1. To set up the RAK3172-SiP to work in LoRa P2P mode, you need to input the work mode command on both RAK3172-SiP.
 
 ```
@@ -1459,7 +1447,6 @@ Refer to the [P2P Mode](/Product-Categories/WisDuo/RAK3172-SiP/AT-Command-Manual
   width="60%"
   caption="Configuring P2P in both RAK3172-SiP module"
 />
-
 
 3. To set one module as a receiver (RX), you need to set the value of the P2P receive command to 65535.
 
@@ -1606,7 +1593,6 @@ Do **NOT** install the Arduino IDE from the Microsoft App store. Install the ori
   caption="Ongoing installation"
 />
 
-
 After 100% progress, the Arduino IDE has been installed successfully.
 
 <rk-img
@@ -1628,7 +1614,6 @@ After downloading the correct Arduino version, open a terminal, then run `ls` to
   width="90%"
   caption="Check the download folder"
 />
-
 
 A tarball is a type of compressed folder, like a `.zip` file, commonly used to distribute software in Linux. To extract the files from the tarball, change the directory to where the downloaded tarball is, then run:
 
@@ -1693,7 +1678,6 @@ The operating buttons have five operations:
   width="30%"
   caption="Operating buttons"
 />
-
 
 3. **Code Area**
 

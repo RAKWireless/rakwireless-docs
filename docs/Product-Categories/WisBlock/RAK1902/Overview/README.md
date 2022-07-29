@@ -1,6 +1,6 @@
 ---
-rak_img: /assets/images/wisblock/rak1902/overview/RAK1902_home.png
 rak_desc: RAK1902 is a WisBlock Sensor which extends the WisBlock system with a ST KPS22HB barometric pressure sensor. A ready to use SW library and tutorial makes it easy to build up a barometric air pressure data acquisition system.
+rak_img: /assets/images/wisblock/rak1902/overview/RAK1902_home.png
 rak_grp: [wisblock, wissensor]
 next: ../Quickstart/
 prev: ../../
@@ -14,12 +14,12 @@ tags:
 
 # RAK1902 WisBlock Barometer Pressure Sensor Module
 
-Thank you for choosing **RAK1902 WisBlock Barometer Pressure Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK1902 WisBlock Barometer Pressure Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK1902 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
+
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK1902 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK1902.stp)
 * [24-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)

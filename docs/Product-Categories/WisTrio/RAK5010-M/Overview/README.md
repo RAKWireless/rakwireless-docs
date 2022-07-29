@@ -16,11 +16,7 @@ Thank you for choosing **RAK5010-M WisTrio NB-IoT Tracker** in your awesome IoT 
 * [Datasheet](../Datasheet/)
 * [AT Command Manual](../AT-Command-Manual/)
 
-<!-- <rk-img
-  src="/assets/images/wistrio/rak5010-m/overview/rak5010-m-wistrio.jpg"
-  width="50%"
-  caption="RAK5010 WisTrio NB-IoT Tracker Product View"
-/> -->
+
 
 
 ## Product Description
@@ -34,10 +30,7 @@ The board is equipped with two sensors on board: humidity and temperature sensor
 This board is particularly suitable to be used as a quick testing and prototyping tool for applications requiring Nb-IoT connectivity. Application development supports the GCC environment.
 
 
-<!-- <rk-btn
-  src="/Product-Categories/WisTrio/RAK5010-M/Quickstart/"
-  label="Get Started with RAK5010-M WisTrio NB-IoT Tracker"
-/> -->
+
 
 ## Product Features
 

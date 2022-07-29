@@ -352,7 +352,6 @@ AT+ADDPOLL=<n>:<xxxx>
 | n | polling instruction ID | 1 to 127 | 
 | xxxx | polling instruction content; hexadecimal string | 128 bytes max | 
 
-
 According to the temperature and humidity register address of the temperature and humidity sensor in the example and the RS485 address, the polling instruction should be:
 
 ```sh
@@ -386,7 +385,6 @@ AT+ADDPOLL=3:080300000002C492
 ```sh
 AT+ADDPOLL=4:0F0300000002C525
 ```
-
 
 The RAK7431 sends an instruction to the sensor every 1 minute to obtain temperature and humidity data, and the following is the result of 3 consecutive scheduled polls:
 
@@ -1262,8 +1260,9 @@ Application/1/device/60c5a8fffe75404b/tx
 
 ### Connecting to the Helium Network
 
-Helium has quickly become the most widespread LPWAN communal network with more than 27,000 devices deployed globally. All the RAKwireless node products are compatible with it and the process of adding a device to the network is intuitive and straightforward. This section will focus on giving a brief guide on how to connect the RAK7431 to the network console, assuming that there is a Helium Hotspot within range.
+Helium has quickly become the most widespread LPWAN communal network with more than 27,000 devices deployed globally. All the RAKwireless node products are compatible with it and the process of adding a device to the network is intuitive and straightforward. 
 
+This section will focus on giving a brief guide on how to connect the RAK7431 to the network console, assuming that there is a Helium Hotspot within range.
 
 Log in or create your account in the [Helium console page](https://www.helium.com/console).
 
@@ -1280,16 +1279,16 @@ Once registered/logged in, you will end up at the home page where you can see yo
 <rk-img
   src="/assets/images/wisnode/rak7431/quickstart/connecting-to-helium-network/2.home.png"
   width="100%"
-  caption="Helium Console Home Screen"
+  caption="Helium console home screen"
 />
 
-Go to the **Devices** section in the function tree. If this is your first time doing this, there will be no devices registered. Click the "**+ Add Device**" button to get started.
+Go to the **Devices** section in the function tree. If this is your first time doing this, there will be no devices registered. Click the **+ Add Device** button to get started.
 
 
 <rk-img
   src="/assets/images/wisnode/rak7431/quickstart/connecting-to-helium-network/3.device-section.png"
   width="100%"
-  caption="Devices Section"
+  caption="Devices section"
 />
 
 A window will pop up with a set of a field containing the device parameters required for its registration.
@@ -1297,18 +1296,18 @@ A window will pop up with a set of a field containing the device parameters requ
 <rk-img
   src="/assets/images/wisnode/rak7431/quickstart/connecting-to-helium-network/4.add-device.png"
   width="60%"
-  caption="Adding a New Device"
+  caption="Adding a new device"
 />
 
-Fill in a name of your choosing. The Dev EUI, App EUI, and App Key will have random values generated for you by default. Press the eye icon to reveal the values. You can manually replace them with values of your own. For this tutorial, use the default values. Press the "Submit" button and you are done.
+Fill in a name of your choosing. The **Dev EUI**, **App EUI**, and **App Key** will have random values generated for you by default. Press the eye icon to reveal the values. You can manually replace them with values of your own. For this tutorial, use the default values. Press the **Submit** button, and you are done.
 
 <rk-img
   src="/assets/images/wisnode/rak7431/quickstart/connecting-to-helium-network/5.registered-device.png"
   width="100%"
-  caption="Helium Devices"
+  caption="Helium devices"
 />
 
-Now, your RAK7431 is registered and is awaiting activation. For this to happen, you need to import the Dev EUI, App EUI, and App Key in the RAK7431 using the RAK Serial Port Tool.
+Now, your RAK7431 is registered and is awaiting activation. For this to happen, you need to import the Dev EUI, App EUI, and App Key in the RAK7431 using the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
 
 Open the tool, select the desired port (default baud rate) and open it. Then start importing your settings.
 
@@ -1484,7 +1483,6 @@ AT+APPEUI
 ::: tip 📝 NOTE
 If you are going to register more than one device of this type, you can choose the option **Register another end device of this type** and be transferred to the same page to register the next device. 
 :::
-
 
 6. After filling in the registration information, click **Register end device**.
 

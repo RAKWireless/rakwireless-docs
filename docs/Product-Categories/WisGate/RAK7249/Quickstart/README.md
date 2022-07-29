@@ -13,18 +13,14 @@ tags:
 
 ## Prerequisites
 
-<!-- <rk-img
-  src="/assets/images/wisgate/rak7249/quickstart/2.quickstart/antennas_installed.png"
-  width="40%"
-  caption="RAK7249 WisGate Edge Max with the antennas installed"
-/> -->
+
 
 ### What Do You Need?
 
 1. **RAK7249 WisGate Edge Max**
 2. A Windows/Mac OS/Linux Computer
 
-<!-- <rk-btn :params="$page.frontmatter.params.btn1" /> -->
+
 
 :::warning ⚠️ WARNING
 The SIM card slot of the cellular versions is not hot-swappable. Make sure the gateway is switched off before inserting or ejecting the SIM card.

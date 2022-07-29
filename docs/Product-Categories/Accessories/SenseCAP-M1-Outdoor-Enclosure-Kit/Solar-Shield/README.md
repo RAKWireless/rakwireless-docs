@@ -33,7 +33,6 @@ RAK Solar Shield is here to protect your outdoor placed gateways or Hotspots fro
   caption="Unscrewing the Fastening Screws"
 />
 
-
 2. Install the screws on the left and right holders, each holder has two screws. It is important to reserve a gap of 3-4&nbsp;mm between the screw and the holder, so do not tighten them at this point.
 
 <rk-img
@@ -41,7 +40,6 @@ RAK Solar Shield is here to protect your outdoor placed gateways or Hotspots fro
   width="50%"
   caption="Installing the Screws to the Holders"
 />
-
 
 3. Attach the holders to the mounting bracket and fix them with the screws that were removed in step 1. Do it on both sides.
 
@@ -52,7 +50,6 @@ RAK Solar Shield is here to protect your outdoor placed gateways or Hotspots fro
   caption="Attaching the Holders"
 />
 
-
 4. Attach the shield, sliding it in the gap that was left on the screws of the holders, then tighten the screws.
 
 
@@ -61,7 +58,6 @@ RAK Solar Shield is here to protect your outdoor placed gateways or Hotspots fro
   width="45%"
   caption="Attaching the Shield"
 />
-
 
 The installation of the Solar Shield is now complete.
 

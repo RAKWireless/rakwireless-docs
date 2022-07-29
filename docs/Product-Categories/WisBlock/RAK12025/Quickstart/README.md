@@ -118,7 +118,7 @@ The RAK12025 is a gyroscope sensor board that contains an I3G4250D chip. The I3G
 
 #### Initial Test of the RAK12025 WisBlock Module
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 
@@ -168,7 +168,6 @@ If you experience any error in compiling the example sketch, check the updated c
   width="100%"
   caption="Successful installing the library for RAK12025 Gyroscope Sensor Module"
 />
-
 
 5. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 12** and **Figure 13**.
 

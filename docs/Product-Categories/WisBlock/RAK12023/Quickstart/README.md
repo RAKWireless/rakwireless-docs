@@ -131,7 +131,7 @@ Before you use the Soil Moisture sensor, you need to calibrate it. The following
 The calibration method in air and water is not very precise. To get more precise calibration values, the calibration should be performed in dry soil and water-saturated soil. Some information about such a calibration procedure is shown in [Capacitive Soil Moisture Sensor Calibration with Arduino](https://makersportal.com/blog/2020/5/26/capacitive-soil-moisture-calibration-with-arduino). Another source for such a calibration in the soil can be found in [Calibrating Soil Moisture Sensors](https://www.ictinternational.com/casestudies/calibrating-soil-moisture-sensors/).
 :::
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have.
 
@@ -356,7 +356,6 @@ Other sample code in the WisBlock Github Repository:
   width="70%"
   caption="Installing the compatible library for RAK12023 Module"
 />
-
 
 5. After the successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 12** and **Figure 13**.
 

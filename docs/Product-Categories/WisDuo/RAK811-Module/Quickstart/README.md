@@ -41,7 +41,7 @@ Before going through the step in the installation guide of the RAK811 WisDuo LPW
 1. [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
 2. [RAK811 Firmware](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#firmware-os)
 3. [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
-<!-- 4. [J-Link Tool](https://downloads.rakwireless.com/en/Cellular/Tools/) -->
+
 
 
 #### List of Acronyms
@@ -282,7 +282,6 @@ at+version
   caption="AT Command response"
 />
 
-
 As an example, these are the list of the parameters you need to configure in RAK811: 
 
 - LoRa join mode: **OTAA**
@@ -291,7 +290,6 @@ As an example, these are the list of the parameters you need to configure in RAK
 - Device EUI: **1133557799224466**
 - Application EUI: **1000000000000009**
 - Application Key: **04FA4E626EF5CF227C969601176275C2**
-
 
 1. Set the LoRa join mode to OTAA.
 
@@ -472,8 +470,6 @@ As an example, these are the list of the parameters you need to configure in RAK
 - Network Session Key: **433C7A924F7F6947778FE821525F183A**
 - Application Session Key: **A585653A949C2B2D44B55E99E94CB533**
 
-
-
 1. Set the LoRa join mode to ABP.
 
 ```
@@ -522,7 +518,6 @@ at+set_config=lora:apps_key:A585653A949C2B2D44B55E99E94CB533
 After configuring all the parameters, you need to reset the RAK811 Module to save the parameters.
 
 :::
-
 
 7. After resetting, join in ABP mode.
 
@@ -658,7 +653,6 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   caption="Chirpstack Adding Node into the RAK811 Module"
 />
 
-
 6. Once the node is created, fill in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
 
 Fill in the parameters requested:
@@ -686,7 +680,6 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
 ##### OTAA Mode
 
 ###### Configure the OTAA Mode on the Platform
-
 
 1. If you have selected “**DeviceProfile_OTAA**” as shown in Figure 43, then after the device is created, an Application Key must be also created for this device. 
 
@@ -750,8 +743,6 @@ at+version
   caption="at+version command response"
 />
 
-
-
 As an example, these are the list of the parameters you need to configure in RAK811: 
 
 - LoRa join mode: **OTAA**
@@ -760,8 +751,6 @@ As an example, these are the list of the parameters you need to configure in RAK
 - Device EUI: **5e9d1e0857cf25f1**
 - Application EUI: **5e9d1e0857cf25f1**
 - Application Key: **f921d50cd7d02ee3c5e6142154f274b2**
-
-
 
 1. Set the LoRa join mode to OTAA.
 
@@ -883,7 +872,6 @@ Check “**Disable counting frame verification**”. During the test, when the m
   caption="ChirpStack Console, Configuring a Device"
 />
 
-
 After selecting the ABP mode, the following parameters appear in the Activation tab: 
 
 2. Then, you can see that there are some parameters for ABP in the **“ACTIVATION”** item:
@@ -927,7 +915,6 @@ As an example, these are the list of the parameters you need to configure in RAK
 - Device address: **26011af9**
 - Network Session Key: **c280cb8d1df688bc18601a97025c5488**
 - Application Session Key: **4d42ec5caf97f03d833cdaf5003f69e1**
-
 
 1. Set LoRa join mode to ABP.
 
@@ -992,7 +979,6 @@ By using the ABP mode in the LoRaWAN protocol, it doesn’t require to join a ne
 
 :::
 
-
 8. Try to send data from RAK811 Module to ChirpStack.
 
 ```
@@ -1025,14 +1011,12 @@ at+set_config=lora:work_mode:1
   caption="P2P Initialization"
 />
 
-
 4. Then, configure LoRa P2P parameters for both of them.
 
 
 ```
 at+set_config=lorap2p:XXX:Y:Z:A:B:C
 ```
-
 
 For this example, the LoRa parameters are the following:
 
@@ -1061,7 +1045,6 @@ at+set_config=lorap2p:869525000:7:0:1:5:5
   caption="Configuring P2P in both RAK811 Module"
 />
 
-
 5. Set the transmission mode of the module. Unit 1 is configured as the sender, and Unit 2 is set to the receiver by AT command.
 
 ```
@@ -1075,7 +1058,6 @@ at+set_config=lorap2p:transfer_mode:1
   width="90%"
   caption="Setting Modes in both RAK811 Module"
 />
-
 
 6. Try sending a message from Unit 1 to Unit 2. 
 
@@ -1125,7 +1107,6 @@ Refer to the table for the minimum hardware and software required to perform the
 ##### Firmware Upgrade Procedure
 
 Execute the following procedure to upgrade the firmware in Device Firmware Upgrade (DFU) mode through the UART1 interface:
-
 
 1.  Download the latest application firmware of the RAK811 that can be found on the [RAK811 Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#firmware-os).
 

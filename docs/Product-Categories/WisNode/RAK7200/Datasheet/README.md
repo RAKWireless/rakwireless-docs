@@ -11,13 +11,7 @@ tags:
 
 # RAK7200 WisNode Track Lite Datasheet
 
-<!---
-<rk-img
-  src="/assets/images/wisnode/rak7200/datasheet/overview.jpg"
-  width="30%"
-  caption="RAK7200 WisNode Track Lite Overview"
-/>
--->
+
 
 ## Overview
 

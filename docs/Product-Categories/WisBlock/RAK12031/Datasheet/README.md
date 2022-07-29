@@ -45,7 +45,7 @@ The RAK12031 has four (4) mounting holes, so you can fix the module in the posit
 
 ### Hardware
 
-The hardware specification is categorized into four (4) parts. It discusses the pinouts and their corresponding functions and diagrams of the module. Also, it shows the electrical and mechanical characteristics of the RAK12031 WisBlock T-Beam-Fork Sensor Module.
+The hardware specification is categorized into five (5) parts. It shows the chipset of the module and discusses the pinouts and their corresponding functions and diagrams. Also, it shows the electrical and mechanical characteristics of the RAK12031 WisBlock T-Beam-Fork Sensor Module.
 
 ####  Chipset
 

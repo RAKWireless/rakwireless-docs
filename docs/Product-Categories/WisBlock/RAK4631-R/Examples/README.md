@@ -326,7 +326,6 @@ By default, the BLE signal of the RAK4631-R  is turned off automatically if no c
   caption="Temperature Measurement Value"
 />
 
-
 8.  You can see the **Serial Monitor** icon and click it to connect the COM port.
 9.  If the connection is successful and you will see the **TEMPERATURE MEASUREMENT 'Notify' Enabled** and notify value are updating data every 2 seconds.
 
@@ -353,7 +352,7 @@ void setup()
 
 3. Click the **Verify** icon to verify the sample code after the process is completed.
    
-<!-- `C:\Users\Ray05\AppData\Local\Temp\arduino_build_829928\RAK4631.ino.zip.` -->
+
 
 <rk-img
   src="/assets/images/wisblock/rak4631-r/quickstart/dfu-ble/Picture45.jpg"
@@ -389,13 +388,6 @@ The `/var` is under the `private` hidden folder. To access it, you have to open 
 
 1. Download and install [nRF Toolbox](https://apps.apple.com/tw/app/nrf-toolbox/id820906058) for BLE developed by Nordic Semiconductor. The App is available in App Store.
 2. Download the DFU package of the RAK4631-R and save it on your mobile phone.
-
-<!--   
-```
-DFU Package (RAK4631.ino.zip.)
-C:\Users\Ray05\AppData\Local\Temp\arduino_build_829928\RAK4631.ino.zip.
-```
--->
 
 3.  Make sure the Bluetooth on your mobile is turned on. 
 4.  Open the **nRF Toolbox** Mobile application, and you will see **Device Firmware Upgrade(DFU) in** the support list.

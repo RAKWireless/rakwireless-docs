@@ -63,16 +63,3 @@ The hardware specification shows the dimensions and schematic diagram of the RAK
   width="80%"
   caption="RAK14011 Schematic Diagram"
 />
-
-<!-- 
-##### Matrixes Buttons Module Connector
-
-**J2** Matrixes Buttons connector is used to connect RAK14004 to matrixes buttons modules such as RAK14009, RAK14010, RAK14011.
-
-<rk-img
-  src="/assets/images/wisblock/rak14004/datasheet/image-20210728143632190.png"
-  width="70%"
-  caption="Matrix Buttons Connector"
-/>
-
--->

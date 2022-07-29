@@ -11,14 +11,7 @@ next: ../Datasheet/
 
 # RAK1904 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock Sensor RAK1904 3-axis Acceleration Sensor and how to program with it.
-
-The information obtained from the 3-axis Acceleration Sensor will then be printed over the USB debug port of the WisBlock Base board.
-
--->
 
 ## Prerequisite
 
@@ -123,7 +116,7 @@ The RAK1904 is an acceleration sensor board that contains a LIS3DH chip. The LIS
 
 #### Initial Test of the RAK1904 WisBlock Module
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select the WisBlock Core you have.
 

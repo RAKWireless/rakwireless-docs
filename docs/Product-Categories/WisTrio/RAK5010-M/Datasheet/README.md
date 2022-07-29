@@ -11,13 +11,7 @@ rak_img: /assets/images/wistrio/rak5010-m/overview/RAK5010-M_home.png
 
 # RAK5010-M WisTrio NB-IoT Tracker Datasheet
 
-<!---
-<rk-img
-  src="/assets/images/wistrio/rak5010-m/datasheet/rak5010-wis-trio-nb-iot-tracker.jpg"
-  width="40%"
-  caption="RAK5010-M WisTrio NB-IoT Tracker"
-/>
--->
+
 
 ## Overview
 
@@ -543,7 +537,6 @@ A suitable Li-Ion battery would have the following parameters:
 | Charging Voltage  | 4.2&nbsp;V  |
 |     Capacity      | As required |
 | Discharge Current |  2&nbsp;A   |
-
 
 A 5&nbsp;V solar panel can be connected to the board via the P1 connector to serve for the purpose of charging the battery. 
 

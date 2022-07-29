@@ -13,11 +13,7 @@ tags:
 
 ## Prerequisites
 
-<!-- <rk-img
-  src="/assets/images/wisgate/rak7246g/quickstart/rak7246_overview.jpg"
-  width="50%"
-  caption="RAK7246G Product Overview"
-/> -->
+
 
 
 ### What Do You Need?
@@ -115,7 +111,6 @@ sudo -i
   width="100%"
   caption="SSH in Mac OS"
 />
-
 
 If you are not in root mode, enter `ssh pi@192.168.230.1` in the terminal to log in to your gateway, the default password is **raspberry**.
 

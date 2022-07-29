@@ -14,13 +14,7 @@ certifications:
 
 # RAK7431 WisNode Bridge Serial Datasheet
 
-<!---
-<rk-img
-  src="/assets/images/wisnode/rak7431/datasheet/RAK7431.png"
-  width="25%"
-  caption="RAK7431 WisNode Bridge Serial"
-/>
--->
+
 
 ## Overview
 

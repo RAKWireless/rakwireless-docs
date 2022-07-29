@@ -8,11 +8,7 @@ prev: ../Overview/
 next: ../Datasheet/ 
 ---
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock RAK13001 board and how to use it.
--->
 # RAK13001 Quick Start Guide
 
 ## Prerequisite

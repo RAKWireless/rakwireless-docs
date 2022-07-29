@@ -56,7 +56,6 @@ Some Android smartphones require GPS enabled to permit connection to BLE. When G
   caption="WisToolBox Mobile BLE scan"
 />
 
-
 4. When the Data synchronization is completed, you will see the **DEVICE INFO** screen.
 
 
@@ -65,7 +64,6 @@ Some Android smartphones require GPS enabled to permit connection to BLE. When G
   width="100%"
   caption="WisToolBox Mobile BLE is connected"
 />
-
 
 6. In case of an error, it will show **No devices found**, as seen in **Figure 4**. Then you need to redo the steps again from step 1.
 
@@ -77,7 +75,6 @@ Some Android smartphones require GPS enabled to permit connection to BLE. When G
 
 
 ## Create RAK ID Profile
-
 
 It is recommended to create a **RAK ID** profile. Your **RAK ID** profile will be stored in the cloud and can be synced on different PCs. You can only edit your details and preferences at the **RAK ID Portal**.
 
@@ -167,7 +164,6 @@ You can save the LoRa parameters used in your application in a template. It is a
   width="70%"
   caption="WisToolBox Mobile Templates"
 />
-
 
 2. Type a Template name on the text area, then click on **NEXT** button.
 

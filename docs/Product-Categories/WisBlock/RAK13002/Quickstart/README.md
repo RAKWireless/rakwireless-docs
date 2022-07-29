@@ -11,12 +11,7 @@ next: ../Datasheet/
 
 # RAK13002 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the RAK13002 Wisblock IO Module and how to use it.
-
--->
 
 ## Prerequisite
 
@@ -55,7 +50,6 @@ The RAK13002 WisBlock IO Module can be mounted on the IO slot of the WisBlock Ba
 #### Assembling and Disassembling of WisBlock Modules
 
 ##### Assembling
-
 
 As shown in **Figure 2**, the location for the IO slot is properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
@@ -162,7 +156,6 @@ This is just an example and illustration on how to use the RAK13002 for external
   width="70%"
   caption="Installing the LiquidCrystal I2C library"
 />
-
 
 3. After successful installation of the library, you can now copy the following sample code into your Arduino IDE:
 
@@ -303,7 +296,6 @@ This is just an example and illustration on how to use the GPIO pins of RAK13002
   caption="Connecting Button as your GPIO component"
 />
 
-
 1. You need to select first the WisBlock Core you have, as shown in **Figure 16** to **Figure 18**.
 
 <rk-img
@@ -324,7 +316,6 @@ This is just an example and illustration on how to use the GPIO pins of RAK13002
   caption="Selecting RAK11300 as WisBlock Core"
 />
 
-
 2. Copy the following sample code into your Arduino IDE:
 
 ```c
@@ -342,7 +333,6 @@ int lastState = LOW;  // the previous state from the input pin
 int currentState;     // the current reading from the input pin
 unsigned long pressedTime  = 0;
 unsigned long releasedTime = 0;
-
 
 void setup() {
   Serial.begin(9600);
@@ -382,7 +372,6 @@ void loop() {
   width="100%"
   caption="Uploading your code"
 />
-
 
 4. When you successfully uploaded the sample code, open the Serial Monitor of the Arduino IDE to see the button's reading logs. Try pressing the button, and if you see the logs, as shown in **Figure 21**, then your module or sensor is properly communicating to the WisBlock core using the Digital Interface.
 

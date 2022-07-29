@@ -15,11 +15,7 @@ Thank you for choosing **RAK831 WisLink LPWAN Concentrator** in your awesome IoT
 * [Datasheet](../Datasheet/)
 * [Source Code Repository](https://github.com/RAKWireless/rak_common_for_gateway)
 * [RAK831 ready to flash Firmware](https://downloads.rakwireless.com/LoRa/RAK2245-Pi-HAT/Firmware/RAK2245_Latest_Firmware.zip)
-<!-- <rk-img
-  src="/assets/images/wislink-lora/rak831/datasheet/rak831-overview.png"
-  width="50%"
-  caption="RAK831 LPWAN Gateway"
-/> -->
+
 
 ## Product Description
 
@@ -35,10 +31,7 @@ End-point nodes (e.g. sensor nodes) can change the frequency with each transmiss
 
 Applications possible with the RAK831 include Smart Metering, Wireless Star Networks, Home, Building, Industrial automation, Remote Control, Wireless Sensors Network, M2M, IoT and Wireless Alarm and Security Systems.
 
-<!-- <rk-btn
-  src="../Quickstart/"
-  label="Get Started with RAK831 WisLink LPWAN Concentrator"
-/> -->
+
 
 ## Product Features
 

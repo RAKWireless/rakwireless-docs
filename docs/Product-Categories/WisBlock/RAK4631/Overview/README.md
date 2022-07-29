@@ -54,7 +54,7 @@ Both LoRaWan® and LoRa point-to-point connections are supported by an Arduino�
 * Semtech SX1262 low power high range LoRa transceiver     
 * LoRaWan® 1.0.2 protocol stack     
 * Bluetooth 5.0 protocol stack    
-<!-- * 8 Mbit nonvolatile NOR FLASH memory      -->
+
 * I2C, SPI, Analog inputs, Digital inputs, and outputs    
 * Low power consumption
 

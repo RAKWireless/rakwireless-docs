@@ -13,7 +13,6 @@ tags:
 
 ## Overview
 
-
 RAK4270 module comes with a standard version of firmware that allows you to configure its functionality via AT commands. This simplicity helps you develop LoRa(P2P) and LoRaWAN projects quickly. 
 
 Further customization of the firmware can be done through the [RUI (RAKwireless Unified Interface) Online compiler](/RUI/). RAK's LoRa modules support not only out-of-the-box integration via AT commands but also allow you to customize RAK4270 firmware and access other functionalities of the internal MCU using RUI API. More so, you can adapt and extend the logic in the firmware to meet your requirements.

@@ -12,7 +12,6 @@ tags:
 
 ## Status LEDs
 
-
 The RAK Hotspot includes two (2) small LEDs for status: 
 
 <br>

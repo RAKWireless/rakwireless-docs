@@ -17,7 +17,7 @@ Thank you for choosing **RAK19003 WisBlock Mini Base Board** in your awesome IoT
 * [RAK19003 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
+
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK19003 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK19003.stp)
 * [24-Pin Female Connector 3D File (Sensor Slot)](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/F24S1003K6M.stp)

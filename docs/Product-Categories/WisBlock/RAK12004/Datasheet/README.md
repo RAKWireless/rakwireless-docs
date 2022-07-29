@@ -11,13 +11,6 @@ next: false
 
 # RAK12004 WisBlock MQ2 Gas Sensor Module Datasheet
 
-<!-- add front-back image here 
-<rk-img
-  src="/assets/images/wisblock/rak12004/datasheet/rak12004-main.png"
-  width="50%"
-  caption="RAK12004 WisBlock MQ2 Gas Sensor Module"
-/>
--->
 
 ## Overview
 
@@ -52,7 +45,7 @@ The RAK12004 WisBlock MQ2 Gas Sensor Module can be mounted to the IO slot of the
 
 ### Hardware
 
-The hardware specification is categorized into five parts. It shows the chipset of the module and discusses the pinouts and its corresponding functions and diagrams. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK12004 WisBlock MQ2 Gas Sensor Module.
+The hardware specification is categorized into five (5) parts. It shows the chipset of the module and discusses the pinouts and their corresponding functions and diagrams. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK12004 WisBlock MQ2 Gas Sensor Module.
 
 
 ####  Chipset
@@ -63,7 +56,7 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 #### Pin Definition
 
-The RAK12004 WisBlock MQ2 Gas Sensor Module comprises a standard 40-pin WisConnector. The WisConnector allows the RAK12004 module to mounted to a WisBlock Base Board. The pin order of the connector and the pinout definition is shown in Figure 2. 
+The RAK12004 WisBlock MQ2 Gas Sensor Module comprises a standard 40-pin WisConnector. The WisConnector allows the RAK12004 module to mounted to a WisBlock Base Board. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
 
 
 :::tip 📝 NOTE:

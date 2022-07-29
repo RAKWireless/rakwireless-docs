@@ -101,7 +101,7 @@ The RAK12004 has an electronic sensor used for sensing the concentration of gase
 
 #### Initial Test of the RAK12004 WisBlock Module
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have.
 
@@ -180,18 +180,6 @@ If you experience any error in compiling the example sketch, check the updated c
 To extend the use of the RAK-MQx library, check the link [RAK-MQx Library methods](https://github.com/RAKWireless/RAK-MQx-Library#usage)
 
 
-<!-- Add log images 
-
-9. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to check the sensor's reading logs. If you see the logs, as shown in **Figure 14**, then your RAK12004 is properly communicating to the WisBlock core.
-
-<rk-img
-  src="/assets/images/wisblock/rak1903/quickstart/optical_logs.png"
-  width="80%"
-  caption="RAK12004 data logs"
-/>
-
--->
-
 #### Build RAK12004 Example on PlatformIO IDE (optional)
 
 
@@ -199,13 +187,11 @@ To extend the use of the RAK-MQx library, check the link [RAK-MQx Library method
 This procedure was tested only on Windows 10 and Ubuntu.
 :::
 
-
 1. Install the original PlatformIO platform, as shown in [PlatformIO First Install](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md#first-install) section.
 
 - For WisBlock Core RAK4631, install **Nordic nRF52** platform.
 - For WisBlock Core RAK11200, install **Espressif 32** platform.
 - For WisBlock Core RAK11310, install **Raspberry Pi RP2040** platform.
-
 
 2. Open a project example that uses the new installed platform.
 
@@ -234,7 +220,7 @@ This procedure was tested only on Windows 10 and Ubuntu.
 8. Download and install the [RAK Patch script](https://raw.githubusercontent.com/RAKWireless/WisBlock/master/PlatformIO/RAK_PATCH.zip).
 
 9. Unzip the contents of RAK_PATCH.zip into the folder RAK_PATCH in your PlatformIO installation folder.
-  
+
 The table below shows the PlatformIO installation directory for each operating system:
 
   

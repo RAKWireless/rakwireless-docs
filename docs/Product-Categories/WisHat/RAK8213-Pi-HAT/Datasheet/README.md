@@ -12,13 +12,7 @@ rak_img: /assets/images/wishat/rak8213-pi-hat/overview/RAK8213-PiHat_home.png
 
 # RAK8213 Pi HAT Datasheet
 
-<!---
-<rk-img
-  :src="`${$frontmatter.static_root}/rak8213-pi-hat.png`"
-  width="75%"
-  caption="RAK8213 Pi Hat"
-/>
--->
+
 
 ## Overview
 

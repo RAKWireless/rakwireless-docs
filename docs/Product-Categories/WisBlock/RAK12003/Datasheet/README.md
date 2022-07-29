@@ -33,7 +33,7 @@ The RAK12003 WisBlock Infrared Temperature Sensor Module is part of the RAKwirel
   * 50&nbsp;° field of view
   * -20&nbsp;°C to 85&nbsp;°C operational temperature range
   * Refresh rate configurable between 0.5&nbsp;Hz to 64&nbsp;Hz
-  * Power Supply Voltage: 3.3V - 3.6V
+  * Power Supply Voltage: 3.3&nbsp;V - 3.6&nbsp;V
   * Sleep current: < 2.5&nbsp;µA 
   * Chipset: Melexis MLX90632SLD-DCB-000-RE
 
@@ -110,14 +110,6 @@ Only the **I2C** related pins, **VDD**, and **GND** are connected to this module
 | I<sub>DDPR</sub> | Sleep current                 |      | 1.5  | 2.5  | µA   |
 | I<sub>DD</sub>   | Measure current (normal mode) | 0.5  | 1    | 1.4  | mA   |
 
-<!--
-| Symbol           | Description                      | Min.  | Nom.  | Max.  | Unit  |
-| ---------------- | -------------------------------- | :---: | :---: | :---: | :---: |
-| V<sub>DD</sub>   | Power supply for the module      |  1.6  |       |  3.6  |   V   |
-| I<sub>shut</sub> | Shutdown current                 |   -   |  0.4  |   -   |  uA   |
-| I<sub>DD</sub>   | Active V<sub>DD</sub>=3.6&nbsp;V |   -   |  3.7  |   -   |  uA   |
-
--->
 
 #### Mechanical Characteristics
 

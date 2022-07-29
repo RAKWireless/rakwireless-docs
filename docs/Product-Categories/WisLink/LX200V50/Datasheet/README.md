@@ -18,7 +18,6 @@ certifications:
 
 ### Description
 
-
 LX200V50 is a Power Line Communication (PLC) module based on Qualcomm QCA7550 System-on-Chip (SoC). QCA7550 is a MAC/PHY transceiver module that meets the HPAV2 standard. It is designed to bridge multi-stream Ethernet content from a powerline network to an Ethernet 802.3 network. The PLC's specific MAC manages network admission and service flows to maximize the Quality of Service (QoS) over the powerline network. 
 
 ### Features

@@ -18,7 +18,7 @@ Thank you for choosing **RAK19007 WisBlock Base Board 2nd Gen** in your awesome 
 * [RAK19007 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
+
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK19007 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK19007.stp)
 * [24-Pin Female Connector 3D File (Sensor Slot)](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/F24S1003K6M.stp)

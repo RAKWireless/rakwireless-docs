@@ -306,6 +306,4 @@ There are RAK3172 devices loaded with old firmware versions which are not based 
 If the host microcontroller code is based on this old firmware, we have a [RAK3172 AT Command migration guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/AT-Migration-Guide/) that explain in detail the few differences between the two AT commands set.
 :::
 
-<!-- ## Certification
 
-<rk-certifications :params="$page.frontmatter.certifications" /> -->

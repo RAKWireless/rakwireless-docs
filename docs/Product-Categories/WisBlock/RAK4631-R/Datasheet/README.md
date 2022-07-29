@@ -18,13 +18,7 @@ certifications:
 
 # RAK4631-R WisBlock LPWAN Module Datasheet
 
-<!--
-<rk-img
-  src="/assets/images/wisblock/rak4631/datasheet/overview.jpg"
-  width="30%"
-  caption="RAK4631 WisBlock LPWAN Module"
-/>
--->
+
 ## Overview
 
 ### Description
@@ -70,21 +64,7 @@ The overview covers the RAK4631-R board overview and the mounting mechanics of t
   caption="RAK4630 in RAK4631-R WisBlock Core"
 />
 
-<!---
-Add these two images when the illustrations are correct already. 
 
-<rk-img
-  src="/assets/images/wisblock/rak4631/datasheet/topview.png"
-  width="80%"
-  caption="RAK4631 Top View"
-/>
-
-<rk-img
-  src="/assets/images/wisblock/rak4631/datasheet/bottomview.png"
-  width="80%"
-  caption="RAK4631 Bottom View"
-/>
---->
 
 #### Mounting Sketch
 
@@ -100,17 +80,7 @@ The RAK4631-R module is designed to work with Wisblock Base Boards. **Figure 3**
 
 The hardware specification is categorized into three parts. It covers the RF, electrical, and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK4631-R WisBlock LPWAN Module.
 
-<!---
-Add this image when the top and bottom view illustrations are correct already.
 
-#### Interfaces
-
-<rk-img
-  src="/assets/images/wisblock/rak4631/datasheet/rak4631_overview.png"
-  width="80%"
-  caption="RAK4631 Interfaces"
-/>
---->
 
 #### RF Characteristics
 
@@ -204,167 +174,7 @@ Detailed information about the RAK4631-R BLE and LoRa antenna can be found on th
   caption="WisConnector PCB footprint and recommendations"
 />
 
-<!--
 
-#### Schematic Diagram
-
-The following section will describe the breakout module schematic. It includes WisConnector, core module, SWD interface, and power-up automatic reset.
-
-##### WisConnector 
-
-The breakout module allows the RAK4630 stamp module’s pinout to be transferred by the board-to-board WisConnector, and Figure 5 shows the definition of this connector.
-
-<rk-img
-  src="/assets/images/wisblock/rak4631/datasheet/wisconnector-pin.jpg"
-  width="50%"
-  caption="WisConnector pin defintion"
-/>
-
-
-| **Pin No.** | **Name** |
-| ----------- | -------- |
-| 1           | VBAT_1   |
-| 2           | VBAT     |
-| 3           | GND1     |
-| 4           | GND2     |
-| 5           | 3V3_1    |
-| 6           | 3V3_2    |
-| 7           | USB+     |
-| 8           | USB-     |
-| 9           | VBUS     |
-| 10          | SW1      |
-| 11          | TXD0     |
-| 12          | RXD0     |
-| 13          | RESET    |
-| 14          | LED1     |
-| 15          | LED2     |
-| 16          | LED3     |
-| 17          | VDD_1    |
-| 18          | VDD_2    |
-| 19          | I2C1_SDA |
-| 20          | I2C1_SCL |
-| 21          | AIN0     |
-| 22          | AIN1     |
-| 23          | BOOT0    |
-| 24          | NC       |
-| 25          | SPI_CS   |
-| 26          | SPI_CLK  |
-| 27          | SPI_MISO |
-| 28          | SPI_MOSI |
-| 29          | IO1      |
-| 30          | IO2      |
-| 31          | IO3      |
-| 32          | IO4      |
-| 33          | TXD1     |
-| 34          | RXD1     |
-| 35          | I2C2_SDA |
-| 36          | I2C2_SCL |
-| 37          | IO5      |
-| 38          | IO6      |
-| 39          | GND3     |
-| 40          | GND4     |
-| F1          | GND5     |
-| F2          | GND6     |
-| F3          | GND7     |
-| F4          | GND8     |
-
-
-##### WisConnector Pin Order
-
-Figure 6 shows the pin order of the WisConnector, which is located in the bottom layer of the module.
-
-<rk-img
-  src="/assets/images/wisblock/rak4631/datasheet/wisconnector-pin-order.png"
-  width="25%"
-  caption="WisConnector pin order"
-/>
-
-##### Core Module
-The breakout module itself has a RAK4630 at its core. Figure 7 shows the core module pin and connection information. By default, the NFC function is disabled to conserve the low power characteristic.
-
-<rk-img
-  src="/assets/images/wisblock/rak4631/datasheet/core-module-pin.jpg"
-  width="75%"
-  caption="Core module pin definition"
-/>
-
-| **Pin No.** | **Name**        |
-| ----------- | --------------- |
-| 1           | VBUS            |
-| 2           | USB-            |
-| 3           | USB+            |
-| 4           | P0.13/I2C_SDA   |
-| 5           | P0.14/I2C_SCL   |
-| 6           | P0.15/UART2_RX  |
-| 7           | P0.16/UART2_TX  |
-| 8           | P0.17/UART2_DE  |
-| 9           | P0.19/UART1_RX  |
-| 10          | P0.20/UART1_TX  |
-| 11          | P0.21/UART1_DE  |
-| 12          | P0.10/NFC2      |
-| 13          | P0.09/NFC1      |
-| 14          | GND             |
-| 15          | RF_BT           |
-| 16          | GND             |
-| 17          | NRF_RESET       |
-| 18          | SWDCLK          |
-| 19          | SWDIO           |
-| 20          | VBAT_SX         |
-| 21          | VBAT_IO_SX      |
-| 22          | GND             |
-| 23          | P0.24/I2C_SDA_2 |
-| 24          | P0.25/I2C_SCL_2 |
-| 25          | P1.01/SW1       |
-| 26          | P1.02/SW2       |
-| 27          | P1.03/LED1      |
-| 28          | P1.04/LED2      |
-| 29          | P0.03/QSPI_CLK  |
-| 30          | P0.02/QSPI_DIO3 |
-| 31          | P0.28/QSPI_DIO2 |
-| 32          | P0.29/QSPI_DIO1 |
-| 33          | P0.30/QSPI_DIO0 |
-| 34          | P0.26/QSPI_CS   |
-| 35          | GND             |
-| 36          | GND             |
-| 37          | RF_LoRa         |
-| 38          | GND             |
-| 39          | P0.31/AIN7      |
-| 40          | P0.05/AIN3      |
-| 41          | P0.04/AIN2      |
-| 42          | GND             |
-| 43          | VDD_NRF         |
-| 44          | VBAT_NRF        |
-
-
-##### SWD Interface
-
-The breakout module exposes an SWD debug interface, and Figure 8 shows the connection information. Additionally, the RST pin is used for resetting the core module RAK4630.
-
-<rk-img
-  src="/assets/images/wisblock/rak4631/datasheet/swd-interface.jpg"
-  width="35%"
-  caption="SWD interface"
-/>
-
-##### Power up automatic reset
-
-The breakout module has a power-up automatic reset circuit, and Figure 9 shows the automatic reset mechanism. This module also can be reset through the RAK5005-O reset pin.
-
-<rk-img
-  src="/assets/images/wisblock/rak4631/datasheet/power-automatic-reset.jpg"
-  width="15%"
-  caption="Power up automatic reset"
-/>
-
-
- ##### Flash
-
-The RAK4630 module comprises a flash memory controlled by the SPI interface. The memory size is 8 MB
-<rk-img
-  src="/assets/images/wisblock/rak4631/datasheet/flash.jpg"
-  width="50%"
-  caption="Flash Memory"
-/> -->
 
 ## Certification
 

@@ -84,14 +84,16 @@ For you to be able to interface with the RAK7201 WisNode Button 4K with your Win
 
 ### Connecting to Helium  (The People's Network) 
 
-Helium has quickly become the most widespread LPWAN communal network with more than 27,000 devices deployed globally. All our node products are compatible with it and the process of adding a device to the network is intuitive and straightforward. This section will focus on giving a brief guide on how to connect the RAK7201 to the network console, assuming that there is a Helium Hotspot within range.
+Helium has quickly become the most widespread LPWAN communal network with more than 27,000 devices deployed globally. All our node products are compatible with it and the process of adding a device to the network is intuitive and straightforward. 
+
+This section will focus on giving a brief guide on how to connect the RAK7201 to the network console, assuming that there is a Helium Hotspot within range.
 
 Log in or create your account [here](https://www.helium.com/console):
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/connecting-to-helium/1.png"
   width="80%"
-  caption="Helium Console"
+  caption="Helium console"
 />
 
 Once registered/logged in you will end up at the home page where you can see your function tree on the left and your DC balance at the tops as well as a number of useful links.
@@ -99,36 +101,34 @@ Once registered/logged in you will end up at the home page where you can see you
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/connecting-to-helium/2.png"
   width="80%"
-  caption="Helium Console home screen"
+  caption="Helium console home screen"
 />
 
-
-Go to the "Devices" section in the function tree. If this is your first time doing this there will be no devices registered. Click the "+ Add Device" button to get started
+Go to the **Devices** section in the function tree. If this is your first time doing this there will be no devices registered. Click the **+ Add Device** button to get started
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/connecting-to-helium/3.png"
   width="80%"
-  caption="Helium Devices"
+  caption="Helium devices"
 />
 
-A window will pop up with a set of field containing the device parameters required for its registration (Figure 10):
+A window will pop up with a set of field containing the device parameters required for its registration.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/connecting-to-helium/4.png"
   width="80%"
-  caption="Add a New Device"
+  caption="Add a new device"
 />
 
-Fill a name of your choosing. The Dev EUI, App EUI and App Key (press the eye icon to reveal the values) will have random values generated for you by default. You can manually replace them with values of your own. For the purpose of this tutorial we will stay with the default. Press the "Submit" button and you are done.
+Fill in a name of your choosing. The **Dev EUI**, **App EUI**, and **App Key** will have random values generated for you by default. Press the eye icon to reveal the values. You can manually replace them with values of your own. For this tutorial, use the default values. Press the **Submit** button, and you are done.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/connecting-to-helium/5.png"
   width="80%"
-  caption="Helium Devices"
+  caption="Helium devices"
 />
 
-
-Now your RAK7201 is registered and is awaiting activation. For this to happen we need to import the Dev EUI, App EUI and App Key in the RAK7201 using the RAK Serial Port Tool
+Now, your RAK7201 is registered and is awaiting activation. For this to happen we need to import the Dev EUI, App EUI and App Key in the RAK7201 using the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
 
 Open the tool, select the desired port (default baud rate) and open it. Hold Button 1 for 3 seconds to enter configuration mode and start importing your settings.
 
@@ -171,9 +171,7 @@ at++set_config=lora:app_key:XXXX
 
 - Join Network
 
-Finish executing the join command in order for the node to initiate the join procedure.
-
-Once the procedure is initiated and successfully complete you will have a notification in the serial console
+Finish executing the join command in order for the node to initiate the join procedure. Once the procedure is initiated and successfully complete you will have a notification in the serial console
 
 ```
 at+join
@@ -187,7 +185,7 @@ You output should resemble the one in Figure 12:
   caption="RAK7201 EUIs and key"
 />
 
-If you take a look at the Helium console you will also see the join request packets both in the graph and event log. Your node is now a part of the Helium Network.
+If you take a look at the Helium console, you will also see the join request packets both in the graph and event log. Your node is now a part of the Helium Network.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/connecting-to-helium/8.png"
@@ -259,7 +257,6 @@ In this section, we will be connecting the RAK WisNode Button 4K to the Built-In
 
 #### Configuring In OTAA Mode
 
-
 1. To manage to connect the Button to the Built-In Server in the gateway, a configuration with the correct parameters is needed. Using the AT commands and the RAK Serial Port Tool, the following parameters must be set:
 
 - Join Mode (OTAA)
@@ -330,7 +327,6 @@ at+set_config=device:restart
 />
 
 #### Configuring in ABP Mode
-
 
 To use the RAK WisNode Button 4K in ABP mode, a change of the activation method is needed. 
 
@@ -629,7 +625,6 @@ at+set_config=lora:app_key:XXXX
   caption="Setting up the RAK7201 WisNode Button 4K OTAA parameters"
 />
 
-
 4. To connect to the LoRaWAN Network after configuration, the device must be restarted. Run the following command to restart it:
 
 ```
@@ -640,7 +635,6 @@ at+set_config=device:restart
   width="80%"
   caption="Join confirmation"
 />
-
 
 5. After the successful connection, the data obtained from pressing the buttons will be transmitted to the application server of the gateway.
    
@@ -658,7 +652,6 @@ at+set_config=device:restart
   caption="Sending data to The Things Stack from RAK7200 WisNode Track Lite"
 />
 ## Key Functions
-
 
 In this section, the main functionality of the different keys (buttons) of the device will be addressed. 
 
@@ -757,7 +750,6 @@ at+heartbeat=1
   width="80%"
   caption="Set the HeartBeat interval"
 />
-
 
 The HeartBeat message data format is:
 

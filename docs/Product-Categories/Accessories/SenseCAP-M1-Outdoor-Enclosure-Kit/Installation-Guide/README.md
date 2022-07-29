@@ -52,7 +52,6 @@ A detailed explanation of the procedure of putting the SenseCAP M1 inside the RA
   caption="Covering the second antenna hole"
 />
 
-
 3. Cover the venting hole at the back with the provided screw vent. 
 
 <rk-img
@@ -61,7 +60,6 @@ A detailed explanation of the procedure of putting the SenseCAP M1 inside the RA
   caption="Covering the vent hole"
 />
 
-
 4. Fix the SenseCAP M1 to the aluminum plate inside the enclosure with three M3*6 screws.
 
 <rk-img
@@ -69,7 +67,6 @@ A detailed explanation of the procedure of putting the SenseCAP M1 inside the RA
   width="50%"
   caption="Securing the miner to the plate"
 />
-
 
 5. Position the PoE splitter on the left side of miner and secure it with zip ties. Plug the connectors of RJ45 cable and Type-C cable into the corresponding ports of the miner and the PoE splitter.
 
@@ -80,7 +77,6 @@ A detailed explanation of the procedure of putting the SenseCAP M1 inside the RA
   caption="Connecting the PoE Splitter to the miner"
 />
 
-
 6. Connect the antenna connector of the enclosure to the antenna connector of the device, as shown in Figure 7.
 
 
@@ -90,7 +86,6 @@ A detailed explanation of the procedure of putting the SenseCAP M1 inside the RA
   caption="Connecting the antenna connector"
 />
 
-
 7. Fix the plate with the miner inside the enclosure with four M3*6 screws.
 
 <rk-img
@@ -98,7 +93,6 @@ A detailed explanation of the procedure of putting the SenseCAP M1 inside the RA
   width="50%"
   caption="Fixing the miner inside the enclosure"
 />
-
 
 8. Insert the Ethernet cable through the cable gland. Plug the RJ45 Network cable coming out from the cable gland to the PoE splitter's RJ45 port. Then, fasten the cable gland's body to the enclosure and tighten the lock nut.
 
@@ -108,7 +102,6 @@ A detailed explanation of the procedure of putting the SenseCAP M1 inside the RA
   width="50%"
   caption="Connecting the network cable"
 />
-
 
 9. Close the top cover with twelve M4*12 screws. 
 
@@ -124,7 +117,6 @@ Instructions on mounting and securing the mounting kit to the enclosure and the 
   width="55%"
   caption="Fixing the bracket to the enclosure"
 />
-
 
 2. Position and tighten the pole clamps together around the pole with bolts, washers, and nuts.
 
@@ -179,7 +171,6 @@ To better protect the Ethernet cable gland and the antenna connector from the we
   caption="Wrapping with PVC tape"
 />
 
-
 2. Cut off about 50&nbsp;cm waterproof tape. Stretch it to double the length. Wrap three layers around the connector with a 50% overlap. Hold the tape in place with your hand for a few seconds.
 
 
@@ -188,7 +179,6 @@ To better protect the Ethernet cable gland and the antenna connector from the we
   width="45%"
   caption="Wrapping with waterproof tape"
 />
-
 
 3. Wrap three additional layers with PVC tape with natural uncoiling force and a 50% overlap. Make sure to cover the head and the tail of the connector.
 

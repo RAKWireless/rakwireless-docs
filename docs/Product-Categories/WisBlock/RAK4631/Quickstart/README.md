@@ -17,7 +17,6 @@ This guide introduces the RAK4631 WisBlock Core LPWAN Module and how to use it. 
 
 ### What Do You Need?
 
-
 Before going through each and every step on using RAK4631 WisBlock Core, make sure to prepare the necessary items listed below:
 
 #### Hardware
@@ -452,7 +451,7 @@ If you get errors compiling the LoRaWAN example, ensure that you have an updated
   width="60%"
   caption="RAK4631 BSP(Board Support Package) in Arduino IDE Board Manager"
 />
-  
+
 You also need to ensure that you have the updated SX126x.
 
 <rk-img

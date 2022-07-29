@@ -98,7 +98,7 @@ SPI_CS, SPI_MISO, SPI_MOSI, SPI_CLK, IO1, IO3-IO7 are connected to 40-pin WisCon
 #### Electrical Characteristics  
   
 ##### DC Characteristics    
-  
+
 The following specifications apply for: VSS = 0V, VCI = 3.0&nbsp;V, TOPR = 25&nbsp;ºC
   
 | Symbol           | Description               | Min. | Nom. | Max. | Unit |
@@ -110,8 +110,7 @@ The following specifications apply for: VSS = 0V, VCI = 3.0&nbsp;V, TOPR = 25&nb
 | I<sub>opr</sub>  | Typical operating current | -    | 4.3  | 4.5  | mA   |
   
 #### Mechanical Characteristics  
-  
- 
+
 Figure 3 shows the dimensions and mechanical drawing of the RAK14000 module.  
   
 <rk-img

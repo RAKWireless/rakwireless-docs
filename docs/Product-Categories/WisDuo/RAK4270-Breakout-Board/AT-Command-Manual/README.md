@@ -21,7 +21,6 @@ In addition, the RAK4270 board also exposed another serial port **UART2**, via *
 
 To get familiar with the pin distribution and other hardware details, refer to [RAK4270 Breakout Board Datasheet](/Product-Categories/WisDuo/RAK4270-Breakout-Board/Datasheet/#hardware).
 
-
 If only one UART is used in your project, it is recommended that you dedicate UART2 for AT commands and UART1 is reserved for firmware upgrade.
 
 
@@ -321,7 +320,6 @@ OK
 
 <br>
 
-
 2. <b>at+set_config=device:uart_mode:`<index>:<mode>`</b>
 
 This command is used to set the UART operation from AT **configuration mode** to **data transmission mode**.
@@ -367,7 +365,6 @@ OK
 ```
 
 <br>
-
 
 3. <b>at+send=uart:`<index>:<data>`</b>
 
@@ -1142,7 +1139,6 @@ DownLinkCounter: 0
 ```
 
 <br>
-
 
 23. <b>at+set_config=lora:dutycycle_enable:`<status>`</b>
 

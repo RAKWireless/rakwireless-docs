@@ -221,7 +221,6 @@ The table below shows the pinout of the 40-pin MCU module connector:
 |       37       |                IO5                 |       38       |                IO6                 |
 |       39       |                GND                 |       40       |                GND                 |
 
-
 As for the following table, it shows the definition of each pin of the WisBlock Core connector:
 
 | **Pin Number** | **Pin Name** | **Type** |                                   **Description**                                    |
@@ -298,7 +297,6 @@ There are two connectors reserved for the sensor modules on the RAK19003. The pi
 |       NC        |       NC        |       21       |       22       |       NC        |       NC        |
 |       GND       |       GND       |       23       |       24       |      RXD1       |      RXD1       |
 
-
 As for the following table, it shows the pin name and description of each pin in the WisSensor module connector.
 
 | **Pin Number** | **Connector C** | **Connector D** | **Type** |                                       **Description**                                       |
@@ -373,14 +371,12 @@ The RAK19003 WisBlock Mini Base Board can be powered by a battery, connected to 
 | ----------- | ----------- | ----------- | -------- |
 | 3.3         | 3.7         | 4.3         | V        |
 
-
 The USB connector is used as a charging port. The voltage and current fed to the battery through the port should not exceed its charging limits, as shown in the table below.
 
 | **Parameter**    | **Value**        |
 | ---------------- | ---------------- |
 | Charging Voltage | 4.5 – 5.5&nbsp;V |
 | Charging Current | 350&nbsp;mA      |
-
 
 A suitable Li-Ion battery should have the following parameters as shown in the table below:
 
@@ -463,10 +459,3 @@ The component schematics diagram of the RAK19003 is shown in **Figure 14** and *
   width="100%"
   caption="RAK19003 Schematic Diagram (Connectors)"
 />
-
-<!-- Add certifications
-## Certification
-
-<rk-certifications :params="$page.frontmatter.certifications" />
-
--->

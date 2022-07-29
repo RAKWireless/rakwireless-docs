@@ -11,14 +11,6 @@ next: ../Datasheet/
 
 # RAK12003 Quick Start Guide
 
-<!--
-## Introduction
-
-This guide introduces the WisBlock RAK12003 Infrared Temperature Sensor and how to program with it.
-
-The information obtained from the infrared temperature sensor will then be printed over the USB debug port of the WisBlock Base board.
-
--->
 
 ## Prerequisite
 
@@ -105,7 +97,6 @@ The procedure in disassembling any type of WisBlock modules is the same.
 If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12003 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
 :::
 
-
 After all this setup, you can now connect the battery and USB cable to start programming your WisBlock Core.
 
 ### Software Configuration and Example
@@ -114,7 +105,7 @@ The RAK12003 WisBlock Infrared Temperature Sensor Module is part of the RAKwirel
 
 #### Initial Test of the RAK12003 WisBlock Module
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 

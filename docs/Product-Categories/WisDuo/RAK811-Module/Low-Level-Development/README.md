@@ -82,7 +82,6 @@ FLASH (rx): ORIGIN = 0x8003000, LENGTH = 116K
 
 Your application firmware should implement as a minimum one AT command: <b>`at+boot\r\n`</b>. The function of this command is to jump from the application state into the bootloader state in preparation for the further application firmware upgrade. The logic of this command are the following:
 
-
 1. For RAK811, write the value **0x00000000** into the address **0x0808 0F00**. 
 
 2. Reset MCU. You can call the **NVIC_SystemReset() interface** in the ST library to reset the MCU.

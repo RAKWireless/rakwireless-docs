@@ -1099,11 +1099,11 @@ You can view your Sketchbook folder by opening Arduino IDE and navigating to `Fi
   caption="SketchBook Location"
 />
 
-#### Build and Configure Visual Studio RUI3 Library project
+#### Build and Configure Visual Studio RUI3 Library Project
 
 1. Connect your RUI3 board to USB port to configure the RUI3 project.
 
-2. Launch Visual Studio IDE then open **Visual Micro Explorer** by navigating to `Extensions -> vMicro -> Board`. Click arrow down icon if you want to change the `Board Configuration`.
+2. Launch Visual Studio IDE, then open **Visual Micro Explorer** by navigating to `Extensions -> vMicro -> Board`. Click arrow down icon if you want to change the `Board Configuration`.
 
 Select RAK3172 Evaluation Board:
 
@@ -1121,7 +1121,7 @@ Select RAK4631 Board:
 />
 
 
-2. Relaunch Visual Studio IDE then open `Visual Micro Explorer` by navigating to `Extensions -> vMicro -> Visual Micro Explorer`.
+2. Relaunch Visual Studio IDE, then open `Visual Micro Explorer` by navigating to `Extensions -> vMicro -> Visual Micro Explorer`.
 
 <rk-img
   src="/assets/images/rui3/vs/vm-explorer.png"
@@ -1156,7 +1156,7 @@ If the examples do not appear on the Micro Explorer window, then you need to res
   caption="RUI3 Library Open Copy project"
 />
 
-6. Don't forget to configure the Serial Port.
+6. Don't forget to configure the serial port.
 <rk-img
   src="/assets/images/rui3/vs/vs-serial-port.png"
   width="100%"
@@ -1173,14 +1173,14 @@ If the examples do not appear on the Micro Explorer window, then you need to res
 
 
 
-#### Build and Configure Visual Studio Smart_Farm project
+#### Build and Configure Visual Studio Smart_Farm Project
 
-1. First install the [Smart_Farm](#build-smart-farm-monitoring-rui3-example) Project on Arduino IDE. The **Arduino IDE VSIX** extension will inherit the Arduino examples.
+1. First, install the [Smart_Farm](#build-smart-farm-monitoring-rui3-example) Project on Arduino IDE. The **Arduino IDE VSIX** extension will inherit the Arduino examples.
 
 
 2. Launch Visual Studio IDE and select `Extensions -> VMicro`.<br> 
 Navigate to `Board` option, then click dropdown icon and select your favorite RUI3 board.<br> 
-Also configure the Serial Port by typing on `Port or IP` text area or click the dropdown icon as shown below.
+Also configure the serial port by typing on `Port or IP` text area or click the dropdown icon as shown below.
 
 <rk-img
   src="/assets/images/rui3/vs/vs-explorer.png"

@@ -57,7 +57,6 @@ The block diagram is shown in **Figure 1** that shows the internal architecture 
   caption="RAK19003 WisBlock Base block diagram"
 />
 
-
 The MCU in the WisBlock Core module offers the I2C, UART, and SPI data buses to the sensor modules. Through these buses, the MCU can control and retrieve data from the sensors.
 
 Some types of MCU have fewer IO pins. In such cases, not all the pins of the data bus are connected. For example, only I2C and UART are connected.
@@ -206,7 +205,6 @@ This guide uses two arrows. Refer to **Figure 3** for its representation.
 
 ###### WisBlock Core
 
-
 A WisBlock Core module is designed to be installed on the CPU slot of the RAK19003 Base Board. As shown in **Figure 15**, the location is properly marked by silkscreen. Follow carefully the procedure defined in [attaching a WisConnector](/Product-Categories/WisBlock/RAK19003/Quickstart/#attaching-a-wisconnector/) section in order to attach a Core module.<br> Once attached, fix the module  with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the WisBlock Core.<br>
 
 
@@ -217,7 +215,6 @@ A WisBlock Core module is designed to be installed on the CPU slot of the RAK190
 />
 
 ###### WisBlock Sensor
-
 
 A WisBlock Sensor module is designed to be installed on the Sensor slot of the RAK19003 Base Board. There are two (2) available sensor slots in the RAK19003 Base Board. As shown in **Figure 16**, the location of the slots is properly marked by silkscreen. Follow carefully the procedure of the section, [attaching a WisConnector](/Product-Categories/WisBlock/RAK19003/Quickstart/#attaching-a-wisconnector/), to attach a WisBlock Sensor module. Once attached, fix the module with an M1.2 x 3&nbsp;mm screw. 
 
@@ -265,14 +262,6 @@ RAK19003 can be powered via the USB cable or Li-Ion/LiPo battery via the dedicat
   caption="Battery Connector Pin Order"
 />
 
-<!-- 
-<rk-img
-  src="/assets/images/wisblock/rak19003/quickstart/battery-connect.png"
-  width="50%"
-  caption="Battery Connection"
-/>
--->
-
 The battery can be recharged as well via a small Solar Panel, as shown in **Figure 21**. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287). The GND pin of [Battery Connector](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK19003/Datasheet/#battery-connector) is located on edge of the board.
 
 :::warning ⚠️ WARNING
@@ -292,13 +281,7 @@ The battery can be recharged as well via a small Solar Panel, as shown in **Figu
   caption="Solar Panel Connector VIN and GND"
 />
 
-<!--
-<rk-img
-  src="/assets/images/wisblock/rak19003/quickstart/solar-connect.png"
-  width="60%"
-  caption="Solar Panel Connection"
-/>
--->
+
 
 :::warning ⚠️ WARNING
 

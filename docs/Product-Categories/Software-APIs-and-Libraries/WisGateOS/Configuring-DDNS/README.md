@@ -46,7 +46,6 @@ Activate the accounts from the link sent in their e-mail.
   width="100%"
   caption="Subdomains menu"
 />
-    
 
 3. Proceed by clicking on **Add a subdomain**. 
 
@@ -55,7 +54,6 @@ Activate the accounts from the link sent in their e-mail.
   width="100%"
   caption="Adding a subdomain"
 />
-
 
 In the **Add a new subdomain** menu, you must type the following information:
 
@@ -66,7 +64,6 @@ In the **Add a new subdomain** menu, you must type the following information:
 - **TTL** (only for premium accounts) - A value for the period of time that a packet or data should exist on a computer or network before being discarded.
 - **Enable/disable Wildcard** – More information about the Wildcard can be found in the button **more info.**
 
-
 4. After filling in all the required information, type the verification image in the field and click on **Save!**. You will be redirected to the page of registered subdomains.
 
 <rk-img
@@ -74,7 +71,6 @@ In the **Add a new subdomain** menu, you must type the following information:
   width="100%"
   caption="List of Registered Subdomains"
 />
-  
 
 5. To configure the gateway, the user needs to navigate to **Services -> Dynamic DNS (Beta)** tab in the Web UI. In the **Overview** menu, they should type a name for the configuration and click on the **Add** button. 
 
@@ -84,7 +80,6 @@ In the **Add a new subdomain** menu, you must type the following information:
   width="100%"
   caption="Adding a DDNS Configuration"
 />
-  
 
 6. This will redirect them to the configuration menu.
 
@@ -93,7 +88,6 @@ In the **Add a new subdomain** menu, you must type the following information:
   width="100%"
   caption="Configuration Menu"
 />
-  
 
 7. First, you must enable the service by click on the **Enable** button in the **Basic Settings**. Then fill in the required information:
 
@@ -118,7 +112,6 @@ The other fields are optional and will be left as default. The **Log to syslog**
   width="100%"
   caption="Advanced Settings Tab"
 />
-  
 
 10.  In the **Timer Settings** tab, you can configure the details for the timer to check for changes of IP and errors.
 

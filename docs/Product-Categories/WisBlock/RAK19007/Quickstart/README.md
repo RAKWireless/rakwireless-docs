@@ -58,7 +58,6 @@ The block diagram shown in **Figure 1** shows the internal architecture and exte
   caption="RAK19007 WisBlock Base Board 2nd Gen block diagram"
 />
 
-
 The MCU in the WisBlock Core module offers the I2C, UART, and SPI data buses to the sensor modules. Through these buses, the MCU can control and retrieve data from the sensors.
 
 Some types of MCU have fewer IO pins. In such cases, not all the pins of the data bus are connected. For example, only I2C and UART are connected.
@@ -207,7 +206,6 @@ This guide uses two arrows. Refer to **Figure 3** for its representation.
 
 ###### WisBlock Core
 
-
 A WisBlock Core module is designed to be installed on the CPU slot of the RAK19007 Base Board. As shown in **Figure 15**, the location is properly marked by silkscreen. Follow carefully the procedure defined in [attaching a WisBlock Connector](/Product-Categories/WisBlock/RAK19007/Quickstart/#attaching-a-wisblock-connector/) section in order to attach a Core module.<br> Once attached, fix the module  with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the WisBlock Core.<br>
 
 
@@ -219,7 +217,6 @@ A WisBlock Core module is designed to be installed on the CPU slot of the RAK190
 
 ###### WisBlock IO
 
-
 A WisBlock IO module is designed to be installed on the IO slot of the RAK19007 Base Board. As shown in **Figure 16**, the location is properly marked by silkscreen. Follow carefully the procedure defined in [attaching a WisBlock Connector](/Product-Categories/WisBlock/RAK19007/Quickstart/#attaching-a-wisblock-connector/) section in order to attach an IO module.<br> Once attached, fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the WisBlock IO.<br>
 
 
@@ -230,7 +227,6 @@ A WisBlock IO module is designed to be installed on the IO slot of the RAK19007 
 />
 
 ###### WisBlock Sensor
-
 
 A WisBlock Sensor module is designed to be installed on the Sensor slots of the RAK19007 Base Board. As shown in **Figure 17**, the location of the slots is properly marked by silkscreen. Follow carefully the procedure of the section, [attaching a WisBlock Connector](/Product-Categories/WisBlock/RAK19007/Quickstart/#attaching-a-wisblock-connector/), to attach a WisBlock Sensor module. Once attached, fix the module with an M1.2 x 3&nbsp;mm screw. 
 
@@ -277,7 +273,6 @@ RAK19007 can be powered via the USB cable or Li-Ion/LiPo battery via the dedicat
   width="50%"
   caption="Battery connector pin order"
 />
-
 
 The battery can be recharged as well via a small solar panel, as shown in **Figure 22**. The GND pin of [Battery Connector](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK19007/Datasheet/#battery-connector) is located on edge of the board.
 

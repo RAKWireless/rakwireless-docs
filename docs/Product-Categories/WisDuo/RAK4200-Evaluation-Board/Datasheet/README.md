@@ -18,13 +18,7 @@ certifications:
 
 # RAK4200 Evaluation Board Datasheet
 
-<!--
-<rk-img
-  src="/assets/images/wisduo/rak4260-breakout-board/datasheet/rak4260-breakout.jpg"
-  width="50%"
-  caption="RAK4260 WisDuo LPWAN Breakout Module"
-/>
--->
+
 
 ## Overview
 
@@ -94,7 +88,6 @@ For the aforementioned reason, it is best you leave these pins exposed for progr
 ###### Flash the Firmware Using DAPLink and RAKDAP1
 
 Refer to section [RAKDAP1-Flash-and-Debug-Tool](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool)
-
 
 Use **Figure 3** as a guide to connect RAKDAP1 on RAK4200 Evaluation Board.
 
@@ -410,7 +403,6 @@ P1 Battery connector
 | 1       | GND          | Ground                        |
 | 2       | VBAT         | Positive + pin of the battery |
 
-
 The full specification of the RAK4200 Evaluation Board battery is shown in the table below.
 
 
@@ -449,7 +441,6 @@ P2 Solar Panel connector
 | ------- | ------------ | ----------------------------- |
 | 1       | C0NN_5V      | Positive + pin of solar panel |
 | 2       | GND          | GND                           |
-
 
 The full specification of the Solar Panel for the RAK4200 Evaluation Board is shown in the table below.
 

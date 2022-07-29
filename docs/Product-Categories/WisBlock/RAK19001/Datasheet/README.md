@@ -292,7 +292,6 @@ The WisBlock 24-pin connectors have the same connections for **3V3_S**, **GND**,
   caption="WisBlock 24-pin module connector"
 />
 
-
 Pinout definition for standard size slot (A-D):
 | D        | C        | B        | A        | **Pin Number** | **Pin Number** | A        | B        | C        | D        |
 | -------- | -------- | -------- | -------- | -------------- | -------------- | -------- | -------- | -------- | -------- |
@@ -359,7 +358,6 @@ As for the following table, it shows the pin name and description of each pin in
 
 
 ##### Connector for WisBlock IO Slot
-
 
 The WisBlock Module IO Slot connector, as shown in **Figure 13**, is a 40-pin board-to-board connector.
 
@@ -576,10 +574,3 @@ The component schematics diagram of the RAK19001 are shown in **Figure 14** and 
   width="100%"
   caption="RAK19001 schematic diagram (Connectors)"
 />
-
-<!-- Add certifications
-## Certification
-
-<rk-certifications :params="$page.frontmatter.certifications" />
-
--->

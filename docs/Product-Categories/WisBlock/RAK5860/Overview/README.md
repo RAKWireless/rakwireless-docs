@@ -18,7 +18,7 @@ Thank you for choosing **RAK5860 WisBlock NB-IoT Interface Module** in your awes
 
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
+
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK5860 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK5860.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
@@ -32,13 +32,7 @@ Thank you for choosing **RAK5860 WisBlock NB-IoT Interface Module** in your awes
 
 RAK5860 is a WisBlock Wireless module that extends the WisBlock system with LTE NB-IoT connectivity. It is based on the Quectel BG77 module and supports CAT M1 and CAT NB2 connectivity. In addition, it includes a GNSS location option that supports both GPS and Glonass satellites. It can be comfortably programmed with the Quectel AT command interface over the serial connection to the WisBlock Core MCU.
 
-<!---
-The RAK5860 module is part of the WisBlock series, specifically, it is one of the modules that belongs to the WisIO category. This module was designed to be part of a production-ready IoT solution in a modular way, and must be combined with a WisCore and a WisBase module. 
 
-The RAK5860 is a module designed to work with the RAK5005 base board, it provides wireless communication (LTE Cat M1, LTE Cat NB2) features to the final application. This module support LTE-FDD network, and supports half-duplex operation in LTE network. It also provides optional GNSS functionality.
-
-For debugging purpose, a Micro-USB connector is used for sending AT commands, data transmission and receiving GNSS NMEA output. Once the module is integrated with the RAK5005 base board, the internal UART port of the module is connected through the WisIO connector to a WisCore module.
--->
 
 ## Product Features 
 

@@ -1,12 +1,12 @@
 ---
 rak_desc: Provides comprehensive information about your RAK1902 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisblock/rak1902/overview/RAK1902_home.png
+prev: ../Quickstart/
+next: false
 tags:
   - datasheet
   - wisblock
   - RAK1902
-prev: ../Quickstart/
-next: false
 ---
 
 # RAK1902 WisBlock Barometer Pressure Sensor Module Datasheet
@@ -35,7 +35,7 @@ The RAK1902 WisBlock Barometer Pressure Sensor Module, part of the RAK Wireless 
 
 ## Specifications
 ### Overview
-<!-- Insert Picture of Sensor with it's dimensions -->
+
 
 #### Mounting
 

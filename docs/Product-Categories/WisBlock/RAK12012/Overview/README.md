@@ -15,7 +15,7 @@ tags:
 
 # RAK12012 WisBlock Heart Rate Sensor Module
 
-Thank you for choosing **RAK12012 WisBlock Heart Rate Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK12012 WisBlock Heart Rate Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK12012 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -29,10 +29,10 @@ Thank you for choosing **RAK12012 WisBlock Heart Rate Sensor Module** in your aw
 
 [Sample Code: RAK12012_HeartRate](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12012_HeartRate)
 
-<!--**Examples** -->
 
-<!--For All WisBlock Core Modules: -->
-<!--* [Sample Code: RAK12012](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/IO/RAK12005_WaterDetector/RAK12005_WaterDetector.ino)-->
+
+
+
 
 ## Product Description
 

@@ -11,14 +11,7 @@ rak_img: /assets/images/wistrio/rak7205-5205/quickstart/overview/RAK5205_home.pn
 
 # RAK5205 WisTrio LPWAN Tracker Datasheet
 
-<!---
 
-<rk-img
-  src="/assets/images/wistrio/rak7205-5205/datasheet/rak5205-wistrio-lpwan-tracker.png"
-  width="25%"
-  caption="RAK5205 WisTrio LPWAN Tracker"
-/>
--->
 
 ## Overview
 

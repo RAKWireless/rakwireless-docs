@@ -91,7 +91,6 @@ There are four available command formats:
 | `AT+XXX=<input parameter>` | Writing configuration on the command              |
 | `AT+XXX`                   | Used to run a command                             |
 
-
 The output of the commands is returned via UART.
 
 The format of the reply is divided into two parts: **returned value** and the s**tatus return code**.
@@ -102,7 +101,6 @@ The format of the reply is divided into two parts: **returned value** and the s*
 :::
 
 1. **`<value><CR><LF>`** is the first reply when **`AT+XXX?`** command description or **`AT+XXX=?`** reading value is executed, then it will be followed by the status return code. The formats with no return value like **`AT+XXX=<input parameter>`** writing configuration command and **`AT+XXX`** run command will just reply to the status return code.
-
 
 2. **`<CR><LF><STATUS><CR><LF>`** is the second part of the reply, which is the status return code.
 
@@ -1179,7 +1177,6 @@ AT+NWM=1
 ```
 Module will restart
 
-
 Switch from LoRaWAN to LoRa P2P
 
 ```
@@ -1544,7 +1541,7 @@ _**REMARK**_
 ### Appendix II TX Power by Region
 
 <b> EU868 </b>
- 
+
 By default, MaxEIRP is considered to be +16&nbsp;dBm. 
 
 | TXPower | Configuration (EIRP) |
@@ -1649,7 +1646,7 @@ By default, MaxEIRP is considered to be 30&nbsp;dBm.
 <br>
 
 <b> RU864 </b>
- 
+
 By default, MaxEIRP is considered to be +16&nbsp;dBm. 
 
 | TXPower | Configuration (EIRP) |

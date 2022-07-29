@@ -97,7 +97,6 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 The RAK15000 EEPROM has an I2C-Compatible (Two-Wire) Serial Interface. Furthermore, the EEPROM is organized in so-called pages. One page holds 256-byte and there are 1024 pages. Having insight into how the memory cells are organized is important for write and erase operations.
 
-
 These are the quick links that go directly to the software guide for the specific WisBlock Core module you use:
 
 - [RAK15000 in RAK4631 WisBlock Core Guide](/Product-Categories/WisBlock/RAK15000/Quickstart/#rak15000-in-rak4631-wisblock-core-guide)
@@ -115,7 +114,6 @@ Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless
   width="100%"
   caption="Selecting RAK4631 as the WisBlock Core"
 />
-
 
 2. Open the RAK15000 sample code.
 
@@ -315,136 +313,3 @@ After successful upload, a random number will be written and read to a random ad
 ::: tip 📝 NOTE
 If you experience any error in compiling the example sketch, check the updated code for the RAK11300 WisBlock Core Module that can be found on the [RAK11300 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK15000_EEPROM_AT24C02).
 :::
-
-<!-- checking how to import the project to platformio
-
-#### PlatformIO Setup (optional)
-
-1. Install the original PlatformIO platform as showing in [PlatformIO First Install](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md#first-install) section.
-
-- For WisBlock Core RAK4631 install **Nordic nRF52** platform
-- For WisBlock Core RAK11200 install **Espressif 32** platform
-- For WisBlock Core RAK11310 install **Raspberry Pi RP2040** platform
-
-2. Open a project example that uses the new installed platform.
-
-Launch Visual Studio Code and select PlatformIO PIO Home.
-
-On **PIO Home** click on **Project Examples**.
-
-Choose **arduino-blink** project then click on **Import** button.
-
-<rk-img
-  src="/assets/images/wisblock/rak14002/quickstart/rp2040_arduino_blink.png"
-  width="50%"
-  caption="Import arduino-blink project"
-/>
-
-Click **Yes** button on trust window.
-
-<rk-img
-  src="/assets/images/wisblock/rak14002/quickstart/rp2040_trust.png"
-  width="50%"
-  caption="PlatformIO trust authors"
-/>
-
-3. Build the project and ignore warnings and errors.
-
-4. Download and install the [RAK_PATCH script](https://raw.githubusercontent.com/RAKWireless/WisBlock/master/PlatformIO/RAK_PATCH.zip)
-
-Unzip the contents of RAK_PATCH.zip into folder RAK_PATCH in your PlatformIO installation folder.
-The table below shows the PlatformIO installation directory for each operating system.
-
-
-:::tip 📝 NOTE:
-This procedure was tested only on Windows 10 and Ubuntu.
-:::
-
-| PlatformIO path on different OS   | |   
-| :--- | :--- |    
-| Windows 10 | `%UserProfile%\.platformio\` | 
-| Linux | `~/.platformio/` | 
-| MacOS | `/Users/{Your_User_id}/.platformio/` | 
-
-
-The figure below shows the PlatformIO installation directory on Windows 10.
-
-<rk-img
-  src="/assets/images/wisblock/rak14002/quickstart/rak_patch_folder.png"
-  width="70%"
-  caption="RAK patch folder on Windows"
-/>
-
-Open a command prompt in **%UserProfile%.platformio\RAK_PATCH** folder and execute python ./rak_patch.py.
-
-<rk-img
-  src="/assets/images/wisblock/rak14002/quickstart/rak_patch_installed.png"
-  width="70%"
-  caption="RAK patch installed on Windows"
-/>
-
-:::warning ⚠️ WARNING    
-In case of any platform update on PlatformIO, the RAK_PATCH script must be executed again after the platform update.
-:::
-
-After installing the **RAK_PATCH** on PlatformIO you can import the entire Arduino project to PlatformIO.
-
-5. Import Arduino Project to PlatformIO.
-
-Open PlatformIO PIO Home and select **Import Arduino Project** as shown in **Figure 29**.
-<rk-img
-  src="/assets/images/wisblock/rak15000/quickstart/pio-home-import.png"
-  width="100%"
-  caption="Import RAK15000 Arduino Project"
-/>
-
-Select your favorite **WisBlock Core Board** as shown in **Figure 30**. Then choose the directory of the RAK15000 Arduino Project.
-<rk-img
-  src="/assets/images/wisblock/rak15000/quickstart/import-project.png"
-  width="100%"
-  caption="Select WisBlock Core Board and Arduino project folder"
-/>
-
-To finish import, click on **Import** button as shown in **Figure 31**.
-<rk-img
-  src="/assets/images/wisblock/rak15000/quickstart/finish-import.png"
-  width="100%"
-  caption="Finish project import"
-/>
-
-Click **Yes** button on trust window.
-
-<rk-img
-  src="/assets/images/wisblock/rak15000/quickstart/rp2040_trust.png"
-  width="50%"
-  caption="PlatformIO trust authors"
-/>
-
-```
-[env:wiscore_rak4631]
-platform = nordicnrf52
-board = wiscore_rak4631
-framework = arduino
-upload_port = COM4
-lib_deps = 
-    Adafruit_FRAM_I2C
-```
-
-6. Build imported project on PlatformIO.
-
-Now we can build the project by clicking on highlighted icon as shown in **Figure 32**.
-<rk-img
-  src="/assets/images/wisblock/rak14002/quickstart/build-project.png"
-  width="100%"
-  caption="Build Arduino imported project"
-/>
-
-7. Upload imported project on PlatformIO.
-
-To upload the project on target board, click on the highlighted icon as shown in **Figure 33**.
-<rk-img
-  src="/assets/images/wisblock/rak14002/quickstart/upload-pio-project.png"
-  width="100%"
-  caption="Upload Arduino imported project"
-/>
--->

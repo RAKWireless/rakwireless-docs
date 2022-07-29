@@ -15,13 +15,7 @@ certifications:
 
 # RAK5860 WisBlock NB-IoT Interface Module Datasheet
 
-<!--
-<rk-img
-  src="/assets/images/wisblock/rak5860/datasheet/rak5860.png"
-  width="50%"
-  caption="RAK5860 WisBlock NB-IoT Interface Module"
-/>
--->
+
 
 ## Overview
 
@@ -138,7 +132,6 @@ The table below shows the recommended operating conditions of the RAK5860 module
 />
 
 #### Schematic Diagram
-
 
 The following sections will describe the schematic of the RAK5860 module, which include: 
 

@@ -41,7 +41,7 @@ During the configuration of the module, a guided setup is available on the conso
 #### Connect to the RAK4260
 
 In this document, a RAK4260 module is used as an example. Use a USB to TTL converter to connect to the module.  
-  
+
 1. Connect the RAK4260 to the USB port of a general-purpose computer (Windows PC) using a USB to TTL module (3.3&nbsp;V), as shown in Figure 1.
 
 <rk-img
@@ -66,7 +66,7 @@ In this document, a RAK4260 module is used as an example. Use a USB to TTL conve
   width="45%"
   caption="RAK Serial Port Tool Connected to RAK4260 Module"
 />  
-  
+
 Before establishing a LoRa Connection using the RAK4260 Module, several configurations must be set first, which will be discussed in the next sections.
   
 ### Connecting to the Things Network (TTN)
@@ -123,7 +123,7 @@ If you don't have an account yet, head on to the [TTN website](https://www.theth
     * **Description** - this is a short and concise human-readable description of your application.
     * **Application EUI** - this will be generated automatically by The Things Network for convenience.
     * **Handler Registration** - handler you want to register this application to.
-    
+
 3. After you fill in the necessary information, press the "**Add application**" button at the bottom of this page. If you see a similar page, as shown in **Figure 8**, then you have successfully registered your application.
 
 <rk-img
@@ -167,7 +167,7 @@ The TTN platform can generate these parameters randomly by leaving those fields 
 />
 
 ### Configuring RAK4260 LPWAN Module
-  
+
 To connect the RAK4260 module to a LoRa P2P Connection or a LoRaWAN network, the module must be configured and LoRa parameters must be set properly. This can be done by modifying the LoRa parameters on the firmware source code and flashing it into the module. The following section will guide you through the process of doing this using Atmel Studio.
 
 #### Parameter and Firmware Setup  
@@ -247,7 +247,7 @@ Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKD
 ##### Connecting to TTN
 
 1. Connect your USB to the TTL adapter to the corresponding pins of RAK4260, which have been discussed in the earlier section. Refer to **Figure 1**.
-  
+
 Use the serial communication tool to use the guided setup. Based on the firmware you flashed to the RAK4260 Module, it is configured in OTAA Mode. To initiate the connection to TTN, press the key "1" to enter into the Demo Application. A list of frequencies will appear on the console output, choose the one that suits your application. In this example, EU868 is used for the region, since it was the configured parameter at the LoRa gateway. Sample console output is shown in **Figure 19**.
 
 
@@ -318,7 +318,7 @@ To register the device to the ChirpStack network server, you must choose either 
 />
 
 3. Create an Application named **rak4260_node**. Fill in the required fields, as shown in **Figure 25**. 
-   
+
 4. To finish, click the “**CREATE APPLICATION**” button. 
 
 ChirpStack LoRaServer supports multiple system configurations, with only one by default. By default, a new Application should be created, although it is possible to reuse the existing ones.

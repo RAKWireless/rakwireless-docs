@@ -265,7 +265,6 @@ If do not receive an `OK` or any reply, you need to check if the wiring of your 
   caption="at+version command response"
 />
 
-
 2. The next step is to configure the OTAA LoRaWAN parameters in RAK11300: 
 
 - LoRaWAN join mode: **OTAA**
@@ -323,16 +322,12 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=2`.
 | 11   | AS923-4       |
 | 12   | RU864         |
 
-
-
-
 3. After the configuration of the LoRaWAN parameters, the next step is to set up the EUIs and key. You need to use the values from the TTN console you configured in the earlier steps. 
 
 
 - Device EUI: **70B3D57ED0046DBD**
 - Application EUI: **0000000000000000**
 - Application Key: **FB55B2F3409A5E2AF3442AC2E99BBD14**
-
 
 Set the Device EUI.
 
@@ -371,7 +366,6 @@ AT+APPKEY=FB55B2F3409A5E2AF3442AC2E99BBD14
   width="55%"
   caption="Summary of Device Parameters"
 />
-
 
 4. After checking if the parameters are properly set, you can now join the network and send the payload.
 
@@ -492,7 +486,6 @@ If do not receive an `OK` or any reply, you need to check if the wiring of your 
   caption="at+version command response"
 />
 
-
 2. The next step is to configure the ABP LoRaWAN parameters in RAK11300: 
 
 - LoRaWAN join mode: **ABP**
@@ -549,7 +542,6 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=2`.
 | 10   | AS923-3       |
 | 11   | AS923-4       |
 | 12   | RU864         |
-
 
 3. After the configuration of the LoRaWAN parameters, the next step is to set up the device address and sessions keys. You need the use the values from the TTN console. 
 
@@ -608,7 +600,6 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | x         | Auto-join config - 1: auto-join on power up, 0: no auto-join                   |
 | y         | Reattempt interval in seconds (7-255) - **This is currently fixed to 30 sec**. |
 | z         | Number of join attempts (0-255) - 0 is default.                                |
-
 
 6. With the end-device properly activated, you can now try to send some payload after successful join. In ABP, there will be no `AT+JOIN=SUCCESS` reply on the join command.
 
@@ -742,7 +733,6 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   caption="Chirpstack Adding Node into the RAK11300 Module"
 />
 
-
 7. Once the node is created, fill in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
 
 Fill in the parameters requested:
@@ -838,7 +828,6 @@ If do not receive an `OK` or any reply, you need to check if the wiring of your 
   caption="at+version command response"
 />
 
-
 2. The next step is to configure the OTAA LoRaWAN parameters in RAK11300: 
 
 - LoRaWAN join mode: **OTAA**
@@ -897,7 +886,6 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=2`.
 | 11   | AS923-4       |
 | 12   | RU864         |
 
-
 3. After the configuration of the LoRaWAN parameters, the next step is to set up the EUIs and key. You need the use the values from the Chirpstack console you configured in the earlier steps. 
 
 - Device EUI: **5E9D1E0857CF25F1**
@@ -945,7 +933,6 @@ AT+APPKEY=F921D50CD7D02EE3C5E6142154F274B2
   width="50%"
   caption="Summary of Device Parameters"
 />
-
 
 5. After checking if the parameters are properly set, you can now join the network and send the payload.
 
@@ -1012,7 +999,6 @@ Check the “**Disable counting frame verification**”. During the test, when t
   caption="ChirpStack Console, Configuring a Device"
 />
 
-
 2. After selecting the ABP mode, the following parameters appear in the Activation tab. Then, you can see that there are some parameters for ABP in the **“ACTIVATION”** item:
 
   * **Device address**
@@ -1048,7 +1034,6 @@ If do not receive an `OK` or any reply, you need to check if the wiring of your 
   width="55%"
   caption="at+version command response"
 />
-
 
 2. The next step is to configure the ABP LoRaWAN parameters in RAK11300: 
 
@@ -1166,7 +1151,6 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | y         | Reattempt interval in seconds (7-255) - **This is currently fixed to 30 sec**. |
 | z         | Number of join attempts (0-255) - 0 is default.                                |
 
-
 6. With the end-device properly activated, you can now try to send some payload after successful join. In ABP, there will be no `AT+JOIN=SUCCESS` reply on the join command.
 
 ```
@@ -1204,7 +1188,7 @@ Refer to the table for the minimum hardware and software required to perform the
 Execute the following procedure to upgrade the firmware via USB using the .uf2 firmware file.
 1.  Download the latest application firmware of the RAK11300.
     - [RAK11300 Firmware](/Product-Categories/WisDuo/rak11300-module/Datasheet/#firmware-os)
-    
+
 2.  Connect the RAK11300 module to the computer via USB. If your main board has no USB connection, you won't be able to upload the .uf2 firmware file.
 
 3.  Activate RAK11300 USB bootloader mode. There are two possible ways to do this.

@@ -36,7 +36,7 @@ The RAK1906 WisBlock Environmental Sensor Module, part of the RAK WisBlock Senso
 
 ## Specifications
 ### Overview
-<!-- Insert Picture of Sensor with its dimensions -->
+
 
 #### Mounting
 

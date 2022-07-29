@@ -19,7 +19,7 @@ Thank you for choosing **RAK12500 WisBlock GNSS Location Module** in your awesom
 * [RAK12500 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
+
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK12500 GNSS Location Module 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK12500.stp)
 * [24-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
@@ -56,7 +56,7 @@ The RAK12500 uses the u-blox ZOE-M8Q module. It supports a wide variety of satel
     * Module Size: 10&nbsp;mm x 23&nbsp;mm
 
 ## Prerequisites  
-  
+
 To use the **RAK12500 WisBlock GNSS Location Module**, you need a **Wisblock Base** to plug the module in. The **Wisblock Base** provides power supply to the **RAK12500** GNSS Location Module. Also, you need a **WisBlock Core** to control your module.
 
 

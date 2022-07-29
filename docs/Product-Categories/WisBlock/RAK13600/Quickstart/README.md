@@ -11,14 +11,7 @@ next: ../Datasheet/
 
 # RAK13600 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock Interface RAK13600 NFC reader module and how to use it.
-
-The data obtained from the NFC reader modules will then be printed over the USB debug port of the WisBlock Base board.
-
--->
 
 ## Prerequisite
 
@@ -52,7 +45,6 @@ The RAK13600 module is designed as wireless module that allows you to scan NFC a
   width="35%"
   caption="NFC Coil Antenna"
 />
-
 
 The RAK13600 module can be mounted on the IO slot of any WisBlock Base board, as shown in **Figure 2**. Also, always secure the connection of the WisBlock module by using compatible screws. For more information about RAK13600, refer to the [Datasheet](../Datasheet/).
 
@@ -106,7 +98,6 @@ The procedure in disassembling any type of WisBlock modules is the same.
 If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK13600 uses I2C and IO pins. It can cause possible conflict, especially on some IO modules. 
 :::
 
-
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
 :::warning ⚠️ WARNING
@@ -147,7 +138,6 @@ The RAK13600 is based on the popular NFC/RFID chip PN532. You need to install th
   width="100%"
   caption="Selecting RAK11300 as WisBlock Core"
 />
-
 
 2. Copy the example code below and paste it on the Arduino IDE:
 
@@ -198,7 +188,6 @@ void setup(void) {
   
   Serial.println("Waiting for an ISO14443A Card ...");
 }
-
 
 void loop(void) {
   uint8_t success;

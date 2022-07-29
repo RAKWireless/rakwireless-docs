@@ -16,7 +16,7 @@ Thank you for choosing **RAK1920 WisBlock Sensor Adapter Module** in your awesom
 * [RAK1920 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
+
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK1920 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK1920.stp)
 * [40-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
@@ -32,7 +32,6 @@ For All WisBlock Core Modules:
 
 ## Product Description
 
- 
 The RAK1920 module, a part of the WisBlock Interface series, is a sensor extension module, which extends the **WisBlock** system with an adapter board to connect Click Boards (MikroElektronika), QWICC (Sparkfun) based and Grove (Seeed) based sensors to **WisBlock**. This module was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module.  
 
 It supports several defacto-standard interfaces in the IoT market and allows you to integrate sensors manufactured by Mikroe, SparkFun, SeeedStudio, and others. For example, the RAK1920 supports the Click Boards™ series of modules provided by Mikroe, Qwiic Connect™ sensor interface designed by SparkFun. Also, it supports all kinds of I2C module digital I/O, UART, and ADC sensors with a Grove™ interface.

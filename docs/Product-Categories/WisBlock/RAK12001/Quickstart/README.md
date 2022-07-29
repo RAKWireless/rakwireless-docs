@@ -50,7 +50,6 @@ RAK12001 module can be connected to the sensor's slot of [WisBlock Base](https:/
 
 ##### Assembling
 
-
 As shown in **Figure 2**, the location for the sensor slots is properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
 <rk-img
@@ -126,7 +125,6 @@ In this example, you will be able to enroll and verify your fingerprint.
   width="100%"
   caption="Selecting RAK11300 as WisBlock Core"
 />
-
 
 3. Copy the example code below:
 
@@ -692,7 +690,6 @@ If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the *
   width="80%"
   caption="Sensor initialized output"
 />
-
 
 6. If you scroll down, you will see the list of commands available to use, as shown in **Figure 12**
 

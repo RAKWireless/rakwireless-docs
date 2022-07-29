@@ -18,13 +18,7 @@ certifications:
 
 # RAK4630 WisBlock LPWAN Module Datasheet
 
-<!--
-<rk-img
-  src="/assets/images/wisblock/rak4631/datasheet/overview.jpg"
-  width="30%"
-  caption="RAK4631 WisBlock LPWAN Module"
-/>
--->
+
 ## Overview
 
 ### Description

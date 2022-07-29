@@ -11,14 +11,7 @@ next: ../Datasheet/
 
 # RAK1903 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock Sensor RAK1903 Ambient Light board and how to program with it.
-
-The information obtained from the OPT3001DNPR light sensor will then be printed over the USB debug port of the WisBlock Base board.
-
--->
 
 ## Prerequisite
 
@@ -121,7 +114,7 @@ The RAK1903 is an ambient optical sensor board that contains an OPT3001DNPR chip
 
 #### Initial Test of the RAK1903 WisBlock Module
 
-1. Install the [RAKwireless Arduino BSP's for WisBlock](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
+1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package, the WisBlock Core should now be available on the Arduino IDE.
 
 2. You need to select the WisBlock Core you have.
 
@@ -170,7 +163,6 @@ void printError(String text, OPT3001_ErrorCode error);
 
 ClosedCube_OPT3001 g_opt3001;
 #define OPT3001_ADDRESS 0x44
-
 
 void configureSensor()
 {

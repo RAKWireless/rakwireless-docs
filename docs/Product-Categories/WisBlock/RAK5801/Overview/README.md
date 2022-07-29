@@ -18,7 +18,7 @@ Thank you for choosing **RAK5801 WisBlock 4-20mA Interface Module** in your awes
 * [RAK5801 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-<!---* [WisBlock Quick Start Guide](../../Quickstart/)-->
+
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK5801 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK5801.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
@@ -38,15 +38,7 @@ For WisBlock Core RAK11200:
 
 **RAK5801** is a **WisBlock Interface** module that extends the **WisBlock** system with 4-20&nbsp;mA current to voltage converter. It supports up to 2 4-20&nbsp;mA interfaces and voltage supply for connected sensors.
 
-<!--
-The RAK5801 module is part of the WisBlock series that belongs to the WisIO category. This module is designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisCore and a WisBase module.
 
-The RAK5801 is a **4-20mA current loop extension module** that allows the users to provide IoT solutions to analog sensors with a 4-20mA interface. This module converts the 4-20mA current signal into voltage range supported by the WisCore module (MCU) for further digitalization and data transmission
-
-The RAK5801 module features **two input channels of 4-20mA**. Inside, high precision operation amplified is used, which supports a wide range of operating temperatures for the signal amplification and conversion.
-
-Also, this module integrates a **12V power supply**, which can be used by users to power the external sensors. The RAK5801 can be connected to a 2-wire or 3-wire or 4-wire types of 4-20mA sensor. The connection of the 4-20mA sensors is done through the fast crimping terminals without the need for special tools, which simplify the installation process on the fields.
--->
 
 ## Product Features
 

@@ -16,11 +16,7 @@ Thank you for choosing **RAK9003 PoE Pi HAT** in your awesome IoT Project! 🎉 
 * [Datasheet](../Datasheet/)
 * [RAK9003 PoE Pi HAT 3D Model](https://downloads.rakwireless.com/3D_File/WisHat/PWB-RAK9003_POE_HAT.stp)
 
-<!-- <rk-img
-  :src="`${$frontmatter.static_root}/rak9003-poe-hat.png`"
-  width="75%"
-  caption="RAK9003 PoE Pi HAT"
-/> -->
+
 
 
 ## Product Description
@@ -30,10 +26,7 @@ The PoE Pi HAT is an add-on board with a Raspberry PI form factor, compatible wi
 The PoE Pi HAT is designed to be compatible with the IEEE 802.3af/at Power-over-Ethernet (PoE), it is compatible with both PoE Mode A and Mode B. The PoE Pi HAT signature and control circuit provides the PoE AT compatibility signature and power classification required by the Power Sourcing Equipment (PSE) before applying up to 30W power to the port. The PoE Pi HAT is compatible with Class 0 to Class 4 equipment. The high efficiency DC/DC converter operates over a wide input voltage range and provides a regulated low ripple and low noise output. The DC/DC converter also has built-in overload and short-circuit output protection.
 
 
-<!-- <rk-btn
-  src="/Product-Categories/WisHat/RAK9003-PoE-HAT/Datasheet/"
-  label="Get Started with RAK9003 PoE Pi HAT"
-/> -->
+
 
 ## Product Features
 

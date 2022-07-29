@@ -182,16 +182,7 @@ The RAK11300 supports two different frequency variations: RAK11300(L) Low Radio 
 | DVDD       | Power supply  of MCU       | 2.0      | 3.3      | 3.6      | V        |
 | AVDD       | ADC Reference Voltage      | -        | 3.3      | -        | V        |
 
-<!-- ##### Power Consumption
-
-**Note:** The power consumption data is to be updated with the latest test result. 
-
-| **Item**                | **Power  Consumption** | **Condition**         |
-| ----------------------- | ---------------------- | --------------------- |
-| Tx  mode LoRa @20dBm    | -                      | LoRa  @ PA_BOOST      |
-| Tx  mode LoRa @17dBm    | -                      | LoRa  @ PA_BOOST      |
-| Rx  mode LoRa @37.5Kbps | -                      | LoRa  @ Receive  mode |
-| Sleep  mode current     | -                      | LoRa  sleep           | --> |
+ |
 
 ##### Absolute Maximum Ratings
 

@@ -15,11 +15,7 @@ rak_img: /assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/1.product
 
 # RAK2245 Pi HAT WisLink LPWAN Concentrator Datasheet
 
-<!-- <rk-img
-  src="/assets/images/wislink-lora/rak2245-pi-hat-edition/datasheet/rak2245-pihat-overview.png"
-  width="50%"
-  caption="RAK2245 Pi Hat"
-/> -->
+
 
 ## Overview
 

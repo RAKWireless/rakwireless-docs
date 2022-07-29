@@ -1,5 +1,4 @@
 ---
-static_root: 
 rak_desc: Provides comprehensive information about your RAK7248 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisgate/rak7248/overview/RAK7248_home.png
 tags:
@@ -9,7 +8,7 @@ tags:
 next: false
 prev: ../AWS-Greengrass/
 certifications:
-  - [ANATEL, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_ANATEL_Certification.pdf]
+  - [Anatel, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_ANATEL_Certification.pdf]
   - [CE, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_CE_Certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_FCC_Certification.zip]
   - [IC, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_IC_Certification.zip]
@@ -26,23 +25,32 @@ certifications:
 
 ### Description
 
-The WisGate Developer D4H RAK7248 is a LoRaWAN Gateway that consists of Raspberry Pi4, RAK2287 Concentrator, and RAK2287 Pi HAT. RAK2287 includes a GPS module and a heat sink for better performance and thermal heat dissipation management, and its housing is built with an aluminum casing.
+The **RAK7248 WisGate Developer D4H** is a LoRaWAN® Gateway that consists of Raspberry Pi4, RAK2287 Concentrator, and RAK2287 Pi HAT.
 
-For the build-in RAK2287, it uses the **SX1302 chip** from Semtech which built-in LoRa concentrator IP core is a powerful digital signal processing engine. It can receive up to **8 LoRa packets** with different spreading factors on different channels and is available in multiple variants so it can be used for international standard bands. This unique capability allows implementing innovative network architectures advantageous over other short-range systems. RAK2287 Pi HAT is a converter board with Raspberry Pi form factor that enables the RAK2287 module to be mounted on top of the Raspberry Pi. It integrates one (1) 40-pin female Pi HAT connector and one mPCIe connector to connect RAK2287 to the Raspberry Pi 4.
+The **RAK7248C D4H** has a cellular and a PoE variant.
 
-RAK7248 is ideal for prototyping, proof-of-concept demonstration, or evaluation. It includes a ready to use LoRaWAN Gateway OS that can be connected to a LoRaWAN server. Also, it is developer-friendly and simple even for no-so-tech users to set up a LoRaWAN system. It has to be the best value and function for connectivity to address a variety of applications like Smart Grid, Intelligent Farm, and other IoT enterprise applications.
+The **RAK7248C WisGate Developer D4H** is the cellular variant, consisting of Raspberry Pi4, RAK2287 Concentrator, RAK2013 Cellular Pi HAT for the cellular connectivity, and RAK2287 Pi HAT.
+
+The **RAK7248P D4H** is the PoE variant, consisting of Raspberry Pi4, RAK2287 Concentrator, RAK 9003 for the PoE support, and RAK2287 Pi HAT.
+
+**RAK2287** includes a GPS module and a heat sink for better performance and thermal heat dissipation management, and its housing is built with an aluminum casing.
+
+For the build-in **RAK2287**, it uses the **SX1302** chip from Semtech which built-in LoRa® concentrator IP core is a powerful digital signal processing engine. It can receive up to **8 LoRa packets** with different spreading factors on different channels and is available in multiple variants so it can be used for international standard bands. This unique capability allows implementing innovative network architectures advantageous over other short-range systems. **RAK2287 Pi HAT** is a converter board a with Raspberry Pi form factor that enables the RAK2287 module to be mounted on top of the Raspberry Pi. It integrates one (1) 40-pin female Pi HAT connector and one mPCIe connector to connect RAK2287 (RAK9003 in PoE variant/RAK2013 in Cellular variant) to the Raspberry Pi 4.
+
+**RAK7248** is ideal for prototyping, proof-of-concept demonstrations, or evaluation. It includes a ready-to-use LoRaWAN Gateway OS that can be connected to a LoRaWAN server. Also, it is developer-friendly and simple even for not-so-tech users to set up a LoRaWAN system. It has to be the best value and function for connectivity to address a variety of applications like Smart Grid, Intelligent Farm, and other IoT enterprise applications.
 
 ### Features 
 
 - Computing with Raspberry Pi4 (Linux).
 - Based on the LoRa Concentrator Engine: Semtech® SX1302.
+- Supports Cellular module (Quectel BG96 or EG95) for NB-IOT / LTE CAT-M1 / LTE CAT1 / LTE CAT4 (only in Cellular variant).
 - Built-in Ublox ZOE-M8Q GPS Module.
 - Built-in Heat Sink for thermal heat dissipation management.
-- Supports 5V/3A power supply.
+- Supports 5V/3A and Power-Over-Ethernet (only in PoE variant) power supply.
 - IP30 housing.
 - TX power up to 27dBm, RX sensitivity down to -139 dBm @SF12, BW 125 KHz.
-- LoRa Frequency band support: RU864, IN865, EU868, US915, AU915, KR920, AS923.
-- Includes Pi ready 'ID EEPROM', GPIO setup, and device tree can be automatically configured from vendor information.
+- LoRa® Frequency band support: RU864, IN865, EU868, US915, AU915, KR920, AS923.
+- Includes Pi-ready 'ID EEPROM', GPIO setup, and device tree can be automatically configured from vendor information.
 - Supports a fully open source LoRaWAN server.
 
 ## Specifications
@@ -56,70 +64,116 @@ The overview covers the RAK7248 board and block diagram.
 The outer dimension of RAK7248 is **92x68.3x57.2 mm**. 
 
 <rk-img
-  src="/assets/images/wisgate/rak7248/datasheet/dimensions.png"
+  src="/assets/images/wisgate/rak7248/datasheet/1.png"
   width="60%"
-  caption="Device Dimensions"
+  caption="RAK7248/RAK7248C/RAK7248P Dimensions"
 />
 
 #### Circuit Board Modules Stack
 
-The figure below summarizes the basic building blocks of RAK7248. The RAK2287 is an essential part of it as it provides all LoRaWAN connectivity. It receives and transmits LoRa Frames and takes care of modulating/demodulating the signals among others. The processing of the LoRa Frames as well as higher-level protocol related tasks are done by the embedded host system (Raspberry Pi). Received and processed LoRa Frames are being sent to a LoRaWAN Server. The segmentation of protocol related tasks is outside the scope of this document.
+The figure below summarizes the basic building blocks of RAK7248. The RAK2287 is an essential part of it as it provides all LoRaWAN connectivity. It receives and transmits LoRa Frames and takes care of modulating/demodulating the signals among others. The processing of the LoRa Frames as well as higher-level protocol-related tasks is done by the embedded host system (Raspberry Pi). Received and processed LoRa Frames are being sent to a LoRaWAN Server. The segmentation of protocol-related tasks is outside the scope of this document.
 
 <rk-img
-  src="/assets/images/wisgate/rak7248/datasheet/RAK7244_system_structure.png"
+  src="/assets/images/wisgate/rak7248/datasheet/2.png"
   width="75%"
   caption="RAK7248 System Structure"
 />
 
-#### Block Diagram
+<rk-img
+  src="/assets/images/wisgate/rak7248/datasheet/3.png"
+  width="75%"
+  caption="RAK7248C System Structure"
+/>
 
-RAK7248 is the central hardware solution for all LoRa based radio communication. It receives and transmits radio messages. The processing of radio messages as well as the protocol related tasks are done by the embedded host system (Raspberry Pi4). Received and processed radio messages are being sent to a LoRaWAN server. The following figure shows the block diagram of RAK7248.
 
 <rk-img
-  src="/assets/images/wisgate/rak7248/datasheet/rak7248-block-diagram.png"
+  src="/assets/images/wisgate/rak7248/datasheet/4.png"
   width="75%"
-  caption="RAK7248 Block Diagram"
+  caption="RAK7248P System Structure"
+/>
+
+#### Block Diagram
+
+RAK7248 is the central hardware solution for all LoRa based radio communication. It receives and transmits radio messages. The processing of radio messages as well as the protocol related tasks is done by the embedded host system (Raspberry Pi4). Received and processed radio messages are being sent to a LoRaWAN server. The following figure shows the block diagram of RAK7248.
+
+<rk-img
+  src="/assets/images/wisgate/rak7248/datasheet/7.png"
+  width="75%"
+  caption="RAK7248C Block Diagram"
 />
 
 :::tip 📝 NOTE
 The concrete segmentation of the protocol related tasks is outside the scope of this document.
 ::: 
 
+### RAK9003 Pi HAT
+
+The concrete segmentation of the protocol related tasks is outside the scope of this document.
+
+<rk-img
+  src="/assets/images/wisgate/rak7248/datasheet/8.png"
+  width="50%"
+  caption="RPi to RAK9003"
+/>
+
+### RAK2013 Pi HAT
+
+The **RAK2013 Cellular Pi HAT** is an add-on board following the Raspberry Pi HAT standard. It can transmit UART data from the Raspberry Pi thru the Cellular network. It is essentially an LTE CAT4 mode.
+
+An additional feature of the board is the integrated audio codec and audio amplifier, which allow for VoLTE support. Thus, there is an earphone connector, MIC connector and speaker connector with an audio amplifier.
+
+<rk-img
+  src="/assets/images/wisgate/rak7248/datasheet/9.png"
+  width="75%"
+  caption="RPi to RAK2013"
+/>
+
+
 ### Hardware
+
+
 
 #### Interfaces
 
 The interface of RAK7248 is shown in the figure below.
 
 <rk-img
-  src="/assets/images/wisgate/rak7248/datasheet/interface.svg"
+  src="/assets/images/wisgate/rak7248/datasheet/5.png"
   width="100%"
-  caption="RAK7248 Interfaces"
+  caption="RAK7248/RAK7248P Interfaces"
 />
+
+<rk-img
+  src="/assets/images/wisgate/rak7248/datasheet/6.png"
+  width="100%"
+  caption="RAK7248C Interfaces"
+/>
+
 
 #### RF Characteristics
 
 ##### Operating Frequencies
 
-The WisGate Developer D4H supports all LoRaWAN frequency channels as below. Which is easy to configure while building the firmware from the source code.
+The RAK7248 models support all LoRaWAN® bands.
 
 | **Region**    | **Frequency (MHz)** |
 | ------------- | ------------------- |
 | Europe        | EU868               |
+| China         | CN470               |
+| Russia        | RU864               |
+| India         | IN865               |
 | North America | US915               |
-| Asia          | AS923               |
 | Australia     | AU915               |
 | Korea         | KR920               |
-| India         | IN865               |
-| Russia        | RU864               |
+| Asia          | AS923               |
 
 ##### LoRa RF Characteristics
 
 ###### Transmitter RF Characteristics
 
-The RAK2287 has an excellent transmitter performance. It is highly recommended to use an optimized configuration for the power level configuration, which is part of the HAL. This results in a mean RF output power level and current consumption.
+RAK2287 has an excellent transmitter performance. It is highly recommended to use an optimized configuration for the power level configuration, which is part of the HAL. This results in a mean RF output power level and current consumption. 
 
-| **PA control** | **pwid  control** | **Power** |
+| **PA control** | **PWID  control** | **Power** |
 | -------------- | ----------------- | --------- |
 | **0**          | 10                | -6 dBm    |
 | **0**          | 13                | -3 dBm    |
@@ -179,12 +233,10 @@ It is highly recommended, to use optimized RSSI calibration values, which is par
 
 ##### LoRa Antenna
 
-###### Overview
-
 The LoRa Antenna with RP-SMA male connector is shown in the figure below:
 
 <rk-img
-  src="/assets/images/wisgate/rak7248/datasheet/lora-antenna.png"
+  src="/assets/images/wisgate/rak7248/datasheet/10.png"
   width="40%"
   caption="LoRa Antenna"
 />
@@ -194,30 +246,53 @@ The LoRa Antenna with RP-SMA male connector is shown in the figure below:
 The antenna's mechanical dimension is shown below:
 
 <rk-img
-  src="/assets/images/wisgate/rak7248/datasheet/lora-antenna-dimension.png"
+  src="/assets/images/wisgate/rak7248/datasheet/11.png"
   width="60%"
   caption="LoRa Antenna Dimension (mm)"
 />
 
 ###### Antenna Parameters
 
-| Items                              | Specifications          | Specifications          |
-| ---------------------------------- | :---------------------- | ----------------------- |
-| Frequency Range                    | 863~870 MHz             | 902~928 MHz             |
-| Peak Gain                          | 2.8 dBi                 | 2.3 dBi                 |
-| Voltage Standard Wave Ratio (VSWR) | ≤1.5                    | ≤1.5                    |
-| Efficiency                         | >80%                    | >80%                    |
-| Feed Impedance                     | 50 Ohms                 | 50 Ohms                 |
-| Working Temperature & Humidity     | T: -35~+75 ºC, H: 5~95% | T: -35~+75 ºC, H: 5~95% |
+| Items                              |         Specifications         |
+| ---------------------------------- | :----------------------------: |
+| Voltage Standard Wave Ratio (VSWR) |             1.5:1              |
+| Gain                               |            -2.0 dBi            |
+| Working Temperature & Humidity     | T:-35 ºC ~ +80 ºC, H: 0% ~ 95% |
+| Storage Temperature & Humidity     | T:-40 ºC ~ +85 ºC, H: 0% ~ 95% |
+
+##### LTE
+
+For a built-in BG96, there is one LTE antenna and one GPS antenna. For module built-in EG91/EG95, there are two LTE antennas and no GPS antenna.
+
+<rk-img
+  src="/assets/images/wisgate/rak7248/datasheet/12.png"
+  width="40%"
+  caption="LTE Antenna"
+/>
+###### Antenna Dimension
+
+<rk-img
+  src="/assets/images/wisgate/rak7248/datasheet/13.png"
+  width="40%"
+  caption="LTE Antenna Dimensions"
+/>
+
+###### Antenna Parameters
+
+| Items                              |                 Specifications                 |
+| ---------------------------------- | :--------------------------------------------: |
+| Frequency (MHz)                    |   700 / 800 / 880 / 960 / 1710 / 1880 / 2170   |
+| Voltage Standard Wave Ratio (VSWR) |     9.3 / 4.6 / 3.6 / 4.9 / 9.3 / 4.4 / 15     |
+| Gain                               | 1.63 / 1.84 / 1.96 / 2.23 / 0.03 / 0.01 / 1.97 |
+| Working Temperature & Humidity     |         T:-35 ºC ~ +80 ºC, H: 0% ~ 95%         |
+| Storage Temperature & Humidity     |         T:-40 ºC ~ +85 ºC, H: 0% ~ 95%         |
 
 ##### GPS Antenna
-
-###### Overview
 
 The GPS antenna with SMA Male Connector for the WisGate D4H LPWAN Gateway is shown below
 
 <rk-img
-  src="/assets/images/wisgate/rak7248/datasheet/gps-antenna.png"
+  src="/assets/images/wisgate/rak7248/datasheet/14.png"
   width="40%"
   caption="GPS Antenna"
 />
@@ -227,7 +302,7 @@ The GPS antenna with SMA Male Connector for the WisGate D4H LPWAN Gateway is sho
 The antenna's mechanical dimension is shown below:
 
 <rk-img
-  src="/assets/images/wisgate/rak7248/datasheet/gps-antenna-dimension.png"
+  src="/assets/images/wisgate/rak7248/datasheet/15.png"
   width="60%"
   caption="GPS Antenna Dimensions"
 />

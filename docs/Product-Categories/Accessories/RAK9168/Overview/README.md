@@ -13,7 +13,6 @@ tags:
 
 # RAK9168 5V/6A 12V/2.5A PoE Splitter
 
-
 Thank you for choosing **RAK9168 5V/6A 12V/2.5A PoE Splitter** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)

@@ -12,13 +12,7 @@ next: ../Testing-Report/
 
 # RAK7246G WisGate Developer D0 Gateway Datasheet
 
-<!---
-<rk-img
-  :src="`${$frontmatter.static_root}/jtv6vtbowwxsrbeupcac.png`"
-  width="100%"
-  caption="RAK7246G WisGate Developer D0 Gateway"
-/>
--->
+
 
 ## Overview
 

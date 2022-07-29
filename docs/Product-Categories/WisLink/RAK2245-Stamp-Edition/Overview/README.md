@@ -18,11 +18,7 @@ Thank you for choosing **RAK2245 Stamp WisLink LPWAN Concentrator** in your awes
 * [RAK2245 Stamp 3D Model](https://downloads.rakwireless.com/3D_File/WisLink/PWB-RAK2245.stp)
 
 
-<!-- <rk-img
-  src="/assets/images/wislink-lora/rak2245-stamp-edition/datasheet/overview/r8b1kuz7nsyovmac80kq.png"
-  width="60%"
-  caption="RAK2245 WisLink LPWAN Concentrator"
-/> -->
+
 
 ## Product Description
 
@@ -32,10 +28,7 @@ The Stamp form factor feature enables easy integration into the system's main bo
 
 Overall, this gateway module is the most economical way to create different solutions like smart grids, intelligent farms and other IoT applications. It is also ideal for manufacturing small series that can expand into more applications.
 
-<!-- <rk-btn
-  src="../quickstart/"
-  label="Get Started with RAK2245 Stamp WisLink LPWAN Concentrator"
-/> -->
+
 
 ## Product Features
 

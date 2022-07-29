@@ -30,11 +30,7 @@ The node can work in a number of modes, with different data rates and read data 
 
 This board is a complete solution in developing your LoRaWAN protocol techniques. A few of its application includes: Automated Meters Reading, Home and Building Automation, Wireless Alarm and Security Systems, Industrial Monitoring and Control and Long Range Irrigation Systems
 
-<!-- 
-<rk-btn
-  src="/Product-Categories/WisDuo/RAK811-Breakout-Board/Quickstart/#quick-start-guide"
-  label="Get Started with RAK811 Breakout Board"
-/> -->
+
 
 
 ## Product Features

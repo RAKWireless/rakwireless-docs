@@ -12,13 +12,7 @@ rak_img: /assets/images/wishat/rak9003-poe-hat/datasheet/RAK9003_home.png
 
 # RAK9003 PoE Pi HAT Datasheet
 
-<!---
-<rk-img
-  src="/assets/images/wishat/rak9003-poe-hat/datasheet/rak9003-poe-hat.png"
-  width="75%"P
-  caption="RAK9003 PoE Pi HAT"
-/>
---->
+
 
 ## Overview
 

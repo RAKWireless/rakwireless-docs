@@ -11,11 +11,7 @@ next: ../Datasheet/
 
 # RAK13003 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock RAK13003 board and how to use it.
--->
 
 ## Prerequisite
 
@@ -53,7 +49,6 @@ The RAK13003 is an IO expansion module that can be mounted to the IO slot of the
 | **Row 3**  | PA4      | PA5      | PB2      | PB3      |
 | **Row 4**  | PA6      | PA7      | PB0      | PB1      |
 | **Row 5**  | GND      | VCC      | GND      | VCC      |
-
 
 For more information about RAK13003, refer to the [Datasheet](../Datasheet/).
 
@@ -166,7 +161,7 @@ In the following example, you will be using the [RAK13003 WisBlock IO Expansion 
 //#define PAOUT_PBIN 
 
 Adafruit_MCP23X17 mcp;
-  
+
 void setup() 
 {  
   pinMode(WB_IO2, OUTPUT);

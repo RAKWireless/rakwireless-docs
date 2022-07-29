@@ -50,7 +50,6 @@ The RAK14012 WisBlock LED Matrix can be mounted on the IO slot of the WisBlock B
 
 ##### Assembling
 
-
 As shown in **Figure 2**, the location for the IO slot is properly marked by silkscreen. Follow carefully the procedure defined in [RAK5005-O module assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
 <rk-img
@@ -125,7 +124,6 @@ In this example, you will be seeing multiple LED Matrix display patterns and col
 - LED Matrix GND should be connected to RAK14012 GND.
 :::
 
-
 1. You need to select first the WisBlock Core you have, as shown in **Figure 8** to **Figure 10**.
 
 <rk-img
@@ -145,7 +143,6 @@ In this example, you will be seeing multiple LED Matrix display patterns and col
   width="100%"
   caption="Selecting RAK11300 as WisBlock Core"
 />
-
 
 2. Copy the example code below:
 

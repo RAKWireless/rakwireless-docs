@@ -232,44 +232,6 @@ Replace the module with a new one if discharge time at room temperature is notic
 | Recommended Usage (indoor/outdoor)     | Outdoor                                  |
 | Net Weight (kg)                        | ~8 kg                                    |
 | Dimension (L/W/H, mm)                  | 499x280x75（±3) mm                       |
-<!-- 
-### BMS PCBA Connector Definition
-
-<rk-img
-  src="/assets/images/accessories/rak9155/quickstart/04.png"
-  width="50%"
-  caption="BMS PCBA Connector"
-/>
-
-### Voltage Sampling Connector
-
-| PIN | Wire No. | Signal | Remarks  |
-| --- | -------- | ------ | -------- |
-| 1   | BC0      | Signal | Cell #1- |
-| 2   | BC1      | Signal | Cell #1+ |
-| 3   | BC2      | Signal | Cell #2+ |
-| 4   | BC3      | Signal | Cell #3+ |
-| 5   | BC4      | Signal | Cell #4+ |
-
-### Temperature Sampling Connector Definition
-
-| PIN | Wire No. | Signal | Remarks        |
-| --- | -------- | ------ | -------------- |
-| 1   | T1+      | Signal | Temperature#1+ |
-| 2   | T1-      | Signal | Temperature#1- |
-| 3   | T2+      | Signal | Temperature#2+ |
-| 4   | T2-      | Signal | Temperature#2- |
-| 5   | Reserved | Signal | -              |
-| 6   | Reserved | Signal | -              |
-
-### Key Connector Definition
-
-| PIN | Wire No. | Signal | Remarks                |
-| --- | -------- | ------ | ---------------------- |
-| 1   | LED      | Signal | LED positive, 3.3V/3mA |
-| 2   | GND      | Signal | LED GND                |
-| 3   | GND      | Signal | Key GND                |
-| 4   | KEY      | Signal | Key                    | -->
 
 ### Interfaces
 

@@ -94,7 +94,7 @@ For flashing the firmware, refer to the [Flash the Firmware Using DAPLink and RA
 :::
 
 ##### RF Interface  
-  
+
 The RF pins of the RAK4600 Evaluation Board are connected to external antennas through a standard iPEX antenna connector. 
 
 Use **Figure 5** and **Figure 6** as a reference to identify the antennas.
@@ -124,7 +124,6 @@ Use **Figure 7** as a reference to connect the antennas.
 />
 
 ##### USB Interface 
-
 
 The Micro-B USB connector is compliant with the USB 2.0 specification. The pin definition of the USB interface is shown below:
 
@@ -390,7 +389,6 @@ The pin definition of the RAK600 Evaluation Board Li-Ion battery connector is sh
 | 1       | GND          | Ground                        |
 | 2       | VBAT         | Positive + pin of the battery |
 
-
 The full specification of the RAK4600 Evaluation Board battery is shown in the table below.
 
 
@@ -424,7 +422,6 @@ The pin definition of the RAK4600 Evaluation Board solar panel connector is show
 | ------- | ------------ | ----------------------------- |
 | 1       | C0NN_5V      | Positive + pin of solar panel |
 | 2       | GND          | GND                           |
-
 
 The full specification of the Solar Panel for the RAK4600 Evaluation Board is shown in the table below.
 
@@ -507,7 +504,7 @@ Exposure to maximum rating conditions may affect device reliability.
 #### Mechanical Characteristics
 
 ##### Board Dimensions
-  
+
 Figure 10 shows the actual dimensions of the RAK4600 Evaluation Board measured in millimeters (mm). 
 
 <rk-img
@@ -516,22 +513,7 @@ Figure 10 shows the actual dimensions of the RAK4600 Evaluation Board measured i
   caption="RAK4600 Evaluation Board dimensions"
 />
 
-<!-- schematic removed
 
-#### Schematic Diagram
-
-<rk-img
-  src="/assets/images/wisduo/rak4600-evaluation-board/datasheet/rak4600evb_sch1.png"
-  width="100%"
-  caption="RAK4600 EVB Schematic Diagram page 1"
-/>
-
-<rk-img
-  src="/assets/images/wisduo/rak4600-evaluation-board/datasheet/rak4600evb_sch2.png"
-  width="100%"
-  caption="RAK4600 EVB Schematic Diagram page 2"
-/>
--->
 ## Certification
 
 <rk-certifications :params="$page.frontmatter.certifications" />

@@ -17,13 +17,7 @@ rak_img: /assets/images/wishat/rak2287-pi-hat/overview/RAK2287_home.png
 
 # RAK2287/RAK5146 Pi HAT Datasheet
 
-<!---
-<rk-img
-  :src="`${$frontmatter.static_root}/1.rak2287-pi-hat.png`"
-  width="75%"
-  caption="RAK2287/RAK5146 Pi HAT"
-/>
---->
+
 
 
 ## Overview

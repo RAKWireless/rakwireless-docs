@@ -11,14 +11,7 @@ next: ../Datasheet/
 
 # RAK5804 Quick Start Guide
 
-<!--
-## Introduction
 
-This guide introduces the WisBlock RAK5804 Interface Extension board and how to use it.
-
-The information obtained from the external modules will then be printed over the USB debug port of the WisBlock Base board.
-
--->
 
 ## Prerequisite
 
@@ -208,7 +201,7 @@ static const unsigned char PROGMEM image_data_Saraarray[] = {
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 };
- 
+
 void setup() {
     // put your setup code here, to run once:
   Serial.begin(115200);
@@ -226,7 +219,7 @@ void setup() {
   display.drawBitmap(0, 0, image_data_Saraarray, 128, 64, 1);
   display.display();
 }
- 
+
 void loop() {
     // put your main code here, to run repeatedly:
   
@@ -521,7 +514,7 @@ static const unsigned char PROGMEM image_data_Saraarray[] = {
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 };
- 
+
 void setup() {
     // put your setup code here, to run once:
   Serial.begin(115200);
@@ -539,7 +532,7 @@ void setup() {
   display.drawBitmap(0, 0, image_data_Saraarray, 128, 64, 1);
   display.display();
 }
- 
+
 void loop() {
     // put your main code here, to run repeatedly:
   
@@ -845,7 +838,7 @@ static const unsigned char PROGMEM image_data_Saraarray[] = {
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 };
- 
+
 void setup() {
     // put your setup code here, to run once:
   Serial.begin(115200);
@@ -863,7 +856,7 @@ void setup() {
   display.drawBitmap(0, 0, image_data_Saraarray, 128, 64, 1);
   display.display();
 }
- 
+
 void loop() {
     // put your main code here, to run repeatedly:
   

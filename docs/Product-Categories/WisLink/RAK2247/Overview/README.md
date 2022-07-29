@@ -16,7 +16,7 @@ Thank you for choosing **RAK2247 WisLink LPWAN Concentrator** in your awesome Io
 * [Datasheet](../Datasheet/)
 * [RAK2247 3D Model](https://downloads.rakwireless.com/3D_File/WisLink/PWB-RAK2247.stp)
 * [Quick Start Guide for Raspberry Pi and RAK LPWAN Concentrators](https://docs.rakwireless.com/Knowledge-Hub/Learn/Raspberry-Pi-and-RAK-LPWAN-Concentrators/)
-  
+
 RAK2247 supports development based on multiple platforms, you can choose suitable development platform according to your requirements.
 
 * **RAK2247 USB/SPI + Raspberry Pi**

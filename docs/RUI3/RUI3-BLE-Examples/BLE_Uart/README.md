@@ -33,16 +33,7 @@ The project is available on Arduino IDE **RAK WisBlock RUI Examples**.
   caption="Uploading the BLE_Configuration example code"
 />
 
-<!-- 
-4. You should now be able to see the project logs on the Serial Monitor of Arduino IDE.
 
-<rk-img
-  src="/assets/images/rui3/ble_examples/ble-conf-log.png"
-  width="90%"
-  caption="Serial Monitor BLE_UART log"
-/>
-
--->
 
 ## Example Details
 

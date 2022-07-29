@@ -57,7 +57,7 @@ The RAK12500 uses the u-blox ZOE-M8Q module. It supports a wide variety of satel
 />  
   
 ### Hardware  
-  
+
 The hardware specification is categorized into five parts that cover the chipset and pinouts and the corresponding functions and diagrams of the board. It also presents the parameters and their standard values in terms of electrical and mechanical.
 
 #### Chipset
@@ -92,7 +92,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 #### Electrical Characteristics  
   
 ##### Recommended Operating Conditions    
-  
+
 The table below shows the recommended operating conditions for the RAK12500 WisBlock GNSS Location Module:  
   
 | **Symbol**       | **Description**             | **Min.** | **Nom.** | **Max.** | **Unit** |
@@ -104,7 +104,7 @@ The table below shows the recommended operating conditions for the RAK12500 WisB
 #### Mechanical Characteristics  
   
 ##### Board Dimensions  
-  
+
 Figure 4 shows the dimensions and mechanical drawing of the RAK12500 module.  
   
 <rk-img

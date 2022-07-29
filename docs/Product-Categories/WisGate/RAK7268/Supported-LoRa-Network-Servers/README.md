@@ -573,7 +573,6 @@ This section shows how to send downlink payload from AWS IoT LoRaWAN Server to e
   caption="Specifying a Topic"
 />
 
-
 4. You should see traffic on AWS similar, as shown below:
 
     ```json
@@ -599,7 +598,6 @@ This section shows how to send downlink payload from AWS IoT LoRaWAN Server to e
   width="100%"
   caption="Traffic on AWS"
 />
-
 
 5. You should see traffic on your console of end device similar, as shown below. 
 
@@ -733,7 +731,6 @@ For this tutorial, we will use Europe 863-870 MHz (SF12 for RX2 - recommended).
   width="100%"
   caption="Adding a gateway"
 />
-
 
 3. To register your gateway, scroll down and click **Create gateway**.
 

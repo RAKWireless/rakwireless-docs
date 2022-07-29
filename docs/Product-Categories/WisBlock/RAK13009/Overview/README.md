@@ -24,12 +24,7 @@ Thank you for choosing **RAK13009 WisBlock QWIIC** in your awesome IoT Project! 
 * [24-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 
-<!--
-**Examples**
 
-For All WisBlock Core:
-* [Sample Code: RAK13009](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/sensors/RAK13009_UVlight_LTR390/RAK13009_UVlight_LTR390.ino)
--->
 
 ## Product Description
 

@@ -21,35 +21,7 @@ Additionally, RAK offers a second alternative for advanced customers who need to
 
 ### Install Development Environment
 
-<!--
-First install last version of [esp-idf](https://github.com/espressif/esp-idf/releases/latest)
-
-<rk-img
-  src="/assets/images/wisblock/rak2305/quickstart/esp-idf-releases.png"
-  width="90%"
-  caption="ESP-IDF Releases"
-/>
-On section **Using git**
-
-<rk-img
-  src="/assets/images/wisblock/rak2305/quickstart/esp-idf-git.png"
-  width="90%"
-  caption="ESP-IDF using git"
-/>
-
-mkdir %userprofile%\esp
-cd %userprofile%\esp
-
-git clone -b v4.2.1 --recursive https://github.com/espressif/esp-idf.git esp-idf-v4.2.1
-cd esp-idf-v4.2.1/
--->
-<!--
-cd %userprofile%\esp
-If you have already cloned ESP-IDF before, then run git checkout to update your branch.
-git fetch --all --tags
-git checkout tags/v4.2.1
-Run the command to get all the submodules updated:
-git submodule update --init
+ submodule update --init
 -->
 
 #### Install Prerequisites
@@ -86,7 +58,6 @@ python -m pip install pyyaml xlrd click
 
 6. Download and install the precompiled [Windows toolchain](https://dl.espressif.com/dl/xtensa-esp32-elf-gcc8_2_0-esp-2020r2-win32.zip). Unzip the toolchain zip file to C:\Program Files (or some other location). The zip file contains a single directory xtensa-esp32-elf. Next, the bin subdirectory of your toolchain install folder must be added to your path.
 
-
 7. Download and install the configuration tool **mconf-idf** from the kconfig-frontends releases page. This is the mconf configuration tool with some minor customizations for ESP-IDF. This tool will also need to be unzipped to a directory which is then added to your path.<br>
 
 - [mconf-idf](https://github.com/espressif/kconfig-frontends/releases/)
@@ -106,10 +77,6 @@ Press **Windows+R** to open “**Run**” box. Type “**cmd**” and then click
 ```
 mkdir %userprofile%\esp
 ```
-<!--
-Linux(Ubuntu)
-mkdir $HOME/esp
--->
 
 3. Clone the ESP-AT project. To clone the ESP-AT project into installation directory, execute the commands below:
 

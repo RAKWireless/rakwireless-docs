@@ -44,7 +44,7 @@ The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P
 ## Specifications
 
 ### Overview  
-  
+
 The RAK3244 BastWAN Breakout Board is shown in **Figure 1**, which displays the top and back view of the board, respectively.<br><br>
 
 <rk-img
@@ -89,7 +89,7 @@ When programming via a DAPLink tool, it is required to have all of the following
 ::: tip 📝 NOTE
 For the aforementioned reason, it is best you leave these exposed for programming purposes and not to remap them as GPIOs.
 :::    
-  
+
 The proper connection between the DapLink tool and RAK3244 BastWAN Breakout Board is illustrated in **Figure 4**.
 
 <rk-img
@@ -103,7 +103,7 @@ The proper connection between the DapLink tool and RAK3244 BastWAN Breakout Boar
 **I2C_SCL** and **I2C_SDA** are connected to the ATECC608A crypto chip for the purpose of developing cryptographic applications: network end-point key management and exchange small message and PII data encryption, secure boot and protected download, ecosystem control, and anti-cloning. Additional I2C peripherals can be added using the breakout pins on connector J3.
 
 ##### RF Interface  
-  
+
 The RF pin of the RAK4260 module is wired to an SMA antenna connector.
 
 #### Pin Definition
@@ -166,7 +166,7 @@ The following tables below show the pin definition of the RAK3244 BastWAN Breako
 #### RF Characteristics  
   
 ##### Operating Frequencies  
-  
+
 The RAK3244 Breakout Board supports the following LoRa bands:  
   
 | Region | Frequency (MHz) |
@@ -177,7 +177,7 @@ The RAK3244 Breakout Board supports the following LoRa bands:
 | Asia | AS923 |
   
 ##### Sensitivity Level  
-  
+
 The following charts show the receiving sensitivity of RAK3244 BastWAN at 866&nbsp;Mhz operating frequency.<br><br>
 
   
@@ -203,23 +203,7 @@ The following charts show the receiving sensitivity of RAK3244 BastWAN at 866&nb
   caption="RAK3244 BastWAN Breakout Board Sensitivity Plot @ SF12"
 />
 
-<!--
-#### Electrical Characteristics
 
-##### Power Consumption  
-  
-| Item                    | Power Consumption | Condition            |
-| ----------------------- | ----------------- | -------------------- |
-| Output Power 20dB(MAX)    | TBD          | -      |
-| Output Power 17dB    | TBD           | -      |
-| Output Power 14dB    | TBD | -        |
-| Receive mode | TBD           | -                    |
-| Sleep mode              | TBD            | - |
-
-::: tip Note:
-:pencil:TBD : To be disclosed
-:::  
--->
   
 #### Mechanical Characteristics
 

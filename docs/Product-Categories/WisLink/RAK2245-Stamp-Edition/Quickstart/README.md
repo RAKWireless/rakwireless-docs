@@ -13,12 +13,7 @@ rak_img: /assets/images/wislink-lora/rak2245-stamp-edition/quickstart/overview/R
 # RAK2245 Stamp Edition Quick Start Guide
 
 ## Prerequisites
-<!-- 
-<rk-img
-  src="/assets/images/wislink-lora/rak2245-stamp-edition/quickstart/quick-start-guide/ce6miwo22k2n1zqhptaq.png"
-  width="60%"
-  caption="RAK2245 Stamp WisLink LPWAN Concentrator"
-/> -->
+
 
 ### What do you need?
 
@@ -539,7 +534,6 @@ It is advisable to change your password to tighten the security of your account.
 />
 
 #### 2. Using an Independent ChirpStack
-
 
 You can setup an Independent ChirpStack by yourself. This is a lot more complicated having to deploy a remote ChirpStack by yourself but Chirpstack provided a detailed guide on how to do it [here](https://www.chirpstack.io/guides/debian-ubuntu/).
 
