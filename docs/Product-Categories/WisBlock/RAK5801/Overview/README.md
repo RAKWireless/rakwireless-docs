@@ -49,6 +49,7 @@ For WisBlock Core RAK11200:
     * 2&nbsp;kV ESD protection
     * 2 ports
     * Supports 2, 3, and 4 wire sensor connections
+    * Chipset: STMicroelectronics LM2902
 
 * **Power consumption control**
     * The **RAK5801** modules power supply can be controlled by the **WisBlock Core** MCU to reduce power consumption.

@@ -37,6 +37,7 @@ The RAK16001 is an Analog-to-Digital (ADC) module, which uses an ADS7830 from Te
     * 8 Bits no missing codes
     * 3.3&nbsp;V power supply
     * Internal voltage reference at 2.5&nbsp;V
+    * Chipset: Texas Instruments ADS7830
 
 * **Size**
     * 25 x 45&nbsp;mm

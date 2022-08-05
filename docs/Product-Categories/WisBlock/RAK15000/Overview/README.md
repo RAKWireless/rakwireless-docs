@@ -49,6 +49,7 @@ The RAK15000 WisBlock EEPROM module, part of the RAKwireless Wisblock series, is
 * 256-byte Page Write Mode
 * Random and Sequential Read Modes
 * Standby current less than 3&nbsp;µA
+* Chipset: Microchip AT24CM02
 * **Module size**: 10 x 10&nbsp;mm
 
 ## Prerequisites

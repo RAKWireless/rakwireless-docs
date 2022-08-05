@@ -38,6 +38,7 @@ Thank you for choosing **RAK11200 WisBlock WiFi Module** in your awesome IoT Pro
 * Bluetooth v4.2 BR/EDR and BLE specification
 * Rich set of peripherals: RTC, UART, I2C, SPI, SD card interface  
 * Low-power deep-sleep mode 
+* Chipset: Espressif ESP32-WROVER
 
 ## Prerequisites
 

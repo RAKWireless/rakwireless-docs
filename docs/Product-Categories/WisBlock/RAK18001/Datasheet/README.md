@@ -31,6 +31,7 @@ The RAK18001 module has a built-in buzzer, using the small but very audible MLT-
 * Operating Voltage: 2.0V - 5.0V
 * Sound Output at 10cm distance: 75dB
 * Resonant Frequency: 4000Hz
+* Chipset: Jiangsu Huaneng Electronics MLT-5020
 * Module size: 10&nbsp;mm x 10&nbsp;mm
 * Built-in Buzzer size (MLT-5020): 5&nbsp;mm x 5&nbsp;mm x 2&nbsp;mm
 
@@ -52,9 +53,9 @@ The RAK18001 Buzzer Module can be mounted to any IO Slots (A, B, C, or D) of Wis
 
 The RAK18001 uses the MLT-5020 Buzzer. Please see manufacturer's [MLT-5020 Buzzer Page](https://lcsc.com/product-detail/Buzzers_Jiangsu-Huaneng-Elec-MLT-5020_C94598.html) for more details.  
 
-| Vendor               | Part number |
-| :------------------: | :---------: |
-| Jiangsu Huaneng Elec | MLT-5020    |
+| Vendor                      | Part number |
+| :-------------------------: | :---------: |
+| Jiangsu Huaneng Electronics | MLT-5020    |
 
 #### Pin Definition
 

@@ -39,6 +39,7 @@ The RAK14006 is a rotary encoder module with PEC11L-4125F-S0020 from BOURNS. RAK
 
 * **Module Specifications**
     * Rotary Encoder with an independent push switch 
+    * Chipset: BOURNS PEC11L-4125F-S0020
     * 3.3&nbsp;V Power supply
 
 * **Module Size**

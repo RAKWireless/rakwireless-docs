@@ -36,6 +36,7 @@ The RAK15001 is a NOR flash module with a 16&nbsp;MBit (2&nbsp;MByte) nonvolatil
     * Full voltage range: **2.7~3.6&nbsp;V**
     * Standby current less than 5&nbsp;uA
     * Temperature range: **-40&nbsp;°C to +85&nbsp;°C**
+    * Chipset: GigaDevice GD25Q16CNIG
   
 * **Module Size**
     * 10 x 10&nbsp;mm

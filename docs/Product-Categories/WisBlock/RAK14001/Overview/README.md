@@ -43,6 +43,7 @@ The RAK14001 is an RGB LED module that can be mounted to the IO slot of the WisB
     * Programmable Integrated Gradual Dimming
     * Support I2C Protocol
     * Support enable power supply 
+    * Chipset: On Semiconductors NCP5623B
 
 * **Size**
     * 25 x 35&nbsp;mm

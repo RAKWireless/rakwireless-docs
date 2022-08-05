@@ -27,6 +27,7 @@ The RAK2305 module is a 2.4&nbsp;GHz Wi-Fi and Bluetooth in a single module. The
 - Ultra-Low-Power Consumption
 - Wi-Fi 802.11 b/g/n
 - Module size: 29.5 x 25&nbsp;mm
+- Chipset: Espressif ESP32-WROVER
 
 ## Specifications
 
@@ -70,6 +71,12 @@ The overview covers the RAK2305 WisBlock board overview and block diagram. It al
 ### Hardware 
 
 The hardware specification is categorized into four parts. It discuses the interfacing of the module and its corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK2305 WisBlock WiFi Interface Module.
+
+#### Chipset
+| Vendor    | Part number  |
+| --------- | ------------ |
+| Espressif | ESP32-WROVER |
+
 
 #### Interfaces
 

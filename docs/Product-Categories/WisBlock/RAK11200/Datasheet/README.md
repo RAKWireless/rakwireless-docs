@@ -27,6 +27,7 @@ next: false
 * Bluetooth v4.2 BR/EDR and BLE specification
 * Rich set of peripherals: RTC, UART, I2C, SPI, SD card interface
 * low-power deep-sleep mode
+* Chipset: Espressif ESP32-WROVER
 
 ## Specifications
 
@@ -69,6 +70,11 @@ The hardware specification is categorized into four parts. It discuses the inter
   width="50%"
   caption="Force ESP32 Download mode"
 />
+
+#### Chipset
+| Vendor    | Part number        |
+| --------- | ------------------ |
+| Espressif | ESP32-WROVER       |
 
 #### Interfaces
 

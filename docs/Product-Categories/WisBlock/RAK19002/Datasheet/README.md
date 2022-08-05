@@ -30,6 +30,7 @@ The RAK19002 is a step-up boost regulator module, part of the RAKwireless WisBlo
 * Up to 85% efficiency at 3.6&nbsp;V input and 12&nbsp;V output
 * ±2&nbsp;% output voltage accuracy
 * 50&nbsp;mA output current
+* Chipset: Texas Instruments TPS61046
 * Module size: 10 x 10&nbsp;mm
 
 ## Specifications

@@ -51,6 +51,7 @@ The RAK17000 is a DC motor driver module. It can be mounted to the IO Slot of th
 - Motor power supply can be from an external source or from the WisBlock Base battery
 - Output current control 
 - Selection of power source can be done via 2.54&nbsp;mm 2-pin jumper
+- Chipset: Texas Instruments DRV8833
 - Module size: 25X35&nbsp;mm
 
 ## Prerequisites

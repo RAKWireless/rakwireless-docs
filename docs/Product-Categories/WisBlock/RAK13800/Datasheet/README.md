@@ -73,6 +73,11 @@ The RAK13800 module can be mounted to the IO slot of your WisBlock Base board. T
 
 The hardware specification is categorized into four parts. It shows the pinouts and their corresponding functions. It also covers the electrical and mechanical parameters that include the tabular data of its characteristics. This section also shows the schematic diagram of RAK13800.
 
+####  Chipset
+
+| Vendor | Part number |
+| ------ | ----------- |
+| WIZnet | W5100S-L    |
 
 #### Pin Definition
 

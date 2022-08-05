@@ -40,7 +40,7 @@ The module complies with LoRaWAN standards and supports LoRa point-to-point comm
 ## Product Features
 
 * **Module Specifications**
-    * Based on SX1262 LoRa chip
+    * Based on Semtech SX1262 LoRa chip
     * LoRaWAN Specification compatible
     * Supports the following bands: EU433, CN470, IN865, EU868, AU915, US915, KR920, RU864, and AS923
     * LoRaWAN Activation by OTAA/ABP

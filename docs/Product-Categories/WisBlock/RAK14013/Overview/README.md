@@ -36,6 +36,7 @@ The RAK14013 is a joystick module with embedded MCU based on ATTINY441-SSU from 
 * **Module Specifications**
     * Joystick module and push buttons
     * I2C interface 
+    * Chipset: ATMEL ATTINY441-SSU
     * 3.3&nbsp;V Power supply
 
 * **Module Size**

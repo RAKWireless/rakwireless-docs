@@ -32,6 +32,7 @@ RAK1921 is an OLED display module with a 128×64 dot matrix. The main characteri
     * Wide Viewing Angle    
     * Wide Temperature Range    
     * Low Power Consumption    
+    * Chipset: Solomon Systech Limited SSD1306 
     * Module size: 27.8 x 27.3&nbsp;mm    
 
 ## Specifications
@@ -41,6 +42,11 @@ RAK1921 is an OLED display module with a 128×64 dot matrix. The main characteri
 ### Hardware
 
 The hardware specification is categorized into four parts. It discusses the interfacing, pinouts, and its corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK1921 WisBlock OLED Display.
+
+####  Chipset
+| Vendor                  | Part number |
+| ----------------------- | ----------- |
+| Solomon Systech Limited | SSD1306     |
 
 
 #### Interfaces

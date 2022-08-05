@@ -50,6 +50,7 @@ There are two versions of RAK14000 module for sale in the RAKwireless Store, the
     * Ultra-low power consumption
     * Includes a Three-Button module
     * E-Ink Display and Three-Button module are connected over FPC (Flexible PCB)
+    * Chipset: Solomon Systech Limited SSD1680
 * **White-Black**
     * Display Resolution: 212 x 104 pixels
 * **White-Black-Red**

@@ -39,6 +39,7 @@ The RF communication characteristic of the Lora module makes it suitable for a v
 - **Module Size**: 20 x 30&nbsp;mm
 - **Supply Voltage**: 2.0&nbsp;V ~ 3.6&nbsp;V
 - **Temperature Range**: -20&nbsp;°C ~ 70&nbsp;°C
+- **Chipset**: Raspberry Pi Foundation RP2040, Semtech SX1262
 
 
 ## Specifications
@@ -68,6 +69,11 @@ The RAK11310 module is designed to work with the RAK5005-O base board. **Figure 
 ### Hardware
 
 The hardware specification is categorized into four parts. It covers the RF, electrical, and mechanical parameters, which include the tabular data of the functionalities and standard values. It also shows and discusses the diagram of the RAK11310 WisBlock LPWAN Module.
+
+#### Chipset
+| Vendor                           | Part number        |
+| -------------------------------- | ------------------ |
+| Raspberry Pi Foundation, Semtech | RP2040, SX1262     |
 
 #### RF Characteristics
 

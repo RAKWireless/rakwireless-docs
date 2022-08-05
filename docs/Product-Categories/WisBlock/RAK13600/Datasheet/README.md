@@ -34,7 +34,7 @@ modes:
 ### Features
 
 * **Module specifications**    
-    * Based on PN532   
+    * Based on NXP PN532   
     * External Antenna   
     * Low power    
 
@@ -58,6 +58,11 @@ The RAK13600 NFC reader module can be mounted to the IO slot of the WisBlock Bas
 ### Hardware
 
 The hardware specification is categorized into four parts. It discusses the pinouts of the module and its corresponding functions. It also covers the electrical and mechanical parameters that include the tabular data of its characteristics. This section also shows the schematic diagram of RAK13600.
+
+#### Chipset
+| Vendor | Part number |
+| ------ | ----------- |
+| NXP    | PN532       |
 
 #### Pin Definition
 

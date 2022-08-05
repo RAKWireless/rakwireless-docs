@@ -44,6 +44,7 @@ The RAK12002 is a Real-Time Clock module, part of the RAKwireless WisBlock Serie
 - Programmable Clock output
 - Extreme low-current consumption 40&nbsp;nA
 - Super capacitor backup power supply
+- Chipset: Micro Crystal RV-3028-C7
 - small size:10&nbsp;mm x 10&nbsp;mm
 
 ## Prerequisites

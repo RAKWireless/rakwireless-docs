@@ -26,6 +26,7 @@ The RAK14002 WisBlock Touch Sensor module is a 3-channel Capacitive Touch Sensor
 * Power button support
 * 3.3&nbsp;V power supply
 * I2C Compliant Communication Interface
+* Chipset: Microchip CAP1293
 * **Module size**: 25 x 35&nbsp;mm
 
 ## Specifications

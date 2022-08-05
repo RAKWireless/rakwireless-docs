@@ -57,6 +57,7 @@ Both LoRaWanÂ® and LoRa point-to-point connections are supported by an Arduinoâ„
 
 * I2C, SPI, Analog inputs, Digital inputs, and outputs    
 * Low power consumption
+* Chipset: Nordic nRF52840, Semtech SX1262
 
 ## Prerequisites
 

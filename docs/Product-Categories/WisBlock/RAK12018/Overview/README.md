@@ -33,7 +33,7 @@ LV3296 is connected to the main RAK12018 board via flex cable, which is ideal fo
 
 ## Product Features
 
-- Uses LV3296 scanner module
+- Uses RAKINDA LV3296 scanner module
 - Read 1D and 2D Barcodes
 - 3.3&nbsp;V Power Supply
 - 25&nbsp;mm x 36.4&nbsp;mm

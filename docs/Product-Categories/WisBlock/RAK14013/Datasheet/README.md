@@ -28,6 +28,7 @@ The RAK14013 is a joystick module with embedded MCU based on ATTINY441-SSU from 
 - Joystick module and push buttons 
 - I2C interface
 - 3.3&nbsp;V Power supply
+- Chipset: ATMEL ATTINY441-SSU
 - Module Size: 54&nbsp;mm x 85&nbsp;mm
 
 ## Specifications
@@ -48,6 +49,12 @@ The RAK14013 WisBlock Joystick Module can be mounted to the IO slot of the WisBl
 ### Hardware
 
 The hardware specification is categorized into three parts. It provides the pinouts of the module and their corresponding functions and diagrams. Also, it shows the mechanical parameters of the RAK14013 WisBlock Joystick Module.
+
+#### Chipset
+
+| Vendor | Part number   |
+| ------ | ------------- |
+| ATMEL  | ATTINY441-SSU |
 
 #### Pin Definition
 

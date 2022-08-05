@@ -26,6 +26,7 @@ RAK13001 is a WisBlock Interface module which extends the WisBlock system to be 
 - The output of relay supports 30&nbsp;VDC/2&nbsp;A rating
 - The input of opto-couple supports 12-24&nbsp;V
 - Module size: 25 X 35&nbsp;mm
+- Chipset: HONGFA HF46F
 
 ## Specifications
 
@@ -66,6 +67,11 @@ For input, RAK13001 uses an opto-couple as isolation, and it supports wet contac
 ### Hardware
 
 The hardware specification is categorized into four parts. It discusses the pinouts and its corresponding functions and diagrams of the module. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK13001 WisBlock Module.
+
+####  Chipset
+| Vendor  | Part number |
+| ------- | ----------- |
+| HONGFA  | HF46F       |
 
 #### Pin Definition
 

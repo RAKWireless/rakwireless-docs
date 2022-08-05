@@ -46,6 +46,7 @@ RAK13001 is a WisBlock Interface module which extends the WisBlock system to be 
     * The isolation between internal and external is up to 2500&nbsp;VDC
     * The output of relay supports 30&nbsp;VDC/2&nbsp;A rating
     * The input of opto-couple supports 12-24&nbsp;V
+    * Chipset: HONGFA HF46F
 
 * **Size**
     * 25 x 35&nbsp;mm

@@ -48,6 +48,7 @@ The RF communication characteristic of the Lora module makes it suitable for a v
 - **Module Size**: 20 x 30&nbsp;mm
 - **Supply Voltage**: 2.0&nbsp;V ~ 3.6&nbsp;V
 - **Temperature Range**: -20&nbsp;°C ~ 70&nbsp;°C
+- **Chipset**: Raspberry Pi Foundation RP2040, Semtech SX1262
 
 ## Prerequisites
 

@@ -27,6 +27,7 @@ This board can be connected with the WisBlock Base board like RAK5005-O through 
 - Wireless and wired charge
 - OVP, OCP, and OTP protection
 - Supports up to 5&nbsp;W applications
+- Chipset: ConvenientPower CPS3008
 - Module size: 15 X 25&nbsp;mm
 
 ## Specifications
@@ -46,6 +47,11 @@ The RAK19006 module can be mounted on the IO slot of the WisBlock Base board. **
 ### Hardware
 
 The hardware specification discusses the pinouts, and its corresponding functions and diagrams of the module. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK19006 WisBlock Module.
+
+####  Chipset
+| Vendor          | Part number |
+| --------------- | ----------- |
+| ConvenientPower | CPS3008     |
 
 #### Pin Definition
 

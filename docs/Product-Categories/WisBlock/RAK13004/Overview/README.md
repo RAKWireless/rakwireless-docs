@@ -44,6 +44,7 @@ The RAK13004 is a PWM expander module that can be mounted to the IO slot of WisB
 - Low Standby Current
 - 5.5&nbsp;V tolerant inputs
 - Operating Voltage: 2.3&nbsp;V to 5.5&nbsp;V @ -40&nbsp;°C to +85&nbsp;°C
+- Chipset:  NXP Semiconductors PCA9685
 - Module size: 25X35&nbsp;mm
 
 ## Prerequisites

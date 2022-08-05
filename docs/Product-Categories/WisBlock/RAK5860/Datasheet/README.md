@@ -86,6 +86,11 @@ The overview shows the realistic view of the RAK5860 module and its block diagra
 
 The hardware specification of the RAK5860 is categorized into two. It covers the electrical standard ratings and the functionalities of the module. It also discusses the diagram of the module and its mechanism.
 
+#### Chipset
+| Vendor  | Part number |
+| ------- | ----------- |
+| Quectel | BG77        |
+
 
 #### Electrical Characteristics
 ##### Absolute Maximum Ratings

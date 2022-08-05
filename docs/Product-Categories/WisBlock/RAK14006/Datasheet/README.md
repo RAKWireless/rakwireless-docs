@@ -22,6 +22,7 @@ The RAK14006 is a rotary encoder module with PEC11L-4125F-S0020 from BOURNS. RAK
 
 - Rotary Encoder with an independent push switch 
 - 3.3&nbsp;V Power supply
+- Chipset: BOURNS PEC11L-4125F-S0020
 - Module Size: 25&nbsp;mm x 35&nbsp;mm
 
 ## Specifications
@@ -38,6 +39,11 @@ The RAK14006 WisBlock Rotary Encoder Module can be mounted to the IO slot of the
   caption="RAK14006 WisBlock Rotary Encoder Module Mounting"
 />
 
+#### Chipset
+
+| Vendor  | Part number        |
+| ------- | ------------------ |
+| BOURNS  | PEC11L-4125F-S0020 |
 
 ### Pin Definition
 

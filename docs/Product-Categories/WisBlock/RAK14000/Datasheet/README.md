@@ -33,6 +33,7 @@ There are two versions of RAK14000 module for sale in the RAKwireless Store, the
 *   Extremely Low Power Consumption! Perfect for power-conscious applications.  
 *   Comes with a 3-Button Module. Application can be customized.
 *   Uses FPC (Flexible PCB) for its Display and Button modules
+*   Chipset: Solomon Systech Limited SSD1680
 
 * **White-Black**
     * Display Resolution: 212 x 104 pixels
@@ -57,6 +58,13 @@ The **RAK14000 E-Ink Display Module** is mounted to the IO Slot of a WisBlock Ba
 ### Hardware
 
 The hardware specification covers the pinouts of the board and its functionalities and diagrams. It also presents the parameters and their standard values.
+
+#### Chipset
+
+| Vendor                  | Part number |
+| ----------------------- | ----------- |
+| Solomon Systech Limited | SSD1680     | 
+
 
 #### Pin Definition
 

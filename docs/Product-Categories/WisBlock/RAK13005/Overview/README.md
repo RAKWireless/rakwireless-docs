@@ -46,6 +46,7 @@ This module offers safe communication over up to 40&nbsp;m distance between the 
     *   Very low current consumption in sleep mode with wake-up functions
     *   Support 12&nbsp;V and 24&nbsp;V LIN bus power supply
     *   Digital I/O levels compatible with 3.3&nbsp;V and 5&nbsp;V microcontrollers
+    *   Chipset: Infineon TLE7259-3
 
 * **Size**
     * 25 x 35&nbsp;mm

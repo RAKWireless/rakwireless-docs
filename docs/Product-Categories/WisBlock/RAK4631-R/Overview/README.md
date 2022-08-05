@@ -51,6 +51,7 @@ Also, it complies with LoRaWAN 1.0.3 protocols and supports LoRa point-to-point 
 - BLE5.0 (Tx power -20 to +4&nbsp;dBm in 4&nbsp;dB steps)
 - Serial Wire Debug (SWD) interface
 - Module size: 20 x 30&nbsp;mm
+- Chipset: Nordic nRF52840, Semtech SX1262
 
 ## Prerequisites
 

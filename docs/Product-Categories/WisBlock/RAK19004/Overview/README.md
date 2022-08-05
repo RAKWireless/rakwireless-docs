@@ -36,6 +36,7 @@ RAK19004 is a WisBlock Power module that can harness and convert green power suc
 * **Module specifications**
     * 5&nbsp;V Power Output
     * 2&nbsp;V-36&nbsp;V Power Input
+    * Chipset: Texas Instruments TPS55165-Q1
 
 * **Size**
     * 15 x 25&nbsp;mm

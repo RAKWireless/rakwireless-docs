@@ -34,6 +34,7 @@ In addition, the RAK5802 supports one I2C interface, customers can use this I2C 
 * Reserved I2C expansion interface
 * In the field fast crimping terminals
 * Designed with 18&nbsp;kV ESD protection level
+* Chipset: 3PEAK TP8485E
 * Small dimensions of 35&nbsp;mm x 25&nbsp;mm
 
 ## Specifications
@@ -53,9 +54,13 @@ In addition, the RAK5802 supports one I2C interface, customers can use this I2C 
 
 The hardware specification is categorized into four parts. It discusses the pinouts of the module and its corresponding functions and diagrams. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK5802 WisBlock Module.
 
+#### Chipset
+
+| Vendor | Part number |
+| ------ | ----------- |
+| 3PEAK  | TP8485E     |
 
 #### Pin Definition
-
 
 **Figure 2** shows the pin number of the sensor connector of the RAK5802 module.
 

@@ -46,6 +46,7 @@ The RAK14002 WisBlock Touch Sensor module is a 3-channel Capacitive Touch Sensor
     * Multiple Button Pattern Detection
     * Automatic recalibration
     * Operating Temperature range: –40&nbsp;ºC to +125&nbsp;ºC
+    * Chipset: Microchip CAP1293
   
 * **Size**
     * 25 x 35&nbsp;mm

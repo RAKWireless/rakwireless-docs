@@ -22,7 +22,7 @@ LV3296 is connected to the main RAK12018 board via flex cable, which is ideal fo
 
 ### Features
 
-- Uses LV3296 scanner module
+- Uses RAKINDA LV3296 scanner module
 - Read 1D and 2D Barcodes
 - 3.3&nbsp;V Power Supply
 - 25&nbsp;mm x 36.4&nbsp;mm
@@ -46,6 +46,11 @@ LV3296 can be mounted on the RAK12018 board via the mounting screw hole. A 12-pi
 ### Hardware
 
 The hardware specification is categorized into four parts. It covers the pinouts and diagrams of the board. It also discusses the electrical and mechanical characteristics of the RAK12018 WisBlock Code Scanner Module.
+
+####  Chipset
+| Vendor  | Part number |
+| ------- | ----------- |
+| RAKINDA | LV3296      |
 
 #### Pin Definition
 

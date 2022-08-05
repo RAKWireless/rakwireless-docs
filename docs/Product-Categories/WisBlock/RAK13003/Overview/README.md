@@ -43,6 +43,7 @@ The RAK13003 is an IO expansion module that can be mounted to IO slot of WisBloc
 - External Reset Input
 - Low Standby Current: 1&nbsp;μA (max.)
 - Operating Voltage: 2.7&nbsp;V to 5.5&nbsp;V @ -40&nbsp;°C to +85&nbsp;°C
+- Chipset: Microchip MCP23017
 - Module size: 25X3&nbsp;5mm
 
 ## Prerequisites

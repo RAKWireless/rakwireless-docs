@@ -41,7 +41,7 @@ The RAK14004 module is designed as an IO extension module that allows to add a k
 
     * Up to 8 x 8 buttons using scan matrix arrangement
     * 3.3&nbsp;V Power supply  
-    * ATMEGA328PB-AU Microchip MCU 
+    * Chipset: Microchip ATMEGA328PB-AU
 
 * **Size**    
     * 35&nbsp;mm x 25&nbsp;mm  

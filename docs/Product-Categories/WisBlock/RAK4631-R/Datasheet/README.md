@@ -43,7 +43,7 @@ Also, it complies with LoRaWAN 1.0.3 protocols and supports LoRa point-to-point 
 - BLE5.0 (Tx power -20 to +4&nbsp;dBm in 4&nbsp;dB steps)
 - Serial Wire Debug (SWD) interface
 - Module size: 20 x 30&nbsp;mm
-
+- Chipset: Nordic nRF52840, Semtech SX1262
 ## Specifications
 
 ### Overview
@@ -80,7 +80,10 @@ The RAK4631-R module is designed to work with Wisblock Base Boards. **Figure 3**
 
 The hardware specification is categorized into three parts. It covers the RF, electrical, and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK4631-R WisBlock LPWAN Module.
 
-
+#### Chipset
+| Vendor          | Part number        |
+| --------------- | ------------------ |
+| Nordic, Semtech | nRF52840, SX1262   |
 
 #### RF Characteristics
 

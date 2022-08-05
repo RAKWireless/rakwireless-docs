@@ -50,6 +50,7 @@ This board can be connected with the WisBlock Base board like RAK5005-O through 
     * Wireless and wired charge
     * OVP, OCP, and OTP protection
     * Supports up to 5&nbsp;W applications
+    * Chipset: ConvenientPower CPS3008
 
 * **Size**
     * 15 x 25&nbsp;mm

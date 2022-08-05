@@ -58,6 +58,7 @@ In addition, the **RAK5802** supports one I2C interface to connect external sens
     * Battery and 3.3&nbsp;V output for sensors    
     * 18&nbsp;kV ESD protection    
     * 1 port    
+    * Chipset: 3PEAK TP8485E
 
 * **Power consumption control**    
     * The **RAK5802** modules power supply can be controlled by the **WisBlock Core** MCU to reduce power consumption.    

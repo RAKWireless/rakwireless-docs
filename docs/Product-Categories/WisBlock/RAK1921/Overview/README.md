@@ -48,6 +48,7 @@ For All WisBlock Core Modules:
     * Wide Viewing Angle    
     * Wide Temperature Range    
     * Low Power Consumption    
+    * Chipset: Solomon Systech Limited SSD1306 
 
 * **Size**
     * 27.8 x 27.3&nbsp;mm    

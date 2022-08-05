@@ -40,7 +40,7 @@ Thank you for choosing **RAK13600 WisBlock NFC Reader Module** in your awesome I
 
 
 * **Module specifications**    
-    * Based on PN532   
+    * Based on NXP PN532   
     * External Antenna   
     * Low power    
 

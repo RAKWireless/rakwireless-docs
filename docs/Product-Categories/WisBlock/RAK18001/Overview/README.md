@@ -43,6 +43,7 @@ The **RAK18001** is a WisBlock Extra module that uses a **MLT-5020** as its buil
     * 75dB Sound Output at 10cm distance. Very Audible!  
     * PWM Controlled: Loudness and Pitch Level can be customized using your code  
     * Uses MLT-5020 Buzzer. Small and Compact, but Loud!
+    * Chipset: Jiangsu Huaneng Electronics MLT-5020
   
 * **Size**
     * Module Size: 10mm x 10mm

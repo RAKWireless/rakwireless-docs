@@ -34,6 +34,7 @@ In addition, this module integrates a 12&nbsp;V power supply. The power supply i
 * Reserved I2C expansion interface
 * Fast crimping terminal to easily connect external components on the field
 * Designed with a 2&nbsp;kV ESD protection level
+* Chipset: STMicroelectronics LM2902
 * Small dimensions of 35&nbsp;mm x 25&nbsp;mm
 
 
@@ -67,6 +68,12 @@ As shown in** Figure 1**, the module provides an output of 12&nbsp;V controlled 
 ### Hardware
 
 The hardware specification is categorized into four parts. It discusses the pinouts of the board and its functionalities and diagrams.
+
+#### Chipset
+
+| Vendor             | Part number |
+| ------------------ | ----------- |
+| STMicroelectronics | LM2902      | 
 
 #### Device Specification
 

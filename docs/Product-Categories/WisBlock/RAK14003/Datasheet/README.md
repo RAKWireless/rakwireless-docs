@@ -23,6 +23,7 @@ RAK14003 is an LED Bar Graph that is part of WisBlock Display modules. It consis
 - 5 green color LEDs, 3 yellow color LEDs，and 2 red color LEDs
 - Each LED can be controlled separately
 - 3.3&nbsp;V Power supply
+- Chipset: Microchip MCP23017, Hongke Lighting KEM-102510A-RYG
 - Module size: 25 x 45&nbsp;mm
 
 ## Specifications
@@ -48,6 +49,11 @@ The RAK14003 module can be mounted on the IO slot of the WisBlock Base board. **
 ### Hardware
 
 The hardware specification is categorized into four parts. It discusses the pinouts and its corresponding functions and diagrams of the module. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK14003 WisBlock LED Bar Graph Module.
+
+####  Chipset
+| Vendor                     | Part number                |
+| -------------------------- | -------------------------- |
+| Microchip, Hongke Lighting | MCP23017, KEM-102510A-RYG  |
 
 
 #### Pin Definition

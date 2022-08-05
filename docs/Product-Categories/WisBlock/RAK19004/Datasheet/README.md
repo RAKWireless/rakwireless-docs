@@ -26,6 +26,7 @@ RAK19004 is a WisBlock Power module that can harness and convert green power suc
 
 - 5&nbsp;V Power Output
 - 2&nbsp;V-36&nbsp;V Power Input
+- Chipset: Texas Instruments TPS55165-Q1
 - Module size: 15 X 25&nbsp;mm
 
 ## Specifications
@@ -39,6 +40,11 @@ The RAK19004 is an external module with four (4) mounting holes, so you can plac
 ### Hardware
 
 The hardware specification is categorized into four parts. It discusses the pinouts and their corresponding functions and diagrams of the module. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK19004 WisBlock Module.
+
+####  Chipset
+| Vendor            | Part number |
+| ----------------- | ----------- |
+| Texas Instruments | TPS55165-Q1 |
 
 #### Pin Definition
 

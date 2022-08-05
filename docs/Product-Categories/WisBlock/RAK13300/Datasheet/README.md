@@ -27,7 +27,7 @@ The module complies with LoRaWAN standards and supports LoRa point-to-point comm
 
 ### Features
 
-- Based on SX1262 LoRa chip
+- Based on Semtech SX1262 LoRa chip
 - LoRaWAN Specification compatible
 - Supports the following bands: EU433, CN470, IN865, EU868, AU915, US915, KR920, RU864, and AS923
 - LoRaWAN Activation by OTAA/ABP
@@ -55,6 +55,10 @@ The RAK13300 WisBlock LPWAN can be mounted to the IO slot of the WisBlock Base b
 
 The hardware specification is categorized into five parts. It shows the pinouts and their corresponding functions and diagrams. It also covers the rf, electrical, and mechanical parameters, which include the tabular data of the functionalities and standard ratings of the RAK13300 WisBlock LPWAN Wireless Module.
 
+#### Chipset
+| Vendor   | Part number |
+| -------- | ----------- |
+| Semtech  | SX1262      |
 
 #### Pin Definition
 

@@ -25,6 +25,7 @@ The RAK16001 is an Analog-to-Digital (ADC) module, which uses an ADS7830 from Te
 - 8 Bits no missing codes
 - 3.3&nbsp;V Power supply
 - Internal voltage reference at 2.5&nbsp;V
+- Chipset: Texas Instruments ADS7830
 - Module size: 25 X 45&nbsp;mm
 
 ## Specifications
@@ -44,6 +45,12 @@ The RAK16001 module can be mounted on the IO slot of the WisBlock Base board. **
 ### Hardware
 
 The hardware specification is categorized into four parts. It discusses the pinouts and their corresponding functions and diagrams of the module. It also covers the electrical and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK16001 WisBlock ADC Module.
+
+#### Chipset
+
+| Vendor            | Part number  |
+| ----------------- | ------------ |
+| Texas Instruments | ADS7830      |
 
 #### Pin Definition
 
