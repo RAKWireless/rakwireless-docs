@@ -112,3 +112,17 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
   width="100%"
   caption="RAK12033 schematic diagram"
 />
+
+<rk-img
+  src="/assets/images/wisblock/rak12033/datasheet/rak12033-axes.jpg"
+  width="40%"
+  caption="Definition of coordinate system of RAK12033 WisBlock 6-Axis Sensor Module"
+/>
+
+:::warning ⚠️ WARNING
+
+This chip is very sensitive, and the tightness of the mounting screws will affect its zero offset. Therefore, we recommend that once the RAK12033 is installed, do not repeatedly loosen or tighten the screws. The zero offset must need to be calibrated again every time loosening or tightening the screw the screws. Recommended screw torque range: 0.032 - 0.054 N-m.
+
+:::
+
+

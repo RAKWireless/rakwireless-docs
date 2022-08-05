@@ -152,6 +152,10 @@ But before installing, check the list first to know the required package for you
 </thead>
 <tbody>
     <tr>
+      <td>RAK3172 Module</td>
+      <td>stm32wle5</td>   
+    </tr>
+    <tr>
       <td>RAK811 Module</td>
       <td>stm32l151cb</td>   
     </tr>
@@ -235,6 +239,14 @@ pyocd pack --install nrf52
 Before flashing a firmware or a bootloader for your product, connect it first to the RAKDAP1 SWD interface.
 
 Here is an overview on how to connect the SWD interface. If you cannot find your product in the list, check the product documentation in the [RAK Documentation Center](https://docs.rakwireless.com).
+
+### RAK3172 Module
+
+<rk-img
+  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/rak3172-swd.png"
+  width="40%"
+  caption="RAK3172 Module Pinout"
+/>
 
 ### RAK811 Module
 

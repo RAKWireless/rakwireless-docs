@@ -2106,6 +2106,14 @@ void loop()
 
 This API allows the user to access the data rate.
 
+:::tip 📝 NOTE:
+Complete information about DR parameter on each region can be found on [RUI3 Appendix - LoRaWAN Regional Parameter (Data Rate)](/RUI3/Appendix/#data-rate-by-region).
+- **EU433 / RU864 / IN865 / EU868 / CN470 / KR920** and the data rate range of values is 0-5 (DR0-DR5). <br>
+- **AS923** and the data rate range of values is 2-5 (DR2-DR5). <br>
+- **US915** and the data rate range of values is 0-4 (DR0-DR4). <br>
+- **AU915** and the data rate range of values is 0-6 (DR0-DR6).
+:::
+
 ```c
 RAKLorawan::dr
 ```
@@ -2636,6 +2644,14 @@ void loop()
 ### txp
 
 This API allows the user to access the transmit power.
+
+:::tip 📝 NOTE:
+Highest power start from 0. Complete information about TXP parameter on each region can be found on [RUI3 Appendix - LoRaWAN Regional Parameter (TX Power)](/RUI3/Appendix/#tx-power-by-region).
+- **EU868 / RU864 / KR920 / AS923 / CN470** and Transmit power range of values is 0-7. <br>
+- **US915 / AU915** and Transmit power range of values is 0-14. <br>
+- **EU433** and Transmit power range of values is 0-5. <br>
+- **IN865** and Transmit power range of values is 0-10.
+:::
 
 ```c
 RAKLorawan::txp

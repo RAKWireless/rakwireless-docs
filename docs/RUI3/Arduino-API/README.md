@@ -2251,9 +2251,12 @@ analogReference(type);
 
 | **Function**   | `void analogReference(uint8_t type)`                                                                                                                                               |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **type** - Which type of reference to use <br> Type list: <br> `RAK_ADC_MODE_DEFAULT`<br> `RAK_ADC_MODE_3_0` <br>`RAK_ADC_MODE_2_4` <br> `RAK_ADC_MODE_1_8` <br>`RAK_ADC_MODE_1_2` |
+| **Parameters (Interval Vref RAK4630)** | **type** - Which type of reference to use: <br> `UDRV_ADC_MODE_DEFAULT`<br> `UDRV_ADC_MODE_3_3`<br> `UDRV_ADC_MODE_3_0`  <br>`UDRV_ADC_MODE_2_4` <br> `UDRV_ADC_MODE_1_8` <br>`UDRV_ADC_MODE_1_2` |
 | **Returns**    | void                                                                                                                                                                               |
 
+:::warning ⚠️ WARNING
+ADC voltage reference for RAK3172 and RAK3172-SiP is fixed to VDD voltage.
+:::
 
 ### analogWrite()
 

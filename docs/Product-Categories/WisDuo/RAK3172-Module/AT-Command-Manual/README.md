@@ -2278,7 +2278,7 @@ There must be no any UART termination after `+++`. There must be no CR or LF aft
 
 [Back](#content)  
 
-#### Appendix 
+## Appendix 
 
 ### Appendix I：Data Rate by Region
 

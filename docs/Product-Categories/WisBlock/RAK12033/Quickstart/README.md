@@ -1,4 +1,4 @@
----
+  ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK12033. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
 rak_img: /assets/images/wisblock/rak12033/overview/RAK12033_home.png
 tags:
@@ -66,6 +66,18 @@ As shown in **Figure 2**, the location for Slot C, D, E, and F are properly mark
   caption="RAK12033 connection to WisBlock Base"
 />
 
+<rk-img
+  src="/assets/images/wisblock/rak12033/datasheet/rak12033-axes.jpg"
+  width="40%"
+  caption="Definition of coordinate system of RAK12033 WisBlock 6-Axis Sensor Module"
+/>
+
+:::warning ⚠️ WARNING
+
+This chip is very sensitive, and the tightness of the mounting screws will affect its zero offset. Therefore, we recommend that once the RAK12033 is installed, do not repeatedly loosen or tighten the screws. The zero offset must need to be calibrated again every time loosening or tightening the screw the screws. Recommended screw torque range: 0.032 - 0.054 N-m.
+
+:::
+
 ##### Disassembling
 
 The procedure in disassembling any type of WisBlock module is the same. 
@@ -86,7 +98,7 @@ The procedure in disassembling any type of WisBlock module is the same.
   caption="Detaching silkscreen on the WisBlock module"
 />
 
-3. Apply force to the module at the position of the connector, as shown in **Figure 5**, to detach the module from the baseboard.
+3. Apply force to the module at the position of the connector, as shown in **Figure 6**, to detach the module from the baseboard.
 
 <rk-img
   src="/assets/images/wisblock/rak12033/quickstart/18.detaching-module.png"
@@ -264,7 +276,7 @@ void loop()
 If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12033 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12033_6_Axis_IIM42652) and this sample code in Github will work on all WisBlock Core.
 :::
 
-4. Once the example code is open, install the [RAK12033-IIM42652](https://github.com/RAKWireless/RAK12033-IIM42652) library, as shown in **Figure 9**.
+4. Once the example code is open, install the [RAK12033-IIM42652](https://github.com/RAKWireless/RAK12033-IIM42652) library, as shown in **Figure 10**.
 
 <rk-img
   src="/assets/images/wisblock/rak12033/quickstart/lib-install.png"
@@ -272,7 +284,7 @@ If you experience any error in compiling the example sketch, check the updated c
   caption="Installing RAK12033 sensor library"
 />
 
-5. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 10** and **Figure 11**.
+5. After successful installation of the library, you can now select the right serial port and upload the code, as shown in **Figure 11** and **Figure 12**.
 
 ::: tip 📝 NOTE
 If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the **Boot0** pin to be configured properly first before uploading. If not done properly, uploading the source code to RAK11200 will fail. Check the full details on the [RAK11200 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/#uploading-to-wisblock).
@@ -290,7 +302,7 @@ If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the *
   caption="Uploading the RAK12033 example code"
 />
 
-6. When you have successfully uploaded the example sketch, open the serial monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 12**, then your RAK12033 is communicating with the WisBlock core properly.
+6. When you have successfully uploaded the example sketch, open the serial monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown in **Figure 13**, then your RAK12033 is communicating with the WisBlock core properly.
 
 <rk-img
   src="/assets/images/wisblock/rak12033/quickstart/rak12033-logs.png"

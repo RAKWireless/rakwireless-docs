@@ -261,7 +261,7 @@ This command causes the device to enter Bootloader mode to upgrade firmware.
 | Command    | Input Parameter | Return Value                                          | Return Code |
 | ---------- | --------------- | ----------------------------------------------------- | ----------- |
 | `AT+BOOT?` | -               | `AT+BOOT`: enter bootloader mode for firmware upgrade | OK          |
-| `AT+BOOT`  | -               | `<BOOT MODE>`                                         |             |
+| `AT+BOOT` or `AT+BOOT=`  | -               | `<BOOT MODE>`                                         |             |
 
 **Example:**
 
@@ -495,7 +495,7 @@ OK
 ```
 :::tip 📝 NOTE
 - AT_PARAM_ERROR is returned when setting wrong or malformed value.
-- `<Input>`: 1 decimal integer and the range of values is 0~(2<sup>32</sup> -1).
+- `<Input>`: 1 decimal integer and the range of values is 1~(2<sup>32</sup> -1).
 :::
 
 [Back](#content)
@@ -1333,6 +1333,7 @@ OK
  **AS923** and the data rate range of values is 2-5 (DR2-DR5). <br>
  **US915** and the data rate range of values is 0-4 (DR0-DR4). <br>
  **AU915** and the data rate range of values is 0-6 (DR0-DR6).
+ - Complete information about DR parameter on each region can be found on [RUI3 Appendix - LoRaWAN Regional Parameter (Data Rate)](/RUI3/Appendix/#data-rate-by-region).
 :::
 
 [Back](#content)
@@ -1586,6 +1587,7 @@ OK
 **US915 / AU915** and Transmit power range of values is 0-14. <br>
 **EU433** and Transmit power range of values is 0-5. <br>
 **IN865** and Transmit power range of values is 0-10.
+- Highest power start from 0. Complete information about TXP parameter on each region can be found on [RUI3 Appendix - LoRaWAN Regional Parameter (TX Power)](/RUI3/Appendix/#tx-power-by-region).
 :::
 
 [Back](#content)
@@ -3006,7 +3008,7 @@ Switch to point-to-point mode, or LoRaWAN mode [0:Point-to-point, 1:LoRaWAN].
 
 | Command          | Input Parameter | Return Value                                                                           | Return Code |
 | ---------------- | --------------- | -------------------------------------------------------------------------------------- | ----------- |
-| ` AT+NWM? `      | -               | `AT+NWM`: get or set the network working mode (0 = P2P_LORA, 1 = LoRaWAN, 2 = P2P_FSK) | OK          |
+| `AT+NWM? `       | -               | `AT+NWM`: get or set the network working mode (0 = P2P_LORA, 1 = LoRaWAN, 2 = P2P_FSK) | OK          |
 | `AT+NWM=?`       | -               | 0,1,2                                                                                  | OK          |
 | `AT+NWM=<Input>` | 0,1,2           | *The RUI3 device will restart automatically to switch network work mode*               | -           |
 
@@ -3025,7 +3027,7 @@ Current Work Mode: LoRa P2P.
 :::tip 📝 NOTE
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
 - In this case, the default value is 1.
-- On RAK4630/RAK4631, the device will restart which requieres reconnection to detect it again via UART. 
+- On RAK4630/RAK4631, the device will restart which requires reconnection to detect it again via UART. 
 :::
 
 [Back](#content)
@@ -3600,12 +3602,27 @@ This command is used to access the LoRa® configuration test.
 | Command            | Input   parameter                                                                                                                           | Return   value                       | Return   code    |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ---------------- |
 | `AT+TCONF?`        | -                                                                                                                                           | `AT+TCONF`: configure LoRa® RF test  | OK               |
-| `AT+TCONF=?`       | -                                                                                                                                           | 868000000:14:0:7:1:0:0:1:4:25000:0:0 | OK               |
-| `AT+TCONF=<Input>` | `<Freq>:<Power>:<Bandwidth>:<LoraSf_datarate>:<CodingRate>:<Lna>:<Modulation>:<PayloadLen>:<PayloadLen>:<FskdDeviation>:<Note>:<BTproduct>` | -                                    | OKAT_PARAM_ERROR |
+| `AT+TCONF=?`       | -                                                                                                                                           | AT+TCONF=868000000:14:4:12:0:0:0:1:16:25000:2:3 | OK               |
+| `AT+TCONF=<Input>` | `<Freq>:<Power>:<Bandwidth>:<SpreadingFactor>:<CodingRate>:<LNA>:<PABoost>:<Modulation>:<PayloadLen>:<FskDeviation>:<LowDRopt>:<BTproduct>` | -                                    | OKAT_PARAM_ERROR |
 
 :::tip 📝 NOTE
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
-- This command is used for the RF certification test, and in this case, the default value is “868000000,14,0,7,1,0,0,1,4,25000,0,0”.
+- This command is used for the RF certification test, and in this case, the default value is “868000000,14,0,7,1,0,0,1,4,25000,0,0”. 
+
+**Summary of parameters:**<br>
+1 - Frequency <br>
+2 - Power <br>
+3 - Bandwidth parameter: (LoRa mode in Khz) 0=125, 1=250, 2=500, 3=7.8, 4=10.4, 5=15.63, 6=20.83, 7=31.25, 8=41.67, 9=62.5; (FSK mode in Hz): 4800-467000 <br>
+4 - Spreading Factor (5-12) <br>
+5 - Coding Rate: 1=4/5, 2=4/6, 3=4/7, 4=4/8 <br>
+6 - LNA State (not implemented) <br> 
+7 - PA Boost State (not implemented) <br>
+8 - Modulation: 0=FSK, 1=LoRa <br>
+9 - Payload len <br>
+10 - Freq deviation (only fsk 600 - 200000 hz) <br> 
+11 - LowDRopt (not implemented) <br>
+12 - BT product (not implemented) <br>  
+
 :::
 
 **Example:**
@@ -3613,7 +3630,7 @@ This command is used to access the LoRa® configuration test.
 ```
 /* Example1: Set LoRa RF test configuration */
 
-AT+TCONF=868000000:14:0:7:1:0:0:1:4:25000:0:0
+AT+TCONF=868000000:14:4:12:0:0:0:1:16:25000:2:3
 OK
 
 ```
