@@ -27,6 +27,7 @@ This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications. It al
 - I/O ports: UART/I2C/GPIO/SPI
 - Serial Wire Debug (SWD) interface
 - Module size: 25.4 x 32.3&nbsp;mm
+- Ultra-low-power consumption of 1.69&nbsp;μA in sleep mode
 - Supply Voltage: 2.0&nbsp;V ~ 3.6&nbsp;V
 - Temperature Range: -40&nbsp;°C ~ 85&nbsp;°C
 
@@ -119,6 +120,8 @@ The tables below show the pin definition of the RAK3272S Breakout Board:
 :::warning ⚠️ WARNING
 
 - The J4 pin definition table is applicable to RAK3272S VerC. If you have **RAK3272S VerB**, **pin 9** is **not 3V3** but **connected to PA8**. 
+
+- A dedicated internal SPI interface called **SUBGHZSPI** is used to communicate with the RF subsystem of the **STM32WLE5CC**.
 
 :::
 

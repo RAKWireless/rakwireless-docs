@@ -77,6 +77,11 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
 | ------- | -------------------- |
 | RAK3172 | UART2/LPUART1, UART1 |
 
+##### Sub-GHz SPI interface
+
+A dedicated internal SPI interface called **SUBGHZSPI** is used to communicate with the RF subsystem of the **STM32WLE5CCU6**.
+
+
 #### Pin Definition
 
 <rk-img
@@ -103,7 +108,7 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
 | 13          | PA7/SPI1_MOSI | I/O      | GPIO and SPI (MOSI)                                                                               |
 | 14          | PA6/SPI1_MISO | I/O      | GPIO and SPI (MISO)                                                                               |
 | 15          | PA5/SPI1_CLK  | I/O      | GPIO and SPI (CLK)                                                                                |
-| 16          | PA4/SPI_NSS   | I/O      | GPIO and SPI (NSS)                                                                                |
+| 16          | PA4/SPI1_NSS  | I/O      | GPIO and SPI (NSS)                                                                                |
 | 17          | GND           |          | Ground connections                                                                                |
 | 18          | GND           |          | Ground connections                                                                                |
 | 19          | PA8           | I/O      | GPIO only                                                                                         |
@@ -120,6 +125,8 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
 | 30          | PB5           | I/O      | GPIO only                                                                                         |
 | 31          | PB4/ADC2      | I/O      | GPIO and ADC                                                                                      |
 | 32          | PB3/ADC1      | I/O      | GPIO and ADC                                                                                      |
+
+
 
 #### RF Characteristics
 
@@ -160,7 +167,7 @@ The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Fr
 | Feature             | Condition | Minimum (2.1V) | Typical (3.3V) | Maximum | Unit |
 | ------------------- | --------- | -------------- | -------------- | ------- | ---- |
 | Current Consumption | EU868     |                | 1.69           |         | μA   |
-|                     | US915     |                | -              |         | μA   |
+|                     | US915     |                | 1.69           |         | μA   |
 |                     | CN470     |                | 1.69           |         | μA   |
 
 :::tip 📝 NOTE:

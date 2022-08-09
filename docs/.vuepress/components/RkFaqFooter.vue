@@ -34,11 +34,6 @@
           <a href="https://www.facebook.com/RAKwirelessIoT"><span class="font-bold"><img src="../public/assets/images/faq/facebook-messenger-icon.png" alt="facebook messenger" class="icon"> Facebook Chat Support</span></a>
         </div>
         <div class="col-sm-12 col-md-4 col-lg-3">
-          <a href="#">
-            <span style="cursor:pointer;" v-on:click="openMenu()" class="font-bold"><img src="../public/assets/images/faq/chat-bubble-icon.png" alt="facebook messenger" class="icon"> Live Chat Support</span>
-          </a>
-        </div>
-        <div class="col-sm-12 col-md-4 col-lg-3">
           <a href="mailto:support@rakwireless.com"><span class="font-bold"><img src="../public/assets/images/faq/email-icon.png" alt="facebook messenger" class="icon"> Email Support</span></a>
         </div>
       </div>

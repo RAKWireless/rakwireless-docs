@@ -8,6 +8,9 @@ tags:
   - datasheet
 rak_desc: Provides comprehensive information about your RAK9155 Battery Plus to help you use it. This information includes technical specifications, characteristics, and requirements.
 rak_img: /assets/images/accessories/rak9155/overview/RAK9155.png
+certifications:
+  - [CE, https://downloads.rakwireless.com/Accessories/RAK9155/Certification/RAK9155_CE_Certification.jpg]
+  - [FCC, https://downloads.rakwireless.com/Accessories/RAK9155/Certification/RAK9155_FCC_Certification.jpg]
 ---
 
 # RAK9155 Battery Plus Datasheet
@@ -172,3 +175,8 @@ The module is stored in an incompletely charged state, typically around 40% SOC.
 - It is forbidden to press heavy objects on the product or stack them on each other;
 - Although the module is not a high-pressure energy storage device, non-professionals and improper operation and use may still cause serious consequences such as burning and explosion. The installation and maintenance of the battery system must be operated by professional technicians. The use must strictly abide by the relevant safety regulations; non-professionals are strictly prohibited to install, and repairing battery systems and abuse.
 :::
+
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

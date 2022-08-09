@@ -13,8 +13,8 @@ tags:
 
 This guide covers the following topics:
 
-- [RAK3272S breakout board as a stand-alone device using RUI3](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Quickstart/#rak3272s-breakout-board-as-a-stand-alone-device-using-rui3)
-- [RAK3272S breakout board as a LoRa/LoRaWAN modem via AT command](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Quickstart/#rak3272s-breakout-board-as-a-lora-lorawan-modem-via-at-command)
+- [RAK3272S Breakout Board as a Stand-Alone Device Using RUI3](#rak3272s-breakout-board-as-a-stand-alone-device-using-rui3)
+- [RAK3272S Breakout Board as a LoRa/LoRaWAN Modem via AT Command](#rak3272s-breakout-board-as-a-lora-lorawan-modem-via-at-command)
 
 ## Prerequisites
 
@@ -65,7 +65,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, inst
 
 ## Product Configuration
 
-### RAK3272S Breakout Board as a Stand-Alone Device using RUI3
+### RAK3272S Breakout Board as a Stand-Alone Device Using RUI3
 
 #### Hardware Setup
 
@@ -298,12 +298,225 @@ An alternative option to update firmware aside from UART2 is to use SWD pins (SW
  * Stop Bits: **1 stop bit**
  * Parity: **NONE**
 
+
+##### RAK3272S I/O Pins and Peripherals
+
+This section discusses how to use and access RAK3272S peripherals pins using RUI3 APIs. It shows basic code on using Digital I/O Pins, UART, and I2C.
+
+<rk-img
+  src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/rak3272s-pinout.png"
+  width="70%"
+  caption="Available Peripheral pins in RAK3272S Breakout Board"
+/>
+
+###### How to Use Digital I/O
+
+You can use any of the pins below as Digital Pin:
+
+
+| **Pin Name** | **J Connector pin** |
+| ------------ | ------------------- |
+| PA4          | J5 pin 4            |
+| PA5          | J5 pin 3            |
+| PA6          | J5 pin 2            |
+| PA7          | J5 pin 1            |
+| PA8          | J4 pin 1            |
+| PA9          | J4 pin 2            |
+| PB6          | J5 pin 5            |
+| PB7          | J5 pin 6            |
+
+<rk-img
+  src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/rak3272s-io.png"
+  width="70%"
+  caption="Available Digital I/O pins in RAK3172S"
+/>
+
+
+- Use Arduino [digitalRead](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/) to read the value from a specified Digital I/O pin, either HIGH or LOW.
+- Use Arduino [digitalWrite](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/) to write a HIGH or a LOW value to a Digital I/O pin.
+
+:::tip 📝 NOTE:
+The GPIO Pin Name is the one to be used on the digitalRead and digitalWrite and NOT the pin numbers.
+:::
+
+**Example code**
+
+```c
+void setup()
+{
+  pinMode(PA7, OUTPUT); //Change the P0_04 to any digital pin you want. Also, you can set this to INPUT or OUTPUT
+}
+
+void loop()
+{
+  digitalWrite(PA7,HIGH); //Change the PA0 to any digital pin you want. Also, you can set this to HIGH or LOW state.
+  delay(1000); // delay for 1 second
+  digitalWrite(PA7,LOW); //Change the PA0 to any digital pin you want. Also, you can set this to HIGH or LOW state.
+  delay(1000); // delay for 1 second
+}
+```
+
+###### How to Use Serial Interfaces
+
+**UART**
+
+There are two UART peripherals available on the RAK3272S. There are also different [Serial Operating Modes](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/#rui3-serial-operating-modes) possible in RUI3, namely [Binary Mode](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/Binary-Command-Manual/), [AT Mode](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/), and [Custom Mode](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/Custom-Mode/).
+
+
+
+| **Serial Port** | **UART pin number** | **Serial Instance Assignment** | **Default Mode** |
+| --------------- | ------------------- | ------------------------------ | ---------------- |
+| UART1_TX        | J5 pin 6            | Serial1                        | Custom Mode      |
+| UART1_RX        | J5 pin 5            | Serial1                        | Custom Mode      |
+| UART2_TX        | J4 pin 7            | Serial                         | AT Command       |
+| UART2_RX        | J4 pin 8            | Serial                         | AT Command       |
+
+
+<rk-img
+  src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/rak3272s-uart.png"
+  width="70%"
+  caption="Available UART pins in RAK3272S"
+/>
+
+**Example Code**
+
+```c
+void setup() 
+{
+  Serial1.begin(115200); // use Serial1 for UART1 and Serial for UART2 
+                         // you can designate separate baudrate for each.
+  Serial.begin(115200);
+}
+
+void loop() 
+{
+  Serial1.println("RAK3172 UART1 TEST!");
+  Serial.println("RAK3172 UART2 TEST!");
+  delay(1000); // delay for 1 second
+}
+
+```
+
+
+**I2C**
+
+There is one I2C peripheral available on RAK3272S.
+
+| **I2C Pin Number** | **I2C Pin Name** |
+| ------------------ | ---------------- |
+| J4 pin 1           | I2C2_SDA         |
+| J4 pin 2           | I2C2_SCL         |
+
+
+- Use Arduino [Wire](https://www.arduino.cc/reference/en/language/functions/communication/wire/) library to communicate with I2C devices.
+
+
+<rk-img
+  src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/rak3272s-i2c.png"
+  width="70%"
+  caption="Available I2C pins in RAK3272S"
+/>
+
+**Example Code**
+
+Make sure you have an I2C device connected to specified I2C pins to run the I2C scanner code below:
+
+```c
+#include <Wire.h>
+
+void setup()
+{
+  Wire.begin();
+ 
+  Serial.begin(115200);
+  while (!Serial);            
+  Serial.println("\nI2C Scanner");
+}
+ 
+ 
+void loop()
+{
+  byte error, address;
+  int nDevices;
+ 
+  Serial.println("Scanning...");
+ 
+  nDevices = 0;
+  for(address = 1; address < 127; address++ )
+  {
+    // The i2c_scanner uses the return value of
+    // the Write.endTransmission to see if
+    // a device did acknowledge to the address.
+    Wire.beginTransmission(address);
+    error = Wire.endTransmission();
+ 
+    if (error == 0)
+    {
+      Serial.print("I2C device found at address 0x");
+      if (address<16)
+        Serial.print("0");
+      Serial.print(address,HEX);
+      Serial.println("  !");
+ 
+      nDevices++;
+    }
+    else if (error==4)
+    {
+      Serial.print("Unknown error at address 0x");
+      if (address<16)
+        Serial.print("0");
+      Serial.println(address,HEX);
+    }    
+  }
+  if (nDevices == 0)
+    Serial.println("No I2C devices found\n");
+  else
+    Serial.println("done\n");
+ 
+  delay(5000);           // wait 5 seconds for next scan
+}
+```
+
+The Arduino Serial Monitor shows the I2C device found.
+
+```c
+17:29:15.690 -> Scanning...
+17:29:15.738 -> I2C device found at address 0x28  !
+17:29:15.831 -> done
+17:29:15.831 -> 
+17:29:20.686 -> Scanning...
+17:29:20.733 -> I2C device found at address 0x28  !
+17:29:20.814 -> done
+17:29:20.814 -> 
+```
+
+**SPI**
+
+If your RUI3 project uses SPI, then J5 pins 1 to 4 are reserved for RUI3 SPI interface. 
+
+| **SPI Pin Number** | **SPI Pin Name** |
+| ------------------ | ---------------- |
+| J5 pin 1           | SPI_MOSI         |
+| J5 pin 2           | SPI_MISO         |
+| J5 pin 3           | SPI_CLK          |
+| J5 pin 4           | SPI_CS           |
+
+<rk-img
+  src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/rak3272s-spi.png"
+  width="70%"
+  caption="Available SPI pins in RAK3272S"
+/>
+
+:::tip 📝 NOTE:
+The J4 pins 5 and 6 are reserved for SWD debug interface. Check the [Connect to the RAK3272S Breakout Board](#connect-to-the-rak3272s-breakout-board) section.
+:::
+
 ##### RAK3272S Configuration for LoRaWAN or LoRa P2P
 
 To enable the RAK3272S breakout board as a LoRa P2P module or a LoRaWAN end-device, the module must be configured and parameters must be set by sending AT commands. You can configure the RAK3272S in two ways:
 
-- [LoRaWAN End-Device](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/quickstart/#configuring-rak3272s-breakout-board-as-lorawan-end-device) - RAK3272S Breakout Board as LoRaWAN IoT device.
-- [LoRa P2P](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/quickstart/#lora-p2p-mode) - Point-to-point communication between two RAK3272S breakout board modules.
+- [LoRaWAN End-Device](#configuring-rak3272s-breakout-board-as-lorawan-end-device) - RAK3272S Breakout Board as LoRaWAN IoT device.
+- [LoRa P2P](#lora-p2p-mode) - Point-to-point communication between two RAK3272S breakout board modules.
 
 #### Configuring RAK3272S Breakout Board as LoRaWAN End-Device
 
@@ -311,12 +524,12 @@ To enable the RAK3272S breakout board as a LoRaWAN end-device, a device must be 
 
 This guide covers the following topics:
 
-- [TheThingsNetwork Guide](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Quickstart/#connecting-to-the-things-network-ttn) - How to login, register new accounts and create new applications on TTN.
-- [RAK3272S Breakout Board TTN OTAA Guide](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Quickstart/#ttn-otaa-device-registration) - How to add OTAA device on TTN and what AT commands to use on RAK3272S OTAA activation.
-- [RAK3272S Breakout Board TTN ABP Guide](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Quickstart/#ttn-abp-device-registration) - How to add ABP device on TTN and what AT commands to use on RAK3272S ABP activation.
-- [Chirpstack Guide](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Quickstart/#connecting-with-chirpstack) - How to create new applications on Chirpstack. 
-- [RAK3272S Breakout Board Chirpstack OTAA Guide](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Quickstart/#chirpstack-otaa-device-registration) - How to add OTAA device to Chirpstack and what AT commands to use on RAK3272S OTAA activation.
-- [RAK3272S Breakout Board Chirpstack ABP Guide](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Quickstart/#chirpstack-abp-device-registration) - How to add ABP device on Chirpstack and what AT commands to use on RAK3272S ABP activation.
+- [TheThingsNetwork Guide](#connecting-to-the-things-network-ttn) - How to login, register new accounts and create new applications on TTN.
+- [RAK3272S Breakout Board TTN OTAA Guide](#ttn-otaa-device-registration) - How to add OTAA device on TTN and what AT commands to use on RAK3272S OTAA activation.
+- [RAK3272S Breakout Board TTN ABP Guide](#ttn-abp-device-registration) - How to add ABP device on TTN and what AT commands to use on RAK3272S ABP activation.
+- [Chirpstack Guide](#connecting-with-chirpstack) - How to create new applications on Chirpstack. 
+- [RAK3272S Breakout Board Chirpstack OTAA Guide](#chirpstack-otaa-device-registration) - How to add OTAA device to Chirpstack and what AT commands to use on RAK3272S OTAA activation.
+- [RAK3272S Breakout Board Chirpstack ABP Guide](#chirpstack-abp-device-registration) - How to add ABP device on Chirpstack and what AT commands to use on RAK3272S ABP activation.
 
 ##### Connecting to The Things Network (TTN)
 
@@ -482,7 +695,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
 
 The RAK3272S Breakout Board supports a series of AT commands to configure its internal parameters and control the functionalities of the board. 
 
-1. To set up the RAK3272S Breakout Board to join the TTN using OTAA, start by connecting the RAK3272S Breakout Board to the computer (see [Figure 21](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Quickstart/#connect-to-the-rak3272s-breakout-board)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
+1. To set up the RAK3272S Breakout Board to join the TTN using OTAA, start by connecting the RAK3272S Breakout Board to the computer (see [**Figure 21**](#connect-to-the-rak3272s-breakout-board)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify that the current configuration is working by sending these two AT commands:
 
@@ -722,7 +935,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
 
 ##### ABP Configuration for TTN
 
-1. To set up the RAK3272S Breakout Board to join the TTN using ABP, start by connecting the RAK3272S Breakout Board to the computer (see [Figure 21](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Quickstart/#connect-to-the-rak3272s-breakout-board)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
+1. To set up the RAK3272S Breakout Board to join the TTN using ABP, start by connecting the RAK3272S Breakout Board to the computer (see [**Figure 21**](#connect-to-the-rak3272s-breakout-board)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify the current configuration is working by sending these two AT commands:
 
@@ -1056,7 +1269,7 @@ Standard OTAA mode requires the **Device EUI**, **Application Key**, and **Appli
 
 The RAK3272S Breakout Board supports a series of AT commands to configure its internal parameters and control the functionalities of the board. 
 
-1. To set up the RAK3272S Breakout Board to join the Chirpstack using OTAA, start by connecting the RAK3272S Breakout Board to the computer (see [Figure 21](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Quickstart/#connect-to-the-rak3272s-breakout-board)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
+1. To set up the RAK3272S Breakout Board to join the Chirpstack using OTAA, start by connecting the RAK3272S Breakout Board to the computer (see [**Figure 21**](#connect-to-the-rak3272s-breakout-board)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify that the current configuration is working by sending these two AT commands:
 
@@ -1263,7 +1476,7 @@ Check “**Disable counting frame verification**”. During the test, when the b
 
 ##### ABP Configuration for Chirpstack
 
-1. To set up the RAK3272S Breakout Board to join the Chirpstack using ABP, start by connecting the RAK3272S Breakout Board to the computer (see [Figure 21](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Quickstart/#connect-to-the-rak3272s-breakout-board)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
+1. To set up the RAK3272S Breakout Board to join the Chirpstack using ABP, start by connecting the RAK3272S Breakout Board to the computer (see [**Figure 21**](#connect-to-the-rak3272s-breakout-board)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify that the current configuration is working by sending these two AT commands:
 
@@ -1563,7 +1776,7 @@ If BOOT mode is not initiated, pull to ground the RESET pin twice (or double cli
 2.  Download the RAK Device Firmware Upgrade (DFU) tool.
     - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
-3.  Connect the RAK3272S Breakout Board to the computer via a USB-Serial adapter. Refer to [Figure 21](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Quickstart/#connect-to-the-rak3272s-breakout-board).
+3.  Connect the RAK3272S Breakout Board to the computer via a USB-Serial adapter. Refer to [**Figure 21**](#connect-to-the-rak3272s-breakout-board).
 
 4.  Open the Device Firmware Upgrade tool. Select the serial port and baud rate (115200) of the module and click the "Select Port" button.
 

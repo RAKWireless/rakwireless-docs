@@ -13,8 +13,8 @@ tags:
 
 This guide covers the following topics:
 
-- [RAK3172 as a Stand-Alone Device Using RUI3](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#rak3172-as-a-stand-alone-device-using-rui3)
-- [RAK3172 as a LoRa/LoRaWAN Modem via AT Command](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#rak3172-as-a-lora-lorawan-modem-via-at-command)
+- [RAK3172 as a Stand-Alone Device Using RUI3](#rak3172-as-a-stand-alone-device-using-rui3)
+- [RAK3172 as a LoRa/LoRaWAN Modem via AT Command](#rak3172-as-a-lora-lorawan-modem-via-at-command)
 
 ## Prerequisites
 
@@ -203,9 +203,9 @@ Connect the RAK3172 via UART and check RAK3172 COM Port using Windows **Device M
   caption="RAK3172 with two LEDs"
 />
 
-2. Launch Arduino IDE and configure WisDuo RAK3172 Evaluation Board on board selection. See [Figure 9](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#configure-rak3172-on-boards-manager).
+2. Launch Arduino IDE and configure WisDuo RAK3172 Evaluation Board on board selection. See [**Figure 9**](#configure-rak3172-on-boards-manager).
 
-3. Connect the RAK3172 via UART and check RAK3172 COM Port. See [Figure 10](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#rak3172-com-port-on-device-manager).
+3. Connect the RAK3172 via UART and check RAK3172 COM Port. See [**Figure 10**](#rak3172-com-port-on-device-manager).
 
 4. Open **Tools** Menu and select a COM port. **COM28** is currently used.
 <rk-img
@@ -251,7 +251,7 @@ Connect the RAK3172 via UART and check RAK3172 COM Port using Windows **Device M
   caption="Verify the example code"
 />
 
-9. Click the **Upload** icon to send the compiled firmware to your RAK3172.
+9. Click the **Upload** icon to send the compiled firmware to your RAK3172 module.
 
 :::tip 📝 NOTE:
 RAK3172 should automatically go to BOOT mode when the firmware is uploaded via Arduino IDE.
@@ -274,6 +274,259 @@ If BOOT mode is not initiated, pull to ground the RESET pin twice (or double cli
 />
 
 11. After the Device Programmed is completed, you will see that LEDs are blinking.
+
+##### RAK3172 I/O Pins and Peripherals
+
+This section discusses how to use and access RAK3172 pins using RUI3 API. It shows basic code on using digital I/O, analog input, UART, and I2C.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/rak3172-pins.png"
+  width="90%"
+  caption="Available Peripherals and Digital I/O pins in RAK3172 module"
+/>
+
+###### How to Use Digital I/O
+
+You can use any of the pins below as Digital Pin. 
+
+
+| **Pin Name** | **Alternative Pin Usage** |
+| ------------ | ------------------------- |
+| PA0          |                           |
+| PA1          |                           |
+| PA4          | SPI                       |
+| PA5          | SPI                       |
+| PA6          | SPI                       |
+| PA7          | SPI                       |
+| PA8          |                           |
+| PA9          | I2C_SCL                   |
+| PA15         |                           |
+| PB2          |                           |
+| PB3          | ADC1                      |
+| PB4          | ADC2                      |
+| PB5          |                           |
+| PB6          | UART1_TX                  |
+| PB7          | UART1_RX                  |
+| PB12         |                           |
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/rak3172-io-pins.png"
+  width="100%"
+  caption="Available Digital I/O pins in RAK3172 module"
+/>
+
+The pins listed below must not be used.
+
+| **Pin name** | **Pin Usage**    |
+| ------------ | ---------------- |
+| PA2          | UART2_TX         |
+| PA3          | UART2_RX         |
+| PA13         | SWDIO            |
+| PA14         | SWCLK            |
+| PB8          | RAK3172 Internal |
+
+
+- Use Arduino [digitalRead](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/) to read the value from a specified Digital I/O pin, either HIGH or LOW.
+- Use Arduino [digitalWrite](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/) to write a HIGH or a LOW value to a Digital I/O pin.
+
+:::tip 📝 NOTE:
+The GPIO Pin Name is the one to be used on the digitalRead and digitalWrite and NOT the pin numbers.
+:::
+
+
+**Example code**
+
+```c
+void setup()
+{
+  pinMode(PA0, OUTPUT); //Change the P0_04 to any digital pin you want. Also, you can set this to INPUT or OUTPUT
+}
+
+void loop()
+{
+  digitalWrite(PA0,HIGH); //Change the PA0 to any digital pin you want. Also, you can set this to HIGH or LOW state.
+  delay(1000); // delay for 1 second
+  digitalWrite(PA0,LOW); //Change the PA0 to any digital pin you want. Also, you can set this to HIGH or LOW state.
+  delay(1000); // delay for 1 second
+}
+```
+
+###### How to Use Analog Input
+
+You can use any of the pins below as Analog Input.
+
+| **Analog Port** | **Pin Name** |
+| --------------- | ------------ |
+| ADC1            | PB3          |
+| ADC2            | PB4          |
+
+
+Use Arduino [analogRead](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/) to read the value from the specified Analog Input pin.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/rak3172-adc-pins.png"
+  width="90%"
+  caption="Available Analog pins in RAK3172"
+/>
+
+
+**Example code**
+
+```c
+#define analogPin PB3
+
+int val = 0;  // variable to store the value read
+
+void setup() 
+{
+  Serial.begin(115200); 
+}
+
+void loop() 
+{
+  val = analogRead(analogPin);  // read the input pin
+  Serial.println(val);          // debug value
+  delay(100);
+}
+```
+
+###### How to Use Serial Interfaces
+
+**UART**
+
+There are two UART peripherals available on the RAK3172 module. There are also different [Serial Operating Modes](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/#rui3-serial-operating-modes) possible in RUI3, namely [Binary Mode](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/Binary-Command-Manual/), [AT Mode](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/), and [Custom Mode](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/Custom-Mode/).
+
+
+| **Serial Port**   | **Serial Instance Assignment** | **Default Mode** |
+| ----------------- | ------------------------------ | ---------------- |
+| UART1 (pins 4, 5) | Serial1                        | Custom Mode      |
+| UART2 (pins 1, 2) | Serial                         | AT Command       |
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/rak3172-uart-pins.png"
+  width="90%"
+  caption="Available UART pins in RAK3172"
+/>
+
+**Example Code**
+
+```c
+void setup() 
+{
+  Serial1.begin(115200); // use Serial1 for UART1 and Serial for UART2 
+                         // you can designate separate baudrate for each.
+  Serial.begin(115200);
+}
+
+void loop() 
+{
+  Serial1.println("RAK3172 UART1 TEST!");
+  Serial.println("RAK3172 UART2 TEST!");
+  delay(1000); // delay for 1 second
+}
+
+```
+
+**I2C**
+
+There is one I2C peripheral available on RAK3172.
+
+| **I2C Pin Number** | **I2C Pin Name** |
+| ------------------ | ---------------- |
+| PA9                | I2C_SCL          |
+| PA10               | I2C_SDA          |
+
+
+- Use Arduino [Wire](https://www.arduino.cc/reference/en/language/functions/communication/wire/) library to communicate with I2C devices.
+
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/rak3172-i2c-pins.png"
+  width="90%"
+  caption="Available I2C pins in RAK3172"
+/>
+
+**Example Code**
+
+Make sure you have an I2C device connected to specified I2C pins to run the I2C scanner code below:
+
+```c
+#include <Wire.h>
+
+void setup()
+{
+  Wire.begin();
+ 
+  Serial.begin(115200);
+  while (!Serial);            
+  Serial.println("\nI2C Scanner");
+}
+ 
+ 
+void loop()
+{
+  byte error, address;
+  int nDevices;
+ 
+  Serial.println("Scanning...");
+ 
+  nDevices = 0;
+  for(address = 1; address < 127; address++ )
+  {
+    // The i2c_scanner uses the return value of
+    // the Write.endTransmission to see if
+    // a device did acknowledge to the address.
+    Wire.beginTransmission(address);
+    error = Wire.endTransmission();
+ 
+    if (error == 0)
+    {
+      Serial.print("I2C device found at address 0x");
+      if (address<16)
+        Serial.print("0");
+      Serial.print(address,HEX);
+      Serial.println("  !");
+ 
+      nDevices++;
+    }
+    else if (error==4)
+    {
+      Serial.print("Unknown error at address 0x");
+      if (address<16)
+        Serial.print("0");
+      Serial.println(address,HEX);
+    }    
+  }
+  if (nDevices == 0)
+    Serial.println("No I2C devices found\n");
+  else
+    Serial.println("done\n");
+ 
+  delay(5000);           // wait 5 seconds for next scan
+}
+```
+
+The Arduino Serial Monitor shows the I2C device found.
+
+```c
+17:29:15.690 -> Scanning...
+17:29:15.738 -> I2C device found at address 0x28  !
+17:29:15.831 -> done
+17:29:15.831 -> 
+17:29:20.686 -> Scanning...
+17:29:20.733 -> I2C device found at address 0x28  !
+17:29:20.814 -> done
+17:29:20.814 -> 
+```
+
+**SPI**
+
+If your RUI3 project uses SPI, then PA4 to PA7 pins are reserved for RUI3 SPI interface. 
+
+
+:::tip 📝 NOTE:
+PA13 and PA14 pins are reserved for SWD debug interface. Check the [Connect to the RAK3172](#connect-to-the-rak3172) section.
+:::
 
 ##### LoRaWAN Example
 
@@ -329,15 +582,15 @@ After configuring your gateway, you need to register it in TTNv3:
 
 ###### Register the Device on TTNv3
 
-The next step is to follow the procedure described in the section [TTN OTAA Device Registration](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#ttn-otaa-device-registration).
+The next step is to follow the procedure described in the section [TTN OTAA Device Registration](#ttn-otaa-device-registration).
 
 ###### Uploading LoRaWAN Example to RAK3172
 
 After a successful registration of the RAK3172 device on the LNS, you can now proceed with running the LoRaWAN OTAA demo application example.
 
-1. Launch Arduino IDE and configure WisDuo RAK3172 Evaluation Board on board selection. See [Figure 9](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#configure-rak3172-on-boards-manager).
+1. Launch Arduino IDE and configure WisDuo RAK3172 Evaluation Board on board selection. See [**Figure 9**](#configure-rak3172-on-boards-manager).
 
-2. Connect the RAK3172 via UART and check RAK3172 COM Port. See [Figure 10](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#rak3172-com-port-on-device-manager).
+2. Connect the RAK3172 via UART and check RAK3172 COM Port. See [**Figure 10**](#rak3172-com-port-on-device-manager).
 
 3. Open the example code under **RAK WisBlock RUI examples**: **File** -> **Examples** -> **RAK WisBlock RUI examples** -> **Example** -> **LoRaWan_OTAA**.
 
@@ -372,7 +625,7 @@ After a successful registration of the RAK3172 device on the LNS, you can now pr
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/lorawan_otaa_parameter.png"
   width="190%"
-  caption="Configuraing DEVEUI, APPEUI and APPKEY"
+  caption="Configuring DEVEUI, APPEUI and APPKEY"
 />
 
 3. Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK module to match the gateway and LoRaWAN network server. This is especially important for Regional Bands like US915, AU915 and CN470. 
@@ -418,9 +671,9 @@ RAK3172 supports the following regions:
 
 :::tip 📝 NOTE:
 
-- Make sure you have configured the correct RAK board before uploading the code. See [Configure RAK3172 on Boards Manager](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#configure-rak3172-on-boards-manager) section.
+- Make sure you have configured the correct RAK board before uploading the code. See [Configure RAK3172 on Boards Manager](#configure-rak3172-on-boards-manager) section.
 
-- Also, check [RAK3172 COM Port on Device Manager](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#rak3172-com-port-on-device-manager) section.
+- Also, check [RAK3172 COM Port on Device Manager](#rak3172-com-port-on-device-manager) section.
 
 :::
 
@@ -679,12 +932,12 @@ To enable the RAK3172 module as a LoRaWAN end-device, a device must be registere
 
 This guide covers the following topics:
 
-- [TheThingsNetwork Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#connecting-to-the-things-network-ttn) - How to login, register new accounts and create new applications on TTN.
-- [RAK3172 TTN OTAA Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#ttn-otaa-device-registration) - How to add OTAA device on TTN and what AT commands to use on RAK3172 OTAA activation.
-- [RAK3172 TTN ABP Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#ttn-abp-device-registration) - How to add ABP device on TTN and what AT commands to use on RAK3172 ABP activation.
-- [Chirpstack Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#connecting-with-chirpstack) - How to create new applications on Chirpstack. 
-- [RAK3172 Chirpstack OTAA Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#chirpstack-otaa-device-registration) - How to add OTAA device to Chirpstack and what AT commands to use on RAK3172 OTAA activation.
-- [RAK3172 Chirpstack ABP Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#chirpstack-abp-device-registration) - How to add ABP device on Chirpstack and what AT commands to use on RAK3172 ABP activation.
+- [TheThingsNetwork Guide](#connecting-to-the-things-network-ttn) - How to login, register new accounts and create new applications on TTN.
+- [RAK3172 TTN OTAA Guide](#ttn-otaa-device-registration) - How to add OTAA device on TTN and what AT commands to use on RAK3172 OTAA activation.
+- [RAK3172 TTN ABP Guide](#ttn-abp-device-registration) - How to add ABP device on TTN and what AT commands to use on RAK3172 ABP activation.
+- [Chirpstack Guide](#connecting-with-chirpstack) - How to create new applications on Chirpstack. 
+- [RAK3172 Chirpstack OTAA Guide](#chirpstack-otaa-device-registration) - How to add OTAA device to Chirpstack and what AT commands to use on RAK3172 OTAA activation.
+- [RAK3172 Chirpstack ABP Guide](#chirpstack-abp-device-registration) - How to add ABP device on Chirpstack and what AT commands to use on RAK3172 ABP activation.
 
 ##### Connecting to The Things Network (TTN)
 
@@ -848,7 +1101,7 @@ You should now be able to see the device on the TTN console after you fully regi
 
 The RAK3172 module supports a series of AT commands to configure its internal parameters and control the functionalities of the module. 
 
-1. To set up the RAK3172 module to join the TTN using OTAA, start by connecting the RAK3172 module to your computer (see [Figure 30](/Product-Categories/wisduo/RAK3172-Module/Quickstart/#connect-to-the-rak3172)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
+1. To set up the RAK3172 module to join the TTN using OTAA, start by connecting the RAK3172 module to your computer (see [**Figure 30**](/Product-Categories/wisduo/RAK3172-Module/Quickstart/#connect-to-the-rak3172)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify that the current configuration is working by sending these two AT commands:
 
@@ -986,7 +1239,7 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | --------- | ------------------------------------------------------------ |
 | w         | Join command - 1: joining, 0: stop joining.                  |
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
-| y         | Reattempt interval in seconds (7-255) - 8 is the default.        |
+| y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
 | z         | Number of join attempts (0-255) - 0 is default.              |
 
 After 5 or 6 seconds, if the request is successfully received by a LoRa gateway, you should see `+EVT:JOINED` status reply, as shown in **Figure 49**.
@@ -1089,7 +1342,7 @@ You should now be able to see the device on the TTN console after you fully regi
 
 ##### ABP Configuration for TTN
 
-1. To set up the RAK3172 module to join the TTN using ABP, start by connecting the RAK3172 module to the computer (see [Figure 30](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#connect-to-the-rak3172)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
+1. To set up the RAK3172 module to join the TTN using ABP, start by connecting the RAK3172 module to the computer (see [**Figure 30**](#connect-to-the-rak3172)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify the current configuration is working by sending these two AT commands:
 
@@ -1424,7 +1677,7 @@ Standard OTAA mode requires the **Device EUI**, **Application Key**, and **Appli
 
 The RAK3172 module supports a series of AT commands to configure its internal parameters and control the functionalities of the module. 
 
-1. To set up the RAK3172 module to join the Chirpstack using OTAA, start by connecting the RAK3172 module to the Computer (see [Figure 30](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#connect-to-the-rak3172)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
+1. To set up the RAK3172 module to join the Chirpstack using OTAA, start by connecting the RAK3172 module to the Computer (see [Figure 30](#connect-to-the-rak3172)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify that the current configuration is working by sending these two AT commands:
 
@@ -1566,7 +1819,7 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | --------- | ------------------------------------------------------------ |
 | w         | Join command - 1: joining, 0: stop joining.                  |
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
-| y         | Reattempt interval in seconds (7-255) - 8 is the default.        |
+| y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
 | z         | Number of join attempts (0-255) - 0 is default.              |
 
 After 5 or 6 seconds, if the request is successfully received by a LoRa gateway, you should see the JOINED status reply.
@@ -1638,7 +1891,7 @@ Then, you can see that there are some parameters for ABP in the **“ACTIVATION�
 
 ##### ABP Configuration for Chirpstack
 
-1. To set up the RAK3172 module to join the Chirpstack using ABP, start by connecting the RAK3172 module to the Computer (see [Figure 30](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#connect-to-the-rak3172)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
+1. To set up the RAK3172 module to join the Chirpstack using ABP, start by connecting the RAK3172 module to the Computer (see [Figure 30](#connect-to-the-rak3172)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify that the current configuration is working by sending these two AT commands:
 
@@ -1861,7 +2114,6 @@ Refer to the [P2P Mode](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Man
 
 :::
 
-
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/p2psetup.png"
   width="90%"
@@ -1896,10 +2148,8 @@ AT+PSEND=11223344
   caption="Configuring P2P in both RAK3172 Module"
 />
 
-
-
-
 ## Miscellaneous
+
 ### Upgrading the Firmware
 
 If you want to upgrade to the latest version of the firmware of the module, you can follow this section. The latest firmware can be found in the software section of [RAK3172 Datasheet](/Product-Categories/WisDuo/RAK3172-Module/Datasheet/#firmware-os).
@@ -1943,7 +2193,7 @@ If BOOT mode is not initiated, pull to ground the RESET pin twice (or double cli
 2.  Download the RAK Device Firmware Upgrade (DFU) tool.
     - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
-3.  Connect the RAK3172 module with a computer through a USB to TTL. Refer to [Figure 30](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#connect-to-the-rak3172).
+3.  Connect the RAK3172 module with a computer through a USB to TTL. Refer to [Figure 30](#connect-to-the-rak3172).
 
 4.  Open the Device Firmware Upgrade tool. Select the serial port and baud rate (115200) of the module and click the "Select Port" button.
 
@@ -1975,7 +2225,6 @@ If your firmware upload always fails, check your current baud rate setting using
   caption="Firmware upgrading"
 />
 
-
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/4.png"
   width="80%"
@@ -1984,8 +2233,4 @@ If your firmware upload always fails, check your current baud rate setting using
 
 ### Arduino Installation
 
-Refer to [Software section](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#software).
-
-
-
-
+Refer to [Software section](#software).

@@ -15,6 +15,7 @@ certifications:
   - [RCM, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_RCM_Certification.zip]
   - [REACH, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_REACH_Report.pdf]
   - [RoHS, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_RoHS_Test_Report.pdf]
+  - [EAC, https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_EAC_Certification.pdf]
 ---
 
 # RAK7249 WisGate Edge Max Datasheet
