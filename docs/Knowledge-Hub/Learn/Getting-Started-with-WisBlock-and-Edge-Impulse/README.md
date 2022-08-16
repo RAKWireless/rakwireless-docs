@@ -21,12 +21,13 @@ WisBlock ecosystem lets you decide on several core options as the RAK11200 (ESP3
 
 ## Setting Up Your Development Board
 
+<!---
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/1.development-board.png"
   width="70%"
   caption="Minimum hardware requirements"
 />
-
+--->
 
 The minimum hardware you will need to start developing with WisBlock and Edge Impulse are as follows:
 
@@ -74,7 +75,7 @@ Once you have the software already installed, it’s time to flash the Edge Impu
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/4.flash-download-tool.png"
-  width="40%"
+  width="35%"
   caption="Moving the firmware to RPI-RP2"
 />
 
@@ -82,9 +83,9 @@ Once you have the software already installed, it’s time to flash the Edge Impu
 4. Short the **BOOT0** and **GND** pins then reset the board to re-start the core in boot mode.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/5.short-and-reset.jpg"
-  width="50%"
-  caption="Resetting the board"
+  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/5.short-and-reset.png"
+  width="60%"
+  caption="Short the pins and reset the board"
 />
 
 5. Search for the firmware files and set them on the right memory partition.
@@ -171,7 +172,7 @@ After training and validating your model, you can now deploy it to your WisBlock
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/11.create-library.png"
-  width="60%"
+  width="70%"
   caption="Creating a library"
 />
 
@@ -179,13 +180,13 @@ After training and validating your model, you can now deploy it to your WisBlock
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/12.build-compiler.png"
-  width="60%"
+  width="80%"
   caption="Build the compiler"
 />
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/13.build-library.png"
-  width="60%"
+  width="80%"
   caption="Built C++ library"
 />
 

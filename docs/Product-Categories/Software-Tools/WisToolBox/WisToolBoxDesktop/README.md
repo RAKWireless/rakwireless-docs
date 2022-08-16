@@ -21,7 +21,7 @@ The WisToolBox Desktop is available in Windows, macOS and Linux.
 
   * [Windows](https://www.microsoft.com/store/productId/9P6691TTW3J5)
   * [Linux](https://snapcraft.io/wistoolbox)
-  * [macOS](https://apps.apple.com/ua/app/wistoolbox-for-desktop/id1593008976?mt=12)
+  * [macOS](https://downloads.rakwireless.com/WisToolBox/WisToolBox_macOS.zip)
 
 ## Hardware Compatibility
 

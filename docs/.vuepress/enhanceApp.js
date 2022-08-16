@@ -1,6 +1,7 @@
 import Quasar from 'quasar'
 import RkRedirect from './components/RkRedirect.vue'
 
+
 export default ({
   Vue, // the version of Vue being used in the VuePress app
   options, // the options for the root Vue instance
@@ -15,5 +16,9 @@ export default ({
 
   if (!isServer) {
     Vue.use(Quasar)
+  }
+  if(typeof window !== 'undefined'){
+    window.global = window;
+    const axios = require('axios').default
   }
 }
