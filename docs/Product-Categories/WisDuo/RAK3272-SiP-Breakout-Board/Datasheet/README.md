@@ -286,7 +286,7 @@ The use of **DCDC** is optional but improve the power efficiency. If you want to
 
 | Feature           | Condition | Minimum                         | Typical | Maximum | Unit |
 | ----------------- | --------- | ------------------------------- | ------- | ------- | ---- |
-| Operating Current | TX Mode   | 87(@ 20&nbsp;dBm 8680&nbsp;MHz) | -       | -       | mA   |
+| Operating Current | TX Mode   | 87(@ 20&nbsp;dBm 868&nbsp;MHz)  | -       | -       | mA   |
 |                   | RX Mode   | 5.22                            | -       | -       | mA   |
 | Sleep Current     | EU868     | -                               | 1.41    |         | uA   |
 
