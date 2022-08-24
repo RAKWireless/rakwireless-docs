@@ -18,7 +18,7 @@ Thank you for choosing **RAK4630 WisDuo LPWAN Module** in your awesome IoT Proje
 * [DFU - Device Firmware Upgrade](../DFU/)
 * [Datasheet](../Datasheet/)
 * [RAK4630 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/3D_RAK4630.stp)
-
+* [Reference Design](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK4631/Datasheet/#schematic-diagram)
 
 ## Product Description
 

@@ -18,6 +18,7 @@ Thank you for choosing **RAK3172 WisDuo LPWAN Module** in your awesome IoT Proje
 * [Datasheet](/Product-Categories/WisDuo/RAK3172-Module/Datasheet/)
 * [AT Command Migration Guide of RAK3172 to RUI3](https://docs.rakwireless.com/Knowledge-Hub/Learn/AT-Migration-Guide/)
 * [RAK3172 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/3D_RAK3172.stp)
+* [Reference Design](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Datasheet/#schematic-diagram)
 
 :::tip 📝 NOTE:
 

@@ -99,11 +99,11 @@ You can check the pin definitions on the table and illustration, as shown in **F
 | 11          | VDDMPS        |          | DC-DC switching power input                                       |
 | 12          | GND           |          | Ground                                                            |
 | 13          | VLXSMPS       |          | DC-DC switching output                                            |
-| 14          | PB3           | I/O      | GPIO                                                              |
-| 15          | PB4           | I/O      | GPIO                                                              |
+| 14          | PB3           | I/O      | GPIO or ADC0                                                      |
+| 15          | PB4           | I/O      | GPIO or ADC1                                                      |
 | 16          | PB5           | I/O      | GPIO                                                              |
-| 17          | PB6/UART1_TX  | O        | UART1                                                             |
-| 18          | PB7UART1_RX   | I        | UART1                                                             |
+| 17          | PB6/UART1_TX  | I/O       | GPIO or UART1_TX                                                  |
+| 18          | PB7/UART1_RX  | I/O        | GPIO or UART1_RX                                                  |
 | 19          | PB8           | I/O      | GPIO                                                              |
 | 20          | PB9           | I/O      | GPIO                                                              |
 | 21          | PC0           | I/O      | GPIO                                                              |
@@ -116,10 +116,10 @@ You can check the pin definitions on the table and illustration, as shown in **F
 | 28          | GND           |          | Ground                                                            |
 | 29          | PA2/UART2_TX  | O        | Reserved - UART2/LPUART1 Interface (AT Commands and FW Update)    |
 | 30          | PA3/UART2_RX  | I        | Reserved - UART2/LPUART1 Interface (AT Commands and FW Update)    |
-| 31          | PA4           | I/O      | GPIO                                                              |
-| 32          | PA5           | I/O      | GPIO                                                              |
-| 33          | PA6           | I/O      | GPIO                                                              |
-| 34          | PA7           | I/O      | GPIO                                                              |
+| 31          | PA4           | I/O      | GPIO or SPI1 (SPI1_CS)                                            |
+| 32          | PA5           | I/O      | GPIO or SPI1 (SPI1_CLK)                                           |
+| 33          | PA6           | I/O      | GPIO or SPI1 (SPI1_MISO)                                          |
+| 34          | PA7           | I/O      | GPIO or SPI1 (SPI1_MOSI)                                          |
 | 35          | GND           |          | Ground                                                            |
 | 36          | GND           |          | Ground                                                            |
 | 37          | RF_OUT        | O        | RF Output                                                         |
@@ -135,7 +135,7 @@ You can check the pin definitions on the table and illustration, as shown in **F
 | 47          | GND           |          | Ground                                                            |
 | 48          | PB11          | I/O      | GPIO                                                              |
 | 49          | PB10          | I/O      | GPIO                                                              |
-| 50          | PA9           | I/O      | GPIO                                                              |
+| 50          | PA9           | I/O      | GPIO or I2C_SCL                                                   |
 | 51          | PA8           | I/O      | GPIO                                                              |
 | 52          | GND           |          | Ground                                                            |
 | 53          | VDDPA         |          | RF PA power input                                                 |
@@ -147,7 +147,7 @@ You can check the pin definitions on the table and illustration, as shown in **F
 | 59          | PB12          | I/O      | GPIO                                                              |
 | 60          | PB13          | I/O      | GPIO                                                              |
 | 61          | PB14          | I/O      | GPIO                                                              |
-| 62          | PA10          | I/O      | GPIO                                                              |
+| 62          | PA10          | I/O      | GPIO or I2C_SDA                                                   |
 | 63          | PA11          | I/O      | GPIO                                                              |
 | 64          | PA12          | I/O      | GPIO                                                              |
 | 65-73       | GND           |          | Ground                                                            |

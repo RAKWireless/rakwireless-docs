@@ -18,6 +18,10 @@ Thank you for choosing **RAK4200 WisDuo LPWAN Module** in your awesome IoT Proje
 * <a href="/RUI/" target="_blank">RUI Secondary Development</a> - RAK4200 module supports RUI Secondary Development, refer to <a href="/RUI/" target="_blank">RUI</a> for further details.
 * [Low Level Development](../Low-Level-Development/)
 * [Datasheet](../Datasheet/)
+* [Reference Design](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK4200-Breakout-Board/Datasheet/#schematic-diagram)
+
+
+
 
 ## Product Description
 

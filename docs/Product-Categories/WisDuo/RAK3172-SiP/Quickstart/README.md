@@ -261,6 +261,294 @@ Once the Arduino IDE has been installed successfully, you can now configure the 
 
 11. After the Device Programmed is completed, you will see the working Arduino_Serial example.
 
+##### RAK3172-SiP I/O Pins and Peripherals
+
+This section discusses how to use and access RAK3172-SiP pins using RUI3 API. It shows basic code on using digital I/O, analog input, UART, and I2C.
+
+<!-- 
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/rak3172-sip-pins.png"
+  width="90%"
+  caption="Available Peripherals and Digital I/O pins in RAK3172-SiP module"
+/>
+
+-->
+
+###### How to Use Digital I/O
+
+You can use any of the pins below as Digital Pin. 
+
+
+| **Port Name** | **Alternative Pin Usage** |
+| ------------- | ------------------------- |
+| PA4           | SPI1_NSS                  |
+| PA5           | SPI1_CLK                  |
+| PA6           | SPI1_MISO                 |
+| PA7           | SPI1_MOSI                 |
+| PA8           |                           |
+| PA9           | I2C_SCL                   |
+| PA10          | I2C_SDA                   |
+| PA15          |                           |
+| PB1           |                           |
+| PB2           |                           |
+| PB3           | ADC0                      |
+| PB4           | ADC1                      |
+| PB5           |                           |
+| PB6           | UART1_TX                  |
+| PB7           | UART1_RX                  |
+| PB8           |                           |
+| PB9           |                           |
+| PB10          |                           |
+| PB11          |                           |
+| PB12          |                           |
+| PB13          |                           |
+| PB14          |                           |
+| PB15          |                           |
+| PC0           |                           |
+| PC1           |                           |
+| PC2           |                           |
+| PC3           |                           |
+| PC4           |                           |
+| PC5           |                           |
+| PC6           |                           |
+| PC13          |                           |
+
+
+In **Figure 21**, the available I/O pins are shown in purple.
+
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/rak3172-sip-io.png"
+  width="100%"
+  caption="Available Digital I/O pins in RAK3172-SiP module"
+/>
+
+The pins listed below must not be used.
+
+| **Port Name** | **Pin Usage** | **Pin Number** |
+| ------------- | ------------- | :------------: |
+| PA2           | UART2_TX      |       29       |
+| PA3           | UART2_RX      |       30       |
+| PA13          | SWDIO         |       1        |
+| PA14          | SWCLK         |       2        |
+
+
+:::tip 📝 NOTE:
+The GPIO pin name is the one to be used on the **digitalRead** and **digitalWrite** and NOT the pin numbers.
+:::
+
+
+- Use Arduino [digitalRead](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/) to read the value from a specified Digital I/O pin, either HIGH or LOW.
+- Use Arduino [digitalWrite](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/) to write a HIGH or a LOW value to a Digital I/O pin.
+
+
+**Example code**
+
+```c
+void setup()
+{
+  pinMode(PA15, OUTPUT); //Change the P0_04 to any digital pin you want. Also, you can set this to INPUT or OUTPUT
+}
+
+void loop()
+{
+  digitalWrite(PA15,HIGH); //Change the PA15 to any digital pin you want. Also, you can set this to HIGH or LOW state.
+  delay(1000); // delay for 1 second
+  digitalWrite(PA15,LOW); //Change the PA15 to any digital pin you want. Also, you can set this to HIGH or LOW state.
+  delay(1000); // delay for 1 second
+}
+```
+
+###### How to Use Analog Input
+
+You can use any of the pins below as Analog Input.
+
+| **Port Name** | **ADC** | **Pin Number** |
+| ------------- | ------- | :------------: |
+| PB3           | ADC0    |       14       |
+| PB4           | ADC1    |       15       |
+
+
+
+- Use Arduino [analogRead](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/) to read the value from the specified Analog Input pin.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/rak3172-sip-adc.png"
+  width="90%"
+  caption="Available Analog pins in RAK3172-SiP Module"
+/>
+
+
+**Example code**
+
+```c
+#define analogPin PB3
+
+int val = 0;  // variable to store the value read
+
+void setup() 
+{
+  Serial.begin(115200); 
+}
+
+void loop() 
+{
+  val = analogRead(analogPin);  // read the input pin
+  Serial.println(val);          // debug value
+  delay(100);
+}
+```
+
+###### How to Use Serial Interfaces
+
+**UART**
+
+There are two UART peripherals available on the RAK3172-SiP module. There are also different [Serial Operating Modes](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/#rui3-serial-operating-modes) possible in RUI3, namely [Binary Mode](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/Binary-Command-Manual/), [AT Mode](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/), and [Custom Mode](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/Custom-Mode/).
+
+
+UART Pin map table
+
+| **Port Name** | **Serial Port** | **Serial Instance Assignment** | **Default Mode** | **Pin Number** |
+| ------------- | --------------- | :----------------------------: | ---------------- | :------------: |
+| PB6           | UART1_RX        |            Serial1             | Custom Mode      |       18       |
+| PB7           | UART1_TX        |            Serial1             | Custom Mode      |       17       |
+| PA3           | UART2_RX        |             Serial             | AT Command       |       30       |
+| PA2           | UART2_TX        |             Serial             | AT Command       |       29       |
+
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/rak3172-sip-uart.png"
+  width="90%"
+  caption="Available UART pins in RAK3172-SiP Module"
+/>
+
+**Example Code**
+
+```c
+void setup() 
+{
+  Serial1.begin(115200); // use Serial1 for UART1 and Serial for UART2 
+                         // you can designate separate baudrate for each.
+  Serial.begin(115200);
+}
+
+void loop() 
+{
+  Serial1.println("RAK3172-SiP UART1 TEST!");
+  Serial.println("RAK3172-SiP UART2 TEST!");
+  delay(1000); // delay for 1 second
+}
+
+```
+
+**I2C**
+
+There is one I2C peripheral available on RAK3172-SiP Module.
+
+| **Port Name** | **I2C Pin Name** | **Pin Number** |
+| ------------- | ---------------- | -------------- |
+| PA9           | I2C_SCL          | 50             |
+| PA10          | I2C_SDA          | 62             |
+
+
+Use Arduino [Wire](https://www.arduino.cc/reference/en/language/functions/communication/wire/) library to communicate with I2C devices.
+
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/rak3172-sip-i2c.png"
+  width="90%"
+  caption="Available I2C pins in RAK3172-SiP Module"
+/>
+
+**Example Code**
+
+Make sure you have an I2C device connected to specified I2C pins to run the I2C scanner code below:
+
+```c
+#include <Wire.h>
+
+void setup()
+{
+  Wire.begin();
+ 
+  Serial.begin(115200);
+  while (!Serial);            
+  Serial.println("\nI2C Scanner");
+}
+ 
+ 
+void loop()
+{
+  byte error, address;
+  int nDevices;
+ 
+  Serial.println("Scanning...");
+ 
+  nDevices = 0;
+  for(address = 1; address < 127; address++ )
+  {
+    // The i2c_scanner uses the return value of
+    // the Write.endTransmission to see if
+    // a device did acknowledge to the address.
+    Wire.beginTransmission(address);
+    error = Wire.endTransmission();
+ 
+    if (error == 0)
+    {
+      Serial.print("I2C device found at address 0x");
+      if (address<16)
+        Serial.print("0");
+      Serial.print(address,HEX);
+      Serial.println("  !");
+ 
+      nDevices++;
+    }
+    else if (error==4)
+    {
+      Serial.print("Unknown error at address 0x");
+      if (address<16)
+        Serial.print("0");
+      Serial.println(address,HEX);
+    }    
+  }
+  if (nDevices == 0)
+    Serial.println("No I2C devices found\n");
+  else
+    Serial.println("done\n");
+ 
+  delay(5000);           // wait 5 seconds for next scan
+}
+```
+
+The Arduino Serial Monitor shows the I2C device found.
+
+```c
+17:29:15.690 -> Scanning...
+17:29:15.738 -> I2C device found at address 0x28  !
+17:29:15.831 -> done
+17:29:15.831 -> 
+17:29:20.686 -> Scanning...
+17:29:20.733 -> I2C device found at address 0x28  !
+17:29:20.814 -> done
+17:29:20.814 -> 
+```
+**SPI**
+
+If your RUI3 project uses SPI, then PA4 to PA7 pins are reserved for RUI3 SPI interface. 
+
+| **Port Name** | **SPI Pin Name** | **Pin Number** |
+| ------------- | ---------------- | -------------- |
+| PA4           | SPI1_CS          | 31             |
+| PA5           | SPI1_CLK         | 32             |
+| PA6           | SPI1_MISO        | 33             |
+| PA7           | SPI1_MOSI        | 34             |
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-sip/quickstart/rak3172-sip-spi.png"
+  width="90%"
+  caption="Available SPI pins in RAK3172-SiP Module"
+/>
 
 
 ### RAK3172-SiP as a LoRa/LoRaWAN Modem via AT Command
@@ -277,7 +565,7 @@ An alternative option to update firmware aside from UART2 is to use SWD pins (SW
 
 ##### Connect to the RAK3172-SiP 
 
-1. Connect the RAK3172-SiP to the serial port of a general-purpose computer (USB port) using a USB to UART TTL adapter like [RAKDAP1](https://store.rakwireless.com/collections/accessories/products/daplink-tool), as shown in **Figure 21**.
+1. Connect the RAK3172-SiP to the serial port of a general-purpose computer (USB port) using a USB to UART TTL adapter like [RAKDAP1](https://store.rakwireless.com/collections/accessories/products/daplink-tool), as shown in **Figure 26**.
 
 :::tip 📝 NOTE:
 
@@ -301,7 +589,7 @@ There are other connections needed on the RAK3172-SiP aside from the VDD, GND, a
  
  ##### RAK3172-SiP Configuration for LoRaWAN or LoRa P2P
 
-To enable the RAK3172 module as a LoRa P2P module or a LoRaWAN end-device, the module must be configured and parameters must be set by sending AT commands. You can configure the RAK3172 in two ways:
+To enable the RAK3172-SiP module as a LoRa P2P module or a LoRaWAN end-device, the module must be configured and parameters must be set by sending AT commands. You can configure the RAK3172-SiP in two ways:
 
 - [LoRaWAN End-Device](/Product-Categories/WisDuo/RAK3172-SiP/quickstart/#configuring-rak3172-sip-as-lorawan-end-device) - RAK3172 as LoRaWAN IoT device.
 - [LoRa P2P](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#lora-p2p-mode) - Point to point communication between two RAK3172-SiP.
@@ -335,7 +623,7 @@ In this guide, you need to have a working gateway that is connected to TTN or yo
   caption="RAK3172-SiP EVB in the context of the TTN"
 />
 
-As shown in **Figure 22**, The Things Stack (TTN V3) is an open-source LoRaWAN Network Server suitable for global, geo-distributed public and private deployments, as well as for small local networks. The architecture follows the LoRaWAN Network Reference Model for standards compliance and interoperability. This project is actively maintained by [The Things Industries](https://www.thethingsindustries.com/).
+As shown in **Figure 27**, The Things Stack (TTN V3) is an open-source LoRaWAN Network Server suitable for global, geo-distributed public and private deployments, as well as for small local networks. The architecture follows the LoRaWAN Network Reference Model for standards compliance and interoperability. This project is actively maintained by [The Things Industries](https://www.thethingsindustries.com/).
 
 LoRaWAN is a protocol for low-power wide-area networks. It allows large-scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long-range wireless connections.
 
@@ -343,7 +631,7 @@ The RAK3172-SiP WisDuo can be part of this ecosystem as a device, and the object
 
 ##### Registration to TTN and Creating LoRaWAN Applications
 
-1. The first step is to go to [The Things Network platform](https://console.cloud.thethings.network/) and select a cluster, as shown in **Figure 23**.
+1. The first step is to go to [The Things Network platform](https://console.cloud.thethings.network/) and select a cluster, as shown in **Figure 28**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/image_1.png"
@@ -353,7 +641,7 @@ The RAK3172-SiP WisDuo can be part of this ecosystem as a device, and the object
 
 You can use the same login credentials on the TTN V2 if you have one. If you have no account yet, you need to create one.
 
-2. To register as a new user to TTN, click on **Login with The Things ID** and then select **register** on the next page, as shown in **Figure 24** and **Figure 25**.
+2. To register as a new user to TTN, click on **Login with The Things ID** and then select **register** on the next page, as shown in **Figure 29** and **Figure 30**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/image_2.png"
@@ -369,7 +657,7 @@ You can use the same login credentials on the TTN V2 if you have one. If you hav
 
 3. You should now be on the step of creating your TTN account. Fill in all the necessary details and activate your account.
 
-4. After creating an account, you should log in on the platform using your username/email and password then click **Submit**, as shown in **Figure 26**.
+4. After creating an account, you should log in on the platform using your username/email and password then click **Submit**, as shown in **Figure 31**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/image_4.png"
@@ -405,7 +693,7 @@ You can use the same login credentials on the TTN V2 if you have one. If you hav
 
 ##### TTN OTAA Device Registration
 
-1. Go to your application console to be able to register a device. To start adding an OTAA end-device, click **+ Add end device**, as shown in **Figure 30**.
+1. Go to your application console to be able to register a device. To start adding an OTAA end-device, click **+ Add end device**, as shown in **Figure 35**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/image_8.png"
@@ -413,7 +701,7 @@ You can use the same login credentials on the TTN V2 if you have one. If you hav
   caption="Add end device"
 />
 
-2. To register the module, click first **Manually** then configure the activation method by selecting **Over the air activation (OTAA)** and compatible **LoRaWAN version** then click the **Start** button, as shown in **Figure 31** and **Figure 32**.
+2. To register the module, click first **Manually** then configure the activation method by selecting **Over the air activation (OTAA)** and compatible **LoRaWAN version** then click the **Start** button, as shown in **Figure 36** and **Figure 37**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/image_9.png"
@@ -427,7 +715,7 @@ You can use the same login credentials on the TTN V2 if you have one. If you hav
   caption="Device activation configuration"
 />
 
-3. Then you need to put a unique **End device ID** and EUIs (**DevEUI** and **AppEUI**), as shown in **Figure 33**. Check if your module has a DevEUI on the sticker or QR that you can scan then use this as the device unique DevEUI.
+3. Then you need to put a unique **End device ID** and EUIs (**DevEUI** and **AppEUI**), as shown in **Figure 38**. Check if your module has a DevEUI on the sticker or QR that you can scan then use this as the device unique DevEUI.
 
 Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
 
@@ -461,7 +749,7 @@ It is advisable to use a meaningful end-device ID, end-device name, and end-devi
   caption="OTAA AppKey generation and device registration"
 />
 
-You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 36**.
+You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 41**.
 
 :::tip 📝 NOTE:
 
@@ -469,7 +757,7 @@ The **AppEUI**, **DevEUI**, and **AppKey** are the parameters that you will need
 
 The three OTAA parameters on the TTN device console are MSB by default. 
 
-These parameters are always accessible on the device console page, as shown in **Figure 36**.
+These parameters are always accessible on the device console page, as shown in **Figure 41**.
 :::
 
 <rk-img
@@ -483,7 +771,7 @@ These parameters are always accessible on the device console page, as shown in *
 
 The RAK3172-SiP supports a series of AT commands to configure its internal parameters and control the functionalities of the module. 
 
-1. To set up the RAK3172-SiP to join the TTN using OTAA, start by connecting the RAK3172-SiP to your computer (see **[Figure 21](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connect-to-the-rak3172-sip)**) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
+1. To set up the RAK3172-SiP to join the TTN using OTAA, start by connecting the RAK3172-SiP to your computer (see **[Figure 26](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connect-to-the-rak3172-sip)**) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify that the current configuration is working by sending these two AT commands:
 
@@ -497,7 +785,7 @@ ATE
 
 `ATE` will echo the commands you input to the module, which is useful for tracking the commands and troubleshooting.
 
-You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK`, as shown in **Figure 37**.
+You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK`, as shown in **Figure 42**.
 
 :::tip 📝 NOTE:
 
@@ -552,17 +840,17 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 
 **List of band parameter options**
 
-| Code     | Regional Band |
-| -------- | ------------- |
-| 0        | EU433 (Not Supported) |
-| 1        | CN470 (Not Supported) |
-| 2        | RU864         |
-| 3        | IN865         |
-| 4        | EU868         |
-| 5        | US915         |
-| 6        | AU915         |
-| 7        | KR920         |
-| 8        | AS923         |
+| Code | Regional Band         |
+| ---- | --------------------- |
+| 0    | EU433 (Not Supported) |
+| 1    | CN470 (Not Supported) |
+| 2    | RU864                 |
+| 3    | IN865                 |
+| 4    | EU868                 |
+| 5    | US915                 |
+| 6    | AU915                 |
+| 7    | KR920                 |
+| 8    | AS923                 |
 
 
 <rk-img
@@ -613,10 +901,10 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | --------- | ------------------------------------------------------------ |
 | w         | Join command - 1: joining, 0: stop joining.                  |
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
-| y         | Reattempt interval in seconds (7-255) - 8 is the default.        |
+| y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
 | z         | Number of join attempts (0-255) - 0 is default.              |
 
-After 5 or 6 seconds, if the request is successfully received by a LoRaWAN gateway, you should see a `+EVT:JOINED` status reply, as shown in **Figure 40**.
+After 5 or 6 seconds, if the request is successfully received by a LoRaWAN gateway, you should see a `+EVT:JOINED` status reply, as shown in **Figure 45**.
 
 :::tip 📝 NOTE:
 
@@ -650,7 +938,7 @@ AT+SEND=2:12345678
 
 ##### TTN ABP Device Registration
 
-1. To register an ABP device, go to your application console and select the application where you want your device to be added. Then click **+ Add end device**, as shown in **Figure 42**.
+1. To register an ABP device, go to your application console and select the application where you want your device to be added. Then click **+ Add end device**, as shown in **Figure 47**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/image_8.png"
@@ -658,7 +946,7 @@ AT+SEND=2:12345678
   caption="Adding ABP device"
 />
 
-2. To register the module, you need to click first **Manually** then configure the activation method by selecting **Activation by personalization (ABP)**  compatible **LoRaWAN version** and click the **Start** button, as shown in **Figure 43** and **Figure 44**.
+2. To register the module, you need to click first **Manually** then configure the activation method by selecting **Activation by personalization (ABP)**  compatible **LoRaWAN version** and click the **Start** button, as shown in **Figure 48** and **Figure 49**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/image_9.png"
@@ -672,7 +960,7 @@ AT+SEND=2:12345678
   caption="Selecting ABP and LoRaWAN version"
 />
 
-3. At this step, you need to put a unique **End device ID** and **DevEUI**, as shown in **Figure 45**. Check if your module has a DevEUI on the sticker or QR that you can scan then use this as the device unique DevEUI.
+3. At this step, you need to put a unique **End device ID** and **DevEUI**, as shown in **Figure 50**. Check if your module has a DevEUI on the sticker or QR that you can scan then use this as the device unique DevEUI.
 
 Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
 
@@ -706,7 +994,7 @@ It is advisable to use a meaningful end-device ID, end-device name, and end-devi
   caption="ABP AppSKey generation and device registration"
 />
 
-You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 48**.
+You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 53**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/image_5_abp.png"
@@ -716,7 +1004,7 @@ You should now be able to see the device on the TTN console after you fully regi
 
 ##### ABP Configuration for TTN
 
-1. To set up the RAK3172-SiP to join the TTN using ABP, start by connecting the RAK3172-SiP to the computer (see **[Figure 21](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connect-to-the-rak3172-sip)**) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
+1. To set up the RAK3172-SiP to join the TTN using ABP, start by connecting the RAK3172-SiP to the computer (see **[Figure 26](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connect-to-the-rak3172-sip)**) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify the current configuration is working by sending these two AT commands:
 
@@ -730,7 +1018,7 @@ ATE
 
 `ATE` will echo the commands you input to the module, which is useful for tracking the commands and troubleshooting.
 
-2. You will receive OK when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by OK, as shown in **Figure 49**.
+2. You will receive OK when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by OK, as shown in **Figure 54**.
 
 :::tip 📝 NOTE:
 
@@ -912,7 +1200,7 @@ The frequency band used in the demonstration is EU868.
 
 1. Log in to the ChirpStack server using your account and password.
 
-2. Go to the Application section, as shown in **Figure 55**.
+2. Go to the Application section, as shown in **Figure 60**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/24.chirpstack.png"
@@ -920,7 +1208,7 @@ The frequency band used in the demonstration is EU868.
   caption="Application section"
 />
 
-3. By default, you should create a new application, although you can reuse existing ones. For this setup, create a new Application by clicking on the “**CREATE**” button and filling in the required parameters, as shown in **Figure 56** and **Figure 57**.
+3. By default, you should create a new application, although you can reuse existing ones. For this setup, create a new Application by clicking on the “**CREATE**” button and filling in the required parameters, as shown in **Figure 61** and **Figure 62**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/25.new-application.png"
@@ -944,7 +1232,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 
 <b>Register a New Device</b>
 
-4. Choose the **Application** created in the previous step, then select the **DEVICES** tab, as shown in **Figure 58** and **Figure 59**.
+4. Choose the **Application** created in the previous step, then select the **DEVICES** tab, as shown in **Figure 63** and **Figure 64**.
 
 5. Once done, click “**+ CREATE**”.
 
@@ -1002,7 +1290,7 @@ If you have your own Chirpstack installation, you can set up the device profile 
 
 ##### Chirpstack OTAA Device Registration
 
-1. If you have selected “**DeviceProfile_OTAA**”, as shown in **Figure 63**, then after the device is created, an Application Key must be also created for this device. 
+1. If you have selected “**DeviceProfile_OTAA**”, as shown in **Figure 68**, then after the device is created, an Application Key must be also created for this device. 
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/32.otaa.png"
@@ -1010,7 +1298,7 @@ If you have your own Chirpstack installation, you can set up the device profile 
   caption="Chirpstack OTAA activation"
 />
 
-2. A previously created Application Key can be entered here, or a new one can be generated automatically by clicking the icon highlighted in red in **Figure 64**.
+2. A previously created Application Key can be entered here, or a new one can be generated automatically by clicking the icon highlighted in red in **Figure 69**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/33.otaa-set-device-keys.png"
@@ -1020,7 +1308,7 @@ If you have your own Chirpstack installation, you can set up the device profile 
 
 3. Once the Application Key is added to the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button. 
 
-* As shown in **Figure 65**, a new device should be listed in the DEVICES tab. The most important parameters, such as the Device EUI, are shown in the summary.
+* As shown in **Figure 70**, a new device should be listed in the DEVICES tab. The most important parameters, such as the Device EUI, are shown in the summary.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/34.set-device-eui.png"
@@ -1028,7 +1316,7 @@ If you have your own Chirpstack installation, you can set up the device profile 
   caption="Chirpstack OTAA list of device in the device tab"
 />
 
-4. To end the process, it is a good practice to review that the Application Key is properly associated with this device. The Application Key can be verified in the **KEYS(OTAA)** tab, as shown in **Figure 66**.
+4. To end the process, it is a good practice to review that the Application Key is properly associated with this device. The Application Key can be verified in the **KEYS(OTAA)** tab, as shown in **Figure 71**.
 
 
 <rk-img
@@ -1047,7 +1335,7 @@ Standard OTAA mode requires the **Device EUI**, **Application Key**, and **Appli
 
 The RAK3172-SiP supports a series of AT commands to configure its internal parameters and control the functionalities of the module. 
 
-1. To set up the RAK3172-SiP to join the Chirpstack using OTAA, start by connecting the RAK3172-SiP to the Computer (see **[Figure 21](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connect-to-the-rak3172-sip)**) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
+1. To set up the RAK3172-SiP to join the Chirpstack using OTAA, start by connecting the RAK3172-SiP to the Computer (see **[Figure 26](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connect-to-the-rak3172-sip)**) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify that the current configuration is working by sending these two AT commands:
 
@@ -1061,7 +1349,7 @@ ATE
 
 `ATE` will echo the commands you input to the module, which is useful for tracking the commands and troubleshooting.
 
-You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK`, as shown in **Figure 67**.
+You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK`, as shown in **Figure 72**.
 
 :::tip 📝 NOTE:
 
@@ -1116,17 +1404,17 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 
 **List of band parameter options**
 
-| Code     | Regional Band |
-| -------- | ------------- |
-| 0        | EU433 (Not Supported) |
-| 1        | CN470 (Not Supported) |
-| 2        | RU864         |
-| 3        | IN865         |
-| 4        | EU868         |
-| 5        | US915         |
-| 6        | AU915         |
-| 7        | KR920         |
-| 8        | AS923         |
+| Code | Regional Band         |
+| ---- | --------------------- |
+| 0    | EU433 (Not Supported) |
+| 1    | CN470 (Not Supported) |
+| 2    | RU864                 |
+| 3    | IN865                 |
+| 4    | EU868                 |
+| 5    | US915                 |
+| 6    | AU915                 |
+| 7    | KR920                 |
+| 8    | AS923                 |
 
 
 <rk-img
@@ -1207,7 +1495,7 @@ Send command format: **`AT+SEND=<port>:<payload>`**
   caption="OTAA test sample data sent via RAK Serial Port Tool"
 />
 
-On the ChirpStack platform, you should see the join and uplink messages in the LORAWAN FRAMES tab, as shown in **Figure 71**. By convention, messages sent from nodes to gateways are considered as **Uplinks** while messages sent by gateways to nodes are considered as **Downlinks**. 
+On the ChirpStack platform, you should see the join and uplink messages in the LORAWAN FRAMES tab, as shown in **Figure 76**. By convention, messages sent from nodes to gateways are considered as **Uplinks** while messages sent by gateways to nodes are considered as **Downlinks**. 
 
 
 <rk-img
@@ -1218,7 +1506,7 @@ On the ChirpStack platform, you should see the join and uplink messages in the L
 
 ##### Chirpstack ABP Device Registration
 
-1. During the registration of a new device, if you select “**DeviceProfile_ABP**”, as shown in **Figure 72**, then the ChirpStack platform will assume that this device will join the LoRaWAN network using the ABP mode. 
+1. During the registration of a new device, if you select “**DeviceProfile_ABP**”, as shown in **Figure 77**, then the ChirpStack platform will assume that this device will join the LoRaWAN network using the ABP mode. 
 
 
 :::tip 📝 NOTE:
@@ -1253,7 +1541,7 @@ Then, you can see that there are some parameters for ABP in the **“ACTIVATION�
 
 ##### ABP Configuration for Chirpstack
 
-1. To set up the RAK3172-SiP to join the Chirpstack using ABP, start by connecting the RAK3172-SiP to the Computer (see **[Figure 21](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connect-to-the-rak3172-sip)**) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
+1. To set up the RAK3172-SiP to join the Chirpstack using ABP, start by connecting the RAK3172-SiP to the Computer (see **[Figure 26](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connect-to-the-rak3172-sip)**) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
 It is recommended to start by testing the serial communication and verify that the current configuration is working by sending these two AT commands:
 
@@ -1267,7 +1555,7 @@ ATE
 
 `ATE` will echo the commands you input to the module, which is useful for tracking the commands and troubleshooting.
 
-You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK`, as shown in **Figure 74**.
+You will receive `OK` when you input the two commands. After setting `ATE`, you can now see all the commands you input together with the replies. Try again `AT` and you should see it on the terminal followed by `OK`, as shown in **Figure 79**.
 
 :::tip 📝 NOTE:
 
@@ -1322,17 +1610,17 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 
 **List of band parameter options**
 
-| Code     | Regional Band |
-| -------- | ------------- |
-| 0        | EU433 (Not Supported) |
-| 1        | CN470 (Not Supported) |
-| 2        | RU864         |
-| 3        | IN865         |
-| 4        | EU868         |
-| 5        | US915         |
-| 6        | AU915         |
-| 7        | KR920         |
-| 8        | AS923         |
+| Code | Regional Band         |
+| ---- | --------------------- |
+| 0    | EU433 (Not Supported) |
+| 1    | CN470 (Not Supported) |
+| 2    | RU864                 |
+| 3    | IN865                 |
+| 4    | EU868                 |
+| 5    | US915                 |
+| 6    | AU915                 |
+| 7    | KR920                 |
+| 8    | AS923                 |
 
 
 
@@ -1380,12 +1668,12 @@ AT+JOIN=1:0:10:8
 
 Join command format: **`AT+JOIN=w:x:y:z`**
 
-| Parameter | Description                                                 |
-| --------- | ----------------------------------------------------------- |
-| w         | Join command - 1: joining, 0: stop joining.                 |
+| Parameter | Description                                                  |
+| --------- | ------------------------------------------------------------ |
+| w         | Join command - 1: joining, 0: stop joining.                  |
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
-| y         | Reattempt interval in seconds (7-255) - 8 is the default.       |
-| z         | Number of join attempts (0-255) - 0 is default.             |
+| y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
+| z         | Number of join attempts (0-255) - 0 is default.              |
 
 4. After 5 or 6 seconds, if the request is successfully received by a LoRaWAN gateway, then you should see the JOINED status reply.
 
@@ -1514,7 +1802,7 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
 2.  Download the RAK Device Firmware Upgrade (DFU) tool.
     - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
-3.  Connect the RAK3172-SiP with a computer through a USB to Serial converter. Refer to [**Figure 21**](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connect-to-the-rak3172-sip).
+3.  Connect the RAK3172-SiP with a computer through a USB to Serial converter. Refer to [**Figure 26**](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connect-to-the-rak3172-sip).
 
 4.  Open the Device Firmware Upgrade tool. Select the serial port and baud rate (115200) of the module and click the "Select Port" button.
 
@@ -1652,7 +1940,7 @@ In Mac OS X, the same as Linux, there is no installation process. It is just a p
 
 ### Arduino IDE Parts Guide
 
-**Figure 96** shows the five (5) parts of Arduino IDE.
+**Figure 100** shows the five (5) parts of Arduino IDE.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/quickstart/7.arduino-ide.png"

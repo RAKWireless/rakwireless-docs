@@ -205,8 +205,8 @@ The tables below show the header definitions of the RAK3272-SiP Breakout Board:
 | Pin | Name     | Description                                         | RAK3272-SiP Pin |
 | --- | -------- | --------------------------------------------------- | --------------- |
 | 1   | 3V3      | Power Supply                                        | -               |
-| 2   | PB3      | MCU pin PB3                                         | PB3             |
-| 3   | PB4      | MCU pin PB4                                         | PB4             |
+| 2   | PB3      | GPIO or ADC0                                        | PB3             |
+| 3   | PB4      | GPIO or ADC1                                        | PB4             |
 | 4   | PB5      | MCU pin PB5                                         | PB5             |
 | 5   | GND      | Ground                                              | -               |
 
