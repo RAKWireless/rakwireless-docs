@@ -9,7 +9,7 @@ tags:
     - RAKARG19
 ---
 
-# 902-928MHz 5dBi Fiberglass Antenna
+# 902-928MHz 5.1dBi Fiberglass Antenna
 
 Thank you for choosing **902-928 MHz 5 dBi Fiberglass Antenna** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
@@ -17,7 +17,7 @@ Thank you for choosing **902-928 MHz 5 dBi Fiberglass Antenna** in your awesome 
 
 ## Product Description
 
-The 5&nbsp;dBi Fiberglass antenna is an outdoor, high-performance antenna, designed to withstand harsh outdoor conditions. It is specially designed for LoRa® in the 902-928&nbsp;MHz band – US915, AU915, AS923, and KR920.
+The 5.1&nbsp;dBi Fiberglass antenna is an outdoor, high-performance antenna, designed to withstand harsh outdoor conditions. It is specially designed for LoRa® in the 902-928&nbsp;MHz band – US915, AU915, AS923, and KR920.
 The antenna connector is one with the antenna body - this design further increases the resistance of the antenna to external conditions.
 With a length of only 480&nbsp;mm, this antenna will be the best fit for your LPWAN Gateway or outdoor deployed RAK Hotspot.
 
@@ -28,7 +28,7 @@ This antenna is designed to be directly mounted on the enclosure of the Gateway.
 ## Product Features
 
 - Frequency: 902-928&nbsp;MHz
-- Gain: 5.0&nbsp;dBi
+- Gain: 5.1&nbsp;dBi
 - VSWR: ≤ 1.47
 - Beamwidth: 360°
 - Impedance: 50&nbsp;Ω
