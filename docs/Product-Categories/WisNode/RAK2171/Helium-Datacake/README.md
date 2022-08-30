@@ -25,7 +25,7 @@ Before you dive into registering the device in the Helium console and creating t
   caption="Helium console main page"
 />
 
-2. In the menu on the left side of the console, select **Devices** and click on the **Add new device button** (<img src="/assets/images/wisnode/rak2171/helium-datacake/1.png"/>) to register your device. 
+2. In the menu on the left side of the console, select **Devices** and click the **Add new device** button (<img src="/assets/images/wisnode/rak2171/helium-datacake/1.png"/>) to register your device. 
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/02.png"
@@ -51,7 +51,7 @@ Before you dive into registering the device in the Helium console and creating t
 
 5. Optionally, you can select a **Profile** and **Attach a Label**. For this tutorial, they will be skipped. Note that **Profiles** and **Labels** can be added after the device is registered.
 
-6. After typing in the required keys, click on **Save Device**, and you will see the registered device. As mentioned by the console, the initial join process takes about 20 minutes for the device to join, so be patient. 
+6. After typing in the required keys, click **Save Device**, and you will see the registered device. As mentioned by the console, the initial join process takes about 20 minutes for the device to join, so be patient. 
 
 ## Create Datacake Integration
 
@@ -63,7 +63,7 @@ Before you dive into registering the device in the Helium console and creating t
   caption="Integration page"
 />
 
-2. To create an integration, click on the **Add New Integration button** (<img src="/assets/images/wisnode/rak2171/helium-datacake/2.png"/>). A list of the available integrations will appear. As this example is about Datacake, click on it. Here you can find information about the other integrations. You can find information about the other integrations in the [link](https://docs.helium.com/use-the-network/console/integrations/).
+2. To create an integration, click the **Add New Integration button** (<img src="/assets/images/wisnode/rak2171/helium-datacake/2.png"/>). A list of the available integrations will appear. As this example is about Datacake, click on it. Here you can find information about the other integrations. You can find information about the other integrations in the [link](https://docs.helium.com/use-the-network/console/integrations/).
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/06.png"
@@ -79,7 +79,7 @@ Before you dive into registering the device in the Helium console and creating t
   caption="Datacake endpoint token"
 />
 
-4. After you log into your Datacake account, click on your profile and select **Edit Profile.**
+4. After you log into your Datacake account, click your profile and select **Edit Profile.**
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/08.png"
@@ -142,60 +142,72 @@ Before you dive into registering the device in the Helium console and creating t
   caption="Datacake console"
 />
 
-2. Datacake has ready-to-use templates for different devices. However, as TrackIt is a new device, it doesn’t have a ready-to-use template, so you need to make one on your own. To add the device, click **New Product** and type the name of your product in the **Product Name** field.
+2. Datacake has ready-to-use TrackIt template. To add the device, click **LoRaWAN** and then **Next**.
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/17.png"
   width="50%"
-  caption="Adding a new product in Datacake"
+  caption="Adding a new device"
 />
 
-3. Click **Next** to continue. On the next window, for Network Server select **Helium** and click **Next** again.
+3. On the next window, in the **Search** field, type **TrackIt** and choose the **Device Template**. Then click **Next**.
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/18.png"
   width="50%"
-  caption="Choosing network server"
+  caption="Selecting product template"
 />
 
-4. On the next page, type the **Dev EUI** and the **Name** of your device. You can add more than one device. You can also drag and drop a **.csv** file, and it automatically adds multiple devices at once. Then click **Next**. 
+4. On the next page, choose **Helium** for Network server and click **Next**. 
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/19.png"
   width="50%"
-  caption="Adding the device"
+  caption="Choosing network server"
 />
 
-5. On the next page, you have to choose a plan. Choose the **Free** one for this example. Click the **Add 1 device** button to finish.
+5. On the next page, type the **Dev EUI** and the **Name of your device**. You can add more than one device. You can also drag and drop a `.csv` file, and it automatically adds multiple devices at once. Then click **Next**.
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/20.png"
   width="50%"
-  caption="Choosing a plan"
+  caption="Adding device"
 />
 
-Now, your device is registered in Datacake. 
+6. Finally, choose a plan. For this example, choose the **Free** one. Click **Add 1 device** to finish. 
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/21.png"
   width="100%"
-  caption="Successfully registered device"
+  caption="Choosing a plan"
 />
 
-6. Before you carry on with setting up the Datacake Dashboard of the device, make sure that the device has already joined in Helium Console.
+7. Now, your device is registered in Datacake.
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/22.png"
   width="100%"
-  caption="Joined device in Helium console"
+  caption="Registered TrackIt device in Datacake"
 />
+
+8. You can click the name of your device and check the Dashboard. 
+
+<rk-img
+  src="/assets/images/wisnode/rak2171/helium-datacake/23.png"
+  width="100%"
+  caption="TrackIt Dashboard"
+/>
+
+Everything in the Dashboard is pre-configured (fields, decoder, widgets), and it is ready to use. 
+
+<!--
 
 ## Configure the Device in Datacake
 
 1. You need to decode the raw data that the device sends to Datacake, so you can preview it in a more user-friendly way. On the device page of the Datacake console, you can find different tabs like **Dashboard**, **History**, and **Downlinks**. For now, head to the **Configuration tab**.
 
 <rk-img
-  src="/assets/images/wisnode/rak2171/helium-datacake/23.png"
+  src="/assets/images/wisnode/rak2171/helium-datacake/24.png"
   width="100%"
   caption="Device’s Dashboard"
 />
@@ -203,7 +215,7 @@ Now, your device is registered in Datacake.
 2. Scroll down until you find the Payload Decoder field. 
 
 <rk-img
-  src="/assets/images/wisnode/rak2171/helium-datacake/24.png"
+  src="/assets/images/wisnode/rak2171/helium-datacake/25.png"
   width="100%"
   caption="Device’s Configuration Page"
 />
@@ -283,7 +295,7 @@ function Decoder(bytes, port) {
 4. Now you can see the decoded data you receive in the **Debug tab**.
 
 <rk-img
-  src="/assets/images/wisnode/rak2171/helium-datacake/25.png"
+  src="/assets/images/wisnode/rak2171/helium-datacake/26.png"
   width="70%"
   caption="TrackIt Data"
 />
@@ -324,7 +336,7 @@ function Decoder(bytes, port) {
 - **Use formula** - Formulas can be used to perform calculations on values based on other fields. 
 
 <rk-img
-  src="/assets/images/wisnode/rak2171/helium-datacake/26.png"
+  src="/assets/images/wisnode/rak2171/helium-datacake/27.png"
   width="70%"
   caption="Adding a field"
 />
@@ -332,7 +344,7 @@ function Decoder(bytes, port) {
 For example, to create a **LOCATION** field, choose **Geolocation** in the **Type** field. For the **Identifier** field, type the name of the decoded data field: **LOCATION**.
 
 <rk-img
-  src="/assets/images/wisnode/rak2171/helium-datacake/27.png"
+  src="/assets/images/wisnode/rak2171/helium-datacake/28.png"
   width="70%"
   caption="Location field"
 />
@@ -340,7 +352,7 @@ For example, to create a **LOCATION** field, choose **Geolocation** in the **Typ
 7. When you enter the required information, click **Add Field**. You will see the created field in the Field tab. Once a packet is received, the field will take the value of the identifier.
 
 <rk-img
-  src="/assets/images/wisnode/rak2171/helium-datacake/28.png"
+  src="/assets/images/wisnode/rak2171/helium-datacake/29.png"
   width="100%"
   caption="Successfully Created Field"
 />
@@ -348,7 +360,7 @@ For example, to create a **LOCATION** field, choose **Geolocation** in the **Typ
 Another example is if you want to create a field for the battery level. Click again **+ Add Field**, and select **Integer** in the **Type** field. Type **Battery** in the Name field and **BATT** in the Identifier field.
 
 <rk-img
-  src="/assets/images/wisnode/rak2171/helium-datacake/29.png"
+  src="/assets/images/wisnode/rak2171/helium-datacake/30.png"
   width="70%"
   caption="Add battery field"
 />
@@ -358,7 +370,7 @@ Another example is if you want to create a field for the battery level. Click ag
 9. Now that the fields are created, head to the **Dashboard** of the device. Activate the **Edit mode** using the switch (<img src="/assets/images/wisnode/rak2171/helium-datacake/4.png"/> ) and click **+ Add Widget**. You can create a widget to preview the data in the dashboard. Choose the correct widget for the desired field.
 
 <rk-img
-  src="/assets/images/wisnode/rak2171/helium-datacake/30.png"
+  src="/assets/images/wisnode/rak2171/helium-datacake/31.png"
   width="80%"
   caption="Datacake Widgets"
 />
@@ -366,7 +378,7 @@ Another example is if you want to create a field for the battery level. Click ag
 For example, when creating a map, click the **Map (Displays a map)** widget.
 
 <rk-img
-  src="/assets/images/wisnode/rak2171/helium-datacake/31.png"
+  src="/assets/images/wisnode/rak2171/helium-datacake/32.png"
   width="70%"
   caption="Map Widget"
 />
@@ -374,7 +386,7 @@ For example, when creating a map, click the **Map (Displays a map)** widget.
 10.  In the **Basics** tab, you can type a name for the widget. In the **Appearance** tab, you can set a design to your widget (color, style). The **Data** tab is most important. Here you need to select the location field you have created above. Click on the **+** **Add field** and select the **Location** field. In addition, in the **Timeframe** tab, you can enable whether the map will show historical data.
 
 <rk-img
-  src="/assets/images/wisnode/rak2171/helium-datacake/32.png"
+  src="/assets/images/wisnode/rak2171/helium-datacake/33.png"
   width="70%"
   caption="Map field"
 />
@@ -383,7 +395,7 @@ For example, when creating a map, click the **Map (Displays a map)** widget.
 
 
 <rk-img
-  src="/assets/images/wisnode/rak2171/helium-datacake/33.png"
+  src="/assets/images/wisnode/rak2171/helium-datacake/34.png"
   width="100%"
   caption="Datacake map"
 />
@@ -391,7 +403,7 @@ For example, when creating a map, click the **Map (Displays a map)** widget.
 In addition, if you want to add a widget to see the battery level of the device, click again **+ Add Widget** and select **Value**. In the **Data** tab, select **Battery** for **Field**. Then click **Save** to add the widget.
 
 <rk-img
-  src="/assets/images/wisnode/rak2171/helium-datacake/34.png"
+  src="/assets/images/wisnode/rak2171/helium-datacake/35.png"
   width="70%"
   caption="Add Battery Widget"
 />
@@ -403,9 +415,11 @@ In addition, if you want to add a widget to see the battery level of the device,
 - **Boolean** field - choose **Boolean** (Displays a boolean state).
 
 <rk-img
-  src="/assets/images/wisnode/rak2171/helium-datacake/35.png"
+  src="/assets/images/wisnode/rak2171/helium-datacake/36.png"
   width="100%"
   caption="TrackIt Dashboard"
 />
 
 13. Once you add your widgets, you can customize your Dashboard depending on your needs. Remember, when you finish customizing your Dashboard, deactivate the **Edit mode** by clicking the **yellow switch** to save your changes.
+
+--->

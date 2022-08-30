@@ -11,14 +11,13 @@ certifications:
   - [Anatel, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_ANATEL_Certification.pdf]
   - [CE, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_CE_Certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_FCC_Certification.zip]
-  - [IC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_IC_Certification.pdf]
+  - [ISED, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_IC_Certification.pdf]
   - [JRL, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_JRL_certification.pdf]
   - [KCC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_KC_Certification.pdf]
   - [REACH, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_REACH_Certification.pdf]
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_RCM_Certification.pdf]
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_RoHS_Certification.pdf]
   - [UKCA, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_UKCA_Certification.zip]
-  - [WPC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_WPC_Certification.pdf]
 ---
 
 # RAK5146 WisLink LPWAN Concentrator Datasheet

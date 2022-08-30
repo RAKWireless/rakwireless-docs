@@ -11,7 +11,7 @@ certifications:
   - [Anatel, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_ANATEL_Certification.pdf]
   - [CE, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_CE_Certification.pdf]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_FCC_Certification.zip]
-  - [IC, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_IC_Certification.pdf]
+  - [ISED, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_IC_Certification.pdf]
   - [IP65, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_IP65_Certification.pdf]
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_RCM_Certification.zip]
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7240/Certification-Report/RAK7240_RoHS_Certification.pdf]
