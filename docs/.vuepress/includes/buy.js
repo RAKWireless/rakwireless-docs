@@ -912,6 +912,11 @@ export default {
     img: '/assets/images/wisblock/rak10700/overview/overview.png',
     store: 'https://store.rakwireless.com/products/lpwan-tracker-solution-kit?utm_source=RAK10700&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisBlock/RAK10701/': {
+    label: 'RAK10701 Field Tester for LoRaWAN',
+    img: '/assets/images/wisblock/rak10701/overview/RAK10701-buy.png',
+    store: 'https://store.rakwireless.com/collections/wisblock-solutions'
+  },
 
   // Accessories
   '/Product-Categories/Accessories/RAKARJ14/': {
