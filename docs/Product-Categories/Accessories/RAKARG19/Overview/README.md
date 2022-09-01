@@ -11,7 +11,7 @@ tags:
 
 # 902-928MHz 5.1dBi Fiberglass Antenna
 
-Thank you for choosing **902-928 MHz 5 dBi Fiberglass Antenna** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **902-928 MHz 5.1 dBi Fiberglass Antenna** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 
@@ -22,7 +22,7 @@ The antenna connector is one with the antenna body - this design further increas
 With a length of only 480&nbsp;mm, this antenna will be the best fit for your LPWAN Gateway or outdoor deployed RAK Hotspot.
 
 :::tip 📝 NOTE:
-This antenna is designed to be directly mounted on the enclosure of the Gateway. It is suitable for [RAK7240](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7240/Overview/) and [RAK7249](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7249/Overview/). The antenna is also compatible with [Outdoor Enclosure for RAK Hotspot](https://docs.rakwireless.com/Product-Categories/Accessories/Outdoor-Enclosure-Kit/Overview/#rak-hotspot-outdoor-case), [Bobcat Outdoor Enclosure Kit](https://docs.rakwireless.com/Product-Categories/Accessories/Bobcat-Enclosure-Kit/Overview/), and [Antenna Magnetic Base](https://docs.rakwireless.com/Product-Categories/Accessories/RAKA0C52/Overview/). 
+This antenna is designed to be directly mounted on the enclosure of the gateway. It is suitable for [RAK7240](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7240/Overview/) and [RAK7249](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7249/Overview/). The antenna is also compatible with [Outdoor Enclosure for RAK Hotspot](https://docs.rakwireless.com/Product-Categories/Accessories/Outdoor-Enclosure-Kit/Overview/#rak-hotspot-outdoor-case), [Bobcat Outdoor Enclosure Kit](https://docs.rakwireless.com/Product-Categories/Accessories/Bobcat-Enclosure-Kit/Overview/), and [Antenna Magnetic Base](https://docs.rakwireless.com/Product-Categories/Accessories/RAKA0C52/Overview/). 
 :::
 
 ## Product Features

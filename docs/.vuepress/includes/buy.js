@@ -1060,7 +1060,7 @@ export default {
     store: 'https://store.rakwireless.com/products/5dbi-fiber-glass-antenna-supports-863-870mhz?utm_source=863-870MHzFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/Accessories/RAKARG19/': {
-    label: '902-928MHz 5dBi Fiber Glass Antenna',
+    label: '902-928MHz 5.1dBi Fiber Glass Antenna',
     img: '/assets/images/accessories/rakarg19/5dbi_antenna.png',
     store: 'https://store.rakwireless.com/products/5dbi-fiber-glass-antenna-supports-902-928mhz?utm_source=902-928MHzFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore'
   },
