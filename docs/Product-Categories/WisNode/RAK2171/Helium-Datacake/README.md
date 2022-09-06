@@ -33,7 +33,7 @@ Before you dive into registering the device in the Helium console and creating t
   caption="Helium console devices page"
 />
 
-3. In the **Name** field, type in a name for your device. 
+3. In the **Name** field, type the preferred name of your device. 
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/03.png"
@@ -41,7 +41,7 @@ Before you dive into registering the device in the Helium console and creating t
   caption="Add New Device page"
 />
 
-4. You can see that the Helium console generates random **Dev EUI**, **App EUI**, and **App Key**. As the TrackIt keys cannot be changed, you need to type your keys in these fields. These keys can be found in the TrackIt application in the LoRaWAN Working Mode (**Third Party NS**).
+4. You can see that the Helium console generates random **Dev EUI**, **App EUI**, and **App Key**. Since the TrackIt keys cannot be changed, you need to type your keys in the fields. These keys can be found in the TrackIt application in the LoRaWAN Working Mode (**Third Party NS**).
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/04.png"
@@ -63,7 +63,7 @@ Before you dive into registering the device in the Helium console and creating t
   caption="Integration page"
 />
 
-2. To create an integration, click the **Add New Integration button** (<img src="/assets/images/wisnode/rak2171/helium-datacake/2.png"/>). A list of the available integrations will appear. As this example is about Datacake, click on it. Here you can find information about the other integrations. You can find information about the other integrations in the [link](https://docs.helium.com/use-the-network/console/integrations/).
+2. To create an integration, click the **Add New Integration button** (<img src="/assets/images/wisnode/rak2171/helium-datacake/2.png"/>). A list of the available integrations will appear. As for this guide, click Datacake. For further information, refer to the [**Integrations** documentation](https://docs.helium.com/use-the-network/console/integrations/).
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/06.png"
@@ -71,7 +71,7 @@ Before you dive into registering the device in the Helium console and creating t
   caption="List of available integrations"
 />
 
-3. On the next page, you will need a **Datacake Token**. To generate one, you will need a Datacake account. In case you don't already have an account, you can create one on [Datacake's website](https://datacake.co/). 
+3. On the next page, you will need a **Datacake Token**. To generate one, you will need a Datacake account. If you don't have an account yet, you can create one on [Datacake's website](https://datacake.co/). 
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/07.png"
@@ -79,7 +79,7 @@ Before you dive into registering the device in the Helium console and creating t
   caption="Datacake endpoint token"
 />
 
-4. After you log into your Datacake account, click your profile and select **Edit Profile.**
+4. After logging in to your Datacake account, click your profile and select **Edit Profile.**
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/08.png"
@@ -87,7 +87,7 @@ Before you dive into registering the device in the Helium console and creating t
   caption="Datacake console page"
 />
 
-5. In the **API** tab, you will find your API token. Copy and paste it into the **Enter Datacake Token** field in the Helium console shown in **Figure 7**.
+5. In the **API** tab, you will find your API token. Copy and paste it into the **Enter Datacake Token** field in the Helium console, as shown in **Figure 9**.
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/09.png"
@@ -122,7 +122,7 @@ Before you dive into registering the device in the Helium console and creating t
   caption="Nodes"
 />
 
-3. Now, click the registered device and drag and drop it on the blank page below as shown in **Figure 13**.
+3. Now, click the registered device and drag and drop it on the blank page below, as shown in **Figure 13**.
 
 4. Do the same with the created integration. Click the **Integrations** menu and drag and drop your created integration.
 
@@ -146,7 +146,7 @@ Before you dive into registering the device in the Helium console and creating t
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/17.png"
-  width="50%"
+  width="100%"
   caption="Adding a new device"
 />
 
@@ -154,7 +154,7 @@ Before you dive into registering the device in the Helium console and creating t
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/18.png"
-  width="50%"
+  width="100%"
   caption="Selecting product template"
 />
 
@@ -162,7 +162,7 @@ Before you dive into registering the device in the Helium console and creating t
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/19.png"
-  width="50%"
+  width="100%"
   caption="Choosing network server"
 />
 
@@ -170,7 +170,7 @@ Before you dive into registering the device in the Helium console and creating t
 
 <rk-img
   src="/assets/images/wisnode/rak2171/helium-datacake/20.png"
-  width="50%"
+  width="100%"
   caption="Adding device"
 />
 

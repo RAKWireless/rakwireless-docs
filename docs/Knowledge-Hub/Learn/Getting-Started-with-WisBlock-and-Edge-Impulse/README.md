@@ -1,7 +1,7 @@
 ---
 sidebar: false
 rak_img: /assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/wisblock-edgeimpulse.jpg
-rak_desc: This tutorial will show you how to set up and connect your WisBlock to Edge Impulse, which includes but is not limited to RAK11310 and RAK11200.
+rak_desc: This tutorial will show you how to set up and connect your WisBlock to Edge Impulse, which includes but is not limited to RAK11310, RAK4631, and RAK11200.
 tags:
   - Tutorials
   - WisBlock
@@ -18,7 +18,9 @@ next: ../Getting-Started-with-WisBlock-and-Edge-Impulse/RAK11200-Edge-Impulse-Gu
 
 WisBlock is a modular system that makes it easy to implement edge IoT solutions. It is your ally from rapid prototyping to mass production without the need to create new hardware modules for each step. 
 
-WisBlock ecosystem lets you decide on several core options as the RAK11200 (ESP32) and the RAK11310 (RP2040), to develop your TinyML project alongside the largest variety of sensors in the market, from PDM microphones for audio recognition to motion sensors for movement models and many more. A starter kit is available in the [RAK store](https://store.rakwireless.com/products/wisblock-starter-kit?variant=41786596720838).
+WisBlock ecosystem lets you decide on several core options as the RAK11200 (ESP32), RAK4631 (nRF52840), and the RAK11310 (RP2040), to develop your TinyML project alongside the largest variety of sensors in the market, from PDM microphones for audio recognition to motion sensors for movement models and many more. 
+
+A starter kit is available in the [RAK store](https://store.rakwireless.com/products/wisblock-starter-kit?variant=41786596720838).
 
 ## Setting Up Your Development Board
 
