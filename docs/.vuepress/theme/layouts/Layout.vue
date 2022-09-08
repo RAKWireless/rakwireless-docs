@@ -27,9 +27,16 @@
                 >Documentation Center</q-item-section
               >
             </q-item>
+            <q-item>
+              <q-item-section>
+                <rk-toolbar-dropdown class="gt-sm" />
+              </q-item-section>
+            </q-item>
           </div>
           <q-space />
-          <rk-toolbar-dropdown class="gt-sm" />
+          <rk-search-box 
+            class="gt-md"
+          />
           <rk-search-box class="lt-lg" minimized />
         </q-toolbar>
         <q-separator class="bg-primary" style="padding: 0.1px" />
@@ -222,7 +229,16 @@ export default {
         userPageClass,
       ]
     },
-    
+    computedMobileScreen(){
+      if(window.screen.width <= 760) {
+        console.log("MOBILE VIEW")
+        return true
+      }
+      else {
+        console.log("DESKTOP VIEW")
+        return false
+      }
+    }
   },
 
   mounted() {

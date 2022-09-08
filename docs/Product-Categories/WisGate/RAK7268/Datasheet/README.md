@@ -12,6 +12,8 @@ certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268%26RAK7268V2%26RAK7268C%26RAK7268CV2_CE_Certification.pdf]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_RAK7268V2_FCC_Certification.pdf]
   - [ISED, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_IC_Certification.zip]
+  - [JRL, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_JRL_Certification.pdf]
+  - [JTBL, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_JTBL_Certification.pdf]
   - [KC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_KC_Certification.pdf]
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268%26RAK7268V2%26RAK7268C%26RAK7268CV2_RCM_Certification.pdf]
   - [REACH, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268C_RAK7268CV2_RAK7268_RAK7268V2_REACH_Report.pdf]
