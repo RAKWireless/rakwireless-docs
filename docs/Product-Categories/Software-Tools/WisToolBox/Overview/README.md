@@ -9,7 +9,7 @@ prev: ../Software-Tools/
 # WisToolBox 
 
 :::tip 📝 NOTE
-WisToolBox is still in **BETA stage**. For comments, needed support, ideas, and inquiries on how to be part of the **Beta program**, you can send a message at [mailto:inquiry@rakwireless.com](inquiry@rakwireless.com).
+WisToolBox is still in **BETA stage**. For comments, needed support, ideas, and inquiries on how to be part of the **Beta program**, you can send a message at [mailto:inquiry@rakwireless.com](mailto:inquiry@rakwireless.com).
 
 WisToolBox is only compatible to RUI3 based modules - RAK3172, RAK3172-SiP, and RAK4630.
 :::

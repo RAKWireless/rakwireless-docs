@@ -1,6 +1,6 @@
 # AT Command Manual
 
-## Overview 
+## Overview
 AT command is the initial setting in the default serial port used on RUI3 devices. The default baud rate is 115200.
 
 ### Switching to AT Mode
@@ -65,7 +65,7 @@ The possible status codes are:
 * `AT_NO_NETWORK_JOINED`: the LoRa® network has not been joined yet.
 * `AT_RX_ERROR`: error detection during the reception of the command.
 
-More details on each command description and examples are given in the remainder of this section. 
+More details on each command description and examples are given in the remainder of this section.
 
 
 ## Content
@@ -220,7 +220,7 @@ OK
 ### ATZ
 
 Description: MCU Reset
-   
+
 This command is used to trigger a reset on the module.
 
 | Command | Input Parameter | Return Value                                        | Return Code |
@@ -241,7 +241,7 @@ Current Work Mode: LoRaWAN.
 [Back](#content)
 ### ATR
 
-Description: Restore default parameters 
+Description: Restore default parameters
 
 This command is used to restore all parameters to the initial default values.
 
@@ -254,8 +254,8 @@ This command is used to restore all parameters to the initial default values.
 
 ### AT+BOOT
 
-Description: Bootloader mode 
-   
+Description: Bootloader mode
+
 This command causes the device to enter Bootloader mode to upgrade firmware.
 
 | Command    | Input Parameter | Return Value                                          | Return Code |
@@ -280,9 +280,9 @@ To escape BOOT MODE, execute `at+run` command. This is will end the BOOT MODE th
 
 ### AT+SN
 
-Description: Serial number 
+Description: Serial number
 
-This command can read the device serial number. 
+This command can read the device serial number.
 
 | Command   | Input  Parameter | Return Value                                               | Return Code |
 | --------- | ---------------- | ---------------------------------------------------------- | ----------- |
@@ -303,9 +303,9 @@ OK
 
 ### AT+BAT
 
-Description: Battery level 
+Description: Battery level
 
-This command is used to access the battery level. 
+This command is used to access the battery level.
 
 | Command    | Input Parameter | Return Value                           | Return Code |
 | ---------- | --------------- | -------------------------------------- | ----------- |
@@ -325,9 +325,9 @@ OK
 
 ### AT+BUILDTIME
 
-Description: Build time of the firmware 
+Description: Build time of the firmware
 
-This command is used to access the build date and time of the firmware.  
+This command is used to access the build date and time of the firmware.
 
 | Command          | Input Parameter | Return value                                        | Return code           |
 | ---------------- | --------------- | --------------------------------------------------- | --------------------- |
@@ -347,9 +347,9 @@ OK
 
 ### AT+REPOINFO
 
-Description: Repo information 
-   
-This command is used to access the Repo Information of the firmware.  
+Description: Repo information
+
+This command is used to access the Repo Information of the firmware.
 
 | Command         | Input Parameter | Return value                                     | Return code |
 | --------------- | --------------- | ------------------------------------------------ | ----------- |
@@ -369,7 +369,7 @@ OK
 
 ### AT+VER
 
-Description: Version of the firmware 
+Description: Version of the firmware
 
 This command is used to access the version of the firmware.
 
@@ -391,7 +391,7 @@ OK
 
 ### AT+CLIVER
 
-Description: Version of the AT Command 
+Description: Version of the AT Command
 
 This command is used to access the version of the AT command.
 
@@ -413,7 +413,7 @@ OK
 
 ### AT+APIVER
 
-Description: Version of the API 
+Description: Version of the API
 
 This command is used to access the version of the RUI API.
 
@@ -435,7 +435,7 @@ OK
 
 ### AT+HWMODEL
 
-Description: The string of the hardware model 
+Description: The string of the hardware model
 
 This command is used to access the string of the hardware model.
 
@@ -457,7 +457,7 @@ OK
 
 ### AT+HWID
 
-Description: The string of the hardware ID 
+Description: The string of the hardware ID
 
 This command is used to access the string of the hardware mode.
 
@@ -479,9 +479,9 @@ OK
 
 ### AT+SLEEP
 
-Description: Sleep mode 
+Description: Sleep mode
 
-This command enables sleep mode. 
+This command enables sleep mode.
 
 | Command            | Input Parameter | Return Value                                           | Return Code            |
 | ------------------ | --------------- | ------------------------------------------------------ | ---------------------- |
@@ -507,7 +507,7 @@ These commands are related to device command configurations.
 
 ### AT+LOCK
 
-Description: Lock the AT Command serial port 
+Description: Lock the AT Command serial port
 
 This command locks the AT command serial port.
 
@@ -518,7 +518,7 @@ This command locks the AT command serial port.
 
 
 :::tip 📝 NOTE
- - If you input the `AT+LOCK` or `AT+LOCK=` command, it will lock the serial port. 
+ - If you input the `AT+LOCK` or `AT+LOCK=` command, it will lock the serial port.
  - The default password is '00000000' and can be changed via the `AT+PWORD` command.
 :::
 
@@ -545,7 +545,7 @@ OK
 
 ### AT+PWORD
 
-Description: Set the AT Command serial port password 
+Description: Set the AT Command serial port password
 
 This command sets the password for locking the AT command serial port.
 
@@ -569,7 +569,7 @@ OK
 
 ### AT+BAUD
 
-Description: Set the serial port baud rate 
+Description: Set the serial port baud rate
 
 This command sets the serial port baud rate.
 
@@ -600,7 +600,7 @@ AT_PARAM_ERROR
 
 ### AT+ATM
 
-Description: AT Command mode 
+Description: AT Command mode
 
 This command provides a way to switch to AT command mode.
 
@@ -620,7 +620,7 @@ AT Command mode is the default setting of RUI3 devices. For direct use of RUI3 A
 
 ### AT+APM
 
-Description: API mode 
+Description: API mode
 
 This command provides a way to switch to API mode.
 
@@ -645,7 +645,7 @@ This section describes the commands related to the activation of the end device.
 
 ### AT+DEVEUI
 
-Description: Device EUI 
+Description: Device EUI
 
 This command is used to access the unique end-device ID.
 
@@ -676,7 +676,7 @@ OK
 
 ### AT+APPEUI
 
-Description: Application identifier 
+Description: Application identifier
 
 This command is used to access the unique application identifier.
 
@@ -710,7 +710,7 @@ OK
 
 ### AT+APPKEY
 
-Description: Application Key 
+Description: Application Key
 
 This command is used to access the application key.
 
@@ -746,7 +746,7 @@ OK
 
 ### AT+DEVADDR
 
-Description: Device Address 
+Description: Device Address
 
 This command is used to access the device address.
 
@@ -777,7 +777,7 @@ OK
 
 ### AT+APPSKEY
 
-Description: Application Session Key 
+Description: Application Session Key
 
 This command is used to set the application session key.
 
@@ -807,7 +807,7 @@ AT_PARAM_ ERROR
 
 ### AT+NWKSKEY
 
-Description: Network Session Key 
+Description: Network Session Key
 
 This command is used to get or set the network session key.
 
@@ -839,7 +839,7 @@ OK
 
 ### AT+NETID
 
-Description: Network ID (NetID) 
+Description: Network ID (NetID)
 
 This command is used to access the network identifier (NetID) of 3 octets.
 
@@ -869,7 +869,7 @@ This section describes the commands related to the join procedure and data paylo
 
 ### AT+CFM
 
-Description: Confirm Mode 
+Description: Confirm Mode
 
 This command is used to configure the uplink payload to be confirmed or unconfirmed type.
 
@@ -909,7 +909,7 @@ e.g.
 
 ### AT+CFS
 
-Description: Confirm Status 
+Description: Confirm Status
 
 This command is used to access the status of the last **SEND** command.
 
@@ -936,7 +936,7 @@ This command works together with `AT+CFM=1`, which is the confirm mode configura
 
 ### AT+JOIN
 
-Description: Join LoRaWAN Network 
+Description: Join LoRaWAN Network
 
 This command is used to join a LoRaWAN network.
 
@@ -986,7 +986,7 @@ If joining fails, make sure your device is within the coverage of the gateway. A
 
 ### AT+NJM
 
-Description: Network Join Mode 
+Description: Network Join Mode
 
 This command is used to access the network join mode.
 
@@ -1021,7 +1021,7 @@ AT_PARAM_ERROR
 
 ### AT+NJS
 
-Description: LoRa® Network Join status 
+Description: LoRa® Network Join status
 
 This command is used to access the current activation status of the device. It shows if the device joined or not in a LoRaWAN network.
 
@@ -1052,7 +1052,7 @@ The command will return `1` if the device has successfully joined the network an
 
 ### AT+RECV
 
-Description: Last received data 
+Description: Last received data
 
 This command is used to access the last received data in hex format.
 
@@ -1061,7 +1061,7 @@ This command is used to access the last received data in hex format.
 | `AT+RECV?`  | -               | `AT+RECV`: print the last received data in hex format | OK          |
 | `AT+RECV=?` | -               | `AT+RECV`=`<port>:<payload> `                         | OK          |
 
-Where: 
+Where:
 - `<port>`: 1 decimal integer and the range of values is 1~233.
 - `<payload>`: 2~500 digit length, must be an even number of digits and character 0-9, a-f, A-F only,
 representing 1~256 hexadecimal numbers.
@@ -1094,7 +1094,7 @@ OK
 
 ### AT+SEND
 
-Description: Send data 
+Description: Send data
 
 This command provides the way to send data on a dedicated port number.
 
@@ -1126,7 +1126,7 @@ OK
 
 ### AT+LPSEND
 
-Description: Long packet data 
+Description: Long packet data
 
 This command provides the way to send long packet text data.
 
@@ -1159,7 +1159,7 @@ OK
 
 ### AT+RETY
 
-Description: Confirm packet retransmission 
+Description: Confirm packet retransmission
 
 This command sets the number of retransmissions of confirmed packet data.
 
@@ -1194,7 +1194,7 @@ This section provides a set of commands for network management.
 
 ### AT+ADR
 
-Description: Adaptive Rate 
+Description: Adaptive Rate
 
 This command is used to access the adaptive data rate.
 
@@ -1223,8 +1223,8 @@ OK
 
 ### AT+CLASS
 
-Description: LoRa® Class 
-   
+Description: LoRa® Class
+
 This command is used to access the LoRaWAN® class.
 
 | Command                      | Input Parameter | Return Value                                                                    | Return Code          |
@@ -1272,7 +1272,7 @@ OK
 
 ### AT+DCS
 
-Description: Duty cycle settings 
+Description: Duty cycle settings
 
 | Command          | Input Parameter | Return Value                                                                 | Return Code            |
 | ---------------- | --------------- | ---------------------------------------------------------------------------- | ---------------------- |
@@ -1304,7 +1304,7 @@ It depends on the region to disable or enable, and it can only be read.
 
 ### AT+DR
 
-Description: Data rate 
+Description: Data rate
 
 This command is used to access and configure data rate settings.
 
@@ -1328,7 +1328,7 @@ OK
 
 :::tip 📝 NOTE:
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
--  In this case, the EU868 default value is 0. <br> 
+-  In this case, the EU868 default value is 0. <br>
  **EU433 / RU864 / IN865 / EU868 / CN470 / KR920** and the data rate range of values is 0-5 (DR0-DR5). <br>
  **AS923** and the data rate range of values is 2-5 (DR2-DR5). <br>
  **US915** and the data rate range of values is 0-4 (DR0-DR4). <br>
@@ -1341,7 +1341,7 @@ OK
 
 ### AT+JN1DL
 
-Description: Join delay on RX window 1 
+Description: Join delay on RX window 1
 
 This command is used to access the join delay on RX window 1. The range of acceptable values is 1 to 14 seconds. Whenever `AT+JN1DL` is updated, `AT+JN2DL` is also updated automatically.
 
@@ -1373,7 +1373,7 @@ OK
 
 ### AT+JN2DL
 
-Description: Join delay on RX window 2 
+Description: Join delay on RX window 2
 
 This command is used to access the join delay on RX window 2. The range of acceptable values is 2 to 15 seconds. Whenever `AT+JN2DL` is updated, `AT+JN1DL` is also updated automatically.
 
@@ -1401,7 +1401,7 @@ OK
 
 ### AT+PNM
 
-Description: Public network mode 
+Description: Public network mode
 
 This command is used to access the public network mode.
 
@@ -1436,7 +1436,7 @@ AT_PARAM_ERROR
 
 ### AT+RX1DL
 
-Description: Delay of the received window 1 
+Description: Delay of the received window 1
 
 This command is used to access the delay of the received window 1. The range of acceptable values is 1 to 14 seconds. Whenever `AT+RX1DL` is updated, `AT+RX2DL` is also updated automatically.
 
@@ -1469,7 +1469,7 @@ OK
 
 ### AT+RX2DL
 
-Description: Delay of the received window 2 
+Description: Delay of the received window 2
 
 This command is used to access the delay of the received window 2. The range of acceptable values is 2 to 15 seconds. Whenever `AT+RX2DL` is updated, `AT+RX1DL` is also updated automatically.
 
@@ -1495,7 +1495,7 @@ OK
 
 ### AT+RX2DR
 
-Description: Data rate of the received window 2 
+Description: Data rate of the received window 2
 
 This command is used to access the data rate of received window 2.
 
@@ -1531,7 +1531,7 @@ OK
 
 ### AT+RX2FQ
 
-Description: Frequency of the received window 2 
+Description: Frequency of the received window 2
 
 This command is used to access the frequency of the received window 2.
 
@@ -1559,7 +1559,7 @@ OK
 
 ### AT+TXP
 
-Description: Transmit power 
+Description: Transmit power
 
 This command is used to access the transmit power.
 
@@ -1595,7 +1595,7 @@ OK
 
 ### AT+LINKCHECK
 
-Description: Verify network link status 
+Description: Verify network link status
 
 This command is used to access and configure the device network link status.
 
@@ -1635,7 +1635,7 @@ Reply format: `+EVT:LINKCHECK:Y0,Y1,Y2,Y3,Y4`
 - **Y0** represents the result of Link Check
   -	0 – represents the Link Check execute success (+EVT:LINKCHECK:0,0,1,-107,4)
   -	Non-0 – represents the Link Check execute fail (+EVT:LINKCHECK:1,0,0,0,0)
-- **Y1** represents the DemodMargin 
+- **Y1** represents the DemodMargin
 - **Y2** represents the NbGateways
 - **Y3** represents the RSSI
 - **Y4** represents the SNR
@@ -1650,7 +1650,7 @@ This section provides a set of commands for Class B mode management.
 
 ### AT+PGSLOT
 
-Description: Periodicity  
+Description: Periodicity
 
 This command is used to get or set the unicast ping slot periodicity.
 
@@ -1684,7 +1684,7 @@ OK
 
 ### AT+BFREQ
 
-Description: Beacon frequency 
+Description: Beacon frequency
 
 This command is used to access the current beacon (default broadcast) frequency
 
@@ -1711,7 +1711,7 @@ It depends on the region frequency, and it can only be read.
 
 ### AT+BTIME
 
-Description: Beacon time 
+Description: Beacon time
 
 This command is used to access the current beacon time.
 
@@ -1734,9 +1734,9 @@ OK
 
 ### AT+BGW
 
-Description: Gateway GPS coordinate, NetID, and GwID 
+Description: Gateway GPS coordinate, NetID, and GwID
 
-This command is used to access the GW GPS coordinate, NetID, and GwID. 
+This command is used to access the GW GPS coordinate, NetID, and GwID.
 
 | Command    | Input Parameter | Return Value                                                    | Return Code |
 | ---------- | --------------- | --------------------------------------------------------------- | ----------- |
@@ -1747,7 +1747,7 @@ This command is used to access the GW GPS coordinate, NetID, and GwID.
 
 ```
 AT+BGW=?
-BGW: 3, “NetID”, “GwID”, “N/A”, “N/A” 
+BGW: 3, “NetID”, “GwID”, “N/A”, “N/A”
 OK
 ```
 
@@ -1756,7 +1756,7 @@ In this case, the default value is 0,0,0,0.
 - For a single omnidirectional antenna gateway, the INFO value is 0 with GPS coordinates.
 - For a site featuring three sectored antennas, for example, the first antenna INFO equals 0 with GPS
 coordinates, the second antenna INFO equals 1 with GPS coordinate, etc. In this case, netid and gwid are not relevant. When INFO = 3, the content of network NetID plus a freely allocated gateway gwid and longitude and latitude are not relevant.
-- Time in seconds since January 6, 1980 00:00:00 UTC (start of the GPS epoch) modulo 2<sup>32</sup>. 
+- Time in seconds since January 6, 1980 00:00:00 UTC (start of the GPS epoch) modulo 2<sup>32</sup>.
 :::
 
 [Back](#content)
@@ -1764,7 +1764,7 @@ coordinates, the second antenna INFO equals 1 with GPS coordinate, etc. In this 
 
 ### AT+LTIME
 
-Description: Local time 
+Description: Local time
 
 This command is used to access the local time in a UTC format.
 
@@ -1821,7 +1821,7 @@ This section provides a set of commands for battery level, RF signal quality, an
 
 ### AT+RSSI
 
-Description: RSSI on reception 
+Description: RSSI on reception
 
 This command is used to access the RSSI on reception.
 
@@ -1841,8 +1841,8 @@ This command is used to access the RSSI on reception.
 ### AT+ARSSI
 
 Description: Inquire all channel RSSI
-   
-This command allows you to view all open channels RSSI 
+
+This command allows you to view all open channels RSSI
 
 | Command      | Input Parameter | Return value                                                                 | Return code |
 | ------------ | --------------- | ---------------------------------------------------------------------------- | ----------- |
@@ -1867,7 +1867,7 @@ OK
 
 ### AT+SNR
 
-Description: Signal noise ratio 
+Description: Signal noise ratio
 
 This command is used to access the SNR of the last received packet.
 
@@ -1890,7 +1890,7 @@ This section provides the set of commands related to channels and LoRaWAN region
 
 ### AT+MASK
 
-Description: Set the channel mask, close or open the channel 
+Description: Set the channel mask, close or open the channel
 
 This command configures the channel of the device by setting the hexadecimal channel mask.
 
@@ -1940,7 +1940,7 @@ The table below shows the attached list on setting the channel mask.
             <td>0000000000000000</td>
             <td>ENABLE</td>
             <td>ALL</td>
-            <td>Channels</td>            
+            <td>Channels</td>
         </tr>
         <tr>
             <td>1</td>
@@ -1948,7 +1948,7 @@ The table below shows the attached list on setting the channel mask.
             <td>0000000000000001</td>
             <td>0-7</td>
             <td>0-7</td>
-             <td>0-7</td> 
+             <td>0-7</td>
         </tr>
         <tr>
            <td>2</td>
@@ -1956,7 +1956,7 @@ The table below shows the attached list on setting the channel mask.
             <td>0000000000000010</td>
             <td>8-15</td>
             <td>8-15</td>
-            <td>8-15</td> 
+            <td>8-15</td>
         </tr>
         <tr>
            <td>3</td>
@@ -2046,7 +2046,7 @@ The table below shows the attached list on setting the channel mask.
 
 ### AT+CHE
 
-Description: Eight channel mode 
+Description: Eight channel mode
 
 This command sets the node to eight-channel mode.
 
@@ -2368,7 +2368,7 @@ OK
 - According to LoRaWAN Regional Parameters v1.0.3revA, the first 64 channels are numbered 0 to 63, starting at 915.2&nbsp;MHz and increments linearly by 200&nbsp;kHz to 927.8&nbsp;MHz. The next eight (8) channels numbered 64 to 71 are starting at 915.9&nbsp;MHz and increments linearly by 1.6&nbsp;MHz to 927.1&nbsp;MHz.
 :::
 
-**CN470 Uplink Channels & Attached List** 
+**CN470 Uplink Channels & Attached List**
 <table>
 <thead>
   <tr>
@@ -2538,7 +2538,7 @@ OK
 
 ### AT+CHS
 
-Description: Single channel mode 
+Description: Single channel mode
 
 This command sets the node to single-channel mode.
 
@@ -2805,7 +2805,7 @@ According to LoRaWAN Regional Parameters v1.0.3revA, the first 64 channels are n
 :::
 
 
-**CN470 Uplink Channels Frequency & Attached List** 
+**CN470 Uplink Channels Frequency & Attached List**
 
 <table>
 <thead>
@@ -2961,15 +2961,15 @@ According to LoRaWAN Regional Parameters v1.0.3revA, the 96 channels are numbere
 
 ### AT+BAND
 
-Description: Active region 
+Description: Active region
 
 This command sets numbers corresponding to active regions.
 
 | Command           | Input Parameter   | Return Value                                                                                                                               | Return Code                                |
 | ----------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------ |
-| `AT+BAND?`        | -                 | `AT+BAND`: get or set the active region (0 = EU433, 1 = CN70, 2 = RU864, 3 = IN865, 4 = EU868, 5 = US915, 6 = AU915, 7 = KR920, 8 = AS923) | OK                                         |
-| `AT+BAND=?`       | -                 | 0,1,2,3,4,5,6,7,8                                                                                                                          | OK                                         |
-| `AT+BAND=<Input>` | 0,1,2,3,4,5,6,7,8 | -                                                                                                                                          | OK <br>  AT_PARAM_ERROR <br> AT_BUSY_ERROR |
+| `AT+BAND?`        | -                 | `AT+BAND`: get or set the active region (0 = EU433, 1 = CN470, 2 = RU864, 3 = IN865, 4 = EU868, 5 = US915, 6 = AU915, 7 = KR920, 8 = AS923-1, 9 = AS923-2) | OK                                         |
+| `AT+BAND=?`       | -                 | 0,1,2,3,4,5,6,7,8,9                                                                                                                          | OK                                         |
+| `AT+BAND=<Input>` | 0,1,2,3,4,5,6,7,8,9 | -                                                                                                                                          | OK <br>  AT_PARAM_ERROR <br> AT_BUSY_ERROR |
 
 **Example:**
 ```
@@ -2984,11 +2984,11 @@ OK
 :::tip 📝 NOTE
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
 - `AT_BUSY_ERROR` is returned when the set command process is already running.
-- In this case, the default value is 4, and it depends on the region. 0: EU433 1: CN470 2: RU864 3: IN865 4: EU868 5: US915 6: AU915 7: KR920 8: AS923 `<Input>`: 1 decimal integer and the range of values is 0~8.
+- In this case, the default value is 4, and it depends on the region. 0: EU433 1: CN470 2: RU864 3: IN865 4: EU868 5: US915 6: AU915 7: KR920 8: AS923-1 9: AS923-2 `<Input>`: 1 decimal integer and the range of values is 0~8.
 - RUI3 LoRa/LoRaWAN devices are divided into two variants - Low Frequency and High Frequency. Examples are the RAK4630(L) and RAK4630(H) devices.
 
     - Low frequency variant is compatible only to 0 - 1.
-    - High frequency variant is compatible only to 2 - 8.    
+    - High frequency variant is compatible only to 2 - 9.
 
 :::
 
@@ -3002,8 +3002,8 @@ This section describes the commands related to LoRa point-to-point functionality
 
 ### AT+NWM
 
-Description: LoRa® network work mode 
-  
+Description: LoRa® network work mode
+
 Switch to point-to-point mode, or LoRaWAN mode [0:Point-to-point, 1:LoRaWAN].
 
 | Command          | Input Parameter | Return Value                                                                           | Return Code |
@@ -3027,7 +3027,7 @@ Current Work Mode: LoRa P2P.
 :::tip 📝 NOTE
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
 - In this case, the default value is 1.
-- On RAK4630/RAK4631, the device will restart which requires reconnection to detect it again via UART. 
+- On RAK4630/RAK4631, the device will restart which requires reconnection to detect it again via UART.
 :::
 
 [Back](#content)
@@ -3035,8 +3035,8 @@ Current Work Mode: LoRa P2P.
 
 ### AT+PFREQ
 
-Description: P2P mode frequency 
-  
+Description: P2P mode frequency
+
 This command sets the frequency of P2P mode.
 
 | Command            | Input Parameter | Return value                        | Return code            |
@@ -3061,7 +3061,7 @@ OK
 - RUI3 LoRa/LoRaWAN devices are divided into two variants - Low Frequency and High Frequency. Examples are the RAK4630(L) and RAK4630(H) devices.
 
     - Low frequency variant is compatible only to 150000000 - 600000000.
-    - High frequency variant is compatible only to 600000000 - 960000000.   
+    - High frequency variant is compatible only to 600000000 - 960000000.
 
 :::
 
@@ -3070,8 +3070,8 @@ OK
 
 ### AT+PSF
 
-Description: P2P mode spreading factor 
-  
+Description: P2P mode spreading factor
+
 This command provides a configuration of the spreading factor for the P2P mode.
 
 | Command          | Input Parameter      | Return Value                                    | Return Code            |
@@ -3100,8 +3100,8 @@ OK
 
 ### AT+PBW
 
-Description: P2P mode bandwidth 
-  
+Description: P2P mode bandwidth
+
 This command provides bandwidth configuration for the P2P mode.
 
 | Command          | Input Parameter | Return Value                                                        | Return Code            |
@@ -3130,8 +3130,8 @@ OK
 
 ### AT+PCR
 
-Description: P2P mode code rate 
-  
+Description: P2P mode code rate
+
 This command provides the configuration code rate for the P2P mode.
 
 | Command          | Input Parameter | Return Value                                                  | Return Code            |
@@ -3160,8 +3160,8 @@ OK
 
 ### AT+PPL
 
-Description: P2P mode preamble length 
-  
+Description: P2P mode preamble length
+
 This command provides configuration Preamble Length for the P2P mode.
 
 | Command          | Input Parameter     | Return Value                                      | Return Code            |
@@ -3190,8 +3190,8 @@ OK
 
 ### AT+PTP
 
-Description: P2P mode TX power 
-  
+Description: P2P mode TX power
+
 This command provides configuration TX Power for the P2P mode.
 
 | Command          | Input Parameter | Return Value                            | Return Code            |
@@ -3220,8 +3220,8 @@ OK
 
 ### AT+PSEND
 
-Description: P2P send data 
-  
+Description: P2P send data
+
 This command provides the way to P2P send data.
 
 | Command            | Input Parameter | Return Value                      | Return Code            |
@@ -3245,8 +3245,8 @@ OK
 
 ### AT+PRECV
 
-Description: P2P received data 
-  
+Description: P2P received data
+
 This command provides configuration the timeout period for P2P window reception.
 
 | Command            | Input Parameter | Return Value                                            | Return Code |
@@ -3280,8 +3280,8 @@ AT+PRECV=65534
 OK
 ```
 :::tip 📝 NOTE
-If configured in continuous RX mode `AT+PRECV=65534`, any new values to `AT+PRECV` will not be accepted. RX mode must be disabled first via `AT+PRECV=0`. 
-During continuous RX mode, there are many LoRa P2P parameters that cannot be modified as well. `AT+PRECV` must be set to zero first. 
+If configured in continuous RX mode `AT+PRECV=65534`, any new values to `AT+PRECV` will not be accepted. RX mode must be disabled first via `AT+PRECV=0`.
+During continuous RX mode, there are many LoRa P2P parameters that cannot be modified as well. `AT+PRECV` must be set to zero first.
 :::
 4. If the value is 0, the device will stop listening to P2P LoRa packets. It disables LoRa P2P RX mode and switch to TX mode.
 ```
@@ -3300,8 +3300,8 @@ OK
 
 ### AT+ENCRY
 
-Description: P2P encryption enabled 
-  
+Description: P2P encryption enabled
+
 This command enables P2P mode encryption.
 
 | Command            | Input Parameter | Return Value                                             | Return Code |
@@ -3330,8 +3330,8 @@ OK
 
 ### AT+ENCKEY
 
-Description: P2P Encryption KEY 
-  
+Description: P2P Encryption KEY
+
 This command Key will encrypt the data being sent and received.
 
 | Command             | Input Parameter | Return Value                                                           | Return Code |
@@ -3360,8 +3360,8 @@ OK
 
 ### AT+P2P
 
-Description: View P2P all parameters 
-  
+Description: View P2P all parameters
+
 This command provides configuration of all parameters for the P2P mode.
 
 | Command          | Input Parameter                                                                            | Return Value                            | Return Code            |
@@ -3382,12 +3382,12 @@ AT_PARAM_ERROR
 
 :::tip 📝 NOTE
 - `AT_PARAM_ERROR` is returned when setting a wrong or malformed value.
-- In this case, the default value is “868000000:7:125:0:8:14”. 
+- In this case, the default value is “868000000:7:125:0:8:14”.
 - Frequency = {150000000-960000000}, SF = {6, 7, 8, 9, 10, 11, 12}, Bandwidth = {125, 250, 500}, CR = {4/5=0, 4/6=1, 4/7=2, 4/8=3}, Preamble Length = {2-65535}, TX Power = {5-22}.
 - RUI3 LoRa/LoRaWAN devices are divided into two variants - Low Frequency and High Frequency. Examples are the RAK4630(L) and RAK4630(H) devices.
 
     - Low frequency variant is compatible only to 150000000 - 600000000.
-    - High frequency variant is compatible only to 600000000 - 960000000.  
+    - High frequency variant is compatible only to 600000000 - 960000000.
 
 
 :::
@@ -3401,7 +3401,7 @@ This section describes the commands related to multicast group functionality.
 
 ### AT+ADDMULC
 
-Description: Add multicast group 
+Description: Add multicast group
 
 This command is used to add a new multicast group and multicast parameters.
 
@@ -3423,7 +3423,7 @@ OK
 
 ### AT+RMVMULC
 
-Description: Remove multicast group 
+Description: Remove multicast group
 
 This command is used to remove the configured multicast group.
 
@@ -3446,7 +3446,7 @@ OK
 
 ### AT+LSTMULC
 
-Description: Multicast list 
+Description: Multicast list
 
 This command is used to get the information about the configured multicast group.
 
@@ -3471,7 +3471,7 @@ This section describes the commands related to RF test management.
 
 ### AT+TRSSI
 
-Description: Start RF RSSI tone test 
+Description: Start RF RSSI tone test
 
 This command is used to start the RF RSSI tone test.
 
@@ -3499,7 +3499,7 @@ OK
 
 ### AT+TTONE
 
-Description: Start RF tone test 
+Description: Start RF tone test
 
 This command is used to start the RF tone.
 
@@ -3526,7 +3526,7 @@ Tx toneOK
 
 ### AT+TTX
 
-Description: Start RF TX test 
+Description: Start RF TX test
 
 Set the number of packets sent for the RF TX test.
 
@@ -3563,7 +3563,7 @@ OnTxDone
 
 ### AT+TRX
 
-Description: Start RF RX test 
+Description: Start RF RX test
 
 Set the number of packets sent for the RF RX test.
 
@@ -3595,7 +3595,7 @@ Rx 4 of 4  >>> PER= 100 %
 
 ### AT+TCONF
 
-Description: Configure LoRa® RF test 
+Description: Configure LoRa® RF test
 
 This command is used to access the LoRa® configuration test.
 
@@ -3607,7 +3607,7 @@ This command is used to access the LoRa® configuration test.
 
 :::tip 📝 NOTE
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
-- This command is used for the RF certification test, and in this case, the default value is “868000000,14,0,7,1,0,0,1,4,25000,0,0”. 
+- This command is used for the RF certification test, and in this case, the default value is “868000000,14,0,7,1,0,0,1,4,25000,0,0”.
 
 **Summary of parameters:**<br>
 1 - Frequency <br>
@@ -3615,13 +3615,13 @@ This command is used to access the LoRa® configuration test.
 3 - Bandwidth parameter: (LoRa mode in Khz) 0=125, 1=250, 2=500, 3=7.8, 4=10.4, 5=15.63, 6=20.83, 7=31.25, 8=41.67, 9=62.5; (FSK mode in Hz): 4800-467000 <br>
 4 - Spreading Factor (5-12) <br>
 5 - Coding Rate: 1=4/5, 2=4/6, 3=4/7, 4=4/8 <br>
-6 - LNA State (not implemented) <br> 
+6 - LNA State (not implemented) <br>
 7 - PA Boost State (not implemented) <br>
 8 - Modulation: 0=FSK, 1=LoRa <br>
 9 - Payload len <br>
-10 - Freq deviation (only fsk 600 - 200000 hz) <br> 
+10 - Freq deviation (only fsk 600 - 200000 hz) <br>
 11 - LowDRopt (not implemented) <br>
-12 - BT product (not implemented) <br>  
+12 - BT product (not implemented) <br>
 
 :::
 
@@ -3640,7 +3640,7 @@ OK
 
 ### AT+TTH
 
-Description: RF TX hopping test 
+Description: RF TX hopping test
 
 Starts RF TX hopping test from Start to Fstop, with Fdelta steps.
 
@@ -3658,7 +3658,7 @@ Starts RF TX hopping test from Start to Fstop, with Fdelta steps.
 **Example:**
 
 ```
-/* Example: set TX hopping test from 868 to 868,5 MHz with 6 steps of 100 kHz */ # 
+/* Example: set TX hopping test from 868 to 868,5 MHz with 6 steps of 100 kHz */ #
 
 AT+TTH=868000000:868500000:100000:6
 OK
@@ -3688,7 +3688,7 @@ OnTxDone
 
 ### AT+TOFF
 
-Description: Stop Radio frequency test 
+Description: Stop Radio frequency test
 
 This command is used to stop the ongoing RF test.
 
@@ -3706,7 +3706,7 @@ This command is used to stop the ongoing RF test.
 
 ### AT+CERTIF
 
-Description: Configure LoRaWAN® Certification test 
+Description: Configure LoRaWAN® Certification test
 
 This command is used to start the RF Rx LoRa test.
 
