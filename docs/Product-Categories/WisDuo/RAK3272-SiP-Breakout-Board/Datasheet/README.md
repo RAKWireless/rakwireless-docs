@@ -51,7 +51,7 @@ The bottom view of the RAK3272-SiP Breakout Board is shown in **Figure 2**.
 
 
 <rk-img
-  src="/assets/images/wisduo/rak3272-sip-breakout-board/datasheet/rak3272-sip_breakout-board_back.svg"
+  src="/assets/images/wisduo/rak3272-sip-breakout-board/datasheet/rak3272-sip_breakout-board_back.png"
   width="20%"
   caption="RAK3272-SiP Breakout Board bottom view"
 />
@@ -102,7 +102,7 @@ Make sure to use a LoRa antenna with RP-SMA male connector and compatible with t
 #### Pin Definition
 
 <rk-img
-  src="/assets/images/wisduo/rak3272-sip-breakout-board/datasheet/rak3272-sip-pinout.svg"
+  src="/assets/images/wisduo/rak3272-sip-breakout-board/datasheet/rak3272-sip-pinout.png"
   width="70%"
   caption="RAK3272-SiP Breakout Board J3 and J4 header"
 />
@@ -111,7 +111,7 @@ The pin 1 of the headers are highlighted in a blue rectangle.
 
 <rk-img
   src="/assets/images/wisduo/rak3272-sip-breakout-board/datasheet/rak3272-sip-pinout-back.png"
-  width="60%"
+  width="50%"
   caption="RAK3272-SiP Breakout Board J5 to J8 header"
 />
 
@@ -142,7 +142,7 @@ The tables below show the header definitions of the RAK3272-SiP Breakout Board:
 | 6   | SWCLK    | PA14/SWD debug pin (SWCLK)                          | PA14            |
 | 7   | UART2_TX | UART2/LPUART1 Interface (AT Commands and FW Update) | PA2             |
 | 8   | UART2_RX | UART2/LPUART1 Interface (AT Commands and FW Update) | PA3             |
-| 9   | PA8      | MCU pin PA8                                         | PA8             |
+| 9   | 3V3      | Power Supply                                        | -               |
 
 
 ##### J4 Pin Definitions
@@ -198,7 +198,7 @@ The tables below show the header definitions of the RAK3272-SiP Breakout Board:
 | 2   | PC13     | MCU pin PC13                                        | PC13            |
 | 3   | PA15     | MCU pin PA15                                        | PA15            |
 | 4   | PB15     | MCU pin PB15                                        | PB15            |
-| 5   | GND      | Ground                                              | -               |
+| 5   | PA8      | MCU pin PA8                                         | PA8             |
 
 ##### J8 Pin Definitions
 
@@ -295,7 +295,7 @@ The use of **DCDC** is optional but improve the power efficiency. If you want to
 ##### Schematic Diagram
 
 <rk-img
-  src="/assets/images/wisduo/rak3272-sip-breakout-board/datasheet/rak3272-sip-sch.svg"
+  src="/assets/images/wisduo/rak3272-sip-breakout-board/datasheet/rak3272-sip-sch.png"
   width="100%"
   caption="RAK3272-SiP schematic diagram"
 />

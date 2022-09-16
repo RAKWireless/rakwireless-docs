@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/banners/random-generator-temp.png
+rak_img: /assets/images/knowledge-hub/banners/lorandom.jpg
 rak_desc: A guide on how to use the random generator feature of Semtech LoRa transceivers in RAK Modules.  
 tags:
   - Tutorial
@@ -12,7 +12,7 @@ tags:
 header:
   title: Random Numbers and LoRa
   caption: by <b>Kongduino</b>
-  img: /assets/images/knowledge-hub/banners/general_banner.jpg
+  img: /assets/images/knowledge-hub/banners/lorandom-banner.jpg
 posted: 9/13/2022 2:00 PM
 ---
 
@@ -29,6 +29,7 @@ In the SX127x series, the process is a little more involved (and some LoRa libra
 In these older LoRa chips, what you do is read Register 0x2C, the RSSI Wideband Register. This Wideband RSSI measurement can be used to generate a random number, but you have to be careful with the data. If you return the contents of this register and hope to have a number anywhere near random, you'll be disappointed. 
 
 What you need to do is extract the lowest significant bit, bit 0, which is much more probable to be as close to truly random as possible than its neighbors, and add it to a pile of other LSB taken successively from this register. This will create a possibly random number between 0 and 255. With the help of a randomness extractor, you can generate a highly random output that appears independent from the source and uniformly distributed.
+
 With the von Neumann extractor two bits are taken at a time (first and second, then third and fourth, and so on). If the two bits match, no output is generated. If the bits differ, the value of the first bit is added to the stream, and the second is discarded. This is quite simple to implement in C/C++.
 
 ```c
