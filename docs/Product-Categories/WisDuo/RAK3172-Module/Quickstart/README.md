@@ -15,6 +15,9 @@ This guide covers the following topics:
 
 - [RAK3172 as a Stand-Alone Device Using RUI3](#rak3172-as-a-stand-alone-device-using-rui3)
 - [RAK3172 as a LoRa/LoRaWAN Modem via AT Command](#rak3172-as-a-lora-lorawan-modem-via-at-command)
+- [Connecting to The Things Network (TTN)](#connecting-to-the-things-network-ttn)
+- [Connecting with Chirpstack](#connecting-with-chirpstack)
+- [LoRa P2P Mode](#lora-p2p-mode)
 
 ## Prerequisites
 
@@ -1170,20 +1173,21 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 
 **List of band parameter options**
 
-| Code     | Regional Band |
-| -------- | ------------- |
-| 0        | EU433         |
-| 1        | CN470         |
-| 2        | RU864         |
-| 3        | IN865         |
-| 4        | EU868         |
-| 5        | US915         |
-| 6        | AU915         |
-| 7        | KR920         |
-| 8 or 8-1 | AS923-1       |
-| 8-2      | AS923-2       |
-| 8-3      | AS923-3       |
-| 8-4      | AS923-4       |
+| Code | Regional Band |
+| ---- | ------------- |
+| 0    | EU433         |
+| 1    | CN470         |
+| 2    | RU864         |
+| 3    | IN865         |
+| 4    | EU868         |
+| 5    | US915         |
+| 6    | AU915         |
+| 7    | KR920         |
+| 8    | AS923-1       |
+| 9    | AS923-2       |
+| 10   | AS923-3       |
+| 11   | AS923-4       |
+
 
 
 <rk-img
@@ -1410,20 +1414,21 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 
 **List of band parameter options**
 
-| Code     | Regional Band |
-| -------- | ------------- |
-| 0        | EU433         |
-| 1        | CN470         |
-| 2        | RU864         |
-| 3        | IN865         |
-| 4        | EU868         |
-| 5        | US915         |
-| 6        | AU915         |
-| 7        | KR920         |
-| 8 or 8-1 | AS923-1       |
-| 8-2      | AS923-2       |
-| 8-3      | AS923-3       |
-| 8-4      | AS923-4       |
+| Code | Regional Band |
+| ---- | ------------- |
+| 0    | EU433         |
+| 1    | CN470         |
+| 2    | RU864         |
+| 3    | IN865         |
+| 4    | EU868         |
+| 5    | US915         |
+| 6    | AU915         |
+| 7    | KR920         |
+| 8    | AS923-1       |
+| 9    | AS923-2       |
+| 10   | AS923-3       |
+| 11   | AS923-4       |
+
 
 
 <rk-img
@@ -1746,20 +1751,21 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 
 **List of band parameter options**
 
-| Code     | Regional Band |
-| -------- | ------------- |
-| 0        | EU433         |
-| 1        | CN470         |
-| 2        | RU864         |
-| 3        | IN865         |
-| 4        | EU868         |
-| 5        | US915         |
-| 6        | AU915         |
-| 7        | KR920         |
-| 8 or 8-1 | AS923-1       |
-| 8-2      | AS923-2       |
-| 8-3      | AS923-3       |
-| 8-4      | AS923-4       |
+| Code | Regional Band |
+| ---- | ------------- |
+| 0    | EU433         |
+| 1    | CN470         |
+| 2    | RU864         |
+| 3    | IN865         |
+| 4    | EU868         |
+| 5    | US915         |
+| 6    | AU915         |
+| 7    | KR920         |
+| 8    | AS923-1       |
+| 9    | AS923-2       |
+| 10   | AS923-3       |
+| 11   | AS923-4       |
+
 
 
 <rk-img
@@ -1960,20 +1966,21 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 
 **List of band parameter options**
 
-| Code     | Regional Band |
-| -------- | ------------- |
-| 0        | EU433         |
-| 1        | CN470         |
-| 2        | RU864         |
-| 3        | IN865         |
-| 4        | EU868         |
-| 5        | US915         |
-| 6        | AU915         |
-| 7        | KR920         |
-| 8 or 8-1 | AS923-1       |
-| 8-2      | AS923-2       |
-| 8-3      | AS923-3       |
-| 8-4      | AS923-4       |
+| Code | Regional Band |
+| ---- | ------------- |
+| 0    | EU433         |
+| 1    | CN470         |
+| 2    | RU864         |
+| 3    | IN865         |
+| 4    | EU868         |
+| 5    | US915         |
+| 6    | AU915         |
+| 7    | KR920         |
+| 8    | AS923-1       |
+| 9    | AS923-2       |
+| 10   | AS923-3       |
+| 11   | AS923-4       |
+
 
 
 <rk-img
@@ -2070,28 +2077,34 @@ Try again `AT` and you should see it on the terminal followed by `OK`.
 
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/atstart.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/p2p-1.png"
   width="90%"
   caption="at+version command response"
 />
 
-1. To set up the RAK3172 to work in LoRa P2P mode, you need to input the work mode command on both RAK3172 modules.
+1. In setting up the RAK3172 to work in LoRa P2P mode, you need to change the LoRa network work mode command on both RAK3172 modules.
 
 ```
 AT+NWM=0
 ```
+`AT+NWM` parameter mode can be either 0=LoRa P2P or 1=LoRaWAN.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/p2pworkmode.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/p2p-2.png"
   width="90%"
   caption="P2P Mode"
 />
 
 :::tip 📝 NOTE:
-
-You might need to input the `ATE` command again to ensure that your succeeding commands on P2P mode echo on the terminal.
-
+- The device will start automatically if you change modes from LoRaWAN to LoRa P2P and vice-versa.
+- You might need to input the `ATE` command again to ensure that your succeeding commands on P2P mode echo on the terminal.
 :::
+
+2. You need to input the P2P setup on both RAK3172 modules. The parameters should be exactly the same on the two modules. 
+
+```
+AT+P2P=868000000:7:125:0:10:14
+```
 
 For this P2P setup, the LoRa parameters are the following:
 
@@ -2102,48 +2115,58 @@ For this P2P setup, the LoRa parameters are the following:
 - Preamble Length: **10**
 - Power: **14&nbsp;dBm**
 
-2. You need to input the P2P setup on both RAK3172 modules. The parameters should be exactly the same on the two modules. 
-
-```
-AT+P2P=868000000:7:125:0:10:14
-```
-
 :::tip 📝 NOTE:
-
-Refer to the [P2P Mode](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/) section of the AT command documentation to learn more about the definition of the parameters used.
-
+Refer to the P2P Mode section of the [AT command documentation](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/) to learn more about the definition of the parameters used and the individual commands if you want specific parameter changed.
 :::
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/p2psetup.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/p2p-3.png"
   width="90%"
   caption="Configuring P2P in both RAK3172 Module"
 />
 
-3. To set one module as a receiver (RX), you need to set the value of the P2P receive command to 65535.
-
-```
-AT+PRECV=65535 
-```
+3. To set one module as the receiver (RX), you need to set the value of the P2P receive command.
 
 :::tip 📝 NOTE:
-
-- If the `AT+PRECV` value is set to 65534, the device will continuously listen to P2P LoRa TX packets without any timeout. This is the same as setting the device in RX mode.
-- If the `AT+PRECV` value is set to 65535, the device will listen to P2P TX without a timeout. But it will stop listening once a P2P LoRa packet is received to save power.
-- If the `AT+PRECV` value is 0, the device will stop listening to P2P TX data. The device is in TX mode.
-
+LoRa P2P default setting is Transmitter (TX) mode. This consumes lower power compared to Receiver (RX) mode where the radio is always listening for LoRa packets.
 :::
 
-With one module configured as RX, the other device will be the TX.
-
-4. You can now try to send a P2P payload.
+a. P2P LoRa RX configurable duration value is from 1 to 65533 ms. In this example, the device will listen and wait for LoRa P2P Packets for 30000 ms or 30 seconds. It will automatically disable RX mode and switch to TX mode after the timeout. If the device did not receive any packets within the time period, then the callback after timeout is `+EVT:RXP2P RECEIVE TIMEOUT`.
 
 ```
-AT+PSEND=11223344
+AT+PRECV=30000
 ```
+b. If the `AT+PRECV` value is set to **65535**, the device will listen to P2P LoRa packets without a timeout, but it will stop listening once a P2P LoRa packet is received. After done receiving the packets, it will disable RX mode and automatically switch to TX mode again.
+
+```
+AT+PRECV=65535
+```
+
+c. If the `AT+PRECV` value is set to **65534**, the device will continuously listen to P2P LoRa packets without any timeout. The will continuously stay in RX mode until `AT+PRECV` is set to **0**. 
+
+```
+AT+PRECV=65534
+```
+
+d. If the `AT+PRECV` value is set to **0**, the device will stop listening to P2P LoRa packets. It disables LoRa P2P RX mode and switch to TX mode.
+
+```
+AT+PRECV=0
+```
+
+4. With one module configured as Transmitter (TX) and the other device will be the Receiver (RX), you can now try to send or transmit P2P payload data.
+
+```
+AT+PSEND= <payload>
+```
+:::tip 📝 NOTE:
+- `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
+- `AT_BUSY_ERROR` is returned if the device is still in RX mode and you try to send or reconfigure RX period. If the `AT+PRECV` command is set to ***65534**, you need to execute first `AT+PRECV=0` to be able to configure again the TX and RX state and avoid `AT_BUSY_ERROR`.
+- `<payload>`: 2~500 digit length, must be an even number of digits and character 0-9, a-f, A-F only, representing 1~256 hexadecimal numbers. For example, if the payload is like ` 0x03, 0xAA, 0x32`, therefore the AT command should be `AT+PSEND = 03AA32`.
+:::
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/p2p_txrx.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/p2p-4.png"
   width="90%"
   caption="Configuring P2P in both RAK3172 Module"
 />
