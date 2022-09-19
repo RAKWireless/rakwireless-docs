@@ -198,7 +198,7 @@ Once the Arduino IDE has been installed successfully, you can now configure the 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/rui-stm32.png"
   width="90%"
-  caption="Selecting RAK3272S Module"
+  caption="Selecting RAK3272S Breakout Board"
 />
 
 4. Open the **Tools** menu and select a COM port. **COM28** is currently used.
@@ -1112,7 +1112,7 @@ In this section, it shows how to connect the RAK3272S Breakout Board to the Chir
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/23.chirpstack-platform.png"
   width="60%"
-  caption="RAK3272S Module in the Context of the ChirpStack Platform"
+  caption="RAK3272S Breakout Board in the Context of the ChirpStack Platform"
 />
 
 The ChirpStack or previously known as the LoRaServer project provides open-source components for building LoRaWAN networks. Like the case of TTN, the RAK3272S Breakout Board is located in the periphery and will transmit the data to the backend servers through a LoRaWAN gateway. Learn more about [ChirpStack](https://www.chirpstack.io/).
@@ -1200,7 +1200,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/30.new-device-registration.png"
   width="100%"
-  caption="Chirpstack Adding Node into the RAK3272S Module"
+  caption="Chirpstack Adding Node into the RAK3272S Breakout Board"
 />
 
 6. Once the node is created, fill in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
@@ -1658,7 +1658,9 @@ Try again `AT` and you should see it on the terminal followed by `OK`.
   caption="at+version command response"
 />
 
-1. In setting up the RAK3172 to work in LoRa P2P mode, you need to change the LoRa network work mode command on both RAK3172 modules.
+
+1. In setting up the RAK3272S to work in LoRa P2P mode, you need to change the LoRa network work mode command on both RAK3272S Breakout Board.
+
 
 ```
 AT+NWM=0
@@ -1676,7 +1678,9 @@ AT+NWM=0
 - You might need to input the `ATE` command again to ensure that your succeeding commands on P2P mode echo on the terminal.
 :::
 
-2. You need to input the P2P setup on both RAK3272S modules. The parameters should be exactly the same on the two modules. 
+
+2. You need to input the P2P setup on both RAK3272S Breakout Board. The parameters should be exactly the same on the two modules. 
+
 
 ```
 AT+P2P=868000000:7:125:0:10:14
@@ -1724,6 +1728,7 @@ c. If the `AT+PRECV` value is set to **65534**, the device will continuously lis
 AT+PRECV=65534
 ```
 
+
 d. If the `AT+PRECV` value is set to **0**, the device will stop listening to P2P LoRa packets. It disables LoRa P2P RX mode and switch to TX mode.
 
 ```
@@ -1755,9 +1760,9 @@ If you want to upgrade to the latest version firmware of the module, you can fol
 
 :::tip 📝 NOTE:
 
-**What if the RAK3272S module stops responding to AT commands and firmware update?**
+**What if the RAK3272S board stops responding to AT commands and firmware update?**
 
-You can recover your device by using the .hex file in the datasheet and upload it using STM32CubeProgrammer. The guide on updating STM32 firmware using STM32CubeProgrammer can be found [here](/Knowledge-Hub/Learn/STM32Cube-Programmer-Guide/).
+You can recover your device by using the `.hex` file in the datasheet and upload it using STM32CubeProgrammer. The guide on updating STM32 firmware using STM32CubeProgrammer can be found in the [Knowledge Hub section](/Knowledge-Hub/Learn/STM32Cube-Programmer-Guide/).
 
 :::warning ⚠️ WARNING
 

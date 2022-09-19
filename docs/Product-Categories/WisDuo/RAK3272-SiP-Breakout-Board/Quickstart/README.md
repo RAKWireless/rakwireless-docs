@@ -1746,7 +1746,9 @@ Try again `AT` and you should see it on the terminal followed by `OK`.
   caption="at+version command response"
 />
 
-1. In setting up the RAK3172 to work in LoRa P2P mode, you need to change the LoRa network work mode command on both RAK3172 modules.
+
+1. In setting up the RAK3272-SiP to work in LoRa P2P mode, you need to change the LoRa network work mode command on both RAK3272-SiP Breakout Board.
+
 
 ```
 AT+NWM=0
@@ -1764,7 +1766,8 @@ AT+NWM=0
 - You might need to input the `ATE` command again to ensure that your succeeding commands on P2P mode echo on the terminal.
 :::
 
-2. You need to input the P2P setup on both RAK3272-SiP modules. The parameters should be exactly the same on the two modules. 
+2. You need to input the P2P setup on both RAK3272-SiP board. The parameters should be exactly the same on the two boards. 
+
 
 ```
 AT+P2P=868000000:7:125:0:10:14

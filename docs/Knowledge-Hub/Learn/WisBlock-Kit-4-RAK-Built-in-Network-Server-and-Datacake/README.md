@@ -312,7 +312,7 @@ Where:
 - **W** is the number of attempts before the device quits retrying (between 0-255. Default is 0).
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/17.configuration-example.png"
+  src="/assets/images/knowledge-hub/wisblock/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/17.1.successfully-joined.png"
   width="70%"
   caption="Successfully joined device"
 />
@@ -434,7 +434,7 @@ If you have set any **SSL/TLS** encryption and authentication for more secure co
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/28.add-decoder.png"
-  width="80%"
+  width="70%"
   caption="Add decoder"
 />
 
