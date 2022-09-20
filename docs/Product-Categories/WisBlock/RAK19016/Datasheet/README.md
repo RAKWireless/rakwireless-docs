@@ -47,7 +47,7 @@ The RAK19016 module can be mounted on the power slot of the WisBlock Base board.
 
 :::warning ⚠️ WARNING
 
-RAK19016 **only** supports WisBlock Base boards with Power Slot. It is not compatible with all WisBlock Base boards.
+RAK19016 **only** supports WisBlock Base boards with Power Slot. It is not compatible with other WisBlock Base boards.
 
 :::
 

@@ -334,10 +334,35 @@ export default {
     img: '/assets/images/wisgate/rak7289/overview/RAK7289.png',
     store: 'https://store.rakwireless.com/products/wisgate-edge-pro-rak7289?utm_source=WisGateRAK7289&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-
-
+  
 
   // WisBlock
+
+  '/Product-Categories/WisBlock/RAK13801/': {
+    label: 'RAK13801 WisBlock UWB Module',
+    img: '/assets/images/wisblock/rak13801/overview/RAK13801_buy.png',
+    store: 'https://store.rakwireless.com/products/rak13801-wisblock-uwb-module?utm_source=RAK13801&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK12037/': {
+    label: 'RAK12047 WisBlock CO2 Sensor Module',
+    img: '/assets/images/wisblock/rak12037/overview/RAK12037_buy.png',
+    store: 'https://store.rakwireless.com/products/rak12037-wisblock-co2-sensor-module?utm_source=RAK12037&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK13010/': {
+    label: 'RAK13010 WisBlock SDI-12 Module',
+    img: '/assets/images/wisblock/rak13010/overview/RAK13010_buy.png',
+    store: 'https://store.rakwireless.com/products/rak13010-wisblock-sdi-12-module?utm_source=RAK13010&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK12027/': {
+    label: 'RAK12027 WisBlock Earthquake Sensor Module',
+    img: '/assets/images/wisblock/rak12027/overview/RAK12027_buy.jpg',
+    store: 'https://store.rakwireless.com/products/rak12027-wisblock-earthquake-sensor-module?utm_source=RAK12027&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK1905/': {
+    label: 'RAK1905 WisBlock 9-Axis Module',
+    img: '/assets/images/wisblock/rak1905/overview/RAK1905_buy.png',
+    store: 'https://store.rakwireless.com/products/rak1905-wisblock-9-xis-module?utm_source=RAK1905&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
   '/Product-Categories/WisBlock/RAK12047/': {
     label: 'RAK12047 WisBlock VOC Sensor Module',
     img: '/assets/images/wisblock/rak12047/overview/RAK12047_buy.png',
@@ -470,6 +495,11 @@ export default {
     label: 'RAK19016 WisBlock 5-24V Power Slot Module',
     img: '/assets/images/wisblock/rak19016/overview/RAK19016_buy.png',
     store: 'https://store.rakwireless.com/products/rak19016-5-24v-power-slot-module?utm_source=RAK19016&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK19017/': {
+    label: 'RAK19016 WisBlock POE Power Slot Module',
+    img: '/assets/images/wisblock/rak19017/overview/RAK19017_buy.png',
+    store: 'https://store.rakwireless.com/products/rak19017-poe-power-slot-module?utm_source=RAK19017&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAK19012/': {
     label: 'RAK19012 WisBlock USB Li-Ion Solar Power Module',
@@ -647,6 +677,12 @@ export default {
     store: 'https://store.rakwireless.com/products/3-channel-touch-pad-module-rak14002?utm_source=RAK14002&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
+  '/Product-Categories/WisBlock/RAK13006/': {
+    label: 'RAK13005 WisBlock CAN module',
+    img: '/assets/images/wisblock/rak13006/overview/RAK13006_buy.png',
+    store: 'https://store.rakwireless.com/products/rak13005-wisblock-can-module?utm_source=RAK13006&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+
   '/Product-Categories/WisBlock/RAK13005/': {
     label: 'RAK13005 WisBlock LIN module',
     img: '/assets/images/wisblock/rak13005/overview/RAK13005_buy.png',
@@ -669,6 +705,12 @@ export default {
     label: 'RAK12004 WisBlock MQ2 Gas Sensor',
     img: '/assets/images/wisblock/rak12004/overview/RAK12004_buy.png',
     store: 'https://store.rakwireless.com/products/mq2-gas-sensor-module-rak12004?utm_source=RAK12004&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+
+  '/Product-Categories/WisBlock/RAK12039/': {
+    label: 'RAK12039 WisBlock Dusk Sensor',
+    img: '/assets/images/wisblock/rak12039/overview/RAK12039_buy.png',
+    store: 'https://store.rakwireless.com/products/dust-sensor-module-rak12039?utm_source=RAK12039&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
   '/Product-Categories/WisBlock/RAK13004/': {
@@ -765,6 +807,12 @@ export default {
     label: 'RAK19013 WisBlock LiPo Solar Power Slot Module',
     img: '/assets/images/wisblock/rak19013/overview/rak19013_buy.png',
     store: 'https://store.rakwireless.com/products/rak19013-lipo-solar-power-slot-module?utm_source=RAK19013&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+
+  '/Product-Categories/WisBlock/RAK19014/': {
+    label: 'RAK19015 WisBlock USB Battery Power Slot Module',
+    img: '/assets/images/wisblock/rak19014/overview/RAK19014_buy.png',
+    store: 'https://store.rakwireless.com/products/rak19014-usb-battery-power-slot-module?utm_source=RAK19014&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
   '/Product-Categories/WisBlock/RAK19015/': {
