@@ -70,7 +70,7 @@ The hardware specification is categorized into five parts. It presents the chips
 The RAK1905 9-Axis Sensor WisBlock Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK1905 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
  <rk-img
-  src="/assets/images/wisblock/rak1905/datasheet/RAK1905-pinout.png"
+  src="/assets/images/wisblock/rak1905/datasheet/rak1905-pinout.png"
   width="60%"
   caption="RAK1905 WisBlock 9-Axis Sensor Module pinout"
 />

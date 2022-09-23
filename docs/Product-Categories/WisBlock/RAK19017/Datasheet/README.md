@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK19017 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak19017/overview/rak19017_home.png
+rak_img: /assets/images/wisblock/rak19017/overview/RAK19017_home.png
 tags:
   - datasheet
   - wisblock

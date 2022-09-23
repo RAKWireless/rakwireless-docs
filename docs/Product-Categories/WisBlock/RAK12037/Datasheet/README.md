@@ -70,7 +70,7 @@ The hardware specification is categorized into five (5) parts. It shows the chip
 The RAK12037 WisBlock CO2 Sensor comprises a standard WisBlock connector. The WisBlock connector allows the RAK12037 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 <rk-img
-  src="/assets/images/wisblock/rak12037/datasheet/RAK12037-pinout.jpg"
+  src="/assets/images/wisblock/rak12037/datasheet/rak12037-pinout.jpg"
   width="60%"
   caption="RAK12037 WisBlock Sensor pinout diagram"
 />
