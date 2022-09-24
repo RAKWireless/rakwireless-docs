@@ -324,6 +324,11 @@ export default {
     img: '/assets/images/wisgate/rak7268/datasheet/RAK7268.png',
     store: 'https://store.rakwireless.com/products/wisgate-edge-lite-2-rak7268-rak7268c?utm_source=WisGateRAK7268&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisGate/RAK7268-V2/': {
+    label: 'RAK7268 V2 WisGate Edge Lite 2',
+    img: '/assets/images/wisgate/rak7268-v2/overview/RAK7268V2.png',
+    store: 'https://store.rakwireless.com/products/wisgate-edge-lite-2-rak7268v2-rak7268cv2?utm_source=WisGateRAK7268V2&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
   '/Product-Categories/WisGate/RAK7271-7371/': {
     label: 'RAK7271/RAK7371 WisGate Developer Base',
     img: '/assets/images/wisgate/rak7271-7371/overview/rak7271-7371.png',
@@ -333,6 +338,11 @@ export default {
     label: 'RAK7289 WisGate Edge Pro',
     img: '/assets/images/wisgate/rak7289/overview/RAK7289.png',
     store: 'https://store.rakwireless.com/products/wisgate-edge-pro-rak7289?utm_source=WisGateRAK7289&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisGate/RAK7289-V2/': {
+    label: 'RAK7289 V2 WisGate Edge Pro',
+    img: '/assets/images/wisgate/rak7289-v2/datasheet/RAK7289V2.png',
+    store: 'https://store.rakwireless.com/products/wisgate-edge-pro-rak7289v2?utm_source=WisGateRAK7289V2&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   
 

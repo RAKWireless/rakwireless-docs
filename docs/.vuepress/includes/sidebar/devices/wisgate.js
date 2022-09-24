@@ -462,7 +462,40 @@ module.exports = {
   download: true,
   sidebarDepth: 4
 }
+],
 
+'/Product-Categories/WisGate/RAK7268-V2/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisGate/RAK7268-V2/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quickstart',
+  path: '/Product-Categories/WisGate/RAK7268-V2/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Supported LoRa Network Servers',
+  path: '/Product-Categories/WisGate/RAK7268-V2/Supported-LoRa-Network-Servers/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisGate/RAK7268-V2/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
 ],
 
 '/Product-Categories/WisGate/RAK7268C/': [{
@@ -539,6 +572,40 @@ module.exports = {
 {
   title: 'Datasheet',
   path: '/Product-Categories/WisGate/RAK7289/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+
+],
+'/Product-Categories/WisGate/RAK7289-V2/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisGate/RAK7289-V2/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisGate/RAK7289-V2/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Supported LoRa Network Servers',
+  path: '/Product-Categories/WisGate/RAK7289-V2/Supported-LoRa-Network-Servers/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisGate/RAK7289-V2/Datasheet/',
   collapsable: false,
   nested: true,
   download: true,
