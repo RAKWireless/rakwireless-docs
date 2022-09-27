@@ -11,7 +11,6 @@ tags:
 ---
 
 # RAK7268V2/RAK7268CV2 Quick Start Guide
-
 ## Prerequisites
 
 ### What Do You Need?

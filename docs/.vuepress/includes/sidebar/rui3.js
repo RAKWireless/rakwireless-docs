@@ -28,6 +28,7 @@ module.exports = {
         children: [
           ['/RUI3/Serial-Operating-Modes/', 'Getting Started'],
           ['/RUI3/Serial-Operating-Modes/AT-Command-Manual/', 'AT Command Manual'],
+          ['/RUI3/Serial-Operating-Modes/AT-Command-Manual-Cellular/', 'AT Command Manual (Cellular)'],
           ['/RUI3/Serial-Operating-Modes/Binary-Command-Manual/', 'Binary Command Manual'],
           ['/RUI3/Serial-Operating-Modes/Custom-Mode/', 'Custom Mode'],
         ]

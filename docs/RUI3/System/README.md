@@ -206,6 +206,82 @@ void loop()
 ```
 :::
 
+### Timer
+
+On RUI3 Timer API, there are two different Timer modes based on the trigger. 
+
+
+| **Timer Mode**     | **Comments**                 |
+| ------------------ | ---------------------------- |
+| RAK_TIMER_ONESHOT  | Timer triggered one time     |
+| RAK_TIMER_PERIODIC | Timer triggered periodically |
+
+The timer control is performed via Timer ID. The Timer ID definition is shown below.
+
+| **Timer ID** | **Comments** |
+| ------------ | ------------ |
+| RAK_TIMER_0  | timer ID #0  |
+| RAK_TIMER_1  | timer ID #1  |
+| RAK_TIMER_2  | timer ID #2  |
+| RAK_TIMER_3  | timer ID #3  |
+| RAK_TIMER_4  | timer ID #4  |
+
+
+
+#### create()
+
+```c
+api.system.timer.create()
+```
+
+| **Function**   | `bool api.system.timer.create(id, handler, mode)`                                                                                                               |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **id** is the Timer ID<br>**handler** the handler function for this Timer<br>**mode** the mode of this Timer (**RAK_TIMER_ONESHOT** or **RAK_TIMER_PERIODIC** ) |
+| **Returns**    | **TRUE**	for creating Timer successfully <br> **FALSE** for creating Timer failure                                                                              |
+
+:::details Click to View Example
+```c{10}
+
+void handler(void *data)
+{
+  Serial.printf("[%lu]This is the Timer handler function\r\n", millis());
+}
+
+void setup()
+{
+  Serial.begin(115200);
+  if (api.system.timer.create(RAK_TIMER_0, (RAK_TIMER_HANDLER)handler, RAK_TIMER_PERIODIC) != true) {
+    Serial.printf("Creating timer failed.\r\n");
+  } else if (api.system.timer.start(RAK_TIMER_0, 1000, NULL) != true) {
+        Serial.printf("Starting timer failed.\r\n");
+  }
+}
+
+
+```
+:::
+
+#### start()
+
+```c
+api.system.timer.start()
+```
+| **Function**   | `bool api.system.timer.start(id, ms, data)`                                                                                    |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **Parameters** | **id**  is the Timer ID<br>**ms** is the period of Timer (milliseconds)<br> **data** the data passed to Timer handler function |
+| **Returns**    | **TRUE**	for starting  Timer successfully <br> **FALSE** for starting Timer failure                                            |
+
+#### stop()
+
+```c
+api.system.timer.stop()
+```
+| **Function**   | `bool api.system.timer.stop(id)`                                                 |
+| -------------- | -------------------------------------------------------------------------------- |
+| **Parameters** | **id**  is the Timer ID                                                          |
+| **Returns**    | **TRUE**	for stoping Timer successfully <br> **FALSE** for stoping Timer failure |
+
+
 ## Flash
 
 ### get()

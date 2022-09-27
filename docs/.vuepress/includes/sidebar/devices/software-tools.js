@@ -17,7 +17,7 @@ module.exports = {
         sidebarDepth: 4
       },
 	  {
-        title: 'WisToolBox',
+        title: 'WisToolBox for Mobile',
         path: '/Product-Categories/Software-Tools/WisToolBox/WisToolBoxMobile/',
         collapsable: false,
         nested: true,

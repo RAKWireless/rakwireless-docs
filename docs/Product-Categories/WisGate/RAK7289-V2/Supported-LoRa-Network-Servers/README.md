@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains a comprehensive guide in setting up both your RAK7289 V2 with TTN and ChirpStack. 
-rak_img: /assets/images/wisgate/rak7289-v2/datasheet/RAK7289V2.png
+rak_img: /assets/images/wisgate/rak7289-v2/overview/RAK7289V2.png
 tags:
   - ChirpStack
   - TTN

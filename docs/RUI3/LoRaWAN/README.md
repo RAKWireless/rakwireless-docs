@@ -262,6 +262,125 @@ typedef enum
   RAK_LORA_CLASS_C = 2, ///< The LoRaWan will work in Class C
 } RAK_LORA_CLASS;"
 ```
+
+### SERVICE\_LORA\_RECEIVE\_T
+
+The LoRaWAN receive frame control structure
+
+```c
+   typedef struct SERVICE_LORA_RECEIVE
+    {
+        uint8_t Port;
+        uint8_t RxDatarate;
+        uint8_t *Buffer;
+        uint8_t BufferSize;
+        int16_t Rssi;
+        int8_t Snr;
+        uint32_t DownLinkCounter;
+    } SERVICE_LORA_RECEIVE_T;
+
+```
+
+#### Port 
+
+Application port
+
+```c
+uint8_t Port
+```
+
+#### RxDatarate 
+
+Downlink datarate
+
+```c
+uint8_t RxDatarate;
+```
+
+#### Buffer
+
+Pointer to the received LoRaWAN data stream
+
+```c
+uint8_t *Buffer;
+```
+#### BufferSize
+
+Size of the received LoRaWAN data stream
+
+```c
+uint8_t BufferSize;
+```
+#### Rssi
+
+Rssi of the LoraWAN received packet
+
+```c
+int16_t Rssi;
+```
+
+#### Snr
+
+Signal-to-noise ratio of the LoRaWAN received packet
+
+```c
+int8_t Snr;
+```
+
+####  DownLinkCounter
+
+The downlink counter value for the received frame
+
+```c
+uint32_t DownLinkCounter;
+```
+
+###  rui\_lora\_p2p\_revc\_t
+
+The LoRa P2P receive frame control structure
+
+```
+typedef struct rui_lora_p2p_revc
+{
+
+    uint8_t *Buffer;
+    uint8_t BufferSize;
+    int16_t Rssi;
+    int8_t Snr;
+} rui_lora_p2p_recv_t;
+
+```
+#### Buffer
+
+Pointer to the received LoRa P2P data stream
+
+```c
+uint8_t *Buffer;
+```
+#### BufferSize
+
+Size of the received LoRa P2P data stream
+
+```c
+uint8_t BufferSize;
+```
+#### Rssi
+
+Rssi of the received LoRa P2P packet
+
+```c
+int16_t Rssi;
+```
+
+#### Snr
+
+Signal-to-noise ratio of the received P2P packet
+
+```c
+int8_t Snr;
+```
+
+
 ## Keys, IDs, and EUIs Management
 
 ### appeui
@@ -1657,7 +1776,7 @@ void setup()
     api.lorawan.njm.set(1);
     api.lorawan.join();
     api.lorawan.registerRecvCallback(recv_cb);
-api.lorawan.registerJoinCallback(join_cb);
+    api.lorawan.registerJoinCallback(join_cb);
     api.lorawan.registerSendCallback(send_cb);
 
     //wait for Join success

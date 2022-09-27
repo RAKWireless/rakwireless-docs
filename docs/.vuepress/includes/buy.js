@@ -341,8 +341,8 @@ export default {
   },
   '/Product-Categories/WisGate/RAK7289-V2/': {
     label: 'RAK7289 V2 WisGate Edge Pro',
-    img: '/assets/images/wisgate/rak7289-v2/datasheet/RAK7289V2.png',
-    store: 'https://store.rakwireless.com/products/wisgate-edge-pro-rak7289v2?utm_source=WisGateRAK7289V2&utm_medium=Document&utm_campaign=BuyFromStore'
+    img: '/assets/images/wisgate/rak7289-v2/overview/RAK7289V2.png',
+    store: 'https://store.rakwireless.com/products/wisgate-edge-pro-rak7289v2-rak7289cv2?utm_source=WisGateRAK7289V2&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   
 

@@ -35,15 +35,6 @@ RAK13801 is a WisBlock IO that extends the WisBlock system based on Decawave's D
 
 ### Overview
 
-<br>
-<br>
-
-<rk-img
-  src="/assets/images/wisblock/rak13801/datasheet/rak13801-overview.png"
-  width="50%"
-  caption="RAK13801 WisBlock UWB Module top and bottom view"
-/>
-
 #### Mounting
 
 **Figure 2** shows the mounting mechanism of the RAK13801 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK13801 module can be mounted on the IO slots.

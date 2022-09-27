@@ -11,34 +11,33 @@ tags:
 # WisGateOS 2 Extensions
 
 ## Overview
-WisGateOS 2 features an extension functionality, which provides additional features and functions that can be added or removed, based on the user's needs. Later this year RAKwireless will provide the option for our users to build their own extensions. 
 
-Read more about how to [add](#how-to-add-an-extension) or [remove](#how-to-remove-an-extension)  extensions here:
-
-Find all available extensions for the WisGateOS 2 [here](#extensions): 
+WisGateOS 2 features an extension functionality, which provides additional features and functions that can be added or removed, based on your needs. Later this year, RAKwireless will provide the option for our users to build their own extensions. 
 
 The extensions are built to work with version 2 gateways running the WisGateOS 2. 
 
-Note that some extensions will be available for certain gateway models since they are related to specific hardware functionality.
+::: tip 📝 NOTE
+Some extensions will be available for certain gateway models since they are related to specific hardware functionality.
+:::
 
 
 ## How to Add or Remove an Extension
 
-### How to add an extension
+### How to Add an Extension
 
 1. To install an extension, start with accessing the gateway. To access the gateway, check the Access the [WisGateOS 2 Web UI](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/Overview/#access-the-wisgateos-2-web-ui) user manual.
 
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisgateos2-extensions/1.png"
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/1.login-page.png"
   width="100%"
   caption="Login page"
 />
 
-2. After a successful login, head to the **Extensions tab** (<img src="/assets/images/software-apis-and-library/wisgateos2-extensions/2.png"> ). You can click on the WisGate logo (<img src="/assets/images/software-apis-and-library/wisgateos2-extensions/3.png"/>) in the upper left corner to expand the menu on the left and see the full names of the tabs. 
+2. After a successful login, head to the **Extensions tab** (<img src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/2.png"> ). You can click on the WisGate logo (<img src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/3.png"/>) in the upper left corner to expand the menu on the left and see the full names of the tabs. 
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisgateos2-extensions/4.png"
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/4.extensions-tab.png"
   width="100%"
   caption="Extensions tab"
 />
@@ -48,7 +47,7 @@ By default, no extensions are installed.
 3. To install one, you can click either on **Add new extension** button or the **install one now link**. An **Add new extension** window will pop up.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisgateos2-extensions/5.png"
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/5.new-extensions.png"
   width="100%"
   caption="Add New Extension"
 />
@@ -60,7 +59,7 @@ The extension files are in **IPK** format and are created specifically for the W
 :::
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisgateos2-extensions/6.png"
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/6.choose-extensions.png"
   width="100%"
   caption="Choosing an Extension"
 />
@@ -68,7 +67,7 @@ The extension files are in **IPK** format and are created specifically for the W
 5. After you choose the extension file, click on **Add extension** to install it.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisgateos2-extensions/7.png"
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/7.add-extensions.png"
   width="100%"
   caption="Adding an Extension"
 />
@@ -78,7 +77,7 @@ It takes some time for the extension to install.
 6. After the installation process is complete, the WisGateOS will reboot and you need to log in again. 
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisgateos2-extensions/8.png"
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/8.login.png"
   width="100%"
   caption="Login Page"
 />
@@ -86,7 +85,7 @@ It takes some time for the extension to install.
 7. Head to the **Extensions tab** again and you should see the installed extension.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisgateos2-extensions/9.png"
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/9.installed-extension.png"
   width="100%"
   caption="Installed Extension"
 />
@@ -95,12 +94,12 @@ Your extension is successfully installed.
 
 8. You can now install more extensions via the **Add new** **extension** button or configure the installed ones by clicking the **Launch** button on the extension.
 
-### How to remove an extension
+### How to Remove an Extension
 
 1. To remove an extension, head to the **Extensions tab**. 
    
 <rk-img
-  src="/assets/images/software-apis-and-library/wisgateos2-extensions/10.png"
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/10.installed.png"
   width="100%"
   caption="Installed Extension"
 />
@@ -108,7 +107,7 @@ Your extension is successfully installed.
 2. Click on the **Remove** button at the extension you want to remove. You will be asked if you want to remove that extension.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisgateos2-extensions/11.png"
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/11.remove-extension.png"
   width="100%"
   caption=" Removing an Extension"
 />
@@ -116,36 +115,30 @@ Your extension is successfully installed.
 3. Click on **Remove**.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisgateos2-extensions/12.png"
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/12.removed.png"
   width="100%"
-  caption="Extension is Being Removed"
+  caption="Removing extension"
 />
 
 Wait for the process to finish.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisgateos2-extensions/13.png"
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/13.removed-extension.png"
   width="100%"
-  caption="Extension is Removed"
+  caption="Extension is removed"
 />
 
 ## Extensions
 
 ### Breathing Light
 
-Download the extension [here](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-breathing-light-1.0.0_b6.ipk).
+The breathing light LED is located on the top cover of the WisGate Edge Lite 2 gateways and helps to easily determine the gateway’s status visually. The breathing light extension allows you to enable or disable the breathing light on the gateway’s top cover. The default state of the LED is as in its Normal state - a slowly blinking blue light. 
 
-#### Overview
+- Download the [Breathing Light Extension](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-breathing-light-1.0.0_b6.ipk).
 
 ::: tip 📝 NOTE
 Breathing Light extension is available only for the WisGate Edge Lite 2 version 2 gateways. 
 :::
-
-The breathing light LED is located on the top cover of the WisGate Edge Lite 2 gateways and helps to easily determine the gateway’s status visually.
-
-The breathing light extension allows you to enable or disable the breathing light on the gateway’s top cover. 
-
-The default state of the LED is as in its Normal state - a slowly blinking blue light. 
 
 #### Working Modes
 
@@ -160,7 +153,7 @@ If you choose the All working mode, you can change the Normal light color, that 
 1. Start by Installing and **Launching** the extension.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisgateos2-extensions/14.png"
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/14.light-extension.png"
   width="100%"
   caption="Launch the Breathing Light Extension"
 />
@@ -168,7 +161,7 @@ If you choose the All working mode, you can change the Normal light color, that 
 2. Click on **Launch** in the **Breathing light**, to open the extension’s configuration page.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisgateos2-extensions/15.png"
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/15.light-config.png"
   width="100%"
   caption="Breathing Light Configuration Page"
 />
@@ -196,13 +189,12 @@ You can check the status of the LED on the gateway itself.
 
 ### Custom Logo
 
-Download the extension [here](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-custom-logo-1.0.0_b1.ipk).
-
-#### Overview
 
 The Custom Logo extension allows you to upload your logo in the Web UI. This extension is universal and it works for all gateways, supporting WisGateOS 2. The Custom Logo extension is created with the thought of small or bigger enterprises that want their logo to be recognized and used in their everyday work. 
 
 Being able to rebrand your Web UI is particularly useful and even required when it comes to companies that need to promote and visualize their brand or product. This is where RAKWireless’ white label feature comes in handy for the clients. 
+
+- Download the [Custom Logo Extension](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-custom-logo-1.0.0_b1.ipk).
 
 #### Size and Format Requirements
 
@@ -219,7 +211,7 @@ You can check the guide on how to download the extension above.
 1. Start by Installing and **Launching** the extension. 
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisgateos2-extensions/17.png"
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/16.custom-logo.png"
   width="100%"
   caption="Custom Logo Extension"
 />
@@ -227,30 +219,329 @@ You can check the guide on how to download the extension above.
 2. On the **Extensions** tab, click on **Launch** in the **Custom logo** area, to open the extension’s configuration page.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisgateos2-extensions/18.png"
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/17.config-page.png"
   width="100%"
   caption="Custom Logo Configuration Page"
 />
 
 3. On the configuration page, you can set a custom logo on the login page and on the sidebar menu.
-- **Interface** – enables/disables custom logo extension.
-
-- **Large logo** – this logo will be used on the login page and on the expanded sidebar menu. To upload a logo you can either drop the image in the area or click on Choose file and browse for the image.
-
-- **Small logo** – this logo will be used for mobile view and on the collapsed sidebar menu. To upload a logo you can either drop the image in the area or click on Choose file and browse for the image.
-
-- **Preview** – after choosing the desired images, you can click on preview and see how the logo will look on the login page, expanded and collapsed sidebar in desktop and mobile versions.
+   - **Interface** – enables/disables custom logo extension.
+   - **Large logo** – this logo will be used on the login page and on the expanded sidebar menu. To upload a logo you can either drop the image in the area or click on Choose file and browse for the image.
+   - **Small logo** – this logo will be used for mobile view and on the collapsed sidebar menu. To upload a logo you can either drop the image in the area or click on Choose file and browse for the image.
+   - **Preview** – after choosing the desired images, you can click on preview and see how the logo will look on the login page, expanded and collapsed sidebar in desktop and mobile versions.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisgateos2-extensions/19.png"
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/19.logo-preview.png"
   width="100%"
   caption="Logo Preview for Desktop Users"
 />
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisgateos2-extensions/20.png"
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/20.mobile-users.png"
   width="100%"
   caption="Logo Preview for Mobile Users"
 />
 
 4. To apply the selected logos, click **Save changes**. The page will reload and apply the logos. 
+
+
+
+### Listen Before Talk
+
+Listen Before Talk (LBT) means that, before transmitting, the gateway checks the availability of the channel. This is necessary because LoRaWAN is a multi-channel protocol and uses ISM Band. Anyone can use the band - a collision occurs if two or more end devices send signals simultaneously. 
+
+The gateway checks for empty channels and uses one of them to send downlink data. If a channel is occupied, the gateway performs a random back off. In case all of the channels are occupied, the gateway waits for a free channel and tries to send the downlink data again. 
+
+LBT is usually governed by regulations per country. In WisGateOS 2.1, there is a country table which includes proper configurations for all countries so you can set the country code in WisGateOS 2.1.
+
+:::tip 📝 NOTE
+
+AS923 end-devices operating in Japan shall perform Listen Before Talk (LBT), based on ARIB STD-T108 regulations. The ARIB STD-T108 regulation is available for free and should be consulted as needed. 
+:::
+
+
+You can switch the frequency plan in the following regions:
+
+* AS923, KR920
+* EU868, RU864, IN865
+* CN470
+
+The frequency plan will be limited to a particular region.
+Tx power will be limited to under the maximum.
+
+
+* Downlink Tx Power
+* Beacon Tx Power
+
+
+Download the country settings extension. 
+
+<!-- Attach link here--->
+
+#### Installing the Extension
+
+To install the extensions, follow the steps in the [guide](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2-Extensions/Overview/#how-to-add-an-extension).
+
+#### Configuring the WireGuard Extension
+
+
+1. In the left navigation bar, click **Extensions**, and you can see the installed **WireGuard** extension.
+
+2. Click the **Launch** button.
+
+
+<rk-img
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/lbt-configuration/1.extensions-tab.png"
+  width="100%"
+  caption="Extensions tab"
+/>
+
+
+3. Select your country by clicking the **Select your country** button.
+
+
+<rk-img
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/lbt-configuration/2.country-selection.png"
+  width="100%"
+  caption="Country selection"
+/>
+
+<rk-img
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/lbt-configuration/3.country-list.png"
+  width="100%"
+  caption="Find your country in the list"
+/>
+
+
+4. In the new window, find your country and select it. Confirm that you have chosen the country where the gateway is located, by clicking on the tick box below the country.
+
+<rk-img
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/lbt-configuration/4.confirm-country.png"
+  width="100%"
+  caption="Confirm your country"
+/>
+
+
+5. When you have selected your country, click **Confirm** to set the LBT for your country. Enable the LBT by clicking on the **Enable Listen Before Talk** switch, then click **Save Changes**.
+
+<rk-img
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/lbt-configuration/5.enable-lbt.png"
+  width="100%"
+  caption="Enable LBT"
+/>
+
+6. Now, your gateway has its LBT enabled. 
+
+
+
+### Open/Close Port
+
+This extension can add or delete packet traffic management rules on the gateway through the Open/Close port extension, allowing the host IP of any (or specific) network segment to communicate with the gateway through the specified port.
+
+<!-- Download the Open/Close port extension.-->
+
+#### Installing the Extension
+
+To install the extension, follow the steps in the [guide](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2-Extensions/Overview/#how-to-add-an-extension). 
+
+#### Configuring the Open/Close Port Extension
+
+1. In the left navigation bar, click **Extensions**, and you can see the installed **Open/Close port** extension.
+
+2. Click the **Launch** button. 
+
+
+<rk-img
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/open-close-port/1.extension-tab.png"
+  width="100%"
+  caption="Extensions tab"
+/>
+
+
+
+3. In the **Traffic rules** tab, you can see the default traffic rules of the **Open/Close port** extension.
+
+<rk-img
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/open-close-port/2.open-close-extension.png"
+  width="100%"
+  caption="Open/Close port extension"
+/>
+
+
+* **Service name** – a readable name for the service.
+* **Protocol** – the protocol used.
+* **Family** – the protocol version used for the traffic.
+* **From** – external source.
+* **To** – internal source.
+
+For example, the **Allow-http** service indicates that any host in WAN can communicate with the gateway through port 80 using the TCP protocol type.
+
+4. To add a new rule, click the **Add new rule** button in the upper right corner of the extension. 
+
+<rk-img
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/open-close-port/3.new-rule.png"
+  width="100%"
+  caption="Adding new rule"
+/>
+
+
+
+5. Fill in the following information:
+
+* **Service name** – give a readable name for the rule.
+* **Protocol** – choose the protocol used for the rule:
+    * TCP
+    * UDP
+    * TCP + UDP
+* **Sources**
+    * Allow any host – allows any host to have access to the rule.
+    * Source IP address – you can set up 3 host IPs.
+* **Destination Port** – the destination port of the routing.
+
+6. After filling in the required information, click **Add new rule**. Then you can view the rule created in the list of **Traffic rules** interface.
+
+
+### Solar Battery 
+
+
+The Solar battery extension is used to display the status of the solar battery used by the gateway, including the solar battery's performance, battery health status, cycle period, battery power, charging and discharging mode, and other information. The extension is compatible only with **RAK7289 WisGate Edge Pro gateways**. You can learn the status of solar batteries used in real time through the UI interface.
+
+
+Download the Solar battery extension. <mark><link></mark>
+
+#### Installation
+
+To install the extension, follow the steps in the [guide](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2-Extensions/Overview/#how-to-add-an-extension). 
+
+#### Configuring the Solar Battery Extension
+
+1. In the left navigation bar, click **Extensions**, and you can see the installed **Solar battery** extension components.
+
+2. Click the **Launch** button.
+
+<rk-img
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/solar-battery/1.extensions-tab.png"
+  width="100%"
+  caption="Extensions tab"
+/>
+
+
+3. Under the **Details tab**, click **Monitor solar battery** and switch in the **Interface** parameter to enable the Monitor Solar Battery extension. 
+
+
+<rk-img
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/solar-battery/2.solar-battery-page.png"
+  width="100%"
+  caption="Solar battery page"
+/>
+
+
+* **Solar battery performance** – shows the performance of the battery in real-time:
+    * **Temperature** – the temperature of the battery. This parameter is used to prevent the battery from overheating or freezing.
+    * **Voltage** – the voltage of the battery. 
+    * **State of charg**e – the battery level. 
+    * **Current** – the current of the battery whether it is charging or discharging.
+
+* **About solar battery** - contains additional information about the battery:
+    * **State of Health** – this value represents the health of the battery.
+    * **Cycle times** – the cycles of charge/recharge
+    * **Remaining Capacity** – the remaining capacity of the connected battery.
+    * **Full-charge capacity** – the capacity of the connected battery.
+    * **Battery working mode** – the status of the battery if it is charging or discharging.
+
+* **Solar battery active events** - notifies about issues with the solar battery:
+    * **Fault** – The system identifies a possibly damaged solar battery and alerts on replacing it immediately.
+    * **Protect** - The system identifies an issue that may cause significant damage to the solar battery, so it switches off the solar battery power as a preventive measure. Once operating conditions become favorable, the solar battery will resume working automatically.
+
+
+### Wireguard
+
+
+WireGuard is a simple but fast VPN. It aims to be faster, simpler, and leaner than the IPsec protocol. It intends to be more performant than the well-known RAKwireless - OpenVPN. Before, it was not possible to use the WireGuard protocol on the RAKwireless gateways, but that is not the case now.
+
+The new WisGateOS V2 now offers Extension features, where you can install and set up the WireGuard extension. In this tutorial, you will learn how to set the WireGuard client on the gateway.
+
+This guide assumes that you have some knowledge in setting up a WireGuard server and have a WireGuard server set up. <!--If you are not familiar with the WireGuard server, you can check this link <mark><link></mark>  to learn how to set up a WireGuard server.-->
+
+:::tip 📝 NOTE
+WireGuard extension can only be installed on WisGate Edge V2 gateways, with  WisGateOS 2 only.
+:::
+
+
+
+- Download the [WireGuard extension.](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-wireguard-1.0.0_b33.ipk)
+
+#### Installing the Extension
+
+To install the extension, follow the steps in the [guide](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2-Extensions/Overview/#how-to-add-an-extension). 
+
+#### Configuring the WireGuard Extension
+
+1. In the left navigation bar, click **Extensions** and you can see the installed **WireGuard** extension.
+
+2. Click the **Launch** button.
+
+<rk-img
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/wireguard/1.extensions-tab.png"
+  width="100%"
+  caption="Extensions tab"
+/>
+
+
+3. In the **Configuration** tab, click the **Enable WireGuard** switch to enable the WireGuard extension. 
+
+<rk-img
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/wireguard/2.enable-wireguard.png"
+  width="100%"
+  caption="Enabling WireGuard"
+/>
+
+
+4. Fill in the following information:
+
+* **Interface** - the settings for the WireGuard client.
+    * **Address with netmask** – the address that the WireGuard client will use. IP of the client must be in the same range (e. g. 10.0.8.0 to 10.0.8.255) defined by the server.
+    * **Public Key** – the public key of the WireGuard client.
+    * **Private Key** – the private key of the WireGuard client.
+
+:::tip 📝 NOTE
+Do not share your Private key with anybody.
+:::
+
+
+* **Server** – the settings for the WireGuard server.
+    * **Endpoint Host** – the IP of the machine/cloud where the WireGuard server is set.
+    * **Endpoint Port** – the port used for the traffic.
+    * **Persistent Keepalive (ms)** – the time that a keepalive packet is sent to keep the connection.
+    * **Public Key** – the public key of the WireGuard server. 
+    * **Enable Preshared Key** – this enables the Preshared key field. The preshared key is used as part of the Noise protocol when establishing the encrypted connection between the two peers.
+
+
+<rk-img
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/wireguard/3.preshared-key.png"
+  width="60%"
+  caption="Enable preshared key"
+/>
+
+  
+* **Route All Traffic** - allows traffic from all IPs.
+    * **Allowed IPs** – you can set current IPs that will have the right to connect to the gateway via the WireGuard IP. Only available when Route All Traffic is disabled.
+
+
+5. When everything is set, click **Save changes** to save the settings.
+
+:::tip 📝 NOTE
+Remember to add the WireGuard Client credentials to the WireGuard server configuration. To see how to do that, check How to setup a WireGuard server guide. <mark><link></mark>
+:::
+
+
+6. After the connection is established, check the status of the WireGuard in the Status tab.
+
+<rk-img
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/wireguard/4.wireguard-status.png"
+  width="60%"
+  caption="WireGuard status"
+/>
+
+
+

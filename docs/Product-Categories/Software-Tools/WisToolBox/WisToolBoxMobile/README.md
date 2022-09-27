@@ -8,7 +8,7 @@ next: false
 ---
 
 
-# WisToolBox
+# WisToolBox for Mobile
 
 ## Installation
 
@@ -23,10 +23,10 @@ To use the WisToolBox Mobile app, make sure you meet the three requirements:
 
 The WisToolBox Mobile application is currently available for RAK463x RUI3 devices. It is compatible with the following RAK LPWAN modules:
 
-| RAK Devices                                                                      | 
-| -------------------------------------------------------------------------------- | 
-| [RAK4630](/Product-Categories/WisDuo/RAK4630-Module/Overview/)                   | 
-| [RAK4631-R](/Product-Categories/WisBlock/RAK4631-R/Overview/)                    | 
+| RAK Devices                                                    |
+| -------------------------------------------------------------- |
+| [RAK4630](/Product-Categories/WisDuo/RAK4630-Module/Overview/) |
+| [RAK4631-R](/Product-Categories/WisBlock/RAK4631-R/Overview/)  |
 
 ## Open the WisToolBox Mobile
 
