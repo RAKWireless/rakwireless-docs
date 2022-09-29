@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/rakwireless/rak-blue-dark.png
+rak_img: /assets/images/software-apis-and-library/wisgateos2.png
 rak_desc: This guide shows how to configure and connect the RAK Edge Gateway V2 with WisGateOS 2 to a LoRaWAN Network Server using the Basics Station protocol.
 rak_grp: software-apis-and-libraries
 prev: ../Overview/
