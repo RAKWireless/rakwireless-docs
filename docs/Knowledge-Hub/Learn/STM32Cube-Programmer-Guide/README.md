@@ -26,8 +26,8 @@ By default, RAK modules have RAK Bootloader. To update your device, you will onl
 
 These are the two ways to use the STM32CubeProgammer:
 
-* [Using the STM32 UART Bootloader](/Knowledge-Hub/Learn/AT-Migration-Guide/#introduction)
-* [Using ST-LINK Debugger/Programmer Tool](/Knowledge-Hub/Learn/AT-Migration-Guide/#changes-on-rak3172-baud-rate)
+* [Using the STM32 UART Bootloader](/Knowledge-Hub/Learn/STM32Cube-Programmer-Guide/#using-the-stm32-uart-bootloadern)
+* [Using ST-LINK Debugger/Programmer Tool](/Knowledge-Hub/Learn/STM32Cube-Programmer-Guide/#using-st-link-debugger-programmer-tool)
 
 :::tip 📝 NOTE
 If you have no ST-LINK hardware tool, you can only use the STM32's built-in UART bootloader since you will only need a UART connection (no external tool required).

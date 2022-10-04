@@ -325,7 +325,7 @@ RAK3272-SiP Breakout Board uses UART2 serial pins to upload the latest firmware.
 
 The **hex file** contains both the bootloader and the application code. 
 
-You need to use [STM32CubeProgrammer](https://wiki.st.com/stm32mpu/wiki/STM32CubeProgrammer) and **ST-Link** tool to upload the hex file. Use the diagram shown in **Figure 9** to connect the **ST-Link**.
+You need to use [STM32CubeProgrammer](https://wiki.st.com/stm32mpu/wiki/STM32CubeProgrammer) and **ST-Link** tool [to upload the hex file](https://docs.rakwireless.com/Knowledge-Hub/Learn/STM32Cube-Programmer-Guide/). Use the diagram shown in **Figure 9** to connect the **ST-Link**.
 
 <rk-img
   src="/assets/images/wisduo/rak3272-sip-breakout-board/quickstart/rak3272-sip-stlink.png"

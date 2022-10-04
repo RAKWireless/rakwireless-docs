@@ -183,7 +183,7 @@ Download the latest firmware of the RAK3272S Breakout Board provided below. RAK3
 
 The **bin file** contains the application code only and you need the RAK DFU Tool to upload this file to the module.
 
-The **hex file** contains both the bootloader and the application code. You need to use STM32CubeProgrammer to upload this.
+The **hex file** contains both the bootloader and the application code. You need to [use STM32CubeProgrammer to upload](https://docs.rakwireless.com/Knowledge-Hub/Learn/STM32Cube-Programmer-Guide/) this.
 
 :::warning ⚠️ WARNING
 Uploading the **`.hex`** file via STM32CubeProgrammer will erase all configured data on the device.

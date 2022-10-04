@@ -174,4 +174,4 @@ Download the latest firmware version of RAK10701 in the table provided below.
 
 | Model                                      | Version | Firmware                                                              |
 | ------------------------------------------ | ------- | --------------------------------------------------------------------- |
-| RAK10701 WisBlock Field Tester for LoRaWAN | V1.0.2  | [Download](https://downloads.rakwireless.com/LoRa/WisBlock/Solutions) |
+| RAK10701 WisBlock Field Tester for LoRaWAN | V1.0.2  | [Download](https://downloads.rakwireless.com/LoRa/RAK10701/beta/) |

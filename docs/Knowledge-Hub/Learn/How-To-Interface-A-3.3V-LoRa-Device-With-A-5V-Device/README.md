@@ -1,19 +1,19 @@
 ---
 sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
-rak_desc: A brief guide on how to combine E-Paper, QR codes, and LoRa using WisBlock.
+rak_desc: A brief guide on how to simulate the Rx/Tx between 5-V and 3.3-V machines.
 tags:
   - Tutorial
-  - BastWan
+  - BastWAN
 header:
-  title: 5V to 3.3V Bridge
+  title: How to Interface a 3.3-V LoRa Device with a 5-V Device
   caption: by <b>Kongduino</b>
   img: /assets/images/knowledge-hub/banners/high-power-wifi-module-and-power-line-communications.jpg
 posted: 9/30/2022 6:00 PM
 ---
 
 
-# 5V to 3.3V Bridge
+# How to Interface a 3.3-V LoRa Device with a 5-V Device
 
 ## Overview
 
@@ -51,12 +51,12 @@ Now comes the real challenge: **building a dongle**. Most modern IoT machines, e
 
 Also, the other (minor difficulty) is that RS232 doesn't supply a 5-Volt line per se. When HIGH, the signals come out at 5&nbsp;V, but there's no power source for the device connected to it. The 25 pins can't provide a measly 5-V Signal. However, to function properly, the level shifter must receive 5&nbsp;V on one side and 3.3&nbsp;V on the other. 
 
-Fortunately, Bastwan has a USB line, which outputs 5&nbsp;V, or a little more. So I did the following:
+Fortunately, BastWAN has a USB line, which outputs 5&nbsp;V, or a little more. So I did the following:
 
- - Wired both sides with lines from the Bastwan;
+ - Wired both sides with lines from the BastWAN;
  - GND to GND, on both sides;
  - Rx1/Tx1 on the Mega's side to HV1 and HV2;
- - Tx1/Rx1 on the Bastwan's side to LV1 and LV2. 
+ - Tx1/Rx1 on the BastWAN's side to LV1 and LV2. 
 
 The level shifter is actually small enough to fit snugly inside the connector's casing, which would be the ideal solution.
 
@@ -71,7 +71,7 @@ The level shifter is actually small enough to fit snugly inside the connector's 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/5v-to-3.3v-bridge/Bastwan.jpg"
   width="70%"
-  caption="Bastwan"
+  caption="BastWAN"
 />
 
 

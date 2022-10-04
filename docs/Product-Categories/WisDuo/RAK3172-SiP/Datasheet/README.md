@@ -262,7 +262,7 @@ Standard conditions for reflow soldering:
 Download the latest RAK3172-SiP WisDuo LPWAN SiP firmware provided below.
 
 - The **bin file** contains the application code only and you need the RAK DFU Tool to upload this file to RAK3172-SiP via UART.
-- The **hex file** contains both the bootloader and the application code. You need to use STM32CubeProgrammer to upload this.
+- The **hex file** contains both the bootloader and the application code. You need to [use STM32CubeProgrammer to upload](https://docs.rakwireless.com/Knowledge-Hub/Learn/STM32Cube-Programmer-Guide/) this.
 
 RAK3172-SiP uses UART2 serial pins to upload the latest firmware.
 
