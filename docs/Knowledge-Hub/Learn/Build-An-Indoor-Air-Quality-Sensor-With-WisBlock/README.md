@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/banners/wisblock-sensor.jpg
+rak_img: /assets/images/knowledge-hub/tutorials/build-an-indoor-air-quality-sensor-with-wisblock/indoor-air-quality-monitor.jpg
 rak_desc: This guide provides a step-by-step tutorial on how to build an indoor air quality sensor with WisBlock modules.
 tags:
   - Tutorial

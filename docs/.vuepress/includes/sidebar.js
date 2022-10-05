@@ -7,6 +7,7 @@ var rui = require('./sidebar/rui')
 var rui3 = require('./sidebar/rui3')
 var devices = require('./sidebar/devices')
 var root = require('./sidebar/root')
+var certification = require ('./sidebar/certification')
 
 module.exports = {
   // ...quickStartGuide,
@@ -16,5 +17,6 @@ module.exports = {
   ...rui,
   ...rui3,
   ...devices,
-  ...root
+  ...certification,
+  ...root,
 }

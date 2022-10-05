@@ -7,6 +7,12 @@ module.exports = {
       sidebarDepth: 4
     },
     {
+      title: 'Certification',
+      path: '/Certification/',
+      collapsable: false,
+      sidebarDepth: 4
+    },
+    {
       title: 'Product Categories',
       path: '/Product-Categories/',
       collapsable: false,
