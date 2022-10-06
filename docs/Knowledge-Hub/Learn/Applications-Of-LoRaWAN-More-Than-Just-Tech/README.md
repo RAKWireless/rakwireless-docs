@@ -3,7 +3,7 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/tutorials/applications-of-lorawan-more-than-just-tech/overview.jpg
 rak_desc: A brief discussion of the different fields of application LoRaWAN is a great help.
 tags:
-  - Tutorials
+  - Tutorial
 header:
   title: 8 Applications of LoRaWAN | More Than Just Tech
   caption: by <b>Sam Domingo</b>

@@ -3,7 +3,7 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/tutorials/how-to-successfully-carry-out-a-lorawan-coverage-test-with-rakwireless/overview.jpg
 rak_desc: Tips on how to maximize the LoRaWAN coverage of your own application.
 tags:
-  - Tutorials
+  - Tutorial
 header:
   title: How To Successfully Carry Out A LoRaWAN Coverage Test With RAKwireless
   caption: by <b>Sam Domingo</b>

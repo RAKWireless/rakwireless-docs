@@ -3,7 +3,7 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/tutorials/how-to-extend-battery-of-your-iot-device/overview.jpg
 rak_desc: A brief discussion on how to maximize the battery life of your IoT device.
 tags:
-  - Tutorials
+  - Tutorial
 header:
   title: How LoRa Can Help You Save The Battery Life of Your IoT Device
   caption: by <b>Sam Domingo</b>

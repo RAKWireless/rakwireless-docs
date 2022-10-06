@@ -3,7 +3,7 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/tutorials/lorawan-vs-the-world-of-iot/overview.png
 rak_desc: A detailed comparison between LoRaWAN and the different IoT protocols using S.W.O.T. Analysis.
 tags:
-  - Tutorials
+  - Tutorial
 header:
   title: LoRaWAN vs. the world of IoT!
   caption: by <b>Vladislav Yordanov</b>

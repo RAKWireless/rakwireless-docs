@@ -3,7 +3,7 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/aws.png
 rak_desc: This document will show you how to set up a LoRaWAN end-node and view its data on the AWS IoT Console. In addition, it’ll show you how to send a message from AWS IoT Console to the end-node as well.
 tags:
-  - Tutorials
+  - Tutorial
   - WisGate
 header:
   title: AWS IoT Core Integration

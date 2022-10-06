@@ -3,7 +3,7 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/mqtt-flow.png
 rak_desc: This tutorial is for people who have purchased a RAK WisGate Edge gateway and want to use the Built-in Network Server functionality to its fullest. Learn how to subscribe to a topic to obtain data from your end-devices through MQTT.
 tags:
-  - Tutorials
+  - Tutorial
   - WisGate
 header:
   title: Use the MQTT Broker Like a Pro + Examples

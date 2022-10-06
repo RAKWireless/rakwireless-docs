@@ -3,7 +3,7 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/tutorials/the-importance-of-high-power-wifi-module-and-power-line-communications/overview.png
 rak_desc: A brief discussion of a high power WiFi Module and Power Line Communications (PLC).
 tags:
-  - Tutorials
+  - Tutorial
 header:
   title: The Importance of High Power WiFi Module and Power Line Communications
   caption: by <b>Ken Yu</b>

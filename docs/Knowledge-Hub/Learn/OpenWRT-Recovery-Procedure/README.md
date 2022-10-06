@@ -3,7 +3,7 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
 rak_desc: A recovery procedure guide for WisGate Edge Gateways (OpenWRT).
 tags:
-  - Tutorials
+  - Tutorial
   - WisGate
 header:
   title: OpenWRT Recovery Procedure

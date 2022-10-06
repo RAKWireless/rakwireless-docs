@@ -4,7 +4,7 @@ rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
 rak_desc: This document walks through the details on the steps on how to install Raspberry Pi, InfluxDB, Grafana, and Telegraf in Ubuntu. 
 tags:
   - Ubuntu
-  - Tutorials
+  - Tutorial
 header:
   title: How to Install Modules in Ubuntu
   caption:  by <b>Vladislav Yordanov</b>

@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
+rak_img: /assets/images/knowledge-hub/tutorials/5v-to-3.3v-bridge/interfacing-3.3v-to-5v.png
 rak_desc: A brief guide on how to simulate the Rx/Tx between 5-V and 3.3-V machines.
 tags:
   - Tutorial

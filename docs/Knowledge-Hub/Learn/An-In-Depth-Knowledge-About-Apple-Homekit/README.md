@@ -3,7 +3,7 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/tutorials/an-in-depth-knowledge-about-apple-homekit/overview.jpg
 rak_desc: An in-depth discussion in the mechanism and protocol used by the Apple HomeKit
 tags:
-  - Tutorials
+  - Tutorial
 header:
   title: An In-Depth Knowledge about Apple HomeKit
   caption: by <b>Ken Yu</b>

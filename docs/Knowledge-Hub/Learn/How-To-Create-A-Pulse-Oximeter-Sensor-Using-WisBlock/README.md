@@ -3,7 +3,7 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/How-s-your-heart--Creating-a-Pulse-Oximeter-Sensor-with-WisBlock.jpg
 rak_desc: A brief guide on creating a health monitoring tool using the RAK WisBlock product such as RAK5005-O, RAK4631, and RAK12012.
 tags:
-  - Tutorials
+  - Tutorial
   - WisBlock
 header:
   title: How to Create a Pulse Oximeter Sensor Using WisBlock

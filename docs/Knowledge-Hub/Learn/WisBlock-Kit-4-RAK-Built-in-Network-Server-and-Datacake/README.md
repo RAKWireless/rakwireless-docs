@@ -3,7 +3,7 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
 rak_desc: A step-by-step guide on how to register your WisBlock Kit/s 4 in the Built-in network server of any gateway from the WisGate Edge series and visualize the data in Datacake via MQTT integration. 
 tags:
-  - Tutorials
+  - Tutorial
   - WisBlock
 header:
   title: WisBlock Kit 4 + RAK Built-in Network Server + Datacake
