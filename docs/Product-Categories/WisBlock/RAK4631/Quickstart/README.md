@@ -466,17 +466,17 @@ On the other hand, if the error is related to the difficulty of uploading the FW
 
 #### RAK4631 LoRa Mesh via Meshtastic
 
-[Meshtastic](https://meshtastic.org/) is an open-source community project that uses LoRa technology to make a long-range mesh communicator. You need to download the [latest Meshtastic firmware](https://meshtastic.org/firmware) and upload it to your RAK4631 to make it compatible with the Meshtastic network.
+[Meshtastic](https://meshtastic.org/) is an open-source community project that uses LoRa technology to make a long-range mesh communicator. You need to download the [latest Meshtastic firmware](https://meshtastic.org/downloads) and upload it to your RAK4631 to make it compatible with the Meshtastic network.
 
 :::tip 📝 NOTE
-For firmware version 1.2 (which is EOL by now but is still useful for the ATAK forwarder plugin) you need to use the right firmware of Meshtastic for your RAK4631 depending on the WisBlock Base board you use.
+For firmware version 1.2 (which is EOL by now but is still useful for the ATAK forwarder plugin), you need to use the right firmware of Meshtastic for your RAK4631, depending on the WisBlock Base board you use.
 
 - RAK5005-O - `firmware-rak4631_5005-1.2.yy.zzzzzzz.uf2`
 - RAK19003 - `firmware-rak4631_19003-1.2.yy.zzzzzzz.uf2`
 
-For Firmware 1.3 and 2.0 (from Nov 1st 2022) the WisBlock Base board is autodetected. There's a special firmware if your have the RAK14000 WisBlock E-Ink Display connected, all other use cases are covered in the stock firmware.
+For Firmware 1.3 and 2.0 (from Nov 1st, 2022), the WisBlock Base board is autodetected. There's a special firmware if you have the RAK14000 WisBlock E-Ink Display connected. All other use cases are covered in the stock firmware.
 
-- All Baseboards with RAK4631 - `firmware-rak4631-w.x.yy.zzzzzzz.uf2`
+- All the base boards with RAK4631 - `firmware-rak4631-w.x.yy.zzzzzzz.uf2`
 - RAK4631 with RAK14000 - `firmware-rak4631_eink-w.x.yy.zzzzzzz.uf2`
 :::
 
