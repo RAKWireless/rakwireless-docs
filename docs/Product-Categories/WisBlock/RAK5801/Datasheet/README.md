@@ -27,7 +27,7 @@ This module integrates a 12&nbsp;V power supply, which can be used to power exte
 
 - Two 4-20&nbsp;mA analog inputs
 - Compatible with multiple WisBlock Core modules, such as RAK4631
-- 0.005&nbsp;mA conversion accuracy
+- 0.1&nbsp;mA conversion accuracy
 - Supports low power consumption mode. The module can be powered off by the WisBlock Core module for saving energy during idle periods.
 - 12&nbsp;V output to  power external sensors
 - Reserved I2C expansion interface

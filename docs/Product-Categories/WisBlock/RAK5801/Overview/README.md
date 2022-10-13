@@ -13,7 +13,7 @@ tags:
 
 # RAK5801 WisBlock 4-20mA Interface Module
 
-Thank you for choosing **RAK5801 WisBlock 4-20mA Interface Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK5801 WisBlock 4-20mA Interface Module** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [RAK5801 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -45,7 +45,7 @@ For WisBlock Core RAK11200:
 * **Module specifications**
     * 4 to 20&nbsp;mA current to voltage converter.
     * 12&nbsp;V output for sensors
-    * 0.005&nbsp;mA conversion accuracy
+    * 0.1&nbsp;mA conversion accuracy
     * 2&nbsp;kV ESD protection
     * 2 ports
     * Supports 2, 3, and 4 wire sensor connections
