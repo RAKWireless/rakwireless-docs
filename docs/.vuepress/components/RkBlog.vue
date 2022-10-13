@@ -70,7 +70,7 @@
                   <q-item-section>
                     <div class="row q-gutter-x-sm">
                       <q-icon name="far fa-calendar" size="0.9rem" />
-                      <div>{{ article.posted || article.lastUpdated || td }}</div>
+                      <div>{{ article.frontmatter.posted|| article.lastUpdated  || td }}</div>
                     </div>
                     <div class="row q-gutter-x-sm q-mt-sm q-mb-sm">
                       <q-icon class="col-1 self-start" name="fas fa-tags" size="0.9rem" />
@@ -128,8 +128,9 @@ export default {
         })
         .sort((a, b) => {
           // descending sort by date posted or last updated
-          const a_ = new Date(a.posted || a.lastUpdated).getTime()
-          const b_ = new Date(b.posted || b.lastUpdated).getTime()
+          console.log(a)
+          const a_ = new Date(a.frontmatter.posted || a.lastUpdated).getTime()
+          const b_ = new Date(b.frontmatter.posted || b.lastUpdated).getTime()
           if (a_ < b_) return 1
           else if (a_ > b_) return -1
           else return 0
