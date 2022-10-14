@@ -33,3 +33,16 @@ Developer gateways are small LPWAN base stations designed for indoor projects, d
 </rk-head>
 
 <rk-products :tags="['wisgate', 'developer']" />
+
+
+
+## WisGate Connect
+
+<rk-head img="/assets/rakwireless/product-categories/WisGate-Connect.svg">
+
+WisGate Connect is a complete IoT platform designed to support multiple connectivity options, both wireless and wired. It is customizable depending on requirements and can be deployed both indoors and outdoors, even in industrial locations.
+
+
+</rk-head>
+
+<rk-products :tags="['wisgate', 'connect']" />

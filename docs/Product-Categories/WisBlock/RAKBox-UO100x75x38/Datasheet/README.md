@@ -1,8 +1,8 @@
 ---
 rak_desc: Provides comprehensive information about your WisBlock RAKBox-UO100x75x38 Enclosure to help you use it. This information includes technical specifications and characteristics.
 rak_img: /assets/images/wisblock/rakbox-uo100x75x38/overview/uo_home.png
-prev: ../Overview/
-next: ../Installation/
+prev: ../Installation/
+next: false
 tags:
   - RAKBox-UO100x75x38
   - datasheet
@@ -22,54 +22,163 @@ Moreover, it supports different types of mounting options such as pole, wall, DI
 - Dimensions L x W x H: 100&nbsp;mm x 75&nbsp;mm x 38&nbsp;mm
 - Available in two (2) colors: cool gray and white color
 - Two base plate options: **Plain Base Plate** and **WisBlock Bespoke Base Plate**
-- Support application of various scenarios via optional mounting accessories
+- Support the application of various scenarios via optional mounting accessories
 - Allows **customization service** without MOQ and supports CNC machining, painting, label printing, etc.
 
 ## Enclosure Mechanical Dimensions
 
-
-
 <rk-img
   src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/s-enclosure.png"
-  width="100%"
+  width="80%"
   caption="Small WisBlock Unify Enclosure dimensions"
 />
 
-## Enclosure with Mounting Accessory
+## Enclosure with Mounting Accessories
 
-These are the measurements when mounting is attached to the enclosure:
+The installation guide for mounting the different types of accessories can be found in [Mounting Guide](/Product-Categories/WisBlock/RAKBox-UO100x75x38/Installation/#mounting-guide) of the small unify enclosure.
 
-- [WisBlock Unify Enclosure 100x75x38 + Pole Mount](/Product-Categories/WisBlock/RAKBox-UO100x75x38/Datasheet/#vertical-pole-mount)
-- [WisBlock Unify Enclosure 100x75x38 + Wall Mount](/Product-Categories/WisBlock/RAKBox-UO100x75x38/Datasheet/#wall-mount)
+These are the measurements when the mounting is attached to the enclosure:
 
-### Vertical Pole Mount
+- [Pole Mount Vertical](#pole-mount-vertical)
+- [Wall Mount](#wall-mount)
+- [Belt Clip Mount](#belt-clip-mount)
+- [DIN Mount](#din-mount)
+- [Magnet Mount](#magnet-mount)
+- [Belt Loop Mount](#belt-loop-mount)
+- [Label Mount](#label-mount)
+- [Hook Loop Mount](#hook-loop-mount)
 
-The vertical pole mount guide can be found on the [installation guide](/Product-Categories/WisBlock/RAKBox-UO100x75x38/Installation/#pole-mounting).
+### Pole Mount Vertical
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/vertical-pole.png"
-  width="25%"
+  width="60%"
   caption="Vertical pole mount"
 />
 
+**Figure 3** below shows the dimensions of the small unify enclosure with vertical pole mounts attached to it.
+
 <rk-img
-  src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/Small-Vertical.png"
-  width="70%"
-  caption="Enclosure with pole mount"
+  src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/vertical-pole-dim.png"
+  width="60%"
+  caption="Dimensions of the enclosure with vertical pole mount"
 />
+
+
 
 ### Wall Mount
 
-The wall mount guide can be found on the [installation guide](/Product-Categories/WisBlock/RAKBox-UO100x75x38/Installation/#wall-mounting).
-
 <rk-img
-  src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/wall-enclosure.png"
-  width="65%"
+  src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/wall-mount.png"
+  width="60%"
   caption="Wall mount"
 />
 
+**Figure 5** below shows the dimensions of the small unify enclosure with wall mounts attached to it.
+
 <rk-img
-  src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/Small-Wall.png"
-  width="70%"
-  caption="Enclosure with wall mount"
+  src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/wall-mount-dim.png"
+  width="60%"
+  caption="Dimensions of the enclosure with wall mount"
+/>
+
+
+### Belt Clip Mount
+
+<rk-img
+  src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/belt-clip.png"
+  width="60%"
+  caption="Belt clip mount"
+/>
+
+**Figure 7** below shows the dimensions of the small unify enclosure with a belt clip mount attached to it.
+
+<rk-img
+  src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/belt-clip-dim.png"
+  width="60%"
+  caption="Dimensions of the enclosure with belt clip mount"
+/>
+
+### DIN Mount
+
+<rk-img
+  src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/din-mount.png"
+  width="60%"
+  caption="DIN mount"
+/>
+
+**Figure 9** below shows the dimensions of the small unify enclosure with a DIN mount attached to it.
+
+<rk-img
+  src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/din-mount-dim.png"
+  width="60%"
+  caption="Dimensions of the enclosure with DIN mount"
+/>
+
+
+### Magnet Mount
+
+<rk-img
+  src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/magnet-mount.png"
+  width="60%"
+  caption="Magnet mount"
+/>
+
+**Figure 11** below shows the dimensions of the small unify enclosure with a magnet mount attached to it.
+
+<rk-img
+  src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/magnet-mount-dim.png"
+  width="60%"
+  caption="Dimensions of the enclosure with magnet mount"
+/>
+
+
+### Belt Loop Mount
+
+<rk-img
+  src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/belt-loop.png"
+  width="60%"
+  caption="Belt loop mount"
+/>
+
+**Figure 13** below shows the dimensions of the small unify enclosure with a belt loop mount attached to it.
+
+<rk-img
+  src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/belt-loop-dim.png"
+  width="60%"
+  caption="Dimensions of the enclosure with belt loop mount"
+/>
+
+
+### Label Mount
+
+<rk-img
+  src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/label-mount.png"
+  width="60%"
+  caption="Label mount"
+/>
+
+**Figure 15** below shows the dimensions of the small unify enclosure with a label mount attached to it.
+
+<rk-img
+  src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/label-mount-dim.png"
+  width="60%"
+  caption="Dimensions of the enclosure with label mount"
+/>
+
+
+### Hook Loop Mount
+
+<rk-img
+  src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/hook-loop.png"
+  width="60%"
+  caption="Hook loop mount"
+/>
+
+**Figure 17** below shows the dimensions of the small unify enclosure with a label mount attached to it.
+
+<rk-img
+  src="/assets/images/wisblock/rakbox-uo100x75x38/datasheet/hook-loop-dim.png"
+  width="60%"
+  caption="Dimensions of the enclosure with hook loop mount"
 />

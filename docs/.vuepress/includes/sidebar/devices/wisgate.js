@@ -615,4 +615,58 @@ module.exports = {
 ],
 
 
+// Connect
+
+'/Product-Categories/WisGate/RAK7391/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisGate/RAK7391/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisGate/RAK7391/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Assembly Guide',
+  path: '/Product-Categories/WisGate/RAK7391/Assembly-Guide/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Services',
+  path: '/Product-Categories/WisGate/RAK7391/Services/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Connecting to WisBlock',
+  path: '/Product-Categories/WisGate/RAK7391/Connecting-To-WisBlock/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisGate/RAK7391/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+
+],
+
+
 }

@@ -110,6 +110,15 @@ export default {
           case 'EAC':
             data.img = '/assets/images/certifications/EAC.png'
             break
+          case 'SUTEL':
+            data.img = '/assets/images/certifications/SUTEL.png'
+            break
+          case 'Vietnam':
+            data.img = '/assets/images/certifications/Vietnam.png'
+            break
+          case 'SIRIM':
+            data.img = '/assets/images/certifications/SIRIM.png'
+            break
           default:
             data.img =
               'https://image.shutterstock.com/image-illustration/white-unknown-document-icon-isolated-600w-1517588975.jpg'

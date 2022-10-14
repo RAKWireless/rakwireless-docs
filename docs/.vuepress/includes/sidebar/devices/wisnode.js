@@ -32,6 +32,55 @@ module.exports = {
       sidebarDepth: 4
     },
   ],
+  '/Product-Categories/WisNode/RAK2560/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisNode/RAK2560/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisNode/RAK2560/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Installation Guide',
+    path: '/Product-Categories/WisNode/RAK2560/Installation/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Hub Datasheet',
+    path: '/Product-Categories/WisNode/RAK2560/Hub-Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'IO Datasheet',
+    path: '/Product-Categories/WisNode/RAK2560/IO-Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Probe Datasheet',
+    path: '/Product-Categories/WisNode/RAK2560/Probe-Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+],
   '/Product-Categories/WisNode/RAK7200/': [{
       title: 'Product Overview',
       path: '/Product-Categories/WisNode/RAK7200/Overview/',

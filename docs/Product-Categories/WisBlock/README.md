@@ -67,6 +67,70 @@ WisBlock Sensor offers a range of sensors for sensing environmental conditions (
 <rk-products :tags="['wisblock', 'wissensor']" />
 
 
+## WisBlock Audio
+
+<rk-head img="/assets/rakwireless/product-categories/WisBlock-Audio.png">
+
+WisBlock Audio is a range of building blocks, including microphones, amplifiers DSP, and enclosures which add Audio to the WisBlock ecosystem. Use them to create innovative IoT applications, and they'll work seamlessly with any IoT network, such as Wifi, LoRaWAN, or cellular IoT.
+
+
+</rk-head>
+
+
+### WisBlock Audio Interposer
+
+
+<rk-head img="/assets/rakwireless/product-categories/WB-Interposer-Text.png">
+
+WisBlock Audio Interposers are modules that allow you to connect multiple WisBlock Audio modules onto a single WisBlock Base IO slot. These modules also provide the connectivity you need when using multiple WisBlock Audio modules.
+
+
+</rk-head>
+
+<rk-products :tags="['wisblock', 'interposer']" />
+
+
+### WisBlock Audio Microphone
+
+
+<rk-head img="/assets/rakwireless/product-categories/WB-Microphone-Text.png">
+
+
+WisBlock Audio Microphones are the ears for your WisBlock system. These are analog and digital microphones, which can be connected to a WisBlock Base IO slot or the WisBlock Audio Interposer connector are available.
+
+
+</rk-head>
+
+<rk-products :tags="['wisblock', 'microphone']" />
+
+
+### WisBlock Audio Amplifier
+
+
+<rk-head img="/assets/rakwireless/product-categories/WB-Amplifier-Text.png">
+
+
+WisBlock Audio Amplifiers are the voice of your WisBlock system. The Amplifier modules allow you to connect one or more speakers to a WisBlock Base IO slot or the WisBlock Audio Interposer connector.
+
+</rk-head>
+
+<rk-products :tags="['wisblock', 'amplifier']" />
+
+
+### WisBlock Audio DSP
+
+<rk-head img="/assets/rakwireless/product-categories/WB-DSP-Text.png">
+
+
+WisBlock Audio DSP processes the audio received by the WisBlock Audio Microphones. This processing may be for voice or sound recognition.
+
+
+</rk-head>
+
+<rk-products :tags="['wisblock', 'dsp']" />
+
+
+
 ## WisBlock Interface
 
 <rk-head img="/assets/rakwireless/product-categories/WisBlock-Interface.svg">

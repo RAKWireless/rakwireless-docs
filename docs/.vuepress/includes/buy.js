@@ -1,6 +1,7 @@
 export default {
 
   //WisLink
+
   '/Product-Categories/WisLink/RAK831/': {
     label: 'RAK831 WisLink LPWAN Concentrator',
     img: '/assets/images/wislink-lora/rak831/datasheet/RAK831_buy.png',
@@ -62,20 +63,29 @@ export default {
     store: 'https://store.rakwireless.com/'
   },
 
+
   //WisDuino
+
   '/Product-Categories/WisDuino/RAK811-Evaluation-Board/': {
     label: 'RAK811 LPWAN Evaluation Board',
     img: '/assets/images/wisduino/rak811-evaluation-board/quickstart/overview/RAK811-wisnode_buy.png',
     store: 'https://store.rakwireless.com/products/rak811-wisnode-lora-module?utm_source=RAK811LPWANEvaluationBoard&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
+
   //WisNode
+
   '/Product-Categories/WisNode/RAK612/': {
     label: 'RAK612 WisNode Button',
     img: '/assets/images/wisnode/rak612/quickstart/main/RAK612_buy.png',
     store: 'https://store.rakwireless.com/products/rak612-lora-button?utm_source=RAK612WisNodeButton&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-  '/Product-Categories/WisNode/RAK7200/': {
+  '/Product-Categories/WisNode/RAK2560/': {
+    label: 'RAK2560 WisNode Sensor Hub',
+    img: '/assets/images/wisnode/rak2560/overview/rak2560_buy.jpg',
+    store: 'https://store.rakwireless.com/products/sensor-hub?utm_source=RAK2560WisNodeSense&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+    '/Product-Categories/WisNode/RAK7200/': {
     label: 'RAK7200 WisNode Track Lite',
     img: '/assets/images/wisnode/rak7200/quickstart/overview/RAK7200_buy.png',
     store: 'https://store.rakwireless.com/products/rak7200-lora-tracker?utm_source=RAK7200WisNodeTrackLite&utm_medium=Document&utm_campaign=BuyFromStore'
@@ -102,8 +112,8 @@ export default {
   },
 
 
-
   //WisTrio
+
   '/Product-Categories/WisTrio/RAK815/': {
     label: 'RAK815 WisTrio LPWAN Tracker',
     img: '/assets/images/wistrio/rak815/quickstart/1main/RAK815_buy.png',
@@ -130,7 +140,9 @@ export default {
     store: 'https://store.rakwireless.com/products/rak8212-itracker-pro?utm_source=RAK8212iTrackerPro&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
+
   //WisHat
+
   '/Product-Categories/WisHat/RAK2247-Pi-HAT/': {
     label: 'RAK2247 Pi HAT',
     img: '/assets/images/wishat/rak2247-pi-hat/overview/RAK2247_PiHat_buy.png',
@@ -152,7 +164,9 @@ export default {
     store: 'https://store.rakwireless.com/products/rak9003-poe-hat?utm_source=RAK9003PoEHAT&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
+
   //WisDuo
+
   '/Product-Categories/WisDuo/RAK811-Breakout-Board/': {
     label: 'RAK811 Breakout Board',
     img: '/assets/images/wisduo/rak811-breakout-board/quickstart/overview/RAK811_Breakout_buy.png',
@@ -263,7 +277,10 @@ export default {
     img: '/assets/images/wisduo/rak3272-sip-breakout-board/overview/RAK3272-SiP-Breakout_home.png',
     store: 'https://store.rakwireless.com/products/wisduo-breakout-board-rak3272-sip?utm_source=RAK3272SiPBreakoutBoard&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-  // Wisgate
+
+
+  // WisGate
+
   '/Product-Categories/WisGate/RAK7240/': {
     label: 'RAK7240 WisGate Edge Prime',
     img: '/assets/images/wisgate/rak7240/quickstart/RAK7240_buy.png',
@@ -344,6 +361,12 @@ export default {
     img: '/assets/images/wisgate/rak7289-v2/overview/RAK7289V2.png',
     store: 'https://store.rakwireless.com/products/wisgate-edge-pro-rak7289v2-rak7289cv2?utm_source=WisGateRAK7289V2&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisGate/RAK7391/': {
+    label: 'RAK7391 WisGate Connect',
+    img: '/assets/images/wisgate/rak7391/overview/RAK7391.png',
+    store: 'https://store.rakwireless.com/products/wisgate-connect-base-kit-rak7391?utm_source=WisGateRAK7391&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+
   
 
   // WisBlock
@@ -397,6 +420,11 @@ export default {
     label: 'WisBlock Unify Outdoor Enclosure 150x100x45',
     img: '/assets/images/wisblock/rakbox-uo150x100x45/overview/uo_buy.png',
     store: 'https://store.rakwireless.com/products/unify-enclosure-ip65-150-100-45?utm_source=RAKBox-UO150x100x45&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAKBox-UO180x130x60/': {
+    label: 'WisBlock Unify Outdoor Enclosure 180x130x60',
+    img: '/assets/images/wisblock/rakbox-uo180x130x60/overview/uo_buy.png',
+    store: 'https://store.rakwireless.com/products/unify-enclosure-ip65-180x130x60mm?utm_source=RAKBox-UO180x130x60&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAKBox-Accessories/': {
     label: 'WisBlock Unify Enclosure Accessories',
@@ -964,7 +992,6 @@ export default {
     img: '/assets/images/wisblock/rak12034/overview/RAK12034_buy.png',
     store: 'https://store.rakwireless.com/products/rak12034-9-axis-accelerometer?utm_source=RAK12034&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-  // WisBlock Solutions
   '/Product-Categories/WisBlock/RAK10700/': {
     label: 'RAK10700 WisBlock GNSS Tracker for LoRaWAN',
     img: '/assets/images/wisblock/rak10700/overview/overview.png',
@@ -976,7 +1003,63 @@ export default {
     store: 'https://store.rakwireless.com/collections/wisblock-solutions'
   },
 
+
+  // WisBlock Audio 
+
+  '/Product-Categories/WisBlock/RAK18003/': {
+    label: 'RAK18003 WisBlock Audio Interposer Module',
+    img: '/assets/images/wisblock/rak18003/overview/RAK18003_buy.png',
+    store: 'https://store.rakwireless.com/products/wisblock-audio-interposer-rak18003?utm_source=RAK18003&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK18030/': {
+    label: 'RAK18030 WisBlock Audio PDM Microphone Module',
+    img: '/assets/images/wisblock/rak18030/overview/RAK18030_buy.png',
+    store: 'https://store.rakwireless.com/products/pdm-microphone-sensor-20-20khz-knowles-spk0641ht4h-1-rak18030?utm_source=RAK18030&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+    '/Product-Categories/WisBlock/RAK18031/': {
+    label: 'RAK18031 WisBlock Audio PDM Microphone Module',
+    img: '/assets/images/wisblock/rak18031/overview/RAK18031_buy.png',
+    store: 'https://store.rakwireless.com/products/pdm-microphone-sensor-20-10khz-stmicroelectronics-mp34dt06j-rak18031?utm_source=RAK18031&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK18032/': {
+    label: 'RAK18032 WisBlock Audio Ultrasonic Microphone Module',
+    img: '/assets/images/wisblock/rak18032/overview/RAK18032_buy.png',
+    store: 'https://store.rakwireless.com/products/pdm-ultrasonic-microphone-sensor-knowles-sph0641lu4h-1-rak18032?utm_source=RAK18032&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK18033/': {
+    label: 'RAK18033 WisBlock Audio Stereo Microphone Module',
+    img: '/assets/images/wisblock/rak18033/overview/RAK18033_buy.png',
+    store: 'https://store.rakwireless.com/products/stereo-pdm-microphone-header-rak18033?utm_source=RAK18033&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK18040/': {
+    label: 'RAK18040 WisBlock Audio Analog Microphone to I2S Module',
+    img: '/assets/images/wisblock/rak18040/overview/RAK18040_buy.png',
+    store: 'https://store.rakwireless.com/products/analog-microphone-to-i2s-module-nuvoton-nau85l40b-rak18040?utm_source=RAK18040&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK18041/': {
+    label: 'RAK18041 WisBlock Audio Analog Microphone Module',
+    img: '/assets/images/wisblock/rak18041/overview/RAK18041_buy.png',
+    store: 'https://store.rakwireless.com/products/analog-unidirectional-microphone-kit-audio-kit-1a?utm_source=RAK18041AudioKit&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK18060/': {
+    label: 'RAK18060 WisBlock Audio Stereo Amplifier Module',
+    img: '/assets/images/wisblock/rak18060/overview/RAK18060_buy.png',
+    store: 'https://store.rakwireless.com/products/5-6w-stereo-amplifier-texas-instruments-tas2560-rak18060?utm_source=RAK18060&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK18061/': {
+    label: 'RAK18061 WisBlock Audio Mono Amplifier Module',
+    img: '/assets/images/wisblock/rak18061/overview/RAK18061_buy.png',
+    store: 'https://store.rakwireless.com/products/5-6w-amplifier-texas-instruments-tas2560-rak18061?utm_source=RAK18061&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK18080/': {
+    label: 'RAK18080 WisBlock Audio DSP Board Module',
+    img: '/assets/images/wisblock/rak18080/overview/RAK18080_buy.png',
+    store: 'https://store.rakwireless.com/products/wisblock-voice-processing-kit-audio-kit-3c?utm_source=RAK18080AudioKit&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+
+
   // Accessories
+
   '/Product-Categories/Accessories/RAKARJ14/': {
     label: 'RAKARJ14 915MHz White Blade Antenna',
     img: '/assets/images/accessories/rakarj14/White 915MHz Antenna Features.png',

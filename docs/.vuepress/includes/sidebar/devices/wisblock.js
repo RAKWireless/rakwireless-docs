@@ -1,6 +1,5 @@
 module.exports = {
 
-
   '/Product-Categories/WisBlock/RAK13801/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisBlock/RAK13801/Overview/',
@@ -187,16 +186,16 @@ module.exports = {
     sidebarDepth: 4
   },
   {
-    title: 'Datasheet',
-    path: '/Product-Categories/WisBlock/RAKBox-UO100x75x38/Datasheet/',
+    title: 'Installation Guide',
+    path: '/Product-Categories/WisBlock/RAKBox-UO100x75x38/Installation/',
     collapsable: false,
     nested: true,
     download: true,
     sidebarDepth: 4
   },
   {
-    title: 'Installation Guide',
-    path: '/Product-Categories/WisBlock/RAKBox-UO100x75x38/Installation/',
+    title: 'Datasheet',
+    path: '/Product-Categories/WisBlock/RAKBox-UO100x75x38/Datasheet/',
     collapsable: false,
     nested: true,
     download: true,
@@ -212,8 +211,25 @@ module.exports = {
     sidebarDepth: 4
   },
   {
+    title: 'Installation Guide',
+    path: '/Product-Categories/WisBlock/RAKBox-UO150x100x45/Installation/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
     title: 'Datasheet',
     path: '/Product-Categories/WisBlock/RAKBox-UO150x100x45/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+  ],
+  '/Product-Categories/WisBlock/RAKBox-UO180x130x60/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisBlock/RAKBox-UO180x130x60/Overview/',
     collapsable: false,
     nested: true,
     download: true,
@@ -221,7 +237,15 @@ module.exports = {
   },
   {
     title: 'Installation Guide',
-    path: '/Product-Categories/WisBlock/RAKBox-UO150x100x45/Installation/',
+    path: '/Product-Categories/WisBlock/RAKBox-UO180x130x60/Installation/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisBlock/RAKBox-UO180x130x60/Datasheet/',
     collapsable: false,
     nested: true,
     download: true,
@@ -2787,5 +2811,197 @@ module.exports = {
     sidebarDepth: 4
   }
   ],
+
+// WisBlock Audio Interposer
+
+'/Product-Categories/WisBlock/RAK18003/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK18003/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK18003/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+
+// WisBlock Audio Microphone
+
+
+'/Product-Categories/WisBlock/RAK18030/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK18030/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK18030/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+  '/Product-Categories/WisBlock/RAK18031/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK18031/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK18031/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/RAK18032/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK18032/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK18032/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/RAK18033/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK18033/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK18033/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/RAK18040/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK18040/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK18040/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/RAK18041/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK18041/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK18041/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+
+// WisBlock Audio Amplifier
+
+'/Product-Categories/WisBlock/RAK18060/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK18060/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK18060/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/RAK18061/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK18061/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK18061/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+// WisBlock Audio DSP
+
+  '/Product-Categories/WisBlock/RAK18080/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/RAK18080/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/RAK18080/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
 
 }
