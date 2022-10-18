@@ -13,17 +13,15 @@ posted: 09/15/2020 6:00 PM
 
 # RAKwireless - New Structure of the Documentation Center
 
+In the previous RAKwireless Documentation Center, there were some feedback regarding the interface wherein it was inconvenient to the majority. Those feedback were compiled that led to the launching of the improved documentation center. With the improvised documentation center, navigating through these documents is more convenient and user-friendly. Aside from that, RAK introduces you to new product categories that will aid you in finding the products and the information that you need. In line with this, a new category structure is implemented since the number of RAKwireless products is ever-increasing.
 
-In the previous RAKwireless Documentation Center, there were feedbacks regarding the interface wherein it was inconvenient to the majority. Those feedbacks were compiled that led to the launching of the improved documentation center. With the improvised documentation center, navigating through these documents is more convenient and user-friendly. Aside from that, RAK introduces you to new product categories that will aid you in finding the products and the information that you need. In line with this, a new category structure is implemented since the number of RAKwireless products is ever-increasing.
+That being stated, a possible question arises to like, "**I can't see the product names anymore, and to which category does my RAK5010 belong?**". To cut this possible confusion and question, the product categories are defined to provide you an overview and an insight on where could a certain product belongs to:
 
-That being stated, a possible question arises to like, "**_I can't see the product names anymore, and to which category does my RAK5010 belong?_**". To cut this possible confusion and question, the product categories are defined to provide you an overview and an insight on where could a certain product belongs to:
-
-<br>
-
-
-![Product Categories](/assets/rakwireless/product-categories/RAK-product-hierarchy-horizontal.png)
-
-<br>
+<rk-img
+src="/assets/rakwireless/product-categories/RAK-product-tree.png"
+  width="100%"
+  caption="RAKwireless Product Tree"
+/>
 
 * **WisGate**: for gateways
 * **WisNode**: a node in an enclosure with a predefined function like a GPS tracker

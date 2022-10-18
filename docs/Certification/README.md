@@ -139,7 +139,8 @@ The product certification indicates the device has been properly assessed where 
 
 
 
-#### Date and Information Security
+#### Data and Information Security
+
 ##### GDPR Compliant
 
 - [<b>Europe Data Protection and Privacy Rules</b>](https://gdpr.eu/)

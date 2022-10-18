@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains a comprehensive guide in setting up both your RAK7289 V2 with TTN and ChirpStack. 
+rak_desc: Contains a comprehensive guide in setting up both your RAK7289 V2 with TTN and ChirpStack.
 rak_img: /assets/images/wisgate/rak7289-v2/overview/RAK7289V2.png
 tags:
   - ChirpStack
@@ -16,15 +16,24 @@ next: ../Datasheet/
 
 ## The Things Network (TTN)
 
+### WisGateOS 2 Basics Station to TTNv3
 
-This section shows how to connect RAK7289 V2 WisGate Edge Pro to TTNv3.
+This tutorial illustrates how to configure and connect your RAK Edge Gateway V2 with WisGateOS 2 to a LoRaWAN Network Server by using the Basics Station protocol. For this example, it will be shown how to connect the gateway to TTNv3.
 
-To login, head on to [TTNv3 website ](https://eu1.cloud.thethings.network/console). If you already have a TTN account, you can use your The Things ID credentials to log in.
+
+:::tip 📝 NOTE:
+
+LoRa Basics Station is an implementation of a LoRa packet forwarder. This protocol simplifies the management of large-scale LoRaWAN Networks. More information about the Basics Station protocol can be found in the [explanatory document](https://lora-developers.semtech.com/build/software/lora-basics/lora-basics-for-gateways/) provided by Semtech.
+:::
+
+#### Registering the Gateway
+
+1. Log in first and head on to [TTNv3 website](https://eu1.cloud.thethings.network/console). If you already have a TTN account, you can use your The Things ID credentials to log in.
 
 <rk-img
-  src="/assets/images/wisgate/rak7268-v2/supported-lora-network-servers/ttn/1.ttn.png"
+  src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/ttn/1.ttn.png"
   width="100%"
-  caption="The Things Stack home page"
+  caption="The Things Stack login page"
 />
 
 
@@ -32,51 +41,64 @@ To login, head on to [TTNv3 website ](https://eu1.cloud.thethings.network/consol
 This tutorial is for the EU868 Frequency band.
 :::
 
-### Registering the Gateway
 
-1. To register a commercial gateway, choose **Register a gateway** (for new users that do not already have a registered gateway) or go to **Gateways > + Add gateway** (for users that have registered gateways before).
+2. To register a commercial gateway, choose **Register a gateway** (for new users that do not already have a registered gateway) or go to **Gateways** > **+ Add gateway** (for users that have registered gateways before).
 
 
 <rk-img
-  src="/assets/images/wisgate/rak7268-v2/supported-lora-network-servers/ttn/2.console.png"
+  src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/ttn/2.console-page.png"
   width="100%"
-  caption="Console page after successful login"
+  caption="Console Page after a successful login"
 />
 
-2. Fill in the required information:
 
-- **Owner** – Automatically filled by The Things Stack, based on your account or created organization. 
-- **Gateway ID** – This will be the unique ID of your gateway in the Network. Note that the ID must contain only lowercase letters, numbers, and dashes (-). 
-- **Gateway EUI** - A 64-bit extended unique identifier for your gateway. The gateway's EUI can be found either on the sticker on the casing or by going to the LoRa Network Settings page in the LoRa gateway menu accessible via the Web UI. Instructions on how to access your gateway via Web UI can be found in the product's [quick start guide](../Quickstart/).
-- **Gateway name** – A name for your gateway.
-- **Gateway description** (optional) - Optional gateway description; can also be used to save notes about the gateway.
-- **Gateway Server address** - The address of the gateway server to connect to.
-- Frequency plan - The frequency plan used by the gateway.
-- The other settings are optional and can be changed to satisfy your requirements.
+3. You will be redirected to the **Register gateway** page.
 
-:::tip 📝 NOTE:
-- This tutorial is based on using the EU868 frequency band, so the server address will be: `eu1.cloud.thethings.network`.
-- For this tutorial, Europe 863-870&nbsp;MHz (SF12 for RX2).
-:::
-
+4. In the **Gateway EUI** field, type the EUI of the gateway. The gateway's EUI can be found either on the sticker on the casing or by going to the **LoRa Network Settings** page in the **LoRa Gateway** menu accessible via the Web UI. Instructions on how to access your gateway via Web UI can be found in the product's [Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7289-V2/Quickstart/).
 
 <rk-img
-  src="/assets/images/wisgate/rak7268-v2/supported-lora-network-servers/ttn/3.add-gateway.png"
+  src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/ttn/3.register-gateway.png"
+  width="100%"
+  caption="Register gateway"
+/>
+
+
+5. After typing the EUI, click on **Confirm**. Additional fields will pop up. Fill in the following information:
+
+- **Gateway ID** – This will be the unique ID of your gateway in the Network. An ID based on the EUI is automatically generated. You can change it if you need. Note that the ID must contain only lowercase letters, numbers, and dashes (-).
+- **Gateway name** – Optionally, you can type a name for your gateway.
+- **Frequency plan** - The frequency plan used by the gateway.
+
+
+:::tip 📝 NOTE:
+- The other settings are optional and can be changed to satisfy your requirements.
+- For this tutorial, we will use Europe 863-870&nbsp;MHz (SF12 for RX2).
+:::
+
+<rk-img
+  src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/ttn/4.adding-gateway.png"
   width="100%"
   caption="Adding a gateway"
 />
 
 
-3. To register your gateway, scroll down and click **Create gateway**.
+6. To register your gateway, click **Register gateway**.
+
+<rk-img
+  src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/ttn/5.gateway-added.png"
+  width="100%"
+  caption="Successfully added a gateway"
+/>
+
 
 TTNv3 supports TLS server authentication and Client token, which requires a trust file and a key file to configure the gateway to successfully connect it to the network.
 
-### Generating the Token
+#### Generating the Token
 
 1. To generate a key file, from the **Overview page** of the registered gateway navigate to **API keys**.
 
 <rk-img
-  src="/assets/images/wisgate/rak7268-v2/supported-lora-network-servers/ttn/4.overview-page.png"
+  src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/ttn/6.overview-page.png"
   width="100%"
   caption="Overview page"
 />
@@ -86,87 +108,106 @@ TTNv3 supports TLS server authentication and Client token, which requires a trus
 
 
 <rk-img
-  src="/assets/images/wisgate/rak7268-v2/supported-lora-network-servers/ttn/5.api.png"
+  src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/ttn/7.api-key-page.png"
   width="100%"
-  caption="API Key page"
+  caption="API key page"
 />
 
 
-3. In the **Name field**, type the name of your key (for example – `lns_key`). Choose **Grant individual rights** and select **Link as Gateway to a Gateway for traffic exchange, i.e. read uplink and write downlink**.
+3. In the **Name field**, type the name of your key (for example - mykey). Choose **Grant individual rights** and select **Link as Gateway to a Gateway for traffic exchange, i.e. read uplink and write downlink**.
 
 
 <rk-img
-  src="/assets/images/wisgate/rak7268-v2/supported-lora-network-servers/ttn/6.api-key.png"
+  src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/ttn/8.generate-api-key.png"
   width="100%"
   caption="Generating an API key"
 />
 
 
-4. To generate the key, choose **Create API key**. The following window will pop up, telling you to copy the key you just generated. Click **I have copied** the key to proceed.
+4. To generate the key, choose **Create API key**. The following window will pop up, telling you to copy the key you just generated.
 
 
 <rk-img
-  src="/assets/images/wisgate/rak7268-v2/supported-lora-network-servers/ttn/7.generated-key.png"
-  width="60%"
+  src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/ttn/9.copy-api-key.png"
+  width="70%"
   caption="Copying the generated key"
 />
 
-:::warning ⚠️ WARNING
-Copy the key and save it in a `.txt` file (or other) because you will not be able to view or copy your key after that.
+
+:::warning ⚠️ WARNING:
+Copy the key and save it in a `.txt` file (or other), because you won’t be able to view or copy your key after that.
 :::
 
-###  Configure the Gateway
+5.  Click **I have copied the key** to proceed.
 
-1. To configure the gateway access it via the Web UI. To learn how to do that, head on to the [quick start guide](/Product-Categories/WisGate/RAK7268-V2/Quickstart/#product-configuration).
-2. Navigate to **LoRa®**. For **Work mode,** choose **Basics Station**.
-3. Click **Configure Basics Station server setup** to expand the Basics Station settings.
+### Configuring the Gateway
+
+1. To configure the gateway, access it via the Web UI. To learn how to do that, refer to the Quick Start Guide for each gateway.
+
+2. Navigate to **LoRa** > **Configuration** > **Work mode** and select **Basics station**.
 
 <rk-img
-  src="/assets/images/wisgate/rak7268-v2/supported-lora-network-servers/ttn/8.working-mode.png"
+  src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/ttn/10.working-mode.png"
   width="100%"
   caption="Changing the working mode"
 />
 
 
-4. To connect the gateway to TTNv3, in the Basics Station settings pane configure the following parameters:
+3. Expand the Basics Station settings by clicking **Configure Basics Station server setup.**
 
-- **Basics Station Server Type** – For server, choose LNS Server.
-- **Server URI** – This is the link to The Things Stack server. Note that, for this tutorial, you are connecting the gateway to the European cluster. For Europe fill in the following: `wss://eu1.cloud.thethings.network`.
-- **Server Port** – The LNS Server uses port **8887**. Type in **8887**.
-- **Authentication Mode** – For the drop-down menu, choose **TLS server authentication and Client token**. When selected, the trust and the token field will show up.
-- **Trust** – For the trust, you will use the **Let’s Encrypt ISRG ROOT X1 Trust certificate**. The file with the certificate can be found here.
-- **Token** - This is the generated API key. The key must start with Authorization: Example:
+
+<rk-img
+  src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/ttn/11.basics-station.png"
+  width="100%"
+  caption="Expanded Basics Station settings"
+/>
+
+
+4. To connect the gateway to TTNv3, configure the following parameters:
+
+- **Basics Station Server Type** – For server type, choose **LNS Server**.
+- **Server URL** – This is the link to The Things Stack server. Note that, for this tutorial, the gateway is connected to the European cluster. For Europe fill in the following:
+
+```
+wss://eu1.cloud.thethings.network
+```
+
+- **Server Port** – The LNS Server uses port 8887. Type in **8887**.
+- **Authentication Mode** – Choose **TLS server authentication and Client token**. When selected, the **Trust (CA Certificate)** and **Client token** fields will show up.
+- **Trust (CA Certificate)** – For trust, upload the **Let’s Encrypt ISRG ROOT X1 Trust** certificate by clicking **choose file**. The file with the certificate can be downloaded [directly](https://letsencrypt.org/certs/isrgrootx1.pem).
+- **Client Token** - This is the generated API key. The key must start with **Authorization:**.
+
+For example:
 
 ```
 Authorization: YOUR_API_KEY
 ```
 
 :::tip 📝 NOTE:
-Replace **YOUR_API_KEY** with the key generated previously. Have in mind that there should be a “space” between **Authorization:** and **YOUR_API_KEY**, as shown in the example.
+Replace **YOUR_API_KEY** with the key generated previously. Have in mind that there should be a **space** between **Authorization:** and **YOUR_API_KEY**, as shown in the example.
 :::
 
 <rk-img
-  src="/assets/images/wisgate/rak7268-v2/supported-lora-network-servers/ttn/9.basics-station.png"
+  src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/ttn/12.basics-station-settings.png"
   width="100%"
-  caption="LoRa Basics Station settings"
+  caption="Basics Station settings"
 />
 
 
-5. To save the changes, click **Save changes**.
+5. To save the changes, click **Save Changes**.
 
-You can now see that your gateway is connected to TTNv3 as Basics Station:
+Now, you can see that their gateway is connected to TTNv3 as Basics Station.
 
 <rk-img
-  src="/assets/images/wisgate/rak7268-v2/supported-lora-network-servers/ttn/10.successful-connection.png"
+  src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/ttn/13.successful-connection.png"
   width="100%"
   caption="Successful connection"
 />
 
 
-
 ## ChirpStack
 
-This guide will show you how to connect the RAKWireless Commercial V2 gateway running WisGateOS 2 to a ChirpStack Network server, whether it is installed in the local or external network. 
+This guide will show you how to connect the RAKWireless Commercial V2 gateway running WisGateOS 2 to a ChirpStack Network server, whether it is installed in the local or external network.
 
 The guide is not about how to install the ChirpStack, but how to configure the gateway to send data to it.
 
@@ -193,7 +234,7 @@ Each option is explained in a separate section.
 
 In this method, you will configure the gateway’s packet forwarder to send data to the ChirpStack Gateway Bridge.
 
-1. Start by accessing the gateway. To see how to access the gateway, refer to the [**Access the Gateway**](/Product-Categories/WisGate/RAK7268-V2/Quickstart/#access-the-gateway) section.
+1. Start by accessing the gateway. To see how to access the gateway, refer to the [**Access the Gateway**](/Product-Categories/wisgate/rak7289-v2/Quickstart/#access-the-gateway) section.
 
 
 <rk-img
@@ -203,9 +244,9 @@ In this method, you will configure the gateway’s packet forwarder to send data
 />
 
 
-2. Login using the set credentials you have set in the [**Access the Gateway**](/Product-Categories/WisGate/RAK7268-V2/Quickstart/#access-the-gateway) section.
+2. Login using the set credentials you have set in the [**Access the Gateway**](/Product-Categories/wisgate/rak7289-v2/Quickstart/#access-the-gateway) section.
 
-3. On the left side, head to **LoRa®**. By default, the gateway is configured to work as a Built-in network server. 
+3. On the left side, head to **LoRa®**. By default, the gateway is configured to work as a Built-in network server.
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpstack/2.network-server.png"
@@ -224,7 +265,7 @@ In this method, you will configure the gateway’s packet forwarder to send data
 />
 
 
-4. By default, when Packet Forwarder mode is chosen, the **Semtech UDP GWMP Protocol** is selected. 
+4. By default, when Packet Forwarder mode is chosen, the **Semtech UDP GWMP Protocol** is selected.
 
 5. To point the gateway to the ChirpStack network using the packet forwarder, you only need to set the **Server address** of the ChirpStack.
 
@@ -282,7 +323,7 @@ In this case, the ChirpStack is installed on a local Ubuntu machine with IP `192
 />
 
 
-4. By default, no gateways are registered. To register one, click **+ Create**. 
+4. By default, no gateways are registered. To register one, click **+ Create**.
 
 5. In the **General menu**, you need to set the gateway parameters.
 
@@ -374,14 +415,14 @@ In this method, you will configure the gateway’s built-in gateway bridge to se
 />
 
 
-The latest ChirpStack version supports both **MQTT for ChirpStack 3.x (JSON)** and **MQTT for ChirpStack 3.x (PROTOBUF).** 
+The latest ChirpStack version supports both **MQTT for ChirpStack 3.x (JSON)** and **MQTT for ChirpStack 3.x (PROTOBUF).**
 
 ::: tip 📝 NOTE
-If you want to use JSON protocol, you need to change the payload marshaler in the gateway bridge .toml file to “JSON”. 
+If you want to use JSON protocol, you need to change the payload marshaler in the gateway bridge .toml file to “JSON”.
 :::
 
 
-To configure the payload marshaler you need to access the configuration file of the gateway bridge. You can access it with the configuration file of the gateway bridge. You can also access it with an SSH connection. In this case, you will use the SSH client PuTTY to access the configuration files. 
+To configure the payload marshaler you need to access the configuration file of the gateway bridge. You can access it with the configuration file of the gateway bridge. You can also access it with an SSH connection. In this case, you will use the SSH client PuTTY to access the configuration files.
 
 6. Access the ChirpStack via PuTTY. You need to type the address of the ChirpStack server in the **Host name** field and click **Open**. In this case on IP 192.168.0.130.
 
@@ -416,7 +457,7 @@ For this example, you will choose **MQTT for ChirpStack 3. x (PROTOBUF).**
 
 10. By default, the built-in gateway bridge is pointed to the local Broker (127.0.0.1). To point the gateway to the ChirpStack network, you need to set the ChirpStack Broker address in the **MQTT Broker Address** field.
 
-In this case, the ChirpStack is installed locally on an Ubuntu machine on IP 192.168.0.130 (yours will be different). The default port that the MQTT Broker uses is 1883. 
+In this case, the ChirpStack is installed locally on an Ubuntu machine on IP 192.168.0.130 (yours will be different). The default port that the MQTT Broker uses is 1883.
 
 
 <rk-img
@@ -426,7 +467,7 @@ In this case, the ChirpStack is installed locally on an Ubuntu machine on IP 192
 />
 
 
-11.  Click **Save changes** to save the changes. 
+11.  Click **Save changes** to save the changes.
 
 12.  Now you need to register the gateway in the ChirpStack Network server. When Packet Forwarder mode is chosen, the **Semtech UDP GWMP Protocol** is selected by default. To register the gateway in ChirpStack, see **Registering gateway in ChirpStack Network server** section.
 
@@ -488,7 +529,7 @@ Here you need to point the gateway to the ChirpStack Network server:
 - **Server** – For server, choose LNS Server.
 - **URI** – the address of the ChirpStack server. In this case, the ChirpStack is installed locally on an Ubuntu machine on IP 192.168.0.130 (yours will be different). The URI will be `ws://192.168.0.130`.
 
-::: tip 📝 NOTE 
+::: tip 📝 NOTE
 The URL starts with ws:// in case a plain text connection is used. Using the wss:// scheme will trigger a TLS connection based on the `tc.{cert,key,trust}` credentials set.
 :::
 
@@ -569,7 +610,7 @@ Now your gateway is connected to the ChirpStack Network server.
 
 #### External ChirpStack
 
-In this case, the ChirpStack is installed on an external network. In the following example, the ChirpStack Network server is installed on the AWS cloud. A guide on how to install it on AWS can be found in the [Knowledge Hub](https://docs.rakwireless.com/Knowledge-Hub/Learn/Amazon-Web-Services/#installing-chirpstack) section. 
+In this case, the ChirpStack is installed on an external network. In the following example, the ChirpStack Network server is installed on the AWS cloud. A guide on how to install it on AWS can be found in the [Knowledge Hub](https://docs.rakwireless.com/Knowledge-Hub/Learn/Amazon-Web-Services/#installing-chirpstack) section.
 
 To access the ChirpStack web UI, you need to enable **TCP port 8080** and to make the gateway to communicate with the Network server you need to enable the following ports in the inbound rules of the instance:
 
@@ -592,7 +633,7 @@ Each option is explained in its own separate section.
 
 ##### Connecting the Gateway via Packet Forwarder
 
-In this method, you will configure the gateway’s packet forwarder to send data to the ChirpStack Gateway Bridge. 
+In this method, you will configure the gateway’s packet forwarder to send data to the ChirpStack Gateway Bridge.
 
 :::tip 📝 NOTE
 When connecting the gateway to the ChirpStack, you will need to open ports 1700 and 8080 to enable the communication between the gateway and the server and be able to access the ChirpStack.
@@ -604,7 +645,7 @@ When connecting the gateway to the ChirpStack, you will need to open ports 1700 
   caption="Opened 1700 UDP port"
 />
 
-1. Start by accessing the gateway. 
+1. Start by accessing the gateway.
 
 
 <rk-img
@@ -657,7 +698,7 @@ Now you need to register the gateway in the ChirpStack Network server.
 
 The steps for registering the gateway in ChirpStack are the same for all options.
 
-1. To register the gateway in the ChirpStack Network server, access the ChirpStack UI. To do that, open a web browser and type the server address of the ChirpStack with port 8080. 
+1. To register the gateway in the ChirpStack Network server, access the ChirpStack UI. To do that, open a web browser and type the server address of the ChirpStack with port 8080.
 
 ```
 <IP address of ChirpStack>:8080
@@ -685,7 +726,7 @@ The steps for registering the gateway in ChirpStack are the same for all options
   caption="ChirpStack dashboard"
 />
 
-4. On the left pane, head to **Gateways**. 
+4. On the left pane, head to **Gateways**.
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpstack/38.list.png"
@@ -753,7 +794,7 @@ When connecting the gateway to the ChirpStack, you will need to open ports 1883 
 />
 
 
-1. Start by accessing the gateway. 
+1. Start by accessing the gateway.
 
 
 <rk-img
@@ -794,7 +835,7 @@ When connecting the gateway to the ChirpStack, you will need to open ports 1883 
 />
 
 
-The latest ChirpStack version supports both **MQTT for ChirpStack 3.x (JSON)** and **MQTT for ChirpStack 3.x (PROTOBUF).** 
+The latest ChirpStack version supports both **MQTT for ChirpStack 3.x (JSON)** and **MQTT for ChirpStack 3.x (PROTOBUF).**
 
 :::tip 📝 NOTE
 If you want to use JSON protocol, you need to change the payload marshaler in the gateway bridge `.toml` file to json. By default, the marshaler is protobuf.
@@ -833,7 +874,7 @@ However, if you are using an earlier version of ChirpStack (V2), you will need t
 
 By default, the built-in gateway bridge is pointed to the local Broker (127.0.0.1). To point the gateway to the ChirpStack network, you need to set the ChirpStack Broker address in the **MQTT Broker Address** field.
 
-In this case, the ChirpStack is installed on an AWS cloud instance with public IP `18.156.176.220` (yours will be different). The default port that the MQTT Broker uses is 1883. 
+In this case, the ChirpStack is installed on an AWS cloud instance with public IP `18.156.176.220` (yours will be different). The default port that the MQTT Broker uses is 1883.
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpstack/50.configure.png"
@@ -877,7 +918,7 @@ When connecting the gateway to the ChirpStack, you will need to open TCP ports30
 />
 
 
-1. Start by accessing the gateway. 
+1. Start by accessing the gateway.
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpstack/54.login-page.png"

@@ -458,6 +458,24 @@ module.exports = {
       sidebarDepth: 4
     }
   ],
+  '/Product-Categories/Accessories/RAKARG22/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAKARG22/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAKARG22/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
     '/Product-Categories/Accessories/Antenna-Mounting-Kit/': [
       {
         title: 'Overview',

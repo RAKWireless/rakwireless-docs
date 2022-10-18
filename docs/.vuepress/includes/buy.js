@@ -916,6 +916,12 @@ export default {
     store: 'https://store.rakwireless.com/products/rak4631-lpwan-node?utm_source=RAK4631WisBlockLPWANModule&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
+  '/Product-Categories/WisBlock/RAK3372/': {
+    label: 'RAK3372 WisBlock Core Module',
+    img: '/assets/images/wisblock/rak3372/overview/RAK3372_buy.png',
+    store: 'https://store.rakwireless.com'
+  },
+
   '/Product-Categories/WisBlock/RAK16001/': {
     label: 'RAK16001 WisBlock ADC Module',
     img: '/assets/images/wisblock/rak16001/overview/RAK16001_buy.png',
@@ -1254,6 +1260,11 @@ export default {
     label: '863-870MHz 5.8dBi Fiberglass Antenna',
     img: '/assets/images/accessories/rakarg13/antenna-overview.png',
     store: 'https://store.rakwireless.com/collections/antennas-1/products/5-8dbi-fiber-glass-antenna?variant=41100705267910&utm_source=RAKARG13&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/Accessories/RAKARG22/': {
+    label: '3550-3700 MHz 10 dBi CBRS Band Antenna',
+    img: '/assets/images/accessories/rakarg22/cbrs-antenna_buy.png',
+    store: 'https://store.rakwireless.com/products/cbrs-omni-antennas-cables?utm_source=CBRS-Omni-Antenna&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/Accessories/SenseCAP-M1-Outdoor-Enclosure-Kit/': {
     label: 'SenseCAP M1 Outdoor Enclosure Kit',

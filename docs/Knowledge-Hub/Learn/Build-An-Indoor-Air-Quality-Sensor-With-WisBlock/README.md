@@ -203,7 +203,7 @@ Connect over USB to set up the LoRaWAN credentials. Use the DevEUI printed on th
 
 **Example AT commands:**
 
-```AT
+```LOG
 AT+NWM=1
 AT+NJM=1
 AT+BAND=10

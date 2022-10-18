@@ -14,8 +14,8 @@ tags:
 Thank you for choosing **RAK7268 WisGate Edge Lite 2** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
-* [Datasheet](../Datasheet/)
 * [Supported LoRa Network Servers](../Supported-LoRa-Network-Servers/)
+* [Datasheet](../Datasheet/)
 * [Use the MQTT Broker Like a Pro + Examples](/Knowledge-Hub/Learn/Use-the-MQTT-Broker-Like-a-Pro/)
 * [AWS IoT Core Integration](/Knowledge-Hub/Learn/AWS-IoT-Core-Integration/)
 * [RAK7268 Latest Firmware](https://downloads.rakwireless.com/LoRa/RAK7268/Firmware/RAK7268_Latest_Firmware.zip)
@@ -32,7 +32,7 @@ The open-source software for the management and configuration of this gateway de
 
 RAK7268 also supports the MQTT Bridge function, can use the MQTT integrated into third-party platforms.
 
-RAK7268 is especially suitable for small and medium-sized deployment scenarios in industry applications, saving the additional cost for server and R&D investment, and has the advantages of high execution efficiency. 
+RAK7268 is especially suitable for small and medium-sized deployment scenarios in industry applications, saving the additional cost for server and R&D investment, and has the advantages of high execution efficiency.
 
 ## Product Features
 
