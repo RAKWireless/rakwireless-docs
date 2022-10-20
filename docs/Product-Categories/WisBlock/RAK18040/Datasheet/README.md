@@ -38,7 +38,7 @@ next: false
 ### Overview
 
 <rk-img
-  src="/assets/images/wisblock/rak18040/datasheet/RAK18040_front_back.png"
+  src="/assets/images/wisblock/rak18040/datasheet/rak18040.png"
   width="60%"
   caption="RAK18040 WisBlock Audio Analog Microphone to I2S Module"
 />

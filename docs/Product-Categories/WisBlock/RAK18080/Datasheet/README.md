@@ -36,7 +36,7 @@ next: false
 ### Overview
 
 <rk-img
-  src="/assets/images/wisblock/rak18080/datasheet/RAK18080_front_back.png"
+  src="/assets/images/wisblock/rak18080/datasheet/rak18080.png"
   width="65%"
   caption="RAK18080 WisBlock Audio DSP Board Module top and bottom view"
 />

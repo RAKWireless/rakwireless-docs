@@ -41,8 +41,8 @@ The RAK18060 can drive the speaker to play audio through the input I2S signals. 
 ### Overview
 
 <rk-img
-  src="/assets/images/wisblock/rak18060/datasheet/RAK18060_front_back.png"
-  width="70%"
+  src="/assets/images/wisblock/rak18060/datasheet/rak18060.png"
+  width="65%"
   caption="RAK18060 WisBlock Audio Stereo Amplifier Module top and bottom view"
 />
 #### Mounting  
