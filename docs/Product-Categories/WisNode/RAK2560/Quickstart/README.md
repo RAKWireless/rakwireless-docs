@@ -97,7 +97,7 @@ Using the 12&nbsp;V<sub>DC</sub> adapter provided with the Sensor Hub is recomme
 6. Automatic synchronization will start, wait until the process is complete.
 
 <rk-img
-  src="/assets/images/wisnode/rak2560/quickstart/device-syncing.png"
+  src="/assets/images/wisnode/rak2560/quickstart/device-sync.png"
   width="55%"
   caption="Device syncing"
 />

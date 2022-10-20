@@ -17,7 +17,7 @@ Thank you for choosing **RAKBox-UO100x75x38** for your awesome IoT project! 🎉
 
 - [Datasheet](../Datasheet/)
 - [Installation Guide](../Installation/)
-- [RAKBox-UO100x75x38 3D Model](https://downloads.rakwireless.com/3D_File/3D_RAKBox-UO100x75x38.stp)
+- [RAKBox-UO100x75x38 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/Unify%20Enclosure/3D_RAKBox-UO100x75x38.step)
 
 ## Product Description
 RAKBox-UO100x75x38 is a small-sized **WisBlock Unify Enclosure**. It is an IP65-rated protection class that allows the unit to be used outdoors while protecting the internal components from dust and water. It is also a weatherproof fire retardant enclosure made from ABS plastic specially designed for WisBlock Products. 

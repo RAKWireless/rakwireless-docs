@@ -73,7 +73,7 @@ RAK18040 has two board-to-board (BTB) connectors, one for the interposer board a
 ##### WisBlock Connector
 
 <rk-img
-  src="/assets/images/wisblock/rak18040/datasheet/rak18040-pinouts.png"
+  src="/assets/images/wisblock/rak18040/datasheet/rak18040-pinout.png"
   width="70%"
   caption="RAK18040 WisBlock Connector pinout"
 />

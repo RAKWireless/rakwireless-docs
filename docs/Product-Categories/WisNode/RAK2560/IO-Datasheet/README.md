@@ -43,7 +43,7 @@ The **Probe IO** dimensions are 74&nbsp;x&nbsp;33&nbsp;x&nbsp;26&nbsp;mm. It is 
 
 <rk-img
   src="/assets/images/wisnode/rak2560/io-datasheet/probe-io-dimensions.png"
-  width="45%"
+  width="65%"
   caption="RAK2560 WisNode Probe IO dimensions"
 />
 
@@ -53,7 +53,7 @@ RAK2560's **Probe IO** uses MCU STM32L051C8 for a control center. The **Probe IO
 
 <rk-img
   src="/assets/images/wisnode/rak2560/io-datasheet/block-diagram.png"
-  width="55%"
+  width="80%"
   caption="RAK2560 WisNode Probe IO block diagram"
 />
 
@@ -166,7 +166,7 @@ If you want to add a Probe IO to your setup, the Sensor Hub must be supplied by 
 :::
 
 <rk-img
-  src="/assets/images/wisnode/rak2560/io-datasheet/connection-schematics.jpg"
+  src="/assets/images/wisnode/rak2560/io-datasheet/connection-schematics.png"
   width="90%"
   caption="RAK2560 WisNode Probe IO connection schematics"
 />

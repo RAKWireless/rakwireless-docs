@@ -99,7 +99,7 @@ The hardware specification is categorized into five (5) parts. It shows the chip
 The RAK18030 WisBlock Audio PDM Microphone comprises a standard WisBlock connector. The WisBlock connector allows the RAK18030 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 5**.
 
 <rk-img
-  src="/assets/images/wisblock/rak18030/datasheet/rak18030-pinouts.png"
+  src="/assets/images/wisblock/rak18030/datasheet/rak18030-pinout.png"
   width="70%"
   caption="RAK18030 WisBlock Module pinout diagram"
 />

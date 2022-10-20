@@ -42,7 +42,7 @@ The RAK18061 can drive the speaker to play audio through the input I2S signals. 
 ### Overview
 
 <rk-img
-  src="/assets/images/wisblock/rak18061/datasheet/RAK18061_front_back.png"
+  src="/assets/images/wisblock/rak18061/datasheet/rak18061-front-back.png"
   width="60%"
   caption="RAK18061 WisBlock Audio Mono Amplifier Module top and bottom view"
 />

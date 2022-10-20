@@ -38,16 +38,18 @@ The **Sensor Probe** could not be used as a standalone product. You need the RAK
 The **Sensor Probe** dimensions are 90&nbsp;x&nbsp;30&nbsp;mm. The body has a cylindrical shape. There is one physical port for connection to the Sensor Hub with a 50&nbsp;cm cable length. The **Sensor Probe** is IP66-rated, suitable for outdoor use, with GORE venting. The device is designed to meet the UL/EN60950-22 standard.
 
 <br>
+
 <rk-img
-  src="/assets/images/wisnode/rak2560/probe-datasheet/sensor-probe-dimensions.jpg"
-  width="40%"
+  src="/assets/images/wisnode/rak2560/probe-datasheet/sensor-probe-dimensions.png"
+  width="60%"
   caption="RAK2560 WisNode Sensor Probe dimensions"
 />
+
 <br>
 
 <rk-img
-  src="/assets/images/wisnode/rak2560/probe-datasheet/venting-position.jpg"
-  width="15%"
+  src="/assets/images/wisnode/rak2560/probe-datasheet/venting-position.png"
+  width="35%"
   caption="RAK2560 WisNode Sensor Probe venting position"
 />
 
@@ -56,7 +58,7 @@ The **Sensor Probe** dimensions are 90&nbsp;x&nbsp;30&nbsp;mm. The body has a cy
 RAK2560's **Sensor Probe** uses MCU STM32L051C8 for a control center. It hosts up to two (2) WisBlock sensors.
 
 <rk-img
-  src="/assets/images/wisnode/rak2560/probe-datasheet/block-diagram.jpg"
+  src="/assets/images/wisnode/rak2560/probe-datasheet/block-diagram.png"
   width="75%"
   caption="RAK2560 WisNode Sensor Probe block diagram"
 />
@@ -148,6 +150,6 @@ If you want to add a Probe IO to your setup, the Sensor Hub must be supplied by 
 
 <rk-img
   src="/assets/images/wisnode/rak2560/probe-datasheet/connection-schematics.jpg"
-  width="80%"
+  width="90%"
   caption="RAK2560 WisNode Sensor connection schematics"
 />
