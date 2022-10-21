@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisblock/rak18080/overview/RAK18080_home.png
-rak_desc: RAK18080 is a professional audio processing module, part of the WisBlock Audio Series. The RAK18080 is designed based on DBM10L from DSPG, which can enable AI/ML, voice, and sensor applications.
+rak_desc: RAK18080 is a professional audio processing module, part of the WisBlock Audio Series. The RAK18080 is designed based on DBM10L by Synaptics, which can enable AI/ML, voice, and sensor applications.
 rak_grp: [wisblock, dsp]
 prev: ../../
 next: ../Datasheet/
@@ -26,7 +26,7 @@ Thank you for choosing **RAK18080 WisBlock Audio DSP Board Module** in your awes
 ## Product Description
 
 
-**RAK18080** is a professional audio processing module, part of the WisBlock Audio Series. The RAK18080 is designed based on DBM10L from DSPG. The DBM10L is an Artificial Intelligence (AI) and Machine Learning (ML) SoC based on a digital processor (DSP) optimized for voice and sensor processing. DBM10L can enable AI/ML, voice, and sensor applications, including Voice Trigger (VT), Voice Authentication (VA), Voice Command (VC), Noise Reduction (NR), Acoustic Echo Cancellation (AEC), and Sound Event Detection (SED). When used with **WisBlock Audio Stack**, RAK18080 can do VT and provide I2S data to the speaker.
+**RAK18080** is a professional audio processing module, part of the WisBlock Audio Series. The RAK18080 is designed based on DBM10L by Synaptics. The DBM10L is an Artificial Intelligence (AI) and Machine Learning (ML) SoC based on a digital processor (DSP) optimized for voice and sensor processing. DBM10L can enable AI/ML, voice, and sensor applications, including Voice Trigger (VT), Voice Authentication (VA), Voice Command (VC), Noise Reduction (NR), Acoustic Echo Cancellation (AEC), and Sound Event Detection (SED). When used with **WisBlock Audio Stack**, RAK18080 can do VT and provide I2S data to the speaker.
 
 
 ## Product Features
