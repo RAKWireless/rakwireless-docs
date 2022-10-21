@@ -4,6 +4,7 @@ rak_img: /assets/images/knowledge-hub/tutorials/noise-level-alarm-guide/noise-le
 rak_desc: This guide provides a step-by-step tutorial on how to create a noise level alarm using WisBlock hardware such as RAK19007, RAK4631, RAK18000, and RAK18030.
 tags:
   - Tutorial
+  - WisBlock Audio
   - WisBlock
   - RAK19007
   - RAK4631
