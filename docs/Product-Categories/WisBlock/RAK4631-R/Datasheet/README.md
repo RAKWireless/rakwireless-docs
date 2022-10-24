@@ -123,11 +123,11 @@ Detailed information about the RAK4631-R BLE and LoRa antenna can be found on th
 
 | **Symbol** | **Description**               | **Min.** | **Nom.** | **Max.** | **Unit** |
 | ---------- | ----------------------------- | -------- | -------- | -------- | -------- |
-| VBAT_SX    | LoRa chip supply voltage      | -0.5     |          | 3.9      | V        |
-| VBAT_SX_IO | LoRa chip supply for I/O pins | -0.5     |          | 3.9      | V        |
-| VDD_NRF    | MCU power supply              | -0.3     |          | 3.9      | V        |
-| VBUS       | USB supply voltage            | -0.3     |          | 5.8      | V        |
-| VBAT_NRF   | MCU high voltage power supply | -0.3     |          | 5.8      | V        |
+| VBAT_SX    | LoRa chip supply voltage      | -0.5     | -        | 3.9      | V        |
+| VBAT_SX_IO | LoRa chip supply for I/O pins | -0.5     | -        | 3.9      | V        |
+| VDD_NRF    | MCU power supply              | -0.3     | -        | 3.9      | V        |
+| VBUS       | USB supply voltage            | -0.3     | -        | 5.8      | V        |
+| VBAT_NRF   | MCU high voltage power supply | -0.3     | -        | 5.8      | V        |
 
 
 ##### Recommended Operating Conditions
@@ -138,7 +138,7 @@ Detailed information about the RAK4631-R BLE and LoRa antenna can be found on th
 | VBAT_SX_IO | SX1262 supply for I/O pins         | 2.0      | 3.3      | 3.7      | V        |
 | VDD_NRF    | NRF52840 power supply              | 2.0      | 3.3      | 3.6      | V        |
 | VBUS       | VBUS USB supply voltage            | 4.35     | 5.0      | 5.5      | V        |
-| VBAT_NRF   | NRF52840 high voltage power supply | 2.5      |          | 5.5      | V        |
+| VBAT_NRF   | NRF52840 high voltage power supply | 2.5      | -        | 5.5      | V        |
 
 ##### Schematic Diagram
 
@@ -158,6 +158,25 @@ Detailed information about the RAK4631-R BLE and LoRa antenna can be found on th
 
 - **Power Up Automatic Reset**: The breakout module has a power-up automatic reset circuit, and the schematic shows the automatic reset mechanism. This module also can be reset through the WisBlock Base reset pin.
 
+##### Setup of the SX1262
+
+Information to write custom firmware for the RAK4630.  This shows the internal connection between the RAK4630 and required information when initializing the SX1262 LoRa Transceiver.      
+
+| nRF52840 GPIO	| SX1262 pin | function                          |
+| ------------- | ---------- | --------------------------------- |
+| P1.10         | NSS        | SPI NSS                           | 
+| P1.11         | SCK        | SPI CLK                           |
+| P1.12         | MOSI       | SPI MOSI                          |
+| P1.13         | MISO       | SPI MISO                          |
+| P1.14         | BUSY       | BUSY signal                       |
+| P1.15         | DIO1       | DIO1 event interrupt              |
+| P1.06         | NRESET     | NRESET manual reset of the SX1262 |
+
+Important for successful SX1262 initialization:
+- Setup DIO2 to control the antenna switch
+- Setup DIO3 to control the TCXO power supply
+- Setup the SX1262 to use it's DCDC regulator and not the LDO
+- RAK4630 schematics show GPIO P1.07 connected to the antenna switch, but it should not be initialized, as DIO2 will do the control of the antenna switch
 
 #### Mechanical Characteristics
 

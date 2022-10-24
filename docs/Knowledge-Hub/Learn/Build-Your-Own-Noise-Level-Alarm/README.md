@@ -10,11 +10,12 @@ tags:
   - RAK4631
   - RAK18000
   - RAK18030
+  - Arduino
 header:
   title: Build Your Own Noise Level Alarm
-  caption: by <b>Christopher Mendez Martinez</b>
+  caption: by <b>Christopher Méndez</b>
   img: /assets/images/knowledge-hub/banners/high-power-wifi-module-and-power-line-communications.jpg
-posted: 
+posted: 21/10/2022 05:00 PM
 ---
 
 # Build Your Own Noise Level Alarm
@@ -25,7 +26,7 @@ This guide will teach you how to create a noise level alarm using WisBlock.
 
 If you are a visual learner, yan can watch the [video tutorial](https://youtu.be/jbLdFPcE4rc) instead.
 
-## Hardware Components
+## Hardware
 
 To carry out this test you need some WisBlock hardware:
 
@@ -33,9 +34,12 @@ To carry out this test you need some WisBlock hardware:
 - [RAK4631 (nRF52840) core](https://store.rakwireless.com/products/rak4631-lpwan-node?utm_source=RAK4631WisBlockLPWANModule&utm_medium=Document&utm_campaign=BuyFromStore)
 - [RAK18000](https://store.rakwireless.com/products/wisblock-microphone-module-rak18000?utm_source=WisBlockRAK18000&utm_medium=Document&utm_campaign=BuyFromStore) or [RAK18030](https://store.rakwireless.com/products/pdm-microphone-sensor-20-20khz-knowles-spk0641ht4h-1-rak18030?utm_source=RAK18030&utm_medium=Document&utm_campaign=BuyFromStore) PDM microphone
 
-This is also compatible with the ESP32 and RP2040 cores
 
-## Software Components
+:::tip 📝 NOTE
+This is also compatible with the ESP32 and RP2040 cores.
+:::
+
+## Software
 
 - **Arduino IDE**
 
@@ -43,12 +47,21 @@ Follow the [installation guide of BSP](https://docs.rakwireless.com/Knowledge-Hu
 
 ## WisBlock Assembly
 
-To put together the different modules, you need to connect them to the respective slots in the base board. For further information, refer to the [Assembling and Disassembling](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK4631/Quickstart/#assembling-and-disassembling-of-wisblock-modules) section in the Quick Start Guide.
+To put together the different modules, you need to connect them to the respective slots in the base board. For further information, refer to the [Assembling and Disassembling](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK19007/Quickstart/#assembling-a-wisblock-module) section in the Quick Start Guide.
+
+
+<rk-img
+  src="/assets/images/knowledge-hub/tutorials/noise-level-alarm-guide/mounting-sketch.png"
+  width="50%"
+  caption="Assembling the core to the base board"
+/>
+
+<br>
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/noise-level-alarm-guide/nla-assembly-photo.png"
   width="80%"
-  caption="Assembling the module to the base board"
+  caption="Assembling the components"
 />
 
 

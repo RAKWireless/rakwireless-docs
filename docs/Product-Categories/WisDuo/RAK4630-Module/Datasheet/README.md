@@ -111,6 +111,25 @@ The hardware specification is categorized into three parts. It covers the RF, el
 | 43          | VDD_NRF                         |
 | 44          | VBAT_NRF                        |
 
+##### Setup of the SX1262
+
+Information to write custom firmware for the RAK4630.  This shows the internal connection between the RAK4630 and required information when initializing the SX1262 LoRa Transceiver.      
+
+| nRF52840 GPIO	| SX1262 pin | function                          |
+| ------------- | ---------- | --------------------------------- |
+| P1.10         | NSS        | SPI NSS                           | 
+| P1.11         | SCK        | SPI CLK                           |
+| P1.12         | MOSI       | SPI MOSI                          |
+| P1.13         | MISO       | SPI MISO                          |
+| P1.14         | BUSY       | BUSY signal                       |
+| P1.15         | DIO1       | DIO1 event interrupt              |
+| P1.06         | NRESET     | NRESET manual reset of the SX1262 |
+
+Important for successful SX1262 initialization:
+- Setup DIO2 to control the antenna switch
+- Setup DIO3 to control the TCXO power supply
+- Setup the SX1262 to use it's DCDC regulator and not the LDO
+- RAK4630 schematics show GPIO P1.07 connected to the antenna switch, but it should not be initialized, as DIO2 will do the control of the antenna switch
 
 #### RF Characteristics
 
