@@ -10,7 +10,7 @@ header:
   title: Multi-RAK Gateway Mesh
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/multi-rak-gateway-mesh.jpg
-posted: 2/29/2020 10:30 AM
+posted: 02/29/2020 10:30 AM
 ---
 
 # Multi-RAK Gateway Mesh
@@ -56,7 +56,7 @@ We will first set-up the built-in LoRa  network server. Before going through the
  For other settings and detailed documentation for this section, browse the [LoRa Network](/Knowledge-Hub/Learn/Resources/Web-Management-Platform/#lora®-network) section of the Web Management Platform document.
 :::
 
-1. Navigate through LoRa Network Server tab -> General and turn-on this feature using the Enable slider. 
+1. Navigate through LoRa Network Server tab -> General and turn-on this feature using the Enable slider.
 
 2. Select your Region (Frequency Band). For this demonstration, we are going to use **EU863-870 frequency band**.
 

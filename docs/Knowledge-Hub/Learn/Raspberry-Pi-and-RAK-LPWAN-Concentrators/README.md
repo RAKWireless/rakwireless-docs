@@ -1,7 +1,7 @@
 ---
 sidebar: false
 rak_img: /assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/wishat.jpg
-rak_desc: This guide will show you how to set up the Raspberry Pi and make it work with the RAK LPWAN HATs  
+rak_desc: This guide will show you how to set up the Raspberry Pi and make it work with the RAK LPWAN HATs
 tags:
   - Tutorial
   - WisLink
@@ -9,12 +9,12 @@ header:
   title: Quick Start Guide for Raspberry Pi and RAK LPWAN Concentrators
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/general-banner.jpg
-posted: 6/17/2022 2:29 PM
+posted: 06/17/2022 2:29 PM
 ---
 
 # Quick Start Guide for Raspberry Pi and RAK LPWAN Concentrators
 
-This guide will show you how to set up the Raspberry Pi and make it work with the RAK LPWAN HATs. The setup of the Raspberry Pi consists of three parts: 
+This guide will show you how to set up the Raspberry Pi and make it work with the RAK LPWAN HATs. The setup of the Raspberry Pi consists of three parts:
 
 1. Flashing the Raspbian OS to the SD card and access option
 2. Configuring the Raspberry Pi interfaces
@@ -45,7 +45,7 @@ Start with downloading and installing [balenaEtcher](https://www.balena.io/etche
 
 Next, download the [latest](https://www.raspberrypi.com/software/operating-systems/) Raspberry Pi OS. The **Raspberry Pi OS Lite** is recommended as it is more lightweight than the Desktop version.
 
-Insert the SD card into your PC/laptop and open **balenaEtcher**. Click on **Flash from file**, browse and select the Raspberry Pi OS you have downloaded. 
+Insert the SD card into your PC/laptop and open **balenaEtcher**. Click on **Flash from file**, browse and select the Raspberry Pi OS you have downloaded.
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/2.png"
@@ -53,7 +53,7 @@ Insert the SD card into your PC/laptop and open **balenaEtcher**. Click on **Fla
   caption="Flashing Raspberry Pi OS"
 />
 
-BalenaEtcher should automatically recognize the SD card. If not, click on **Select target** and choose your SD card. 
+BalenaEtcher should automatically recognize the SD card. If not, click on **Select target** and choose your SD card.
 
 Once the Raspberry Pi OS and SD card are selected, click on **Flash**. Flashing will then start.
 
@@ -93,7 +93,7 @@ This setup does not require a monitor or any input devices. The Raspberry Pi can
 
 ## Setup the SD card
 
-Assuming you have flashed the latest Raspberry Pi OS, insert the SD card into your PC/laptop. Open the root of the directory of the card. 
+Assuming you have flashed the latest Raspberry Pi OS, insert the SD card into your PC/laptop. Open the root of the directory of the card.
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/5.png"
@@ -122,7 +122,7 @@ Change **YOUR_COUNTRY** with the abbreviation of your country. [Here](https://en
 Also, change **YOUR_WIFI_SSID** with the SSID of your network and **YOUR_WIFI_PASSWORD** with the password of that network.
 
 :::tip 📝 NOTE
-Type the SSID and Password in the quotes (" "). 
+Type the SSID and Password in the quotes (" ").
 :::
 
 <rk-img
@@ -135,7 +135,7 @@ Save and exit the text file.
 
 If you want to use the Ethernet interface, plug the Raspberry Pi directly into your wired network. The DHCP server of the router will assign an IP to the Raspberry Pi.
 
-Apart from the `wpa_supplicant.conf` file, also create an empty file (with no extension) named `ssh`. This will enable the SSH interface on the Raspberry Pi. 
+Apart from the `wpa_supplicant.conf` file, also create an empty file (with no extension) named `ssh`. This will enable the SSH interface on the Raspberry Pi.
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/7.png"
@@ -145,7 +145,7 @@ Apart from the `wpa_supplicant.conf` file, also create an empty file (with no ex
 
 Now you can eject the SD card and insert it into the Raspberry Pi. Once Pi is booted, it will connect to the WI-FI network. The DHCP server will assign an IP and you can access the Pi at that address.
 
-To find the assigned IP, you can either go to your router’s web UI in the DHCP clients menu or use a program (in this example [Advanced IP Scanner](https://www.advanced-ip-scanner.com/)) to scan the network. 
+To find the assigned IP, you can either go to your router’s web UI in the DHCP clients menu or use a program (in this example [Advanced IP Scanner](https://www.advanced-ip-scanner.com/)) to scan the network.
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/8.png"
@@ -176,7 +176,7 @@ You can now head to Configuring the Raspberry Pi's Interfaces
 
 # General Setup
 
-In the general Raspberry Pi setup, you will learn how to setup the Pi with the help of a monitor and a keyboard. 
+In the general Raspberry Pi setup, you will learn how to setup the Pi with the help of a monitor and a keyboard.
 
 ## Requirements
 
@@ -257,7 +257,7 @@ While you are in the **3 Interface Options** menu, enable the following interfac
 - **SPI** – Serial Peripheral Interface. This enables the communication between the Raspberry Pi and the concentrator with an SPI interface.
 
 :::tip 📝 NOTE
-If you are going to use an LPWAN concentrator with a USB interface and a [mPCIe to USB Board](https://store.rakwireless.com/products/mpcie-to-usb-board), you can skip enabling this interface. 
+If you are going to use an LPWAN concentrator with a USB interface and a [mPCIe to USB Board](https://store.rakwireless.com/products/mpcie-to-usb-board), you can skip enabling this interface.
 :::
 
 <rk-img
@@ -266,7 +266,7 @@ If you are going to use an LPWAN concentrator with a USB interface and a [mPCIe 
   caption="Enable SPI Interface"
 />
 
-- **I2C** – enables the Inter-Integrated Circuit (I2C) interface. The I2C enables GPS communication. 
+- **I2C** – enables the Inter-Integrated Circuit (I2C) interface. The I2C enables GPS communication.
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/18.png"
@@ -274,7 +274,7 @@ If you are going to use an LPWAN concentrator with a USB interface and a [mPCIe 
   caption="Enable SPI Interface"
 />
 
-- Disable **Login Shell over Serial** and enable **Serial port hardware** – here you disable Shell over Serial and enable the Serial port as it might cause a collision between the interfaces. 
+- Disable **Login Shell over Serial** and enable **Serial port hardware** – here you disable Shell over Serial and enable the Serial port as it might cause a collision between the interfaces.
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/19.png"
@@ -318,7 +318,7 @@ Enter the SSID of your Wireless Network and then the password of that network.
   caption="Wi-Fi Setup"
 />
 
-Once done with configuring the Raspberry Pi, select **Finish**. The Pi will require a reboot to apply the changes. 
+Once done with configuring the Raspberry Pi, select **Finish**. The Pi will require a reboot to apply the changes.
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/24.png"
@@ -330,7 +330,7 @@ After the reboot, the session in the terminal will be closed. You need to log in
 
 # Install rak_common_for_gateway stack
 
-Login in the Raspberry Pi. 
+Login in the Raspberry Pi.
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/25.png"
@@ -385,11 +385,11 @@ When the installation is complete, you will see the following on your screen.
   caption="Successfully Installed Stack"
 />
 
-Now you can proceed with connecting the gateway to a LoRaWAN Network Server (LNS). 
+Now you can proceed with connecting the gateway to a LoRaWAN Network Server (LNS).
 
 You can refer to each RAK concentrator documentation below:
 
-1. [RAK2245](https://docs.rakwireless.com/Product-Categories/WisLink/RAK2245-Pi-HAT/Overview/) 
-2. [RAK2247](https://docs.rakwireless.com/Product-Categories/WisLink/RAK2247/Overview/) 
-3. [RAK2287](https://docs.rakwireless.com/Product-Categories/WisLink/RAK2287/Overview/) 
-4. [RAK5146](https://docs.rakwireless.com/Product-Categories/WisLink/RAK5146/Overview/) 
+1. [RAK2245](https://docs.rakwireless.com/Product-Categories/WisLink/RAK2245-Pi-HAT/Overview/)
+2. [RAK2247](https://docs.rakwireless.com/Product-Categories/WisLink/RAK2247/Overview/)
+3. [RAK2287](https://docs.rakwireless.com/Product-Categories/WisLink/RAK2287/Overview/)
+4. [RAK5146](https://docs.rakwireless.com/Product-Categories/WisLink/RAK5146/Overview/)

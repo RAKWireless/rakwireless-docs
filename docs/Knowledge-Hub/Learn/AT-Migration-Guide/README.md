@@ -1,7 +1,7 @@
 ---
 sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/rui3.png
-rak_desc: This document helps the migration of RAK3172 from non-RUI to RUI3 development.  
+rak_desc: This document helps the migration of RAK3172 from non-RUI to RUI3 development.
 tags:
   - Tutorial
   - WisDuo
@@ -11,7 +11,7 @@ header:
   title: AT Command Migration Guide of RAK3172 to RUI3
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/rui3.jpg
-posted: 4/18/2020 8:30 AM
+posted: 04/18/2020 8:30 AM
 ---
 
 # AT Command Migration Guide of RAK3172 to RUI3 (RAKwireless Unified Interface V3)
@@ -60,7 +60,7 @@ There are few changes related to the RAK3172 baud rate.
 
 ### RAK DFU baud rate
 
-In the RAK DFU program the default speed for RUI3 is 115200 baud. 
+In the RAK DFU program the default speed for RUI3 is 115200 baud.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/at-migration-guide/rak-dfu-115200.png"
@@ -68,7 +68,7 @@ In the RAK DFU program the default speed for RUI3 is 115200 baud.
   caption="RUI3 RAK DFU Baud Rate"
 />
 
-:::warning ⚠️ WARNING   
+:::warning ⚠️ WARNING
 If `AT+BAUD` command is used to change the baud rate other than the default 115200, the new baud rate configured must be the baud rate to be used during firmware update using RAK DFU Tool.
 :::
 
@@ -136,7 +136,7 @@ AT+SEND=2:12345678
 OK
 +EVT:SEND_CONFIRMED_OK
 ```
-The example below shows an unsuccessful LoRaWAN join attempt on old RAK3172 firmware. The event message is 
+The example below shows an unsuccessful LoRaWAN join attempt on old RAK3172 firmware. The event message is
 `JOIN FAILED` with space as delimiter.
 ```{4}
 AT+JOIN=1:0:10:8
@@ -212,7 +212,7 @@ This command allows the user to access the network identifier (NetID). The ident
 #### AT+BTIME: Beacon Time
 This command allows the user to access the current beacon time.
 
-#### AT+ENCKEY: P2P Encryption Key 
+#### AT+ENCKEY: P2P Encryption Key
 This command sets the P2P encryption key. The key is 16 digit length representing 8 hexadecimal numbers.
 
 #### AT+ENCRY: Enable P2P Encryption
@@ -225,7 +225,7 @@ This command gets the build time of the firmware.
 This command allows the user to access the  network ID, gateway ID  and  GPS coordinates.<br> The command output format is: `<INFO>`, `<network ID>`, `<gateway ID>`, `<longitude>`, `<latitude>`.
 
 #### AT+ATM: AT command mode
-This command switches to AT command mode. 
+This command switches to AT command mode.
 
 #### AT+APM: API mode
 This command  switches to Binary mode.
@@ -242,13 +242,13 @@ This command gets the AT command version.
 #### AT+APIVER: API version
 This command gets the RUI API version.
 
-#### AT+LOCK: Lock the AT command serial port 
+#### AT+LOCK: Lock the AT command serial port
 This command locks the serial port.
 
-#### AT+PWORD: Set the AT command serial port password 
+#### AT+PWORD: Set the AT command serial port password
 This command sets the serial port locking password. The maximum password length is 8.
 
-#### AT+HWMODEL: Hardware Model 
+#### AT+HWMODEL: Hardware Model
 This command gets the hardware model  of the module.
 
 #### AT+BOOTSTATUS: Query the status of the module
@@ -260,7 +260,7 @@ This command gets the device serial number ( 18 character ).
 #### AT+DADDR: Device Address
 This command allows the user to access the Device Address. The Device Address has 8 digit length. Each digit is a hexadecimal number 0 to F.
 
-#### AT+CHS: Single Channel Mode 
+#### AT+CHS: Single Channel Mode
 This command sets the node to single-channel mode. This mode is valid for US915, AU915 and CN470 regions.
 
 #### AT+CHE: Eight Channel Mode

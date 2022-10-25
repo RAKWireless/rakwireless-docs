@@ -9,7 +9,7 @@ header:
   title: How to Create a Pulse Oximeter Sensor Using WisBlock
   caption: by <b>Anthony Aldrin Beltran</b>
   img: /assets/images/knowledge-hub/banners/wisblock-sensor-tutorial.jpg
-posted: 1/18/2022 2:30 PM
+posted: 01/18/2022 2:30 PM
 ---
 
 # How to Create a Pulse Oximeter Sensor Using WisBlock
@@ -118,7 +118,7 @@ Here are the parts and materials neede in creating your Pulse Oximeter Sensor wi
 />
 
 9. After completing all the requirements, check the code by compiling it and then upload the code in the RAK4631 WisBlock module for LoRaWAN. After successfully uploading, you may now see the Pulse Oximeter Sensor using the WisBlock platform.
- 
+
 
 <rk-img
   src="\assets\images\knowledge-hub\tutorials\how-to-create-a-pulse-oximeter-sensor-using-wisblock\8.compile-code.png"

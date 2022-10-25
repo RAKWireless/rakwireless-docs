@@ -16,10 +16,9 @@ next: false
 
 ## Overview
 
-
 ### Description
 
-**RAK18040** is an analog microphone to the I2S module, part of the **WisBlock Audio Series**. With an analog microphone, analog audio can be directed to I2S output using this module. RAK18040 is designed based on **NAU85L40B** from Nuvoton. **NAU85L40B** is an audio ADC with an integrated frequency-locked loop (FLL) and microphone preamplifier.
+**RAK18040** is an analog microphone to the I2S module, part of the **WisBlock Audio Series**. With an analog microphone like the RAK18041, analog audio can be directed to I2S output using this module. RAK18040 is designed based on **NAU85L40B** from Nuvoton. **NAU85L40B** is an audio ADC with an integrated frequency-locked loop (FLL) and microphone preamplifier.
 
 ### Features
 
@@ -43,19 +42,6 @@ next: false
   caption="RAK18040 WisBlock Audio Analog Microphone to I2S Module"
 />
 
-
-#### Mounting 
-
-##### Mount to a WisBlock Audio Stack 
-
-With the 3&nbsp;mm spacer, the **RAK18040** can be mounted to the **WisBlock Audio Stack**. **Figure 2** shows the mounting mechanism of the RAK18040 on the WisBlock Audio Stack.
-
-<rk-img
-  src="/assets/images/wisblock/rak18040/datasheet/RAK18040_mount_to_wisblock_audio_stack.png"
-  width="50%"
-  caption="RAK18040 mounted to the WisBlock Audio Stack"
-/>
-
 ### Hardware
 
 The hardware specification is categorized into five (5) parts. It shows the chipset of the module and discusses the pinouts and their corresponding functions and diagrams. It also covers the acoustics, electrical, and mechanical characteristics that include the tabular data of the functionalities and standard values of the RAK18040 WisBlock Audio Analog Microphone to I2S Module.
@@ -68,8 +54,6 @@ The hardware specification is categorized into five (5) parts. It shows the chip
 
 #### Pin Definition
 
-RAK18040 has two board-to-board (BTB) connectors, one for the interposer board and another for the amplifier board.
-
 ##### WisBlock Connector
 
 <rk-img
@@ -77,42 +61,6 @@ RAK18040 has two board-to-board (BTB) connectors, one for the interposer board a
   width="70%"
   caption="RAK18040 WisBlock Connector pinout"
 />
-
-
-##### Stack Connector for Interposer Board
-
-The RAK18040 WisBlock module comprises a male board-to-board (BTB) connector. The BTB connector allows the RAK18040 module to be stacked with an interposer board, such as **RAK18003 (Audio Interposer Board)**. The pin order of the connector and the pinout definition is shown in **Figure 4**.
-
-<rk-img
-  src="/assets/images/wisblock/rak18040/datasheet/RAK18040_interposer_connector.png"
-  width="40%"
-  caption="RAK18040 BTB Connector for Interposer Board pinout"
-/>
-
-::: tip 📝 NOTE
-- **3V3**, **VBAT**, **VBUS**, and **GND** are power supply pins from the interposer board.
-- **Device_I2C_SDA** and **Device_I2C_SCL** are interfaces between NAU85L40B and **WisBlock Core**.
-- **AMIC_I2S_BCLK**, **AMIC_I2S_WS**, **AMIC_I2S_DI**, and **AMIC_I2S_DO** are I2S signals.
-- **MIC_CTR_IO1** and **MIC_CTR_IO2** are GPIOs from the interposer board used as control signals for reserved analog microphones.
-:::
-
-##### Stack Connector for Amplifier Board
-
-The RAK18040 WisBlock module comprises a female board-to-board (BTB) connector. The BTB connector allows the RAK18040 module to be stacked with an amplifier board, such as RAK18060. The pin order of the connector and the pinout definition is shown in **Figure 5**.
-
-<rk-img
-  src="/assets/images/wisblock/rak18040/datasheet/RAK18040_amplifier_connector.png"
-  width="30%"
-  caption="RAK18040 BTB Connector for Amplifier Board pinout"
-/>
-
-::: tip 📝 NOTE
-- **3V3**, **VBAT**, **VBUS**, and **GND** are power supply pins for the amplifier board.
-- **AMP_CTR_IO1** is the GPIO from the interposer board. Normally, this pin is **HIGH**. It will be **LOW** if there is an error within the amplifier.
-- **AMIC_I2S_DO**, **AMIC_I2S_DI**, **AMIC_I2S_WS**, and **AMIC_I2S_BCLK** are I2S signals to the amplifier board.
-- **Device_I2C_SDA** and **Device_I2C_SCL** are I2C signals used to control the amplifier board.
-- **AMP_Check** is a GPIO pin. It is used to check whether an Amplifier board is connected. This pin is **LOW** when there is no amplifier board and will be **HIGH** when an amplifier board is connected.
-:::
 
 #### Acoustic and Electrical Characteristics
 
@@ -131,7 +79,7 @@ This table shows the RAK18040 WisBlock Audio Analog Microphone to I2S Module ele
 
 ##### Board Dimensions
 
-**Figure 5** shows the dimensions and the mechanical drawing of the RAK18040 module.
+**Figure 3** shows the dimensions and the mechanical drawing of the RAK18040 module.
 
 <rk-img
   src="/assets/images/wisblock/rak18040/datasheet/RAK18040_mechanic_drawing.png"

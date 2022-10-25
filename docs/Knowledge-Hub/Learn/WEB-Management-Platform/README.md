@@ -9,7 +9,7 @@ header:
   title: WEB Management Platform
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/web-management-platform.jpg
-posted: 2/29/2020 10:30 AM
+posted: 02/29/2020 10:30 AM
 ---
 
 # WEB Management Platform
@@ -55,7 +55,7 @@ Using your preferred web browser, input the aforementioned IP Address. You shoul
   src="/assets/images/knowledge-hub/user-manual/web-management-platform/1.webui.jpg"
   width="100%"
   caption="Web User Interface Log-in"
-/> 
+/>
 
 ### WAN Port (DHCP IP) Mode
 Connect the Ethernet cable to the port marked “**ETH**” on the gateway and the other end to the PoE port of the PoE injector. Connect the LAN port of the PoE injector to your router. The router’s DHCP server should assign an IP Address to the Gateway. You can change the default settings below if you wish (details in the User Manual).
@@ -174,7 +174,7 @@ The same statistics as with the WAN Interface are available. It is here that you
 - The gateway metric determines the priority of this interfaces, compared with the other connectivity options. The lower the value the higher the priority.
 - It is recommended that this interface has the highest Gateway metric (lowest priority) in order to conserve your traffic, which can be limited or costly.
 
-:::tip 📝 NOTE 
+:::tip 📝 NOTE
 There is also a field for the PIN Code in case your SIM card is locked.
 :::
 
@@ -190,7 +190,7 @@ Enabling/Disabling the Wi-Fi is done from this page via the blue button at the t
 
 - **Wireless Access Point**: By default, there is no encryption/password. One can access the Web UI via the IP address: **192.168.230.1** once connected to the AP. The SSID is "**RAK7240_XXXX**" by default, where the “**XXXX**” is filled with the last symbols from the interface’s MAC Address.
 
-:::tip 📝 NOTE 
+:::tip 📝 NOTE
 If you swipe the **Hidden** slider, the SSID will not be advertised.
 :::
 
@@ -224,7 +224,7 @@ You can enter either an URL or an IP Address in the text box and execute the com
 
 Ping Watchdog monitors the quality of network links by constantly pinging the specified IP Address or Domain name on the specified uplink network interface. When network link failures are detected, scheduled measures are taken automatically. Those include: Interface restart, Interface priority reduction, Device restart, etc.
 
-:::tip 📝 NOTE 
+:::tip 📝 NOTE
 Reducing the priority of an uplink interface only works when the LoRaWAN Gateway uses both Ethernet and Cellular as uplink methods at the same time.
 :::
 

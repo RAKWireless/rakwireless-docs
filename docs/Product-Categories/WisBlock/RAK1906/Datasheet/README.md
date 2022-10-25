@@ -14,7 +14,7 @@ next: false
 ## Overview
 
 <rk-img
-  src="/assets/images/wisblock/rak1906/datasheet/RAK1906.svg"
+  src="/assets/images/wisblock/rak1906/datasheet/RAK1906.png"
   width="50%"
   caption="RAK1906 WisBlock Environmental Sensor"
 />
@@ -23,20 +23,23 @@ next: false
 
 The RAK1906 WisBlock Environmental Sensor Module, part of the RAK WisBlock Sensor series, is a 4-in-1 digital sensor board that comprises gas, humidity pressure, and temperature sensor, based on the Bosch® BME680 module. The RAK1906 is ideal for applications such as indoor air quality, home automation, and building IoT solutions.
 
-### Features 
-* **Voltage Supply**: 3.3&nbsp;V
-* **Current Consumption**: 0.15&nbsp;uA to 350&nbsp;uA
-* **Chipset**: BOSCH BME680
-* **Temperature range**: -40&nbsp;°C to 85&nbsp;°C
-* **Humidity range**: 0 to 100%
-* **Pressure range**: 300&nbsp;hPa to 1100&nbsp;hPa
-* **Gas sensor response time**: < 1&nbsp;sec
-* **Gas sensor output**: direct output of IAQ (Indoor Air Quality) index
-* **Module size**: 10 x 10&nbsp;mm
+### Features
+
+* **Sensor specifications**
+    * Voltage supply: 3.3&nbsp;V
+    * Current consumption: 0.15&nbsp;uA to 350&nbsp;uA
+    * Chipset: BOSCH BME680
+    * Temperature range: -40&nbsp;°C to 85&nbsp;°C
+    * Humidity range: 0 to 100%
+    * Pressure range: 300&nbsp;hPa to 1100&nbsp;hPa
+    * Gas sensor response time < 1&nbsp;sec
+    * Sensor outputs can be used with the [Bosch BSEC library](https://github.com/BoschSensortec/BSEC-Arduino-library) algorithm to calculate the IAQ (Indoor Air Quality) index
+
+* **Size**
+    * 10 x 10&nbsp;mm
 
 ## Specifications
 ### Overview
-
 
 #### Mounting
 
@@ -54,7 +57,8 @@ The hardware specification is categorized into six parts. It shows the chipset o
 
 
 ####  Chipset
-| Vendor | Part number |
+
+| Vendor | Part Number |
 | ------ | ----------- |
 | BOSCH  | BME680      |
 
@@ -69,7 +73,7 @@ The RAK1906 WisBlock Environmental Sensor Module comprises a standard WisBlock c
 />
 
 :::tip 📝 NOTE:
-Only the **I2C** related pin, **VDD**, and **GND** are connected to this module. 
+Only the **I2C** related pin, **VDD**, and **GND** are connected to this module.
 :::
 
 If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse depends on what slot the module is plugged in. The following table shows the default IO used for different slots:
@@ -80,7 +84,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 
 
 #### Sensors
-##### Temperature Sensor 
+##### Temperature Sensor
 <table  style="text-align: center">
 <thead>
   <tr>
@@ -284,7 +288,12 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 </tbody>
 </table>
 
-##### AQI Sensor
+##### IAQ algorithm
+
+:::tip 📝 NOTE:
+The IAQ is not calculated by the Bosch BME680 directly. The measured sensor values need to be send to the [Bosch BSEC library](https://github.com/BoschSensortec/BSEC-Arduino-library) algorithm to calculate the IAQ (Indoor Air Quality) index.
+:::
+
 <table style="text-align: center">
 <thead>
   <tr>
@@ -370,12 +379,12 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 
 ##### Board Dimensions
 
-**Figure 3** shows the dimensions and the mechanic drawing of the RAK1906 module.
+**Figure 4** shows the dimensions and the mechanic drawing of the RAK1906 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1906/datasheet/RAK19xx_mechanic_drawing.png"
   width="60%"
-  caption="RAK1906 WisBlock Environmental Sensor Mechanic Drawing"
+  caption="RAK1906 WisBlock Environmental Sensor mechanic dimensions"
 />
 
 ##### WisConnector PCB Layout
@@ -388,7 +397,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 
 #### Schematic Diagram
 
-Figure 5 shows the schematic of the RAK1906 module.
+**Figure 5** shows the schematic of the RAK1906 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1906/datasheet/rak1906-schematic.png"

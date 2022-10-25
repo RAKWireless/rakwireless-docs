@@ -10,7 +10,7 @@ header:
   title: Build-in LoRa Network Server Configuration
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/build-in-lora-network-server-configuration.jpg
-posted: 2/29/2020 10:30 AM
+posted: 02/29/2020 10:30 AM
 ---
 
 #  Build-in LoRa Network Server Configuration
@@ -18,7 +18,7 @@ posted: 2/29/2020 10:30 AM
 * [Gateway Built-in LoRa NS](#gateway-built-in-lora®-ns)
 * [RAK LPWAN Node](#rak-lpwan-node)
 
-This section is a sample demonstration on how to interconnect your **RAK7249 Macro Outdoor Gateway** with its **Built-in LoRa Network Server** and make an application for the **RAK LPWAN Node**. For this sample demonstration, we will be using the RAK811 LPWAN Node. 
+This section is a sample demonstration on how to interconnect your **RAK7249 Macro Outdoor Gateway** with its **Built-in LoRa Network Server** and make an application for the **RAK LPWAN Node**. For this sample demonstration, we will be using the RAK811 LPWAN Node.
 
 ## Requirements
 1. RAK811 LPWAN Node
@@ -31,7 +31,7 @@ This document is the detailed discussion on how to set-up the built-in LoRa Serv
 
 We will first set-up the built-in LoRa  network server. Before going through the steps, access the Web Management Platform as discussed in the prior section.
 
-## Packet Forwarder Set-up 
+## Packet Forwarder Set-up
 
 :::tip 📝 NOTE
  For other settings and detailed documentation for this section, browse the [Packet Forwarder](/Knowledge-Hub/Learn/Resources/Web-Management-Platform/#lora®-network) section.
@@ -53,7 +53,7 @@ We will first set-up the built-in LoRa  network server. Before going through the
  For other settings and detailed documentation for this section, browse the [LoRa Network](/Knowledge-Hub/Learn/Resources/Web-Management-Platform/#lora®-network) section.
 :::
 
-1. Navigate through LoRa Network Server tab -> General and turn-on this feature using the Enable slider. 
+1. Navigate through LoRa Network Server tab -> General and turn-on this feature using the Enable slider.
 
 2. Select your Region (Frequency Band). For this demonstration, we are going to use **EU863-870 frequency band**.
 

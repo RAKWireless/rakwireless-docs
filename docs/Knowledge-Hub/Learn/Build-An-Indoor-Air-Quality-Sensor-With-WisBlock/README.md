@@ -14,14 +14,19 @@ header:
   title: Build an Indoor Air Quality Monitor with WisBlock
   caption: by <b>Bernd Giesecke</b>
   img: /assets/images/knowledge-hub/banners/high-power-wifi-module-and-power-line-communications.jpg
-posted: 14/10/2022 08:00 AM
+posted: 10/14/2022 08:00 AM
+author:
+  name: Bernd Giesecke
+  about: Electronics Engineer, 23 years experience in industrial and automotive HW and SW R&D. Supporting Arduino open source community since 6 years.
+  img: /assets/images/knowledge-hub/authors/bernd-giesecke.png
 ---
+
 
 # Build an Indoor Air Quality Monitor with WisBlock
 
-Indoor air quality monitoring is getting more and more important. Even though we all try to reduce air pollution in some areas, the air quality is not as good as it should be.    
+Indoor air quality monitoring is getting more and more important. Even though we all try to reduce air pollution in some areas, the air quality is not as good as it should be.
 
-An indoor air monitor can warn if certain conditions are getting unhealthy and trigger actions like warnings or sending messages to home or building control systems to take countermeasures.    
+An indoor air monitor can warn if certain conditions are getting unhealthy and trigger actions like warnings or sending messages to home or building control systems to take countermeasures.
 
 The WisBlock ecosystem now offers multiple sensors required to build an indoor air quality sensor that covers the most important values.
 
@@ -34,12 +39,12 @@ The WisBlock ecosystem now offers multiple sensors required to build an indoor a
 
 **Measured value:**
 
-  - CO2 with the RAK12037    
-  - Particle Matters with the RAK12039    
-  - VOC (volatile organic compounds) with the RAK12047    
-  - Temperature, humidity, and barometric pressure with the RAK1906    
+  - CO2 with the RAK12037
+  - Particle Matters with the RAK12039
+  - VOC (volatile organic compounds) with the RAK12047
+  - Temperature, humidity, and barometric pressure with the RAK1906
 
-All four (4) sensors can be used together with our WisBlock Dual IO Base Board RAK19001 or with our new RAK19011 Dual IO Base Board combined with any of our new Power Modules.    
+All four (4) sensors can be used together with our WisBlock Dual IO Base Board RAK19001 or with our new RAK19011 Dual IO Base Board combined with any of our new Power Modules.
 
 The second gives you the freedom to select the power supply (battery, 5&nbsp;V USB, or 5-24&nbsp;V industrial supply) in your product.
 
@@ -51,13 +56,13 @@ The second gives you the freedom to select the power supply (battery, 5&nbsp;V U
 />
 
 :::tip 📝 NOTE
-All the modules are available at the [RAKwireless Store](https://store.rakwireless.com/pages/wisblock). 
+All the modules are available at the [RAKwireless Store](https://store.rakwireless.com/pages/wisblock).
 :::
 
-This tutorial shows how to build an indoor air quality sensor with the WisBlock ecosystem. It shows how to read values from the four (4) different sensors, send them over LoRaWAN, and display them on an E-ink display (optional).     
+This tutorial shows how to build an indoor air quality sensor with the WisBlock ecosystem. It shows how to read values from the four (4) different sensors, send them over LoRaWAN, and display them on an E-ink display (optional).
 
 :::tip 📝 NOTE
-The source code of this application is open source and can be downloaded from the Github repo [WisBlock-IAQ-PM-CO2-VOC-EPD](https://github.com/beegee-tokyo/WisBlock-IAQ-PM-CO2-VOC-EPD). 
+The source code of this application is open source and can be downloaded from the Github repo [WisBlock-IAQ-PM-CO2-VOC-EPD](https://github.com/beegee-tokyo/WisBlock-IAQ-PM-CO2-VOC-EPD).
 :::
 
 ----
@@ -80,29 +85,29 @@ The source code of this application is open source and can be downloaded from th
 
 <b>1. IDE </b>
 
-  - [PlatformIO](https://platformio.org/install) 
-  - Alternative [Arduino IDE](https://www.arduino.cc/en/software) (requires some file name changes and manual installation of libraries) 
-  - [Adafruit nRF52 BSP](https://docs.platformio.org/en/latest/boards/nordicnrf52/adafruit_feather_nrf52832.html) 
-  - [Patch to use RAK4631 with PlatformIO](https://github.com/RAKWireless/WisBlock/tree/master/PlatformIO) 
+  - [PlatformIO](https://platformio.org/install)
+  - Alternative [Arduino IDE](https://www.arduino.cc/en/software) (requires some file name changes and manual installation of libraries)
+  - [Adafruit nRF52 BSP](https://docs.platformio.org/en/latest/boards/nordicnrf52/adafruit_feather_nrf52832.html)
+  - [Patch to use RAK4631 with PlatformIO](https://github.com/RAKWireless/WisBlock/tree/master/PlatformIO)
 
 <b>2. LoRaWAN and BLE Communication </b>
 
-  - [WisBlock-API](https://registry.platformio.org/libraries/beegee-tokyo/WisBlock-API) 
-  - [SX126x-Arduino LoRaWAN library](https://registry.platformio.org/libraries/beegee-tokyo/SX126x-Arduino) 
-  - [CayenneLPP](https://registry.platformio.org/libraries/sabas1080/CayenneLPP) 
-  - [ArduinoJson](https://registry.platformio.org/libraries/bblanchon/ArduinoJson) 
+  - [WisBlock-API](https://registry.platformio.org/libraries/beegee-tokyo/WisBlock-API)
+  - [SX126x-Arduino LoRaWAN library](https://registry.platformio.org/libraries/beegee-tokyo/SX126x-Arduino)
+  - [CayenneLPP](https://registry.platformio.org/libraries/sabas1080/CayenneLPP)
+  - [ArduinoJson](https://registry.platformio.org/libraries/bblanchon/ArduinoJson)
 
 
 <b> 3. Sensor Libraries</b>
 
-  - [Adafruit BME680 Library](https://registry.platformio.org/libraries/adafruit/Adafruit%20BME680%20Library) 
-  - [Adafruit Unified Sensor](https://registry.platformio.org/libraries/adafruit/Adafruit%20Unified%20Sensor) 
-  - [Sensirion Core](https://registry.platformio.org/libraries/sensirion/Sensirion%20Core) 
-  - [Sensirion Gas Index Algorithm](https://registry.platformio.org/libraries/sensirion/Sensirion%20Gas%20Index%20Algorithm) 
-  - [Sensirion I2C SGP40](https://registry.platformio.org/libraries/sensirion/Sensirion%20I2C%20SGP40) 
-  - [RAK12039 PM Sensor](https://registry.platformio.org/libraries/beegee-tokyo/RAK12039_PM_Sensor) 
-  - [SparkFun SCD30 Arduino Library](https://registry.platformio.org/libraries/sparkfun/SparkFun%20SCD30%20Arduino%20Library) 
-  - [Adafruit EPD](https://registry.platformio.org/libraries/adafruit/Adafruit%20EPD) 
+  - [Adafruit BME680 Library](https://registry.platformio.org/libraries/adafruit/Adafruit%20BME680%20Library)
+  - [Adafruit Unified Sensor](https://registry.platformio.org/libraries/adafruit/Adafruit%20Unified%20Sensor)
+  - [Sensirion Core](https://registry.platformio.org/libraries/sensirion/Sensirion%20Core)
+  - [Sensirion Gas Index Algorithm](https://registry.platformio.org/libraries/sensirion/Sensirion%20Gas%20Index%20Algorithm)
+  - [Sensirion I2C SGP40](https://registry.platformio.org/libraries/sensirion/Sensirion%20I2C%20SGP40)
+  - [RAK12039 PM Sensor](https://registry.platformio.org/libraries/beegee-tokyo/RAK12039_PM_Sensor)
+  - [SparkFun SCD30 Arduino Library](https://registry.platformio.org/libraries/sparkfun/SparkFun%20SCD30%20Arduino%20Library)
+  - [Adafruit EPD](https://registry.platformio.org/libraries/adafruit/Adafruit%20EPD)
 
 :::tip 📝 NOTE
 As this project is based on PlatformIO, the required libraries are automatically installed.
@@ -111,13 +116,13 @@ If the code is converted to be used in the Arduino IDE, all libraries must be in
 
 
 ## How Does the Application Work?
-The application is based on the [WisBlock-API](https://github.com/beegee-tokyo/WisBlock-API). Instead of running endless in the **`loop()`**, it is using timers and events to keep the MCU in idle/sleep mode as much as possible.     
+The application is based on the [WisBlock-API](https://github.com/beegee-tokyo/WisBlock-API). Instead of running endless in the **`loop()`**, it is using timers and events to keep the MCU in idle/sleep mode as much as possible.
 
-In this application, there are two (2) major events:    
+In this application, there are two (2) major events:
 1. Timer-based wakeup to send the measured values over LoRaWAN and optional update of the E-ink display
 2. Timer-based wakeup to read the RAK12047 VOC sensor
 
-The first timer can be set by the user through an AT command. As the air quality status is not changing very fast, a time of 5 to 10&nbsp;minutes will be sufficient.   
+The first timer can be set by the user through an AT command. As the air quality status is not changing very fast, a time of 5 to 10&nbsp;minutes will be sufficient.
 The second timer is required because the sensor values of the SGP40 sensor have to be fed into an algorithm that creates the VOC index. In this tutorial, the VOC measurement cycle is set to 10&nbsp;seconds. This event is only reading the sensor and feeding the algorithm. It does not transmit any data or update the display.
 
 LoRaWAN and BLE UART are handled by the WisBlock API in the background. The setup of the LoRa/LoRaWAN credentials and settings can be done through an AT command interface over USB or BLE.
@@ -134,7 +139,7 @@ caption="WisBlock API structure"
 ## Code Structure
 The application code is separated into multiple parts.
 
-### Main Application 
+### Main Application
 
 ```
 app.cpp
@@ -146,7 +151,7 @@ app.h
 
 This part handles the timer-triggered wakeups to send the data packets. It initiates the sensor readings and creation of the data packet.
 
-### Module Detection and Handling 
+### Module Detection and Handling
 
 ```
 module_handler.cpp
@@ -156,11 +161,11 @@ module_handler.cpp
 module_handler.h
 ```
 
-This part is searching the I2C bus for connected modules. It makes the application very flexible, as the reading of sensor data and preparation of the data packet is automatically adapted to the modules found. 
+This part is searching the I2C bus for connected modules. It makes the application very flexible, as the reading of sensor data and preparation of the data packet is automatically adapted to the modules found.
 
 Beside the above mentioned sensors, the code supports the following sensors as well:
 - [RAK1901 Temperature and Humidity Sensor Module](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1901/Overview)
-- [RAK1902 Barometer Pressure Sensor Module](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1902/Overview) 
+- [RAK1902 Barometer Pressure Sensor Module](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1902/Overview)
 - [RAK1903 Ambient Light Sensor Module](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1903/Overview)
 - [RAK12010 Ambient Light Sensor Module](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK12010/Overview)
 - [RAK12019 UV Sensor](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK12019/Overview)
@@ -168,7 +173,7 @@ Beside the above mentioned sensors, the code supports the following sensors as w
 
 If any of these modules is found, the data packet is automatically adjusted to add the values of these sensors.
 
-### Extended Cayenne LPP Format 
+### Extended Cayenne LPP Format
 
 ```
 wisblock_cayenne.cpp
@@ -181,7 +186,7 @@ wisblock_cayenne.h
 
 The Cayenne LPP format is supporting only a basic set of data formats. The library CayenneLPP from Electronic Cats extends already the supported data formats. But for the air quality data, more data formats were needed to support all sensor values that are measured by this application.
 
-### Custom AT Commands 
+### Custom AT Commands
 
 ```
 user_at_cmd.cpp
@@ -236,11 +241,11 @@ A separate cpp file is available for each supported module type. This makes it e
 
 ### Bosch BME680 - RAK1906
 
-The Bosch BME680 sensor is advertised as a gas sensor. It can measure temperature, humidity, barometric pressure, and air gas resistance. The BME680 datasheet does not reveal details about the measurement methods. 
+The Bosch BME680 sensor is advertised as a gas sensor. It can measure temperature, humidity, barometric pressure, and air gas resistance. The BME680 datasheet does not reveal details about the measurement methods.
 
-Out of these values, the Bosch IAQ index can be computed using the Bosch BSEC library. But as this library is proprietary code and there is no documentation of how the IAQ index is computed. We use this sensor only to measure the first three values (temperature, humidity, and barometric pressure). But feel free to extend the code to use the Bosch BSEQ library.     
+Out of these values, the Bosch IAQ index can be computed using the Bosch BSEC library. But as this library is proprietary code and there is no documentation of how the IAQ index is computed. We use this sensor only to measure the first three values (temperature, humidity, and barometric pressure). But feel free to extend the code to use the Bosch BSEQ library.
 
-The BME680 works in measurement cycles which are started with the command **`bme.beginReading();`**. Then the sensor needs to be checked until **`bme.endReading()`** returns true. As this application is based on the WisBlock-API, which is a complete timer and event-driven, we don't want to waste MCU time and wait in a loop until the sensor has finished its measurements. Instead, the measurement is triggered when the application wakes up to send a LoRaWAN packet and the sensor values are read just before the packet is sent. The time **inbetween** is used to read the values of the other sensors and the battery status.    
+The BME680 works in measurement cycles which are started with the command **`bme.beginReading();`**. Then the sensor needs to be checked until **`bme.endReading()`** returns true. As this application is based on the WisBlock-API, which is a complete timer and event-driven, we don't want to waste MCU time and wait in a loop until the sensor has finished its measurements. Instead, the measurement is triggered when the application wakes up to send a LoRaWAN packet and the sensor values are read just before the packet is sent. The time **inbetween** is used to read the values of the other sensors and the battery status.
 
 The used sensor values are as follows:
 
@@ -271,7 +276,7 @@ As we are not using the gas resistance sensor of the BME680, the internal gas he
 
 Experience showed that the BME680 needs some time for valid measurement. To avoid a longer waiting loop for the sensor data, the sensor measurement is started with **`start_rak1906`**, then the main application is doing some other sensor readings.
 
-Finally, in **`read_rak1906()`**, the BME680 is checked for the end of its measurement cycle. Then the values are read and added to the LoRaWAN data packet. If an E-ink display is connected, the data buffer for the display is updated, as well, with the latest values.    
+Finally, in **`read_rak1906()`**, the BME680 is checked for the end of its measurement cycle. Then the values are read and added to the LoRaWAN data packet. If an E-ink display is connected, the data buffer for the display is updated, as well, with the latest values.
 
 ```cpp
 bool read_rak1906()
@@ -320,7 +325,7 @@ bool read_rak1906()
 
 <br>
 
-As the RAK12047 VOC sensor needs temperature and humidity values for the calculation of the VOC index, an additional function is provided that returns these values with **`get_rak1906_values()`** in an array of float values.    
+As the RAK12047 VOC sensor needs temperature and humidity values for the calculation of the VOC index, an additional function is provided that returns these values with **`get_rak1906_values()`** in an array of float values.
 
 
 ```cpp
@@ -335,12 +340,12 @@ void get_rak1906_values(float *values)
 ### RAK12037 Sensirion SCD30 CO2 Sensor
 
 
-Same as the PM sensor, the SCD30 has to be powered all the time. It has a programmable measurement interval to control the power consumption. In this example, it is set to 2&nbsp;seconds.    
+Same as the PM sensor, the SCD30 has to be powered all the time. It has a programmable measurement interval to control the power consumption. In this example, it is set to 2&nbsp;seconds.
 
-- The Sensirion SCD30 can measure CO2 concentrations from 400–10,000&nbsp;ppm.    
-- The sensor is using the NDIR measurement technology for detecting CO2.    
-- This sensor is using I2C interface as well. It returns:  
-    - CO2 concentration in PPM  
+- The Sensirion SCD30 can measure CO2 concentrations from 400–10,000&nbsp;ppm.
+- The sensor is using the NDIR measurement technology for detecting CO2.
+- This sensor is using I2C interface as well. It returns:
+    - CO2 concentration in PPM
     - Temperature in °C
     - Humidity in %&nbsp;RH
 
@@ -364,12 +369,12 @@ The code for the RAK12037 CO2 Sensor is quite simple. The measurement interval i
 
 	// Start the measurements
 	scd30.beginMeasuring();
-```    
+```
 
 <br>
 
 
-The **`read_rak12037()`** is checking if the sensor has data available, then it is reading them and adding them to the LoRaWAN data packet. If an E-ink display is connected, the data buffer for the display is updated as well with the latest values.    
+The **`read_rak12037()`** is checking if the sensor has data available, then it is reading them and adding them to the LoRaWAN data packet. If an E-ink display is connected, the data buffer for the display is updated as well with the latest values.
 
 
 ```cpp
@@ -413,7 +418,7 @@ As the RAK12037 is an IO module and the RAK19001 has only two IO slots, the comb
 ### RAK12039 Plantower PMSA003I Particle Matter Sensor
 
 
-The Plantower PMSA003I PM sensor has to be active all the time to measure the particle matter. It can measure particles in the range of 0.3~1.0, 1.0~2.5, 2.5~10&nbsp;μm. The measurement method is laser-based [dynamic light scattering](https://en.wikipedia.org/wiki/Dynamic_light_scattering). But even if the sensor is active all the time, the measured values are only read when the application wakes up to send data. The RAK12039 PM sensor is using the I2C version of the PMSA003 sensor. This makes communication with the sensor much simpler.    
+The Plantower PMSA003I PM sensor has to be active all the time to measure the particle matter. It can measure particles in the range of 0.3~1.0, 1.0~2.5, 2.5~10&nbsp;μm. The measurement method is laser-based [dynamic light scattering](https://en.wikipedia.org/wiki/Dynamic_light_scattering). But even if the sensor is active all the time, the measured values are only read when the application wakes up to send data. The RAK12039 PM sensor is using the I2C version of the PMSA003 sensor. This makes communication with the sensor much simpler.
 
 The sensor returns three values:
 
@@ -428,9 +433,9 @@ width=30%
 caption="RAK12039"
 />
 
-The code for the RAK12039 is simple as well. **`init_rak12039()`** is just initializing the communication.    
+The code for the RAK12039 is simple as well. **`init_rak12039()`** is just initializing the communication.
 
-The **`read_rak12039()`** function reads the latest data and adds them to the LoRaWAN data packet. If an E-ink display is connected, the data buffer for the display is updated as well with the latest values.    
+The **`read_rak12039()`** function reads the latest data and adds them to the LoRaWAN data packet. If an E-ink display is connected, the data buffer for the display is updated as well with the latest values.
 
 ```cpp
 void read_rak12039(void)
@@ -507,7 +512,7 @@ void read_rak12039(void)
 
 ### RAK12047 Sensirion SGP40 VOC Sensor
 
-The Sensirion SGP40 measures the concentration of volatile organic compounds (VOC) in the air using Sensirion CMOSens® Technology. Different from the other sensors, it does not directly return a sensor value. Instead, the returned data is fed into the Sensirion Gas Index Algorithm together with temperature and humidity values. Sensirion Gas Index Algorithm software provides a VOC Index output signal calculated from the SGP40 raw signal inputs `SRAW_VOC`. A more detailed explanation of the algorithm can be found in the [Sensirion Github repo](https://github.com/Sensirion/gas-index-algorithm).   
+The Sensirion SGP40 measures the concentration of volatile organic compounds (VOC) in the air using Sensirion CMOSens® Technology. Different from the other sensors, it does not directly return a sensor value. Instead, the returned data is fed into the Sensirion Gas Index Algorithm together with temperature and humidity values. Sensirion Gas Index Algorithm software provides a VOC Index output signal calculated from the SGP40 raw signal inputs `SRAW_VOC`. A more detailed explanation of the algorithm can be found in the [Sensirion Github repo](https://github.com/Sensirion/gas-index-algorithm).
 
 The algorithm needs some time to return reliable VOC indices. The first 100 calculated values are unreliable and are discarded by the application. As the readings from the SGP40 have to be done in a fixed and short interval (10&nbsp;seconds), it is running in a separate task that is activated by a timer. The Sensirion algorithm generates a VOC index in the range from **0 to 500**.
 
@@ -517,7 +522,7 @@ src="/assets/images/knowledge-hub/tutorials/build-an-indoor-air-quality-sensor-w
 width=30% caption="RAK12047"
 />
 
-The code for this sensor is quite different. As mentioned, the sensor values have to be read in a fixed interval. To do this, a timer is used to wake up the MCU in defined intervals to perform a sensor reading. The timer is started at the end of the **`init_rak12047()`** initialization. It looks a little bit complicated (but it isn't) because the code supports all three WisBlock Core modules, and each module has its own timer classes.    
+The code for this sensor is quite different. As mentioned, the sensor values have to be read in a fixed interval. To do this, a timer is used to wake up the MCU in defined intervals to perform a sensor reading. The timer is started at the end of the **`init_rak12047()`** initialization. It looks a little bit complicated (but it isn't) because the code supports all three WisBlock Core modules, and each module has its own timer classes.
 
 ```cpp
 	// Set VOC reading interval to 10 seconds
@@ -533,7 +538,7 @@ The code for this sensor is quite different. As mentioned, the sensor values hav
 #endif
 ```
 
-When the timer is triggered, the function **`do_read_rak12047()`** is called, which reads the SGP40 sensor and feeds the raw values together with the temperature and humidity values to the Sensirion Gas Index Algorithm. 
+When the timer is triggered, the function **`do_read_rak12047()`** is called, which reads the SGP40 sensor and feeds the raw values together with the temperature and humidity values to the Sensirion Gas Index Algorithm.
 
 ```cpp
 void do_read_rak12047(void)
@@ -617,7 +622,7 @@ void do_read_rak12047(void)
 
 <br>
 
-Before sending a LoRaWAN packet, the application calls the function **`read_rak12047()`**, which is checking if the VOC index is valid (the first 100 data is discarded) and adds the last calculated VOC index to the LoRaWAN packet.    
+Before sending a LoRaWAN packet, the application calls the function **`read_rak12047()`**, which is checking if the VOC index is valid (the first 100 data is discarded) and adds the last calculated VOC index to the LoRaWAN packet.
 
 ```cpp
 void read_rak12047(void)
@@ -644,9 +649,9 @@ void read_rak12047(void)
 
 ## LoRaWAN Packet Format
 
-The packet data is made compatible with the extended Cayenne LPP encoding from [ElectronicCats/CayenneLPP](https://github.com/ElectronicCats/CayenneLPP). 
+The packet data is made compatible with the extended Cayenne LPP encoding from [ElectronicCats/CayenneLPP](https://github.com/ElectronicCats/CayenneLPP).
 
-The content of the packet depends on the modules installed on the WisBlock Base Board:     
+The content of the packet depends on the modules installed on the WisBlock Base Board:
 
 | Data                     | Channel No. | Channel ID | Length        | Comment                                                         | Required Module   | Decoded Field Name |
 | ------------------------ | ----------- | ---------- | ------------- | --------------------------------------------------------------- | ----------------- | ------------------ |
@@ -696,7 +701,7 @@ The content of the packet depends on the modules installed on the WisBlock Base 
 
 :::tip 📝 NOTE
 - The Channel IDs in cursive are extended format and not supported by standard Cayenne LPP data decoders.
-- Example decoders for TTN, Chirpstack, Helium, and Datacake can be found in the [Github repo](https://github.com/beegee-tokyo/WisBlock-IAQ-PM-CO2-VOC-EPD/tree/main/decoders). 
+- Example decoders for TTN, Chirpstack, Helium, and Datacake can be found in the [Github repo](https://github.com/beegee-tokyo/WisBlock-IAQ-PM-CO2-VOC-EPD/tree/main/decoders).
 :::
 
 ----
@@ -711,3 +716,8 @@ The application code can support a 4.2-in E-Ink display connected with the [RAK1
 :::tip 📝 NOTE
 Another option is to use the RAK12002 RTC Module. If attached, the display will automatically show the date and time in the header line of the display.
 :::
+
+---
+
+<rk-author />
+

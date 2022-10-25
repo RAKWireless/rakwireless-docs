@@ -42,9 +42,10 @@ For more information about the RAK1906, refer to the [Datasheet](../Datasheet/).
 The RAK1906 module gives information about:
 
 - Air pressure
-- Air quality
 - Ambient Air Temperature
 - Environment Humidity
+- Gas Resistance
+- Sensor outputs can be used with the [Bosch BSEC library](https://github.com/BoschSensortec/BSEC-Arduino-library) algorithm to calculate the IAQ (Indoor Air Quality) index
 
 RAK1906 module can be connected to the sensor's slot of [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) to communicate with the WisBlock Core, as shown in **Figure 1**. It will work on **SLOT A to F**. Also, always secure the connection of the WisBlock module by using compatible screws.
 

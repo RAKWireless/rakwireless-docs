@@ -6,9 +6,9 @@ tags:
   - WisBlock
 header:
   title: Installation of Board Support Package in PlatformIO
-  caption: by <b>Bernd Giesecke</b> 
+  caption: by <b>Bernd Giesecke</b>
   img: /assets/images/knowledge-hub/banners/installation-of-board-support-package-in-platformio.jpg
-posted: 8/14/2020 10:30 AM
+posted: 08/14/2020 10:30 AM
 author:
   name: Bernd Giesecke
   about: Electronics Engineer, 23 years experience in industrial and automotive HW and SW R&D. Supporting Arduino open source community since 2014.
@@ -21,10 +21,10 @@ To make the support of WisBlock Core modules in PlatformIO easier we created a s
 This script does not install the required BSP's (platform and package), it only patches already installed BSP's.
 
 :::tip 📝 NOTE
-Download the patch package from     
-[RAK_PATCH.zip](https://raw.githubusercontent.com/RAKWireless/WisBlock/master/PlatformIO/RAK_PATCH.zip)    
+Download the patch package from
+[RAK_PATCH.zip](https://raw.githubusercontent.com/RAKWireless/WisBlock/master/PlatformIO/RAK_PATCH.zip)
 You will need it during the installation or update.
-::: 
+:::
 
 ## Steps for the installation or update:
 - [First install](#first-install)
@@ -36,7 +36,7 @@ You will need it during the installation or update.
 
 #### Install PlatformIO
 
-First of all, install **Visual Studio Code** which is a great and open source tool, and you can download it here: 
+First of all, install **Visual Studio Code** which is a great and open source tool, and you can download it here:
 
 [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
@@ -57,7 +57,7 @@ After installing PlatformIO, you can see the PlatformIO icon and open it as foll
 />
 
 Once PlatformIO installation is finished, you have to get the BSP's. Before you can use the WisBlock Core modules with PlatformIO you need to install the original platforms:
-- RAK4631 => install nRF52 platform     
+- RAK4631 => install nRF52 platform
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Board-Support-Package-Installation-in-PlatformIO/Platform-nRF52.png"
@@ -84,19 +84,19 @@ After the required platforms are installed, follow the steps as shown in [Update
 ### Update
 After updating or installing the nRF52, ESP32 or Raspberry Pi RP2040 package do the following steps:
 
-1. Open or create a project that uses the updated platform. 
+1. Open or create a project that uses the updated platform.
 2. Compile the project so that PlatformIO is installing the packages belonging to the platform
    - Ignore the _**Unknown board ID**_ or _**variant.h: No such file or directory**_ errors until the following patch has been applied
-3. Patch the platform and package   
-   - Unzip the contents of **RAK_PATCH.zip** into folder RAK_PATCH in your PlatformIO installation folder.    
-   
+3. Patch the platform and package
+   - Unzip the contents of **RAK_PATCH.zip** into folder RAK_PATCH in your PlatformIO installation folder.
+
 | Paths on different OS: |                                      |
 | ---------------------- | ------------------------------------ |
 | Windows                | `%USER%\.platformio\`                |
 | Linux                  | `~/.platformio/`                     |
 | MacOS                  | `/Users/{Your_User_id}/.platformio/` |
-   
-**Example (Windows 10):**    
+
+**Example (Windows 10):**
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Board-Support-Package-Installation-in-PlatformIO/folder-view.png"
@@ -104,11 +104,11 @@ After updating or installing the nRF52, ESP32 or Raspberry Pi RP2040 package do 
   caption="Path to install RAK_PATCH in PlatformIO"
 />
 
-**Install the patch**    
+**Install the patch**
 
 Open a terminal in the .platformio folder and execute **`python ./rak_patch.py`**
 
-Example (Windows 10 terminal):    
+Example (Windows 10 terminal):
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Board-Support-Package-Installation-in-PlatformIO/patch_windows.png"
@@ -116,7 +116,7 @@ Example (Windows 10 terminal):
   caption="Windows 10"
 />
 
-Example (Linux terminal):    
+Example (Linux terminal):
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Board-Support-Package-Installation-in-PlatformIO/patch_linux.png"
@@ -157,6 +157,6 @@ Example (Linux terminal):
 
 :::tip 📝 NOTE
 As same as Arduino IDE, there is an upload icon on the right of compiling icon which can be used to upload the compiled firmware into your device.
-::: 
+:::
 
 <rk-author />

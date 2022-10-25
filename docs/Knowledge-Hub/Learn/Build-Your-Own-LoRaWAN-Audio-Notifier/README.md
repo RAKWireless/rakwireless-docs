@@ -15,18 +15,18 @@ header:
   title: Build Your Own LoRaWAN Audio Notifier
   caption: by <b>Christopher Méndez</b>
   img: /assets/images/knowledge-hub/banners/high-power-wifi-module-and-power-line-communications.jpg
-posted: 25/10/2022 05:00 PM
+posted: 10/25/2022 05:00 PM
 ---
 
 # Build Your Own LoRaWAN Audio Notifier
 
-Never miss an important situation with this LoRaWAN Audio Notifier using WisBlock Audio. It would be helpful to get an audio notification to call our attention in particular situations, such as when a variable is approaching a risky limit, a procedure is complete, or even when a smart doorbell is installed at home. 
+Never miss an important situation with this LoRaWAN Audio Notifier using WisBlock Audio. It would be helpful to get an audio notification to call our attention in particular situations, such as when a variable is approaching a risky limit, a procedure is complete, or even when a smart doorbell is installed at home.
 
-## Hardware 
+## Hardware
 
 To carry out this test, you need the following hardware components:
 
-- [RAK5005-O WisBlock Base Board](https://store.rakwireless.com/products/rak5005-o-base-board?utm_source=RAK5005-OWisBlockBaseBoard&utm_medium=Document&utm_campaign=BuyFromStore) 
+- [RAK5005-O WisBlock Base Board](https://store.rakwireless.com/products/rak5005-o-base-board?utm_source=RAK5005-OWisBlockBaseBoard&utm_medium=Document&utm_campaign=BuyFromStore)
 - [RAK11310 (RP2040) WisBlock Core Module](https://store.rakwireless.com/collections/wisblock-core/products/rak11310-wisblock-lpwan-module?utm_source=RAK11310WisBlockCoreModule&utm_medium=Document&utm_campaign=BuyFromStore)
 - [RAK18060 WisBlock Audio Stereo Amplifier Module](https://store.rakwireless.com/products/5-6w-stereo-amplifier-texas-instruments-tas2560-rak18060?utm_source=RAK18060&utm_medium=Document&utm_campaign=BuyFromStore)
 - LoRa Antenna
@@ -38,7 +38,7 @@ This is also compatible with the ESP32 and Nordic cores.
 :::
 
 
-## Software 
+## Software
 
 - **Helium Console**
 - **Arduino IDE**
@@ -190,7 +190,7 @@ uint8_t nodeAppKey[16] = {0x03, 0xE6, 0xF0, 0xC1, 0x75, 0x2C, 0x91, 0x9F, 0x70, 
   caption="Powering the device"
 />
 
-3. To send a message to the project so it can send notifications, go to the blue downlink icon on the right of your screen, as shown in **Figure 12** 
+3. To send a message to the project so it can send notifications, go to the blue downlink icon on the right of your screen, as shown in **Figure 12**
 
 4. Set the Payload type to Text. Enter one of the trigger commands (G1 or B1), and uncheck the confirmation of response box.
 
@@ -205,7 +205,7 @@ uint8_t nodeAppKey[16] = {0x03, 0xE6, 0xF0, 0xC1, 0x75, 0x2C, 0x91, 0x9F, 0x70, 
 You will need to send the message **B1** or **G1** = **Base64** (**QjE=** and **RzE=**, respectively) to trigger the notification.
 :::
 
-5. Click again the blue downlink icon. Right after the module has sent something, the notification will be executed. 
+5. Click again the blue downlink icon. Right after the module has sent something, the notification will be executed.
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/lorawan-audio-notifier/test-device.png"

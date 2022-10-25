@@ -9,7 +9,7 @@ header:
   title: RAK Industrial LPWAN Gateway Remote Management - OpenVPN
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/gateway-remote-management-openvpn.jpg
-posted: 2/29/2020 10:30 AM
+posted: 02/29/2020 10:30 AM
 ---
 
 # RAK Industrial LPWAN Gateway Remote Management - OpenVPN
@@ -55,8 +55,8 @@ wget https://github.com/OpenVPN/easy-rsa/archive/v3.0.6.tar.gz -O easyrsa.tar.gz
 * Extract and copy easyrsa to /etc/openvpn/easyrsa/
 
 ```sh
-sudo mkdir -p /etc/openvpn/easyrsa 
-tar zxvf easyrsa.tar.gz 
+sudo mkdir -p /etc/openvpn/easyrsa
+tar zxvf easyrsa.tar.gz
 sudo cp -rf easy-rsa-3.0.6/easyrsa3/* /etc/openvpn/easyrsa/
 ```
 
@@ -130,14 +130,14 @@ Add an inbound rule in the AWS Security Group for **UDP port 1194**.
 />
 
 ```sh
-# openvpn server 
+# openvpn server
 cd /etc/openvpn/server
 daemon
 dev tap
 proto udp
 
 #local ipaddr to bind. Change it with Server IP.
-local 123.56.96.211 
+local 123.56.96.211
 port 1194
 
 server-bridge 10.0.8.1 255.255.255.0 10.0.8.11 10.0.8.100
@@ -166,7 +166,7 @@ verb 3
 script-security 2
 ```
 
-* Create a virtual tap interface and fill in the interface-up.sh. 
+* Create a virtual tap interface and fill in the interface-up.sh.
 
 ```sh
 sudo nano /etc/openvpn/server/interface-up.sh
@@ -313,7 +313,7 @@ n7UOb+khvmsD
 
 # Client certificate PEM
 # Copy from server /etc/openvpn/easyrsa/pki/issued/managment.crt
-# 
+#
 
 <cert>
 
@@ -397,7 +397,7 @@ ENCGBuhos/YdITFeKQ381zk=
   caption="Open VPN Taskbar Icon"
 />
 
-* Right click Import file and open management_client.ovpn file. 
+* Right click Import file and open management_client.ovpn file.
 
 <rk-img
   src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-openvpn/importing-openvpn-client-file.png"
@@ -425,7 +425,7 @@ If everything is set up properly, a connection log window will disappear after t
 The OpenVPN should now be in green, see Figure 8, meaning the connection is successful. You can check which clients are currently connected to the OpenVPN Server and their corresponding IP addresses by executing the following command in your Ubuntu console:
 
 ```sh
-sudo nano /etc/openvpn/server/ip_pool.txt 
+sudo nano /etc/openvpn/server/ip_pool.txt
 ```
 
 <rk-img
@@ -481,7 +481,7 @@ Once the certificates are assembled into a single file, you need to import the c
 * Check again in the client list file on the OpenVPN Server for the IP address of the Gateway:
 
 ```sh
-sudo nano /etc/openvpn/server/ip_pool.txt 
+sudo nano /etc/openvpn/server/ip_pool.txt
 ```
 
 <rk-img

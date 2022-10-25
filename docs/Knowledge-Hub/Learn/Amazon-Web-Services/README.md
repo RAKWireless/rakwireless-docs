@@ -9,7 +9,7 @@ header:
   title: Amazon Web Services
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/amazon-web-service.jpg
-posted: 8/31/2020 3:59 PM
+posted: 08/31/2020 3:59 PM
 ---
 
 # Amazon Web Services
@@ -161,7 +161,7 @@ Convert first the keys from `.pem` format to `.ppk` format as this is what PuTTY
 user_name@public_dns_name
 ```
 
-* **Example**: 
+* **Example**:
     * **user_name**: ubuntu
     * **public_dns_name**: ec2-3-120-237-38.eu-central-1.compute.amazonaws.com
     * **Host name**: [ubuntu@ec2-3-120-237-38.eu-central-1.compute.amazonaws.com](mailto:ubuntu@ec2-3-120-237-38.eu-central-1.compute.amazonaws.com)
@@ -294,7 +294,7 @@ Jun 18 10:20:29 ip-172-31-33-125 chirpstack-application-server[5591]: time="2020
 Jun 18 10:20:29 ip-172-31-33-125 chirpstack-application-server[5591]: time="2020-06-18T10:20:29Z" level=info msg="api/as: starting application-server api" bind="0.0.0.0:8001" ca_cert= tls_cert= tls_key=
 ```
 
-# Installing the Gateway Bridge 
+# Installing the Gateway Bridge
 
 In this section, an outline is provided on how to perform the installation. For detailed information, you can visit [Chirpstack.io](https://www.chirpstack.io/).
 
@@ -352,7 +352,7 @@ By default, all inbound traffic to an AWS Instance is blocked, only port 22 (SSH
 
 * The Semtech Packet Forwarder needs **UDP port 1700**;
 * MQTT Bridge (unsecured) needs **TCP port 1883**;
-* MQTT Bridge (secured) needs **TCP port 8883**; 
+* MQTT Bridge (secured) needs **TCP port 8883**;
 * Chirpstack Web Ui needs **TCP port 8080**.
 
 1. Open the Security Groups tab in the AWS Dashboard:
@@ -441,7 +441,7 @@ Read the [LoRa Network](/Knowledge-Hub/Learn/Resources/Web-Management-Platform/#
 
 ## MQTT Bridge Set-up
 
-If you want to use the MQTT Bridge to forward your LoRa Traffic to your LoRa Network Server, you need to configure your Gateway use the Bridge instead of the Packet Forwarder. 
+If you want to use the MQTT Bridge to forward your LoRa Traffic to your LoRa Network Server, you need to configure your Gateway use the Bridge instead of the Packet Forwarder.
 
 1. Navigating through **LoRa Network-> Network Settings-> Packet Forwarder Settings-> General Setup**, set the Protocol in the drop-down list to **LoRa Gateway MQTT Bridge**. Then, click "**Save and Apply**".
 

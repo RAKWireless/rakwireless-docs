@@ -8,7 +8,7 @@ header:
   title: How To Connect LoRa Module RAK811 To Actility?
   caption: by <b>Ken Yu</b>
   img: /assets/images/knowledge-hub/banners/how-to-connect-lora-module-rak811-to-actility.jpg
-posted: 3/23/2017 10:30 AM
+posted: 03/23/2017 10:30 AM
 author:
   name: Ken Yu
   about: "Founder and CEO of RAKwireless. Making Things at #Rakwireless with The #RAKstars"
@@ -125,7 +125,7 @@ In this part, I will use WisNode-Lora EVB to demonstrate how to add our LoRa RAK
 
 ![Create List](/assets/images/knowledge-hub/tutorials/how-to-connect-lora-module-rak811-to-actility/create-list.png)
 
-4. Fill in the following form as required. 
+4. Fill in the following form as required.
 
 ![Node Requirements](/assets/images/knowledge-hub/tutorials/how-to-connect-lora-module-rak811-to-actility/node-requirements.png)
 
@@ -154,7 +154,7 @@ If you do not have an Application key, you can create one yourself. It must be a
 
 Boot information : Welcome to RAK811
 
-**Send**: 
+**Send**:
 ```sh
 at+mode=0 /* SET LoraWAN work mode */
 ```
@@ -167,30 +167,30 @@ at+mode=0 /* SET LoraWAN work mode */
 ``` sh
 at+set_config=dev_eui:60C5A8FFFE000001   /* GET Dev_EUI check if NULL ,set the enter before information */
 ```
-**Return**: 
+**Return**:
 ```sh
 OK
 ```
 
-**Send**:  
+**Send**:
 ```sh
 at+set_config=app_eui:1122334455667788&app_key:11223344556677881122334455667788 /* SET LoraGateway app_eui and app_key , big endian, you set at Step 4*/
 ```
-**Return**: 
+**Return**:
 ```sh
 OK
 ```
 
-**Send**:  
+**Send**:
 ```sh
 at+join=otaa  /* Join OTAA type*/
 ```
-**Return**: 
+**Return**:
 ```sh
 OK
 ```
 
-**Return**: 
+**Return**:
 ```sh
 at+recv=3,0,0  /* Join status success*/
 ```
@@ -203,20 +203,20 @@ at+recv=3,0,0  /* Join status success*/
 
 9. After join gateway success, then can send and receive data, refresh dashboard page, we can see Active Device(s) is 1 , it means our module connect with server。
 
-**Send**:  
+**Send**:
 ```sh
 at+send=0,2,000000000000007F0000000000000000 /*APP port:2, battery level 50%, unconfirmed message*/
 ```
-**Return**: 
+**Return**:
 ```sh
 at+recv=2,0,0  /*unconfirmed mean tx success*/
 ```
 
-**Send**:  
+**Send**:
 ```sh
 at+send=1,2,000000000000007F0000000000000000 /*APP port :2, battery level 50%, confirmed message*/
 ```
-**Return**: 
+**Return**:
 ```sh
 at+recv=1,0,0  /*confirmed mean receive ack from gateway*/
 ```

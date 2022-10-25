@@ -9,7 +9,7 @@ header:
   title: E-Paper and QR Codes
   caption: by <b>Kongduino</b>
   img: /assets/images/knowledge-hub/banners/wisblock-sensor-tutorial.jpg
-posted: 1/20/2022 5:40 PM
+posted: 01/20/2022 5:40 PM
 ---
 
 # E-Paper and QR Codes
@@ -26,7 +26,7 @@ From price tags to badges, e-paper is a great choice for displays that change on
 
 - <b> WisBlock </b>
     - [RAK5005-O Base Board](https://store.rakwireless.com/collections/wisblock-base/products/rak5005-o-base-board): A full-size base with a [RAK4631](https://store.rakwireless.com/collections/wisblock-core/products/rak4631-lpwan-node) core.
-    - [RAK14000 EPD Module](https://store.rakwireless.com/collections/wisblock-display/products/wisblock-epd-module-rak14000): The EPD is connected to the IO slot, which is why we need a full-size base. Also, we will not be using buttons for now. 
+    - [RAK14000 EPD Module](https://store.rakwireless.com/collections/wisblock-display/products/wisblock-epd-module-rak14000): The EPD is connected to the IO slot, which is why we need a full-size base. Also, we will not be using buttons for now.
     - [RAK15000 EEPROM Module](https://store.rakwireless.com/collections/wisblock-storage/products/wisblock-eeprom-module-rak15000): A storage solution to save important data.
 
 
@@ -34,7 +34,7 @@ From price tags to badges, e-paper is a great choice for displays that change on
 Aside from RAK15000, you can opt for either of these two:
 
 - [RAK15001 Flash Module](https://store.rakwireless.com/collections/wisblock-storage/products/wisblock-flash-module-rak15001)
-- [RAK15002 WisBlock SD Card Module](https://store.rakwireless.com/collections/wisblock-storage/products/sd-card-module-rak15002) 
+- [RAK15002 WisBlock SD Card Module](https://store.rakwireless.com/collections/wisblock-storage/products/sd-card-module-rak15002)
 :::
 
 
@@ -155,10 +155,10 @@ Now that we have something to display, let's initialize the display, and draw so
   display.display(true);
 ```
 
-In the code tidbit above, we will see a few things: 
+In the code tidbit above, we will see a few things:
   - EPD module is turned on with `WB_IO2`;
   - `showQRCode` function draws a QR code based on the buffer that has been displayed in the Serial monitor;
-  - `drawBitmap()` draws a bitmap image, stored in a slightly weird format in a `.h` file; 
+  - `drawBitmap()` draws a bitmap image, stored in a slightly weird format in a `.h` file;
   - and `testdrawtext`.
 
 

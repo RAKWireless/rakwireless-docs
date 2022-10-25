@@ -10,14 +10,18 @@ header:
   title: Build a Seismic Sensor with WisBlock
   caption: by <b>Bernd Giesecke</b>
   img: /assets/images/knowledge-hub/banners/high-power-wifi-module-and-power-line-communications.jpg
-posted: 14/10/2022 08:00 AM
+posted: 10/14/2022 08:00 AM
+author:
+  name: Bernd Giesecke
+  about: Electronics Engineer, 23 years experience in industrial and automotive HW and SW R&D. Supporting Arduino open source community since 6 years.
+  img: /assets/images/knowledge-hub/authors/bernd-giesecke.png
 ---
 
 # Build a Seismic Sensor with WisBlock
 
 Earthquakes can be dangerous and are often unpredictable. One of the mitigation efforts is to deploy seismic stations around the globe, which aid in measuring the movement of the ground.
 
-With this, Omron created an affordable sensor - the D7S module - that can detect earthquakes and measure their intensity as SI values. The SI values have a high correlation with the seismic intensity scale, indicating the magnitude of an earthquake.    
+With this, Omron created an affordable sensor - the D7S module - that can detect earthquakes and measure their intensity as SI values. The SI values have a high correlation with the seismic intensity scale, indicating the magnitude of an earthquake.
 
 While this product cannot predict earthquakes, it is a good solution to send warnings and protect sensitive machinery in case an earthquake occurs. Besides measuring the strength, it generates a warning signal if the SI level is higher than 5 that can be used to shut down machinery. It also detects if the horizontal position of the sensor changes, which points towards a collapse of the structure where the sensor was deployed.
 
@@ -30,7 +34,7 @@ Check out the following Omrons documentation for the D7S module:
 
 Using the small-sized [**RAK12027 Seismic Sensor**](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK12027/Overview) together with the WisBlock Core and WisBlock Base modules makes it very easy to build up the earthquake warning system.
 
-This example can be used as a starting point in building a low-power consumption seismic alarm system. It can be powered by a battery and solar panel. The consumption in sleep mode is ~90uA. 
+This example can be used as a starting point in building a low-power consumption seismic alarm system. It can be powered by a battery and solar panel. The consumption in sleep mode is ~90uA.
 
 The code is completely interrupt-based to keep the MCU as much as possible in sleep mode to save battery. The collected data of an earthquake is sent over LoRaWAN, but it can also be used with LoRa P2P. It sends data packets after the D7S has finished its data processing with the information on the SI level, PGA, shutdown alert, and collapse alert signal.
 
@@ -57,13 +61,13 @@ The code is completely interrupt-based to keep the MCU as much as possible in sl
 This project uses the following RAK products:
  -  [**RAK19007**](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK19007/Overview) Base Board
  -  [**RAK12027**](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK12027/Overview) Seismic Sensor
- -  [**RAK1901**](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1901/Overview) Temperature and Humidity Sensor (*optional*)   
-- In case the firmware is built with the RAK-nRF52 Arduino BSP, it uses the [**RAK4631**](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK4631/Overview) Core Module.  
-- In case the RAK RUI3 API is used for the firmware, it uses the [**RAK4631-R**](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK4631-R/Overview) Core Module.    
+ -  [**RAK1901**](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1901/Overview) Temperature and Humidity Sensor (*optional*)
+- In case the firmware is built with the RAK-nRF52 Arduino BSP, it uses the [**RAK4631**](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK4631/Overview) Core Module.
+- In case the RAK RUI3 API is used for the firmware, it uses the [**RAK4631-R**](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK4631-R/Overview) Core Module.
 
 ## Assembly
 
-1. Place the WisBlock Core and WisBlock Sensor module in the following slots of the RAK19007 Base Board (Core slot and Sensor slot D, respectively):    
+1. Place the WisBlock Core and WisBlock Sensor module in the following slots of the RAK19007 Base Board (Core slot and Sensor slot D, respectively):
 <rk-img
   src="\assets\images\knowledge-hub\tutorials\build-a-seismic-sensor-with-wisblock\Assembly-Animation.gif"
   width="60%"
@@ -72,9 +76,9 @@ This project uses the following RAK products:
 
 2. Make sure to fix the modules with the screws coming with the WisBlock modules. In case of an intense earthquake, they might fall off the Base Board if not secured with the screws.
 
-3. For the enclosure, the [Unify Enclosure RAKBox-UO100x75x38](https://docs.rakwireless.com/Product-Categories/WisBlock/RAKBox-UO100x75x38/Overview) is used.    
+3. For the enclosure, the [Unify Enclosure RAKBox-UO100x75x38](https://docs.rakwireless.com/Product-Categories/WisBlock/RAKBox-UO100x75x38/Overview) is used.
 
-4. Assemble the WisBlock Base board on the mounting plate.    
+4. Assemble the WisBlock Base board on the mounting plate.
 
 <rk-img
   src="\assets\images\knowledge-hub\tutorials\build-a-seismic-sensor-with-wisblock\mounting-plate.jpg"
@@ -100,7 +104,7 @@ This project uses the following RAK products:
   caption="Fixing mounting plate in Unify Enclosure"
 />
 
- - For a large battery, use stand-offs and a battery carrier like the one from the [**Awesome WisBlock**](https://github.com/RAKWireless/Awesome-WisBlock/tree/main/Unify-Enclosure#second-level-battery-holder) repo to fix the battery above the WisBlock.  
+ - For a large battery, use stand-offs and a battery carrier like the one from the [**Awesome WisBlock**](https://github.com/RAKWireless/Awesome-WisBlock/tree/main/Unify-Enclosure#second-level-battery-holder) repo to fix the battery above the WisBlock.
 
 <rk-img
   src="\assets\images\knowledge-hub\tutorials\build-a-seismic-sensor-with-wisblock\large-battery-carrier.jpg"
@@ -119,7 +123,7 @@ This project uses the following RAK products:
 Both the RUI3 and the Arduino code are based on interrupts and timers. After joining the LoRaWAN network, the MCU goes into sleep mode until it wakes up from the following:
 
    - From an interrupt coming from the D7S sensor.
-   - From a timer to send a frequent "_**I am Alive**_" message.    
+   - From a timer to send a frequent "_**I am Alive**_" message.
 
 On wake up, the code then checks for the wake up reason and handles the situation. There are four (4) different interrupt events:
 
@@ -148,13 +152,13 @@ The Arduino version uses in addition the [**WisBlock-API**](https://github.com/b
 
 ### Seismic Sensor Code for RAK4631 Using the RAK-nRF52 BSP for Arduino
 
-The Arduino code is based on the [**WisBlock-API**](https://github.com/beegee-tokyo/WisBlock-API), an event-driven framework that handles all communication tasks in the background and just waits for a timer or external interrupt to wake up.    
+The Arduino code is based on the [**WisBlock-API**](https://github.com/beegee-tokyo/WisBlock-API), an event-driven framework that handles all communication tasks in the background and just waits for a timer or external interrupt to wake up.
 The provided code is for PlatformIO, but can easily be changed to work in the Arduino IDE.
 
 Depending on the Sensor Slot used, the D7S interrupts INT1 and INT2 and must be assigned to the correct GPIOs. This can be done in the `platformio.ini` files with the **`build_flags`** option:
 
 ```
-build_flags = 
+build_flags =
   -DRAK12027_SLOT=2 ; 0 = Slot A, 1 = Slot B, 2 = Slot C, 3 = Slot D, 4 = Slot E, 5 = Slot F
 ```
 
@@ -162,20 +166,20 @@ If using the Arduino IDE, the correct assignment has to be done in the **`RAK120
 
 The Arduino-based firmware has an AT command interface. The available AT commands can be found in the [**AT Command Manual**](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK10700/AT-Command-Manual/).
 
-The complete source code is located in the [**PlatformIO source code**](https://github.com/beegee-tokyo/WisBlock-Seismic-Sensor/tree/main/PIO-Arduino-Seismic-Sensor) folder of the repository.    
+The complete source code is located in the [**PlatformIO source code**](https://github.com/beegee-tokyo/WisBlock-Seismic-Sensor/tree/main/PIO-Arduino-Seismic-Sensor) folder of the repository.
 
 ### Seismic Sensor Code for RAK4631-R and RAK3172 Using the RAK RUI3 API
 
-The RUI3-based code is working on the RAK4631-R and RAK3172 modules without any change in the code.    
+The RUI3-based code is working on the RAK4631-R and RAK3172 modules without any change in the code.
 The assignment of the D7S interrupts INT1 and INT2 and must be assigned in the **`RAK12027_seismic.cpp`** file.
 
-The complete source code is located in the [**RUI3 source code**](https://github.com/beegee-tokyo/WisBlock-Seismic-Sensor/tree/main/RUI3-Seismic-Sensor) folder of the repository.    
+The complete source code is located in the [**RUI3 source code**](https://github.com/beegee-tokyo/WisBlock-Seismic-Sensor/tree/main/RUI3-Seismic-Sensor) folder of the repository.
 
 ### RAK12027 Seismic Sensor Setup
 
 The functions to set up the sensor and handle the sensor interrupts are nearly the same for Arduino and RUI3. The main difference is how the interrupt handlers wake up the MCU to check the source of the interrupts.
 
-In the **`init_rak120271()** function, the sensor is initialized and calibrated. The calibration is necessary as the sensor will determine its horizontal position. It is required for both earthquake detection and collapse alert. The function assigns as well the interrupt handlers for the two interrupt sources from the D7S sensor.    
+In the **`init_rak120271()** function, the sensor is initialized and calibrated. The calibration is necessary as the sensor will determine its horizontal position. It is required for both earthquake detection and collapse alert. The function assigns as well the interrupt handlers for the two interrupt sources from the D7S sensor.
 
 For Arduino, the two interrupt handlers wake up the loop by releasing a semaphore with the **`api_wake_loop()`** call. They set as well the reason for the wake up so that it can be handled in the application.
 
@@ -306,7 +310,7 @@ The packet sent out is displayed as hex values, which look like this:
 
 ## Example for Visualization and Alert Message
 
-As a simple example to visualize the earthquake data and send an alert, I created a device in [**Datacake**](https://datacake.co).    
+As a simple example to visualize the earthquake data and send an alert, I created a device in [**Datacake**](https://datacake.co).
 Datacake is an easy-to-use **Low Code IoT** platform. In my Datacake account, I set up the device with the matching payload decoder, visualization, and creation of an email alert.
 
 ### Datacake Payload Decoder
@@ -345,10 +349,15 @@ To send a warning email when an earthquake occurs, a Datacake rule is used to se
 
 ### Datacake Visualization
 
-In the dashboard, you can show the current status and the latest SI and PGA levels.    
+In the dashboard, you can show the current status and the latest SI and PGA levels.
 
 <rk-img
   src="\assets\images\knowledge-hub\tutorials\build-a-seismic-sensor-with-wisblock\datacake-dashboard.png"
   width="100%"
   caption="Seismic sensor Datacake dashboard"
 />
+
+
+---
+
+<rk-author />

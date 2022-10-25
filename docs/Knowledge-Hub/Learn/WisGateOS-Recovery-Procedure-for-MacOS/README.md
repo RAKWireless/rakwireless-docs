@@ -10,7 +10,7 @@ header:
   title: WisGateOS Recovery Procedure for MacOS
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/multi-rak-gateway-mesh.jpg
-posted: 4/18/2022 10:30 AM
+posted: 04/18/2022 10:30 AM
 ---
 
 # WisGateOS Recovery Procedure for MacOS
@@ -22,7 +22,7 @@ posted: 4/18/2022 10:30 AM
 - USB type A to USB type C cable
 - Ethernet cable
 - Latest firmware
-  - [RAK7268/C](https://downloads.rakwireless.com/LoRa/RAK7268/Firmware/RAK7268_Latest_Firmware.zip) 
+  - [RAK7268/C](https://downloads.rakwireless.com/LoRa/RAK7268/Firmware/RAK7268_Latest_Firmware.zip)
   - [RAK7289/C](https://downloads.rakwireless.com/LoRa/RAK7289/RAK7289_Latest_Firmware.zip)
 
 ## Connecting the Gateway
@@ -64,7 +64,7 @@ If there are no other USB serial devices connected the one starting with **cu.us
   caption="Blank terminal"
 />
 
-5. Power on the gateway. 
+5. Power on the gateway.
 6. If everything is configured correctly, you will see the booting of the gateway with some additional options.
 
 <rk-img
@@ -75,9 +75,9 @@ If there are no other USB serial devices connected the one starting with **cu.us
 
 ## LAN Card Configuration
 
-To be able to send the firmware to the gateway, you need to set the LAN card to a static address. 
+To be able to send the firmware to the gateway, you need to set the LAN card to a static address.
 
-1. Go to the Network Preferences of your MAC OS and select the LAN card settings. In this example, it is a USB LAN card. 
+1. Go to the Network Preferences of your MAC OS and select the LAN card settings. In this example, it is a USB LAN card.
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/wisgateos-for-macos/5.png"
@@ -85,7 +85,7 @@ To be able to send the firmware to the gateway, you need to set the LAN card to 
   caption="LAN card settings"
 />
 
-2. Change the **Configure IPv4** option to **Manually**. 
+2. Change the **Configure IPv4** option to **Manually**.
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/wisgateos-for-macos/6.png"
@@ -105,7 +105,7 @@ To be able to send the firmware to the gateway, you need to set the LAN card to 
 
 ## Downloading the Firmware
 
-1. Based on the used model, download the latest available firmware: 
+1. Based on the used model, download the latest available firmware:
 - [RAK7268/C latest firmware](https://downloads.rakwireless.com/LoRa/RAK7268/Firmware/RAK7268_Latest_Firmware.zip)
 - [RAK7289/C latest firmware](https://downloads.rakwireless.com/LoRa/RAK7289/RAK7289_Latest_Firmware.zip)
 
@@ -129,7 +129,7 @@ To be able to send the firmware to the gateway, you need to set the LAN card to 
   caption="Finding the TFTP boot folder"
 />
 
-3. Open another terminal and run the following commands: 
+3. Open another terminal and run the following commands:
 - To start the TFTP server:
 
 ```
@@ -159,7 +159,7 @@ sudo chmod 777 /private/tftpboot/*
 ## Flashing the Gateway
 
 1. Go back to the terminal you used to configure the communication.
-2. Restart the gateway with the reset button. 
+2. Restart the gateway with the reset button.
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/wisgateos-for-macos/11.png"
@@ -167,7 +167,7 @@ sudo chmod 777 /private/tftpboot/*
   caption="Restarting the gateway"
 />
 
-3. A dialog will appear in the terminal, press 2 on the keyboard to select the **Load system code then write to Flash via TFTP** option. 
+3. A dialog will appear in the terminal, press 2 on the keyboard to select the **Load system code then write to Flash via TFTP** option.
 
 4. For the next dialog enter the answers below:
 

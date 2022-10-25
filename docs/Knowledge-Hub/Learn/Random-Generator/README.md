@@ -1,7 +1,7 @@
 ---
 sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/lorandom.jpg
-rak_desc: A guide on how to use the random generator feature of Semtech LoRa transceivers in RAK Modules.  
+rak_desc: A guide on how to use the random generator feature of Semtech LoRa transceivers in RAK Modules.
 tags:
   - Tutorial
   - WisDuo
@@ -13,12 +13,12 @@ header:
   title: Random Numbers and LoRa
   caption: by <b>Kongduino</b>
   img: /assets/images/knowledge-hub/banners/lorawan-vs-the-world-of-iot.jpg
-posted: 9/13/2022 2:00 PM
+posted: 09/13/2022 2:00 PM
 ---
 
 # Random Numbers and LoRa
 
-LoRa chips bring an unexpected bonus related to radio frequencies: random numbers generation. Both the SX127x and the SX126x series provide this service through one or more registers. 
+LoRa chips bring an unexpected bonus related to radio frequencies: random numbers generation. Both the SX127x and the SX126x series provide this service through one or more registers.
 
 In the SX127x series, the process is a little more involved (and some LoRa libraries for this chip get it wrong) but offers more control on the data generated (including adding whitening with, for example, a von Neumann extractor). On the other hand, the SX126x makes it easier, but the process is quite opaque, and you are delivered four (4) random bytes without being given any control. Let's have a look.
 
@@ -26,7 +26,7 @@ In the SX127x series, the process is a little more involved (and some LoRa libra
 
 ### RegRssiWideband
 
-In these older LoRa chips, what you do is read Register 0x2C, the RSSI Wideband Register. This Wideband RSSI measurement can be used to generate a random number, but you have to be careful with the data. If you return the contents of this register and hope to have a number anywhere near random, you'll be disappointed. 
+In these older LoRa chips, what you do is read Register 0x2C, the RSSI Wideband Register. This Wideband RSSI measurement can be used to generate a random number, but you have to be careful with the data. If you return the contents of this register and hope to have a number anywhere near random, you'll be disappointed.
 
 What you need to do is extract the lowest significant bit, bit 0, which is much more probable to be as close to truly random as possible than its neighbors, and add it to a pile of other LSB taken successively from this register. This will create a possibly random number between 0 and 255. With the help of a randomness extractor, you can generate a highly random output that appears independent from the source and uniformly distributed.
 
@@ -83,7 +83,7 @@ void setupLoRandom() {
   // 0: Explicit Header mode
   writeRegister(RegModemConfig1, 0b01110010);
   delay(10);
-  
+
   // 0110: SF 6
   // 1: continuous mode, send multiple packets across the FIFO
   // 0: disable CRC check on payload

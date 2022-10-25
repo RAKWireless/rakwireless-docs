@@ -66,7 +66,7 @@ The hardware specification is categorized into four (4) parts. It shows the pino
 
 ##### WisBlock IO Connector
 
-The RAK18033 WisBlock Audio Stereo Microphone comprises a standard WisBlock connector. The WisBlock connector allows the RAK18033 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
+The RAK18033 WisBlock Audio Stereo Microphone comprises a standard WisBlock connector. The WisBlock connector allows the RAK18033 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 4**.
 
 <rk-img
   src="/assets/images/wisblock/rak18033/datasheet/rak18033-pinouts.png"

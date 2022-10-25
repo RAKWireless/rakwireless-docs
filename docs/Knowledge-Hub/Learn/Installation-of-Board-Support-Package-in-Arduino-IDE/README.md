@@ -9,7 +9,7 @@ header:
   title: Installation of Board Support Package in Arduino IDE
   caption: by <b>Bernd Giesecke</b>
   img: /assets/images/knowledge-hub/banners/bsp-in-arduino-ide.jpg
-posted: 8/14/2020 10:21 AM
+posted: 08/14/2020 10:21 AM
 author:
   name: Bernd Giesecke
   about: Electronics Engineer, 23 years experience in industrial and automotive HW and SW R&D. Supporting Arduino open source community since 6 years.
@@ -24,8 +24,8 @@ author:
 For WisBlock coding and programming, use Arduino IDE. If you don't have an Arduino IDE yet, you can download it in the [Arduino official website](https://www.arduino.cc/en/Main/Software).
 
 ----
-:::warning ⚠️ WARNING    
-_**If you are using Windows 10**_.    
+:::warning ⚠️ WARNING
+_**If you are using Windows 10**_.
 Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Please install the original Arduino IDE from the Arduino official website! The Arduino app from the Microsoft App Store has problems to use third party Board Support Packages.
 :::
 
@@ -43,7 +43,7 @@ You can see the current version of Arduino IDE is V1.8.13, and there are several
 
 ### Install in Windows
 
-Now let's install the Arduino IDE, which you just downloaded, on your Windows PC. 
+Now let's install the Arduino IDE, which you just downloaded, on your Windows PC.
 
 1. Click **I Agree** to proceed.
 
@@ -153,7 +153,7 @@ Once Arduino IDE has been installed successfully, and you've understood the main
 3. To add the WisBlock Core on your Arduino Boards list, you need to edit the Additional Board Manager URLs. Click the icon as shown in Figure 10.
 
 :::tip 📝 NOTE
-You need to enable verbose output, as well, by clicking the checkboxes `compilation` and `upload`. This will ensure that you will see the important details like warnings and errors during compilation and uploading. 
+You need to enable verbose output, as well, by clicking the checkboxes `compilation` and `upload`. This will ensure that you will see the important details like warnings and errors during compilation and uploading.
 :::
 
 
@@ -183,7 +183,7 @@ If you are using Linux, you need to install adafruit-nrfutil via pip.
 
 5. Restart the Arduino IDE.
 
-6. Open the Boards Manager from Tools Menu. 
+6. Open the Boards Manager from Tools Menu.
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Installation-of-Board-Support-Package-in-Arduino-IDE/11.boards-manager.png"
@@ -210,7 +210,7 @@ If you are using Linux, you need to install adafruit-nrfutil via pip.
 />
 
 
-### Examples and Tutorials 
+### Examples and Tutorials
 
 After selecting a RAK board, you can see the examples for all WisBlock modules.
 
@@ -228,8 +228,8 @@ Aside from that, each WisBlock Modules has its own quick start guide to help you
 
 #### Compile an example
 
-Let's take one of the examples and compile it.      
-Open the LoRaWAN-OTAA example from the File -> Example menu.    
+Let's take one of the examples and compile it.
+Open the LoRaWAN-OTAA example from the File -> Example menu.
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Installation-of-Board-Support-Package-in-Arduino-IDE/15.select-lora-otaa-example.png"
   width="75%"
@@ -246,7 +246,7 @@ Next we need to install the LPWAN library. In the code in line 20 you can see th
   caption="Install LPWAN library step 1"
 />
 
-Double click on the link to open the library manager. It will show you the required library. 
+Double click on the link to open the library manager. It will show you the required library.
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/Installation-of-Board-Support-Package-in-Arduino-IDE/17.install-library-step2.png"
@@ -256,7 +256,7 @@ Double click on the link to open the library manager. It will show you the requi
 
 Click on **Install** to install the library. After installation you can close the library manager window.
 
-Now we are ready to compile the example code. 
+Now we are ready to compile the example code.
 
 Click on the **Verify/Compile** icon in the menu.
 
@@ -268,10 +268,10 @@ Click on the **Verify/Compile** icon in the menu.
 
 Now, you have successfully installed the LPWAN library and compiled your first WisBlock solution. However, to be able to connect to the LPWAN gateway and the LPWAN server, a few more steps are required. Head on to the full tutorial in the RAK [Github WisBlock repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/communications/LoRa/LoRaWAN) to see how to setup the node's EUI's and keys and how to register the node on the gateway and in the LPWAN server.
 
----- 
+----
 For more information about the examples and tutorials, visit RAK [Github WisBlock repository](https://github.com/RAKWireless/WisBlock).
 
-## Credits 
+## Credits
 
 This BSP is based on [Adafruits nRF52 BSP](https://github.com/adafruit/Adafruit_nRF52_Arduino). It is based on [Arduino-nRF5](https://github.com/sandeepmistry/arduino-nRF5) by **Sandeep Mistry** which is also based on the [Arduino SAMD Core](https://github.com/arduino/ArduinoCore-samd).
 

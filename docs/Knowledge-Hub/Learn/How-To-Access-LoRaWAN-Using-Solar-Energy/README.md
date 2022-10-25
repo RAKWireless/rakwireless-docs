@@ -8,7 +8,7 @@ header:
   title: How To Access LoRaWAN using Solar Energy
   caption: by <b>Sam Domingo</b>
   img: /assets/images/knowledge-hub/banners/access-lorawan-using-solar-energy.jpg
-posted: 5/02/2020 10:30 AM
+posted: 05/02/2020 10:30 AM
 author:
   name: Sam Domingo
   about: Sam is the technical and marketing content writer for RAKwireless. Her passion for writing that manifested in her playwriting and poetry now flows into her in-depth coverage of the IoT community.

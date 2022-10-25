@@ -1,14 +1,14 @@
 ---
 sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
-rak_desc: An overview of the RAKwireless new structure of the documentation center. 
+rak_desc: An overview of the RAKwireless new structure of the documentation center.
 tags:
   - Tutorial
 header:
   title: RAKwireless - New Structure of the Documentation Center
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/rakwireless-new-structure-of-the-documentation-center.jpg
-posted: 15/09/2020 6:00 PM
+posted: 09/15/2020 6:00 PM
 ---
 
 # RAKwireless - New Structure of the Documentation Center
@@ -31,11 +31,11 @@ That being stated, a possible question arises to like, "**_I can't see the produ
 * **WisDuo**: contain the LPWAN module, breakout, and evaluation board
 * **WisTrio**: a tracker module with a variety of sensors
 * **WisLink**: a concentrator modules that has LPWAN connectivity capabilities
-* **WisHat**: utilize the Raspberry Pi HAT 
+* **WisHat**: utilize the Raspberry Pi HAT
 * **WisDuino**: an Arduino compatible board
 
 
-As of this moment, RAKwireless offers you the following products listed in the table. It also includes the product category and sub-category for your reference. 
+As of this moment, RAKwireless offers you the following products listed in the table. It also includes the product category and sub-category for your reference.
 
 <table style="text-align: center">
 <thead>
@@ -56,7 +56,7 @@ As of this moment, RAKwireless offers you the following products listed in the t
       <td></td>
       <td></td>
       <td></td>
-      <td></td>      
+      <td></td>
     </tr>
     <tr>
       <td>Developer</td>
@@ -67,7 +67,7 @@ As of this moment, RAKwireless offers you the following products listed in the t
       <td>RAK7246G</td>
       <td></td>
       <td></td>
-      <td></td>      
+      <td></td>
     </tr>
     <tr>
       <td rowspan=4>WisNode</td>
@@ -79,7 +79,7 @@ As of this moment, RAKwireless offers you the following products listed in the t
       <td></td>
       <td></td>
       <td></td>
-      <td></td>   
+      <td></td>
     </tr>
     <tr>
       <td>Sense</td>
@@ -266,6 +266,6 @@ As of this moment, RAKwireless offers you the following products listed in the t
 </tbody>
 </table>
 
-With the new documentation center, RAK is committed to providing the necessary and supplemental documents to help you start with your forthcoming project, and also to give you a convenient experience as you navigate through these documents. 
+With the new documentation center, RAK is committed to providing the necessary and supplemental documents to help you start with your forthcoming project, and also to give you a convenient experience as you navigate through these documents.
 
 Should you have any concerns or feedback, let us know through our [RAK forum](https://forum.rakwireless.com/).

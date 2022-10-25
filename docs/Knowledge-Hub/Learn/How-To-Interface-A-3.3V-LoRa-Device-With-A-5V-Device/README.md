@@ -9,7 +9,7 @@ header:
   title: How to Interface a 3.3-V LoRa Device with a 5-V Device
   caption: by <b>Kongduino</b>
   img: /assets/images/knowledge-hub/banners/high-power-wifi-module-and-power-line-communications.jpg
-posted: 9/30/2022 6:00 PM
+posted: 09/30/2022 6:00 PM
 ---
 
 
@@ -17,13 +17,13 @@ posted: 9/30/2022 6:00 PM
 
 ## Overview
 
-I am building a LoRa dongle specifically for a Tandy TRS-80 Model 102, a 40-year-old portable computer, arguably the first usable laptop in existence – and still going strong. It was very popular with journalists and writers because of a combination of format (A4 size), keyboard, battery life, and general convenience. 
+I am building a LoRa dongle specifically for a Tandy TRS-80 Model 102, a 40-year-old portable computer, arguably the first usable laptop in existence – and still going strong. It was very popular with journalists and writers because of a combination of format (A4 size), keyboard, battery life, and general convenience.
 
 Today, its specs pale in comparison with modern laptops, but it still has a strong following and can be used for many things. I use it to write blog post drafts, this one included, but the main goal for me was to build a LoRa testing device, especially for LoRa distance tests.
 
 In terms of connectivity, it had a rich assortment back then, but today the only usable port is the RS-232 serial port, in its antiquated but still supported DB-25 format. There is plenty of DB-25 to DB-9 and DB-9 to USB cables, and even DB-25 to USB. So backing up and loading files is easy, albeit slow. So the temptation to create a LoRa dongle via the RS-232 port was strong, and I have taken a few steps.
 
-While this computer can be a programmer in BASIC, it is quite slow – although I suppose for a LoRa PING-PONG machine, it wouldn't matter that much. But I decided to go directly for the hard and fast option: ASM code. 
+While this computer can be a programmer in BASIC, it is quite slow – although I suppose for a LoRa PING-PONG machine, it wouldn't matter that much. But I decided to go directly for the hard and fast option: ASM code.
 
 The 80C85 CPU running on this laptop is a cousin of 8080, and by extension of the probably most famous CPU of all time, the Z80. Learning the 8085 "dialect" wasn't too hard, and there are assemblers running on modern machines. In a couple of days, I verified it can send and receive strings of characters via the RS232 port.
 
@@ -49,14 +49,14 @@ Now comes the real challenge: **building a dongle**. Most modern IoT machines, e
 
 
 
-Also, the other (minor difficulty) is that RS232 doesn't supply a 5-Volt line per se. When HIGH, the signals come out at 5&nbsp;V, but there's no power source for the device connected to it. The 25 pins can't provide a measly 5-V Signal. However, to function properly, the level shifter must receive 5&nbsp;V on one side and 3.3&nbsp;V on the other. 
+Also, the other (minor difficulty) is that RS232 doesn't supply a 5-Volt line per se. When HIGH, the signals come out at 5&nbsp;V, but there's no power source for the device connected to it. The 25 pins can't provide a measly 5-V Signal. However, to function properly, the level shifter must receive 5&nbsp;V on one side and 3.3&nbsp;V on the other.
 
 Fortunately, BastWAN has a USB line, which outputs 5&nbsp;V, or a little more. So I did the following:
 
  - Wired both sides with lines from the BastWAN;
  - GND to GND, on both sides;
  - Rx1/Tx1 on the Mega's side to HV1 and HV2;
- - Tx1/Rx1 on the BastWAN's side to LV1 and LV2. 
+ - Tx1/Rx1 on the BastWAN's side to LV1 and LV2.
 
 The level shifter is actually small enough to fit snugly inside the connector's casing, which would be the ideal solution.
 

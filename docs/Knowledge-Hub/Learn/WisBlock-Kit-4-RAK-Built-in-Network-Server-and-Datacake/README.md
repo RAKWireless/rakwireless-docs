@@ -1,7 +1,7 @@
 ---
 sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
-rak_desc: A step-by-step guide on how to register your WisBlock Kit/s 4 in the Built-in network server of any gateway from the WisGate Edge series and visualize the data in Datacake via MQTT integration. 
+rak_desc: A step-by-step guide on how to register your WisBlock Kit/s 4 in the Built-in network server of any gateway from the WisGate Edge series and visualize the data in Datacake via MQTT integration.
 tags:
   - Tutorial
   - WisBlock
@@ -9,7 +9,7 @@ header:
   title: WisBlock Kit 4 + RAK Built-in Network Server + Datacake
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/general_banner.jpg
-posted: 11/08/2022 10:55 PM
+posted: 08/11/2022 10:55 PM
 ---
 
 # WisBlock Kit 4 + RAK Built-in Network Server + Datacake
@@ -25,7 +25,7 @@ Some configurations of RAK7268 will be needed as well as the creation of an appl
 1. First, power on the gateway. To do so, you can refer to [RAK7268 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7268/Quickstart/).
 2. Then, you need to [access the gateway](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7268/Quickstart/#access-the-gateway).
 3. Connect the gateway to the internet. You can refer to the [Access the Internet](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7268/Quickstart/#access-the-internet) section of the Quick Start Guide.
-4. By default, the gateway is preconfigured to work in built-in network server mode. 
+4. By default, the gateway is preconfigured to work in built-in network server mode.
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/1.lora-network-settings.png"
@@ -69,7 +69,7 @@ For more information about the built-in network server, you can check the [Netwo
 />
 
 
-5. Head to the **Payload Formats** tab. 
+5. Head to the **Payload Formats** tab.
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/5.payload-format.png"
@@ -92,7 +92,7 @@ For more information about the built-in network server, you can check the [Netwo
 
 ### Register the WisBlock Kit 4 in the Application
 
-1. Proceed with adding the WisBlock Kit 4 end device to the application. 
+1. Proceed with adding the WisBlock Kit 4 end device to the application.
 
 :::tip 📝 NOTE
 Remember or write down the ID of the application, as it will be needed when creating decoders.
@@ -106,7 +106,7 @@ Remember or write down the ID of the application, as it will be needed when crea
 />
 
 
-2. To add the end device (the WisBlock Kit 4), click the **Edit** button of the application. 
+2. To add the end device (the WisBlock Kit 4), click the **Edit** button of the application.
 3. In the **please input device EUI** field, you need to type the EUI of the WisBlock Kit. You can find the EUI on the sticker on the RAK4631 module. Or you can scan the QR code on the module to get the device EUI. Type the EUI in the field and click the **Add** button.
 
 
@@ -127,12 +127,12 @@ Copy the device EUI as it will be used later when setting the end device and add
   caption="Configuring end device"
 />
 
-4. Give the name of your device in the **Device name** field. 
+4. Give the name of your device in the **Device name** field.
 5. You can configure the other settings to fulfill your needs. In this example, you will leave everything with its default settings.
 
 
 :::tip 📝 NOTE
-In this example, the device will be set in Class A, OTAA join mode. 
+In this example, the device will be set in Class A, OTAA join mode.
 :::
 
 6. When everything is set, click **Save & Apply** to add the device to the application.
@@ -158,7 +158,7 @@ In this example, the device will be set in Class A, OTAA join mode.
 
 :::tip 📝 NOTE
 - While here, you can copy somewhere the Uplink Topic as it will be used later when creating decoders for the payload.
-- When using a free public broker, it is recommended to set SSL/TLLS encryption for your data and user authentication. For this example, we will skip adding additional security for the communication. 
+- When using a free public broker, it is recommended to set SSL/TLLS encryption for your data and user authentication. For this example, we will skip adding additional security for the communication.
 :::
 
 ## Setting Up the WisBlock Kit 4
@@ -184,9 +184,9 @@ Before you open Tera Term, connect the WisBlock to your PC/laptop via a USB cabl
 ### Set Up the WisBlock Kit
 
 
-1. Now that the WisBlock is connected to the PC/laptop via the USB cable and Tera Term is launched, you can connect to the WisBlock. 
+1. Now that the WisBlock is connected to the PC/laptop via the USB cable and Tera Term is launched, you can connect to the WisBlock.
 
-Select **Serial**. From the **Port** drop-down menu, find the COM port of the WisBlock. It should be named: **COMX: USB Serial Device (COMX)**, where ‘**X**’ is the number of the port. In this example, the port number is 27. Yours might be different. 
+Select **Serial**. From the **Port** drop-down menu, find the COM port of the WisBlock. It should be named: **COMX: USB Serial Device (COMX)**, where ‘**X**’ is the number of the port. In this example, the port number is 27. Yours might be different.
 
 
 <rk-img
@@ -195,7 +195,7 @@ Select **Serial**. From the **Port** drop-down menu, find the COM port of the Wi
   caption="Selecting Serial port"
 />
 
-2. Click **OK** to connect to the device. 
+2. Click **OK** to connect to the device.
 3. After a connection is established, you will see a blank terminal.
 
 
@@ -214,7 +214,7 @@ Select **Serial**. From the **Port** drop-down menu, find the COM port of the Wi
   caption="Setup terminal"
 />
 
-5. Here, you will setup how Tera Term is to convert the carriage return (CR). In the **Terminal Setup**, find **Receive** in the **New-line** section. 
+5. Here, you will setup how Tera Term is to convert the carriage return (CR). In the **Terminal Setup**, find **Receive** in the **New-line** section.
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/16.receive-setting.png"
@@ -241,11 +241,11 @@ AT+DEVEUI=XXXXXXXXXXXXXXXX
 - Set the application EUI, where XXXXXXXXXXXXXXXX is the application EUI.
 
 ```
-AT+APPEUI=XXXXXXXXXXXXXXXX     
+AT+APPEUI=XXXXXXXXXXXXXXXX
 ```
 
 :::tip 📝 NOTE
-This command is needed only when **Auto Add LoRa Device** feature is enabled in the gateway. 
+This command is needed only when **Auto Add LoRa Device** feature is enabled in the gateway.
 :::
 
 - Set the join mode of the device, where **X** is **0** for **ABP** join mode and **1** for **OTAA** join mode.
@@ -409,7 +409,7 @@ Now, that you have a WisBlock sending data in the built-in network server, you c
 />
 
 
-4.	Then click **+Add new MQTT server**. 
+4.	Then click **+Add new MQTT server**.
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/27.add-mqtt.png"
@@ -460,9 +460,9 @@ Where:
 ```
 function Decoder(topic, payload) {
     payload = JSON.parse(payload);
-    
+
     var temperature = payload.temperature;
-    
+
     return [
         {
             device: "serial_number",
@@ -529,7 +529,7 @@ When an uplink is received, refresh the page and the **Current Value** of the fi
 
 ### Create a Dashboard to Visualize the Data
 
-The Dashboard can be unique for each user. You can use your imagination to create a dashboard to correspond with your project’s needs. 
+The Dashboard can be unique for each user. You can use your imagination to create a dashboard to correspond with your project’s needs.
 
 1. To create a dashboard, head to the Dashboard tab of the device in Datacake and click on the Edit mode switch (![edit-mode.png](/assets/images/knowledge-hub/wisblock/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/edit-mode.png))
 
@@ -548,7 +548,7 @@ The Dashboard can be unique for each user. You can use your imagination to creat
 />
 
 3. You can choose different types of widgets to make your dashboard more useful. For the demonstration, choose **Chart** to visualize a temperature/time graph.
-4. In the **Title** field from the **Basic** tab, give a name to the widget. As this is an example with temperature, name it **Temperature**. 
+4. In the **Title** field from the **Basic** tab, give a name to the widget. As this is an example with temperature, name it **Temperature**.
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/35.chart-widget.png"

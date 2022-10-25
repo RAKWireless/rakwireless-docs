@@ -1,7 +1,7 @@
 ---
 sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/stm32cube-programmer-guide.jpg
-rak_desc: This document is the guide on using STM32CubeProgrammer on RAK Modules.  
+rak_desc: This document is the guide on using STM32CubeProgrammer on RAK Modules.
 tags:
   - Tutorial
   - WisDuo
@@ -11,7 +11,7 @@ header:
   title: STM32CubeProgrammer Guide for RAK Modules
   caption: by <b>Carl Erick Rowan</b>
   img: /assets/images/knowledge-hub/banners/rui3.jpg
-posted: 4/18/2020 8:30 AM
+posted: 04/18/2020 8:30 AM
 ---
 
 # STM32CubeProgrammer Guide for RAK Modules
@@ -76,8 +76,8 @@ If you have no ST-LINK hardware tool, you can only use the STM32's built-in UART
 5. You should see that the device and its memory are read by STM32CubeProgrammer.
 
 :::tip 📝 NOTE
-- If the module is not detected by the STM32CubeProgrammer, double-check if the BOOT pin is configured properly. 
-- If you are using an external USB-UART converter board, check the VCC, GND, UART_TX, and UART_RX pin connections. 
+- If the module is not detected by the STM32CubeProgrammer, double-check if the BOOT pin is configured properly.
+- If you are using an external USB-UART converter board, check the VCC, GND, UART_TX, and UART_RX pin connections.
 - If you are using jumper wires, you can manually check the continuity using a multimeter.
 :::
 
@@ -127,7 +127,7 @@ If you have no ST-LINK hardware tool, you can only use the STM32's built-in UART
   caption="STM32CubeProgrammer"
 />
 
-3. Select **ST-LINK** on the tool selection. 
+3. Select **ST-LINK** on the tool selection.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/stm32cubeprogrammer/stlink_selection.png"
@@ -184,7 +184,7 @@ If you have no ST-LINK hardware tool, you can only use the STM32's built-in UART
   caption="Selecting the correct .hex file"
 />
 
-8. Click **Download** to start uploading the firmware file. 
+8. Click **Download** to start uploading the firmware file.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/stm32cubeprogrammer/stlink_downloadbutton.png"

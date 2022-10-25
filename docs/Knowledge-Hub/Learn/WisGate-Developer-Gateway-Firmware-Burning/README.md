@@ -9,7 +9,7 @@ header:
   title: Developer Gateway Firmware Setup
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/developer-gateway-firmware-setup.jpg
-posted: 2/29/2020 10:30 AM
+posted: 02/29/2020 10:30 AM
 ---
 
 # WisGate Developer Gateway Firmware Setup
@@ -40,7 +40,7 @@ Welcome to the Developer Gateways Firmware Catalog. Download the latest firmware
 1. Plug the SD card into your PC or laptop.
 2. Download the [balenaEtcher](https://www.balena.io/etcher/) software. There are options for Windows, macOS, and Linux. Clicking the **Download** button will provide you with the software directly, no installation is required.
 
-<rk-img 
+<rk-img
   src="/assets/images/knowledge-hub/user-manual/developer-gateways/firmware-burning/1.png"
   width="60%"
   caption="balenaEtcher Download Page"

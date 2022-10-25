@@ -1,7 +1,7 @@
 ---
 sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
-rak_desc: This tutorial describes on how to use the fast and simple Dynamic Domain Name System (DDNS) Service to access the RAK Industrial Gateways. 
+rak_desc: This tutorial describes on how to use the fast and simple Dynamic Domain Name System (DDNS) Service to access the RAK Industrial Gateways.
 tags:
   - Deployment-Guide
   - WisGate
@@ -9,7 +9,7 @@ header:
   title: RAK Industrial LPWAN Gateway Remote Management - DDNS
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/gateway-remote-management-ddns.jpg
-posted: 2/29/2020 10:30 AM
+posted: 02/29/2020 10:30 AM
 ---
 
 # RAK Industrial LPWAN Gateway Remote Management - DDNS
@@ -19,7 +19,7 @@ posted: 2/29/2020 10:30 AM
 
 ## Overview
 
-This tutorial describes on how to use the fast and simple Dynamic Domain Name System (DDNS) Service to access the RAK Industrial Gateways. 
+This tutorial describes on how to use the fast and simple Dynamic Domain Name System (DDNS) Service to access the RAK Industrial Gateways.
 
 Several points must be taken into considerations:
 
@@ -45,7 +45,7 @@ For this sample demonstration, the dyndnss.net DDNS service provider shall be us
 |dnsexit.com                        |dnshome.de (6)              |dnsmax.com                 |dnsomatic.com                  |
 |dnspark.com                        |do.de (6)                   |dtdns.com                  |duckdns.org (6)                |
 |duiadns.net (6)                    |dy.fi                       |dyndns.org (6) (dyn.com)   |dyndnss.net                    |
-|dyns.net                           |dynsip.org                  |dynu.com                   |dynv6.com (6)                  | 
+|dyns.net                           |dynsip.org                  |dynu.com                   |dynv6.com (6)                  |
 |easydns.com                        |editdns.net                 |goip.de (6)                |google.com (5) (6)             |
 |he.net (6)                         |joker.com                   |loopia.se (6) (loopia.com) |mydns.jp (6)                   |
 |myonlineportal.net (6)             |mythic-beasts.com (6)       |namecheap.com              |nettica.com                    |
@@ -76,7 +76,7 @@ You may also visit the OpenWrt [DDNS Client Guide](https://openwrt.org/docs/guid
   src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/register-ddns-service/register.png"
   width="100%"
   caption="Register to DYNDNS Account"
-/> 
+/>
 
 2. Fill in the following details: **Name, E-mail Address, User Name** and **Password**. Agree with the terms and click "**Create a Free Account**".
 
@@ -84,7 +84,7 @@ You may also visit the OpenWrt [DDNS Client Guide](https://openwrt.org/docs/guid
   src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/register-ddns-service/sign-up.png"
   width="100%"
   caption="Create a Free Account"
-/> 
+/>
 
 ::: tip 📝 NOTE
 A confirmation link shall be sent into your e-mail address which will bring you to the log-in page.
@@ -98,9 +98,9 @@ A confirmation link shall be sent into your e-mail address which will bring you 
   src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/register-ddns-service/create-url.png"
   width="100%"
   caption="Create DynDNS URL"
-/> 
+/>
 
-2. Input a Sub-Name for the domain. This will be used for accessing the Gateway later after configuring the service. Leave the Port field empty. 
+2. Input a Sub-Name for the domain. This will be used for accessing the Gateway later after configuring the service. Leave the Port field empty.
 ::: tip 📝 NOTE
 For demonstration, "rakwireless.dyndnss.net" shall be used.
 :::
@@ -109,7 +109,7 @@ For demonstration, "rakwireless.dyndnss.net" shall be used.
   src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/register-ddns-service/rakwireless-url.png"
   width="100%"
   caption="Create Subdomain Name"
-/> 
+/>
 
 3. The DDNS URL is created. The Subdomain should now have a password which we will needed to setup the Gateway DDNS Service, full DDNS URL and “ENTER” button that will force the DynDNSS service to get the Gateway current IP.
 
@@ -117,19 +117,19 @@ For demonstration, "rakwireless.dyndnss.net" shall be used.
   src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/register-ddns-service/subdomain-details.png"
   width="100%"
   caption="DynDNS Url Information"
-/> 
+/>
 
 # Gateway DDNS Service Set-up
 
 1. Log into the Web UI by following the steps in the [Access in the Web Management Platform](/Knowledge-Hub/Learn/Resources/Web-Management-Platform/#accessing-the-web-management-platform) section.
 
-2. In the Web UI, navigate to `Services>Dynamic DNS (Beta)` as shown in Figure 6. For further details, read the [Services](/Knowledge-Hub/Learn/Resources/Web-Management-Platform/#services) section of the Web Management Platform User Manual. 
+2. In the Web UI, navigate to `Services>Dynamic DNS (Beta)` as shown in Figure 6. For further details, read the [Services](/Knowledge-Hub/Learn/Resources/Web-Management-Platform/#services) section of the Web Management Platform User Manual.
 
 <rk-img
   src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/ddns-service-setup/dynamic-dns-beta.jpg"
   width="100%"
   caption="RAK Gateway Web UI"
-/> 
+/>
 
 3. In the Dynamic DNS (Beta) tab, input a name for the service in the text box and click the “**Add**” button as shown in Figure 7.
 
@@ -137,7 +137,7 @@ For demonstration, "rakwireless.dyndnss.net" shall be used.
   src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/ddns-service-setup/create-ddns-service.jpg"
   width="100%"
   caption="Create a DDNS Service"
-/> 
+/>
 
 4. In the Dynamic DNS (Beta) configuration page, **Enable** the service. Next, fill in the necessary credentials:
 
@@ -151,22 +151,22 @@ For demonstration, "rakwireless.dyndnss.net" shall be used.
   src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/ddns-service-setup/ddns-basic-config.jpg"
   width="100%"
   caption="DDNS Basic Settings Configuration"
-/> 
+/>
 
 5. Open the Advanced Settings tab. Next, fill in the necessary credentials and click "**Save & Apply**".
 
 * **IP Address source**: Network (default)
-* **Network**: WAN (default) 
+* **Network**: WAN (default)
 
 ::: tip 📝 NOTE
-This mean that the DDNS Service of the Gateway will check and report to dyndnss.net the WAN IP of the Gateway. If you want to access your Gateway trough different backhaul you can choose it here. 
+This mean that the DDNS Service of the Gateway will check and report to dyndnss.net the WAN IP of the Gateway. If you want to access your Gateway trough different backhaul you can choose it here.
 :::
 
 <rk-img
   src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/ddns-service-setup/ddns-advanced-config.jpg"
   width="100%"
   caption="DDNS Advanced Settings Configuration"
-/> 
+/>
 
 <rk-img
   src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/ddns-service-setup/network-interface.jpg"
@@ -176,7 +176,7 @@ This mean that the DDNS Service of the Gateway will check and report to dyndnss.
 
 * After the configuration is saved, you will be redirected to the main Dynamic DNS page.
 
-6. To start the Dynamic DNS Service, click the “**Start**” button. 
+6. To start the Dynamic DNS Service, click the “**Start**” button.
 
 ::: tip 📝 NOTE
 This is the page where you can see the dyndnss.net IP, which is the IP address that the Gateway reports any change in the IP address you chose in Figure 4.

@@ -6,9 +6,9 @@ tags:
   - Tutorial
 header:
   title: Tips on Getting Started With RAK Commercial Gateway LoRa Server
-  caption: by <b>Ken Yu</b> 
+  caption: by <b>Ken Yu</b>
   img: /assets/images/knowledge-hub/banners/getting-started-with-rak-commercial-gateway.jpg
-posted: 8/16/2019 10:30 AM
+posted: 08/16/2019 10:30 AM
 author:
   name: Ken Yu
   about: "Founder and CEO of RAKwireless. Making Things at #Rakwireless with The #RAKstars"

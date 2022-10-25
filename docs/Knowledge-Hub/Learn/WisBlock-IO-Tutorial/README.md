@@ -110,7 +110,7 @@ width="50%"
 caption="Template PCB"
 />
 
-As you can see, Autodesk Eagle™ complains a lot of DRC dimension errors around the larger mounting whole. The mounting hole and its copper (connected to the GND signal) has to be mechanically located at the edge of the PCB. Autodesk Eagle™ allows only one design rule regarding distance to the PCB edges, hence the DRC errors.  
+As you can see, Autodesk Eagle™ complains a lot of DRC dimension errors around the larger mounting whole. The mounting hole and its copper (connected to the GND signal) has to be mechanically located at the edge of the PCB. Autodesk Eagle™ allows only one design rule regarding distance to the PCB edges, hence the DRC errors.
 If you do not need the whole width (35mm) for your custom IO module, you can reduce the width and skip the two larger fixing holes on the right side. But make sure that your width covers at least the 3 smaller fixing holes on the left side.
 
 ### Important information about the PCB design
@@ -142,12 +142,12 @@ width="30%"
 caption="Adjusted connector nets"
 />
 
-Only the required nets are left.  
+Only the required nets are left.
 For the IO expander chip, we need only the supply nets, the I2C nets and 1 IRQ line. The design around the IO expander is taken from the datasheet of the [PCF8574 GPIO expander](https://www.ti.com/lit/ds/symlink/pcf8574.pdf).
 
 ### IO Expander example PCB
 
-We were able to route the whole design on a two layer board. The connection was so simple, that it could be done with the Autodesk Eagle™ autorouter function.  
+We were able to route the whole design on a two layer board. The connection was so simple, that it could be done with the Autodesk Eagle™ autorouter function.
 As you can see, we put the recommended GND planes on top and bottom. In addition the open copper area around the mounting hole is visible. This copper area is connected to the GND signal.
 
 #### IO Expander top layer
@@ -179,14 +179,14 @@ As you can see it is not difficult to design a custom WisBlock IO module. Just f
   - 3V3_S if you need to control the power supply of your WisBlock Sensor module
 - Do not place components on the bottom layer. The space between the sensor module and the base board is only 1-2 mm.
 
-I hope this small tutorial was useful. If you successfully designed your own WisBlock IO module, please share details in our forum section for [WisBlock](https://forum.rakwireless.com/c/wisblock/67).  
+I hope this small tutorial was useful. If you successfully designed your own WisBlock IO module, please share details in our forum section for [WisBlock](https://forum.rakwireless.com/c/wisblock/67).
 Thank you for reading this tutorial and supporting RAKwireless by using our WisBlock products.
 
 **RAKwireless invests time and resources providing this open source code, please support RAKwireless and open-source hardware by purchasing products from [RAKwireless](https://rakwireless.com/)!**
 
-_**For support and questions about RAKwireless products please visit our [forum](https://forum.rakwireless.com/)**_  
-_**For examples and quick start tutorial please visit our [Github Repo](https://github.com/RAKWireless/Wisblock)**_  
-_**For additional information about RAK products please visit our [Documentation Center](https://docs.rakwireless.com/) and our [Knowledge Hub](https://docs.rakwireless.com/Knowledge-Hub/Learn/)**_  
+_**For support and questions about RAKwireless products please visit our [forum](https://forum.rakwireless.com/)**_
+_**For examples and quick start tutorial please visit our [Github Repo](https://github.com/RAKWireless/Wisblock)**_
+_**For additional information about RAK products please visit our [Documentation Center](https://docs.rakwireless.com/) and our [Knowledge Hub](https://docs.rakwireless.com/Knowledge-Hub/Learn/)**_
 _**To buy WisBlock modules please visit our [online store](https://store.rakwireless.com/)**_
 
 <rk-author />

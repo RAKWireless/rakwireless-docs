@@ -6,9 +6,9 @@ tags:
   - Tutorial
 header:
   title: WisCore – Voice Enable Your Product with Alexa
-  caption: by <b>Ken Yu</b> 
+  caption: by <b>Ken Yu</b>
   img: /assets/images/knowledge-hub/banners/wiscore–voice-enable-your-product-with-alexa.jpg
-posted: 4/24/2017 10:30 AM
+posted: 04/24/2017 10:30 AM
 author:
   name: Ken Yu
   about: "Founder and CEO of RAKwireless. Making Things at #Rakwireless with The #RAKstars"

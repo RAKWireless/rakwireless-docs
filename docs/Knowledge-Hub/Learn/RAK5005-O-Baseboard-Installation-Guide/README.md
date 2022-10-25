@@ -9,12 +9,12 @@ header:
   title: RAK5005-O Baseboard Installation Guide
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/rak5005-O-baseboard-installation-guide.jpg
-posted: 2/29/2020 10:30 AM
+posted: 02/29/2020 10:30 AM
 ---
 
 # RAK5005-O Baseboard Installation Guide
 
-RAK5005-O WisBlock module is a motherboard that allows you to attach  MCU, sensors, and IO modules through the standardized expansion connectors. These connectors provide a data bus interconnection between the modules attached to the baseboard. 
+RAK5005-O WisBlock module is a motherboard that allows you to attach  MCU, sensors, and IO modules through the standardized expansion connectors. These connectors provide a data bus interconnection between the modules attached to the baseboard.
 
 This document explains the details related to the installation of modules into the RAK5005-O board. The following section discusses the general concepts to manipulate the WisConnector in any WisBlock module are explained. For the second one, it explains the installation details of each type of WisBlock module: Core, Sensor, and IO, and the last section explains how to remove a WisBlock module from the RAK5005-O baseboard.
 
@@ -96,7 +96,7 @@ If after buckling, the header and socket are not in a parallel state (not fully 
   caption="WisConnector’s header is not parallel to the socket"
 />
 
-When the aforementioned steps are not completed yet, DO NOT apply force to buckle. Otherwise, there will be a risk to damage the connector. When the connector cannot be smoothly buckled down, repeat the alignment step. 
+When the aforementioned steps are not completed yet, DO NOT apply force to buckle. Otherwise, there will be a risk to damage the connector. When the connector cannot be smoothly buckled down, repeat the alignment step.
 
 
 ### Detaching a WisConnector
@@ -139,14 +139,14 @@ When the aforementioned steps are not completed yet, DO NOT apply force to buckl
 
 :::tip 📝 NOTE:
 
-Read carefully the complete instruction first before trying to assemble a module. 
+Read carefully the complete instruction first before trying to assemble a module.
 
 :::
 
 ### WisBlock Core
 
 
-A WisBlock Core module is designed to be installed on the CPU slot of the RAK5005-O baseboard. As shown in Figure 13, the location is properly marked by silkscreen. Follow carefully the procedure defined in section 2.1 in order to attach a Core module. Once attached, fix the module with 4 pieces of M1.2 x 3mm screws. 
+A WisBlock Core module is designed to be installed on the CPU slot of the RAK5005-O baseboard. As shown in Figure 13, the location is properly marked by silkscreen. Follow carefully the procedure defined in section 2.1 in order to attach a Core module. Once attached, fix the module with 4 pieces of M1.2 x 3mm screws.
 
 
 <rk-img
@@ -160,11 +160,11 @@ A WisBlock Core module is designed to be installed on the CPU slot of the RAK500
 
 :::tip 📝 NOTE:
 
-The RAK1910 GPS module must be installed only on the front side of the RAK5005-O baseboard. The RAK1910 is a full-length module that use the space of two WisBlock IO module. 
+The RAK1910 GPS module must be installed only on the front side of the RAK5005-O baseboard. The RAK1910 is a full-length module that use the space of two WisBlock IO module.
 
 :::
 
-A WisBlock Sensor module is designed to be installed on the Sensor slot of the RAK5005-O baseboard. There are four (4) available sensor slots in the RAK5005-O baseboard, two (2) on each side of the baseboard. As shown in Figure 14, the location is properly marked by silkscreen. Follow carefully the procedure of the previous section, Attaching a WisConnector, to attach a WisBlock Sensor module. Once attached, fix the module with a M1.2 x 3 mm screw. 
+A WisBlock Sensor module is designed to be installed on the Sensor slot of the RAK5005-O baseboard. There are four (4) available sensor slots in the RAK5005-O baseboard, two (2) on each side of the baseboard. As shown in Figure 14, the location is properly marked by silkscreen. Follow carefully the procedure of the previous section, Attaching a WisConnector, to attach a WisBlock Sensor module. Once attached, fix the module with a M1.2 x 3 mm screw.
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/14.wisblock-sensor-silkscreen.png"
@@ -176,7 +176,7 @@ A WisBlock Sensor module is designed to be installed on the Sensor slot of the R
 ### WisBlock IO
 
 
-A WisBlock IO module is designed to be installed on the IO slot of the RAK5005-O baseboard. There is a single IO slot in the RAK5005-O baseboard. As shown in Figure 15, the location is properly marked by silkscreen. Follow carefully the procedure of the previous section, Attaching a WisConnector, to attach a WisBlock Sensor module. Once attached, fix the module with three pieces of M1.2 x 3mm screws. 
+A WisBlock IO module is designed to be installed on the IO slot of the RAK5005-O baseboard. There is a single IO slot in the RAK5005-O baseboard. As shown in Figure 15, the location is properly marked by silkscreen. Follow carefully the procedure of the previous section, Attaching a WisConnector, to attach a WisBlock Sensor module. Once attached, fix the module with three pieces of M1.2 x 3mm screws.
 
 
 <rk-img
@@ -190,11 +190,11 @@ A WisBlock IO module is designed to be installed on the IO slot of the RAK5005-O
 
 :::tip 📝 NOTE:
 
-Read carefully the complete instruction first before trying to disassemble a module. 
+Read carefully the complete instruction first before trying to disassemble a module.
 
 :::
 
-1. The procedure to disassemble any type of WisBlock modules is the same. As shown in Figure 16, first, remove the screws. 
+1. The procedure to disassemble any type of WisBlock modules is the same. As shown in Figure 16, first, remove the screws.
 
 <rk-img
   src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/16.removing-screws.png"

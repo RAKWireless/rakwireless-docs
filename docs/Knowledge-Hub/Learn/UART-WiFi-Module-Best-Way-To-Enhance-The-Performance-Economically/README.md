@@ -6,9 +6,9 @@ tags:
   - Tutorial
 header:
   title: UART WiFi Module - Best Way to Enhance the Performance Economically
-  caption: by <b>Ken Yu</b> 
+  caption: by <b>Ken Yu</b>
   img: /assets/images/knowledge-hub/banners/uart-wifi-module.jpg
-posted: 3/20/2017 10:30 AM
+posted: 03/20/2017 10:30 AM
 author:
   name: Ken Yu
   about: "Founder and CEO of RAKwireless. Making Things at #Rakwireless with The #RAKstars"

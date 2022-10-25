@@ -59,17 +59,21 @@ The possible status codes are:
 * `OK`: command runs correctly without error.
 * `AT_ERROR`: generic error.
 * `AT_PARAM_ERROR`: a parameter of the command is wrong
-* `AT_BUSY_ERROR`: the LoRa® network is busy, so the command has not been completed.
+* `AT_BUSY_ERROR`: the LoRa network is busy, so the command has not been completed.
 * `AT_TEST_PARAM_OVERFLOW`: the parameter is too long.
 * `AT_NO_CLASSB_ENABLE`: End-node has not yet switched in Class B.
-* `AT_NO_NETWORK_JOINED`: the LoRa® network has not been joined yet.
+* `AT_NO_NETWORK_JOINED`: the LoRa network has not been joined yet.
 * `AT_RX_ERROR`: error detection during the reception of the command.
 
 More details on each command description and examples are given in the remainder of this section.
 
 
 ## Content
-- [RUI3 AT Command Manual](#rui3-at-command-format)
+- [AT Command Manual](#at-command-manual)
+  - [Overview](#overview)
+    - [Switching to AT Mode](#switching-to-at-mode)
+    - [Devices that supports RUI3 AT Commands](#devices-that-supports-rui3-at-commands)
+    - [RUI3 AT Command Format](#rui3-at-command-format)
   - [Content](#content)
   - [General Commands](#general-commands)
     - [AT](#at)
@@ -258,10 +262,10 @@ Description: Bootloader mode
 
 This command causes the device to enter Bootloader mode to upgrade firmware.
 
-| Command    | Input Parameter | Return Value                                          | Return Code |
-| ---------- | --------------- | ----------------------------------------------------- | ----------- |
-| `AT+BOOT?` | -               | `AT+BOOT`: enter bootloader mode for firmware upgrade | OK          |
-| `AT+BOOT` or `AT+BOOT=`  | -               | `<BOOT MODE>`                                         |             |
+| Command                 | Input Parameter | Return Value                                          | Return Code |
+| ----------------------- | --------------- | ----------------------------------------------------- | ----------- |
+| `AT+BOOT?`              | -               | `AT+BOOT`: enter bootloader mode for firmware upgrade | OK          |
+| `AT+BOOT` or `AT+BOOT=` | -               | `<BOOT MODE>`                                         |             |
 
 **Example:**
 
@@ -1021,14 +1025,13 @@ AT_PARAM_ERROR
 
 ### AT+NJS
 
-Description: LoRa® Network Join status
+Description: LoRa Network Join status
 
 This command is used to access the current activation status of the device. It shows if the device joined or not in a LoRaWAN network.
 
 | Command    | Input Parameter | Return Value                                               | Return Code |
 | ---------- | --------------- | ---------------------------------------------------------- | ----------- |
-| `AT+NJS?`  | -               | `AT+NJS`: get the join status (0 = not joined, 1 = joined) |
-| OK         |
+| `AT+NJS?`  | -               | `AT+NJS`: get the join status (0 = not joined, 1 = joined) | OK          |
 | `AT+NJS=?` | -               | `AT+NJS`= (0 or 1)                                         | OK          |
 
 
@@ -1166,7 +1169,7 @@ This command sets the number of retransmissions of confirmed packet data.
 | Command           | Input Parameter   | Return Value                                                        | Return Code            |
 | ----------------- | ----------------- | ------------------------------------------------------------------- | ---------------------- |
 | `AT+RETY?`        | -                 | `AT+RETY`: set the number of retransmissions of Confirm packet data | OK                     |
-| `AT+RETY=?`       | -                 | `AT+RETY`=[0,1,2,3,4,5,6,7]                                         | OK                     |
+| `AT+RETY=?`       | -                 | `AT+RETY`= [0,1,2,3,4,5,6,7]                                        | OK                     |
 | `AT+RETY=<input>` | [0,1,2,3,4,5,6,7] | -                                                                   | OK <br> AT_PARAM_ERROR |
 
 **Example:**
@@ -1223,14 +1226,13 @@ OK
 
 ### AT+CLASS
 
-Description: LoRa® Class
+Description: LoRa Class
 
-This command is used to access the LoRaWAN® class.
+This command is used to access the  LoRaWAN class.
 
 | Command                      | Input Parameter | Return Value                                                                    | Return Code          |
 | ---------------------------- | --------------- | ------------------------------------------------------------------------------- | -------------------- |
-| `AT+CLASS?`                  | -               | `AT+CLASS`: get or set the device class (A = class A, B = class B, C = class C) |
-| OK                           |
+| `AT+CLASS?`                  | -               | `AT+CLASS`: get or set the device class (A = class A, B = class B, C = class C) | OK                   |
 | `AT+CLASS=?`                 | -               | `AT+CLASS`=(A, B, or C)                                                         | OK                   |
 | `AT+CLASS=<Input Parameter>` | A, B, or C      | -                                                                               | OK or AT_PARAM_ERROR |
 
@@ -1276,8 +1278,7 @@ Description: Duty cycle settings
 
 | Command          | Input Parameter | Return Value                                                                 | Return Code            |
 | ---------------- | --------------- | ---------------------------------------------------------------------------- | ---------------------- |
-| `AT+DCS?`        | -               | `AT+DCS`: get or set the ETSI duty cycle setting (0 = disabled, 1 = enabled) |
-| OK               |
+| `AT+DCS?`        | -               | `AT+DCS`: get or set the ETSI duty cycle setting (0 = disabled, 1 = enabled) | OK                     |
 | `AT+DCS=?`       | -               | `AT+DCS`=(0 or 1)                                                            | OK                     |
 | `AT+DCS=<Input>` | 0 or 1          | -                                                                            | OK <br> AT_PARAM_ERROR |
 
@@ -2079,7 +2080,7 @@ OK
 <thead>
   <tr>
     <th>CHE</th>
-    <th colspan="9">US915 Uplink Channels(125&nbsp;kHz,4/5,Unit:MHz,CHS=0)</th>
+    <th colspan="9">US915 Uplink Channels (125&nbsp;kHz,4/5,Unit:MHz,CHS=0)</th>
   </tr>
 </thead>
 <tbody>
@@ -2097,7 +2098,7 @@ OK
     <td>903.3</td>
     <td>903.5</td>
     <td>903.7</td>
-    <td>Channel0-7</td>
+    <td>Channel 0-7</td>
   </tr>
   <tr>
     <td>2</td>
@@ -2109,7 +2110,7 @@ OK
     <td>904.9</td>
     <td>905.1</td>
     <td>905.3</td>
-    <td>Channel8-15</td>
+    <td>Channel 8-15</td>
   </tr>
   <tr>
     <td>3</td>
@@ -2121,7 +2122,7 @@ OK
     <td>906.5</td>
     <td>906.7</td>
     <td>906.9</td>
-    <td>Channel16-23</td>
+    <td>Channel 16-23</td>
   </tr>
   <tr>
     <td>4</td>
@@ -2133,7 +2134,7 @@ OK
     <td>908.1</td>
     <td>908.3</td>
     <td>908.5</td>
-    <td>Channel24-31</td>
+    <td>Channel 24-31</td>
   </tr>
   <tr>
     <td>5</td>
@@ -2145,7 +2146,7 @@ OK
     <td>909.7</td>
     <td>909.9</td>
     <td>910.1</td>
-    <td>Channel32-39</td>
+    <td>Channel 32-39</td>
   </tr>
   <tr>
     <td>6</td>
@@ -2157,7 +2158,7 @@ OK
     <td>911.3</td>
     <td>911.5</td>
     <td>911.7</td>
-    <td>Channel40-47</td>
+    <td>Channel 40-47</td>
   </tr>
   <tr>
     <td>7</td>
@@ -2169,7 +2170,7 @@ OK
     <td>912.9</td>
     <td>913.1</td>
     <td>913.3</td>
-    <td>Channel48-55</td>
+    <td>Channel 48-55</td>
   </tr>
   <tr>
     <td>8</td>
@@ -2181,19 +2182,19 @@ OK
     <td>914.5</td>
     <td>914.7</td>
     <td>914.9</td>
-    <td>Channel56-63</td>
+    <td>Channel 56-63</td>
   </tr>
   <tr>
     <td>9</td>
-    <td>903</td>
+    <td>903.0</td>
     <td>904.6</td>
     <td>906.2</td>
     <td>907.8</td>
     <td>909.4</td>
-    <td>911</td>
+    <td>911.0</td>
     <td>912.6</td>
     <td>914.2</td>
-    <td>Channel64-71</td>
+    <td>Channel 64-71</td>
   </tr>
   <tr>
     <td>Channel 72-79</td>
@@ -2245,7 +2246,7 @@ OK
 <thead>
   <tr>
     <th>CHE</th>
-    <th colspan="9">AU915 Uplink Channels(125&nbsp;kHz,4/5,Unit:MHz, CHS=0)</th>
+    <th colspan="9">AU915 Uplink Channels (125&nbsp;kHz,4/5,Unit:MHz, CHS=0)</th>
   </tr>
 </thead>
 <tbody>
@@ -2259,7 +2260,7 @@ OK
     <td>915.4</td>
     <td>915.6</td>
     <td>915.8</td>
-    <td>916</td>
+    <td>916.0</td>
     <td>916.2</td>
     <td>916.4</td>
     <td>916.6</td>
@@ -2268,12 +2269,12 @@ OK
   <tr>
     <td>2</td>
     <td>916.8</td>
-    <td>917</td>
+    <td>917.0</td>
     <td>917.2</td>
     <td>917.4</td>
     <td>917.6</td>
     <td>917.8</td>
-    <td>918</td>
+    <td>918.0</td>
     <td>918.2</td>
     <td>Channel 8-15</td>
   </tr>
@@ -2282,7 +2283,7 @@ OK
     <td>918.4</td>
     <td>918.6</td>
     <td>918.8</td>
-    <td>919</td>
+    <td>919.0</td>
     <td>919.2</td>
     <td>919.4</td>
     <td>919.6</td>
@@ -2291,12 +2292,12 @@ OK
   </tr>
   <tr>
     <td>4</td>
-    <td>920</td>
+    <td>920.0</td>
     <td>920.2</td>
     <td>920.4</td>
     <td>920.6</td>
     <td>920.8</td>
-    <td>921</td>
+    <td>921.0</td>
     <td>921.2</td>
     <td>921.4</td>
     <td>Channel 24-31</td>
@@ -2305,13 +2306,13 @@ OK
     <td>5</td>
     <td>921.6</td>
     <td>921.8</td>
-    <td>922</td>
+    <td>922.0</td>
     <td>922.2</td>
     <td>922.4</td>
     <td>922.6</td>
     <td>922.8</td>
-    <td>923</td>
-    <td>Channel32-39</td>
+    <td>923.0</td>
+    <td>Channel 32-39</td>
   </tr>
   <tr>
     <td>6</td>
@@ -2319,21 +2320,21 @@ OK
     <td>923.4</td>
     <td>923.6</td>
     <td>923.8</td>
-    <td>924</td>
+    <td>924.0</td>
     <td>924.2</td>
     <td>924.4</td>
     <td>924.6</td>
-    <td>Channel40-47</td>
+    <td>Channel 40-47</td>
   </tr>
   <tr>
     <td>7</td>
     <td>924.8</td>
-    <td>925</td>
+    <td>925.0</td>
     <td>925.2</td>
     <td>925.4</td>
     <td>925.6</td>
     <td>925.8</td>
-    <td>926</td>
+    <td>926.0</td>
     <td>926.2</td>
     <td>Channel 48-55</td>
   </tr>
@@ -2342,7 +2343,7 @@ OK
     <td>926.4</td>
     <td>926.6</td>
     <td>926.8</td>
-    <td>927</td>
+    <td>927.0</td>
     <td>927.2</td>
     <td>927.4</td>
     <td>927.6</td>
@@ -2373,7 +2374,7 @@ OK
 <thead>
   <tr>
     <th>CHE</th>
-    <th colspan="9">CN470 Uplink Channels(125&nbsp;kHz,4/5,Unit:MHz,CHS=0)</th>
+    <th colspan="9">CN470 Uplink Channels (125&nbsp;kHz,4/5,Unit:MHz,CHS=0)</th>
   </tr>
 </thead>
 <tbody>
@@ -2391,7 +2392,7 @@ OK
     <td>471.3</td>
     <td>471.5</td>
     <td>471.7</td>
-    <td>Channel0-7</td>
+    <td>Channel 0-7</td>
   </tr>
   <tr>
     <td>2</td>
@@ -2403,7 +2404,7 @@ OK
     <td>472.9</td>
     <td>473.1</td>
     <td>473.3</td>
-    <td>Channel8-15</td>
+    <td>Channel 8-15</td>
   </tr>
   <tr>
     <td>3</td>
@@ -2415,7 +2416,7 @@ OK
     <td>474.5</td>
     <td>474.7</td>
     <td>474.9</td>
-    <td>Channel16-23</td>
+    <td>Channel 16-23</td>
   </tr>
   <tr>
     <td>4</td>
@@ -2427,7 +2428,7 @@ OK
     <td>476.1</td>
     <td>476.3</td>
     <td>476.5</td>
-    <td>Channel24-31</td>
+    <td>Channel 24-31</td>
   </tr>
   <tr>
     <td>5</td>
@@ -2439,7 +2440,7 @@ OK
     <td>477.7</td>
     <td>477.9</td>
     <td>478.1</td>
-    <td>Channel32-39</td>
+    <td>Channel 32-39</td>
   </tr>
   <tr>
     <td>6</td>
@@ -2451,7 +2452,7 @@ OK
     <td>479.3</td>
     <td>479.5</td>
     <td>479.7</td>
-    <td>Channel40-47</td>
+    <td>Channel 40-47</td>
   </tr>
   <tr>
     <td>7</td>
@@ -2463,7 +2464,7 @@ OK
     <td>480.9</td>
     <td>481.1</td>
     <td>481.3</td>
-    <td>Channel48-55</td>
+    <td>Channel 48-55</td>
   </tr>
   <tr>
     <td>8</td>
@@ -2475,7 +2476,7 @@ OK
     <td>482.5</td>
     <td>482.7</td>
     <td>482.9</td>
-    <td>Channel56-63</td>
+    <td>Channel 56-63</td>
   </tr>
   <tr>
     <td>9</td>
@@ -2487,7 +2488,7 @@ OK
     <td>484.1</td>
     <td>484.3</td>
     <td>484.5</td>
-    <td>Channel64-71</td>
+    <td>Channel 64-71</td>
   </tr>
   <tr>
     <td>10</td>
@@ -2499,7 +2500,7 @@ OK
     <td>485.7</td>
     <td>485.9</td>
     <td>486.1</td>
-    <td>Channel72-79</td>
+    <td>Channel 72-79</td>
   </tr>
   <tr>
     <td>11</td>
@@ -2511,7 +2512,7 @@ OK
     <td>487.3</td>
     <td>487.5</td>
     <td>487.7</td>
-    <td>Channel80-87</td>
+    <td>Channel 80-87</td>
   </tr>
   <tr>
     <td>12</td>
@@ -2523,7 +2524,7 @@ OK
     <td>488.9</td>
     <td>489.1</td>
     <td>489.3</td>
-    <td>Channel88-95</td>
+    <td>Channel 88-95</td>
   </tr>
 </tbody>
 </table>
@@ -2573,7 +2574,7 @@ In this case, the single-channel mode is only for US915, AU915, CN470.
 <table>
 <thead>
   <tr>
-    <th colspan="9">US915 Uplink Channels(125k&nbsp;Hz,4/5,Unit:MHz,CHS=Frequency)   </th>
+    <th colspan="9">US915 Uplink Channels (125k&nbsp;Hz,4/5,Unit:MHz,CHS=Frequency)   </th>
   </tr>
 </thead>
 <tbody>
@@ -2677,7 +2678,7 @@ In this case, the single-channel mode is only for US915, AU915, CN470.
     <td>909400000</td>
     <td>911000000</td>
     <td>912600000</td>
-    <td>   914200000</td>
+    <td>914200000</td>
   </tr>
 </tbody>
 </table>
@@ -2691,7 +2692,7 @@ According to LoRaWAN Regional Parameters v1.0.3revA, the first 64 channels are n
 <table>
 <thead>
   <tr>
-    <th colspan="9">AU915 Uplink Channels(125&nbsp;kHz,4/5,Unit:MHz,CHS=Frequency)</th>
+    <th colspan="9">AU915 Uplink Channels (125&nbsp;kHz,4/5,Unit:MHz,CHS=Frequency)</th>
   </tr>
 </thead>
 <tbody>
@@ -2721,7 +2722,7 @@ According to LoRaWAN Regional Parameters v1.0.3revA, the first 64 channels are n
     <td>918200000</td>
   </tr>
   <tr>
-    <td>Channel<br>16-23</td>
+    <td>Channel 16-23</td>
     <td>918400000</td>
     <td>918600000</td>
     <td>918800000</td>
@@ -2754,7 +2755,7 @@ According to LoRaWAN Regional Parameters v1.0.3revA, the first 64 channels are n
     <td>923000000</td>
   </tr>
   <tr>
-    <td>Channel<br>40-47</td>
+    <td>Channel 40-47</td>
     <td>923200000</td>
     <td>923400000</td>
     <td>923600000</td>
@@ -2810,7 +2811,7 @@ According to LoRaWAN Regional Parameters v1.0.3revA, the first 64 channels are n
 <table>
 <thead>
   <tr>
-    <th colspan="9"><br>CN470 UplinkChannels(125&nbsp;kHz,4/5,Unit:MHz,CHS=Frequency)</th>
+    <th colspan="9"><br>CN470 Uplink Channels (125&nbsp;kHz,4/5,Unit:MHz,CHS=Frequency)</th>
   </tr>
 </thead>
 <tbody>
@@ -2829,7 +2830,7 @@ According to LoRaWAN Regional Parameters v1.0.3revA, the first 64 channels are n
     <td>471700000</td>
   </tr>
   <tr>
-    <td>Channel<br><br>8-15</td>
+    <td>Channel 8-15</td>
     <td>471900000</td>
     <td>472100000</td>
     <td>472300000</td>
@@ -2862,7 +2863,7 @@ According to LoRaWAN Regional Parameters v1.0.3revA, the first 64 channels are n
     <td>476500000</td>
   </tr>
   <tr>
-    <td>Channel<br><br>32-39</td>
+    <td>Channel 32-39</td>
     <td>476700000</td>
     <td>476900000</td>
     <td>477100000</td>
@@ -2965,11 +2966,11 @@ Description: Active region
 
 This command sets numbers corresponding to active regions.
 
-| Command           | Input Parameter   | Return Value                                                                                                                               | Return Code                                |
-| ----------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------ |
-| `AT+BAND?`        | -                 | `AT+BAND`: get or set the active region (0 = EU433, 1 = CN470, 2 = RU864, 3 = IN865, 4 = EU868, 5 = US915, 6 = AU915, 7 = KR920, 8 = AS923-1, 9 = AS923-2) | OK                                         |
-| `AT+BAND=?`       | -                 | 0,1,2,3,4,5,6,7,8,9                                                                                                                          | OK                                         |
-| `AT+BAND=<Input>` | 0,1,2,3,4,5,6,7,8,9 | -                                                                                                                                          | OK <br>  AT_PARAM_ERROR <br> AT_BUSY_ERROR |
+| Command           | Input Parameter     | Return Value                                                                                                                                                     | Return Code                                |
+| ----------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| `AT+BAND?`        | -                   | `AT+BAND`: get or set the active region<br>(0 = EU433, 1 = CN470, 2 = RU864, 3 = IN865, 4 = EU868,<br>5 = US915, 6 = AU915, 7 = KR920, 8 = AS923-1, 9 = AS923-2) | OK                                         |
+| `AT+BAND=?`       | -                   | 0,1,2,3,4,5,6,7,8,9                                                                                                                                              | OK                                         |
+| `AT+BAND=<Input>` | 0,1,2,3,4,5,6,7,8,9 | -                                                                                                                                                                | OK <br>  AT_PARAM_ERROR <br> AT_BUSY_ERROR |
 
 **Example:**
 ```
@@ -3002,7 +3003,7 @@ This section describes the commands related to LoRa point-to-point functionality
 
 ### AT+NWM
 
-Description: LoRa® network work mode
+Description: LoRa network work mode
 
 Switch to point-to-point mode, or LoRaWAN mode [0:Point-to-point, 1:LoRaWAN].
 
@@ -3104,25 +3105,26 @@ Description: P2P mode bandwidth
 
 This command provides bandwidth configuration for the P2P mode.
 
-| Command          | Input Parameter | Return Value                                                        | Return Code            |
-| ---------------- | --------------- | ------------------------------------------------------------------- | ---------------------- |
-| `AT+PBW? `       | -               | `AT+PBW`: configure P2P Bandwidth(LORA:125,250,500 FSK:4800-467000) | OK                     |
-| `AT+PBW=? `      | -               | `<Bandwidth>`                                                       | OK                     |
-| `AT+PBW=<param>` | `<Bandwidth>`   | -                                                                   | OK <br> AT_PARAM_ERROR |
+| Command          | Input Parameter | Return Value                                                                                                                                                          | Return Code            |
+| ---------------- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| `AT+PBW? `       | -               | `AT+PBW`: configure P2P Bandwidth<br>(LORA: 0 = 125, 1 = 250, 2 = 500, 3 = 7.8, 4 = 10.4, 5 = 15.63,<br>6 = 20.83, 7 = 31.25, 8 = 41.67, 9 = 62.5   FSK: 4800-467000) | OK                     |
+| `AT+PBW=? `      | -               | `<Bandwidth>`                                                                                                                                                         | OK                     |
+| `AT+PBW=<param>` | `<Bandwidth>`   | -                                                                                                                                                                     | OK <br> AT_PARAM_ERROR |
 
 **Example:**
+Changing to bandwidth 250&nbsp;kHz from 100&nbsp;kHz.
 ```
 AT+PBW=?
-AT+PBW=125
+AT+PBW=0
 OK
 
-AT+PBW=125
+AT+PBW=1
 OK
 ```
 
 :::tip 📝 NOTE
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
--  In this case, the default value is 125, and the bandwidth only supports 125, 250, 500.
+-  In this case, the default value is 0 = 125&nbsp;kHz.
 :::
 
 [Back](#content)
@@ -3134,11 +3136,11 @@ Description: P2P mode code rate
 
 This command provides the configuration code rate for the P2P mode.
 
-| Command          | Input Parameter | Return Value                                                  | Return Code            |
-| ---------------- | --------------- | ------------------------------------------------------------- | ---------------------- |
-| `AT+PCR? `       | -               | `AT+PCR`: configure P2P Code Rate(0=4/5, 1=4/6, 2=4/7, 3=4/8) | OK                     |
-| `AT+PCR=? `      | -               | `<Code Rate>`                                                 | OK                     |
-| `AT+PCR=<param>` | `<Code Rate>`   | -                                                             | OK <br> AT_PARAM_ERROR |
+| Command          | Input Parameter | Return Value                                                      | Return Code            |
+| ---------------- | --------------- | ----------------------------------------------------------------- | ---------------------- |
+| `AT+PCR? `       | -               | `AT+PCR`: configure P2P Code Rate<br>(0=4/5, 1=4/6, 2=4/7, 3=4/8) | OK                     |
+| `AT+PCR=? `      | -               | `<Code Rate>`                                                     | OK                     |
+| `AT+PCR=<param>` | `<Code Rate>`   | -                                                                 | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
@@ -3264,7 +3266,7 @@ When valid LoRa P2P packets are received, the format is RSSI, SNR and Payload.
 
 **Examples:**
 
-1. P2P LoRa RX configurable duration value is from 1 to 65533 ms. In this example, the device will wait for LoRa P2P Packets for 30 seconds. It will automatically disable RX mode and switch to TX mode after the timeout. The callback after timeout is `+EVT:RXP2P RECEIVE TIMEOUT`.
+1. P2P LoRa RX configurable duration value is from 1 to 65533&nbsp;ms. In this example, the device will wait for LoRa P2P Packets for 30&nbsp;seconds. It will automatically disable RX mode and switch to TX mode after the timeout. The callback after timeout is `+EVT:RXP2P RECEIVE TIMEOUT`.
 ```
 AT+PRECV=30000
 OK
@@ -3364,16 +3366,16 @@ Description: View P2P all parameters
 
 This command provides configuration of all parameters for the P2P mode.
 
-| Command          | Input Parameter                                                                            | Return Value                            | Return Code            |
-| ---------------- | ------------------------------------------------------------------------------------------ | --------------------------------------- | ---------------------- |
-| `AT+P2P?`        | -                                                                                          | `AT+P2P`: get or set all P2P parameters | OK                     |
-| `AT+P2P=?`       | -                                                                                          | -                                       | OK <br> AT_BUSY_ERROR  |
+| Command          | Input Parameter                                                                       | Return Value                            | Return Code            |
+| ---------------- | ------------------------------------------------------------------------------------- | --------------------------------------- | ---------------------- |
+| `AT+P2P?`        | -                                                                                     | `AT+P2P`: get or set all P2P parameters | OK                     |
+| `AT+P2P=?`       | -                                                                                     | -                                       | OK <br> AT_BUSY_ERROR  |
 | `AT+P2P=<param>` | `<Frequency>:<Spreading Factor>:<Bandwidth>:<Code Rate>:<Preamble Length>:<TX Power>` | -                                       | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
 AT+P2P=?
-AT+P2P=868000000:12:125:3:200:14
+AT+P2P=868000000:12:0:3:200:14
 OK
 
 AT+P2P=868:12:300:3:200:14
@@ -3383,7 +3385,7 @@ AT_PARAM_ERROR
 :::tip 📝 NOTE
 - `AT_PARAM_ERROR` is returned when setting a wrong or malformed value.
 - In this case, the default value is “868000000:7:125:0:8:14”.
-- Frequency = {150000000-960000000}, SF = {6, 7, 8, 9, 10, 11, 12}, Bandwidth = {125, 250, 500}, CR = {4/5=0, 4/6=1, 4/7=2, 4/8=3}, Preamble Length = {2-65535}, TX Power = {5-22}.
+- Frequency = {150000000-960000000}, SF = {6, 7, 8, 9, 10, 11, 12}, Bandwidth {0=125, 1=250, 2=500, 3=7.8, 4=10.4, 5=15.63, 6=20.83, 7=31.25, 8=41.67, 9=62.5}, CR = {4/5=0, 4/6=1, 4/7=2, 4/8=3}, Preamble Length = {2-65535}, TX Power = {5-22}.
 - RUI3 LoRa/LoRaWAN devices are divided into two variants - Low Frequency and High Frequency. Examples are the RAK4630(L) and RAK4630(H) devices.
 
     - Low frequency variant is compatible only to 150000000 - 600000000.
@@ -3595,15 +3597,15 @@ Rx 4 of 4  >>> PER= 100 %
 
 ### AT+TCONF
 
-Description: Configure LoRa® RF test
+Description: Configure LoRa RF test
 
-This command is used to access the LoRa® configuration test.
+This command is used to access the LoRa configuration test.
 
-| Command            | Input   parameter                                                                                                                           | Return   value                       | Return   code    |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ---------------- |
-| `AT+TCONF?`        | -                                                                                                                                           | `AT+TCONF`: configure LoRa® RF test  | OK               |
+| Command            | Input   parameter                                                                                                                           | Return   value                                  | Return   code    |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ---------------- |
+| `AT+TCONF?`        | -                                                                                                                                           | `AT+TCONF`: configure LoRa RF test              | OK               |
 | `AT+TCONF=?`       | -                                                                                                                                           | AT+TCONF=868000000:14:4:12:0:0:0:1:16:25000:2:3 | OK               |
-| `AT+TCONF=<Input>` | `<Freq>:<Power>:<Bandwidth>:<SpreadingFactor>:<CodingRate>:<LNA>:<PABoost>:<Modulation>:<PayloadLen>:<FskDeviation>:<LowDRopt>:<BTproduct>` | -                                    | OKAT_PARAM_ERROR |
+| `AT+TCONF=<Input>` | `<Freq>:<Power>:<Bandwidth>:<SpreadingFactor>:<CodingRate>:<LNA>:<PABoost>:<Modulation>:<PayloadLen>:<FskDeviation>:<LowDRopt>:<BTproduct>` | -                                               | OKAT_PARAM_ERROR |
 
 :::tip 📝 NOTE
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
@@ -3619,7 +3621,7 @@ This command is used to access the LoRa® configuration test.
 7 - PA Boost State (not implemented) <br>
 8 - Modulation: 0=FSK, 1=LoRa <br>
 9 - Payload len <br>
-10 - Freq deviation (only fsk 600 - 200000 hz) <br>
+10 - Freq deviation (only fsk 600 - 200000&nbsp;Hz) <br>
 11 - LowDRopt (not implemented) <br>
 12 - BT product (not implemented) <br>
 
@@ -3706,16 +3708,16 @@ This command is used to stop the ongoing RF test.
 
 ### AT+CERTIF
 
-Description: Configure LoRaWAN® Certification test
+Description: Configure LoRaWAN Certification test
 
 This command is used to start the RF Rx LoRa test.
 
 | Command      | Input Parameter | Return Value                                                                                         | Return Code           |
 | ------------ | --------------- | ---------------------------------------------------------------------------------------------------- | --------------------- |
-| `AT+CERTIF?` | -               | `AT+CERTIF`: set the module in LoraWAN® Certification mode (0 = normal mode, 1 = certification mode) | OK                    |
+| `AT+CERTIF?` | -               | `AT+CERTIF`: set the module in  LoRaWAN Certification mode (0 = normal mode, 1 = certification mode) | OK                    |
 | `AT+CERTIF`  | -               |                                                                                                      | OK <br> AT_BUSY_ERROR |
 
 :::tip 📝 NOTE
 - `AT_BUSY_ERROR` is returned when the start frequency tone process is already running.
-- This command is used for the RF certification test and the timer to handler data transmission equal to 5s.
+- This command is used for the RF certification test and the timer to handler data transmission equal to 5&nbsp;s.
 :::

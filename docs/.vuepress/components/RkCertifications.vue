@@ -119,6 +119,9 @@ export default {
           case 'SIRIM':
             data.img = '/assets/images/certifications/SIRIM.png'
             break
+          case 'TDRA':
+            data.img = '/assets/images/certifications/TDRA.png'
+            break
           default:
             data.img =
               'https://image.shutterstock.com/image-illustration/white-unknown-document-icon-isolated-600w-1517588975.jpg'

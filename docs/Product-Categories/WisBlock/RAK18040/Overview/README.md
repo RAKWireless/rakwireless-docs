@@ -40,7 +40,7 @@ Thank you for choosing **RAK18040 WisBlock Audio Analog Microphone to I2S Module
 
 ## Prerequisites
 
-To use a **RAK18040**, you will need the **WisBlock Core** and the **WisBlock Audio Stack** modules to plug in the **RAK18040** module. These modules provides power to the **RAK18040** module. 
+To use a **RAK18040**, you will need a **WisBlock Core**, **WisBlock Base**, and **WisBlock Analog Microphone** like the RAK18041 which is connected to the **RAK18040** module. The **WisBlock Base** provides power to the **RAK18040** module.
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with screws to ensure proper function.

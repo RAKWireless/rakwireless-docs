@@ -8,7 +8,7 @@ header:
   title: An In-Depth Knowledge about Apple HomeKit
   caption: by <b>Ken Yu</b>
   img: /assets/images/knowledge-hub/banners/an-in-depth-knowledge-about-apple-homekit.jpg
-posted: 3/27/2017 10:30 AM
+posted: 03/27/2017 10:30 AM
 author:
   name: Ken Yu
   about: Founder and CEO of RAKwireless. Making Things at Rakwireless with The RAKstars
