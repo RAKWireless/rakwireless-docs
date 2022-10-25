@@ -166,7 +166,7 @@ at+set_config=lora:app_eui:XXXX
 Finally fill in the App key with the command:
 
 ```
-at++set_config=lora:app_key:XXXX
+at+set_config=lora:app_key:XXXX
 ```
 
 - Join Network
