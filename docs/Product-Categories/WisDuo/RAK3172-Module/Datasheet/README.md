@@ -165,11 +165,11 @@ The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Fr
 
 ##### Sleep Current
 
-| Feature             | Condition | Minimum (2.1V) | Typical (3.3V) | Maximum | Unit |
-| ------------------- | --------- | -------------- | -------------- | ------- | ---- |
-| Current Consumption | EU868     |                | 1.69           |         | μA   |
-|                     | US915     |                | 1.69           |         | μA   |
-|                     | CN470     |                | 1.69           |         | μA   |
+| Feature             | Condition | Minimum (2.1&nbsp;V) | Typical (3.3&nbsp;V) | Maximum | Unit |
+| ------------------- | --------- | -------------------- | -------------------- | ------- | ---- |
+| Current Consumption | EU868     | -                    | 1.69                 | -       | μA   |
+|                     | US915     | -                    | 1.69                 | -       | μA   |
+|                     | CN470     | -                    | 1.69                 | -       | μA   |
 
 :::tip 📝 NOTE:
 
@@ -191,7 +191,7 @@ For the reference application schematic of RAK3172 with minimum components requi
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/datasheet/board-layout/pad_layout.jpg"
-  width="70%"
+  width="80%"
   caption="RAK3172 Layout"
 />
 
@@ -219,12 +219,12 @@ For the reference application schematic of RAK3172 with minimum components requi
 
 Standard conditions for reflow soldering:
 
-- Pre-heating Ramp (A) (Initial temperature: 150&nbsp;℃): **1~2.5&nbsp;℃/sec**
-- Soaking Time (T2) (150~180&nbsp;℃): **60~100&nbsp;sec**
-- Peak Temperature (G): **230~250&nbsp;℃**
-- Reflow Time (T3) (>220&nbsp;℃): **30~60&nbsp;sec**
-- Ramp-up Rate (B): **0~2.5&nbsp;℃/sec**
-- Ramp-down Rate (C): **1~3&nbsp;℃/sec**
+- Pre-heating Ramp (A) (Initial temperature: 150°&nbsp;C): **1~2.5°&nbsp;C/sec**
+- Soaking Time (T2) (150~180°&nbsp;C): **60~100&nbsp;sec**
+- Peak Temperature (G): **230~250°&nbsp;C**
+- Reflow Time (T3) (>220°&nbsp;C): **30~60&nbsp;sec**
+- Ramp-up Rate (B): **0~2.5°&nbsp;C/sec**
+- Ramp-down Rate (C): **1~3°&nbsp;C/sec**
 
 ### Software
 

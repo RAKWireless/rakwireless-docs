@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK7249. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
-rak_img: /assets/images/wisgate/rak7249/quickstart/1.main/RAK7249_home.png
+rak_img: /assets/images/wisgate/rak7249/quickstart/1.main/RAK7249.png
 prev: ../Overview/
 next: ../Supported-LoRa-Network-Servers/
 tags:
@@ -42,7 +42,7 @@ The SIM card slot of the cellular versions is not hot-swappable. Make sure the g
 ## Product Configuration
 
 ### Gateway Installation Guide
-For details about the interfaces and connectors of RAK7249 WisGate Edge Max Gateway enclosure, refer to the [Datasheet](../Datasheet/#interfaces). 
+For details about the interfaces and connectors of RAK7249 WisGate Edge Max Gateway enclosure, refer to the [Datasheet](../Datasheet/#interfaces).
 #### Assembly
 
 1. Fix the support plate on the base with three M3*6 screws.
@@ -88,7 +88,7 @@ For details about the interfaces and connectors of RAK7249 WisGate Edge Max Gate
 />
 
 :::tip 📝 NOTE
-You must use the Wi-Fi MAIN connector to connect the Wi-Fi antenna. 
+You must use the Wi-Fi MAIN connector to connect the Wi-Fi antenna.
 :::
 
 7. If you have a Backup Battery Kit, connect with the backup battery to the motherboard.
@@ -119,7 +119,7 @@ You must use the Wi-Fi MAIN connector to connect the Wi-Fi antenna.
 />
 
 11. Connect the cables as shown in Figure 10.
-* Connect the PH2.0 socket on the motherboard and the charging PCB board with the 2pin signal cable. 
+* Connect the PH2.0 socket on the motherboard and the charging PCB board with the 2pin signal cable.
 * Connect the DC socket of the charging PCB board and the battery socket with a DC Plug cable.
 * Plug the output plug of the battery into the DC socket of the motherboard.
 
@@ -174,9 +174,9 @@ Instructions on mounting and securing the mounting kit to the enclosure and the 
 />
 #### Weather Protection
 
-To better protect the Ethernet cable gland and the antenna connector from the weather, you need to cover them with PVC tape. 
+To better protect the Ethernet cable gland and the antenna connector from the weather, you need to cover them with PVC tape.
 
-1. Clean the surface area of the connector that will be wrapped. Wrap a layer of PVC tape with a 50% overlap according to the rotation direction of the connector. Continue wrapping the PVC tape to about 10 mm below the end of the connector. 
+1. Clean the surface area of the connector that will be wrapped. Wrap a layer of PVC tape with a 50% overlap according to the rotation direction of the connector. Continue wrapping the PVC tape to about 10 mm below the end of the connector.
 
 <rk-img
   src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Gateway Installation Guide/image029.png"
@@ -217,7 +217,7 @@ This document shows the step-by-step guide on how to set-up the Solar Panel and 
 ##### Solar Panel
 
 ###### 1. Dimensions
-The dimension of the Solar Panel included in the kit is **665 x 815 millimeter**. Provided in the image below are the detailed dimensions of the solar panel for extended functions. 
+The dimension of the Solar Panel included in the kit is **665 x 815 millimeter**. Provided in the image below are the detailed dimensions of the solar panel for extended functions.
 
 <rk-img
   src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Solar Panel and Battery Kit Installation/sp-dimensions.jpg"
@@ -229,12 +229,12 @@ The dimension of the Solar Panel included in the kit is **665 x 815 millimeter**
 
 The table below is the electric characteristics of the Solar Panel included in the kit. It is best advised to have your electric parameters within the set values to maximize its functions and to avoid damage that could furtherly affect your RAK7249 - Macro Outdoor Gateway's performance.
 
-| Maximum Power (Pmax) | 80 Watts | 
-| ---- | ---- | 
-| Voltage at Pmax (Vmp) | 18 Volts | 
-| Current at Pmax (Imp) | 2.2 - 5.5 Amperes | 
-| Open Circuit Voltage (Voc) | 21.6 Volts | 
-| Short Circuit Current (Isc) | 2.3-6.5 Amperes | 
+| Maximum Power (Pmax) | 80 Watts |
+| ---- | ---- |
+| Voltage at Pmax (Vmp) | 18 Volts |
+| Current at Pmax (Imp) | 2.2 - 5.5 Amperes |
+| Open Circuit Voltage (Voc) | 21.6 Volts |
+| Short Circuit Current (Isc) | 2.3-6.5 Amperes |
 
 
 ##### Lithium Battery
@@ -245,15 +245,15 @@ The dimensions of the Lithium Battery included in the kit is **140 x 90 x 350 mi
 
 ###### 2. Operational Temperature
 
-The operational temperature of the Lithium Battery is **-20˚C ~ 60˚C**. It is advised to have your ambient temperature be within this temperature range to avoid failures or damage to the battery. 
+The operational temperature of the Lithium Battery is **-20˚C ~ 60˚C**. It is advised to have your ambient temperature be within this temperature range to avoid failures or damage to the battery.
 
 ###### 3. Electrical Characteristics
 
-| Nominal Output Voltage | 12.6 Volts | 
-| ---- | ---- | 
-| Nominal Output Current | 2 Amperes | 
-| Capacity | 50 Ah (Ampere-hour) | 
-| Charge Voltage | 18 Volts | 
+| Nominal Output Voltage | 12.6 Volts |
+| ---- | ---- |
+| Nominal Output Current | 2 Amperes |
+| Capacity | 50 Ah (Ampere-hour) |
+| Charge Voltage | 18 Volts |
 
 #### Installation Guide
 
@@ -317,7 +317,7 @@ Make sure to follow the connection in the image below as interchanging the wires
  If you live in an extreme condition environment that results in operational time significantly less than 4 days, reconsider increasing the battery capacity and installing a solar panel with greater power output to compensate such issues.
 :::
 
-6. Mount the whole installation you have assembled on top of a circular pole. Put the panel facing up and insert the pole in the pipe opening on the bottom of the construction. Make sure the pole is of a sufficiently small diameter to fit with a recommended value of **65 millimeters**. Use **6 pieces of M8-bolts** to fix the bottom to the construction as shown in the image below. 
+6. Mount the whole installation you have assembled on top of a circular pole. Put the panel facing up and insert the pole in the pipe opening on the bottom of the construction. Make sure the pole is of a sufficiently small diameter to fit with a recommended value of **65 millimeters**. Use **6 pieces of M8-bolts** to fix the bottom to the construction as shown in the image below.
 
 <rk-img
   src="/assets/images/wisgate/rak7249/quickstart/Outdoor Deployment/Solar Panel and Battery Kit Installation/bolts-vertical-pole.jpg"
@@ -508,7 +508,7 @@ Using your preferred Web browser, input the aforementioned IP Address and you sh
   src="/assets/images/wisgate/rak7249/quickstart/2.quickstart/okvqxiyqxijphxovxdtu.jpg"
   width="70%"
   caption="Accessing the Gateway via Wi-Fi AP Mode"
-/> 
+/>
 
 ### WAN Port (Ethernet)
 
@@ -521,7 +521,7 @@ The default IP is **169.254.X.X.** The last two segments(X.X) are mapped from th
   src="/assets/images/wisgate/rak7249/quickstart/2.quickstart/cjrru7khtd2gvgcwsxdi.jpg"
   width="70%"
   caption="Accessing the Gateway via WAN Port (Ethernet)"
-/> 
+/>
 
 ### Access the Internet
 
@@ -531,7 +531,7 @@ The default IP is **169.254.X.X.** The last two segments(X.X) are mapped from th
   src="/assets/images/wisgate/rak7249/quickstart/2.quickstart/aub7puijxy6ohinpgucq.jpg"
   width="70%"
   caption="Accessing the Internet using Wi-Fi"
-/> 
+/>
 
 Go into the **Network>Wi-Fi Menu** and make sure to enable the **Wireless Client** as it is disabled initially. Enter or click "**Scan**" to choose your **ESSSID**, select the right **Encryption** method and enter the correct **Key**.
 
@@ -539,7 +539,7 @@ Go into the **Network>Wi-Fi Menu** and make sure to enable the **Wireless Client
   src="/assets/images/wisgate/rak7249/quickstart/2.quickstart/wifi-credentials.png"
   width="60%"
   caption="Connect through Wi-Fi Credentials"
-/> 
+/>
 
 :::tip 📝 NOTE
 Assuming you have entered the correct parameter values you should get an IP address assigned by your Wi-Fi router's (AP) built-in DHCP server. You can use this new IP address to log in via a web browser (same way as in AP mode).
@@ -551,7 +551,7 @@ Assuming you have entered the correct parameter values you should get an IP addr
   src="/assets/images/wisgate/rak7249/quickstart/2.quickstart/jzincjovysyxgk5rldoh.jpg"
   width="70%"
   caption="Accessing the Internet through Ethernet"
-/> 
+/>
 
 Connect the Ethernet cable to the port marked “ETH” on the Gateway and the other end to the PoE port of the PoE injector. Connect the LAN port of the PoE injector to your router. The router’s DHCP server should assign an IP Address to the Gateway. You can change the default settings below if you wish (details in the User Manual).
 
@@ -559,5 +559,5 @@ Connect the Ethernet cable to the port marked “ETH” on the Gateway and the o
   src="/assets/images/wisgate/rak7249/quickstart/2.quickstart/ethernet-settings.png"
   width="60%"
   caption="Connect through Ethernet Settings"
-/> 
+/>
 

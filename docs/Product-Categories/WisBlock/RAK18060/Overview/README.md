@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak18060/overview/RAK18060_home.png
 rak_desc: RAK18060 is a stereo amplifier module, part of the WisBlock Audio Series. It is designed based on the TAS2560 from TI, which features an ultra-low-noise audio DAC and Class-D audio amplifier.
 rak_grp: [wisblock, amplifier]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - WisBlock Audio
     - RAK18060
@@ -15,6 +15,7 @@ tags:
 
 Thank you for choosing **RAK18060 WisBlock Audio Stereo Amplifier Module** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [RAK18060 Quick Start Guide](../Quickstart)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
@@ -44,7 +45,7 @@ The RAK18060 can drive the speaker to play audio through the input I2S signals. 
 
 ## Prerequisites
 
-To use a **RAK18060**, you need a **WisBlock Base** board to plug the module in. The **WisBlock Base** board provides power supply to the **RAK18060** module. Furthermore, you need the **WisBlock Core** and **WisBlock Audio Stack** modules to use the RAK18060.   
+To use a **RAK18060**, you need a **WisBlock Base** board to plug the module in and an external battery. The **WisBlock Base** board provides power supply to the **RAK18060** module. Furthermore, you need the **WisBlock Core** to use the RAK18060.   
 
 :::warning ⚠️ WARNING    
 Make sure to fix the module with screws to ensure proper function.

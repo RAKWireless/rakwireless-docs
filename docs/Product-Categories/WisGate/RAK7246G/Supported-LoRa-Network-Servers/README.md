@@ -1,6 +1,6 @@
 ---
-rak_desc: Contains a comprehensive guide in setting up your RAK7244C with TTN and ChirpStack.
-rak_img: /assets/images/wisgate/rak7246g/quickstart/RAK7246_home.png
+rak_desc: Contains a comprehensive guide to setting up your RAK7244C with TTN and ChirpStack.
+rak_img: /assets/images/wisgate/rak7246g/quickstart/RAK7246G.png
 tags:
   - AWS
   - wisgate
@@ -43,7 +43,7 @@ In this section, you will learn how to connect RAK7246/RAK7246G WisGate Develope
   caption="The Things Network console page"
 />
 
-6. All registered gateway will be displayed. To register a new gateway, click on **+ Add gateway**.
+6. All registered gateways will be displayed. To register a new gateway, click on **+ Add gateway**.
 
 <rk-img
   src="/assets/images/wisgate/rak7246g/supported-lora-network-servers/ttn/3.add-gateway.png"
@@ -78,7 +78,7 @@ sudo gateway-config
 
 :::tip 📝 NOTE
 - This tutorial is based on using the EU868 frequency band, so the server address will be: **eu1.cloud.thethings.network**.
-- The **Europe 863-870 MHz (SF12 for RX2)** is used. 
+- The **Europe 863-870&nbsp;MHz (SF12 for RX2)** is used.
 :::
 
 - **Frequency plan** - The frequency plan used by the gateway.
@@ -111,7 +111,7 @@ There is a built-in ChirpStack in every RAK Developer gateway if you use the lat
 - **Optional** - If ever you disabled the **AP Mode** and you have connected it to your own Wi-Fi network **(Client Mode)**, you can search for your gateway’s IP Address via [Advanced IP Scanner](https://www.advanced-ip-scanner.com/).
 
 - There is a **Web-based UI** that comes with the ChirpStack instance. Open a browser and enter the following credentials:
-  
+
     - **Browser Address**: `<Gateway IP address>:8080` (Example: `http://192.168.0.100:8080` )
     - **Username**: admin
     - **Password**: admin
@@ -146,7 +146,7 @@ It is advisable to **change your password** to tighten the security of your acco
 
 ### Using an Independent ChirpStack
 
-You can setup an independent ChirpStack by yourself and can set a ChirpStack in AWS. Refer to the [AWS guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/Amazon-Web-Services/). If you want to run ChirpStack on a different host/cloud, then refer to the [guide](https://www.chirpstack.io/guides/debian-ubuntu/) on the ChirpStack site.
+You can set up an independent ChirpStack by yourself and can set up a ChirpStack in AWS. Refer to the [AWS guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/Amazon-Web-Services/). If you want to run ChirpStack on a different host/cloud, then refer to the [guide](https://www.chirpstack.io/guides/debian-ubuntu/) on the ChirpStack site.
 
 
 :::warning ⚠️ WARNING
@@ -155,7 +155,7 @@ Remember to run the `sudo gateway-config` command in the CLI and point the gatew
 
 
 - Assuming you have set it up correctly, log into your ChirpStack to register your gateway by opening the ChirpStack's web page in a browser by entering:
-  
+
     - **Browser Address**: `<IP Address of ChirpStack>:8080`
     - **Username**: admin
     - **Password**: admin

@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK7246G. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
-rak_img: /assets/images/wisgate/rak7246g/quickstart/RAK7246_home.png
+rak_img: /assets/images/wisgate/rak7246g/quickstart/RAK7246G.png
 prev: ../Overview/
 next: ../AWS-Greengrass/
 tags:
@@ -12,9 +12,6 @@ tags:
 # RAK7246G Quick Start Guide
 
 ## Prerequisites
-
-
-
 
 ### What Do You Need?
 
@@ -75,7 +72,7 @@ SSH (Secure Shell) is typically used to log in to a remote machine and execute c
 <rk-img
   src="/assets/images/wisgate/rak7246g/quickstart/accessing-gateway/puttywindows.png"
   width="60%"
-  caption="Putty Software for SSH in Windows"
+  caption="Putty software for SSH in Windows"
 />
 
 - It will then prompt you to enter the username and password. The default username and password are provided below:
@@ -91,7 +88,7 @@ SSH (Secure Shell) is typically used to log in to a remote machine and execute c
 
 ##### Mac OS
 
-Open the Terminal of Mac OS. Launch the **Terminal** application, which is found in `/Applications/Utilities/` directory. But you can also launch it from Spotlight by hitting **Command + Spacebar**, typing **Terminal**, and then return:
+Open the Terminal of Mac OS. Launch the **Terminal** application, which is found in `/Applications/Utilities/` directory. But you can also launch it from Spotlight - press **Command + Spacebar**, type **Terminal**, and then return.
 
 
 <rk-img
@@ -100,7 +97,7 @@ Open the Terminal of Mac OS. Launch the **Terminal** application, which is found
   caption="Opening Terminal in Mac OS"
 />
 
-Open the terminal of Mac OS. Enter **root mode** by typing the following command: 
+Open the terminal of Mac OS. Enter **root mode** by typing the following command:
 
 ```
 sudo -i
@@ -151,7 +148,7 @@ You will now then see a page the same as **Figure 8**.
 
 #### Connect through Wi-Fi
 
-If you want to connect through Wi-Fi, it can easily be done with the wireless capabilities of the Raspberry Pi Zero W by choosing **5 Configure Wifi**. By default, the RAK7246/RAK7246G WisGate Developer D0/D0+ Gateway works in Wi-Fi AP Mode. 
+If you want to connect through Wi-Fi, it can easily be done with the wireless capabilities of the Raspberry Pi Zero W by choosing **5 Configure Wifi**. By default, the RAK7246/RAK7246G WisGate Developer D0/D0+ Gateway works in Wi-Fi AP Mode.
 
 For the gateway to connect to the router, it must work in Wi-Fi Client Mode.
 
@@ -166,8 +163,8 @@ There are 5 options to choose from in the Wi-Fi configuration menu:
 1. **Enable AP Mode/Disable Client Mode** - the gateway will work in Wi-Fi Access Point Mode after rebooting while the Wi-Fi Client Mode will be disabled (this is the default mode).
 2. **Enable Client Mode/Disable AP Mode** - the gateway will work in Wi-Fi Client mode after rebooting, while Wi-FI AP Mode will be disabled.
 3. **Modify SSID and pwd for AP Mode** - used to modify the SSID and password of the Wi-Fi AP. Only works if the Wi-Fi AP Mode is enabled.
-4. **Add New SSID for Client** - this is used if you want to connect to a new Wi-Fi Network. Only works in Wi-Fi Client mode.
-5. **Change Wi-Fi Country** - this is used to modify the resident country to match Wi-Fi standards.
+4. **Add New SSID for Client** - used if you want to connect to a new Wi-Fi Network. Only works in Wi-Fi Client mode.
+5. **Change Wi-Fi Country** - used to modify the resident country to match Wi-Fi standards.
 
 :::warning ⚠️ WARNING
 To enable Wi-Fi Client Mode, you have to disable first the AP Mode.
@@ -238,7 +235,7 @@ cd > rak_ap
 ### Configuring the Gateway
 
 - Assuming you have successfully logged into your gateway using SSH, enter the following command in the command line:
-  
+
   ```
   sudo gateway-config
   ```
@@ -299,7 +296,7 @@ It is a good security practice to change the default password **raspberry**, whi
 <rk-img
   src="/assets/images/wisgate/rak7246g/quickstart/configure-gateway/success_pwd_change.png"
   width="75%"
-  caption="Successful Password Change"
+  caption="Successful password change"
 />
 
 #### Setup RAK Gateway Channel Plan
@@ -323,7 +320,7 @@ You can choose one of two supported LoRa servers here: **TTN** or **ChirpStack**
   caption="TTN server"
 />
 
-* **TTN (The Things Network)** - If you choose TTN as the LoRa Server, you will see a page the same as shown in **Figure 27**. Visit [LoRa Alliance Regional Parameters](https://lora-alliance.org/wp-content/uploads/2021/05/RP002-1.0.3-FINAL-1.pdf) for more information on your local frequency plan. This will allow you to choose the correct plan. 
+* **TTN (The Things Network)** - If you choose TTN as the LoRa Server, you will see a page the same as shown in **Figure 27**. Visit [LoRa Alliance Regional Parameters](https://lora-alliance.org/wp-content/uploads/2021/05/RP002-1.0.3-FINAL-1.pdf) for more information on your local frequency plan. This will allow you to choose the correct plan.
 
 <rk-img
   src="/assets/images/wisgate/rak7246g/quickstart/configure-gateway/ttn_channel_plan.png"
@@ -344,7 +341,7 @@ After choosing the correct frequency, a success message will appear, as shown in
 
 When a channel plan is selected, the gateway is configured to connect to the nearest cluster to the region. If new clusters are presented, the channel plans will be updated. For now, the only available clusters are as follows:
 
-- Europe: eu1.cloud.thethings.network 
+- Europe: eu1.cloud.thethings.network
 - Australia: au1.cloud.thethings.network
 - North America: nam1.cloud.thethings.network
 

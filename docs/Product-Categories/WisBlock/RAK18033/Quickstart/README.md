@@ -42,7 +42,7 @@ For more information about RAK18033, refer to the [Datasheet](../Datasheet/).
 RAK18033 module can be connected to the IO slot of the WisBlock Base to communicate with the WisBlock Core. Always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
-  src="/assets/images/wisblock/rak18033/quickstart/RAK18033_Example_2A.png"
+  src="/assets/images/wisblock/rak18033/quickstart/rak18033-example-2.png"
   width="70%"
   caption="RAK18033 connection to WisBlock Base"
 />
@@ -62,7 +62,7 @@ As shown in **Figure 2**, the location for the IO slot is properly marked by sil
 When using the **RAK4631** board, connect the LoRa and BLE antennas to avoid damage to the board.
 
 <rk-img
-  src="/assets/images/wisblock/rak18033/quickstart/RAK18033_Example_3A.png"
+  src="/assets/images/wisblock/rak18033/quickstart/rak18033-example-3.png"
   width="60%"
   caption="LoRa and BLE antennas of RAK4631"
 />
@@ -120,7 +120,7 @@ The RAK18033 Stereo Microphone Header module can connect two identical PDM Micro
    **Using RAK18030 module**
 
 <rk-img
-  src="/assets/images/wisblock/rak18033/quickstart/RAK18033_Example_4B.png"
+  src="/assets/images/wisblock/rak18033/quickstart/rak18033-example-4.png"
   width="70%"
   caption="RAK18030 Stereo Microphones"
 />
@@ -128,7 +128,7 @@ The RAK18033 Stereo Microphone Header module can connect two identical PDM Micro
    **Using RAK18031 module**
 
 <rk-img
-  src="/assets/images/wisblock/rak18033/quickstart/RAK18033_Example_5B.png"
+  src="/assets/images/wisblock/rak18033/quickstart/rak18033-example-5.png"
   width="70%"
   caption="RAK18031 Stereo Microphones"
 />
@@ -136,7 +136,7 @@ The RAK18033 Stereo Microphone Header module can connect two identical PDM Micro
    **Using RAK18032 module**
 
 <rk-img
-  src="/assets/images/wisblock/rak18033/quickstart/RAK18033_Example_6B.png"
+  src="/assets/images/wisblock/rak18033/quickstart/rak18033-example-6.png"
   width="70%"
   caption="RAK18032 Stereo Microphones"
 />
@@ -228,7 +228,7 @@ If you experience any error in compiling the example sketch, check the updated e
 />
 
 <rk-img
-  src="/assets/images/wisblock/rak18033/quickstart/Arduino_Example_10.png"
+  src="/assets/images/wisblock/rak18033/quickstart/Arduino-Example-10.png"
   width="100%"
   caption="FFT Plot of 10kHz sample signal"
 />

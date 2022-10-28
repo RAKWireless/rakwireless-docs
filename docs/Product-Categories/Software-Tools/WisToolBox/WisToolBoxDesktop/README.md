@@ -19,9 +19,11 @@ To use the WisToolBox Desktop, make sure you meet the two requirements:
 
 The WisToolBox Desktop is available in Windows, macOS, and Linux. 
 
+<!--- 
   * [Windows Store](https://www.microsoft.com/store/productId/9P6691TTW3J5)
   * [Linux Snapcraft](https://snapcraft.io/wistoolbox)
   * MAC App Store
+--->
 
 For direct downloads of installers:
   * [Windows](https://downloads.rakwireless.com/WisToolBox/WisToolBox_windows.exe)

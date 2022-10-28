@@ -323,12 +323,12 @@ export default {
   },
   '/Product-Categories/WisGate/RAK7246G/': {
     label: 'RAK7246G WisGate Developer D0 Gateway',
-    img: '/assets/images/wisgate/rak7246g/quickstart/RAK7246_buy.png',
+    img: '/assets/images/wisgate/rak7246g/quickstart/RAK7246G.png',
     store: 'https://store.rakwireless.com/products/rak7246-lpwan-developer-gateway?variant=32143952511021&utm_source=RAK7246GDeveloperD0%2B&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisGate/RAK7249/': {
     label: 'RAK7249 WisGate Edge Max',
-    img: '/assets/images/wisgate/rak7249/quickstart/1.main/RAK7249_buy.png',
+    img: '/assets/images/wisgate/rak7249/quickstart/1.main/RAK7249.png',
     store: 'https://store.rakwireless.com/products/rak7249-diy-outdoor-gateway?utm_source=RAK7249Max&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisGate/RAK7258/': {
@@ -368,12 +368,12 @@ export default {
   },
   '/Product-Categories/WisGate/RAK7289/': {
     label: 'RAK7289 WisGate Edge Pro',
-    img: '/assets/images/wisgate/rak7289/overview/RAK7289.png',
+    img: '/assets/images/wisgate/rak7289/overview/RAK7289_buy.png',
     store: 'https://store.rakwireless.com/products/wisgate-edge-pro-rak7289?utm_source=WisGateRAK7289&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisGate/RAK7289-V2/': {
     label: 'RAK7289 V2 WisGate Edge Pro',
-    img: '/assets/images/wisgate/rak7289-v2/overview/RAK7289V2.png',
+    img: '/assets/images/wisgate/rak7289-v2/overview/RAK7289V2_buy.png',
     store: 'https://store.rakwireless.com/products/wisgate-edge-pro-rak7289v2-rak7289cv2?utm_source=WisGateRAK7289V2&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisGate/RAK7391/': {
@@ -382,7 +382,7 @@ export default {
     store: 'https://store.rakwireless.com/products/wisgate-connect-base-kit-rak7391?utm_source=WisGateRAK7391&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
-  
+
 
   // WisBlock
 
@@ -1014,7 +1014,7 @@ export default {
   },
 
 
-  // WisBlock Audio 
+  // WisBlock Audio
 
   '/Product-Categories/WisBlock/RAK18003/': {
     label: 'RAK18003 WisBlock Audio Interposer Module',

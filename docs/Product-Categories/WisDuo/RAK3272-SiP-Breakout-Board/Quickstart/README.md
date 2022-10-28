@@ -283,40 +283,40 @@ You can use any of the pins below as Digital Pin.
 
 
 | **Pin Name** | **Alternative Pin Usage** |
-| ------------ | ------------------------- |
-| PA4          | SPI1_NSS                  |
-| PA5          | SPI1_CLK                  |
-| PA6          | SPI1_MISO                 |
-| PA7          | SPI1_MOSI                 |
-| PA8          |                           |
-| PA9          |                           |
-| PA10         |                           |
-| PA11         | I2C_SCL                   |
-| PA12         | I2C_SDA                   |
-| PA15         |                           |
-| PB1          |                           |
-| PB2          |                           |
-| PB3          | ADC0                      |
-| PB4          | ADC1                      |
-| PB5          |                           |
-| PB6          | UART1_TX                  |
-| PB7          | UART1_RX                  |
-| PB8          |                           |
-| PB9          |                           |
-| PB10         |                           |
-| PB11         |                           |
-| PB12         |                           |
-| PB13         |                           |
-| PB14         |                           |
-| PB15         |                           |
-| PC0          |                           |
-| PC1          |                           |
-| PC2          |                           |
-| PC3          |                           |
-| PC4          |                           |
-| PC5          |                           |
-| PC6          |                           |
-| PC13         |                           |
+| :----------: | :-----------------------: |
+|     PA4      |         SPI1_NSS          |
+|     PA5      |         SPI1_CLK          |
+|     PA6      |         SPI1_MISO         |
+|     PA7      |         SPI1_MOSI         |
+|     PA8      |                           |
+|     PA9      |                           |
+|     PA10     |                           |
+|     PA11     |          I2C_SCL          |
+|     PA12     |          I2C_SDA          |
+|     PA15     |                           |
+|     PB1      |                           |
+|     PB2      |                           |
+|     PB3      |           ADC0            |
+|     PB4      |           ADC1            |
+|     PB5      |                           |
+|     PB6      |         UART1_TX          |
+|     PB7      |         UART1_RX          |
+|     PB8      |                           |
+|     PB9      |                           |
+|     PB10     |                           |
+|     PB11     |                           |
+|     PB12     |                           |
+|     PB13     |                           |
+|     PB14     |                           |
+|     PB15     |                           |
+|     PC0      |                           |
+|     PC1      |                           |
+|     PC2      |                           |
+|     PC3      |                           |
+|     PC4      |                           |
+|     PC5      |                           |
+|     PC6      |                           |
+|     PC13     |                           |
 
 
 <rk-img

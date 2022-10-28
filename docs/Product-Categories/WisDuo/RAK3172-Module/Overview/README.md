@@ -10,7 +10,7 @@ tags:
 ---
 
 # RAK3172 WisDuo LPWAN Module
-Thank you for choosing **RAK3172 WisDuo LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK3172 WisDuo LPWAN Module** in your awesome IoT project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/)
 * [AT Command Manual](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/)

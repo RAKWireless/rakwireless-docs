@@ -15,7 +15,7 @@ tags:
 
 ### Description
 
-RAK7391 WisGate Connect is a Raspberry Pi CM4-based gateway product meant to support different radio and WisBlock modules. It has several interfaces to meet the needs of different developers, which include HDMI, Ethernet, USB, mPCIe, CSI, DSI, M.2, WisBlock, PoE, and Raspberry Pi HAT. Of course, it can also be used as a basic LoRaWAN gateway product supporting up to four (4) separate modules. You can have a 16-channel sub-GHz LoRaWAN gateway plus a 2.4&nbsp;GHz LoRaWAN gateway on the same device. 
+RAK7391 WisGate Connect is a Raspberry Pi CM4-based gateway product meant to support different radio and WisBlock modules. It has several interfaces to meet the needs of different developers, which include HDMI, Ethernet, USB, mPCIe, CSI, DSI, M.2, WisBlock, PoE, and Raspberry Pi HAT. Of course, it can also be used as a basic LoRaWAN gateway product supporting up to four (4) separate modules. You can have a 16-channel sub-GHz LoRaWAN gateway plus a 2.4&nbsp;GHz LoRaWAN gateway on the same device.
 
 The RAK7391 has flexible power supply modes such as the DC terminal, Phoenix terminal, and POE (optional). It provides a fan interface to dissipate heat for the CPU that you can control based on the CPU temperature. It can also monitor the power supply. In the event of a power failure, the ultracapacitors can provide power to the system so that the system can send a notification or easily survive micro-cuts in the power supply.
 
@@ -47,7 +47,7 @@ The RAK7391 has flexible power supply modes such as the DC terminal, Phoenix ter
 
 #### Software
 
-A custom «distro» for the WisGate Connect called RAKPiOS has been prepared. The RAKPiOS is a fork of the Raspberry Pi OS with all the required drivers to use the device, some security changes, helper scripts, and Docker included by default. 
+A custom «distro» for the WisGate Connect called RAKPiOS has been prepared. The RAKPiOS is a fork of the Raspberry Pi OS with all the required drivers to use the device, some security changes, helper scripts, and Docker included by default.
 
 You can easily deploy several IoT services from a curated list of docker containers available from the device.
 
@@ -297,6 +297,21 @@ By default, the RAK7391 Board sets the CM4 IO voltage to +3.3&nbsp;V via R11. Mo
 GPIO2 and GPIO3 are used for the I2C interface (i2c1) and connected to the onboard I2C devices as well as to the external I2C interfaces (WisBlock, Raspberry Pi HAT, mPCIe slots). If an external device using the I2C interface conflicts with the address of an I2C device in the RAK7391, the external I2C bus can be changed by moving the 0&nbsp;Ohm resistors from R718 and R719 to R716 and R717. In addition, R720 and R721 need to be increased to 4.7K and R722 and R723 must be removed. After these modifications, the bus controlling the external I2C devices will be i2c3 (GPIO4 and GPIO5), and internal devices (RTC, ADC, GPIO Expanders) will still be on i2c1.
 
 If you want to use ID_SC and ID_SD signals on the Raspberry PI Hat, you can remove R711 and R712.
+
+**I2C default addresses**
+
+| Device             |	Part	    | Default Address |
+| ------------------ | ---------  | --------------- |
+| OLED Screen	       | SSD1306	  | 0x3C            |
+| GPIO Expander #1	 | TPT29555	  | 0x27            |
+| GPIO Expander #2	 | TPT29555	  | 0x26            |
+| ADC	               | SGM58031	  | 0x4B            |
+| FAN Controller	   | EMC2301	  | 0x2F            |
+| Temperature Sensor | SHTC3	    | 0x70            |
+| Real-Time Clock	   | PCF85063A	| 0x51            |
+| Secure IC	         | ATECC608A	| 0x60            |
+
+Note you can change the address of some of these devices by modifying the resistor configuration.
 
 ##### ADC
 

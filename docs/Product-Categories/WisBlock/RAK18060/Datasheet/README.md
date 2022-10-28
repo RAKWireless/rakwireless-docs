@@ -7,7 +7,7 @@ tags:
   - RAK18060
   - Texas Instruments
   - TAS2560
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -105,7 +105,7 @@ The RAK18060 WisBlock module comprises a board-to-board (BTB) connector. The BTB
   
 <rk-img
   src="/assets/images/wisblock/rak18060/datasheet/RAK18060_btb_connector_pinout.png"
-  width="40%"
+  width="50%"
   caption="RAK18060 BTB connector pinout"
 />
 
@@ -133,7 +133,7 @@ This table shows the electrical characteristics of the RAK18060 module:
 | THD+N           | THD+N @ 1&nbsp;kHz, Po = 3&nbsp;W）RL = 8&nbsp;Ω                       | -    | 0.0043 | -    | %    |
 | SNR             | Referenced to 1% THD+N at output, A-weighted, RL = 8&nbsp;Ω            | -    | 110.6  | -    | dB   |
 | Pm              | Max output power @ (3&nbsp;A current limit, THD+N = 1%, 8&nbsp;Ω Load) | -    | 3.7    | -    | W    |
-| Top             | Operating temperature range                                            | -40  | -      | +85  | ℃    |
+| Top             | Operating temperature range                                            | -40  | -      | +85  | ℃   |
 
 
 #### Mechanical Characteristic
@@ -152,7 +152,7 @@ This table shows the electrical characteristics of the RAK18060 module:
 
 <rk-img
   src="/assets/images/wisblock/rak18060/datasheet/MxxS1003K6M.png"
-  width="70%"
+  width="85%"
   caption="WisConnector PCB footprint and recommendations"
 />
 

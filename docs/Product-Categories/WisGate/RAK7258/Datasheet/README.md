@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK7258 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisgate/rak7258/quickstart/1.main/RAK7258_home.png
+rak_img: /assets/images/wisgate/rak7258/quickstart/1.main/RAK7258.png
 tags:
   - datasheet
   - wisgate
@@ -45,7 +45,7 @@ The RAK7258 WisGate Edge Lite package includes a LoRa antenna, mounting screws, 
 
 ### Overview
 
-The overview shows the circuit board of RAK7258. It also presents the block diagram that shows the internal architecture of the board. 
+The overview shows the circuit board of RAK7258. It also presents the block diagram that shows the internal architecture of the board.
 
 #### Circuit Board (Main Electronic Circuit Board)
 

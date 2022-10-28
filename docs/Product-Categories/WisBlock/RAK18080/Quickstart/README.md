@@ -44,7 +44,7 @@ For more information about RAK18080, refer to the [Datasheet](../Datasheet/).
 RAK18080 module can be connected to the IO slot of the WisBlock Base to communicate with the WisBlock Core. Always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
-  src="/assets/images/wisblock/rak18080/quickstart/RAK18080_Example_3.png"
+  src="/assets/images/wisblock/rak18080/quickstart/rak18080-example-3.png"
   width="80%"
   caption="RAK18080 connection to WisBlock Base"
 />
@@ -64,7 +64,7 @@ As shown in **Figure 2**, the location for the IO slot is properly marked by sil
 When using the **RAK4631** board, connect the LoRa and BLE antennas to avoid damage to the board.
 
 <rk-img
-  src="/assets/images/wisblock/rak18080/quickstart/RAK18080_Example_2.png"
+  src="/assets/images/wisblock/rak18080/quickstart/rak18080-example-2.png"
   width="70%"
   caption="LoRa and BLE antennas of RAK4631"
 />
@@ -134,7 +134,7 @@ For this example, you need to use the **RAK18080 (DSP chip)**, **RAK18003 (Audio
    If you want to use 3V3, desolder SB2 and solder SB1.
 
 <rk-img
-  src="/assets/images/wisblock/rak18080/quickstart/Arduino_Example_14.png"
+  src="/assets/images/wisblock/rak18080/quickstart/Arduino-Example-14.png"
   width="60%"
   caption="Solder portion for SB1"
 />
@@ -144,7 +144,7 @@ For this example, you need to use the **RAK18080 (DSP chip)**, **RAK18003 (Audio
    If you want to use VBUS, desolder SB2 and solder SB3.
 
 <rk-img
-  src="/assets/images/wisblock/rak18080/quickstart/Arduino_Example_15.png"
+  src="/assets/images/wisblock/rak18080/quickstart/Arduino-Example-15.png"
   width="60%"
   caption="Solder portion for SB3"
 />
@@ -154,7 +154,7 @@ For this example, you need to use the **RAK18080 (DSP chip)**, **RAK18003 (Audio
    If you want to use EX_POWER, desolder SB2 and solder SB4.
 
 <rk-img
-  src="/assets/images/wisblock/rak18080/quickstart/Arduino_Example_16.png"
+  src="/assets/images/wisblock/rak18080/quickstart/Arduino-Example-16.png"
   width="60%"
   caption="Solder portion for SB4"
 />
@@ -175,7 +175,7 @@ For this example, you need to use the **RAK18080 (DSP chip)**, **RAK18003 (Audio
 
 <rk-img
   src="/assets/images/wisblock/rak18080/quickstart/overall-assembly.png"
-  width="100%"
+  width="90%"
   caption="Overall Assembly"
 />
 
@@ -193,13 +193,13 @@ For this example, you need to use the **RAK18080 (DSP chip)**, **RAK18003 (Audio
 
 <rk-img
   src="/assets/images/wisblock/rak18080/quickstart/rakwireless_audio_library.png"
-  width="100%"
+  width="90%"
   caption="RAKwireless Audio Library"
 />
 
 <rk-img
   src="/assets/images/wisblock/rak18080/quickstart/rakwireless_audio_library_2.png"
-  width="100%"
+  width="90%"
   caption="RAKwireless Audio Library"
 />
 

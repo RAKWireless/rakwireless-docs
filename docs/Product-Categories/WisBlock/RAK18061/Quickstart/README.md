@@ -65,7 +65,7 @@ As shown in **Figure 2**, the location for the IO slot is properly marked by sil
 You need to connect the LoRa and BLE antennas to the **RAK4631** module to avoid damage to this module during operation.
 
 <rk-img
-  src="/assets/images/wisblock/rak18061/quickstart/Arduino_Example_13A.png"
+  src="/assets/images/wisblock/rak18061/quickstart/arduino-example-12a.png"
   width="60%"
   caption="LoRa and BLE antennas connection to RAK4631 module"
 />
@@ -73,7 +73,7 @@ You need to connect the LoRa and BLE antennas to the **RAK4631** module to avoid
 The **RAK18061** module is powered via **SB2 (battery)** by default. If you wish to use other DC power source, refer to **Figure 4**.
 
 <rk-img
-  src="/assets/images/wisblock/rak18061/quickstart/Arduino_Example_11.png"
+  src="/assets/images/wisblock/rak18061/quickstart/arduino-example-10.png"
   width="60%"
   caption="Power Select Diagram for RAK18061 with SB2 as default"
 />
@@ -83,7 +83,7 @@ The **RAK18061** module is powered via **SB2 (battery)** by default. If you wish
    If you want to use 3V3, desolder SB2 and solder SB1.
 
 <rk-img
-  src="/assets/images/wisblock/rak18061/quickstart/Arduino_Example_14.png"
+  src="/assets/images/wisblock/rak18061/quickstart/arduino-example-13.png"
   width="60%"
   caption="Solder portion for SB1"
 />
@@ -93,7 +93,7 @@ The **RAK18061** module is powered via **SB2 (battery)** by default. If you wish
    If you want to use VBUS, desolder SB2 and solder SB3.
 
 <rk-img
-  src="/assets/images/wisblock/rak18061/quickstart/Arduino_Example_15.png"
+  src="/assets/images/wisblock/rak18061/quickstart/arduino-example-14.png"
   width="60%"
   caption="Solder portion for SB3"
 />
@@ -103,7 +103,7 @@ The **RAK18061** module is powered via **SB2 (battery)** by default. If you wish
    If you want to use EX_POWER, desolder SB2 and solder SB4.
 
 <rk-img
-  src="/assets/images/wisblock/rak18061/quickstart/Arduino_Example_16.png"
+  src="/assets/images/wisblock/rak18061/quickstart/arduino-example-15.png"
   width="60%"
   caption="Solder portion for SB4"
 />
@@ -111,7 +111,7 @@ The **RAK18061** module is powered via **SB2 (battery)** by default. If you wish
 Then you can now connect the speaker to the speaker output of the **RAK18061** module.
 
 <rk-img
-  src="/assets/images/wisblock/rak18061/quickstart/Arduino_Example_12A.png"
+  src="/assets/images/wisblock/rak18061/quickstart/arduino-example-11a.png"
   width="60%"
   caption="Speaker output of RAK18061 module"
 />
@@ -185,19 +185,19 @@ After all this setup, you can now connect the battery and USB cable to start pro
 4. Then open your Arduino IDE and open the **PlayBack48K** sample code for **RAK18061**, as shown in **Figures 14 to 16**.
 
 <rk-img
-  src="/assets/images/wisblock/rak18061/quickstart/Arduino_Example_1A.png"
+  src="/assets/images/wisblock/rak18061/quickstart/arduino-example-1a.png"
   width="100%"
   caption="Arduino IDE"
 />
 
 <rk-img
-  src="/assets/images/wisblock/rak18061/quickstart/Arduino_Example_2A.png"
+  src="/assets/images/wisblock/rak18061/quickstart/arduino-example-2a.png"
   width="100%"
   caption="Selecting the PlayBack48K Sample Code"
 />
 
 <rk-img
-  src="/assets/images/wisblock/rak18061/quickstart/Arduino_Example_3A.png"
+  src="/assets/images/wisblock/rak18061/quickstart/arduino-example-3a.png"
   width="100%"
   caption="PlayBack48K Sample Code"
 />
@@ -209,7 +209,7 @@ The example codes of RAKwireless Audio Library are compatible with specific WisB
 5. Select your WisBlock Core **RAK4631**, as shown in **Figure 17**.
 
 <rk-img
-  src="/assets/images/wisblock/rak18061/quickstart/Arduino_Example_4A.png"
+  src="/assets/images/wisblock/rak18061/quickstart/arduino-example-4a.png"
   width="100%"
   caption="Selecting the RAK4631 WisBlock Core board"
 />
@@ -217,7 +217,7 @@ The example codes of RAKwireless Audio Library are compatible with specific WisB
 6. Once done, select the corresponding port of your WisBlock Core **RAK4631**.
 
 <rk-img
-  src="/assets/images/wisblock/rak18061/quickstart/Arduino_Example_5A.png"
+  src="/assets/images/wisblock/rak18061/quickstart/arduino-example-5a.png"
   width="100%"
   caption="Selecting the port of RAK4631"
 />
@@ -225,7 +225,7 @@ The example codes of RAKwireless Audio Library are compatible with specific WisB
 7. Once done, it should look the same with **Figure 19**.
 
 <rk-img
-  src="/assets/images/wisblock/rak18061/quickstart/Arduino_Example_6A.png"
+  src="/assets/images/wisblock/rak18061/quickstart/arduino-example-6a.png"
   width="100%"
   caption="Selected board and port of RAK4631"
 />
@@ -233,7 +233,7 @@ The example codes of RAKwireless Audio Library are compatible with specific WisB
 8. Then tick the right arrow at the top leftmost part of the Arduino IDE to upload the sample code to your **RAK4631** module.
 
 <rk-img
-  src="/assets/images/wisblock/rak18061/quickstart/Arduino_Example_7A.png"
+  src="/assets/images/wisblock/rak18061/quickstart/arduino-example-7a.png"
   width="100%"
   caption="Uploading the PlayBack48K sample code to your RAK4631"
 />
@@ -245,7 +245,7 @@ If you experience any error in compiling the example sketch, check the updated e
 9. Once done uploading, it should look like the same with **Figure 21**. At this moment, you will hear "**Train 32 from Amsterdam is now arriving**" from your speaker playing repetitively.
 
 <rk-img
-  src="/assets/images/wisblock/rak18061/quickstart/Arduino_Example_9A.png"
+  src="/assets/images/wisblock/rak18061/quickstart/arduino-example-8a.png"
   width="100%"
   caption="Programmed RAK4631"
 />

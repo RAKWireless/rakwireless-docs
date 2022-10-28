@@ -641,7 +641,7 @@ You can also use an ST-LINK to upload the `.bin` file to RAK3172.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/low-level-development/RAK3172_UART_Connection.svg"
-  width="45%"
+  width="50%"
   caption="RAK3172 Connection to UART"
 />
 

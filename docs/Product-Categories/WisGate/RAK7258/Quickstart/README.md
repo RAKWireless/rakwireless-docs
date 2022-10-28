@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK7258. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
-rak_img: /assets/images/wisgate/rak7258/quickstart/1.main/RAK7258_home.png
+rak_img: /assets/images/wisgate/rak7258/quickstart/1.main/RAK7258.png
 prev: ../Overview/
 next: ../Supported-LoRa-Network-Servers/
 tags:
@@ -75,7 +75,7 @@ First and foremost, screw on the antenna to the SMA connector back panel of the 
 
 It is recommended to use the **12V DC adapter** that comes with the RAK7258 WisGate Edge Lite. Optionally, you can use your own **PoE cable** and **injector** since the device supports PoE.
 
-#### Casing and Ports 
+#### Casing and Ports
 
 <rk-img
   src="/assets/images/wisgate/rak7258/quickstart/2.quickstart/rak7258-back-panel.png"
@@ -128,7 +128,7 @@ By default, the Gateway will work in Wi-Fi AP Mode which means that you can find
   src="/assets/images/wisgate/rak7258/quickstart/2.quickstart/web-ui-home.jpg"
   width="100%"
   caption="Web User Interface Log-in"
-/> 
+/>
 
 #### WAN Port DHCP IP
 
@@ -145,7 +145,7 @@ Go into the **Network>Wi-Fi Menu** and make sure to enable the **Wireless Client
   src="/assets/images/wisgate/rak7258/quickstart/2.quickstart/wifi-credentials.png"
   width="60%"
   caption="Connect through Wi-Fi Credentials"
-/> 
+/>
 
 :::tip 📝 NOTE:
  Assuming you have entered the correct parameter values you should get an IP address assigned by your Wi-Fi router's (AP) built-in DHCP server. You can use this new IP address to log in via a web browser (same way as in AP mode).
@@ -159,7 +159,7 @@ Connect the **Ethernet Port (ETH)** of the RAK7258 WisGate Edge Lite via an Ethe
   src="/assets/images/wisgate/rak7258/quickstart/2.quickstart/ethernet-settings.png"
   width="60%"
   caption="Connect through Ethernet Settings"
-/> 
+/>
 
 
 

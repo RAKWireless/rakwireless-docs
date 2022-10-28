@@ -69,7 +69,7 @@ This is the complete list of AT commands based on old FW.
 
 The AT command is based on ASCII characters. In general, the AT Command starts with the prefix `AT` and ends with `<CR><LF>` (i.e. `\r\n`). For the rest of the document, the `\r\n` part is omitted for the sake of clarity.
 
-The AT commands have the standard format “AT+XXX”, with XXX denoting the command.
+The AT commands have the standard format `AT+XXX`, with XXX denoting the command.
 
 There are four available command formats:
 
@@ -2774,7 +2774,7 @@ This section describes the output from UART lines of RAK3172 that can occur at a
 | P2P                        | `+EVT:`*< status >* | `00112233` - Received binary data format data                                                    |
 |                            |                     | `RXP2P, RSSI -110, SNR 5` - Indicates that data has been received on P2P received window.        |
 | Link Check                 | `+EVT:`*< status >* | `LINKCHECK:Y0,Y1,Y2,Y3,Y4`                                                                       |
-|                            |                     | Y0 - represents link status (1:links success, 2: link fail)                                      |
+|                            |                     | Y0 - represents link status (1: links success, 2: link fail)                                      |
 |                            |                     | Y1 - represents the DemodMargin                                                                  |
 |                            |                     | Y2 - represents the NbGateways                                                                   |
 |                            |                     | Y3 - represents the RSSI of the command’s download                                               |

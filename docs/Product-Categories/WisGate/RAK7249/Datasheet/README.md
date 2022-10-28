@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK7249 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisgate/rak7249/quickstart/1.main/RAK7249_home.png
+rak_img: /assets/images/wisgate/rak7249/quickstart/1.main/RAK7249.png
 tags:
   - datasheet
   - wisgate
@@ -46,7 +46,7 @@ Thus the RAK7249 is suited for any use case scenario, be it rapid deployment or 
 
 #### Software
 
-1. Built-in LoRa Server 
+1. Built-in LoRa Server
 2. OpenVPN
 3. Software and UI sit on top of **OpenWRT**
 4. LoRaWAN 1.0.3
@@ -137,7 +137,7 @@ The image below shows the block diagram for RAK7249 WisGate Edge Max with MT7628
 
 ### Hardware
 
-The hardware specification presents the interfacing of RAK7249 WisGate Edge Max both in hardware and board interfaces. 
+The hardware specification presents the interfacing of RAK7249 WisGate Edge Max both in hardware and board interfaces.
 
 
 #### Interfaces

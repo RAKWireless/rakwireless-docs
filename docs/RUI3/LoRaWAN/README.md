@@ -3679,7 +3679,7 @@ api.lorawan.band.get();
 | **Function**      | `int32_t get()`                                                                                                                                                       |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Returns**       | the active region                                                                                                                                                     |
-| **Return Values** | **0** - EU433  <br>  **1** - CN470 <br> **2** - RU864 <br> **3**	IN865 <br> **4** - EU868 <br> **5**	- US915 <br> **6** - AU915 <br> **7** - KR920 <br> **8** - AS923 |
+| **Return Values** | **0** - EU433  <br>  **1** - CN470 <br> **2** - RU864 <br> **3**	- IN865 <br> **4** - EU868 <br> **5**	- US915 <br> **6** - AU915 <br> **7** - KR920 <br> **8** - AS923 |
 
 
 ::: details Click to View Example
@@ -3983,7 +3983,7 @@ RAKLorawan::pbw
 #### get()
 
 
-This API allows to get P2P bandwidth (125, 250, 500).
+This API allows to get P2P bandwidth in kHz (0 = 125, 1 = 250, 2 = 500, 3 = 7.8, 4 = 10.4, 5 = 15.63, 6 = 20.83, 7 = 31.25, 8 = 41.67, 9 = 62.5).
 
 ```c
 api.lorawan.pbw.get();
@@ -4001,7 +4001,7 @@ void setup()
 {
     Serial.begin(115200);
     Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
-    Serial.printf("Set P2P mode bandwidth %s\r\n", api.lorawan.pbw.set(125) ? "Success" : "Fail");
+    Serial.printf("Set P2P mode bandwidth %s\r\n", api.lorawan.pbw.set(1) ? "Success" : "Fail");
 }
 
 void loop()
@@ -4016,7 +4016,7 @@ void loop()
 
 #### set()
 
-This API allow to set P2P Bandwidth (125, 250, 500).
+This API allow to set P2P Bandwidth in kHz (0 = 125, 1 = 250, 2 = 500, 3 = 7.8, 4 = 10.4, 5 = 15.63, 6 = 20.83, 7 = 31.25, 8 = 41.67, 9 = 62.5).
 
 ```c
 api.lorawan.pbw.set(value);
@@ -4036,7 +4036,7 @@ void setup()
 {
     Serial.begin(115200);
     Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
-    Serial.printf("Set P2P mode bandwidth %s\r\n", api.lorawan.pbw.set(125) ? "Success" : "Fail");
+    Serial.printf("Set P2P mode bandwidth %s\r\n", api.lorawan.pbw.set(1) ? "Success" : "Fail");
 }
 
 void loop()
@@ -4178,7 +4178,7 @@ api.lorawan.ppl.set(value);
 
 | **Function**   | `bool set(uint16_t value)`                                                                                        |
 | -------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **value** - the P2P preamble length(2-65536)                                                                      |
+| **Parameters** | **value** - the P2P preamble length (2-65536)                                                                      |
 | **Returns**    | **TRUE** for setting P2P preamble length success <br> **FALSE** for setting preamble length fail (Type: **bool**) |
 
 
@@ -4453,11 +4453,11 @@ api.lorawan.enckey.get(buff, len);
 ```
 
 
-| **Function**      | `bool get(uint8_t * buff, uint32_t len)`                                                                    |
-| ----------------- | ----------------------------------------------------------------------------------------------------------- |
-| **Parameters**    | **buff**	- the buffer to store encryption key <br> **len** - the length of encryption key (must be 8 bytes) |
-| **Returns**       | bool                                                                                                        |
-| **Return Values** | **TRUE** for getting encryption key success <br> **FALSE** for getting encryption key failure               |
+| **Function**      | `bool get(uint8_t * buff, uint32_t len)`                                                                          |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Parameters**    | **buff**	- the buffer to store encryption key <br> **len** - the length of encryption key (must be 8&nbsp;bytes) |
+| **Returns**       | bool                                                                                                              |
+| **Return Values** | **TRUE** for getting encryption key success <br> **FALSE** for getting encryption key failure                     |
 
 
 ::: details Click to View Example
@@ -4528,11 +4528,11 @@ This API allows to set the key of P2P mode encryption.
 api.lorawan.enckey.set(buff, len);	
 ```
 
-| **Function**      | `bool set(uint8_t * buff, uint32_t len)`                                                                  |
-| ----------------- | --------------------------------------------------------------------------------------------------------- |
-| **Parameters**    | **buff** - the buffer to set encryption key <br> **len** - the length of encryption key (must be 8 bytes) |
-| **Returns**       | bool                                                                                                      |
-| **Return Values** | **TRUE** for setting encryption key success <br> **FALSE** for setting encryption failure                 |
+| **Function**      | `bool set(uint8_t * buff, uint32_t len)`                                                                       |
+| ----------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Parameters**    | **buff** - the buffer to set encryption key <br> **len** - the length of encryption key (must be 8&nbsp;bytes) |
+| **Returns**       | bool                                                                                                           |
+| **Return Values** | **TRUE** for setting encryption key success <br> **FALSE** for setting encryption failure                      |
 
 
 
