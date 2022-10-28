@@ -37,15 +37,15 @@ This module is an exceptional, complete, and cost-efficient gateway solution off
 
 ### Product Features
 
-- Designed based on **Mini PCI-e form factor**.
-- **SX1303 baseband processor** emulates 8 x 8 channels LoRa packet detectors, 8x SF5-SF12 LoRa demodulators, 8x SF5-SF10 LoRa demodulators, one 125 /250 / 500 kHz high-speed LoRa demodulator, and one (G)FSK demodulator.
-- 3.3V **Mini PCI-e**, compatible with **3G/LTE card** of Mini PCI-e type.
-- Tx power up to 27dBm, Rx sensitivity down to -139dBm@SF12, BW 125 kHz.
-- Supports **global license-free frequency band** (EU868, CN470, US915, AS923, AU915, KR920, IN865).
+- Designed based on **Mini PCI-e form factor**
+- **SX1303 baseband processor** emulates 8 x 8 channels LoRa packet detectors, 8x SF5-SF12 LoRa demodulators, 8x SF5-SF10 LoRa demodulators, one 125/250/500&nbsp;kHz high-speed LoRa demodulator, and one (G)FSK demodulator
+- 3.3&nbsp;V **Mini PCI-e**, compatible with **3G/LTE card** of Mini PCI-e type
+- Tx power up to 27&nbsp;dBm, Rx sensitivity down to -139&nbsp;dBm @ SF12, BW 125&nbsp;kHz
+- Supports **global license-free frequency band** (EU868, CN470, US915, AS923, AU915, KR920, IN865)
 - Supports optional **SPI/USB** interfaces.
 - Listen Before Talk
-- Fine Timestamp.
-- Built-in **ZOE-M8Q** GPS module.
+- Fine Timestamp
+- Built-in **ZOE-M8Q** GPS module
 
 ## Specifications
 
@@ -55,9 +55,9 @@ The overview shows the top and back views of the RAK5146 board. It also presents
 
 #### Board Overview
 
-RAK5146 is a compact LPWAN Gateway Module, making it suitable for integration in systems where mass and size constraints are essential. It has been designed with the PCI Express Mini Card form factor in mind, so it can easily become a part of products that comply with the standard, where they allow cards with a thickness of at least 5.5 mm.
+RAK5146 is a compact LPWAN Gateway Module, making it suitable for integration in systems where mass and size constraints are essential. It has been designed with the PCI Express Mini Card form factor in mind, so it can easily become a part of products that comply with the standard, where they allow cards with a thickness of at least 5.5&nbsp;mm.
 
-The board has two UFL interfaces for the LoRa and GNSS antennas and a standard 52 pin connector (mPCIe).
+The board has two UFL interfaces for the LoRa and GNSS antennas and a standard 52-pin connector (mPCIe).
 
 <rk-img
   src="/assets/images/wislink-lora/rak5146/datasheet/RAK5146_Overview.svg"
@@ -77,7 +77,7 @@ The RAK5146 concentrator is equipped with one SX1303 chip and two SX1250. The fi
 
 ### Hardware
 
-The hardware is categorized into seven parts. It discusses the interfacing, pinouts, and its corresponding functions and diagrams. It also covers the parameters and standard values of the board.
+The hardware is categorized into seven (7) parts. It discusses the interfacing, pinouts, and its corresponding functions and diagrams. It also covers the parameters and standard values of the board.
 
 #### Interfaces
 
@@ -93,7 +93,7 @@ The hardware is categorized into seven parts. It discusses the interfacing, pino
 
 - **RESET** - RAK5146 SPI card includes the RESET active-high input signal to reset the radio operations as specified by the SX1303 Specification. RAK5146 USB card’s RESET is controlled by MCU.
 
-- **Antenna RF Interface** - The module has one RF interface over a standard UFL connector (Hirose U. FL-R-SMT) with a characteristic impedance of 50Ω. The RF port (J1) supports both Tx and Rx, providing the antenna interface.
+- **Antenna RF Interface** - The module has one RF interface over a standard UFL connector (Hirose U. FL-R-SMT) with a characteristic impedance of 50&nbsp;Ω. The RF port (J1) supports both Tx and Rx, providing the antenna interface.
 
 #### Pin Definition
 
@@ -118,60 +118,60 @@ The hardware is categorized into seven parts. It discusses the interfacing, pino
 | PO   | Power output   |
 | NC   | No connection  |
 
-| Pin No. | mPCIe Pin Rev. 2.0 | RAK5146 Pin   | Type | Description                                 | Remarks                                                      |
-| ------- | ------------------ | ------------- | ---- | ------------------------------------------- | ------------------------------------------------------------ |
-| 1       | WAKE#              | SX1261_BUSY   | DO   | No connection by default                    | Reserved for future applications                             |
-| 2       | 3.3Vaux            | 3V3           | PI   | 3.3V DC supply                              |                                                              |
-| 3       | COEX1              | SX1261_DIO1   | IO   | No connection by default                    | Reserved for future applications                             |
-| 4       | GND                | GND           |      | Ground                                      |                                                              |
-| 5       | COEX2              | SX1261_DIO2   | IO   | No connection by default                    | Reserved for future applications                             |
-| 6       | 1.5V               | GPIO(6)       | IO   | No connection by default                    | Connect to the SX1302's GPIO(6)                              |
-| 7       | CLKREQ#            | SX1261_NSS    | DI   | No connection by default                    | Reserved for future applications                             |
-| 8       | UIM_PWR            | NC            |      | No connection                               |                                                              |
-| 9       | GND                | GND           |      | Ground                                      |                                                              |
-| 10      | UIM_DATA           | NC            |      | No connection                               |                                                              |
-| 11      | REFCLK-            | SX1261_NRESET | DI   | No connection by default                    | Reserved for future application                              |
-| 12      | UIM_CLK            | NC            |      | No connection                               |                                                              |
-| 13      | REFCLK+            | MCU_NRESET    | DI   | RESET signal for MCU of RAK5146-USB         | Active low                                                   |
-| 14      | UIM_RESET          | NC            |      | No connection                               |                                                              |
-| 15      | GND                | GND           |      | Ground                                      |                                                              |
-| 16      | UIM_VPP            | NC            |      | No connection                               |                                                              |
-| 17      | RESERVED           | NC            |      | No connection                               |                                                              |
-| 18      | GND                | GND           |      | Ground                                      |                                                              |
-| 19      | RESERVED           | PPS           | DO   | Time pulse output                           | Leave open if not in use                                     |
-| 20      | W_DISABLE#         | NC            |      | No connection                               |                                                              |
-| 21      | GND                | GND           |      | Ground                                      |                                                              |
-| 22      | PERST#             | SX1303_RESET  | DI   | RAK5146-SPI reset input                     | Active high, ≥100ns for SX1302 reset                         |
-| 23      | PERn0              | RESET_GPS     | DI   | GSP module ZOE-M8Q reset input              | Active low, leave open if not in use                         |
-| 24      | 3.3Vaux            | 3v3           | PI   | 3.3V DC supply                              |                                                              |
-| 25      | PERp0              | STANDBY_GPS   | DI   | GPS module ZOE-M8Q external interrupt input | Active low, leave open if not in use                         |
-| 26      | GND                | GND           |      | Ground                                      |                                                              |
-| 27      | GND                | GND           |      | Ground                                      |                                                              |
-| 28      | 1.5V               | GPIO(8)       |      | Connect to the SX1303's GPIO(8)             |                                                              |
-| 29      | GND                | GND           |      | Ground                                      |                                                              |
-| 30      | SMB_CLK            | I2C_SCL       | IO   | HOST SCL                                    | Connect to GPS module ZOE-M8Q's SCL internally, leave open if not in use |
-| 31      | PETn0              | PI_UART_TX    | DI   | HOST UART_TX                                | Connect to GPS module ZOE-M8Q's UART_RT internally, leave open if not in use |
-| 32      | SMB_DATA           | I2C_SDA       | IO   | HOST SDA                                    | Connect to GPS module ZOE-M8Q's SDA internally, leave open if not in use |
-| 33      | PETp0              | PI_UART_RX    | DO   | HOST UART_RX                                |` Connect to GPS module ZOE-M8Q's UART_TX internally, leave open if not in use |
-| 34      | GND                | GND           |      | Ground                                      |                                                              |
-| 35      | GND                | GND           |      | Ground                                      |                                                              |
-| 36      | USB_D-             | USB_DM        | IO   | USB differential data (-)                   | Require differential impedance of 90Ω                        |
-| 37      | GND                | GND           |      | Ground                                      |                                                              |
-| 38      | USB_D+             | USB_DP        | IO   | USB differential data (+)                   | Require differential impedance of 90Ω                        |
-| 39      | 3.3Vaux            | 3V3           | PI   | 3.3V DC supply                              |                                                              |
-| 40      | GND                | GND           |      | Ground                                      |                                                              |
-| 41      | 3.3Vaux            | 3V3           | Pi   | 3.3V DC supply                              |                                                              |
-| 42      | LED_WWAN#          | NC            |      | No connection                               |                                                              |
-| 43      | GND                | GND           |      | Ground                                      |                                                              |
-| 44      | LED_WLAN#          | NC            |      | No connection                               |                                                              |
-| 45      | RESERVED           | HOST_SCK      | IO   | Host SPI SCK                                |                                                              |
-| 46      | LED_WPAN#          | NC            |      | No connection                               |                                                              |
-| 47      | RESERVED           | HOST_MISO     | IO   | Host SPI MISO                               |                                                              |
-| 48      | 1.5V               | NC            |      | No connection                               |                                                              |
-| 49      | RESERVED           | HOST_MOSI     | IO   | Host SPI MOSI                               |                                                              |
-| 50      | GND                | GND           |      | Ground                                      |                                                              |
-| 51      | RESERVED           | HOST_CSN      | IO   | Host SPI CSN                                |                                                              |
-| 52      | 3.3Vaux            | 3V3           | PI   | 3.3V DC supply                              |                                                              |
+| Pin No. | mPCIe Pin Rev. 2.0 | RAK5146 Pin   | Type | Description                                 | Remarks                                                                        |
+| ------- | ------------------ | ------------- | ---- | ------------------------------------------- | ------------------------------------------------------------------------------ |
+| 1       | WAKE#              | SX1261_BUSY   | DO   | No connection by default                    | Reserved for future applications                                               |
+| 2       | 3.3Vaux            | 3V3           | PI   | 3.3&nbsp;V<sub>DC</sub> supply              |                                                                                |
+| 3       | COEX1              | SX1261_DIO1   | IO   | No connection by default                    | Reserved for future applications                                               |
+| 4       | GND                | GND           |      | Ground                                      |                                                                                |
+| 5       | COEX2              | SX1261_DIO2   | IO   | No connection by default                    | Reserved for future applications                                               |
+| 6       | 1.5V               | GPIO(6)       | IO   | No connection by default                    | Connect to the SX1302's GPIO (6)                                               |
+| 7       | CLKREQ#            | SX1261_NSS    | DI   | No connection by default                    | Reserved for future applications                                               |
+| 8       | UIM_PWR            | NC            |      | No connection                               |                                                                                |
+| 9       | GND                | GND           |      | Ground                                      |                                                                                |
+| 10      | UIM_DATA           | NC            |      | No connection                               |                                                                                |
+| 11      | REFCLK-            | SX1261_NRESET | DI   | No connection by default                    | Reserved for future application                                                |
+| 12      | UIM_CLK            | NC            |      | No connection                               |                                                                                |
+| 13      | REFCLK+            | MCU_NRESET    | DI   | RESET signal for MCU of RAK5146-USB         | Active low                                                                     |
+| 14      | UIM_RESET          | NC            |      | No connection                               |                                                                                |
+| 15      | GND                | GND           |      | Ground                                      |                                                                                |
+| 16      | UIM_VPP            | NC            |      | No connection                               |                                                                                |
+| 17      | RESERVED           | NC            |      | No connection                               |                                                                                |
+| 18      | GND                | GND           |      | Ground                                      |                                                                                |
+| 19      | RESERVED           | PPS           | DO   | Time pulse output                           | Leave open if not in use                                                       |
+| 20      | W_DISABLE#         | NC            |      | No connection                               |                                                                                |
+| 21      | GND                | GND           |      | Ground                                      |                                                                                |
+| 22      | PERST#             | SX1303_RESET  | DI   | RAK5146-SPI reset input                     | Active high, ≥100&nbsp;ns for SX1302 reset                                     |
+| 23      | PERn0              | RESET_GPS     | DI   | GSP module ZOE-M8Q reset input              | Active low, leave open if not in use                                           |
+| 24      | 3.3Vaux            | 3v3           | PI   | 3.3&nbsp;V<sub>DC</sub> supply              |                                                                                |
+| 25      | PERp0              | STANDBY_GPS   | DI   | GPS module ZOE-M8Q external interrupt input | Active low, leave open if not in use                                           |
+| 26      | GND                | GND           |      | Ground                                      |                                                                                |
+| 27      | GND                | GND           |      | Ground                                      |                                                                                |
+| 28      | 1.5V               | GPIO(8)       |      | Connect to the SX1303's GPIO (8)            |                                                                                |
+| 29      | GND                | GND           |      | Ground                                      |                                                                                |
+| 30      | SMB_CLK            | I2C_SCL       | IO   | HOST SCL                                    | Connect to GPS module ZOE-M8Q's SCL internally, leave open if not in use       |
+| 31      | PETn0              | PI_UART_TX    | DI   | HOST UART_TX                                | Connect to GPS module ZOE-M8Q's UART_RT internally, leave open if not in use   |
+| 32      | SMB_DATA           | I2C_SDA       | IO   | HOST SDA                                    | Connect to GPS module ZOE-M8Q's SDA internally, leave open if not in use       |
+| 33      | PETp0              | PI_UART_RX    | DO   | HOST UART_RX                                | ` Connect to GPS module ZOE-M8Q's UART_TX internally, leave open if not in use |
+| 34      | GND                | GND           |      | Ground                                      |                                                                                |
+| 35      | GND                | GND           |      | Ground                                      |                                                                                |
+| 36      | USB_D-             | USB_DM        | IO   | USB differential data (-)                   | Require differential impedance of 90&nbsp;Ω                                    |
+| 37      | GND                | GND           |      | Ground                                      |                                                                                |
+| 38      | USB_D+             | USB_DP        | IO   | USB differential data (+)                   | Require differential impedance of 90&nbsp;Ω                                    |
+| 39      | 3.3Vaux            | 3V3           | PI   | 3.3&nbsp;V<sub>DC</sub> supply              |                                                                                |
+| 40      | GND                | GND           |      | Ground                                      |                                                                                |
+| 41      | 3.3Vaux            | 3V3           | Pi   | 3.3&nbsp;V<sub>DC</sub> supply              |                                                                                |
+| 42      | LED_WWAN#          | NC            |      | No connection                               |                                                                                |
+| 43      | GND                | GND           |      | Ground                                      |                                                                                |
+| 44      | LED_WLAN#          | NC            |      | No connection                               |                                                                                |
+| 45      | RESERVED           | HOST_SCK      | IO   | Host SPI SCK                                |                                                                                |
+| 46      | LED_WPAN#          | NC            |      | No connection                               |                                                                                |
+| 47      | RESERVED           | HOST_MISO     | IO   | Host SPI MISO                               |                                                                                |
+| 48      | 1.5V               | NC            |      | No connection                               |                                                                                |
+| 49      | RESERVED           | HOST_MOSI     | IO   | Host SPI MOSI                               |                                                                                |
+| 50      | GND                | GND           |      | Ground                                      |                                                                                |
+| 51      | RESERVED           | HOST_CSN      | IO   | Host SPI CSN                                |                                                                                |
+| 52      | 3.3Vaux            | 3V3           | PI   | 3.3&nbsp;V<sub>DC</sub> supply              |                                                                                |
 
 #### RF Characteristics
 
@@ -193,7 +193,7 @@ The board supports the following LoRaWAN frequency channels, allowing easy confi
 
 The following table gives typically sensitivity level of the RAK5146 concentrator module.
 
-| Signal bandwidth (KHz) | Spreading factor | Sensitivity (dBm) |
+| Signal Bandwidth (kHz) | Spreading Factor | Sensitivity (dBm) |
 | ---------------------- | ---------------- | ----------------- |
 | 125                    | 12               | -139              |
 | 125                    | 7                | -125              |
@@ -211,15 +211,15 @@ The operating condition range defines those limits within which the functionalit
 
 The limiting values given below are following the Absolute Maximum Rating System (IEC 134).
 
-| Symbol  | Description           | Condition                                  | Min    | Max       |
-| ------- | --------------------- | ------------------------------------------ | ------ | --------- |
-| 3.3Vaux | Module supply voltage | Input DC voltage at 3.3Vaux pins           | -0.3 V | 3.6 V     |
-| USB     | USB D+/D- pins        | Input DC voltage at USB interface pins     |        | 3.6 V     |
-| RESET   | RAK5146 reset input   | Input DC voltage at RESET input pin        | -0.3 V | 3.6 V     |
-| SPI     | SPI interface         | Input DC voltage at SPI interface pin      | -0.3 V | 3.6 V     |
-| GPS_PPS | GPS 1 PPS input       | Input DC voltage at GPS_PPS input pin      | -0.3 V | 3.6 V     |
-| Rho_ANT | Antenna ruggedness    | Output RF load mismatch ruggedness at ANT1 |        | 10:1 VSWR |
-| Tstg    | Storage temperature   |                                            | -40 °C | 85 °C     |
+| Symbol  | Description           | Condition                                  | Min         | Max        |
+| ------- | --------------------- | ------------------------------------------ | ----------- | ---------- |
+| 3.3Vaux | Module supply voltage | Input DC voltage at 3.3Vaux pins           | -0.3&nbsp;V | 3.6&nbsp;V |
+| USB     | USB D+/D- pins        | Input DC voltage at USB interface pins     | -           | 3.6&nbsp;V |
+| RESET   | RAK5146 reset input   | Input DC voltage at RESET input pin        | -0.3&nbsp;V | 3.6&nbsp;V |
+| SPI     | SPI interface         | Input DC voltage at SPI interface pin      | -0.3&nbsp;V | 3.6&nbsp;V |
+| GPS_PPS | GPS 1 PPS input       | Input DC voltage at GPS_PPS input pin      | -0.3&nbsp;V | 3.6&nbsp;V |
+| Rho_ANT | Antenna ruggedness    | Output RF load mismatch ruggedness at ANT1 | -           | 10:1 VSWR  |
+| Tstg    | Storage temperature   |                                            | -40°&nbsp;C | 85°&nbsp;C |
 
 :::warning ⚠️ WARNING
 The product is not protected against overvoltage or reversed voltages. If necessary, voltage spikes exceeding the power supply voltage specification, given in the table above, must be limited to values within the specified boundaries by using appropriate protection devices.
@@ -227,10 +227,10 @@ The product is not protected against overvoltage or reversed voltages. If necess
 
 ##### Maximum ESD
 
-| Parameter | Min  | Typical | Max    | Remarks                                    |
-| --------- | ---- | ------- | ------ | ------------------------------------------ |
-| ESD_HBM   |      |         | 1000 V | Charged Device Model JESD22-C101 CLASS III |
-| ESD_CDM   |      |         | 1000 V | Charged Device Model JESD22-C101 CLASS III |
+| Parameter | Min | Typical | Max         | Remarks                                    |
+| --------- | --- | ------- | ----------- | ------------------------------------------ |
+| ESD_HBM   |     |         | 1000&nbsp;V | Charged Device Model JESD22-C101 CLASS III |
+| ESD_CDM   |     |         | 1000&nbsp;V | Charged Device Model JESD22-C101 CLASS III |
 
 :::tip 📝 NOTE
 Although this module is designed to be as robust as possible, electrostatic discharge (ESD) can damage this module. This module must be protected at all times from ESD when handling or transporting. Static charges may easily produce potentials of several kilovolts on the human body or equipment, which can discharge without detection. Industry-standard ESD handling precautions should be used at all times.
@@ -238,22 +238,22 @@ Although this module is designed to be as robust as possible, electrostatic disc
 
 ##### Power Consumption
 
-| Mode             | Condition                                               | Min    | Typical | Max    |
-| ---------------- | ------------------------------------------------------- | ------ | ------- | ------ |
-| Active Mode (TX) | The power of the TX channel is 27 dBm and 3.3 V supply. | 511 mA | 512 mA  | 513 mA |
-| Active Mode (RX) | TX disabled and RX enabled.                             | 70 mA  | 81.6 mA | 101 mA |
+| Mode             | Condition                                                         | Min         | Typical      | Max         |
+| ---------------- | ----------------------------------------------------------------- | ----------- | ------------ | ----------- |
+| Active Mode (TX) | The power of the TX channel is 27&nbsp;dBm and 3.3&nbsp;V supply. | 511&nbsp;mA | 512&nbsp;mA  | 513&nbsp;mA |
+| Active Mode (RX) | TX disabled and RX enabled.                                       | 70&nbsp;mA  | 81.6&nbsp;mA | 101&nbsp;mA |
 
 ##### Power Supply Range
 
 Input voltage at **3.3Vaux** must be above the normal operating range minimum limit to switch on the module.
 
-| Symbol  | Parameter                             | Min  | Typical | Max   |
-| ------- | ------------------------------------- | ---- | ------- | ----- |
-| 3.3Vaux | Module supply operating input voltage | 3 V  | 3.3 V   | 3.6 V |
+| Symbol  | Parameter                             | Min      | Typical    | Max        |
+| ------- | ------------------------------------- | -------- | ---------- | ---------- |
+| 3.3Vaux | Module supply operating input voltage | 3&nbsp;V | 3.3&nbsp;V | 3.6&nbsp;V |
 
 #### Mechanical Characteristics
 
-The board weighs 16.3 grams, it is 30 mm wide and 50.96 mm tall. The dimensions of the module fall completely within the **PCI Express Mini Card Electromechanical Specification**, except for the card's thickness (5.5 mm at its thickest).
+The board weighs 16.3&nbsp;grams, it is 30&nbsp;mm wide and 50.96&nbsp;mm tall. The dimensions of the module fall completely within the **PCI Express Mini Card Electromechanical Specification**, except for the card's thickness (5.5&nbsp;mm at its thickest).
 
 <rk-img
   src="/assets/images/wislink-lora/rak5146/datasheet/RAK5146_Dimensions.svg"
@@ -265,17 +265,17 @@ The board weighs 16.3 grams, it is 30 mm wide and 50.96 mm tall. The dimensions 
 
 ##### Operating Conditions
 
-| Parameter                    | Min    | Typical | Max    | Remarks                                                      |
-| ---------------------------- | ------ | ------- | ------ | ------------------------------------------------------------ |
-| Normal operating temperature | -40 °C | +25 °C  | +85 °C | Normal operating temperature range (fully functional and meet 3GPP specifications) |
+| Parameter                    | Min         | Typical     | Max         | Remarks                                                                            |
+| ---------------------------- | ----------- | ----------- | ----------- | ---------------------------------------------------------------------------------- |
+| Normal operating temperature | -40°&nbsp;C | +25°&nbsp;C | +85°&nbsp;C | Normal operating temperature range (fully functional and meet 3GPP specifications) |
 
 :::tip 📝 NOTE
-Unless otherwise indicated, all operating condition specifications are at an ambient temperature of 25°C. Operation beyond the operating conditions is not recommended and extended exposure beyond them may affect device reliability.
+Unless otherwise indicated, all operating condition specifications are at an ambient temperature of 25°&nbsp;C. Operation beyond the operating conditions is not recommended and extended exposure beyond them may affect device reliability.
 :::
 
 #### Schematic Diagram
 
-RAK5146 concentrator module refers to Semtech's reference design for SX1303. The SPI interface can be used on the PCIe connector. The next figure shows the minimum application schematic of the RAK5146. You should use at least 3.3V/1A DC power, connect the SPI interface to the main processor.
+RAK5146 concentrator module refers to Semtech's reference design for SX1303. The SPI interface can be used on the PCIe connector. **Figure 5** shows the minimum application schematic of the RAK5146. You should use at least 3.3&nbsp;V / 1&nbsp;A DC power, connect the SPI interface to the main processor.
 
 <rk-img
   src="/assets/images/wislink-lora/rak5146/datasheet/5.png"
@@ -293,20 +293,20 @@ In general, the RAK5146's variation is defined as **RAK5146 - XYZ**, where **X, 
 | Y - Interface type      | 1 - SPI; 2 - USB                                          |
 | Z - Additional features | 0 - No additional features; 2 - LBT; 5 - GPS; 6 - LBT+GPS |
 
-| Model       | Frequency | USB  | SPI  | LBT  | GPS  |
-| ----------- | --------- | ---- | ---- | ---- | ---- |
-| RAK5146-126 | US915     | √    |      | √    | √    |
-| RAK5146-122 | US915     | √    |      | √    |      |
-| RAK5146-125 | US915     | √    |      |      | √    |
-| RAK5146-120 | US915     | √    |      |      |      |
-| RAK5146-115 | US915     |      | √    |      | √    |
-| RAK5146-110 | US915     |      | √    |      |      |
-| RAK5146-226 | EU868     | √    |      | √    | √    |
-| RAK5146-222 | EU868     | √    |      | √    |      |
-| RAK5146-225 | EU868     | √    |      |      | √    |
-| RAK5146-220 | EU868     | √    |      |      |      |
-| RAK5146-215 | EU868     |      | √    |      | √    |
-| RAK5146-210 | EU868     |      | √    |      |      |
+| Model       | Frequency | USB | SPI | LBT | GPS |
+| ----------- | --------- | --- | --- | --- | --- |
+| RAK5146-126 | US915     | √   |     | √   | √   |
+| RAK5146-122 | US915     | √   |     | √   |     |
+| RAK5146-125 | US915     | √   |     |     | √   |
+| RAK5146-120 | US915     | √   |     |     |     |
+| RAK5146-115 | US915     |     | √   |     | √   |
+| RAK5146-110 | US915     |     | √   |     |     |
+| RAK5146-226 | EU868     | √   |     | √   | √   |
+| RAK5146-222 | EU868     | √   |     | √   |     |
+| RAK5146-225 | EU868     | √   |     |     | √   |
+| RAK5146-220 | EU868     | √   |     |     |     |
+| RAK5146-215 | EU868     |     | √   |     | √   |
+| RAK5146-210 | EU868     |     | √   |     |     |
 
 
 ## Certification

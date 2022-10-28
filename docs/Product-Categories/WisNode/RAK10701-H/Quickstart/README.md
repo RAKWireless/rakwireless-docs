@@ -32,7 +32,7 @@ Before going through each and every step in the installation guide of the RAK107
 
 ### RAK10701-H Field Mapper Physical Interface
 
-The user interface of the RAK10701-H Field Mapper for LoRaWAN is via TFT Touchscreen LCD and one pushbutton at the side. There is also an external LoRA antenna port via RP-SMA connector and USB-C port for charging and configuration if connected to a PC.
+The user interface of the RAK10701-H Field Mapper for LoRaWAN is via TFT Touchscreen LCD and one push button at the side. There is also an external LoRA antenna port via RP-SMA connector and USB-C port for charging and configuration if connected to a PC.
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/physical-interface.png"
@@ -93,7 +93,7 @@ If you are indoors, there will be no reception of the GPS signal. The latitude a
 
 4. Once fully powered on, the external button at the side can sleep or wake up the display on the LCD screen via a single press on it.
 
-5. If the device is connected via USB C to a computer, then the button is pressed, it will not remove the display but will lock the screen (touch screen behavior is disabled).
+5. If the device is connected via USB-C to a computer, then the button is pressed, it will not remove the display but will lock the screen (touch screen behavior is disabled).
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/lockscreen.png"
@@ -146,7 +146,7 @@ The third mode (Discovery mode), can be enabled without going to settings. The D
 
 On Plug and Play mode, the RAK10701-H Field Mapper automatically sends the uplink payload to the Helium network as long as it was able to join the network.
 
-There is no EUI and KEY configuration needed since it is already on-boarded to the Helium network with the included data credits(DC). The only parameter that is critical to set is the regional band. This is dependent on your location. For example, if you are in Europe, it must be EU868 as shown in this guide. The complete regional frequency plans per country can be found on [Helium documentation on frequency plans.](https://docs.helium.com/lorawan-on-helium/frequency-plans/#frequency-plans-by-country).
+There is no EUI and KEY configuration needed since it is already on-boarded to the Helium network with the included data credits (DC). The only parameter that is critical to set is the regional band. This is dependent on your location. For example, if you are in Europe, it must be EU868 as shown in this guide. The complete regional frequency plans per country can be found on [Helium documentation on frequency plans](https://docs.helium.com/lorawan-on-helium/frequency-plans/#frequency-plans-by-country).
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/settings-band.png"
@@ -288,7 +288,7 @@ The DEVEUI, APPEUI, and APPKEY are important in this step. These values must be 
   caption="Drop-down on label selection"
 />
 
-8. After successful attachment of `Label` on the devices, it should show one (1) device is under that `Label`. The device is properly labeled which is needed for the next steps - `Integrations` and `Flow`
+8. After successful attachment of `Label` on the devices, it should show one (1) device is under that `Label`. The device is properly labeled which is needed for the next steps - `Integrations` and `Flow`.
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/helium-attach-label3.png"
@@ -310,7 +310,7 @@ The DEVEUI, APPEUI, and APPKEY are important in this step. These values must be 
   caption="HTTP integration"
 />
 
-10. Then you must proceed to steps 2 and 3 sections of the `Integration` settings. You have to select `POST` then on the Endpoint URL, you must put `https://dev.disk91.com/fieldtester/helium/v3`. It is also needed to put the integration name before the clicking Add integration button.
+10. Then you must proceed to steps 2 and 3 sections of the `Integration` settings. You have to select `POST` then on the Endpoint URL, you must put `https://dev.disk91.com/fieldtester/helium/v3`. It is also needed to put the integration name before the clicking the **Add integration** button.
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/helium-add-integration-details.png"
@@ -451,7 +451,7 @@ For the frequency plan change, the device has to restart to activate this newly 
 
 #### Discovery Mode
 
-1. Click the Discovery Mode button on the RAK10701-H screen to enter Discovery Mode.
+1. Click the **Discovery Mode** button on the RAK10701-H screen to enter Discovery Mode.
 
 :::tip 📝 NOTE:
 You need to be able to join the Helium network as well as a good GPS fix to enable Discovery Mode.
@@ -497,8 +497,8 @@ You need to be able to join the Helium network as well as a good GPS fix to enab
 
 This part of the guide shows the Field Mapper interface and how to update the firmware.
 
-- [User Interface](/Product-Categories/WisBlock/RAK10701/Quickstart/#field-tester-display-interface)
-- [Firmware Update](/Product-Categories/WisBlock/RAK10701/Quickstart/#upgrading-the-firmware)
+- [User Interface](/Product-Categories/WisNode/RAK10701-H/Quickstart/#field-mapper-display-interface)
+- [Firmware Update](/Product-Categories/WisNode/RAK10701-H/Quickstart/#upgrading-the-firmware)
 
 #### Field Mapper Display Interface
 
@@ -592,7 +592,7 @@ The main page shows the last GPS data captured by the device.
 
 #### Upgrading the Firmware
 
-It is recommended to update to the latest version of the firmware. To do this, download the latest [RAK10701-H Field Mapper for Helium firmware](/Product-Categories/WisBlock/RAK10701/Datasheet/#software) and use the WisToolBox to update the custom firmware.
+It is recommended to update to the latest version of the firmware. To do this, download the latest [RAK10701-H Field Mapper for Helium firmware](/Product-Categories/WisNode/RAK10701-H/Datasheet/#software) and use the WisToolBox to update the custom firmware.
 
 1. Drag the downloaded firmware to the WisToolBox custom firmware section.
 <rk-img

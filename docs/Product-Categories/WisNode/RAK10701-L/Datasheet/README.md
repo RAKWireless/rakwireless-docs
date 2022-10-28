@@ -46,7 +46,7 @@ RAK10701-L Field Tester for LoRaWAN with the external antenna.
 
 ### Hardware
 
-The hardware specification is categorized into five parts. It shows the interfacing of the tracker. It also covers the rf, antennas, electrical, environmental, and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK10701-L Field Tester for LoRaWAN.
+The hardware specification is categorized into five (5) parts. It shows the interfacing of the tracker. It also covers the rf, antennas, electrical, environmental, and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK10701-L Field Tester for LoRaWAN.
 
 #### Interfaces
 
@@ -71,7 +71,7 @@ You can interact with the device and check the data needed on your LoRaWAN netwo
 />
 
 :::tip 📝 NOTE
-Complete details on different pages of the screens are discussed in the [RAK10701-L Quick Start Guide](/Product-Categories/WisNode/RAK10701-L/Quickstart/).
+The complete details on different pages of the screens are discussed in the [RAK10701-L Quick Start Guide](/Product-Categories/WisNode/RAK10701-L/Quickstart/).
 :::
 
 ##### External Button
@@ -109,8 +109,8 @@ The antenna included in the RAK10701-L has a 2.0&nbsp;dBi gain. You can put a di
 :::tip 📝 NOTE
 Detailed information about the LoRa antenna can be found on the datasheet:
 
-- [9xx Mhz Antenna](https://downloads.rakwireless.com/Accessories/Antenna/SMA-Antenna/RPSMA-J-915MHz_LoRa_Antenna_Specifications.pdf)
-- [8xx Mhz Antenna](https://downloads.rakwireless.com/Accessories/Antenna/SMA-Antenna/RPSMA-J-868MHz_LoRa_Antenna_Specifications.pdf)
+- [9xx MHz Antenna](https://downloads.rakwireless.com/Accessories/Antenna/SMA-Antenna/RPSMA-J-915MHz_LoRa_Antenna_Specifications.pdf)
+- [8xx MHz Antenna](https://downloads.rakwireless.com/Accessories/Antenna/SMA-Antenna/RPSMA-J-868MHz_LoRa_Antenna_Specifications.pdf)
 :::
 
 ##### USB Type-C for Charging and WisToolBox Configuration
@@ -163,10 +163,10 @@ The RAK10701-L Field Tester for LoRaWAN is equipped with a built-in rechargeable
 
 The table below lists the operation and storage temperature requirements.
 
-| Parameter             | Min.       | Typical     | Max.        |
-| --------------------- | ---------- | ----------- | ----------- |
-| Storage Temp. Range   | -40&nbsp;C | +25&nbsp;°C | +80&nbsp;°C |
-| Operation Temp. Range | -10&nbsp;C | +25&nbsp;°C | +60&nbsp;°C |
+| Parameter             | Min.        | Typical     | Max.        |
+| --------------------- | ----------- | ----------- | ----------- |
+| Storage Temp. Range   | -40°&nbsp;C | +25°&nbsp;C | +80°&nbsp;C |
+| Operation Temp. Range | -10°&nbsp;C | +25°&nbsp;C | +60°&nbsp;C |
 
 #### Mechanical Characteristics
 
@@ -177,6 +177,7 @@ The table below lists the operation and storage temperature requirements.
 
 Download the latest firmware version of RAK10701-L in the table provided below.
 
-| Model                              | Version | Firmware                                                          |
-| ---------------------------------- | ------- | ----------------------------------------------------------------- |
-| RAK10701- Field Tester for LoRaWAN | V1.0.2  | [Download](https://downloads.rakwireless.com/LoRa/RAK10701/beta/) |
+| Model                                      | Version | Firmware                                                              |
+| ------------------------------------------ | ------- | --------------------------------------------------------------------- |
+| RAK10701 - Field Tester for LoRaWAN | V1.0.6  | [Download](https://downloads.rakwireless.com/LoRa/RAK10701/Firmware/RAK10701_L_P_Latest_Firmware.zip) |
+

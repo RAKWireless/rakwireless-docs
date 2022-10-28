@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisblock
   - RAK12027
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 

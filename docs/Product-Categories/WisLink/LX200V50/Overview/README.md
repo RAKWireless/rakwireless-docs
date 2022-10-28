@@ -12,7 +12,7 @@ tags:
 
 # LX200V50 WisLink 1000 Mbps PLC Module + EVB
 
-Thank you for choosing **LX200V50 WisLink 1000 Mbps PLC Module + EVB** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **LX200V50 WisLink 1000 Mbps PLC Module + EVB** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 

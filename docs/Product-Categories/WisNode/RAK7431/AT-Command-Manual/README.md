@@ -1,5 +1,5 @@
 ---
-rak_desc: For an easier experience with your LoRaWAN Module, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the RAK7431. 
+rak_desc: For an easier experience with your LoRaWAN Module, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the RAK7431.
 rak_img: /assets/images/wisnode/rak7431/datasheet/RAK7431_home.png
 prev: ../Datasheet/
 next: false
@@ -14,7 +14,7 @@ tags:
 
 ## Overview
 
-This document applies to Modbus RS485 to LoRaWAN® Bridge products. The supported product models include RAK7421 / RAK7431 / RAK7425.
+This document applies to Modbus RS485 to LoRaWAN Bridge products. The supported product models include RAK7421/RAK7431/RAK7425.
 
 ### AT Command Syntax
 
@@ -71,9 +71,9 @@ This command reads or modifies the LoRaWAN Device EUI. The command takes effect 
 | Test      | `AT+DEVEUI=?`            | `OK`                                                                                                 |
 
 
-| Parameter   | Information                                               |
-| ----------- | --------------------------------------------------------- |
-| **dev_eui** | **Device EUI**:Hexadecimal characters, 16 bytes in length |
+| Parameter   | Information                                                     |
+| ----------- | --------------------------------------------------------------- |
+| **dev_eui** | **Device EUI**: Hexadecimal characters, 16&nbsp;bytes in length |
 
 2. <b>AT+REGION</b>
 
@@ -166,9 +166,9 @@ The APPKEY parameter is valid in OTAA Activation Mode. The modification will tak
 | Test      | `AT+APPKEY=?`         | `OK`                                                                                                 |
 
 
-| Parameter   | Information                                                    |
-| ----------- | -------------------------------------------------------------- |
-| **app_key** | **Application Key:** Hexadecimal character, 32 bytes in length |
+| Parameter   | Information                                                         |
+| ----------- | ------------------------------------------------------------------- |
+| **app_key** | **Application Key:** Hexadecimal character, 32&nbsp;bytes in length |
 
 8. <b>AT+DEVADDR</b>
 
@@ -181,9 +181,9 @@ The DEVADDR parameter is valid in ABP Activation Mode. The modification will tak
 | Test      | `AT+DEVADDR=?`          | `OK`                                                                                                 |
 
 
-| Parameter    | Information                                                  |
-| ------------ | ------------------------------------------------------------ |
-| **dev_addr** | **Device Address:** Hexadecimal character, 8 bytes in length |
+| Parameter    | Information                                                       |
+| ------------ | ----------------------------------------------------------------- |
+| **dev_addr** | **Device Address:** Hexadecimal character, 8&nbsp;bytes in length |
 
 9.	<b>AT+APPSKEY</b>
 
@@ -196,9 +196,9 @@ The APPSKEY parameter is valid in ABP Activation Mode. The modification will tak
 | Test      | `AT+APPSKEY=?`          | `OK`                                                                                                 |
 
 
-| Parameter    | Information                                                            |
-| ------------ | ---------------------------------------------------------------------- |
-| **apps_key** | **Application Session Key:** Hexadecimal character, 32 bytes in length |
+| Parameter    | Information                                                                 |
+| ------------ | --------------------------------------------------------------------------- |
+| **apps_key** | **Application Session Key:** Hexadecimal character, 32&nbsp;bytes in length |
 
 10.	<b>AT+NWKSKEY</b>
 
@@ -211,9 +211,9 @@ The NWKSKEY parameter is valid in ABP Activation Mode. The modification will tak
 | Test      | `AT+NWKSKEY=?`         | `OK`                                                                                                 |
 
 
-| Parameter    | Information                                                        |
-| ------------ | ------------------------------------------------------------------ |
-| **nwks_key** | **Network Session Key:** Hexadecimal character, 32 bytes in length |
+| Parameter    | Information                                                             |
+| ------------ | ----------------------------------------------------------------------- |
+| **nwks_key** | **Network Session Key:** Hexadecimal character, 32&nbsp;bytes in length |
 
 11. <b>AT+ADR</b>
 
@@ -243,13 +243,13 @@ Read/modify the LoRaWAN DataRate setting of the device, which is valid when the 
 | Test      | `AT+DATARATE=?`   | `OK`                                                                                                 |
 
 
-| Parameter | Information                        |
-| --------- | ---------------------------------- |
-| **n**     | **LoRaWAN DataRate**               |
-| 0 ~ 7     | DataRate from 0 to 7s is possible. |
+| Parameter | Information                              |
+| --------- | ---------------------------------------- |
+| **n**     | **LoRaWAN DataRate**                     |
+| 0 ~ 7     | DataRate from 0 to 7&nbsp;s is possible. |
 
 ::: tip 📝 NOTE
-The DataRate value and the default value are related to LoRaWAN regional parameters. Refer to [Appendix I: DataRate list of each region](/Product-Categories/WisNode/RAK7431/Datasheet/at-command.html#appendix-i-data-rate-of-each-region) in this document.
+The DataRate value and the default value are related to LoRaWAN regional parameters. Refer to [Appendix I: DataRate list of each region](/Product-Categories/WisNode/RAK7431/AT-Command-Manual/#appendix-i-data-rate-of-each-region) in this document.
 :::
 
 13.	<b>AT+CONFIRM</b>
@@ -516,7 +516,7 @@ When the serial data port of the device works in MODBUS mode, the data encapsula
 
 In transparent mode, the Modbus execution instruction response data (data, received by the node) will be directly forwarded through LoRaWAN network.
 
-In the non-transparent mode, the Modbus execution instruction response data (data, received by the node) will be encapsulated in the message header according to the Modbus protocol, and then transmitted to the server through LoRaWAN. Please refer to “**Appendix II: MODBUS Data Encapsulation Protocol**” for details.
+In the non-transparent mode, the Modbus execution instruction response data (data, received by the node) will be encapsulated in the message header according to the Modbus protocol, and then transmitted to the server through LoRaWAN. Please refer to [**Appendix II: MODBUS Data Encapsulation Protocol**](/Product-Categories/WisNode/RAK7431/AT-Command-Manual/#appendix-ii-modbus-data-encapsulation-protocol) for details.
 
 Non-transparent mode is the default one. The modification will take effect immediately.
 
@@ -652,7 +652,7 @@ The time in the command is local time.
 | **s**     | Second： 0 ~ 59                                                                                          |
 
 ::: tip 📝 NOTE
-*If selected type is HOUR, the parameter `<h>` is not used from the system. 
+*If selected type is HOUR, the parameter `<h>` is not used from the system.
 :::
 
 15. <b>AT+RMSCHEDULETASK</b>
@@ -837,15 +837,15 @@ The module supports the following event notifications:
 | 6  | RESTART       | System restart                           |
 
 1. <b>STARTUP Event</b> - Appears after system initialization.
-    * **Message format**: 
+    * **Message format**:
 
 ```sh
 EVENT:0:STARTUP
 No additional information.
 ```
 
-2. <b>JOIN_NETWORK Event</b> - LoRaWAN network activation successful. It appears after OTAA join successful. 
-    * **Message format**: 
+2. <b>JOIN_NETWORK Event</b> - LoRaWAN network activation successful. It appears after OTAA join successful.
+    * **Message format**:
 
 ```sh
 EVENT:1:JOIN_NETWORK
@@ -853,7 +853,7 @@ No additional information.
 ```
 
 3. <b>LORA_LEAVE_NETWORK Event</b> - In OTAA activation mode, if eight consecutive uplink confirmed packets do not receive a response, the LORA_LEAVE_NETWORK event will be triggered. After the LORA_LEAVE_NETWORK event is triggered, the module will stop sending LoRaWAN message and start OTAA activation again.
-    * **Message format**: 
+    * **Message format**:
 
 ```sh
 EVENT:2:LEAVE_NETWORK
@@ -861,7 +861,7 @@ No additional information.
 ```
 
 4. <b>SYSTEM_WAKEUP Event</b> - A module in a low-power state can be awaken by receiving input from the AT command line interface. After wakeup, the module will no longer enter low-power mode. If you want the module to enter low power mode again, use the command: `AT+SLEEP\r\n`
-    * **Message format**: 
+    * **Message format**:
 
 ```sh
 EVENT:5:SYSTEM_WAKEUP
@@ -909,79 +909,79 @@ EVENT:6:RESTART
 
 ### EU433/RU864/EU868/AS923
 
-| Data Rate | Configuration       | Indicative physical bit rate [bit/s] |
-| --------- | ------------------- | ------------------------------------ |
-| 0         | LoRa: SF12 / 125kHz | 250                                  |
-| 1         | LoRa: SF11 / 125kHz | 440                                  |
-| 2         | LoRa: SF10 / 125kHz | 980                                  |
-| 3         | LoRa: SF9 / 125kHz  | 1760                                 |
-| 4         | LoRa: SF8 / 125kHz  | 3125                                 |
-| 5         | LoRa: SF7 / 125kHz  | 5470                                 |
-| 6         | LoRa: SF7 / 250kHz  | 11000                                |
-| 7         | FSK: 50kbps         | 50000                                |
-| 8 ~ 15    | RFU                 |                                      |
+| Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
+| --------- | ------------------------- | ------------------------------------ |
+| 0         | LoRa: SF12 / 125&nbsp;kHz | 250                                  |
+| 1         | LoRa: SF11 / 125&nbsp;kHz | 440                                  |
+| 2         | LoRa: SF10 / 125&nbsp;kHz | 980                                  |
+| 3         | LoRa: SF9 / 125&nbsp;kHz  | 1760                                 |
+| 4         | LoRa: SF8 / 125&nbsp;kHz  | 3125                                 |
+| 5         | LoRa: SF7 / 125&nbsp;kHz  | 5470                                 |
+| 6         | LoRa: SF7 / 250&nbsp;kHz  | 11000                                |
+| 7         | FSK: 50&nbsp;kbps         | 50000                                |
+| 8 ~ 15    | RFU                       |                                      |
 
-### CN470/KR920 
+### CN470/KR920
 
-| Data Rate | Configuration       | Indicative physical bit rate [bit/s] |
-| --------- | ------------------- | ------------------------------------ |
-| 0         | LoRa: SF12 / 125kHz | 250                                  |
-| 1         | LoRa: SF11 / 125kHz | 440                                  |
-| 2         | LoRa: SF10 / 125kHz | 980                                  |
-| 3         | LoRa: SF9 / 125kHz  | 1760                                 |
-| 4         | LoRa: SF8 / 125kHz  | 3125                                 |
-| 5         | LoRa: SF7 / 125kHz  | 5470                                 |
-| 6 ~ 15    | RFU                 |                                      |
+| Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
+| --------- | ------------------------- | ------------------------------------ |
+| 0         | LoRa: SF12 / 125&nbsp;kHz | 250                                  |
+| 1         | LoRa: SF11 / 125&nbsp;kHz | 440                                  |
+| 2         | LoRa: SF10 / 125&nbsp;kHz | 980                                  |
+| 3         | LoRa: SF9 / 125&nbsp;kHz  | 1760                                 |
+| 4         | LoRa: SF8 / 125&nbsp;kHz  | 3125                                 |
+| 5         | LoRa: SF7 / 125&nbsp;kHz  | 5470                                 |
+| 6 ~ 15    | RFU                       |                                      |
 
-### US915 
+### US915
 
-| Data Rate | Configuration       | Indicative physical bit rate [bit/s] |
-| --------- | ------------------- | ------------------------------------ |
-| 0         | LoRa: SF10 / 125kHz | 980                                  |
-| 1         | LoRa: SF9 / 125kHz  | 1760                                 |
-| 2         | LoRa: SF8 / 125kHz  | 3125                                 |
-| 3         | LoRa: SF7 / 125kHz  | 5470                                 |
-| 4         | LoRa: SF8 / 500kHz  | 12500                                |
-| 5 ~ 7     | RFU                 |                                      |
-| 8         | LoRa: SF12/500kHz   | 980                                  |
-| 9         | LoRa: SF11/500kHz   | 1760                                 |
-| 10        | LoRa: SF10/500kHz   | 3900                                 |
-| 11        | LoRa: SF9/500kHz    | 7000                                 |
-| 12        | LoRa: SF8/500kHz    | 12500                                |
-| 13        | LoRa: SF7/500kHz    | 21900                                |
-| 14 ~ 15   | RFU                 |                                      |
+| Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
+| --------- | ------------------------- | ------------------------------------ |
+| 0         | LoRa: SF10 / 125&nbsp;kHz | 980                                  |
+| 1         | LoRa: SF9 / 125&nbsp;kHz  | 1760                                 |
+| 2         | LoRa: SF8 / 125&nbsp;kHz  | 3125                                 |
+| 3         | LoRa: SF7 / 125&nbsp;kHz  | 5470                                 |
+| 4         | LoRa: SF8 / 500&nbsp;kHz  | 12500                                |
+| 5 ~ 7     | RFU                       |                                      |
+| 8         | LoRa: SF12 / 500&nbsp;kHz | 980                                  |
+| 9         | LoRa: SF11 / 500&nbsp;kHz | 1760                                 |
+| 10        | LoRa: SF10 / 500&nbsp;kHz | 3900                                 |
+| 11        | LoRa: SF9 / 500&nbsp;kHz  | 7000                                 |
+| 12        | LoRa: SF8 / 500&nbsp;kHz  | 12500                                |
+| 13        | LoRa: SF7 / 500&nbsp;kHz  | 21900                                |
+| 14 ~ 15   | RFU                       |                                      |
 
-### AU915 
+### AU915
 
-| Data Rate | Configuration       | Indicative physical bit rate [bit/s] |
-| --------- | ------------------- | ------------------------------------ |
-| 0         | LoRa: SF12 / 125kHz | 250                                  |
-| 1         | LoRa: SF11 / 125kHz | 440                                  |
-| 2         | LoRa: SF10 / 125kHz | 980                                  |
-| 3         | LoRa: SF9 / 125kHz  | 1760                                 |
-| 4         | LoRa: SF8 / 125kHz  | 3125                                 |
-| 5         | LoRa: SF7 / 125kHz  | 5470                                 |
-| 6         | LoRa: SF8/500kHz    | 12500                                |
-| 7         | RFU                 | RFU                                  |
-| 8         | LoRa: SF12/500kHz   | 980                                  |
-| 9         | LoRa: SF11/500kHz   | 1760                                 |
-| 10        | LoRa: SF10/500kHz   | 3900                                 |
-| 11        | LoRa: SF9/500kHz    | 7000                                 |
-| 12        | LoRa: SF8/500kHz    | 12500                                |
+| Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
+| --------- | ------------------------- | ------------------------------------ |
+| 0         | LoRa: SF12 / 125&nbsp;kHz | 250                                  |
+| 1         | LoRa: SF11 / 125&nbsp;kHz | 440                                  |
+| 2         | LoRa: SF10 / 125&nbsp;kHz | 980                                  |
+| 3         | LoRa: SF9 / 125&nbsp;kHz  | 1760                                 |
+| 4         | LoRa: SF8 / 125&nbsp;kHz  | 3125                                 |
+| 5         | LoRa: SF7 / 125&nbsp;kHz  | 5470                                 |
+| 6         | LoRa: SF8 / 500&nbsp;kHz  | 12500                                |
+| 7         | RFU                       | RFU                                  |
+| 8         | LoRa: SF12 / 500&nbsp;kHz | 980                                  |
+| 9         | LoRa: SF11 / 500&nbsp;kHz | 1760                                 |
+| 10        | LoRa: SF10 / 500&nbsp;kHz | 3900                                 |
+| 11        | LoRa: SF9 / 500&nbsp;kHz  | 7000                                 |
+| 12        | LoRa: SF8 / 500&nbsp;kHz  | 12500                                |
 
 ### IN865
 
-| Data Rate | Configuration       | Indicative physical bit rate [bit/s] |
-| --------- | ------------------- | ------------------------------------ |
-| 0         | LoRa: SF12 / 125kHz | 250                                  |
-| 1         | LoRa: SF11 / 125kHz | 440                                  |
-| 2         | LoRa: SF10 / 125kHz | 980                                  |
-| 3         | LoRa: SF9 / 125kHz  | 1760                                 |
-| 4         | LoRa: SF8 / 125kHz  | 3125                                 |
-| 5         | LoRa: SF7 / 125kHz  | 5470                                 |
-| 6         | RFU                 | RFU                                  |
-| 7         | FSK: 50kbps         | 50000                                |
-| 8 ~ 15    | RFU                 | RFU                                  |
+| Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
+| --------- | ------------------------- | ------------------------------------ |
+| 0         | LoRa: SF12 / 125&nbsp;kHz | 250                                  |
+| 1         | LoRa: SF11 / 125&nbsp;kHz | 440                                  |
+| 2         | LoRa: SF10 / 125&nbsp;kHz | 980                                  |
+| 3         | LoRa: SF9 / 125&nbsp;kHz  | 1760                                 |
+| 4         | LoRa: SF8 / 125&nbsp;kHz  | 3125                                 |
+| 5         | LoRa: SF7 / 125&nbsp;kHz  | 5470                                 |
+| 6         | RFU                       | RFU                                  |
+| 7         | FSK: 50&nbsp;kbps         | 50000                                |
+| 8 ~ 15    | RFU                       | RFU                                  |
 
 ## Appendix II: Modbus Data Encapsulation Protocol
 
@@ -1450,11 +1450,11 @@ The message needs to be sent to the platform whether or not the scheduled task l
 
 6. <b>Add Scheduled Task Message</b>
 
-The platform adds DTU scheduled task message and transmits the result through this message. 
+The platform adds DTU scheduled task message and transmits the result through this message.
 
 This message needs to be sent to the platform no matter whether the scheduled task is added successfully or not. When the execution fails, the STATUS bit position in the DTU_CMD command is 1, and the data length is 0. When the execution is successful, the STATUS flag position in the DTU_CMD command is 0.
 
-* The format of the downlink instruction message: 
+* The format of the downlink instruction message:
 
 <table style="text-align: center">
 <thead>
@@ -1557,7 +1557,7 @@ This message needs to be sent to the platform no matter whether the scheduled ta
 
 7. <b>Remove Scheduled Task Message</b>
 
-The platform removes DTU scheduled task message and transmits the result through this message. 
+The platform removes DTU scheduled task message and transmits the result through this message.
 
 This message needs to be sent to the platform no matter whether the scheduled task is removed successfully or not. When the execution fails, the STATUS bit position in the DTU_CMD command is 1, and the data length is 0. When the execution is successful, the STATUS flag position in the DTU_CMD command is 0.
 
@@ -1647,7 +1647,7 @@ When the specified task list ID is not found in DTU, it is considered that the e
 
 8. <b>Read Scheduled Task Message</b>
 
-The platform reads DTU scheduled task message and transmits the result through this message. 
+The platform reads DTU scheduled task message and transmits the result through this message.
 
 This message needs to be sent to the platform no matter whether the scheduled task is read successfully or not. When the execution fails, the STATUS bit position in the DTU_CMD command is 1, and the data length is 0. When the execution is successful, the STATUS flag position in the DTU_CMD command is 0.
 
@@ -1914,7 +1914,7 @@ The DTU configuration and results read by the platform are transmitted through t
 
 This message needs to be sent to the platform whether the DTU configuration is read successfully or not. When the execution fails, the STATUS bit position in the DTU_CMD command is 1, and the data length is 0. When the execution is successful, the STATUS flag position in the DTU_CMD command is 0.
 
-* Format of downlink instruction message: 
+* Format of downlink instruction message:
 
 | DTU_CMD | MSER  | MDATA_LEN | MDATA |
 | ------- | ----- | --------- | ----- |
@@ -2022,7 +2022,7 @@ DTU configuration and results of platform settings are transmitted through this 
 
 This message needs to be sent to the platform whether the DTU configuration is read successfully or not. When the execution fails, the STATUS bit position in the DTU_CMD command is 1, and the data length is 0. When the execution is successful, the STATUS flag position in the DTU_CMD command is 0.
 
-* Format of downlink instruction message: 
+* Format of downlink instruction message:
 
 <table style="text-align: center">
 <thead>
@@ -2060,7 +2060,7 @@ This message needs to be sent to the platform whether the DTU configuration is r
 | ------- | ----- | --------- | ----- |
 | 0x89    | 2Byte | 2Byte     | 0Byte |
 
-* Uplink data message format when execution failed: 
+* Uplink data message format when execution failed:
 
 <table style="text-align: center">
 <thead>
@@ -2130,7 +2130,7 @@ LoRa configuration and results of platform initial call are transmitted through 
 
 It needs to be sent to the platform whether the DTU configuration is read successfully or not. When the execution fails, the STATUS bit position in the DTU_CMD command is 1, and the data length is 0. When the execution is successful, the STATUS flag position in the DTU_CMD command is 0.
 
-* Format of downlink instruction message: 
+* Format of downlink instruction message:
 
 | DTU_CMD | MSER  | MDATA_LEN | MDATA |
 | ------- | ----- | --------- | ----- |
@@ -2142,7 +2142,7 @@ It needs to be sent to the platform whether the DTU configuration is read succes
 | ------- | ----- | --------- | ----- |
 | 0x9D    | 2Byte | 2Byte     | 0Byte |
 
-* Uplink data message format when execution failed: 
+* Uplink data message format when execution failed:
 
 <table style="text-align: center">
 <thead>
@@ -2203,7 +2203,7 @@ LoRa configuration and results of platform initial call are transmitted through 
 
 It needs to be sent to the platform whether the DTU configuration is read successfully or not. When the execution fails, the STATUS bit position in the DTU_CMD command is 1, and the data length is 0. When the execution is successful, the STATUS flag position in the DTU_CMD command is 0.
 
-* Format of downlink instruction message: 
+* Format of downlink instruction message:
 
 | DTU_CMD | MSER  | MDATA_LEN | MDATA |
 | ------- | ----- | --------- | ----- |
@@ -2215,7 +2215,7 @@ It needs to be sent to the platform whether the DTU configuration is read succes
 | ------- | ----- | --------- | ----- |
 | 0x9E    | 2Byte | 2Byte     | 0Byte |
 
-* Uplink data message format when execution failed: 
+* Uplink data message format when execution failed:
 
 <table style="text-align: center">
 <thead>
@@ -2245,15 +2245,15 @@ It needs to be sent to the platform whether the DTU configuration is read succes
 <tbody>
         <tr>
             <td>POLL_ENABLE</td>
-            <td colspan=2>1（opened）</td>
+            <td colspan=2>1 (opened）</td>
         </tr>
         <tr>
             <td>POLL_PERIOD</td>
-            <td colspan=2>3600 （seconds）</td>
+            <td colspan=2>3600（seconds）</td>
         </tr>
         <tr>
             <td>BUS TIMEOUT</td>
-            <td colspan=2>1000 （milliseconds）</td>
+            <td colspan=2>1000（milliseconds）</td>
         </tr>
         <tr>
             <td>RS485</td>

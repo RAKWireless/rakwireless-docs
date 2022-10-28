@@ -18,7 +18,7 @@ Thank you for choosing **RAK7204 WisNode Sense Home** in your awesome IoT Projec
 * [AT Command Manual](../AT-Command-Manual/)
 
 :::tip 📝 NOTE:
-The WisNode Sense Home (RAK7204) is permanently out of stock. 
+The WisNode Sense Home (RAK7204) is permanently out of stock.
 As an alternative product, we recommend [RAK WisBlock Weather Monitor Kit](https://store.rakwireless.com/products/wisblock-kit-1-weather-monitor?variant=37637925372102)
 :::
 
@@ -30,7 +30,7 @@ The environmental sensors, LoRa transceiver module, LoRa antenna, and the batter
 
 ## Product Features
 
-- Measurement of a variety of environmental parameters: **Temperature**, **Humidity**, **Gas Pressure** and **Indoor Air Quality (IAQ)**
+- Measurement of a variety of environmental parameters: **Temperature**, **Humidity**, **Gas Pressure**, and **Indoor Air Quality (IAQ)**
 - **BOSCH BME680** Integrated Environmental Unit
 - **LoRaWAN 1.0.2** fully compliant
 - Low power operation and standby current of less than 15 uA

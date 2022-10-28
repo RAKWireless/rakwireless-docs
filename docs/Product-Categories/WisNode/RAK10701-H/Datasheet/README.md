@@ -14,14 +14,14 @@ tags:
 
 ### Description
 
-The **RAK10701-H Field Mapper for Helium Network** is a ready-to-use device for evaluating the coverage of the Helium Network. It is a plug-and-play device with its included DC(data credits), which allows you to use it immediately without needing extra configurations. It has a GNSS receiver for checking its current location and a touchscreen LCD for the user interface. It shows the number of hotspots the device can reach and other parameters like approximate distance, RSSI, and SNR.
+The **RAK10701-H Field Mapper for Helium Network** is a ready-to-use device for evaluating the coverage of the Helium Network. It is a plug-and-play device with its included DC (data credits), which allows you to use it immediately without needing extra configurations. It has a GNSS receiver for checking its current location and a touchscreen LCD for the user interface. It shows the number of hotspots the device can reach and other parameters like approximate distance, RSSI, and SNR.
 
 ### Features
 
 - Supports LoRaWAN regions: RU864, IN865, EU868, US915, AU915, KR920, AS923-1/2/3/4
 - Compatible with LoRaWAN 1.0.3
 - Already registered on the Helium console
-- Free DC(data credits) to use the Field Mapper for Helium
+- Free DC (data credits) to use the Field Mapper for Helium
 - Shows the number of hotspots in the range
 - Shows min and max RSSI levels
 - Shows min and max distance to hotspots in range
@@ -48,7 +48,7 @@ RAK10701-H Field Mapper for Helium Network with the external antenna.
 
 ### Hardware
 
-The hardware specification is categorized into five parts. It shows the interfacing of the tracker. It also covers the rf, antennas, electrical, environmental, and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK10701-H Field Mapper for Helium Network.
+The hardware specification is categorized into five (5) parts. It shows the interfacing of the tracker. It also covers the rf, antennas, electrical, environmental, and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK10701-H Field Mapper for Helium Network.
 
 #### Interfaces
 
@@ -73,7 +73,7 @@ You can interact with the device and check the data needed on your LoRaWAN netwo
 />
 
 :::tip 📝 NOTE
-Complete details on different pages of the screens are discussed in the [RAK10701-H Quick Start Guide](/Product-Categories/WisNode/RAK10701-H/Quickstart/).
+The complete details on different pages of the screens are discussed in the [RAK10701-H Quick Start Guide](/Product-Categories/WisNode/RAK10701-H/Quickstart/).
 :::
 
 ##### External Button
@@ -111,13 +111,13 @@ The antenna included in the RAK10701-h has a 2.0&nbsp;dBi gain. You can put a di
 :::tip 📝 NOTE
 Detailed information about the LoRa antenna can be found on the datasheet:
 
-- [9xx Mhz Antenna](https://downloads.rakwireless.com/Accessories/Antenna/SMA-Antenna/RPSMA-J-915MHz_LoRa_Antenna_Specifications.pdf)
-- [8xx Mhz Antenna](https://downloads.rakwireless.com/Accessories/Antenna/SMA-Antenna/RPSMA-J-868MHz_LoRa_Antenna_Specifications.pdf)
+- [9xx MHz Antenna](https://downloads.rakwireless.com/Accessories/Antenna/SMA-Antenna/RPSMA-J-915MHz_LoRa_Antenna_Specifications.pdf)
+- [8xx MHz Antenna](https://downloads.rakwireless.com/Accessories/Antenna/SMA-Antenna/RPSMA-J-868MHz_LoRa_Antenna_Specifications.pdf)
 :::
 
 ##### USB Type-C for Charging and WisToolBox Configuration
 
-There is also a USB interface on RAK10701. You can use [WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview) software to configure the devices via USB connection. You also have the option to configure the device wirelessly via BLE connection using the [WisToolBox Mobile App](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/WisToolBoxMobile/) compatible with iOS and Android.
+There is also a USB interface on the RAK10701. You can use [WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview) software to configure the devices via USB connection. You also have the option to configure the device wirelessly via BLE connection using the [WisToolBox Mobile App](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/WisToolBoxMobile/) compatible with iOS and Android.
 
 <rk-img
   src="/assets/images/wisnode/rak10701/datasheet/interface-usb-typec.png"
@@ -165,10 +165,10 @@ The RAK10701-H Field Mapper for Helium Network is equipped with a built-in recha
 
 The table below lists the operation and storage temperature requirements.
 
-| Parameter             | Min.       | Typical     | Max.        |
-| --------------------- | ---------- | ----------- | ----------- |
-| Storage Temp. Range   | -40&nbsp;C | +25&nbsp;°C | +80&nbsp;°C |
-| Operation Temp. Range | -10&nbsp;C | +25&nbsp;°C | +60&nbsp;°C |
+| Parameter             | Min.        | Typical     | Max.        |
+| --------------------- | ----------- | ----------- | ----------- |
+| Storage Temp. Range   | -40°&nbsp;C | +25°&nbsp;C | +80°&nbsp;C |
+| Operation Temp. Range | -10°&nbsp;C | +25°&nbsp;C | +60°&nbsp;C |
 
 #### Mechanical Characteristics
 
@@ -179,6 +179,7 @@ The table below lists the operation and storage temperature requirements.
 
 Download the latest firmware version of RAK10701-H in the table provided below.
 
-| Model                              | Version | Firmware                                                          |
-| ---------------------------------- | ------- | ----------------------------------------------------------------- |
-| RAK10701- Field Tester for LoRaWAN | V1.0.2  | [Download](https://downloads.rakwireless.com/LoRa/RAK10701/beta/) |
+| Model                                      | Version | Firmware                                                              |
+| ------------------------------------------ | ------- | --------------------------------------------------------------------- |
+| RAK10701 - Field Mapper for Helium Network | V1.0.6  | [Download](https://downloads.rakwireless.com/LoRa/RAK10701/Firmware/RAK10701_H_Latest_Firmware.zip) |
+

@@ -26,13 +26,13 @@ Before going through each and every step in the installation guide of the RAK743
 #### Software Tools
 
 * [RAK Serial Port Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)
-* [MQTTfx Tool](https://mqttfx.jensd.de/)
+* [MQTTfx Tool](http://mqttfx.jensd.de/)
 
 ## Product Configuration
 
 ### Typical Network Application
 
-RAK7431 converts data from the RS485 protocol into LPWAN wireless messages and delivers it to a cloud server through an LPWAN gateway. Cloud servers can also proactively send data to RAK7431 for two-way data transmission. Using the RAK7431, you can convert data from a conventional RS485 wired network to a wireless network. 
+RAK7431 converts data from the RS485 protocol into LPWAN wireless messages and delivers it to a cloud server through an LPWAN gateway. Cloud servers can also proactively send data to RAK7431 for two-way data transmission. Using the RAK7431, you can convert data from a conventional RS485 wired network to a wireless network.
 
 <rk-img
   src="/assets/images/wisnode/rak7431/quickstart/typical-application.png"
@@ -46,9 +46,9 @@ RAK7431 converts data from the RS485 protocol into LPWAN wireless messages and d
 
 The RAK7431 device can be powered either by:
 - DC (VIN/GND) terminals
-- Micro USB. 
+- Micro USB
 
-The DC screw terminals are supporting 8 to 48 VDC. The Micro USB port can be used to power the RAK7431, up to 5 V / 500 mA DC. At the same time, the USB port is used as the configuration port for the device. Using the USB cable to connect the RAK7431 to a computer’s USB port, you can import your configuration settings. 
+The DC screw terminals are supporting 8 to 48&nbsp;V<sub>DC</sub>. The Micro USB port can be used to power the RAK7431, up to 5&nbsp;V / 500&nbsp;mA DC. At the same time, the USB port is used as the configuration port for the device. Using the USB cable to connect the RAK7431 to a computer’s USB port, you can import your configuration settings.
 
 ::: tip 📝 NOTE
 The Micro USB port can be used only for powering the device. It cannot provide power to VOUT and power other devices in the RS485 network.
@@ -95,9 +95,9 @@ In this section, the **RAK7431 WisNode Bridge Serial** shall be connected into t
   caption="Create Application in the Built-In Network Server"
 />
 
-2. Turn on the **Auto Add LoRa Device** slider. 
+2. Turn on the **Auto Add LoRa Device** slider.
 
-3. Generate **Application EUI** and **Application Key** by pressing the generate icon marked in the image below. 
+3. Generate **Application EUI** and **Application Key** by pressing the generate icon marked in the image below.
 
 ::: tip 📝 NOTE
 The description is optional.
@@ -111,7 +111,7 @@ The description is optional.
 
 4. After which, press **Save & Apply**.
 
-5. You will be returned to the Application page. Select **Edit** on the created application. 
+5. You will be returned to the Application page. Select **Edit** on the created application.
 
 <rk-img
   src="/assets/images/wisnode/rak7431/quickstart/application-list.png"
@@ -149,9 +149,9 @@ The RAK7431 Device EUI can be seen at the label on the back
 
 1. Connect the RAK7431 to a computer using the Micro USB cable.
 
-2. Open the RAK Serial Tool and select the correct COM port. The default baud rate is **115200**. 
+2. Open the RAK Serial Tool and select the correct COM port. The default baud rate is **115200**.
 
-3. After selecting, press **Open**. 
+3. After selecting, press **Open**.
 
 <rk-img
   src="/assets/images/wisnode/rak7431/quickstart/rak-serial-port-tool.png"
@@ -202,7 +202,7 @@ AT+APPKEY
 ##### Set the Frequency Region
 
 The node supports the
-following Regional Frequencies: 
+following Regional Frequencies:
 
 - EU433
 - CN470
@@ -289,10 +289,10 @@ AT+TRANSPARENT=n
 ```
 
 
-| **n** | **Condition** | 
-| ---- | ---- | 
-| 0 | transparent mode is turned off | 
-| 1 | it is turned on | 
+| **n** | **Condition** |
+| ---- | ---- |
+| 0 | transparent mode is turned off |
+| 1 | it is turned on |
 
 
 ::: tip 📝 NOTE
@@ -303,7 +303,7 @@ The change takes effect immediately after modification.
 
 When the device works in MODBUS mode, it supports the scheduled polling function.
 
-This means that the device will perform a polling operation every given period (polling cycle). During polling, the device will send the pre-added MODBUS instructions in turn and forward the corresponding response data through the LoRaWAN network. 
+This means that the device will perform a polling operation every given period (polling cycle). During polling, the device will send the pre-added MODBUS instructions in turn and forward the corresponding response data through the LoRaWAN network.
 
 The device turns on the scheduled polling by default. The AT command for this is:
 
@@ -311,10 +311,10 @@ The device turns on the scheduled polling by default. The AT command for this is
 AT+ENABLEPOLL=n
 ```
 
-| **n** | **Condition** | 
-| ---- | ---- | 
-| 0 | turns scheduled polling off | 
-| 1 | turns it on | 
+| **n** | **Condition** |
+| ---- | ---- |
+| 0 | turns scheduled polling off |
+| 1 | turns it on |
 
 
 ::: tip 📝 NOTE
@@ -331,13 +331,13 @@ The modification takes effect after restart.
 
 This command sets/reads the scheduled polling cycle. This command only works if scheduled polling is enabled. The modification takes effect after the next polling cycle or a restart.
 
-**Example**: To set the polling cycle to 60 seconds, use this command:
+**Example**: To set the polling cycle to 60&nbsp;seconds, use this command:
 
 ```sh
 AT+POLLPERIOD=60
 ```
 
-RAK7431 supports polling mode, which stores up to 32 query instructions at a maximum length of 128 bytes per instruction. Polling intervals and wait times can be adjusted as needed. RAK7431 converts the data returned by the RS485 node into a LoRaWAN message, which can be sent to the LoRaWAN gateway as is or encapsulated. In transparent mode, the data for the RS485 is sent in the payload of the LoRa message as is, and in non-transparent mode, the data of RS485 is encapsulated in the LoRa message with a header and validation.
+RAK7431 supports polling mode, which stores up to 32 query instructions at a maximum length of 128&nbsp;bytes per instruction. Polling intervals and wait times can be adjusted as needed. RAK7431 converts the data returned by the RS485 node into a LoRaWAN message, which can be sent to the LoRaWAN gateway as is or encapsulated. In transparent mode, the data for the RS485 is sent in the payload of the LoRa message as is, and in non-transparent mode, the data of RS485 is encapsulated in the LoRa message with a header and validation.
 
 #### Add Polling Instructions
 
@@ -347,10 +347,10 @@ To add polling instruction, execute the AT command:
 AT+ADDPOLL=<n>:<xxxx>
 ```
 
-| **Parameter** | **Description** | **Value Range** | 
-| ---- | ---- | ---- | 
-| n | polling instruction ID | 1 to 127 | 
-| xxxx | polling instruction content; hexadecimal string | 128 bytes max | 
+| **Parameter** | **Description** | **Value Range** |
+| ---- | ---- | ---- |
+| n | polling instruction ID | 1 to 127 |
+| xxxx | polling instruction content; hexadecimal string | 128&nbsp;bytes max |
 
 According to the temperature and humidity register address of the temperature and humidity sensor in the example and the RS485 address, the polling instruction should be:
 
@@ -386,7 +386,7 @@ AT+ADDPOLL=3:080300000002C492
 AT+ADDPOLL=4:0F0300000002C525
 ```
 
-The RAK7431 sends an instruction to the sensor every 1 minute to obtain temperature and humidity data, and the following is the result of 3 consecutive scheduled polls:
+The RAK7431 sends an instruction to the sensor every 1&nbsp;minute to obtain temperature and humidity data, and the following is the result of 3 consecutive scheduled polls:
 
 - **DTU Tx**: The polling instruction sent to the Sensors over RS485 Data Interface
 - **DTU Rx**: The sensor data received.
@@ -404,12 +404,12 @@ The RAK7431 sends an instruction to the sensor every 1 minute to obtain temperat
   caption="Data in non-transparent mode"
 />
 
-- **Humidity calculation**: hex is 0210, the decimal is 528, converted humidity is 52.8% RH. 
-- **Temperature calculation**: hex is 012F, the decimal is 303, converted temperature is 30.3 ℃.
+- **Humidity calculation**: hex is 0210, the decimal is 528, converted humidity is 52.8% RH.
+- **Temperature calculation**: hex is 012F, the decimal is 303, converted temperature is 30.3°&nbsp;C.
 
 ### MQTT Subscribe to Data Server
 
-To better demonstrate the functionality we will use the Application Server Integration feature to subscribe to the Built-In Network Server Topics, using the MQTT client, to obtain data and send instructions to the RAK7431.
+To better demonstrate the functionality, you will use the Application Server Integration feature to subscribe to the Built-In Network Server Topics, using the MQTT client, to obtain data and send instructions to the RAK7431.
 
 <rk-img
   src="/assets/images/wisnode/rak7431/quickstart/mqtt-topic-template.png"
@@ -417,15 +417,15 @@ To better demonstrate the functionality we will use the Application Server Integ
   caption="Gateway MQTT Topic Templates"
 />
 
-To communicate with the MQTT bridge in the gateway we need to use MQTT Topic Templates.
+To communicate with the MQTT bridge in the gateway, you need to use MQTT Topic Templates.
 
 **MQTT Topic Configuration**:
 
 ```sh
-Application/{{application_ID}}/device/{{device_EUI}}/join 
-Application/{{application_ID}}/device/{{device_EUI}}/rx 
-Application/{{application_ID}}/device/{{device_EUI}}/tx 
-Application/{{application_ID}}/device/{{device_EUI}}/ack 
+Application/{{application_ID}}/device/{{device_EUI}}/join
+Application/{{application_ID}}/device/{{device_EUI}}/rx
+Application/{{application_ID}}/device/{{device_EUI}}/tx
+Application/{{application_ID}}/device/{{device_EUI}}/ack
 Application/{{application_ID}}/device/{{device_EUI}}/status
 ```
 
@@ -441,7 +441,7 @@ Application/{{application_ID}}/device/{{device_EUI}}/status
 
 3. On the next window, input the **Broker Address** and **Broker Port**. If the Client ID is empty press **Generate**. Then click **OK**.
 
-- **Broker Address**: Address of MQTT server – the gateway IP. 
+- **Broker Address**: Address of MQTT server – the gateway IP.
 - **Broker Port**: Consistent with MQTT Broker Port set by the gateway - by default 1883.
 
 <rk-img
@@ -458,7 +458,7 @@ Application/{{application_ID}}/device/{{device_EUI}}/status
   caption="MQTT.fx connected successfully"
 />
 
-- If we want to receive all data from the MQTT Bridge, we can use the wildcard character **#**.
+- If you want to receive all data from the MQTT Bridge, use the wildcard character **#**.
 
 5. Choose the **Subscribe tab**, enter the wildcard and press **Subscribe**.
 
@@ -476,7 +476,7 @@ Application/{{application_ID}}/device/{{device_EUI}}/status
   caption="Subscribed topic data"
 />
 
-- Notice that the data field is in **base64** format, which has to be converted to hex string to be useful. We can change the data format from the built-in server settings. 
+- Notice that the data field is in **base64** format, which has to be converted to hex string to be useful. You can change the data format from the built-in server settings.
 
 6. This is done by going to **Gateway>Application>Integrations>Data Encode/Decode Type** and chose **HEX String** form the drop-down menu. Press **Save & Apply**.
 
@@ -486,7 +486,7 @@ Application/{{application_ID}}/device/{{device_EUI}}/status
   caption="Change the Data Encode/Decode Type"
 />
 
-- Now, all received data will be in HEX String. 
+- Now, all received data will be in HEX String.
 
 <rk-img
   src="/assets/images/wisnode/rak7431/quickstart/received-hex-format.png"
@@ -527,11 +527,10 @@ To remotely control the RAK7431 you need to publish messages to the **Gateway’
 </table>
 
 ::: tip 📝 NOTE
-The message length does not contain the header
+The message length does not contain the header.
 :::
 
-**Example**: We will add a polling
-instruction.
+**Example**: You will add a polling instruction.
 
 **Publish topic**:
 
@@ -549,20 +548,20 @@ Application ID and Device EUI should be consistent with the settings within the 
 
 ```sh
 {
-"confirmed":true, 
+"confirmed":true,
 "fPort":129,
 "data":"030001000901010300000002C40B"
 }
 ```
 
-| **Parameter** | **Description** | 
-| ---- | ---- | 
-| **"confirmed":true** | This indicates that the downlink to the RAK7431 will be confirmed for successful receiving. | 
-| **"fPort":129** | Defines the port that we want to send the command. (For more information on the fPort see the [AT Command Manual](../AT-Command-Manual/) for RAK7431) | 
-| **"data":"030001000901010300000002C40B"** | The data of the task in hexadecimal format. | 
+| **Parameter** | **Description** |
+| ---- | ---- |
+| **"confirmed":true** | This indicates that the downlink to the RAK7431 will be confirmed for successful receiving. |
+| **"fPort":129** | Defines the port that you want to send the command. (For more information on the fPort see the [AT Command Manual](../AT-Command-Manual/) for RAK7431) |
+| **"data":"030001000901010300000002C40B"** | The data of the task in hexadecimal format. |
 
 
-**The content of the data that we will send is**:
+**The content of the data that you will send is**:
 
 <rk-img
   src="/assets/images/wisnode/rak7431/quickstart/content-data.jpg"
@@ -570,7 +569,7 @@ Application ID and Device EUI should be consistent with the settings within the 
   caption="Data arrangement"
 />
 
-1. DTU command word 
+1. DTU command word
 2. The message number
 3. Message length (excluding header)
 4. The task ID
@@ -582,7 +581,7 @@ Application ID and Device EUI should be consistent with the settings within the 
   caption="Publishing data to RX topic"
 />
 
-- After publishing the data, we can see the downlink instruction and uplink answer from the RAK Serial Tool:
+- After publishing the data, you can see the downlink instruction and uplink answer from the RAK Serial Tool:
 
 <rk-img
   src="/assets/images/wisnode/rak7431/quickstart/received-data-reply.png"
@@ -740,8 +739,8 @@ application/1/device/60c5a8fffe75404b/tx
 
 ```sh
 {
-"confirmed":true, 
-"fPort":129, 
+"confirmed":true,
+"fPort":129,
 "data":"050001000101"
 }
 ```
@@ -815,11 +814,11 @@ application/1/device/60c5a8fffe75404b/tx
 Application/1/device/60c5a8fffe75404b/tx
 ```
 
-**Content**: 
+**Content**:
 
 ```sh
 {
-"confirmed":true, 
+"confirmed":true,
 "fPort":129,
  "data":"0600010000"
 }
@@ -853,7 +852,7 @@ Application/1/device/60c5a8fffe75404b/tx
             <td>RETRY</td>
             <td>ADR</td>
             <td>DUTY CYCLE</td>
-        </tr>        
+        </tr>
         <tr>
             <td>1Byte</td>
             <td>1Byte</td>
@@ -865,11 +864,11 @@ Application/1/device/60c5a8fffe75404b/tx
 </tbody>
 </table>
 
-- **DATARATE**: Speed rate (0 – 5) 
-- **TXPOWER**: The transmit power level (0 – 20) 
-- **CONFIRM**: Whether to turn on ACK 0 – off, 1 – on 
-- **RETRY**: Maximum re-transmission times when ACK is on (0 ~ 15) 
-- **ADR**: Whether to turn on the dynamic rate adjustment 0 – off, 1 - on 
+- **DATARATE**: Speed rate (0 – 5)
+- **TXPOWER**: The transmit power level (0 – 20)
+- **CONFIRM**: Whether to turn on ACK 0 – off, 1 – on
+- **RETRY**: Maximum re-transmission times when ACK is on (0 ~ 15)
+- **ADR**: Whether to turn on the dynamic rate adjustment 0 – off, 1 - on
 - **DUTY CYCLE**: Whether to turn on duty cycle limit 0 – off, 1 – on
 
 <rk-img
@@ -904,7 +903,7 @@ Application/1/device/60c5a8fffe75404b/tx
             <td>RETRY</td>
             <td>ADR</td>
             <td>DUTY CYCLE</td>
-        </tr>        
+        </tr>
         <tr>
             <td>1Byte</td>
             <td>1Byte</td>
@@ -922,11 +921,11 @@ Application/1/device/60c5a8fffe75404b/tx
 Application/1/device/60c5a8fffe75404b/tx
 ```
 
-**Content**: 
+**Content**:
 
 ```sh
 {
-"confirmed":true, 
+"confirmed":true,
 "fPort":129,
 "data":"070001000601050103010"
 }
@@ -971,7 +970,7 @@ Application/1/device/60c5a8fffe75404b/tx
 
 #### Reset the default LoRa Configuration
 
-**Publish topic**: 
+**Publish topic**:
 
 ```sh
 Application/1/device/60c5a8fffe75404b/tx
@@ -981,8 +980,8 @@ Application/1/device/60c5a8fffe75404b/tx
 
 ```sh
 {
-"confirmed":true, 
-"fPort":129, 
+"confirmed":true,
+"fPort":129,
 "data":"1D00010000"
 }
 ```
@@ -1059,8 +1058,8 @@ Application/1/device/60c5a8fffe75404b/tx
 
 ```sh
 {
-"confirmed":true, 
-"fPort":129, 
+"confirmed":true,
+"fPort":129,
 "data":"0800010000"
 }
 ```
@@ -1092,7 +1091,7 @@ Application/1/device/60c5a8fffe75404b/tx
             <td>BUS TIMEOUT</td>
             <td>RETRY</td>
             <td>RS485</td>
-        </tr>        
+        </tr>
         <tr>
             <td>1Byte</td>
             <td>4Byte</td>
@@ -1103,10 +1102,10 @@ Application/1/device/60c5a8fffe75404b/tx
 </tbody>
 </table>
 
-- **POLL ENABLE**: Enables scheduled polling, 0 - off, 1 - on 
-- **POLL PERIOD**: Polling period, in seconds 
-- **BUS TIMEOUT**: Bus timeout. The unit is seconds 
-- **RETRY**: Number of retries after bus timeout. 0 - turn off retry function 
+- **POLL ENABLE**: Enables scheduled polling, 0 - off, 1 - on
+- **POLL PERIOD**: Polling period, in seconds
+- **BUS TIMEOUT**: Bus timeout. The unit is seconds
+- **RETRY**: Number of retries after bus timeout. 0 - turn off retry function
 - **RS485**: 485 bus parameters
 
 Open the MQTT subscription bar to see the upstream message "**8800010000800000003C010050**" to read the DTU configuration according to the successful upstream message format above.
@@ -1140,7 +1139,7 @@ Open the MQTT subscription bar to see the upstream message "**880001000080000000
             <td>BUS TIMEOUT</td>
             <td>RETRY</td>
             <td>RS485</td>
-        </tr>        
+        </tr>
         <tr>
             <td>1Byte</td>
             <td>4Byte</td>
@@ -1161,7 +1160,7 @@ Application/1/device/60c5a8fffe75404b/tx
 
 ```sh
 {
-"confirmed":true, 
+"confirmed":true,
 "fPort":129,
 "data":"09000100080100000E10010050"
 }
@@ -1250,8 +1249,8 @@ Application/1/device/60c5a8fffe75404b/tx
 <tbody>
         <tr>
             <td>1 - on</td>
-            <td>3600 seconds</td>
-            <td>1 second</td>
+            <td>3600&nbsp;seconds</td>
+            <td>1&nbsp;second</td>
             <td>0xE0</td>
         </tr>
 </tbody>
@@ -1260,7 +1259,7 @@ Application/1/device/60c5a8fffe75404b/tx
 
 ### Connecting to the Helium Network
 
-Helium has quickly become the most widespread LPWAN communal network with more than 27,000 devices deployed globally. All the RAKwireless node products are compatible with it and the process of adding a device to the network is intuitive and straightforward. 
+Helium has quickly become the most widespread LPWAN communal network with more than 27,000 devices deployed globally. All the RAKwireless node products are compatible with it and the process of adding a device to the network is intuitive and straightforward.
 
 This section will focus on giving a brief guide on how to connect the RAK7431 to the network console, assuming that there is a Helium Hotspot within range.
 
@@ -1392,7 +1391,7 @@ At The Things Conference 2021, it was announced that The Things Network is upgra
 />
 
 ::: tip 📝 NOTE
-To be able to connect RAK7431 WisNode Bridge Serial to TTNv3 you should already have connected a gateway in range to TTNv2 or TTNv3, or you have to be sure that you are in the range of a public gateway. 
+To be able to connect RAK7431 WisNode Bridge Serial to TTNv3 you should already have connected a gateway in range to TTNv2 or TTNv3, or you have to be sure that you are in the range of a public gateway.
 :::
 
 #### Adding an application
@@ -1411,9 +1410,9 @@ This tutorial is for EU868 Frequency band.
 
 2. Fill in the needed information:
 
-- **Owner** Automatically filled by The Things Stack, based on your account or created Organization.
+- **Owner** - Automatically filled by The Things Stack, based on your account or created Organization.
 - **Application ID** - This will be the unique ID of your application in the Network. Note that the ID must contain only lowercase letters, numbers, and dashes (-).
-- **Application name** (optional) - This is the name of your application. 
+- **Application name** (optional) - This is the name of your application.
 - **Description** (optional) – Description of your application. Optional application description; can also be used to save notes about the application.
 
 3. After you fill in the information, click **Create application**. If everything is filled in correctly, you will see the same page, as shown in Figure 53.
@@ -1429,14 +1428,14 @@ This tutorial is for EU868 Frequency band.
 ##### Registering the Device in OTAA Mode
 
 1. From the Application Overview page, click on **+ Add end device**.
-   
+
 <rk-img
   src="/assets/images/wisnode/rak7431/quickstart/ttnv3/image005.png"
   width="100%"
   caption="Adding a device in OTAA mode"
 />
 
-2. Below the **Register end device** heading you can find two options for registering a device. Since RAK7431 WisNode Bridge Serial is part of The LoRaWAN Device Repository, you can register it **From The LoRaWAN Repository** option. In the **Brand** dropdown menu find and select **RAKwireless Technology Co.** and a **Model** field will pop up next to it. In it choose **RAK7431 WisNode Bridge Serial**. 
+2. Below the **Register end device** heading you can find two options for registering a device. Since RAK7431 WisNode Bridge Serial is part of The LoRaWAN Device Repository, you can register it **From The LoRaWAN Repository** option. In the **Brand** dropdown menu find and select **RAKwireless Technology Co.** and a **Model** field will pop up next to it. In it choose **RAK7431 WisNode Bridge Serial**.
 
 <rk-img
   src="/assets/images/wisnode/rak7431/quickstart/ttnv3/image006.png"
@@ -1444,11 +1443,11 @@ This tutorial is for EU868 Frequency band.
   caption="Choosing the device"
 />
 
-3. After choosing the device, three more fields will pop up. 
+3. After choosing the device, three more fields will pop up.
 
-- **Hardware Ver.** – Version of the hardware. This is the only option, so leave it as default. 
+- **Hardware Ver.** – Version of the hardware. This is the only option, so leave it as default.
 - **Firmware Ver.** – Version of the firmware. This is the only option, so leave it as default.
-- **Profile (Region)** – Here the region is chosen. 
+- **Profile (Region)** – Here the region is chosen.
 
 ::: tip 📝 NOTE
 For this example, the EU_863_870 is chosen.
@@ -1464,7 +1463,7 @@ For this example, the EU_863_870 is chosen.
 
 5. Here you must enter the following information:
 
-- **Frequency plan** – Note: For this example, we will choose Europe 863-870 MHz (SF9 for RX2 - recommended).
+- **Frequency plan** – Note: For this example, you will choose Europe 863-870&nbsp;MHz (SF9 for RX2 - recommended).
 - **AppEUI** - The AppEUI uniquely identifies the owner of the end device. It is provided by the device manufacturer. To get the AppEUI, connect your device via USB cable to your computer. Open RAK Serial Port Tool, choose the correct COM port and BaudRate and run the following command:
 
 ```
@@ -1481,7 +1480,7 @@ AT+APPEUI
 -  **End device ID** – The End device ID is automatically filled based on the DevEUI. It can be changed. Note that the end device ID must contain only lowercase letters, numbers, and dashes (-).
 
 ::: tip 📝 NOTE
-If you are going to register more than one device of this type, you can choose the option **Register another end device of this type** and be transferred to the same page to register the next device. 
+If you are going to register more than one device of this type, you can choose the option **Register another end device of this type** and be transferred to the same page to register the next device.
 :::
 
 6. After filling in the registration information, click **Register end device**.
@@ -1510,7 +1509,7 @@ AT+JOINMODE=OTAA
 AT+CLASS=A
 ```
 
-- For the region (Remember to replace the **frequency band** with the one for your LoRaWAN region. Check [here](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html) for your frequency plan.)
+- For the region, replace the **frequency band** with the one for your LoRaWAN region. Refer to the [TTN site](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html) for your frequency plan.
 
 ```
 AT+REGION=EU868
@@ -1523,13 +1522,13 @@ AT+REGION=EU868
 />
 
 ::: tip 📝 NOTE
-The following tutorial is based on using the EU868 frequency band. 
+The following tutorial is based on using the EU868 frequency band.
 :::
 
-3. Now that those parameters are set, enter the **App Key**, using the command below. Remember to replace the **"XXXX"** with the corresponding parameter value for your particular case.
+1. Now that those parameters are set, enter the **App Key**, using the command below. Remember to replace the **"XXXX"** with the corresponding parameter value for your particular case.
 
 ```
-AT+APPKEY=XXXX  
+AT+APPKEY=XXXX
 ```
 <rk-img
   src="/assets/images/wisnode/rak7431/quickstart/ttnv3/image011.png"

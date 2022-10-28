@@ -12,7 +12,7 @@ tags:
 
 This guide shows how to register the TrackIt device in the Helium console and make integration to Datacake, where you can use the dashboard to view the data in a more user-friendly way. For example, create a map so you can see the location of the device. 
 
-Before you dive into registering the device in the Helium console and creating the Datacake integration, you need to set the device to work in [Third-Party LoRaWAN Network Server (LNS) Mode.](https://docs.rakwireless.com/Product-Categories/WisNode/RAK2171/Quickstart/#third-party-lorawan-network-server-lns-mode)
+Before you dive into registering the device in the Helium console and creating the Datacake integration, you need to set the device to work in [Third-Party LoRaWAN Network Server (LNS) Mode](https://docs.rakwireless.com/Product-Categories/WisNode/RAK2171/Quickstart/#third-party-lorawan-network-server-lns-mode).
 
 
 ## Register the TrackIt Node in the Helium Console

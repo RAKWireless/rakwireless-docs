@@ -28,7 +28,7 @@ Last but not least, the RAK7204 adopts a highly integrated design. The environme
 
 ### Features
 
-- Measurement of a variety of environmental parameters: **Temperature**, **Humidity**, **Gas Pressure** and **Indoor Air Quality (IAQ)**
+- Measurement of a variety of environmental parameters: **Temperature**, **Humidity**, **Gas Pressure**, and **Indoor Air Quality (IAQ)**
 - **BOSCH BME680** Integrated Environmental Unit
 - **LoRaWAN 1.0.2** fully compliant
 - Low power operation and standby current of less than 15 uA

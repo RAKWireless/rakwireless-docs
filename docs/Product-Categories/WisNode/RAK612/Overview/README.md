@@ -11,7 +11,7 @@ tags:
 
 # RAK612 WisNode Button
 
-Thank you for choosing **RAK612  WisNode Button** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK612  WisNode Button** in your awesome IoT project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [AT Command Manual](../AT-Command-Manual/)
@@ -35,5 +35,5 @@ The RAK612 WisNode Button is suitable for a variety of Smart Home applications: 
 - **Battery:** 300&nbsp;mAh
 - **Battery working time:** 2 years (Rechargeable)
 - **Power Consumption:** Transmit: 30&nbsp;mA, Standby: 10&nbsp;uA
-- **Operating Temperature:** -20&nbsp;°C to 60&nbsp;°C
+- **Operating Temperature:** -20°&nbsp;C to 60°&nbsp;C
 - **Working Environment:** Indoor

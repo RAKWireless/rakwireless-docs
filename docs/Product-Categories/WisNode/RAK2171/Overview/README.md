@@ -11,7 +11,7 @@ tags:
 
 # RAK2171 WisNode TrackIt 
 
-Thank you for choosing **RAK2171 WisNode TrackIt** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK2171 WisNode TrackIt** in your awesome IoT project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Helium + Datacake Guide](../Helium-Datacake/)
@@ -30,8 +30,8 @@ RAK2171 supports multiple working modes and notification options. When used with
 - Built-in accelerometer
 - Built-in battery: 400&nbsp;mAh
 - Charger with a magnetic plate
-- Small size: 42x42x18&nbsp;mm
+- Small size: 42 x 42 x 18&nbsp;mm
 - Low weight: 25&nbsp;g
-- Operating temperature: -20&nbsp;°C to +60&nbsp;°C
+- Operating temperature: -20°&nbsp;C to +60°&nbsp;C
 - IP65 rating
 - Android and iOS application for easy management, configuration, and location tracking

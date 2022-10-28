@@ -48,7 +48,7 @@ RAK10701-P Field Tester for LoRaWAN with the external antenna.
 
 ### Hardware
 
-The hardware specification is categorized into five parts. It shows the interfacing of the tracker. It also covers the rf, antennas, electrical, environmental, and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK10701-P Field Tester for LoRaWAN.
+The hardware specification is categorized into five (5) parts. It shows the interfacing of the tracker. It also covers the rf, antennas, electrical, environmental, and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK10701-P Field Tester for LoRaWAN.
 
 #### Interfaces
 
@@ -73,7 +73,7 @@ You can interact with the device and check the data needed on your LoRaWAN netwo
 />
 
 :::tip 📝 NOTE
-Complete details on different pages of the screens are discussed in the [RAK10701-L Quick Start Guide](/Product-Categories/WisNode/RAK10701-L/Quickstart/).
+The complete details on different pages of the screens are discussed in the [RAK10701-L Quick Start Guide](/Product-Categories/WisNode/RAK10701-L/Quickstart/).
 :::
 
 ##### External Button
@@ -90,10 +90,6 @@ There is one external button on RAK10701 which can be used in various scenarios.
   caption="RAK10701-L useable button"
 />
 
-:::tip 📝 NOTE
-Complete details on different pages of the screens are discussed in the [RAK10701-P Quick Start Guide](/Product-Categories/WisNode/RAK10701/Quickstart/).
-:::
-
 ##### Antenna RP-SMA Connector
 
 On top of the RAK10701-P Field Tester for LoRaWAN is an RP-SMA port for the external antenna.
@@ -104,20 +100,13 @@ On top of the RAK10701-P Field Tester for LoRaWAN is an RP-SMA port for the exte
   caption="RAK10701-P RP-SMA antenna port"
 />
 
-There are two antennas included in the RAK10701-P one with 2.0dBi gain:
+There are two antennas included in the RAK10701-P, one with 2.0&nbsp;dBi gain:
 
 <rk-img
   src="/assets/images/wisnode/rak10701/datasheet/2-dbi-antenna.png"
   width="30%"
   caption="2.0 dBi antenna"
 />
-
-:::tip 📝 NOTE
-Detailed information about the LoRa antenna can be found on the datasheet:
-
-- [9xx Mhz Antenna](https://downloads.rakwireless.com/Accessories/Antenna/SMA-Antenna/RPSMA-J-915MHz_LoRa_Antenna_Specifications.pdf)
-- [8xx Mhz Antenna](https://downloads.rakwireless.com/Accessories/Antenna/SMA-Antenna/RPSMA-J-868MHz_LoRa_Antenna_Specifications.pdf)
-:::
 
 Then, another one with 2.3&nbsp;dBi gain.
 
@@ -130,8 +119,8 @@ Then, another one with 2.3&nbsp;dBi gain.
 :::tip 📝 NOTE
 Detailed information about the LoRa antenna can be found on the datasheet:
 
-- [9xx Mhz Antenna](https://docs.rakwireless.com/Product-Categories/Accessories/RAKARJ16/Overview/)
-- [8xx Mhz Antenna](https://docs.rakwireless.com/Product-Categories/Accessories/RAKARJ17/Overview/)
+- [9xx MHz Antenna](https://docs.rakwireless.com/Product-Categories/Accessories/RAKARJ16/Overview/)
+- [8xx MHz Antenna](https://docs.rakwireless.com/Product-Categories/Accessories/RAKARJ17/Overview/)
 :::
 
 ##### USB Type-C for Charging and WisToolBox Configuration
@@ -184,10 +173,10 @@ The RAK10701-P Field Tester for LoRaWAN is equipped with a built-in rechargeable
 
 The table below lists the operation and storage temperature requirements.
 
-| Parameter             | Min.       | Typical     | Max.        |
-| --------------------- | ---------- | ----------- | ----------- |
-| Storage Temp. Range   | -40&nbsp;C | +25&nbsp;°C | +80&nbsp;°C |
-| Operation Temp. Range | -10&nbsp;C | +25&nbsp;°C | +60&nbsp;°C |
+| Parameter             | Min.        | Typical     | Max.        |
+| --------------------- | ----------- | ----------- | ----------- |
+| Storage Temp. Range   | -40°&nbsp;C | +25°&nbsp;C | +80°&nbsp;C |
+| Operation Temp. Range | -10°&nbsp;C | +25°&nbsp;C | +60°&nbsp;C |
 
 #### Mechanical Characteristics
 
@@ -198,6 +187,7 @@ The table below lists the operation and storage temperature requirements.
 
 Download the latest firmware version of RAK10701-P in the table provided below.
 
-| Model                              | Version | Firmware                                                          |
-| ---------------------------------- | ------- | ----------------------------------------------------------------- |
-| RAK10701- Field Tester for LoRaWAN | V1.0.2  | [Download](https://downloads.rakwireless.com/LoRa/RAK10701/beta/) |
+| Model                                      | Version | Firmware                                                              |
+| ------------------------------------------ | ------- | --------------------------------------------------------------------- |
+| RAK10701 - Field Tester for LoRaWAN | V1.0.6  | [Download](https://downloads.rakwireless.com/LoRa/RAK10701/Firmware/RAK10701_L_P_Latest_Firmware.zip) |
+

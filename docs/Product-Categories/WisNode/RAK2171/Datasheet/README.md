@@ -28,9 +28,9 @@ certifications:
 
 ### Description
 
-**RAK2171 WisNode TrackIt** is RAKwireless’ latest LoRaWAN GPS tracking device. It comes in a small form factor with rechargeable battery and tracking and configuration application, available for iOS and Android devices. 
+**RAK2171 WisNode TrackIt** is RAKwireless’ latest LoRaWAN GPS tracking device. It comes in a small form factor with rechargeable battery and tracking and configuration application, available for iOS and Android devices.
 
-RAK2171 supports multiple working modes and notification options. When used with RAK WisGate Edge gateways and in P2P mode, you can monitor your tracker on the application map, create geofences, and receive SOS and movement notifications. You can also configure the WisNode TrackIt to work with any third-party LoRaWAN network using the TrackIt application as a configuration tool. 
+RAK2171 supports multiple working modes and notification options. When used with RAK WisGate Edge gateways and in P2P mode, you can monitor your tracker on the application map, create geofences, and receive SOS and movement notifications. You can also configure the WisNode TrackIt to work with any third-party LoRaWAN network using the TrackIt application as a configuration tool.
 
 ### Features
 
@@ -39,9 +39,9 @@ RAK2171 supports multiple working modes and notification options. When used with
 - Built-in accelerometer
 - Built-in battery: 400&nbsp;mAh
 - Charger with a magnetic plate
-- Small size: 42x42x18&nbsp;mm
+- Small size: 42 x 42 x 18&nbsp;mm
 - Low weight: 25&nbsp;g
-- Operating temperature: -20&nbsp;°C to +60&nbsp;°C
+- Operating temperature: -20°&nbsp;C to +60°&nbsp;C
 - IP65 rating
 - Android and iOS application for easy management, configuration, and location tracking
 
@@ -50,7 +50,7 @@ RAK2171 supports multiple working modes and notification options. When used with
 
 ### Overview
 
-#### Board Overview 
+#### Board Overview
 
 <rk-img
   src="/assets/images/wisnode/rak2171/datasheet/dimensions.png"
@@ -61,9 +61,9 @@ RAK2171 supports multiple working modes and notification options. When used with
 
 | Parameter             | Value                                                              |
 | --------------------- | ------------------------------------------------------------------ |
-| Dimensions            | 42x42x18&nbsp;mm                                                   |
+| Dimensions            | 42 x 42 x 18&nbsp;mm                                               |
 | Weight                | 25&nbsp;g                                                          |
-| Operating temperature | -20&nbsp;°C to +60&nbsp;°C                                         |
+| Operating temperature | -20°&nbsp;C to +60°&nbsp;C                                         |
 | Battery capacity      | 400&nbsp;mAh                                                       |
 | Color                 | Tracker: White / Dark Grey <br> Charger: Black                     |
 | Charger               | 5-pin Magnetic Plate <br> USB Type-A <br> Cable Length: 50&nbsp;cm |
@@ -71,7 +71,7 @@ RAK2171 supports multiple working modes and notification options. When used with
 
 ### Hardware
 
-The hardware specification is categorized into five parts. It covers the interfacing and the standard values and requirements, such as the RF, electrical, and environmental of the RAK2171 WisNode TrackIt. 
+The hardware specification is categorized into five (5) parts. It covers the interfacing and the standard values and requirements, such as the RF, electrical, and environmental of the RAK2171 WisNode TrackIt.
 
 #### Interfaces
 <rk-img
@@ -92,16 +92,16 @@ The hardware specification is categorized into five parts. It covers the interfa
 
 * **Power/SOS Button** - Used for powering on/off the device and sending SOS signals.
 
-| Press combination            | Function                     | LED color               |
+| Press Combination            | Function                     | LED Color               |
 | ---------------------------- | ---------------------------- | ----------------------- |
 | Press and hold for 3 seconds | Power on/off                 | Red light for 3 seconds |
 | 5 consecutively clicks       | Sends SOS message to the app | Red flash on            |
 | 5 consecutively clicks again | Cancel SOS message           | Red flash off           |
 
-* **Charging Interface** - The device has 3 pins charging port on the back that connects to the magnetic charging plate. 
+* **Charging Interface** - The device has 3 pins charging port on the back that connects to the magnetic charging plate.
 
 :::tip 📝 NOTE:
-Use the original charging plate and cable only.   
+Use the original charging plate and cable only.
 :::
 
 #### RF Characteristics
@@ -127,8 +127,8 @@ The RAK2172 WisNode TrackIt has built-in LoRaWAN, GPS, and Bluetooth antennas.
 
 | Parameter             | Value                      |
 | --------------------- | -------------------------- |
-| Charging temperature  | +10&nbsp;°C to +45&nbsp;°C |
-| Operating temperature | -20&nbsp;°C to +60&nbsp;°C |
+| Charging temperature  | +10°&nbsp;C to +45°&nbsp;C |
+| Operating temperature | -20°&nbsp;C to +60°&nbsp;C |
 
 ### Software
 

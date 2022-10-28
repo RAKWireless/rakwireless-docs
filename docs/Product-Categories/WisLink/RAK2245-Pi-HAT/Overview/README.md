@@ -11,7 +11,7 @@ tags:
 
 # RAK2245 Pi HAT WisLink LPWAN Concentrator
 
-Thank you for choosing **RAK2245 Pi HAT WisLink LPWAN Concentrator** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK2245 Pi HAT WisLink LPWAN Concentrator** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -39,14 +39,13 @@ The RAK2245 Pi HAT is a complete and cost efficient gateway solution that can he
 
 ## Product Features
 
-- Compatible with Raspberry Pi 3 Model B+ edition.
-- Integrated Ublox MAX-7Q GPS Module and heat sink.
-- SX1301 base band processor, emulates 49 x LoRa demodulators, 10 parallel
-  demodulation paths, supports 8 uplink / 1 downlink channels.
-- 2 units of SX125x Tx/Rx front-ends for high/ low frequency.
-- Supports 5V power supply, integrated level conversion circuit.
-- TX power up to 27dBm, RX sensitivity down to -139dBm@SF12, BW 125KHz.
-- Supports latest LoRaWAN 1.0.2 protocol.
-- Supports global license-free frequency band (EU433, CN470, EU868, US915, AS923, AU915, KR920 and IN86).
-- Supports SPI, UART, I2C interface.
+- Compatible with Raspberry Pi 3 Model B+ edition
+- Integrated Ublox MAX-7Q GPS Module and heat sink
+- SX1301 base band processor, emulates 49 x LoRa demodulators, 10 parallel demodulation paths, supports 8 uplink / 1 downlink channels
+- Two (2) units of SX125x Tx/Rx front-ends for high/ low frequency
+- Supports 5&nbsp;V power supply, integrated level conversion circuit
+- TX power up to 27&nbsp;dBm, RX sensitivity down to -139&nbsp;dBm @ SF12, BW 125&nbsp;KHz
+- Supports latest LoRaWAN 1.0.2 protocol
+- Supports global license-free frequency band (EU433, CN470, EU868, US915, AS923, AU915, KR920 and IN86)
+- Supports SPI, UART, I2C interface
 

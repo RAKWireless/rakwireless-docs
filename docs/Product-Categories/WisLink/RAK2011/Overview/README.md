@@ -11,7 +11,7 @@ tags:
 
 # RAK2011 WisLink Cellular BG96 Arduino Shield
 
-Thank you for choosing **RAK2011 WisLink Cellular BG96 Arduino Shield** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK2011 WisLink Cellular BG96 Arduino Shield** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 

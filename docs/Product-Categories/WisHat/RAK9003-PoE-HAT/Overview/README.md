@@ -11,7 +11,7 @@ tags:
 ---
 
 # RAK9003 PoE Pi HAT
-Thank you for choosing **RAK9003 PoE Pi HAT** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK9003 PoE Pi HAT** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 * [RAK9003 PoE Pi HAT 3D Model](https://downloads.rakwireless.com/3D_File/WisHat/PWB-RAK9003_POE_HAT.stp)
@@ -23,21 +23,21 @@ Thank you for choosing **RAK9003 PoE Pi HAT** in your awesome IoT Project! 🎉 
 
 The PoE Pi HAT is an add-on board with a Raspberry PI form factor, compatible with RPi 3B+ and RPi4 which can be plugged into a Raspberry Pi directly. The PoE Pi HAT makes it possible to power the Raspberry Pi via a standard CAT 5 Ethernet cable.
 
-The PoE Pi HAT is designed to be compatible with the IEEE 802.3af/at Power-over-Ethernet (PoE), it is compatible with both PoE Mode A and Mode B. The PoE Pi HAT signature and control circuit provides the PoE AT compatibility signature and power classification required by the Power Sourcing Equipment (PSE) before applying up to 30W power to the port. The PoE Pi HAT is compatible with Class 0 to Class 4 equipment. The high efficiency DC/DC converter operates over a wide input voltage range and provides a regulated low ripple and low noise output. The DC/DC converter also has built-in overload and short-circuit output protection.
+The PoE Pi HAT is designed to be compatible with the IEEE 802.3af/at Power-over-Ethernet (PoE). It is compatible with both PoE Mode A and Mode B. The PoE Pi HAT signature and control circuit provides the PoE AT compatibility signature and power classification required by the Power Sourcing Equipment (PSE) before applying up to 30&nbsp;W power to the port. The PoE Pi HAT is compatible with Class 0 to Class 4 equipment. The high efficiency DC/DC converter operates over a wide input voltage range and provides a regulated low ripple and low noise output. The DC/DC converter also has built-in overload and short-circuit output protection.
 
 
 
 
 ## Product Features
 
-- Raspberry Pi form factor with a 40pin compatible header (**Pi3 B+, Pi4** compatible)
-- Conforming to the IEEE 802.3af/at (mode A & mode B), **25W Max Load**.
-- Contains physical layer power negotiation circuitry, compatible with **Class 0 to Class 4 equipment**.
-- Wide operating voltage: **42V ~ 57V**.
-- Output Current: **5V@5A**
-- Output voltage ripple: **200mVPP.**
-- High Efficiency: **83% (input 48V, 5V@5A).**
-- High isolation: **1.5KV isolation** input to output.
-- **Overcurrent / short-circuit** protection.
-- **RoHS Compliant**.
-- Operating Temperature: **-40 ℃ ～+85 ℃.**
+- Raspberry Pi form factor with a 40-pin compatible header (**Pi3 B+, Pi4** compatible)
+- Conforming to the IEEE 802.3af/at (mode A & mode B), **25&nbsp;W max load**
+- Contains physical layer power negotiation circuitry, compatible with **Class 0 to Class 4 equipment**
+- Wide operating voltage: **42&nbsp;V ~ 57&nbsp;V**
+- Output Current: **5&nbsp;V @ 5&nbsp;A**
+- Output voltage ripple: **200&nbsp;mVPP**
+- High Efficiency: **83% (input 48&nbsp;V, 5&nbsp;V @ 5&nbsp;A)**
+- High isolation: **1.5&nbsp;kV isolation** input to output
+- **Overcurrent / short-circuit** protection
+- **RoHS Compliant**
+- Operating Temperature: **-40°&nbsp;C ～+85°&nbsp;C**

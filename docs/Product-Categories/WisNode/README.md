@@ -34,6 +34,18 @@ These are nodes integrating one or more sensors designed to collect data. Temper
 
 <rk-products :tags="['wisnode', 'sense']" />
 
+
+## WisNode Sensor Hub
+
+<rk-head img="/assets/rakwireless/product-categories/WisNode.png">
+
+Connect your sensor network with the plug-and-play setup of Sensor Hub. It is a modular sensor ecosystem that offers intelligent probes for multiple applications, from managing complex office blocks or factories to monitoring large areas of farmland.
+
+
+</rk-head>
+
+<rk-products :tags="['wisnode', 'sensorhub']" />
+
 ## WisNode Button
 
 <rk-head img="/assets/rakwireless/product-categories/WisNode-Button.svg">

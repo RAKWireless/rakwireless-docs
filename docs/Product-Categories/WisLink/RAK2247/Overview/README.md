@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wislink-lora/rak2247/quickstart/1.main/RAK2247_home.png
-rak_desc: RAK2247 is functional to any embedded platform offering a mini-PCIe slot with an SPI or USB connection. This enables easy integration into routers and other networking equipment. Also, it offers maximum power transmission for a wider LoRaWAN network coverage. 
+rak_desc: RAK2247 is functional to any embedded platform offering a mini-PCIe slot with an SPI or USB connection. This enables easy integration into routers and other networking equipment. Also, it offers maximum power transmission for a wider LoRaWAN network coverage.
 rak_grp: [wislink, lpwan]
 prev: ../../
 next: ../Quickstart/
@@ -10,7 +10,7 @@ tags:
 ---
 
 # RAK2247 WisLink LPWAN Concentrator
-Thank you for choosing **RAK2247 WisLink LPWAN Concentrator** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK2247 WisLink LPWAN Concentrator** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -26,7 +26,7 @@ RAK2247 supports development based on multiple platforms, you can choose suitabl
 * **RAK2247 USB + x86 PC**
   * [Source Code Repository](https://github.com/RAKWireless/rak_common_for_gateway)
   * [Quick Start Guide](/Product-Categories/WisLink/RAK2247/Quickstart/#rak2247-x86-linux-pc)
-* **RAK2247 USB/SPI + OrangePI(Allwinner H6 CPU based)** 
+* **RAK2247 USB/SPI + OrangePI(Allwinner H6 CPU based)**
   * [Source Code Repository](https://github.com/RAKWireless/rak_gateway_for_OrangePi3)
 * **RAK2247 USB/SPI + OpenWRT(MT7628 CPU Based)**
   * [RAK2247 USB + OpenWRT Source Code Repository](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/MT7628-Firmware/RAK2247%26RAK833-USB-openwrt-ramips-mt7628.rar)
@@ -38,7 +38,7 @@ RAK2247 supports development based on multiple platforms, you can choose suitabl
   * [Debian Quickstart](https://github.com/RAKWireless/RAK833-LoRaGateway-SolidRun-Debian)
 
 :::tip 📝 NOTE
-To address the chip shortage and not disrupt our customers' and partners' operations, the RAK2247 SPI is available with SX1308 core.  It can completely replace the RAK2247 with SX1301. The only difference is the operating temperature. For more information, check the [RAK2247 Operating Conditions](../Datasheet/#operating-conditions)
+To address the chip shortage and not disrupt the operations of the customers and partners, the RAK2247 SPI is available with SX1308 core.  It can completely replace the RAK2247 with SX1301. The only difference is the operating temperature. For more information, check the [RAK2247 Operating Conditions](../Datasheet/#operating-conditions).
 :::
 ## Product Description
 
@@ -48,10 +48,10 @@ Despite its small size, this is an 8 channel concentrator module. By integrating
 
 ## Product Features
 
-- Mini PCIe form factor, mounted heat-sink.
-- SX1301 base band processor emulates 49 x LoRa demodulators, 10 parallel demodulation paths. It supports 8 uplinks channels and 1 downlink channel.
-- 2 x SX125x Tx/Rx front-ends high/low frequency.
-- Built-in FT2232H for SPI to USB 2.0 conversion (optional).
-- Operates at 3.3 V, making it compatible with standard 3G/LTE card slots of Mini PCI-e type.
-- Tx power up to 27 dBm, Rx sensitivity down to -139 dBm @ SF12, BW 125 kHz.
-- Supports global license-free frequency band (EU433, CN470, IN865, EU868, US915, AU915, KR920,  and AS923).
+- Mini PCIe form factor, mounted heat-sink
+- SX1301 base band processor emulates 49 x LoRa demodulators, 10 parallel demodulation paths. It supports 8 uplinks channels and 1 downlink channel
+- 2 x SX125x Tx/Rx front-ends high/low frequency
+- Built-in FT2232H for SPI to USB 2.0 conversion (optional)
+- Operates at 3.3&nbsp;V, making it compatible with standard 3G/LTE card slots of Mini PCI-e type
+- Tx power up to 27&nbsp;dBm, Rx sensitivity down to -139&nbsp;dBm @ SF12, BW 125&nbsp;kHz
+- Supports global license-free frequency band (EU433, CN470, IN865, EU868, US915, AU915, KR920,  and AS923)

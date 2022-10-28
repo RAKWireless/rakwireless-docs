@@ -18,7 +18,7 @@ tags:
 ### What do you need?
 Before going through each and every step in the installation guide of the RAK7204 WisNode Sense Home, make sure to prepare the necessary items listed below:
 
-1. **RAK7204 WisNode Sense Home**
+1. [**RAK7204 WisNode Sense Home**](https://store.rakwireless.com/products/rak7204-lpwan-environmental-node?utm_source=RAK7204WisNodeSense&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Micro USB Cable
 3. Gateway in Range, for Testing
 4. Windows PC
@@ -33,13 +33,13 @@ Before going through each and every step in the installation guide of the RAK720
 
 - 1pc - RAK7204 WisNode Sense Home
 - 1pc - LoRa Antenna
-- 1pc - 3500mAh Lithium Battery
+- 1pc - 3500&nbsp;mAh Lithium Battery
 
 ## Product Configuration
 
 ### Interfacing with the RAK7204 WisNode Sense Home
 
-In order for you to be able to interface with the RAK7204 WisNode Sense Home with your Windows Machine, you need to download the RAK Serial Port Tool **[here](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).**
+In order for you to be able to interface with the RAK7204 WisNode Sense Home with your Windows Machine, you need to download the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
 
 :::warning ⚠️ WARNING
 The included battery is **non rechargeable**. Please do note that when configuring the device, you have to connect the battery first in order for it to work.
@@ -93,13 +93,13 @@ If you didn't find any Port with the name Silicon Labs CP210x USB to UART Bridge
   caption="Connection Success"
 />
 
-### Connecting to Helium (The People's Network) 
+### Connecting to Helium (The People's Network)
 
-Helium has quickly become the most widespread LPWAN communal network with more than 27,000 devices deployed globally. All our node products are compatible with it and the process of adding a device to the network is intuitive and straightforward. 
+Helium has quickly become the most widespread LPWAN communal network with more than 27,000 devices deployed globally. All our node products are compatible with it and the process of adding a device to the network is intuitive and straightforward.
 
 This section will focus on giving a brief guide on how to connect the RAK7204 to the network console, assuming that there is a Helium Hotspot within range.
 
-Log in or create your account [here](https://www.helium.com/console):
+Log in or create your [Helium account](https://www.helium.com/console).
 
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/connecting-to-helium/1.png"
@@ -395,9 +395,9 @@ Your RAK7204 is now connected to the Built-in server and transmitting data over 
 
 ### Connecting to The Things Network V3 (TTNv3)
 
-At The Things Conference 2021, it was announced that The Things Network is upgrading to The Things Stack v3. 
+At The Things Conference 2021, it was announced that The Things Network is upgrading to The Things Stack v3.
 
-In this section, it will be shown how to connect RAK7204 WisNode Sense Home to The Things Stack. 
+In this section, it will be shown how to connect RAK7204 WisNode Sense Home to The Things Stack.
 
 First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud.thethings.network/console). If you already have a TTN account, you can use your The Things ID credentials to log in.
 
@@ -417,7 +417,7 @@ First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud
 
 
 :::tip 📝 NOTE:
-- To connect RAK7204 WisNode Sense Home to TTNv3, you should already have connected a gateway in range to TTNv2 or TTNv3, or you have to be sure that you are in the range of a public gateway. 
+- To connect RAK7204 WisNode Sense Home to TTNv3, you should already have connected a gateway in range to TTNv2 or TTNv3, or you have to be sure that you are in the range of a public gateway.
 
 - This tutorial is for EU868 Frequency band.
 :::
@@ -439,7 +439,7 @@ First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud
 
    - **Application ID** - This will be the unique ID of your application in the Network. ID must contain only lowercase letters, numbers, and dashes (-).
 
-   - **Application name** (optional) - This is the name of your application. 
+   - **Application name** (optional) - This is the name of your application.
 
    - **Description** (optional) – Description of your application. Optional application description; can also be used to save notes about the application.
 
@@ -464,7 +464,7 @@ First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud
 
 2. Below the **Register end device** heading, you can find two options for registering a device. Choose **Manually**.
     - For Activation mode, choose **Over the air activation (OTAA)**
-    - For the LoRaWAN version, choose **MAC V1.0.2** (RAK7204 is LoRaWAN 1.0.2 fully compliant). 
+    - For the LoRaWAN version, choose **MAC V1.0.2** (RAK7204 is LoRaWAN 1.0.2 fully compliant).
 
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/image006.png"
@@ -515,9 +515,9 @@ First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud
 
 - **Regional Parameters version** - The Regional Parameters specify frequency, dwell time, and other communication settings for different geographical areas. The Regional Parameters version is the version of the LoRa Alliance specification which your device supports. This should be provided by the device manufacturer in a datasheet. For this example, **PHY V1.0.2 REV B** is chosen.
 
-- **LoRaWAN class capabilities** – Here you can select if your device supports Class B, Class C, or both. 
+- **LoRaWAN class capabilities** – Here you can select if your device supports Class B, Class C, or both.
 
-7. In **Advanced settings**, you can configure additional settings for your device. 
+7. In **Advanced settings**, you can configure additional settings for your device.
 
     <rk-img
       src="/assets/images/wisnode/rak7204/quickstart/5.connecting-to-ttn/image009.png"
@@ -589,7 +589,7 @@ at+set_config=lora:join_mode:0
 at+set_config=lora:class:0
 ```
 
-- For the region: 
+- For the region:
 
 ```
 at+set_config=lora:region:EU868
@@ -613,7 +613,7 @@ The following tutorial is based on using the EU868 frequency band.
 
 
 ```
-at+set_config=lora:app_key:XXXX  
+at+set_config=lora:app_key:XXXX
 ```
 
 <rk-img
@@ -625,7 +625,7 @@ at+set_config=lora:app_key:XXXX
 4. Finally, execute the join command:
 
 ```
-at+join  
+at+join
 ```
 
 <rk-img
@@ -645,7 +645,7 @@ If you get a response in the **Live data** feed in The Things Stack, it means yo
 
 ### Connecting to ChirpStack
 
-The ChirpStack or previously known as LoRaServer project provides open-source components for building LoRaWAN networks. You can learn more about ChirpStack [**here**](https://www.chirpstack.io/).
+The ChirpStack or previously known as LoRaServer project provides open-source components for building LoRaWAN networks. Learn more about [ChirpStack](https://www.chirpstack.io/).
 
 You can use RAK7204 WisNode Sense Home to connect with ChirpStack according to the following steps:
 
@@ -945,49 +945,49 @@ Now lets analyze each data , which is in Hexadecimal Format. We will be using th
 />
 
 ##### 1. Battery Voltage
-| Parameter | Hex Data | Decimal Equivalent | Multiplier | True Value | 
-| ---- | ---- | ---- | ---- | ---- | 
-| Data flag | 08 02 |  |  |  | 
-| Battery Voltage | 01 67 | 355 | 0.01 Signed | 3.55 V | 
+| Parameter | Hex Data | Decimal Equivalent | Multiplier | True Value |
+| ---- | ---- | ---- | ---- | ---- |
+| Data flag | 08 02 |  |  |  |
+| Battery Voltage | 01 67 | 355 | 0.01 Signed | 3.55 V |
 
 ##### 2. Humidity Data
 
 Example Data: **07 68 4B**
 
-| Parameter | Hex Data | Decimal Equivalent | Multiplier | True Value | 
-| ---- | ---- | ---- | ---- | ---- | 
-| Data flag | 07 68 |  |  |  | 
-| Humidity | 4B | 75 | 0.5 % Unsigned | 37.5 % RH | 
+| Parameter | Hex Data | Decimal Equivalent | Multiplier | True Value |
+| ---- | ---- | ---- | ---- | ---- |
+| Data flag | 07 68 |  |  |  |
+| Humidity | 4B | 75 | 0.5 % Unsigned | 37.5 % RH |
 
 
 ##### 3. Pressure Data
 
 Example Data: **06 73 25 9E**
 
-| Parameter | Hex Data | Decimal Equivalent | Multiplier | True Value | 
-| ---- | ---- | ---- | ---- | ---- | 
-| Data flag | 06 73 |  |  |  | 
-| Pressure | 25 9E | 9630 | 0.1 hPa Unsigned MSB | 963.0 hPa | 
+| Parameter | Hex Data | Decimal Equivalent | Multiplier | True Value |
+| ---- | ---- | ---- | ---- | ---- |
+| Data flag | 06 73 |  |  |  |
+| Pressure | 25 9E | 9630 | 0.1 hPa Unsigned MSB | 963.0 hPa |
 
 
 ##### 4. Temperature Data
 
 Example Data:  **02 67 01 15**
 
-| Parameter | Hex Data | Decimal Equivalent | Multiplier | True Value | 
-| ---- | ---- | ---- | ---- | ---- | 
-| Data flag | 02 67 |  |  |  | 
-| Temperature | 01 15 | 277 | 0.1 °C Signed MSB | 27.7℃ | 
+| Parameter | Hex Data | Decimal Equivalent | Multiplier | True Value |
+| ---- | ---- | ---- | ---- | ---- |
+| Data flag | 02 67 |  |  |  |
+| Temperature | 01 15 | 277 | 0.1 °C Signed MSB | 27.7℃ |
 
 
 ##### 5. Gas Resistance Data
 
 Example Data: **04 02 22 72**
 
-| Parameter | Hex Data | Decimal Equivalent | Multiplier | True Value | 
-| ---- | ---- | ---- | ---- | ---- | 
-| Data flag | 04 02 |  |  |  | 
-| Gas Resistance | 22 72 | 8818 | 0.01 kΩ Signed | 88.18 kΩ | 
+| Parameter | Hex Data | Decimal Equivalent | Multiplier | True Value |
+| ---- | ---- | ---- | ---- | ---- |
+| Data flag | 04 02 |  |  |  |
+| Gas Resistance | 22 72 | 8818 | 0.01 kΩ Signed | 88.18 kΩ |
 
 For further details about the LPP format, you can take a look at this **[link.](https://developers.mydevices.com/cayenne/docs/lora/#lora-cayenne-low-power-payload-overview)**
 
@@ -1401,7 +1401,7 @@ You can open the ADR feature of RAK7204 WisNode Sense Home by using the followin
 at+set_config=lora:adr:1
 ```
 
-or you can close the ADR feature of RAK7204 WisNode Sense Home by using this AT command: 
+or you can close the ADR feature of RAK7204 WisNode Sense Home by using this AT command:
 
 ```sh
 at+set_config=lora:adr:0
@@ -1409,11 +1409,11 @@ at+set_config=lora:adr:0
 
 There is also an AT command which is used to set the DataRate(DR):
 
-| AT Command | Description | 
-| ---- | ---- | 
-| `at+set_config=lora:dr:X` | Set the DR of LoRa Node. <br>**• X** : the number of DR. Generally, the value of X can be 0~5. More details, please check the LoRaWAN 1.0.2 specification. | 
+| AT Command | Description |
+| ---- | ---- |
+| `at+set_config=lora:dr:X` | Set the DR of LoRa Node. <br>**• X** : the number of DR. Generally, the value of X can be 0~5. More details, please check the LoRaWAN 1.0.2 specification. |
 
-For example, if you want to set the current DR to DR0, you just do as follow: 
+For example, if you want to set the current DR to DR0, you just do as follow:
 ```sh
 at+set_config=lora:dr:0
 ```
@@ -1482,7 +1482,7 @@ You can burn the bootloader in your RAK7204 WisNode Sense Home by following the 
 
 Now that you have successfully connected your RAK7204 WisNode Sense Home to the STM32CubeProgrammer Tool, let's burn the Bootloader into the RAK7204 WisNode Sense Home.
 
-6. Download the Bootloader for the RAK7204 WisNode Sense Home **[here](https://downloads.rakwireless.com/en/LoRa/RAK7204/Firmware/)**.
+6. Download the bootloader for the [RAK7204 WisNode Sense Home](https://downloads.rakwireless.com/en/LoRa/RAK7204/Firmware/).
 
 7. In the STM32CubeProgrammer, Click the "Erase Chip" button to erase all the data on RAK7204 WisNode Sense Home:
 
@@ -1500,7 +1500,7 @@ Now that you have successfully connected your RAK7204 WisNode Sense Home to the 
   caption="Opening the Bootloader file"
 />
 
-9. Click the "Download" Button to start the burning process:
+9. Click the "Download" Button to start the burning process.
 
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/9.burning-bootloader/f4g4duloizbd9hmdodph.jpg"
@@ -1526,7 +1526,7 @@ Now that you have successfully connected your RAK7204 WisNode Sense Home to the 
 
 If the firmware version of your **RAK7204 WisNode Sense Home**  is newer than V3.0.0.0 or you have just burned the bootloader into the board according to the **Burning the Bootloader** section, follow the steps below
 
-- Make sure you have set your RAK7204 WisNode Sense Home to work in boot mode. If you have just burned the bootloader according to the previous section, it works in boot mode now. 
+- Make sure you have set your RAK7204 WisNode Sense Home to work in boot mode. If you have just burned the bootloader according to the previous section, it works in boot mode now.
 - Open and download the RAK Serial Port Tool [Here](https://downloads.rakwireless.com/en/LoRa/WisTrio-LoRa-RAK5205/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip) and Connect your board via the USB interface and enter the following **AT command** to let it work in boot mode.
 
 :::warning ⚠️ WARNING

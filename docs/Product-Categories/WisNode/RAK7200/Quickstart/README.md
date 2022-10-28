@@ -32,13 +32,13 @@ Before going through each and every step in the installation guide of the RAK720
 
 #### List of Acronyms
 
-| Acronyms | Definition |
-| -------- | ---------- |
-|   BLE    | Bluetooth Low Energy |
-|   DFU    | Device Firmware Upgrade |
-|   LoRa   | Long Range  |
-|   EUI    | Electronic Unique Identifier |
-|   TTN    | The Things Network|
+| Acronyms | Definition                   |
+| -------- | ---------------------------- |
+| BLE      | Bluetooth Low Energy         |
+| DFU      | Device Firmware Upgrade      |
+| LoRa     | Long Range                   |
+| EUI      | Electronic Unique Identifier |
+| TTN      | The Things Network           |
 
 ### What's Included in the Package
 
@@ -52,11 +52,11 @@ Before going through each and every step in the installation guide of the RAK720
 
 ### Interfacing with RAK7200
 
-To interface with the RAK7200 WisNode Track Lite with your Windows Machine, you need to have a serial too. Any serial tool will work, but it is recommended to use the  [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
+To interface with the RAK7200 WisNode Track Lite with your Windows Machine, you need to have a serial too. Any serial tool will work, but it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
 
 #### Connecting to the RAK7200
 
-Once done, follow the listed steps to interface your RAK7200 with your computer. 
+Once done, follow the listed steps to interface your RAK7200 with your computer.
 
 1. Connect the RAK7200 to the USB port of a general-purpose computer using a standard **Micro - USB Cable**.
 
@@ -99,7 +99,7 @@ If this is your first time to connect your RAK7200 WisNode Track Lite to your co
 />
 
 ::: tip 📝 NOTE
-In case the driver is still not installed upon doing the previous steps, download the driver manually through this [link](https://downloads.rakwireless.com/en/LoRa/RAK811/Tools/).
+In case the driver is still not installed upon doing the previous steps, download the driver manually at [RAK downloads center](https://downloads.rakwireless.com/en/LoRa/RAK811/Tools/).
 :::
 
 5. Test if your RAK7200 WisNode Track Lite can now communicate with the RAK Serial Port Tool. Configure the serial communication tool by selecting the proper port and configure the link as listed below and then click "**Open**".
@@ -116,7 +116,7 @@ In case the driver is still not installed upon doing the previous steps, downloa
   caption="Connecting to the RAK Serial Port Tool"
 />
 
-6. Verify the connectivity by sending an AT Command. In the RAK Serial Port Tool, there are built-in AT+Commands within it at the right side. Send the following command to check the firmware version of your RAK7200 WisNode Track Lite. If connection is successful, the firmware version should appear same with Figure 6 below:
+5. Verify the connectivity by sending an AT Command. In the RAK Serial Port Tool, there are built-in AT+Commands within it at the right side. Send the following command to check the firmware version of your RAK7200 WisNode Track Lite. If connection is successful, the firmware version should appear same with **Figure 6**:
 
 
 ```sh
@@ -247,9 +247,9 @@ If you take a look at the Helium console, you will also see the join request pac
 
 ### Connecting to The Things Network V3 (TTNv3)
 
-At The Things Conference 2021, it was announced that The Things Network is upgrading to The Things Stack v3. 
+At The Things Conference 2021, it was announced that The Things Network is upgrading to The Things Stack v3.
 
-In this section, it will be shown how to connect RAK7200 WisNode Track Lite to The Things Stack. 
+In this section, it will be shown how to connect RAK7200 WisNode Track Lite to The Things Stack.
 
 First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud.thethings.network/console). If you already have a TTN account, you can use your The Things ID credentials to log in.
 
@@ -267,7 +267,7 @@ First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud
 
 
 :::tip 📝 NOTE:
-- To connect RAK7200 WisNode Track Lite to TTNv3, you should already have connected a gateway in range to TTNv2 or TTNv3, or you have to be sure that you are in the range of a public gateway. 
+- To connect RAK7200 WisNode Track Lite to TTNv3, you should already have connected a gateway in range to TTNv2 or TTNv3, or you have to be sure that you are in the range of a public gateway.
 
 - This tutorial is for EU868 Frequency band.
 :::
@@ -289,7 +289,7 @@ First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud
 
    - **Application ID** - This will be the unique ID of your application in the Network. ID must contain only lowercase letters, numbers, and dashes (-).
 
-   - **Application name** (optional) - This is the name of your application. 
+   - **Application name** (optional) - This is the name of your application.
 
    - **Description** (optional) – Description of your application. Optional application description; can also be used to save notes about the application.
 
@@ -314,7 +314,7 @@ First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud
 
 2. Below the **Register end device** heading, you can find two options for registering a device. Choose **Manually**.
     - For Activation mode, choose **Over the air activation (OTAA)**
-    - For the LoRaWAN version, choose **MAC V1.0.2** (RAK7200 is LoRaWAN 1.0.2 fully compliant). 
+    - For the LoRaWAN version, choose **MAC V1.0.2** (RAK7200 is LoRaWAN 1.0.2 fully compliant).
 
 
 <rk-img
@@ -369,9 +369,9 @@ First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud
 
 - **Regional Parameters version** - The Regional Parameters specify frequency, dwell time, and other communication settings for different geographical areas. The Regional Parameters version is the version of the LoRa Alliance specification which your device supports. This should be provided by the device manufacturer in a datasheet. For this example, **PHY V1.0.2 REV A** is chosen.
 
-- **LoRaWAN class capabilities** – Here you can select if your device supports Class B, Class C, or both. 
+- **LoRaWAN class capabilities** – Here you can select if your device supports Class B, Class C, or both.
 
-7. In **Advanced settings**, you can configure additional settings for your device. 
+7. In **Advanced settings**, you can configure additional settings for your device.
 
     <rk-img
       src="/assets/images/wisnode/rak7200/quickstart/connecting-to-ttn/image009.png"
@@ -443,7 +443,7 @@ at+set_config=lora:join_mode:0
 at+set_config=lora:class:0
 ```
 
-- For the region: 
+- For the region:
 
 ```
 at+set_config=lora:region:EU868
@@ -467,7 +467,7 @@ The following tutorial is based on using the EU868 frequency band.
 3. Now that those parameters are set, enter the **App Key**, using the command below. Remember to replace the **"XXXX"** with the corresponding parameter value for your particular case.
 
 ```
-at+set_config=lora:app_key:XXXX  
+at+set_config=lora:app_key:XXXX
 ```
 
 <rk-img
@@ -479,7 +479,7 @@ at+set_config=lora:app_key:XXXX
 4. Finally, execute the join command:
 
 ```
-at+join  
+at+join
 ```
 
 <rk-img
@@ -514,22 +514,22 @@ In this document, it is assumed that you are using a RAK LoRa gateway, such as R
 
 :::
 
-You can provide your own Chirpstack deployment or use the one provided by RAK for testing purposes. RAK has enabled a set of LoRaServer on the cloud to support customers to test their RAK LoRa gateway or RAK LoRa node. Table below shows the IP address for the supported regions. Submit your request in the following URL to get an account and password. 
+You can provide your own Chirpstack deployment or use the one provided by RAK for testing purposes. RAK has enabled a set of LoRaServer on the cloud to support customers to test their RAK LoRa gateway or RAK LoRa node. Table below shows the IP address for the supported regions. Submit your request in the following URL to get an account and password.
 
   - [RAKwireless Forum](https://forum.rakwireless.com/t/rak-free-cloud-loraserver-for-testing/344/45)
 
 
-| Frequency | IP Address |
-| --------- | ---------- |
-| CN470 | 106.15.233.112 |
-| EU868 | 47.88.62.184 |
-| US915 | 106.15.239.64 |
-| AS923 | 47.101.11.150 |
-| IN865 | 139.155.10.119 |
+| Frequency | IP Address     |
+| --------- | -------------- |
+| CN470     | 106.15.233.112 |
+| EU868     | 47.88.62.184   |
+| US915     | 106.15.239.64  |
+| AS923     | 47.101.11.150  |
+| IN865     | 139.155.10.119 |
 
 In this section, you need the following requirements:
 
-  1. Have an account at the ChirpStack deployment provided by RAK. 
+  1. Have an account at the ChirpStack deployment provided by RAK.
   2. Have access to a LoRaWAN gateway registered at the RAK’s ChirpStack server.
   3. Serial Port Tool provided by RAK.
   4. RAK7200 module
@@ -538,11 +538,11 @@ Before you start, you must choose which mode you are going to use, whether in OT
 
 <b>Sign up and login</b>
 
-Request an account in the forum of RAK, then access to server assigned for your region with your username and password. 
+Request an account in the forum of RAK, then access to server assigned for your region with your username and password.
 
 #### Create a New Application
 
-Go to the Application section as shown in Figure 33.
+1. Go to the Application section as shown in **Figure 33**.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/connecting-to-chirpstack/35.application-section.png"
@@ -550,7 +550,7 @@ Go to the Application section as shown in Figure 33.
   caption="Application Section of ChirpStack LoRaServer"
 />
 
-By default, you should create a new Application, although you can reuse the existing ones. For this setup, create a new Application by clicking on the “**CREATE**” button, and fill the required parameters as shown in Figures 34 and 35.
+2. By default, you should create a new Application, although you can reuse the existing ones. For this setup, create a new Application by clicking on the “**CREATE**” button, and fill the required parameters as shown in **Figures 34** and **35**.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/connecting-to-chirpstack/36.new-application.png"
@@ -560,7 +560,7 @@ By default, you should create a new Application, although you can reuse the exis
 
 * For this setup, create an Application named “**RAK7200_test**”.
 
-ChirpStack LoraServer supports multiple system configurations, with only one by default. 
+ChirpStack LoraServer supports multiple system configurations, with only one by default.
 
 * **Service profile**: field is to select the system profile.
 * **Payload codec**: is the parsing method for selecting load data. Such as parsing LPP format data.
@@ -573,7 +573,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 
 <b>Register a New Device</b>
 
-1. Choose the **Application** created in the previous step, then select the **DEVICES** tab as shown in Figures 36 and 37.
+3. Choose the **Application** created in the previous step, then select the **DEVICES** tab as shown in **Figures 36** and **37**.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/connecting-to-chirpstack/38.application-available.png"
@@ -587,7 +587,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   caption="Device Tab of an Application"
 />
 
-3. Once inside of the DEVICE tab, create a new device (LoRa node) by clicking on the “**+ CREATE**” button. 
+4. Once inside of the DEVICE tab, create a new device (LoRa node) by clicking on the “**+ CREATE**” button.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/connecting-to-chirpstack/40.adding-node.png"
@@ -601,18 +601,18 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   caption="New Device Registration Form"
 />
 
-6. Once the node is created, fill-in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
+5. Once the node is created, fill-in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
 
-* **Device name and Device description**: These are descriptive texts about your device. 
-* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in Figure 40. You can also add a specific Device EUI directly in the form. 
-* **Device Profile**: 
+* **Device name and Device description**: These are descriptive texts about your device.
+* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in Figure 40. You can also add a specific Device EUI directly in the form.
+* **Device Profile**:
   * If you want to join in OTAA mode, select “**DeviceProfile_OTAA**”.
   * If you want to join in ABP mode, select “**DeviceProfile_ABP**”.
 
 
 :::tip 📝 NOTE:
 
-ChirpStack does not support AS923in ABP mode. 
+ChirpStack does not support AS923 in ABP mode.
 
 :::
 
@@ -632,7 +632,7 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
 
 ###### Configure the OTAA Mode on the Platform
 
-1. If you have selected “**DeviceProfile_OTAA**” as shown in Figure 41, then after the device is created, an Application Key must be also created for this device. 
+1. If you have selected “**DeviceProfile_OTAA**” as shown in **Figure 41**, then after the device is created, an Application Key must be also created for this device.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/43.otaa.png"
@@ -640,7 +640,7 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
   caption="Chirpstack OTAA Activation"
 />
 
-2. A previously created Application Key can be entered here, or a new one can be generated automatically by clicking the icon highlighted in red in Figure 42:
+2. A previously created Application Key can be entered here, or a new one can be generated automatically by clicking the icon highlighted in red in **Figure 42**:
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/44.otaa-set-device-keys.png"
@@ -648,9 +648,9 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
   caption="Chirpstack OTAA Set Application Keys"
 />
 
-3. Once the Application Key is added in the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button. 
+3. Once the Application Key is added in the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button.
 
-* As shown in Figure 43, a new device should be listed in the DEVICES tab. The most important parameters, such as the Device EUI are shown in the summary.
+* As shown in **Figure 43**, a new device should be listed in the DEVICES tab. The most important parameters, such as the Device EUI are shown in the summary.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/45.list-device.png"
@@ -658,7 +658,7 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
   caption="Chirpstack OTAA List of Device"
 />
 
-4. To end the process, it is a good practice to review that the Application Key is properly associated with this device. The Application Key can be verified in the **KEYS(OTAA)** tab as shown in Figure 44.
+4. To end the process, it is a good practice to review that the Application Key is properly associated with this device. The Application Key can be verified in the **KEYS(OTAA)** tab as shown in **Figure 44**.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/46.application-key.png"
@@ -668,16 +668,16 @@ In LoRaWAN, there are two ways a node can connect itself to the LoRaWAN network.
 
 :::tip 📝 NOTE:
 
-Standard OTAA mode requires the **Device EUI**, **Application Key**, and the **Application EUI**. But in the ChirpStack’s implementation, only the Device EUI and the Application Key are mandatory. The Application EUI is not required and is not recorded in the Application tab. Nevertheless, the Application EUI is a mandatory parameter in the RAK7200 module’s firmware. To resolve this mismatch, you can reuse the Device EUI as the Application EUI during the configuration in the side of the node. 
+Standard OTAA mode requires the **Device EUI**, **Application Key**, and the **Application EUI**. But in the ChirpStack’s implementation, only the Device EUI and the Application Key are mandatory. The Application EUI is not required and is not recorded in the Application tab. Nevertheless, the Application EUI is a mandatory parameter in the RAK7200 module’s firmware. To resolve this mismatch, you can reuse the Device EUI as the Application EUI during the configuration in the side of the node.
 
 :::
 
 
 ###### Configure the OTAA mode on the RAK7200
 
-The RAK7200 module supports a series of AT commands to configure its internal parameters and control the functionalities of the module. 
+The RAK7200 module supports a series of AT commands to configure its internal parameters and control the functionalities of the module.
 
-To set up the RAK7200 module to join ChirpStack using OTAA start by connecting the RAK7200 module to the Computer (see Figure 1) and open the RAK Serial Port  Tool, wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
+To set up the RAK7200 module to join ChirpStack using OTAA start by connecting the RAK7200 module to the Computer (see **Figure 1**) and open the RAK Serial Port Tool, wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
 
 
 ```
@@ -688,11 +688,11 @@ at+get_config=lora:status
 at+version
 ```
 
-As an example, these are the list of the parameters you need to configure in RAK7200: 
+As an example, these are the list of the parameters you need to configure in RAK7200:
 
 - LoRa join mode: **OTAA**
 - LoRa class: **Class A**
-- LoRa region: **AU915** 
+- LoRa region: **AU915**
 - Device EUI: **744d4452dd39037c**
 - Application EUI: **70B3D57ED001C544**
 - Application Key: **4E2003296FC5CD26F46940A6DAFA9D1**
@@ -761,8 +761,8 @@ at+set_config=lora:app_eui:70B3D57ED001C544
 />
 
 :::tip 📝 NOTE:
-Remember, the Application EUI parameter was not required in the ChirpStack platform. Therefore, it is possible to use the same ID as the Device EUI. Otherwise, the firmware will complain. 
-::: 
+Remember, the Application EUI parameter was not required in the ChirpStack platform. Therefore, it is possible to use the same ID as the Device EUI. Otherwise, the firmware will complain.
+:::
 
 6. Set the Application Key.
 
@@ -789,7 +789,7 @@ After configuring all parameters, you need to reset RAK7200 Module to save the p
 at+join
 ```
 
-After 5 or 6 seconds, if the request was successfully received by a LoRa gateway, then you should see the messages shown in Figure 51.
+After 5 or 6&nbsp;seconds, if the request was successfully received by a LoRa gateway, then you should see the messages shown in **Figure 51**.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/chirpstack-otaa-mode/53.otaa-join-chirpstack.png"
@@ -805,11 +805,11 @@ After 5 or 6 seconds, if the request was successfully received by a LoRa gateway
   caption="Checking LoRaWAN Joint Request in Chirpstack OTAA Console"
 />
 
-- On the ChirpStack platform, you should also see the messages in the LORAWAN FRAMES tab as shown in Figure 52. 
+- On the ChirpStack platform, you should also see the messages in the LORAWAN FRAMES tab as shown in **Figure 52**.
 
 :::tip 📝 NOTE:
 
-By convention, messages sent from nodes to gateways are considered as **Uplinks**. While messages sent by gateways to nodes are considered as **Downlinks**. 
+By convention, messages sent from nodes to gateways are considered as **Uplinks**. While messages sent by gateways to nodes are considered as **Downlinks**.
 :::
 
 <rk-img
@@ -825,7 +825,7 @@ This concludes the exercise to send data in the OTAA mode.
 
 ###### Configure the ABP Mode on the Platform
 
-During the registration of a new device, if you select “**DeviceProfile_ABP**” or "**DeviceProfile_ABP_CN470**", as shown in Figure 54, then the ChirpStack platform will assume that this device will join to the LoRaWAN network using the ABP mode. 
+During the registration of a new device, if you select “**DeviceProfile_ABP**” or "**DeviceProfile_ABP_CN470**", as shown in Figure 54, then the ChirpStack platform will assume that this device will join to the LoRaWAN network using the ABP mode.
 
 :::tip 📝 NOTE:
 
@@ -840,7 +840,7 @@ Check “**Disable counting frame verification**”. During the test, when the m
   caption="ChirpStack Console, Configuring a Device"
 />
 
-After selecting the ABP mode, the following parameters appear in the Activation tab: 
+After selecting the ABP mode, the following parameters appear in the Activation tab:
 
 *	Device address
 *	Network Session Key
@@ -858,7 +858,7 @@ After selecting the ABP mode, the following parameters appear in the Activation 
 
 ###### Configure the ABP mode on the RAK7200
 
-In the following steps, you will configure the RAK7200 module to work in the ABP mode. To set up the RAK7200 module to join ChirpStack using ABP start by connecting the RAK7200 module to the Computer (see Figure 1) and open the RAK Serial Port Tool, wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
+In the following steps, you will configure the RAK7200 module to work in the ABP mode. To set up the RAK7200 module to join ChirpStack using ABP start by connecting the RAK7200 module to the Computer (see **Figure 1**) and open the RAK Serial Port Tool, wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
 
 ```
 at+get_config=lora:status
@@ -868,11 +868,11 @@ at+get_config=lora:status
 at+version
 ```
 
-As an example, these are the list of the parameters you need to configure in RAK7200: 
+As an example, these are the list of the parameters you need to configure in RAK7200:
 
 - LoRa join mode: **ABP**
 - LoRa class: **Class A**
-- LoRa region: **AU915** 
+- LoRa region: **AU915**
 - Device address: **019c820a**
 - Network Session Key: **34fb174daa6dc34733495f73bd2b1ba1**
 - Application Session Key: **d7fde8da53ded21216fe71d4f91ecf0e**
@@ -917,7 +917,7 @@ at+set_config=lora:region:AU915
   caption="Setting LoRa Class Parameter"
 />
 
-4. Set the Device Address. 
+4. Set the Device Address.
 
 ```
 at+set_config=lora:dev_addr:019c820a
@@ -971,7 +971,7 @@ By using the ABP mode in LoRaWAN protocol, it doesn’t require to join a networ
 
 :::
 
-Once the RAK7200 joined into a LoRaWAN network, it will start to send periodically the data collected from the GPS and other sensors. Then, go to the ChirpStack platform to confirm that the messages ware properly received as shown in Figure 62.
+Once the RAK7200 joined into a LoRaWAN network, it will start to send periodically the data collected from the GPS and other sensors. Then, go to the ChirpStack platform to confirm that the messages ware properly received as shown in **Figure 62**.
 
 
 <rk-img
@@ -990,7 +990,7 @@ In this section, you will upgrade the firmware by using the **STM32CubeProgramme
 
 1. Install the [**STM32CubeProgrammer**](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stm32cubeprog.html#overview) tool on your Windows PC.
 
-2. Connect the RAK7200 module to the USB interface of a general-purpose computer as shown in Figure 1. 
+2. Connect the RAK7200 module to the USB interface of a general-purpose computer as shown in **Figure 1**.
 
 3. To program the firmware, the RAK7200 module must be entered into the boot mode. You can achieve it by following this procedure:
   - Hold down the BOOT0 button, and then press the Reset button.
@@ -1014,7 +1014,7 @@ In this section, you will upgrade the firmware by using the **STM32CubeProgramme
   caption="STM32CubeProgrammer UART Communication Parameters"
 />
 
-5. Once the connection parameters were properly set, press the **Connect** button located at the top right corner. If there were problems during the connection, the errors would be shown in Log message box. The usual problem is because the RAK7200 didn’t entered into the boot mode properly. In such cases, you will find similar error messages shown in Figure . 
+5. Once the connection parameters were properly set, press the **Connect** button located at the top right corner. If there were problems during the connection, the errors would be shown in Log message box. The usual problem is because the RAK7200 didn’t entered into the boot mode properly. In such cases, you will find similar error messages shown in **Figure 65**.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/upgrading-the-firmware/66.error-messages.png"
@@ -1032,7 +1032,7 @@ In this section, you will upgrade the firmware by using the **STM32CubeProgramme
 
 7. Once the communication is established with the RAK7200, burn a newer version of firmware into the RAK7200 module:
 
-  - **Erase the existing data**: To avoid unexpected problems during the future usage of the module, it’s a good practice to erase completely the EEPROM before burning the new version of firmware. You can achieve it by clicking on the Erase button highlighted in red square in Figure 67. 
+  - **Erase the existing data**: To avoid unexpected problems during the future usage of the module, it’s a good practice to erase completely the EEPROM before burning the new version of firmware. You can achieve it by clicking on the Erase button highlighted in red square in **Figure 67**.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/upgrading-the-firmware/68.erase-button.png"
@@ -1040,7 +1040,7 @@ In this section, you will upgrade the firmware by using the **STM32CubeProgramme
   caption="STM32CubeProgrammer Erase Button"
 />
 
-  - **Select the desired firmware to burn**: Press the “Open file” tab, see Figure 66, and select the correct firmware file in the pop-up window as shown in Figure 68.
+  - **Select the desired firmware to burn**: Press the “Open file” tab, see Figure 66, and select the correct firmware file in the pop-up window as shown in **Figure 68**.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/upgrading-the-firmware/69.select-new-firmware.png"
@@ -1048,7 +1048,7 @@ In this section, you will upgrade the firmware by using the **STM32CubeProgramme
   caption="STM32CubeProgrammer Select New Firmware"
 />
 
-  -	Once the new firmware is loaded, its content is displayed in the tool in hexadecimal format. Now, As shown in Figure 69, press the “**Download**” button to start the burning process. Once finished, a pop-up message will appear.
+  -	Once the new firmware is loaded, its content is displayed in the tool in hexadecimal format. Now, As shown in **Figure 69**, press the “**Download**” button to start the burning process. Once finished, a pop-up message will appear.
 
 <rk-img
   src="/assets/images/wisnode/rak7200/quickstart/upgrading-the-firmware/70.download-firmware.png"

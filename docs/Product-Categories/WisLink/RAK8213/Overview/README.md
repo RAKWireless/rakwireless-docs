@@ -11,7 +11,7 @@ tags:
 
 # RAK8213 WisLink Cellular mPCIe
 
-Thank you for choosing **RAK8213 WisLink Cellular mPCIe** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK8213 WisLink Cellular mPCIe** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
@@ -22,7 +22,7 @@ Thank you for choosing **RAK8213 WisLink Cellular mPCIe** in your awesome IoT Pr
 
 ## Product Description
 
-The **RAK8213** is a multi-band LTE Cat M1/Cat NB1/EGPRS module based on the **Quectel BG96** with a standard PCI Express® form factor (**Mini PCIe**). It offers a maximum data rate of 375Kbps downlink and 375Kbps uplink.
+The **RAK8213** is a multi-band LTE Cat M1/Cat NB1/EGPRS module based on the **Quectel BG96** with a standard PCI Express® form factor (**Mini PCIe**). It offers a maximum data rate of 375&nbsp;Kbps downlink and 375&nbsp;Kbps uplink.
 
 RAK8213’s built-in GNSS module can support **GPS, GLONASS, BeiDou/Compass, Galileo, QZSS, integrated GNSS** greatly simplifies product design and provides faster, more accurate and more reliable positioning.
 

@@ -11,7 +11,7 @@ tags:
 
 # RAK7201 WisNode Button 4K
 
-Thank you for choosing **RAK7201 WisNode Button 4K** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK7201 WisNode Button 4K** in your awesome IoT project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 - [Quick Start Guide](../Quickstart)
 - [Datasheet](../Datasheet/)
@@ -27,12 +27,12 @@ This WisNode Button is suitable for a variety of Smart Home applications. Includ
 ## Product Features
 
 - 4 Buttons with LED indicator
-- **Product Size:** 43x57x15 mm
-- **LoRaWAN**® 1.0.2 compatible
-- **Battery:** 350 mAh
+- **Product Size:** 43 x 57 x 15&nbsp;mm
+- **LoRaWAN** 1.0.2 compatible
+- **Battery:** 350&nbsp;mAh
 - **Battery working time:** 1 year (Rechargeable)
-- **Power Consumption:** Transmit: 77.4-153* mA, Standby: 4.8 uA
-- **Operating Temperature:** -20º C to 60º C
+- **Power Consumption:** Transmit: 77.4-153*&nbsp;mA, Standby: 4.8&nbsp;uA
+- **Operating Temperature:** -20°&nbsp;C to 60°&nbsp;C
 - **Working Environment:** Indoor
 
 *transmit current depends on factors such as transmit power, SF and Payload Length

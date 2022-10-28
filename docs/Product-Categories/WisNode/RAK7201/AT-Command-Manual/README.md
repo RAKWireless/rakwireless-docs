@@ -1,5 +1,5 @@
 ---
-rak_desc: For an easier experience with your LoRaWAN Module, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the RAK7201. 
+rak_desc: For an easier experience with your LoRaWAN Module, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the RAK7201.
 rak_img: /assets/images/wisnode/rak7201/datasheet/1.png
 prev: ../Datasheet/
 next: ../Firmware-Upgrade-Guide/
@@ -667,112 +667,112 @@ OK
 
 ### EU868/AS923
 
-| Data Rate | Configuration      | Indicative physical bit rate (bit/s) |
-| --------- | ------------------ | ------------------------------------ |
-| 0         | LoRa: SF12/125 kHz | 250                                  |
-| 1         | LoRa: SF11/125 kHz | 440                                  |
-| 2         | LoRa: SF10/125 kHz | 980                                  |
-| 3         | LoRa: SF9/125 kHz  | 1760                                 |
-| 4         | LoRa: SF8/125 kHz  | 3125                                 |
-| 5         | LoRa: SF7/125 kHz  | 5470                                 |
-| 6         | LoRa: SF7/250 kHz  | 11000                                |
-| 7         | FSK: 50 kbps       | 50000                                |
-| 8 …15     | RFU                | RFU                                  |
+| Data Rate | Configuration            | Indicative Physical Bit Rate (bit/s) |
+| --------- | ------------------------ | ------------------------------------ |
+| 0         | LoRa: SF12/ 125&nbsp;kHz | 250                                  |
+| 1         | LoRa: SF11/ 125&nbsp;kHz | 440                                  |
+| 2         | LoRa: SF10/ 125&nbsp;kHz | 980                                  |
+| 3         | LoRa: SF9/ 125&nbsp;kHz  | 1760                                 |
+| 4         | LoRa: SF8/ 125&nbsp;kHz  | 3125                                 |
+| 5         | LoRa: SF7/ 125&nbsp;kHz  | 5470                                 |
+| 6         | LoRa: SF7/ 250&nbsp;kHz  | 11000                                |
+| 7         | FSK: 50&nbsp;kbps        | 50000                                |
+| 8 …15     | RFU                      | RFU                                  |
 
 ### KR920
 
-| Data Rate | Configuration      | Indicative physical bit rate (bit/s) |
-| --------- | ------------------ | ------------------------------------ |
-| 0         | LoRa: SF12/125 kHz | 250                                  |
-| 1         | LoRa: SF11/125 kHz | 440                                  |
-| 2         | LoRa: SF10/125 kHz | 980                                  |
-| 3         | LoRa: SF9/125 kHz  | 1760                                 |
-| 4         | LoRa: SF8/125 kHz  | 3125                                 |
-| 5         | LoRa: SF7/125 kHz  | 5470                                 |
-| 6…15      | RFU                | RFU                                  |
+| Data Rate | Configuration            | Indicative Physical Bit Rate (bit/s) |
+| --------- | ------------------------ | ------------------------------------ |
+| 0         | LoRa: SF12/ 125&nbsp;kHz | 250                                  |
+| 1         | LoRa: SF11/ 125&nbsp;kHz | 440                                  |
+| 2         | LoRa: SF10/ 125&nbsp;kHz | 980                                  |
+| 3         | LoRa: SF9/ 125&nbsp;kHz  | 1760                                 |
+| 4         | LoRa: SF8/ 125&nbsp;kHz  | 3125                                 |
+| 5         | LoRa: SF7/ 125&nbsp;kHz  | 5470                                 |
+| 6…15      | RFU                      | RFU                                  |
 
 ### US915
 
-| Data Rate | Configuration      | Indicative physical bit rate (bit/s) |
-| --------- | ------------------ | ------------------------------------ |
-| 0         | LoRa: SF10/125 kHz | 980                                  |
-| 1         | LoRa: SF9/125 kHz  | 1760                                 |
-| 2         | LoRa: SF8/125 kHz  | 3125                                 |
-| 3         | LoRa: SF7/125 kHz  | 5470                                 |
-| 4         | LoRa: SF8/500 kHz  | 12500                                |
-| 5…7       | RFU                | RFU                                  |
-| 8         | LoRa: SF12/500 kHz | 980                                  |
-| 9         | LoRa: SF11/500 kHz | 1760                                 |
-| 10        | LoRa: SF10/500 kHz | 3900                                 |
-| 11        | LoRa: SF9/500 kHz  | 7000                                 |
-| 12        | LoRa: SF8/500 kHz  | 12500                                |
-| 13        | LoRa: SF7/500 kHz  | 21900                                |
-| 14…15     | RFU                | RFU                                  |
+| Data Rate | Configuration            | Indicative Physical Bit Rate (bit/s) |
+| --------- | ------------------------ | ------------------------------------ |
+| 0         | LoRa: SF10/ 125&nbsp;kHz | 980                                  |
+| 1         | LoRa: SF9/ 125&nbsp;kHz  | 1760                                 |
+| 2         | LoRa: SF8/ 125&nbsp;kHz  | 3125                                 |
+| 3         | LoRa: SF7/ 125&nbsp;kHz  | 5470                                 |
+| 4         | LoRa: SF8/ 500&nbsp;kHz  | 12500                                |
+| 5…7       | RFU                      | RFU                                  |
+| 8         | LoRa: SF12/ 500&nbsp;kHz | 980                                  |
+| 9         | LoRa: SF11/ 500&nbsp;kHz | 1760                                 |
+| 10        | LoRa: SF10/ 500&nbsp;kHz | 3900                                 |
+| 11        | LoRa: SF9/ 500&nbsp;kHz  | 7000                                 |
+| 12        | LoRa: SF8/ 500&nbsp;kHz  | 12500                                |
+| 13        | LoRa: SF7/ 500&nbsp;kHz  | 21900                                |
+| 14…15     | RFU                      | RFU                                  |
 
 ### AU915
 
-| Data Rate | Configuration      | Indicative physical bit rate (bit/s) |
-| --------- | ------------------ | ------------------------------------ |
-| 0         | LoRa: SF12/125 kHz | 250                                  |
-| 1         | LoRa: SF11/125 kHz | 440                                  |
-| 2         | LoRa: SF10/125 kHz | 980                                  |
-| 3         | LoRa: SF9/125 kHz  | 1760                                 |
-| 4         | LoRa: SF8/125 kHz  | 3125                                 |
-| 5         | LoRa: SF7/125 kHz  | 5470                                 |
-| 6         | LoRa: SF8/500 kHz  | 12500                                |
-| 7         | RFU                | RFU                                  |
-| 8         | LoRa: SF12/500 kHz | 980                                  |
-| 9         | LoRa: SF11/500 kHz | 1760                                 |
-| 10        | LoRa: SF10/500 kHz | 3900                                 |
-| 11        | LoRa: SF9/500 kHz  | 7000                                 |
-| 12        | LoRa: SF8/500 kHz  | 12500                                |
+| Data Rate | Configuration            | Indicative Physical Bit Rate (bit/s) |
+| --------- | ------------------------ | ------------------------------------ |
+| 0         | LoRa: SF12/ 125&nbsp;kHz | 250                                  |
+| 1         | LoRa: SF11/ 125&nbsp;kHz | 440                                  |
+| 2         | LoRa: SF10/ 125&nbsp;kHz | 980                                  |
+| 3         | LoRa: SF9/ 125&nbsp;kHz  | 1760                                 |
+| 4         | LoRa: SF8/ 125&nbsp;kHz  | 3125                                 |
+| 5         | LoRa: SF7/ 125&nbsp;kHz  | 5470                                 |
+| 6         | LoRa: SF8/ 500&nbsp;kHz  | 12500                                |
+| 7         | RFU                      | RFU                                  |
+| 8         | LoRa: SF12/ 500&nbsp;kHz | 980                                  |
+| 9         | LoRa: SF11/ 500&nbsp;kHz | 1760                                 |
+| 10        | LoRa: SF10/ 500&nbsp;kHz | 3900                                 |
+| 11        | LoRa: SF9/ 500&nbsp;kHz  | 7000                                 |
+| 12        | LoRa: SF8/ 500&nbsp;kHz  | 12500                                |
 
 ### IN865
 
-| Data Rate | Configuration      | Indicative physical bit rate (bit/s) |
-| --------- | ------------------ | ------------------------------------ |
-| 0         | LoRa: SF12/125 kHz | 250                                  |
-| 1         | LoRa: SF11/125 kHz | 440                                  |
-| 2         | LoRa: SF10/125 kHz | 980                                  |
-| 3         | LoRa: SF9/125 kHz  | 1760                                 |
-| 4         | LoRa: SF8/125 kHz  | 3125                                 |
-| 5         | LoRa: SF7/125 kHz  | 5470                                 |
-| 6         | RFU                | RFU                                  |
-| 7         | FSK: 50 kbps       | 50000                                |
-| 8 …15     | RFU                | RFU                                  |
+| Data Rate | Configuration            | Indicative Physical Bit Rate (bit/s) |
+| --------- | ------------------------ | ------------------------------------ |
+| 0         | LoRa: SF12/ 125&nbsp;kHz | 250                                  |
+| 1         | LoRa: SF11/ 125&nbsp;kHz | 440                                  |
+| 2         | LoRa: SF10/ 125&nbsp;kHz | 980                                  |
+| 3         | LoRa: SF9/ 125&nbsp;kHz  | 1760                                 |
+| 4         | LoRa: SF8/ 125&nbsp;kHz  | 3125                                 |
+| 5         | LoRa: SF7/ 125&nbsp;kHz  | 5470                                 |
+| 6         | RFU                      | RFU                                  |
+| 7         | FSK: 50&nbsp;kbps        | 50000                                |
+| 8 …15     | RFU                      | RFU                                  |
 
 ## Appendix 2: TX Power
 
 ### EU868
 
-By default, Max EIRP is considered to be +16 dBm.
+By default, Max EIRP is considered to be +16&nbsp;dBm.
 
-| TX Power | Configuration (EIRP) |
-| -------- | -------------------- |
-| 0        | Max EIRP             |
-| 1        | Max EIRP - 2 dB      |
-| 2        | Max EIRP - 4 dB      |
-| 3        | Max EIRP - 6 dB      |
-| 4        | Max EIRP - 8 dB      |
-| 5        | Max EIRP - 10 dB     |
-| 6        | Max EIRP - 12 dB     |
-| 7        | Max EIRP - 14 dB     |
-| 8...15   | RFU                  |
+| TX Power | Configuration (EIRP)  |
+| -------- | --------------------- |
+| 0        | Max EIRP              |
+| 1        | Max EIRP - 2&nbsp;dB  |
+| 2        | Max EIRP - 4&nbsp;dB  |
+| 3        | Max EIRP - 6&nbsp;dB  |
+| 4        | Max EIRP - 8&nbsp;dB  |
+| 5        | Max EIRP - 10&nbsp;dB |
+| 6        | Max EIRP - 12&nbsp;dB |
+| 7        | Max EIRP - 14&nbsp;dB |
+| 8...15   | RFU                   |
 
 ### US915
 
 | TX Power | Configuration (conducted power) |
 | -------- | ------------------------------- |
-| 0        | 30 dBm - 2\*TXpower             |
-| 1        | 28 dBm                          |
-| 2        | 26 dBm                          |
+| 0        | 30&nbsp;dBm - 2\*TXpower        |
+| 1        | 28&nbsp;dBm                     |
+| 2        | 26&nbsp;dBm                     |
 | 3...9    | ...                             |
-| 10       | 10 dBm                          |
+| 10       | 10&nbsp;dBm                     |
 | 11...15  | RFU                             |
 
 ### AU915
 
-By default, Ma EIRP is considered to be +30 dBm.
+By default, Ma EIRP is considered to be +30&nbsp;dBm.
 
 | TX Power | Configuration (EIRP)  |
 | -------- | --------------------- |
@@ -782,51 +782,51 @@ By default, Ma EIRP is considered to be +30 dBm.
 
 ### KR920
 
-By default, Max EIRP is considered to be +14 dBm.
+By default, Max EIRP is considered to be +14&nbsp;dBm.
 
-| TX Power | Configuration (EIRP) |
-| -------- | -------------------- |
-| 0        | Max EIRP             |
-| 1        | Max EIRP - 2 dB      |
-| 2        | Max EIRP - 4 dB      |
-| 3        | Max EIRP - 6 dB      |
-| 4        | Max EIRP - 8 dB      |
-| 5        | Max EIRP - 10 dB     |
-| 6        | Max EIRP - 12 dB     |
-| 7        | Max EIRP - 14 dB     |
-| 8...15   | RFU                  |
+| TX Power | Configuration (EIRP)  |
+| -------- | --------------------- |
+| 0        | Max EIRP              |
+| 1        | Max EIRP - 2&nbsp;dB  |
+| 2        | Max EIRP - 4&nbsp;dB  |
+| 3        | Max EIRP - 6&nbsp;dB  |
+| 4        | Max EIRP - 8&nbsp;dB  |
+| 5        | Max EIRP - 10&nbsp;dB |
+| 6        | Max EIRP - 12&nbsp;dB |
+| 7        | Max EIRP - 14&nbsp;dB |
+| 8...15   | RFU                   |
 
 ### AS923
 
-By default, Max EIRP is considered to be 16 dBm.
+By default, Max EIRP is considered to be 16&nbsp;dBm.
 
-| TX Power | Configuration (EIRP) |
-| -------- | -------------------- |
-| 0        | Max EIRP             |
-| 1        | Max EIRP - 2 dB      |
-| 2        | Max EIRP - 4 dB      |
-| 3        | Max EIRP - 6 dB      |
-| 4        | Max EIRP - 8 dB      |
-| 5        | Max EIRP - 10 dB     |
-| 6        | Max EIRP - 12 dB     |
-| 7        | Max EIRP - 14 dB     |
-| 8...15   | RFU                  |
+| TX Power | Configuration (EIRP)  |
+| -------- | --------------------- |
+| 0        | Max EIRP              |
+| 1        | Max EIRP - 2&nbsp;dB  |
+| 2        | Max EIRP - 4&nbsp;dB  |
+| 3        | Max EIRP - 6&nbsp;dB  |
+| 4        | Max EIRP - 8&nbsp;dB  |
+| 5        | Max EIRP - 10&nbsp;dB |
+| 6        | Max EIRP - 12&nbsp;dB |
+| 7        | Max EIRP - 14&nbsp;dB |
+| 8...15   | RFU                   |
 
 ### IN865
 
-By default, Max EIRP is considered to be 30 dBm.
+By default, Max EIRP is considered to be 30&nbsp;dBm.
 
-| TX Power | Configuration (EIRP) |
-| -------- | -------------------- |
-| 0        | Max EIRP             |
-| 1        | Max EIRP - 2 dB      |
-| 2        | Max EIRP - 4 dB      |
-| 3        | Max EIRP - 6 dB      |
-| 4        | Max EIRP - 8 dB      |
-| 5        | Max EIRP - 10 dB     |
-| 6        | Max EIRP - 12 dB     |
-| 7        | Max EIRP - 14 dB     |
-| 8        | Max EIRP - 16 dB     |
-| 9        | Max EIRP - 18 dB     |
-| 10       | Max EIRP - 20 dB     |
-| 11...15  | RFU                  |
+| TX Power | Configuration (EIRP)  |
+| -------- | --------------------- |
+| 0        | Max EIRP              |
+| 1        | Max EIRP - 2&nbsp;dB  |
+| 2        | Max EIRP - 4&nbsp;dB  |
+| 3        | Max EIRP - 6&nbsp;dB  |
+| 4        | Max EIRP - 8&nbsp;dB  |
+| 5        | Max EIRP - 10&nbsp;dB |
+| 6        | Max EIRP - 12&nbsp;dB |
+| 7        | Max EIRP - 14&nbsp;dB |
+| 8        | Max EIRP - 16&nbsp;dB |
+| 9        | Max EIRP - 18&nbsp;dB |
+| 10       | Max EIRP - 20&nbsp;dB |
+| 11...15  | RFU                   |

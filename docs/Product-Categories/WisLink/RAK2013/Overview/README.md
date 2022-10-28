@@ -10,7 +10,7 @@ tags:
 ---
 
 # RAK2013 WisLink Cellular Pi HAT
-Thank you for choosing **RAK2013 WisLink Cellular Pi HAT** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK2013 WisLink Cellular Pi HAT** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 * [RAK2013 3D Model](https://downloads.rakwireless.com/3D_File/WisLink/PWB-RAK2013.stp)
@@ -27,15 +27,15 @@ The module is supported with an extendable sensor board connected that follows t
 
 ## Product Features
 
-- Compatible with Raspberry Pi 3B+ edition specification.
-- Quectel BG96/EG91/EG95 for NB-IOT / CAT-M / CAT1 LTE / CAT4 LTE.
-- Supports Voice over CAT-M or VoLTE.
-- Supports Nano SIM card or eSIM card.
-- Integrates audio codec and audio amplifier.
-- Integrates MikroBus interface to support sensor extended board.
-- Can be added to another Pi HAT to support LoRa concentrator.
-- Supports USB connector for higher data rate.
-- Supports GPS function(only for BG96 module).
-- SMA/IPEX antenna optional for LTE and GPS.
-- Supports I2C, GPIOs, UART and ADC interfaces for Raspberry board.
-- Supports EEPROM to configure IOs automatically.
+- Compatible with Raspberry Pi 3B+ edition specification
+- Quectel BG96/EG91/EG95 for NB-IOT / CAT-M / CAT1 LTE / CAT4 LTE
+- Supports Voice over CAT-M or VoLTE
+- Supports Nano SIM card or eSIM card
+- Integrates audio codec and audio amplifier
+- Integrates MikroBus interface to support sensor extended board
+- Can be added to another Pi HAT to support LoRa concentrator
+- Supports USB connector for higher data rate
+- Supports GPS function(only for BG96 module)
+- SMA/IPEX antenna optional for LTE and GPS
+- Supports I2C, GPIOs, UART and ADC interfaces for Raspberry board
+- Supports EEPROM to configure IOs automatically

@@ -37,7 +37,7 @@ In order for you to be able to interface with the RAK612 WisNode Button with you
 1. Using a standard **Micro - USB Cable**, connect your RAK612 WisNode Button to your computer.
 
 :::tip 📝 NOTE
-If this is your first time to connect your RAK612 WisNode Button to your computer, it should automatically download the CH340 driver in order for them to communicate properly. Make sure to have an internet access if you want such automatic installation to be successful. If such process fails, re-plug your Micro - USB cord and proceed to the next step."
+If this is your first time to connect your RAK612 WisNode Button to your computer, it should automatically download the CH340 driver in order for them to communicate properly. Make sure to have an internet access if you want such automatic installation to be successful. If such process fails, re-plug your Micro - USB cord and proceed to the next step.
 :::
 
 2. Go to your **Device Manager** by pressing : **Windows + R** and type `devmgmt.msc` or **search in Start Menu** or right click "**My Computer**" or "**This PC**" and click **Manage**. Look for **Other Devices.**
@@ -71,7 +71,7 @@ In case the driver is still not installed upon doing the previous steps, kindly 
 5. Let us now test if your RAK612 WisNode Button can now communicate with the RAK Serial Port Tool. Connect with the RAK Serial Port Tool using the parameters listed below and click "**Open**".
 
    - **COM**: Choose the COMPort associated with the USB-SERIAL CH340 from the previous step. For this tutorial, the COM Port is COM4.
-   - **Baud Rate**: **115200** bps
+   - **Baud Rate**: **115200**&nbsp;bps
 
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/interfacing-with-rak612/rak-serial.png"
@@ -95,7 +95,7 @@ Congratulations! :tada: You have just successfully interfaced your RAK612 WisNod
 
 ### Connecting to The Things Network (TTN)
 
-In this section, we will be connecting the RAK612 WisNode Button to The Things Network (TTN). If you don't have an account yet, head on to [https://www.thethingsnetwork.org/](https://www.thethingsnetwork.org/) and create one. Once done, Log in to your account and go to the console which can be found here:
+In this section, we will be connecting the RAK612 WisNode Button to The Things Network (TTN). If you don't have an account yet, head on to [The Things Network](https://www.thethingsnetwork.org/) and create one. Once done, Log in to your account and go to the console which can be found here:
 
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/ttn/ttn-homepage.png"
@@ -287,7 +287,7 @@ at+join=otaa
 
 Follow these steps, if you want to join with The Things Network in **Activation By Personalisation** (ABP) Mode.
 
-1. First, switch the activation method to ABP as shown in the following image
+1. First, switch the activation method to ABP as shown in **Figure 23**.
 
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/ttn/abp-ttn.png"

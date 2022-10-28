@@ -31,33 +31,33 @@ This WisNode Button is suitable for a variety of Smart Home applications. Includ
 ### Features
 
 - 4 Buttons with LED indicator
-- **Product Size:** 43x57x15 mm
-- **LoRaWAN**® 1.0.2 compatible
-- **Battery:** 350 mAh
+- **Product Size:** 43 x 57 x 15&nbsp;mm
+- **LoRaWAN** 1.0.2 compatible
+- **Battery:** 350&nbsp;mAh
 - **Battery working time:** 1 year (Rechargeable)
-- **Power Consumption:** Transmit: 77.4-153* mA, Standby: 4.8 uA
-- **Operating Temperature:** -20º C to 60º C
+- **Power Consumption:** Transmit: 77.4-153*&nbsp;mA, Standby: 4.8&nbsp;uA
+- **Operating Temperature:** -20°&nbsp;C to 60°&nbsp;C
 - **Working Environment:** Indoor
 
-*transmit current depends on factors such as transmit power, SF and Payload Length
+*transmit current depends on factors such as transmit power, SF, and Payload Length
 
 ## Specifications
 
 ### Overview
 
-| Parameter             | Value                 |
-| --------------------- | --------------------- |
-| LoRa protocol         | LoRaWAN 1.0.2 Class A |
-| LoRa TX power         | 20 dBm max            |
-| LoRa RX sensitivity   | -136 dBm              |
-| LoRa antenna          | Spring antenna        |
-| Battery capacity      | 350 mAh               |
-| Charge current        | 500 mA/5V             |
-| Battery lifetime      | 1 year                |
-| Sleep current         | 4.8 uA                |
-| Operating temperature | -20º C to 60º C       |
-| Dimensions            | 43x57x15 mm           |
-| Mounting              | Sticker               |
+| Parameter             | Value                     |
+| --------------------- | ------------------------- |
+| LoRa protocol         | LoRaWAN 1.0.2 Class A     |
+| LoRa TX power         | 20&nbsp;dBm max           |
+| LoRa RX sensitivity   | -136&nbsp;dBm             |
+| LoRa antenna          | Spring antenna            |
+| Battery capacity      | 350&nbsp;mAh              |
+| Charge current        | 500&nbsp;mA/ 5&nbsp;V     |
+| Battery lifetime      | 1 year                    |
+| Sleep current         | 4.8&nbsp;uA               |
+| Operating temperature | -20°&nbsp;C to 60°&nbsp;C |
+| Dimensions            | 43 x 57 x 15&nbsp;mm      |
+| Mounting              | Sticker                   |
 
 <rk-img
   src="/assets/images/wisnode/rak7201/datasheet/2.png"
@@ -71,16 +71,16 @@ The hardware specification covers the parameters of the RAK7201 in terms of elec
 
 #### RF Characteristics
 
-| Parameter           | value                 |
+| Parameter           | Value                 |
 | ------------------- | --------------------- |
 | LoRa protocol       | LoRaWAN 1.0.2 Class A |
-| LoRa TX power       | 20dBm max             |
-| LoRa RX sensitivity | -136 dBm              |
+| LoRa TX power       | 20&nbsp;dBm max       |
+| LoRa RX sensitivity | -136&nbsp;dBm         |
 | LoRa Antenna        | Spring antenna        |
 
 The RAK7201 supports different LoRaWAN frequency bands for different country regions.
 
-| Region        | Frequency band common name (MHz) |
+| Region        | Frequency Band Common Name (MHz) |
 | ------------- | -------------------------------- |
 | Europe        | EU868                            |
 | India         | IN865                            |
@@ -159,7 +159,7 @@ The RAK7201 comes with a 350 mAh rechargeable LiPo battery inside. In need of re
 | Nominal Battery Voltage | 3.7                                      | V    |
 | Nominal capacity        | 350                                      | mAh  |
 | Temperature range       | -20º~60º (discharge), 15º-45º (charging) | C    |
-| Battery dimensions      | 5.7x21x37.5                              | mm   |
+| Battery dimensions      | 5.7 x 21 x 37.5                          | mm   |
 
 ### Software
 

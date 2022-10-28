@@ -5,7 +5,7 @@ tags:
   - RAK2247
   - quickstart
   - wislink
-rak_desc: Contains instructions and tutorials for installing and deploying your RAK2247 WisLink LPWAN Concentrator. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LPWAN Concentrator. 
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK2247 WisLink LPWAN Concentrator. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LPWAN Concentrator.
 rak_img: /assets/images/wislink-lora/rak2247/quickstart/1.main/RAK2247_home.png
 
 ---
@@ -62,7 +62,7 @@ git clone https://github.com/RAKWireless/rak_common_for_gateway.git
 ifconfig
 ```
 
-An example in Figure 2 shows the name of the wireless interface “**wlx6045bdf0cf64**”.
+An example in **Figure 2** shows the name of the wireless interface “**wlx6045bdf0cf64**”.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2247/quickstart/3.rak2247-linuxpc/network-name.jpg"
@@ -91,7 +91,7 @@ GATEWAY_EUI_NIC=”eth0”
 GATEWAY_EUI_NIC=”wlx6045bdf0cf64h0”
 ```
 
-Again, the values are just an example. Remember to do this for all 3 files in step 4.
+Again, the values are just an example. Remember to do this for all three (3) files in Step 4.
 
 5. Change the `global_conf.json` that will be copied during installation by replacing the `global_conf.eu_863_870.json` in the end of the (install.sh file)[https://github.com/RAKWireless/rak_common_for_gateway/blob/master/lora/rak2247_usb/install.sh] to one of those inside `/global_conf` or a custom one. (**EU868 is the default**)
 ```sh
@@ -133,7 +133,7 @@ cp ../ttn-gateway.service /lib/systemd/system/
 systemctl enable ttn-gateway.service
 ```
 
-8. Save “**install.sh**” file and execute it in order to install: 
+8. Save “**install.sh**” file and execute it in order to install:
 
 ```sh
 sudo ./install.sh
@@ -142,11 +142,11 @@ sudo ./install.sh
 9. Wait for the installation to complete. Using the commands below, go and run the newly created process (**lora_pkt_fwd**):
 
 ```sh
-cd /opt/ttn-gateway/packet_forwarder/lora_pkt_fwd 
+cd /opt/ttn-gateway/packet_forwarder/lora_pkt_fwd
 sudo ./lora_pkt_fwd
 ```
 :::tip 📝 NOTE:
- If you added the additional lines in step 5 it will execute every time on boot.
+ If you added the additional lines in Step 5 it will execute every time on boot.
 :::
 
 10. To check if it is working, run `sudo systemctl start ttn-gateway.service` to start the service and check its status `service ttn-gateway status`. You should see something like the box below. Be aware that it may take some minutes to see your gateway as connected in TTN's console.
@@ -173,4 +173,3 @@ Oct 09 17:52:00 raspberrypi ttn-gateway[721]: # RF packets received by concentra
 Oct 09 17:52:00 raspberrypi ttn-gateway[721]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
 ```
 
-**Congratulations!** :tada: you should now see your Gateway in TTN!

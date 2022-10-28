@@ -7,7 +7,7 @@ tags:
   - RAK18031
   - MP34DT06JTR
   - ST
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 

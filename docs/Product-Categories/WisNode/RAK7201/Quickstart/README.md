@@ -17,9 +17,9 @@ tags:
 
 Before going through each and every step in the installation guide of the RAK7201 WisNode Button, make sure to prepare the necessary items listed below:
 
-1. WisNode Button 4K RAK7201 
+1. [RAK7201 WisNode Button 4K](https://store.rakwireless.com/products/wisnode-button-4k-rak7201?utm_source=RAK7201WisNodeButton4K&utm_medium=Document&
 2. Micro USB cable
-3. Gateway in range 
+3. Gateway in range
 4. Windows PC
 
 ### What’s included in the package
@@ -58,7 +58,7 @@ For you to be able to interface with the RAK7201 WisNode Button 4K with your Win
   caption="Device Manager"
 />
 
-4. Choose the correct COM port number from the device manager and the correct baud rate, then click **Open**. The default baud rate of the WisNode Button 4K is **115200 bps**.
+4. Choose the correct COM port number from the device manager and the correct baud rate, then click **Open**. The default baud rate of the WisNode Button 4K is **115200&nbsp;bps**.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/4.png"
@@ -82,13 +82,13 @@ For you to be able to interface with the RAK7201 WisNode Button 4K with your Win
   caption="Checking the firmware version"
 />
 
-### Connecting to Helium  (The People's Network) 
+### Connecting to Helium  (The People's Network)
 
-Helium has quickly become the most widespread LPWAN communal network with more than 27,000 devices deployed globally. All our node products are compatible with it and the process of adding a device to the network is intuitive and straightforward. 
+Helium has quickly become the most widespread LPWAN communal network with more than 27,000 devices deployed globally. All our node products are compatible with it and the process of adding a device to the network is intuitive and straightforward.
 
 This section will focus on giving a brief guide on how to connect the RAK7201 to the network console, assuming that there is a Helium Hotspot within range.
 
-Log in or create your account [here](https://www.helium.com/console):
+Log in or create your [Helium account](https://www.helium.com/console):
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/connecting-to-helium/1.png"
@@ -177,7 +177,7 @@ Finish executing the join command in order for the node to initiate the join pro
 at+join
 ```
 
-You output should resemble the one in Figure 12:
+You output should resemble the one in **Figure 12**.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/connecting-to-helium/7.png"
@@ -207,7 +207,7 @@ In this section, we will be connecting the RAK WisNode Button 4K to the Built-In
   caption=" Application menu in the web UI of the gateway"
 />
 
-2. Input a name for the application and click the **Add** button. 
+2. Input a name for the application and click the **Add** button.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/8.png"
@@ -225,7 +225,7 @@ In this section, we will be connecting the RAK WisNode Button 4K to the Built-In
 
 #### Adding the Device to the Application
 
-1. In the created application, click on the **Edit** button as shown in Figure 17.
+1. In the created application, click on the **Edit** button as shown in **Figure 17**.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/10.png"
@@ -310,7 +310,7 @@ at+set_config=device:restart
   caption="The device has restarted and connected to the LoRaWAN Network"
 />
 
-4. After the successful connection, the data obtained from pressing the buttons will be transmitted to the application server of the gateway. 
+4. After the successful connection, the data obtained from pressing the buttons will be transmitted to the application server of the gateway.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/16.png"
@@ -328,9 +328,9 @@ at+set_config=device:restart
 
 #### Configuring in ABP Mode
 
-To use the RAK WisNode Button 4K in ABP mode, a change of the activation method is needed. 
+To use the RAK WisNode Button 4K in ABP mode, a change of the activation method is needed.
 
-1. Go to the Device configuration in the Gateway, as shown in Figure 25 and select the ABP Join mode from the drop-down menu. 
+1. Go to the Device configuration in the Gateway, as shown in **Figure 25** and select the ABP Join mode from the drop-down menu.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/18.png"
@@ -349,7 +349,7 @@ To use the RAK WisNode Button 4K in ABP mode, a change of the activation method 
 3. To set the WisNode Button 4K in ABP work mode, the following AT commands must be executed in the RAK Serial Port Tool:
 
 
-- Join mode (ABP) 
+- Join mode (ABP)
 
 ```
 at+set_config=lora:join_mode:1
@@ -367,7 +367,7 @@ at+set_config=lora:dev_addr:00000001
 at+set_config=lora:apps_key:5e8b925ee63053a9ef5cbff8fc712451
 ```
 
-Network session key (from the device configuration created previously in the gateway) 
+Network session key (from the device configuration created previously in the gateway)
 
 ```
 at+set_config=lora:nwks_key:c021e522f93751a92cc72e260031dde7
@@ -386,14 +386,14 @@ at+set_config=lora:nwks_key:c021e522f93751a92cc72e260031dde7
 at+set_config=device:restart
 ```
 
-5. After the restart, the device will be ready to send the information through the LoRaWAN Network. 
+5. After the restart, the device will be ready to send the information through the LoRaWAN Network.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/21.png"
   width="80%"
   caption="The device is restarted"
 />
- 
+
 ::: tip 📝 NOTE:
 In ABP mode there is no Join procedure. To be sure that the Button can send data you need to press the buttons and see if you have uplinks in the Live Device Data field of the device in the gateway.
 :::
@@ -416,7 +416,7 @@ The received data from the WisNode Button 4K can be seen in the web UI of the ga
 
 ### Connecting to The Things Network V3 (TTNv3)
 
-At The Things Conference 2021, it was announced that The Things Network is upgrading to The Things Stack v3. In this section, it will be shown how to connect RAK7201 WisNode Button 4K to The Things Stack.  To login into the TTNv3, head on [here](https://eu1.cloud.thethings.network/console). If you already have a TTN account, you can use your The Things ID credentials to log in.
+At The Things Conference 2021, it was announced that The Things Network is upgrading to The Things Stack v3. In this section, it will be shown how to connect RAK7201 WisNode Button 4K to The Things Stack.  To login into the TTNv3, head on to the [TTN site](https://eu1.cloud.thethings.network/console). If you already have a TTN account, you can use your The Things ID credentials to log in.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/ttnv3/image001.png"
@@ -431,7 +431,7 @@ At The Things Conference 2021, it was announced that The Things Network is upgra
 />
 
 ::: tip 📝 NOTE:
-To be able to connect RAK7201 WisNode Button 4K to TTNv3 you should already have connected a gateway in range to TTNv2 or TTNv3, or you have to be sure that you are in the range of a public gateway. 
+To be able to connect RAK7201 WisNode Button 4K to TTNv3 you should already have connected a gateway in range to TTNv2 or TTNv3, or you have to be sure that you are in the range of a public gateway.
 :::
 
 #### Adding an application
@@ -452,10 +452,10 @@ This tutorial is for EU868 Frequency band.
 
 - **Owner –** Automatically filled by The Things Stack, based on your account or created Organization.
 - **Application ID** - This will be the unique ID of your application in the Network. Note that the ID must contain only lowercase letters, numbers, and dashes (-).
-- **Application name** (optional) - This is the name of your application. 
+- **Application name** (optional) - This is the name of your application.
 - **Description** (optional) – Description of your application. Optional application description; can also be used to save notes about the application.
 
-3. After you fill in the information, click **Create application**. If everything is filled in correctly, you will see the page in Figure 34.
+3. After you fill in the information, click **Create application**. If everything is filled in correctly, you will see the page in **Figure 34**.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/ttnv3/image004.png"
@@ -475,7 +475,7 @@ This tutorial is for EU868 Frequency band.
   caption="Adding a device in OTAA mode"
 />
 
-2. Bellow the **Register end device** heading you can find two options for registering a device. Choose **Manually**. For Activation mode choose **Over the air activation (OTAA)** and for the LoRaWAN version choose **MAC V1.0.2** (RAK7201 is LoRaWAN 1.0.2 fully compliant). 
+2. Bellow the **Register end device** heading you can find two options for registering a device. Choose **Manually**. For Activation mode choose **Over the air activation (OTAA)** and for the LoRaWAN version choose **MAC V1.0.2** (RAK7201 is LoRaWAN 1.0.2 fully compliant).
 
 <rk-img
   src="/assets/images/wisnode/rak7201/ttnv3/image006.png"
@@ -494,7 +494,7 @@ This tutorial is for EU868 Frequency band.
 4. Fill in the Basic settings for the device:
 
 - **End device ID** - This is the unique identifier for your RAK7201 WisNode Button 4K in your application. You need to enter this manually. Note that the End device ID must contain only lowercase letters, numbers, and dashes (-).
-- **AppEUI** - The AppEUI uniquely identifies the owner of the end device. It is provided by the device manufacturer. To get the AppEUI, connect your device via USB cable to your computer. Open RAK Serial Port Tool, choose the correct COM port and BaudRate and hold Button 1 for 3 seconds to enter the device in Configuration mode. 
+- **AppEUI** - The AppEUI uniquely identifies the owner of the end device. It is provided by the device manufacturer. To get the AppEUI, connect your device via USB cable to your computer. Open RAK Serial Port Tool, choose the correct COM port and BaudRate and hold Button 1 for 3 seconds to enter the device in Configuration mode.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/ttnv3/2.png"
@@ -527,11 +527,11 @@ at+get_config=lora:status
 
 6. Here you must configure the Network layer settings for the device:
 
-- **Frequency plan -** The frequency plan used by the end device. Note that, for this tutorial, the frequency plan used is Europe 863-870 MHz (SF9 for RX2 – recommended).
+- **Frequency plan -** The frequency plan used by the end device. Note that, for this tutorial, the frequency plan used is Europe 863-870&nbsp;MHz (SF9 for RX2 – recommended).
 - **Regional Parameters version** - The Regional Parameters specify frequency, dwell time, and other communication settings for different geographical areas. The Regional Parameters version is the version of the LoRa Alliance specification which your device supports. This should be provided by the device manufacturer in a datasheet. For this example, **PHY V1.0.2 REV A** is chosen.
-- **LoRaWAN class capabilities** – Here you can select if your device supports class B, class C, or both. 
+- **LoRaWAN class capabilities** – Here you can select if your device supports class B, class C, or both.
 
-7. In **Advanced settings**, you can configure additional settings for your device. 
+7. In **Advanced settings**, you can configure additional settings for your device.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/ttnv3/image009.png"
@@ -610,13 +610,13 @@ at+set_config=lora:region:EU868
 />
 
 ::: tip 📝 NOTE:
-The following tutorial is based on using the EU868 frequency band. 
+The following tutorial is based on using the EU868 frequency band.
 :::
 
 3. Now that those parameters are set, enter the **App Key**, using the command below. Remember to replace the **"XXXX"** with the corresponding parameter value for your particular case.
 
 ```
-at+set_config=lora:app_key:XXXX  
+at+set_config=lora:app_key:XXXX
 ```
 
 <rk-img
@@ -637,7 +637,7 @@ at+set_config=device:restart
 />
 
 5. After the successful connection, the data obtained from pressing the buttons will be transmitted to the application server of the gateway.
-   
+
 <rk-img
   src="/assets/images/wisnode/rak7201/ttnv3/image017.png"
   width="80%"
@@ -645,7 +645,7 @@ at+set_config=device:restart
 />
 
 6. The received data from the WisNode Button 4K can be seen in the **Live data** feed.
-   
+
 <rk-img
   src="/assets/images/wisnode/rak7201/ttnv3/image018.png"
   width="100%"
@@ -653,7 +653,7 @@ at+set_config=device:restart
 />
 ## Key Functions
 
-In this section, the main functionality of the different keys (buttons) of the device will be addressed. 
+In this section, the main functionality of the different keys (buttons) of the device will be addressed.
 
 Default payload data of the keys:
 
@@ -673,9 +673,9 @@ at+button=<button>:<port>:<data>
 Where:
 - **`<button>`** - The configured key (range 1-4)
 - **`<port>`** - Configured port number (range 1-223)
-- **`<data>`** - The sent data (max length is 10 characters) 
+- **`<data>`** - The sent data (max length is 10 characters)
 
-Example: 
+Example:
 
 Change the data sent from the pressing of button 1 to HelloWorld using the command:
 
@@ -689,7 +689,7 @@ To check the data of the buttons you can execute the command:
 at+get_config=device:status
 ```
 
-The result is shown in Figure 51.
+The result is shown in **Figure 51**.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/24.png"
@@ -722,12 +722,12 @@ When the device is still sending after the button is pressed, if the user presse
 | Key 4 red LED  flash for 1 sec                     | One flash Indicates that the WisNode Button 4K is not connected to the Network, after the user press any button. Two flashes Indicate that the join procedure have failed. |
 | All four blue LEDs  flash at once for 1 second     | Joining the network is successful.                           |
 | All blue LEDs flash clockwise 1-2-4-3              | The device is trying to join the network.                    |
-| Key 2 red LED                                      | Indicates battery charging mode. You can charge the battery of the WisNode Button 4k via the micro USB port. When the red LED on button 2 is on – the battery is charging, when it goes off – the battery is charged. |
+| Key 2 red LED                                      | Indicates battery charging mode. You can charge the battery of the WisNode Button 4k via the micro USB port. When the red LED on Button 2 is on – the battery is charging, when it goes off – the battery is charged. |
 | All four blue LEDs  are on                         | The device is in configuration mode.                         |
 
 ## HeartBeat function
 
-The HeartBeat is used to monitor the network connection and to send the battery level information of the WisNode Button 4K. 
+The HeartBeat is used to monitor the network connection and to send the battery level information of the WisNode Button 4K.
 
 The device can send a HeartBeat packet according to the configured HeartBeat interval. The AT command for configuring the HeartBeat interval is:
 
@@ -760,7 +760,7 @@ The HeartBeat message data format is:
 
 The battery level is represented in percentage form in hexadecimal format.
 
-For example: if the payload message of the HeartBeat is 48 60, this represents 96% battery level.
+For example: If the payload message of the HeartBeat is 48 60, this represents 96% battery level.
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/26.png"
@@ -792,8 +792,8 @@ at+set_config=device:restart
   caption="Restarting with an AT command"
 />
 
-2. You can restart the device by holding Key 2 for three seconds. When held, the blue LED will stay lit, and will turn off when the device is restarted. 
+2. You can restart the device by holding Key 2 for three seconds. When held, the blue LED will stay lit, and will turn off when the device is restarted.
 
 ::: tip 📝 NOTE:
-After the device restart manually or by AT command the WisNode Button 4K will try to join the network automatically if the OTAA method is configured. This will be indicated by 4 blue LEDs flashing clockwise. The device will make three attempts to Join the Network. If a Join attempt fails, the red LED on button 4 will flash for 1 second. If the three join attempts are failed, the device needs to be restarted manually or by AT command to make a new attempt. 
+After the device restart manually or by AT command the WisNode Button 4K will try to join the network automatically if the OTAA method is configured. This will be indicated by 4 blue LEDs flashing clockwise. The device will make three attempts to Join the Network. If a Join attempt fails, the red LED on button 4 will flash for 1 second. If the three join attempts are failed, the device needs to be restarted manually or by AT command to make a new attempt.
 :::

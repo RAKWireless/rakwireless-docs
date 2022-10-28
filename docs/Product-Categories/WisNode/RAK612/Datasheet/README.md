@@ -27,7 +27,7 @@ The RAK612 WisNode Button is suitable for a variety of Smart Home applications: 
 - **Battery:** 300&nbsp;mAh
 - **Battery working time:** 2 years (Rechargeable)
 - **Power Consumption:** Transmit: 30&nbsp;mA, Standby: 10&nbsp;uA
-- **Operating Temperature:** -20&nbsp;°C to 60&nbsp;°C
+- **Operating Temperature:** -20°&nbsp;C to 60°&nbsp;C
 - **Working Environment:** Indoor
 
 ### Application
@@ -52,7 +52,7 @@ The RAK612 WisNode Button is suitable for a variety of Smart Home applications: 
 | Battery Capacity       | 300&nbsp;mAh (To be ordered individually)     |
 | Battery Lifespan       | 2 Years (Chargeable)                          |
 | Power Consumption      | Transmit: 30&nbsp;mA <br> Standby: 10&nbsp;uA |
-| Operating Temperature  | -20&nbsp;°C to 60&nbsp;°C                     |
+| Operating Temperature  | -20°&nbsp;C to 60°&nbsp;C                     |
 | Working Environment    | Indoor or Outdoor                             |
 | Equipped with Module   | RAK811                                        |
 | LoRaWAN Version        | V1.0.2                                        |
@@ -84,6 +84,6 @@ The RAK612 WisNode Button is suitable for a variety of Smart Home applications: 
 
 ### Ordering Information
 
-| Product              | Description                                                                                                                                             | Activation |
-| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| RAK612 | Supported LoRaWAN Region: EU433, CN470, EU868, US915, AS923, AU915, KR920, IN865 (Different regions can be switched by upgrading different firmware) | OTAA/ABP   |
+| Product | Description                                                                                                                                          | Activation |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| RAK612  | Supported LoRaWAN Region: EU433, CN470, EU868, US915, AS923, AU915, KR920, IN865 (Different regions can be switched by upgrading different firmware) | OTAA/ABP   |

@@ -12,7 +12,7 @@ tags:
 ---
 
 # RAK2287/RAK5146 Pi HAT
-Thank You For choosing **RAK2287/RAK5146 Pi HAT** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentations for your product.
+Thank you for choosing **RAK2287/RAK5146 Pi HAT** in your awesome IoT project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 * [RAK2287 Pi HAT 3D Model](https://downloads.rakwireless.com/3D_File/WisHat/PWB-RAK2287_PI_HAT.stp)
@@ -28,6 +28,6 @@ It integrates one (1) 40-pin female Pi HAT connector and one (1) mini PCIe conne
 
 ## Product Features
 
-- Raspberry Pi form factor with a 40-pin compatible header.
-- Compatible with the Raspberry Pi 3 Model B+/Raspberry 4.
-- Mini PCIe connector on board.
+- Raspberry Pi form factor with a 40-pin compatible header
+- Compatible with the Raspberry Pi 3 Model B+/Raspberry 4
+- Mini PCIe connector on board

@@ -172,7 +172,7 @@ From the LORA & LORAWAN PARAMETERS screen, you can set and see all the informati
 | BC    | RAK1902+RAK1904    | &#10004;    | &#10004; | &#10004;           | &#10004;            |          |
 | CD    | RAK1904+RAK1906    | &#10004;    | &#10004; | &#10004;           | &#10004;            | &#10004; |
 
-&#10004; **Sensor count**: The number of sensors in the probe.
+- **Sensor count** - The number of sensors in the probe.
 
 <rk-img
   src="/assets/images/wisnode/rak2560/quickstart/sensor-probe-screen.jpg"

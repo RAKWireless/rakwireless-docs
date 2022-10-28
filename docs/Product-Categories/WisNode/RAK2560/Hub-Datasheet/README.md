@@ -26,16 +26,16 @@ The Sensor Hub and its sensor probes are easily configured via the WisToolBox ap
 
 ### Product Features
 
-- LoRa 868-930&nbsp;MHz support 
+- LoRa 868-930&nbsp;MHz support
 - Based on [RAK4630](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK4630-Module/Overview/#product-description) (MCU: nRF52840, Radio Chip: SX1262)
 - [RUI3](https://docs.rakwireless.com/RUI3/#overview) - based code
 - Auto-detection of the power source
 - Auto-detection of the Sensor Probes
 - 2~4&nbsp;pcs 3.6&nbsp;V ER18505 4000&nbsp;mAh Li-SOCl2 primary lithium batteries
-- 12&nbsp;V<sub>DC</sub> over power supply or solar panel 
+- 12&nbsp;V<sub>DC</sub> over power supply or solar panel
 - NB-IoT interface module ([RAK5860](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK5860/Overview/)) support (optional)
 - Embedded antenna
-  - High efficiency (over 75%) LoRa Band 860~930&nbsp;MHz 
+  - High efficiency (over 75%) LoRa Band 860~930&nbsp;MHz
   - Support 700~960&nbsp;MHz and 1700~2170&nbsp;MHz.
 - NFC tag for power on and smart connect over BLE
 - Prevent theft via the hall effect sensor on the exclusive mounting bracket
@@ -73,7 +73,7 @@ The dimensions for the body of the Sensor Hub are 120&nbsp;x&nbsp;80&nbsp;x&nbsp
 
 #### Block Diagram
 
-The **RAK2560 Sensor Hub** uses RAK4630 as a core. The One-wire protocol provides easy connection and easy assembly. The device supports two kinds of wireless communication, LoRa, and NB-IoT that are switchable. A hybrid power system provides more possibilities to customize the Hub to correspond to the customer/market demands. 
+The **RAK2560 Sensor Hub** uses RAK4630 as a core. The One-wire protocol provides easy connection and easy assembly. The device supports two kinds of wireless communication, LoRa, and NB-IoT that are switchable. A hybrid power system provides more possibilities to customize the Hub to correspond to the customer/market demands.
 
 <rk-img
   src="/assets/images/wisnode/rak2560/hub-datasheet/block-diagram.png"

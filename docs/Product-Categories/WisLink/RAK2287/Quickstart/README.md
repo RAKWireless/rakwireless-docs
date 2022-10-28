@@ -3,15 +3,13 @@ prev: ../Overview/
 next: ../Datasheet/
 tags:
   - RAK2287
-rak_desc: Contains instructions and tutorials for installing and deploying your RAK2287 WisLink LPWAN Concentrator. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LPWAN Concentrator. 
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK2287 WisLink LPWAN Concentrator. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LPWAN Concentrator.
 rak_img: /assets/images/wislink-lora/rak2287/quickstart/1main/RAK2287_home.png
 ---
 
 # RAK2287 Quick Start Guide
 
 ## Prerequisites
-
-
 
 ### What Do You Need?
 
@@ -23,12 +21,12 @@ The following two sections provide a list of the components and tools you need t
 - **Raspberry Pi 3/4** (RAK2287 bundle includes a Raspberry Pi 4)
 - **RAK2287 Pi HAT** (RAK2287 bundle includes a RAK2287 Pi HAT)
 - LoRa and GPS antennas
-- A 16G SD card (included in the RAK2287 bundle only), a card reader, and a PC
+- A 16&nbsp;GB SD card (included in the RAK2287 bundle only), a card reader, and a PC
 
 #### Software Tools
 
-- [Balena Etcher](https://www.balena.io/etcher/): a tool for burning the firmware on the SD card.
-- [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html): a Windows tool for SSH, required to connect to the Gateway.
+- [Balena Etcher](https://www.balena.io/etcher/): a tool for burning the firmware on the SD card
+- [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html): a Windows tool for SSH, required to connect to the gateway
 - Latest [RAK2287 Firmware](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Firmware/RAK2287_Latest_Firmware.zip)
 
 ### Device Firmware Setup
@@ -40,13 +38,13 @@ For an easy and quick way of having a fully functional gateway, a Precompiled Fi
 1. Download the latest firmware of **[RAK2287](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Firmware/RAK2287_Latest_Firmware.zip)**, which is based on the Raspbian OS.
 2. Use an image writing tool to install the firmware on the SD Card. For this tutorial, you will be using **[Etcher](https://www.balena.io/etcher/),** an open-source utility used for burning image files.
 3. Insert your SD Card into the SD Card reader and plug it into your computer.
-4. Open the Etcher Software, and select the downloaded image file through the ( **Label - 1** ) button in the image below.
+4. Open the Etcher Software, and select the downloaded image file through the ( **Label - 1** ) button in **Figure 1**.
 
 :::tip 📝 NOTE
-Your SD Card should be automatically detected by the Etcher software in the Label - 2 of the image below. If not, secure a proper connection.
+Your SD card should be automatically detected by the Etcher software in Label - 2 of **Figure 1**. If not, secure a proper connection.
 :::
 
-Click Flash and wait for a couple of minutes until it displays "**Flash Complete.**"
+Click **Flash** and wait for a couple of minutes until it displays "**Flash Complete.**"
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/2prerequisites/2.balena-etcher-software.png"
@@ -56,11 +54,11 @@ Click Flash and wait for a couple of minutes until it displays "**Flash Complete
 
 ### Assembly Guide
 
-To create a functioning RAK2287 WisLink LPWAN Concentrator, you need to put several components together:
+To create a functioning RAK2287 WisLink LPWAN Concentrator, you need to put several components together.
 
 #### Mount the Concentrator
 
-Insert your **RAK2287 mPCIe card** into the mPCIe slot on the **RAK2003 Pi HAT**. Make sure the card fits snugly into the connector, it should end up sticking out at a **45-degree angle**. Gently press it down and fasten it with 2 screws. If you have positioned the card right, the screw holes on the RAK2287 will match the ones on the RAK2003. Use **Figure 1** as reference.
+Insert your **RAK2287 mPCIe card** into the mPCIe slot on the **RAK2003 Pi HAT**. Make sure the card fits snugly into the connector, it should end up sticking out at a **45-degree angle**. Gently press it down and fasten it with 2 screws. If you have positioned the card right, the screw holes on the RAK2287 will match the ones on the RAK2003. Use **Figure 2** as a reference.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/2prerequisites/3.assembly-of-the-concentrator-and-hat.jpg"
@@ -73,12 +71,12 @@ Insert your **RAK2287 mPCIe card** into the mPCIe slot on the **RAK2003 Pi HAT**
 The module comes with **two antennas, GPS, and LoRa**. Both have pigtail cables that have uFL connectors, which fit onto the corresponding ports on the RAK2287. The ports are labeled, match each antenna to its port and gently press it until the connectors fit one to the other.
 
 :::warning ⚠️WARNING
-It is not recommended to have the device powered with the antennas detached. This might damage the circuity.
+It is not recommended to have the device powered with the antennas detached. This might damage the circuitry.
 :::
 
 #### Mount the HAT
 
-Take the RAK2003, which now has the RAK2287 securely sitting on top and insert it over the Raspberry Pi. Both the Pi and the HAT have a **40-pin connector** that should fit together when pressed on top of each other.
+Take the RAK2003, which now has the RAK2287 securely sitting on top, and insert it over the Raspberry Pi. Both the Pi and the HAT have a **40-pin connector** that should fit together when pressed on top of each other.
 
 #### SD Card
 
@@ -86,17 +84,17 @@ Insert the SD card with the Firmware you flashed in the previous step into the S
 
 #### Boot
 
-Power the Raspberry Pi via the Micro USB port (Pi3) / USB type-C port (Pi4). As this is going to be the first time to boot the OS it might take a couple of minutes before everything is set up, so please be patient.  
+Power the Raspberry Pi via the Micro USB port (Pi3) / USB type-C port (Pi4). As this is going to be the first time to boot the OS it might take a couple of minutes before everything is set up, so be patient.
 
 :::tip 📝 NOTE
-It is recommended to use at least a 2A power supply.
+It is recommended to use at least a 2&nbsp;A power supply.
 :::
 
 
 
 ### Access the Gateway
 
-There are two ways to connect to your RAK2287 WisLink LPWAN Concentrator setup:
+There are two ways to connect to your RAK2287 WisLink LPWAN Concentrator setup.
 
 :::warning ⚠️WARNING
 Before powering the Raspberry Pi 3B+ or 4, you should install the LoRa and GPS antennas. Not doing so might damage the boards.
@@ -120,7 +118,7 @@ There is no need to configure the IP address of your PC as it will be assigned a
 
 #### 2. Via the Ethernet Port on the Raspberry Pi
 
-You can also connect your PC with the gateway through an Ethernet cable. By default, the IP address of the gateway’s Ethernet interface is `192.168.10.10`, so you need to set the IP address of your PC’s Ethernet to the same network segment, for example, `192.168.10.20`_._
+You can also connect your PC to the gateway through an Ethernet cable. By default, the IP address of the gateway’s Ethernet interface is `192.168.10.10`, so you need to set the IP address of your PC’s Ethernet to the same network segment, for example, `192.168.10.20`_._
 
 - To do this in Windows, go to Control Panel > Network and Internet > Network and Sharing Center and click **Ethernet**
 
@@ -139,7 +137,7 @@ You can also connect your PC with the gateway through an Ethernet cable. By defa
   caption="Ethernet Properties"
 />
 
-- By default, it will obtain an IP Address automatically. Click the Option **Use the following IP Address** and enter the  IP Address: `192.168.10.20` and press OK.
+- By default, it will obtain an IP address automatically. Click the Option **Use the following IP Address** and enter the  IP address: `192.168.10.20` and press OK.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/2prerequisites/7.ipv4-settings.png"
@@ -147,7 +145,7 @@ You can also connect your PC with the gateway through an Ethernet cable. By defa
   caption="TCP/IPv4 Properties"
 />
 
-Now, you should be able to access your gateway from your PC successfully using the IP Address `192.168.10.10`through SSH.
+Now, you should be able to access your gateway from your PC successfully using the IP address `192.168.10.10`through SSH.
 
 ### Log into the Gateway via SSH
 
@@ -161,19 +159,19 @@ Secure Shell (SSH) is typically used to log in to a remote machine and execute c
   caption="Putty Software for SSH in Windows"
 />
 
-- If you have connected to the gateway through **Wi-Fi AP Mode**, the IP Address is `192.168.230.1`.
-- If you have connected to the gateway through **Ethernet**, the IP Address is `192.168.10.10`.
+- If you have connected to the gateway through **Wi-Fi AP Mode**, the IP address is `192.168.230.1`.
+- If you have connected to the gateway through **Ethernet**, the IP address is `192.168.10.10`.
 - It will then prompt you to enter the username and password. The default username is "**pi**" and the default password is "**raspberry**".
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/2prerequisites/9.command-line.png"
   width="80%"
-  caption="Command line after log in"
+  caption="Command line after login"
 />
 
 #### 2. Mac OS
 
-Open the Terminal of Mac OS. Launch the **Terminal** application, which is found in "/Applications/Utilities/" directory but you can also launch it from Spotlight by hitting **Command + Spacebar** and typing “Terminal” and then return:
+Open the Terminal of Mac OS. Launch the **Terminal** application, which is found in the `/Applications/Utilities/` directory. You can also launch it from Spotlight, press **Command + Spacebar**, type **Terminal**, and then return.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/2prerequisites/10.mac-terminal.png"
@@ -189,10 +187,10 @@ Open the terminal of Mac OS. Enter **root mode** by typing the following command
   caption="SSH in Mac OS"
 />
 
-- If you are not in root mode, enter "`ssh pi@192.168.230.1`" in the terminal to login to your gateway, the default password is "**raspberry**".
+- If you are not in root mode, enter "`ssh pi@192.168.230.1`" in the terminal to log in to your gateway, the default password is "**raspberry**".
 - If you connect your PC with the gateway through Ethernet Cable, you should enter "`ssh pi@192.168.10.10`", the default password is "**raspberry**".
 
-OK, you have logged into the gateway through SSH successfully same with the image shown below:
+Now, you have logged into the gateway through SSH successfully the same with **Figure 11**.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/2prerequisites/12.login-successful.jpg"
@@ -202,7 +200,7 @@ OK, you have logged into the gateway through SSH successfully same with the imag
 
 #### 3. Linux OS
 
-If the OS of your PC is Linux, you should do the same as the Mac OS, except the root mode.
+If the OS of your PC is Linux, you should do the same as the Mac OS, except for the root mode.
 
 
 ## Product Configuration
@@ -215,20 +213,20 @@ Assuming you have successfully logged into your gateway using SSH. Enter the fol
 sudo gateway-config
 ```
 
-Then, you will see a page the same as figure 1.
+Then, you will see a page the same as **Figure 12**.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/3configuring-the-gateway/1.configuring-options.png"
   width="100%"
-  caption="Configuration Options for the Gateway"
+  caption="Configuration options for the gateway"
 />
 
-1. **Set pi password** - used to set/change the password of the gateway.
-2. **Set up RAK Gateway LoRa Concentrator** - used to configure the frequency, which the gateway will operate on, and the LoRaWAN Server which the gateway will work with.
-3. **Restart packet -forwarder** - used to restart the LoRa packet forwarded process.
-4. **Edit packet-forwarder config-** used to open the global_conf.json file, to edit LoRaWAN  parameters manually.
-5. **Configure Wifi** - used to configure the Wi-Fi settings to connect to a network.
-6. **Configure LAN** - used to configure the Ethernet adapter settings.
+1. **Set pi password** - used to set/change the password of the gateway
+2. **Set up RAK Gateway LoRa Concentrator** - used to configure the frequency, which the gateway will operate on, and the LoRaWAN Server which the gateway will work with
+3. **Restart packet -forwarder** - used to restart the LoRa packet forwarded process
+4. **Edit packet-forwarder config-** used to open the global_conf.json file, to edit LoRaWAN  parameters manually
+5. **Configure Wifi** - used to configure the Wi-Fi settings to connect to a network
+6. **Configure LAN** - used to configure the Ethernet adapter settings
 
 :::tip 📝 NOTE
 A unique ID will be generated for the gateway. This is also called Gateway EUI squared in red in the figure above and is essential for registering the gateway with any LoRa Network Server (TTN, ChirpStack).
@@ -250,7 +248,7 @@ sudo gateway-version
 
 It is a good security practice to change the default password "**raspberry**" which is the same on all Raspberry Pi devices.
 
-- First, choose "1 Set pi password" option referred on figure 3 below.
+- First, choose the "1 Set pi password" option referred on **Figure 14**.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/3configuring-the-gateway/3.set-pi-password.png"
@@ -266,7 +264,7 @@ It is a good security practice to change the default password "**raspberry**" wh
   caption="Confirm Password Change"
 />
 
-- Alright, the success message for changing password will then pop up.
+- Alright, the success message for changing the password will then pop up.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/3configuring-the-gateway/5.successful-password-change.png"
@@ -304,7 +302,7 @@ You can choose one of two supported LoRa Servers here: **TTN** or
   caption="Selecting the TTN Channel Plan"
 />
 
-After choosing the correct frequency, the success message will appear as shown in figure 9 below.
+After choosing the correct frequency, the success message will appear as shown in **Figure 20**.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/3configuring-the-gateway/9.frequency-changed.png"
@@ -323,7 +321,7 @@ After choosing the correct frequency, the success message will appear as shown i
 
 **ChirpStack**: If you choose Chirpstack as your LoRa Server, you will see the following page with two options available:
 
-- **ChirpStack Channel Plan Configuration** - used to configure your Regional Frequency Band.
+- **ChirpStack Channel Plan Configuration** - used to configure your Regional Frequency Band
 - **ChirpStack ADR Configure** -  used to enable/disable the Adaptive Data Rate (ADR)
 functionality.
 
@@ -342,11 +340,11 @@ Then, set the IP address of the ChirpStack which you want your gateway to work w
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/3configuring-the-gateway/12.default-lora-ip.png"
   width="100%"
-  caption="Default LoRaServer IP Address"
+  caption="Default LoRaServer IP address"
 />
 
 :::tip 📝 NOTE
-The default IP Address is **127.0.0.1**, which means you will be using the Built-in LoRa Server. If you want to use an independent LoRa Server running on another device or a cloud based LoRa Server, you need to set it to the corresponding IP address.
+The default IP address is **127.0.0.1**, which means you will be using the Built-in LoRa Server. If you want to use an independent LoRa Server running on another device or a cloud-based LoRa Server, you need to set it to the corresponding IP address.
 :::
 
 - If you have instead selected "**Chirpstack ADR Configure**", you can enable/disable the Adaptive Data Rate (ADR) functionality:
@@ -361,7 +359,7 @@ The default IP Address is **127.0.0.1**, which means you will be using the Built
 
 ### Connecting to a Network
 
-If you want to use TTN or an independent ChirpStack, which may be deployed in a local area network or a remote one, you need to connect your Gateway to a networking device that will allow you connectivity to the internet (a router for example). There are 2 options offered for this purpose.
+If you want to use TTN or an independent ChirpStack, which may be deployed in a local area network or a remote one, you need to connect your gateway to a networking device that will allow you connectivity to the internet (a router for example). There are two options offered for this purpose.
 
 #### Connect through Wi-Fi
 
@@ -378,8 +376,8 @@ There are 5 options to choose from in the Wi-Fi configuration menu:
 1. **Enable AP Mode/Disable Client Mode** - after rebooting, the gateway will work in Wi-Fi Access Point Mode while the Wi-Fi Client Mode will be disabled (this is the default mode).
 2. **Enable Client Mode/Disable AP Mode** - after rebooting, the gateway will work in Wi-Fi Client mode, while Wi-FI AP Mode will be disabled.
 3. **Modify SSID and pwd for AP Mode** - used to modify the SSID and password of the Wi-Fi AP. It only works if the Wi-Fi AP Mode is enabled.
-4. **Add New SSID for Client** - this is used if you want to connect to a new Wi-Fi Network. Only works in Wi-Fi Client mode.
-5. **Change Wi-Fi Country** - this is used to modify the Resident Country to match with Wi-Fi standards.
+4. **Add New SSID for Client** - is used if you want to connect to a new Wi-Fi Network. Only works in Wi-Fi Client mode.
+5. **Change Wi-Fi Country** - is used to modify the Resident Country to match with Wi-Fi standards.
 
 :::warning ⚠️WARNING
 To enable Wi-Fi Client Mode, you have to disable first the AP Mode.
@@ -404,7 +402,7 @@ Once Wi-Fi AP Mode has been disabled by choosing "**2 Enable Client Mode/Disable
 - Enter the SSID of the network you want to connect:
 
 :::warning ⚠️WARNING
-Make sure to input the correct Wi-Fi SSID and Password or you will not be able to connect to the RAK2287 WisLink LPWAN Concentrator again via SSH in Wi-Fi AP Mode. If stuck in this situation, follow the procedure listed in [Connecting to a Network](#reverting-to-wi-fi-ap-mode) document which is applicable for all Raspberry Pi based gateways to work again in Wi-Fi AP mode.
+Make sure to input the correct Wi-Fi SSID and Password or you will not be able to connect to the RAK2287 WisLink LPWAN Concentrator again via SSH in Wi-Fi AP Mode. If stuck in this situation, follow the procedure listed in [Connecting to a Network](#reverting-to-wi-fi-ap-mode) document which is applicable for all Raspberry Pi-based gateways to work again in Wi-Fi AP mode.
 :::
 
 <rk-img
@@ -427,14 +425,14 @@ Make sure to input the correct Wi-Fi SSID and Password or you will not be able t
 If you want to connect to the router through Ethernet Cable, do the following steps:
 
 - In the main configuration menu, choose **“6 Configure LAN”**. This will let you set up a static IP address for the Gateway’s Ethernet adapter.
-- Just fill a static IP Address according to the IP address of the router you want to connect. Note that the LoRaWAN gateway and the router must be in the same network segment, otherwise the connection fails.
-- By default, the IP Address of the gateway's Ethernet is `192.168.10.10`.
+- Just fill in a static IP address according to the IP address of the router you want to connect. Note that the LoRaWAN gateway and the router must be in the same network segment, otherwise the connection fails.
+- By default, the IP address of the gateway's Ethernet is `192.168.10.10`.
 
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/4connecting-to-a-network/6.ethernet-ip.png"
   width="100%"
-  caption="Default gateway Ethernet IP Address"
+  caption="Default gateway Ethernet IP address"
 />
 
 - Then configure the IP address of the Router. This is the LAN Interface IP address of the router.
@@ -442,10 +440,10 @@ If you want to connect to the router through Ethernet Cable, do the following st
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/4connecting-to-a-network/7.lan-interface.png"
   width="100%"
-  caption="LAN Interface IP Address of the Router"
+  caption="LAN Interface IP address of the Router"
 />
 
-- Press OK and a success message appear.
+- Press OK and a success message appears.
 - Lastly, reboot the gateway using the command "`sudo reboot`" in the command line and it will connect to the router successfully through Ethernet.
 
 #### Optional Configurations
@@ -456,7 +454,7 @@ The configurations in this section are optional and situational.
 
 If you have entered either or both incorrect Wi-Fi SSID and Password in the Wi-Fi Client Mode setup for the RAK2287 WisLink LPWAN Concentrator to connect to the router, follow these set of steps for you to work again in Wi-Fi AP Mode and redo the setup.
 
-- Remove the SD Card from your RAK2287 WisLink LPWAN Concentrator and insert it into your PC. Your PC should be able to detect it the same as figure 8 below.
+- Remove the SD Card from your RAK2287 WisLink LPWAN Concentrator and insert it into your PC. Your PC should be able to detect it the same as **Figure 32**.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/4connecting-to-a-network/8.create-rak-ap.png"
@@ -476,11 +474,11 @@ cd > rak_ap
 
 ### Connecting to The Things Network (TTN)
 
-The Things Network is about enabling low power devices to use long range gateways to connect to an open-source, decentralized network to exchange data with Application. Learn more about the Things Network [here](https://www.thethingsnetwork.org/docs/).
+The Things Network is about enabling low-power devices to use long-range gateways to connect to an open-source, decentralized network to exchange data with Applications. Learn more about the Things Network [here](https://www.thethingsnetwork.org/docs/).
 
-- First, you should have connected your  gateway to the router in order to access the internet according to the method which has been introduced in the [auto$](/rak2287-concentrator-module-wislink-series/connecting-to-a-network) section of this document.
-- Second, config your  gateway and choose TTN as the LoRa Server and choose a correct frequency according to the method which has been introduced in the [auto$](/rak2287-concentrator-module-wislink-series/configuring-the-gateway) section.
-- Now go to the TTN Website: [https://www.thethingsnetwork.org/](https://www.thethingsnetwork.org/) and Login. You will then see the following page:
+- First, you should have connected your gateway to the router to access the internet according to the method which has been introduced in the [auto$](/rak2287-concentrator-module-wislink-series/connecting-to-a-network) section of this document.
+- Second, config your gateway and choose TTN as the LoRa Server and choose the correct frequency according to the method which has been introduced in the [Configure the Gateway](https://docs.rakwireless.com/Product-Categories/WisLink/RAK2287/Quickstart/#configuring-the-gateway) section.
+- Now go to the [TTN website](https://www.thethingsnetwork.org/) and log in.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/5connecting-to-the-ttn/1.ttn_home_page.png"
@@ -501,24 +499,24 @@ The Things Network is about enabling low power devices to use long range gateway
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/5connecting-to-the-ttn/3.add-gateway.png"
   width="100%"
-  caption="Adding a Gateway to TTN"
+  caption="Adding a gateway to TTN"
 />
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/5connecting-to-the-ttn/4.register-gateway.png"
   width="100%"
-  caption="Registering your Gateway"
+  caption="Registering your gateway"
 />
 
-- **Gateway EUI** - refers to the Gateway ID you obtained from the previous step. In case you forgot, just type "**gateway-version**" in the command line. This must be the same with the  gateway's True Gateway ID otherwise you will fail to register your  gateway on TTN.
+- **Gateway EUI** - refers to the Gateway ID you obtained from the previous step. In case you forgot, just type "**gateway-version**" in the command line. This must be the same with the gateway's True Gateway ID otherwise you will fail to register your gateway on TTN.
 
 :::tip 📝 NOTE
 Make sure to select the "**I'm using the legacy packet forwarder**" check box.
 :::
 
-- **Description** - A human readable description of your  gateway.
-- **Frequency Plan** - This is the frequency you want to use and it must be the same with  gateway and the node.
-- **Router** - The router this gateway will connect to. To reduce latency, pick a router that is in a region which is close to the location of the gateway.
+- **Description** - A human-readable description of your gateway.
+- **Frequency Plan** - This is the frequency you want to use and it must be the same with the gateway and the node.
+- **Router** - The router this gateway will connect to. To reduce latency, pick a router that is in a region that is close to the location of the gateway.
 - **Location** - Choose the location of the gateway by entering its coordinates. This is reflected on the Gateway World Map.
 - **Antenna Placement** - Where is your antenna placed? Is it placed indoors or outdoors?
 
@@ -529,22 +527,22 @@ Make sure to select the "**I'm using the legacy packet forwarder**" check box.
   caption="Gateway overview"
 />
 
-Click Register Gateway and wait for a couple of minutes. If the status of your gateway is "**Connected**" same as in **Figure 5** as reference, Congratulations! Your gateway is now connected to the The Things Network (TTN).
+Click **Register Gateway** and wait for a couple of minutes. If the status of your gateway is **Connected** the same as in **Figure 37** as a reference.
 
 
 ### Connect the Gateway with Chirpstack
 
-The ChirpStack or previously known as LoRaServer project provides open-source components for building LoRaWAN networks. You can learn more about ChirpStack [**here**](https://www.chirpstack.io/)
+The ChirpStack or previously known as the LoRaServer project provides open-source components for building LoRaWAN networks. Learn more about [ChirpStack](https://www.chirpstack.io/) on the website.
 
 For the RAKwireless Developer Gateways, there are 2 ways to use the ChirpStack:
 
-#### 1. Using the built-in ChirpStack
+#### 1. Using the Built-in ChirpStack
 
-There is a built-in ChirpStack in every RAK Developer gateway if you use the latest firmware.
+There is a built-in ChirpStack in every RAK Developer Gateway if you use the latest firmware.
 
-- When you use it for the first time after burning the latest firmware, the gateway will work in the EU868 Band and use the built-in ChirpStack as its default LoRa  Server. If you don't want to change the frequency or LoRa Server, you don't have to do anything as this will be configured automatically when the gateway boots.
-- However if it is not the first time and you want to use the built-in ChirpStack as the LoRa Server, follow the steps discussed in [auto$](/rak2287-concentrator-module-wislink-series/configuring-the-gateway) section.
-- **Optional:** If ever you disabled the AP Mode and you have connected it to your own Wifi network (Client Mode). You can search for your gateway’s IP Address via [**Advanced IP Scanner**](https://www.advanced-ip-scanner.com/). Copy the IP Address of your gateway, it should have a Manufacturer name of **Raspberry Pi Foundation**:
+- When you use it for the first time after burning the latest firmware, the gateway will work in the EU868 Band and use the built-in ChirpStack as its default LoRa server. If you don't want to change the frequency or LoRa server, you don't have to do anything as this will be configured automatically when the gateway boots.
+- However, if it is not the first time and you want to use the built-in ChirpStack as the LoRa Server, follow the steps discussed in the [Configuring the Gateway](https://docs.rakwireless.com/Product-Categories/WisLink/RAK2287/Quickstart/#configuring-the-gateway) section.
+- **Optional**: If ever you disabled the AP Mode and you have connected it to your own WiFi network (Client Mode). You can search for your gateway’s IP address via [**Advanced IP Scanner**](https://www.advanced-ip-scanner.com/). Copy the IP address of your gateway, it should have the Manufacturer name of **Raspberry Pi Foundation**:
 
 
 <rk-img
@@ -553,32 +551,32 @@ There is a built-in ChirpStack in every RAK Developer gateway if you use the lat
   caption="IP address of your LPWAN Gateway using IP Scanner"
 />
 
-There is a Web-based UI that comes with the ChirpStack instance. Simply open a browser and enter the following credentials:
+There is a web-based UI that comes with the ChirpStack instance. Simply open a browser and enter the following credentials:
 
-- **Browser Address**: "Gateway IP Address:8080" (**Example**: http://192.168.254.176:8080)
+- **Browser Address**: "Gateway IP address:8080" (**Example**: http://192.168.254.176:8080)
 - **Username**: admin
 - **Password**: admin
 
 :::warning ⚠️WARNING
-It is advisable to change your password to tighten the security of your account. You can change this by clicking the "change password" button at the user icon.
+It is advisable to change your password to tighten the security of your account. You can change this by clicking the **change password** button at the user icon.
 :::
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/6connect-with-chirpstack/2.log-in.png"
   width="100%"
-  caption="ChirpStack Web-based UI"
+  caption="ChirpStack web-based UI"
 />
 
-- Everything should be pre-configured: Device profiles have been created, the gateway has been registered with the server, etc. If you go to the Gateways tab and click on rak_gateway, you should see the gateway details page.
+- Everything should be pre-configured: Device profiles have been created, the gateway has been registered with the server, etc. If you go to the **Gateways** tab and click on `rak_gateway`, you should see the gateway details page.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/6connect-with-chirpstack/3.available-gateways.jpg"
   width="100%"
-  caption="Available Gateways in Chirpstack"
+  caption="Available gateways in Chirpstack"
 />
 
 
-- Go to the rak_gateway and see the "Last seen" status. It must be a few seconds ago which signifies that the gateway is visible in the ChirpStack server.
+- Go to the `rak_gateway` and see the **Last seen** status. It must be a few seconds ago which signifies that the gateway is visible in the ChirpStack server.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/quickstart/6connect-with-chirpstack/4.last-seen.png"
@@ -588,4 +586,4 @@ It is advisable to change your password to tighten the security of your account.
 
 #### 2. Using an Independent ChirpStack
 
-You can setup an Independent ChirpStack by yourself. This is a lot more complicated having to deploy a remote ChirpStack by yourself but Chirpstack provided a detailed guide on how to do it [here](https://www.chirpstack.io/guides/debian-ubuntu/).
+You can set up an Independent ChirpStack by yourself. This is a lot more complicated than having to deploy a remote ChirpStack by yourself but Chirpstack provides a detailed guide on how to do it. You can check it on their [website](https://www.chirpstack.io/guides/debian-ubuntu/).

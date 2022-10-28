@@ -30,25 +30,25 @@ Overall, this gateway module is the most economical way to create different solu
 
 ### Features
 
-- Compatible with Stamp Edition specifications with mounted heat-sink.
-- SX1301 base band processor, emulates 49 x LoRa demodulators 10 parallel demodulation paths, support 8 uplinks channel, 1 downlink channel.
-- 2 x SX125X TX/RX front-ends high/ low frequency.
-- Supports 5 V power supply, integrated level conversion circuit.
-- TX power up to 27dBm, RX sensitivity down to - 139dBm@SF12, BW 125KHz.
-- Supports the LoRaWAN 1.0.2 protocol.
-- Supports global license-free frequency band (EU433, CN470, IN865, EU868, US915, AU915, KR920, and AS923).
-- Supports SPI interface.
-- Integrated the Ublox MAX-7Q GPS Module.
+- Compatible with Stamp Edition specifications with mounted heat-sink
+- SX1301 base band processor, emulates 49 x LoRa demodulators 10 parallel demodulation paths, support 8 uplinks channel, 1 downlink channel
+- 2 x SX125X TX/RX front-ends high/ low frequency
+- Supports 5&nbsp;V power supply, integrated level conversion circuit
+- TX power up to 27&nbsp;dBm, RX sensitivity down to - 139&nbsp;dBm @ SF12, BW 125&nbsp;kHz
+- Supports the LoRaWAN 1.0.2 protocol
+- Supports global license-free frequency band (EU433, CN470, IN865, EU868, US915, AU915, KR920,  and AS923)
+- Supports SPI interface
+- Integrated the Ublox MAX-7Q GPS Module
 
 ## Specifications
 
 ### Overview
 
-The overview shows the top and back view of the RAK2245 Stamp Edition board. It also presents the block diagram that discusses how the board works. 
+The overview shows the top and back view of the RAK2245 Stamp Edition board. It also presents the block diagram that discusses how the board works.
 
 #### Board Overview
 
-The **RAK2245 WisLink-LoRa Stamp Edition**, as shown in figure 1 below, has outer dimensions of **30.00 x 60.00 x 14.90 mm** (nominal value) which includes the 9.50 mm heat sink.
+The **RAK2245 WisLink-LoRa Stamp Edition**, as shown in **Figure 1** below, has outer dimensions of **30.00 x 60.00 x 14.90&nbsp;mm** (nominal value) which includes the 9.50&nbsp;mm heat sink.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2245-stamp-edition/datasheet/board-overview/roohsofgitzlzhbea2vz.jpg"
@@ -66,7 +66,7 @@ The **RAK2245 WisLink-LoRa Stamp Edition**, as shown in figure 1 below, has oute
 
 ### Hardware
 
-The hardware is categorized into five parts. It discusses the interfacing, pinouts and its corresponding functions and diagrams. It also covers the parameters and standard values of the board in terms of electrical and environmental. 
+The hardware is categorized into five (5) parts. It discusses the interfacing, pinouts and its corresponding functions and diagrams. It also covers the parameters and standard values of the board in terms of electrical and environmental.
 
 #### Interfaces
 
@@ -77,16 +77,14 @@ best possible use of the system.
 
 ##### Power Supply
 
-RAK2245 WisLink-LoRa Stamp Edition is powered through 5V. It integrates the IOREF for
-Level Translator, which can communicate with 3.3V, 1.8V and other different voltage
-interfaces.
+RAK2245 WisLink-LoRa Stamp Edition is powered through 5&nbsp;V. It integrates the IOREF for Level Translator, which can communicate with 3.3&nbsp;V, 1.8&nbsp;V and other different voltage interfaces.
 
 ##### SPI Interface
 
-The pin connector provides an SPI connection which allows direct access to the Sx1301 SPI interface. This gives the target system the possibility to use existing SPI interfaces to communicate with the module.
+The pin connector provides an SPI connection which allows direct access to the SX1301 SPI interface. This gives the target system the possibility to use existing SPI interfaces to communicate with the module.
 
 ::: tip 📝 NOTE
-Please reset SX1301 via PIN A13 after turning on your RAK2245 WisLink-LoRa Stamp Edition
+Reset SX1301 via Pin A13 after turning on your RAK2245 WisLink-LoRa Stamp Edition.
 :::
 
 ##### UART and I²C
@@ -103,11 +101,11 @@ There are two digital IO PINs, which give the user an interface to reset the GPS
 
 ##### Antenna RF Interface
 
-The modules have two RF interfaces for LoRa and GPS antennas over the standard UFL connectors (Hirose U. FL-R-SMT). It has a characteristic impedance of 50 Ω and supports both Tx and Rx via RF ports, providing the antenna interface.
+The modules have two RF interfaces for LoRa and GPS antennas over the standard UFL connectors (Hirose U. FL-R-SMT). It has a characteristic impedance of 50&nbsp;Ω and supports both Tx and Rx via RF ports, providing the antenna interface.
 
 #### Pin Definition
 
-The pinout diagram for the RAK2245 WisLink-LoRa Stamp Edition is shown in the figure below.
+The pinout diagram for the RAK2245 WisLink-LoRa Stamp Edition is shown in **Figure 3**.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2245-stamp-edition/datasheet/pin-definition/fahimiuydovhvpxrmcl9.jpg"
@@ -121,7 +119,7 @@ The pin connector of RAK2245 WisLink-LoRa Stamp Edition is located at the bottom
 | ------- | ----------- | -------- | ----------------------------------------------------------------------------------------------------------------- |
 | A1      | GND         | GND      | GND                                                                                                               |
 | A2      | GND         | GND      | GND                                                                                                               |
-| A3      | +5V         | POWER    | +5V Supply Voltage                                                                                                |
+| A3      | +5V         | POWER    | +5&nbsp;V Supply Voltage                                                                                          |
 | A4      | IOREF       | POWER    | Supply Voltage for Level Translator                                                                               |
 | A5      | RESET_GPS   | Input    | GPS Module reset PIN                                                                                              |
 | A6      | STANDBY_GPS | Input    | GPS Module standby PIN                                                                                            |
@@ -190,21 +188,21 @@ level and current consumption.
 |       3        | 3               | 13              | 0            | 26                              |
 |       3        | 3               | 14              | 0            | 27                              |
 
-- At T=25°C, Vdd = 5V (Typical) if nothing else stated
+- At T=25°&nbsp;C, Vdd = 5&nbsp;V (Typical) if nothing else stated
 
-| **Parameter**                         | **Condition**           | **Min**  | **Typical** | **Max**  |
-| ------------------------------------- | ----------------------- | -------- | ----------- | -------- |
-| Frequency Range                       |                         | 863 MHz  |             | 870 MHz  |
-| Modulation Techniques                 | FSK/LoRa                |          |             |          |
-| TX Frequency Variation vs Temperature | Power Level Setting: 20 | -3 Khz   |             | +3 Khz   |
-| TX Power Variation vs. Temperature    |                         | -5 dBm   |             | +5 dBm   |
-| TX Power Variation                    |                         | -1.5 dBm |             | +1.5 dBm |
+| **Parameter**                         | **Condition**           | **Min**       | **Typical** | **Max**       |
+| ------------------------------------- | ----------------------- | ------------- | ----------- | ------------- |
+| Frequency Range                       | -                       | 863&nbsp;MHz  |             | 870&nbsp;MHz  |
+| Modulation Techniques                 | FSK/LoRa                | -             |             | -             |
+| TX Frequency Variation vs Temperature | Power Level Setting: 20 | -3&nbsp;kHz   |             | +3&nbsp;kHz   |
+| TX Power Variation vs. Temperature    | -                       | -5&nbsp;dBm   |             | +5&nbsp;dBm   |
+| TX Power Variation                    | -                       | -1.5&nbsp;dBm |             | +1.5&nbsp;dBm |
 
 ##### Receiver RF
 
 We recommended that you use optimized RSSI calibration values which are part of HAL v3.1. For both Radio 1 and 2, the RSSI-offset should be set to -169. The following table shows typical sensitivity level of RAK2245 WisLink-LoRa Stamp Edition -LPWAN Gateway Concentrator Module.
 
-| **Signal Bandwidth (KHz)** | **Spreading Factor** | **Sensitivity (dBm)** |
+| **Signal Bandwidth (kHz)** | **Spreading Factor** | **Sensitivity (dBm)** |
 | -------------------------- | -------------------- | --------------------- |
 | 125                        | 12                   | -139                  |
 | 125                        | 7                    | -126                  |
@@ -221,11 +219,11 @@ The following are the electrical characteristics of RAK2245 WisLink-LoRa Stamp E
 
 The values and range given below are all in accordance with the Absolute Maximum Rating System (IEC 134).
 
-| **Parameter**             | **Description**   | **Min** | **Typical** | **Max** |
-| ------------------------- | ----------------- | ------- | ----------- | ------- |
-| **Supply Voltage (VDD)**  | Input DC Voltage  | -0.3V   | 5.0V        | 5.5V    |
-| **Operating Temperature** | Temperature Range | -40°C   |             | +85°C   |
-| **RF Input Power**        |                   |         |             | -15dBm  |
+| **Parameter**             | **Description**   | **Min**     | **Typical** | **Max**      |
+| ------------------------- | ----------------- | ----------- | ----------- | ------------ |
+| **Supply Voltage (VDD)**  | Input DC Voltage  | -0.3&nbsp;V | 5.0&nbsp;V  | 5.5&nbsp;V   |
+| **Operating Temperature** | Temperature Range | -40°&nbsp;C | -           | +85°&nbsp;C  |
+| **RF Input Power**        | -                 | -           | -           | -15&nbsp;dBm |
 
 ::: warning ⚠️ WARNING
 Stress exceeding of one or more of the limiting values listed under "Absolute Maximum Ratings" may cause permanent damage to the radio module.
@@ -235,12 +233,12 @@ Stress exceeding of one or more of the limiting values listed under "Absolute Ma
 
 The table below shows the maximum ESD.
 
-| **Parameter**                               | **Min** | **Typical** | **Max** | **Remarks**                                  |
-| ------------------------------------------- | ------- | ----------- | ------- | -------------------------------------------- |
-| **ESD sensitivity for all pins except ANT** |         |             | 1000V   | Human Body Model according to JESD22-A 114   |
-| **ESD sensitivity for ANT**                 |         |             | 1000V   | Human Body Model according to JESD22-A 114   |
-| **ESD immunity for ANT**                    |         |             | 4000V   | Contact Discharge according to IEC 61000-4-2 |
-|                                             |         |             | 8000V   | Air Discharge according to IEC 61000-4-2     |
+| **Parameter**                               | **Min** | **Typical** | **Max**     | **Remarks**                                  |
+| ------------------------------------------- | ------- | ----------- | ----------- | -------------------------------------------- |
+| **ESD sensitivity for all pins except ANT** |         |             | 1000&nbsp;V | Human Body Model according to JESD22-A 114   |
+| **ESD sensitivity for ANT**                 |         |             | 1000&nbsp;V | Human Body Model according to JESD22-A 114   |
+| **ESD immunity for ANT**                    |         |             | 4000&nbsp;V | Contact Discharge according to IEC 61000-4-2 |
+|                                             |         |             | 8000&nbsp;V | Air Discharge according to IEC 61000-4-2     |
 
 ::: tip 📝 NOTE
 The module is an Electrostatic Sensitive Device and requires special precautions when
@@ -251,8 +249,8 @@ handling.
 
 | **Mode**             | **Condition**              | **Min** | **Typical** | **Max** |
 | -------------------- | -------------------------- | ------- | ----------- | ------- |
-| **Active-Mode (TX)** | TX Enabled and RX Disabled |         | 336mA       |         |
-| **Active-Mode (RX)** | TX Disabled and RX Enabled |         | 360mA       |         |
+| **Active-Mode (TX)** | TX Enabled and RX Disabled |         | 336&nbsp;mA |         |
+| **Active-Mode (RX)** | TX Disabled and RX Enabled |         | 360&nbsp;mA |         |
 
 #### Environmental Requirements
 
@@ -260,9 +258,9 @@ handling.
 
 The table below shows the operation temperature range.
 
-| **Parameter**                    | **Min** | **Typical** | **Max** | **Remarks**                                                                         |
-| -------------------------------- | ------- | ----------- | ------- | ----------------------------------------------------------------------------------- |
-| **Normal Operating Temperature** | -40°C   | +25°C       | +85°C   | Normal operating temperature range (fully functional and meets 3GPP specifications) |
+| **Parameter**                    | **Min**     | **Typical** | **Max**     | **Remarks**                                                                         |
+| -------------------------------- | ----------- | ----------- | ----------- | ----------------------------------------------------------------------------------- |
+| **Normal Operating Temperature** | -40°&nbsp;C | +25°&nbsp;C | +85°&nbsp;C | Normal operating temperature range (fully functional and meets 3GPP specifications) |
 
 #### Mechanical Characteristics
 

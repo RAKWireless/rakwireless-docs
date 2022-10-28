@@ -1,5 +1,5 @@
 ---
-tags: 
+tags:
   - datasheet
   - wislink
   - RAK2013
@@ -22,22 +22,22 @@ The RAK2013 is a Raspberry Pi 3B+ edition cellular communications module that su
 
 The module is supported with extendable sensor board connected that follows the mikroBus standard. MikroBus has many kinds of sensor board, such as temperature, humidity, 3 axis sensor and light sensor, allowing easy sensor data transmission. Because of its wide range of supported sensors, it is suitable for applications such as environmental monitoring and presence sensing, that require cellular connectivity.
 
-The RAK2013 is compatible with RAK2245 Pi HAT module via the onboard 40 pin header. It can function as a cellular backhaul to a gateway, providing even greater flexibility for IoT solutions that require cellular as an option for ensuring service reliability.
+The RAK2013 is compatible with RAK2245 Pi HAT module via the onboard 40-pin header. It can function as a cellular backhaul to a gateway, providing even greater flexibility for IoT solutions that require cellular as an option for ensuring service reliability.
 
 ### Features
 
-- Compatible with Raspberry Pi 3B+ edition specification.
-- Quectel BG96/EG91/EG95 for NB-IOT / CAT-M / CAT1 LTE / CAT4 LTE.
-- Supports Voice over CAT-M or VoLTE.
-- Supports Nano SIM card or eSIM card.
-- Integrates audio codec and audio amplifier.
-- Integrates MikroBus interface to support sensor extended board.
-- Can be added to another Pi HAT to support LoRa concentrator.
-- Supports USB connector for higher data rate.
-- Supports GPS function(only for BG96 module) .
-- SMA/IPEX antenna optional for LTE and GPS.
-- Supports I2C, GPIOs, UART and ADC interfaces for Raspberry board.
-- Supports EEPROM to configure IOs automatically.
+- Compatible with Raspberry Pi 3B+ edition specification
+- Quectel BG96/EG91/EG95 for NB-IOT / CAT-M / CAT1 LTE / CAT4 LTE
+- Supports Voice over CAT-M or VoLTE
+- Supports Nano SIM card or eSIM card
+- Integrates audio codec and audio amplifier
+- Integrates MikroBus interface to support sensor extended board
+- Can be added to another Pi HAT to support LoRa concentrator
+- Supports USB connector for higher data rate
+- Supports GPS function(only for BG96 module)
+- SMA/IPEX antenna optional for LTE and GPS
+- Supports I2C, GPIOs, UART and ADC interfaces for Raspberry board
+- Supports EEPROM to configure IOs automatically
 
 ## Specifications
 
@@ -61,7 +61,7 @@ Here are the top view and external interfaces of RAK2013 WisLink Cellular Pi HAT
   caption="Nano Sim Card Slot and ESIM Chip in RAK2013"
 />
 
-The outer dimension of the RAK2013 measures 65.0 x 56.0 mm as shown below.
+The outer dimension of the RAK2013 measures 65.0 x 56.0&nbsp;mm as shown in **Figure 3**.
 
 <rk-img
   src="/assets/images/wislink-lte/rak2013/datasheet/rak2013-board-dimension.jpg"
@@ -71,7 +71,7 @@ The outer dimension of the RAK2013 measures 65.0 x 56.0 mm as shown below.
 
 #### Block Diagram
 
-The diagram below shows the internal architecture and external interfaces of RAK2013.
+**Figure 4** shows the internal architecture and external interfaces of RAK2013.
 
 <rk-img
   src="/assets/images/wislink-lte/rak2013/datasheet/block-diagram-rak2013.png"
@@ -81,7 +81,7 @@ The diagram below shows the internal architecture and external interfaces of RAK
 
 ### Hardware
 
-The hardware is categorized into eight parts. It discusses the interfacing, pinouts and their corresponding functions and diagrams. It also covers the parameters and standard values of the board in terms of electrical, mechanical and environmental. 
+The hardware is categorized into eight parts. It discusses the interfacing, pinouts and their corresponding functions and diagrams. It also covers the parameters and standard values of the board in terms of electrical, mechanical and environmental.
 
 #### Interfaces
 
@@ -90,14 +90,14 @@ It is built with **Quectel BG96/EG91/EG95 module** and is compatible with **Rasp
 - 40-pins Raspberry connector
 - Micro USB
 - MikroBus connector
-- Earphone Jack
+- Earphone jack
 - MIC Jack
-- Speaker Jack
-- Reset Button
-- PWRKEY Button
-- Nano Sim Card slot
+- Speaker jack
+- Reset button
+- PWRKEY button
+- Nano sim card slot
 - LEDs
-- Reset Button
+- Reset button
 - USB boot jumper
 
 **IPEX Antenna Connectors**:
@@ -107,12 +107,12 @@ It is built with **Quectel BG96/EG91/EG95 module** and is compatible with **Rasp
 
 ##### Micro-B USB Interface
 
-A Standard Micro-B USB compliant with USB 2.0 standard specification is used to provide an interface to connect our device to Raspberry Pi or a PC for control of the board and firmware upgrade. The Micro-B USB pin connection and definition is shown below:
+A standard Micro-B USB compliant with USB 2.0 standard specification is used to provide an interface to connect our device to Raspberry Pi or a PC for control of the board and firmware upgrade. The Micro-B USB pin connection and definition is shown in **Figure 5**.
 
 <rk-img
   src="/assets/images/wislink-lte/rak2013/datasheet/micro-b-usb-connection.jpg"
   width="20%"
-  caption="Micro-B USB Connection"
+  caption="Micro-B USB connection"
 />
 
 | Pin | Description   |
@@ -139,25 +139,25 @@ Three (3) LEDs are used to indicate operating status, here are their functions:
 
 ##### RESET Push Button
 
-Reset Push Button is used to reset the BG96/EG91/EG95 module. To reset the module, push the Reset Button for 1 second.
+Reset Push Button is used to reset the BG96/EG91/EG95 module. To reset the module, push the Reset button for one (1) second.
 
 ##### PWRKEY Push Button
 
-When either of Quectel BG96 / EG91 / EG95 module is in power off mode, it can be turned on to normal mode by driving the PWRKEY pin to a low level for at least 100 ms. Note that the module is still in power off mode even when plugging in the power socket, thus, press the PWRKEY to power up the module. When the module is in normal mode, it can be turned to power off mode by pressing the PWRKEY button.
+When either of Quectel BG96 / EG91 / EG95 module is in power off mode, it can be turned on to normal mode by driving the PWRKEY pin to a low level for at least 100&nbsp;ms. Note that the module is still in power off mode even when plugging in the power socket, thus, press the PWRKEY to power up the module. When the module is in normal mode, it can be turned to power off mode by pressing the PWRKEY button.
 
 ##### Antenna RF interface
 
-The modules have two RF interfaces for LTE antenna and GPS/LTE DIV antenna over standard UFL connectors (Hirose U. FL-R-SMT) with a characteristic impedance of 50Ω. The RF ports support both the transmitter and receiver, providing the antenna interface.
+The modules have two RF interfaces for LTE antenna and GPS/LTE DIV antenna over standard UFL connectors (Hirose U. FL-R-SMT) with a characteristic impedance of 50&nbsp;Ω. The RF ports support both the transmitter and receiver, providing the antenna interface.
 
 #### Pin Definition
 
-RAK2013 board is composed of four connectors: **J3**, **J15**, **J16** and **J17**.
+RAK2013 board is composed of four (4) connectors: **J3**, **J15**, **J16**, and **J17**.
 
 ##### J3 - Boot Jumper
 
 - Jumper for BG96/EG91/EG95 USB boot
-- J3 open: boot normally.
-- J3 shorted: Force the module to boot from USB port.
+- J3 open: Boot normally
+- J3 shorted: Force the module to boot from USB port
 
 ##### J15 - Raspberry Connector
 
@@ -169,48 +169,48 @@ RAK2013 board is composed of four connectors: **J3**, **J15**, **J16** and **J17
 
 The table below shows the pin connections of the raspberry connector.
 
-| Pin Number | RAK2013             | Raspberry Definition |
-| ---------- | ------------------- | -------------------- |
-| 1          | NC                  | 3V3                  |
-| 2          | CONN_5V0            | 5V                   |
-| 3          | SDA_to_MikroBus     | GPIO2 (SDA1)         |
-| 4          | CONN_5V0            | 5V                   |
-| 5          | SCL_to_MikroBus     | GPIO3 (SCL1)         |
-| 6          | GND                 | GND                  |
-| 7          | PA_SHNT             | GPIO4 (GCLK)         |
-| 8          | BG96_RX             | GPIO14 (TXD0)        |
-| 9          | GND                 | GND                  |
-| 10         | BG96_TX             | GPIO15 (RXD0)        |
-| 11         | NC                  | GPIO17 (GPIO_GEN0)   |
-| 12         | BG96_PWRKEY         | GPIO18 (GPIO_GEN1)   |
-| 13         | RST\_ MikroBus      | GPIO27 (GPIO_GEN2)   |
-| 14         | GND                 | GND                  |
-| 15         | BG96_DTR            | GPIO22 (GPIO_GEN3)   |
-| 16         | Reserved for GPS TX | GPIO23 (GPIO_GEN4)   |
-| 17         | NC                  | 3V3                  |
-| 18         | Reserved for GPS RX | GPIO24 (GPIO_GEN5)   |
-| 19         | MikroBus_MOSI       | GPIO10 (SPI_MOSI)    |
-| 20         | GND                 | GND                  |
-| 21         | MikroBus \_MISO     | GPIO9 (SPI_MISO)     |
-| 22         | MikroBus \_INT      | GPIO25 (GPIO_GEN6)   |
-| 23         | MikroBus \_CLK      | GPIO11 (SPI_SCLK)    |
-| 24         | NC                  | GPIO8 (SPI_CE0_N)    |
-| 25         | GND                 | GND                  |
-| 26         | MikroBus \_CS       | GPIO7 (SPI_CE1_N)    |
-| 27         | ID_SDA              | ID_SD                |
-| 28         | ID_SCL              | ID_SC                |
-| 29         | BG96_W_DISABLE      | GPIO5                |
-| 30         | GND                 | GND                  |
-| 31         | BG96_RESET          | GPIO6                |
-| 32         | MikroBus_PWM        | GPIO12               |
-| 33         | NC                  | GPIO13               |
-| 34         | GND                 | GND                  |
-| 35         | NC                  | GPIO19               |
-| 36         | BG96_PSM            | GPIO16               |
-| 37         | BG96*AP* READY      | GPIO26               |
-| 38         | BG96_RI             | GPIO20               |
-| 39         | GND                 | GND                  |
-| 40         | BG96_STATUS         | GPIO21               |
+| Pin No. | RAK2013             | Raspberry Definition |
+| ------- | ------------------- | -------------------- |
+| 1       | NC                  | 3V3                  |
+| 2       | CONN_5V0            | 5V                   |
+| 3       | SDA_to_MikroBus     | GPIO2 (SDA1)         |
+| 4       | CONN_5V0            | 5V                   |
+| 5       | SCL_to_MikroBus     | GPIO3 (SCL1)         |
+| 6       | GND                 | GND                  |
+| 7       | PA_SHNT             | GPIO4 (GCLK)         |
+| 8       | BG96_RX             | GPIO14 (TXD0)        |
+| 9       | GND                 | GND                  |
+| 10      | BG96_TX             | GPIO15 (RXD0)        |
+| 11      | NC                  | GPIO17 (GPIO_GEN0)   |
+| 12      | BG96_PWRKEY         | GPIO18 (GPIO_GEN1)   |
+| 13      | RST\_ MikroBus      | GPIO27 (GPIO_GEN2)   |
+| 14      | GND                 | GND                  |
+| 15      | BG96_DTR            | GPIO22 (GPIO_GEN3)   |
+| 16      | Reserved for GPS TX | GPIO23 (GPIO_GEN4)   |
+| 17      | NC                  | 3V3                  |
+| 18      | Reserved for GPS RX | GPIO24 (GPIO_GEN5)   |
+| 19      | MikroBus_MOSI       | GPIO10 (SPI_MOSI)    |
+| 20      | GND                 | GND                  |
+| 21      | MikroBus \_MISO     | GPIO9 (SPI_MISO)     |
+| 22      | MikroBus \_INT      | GPIO25 (GPIO_GEN6)   |
+| 23      | MikroBus \_CLK      | GPIO11 (SPI_SCLK)    |
+| 24      | NC                  | GPIO8 (SPI_CE0_N)    |
+| 25      | GND                 | GND                  |
+| 26      | MikroBus \_CS       | GPIO7 (SPI_CE1_N)    |
+| 27      | ID_SDA              | ID_SD                |
+| 28      | ID_SCL              | ID_SC                |
+| 29      | BG96_W_DISABLE      | GPIO5                |
+| 30      | GND                 | GND                  |
+| 31      | BG96_RESET          | GPIO6                |
+| 32      | MikroBus_PWM        | GPIO12               |
+| 33      | NC                  | GPIO13               |
+| 34      | GND                 | GND                  |
+| 35      | NC                  | GPIO19               |
+| 36      | BG96_PSM            | GPIO16               |
+| 37      | BG96*AP* READY      | GPIO26               |
+| 38      | BG96_RI             | GPIO20               |
+| 39      | GND                 | GND                  |
+| 40      | BG96_STATUS         | GPIO21               |
 
 ##### J16 and J17 – MikroBus Interface
 
@@ -228,13 +228,13 @@ RAK2013 supports different frequency bands based on the module mounted on the bo
 
 ###### BG96 Module
 
-**BG96** is a series of LTE Cat M1/Cat NB1/EGPRS modules offering a maximum data rate of **300Kbps downlink** and **375Kbps uplink**.
+**BG96** is a series of LTE Cat M1/Cat NB1/EGPRS modules offering a maximum data rate of **300&nbsp;Kbps downlink** and **375&nbsp;Kbps uplink**.
 
 | Frequency     | BG96                                    |
 | ------------- | --------------------------------------- |
 | **LTE - FDD** | B1 / B2 / B3 / B4 / B5 / B8 / B12 / B18 |
 | **LTE - TDD** | B39 (for CAT M1 only)                   |
-| **EGPRS**     | 850 / 900 / 1800 / 1900 MHz             |
+| **EGPRS**     | 850 / 900 / 1800 / 1900&nbsp;MHz        |
 
 ###### EG91 Module
 
@@ -244,7 +244,7 @@ RAK2013 supports different frequency bands based on the module mounted on the bo
 | :------------: | :----------------------------: | :----------------------: |
 |  **LTE FDD**   | B1 / B3 / B7 / B8 / B20 / B28A | B2 / B4 / B5 / B12 / B13 |
 |   **WCDMA**    |            B1 / B8             |       B2 / B4 / B5       |
-| **GSM / EDGE** |         900 / 1800 MHz         |            -             |
+| **GSM / EDGE** |      900 / 1800&nbsp;MHz       |            -             |
 |   **Region**   |             Europe             |      North America       |
 
 ###### EG95 Module
@@ -255,12 +255,12 @@ RAK2013 supports different frequency bands based on the module mounted on the bo
 | :------------: | :----------------------------: | :----------------------: |
 |  **LTE FDD**   | B1 / B3 / B7 / B8 / B20 / B28A | B2 / B4 / B5 / B12 / B13 |
 |   **WCDMA**    |            B1 / B8             |       B2 / B4 / B5       |
-| **GSM / EDGE** |         900 / 1800 MHz         |            -             |
+| **GSM / EDGE** |      900 / 1800&nbsp;MHz       |            -             |
 |   **Region**   |             Europe             |      North America       |
 
 #### Antennas
 
-For module built-in BG96, there is one LTE antenna and one GPS antenna. For module built-in EG91/EG95, there are two LTE antennas and no GPS antenna with the module.
+For module built-in BG96, there is one LTE antenna and one GPS antenna. For module built-in EG91/EG95, there are two (2) LTE antennas and no GPS antenna with the module.
 
 ##### 1. LTE Antenna
 
@@ -274,7 +274,7 @@ For module built-in BG96, there is one LTE antenna and one GPS antenna. For modu
 
 ###### Antenna Dimension
 
-The LTE antenna for the RAK2013 covers a working frequency band from **824 MHz to 2690 MHz**.
+The LTE antenna for the RAK2013 covers a working frequency band from **824&nbsp;MHz to 2690&nbsp;MHz**.
 
 <rk-img
   src="/assets/images/wislink-lte/rak2013/datasheet/lte-antenna-dimension.jpg"
@@ -315,7 +315,7 @@ The specifications and parameter of the antenna are shown below:
             <td>15</td>
         </tr>
          <tr>
-            <td>Gain(dBi)</td>
+            <td>Gain (dBi)</td>
             <td>1.63</td>
             <td>1.84</td>
             <td>1.96</td>
@@ -326,11 +326,11 @@ The specifications and parameter of the antenna are shown below:
         </tr>
         <tr>
             <td>Working Temperature & Humidity</td>
-            <td colspan="7">T: -35°C ~ +80°C, H: 0% ~ 95%</td>
+            <td colspan="7">T: -35°&nbsp;C ~ +80°&nbsp;C, H: 0% ~ 95%</td>
         </tr>
           <tr>
             <td>Storage Temperature & Humidity</td>
-            <td colspan="7">T: -40°C ~ +85°C, H: 0% ~ 95%</td>
+            <td colspan="7">T: -40°&nbsp;C ~ +85°&nbsp;C, H: 0% ~ 95%</td>
         </tr>
     </tbody>
 </table>
@@ -339,7 +339,7 @@ The specifications and parameter of the antenna are shown below:
 
 ###### Overview
 
-The GPS antenna for RAK2013 is shown below. Only the RAK2013 with BG96 supports the GPS function.
+The GPS antenna for RAK2013 is shown in **Figure 10**. Only the RAK2013 with BG96 supports the GPS function.
 
 <rk-img
   src="/assets/images/wislink-lte/rak2013/datasheet/gps-antenna.jpg"
@@ -359,76 +359,76 @@ The GPS antenna for RAK2013 is shown below. Only the RAK2013 with BG96 supports 
 
 The antenna environmental requirements are listed in the table below:
 
-| Conditions |   Temperature   | Humidity |
-| :--------: | :-------------: | :------: |
-|  Working   | -35 ºC ~ +80 ºC | 0% ~ 95% |
-|  Storage   | -40 ºC ~ +85 ºC | 0% ~ 95% |
+| Conditions |        Temperature        | Humidity |
+| :--------: | :-----------------------: | :------: |
+|  Working   | -35°&nbsp;C ~ +80°&nbsp;C | 0% ~ 95% |
+|  Storage   | -40°&nbsp;C ~ +85°&nbsp;C | 0% ~ 95% |
 
 ###### GPS Antenna Parameter
 
 The antenna specifications are listed in the table below:
 
-| Item                                       |     Specification     | PET  |
-| ------------------------------------------ | :-------------------: | :--: |
-| Range of Receiving Frequency               |      1575.42±1.1      | ±2.5 |
-| Center Frequency (MHz) w/ 30mm2 GND plane  |        1575.42        | ±3.0 |
-| Bandwidth (MHz) (Return Loss ≤ -10dB)      |          ≥10          | ±0.5 |
-| VSWR (in Center Frequency)                 |         ≤2.0          | ±0.5 |
-| Gain (Zenith) (dBi Typ) w/ 70mm2 GND Plane |          4.5          | ±0.5 |
-| Axial Ratio (dB) w/ 70mm2 GND Plane        |          3.0          | ±0.2 |
-| Polarization                               | Right-Handed Circular |  -   |
-| Impedance (Ω)                              |          50           |  -   |
-| Frequency Temperature Coefficient (ppm/ºC) |          ±10          |  -   |
+| Item                                       |     Specification     |  PET  |
+| ------------------------------------------ | :-------------------: | :---: |
+| Range of Receiving Frequency               |      1575.42±1.1      | ±2.5  |
+| Center Frequency (MHz) w/ 30mm2 GND plane  |        1575.42        | ±3.0  |
+| Bandwidth (MHz) (Return Loss ≤ -10dB)      |          ≥10          | ±0.5  |
+| VSWR (in Center Frequency)                 |         ≤2.0          | ±0.5  |
+| Gain (Zenith) (dBi Typ) w/ 70mm2 GND Plane |          4.5          | ±0.5  |
+| Axial Ratio (dB) w/ 70mm2 GND Plane        |          3.0          | ±0.2  |
+| Polarization                               | Right-Handed Circular |   -   |
+| Impedance (Ω)                              |          50           |   -   |
+| Frequency Temperature Coefficient (ppm/ºC) |          ±10          |   -   |
 
 The amplifier specifications are listed in the table below:
 
-|       Item        | Specifications |
-| :---------------: | :------------: |
-|  Frequency Range  |  1575.42 MHz   |
-|       Gain        |     27 dB      |
-|       VSWR        |    ≤ 2.0 V     |
-| Noise Coefficient |   ≤ 2.0 dBm    |
-|    DC Voltage     |    3 ~ 5 V     |
-|    DC Current     |    5 ± 2 mA    |
+|       Item        |  Specifications  |
+| :---------------: | :--------------: |
+|  Frequency Range  | 1575.42&nbsp;MHz |
+|       Gain        |    27&nbsp;dB    |
+|       VSWR        |   ≤ 2.0&nbsp;V   |
+| Noise Coefficient |  ≤ 2.0&nbsp;dBm  |
+|    DC Voltage     |   3 ~ 5&nbsp;V   |
+|    DC Current     |  5 ± 2&nbsp;mA   |
 
 The environmental test performance specifications are listed below:
 
-|       Item        | Normal Temp |  High Temp  |  Low Temp   |
-| :---------------: | :---------: | :---------: | :---------: |
-|  Amplifier Gain   | 27 dB ± 2.0 | 27 dB ± 2.0 | 27 dB ± 2.0 |
-|       VSWR        |    ≤ 2.0    |    ≤ 2.0    |    ≤ 2.0    |
-| Noise Coefficient |    ≤ 2.0    |    ≤ 2.0    |    ≤ 2.0    |
+|       Item        |   Normal Temp    |    High Temp     |     Low Temp     |
+| :---------------: | :--------------: | :--------------: | :--------------: |
+|  Amplifier Gain   | 27&nbsp;dB ± 2.0 | 27&nbsp;dB ± 2.0 | 27&nbsp;dB ± 2.0 |
+|       VSWR        |      ≤ 2.0       |      ≤ 2.0       |      ≤ 2.0       |
+| Noise Coefficient |      ≤ 2.0       |      ≤ 2.0       |      ≤ 2.0       |
 
 #### Electrical Characteristics
 
 ##### Power Requirements
 
-The RAK2013 board operates at 5 volts. It can be powered by micro USB with 5V or powered by the Raspberry Pi board through 40-pin connector. Be cautious because the current of RAK2013 is about 300mA on average when working in CAT- M1 mode, it can be reached to 2A for peak when working in GSM900 mode. So you must carefully evaluate your power adapter’s rating.
+The RAK2013 board operates at 5&nbsp;V. It can be powered by micro USB with 5&nbsp;V or powered by the Raspberry Pi board through 40-pin connector. Be cautious because the current of RAK2013 is about 300&nbsp;mA on average when working in CAT- M1 mode, it can be reached to 2&nbsp;A for peak when working in GSM900 mode. So you must carefully evaluate your power adapter’s rating.
 
-|          Parameter          | Min | Typical |   Max   |
-| :-------------------------: | :-: | :-----: | :-----: |
-|    Current in CAT M mode    |  -  | 300 mA  |    -    |
-| Current in GSM mode (peak） |  -  |    -    | 2000 mA |
-|       Power off mode        |  -  |  10 mA  |    -    |
+|          Parameter          |  Min  |   Typical   |     Max      |
+| :-------------------------: | :---: | :---------: | :----------: |
+|    Current in CAT M mode    |   -   | 300&nbsp;mA |      -       |
+| Current in GSM mode (peak） |   -   |             | 2000&nbsp;mA |
+|       Power off mode        |   -   | 10&nbsp;mA  |      -       |
 
 #### Mechanical Characteristics
 
 ##### Module Dimensions
 
-Here is the detailed dimension of RAK2013 module. For full specifications including electrical requirements, please visit this [**site**](https://github.com/raspberrypi/hats).
+Here is the detailed dimension of RAK2013 module. For full specifications including electrical requirements, visit the GitHub [**repo**](https://github.com/raspberrypi/hats).
 
 **Minimum HAT requirements**:
 
-- The board must be 65 x 56 mm or 65 x 56.5 mm.
-- The board must have 3 mm radius corners.
-- It must have 4 mounting holes in the corners and should follow mounting hole specifications.
-- The board must have a full 40W GPIO connector.
+- The board must be 65 x 56&nbsp;mm or 65 x 56.5&nbsp;mm.
+- The board must have 3&nbsp;mm radius corners.
+- It must have four (4) mounting holes in the corners and should follow mounting hole specifications.
+- The board must have a full 40&nbsp;W GPIO connector.
 
 **Mounting Holes specifications**:
 
 - Mounting holes should ideally non-plated. If plated, hole and grounding must be electrically isolated. (Do not connect these to GND)
-- Mounting hole ground should be 6.2 mm minimum and either isolated copper or bare board (open solder mask).
-- Mounting holes should be drilled to 2.75 ± 0.5 mm.
+- Mounting hole ground should be 6.2&nbsp;mm minimum and either isolated copper or bare board (open solder mask).
+- Mounting holes should be drilled to 2.75 ± 0.5&nbsp;mm.
 
 :::tip 📝 NOTE
 It is recommended to provide slots or cutouts for camera and display flexes so the camera and display can still be used with the HAT attached.
@@ -446,11 +446,11 @@ It is recommended to provide slots or cutouts for camera and display flexes so t
 
 The table below lists the operation and storage temperature requirements:
 
-|       Parameter       |  Min   | Typical |  Max   |
-| :-------------------: | :----: | :-----: | :----: |
-| Operation Temp. Range | -35 ºC | +25 ºC  | +75 ºC |
-| Extended Temp. Range  | -40 ˚C |    -    | +80 ˚C |
-|  Storage Temp. Range  | -40 ˚C |    -    | +80 ˚C |
+|       Parameter       |     Min     |   Typical   |     Max     |
+| :-------------------: | :---------: | :---------: | :---------: |
+| Operation Temp. Range | -35°&nbsp;C | +25°&nbsp;C | +75°&nbsp;C |
+| Extended Temp. Range  | -40°&nbsp;C |      -      | +80°&nbsp;C |
+|  Storage Temp. Range  | -40°&nbsp;C |      -      | +80°&nbsp;C |
 
 #### Schematic Diagram
 

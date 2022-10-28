@@ -6,7 +6,7 @@ next: ../Datasheet/
 tags:
   - Field Tester for LoRaWAN
   - quickstart
-  - wisblock
+  - wisnode
 ---
 
 # RAK10701-L Field Tester for LoRaWAN Quick Start Guide
@@ -42,7 +42,7 @@ It is mandatory that you are within the coverage of the LoRaWAN Gateway of the n
 
 ### RAK10701-L Field Tester Physical Interface
 
-The user interface of the RAK10701-L Field Tester for LoRaWAN is via TFT Touchscreen LCD and one pushbutton at the side. There is also an external LoRA antenna port via RP-SMA connector and USB-C port for charging and configuration if connected to a PC.
+The user interface of the RAK10701-L Field Tester for LoRaWAN is via TFT Touchscreen LCD and one push button at the side. There is also an external LoRA antenna port via RP-SMA connector and USB-C port for charging and configuration if connected to a PC.
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/physical-interface.png"
@@ -103,7 +103,7 @@ If you are indoors, there will be no reception of the GPS signal. The latitude a
 
 4. Once fully powered on, the external button at the side can sleep or wake up the display on the LCD screen via a single press on it.
 
-5. If the device is connected via USB C to a computer, then the button is pressed, it will not remove the display but will lock the screen (touch screen behavior is disabled).
+5. If the device is connected via USB-C to a computer, then the button is pressed, it will not remove the display but will lock the screen (touch screen behavior is disabled).
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/lockscreen.png"
@@ -195,7 +195,7 @@ The DEVEUI, APPEUI, and APPKEY are important in this step. These values must be 
   caption="Label created successfully"
 />
 
-6. Once the `Label` is created you have to associate it on the RAK10701 device. You can attach the `Label` on the device by clicking the Add Label button.
+6. Once the `Label` is created you have to associate it on the RAK10701 device. You can attach the `Label` on the device by clicking the **Add Label** button.
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/helium-attach-label1.png"
@@ -211,7 +211,7 @@ The DEVEUI, APPEUI, and APPKEY are important in this step. These values must be 
   caption="Drop-down on label selection"
 />
 
-8. After successful attachment of `Label` on the devices, it should show one (1) device is under that `Label`. The device is properly labeled which is needed for the next steps - `Integrations` and `Flow`
+8. After successful attachment of `Label` on the devices, it should show one (1) device is under that `Label`. The device is properly labeled which is needed for the next steps - `Integrations` and `Flow`.
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/helium-attach-label3.png"
@@ -233,7 +233,7 @@ The DEVEUI, APPEUI, and APPKEY are important in this step. These values must be 
   caption="HTTP integration"
 />
 
-10. Then you must proceed to steps 2 and 3 sections of the `Integration` settings. You have to select `POST` then on the Endpoint URL, you must put `https://dev.disk91.com/fieldtester/helium/v3`. It is also needed to put the integration name before the clicking Add integration button.
+10. Then you must proceed to steps 2 and 3 sections of the `Integration` settings. You have to select `POST` then on the Endpoint URL, you must put `https://dev.disk91.com/fieldtester/helium/v3`. It is also needed to put the integration name before the clicking **Add Integration** button.
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/helium-add-integration-details.png"
@@ -346,7 +346,7 @@ This section shows how to use the RAK10701-L Field Tester for LoRaWAN to The Thi
   caption="Creating an Application"
 />
 
-4. If you had no error during the previous step, you should now be on the application console page. The next step is to **add end-devices to your TTN application**.
+4. If you had no error during the previous step, you should now be on the application console page. The next step is to **Add end device** to your TTN application.
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/RAK4631-TTNV3-3.png"
@@ -378,7 +378,7 @@ This section shows how to use the RAK10701-L Field Tester for LoRaWAN to The Thi
   caption="OTAA settings"
 />
 
-8. Then input the LoRaWAN OTAA parameters. For **AppEUI**, you may click **Fill with Zeros**. For **AppKey** and **DevEUI**, you can click **Generate**. Then the parameters will be automatically filled by the TTS platform. Finally, click **Register End Device**.
+8. Then input the LoRaWAN OTAA parameters. For **AppEUI**, you may click **Fill with Zeros**. For **AppKey** and **DevEUI**, you can click **Generate**. Then the parameters will be automatically filled by the TTS platform. Finally, click **Register end device**.
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/RAK4631-TTNV3-7.png"
@@ -386,7 +386,7 @@ This section shows how to use the RAK10701-L Field Tester for LoRaWAN to The Thi
   caption="Registering the end device"
 />
 
-9. You should now be able to see the device on the TTN console after you fully register your device. Take note of these OTAA parameters, such as the `AppEUI`, `DevEUI`, and the `AppKey`, as they are needed in the configuration of the RAK10701-L Field Tester hardware later on in this guide.
+9. You should now be able to see the device on the TTN console after you fully registered your device. Take note of these OTAA parameters, such as the `AppEUI`, `DevEUI`, and the `AppKey`, as they are needed in the configuration of the RAK10701-L Field Tester hardware later on in this guide.
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/RAK4631-TTNV3-8.png"
@@ -394,7 +394,7 @@ This section shows how to use the RAK10701-L Field Tester for LoRaWAN to The Thi
   caption="OTAA device successfully registered to TTN"
 />
 
-10. After adding the device to the LoRaWAN application, link it to the backend server. The first step is to create an API key.
+10. After adding the device to the LoRaWAN application, link it to the backend server. The first step is to create an **API key**.
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/RAK10701-API-icon.png"
@@ -618,7 +618,7 @@ This decoder script can be found on [RUI3-Field-Tester GitHub repository](https:
   caption="Creation of API Key"
 />
 
-8. You can now proceed on [www.datacake.co](www.datacake.co) and add a LoRaWAN device that will be linked to your RAK10701 created in ChirpStack. You have to create an account if you do not have one yet.
+8. You can now proceed on [Datacake](https://datacake.co/) and add a LoRaWAN device that will be linked to your RAK10701 created in ChirpStack. You have to create an account if you do not have one yet.
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/12_datacake_init_1.png"
@@ -991,7 +991,7 @@ In this guide, the downlink is only created when the Field Tester is connected t
 
 This is controlled by the “Fields used” where you can see the IS_CHIRPSTACK.
 
-The Payload Encoder is preparing a downlink packet that will be sent back to the RAK10701 Field Tester. The downlink packet is only 6 bytes large to avoid problems in LoRaWAN regions with limited downlink packet sizes.
+The Payload Encoder is preparing a downlink packet that will be sent back to the RAK10701 Field Tester. The downlink packet is only 6&nbsp;bytes large to avoid problems in LoRaWAN regions with limited downlink packet sizes.
 
 This is the complete decoder script. The first byte is usually a counter, but it works well if the counter is ignored and always set to 1.
 
@@ -1088,8 +1088,8 @@ For the frequency plan change, the device has to restart to activate this newly 
 
 This part of the guide shows the Field Tester interface and how to update the firmware.
 
-- [User Interface](/Product-Categories/WisBlock/RAK10701/Quickstart/#field-tester-display-interface)
-- [Firmware Update](/Product-Categories/WisBlock/RAK10701/Quickstart/#upgrading-the-firmware)
+- [User Interface](/Product-Categories/WisNode/RAK10701-L/Quickstart/#field-tester-display-interface)
+- [Firmware Update](/Product-Categories/WisNode/RAK10701-L/Quickstart/#upgrading-the-firmware)
 
 #### Field Tester Display Interface
 
@@ -1097,7 +1097,7 @@ This section discusses the interfaces on the LCD of the device as well as its pa
 
 ##### Display Status and Indicator
 
-The RAK10701-L WisBlock Field Tester has status indicators that show the current state of the device.
+The RAK10701-L WisNode Field Tester has status indicators that show the current state of the device.
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/lcd-status.png"
@@ -1183,7 +1183,7 @@ The main page shows the last GPS data captured by the device.
 
 #### Upgrading the Firmware
 
-It is recommended to update to the latest version of the firmware. To do this, download the latest [RAK10701-L WisBlock Field Tester firmware](/Product-Categories/WisBlock/RAK10701/Datasheet/#software) and use the WisToolBox to update the custom firmware.
+It is recommended to update to the latest version of the firmware. To do this, download the latest [RAK10701-L WisNode Field Tester firmware](/Product-Categories/WisNode/RAK10701-L/Datasheet/#software) and use the WisToolBox to update the custom firmware.
 
 1. Drag the downloaded firmware to the WisToolBox custom firmware section.
 <rk-img

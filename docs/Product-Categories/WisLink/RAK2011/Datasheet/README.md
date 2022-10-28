@@ -43,7 +43,7 @@ RAK2011 can be used as a development platform in tandem with external microcontr
 
 #### Board Overview
 
-Figure 1 shows part identification on the top view of RAK2011 WisLink Cellular BG96 Arduino Shield.
+**Figure 1** shows part identification on the top view of RAK2011 WisLink Cellular BG96 Arduino Shield.
 
 
 <rk-img
@@ -52,7 +52,7 @@ Figure 1 shows part identification on the top view of RAK2011 WisLink Cellular B
   caption="RAK2011 WisLink Cellular BG96 Arduino Shield Top View"
 />
 
-The underside and dimension of the RAK2011 are shown in Figure 2:
+The underside and dimension of the RAK2011 are shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wislink-lte/rak2011/datasheet/rak2011-bottom-view.svg"
@@ -63,7 +63,7 @@ The underside and dimension of the RAK2011 are shown in Figure 2:
 
 #### Functional Diagram
 
-The block diagram in Figure 3 shows the internal architecture and external interfaces:
+The block diagram in **Figure 3** shows the internal architecture and external interfaces.
 
 
 <rk-img
@@ -75,7 +75,7 @@ The block diagram in Figure 3 shows the internal architecture and external inter
 
 ### Hardware
 
-The hardware specification is categorized into seven parts. It discusses the interfacing of the module and its corresponding functions and diagrams. It also covers the electrical, environmental, mechanical, and antenna parameters that include the tabular data of the functionalities and standard values of the RAK2011 WisLink Cellular BG96 Arduino Shield.
+The hardware specification is categorized into seven (7) parts. It discusses the interfacing of the module and its corresponding functions and diagrams. It also covers the electrical, environmental, mechanical, and antenna parameters that include the tabular data of the functionalities and standard values of the RAK2011 WisLink Cellular BG96 Arduino Shield.
 
 #### Interfaces
 
@@ -198,7 +198,7 @@ Three LEDs are used to indicate the operating status. Below are the functions of
 
 ##### Arduino Header
 
-The mapping of Arduino headers on the RAK2011 WisLink Cellular BG96 Arduino Shield is shown in Figure 7:
+The mapping of Arduino headers on the RAK2011 WisLink Cellular BG96 Arduino Shield is shown in **Figure 7**.
 
 
 <rk-img
@@ -298,7 +298,7 @@ PCM voice header pin definition is shown in the table below:
 </tbody>
 </table>
 
-The reference design for the external CODEC extension board is shown in Figure 9:
+The reference design for the external CODEC extension board is shown in **Figure 9**.
 
 
 <rk-img
@@ -311,7 +311,7 @@ The reference design for the external CODEC extension board is shown in Figure 9
 
 ##### Analog Input & Digital I/O Header
 
-A standard 2x3 (2.54&nbsp;mm) male header is used to provide two (2) analog input (ADC0 and ADC1) and two (2) digital input and output port pins (GPIO0 and GPIO1) to an optional external extension board for additional features that may utilize these analog Input and digital I/O port pins. The analog input and digital I/O header pin layout are in Figure 10:
+A standard 2x3 (2.54&nbsp;mm) male header is used to provide two (2) analog input (ADC0 and ADC1) and two (2) digital input and output port pins (GPIO0 and GPIO1) to an optional external extension board for additional features that may utilize these analog Input and digital I/O port pins. The analog input and digital I/O header pin layout are in **Figure 10**.
 
 
 <rk-img
@@ -373,7 +373,7 @@ The analog Input/Digital I/O header signal definition is shown in the table belo
 
 ##### Debug Header 
 
-A standard 1x4 (2.54&nbsp;mm) male header is used to provide a serial port (UART2) interface for debug and log output at 115200&nbsp;bps baud rate. The debug header pin definition is shown in Figure 11:
+A standard 1x4 (2.54&nbsp;mm) male header is used to provide a serial port (UART2) interface for debug and log output at 115200&nbsp;bps baud rate. The debug header pin definition is shown in **Figure 11**.
 
 
 <rk-img
@@ -468,7 +468,7 @@ The cellular (LTE/GSM) antenna for the RAK2011 covers the working frequency band
 
 ###### Antenna Parameter
 
-The Voltage Standard Wave Radio (VSWR) plot is shown in Figure 15:
+The Voltage Standard Wave Radio (VSWR) plot is shown in **Figure 15**.
 
 
 <rk-img
@@ -489,7 +489,7 @@ The VSWR data is shown in the table below:
 | 1880            | 4.4  |
 | 2170            | 15   |
 
-The Smith plot is shown in Figure 16:
+The Smith plot is shown in **Figure 16**.
 
 
 
@@ -571,7 +571,7 @@ The Smith plot is shown in Figure 16:
 
 ###### Overview
 
-The GPS antenna for RAK2011 is shown in the figure below:
+The GPS antenna for RAK2011 is shown in **Figure 20**.
 
 
 <rk-img
@@ -639,9 +639,9 @@ Environmental test performance specifications are listed below:
 
 ::: tip 📝 NOTE
 
-- **High Temperature Test**: Soak in temperature (85&nbsp;°C) and humidity (95%) chamber for 24-hour and return to normal temperature (at least for 1- hour) without visual shape change.
+- **High Temperature Test**: Soak in temperature (85°&nbsp;C) and humidity (95%) chamber for 24-hour and return to normal temperature (at least for 1- hour) without visual shape change.
 
-- **Low Temperature Test**: Soak in temperature (-40&nbsp;°C) chamber for 24-hour and return to normal temperature (at least for 1-hour) without visual shape change.
+- **Low Temperature Test**: Soak in temperature (-40°&nbsp;C) chamber for 24-hour and return to normal temperature (at least for 1-hour) without visual shape change.
 
 :::
 
@@ -729,9 +729,9 @@ The table below lists the operation and storage temperature requirements:
 
 | Parameter             | Min.        | Typical     | Max.        |
 | --------------------- | ----------- | ----------- | ----------- |
-| Operation Temp. Range | -35&nbsp;°C | +25&nbsp;°C | +75&nbsp;°C |
-| Extended Temp. Range  | -40&nbsp;°C | -           | +85&nbsp;°C |
-| Storage Temp. Range   | -40&nbsp;°C | -           | +90&nbsp;°C |
+| Operation Temp. Range | -35°&nbsp;C | +25°&nbsp;C | +75°&nbsp;C |
+| Extended Temp. Range  | -40°&nbsp;C | -           | +85°&nbsp;C |
+| Storage Temp. Range   | -40°&nbsp;C | -           | +90°&nbsp;C |
 
 
 
