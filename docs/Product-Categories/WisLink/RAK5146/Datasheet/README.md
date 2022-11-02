@@ -15,6 +15,7 @@ certifications:
   - [ISED, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_IC_Certification.pdf]
   - [JRL, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_JRL_certification.pdf]
   - [KCC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_KC_Certification.pdf]
+  - [NCC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_NCC_Certification.pdf]
   - [REACH, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_REACH_Certification.pdf]
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_RCM_Certification.pdf]
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_RoHS_Certification.pdf]
@@ -38,10 +39,10 @@ This module is an exceptional, complete, and cost-efficient gateway solution off
 
 - Designed based on **Mini PCI-e form factor**.
 - **SX1303 baseband processor** emulates 8 x 8 channels LoRa packet detectors, 8x SF5-SF12 LoRa demodulators, 8x SF5-SF10 LoRa demodulators, one 125 /250 / 500 kHz high-speed LoRa demodulator, and one (G)FSK demodulator.
-- 3.3V **Mini PCI-e**, compatible with **3G/LTE card** of Mini PCI-e type. 
-- Tx power up to 27dBm, Rx sensitivity down to -139dBm@SF12, BW 125 kHz. 
+- 3.3V **Mini PCI-e**, compatible with **3G/LTE card** of Mini PCI-e type.
+- Tx power up to 27dBm, Rx sensitivity down to -139dBm@SF12, BW 125 kHz.
 - Supports **global license-free frequency band** (EU868, CN470, US915, AS923, AU915, KR920, IN865).
-- Supports optional **SPI/USB** interfaces. 
+- Supports optional **SPI/USB** interfaces.
 - Listen Before Talk
 - Fine Timestamp.
 - Built-in **ZOE-M8Q** GPS module.
@@ -81,17 +82,17 @@ The hardware is categorized into seven parts. It discusses the interfacing, pino
 #### Interfaces
 
 - **Power Supply** - The RAK5146 concentrator module must be supplied through the 3.3Vaux pins by a DC power supply. The voltage needs to be stable since the current drawn can vary significantly during operation based on the power consumption profile of the SX1303 chip (for more information, see the [SX1303 Datasheet](https://www.mouser.com/pdfDocs/Semtech_08072019_DS_SX1302_V10-1626824.pdf)).
-  
+
 - **SPI Interface** - SPI interface mainly provides for the Host_SCK, Host_MISO, Host_MOSI, Host_CSN pins of the system connector. The SPI interface gives access to the configuration register of SX1303 via a synchronous full-duplex protocol. Only the slave side is implemented.
-  
+
 - **USB Interface** - The USB interface mainly provides for the USB_D+, USB_D- pins of the system connector. The USB interface gives access to the configuration register of SX1303 via an MCU STM32L412KBU6. Only the slave side is implemented.
-  
+
 - **UART and I2C Interface** - RAK5146 integrates a ZOE-M8Q GPS module which has UART and I2C interface. The PINs on the golden finger provide a UART connection and an I2C connection, which allows direct access to the GPS module. The PPS signal is not only connected to SX1303 internally but also connected to the golden finger which can be used by the host board.
-  
+
 - **GPS_PPS** - RAK5146 includes the GPS_PPS input for received packets time-stamped and Fine timestamp.
-  
+
 - **RESET** - RAK5146 SPI card includes the RESET active-high input signal to reset the radio operations as specified by the SX1303 Specification. RAK5146 USB card’s RESET is controlled by MCU.
-  
+
 - **Antenna RF Interface** - The module has one RF interface over a standard UFL connector (Hirose U. FL-R-SMT) with a characteristic impedance of 50Ω. The RF port (J1) supports both Tx and Rx, providing the antenna interface.
 
 #### Pin Definition
@@ -282,7 +283,7 @@ RAK5146 concentrator module refers to Semtech's reference design for SX1303. The
   caption="Schematic Diagram"
 />
 
-## Models / Bundles            
+## Models / Bundles
 
 In general, the RAK5146's variation is defined as **RAK5146 - XYZ**, where **X, Y, Z is the model variant**. Take a look at the tables below to know the variants and their specification.
 

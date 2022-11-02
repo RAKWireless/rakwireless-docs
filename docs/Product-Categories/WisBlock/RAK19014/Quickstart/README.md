@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK19014
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK19014 Quick Start Guide
@@ -17,14 +17,14 @@ next: ../Datasheet/
 
 Before going through each and every step on using the RAK19014 WisBlock Battery USB Power Slot Module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
-- [RAK19014 WisBlock Battery USB Power Slot Module](https://store.rakwireless.com/products/rak19014-battery-power-slot-module?utm_source=RAK19014&utm_medium=Document&utm_campaign=BuyFromStore)
+- [RAK19014 WisBlock Battery USB Power Slot Module](https://store.rakwireless.com/products/usb-battery-power-slot-module-rak19014?utm_source=RAK19014&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - [External battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -66,9 +66,9 @@ The RAK19014 WisBlock Battery USB Power Slot Module can be mounted on the Power 
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock module is the same. 
+The procedure in disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak19014/quickstart/removing_screws.png"
@@ -98,7 +98,7 @@ If you will connect other modules to the remaining WisBlock Base slots, check on
 
 #### Battery Connector
 
-RAK19014 WisBlock Battery USB Power Slot Module can be powered by an external battery via the dedicated connectors, as shown in **Figure 6**. The matching connector for the battery cable is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199). A cable assembly for the battery connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/battery-connector-cable). 
+RAK19014 WisBlock Battery USB Power Slot Module can be powered by an external battery via the dedicated connectors, as shown in **Figure 6**. The matching connector for the battery cable is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199). A cable assembly for the battery connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/battery-connector-cable).
 
 <rk-img
   src="/assets/images/wisblock/rak19014/quickstart/battery.png"
@@ -115,7 +115,7 @@ RAK19014 WisBlock Battery USB Power Slot Module can be powered by an external ba
 
 ### Software Setup
 
-The WisBlock Core is designed to be interfaced with other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the WisBlock Core. 
+The WisBlock Core is designed to be interfaced with other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the WisBlock Core.
 
 Before you continue, you should have already set up either an [Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) or
 [PlatformIO](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md).

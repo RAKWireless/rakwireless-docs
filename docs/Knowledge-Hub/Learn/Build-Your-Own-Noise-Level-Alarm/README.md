@@ -68,7 +68,7 @@ To put together the different modules, you need to connect them to the respectiv
 
 ## Code
 
-1. To open the code, first, you need to install the **RAKwireless Audio Library** from our repository.
+1. To open the code, first, you need to install the **RAKwireless Audio Library** from our [repository](https://github.com/RAKWireless/RAKwireless-Audio-library).
 
 
 2. Download it, and search for the ZIP file by navigating to **Sketch > Include Library > Add .ZIP Library…**
