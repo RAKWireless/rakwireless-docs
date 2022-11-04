@@ -253,5 +253,80 @@ module.exports = {
     download: true,
     sidebarDepth: 4
   },
-]
+  ],
+  '/Product-Categories/WisNode/RAK10701-L/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisNode/RAK10701-L/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisNode/RAK10701-L/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisNode/RAK10701-L/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+  ],
+  '/Product-Categories/WisNode/RAK10701-P/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisNode/RAK10701-P/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisNode/RAK10701-P/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisNode/RAK10701-P/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+  ],
+  '/Product-Categories/WisNode/RAK10701-H/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisNode/RAK10701-H/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisNode/RAK10701-H/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisNode/RAK10701-H/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+  ]
 }

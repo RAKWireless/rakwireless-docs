@@ -110,6 +110,21 @@ export default {
     img: '/assets/images/wisnode/rak2171/overview/RAK2171_buy.png',
     store: 'https://store.rakwireless.com/products/wisnode-trackit-set-rak2171?utm_source=RAK2171WisNodeTrackIt&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisNode/RAK10701-L/': {
+    label: 'RAK10701-L Field Tester for LoRaWAN',
+    img: '/assets/images/wisnode/rak10701/overview/RAK10701-l-buy.png',
+    store: 'https://store.rakwireless.com/products/field-tester-for-lorawan-rak10701?variant=42437597167814?utm_source=RAK10701L&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisNode/RAK10701-P/': {
+    label: 'RAK10701-P Field Tester for LoRaWAN Pro',
+    img: '/assets/images/wisnode/rak10701/overview/RAK10701-p-buy.png',
+    store: 'https://store.rakwireless.com/products/field-tester-for-lorawan-rak10701?variant=42437595726022?utm_source=RAK10701P&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisNode/RAK10701-H/': {
+    label: 'RAK10701-H Field Mapper for Helium Network',
+    img: '/assets/images/wisnode/rak10701/overview/RAK10701-h-buy.png',
+    store: 'https://store.rakwireless.com/products/field-mapper-for-helium-with-plug-play-and-3rd-party-mode-rak10701-h?variant=42437640782022?utm_source=RAK10701H&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
 
 
   //WisTrio
