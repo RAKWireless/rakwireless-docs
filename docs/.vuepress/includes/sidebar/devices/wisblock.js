@@ -2760,32 +2760,6 @@ module.exports = {
   }
   ],
 
-  '/Product-Categories/WisBlock/RAK10701/': [{
-    title: 'Product Overview',
-    path: '/Product-Categories/WisBlock/RAK10701/Overview/',
-    collapsable: false,
-    nested: true,
-    download: true,
-    sidebarDepth: 4
-  },
-  {
-    title: 'Quick Start Guide',
-    path: '/Product-Categories/WisBlock/RAK10701/Quickstart/',
-    collapsable: false,
-    nested: true,
-    download: true,
-    sidebarDepth: 4
-  },
-  {
-    title: 'Datasheet',
-    path: '/Product-Categories/WisBlock/RAK10701/Datasheet/',
-    collapsable: false,
-    nested: true,
-    download: true,
-    sidebarDepth: 4
-  }
-  ],
-
   '/Product-Categories/WisBlock/RAK13800/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisBlock/RAK13800/Overview/',

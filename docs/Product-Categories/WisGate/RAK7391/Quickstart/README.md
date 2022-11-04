@@ -14,7 +14,7 @@ tags:
 
 ## Powering on the Device
 
-The RAK7391 can be powered via 10-28&nbsp;V<sub>DC</sub>. There is one Barrel Jack and one Phoenix Connector, so the user has two options. Make sure you power either using one or the other not both at the same time. 
+The RAK7391 can be powered via 10-28&nbsp;V<sub>DC</sub>. There is one Barrel Jack and one Phoenix Connector, so the user has two options. Make sure you power either using one or the other not both at the same time.
 
 <rk-img
   src="/assets/images/wisgate/rak7391/quickstart/1.power-connectors.png"
@@ -151,7 +151,7 @@ RPIBOOT: build-date Sep 20 2022 version 20220815~145439 2472aaf9
 Waiting for BCM2835/6/7/2711...
 Loading embedded: bootcode4.bin
 Sending bootcode.bin
-Successful read 4 bytes 
+Successful read 4 bytes
 Waiting for BCM2835/6/7/2711...
 Loading embedded: bootcode4.bin
 Second stage boot server
@@ -202,7 +202,7 @@ sudo chown -R root:root
 
 ### Ethernet
 
-There are two Ethernet ports on the gateway: one 1&nbsp;GB Ethernet Port `(eth0)` and one 2.5&nbsp;GB Ethernet port `(eth0)`. Once you connect to one of them, the Ethernet DHCP should work without requiring any specific configuration for Network Manager (you can grab the assigned address either via your router interface or from the OLED screen if you have it installed).
+There are two Ethernet ports on the gateway: one 1&nbsp;Gb Ethernet Port `(eth0)` and one 2.5&nbsp;Gb Ethernet port `(eth1)`. Once you connect to one of them, the Ethernet DHCP should work without requiring any specific configuration for Network Manager (you can grab the assigned address either via your router interface or from the OLED screen if you have it installed).
 
 
 <rk-img
@@ -349,7 +349,7 @@ at+qcfg="band",f,400A0E189F,A0E189F,1 //search all band
 at+cpsms=0
 at+cfun=1  //Full functionality
 at+cops=?  //Lists the available network providers.
-at+cops=1,2,"46000",0  //select and register the network providers 
+at+cops=1,2,"46000",0  //select and register the network providers
 at+cops?  //Queries the connected web server information.
 ```
 
