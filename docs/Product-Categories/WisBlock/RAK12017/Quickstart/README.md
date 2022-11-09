@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK12017
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK12017 Quick Start Guide
@@ -19,13 +19,13 @@ Before going through each and every step on using RAK12017 WisBlock IR Detection
 
 #### Hardware
 
-- [RAK12017 WisBlock IR Detection Sensor Module](https://store.rakwireless.com/)
+- [RAK12017 WisBlock IR Detection Sensor Module](https://store.rakwireless.com/products/rak12017-wisblock-ir-sensor?utm_source=RAK12017&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) with IO slot
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [RAK19008 WisBlock IO Extension Cable](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008)
-- [Li-Ion/LiPo battery (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
-- [Solar charger (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
+- [RAK19008 WisBlock IO Extension Cable](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008?utm_source=RAK19008&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -60,9 +60,9 @@ As shown in **Figure 2**, the location for the IO slot is properly marked by sil
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12017/quickstart/removing_screw.png"
@@ -87,8 +87,8 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. 
-:::  
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
+:::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
@@ -146,10 +146,10 @@ In this example, you will be able to see if the IR Status is sensing or not usin
 void setup()
 {
   pinMode(WB_IO2, OUTPUT);
-  digitalWrite(WB_IO2, HIGH);  
+  digitalWrite(WB_IO2, HIGH);
   pinMode(LED_BLUE, OUTPUT);
-  digitalWrite(LED_BLUE, LOW);   
-  
+  digitalWrite(LED_BLUE, LOW);
+
   time_t timeout = millis();
   Serial.begin(115200);
   while (!Serial)
@@ -173,13 +173,13 @@ void loop()
   {
     Serial.println("IR Status: Sensing");
     Serial.println(" value: 1");
-    digitalWrite(LED_BLUE, HIGH);     
+    digitalWrite(LED_BLUE, HIGH);
   }
   else
   {
     Serial.println("IR Status: Not Sensed");
     Serial.println(" value: 0");
-    digitalWrite(LED_BLUE, LOW);     
+    digitalWrite(LED_BLUE, LOW);
   }
   delay(500);
 }

@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK14004
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK14004 Quick Start Guide
@@ -19,16 +19,16 @@ Before going through each and every step on using the RAK14004 WisBlock module, 
 
 #### Hardware
 
-- [RAK14004 Wisblock WisBlock Keypad Module](https://store.rakwireless.com/)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK14004 Wisblock WisBlock Keypad Module](https://store.rakwireless.com/products/rak14004-rak14009-rak14010-rak14011-wisblock-keypad-module?utm_source=RAK14004&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - Your choice of WisBlock Keypad
-  - [RAK14009 WisBlock Keypad 3x3](https://store.rakwireless.com)
-  - [RAK14010 WisBlock Keypad 3x4](https://store.rakwireless.com)
-  - [RAK14011 WisBlock Keypad 4x4](https://store.rakwireless.com)
+  - [RAK14009 WisBlock Keypad 3x3](https://store.rakwireless.com/products/rak14004-rak14009-rak14010-rak14011-wisblock-keypad-module?utm_source=RAK14009&utm_medium=Document&utm_campaign=BuyFromStore)
+  - [RAK14010 WisBlock Keypad 3x4](https://store.rakwireless.com/products/rak14004-rak14009-rak14010-rak14011-wisblock-keypad-module?utm_source=RAK14010&utm_medium=Document&utm_campaign=BuyFromStore&variant=41427943522502)
+  - [RAK14011 WisBlock Keypad 4x4](https://store.rakwireless.com/products/rak14004-rak14009-rak14010-rak14011-wisblock-keypad-module?utm_source=RAK14011&utm_medium=Document&utm_campaign=BuyFromStore&variant=41427943555270)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -55,9 +55,9 @@ The RAK14004 module can be mounted on the IO slot of the WisBlock Base Board, as
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak14004/quickstart/16.removing-screws.png"
@@ -82,8 +82,8 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. 
-:::  
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
+:::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
@@ -143,7 +143,7 @@ The quick links below go directly to the software guide for the specific WisBloc
 #define SENSOR_GET_KEYPAD        0x01 // (r)   2 bytes
 #define SENSOR_GET_I2C_ADDRESS   0x02  // (r)   1 bytes
 #define SENSOR_SET_I2C_ADDRESS   0x03  // (w)   1 bytes
-#define SENSOR_GET_VERSION       0x04 // (r)   1 bytes      
+#define SENSOR_GET_VERSION       0x04 // (r)   1 bytes
 
 #define KEYPAD_VERSION           0x02
 #define KEYPAD_SIZE_X            0x03
@@ -266,7 +266,7 @@ void loop() {
 3. Now, select the right Serial Port and upload the code.
 
 - Selecting the RAK4631 Serial Port:
-  
+
 <rk-img
   src="/assets/images/wisblock/rak14004/quickstart/rak4631-port.png"
   width="100%"
@@ -353,7 +353,7 @@ void loop() {
 #define SENSOR_GET_KEYPAD        0x01 // (r)   2 bytes
 #define SENSOR_GET_I2C_ADDRESS   0x02  // (r)   1 bytes
 #define SENSOR_SET_I2C_ADDRESS   0x03  // (w)   1 bytes
-#define SENSOR_GET_VERSION       0x04 // (r)   1 bytes      
+#define SENSOR_GET_VERSION       0x04 // (r)   1 bytes
 
 #define KEYPAD_VERSION           0x02
 #define KEYPAD_SIZE_X            0x03
@@ -570,7 +570,7 @@ When you successfully uploaded the sample code, open the Serial Monitor of the A
 #define SENSOR_GET_KEYPAD        0x01 // (r)   2 bytes
 #define SENSOR_GET_I2C_ADDRESS   0x02  // (r)   1 bytes
 #define SENSOR_SET_I2C_ADDRESS   0x03  // (w)   1 bytes
-#define SENSOR_GET_VERSION       0x04 // (r)   1 bytes      
+#define SENSOR_GET_VERSION       0x04 // (r)   1 bytes
 
 #define KEYPAD_VERSION           0x02
 #define KEYPAD_SIZE_X            0x04
@@ -703,7 +703,7 @@ void loop() {
 />
 
 - Selecting the RAK11200 Serial Port:
-  
+
 <rk-img
   src="/assets/images/wisblock/rak14004/quickstart/rak11200-port.png"
   width="100%"

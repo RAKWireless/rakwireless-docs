@@ -11,7 +11,7 @@ tags:
 
 # RAK19007 Quick Start Guide
 
-This guide introduces the RAK19007 WisBlock Base Board 2nd Gen and how to use it. 
+This guide introduces the RAK19007 WisBlock Base Board 2nd Gen and how to use it.
 
 ## Prerequisite
 
@@ -21,12 +21,12 @@ Before going through each and every step on using the WisBlock Base Board 2nd Ge
 
 #### Hardware
 
-- [RAK19007 WisBlock Base Board 2nd Gen](https://store.rakwireless.com/products/rak19007-wisblock-base-board-2nd-gen)
+- [RAK19007 WisBlock Base Board 2nd Gen](https://store.rakwireless.com/products/rak19007-wisblock-base-board-2nd-gen?utm_source=RAK19007&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - Your choice of [WisBlock Modules](https://store.rakwireless.com/pages/wisblock).<br>
 It is highly recommended to also check the dedicated Quick Start Guide that you can follow on various WisBlock Modules. Each Quick Start Guide of these modules contains the detailed steps on how to open the example codes and upload them to the WisBlock Core.
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 - Type-C USB cable for programming and debugging
 
 #### Software
@@ -35,7 +35,7 @@ Based on the choice of the WisBlock Core, select a Development Environment:
 
 <b>Programming via Arduino IDE</b>
 - [RAKwireless BSP support for Arduino](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index)
-<br>In Arduino IDE, once you installed the BSP, the examples for WisBlock Core will be automatically included on the list of examples. 
+<br>In Arduino IDE, once you installed the BSP, the examples for WisBlock Core will be automatically included on the list of examples.
 
 <b>Programming via PlatformIO IDE:</b>
 - [RAKwireless WisBlock modules in PlatformIO](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md)
@@ -77,7 +77,7 @@ The RAK19007 is designed to be powered by a battery and provides the charger cir
 
 A high-efficiency step-down converter with a low quiescent current is used for generating 3.3&nbsp;V. This 3.3&nbsp;V power supply drives the consumption of the WisBlock Core module and the sensor modules. The max current supported by the 3.3&nbsp;V LDO is 750&nbsp;mA.
 
-3V3_S is another 3.3&nbsp;V power supply, it can be controlled by the MCU to disconnect the power sensors during idle periods to save power. 3V3_S is controlled by the IO2 pin on the WisBlock Core board. 
+3V3_S is another 3.3&nbsp;V power supply, it can be controlled by the MCU to disconnect the power sensors during idle periods to save power. 3V3_S is controlled by the IO2 pin on the WisBlock Core board.
 
 - Set **IO2=1**, 3V3_S is on.
 - Set **IO2=0**, 3V3_S is off.
@@ -89,7 +89,7 @@ A high-efficiency step-down converter with a low quiescent current is used for g
 
 RAK19007 WisBlock Base Board 2nd Gen is the main board that allows you to attach a WisBlock Core, sensors, and IO modules through the standardized expansion connectors. These connectors provide a data bus interconnection between the modules attached to the RAK19007 Base Board.
 
-This guide shows the details related to the installation of modules into the RAK19007 board. The following section discusses the general concepts to manipulate the WisBlock Connector in any WisBlock Module. The installation and removal details of each type of WisBlock module: Core and Sensor are explained. 
+This guide shows the details related to the installation of modules into the RAK19007 board. The following section discusses the general concepts to manipulate the WisBlock Connector in any WisBlock Module. The installation and removal details of each type of WisBlock module: Core and Sensor are explained.
 
 ##### Attaching a WisBlock Connector
 
@@ -164,7 +164,7 @@ This guide uses two arrows. Refer to **Figure 3** for its representation.
   caption="WisBlock Connector’s header is not parallel to the socket"
 />
 
-8. When the aforementioned steps are not completed yet, do not apply force to buckle. Otherwise, there will be a risk to damage the connector. When the connector cannot be smoothly buckled down, repeat the alignment step. 
+8. When the aforementioned steps are not completed yet, do not apply force to buckle. Otherwise, there will be a risk to damage the connector. When the connector cannot be smoothly buckled down, repeat the alignment step.
 
 ##### Detaching a WisBlock Connector
 
@@ -228,7 +228,7 @@ A WisBlock IO module is designed to be installed on the IO slot of the RAK19007 
 
 ###### WisBlock Sensor
 
-A WisBlock Sensor module is designed to be installed on the Sensor slots of the RAK19007 Base Board. As shown in **Figure 17**, the location of the slots is properly marked by silkscreen. Follow carefully the procedure of the section, [attaching a WisBlock Connector](/Product-Categories/WisBlock/RAK19007/Quickstart/#attaching-a-wisblock-connector/), to attach a WisBlock Sensor module. Once attached, fix the module with an M1.2 x 3&nbsp;mm screw. 
+A WisBlock Sensor module is designed to be installed on the Sensor slots of the RAK19007 Base Board. As shown in **Figure 17**, the location of the slots is properly marked by silkscreen. Follow carefully the procedure of the section, [attaching a WisBlock Connector](/Product-Categories/WisBlock/RAK19007/Quickstart/#attaching-a-wisblock-connector/), to attach a WisBlock Sensor module. Once attached, fix the module with an M1.2 x 3&nbsp;mm screw.
 
 <rk-img
   src="/assets/images/wisblock/rak19007/quickstart/rak19007-sensor.png"
@@ -239,7 +239,7 @@ A WisBlock Sensor module is designed to be installed on the Sensor slots of the 
 
 ##### Disassembling a WisBlock Module
 
-1. The procedure to disassemble any type of WisBlock modules is the same. As shown in **Figure 18**, first, remove the screws. 
+1. The procedure to disassemble any type of WisBlock modules is the same. As shown in **Figure 18**, first, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak19007/quickstart/rak19007-unscrew.png"
@@ -304,7 +304,7 @@ The full specification of the [Solar Panel Connection](/Product-Categories/WisBl
 
 ### Software Setup
 
-The WisBlock Core is designed to be interfaced with other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the WisBlock Core. 
+The WisBlock Core is designed to be interfaced with other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the WisBlock Core.
 Before you continue, you should have already set up either an [Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) or [PlatformIO](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md).
 
 #### WisBlock Examples Repository
@@ -312,5 +312,5 @@ Before you continue, you should have already set up either an [Arduino BSP](http
 To quickly build your IoT device with less hassle, example codes for WisBlock Core are provided. You can access the codes on the [WisBlock Example code repository](https://github.com/RAKWireless/WisBlock/tree/master/examples). The example codes on folder `common` are compatible with RAK4631, RAK11200, and RAK11310 WisBlock cores.
 
 
- 
+
 

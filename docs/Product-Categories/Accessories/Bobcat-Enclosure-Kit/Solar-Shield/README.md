@@ -6,13 +6,13 @@ tags:
   - Installation Guide
   - Solar-Guide
   - RAKBox-GW-4B
-rak_desc: In this guide, the process of installing the solar shield for the Bobcat Miner 300 will be shown step by step. Strict adherence to the steps guarantees a secured and durable solar shield. 
+rak_desc: In this guide, the process of installing the solar shield for the Bobcat Miner 300 will be shown step by step. Strict adherence to the steps guarantees a secured and durable solar shield.
 rak_img: /assets/images/accessories/bobcat-enclosure-kit/installation/bobcat.png
 ---
 
 # Solar Shield Installation Guide (Optional)
 
-RAK Solar Shield is here to protect your outdoor placed gateways or Hotspots from the hot sun. It is developed to fit perfectly over the Outdoor Enclosure kit for Bobcat Miner. The Solar Shield includes all necessary accessories for easy and secure mounting. 
+RAK Solar Shield is here to protect your outdoor placed gateways or Hotspots from the hot sun. It is developed to fit perfectly over the Outdoor Enclosure kit for Bobcat Miner. The Solar Shield includes all necessary accessories for easy and secure mounting.
 
 <rk-img
   src="/assets/images/accessories/bobcat-enclosure-kit/solar-shield/solar-shield.png"
@@ -21,7 +21,7 @@ RAK Solar Shield is here to protect your outdoor placed gateways or Hotspots fro
 />
 
 <rk-btn
-  src="https://store.rakwireless.com/products/solar-shield"
+  src="https://store.rakwireless.com/products/solar-shield?utm_source=SolarShield&utm_medium=Document&utm_campaign=BuyFromStore"
   label="Buy a Solar Shield"
   _blank
 />
@@ -42,7 +42,7 @@ RAK Solar Shield is here to protect your outdoor placed gateways or Hotspots fro
   caption="Installing the Screws to the Holders"
 />
 
-3. Attach the holders to the mounting bracket and fix them with the screws that were removed in step 1. Do it on both sides.
+3. Attach the holders to the mounting bracket and fix them with the screws that were removed in Step 1. Do it on both sides.
 
 
 <rk-img

@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK5801
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 
@@ -18,16 +18,16 @@ next: ../Datasheet/
 
 Before going through each and every step on using the RAK5801 WisBlock module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
-- [RAK5801 WisBlock 4-20mA Interface Board](https://store.rakwireless.com/collections/wisblock-interface/products/rak5801-4-20ma-interface)
+- [RAK5801 WisBlock 4-20mA Interface Board](https://store.rakwireless.com/products/rak5801-4-20ma-interface?utm_source=RAK5801&utm_medium=Document&utm_campaign=BuyFromStore)
 - [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -53,7 +53,7 @@ Once the signal is digitalized, the user can recover the original current value 
 
 Where **U** is the ADC reading and **I** is the sensor current.
 
-As shown in **Figure 1**, the module provides an output of 12&nbsp;V for powering passive 4-20&nbsp;mA sensors. This 12&nbsp;V output is boosted by an internal DC-DC booster. The enable pin allows to control the power conversion module and set the RAK5801 module into a low-power consumption mode. 
+As shown in **Figure 1**, the module provides an output of 12&nbsp;V for powering passive 4-20&nbsp;mA sensors. This 12&nbsp;V output is boosted by an internal DC-DC booster. The enable pin allows to control the power conversion module and set the RAK5801 module into a low-power consumption mode.
 
 ### Hardware Setup
 
@@ -87,7 +87,7 @@ For detailed instructions, refer to the [WisBlock Installation Guide](/Knowledge
 
 ##### RAK5801 Fast Crimping Terminal Mechanism
 
-The RAK5801 features a fast-crimping terminal connector to simplify and ensure the wiring process on the fields. The fast-crimping terminal can support cable with a width between 20 AWG to 24 AWG. The usual stripping length is around 6 to 7&nbsp;mm. 
+The RAK5801 features a fast-crimping terminal connector to simplify and ensure the wiring process on the fields. The fast-crimping terminal can support cable with a width between 20 AWG to 24 AWG. The usual stripping length is around 6 to 7&nbsp;mm.
 
 As shown in **Figure 4**, during the crimping process, you should first press down and maintain the spring head of the crimping terminal firmly, then insert the stripped cable head into the corresponding connector’s hole. Once inserted correctly, then release the spring head, and the crimping process is completed.
 
@@ -99,9 +99,9 @@ As shown in **Figure 4**, during the crimping process, you should first press do
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock module is the same. 
+The procedure in disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak5801/quickstart/removing_screw.png"
@@ -223,7 +223,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
 />
 <br>
 
-2. The [Basic Sample Code for RAK5801](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/IO/RAK5801_4-20mA) in GitHub will work on RAK4631 WisBlock Core. You can also open the example codes depending on your WisBlock Core, as shown in **Figure 14**. 
+2. The [Basic Sample Code for RAK5801](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/IO/RAK5801_4-20mA) in GitHub will work on RAK4631 WisBlock Core. You can also open the example codes depending on your WisBlock Core, as shown in **Figure 14**.
 
 <rk-img
   src="/assets/images/wisblock/rak5801/quickstart/rak4631-examplecode.png"
@@ -241,7 +241,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
 
   pinMode(WB_IO1, OUTPUT);
   digitalWrite(WB_IO1, HIGH);
-  
+
   /* WisBLOCK 5801 Power On*/
 }
 ```
@@ -305,7 +305,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
 />
 <br>
 
-2. The [Basic Sample Code for RAK5801](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/IO/RAK5801_4-20mA) in GitHub will work on RAK11200 WisBlock Core. You can also open the example codes depending on your WisBlock Core, as shown in **Figure 19**. 
+2. The [Basic Sample Code for RAK5801](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/IO/RAK5801_4-20mA) in GitHub will work on RAK11200 WisBlock Core. You can also open the example codes depending on your WisBlock Core, as shown in **Figure 19**.
 
 <rk-img
   src="/assets/images/wisblock/rak5801/quickstart/rak11200-examplecode.png"
@@ -323,7 +323,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
 
   pinMode(WB_IO1, OUTPUT);
   digitalWrite(WB_IO1, HIGH);
-  
+
   /* WisBLOCK 5801 Power On*/
 }
 ```
@@ -392,7 +392,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
 />
 <br>
 
-2. The [Basic Sample Code for RAK5801](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/IO/RAK5801_4-20mA) in GitHub will work on RAK11310 WisBlock Core. You can also open the example codes depending on your WisBlock Core, as shown in **Figure 24**. 
+2. The [Basic Sample Code for RAK5801](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/IO/RAK5801_4-20mA) in GitHub will work on RAK11310 WisBlock Core. You can also open the example codes depending on your WisBlock Core, as shown in **Figure 24**.
 
 <rk-img
   src="/assets/images/wisblock/rak5801/quickstart/rak11310-examplecode.png"
@@ -410,7 +410,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
 
   pinMode(WB_IO1, OUTPUT);
   digitalWrite(WB_IO1, HIGH);
-  
+
   /* WisBLOCK 5801 Power On*/
 }
 ```
@@ -454,8 +454,8 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
 
 #### LoRaWAN Hydraulic Pressure Monitoring with RAK5801
 
-For WisBlock Core RAK4630, check the example for [LoRaWAN Hydraulic Pressure Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Hydraulic_Pressure_Monitoring) with RAK5801 Module. 
-   
+For WisBlock Core RAK4630, check the example for [LoRaWAN Hydraulic Pressure Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Hydraulic_Pressure_Monitoring) with RAK5801 Module.
+
 <rk-img
   src="/assets/images/wisblock/rak5801/quickstart/hydraulic_press_lora.png"
   width="100%"

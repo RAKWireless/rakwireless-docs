@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials for installing and deploying your RAK4260 Breakout Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module. 
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK4260 Breakout Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
 rak_img: /assets/images/wisduo/rak4260-breakout-board/quickstart/main/RAK4260_Breakout_home.png
 prev: ../Overview/
 next: ../Datasheet/
@@ -24,11 +24,11 @@ Before going through each step in the installation guide of the RAK4260 Breakout
 
 #### Hardware Tools
 
-- RAK4260 Breakout Board (provided) – including LoRa antenna, Dupont lines (13x) 
-- USB to UART adapter – CH340 for example (not provided) 
-- RAKDAP1 DAPLink tool (not provided)
-- Gateway in range, for testing (not provided) 
-- Windows PC (not provided) 
+- [**RAK4260 Breakout Board**](https://store.rakwireless.com/products/rak4260-breakout-board?utm_source=RAK4260BreakoutModule&utm_medium=Document&utm_campaign=BuyFromStore) (provided) – including LoRa antenna, Dupont lines (13x)
+- USB to UART adapter – CH340 for example (not provided)
+- [RAKDAP1 DAPLink Tool](https://store.rakwireless.com/products/daplink-tool?utm_source=RAKDAP1&utm_medium=Document&utm_campaign=BuyFromStore) (not provided)
+- Gateway in range, for testing (not provided)
+- Windows PC (not provided)
 
 #### Software Tools
 
@@ -107,7 +107,7 @@ Connect the tool in accordance with the diagram shown in **Figure 4** and **Figu
 
 The Things Network is about enabling low-power devices to be used in long-range gateways that connect to an open-source, decentralized network and exchange data with Applications. Learn more about [**The Things Network**](https://www.thethingsnetwork.org/docs/).
 
-In this section, you will be connecting the RAK4260 Breakout Board to The Things Network (TTN). 
+In this section, you will be connecting the RAK4260 Breakout Board to The Things Network (TTN).
 
 1. If you don't have an account yet, head on to [https://www.thethingsnetwork.org/](https://www.thethingsnetwork.org/) and create an account. Once done, log in to your account. And on the home page, go to the console. Refer to **Figure 7**.
 
@@ -210,7 +210,7 @@ The following section will guide you through the process of doing this with the 
 
 ##### Parameter and Firmware Setup
 
-Execute the following steps to connect your device with the TTN. Register and then fill in the parameters obtained upon registering. 
+Execute the following steps to connect your device with the TTN. Register and then fill in the parameters obtained upon registering.
 
 ###### Edit OTAA Parameters in the Code
 

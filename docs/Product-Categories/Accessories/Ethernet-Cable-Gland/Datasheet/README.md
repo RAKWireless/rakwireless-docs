@@ -1,7 +1,7 @@
 ---
 prev: ../Overview/
 next: false
-tags: 
+tags:
   - Ethernet Cable Gland
   - datasheet
 rak_desc: Provides comprehensive information about your Ethernet Cable Gland to help you use it. This information includes technical specifications, characteristics, and requirements.
@@ -22,24 +22,24 @@ The Ethernet cable gland is designed to safely connect your outdoor equipment wi
 
 - Waterproof
 - Protection level: IP67
-- Working temperature: -20 to 60 ºC
+- Working temperature:
 - Mounting hole diameter: M25*1.5
-- Cable length: 250 mm
+- Cable length: 250&nbsp;mm
 - Casing connector: RJ45 female
 - Board connector: RJ45 male
 
 
 ## Specifications
 
-| Parameter              | Value        |
-| ---------------------- | ------------ |
-| Rated current          | 1-3 A        |
-| Protection level       | IP67         |
-| Working temperature    | -20 to 60 °C |
-| Cable length           | 250.00 mm    |
-| Mounting hole diameter | M25*1.5      |
-| Casing connector       | RJ45 female  |
-| Board connector        | RJ45 male    |
+| Parameter              | Value              |
+| ---------------------- | ------------------ |
+| Rated current          | 1 - 3&nbsp;A       |
+| Protection level       | IP67               |
+| Working temperature    | -20° to 60°&nbsp;C |
+| Cable length           | 250&nbsp;mm        |
+| Mounting hole diameter | M25*1.5            |
+| Casing connector       | RJ45 female        |
+| Board connector        | RJ45 male          |
 
 ## Mechanical Characteristics
 
@@ -48,4 +48,3 @@ The Ethernet cable gland is designed to safely connect your outdoor equipment wi
   width="100%"
   caption="Ethernet Cable Gland Mechanical Characteristics"
 />
- 

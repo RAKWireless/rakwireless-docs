@@ -17,7 +17,7 @@ tags:
 
 ### What Do You Need?
 
-1. RAK7243C WisGate Developer D3+ Gateway
+1. [RAK7243C WisGate Developer D3+ Gateway](https://store.rakwireless.com/products/rak7243c-pilot-gateway?variant=32094762139693&utm_source=RAK7243CD3%2BGateway&utm_medium=Document&utm_campaign=BuyFromStore)
 2. 16&nbsp;GB SD Card + Card Reader
 3. 5&nbsp;V at least 3&nbsp;A Micro USB Power Supply
 4. A Windows/Mac OS/Linux Computer

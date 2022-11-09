@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials for installing and deploying your RAK4200 Breakout Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module. 
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK4200 Breakout Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
 rak_img: /assets/images/wisduo/rak4200-breakout-board/quickstart/main/RAK4200_Breakout_home.png
 prev: ../Overview/
 next: ../AT-Command-Manual/
@@ -21,15 +21,15 @@ Before going through each and every step in the installation guide of the RAK420
 
 #### Hardware Tools
 
-- RAK4200 Breakout Board (provided) – including LoRa antenna, Dupont lines (13x) 
-- USB to UART adapter – CH340 for example (not provided) 
-- Gateway in range, for testing (not provided) 
-- RAKDAP1 DAPLink Tool (not provided) 
+- [**RAK4200 Breakout Board**](https://store.rakwireless.com/products/rak4200-breakout-board?utm_source=RAK4200BreakoutModule&utm_medium=Document&utm_campaign=BuyFromStore) (provided) – including LoRa antenna, Dupont lines (13x)
+- USB to UART adapter – CH340 for example (not provided)
+- Gateway in range, for testing (not provided)
+- [RAKDAP1 DAPLink Tool](https://store.rakwireless.com/products/daplink-tool?utm_source=RAKDAP1&utm_medium=Document&utm_campaign=BuyFromStore) (not provided)
 
 #### Software Tools
 
 - RAK Serial Port Tool
-- CH340 Drivers 
+- CH340 Drivers
 - [The Things Network](https://account.thethingsnetwork.org/register) account
 
 ### What's Included in the Package?
@@ -222,7 +222,7 @@ at+set_config=lora:dev_eui:XXXX
 5. Set the **Application EUI**:
 
 :::tip 📝 NOTE:
-All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error. 
+All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error.
 :::
 
 ```sh

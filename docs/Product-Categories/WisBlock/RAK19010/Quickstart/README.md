@@ -11,7 +11,7 @@ tags:
 
 # RAK19010 Quick Start Guide
 
-This guide introduces the RAK19010 WisBlock Base Board with Power Slot and how to use it. 
+This guide introduces the RAK19010 WisBlock Base Board with Power Slot and how to use it.
 
 ## Prerequisite
 
@@ -26,8 +26,8 @@ Before going through each and every step on using the WisBlock Base Board with P
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - Your choice of [WisBlock Modules](https://store.rakwireless.com/pages/wisblock).<br>
 It is highly recommended to also check the dedicated Quick Start Guide that you can follow on various WisBlock Modules. Each Quick Start Guide of these modules contains detailed steps on how to open the example codes and upload them to the WisBlock Core.
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 
 #### Software
@@ -36,7 +36,7 @@ Based on the choice of the WisBlock Core, select a Development Environment:
 
 <b>Programming via Arduino IDE</b>
 - [RAKwireless BSP support for Arduino](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index)
-<br>In Arduino IDE, once you installed the BSP, the examples for WisBlock Core will be automatically included on the list of examples. 
+<br>In Arduino IDE, once you installed the BSP, the examples for WisBlock Core will be automatically included on the list of examples.
 
 <b>Programming via PlatformIO IDE:</b>
 - [RAKwireless WisBlock modules in PlatformIO](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md)
@@ -60,7 +60,7 @@ The block diagram shown in **Figure 1** shows the internal architecture and exte
 
 The WisBlock Power Slot module provides external interfaces to the whole board. RAK19010 will not work without the Power Slot module attached to it.
 
-The MCU in the WisBlock Core module offers the I2C, UART, and SPI data buses to the sensor modules. Through these buses, the MCU can control and retrieve data from the sensors. Some types of MCU have fewer IO pins. In such cases, not all pins of the data bus are connected. For example, only I2C and UART are connected. 
+The MCU in the WisBlock Core module offers the I2C, UART, and SPI data buses to the sensor modules. Through these buses, the MCU can control and retrieve data from the sensors. Some types of MCU have fewer IO pins. In such cases, not all pins of the data bus are connected. For example, only I2C and UART are connected.
 
 Some MCU IO pins have an alternate function. In this case, you have the option to modify the IO via software or rework the hardware to redefine the function of the IO. Refer to the datasheet of WisBlock Core to get all the details.
 
@@ -74,7 +74,7 @@ Some MCU IO pins have an alternate function. In this case, you have the option t
 
 The RAK19010 WisBlock Base board with Power Slot does not have a power regulator or other power-related components. It gets a 3.3&nbsp;V voltage supply and battery voltage supply lines from the Power Slot module attached to it.
 
-RAK19010 supports 3V3_S configurable supply lines to WisBlock modules like other WisBlock Base boards. This is ideal for low-power applications. 3V3_S can be controlled by the MCU to disconnect the power sensors during idle periods to save power. 3V3_S is controlled by the IO2 pin on the WisBlock Core board. 
+RAK19010 supports 3V3_S configurable supply lines to WisBlock modules like other WisBlock Base boards. This is ideal for low-power applications. 3V3_S can be controlled by the MCU to disconnect the power sensors during idle periods to save power. 3V3_S is controlled by the IO2 pin on the WisBlock Core board.
 
 - Set **IO2=1**, 3V3_S is on.
 - Set **IO2=0**, 3V3_S is off.
@@ -85,7 +85,7 @@ RAK19010 supports 3V3_S configurable supply lines to WisBlock modules like other
 
 RAK19010 WisBlock Base Board with Power Slot is the main board that allows you to attach a WisBlock Core, power slot module, sensors, and IO modules through the standardized expansion connectors. These connectors provide a data bus interconnection between the modules attached to the RAK19010 Base Board.
 
-This guide shows the details related to the installation of modules into the RAK19010 board. The following section discusses the general concepts to manipulate the WisBlock Connector in any WisBlock Module. The installation and removal details of each type of WisBlock module: Core and Sensor are explained. 
+This guide shows the details related to the installation of modules into the RAK19010 board. The following section discusses the general concepts to manipulate the WisBlock Connector in any WisBlock Module. The installation and removal details of each type of WisBlock module: Core and Sensor are explained.
 
 ##### Attaching a WisBlock Connector
 
@@ -159,7 +159,7 @@ This guide uses two arrows. Refer to **Figure 3** for its representation.
   caption="WisBlock Connector’s header is not parallel to the socket"
 />
 
-8. When the aforementioned steps are not completed yet, do not apply force to buckle. Otherwise, there will be a risk to damage the connector. When the connector cannot be smoothly buckled down, repeat the alignment step. 
+8. When the aforementioned steps are not completed yet, do not apply force to buckle. Otherwise, there will be a risk to damage the connector. When the connector cannot be smoothly buckled down, repeat the alignment step.
 
 ##### Detaching a WisBlock Connector
 
@@ -229,7 +229,7 @@ A WisBlock IO module is designed to be installed on the IO slot of the RAK19010 
 
 ###### WisBlock Sensor
 
-A WisBlock Sensor module is designed to be installed on the sensor slots of the RAK19010 Base Board. As shown in **Figure 18**, the location of the slots is properly marked by silkscreen. Follow carefully the procedure of the section, [attaching a WisBlock Connector](#attaching-a-wisblock-connector), to attach a WisBlock Sensor module. Once attached, fix the module with an M1.2 x 3&nbsp;mm screw. 
+A WisBlock Sensor module is designed to be installed on the sensor slots of the RAK19010 Base Board. As shown in **Figure 18**, the location of the slots is properly marked by silkscreen. Follow carefully the procedure of the section, [attaching a WisBlock Connector](#attaching-a-wisblock-connector), to attach a WisBlock Sensor module. Once attached, fix the module with an M1.2 x 3&nbsp;mm screw.
 
 <rk-img
   src="/assets/images/wisblock/rak19010/quickstart/rak19010-sensor.png"
@@ -239,7 +239,7 @@ A WisBlock Sensor module is designed to be installed on the sensor slots of the 
 
 ##### Disassembling a WisBlock Module
 
-1. The procedure to disassemble any type of WisBlock module is the same. As shown in **Figure 19**, first, remove the screws. 
+1. The procedure to disassemble any type of WisBlock module is the same. As shown in **Figure 19**, first, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak19010/quickstart/rak19010-unscrew.png"
@@ -263,7 +263,7 @@ A WisBlock Sensor module is designed to be installed on the sensor slots of the 
 
 ### Software Setup
 
-The WisBlock Core is designed to be interfaced with other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the WisBlock Core. 
+The WisBlock Core is designed to be interfaced with other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the WisBlock Core.
 Before you continue, you should have already set up either an [Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) or [PlatformIO](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md).
 
 #### WisBlock Examples Repository

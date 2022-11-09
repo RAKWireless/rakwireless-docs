@@ -19,7 +19,6 @@ Thank you for choosing **RAK1903 WisBlock Ambient Light Sensor Module** in your 
 * [RAK1903 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK1903 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK1903.stp)
 * [24-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
@@ -28,14 +27,13 @@ Thank you for choosing **RAK1903 WisBlock Ambient Light Sensor Module** in your 
 
 **Examples**
 
-For All WisBlock Core Modules:
-* [Sample Code: RAK1903](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1903_Optical_OPT3001)
+- For All WisBlock Core Modules:
+    * [Sample Code: RAK1903](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1903_Optical_OPT3001)
+- For WisBlock Core RAK4630:
+    * [Sample Code: Weather Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Weather_Monitoring)
 
-For WisBlock Core RAK4630:
-* [Sample Code: Weather Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Weather_Monitoring) 
-
-**LoRaWAN Weather Monitoring Kit with WisBlock RAK1903**
-* [LoRaWAN Weather Monitoring Kit](https://store.rakwireless.com/products/wisblock-kit-1-weather-monitor)
+- **LoRaWAN Weather Monitoring Kit with WisBlock RAK1903**
+    * [LoRaWAN Weather Monitoring Kit](https://store.rakwireless.com/products/wisblock-kit-1-weather-monitor?utm_source=WeatherMonitoringKit&utm_medium=Document&utm_campaign=BuyFromStore)
 
 ## Product Description
 
@@ -44,11 +42,11 @@ The RAK1903 WisBlock Ambient Light Sensor Module, part of the RAK Wireless Wisbl
 ## Product Features
 
 * **Sensor specifications**
-    * 0.01 to 83865 lux measurement range     
-    * Optical filtering to match human eye    
+    * 0.01 to 83865 lux measurement range
+    * Optical filtering to match human eye
     * Voltage Supply: 3.3&nbsp;V
     * Current Consumption: 0.4&nbsp;uA to 3.7&nbsp;uA
-    * Chipset: TI OPT3001DNPR    
+    * Chipset: TI OPT3001DNPR
 
 * **Size**
     * 10 x 10&nbsp;mm
@@ -57,6 +55,6 @@ The RAK1903 WisBlock Ambient Light Sensor Module, part of the RAK Wireless Wisbl
 
 To use a **RAK1903**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK1903** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 Make sure to fix the module with the screws to ensure a proper function.
 :::

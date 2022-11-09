@@ -18,7 +18,7 @@ rak_img: /assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/1.product
 
 ### What Do You Need?
 
-1. RAK2245 Pi HAT WisLink LPWAN Concentrator
+1. [RAK2245 Pi HAT WisLink LPWAN Concentrator](https://store.rakwireless.com/products/rak2245-pi-hat/?utm_source=RAK2245PiHATWisLink-LoRa&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Raspberry Pi 3B+ or Raspberry Pi 4
 3. 16&nbsp;GB SD Card + Card Reader
 4. 5&nbsp;V at least 2&nbsp;A Micro USB Power Supply or USB C Power Supply

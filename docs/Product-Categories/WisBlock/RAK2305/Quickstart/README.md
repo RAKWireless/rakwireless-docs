@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK2305
-prev: ../Overview/ 
-next: ../Low-Level-Development/ 
+prev: ../Overview/
+next: ../Low-Level-Development/
 ---
 
 # RAK2305 Quick Start Guide
@@ -19,13 +19,13 @@ Before going through each and every step on using the RAK2305 WisBlock module, m
 
 #### Hardware
 
-- [RAK2305](https://store.rakwireless.com/products/rak2305-wi-fi-extension-board)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK2305 WisBlock Wireless Module](https://store.rakwireless.com/products/rak2305-wi-fi-extension-board?utm_source=RAK2305&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar panel ](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
-- [USB to UART TTL adapter](https://store.rakwireless.com/products/daplink-tool)(to flash image)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [USB to UART TTL adapter](https://store.rakwireless.com/products/daplink-tool?utm_source=RAKDAP1&utm_medium=Document&utm_campaign=BuyFromStore)(to flash image)
 - Jumper (to flash image)
 
 #### Software
@@ -84,7 +84,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 ##### Disassembling
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 2. Once the screws are removed, check the silkscreen of the module to find the correct location where force can be applied. By applying even force under the marked area, the module can be detached from the baseboard.
 
@@ -113,7 +113,7 @@ The complete list of ESP32 AT Command set can be found in the [Espressif AT Comm
 
 The AT commands start with **`AT`** and end with a new line **`(CR LF)`** and the default baud rate of AT Command UART is 115200.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 Make sure to use the **`setup()`** function with timeout.
 :::
 
@@ -204,8 +204,8 @@ Before starting the firmware upgrade, you need to download [Flash Download Tools
 />
 
 2. Choose **SPIDownload** tab.
-3. Click on the **...** icon and choose the bin file at address 0x0. 
-4. Select **DoNotChgBin** to use the default configuration. 
+3. Click on the **...** icon and choose the bin file at address 0x0.
+4. Select **DoNotChgBin** to use the default configuration.
 5. Select the **COM** port of the USB adapter and use 921600 for **BAUD**.
 
 <rk-img

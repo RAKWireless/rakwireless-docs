@@ -34,12 +34,12 @@ Before going through each and every step in the installation guide of the RAK460
 
 #### Hardware Tools
 
-- RAK4600 Breakout Board (provided) – including **LoRa and BLE antenna**, **Dupont lines (9x)**, and **4-pin headers (2x)**
+- [**RAK4600 Breakout Board**](https://store.rakwireless.com/products/rak4600-breakout-board?utm_source=RAK4600LPWANBreakoutModule&utm_medium=Document&utm_campaign=BuyFromStore) (provided) – including **LoRa and BLE antenna**, **Dupont lines (9x)**, and **4-pin headers (2x)**
 - Micro USB Cable (provided)
 - LoRa Gateway in range, for testing (not provided)
 - Windows PC (not provided)
 - USB to UART adapter (not provided)
-- RAKDAP1 Flash and Debug Tool (not provided)
+- [RAKDAP1 Flash and Debug Tool](https://store.rakwireless.com/products/daplink-tool?utm_source=RAKDAP1&utm_medium=Document&utm_campaign=BuyFromStore) (not provided)
 
 #### Software Tools
 
@@ -111,8 +111,8 @@ Before powering the RAK4600 Breakout Module, make sure you have installed the in
 :::
 
  Use **Figure 1** as a reference to connect the antennas.
- 
- 
+
+
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/interfacing/RAK4600_Breakout_Module_Antenna_Label.svg"
   width="90%"
@@ -154,7 +154,7 @@ Use **Figure 2** and **Figure 3** as a reference to identify the antennas.
 
 #### BLE Interface
 
-To configure the RAK4600 through BLE, execute the following steps. 
+To configure the RAK4600 through BLE, execute the following steps.
 
 1. Install the “**nRF Connect**” or “**nRF Master Control Panel (BLE)**” app provided by Nordic Semiconductor.
 2. Open the app on the mobile device and scan for BLE devices.
@@ -170,7 +170,7 @@ To configure the RAK4600 through BLE, execute the following steps.
 Connect within 60 seconds after resetting the RAK4600. After that time, the BLE broadcast will be stopped.
 :::
 
-4. After pressing the “**CONNECT**” button, a list will be displayed, as shown in **Figure 7**. 
+4. After pressing the “**CONNECT**” button, a list will be displayed, as shown in **Figure 7**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/ble-connect.jpg"
@@ -194,7 +194,7 @@ Connect within 60 seconds after resetting the RAK4600. After that time, the BLE 
   caption="Send AT command"
 />
 
-8. A small input window will pop up. This is where AT commands shall be typed. 
+8. A small input window will pop up. This is where AT commands shall be typed.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/ble-at-command-input.png"
@@ -202,7 +202,7 @@ Connect within 60 seconds after resetting the RAK4600. After that time, the BLE 
   caption="nRF app AT command input window"
 />
 
-9. Send AT commands to RAK4600 in this dialog. 
+9. Send AT commands to RAK4600 in this dialog.
 
     * For example, to check the current firmware version, type `at+version` then click on the “**SEND**” button.
 
@@ -222,7 +222,7 @@ The console output shall be read on the TX Characteristic of the App.
 
 ### Connecting to The Things Stack (TTN V3)
 
-This section will show how to connect the RAK4600 Breakout Board to The Things Stack (TTN V3) platform. 
+This section will show how to connect the RAK4600 Breakout Board to The Things Stack (TTN V3) platform.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/4.ttn-context.png"
@@ -234,7 +234,7 @@ As shown in **Figure 13**, The Things Stack is an open-source LoRaWAN Network Se
 
 LoRaWAN is a protocol for low-power wide-area networks. It allows for large-scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long-range wireless connections.
 
-The RAK4600 board can be part of this ecosystem as a device, and the objective of this section is to demonstrate how simple it is to send data to The Things Stack using the LoRaWAN protocol. To achieve this, the RAK4600 must be located inside the coverage of a LoRaWAN gateway connected to The Things Stack server. 
+The RAK4600 board can be part of this ecosystem as a device, and the objective of this section is to demonstrate how simple it is to send data to The Things Stack using the LoRaWAN protocol. To achieve this, the RAK4600 must be located inside the coverage of a LoRaWAN gateway connected to The Things Stack server.
 
 
 #### Registration to TTN and Creating LoRaWAN Applications
@@ -290,7 +290,7 @@ You can use the same login credentials on the TTN V2 if you have one. If you hav
 />
 
 6. To have an application registered, input first the specific details and necessary information about your application, then click **Create application**.
- 
+
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/t_image_7.png"
   width="100%"
@@ -301,7 +301,7 @@ If you have no error on the previous step, you should now be on the application 
 
 :::tip 📝 NOTE:
 
-Once you have the application in The Things Stack (TTN V3), you need to ensure that you are in coverage of a LoRaWAN gateway that is registered to The Things Stack (TTN V3) as well. Without the coverage of that LoRaWAN gateway, you cannot activate any device that you will register in your application. 
+Once you have the application in The Things Stack (TTN V3), you need to ensure that you are in coverage of a LoRaWAN gateway that is registered to The Things Stack (TTN V3) as well. Without the coverage of that LoRaWAN gateway, you cannot activate any device that you will register in your application.
 
 RAKwireless has [LoRaWAN gateways](https://store.rakwireless.com/collections/wisgate) that you can connect to The Things Stack (TTN V3) if no LoRaWAN gateway coverage is available in your location.
 
@@ -371,7 +371,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
 
 - The **AppEUI**, **DevEUI**, and **AppKey** are the parameters that you will need to activate your LoRaWAN end-device via OTAA. The **AppKey** is hidden by default for security reasons, but you can easily show it by clicking the show button. You can also copy the parameters quickly using the copy button.
 
-- The three OTAA parameters on The Things Stack device console are MSB by default. 
+- The three OTAA parameters on The Things Stack device console are MSB by default.
 
 - These parameters are always accessible on the device console page, as shown in **Figure 27**.
 :::
@@ -401,11 +401,11 @@ at+version
   caption="AT Command response"
 />
 
-As an example, these are the list of the parameters you need to configure in RAK4600: 
+As an example, these are the list of the parameters you need to configure in RAK4600:
 
 - LoRa join mode: **OTAA**
 - LoRa class: **Class A**
-- LoRa region: **EU868** 
+- LoRa region: **EU868**
 - Device EUI: **1133557799224466**
 - Application EUI: **1000000000000009**
 - Application Key: **04FA4E626EF5CF227C969601176275C2**
@@ -440,7 +440,7 @@ at+set_config=lora:dev_eui:1133557799224466
 5. Set the Application EUI.
 
 :::tip 📝 NOTE:
-All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error. 
+All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error.
 :::
 
 ```
@@ -580,11 +580,11 @@ at+version
   caption="AT Command response"
 />
 
-As an example, these are the list of the parameters you need to configure in RAK4600: 
+As an example, these are the list of the parameters you need to configure in RAK4600:
 
 - LoRa join mode: **ABP**
 - LoRa class: **Class A**
-- LoRa region: **EU868** 
+- LoRa region: **EU868**
 - Device address: **260BDE80**
 - Network Session Key: **433C7A924F7F6947778FE821525F183A**
 - Application Session Key: **A585653A949C2B2D44B55E99E94CB533**
@@ -653,7 +653,7 @@ By using the ABP mode in LoRaWAN, it doesn’t require to join a network before 
 8. Try to send data from the RAK4600 to The Things Network in ABP mode.
 
 ```
-at+send=lora:2:1234567890 
+at+send=lora:2:1234567890
 ```
 
 <rk-img
@@ -692,15 +692,15 @@ The architecture of the ChirpStack platform is shown in **Figure 43**. Similar t
 The frequency band used in this example is EU868 which is supported by the high-frequency version of the RAK4600 Breakout Board.
 :::
 
-* These are the steps needed to send data to the ChirpStack platform from a RAK4600 Breakout Board: 
+* These are the steps needed to send data to the ChirpStack platform from a RAK4600 Breakout Board:
 
   1. Create a new Application
-  2. Register a new device on the platform: 
+  2. Register a new device on the platform:
   3. Configure the Join Mode:
       * OTAA mode on the platform
       * OTAA mode on the RAK4600
       * ABP mode on the platform
-      * ABP mode on the RAK4600 Breakout Board 
+      * ABP mode on the RAK4600 Breakout Board
   4. Send data from the RAK4600 Breakout Board and receive it at the platform
 
 The following section gives the details of each of these aforementioned steps. Before you start, you must choose to use either ABP or OTAA mode to register the device to the network server.
@@ -723,10 +723,10 @@ The following section gives the details of each of these aforementioned steps. B
   caption="Creating a New Application"
 />
 
-3. Create an Application named “**rak_node_test**”. Fill in the required parameters, as shown in **Figure 46**. To finish, click on the “**CREATE APPLICATION**” button. 
+3. Create an Application named “**rak_node_test**”. Fill in the required parameters, as shown in **Figure 46**. To finish, click on the “**CREATE APPLICATION**” button.
 
 * **Application Name**: rak_node_test
-* **Application Description**: test 
+* **Application Description**: test
 * **Service profile**: field is to select the system profile.
 
 The **Application Description** field is just a descriptive text.
@@ -755,7 +755,7 @@ The **Application Description** field is just a descriptive text.
   caption="Devices Tab of an Application"
 />
 
-6. Inside of the “**DEVICES**” tab, create a new device (LoRa node) by clicking on the “**+ CREATE**” button. 
+6. Inside of the “**DEVICES**” tab, create a new device (LoRa node) by clicking on the “**+ CREATE**” button.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/connecting-chirpstack/chirpstack-add-device.png"
@@ -773,9 +773,9 @@ The **Application Description** field is just a descriptive text.
 
 Fill in the parameters requested:
 
-* **Device name** and **Device description**: These are just descriptive texts. 
-* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in **Figure 51**. You can also add a specific Device EUI directly in the form. 
-* **Device-profile**: To join in OTAA mode, select “**device_profile_otaa**” or “**device_profile_abp**” to join in ABP mode. 
+* **Device name** and **Device description**: These are just descriptive texts.
+* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in **Figure 51**. You can also add a specific Device EUI directly in the form.
+* **Device-profile**: To join in OTAA mode, select “**device_profile_otaa**” or “**device_profile_abp**” to join in ABP mode.
 
 8. To finish, click on the “**CREATE DEVICE**” button.
 
@@ -797,7 +797,7 @@ The LoRaWAN specification defines that to join in a LoRaWAN network, each end-de
 
 ###### Configure the OTAA Mode on the Platform
 
-1. If you have selected “**device_profile_otaa**”, then after the device is created, an Application key must be also created for this device. 
+1. If you have selected “**device_profile_otaa**”, then after the device is created, an Application key must be also created for this device.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/connecting-chirpstack/chirpstack-otaa.png"
@@ -813,9 +813,9 @@ The LoRaWAN specification defines that to join in a LoRaWAN network, each end-de
   caption="Chirpstack OTAA Set Device Keys"
 />
 
-3. Once the “**Application key**” is added in the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button. 
+3. Once the “**Application key**” is added in the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button.
 
-* As shown in **Figure 54**, a new device should be listed in the “**DEVICES**” tab. The most important parameters, such as the **Device EUI**, are shown in the summary. 
+* As shown in **Figure 54**, a new device should be listed in the “**DEVICES**” tab. The most important parameters, such as the **Device EUI**, are shown in the summary.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/connecting-chirpstack/chirpstack-deveui.png"
@@ -832,7 +832,7 @@ The LoRaWAN specification defines that to join in a LoRaWAN network, each end-de
 />
 
 :::tip 📝 NOTE:
-Standard OTAA mode requires the **Device EUI**, **Application Key**, and the **Application EUI**. But in ChirpStack’s implementation, only Device EUI and the Application Key are mandatory. The Application EUI is not required and is not recorded in the Application tab. Nevertheless, the Application EUI is a mandatory parameter in the RAK4600 Breakout Board firmware. To resolve this mismatch, you can reuse the Device EUI as the Application EUI during the configuration on the side of the node. 
+Standard OTAA mode requires the **Device EUI**, **Application Key**, and the **Application EUI**. But in ChirpStack’s implementation, only Device EUI and the Application Key are mandatory. The Application EUI is not required and is not recorded in the Application tab. Nevertheless, the Application EUI is a mandatory parameter in the RAK4600 Breakout Board firmware. To resolve this mismatch, you can reuse the Device EUI as the Application EUI during the configuration on the side of the node.
 :::
 
 ###### Configure the OTAA Mode on the RAK4600 Breakout Board
@@ -901,8 +901,8 @@ at+set_config=lora:dev_eui:d045f054b2797f7c
 at+set_config=lora:app_eui:d045f054b2797f7c
 ```
 :::tip 📝 NOTE:
-The App EUI parameter is not needed for the ChirpStack platform; therefore, you will use the same ID as the Device EUI. Otherwise, the firmware will fail to connect to the network server. 
-::: 
+The App EUI parameter is not needed for the ChirpStack platform; therefore, you will use the same ID as the Device EUI. Otherwise, the firmware will fail to connect to the network server.
+:::
 
 6.  Set the Application Key.
 
@@ -927,7 +927,7 @@ After configuring all the parameters, you need to reset your RAK4600 Breakout Bo
 at+join
 ```
 
-8. After 5 or 6 seconds, if the request is successfully received by a LoRa gateway, then the “**OK Join Success**” message will be shown. 
+8. After 5 or 6 seconds, if the request is successfully received by a LoRa gateway, then the “**OK Join Success**” message will be shown.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/connecting-chirpstack/chirpstack-otaa-success.png"
@@ -943,7 +943,7 @@ at+join
   caption="Checking LoRaWAN Joint Request in Chirpstack OTAA Console"
 />
 
-9.  Try to send data from the RAK4600 Breakout Board to ChirpStack. 
+9.  Try to send data from the RAK4600 Breakout Board to ChirpStack.
 
 
 ```
@@ -957,7 +957,7 @@ at+send=lora:2:1234567890
   caption="Send a LoRaWAN Message via RAK Serial Port Tool"
 />
 
-- On the ChirpStack console, the messages shall appear in the “**LORAWAN FRAMES**” tab, as shown in **Figure 61**. By convention, messages sent from nodes to the gateway are considered as **UPLINK**, while messages sent by the gateway to nodes are considered as a **DOWNLINK**. 
+- On the ChirpStack console, the messages shall appear in the “**LORAWAN FRAMES**” tab, as shown in **Figure 61**. By convention, messages sent from nodes to the gateway are considered as **UPLINK**, while messages sent by the gateway to nodes are considered as a **DOWNLINK**.
 
 
 <rk-img
@@ -970,7 +970,7 @@ at+send=lora:2:1234567890
 
 ###### Configure the ABP Mode on the Platform
 
-During the registration of a new device, if “**device_profile_abp**” is selected, then the ChirpStack platform will assume that this device will join the LoRaWAN network using the ABP mode. 
+During the registration of a new device, if “**device_profile_abp**” is selected, then the ChirpStack platform will assume that this device will join the LoRaWAN network using the ABP mode.
 
 :::tip 📝 NOTE:
 Check **Disable frame-counter validation** to prevent the node-side counting frame counting from starting from zero after the node is powered on during the test, and the server cannot synchronize the node-side counting, causing the transmission to fail.
@@ -979,7 +979,7 @@ Check **Disable frame-counter validation** to prevent the node-side counting fra
 1. Fill the parameters requested, as appears in **Figure 62**:
 
 * **Device name** and **Device description**: These are just descriptive texts.
-* **Device EUI**: You can also add a specific Device EUI directly in the form. 
+* **Device EUI**: You can also add a specific Device EUI directly in the form.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/connecting-chirpstack/chirpstack-abp-console.png"
@@ -987,9 +987,9 @@ Check **Disable frame-counter validation** to prevent the node-side counting fra
   caption="Configuring a Device in ABP Mode"
 />
 
-2. Once these parameters are filled, click on the “**CREATE DEVICE**” button. 
+2. Once these parameters are filled, click on the “**CREATE DEVICE**” button.
 
-After selecting the ABP mode, the following parameters appear in the “**ACTIVATION**” tab: 
+After selecting the ABP mode, the following parameters appear in the “**ACTIVATION**” tab:
 
 * **Device address**
 * **Network Session Key**
@@ -1029,7 +1029,7 @@ As an example, the following parameters will be configured in RAK4600:
 
 - LoRa join mode: **ABP**
 - LoRa class: **Class A**
-- LoRa region: **EU868** 
+- LoRa region: **EU868**
 - Device address: **26011af9** (from ChirpStack registration)
 - Network Session Key: **c280cb8d1df688bc18601a97025c5488** (from ChirpStack registration)
 - Application Session Key: **4d42ec5caf97f03d833cdaf5003f69e1** (from ChirpStack registration)
@@ -1172,7 +1172,7 @@ Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKD
 
 #### Firmware Upgrade Through BLE
 
-1. Install the **nRF Connect for Mobile**, developed by the Nordic Semiconductor company. This tool is available on Google Play Store and Apple App Store. 
+1. Install the **nRF Connect for Mobile**, developed by the Nordic Semiconductor company. This tool is available on Google Play Store and Apple App Store.
 
     - [nRF Connect for Mobile](https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Connect-for-mobile)
 

@@ -17,7 +17,7 @@ tags:
 
 ### What Do You Need?
 
-1. RAK7244 WisGate Developer D4 Gateway
+1. [RAK7244 WisGate Developer D4 Gateway](https://store.rakwireless.com/products/rak7244-lpwan-developer-gateway?utm_source=RAK7244LPWANDeveloperD4Gateway&utm_medium=Document&utm_campaign=BuyFromStore)
 2. 16&nbsp;GB SD card (included) + Card Reader
 3. 5&nbsp;V at least 2.5&nbsp;A Micro USB Power Supply
 4. A Windows/Mac OS/Linux Computer

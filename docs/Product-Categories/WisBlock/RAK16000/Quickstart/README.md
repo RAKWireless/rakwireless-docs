@@ -4,8 +4,8 @@ tags:
   - quickstart
   - wisblock
   - RAK16000
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK16000 Quick Start Guide
@@ -16,16 +16,17 @@ next: ../Datasheet/
 
 Before going through each and every step on using the RAK16000 WisBlock module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
-- [RAK16000 WisBlock DC Current Sensor](https://store.rakwireless.com/products/rak16000)
+- [RAK16000 WisBlock DC Current Sensor](https://store.rakwireless.com/products/rak16000?utm_source=RAK16000&utm_medium=Document&utm_campaign=BuyFromStore)
 - [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/) with IO slot
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
-#### Software 
+
+#### Software
 
 ##### Arduino
 
@@ -52,7 +53,7 @@ For more information about the RAK16000, refer to the [Datasheet](../Datasheet/)
 
 ::: tip 📝 NOTE
 - **GND** Connect to ground pin.
-- **VIN+** Connect to power supply pin  
+- **VIN+** Connect to power supply pin
 - **VIN-** Connect to load pin.
 :::
 
@@ -73,9 +74,9 @@ As shown in **Figure 2**, the location for the IO slot is properly marked by sil
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak16000/quickstart/16.removing-screws.png"
@@ -158,7 +159,7 @@ Now, you can connect the battery (optional) and USB cable to start programming y
    @copyright Copyright (c) 2020
 **/
 
-#include <Wire.h>    
+#include <Wire.h>
 #include <INA219_WE.h>// Click here to get the library: http://librarymanager/All#INA219_WE
 #define I2C_ADDRESS 0x41
 
@@ -179,19 +180,19 @@ void setup()
   /* Set ADC Mode for Bus and ShuntVoltage
   * Mode *            * Res / Samples *       * Conversion Time *
   BIT_MODE_9        9 Bit Resolution             84 µs
-  BIT_MODE_10       10 Bit Resolution            148 µs  
+  BIT_MODE_10       10 Bit Resolution            148 µs
   BIT_MODE_11       11 Bit Resolution            276 µs
   BIT_MODE_12       12 Bit Resolution            532 µs  (DEFAULT)
   SAMPLE_MODE_2     Mean Value 2 samples         1.06 ms
   SAMPLE_MODE_4     Mean Value 4 samples         2.13 ms
   SAMPLE_MODE_8     Mean Value 8 samples         4.26 ms
-  SAMPLE_MODE_16    Mean Value 16 samples        8.51 ms     
+  SAMPLE_MODE_16    Mean Value 16 samples        8.51 ms
   SAMPLE_MODE_32    Mean Value 32 samples        17.02 ms
   SAMPLE_MODE_64    Mean Value 64 samples        34.05 ms
   SAMPLE_MODE_128   Mean Value 128 samples       68.10 ms
   */
   ina219.setADCMode(SAMPLE_MODE_128); // choose mode and uncomment for change of default
-  
+
   /* Set measure mode
   POWER_DOWN - INA219 switched off
   TRIGGERED  - measurement on demand
@@ -199,7 +200,7 @@ void setup()
   CONTINUOUS  - Continuous measurements (DEFAULT)
   */
   ina219.setMeasureMode(CONTINUOUS); // choose mode and uncomment for change of default
-  
+
   /* Set PGain
   * Gain *  * Shunt Voltage Range *   * Max Current (if shunt is 0.1 ohms) *
    PG_40       40 mV                    0.4 A
@@ -208,7 +209,7 @@ void setup()
    PG_320      320 mV                   3.2 A (DEFAULT)
   */
   ina219.setPGain(PG_320); // choose gain and uncomment for change of default
-  
+
   /* Set Bus Voltage Range
    BRNG_16   -> 16 V
    BRNG_32   -> 32 V (DEFAULT)
@@ -230,9 +231,9 @@ void loop()
   float loadVoltage_V = 0.0;
   float busVoltage_V = 0.0;
   float current_mA = 0.0;
-  float power_mW = 0.0; 
+  float power_mW = 0.0;
   bool ina219_overflow = false;
-  
+
   shuntVoltage_mV = ina219.getShuntVoltage_mV();
   busVoltage_V = ina219.getBusVoltage_V();
   //here we use the I=U/R to calculate, here the Resistor is 100mΩ, accuracy can reach to 0.5%.
@@ -240,7 +241,7 @@ void loop()
   power_mW = ina219.getBusPower();
   loadVoltage_V  = busVoltage_V + (shuntVoltage_mV/1000);
   ina219_overflow = ina219.getOverflow();
-  
+
   Serial.print("Shunt Voltage [mV]: "); Serial.println(shuntVoltage_mV);
   Serial.print("Bus Voltage [V]: "); Serial.println(busVoltage_V);
   Serial.print("Load Voltage [V]: "); Serial.println(loadVoltage_V);
@@ -253,7 +254,7 @@ void loop()
     Serial.println("Overflow! Choose higher PGAIN");
   }
   Serial.println();
-  
+
   delay(1000);
 }
 

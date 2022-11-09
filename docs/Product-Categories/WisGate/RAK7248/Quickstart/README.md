@@ -15,7 +15,7 @@ tags:
 
 ### What Do You Need?
 
-1. RAK7248/RAK7248C/RAK7248P WisGate Developer D4H Gateway
+1. [RAK7248/RAK7248C/RAK7248P WisGate Developer D4H Gateway](https://store.rakwireless.com/products/rak7248?utm_source=RAK7248WisGateDeveloperD4H&utm_medium=Document&utm_campaign=BuyFromStore)
 2. 16&nbsp;GB SD Card + Card Reader
 3. 5&nbsp;V at least 2.5&nbsp;A Micro USB Power Supply
 4. A Windows/Mac OS/Linux Computer

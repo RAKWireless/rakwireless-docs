@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK1903
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK1903 Quick Start Guide
@@ -21,24 +21,24 @@ Before going through each and every step on using the RAK1903 WisBlock module, m
 
 #### Hardware
 
-- [RAK1903 WisBlock Ambient Light Sensor Module](https://store.rakwireless.com/collections/wisblock-sensor/products/rak1903-opt3001dnpr-ambient-light-sensor)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK1903 WisBlock Ambient Light Sensor Module](https://store.rakwireless.com/products/rak1903-opt3001dnpr-ambient-light-sensor?utm_source=RAK1903&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [RAK19005 WisBlock Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005)
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [RAK19005 WisBlock Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005?utm_source=RAK19005&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
 - Download and install [ArduinoIDE](https://www.arduino.cc/en/Main/Software).
-- To add the RAKwireless Core boards on your Arduino board, install the RAKwireless Arduino BSP. Follow the steps in the [Github repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+- To add the RAKwireless Core boards on your Arduino board, install the RAKwireless Arduino BSP. Follow the steps in the [GitHub repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
 ## Product Configuration
 
 ### Hardware Setup
 
-WisBlock can integrate this module which makes it easy to build up an ambient light data acquisition system. 
+WisBlock can integrate this module which makes it easy to build up an ambient light data acquisition system.
 
 For more information about RAK1903, refer to the [Datasheet](../Datasheet/).
 
@@ -68,9 +68,9 @@ As shown in **Figure 2**, the location for Slot A, B, C, and D are properly mark
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak1903/quickstart/16.removing-screws.png"
@@ -95,7 +95,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1903 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1903 uses I2C communication lines, and it can cause possible conflict especially on some IO modules.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
@@ -340,8 +340,8 @@ If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the *
 
 #### LoRaWAN Weather Monitoring with RAK1903
 
-For WisBlock Core RAK4630, it has an example for [LoRaWAN Weather Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Weather_Monitoring) with RAK1903 Ambient Light Module. 
-   
+For WisBlock Core RAK4630, it has an example for [LoRaWAN Weather Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Weather_Monitoring) with RAK1903 Ambient Light Module.
+
 <rk-img
   src="/assets/images/wisblock/rak1903/quickstart/lorawan_weather.png"
   width="100%"

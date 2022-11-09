@@ -17,7 +17,7 @@ rak_img: /assets/images/wislink-lora/rak2245-stamp-edition/quickstart/overview/R
 
 ### What do you need?
 
-1. **RAK2245 Stamp WisLink LPWAN Concentrator**
+1. [RAK2245 Stamp WisLink LPWAN Concentrator](https://store.rakwireless.com/products/rak2245-stamp-edition?utm_source=RAK2245WisLink-LoRaStampEdition&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Raspberry Pi 3B+
 3. 16&nbsp;GB SD card + card reader
 4. 5&nbsp;V at least 2&nbsp;A Micro USB Power Supply

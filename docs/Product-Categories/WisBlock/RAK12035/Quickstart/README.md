@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK12035
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK12035 Quick Start Guide
@@ -21,12 +21,12 @@ Before going through each and every step on using the RAK12035 WisBlock module, 
 
 #### Hardware
 
-- [RAK12023 & RAK12035 WisBlock Soil Moisture Sensor Module](https://store.rakwireless.com/products/rak12023-rak12035-wisblock-soil-moisture-sensor)
+- [RAK12023 & RAK12035 WisBlock Soil Moisture Sensor Module](https://store.rakwireless.com/products/rak12023-rak12035-wisblock-soil-moisture-sensor?utm_source=RAK12023&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) with IO slot
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -37,7 +37,7 @@ Before going through each and every step on using the RAK12035 WisBlock module, 
 
 ### Hardware Setup
 
-RAK12035 is a separate soil moisture sensor probe module based on the ATTINY441-SSU microcontroller from Atmel that can be connected to the [RAK12023 module](http://localhost:8080/Product-Categories/WisBlock/RAK12023/Overview/). It uses capacitive sensing to measure moisture. 
+RAK12035 is a separate soil moisture sensor probe module based on the ATTINY441-SSU microcontroller from Atmel that can be connected to the [RAK12023 module](http://localhost:8080/Product-Categories/WisBlock/RAK12023/Overview/). It uses capacitive sensing to measure moisture.
 
 Because you need to bury the RAK12035 sensor probe into the soil, the electronics on the PCB of the soil sensor, together with the cable, are covered by a shrinkable tube for additional protection from getting wet.
 
@@ -80,9 +80,9 @@ The RAK12023 module can be mounted on the IO slot of the WisBlock Base board, as
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12035/quickstart/removing_screw.png"
@@ -107,7 +107,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
@@ -168,7 +168,7 @@ The calibration method in air and water is not very precise. To get more precise
 
 3. Calibrating the sensor is a **MUST**. Follow first the steps on [RAK12023 Quick Start Guide](/Product-Categories/WisBlock/RAK12023/Quickstart/#software-configuration-and-example) (Upon this guide, it will teach you how to calibrate your sensor properly.) before proceeding to **STEP 3** below.
 
-4. After following **STEP 2** on how to calibrate the sensor, copy the following sample code into your Arduino IDE. 
+4. After following **STEP 2** on how to calibrate the sensor, copy the following sample code into your Arduino IDE.
 
 ::: details Click Here to View Example Code
 ```c
@@ -178,9 +178,9 @@ The calibration method in air and water is not very precise. To get more precise
  * @brief Simple example to read data from the RAK12023/RAK12035 Soil Moisture Sensor
  * @version 0.1
  * @date 2021-11-20
- * 
+ *
  * @copyright Copyright (c) 2021
- * 
+ *
  */
 #include <Arduino.h>
 #include <Wire.h>
@@ -298,9 +298,9 @@ If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the *
 />
 
 6. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs, as shown in **Figure 13**. Try to bury the RAK12035 sensor probe into the soil, and you'll be able to see the soil's capacitance, moisture, and temperature.
-   
-::: tip 📝 NOTE   
-Before burying the RAK12035 sensor probe, following the [Recommended Depth](/Product-Categories/WisBlock/RAK12035/Quickstart/#recommended-depth) of the RAK12035 Sensor probe is **required**. 
+
+::: tip 📝 NOTE
+Before burying the RAK12035 sensor probe, following the [Recommended Depth](/Product-Categories/WisBlock/RAK12035/Quickstart/#recommended-depth) of the RAK12035 Sensor probe is **required**.
 :::
 
 <rk-img

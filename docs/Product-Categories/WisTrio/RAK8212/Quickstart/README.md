@@ -19,10 +19,10 @@ rak_img: /assets/images/wistrio/rak8212/quickstart/overview/RAK8212_home.png
 
 Before going through each and every step in the installation guide of the RAK8212 WisTrio iTracker Pro Module, make sure to prepare the necessary items listed below:
 
-1. **RAK8212 WisTrio iTracker Pro**
+1. [RAK8212 WisTrio iTracker Pro](https://store.rakwireless.com/products/rak8212-itracker-pro?utm_source=RAK8212iTrackerPro&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Emulator Kit
 3. Connector Wires
-4. 3.3V Battery Power Supply
+4. 3.3&nbsp;V Battery Power Supply
 5. Windows PC
 6. Android/IOS Mobile Device
 

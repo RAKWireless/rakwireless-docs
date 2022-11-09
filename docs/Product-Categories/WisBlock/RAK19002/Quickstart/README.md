@@ -5,12 +5,11 @@ tags:
   - quickstart
   - wisblock
   - RAK19002
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK19002 Quick Start Guide
-
 
 
 ## Prerequisite
@@ -21,12 +20,12 @@ Before going through each and every step on using RAK19002 WisBlock module, make
 
 #### Hardware
 
-- [RAK19002 WisBlock Boost Board](https://store.rakwireless.com/products/wisblock-boost-module-rak19002)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK19002 WisBlock Boost Board](https://store.rakwireless.com/products/wisblock-boost-module-rak19002?utm_source=WisBlockRAK19002&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -76,9 +75,9 @@ As shown in **Figure 3**, the location for Slot A, B, C, and D are properly mark
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak19002/quickstart/16.removing-screws.png"
@@ -103,7 +102,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. 
+If you will connect other modules to remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.

@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK13800
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK13800 Quick Start Guide
@@ -17,17 +17,17 @@ next: ../Datasheet/
 
 Before going through each and every step on using the RAK13800 WisBlock module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
-- [RAK13800 WisBlock Ethernet Module](https://store.rakwireless.com/products/rak13800-wisblock-ethernet-interface)
-- [RAK19018 WisBlock POE Module (optional)](https://store.rakwireless.com/products/rak19018-poe-power-board-for-rak13800)
+- [RAK13800 WisBlock Ethernet Module](https://store.rakwireless.com/products/rak13800-wisblock-ethernet-interface?utm_source=RAK13800&utm_medium=Document&utm_campaign=BuyFromStore)
+- [RAK19018 WisBlock POE Module (optional)](https://store.rakwireless.com/products/rak19018-poe-module-for-rak13800?utm_source=RAK19018&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- Li-Ion/LiPo battery (optional)
-- Solar charger (optional)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -35,7 +35,7 @@ Based on the choice of the WisBlock Core, select a Development Environment:
 
 <b>Programming via Arduino IDE</b>
 - [RAKwireless BSP support for Arduino](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index)
-<br>In Arduino IDE, once you installed the BSP, the examples for WisBlock Core will be automatically included on the list of examples. 
+<br>In Arduino IDE, once you installed the BSP, the examples for WisBlock Core will be automatically included on the list of examples.
 
 <b>Programming via PlatformIO IDE:</b>
 - [RAKwireless WisBlock modules in PlatformIO](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md)
@@ -45,7 +45,7 @@ Based on the choice of the WisBlock Core, select a Development Environment:
 
 ### Hardware Setup
 
-The RAK13800 WisBlock Ethernet Module must be mounted on the IO slot of the WisBlock Base board, as shown in the highlighted red area. 
+The RAK13800 WisBlock Ethernet Module must be mounted on the IO slot of the WisBlock Base board, as shown in the highlighted red area.
 
 To use RAK13800 in your project, you need to connect a [Wisblock Core](/Product-Categories/WisBlock/#wisblock-core), as shown in the highlighted green area.
 
@@ -77,9 +77,9 @@ Always secure the connection of the WisBlock module by using compatible screws.
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock module is the same. 
+The procedure in disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak13800/quickstart/removing_screw.png"
@@ -162,16 +162,16 @@ unsigned long beginMicros, endMicros;
 unsigned long byteCount = 0;
 bool printWebData = true;  // Set to false for better speed measurement
 
-void setup() 
+void setup()
 {
   pinMode(WB_IO2, OUTPUT);
   digitalWrite(WB_IO2, HIGH); // Enable power supply.
-  
+
   pinMode(WB_IO3, OUTPUT);
   digitalWrite(WB_IO3, LOW);  // Reset Time.
   delay(100);
   digitalWrite(WB_IO3, HIGH);  // Reset Time.
-  
+
   time_t timeout = millis();
   // Initialize Serial for debug output.
   Serial.begin(115200);
@@ -196,25 +196,25 @@ void setup()
     if (Ethernet.hardwareStatus() == EthernetNoHardware)  // Check for Ethernet hardware present.
     {
       Serial.println("Ethernet shield was not found.  Sorry, can't run without hardware. :(");
-      while (true) 
+      while (true)
       {
         delay(1); // Do nothing, just love you.
       }
     }
-    while (Ethernet.linkStatus() == LinkOFF) 
+    while (Ethernet.linkStatus() == LinkOFF)
     {
       Serial.println("Ethernet cable is not connected.");
       delay(500);
     }
-    
+
     Ethernet.begin(mac, ip, myDns); // Try to configure using IP address instead of DHCP.
-  } 
-  else 
+  }
+  else
   {
     Serial.print("DHCP assigned IP ");
     Serial.println(Ethernet.localIP());
   }
- 
+
   delay(1000);   // Give the Ethernet shield a second to initialize.
   Serial.print("connecting to ");
   Serial.print(server);
@@ -229,26 +229,26 @@ void setup()
     client.println("Host: www.google.com");
     client.println("Connection: close");
     client.println();
-  } 
-  else 
+  }
+  else
   {
     Serial.println("connection failed");  // If you didn't get a connection to the server.
   }
   beginMicros = micros();
 }
 
-void loop() 
+void loop()
 {
   int len = client.available(); //  If there are incoming bytes available from the server, read them and print them.
-  if (len > 0) 
+  if (len > 0)
   {
     byte buffer[80];
-    if (len > 80) 
+    if (len > 80)
   {
       len = 80;
   }
     client.read(buffer, len);
-    if (printWebData) 
+    if (printWebData)
     {
       Serial.write(buffer, len); // Show in the serial monitor (slows some boards)
     }
@@ -272,7 +272,7 @@ void loop()
     Serial.print(" kbytes/second");
     Serial.println();
 
-    while (true) 
+    while (true)
     {
       delay(1); // Do nothing forevermore.
     }

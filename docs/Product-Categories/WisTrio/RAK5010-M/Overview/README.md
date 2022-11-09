@@ -27,7 +27,7 @@ With the GPS and BLE features, the device can be used in a wide range of applica
 
 The board is equipped with two sensors on board: humidity and temperature sensor and 3-axis motion sensor. Additionally, the extension IOs in the module allow expandable sensor application in addition to the on-board ones.
 
-This board is particularly suitable to be used as a quick testing and prototyping tool for applications requiring Nb-IoT connectivity. Application development supports the GCC environment.
+This board is particularly suitable to be used as a quick testing and prototyping tool for applications requiring NB-IoT connectivity. Application development supports the GCC environment.
 
 
 

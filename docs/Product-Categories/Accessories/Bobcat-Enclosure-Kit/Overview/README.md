@@ -1,11 +1,11 @@
 ---
 rak_img: /assets/images/accessories/bobcat-enclosure-kit/installation/bobcat.png
-rak_desc: This kit includes all the necessary parts for your Bobcat Miner 300 Outdoor in a secure and durable casing. 
+rak_desc: This kit includes all the necessary parts for your Bobcat Miner 300 Outdoor in a secure and durable casing.
 rak_grp: [accessories, enclosures]
-rak_model: RAKBox-GW-4B    
+rak_model: RAKBox-GW-4B
 prev: ../../
 next: ../Installation-Guide/
-tags: 
+tags:
     - Bobcat Outdoor Enclosure Kit
     - RAKBox-GW-4B
 ---
@@ -13,7 +13,7 @@ tags:
 
 # Bobcat Outdoor Enclosure Kit
 
-Thank you for choosing **Bobcat Outdoor Enclosure Kit** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **Bobcat Outdoor Enclosure Kit** in your awesome IoT project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Installation Guide](../Installation-Guide/)
 * [Solar Shield Installation Guide](../Solar-Shield/)
@@ -33,5 +33,5 @@ Combined with one of our fiberglass antennas, this kit allows you to better posi
 - Antenna cable type RG316, with N-type female to RP-SMA male connectors for LoRa antenna.
 - RP-SMA female to SMA male adapter
 - RAKBox-GW-4
-- Maximum ambient temperature +40&nbsp;°C
+- Maximum ambient temperature +40°&nbsp;C
 - IP67 Rated

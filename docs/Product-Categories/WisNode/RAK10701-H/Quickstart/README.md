@@ -19,7 +19,7 @@ Before going through each and every step in the installation guide of the RAK107
 
 #### Hardware Tools
 
-1. **RAK10701-H Field Mapper for Helium Network**
+1. [RAK10701-H Field Mapper for Helium Network](https://store.rakwireless.com/products/field-mapper-for-helium-with-plug-play-and-3rd-party-mode-rak10701-h?variant=42437640782022?utm_source=RAK10701H&utm_medium=Document&utm_campaign=BuyFromStore)
 2. LoRa SubGhz Antenna with RP-SMA connector
 3. USB Type-C Cable
 4. Windows/Linux/macOS for PC or iOS/Android for mobile

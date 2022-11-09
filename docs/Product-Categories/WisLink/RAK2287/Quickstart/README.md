@@ -17,9 +17,9 @@ The following two sections provide a list of the components and tools you need t
 
 #### Hardware Tools
 
-- **RAK2287 WisLink LPWAN Concentrator**
+- [RAK2287 WisLink LPWAN Concentrator](https://store.rakwireless.com/products/rak2287-lpwan-gateway-concentrator-module/?utm_source=RAK2287WisLink-LoRa&utm_medium=Document&utm_campaign=BuyFromStore)
 - **Raspberry Pi 3/4** (RAK2287 bundle includes a Raspberry Pi 4)
-- **RAK2287 Pi HAT** (RAK2287 bundle includes a RAK2287 Pi HAT)
+- [RAK2287 Pi HAT](https://store.rakwireless.com/products/rak2287-pi-hat?utm_source=RAK2287PiHAT&utm_medium=Document&utm_campaign=BuyFromStore) (RAK2287 bundle includes a RAK2287 Pi HAT)
 - LoRa and GPS antennas
 - A 16&nbsp;GB SD card (included in the RAK2287 bundle only), a card reader, and a PC
 

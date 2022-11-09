@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK12006
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK12006 Quick Start Guide
@@ -20,12 +20,12 @@ Before going through each and every step on using the RAK12006 WisBlock module, 
 
 #### Hardware
 
-- [RAK12006 WisBlock PIR Sensor Module](https://store.rakwireless.com/products/wisblock-pir-module-rak12006?_pos=1&_sid=cb7fc7fa0&_ss=r)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK12006 WisBlock PIR Sensor Module](https://store.rakwireless.com/products/wisblock-pir-module-rak12006?_pos=1&_sid=cb7fc7fa0&_ss=r?utm_source=RAK12006&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -60,9 +60,9 @@ The RAK12006 module can be mounted on the IO slot of the WisBlock Base board, as
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12006/quickstart/removing_screw.png"
@@ -87,7 +87,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
@@ -132,7 +132,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
   caption="Selecting RAK11310 as WisBlock Core"
 />
 
-3. Next, copy the following sample code into your Arduino IDE. 
+3. Next, copy the following sample code into your Arduino IDE.
 
 ::: details Click Here to View Example Code
 ```c
@@ -150,11 +150,11 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 int gCurrentStatus = 0;         // variable for reading the pin current status
 int gLastStatus = 0;            // variable for reading the pin last status
 
-void setup() 
+void setup()
 {
    pinMode(SENSOR_PIN, INPUT);   // The Water Sensor is an Input
    pinMode(LED_GREEN, OUTPUT);  // The LED is an Output
-   pinMode(LED_BLUE, OUTPUT);   // The LED is an Output   
+   pinMode(LED_BLUE, OUTPUT);   // The LED is an Output
    Serial.begin(115200);
    time_t timeout = millis();
    while (!Serial)
@@ -167,13 +167,13 @@ void setup()
      {
        break;
      }
-   } 
+   }
    Serial.println("========================");
    Serial.println("    RAK12006 test");
    Serial.println("========================");
 }
 
-void loop() {  
+void loop() {
 
   gCurrentStatus = digitalRead(SENSOR_PIN);
   if(gLastStatus != gCurrentStatus)
@@ -188,7 +188,7 @@ void loop() {
     {
       digitalWrite(LED_GREEN,LOW);
       digitalWrite(LED_BLUE,LOW);   // turn LED OF
-    }   
+    }
     gLastStatus = gCurrentStatus;
   }
   else

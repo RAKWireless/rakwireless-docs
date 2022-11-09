@@ -15,9 +15,10 @@ rak_img: /assets/images/accessories/lora-wifi-lte-spd/lightning_arrestor.png
 
 ## Description
 
-LA-GT2700 DN1-5 is a Surge Protective Device (SPD) for the protection of the transceiver against over-voltage and surge current induced by lightning. It can be used with a 50&nbsp;Ω system with a frequency range of 0 to 2700&nbsp;MHz and transmission power up to 200&nbsp;W. It is suitable to be used for LoRa, Wi-Fi, and LTE antennas. 
+LA-GT2700 DN1-5 is a Surge Protective Device (SPD) for the protection of the transceiver against over-voltage and surge current induced by lightning. It can be used with a 50&nbsp;Ω system with a frequency range of 0 to 2700&nbsp;MHz and transmission power up to 200&nbsp;W. It is suitable to be used for LoRa, Wi-Fi, and LTE antennas.
 
 For the purpose of protecting the indoor equipment and circuitry connected to the LoRa gateway, you need to install an Ethernet port Surge Protection Device (SPD).
+
 ## Features
 
 - Connector Type: **N-type male to N-type female**
@@ -56,7 +57,7 @@ Operation environment:
 
 | Parameter            | Value                      |
 | -------------------- | -------------------------- |
-| Ambient temperature  | -40&nbsp;℃ ~ 70&nbsp;℃     |
+| Ambient temperature  | -40°&nbsp;C ~ 70°&nbsp;C   |
 | Relative humidity    | 5% ~ 95%                   |
 | Atmospheric pressure | 70&nbsp;kPa ~ 106&nbsp;kPa |
 
@@ -64,18 +65,15 @@ Storage environment:
 
 | Parameter            | Value                      |
 | -------------------- | -------------------------- |
-| Ambient temperature  | -40&nbsp;℃ ~ 80&nbsp;℃     |
+| Ambient temperature  | -40°&nbsp;C ~ 80°&nbsp;C   |
 | Relative humidity    | 5% ~ 95%                   |
 | Atmospheric pressure | 70&nbsp;kPa ~ 106&nbsp;kPa |
 
 #### Standards
 
 - YD/T 1542-2006 Technical requirements and testing methods for Surge Protective Device of signaling networks.
-
 - Q/70924537-1.01-2000 General requirements for electronic surge protective device.
-
 - GB4943.2001/IEC60950:1999 Safety of information technology equipment.
-
 - GB/T18802.21-2004/IEC61643-21:2000 Low-voltage surge protective device-Part 21: Surge protective device connected to telecommunications and signaling networks-performance requirements and testing methods.
 
 #### Mechanical Characteristics

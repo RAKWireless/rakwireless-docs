@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials for installing and deploying your RAK4270 Module. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module. 
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK4270 Module. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
 rak_img: /assets/images/wisduo/rak4270-module/overview/RAK4270_Module_Home.png
 prev: ../Overview/
 next: ../AT-Command-Manual/
@@ -32,7 +32,7 @@ Before going through the step in the installation guide of the RAK4270 WisDuo LP
 
 #### Hardware Tools
 
-1. RAK4270 Module
+1. [**RAK4270 Module**](https://store.rakwireless.com/collections/wisduo/products/rak4270-lpwan-module?utm_source=RAK4270&utm_medium=Document&utm_campaign=BuyFromStore)
 2. USB to TTL Converter
 3. Windows PC
 
@@ -59,7 +59,7 @@ Before going through the step in the installation guide of the RAK4270 WisDuo LP
 
 ### Interfacing with RAK4270
 
-During the configuration of the module through the AT commands, it is possible to read the console outputs. You can connect to the console of the RAK4270 Module through the UART interface. 
+During the configuration of the module through the AT commands, it is possible to read the console outputs. You can connect to the console of the RAK4270 Module through the UART interface.
 
 #### Connect to the RAK4270
 
@@ -75,7 +75,7 @@ In this document, a RAK4270 Module is used as an example case. Use a USB to TTL 
 
 2. Any serial communication tool can be used. But, it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
 
-3. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows: 
+3. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows:
 
  * Baud Rate: **115200 bauds**
  * Data Bits: **8 bits**
@@ -104,7 +104,7 @@ Connect the RAK4270 Module to the computer as described in the previous section.
 
 ### Connecting to The Things Stack (TTN V3)
 
-This section will show how to connect the RAK4270 Module to The Things Stack (TTN V3) platform. 
+This section will show how to connect the RAK4270 Module to The Things Stack (TTN V3) platform.
 
 <rk-img
   src="/assets/images/wisduo/rak4270-module/quickstart/4.ttn-context.png"
@@ -116,7 +116,7 @@ As shown in **Figure 4**, The Things Stack is an open-source LoRaWAN Network Ser
 
 LoRaWAN is a protocol for low-power wide-area networks. It allows for large-scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long-range wireless connections.
 
-The RAK4270 Module can be part of this ecosystem as a device, and the objective of this section is to demonstrate how simple it is to send data to The Things Stack using the LoRaWAN protocol. To achieve this, the RAK4270 Module must be located inside the coverage of a LoRaWAN gateway connected to The Things Stack server. 
+The RAK4270 Module can be part of this ecosystem as a device, and the objective of this section is to demonstrate how simple it is to send data to The Things Stack using the LoRaWAN protocol. To achieve this, the RAK4270 Module must be located inside the coverage of a LoRaWAN gateway connected to The Things Stack server.
 
 
 #### Registration to TTN and Creating LoRaWAN Applications
@@ -172,7 +172,7 @@ You should now be on the step of creating your TTN account. Fill in all the nece
 />
 
 5. To have an application registered, you need to input first the specific details and necessary information about your application then click **Create application**.
- 
+
 <rk-img
   src="/assets/images/wisduo/rak4270-module/quickstart/t_image_7.png"
   width="100%"
@@ -183,7 +183,7 @@ If you have no error on the previous step, you should now be on the application 
 
 :::tip 📝 NOTE:
 
-Once you have the application in The Things Stack (TTN V3), you need to ensure that you are in coverage of a LoRaWAN gateway that is registered to The Things Stack (TTN V3) as well. Without the coverage of that LoRaWAN gateway, you cannot activate any device that you will register in your application. 
+Once you have the application in The Things Stack (TTN V3), you need to ensure that you are in coverage of a LoRaWAN gateway that is registered to The Things Stack (TTN V3) as well. Without the coverage of that LoRaWAN gateway, you cannot activate any device that you will register in your application.
 
 RAKwireless has [LoRaWAN gateways](https://store.rakwireless.com/collections/wisgate) that you can connect to The Things Stack (TTN V3) if no LoRaWAN gateway coverage is available in your location.
 
@@ -253,7 +253,7 @@ You should now be able to see the device on The Things Stack console after you f
 
 The **AppEUI**, **DevEUI**, and **AppKey** are the parameters that you will need to activate your LoRaWAN end device via OTAA. The **AppKey** is hidden by default for security reasons, but you can easily show it by clicking the show button. You can also copy the parameters quickly using the copy button.
 
-The three OTAA parameters on The Things Stack device console are MSB by default. 
+The three OTAA parameters on The Things Stack device console are MSB by default.
 
 These parameters are always accessible on the device console page, as shown in **Figure 18**.
 :::
@@ -283,11 +283,11 @@ at+version
   caption="AT Command response"
 />
 
-As an example, these are the list of the parameters you need to configure in RAK4270: 
+As an example, these are the list of the parameters you need to configure in RAK4270:
 
 - LoRa join mode: **OTAA**
 - LoRa class: **Class A**
-- LoRa region: **EU868** 
+- LoRa region: **EU868**
 - Device EUI: **1133557799224466**
 - Application EUI: **1000000000000009**
 - Application Key: **04FA4E626EF5CF227C969601176275C2**
@@ -322,7 +322,7 @@ at+set_config=lora:dev_eui:1133557799224466
 5. Set the Application EUI.
 
 :::tip 📝 NOTE:
-All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error. 
+All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error.
 :::
 
 ```
@@ -462,11 +462,11 @@ at+version
   caption="AT Command response"
 />
 
-As an example, these are the list of the parameters you need to configure in RAK4270: 
+As an example, these are the list of the parameters you need to configure in RAK4270:
 
 - LoRa join mode: **ABP**
 - LoRa class: **Class A**
-- LoRa region: **EU868** 
+- LoRa region: **EU868**
 - Device address: **260BDE80**
 - Network Session Key: **433C7A924F7F6947778FE821525F183A**
 - Application Session Key: **A585653A949C2B2D44B55E99E94CB533**
@@ -535,7 +535,7 @@ By using the ABP mode in LoRaWAN, it doesn’t require to join a network before 
 8. Try to send data from the RAK4270 to The Things Network in ABP mode.
 
 ```
-at+send=lora:2:1234567890 
+at+send=lora:2:1234567890
 ```
 
 <rk-img
@@ -609,7 +609,7 @@ Login to the ChirpStack server using your account and password.
 
 * For this setup, create an Application named “**rak_node_test**”.
 
-ChirpStack LoraServer supports multiple system configurations, with only one by default. 
+ChirpStack LoraServer supports multiple system configurations, with only one by default.
 
 * **Service profile**: field is to select the system profile.
 * **Payload codec**: is the parsing method for selecting load data. Such as parsing LPP format data.
@@ -640,7 +640,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   caption="Device Tab of an Application"
 />
 
-5. Once inside of the DEVICE tab, create a new device (LoRa node) by clicking on the “**+ CREATE**” button. 
+5. Once inside of the DEVICE tab, create a new device (LoRa node) by clicking on the “**+ CREATE**” button.
 
 
 <rk-img
@@ -659,9 +659,9 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 
 Fill in the parameters requested:
 
-* **Device name and Device description**: These are descriptive texts about your device. 
-* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in **Figure 42**. You can also add a specific Device EUI directly in the form. 
-* **Device Profile**: 
+* **Device name and Device description**: These are descriptive texts about your device.
+* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in **Figure 42**. You can also add a specific Device EUI directly in the form.
+* **Device Profile**:
   * If you want to join in OTAA mode, select “**DeviceProfile_OTAA**”.
   * If you want to join in ABP mode, select “**DeviceProfile_ABP**”.
 
@@ -681,7 +681,7 @@ In LoRaWAN, there are two (2) ways a node can connect itself to the LoRaWAN netw
 
 ###### Configure the OTAA Mode on the Platform
 
-1. If you have selected “**DeviceProfile_OTAA**”, as shown in **Figure 43**, then after the device is created, an Application Key must be also created for this device. 
+1. If you have selected “**DeviceProfile_OTAA**”, as shown in **Figure 43**, then after the device is created, an Application Key must be also created for this device.
 
 <rk-img
   src="/assets/images/wisduo/rak4270-module/quickstart/31.otaa.png"
@@ -697,7 +697,7 @@ In LoRaWAN, there are two (2) ways a node can connect itself to the LoRaWAN netw
   caption="Chirpstack OTAA Set Device Keys"
 />
 
-3. Once the Application Key is added to the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button. 
+3. Once the Application Key is added to the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button.
 
 * As shown in **Figure 45**, a new device should be listed in the DEVICES tab. The most important parameters, such as the Device EUI, are shown in the summary.
 
@@ -719,13 +719,13 @@ In LoRaWAN, there are two (2) ways a node can connect itself to the LoRaWAN netw
 
 :::tip 📝 NOTE:
 
-Standard OTAA mode requires the **Device EUI**, **Application Key**, and the **Application EUI**. But in ChirpStack’s implementation, only the Device EUI and the Application Key are mandatory. The Application EUI is not required and is not recorded in the Application tab. Nevertheless, the Application EUI is a mandatory parameter in the RAK4270 module’s firmware. To resolve this mismatch, you can reuse the Device EUI as the Application EUI during the configuration on the side of the node. 
+Standard OTAA mode requires the **Device EUI**, **Application Key**, and the **Application EUI**. But in ChirpStack’s implementation, only the Device EUI and the Application Key are mandatory. The Application EUI is not required and is not recorded in the Application tab. Nevertheless, the Application EUI is a mandatory parameter in the RAK4270 module’s firmware. To resolve this mismatch, you can reuse the Device EUI as the Application EUI during the configuration on the side of the node.
 
 :::
 
 ###### Configure the OTAA Mode on the RAK4270
 
-The RAK4270 Module supports a series of [AT commands](/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/#rak4270-at-command-manual) to configure its internal parameters and control the functionalities of the module. 
+The RAK4270 Module supports a series of [AT commands](/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/#rak4270-at-command-manual) to configure its internal parameters and control the functionalities of the module.
 
 To set up the RAK4270 Module to join ChirpStack using OTAA, start by connecting the RAK4270 Module to the computer (see **Figure 1**), open the RAK Serial Port Tool, and then wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
 
@@ -744,11 +744,11 @@ at+version
   caption="at+version command response"
 />
 
-As an example, these are the list of the parameters you need to configure in RAK4270: 
+As an example, these are the list of the parameters you need to configure in RAK4270:
 
 - LoRa join mode: **OTAA**
 - LoRa class: **Class A**
-- LoRa region: **EU868** 
+- LoRa region: **EU868**
 - Device EUI: **5e9d1e0857cf25f1**
 - Application EUI: **5e9d1e0857cf25f1**
 - Application Key: **f921d50cd7d02ee3c5e6142154f274b2**
@@ -765,7 +765,7 @@ at+set_config=lora:join_mode:0
 at+set_config=lora:class:0
 ```
 
-3. Set the frequency/region to EU868. 
+3. Set the frequency/region to EU868.
 
 - Refer to the [RAK4270 Module Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#rf-characteristics) for the list of supported frequencies.
 
@@ -787,8 +787,8 @@ at+set_config=lora:app_eui:5e9d1e0857cf25f1
 ```
 
 :::tip 📝 NOTE:
-The Application EUI parameter is not required in the ChirpStack platform. Therefore, it is possible to use the same ID as the Device EUI. Otherwise, the firmware will complain. 
-::: 
+The Application EUI parameter is not required in the ChirpStack platform. Therefore, it is possible to use the same ID as the Device EUI. Otherwise, the firmware will complain.
+:::
 
 6. Set the Application Key.
 
@@ -833,7 +833,7 @@ at+join
 9. Now, try to send data from the RAK4270 Module to ChirpStack.
 
 ```
-at+send=lora:2:1234567890 
+at+send=lora:2:1234567890
 ```
 
 <rk-img
@@ -844,7 +844,7 @@ at+send=lora:2:1234567890
 
 
 
-- On the ChirpStack platform, you should also see the messages in the LORAWAN FRAMES tab, as shown in **Figure 52**. By convention, messages sent from nodes to gateways are considered as **Uplinks**, while messages sent by gateways to nodes are considered as **Downlinks**. 
+- On the ChirpStack platform, you should also see the messages in the LORAWAN FRAMES tab, as shown in **Figure 52**. By convention, messages sent from nodes to gateways are considered as **Uplinks**, while messages sent by gateways to nodes are considered as **Downlinks**.
 
 
 <rk-img
@@ -860,7 +860,7 @@ This concludes the exercise to send data in the OTAA mode.
 
 ###### Configure the ABP Mode on the Platform
 
-During the registration of a new device, if you select “**DeviceProfile_ABP**”, as shown in **Figure 53**, then the ChirpStack platform will assume that this device will join the LoRaWAN network using the ABP mode. 
+During the registration of a new device, if you select “**DeviceProfile_ABP**”, as shown in **Figure 53**, then the ChirpStack platform will assume that this device will join the LoRaWAN network using the ABP mode.
 
 :::tip 📝 NOTE:
 
@@ -875,7 +875,7 @@ Check “**Disable counting frame verification**”. During the test, when the m
   caption="ChirpStack Console, Configuring a Device"
 />
 
-After selecting the ABP mode, the following parameters appear in the Activation tab: 
+After selecting the ABP mode, the following parameters appear in the Activation tab:
 
 * Device address
 * Network Session Key
@@ -908,11 +908,11 @@ at+version
   caption="at+version command response"
 />
 
-As an example, these are the list of the parameters you need to configure in RAK4270: 
+As an example, these are the list of the parameters you need to configure in RAK4270:
 
 - LoRa join mode: **ABP**
 - LoRa class: **Class A**
-- LoRa region: **EU868** 
+- LoRa region: **EU868**
 - Device address: **26011af9**
 - Network Session Key: **c280cb8d1df688bc18601a97025c5488**
 - Application Session Key: **4d42ec5caf97f03d833cdaf5003f69e1**
@@ -929,7 +929,7 @@ at+set_config=lora:join_mode:1
 at+set_config=lora:class:0
 ```
 
-3. Set the frequency/region to EU868. 
+3. Set the frequency/region to EU868.
 
 - Refer to the [RAK4270 Module Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#rf-characteristics) for the list of supported frequencies.
 
@@ -937,7 +937,7 @@ at+set_config=lora:class:0
 at+set_config=lora:region:EU868
 ```
 
-4. Set the Device Address. 
+4. Set the Device Address.
 
 ```
 at+set_config=lora:dev_addr:26011af9
@@ -983,7 +983,7 @@ By using the ABP mode in the LoRaWAN protocol, it doesn’t require to join a ne
 8. Now, try sending data from the RAK4270 Module to ChirpStack.
 
 ```
-at+send=lora:2:1234567890 
+at+send=lora:2:1234567890
 ```
 
 <rk-img
@@ -996,7 +996,7 @@ at+send=lora:2:1234567890
 
 This section will show you how to set up and connect two RAK4270 units to work in the LoRa P2P mode. You will be using EU868 as your frequency, although it is applicable also to other standard bands.
 
-1. Two RAK4270 units shall be set to operate on EU868 frequency. 
+1. Two RAK4270 units shall be set to operate on EU868 frequency.
 
 2. The setup of the RAK4270 units is done by connecting them with a general-purpose computer through the UART port. The setup of each RAK4270 can be done separately but testing the LoRa P2P mode will require having both units connected simultaneously to their respective UART port. This could be one computer with two (2) USB ports or two (2) computers with one USB port each.
 
@@ -1060,7 +1060,7 @@ at+set_config=lorap2p:transfer_mode:1
   caption="Setting Modes in both RAK4270 Module"
 />
 
-6. Try sending a message from Unit 1 to Unit 2. 
+6. Try sending a message from Unit 1 to Unit 2.
 
 ```
 at+send=lorap2p:1234567890
@@ -1112,7 +1112,7 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
 
     - [RAK4270 Module Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#software)
 
-2. Download the RAK Device Firmware Upgrade (DFU) tool. 
+2. Download the RAK Device Firmware Upgrade (DFU) tool.
     - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 3. Connect the RAK4270 Module with a computer through a USB to TTL. Refer to [**Figure 1**](/Product-Categories/WisDuo/RAK4270-Module/Quickstart/#connect-to-the-rak4270)

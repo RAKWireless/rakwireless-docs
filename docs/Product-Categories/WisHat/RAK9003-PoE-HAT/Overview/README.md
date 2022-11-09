@@ -21,9 +21,9 @@ Thank you for choosing **RAK9003 PoE Pi HAT** in your awesome IoT project! 🎉 
 
 ## Product Description
 
-The PoE Pi HAT is an add-on board with a Raspberry PI form factor, compatible with RPi 3B+ and RPi4 which can be plugged into a Raspberry Pi directly. The PoE Pi HAT makes it possible to power the Raspberry Pi via a standard CAT 5 Ethernet cable.
+The **RAK9003 PoE Pi HAT** is an add-on board with a Raspberry PI form factor, compatible with RPi 3B+ and RPi4 which can be plugged into a Raspberry Pi directly. The RAK9003 PoE Pi HAT makes it possible to power the Raspberry Pi via a standard CAT 5 Ethernet cable.
 
-The PoE Pi HAT is designed to be compatible with the IEEE 802.3af/at Power-over-Ethernet (PoE). It is compatible with both PoE Mode A and Mode B. The PoE Pi HAT signature and control circuit provides the PoE AT compatibility signature and power classification required by the Power Sourcing Equipment (PSE) before applying up to 30&nbsp;W power to the port. The PoE Pi HAT is compatible with Class 0 to Class 4 equipment. The high efficiency DC/DC converter operates over a wide input voltage range and provides a regulated low ripple and low noise output. The DC/DC converter also has built-in overload and short-circuit output protection.
+The RAK9003 PoE Pi HAT is designed to be compatible with the IEEE 802.3af/at Power-over-Ethernet (PoE). It is compatible with both PoE Mode A and Mode B. The RAK9003 PoE Pi HAT signature and control circuit provides the PoE AT compatibility signature and power classification required by the Power Sourcing Equipment (PSE) before applying up to 30&nbsp;W power to the port. The RAK9003 PoE Pi HAT is compatible with Class 0 to Class 4 equipment. The high efficiency DC/DC converter operates over a wide input voltage range and provides a regulated low ripple and low noise output. The DC/DC converter also has built-in overload and short-circuit output protection.
 
 
 

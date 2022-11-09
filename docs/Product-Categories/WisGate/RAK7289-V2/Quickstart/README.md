@@ -17,7 +17,7 @@ tags:
 
 ### What do you need?
 
-1. [RAK7289 V2 WisGate Edge Pro](https://store.rakwireless.com/products/wisgate-edge-pro-rak7289v2?utm_source=WisGateRAK7289V2&utm_medium=Document&utm_campaign=BuyFromStore)
+1. [RAK7289 V2 WisGate Edge Pro](https://store.rakwireless.com/products/wisgate-edge-pro-rak7289v2-rak7289cv2?utm_source=WisGateRAK7289V2&utm_medium=Document&utm_campaign=BuyFromStore)
 2. A Windows/Mac OS/Linux Computer
 
 :::warning ⚠️ WARNING

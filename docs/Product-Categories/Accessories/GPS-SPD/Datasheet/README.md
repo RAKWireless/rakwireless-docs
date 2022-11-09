@@ -59,7 +59,7 @@ Operation environment:
 
 | Parameter            | Value                      |
 | -------------------- | -------------------------- |
-| Ambient temperature  | -40&nbsp;℃ ~ 70&nbsp;℃     |
+| Ambient temperature  | -40° ~ 70°&nbsp;C          |
 | Relative humidity    | 5% ~ 95%                   |
 | Atmospheric pressure | 70&nbsp;kPa ~ 106&nbsp;kPa |
 
@@ -67,20 +67,16 @@ Storage environment:
 
 | Parameter            | Value                      |
 | -------------------- | -------------------------- |
-| Ambient temperature  | -40&nbsp;℃ ~ 80&nbsp;℃     |
+| Ambient temperature  | --40° ~ 80°&nbsp;C      |
 | Relative humidity    | 5% ~ 95%                   |
 | Atmospheric pressure | 70&nbsp;kPa ~ 106&nbsp;kPa |
 
 #### Standards
 
-- GB4943.2001/IEC60950:1999 Information technology equipment safety. 
-
+- GB4943.2001/IEC60950:1999 Information technology equipment safety.
 - YD/T 1542-2006 Signal network surge protectors (SPD) technical requirements and test methods.
-
 - GB/T18802.21-2004/IEC61643-21:2000 Low voltage surge protector part 21: Surge protector (SPD) for telecommunications and signal networks - Performance requirements and test methods.
-
 - GB/T2423.1-2002 Electrician environmental testing of electronic products Part 2: Test methods, Test A: Low temperature.
-
 - GB/T2423.2-2002 Environmental testing of electrical and electronic products Part 2: Test methods, Test B: High temperature.
 
 #### Mechanical Characteristics

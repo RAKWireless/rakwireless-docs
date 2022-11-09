@@ -19,7 +19,6 @@ Thank you for choosing **RAK2305 WisBlock WiFi Interface Module** in your awesom
 * [Datasheet](../Datasheet/)
 * [Low Level Development](../Low-Level-Development/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK2305 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK2305.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
@@ -39,20 +38,20 @@ The RAK2305 module is a 2.4&nbsp;GHz Wi-Fi and Bluetooth in a single module. The
 
 ## Product Features
 
-* **Module specifications**    
-    * Espressif ESP32 WROVER     
-    * 2.4&nbsp;GHz Wi-Fi and Bluetooth    
-    * Espressif AT command interface     
-    * Option to flash custom firmware    
-* **Power consumption control**    
+* **Module specifications**
+    * Espressif ESP32 WROVER
+    * 2.4&nbsp;GHz Wi-Fi and Bluetooth
+    * Espressif AT command interface
+    * Option to flash custom firmware
+* **Power consumption control**
     * The RAK2305 modules power supply can be controlled by the WisBlock Core MCU to reduce power consumption.
-* **Size**    
-    * 35 x 25&nbsp;mm  
+* **Size**
+    * 35 x 25&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK2305**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK2305** module. Furthermore, you need a **WisBlock Core** module to use the sensor.   
+To use a **RAK2305**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK2305** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 Make sure to fix the module with the screws to ensure a proper function.
 :::

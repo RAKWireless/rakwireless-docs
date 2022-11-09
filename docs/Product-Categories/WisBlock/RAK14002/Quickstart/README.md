@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK14002
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK14002 Quick Start Guide
@@ -19,17 +19,17 @@ Before going through each and every step on using RAK14002 WisBlock Touch Sensor
 
 #### Hardware
 
-- [RAK14002](https://store.rakwireless.com/products/3-channel-touch-pad-module-rak14002)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK14002 WisBlock 3-channel Touchpad Module](https://store.rakwireless.com/products/3-channel-touch-pad-module-rak14002?utm_source=RAK14002&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- Li-Ion/LiPo battery (optional)
-- Solar charger (optional)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
 - Download and install [ArduinoIDE](https://www.arduino.cc/en/Main/Software).
-- To add the RAKwireless Core boards to your Arduino project, install the RAKwireless Arduino BSP. Follow the steps in the [Github repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+- To add the RAKwireless Core boards to your Arduino project, install the RAKwireless Arduino BSP. Follow the steps in the [GitHub repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
 ## Product Configuration
 
@@ -58,9 +58,9 @@ As shown in **Figure 2**, the location for the IO slot is properly marked by sil
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak14002/quickstart/16.removing-screws.png"
@@ -85,7 +85,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK14002 uses I2C and IO pins it can cause possible conflict especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK14002 uses I2C and IO pins it can cause possible conflict especially on some IO modules.
 :::
 
 After all this setup, you can now connect the battery and USB cable to start programming your WisBlock Core.
@@ -169,7 +169,7 @@ To finish the installation, click on the **Install** button as shown in **Figure
   caption="Uploading the RAK14002 example code on RAK4631"
 />
 
-5. When you successfully uploaded the Example01_BasicReading sketch, open the Serial Monitor of the Arduino IDE to check the sensor's reading logs. 
+5. When you successfully uploaded the Example01_BasicReading sketch, open the Serial Monitor of the Arduino IDE to check the sensor's reading logs.
 
 Touch the left pad of the RAK14002 module. If you see the logs, as shown in **Figure 13**, then your RAK14002 is properly communicating to the WisBlock Core. The  **Connected!** message means the I2C bus of RAK4631 WisBlock Core is connected to RAK14002.
 
@@ -265,7 +265,7 @@ Arduino programs are usually referred to as sketches. The sketches for this modu
   caption="Finish RAKwireless CAP1293 Touch Pad Library Installation"
 />
 
-3. Once the library is installed, open the **Example01_BasicReading** example. 
+3. Once the library is installed, open the **Example01_BasicReading** example.
 
 - On Arduino IDE select: **File** -> **Examples** -> **RAK WisBlock Examples** -> **RAK11200** -> **IO** -> **RAK14002_CAP1903_TouchKey** -> **Example01_BasicReading**, as shown in **Figure 23**.
 
@@ -293,7 +293,7 @@ RAK11200 requires BOOT0 pin to be configured properly first before uploading. If
   caption="Uploading the RAK14002 example code on RAK11200"
 />
 
-5. When you successfully uploaded the Example01_BasicReading sketch, open the Serial Monitor of the Arduino IDE to check the sensor's reading logs. 
+5. When you successfully uploaded the Example01_BasicReading sketch, open the Serial Monitor of the Arduino IDE to check the sensor's reading logs.
 
 Touch the left pad of the RAK14002 module. If you see the logs, as shown in **Figure 26**, then your RAK14002 is properly communicating to the WisBlock Core. The  **Connected!** message means the I2C bus of RAK11200 WisBlock Core is connected to RAK14002.
 
@@ -355,7 +355,7 @@ Arduino programs are usually referred to as sketches. The sketches for this modu
 
 - Once the library is installed, open the RAK14002 Example01_BasicReading example.
 
-4. Launch Arduino IDE  and select: **File** -> **Examples** -> **RAKwireless CAP1293 Touch Pad Library** -> **RAK14002 Example01_BasicReading**, as shown in **Figure 32**. 
+4. Launch Arduino IDE  and select: **File** -> **Examples** -> **RAKwireless CAP1293 Touch Pad Library** -> **RAK14002 Example01_BasicReading**, as shown in **Figure 32**.
 
 <rk-img
   src="/assets/images/wisblock/rak14002/quickstart/rak11310_example.png"
@@ -456,7 +456,7 @@ This procedure was tested only on Windows 10 and Ubuntu.
 
 - Unzip the contents of RAK_PATCH.zip into folder RAK_PATCH in your PlatformIO installation folder.
 The table below shows the PlatformIO installation directory for each operating system.
-  
+
 | PlatformIO path on different OS |                                      |
 | :------------------------------ | :----------------------------------- |
 | Windows 10                      | `%UserProfile%\.platformio\`         |
@@ -479,7 +479,7 @@ The table below shows the PlatformIO installation directory for each operating s
   caption="RAK patch installed on Windows"
 />
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 In case of Raspberry PI 2040 platform update on PlatformIO, the RAK_PATH script must be executed again after the platform update.
 :::
 
@@ -494,10 +494,10 @@ In case of Raspberry PI 2040 platform update on PlatformIO, the RAK_PATH script 
 />
 
 - A new Project Wizard window will appear.
- 
-- Type **RAK11300** on **Board**. 
 
-- On the **Name** text area, type the name of your project. 
+- Type **RAK11300** on **Board**.
+
+- On the **Name** text area, type the name of your project.
 
 - To finish the project creation, click on **Finish** button.
 

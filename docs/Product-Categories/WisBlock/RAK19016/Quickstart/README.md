@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK19016
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK19016 Quick Start Guide
@@ -17,15 +17,15 @@ next: ../Datasheet/
 
 Before going through each and every step on using the RAK19016 WisBlock 5-24V Power Slot Module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
 - [RAK19016 WisBlock 5-24V Power Slot Module](https://store.rakwireless.com/products/rak19016-5-24v-power-slot-module?utm_source=RAK19016&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base board with Power Slot](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
-- [Li-Ion/LiPo battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [RAK5804](https://store.rakwireless.com/products/rak5804-wisblock-interface-extension-board)(Reprogramming of the WisBlock Core via USB of RAK5804) 
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [RAK5804 WisBlock Interface Module](https://store.rakwireless.com/products/rak5804-io-extension-board?utm_source=RAK5804&utm_medium=Document&utm_campaign=BuyFromStore) (Reprogramming of the WisBlock Core via USB of RAK5804)
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -82,9 +82,9 @@ The RAK19016 module can be mounted on the power slot of the WisBlock Base board,
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock module is the same. 
+The procedure in disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak19016/quickstart/removing_screw.png"
@@ -118,7 +118,7 @@ If you will connect other modules to the remaining WisBlock Base slots, check on
 
 RAK19016 supports a rechargeable Li-Ion/LiPo battery via the dedicated connector. The battery and external 5-24&nbsp;V DC input can simultaneously be connected to provide power to all WisBlock modules. The 5-24&nbsp;V<sub>DC</sub> goes to a buck converter with 4.4&nbsp;V<sub>DC</sub> output which is higher than the max 4.2 of LiPo battery. 5-24<sub>DC</sub>V DC is the primary power source and also charges the LiPo battery at the same time.
 
-The matching connector for the rechargeable battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199). A cable assembly for the rechargeable battery connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/battery-connector-cable). 
+The matching connector for the rechargeable battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199). A cable assembly for the rechargeable battery connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/battery-connector-cable).
 
 :::warning ⚠️ WARNING
 

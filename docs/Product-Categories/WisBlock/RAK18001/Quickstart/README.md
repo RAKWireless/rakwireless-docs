@@ -5,13 +5,11 @@ tags:
   - quickstart
   - wisblock
   - RAK18001
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK18001 Quick Start Guide
-
-
 
 ## Prerequisite
 
@@ -21,12 +19,12 @@ Before going through each and every step on using RAK18001 WisBlock module, make
 
 #### Hardware
 
-- [RAK18001 WisBlock Buzzer module](https://store.rakwireless.com/products/wisblock-buzzer-module-rak18001)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK18001 WisBlock Buzzer module](https://store.rakwireless.com/products/wisblock-buzzer-module-rak18001?utm_source=WisBlockRAK18001&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -69,9 +67,9 @@ As shown in **Figure 2**, the location for Slot A, B, C, and D are properly mark
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak18001/quickstart/removing-screws.png"
@@ -132,7 +130,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK4631 as WisBlock Core"
 />
 
-2. The [Basic Sample Code for RAK18001](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/sensors/RAK18001_Buzzer) in Github will work on RAK4631 WisBlock Core. You can also open the example codes depending on your WisBlock Core, as shown in **Figure 7**. 
+2. The [Basic Sample Code for RAK18001](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/sensors/RAK18001_Buzzer) in Github will work on RAK4631 WisBlock Core. You can also open the example codes depending on your WisBlock Core, as shown in **Figure 7**.
 
 <rk-img
   src="/assets/images/wisblock/rak18001/quickstart/rak4631-examplecode.png"
@@ -168,7 +166,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK11200 as WisBlock Core"
 />
 
-2. The [Basic Sample Code for RAK18001](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/sensors/RAK18001_Buzzer) in Github will work on RAK11200 WisBlock Core. You can also open the example codes depending on your WisBlock Core, as shown in **Figure 11**. 
+2. The [Basic Sample Code for RAK18001](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/sensors/RAK18001_Buzzer) in Github will work on RAK11200 WisBlock Core. You can also open the example codes depending on your WisBlock Core, as shown in **Figure 11**.
 
 <rk-img
   src="/assets/images/wisblock/rak18001/quickstart/rak11200-examplecode.png"
@@ -208,7 +206,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK11310 as WisBlock Core"
 />
 
-2. The [Basic Sample Code for RAK18001](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/sensors/RAK18001_Buzzer) in Github will work on RAK11310 WisBlock Core. You can also open the example codes depending on your WisBlock Core, as shown in **Figure 15**. 
+2. The [Basic Sample Code for RAK18001](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/sensors/RAK18001_Buzzer) in Github will work on RAK11310 WisBlock Core. You can also open the example codes depending on your WisBlock Core, as shown in **Figure 15**.
 
 <rk-img
   src="/assets/images/wisblock/rak18001/quickstart/rak11310-examplecode.png"

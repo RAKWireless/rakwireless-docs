@@ -19,7 +19,6 @@ Thank you for choosing **RAK12007 WisBlock Ultrasonic Sensor Module** in your aw
 * [RAK12007 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK12007 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK12007.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
@@ -52,6 +51,6 @@ For an ultrasonic detector, there are two main parts: **Emitter** and **Detector
 
 To use a **RAK12007**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12007** module. Furthermore, you need a **WisBlock Core** module to develop your application for the **RAK12007** sensor module.
 
-::: warning ⚠️ WARNING    
+::: warning ⚠️ WARNING
 Make sure to fix the module with the screws to ensure a proper function.
 :::

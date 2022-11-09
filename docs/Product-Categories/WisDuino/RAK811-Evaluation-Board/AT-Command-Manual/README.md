@@ -13,7 +13,7 @@ tags:
 
 ## Introduction
 
-The WisDuino RAK811 Evaluation Board module is designed to simplify LoRaWAN and LoRa point-to-point (P2P) communication. To integrate LoRa technology into your projects using the Arduino form-factor, RAK811 implemented an easy-to-use UART communication interface where you can send AT commands. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can even control the available GPIO pins and analog input of RAK811. You can immediately use an Arduino-based board to control the RAK811 module. 
+The WisDuino **RAK811 Evaluation Board** module is designed to simplify LoRaWAN and LoRa point-to-point (P2P) communication. To integrate LoRa technology into your projects using the Arduino form-factor, RAK811 implemented an easy-to-use UART communication interface where you can send AT commands. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can even control the available GPIO pins and analog input of RAK811. You can immediately use an Arduino-based board to control the RAK811 module. 
 
 The UART serial communication is exposed on the **UART1 port**, through  **Pin 6 (TX1)** and **Pin 7 (RX1)**. The default parameters of the UART1 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module to the WisDuino RAK811 Evaluation Board, it is important to check the [WisDuino RAK811 Evaluation Board Schematic](https://downloads.rakwireless.com/LoRa/WisNode/Hardware-Specification/WisNode-LoRa_Schematic.pdf).
 

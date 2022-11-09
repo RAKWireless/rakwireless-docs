@@ -19,7 +19,6 @@ Thank you for choosing **RAK13001 WisBlock Relay IO Module** in your awesome IoT
 * [RAK13001 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK13001 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK13001.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
@@ -29,7 +28,7 @@ Thank you for choosing **RAK13001 WisBlock Relay IO Module** in your awesome IoT
 
 RAK13001 is a WisBlock Interface module which extends the WisBlock system to be used on isolated digital input and output applications. There is one digital output that is isolated by an electromechanical relay and one digital input isolated by an opto-couple. The isolated input can be configurated as wet contact (default mode) or dry contact. RAK13001 digital output is used to programmatically switch on/off devices operating at high voltage or current applications.
 
-:::warning ⚠️ WARNING!!    
+:::warning ⚠️ WARNING!!
 <rk-img
   src="/assets/images/wisblock/rak13001/datasheet/warning.png"
   width="90%"
@@ -55,6 +54,6 @@ RAK13001 is a WisBlock Interface module which extends the WisBlock system to be 
 
 To use a **RAK13001**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK13001** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

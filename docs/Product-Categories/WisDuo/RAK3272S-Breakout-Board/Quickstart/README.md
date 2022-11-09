@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisduo/rak3272s-breakout-board/overview/RAK3272S_Breakout_home.png
-rak_desc: Contains instructions and tutorials for installing and deploying your RAK3272S Breakout Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module. 
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK3272S Breakout Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
 prev: ../Overview/
 next: ../AT-Command-Manual/
 tags:
@@ -25,19 +25,19 @@ This guide covers the following topics:
 
 Before going through the step in the installation guide of the RAK3272S Breakout Board, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
-- [RAK3272S Breakout Board](https://store.rakwireless.com/products/wisduo-breakout-board-rak3272s)
-- [RAKDAP1 Flash and Debug Tool](https://store.rakwireless.com/products/daplink-tool) (or any USB-Serial Adapter)
+- [RAK3272S Breakout Board](https://store.rakwireless.com/products/wisduo-breakout-board-rak3272s?utm_source=RAK3272SBreakoutBoard&utm_medium=Document&utm_campaign=BuyFromStore)
+- [RAKDAP1 Flash and Debug Tool](https://store.rakwireless.com/products/daplink-tool?utm_source=RAKDAP1&utm_medium=Document&utm_campaign=BuyFromStore) (or any USB-Serial Adapter)
 - Windows/Mac OS/Linux Computer with USB port
 
-#### Software 
+#### Software
 
 - Download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 
 ----
-:::warning ⚠️ WARNING    
-_**If you are using Windows 10**_.    
+:::warning ⚠️ WARNING
+_**If you are using Windows 10**_.
 Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, install the original Arduino IDE from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 
@@ -104,7 +104,7 @@ RAK3272S has RP-SMA connector compatible to the included LoRa antenna, as shown 
 
 
 :::tip 📝 NOTE
-Detailed information about the RAK3272S LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/Accessories/Antenna/SMA-Antenna/). 
+Detailed information about the RAK3272S LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/Accessories/Antenna/SMA-Antenna/).
 :::
 
 :::warning ⚠️ WARNING
@@ -119,8 +119,8 @@ The default firmware of RAK3272S is based on RUI3, which allows you to develop y
 
 If you don't have an Arduino IDE yet, you can download it on the [Arduino official website](https://www.arduino.cc/en/Main/Software) and follow the installation procedure in the [miscellaneous section](/Product-Categories/wisduo/RAK3272S-Breakout-Board/Quickstart/#miscellaneous) of this document.
 
-::: tip 📝 NOTE   
-**For Windows 10 and up users**:   
+::: tip 📝 NOTE
+**For Windows 10 and up users**:
 If your Arduino IDE is installed from the Microsoft App Store, you need to reinstall your Arduino IDE by getting it from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 
@@ -294,7 +294,7 @@ An alternative option to update firmware aside from UART2 is to use SWD pins (SW
 
 2. Any serial communication tool can be used; but, it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
 
-3. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows: 
+3. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows:
 
  * Baud Rate: **115200 baud**
  * Data Bits: **8 bits**
@@ -384,14 +384,14 @@ There are two UART peripherals available on the RAK3272S. There are also differe
 **Example Code**
 
 ```c
-void setup() 
+void setup()
 {
-  Serial1.begin(115200); // use Serial1 for UART1 and Serial for UART2 
+  Serial1.begin(115200); // use Serial1 for UART1 and Serial for UART2
                          // you can designate separate baudrate for each.
   Serial.begin(115200);
 }
 
-void loop() 
+void loop()
 {
   Serial1.println("RAK3172 UART1 TEST!");
   Serial.println("RAK3172 UART2 TEST!");
@@ -430,20 +430,20 @@ Make sure you have an I2C device connected to specified I2C pins to run the I2C 
 void setup()
 {
   Wire.begin();
- 
+
   Serial.begin(115200);
-  while (!Serial);            
+  while (!Serial);
   Serial.println("\nI2C Scanner");
 }
- 
- 
+
+
 void loop()
 {
   byte error, address;
   int nDevices;
- 
+
   Serial.println("Scanning...");
- 
+
   nDevices = 0;
   for(address = 1; address < 127; address++ )
   {
@@ -452,7 +452,7 @@ void loop()
     // a device did acknowledge to the address.
     Wire.beginTransmission(address);
     error = Wire.endTransmission();
- 
+
     if (error == 0)
     {
       Serial.print("I2C device found at address 0x");
@@ -460,7 +460,7 @@ void loop()
         Serial.print("0");
       Serial.print(address,HEX);
       Serial.println("  !");
- 
+
       nDevices++;
     }
     else if (error==4)
@@ -469,13 +469,13 @@ void loop()
       if (address<16)
         Serial.print("0");
       Serial.println(address,HEX);
-    }    
+    }
   }
   if (nDevices == 0)
     Serial.println("No I2C devices found\n");
   else
     Serial.println("done\n");
- 
+
   delay(5000);           // wait 5 seconds for next scan
 }
 ```
@@ -486,16 +486,16 @@ The Arduino Serial Monitor shows the I2C device found.
 17:29:15.690 -> Scanning...
 17:29:15.738 -> I2C device found at address 0x28  !
 17:29:15.831 -> done
-17:29:15.831 -> 
+17:29:15.831 ->
 17:29:20.686 -> Scanning...
 17:29:20.733 -> I2C device found at address 0x28  !
 17:29:20.814 -> done
-17:29:20.814 -> 
+17:29:20.814 ->
 ```
 
 **SPI**
 
-If your RUI3 project uses SPI, then J5 pins 1 to 4 are reserved for RUI3 SPI interface. 
+If your RUI3 project uses SPI, then J5 pins 1 to 4 are reserved for RUI3 SPI interface.
 
 | **SPI Pin Number** | **SPI Pin Name** |
 | ------------------ | ---------------- |
@@ -530,13 +530,13 @@ This guide covers the following topics:
 - [TheThingsNetwork Guide](#connecting-to-the-things-network-ttn) - How to login, register new accounts and create new applications on TTN.
 - [RAK3272S Breakout Board TTN OTAA Guide](#ttn-otaa-device-registration) - How to add OTAA device on TTN and what AT commands to use on RAK3272S OTAA activation.
 - [RAK3272S Breakout Board TTN ABP Guide](#ttn-abp-device-registration) - How to add ABP device on TTN and what AT commands to use on RAK3272S ABP activation.
-- [Chirpstack Guide](#connecting-with-chirpstack) - How to create new applications on Chirpstack. 
+- [Chirpstack Guide](#connecting-with-chirpstack) - How to create new applications on Chirpstack.
 - [RAK3272S Breakout Board Chirpstack OTAA Guide](#chirpstack-otaa-device-registration) - How to add OTAA device to Chirpstack and what AT commands to use on RAK3272S OTAA activation.
 - [RAK3272S Breakout Board Chirpstack ABP Guide](#chirpstack-abp-device-registration) - How to add ABP device on Chirpstack and what AT commands to use on RAK3272S ABP activation.
 
 ##### Connecting to The Things Network (TTN)
 
-In this section, a quick tutorial guide will show how to connect the RAK3272S Breakout Board to the TTN platform. 
+In this section, a quick tutorial guide will show how to connect the RAK3272S Breakout Board to the TTN platform.
 
 :::tip 📝 NOTE:
 
@@ -554,7 +554,7 @@ As shown in **Figure 22**, The Things Stack (TTN V3) is an open-source LoRaWAN N
 
 LoRaWAN is a protocol for low-power wide-area networks. It allows for large-scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long-range wireless connections.
 
-The RAK3272S Breakout Board can be part of this ecosystem as a device, and the objective of this section is to demonstrate how simple it is to send data to The Things Stack using the LoRaWAN protocol. To achieve this, the RAK3272S Breakout Board must be located inside the coverage of a LoRaWAN gateway connected to The Things Stack server. 
+The RAK3272S Breakout Board can be part of this ecosystem as a device, and the objective of this section is to demonstrate how simple it is to send data to The Things Stack using the LoRaWAN protocol. To achieve this, the RAK3272S Breakout Board must be located inside the coverage of a LoRaWAN gateway connected to The Things Stack server.
 
 ##### Registration to TTN and Creating LoRaWAN Applications
 
@@ -609,7 +609,7 @@ To register as a new user to TTN, click on **Login with The Things ID**, then se
 />
 
 7. To have an application registered, input first the specific details and necessary information about your application, then click **Create application**.
- 
+
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/image_7.png"
   width="100%"
@@ -683,7 +683,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
 :::tip 📝 NOTE:
 
 - The **AppEUI**, **DevEUI**, and **AppKey** are the parameters that you will need to activate your LoRaWAN end-device via OTAA. The **AppKey** is hidden by default for security reasons, but you can easily show it by clicking the show button. You can also copy the parameters quickly using the copy button.
-- The three OTAA parameters on the TTN device console are MSB by default. 
+- The three OTAA parameters on the TTN device console are MSB by default.
 - These parameters are always accessible on the device console page, as shown in **Figure 36**.
 :::
 
@@ -696,7 +696,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
 
 ##### OTAA Configuration for TTN
 
-The RAK3272S Breakout Board supports a series of AT commands to configure its internal parameters and control the functionalities of the board. 
+The RAK3272S Breakout Board supports a series of AT commands to configure its internal parameters and control the functionalities of the board.
 
 1. To set up the RAK3272S Breakout Board to join the TTN using OTAA, start by connecting the RAK3272S Breakout Board to the computer (see [**Figure 21**](#connect-to-the-rak3272s-breakout-board)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
@@ -725,12 +725,12 @@ If there is no `OK` or any reply, you need to check if the wiring of your UART l
   caption="at+version command response"
 />
 
-2. The next step is to configure the OTAA LoRaWAN parameters in RAK3272S: 
+2. The next step is to configure the OTAA LoRaWAN parameters in RAK3272S:
 
 - LoRa work mode: **LoRaWAN**
 - LoRaWAN join mode: **OTAA**
 - LoRaWAN class: **Class A**
-- LoRaWAN region: **EU868** 
+- LoRaWAN region: **EU868**
 
 Set the work mode to LoRaWAN.
 
@@ -789,7 +789,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
   caption="Configuring LoRa Parameters"
 />
 
-3. After the configuration of the LoRaWAN parameters, the next step is to set up the EUIs and key. You need the use the values from the TTN console. 
+3. After the configuration of the LoRaWAN parameters, the next step is to set up the EUIs and key. You need the use the values from the TTN console.
 
 
 - Device EUI: **1133557799224466**
@@ -841,7 +841,7 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 
 - If the OTAA device join failed, you need to check if your device is within reach of a working LoRaWAN gateway that is configured to connect to TTN. It is also important to check that all your OTAA parameters (DEVEUI, APPEUI, and APPKEY) are correct by using `AT+DEVEUI=?`, `AT+APPEUI=?`, and `AT+APPKEY=?` commands. Lastly, ensure that the antenna of your device is properly connected.
 
-- After checking all the things above, try to join again. 
+- After checking all the things above, try to join again.
 :::
 
 6. With the end-device properly activated, you can now try to send some payload after successful join.
@@ -965,12 +965,12 @@ If there is no `OK` or any reply, you need to check if the wiring of your UART l
   caption="at+version command response"
 />
 
-2. The next step is to configure the ABP LoRaWAN parameters in RAK3272S: 
+2. The next step is to configure the ABP LoRaWAN parameters in RAK3272S:
 
 - LoRa work mode: **LoRaWAN**
 - LoRaWAN join mode: **ABP**
 - LoRaWAN class: **Class A**
-- LoRaWAN region: **EU868** 
+- LoRaWAN region: **EU868**
 
 Set the work mode to LoRaWAN.
 
@@ -1029,7 +1029,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
   caption="Configuring LoRa Parameters"
 />
 
-3. After configuration of the LoRaWAN parameters, the next step is to set up the device address and sessions keys. You need the use the values from the TTN console. 
+3. After configuration of the LoRaWAN parameters, the next step is to set up the device address and sessions keys. You need the use the values from the TTN console.
 
 - Device Address: **260BDE80**
 - Application Session Key: **A585903A949C2B2D44B55E99E94CB533**
@@ -1086,7 +1086,7 @@ Send command format: **`AT+SEND=<port>:<payload>`**
 
 - If your LoRaWAN payload didn't reach the TTN, check if your device is within reach of a working LoRaWAN gateway that is configured to connect to TTN. It is also important to check that all your ABP parameters (DEVADDR, APPSKEY, and NWKSKEY) are correct by using `AT+DEVADDR=?`, `AT+APPSKEY=?`, and `AT+NWKSKEY=?` commands. Lastly, ensure that the antenna of your device is properly connected.
 
-- After checking all the things above, try to send LoRaWAN payloads again. 
+- After checking all the things above, try to send LoRaWAN payloads again.
 :::
 
 <rk-img
@@ -1123,7 +1123,7 @@ It is assumed that you are using RAK Gateway and its built-in ChirpStack. Also, 
 
 :::
 
-* In summary, these are the requirements: 
+* In summary, these are the requirements:
 
   1. Have ChirpStack online gateway, the frequency band of the nodes should be consistent with the frequency band of the gateway in use.
       * [Connect the Gateway with Chirpstack](/Product-Categories/WisGate/RAK7243/Quickstart/#connect-the-gateway-with-chirpstack)
@@ -1159,7 +1159,7 @@ The frequency band used in the demonstration is EU868. Use a high-frequency vers
 
 * For this setup, create an Application named “**rak_node_test**”.
 
-ChirpStack LoraServer supports multiple system configurations, with only one by default. 
+ChirpStack LoraServer supports multiple system configurations, with only one by default.
 
 * **Service profile**: Field is to select the system profile.
 * **Payload codec**: It is the parsing method for selecting load data such as parsing LPP format data.
@@ -1189,7 +1189,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   caption="Device Tab of an Application"
 />
 
-3. Once inside of the DEVICE tab, create a new device (LoRaWAN node) by clicking on the “**+ CREATE**” button. 
+3. Once inside of the DEVICE tab, create a new device (LoRaWAN node) by clicking on the “**+ CREATE**” button.
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/29.adding-node.png"
@@ -1207,11 +1207,11 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 
 Fill in the parameters requested:
 
-* **Device name and Device description**: These are descriptive texts about your device. 
+* **Device name and Device description**: These are descriptive texts about your device.
 
-* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the generate icon. You can also add a specific Device EUI directly in the form. 
+* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the generate icon. You can also add a specific Device EUI directly in the form.
 
-* **Device Profile**: 
+* **Device Profile**:
   * If you want to join in OTAA mode, select “**DeviceProfile_OTAA**”.
   * If you want to join in ABP mode, select “**DeviceProfile_ABP**”.
 
@@ -1228,7 +1228,7 @@ Fill in the parameters requested:
 
 ##### Chirpstack OTAA Device Registration
 
-1. If you have selected “**DeviceProfile_OTAA**”, as shown in **Figure 63**, then after the device is created, an Application Key must be also created for this device. 
+1. If you have selected “**DeviceProfile_OTAA**”, as shown in **Figure 63**, then after the device is created, an Application Key must be also created for this device.
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/32.otaa.png"
@@ -1244,7 +1244,7 @@ Fill in the parameters requested:
   caption="Chirpstack OTAA Set Application Keys"
 />
 
-3. Once the Application Key is added to the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button. 
+3. Once the Application Key is added to the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button.
 
 * As shown in **Figure 65**, a new device should be listed in the DEVICES tab. The most important parameters, such as the Device EUI are shown in the summary.
 
@@ -1264,13 +1264,13 @@ Fill in the parameters requested:
 
 :::tip 📝 NOTE:
 
-Standard OTAA mode requires the **Device EUI**, **Application Key**, and **Application EUI**, but in the ChirpStack’s implementation, only the Device EUI and the Application Key are mandatory. The Application EUI is not required and not recorded in the Application tab. Nevertheless, you can reuse the Device EUI as the Application EUI during the configuration on the side of the node. 
+Standard OTAA mode requires the **Device EUI**, **Application Key**, and **Application EUI**, but in the ChirpStack’s implementation, only the Device EUI and the Application Key are mandatory. The Application EUI is not required and not recorded in the Application tab. Nevertheless, you can reuse the Device EUI as the Application EUI during the configuration on the side of the node.
 
 :::
 
 ##### OTAA Configuration for Chirpstack
 
-The RAK3272S Breakout Board supports a series of AT commands to configure its internal parameters and control the functionalities of the board. 
+The RAK3272S Breakout Board supports a series of AT commands to configure its internal parameters and control the functionalities of the board.
 
 1. To set up the RAK3272S Breakout Board to join the Chirpstack using OTAA, start by connecting the RAK3272S Breakout Board to the computer (see [**Figure 21**](#connect-to-the-rak3272s-breakout-board)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
@@ -1299,12 +1299,12 @@ If there is no `OK` or any reply, you need to check if the wiring of your UART l
   caption="at+version command response"
 />
 
-2. The next step is to configure the OTAA LoRaWAN parameters in RAK3272S: 
+2. The next step is to configure the OTAA LoRaWAN parameters in RAK3272S:
 
 - LoRa work mode: **LoRaWAN**
 - LoRaWAN join mode: **OTAA**
 - LoRaWAN class: **Class A**
-- LoRaWAN region: **EU868** 
+- LoRaWAN region: **EU868**
 
 Set the work mode to LoRaWAN.
 
@@ -1363,11 +1363,11 @@ AT+BAND=4
   caption="Configuring LoRa Parameters"
 />
 
-3. After the configuration of the LoRaWAN parameters, the next step is to set up the DevEUI and AppKey. You need the use the values from the Chirpstack device console. 
+3. After the configuration of the LoRaWAN parameters, the next step is to set up the DevEUI and AppKey. You need the use the values from the Chirpstack device console.
 
 :::tip 📝 NOTE:
-The Application EUI parameter is not required in the ChirpStack platform; therefore, it is possible to use the same id as the Device EUI. 
-::: 
+The Application EUI parameter is not required in the ChirpStack platform; therefore, it is possible to use the same id as the Device EUI.
+:::
 
 - Device EUI: **5E9D1E0857CF25F1**
 - Application EUI: **5E9D1E0857CF25F1**
@@ -1418,7 +1418,7 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 
 - If the OTAA device join failed, you need to check if your device is within reach of a working LoRaWAN gateway that is configured to connect to Chirpstack. It is also important to check that all your OTAA parameters (DEVEUI and APPKEY) are correct by using `AT+DEVEUI=?` and `AT+APPKEY=?` commands. Lastly, ensure that the antenna of your device is properly connected.
 
-- After checking all the things above, try to join again. 
+- After checking all the things above, try to join again.
 :::
 
 6. With the end-device properly activated, you can now try to send some payload after successful join.
@@ -1435,7 +1435,7 @@ Send command format: **`AT+SEND=<port>:<payload>`**
   caption="OTAA Test Sample Data Sent via RAK Serial Port Tool"
 />
 
-7. On the ChirpStack platform, you should see the join and uplink messages in the LORAWAN FRAMES tab, as shown in **Figure 71**. By convention, messages sent from nodes to gateways are considered as **Uplinks** while messages sent by gateways to nodes are considered as **Downlinks**. 
+7. On the ChirpStack platform, you should see the join and uplink messages in the LORAWAN FRAMES tab, as shown in **Figure 71**. By convention, messages sent from nodes to gateways are considered as **Uplinks** while messages sent by gateways to nodes are considered as **Downlinks**.
 
 
 <rk-img
@@ -1446,7 +1446,7 @@ Send command format: **`AT+SEND=<port>:<payload>`**
 
 ##### Chirpstack ABP Device Registration
 
-1. During the registration of a new device, if you select “**DeviceProfile_ABP**”, as shown in **Figure 72**, then the ChirpStack platform will assume that this device will join the LoRaWAN network using the ABP mode. 
+1. During the registration of a new device, if you select “**DeviceProfile_ABP**”, as shown in **Figure 72**, then the ChirpStack platform will assume that this device will join the LoRaWAN network using the ABP mode.
 
 
 :::tip 📝 NOTE:
@@ -1506,12 +1506,12 @@ If there is no `OK` or any reply, you need to check if the wiring of your UART l
   caption="at+version command response"
 />
 
-2. The next step is to configure the ABP LoRaWAN parameters in RAK3272S: 
+2. The next step is to configure the ABP LoRaWAN parameters in RAK3272S:
 
 - LoRa work mode: **LoRaWAN**
 - LoRaWAN join mode: **ABP**
 - LoRaWAN class: **Class A**
-- LoRaWAN region: **EU868** 
+- LoRaWAN region: **EU868**
 
 Set the work mode to LoRaWAN. It can be set to P2P as well, but by default, the device is in LoRaWAN mode.
 
@@ -1570,7 +1570,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
   caption="Configuring LoRa Parameters"
 />
 
-3. After the configuration of the LoRaWAN parameters, the next step is to set up the device address and session keys. You need to use the values from the TTN device console. 
+3. After the configuration of the LoRaWAN parameters, the next step is to set up the device address and session keys. You need to use the values from the TTN device console.
 
 - Device Address: **26011AF9**
 - Application Session Key: **4D42EC5CAF97F03D833CDAf5003F69E1**
@@ -1679,7 +1679,7 @@ AT+NWM=0
 :::
 
 
-2. You need to input the P2P setup on both RAK3272S Breakout Board. The parameters should be exactly the same on the two modules. 
+2. You need to input the P2P setup on both RAK3272S Breakout Board. The parameters should be exactly the same on the two modules.
 
 
 ```
@@ -1722,7 +1722,7 @@ b. If the `AT+PRECV` value is set to **65535**, the device will listen to P2P Lo
 AT+PRECV=65535
 ```
 
-c. If the `AT+PRECV` value is set to **65534**, the device will continuously listen to P2P LoRa packets without any timeout. The will continuously stay in RX mode until `AT+PRECV` is set to **0**. 
+c. If the `AT+PRECV` value is set to **65534**, the device will continuously listen to P2P LoRa packets without any timeout. The will continuously stay in RX mode until `AT+PRECV` is set to **0**.
 
 ```
 AT+PRECV=65534
@@ -1850,12 +1850,12 @@ Go to the [Arduino official website](https://www.arduino.cc/en/Main/Software) an
 
 #### For Windows
 
-::: tip 📝 NOTE   
-**For Windows 10 users**:   
+::: tip 📝 NOTE
+**For Windows 10 users**:
 Do **NOT** install the Arduino IDE from the Microsoft App store. Install the original Arduino IDE from the Arduino official website instead, since the Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 
-1. Install the Arduino IDE, which you just downloaded, on your Windows PC. 
+1. Install the Arduino IDE, which you just downloaded, on your Windows PC.
 2. Click **I Agree** then **Next** to proceed.
 
 <rk-img

@@ -32,4 +32,4 @@ Moreover, there is a **GPS** on the HAT that enhances your RAK2247 with localiza
 
 ## Package Contents
 
-- One (1) RAK2247 Pi HAT 
+- One (1) [RAK2247 Pi HAT](https://store.rakwireless.com/products/rak2247-pi-hat?utm_source=RAK2247PiHAT&utm_medium=Document&utm_campaign=BuyFromStore)

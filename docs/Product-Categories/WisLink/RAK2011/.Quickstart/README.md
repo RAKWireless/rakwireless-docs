@@ -18,7 +18,7 @@ The following two sections will provide a list of the components and tools you n
 
 #### Hardware
 
-1. **RAK2011 WisLink Cellular BG96 Arduino Shield**
+1. [RAK2011 WisLink Cellular BG96 Arduino Shield](https://store.rakwireless.com/products/rak2011-cellular-board?utm_source=RAK2011WisLinkCellularBG96ArduinoShield&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Cellular and GPS Antenna
 3. Hologram SIM Card
 

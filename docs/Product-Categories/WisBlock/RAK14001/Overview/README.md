@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisblock/rak14001/overview/RAK14001_home.png
-rak_desc: The RAK14001 is an RGB LED module capable of driving the RGB LEDs up to 20mA per segment via the I2C interface. It uses the NCP5623B of On Semiconductors that has a built−in DC/DC converter. 
+rak_desc: The RAK14001 is an RGB LED module capable of driving the RGB LEDs up to 20mA per segment via the I2C interface. It uses the NCP5623B of On Semiconductors that has a built−in DC/DC converter.
 rak_grp: [wisblock, wisdisplay]
 next: ../Quickstart/
 prev: ../../
@@ -19,7 +19,6 @@ Thank you for choosing **RAK14001 WisBlock RGB LED Module** in your awesome IoT 
 * [RAK14001 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK14001 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/)
 * [40-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
@@ -42,7 +41,7 @@ The RAK14001 is an RGB LED module that can be mounted to the IO slot of the WisB
     * RGB Function Fully Supported
     * Programmable Integrated Gradual Dimming
     * Support I2C Protocol
-    * Support enable power supply 
+    * Support enable power supply
     * Chipset: On Semiconductors NCP5623B
 
 * **Size**
@@ -52,6 +51,6 @@ The RAK14001 is an RGB LED module that can be mounted to the IO slot of the WisB
 
 To use a **RAK14001**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK14001** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

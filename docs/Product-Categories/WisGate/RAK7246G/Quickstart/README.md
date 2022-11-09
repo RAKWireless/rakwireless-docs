@@ -18,7 +18,7 @@ tags:
 
 ### What Do You Need?
 
-1. RAK7246/RAK7246G WisGate Developer D0/D0+ Gateway
+1. [RAK7246/RAK7246G WisGate Developer D0/D0+ Gateway](https://store.rakwireless.com/products/rak7246-lpwan-developer-gateway?variant=32143952511021&utm_source=RAK7246GDeveloperD0%2B&utm_medium=Document&utm_campaign=BuyFromStore)
 2. 16&nbsp;GB SD card (included) + Card Reader
 3. 5&nbsp;V at least 2.5&nbsp;A Micro USB Power Supply (not included)
 4. A Windows/Mac OS/Linux Computer

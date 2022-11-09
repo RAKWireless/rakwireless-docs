@@ -3,7 +3,7 @@ tags:
   - quickstart
   - wisblock
   - RAK5802
-prev: ../Overview/ 
+prev: ../Overview/
 next: ../Datasheet/
 rak_img: /assets/images/wisblock/rak5802/overview/RAK5802_home.png
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK5802. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
@@ -21,12 +21,12 @@ Before going through each and every step on using the RAK5802 WisBlock module, m
 
 #### Hardware
 
-- 2 x [RAK5802](https://store.rakwireless.com/collections/wisblock-interface/products/rak5802-rs485-interface)
-- 2 x Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- 2 x [RAK5802](https://store.rakwireless.com/products/rak5802-rs485-interface?utm_source=RAK5802&utm_medium=Document&utm_campaign=BuyFromStore)
+- 2 x Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - 2 x Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - 2 x USB Cable
-- Li-Ion/LiPo battery (optional)
-- Solar charger (optional)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -37,7 +37,7 @@ Before going through each and every step on using the RAK5802 WisBlock module, m
 
 ### Hardware Setup
 
-WisBlock can integrate this module, which extends the WisBlock system with an industrial RS485 data transmission interface. 
+WisBlock can integrate this module, which extends the WisBlock system with an industrial RS485 data transmission interface.
 
 RAK5802 supports one RS485 interface. There are also two voltage sources available on the connectors, which you can use on your external device or circuit. One is the battery voltage via PWR pin, which is directly coming from the battery connected to the WisBlock Base. The other one is the 3.3&nbsp;V regulated output, which comes from the WisBlock Base, as well, and powers the entire WisBlock board, including the WisBlock Core and other connected modules. In addition, an Analog A1 input (via WB_A1 in code) and I2C interface connection are available on the crimping terminal.
 
@@ -85,7 +85,7 @@ For detailed instructions, refer to the [WisBlock Installation Guide](/Knowledge
 
 ##### RAK5802 Sensor Connector Crimping Mechanism
 
-The RAK5802 features a fast-crimping terminal connector to simplify and ensure the wiring process on the fields. The fast-crimping terminal can support cable with a width between 20 AWG to 24 AWG. The usual stripping length is around 6 to 7&nbsp;mm. 
+The RAK5802 features a fast-crimping terminal connector to simplify and ensure the wiring process on the fields. The fast-crimping terminal can support cable with a width between 20 AWG to 24 AWG. The usual stripping length is around 6 to 7&nbsp;mm.
 
 As shown in **Figure 5**, during the crimping process, you should first press down and maintain the spring head of the crimping terminal firmly, then insert the stripped cable head into the corresponding connector’s hole. Once inserted correctly, then release the spring head, and the crimping process is completed.
 
@@ -97,9 +97,9 @@ As shown in **Figure 5**, during the crimping process, you should first press do
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock module is the same. 
+The procedure in disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak5802/quickstart/16.removing-screws.png"
@@ -124,7 +124,7 @@ The procedure in disassembling any type of WisBlock module is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK5802 uses UART and I2C communication lines, and it can cause possible conflict especially on other WisBlock Modules connected to Slot A to D of the WisBlock Base. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK5802 uses UART and I2C communication lines, and it can cause possible conflict especially on other WisBlock Modules connected to Slot A to D of the WisBlock Base.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
@@ -187,7 +187,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK11300 as WisBlock Core"
 />
 
-2. The Basic Sample Code for RAK5802 in GitHub will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 13** to **Figure 15**. 
+2. The Basic Sample Code for RAK5802 in GitHub will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 13** to **Figure 15**.
 
 - Sample code for [RAK4631](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/IO/RAK5802_RS485)
 
@@ -227,7 +227,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Accessing the library used for RAK5802 Module"
 />
 
-4. After successful installation of the library, you can now select the right serial port and upload the 'Receiver' code to the first board and 'Sender' code to the second board, as shown in **Figure 18** and **Figure 19**. 
+4. After successful installation of the library, you can now select the right serial port and upload the 'Receiver' code to the first board and 'Sender' code to the second board, as shown in **Figure 18** and **Figure 19**.
 
 <rk-img
   src="/assets/images/wisblock/rak5802/quickstart/rak5802_select_port.png"

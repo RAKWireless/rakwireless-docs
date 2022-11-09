@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK16001
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK16001 Quick Start Guide
@@ -19,17 +19,17 @@ Before going through each and every step on using the RAK16001 WisBlock module, 
 
 #### Hardware
 
-- [RAK16001 ADC Module](https://store.rakwireless.com/)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK16001 ADC Module](https://store.rakwireless.com/products/rak16001-wisblock-adc-module?utm_source=RAK16001&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
 - Download and install [ArduinoIDE](https://www.arduino.cc/en/Main/Software).
-- To add the RAKwireless Core boards on your Arduino board, install the RAKwireless Arduino BSP. Follow the steps in the [Github repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+- To add the RAKwireless Core boards on your Arduino board, install the RAKwireless Arduino BSP. Follow the steps in the [GitHub repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
 ## Product Configuration
 
@@ -59,9 +59,9 @@ The RAK16001 module can be mounted on the IO slot of the WisBlock Base board, as
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak16001/quickstart/removing-screws.png"
@@ -86,7 +86,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK16001 uses I2C communication lines, and it can cause possible conflict, especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK16001 uses I2C communication lines, and it can cause possible conflict, especially on some IO modules.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
@@ -117,7 +117,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK11310 as WisBlock Core"
 />
 
-2. Next, copy the following sample code into your Arduino IDE. 
+2. Next, copy the following sample code into your Arduino IDE.
 
 ```c
 /**
@@ -211,9 +211,9 @@ void loop() {
 
 ```
 ::: tip 📝 NOTE
-If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the following: 
+If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the following:
 
-- [RAK16001 Single-Ended Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK16001_ADC_ADS7830/RAK16001_SingleEnded) 
+- [RAK16001 Single-Ended Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK16001_ADC_ADS7830/RAK16001_SingleEnded)
 - [RAK16001 Differential Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK16001_ADC_ADS7830/RAK16001_Differential)
 
 And these sample codes in Github will work on all WisBlock Core.

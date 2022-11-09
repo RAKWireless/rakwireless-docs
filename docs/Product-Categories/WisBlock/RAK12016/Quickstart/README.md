@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK12016
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK12016 Quick Start Guide
@@ -21,12 +21,12 @@ Before going through each and every step on using the RAK12016 WisBlock module, 
 
 #### Hardware
 
-- [RAK12016 WisBlock Flex Sensor Module](https://store.rakwireless.com/products/rak12016-wisblock-flex-sensor)
+- [RAK12016 WisBlock Flex Sensor Module](https://store.rakwireless.com/products/rak12016-wisblock-flex-sensor?utm_source=RAK12016&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) with IO slot
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -59,9 +59,9 @@ A flex sensor uses carbon on a strip of plastic, which acts as a variable resist
   caption="FS-L-0095-103-ST Flex Sensor"
 />
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 The Flex sensor can only be bent in one direction. Thus, bending the sensor in the other direction may not produce any reliable data and may damage the sensor. Also, be careful not to bend the flex sensor near the bottom where the wires are attached in the RAK12016 module, as they have the potential to kink and fail.
-:::  
+:::
 
 
 
@@ -79,9 +79,9 @@ As shown in **Figure 3**, the location for the IO slot is properly marked by sil
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12016/quickstart/removing_screw.png"
@@ -106,7 +106,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
@@ -203,7 +203,7 @@ void setup() {
     Serial.println("please check device!!!");
     delay(200);
   }
-  
+
   Flex.setVoltageResolution(ReferenceVoltage);
   float flexRef = Flex.getVoltageResolution();
   uint8_t flexflag = abs(flexRef - ReferenceVoltage);

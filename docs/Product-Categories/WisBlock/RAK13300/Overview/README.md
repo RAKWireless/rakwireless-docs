@@ -26,10 +26,6 @@ Thank you for choosing **RAK13300 WisBlock LPWAN Wireless Module** in your aweso
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 
 
-
-
-
-
 ## Product Description
 
 The RAK13300 is a LoRa module based on the SX1262 LoRa chip. It provides an easy-to-use, small-size, and low-power solution for long-range wireless data applications.
@@ -56,6 +52,6 @@ The module complies with LoRaWAN standards and supports LoRa point-to-point comm
 
 To use a **RAK13300**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK13300** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

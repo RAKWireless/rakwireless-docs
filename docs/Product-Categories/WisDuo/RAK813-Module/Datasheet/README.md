@@ -20,12 +20,9 @@ The **RAK813** is a combination of the BLE and LoRa in a single module. The BLE 
 
 At the same time, RAK813 supports various digital interfaces such as GPIO, UART, I2C, SPI, etc. which are used in connecting sensors to the RAK813 module.
 
-Based on the global leading Nordic Semiconductor Corporation's nRF52832 (BLE)
-and Semtech's SX127x (LoRa) chipset, the RAK813 module provides a perfect
-combination of ultra-low-power and ultra-long distance.
+Based on the global leading Nordic Semiconductor Corporation's nRF52832 (BLE) and Semtech's SX127x (LoRa) chipset, the RAK813 module provides a perfect combination of ultra-low-power and ultra-long distance.
 
-The RAK813 module uses TCXO as the LoRa clock source, so at different temperatures (such as indoor and outdoor) LoRa module of radio frequency close to the maximum, can effectively
-improve the decoding rate, to enhance the communication quality.
+The RAK813 module uses TCXO as the LoRa clock source, so at different temperatures (such as indoor and outdoor) LoRa module of radio frequency close to the maximum, can effectively improve the decoding rate, to enhance the communication quality.
 
 RAK813 supports various protocols, including the newest BLE and LoRaWAN, where customers can choose a multi frequency, including 433MHz, 470MHz, 868MHz, and 915MHz.
 
@@ -64,7 +61,7 @@ The overview covers the RAK813 board overview with its corresponding outer dimen
 
 #### Block Diagram
 
-The short-range technology nRF52832 (BLE) is paired with the Semtech's SX127x (LoRa) chipset making the RAK813 capable of long-distance wireless communication. 
+The short-range technology nRF52832 (BLE) is paired with the Semtech's SX127x (LoRa) chipset making the RAK813 capable of long-distance wireless communication.
 
 <rk-img
   src="/assets/images/wisduo/rak813-module/datasheet/interfaces/block-diagram.png"

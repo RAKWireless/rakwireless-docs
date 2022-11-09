@@ -16,7 +16,7 @@ tags:
 
 ### Description
 
-The **RAK2560 WisNode Sensor Hub** is a modular sensor ecosystem consisting of the main body and multiple pre-configured sensor probes. With pluggable, interchangeable probes, and the option to add third-party sensors to the mixture, the Sensor Hub is a suitable and versatile solution platform for various IoT applications where environmental monitoring is needed.
+The RAK2560 WisNode Sensor Hub is a modular sensor ecosystem consisting of the main body and multiple pre-configured sensor probes. With pluggable, interchangeable probes, and the option to add third-party sensors to the mixture, the Sensor Hub is a suitable and versatile solution platform for various IoT applications where environmental monitoring is needed.
 
 The Sensor Hub consists of a robust waterproof enclosure with two (2) sensor probe ports to connect the sensors or an external power source like a solar panel.
 

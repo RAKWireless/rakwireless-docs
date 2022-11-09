@@ -23,7 +23,7 @@ Thank you for choosing **RAK2245 Pi HAT WisLink LPWAN Concentrator** in your awe
 
 
 :::tip 📝 NOTE
-Purchasing the [RAK2013 WisLink Cellular Pi Hat](../../RAK2013) separately with the intent of adding a cellular feature to your existing RAK2245 Pi HAT is not possible. Hence, purchase the RAK7243C/7244C instead, as it is a specifically modified gateway that is composed of RAK2245 and RAK2013.
+Purchasing the [RAK2013 WisLink Cellular Pi HAT](https://store.rakwireless.com/products/rak2013-cellular-pi-hat?utm_source=RAK2013WisLink-LTE&utm_medium=Document&utm_campaign=BuyFromStore) separately with the intent of adding a cellular feature to your existing [RAK2245 Pi HAT](https://store.rakwireless.com/products/rak2245-pi-hat/?utm_source=RAK2245PiHATWisLink-LoRa&utm_medium=Document&utm_campaign=BuyFromStore) is not possible. Hence, purchase the [RAK7243C](https://store.rakwireless.com/products/rak7243c-pilot-gateway?variant=32094762139693&utm_source=RAK7243CD3%2BGateway&utm_medium=Document&utm_campaign=BuyFromStore)/[RAK7244C](https://store.rakwireless.com/products/rak7244-lpwan-developer-gateway?variant=31446039691309&utm_source=RAK7244CDeveloperD4%2B&utm_medium=Document&utm_campaign=BuyFromStore) instead, as it is a specifically modified gateway that is composed of RAK2245 and RAK2013.
 :::
 
 ## Product Description

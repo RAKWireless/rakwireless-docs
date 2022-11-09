@@ -27,7 +27,7 @@ rak_img: /assets/images/accessories/rakbox-b2/overview/overview.png
   caption="Installing the Plate"
 />
 
-**Step 2:** Fix the WisBlock IO module with three M1.2\*3 screws; For assembly method and precautions, please refer to [RAK5005-O Baseboard Installation Guide](../../../../Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/).. The figure shows the fixation of RAK1920.
+**Step 2:** Fix the WisBlock IO module with three M1.2\*3 screws; For assembly method and precautions, refer to [RAK5005-O Baseboard Installation Guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/). The figure shows the fixation of RAK1920.
 
 <rk-img
   src="/assets/images/accessories/rakbox-b2/installation/wisblock-io.png"

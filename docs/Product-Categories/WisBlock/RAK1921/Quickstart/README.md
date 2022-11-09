@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK1921
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 
@@ -18,16 +18,16 @@ next: ../Datasheet/
 
 Before going through each and every step on using the RAK1921 WisBlock module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
-- [RAK1921 WisBlock OLED Display](https://store.rakwireless.com/products/rak1921-oled-display-panel)
+- [RAK1921 WisBlock OLED Display](https://store.rakwireless.com/products/rak1921-oled-display-panel?utm_source=RAK1921&utm_medium=Document&utm_campaign=BuyFromStore)
 - [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
-- [Solar charger (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -38,7 +38,7 @@ Before going through each and every step on using the RAK1921 WisBlock module, m
 
 To use WisBlock Core modules with PlatformIO, you need to install a small script named RAK_PATCH. The script can be installed on WisBlock Core RAK4631, RAK11200, and RAK11310.
 
-::: warning ⚠️ WARNING    
+::: warning ⚠️ WARNING
 RAK_PATCH script was tested only on Windows 10 and Ubuntu.
 :::
 
@@ -102,7 +102,7 @@ Selecting RAK11310 as WisBlock Core.
   caption="Selecting RAK11310 as WisBlock Core"
 />
 
-2. The [Basic Sample Code for RAK1921](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK1921_OLED_SSD1306) will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 6** to **Figure 8**. 
+2. The [Basic Sample Code for RAK1921](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK1921_OLED_SSD1306) will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 6** to **Figure 8**.
 
 <rk-img
   src="/assets/images/wisblock/rak1921/quickstart/rak4631-rak1921.png"
@@ -212,7 +212,7 @@ You can import your ThingPulse arduino project to PlatformIO. To perform this te
 />
 
 2. Configure **Import Arduino Project** parameters:
-  
+
   - On boards list, select **WisCore RAK11200 Board (RAKwireless)** (Label 1).
   - Check **Use libraries installed by Arduino IDE** (Label 2).
   - Choose the directory of your ThingPulse Arduino project to be imported (Label 3).
@@ -225,7 +225,7 @@ You can import your ThingPulse arduino project to PlatformIO. To perform this te
 />
 
 3. Open the imported project and check the **platformio.ini** file. The parameter **libs_extra_dir** is your Arduino library directory.
-   
+
 <rk-img
   src="/assets/images/wisblock/rak1921/quickstart/pio-ini.png"
   width="100%"

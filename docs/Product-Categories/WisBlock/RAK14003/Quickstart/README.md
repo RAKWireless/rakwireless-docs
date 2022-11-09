@@ -5,12 +5,11 @@ tags:
   - quickstart
   - wisblock
   - RAK14003
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK14003 Quick Start Guide
-
 
 
 ## Prerequisite
@@ -21,17 +20,17 @@ Before going through each and every step on using the RAK14003 WisBlock module, 
 
 #### Hardware
 
-- [RAK14003 WisBlock LED Bar Graph Module](https://store.rakwireless.com/products/wisblock-led-bar-module-rak14003?_pos=1&_sid=8934b7e3f&_ss=r)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK14003 WisBlock LED Bar Graph Module](https://store.rakwireless.com/products/wisblock-led-bar-module-rak14003?_pos=1&_sid=8934b7e3f&_ss=r?utm_source=RAK14003&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
 - Download and install [ArduinoIDE](https://www.arduino.cc/en/Main/Software).
-- To add the RAKwireless Core boards on your Arduino board, install the RAKwireless Arduino BSP. Follow the steps in the [Github repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+- To add the RAKwireless Core boards on your Arduino board, install the RAKwireless Arduino BSP. Follow the steps in the [GitHub repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
 ## Product Configuration
 
@@ -61,9 +60,9 @@ The RAK14003 module can be mounted on the IO slot of the WisBlock Base board, as
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak14003/quickstart/removing_screw.png"
@@ -88,7 +87,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK14003 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK14003 uses I2C communication lines, and it can cause possible conflict especially on some IO modules.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
@@ -119,14 +118,14 @@ After all this setup, you can now connect the battery (optional) and USB cable t
   caption="Selecting RAK11310 as WisBlock Core"
 />
 
-3. Next, copy the following sample code into your Arduino IDE. 
+3. Next, copy the following sample code into your Arduino IDE.
 
 ```c
 /**
    @file RAK14003_LED_BAR_MCP32.ino
    @author rakwireless.com
    @brief Use MCP23017 to control LED Bar.
-		Colour：2 Red, 3 Yellow, 5 Green	
+		Colour：2 Red, 3 Yellow, 5 Green
    @version 0.2
    @date 2022-5-11
    @copyright Copyright (c) 2022
@@ -134,15 +133,15 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 #include <Wire.h>
 #include "Adafruit_MCP23X17.h"  //http://librarymanager/All#Adafruit_MCP23017
 
-#define IIC_ADDRESS 0X24 
+#define IIC_ADDRESS 0X24
 
 Adafruit_MCP23X17 mcp;
 
-void setup() 
-{  
+void setup()
+{
   pinMode(WB_IO2, OUTPUT);
   digitalWrite(WB_IO2, 1);
-  
+
   // Reset device
   pinMode(WB_IO4, OUTPUT);
   digitalWrite(WB_IO4, 1);
@@ -151,17 +150,17 @@ void setup()
   delay(10);
   digitalWrite(WB_IO4, 1);
   delay(10);
-  
+
   mcp.begin_I2C(IIC_ADDRESS); // use default address 0.
-  
+
   for(int i=0 ;i < 16 ;i++)
   {
-    mcp.digitalWrite(i, HIGH);  // Turn off all LEDs. 
+    mcp.digitalWrite(i, HIGH);  // Turn off all LEDs.
     mcp.pinMode(i, OUTPUT);     // Set pins as output.
   }
 }
 
-void loop() 
+void loop()
 {
   int i;
   for(i=0 ;i < 10 ;i++)

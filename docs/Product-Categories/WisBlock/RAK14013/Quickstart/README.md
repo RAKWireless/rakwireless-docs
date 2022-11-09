@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK14013
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK14013 Quick Start Guide
@@ -20,12 +20,12 @@ Before going through each and every step on using the RAK14013 Joystick module, 
 #### Hardware
 
 - [RAK14013 WisBlock Joystick Module](https://store.rakwireless.com/products/rak14007-rak14013-wisblock-joystick-interface?utm_source=RAK14013&utm_medium=Document&utm_campaign=BuyFromStore)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
 - [RAK14007 WisBlock Interface Module](https://store.rakwireless.com/products/rak14007-rak14013-wisblock-joystick-interface?utm_source=RAK14007&utm_medium=Document&utm_campaign=BuyFromStore)
-- [Li-Ion/LiPo battery (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
-- [Solar charger (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -58,9 +58,9 @@ As shown in **Figure 2**, the location for the IO slot is properly marked by sil
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock module is the same. 
+The procedure in disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak14013/quickstart/removing_screw.png"
@@ -85,8 +85,8 @@ The procedure in disassembling any type of WisBlock module is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base board slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. 
-:::  
+If you will connect other modules to the remaining WisBlock Base board slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
+:::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
@@ -143,7 +143,7 @@ In this example, you will be getting the rotation position of the knob or if it 
 #define JOYSTICK_GET_I2C_ADDRESS      0x02  //(r)   1 bytes
 #define JOYSTICK_SET_I2C_ADDRESS      0x03  //(w)   1 bytes
 #define JOYSTICK_GET_VERSION          0x04 // (r)   1 bytes
-#define JOYSTICK_SET_INT_TYPE         0x05 // (W)   1 bytes, five keys, from bit4-bit0, 0-push, 1-release. 
+#define JOYSTICK_SET_INT_TYPE         0x05 // (W)   1 bytes, five keys, from bit4-bit0, 0-push, 1-release.
 #define JOYSTICK_GET_X_POSITION       0x06 // (r)   2 bytes, return the analog quantity. Range:0-1024, middle position is 507(near 512)
 #define JOYSTICK_GET_Y_POSITION       0x07 // (r)   2 bytes, return the analog quantity. Range:0-1024, middle position is 507(near 512)
 #define JOYSTICK_SET_X_LEFT_THREHOLD  0x08 // (w)   2 bytes, set the analog quantity. Range:0-1024
@@ -163,7 +163,7 @@ void detect()
   digitalWrite(35, HIGH);
 }
 
-//motion1       NA      NA     NA   keyE keyD keyC keyB keyA     
+//motion1       NA      NA     NA   keyE keyD keyC keyB keyA
 //bit           7       6      5     4     3    2    1    0
 //motion2       NA     NA     NA    NA    x-l   x-r  y-u  y-d
 //bit           7       6      5     4     3    2    1    0
@@ -174,10 +174,10 @@ void judge()
   uint16_t tmp = 0;
   read_from_ttiny441(JOYSTICK_GET_DATA,motion,2);
   if((motion[0] & 0x01) == 0x01){Serial.println("KeyA Pressed");}
-  if((motion[0] & 0x02) == 0x02){Serial.println("KeyB Pressed");}  
+  if((motion[0] & 0x02) == 0x02){Serial.println("KeyB Pressed");}
   if((motion[0] & 0x04) == 0x04){Serial.println("KeyC Pressed");}
   if((motion[0] & 0x08) == 0x08){Serial.println("KeyD Pressed");}
-  if((motion[0] & 0x10) == 0x10){Serial.println("KeyE Pressed");}  
+  if((motion[0] & 0x10) == 0x10){Serial.println("KeyE Pressed");}
   if((motion[1] & 0x04) == 0x04)
   {
     tmp = 0;
@@ -187,7 +187,7 @@ void judge()
     {
        Serial.print("RIGHT ");
        Serial.print("X Position is ");
-       Serial.println(tmp); 
+       Serial.println(tmp);
     }
   }
   if((motion[1] & 0x08) == 0x08)
@@ -199,7 +199,7 @@ void judge()
     {
        Serial.print("LEFT ");
        Serial.print("X Position is ");
-       Serial.println(tmp); 
+       Serial.println(tmp);
     }
   }
   if((motion[1] & 0x02) == 0x02)
@@ -208,10 +208,10 @@ void judge()
     read_from_ttiny441(JOYSTICK_GET_Y_POSITION,data,2);
     tmp = (((uint16_t)data[0]) << 8) | ((uint16_t)data[1]);
     if(tmp != 0xFFFF)
-    {    
+    {
        Serial.print("UP ");
        Serial.print("Y Position is ");
-       Serial.println(tmp); 
+       Serial.println(tmp);
     }
   }
   if((motion[1] & 0x01) == 0x01)
@@ -220,13 +220,13 @@ void judge()
     read_from_ttiny441(JOYSTICK_GET_Y_POSITION,data,2);
     tmp = (((uint16_t)data[0]) << 8) | ((uint16_t)data[1]);
     if(tmp != 0xFFFF)
-    {    
+    {
        Serial.print("DOWN ");
        Serial.print("Y Position is ");
-       Serial.println(tmp); 
+       Serial.println(tmp);
     }
-  }   
-  digitalWrite(INT_LED, LOW);   
+  }
+  digitalWrite(INT_LED, LOW);
 }
 
 void setup() {
@@ -236,19 +236,19 @@ void setup() {
   digitalWrite(INT_LED, LOW);
   Serial.begin(115200);
   Serial.print("Joystick Test!");
-  Wire.begin();  
+  Wire.begin();
   delay(1000);
   uint8_t data = 0;
   read_from_ttiny441(JOYSTICK_GET_VERSION,&data,1);
   Serial.print("Sensor Firmware version: ");
   Serial.println(data,HEX);
-  Serial.println(); 
+  Serial.println();
   //here we use interrupt to notify
   pinMode(WB_IO6, INPUT);
   attachInterrupt(WB_IO6, detect, RISING);
   //set interrupt type for each key. 0 for push/ 1 for release. This step is necessary.
-  uint8_t itp = 0x00; 
-  write_to_ttiny441(JOYSTICK_SET_INT_TYPE,&itp,1); 
+  uint8_t itp = 0x00;
+  write_to_ttiny441(JOYSTICK_SET_INT_TYPE,&itp,1);
 }
 
 void loop() {
@@ -263,7 +263,7 @@ void loop() {
 
 void read_from_ttiny441(uint8_t reg, uint8_t *data, uint8_t length)
 {
-  Wire.beginTransmission(SLAVE_I2C_ADDRESS_DEFAULT); 
+  Wire.beginTransmission(SLAVE_I2C_ADDRESS_DEFAULT);
   Wire.write(reg);        // sends five bytes
   Wire.endTransmission();    // stop transmitting
   delay(20);
@@ -272,12 +272,12 @@ void read_from_ttiny441(uint8_t reg, uint8_t *data, uint8_t length)
   while ( Wire.available() ) // slave may send less than requested
   {
     data[i++]= Wire.read(); // receive a byte as a proper uint8_t
-  }  
+  }
 }
 
 void write_to_ttiny441(uint8_t reg, uint8_t *data, uint8_t length)
 {
-  Wire.beginTransmission(SLAVE_I2C_ADDRESS_DEFAULT); 
+  Wire.beginTransmission(SLAVE_I2C_ADDRESS_DEFAULT);
   Wire.write(reg);        // sends five bytes
   for(int i=0;i<length;i++)
   {

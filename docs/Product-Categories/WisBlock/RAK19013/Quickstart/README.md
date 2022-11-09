@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK19013
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK19013 Quick Start Guide
@@ -17,16 +17,16 @@ next: ../Datasheet/
 
 Before going through each and every step on using the RAK19013 WisBlock LiPo Solar Power Slot module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
 - [RAK19013 WisBlock LiPo Solar Power Slot Module](https://store.rakwireless.com/products/rak19013-lipo-solar-power-slot-module?utm_source=RAK19013&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
-- [Li-Ion/LiPo battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger](https://store.rakwireless.com/products/solar-panel-connector-cable)
-- [RAK5804](https://store.rakwireless.com/products/rak5804-wisblock-interface-extension-board)(Reprogramming of the WisBlock Core via USB) 
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [RAK5804 WisBlock Interface Module](https://store.rakwireless.com/products/rak5804-io-extension-board?utm_source=RAK5804&utm_medium=Document&utm_campaign=BuyFromStore)(Reprogramming of the WisBlock Core via USB)
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -78,9 +78,9 @@ The RAK19013 module can be mounted on the IO slot of the WisBlock Base board, as
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock module is the same. 
+The procedure in disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak19013/quickstart/removing_screw.png"
@@ -112,7 +112,7 @@ If you will connect other modules to the remaining WisBlock Base slots, check on
 
 ##### Rechargeable Battery
 
-RAK19013 can be powered by a rechargeable Li-Ion/LiPo battery via the dedicated connectors, as shown in **Figure 7**. The matching connector for the rechargeable battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199). A cable assembly for the rechargeable battery connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/battery-connector-cable). 
+RAK19013 can be powered by a rechargeable Li-Ion/LiPo battery via the dedicated connectors, as shown in **Figure 7**. The matching connector for the rechargeable battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199). A cable assembly for the rechargeable battery connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/battery-connector-cable).
 
 <rk-img
   src="/assets/images/wisblock/rak19013/quickstart/rak19013-battery-connection.svg"
@@ -130,7 +130,7 @@ RAK19013 can be powered by a rechargeable Li-Ion/LiPo battery via the dedicated 
 
 #### Solar Panel Connection
 
-The battery can be recharged, as well, via a small Solar Panel, as shown in **Figure 8**. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287). A cable assembly for the solar panel connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/solar-panel-connector-cable). 
+The battery can be recharged, as well, via a small Solar Panel, as shown in **Figure 8**. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287). A cable assembly for the solar panel connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/solar-panel-connector-cable).
 
 <rk-img
   src="/assets/images/wisblock/rak19013/quickstart/rak19013-solar-connection.svg"
@@ -148,7 +148,7 @@ The battery can be recharged, as well, via a small Solar Panel, as shown in **Fi
 
 ### Software Setup
 
-The WisBlock Core is designed to be interfaced with other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the WisBlock Core. 
+The WisBlock Core is designed to be interfaced with other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the WisBlock Core.
 Before you continue, you should have already set up either an [Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) or
 [PlatformIO](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md).
 

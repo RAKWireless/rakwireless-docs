@@ -15,7 +15,7 @@ tags:
 RAK
 ### What Do You Need?
 
-1. **RAK Hotspot**
+1. [**RAK Hotspot**](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore)
 2. USB microSD Card Reader
 3. 32GB or larger microSD Card (optional, to store the backup). To maintain similar performance we recommend a UHS-I compliant microSD card, for example, Sandisk&trade; High Endurance or Extreme.
 

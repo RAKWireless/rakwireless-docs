@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK14000
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK14000 Quick Start Guide
@@ -17,16 +17,16 @@ next: ../Datasheet/
 
 Before going through each and every step on using RAK14000 WisBlock E-Ink Display, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
-- [RAK14000 WisBlock E-Ink Display](https://store.rakwireless.com/products/wisblock-epd-module-rak14000)
+- [RAK14000 WisBlock E-Ink Display](https://store.rakwireless.com/products/wisblock-epd-module-rak14000?utm_source=WisBlockRAK14000&utm_medium=Document&utm_campaign=BuyFromStore)
 - [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -37,7 +37,7 @@ Before going through each and every step on using RAK14000 WisBlock E-Ink Displa
 
 ### Hardware Setup
 
-The RAK14000 module is part of the WisBlock Display category and connects to the baseboard through the IO slot. It has an E-Paper and a three-pushbutton interface that is connected via an FPC connector, as shown in Figure 1. 
+The RAK14000 module is part of the WisBlock Display category and connects to the baseboard through the IO slot. It has an E-Paper and a three-pushbutton interface that is connected via an FPC connector, as shown in Figure 1.
 
 <rk-img
   src="/assets/images/wisblock/rak14000/quickstart/rak14000-parts.png"
@@ -59,9 +59,9 @@ As shown in **Figure 2**, the location for the IO slot is properly marked by sil
 
 ##### Disassembling
 
-The procedure to disassemble any type of WisBlock modules is the same. 
+The procedure to disassemble any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak14000/quickstart/removing_screw.png"
@@ -91,7 +91,7 @@ The procedure to disassemble any type of WisBlock modules is the same.
 Some illustrations are specific to the FPC connector of the Three-Pushbutton Switch, but it is also applicable to the E-Paper.
 :::
 
-1. The FPC connectors for the E-Paper and Pushbuttons are commonly set to close by default, as shown in **Figure 6**. 
+1. The FPC connectors for the E-Paper and Pushbuttons are commonly set to close by default, as shown in **Figure 6**.
 
 <rk-img
   src="/assets/images/wisblock/rak14000/quickstart/rak14000-fpc-close.svg"
@@ -145,7 +145,7 @@ These are the quick links that go directly to the software guide for the specifi
 
 #### RAK14000 in RAK4631 WisBlock Core Guide
 
-##### Arduino Setup 
+##### Arduino Setup
 
 If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index), the WisBlock Core and example code should now be available on the Arduino IDE.
 
@@ -200,13 +200,13 @@ typedef struct  DEPG {
    int  width;
    int  height;
    int  position1_x;
-   int  position1_y;  
+   int  position1_y;
    int  position2_x;
-   int  position2_y;  
+   int  position2_y;
    int  position3_x;
-   int  position3_y; 
+   int  position3_y;
    int  position4_x;
-   int  position4_y;   
+   int  position4_y;
 } DEPG;
 
 // DEPG  DEPG_HP = {250,122,40,20,40,30,40,50,90,40};  //use this for white-black-red version
@@ -237,7 +237,7 @@ Adafruit_SSD1680 display(DEPG_HP.width, DEPG_HP.height, EPD_MOSI,
 
 #### RAK14000 in RAK11200 WisBlock Core Guide
 
-##### Arduino Setup 
+##### Arduino Setup
 
 If you already installed the [RAKwireless Arduino BSP](/Product-Categories/WisBlock/RAK11200/Quickstart/#arduino-ide-bsp-installation), the WisBlock Core and example code should now be available on the Arduino IDE.
 
@@ -319,7 +319,7 @@ Before uploading your sketch, short circuit **BOOT0** and **GND** pins and press
 
 #### RAK14000 in RAK11310 WisBlock Core Guide
 
-##### Arduino Setup 
+##### Arduino Setup
 
 If you already installed the [RAKwireless Arduino BSP](/Product-Categories/WisBlock/RAK11200/Quickstart/#arduino-ide-bsp-installation), the WisBlock Core and example code should now be available on the Arduino IDE.
 
@@ -357,7 +357,7 @@ If you already installed the [RAKwireless Arduino BSP](/Product-Categories/WisBl
   caption="Adafruit EPD Library Install"
 />
 
-4. You can access the programming guide for the RAK14000 module by opening the example codes, as shown in **Figure 26**. 
+4. You can access the programming guide for the RAK14000 module by opening the example codes, as shown in **Figure 26**.
 
 ::: tip 📝 NOTE
 
@@ -370,23 +370,23 @@ typedef struct  DEPG {
    int  width;
    int  height;
    int  position1_x;
-   int  position1_y;  
+   int  position1_y;
    int  position2_x;
-   int  position2_y;  
+   int  position2_y;
    int  position3_x;
-   int  position3_y; 
+   int  position3_y;
    int  position4_x;
-   int  position4_y;   
+   int  position4_y;
 } DEPG;
 
 // DEPG  DEPG_HP = {250,122,40,20,40,30,40,50,90,40};  // use this for 250 x 122 white-black-red
-DEPG  DEPG_HP = {212,104,30,15,30,25,30,45,80,30};  // use this for 212 x 104 white-black 
+DEPG  DEPG_HP = {212,104,30,15,30,25,30,45,80,30};  // use this for 212 x 104 white-black
 
 Adafruit_SSD1680 display(DEPG_HP.width, DEPG_HP.height, EPD_MOSI,
                          EPD_SCK, EPD_DC, EPD_RESET,
                          EPD_CS, SRAM_CS, EPD_MISO,
                          EPD_BUSY);
-```                        
+```
 :::
 
 <rk-img
@@ -409,4 +409,4 @@ Adafruit_SSD1680 display(DEPG_HP.width, DEPG_HP.height, EPD_MOSI,
   caption="Uploading the RAK14000 example code"
 />
 
-6. Once you have successfully uploaded the example sketch, you should be able to see the image output on the E-Paper. You can also see the corresponding button pressed in the Serial Monitor. 
+6. Once you have successfully uploaded the example sketch, you should be able to see the image output on the E-Paper. You can also see the corresponding button pressed in the Serial Monitor.

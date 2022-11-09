@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK12023
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK12023 Quick Start Guide
@@ -18,18 +18,19 @@ Before going through each and every step on using the RAK12023 WisBlock module, 
 
 #### Hardware
 
-- [RAK12023 & RAK12035 WisBlock Soil Moisture Sensor Module](https://store.rakwireless.com/products/rak12023-rak12035-wisblock-soil-moisture-sensor)
+- [RAK12023 & RAK12035 WisBlock Soil Moisture Sensor Module]('https://store.rakwireless.com/products/rak12023-rak12035-wisblock-soil-moisture-sensor?utm_source=RAK12023&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) with IO slot
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [RAK19008 WisBlock IO Extension Cable (optional)](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008)
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [RAK19008 WisBlock IO Extension Cable (optional)](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008?utm_source=RAK19008&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+
 
 #### Software
 
 - Download and install the [ArduinoIDE](https://www.arduino.cc/en/Main/Software).
-- To add the RAKwireless Core boards on your Arduino board, install the RAKwireless Arduino BSP. Follow the steps in the [Github repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+- To add the RAKwireless Core boards on your Arduino board, install the RAKwireless Arduino BSP. Follow the steps in the [GitHub repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
 ## Product Configuration
 
@@ -78,9 +79,9 @@ The RAK12023 module can be mounted on the IO slot of the WisBlock Base board, as
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12023/quickstart/removing_screw.png"
@@ -105,7 +106,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
@@ -169,9 +170,9 @@ The calibration method in air and water is not very precise. To get more precise
  * @brief Example for sensor calibration
  * @version 0.1
  * @date 2021-11-20
- * 
+ *
  * @copyright Copyright (c) 2021
- * 
+ *
 */
 #include <Arduino.h>
 #include <Wire.h>
@@ -385,8 +386,8 @@ If you're using the RAK11200 as your WisBlock Core, the RAK11200 requires the **
 
 7. Finally, after setting up the Serial Monitor, you'll now be able to see the readings as shown below in **Figure 15**. Follow the steps carefully for you to be able to calibrate your sensor correctly.
 
-::: tip 📝 NOTE   
-Upon calibration and before submerging the sensor into the water, following the [Recommended Depth](/Product-Categories/WisBlock/RAK12035/Quickstart/#recommended-depth) of the RAK12035 Sensor probe is **required**. 
+::: tip 📝 NOTE
+Upon calibration and before submerging the sensor into the water, following the [Recommended Depth](/Product-Categories/WisBlock/RAK12035/Quickstart/#recommended-depth) of the RAK12035 Sensor probe is **required**.
 :::
 
 <rk-img

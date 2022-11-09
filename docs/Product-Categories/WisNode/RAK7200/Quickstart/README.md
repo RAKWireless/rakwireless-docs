@@ -20,7 +20,7 @@ Before going through each and every step in the installation guide of the RAK720
 
 #### Hardware Tools
 
-1. **RAK7200 WisNode Track Lite**
+1. [**RAK7200 WisNode Track Lite**](https://store.rakwireless.com/products/rak7200-lora-tracker?utm_source=RAK7200WisNodeTrackLite&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Micro USB Cable
 3. Gateway in Range, for Testing
 4. Windows PC

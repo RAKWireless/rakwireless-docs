@@ -18,11 +18,11 @@ rak_img: /assets/images/wislink-lte/rak2013/datasheet/RAK2013_home.png
 
 ### Description
 
-The RAK2013 is a Raspberry Pi 3B+ edition cellular communications module that supports Low-Power Wide-Area (LPWA) connectivity to Internet-of-Things (IoT) devices. It has several configuration options including BG96 / EG91 / EG95 for 4G/LTE, NB-IoT, CAT-M, CAT1 or CAT 4 cellular protocol. This device integrates an audio codec and audio amplifier supporting Voice-over-LTE (VoLTE) in high definition (HD) and uninterrupted voice calls. For easy use, there are an earphone connector, MIC connector and speaker connector with an audio amplifier.
+The **RAK2013 WisLink Cellular Pi HAT** is a Raspberry Pi 3B+ edition cellular communications module that supports Low-Power Wide-Area (LPWA) connectivity to Internet-of-Things (IoT) devices. It has several configuration options including BG96 / EG91 / EG95 for 4G/LTE, NB-IoT, CAT-M, CAT1 or CAT 4 cellular protocol. This device integrates an audio codec and audio amplifier supporting Voice-over-LTE (VoLTE) in high definition (HD) and uninterrupted voice calls. For easy use, there are an earphone connector, MIC connector and speaker connector with an audio amplifier.
 
 The module is supported with extendable sensor board connected that follows the mikroBus standard. MikroBus has many kinds of sensor board, such as temperature, humidity, 3 axis sensor and light sensor, allowing easy sensor data transmission. Because of its wide range of supported sensors, it is suitable for applications such as environmental monitoring and presence sensing, that require cellular connectivity.
 
-The RAK2013 is compatible with RAK2245 Pi HAT module via the onboard 40-pin header. It can function as a cellular backhaul to a gateway, providing even greater flexibility for IoT solutions that require cellular as an option for ensuring service reliability.
+The RAK2013 is compatible with [RAK2245 Pi HAT module](https://store.rakwireless.com/products/rak2245-pi-hat/?utm_source=RAK2245PiHATWisLink-LoRa&utm_medium=Document&utm_campaign=BuyFromStore) via the onboard 40-pin header. It can function as a cellular backhaul to a gateway, providing even greater flexibility for IoT solutions that require cellular as an option for ensuring service reliability.
 
 ### Features
 

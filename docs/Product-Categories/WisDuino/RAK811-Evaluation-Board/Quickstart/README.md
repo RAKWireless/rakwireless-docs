@@ -34,7 +34,7 @@ This guide covers the following topics:
 
 Before going through the installation guide of the WisDuino RAK811 Evaluation Board, make sure to prepare the necessary items listed below:
 
-1. **WisDuino RAK811 Evaluation Board**
+1. [**WisDuino RAK811 Evaluation Board**](https://store.rakwireless.com/products/rak811-wisnode-lora-module?utm_source=RAK811LPWANEvaluationBoard&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Micro- USB cable
 3. Gateway in Range for Testing
 4. A Windows/Mac OS/Linux Computer

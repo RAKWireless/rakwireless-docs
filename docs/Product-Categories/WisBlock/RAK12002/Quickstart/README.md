@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK12002
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK12002 Quick Start Guide
@@ -19,16 +19,16 @@ next: ../Datasheet/
 
 Before going through each and every step on using RAK12002 WisBlock module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
-- [RAK12002 WisBlock RTC Module](https://store.rakwireless.com/collections/wisblock-extra/products/rtc-module-rak12002?variant=40102983598278)
+- [RAK12002 WisBlock RTC Module](https://store.rakwireless.com/collections/wisblock-extra/products/rtc-module-rak12002?variant=40102983598278?utm_source=RAK12002&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
-- [Solar charger (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -74,9 +74,9 @@ The RAK12002 module can be mounted on the IO slot of the WisBlock Base board, as
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12002/quickstart/removing_screw.png"
@@ -145,9 +145,9 @@ Melopero_RV3028 rtc;
 /**
  * @brief Arduino setup function
  * @note Called once after power on or reset
- * 
+ *
  */
-void setup() 
+void setup()
 {
   // Initialize Serial for debug output
   time_t timeout = millis();
@@ -165,9 +165,9 @@ void setup()
   }
   rtc.initDevice(); // First initialize and create the rtc device
 
-  rtc.writeToRegister(0x35,0x00);  
+  rtc.writeToRegister(0x35,0x00);
   rtc.writeToRegister(0x37,0xB4); //Direct Switching Mode (DSM): when VDD < VBACKUP, switchover occurs from VDD to VBACKUP
-  
+
   rtc.set24HourMode();  // Set the device to use the 24hour format (default) instead of the 12 hour format
 
   // Set the date and time
@@ -181,9 +181,9 @@ void setup()
 /**
  * @brief Arduino loop function
  * @note Output date and time every second
- * 
+ *
  */
-void loop() 
+void loop()
 {
   Serial.printf("%d:%d:%d %d/%d/%d \n",rtc.getHour(),rtc.getMinute(),rtc.getSecond(),rtc.getYear(),rtc.getMonth(),rtc.getDate());
   delay(1000);
@@ -277,9 +277,9 @@ Melopero_RV3028 rtc;
 /**
  * @brief Arduino setup function
  * @note Called once after power on or reset
- * 
+ *
  */
-void setup() 
+void setup()
 {
   // Initialize Serial for debug output
   time_t timeout = millis();
@@ -297,9 +297,9 @@ void setup()
   }
   rtc.initDevice(); // First initialize and create the rtc device
 
-  rtc.writeToRegister(0x35,0x00);  
+  rtc.writeToRegister(0x35,0x00);
   rtc.writeToRegister(0x37,0xB4); //Direct Switching Mode (DSM): when VDD < VBACKUP, switchover occurs from VDD to VBACKUP
-  
+
   rtc.set24HourMode();  // Set the device to use the 24hour format (default) instead of the 12 hour format
 
   // Set the date and time
@@ -313,9 +313,9 @@ void setup()
 /**
  * @brief Arduino loop function
  * @note Output date and time every second
- * 
+ *
  */
-void loop() 
+void loop()
 {
   Serial.printf("%d:%d:%d %d/%d/%d \n",rtc.getHour(),rtc.getMinute(),rtc.getSecond(),rtc.getYear(),rtc.getMonth(),rtc.getDate());
   delay(1000);
@@ -413,9 +413,9 @@ Melopero_RV3028 rtc;
 /**
  * @brief Arduino setup function
  * @note Called once after power on or reset
- * 
+ *
  */
-void setup() 
+void setup()
 {
   // Initialize Serial for debug output
   time_t timeout = millis();
@@ -433,9 +433,9 @@ void setup()
   }
   rtc.initDevice(); // First initialize and create the rtc device
 
-  rtc.writeToRegister(0x35,0x00);  
+  rtc.writeToRegister(0x35,0x00);
   rtc.writeToRegister(0x37,0xB4); //Direct Switching Mode (DSM): when VDD < VBACKUP, switchover occurs from VDD to VBACKUP
-  
+
   rtc.set24HourMode();  // Set the device to use the 24hour format (default) instead of the 12 hour format
 
   // Set the date and time
@@ -449,9 +449,9 @@ void setup()
 /**
  * @brief Arduino loop function
  * @note Output date and time every second
- * 
+ *
  */
-void loop() 
+void loop()
 {
   Serial.printf("%d:%d:%d %d/%d/%d \n",rtc.getHour(),rtc.getMinute(),rtc.getSecond(),rtc.getYear(),rtc.getMonth(),rtc.getDate());
   delay(1000);

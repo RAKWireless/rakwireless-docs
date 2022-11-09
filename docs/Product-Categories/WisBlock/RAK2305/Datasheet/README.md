@@ -21,8 +21,8 @@ The RAK2305 module is a 2.4&nbsp;GHz Wi-Fi and Bluetooth in a single module. The
 
 ### Features
 
--  Wi-Fi + BLE module for Internet-of-Things
--  I/O ports: UART/I2C/SPI/GPIO
+- Wi-Fi + BLE module for Internet-of-Things
+- I/O ports: UART/I2C/SPI/GPIO
 - 4&nbsp;MB SPI flash and 8&nbsp;MB PSRAM
 - Ultra-Low-Power Consumption
 - Wi-Fi 802.11 b/g/n
@@ -33,7 +33,7 @@ The RAK2305 module is a 2.4&nbsp;GHz Wi-Fi and Bluetooth in a single module. The
 
 ### Overview
 
-The overview covers the RAK2305 WisBlock board overview and block diagram. It also shows how to mount the board into to the baseboard. 
+The overview covers the RAK2305 WisBlock board overview and block diagram. It also shows how to mount the board into to the baseboard.
 
 #### Board Overview
 
@@ -68,7 +68,7 @@ The overview covers the RAK2305 WisBlock board overview and block diagram. It al
 2.	When IO0 is pulled-down, the UART download mode is selected. When IO0 is pulled-up, flash mode is selected. The default mode of the IO0 pin is pull-up.
 :::
 
-### Hardware 
+### Hardware
 
 The hardware specification is categorized into four parts. It discuses the interfacing of the module and its corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK2305 WisBlock WiFi Interface Module.
 
@@ -184,7 +184,7 @@ The following sections describes the schematic of the RAK2305 module:
 
 ##### IO Connector
 
-**Figure 10** shows the pin definition of IO connector. 
+**Figure 10** shows the pin definition of IO connector.
 
 <rk-img
   src="/assets/images/wisblock/rak2305/datasheet/wisio-connector.png"

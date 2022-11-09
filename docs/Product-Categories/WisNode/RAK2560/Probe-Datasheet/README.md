@@ -19,7 +19,7 @@ tags:
 The **Sensor Probe** is an accessory for the Sensor Hub solution platform. It supports up to two WisBlock sensors in various combinations to provide the needed data.
 
 :::tip 📝 NOTE:
-The **Sensor Probe** could not be used as a standalone product. You need the RAK2560 Sensor Hub in order to use this probe.
+The **Sensor Probe** could not be used as a standalone product. You need the [RAK2560 WisNode Sensor Hub](https://store.rakwireless.com/products/sensor-hub?utm_source=RAK2560WisNodeSense&utm_medium=Document&utm_campaign=BuyFromStore) in order to use this probe.
 :::
 
 ### Product Features

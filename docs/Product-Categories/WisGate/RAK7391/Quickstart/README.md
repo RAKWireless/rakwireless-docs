@@ -14,7 +14,7 @@ tags:
 
 ## Powering on the Device
 
-The RAK7391 can be powered via 10-28&nbsp;V<sub>DC</sub>. There is one Barrel Jack and one Phoenix Connector, so the user has two options. Make sure you power either using one or the other not both at the same time.
+The [RAK7391](https://store.rakwireless.com/products/wisgate-connect-base-kit-rak7391?utm_source=WisGateRAK7391&utm_medium=Document&utm_campaign=BuyFromStore) can be powered via 10-28&nbsp;V<sub>DC</sub>. There is one Barrel Jack and one Phoenix Connector, so the user has two options. Make sure you power either using one or the other not both at the same time.
 
 <rk-img
   src="/assets/images/wisgate/rak7391/quickstart/1.power-connectors.png"

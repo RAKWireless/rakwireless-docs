@@ -69,8 +69,8 @@ Products Used:
 Products Used:
 
 - [RAK Hotspot V2](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore) 
-- [Outdoor Enclosure Kit RAKBox-GW-3](https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H?variant=37912840863942)
-- [Lightning Arrestor](https://store.rakwireless.com/products/lightning-arrestor)
+- [Outdoor Enclosure Kit RAKBox-GW-3](https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H?utm_source=OutdoorEnclosureKitH&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Lightning Arrestor](https://store.rakwireless.com/products/lightning-arrestor-for-gps-antenna?utm_source=LoRa-WiFi-LTE-SPD&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
@@ -84,7 +84,7 @@ Products Used:
 
 - [RAK Hotspot V2](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore) 
 - Converter Cable (included with any of the Fiberglass Antennas)
-- [Lightning Arrestor](https://store.rakwireless.com/products/lightning-arrestor)
+- [Lightning Arrestor](https://store.rakwireless.com/products/lightning-arrestor-for-gps-antenna?utm_source=LoRa-WiFi-LTE-SPD&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
@@ -98,7 +98,7 @@ Products Used:
 Products Used:
 
 - [RAK Hotspot V2](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore) 
-- [Pulsar Cable LMR400 RAK9733](https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733?variant=39677580935366)
+- [Pulsar Cable LMR400 RAK9733](https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733?utm_source=RAK9733&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
@@ -112,8 +112,8 @@ Products Used:
 Products Used:
 
 - [RAK Hotspot V2](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore)  
-- [Pulsar Cable LMR400 RAK9733](https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733?variant=39677580935366)
-- [Lightning Arrestor](https://store.rakwireless.com/products/lightning-arrestor)
+- [Pulsar Cable LMR400 RAK9733](https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733?utm_source=RAK9733&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Lightning Arrestor](https://store.rakwireless.com/products/lightning-arrestor-for-gps-antenna?utm_source=LoRa-WiFi-LTE-SPD&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
@@ -127,7 +127,7 @@ Products Used:
 Products Used:
 
 - [RAK Hotspot V2](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore)  
-- [Outdoor Enclosure Kit RAKBox-GW-3](https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H?variant=37912840863942)
+- [Outdoor Enclosure Kit RAKBox-GW-3](https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H?utm_source=OutdoorEnclosureKitH&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
@@ -141,8 +141,8 @@ Products Used:
 Products Used:
 
 - [RAK Hotspot V2](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore)  
-- [Outdoor Enclosure Kit RAKBox-GW-3](https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H?variant=37912840863942)
-- [Pulsar Cable LMR400 RAK9731](https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733?variant=39677580935366)
+- [Outdoor Enclosure Kit RAKBox-GW-3](https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H?utm_source=OutdoorEnclosureKitH&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Pulsar Cable LMR400 RAK9731](https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733?utm_source=RAK9731&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
@@ -156,9 +156,9 @@ Products Used:
 Products Used:
 
 - [RAK Hotspot V2](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore) 
-- [Outdoor Enclosure Kit RAKBox-GW-3](https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H?variant=37912840863942)
-- [Pulsar Cable LMR400 RAK9731](https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733?variant=39677580935366)
-- [Lightning Arrestor](https://store.rakwireless.com/products/lightning-arrestor)
+- [Outdoor Enclosure Kit RAKBox-GW-3](https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H?utm_source=OutdoorEnclosureKitH&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Pulsar Cable LMR400 RAK9731](https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733?utm_source=RAK9731&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Lightning Arrestor](https://store.rakwireless.com/products/lightning-arrestor-for-gps-antenna?utm_source=LoRa-WiFi-LTE-SPD&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img

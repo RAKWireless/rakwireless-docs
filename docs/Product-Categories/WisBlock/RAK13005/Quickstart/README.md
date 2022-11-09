@@ -4,8 +4,8 @@ tags:
   - quickstart
   - wisblock
   - RAK13005
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 rak_img: /assets/images/wisblock/rak13005/overview/RAK13005_home.png
 ---
 
@@ -17,18 +17,18 @@ rak_img: /assets/images/wisblock/rak13005/overview/RAK13005_home.png
 
 Before going through each and every step on using the RAK13005 WisBlock module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
-- [RAK13005 WisBlock LIN Module - Controller/Master Mode](https://store.rakwireless.com/products/lin-bus-module-rak13005?variant=41796125524166)
-- [RAK13005 WisBlock LIN Module - Peripheral/Slave Mode](https://store.rakwireless.com/products/lin-bus-module-rak13005?variant=41796125556934)
+- [RAK13005 WisBlock LIN Module - Controller/Master Mode](https://store.rakwireless.com/products/lin-bus-module-rak13005?variant=41796125524166?utm_source=RAK13005&utm_medium=Document&utm_campaign=BuyFromStore)
+- [RAK13005 WisBlock LIN Module - Peripheral/Slave Mode](https://store.rakwireless.com/products/lin-bus-module-rak13005?variant=41796125556934?utm_source=RAK13005&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 - External power source ( 5.5&nbsp;V to 27&nbsp;V )
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -76,7 +76,7 @@ The RAK13005 module can be mounted on the IO slot of the WisBlock Base board, as
 
 ##### RAK13005 Connector Crimping Mechanism
 
-The RAK13005 features a fast-crimping terminal connector to simplify and ensure the wiring process on the fields. The fast-crimping terminal can support cable with a width between 20&nbsp;AWG to 24&nbsp;AWG. The usual stripping length is around 6 to 7&nbsp;mm. 
+The RAK13005 features a fast-crimping terminal connector to simplify and ensure the wiring process on the fields. The fast-crimping terminal can support cable with a width between 20&nbsp;AWG to 24&nbsp;AWG. The usual stripping length is around 6 to 7&nbsp;mm.
 
 As shown in **Figure 4**, during the crimping process, you should first press down and maintain the spring head of the crimping terminal firmly, then insert the stripped cable head into the corresponding connector’s hole. Once inserted correctly, release the spring head, and the crimping process is completed.
 
@@ -88,9 +88,9 @@ As shown in **Figure 4**, during the crimping process, you should first press do
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/16.removing-screws.png"
@@ -144,7 +144,7 @@ These are the quick links that go directly to the software guide for the specifi
 
 ##### Arduino Setup
 
-**Figure 8** is an illustration on how to use two RAK13005 LIN modules for communication applications. One RAK13005 is configured as **Controller** and the other RAK13005 is configured as **Peripheral**. The SMD resistors that set the mode are highlighted in a yellow box. 
+**Figure 8** is an illustration on how to use two RAK13005 LIN modules for communication applications. One RAK13005 is configured as **Controller** and the other RAK13005 is configured as **Peripheral**. The SMD resistors that set the mode are highlighted in a yellow box.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/RAK13005-LIN-Controller-and-Peripheral-Connection.png"
@@ -152,7 +152,7 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Two RAK13005 Interconnection for Controller and Peripheral mode"
 />
 
-1. Select the RAK4631 WisBlock Core. 
+1. Select the RAK4631 WisBlock Core.
 
 - Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) to find the RAK4631 in the Arduino Boards Manager.
 
@@ -162,7 +162,7 @@ These are the quick links that go directly to the software guide for the specifi
   caption="Selecting RAK4631 as WisBlock Core"
 />
 
-2. Next, install the **RAKwireless TLE7259** library using the Arduino Library manager. 
+2. Next, install the **RAKwireless TLE7259** library using the Arduino Library manager.
 
 - Select `Sketch` followed by `Include Library` then ` Manage Libraries`.
 
@@ -173,7 +173,7 @@ These are the quick links that go directly to the software guide for the specifi
 />
 
 - Search for **RAKwireless TLE7259** on the Library Manager text box.
-- Select the latest version of the library then click **Install** button. 
+- Select the latest version of the library then click **Install** button.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/tle7259.png"
@@ -274,7 +274,7 @@ If you experience any error in compiling an example sketch, check the updated co
 
 ##### Arduino Setup
 
-**Figure 22** is an illustration on how to use two RAK13005 LIN modules for communication application. One RAK13005 is configured as **Controller** and the other RAK13005 is configured as **Peripheral**. The SMD resistors that set the mode are highlighted in a yellow box. 
+**Figure 22** is an illustration on how to use two RAK13005 LIN modules for communication application. One RAK13005 is configured as **Controller** and the other RAK13005 is configured as **Peripheral**. The SMD resistors that set the mode are highlighted in a yellow box.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/RAK13005-LIN-Controller-and-Peripheral-Connection.png"
@@ -304,7 +304,7 @@ If you experience any error in compiling an example sketch, check the updated co
 
 - Search for RAKwireless TLE7259 on Library Manager text box.
 
-- Select the latest version then click **Install** button. 
+- Select the latest version then click **Install** button.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/tle7259.png"
@@ -411,7 +411,7 @@ If you experience any error in compiling an example sketch, check the updated co
 
 ##### Arduino Setup
 
-**Figure 36** is an illustration on how to use two RAK13005 LIN modules for communication application. One RAK13005 is configured as **Controller** and the other RAK13005 is configured as **Peripheral**. The SMD resistors that set the mode are highlighted in a yellow box. 
+**Figure 36** is an illustration on how to use two RAK13005 LIN modules for communication application. One RAK13005 is configured as **Controller** and the other RAK13005 is configured as **Peripheral**. The SMD resistors that set the mode are highlighted in a yellow box.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/RAK13005-LIN-Controller-and-Peripheral-Connection.png"
@@ -419,7 +419,7 @@ If you experience any error in compiling an example sketch, check the updated co
   caption="Two RAK13005 Interconnection for Controller and Peripheral mode"
 />
 
-1. Select the RAK11300 WisBlock Core. 
+1. Select the RAK11300 WisBlock Core.
 
 - Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) to find the RAK11300 in the Arduino Boards Manager.
 
@@ -429,7 +429,7 @@ If you experience any error in compiling an example sketch, check the updated co
   caption="Selecting RAK11300 as WisBlock Core"
 />
 
-2. Next, install the **RAKwireless TLE7259** library using Arduino Library manager. 
+2. Next, install the **RAKwireless TLE7259** library using Arduino Library manager.
 
 - Select `Sketch` followed by `Include Library` then ` Manage Libraries`.
 
@@ -439,9 +439,9 @@ If you experience any error in compiling an example sketch, check the updated co
   caption="Open Arduino Library Manager"
 />
 
-- Search for RAKwireless TLE7259 on Library Manager text box. 
+- Search for RAKwireless TLE7259 on Library Manager text box.
 
-- Select the latest version of the library then click **Install** button. 
+- Select the latest version of the library then click **Install** button.
 
 <rk-img
   src="/assets/images/wisblock/rak13005/quickstart/rak11300-tle7259.png"

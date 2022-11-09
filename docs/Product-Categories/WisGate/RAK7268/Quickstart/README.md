@@ -15,8 +15,8 @@ tags:
 
 ### What Do You Need?
 
-1. **RAK7268/RAK7268C WisGate Edge Lite 2**
-2. Ethernet Cable (RJ-45 Port) – for Ethernet connection
+1. [**RAK7268/RAK7268C WisGate Edge Lite 2**](https://store.rakwireless.com/products/wisgate-edge-lite-2-rak7268-rak7268c?utm_source=WisGateRAK7268&utm_medium=Document&utm_campaign=BuyFromStore)
+2. [Ethernet Cable](https://store.rakwireless.com/products/ethernet-cable-gland?utm_source=EthernetCableGland&utm_medium=Document&utm_campaign=BuyFromStore) (RJ-45 Port) – for Ethernet connection
 3. A Windows/MacOS/Linux computer
 
 :::warning ⚠️ WARNING

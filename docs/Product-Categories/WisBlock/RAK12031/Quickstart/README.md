@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK12031
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK12031 Quick Start Guide
@@ -19,12 +19,12 @@ Before going through each and every step on using the RAK12031 WisBlock module, 
 #### Hardware
 
 - [RAK12031 WisBlock T-Beam-Fork Sensor Module](https://store.rakwireless.com/products/rak12028-rak12031-wisblock-through-beam-fork-sensor?utm_source=RAK12031&utm_medium=Document&utm_campaign=BuyFromStore)
-- [RAK19005 FPC Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK19005 FPC Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005?utm_source=RAK19005&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -68,9 +68,9 @@ As shown in **Figure 3**, the location for Slots A, B, C, and D are properly mar
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock module is the same. 
+The procedure in disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12031/quickstart/removing-screw.png"
@@ -167,11 +167,11 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 volatile uint32_t g_pulse_count=0;
 
-void setup() 
+void setup()
 {
   pinMode(WB_IO2, OUTPUT);
   digitalWrite(WB_IO2, HIGH); // Enable power supply.
-  
+
   time_t timeout = millis();
   Serial.begin(115200);
   while (!Serial)
@@ -189,7 +189,7 @@ void setup()
 
   pinMode(SINGAL_PIN,INPUT_PULLDOWN);  // Connect with TBF out put pin.
   attachInterrupt(digitalPinToInterrupt(SINGAL_PIN) ,pulse_INT_call_back ,FALLING);  // Enable interrupts.FALLING CHANGE
-  
+
   Serial.println("Waiting for motion.");
 }
 
@@ -198,7 +198,7 @@ void pulse_INT_call_back()
   g_pulse_count++;
 }
 
-void loop() 
+void loop()
 {
   float rotationl_speed = 0;
   Serial.print("Pulse count:");
@@ -245,7 +245,7 @@ If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the *
   caption="Uploading the RAK12031 example code"
 />
 
-5. When you have successfully uploaded the example sketch, open the serial monitor of the Arduino IDE and set the baud rate correctly. You will be able to see the sensor's output, as shown in **Figure 12**. Try to place an object in the middle of the of T-Beam-Fork Sensor. If the presence of the object and the rotation speed, then your RAK12031 is properly communicating with the WisBlock core. 
+5. When you have successfully uploaded the example sketch, open the serial monitor of the Arduino IDE and set the baud rate correctly. You will be able to see the sensor's output, as shown in **Figure 12**. Try to place an object in the middle of the of T-Beam-Fork Sensor. If the presence of the object and the rotation speed, then your RAK12031 is properly communicating with the WisBlock core.
 
 <rk-img
   src="/assets/images/wisblock/rak12031/quickstart/rak12031-data.png"

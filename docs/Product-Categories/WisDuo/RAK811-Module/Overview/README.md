@@ -18,7 +18,7 @@ Thank you for choosing **RAK811 WisDuo LPWAN Module** in your awesome IoT Projec
 * [Quick Start Guide](/Product-Categories/WisDuo/RAK811-Module/Quickstart/)
 * [AT Command Manual](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/)
 * <a href="/RUI/" target="_blank">RUI Customized Development</a> - RAK811 module supports RUI (RAKwireless Unified Interface) Customized Development.
-* [Low Level Development](/Product-Categories/WisDuo/RAK811-Module/Low-Level-Development/) - RAK811 module supports low level development where you can create customized firmware using the RAK811 hardware. You can either use the RUI(RAK Unified Interface) or develop your own firmware for STM32.
+* [Low Level Development](/Product-Categories/WisDuo/RAK811-Module/Low-Level-Development/) - RAK811 module supports low level development where you can create customized firmware using the RAK811 hardware. You can either use the RUI (RAK Unified Interface) or develop your own firmware for STM32.
 * [RAK811 for Arduino Hardware](/Product-Categories/WisDuino/) - The core module of WisDuino is the RAK811 LPWAN Module and its interface supports Arduino standard headers. For more info about the Arduino library for RAK811, refer to the [Official RAK811 Arduino Library](https://github.com/RAKWireless/WisNode-Arduino-Library).
 * [Arduino Open Source Framework via STM32 Core](https://github.com/RAKWireless/Evaluation_Boards/tree/master/RAK811) - You can directly program the STM32 inside RAK811 via Arduino platform so you will not need any external MCU.
 * [Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#rak811-wisduo-lpwan-module-datasheet)

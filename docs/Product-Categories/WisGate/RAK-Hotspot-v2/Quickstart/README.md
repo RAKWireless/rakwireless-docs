@@ -15,7 +15,7 @@ tags:
 
 ### What Do You Need?
 
-1. **RAK Hotspot v2**
+1. [**RAK Hotspot v2**](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore)
 2. 32&nbsp;GB microSD Card (included)
 3. USB Type-C Power Adapter (included)
 

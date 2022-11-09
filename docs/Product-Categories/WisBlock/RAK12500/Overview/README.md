@@ -9,7 +9,7 @@ tags:
     - RAK12500
     - u-blox
     - ZOE-M8Q
-    - 
+    -
 ---
 
 # RAK12500 WisBlock GNSS Location Module
@@ -19,13 +19,12 @@ Thank you for choosing **RAK12500 WisBlock GNSS Location Module** in your awesom
 * [RAK12500 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK12500 GNSS Location Module 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK12500.stp)
 * [24-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 
-**Examples**: 
+**Examples**:
 
 For All WisBlock Core Modules:
 
@@ -38,7 +37,7 @@ The RAK12500 WisBlock GNSS Location Module is designed to be part of a productio
 
 The RAK12500 uses the u-blox ZOE-M8Q module. It supports a wide variety of satellite data protocols such as GPS, GLONASS, QZSS, and BeiDou. This ensures the retrieval of precise location data. The module features exceptional performance, high sensitivity, and minimal acquisition time. A very suitable module for your low-power IoT solution needs.
 
-## Product Features  
+## Product Features
 
 * **Module Specification**
     * Uses the very accurate GNSS Module: **u-blox ZOE-M8Q chip**
@@ -51,15 +50,15 @@ The RAK12500 uses the u-blox ZOE-M8Q module. It supports a wide variety of satel
     * Operating Voltage: 3.3&nbsp;V
     * Operating Current: < 15&nbsp;µA
     * Chipset: u-blox ZOE-M8Q
-  
+
 * **Size**
     * Module Size: 10&nbsp;mm x 23&nbsp;mm
 
-## Prerequisites  
+## Prerequisites
 
 To use the **RAK12500 WisBlock GNSS Location Module**, you need a **Wisblock Base** to plug the module in. The **Wisblock Base** provides power supply to the **RAK12500** GNSS Location Module. Also, you need a **WisBlock Core** to control your module.
 
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 Make sure to fix the module with the matching screws to ensure intact placement and connection.
 :::

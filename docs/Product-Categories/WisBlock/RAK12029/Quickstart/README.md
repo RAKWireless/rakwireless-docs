@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK12029
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK12029 Quick Start Guide
@@ -18,14 +18,13 @@ Before going through each and every step on using the RAK12029 WisBlock Inductiv
 
 #### Hardware
 
-- [RAK12029 WisBlock Inductive Sensor Module](https://store.rakwireless.com/products/rak12029-wisblock-inductive-sensor)
-- [RAK19008 WisBlock IO Extension Cable (optional)](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008)
+- [RAK12029 WisBlock Inductive Sensor Module](https://store.rakwireless.com/products/rak12029-wisblock-inductive-sensor?utm_source=RAK12029&utm_medium=Document&utm_campaign=BuyFromStore)
+- [RAK19008 WisBlock IO Extension Cable (optional)](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008?utm_source=RAK19008&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) with IO slot
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable) (required)
-- [Solar charger](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable) (optional)
-
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 #### Software
 
 - Download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
@@ -59,9 +58,9 @@ As shown in **Figure 2**, the location for the IO slot is properly marked by sil
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock module is the same. 
+The procedure in disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12029/quickstart/16.removing-screws.png"
@@ -86,7 +85,7 @@ The procedure in disassembling any type of WisBlock module is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12029 uses I2C and IO pins that can cause possible conflict with other modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12029 uses I2C and IO pins that can cause possible conflict with other modules.
 :::
 
 After all this setup, you can now connect the battery(optional) and USB cable to start programming your WisBlock Core.

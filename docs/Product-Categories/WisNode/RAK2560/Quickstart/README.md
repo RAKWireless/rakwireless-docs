@@ -19,7 +19,7 @@ Before going through each and every step on using the RAK2560 WisNode Sensor Hub
 
 #### Hardware Tools
 
-- RAK2560 WisNode Sensor Hub
+- [RAK2560 WisNode Sensor Hub](https://store.rakwireless.com/products/sensor-hub?utm_source=RAK2560WisNodeSense&utm_medium=Document&utm_campaign=BuyFromStore)
 - Accessories - Sensor Probe, Probe IO, or a combination (numbers and variations depending on the use case)
 - Additional accessories - Probe Cable, Probe Splitter, power supply, and others (numbers and variations depending on the use case)
 - An Android or iOS mobile device with Bluetooth and NFC

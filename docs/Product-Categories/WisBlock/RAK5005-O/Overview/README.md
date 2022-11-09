@@ -17,7 +17,6 @@ Thank you for choosing **RAK5005-O WisBlock Base Board** in your awesome IoT Pro
 * [RAK5005-O Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK5005-O Baseboard Installation Guide](../../../../Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/)
 * [RAK5005-O 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK5005-O.stp)
@@ -53,21 +52,21 @@ It has as well two users' definable LEDs and one power supply/charging indicator
 
 ## Product Features
 
-* **Power supply**     
-    * **RAK5005-O** supports both 5&nbsp;V USB and 3.7&nbsp;V rechargeable battery as power supply. In addition, it has a connector for a 5&nbsp;V solar panel to recharge the battery in a remote solution.     
-    * Control of power consumption    
-    **RAK5005-O** has an electronic power switch for the supply to the **WisBlock modules**. The power supply for some of the **WisBlock Sensor** boards and most of the **WisBlock modules** boards can be controlled by the **WisBlock Core** modules application.    
+* **Power supply**
+    * **RAK5005-O** supports both 5&nbsp;V USB and 3.7&nbsp;V rechargeable battery as power supply. In addition, it has a connector for a 5&nbsp;V solar panel to recharge the battery in a remote solution.
+    * Control of power consumption
+    **RAK5005-O** has an electronic power switch for the supply to the **WisBlock modules**. The power supply for some of the **WisBlock Sensor** boards and most of the **WisBlock modules** boards can be controlled by the **WisBlock Core** modules application.
 
-* **Size**    
+* **Size**
     * **RAK5005-O** has a size of only 30 x 60&nbsp;mm which lets you create solutions that fit into the smallest housings.
 
 
-## Prerequisites 
+## Prerequisites
 
 WisBlock Base is amazingly easy to use and requires only a USB cable to start developing with the system.
 
-:::warning ⚠️ WARNING    
-- Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. Do not use other types of batteries with the system.    
-- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.    
+:::warning ⚠️ WARNING
+- Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. Do not use other types of batteries with the system.
+- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
 
 :::

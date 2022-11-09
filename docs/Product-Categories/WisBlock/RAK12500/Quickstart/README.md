@@ -5,13 +5,11 @@ tags:
   - quickstart
   - wisblock
   - RAK12500
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK12500 Quick Start Guide
-
-
 
 ## Prerequisite
 
@@ -21,12 +19,12 @@ Before going through each and every step on using the RAK12500 GNSS Location Wis
 
 #### Hardware
 
-- [RAK12500 WisBlock GNSS Location Module](https://store.rakwireless.com/collections/wisblock-sensor/products/wisblock-gnss-location-module-rak12500)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK12500 WisBlock GNSS Location Module](https://store.rakwireless.com/products/wisblock-gnss-location-module-rak12500?utm_source=WisBlockRAK12500&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- Li-Ion/LiPo battery (optional)
-- Solar charger (optional)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -70,9 +68,9 @@ As shown in **Figure 2**, the location for Slot A and C are properly marked by s
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12500/quickstart/16.removing-screws.png"
@@ -107,7 +105,7 @@ Another important part component of RAK12500 is the GPS antenna. You need to ens
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12500 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12500 uses I2C communication lines, and it can cause possible conflict especially on some IO modules.
 :::
 
 After all this setup, you can now connect the battery and USB cable to start programming your WisBlock Core.
@@ -122,7 +120,7 @@ After all this setup, you can now connect the battery and USB cable to start pro
 
 ### Software Configuration and Example
 
-The RAK12500 is a very accurate GNSS Module that contains a u-blox ZOE-M8Q chip. The ZOE-M8Q features exceptional performance, high sensitivity, and minimal acquisition time, with digital I2C/SPI serial interface standard output. 
+The RAK12500 is a very accurate GNSS Module that contains a u-blox ZOE-M8Q chip. The ZOE-M8Q features exceptional performance, high sensitivity, and minimal acquisition time, with digital I2C/SPI serial interface standard output.
 
 #### Initial Test of the RAK12500 WisBlock Module
 
@@ -151,7 +149,7 @@ The RAK12500 is a very accurate GNSS Module that contains a u-blox ZOE-M8Q chip.
   caption="Selecting RAK11300 as the WisBlock Core"
 />
 
-3. The [Basic Sample Code for RAK12500](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12500_GPS_ZOE-M8Q) in Github will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 10** to **Figure 12**. 
+3. The [Basic Sample Code for RAK12500](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12500_GPS_ZOE-M8Q) in Github will work on all WisBlock Core. You can open the example codes depending on your WisBlock Core, as shown in **Figure 10** to **Figure 12**.
 
 <rk-img
   src="/assets/images/wisblock/rak12500/quickstart/rak4631_example.png"
@@ -221,6 +219,6 @@ The GPS antenna needs to have an unobstructed view of the sky to be able to rece
 />
 
 
-   
+
 
 

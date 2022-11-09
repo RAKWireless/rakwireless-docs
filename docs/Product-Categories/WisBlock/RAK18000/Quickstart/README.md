@@ -5,12 +5,11 @@ tags:
   - quickstart
   - wisblock
   - RAK18000
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK18000 Quick Start Guide
-
 
 
 ## Prerequisite
@@ -21,23 +20,23 @@ Before going through each and every step on using the RAK18000 WisBlock module, 
 
 #### Hardware
 
-- [RAK18000 WisBlock PDM Stereo Microphone Module](https://store.rakwireless.com/collections/wisblock-sensor/products/wisblock-microphone-module-rak18000)
+- [RAK18000 WisBlock PDM Stereo Microphone Module](https://store.rakwireless.com/products/wisblock-microphone-module-rak18000?utm_source=WisBlockRAK18000&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) with IO slot
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- Li-Ion/LiPo battery (optional)
-- Solar charger (optional)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
 - Download and install [ArduinoIDE](https://www.arduino.cc/en/Main/Software).
-- To add the RAKwireless Core boards on your Arduino board, install the RAKwireless Arduino BSP. Follow the steps in the [Github repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+- To add the RAKwireless Core boards on your Arduino board, install the RAKwireless Arduino BSP. Follow the steps in the [GitHub repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
 ## Product Configuration
 
 ### Hardware Setup
 
-RAK18000 is a WisBlock Sensor module that extends the WisBlock system with sound sensing capability. 
+RAK18000 is a WisBlock Sensor module that extends the WisBlock system with sound sensing capability.
 
 For more information about RAK18000, refer to the [Datasheet](../Datasheet/).
 
@@ -63,9 +62,9 @@ As shown in **Figure 2**, the location for the IO slot is properly marked by sil
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak18000/quickstart/16.removing-screws.png"
@@ -90,7 +89,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK18000 uses I2C communication lines, and it can cause possible conflict especially on other WisBlock Modules connected to Slot A to D of the WisBlock Base. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK18000 uses I2C communication lines, and it can cause possible conflict especially on other WisBlock Modules connected to Slot A to D of the WisBlock Base.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
@@ -105,7 +104,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 ### Software Configuration and Example
 
-The RAK18000 is based on two MP34DT06J microphone modules. The RAK18000 is a digital microphone module that is designed to detect sounds and to support left and right channels. It is also capable of changing microphone orientation on the left or right channel through the switch resistor. 
+The RAK18000 is based on two MP34DT06J microphone modules. The RAK18000 is a digital microphone module that is designed to detect sounds and to support left and right channels. It is also capable of changing microphone orientation on the left or right channel through the switch resistor.
 
 #### Initial Test of the RAK18000 WisBlock Module
 
@@ -137,7 +136,7 @@ The RAK18000 is based on two MP34DT06J microphone modules. The RAK18000 is a dig
   caption="Selecting RAK11300 as the WisBlock Core"
 />
 
-3. The Basic Sample Code for RAK18000 in Github will work depending on your WisBlock Core. You can open the example codes as shown in **Figure 9** to **Figure 11**. 
+3. The Basic Sample Code for RAK18000 in Github will work depending on your WisBlock Core. You can open the example codes as shown in **Figure 9** to **Figure 11**.
 
 **Using RAK4631 WisBlock Core**
 

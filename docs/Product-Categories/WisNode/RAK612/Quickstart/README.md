@@ -17,7 +17,7 @@ tags:
 
 ### What do you need?
 
-1. **RAK612 WisNode Button**
+1. [**RAK612 WisNode Button**](https://store.rakwireless.com/products/rak612-lora-button?utm_source=RAK612WisNodeButton&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Micro USB Cable
 3. Gateway in Range for Testing
 4. A Windows PC

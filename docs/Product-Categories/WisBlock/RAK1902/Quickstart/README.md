@@ -1,8 +1,8 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK1902. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
 rak_img: /assets/images/wisblock/rak1902/overview/RAK1902_home.png
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 tags:
   - quickstart
   - wisblock
@@ -21,13 +21,13 @@ Before going through each and every step on using the RAK1902 WisBlock module, m
 
 #### Hardware
 
-- [RAK1902 WisBlock Barometer Pressure Sensor Module](https://store.rakwireless.com/collections/wisblock-sensor/products/rak1902-kps22hb-barometric-pressure-sensor)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK1902 WisBlock Barometer Pressure Sensor Module](https://store.rakwireless.com/products/rak1902-kps22hb-barometric-pressure-sensor?utm_source=RAK1902&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [RAK19005 WisBlock Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005)
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [RAK19005 WisBlock Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005?utm_source=RAK19005&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -38,7 +38,7 @@ Before going through each and every step on using the RAK1902 WisBlock module, m
 
 ### Hardware Setup
 
-WisBlock can integrate this module, which calculates temperature and makes it easy to build up a barometric air pressure data acquisition system. 
+WisBlock can integrate this module, which calculates temperature and makes it easy to build up a barometric air pressure data acquisition system.
 
 For more information about the RAK1902, refer to the [Datasheet](../Datasheet/).
 
@@ -69,9 +69,9 @@ As shown in **Figure 2**, the location for Slot A, B, C, and D are properly mark
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak1902/quickstart/16.removing-screws.png"
@@ -96,7 +96,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1902 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
+If you will connect other modules to remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1902 uses I2C communication lines, and it can cause possible conflict especially on some IO modules.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
@@ -181,12 +181,12 @@ void setup(void) {
   Serial.println("Adafruit LPS22 test!");
 
   // Try to initialize!
-  if (!g_lps22hb.begin_I2C(0x5c)) 
+  if (!g_lps22hb.begin_I2C(0x5c))
   {
     Serial.println("Failed to find LPS22 chip");
-    while (1) 
-    { 
-      delay(10); 
+    while (1)
+    {
+      delay(10);
     }
   }
 
@@ -195,17 +195,17 @@ void setup(void) {
   g_lps22hb.setDataRate(LPS22_RATE_10_HZ);
   Serial.print("Data rate set to: ");
 
-  switch (g_lps22hb.getDataRate()) 
+  switch (g_lps22hb.getDataRate())
   {
-    case LPS22_RATE_ONE_SHOT: Serial.println("One Shot / Power Down"); 
+    case LPS22_RATE_ONE_SHOT: Serial.println("One Shot / Power Down");
       break;
-    case LPS22_RATE_1_HZ: Serial.println("1 Hz"); 
+    case LPS22_RATE_1_HZ: Serial.println("1 Hz");
       break;
-    case LPS22_RATE_10_HZ: Serial.println("10 Hz"); 
+    case LPS22_RATE_10_HZ: Serial.println("10 Hz");
       break;
-    case LPS22_RATE_25_HZ: Serial.println("25 Hz"); 
+    case LPS22_RATE_25_HZ: Serial.println("25 Hz");
       break;
-    case LPS22_RATE_50_HZ: Serial.println("50 Hz"); 
+    case LPS22_RATE_50_HZ: Serial.println("50 Hz");
       break;
 
   }
@@ -269,8 +269,8 @@ If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the *
 
 #### LoRaWAN Weather Monitoring with RAK1902
 
-For WisBlock Core RAK4630, it has an example for [LoRaWAN Weather Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Weather_Monitoring) with RAK1902 Pressure Module. 
-   
+For WisBlock Core RAK4630, it has an example for [LoRaWAN Weather Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Weather_Monitoring) with RAK1902 Pressure Module.
+
 <rk-img
   src="/assets/images/wisblock/rak1902/quickstart/lorawan_weather.png"
   width="100%"

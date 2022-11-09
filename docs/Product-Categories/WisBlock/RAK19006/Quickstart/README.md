@@ -5,12 +5,11 @@ tags:
   - quickstart
   - wisblock
   - RAK19006
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK19006 Quick Start Guide
-
 
 
 ## Prerequisite
@@ -19,16 +18,16 @@ next: ../Datasheet/
 
 Before going through each and every step on using the RAK19006 WisBlock module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
-- [RAK19006 WisBlock Wireless Charger Module](https://store.rakwireless.com/products/wireless-charge-module-rak19006?_pos=1&_sid=80a102f08&_ss=r)
+- [RAK19006 WisBlock Wireless Charger Module](https://store.rakwireless.com/products/wireless-charge-module-rak19006?_pos=1&_sid=80a102f08&_ss=r?utm_source=RAK19006&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -78,9 +77,9 @@ The RAK19006 module can be mounted on the IO slot of the WisBlock Base board, as
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak19006/quickstart/removing_screw.png"
@@ -161,8 +160,8 @@ These are the quick links that go directly to the software guide for the specifi
 #include <Wire.h>
 #include <U8g2lib.h>       //Click here to get the library: http://librarymanager/All#u8g2
 
-#define LED1  35 
-#define LED2  36 
+#define LED1  35
+#define LED2  36
 
 #define PIN_VBAT A0 //Analog pin to read battery level definition
 /** Millivolt per LSB constant value = 3.0V ADC range and 12-bit ADC resolution = 3000mV/4096 */
@@ -176,7 +175,7 @@ These are the quick links that go directly to the software guide for the specifi
 
 U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0);
 
-float g_powerVoltage = 0;   
+float g_powerVoltage = 0;
 
 void oled_show();
 void readVBAT_init();
@@ -202,16 +201,16 @@ void setup()
     {
        break;
     }
-  } 
-  pinMode(LED1, OUTPUT);  
-  pinMode(LED2, OUTPUT);   
-  
+  }
+  pinMode(LED1, OUTPUT);
+  pinMode(LED2, OUTPUT);
+
   digitalWrite(LED1, LOW);
   digitalWrite(LED2, LOW);
 }
 
 void loop()
-{  
+{
   led1_on();
   led2_off();
   get_BATvoltage();
@@ -242,7 +241,7 @@ void oled_show()
   char data[32] = {0};
   u8g2.clearBuffer();         // clear the internal memory
   u8g2.setFont(u8g2_font_ncenB10_tr); // choose a suitable font
-  
+
   u8g2.drawStr(3, 15, "Power  voltage:");
   memset(data, 0, sizeof(data));
   sprintf(data, "%3.2f V",g_powerVoltage);
@@ -264,16 +263,16 @@ void get_BATvoltage()
   unsigned int read_temp[10] = {0};
   unsigned char i = 0;
   unsigned int adc_max = 0;
-  unsigned int adc_min = 4095; 
+  unsigned int adc_min = 4095;
   average_value = analogRead(PIN_VBAT);
   for(i=0;i<10;i++)
   {
     read_temp[i] = analogRead(PIN_VBAT);
-    if(read_temp[i] < adc_min)  
+    if(read_temp[i] < adc_min)
       {
         adc_min = read_temp[i];
       }
-    if(read_temp[i] > adc_max)  
+    if(read_temp[i] > adc_max)
       {
         adc_max = read_temp[i];
       }
@@ -281,13 +280,13 @@ void get_BATvoltage()
 //     Serial.println(read_temp[i]);
 //     delay(1);
   }
-  average_value = (sum - adc_max - adc_min) >> 3; 
+  average_value = (sum - adc_max - adc_min) >> 3;
 //  Serial.println(average_value);
-  g_powerVoltage = average_value * REAL_VBAT_MV_PER_LSB * 0.001;  
+  g_powerVoltage = average_value * REAL_VBAT_MV_PER_LSB * 0.001;
   Serial.print("The battery voltage is:");
   Serial.print(g_powerVoltage,2);
   Serial.println(" V");
-} 
+}
 
 ```
 ::: tip 📝 NOTE
@@ -362,7 +361,7 @@ If you experience any error in compiling the example sketch, check the updated c
 
 #define PIN_VBAT WB_A0  //Analog pin to read battery level definition
 /** Millivolt per LSB constant value = 3.3V ADC range and 12-bit ADC resolution = 3300mV/4096 */
-#define VBAT_MV_PER_LSB (0.8056640625F) 
+#define VBAT_MV_PER_LSB (0.8056640625F)
 ///** Voltage divider constant = 1.5M + 1M voltage divider on VBAT = (1.5M / (1M + 1.5M)) */
 #define VBAT_DIVIDER (0.6F)
 /** Compensation factor for the VBAT divider */
@@ -372,7 +371,7 @@ If you experience any error in compiling the example sketch, check the updated c
 
 U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0);
 
-float g_powerVoltage = 0;   
+float g_powerVoltage = 0;
 
 void oled_show();
 void readVBAT_init();
@@ -398,16 +397,16 @@ void setup()
     {
        break;
     }
-  } 
-  pinMode(LED1, OUTPUT);  
-  pinMode(LED2, OUTPUT);   
-  
+  }
+  pinMode(LED1, OUTPUT);
+  pinMode(LED2, OUTPUT);
+
   digitalWrite(LED1, LOW);
   digitalWrite(LED2, LOW);
 }
 
 void loop()
-{  
+{
   led1_on();
   led2_off();
   get_BATvoltage();
@@ -438,7 +437,7 @@ void oled_show()
   char data[32] = {0};
   u8g2.clearBuffer();         // clear the internal memory
   u8g2.setFont(u8g2_font_ncenB10_tr); // choose a suitable font
-  
+
   u8g2.drawStr(3, 15, "Power  voltage:");
   memset(data, 0, sizeof(data));
   sprintf(data, "%3.2f V",g_powerVoltage);
@@ -448,7 +447,7 @@ void oled_show()
 void readVBAT_init()
 {
   adcAttachPin(PIN_VBAT);
-  analogSetAttenuation(ADC_11db); 
+  analogSetAttenuation(ADC_11db);
    // Set the resolution to 12-bit (0..4095)
   analogReadResolution(12); // Can be 8, 10, 12 or 14
   analogSetWidth(12); //Sets the sampling bit and read resolution 9-12
@@ -462,16 +461,16 @@ void get_BATvoltage()
   unsigned int read_temp[10] = {0};
   unsigned char i = 0;
   unsigned int adc_max = 0;
-  unsigned int adc_min = 4095; 
-  average_value = analogRead(PIN_VBAT);  
+  unsigned int adc_min = 4095;
+  average_value = analogRead(PIN_VBAT);
   for(i=0;i<10;i++)
   {
-    read_temp[i] = analogRead(PIN_VBAT);    
-    if(read_temp[i] < adc_min)  
+    read_temp[i] = analogRead(PIN_VBAT);
+    if(read_temp[i] < adc_min)
       {
         adc_min = read_temp[i];
       }
-    if(read_temp[i] > adc_max)  
+    if(read_temp[i] > adc_max)
       {
         adc_max = read_temp[i];
       }
@@ -479,13 +478,13 @@ void get_BATvoltage()
 //     Serial.println(read_temp[i]);
 //     delay(1);
   }
-  average_value = (sum - adc_max - adc_min) >> 3; 
-//  Serial.println(average_value); 
-  g_powerVoltage = average_value * REAL_VBAT_MV_PER_LSB * 0.001;  
+  average_value = (sum - adc_max - adc_min) >> 3;
+//  Serial.println(average_value);
+  g_powerVoltage = average_value * REAL_VBAT_MV_PER_LSB * 0.001;
   Serial.print("The battery voltage is:");
   Serial.print(g_powerVoltage,2);
   Serial.println(" V");
-} 
+}
 
 ```
 ::: tip 📝 NOTE
@@ -530,7 +529,7 @@ RAK11200 requires the **Boot0** pin to be configured properly first before uploa
   src="/assets/images/wisblock/rak19006/quickstart/logs.png"
   width="50%"
   caption="RAK19006 Reading logs"
-/> 
+/>
 
 #### RAK19006 in RAK11310 WisBlock Core Guide
 
@@ -559,8 +558,8 @@ RAK11200 requires the **Boot0** pin to be configured properly first before uploa
 #include <Wire.h>
 #include <U8g2lib.h>       //Click here to get the library: http://librarymanager/All#u8g2
 
-#define LED1  23 
-#define LED2  24 
+#define LED1  23
+#define LED2  24
 
 #define PIN_VBAT WB_A0 //Analog pin to read battery level definition
 /** Millivolt per LSB constant value = 3.3V ADC range and 12-bit ADC resolution = 3300mV/4096 */
@@ -574,7 +573,7 @@ RAK11200 requires the **Boot0** pin to be configured properly first before uploa
 
 U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0);
 
-float g_powerVoltage = 0;   
+float g_powerVoltage = 0;
 
 void oled_show();
 void readVBAT_init();
@@ -600,16 +599,16 @@ void setup()
     {
        break;
     }
-  } 
-  pinMode(LED1, OUTPUT);  
-  pinMode(LED2, OUTPUT);   
-  
+  }
+  pinMode(LED1, OUTPUT);
+  pinMode(LED2, OUTPUT);
+
   digitalWrite(LED1, LOW);
   digitalWrite(LED2, LOW);
 }
 
 void loop()
-{  
+{
   led1_on();
   led2_off();
   get_BATvoltage();
@@ -640,7 +639,7 @@ void oled_show()
   char data[32] = {0};
   u8g2.clearBuffer();         // clear the internal memory
   u8g2.setFont(u8g2_font_ncenB10_tr); // choose a suitable font
-  
+
   u8g2.drawStr(3, 15, "Power  voltage:");
   memset(data, 0, sizeof(data));
   sprintf(data, "%3.2f V",g_powerVoltage);
@@ -660,16 +659,16 @@ void get_BATvoltage()
   unsigned int read_temp[10] = {0};
   unsigned char i = 0;
   unsigned int adc_max = 0;
-  unsigned int adc_min = 4095; 
+  unsigned int adc_min = 4095;
   average_value = analogRead(PIN_VBAT);
   for(i=0;i<10;i++)
   {
     read_temp[i] = analogRead(PIN_VBAT);
-    if(read_temp[i] < adc_min)  
+    if(read_temp[i] < adc_min)
       {
         adc_min = read_temp[i];
       }
-    if(read_temp[i] > adc_max)  
+    if(read_temp[i] > adc_max)
       {
         adc_max = read_temp[i];
       }
@@ -677,14 +676,14 @@ void get_BATvoltage()
 //     Serial.println(read_temp[i]);
 //     delay(1);
   }
-  average_value = (sum - adc_max - adc_min) >> 3; 
+  average_value = (sum - adc_max - adc_min) >> 3;
   Serial.printf("The ADC value is:%d\r\n",average_value);
 //  Serial.println(average_value);
-  g_powerVoltage = average_value * REAL_VBAT_MV_PER_LSB * 0.001;  
+  g_powerVoltage = average_value * REAL_VBAT_MV_PER_LSB * 0.001;
   Serial.print("The battery voltage is:");
   Serial.print(g_powerVoltage,2);
   Serial.println(" V");
-} 
+}
 
 ```
 ::: tip 📝 NOTE
@@ -725,4 +724,4 @@ If you experience any error in compiling the example sketch, check the updated c
   src="/assets/images/wisblock/rak19006/quickstart/logs.png"
   width="50%"
   caption="RAK19006 Reading logs"
-/> 
+/>

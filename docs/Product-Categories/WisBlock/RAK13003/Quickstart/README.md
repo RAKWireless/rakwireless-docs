@@ -5,13 +5,11 @@ tags:
   - quickstart
   - wisblock
   - RAK13003
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK13003 Quick Start Guide
-
-
 
 ## Prerequisite
 
@@ -19,17 +17,17 @@ next: ../Datasheet/
 
 Before going through each and every step on using RAK13003 WisBlock module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
-- [RAK13003 IO Expansion Module](https://store.rakwireless.com/products/io-expansion-module-rak13003)
+- [RAK13003 IO Expansion Module](https://store.rakwireless.com/products/io-expansion-module-rak13003?utm_source=RAK13003&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - Light-emitting diode or LEDs
 - USB Cable
-- Li-Ion/LiPo battery (optional)
-- Solar charger (optional)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -74,9 +72,9 @@ The RAK13003 module can be mounted on the IO slot of the WisBlock Base board, as
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak13003/quickstart/removing_screw.png"
@@ -148,7 +146,7 @@ In the following example, you will be using the [RAK13003 WisBlock IO Expansion 
 /**
    @file RAK13003_GPIO_Expander_IO_MCP32.ino
    @author rakwireless.com
-   @brief Use IIC to expand 16 GPIO. 
+   @brief Use IIC to expand 16 GPIO.
           Configure PA input PB output, or PA output PB input.Serial port print GPIO status.
    @version 0.2
    @date 2022-5-11
@@ -157,16 +155,16 @@ In the following example, you will be using the [RAK13003 WisBlock IO Expansion 
 #include <Wire.h>
 #include "Adafruit_MCP23X17.h"  //http://librarymanager/All#Adafruit_MCP23017
 
-#define PAIN_PBOUT //PB is set as output here and PA as input.  
-//#define PAOUT_PBIN 
+#define PAIN_PBOUT //PB is set as output here and PA as input.
+//#define PAOUT_PBIN
 
 Adafruit_MCP23X17 mcp;
 
-void setup() 
-{  
+void setup()
+{
   pinMode(WB_IO2, OUTPUT);
   digitalWrite(WB_IO2, 1);
-  
+
   // Reset device
   pinMode(WB_IO4, OUTPUT);
   digitalWrite(WB_IO4, 1);
@@ -175,7 +173,7 @@ void setup()
   delay(10);
   digitalWrite(WB_IO4, 1);
   delay(10);
-  
+
   // Initialize Serial for debug output
   time_t timeout = millis();
   Serial.begin(115200);
@@ -192,13 +190,13 @@ void setup()
   }
 
   Serial.println("MCP23017 GPIO Input Output Test.");
-  
+
   mcp.begin_I2C(); // use default address 0.
-  
-#ifdef PAIN_PBOUT 
+
+#ifdef PAIN_PBOUT
   for(int i=0 ;i < 8 ;i++)
   {
-    mcp.pinMode(i, INPUT);  // PA input. 
+    mcp.pinMode(i, INPUT);  // PA input.
   }
   for(int j=8 ;j < 16 ;j++)
   {
@@ -211,7 +209,7 @@ void setup()
 
   mcp.digitalWrite(12, LOW); //PIN PB4
   mcp.digitalWrite(13, LOW); //PIN PB5
-  mcp.digitalWrite(14, LOW); //PIN PB6 
+  mcp.digitalWrite(14, LOW); //PIN PB6
   mcp.digitalWrite(15, HIGH);//PIN PB7
 
   Serial.println();
@@ -224,10 +222,10 @@ void setup()
   }
 #endif
 
-#ifdef PAOUT_PBIN 
+#ifdef PAOUT_PBIN
   for(int i=0 ;i < 8 ;i++)
   {
-    mcp.pinMode(i, OUTPUT); // PA output. 
+    mcp.pinMode(i, OUTPUT); // PA output.
   }
   for(int j=8 ;j < 16 ;j++)
   {
@@ -252,7 +250,7 @@ void setup()
   }
 #endif
 }
-void loop() 
+void loop()
 {
   mcp.digitalWrite(8, HIGH); //PIN PB0
   delay(1000);

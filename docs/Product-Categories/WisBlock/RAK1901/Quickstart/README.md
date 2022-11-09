@@ -1,8 +1,8 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK1901. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
 rak_img: /assets/images/wisblock/rak1901/overview/RAK1901_home.png
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 tags:
   - quickstart
   - wisblock
@@ -21,13 +21,13 @@ Before going through each and every step on using the RAK1901 WisBlock module, m
 
 #### Hardware
 
-- [RAK1901 WisBlock Temperature & Humidity Sensor](https://store.rakwireless.com/collections/wisblock-sensor/products/rak1901-shtc3-temperature-humidity-sensor)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK1901 WisBlock Temperature & Humidity Sensor](https://store.rakwireless.com/products/rak1901-shtc3-temperature-humidity-sensor?utm_source=RAK1901&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [RAK19005 WisBlock Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005)
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [RAK19005 WisBlock Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005?utm_source=RAK19005&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -40,7 +40,7 @@ Before going through each and every step on using the RAK1901 WisBlock module, m
 
 ### Hardware Setup
 
-WisBlock can integrate this module which makes it easy to build up an environmental temperature and humidity data acquisition system. 
+WisBlock can integrate this module which makes it easy to build up an environmental temperature and humidity data acquisition system.
 
 For more information about the RAK1901, refer to the [Datasheet](../Datasheet/).
 
@@ -71,9 +71,9 @@ As shown in **Figure 2**, the location for Slot A, B, C, and D are properly mark
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak1901/quickstart/removing-screws.png"
@@ -98,7 +98,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1901 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1901 uses I2C communication lines, and it can cause possible conflict especially on some IO modules.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
@@ -186,18 +186,18 @@ void shtc3_read_data(void)
 {
 	float Temperature = 0;
 	float Humidity = 0;
-	
+
 	g_shtc3.update();
 	if (g_shtc3.lastStatus == SHTC3_Status_Nominal) // You can also assess the status of the last command by checking the ".lastStatus" member of the object
 	{
 
 		Temperature = g_shtc3.toDegC();			          // Packing LoRa data
 		Humidity = g_shtc3.toPercent();
-		
+
 		Serial.print("RH = ");
 		Serial.print(g_shtc3.toPercent()); 			      // "toPercent" returns the percent humidity as a floating point number
 		Serial.print("% (checksum: ");
-		
+
 		if (g_shtc3.passRHcrc) 						            // Like "passIDcrc" this is true when the RH value is valid from the sensor (but not necessarily up-to-date in terms of time)
 		{
 			Serial.print("pass");
@@ -206,11 +206,11 @@ void shtc3_read_data(void)
 		{
 			Serial.print("fail");
 		}
-		
+
 		Serial.print("), T = ");
 		Serial.print(g_shtc3.toDegC()); 			        // "toDegF" and "toDegC" return the temperature as a flaoting point number in deg F and deg C respectively
 		Serial.print(" deg C (checksum: ");
-		
+
 		if (g_shtc3.passTcrc) 						            // Like "passIDcrc" this is true when the T value is valid from the sensor (but not necessarily up-to-date in terms of time)
 		{
 			Serial.print("pass");
@@ -277,7 +277,7 @@ If you experience any error in compiling the example sketch, check the updated c
 :::
 
 3. Once the example code is open, install the [SparkFun SHTC3](https://github.com/sparkfun/SparkFun_SHTC3_Arduino_Library) library by clicking the yellow highlighted link, as shown in **Figure 9** and **Figure 10**.
-   
+
 <rk-img
   src="/assets/images/wisblock/rak1901/quickstart/rak1901-lib.png"
   width="100%"

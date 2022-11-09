@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK13600
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK13600 Quick Start Guide
@@ -21,12 +21,12 @@ Before going through each and every step on using the RAK13600 WisBlock module, 
 
 #### Hardware
 
-- [RAK13600 Wisblock Interface Extension Board with Coil Antenna](https://store.rakwireless.com/products/rak13600-wisblock-nfc-reader)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK13600 Wisblock Interface Extension Board with Coil Antenna](https://store.rakwireless.com/products/rak13600-wisblock-nfc-reader?utm_source=RAK13600&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -68,9 +68,9 @@ As shown in **Figure 3**, the location for the IO slot is properly marked by sil
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak13600/quickstart/16.removing-screws.png"
@@ -95,7 +95,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK13600 uses I2C and IO pins. It can cause possible conflict, especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK13600 uses I2C and IO pins. It can cause possible conflict, especially on some IO modules.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
@@ -179,13 +179,13 @@ void setup(void) {
     while (1); // halt
   }
   // Got ok data, print it out!
-  Serial.print("Found chip PN5"); Serial.println((versiondata>>24) & 0xFF, HEX); 
-  Serial.print("Firmware ver. "); Serial.print((versiondata>>16) & 0xFF, DEC); 
+  Serial.print("Found chip PN5"); Serial.println((versiondata>>24) & 0xFF, HEX);
+  Serial.print("Firmware ver. "); Serial.print((versiondata>>16) & 0xFF, DEC);
   Serial.print('.'); Serial.println((versiondata>>8) & 0xFF, DEC);
-  
+
   // configure board to read RFID tags
   nfc.SAMConfig();
-  
+
   Serial.println("Waiting for an ISO14443A Card ...");
 }
 
@@ -193,29 +193,29 @@ void loop(void) {
   uint8_t success;
   uint8_t uid[] = { 0, 0, 0, 0, 0, 0, 0 };  // Buffer to store the returned UID
   uint8_t uidLength;                        // Length of the UID (4 or 7 bytes depending on ISO14443A card type)
-    
+
   // Wait for an ISO14443A type cards (Mifare, etc.).  When one is found
   // 'uid' will be populated with the UID, and uidLength will indicate
   // if the uid is 4 bytes (Mifare Classic) or 7 bytes (Mifare Ultralight)
   success = nfc.readPassiveTargetID(PN532_MIFARE_ISO14443A, uid, &uidLength);
-  
+
   if (success) {
     // Display some basic information about the card
     Serial.println("Found an ISO14443A card");
     Serial.print("  UID Length: ");Serial.print(uidLength, DEC);Serial.println(" bytes");
     Serial.print("  UID Value: ");
     nfc.PrintHex(uid, uidLength);
-    
+
     if (uidLength == 4)
     {
-      // We probably have a Mifare Classic card ... 
+      // We probably have a Mifare Classic card ...
       uint32_t cardid = uid[0];
       cardid <<= 8;
       cardid |= uid[1];
       cardid <<= 8;
-      cardid |= uid[2];  
+      cardid |= uid[2];
       cardid <<= 8;
-      cardid |= uid[3]; 
+      cardid |= uid[3];
       Serial.print("Seems to be a Mifare Classic card #");
       Serial.println(cardid);
     }
@@ -233,7 +233,7 @@ void loop(void) {
   caption="Getting the RAK13600-PN532 Library"
 />
 
-4. You will be directed to the **Library Manager** then you have to click install. 
+4. You will be directed to the **Library Manager** then you have to click install.
 
 <rk-img
   src="/assets/images/wisblock/rak13600/quickstart/library_install.png"

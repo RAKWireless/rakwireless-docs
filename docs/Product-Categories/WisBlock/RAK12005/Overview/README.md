@@ -19,7 +19,6 @@ Thank you for choosing **RAK12005 WisBlock Rain Sensor Module** in your awesome 
 * [RAK12005 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK12005 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/)
 * [40-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
@@ -51,6 +50,6 @@ RAK12005 WisBlock Rain Sensor Module also has a separate sensor PCB, the RAK1203
 
 To use a **RAK12005**, you need at least a **RAK12030 Rain Sensing Pad** and a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12005** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

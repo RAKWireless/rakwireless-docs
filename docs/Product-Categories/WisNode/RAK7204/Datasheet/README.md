@@ -45,10 +45,10 @@ Last but not least, the RAK7204 adopts a highly integrated design. The environme
 #### Typical Application
 
 The combination of the BME680 environmental unit and the LoRa radio make this device especially suite for deploying sensor networks of large size in tall buildings or warehouses, for example.
-When used in conjunction with one of the RAKwireless Gateways, as for example the RAK7258 indoor Gateway, deploying a LoRaWAN sensor network becomes a breeze. One just needs to mount the nodes on a wall or the ceiling, power them on and start monitoring the working conditions of the factory/office.
+When used in conjunction with one of the RAKwireless Gateways, as for example the [RAK7258](https://store.rakwireless.com/products/rak7258-micro-gateway?utm_source=RAK7258Lite&utm_medium=Document&utm_campaign=BuyFromStore) indoor Gateway, deploying a LoRaWAN sensor network becomes a breeze. One just needs to mount the nodes on a wall or the ceiling, power them on and start monitoring the working conditions of the factory/office.
 Furthermore, as all RAKwireless Industrial Gateways (including the aforementioned RAK7258) come with built-in LoRaServer the time from deploying the Gateways and nodes to having a functioning LoRaWAN network can be further reduced. There is no need to have a LoRa Networks Server deployed separately, however if one chooses an integration can be created via MQTT at any time.
 Thus, the solution is both incredibly quick an easy to deploy initially, and also allows for scaling as the number of nodes grows and application requirements change.
-The aforementioned combination of RAK7204 and RAK7258 is visualized in Figure below.
+The aforementioned combination of RAK7204 and RAK7258 is visualized in **Figure 1** below.
 
 <rk-img
   src="/assets/images/wisnode/rak7204/datasheet/typical-application.png"

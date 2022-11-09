@@ -20,9 +20,9 @@ The following two sections will provide a list of the components and tools you n
 
 #### Hardware Tools
 
-- **RAK8213 WisLink Cellular mPCIe**
+- [RAK8213 WisLink Cellular mPCIe](https://store.rakwireless.com/products/rak8213-nb-iot-bg96?utm_source=RAK8213WisLinkCellularmPCIe&utm_medium=Document&utm_campaign=BuyFromStore)
 - **Raspberry Pi 3/4**
-- RAK8213 Pi HAT
+- [RAK8213 Pi HAT](https://store.rakwireless.com/products/rak8213-nb-iot-bg96?utm_source=RAK8213Pi%20HAT&utm_medium=Document&utm_campaign=BuyFromStore)
 - LTE and GPS antennas (included)
 - Hologram SIM card
 

@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK14012
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK14012 Quick Start Guide
@@ -19,13 +19,13 @@ Before going through each and every step on using the RAK14012 WisBlock LED Matr
 
 #### Hardware
 
-- [RAK14012 WisBlock LED Matrix](https://store.rakwireless.com/products/rak14012-wisblock-16x16-rgb-led-matrix)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK14012 WisBlock LED Matrix](https://store.rakwireless.com/products/rak14012-wisblock-16x16-rgb-led-matrix?utm_source=WisBlockRAK14012&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [RAK19008 WisBlock IO Extension Cable](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008)
-- [Li-Ion/LiPo battery (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
-- [Solar charger (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
+- [RAK19008 WisBlock IO Extension Cable](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008?utm_source=RAK19008&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -60,9 +60,9 @@ As shown in **Figure 2**, the location for the IO slot is properly marked by sil
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak14012/quickstart/removing_screw.png"
@@ -87,8 +87,8 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. 
-:::  
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
+:::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
@@ -117,7 +117,7 @@ In this example, you will be seeing multiple LED Matrix display patterns and col
   caption="Connecting the RAK14012 to the 16x16 LED Matrix"
 />
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 - The allowable voltage range from the external power supply is 3.7&nbsp;V to 5.3&nbsp;V. Do not go beyond that limit.
 - Make sure that the jumper from 5V_OUT of RAK14012 WisBlock LED Matrix is disconnected when connecting to an external power supply.
 - LED Matrix DIN should be connected to RAK14012 DOUT.
@@ -159,7 +159,7 @@ In this example, you will be seeing multiple LED Matrix display patterns and col
 #include <Rak_RGB_Matrix.h>  // Click to install library: http://librarymanager/All#RAK14012-LED-Matrix
 #include "Wire.h"
 
-#define NUMPIXELS       256   
+#define NUMPIXELS       256
 #define PIN             WB_IO5
 
 // Parameter 1 = number of pixels in strip
@@ -177,13 +177,13 @@ RAK_RGB_Matrix strip = RAK_RGB_Matrix(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 // and minimize distance between Arduino and first pixel.  Avoid connecting
 // on a live circuit...if you must, connect GND first.
 
-void setup() 
+void setup()
 {
   // Enable 5v power supply on the board.
   // An external battery is required.
   pinMode(WB_IO6, OUTPUT);
-  digitalWrite(WB_IO6, HIGH); 
-  
+  digitalWrite(WB_IO6, HIGH);
+
   // Initialize Serial for debug output
   time_t timeout = millis();
   Serial.begin(115200);
@@ -204,7 +204,7 @@ void setup()
   strip.show(); // Initialize all pixels to 'off'
 }
 
-void loop() 
+void loop()
 {
   // Some example procedures showing how to display to the pixels:
   colorWipe(strip.Color(255, 0, 0), 50); // Red
@@ -224,9 +224,9 @@ void loop()
 /**
  * @brief Fill the dots one after the other with a color.
  */
-void colorWipe(uint32_t c, uint8_t wait) 
+void colorWipe(uint32_t c, uint8_t wait)
 {
-  for(uint16_t i=0; i<strip.numPixels(); i++) 
+  for(uint16_t i=0; i<strip.numPixels(); i++)
   {
     strip.setPixelColor(i, c);
     strip.show();
@@ -234,13 +234,13 @@ void colorWipe(uint32_t c, uint8_t wait)
   }
 }
 
-void rainbow(uint8_t wait) 
+void rainbow(uint8_t wait)
 {
   uint16_t i, j;
 
-  for(j=0; j<256; j++) 
+  for(j=0; j<256; j++)
   {
-    for(i=0; i<strip.numPixels(); i++) 
+    for(i=0; i<strip.numPixels(); i++)
   {
       strip.setPixelColor(i, Wheel((i+j) & 255));
     }
@@ -252,14 +252,14 @@ void rainbow(uint8_t wait)
 /**
  * @brief Slightly different, this makes the rainbow equally distributed throughout.
  */
-void rainbowCycle(uint8_t wait) 
+void rainbowCycle(uint8_t wait)
 {
   uint16_t i, j;
 
-  for(j=0; j<256*5; j++) 
-  { 
+  for(j=0; j<256*5; j++)
+  {
     // 5 cycles of all colors on wheel
-    for(i=0; i< strip.numPixels(); i++) 
+    for(i=0; i< strip.numPixels(); i++)
     {
       strip.setPixelColor(i, Wheel(((i * 256 / strip.numPixels()) + j) & 255));
     }
@@ -271,22 +271,22 @@ void rainbowCycle(uint8_t wait)
 /**
  * @brief Theatre-style crawling lights.
  */
-void theaterChase(uint32_t c, uint8_t wait) 
+void theaterChase(uint32_t c, uint8_t wait)
 {
-  for (int j=0; j<10; j++) 
-  {  
+  for (int j=0; j<10; j++)
+  {
     //do 10 cycles of chasing
-    for (int q=0; q < 3; q++) 
+    for (int q=0; q < 3; q++)
     {
-      for (uint16_t i=0; i < strip.numPixels(); i=i+3) 
+      for (uint16_t i=0; i < strip.numPixels(); i=i+3)
       {
         strip.setPixelColor(i+q, c);    //turn every third pixel on
       }
       strip.show();
-      
+
       delay(wait);
-      
-      for (uint16_t i=0; i < strip.numPixels(); i=i+3) 
+
+      for (uint16_t i=0; i < strip.numPixels(); i=i+3)
       {
         strip.setPixelColor(i+q, 0);        //turn every third pixel off
       }
@@ -297,22 +297,22 @@ void theaterChase(uint32_t c, uint8_t wait)
 /**
  * @brief Theatre-style crawling lights with rainbow effect.
  */
-void theaterChaseRainbow(uint8_t wait) 
+void theaterChaseRainbow(uint8_t wait)
 {
-  for (int j=0; j < 256; j++) 
-  {     
+  for (int j=0; j < 256; j++)
+  {
     // cycle all 256 colors in the wheel
-    for (int q=0; q < 3; q++) 
+    for (int q=0; q < 3; q++)
     {
-      for (uint16_t i=0; i < strip.numPixels(); i=i+3) 
+      for (uint16_t i=0; i < strip.numPixels(); i=i+3)
       {
         strip.setPixelColor(i+q, Wheel( (i+j) % 255));    //turn every third pixel on
       }
       strip.show();
-      
+
       delay(wait);
-      
-      for (uint16_t i=0; i < strip.numPixels(); i=i+3) 
+
+      for (uint16_t i=0; i < strip.numPixels(); i=i+3)
       {
         strip.setPixelColor(i+q, 0);        //turn every third pixel off
       }
@@ -324,14 +324,14 @@ void theaterChaseRainbow(uint8_t wait)
  * @brief Input a value 0 to 255 to get a color value.
  * The colours are a transition r - g - b - back to r.
  */
-uint32_t Wheel(byte WheelPos) 
+uint32_t Wheel(byte WheelPos)
 {
   WheelPos = 255 - WheelPos;
-  if(WheelPos < 85) 
+  if(WheelPos < 85)
   {
     return strip.Color(255 - WheelPos * 3, 0, WheelPos * 3);
   }
-  if(WheelPos < 170) 
+  if(WheelPos < 170)
   {
     WheelPos -= 85;
     return strip.Color(0, WheelPos * 3, 255 - WheelPos * 3);

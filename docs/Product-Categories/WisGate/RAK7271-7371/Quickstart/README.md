@@ -18,7 +18,7 @@ tags:
 
 Before going through each and every step in the installation guide of the RAK7271/7371 WisGate Developer Base, make sure to prepare the necessary items listed below:
 
-1. WisGate Developer Base RAK7271 or RAK7371
+1. [WisGate Developer Base RAK7271 or RAK7371](https://store.rakwireless.com/products/wisgate-developer-base?utm_source=wisgatedeveloperbase&utm_medium=Document&utm_campaign=BuyFromStore)
 2. A Host - Linux running PC/laptop or Raspberry Pi
 
 :::warning ⚠️ WARNING

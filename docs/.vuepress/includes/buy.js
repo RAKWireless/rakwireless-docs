@@ -731,7 +731,7 @@ export default {
   },
 
   '/Product-Categories/WisBlock/RAK13006/': {
-    label: 'RAK13005 WisBlock CAN Module',
+    label: 'RAK13006 WisBlock CAN Module',
     img: '/assets/images/wisblock/rak13006/overview/RAK13006_buy.png',
     store: 'https://store.rakwireless.com/products/can-bus-interface-microchip-mcp2518fd-rak13006?utm_source=RAK13006&utm_medium=Document&utm_campaign=BuyFromStore'
   },

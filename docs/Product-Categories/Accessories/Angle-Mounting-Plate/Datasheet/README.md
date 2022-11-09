@@ -11,21 +11,21 @@ rak_img: /assets/images/accessories/angle-mounting-plate/1.jpg
 
 # Angle Mounting Plate Datasheet
 
-## Overview 
+## Overview
 ### Description
 
-The Angle Mounting Plate will help you place your antenna easily and securely at the best place, optimizing your coverage. It is specially designed for the RAK 5dBi fiberglass antenna. The included N-type coupler allows you to mount the plate first, then attach the antenna and the cable to it, making the installation process hassle-free.
+The Angle Mounting Plate will help you place your antenna easily and securely at the best place, optimizing your coverage. It is specially designed for the RAK 5&nbsp;dBi fiberglass antenna. The included N-type coupler allows you to mount the plate first, then attach the antenna and the cable to it, making the installation process hassle-free.
 
 ### Features
 
 - Secured mounting, without damage to the antenna body
-- Suitable for RAK 5dBi fiberglass antenna ([RAKARG19](https://docs.rakwireless.com/Product-Categories/Accessories/RAKARG19/Overview/))
+- Suitable for RAK 5&nbsp;dBi fiberglass antenna ([RAKARG19](https://store.rakwireless.com/products/5dbi-fiber-glass-antenna-supports-902-928mhz?utm_source=902-928MHzFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore))
 - Easy installation
 
 ### Package Inclusion List
 
-- 1x Angle mounting plate 
-- 1x N-type female coupler with the corresponding screws 
+- 1x Angle mounting plate
+- 1x N-type female coupler with the corresponding screws
 - 2x U shaped brackets with the corresponding washers and nuts
 
 
@@ -43,7 +43,7 @@ The Angle Mounting Plate will help you place your antenna easily and securely at
 | Feature         | Specifications             |
 | --------------- | -------------------------- |
 | Material        | Carbon steel with coating  |
-| Pole diameter   | 35-50 mm                   |
+| Pole diameter   | 35-50&nbsp;mm              |
 | Connector type  | N-type female on both ends |
 | Use environment | Outdoor                    |
 
@@ -78,7 +78,7 @@ The Angle Mounting Plate will help you place your antenna easily and securely at
   caption="Fixing the coupler"
 />
 
-2. Install the mounting plate with the two U-shaped brackets, securing them with a plain washer, a spring lock washer, and a hexagon nut at each end. 
+2. Install the mounting plate with the two U-shaped brackets, securing them with a plain washer, a spring lock washer, and a hexagon nut at each end.
 
 <rk-img
   src="/assets/images/accessories/angle-mounting-plate/6.png"
@@ -87,7 +87,7 @@ The Angle Mounting Plate will help you place your antenna easily and securely at
 />
 
 :::tip 📝 NOTE:
-The diameter of the pole should be 35-50 mm.
+The diameter of the pole should be 35-50&nbsp;mm.
 :::
 
 3. Install one end of the RF cable at the bottom of the coupler and the antenna to the top of the N-type coupler, like shown in **Figure 3.** The other end of the RF cable should be connected to your gateway.

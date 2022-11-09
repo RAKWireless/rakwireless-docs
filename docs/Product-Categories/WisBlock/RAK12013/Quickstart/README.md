@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK12013
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK12013 Quick Start Guide
@@ -19,12 +19,13 @@ Before going through each and every step on using the RAK12013 WisBlock module, 
 
 #### Hardware
 
-- [RAK12013 WisBlock Radar Sensor Module](https://store.rakwireless.com/products/rak12013-wisblock-radar-sensor)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK12013 WisBlock Radar Sensor Module](https://store.rakwireless.com/products/rak12013-wisblock-radar-sensor?utm_source=RAK12013&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+
 
 #### Software
 
@@ -57,7 +58,7 @@ The antenna coil of the RCWL-9196 is where part of the sensor gets the motion de
 
 ::: tip 📝 NOTE
  - The component side of the PCB module or the front is the positive sensing face, while the opposite side, which is the back, is the negative sensing face. The negative sensing face is less effective in terms of sensing.
-::: 
+:::
 
 #### Assembling and Disassembling of WisBlock Modules
 
@@ -73,9 +74,9 @@ The RAK12013 module can be mounted on the IO slot of the WisBlock Base board, as
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12013/quickstart/removing_screw.png"
@@ -100,7 +101,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
@@ -153,8 +154,8 @@ After all this setup, you can now connect the battery (optional) and USB cable t
    @file RAK12013_Rader_3GHZ.ino
    @author rakwireless.com
    @brief Rader_3GHZ example.
-      The RCWL-0516 is a motion detection sensor. 
-      It can detect motion through doppler microwave technology through walls or other materials. 
+      The RCWL-0516 is a motion detection sensor.
+      It can detect motion through doppler microwave technology through walls or other materials.
       It will get triggered not only by people but also by other moving objects.
    @version 0.1
    @date 2021-10-18
@@ -169,14 +170,14 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 boolean g_motion_status = false;
 
-void setup() 
+void setup()
 {
   pinMode(WB_IO2, OUTPUT);
   digitalWrite(WB_IO2, HIGH);
-  
+
   pinMode (SENSOR_EN, OUTPUT);
   digitalWrite(SENSOR_EN, HIGH); // Sensor disable input (low = disable)
-  
+
   time_t timeout = millis();
   Serial.begin(115200);
   while (!Serial)
@@ -192,16 +193,16 @@ void setup()
   }
   Serial.println("Rader 3GHZ example");
 
-  pinMode (SENSOR_OUT, INPUT); 
-  pinMode (BLUE_LED, OUTPUT);  
+  pinMode (SENSOR_OUT, INPUT);
+  pinMode (BLUE_LED, OUTPUT);
   pinMode (GREEN_LED, OUTPUT);
   Serial.println("Waiting for motion");
 }
 
-void loop() 
+void loop()
 {
   int val; // Read Pin as input
-  
+
   val = digitalRead(SENSOR_OUT);
   if((val > 0) && (g_motion_status == false))
   {
@@ -214,7 +215,7 @@ void loop()
   {
     digitalWrite(BLUE_LED, LOW);
     digitalWrite(GREEN_LED, HIGH);
-    Serial.println("NO Motion"); 
+    Serial.println("NO Motion");
     g_motion_status = false;
   }
 }

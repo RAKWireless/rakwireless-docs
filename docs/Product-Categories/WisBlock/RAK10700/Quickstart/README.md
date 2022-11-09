@@ -20,7 +20,7 @@ Before going through each and every step in the installation guide of the GNSS T
 
 #### Hardware Tools
 
-1. **GNSS Tracker**
+1. [**GNSS Tracker**](https://store.rakwireless.com/products/lpwan-tracker-solution-kit?utm_source=RAK10700&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Micro USB Cable
 3. LoRaWAN gateway in range
 4. Windows PC
@@ -39,14 +39,14 @@ Serial Terminal Application, for example [Termite Serial Terminal](https://www.c
 
 The GNSS module will take some time to get a location fix. The time depends on many factors but can take up to 45 seconds. The period of how often a location should be sent should be calculated taking into account:
 
-1) Time to get a location fix (up to 45 seconds);  
-2) Local LoRaWAN regulations regarding duty cycles.  
+1) Time to get a location fix (up to 45 seconds);
+2) Local LoRaWAN regulations regarding duty cycles.
 
 :::
 
 :::warning ⚠️ WARNING
 
-If the sending period is set too small (location cannot be fixed by the GNSS module), the device will not be able to send valid location data to the LoRaWAN server. 
+If the sending period is set too small (location cannot be fixed by the GNSS module), the device will not be able to send valid location data to the LoRaWAN server.
 
 :::
 
@@ -63,12 +63,12 @@ RAK10700 can be powered via the USB cable or Li-Ion/LiPo battery via the dedicat
 
 :::warning ⚠️ WARNING
 
-The RAK10700 does come without a battery. You need to add a rechargeable battery and connect it to the battery connector inside the enclosure.     
+The RAK10700 does come without a battery. You need to add a rechargeable battery and connect it to the battery connector inside the enclosure.
 
 - Battery can cause harm if not handled properly.
 - Only 3.7-4.2&nbsp;V Rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
 - If a non-rechargeable battery is used, it has to be unplugged first before connecting the USB cable to the USB port of the board to configure the device. Not doing so might damage the battery or cause fire.
-- Make sure the battery wires match the polarity on the RAK5005-O board used in the RAK10700. Not all batteries have the same wiring.    
+- Make sure the battery wires match the polarity on the RAK5005-O board used in the RAK10700. Not all batteries have the same wiring.
 
 :::
 
@@ -80,7 +80,7 @@ To interface with the GNSS Tracker with your Windows Machine, you need to have a
 
 #### Connecting to the GNSS Tracker
 
-Once done, follow the listed steps to interface your GNSS Tracker with your computer. 
+Once done, follow the listed steps to interface your GNSS Tracker with your computer.
 
 1. Connect the GNSS Tracker to the USB port of a general-purpose computer using a standard **Micro - USB Cable**.
 
@@ -91,7 +91,7 @@ Once done, follow the listed steps to interface your GNSS Tracker with your comp
 />
 
 2. Test if your GNSS Tracker can now communicate with the Serial Port Tool. Configure the serial communication tool by selecting the proper port and configuring the link as listed below, then click **Open**.
-   
+
 * **COM**: Choose the COM Port associated with the GNSS Tracker from the previous step. For this tutorial, the COM Port is COM4.
 * Baud Rate: **115200&nbsp;bps**
 * Data Bits: **8&nbsp;bits**
@@ -104,7 +104,7 @@ Once done, follow the listed steps to interface your GNSS Tracker with your comp
   caption="Connecting to the Serial Port Tool"
 />
 
-3. Verify your connection to the GNSS Tracker by sending the AT Command `AT+VER?`. If the connection is successful, the firmware version of your GNSS Tracker should appear the same, as shown in **Figure 4**. 
+3. Verify your connection to the GNSS Tracker by sending the AT Command `AT+VER?`. If the connection is successful, the firmware version of your GNSS Tracker should appear the same, as shown in **Figure 4**.
 
 ```sh
 AT+VER=?
@@ -175,7 +175,7 @@ This section will focus on giving a brief guide on how to connect the GNSS Track
   width="100%"
   caption="Helium decoder"
 />
- 
+
 - Next, go to **Flows** in the Helium Console and create a new flow. Connect your device to the flow that you just created.
 
 <rk-img
@@ -193,19 +193,19 @@ This section will focus on giving a brief guide on how to connect the GNSS Track
 :::tip 📝 NOTE:
 
 The different regions are selected by number:
-- 0: AS923 
-- 1: AU915 
-- 2: CN470 
-- 3: CN779 
-- 4: EU433 
-- 5: EU868 
-- 6: KR920 
-- 7: IN865 
-- 8: US915 
-- 9: AS923-2 
-- 10: AS923-3 
-- 11: AS923-4 
-- 12: RU864 
+- 0: AS923
+- 1: AU915
+- 2: CN470
+- 3: CN779
+- 4: EU433
+- 5: EU868
+- 6: KR920
+- 7: IN865
+- 8: US915
+- 9: AS923-2
+- 10: AS923-3
+- 11: AS923-4
+- 12: RU864
 
 :::
 
@@ -280,7 +280,7 @@ If your GNSS Tracker can get a location fix, you can see the live data in the He
 
 ### Connecting to The Things Network V3 (TTNv3)
 
-In this section, it will be shown how to connect GNSS Tracker to The Things Stack. 
+In this section, it will be shown how to connect GNSS Tracker to The Things Stack.
 
 First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud.thethings.network/console). If you already have a TTN account, you can use your The Things ID credentials to log in.
 
@@ -298,7 +298,7 @@ First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud
 
 
 :::tip 📝 NOTE:
-- To connect GNSS Tracker to TTNv3, you should already have connected a gateway in range to TTNv3. Or, you have to be sure that you are in the range of a public gateway. 
+- To connect GNSS Tracker to TTNv3, you should already have connected a gateway in range to TTNv3. Or, you have to be sure that you are in the range of a public gateway.
 
 - This tutorial is for the EU868 Frequency band.
 :::
@@ -318,7 +318,7 @@ First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud
 
    - **Owner** - Automatically filled by The Things Stack, based on your account or created organization.
    - **Application ID** - This will be the unique ID of your application in the Network. ID must contain only lowercase letters, numbers, and dashes (-).
-   - **Application name** (optional) - This is the name of your application. 
+   - **Application name** (optional) - This is the name of your application.
    - **Description** (optional) – Description of your application. Optional application description; can also be used to save notes about the application.
 
 
@@ -342,7 +342,7 @@ First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud
 
 2. Below the **Register end device** heading, you can find two options for registering a device. Choose **Manually**.
     - For Activation mode, choose **Over the air activation (OTAA)**.
-    - For the LoRaWAN version, choose **MAC V1.0.2** (GNSS Tracker is LoRaWAN 1.0.2 fully compliant). 
+    - For the LoRaWAN version, choose **MAC V1.0.2** (GNSS Tracker is LoRaWAN 1.0.2 fully compliant).
 
 
 <rk-img
@@ -392,9 +392,9 @@ First, log in to the TTNv3. To do so, head to the TTNv3 [site](https://eu1.cloud
 
 - **Frequency plan -** The frequency plan used by the end device. Note that, for this tutorial, the frequency plan used is Europe 863-870&nbsp;MHz (SF9 for RX2 – recommended).
 - **Regional Parameters version** - The Regional Parameters specify frequency, dwell time, and other communication settings for different geographical areas. The Regional Parameters version is the version of the LoRa Alliance specification which your device supports. This should be provided by the device manufacturer in a datasheet. For this example, **PHY V1.0.2 REV A** is chosen.
-- **LoRaWAN class capabilities** – Here you can select if your device supports Class B, Class C, or both. 
+- **LoRaWAN class capabilities** – Here you can select if your device supports Class B, Class C, or both.
 
-7. In the **Advanced settings**, you can configure additional settings for your device. 
+7. In the **Advanced settings**, you can configure additional settings for your device.
 
     <rk-img
       src="/assets/images/wisblock/rak10700/quickstart/connecting-to-ttn/image009.png"
@@ -466,7 +466,7 @@ AT+NJM=1
 AT+CLASS=A
 ```
 
-- For the region: 
+- For the region:
 
 ```
 AT+BAND=5
@@ -490,7 +490,7 @@ The following tutorial is based on using the EU868 frequency band.
 3. Now that those parameters are set, enter the **App Key**, using the command below. Remember to replace the **`XXXX`** with the corresponding parameter value for your particular case.
 
 ```
-AT+APPKEY=XXXX  
+AT+APPKEY=XXXX
 ```
 
 <rk-img
@@ -502,7 +502,7 @@ AT+APPKEY=XXXX
 4. Finally, execute the join command:
 
 ```
-AT+JOIN=1:0:8:30 
+AT+JOIN=1:0:8:30
 ```
 
 <rk-img
@@ -549,7 +549,7 @@ Before you start, you must choose which mode you are going to use, whether in OT
 
 <b>Sign up and Log in</b>
 
-Sign in to Chirpstack with your username and password. 
+Sign in to Chirpstack with your username and password.
 
 #### Create a New Application
 
@@ -571,7 +571,7 @@ Sign in to Chirpstack with your username and password.
 
 * For this setup, create an Application named **RAK-PH-Testapp**. You can choose any name that fits better for you.
 
-ChirpStack LoraServer supports multiple system configurations, with only one by default. 
+ChirpStack LoraServer supports multiple system configurations, with only one by default.
 
 * **Service profile**: field is to select the system profile.
 * **Payload codec**: is the parsing method for selecting load data. Choose Cayenne LPP for the GNSS Tracker, because this format is used for the payload.
@@ -692,7 +692,7 @@ Parameters for the Device Profile:
   caption="Device Tab of an Application"
 />
 
-2. Once inside of the DEVICE tab, create a new device (LoRa node) by clicking on the “**+ CREATE**” button. 
+2. Once inside of the DEVICE tab, create a new device (LoRa node) by clicking on the “**+ CREATE**” button.
 
 <rk-img
   src="/assets/images/wisblock/rak10700/quickstart/connecting-to-chirpstack/40.adding-node.png"
@@ -708,10 +708,10 @@ Parameters for the Device Profile:
 
 3. Once the node is created, fill in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
 
-* **Device name and Device description**: These are descriptive texts about your device. 
-* **Device EUI**: Enter the device EUI of your GNSS Tracker here. 
-* **Application Key**: This key is required during the OTAA join process. You can use the AppKey from the GNSS Tracker here. 
-* **Device Profile**: 
+* **Device name and Device description**: These are descriptive texts about your device.
+* **Device EUI**: Enter the device EUI of your GNSS Tracker here.
+* **Application Key**: This key is required during the OTAA join process. You can use the AppKey from the GNSS Tracker here.
+* **Device Profile**:
   * If you want to join in OTAA mode, select “**DeviceProfile_OTAA**”.
   * If you want to join in ABP mode, select “**DeviceProfile_ABP**”.
 
@@ -750,14 +750,14 @@ You have created the device before as an OTAA device, and it can be used to conn
 
 :::tip 📝 NOTE:
 
-Standard OTAA mode requires the **Device EUI**, **Application Key**, and the **Application EUI**. But in ChirpStack’s implementation, only the Device EUI and the Application Key are mandatory. The Application EUI is not required and is not recorded in the Application tab. Nevertheless, the Application EUI is a mandatory parameter in the LPWAN Tracker’s firmware. To resolve this mismatch, you can reuse the Device EUI as the Application EUI during the configuration on the side of the node. 
+Standard OTAA mode requires the **Device EUI**, **Application Key**, and the **Application EUI**. But in ChirpStack’s implementation, only the Device EUI and the Application Key are mandatory. The Application EUI is not required and is not recorded in the Application tab. Nevertheless, the Application EUI is a mandatory parameter in the LPWAN Tracker’s firmware. To resolve this mismatch, you can reuse the Device EUI as the Application EUI during the configuration on the side of the node.
 
 :::
 
 
 ###### Configure the OTAA Mode on the GNSS Tracker
 
-The GNSS Tracker supports a series of AT commands to configure its internal parameters and control the functionalities of the module. 
+The GNSS Tracker supports a series of AT commands to configure its internal parameters and control the functionalities of the module.
 
 To set up the GNSS Tracker to join ChirpStack using OTAA, start by connecting the GNSS Tracker to the Computer (see **Figure 2**). Open the RAK Serial Port Tool and wait for the communication to start. It is recommended to test the serial communication by sending either of these two AT commands:
 
@@ -770,11 +770,11 @@ AT+STATUS=?
 AT+VER=?
 ```
 
-As an example, the following are the list of the parameters you need to configure in GNSS Tracker: 
+As an example, the following are the list of the parameters you need to configure in GNSS Tracker:
 
 - LoRa join mode: **OTAA**
 - LoRa class: **Class A**
-- LoRa region: **AS923-3** 
+- LoRa region: **AS923-3**
 - Device EUI: **000d75e6564dc103**
 - Application EUI: **Not used by Chirpstack**
 - Application Key: **56D622507C0F5017E4E87F7EDE7839D5**
@@ -845,11 +845,11 @@ After 5 or 6 seconds, if the request is successfully received by a LoRa gateway,
   caption="Checking LoRaWAN Joint Request in Chirpstack OTAA Console"
 />
 
-9. On the ChirpStack platform, you should also see the messages in the LORAWAN FRAMES tab, as shown in **Figure 54**. 
+9. On the ChirpStack platform, you should also see the messages in the LORAWAN FRAMES tab, as shown in **Figure 54**.
 
 :::tip 📝 NOTE:
 
-By convention, messages sent from nodes to gateways are considered as **Uplinks**, while messages sent by gateways to nodes are considered as **Downlinks**. 
+By convention, messages sent from nodes to gateways are considered as **Uplinks**, while messages sent by gateways to nodes are considered as **Downlinks**.
 :::
 
 <rk-img
@@ -870,7 +870,7 @@ As the payload decoder is set as Cayenne LPP in the device profile, the data is 
 
 ###### Configure the ABP Mode on the Platform
 
-During the registration of a new device for OTAA join mode, you select **LPWAN-Tracker-OTAA**. To switch the device to ABP join mode, you need to change the Device Profile from **`LPWAN-Tracker-OTAA`** to **`LPWAN-Tracker-ABP`**, as shown in **Figure 57**, in the device **CONFIGURATION** tab 
+During the registration of a new device for OTAA join mode, you select **LPWAN-Tracker-OTAA**. To switch the device to ABP join mode, you need to change the Device Profile from **`LPWAN-Tracker-OTAA`** to **`LPWAN-Tracker-ABP`**, as shown in **Figure 57**, in the device **CONFIGURATION** tab
 
 :::tip 📝 NOTE:
 
@@ -893,7 +893,7 @@ Next, get the Device Address, Application Session Key, and Network Session Key f
   caption="ChirpStack Console, Configuring a Device"
 />
 
-In Chirpstack, after selecting the ABP mode, the following parameters appear in the Activation tab: 
+In Chirpstack, after selecting the ABP mode, the following parameters appear in the Activation tab:
 
 * Device address
 * Network Session Key
@@ -920,11 +920,11 @@ AT+STATUS=?
 AT+VER=?
 ```
 
-As an example, the following are the list of the parameters you need to configure in GNSS Tracker: 
+As an example, the following are the list of the parameters you need to configure in GNSS Tracker:
 
 - LoRa join mode: **ABP**
 - LoRa class: **Class A**
-- LoRa region: **AS923-3** 
+- LoRa region: **AS923-3**
 - Device address: **00781FB9**
 - Network Session Key: **C280CB8D1DF688BC18601A97025C5880**
 - Application Session Key: **4D42EC5CAF97F03D833CDAF5003F69E1**
@@ -1043,7 +1043,7 @@ AT+P2P=916100000:7:125:0:8:22
   caption="LoRa P2P Data Received"
 />
 
-3. The data is decoded in Cayenne LPP format and will require a decoder in your receiver module to get the values.    
+3. The data is decoded in Cayenne LPP format and will require a decoder in your receiver module to get the values.
 
 The next paragraph is explaining the payload format. If your receiver is using firmware based on Arduino, you can use a Cayenne LPP Decoder library like the [CayenneLPPdec](https://github.com/gmag11/CayenneLPPdec) to decode the payload.
 
@@ -1062,13 +1062,13 @@ The Cayenne Low Power Payload (LPP) provides a convenient and easy way to send d
 
 The Data Channel uniquely identifies each sensor or actuator within a device. The acceptable range is from 0 to 64. The device developer is responsible to assign a unique channel for each of the device's sensor and actuator and conform to it across the device life cycle.
 
-Data Types are based on the IPSO Alliance Smart Objects Guidelines, which identify each data type with an "Object ID". However, as shown below, a conversion is made to fit the Object ID into a single byte.    
+Data Types are based on the IPSO Alliance Smart Objects Guidelines, which identify each data type with an "Object ID". However, as shown below, a conversion is made to fit the Object ID into a single byte.
 
 ```
 LPP_DATA_TYPE = IPSO_OBJECT_ID - 3200
-```    
+```
 
-Each data type can use 1 or more bytes to send the data according to the following table:   
+Each data type can use 1 or more bytes to send the data according to the following table:
 
 | Type               | IPSO | LPP | Hex | Data Size | Data Resolution per bit                                                                         |
 | ------------------ | ---- | --- | --- | --------- | ----------------------------------------------------------------------------------------------- |

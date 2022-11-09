@@ -26,10 +26,6 @@ Thank you for choosing **RAK14006 WisBlock Rotary Encoder Module** in your aweso
 * [WisBlock IO Tutorial](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
 
 
-
-
-
-
 ## Product Description
 
 The RAK14006 is a rotary encoder module with PEC11L-4125F-S0020 from BOURNS. RAK14006 can detect user inputs such as rotation direction and rotation number of steps. Also, an independent push switch is provided for the user.
@@ -38,7 +34,7 @@ The RAK14006 is a rotary encoder module with PEC11L-4125F-S0020 from BOURNS. RAK
 ## Product Features
 
 * **Module Specifications**
-    * Rotary Encoder with an independent push switch 
+    * Rotary Encoder with an independent push switch
     * Chipset: BOURNS PEC11L-4125F-S0020
     * 3.3&nbsp;V Power supply
 
@@ -49,6 +45,6 @@ The RAK14006 is a rotary encoder module with PEC11L-4125F-S0020 from BOURNS. RAK
 
 To use a **RAK14006**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK14006** module. Furthermore, you need a **WisBlock Core** module to use the rotary encoder.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

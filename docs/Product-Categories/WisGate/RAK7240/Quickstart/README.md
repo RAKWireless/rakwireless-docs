@@ -17,7 +17,7 @@ rak_img: /assets/images/wisgate/rak7240/quickstart/RAK7240_home.png
 
 ### What Do You Need?
 
-1. **RAK7240 WisGate Edge Prime**
+1. [**RAK7240 WisGate Edge Prime**](https://store.rakwireless.com/products/rak7240-outdoor-lpwan-gateway?utm_source=RAK7240WisGateEdgePrime&utm_medium=Document&utm_campaign=BuyFromStore)
 2. A Windows/Mac OS/Linux Computer
 
 :::warning ⚠️ WARNING

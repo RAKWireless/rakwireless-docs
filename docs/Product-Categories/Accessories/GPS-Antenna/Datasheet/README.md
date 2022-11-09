@@ -21,7 +21,7 @@ The GPS Antenna is a high-gain and high-efficiency active antenna designed with 
 ### Features
 
 - Frequency: **1559-1577&nbsp;MHz**
-- Type: **Active Antenna** 
+- Type: **Active Antenna**
 - Gain: **28 ± 2&nbsp;dB typical**
 - Voltage: **3&nbsp;V ± 0.3&nbsp;V<sub>DC</sub>**
 - Current: **≤ 10&nbsp;mA at 3&nbsp;V**
@@ -34,7 +34,7 @@ The GPS Antenna is a high-gain and high-efficiency active antenna designed with 
 
 - 1x GPS antenna with cable
 - 2x Mounting bracket with M6 nuts, washer, and spring washer
-- 1x Mounting pole – 150&nbsp;mm, Ф25.6&nbsp;mm 
+- 1x Mounting pole – 150&nbsp;mm, Ф25.6&nbsp;mm
 
 ## Specifications
 
@@ -60,17 +60,17 @@ The GPS Antenna is a high-gain and high-efficiency active antenna designed with 
 
 <b>Operation Environment</b>
 
-| Parameter   | Value                  |
-| ----------- | ---------------------- |
-| Temperature | -40&nbsp;℃ ~ 85&nbsp;℃ |
-| Humidity    | 10% ~ 95% RH           |
+| Parameter   | Value             |
+| ----------- | ----------------- |
+| Temperature | -40° ~ 85°&nbsp;C |
+| Humidity    | 10% ~ 95% RH      |
 
 <b>Storage environment </b>
 
-| Parameter   | Value                  |
-| ----------- | ---------------------- |
-| Temperature | -40&nbsp;℃ ~ 90&nbsp;℃ |
-| Humidity    | 10% ~ 95% RH           |
+| Parameter   | Value            |
+| ----------- | ---------------- |
+| Temperature | 40° ~ 85°&nbsp;C |
+| Humidity    | 10% ~ 95% RH     |
 
 
 #### Mechanical Characteristics

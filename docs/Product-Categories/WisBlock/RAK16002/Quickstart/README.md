@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK16002
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK16002 Quick Start Guide
@@ -17,16 +17,16 @@ next: ../Datasheet/
 
 Before going through each and every step on using the RAK16002 WisBlock Coulomb sensor module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
 - [RAK16002 WisBlock Coulomb Sensor Module](https://store.rakwireless.com/products/rak16002-coulomb-sensor?utm_source=RAK16002&utm_medium=Document&utm_campaign=BuyFromStore)
 - [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -55,14 +55,14 @@ The RAK16002 WisBlock Coulomb sensor module can be mounted on the IO slot of the
 
 ::: tip 📝 NOTE
 - **J2  charge/load select**
-  - short pin1 and pin2, Internal charge/load 
+  - short pin1 and pin2, Internal charge/load
   - short pin2 and pin3, External charge/load
 - **J4 battery select**
-  - short pin1 and pin2, Internal battery measurement 
-  - short pin2 and pin3, External battery measurement 
+  - short pin1 and pin2, Internal battery measurement
+  - short pin2 and pin3, External battery measurement
 - **J3**
-  - pin1, Connect to external charge+/load+ 
-  - pin2, Connect to external charge-/load- & battery- 
+  - pin1, Connect to external charge+/load+
+  - pin2, Connect to external charge-/load- & battery-
   - pin3, Connect to external battery+
 :::
 
@@ -80,9 +80,9 @@ The RAK16002 module can be mounted on the IO slot of the WisBlock Base board, as
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock module is the same. 
+The procedure in disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak16002/quickstart/16.removing-screws.png"
@@ -126,7 +126,7 @@ These are the quick links that go directly to the software guide for the specifi
 
 ##### Arduino Setup
 
-1. Select the RAK4631 WisBlock Core. 
+1. Select the RAK4631 WisBlock Core.
 
 Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) to find the RAK4631 in the Arduino Boards Manager.
 
@@ -153,7 +153,7 @@ Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless
 
 #define INTERRUPT_PIN     WB_IO6  // Interrupt capable Arduino pin.
 
-#define BATTERY_CAPACITY  2200     // unit:mAh  
+#define BATTERY_CAPACITY  2200     // unit:mAh
 
 #define LTC2942_I2C_ALERT_RESPONSE  0x0C
 
@@ -163,7 +163,7 @@ void setup(void)
 {
   //Sensor power switch
   pinMode(WB_IO2, OUTPUT);
-  digitalWrite(WB_IO2, HIGH); 
+  digitalWrite(WB_IO2, HIGH);
 
 /*
  * The LED_BLUE  lights up to indicate Charge alert high.
@@ -176,7 +176,7 @@ void setup(void)
   digitalWrite(LED_GREEN, LOW);
 
   pinMode(INTERRUPT_PIN, INPUT);
-  
+
   time_t timeout = millis();
   Serial.begin(115200);
   while (!Serial)
@@ -190,20 +190,20 @@ void setup(void)
       break;
     }
   }
-  
+
   Serial.println("=====================================");
   Serial.println("RAK16002 Coulomb LTC2941 example");
   Serial.println("=====================================");
-  
+
   Wire.begin();
-    
+
   ltc2941.initialize();
   ltc2941.setBatteryFullMAh( BATTERY_CAPACITY , false);
-  ltc2941.setAccumulatedCharge(42352); // Set the current battery level to 1800 mAh. 
-  
+  ltc2941.setAccumulatedCharge(42352); // Set the current battery level to 1800 mAh.
+
   attachInterrupt(digitalPinToInterrupt(INTERRUPT_PIN), interruptRoutine, FALLING);
-  
-  
+
+
   ltc2941.setBatteryAlert( VBAT_3_0_V );
 
   ltc2941.setChargeThresholdHigh( 42353 );//CURRENT_CAPACITY
@@ -212,7 +212,7 @@ void setup(void)
   ltc2941.setAlertConfig( ALERT_MODE );
 
   /*
-  *  The LTC2941 will stop pulling down the AL/CC pin and will not respond 
+  *  The LTC2941 will stop pulling down the AL/CC pin and will not respond
   *  to further ARA requests until a new alert event occurs.
   */
   Wire.requestFrom(LTC2942_I2C_ALERT_RESPONSE, 1);
@@ -229,8 +229,8 @@ void loop(void)
 
   if (g_isr == true)
   {
-    g_isr = false; 
-    
+    g_isr = false;
+
     ltc2941.setAccumulatedCharge(42352); // Reset the battery level only for periodic presentation interruption.
 
     Wire.requestFrom((int16_t)0x0C, 1); // Send alert response protocol.
@@ -242,24 +242,24 @@ void loop(void)
     Status = ltc2941.getStatus();
     if(Status & 0x02)
     {
-       Serial.println("VBAT alert interrupt！"); 
+       Serial.println("VBAT alert interrupt！");
        digitalWrite(LED_GREEN, HIGH);
        digitalWrite(LED_BLUE, HIGH);
     }
     if(Status & 0x04)
     {
-       Serial.println("Charge alert low interrupt！"); 
+       Serial.println("Charge alert low interrupt！");
        digitalWrite(LED_GREEN, HIGH);
     }
     if(Status & 0x08)
     {
-       Serial.println("Charge alert high interrupt！"); 
+       Serial.println("Charge alert high interrupt！");
        digitalWrite(LED_BLUE, HIGH);
     }
   }
   coulomb = ltc2941.getCoulombs();
   mAh = ltc2941.getmAh();
-  percent = ltc2941.getPercent(); 
+  percent = ltc2941.getPercent();
 
   Serial.print(coulomb);
   Serial.print("C   ");
@@ -327,7 +327,7 @@ If you experience any error in compiling an example sketch, check the updated co
 
 ##### Arduino Setup
 
-1. Select the RAK11200 WisBlock Core. 
+1. Select the RAK11200 WisBlock Core.
 
 Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) to find the RAK11200 in the Arduino Boards Manager.
 
@@ -355,7 +355,7 @@ Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless
 
 #define INTERRUPT_PIN     WB_IO6  // Interrupt capable Arduino pin.
 
-#define BATTERY_CAPACITY  2200     // unit:mAh  
+#define BATTERY_CAPACITY  2200     // unit:mAh
 
 #define LTC2942_I2C_ALERT_RESPONSE  0x0C
 
@@ -365,7 +365,7 @@ void setup(void)
 {
   //Sensor power switch
   pinMode(WB_IO2, OUTPUT);
-  digitalWrite(WB_IO2, HIGH); 
+  digitalWrite(WB_IO2, HIGH);
 
 /*
  * The LED_BLUE  lights up to indicate Charge alert high.
@@ -378,7 +378,7 @@ void setup(void)
   digitalWrite(LED_GREEN, LOW);
 
   pinMode(INTERRUPT_PIN, INPUT);
-  
+
   time_t timeout = millis();
   Serial.begin(115200);
   while (!Serial)
@@ -392,20 +392,20 @@ void setup(void)
       break;
     }
   }
-  
+
   Serial.println("=====================================");
   Serial.println("RAK16002 Coulomb LTC2941 example");
   Serial.println("=====================================");
-  
+
   Wire.begin();
-    
+
   ltc2941.initialize();
   ltc2941.setBatteryFullMAh( BATTERY_CAPACITY , false);
-  ltc2941.setAccumulatedCharge(42352); // Set the current battery level to 1800 mAh. 
-  
+  ltc2941.setAccumulatedCharge(42352); // Set the current battery level to 1800 mAh.
+
   attachInterrupt(digitalPinToInterrupt(INTERRUPT_PIN), interruptRoutine, FALLING);
-  
-  
+
+
   ltc2941.setBatteryAlert( VBAT_3_0_V );
 
   ltc2941.setChargeThresholdHigh( 42353 );//CURRENT_CAPACITY
@@ -414,7 +414,7 @@ void setup(void)
   ltc2941.setAlertConfig( ALERT_MODE );
 
   /*
-  *  The LTC2941 will stop pulling down the AL/CC pin and will not respond 
+  *  The LTC2941 will stop pulling down the AL/CC pin and will not respond
   *  to further ARA requests until a new alert event occurs.
   */
   Wire.requestFrom(LTC2942_I2C_ALERT_RESPONSE, 1);
@@ -431,8 +431,8 @@ void loop(void)
 
   if (g_isr == true)
   {
-    g_isr = false; 
-    
+    g_isr = false;
+
     ltc2941.setAccumulatedCharge(42352); // Reset the battery level only for periodic presentation interruption.
 
     Wire.requestFrom((int16_t)0x0C, 1); // Send alert response protocol.
@@ -444,24 +444,24 @@ void loop(void)
     Status = ltc2941.getStatus();
     if(Status & 0x02)
     {
-       Serial.println("VBAT alert interrupt！"); 
+       Serial.println("VBAT alert interrupt！");
        digitalWrite(LED_GREEN, HIGH);
        digitalWrite(LED_BLUE, HIGH);
     }
     if(Status & 0x04)
     {
-       Serial.println("Charge alert low interrupt！"); 
+       Serial.println("Charge alert low interrupt！");
        digitalWrite(LED_GREEN, HIGH);
     }
     if(Status & 0x08)
     {
-       Serial.println("Charge alert high interrupt！"); 
+       Serial.println("Charge alert high interrupt！");
        digitalWrite(LED_BLUE, HIGH);
     }
   }
   coulomb = ltc2941.getCoulombs();
   mAh = ltc2941.getmAh();
-  percent = ltc2941.getPercent(); 
+  percent = ltc2941.getPercent();
 
   Serial.print(coulomb);
   Serial.print("C   ");
@@ -537,7 +537,7 @@ If you experience any error in compiling an example sketch, check the updated co
 
 ##### Arduino Setup
 
-1. Select the RAK11310 WisBlock Core. 
+1. Select the RAK11310 WisBlock Core.
 
 Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) to find the RAK11310 in the Arduino Boards Manager.
 
@@ -564,7 +564,7 @@ Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless
 
 #define INTERRUPT_PIN     WB_IO6  // Interrupt capable Arduino pin.
 
-#define BATTERY_CAPACITY  2200     // unit:mAh  
+#define BATTERY_CAPACITY  2200     // unit:mAh
 
 #define LTC2942_I2C_ALERT_RESPONSE  0x0C
 
@@ -574,7 +574,7 @@ void setup(void)
 {
   //Sensor power switch
   pinMode(WB_IO2, OUTPUT);
-  digitalWrite(WB_IO2, HIGH); 
+  digitalWrite(WB_IO2, HIGH);
 
 /*
  * The LED_BLUE  lights up to indicate Charge alert high.
@@ -587,7 +587,7 @@ void setup(void)
   digitalWrite(LED_GREEN, LOW);
 
   pinMode(INTERRUPT_PIN, INPUT);
-  
+
   time_t timeout = millis();
   Serial.begin(115200);
   while (!Serial)
@@ -601,20 +601,20 @@ void setup(void)
       break;
     }
   }
-  
+
   Serial.println("=====================================");
   Serial.println("RAK16002 Coulomb LTC2941 example");
   Serial.println("=====================================");
-  
+
   Wire.begin();
-    
+
   ltc2941.initialize();
   ltc2941.setBatteryFullMAh( BATTERY_CAPACITY , false);
-  ltc2941.setAccumulatedCharge(42352); // Set the current battery level to 1800 mAh. 
-  
+  ltc2941.setAccumulatedCharge(42352); // Set the current battery level to 1800 mAh.
+
   attachInterrupt(digitalPinToInterrupt(INTERRUPT_PIN), interruptRoutine, FALLING);
-  
-  
+
+
   ltc2941.setBatteryAlert( VBAT_3_0_V );
 
   ltc2941.setChargeThresholdHigh( 42353 );//CURRENT_CAPACITY
@@ -623,7 +623,7 @@ void setup(void)
   ltc2941.setAlertConfig( ALERT_MODE );
 
   /*
-  *  The LTC2941 will stop pulling down the AL/CC pin and will not respond 
+  *  The LTC2941 will stop pulling down the AL/CC pin and will not respond
   *  to further ARA requests until a new alert event occurs.
   */
   Wire.requestFrom(LTC2942_I2C_ALERT_RESPONSE, 1);
@@ -640,8 +640,8 @@ void loop(void)
 
   if (g_isr == true)
   {
-    g_isr = false; 
-    
+    g_isr = false;
+
     ltc2941.setAccumulatedCharge(42352); // Reset the battery level only for periodic presentation interruption.
 
     Wire.requestFrom((int16_t)0x0C, 1); // Send alert response protocol.
@@ -653,24 +653,24 @@ void loop(void)
     Status = ltc2941.getStatus();
     if(Status & 0x02)
     {
-       Serial.println("VBAT alert interrupt！"); 
+       Serial.println("VBAT alert interrupt！");
        digitalWrite(LED_GREEN, HIGH);
        digitalWrite(LED_BLUE, HIGH);
     }
     if(Status & 0x04)
     {
-       Serial.println("Charge alert low interrupt！"); 
+       Serial.println("Charge alert low interrupt！");
        digitalWrite(LED_GREEN, HIGH);
     }
     if(Status & 0x08)
     {
-       Serial.println("Charge alert high interrupt！"); 
+       Serial.println("Charge alert high interrupt！");
        digitalWrite(LED_BLUE, HIGH);
     }
   }
   coulomb = ltc2941.getCoulombs();
   mAh = ltc2941.getmAh();
-  percent = ltc2941.getPercent(); 
+  percent = ltc2941.getPercent();
 
   Serial.print(coulomb);
   Serial.print("C   ");

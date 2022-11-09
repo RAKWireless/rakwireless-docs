@@ -24,8 +24,8 @@ The Ethernet cable gland is designed to safely connect your outdoor equipment wi
 
 - Waterproof
 - Protection level: IP67
-- Working temperature: -20 to 60 ºC
+- Working temperature:
 - Mounting hole diameter: M25*1.5
-- Cable length: 250 mm
+- Cable length: 250&nbsp;mm
 - Casing connector: RJ45 female
 - Board connector: RJ45 male

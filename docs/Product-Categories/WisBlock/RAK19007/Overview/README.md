@@ -18,7 +18,6 @@ Thank you for choosing **RAK19007 WisBlock Base Board 2nd Gen** in your awesome 
 * [RAK19007 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK19007 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK19007.stp)
 * [24-Pin Female Connector 3D File (Sensor Slot)](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/F24S1003K6M.stp)
@@ -34,7 +33,7 @@ For convenience, there is a Type-C USB connector that is connected directly to W
 
 WisBlock modules are connected to the RAK19007 WisBlock Base board via high-speed board to board connectors. They provide secure and reliable interconnection to ensure the signal integrity of each data bus. A set of screws are used for fixing the modules, which makes it reliable even in an environment with lots of vibrations.
 
-You can also use a [RAK19005 WisBlock Sensor Extension Cable](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005) to position the WisBlock modules apart from the WisBlock Base board or in any part of your case. 
+You can also use a [RAK19005 WisBlock Sensor Extension Cable](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005) to position the WisBlock modules apart from the WisBlock Base board or in any part of your case.
 
 **RAK19007** has connectors for the following:
 
@@ -62,21 +61,21 @@ Additionally, it has two user-definable LEDs, one power supply/charging indicato
 
 ## Product Features
 
-* **Power supply**     
+* **Power supply**
     * Supports both 5&nbsp;V USB and 3.7&nbsp;V rechargeable battery as power supply
-    * 5&nbsp;V solar panel connector to recharge the battery in a remote solution     
-    * Power consumption control   
-    * **RAK19007** has an electronic load switch to power the **WisBlock modules**. The power supply for the **WisBlock modules** boards can be controlled by the **WisBlock Core** modules application.    
+    * 5&nbsp;V solar panel connector to recharge the battery in a remote solution
+    * Power consumption control
+    * **RAK19007** has an electronic load switch to power the **WisBlock modules**. The power supply for the **WisBlock modules** boards can be controlled by the **WisBlock Core** modules application.
 
-* **Size**    
+* **Size**
     * **RAK19007** has a size of only 30 x 60&nbsp;mm, which lets you create solutions that fit into the smallest housings.
 
 
-## Prerequisites 
+## Prerequisites
 
 WisBlock Base Board Gen2 is amazingly easy to use and requires only a Type-C USB cable to start developing with the system.
 
-:::warning ⚠️ WARNING    
-- Only 3.7-4.2&nbsp;V Rechargeable Li-Ion batteries are supported. Do not use other types of batteries with the system.    
-- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.    
+:::warning ⚠️ WARNING
+- Only 3.7-4.2&nbsp;V Rechargeable Li-Ion batteries are supported. Do not use other types of batteries with the system.
+- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
 :::

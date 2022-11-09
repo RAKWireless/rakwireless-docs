@@ -49,7 +49,7 @@ RAK7431 WisNode Bridge Serial together with RAK gateway and LoRa Server products
 
 RAK7431 WisNode Bridge Serial can convert the data of RS485 devices into LoRaWAN that can be sent to the cloud via a standard gateway. Cloud servers can also actively send data to RS485 terminals to achieve two-way data transmission. Using RAK7431 WisNode Bridge Serial, what used to be a costly and time-consuming cable line network deployment can be transformed into a rapid and cost-efficient wireless network deployment.
 
-An example would be using the RAK7249 LoRaWAN Gateway coupled with the RAK WisDM cloud management platform, in order to realize an end-to-end industrial field data acquisition and control system. Using the built-in LoRa Server, that comes standard with any RAK LoRaWAN Gateway, one could seamlessly achieve transmission of the end device data to any application server. Furthermore, the MQTT integration allows for a high level of security and efficiency.
+An example would be using the [RAK7249](https://store.rakwireless.com/products/rak7249-diy-outdoor-gateway?utm_source=RAK7249Max&utm_medium=Document&utm_campaign=BuyFromStore) LoRaWAN Gateway coupled with the RAK WisDM cloud management platform, in order to realize an end-to-end industrial field data acquisition and control system. Using the built-in LoRa Server, that comes standard with any RAK LoRaWAN Gateway, one could seamlessly achieve transmission of the end device data to any application server. Furthermore, the MQTT integration allows for a high level of security and efficiency.
 
 <rk-img
   src="/assets/images/wisnode/rak7431/datasheet/RAK7431-1.png"

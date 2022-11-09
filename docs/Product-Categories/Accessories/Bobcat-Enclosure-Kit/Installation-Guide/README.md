@@ -20,7 +20,7 @@ The package includes all the necessary parts for this project, without the Bobca
 1. PoE injector, power cord for the PoE injector, and PoE splitter
 2. Zip ties, PVC tape, and waterproof tape
 3. Pole mounting kit
-4. Antenna cable type RG316, with N-type female to RP-SMA male connectors for LoRa antenna. 
+4. Antenna cable type RG316, with N-type female to RP-SMA male connectors for LoRa antenna
 5. Cover sticker (for the LEDs)
 6. RAKBox-GW-4
 
@@ -48,9 +48,9 @@ The package includes all the necessary parts for this project, without the Bobca
 
 A detailed explanation of the procedure of putting the Bobcat Miner 300 inside the RAKBox-GW-4.
 
-1. Open the RAKBox-GW-4 enclosure and remove the top cover. 
+1. Open the RAKBox-GW-4 enclosure and remove the top cover.
 
-2. At the opening marked “LoRa1”, position and assemble the antenna connector. Use the remaining plugs to close the openings, as shown in Figure 4. 
+2. At the opening marked “LoRa1”, position and assemble the antenna connector. Use the remaining plugs to close the openings, as shown in Figure 4.
 
 <rk-img
   src="/assets/images/accessories/bobcat-enclosure-kit/installation/1.positioning.png"
@@ -95,7 +95,7 @@ A detailed explanation of the procedure of putting the Bobcat Miner 300 inside t
   caption="Connecting the PoE splitter to the miner"
 />
 
-6. Connect the antenna connector of the enclosure to the antenna connector of the device, as shown in Figure 10.
+6. Connect the antenna connector of the enclosure to the antenna connector of the device, as shown in **Figure 10**.
 
 <rk-img
   src="/assets/images/accessories/bobcat-enclosure-kit/installation/5.connecting-antenna-connector.png"
@@ -124,7 +124,7 @@ Because of the different variants regarding the connector of the Bobcat Miner 30
   caption="Connecting the network cable"
 />
 
-9. Close the top cover with twelve M4*12 screws. 
+9. Close the top cover with twelve M4*12 screws.
 
 
 ## Installation
@@ -163,9 +163,7 @@ The diameter of the pole that is supported by the brackets is 50-100&nbsp;mm. If
 ## Connecting the PoE Adapter
 
 1. Connect the Ethernet cable from the enclosure to the Ethernet port labeled POE on the adapter.
-
 2. Connect an Ethernet cable from your LAN network to the Ethernet port labeled LAN on the adapter.
-
 3. Connect one end of the power cord to the adapter. Connect the other end of the power cord to a power outlet.
 
 <rk-img
@@ -176,7 +174,7 @@ The diameter of the pole that is supported by the brackets is 50-100&nbsp;mm. If
 
 ## Weather Protection
 
-To better protect the Ethernet cable gland and the antenna connector from the weather, you need to cover them with PVC tape. 
+To better protect the Ethernet cable gland and the antenna connector from the weather, you need to cover them with PVC tape.
 
 1. Clean the surface area of the connector that will be wrapped. Wrap a layer of PVC tape with a 50% overlap according to the rotation direction of the connector. Continue wrapping the PVC tape to about 10&nbsp;mm below the end of the connector.
 

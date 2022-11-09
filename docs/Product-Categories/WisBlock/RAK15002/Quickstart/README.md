@@ -5,12 +5,11 @@ tags:
   - quickstart
   - wisblock
   - rak15002
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK15002 Quick Start Guide
-
 
 
 ## Prerequisite
@@ -19,16 +18,16 @@ next: ../Datasheet/
 
 Before going through each and every step on using the RAK15002 WisBlock module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
-- [RAK15002 WisBlock SD Card Module](https://store.rakwireless.com/collections/wisblock-storage/products/sd-card-module-rak15002)
+- [RAK15002 WisBlock SD Card Module](https://store.rakwireless.com/products/sd-card-module-rak15002?utm_source=RAK15002&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
-- [Solar charger (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -39,7 +38,7 @@ Before going through each and every step on using the RAK15002 WisBlock module, 
 
 ### Hardware Setup
 
-The RAK15002 is a Micro SD card module that can be mounted to the IO slot of the WisBlock Baseboard. It allows the usage of Micro SD cards as a data storage medium. This module uses a 4-line SPI interface to access the SD card and supports the card insert detection feature. 
+The RAK15002 is a Micro SD card module that can be mounted to the IO slot of the WisBlock Baseboard. It allows the usage of Micro SD cards as a data storage medium. This module uses a 4-line SPI interface to access the SD card and supports the card insert detection feature.
 
 For more information about RAK15002, refer to the [Datasheet](../Datasheet/).
 
@@ -66,9 +65,9 @@ The RAK15002 module can be mounted on the IO slot of the WisBlock Base board, as
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak15002/quickstart/removing_screw.png"
@@ -172,24 +171,24 @@ These are the quick links that go directly to the software guide for the specifi
 #include "SD.h"//http://librarymanager/All#SD
 
 /**
-   @brief  This function is used to read data from a file. 
+   @brief  This function is used to read data from a file.
 */
 void readFile(const char * path)
 {
   Serial.printf("Reading file: %s\n", path);
-  
+
   File file = SD.open(path, FILE_READ); // re-open the file for reading.
-  if (file) 
+  if (file)
   {
     Serial.println("Read from file: ");
-    
-    while (file.available()) 
+
+    while (file.available())
     {
       Serial.write(file.read());  // read from the file until there's nothing else in it.
     }
     file.close(); // close the file.
-  } 
-  else 
+  }
+  else
   {
     Serial.println("Failed to open file for reading."); // if the file didn't open, print an error.
     return;
@@ -197,7 +196,7 @@ void readFile(const char * path)
 }
 
 /**
-   @brief  This function is used to write data to a file. 
+   @brief  This function is used to write data to a file.
 */
 void writeFile(const char * path, const char * message)
 {
@@ -210,45 +209,45 @@ void writeFile(const char * path, const char * message)
     if(file.print(message))
     {
       Serial.println("File written.");
-    } 
-    else 
+    }
+    else
     {
       Serial.println("Write failed.");
     }
     file.close();
-  } 
-  else 
+  }
+  else
   {
-    Serial.println("Failed to open file for writing."); 
+    Serial.println("Failed to open file for writing.");
     return;
   }
 }
 
 /**
-   @brief  This function is used to delete a file. 
+   @brief  This function is used to delete a file.
 */
 void deleteFile(const char * path)
 {
   Serial.printf("Deleting file: %s\n", path);
-  
+
   if(SD.remove(path))
   {
     Serial.println("File deleted.");
-  } 
-  else 
+  }
+  else
   {
     Serial.println("Delete failed.");
   }
 }
 
 /**
-   @brief  This function is used to test read and write file speed. 
+   @brief  This function is used to test read and write file speed.
 */
 void testFileIO(const char * path)
 {
   Serial.println("Test read and write file speed.");
   Serial.printf("Writing file: %s\n", path);
-  
+
   static uint8_t buf[512];
   size_t len = 0;
   uint32_t start = millis();
@@ -268,13 +267,13 @@ void testFileIO(const char * path)
     Serial.printf("%u KB written for %u ms\n", 2048 * 512/1024, end);
     file.close();
   }
-  else 
+  else
   {
     Serial.println("Failed to open file for writing.");
     return;
   }
   delay(10);
-  
+
   file = SD.open(path, FILE_READ);
   if (file)
   {
@@ -294,15 +293,15 @@ void testFileIO(const char * path)
     end = millis() - start;
     Serial.printf("%u KB read for %u ms\n", flen/1024, end);
     file.close();
-  } 
-  else 
+  }
+  else
   {
     Serial.println("Failed to open file for reading.");
     return;
   }
 }
 
-void setup() 
+void setup()
 {
   // Initialize Serial for debug output
   time_t timeout = millis();
@@ -322,23 +321,23 @@ void setup()
   Serial.println("=====================================");
   Serial.println("RAK15002 SD Card Test.");
   Serial.println("=====================================");
-  
-  if (!SD.begin()) 
-  {    
+
+  if (!SD.begin())
+  {
     Serial.println("Card Mount Failed! Please make sure the card is inserted!");
     return;
   }
-  
-  deleteFile("RAK15002.txt"); 
+
+  deleteFile("RAK15002.txt");
 
   writeFile("RAK15002.txt", "RAK15002 SD Card Test.\n");
-  
+
   readFile("RAK15002.txt");
-  
+
   testFileIO("RAK15002.txt");
 }
 
-void loop() 
+void loop()
 {
 }
 
@@ -434,7 +433,7 @@ If you experience any error in compiling the example sketch, check the updated c
 #include "SPI.h"
 
 /**
-   @brief  This function is used to read data from a file. 
+   @brief  This function is used to read data from a file.
 */
 void readFile(fs::FS &fs, const char * path)
 {
@@ -456,7 +455,7 @@ void readFile(fs::FS &fs, const char * path)
 }
 
 /**
-   @brief  This function is used to write data to a file. 
+   @brief  This function is used to write data to a file.
 */
 void writeFile(fs::FS &fs, const char * path, const char * message)
 {
@@ -471,8 +470,8 @@ void writeFile(fs::FS &fs, const char * path, const char * message)
   if(file.print(message))
   {
     Serial.println("File written.");
-  } 
-  else 
+  }
+  else
   {
     Serial.println("Write failed.");
   }
@@ -480,7 +479,7 @@ void writeFile(fs::FS &fs, const char * path, const char * message)
 }
 
 /**
-   @brief  This function is used to append data to a file. 
+   @brief  This function is used to append data to a file.
 */
 void appendFile(fs::FS &fs, const char * path, const char * message)
 {
@@ -495,8 +494,8 @@ void appendFile(fs::FS &fs, const char * path, const char * message)
   if(file.print(message))
   {
     Serial.println("Message appended.");
-  } 
-  else 
+  }
+  else
   {
     Serial.println("Append failed.");
   }
@@ -504,7 +503,7 @@ void appendFile(fs::FS &fs, const char * path, const char * message)
 }
 
 /**
-   @brief  This function is used to delete a file. 
+   @brief  This function is used to delete a file.
 */
 void deleteFile(fs::FS &fs, const char * path)
 {
@@ -512,21 +511,21 @@ void deleteFile(fs::FS &fs, const char * path)
   if(fs.remove(path))
   {
     Serial.println("File deleted.");
-  } 
-  else 
+  }
+  else
   {
     Serial.println("Delete failed.");
   }
 }
 
 /**
-   @brief  This function is used to test read and write file speed. 
+   @brief  This function is used to test read and write file speed.
 */
 void testFileIO(fs::FS &fs, const char * path)
 {
   Serial.println("Test read and write file speed.");
   Serial.printf("Writing file: %s\n", path);
-    
+
   static uint8_t buf[512];
   size_t len = 0;
   uint32_t start = millis();
@@ -543,9 +542,9 @@ void testFileIO(fs::FS &fs, const char * path)
     }
     end = millis() - start;
     Serial.printf("%u KB written for %u ms\n", 2048 * 512/104, end);
-    file.close();  
+    file.close();
   }
-  else 
+  else
   {
     Serial.println("Failed to open file for writing.");
     return;
@@ -570,8 +569,8 @@ void testFileIO(fs::FS &fs, const char * path)
     end = millis() - start;
     Serial.printf("%u KB read for %u ms\n", flen/1024, end);
     file.close();
-  } 
-  else 
+  }
+  else
   {
     Serial.println("Failed to open file for reading.");
     return;
@@ -604,8 +603,8 @@ void setup()
     return;
   }
 
-  deleteFile(SD, "/RAK15002.txt"); 
-  
+  deleteFile(SD, "/RAK15002.txt");
+
   writeFile(SD, "/RAK15002.txt", "RAK15002 SD Card Test.\n");
 
   readFile(SD, "/RAK15002.txt");
@@ -707,24 +706,24 @@ RAK11200 requires the BOOT0 pin to be configured properly before uploading. If n
 #include "SD.h"//http://librarymanager/All#SD
 
 /**
-   @brief  This function is used to read data from a file. 
+   @brief  This function is used to read data from a file.
 */
 void readFile(const char * path)
 {
   Serial.printf("Reading file: %s\n", path);
-  
+
   File file = SD.open(path, FILE_READ); // re-open the file for reading.
-  if (file) 
+  if (file)
   {
     Serial.println("Read from file: ");
-    
-    while (file.available()) 
+
+    while (file.available())
     {
       Serial.write(file.read());  // read from the file until there's nothing else in it.
     }
     file.close(); // close the file.
-  } 
-  else 
+  }
+  else
   {
     Serial.println("Failed to open file for reading."); // if the file didn't open, print an error.
     return;
@@ -732,7 +731,7 @@ void readFile(const char * path)
 }
 
 /**
-   @brief  This function is used to write data to a file. 
+   @brief  This function is used to write data to a file.
 */
 void writeFile(const char * path, const char * message)
 {
@@ -745,45 +744,45 @@ void writeFile(const char * path, const char * message)
     if(file.print(message))
     {
       Serial.println("File written.");
-    } 
-    else 
+    }
+    else
     {
       Serial.println("Write failed.");
     }
     file.close();
-  } 
-  else 
+  }
+  else
   {
-    Serial.println("Failed to open file for writing."); 
+    Serial.println("Failed to open file for writing.");
     return;
   }
 }
 
 /**
-   @brief  This function is used to delete a file. 
+   @brief  This function is used to delete a file.
 */
 void deleteFile(const char * path)
 {
   Serial.printf("Deleting file: %s\n", path);
-  
+
   if(SD.remove(path))
   {
     Serial.println("File deleted.");
-  } 
-  else 
+  }
+  else
   {
     Serial.println("Delete failed.");
   }
 }
 
 /**
-   @brief  This function is used to test read and write file speed. 
+   @brief  This function is used to test read and write file speed.
 */
 void testFileIO(const char * path)
 {
   Serial.println("Test read and write file speed.");
   Serial.printf("Writing file: %s\n", path);
-  
+
   static uint8_t buf[512];
   size_t len = 0;
   uint32_t start = millis();
@@ -803,13 +802,13 @@ void testFileIO(const char * path)
     Serial.printf("%u KB written for %u ms\n", 2048 * 512/1024, end);
     file.close();
   }
-  else 
+  else
   {
     Serial.println("Failed to open file for writing.");
     return;
   }
   delay(10);
-  
+
   file = SD.open(path, FILE_READ);
   if (file)
   {
@@ -829,15 +828,15 @@ void testFileIO(const char * path)
     end = millis() - start;
     Serial.printf("%u KB read for %u ms\n", flen/1024, end);
     file.close();
-  } 
-  else 
+  }
+  else
   {
     Serial.println("Failed to open file for reading.");
     return;
   }
 }
 
-void setup() 
+void setup()
 {
   // Initialize Serial for debug output
   time_t timeout = millis();
@@ -857,23 +856,23 @@ void setup()
   Serial.println("=====================================");
   Serial.println("RAK15002 SD Card Test.");
   Serial.println("=====================================");
-  
-  if (!SD.begin()) 
-  {    
+
+  if (!SD.begin())
+  {
     Serial.println("Card Mount Failed! Please make sure the card is inserted!");
     return;
   }
-  
-  deleteFile("RAK15002.txt"); 
+
+  deleteFile("RAK15002.txt");
 
   writeFile("RAK15002.txt", "RAK15002 SD Card Test.\n");
-  
+
   readFile("RAK15002.txt");
-  
+
   testFileIO("RAK15002.txt");
 }
 
-void loop() 
+void loop()
 {
 }
 

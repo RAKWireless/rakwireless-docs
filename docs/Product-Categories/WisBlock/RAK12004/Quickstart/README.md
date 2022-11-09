@@ -4,8 +4,8 @@ tags:
   - quickstart
   - wisblock
   - RAK12004
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK12004 Quick Start Guide
@@ -17,12 +17,12 @@ Before going through each and every step on using RAK12004 WisBlock MQ2 module, 
 
 #### Hardware
 
-- [RAK12004 WisBlock MQ2 Gas Sensor Module](https://store.rakwireless.com/products/mq2-gas-sensor-module-rak12004)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) with IO slot 
+- [RAK12004 WisBlock MQ2 Gas Sensor Module](https://store.rakwireless.com/products/mq2-gas-sensor-module-rak12004?utm_source=RAK12004&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) with IO slot
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable) (required)
-- [Solar charger](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable) (optional)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -55,9 +55,9 @@ As shown in **Figure 2**, the location for the IO slot is properly marked by sil
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12004/quickstart/16.removing-screws.png"
@@ -82,7 +82,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12004 uses I2C and IO pins it can cause possible conflict especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12004 uses I2C and IO pins it can cause possible conflict especially on some IO modules.
 :::
 
 After all this setup, you can now connect the battery and USB cable to start programming your WisBlock Core.
@@ -133,7 +133,7 @@ The RAK12004 has an electronic sensor used for sensing the concentration of gase
 
 4. On the Arduino IDE, select **Sketch** -> **Include Library** -> **Manage Libraries**, as shown in **Figure 9**.
 
-5. On the **Library Manager** text area, type **RAKwireless MQx**. 
+5. On the **Library Manager** text area, type **RAKwireless MQx**.
 
 <rk-img
   src="/assets/images/wisblock/rak12004/quickstart/rak-mqx-lib-manager.png"
@@ -223,7 +223,7 @@ This procedure was tested only on Windows 10 and Ubuntu.
 
 The table below shows the PlatformIO installation directory for each operating system:
 
-  
+
 | PlatformIO path on different OS |                                      |
 | :------------------------------ | :----------------------------------- |
 | Windows 10                      | `%UserProfile%\.platformio\`         |
@@ -247,7 +247,7 @@ The table below shows the PlatformIO installation directory for each operating s
   caption="RAK patch installed on Windows"
 />
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 In case of any platform update on PlatformIO, the **RAK_PATH** script must be executed again after the platform update.
 :::
 
@@ -261,7 +261,7 @@ In case of any platform update on PlatformIO, the **RAK_PATH** script must be ex
   caption="Import RAK12004 Arduino Project"
 />
 
-13. Select your preferred **WisBlock Core** and check "**Use Libraries installed by the Arduino IDE**" option, as shown in **Figure 19**. 
+13. Select your preferred **WisBlock Core** and check "**Use Libraries installed by the Arduino IDE**" option, as shown in **Figure 19**.
 
 14. Then choose the directory of the original RAK12004 Arduino Project.
 

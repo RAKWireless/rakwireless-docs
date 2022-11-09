@@ -25,7 +25,7 @@ Before going through each and every step in the installation guide of the RAK107
 
 #### Hardware Tools
 
-1. **RAK10701-L Field Tester for LoRaWAN**
+1. [RAK10701-L Field Tester for LoRaWAN](https://store.rakwireless.com/products/field-tester-for-lorawan-rak10701?variant=42437597167814?utm_source=RAK10701L&utm_medium=Document&utm_campaign=BuyFromStore)
 2. LoRa SubGhz Antenna with RP-SMA connector
 3. USB Type-C Cable
 4. Windows/Linux/macOS for PC or iOS/Android for mobile

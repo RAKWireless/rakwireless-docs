@@ -18,7 +18,6 @@ Thank you for choosing **RAK18000 WisBlock PDM Stereo Microphone Module** in you
 * [RAK18000 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK18000 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK18000.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
@@ -46,22 +45,22 @@ The RAK18000 is a digital microphone module that is designed to detect sounds an
 
 ## Product Features
 
-* **Module specifications**    
+* **Module specifications**
     - Voltage Supply: 3.3&nbsp;V
     - Current Consumption: 5&nbsp;µA to 650&nbsp;µA
     - Chipset: ST MP34DT06J
     - 64&nbsp;dB signal-to-noise ratio
-    - –26&nbsp;dBFS ± 1&nbsp;dB sensitivity 
-    - Stereo microphone 2 x MP34DT06J   
+    - –26&nbsp;dBFS ± 1&nbsp;dB sensitivity
+    - Stereo microphone 2 x MP34DT06J
     - Low power consumption
-  
-* **Size**    
-    * 25 x 15&nbsp;mm  
+
+* **Size**
+    * 25 x 15&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK18000**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK18000** module. Furthermore, you need a **WisBlock Core** module to use the module.   
+To use a **RAK18000**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK18000** module. Furthermore, you need a **WisBlock Core** module to use the module.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 Make sure to fix the module with the screws to ensure a proper function.
 :::

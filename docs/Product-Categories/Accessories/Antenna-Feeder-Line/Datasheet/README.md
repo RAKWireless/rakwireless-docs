@@ -1,7 +1,7 @@
 ---
 prev: ../Overview/
 next: false
-tags: 
+tags:
   - Antenna Feeder Line
   - datasheet
 rak_desc: Provides comprehensive information about your Antenna Feeder Line to help you use it. This information includes technical specifications, characteristics, and requirements.
@@ -15,11 +15,11 @@ rak_img: /assets/images/accessories/antenna-feeder-line/datasheet/cable.png
 
 ### Description
 
-Antenna Feeder Line cable for **WisGate Edge Prime and Max (RAK7240/7249).**  This Feeder Line cable allows you to better positioning the gateway antennas for optimal coverage. You can choose between 1.5m, 3m, and 5m cable length. 
+Antenna Feeder Line cable for **WisGate Edge Prime and Max (RAK7240/7249).**  This Feeder Line cable allows you to better positioning the gateway antennas for optimal coverage. You can choose between 1.5&nbsp;m, 3&nbsp;m, and 5&nbsp;m cable length.
 
 ### Features
 
-- Length variants: 1.5m, 3m, 5m
+- Length variants: 1.5&nbsp;m, 3&nbsp;m, & 5&nbsp;m
 - Connector: N-type female to N-type male
 - Frequency Range: 0~3&nbsp;GHz
 - Cable type: LMR195
@@ -44,7 +44,7 @@ Antenna Feeder Line cable for **WisGate Edge Prime and Max (RAK7240/7249).**  Th
 | Impedance                   | 50 Ohms                      |
 | Color                       | Black                        |
 | Connector type              | N-type female to N-type male |
-| Operation temperature (°C)  | -40&nbsp;°C ~ +85&nbsp;°C    |
+| Operation temperature (°C)  | -40°&nbsp;C ~ +85°&nbsp;C    |
 | Humidity range              | 5%~95%                       |
 
 ### Signal Loss Report

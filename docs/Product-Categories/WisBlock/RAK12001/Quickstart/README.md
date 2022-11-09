@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK12001
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK12001 Quick Start Guide
@@ -20,12 +20,12 @@ Before going through each and every step on using RAK12001 WisBlock Fingerprint 
 #### Hardware
 
 - [RAK12001 WisBlock Fingerprint Sensor Module](https://store.rakwireless.com/products/rak12001-fingerprint-module?utm_source=RAK12001&utm_medium=Document&utm_campaign=BuyFromStore)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [RAK19008 WisBlock IO Extension Cable (optional)](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008)
-- [Li-Ion/LiPo battery (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
-- [Solar charger (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
+- [RAK19008 WisBlock IO Extension Cable (optional)](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008?utm_source=RAK19008&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -60,9 +60,9 @@ As shown in **Figure 2**, the location for the sensor slots is properly marked b
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12001/quickstart/removing_screw.png"
@@ -87,8 +87,8 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. 
-:::  
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
+:::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
@@ -143,7 +143,7 @@ In this example, you will be able to enroll and verify your fingerprint.
 //defines
 #define R307_TOUCH   WB_IO1   //Finger touch induction signal output, low level output when there are fingers
 //add your fingerprint scanner's password and device address here
-#define R307_PASSWORD  0x00000000    //default password is 0x00000000 
+#define R307_PASSWORD  0x00000000    //default password is 0x00000000
 #define R307_ADDRESS   0xFFFFFFFF    //default address is 0xFFFFFFFF
 //initialize the object with the correct password and address
 //if you want to use the default values, pass nothing
@@ -153,7 +153,7 @@ uint8_t enrollFinger(uint16_t location);
 uint8_t finger_detect(void);
 void print_help(void);
 
-void setup() 
+void setup()
 {
   //not all boards support all baud rates
   //check your board's documentation for more info
@@ -169,11 +169,11 @@ void setup()
      {
        break;
      }
-   } 
-  pinMode(WB_IO2,OUTPUT); 
+   }
+  pinMode(WB_IO2,OUTPUT);
   digitalWrite(WB_IO2,HIGH);  //power on for Finger detection power
   r307_fps.begin(57600);
-  pinMode(R307_TOUCH,INPUT_PULLUP); 
+  pinMode(R307_TOUCH,INPUT_PULLUP);
   Serial.println();
   Serial.println("R30X Fingerprint Example Sketch");
   Serial.println("===============================");
@@ -185,7 +185,7 @@ void setup()
   Serial.print(F("Verifying password 0x"));
   Serial.println(R307_PASSWORD, HEX);
   uint8_t response = r307_fps.verifyPassword(R307_PASSWORD);
-  if(response == 0) 
+  if(response == 0)
   {
     #if !defined(FPS_DEBUG)
       Serial.println(F("Successful\n"));
@@ -193,19 +193,19 @@ void setup()
       Serial.println();
     #endif
   }
-  else 
+  else
   {
     Serial.println(F("Failed. Check your password. Otherwise try with default one.\n"));
   }
-   print_help();  
-   
+   print_help();
+
   //this is optional
   // Serial.println(F("Setting new address.."));
   // response = r307_fps.setAddress(0xFFFFFFFF);
   // Serial.println();
 }
 //infinite loop
-void loop() 
+void loop()
 {
   uint8_t response = 0;
   String inputString = "";
@@ -213,24 +213,24 @@ void loop()
   String firstParam = "";
   String secondParam = "";
   String thirdParam = "";
-  
+
   //send commands and parameters for each operation
   //items are separated by single whitespace
   //you can send up to 3 parameters
   if(Serial.available()) //monitor the serial interface
-  {  
+  {
     inputString = Serial.readString();  //read the contents of serial buffer as string
     Serial.print("input Command : ");
     Serial.println(inputString);
-  
+
     //-------------------------------------------------------------------------//
     uint8_t posCount = 0;
     int indexOfSpace = 0;
 
-    while(inputString.indexOf(" ") != -1) 
+    while(inputString.indexOf(" ") != -1)
     { //loop until all whitespace chars are found
       indexOfSpace = inputString.indexOf(" ");  //get the position of first whitespace
-      if(indexOfSpace != -1) 
+      if(indexOfSpace != -1)
       {  //if a whitespace is found
         if(posCount == 0) //the first one will be command string
           commandString = inputString.substring(0, indexOfSpace); //end char is exclusive
@@ -259,36 +259,36 @@ void loop()
     //separate and print the received command and parameters
     Serial.print("Command string = ");
     Serial.println(commandString);
-    
-    if(firstParam != "") 
+
+    if(firstParam != "")
     {
       Serial.print(F("First param = "));
       Serial.println(firstParam);
     }
-    if(secondParam != "") 
+    if(secondParam != "")
     {
       Serial.print(F("Second param = "));
       Serial.println(secondParam);
     }
-    if(thirdParam != "") 
+    if(thirdParam != "")
     {
       Serial.print(F("Third param = "));
       Serial.println(thirdParam);
     }
-    
+
     Serial.println();
     //-------------------------------------------------------------------------//
     //deletes all the templates in the library
     //this command has no parameters
     //eg. clrlib
-    if(commandString == "clrlib") 
+    if(commandString == "clrlib")
     {
       response = r307_fps.clearLibrary();
     }
     //-------------------------------------------------------------------------//
     //get templates count
     //eg. tmpcnt
-    else if(commandString == "tmpcnt") 
+    else if(commandString == "tmpcnt")
     {
       Serial.println(F("Reading templates count.."));
       response = r307_fps.getTemplateCount();
@@ -296,7 +296,7 @@ void loop()
     //-------------------------------------------------------------------------//
     //read system parameters
     //eg. readsys
-    else if(commandString == "readsys") 
+    else if(commandString == "readsys")
     {
       response = r307_fps.readSysPara();
     }
@@ -305,7 +305,7 @@ void loop()
     //this command has a single parameter
     //value should be 32, 64, 128 or 256
     //eg. setdatlen 256
-    else if(commandString == "setdatlen") 
+    else if(commandString == "setdatlen")
     {
       uint16_t length = firstParam.toInt();
       response = r307_fps.setDataLength(length);
@@ -314,7 +314,7 @@ void loop()
     //capture and range search library
     //this command has three parameters
     //eg. capranser 3000 1 10
-    else if(commandString == "capranser") 
+    else if(commandString == "capranser")
     {
       uint16_t timeOut = firstParam.toInt();  //first parameter in milliseconds
       uint16_t startLocation = secondParam.toInt(); //second parameter
@@ -328,7 +328,7 @@ void loop()
     //-------------------------------------------------------------------------//
     //capture and full search library
     //eg. capfulser
-    else if(commandString == "capfulser") 
+    else if(commandString == "capfulser")
     {
       Serial.println(F("Capture and full search fingerprint.."));
       delay(1000);
@@ -341,7 +341,7 @@ void loop()
     //you need to scan the finger twice
     //follow the on-screen instructions
     //eg. enroll
-    else if(commandString == "enroll") 
+    else if(commandString == "enroll")
     {
       uint16_t location = firstParam.toInt(); //converts String object to int
       enrollFinger(location);
@@ -350,7 +350,7 @@ void loop()
     //verify 4 byte password
     //password should be sent as hex string
     //eg. verpwd FF16FF16
-    else if(commandString == "verpwd") 
+    else if(commandString == "verpwd")
     {
       const char* hexString = firstParam.c_str(); //convert String object to C-style string
       uint32_t password = strtoul(hexString, NULL, 16);  //convert hex formatted C-style string to int value
@@ -360,7 +360,7 @@ void loop()
     //set 4 byte password sent in hex format
     //password should be sent as hex string
     //eg. setpwd FF16FF16
-    else if(commandString == "setpwd") 
+    else if(commandString == "setpwd")
     {
       const char* hexString = firstParam.c_str(); //convert String object to C-style string
       uint32_t password = strtoul(hexString, NULL, 16);  //convert hex formatted C-style string to int value
@@ -370,7 +370,7 @@ void loop()
     //set 4 byte address sent in hex format
     //address should be sent as hex string
     //eg. setaddr FF16FF16
-    else if(commandString == "setaddr") 
+    else if(commandString == "setaddr")
     {
       const char *hexString = firstParam.c_str(); //convert String object to C-style string
       uint32_t address = strtoul(hexString, NULL, 16);  //convert hex formatted C-style string to int value
@@ -380,7 +380,7 @@ void loop()
     //set baudrate
     //baudrate must be integer multiple of 96000. max is 115200
     //eg. setbaud 115200
-    else if(commandString == "setbaud") 
+    else if(commandString == "setbaud")
     {
       uint32_t baudrate = firstParam.toInt();
       response = r307_fps.setBaudrate(baudrate);
@@ -389,7 +389,7 @@ void loop()
     //set baudrate
     //baudrate must be integer multiple of 96000. max is 115200
     //eg. setbaud 115200
-    else if(commandString == "reinitprt") 
+    else if(commandString == "reinitprt")
     {
       uint32_t baudrate = firstParam.toInt();
       r307_fps.reinitializePort(baudrate);
@@ -400,7 +400,7 @@ void loop()
     //security level value must be 1-5
     //deafault is usually 2
     //eg. setseclvl 4
-    else if(commandString == "setseclvl") 
+    else if(commandString == "setseclvl")
     {
       uint8_t level = firstParam.toInt();
       response = r307_fps.setSecurityLevel(level);
@@ -408,21 +408,21 @@ void loop()
     //-------------------------------------------------------------------------//
     //scan finger image and save to image buffer
     //eg. genimg
-    else if(commandString == "genimg") 
-    {      
+    else if(commandString == "genimg")
+    {
       time_t timeout = millis();
       while(((millis() - timeout) < 5000)&&(digitalRead(R307_TOUCH) != 0))
       {
         Serial.println("Please put your finger on the sensor.");
         delay(200);
       }
-      response = r307_fps.generateImage();           
+      response = r307_fps.generateImage();
     }
     //-------------------------------------------------------------------------//
     //generate character file from image
     //buffer Id should be 1 or 2
     //eg. genchar 1
-    else if(commandString == "genchar") 
+    else if(commandString == "genchar")
     {
       uint8_t bufferId = firstParam.toInt();
       response = r307_fps.generateCharacter(bufferId);
@@ -432,7 +432,7 @@ void loop()
     //template is the digital format of a fingerprint
     //generated template will be available on both buffers 1 and 2
     //eg. gentmp
-    else if(commandString == "gentmp") 
+    else if(commandString == "gentmp")
     {
       response = r307_fps.generateTemplate();
     }
@@ -441,7 +441,7 @@ void loop()
     //buffer ID should be 1 or 2
     //location should be #1 - #10000 (don't send the "#" with command)
     //eg. savtmp 1 32
-    else if(commandString == "savtmp") 
+    else if(commandString == "savtmp")
     {
       uint8_t bufferId = firstParam.toInt();
       uint16_t location = secondParam.toInt();
@@ -452,7 +452,7 @@ void loop()
     //buffer ID should be 1 or 2
     //location should be #1 - #10000 (don't send the "#" with command)
     //eg. lodtmp 1 32
-    else if(commandString == "lodtmp") 
+    else if(commandString == "lodtmp")
     {
       uint8_t bufferId = firstParam.toInt();
       uint16_t location = secondParam.toInt();
@@ -462,7 +462,7 @@ void loop()
     //delete one or more templates from library
     //to delete a single template, simply send 1 as quantity or count
     //eg. deltmp 5 1
-    else if(commandString == "deltmp") 
+    else if(commandString == "deltmp")
     {
       uint16_t startLocation = firstParam.toInt();  //start location in library
       uint16_t count = secondParam.toInt(); //quantity to delete
@@ -472,7 +472,7 @@ void loop()
     //precisely match templates on the buffers 1 and 2
     //returns match score (matchScore)
     //eg. mattmp
-    else if(commandString == "mattmp") 
+    else if(commandString == "mattmp")
     {
       response = r307_fps.matchTemplates();
     }
@@ -481,7 +481,7 @@ void loop()
     //buffer ID should be 1 or 2
     //start location cane be #1 to #1000 (don't send the "#" with command)
     //eg. serlib 1 10 50
-    else if(commandString == "serlib") 
+    else if(commandString == "serlib")
     {
       uint8_t bufferId = firstParam.toInt();
       uint16_t startLocation = secondParam.toInt();
@@ -492,25 +492,25 @@ void loop()
     //print command help information
     else if(commandString == "help")
     {
-       print_help();  
+       print_help();
     }
     //-------------------------------------------------------------------------//
     //unknown command
-    else 
+    else
     {
       Serial.print(F("Invalid command : "));
       Serial.println(commandString);
     }
 
-    if (response)  
+    if (response)
     {
       Serial.print("response == ");
       Serial.println(response);
-    }   
+    }
     Serial.println("\n.......END OF OPERATION.......\n");
     delay(2000);
   }
- 
+
   finger_detect();
 }
 uint8_t finger_detect(void)
@@ -523,7 +523,7 @@ uint8_t finger_detect(void)
     {
       Serial.println("Finger detected");
       return 1;
-    }  
+    }
   }
   return 0;
 }
@@ -534,7 +534,7 @@ uint8_t finger_detect(void)
 //the library location actually starts at 0, but I have made it to 1 to avoid confusion
 //therefore a 1 will be substracted from your location automatically
 //The finger needs to be scanned twice at steps #1 and #2
-uint8_t enrollFinger(uint16_t location) 
+uint8_t enrollFinger(uint16_t location)
 {
   //enroll new fingerprint
   Serial.println("=========================");
@@ -542,7 +542,7 @@ uint8_t enrollFinger(uint16_t location)
   Serial.println("=========================");
 
   if((location > 1000) || (location < 1)) //if not in range (1-1000)
-  { 
+  {
     Serial.println();
     Serial.println("Enrolling failed.");
     Serial.println("Bad location.");
@@ -559,22 +559,22 @@ uint8_t enrollFinger(uint16_t location)
 
   uint8_t response = r307_fps.generateImage(); //scan the finger
 
-  if(response != 0) 
+  if(response != 0)
   {
     Serial.println("Scan #1: ERROR - Scanning failed. Please try again.");
   }
-  else 
+  else
   {
     Serial.println("Scan #1: Scanning success.");
     Serial.println();
     delay(2000);
     response = r307_fps.generateCharacter(1);  //generate the character file from image and save to buffer 1
 
-    if(response != 0) 
+    if(response != 0)
     {
       Serial.println("Scan #1: ERROR - Template generation failed. Please try again.");
     }
-    else 
+    else
     {
       Serial.println();
       Serial.println("Scan #1: Template generation success.");
@@ -586,39 +586,39 @@ uint8_t enrollFinger(uint16_t location)
       Serial.println();
       response = r307_fps.generateImage(); //scan the finger for second time
 
-      if(response != 0) 
+      if(response != 0)
       {
         Serial.println("Scan #2: ERROR - Scanning failed. Please try again.");
       }
-      else 
+      else
       {
         Serial.println();
         Serial.println("Scan #2: Scanning success.");
         delay(2000);
         response = r307_fps.generateCharacter(2);  //generate the character file from image and save to buffer 2
 
-        if(response != 0) 
+        if(response != 0)
         {
           Serial.println("Scan #2: Template generation failed. Please try again.");
         }
-        else 
+        else
         {
           Serial.println();
           response = r307_fps.generateTemplate();  //combine the two buffers and generate a template
           delay(2000);
-          if(response == 0) 
+          if(response == 0)
           {
             Serial.println();
             response = r307_fps.saveTemplate(1, location); //save the template to the specified location in library
             delay(2000);
-            if(response == 0) 
+            if(response == 0)
             {
               Serial.print("-- Fingerprint enrolled at ID #");
               Serial.print(location);
               Serial.println(" successfully --");
             }
           }
-          else if(response == FPS_RESP_ENROLLMISMATCH) 
+          else if(response == FPS_RESP_ENROLLMISMATCH)
           {
             Serial.println("ERROR : Fingerprints do not belong to same finger. Please try again.");
           }
@@ -631,7 +631,7 @@ uint8_t enrollFinger(uint16_t location)
 }
 void print_help(void)
 {
-  Serial.println(F("")); 
+  Serial.println(F(""));
   Serial.println(F("----- COMMANDS -----"));
   Serial.println(F("help - command help information"));
   Serial.println(F("clrlib - clear library"));
@@ -655,7 +655,7 @@ void print_help(void)
   Serial.println(F("deltmp <start location> <quantity> - delete one or more templates from library"));
   Serial.println(F("mattmp - precisely match two templates available on buffers"));
   Serial.println(F("serlib <buffer id> <start location> <quantity> - search library for content on the buffer"));
-  Serial.println(F(""));  
+  Serial.println(F(""));
 }
 
 ```

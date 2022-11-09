@@ -16,12 +16,12 @@ rak_img: /assets/images/accessories/r012-4800500/poe-injector-illustration.png
 
 ### Product Description
 
-The 100M RAK PoE injector, model R012-4800500 is a device that allows you to combine power and network connectivity to your PoE enabled devices using the same Cat5/5e or Cat6 twisted pair cable. It is suitable to be used with WisGate Edge Series Gateways, WisGate Developer PoE enabled Gateways, and WisHAT 9003 PoE Raspberry Pi Hat.
+The 100M RAK PoE injector, model R012-4800500 is a device that allows you to combine power and network connectivity to your PoE enabled devices using the same Cat5/5e or Cat6 twisted pair cable. It is suitable to be used with WisGate Edge Series Gateways, WisGate Developer PoE-enabled Gateways, and WisHAT 9003 PoE Raspberry Pi Hat.
 
 ### Product Features
 
 - Input: 100-240&nbsp;V AC (50~60&nbsp;Hz)
-- Output: 48.0&nbsp;V<sub>DC</sub> 0.5&nbsp;A 
+- Output: 48.0&nbsp;V<sub>DC</sub> 0.5&nbsp;A
 - Overcurrent protection
 - Supports 10/100&nbsp;Mbps Ethernet
 
@@ -37,7 +37,7 @@ The 100M RAK PoE injector, model R012-4800500 is a device that allows you to com
 
 #### Interfaces
 
-- 1x AC Input 100-240&nbsp;V power input 
+- 1x AC Input 100-240&nbsp;V power input
 
 <rk-img
   src="/assets/images/accessories/r012-4800500/poe-injector-2.svg"
@@ -60,7 +60,7 @@ The 100M RAK PoE injector, model R012-4800500 is a device that allows you to com
 | 7 and 8        | Negative                                                              |
 | 1, 2, 3, and 6 | For data communication, directly connected to RJ45 LAN 1, 2, 3, and 6 |
 
-- 1x LAN RJ45 connection to the network 
+- 1x LAN RJ45 connection to the network
 
 | Pin            | Designation                                                             |
 | -------------- | ----------------------------------------------------------------------- |

@@ -4,8 +4,8 @@ tags:
   - quickstart
   - wisblock
   - RAK13001
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 
@@ -17,18 +17,18 @@ next: ../Datasheet/
 
 Before going through each and every step on using the RAK13001 WisBlock module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
-- [RAK13001 WisBlock Relay IO Module](https://store.rakwireless.com/products/relay-io-rak13001?variant=40103035928774)
+- [RAK13001 WisBlock Relay IO Module](https://store.rakwireless.com/products/relay-io-rak13001?utm_source=RAK13001&utm_medium=Document&utm_campaign=BuyFromStore)
 - [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 - LED
-- Resistor (1 kOhm)
+- 1&nbsp;kΩ Resistor
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -50,7 +50,7 @@ For input, RAK13001 uses an opto-couple as isolation, and it supports wet contac
   caption="RAK13001 Block Diagram"
 />
 
-:::warning ⚠️ WARNING 
+:::warning ⚠️ WARNING
 <rk-img
   src="/assets/images/wisblock/rak13001/quickstart/warning.png"
   width="90%"
@@ -60,7 +60,7 @@ For input, RAK13001 uses an opto-couple as isolation, and it supports wet contac
 
 ### Hardware Setup
 
-RAK13001 is a WisBlock Interface module that extends the WisBlock system to be used on isolated digital input and output applications. There is one digital output that is isolated by an electromechanical relay which is used to programmatically switch on/off devices operating at high voltage or current applications and one digital input isolated by an opto-couple. The isolated input can be configured as wet contact (default mode) or dry contact. 
+RAK13001 is a WisBlock Interface module that extends the WisBlock system to be used on isolated digital input and output applications. There is one digital output that is isolated by an electromechanical relay which is used to programmatically switch on/off devices operating at high voltage or current applications and one digital input isolated by an opto-couple. The isolated input can be configured as wet contact (default mode) or dry contact.
 
 For more information about RAK13001, refer to the [Datasheet](../Datasheet/).
 
@@ -91,7 +91,7 @@ The RAK13001 module can be mounted on the IO slot of the WisBlock Base board as 
 
 ##### RAK13001 Connector Crimping Mechanism
 
-The RAK13001 features a fast-crimping terminal connector to simplify and ensure the wiring process on the fields. The fast-crimping terminal can support cable with a width between 20&nbsp;AWG to 24&nbsp;AWG. The usual stripping length is around 6 to 7&nbsp;mm. 
+The RAK13001 features a fast-crimping terminal connector to simplify and ensure the wiring process on the fields. The fast-crimping terminal can support cable with a width between 20&nbsp;AWG to 24&nbsp;AWG. The usual stripping length is around 6 to 7&nbsp;mm.
 
 As shown in **Figure 5**, during the crimping process, you should first press down and maintain the spring head of the crimping terminal firmly, then insert the stripped cable head into the corresponding connector’s hole. Once inserted correctly, release the spring head, and the crimping process is completed.
 
@@ -103,9 +103,9 @@ As shown in **Figure 5**, during the crimping process, you should first press do
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak13001/quickstart/16.removing-screws.png"
@@ -193,11 +193,11 @@ These are the quick links that go directly to the software guide for the specifi
 #define OC_PIN    WB_IO3
 #define RELAY_PIN WB_IO4
 
-void setup() 
+void setup()
 {
   pinMode(WB_IO2, OUTPUT);
   digitalWrite(WB_IO2, HIGH);
-  
+
   // Initialize Serial for debug output
   time_t timeout = millis();
   Serial.begin(115200);
@@ -212,12 +212,12 @@ void setup()
       break;
     }
   }
-  
+
   pinMode(RELAY_PIN,OUTPUT);
   pinMode(OC_PIN,INPUT);
 }
 
-void loop() 
+void loop()
 {
   static uint8_t count=0;
   count++;
@@ -235,7 +235,7 @@ void loop()
   {
     Serial.println("Optocoupled PIN IN Low");
   }
-  
+
   delay(1000);
 }
 
@@ -295,11 +295,11 @@ If you experience any error in compiling the example sketch, check the updated c
 #define OC_PIN    WB_IO3
 #define RELAY_PIN WB_IO4
 
-void setup() 
+void setup()
 {
   pinMode(WB_IO2, OUTPUT);
   digitalWrite(WB_IO2, HIGH);
-  
+
   // Initialize Serial for debug output
   time_t timeout = millis();
   Serial.begin(115200);
@@ -314,12 +314,12 @@ void setup()
       break;
     }
   }
-  
+
   pinMode(RELAY_PIN,OUTPUT);
   pinMode(OC_PIN,INPUT);
 }
 
-void loop() 
+void loop()
 {
   static uint8_t count=0;
   count++;
@@ -337,7 +337,7 @@ void loop()
   {
     Serial.println("Optocoupled PIN IN Low");
   }
-  
+
   delay(1000);
 }
 
@@ -401,11 +401,11 @@ RAK11200 requires the **Boot0** pin to be configured properly first before uploa
 #define OC_PIN    WB_IO3
 #define RELAY_PIN WB_IO4
 
-void setup() 
+void setup()
 {
   pinMode(WB_IO2, OUTPUT);
   digitalWrite(WB_IO2, HIGH);
-  
+
   // Initialize Serial for debug output
   time_t timeout = millis();
   Serial.begin(115200);
@@ -420,12 +420,12 @@ void setup()
       break;
     }
   }
-  
+
   pinMode(RELAY_PIN,OUTPUT);
   pinMode(OC_PIN,INPUT);
 }
 
-void loop() 
+void loop()
 {
   static uint8_t count=0;
   count++;
@@ -443,7 +443,7 @@ void loop()
   {
     Serial.println("Optocoupled PIN IN Low");
   }
-  
+
   delay(1000);
 }
 

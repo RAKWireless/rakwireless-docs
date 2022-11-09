@@ -21,18 +21,18 @@ Before going through each and every step on using the RAK1910 WisBlock module, m
 
 #### Hardware
 
-- [RAK1910 WisBlock GNSS Location Module and GPS antenna](https://store.rakwireless.com/collections/wisblock-sensor/products/rak1910-max-7q-gnss-location-sensor)
+- [RAK1910 WisBlock GNSS Location Module and GPS antenna](https://store.rakwireless.com/products/rak1910-max-7q-gnss-location-sensor?utm_source=RAK1910&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [RAK19005 WisBlock Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005)
-- [Li-Ion/LiPo battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [RAK19005 WisBlock Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005?utm_source=RAK19005&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
 - Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software).
-- To add the RAKwireless Core boards on your Arduino board, install the RAKwireless Arduino BSP. Follow the steps in the [Github repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+- To add the RAKwireless Core boards on your Arduino board, install the RAKwireless Arduino BSP. Follow the steps in the [GitHub repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
 ## Product Configuration
 
@@ -243,7 +243,7 @@ void direction_parse(String tmp)
     {
         direction_E_W = 1;
     }
-    
+
     if (tmp.indexOf(",S,") != -1)
     {
         direction_S_N = 0;
@@ -273,7 +273,7 @@ void loop()
   }
   direction_parse(tmp_data);
   tmp_data = "";
-  
+
   if (newData)
   {
     float flat, flon;
@@ -304,7 +304,7 @@ void loop()
     Serial.print(" PREC=");
     Serial.print(gps.hdop() == TinyGPS::GPS_INVALID_HDOP ? 0 : gps.hdop());
   }
-  
+
   gps.stats(&chars, &sentences, &failed);
   Serial.print(" CHARS=");
   Serial.print(chars);
@@ -367,8 +367,8 @@ It can range to more than 2 minutes depending on how good the satellite signals 
 
 #### RAK1910 LoRaWAN GPS Tracker
 
-For WisBlock Core RAK4630, it has an example for [LoRaWAN GPS Tracker](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/GPS_Tracker). 
-For WisBlock Core RAK11310, it has an example for [LoRaWAN GPS Tracker](https://github.com/RAKWireless/WisBlock/blob/master/examples/RAK11300/solutions/GPS_Tracker).    
+For WisBlock Core RAK4630, it has an example for [LoRaWAN GPS Tracker](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/GPS_Tracker).
+For WisBlock Core RAK11310, it has an example for [LoRaWAN GPS Tracker](https://github.com/RAKWireless/WisBlock/blob/master/examples/RAK11300/solutions/GPS_Tracker).
 
 The following example codes are compatible to LoRaWAN GPS Tracker Kits:
 
@@ -415,7 +415,7 @@ It can take a few seconds or minutes to get a good fix depending on your locatio
 
 The packet should also arrive at the LoRaWAN® network server you use. The values you see will not make sense and don't look like GPS coordinates. It is normal because the payload hasn't been decoded yet.
 
-If you are using Chirpstack, you will see the packet as shown in Figure 28. 
+If you are using Chirpstack, you will see the packet as shown in Figure 28.
 
 <rk-img
   src="/assets/images/wisblock/rak1910/quickstart/chirpstack_nodecode.png"
@@ -423,7 +423,7 @@ If you are using Chirpstack, you will see the packet as shown in Figure 28.
   caption="Chirpstack LoRaWAN payload"
 />
 
-If you are using The Things Stack (TTN V3), you will see the packet as shown in Figure 29. 
+If you are using The Things Stack (TTN V3), you will see the packet as shown in Figure 29.
 
 <rk-img
   src="/assets/images/wisblock/rak1910/quickstart/ttn_notdecoded.png"
@@ -447,7 +447,7 @@ Data sent to LoRaWan® server of the example code has the following format:
 
 Here is the payload decoder that you can use for Chirpstack.
 ```javascript
-function Decode(fport, bytes) 
+function Decode(fport, bytes)
 {
   var longitude_int, latitude_int;
   var decoded = {"latitude":"","longitude":""};
@@ -477,7 +477,7 @@ If you got the right payload, the decoded payload should look like in Figure 30.
 
 Here is the payload decoder that you can use for TTS.
 ```javascript
-function Decoder(bytes, port) 
+function Decoder(bytes, port)
 {
   var longitude_int, latitude_int;
   var decoded = {};

@@ -4,8 +4,8 @@ tags:
   - quickstart
   - wisblock
   - RAK12005
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 
@@ -17,17 +17,17 @@ next: ../Datasheet/
 
 Before going through each and every step on using the RAK12005 WisBlock module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
-- [RAK12005 & RAK12030 WisBlock Rain Sensor Module](https://store.rakwireless.com/products/rain-sensor-rak12005-module-and-rak12030-sensor?_pos=1&_sid=a90925657&_ss=r)
+- [RAK12005 & RAK12030 WisBlock Rain Sensor Module](https://store.rakwireless.com/products/rain-sensor-rak12005-module-and-rak12030-sensor?_pos=1&_sid=a90925657&_ss=r?utm_source=RAK12005&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/) with IO slot
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [RAK19008 WisBlock IO Extension Cable (optional)](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008)
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [RAK19008 WisBlock IO Extension Cable (optional)](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008?utm_source=RAK19008&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -86,9 +86,9 @@ The RAK12005 module can be mounted on the IO slot of the [WisBlock Base](https:/
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12005/quickstart/removing_screw.png"
@@ -178,22 +178,22 @@ For RAK12005, the accessible pin assignments are defined as follows in the Ardui
  */
 #define SENSOR_PIN  WB_IO6   // Attach Water sensor to Arduino Digital Pin WB_IO6
 
-void setup() 
+void setup()
 {
    pinMode(SENSOR_PIN, INPUT);   // The Water Sensor is an Input
    pinMode(LED_GREEN, OUTPUT);  // The LED is an Output
    pinMode(LED_BLUE, OUTPUT);   // The LED is an Output
 }
-void loop() 
+void loop()
 {
 
    /* The water sensor will switch HIGH when water is detected.
     when water is detected turn LED on, and switch off when no water is present */
-   if( digitalRead(SENSOR_PIN) == HIGH) 
+   if( digitalRead(SENSOR_PIN) == HIGH)
    {
       digitalWrite(LED_GREEN,HIGH);   //turn on
       digitalWrite(LED_BLUE,HIGH);
-   }else 
+   }else
    {
       digitalWrite(LED_GREEN,LOW);
       digitalWrite(LED_BLUE,LOW);

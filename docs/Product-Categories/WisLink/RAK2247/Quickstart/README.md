@@ -20,7 +20,7 @@ rak_img: /assets/images/wislink-lora/rak2247/quickstart/1.main/RAK2247_home.png
 
 Before going through each and every step in the installation and guide of the RAK2247 LPWAN Gateway, make sure to prepare the necessary items listed below:
 
-1. RAK2247 WisLink LPWAN Concentrator
+1. [RAK2247 WisLink LPWAN Concentrator](https://store.rakwireless.com/products/rak2247-lorawan-gateway-concentrator-module?utm_source=RAK2247WisLink-LoRa&utm_medium=Document&utm_campaign=BuyFromStore)
 2. [mPCIe to USB Board](https://store.rakwireless.com/products/mpcie-to-usb-board)
 
 3. A Windows/Mac OS/Linux Computer

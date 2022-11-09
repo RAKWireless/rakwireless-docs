@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK19015
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK19015 Quick Start Guide
@@ -17,15 +17,15 @@ next: ../Datasheet/
 
 Before going through each and every step on using the RAK19015 WisBlock Battery Power Slot Module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
 - [RAK19015 WisBlock Battery Power Slot Module](https://store.rakwireless.com/products/rak19015-battery-power-slot-module?utm_source=RAK19015&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
-- [Li-Ion/LiPo battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [RAK5804](https://store.rakwireless.com/products/rak5804-wisblock-interface-extension-board) (Reprogramming of the WisBlock Core via USB) 
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [RAK5804 WisBlock Interface Module](https://store.rakwireless.com/products/rak5804-io-extension-board?utm_source=RAK5804&utm_medium=Document&utm_campaign=BuyFromStore) (Reprogramming of the WisBlock Core via USB)
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -77,9 +77,9 @@ The RAK19015 WisBlock Battery Power Slot Module can be mounted on the IO slot of
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock module is the same. 
+The procedure in disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak19015/quickstart/removing_screws.png"
@@ -111,7 +111,7 @@ If you will connect other modules to the remaining WisBlock Base slots, check on
 
 ##### Rechargeable Battery
 
-RAK19015 WisBlock Battery Power Slot Module can be powered by a rechargeable Li-Ion/LiPo battery via the dedicated connectors, as shown in **Figure 7**. The matching connector for the rechargeable battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199). A cable assembly for the rechargeable battery connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/battery-connector-cable). 
+RAK19015 WisBlock Battery Power Slot Module can be powered by a rechargeable Li-Ion/LiPo battery via the dedicated connectors, as shown in **Figure 7**. The matching connector for the rechargeable battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199). A cable assembly for the rechargeable battery connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/battery-connector-cable).
 
 <rk-img
   src="/assets/images/wisblock/rak19015/quickstart/rechargeable.svg"
@@ -129,7 +129,7 @@ RAK19015 WisBlock Battery Power Slot Module can be powered by a rechargeable Li-
 
 ### Software Setup
 
-The WisBlock Core is designed to be interfaced with other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the WisBlock Core. 
+The WisBlock Core is designed to be interfaced with other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the WisBlock Core.
 Before you continue, you should have already set up either an [Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) or
 [PlatformIO](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md).
 

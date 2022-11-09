@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/accessories/outdoor-enclosure-kit/outdoor-kit.png
-rak_desc: RAKBox-GW-3 is an outdoor enclosure kit for the RAK Hotspot, RAK7244, RAK7244P, and RAK744C. With this outdoor enclosure, installing and mounting your gateway is now possible. 
+rak_desc: RAKBox-GW-3 is an outdoor enclosure kit for the RAK Hotspot, RAK7244, RAK7244P, and RAK744C. With this outdoor enclosure, installing and mounting your gateway is now possible.
 rak_grp: [accessories, enclosures]
 rak_model: RAKBox-GW-3
 prev: ../../
@@ -21,9 +21,9 @@ In this guide, the process of assembling and mounting an outdoor case for the RA
 
 The package includes all the necessary parts for this project, without the RAK7244 WisGate Developer D4 itself.
 
-1. Outdoor Enclosure Kit 
-2. PoE splitter Type-C USB (in 48&nbsp;V; out 5&nbsp;V/2.4&nbsp;A) 
-3. PoE injector (in 100-240&nbsp;V; out 48&nbsp;V/0.5&nbsp;A) 
+1. Outdoor Enclosure Kit
+2. PoE splitter Type-C USB (in 48&nbsp;V; out 5&nbsp;V / 2.4&nbsp;A)
+3. PoE injector (in 100-240&nbsp;V; out 48&nbsp;V/0.5&nbsp;A)
 4. Power cord for the PoE Injector
 5. Zip tie, PVC tape, and waterproof tape
 6. Antenna cable type RG316, with N-type to RP-SMA male connectors for LoRa antenna
@@ -35,7 +35,7 @@ The package includes all the necessary parts for this project, without the RAK72
 
 A detailed explanation of the procedure of putting the RAK7244 WisGate Developer D4 inside the RAKBox-GW-3 is shown.
 
-1. Open the RAKBox-GW-3 enclosure. Remove the top cover and take out the mounting plate. 
+1. Open the RAKBox-GW-3 enclosure. Remove the top cover and take out the mounting plate.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244/1.png"
@@ -43,7 +43,7 @@ A detailed explanation of the procedure of putting the RAK7244 WisGate Developer
   caption="Mounting plate inside the RAKBox-GW-3 enclosure"
 />
 
-2. Unscrew the four screws from the bottom cooling plate of the RAK7244 WisGate Developer D4. Do not remove the plate itself.
+2. Unscrew the four (4) screws from the bottom cooling plate of the RAK7244 WisGate Developer D4. Do not remove the plate itself.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244/2.png"
@@ -51,7 +51,7 @@ A detailed explanation of the procedure of putting the RAK7244 WisGate Developer
   caption="RAK7244 WisGate Developer D4"
 />
 
-3. Align the RAK7244 WisGate Developer D4 to the proper holes of the mounting plate and fix it together with the previously removed screws. 
+3. Align the RAK7244 WisGate Developer D4 to the proper holes of the mounting plate and fix it together with the previously removed screws.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244/3.png"
@@ -67,7 +67,7 @@ A detailed explanation of the procedure of putting the RAK7244 WisGate Developer
   caption="Placing and connection of the PoE Splitter"
 />
 
-5. Put the mounting plate with the secured RAK7244 WisGate Developer D4 and PoE splitter back in the enclosure. Fix the plate with the screws. 
+5. Put the mounting plate with the secured RAK7244 WisGate Developer D4 and PoE splitter back in the enclosure. Fix the plate with the screws.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244/5.png"
@@ -75,7 +75,7 @@ A detailed explanation of the procedure of putting the RAK7244 WisGate Developer
   caption="Fixing the mounting plate inside the enclosure"
 />
 
-6. Plug the RJ45 Network cable coming out from the cable gland to the PoE splitters RJ45 port. Connect the RP-SMA male antenna connector of the enclosure to the RP-SMA female antenna connector of the RAK7244 WisGate Developer D4. Connect the SMA male GPS antenna connector of the enclosure to SMA female antenna connector of the RAK7244 WisGate Developer D4.
+6. Plug the RJ45 Network cable coming out from the cable gland to the PoE splitters RJ45 port. Connect the RP-SMA male antenna connector of the enclosure to the RP-SMA female antenna connector of the RAK7244 WisGate Developer D4. Connect the SMA male GPS antenna connector of the enclosure to the SMA female antenna connector of the RAK7244 WisGate Developer D4.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244/6.png"
@@ -95,7 +95,7 @@ A detailed explanation of the procedure of putting the RAK7244 WisGate Developer
 
 Instructions on mounting and securing the mounting kit to the enclosure and the bearing pole.
 
-1. Fix the included cross bracket on the bottom of the enclosure with four M6*12 bolts.
+1. Fix the included cross bracket on the bottom of the enclosure with four (4) M6*12 bolts.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244/8.png"
@@ -103,7 +103,7 @@ Instructions on mounting and securing the mounting kit to the enclosure and the 
   caption="Mounting the cross bracket"
 />
 
-2. Place two pieces of the clamp around the pole and tighten them with the included M6*110 bolts, washers, and nuts.
+2. Place two (2) pieces of the clamp around the pole and tighten them with the included M6*110 bolts, washers, and nuts.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244/9.png"
@@ -121,9 +121,9 @@ Instructions on mounting and securing the mounting kit to the enclosure and the 
 
 #### Weather Protection
 
-To better protect the Ethernet cable gland and the antenna connector from the weather, you need to cover them with PVC tape. 
+To better protect the Ethernet cable gland and the antenna connector from the weather, you need to cover them with PVC tape.
 
-1. Clean the surface area of the connector that will be wrapped. Wrap a layer of PVC tape with a 50% overlap according to the rotation direction of the connector. Continue wrapping the PVC tape to about 10&nbsp;mm below the end of the connector. 
+1. Clean the surface area of the connector that will be wrapped. Wrap a layer of PVC tape with a 50% overlap according to the rotation direction of the connector. Continue wrapping the PVC tape to about 10&nbsp;mm below the end of the connector.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244/11.png"
@@ -157,9 +157,9 @@ In this guide, the process of assembling and mounting an outdoor case for the RA
 
 The package includes all the necessary parts for this project, without the RAK7244C WisGate Developer D4+ itself.
 
-1. Outdoor Enclosure Kit 
-2. PoE splitter Type-C USB (in 48&nbsp;V; out 5&nbsp;V/2.4&nbsp;A) 
-3. PoE injector (in 100-240&nbsp;V; out 48&nbsp;V/0.5&nbsp;A) 
+1. Outdoor Enclosure Kit
+2. PoE splitter Type-C USB (in 48&nbsp;V; out 5&nbsp;V/2.4&nbsp;A)
+3. PoE injector (in 100-240&nbsp;V; out 48&nbsp;V/0.5&nbsp;A)
 4. Power cord for the PoE Injector
 5. Zip tie, PVC tape, and waterproof tape
 6. Antenna cable type RG316, with N-type to RP-SMA male connectors for LoRa antenna
@@ -170,7 +170,7 @@ The package includes all the necessary parts for this project, without the RAK72
 
 A detailed explanation of the procedure of putting the RAK7244C WisGate Developer D4+ inside the RAKBox-GW-3 is shown.
 
-1. Open the RAKBox-GW-3 enclosure. Remove the top cover and take out the mounting plate. 
+1. Open the RAKBox-GW-3 enclosure. Remove the top cover and take out the mounting plate.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244c/1.png"
@@ -178,7 +178,7 @@ A detailed explanation of the procedure of putting the RAK7244C WisGate Develope
   caption="Mounting plate inside the RAKBox-GW-3 enclosure"
 />
 
-2. Unscrew the four screws from the bottom cooling plate of the RAK7244 WisGate Developer D4. Do not remove the plate itself.
+2. Unscrew the four (4) screws from the bottom cooling plate of the RAK7244 WisGate Developer D4. Do not remove the plate itself.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244c/2.png"
@@ -202,7 +202,7 @@ A detailed explanation of the procedure of putting the RAK7244C WisGate Develope
   caption="Placing and connection of the PoE Splitter"
 />
 
-5. Put the mounting plate with the secured RAK7244C WisGate Developer D4+ and PoE splitter back in the enclosure. Fix the plate with the screws. 
+5. Put the mounting plate with the secured RAK7244C WisGate Developer D4+ and PoE splitter back in the enclosure. Fix the plate with the screws.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244c/5.png"
@@ -210,7 +210,7 @@ A detailed explanation of the procedure of putting the RAK7244C WisGate Develope
   caption="Fixing the mounting plate inside the enclosure"
 />
 
-6. Plug the RJ45 Network cable coming out from the cable gland to the PoE splitters RJ45 port. Connect the RP-SMA male antenna connector of the enclosure to the RP-SMA female antenna connector of the RAK7244C WisGate Developer D4+. Connect the SMA male GPS antenna connector of the enclosure to SMA female antenna connector of the RAK7244C Gateway. Connect the two RP-SMA male LTE antenna connectors of the enclosure to the two RP-SMA female connectors for the LTE antennas on the RAK7244C WisGate Developer D4+.
+6. Plug the RJ45 Network cable coming out from the cable gland to the PoE splitters RJ45 port. Connect the RP-SMA male antenna connector of the enclosure to the RP-SMA female antenna connector of the RAK7244C WisGate Developer D4+. Connect the SMA male GPS antenna connector of the enclosure to the SMA female antenna connector of the RAK7244C Gateway. Connect the two (2) RP-SMA male LTE antenna connectors of the enclosure to the two (2) RP-SMA female connectors for the LTE antennas on the RAK7244C WisGate Developer D4+.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244c/6.png"
@@ -230,7 +230,7 @@ A detailed explanation of the procedure of putting the RAK7244C WisGate Develope
 
 Instructions on mounting and securing the mounting kit to the enclosure and the bearing pole.
 
-1. Fix the included cross bracket on the bottom of the enclosure with four M6*12 bolts.
+1. Fix the included cross bracket on the bottom of the enclosure with four (4) M6*12 bolts.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244c/8.png"
@@ -238,7 +238,7 @@ Instructions on mounting and securing the mounting kit to the enclosure and the 
   caption="Mounting the cross bracket"
 />
 
-2. Place the two pieces of the clamp around the pole and tighten them with the included M6*110 bolts, washers, and nuts.
+2. Place the two (2) pieces of the clamp around the pole and tighten them with the included M6*110 bolts, washers, and nuts.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244c/9.png"
@@ -256,9 +256,9 @@ Instructions on mounting and securing the mounting kit to the enclosure and the 
 
 #### Weather Protection
 
-To better protect the Ethernet cable gland and the antenna connector from the weather, you need to cover them with PVC tape. 
+To better protect the Ethernet cable gland and the antenna connector from the weather, you need to cover them with PVC tape.
 
-1. Clean the surface area of the connector that will be wrapped. Wrap a layer of PVC tape with a 50% overlap according to the rotation direction of the connector. Continue wrapping the PVC tape to about 10&nbsp;mm below the end of the connector. 
+1. Clean the surface area of the connector that will be wrapped. Wrap a layer of PVC tape with a 50% overlap according to the rotation direction of the connector. Continue wrapping the PVC tape to about 10&nbsp;mm below the end of the connector.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244c/11.png"
@@ -293,8 +293,8 @@ In this guide, the process of assembling and mounting an outdoor case for the RA
 
 The package includes all the necessary parts for this project, without the RAK7244P WisGate Developer D4P itself.
 
-1. Outdoor Enclosure Kit 
-2. PoE injector (in 100-240&nbsp;V; out 48&nbsp;V/0.5&nbsp;A) 
+1. Outdoor Enclosure Kit
+2. PoE injector (in 100-240&nbsp;V; out 48&nbsp;V / 0.5&nbsp;A)
 3. Power cord for the PoE Injector
 4. Zip tie, PVC tape, and waterproof tape
 5. Antenna cable type RG316, with N-type to RP-SMA male connectors for LoRa antenna
@@ -305,7 +305,7 @@ The package includes all the necessary parts for this project, without the RAK72
 
 A detailed explanation of the procedure of putting the RAK7244P WisGate Developer D4P inside the RAKBox-GW-3 is shown.
 
-1. Open the RAKBox-GW-3 enclosure. Remove the top cover and take out the mounting plate. 
+1. Open the RAKBox-GW-3 enclosure. Remove the top cover and take out the mounting plate.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244p/1.png"
@@ -313,7 +313,7 @@ A detailed explanation of the procedure of putting the RAK7244P WisGate Develope
   caption="Mounting plate inside the RAKBox-GW-3 enclosure"
 />
 
-2. Unscrew the four screws from the bottom cooling plate of the RAK7244P WisGate Developer D4P. Do not remove the plate itself.
+2. Unscrew the four (4) screws from the bottom cooling plate of the RAK7244P WisGate Developer D4P. Do not remove the plate itself.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244p/2.png"
@@ -321,7 +321,7 @@ A detailed explanation of the procedure of putting the RAK7244P WisGate Develope
   caption="RAK7244P WisGate Developer D4P"
 />
 
-3. Align the RAK7244P WisGate Developer D4P to the proper holes of the mounting plate and fix it together with the previously removed screws. 
+3. Align the RAK7244P WisGate Developer D4P to the proper holes of the mounting plate and fix it together with the previously removed screws.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244p/3.png"
@@ -358,7 +358,7 @@ A detailed explanation of the procedure of putting the RAK7244P WisGate Develope
 
 Instructions on mounting and securing the mounting kit to the enclosure and the bearing pole.
 
-1. Fix the included cross bracket on the bottom of the enclosure with four M6*12 bolts.
+1. Fix the included cross bracket on the bottom of the enclosure with four (4) M6*12 bolts.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244p/7.png"
@@ -366,7 +366,7 @@ Instructions on mounting and securing the mounting kit to the enclosure and the 
   caption="Mounting the cross bracket"
 />
 
-2. Place two pieces of the clamp around the pole and tighten them with the included M6*110 bolts, washers, and nuts.
+2. Place two (2) pieces of the clamp around the pole and tighten them with the included M6*110 bolts, washers, and nuts.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244p/8.png"
@@ -384,9 +384,9 @@ Instructions on mounting and securing the mounting kit to the enclosure and the 
 
 #### Weather Protection
 
-To better protect the Ethernet cable gland and the antenna connector from the weather, you need to cover them with PVC tape. 
+To better protect the Ethernet cable gland and the antenna connector from the weather, you need to cover them with PVC tape.
 
-1. Clean the surface area of the connector that will be wrapped. Wrap a layer of PVC tape with a 50% overlap according to the rotation direction of the connector. Continue wrapping the PVC tape to about 10&nbsp;mm below the end of the connector. 
+1. Clean the surface area of the connector that will be wrapped. Wrap a layer of PVC tape with a 50% overlap according to the rotation direction of the connector. Continue wrapping the PVC tape to about 10&nbsp;mm below the end of the connector.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak7244p/10.png"
@@ -421,18 +421,18 @@ In this guide, the process of assembling and mounting an outdoor case for the RA
 
 The package includes all the necessary parts for this project, without the RAK Hotspot itself.
 
-1. Outdoor Enclosure Kit 
-2. PoE splitter Type-C USB (in 48 V; out 5 V/2.4 A) 
-3. PoE injector (in 100-240 V; out 48 V/0.5 A) 
+1. Outdoor Enclosure Kit
+2. PoE splitter Type-C USB (in 48 V; out 5 V/2.4 A)
+3. PoE injector (in 100-240 V; out 48 V/0.5 A)
 4. Power cord for the PoE Injector
 5. Zip tie, PVC tape, and waterproof tape
-6. Antenna cable type RG1.32, with N-type to RP-SMA male connectors. 
+6. Antenna cable type RG1.32, with N-type to RP-SMA male connectors.
 
 #### Assembly
 
 A detailed explanation of the procedure of putting the RAK Hotspot inside the RAKBox-GW-3.
 
-1. Open the RAKBox-GW-3 enclosure. Remove the top cover and take out the mounting plate. 
+1. Open the RAKBox-GW-3 enclosure. Remove the top cover and take out the mounting plate.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak-hotspot/1.png"
@@ -440,7 +440,7 @@ A detailed explanation of the procedure of putting the RAK Hotspot inside the RA
   caption="Mounting plate inside the RAKBox-GW-3 enclosure"
 />
 
-2. Unscrew the four screws from the bottom cooling plate of the RAK Hotspot. Do not remove the plate itself.
+2. Unscrew the four (4) screws from the bottom cooling plate of the RAK Hotspot. Do not remove the plate itself.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak-hotspot/2.png"
@@ -448,15 +448,15 @@ A detailed explanation of the procedure of putting the RAK Hotspot inside the RA
   caption="RAK Hotspot"
 />
 
-3. Align the RAK Hotspot to the proper holes of the mounting plate and fix it together with the previously removed screws. 
-   
+3. Align the RAK Hotspot to the proper holes of the mounting plate and fix it together with the previously removed screws.
+
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak-hotspot/3.png"
   width="50%"
   caption="Fixing the RAK Hotspot to the mounting plate"
 />
 
-4. Place the PoE splitter on the mounting plate and fix it with cable ties. Plug the RJ45 cable and USB type-C cable of the PoE splitter in the corresponding ports of the RAK Hotspot. 
+4. Place the PoE splitter on the mounting plate and fix it with cable ties. Plug the RJ45 cable and USB type-C cable of the PoE splitter into the corresponding ports of the RAK Hotspot.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak-hotspot/4.png"
@@ -464,7 +464,7 @@ A detailed explanation of the procedure of putting the RAK Hotspot inside the RA
   caption="Placing and connection of the PoE Splitter"
 />
 
-5. Put the mounting plate with the secured RAK Hotspot and PoE splitter back in the enclosure. Fix the plate with the screws. 
+5. Put the mounting plate with the secured RAK Hotspot and PoE splitter back in the enclosure. Fix the plate with the screws.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak-hotspot/5.png"
@@ -492,15 +492,15 @@ A detailed explanation of the procedure of putting the RAK Hotspot inside the RA
 
 Instructions on mounting and securing the mounting kit to the enclosure and the bearing pole.
 
-1. Fix the included cross bracket on the bottom of the enclosure with four M6*12 bolts.
-   
+1. Fix the included cross bracket on the bottom of the enclosure with four (4) M6*12 bolts.
+
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak-hotspot/8.png"
   width="35%"
   caption="Mounting the cross bracket"
 />
 
-2. Place two pieces of the clamp around the pole and tighten them with the included M6*110 bolts, washers, and nuts.
+2. Place two (2) pieces of the clamp around the pole and tighten them with the included M6*110 bolts, washers, and nuts.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak-hotspot/9.png"
@@ -518,9 +518,9 @@ Instructions on mounting and securing the mounting kit to the enclosure and the 
 
 ##### Weather Protection
 
-To better protect the Ethernet cable gland and the antenna connector from the weather, you need to cover them with PVC tape. 
+To better protect the Ethernet cable gland and the antenna connector from the weather, you need to cover them with PVC tape.
 
-1. Clean the surface area of the connector that will be wrapped. Wrap a layer of PVC tape with a 50% overlap according to the rotation direction of the connector. Continue wrapping the PVC tape to about 10 mm below the end of the connector. 
+1. Clean the surface area of the connector that will be wrapped. Wrap a layer of PVC tape with a 50% overlap according to the rotation direction of the connector. Continue wrapping the PVC tape to about 10&nbsp;mm below the end of the connector.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak-hotspot/11.png"
@@ -528,7 +528,7 @@ To better protect the Ethernet cable gland and the antenna connector from the we
   caption="Wrapping with PVC tape"
 />
 
-2. Cut off about 50 cm waterproof tape. Stretch it to double the length. Wrap three layers around the connector with a 50% overlap. Hold the tape in place with your hand for a few seconds.
+2. Cut off about 50&nbsp;cm waterproof tape. Stretch it to double the length. Wrap three layers around the connector with a 50% overlap. Hold the tape in place with your hand for a few seconds.
 
 <rk-img
   src="/assets/images/accessories/outdoor-enclosure-kit/rak-hotspot/12.png"
@@ -543,4 +543,3 @@ To better protect the Ethernet cable gland and the antenna connector from the we
   width="30%"
   caption="Final PVC wrapping"
 />
- 

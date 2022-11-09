@@ -17,7 +17,7 @@ tags:
 
 Before going through each and every step in the installation guide of the RAK7201 WisNode Button, make sure to prepare the necessary items listed below:
 
-1. [RAK7201 WisNode Button 4K](https://store.rakwireless.com/products/wisnode-button-4k-rak7201?utm_source=RAK7201WisNodeButton4K&utm_medium=Document&
+1. [RAK7201 WisNode Button 4K](https://store.rakwireless.com/products/wisnode-button-4k-rak7201?utm_source=RAK7201WisNodeButton4K&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Micro USB cable
 3. Gateway in range
 4. Windows PC

@@ -22,7 +22,7 @@ Before going through each and every step on using the RAK19014 WisBlock Battery 
 - [RAK19014 WisBlock Battery USB Power Slot Module](https://store.rakwireless.com/products/usb-battery-power-slot-module-rak19014?utm_source=RAK19014&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
-- [External battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
+- [External battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 

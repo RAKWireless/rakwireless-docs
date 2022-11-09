@@ -11,7 +11,7 @@ tags:
 
 # Antenna Clip
 
-Thank you for choosing **Antenna Clip** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **Antenna Clip** in your awesome IoT project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 
@@ -19,11 +19,11 @@ Thank you for choosing **Antenna Clip** in your awesome IoT Project! 🎉 To hel
 
 With a one-click secure attachment method, this clip allows for a better antenna placement inside the home. For indoor use only, the clip can be stuck to any non-porous surface giving you the freedom of optimal positioning and tidiness of your setup.
 
-Long life is ensured through high-quality processing, and it is compatible with all fiberglass antennas that RAKwireless is offering. 
+Long life is ensured through high-quality processing, and it is compatible with all fiberglass antennas that RAKwireless is offering.
 
 The product comes in pairs (two in a package) to ensure secure attachment even for longer antennas.
 
-## Product Features  
+## Product Features
 
 - Easy to install
 - Unobtrusive design

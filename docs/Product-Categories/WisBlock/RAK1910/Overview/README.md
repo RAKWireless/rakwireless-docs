@@ -19,7 +19,6 @@ Thank you for choosing **RAK1910 WisBlock GNSS Location Module** in your awesome
 * [RAK1910 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK1910 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK1910.stp)
 * [24-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
@@ -27,16 +26,14 @@ Thank you for choosing **RAK1910 WisBlock GNSS Location Module** in your awesome
 
 **Examples**
 
-For All WisBlock Core Modules:
-* [Sample Code: RAK1910](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1910_GPS_UBLOX7)
+- For All WisBlock Core Modules:
+    * [Sample Code: RAK1910](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK1910_GPS_UBLOX7)
+- For WisBlock Core RAK4630:
+    * [Sample Code: GPS Tracker](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/GPS_Tracker)
 
-For WisBlock Core RAK4630:
-* [Sample Code: GPS Tracker](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/GPS_Tracker)
-
-**LoRaWAN GPS Tracker Kits Based on WisBlock RAK1910**
-
-* [LoRaWAN Tracker Kit](https://store.rakwireless.com/collections/kits-bundles/products/wisblock-kit-3-gps-tracker)
-* [LoRaWAN Tracker Kit with Solar Panel](https://store.rakwireless.com/collections/kits-bundles/products/wisblock-kit-2-lora-based-gps-tracker-with-solar-panel)
+- **LoRaWAN GPS Tracker Kits Based on WisBlock RAK1910**
+    * [LoRaWAN Tracker Kit](https://store.rakwireless.com/collections/kits-bundles/products/wisblock-kit-3-gps-tracker?utm_source=WisBlockKit3&utm_medium=Document&utm_campaign=BuyFromStore)
+    * [LoRaWAN Tracker Kit with Solar Panel](https://store.rakwireless.com/collections/kits-bundles/products/wisblock-kit-2-lora-based-gps-tracker-with-solar-panel?utm_source=WisBlockKit2&utm_medium=Document&utm_campaign=BuyFromStore)
 
 
 ## Product Description
@@ -54,7 +51,7 @@ The RAK1910 WisBlock GNSS Location Module module, part of the RAK Wireless Wisbl
     * 0.1&nbsp;m/s velocity accuracy
     * 0.5 degrees heading accuracy
     * Fast location fix. 29&nbsp;sec from cold start to first fix. 1&nbsp;sec from hot start
-    * GPS and GLONASS satellite support 
+    * GPS and GLONASS satellite support
 
 * **Size**
     * 10 x 23&nbsp;mm
@@ -63,7 +60,7 @@ The RAK1910 WisBlock GNSS Location Module module, part of the RAK Wireless Wisbl
 
 To use a **RAK1910**, you need at least a **WisBlock Base** and a **GPS Antenna** to plug the module in. **WisBlock Base** provides power supply to the **RAK1910** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 * The included active GPS antenna must be connected to the iPEX antenna connector on the board. Otherwise, the module will not work.
-* Make sure to fix the module with the screws to ensure a proper function.    
-::: 
+* Make sure to fix the module with the screws to ensure a proper function.
+:::

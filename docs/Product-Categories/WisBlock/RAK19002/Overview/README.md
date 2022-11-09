@@ -18,7 +18,6 @@ Thank you for choosing **RAK19002 WisBlock Boost Module** in your awesome IoT Pr
 * [RAK19002 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK19002 Boost module 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK19002.stp)
 * [24-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
@@ -48,6 +47,6 @@ The RAK19002 is a step-up boost regulator module, part of the RAKwireless WisBlo
 
 To use a **RAK19002**, you need at least a **WisBlock Base** to plug the module in. Furthermore, you need a **WisBlock Core** module IO pin to control the Booster Converter.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function. 
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

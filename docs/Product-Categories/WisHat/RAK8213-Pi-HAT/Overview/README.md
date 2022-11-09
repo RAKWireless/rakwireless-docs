@@ -34,4 +34,4 @@ Thank you for choosing **RAK8213 Pi HAT** in your awesome IoT project! 🎉 To h
 
 ## Package Contents
 
-- One (1) RAK8213 Pi HAT
+- One (1) [RAK8213 Pi HAT](https://store.rakwireless.com/products/rak8213-nb-iot-bg96?utm_source=RAK8213Pi%20HAT&utm_medium=Document&utm_campaign=BuyFromStore)

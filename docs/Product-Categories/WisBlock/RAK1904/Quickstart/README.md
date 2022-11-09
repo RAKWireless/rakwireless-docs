@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK1904
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK1904 Quick Start Guide
@@ -21,13 +21,13 @@ Before going through each and every step on using the RAK1904 WisBlock module, m
 
 #### Hardware
 
-- [RAK1904 WisBlock 3-axis Acceleration Sensor Module](https://store.rakwireless.com/collections/wisblock-sensor/products/rak1904-lis3dh-3-axis-acceleration-sensor)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK1904 WisBlock 3-axis Acceleration Sensor Module](https://store.rakwireless.com/products/rak1904-lis3dh-3-axis-acceleration-sensor?utm_source=RAK1904&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [RAK19005 WisBlock Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005)
-- Li-Ion/LiPo battery (optional)
-- Solar charger (optional)
+- [RAK19005 WisBlock Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005?utm_source=RAK19005&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -38,7 +38,7 @@ Before going through each and every step on using the RAK1904 WisBlock module, m
 
 ### Hardware Setup
 
-WisBlock can integrate this module which extends the WisBlock system with an acceleration sensor. 
+WisBlock can integrate this module which extends the WisBlock system with an acceleration sensor.
 
 For more information about RAK1904, refer to the [Datasheet](../Datasheet/).
 
@@ -70,9 +70,9 @@ As shown in **Figure 2**, the location for Slot A, B, C, and D are properly mark
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak1904/quickstart/16.removing-screws.png"
@@ -97,7 +97,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1904 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1904 uses I2C communication lines, and it can cause possible conflict especially on some IO modules.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
@@ -112,7 +112,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 ### Software Configuration and Example
 
-The RAK1904 is an acceleration sensor board that contains a LIS3DH chip. The LIS3DH  is an ultra-low-power high-performance three-axis linear accelerometer belonging to the “nano” family, with digital I2C/SPI serial interface standard output. 
+The RAK1904 is an acceleration sensor board that contains a LIS3DH chip. The LIS3DH  is an ultra-low-power high-performance three-axis linear accelerometer belonging to the “nano” family, with digital I2C/SPI serial interface standard output.
 
 #### Initial Test of the RAK1904 WisBlock Module
 
@@ -269,7 +269,7 @@ If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the *
 
 #### Usage of RAK1904 in GPS Tracker Over LoRaWAN Example
 
-For WisBlock Core RAK4630, it has an example for [GPS Tracker over LoRaWAN](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/GPS_Tracker) with RAK1904 acceleration sensor board. 
-   
+For WisBlock Core RAK4630, it has an example for [GPS Tracker over LoRaWAN](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/GPS_Tracker) with RAK1904 acceleration sensor board.
+
 
 

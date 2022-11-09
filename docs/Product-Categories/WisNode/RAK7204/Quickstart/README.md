@@ -18,7 +18,7 @@ tags:
 ### What do you need?
 Before going through each and every step in the installation guide of the RAK7204 WisNode Sense Home, make sure to prepare the necessary items listed below:
 
-1. [**RAK7204 WisNode Sense Home**](https://store.rakwireless.com/products/rak7204-lpwan-environmental-node?utm_source=RAK7204WisNodeSense&utm_medium=Document&utm_campaign=BuyFromStore)
+1. [RAK7204 WisNode Sense Home](https://store.rakwireless.com/products/rak7204-lpwan-environmental-node?utm_source=RAK7204WisNodeSense&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Micro USB Cable
 3. Gateway in Range, for Testing
 4. Windows PC
@@ -54,7 +54,7 @@ The included battery is **non rechargeable**. Please do note that when configuri
 />
 
 :::warning ⚠️ WARNING
-The pin distance of the battery connector is **2.0mm**. Reverse connection or short circuit may damage the device and may cause overheating and combustion of the battery. Therefore, when replacing the battery, it is necessary to strictly confirm whether the positive and negative poles of the connector are correct.
+The pin distance of the battery connector is **2.0&nbsp;mm**. Reverse connection or short circuit may damage the device and may cause overheating and combustion of the battery. Therefore, when replacing the battery, it is necessary to strictly confirm whether the positive and negative poles of the connector are correct.
 :::
 
 - Open the RAK Serial Port Tool :

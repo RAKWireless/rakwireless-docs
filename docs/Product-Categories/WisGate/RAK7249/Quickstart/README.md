@@ -17,7 +17,7 @@ tags:
 
 ### What Do You Need?
 
-1. **RAK7249 WisGate Edge Max**
+1. [**RAK7249 WisGate Edge Max**](https://store.rakwireless.com/products/rak7249-diy-outdoor-gateway?utm_source=RAK7249Max&utm_medium=Document&utm_campaign=BuyFromStore)
 2. A Windows/Mac OS/Linux Computer
 
 

@@ -19,7 +19,7 @@ rak_img: /assets/images/wistrio/rak5010-m/overview/RAK5010-M_home.png
 
 Before going through each and every step in the installation guide of the RAK5010-M WisTrio NB-IoT Tracker, make sure to prepare the necessary items listed below:
 
-1. RAK5010-M WisTrio NB-IoT Tracker
+1. [RAK5010-M WisTrio NB-IoT Tracker](https://store.rakwireless.com/products/rak5010-nb-iot-tracker?variant=35173395660958&utm_source=RAK5010-MWisTrioNB-IoTTracker&utm_medium=Document&utm_campaign=BuyFromStore)
 2. USB-UART Module [(RAKDAP1 Tool)](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/)
 3. Jumper Wires
 4. Micro USB / 3.7&nbsp;V rechargeable battery / 5&nbsp;V Solar Panel Port

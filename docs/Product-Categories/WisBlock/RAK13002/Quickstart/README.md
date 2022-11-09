@@ -5,13 +5,11 @@ tags:
   - quickstart
   - wisblock
   - RAK13002
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK13002 Quick Start Guide
-
-
 
 ## Prerequisite
 
@@ -21,12 +19,12 @@ Before going through each and every step on using the RAK13002 WisBlock module, 
 
 #### Hardware
 
-- [RAK13002 Wisblock IO Module](https://store.rakwireless.com/products/adapter-module-rak13002)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK13002 Wisblock IO Module](https://store.rakwireless.com/products/adapter-module-rak13002?utm_source=RAK13002&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
-- [Solar charger (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -61,9 +59,9 @@ As shown in **Figure 2**, the location for the IO slot is properly marked by sil
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak13002/quickstart/16.removing-screws.png"
@@ -88,8 +86,8 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. 
-:::  
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
+:::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
@@ -175,21 +173,21 @@ void setup() {
   lcd.backlight(); // turn on the backlight
 }
 void loop() {
-  
+
   start_display(); // star
   delay(1000); //wait for a second
   lcd.clear(); // clear the LCD content
   delay(1000); //wait for a second
-  
+
 }
 
 void start_display(){
-  
+
   lcd.setCursor(0,0); // tell the screen to write on the top row
   lcd.print("RAK13002");  // tell the screen to write “RAK13002” on the top row
   lcd.setCursor(0,1); // tell the screen to write on the bottom row
   lcd.print("EXAMPLE");  // tell the screen to write “EXAMPLE” on the bottom row
-  
+
 }
 ```
 4. Then select the right Serial Port and upload the code, as shown in **Figure 11** and **Figure 12**.
@@ -382,7 +380,7 @@ void loop() {
 />
 
 
-#### Analog Input (ADC) Connection on RAK13002 
+#### Analog Input (ADC) Connection on RAK13002
 
 This is just an example and illustration on how to use the ADC pin of RAK13002 for external sensors, modules, or devices. There are two (2) ADC pins available on the RAK13002 that you can use as long as your modules, sensors, or devices operate at 3.3&nbsp;V.
 
@@ -427,7 +425,7 @@ int sensor_value;
 
 void setup() {
   Serial.begin(9600); // Setting up Serial Monitor to read in 9600 baudrate
-  
+
 }
 void loop() {
   readSensor();

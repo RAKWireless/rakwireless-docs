@@ -1,7 +1,7 @@
 ---
 prev: ../Overview/
 next: false
-tags: 
+tags:
     - RAKARG19
     - datasheet
 rak_desc: Provides comprehensive information about your 902-928 MHz 5.1 dBi Fiberglass Antenna to help you use it. This information includes technical specifications and characteristics.
@@ -17,7 +17,14 @@ The antenna connector is one with the antenna body - this design further increas
 With a length of only 480&nbsp;mm, this antenna will be the best fit for your LPWAN gateway or outdoor deployed RAK Hotspot.
 
 :::tip 📝 NOTE:
-This antenna is designed to be directly mounted on the enclosure of the gateway. It is suitable for [RAK7240](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7240/Overview/) and [RAK7249](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7249/Overview/). The antenna is also compatible with [Outdoor Enclosure for RAK Hotspot](https://docs.rakwireless.com/Product-Categories/Accessories/Outdoor-Enclosure-Kit/Overview/#rak-hotspot-outdoor-case), [Bobcat Outdoor Enclosure Kit](https://docs.rakwireless.com/Product-Categories/Accessories/Bobcat-Enclosure-Kit/Overview/), and [Antenna Magnetic Base](https://docs.rakwireless.com/Product-Categories/Accessories/RAKA0C52/Overview/). 
+This antenna is designed to be directly mounted on the enclosure of the Gateway. It is suitable for the following RAK products:
+- [RAK7240](https://store.rakwireless.com/products/rak7240-outdoor-lpwan-gateway?utm_source=RAK7240WisGateEdgePrime&utm_medium=Document&utm_campaign=BuyFromStore)
+- [RAK7249](https://store.rakwireless.com/products/rak7249-diy-outdoor-gateway?utm_source=RAK7249Max&utm_medium=Document&utm_campaign=BuyFromStore)
+
+The antenna is also compatible with the following:
+- [Outdoor Enclosure for RAK Hotspot](https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H?utm_source=OutdoorEnclosureKitH&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Bobcat Outdoor Enclosure Kit](https://store.rakwireless.com/products/bobcat-outdoor-enclosure-kit?utm_source=BobcatOutdoorEnclosureKit&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Antenna Magnetic Base](https://store.rakwireless.com/products/antenna-magnetic-base?utm_source=MagneticAntennaBase&utm_medium=Document&utm_campaign=BuyFromStore)
 :::
 
 ## Features

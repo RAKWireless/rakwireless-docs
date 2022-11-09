@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK12010
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK12010 Quick Start Guide
@@ -19,12 +19,12 @@ Before going through each and every step on using the RAK12010 WisBlock module, 
 
 #### Hardware
 
-- [RAK12010 WisBlock Ambient Light Sensor Module](https://store.rakwireless.com/products/wisblock-ambient-light-sensor-rak12010?_pos=1&_sid=d800e7602&_ss=r)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK12010 WisBlock Ambient Light Sensor Module](https://store.rakwireless.com/products/wisblock-ambient-light-sensor-rak12010?_pos=1&_sid=d800e7602&_ss=r?utm_source=RAK12010&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -64,9 +64,9 @@ As shown in **Figure 2**, the location for Slot A, B, C, and D are properly mark
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12010/quickstart/removing-screws.png"
@@ -91,7 +91,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12010 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12010 uses I2C communication lines, and it can cause possible conflict especially on some IO modules.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
@@ -136,7 +136,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
   caption="Selecting RAK11310 as WisBlock Core"
 />
 
-3. Next, copy the following sample code into your Arduino IDE: 
+3. Next, copy the following sample code into your Arduino IDE:
 
 ::: details Click Here to View Example Code
 ```c
@@ -230,7 +230,7 @@ void loop()
 }
 
 ```
-::: 
+:::
 
 ::: tip 📝 NOTE
 If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12010 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12010_VEML7700_Light). This sample code in Github will work on all WisBlock Core.

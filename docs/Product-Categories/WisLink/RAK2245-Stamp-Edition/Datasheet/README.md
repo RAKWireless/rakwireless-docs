@@ -22,7 +22,7 @@ rak_img: /assets/images/wislink-lora/rak2245-stamp-edition/quickstart/overview/R
 
 ### Description
 
-The **RAK2245 WisLink-LoRa Stamp Edition** is a complete and cost efficient gateway solution base on Semtech SX1301 fully utilizing the LoRa System. This LPWAN Concentrator module supports eight channels and is available for all LoRaWAN international standard bands.
+The **RAK2245 Stamp WisLink LPWAN Concentrator** is a complete and cost efficient gateway solution base on Semtech SX1301 fully utilizing the LoRa System. This LPWAN Concentrator module supports eight channels and is available for all LoRaWAN international standard bands.
 
 The Stamp form factor feature enables easy integration into the system's main board, providing LoRaWAN functionality. This ultra compact module measures just 60mm x 30mm x 14.9mm, believed to be the world’s smallest gateway module which has a built-in GPS chip. It comes with a mounted heat-sink that improves the thermal heat dissipation and overall performance of the device.
 

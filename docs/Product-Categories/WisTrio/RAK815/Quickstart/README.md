@@ -18,7 +18,7 @@ rak_img: /assets/images/wistrio/rak815/quickstart/1main/RAK815_home.png
 
 ### What do you need?
 
-1. **RAK815 WisTrio LPWAN Tracker**
+1. [RAK815 WisTrio LPWAN Tracker](https://store.rakwireless.com/products/rak815-hybrid-location-tracker?utm_source=RAK815HybridLocationTracker&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Emulator Kit w/ Debugging Tool
 3. Micro - USB Cable
 4. Gateway in Range for Testing

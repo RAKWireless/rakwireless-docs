@@ -19,8 +19,8 @@ Thank you for choosing **RAK7205/RAK5205 WisTrio LPWAN Tracker** in your awesome
 * [RAK5205 3D Model (SMA)](https://downloads.rakwireless.com/3D_File/WisTrio/PWB-RAK5205-SMA.stp)
 
 :::tip 📝 NOTE:
-RAK7205/RAK5205 WisTrio LPWAN Tracker is permanently out of stock. 
-As an alternative product, we recommend [RAK GNSS Tracker for LoRaWAN.](https://store.rakwireless.com/products/rak10700-gnss-tracker-for-lorawan?variant=41363533070534)
+The RAK7205/RAK5205 WisTrio LPWAN Tracker is permanently out of stock. 
+As an alternative product, we recommend [RAK10700 WisBlock GNSS Tracker for LoRaWAN](https://store.rakwireless.com/products/lpwan-tracker-solution-kit?utm_source=RAK10700&utm_medium=Document&utm_campaign=BuyFromStore).
 :::
 ## Product Description
 

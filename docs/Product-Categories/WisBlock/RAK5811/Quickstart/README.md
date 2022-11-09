@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK5811
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK5811 Quick Start Guide
@@ -17,16 +17,16 @@ next: ../Datasheet/
 
 Before going through each and every step on using the RAK5811 WisBlock module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
 - [RAK5811 WisBlock 0-5V Interface Module](https://store.rakwireless.com/collections/wisblock-interface/products/rak5811-0-5v-analog-interface/)
 - [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
-#### Software 
+#### Software
 
 ##### Arduino
 - Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software).
@@ -36,16 +36,16 @@ Before going through each and every step on using the RAK5811 WisBlock module, m
 
 To use the WisBlock Core modules with PlatformIO, you need to install a small script named RAK_PATCH. The script can be installed on WisBlock Core RAK4631, RAK11200, and RAK11310. Install [RAK_PATCH on PlatformIO](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md).
 
-::: warning ⚠️ WARNING    
+::: warning ⚠️ WARNING
 RAK_PATCH script was tested only on Windows 10 and Ubuntu.<br>
-In the case of the Raspberry PI 2040 platform update on PlatformIO, the RAK_PATH script must be executed again after the platform update. 
+In the case of the Raspberry PI 2040 platform update on PlatformIO, the RAK_PATH script must be executed again after the platform update.
 :::
 
 ## Product Configuration
 
 ### Overview
 
-To give you a better understanding of how the RAK5811 Module works, the block diagram is provided in this section. 
+To give you a better understanding of how the RAK5811 Module works, the block diagram is provided in this section.
 
 #### Block Diagram
 
@@ -99,7 +99,7 @@ For detailed instructions, refer to the [WisBlock Installation Guide](/Knowledge
 
 ##### RAK5811 Fast Crimping Terminal Mechanism
 
-The RAK5811 features a fast-crimping terminal connector to simplify and ensure the wiring process on the fields. The fast-crimping terminal can support cable with a width between 20 AWG to 24 AWG. The usual stripping length is around 6 to 7&nbsp;mm. 
+The RAK5811 features a fast-crimping terminal connector to simplify and ensure the wiring process on the fields. The fast-crimping terminal can support cable with a width between 20 AWG to 24 AWG. The usual stripping length is around 6 to 7&nbsp;mm.
 
 As shown in **Figure 5**, during the crimping process, you should first press down and maintain the spring head of the crimping terminal firmly, then insert the stripped cable head into the corresponding connector’s hole. Once inserted correctly, release the spring head, and the crimping process is completed.
 
@@ -115,9 +115,9 @@ To learn more about the Pinout Diagram of the RAK5811 Module, refer to the [Data
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock module is the same. 
+The procedure in disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak5811/quickstart/removing_screw.png"
@@ -184,7 +184,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="Selecting RAK11310 as WisBlock Core"
 />
 
-2. You can access the programming guide for the RAK5811 module by opening the example codes depending on your WisBlock Core, as shown in **Figure 12** to **Figure 14**. 
+2. You can access the programming guide for the RAK5811 module by opening the example codes depending on your WisBlock Core, as shown in **Figure 12** to **Figure 14**.
 
 <rk-img
   src="/assets/images/wisblock/rak5811/quickstart/example_rak4631_rak5811.png"
@@ -232,7 +232,7 @@ If you already installed the [RAKwireless Arduino BSP](https://github.com/RAKWir
   caption="RAK11200 and RAK5811 example log"
 />
 
- 
+
 #### PlatformIO Setup (Optional)
 
 To develop using PlatformIO, you need to install the RAK_PATCH script as described in the section [PlatformIO](/Product-Categories/WisBlock/RAK5811/Quickstart/#platformio).
@@ -247,7 +247,7 @@ To develop using PlatformIO, you need to install the RAK_PATCH script as describ
 />
 
 3. Configure **Import Arduino Project** parameters:
-  
+
   - On the boards list, select your favorite WisCore. For example: **WisCore RAK11310 Board (RAKwireless)** (Label 1).
   - Check **Use libraries installed by Arduino IDE** (Label 2).
   - Choose the directory of your Arduino project to be imported (Label 3).
@@ -278,7 +278,7 @@ Now, your project is imported successfully.
 On the imported project, check the **platformio.ini** file:
 
 The parameter **libs_extra_dirs** is your Arduino library directory.<br>
-In case of upload error, add the parameter **upload_port**. 
+In case of upload error, add the parameter **upload_port**.
 
 ```c
 [env:rak11300]
@@ -311,7 +311,7 @@ digitalWrite(WB_IO1, HIGH);
 
 - The **`analogReference`** function configure the reference voltage used for analog input. The reference voltage is the value used as the top of the input range.
 - The **`analogOversampling`** is a method to achieve a higher resolution without using an external ADC.
-  
+
 ```c{2,3}
 pinMode(WB_A1, INPUT_PULLDOWN);
 analogReference(AR_INTERNAL_3_0);
@@ -359,10 +359,10 @@ digitalWrite(WB_IO1, HIGH);
 - The function **`adcAttachPin`** attach a GPIO pin to ADC.<br>
 - The function **`analogSetAttenuation`** sets the input attenuation for all ADC pins. The default value is ADC_11db.<br>
 - The function **`analogReadResolution`** set the size (bits) of the ADC. The default value is 12-bit resolution.
-  
+
 ```c{1,2,3}
 adcAttachPin(WB_A1);
-analogSetAttenuation(ADC_11db); 
+analogSetAttenuation(ADC_11db);
 analogReadResolution(12);
 ```
 ##### 1.3 Get ADC Samples
@@ -385,8 +385,8 @@ voltage_mcu_ain = esp_adc_cal_raw_to_voltage(average_adc_raw);
 voltage_sensor = voltage_mcu_ain / 0.6;   //WisBlock RAK5811 (0 ~ 5V). Input signal reduced to 6/10 and output
 depths = (voltage_sensor * 1000 - 574) * 2.5; //Convert to millivolt. 574mv is the default V output from sensor
 ```
- 
-:::warning ⚠️ WARNING    
+
+:::warning ⚠️ WARNING
 ADC measurements will be noisier while WiFi is on, often due to poor power and/or signal filtering.
 :::
 

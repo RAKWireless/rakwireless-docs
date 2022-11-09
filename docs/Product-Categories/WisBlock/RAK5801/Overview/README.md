@@ -26,12 +26,11 @@ Thank you for choosing **RAK5801 WisBlock 4-20mA Interface Module** in your awes
 
 **Examples**
 
-For WisBlock Core RAK4630:
-* [Sample Code: RAK5801 4-20mA](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/IO/RAK5801_4-20mA)
-* [Sample Code: Hydraulic Pressure Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Hydraulic_Pressure_Monitoring)
-
-For WisBlock Core RAK11200:
-* [Sample Code: RAK5801 4-20mA](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/IO/RAK5801_4-20mA)
+- For WisBlock Core RAK4630:
+    * [Sample Code: RAK5801 4-20mA](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/IO/RAK5801_4-20mA)
+    * [Sample Code: Hydraulic Pressure Monitoring](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Hydraulic_Pressure_Monitoring)
+- For WisBlock Core RAK11200:
+    * [Sample Code: RAK5801 4-20mA](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/IO/RAK5801_4-20mA)
 
 
 ## Product Description

@@ -23,15 +23,15 @@ Before going through the steps in the installation guide of the RAK4630 WisDuo L
 
 #### Hardware
 
-- [RAK4630 WisDuo LPWAN Module](https://store.rakwireless.com/products/rak4630-wisduo-lpwan-module)
+- [RAK4630 WisDuo LPWAN Module](https://store.rakwireless.com/products/rak4630-wisduo-lpwan-module?utm_source=RAK4630Module&utm_medium=Document&utm_campaign=BuyFromStore)
 - Computer
 - USB to UART TTL adapter
 
 #### Software
 
 - Download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
-:::warning ⚠️ WARNING    
-_**If you are using Windows 10**_.    
+:::warning ⚠️ WARNING
+_**If you are using Windows 10**_.
 Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Please install the original Arduino IDE from the Arduino official website! The Arduino app from the Microsoft App Store has problems to use third party Board Support Packages.
 :::
 - Add [RAK4630 as a supported board in Arduino IDE](/Product-Categories/wisduo/rak4630-module/Quickstart/#-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with this JSON URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json`. After that, you can then add **RAKwireless RUI nRF Boards** via Arduino board manager.
@@ -76,7 +76,7 @@ RAK4630 has a label on its sticker on where to connect the antennas, as shown in
 
 
 :::tip 📝 NOTE
-Detailed information about the RAK4630 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/). 
+Detailed information about the RAK4630 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
 :::
 
 :::warning ⚠️ WARNING
@@ -91,8 +91,8 @@ The default firmware of RAK4630 is based on RUI3, which allows you to develop yo
 
 If you don't have an Arduino IDE yet, you can download it on the [Arduino official website](https://www.arduino.cc/en/Main/Software) and follow the installation procedure in the [miscellaneous section](/Product-Categories/wisduo/rak4630-module/Quickstart/#arduino-installation) of this document.
 
-::: tip 📝 NOTE   
-**For Windows 10 and up users**:   
+::: tip 📝 NOTE
+**For Windows 10 and up users**:
 If your Arduino IDE is installed from the Microsoft App Store, you need to reinstall your Arduino IDE by getting it from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 
@@ -314,12 +314,12 @@ You can use any of the pins, as shown in **Figure 23**, as Analog Input Pin by r
 
 int val = 0;  // variable to store the value read
 
-void setup() 
+void setup()
 {
-  Serial.begin(115200); 
+  Serial.begin(115200);
 }
 
-void loop() 
+void loop()
 {
   val = analogRead(analogPin);  // read the input pin
   Serial.println(val);          // debug value
@@ -335,8 +335,8 @@ There are two UART peripherals available on RAK4630. There are also different [S
 
 | **Serial Port**           | **Serial Instance Assignment** | **Default Mode**  |
 | ------------------------- | ------------------------------ | ----------------- |
-| UART1 (pin 19, 20)        | Serial0                        | AT Command        |  
-| UART2 (pin 15, 16)        | Serial1                        | Custom Mode       |  
+| UART1 (pin 19, 20)        | Serial0                        | AT Command        |
+| UART2 (pin 15, 16)        | Serial1                        | Custom Mode       |
 
 
 <rk-img
@@ -348,12 +348,12 @@ There are two UART peripherals available on RAK4630. There are also different [S
 Example Code
 
 ```c
-void setup() 
+void setup()
 {
   Serial0.begin(115200); //use Serial0 for UART1 and Serial1 for UART2 //you can designate separate baudrate for each.
 }
 
-void loop() 
+void loop()
 {
   Serial0.println("RAK4630 TEST!");
   delay(1000); // delay for 1 second
@@ -376,9 +376,9 @@ Make sure you have an I2C device connected to specified I2C pins to run the exam
 void setup()
 {
   Wire.begin();
- 
+
   Serial.begin(115200);
-  while (!Serial);            
+  while (!Serial);
   Serial.println("\nI2C Scanner");
 }
 
@@ -386,9 +386,9 @@ void loop()
 {
   byte error, address;
   int nDevices;
- 
+
   Serial.println("Scanning...");
- 
+
   nDevices = 0;
   for(address = 1; address < 127; address++ )
   {
@@ -397,7 +397,7 @@ void loop()
     // a device did acknowledge to the address.
     Wire.beginTransmission(address);
     error = Wire.endTransmission();
- 
+
     if (error == 0)
     {
       Serial.print("I2C device found at address 0x");
@@ -405,7 +405,7 @@ void loop()
         Serial.print("0");
       Serial.print(address,HEX);
       Serial.println("  !");
- 
+
       nDevices++;
     }
     else if (error==4)
@@ -414,13 +414,13 @@ void loop()
       if (address<16)
         Serial.print("0");
       Serial.println(address,HEX);
-    }    
+    }
   }
   if (nDevices == 0)
     Serial.println("No I2C devices found\n");
   else
     Serial.println("done\n");
- 
+
   delay(5000);           // wait 5 seconds for next scan
 }
 ```
@@ -442,7 +442,7 @@ This example illustrates how to program RAK4630 as a stand-alone LoRaWAN end-dev
 Moreover, this guide will use the internal network server of the [WisGate Edge RAK7268](https://store.rakwireless.com/products/wisgate-edge-lite-2-rak7268-rak7268c) LoRawan gateway. RAK offers various models of WisGate LoRaWAN gateways that you can buy from the [RAK store](https://store.rakwireless.com/collections/wisgate). This guide is focused on the configuration of RAK4630 as a LoRaWAN end-device.
 
 As a LoRaWAN refresher, these are three main things you need to have a working LoRaWAN application:
- 
+
 - LoRaWAN Gateway (this guide uses RAK7268 WisGate Edge gateway)
 - LoRaWAN Network Server (this guide uses RAK7268 WisGate Edge built-in LoRaWAN network server)
 - LoRaWAN End-Device (RAK4630 in this guide)
@@ -460,7 +460,7 @@ LoRaWAN gateway models like WisGate Edge have built-in network servers. It is al
 
 ###### Adding the RAK4630 as an End-Device to the LoRaWAN Network Server
 
-1. You need to have a functional RAK7268 to proceed with the next steps. For a complete guide, refer to [RAK7268 WisGate Edge Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7268/Quickstart/#prerequisites). Other WisGate Edge configurations can be found in the detailed documentation of the [WisGate OS](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS/Overview/). 
+1. You need to have a functional RAK7268 to proceed with the next steps. For a complete guide, refer to [RAK7268 WisGate Edge Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7268/Quickstart/#prerequisites). Other WisGate Edge configurations can be found in the detailed documentation of the [WisGate OS](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS/Overview/).
 
 This section will show you how to add a LoRaWAN application to the built-in network server of RAK7268 and how to add a device to it. You need to have [access on the RAK7268 console portal](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7268/Quickstart/#access-the-gateway) to perform the necessary configurations. The IP address you need to use to access the portal will depend on your type of connection to RAK7268. For example, if your RAK7268 is configured as Access Point, you can connect to it via `http://192.168.230.1/`.
 
@@ -526,7 +526,7 @@ You can find the [TTN guide](/Product-Categories/WisDuo/rak4630-module/quickstar
   caption="Adding device to the application"
 />
 
-9. The next step is to configure the other important parameters related to LoRaWAN. You need to put a name on your device and in this case, it is **RAK4630**. Three parameters in this list must be the same as your RAK4630 code: **Class**, **Join Mode**, and **Application Key**. 
+9. The next step is to configure the other important parameters related to LoRaWAN. You need to put a name on your device and in this case, it is **RAK4630**. Three parameters in this list must be the same as your RAK4630 code: **Class**, **Join Mode**, and **Application Key**.
 
 On the example Arduino code in the latter part of this guide, the Class A and Join Mode OTAA are default. With that, you will only need to modify the code of the application key. Lastly, the **LoRaWAN MAC Version** must be **1.0.3**. After setting up all these parameters, click **Save & Apply**.
 
@@ -588,7 +588,7 @@ After a successful registration of the RAK4630 device to the LoRaWAN Network Ser
   }
 
   uint16_t maskBuff = 0x0002;
-  api.lorawan.mask.set(&maskBuff); 
+  api.lorawan.mask.set(&maskBuff);
 ```
 
 :::tip 📝 NOTE:
@@ -675,7 +675,7 @@ You can also send AT commands via direct USB connection to the module, as shown 
 
 2. Any serial communication tool can be used, but it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
 
-3. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows: 
+3. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows:
 
  * Baud Rate: **115200 baud**
  * Data Bits: **8 bits**
@@ -691,13 +691,13 @@ This guide covers the following topics:
 - [TheThingsNetwork Guide](/Product-Categories/WisDuo/rak4630-module/quickstart/#connecting-to-the-things-network-ttn) - How to login, register new accounts, and create new applications on TTN.
 - [RAK4630 TTN OTAA Guide](/Product-Categories/WisDuo/rak4630-module/quickstart/#ttn-otaa-device-registration) - How to add OTAA device on TTN and what AT commands to use on RAK4630 OTAA activation.
 - [RAK4630 TTN ABP Guide](/Product-Categories/WisDuo/rak4630-module/quickstart/#ttn-abp-device-registration) - How to add ABP device on TTN and what AT commands to use on RAK4630 ABP activation.
-- [Chirpstack Guide](/Product-Categories/WisDuo/rak4630-module/quickstart/#connecting-with-chirpstack) - How to create new applications on Chirpstack. 
+- [Chirpstack Guide](/Product-Categories/WisDuo/rak4630-module/quickstart/#connecting-with-chirpstack) - How to create new applications on Chirpstack.
 - [RAK4630 Chirpstack OTAA Guide](/Product-Categories/WisDuo/rak4630-module/quickstart/#chirpstack-otaa-device-registration) - How to add OTAA device to Chirpstack and what AT commands to use on RAK4630 OTAA activation.
 - [RAK4630 Chirpstack ABP Guide](/Product-Categories/WisDuo/rak4630-module/quickstart/#chirpstack-abp-device-registration) - How to add ABP device on Chirpstack and what AT commands to use on RAK4630 ABP activation.
 
 ###### Connecting to The Things Network (TTN)
 
-In this section, it shows how to connect the RAK4630 module to the TTN platform. 
+In this section, it shows how to connect the RAK4630 module to the TTN platform.
 
 :::tip 📝 NOTE:
 
@@ -770,7 +770,7 @@ You can use the same login credentials on the TTN V2 if you have one. If you hav
 />
 
 7. To have an application registered, input first the specific details and necessary information about your application then click **Create application**.
- 
+
 <rk-img
   src="/assets/images/wisduo/rak4630-module/quickstart/image_7.png"
   width="100%"
@@ -843,7 +843,7 @@ You should now be able to see the device on the TTN console after you fully regi
 
 The **AppEUI**, **DevEUI**, and **AppKey** are the parameters that you will need to activate your LoRaWAN end-device via OTAA. The **AppKey** is hidden by default for security reasons, but you can easily show it by clicking the show button. You can also copy the parameters quickly using the copy button.
 
-The three OTAA parameters on the TTN device console are MSB by default. 
+The three OTAA parameters on the TTN device console are MSB by default.
 
 These parameters are always accessible on the device console page, as shown in **Figure 52**.
 :::
@@ -857,7 +857,7 @@ These parameters are always accessible on the device console page, as shown in *
 
 ###### OTAA Configuration for TTN
 
-The RAK4630 module supports a series of AT commands to configure its internal parameters and control the functionalities of the module. 
+The RAK4630 module supports a series of AT commands to configure its internal parameters and control the functionalities of the module.
 
 1. To set up the RAK4630 module to join the TTN using OTAA, start by connecting the RAK4630 module to your computer (see [Figure 37](/Product-Categories/WisDuo/RAK4630-Module/Quickstart/#connect-to-the-rak4630)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
@@ -886,12 +886,12 @@ If you haven't received an `OK` or any reply, you need to check if you selected 
   caption="at+version command response"
 />
 
-2. The next step is to configure the OTAA LoRaWAN parameters in RAK4630: 
+2. The next step is to configure the OTAA LoRaWAN parameters in RAK4630:
 
 - LoRa work mode: **LoRaWAN**
 - LoRaWAN join mode: **OTAA**
 - LoRaWAN class: **Class A**
-- LoRaWAN region: **EU868** 
+- LoRaWAN region: **EU868**
 
 Set the work mode to LoRaWAN. You might need to reconnect on the Serial Terminal Software Tool if you lost connection after using the `AT+NWM=1` command.
 
@@ -998,7 +998,7 @@ After 5 or 6 seconds, if the request is successfully received by a LoRa gateway,
 
 If the OTAA device failed to join, you need to check if your device is within reach of a working LoRaWAN gateway that is configured to connect to TTN. It is also important to check that all your OTAA parameters (DEVEUI, APPEUI, and APPKEY) are correct using the `AT+DEVEUI=?`, `AT+APPEUI=?`, and `AT+APPKEY=?` commands. Lastly, ensure that the antenna of your device is properly connected.
 
-After checking all the things above, try to join again. 
+After checking all the things above, try to join again.
 :::
 
 5. With the end-device properly activated, you can now try to send some payload after a successful join.
@@ -1119,12 +1119,12 @@ If you haven't received an `OK` or any reply, you need to check if the wiring of
   caption="at+version command response"
 />
 
-3. The next step is to configure the ABP LoRaWAN parameters in RAK4630: 
+3. The next step is to configure the ABP LoRaWAN parameters in RAK4630:
 
 - LoRa work mode: **LoRaWAN**
 - LoRaWAN join mode: **ABP**
 - LoRaWAN class: **Class A**
-- LoRaWAN region: **EU868** 
+- LoRaWAN region: **EU868**
 
 Set the work mode to LoRaWAN. You might need to reconnect on the Serial Terminal Software Tool if you lost connection after using the **AT+NWM=1** command.
 ```
@@ -1179,7 +1179,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
   caption="Configuring LoRa parameters"
 />
 
-4. After the configuration of the LoRaWAN parameters, the next step is to set up the device address and sessions keys. You need the use the values from the TTN console. 
+4. After the configuration of the LoRaWAN parameters, the next step is to set up the device address and sessions keys. You need the use the values from the TTN console.
 
 - Device Address: **260BDE80**
 - Application Session Key: **A585903A949C2B2D44B55E99E94CB533**
@@ -1237,7 +1237,7 @@ Send command format: **`AT+SEND=<port>:<payload>`**
 
 If your LoRaWAN payload didn't reach the TTN, check if your device is within reach of a working LoRaWAN gateway that is configured to connect to TTN. It is also important to check that all your ABP parameters (DEVADDR, APPSKEY, and NWKSKEY) are correct by using `AT+DEVADDR=?`, `AT+APPSKEY=?`, and `AT+NWKSKEY=?` commands. Lastly, ensure that the antenna of your device is properly connected.
 
-After checking all the things above, try to send LoRaWAN payloads again. 
+After checking all the things above, try to send LoRaWAN payloads again.
 :::
 
 <rk-img
@@ -1274,7 +1274,7 @@ In this guide, it is assumed that you are using a RAK Gateway and its built-in C
 
 :::
 
-* In summary, these are the requirements: 
+* In summary, these are the requirements:
 
   1. In a ChirpStack online gateway, the frequency band of the nodes should be consistent with the frequency band of the gateway in use.
       * [Connect the Gateway with Chirpstack](/Product-Categories/WisGate/RAK7243/Quickstart/#connect-the-gateway-with-chirpstack)
@@ -1308,7 +1308,7 @@ The frequency band used in the demonstration is EU868. Use a high-frequency vers
 
 * For this setup, create an Application named “**rak_node_test**”.
 
-ChirpStack LoraServer supports multiple system configurations, with only one by default. 
+ChirpStack LoraServer supports multiple system configurations, with only one by default.
 
 * **Service profile**: Field is to select the system profile.
 * **Payload codec**: It is the parsing method for selecting load data such as parsing LPP format data.
@@ -1338,7 +1338,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   caption="Device tab of an application"
 />
 
-3. Once inside of the DEVICE tab, create a new device (LoRaWAN node) by clicking on the “**+ CREATE**” button. 
+3. Once inside of the DEVICE tab, create a new device (LoRaWAN node) by clicking on the “**+ CREATE**” button.
 
 <rk-img
   src="/assets/images/wisduo/rak4630-module/quickstart/29.adding-node.png"
@@ -1356,9 +1356,9 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 
 Fill in the parameters requested:
 
-* **Device name and Device description**: These are descriptive texts about your device. 
-* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the generate icon. You can also add a specific Device EUI directly in the form. 
-* **Device Profile**: 
+* **Device name and Device description**: These are descriptive texts about your device.
+* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the generate icon. You can also add a specific Device EUI directly in the form.
+* **Device Profile**:
   * If you want to join in OTAA mode, select “**DeviceProfile_OTAA**”.
   * If you want to join in ABP mode, select “**DeviceProfile_ABP**”.
 
@@ -1377,7 +1377,7 @@ If you have your own Chirpstack installation, you can set up the device profile 
 
 ###### Chirpstack OTAA Device Registration
 
-1. If you have selected “**DeviceProfile_OTAA**”, as shown in **Figure 79**, after the device is created, an Application Key must be also created for this device. 
+1. If you have selected “**DeviceProfile_OTAA**”, as shown in **Figure 79**, after the device is created, an Application Key must be also created for this device.
 
 <rk-img
   src="/assets/images/wisduo/rak4630-module/quickstart/32.otaa.png"
@@ -1393,7 +1393,7 @@ If you have your own Chirpstack installation, you can set up the device profile 
   caption="Chirpstack OTAA Set Application Keys"
 />
 
-3. Once the Application Key is added to the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button. 
+3. Once the Application Key is added to the form, the process can be finalized by clicking on the “**SET DEVICE-KEYS**” button.
 
 * As shown in **Figure 81**, a new device should be listed in the DEVICES tab. The most important parameters, such as the Device EUI, are shown in the summary.
 
@@ -1414,13 +1414,13 @@ If you have your own Chirpstack installation, you can set up the device profile 
 
 :::tip 📝 NOTE:
 
-Standard OTAA mode requires the **Device EUI**, **Application Key**, and **Application EUI**, but in ChirpStack’s implementation, only the Device EUI and the Application Key are mandatory. The Application EUI is not required and not recorded in the Application tab. Nevertheless, you can reuse the Device EUI as the Application EUI during the configuration on the side of the node. 
+Standard OTAA mode requires the **Device EUI**, **Application Key**, and **Application EUI**, but in ChirpStack’s implementation, only the Device EUI and the Application Key are mandatory. The Application EUI is not required and not recorded in the Application tab. Nevertheless, you can reuse the Device EUI as the Application EUI during the configuration on the side of the node.
 
 :::
 
 ###### OTAA Configuration for Chirpstack
 
-The RAK4630 module supports a series of AT commands to configure its internal parameters and control the functionalities of the module. 
+The RAK4630 module supports a series of AT commands to configure its internal parameters and control the functionalities of the module.
 
 1. To set up the RAK4630 module to join the Chirpstack using OTAA, start by connecting the RAK4630 module to the Computer (see [Figure 37](/Product-Categories/WisDuo/RAK4630-Module/Quickstart/#connect-to-the-rak4630)) and open the RAK Serial Port Tool. Select the right COM port and set the baud rate to 115200.
 
@@ -1449,12 +1449,12 @@ If you haven't received an `OK` or any reply, you need to check if the wiring of
   caption="at+version command response"
 />
 
-2. The next step is to configure the OTAA LoRaWAN parameters in RAK4630: 
+2. The next step is to configure the OTAA LoRaWAN parameters in RAK4630:
 
 - LoRa work mode: **LoRaWAN**
 - LoRaWAN join mode: **OTAA**
 - LoRaWAN class: **Class A**
-- LoRaWAN region: **EU868** 
+- LoRaWAN region: **EU868**
 
 Set the work mode to LoRaWAN. You might need to reconnect on the Serial Terminal Software Tool if you lost connection after using the `AT+NWM=1` command.
 
@@ -1510,11 +1510,11 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
   caption="Configuring LoRa parameters"
 />
 
-3. After the configuration of the LoRaWAN parameters, the next step is to set up the DevEUI and AppKey. You need the use the values from the Chirpstack device console. 
+3. After the configuration of the LoRaWAN parameters, the next step is to set up the DevEUI and AppKey. You need the use the values from the Chirpstack device console.
 
 :::tip 📝 NOTE:
-The Application EUI parameter is not required in the ChirpStack platform; therefore, it is possible to use the same id as the Device EUI. 
-::: 
+The Application EUI parameter is not required in the ChirpStack platform; therefore, it is possible to use the same id as the Device EUI.
+:::
 
 - Device EUI: **5E9D1E0857CF25F1**
 - Application EUI: **5E9D1E0857CF25F1**
@@ -1582,7 +1582,7 @@ Send command format: **`AT+SEND=<port>:<payload>`**
   caption="OTAA test sample data sent via RAK Serial Port Tool"
 />
 
-On the ChirpStack platform, you should see the join and uplink messages in the LORAWAN FRAMES tab, as shown in **Figure 87**. By convention, messages sent from nodes to gateways are considered as **Uplinks** while messages sent by gateways to nodes are considered as **Downlinks**. 
+On the ChirpStack platform, you should see the join and uplink messages in the LORAWAN FRAMES tab, as shown in **Figure 87**. By convention, messages sent from nodes to gateways are considered as **Uplinks** while messages sent by gateways to nodes are considered as **Downlinks**.
 
 
 <rk-img
@@ -1593,7 +1593,7 @@ On the ChirpStack platform, you should see the join and uplink messages in the L
 
 ###### Chirpstack ABP Device Registration
 
-1. During the registration of a new device, if you select “**DeviceProfile_ABP**”, as shown in **Figure 88**, then the ChirpStack platform will assume that this device will join the LoRaWAN network using the ABP mode. 
+1. During the registration of a new device, if you select “**DeviceProfile_ABP**”, as shown in **Figure 88**, then the ChirpStack platform will assume that this device will join the LoRaWAN network using the ABP mode.
 
 
 :::tip 📝 NOTE:
@@ -1609,7 +1609,7 @@ Check “**Disable counting frame verification**”. During the test, when the m
   caption="ChirpStack console, configuring a device"
 />
 
-2. After selecting the ABP mode, the following parameters appear in the Activation tab: 
+2. After selecting the ABP mode, the following parameters appear in the Activation tab:
 
 Then, you can see that there are some parameters for ABP in the **“ACTIVATION”** item:
 
@@ -1655,12 +1655,12 @@ If haven't received an `OK` or any reply, you need to check if the wiring of you
   caption="at+version command response"
 />
 
-2. The next step is to configure the ABP LoRaWAN parameters in RAK4630: 
+2. The next step is to configure the ABP LoRaWAN parameters in RAK4630:
 
 - LoRa work mode: **LoRaWAN**
 - LoRaWAN join mode: **ABP**
 - LoRaWAN class: **Class A**
-- LoRaWAN region: **EU868** 
+- LoRaWAN region: **EU868**
 
 Set the work mode to LoRaWAN. You might need to reconnect on the Serial Terminal Software Tool if you lost connection after using the **AT+NWM=1** command.
 
@@ -1716,7 +1716,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
   caption="Configuring LoRa parameters"
 />
 
-3. After the configuration of the LoRaWAN parameters, the next step is to set up the device address and session keys. You need the use the values from the Chirpstack device console. 
+3. After the configuration of the LoRaWAN parameters, the next step is to set up the device address and session keys. You need the use the values from the Chirpstack device console.
 
 - Device Address: **26011AF9**
 - Application Session Key: **4D42EC5CAF97F03D833CDAf5003F69E1**
@@ -1839,7 +1839,7 @@ Refer to the [P2P Mode](/Product-Categories/WisDuo/rak4630-module/AT-Command-Man
 3. To set one module as a receiver (RX), you need to set the value of the P2P receive command to 65535.
 
 ```
-AT+PRECV=65535 
+AT+PRECV=65535
 ```
 
 With one module configured as RX, the other device will be the TX. You can now try to send a P2P payload.
@@ -1941,12 +1941,12 @@ Go to [Arduino official website](https://www.arduino.cc/en/Main/Software) and do
 
 #### For Windows
 
-::: tip 📝 NOTE   
-**For Windows 10 users**:   
+::: tip 📝 NOTE
+**For Windows 10 users**:
 Do **NOT** install the Arduino IDE from the Microsoft App store. Install the original Arduino IDE from the Arduino official website instead, since the Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 
-1. Install the Arduino IDE, which you just downloaded, on your Windows PC. 
+1. Install the Arduino IDE, which you just downloaded, on your Windows PC.
 
 2. Click **I Agree** then **Next** to proceed.
 

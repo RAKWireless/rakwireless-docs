@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK1920
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK1920 Quick Start Guide
@@ -21,24 +21,24 @@ Before going through each and every step on using the RAK1920 WisBlock module, m
 
 #### Hardware
 
-- [RAK1920](https://store.rakwireless.com/collections/wisblock-interface/products/rak1920-sensor-adapter-module)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK1920 WisBlock Interface Module](https://store.rakwireless.com/products/rak1920-sensor-adapter-module?utm_source=RAK1920&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- Li-Ion/LiPo battery (optional)
-- Solar charger (optional)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 - Grove PIR Motion Sensor (AS312)
 
 #### Software
 
 - Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software).
-- To add the RAKwireless Core boards on your Arduino board, install the RAKwireless Arduino BSP. Follow the steps in the [Github repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+- To add the RAKwireless Core boards on your Arduino board, install the RAKwireless Arduino BSP. Follow the steps in the [GitHub repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
 ## Product Configuration
 
 ### Hardware Setup
 
-RAK1920 is a WisBlock Interface module, which extends the WisBlock system with an adapter board to connect Click Boards (MikroElektronika), QWICC (Sparkfun) based, and Grove (Seeed) based sensors to WisBlock. 
+RAK1920 is a WisBlock Interface module, which extends the WisBlock system with an adapter board to connect Click Boards (MikroElektronika), QWICC (Sparkfun) based, and Grove (Seeed) based sensors to WisBlock.
 
 For more information about the RAK1920, refer to the [Datasheet](../Datasheet/).
 
@@ -63,9 +63,9 @@ As shown in **Figure 2**, the location for IO slot is properly marked by silkscr
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak1920/quickstart/16.removing-screws.png"

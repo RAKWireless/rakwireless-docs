@@ -17,7 +17,6 @@ Thank you for choosing **RAK19003 WisBlock Mini Base Board** in your awesome IoT
 * [RAK19003 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK19003 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK19003.stp)
 * [24-Pin Female Connector 3D File (Sensor Slot)](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/F24S1003K6M.stp)
@@ -46,21 +45,21 @@ Additionally, it has two user-definable LEDs - one power supply/charging indicat
 
 ## Product Features
 
-* **Power supply**     
+* **Power supply**
     * Supports both 5&nbsp;V USB and 3.7&nbsp;V rechargeable battery as power supply.
-    * Has a connector for a 5&nbsp;V solar panel to recharge the battery in a remote solution.     
-    * Control of power consumption    
-    * Has an electronic load switch to power the **WisBlock modules**. The power supply for the **WisBlock modules** boards can be controlled by the **WisBlock Core** modules application.    
+    * Has a connector for a 5&nbsp;V solar panel to recharge the battery in a remote solution.
+    * Control of power consumption
+    * Has an electronic load switch to power the **WisBlock modules**. The power supply for the **WisBlock modules** boards can be controlled by the **WisBlock Core** modules application.
 
-* **Size**    
+* **Size**
     * A compact size of 30 x 35&nbsp;mm, which lets you create solutions that fit into smallest housings.
 
 
-## Prerequisites 
+## Prerequisites
 
 WisBlock Mini Base is amazingly easy to use and requires only a Type-C USB cable to start developing with the system.
 
-:::warning ⚠️ WARNING    
-- Only 3.7-4.2&nbsp;V Rechargeable Li-Ion batteries are supported. Do not use other types of batteries with the system.    
-- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.    
+:::warning ⚠️ WARNING
+- Only 3.7-4.2&nbsp;V Rechargeable Li-Ion batteries are supported. Do not use other types of batteries with the system.
+- Only 5&nbsp;V solar panels are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
 :::

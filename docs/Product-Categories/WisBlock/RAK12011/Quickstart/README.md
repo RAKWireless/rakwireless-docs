@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK12011
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK12011 Quick Start Guide
@@ -20,12 +20,12 @@ Before going through each and every step on using the RAK12011 WisBlock module, 
 
 #### Hardware
 
-- [RAK12011 WisBlock Barometer WT Sensor Module](https://store.rakwireless.com/products/wisblock-barometer-wt-sensor-rak12011)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK12011 WisBlock Barometer WT Sensor Module](https://store.rakwireless.com/products/wisblock-barometer-wt-sensor-rak12011/?utm_source=RAK12011&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -47,7 +47,7 @@ The RAK12011 module gives information about:
 RAK12011 module can be connected to the sensor's slot of [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) to communicate with the WisBlock Core, as shown in **Figure 1**. It will work on **SLOT A, C to F**. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 :::tip 📝 NOTE:
-RAK12011 has one digital output line, so you need one GPIO from WisBlock Core. It means RAK12011 should be used on a sensor slot with one available GPIO. However, WB_IO2 is used to control 3V3_S. Hence, RAK12011 is used only on slots without WB_IO2 like sensor slots A, C to F on WisBlock Base board. 
+RAK12011 has one digital output line, so you need one GPIO from WisBlock Core. It means RAK12011 should be used on a sensor slot with one available GPIO. However, WB_IO2 is used to control 3V3_S. Hence, RAK12011 is used only on slots without WB_IO2 like sensor slots A, C to F on WisBlock Base board.
 :::
 
 <rk-img
@@ -70,9 +70,9 @@ As shown in **Figure 2**, the location for Slot A, B, C, and D are properly mark
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12011/quickstart/removing-screws.png"
@@ -97,7 +97,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12011 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12011 uses I2C communication lines, and it can cause possible conflict especially on some IO modules.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
@@ -180,12 +180,12 @@ void setup(void) {
   Serial.println("Adafruit LPS33 test!");
 
   // Try to initialize!
-  if (!g_lps22hb.begin_I2C(0x5d)) 
+  if (!g_lps22hb.begin_I2C(0x5d))
   {
     Serial.println("Failed to find LPS33 chip");
-    while (1) 
-    { 
-      delay(10); 
+    while (1)
+    {
+      delay(10);
     }
   }
 
@@ -194,17 +194,17 @@ void setup(void) {
   g_lps22hb.setDataRate(LPS22_RATE_10_HZ);
   Serial.print("Data rate set to: ");
 
-  switch (g_lps22hb.getDataRate()) 
+  switch (g_lps22hb.getDataRate())
   {
-    case LPS22_RATE_ONE_SHOT: Serial.println("One Shot / Power Down"); 
+    case LPS22_RATE_ONE_SHOT: Serial.println("One Shot / Power Down");
       break;
-    case LPS22_RATE_1_HZ: Serial.println("1 Hz"); 
+    case LPS22_RATE_1_HZ: Serial.println("1 Hz");
       break;
-    case LPS22_RATE_10_HZ: Serial.println("10 Hz"); 
+    case LPS22_RATE_10_HZ: Serial.println("10 Hz");
       break;
-    case LPS22_RATE_25_HZ: Serial.println("25 Hz"); 
+    case LPS22_RATE_25_HZ: Serial.println("25 Hz");
       break;
-    case LPS22_RATE_50_HZ: Serial.println("50 Hz"); 
+    case LPS22_RATE_50_HZ: Serial.println("50 Hz");
       break;
 
   }

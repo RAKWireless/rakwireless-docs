@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK17000
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK17000 Quick Start Guide
@@ -17,17 +17,17 @@ next: ../Datasheet/
 
 Before going through each and every step on using the RAK17000 WisBlock Motor Control Module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
-- [RAK17000 WisBlock Motor Control Module](https://store.rakwireless.com/collections/wisblock-motor/products/motor-control-module-rak17000?variant=40102991200454)
+- [RAK17000 WisBlock Motor Control Module](https://store.rakwireless.com/products/motor-control-module-rak17000?utm_source=RAK17000&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 - DC Motor or Stepper Motor
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -54,7 +54,7 @@ For more information about RAK17000, refer to the [Datasheet](../Datasheet/).
 
 :::
 
-You need to set a header jumper and short VM and BAT to enable power from the battery of the WisBlock module. You can connect up to two DC motors by using channels A and B. To use channel A, connect the DC motor on A1 and A2. To use channel B, connect the DC motor on B1 and B2. You need to use both channels if you are driving a stepper motor. 
+You need to set a header jumper and short VM and BAT to enable power from the battery of the WisBlock module. You can connect up to two DC motors by using channels A and B. To use channel A, connect the DC motor on A1 and A2. To use channel B, connect the DC motor on B1 and B2. You need to use both channels if you are driving a stepper motor.
 
 <rk-img
   src="/assets/images/wisblock/rak17000/quickstart/rak17000_bat.svg"
@@ -64,9 +64,9 @@ You need to set a header jumper and short VM and BAT to enable power from the ba
 
 #### Motor Driven by the External VIN
 
-You need to set header jumper and short VM and VIN to enable power from the external power source. The external power source can be a different battery pack or an independent DC power supply. Connect this power source to the supply voltage terminals VIN and GND of RAK17000 that can allow the voltage range from 2.7&nbsp;V to 10.8&nbsp;V. Once done on the setup, you can connect up to two DC motors by using channels A and B. 
+You need to set header jumper and short VM and VIN to enable power from the external power source. The external power source can be a different battery pack or an independent DC power supply. Connect this power source to the supply voltage terminals VIN and GND of RAK17000 that can allow the voltage range from 2.7&nbsp;V to 10.8&nbsp;V. Once done on the setup, you can connect up to two DC motors by using channels A and B.
 
-To use channel A, connect the DC motor on A1 and A2. To use channel B, connect the DC motor on B1 and B2. You need to use both channels if you are driving a stepper motor. 
+To use channel A, connect the DC motor on A1 and A2. To use channel B, connect the DC motor on B1 and B2. You need to use both channels if you are driving a stepper motor.
 
 <rk-img
   src="/assets/images/wisblock/rak17000/quickstart/rak17000_vin.svg"
@@ -88,7 +88,7 @@ The RAK17000 module can be mounted on the IO slot of the WisBlock Base board, as
 
 ##### RAK17000 Connector Crimping Mechanism
 
-The RAK17000 features a fast-crimping terminal connector to simplify and ensure the wiring process on the fields. The fast-crimping terminal can support cable with a width between 20&nbsp;AWG to 24&nbsp;AWG. The usual stripping length is around 6 to 7&nbsp;mm. 
+The RAK17000 features a fast-crimping terminal connector to simplify and ensure the wiring process on the fields. The fast-crimping terminal can support cable with a width between 20&nbsp;AWG to 24&nbsp;AWG. The usual stripping length is around 6 to 7&nbsp;mm.
 
 As shown in **Figure 4**, during the crimping process, you should first press down and maintain the spring head of the crimping terminal firmly, then insert the stripped cable head into the corresponding connector’s hole. Once inserted correctly, release the spring head, and the crimping process is completed.
 
@@ -100,9 +100,9 @@ As shown in **Figure 4**, during the crimping process, you should first press do
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak17000/quickstart/16.removing-screws.png"
@@ -154,7 +154,7 @@ After doing the hardware setup, this example code will work both for WisBlock ba
   caption="Selecting RAK4631 as the WisBlock Core"
 />
 
-2. Next, copy the following sample code into your Arduino IDE. This example code comes from the [RAK17000 WisBlock example repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/RAK4630/IO/RAK17000_Motor_Driver_DRV8833/RAK17000_Motor_Driver_DRV8833.ino) which controls two DC motors. 
+2. Next, copy the following sample code into your Arduino IDE. This example code comes from the [RAK17000 WisBlock example repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/RAK4630/IO/RAK17000_Motor_Driver_DRV8833/RAK17000_Motor_Driver_DRV8833.ino) which controls two DC motors.
 
 ```c
 /**
@@ -168,16 +168,16 @@ After doing the hardware setup, this example code will work both for WisBlock ba
 
 #include <Arduino.h>
 
-#define MOTOR_AIN1  SCK        
-#define MOTOR_AIN2  SS     
-#define MOTOR_BIN1  WB_IO3  
-#define MOTOR_BIN2  MOSI   
+#define MOTOR_AIN1  SCK
+#define MOTOR_AIN2  SS
+#define MOTOR_BIN1  WB_IO3
+#define MOTOR_BIN2  MOSI
 #define MOTOR_SLEEP WB_IO6
 
 void setup()
 {
   // Enable DRV8833 output.
-  pinMode(MOTOR_SLEEP, OUTPUT); 
+  pinMode(MOTOR_SLEEP, OUTPUT);
   digitalWrite(MOTOR_SLEEP, HIGH);
 
   pinMode(MOTOR_AIN1, OUTPUT);
@@ -189,12 +189,12 @@ void setup()
 void loop()
 {
   analogWrite(MOTOR_AIN2, 0);
-  analogWrite(MOTOR_BIN2, 0); 
-  for(uint8_t i = 0 ;i < 255 ;i++ ) 
+  analogWrite(MOTOR_BIN2, 0);
+  for(uint8_t i = 0 ;i < 255 ;i++ )
   {
     analogWrite(MOTOR_AIN1, i);
     analogWrite(MOTOR_BIN1, i);
-    delay(50);   
+    delay(50);
   }
   delay(100);
   for(uint8_t i = 255 ;i > 0 ;i-- )
@@ -203,7 +203,7 @@ void loop()
     analogWrite(MOTOR_BIN1, i);
     delay(50);
   }
-  
+
   analogWrite(MOTOR_AIN1, 0);
   analogWrite(MOTOR_BIN1, 0);
   for(uint8_t i = 0 ;i < 255 ;i++ )
@@ -219,7 +219,7 @@ void loop()
     analogWrite(MOTOR_BIN2, i);
     delay(50);
   }
-  delay(100); 
+  delay(100);
 }
 ```
 ::: tip 📝 NOTE
@@ -258,7 +258,7 @@ After doing the hardware setup, this example code will work both for WisBlock ba
   caption="Selecting RAK11200 as the WisBlock Core"
 />
 
-2. Next, copy the following sample code into your Arduino IDE. This example code comes from the [RAK17000 WisBlock example repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/RAK11200/IO/RAK17000_Motor_Driver_DRV8833/RAK17000_Motor_Driver_DRV8833.ino) which controls two DC motors. 
+2. Next, copy the following sample code into your Arduino IDE. This example code comes from the [RAK17000 WisBlock example repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/RAK11200/IO/RAK17000_Motor_Driver_DRV8833/RAK17000_Motor_Driver_DRV8833.ino) which controls two DC motors.
 
 ```c
 /**
@@ -272,9 +272,9 @@ After doing the hardware setup, this example code will work both for WisBlock ba
 
 #include <Arduino.h>
 
-#define MOTOR_AIN1  SCK  
-#define MOTOR_AIN2  SS  
-#define MOTOR_BIN1  WB_IO3  
+#define MOTOR_AIN1  SCK
+#define MOTOR_AIN2  SS
+#define MOTOR_BIN1  WB_IO3
 #define MOTOR_BIN2  MOSI
 #define MOTOR_SLEEP WB_IO6
 
@@ -291,9 +291,9 @@ After doing the hardware setup, this example code will work both for WisBlock ba
 #define LEDC_BASE_FREQ     5000
 
 /**
-   @brief  Arduino like analogWrite. 
+   @brief  Arduino like analogWrite.
 */
-void ledcAnalogWrite(uint8_t channel, uint32_t value, uint32_t valueMax = 255) 
+void ledcAnalogWrite(uint8_t channel, uint32_t value, uint32_t valueMax = 255)
 {
   // calculate duty, 8191 from 2 ^ 13 - 1
   uint32_t duty = (8191 / valueMax) * min(value, valueMax);
@@ -305,14 +305,14 @@ void ledcAnalogWrite(uint8_t channel, uint32_t value, uint32_t valueMax = 255)
 void setup()
 {
   // Enable DRV8833 output.
-  pinMode(MOTOR_SLEEP, OUTPUT); 
+  pinMode(MOTOR_SLEEP, OUTPUT);
   digitalWrite(MOTOR_SLEEP, HIGH);
 
   ledcSetup(LEDC_CHANNEL_0, LEDC_BASE_FREQ, LEDC_TIMER_13_BIT); // Set channel 0
   ledcSetup(LEDC_CHANNEL_1, LEDC_BASE_FREQ, LEDC_TIMER_13_BIT); // Set channel 1
   ledcSetup(LEDC_CHANNEL_2, LEDC_BASE_FREQ, LEDC_TIMER_13_BIT); // Set channel 2
   ledcSetup(LEDC_CHANNEL_3, LEDC_BASE_FREQ, LEDC_TIMER_13_BIT); // Set channel 3
-  
+
   ledcAttachPin(MOTOR_AIN1, LEDC_CHANNEL_0);
   ledcAttachPin(MOTOR_AIN2, LEDC_CHANNEL_1);
   ledcAttachPin(MOTOR_BIN1, LEDC_CHANNEL_2);
@@ -321,12 +321,12 @@ void setup()
 void loop()
 {
   ledcAnalogWrite(LEDC_CHANNEL_1, 0);
-  ledcAnalogWrite(LEDC_CHANNEL_3, 0); 
-  for(uint8_t i = 0 ;i < 255 ;i++ ) 
+  ledcAnalogWrite(LEDC_CHANNEL_3, 0);
+  for(uint8_t i = 0 ;i < 255 ;i++ )
   {
     ledcAnalogWrite(LEDC_CHANNEL_0, i);
     ledcAnalogWrite(LEDC_CHANNEL_2, i);
-    delay(50);   
+    delay(50);
   }
   delay(100);
   for(uint8_t i = 255 ;i > 0 ;i-- )
@@ -335,7 +335,7 @@ void loop()
     ledcAnalogWrite(LEDC_CHANNEL_2, i);
     delay(50);
   }
-  
+
   ledcAnalogWrite(LEDC_CHANNEL_0, 0);
   ledcAnalogWrite(LEDC_CHANNEL_2, 0);
   for(uint8_t i = 0 ;i < 255 ;i++ )
@@ -351,7 +351,7 @@ void loop()
     ledcAnalogWrite(LEDC_CHANNEL_3, i);
     delay(50);
   }
-  delay(100); 
+  delay(100);
 }
 ```
 
@@ -395,7 +395,7 @@ After doing the hardware setup, this example code will work both for WisBlock ba
   caption="Selecting RAK11310 as the WisBlock Core"
 />
 
-2. Next, copy the following sample code into your Arduino IDE. This example code comes from the [RAK17000 WisBlock example repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/RAK11300/IO/RAK17000_Motor_Driver_DRV8833/RAK17000_Motor_Driver_DRV8833.ino) which controls two DC motors. 
+2. Next, copy the following sample code into your Arduino IDE. This example code comes from the [RAK17000 WisBlock example repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/RAK11300/IO/RAK17000_Motor_Driver_DRV8833/RAK17000_Motor_Driver_DRV8833.ino) which controls two DC motors.
 
 ```c
 /**
@@ -409,16 +409,16 @@ After doing the hardware setup, this example code will work both for WisBlock ba
 
 #include <Arduino.h>
 
-#define MOTOR_AIN1  SCK        
-#define MOTOR_AIN2  SS     
-#define MOTOR_BIN1  WB_IO3  
-#define MOTOR_BIN2  MOSI   
+#define MOTOR_AIN1  SCK
+#define MOTOR_AIN2  SS
+#define MOTOR_BIN1  WB_IO3
+#define MOTOR_BIN2  MOSI
 #define MOTOR_SLEEP WB_IO6
 
 void setup()
 {
   // Enable DRV8833 output.
-  pinMode(MOTOR_SLEEP, OUTPUT); 
+  pinMode(MOTOR_SLEEP, OUTPUT);
   digitalWrite(MOTOR_SLEEP, HIGH);
 
   pinMode(MOTOR_AIN1, OUTPUT);
@@ -430,12 +430,12 @@ void setup()
 void loop()
 {
   analogWrite(MOTOR_AIN2, 0);
-  analogWrite(MOTOR_BIN2, 0); 
-  for(uint8_t i = 0 ;i < 255 ;i++ ) 
+  analogWrite(MOTOR_BIN2, 0);
+  for(uint8_t i = 0 ;i < 255 ;i++ )
   {
     analogWrite(MOTOR_AIN1, i);
     analogWrite(MOTOR_BIN1, i);
-    delay(50);   
+    delay(50);
   }
   delay(100);
   for(uint8_t i = 255 ;i > 0 ;i-- )
@@ -444,7 +444,7 @@ void loop()
     analogWrite(MOTOR_BIN1, i);
     delay(50);
   }
-  
+
   analogWrite(MOTOR_AIN1, 0);
   analogWrite(MOTOR_BIN1, 0);
   for(uint8_t i = 0 ;i < 255 ;i++ )
@@ -460,7 +460,7 @@ void loop()
     analogWrite(MOTOR_BIN2, i);
     delay(50);
   }
-  delay(100); 
+  delay(100);
 }
 ```
 

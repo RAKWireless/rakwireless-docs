@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK14001
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK14001 Quick Start Guide
@@ -19,16 +19,16 @@ next: ../Datasheet/
 
 Before going through each and every step on using the RAK14001 WisBlock module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
-- [RAK14001 WisBlock RGB LED Module](https://store.rakwireless.com/products/rgb-led-module-rak14001?_pos=5&_sid=3690f936d&_ss=r&variant=40102966067398)
+- [RAK14001 WisBlock RGB LED Module](https://store.rakwireless.com/products/rgb-led-module-rak14001?_pos=5&_sid=3690f936d&_ss=r&variant=40102966067398?utm_source=RAK14001&utm_medium=Document&utm_campaign=BuyFromStore)
 - [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -58,9 +58,9 @@ The RAK14001 module can be mounted on the IO slot of the WisBlock Base board, as
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak14001/quickstart/removing_screw.png"
@@ -158,7 +158,7 @@ void setup() {
 
 /**
  * LED light up Gradually
- * 
+ *
  * @param red          0-255
  * @param green        0-255
  * @param blue         0-255
@@ -180,7 +180,7 @@ void gradualLightUp(uint8_t red, uint8_t green, uint8_t blue, uint8_t stepNum, u
 
 /**
  * LED dark down Gradually
- * 
+ *
  * @param red          0-255
  * @param green        0-255
  * @param blue         0-255
@@ -212,7 +212,7 @@ void loop() {
   // BLUE
   gradualLightUp(0, 0, 100, 30, 100);
   gradualDarkDown(0, 0, 100, 30, 100);
-  
+
   // YELLOW
   gradualLightUp(100, 100, 0, 30, 100);
   gradualDarkDown(100, 100, 0, 30, 100);
@@ -252,7 +252,7 @@ If you experience any error in compiling the example sketch, check the updated c
   caption="Uploading the RAK14001 Sample code"
 />
 
-4. When you successfully uploaded the example sketch, you'll now be able to see the RAK14001 RGB LED Module emits various colors of light. The three primary colors—red, green, and blue—are mixed to compose all kinds of colors by brightness, so you can see colorful light that gradually dim. 
+4. When you successfully uploaded the example sketch, you'll now be able to see the RAK14001 RGB LED Module emits various colors of light. The three primary colors—red, green, and blue—are mixed to compose all kinds of colors by brightness, so you can see colorful light that gradually dim.
 
 #### RAK14001 in RAK11200 WisBlock Core Guide
 
@@ -308,7 +308,7 @@ void setup() {
 
 /**
  * LED light up Gradually
- * 
+ *
  * @param red          0-255
  * @param green        0-255
  * @param blue         0-255
@@ -330,7 +330,7 @@ void gradualLightUp(uint8_t red, uint8_t green, uint8_t blue, uint8_t stepNum, u
 
 /**
  * LED dark down Gradually
- * 
+ *
  * @param red          0-255
  * @param green        0-255
  * @param blue         0-255
@@ -362,7 +362,7 @@ void loop() {
   // BLUE
   gradualLightUp(0, 0, 100, 30, 100);
   gradualDarkDown(0, 0, 100, 30, 100);
-  
+
   // YELLOW
   gradualLightUp(100, 100, 0, 30, 100);
   gradualDarkDown(100, 100, 0, 30, 100);
@@ -407,7 +407,7 @@ RAK11200 requires the **Boot0** pin to be configured properly first before uploa
   caption="Uploading the RAK14001 Sample code"
 />
 
-4. When you successfully uploaded the example sketch, you'll now be able to see the RAK14001 RGB LED Module emits various colors of light. The three primary colors—red, green, and blue—are mixed to compose all kinds of colors by brightness, so you can see colorful light that gradually dim. 
+4. When you successfully uploaded the example sketch, you'll now be able to see the RAK14001 RGB LED Module emits various colors of light. The three primary colors—red, green, and blue—are mixed to compose all kinds of colors by brightness, so you can see colorful light that gradually dim.
 
 #### RAK14001 in RAK11310 WisBlock Core Guide
 
@@ -463,7 +463,7 @@ void setup() {
 
 /**
  * LED light up Gradually
- * 
+ *
  * @param red          0-255
  * @param green        0-255
  * @param blue         0-255
@@ -485,7 +485,7 @@ void gradualLightUp(uint8_t red, uint8_t green, uint8_t blue, uint8_t stepNum, u
 
 /**
  * LED dark down Gradually
- * 
+ *
  * @param red          0-255
  * @param green        0-255
  * @param blue         0-255
@@ -517,7 +517,7 @@ void loop() {
   // BLUE
   gradualLightUp(0, 0, 100, 30, 100);
   gradualDarkDown(0, 0, 100, 30, 100);
-  
+
   // YELLOW
   gradualLightUp(100, 100, 0, 30, 100);
   gradualDarkDown(100, 100, 0, 30, 100);
@@ -552,4 +552,4 @@ If you experience any error in compiling the example sketch, check the updated c
   caption="Selecting the correct Serial Port"
 />
 
-4. When you successfully uploaded the example sketch, you'll now be able to see the RAK14001 RGB LED Module emits various colors of light. The three primary colors—red, green, and blue—are mixed to compose all kinds of colors by brightness, so you can see colorful light that gradually dim. 
+4. When you successfully uploaded the example sketch, you'll now be able to see the RAK14001 RGB LED Module emits various colors of light. The three primary colors—red, green, and blue—are mixed to compose all kinds of colors by brightness, so you can see colorful light that gradually dim.

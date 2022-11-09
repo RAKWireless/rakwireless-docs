@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials for installing and deploying your RAK4260 Evaluation Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module. 
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK4260 Evaluation Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
 rak_img: /assets/images/wisduo/rak4260-evaluation-board/overview/RAK4260_Evaluation_home.png
 prev: ../Overview/
 next: ../Low-Level-Development/
@@ -20,11 +20,11 @@ The following two sections provide a list of the components and tools you need i
 
 Before going through each and every step in the installation guide of the RAK4260 Evaluation Board, make sure to prepare the necessary items listed below:
 
-1. **RAK4260 Evaluation Board**
+1. [**RAK4260 Evaluation Board**](https://store.rakwireless.com/products/rak4260-evaluation-board?utm_source=RAK4260LPWANEvaluationBoard&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Gateway in range for testing (not provided)
 3. Micro USB Cable
 4. Windows PC
-5. RAKDAP1 DapLink tools (not provided)
+5. [RAKDAP1 DapLink Tool](https://store.rakwireless.com/products/daplink-tool?utm_source=RAKDAP1&utm_medium=Document&utm_campaign=BuyFromStore) (not provided)
 
 ### What's Included in the Package?
 
@@ -241,7 +241,7 @@ To test your project, you need to perform the steps below:
 ```
 
 :::tip 📝 NOTE
-You must choose one LoRaWAN activation method and modify the join parameter's definition. The join parameters and activation methods are defined in the [**conf_app.h**](https://github.com/RAKWireless/RAK4260-LoRaNode-demo/blob/master/APPS_ENDDEVICE_DEMO1/src/config/conf_app.h) file. 
+You must choose one LoRaWAN activation method and modify the join parameter's definition. The join parameters and activation methods are defined in the [**conf_app.h**](https://github.com/RAKWireless/RAK4260-LoRaNode-demo/blob/master/APPS_ENDDEVICE_DEMO1/src/config/conf_app.h) file.
 :::
 
 3. Build the [RAK4260 LoRa demo](../Low-Level-Development/#build-rak4260-loranode-demo-project).
@@ -305,7 +305,7 @@ The default join mode is **OTAA**, and the default frequency is **EU868**. After
   caption="TTN Console, change the activation mode to ABP"
 />
 
-* For ABP mode, the TTN parameters needed are the following: **Device Address**, **Network Session Key**, and **App Session Key**. 
+* For ABP mode, the TTN parameters needed are the following: **Device Address**, **Network Session Key**, and **App Session Key**.
 
 :::tip 📝 NOTE:
 These fields can be left empty in the form and TTN will complete them with random values. In other cases, you can complete them with specific values.
@@ -359,9 +359,9 @@ To register the device to the ChirpStack network server, you must choose either 
   caption="Creating a new Application on the RAK’s ChirpStack LoRaServer"
 />
 
-3. Create an Application named **rak4260_node**. Fill in the required fields, as shown in **Figure 24**. 
+3. Create an Application named **rak4260_node**. Fill in the required fields, as shown in **Figure 24**.
 
-4. To finish, click the “**CREATE APPLICATION**” button. 
+4. To finish, click the “**CREATE APPLICATION**” button.
 
 ChirpStack LoraServer supports multiple system configurations, with only one by default. By default, a new Application should be created, although it is possible to reuse the existing ones.
 
@@ -395,7 +395,7 @@ The **Application Description** field is just a descriptive text.
   caption="Device tab of an Application on the RAK’s ChirpStack LoRaServer"
 />
 
-3. Inside of the “**DEVICES**” tab, create a new device (LoRa node) by clicking on the “**+ CREATE**” button. 
+3. Inside of the “**DEVICES**” tab, create a new device (LoRa node) by clicking on the “**+ CREATE**” button.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/6chirpstack/chirpstack-add-device.png"
@@ -411,15 +411,15 @@ The **Application Description** field is just a descriptive text.
 
 4. Fill in the parameters requested as appears in **Figure 28**:
 
-* **Device name** and **Device description**: These are just descriptive texts. 
-* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in **Figure 29**. You can also add a specific Device EUI directly in the form. 
-* **Device-profile**: To join in OTAA mode, select “**device_profile_otaa**” or "**device_profile_abp**" to join in ABP mode. 
+* **Device name** and **Device description**: These are just descriptive texts.
+* **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in **Figure 29**. You can also add a specific Device EUI directly in the form.
+* **Device-profile**: To join in OTAA mode, select “**device_profile_otaa**” or "**device_profile_abp**" to join in ABP mode.
 
 :::tip 📝 NOTE:
 ChirpStack doesn’t support AS923 in ABP mode.
 :::
 
-5. Press the “**CREATE DEVICE**” button at the bottom of this page to finish the device registration. 
+5. Press the “**CREATE DEVICE**” button at the bottom of this page to finish the device registration.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/6chirpstack/chirpstack-generate-deveui.png"
@@ -435,7 +435,7 @@ The LoRaWAN specification defines that to join in a LoRaWAN network, each end-de
 
 ###### Configure the OTAA Mode on the platform
 
-1. If you have selected “**device_profile_otaa**”, then after the device is created, an “**Application Key**” must be also created for this device. 
+1. If you have selected “**device_profile_otaa**”, then after the device is created, an “**Application Key**” must be also created for this device.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/6chirpstack/chirpstack-otaa.png"
@@ -451,9 +451,9 @@ The LoRaWAN specification defines that to join in a LoRaWAN network, each end-de
   caption="Application Key for the OTAA mode in the device registration form"
 />
 
-3. Once the Application Key is added to the form, the process can be finalized by clicking the “**SET DEVICE-KEYS**” button. 
+3. Once the Application Key is added to the form, the process can be finalized by clicking the “**SET DEVICE-KEYS**” button.
 
-* As shown in **Figure 32**, a new device should be listed in the  “**DEVICES**” tab. The most important parameters, such as the “**Device EUI**”, are shown in the summary. 
+* As shown in **Figure 32**, a new device should be listed in the  “**DEVICES**” tab. The most important parameters, such as the “**Device EUI**”, are shown in the summary.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/6chirpstack/chirpstack-deveui.png"
@@ -477,14 +477,14 @@ Standard OTAA mode requires the Device EUI, Application Key, and the Application
 
 ###### Configure the ABP mode on the platform
 
-During the registration of a new device, if “**device_profile_abp**” is selected, then the ChirpStack platform will assume that this device will join the LoRaWAN network using the ABP mode. 
+During the registration of a new device, if “**device_profile_abp**” is selected, then the ChirpStack platform will assume that this device will join the LoRaWAN network using the ABP mode.
 
 1. Fill in the parameters requested as appears in **Figure 34**:
 
 * **Device name** and **Device description**: These are just descriptive texts.
-* **Device EUI**: You can also add a specific Device EUI directly in the form. 
+* **Device EUI**: You can also add a specific Device EUI directly in the form.
 
-2. Once these parameters are filled, click the “**CREATE DEVICE**” button. 
+2. Once these parameters are filled, click the “**CREATE DEVICE**” button.
 
 :::tip 📝 NOTE:
 Check the Disable frame-counter validation to prevent the node-side counting the frame starting from zero after the node is powered on during the test, and the server cannot synchronize the node-side counting, causing the transmission to fail.
@@ -496,7 +496,7 @@ Check the Disable frame-counter validation to prevent the node-side counting the
   caption="ChirpStack Console, configuring a device in ABP mode"
 />
 
-After selecting the ABP mode, the following parameters appear in the “**ACTIVATION**” tab, as shown in **Figure 35**: 
+After selecting the ABP mode, the following parameters appear in the “**ACTIVATION**” tab, as shown in **Figure 35**:
 
 * **Device address**
 * **Network session key**
@@ -529,7 +529,7 @@ After selecting the ABP mode, the following parameters appear in the “**ACTIVA
   caption="Device data OTAA frame"
 />
 
-###### View LoRaWAN ABP Frames 
+###### View LoRaWAN ABP Frames
 
 1. Go to **Applications** -> **rak4260-node** -> **Devices** -> **rak4260-abp**, then select the “**LORAWAN FRAMES**” tab.
 
@@ -581,11 +581,11 @@ Use the p2p-rak4260 branch, as shown in **Figure 40**.
 
 
 
-## Miscellaneous  
-  
+## Miscellaneous
+
 ### RAK5005 Core Module Slot Connection to RAK4261
 
-The RAK5005 is the base board that connects the RAK4260 Core Module. It creates the power supply for the attached module and provides additional IO and Sensor support for your project needs.  
+The RAK5005 is the base board that connects the RAK4260 Core Module. It creates the power supply for the attached module and provides additional IO and Sensor support for your project needs.
 
 ::: tip 📝 NOTE
 RAK4261 is a circuit board module for RAK5005 with a pre-soldered RAK4260 LPWAN Module.

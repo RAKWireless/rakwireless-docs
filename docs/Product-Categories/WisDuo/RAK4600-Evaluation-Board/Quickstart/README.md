@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials for installing and deploying your RAK4600 Evaluation Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.  
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK4600 Evaluation Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
 rak_img: /assets/images/wisduo/rak4600-evaluation-board/overview/RAK4600_Evaluation_home.png
 prev: ../Overview/
 tags:
@@ -15,10 +15,10 @@ tags:
 
 Before going through the configuration guide of the RAK4600 Evaluation Board, make sure to prepare the items listed below:
 
-1. **RAK4600 Evaluation Board**
+1. [**RAK4600 Evaluation Board**](https://store.rakwireless.com/products/rak4600-evaluation-board?utm_source=RAK4600EvaluationBoard&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Micro USB cable
 3. LoRA Gateway in Range for testing (not provided)
-4. RAKDAP1 DapLink tool (not provided)
+4. [RAKDAP1 DapLink Tool](https://store.rakwireless.com/products/daplink-tool?utm_source=RAKDAP1&utm_medium=Document&utm_campaign=BuyFromStore) (not provided)
 5. Windows PC
 
 :::tip 📝 NOTE
@@ -227,7 +227,7 @@ pyocd flash -t nrf52 feather_nrf52832_bootloader.hex
 https://github.com/RAKWireless/RAK4600_Arduino#bsp-installation
 
 :::tip 📝 NOTE:
-Before uploading any Arduino example, make sure that the RAK4600 is on DFU mode. 
+Before uploading any Arduino example, make sure that the RAK4600 is on DFU mode.
 1. Connect the RX pin of RAK4600 to GND.
 2. Press the reset button and then disconnect the RX pin from GND. Now the RAK4600 is on DFU mode.
 :::
@@ -252,7 +252,7 @@ Refer to <a href="/Product-Categories/WisDuo/RAK4600-Module/Quickstart/#lora-p2p
 
 ### RAK5005 Core Module Slot Connection to RAK4601
 
-The RAK5005 is the base board that connects the RAK4600 Core Module. It creates the power supply for the attached module and provides additional IO and Sensor support for your project needs.  
+The RAK5005 is the base board that connects the RAK4600 Core Module. It creates the power supply for the attached module and provides additional IO and Sensor support for your project needs.
 
 ::: tip 📝 NOTE
 RAK4601 is a circuit board module for RAK5005 with a pre-soldered RAK4600 LPWAN Module.

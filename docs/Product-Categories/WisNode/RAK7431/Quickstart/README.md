@@ -18,7 +18,7 @@ Before going through each and every step in the installation guide of the RAK743
 
 #### Hardware Tools
 
-1. RAK7431 WisNode Bridge Serial
+1. [RAK7431 WisNode Bridge Serial](https://store.rakwireless.com/products/rak7431?utm_source=RAK7431WisNodeBridge&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Micro USB Cable
 3. Gateway in Range, for Testing
 4. A Windows/Mac OS/Linux Computer
@@ -72,7 +72,7 @@ The RAK7431 - RS485 serial interface can support up to **16 RS485 devices**. VOU
 
 ### Gateway Connection Settings
 
-In this section, the **RAK7431 WisNode Bridge Serial** shall be connected into the RAKwireless Gateway. For this demonstration, a **RAK7249 WisGate Edge Max** shall be used. Listed below are the requisites for this section.
+In this section, the **RAK7431 WisNode Bridge Serial** shall be connected into the RAKwireless Gateway. For this demonstration, a [RAK7249 WisGate Edge Max](https://store.rakwireless.com/products/rak7249-diy-outdoor-gateway?utm_source=RAK7249Max&utm_medium=Document&utm_campaign=BuyFromStore) shall be used. Listed below are the requisites for this section.
 
 - [RAK Serial Port Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip) - used to configure the RAK7431 WisNode Bridge Serial
 - [Web Management Platform Documentation](/Knowledge-Hub/Learn/WEB-Management-Platform/) - guide on how to configure the RAK7249 WisGate Edge Max

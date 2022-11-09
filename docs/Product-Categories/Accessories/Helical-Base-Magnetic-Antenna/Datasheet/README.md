@@ -16,7 +16,7 @@ rak_img:
 
 ### Description
 
-Helical Magnetic Base Antenna is an omnidirectional antenna tuned for operation in the license-free spectrum band of 433&nbsp;MHz, 470-510&nbsp;MHz, and 860-930&nbsp;MHz. It is lightweight and can be easily mounted on a metallic surface thanks to its strong magnetic base. This antenna is designed to be a perfect match for RAK7258, with stable performance and good VSWR. The coaxial cable attached to the magnetic base has a length of 1.5 meters.
+Helical Magnetic Base Antenna is an omnidirectional antenna tuned for operation in the license-free spectrum band of 433&nbsp;MHz, 470-510&nbsp;MHz, and 860-930&nbsp;MHz. It is lightweight and can be easily mounted on a metallic surface thanks to its strong magnetic base. This antenna is designed to be a perfect match for RAK7258, with stable performance and good VSWR. The coaxial cable attached to the magnetic base has a length of 1.5&nbsp;meters.
 
 ### Features
 
@@ -125,16 +125,16 @@ Helical Magnetic Base Antenna is an omnidirectional antenna tuned for operation 
 
 | Frequency        | Value                    |
 | ---------------- | ------------------------ |
-| 433&nbsp;MHz     | -30&nbsp;°C ~ 65&nbsp;°C |
-| 470-510&nbsp;MHz | -30&nbsp;°C ~ 65&nbsp;°C |
-| 860-930&nbsp;MHz | -20&nbsp;°C ~ 65&nbsp;°C |
+| 433&nbsp;MHz     | -30°&nbsp;C ~ 65°&nbsp;C |
+| 470-510&nbsp;MHz | -30°&nbsp;C ~ 65°&nbsp;C |
+| 860-930&nbsp;MHz | -20°&nbsp;C ~ 65°&nbsp;C |
 
 **Storage Temperature:**
 
 | Frequency        | Value                    |
 | ---------------- | ------------------------ |
-| 433&nbsp;MHz     | -30&nbsp;°C ~ 75&nbsp;°C |
-| 470-510&nbsp;MHz | -30&nbsp;°C ~ 75&nbsp;°C |
-| 860-930&nbsp;MHz | -30&nbsp;°C ~ 75&nbsp;°C |
+| 433&nbsp;MHz     | -30°&nbsp;C ~ 75°&nbsp;C |
+| 470-510&nbsp;MHz | -30°&nbsp;C ~ 75°&nbsp;C |
+| 860-930&nbsp;MHz | -30°&nbsp;C ~ 75°&nbsp;C |
 
 

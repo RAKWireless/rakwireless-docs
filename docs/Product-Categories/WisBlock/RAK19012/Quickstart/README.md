@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK19012
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK19012 Quick Start Guide
@@ -16,16 +16,16 @@ next: ../Datasheet/
 
 Before going through each and every step on using the RAK19012 WisBlock USB LiPo Solar Power Slot Module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
 - [RAK19012 WisBlock USB LiPo Solar Power Slot Module](https://store.rakwireless.com/products/rak19012-usb-lipo-solar-power-slot-module?utm_source=RAK19012&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base board with Power Slot](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
-- [Li-Ion/LiPo battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger](https://store.rakwireless.com/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -72,9 +72,9 @@ RAK19012 module can be mounted on the power slot of the WisBlock Base board, as 
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock module is the same. 
+The procedure in disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak19012/quickstart/removing_screw.png"
@@ -112,7 +112,7 @@ If you will connect other modules to the remaining WisBlock Base slots, check on
 
 ##### Rechargeable Battery
 
-RAK19012 can be powered by a rechargeable Li-Ion/LiPo battery via the dedicated connectors, as shown in **Figure 6**. The matching connector for the rechargeable battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199). A cable assembly for the rechargeable battery connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/battery-connector-cable). 
+RAK19012 can be powered by a rechargeable Li-Ion/LiPo battery via the dedicated connectors, as shown in **Figure 6**. The matching connector for the rechargeable battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199). A cable assembly for the rechargeable battery connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/battery-connector-cable).
 
 :::warning ⚠️ WARNING
 
@@ -124,7 +124,7 @@ RAK19012 can be powered by a rechargeable Li-Ion/LiPo battery via the dedicated 
 
 #### Solar Panel Connection
 
-The battery can be recharged, as well, via a small Solar Panel, as shown in **Figure 6**. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287). A cable assembly for the solar panel connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/solar-panel-connector-cable). 
+The battery can be recharged, as well, via a small Solar Panel, as shown in **Figure 6**. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287). A cable assembly for the solar panel connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/solar-panel-connector-cable).
 
 
 :::warning ⚠️ WARNING

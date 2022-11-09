@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials for installing and deploying your RAK4200 Evaluation Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module. 
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK4200 Evaluation Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
 rak_img: /assets/images/wisduo/rak4200-evaluation-board/overview/RAK4200_Evaluation_home.png
 prev: ../Overview/
 next: ../AT-Command-Manual/
@@ -17,11 +17,11 @@ tags:
 
 Before going through each and every step in the installation guide of the RAK4200 Evaluation Board, make sure to prepare the necessary items listed below:
 
-1. **RAK4200 Evaluation Board**
+1. [**RAK4200 Evaluation Board**](https://store.rakwireless.com/products/rak4200-evaluation-board?utm_source=RAK4200LPWANEvaluationBoard&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Micro USB Cable
 3. LoRA gateway in range, for testing
 4. Windows PC
-5. RAKDAP1 DAPLink Tool
+5. [RAKDAP1 DAPLink Tool](https://store.rakwireless.com/products/daplink-tool?utm_source=RAKDAP1&utm_medium=Document&utm_campaign=BuyFromStore)
 
 ::: tip 📝 NOTE
 To have an optimal antenna matching for the Low and High LoRa bands, there are two types of modules with different hardware. The L-type module only works for the 433&nbsp;MHz and 470&nbsp;MHz LoRa bands. The H type module is for the 868&nbsp;MHz to 923&nbsp;MHz (the rest of the spectrum). Note that the hardware is specific for your selected band and can't be changed.
@@ -235,7 +235,7 @@ at+set_config=lora:dev_eui:XXXX
 5. Set the **Application EUI**:
 
 :::tip 📝 NOTE:
-All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error. 
+All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error.
 :::
 
 ```sh
@@ -448,7 +448,7 @@ By default, there is already one or more items on this page. You can either use 
 />
 
 3. Once done, click on “**CREATE APPLICATION**”.
-   
+
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/zcxqc0pe6vquherzw521.png"
   width="100%"
@@ -472,7 +472,7 @@ By default, there is already one or more items on this page. You can either use 
 />
 
 6. Once the node is created, fill in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
-   
+
 <rk-img
   src="/assets/images/wisduo/rak4200-evaluation-board/quickstart/5. connecting-to-chirpstack/bx0hvot72klwrnznnbig.png"
   width="100%"
@@ -524,7 +524,7 @@ The Application EUI which will be set into RAK4200 Evaluation Board as “app_eu
 ::: tip 📝 NOTE
 The default settings are as follows:
   - Join mode: **OTAA**
-  - Class: **Class A** 
+  - Class: **Class A**
   - Region: **EU868**
 :::
 
@@ -832,8 +832,8 @@ Refer to the [AT Command Manual](/Product-Categories/WisDuo/RAK4200-Evaluation-B
 
 ### RAK5005 Core Module Slot Connection to RAK4201
 
-The RAK5005 is the base board that connects the RAK4200 Core Module. It creates the power supply for the attached module and provides additional IO and Sensor support for your project needs.    
-  
+The RAK5005 is the base board that connects the RAK4200 Core Module. It creates the power supply for the attached module and provides additional IO and Sensor support for your project needs.
+
 ::: tip 📝 NOTE
 RAK4201 is a circuit board module for RAK5005 with a pre-soldered RAK4200 LPWAN Module.
 :::
@@ -887,7 +887,7 @@ The following steps show you how to update the firmware for the RAK4200 WisDuo L
 - [RAK4200 Firmware](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/RAK4200_Latest_Firmware.zip)
 - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
-2. Connect your RAK4200 Evaluation Board in your Windows PC as instructed in the [Interfacing with RAK4200 Evaluation Board](#interfacing-with-rak4200-evaluation-board) section. 
+2. Connect your RAK4200 Evaluation Board in your Windows PC as instructed in the [Interfacing with RAK4200 Evaluation Board](#interfacing-with-rak4200-evaluation-board) section.
 
 3. Open the RAK firmware upgrade tool on your Windows PC. Make sure to choose the correct COM Port.
 

@@ -15,7 +15,7 @@ tags:
 
 ### What Do You Need?
 
-1. **RAK Hotspot**
+1. [**RAK Hotspot**](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore)
 2. 32&nbsp;GB microSD Card (included) + Card Reader
 3. USB Type-C Power Adapter (included)
 
@@ -32,7 +32,7 @@ The SIM card slot of the cellular versions is not hot-swappable. Make sure the g
 />
 
 ## Product Configuration
-For Antenna Mounting Scenarios and proper connectivity chain, refer to this [guide](../Troubleshooting/#proper-miner-connection-scenarios-with-the-rak-outdoor-enclosure-antennas) 
+For Antenna Mounting Scenarios and proper connectivity chain, refer to this [guide](../Troubleshooting/#proper-miner-connection-scenarios-with-the-rak-outdoor-enclosure-antennas). 
 
 ### Download the Helium App
 

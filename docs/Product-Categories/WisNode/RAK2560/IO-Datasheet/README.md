@@ -19,7 +19,7 @@ tags:
 The **Probe IO** is an accessory for the Sensor Hub solution platform. It supports modules with various communication protocols like RS-485, SDI-12, 4-20&nbsp;mA signal, and DI/DO. This accessory can work with RAKwireless modules as well as third-party ones to ensure the best solution for your project.
 
 :::tip 📝 NOTE:
-The Probe IO could not be used as a standalone product. You need the RAK2560 Sensor Hub in order to use this probe.
+The Probe IO could not be used as a standalone product. You need the [RAK2560 WisNode Sensor Hub](https://store.rakwireless.com/products/sensor-hub?utm_source=RAK2560WisNodeSense&utm_medium=Document&utm_campaign=BuyFromStore) in order to use this probe.
 :::
 
 ### Product Features

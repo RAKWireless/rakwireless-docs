@@ -18,7 +18,6 @@ Thank you for choosing **RAK5811 WisBlock 0-5V Interface Module** in your awesom
 * [RAK5811 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK5811 3D Model](https://downloads.rakwireless.com/LoRa/WisBlock/WisBlock-3D/pwb-rak5811.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
@@ -63,7 +62,7 @@ In addition, this module integrates a 12&nbsp;V power supply. The power supply i
 ## Prerequisites
 
 To use a **RAK5811**, you need at least a **WisBlock Base** to plug the module in. Furthermore, you need a **WisBlock Core** module to control the module.
- 
-:::warning ⚠️ WARNING    
+
+:::warning ⚠️ WARNING
 Make sure to fix the module with the screws to ensure a proper function.
 :::

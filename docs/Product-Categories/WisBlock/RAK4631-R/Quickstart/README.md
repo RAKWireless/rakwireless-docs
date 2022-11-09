@@ -19,11 +19,11 @@ Before going through each step in the installation guide of the RAK4631-R WisBlo
 
 #### Hardware
 
-- [RAK4631-R WisBlock Core](https://store.rakwireless.com/collections/wisblock-core/products/rak4631-lpwan-node)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK4631-R WisBlock Core](https://store.rakwireless.com/products/rak4631-lpwan-node?utm_source=RAK4631WisBlockLPWANModule&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/products/battery-connector-cable)
-- [Solar Panel (optional)](https://store.rakwireless.com/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -31,8 +31,8 @@ Before going through each step in the installation guide of the RAK4631-R WisBlo
 
 - Download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 
-:::warning ⚠️ WARNING    
-_**If you are using Windows 10**_.    
+:::warning ⚠️ WARNING
+_**If you are using Windows 10**_.
 Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, install the original Arduino IDE from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 
@@ -79,7 +79,7 @@ Few pins are exposed on [RAK5005-O](/Product-Categories/WisBlock/RAK5005-O/Datas
   caption="WisBlock Base exposed pins"
 />
 
-Each WisBlock Base board has its own set of header pins available for you to use. However, these header pins are not exactly the same in each WisBlock Base. It is common to see IO pins and communication protocol pins like I2C and UART in the WisBlock Base board. More information can be found on the [official documentation of the specific WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) you used in your project. 
+Each WisBlock Base board has its own set of header pins available for you to use. However, these header pins are not exactly the same in each WisBlock Base. It is common to see IO pins and communication protocol pins like I2C and UART in the WisBlock Base board. More information can be found on the [official documentation of the specific WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) you used in your project.
 
 UART1 of RAK4631-R is also used for DFU (Device Firmware Upgrade) via UART. If the UART1 console connection is successful, the USB serial console will not work.
 
@@ -112,9 +112,9 @@ RAK4631-R WisBlock Core is designed to be interfaced with other [WisBlock Module
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock module is the same. 
+The procedure in disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak1910/quickstart/16.removing-screws.png"
@@ -140,7 +140,7 @@ The procedure in disassembling any type of WisBlock module is the same.
 
 #### LoRa and BLE Antenna
 
-Another important part component of RAK4631-R is the antennas. 
+Another important part component of RAK4631-R is the antennas.
 
 <rk-img
   src="/assets/images/wisblock/rak4631-r/quickstart/lora-antenna.png"
@@ -166,7 +166,7 @@ RAK4631-R has a label on its sticker on where to connect the antennas, as shown 
 />
 
 :::tip 📝 NOTE
-Detailed information about the RAK4631-R BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/). 
+Detailed information about the RAK4631-R BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
 :::
 
 :::warning ⚠️ WARNING
@@ -226,8 +226,8 @@ This section covers:
 
 If you don't have an Arduino IDE yet, you can download it on the [Arduino official website](https://www.arduino.cc/en/Main/Software) and follow the installation procedure in the [miscellaneous section](/Product-Categories/WisBlock/RAK4631-R/Quickstart/#arduino-installation) of this document.
 
-::: tip 📝 NOTE   
-**For Windows 10 users**:   
+::: tip 📝 NOTE
+**For Windows 10 users**:
 If your Arduino IDE was installed from the Microsoft App Store, you need to reinstall your Arduino IDE by downloading it from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 
@@ -422,8 +422,8 @@ Install the Visual Studio Community 2019, which you just downloaded, on your Win
   width="80%"
   caption="Board Manager installation"
 />
-:::tip 📝 NOTE 
-You can also install RAKwireless RUI nRF Boards using the [RAK4631-R Board Support Package](/Product-Categories/WisBlock/RAK4631-R/Quickstart/#rak4631-r-board-support-package-in-arduino-ide). The Visual Studio IDE 2019 imports Arduino IDE settings. 
+:::tip 📝 NOTE
+You can also install RAKwireless RUI nRF Boards using the [RAK4631-R Board Support Package](/Product-Categories/WisBlock/RAK4631-R/Quickstart/#rak4631-r-board-support-package-in-arduino-ide). The Visual Studio IDE 2019 imports Arduino IDE settings.
 :::
 
 ###### Compile an Example With RAK4631-R
@@ -453,7 +453,7 @@ You can also install RAKwireless RUI nRF Boards using the [RAK4631-R Board Suppo
 />
 
 4. Now, close the **Micro Explorer** window and open the Arduino sketch on the **Solution Explorer** window:
-- Click on the **x** icon to close `Micro Explorer`. 
+- Click on the **x** icon to close `Micro Explorer`.
 - Click on the **triangle** icon to open `Solution Explorer`.
 
 <rk-img
@@ -595,12 +595,12 @@ Go to Arduino official website and download the [Arduino IDE](https://www.arduin
 
 #### For Windows
 
-::: tip 📝 NOTE   
-**For Windows 10 users**:   
+::: tip 📝 NOTE
+**For Windows 10 users**:
 Do **NOT** install the Arduino IDE from the Microsoft App store. Install the original Arduino IDE from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 
-1. Install the Arduino IDE, which you just downloaded, on your Windows PC. 
+1. Install the Arduino IDE, which you just downloaded, on your Windows PC.
 2. Click **I Agree** then **Next** to proceed.
 
 <rk-img

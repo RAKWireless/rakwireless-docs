@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK14006
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK14006 Quick Start Guide
@@ -19,13 +19,13 @@ Before going through each and every step on using the RAK14006 WisBlock Rotary E
 
 #### Hardware
 
-- [RAK14006 WisBlock Rotary Encoder Module](https://store.rakwireless.com/products/wisblock-heart-rate-sensor-rak14006)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK14006 WisBlock Rotary Encoder Module](https://store.rakwireless.com/products/rak14006-wisblock-rotary-input?utm_source=RAK14006&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [RAK19008 WisBlock IO Extension Cable](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008)
-- [Li-Ion/LiPo battery (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
-- [Solar charger (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
+- [RAK19008 WisBlock IO Extension Cable](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008?utm_source=RAK19008&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -60,9 +60,9 @@ As shown in **Figure 2**, the location for the IO slot is properly marked by sil
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak14006/quickstart/removing_screw.png"
@@ -87,8 +87,8 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. 
-:::  
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
+:::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
@@ -151,7 +151,7 @@ bool anticlockwise_flag = false;
 void setup(){
   pinMode(WB_IO2, OUTPUT);
   digitalWrite(WB_IO2, HIGH);
-  //setup our pins 
+  //setup our pins
   pinMode(ENCODER_A_PIN, INPUT);
   pinMode(ENCODER_B_PIN, INPUT);
   pinMode(SWITCH_PIN, INPUT);
@@ -159,9 +159,9 @@ void setup(){
   attachInterrupt(SWITCH_PIN, handle_1, FALLING);
   attachInterrupt(ENCODER_A_PIN, handle_2, RISING);
   attachInterrupt(ENCODER_B_PIN, handle_3, RISING);
-  //setup our serial 
+  //setup our serial
   Serial.begin(115200);
-  Serial.println("You can press and twist the button!!"); 
+  Serial.println("You can press and twist the button!!");
 }
 
 void loop(){
@@ -183,16 +183,16 @@ void loop(){
     position--;
     Serial.print("position step is ");
     Serial.println(position);
-  }  
+  }
 }
 
-void handle_1(){  
+void handle_1(){
   press_flag = true;
 }
-void handle_2(){  
+void handle_2(){
   clockwise_flag = true;
 }
-void handle_3(){  
+void handle_3(){
   anticlockwise_flag = true;
 }
 ```

@@ -19,7 +19,7 @@ rak_img: /assets/images/wistrio/rak7205-5205/quickstart/overview/RAK5205_home.pn
 
 Before going through each and every step in the installation guide of the RAK5205 WisTrio LPWAN Tracker, make sure to prepare the necessary items listed below:
 
-1. **RAK5205 WisTrio LPWAN Tracker**
+1. [RAK5205 WisTrio LPWAN Tracker](https://store.rakwireless.com/products/rak5205-lora-tracker?utm_source=RAK7205%2FRAK5205WisTrioLPWANTracker&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Micro USB Cable
 3. Gateway in Range for Testing
 4. Windows PC

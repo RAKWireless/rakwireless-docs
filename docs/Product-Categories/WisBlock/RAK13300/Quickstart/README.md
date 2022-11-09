@@ -5,13 +5,11 @@ tags:
   - quickstart
   - wisblock
   - RAK13300
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK13300 Quick Start Guide
-
-
 
 ## Prerequisite
 
@@ -21,13 +19,13 @@ Before going through each and every step on using the RAK13300 WisBlock module, 
 
 #### Hardware
 
-- [RAK13300](https://store.rakwireless.com/products/rak13300-wisblock-lpwan)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK13300](https://store.rakwireless.com/products/rak13300-wisblock-lpwan?utm_source=RAK13300&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - [RAK11200 WisBlock Core](https://store.rakwireless.com/products/wiscore-esp32-module-rak11200?utm_source=WisBlockRAK11200&utm_medium=Document&utm_campaign=BuyFromStore)
 - USB Cable
 - [LoRa-compatible Antennas](https://store.rakwireless.com/collections/antennas-1)
-- [Li-Ion/LiPo battery(optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 
 #### Software
@@ -67,9 +65,9 @@ As shown in **Figure 2**, the location of the IO Slot is properly marked by silk
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak13300/quickstart/removing_screw.png"
@@ -94,7 +92,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK13300 uses UART communication lines, and it can cause possible conflict, especially on some modules that also use UART. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK13300 uses UART communication lines, and it can cause possible conflict, especially on some modules that also use UART.
 :::
 
 ### LoRa Antenna
@@ -108,7 +106,7 @@ The RAK13300 requires a LoRa Antenna to have a good signal. And do not power the
 />
 
 ::: tip 📝 NOTE
-Detailed information about the LoRa antenna can be found on the [LoRa Antenna Datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/868%20915%20LoRa%20Antenna%20for%20WisBlock.pdf). 
+Detailed information about the LoRa antenna can be found on the [LoRa Antenna Datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/868%20915%20LoRa%20Antenna%20for%20WisBlock.pdf).
 :::
 
 RAK13300 has the antenna slot which can be found in **Figure 7**.
@@ -193,9 +191,9 @@ If you have already installed the [RAKwireless Arduino BSP](https://github.com/R
  * @brief Receiver node for LoRa point to point communication
  * @version 0.1
  * @date 2021-08-21
- * 
+ *
  * @copyright Copyright (c) 2020
- * 
+ *
  */
 #include <Arduino.h>
 #include <SX126x-Arduino.h> //http://librarymanager/All#SX126x
@@ -275,7 +273,7 @@ void setup()
 void loop()
 {
  // Put your application tasks here, like reading of sensors,
-  // Controlling actuators and/or other functions. 
+  // Controlling actuators and/or other functions.
 
 }
 
@@ -425,9 +423,9 @@ If you have already installed the [RAKwireless Arduino BSP](https://github.com/R
  * @brief Transmitter node for LoRa point to point communication
  * @version 0.1
  * @date 2021-08-21
- * 
+ *
  * @copyright Copyright (c) 2020
- * 
+ *
  */
 
 #include <Arduino.h>
@@ -503,7 +501,7 @@ void setup()
 void loop()
 {
   // Put your application tasks here, like reading of sensors,
-  // Controlling actuators and/or other functions. 
+  // Controlling actuators and/or other functions.
 }
 
 /**@brief Function to be executed on Radio Tx Done event

@@ -5,12 +5,11 @@ tags:
   - quickstart
   - wisblock
   - RAK13004
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK13004 Quick Start Guide
-
 
 
 ## Prerequisite
@@ -19,17 +18,17 @@ next: ../Datasheet/
 
 Before going through each and every step on using RAK13004 WisBlock module, make sure to prepare the necessary items listed below:
 
-#### Hardware 
+#### Hardware
 
-- [RAK13004 WisBlock PWM Expansion Module](https://store.rakwireless.com/products/pwm-expansion-module-rak13004?_pos=1&_sid=0e99f2d3e&_ss=r)
+- [RAK13004 WisBlock PWM Expansion Module](https://store.rakwireless.com/products/pwm-expansion-module-rak13004?_pos=1&_sid=0e99f2d3e&_ss=r?utm_source=RAK13004&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base/)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - Light-emitting diode or LEDs
 - USB Cable
-- Li-Ion/LiPo battery (optional)
-- Solar charger (optional)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
-#### Software 
+#### Software
 
 ##### Arduino
 
@@ -75,9 +74,9 @@ The RAK13004 module can be mounted on the IO slot of the WisBlock Base board, as
 
 ##### Disassembling Procedure
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak13004/quickstart/removing_screw.png"
@@ -141,8 +140,8 @@ Shown in Figure 6 is the illustration on how to use the RAK13004 PWM Expansion M
 /**
    @file RAK13004_PWM_Expander_PCA9685.ino
    @author rakwireless.com
-   @brief Use IIC to expand 16 PWM. 
-          Control PCA9685 channels 0~15 to output PWM with different duty cycles and time delays. 
+   @brief Use IIC to expand 16 PWM.
+          Control PCA9685 channels 0~15 to output PWM with different duty cycles and time delays.
           The frequency can be adjusted supports 24HZ to 1526HZ.
    @version 0.1
    @date 2021-3-2
@@ -158,7 +157,7 @@ void setup()
 {
   pinMode(WB_IO2, OUTPUT);
   digitalWrite(WB_IO2, 1);
-  
+
   PCA9685.setupSingleDevice(Wire,0x40);// Library using 0x40(0100 0000) i2c address, and default Wire @400kHz.
 
   PCA9685.setupOutputEnablePin(WB_IO6);// WB_IO6 active LOW output enable.
@@ -167,11 +166,11 @@ void setup()
   PCA9685.setOutputsNotInverted();
 
   PCA9685.setToFrequency(500); // Set PWM freq to 500Hz (supports 24Hz to 1526Hz)
-  
+
   // Set the PWM output of channel 0 .
   // PWM duty cycle = 50 % (LED on time = 50 %; LED off time = 50 %).
   // Delay time = 0 % .
-  PCA9685.setChannelDutyCycle(0,  50, 0); 
+  PCA9685.setChannelDutyCycle(0,  50, 0);
   PCA9685.setChannelDutyCycle(1,  50, 25);
   PCA9685.setChannelDutyCycle(2,  50, 50);
   PCA9685.setChannelDutyCycle(3,  10, 10);
@@ -183,7 +182,7 @@ void setup()
   PCA9685.setChannelDutyCycle(9,  70, 70);
   PCA9685.setChannelDutyCycle(10, 80, 80);
   PCA9685.setChannelDutyCycle(11, 90, 90);
-  PCA9685.setChannelDutyCycle(12, 100, 0);              
+  PCA9685.setChannelDutyCycle(12, 100, 0);
 }
 
 void loop()
@@ -265,8 +264,8 @@ Shown in **Figure 11** is the illustration on how to use the RAK13004 PWM Expans
 /**
    @file RAK13004_PWM_Expander_PCA9685.ino
    @author rakwireless.com
-   @brief Use IIC to expand 16 PWM. 
-          Control PCA9685 channels 0~15 to output PWM with different duty cycles and time delays. 
+   @brief Use IIC to expand 16 PWM.
+          Control PCA9685 channels 0~15 to output PWM with different duty cycles and time delays.
           The frequency can be adjusted supports 24HZ to 1526HZ.
    @version 0.1
    @date 2021-3-2
@@ -282,7 +281,7 @@ void setup()
 {
   pinMode(WB_IO2, OUTPUT);
   digitalWrite(WB_IO2, 1);
-  
+
   PCA9685.setupSingleDevice(Wire,0x40);// Library using 0x40(0100 0000) i2c address, and default Wire @400kHz.
 
   PCA9685.setupOutputEnablePin(WB_IO6);// WB_IO6 active LOW output enable.
@@ -291,11 +290,11 @@ void setup()
   PCA9685.setOutputsNotInverted();
 
   PCA9685.setToFrequency(500); // Set PWM freq to 500Hz (supports 24Hz to 1526Hz)
-  
+
   // Set the PWM output of channel 0 .
   // PWM duty cycle = 50 % (LED on time = 50 %; LED off time = 50 %).
   // Delay time = 0 % .
-  PCA9685.setChannelDutyCycle(0,  50, 0); 
+  PCA9685.setChannelDutyCycle(0,  50, 0);
   PCA9685.setChannelDutyCycle(1,  50, 25);
   PCA9685.setChannelDutyCycle(2,  50, 50);
   PCA9685.setChannelDutyCycle(3,  10, 10);
@@ -307,7 +306,7 @@ void setup()
   PCA9685.setChannelDutyCycle(9,  70, 70);
   PCA9685.setChannelDutyCycle(10, 80, 80);
   PCA9685.setChannelDutyCycle(11, 90, 90);
-  PCA9685.setChannelDutyCycle(12, 100, 0);              
+  PCA9685.setChannelDutyCycle(12, 100, 0);
 }
 
 void loop()
@@ -382,8 +381,8 @@ RAK11200 requires the BOOT0 pin to be configured properly before uploading. If n
 /**
    @file RAK13004_PWM_Expander_PCA9685.ino
    @author rakwireless.com
-   @brief Use IIC to expand 16 PWM. 
-          Control PCA9685 channels 0~15 to output PWM with different duty cycles and time delays. 
+   @brief Use IIC to expand 16 PWM.
+          Control PCA9685 channels 0~15 to output PWM with different duty cycles and time delays.
           The frequency can be adjusted supports 24HZ to 1526HZ.
    @version 0.1
    @date 2021-3-2
@@ -399,7 +398,7 @@ void setup()
 {
   pinMode(WB_IO2, OUTPUT);
   digitalWrite(WB_IO2, 1);
-  
+
   PCA9685.setupSingleDevice(Wire,0x40);// Library using 0x40(0100 0000) i2c address, and default Wire @400kHz.
 
   PCA9685.setupOutputEnablePin(WB_IO6);// WB_IO6 active LOW output enable.
@@ -408,11 +407,11 @@ void setup()
   PCA9685.setOutputsNotInverted();
 
   PCA9685.setToFrequency(500); // Set PWM freq to 500Hz (supports 24Hz to 1526Hz)
-  
+
   // Set the PWM output of channel 0 .
   // PWM duty cycle = 50 % (LED on time = 50 %; LED off time = 50 %).
   // Delay time = 0 % .
-  PCA9685.setChannelDutyCycle(0,  50, 0); 
+  PCA9685.setChannelDutyCycle(0,  50, 0);
   PCA9685.setChannelDutyCycle(1,  50, 25);
   PCA9685.setChannelDutyCycle(2,  50, 50);
   PCA9685.setChannelDutyCycle(3,  10, 10);
@@ -424,7 +423,7 @@ void setup()
   PCA9685.setChannelDutyCycle(9,  70, 70);
   PCA9685.setChannelDutyCycle(10, 80, 80);
   PCA9685.setChannelDutyCycle(11, 90, 90);
-  PCA9685.setChannelDutyCycle(12, 100, 0);              
+  PCA9685.setChannelDutyCycle(12, 100, 0);
 }
 
 void loop()

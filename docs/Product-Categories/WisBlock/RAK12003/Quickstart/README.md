@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK12003
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK12003 Quick Start Guide
@@ -20,12 +20,12 @@ Before going through each and every step on using the RAK12003 WisBlock module, 
 
 #### Hardware
 
-- [RAK12003 WisBlock Infrared Temperature Sensor Module](https://store.rakwireless.com/collections/wisblock-sensor/products/infrared-temperature-sensor-rak12003)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK12003 WisBlock Infrared Temperature Sensor Module](https://store.rakwireless.com/products/infrared-temperature-sensor-rak12003?utm_source=WisBlockRAK12003&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
-- [Solar charger (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -36,7 +36,7 @@ Before going through each and every step on using the RAK12003 WisBlock module, 
 
 ### Hardware Setup
 
-WisBlock can integrate this module which extends the WisBlock system with an infrared temperature sensor. 
+WisBlock can integrate this module which extends the WisBlock system with an infrared temperature sensor.
 
 For more information about RAK12003, refer to the [Datasheet](../Datasheet/).
 
@@ -67,9 +67,9 @@ As shown in **Figure 2**, the location for Slot A, B, C, and D are properly mark
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12003/quickstart/16.removing-screws.png"
@@ -94,14 +94,14 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12003 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12003 uses I2C communication lines, and it can cause possible conflict especially on some IO modules.
 :::
 
 After all this setup, you can now connect the battery and USB cable to start programming your WisBlock Core.
 
 ### Software Configuration and Example
 
-The RAK12003 WisBlock Infrared Temperature Sensor Module is part of the RAKwireless WisBlock Series. It can be used for an accurate contactless thermal measurement for applications such as General purpose industry, temperature control of moving and hard to reach parts, body temperature measurement, non-contact thermometer for mobile and IoT application, with digital I2C/SPI serial interface standard output. 
+The RAK12003 WisBlock Infrared Temperature Sensor Module is part of the RAKwireless WisBlock Series. It can be used for an accurate contactless thermal measurement for applications such as General purpose industry, temperature control of moving and hard to reach parts, body temperature measurement, non-contact thermometer for mobile and IoT application, with digital I2C/SPI serial interface standard output.
 
 #### Initial Test of the RAK12003 WisBlock Module
 
@@ -134,14 +134,14 @@ The RAK12003 WisBlock Infrared Temperature Sensor Module is part of the RAKwirel
 /**
  * @file RAK12003_FIR_MLX90632.ino
  * @author rakwireless
- * @brief This example shows how to read both the remote object temperature and the local sensor temperature. 
- * and prints out the temperature data to the Serial console. 
+ * @brief This example shows how to read both the remote object temperature and the local sensor temperature.
+ * and prints out the temperature data to the Serial console.
  * @version 0.1
  * @date 2021-01-20
- * 
+ *
  * @copyright Copyright (c) 2021
- */ 
- 
+ */
+
 #include <Wire.h>
 
 #include "SparkFun_MLX90632_Arduino_Library.h"   // Click here to get the library: http://librarymanager/AllSparkFun_MLX90632_Arduino_Library
@@ -151,7 +151,7 @@ MLX90632 RAK_TempSensor;
 void setup()
 {
   TwoWire &wirePort = Wire;
-  MLX90632::status returnError;  
+  MLX90632::status returnError;
   time_t timeout = millis();
     Serial.begin(115200);
     while (!Serial)
@@ -164,12 +164,12 @@ void setup()
       {
         break;
       }
-    }  
+    }
   Serial.println("MLX90632 Read Example");
 
   Wire.begin(); //I2C init
 
-  if (RAK_TempSensor.begin(MLX90632_ADDRESS, wirePort, returnError) == true) //MLX90632 init 
+  if (RAK_TempSensor.begin(MLX90632_ADDRESS, wirePort, returnError) == true) //MLX90632 init
   {
      Serial.println("MLX90632 Init Succeed");
   }

@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK12033
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK12033 Quick Start Guide
@@ -20,12 +20,12 @@ Before going through each and every step on using the RAK12033 WisBlock Module, 
 #### Hardware
 
 - [RAK12033 WisBlock 6-Axis Accelerometer Sensor Module](https://store.rakwireless.com/products/rak12033-6-axis-accelerometer?utm_source=RAK12033&utm_medium=Document&utm_campaign=BuyFromStore)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [RAK19005 WisBlock Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005)
-- Li-Ion/Li-Po battery (optional)
-- Solar charger (optional)
+- [RAK19005 WisBlock Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005?utm_source=RAK19005&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -36,7 +36,7 @@ Before going through each and every step on using the RAK12033 WisBlock Module, 
 
 ### Hardware Setup
 
-WisBlock can integrate this module which extends the WisBlock system with a gyroscope and accelerometer sensor. 
+WisBlock can integrate this module which extends the WisBlock system with a gyroscope and accelerometer sensor.
 
 For more information about RAK12033, refer to the [Datasheet](../Datasheet/).
 
@@ -80,9 +80,9 @@ This chip is very sensitive, and the tightness of the mounting screws will affec
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock module is the same. 
+The procedure in disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12033/quickstart/16.removing-screws.png"
@@ -169,7 +169,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 IIM42652 IMU;
 
-void setup() 
+void setup()
 {
   time_t timeout = millis();
   // Initialize Serial for debug output.
@@ -188,9 +188,9 @@ void setup()
   Serial.println("RAK12033 Basic Reading example.");
 
   Wire.begin();
-  if (IMU.begin() == false) 
+  if (IMU.begin() == false)
   {
-    while (1) 
+    while (1)
     {
       Serial.println("IIM-42652 is not connected.");
       delay(5000);
@@ -198,7 +198,7 @@ void setup()
   }
 }
 
-void loop() 
+void loop()
 {
   IIM42652_axis_t  accel_data;
   IIM42652_axis_t  gyro_data;
@@ -213,21 +213,21 @@ void loop()
   IMU.temperature_enable();
 
   delay(100);
-  
+
   IMU.get_accel_data(&accel_data );
-  IMU.get_gyro_data(&gyro_data ); 
+  IMU.get_gyro_data(&gyro_data );
   IMU.get_temperature(&temp );
 
   /*
-   * ±16 g  : 2048  LSB/g 
-   * ±8 g   : 4096  LSB/g 
-   * ±4 g   : 8192  LSB/g 
-   * ±2 g   : 16384 LSB/g 
+   * ±16 g  : 2048  LSB/g
+   * ±8 g   : 4096  LSB/g
+   * ±4 g   : 8192  LSB/g
+   * ±2 g   : 16384 LSB/g
    */
   acc_x = (float)accel_data.x / 2048;
   acc_y = (float)accel_data.y / 2048;
   acc_z = (float)accel_data.z / 2048;
-    
+
   Serial.print("Accel X: ");
   Serial.print(acc_x);
   Serial.print("[g]  Y: ");
@@ -243,13 +243,13 @@ void loop()
    * ±250  º/s    : 131    LSB/(º/s)
    * ±125  º/s    : 262    LSB/(º/s)
    * ±62.5  º/s   : 524.3  LSB/(º/s)
-   * ±31.25  º/s  : 1048.6 LSB/(º/s) 
+   * ±31.25  º/s  : 1048.6 LSB/(º/s)
    * ±15.625 º/s  : 2097.2 LSB/(º/s)
    */
   gyro_x = (float)gyro_data.x / 16.4;
   gyro_y = (float)gyro_data.y / 16.4;
   gyro_z = (float)gyro_data.z / 16.4;
-  
+
   Serial.print("Gyro  X:");
   Serial.print(gyro_x);
   Serial.print("º/s  Y: ");

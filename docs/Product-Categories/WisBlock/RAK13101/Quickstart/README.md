@@ -5,13 +5,11 @@ tags:
   - quickstart
   - wisblock
   - RAK13101
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK13101 Quick Start Guide
-
-
 
 ## Prerequisite
 
@@ -21,13 +19,13 @@ Before going through each and every step on using the RAK13101 WisBlock module, 
 
 #### Hardware
 
-- [RAK13101](https://store.rakwireless.com/collections/wisblock-wireless/products/wisblock-gsm-module-rak13101)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK13101](https://store.rakwireless.com/products/wisblock-gsm-module-rak13101?utm_source=RAK13101&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
 - GNSS and GSM Antennas
-- [Li-Ion/LiPo battery](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 
 #### Software
@@ -80,9 +78,9 @@ As shown in **Figure 3**, the location for Slot A, B, C, and D are properly mark
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak13101/quickstart/16.removing-screws.png"
@@ -107,7 +105,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK13101 uses UART communication lines, and it can cause possible conflict especially on some modules that also use UART. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK13101 uses UART communication lines, and it can cause possible conflict especially on some modules that also use UART.
 :::
 
 ### Software Configuration and Example
@@ -170,7 +168,7 @@ void setup()
             break;
         }
 	}
-	
+
 	Serial.println("AT CMD TEST!");
 	// Check if the modem is already awake
 	time_t timeout = millis();

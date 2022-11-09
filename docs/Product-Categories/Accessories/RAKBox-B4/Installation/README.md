@@ -21,7 +21,7 @@ rak_img: /assets/images/accessories/rakbox-b4/overview/overview.png
 
 ## Assembly
 
-**Step 1:** Fix the WisIO module with three M1.2\*3 screws. For assembly method and precautions, refer to [RAK5005-O Baseboard Installation Guide](../../../../Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/).
+**Step 1:** Fix the WisIO module with three M1.2\*3 screws. For assembly method and precautions, refer to [RAK5005-O Baseboard Installation Guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/).
 
 <rk-img
   src="/assets/images/accessories/rakbox-b4/installation/wisblock-io.png"

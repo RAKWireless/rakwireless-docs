@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK1906
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK1906 Quick Start Guide
@@ -19,23 +19,23 @@ Before going through each and every step on using the RAK1906 WisBlock module, m
 
 #### Hardware
 
-- [RAK1906 WisBlock Environmental Sensor Module](https://store.rakwireless.com/collections/wisblock-sensor/products/rak1906-bme680-environment-sensor)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK1906 WisBlock Environmental Sensor Module](https://store.rakwireless.com/products/rak1906-bme680-environment-sensor?utm_source=RAK1906&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
 - Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software).
-- Install the RAKwireless Arduino BSP and add the RAKwireless Core boards to your **Arduino Boards Manager**. Follow the steps in the [Github repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+- Install the RAKwireless Arduino BSP and add the RAKwireless Core boards to your **Arduino Boards Manager**. Follow the steps in the [GitHub repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
 ## Product Configuration
 
 ### Hardware Setup
 
-WisBlock can integrate this module, which makes it easy to build up an environmental temperature and humidity data acquisition system. 
+WisBlock can integrate this module, which makes it easy to build up an environmental temperature and humidity data acquisition system.
 
 For more information about the RAK1906, refer to the [Datasheet](../Datasheet/).
 
@@ -69,9 +69,9 @@ As shown in **Figure 2**, the location for Slot A, B, C, and D are properly mark
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak1906/quickstart/removing-screws.png"
@@ -96,7 +96,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1906 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1906 uses I2C communication lines, and it can cause possible conflict especially on some IO modules.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming the RAK1906.
@@ -113,7 +113,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 The RAK1906 is a 4-in-1 Environmental Sensor board that contains the Bosch BME680 chip. It is specially designed for wearables where size and low power consumption are critical requirements. The BME680 contains a small Metal-Oxide (MOX) sensor and an I2C interface used to communicate with WisBlock Core.
 
-::: warning ⚠️ WARNING    
+::: warning ⚠️ WARNING
 The BME680 requires a burn-in period to collect accurate readings. The burn-in procedure can be achieved by reading all sensors once every 5 seconds for at least 20 minutes the first time that you use it. For each subsequent use, the readings should stabilize 2-3 minutes after power-up.
 :::
 
@@ -312,7 +312,7 @@ Gas = 3.87 KOhms
 
 ## LoRaWAN Environment Monitoring with RAK1906
 
-This solution shows how to create an environmental data sensor node. The sensor node measures air temperature, air humidity, barometric pressure, and gas levels. After the node joins to server successfully, it then transmits this data periodically to a LoRaWan® server. 
+This solution shows how to create an environmental data sensor node. The sensor node measures air temperature, air humidity, barometric pressure, and gas levels. After the node joins to server successfully, it then transmits this data periodically to a LoRaWan® server.
 
 These are the quick links that go directly to the specific WisBlock Core module solution that you can use in your RAK1906 project:
 
@@ -321,26 +321,26 @@ These are the quick links that go directly to the specific WisBlock Core module 
 
 ### RAK4631 Solution Requirements
 
-- 1 pc WisBlock Base board   
-- 1 pc WisBlock Core RAK4631   
+- 1 pc WisBlock Base board
+- 1 pc WisBlock Core RAK4631
 - 1 pc WisBlock Sensor RAK1906
-- 1 pc WisBlock Display RAK1921 
-- 1 pc LoRa Gateway 
+- 1 pc WisBlock Display RAK1921
+- 1 pc LoRa Gateway
 - [Arduino IDE](https://www.arduino.cc/en/Main/Software)
-- [RAK4630 BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) 
+- [RAK4630 BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index)
 - [Adafruit BME680 Library](https://github.com/adafruit/Adafruit_BME680)
 - [SX126x-Arduino Library](https://github.com/beegee-tokyo/SX126x-Arduino)
 - [U8g2 library](https://github.com/olikraus/u8g2)
 
 ### RAK11310 Solution Requirements
 
-- 1 pc WisBlock Base board   
-- 1 pc WisBlock Core RAK11310  
+- 1 pc WisBlock Base board
+- 1 pc WisBlock Core RAK11310
 - 1 pc WisBlock Sensor RAK1906
 - 1 pc WisBlock Display RAK1921
 - 1 pc LoRa Gateway
 - [Arduino IDE](https://www.arduino.cc/en/Main/Software)
-- [Arduino BSP for RAK11300 module](https://github.com/RAKWireless/RAK-RP-Arduino) 
+- [Arduino BSP for RAK11300 module](https://github.com/RAKWireless/RAK-RP-Arduino)
 - [Adafruit BME680 Library](https://github.com/adafruit/Adafruit_BME680)
 - [SX126x-Arduino Library](https://github.com/beegee-tokyo/SX126x-Arduino)
 - [U8g2 library](https://github.com/olikraus/u8g2)
@@ -386,7 +386,7 @@ You can change to unconfirmed message by changing the value to `LMH_UNCONFIRMED_
 Default is **Class A**.
 
 ```
-DeviceClass_t g_CurrentClass = CLASS_A;	
+DeviceClass_t g_CurrentClass = CLASS_A;
 ```
 
 You can change this to **CLASS_B** (still under development) or **CLASS_C**.
@@ -411,14 +411,14 @@ uint8_t nodeAppsKey[16] = {0xFB, 0xAC, 0xB6, 0x47, 0xF3, 0x58, 0x45, 0xC7, 0x50,
 
 6. Set up uplink period.
 
-The default is **20000&nbsp;mS**. 
+The default is **20000&nbsp;mS**.
 
 ```
 #define LORAWAN_APP_INTERVAL 20000
 ```
 
 
-### Data Format 
+### Data Format
 
 
 | Byte1 | Byte2        | Byte3        | Byte4     | Byte5     |
@@ -432,7 +432,7 @@ The default is **20000&nbsp;mS**.
 
 
 
-  - Byte1 is a marker for the data type, here always 1.    
+  - Byte1 is a marker for the data type, here always 1.
   - Every byte value is MSB first.
   - Temperature is sent as two bytes, enlarged 100 times for accuracy. For example, 2510 means 25.01 C, sent as 0x09 0xCE.
   - Humidity is sent as two bytes, enlarged 100 times for accuracy. For example, 4173 means 41.73%, sent as 0x10 0x4D.
@@ -442,7 +442,7 @@ The default is **20000&nbsp;mS**.
 
 ### Attention
 
-If this example is implemented for the Region US915, DR0 cannot be used because the package size is too large to fit into the allowed payload.    
+If this example is implemented for the Region US915, DR0 cannot be used because the package size is too large to fit into the allowed payload.
 
 When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown below, then your RAK1906 is properly communicating to the WisBlock core.
 

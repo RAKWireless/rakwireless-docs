@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials for installing and deploying your RAK811 Breakout Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module. 
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK811 Breakout Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
 rak_img: /assets/images/wisduo/rak811-breakout-board/quickstart/overview/RAK811_Breakout_home.png
 prev: ../Overview/
 next: ../Datasheet/
@@ -32,8 +32,8 @@ Before going through each and every step in the installation and guide of the RA
 
 #### Hardware Tools
 
-1. **RAK811 Breakout Board**
-2. RAKDAP1 Flash and Debug Tool
+1. [**RAK811 Breakout Board**](https://store.rakwireless.com/products/rak811-lpwan-breakout-module?utm_source=RAK811BreakoutModule&utm_medium=Document&utm_campaign=BuyFromStore)
+2. [RAKDAP1 Flash and Debug Tool](https://store.rakwireless.com/products/daplink-tool?utm_source=RAKDAP1&utm_medium=Document&utm_campaign=BuyFromStore)
 3. Gateway in Range for Testing
 4. Jumper Wires
 5. 3.3 V Battery Power Supply
@@ -91,7 +91,7 @@ Before powering the RAK811 Breakout Board, you should install the LoRa antenna f
 
 ### Connecting to The Things Stack (TTN V3)
 
-This section will show how to connect the RAK811 Breakout Board to The Things Stack (TTN V3) platform. 
+This section will show how to connect the RAK811 Breakout Board to The Things Stack (TTN V3) platform.
 
 <rk-img
   src="/assets/images/wisduo/rak811-breakout-board/quickstart/4.ttn-context.png"
@@ -103,7 +103,7 @@ As shown in **Figure 4**, The Things Stack is an open source LoRaWAN Network Ser
 
 LoRaWAN is a protocol for low-power wide-area networks. It allows for large scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long range wireless connections.
 
-The RAK811 Board can be part of this ecosystem as a device, and the objective of this section is to demonstrate how simple it is to send data to The Things Stack using the LoRaWAN protocol. To achieve this, the RAK811 Board must be located inside the coverage of a LoRaWAN gateway connected to The Things Stack server. 
+The RAK811 Board can be part of this ecosystem as a device, and the objective of this section is to demonstrate how simple it is to send data to The Things Stack using the LoRaWAN protocol. To achieve this, the RAK811 Board must be located inside the coverage of a LoRaWAN gateway connected to The Things Stack server.
 
 
 #### Registration to TTN and Creating LoRaWAN Applications
@@ -159,7 +159,7 @@ Now that you are logged in to the platform, the next step is to create an applic
 />
 
 To have an application registered, you need to input first the specific details and necessary information about your application then click **Create application**.
- 
+
 <rk-img
   src="/assets/images/wisduo/rak811-breakout-board/quickstart/t_image_7.png"
   width="100%"
@@ -170,7 +170,7 @@ If you have no error on the previous step, you should now be on the application 
 
 :::tip 📝 NOTE:
 
-Once you have the application in The Things Stack (TTN V3), you need to ensure that you are in coverage of a LoRaWAN gateway that is registered to The Things Stack (TTN V3) as well. Without the coverage of that LoRaWAN gateway, you cannot activate any device that you will register in your application. 
+Once you have the application in The Things Stack (TTN V3), you need to ensure that you are in coverage of a LoRaWAN gateway that is registered to The Things Stack (TTN V3) as well. Without the coverage of that LoRaWAN gateway, you cannot activate any device that you will register in your application.
 
 RAKwireless has [LoRaWAN gateways](https://store.rakwireless.com/collections/wisgate) that you can connect to The Things Stack (TTN V3) if no LoRaWAN gateway coverage available in your location.
 
@@ -240,7 +240,7 @@ You should now be able to see the device on The Things Stack console after you f
 
 The **AppEUI**, **DevEUI**, and **AppKey** are the parameters that you will need to activate your LoRaWAN end-device via OTAA. The **AppKey** is hidden by default for security reasons, but you can easily show it by clicking the show button. You can also copy the parameters quickly using the copy button.
 
-The three OTAA parameters on The Things Stack device console are MSB by default. 
+The three OTAA parameters on The Things Stack device console are MSB by default.
 
 These parameters are always accessible on the device console page, as shown in Figure 18.
 :::
@@ -270,11 +270,11 @@ at+version
   caption="AT Command response"
 />
 
-As an example, these are the list of the parameters you need to configure in RAK811: 
+As an example, these are the list of the parameters you need to configure in RAK811:
 
 - LoRa join mode: **OTAA**
 - LoRa class: **Class A**
-- LoRa region: **EU868** 
+- LoRa region: **EU868**
 - Device EUI: **1133557799224466**
 - Application EUI: **1000000000000009**
 - Application Key: **04FA4E626EF5CF227C969601176275C2**
@@ -309,7 +309,7 @@ at+set_config=lora:dev_eui:1133557799224466
 5. Set the Application EUI.
 
 :::tip 📝 NOTE:
-All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error. 
+All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error.
 :::
 
 ```
@@ -449,11 +449,11 @@ at+version
   caption="AT Command response"
 />
 
-As an example, these are the list of the parameters you need to configure in RAK811: 
+As an example, these are the list of the parameters you need to configure in RAK811:
 
 - LoRa join mode: **ABP**
 - LoRa class: **Class A**
-- LoRa region: **EU868** 
+- LoRa region: **EU868**
 - Device address: **260BDE80**
 - Network Session Key: **433C7A924F7F6947778FE821525F183A**
 - Application Session Key: **A585653A949C2B2D44B55E99E94CB533**
@@ -522,7 +522,7 @@ By using the ABP mode in LoRaWAN, it doesn’t require to join a network before 
 8. Try to send a data from the RAK811 to The Things Network in ABP mode.
 
 ```
-at+send=lora:2:1234567890 
+at+send=lora:2:1234567890
 ```
 
 <rk-img
@@ -601,7 +601,7 @@ In this document, it is assumed that you are using RAK Gateway and its built-in 
 />
 
 ::: tip 📝 NOTE
-- If you want to join in OTAA mode, select “**DeviceProfile_OTAA**” in the “Device-profile” item. 
+- If you want to join in OTAA mode, select “**DeviceProfile_OTAA**” in the “Device-profile” item.
 - If you want to join in ABP mode and CN470 frequency, select “**DeviceProfile_ABP_CN470**” in the “Device-Profile” item.
 - If you want to join in ABP mode and other frequencies except AS923 and CN470, select “**DeviceProfile_ABP**” in the “Device-profile” item.
 :::
@@ -954,7 +954,7 @@ at+set_config=lorap2p:transfer_mode:1
   caption="Setting Modes in both RAK811 Module"
 />
 
-6. Try sending a message from Unit 1 to Unit 2. 
+6. Try sending a message from Unit 1 to Unit 2.
 
 ```
 at+send=lorap2p:1234567890
@@ -966,7 +966,7 @@ at+send=lorap2p:1234567890
   caption="Message sent and received status in the two modules"
 />
 
-You have successfully finished your RAK811 Breakout Board set up. 
+You have successfully finished your RAK811 Breakout Board set up.
 
 ## Miscellaneous
 
@@ -1026,4 +1026,4 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
 at+set_config=device:restart
 ```
 
-If you want to configure your RAK811 Breakout Board using the available **AT commands**, check the [AT Commands for RAK811 Breakout Board](/Product-Categories/WisDuo/RAK811-Breakout-Board/AT-Command-Manual/). 
+If you want to configure your RAK811 Breakout Board using the available **AT commands**, check the [AT Commands for RAK811 Breakout Board](/Product-Categories/WisDuo/RAK811-Breakout-Board/AT-Command-Manual/).

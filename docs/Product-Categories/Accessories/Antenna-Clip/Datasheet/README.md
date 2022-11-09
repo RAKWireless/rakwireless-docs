@@ -16,11 +16,11 @@ rak_img: /assets/images/accessories/antenna-clip/antenna-clip.png
 
 With a one-click secure attachment method, this clip allows for a better antenna placement inside the home. For indoor use only, the clip can be stuck to any non-porous surface giving you the freedom of optimal positioning and tidiness of your setup.
 
-Long life is ensured through high-quality processing, and it is compatible with all fiberglass antennas that RAKwireless is offering. 
+Long life is ensured through high-quality processing, and it is compatible with all fiberglass antennas that RAKwireless is offering.
 
 The product comes in pairs (two in a package) to ensure secure attachment even for longer antennas.
 
-###  Features  
+###  Features
 
 - Easy to install
 - Unobtrusive design
@@ -37,16 +37,16 @@ The product comes in pairs (two in a package) to ensure secure attachment even f
 
 ## Specifications
 
-| Feature          | Specifications    |
-| ---------------- | ----------------- |
-| Material         | PET+SEBS+PC       |
-| Dimensions       | 94x94x45&nbsp;mm  |
-| Clip Diameter    | < 35&nbsp;mm      |
-| Work Temperature | -20 ~ +45&nbsp;°C |
-| Load-bearing     | 5&nbsp;kg         |
-| Color            | Brushed Metal     |
-| Mounting Method  | Self-adhesive     |
-| Use Environment  | Indoor            |
+| Feature          | Specifications       |
+| ---------------- | -------------------- |
+| Material         | PET+SEBS+PC          |
+| Dimensions       | 94 x 94 x 45&nbsp;mm |
+| Clip Diameter    | < 35&nbsp;mm         |
+| Work Temperature | -20° ~ +45°&nbsp;C   |
+| Load-bearing     | 5&nbsp;kg            |
+| Color            | Brushed Metal        |
+| Mounting Method  | Self-adhesive        |
+| Use Environment  | Indoor               |
 
 ### Mechanical Characteristics
 

@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials for installing and deploying your RAK4200 Module. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module. 
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK4200 Module. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
 rak_img: /assets/images/wisduo/rak4200-module/overview/RAK4200_Module_home.png
 prev: ../Overview/
 next: ../AT-Command-Manual/
@@ -19,10 +19,10 @@ Before going through the step in the installation guide of the RAK4200 WisDuo LP
 
 #### Hardware Tools
 
-1. RAK4200 WisDuo LPWAN Module
+1. [**RAK4200 WisDuo LPWAN Module**](https://store.rakwireless.com/products/rak4200-lora-module?utm_source=RAK4200LPWANModule&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Windows PC
 3. USB to TTL adapter
-4. RAKDAP1 Flash and Debug Tool
+4. [RAKDAP1 Flash and Debug Tool](https://store.rakwireless.com/products/daplink-tool?utm_source=RAKDAP1&utm_medium=Document&utm_campaign=BuyFromStore)
 
 
 #### Software Tools
@@ -325,7 +325,7 @@ at+set_config=lora:dev_eui:5e9d1e0857cf25f1
 Get the Application EUI number from the TTN registration.
 
 :::tip 📝 NOTE:
-All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error. 
+All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error.
 :::
 
 ```
@@ -336,7 +336,7 @@ at+set_config=lora:app_eui:5e9d1e0857cf25f1
 
 Get the Application Key from the TTN registration.
 
- 
+
 ```
 at+set_config=lora:app_key:f921d50cd7d02ee3c5e6142154f274b2
 ```
@@ -370,7 +370,7 @@ at+join
 
 9. Send data from RAK4200 to TTN.
 
-To send the string 1234567890 over LoRa port 2, type the command:  
+To send the string 1234567890 over LoRa port 2, type the command:
 
 ```
 at+send=lora:2:1234567890
@@ -444,21 +444,21 @@ As an example, the following parameters will be configured in RAK4200:
 
 1. Set LoRa join mode to ABP.
 
- 
+
 ```
 at+set_config=lora:join_mode:1
 ```
 
 2. Set the LoRa class to Class A.
 
- 
+
 ```
 at+set_config=lora:class:0
 ```
 
 3. Set the Frequency/Region.
 
-For the Europe region, type the command:  
+For the Europe region, type the command:
 ```
 at+set_config=lora:region:EU868
 ```
@@ -490,9 +490,9 @@ at+set_config=lora:nwks_key:c280cb8d1df688bc18601a97025c5488
 
 6. Set the Application Key.
 
-Get the Application Key from the TTN registration. 
+Get the Application Key from the TTN registration.
 
- 
+
 ```
 at+set_config=lora:apps_key: 4d42ec5caf97f03d833cdaf5003f69e1
 ```
@@ -509,7 +509,7 @@ Reset the RAK4200 to save the parameters. **Figure 25** summarizes the set of co
 
 8. Send the command to join in ABP mode.
 
- 
+
 ```
 at+join
 ```
@@ -611,7 +611,7 @@ The following section gives the details of each of these aforementioned steps. A
 ChirpStack LoRaServer supports multiple system configurations, with only one by default.
 
 * **Application Name**: rak_node_test
-* **Application Description**: test 
+* **Application Description**: test
 * **Service-profile**: Select the system profile. Choose service-profile-built-in
 
 The **Application Description** field is just a descriptive text.
@@ -656,7 +656,7 @@ The **Application Description** field is just a descriptive text.
 
 - **Device name and Device description**: These are just descriptive texts.
 - **Device EUI**: This interface allows you to generate a Device EUI automatically by clicking the icon highlighted in red in **Figure 37**. You can also add a specific Device EUI directly in the form.
-- **Device Profile**: To join in OTAA mode, select “**device_profile_otaa**”. To join in ABP mode, select “**device_profile_abp**”. 
+- **Device Profile**: To join in OTAA mode, select “**device_profile_otaa**”. To join in ABP mode, select “**device_profile_abp**”.
 
 4. To finish, click on the “**CREATE DEVICE**” button.
 
@@ -738,21 +738,21 @@ As an example, the following parameters will be configured in RAK4200:
 
 1. Set the LoRa join mode to OTAA.
 
- 
+
 ```
 at+set_config=lora:join_mode:0
 ```
 
 2. Set the LoRa Class to Class A.
 
- 
+
 ```
 at+set_config=lora:class:0
 ```
 
 3. Set the frequency/region.
 
-For the Europe region, type the command: 
+For the Europe region, type the command:
 ```
 at+set_config=lora:region:EU868
 ```
@@ -763,7 +763,7 @@ at+set_config=lora:region:EU868
 
 Get the Device EUI number from ChirpStack registration.
 
- 
+
 
 ```
 at+set_config=lora:dev_eui:5e9d1e0857cf25f1
@@ -773,7 +773,7 @@ at+set_config=lora:dev_eui:5e9d1e0857cf25f1
 
 Get the Application EUI number from the ChirpStack registration.
 
- 
+
 ```
 at+set_config=lora:app_eui:5e9d1e0857cf25f1
 ```
@@ -786,7 +786,7 @@ The Application EUI parameter is not required in the ChirpStack platform; theref
 
 Get the Application Key from the TTN registration.
 
-Type command: 
+Type command:
 ```
 at+set_config=lora:app_key:f921d50cd7d02ee3c5e6142154f274b2
 ```
@@ -805,7 +805,7 @@ Reset the RAK4200 to save the parameters.
 
 8. Send command to join in OTAA mode.
 
- 
+
 ```
 at+join
 ```
@@ -901,14 +901,14 @@ As an example, the following parameters will be configured in RAK4200:
 
 1. Set the LoRa join mode to ABP.
 
- 
+
 ```
 at+set_config=lora:join_mode:1
 ```
 
 2. Set the LoRa Class to Class A.
 
- 
+
 ```
 at+set_config=lora:class:0
 ```
@@ -935,14 +935,14 @@ at+set_config=lora:dev_addr:26011af9
 
 Get the Network Session Key from the ChirpStack registration.
 
- 
+
 ```
 at+set_config=lora:nwks_key:c280cb8d1df688bc18601a97025c5488
 ```
 
 6. Set the Application Key.
 
-Get the Network Session Key from the ChirpStack registration. 
+Get the Network Session Key from the ChirpStack registration.
 
 
 
@@ -964,7 +964,7 @@ Reset the RAK4200 to save the parameters.
 
 8. Send command to join in ABP mode.
 
-All the parameters required to join to a LoRaWAN network in OTAA mode have been configured. After the reset, you can send the join command: 
+All the parameters required to join to a LoRaWAN network in OTAA mode have been configured. After the reset, you can send the join command:
 
 ```
 at+join
@@ -984,7 +984,7 @@ The ABP mode in LoRaWAN does not require to join a network before sending a LoRa
 
 9. Send data from RAK4200 to ChirpStack.
 
-To send the string 1234567890 over LoRa port 2, type the command: 
+To send the string 1234567890 over LoRa port 2, type the command:
 ```
 at+send=lora:2:1234567890
 ```
@@ -1026,7 +1026,7 @@ The parameters are as follows:
 For this example, the LoRa parameters are:
 
 - Link frequency: 869525000&nbsp;Hz
-- Spreading factor: 7 
+- Spreading factor: 7
 - Bandwidth: 125&nbsp;kHz
 - Coding Rate: 4/5
 - Preamble Length: 5

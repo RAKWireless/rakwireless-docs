@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK13009
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK13009 Quick Start Guide
@@ -19,14 +19,14 @@ Before going through each and every step on using the RAK13009 WisBlock QWIIC, m
 
 #### Hardware
 
-- [RAK13009 WisBlock QWIIC](https://store.rakwireless.com/products/rak13009-wisblock-qwiic-interface)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- [RAK13009 WisBlock QWIIC](https://store.rakwireless.com/products/rak13009-wisblock-qwiic-interface?utm_source=RAK13009&utm_medium=Document&utm_campaign=BuyFromStore)
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
 - QWIIC-based 16x2 LCD
-- [RAK19008 WisBlock IO Extension Cable(optional)](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008)
-- [Li-Ion/LiPo battery (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#battery-connector)
-- [Solar charger (optional)](/Product-Categories/WisBlock/RAK5005-O/Datasheet/#solar-panel-connector)
+- [RAK19008 WisBlock IO Extension Cable (optional)](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008?utm_source=RAK19008&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
@@ -61,9 +61,9 @@ As shown in **Figure 2**, the location for sensor slots is properly marked by si
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak13009/quickstart/removing_screw.png"
@@ -88,8 +88,8 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. 
-:::  
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
+:::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
 
@@ -160,21 +160,21 @@ void setup() {
   lcd.backlight(); // turn on the backlight
 }
 void loop() {
-  
+
   start_display(); // star
   delay(1000); //wait for a second
   lcd.clear(); // clear the LCD content
   delay(1000); //wait for a second
-  
+
 }
 
 void start_display(){
-  
+
   lcd.setCursor(0,0); // tell the screen to write on the top row
   lcd.print("QWIIC");  // tell the screen to write "QWIIC" on the top row
   lcd.setCursor(0,1); // tell the screen to write on the bottom row
   lcd.print("EXAMPLE");  // tell the screen to write "EXAMPLE" on the bottom row
-  
+
 }
 ```
 

@@ -5,8 +5,8 @@ tags:
   - quickstart
   - wisblock
   - RAK14008
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK14008 Quick Start Guide
@@ -22,14 +22,14 @@ Before going through each and every step on using the RAK14008 WisBlock module, 
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) with IO slot
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
-- [RAK19008 WisBlock IO Extension Cable (optional)](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008)
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
-- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable)
+- [RAK19008 WisBlock IO Extension Cable (optional)](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008?utm_source=RAK19008&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Solar charger (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/solar-panel-connector-cable?utm_source=SolarPanelConnector&utm_medium=Document&utm_campaign=BuyFromStore)
 
 #### Software
 
 - Download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
-- To add the RAKwireless Core boards on your Arduino board, install the RAKwireless Arduino BSP. Follow the steps in the [Github repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+- To add the RAKwireless Core boards on your Arduino board, install the RAKwireless Arduino BSP. Follow the steps in the [GitHub repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 
 ## Product Configuration
 
@@ -63,9 +63,9 @@ The RAK14008 module can be mounted on the IO slot of the WisBlock Base board, as
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock module is the same. 
+The procedure in disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak14008/quickstart/removing_screw.png"
@@ -90,7 +90,7 @@ The procedure in disassembling any type of WisBlock module is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
@@ -180,7 +180,7 @@ void setup()
   if( !sensor.begin() ) // Returns 0 if sensor connect fail
   {
     Serial.print("PAJ7620 I2C error - halting");
-    while(1) 
+    while(1)
     {
       delay(10);
     }
@@ -295,7 +295,7 @@ If you're using the RAK11200 as your WisBlock Core, the RAK11200 requires the **
   caption="Uploading the RAK14008 example code"
 />
 
-6. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE, set the baud rate correctly, and once you have made a gesture or movement in front of the RAK14008 sensor, you'll be able to see the sensor's output as shown below in **Figure 13**. Therefore, your RAK14008 is properly communicating to the WisBlock core. 
+6. When you successfully uploaded the example sketch, open the Serial Monitor of the Arduino IDE, set the baud rate correctly, and once you have made a gesture or movement in front of the RAK14008 sensor, you'll be able to see the sensor's output as shown below in **Figure 13**. Therefore, your RAK14008 is properly communicating to the WisBlock core.
 
 <rk-img
   src="/assets/images/wisblock/rak14008/quickstart/rak14008-data.png"
