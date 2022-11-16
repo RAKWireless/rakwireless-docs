@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak18080/overview/RAK18080_home.png
 rak_desc: RAK18080 is a professional audio processing module, part of the WisBlock Audio Series. The RAK18080 is designed based on DBM10L by Synaptics, which can enable AI/ML, voice, and sensor applications.
 rak_grp: [wisblock, dsp]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - WisBlock Audio
     - RAK18080
@@ -15,6 +15,7 @@ tags:
 
 Thank you for choosing **RAK18080 WisBlock Audio DSP Board Module** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [RAK18080 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)

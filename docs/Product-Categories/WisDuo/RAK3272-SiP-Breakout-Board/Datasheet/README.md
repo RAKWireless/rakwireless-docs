@@ -26,6 +26,7 @@ The board complies with Class A, B, & C of LoRaWAN 1.0.3 specifications and also
 - I/O ports: UART/I2C/GPIO/SPI
 - 32 MHz&nbsp;TXCO and 32&nbsp;KHz xtal
 - RUI3 API compatible
+- Custom firmware using Arduino via RUI3 API
 - Easy to use AT Command set via UART interface
 - Serial Wire Debug (SWD) interface
 - **LoRaWAN 1.0.3** specification compliant

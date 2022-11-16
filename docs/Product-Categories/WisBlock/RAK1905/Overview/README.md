@@ -2,7 +2,7 @@
 rak_img: /assets/images/wisblock/rak1905/overview/RAK1905_home.png
 rak_desc: RAK1905 is a 3-axis gyroscope, 3-axis accelerometer, and 3-axis magnetometer, part of the RAKwireless WisBlock Sensor series. It is based on MPU-9250 from TDK and designed for 9-axis motion tracking.
 rak_grp: [wisblock, wissensor]
-next: ../Datasheet/
+next: ../Quickstart/
 prev: ../../
 tags:
     - overview
@@ -13,8 +13,9 @@ tags:
 
 # RAK1905 WisBlock 9-Axis Sensor Module
 
-Thank you for choosing **RAK1905 WisBlock 9-Axis Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK1905 WisBlock 9-Axis Sensor Module** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [RAK1905 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
@@ -49,5 +50,5 @@ To use a **RAK1905**, you need at least a **WisBlock Base** to plug the module i
 
 
 :::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+Make sure to fix the module with screws to ensure proper function.    
 :::

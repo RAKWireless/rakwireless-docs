@@ -38,6 +38,7 @@ You can configure the mode and operation of the module using AT commands via a U
 - **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, RU864, and AS923-1/2/3/4
 - LoRaWAN Activation by OTAA/ABP
 - LoRa Point-to-Point (P2P) communication
+- Custom firmware using Arduino via RUI3 API
 - Easy to use AT Command Set via UART interface
 - Long-range - greater than 15&nbsp;km with optimized antenna
 - ARM Cortex-M4 32-bit 

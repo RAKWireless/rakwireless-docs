@@ -24,6 +24,7 @@ This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications. It al
 ### Features
 
 - Based on RAK3172
+- Custom firmware using Arduino via RUI3 API
 - I/O ports: UART/I2C/GPIO/SPI
 - Serial Wire Debug (SWD) interface
 - Module size: 25.4 x 32.3&nbsp;mm

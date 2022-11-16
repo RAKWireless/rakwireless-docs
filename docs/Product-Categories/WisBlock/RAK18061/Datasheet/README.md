@@ -7,7 +7,7 @@ tags:
   - RAK18061
   - Texas Instruments
   - TAS2560
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 

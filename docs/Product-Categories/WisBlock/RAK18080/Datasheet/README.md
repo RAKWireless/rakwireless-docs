@@ -7,7 +7,7 @@ tags:
   - RAK18080
   - DSP Group
   - DBM10L
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 

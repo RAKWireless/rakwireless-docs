@@ -28,6 +28,12 @@ The default firmware of RAK4630 is based on RUI3 (RAKwireless Unified Interface)
 
 ## Product Features
  
+- **LoRaWAN 1.0.3** specification compliant
+- **Supported bands**: IN865, EU868, AU915, US915, KR920, RU864, and AS923
+- LoRaWAN Activation by OTAA/ABP
+- LoRa Point-to-Point (P2P) communication
+- Custom firmware using Arduino via RUI3 API
+- Easy-to-use AT Command set via UART interface
 - TCXO crystal for LoRa chip
 - I/O ports: UART/I2C/GPIO/USB
 - Temperature range: -40&nbsp;°C to +85&nbsp;°C

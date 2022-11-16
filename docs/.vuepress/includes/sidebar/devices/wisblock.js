@@ -51,6 +51,14 @@ module.exports = {
     sidebarDepth: 4
   },
   {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisBlock/RAK12037/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
     title: 'Datasheet',
     path: '/Product-Categories/WisBlock/RAK12037/Datasheet/',
     collapsable: false,
@@ -87,6 +95,14 @@ module.exports = {
   '/Product-Categories/WisBlock/RAK1905/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisBlock/RAK1905/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisBlock/RAK1905/Quickstart/',
     collapsable: false,
     nested: true,
     download: true,
@@ -2805,6 +2821,14 @@ module.exports = {
   sidebarDepth: 4
 },
 {
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisBlock/RAK18003/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
   title: 'Datasheet',
   path: '/Product-Categories/WisBlock/RAK18003/Datasheet/',
   collapsable: false,
@@ -2905,6 +2929,14 @@ module.exports = {
   sidebarDepth: 4
 },
 {
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisBlock/RAK18033/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
   title: 'Datasheet',
   path: '/Product-Categories/WisBlock/RAK18033/Datasheet/',
   collapsable: false,
@@ -2980,6 +3012,14 @@ module.exports = {
   sidebarDepth: 4
 },
 {
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisBlock/RAK18061/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
   title: 'Datasheet',
   path: '/Product-Categories/WisBlock/RAK18061/Datasheet/',
   collapsable: false,
@@ -2994,6 +3034,14 @@ module.exports = {
   '/Product-Categories/WisBlock/RAK18080/': [{
   title: 'Product Overview',
   path: '/Product-Categories/WisBlock/RAK18080/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisBlock/RAK18080/Quickstart/',
   collapsable: false,
   nested: true,
   download: true,

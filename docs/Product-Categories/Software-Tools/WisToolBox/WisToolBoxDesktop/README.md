@@ -19,10 +19,14 @@ To use the WisToolBox Desktop, make sure you meet the two requirements:
 
 The WisToolBox Desktop is available in Windows, macOS, and Linux. 
 
-  * [Windows](https://www.microsoft.com/store/productId/9P6691TTW3J5)
-  * [Linux](https://snapcraft.io/wistoolbox)
-  * [macOS](https://downloads.rakwireless.com/WisToolBox/WisToolBox_macOS.zip)
+  * [Windows Store](https://www.microsoft.com/store/productId/9P6691TTW3J5)
+  * [Linux Snapcraft](https://snapcraft.io/wistoolbox)
+  * MAC App Store
 
+For direct downloads of installers:
+  * [Windows](https://downloads.rakwireless.com/WisToolBox/WisToolBox_windows.exe)
+  * [Linux](https://downloads.rakwireless.com/WisToolBox/WisToolBox_linux.AppImage)
+  * [macOS](https://downloads.rakwireless.com/WisToolBox/WisToolBox_macOS.zip)
 
 :::tip 📝 NOTE
 For Linux users, [extra configuration](/Product-Categories/Software-Tools/WisToolBox/WisToolBoxDesktop/#linux-installation-configuration) is needed to enable automatic port detection of RUI3 enabled RAK module.

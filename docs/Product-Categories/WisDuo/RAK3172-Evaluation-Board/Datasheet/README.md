@@ -26,6 +26,7 @@ This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications. It al
 - **Supported bands**: EU433, CN470, IN865, EU868, AU915, US915, KR920, RU864, and AS923-1/2/3/4
 - LoRaWAN Activation by OTAA/ABP
 - LoRa Point-to-Point (P2P) communication
+- Custom firmware using Arduino via RUI3 API
 - Easy to use AT command set via UART interface
 - Long-range - greater than 15&nbsp;km with optimized antenna
 - ARM Cortex-M4 32-bit

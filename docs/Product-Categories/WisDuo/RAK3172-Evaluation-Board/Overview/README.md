@@ -32,6 +32,7 @@ This module complies with Class A, B & C of LoRaWAN 1.0.3 specifications. It als
 - LoRaWAN activation by OTAA/ABP
 - LoRa Point-to-Point (P2P) communication
 - Easy-to-use AT command set via UART interface
+- Custom firmware using Arduino via RUI3 API
 - Long-range - greater than 15&nbsp;km with optimized antenna
 - ARM Cortex-M4 32-bit
 - 256&nbsp;kbytes flash memory with ECC

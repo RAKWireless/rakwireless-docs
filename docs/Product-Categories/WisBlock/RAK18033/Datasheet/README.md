@@ -5,7 +5,7 @@ tags:
   - Datasheet
   - WisBlock Audio
   - RAK18033
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 

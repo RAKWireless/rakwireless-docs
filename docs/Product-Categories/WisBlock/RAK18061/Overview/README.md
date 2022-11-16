@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak18061/overview/RAK18061_home.png
 rak_desc: RAK18061 is a mono amplifier module, part of the WisBlock Audio Series. It is designed based on the TAS2560 from TI, which features an ultra-low-noise audio DAC and Class-D audio amplifier.
 rak_grp: [wisblock, amplifier]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - WisBlock Audio
     - RAK18061
@@ -15,6 +15,7 @@ tags:
 
 Thank you for choosing **RAK18061 WisBlock Audio Mono Amplifier Module** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [RAK18061 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)

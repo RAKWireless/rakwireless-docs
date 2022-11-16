@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak18003/overview/RAK18003_home.png
 rak_desc: RAK18003 WisBlock Audio module is an interposer module that allows you to use multiple WisBlock Audio boards in a single IO slot.
 rak_grp: [wisblock, interposer]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - WisBlock Audio
     - RAK18003
@@ -17,6 +17,7 @@ tags:
 
 Thank you for choosing **RAK18003 WisBlock Audio Interposer Module** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [RAK18003 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)

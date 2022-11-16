@@ -32,6 +32,7 @@ You can configure the mode and operation of the RAK3172-SiP using AT commands vi
 - **Supported bands**: IN865, EU868, AU915, US915, KR920, RU864, and AS923
 - LoRaWAN Activation by OTAA/ABP
 - LoRa Point-to-Point (P2P) communication
+- Custom firmware using Arduino via RUI3 API
 - Easy-to-use AT Command set via UART interface
 - Long-range - up to 15&nbsp;km with optimized antenna
 - ARM Cortex-M4 32-bit 

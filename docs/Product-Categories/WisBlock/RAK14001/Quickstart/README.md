@@ -266,7 +266,7 @@ If you experience any error in compiling the example sketch, check the updated c
   caption="Selecting RAK11200 as WisBlock Core"
 />
 
-2. Next, copy the following sample code into your Arduino IDE.
+2. Next, add the [RAK14001-NCP5623-Library](https://github.com/RAKWireless/RAK14001-NCP5623-Library) then copy the following sample code into your Arduino IDE.
 
 ```c
 #include <Wire.h>

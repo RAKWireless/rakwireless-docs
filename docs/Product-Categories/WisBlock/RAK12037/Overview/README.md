@@ -3,7 +3,7 @@ rak_desc: RAK12037 is a WisBlock Sensor that extends the WisBlock system based o
 rak_img: /assets/images/wisblock/rak12037/overview/RAK12037_home.png
 rak_grp: [wisblock, wissensor]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK12037
@@ -15,12 +15,13 @@ tags:
 
 Thank you for choosing **RAK12037 WisBlock CO2 Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [RAK12037 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK12037 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK12037.stp)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
-* [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
+* [WisBlock IO Tutorial](/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
 
 ## Product Description
 
