@@ -18,11 +18,11 @@ Thank you for choosing **RAK19018 WisBlock PoE Module for RAK13800** in your awe
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
-* [RAK19018 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK19018.stp)
+* [RAK19018 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK19018.step)
 
 ## Product Description
 
-The RAK19018 is a Power-over-Ethernet module used together with the RAK13800 Ethernet Interface module to draw power from CAT5/CAT6 cables. This PoE module is based on the Silvertel Ag9905MT converter board and compatible with the IEEE 802.3af PoE standard. 
+The RAK19018 is a Power-over-Ethernet module used together with the RAK13800 Ethernet Interface module to draw power from CAT5/CAT6 cables. This PoE module is based on the Silvertel Ag9905MT converter board and compatible with the IEEE 802.3af PoE standard.
 
 The Ag9905MT's signature and control circuit provide the PoE compatibility requirement by the Power Sourcing Equipment (PSE) before applying up to 9&nbsp;Watts of power to the port. This provides a Class 0 signature.
 
