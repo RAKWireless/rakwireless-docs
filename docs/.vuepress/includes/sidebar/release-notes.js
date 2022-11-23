@@ -2,6 +2,7 @@ module.exports = {
   '/Release-Notes/': [
     {
       title : `Release Notes`,
+      path: '/Release-Notes/',
       collapsable: false,
       children : [
         {

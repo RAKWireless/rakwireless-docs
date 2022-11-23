@@ -1,10 +1,10 @@
 <template>
   <div>
-    <img 
+    <img
       v-if="logo!=='#'"
-      class="row justify-start" 
+      class="row justify-start"
       :src="logo"
-      width="140px" 
+      width="140px"
       height="auto"
       />
     <div class="row">
@@ -38,12 +38,37 @@
         <select name="" class="text-center" id="" :disabled="disable" @change="download">
           <option >Download</option>
           <option v-for="download in downloadLink" :value="download.link">
-            
+
               {{download.text}}
-          
+
           </option>
         </select>
       </span>
+      <span class="website" v-if="typeof websiteLink === 'string' && websiteLink && disable===false" >
+        <q-icon
+          name="fas fa-file-website"
+          style="color: gray;"
+        />
+        <a
+          :href="websiteLink" class="text-h6" download>Website</a>
+      </span>
+
+      <span v-if="typeof websiteLink === 'object'&& websiteLink && disable===false">
+        <q-icon
+          name="fas fa-file-website"
+          style="color: gray;"
+        />
+
+        <select name="" class="text-center" id="" :disabled="disable" @change="website">
+          <option >Website</option>
+          <option v-for="website in websiteLink" :value="website.link">
+
+              {{website.text}}
+
+          </option>
+        </select>
+      </span>
+
     </div>
   </div>
 </template>
@@ -90,6 +115,9 @@ export default {
     downloadLink() {
       return this.frontmatter.frontmatter.download_link || null;
     },
+    websiteLink() {
+      return this.frontmatter.frontmatter.website_link || null;
+    },
     description() {
       return this.frontmatter.frontmatter.release_notes_description || "";
     },
@@ -106,6 +134,14 @@ export default {
       }
     },
     download : function(event){
+      event.preventDefault();
+      let link =(event.target.value).toString();
+      console.log(window)
+      if(event.target.value) {
+        window.location.replace(link)
+      }
+    },
+    website : function(event){
       event.preventDefault();
       let link =(event.target.value).toString();
       console.log(window)

@@ -2,7 +2,7 @@
 release_date: 10/18/2021
 version: "1.4.2"
 release_notes_description: WisDM is a RAKwireless cloud-based device management platform designed to help you optimize the ways of controlling your gateways. The WisDM device management software supports IoT networks of any scale built around commercial-grade LoRaWAN Edge gateways from RAKwireless. Also, the WisDM platform offers you remote configuration, OTAA updates, and scalable management.
-download_link: https://wisdm.rakwireless.com/
+website_link: https://wisdm.rakwireless.com/
 logo: /assets/rakwireless/product-categories/WisDM.png
 ---
 

@@ -17,7 +17,7 @@ Thank you for choosing **RAK3372 WisBlock LPWAN Module** in your awesome IoT pro
 * [RAK3372 Quickstart Guide](../Quickstart/)
 * [AT Command Manual](../AT-Command-Manual/)
 * [Datasheet](../Datasheet/)
-* [RAK3372 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK3372.stp)
+* [RAK3372 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK3372.step)
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
 
 ## Product Description

@@ -12,7 +12,7 @@ tags:
 
 # RAK7391 WisGate Connect
 
-Thank you for choosing **RAK7289 WisGate Connect** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK7391 WisGate Connect** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Assembly Guide](../Assembly-Guide)
@@ -23,7 +23,7 @@ Thank you for choosing **RAK7289 WisGate Connect** in your awesome IoT project! 
 
 ## Product Description
 
-RAK7391 WisGate Connect is a Raspberry Pi CM4-based gateway product meant to support different radio and WisBlock modules. It has several interfaces to meet the needs of different developers, which include HDMI, Ethernet, USB, mPCIe, CSI, DSI, M.2, WisBlock, PoE, and Raspberry Pi HAT. Of course, it can also be used as a basic LoRaWAN gateway product supporting up to four (4) separate modules. You can have a 16-channel sub-GHz LoRaWAN gateway plus a 2.4&nbsp;GHz LoRaWAN gateway on the same device. 
+RAK7391 WisGate Connect is a Raspberry Pi CM4-based gateway product meant to support different radio and WisBlock modules. It has several interfaces to meet the needs of different developers, which include HDMI, Ethernet, USB, mPCIe, CSI, DSI, M.2, WisBlock, PoE, and Raspberry Pi HAT. Of course, it can also be used as a basic LoRaWAN gateway product supporting up to four (4) separate modules. You can have a 16-channel sub-GHz LoRaWAN gateway plus a 2.4&nbsp;GHz LoRaWAN gateway on the same device.
 
 The RAK7391 has flexible power supply modes such as the DC terminal, Phoenix terminal, and POE (optional). It provides a fan interface to dissipate heat for the CPU that you can control based on the CPU temperature. It can also monitor the power supply. In the event of a power failure, the ultracapacitors can provide power to the system so that the system can send a notification or easily survive micro-cuts in the power supply.
 
@@ -54,7 +54,7 @@ The RAK7391 has flexible power supply modes such as the DC terminal, Phoenix ter
 
 ### Software
 
-A custom «distro» for the WisGate Connect called RAKPiOS has been prepared. The RAKPiOS is a fork of the Raspberry Pi OS with all the required drivers to use the device, some security changes, helper scripts, and Docker included by default. 
+A custom «distro» for the WisGate Connect called RAKPiOS has been prepared. The RAKPiOS is a fork of the Raspberry Pi OS with all the required drivers to use the device, some security changes, helper scripts, and Docker included by default.
 
 You can easily deploy several IoT services from a curated list of docker containers available from the device.
 

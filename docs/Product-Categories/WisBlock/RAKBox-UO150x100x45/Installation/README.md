@@ -46,7 +46,7 @@ Before assembly, check if the gasket is installed correctly. The rubber gasket h
 Next is to prepare the mounting plate. There are two types of mounting plates:
 
 - Plain mounting plate
-- WisBlock bespoke mounting plate 
+- WisBlock bespoke mounting plate
 
 #### Plain Mounting Plate
 
@@ -128,7 +128,7 @@ Then install the WisBlock Internal Mount Plate to the base of the enclosure usin
 
 ### 5. Cover the Enclosure with Lid
 
-Finally, close the WisBlock Unify Enclosure with the top lid using four pieces of M3*8&nbsp;mm head screw with a washer, as shown in **Figure 11**.
+Finally, close the WisBlock Unify Enclosure with the top lid using six (6) pieces of M3*8&nbsp;mm head screw with a washer, as shown in **Figure 11**.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo150x100x45/installation/close-enclosure.png"
@@ -259,14 +259,14 @@ The steel strips **ONLY** support 60-85&nbsp;mm diameter of the pole.
 3. Lastly, follow the steps below, as also shown in **Figure 22**:
 
 - **Step 1**: Use a Φ5&nbsp;mm drill head to drill holes in the wall. Drill at least 55-60&nbsp;mm in depth.
-- **Step 2**: Plug the screw anchors into the drilled holes. You can use a hammer to plug it in. It helps the screws to have a secure fit on the wall. 
+- **Step 2**: Plug the screw anchors into the drilled holes. You can use a hammer to plug it in. It helps the screws to have a secure fit on the wall.
 - **Step 3**: Fix the WisBlock Unify Enclosure on the wall using two (2) pieces of st3.5*35&nbsp;mm tapping screws.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo150x100x45/installation/wall-enclosure.png"
   width="40%"
   caption="Fixing the enclosure on the wall"
-/>  
+/>
 
 
 ### Belt Clip Mount (Mark E)
@@ -349,7 +349,7 @@ The steel strips **ONLY** support 60-85&nbsp;mm diameter of the pole.
   caption="Mount accessory marked with letter G"
 />
 
-2. Fix the magnet mount marked with the letter **G** on the WisBlock Unify Enclosure using one (1) to six (6) pieces of M3*8&nbsp;mm Head screw with washer. Place it on fixed positions number **1 to 6** of the enclosure as shown in **Figure 31**.
+2. Fix the magnet mount marked with the letter **G** on the WisBlock Unify Enclosure using one (1) to eight (8) pieces of M3*8&nbsp;mm Head screw with washer. Place it on fixed positions number **1 to 6** of the enclosure as shown in **Figure 31**.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo150x100x45/installation/magnet-mount1.png"
@@ -382,7 +382,7 @@ Confirm the number of magnets according to the weight of the device. The medium 
   caption="Fixing the magnet mount on the enclosure"
 />
 
-- The magnet should be ordered separately. Consult before placing an order. 
+- The magnet should be ordered separately. Consult before placing an order.
 
 |  No.  |  Diameter  | Thickness | Material |    Adsorption    |
 | :---: | :--------: | :-------: | :------: | :--------------: |
