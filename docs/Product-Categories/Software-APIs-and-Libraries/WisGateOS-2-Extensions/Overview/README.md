@@ -232,7 +232,7 @@ You can check the guide on how to download the extension above.
    - **Interface** – enables/disables custom logo extension.
    - **Large logo** – this logo will be used on the login page and on the expanded sidebar menu. To upload a logo you can either drop the image in the area or click **Choose file** and browse for the image.
    - **Small logo** – this logo will be used for mobile view and on the collapsed sidebar menu. To upload a logo you can either drop the image in the area or click **Choose file** and browse for the image.
-   - **Preview** – after choosing the desired images, you can click on preview and see how the logo will look on the login page, expanded and collapsed sidebar in desktop and mobile versions.
+   - **Preview** – after choosing the desired images, you can click preview and see how the logo will look on the login page, expanded and collapsed sidebar in desktop and mobile versions.
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/19.logo-preview.png"
@@ -246,7 +246,7 @@ You can check the guide on how to download the extension above.
   caption="Logo Preview for Mobile Users"
 />
 
-4. To apply the selected logos, click **Save changes**. The page will reload and apply the logos.
+1. To apply the selected logos, click **Save changes**. The page will reload and apply the logos.
 
 
 
@@ -559,32 +559,31 @@ Make sure you have local network access to your gateway and connect to it to acc
 1. Head to **Extensions** → **OpenVPN Client** → **Launch button**.
 
 <rk-img
-src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/1.png"
+src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/1-start-openvpn.png"
   width="100%"
   caption="Start OpenVPN"
 />
 
-2. In the next window, click either on **Add tunnel button** or **add one now** link to add an OpenVPN tunnel.
+2. On the next window, click either **Add tunnel button** or **add one now** link to add an OpenVPN tunnel.
 
 <rk-img
-src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/2.png"
+src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/2-add-openvpn-tunnel.png"
   width="100%"
   caption="Add OpenVPN tunnel"
 />
 
-3. Now click on choose file link and browse for the .OVPN file or drag and drop the .OVPN file you have created in the [WisGate Edge V2 Gateways Remote Management OpenVPN](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisGate-Edge-V2-Gateways-Remote-Management-OpenVPN/) guide.
-
+3. Now click **choose file** link and browse for the `.OVPN` file or drag and drop the `.OVPN` file you have created in the [WisGate Edge V2 Gateways Remote Management OpenVPN](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisGate-Edge-V2-Gateways-Remote-Management-OpenVPN/) guide.
 
 <rk-img
-src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/3.png"
+src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/3-add-.ovpn-file-to-the-gateway.png"
   width="100%"
   caption="Add .OVPN file to the gateway"
 />
 
-1. Once the file is added, click **Add tunnel** to add the OpenVPN tunnel.
+4. Once the file is added, click **Add tunnel** to add the OpenVPN tunnel.
 
 <rk-img
-src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/4.png"
+src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/4-add-openvpn-tunnel.png"
   width="100%"
   caption="Add OpenVPN tunnel"
 />
@@ -592,15 +591,15 @@ src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/4.pn
 5. A success message will appear after the tunnel is added successfully.
 
 <rk-img
-src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/5.png"
+src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/5-successfully-added-tunnel.png"
   width="100%"
   caption="Successfully added tunnel"
 />
 
-6. Click on **Configure** button of the VPN tunnel. On the next window, click the **Enable Connection** switch to enable the OpenVPN tunnel and click **Save changes.**
+6. Click **Configure** button of the VPN tunnel. On the next window, click the **Enable Connection** switch to enable the OpenVPN tunnel and click **Save changes.**
 
 <rk-img
-src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/6.png"
+src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/6-start-the-openvpn-tunnel.png"
   width="100%"
   caption="Start the OpenVPN tunnel"
 />
@@ -608,15 +607,15 @@ src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/6.pn
 7. From the **Logs** tab, you can check the OpenVPN status.
 
 <rk-img
-src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/7.png"
+src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/7-openvpn-tunnel-status.png"
   width="100%"
   caption="OpenVPN tunnel status"
 />
 
-8. You can see the assigned IP in the OpenVPN overview page
+8. You can see the assigned IP in the OpenVPN overview page.
 
 <rk-img
-src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/8.png"
+src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/8-openvpn-assigned-ip.png"
   width="100%"
   caption="OpenVPN assigned IP"
 />

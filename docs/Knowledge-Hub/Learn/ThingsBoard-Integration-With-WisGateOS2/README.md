@@ -1,7 +1,7 @@
 ---
 sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
-rak_desc: Visualize your end device's data in ThingsBoard with MQTT or HTTP integrations via WisGate Edge V2 Built-in Network Server
+rak_desc: Visualize your end device's data in ThingsBoard with MQTT or HTTP integrations via WisGate Edge V2 built-in network server
 tags:
   - User-Manual
   - WisGateOS2
@@ -27,17 +27,17 @@ The Built-in Network server of the WisGate Edge V2 gateways provides MQTT and HT
   - [Content](#content)
   - [MQTT Integration](#mqtt-integration)
     - [Configure ThingsBoard](#configure-thingsboard)
-    - [External MQTT Broker](#external-mqtt-broker)
-      - [Configure the Gateway](#configure-the-gateway)
-      - [Set the MQTT Integration](#set-the-mqtt-integration)
-    - [Local MQTT Broker](#local-mqtt-broker)
-      - [Configure the Gateway (Local MQTT)](#configure-the-gateway-local-mqtt)
-      - [Set the MQTT Integration (Local MQTT)](#set-the-mqtt-integration-local-mqtt)
+      - [External MQTT Broker](#external-mqtt-broker)
+        - [Configure the Gateway](#configure-the-gateway)
+        - [Set the MQTT Integration](#set-the-mqtt-integration)
+      - [Local MQTT Broker](#local-mqtt-broker)
+        - [Configure the Gateway (Local MQTT)](#configure-the-gateway-local-mqtt)
+        - [Set the MQTT Integration (Local MQTT)](#set-the-mqtt-integration-local-mqtt)
   - [HTTP Integration](#http-integration)
     - [Configure ThingsBoard](#configure-thingsboard-1)
     - [Configure the Gateway (HTTP Integration)](#configure-the-gateway-http-integration)
     - [Set the HTTP Integration](#set-the-http-integration)
-  - [Data Visualization from the End-Device](#data-visualization-from-the-end-device)
+  - [Data Visualization From the End-Device](#data-visualization-from-the-end-device)
 
 
 ## MQTT Integration
@@ -176,13 +176,13 @@ Check the **Debug mode** to track events while configuring the integration.
 :::
 
 
-### External MQTT Broker
+#### External MQTT Broker
 
 The first example will be with an external MQTT broker. If you want to use the local broker, proceed to the Local MQTT broker  section.
 
-The external broker used in this example is `broker.hivemq.com`. It is a free public MQTT broker, ideal for testing. You can use other ones or your own broker, then click thbe **Topic** filters to set the subscription topics to which the ThingsBoard client must subscribe.
+The external broker used in this example is `broker.hivemq.com`. It is a free public MQTT broker, ideal for testing. You can use other ones or your own broker, then click the **Topic filters** to set the subscription topics to which the ThingsBoard client must subscribe.
 
-For WisGate Edge gateways the topics are as follows:
+For WisGate Edge gateways, the topics are as follows:
 
  - `application/{{application_ID}}/device/{{device_EUI}}/join`
  - `application/{{application_ID}}/device/{{device_EUI}}/rx`
@@ -208,7 +208,7 @@ You need to change the values in the topics in the ThingsBoard. For example, `ap
 :::
 
 
-#### Configure the Gateway
+##### Configure the Gateway
 
 1. Now that the ThingsBoard is configured, you need to configure the gateway. Start by accessing the gateway. You can see how to do it in the [WisGateOS V2 user manual](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/Overview/).
 
@@ -334,7 +334,7 @@ Once the gateway is in Built-in network server mode, head to the **Applications*
 You will be redirected to the **End devices** page, where the device is added.
 
 
-#### Set the MQTT Integration
+##### Set the MQTT Integration
 
 1. After your device joins, head to **LoRa** -> **Integration Interface Parameters** section.
 2. Turn on the integration by clicking **Enable Integration Interface switch**. By default, the **Integration mode** is **Generic MQTT**. If that is not the case, select the **Generic MQTT** as the integration mode.
@@ -358,7 +358,7 @@ You will be redirected to the **End devices** page, where the device is added.
 The MQTT integration is ready. You can now proceed with processing the data.
 
 
-### Local MQTT Broker
+#### Local MQTT Broker
 
 The gateway comes with a built-in broker. You can connect the ThingsBoard client to the local broker.
 
@@ -389,12 +389,12 @@ Where **application_ID**, **device_EUI**, and **mcast_ID** are the ID of the app
   caption="Local broker example"
 />
 
-#### Configure the Gateway (Local MQTT)
+##### Configure the Gateway (Local MQTT)
 
 To configure the gateway, follow the steps on the [Configure the Gateway](#configure-the-gateway) section.
 
 
-#### Set the MQTT Integration (Local MQTT)
+##### Set the MQTT Integration (Local MQTT)
 
 1. After your device joins, head to **LoRa** -> **Integration Interface Parameters** section.
 2. Turn on the integration by clicking **Enable Integration Interface** switch. By default, the **Integration** mode is **Generic MQTT**. If that is not the case, select it manually.
@@ -520,7 +520,7 @@ return result;
 />
 
 
-1. Click the **Add Integration** ![add-data.png](/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/add-data.png) button to add one.
+8. Click the **Add Integration** ![add-data.png](/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/add-data.png) button to add one.
 
 <rk-img
   src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/32.integration.png"
@@ -595,7 +595,7 @@ To configure the gateway, follow the steps on the [Configure the Gateway](#confi
 />
 
 
-## Data Visualization from the End-Device
+## Data Visualization From the End-Device
 
 In this example, the RAK7204 WisNode Sense is the device used. The method to visualize the data for other devices is the same.
 
@@ -658,7 +658,6 @@ In this example, the RAK7204 WisNode Sense is the device used. The method to vis
 
 :::tip 📝 NOTE
 If you have not checked the **Open dashboard** option, you can easily navigate to **Dashboard groups** menu -> **All** -> `<Name_of_your_group>` to see the added widget.
-
 :::
 
 <rk-img
