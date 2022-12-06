@@ -10,7 +10,7 @@ header:
   title: RAK Developer Kit 3 (Tracker Kit) Guide
   caption: by <b>Rally Uminga</b>
   img: /assets/images/knowledge-hub/banners/wisblock-sensor-tutorial.jpg
-posted: 01/13/2022 08:00 AM
+posted: 13/01/2022 08:00 AM
 ---
 
 # RAK Developer Kit 3 (Tracker Kit) Guide

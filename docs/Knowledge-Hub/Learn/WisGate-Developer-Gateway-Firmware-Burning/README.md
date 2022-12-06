@@ -9,7 +9,7 @@ header:
   title: Developer Gateway Firmware Setup
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/developer-gateway-firmware-setup.jpg
-posted: 02/29/2020 10:30 AM
+posted: 29/02/2020 10:30 AM
 ---
 
 # WisGate Developer Gateway Firmware Setup

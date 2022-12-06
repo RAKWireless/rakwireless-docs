@@ -12,7 +12,7 @@ header:
   title: LPWAN Node Firmware Upgrading
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/lpwan-node-firmware-upgrading.jpg
-posted: 02/29/2020 10:30 AM
+posted: 29/02/2020 10:30 AM
 ---
 
 # LPWAN Node Firmware Upgrading

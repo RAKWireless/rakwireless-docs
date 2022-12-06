@@ -11,7 +11,7 @@ header:
   title: STM32CubeProgrammer Guide for RAK Modules
   caption: by <b>Carl Erick Rowan</b>
   img: /assets/images/knowledge-hub/banners/rui3.jpg
-posted: 04/18/2020 8:30 AM
+posted: 18/04/2020 8:30 AM
 ---
 
 # STM32CubeProgrammer Guide for RAK Modules

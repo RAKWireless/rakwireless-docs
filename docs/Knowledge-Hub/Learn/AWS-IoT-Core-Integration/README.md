@@ -5,11 +5,12 @@ rak_desc: This document will show you how to set up a LoRaWAN end-node and view 
 tags:
   - Tutorial
   - WisGate
+  - AWS
 header:
   title: AWS IoT Core Integration
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/amazon-web-service.jpg
-posted: 10/07/2021 3:30 PM
+posted: 07/10/2021 3:30 PM
 ---
 
 # AWS IoT Core Integration

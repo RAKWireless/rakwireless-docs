@@ -16,7 +16,7 @@ header:
   title: Build Your Own WisBlock Temperature Sensor with Voice Notification
   caption: by <b>Ronald Collamar and Carl Erick Rowan</b>
   img: /assets/images/knowledge-hub/banners/wisblock-io-tutorial.jpg
-posted: 12/01/2022
+posted: 01/12/2022
 ---
 
 # Build Your Own WisBlock Temperature Sensor with Voice Notification

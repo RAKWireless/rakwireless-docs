@@ -10,7 +10,7 @@ header:
   title: WisGateOS Recovery Procedure for MacOS
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/multi-rak-gateway-mesh.jpg
-posted: 04/18/2022 10:30 AM
+posted: 18/04/2022 10:30 AM
 ---
 
 # WisGateOS Recovery Procedure for MacOS

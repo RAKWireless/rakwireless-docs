@@ -8,7 +8,7 @@ header:
   title: "Connect the Dots : Linking LPWAN (LoRaWAN) devices to Ubidots"
   caption: by <b>Sam Domingo</b>
   img: /assets/images/knowledge-hub/banners/ubidots-integration.jpg
-posted: 05/20/2020 10:30 AM
+posted: 20/05/2020 10:30 AM
 author:
   name: Sam Domingo
   about: Sam is the technical and marketing content writer for RAKwireless. Her passion for writing that manifested in her playwriting and poetry now flows into her in-depth coverage of the IoT community.

@@ -70,7 +70,7 @@
                   <q-item-section>
                     <div class="row q-gutter-x-sm">
                       <q-icon name="far fa-calendar" size="0.9rem" />
-                      <div>{{ article.frontmatter.posted|| article.lastUpdated  || td }}</div>
+                      <div>{{ article.updated || article.frontmatter.posted || td }}</div>
                     </div>
                     <div class="row q-gutter-x-sm q-mt-sm q-mb-sm">
                       <q-icon class="col-1 self-start" name="fas fa-tags" size="0.9rem" />
@@ -96,7 +96,7 @@
                 </div>
               </div>
           </div>
-          
+
           </div>
         </rk-card>
       </div>
@@ -106,6 +106,7 @@
 
 <script>
 import CommonMixin from './common.mixin'
+import moment from 'moment';
 
 export default {
   name: 'RkBlog',
@@ -127,10 +128,13 @@ export default {
           return t.path.match(/^\/Knowledge-Hub\/Learn\/[\w\d-._]{2,}\/$/g)
         })
         .sort((a, b) => {
-          // descending sort by date posted or last updated
-          console.log(a)
-          const a_ = new Date(a.frontmatter.posted || a.lastUpdated).getTime()
-          const b_ = new Date(b.frontmatter.posted || b.lastUpdated).getTime()
+          // descending sort by date posted or last
+          let a_ = this.formatDate(a.frontmatter.posted??a.lastUpdated)
+          //new Date(a.frontmatter.posted || a.lastUpdated).getTime()
+          let b_ = this.formatDate(b.frontmatter.posted??b.lastUpdated)
+          //new Date(b.frontmatter.posted || b.lastUpdated).getTime()
+
+
           if (a_ < b_) return 1
           else if (a_ > b_) return -1
           else return 0
@@ -162,6 +166,14 @@ export default {
   methods: {
     customNav(path) {
       this.nav(`${window.location.origin}${path}`)
+    },
+    formatDate(date){
+
+      let newDate = moment(date,"DD/MM/YYYY").format("MM/DD/YYYY")
+      console.log("PreV", date)
+      console.log("NEW DATE", new Date(newDate))
+
+      return new Date(newDate).getTime()
     },
     filterFn(val, update) {
       update(() => {

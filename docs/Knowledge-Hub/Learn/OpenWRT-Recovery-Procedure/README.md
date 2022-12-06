@@ -9,7 +9,7 @@ header:
   title: OpenWRT Recovery Procedure
   caption: by <b>Denitsa Prodanova</b>
   img: /assets/images/knowledge-hub/banners/general_banner.jpg
-posted: 03/09/2021 2:45 PM
+posted: 09/03/2021 2:45 PM
 author:
   name: Denitsa Prodanova
   about: Denitsa is a Technical Graphics and Documentation Editor at RAKwireless. She is passionate about the arts and believes technology and art go hand in hand.

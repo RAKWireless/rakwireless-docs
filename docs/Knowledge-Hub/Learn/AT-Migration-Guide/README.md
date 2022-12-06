@@ -7,11 +7,12 @@ tags:
   - WisDuo
   - RAK3172-SiP
   - RAK3172
+  - RUI3
 header:
   title: AT Command Migration Guide of RAK3172 to RUI3
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/rui3.jpg
-posted: 04/18/2020 8:30 AM
+posted: 18/04/2020 8:30 AM
 ---
 
 # AT Command Migration Guide of RAK3172 to RUI3 (RAKwireless Unified Interface V3)

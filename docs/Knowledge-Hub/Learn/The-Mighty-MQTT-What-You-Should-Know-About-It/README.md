@@ -8,7 +8,7 @@ header:
   title: The Mighty MQTT! What You Should Know About It
   caption: by <b>Sam Domingo</b>
   img: /assets/images/knowledge-hub/banners/what-you-should-know-about-mqtt.jpg
-posted: 02/19/2020 10:30 AM
+posted: 19/02/2020 10:30 AM
 author:
   name: Sam Domingo
   about: Sam is the technical and marketing content writer for RAKwireless. Her passion for writing that manifested in her playwriting and poetry now flows into her in-depth coverage of the IoT community.

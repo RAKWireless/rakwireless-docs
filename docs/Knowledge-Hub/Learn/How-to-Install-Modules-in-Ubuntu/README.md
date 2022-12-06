@@ -9,7 +9,7 @@ header:
   title: How to Install Modules in Ubuntu
   caption:  by <b>Vladislav Yordanov</b>
   img: /assets/images/knowledge-hub/banners/general_banner.jpg
-posted: 05/12/2021 4:15 PM
+posted: 12/05/2021 4:15 PM
 author:
   name: Vladislav Yordanov
   about: CCO of RAKwireless, Co-founder and CEO of IoT4Green. I believe technology can be the solution to most issues human kind is facing.

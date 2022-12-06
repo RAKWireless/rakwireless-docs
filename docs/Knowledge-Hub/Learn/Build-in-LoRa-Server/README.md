@@ -10,7 +10,7 @@ header:
   title: Build-in LoRa Network Server Configuration
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/build-in-lora-network-server-configuration.jpg
-posted: 02/29/2020 10:30 AM
+posted: 29/02/2020 10:30 AM
 ---
 
 #  Build-in LoRa Network Server Configuration

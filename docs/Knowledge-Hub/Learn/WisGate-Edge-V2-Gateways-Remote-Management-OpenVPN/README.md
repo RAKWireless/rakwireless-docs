@@ -10,7 +10,7 @@ header:
   title: WisGate Edge V2 Gateways Remote Management - OpenVPN
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/developer-gateway-firmware-setup.jpg
-posted: 12/01/2022 5:00 PM
+posted: 01/12/2022 5:00 PM
 ---
 
 # WisGate Edge V2 Gateways Remote Management - OpenVPN

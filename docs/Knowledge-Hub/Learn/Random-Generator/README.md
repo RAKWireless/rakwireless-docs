@@ -13,7 +13,7 @@ header:
   title: Random Numbers and LoRa
   caption: by <b>Kongduino</b>
   img: /assets/images/knowledge-hub/banners/lorawan-vs-the-world-of-iot.jpg
-posted: 09/13/2022 2:00 PM
+posted: 13/09/2022 2:00 PM
 ---
 
 # Random Numbers and LoRa

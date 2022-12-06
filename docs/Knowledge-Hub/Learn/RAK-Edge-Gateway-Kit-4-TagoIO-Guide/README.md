@@ -10,7 +10,7 @@ header:
   title: WisBlock Kit 4 and RAK Edge Gateway Complete LoRaWAN Guide with TTN V3 and TagoIO
   caption: by <b>Christian Jay Mendoza</b>
   img: /assets/images/knowledge-hub/banners/wisblock-sensor-tutorial.jpg
-posted: 07/21/2022 05:17 PM
+posted: 21/07/2022 05:17 PM
 ---
 
 # WisBlock Kit 4 and RAK Edge Gateway Complete LoRaWAN Guide with TTN V3 and TagoIO

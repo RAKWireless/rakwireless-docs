@@ -11,7 +11,7 @@ tags:
 
 # 100M PoE Injector
 
-Thank you for choosing **100M RAK PoE injector** in your awesome IoT p roject! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **100M RAK PoE injector** in your awesome IoT project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 

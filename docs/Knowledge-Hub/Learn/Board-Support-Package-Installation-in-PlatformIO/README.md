@@ -8,7 +8,7 @@ header:
   title: Installation of Board Support Package in PlatformIO
   caption: by <b>Bernd Giesecke</b>
   img: /assets/images/knowledge-hub/banners/installation-of-board-support-package-in-platformio.jpg
-posted: 08/14/2020 10:30 AM
+posted: 14/08/2020 10:30 AM
 author:
   name: Bernd Giesecke
   about: Electronics Engineer, 23 years experience in industrial and automotive HW and SW R&D. Supporting Arduino open source community since 2014.

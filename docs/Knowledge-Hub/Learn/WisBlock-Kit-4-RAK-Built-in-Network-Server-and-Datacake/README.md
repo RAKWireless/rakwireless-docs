@@ -9,7 +9,7 @@ header:
   title: WisBlock Kit 4 + RAK Built-in Network Server + Datacake
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/general_banner.jpg
-posted: 08/11/2022 10:55 PM
+posted: 11/08/2022 10:55 PM
 ---
 
 # WisBlock Kit 4 + RAK Built-in Network Server + Datacake

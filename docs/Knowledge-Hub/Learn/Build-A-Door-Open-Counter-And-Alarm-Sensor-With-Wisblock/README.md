@@ -14,7 +14,7 @@ header:
   title: Build a Door Open Counter and Alarm Sensor with WisBlock
   caption: by <b>Bernd Giesecke</b>
   img: /assets/images/knowledge-hub/banners/high-power-wifi-module-and-power-line-communications.jpg
-posted: 11/24/2022 08:00 AM
+posted: 24/11/2022 08:00 AM
 author:
   name: Bernd Giesecke
   about: Electronics Engineer, 23 years experience in industrial and automotive HW and SW R&D. Supporting Arduino open source community since 2014.

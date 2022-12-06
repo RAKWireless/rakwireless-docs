@@ -9,7 +9,7 @@ header:
   title: LoRa Concentrator Spectrum Settings Guide
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/lora-concentrator-spectrum-settings-guide.jpg
-posted: 02/29/2020 10:30 AM
+posted: 29/02/2020 10:30 AM
 ---
 
 # LoRa Concentrator Spectrum Settings Guide

@@ -9,14 +9,16 @@ header:
   title: RAK Industrial LPWAN Gateway Remote Management - OpenVPN
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/gateway-remote-management-openvpn.jpg
-posted: 02/29/2020 10:30 AM
+posted: 29/02/2020 10:30 AM
 ---
 
 # RAK Industrial LPWAN Gateway Remote Management - OpenVPN
 
-* [OpenVPN Server Deployment](#openvpn-server-deployment)
-* [OpenVPN Management Client Set-up](#openvpn-management-client-set-up)
-* [OpenVPN Client Set-up on LoRa Gateway](#openvpn-client-set-up-on-lora-gateway)
+- [RAK Industrial LPWAN Gateway Remote Management - OpenVPN](#rak-industrial-lpwan-gateway-remote-management---openvpn)
+  - [Network Topology](#network-topology)
+- [OpenVPN Server Deployment](#openvpn-server-deployment)
+- [OpenVPN Management Client Set-up](#openvpn-management-client-set-up)
+- [OpenVPN Client Set-up on LoRa Gateway](#openvpn-client-set-up-on-lora-gateway)
 
 This section introduces a remote management of RAK Industrial LPWAN Gateways based on OpenVPN. A virtual private network (VPN) is created where a server is deployed that both the gateway and any number of customer devices such as PC and phone, can connect via a public IP address. This is possible to implement using any of the backhaul connectivity options the Gateway supports (Ethernet, Wi-Fi, LTE).
 

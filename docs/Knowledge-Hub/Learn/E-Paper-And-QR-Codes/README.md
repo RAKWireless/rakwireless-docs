@@ -9,7 +9,7 @@ header:
   title: E-Paper and QR Codes
   caption: by <b>Kongduino</b>
   img: /assets/images/knowledge-hub/banners/wisblock-sensor-tutorial.jpg
-posted: 01/20/2022 5:40 PM
+posted: 20/01/2022 5:40 PM
 ---
 
 # E-Paper and QR Codes

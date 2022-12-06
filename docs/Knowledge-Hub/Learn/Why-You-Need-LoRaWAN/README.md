@@ -8,7 +8,7 @@ header:
   title: Why You Need LoRaWAN | RAK Smart Devices and Home Security
   caption: by <b>Sam Domingo</b>
   img: /assets/images/knowledge-hub/banners/why-you-need-lorawan.jpg
-posted: 07/29/2019 10:30 AM
+posted: 29/07/2019 10:30 AM
 author:
   name: Sam Domingo
   about: Sam is the technical and marketing content writer for RAKwireless. Her passion for writing that manifested in her playwriting and poetry now flows into her in-depth coverage of the IoT community.

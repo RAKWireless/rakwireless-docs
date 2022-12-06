@@ -1943,3 +1943,10 @@ If everything is set correctly, the Last seen status will state a few seconds ag
 
 Now your gateway is connected to the ChirpStack Network server.
 
+## ThingPark by Actility
+
+In this section, you will learn how to add RAK7289V2/RAK7289CV2 WisGate Edge Pro in **ThingPark**.
+
+ThingPark is Actility’s platform, in which you can register your LoRaWAN gateway and end devices. ThingPark offers a user-friendly dashboard, in which you can monitor different information about the gateway/end device like status, radio traffic, statistics, and more. Together with HTTPS integration, you can send the data received from the end nodes to an Application server for post-processing and visualizing.
+
+For the complete step-by-step tutorial, refer to the [How to Add RAK WisGate Edge Gateway in ThingPark - Actility ThingPark Guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/How-to-Add-RAK-WisGate-Edge-Gateway-in-ThingPark-Actility-ThingPark-Guide/).

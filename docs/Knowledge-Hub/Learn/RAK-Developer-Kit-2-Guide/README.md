@@ -10,7 +10,7 @@ header:
   title: RAK Developer Kit 2 (Weather Kit) Guide
   caption: by <b>Rally Uminga</b>
   img: /assets/images/knowledge-hub/banners/wisblock-sensor-tutorial.jpg
-posted: 01/13/2021 08:00 AM
+posted: 13/01/2021 08:00 AM
 ---
 
 # RAK Developer Kit 2 (Weather Kit) Guide

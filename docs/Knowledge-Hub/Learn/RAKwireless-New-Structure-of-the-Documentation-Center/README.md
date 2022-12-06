@@ -8,7 +8,7 @@ header:
   title: RAKwireless - New Structure of the Documentation Center
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/rakwireless-new-structure-of-the-documentation-center.jpg
-posted: 09/15/2020 6:00 PM
+posted: 15/09/2020 6:00 PM
 ---
 
 # RAKwireless - New Structure of the Documentation Center

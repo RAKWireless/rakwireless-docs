@@ -10,7 +10,7 @@ header:
   title: WisBlock Kit 4 and RAK Edge Gateway Complete LoRaWAN Guide with TTN V3 and Qubitro
   caption: by <b>Ronald Collamar</b>
   img: /assets/images/knowledge-hub/banners/wisblock-sensor-tutorial.jpg
-posted: 08/16/2022 05:17 PM
+posted: 16/08/2022 05:17 PM
 ---
 
 # WisBlock Kit 4 and RAK Edge Gateway Complete LoRaWAN Guide with TTN V3 and Qubitro

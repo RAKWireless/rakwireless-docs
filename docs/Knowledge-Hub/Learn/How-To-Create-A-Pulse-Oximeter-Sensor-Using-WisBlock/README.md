@@ -9,7 +9,7 @@ header:
   title: How to Create a Pulse Oximeter Sensor Using WisBlock
   caption: by <b>Anthony Aldrin Beltran</b>
   img: /assets/images/knowledge-hub/banners/wisblock-sensor-tutorial.jpg
-posted: 01/18/2022 2:30 PM
+posted: 18/01/2022 2:30 PM
 ---
 
 # How to Create a Pulse Oximeter Sensor Using WisBlock

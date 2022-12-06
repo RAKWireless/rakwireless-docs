@@ -90,10 +90,12 @@
           </transition>
           
         </q-page-sticky>
+        
       </q-page-container>
       <q-footer>
         <rk-footer />
       </q-footer>
+      <rk-banner />
     </q-layout>
   </ClientOnly>
 </template>
@@ -121,6 +123,7 @@ import { Screen } from 'quasar'
 
 import debounce from 'lodash.debounce'
 import RkFaqFooter from '../../components/RkFaqFooter.vue'
+import RkBanner from '@theme/components/RkBanner.vue'
 
 function findPos(obj) {
     var curtop = 0;
@@ -147,7 +150,7 @@ export default {
     RkHeader,
     RkZoom,
     RkSearchBox,
-
+    RkBanner
   },
   mixins: 
     [ScrollMixin, TagsMixin, CommonMixin],

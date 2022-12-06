@@ -870,6 +870,32 @@ module.exports = {
       sidebarDepth: 4
     }
   ],
+  '/Product-Categories/Accessories/Solar-Panel-Kit-for-Battery-Plus/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/Solar-Panel-Kit-for-Battery-Plus/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Installation Guide',
+      path: '/Product-Categories/Accessories/Solar-Panel-Kit-for-Battery-Plus/Installation-Guide/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/Solar-Panel-Kit-for-Battery-Plus/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
   '/Product-Categories/Accessories/RAK9155/': [
     {
       title: 'Overview',

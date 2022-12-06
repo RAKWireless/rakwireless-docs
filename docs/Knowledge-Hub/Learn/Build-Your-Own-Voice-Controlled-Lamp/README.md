@@ -18,7 +18,7 @@ header:
   title: Build Your Own Voice-Controlled Lamp
   caption: by <b>Christopher Méndez</b>
   img: /assets/images/knowledge-hub/banners/high-power-wifi-module-and-power-line-communications.jpg
-posted: 11/03/2022 07:00 PM
+posted: 03/11/2022 07:00 PM
 ---
 
 # Build Your Own Voice-Controlled Lamp

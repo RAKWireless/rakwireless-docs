@@ -10,7 +10,7 @@ header:
   title: RAK Developer Kit 4 (Air Quality Kit) Guide
   caption: by <b>Anthony Aldrin Beltran</b>
   img: /assets/images/knowledge-hub/banners/wisblock-sensor-tutorial.jpg
-posted: 01/03/2022 08:00 AM
+posted: 03/01/2022 08:00 AM
 ---
 
 # RAK Developer Kit 4 (Air Quality Kit) Guide

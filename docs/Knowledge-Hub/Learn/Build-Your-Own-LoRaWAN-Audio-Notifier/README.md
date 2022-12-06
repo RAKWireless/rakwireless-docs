@@ -15,7 +15,7 @@ header:
   title: Build Your Own LoRaWAN Audio Notifier
   caption: by <b>Christopher Méndez</b>
   img: /assets/images/knowledge-hub/banners/high-power-wifi-module-and-power-line-communications.jpg
-posted: 10/25/2022 05:00 PM
+posted: 25/10/2022 05:00 PM
 ---
 
 # Build Your Own LoRaWAN Audio Notifier

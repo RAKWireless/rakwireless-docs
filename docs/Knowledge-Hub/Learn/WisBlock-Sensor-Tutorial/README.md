@@ -9,7 +9,7 @@ header:
   title: WisBlock Sensor Tutorial
   caption: by <b>Bernd Giesecke</b>
   img: /assets/images/knowledge-hub/banners/wisblock-sensor-tutorial.jpg
-posted: 10/20/2020 08:00 AM
+posted: 20/10/2020 08:00 AM
 author:
   name: Bernd Giesecke
   about: Electronics Engineer, 23 years experience in industrial and automotive HW and SW R&D. Supporting Arduino open source community since 6 years.

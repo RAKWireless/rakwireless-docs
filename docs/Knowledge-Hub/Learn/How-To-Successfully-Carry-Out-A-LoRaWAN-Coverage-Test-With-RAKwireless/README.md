@@ -8,7 +8,7 @@ header:
   title: How To Successfully Carry Out A LoRaWAN Coverage Test With RAKwireless
   caption: by <b>Sam Domingo</b>
   img: /assets/images/knowledge-hub/banners/how-to-successfully-carry-out-a-lorawan-coverage-test-with-rakwireless.jpg
-posted: 08/02/2019 10:30 AM
+posted: 02/08/2019 10:30 AM
 author:
   name: Sam Domingo
   about: Sam is the technical and marketing content writer for RAKwireless. Her passion for writing that manifested in her playwriting and poetry now flows into her in-depth coverage of the IoT community.

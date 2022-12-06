@@ -8,7 +8,7 @@ header:
   title: LoRaWAN vs. the world of IoT!
   caption: by <b>Vladislav Yordanov</b>
   img: /assets/images/knowledge-hub/banners/lorawan-vs-the-world-of-iot.jpg
-posted: 11/01/2019 10:30 AM
+posted: 01/11/2019 10:30 AM
 author:
   name: Vladislav Yordanov
   about: CCO of RAKwireless, Co-founder and CEO of IoT4Green. I believe technology can be the solution to most issues human kind is facing.

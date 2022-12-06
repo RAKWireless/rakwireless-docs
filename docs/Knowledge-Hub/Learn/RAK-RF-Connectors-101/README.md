@@ -9,7 +9,7 @@ header:
   title: RAK Antenna RF Connectors 101
   caption: by <b>Denitsa Prodanova</b>
   img: /assets/images/knowledge-hub/banners/rak5005-O-baseboard-installation-guide.jpg
-posted: 04/16/2021 9:43 AM
+posted: 16/04/2021 9:43 AM
 author:
   name: Denitsa Prodanova
   about: Denitsa is a Technical Graphics and Documentation Editor at RAKwireless. She is passionate about the arts and believes technology and art go hand in hand.

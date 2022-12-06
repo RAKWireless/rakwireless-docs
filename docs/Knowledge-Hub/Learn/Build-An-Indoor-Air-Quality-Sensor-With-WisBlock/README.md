@@ -14,7 +14,7 @@ header:
   title: Build an Indoor Air Quality Monitor with WisBlock
   caption: by <b>Bernd Giesecke</b>
   img: /assets/images/knowledge-hub/banners/high-power-wifi-module-and-power-line-communications.jpg
-posted: 10/14/2022 08:00 AM
+posted: 14/10/2022 08:00 AM
 author:
   name: Bernd Giesecke
   about: Electronics Engineer, 23 years experience in industrial and automotive HW and SW R&D. Supporting Arduino open source community since 6 years.

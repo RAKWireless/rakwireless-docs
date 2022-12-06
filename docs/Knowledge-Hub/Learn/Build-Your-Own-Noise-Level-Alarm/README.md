@@ -15,7 +15,7 @@ header:
   title: Build Your Own Noise Level Alarm
   caption: by <b>Christopher Méndez</b>
   img: /assets/images/knowledge-hub/banners/high-power-wifi-module-and-power-line-communications.jpg
-posted: 10/21/2022 05:00 PM
+posted: 21/10/2022 05:00 PM
 ---
 
 # Build Your Own Noise Level Alarm

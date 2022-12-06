@@ -9,7 +9,7 @@ header:
   title: Installation of Board Support Package in Arduino IDE
   caption: by <b>Bernd Giesecke</b>
   img: /assets/images/knowledge-hub/banners/bsp-in-arduino-ide.jpg
-posted: 08/14/2020 10:21 AM
+posted: 14/08/2020 10:21 AM
 author:
   name: Bernd Giesecke
   about: Electronics Engineer, 23 years experience in industrial and automotive HW and SW R&D. Supporting Arduino open source community since 6 years.

@@ -5,11 +5,17 @@ rak_desc: This document walks through the details on the steps on how to configu
 tags:
   - Deployment-Guide
   - WisGate
+  - Amazon Web Services
+  - AWS
+  - RAK7249
+  - Ubuntu
+  - MQTT
+  - Chirpstack
 header:
   title: Amazon Web Services
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/amazon-web-service.jpg
-posted: 08/31/2020 3:59 PM
+posted: 31/08/2020 3:59 PM
 ---
 
 # Amazon Web Services

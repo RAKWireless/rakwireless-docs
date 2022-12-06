@@ -9,7 +9,7 @@ header:
   title: Quick Start Guide for Raspberry Pi and RAK LPWAN Concentrators
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/general-banner.jpg
-posted: 06/17/2022 2:29 PM
+posted: 17/06/2022 2:29 PM
 ---
 
 # Quick Start Guide for Raspberry Pi and RAK LPWAN Concentrators

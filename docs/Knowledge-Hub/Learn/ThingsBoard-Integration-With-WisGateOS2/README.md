@@ -13,7 +13,7 @@ header:
   title: ThingsBoard Configuration with MQTT/HTTP Integrations via WisGateOS2
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/developer-gateway-firmware-setup.jpg
-posted: 12/02/2022 5:30 PM
+posted: 02/12/2022 5:30 PM
 ---
 
 

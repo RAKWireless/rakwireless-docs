@@ -13,7 +13,7 @@ header:
   title: ThingsBoard Configuration with MQTT/HTTP Integrations via WisGateOS
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/high-power-wifi-module-and-power-line-communications.jpg
-posted: 12/02/2022 7:30 PM
+posted: 02/12/2022 7:30 PM
 ---
 
 # ThingsBoard Configuration with MQTT/HTTP Integrations via WisGateOS

@@ -8,7 +8,7 @@ header:
   title: How LoRa Can Help You Save The Battery Life of Your IoT Device
   caption: by <b>Sam Domingo</b>
   img: /assets/images/knowledge-hub/banners/how-lora-can-help-you-save-the-battery-life-of-your-iot-device.jpg
-posted: 08/01/2019 10:30 AM
+posted: 01/08/2019 10:30 AM
 author:
   name: Sam Domingo
   about: Sam is the technical and marketing content writer for RAKwireless. Her passion for writing that manifested in her playwriting and poetry now flows into her in-depth coverage of the IoT community.

@@ -1377,19 +1377,16 @@ export default {
     img: '/assets/images/accessories/rp025-4800500/1000M-PoE-Injector.png',
     store: 'https://store.rakwireless.com/products/1000m-poe-injector-rp025-4800500yg-098-001?utm_source=1000M-PoEInjector&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-
   '/Product-Categories/Accessories/905000-905001/': {
     label: '858~878MHz 8dBi Fiber Glass Antenna',
     img: '/assets/images/accessories/905000-905001/antenna_view.png',
     store: 'https://store.rakwireless.com/products/fiber-glass-antenna-1?utm_source=8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-
   '/Product-Categories/Accessories/Solar-Panel-Kit-for-Battery-Plus/': {
     label: 'Solar Panel Kit for Battery Plus',
     img: '/assets/images/accessories/solar-panel-kit-for-battery-plus/solar-panel-kit-for-battery-plus-overview.png',
-    store: 'https://store.rakwireless.com'
+    store: 'https://store.rakwireless.com/products/rak-battery-plus-rak9155?utm_source=RAK9155&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-
   '/Product-Categories/Accessories/RAK9105P/': {
     label: 'RAK9105P PoE Power Convertor',
     img: '/assets/images/accessories/rak9105p/rak9105p.png',

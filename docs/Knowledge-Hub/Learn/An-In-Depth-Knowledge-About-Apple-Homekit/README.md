@@ -4,11 +4,15 @@ rak_img: /assets/images/knowledge-hub/tutorials/an-in-depth-knowledge-about-appl
 rak_desc: An in-depth discussion in the mechanism and protocol used by the Apple HomeKit
 tags:
   - Tutorial
+  - Apple HomeKit
+  - HomeKit Accessory Protocol
+  - HAP
+  - Siri
 header:
   title: An In-Depth Knowledge about Apple HomeKit
   caption: by <b>Ken Yu</b>
   img: /assets/images/knowledge-hub/banners/an-in-depth-knowledge-about-apple-homekit.jpg
-posted: 03/27/2017 10:30 AM
+posted: 27/03/2017 10:30 AM
 author:
   name: Ken Yu
   about: Founder and CEO of RAKwireless. Making Things at Rakwireless with The RAKstars
