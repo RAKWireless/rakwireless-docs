@@ -228,7 +228,7 @@ git clone https://github.com/RAKWireless/ChirpStack_on_Ubuntu
 3. After the cloning is complete, open the newly created folder with the command:
 
 ```sh
-cd ChirpStack_on_ubuntu
+cd ChirpStack_on_Ubuntu
 ```
 
 4. Run the installation script:

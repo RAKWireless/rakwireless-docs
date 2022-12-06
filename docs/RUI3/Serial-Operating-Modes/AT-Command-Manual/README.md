@@ -2959,9 +2959,9 @@ This command sets numbers corresponding to active regions.
 
 | Command           | Input Parameter     | Return Value                                                                                                                                                     | Return Code                                |
 | ----------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| `AT+BAND?`        | -                   | `AT+BAND`: get or set the active region<br>(0 = EU433, 1 = CN470, 2 = RU864, 3 = IN865, 4 = EU868,<br>5 = US915, 6 = AU915, 7 = KR920, 8 = AS923-1, 9 = AS923-2) | OK                                         |
-| `AT+BAND=?`       | -                   | 0,1,2,3,4,5,6,7,8,9                                                                                                                                              | OK                                         |
-| `AT+BAND=<Input>` | 0,1,2,3,4,5,6,7,8,9 | -                                                                                                                                                                | OK <br>  AT_PARAM_ERROR <br> AT_BUSY_ERROR |
+| `AT+BAND?`        | -                   | `AT+BAND`: get or set the active region<br>(0 = EU433, 1 = CN470, 2 = RU864, 3 = IN865, 4 = EU868,<br>5 = US915, 6 = AU915, 7 = KR920, 8 = AS923-1, 9 = AS923-2, 10 = AS923-3, 11 = AS923-4) | OK                                         |
+| `AT+BAND=?`       | -                   | 0,1,2,3,4,5,6,7,8,9,10,11                                                                                                                                              | OK                                         |
+| `AT+BAND=<Input>` | 0,1,2,3,4,5,6,7,8,9,10,11 | -                                                                                                                                                                | OK <br>  AT_PARAM_ERROR <br> AT_BUSY_ERROR |
 
 **Example:**
 ```

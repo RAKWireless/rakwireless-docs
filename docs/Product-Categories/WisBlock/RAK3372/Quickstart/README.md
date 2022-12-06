@@ -27,7 +27,7 @@ Before going through each step in the installation guide of the RAK3372 WisBlock
 
 #### Hardware
 
-- [RAK3372 WisBlock Core](https://store.rakwireless.com)
+- [RAK3372 WisBlock Core](https://store.rakwireless.com/products/wisblock-core-module-rak3372?utm_source=RAK3372&utm_medium=Document&utm_campaign=BuyFromStore)
 - Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - USB Cable
 - [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)

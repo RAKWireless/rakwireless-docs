@@ -154,7 +154,10 @@ enum _RAK_LORA_BAND
 | RAK_REGION_US915 | US902 ~ 928 |
 | RAK_REGION_AU915 | AU915 ~ 928 |
 | RAK_REGION_KR920 | KR920 ~ 923 |
-| RAK_REGION_AS923 | AS923       |
+| RAK_REGION_AS923-1 | AS923-1       |
+| RAK_REGION_AS923-2 | AS923-2       |
+| RAK_REGION_AS923-3 | AS923-3       |
+| RAK_REGION_AS923-4 | AS923-4       |
 
 ```c
 typedef enum
@@ -167,7 +170,10 @@ typedef enum
   RAK_REGION_US915 = 5, ///< US902 ~ 928
   RAK_REGION_AU915 = 6, ///< AU915 ~ 928
   RAK_REGION_KR920 = 7, ///< KR920 ~ 923
-  RAK_REGION_AS923 = 8, ///< AS923
+  RAK_REGION_AS923-1 = 8, ///< AS923-1
+  RAK_REGION_AS923-2 = 9, ///< AS923-2
+  RAK_REGION_AS923-3 = 10, ///< AS923-3
+  RAK_REGION_AS923-4 = 11, ///< AS923-4
 } RAK_LORA_BAND;"
 
 ```
@@ -3661,7 +3667,10 @@ RAKLorawan::band
 5: US915
 6: AU915
 7: KR920
-8: AS923
+8: AS923-1
+9: AS923-2
+10: AS923-3
+11: AS923-4
 
 :::
 
@@ -3679,7 +3688,7 @@ api.lorawan.band.get();
 | **Function**      | `int32_t get()`                                                                                                                                                       |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Returns**       | the active region                                                                                                                                                     |
-| **Return Values** | **0** - EU433  <br>  **1** - CN470 <br> **2** - RU864 <br> **3**	- IN865 <br> **4** - EU868 <br> **5**	- US915 <br> **6** - AU915 <br> **7** - KR920 <br> **8** - AS923 |
+| **Return Values** | **0** - EU433  <br>  **1** - CN470 <br> **2** - RU864 <br> **3**	- IN865 <br> **4** - EU868 <br> **5**	- US915 <br> **6** - AU915 <br> **7** - KR920 <br> **8** - AS923-1 <br> **9** - AS923-2 <br> **10** - AS923-3 <br> **11** - AS923-4|
 
 
 ::: details Click to View Example
@@ -4675,7 +4684,7 @@ This API is used to register a callback function, so that application can be not
 
 ```c
 api.lorawan.registerPRecvCallback(service_lora_p2p_recv_cb_type callback);	
-```
+```band
 
 
 | **Function**      | `bool registerPRecvCallback(service_lora_p2p_recv_cb_type callback)`                                |

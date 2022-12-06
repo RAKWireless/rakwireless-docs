@@ -77,7 +77,7 @@ It is used to mount the WisBlock Unify Enclosures onto the pole vertically.
 It is used to mount the large-sized WisBlock Unify Enclosure onto the pole Horizontally.
 
 - [Mounting guide for large-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO180x130x60/Installation/#pole-mount-horizontal-mark-b)
-- [Buy from Store](https://store.rakwireless.com/collections/wisblock-enclosure)
+- [Buy from Store](https://store.rakwireless.com/collections/wisblock-enclosure?utm_source=wisblock-enclosure&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
   src="/assets/images/wisblock/rakbox-accessories/datasheet/mark-B.png"
@@ -188,7 +188,7 @@ It is used to mount the WisBlock Unify Enclosures onto a belt.
 - [Mounting guide for small-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO100x75x38/Installation/#belt-clip-mount-mark-e)
 - [Mounting guide for medium-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO150x100x45/Installation/#belt-clip-mount-mark-e)
 - [Mounting guide for large-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO180x130x60/Installation/#belt-clip-mount-mark-e)
-- [Buy from Store](https://store.rakwireless.com/collections/wisblock-enclosure)
+- [Buy from Store](https://store.rakwireless.com/collections/wisblock-enclosure?utm_source=wisblock-enclosure&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
   src="/assets/images/wisblock/rakbox-accessories/datasheet/mark-E.png"
@@ -235,7 +235,7 @@ It is used to mount the WisBlock Unify Enclosures onto the DIN rail.
 - [Mounting guide for small-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO100x75x38/Installation/#din-mount-mark-f)
 - [Mounting guide for medium-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO150x100x45/Installation/#din-mount-mark-f)
 - [Mounting guide for large-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO180x130x60/Installation/#din-mount-mark-f)
-- [Buy from Store](https://store.rakwireless.com/collections/wisblock-enclosure)
+- [Buy from Store](https://store.rakwireless.com/collections/wisblock-enclosure?utm_source=wisblock-enclosure&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
   src="/assets/images/wisblock/rakbox-accessories/datasheet/mark-F.png"
@@ -282,7 +282,7 @@ It is used to mount the WisBlock Unify Enclosures onto a metallic surface.
 - [Mounting guide for small-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO100x75x38/Installation/#magnet-mount-mark-g)
 - [Mounting guide for medium-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO150x100x45/Installation/#magnet-mount-mark-g)
 - [Mounting guide for large-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO180x130x60/Installation/#magnet-mount-mark-g)
-- [Buy from Store](https://store.rakwireless.com/collections/wisblock-enclosure)
+- [Buy from Store](https://store.rakwireless.com/collections/wisblock-enclosure?utm_source=wisblock-enclosure&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
   src="/assets/images/wisblock/rakbox-accessories/datasheet/mark-G.png"
@@ -329,7 +329,7 @@ It is used to mount the WisBlock Unify Enclosures onto a thread belt.
 - [Mounting guide for small-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO100x75x38/Installation/#belt-loop-mount-mark-h)
 - [Mounting guide for medium-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO150x100x45/Installation/#belt-loop-mount-mark-h)
 - [Mounting guide for large-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO180x130x60/Installation/#belt-loop-mount-mark-h)
-- [Buy from Store](https://store.rakwireless.com/collections/wisblock-enclosure)
+- [Buy from Store](https://store.rakwireless.com/collections/wisblock-enclosure?utm_source=wisblock-enclosure&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
   src="/assets/images/wisblock/rakbox-accessories/datasheet/mark-H.png"
@@ -376,7 +376,7 @@ It is used to add labels on the WisBlock Unify Enclosures.
 - [Mounting guide for small-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO100x75x38/Installation/#label-mount-mark-i)
 - [Mounting guide for medium-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO150x100x45/Installation/#label-mount-mark-i)
 - [Mounting guide for large-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO180x130x60/Installation/#label-mount-mark-i)
-- [Buy from Store](https://store.rakwireless.com/collections/wisblock-enclosure)
+- [Buy from Store](https://store.rakwireless.com/collections/wisblock-enclosure?utm_source=wisblock-enclosure&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
   src="/assets/images/wisblock/rakbox-accessories/datasheet/mark-I.png"
@@ -423,7 +423,7 @@ It is used to mount the WisBlock Unify Enclosures onto a hook.
 - [Mounting guide for small-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO100x75x38/Installation/#hook-loop-mount-mark-j)
 - [Mounting guide for medium-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO150x100x45/Installation/#hook-loop-mount-mark-j)
 - [Mounting guide for large-sized WisBlock Unify Enclosure](/Product-Categories/WisBlock/RAKBox-UO180x130x60/Installation/#hook-loop-mount-mark-j)
-- [Buy from Store](https://store.rakwireless.com/collections/wisblock-enclosure)
+- [Buy from Store](https://store.rakwireless.com/collections/wisblock-enclosure?utm_source=wisblock-enclosure&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
   src="/assets/images/wisblock/rakbox-accessories/datasheet/mark-J.png"

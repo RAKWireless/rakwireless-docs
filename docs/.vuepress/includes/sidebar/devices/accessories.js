@@ -569,7 +569,7 @@ module.exports = {
   '/Product-Categories/Accessories/RAK9734/': [
     {
       title: 'Overview',
-      path: '/Product-Categories/Accessories/RAK9734/Overview/', 
+      path: '/Product-Categories/Accessories/RAK9734/Overview/',
       collapsable: false,
       nested: true,
       download: true,
@@ -587,7 +587,7 @@ module.exports = {
   '/Product-Categories/Accessories/RAK9732/': [
     {
       title: 'Overview',
-      path: '/Product-Categories/Accessories/RAK9732/Overview/', 
+      path: '/Product-Categories/Accessories/RAK9732/Overview/',
       collapsable: false,
       nested: true,
       download: true,
@@ -600,12 +600,12 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
-    }  
+    }
   ],
   '/Product-Categories/Accessories/RAKARG18/': [
     {
       title: 'Overview',
-      path: '/Product-Categories/Accessories/RAKARG18/Overview/', 
+      path: '/Product-Categories/Accessories/RAKARG18/Overview/',
       collapsable: false,
       nested: true,
       download: true,
@@ -618,7 +618,7 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
-    }  
+    }
   ],
   '/Product-Categories/Accessories/RAKARG19/': [
     {
@@ -658,9 +658,9 @@ module.exports = {
     }
   ],
   '/Product-Categories/Accessories/Helical-Base-Magnetic-Antenna/': [
-    { 
+    {
       title: 'Overview',
-      path: '/Product-Categories/Accessories/Helical-Base-Magnetic-Antenna/Overview/', 
+      path: '/Product-Categories/Accessories/Helical-Base-Magnetic-Antenna/Overview/',
       collapsable: false,
       nested: true,
       download: true,
@@ -673,13 +673,13 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
-    }  
+    }
   ],
 
   '/Product-Categories/Accessories/RAKARG14/': [
     {
       title: 'Overview',
-      path: '/Product-Categories/Accessories/RAKARG14/Overview/', 
+      path: '/Product-Categories/Accessories/RAKARG14/Overview/',
       collapsable: false,
       nested: true,
       download: true,
@@ -692,13 +692,13 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
-    }  
+    }
   ],
 
   '/Product-Categories/Accessories/RAKARG13/': [
     {
       title: 'Overview',
-      path: '/Product-Categories/Accessories/RAKARG13/Overview/', 
+      path: '/Product-Categories/Accessories/RAKARG13/Overview/',
       collapsable: false,
       nested: true,
       download: true,
@@ -711,13 +711,13 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
-    }  
+    }
   ],
 
   '/Product-Categories/Accessories/RAKARG16/': [
     {
       title: 'Overview',
-      path: '/Product-Categories/Accessories/RAKARG16/Overview/', 
+      path: '/Product-Categories/Accessories/RAKARG16/Overview/',
       collapsable: false,
       nested: true,
       download: true,
@@ -730,7 +730,26 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
-    }  
+    },
+  ],
+
+    '/Product-Categories/Accessories/Helium-Outdoor-Small-Cell-Mounting-Kit/': [
+      {
+        title: 'Overview',
+        path: '/Product-Categories/Accessories/Helium-Outdoor-Small-Cell-Mounting-Kit/Overview/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      },
+      {
+        title: 'Installation Guide',
+        path: '/Product-Categories/Accessories/Helium-Outdoor-Small-Cell-Mounting-Kit/Installation-Guide/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      }
   ],
 
 
@@ -754,6 +773,7 @@ module.exports = {
       sidebarDepth: 4
     }
   ],
+
 
   //Power Supplies
   '/Product-Categories/Accessories/PoE-Injector/': [
