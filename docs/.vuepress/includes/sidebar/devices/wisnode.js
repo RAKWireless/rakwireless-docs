@@ -221,6 +221,27 @@ module.exports = {
       sidebarDepth: 4
     }
   ],
+  '/Product-Categories/WisNode/RAK7432-RAK7434/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisNode/RAK7432-RAK7434/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4,
+    children: [
+      ['/Product-Categories/WisNode/RAK7432-RAK7434/Datasheet-RAK7432/', 'RAK7432'],
+      ['/Product-Categories/WisNode/RAK7432-RAK7434/Datasheet-RAK7434/', 'RAK7434']
+    ]
+  }
+ ],
+
   '/Product-Categories/WisNode/RAK2171/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisNode/RAK2171/Overview/',

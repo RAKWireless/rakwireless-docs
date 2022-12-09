@@ -151,8 +151,11 @@ export default {
     store: 'https://store.rakwireless.com/products/rak7431?utm_source=RAK7431WisNodeBridge&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
-
-
+  '/Product-Categories/WisNode/RAK7432-RAK7434/': {
+    label: 'RAK7432/RAK7434 WisNode Bridge Analog',
+    img: '/assets/images/wisnode/rak7432-rak7434/overview/rak7432-rak7434_buy.png',
+    store: 'https://store.rakwireless.com/products/wisnode-bridge-rak7432-rak7434?utm_source=RAK7432-RAK7434&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
 
   //WisTrio
 
@@ -435,7 +438,6 @@ export default {
     img: '/assets/images/wisgate/rak7391/overview/RAK7391.png',
     store: 'https://store.rakwireless.com/products/wisgate-connect-base-kit-rak7391?utm_source=WisGateRAK7391&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-
 
 
   // WisBlock
@@ -1371,16 +1373,11 @@ export default {
     store: 'https://store.rakwireless.com/products/1000m-poe-injector-rp025-4800500yg-098-001?utm_source=1000M-PoEInjector&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
-
-
-
-
   '/Product-Categories/Accessories/905000-905001/': {
     label: '858~878MHz 8dBi Fiber Glass Antenna',
     img: '/assets/images/accessories/905000-905001/antenna_view.png',
     store: 'https://store.rakwireless.com/products/fiber-glass-antenna-1?utm_source=8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-
 
   '/Product-Categories/Accessories/Solar-Panel-Kit-for-Battery-Plus/': {
     label: 'Solar Panel Kit for Battery Plus',
@@ -1398,6 +1395,5 @@ export default {
     img: '/assets/images/accessories/rak9105u/rak9105u.png',
     store: 'https://store.rakwireless.com'
   },
-
 
 }
