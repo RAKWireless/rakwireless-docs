@@ -16,6 +16,10 @@ tags:
 
 The **RAK10701-H Field Mapper for Helium Network** is a ready-to-use device for evaluating the coverage of the Helium Network. It is a plug-and-play device with its included DC (data credits), which allows you to use it immediately without needing extra configurations. It has a GNSS receiver for checking its current location and a touchscreen LCD for the user interface. It shows the number of hotspots the device can reach and other parameters like approximate distance, RSSI, and SNR.
 
+:::tip 📝 NOTE
+The device has to be charged first if it comes fresh from shipping. There is a possibility that the battery was drained during its transport.
+:::
+
 ### Features
 
 - Supports LoRaWAN regions: RU864, IN865, EU868, US915, AU915, KR920, AS923-1/2/3/4

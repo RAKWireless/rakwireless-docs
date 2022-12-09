@@ -22,9 +22,6 @@ certifications:
 
 # RAK3172 WisDuo LPWAN Module Datasheet
 
-
-
-
 ## Overview
 
 ### Description
@@ -96,7 +93,7 @@ A dedicated internal SPI interface called **SUBGHZSPI** is used to communicate w
 | ----------- | ------------- | -------- | ------------------------------------------------------------------------------------------------- |
 | 1           | PA3/UART2_RX  | I        | Reserved - UART2/LPUART1 Interface (AT Commands and FW Update)                                    |
 | 2           | PA2/UART2_TX  | O        | Reserved - UART2/LPUART1 Interface (AT Commands and FW Update)                                    |
-| 3           | PA15/ADC5     | I/O      | GPIO and ADC                                                                                      |
+| 3           | PA15/PIN_A4   | I/O      | GPIO and ADC                                                                                      |
 | 4           | PB6/UART1_TX  | O        | UART1 Interface                                                                                   |
 | 5           | PB7/UART1_RX  | I        | UART1 Interface                                                                                   |
 | 6           | PA1           | I/O      | GPIO only                                                                                         |
@@ -118,16 +115,14 @@ A dedicated internal SPI interface called **SUBGHZSPI** is used to communicate w
 | 22          | RST           |          | MCU Reset (NRST)                                                                                  |
 | 23          | GND           |          | Ground connections                                                                                |
 | 24          | VDD           |          | VDD - Voltage Supply                                                                              |
-| 25          | PA10/ADC4     | I/O      | GPIO and ADC                                                                                      |
-| 26          | PB2/ADC3      | I/O      | GPIO and ADC                                                                                      |
+| 25          | PA10/PIN_A3   | I/O      | GPIO and ADC                                                                                      |
+| 26          | PB2/PIN_A2    | I/O      | GPIO and ADC                                                                                      |
 | 27          | PB12          | I/O      | 10&nbsp;kΩ internally **pulled-up for high freq** variant or **pulled-down for low freq** variant |
 | 28          | GND           |          | Ground connections                                                                                |
 | 29          | PA0           | I/O      | GPIO only                                                                                         |
 | 30          | PB5           | I/O      | GPIO only                                                                                         |
-| 31          | PB4/ADC2      | I/O      | GPIO and ADC                                                                                      |
-| 32          | PB3/ADC1      | I/O      | GPIO and ADC                                                                                      |
-
-
+| 31          | PB4/PIN_A1    | I/O      | GPIO and ADC                                                                                      |
+| 32          | PB3/PIN_A0    | I/O      | GPIO and ADC                                                                                      |
 
 #### RF Characteristics
 
@@ -172,9 +167,7 @@ The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Fr
 |                     | CN470     | -                    | 1.69                 | -       | μA   |
 
 :::tip 📝 NOTE:
-
 For the reference application schematic of RAK3172 with minimum components requirements, refer to the [RAK3272S Breakout Board Datasheet.](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Datasheet/#schematic-diagram)
-
 :::
 
 #### Mechanical Characteristics

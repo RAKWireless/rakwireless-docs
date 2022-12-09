@@ -11,8 +11,6 @@ rak_img: /assets/rakwireless/RAK-favicon-blue.png
 <rk-head img="/assets/rakwireless/RAK-favicon-blue.png" img-height="150px" alt="https://docs.rakwireless.com/assets/rakwireless/RAK-favicon-blue.png">
 <h2 class="q-mt-none q-mb-sm" style="font-size: 3.5rem">Welcome, RAKstar!</h2>
 
-<p class="description"> RAK Documentation Center </p>
-
 </rk-head>
 
 ### RAK Documentation Center

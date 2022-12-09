@@ -18,6 +18,11 @@ To use the WisToolBox Mobile app, make sure you meet the three requirements:
 2. A mobile with WisToolBox mobile app installed, which is available both in iOS App Store and Android Google Play Store;
 3. An active internet connection the first time after the WisToolBox app starts. The application will update the latest configuration.
 
+:::tip 📝 NOTE
+Compatible versions of iOS and Android:
+- iOS 15 and newer 
+- Android 11 and newer 
+:::
 
 ## Hardware Compatibility
 

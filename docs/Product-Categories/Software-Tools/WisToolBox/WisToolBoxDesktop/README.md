@@ -18,12 +18,10 @@ To use the WisToolBox Desktop, make sure you meet the two requirements:
 2. An active internet connection the first time after the WisToolBox app starts. The application will update the latest configuration.
 
 The WisToolBox Desktop is available in Windows, macOS, and Linux. 
-
-<!--- 
+ 
   * [Windows Store](https://www.microsoft.com/store/productId/9P6691TTW3J5)
   * [Linux Snapcraft](https://snapcraft.io/wistoolbox)
-  * MAC App Store
---->
+  * [MAC App Store](https://apps.apple.com/ua/app/wistoolbox-for-desktop/id1593008976)
 
 For direct downloads of installers:
   * [Windows](https://downloads.rakwireless.com/WisToolBox/WisToolBox_windows.exe)
@@ -31,6 +29,11 @@ For direct downloads of installers:
   * [macOS](https://downloads.rakwireless.com/WisToolBox/WisToolBox_macOS.zip)
 
 :::tip 📝 NOTE
+Operating system version compatibility:
+- Windows 10 and newer 
+- MacOS Big Sur and newer
+- Linux 20.04 and newer 
+
 For Linux users, [extra configuration](/Product-Categories/Software-Tools/WisToolBox/WisToolBoxDesktop/#linux-installation-configuration) is needed to enable automatic port detection of RUI3 enabled RAK module.
 :::
 
@@ -300,7 +303,7 @@ Before sending the network access command, make sure that the device is already 
 - **`Last received data`**: View the last data received by the device.
 - **`Send data`**: Configure the port number and send data to send uplink data to the gateway.
 
-click **"SEND"** after completion.
+Click **"SEND"** after completion.
 
 <rk-img
   src="/assets/images/software-tools/wistoolbox/desktop/wtoolbox-14.png"

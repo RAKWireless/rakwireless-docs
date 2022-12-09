@@ -65,7 +65,7 @@ The block diagram in **Figure 2** shows the internal architecture and external i
 
 ### Hardware
 
-The hardware specification is categorized into six parts. It discusses the interfacing, pinouts, and their corresponding functions and diagrams. It also covers the electrical, mechanical, and environmental parameters that include the tabular data of the functionalities and standard values of the RAK19001 WisBlock Dual IO Base Board.
+The hardware specification is categorized into six (6) parts. It discusses the interfacing, pinouts, and their corresponding functions and diagrams. It also covers the electrical, mechanical, and environmental parameters that include the tabular data of the functionalities and standard values of the RAK19001 WisBlock Dual IO Base Board.
 
 #### Interfaces
 
@@ -245,7 +245,7 @@ As for the following table, it shows the definition of each pin of the WisBlock 
 |       7        |     USB+     |   I/O    |                                        USB D+                                        |
 |       8        |     USB–     |   I/O    |                                        USB D–                                        |
 |       9        |     VBUS     |    S     |                                       USB VBUS                                       |
-|       10       |     SW1      |   I/O    |                                    Not connected                                     |
+|       10       |     SW1      |   I/O    |                          General Purpose, User Defined Button                         |
 |       11       |     TXD0     |   I/O    |                                 MCU UART0 TX signal                                  |
 |       12       |     RXD0     |   I/O    |                                 MCU UART0 RX signal                                  |
 |       13       |    RESET     |    I     |                     Connected to the reset switch, for MCU reset                     |

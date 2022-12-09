@@ -7,6 +7,8 @@ tags:
   - RAK5010
 rak_desc: Provides comprehensive information about your RAK5010 WisTrio NB-IoT Tracker Pro to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wistrio/rak5010/quickstart/1.overview/RAK5010_home.png
+certifications:
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK5010/Certification/RAK5010_ROHS_Report.pdf]
 ---
 
 # RAK5010 WisTrio NB-IoT Tracker Pro Datasheet
@@ -567,7 +569,7 @@ A suitable Li-Ion battery should have the following parameters:
 |     Capacity      | As required |
 | Discharge Current |  2&nbsp;A   |
 
-A 5&nbsp;V solar panel can be connected to the board via the P1 connector to serve the purpose of charging the battery. 
+A 5&nbsp;V solar panel can be connected to the board via the P1 connector to serve the purpose of charging the battery.
 
 
 :::warning ⚠️ WARNING
@@ -648,7 +650,7 @@ The table below lists the operation and storage temperature requirements:
 
 ### Software
 
-Download the latest firmware version of the RAK5010 WisTrio provided in the download link below. 
+Download the latest firmware version of the RAK5010 WisTrio provided in the download link below.
 
 :::warning ⚠️ WARNING
 RAK5010 and RAK5010-M have the same PCB, but their firmware is different and not interchangeable.
@@ -668,3 +670,8 @@ RAK5010 and RAK5010-M have the same PCB, but their firmware is different and not
 | RAK5010         | ✓                            | ✓                        | ✓                                            | ✓                                 | ✓                            | ✓                         |
 | RAK5010-M       | ✓                            | ✓                        | ✓                                            | ✓                                 |                              |                           |
 
+
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

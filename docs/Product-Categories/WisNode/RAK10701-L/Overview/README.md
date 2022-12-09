@@ -16,6 +16,10 @@ Thank you for choosing **RAK10701-L Field Tester for LoRaWAN** in your awesome I
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 
+:::tip 📝 NOTE
+The device has to be charged first if it comes fresh from shipping. There is a possibility that the battery was drained during its transport.
+:::
+
 ## Product Description
 
 The **RAK10701-L Field Tester for LoRaWAN** is a ready-to-use WisNode for evaluating deployed LoRaWAN network, which comes in a hard case and two different antenna types. It has a GNSS and a touchscreen LCD for the user interface, which displays the number of gateways the device can reach and other parameters like approximate distance, RSSI, and SNR. It is powered by a rechargeable battery and can be charged via USB Type-C interface.
