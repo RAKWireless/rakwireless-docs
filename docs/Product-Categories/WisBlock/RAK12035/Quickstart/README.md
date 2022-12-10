@@ -37,7 +37,7 @@ Before going through each and every step on using the RAK12035 WisBlock module, 
 
 ### Hardware Setup
 
-RAK12035 is a separate soil moisture sensor probe module based on the ATTINY441-SSU microcontroller from Atmel that can be connected to the [RAK12023 module](http://localhost:8080/Product-Categories/WisBlock/RAK12023/Overview/). It uses capacitive sensing to measure moisture.
+RAK12035 is a separate soil moisture sensor probe module based on the ATTINY441-SSU microcontroller from Atmel that can be connected to the [RAK12023 module](/Product-Categories/WisBlock/RAK12023/Overview/). It uses capacitive sensing to measure moisture.
 
 Because you need to bury the RAK12035 sensor probe into the soil, the electronics on the PCB of the soil sensor, together with the cable, are covered by a shrinkable tube for additional protection from getting wet.
 

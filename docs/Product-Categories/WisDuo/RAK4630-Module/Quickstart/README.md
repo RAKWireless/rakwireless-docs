@@ -669,7 +669,7 @@ RAK4630 module can be configured using AT commands via the UART1 interface. You 
 
 :::tip 📝 NOTE:
 
-You can also send AT commands via direct USB connection to the module, as shown in [hardware setup](http://localhost:8080/Product-Categories/WisDuo/rak4630-module/quickstart/#hardware-setup).
+You can also send AT commands via direct USB connection to the module, as shown in [hardware setup](/Product-Categories/WisDuo/rak4630-module/quickstart/#hardware-setup).
 
 :::
 
