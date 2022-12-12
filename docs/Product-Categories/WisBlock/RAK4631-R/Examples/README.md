@@ -225,7 +225,7 @@ RAK4631-R supports the following regions:
 
 - You can also modify other parameters in the code. But to run the example code successfully, you will only need to update these three parameters. 
 
-After configuring the important LoRaWAN parameters in code, you need to ensure that you selected the **RAK4631-R WisBlock Core** and connected to the right **COM port**. If you do not see **RAK4631-R** in your board selection, you must check the [Software Initial Guide](http://localhost:8080/Product-Categories/WisBlock/RAK4631-R/Quickstart/#rak4631-r-board-support-package-in-arduino-ide) from the quick start guide.
+After configuring the important LoRaWAN parameters in code, you need to ensure that you selected the **RAK4631-R WisBlock Core** and connected to the right **COM port**. If you do not see **RAK4631-R** in your board selection, you must check the [Software Initial Guide](/Product-Categories/WisBlock/RAK4631-R/Quickstart/#rak4631-r-board-support-package-in-arduino-ide) from the quick start guide.
 
 <rk-img
   src="/assets/images/wisblock/rak4631-r/examples/select_board.png"
