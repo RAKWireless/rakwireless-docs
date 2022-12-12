@@ -16,16 +16,16 @@ module.exports = {
               nested: false,
               collapsable: true,
               children : [
-                {
-                  title : 'November 24',
-                  path : '/Release-Notes/RUI/2022/November-24',
-                  collapsable: false,
-                },
-                {
-                  title : 'September 2',
-                  path : '/Release-Notes/RUI/2022/September-2',
-                  collapsable: false,
-                },
+                // {
+                //   title : 'November 24',
+                //   path : '/Release-Notes/RUI/2022/November-24',
+                //   collapsable: false,
+                // },
+                // {
+                //   title : 'September 2',
+                //   path : '/Release-Notes/RUI/2022/September-2',
+                //   collapsable: false,
+                // },
                 {
                   title : 'July 15',
                   path : '/Release-Notes/RUI/2022/July-15',

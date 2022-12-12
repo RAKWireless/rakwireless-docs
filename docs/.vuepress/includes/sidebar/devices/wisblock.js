@@ -1,5 +1,22 @@
 module.exports = {
 
+  '/Product-Categories/WisBlock/RAK14014/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisBlock/RAK14014/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisBlock/RAK14014/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+  ],
   '/Product-Categories/WisBlock/RAK13801/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisBlock/RAK13801/Overview/',
@@ -11,6 +28,23 @@ module.exports = {
   {
     title: 'Datasheet',
     path: '/Product-Categories/WisBlock/RAK13801/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+  ],
+  '/Product-Categories/WisBlock/RAK13011/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisBlock/RAK13011/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisBlock/RAK13011/Datasheet/',
     collapsable: false,
     nested: true,
     download: true,
@@ -41,6 +75,25 @@ module.exports = {
     download: true,
     sidebarDepth: 4
   }
+
+  ],
+  '/Product-Categories/WisBlock/RAK5814/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisBlock/RAK5814/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisBlock/RAK5814/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+
   ],
   '/Product-Categories/WisBlock/RAK12037/': [{
     title: 'Product Overview',
@@ -86,6 +139,23 @@ module.exports = {
   {
     title: 'Datasheet',
     path: '/Product-Categories/WisBlock/RAK12027/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+  ],
+  '/Product-Categories/WisBlock/RAK12022/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisBlock/RAK12022/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisBlock/RAK12022/Datasheet/',
     collapsable: false,
     nested: true,
     download: true,
@@ -2369,8 +2439,6 @@ module.exports = {
     sidebarDepth: 4
   }
   ],
-
-
   '/Product-Categories/WisBlock/RAK14006/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisBlock/RAK14006/Overview/',
@@ -2396,8 +2464,23 @@ module.exports = {
     sidebarDepth: 4
   }
   ],
-
-
+  '/Product-Categories/WisBlock/RAK15004/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisBlock/RAK15004/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisBlock/RAK15004/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+],
   '/Product-Categories/WisBlock/RAK14007/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisBlock/RAK14007/Overview/',
@@ -2415,6 +2498,23 @@ module.exports = {
     sidebarDepth: 4
   }
   ],
+  '/Product-Categories/WisBlock/RAK12052/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisBlock/RAK12052/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisBlock/RAK12052/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+],
   '/Product-Categories/WisBlock/RAK12011/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisBlock/RAK12011/Overview/',
@@ -2440,7 +2540,6 @@ module.exports = {
     sidebarDepth: 4
   }
   ],
-
   '/Product-Categories/WisBlock/RAK4631-R/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisBlock/RAK4631-R/Overview/',

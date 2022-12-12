@@ -386,6 +386,11 @@ export default {
 
   // WisBlock
 
+  '/Product-Categories/WisBlock/RAK14014/': {
+    label: 'RAK14014 WisBlock TFT LCD Display Module',
+    img: '/assets/images/wisblock/rak14014/overview/RAK14014.png',
+    store: 'https://store.rakwireless.com/products/240x320-pixel-full-color-tft-display-with-touch-screen-rak14014?utm_source=RAK14014&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
   '/Product-Categories/WisBlock/RAK13801/': {
     label: 'RAK13801 WisBlock UWB Module',
     img: '/assets/images/wisblock/rak13801/overview/RAK13801_buy.png',
@@ -396,15 +401,30 @@ export default {
     img: '/assets/images/wisblock/rak12037/overview/RAK12037_buy.png',
     store: 'https://store.rakwireless.com/products/co2-sensor-sensirion-scd30-rak12037?utm_source=RAK12037&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisBlock/RAK12052/': {
+    label: 'RAK12052 WisBlock Thermal IR Array Module',
+    img: '/assets/images/wisblock/rak12052/overview/RAK12052.png',
+    store: 'https://store.rakwireless.com/products/32x24-pixel-mlx90640-ir-array-module-rak12052?utm_source=RAK12052&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
   '/Product-Categories/WisBlock/RAK13010/': {
     label: 'RAK13010 WisBlock SDI-12 Module',
     img: '/assets/images/wisblock/rak13010/overview/RAK13010_buy.png',
     store: 'https://store.rakwireless.com/products/sdi-12-interface-rak13010?utm_source=RAK13010&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisBlock/RAK13011/': {
+    label: 'RAK13011 WisBlock Magnetic Switch Sensor Module ',
+    img: '/assets/images/wisblock/rak13011/overview/RAK13011.png',
+    store: 'https://store.rakwireless.com/products/wisblock-magnetic-switch-rak13011?utm_source=RAK13011&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
   '/Product-Categories/WisBlock/RAK12027/': {
     label: 'RAK12027 WisBlock Earthquake Sensor Module',
     img: '/assets/images/wisblock/rak12027/overview/RAK12027_buy.jpg',
     store: 'https://store.rakwireless.com/products/earthquake-sensor-omron-d7s-rak12027?utm_source=RAK12027&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK12022/': {
+    label: 'RAK12022 WisBlock PT100 Module',
+    img: '/assets/images/wisblock/rak12022/overview/RAK12022.png',
+    store: 'https://store.rakwireless.com/products/max31865-pt100-temperature-sensor-module-rak12022?utm_source=RAK12022&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAK1905/': {
     label: 'RAK1905 WisBlock 9-Axis Module',
@@ -643,6 +663,11 @@ export default {
     label: 'RAK5811 WisBlock 0-5V Interface Module',
     img: '/assets/images/wisblock/rak5811/overview/RAK5811_buy.png',
     store: 'https://store.rakwireless.com/products/rak5811-0-5v-analog-interface?utm_source=RAK5811&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK5814/': {
+    label: 'RAK5814 WisBlock Crypto Module',
+    img: '/assets/images/wisblock/rak5814/overview/RAK5814.png',
+    store: 'https://store.rakwireless.com/products/encryption-module-microchip-atecc608a-rak5814?utm_source=RAK5184&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAK18000/': {
     label: 'RAK18000 PDM Stereo Microphone Module',
@@ -1018,6 +1043,12 @@ export default {
     img: '/assets/images/wisblock/rak10700/overview/overview.png',
     store: 'https://store.rakwireless.com/products/lpwan-tracker-solution-kit?utm_source=RAK10700&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisBlock/RAK15004/': {
+    label: 'RAK15004 WisBlock FRAM Module',
+    img: '/assets/images/wisblock/rak15004/overview/RAK15004.png',
+    store: 'https://store.rakwireless.com/products/fujitsu-mb85rc512t-512-kbit-fram-memory-module-rak15004?utm_source=RAK15004&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+
 
 
   // WisBlock Audio
