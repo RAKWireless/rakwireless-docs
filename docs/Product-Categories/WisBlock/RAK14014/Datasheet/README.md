@@ -116,7 +116,7 @@ The following specifications applied for: VSS=0&nbsp;V, VCI=3.3&nbsp;V, TOPR =25
 
 #### Schematic Diagram
 
-**Figure 5** shows the display connector schematic.
+**Figure 6** shows the display connector schematic.
 
 <rk-img
   src="/assets/images/wisblock/rak14014/datasheet/display-conn.png"
@@ -124,7 +124,7 @@ The following specifications applied for: VSS=0&nbsp;V, VCI=3.3&nbsp;V, TOPR =25
   caption="Display Connector Schematic diagram"
 />
 
-**Figure 6** shows the touch connector schematic.
+**Figure 7** shows the touch connector schematic.
 
 <rk-img
   src="/assets/images/wisblock/rak14014/datasheet/touch-conn.png"
@@ -133,7 +133,7 @@ The following specifications applied for: VSS=0&nbsp;V, VCI=3.3&nbsp;V, TOPR =25
 />
 
 The RAK14014 supports 2*3 thin-film buttons. If an FPC cable is connected, you can choose the
-touch-free version to control the screen by pressing buttons. **Figure 7** below shows button
+touch-free version to control the screen by pressing buttons. **Figure 8** below shows button
 schematic.
 
 <rk-img

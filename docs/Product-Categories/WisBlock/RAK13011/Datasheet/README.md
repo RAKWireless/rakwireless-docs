@@ -61,7 +61,7 @@ The hardware specification is categorized into four (4) parts. It discusses the 
 
 #### Pin Definition
 
-**Switch**, **3V3**, and **GND** of RAK13011 are connected to the WisSensor connector. It is shown in the figure below.
+**Switch**, **3V3**, and **GND** of RAK13011 are connected to the WisSensor connector, as shown in **Figure 3**.
 
 <rk-img
   src="/assets/images/wisblock/rak13011/datasheet/RAK13011_pinout.png"
