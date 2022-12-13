@@ -29,7 +29,7 @@ The Probe IO could not be used as a standalone product. You need the [RAK2560 Wi
 - Support one 4-20&nbsp;mA device
 - Support two DO (dry contact)
 - Support one DI
-- Supply 5&nbsp;V / VIN / 24&nbsp;V (1&nbsp;A) power
+- Supply 5&nbsp;V / VIN / 24&nbsp;V (0.5&nbsp;A) power
 - One-wire protocol
 - Waterproof (IP67-rated for the probe body)
 

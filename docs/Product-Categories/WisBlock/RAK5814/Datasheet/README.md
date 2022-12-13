@@ -68,7 +68,7 @@ The RAK5814 WisBlock crypto module comprises a standard WisSensor connector. The
 
 <rk-img
   src="/assets/images/wisblock/rak5814/datasheet/RAK5814_pinout.png"
-  width="40%"
+  width="60%"
   caption="RAK5814 WisBlock Crypto Module Pinout"
 />
 

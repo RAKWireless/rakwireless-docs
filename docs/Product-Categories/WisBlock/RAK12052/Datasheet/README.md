@@ -22,7 +22,7 @@ next: false
 
 ### Description
 
-**RAK12052** is a 32&nbsp;x&nbsp;23 thermal IR array module based on MLX90640 from Melexis. MLX90640 is a fully-calibrated 32&nbsp;x&nbsp;4 pixels thermal IR array in an industry-standard 4-lead TO39 package with a digital interface. The MLX90640 contains 768&nbsp;FIR pixels. An ambient sensor is integrated to measure the ambient temperature of the chip, and a supply sensor to measure the VDD. The outputs of all sensors IR, Ta, and VDD are stored in internal RAM and accessible through I2C. It is comparable in having a thermal camera (or Predator's vision) but in compact but useable low resolution.
+**RAK12052** is a 32&nbsp;x&nbsp;24 thermal IR array module based on MLX90640 from Melexis. MLX90640 is a fully-calibrated 32&nbsp;x&nbsp;24 pixels thermal IR array in an industry-standard 4-lead TO39 package with a digital interface. The MLX90640 contains 768&nbsp;FIR pixels. An ambient sensor is integrated to measure the ambient temperature of the chip, and a supply sensor to measure the VDD. The outputs of all sensors IR, Ta, and VDD are stored in internal RAM and accessible through I2C. It is comparable in having a thermal camera (or Predator's vision) but in compact but useable low resolution.
 
 ### Applications
 
@@ -81,7 +81,7 @@ The RAK12052 WisBlock 32&nbsp;x&nbsp;24 IR module comprises a standard WisBlock 
 
 <rk-img
   src="/assets/images/wisblock/rak12052/datasheet/RAK12052_pinout.png"
-  width="40%"
+  width="60%"
   caption="RAK12052 WisBlock Thermal IR Array Module Pinout"
 />
 

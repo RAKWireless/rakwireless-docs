@@ -17,7 +17,7 @@ WisNode is a category of products built by the RAK company for the IoT Industry.
 
 <rk-head img="/assets/rakwireless/product-categories/WisNode-Track-&-Map.svg">
 
-Under this sub-category are the nodes with onboard GPS that use the power of IoT to relay data coordinates. More so, there is a variety of options as far as onboard sensors go. This makes it possible to construct a set of deployment scenarios where GPS is triggered on some metrics such as movement and temperature change.
+Under this sub-category are the nodes with onboard GPS or GNSS, which utilize the power of IoT to relay data coordinates. More so, there is a variety of options as far as onboard sensors go. This makes it possible to construct a set of deployment scenarios where GPS/GNSS triggers on some metrics, such as movement and temperature change.
 
 
 </rk-head>

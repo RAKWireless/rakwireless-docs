@@ -80,7 +80,7 @@ The RAK12022 WisBlock PT100 Module comprises a standard WisBlock IO slot connect
 
 <rk-img
   src="/assets/images/wisblock/rak12022/datasheet/RAK12022_pinout.png"
-  width="50%"
+  width="70%"
   caption="RAK12022 WisBlock PT100 Module Pinout"
 />
 

@@ -31,10 +31,10 @@ You can enable Binary mode by sending `AT+APM` if you are in AT Command Mode and
 
 The frame structure of Binary mode protocol is in the following format: 
 
-| Start Delimiter | Length    | Frame Type | Flag   | Payload | Checksum |
-| --------------- | --------- | ---------- | ------ | ------- | -------- |
-| 0x7E            | MSB First |            |        |         |          |
-| 1 Byte          | 2 Bytes   | 1 Byte     | 1 Byte | N Bytes | 1 Byte   |
+| Start Delimiter | Length       | Frame Type  | Flag        | Payload      | Checksum    |
+| --------------- | ------------ | ----------- | ----------- | ------------ | ----------- |
+| 0x7E            | MSB First    |             |             |              |             |
+| 1&nbsp;Byte     | 2&nbsp;Bytes | 1&nbsp;Byte | 1&nbsp;Byte | N&nbsp;Bytes | 1&nbsp;Byte |
 
 
 **Start Delimiter**	
@@ -43,7 +43,7 @@ The frame structure of Binary mode protocol is in the following format:
 
 **Length**
 
-- 2 bytes value, in the unit of byte, which indicates the length of the frame payload.
+- 2&nbsp;bytes value, in the unit of byte, which indicates the length of the frame payload.
 
 **Frame Type** 
 
@@ -68,9 +68,9 @@ The frame structure of Binary mode protocol is in the following format:
 **Checksum**
 - Checksum is the last byte of the frame and helps test data integrity, which simply counts the number of set bits, and then only saves the lowest byte to this field.
 - Only the following 3 values are calculated by checksum:
-    - Frame Type: 1 byte
-    - Flag: 1 byte
-    - Payload: N bytes
+    - Frame Type: 1&nbsp;byte
+    - Flag: 1&nbsp;byte
+    - Payload: N&nbsp;bytes
 - If the Checksum value is not as expected, silently drop this frame.
 
 ### Built-in Echo Handler
@@ -86,14 +86,14 @@ If an API mode device receives a frame with frame type 0x01, the payload data wi
 The expected frame payload of the built-in AT command handler is in the following format:
 
 
-| Length  | Flag   | ATCMD ID | Payload |
-| ------- | ------ | -------- | ------- |
-| 2 Bytes | 1 Byte | 1 Byte   | N Bytes |
+| Length       | Flag        | ATCMD ID    | Payload      |
+| ------------ | ----------- | ----------- | ------------ |
+| 2&nbsp;Bytes | 1&nbsp;Byte | 1&nbsp;Byte | N&nbsp;Bytes |
 
 
 **Length**
 
-- 2 bytes value, in the unit of byte, which indicates the length of the frame payload.
+- 2&nbsp;bytes value, in the unit of byte, which indicates the length of the frame payload.
 
 **Flag**
 
@@ -119,8 +119,12 @@ The expected frame payload of the built-in AT command handler is in the followin
 
 ### ATCMD ID
 
-It is composed of 1 byte ID which represents which AT command should be selected. For CLI version 1.6.0, the following is the ATCMD ID mapping table:
+It is composed of 1&nbsp;byte ID which represents which AT command should be selected. For CLI version 1.6.0, the following is the ATCMD ID mapping table:
 
+::: tip 📝 NOTE
+The ATCMD ID in the table are in decimal format. It must be converted to hexadicemal if applied to the binary command format.
+<br>For example, `AT+HWMODEL` will use `0x0D` instead of 13.
+:::
 
 | ATCMD ID | AT Command Name | Description                                     |
 | -------- | --------------- | ----------------------------------------------- |
@@ -627,6 +631,30 @@ This command is not supported by Binary mode because both `AT+LOCK` and `AT+PWOR
 ### AT+PWORD
 
 This command is not supported by Binary mode because both `AT+LOCK` and `AT+PWORD` are designed for AT Command Mode to prevent the device from human input, so they have no effect when the operating mode is API Mode.
+
+### AT+ATM
+
+Description: Switching to AT Command mode
+
+The command `AT+ATM` is the generic command used on RUI3 devices to switch back to the default AT command mode. You can input this command directly to the Serial Port without doing binary command format. You can also check the documentation on [switching serial operating modes](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/#switching-serial-operating-mode) used for RUI3 devices.
+
+If switching will be done via Binary Mode format, 
+
+The following table explains how to build a frame to execute the `AT+ATM` AT command:
+
+| Frame Field     | Offset  | Value | Description                        |
+| --------------- | ------- | ----- | ---------------------------------- |
+| START DELIMITER | 0       | 0x7E  |                                    |
+| Length          | 1 (MSB) | 0x00  | Binary mode payload length         |
+|                 | 2 (LSB) | 0x04  | Binary mode payload length         |
+| Frame Type      | 3       | 0x01  | AT command                         |
+| FLAG            | 4       | 0x00  | Request                            |
+| Payload         |         |       |                                    |
+| `Length`        | 5       | 0x00  | AT command protocol payload length |
+|                 | 6       | 0x00  | AT command protocol payload length |
+| `Flag`          | 7       | 0x02  | Execute                            |
+| `ATCMD ID`      | 8       | 0x48  | `AT+ATM`                           |
+| Checksum        | 9       | 0x04  |                                    |
 
 ### AT+BAUD
 

@@ -65,7 +65,7 @@ The hardware specification is categorized into four (4) parts. It discusses the 
 
 <rk-img
   src="/assets/images/wisblock/rak13011/datasheet/RAK13011_pinout.png"
-  width="30%"
+  width="70%"
   caption="RAK13011 WisBlock Magnetic Switch Sensor Module Pinout"
 />
 

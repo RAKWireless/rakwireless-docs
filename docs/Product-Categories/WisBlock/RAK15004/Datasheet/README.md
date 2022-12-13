@@ -77,9 +77,11 @@ The hardware specification is categorized into five (5) parts. It shows the chip
 
 The RAK15004 WisBlock FRAM Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK15004 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
+<br>
+
 <rk-img
   src="/assets/images/wisblock/rak15004/datasheet/rak15004-pinout.png"
-  width="35%"
+  width="60%"
   caption="RAK15004 pinout diagram"
 />
 

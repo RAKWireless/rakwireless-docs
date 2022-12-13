@@ -17,17 +17,15 @@ During AT mode, the RUI3 powered device is compatible to WisToolBox.
 
 [WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview/) is a software tool that setups the LoRa parameters and configurations of the RUI3-powered device and also manages firmware updates.
 
-### Devices that supports RUI3 AT Commands
+### RUI3-Supported RAK Modules
 
-| RAK Modules                                                                                        |
-| -------------------------------------------------------------------------------------------------- |
-| [RAK4630](/Product-Categories/WisDuo/RAK4630-Module/Overview)                                      |
-| [RAK4631-R](/Product-Categories/WisBlock/RAK4631-R/Overview)                                       |
-| [RAK3172](/Product-Categories/WisDuo/RAK3172-Module/Overview)                                      |
-| [RAK3272S](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Overview)                            |
-| [RAK3372 / RAK3172 Evaluation Board](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Overview) |
-| [RAK3172-SiP](/Product-Categories/WisDuo/RAK3172-SiP/Overview)                                     |
-| [RAK3272-SiP](/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/Overview)                      |
+  - [RAK4630](/Product-Categories/WisDuo/RAK4630-Module/Overview)
+  - [RAK4631-R](/Product-Categories/WisBlock/RAK4631-R/Overview)
+  - [RAK3172](/Product-Categories/WisDuo/RAK3172-Module/Overview)
+  - [RAK3272S](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Overview)
+  - [RAK3372 / RAK3172 Evaluation Board](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Overview)
+  - [RAK3172-SiP](/Product-Categories/WisDuo/RAK3172-SiP/Overview)
+  - [RAK3272-SiP](/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/Overview)
 
 ### RUI3 AT Command Format
 
@@ -614,9 +612,7 @@ This command provides a way to switch to AT command mode.
 | `AT+ATM`  | -               | -                                   | OK          |
 
 :::tip 📝 NOTE
-
-AT Command mode is the default setting of RUI3 devices. For direct use of RUI3 API, you need to use API mode to be set via `AT+APM`.
-
+AT Command mode is the default serial port setting of RUI3 devices.
 :::
 
 [Back](#content)
@@ -636,8 +632,8 @@ This command provides a way to switch to API mode.
 :::tip 📝 NOTE
 This command is used to change `AT+ATM` to `AT+APM` mode.
 If it has been changed, use the recover commands to roll back to `AT+ATM` mode.
-**Windows OS & Commands Prompt:** `copy recovery.bin COM4 /B`
-**Linux OS & Terminal:** `echo -e '\x7E\x00\x04\x01\x00\x00\x00\x02\x48\x04' > /dev/ttyACM0`
+<br>**Windows OS & Commands Prompt:** `copy recovery.bin COM4 /B`
+<br>**Linux OS & Terminal:** `echo -e '\x7E\x00\x04\x01\x00\x00\x00\x02\x48\x04' > /dev/ttyACM0`
 :::
 
 [Back](#content)
@@ -653,11 +649,11 @@ Description: Device EUI
 
 This command is used to access the unique end-device ID.
 
-| Command             | Input Parameter | Return Value                                             | Return Code            |
-| ------------------- | --------------- | -------------------------------------------------------- | ---------------------- |
-| `AT+DEVEUI?`        | -               | `AT+DEVEUI`:  get or set the device EUI (8 bytes in hex) | OK                     |
-| `AT+DEVEUI=?`       | -               | < 8 hex >                                                | OK                     |
-| `AT+DEVEUI=<Input>` | < 8 hex >       | -                                                        | OK <br> AT_PARAM_ERROR |
+| Command             | Input Parameter | Return Value                                                  | Return Code            |
+| ------------------- | --------------- | ------------------------------------------------------------- | ---------------------- |
+| `AT+DEVEUI?`        | -               | `AT+DEVEUI`:  get or set the device EUI (8&nbsp;bytes in hex) | OK                     |
+| `AT+DEVEUI=?`       | -               | < 8&nbsp;hex >                                                | OK                     |
+| `AT+DEVEUI=<Input>` | < 8&nbsp;hex >  | -                                                             | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 
@@ -684,11 +680,11 @@ Description: Application identifier
 
 This command is used to access the unique application identifier.
 
-| Command             | Input Parameter | Return Value                                                 | Return Code            |
-| ------------------- | --------------- | ------------------------------------------------------------ | ---------------------- |
-| `AT+APPEUI?`        | -               | `AT+APPEUI`: get or set the application EUI (8 bytes in hex) | OK                     |
-| `AT+APPEUI=?`       | -               | < 8 hex >                                                    | OK                     |
-| `AT+APPEUI=<Input>` | < 8 hex >       | -                                                            | OK <br> AT_PARAM_ERROR |
+| Command             | Input Parameter | Return Value                                                      | Return Code            |
+| ------------------- | --------------- | ----------------------------------------------------------------- | ---------------------- |
+| `AT+APPEUI?`        | -               | `AT+APPEUI`: get or set the application EUI (8&nbsp;bytes in hex) | OK                     |
+| `AT+APPEUI=?`       | -               | < 8&nbsp;hex >                                                    | OK                     |
+| `AT+APPEUI=<Input>` | < 8&nbsp;hex >  | -                                                                 | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 
@@ -719,11 +715,11 @@ Description: Application Key
 This command is used to access the application key.
 
 
-| Command             | Input Parameter | Return Value                                                  | Return Code            |
-| ------------------- | --------------- | ------------------------------------------------------------- | ---------------------- |
-| `AT+APPKEY?`        | -               | `AT+APPKEY`: get or set the application key (16 bytes in hex) | OK                     |
-| `AT+APPKEY=?`       | -               | < 8 hex >                                                     | OK                     |
-| `AT+APPKEY=<Input>` | < 16 hex >      | -                                                             | OK <br> AT_PARAM_ERROR |
+| Command             | Input Parameter | Return Value                                                       | Return Code            |
+| ------------------- | --------------- | ------------------------------------------------------------------ | ---------------------- |
+| `AT+APPKEY?`        | -               | `AT+APPKEY`: get or set the application key (16&nbsp;bytes in hex) | OK                     |
+| `AT+APPKEY=?`       | -               | < 8&nbsp;hex >                                                     | OK                     |
+| `AT+APPKEY=<Input>` | < 16&nbsp;hex > | -                                                                  | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 
@@ -741,7 +737,7 @@ OK
 
 :::tip 📝 NOTE:
  - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
- - Keys are MSB first. `<Input>`: 32 digit length, character 0-9, a-f, A-F only, representing 16 hexadecimal numbers.
+ - Keys are MSB first. `<Input>`: 32 digit length, character 0-9, a-f, A-F only, representing 16&nbsp;hexadecimal numbers.
 :::
 
 [Back](#content)
@@ -754,11 +750,11 @@ Description: Device Address
 
 This command is used to access the device address.
 
-| Command              | Input Parameter | Return Value                                                  | Return Code            |
-| -------------------- | --------------- | ------------------------------------------------------------- | ---------------------- |
-| `AT+DEVADDR?`        | -               | ` AT+DEVADDR`: get or set the device address (4 bytes in hex) | OK                     |
-| `AT+DEVADDR=?`       | -               | < 4 hex >                                                     | OK                     |
-| `AT+DEVADDR=<Input>` | < 4 hex >       | -                                                             | OK <br> AT_PARAM_ERROR |
+| Command              | Input Parameter | Return Value                                                       | Return Code            |
+| -------------------- | --------------- | ------------------------------------------------------------------ | ---------------------- |
+| `AT+DEVADDR?`        | -               | ` AT+DEVADDR`: get or set the device address (4&nbsp;bytes in hex) | OK                     |
+| `AT+DEVADDR=?`       | -               | < 4&nbsp;hex >                                                     | OK                     |
+| `AT+DEVADDR=<Input>` | < 4&nbsp;hex >  | -                                                                  | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 
@@ -788,7 +784,7 @@ This command is used to set the application session key.
 | Command              | Input Parameter | Return Value                                          | Return Code            |
 | -------------------- | --------------- | ----------------------------------------------------- | ---------------------- |
 | `AT+APPSKEY?`        | -               | `AT+APPSKEY`: get or set the application session key. | OK                     |
-| `AT+APPSKEY=<Input>` | < 16 hex >      |                                                       | OK <br> AT_PARAM_ERROR |
+| `AT+APPSKEY=<Input>` | < 16&nbsp;hex > |                                                       | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 
@@ -802,7 +798,7 @@ AT_PARAM_ ERROR
 
 :::tip 📝 NOTE:
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
-- Keys are MSB first. `<Input>`: 32 digit length, character 0-9, a-f, A-F only, representing 16 hexadecimal numbers.
+- Keys are MSB first. `<Input>`: 32 digit length, character 0-9, a-f, A-F only, representing 16&nbsp;hexadecimal numbers.
 
 :::
 
@@ -815,11 +811,11 @@ Description: Network Session Key
 
 This command is used to get or set the network session key.
 
-| Command              | Input Parameter | Return Value                                                       | Return Code            |
-| -------------------- | --------------- | ------------------------------------------------------------------ | ---------------------- |
-| `AT+NWKSKEY?`        | -               | `AT+NWKSKEY`: get or set the network session key (16 bytes in hex) | OK                     |
-| `AT+NWKSKEY=?`       | -               | `AT+NWKSKEY`=< 16 hex >                                            | OK                     |
-| `AT+NWKSKEY=<Input>` | < 16 hex >      | -                                                                  | OK <br> AT_PARAM_ERROR |
+| Command              | Input Parameter | Return Value                                                            | Return Code            |
+| -------------------- | --------------- | ----------------------------------------------------------------------- | ---------------------- |
+| `AT+NWKSKEY?`        | -               | `AT+NWKSKEY`: get or set the network session key (16&nbsp;bytes in hex) | OK                     |
+| `AT+NWKSKEY=?`       | -               | `AT+NWKSKEY`=< 16&nbsp;hex >                                            | OK                     |
+| `AT+NWKSKEY=<Input>` | < 16&nbsp;hex > | -                                                                       | OK <br> AT_PARAM_ERROR |
 
 
 **Example:**
@@ -834,7 +830,7 @@ OK
 
 :::tip 📝 NOTE:
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
-- Keys are MSB first. `<Input>`: 32 digit length, character 0-9, a-f, A-F only, representing 16 hexadecimal numbers.
+- Keys are MSB first. `<Input>`: 32 digit length, character 0-9, a-f, A-F only, representing 16&nbsp;hexadecimal numbers.
 :::
 
 [Back](#content)
@@ -847,10 +843,10 @@ Description: Network ID (NetID)
 
 This command is used to access the network identifier (NetID) of 3 octets.
 
-| Command      | Input Parameter | Return Value                                                   | Return Code |
-| ------------ | --------------- | -------------------------------------------------------------- | ----------- |
-| `AT+NETID?`  | -               | `AT+NETID`: get or set the network ID (NetID) (3 bytes in hex) | OK          |
-| `AT+NETID=?` | -               | `AT+NETID`=< 3 hex >                                           | OK          |
+| Command      | Input Parameter | Return Value                                                        | Return Code |
+| ------------ | --------------- | ------------------------------------------------------------------- | ----------- |
+| `AT+NETID?`  | -               | `AT+NETID`: get or set the network ID (NetID) (3&nbsp;bytes in hex) | OK          |
+| `AT+NETID=?` | -               | `AT+NETID`=< 3&nbsp;hex >                                           | OK          |
 
 **Example:**
 
@@ -956,9 +952,7 @@ This command is used to join a LoRaWAN network.
 
 :::tip 📝 NOTE:
 This is an asynchronous command. `OK` means that the device is joining. The completion of the JOIN can be verified with the `AT+NJS=?` command.
-
-Parameters of `AT+JOIN` command are optional. You can use `AT+JOIN` directly to join the LoRaWAN network. If no parameters are configured, the device will use the default values.
-
+<br>Parameters of `AT+JOIN` command are optional. You can use `AT+JOIN` directly to join the LoRaWAN network. If no parameters are configured, the device will use the default values.
 :::
 
 **Examples**:
@@ -979,9 +973,7 @@ OK
 +EVT:JOIN FAILED
 ```
 :::tip 📝 NOTE:
-
 If joining fails, make sure your device is within the coverage of the gateway. Also, ensure that the RUI3 LoRaWAN device is in LoRaWAN mode via `AT+NWM=1`. The region is correct via `AT+BAND`, and the EUIs and keys are correct.
-
 :::
 
 
@@ -1015,7 +1007,6 @@ OK
 AT_PARAM_ERROR
 ```
 :::tip 📝 NOTE:
-
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
 - In this case, the default value is **1.**
 :::
@@ -1344,7 +1335,7 @@ OK
 
 Description: Join delay on RX window 1
 
-This command is used to access the join delay on RX window 1. The range of acceptable values is 1 to 14 seconds. Whenever `AT+JN1DL` is updated, `AT+JN2DL` is also updated automatically.
+This command is used to access the join delay on RX window 1. The range of acceptable values is 1 to 14&nbsp;seconds. Whenever `AT+JN1DL` is updated, `AT+JN2DL` is also updated automatically.
 
 | Command            | Input Parameter | Return Value                                                                                          | Return Code                               |
 | ------------------ | --------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------- |
@@ -1376,7 +1367,7 @@ OK
 
 Description: Join delay on RX window 2
 
-This command is used to access the join delay on RX window 2. The range of acceptable values is 2 to 15 seconds. Whenever `AT+JN2DL` is updated, `AT+JN1DL` is also updated automatically.
+This command is used to access the join delay on RX window 2. The range of acceptable values is 2 to 15&nbsp;seconds. Whenever `AT+JN2DL` is updated, `AT+JN1DL` is also updated automatically.
 
 | Command            | Input Parameter | Return Value                                                                                   | Return Code                               |
 | ------------------ | --------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------- |
@@ -1439,7 +1430,7 @@ AT_PARAM_ERROR
 
 Description: Delay of the received window 1
 
-This command is used to access the delay of the received window 1. The range of acceptable values is 1 to 14 seconds. Whenever `AT+RX1DL` is updated, `AT+RX2DL` is also updated automatically.
+This command is used to access the delay of the received window 1. The range of acceptable values is 1 to 14&nbsp;seconds. Whenever `AT+RX1DL` is updated, `AT+RX2DL` is also updated automatically.
 
 | Command            | Input Parameter | Return Value                                                                                | Return Code                               |
 | ------------------ | --------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------- |
@@ -1472,7 +1463,7 @@ OK
 
 Description: Delay of the received window 2
 
-This command is used to access the delay of the received window 2. The range of acceptable values is 2 to 15 seconds. Whenever `AT+RX2DL` is updated, `AT+RX1DL` is also updated automatically.
+This command is used to access the delay of the received window 2. The range of acceptable values is 2 to 15&nbsp;seconds. Whenever `AT+RX2DL` is updated, `AT+RX1DL` is also updated automatically.
 
 | Command      | Input Parameter | Return Value                                                                         | Return Code      |
 | ------------ | --------------- | ------------------------------------------------------------------------------------ | ---------------- |
@@ -2684,7 +2675,7 @@ In this case, the single-channel mode is only for US915, AU915, CN470.
 </table>
 
 :::tip 📝 NOTE
-According to LoRaWAN Regional Parameters v1.0.3revA, the first 64 channels are numbered 0 to 63, starting at 902.&nbsp;3&nbsp;MHz and increments linearly by 200&nbsp;kHz to 914.9MHz. The next eight (8) channels numbered 64 to 71 are starting at 903.0&nbsp;MHz and increments linearly by 1.6&nbsp;MHz to 914.2&nbsp;MHz
+According to LoRaWAN Regional Parameters v1.0.3revA, the first 64 channels are numbered 0 to 63, starting at 902.&nbsp;3&nbsp;MHz and increments linearly by 200&nbsp;kHz to 914.9&nbsp;MHz. The next eight (8) channels numbered 64 to 71 are starting at 903.0&nbsp;MHz and increments linearly by 1.6&nbsp;MHz to 914.2&nbsp;MHz
 :::
 
 **AU915 Uplink Channels Frequency & Attached List**
@@ -3060,10 +3051,8 @@ OK
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
 -  In this case, the default frequency value is **868000000**, and the frequency range is from **150000000 to 960000000.**
 - RUI3 LoRa/LoRaWAN devices are divided into two variants - Low Frequency and High Frequency. Examples are the RAK4630(L) and RAK4630(H) devices.
-
     - Low frequency variant is compatible only to 150000000 - 600000000.
     - High frequency variant is compatible only to 600000000 - 960000000.
-
 :::
 
 [Back](#content)
@@ -3338,9 +3327,9 @@ This command Key will encrypt the data being sent and received.
 
 | Command             | Input Parameter | Return Value                                                           | Return Code |
 | ------------------- | --------------- | ---------------------------------------------------------------------- | ----------- |
-| `AT+ENCKEY?`        | -               | `AT+ENCRY`: get or set the encryption key of P2P mode (8 bytes in hex) | OK          |
-| `AT+ENCKEY=?`       | -               | <8 hex>                                                                | OK          |
-| `AT+ENCKEY=<Input>` | <8 hex>         | -                                                                      | OK          |
+| `AT+ENCKEY?`        | -               | `AT+ENCRY`: get or set the encryption key of P2P mode (8&nbsp;bytes in hex) | OK          |
+| `AT+ENCKEY=?`       | -               | <8&nbsp;hex>                                                                | OK          |
+| `AT+ENCKEY=<Input>` | <8&nbsp;hex>         | -                                                                      | OK          |
 
 **Example:**
 ```
