@@ -3,7 +3,7 @@
     <div class="text-container">
       <h3 class="text-white">Keep Updated! 📧</h3>
       <p class="text-white">
-        Get monthly updates on the certification of our products by subscribing
+        Get monthly updates of our products and tools by subscribing
         to our newsletter!
       </p>
     </div>
@@ -177,8 +177,8 @@ input[type="submit"]:hover {
   .newsletter-container {
     height:240px !important;
   }
-  
-  .form-container { 
+
+  .form-container {
     display: flex;
     align-items: start;
     justify-content: center;
@@ -198,7 +198,7 @@ input[type="submit"]:hover {
     padding-left: 10px;
     border-radius: 10px;
   }
-  
+
   input[type="submit"] {
     margin-left: -80px;
     padding: 0 4px;
@@ -221,7 +221,7 @@ input[type="submit"]:hover {
     grid-template-columns: fit-content(100%);
   }
 
-  .form-container { 
+  .form-container {
     display: flex;
     align-items: center;
     justify-content: center;

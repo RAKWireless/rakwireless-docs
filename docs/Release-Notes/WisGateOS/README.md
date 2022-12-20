@@ -1,4 +1,4 @@
-<rk-head img="/assets/images/release-notes/WisGateOS.png"></rk-head>
+<rk-head img="/assets/images/release-notes/wisgate-os.png"></rk-head>
 
 
 WisGateOS is the operating system running on every WisGate Edge gateway. The interface builds on top of OpenWRT and all gateway products of the RAK72xx line share it. It gives instructions on configuring WAN, the LoRa Packet Forwarder, and MQTT Bridge. It explains how to do system monitoring, update the firmware, and reset the device. Last but not least, it provides information on using the Built-in LoRa Server.
@@ -14,6 +14,7 @@ As of March 2021, all RAK's WisGate Edge gateways are running the new WisGateOS.
 ###### Release Versions
 
 - <b> 2022 </b>
+    - [December 19](/Release-Notes/WisGateOS/2022/December-19/)
     - [July 15](/Release-Notes/WisGateOS/2022/July-15/)
     - [April 21](/Release-Notes/WisGateOS/2022/April-21/)
     - [January](/Release-Notes/WisGateOS/2022/January-22/)

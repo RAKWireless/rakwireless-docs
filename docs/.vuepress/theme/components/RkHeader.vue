@@ -6,7 +6,7 @@
   >
     <q-parallax class="fit">
       <template v-slot:media>
-        <img :src="header.img" id="header-img" />
+        <img :src="header.img" id="header-img" style="left:50%;"/>
       </template>
 
       <template v-slot:content="scope">
