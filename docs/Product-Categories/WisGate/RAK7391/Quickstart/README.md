@@ -180,7 +180,7 @@ Now that you have the eMMC properly mounted, the rest of the procedure is very s
 
 It is recommended to connect the RAK7391 via Ethernet for its first-time setup. The OS operates in DHCP client mode by default so you should be able to connect it to your router via one of the Ethernet ports and simply look up the IP address it gets assigned in your router, or if you have the OLED screen installed you can look it up there too. It will be listed as `rakpios`. Use your favorite SSH tool to log in and get started.
 
-The default RAKPiOS user name is *“rak”*, and the password is *“rakpios”*. At first login, you will be forced to change the default password. For example, if you log in via SSH for the first time, you will have to set a new one by entering the default one and a new one after.
+The default RAKPiOS user name is *“rak”*, and the password is *“changeme”*. At first login, you will be forced to change the default password. For example, if you log in via SSH for the first time, you will have to set a new one by entering the default one and a new one after.
 
 ## Network Connectivity
 

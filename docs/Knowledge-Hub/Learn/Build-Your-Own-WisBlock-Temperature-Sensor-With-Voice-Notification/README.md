@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_8A.png
+rak_img: /assets/images/knowledge-hub/tutorials/build-your-own-temperature-alert-notifier-via-audio/Temperature-Alert.jpg
 rak_desc: This guide provides a step-by-step tutorial on creating a WisBlock Sensor with Voice Notification using WisBlock Audio.
 tags:
   - Tutorial
