@@ -18,12 +18,6 @@ export const categories = [
     desc:"PC and Mobile Application for Device Configuration, Firmware Management, and Sensor Integration."
   },
   {
-    img:"/assets/images/release-notes/wisgate-os.png",
-    path:"/Release-Notes/WisGateOS/",
-    label:"WisGateOS",
-    desc:"WisGate Edge Gateway operating system for configuring WAN, the LoRa Packet Forwarder, and MQTT Bridge",
-  },
-  {
     img:"/assets/images/release-notes/wisgate-os2.png",
     path:"/Release-Notes/WisGateOS2/",
     label:"WisGateOS2",

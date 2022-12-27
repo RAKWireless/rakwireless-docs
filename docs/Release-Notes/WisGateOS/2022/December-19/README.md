@@ -20,9 +20,14 @@ As of March 2021, all RAK's WisGate Edge gateways are running the new WisGateOS.
 
 ##### Added
 
-| No. | Feature                                        |
-| --- | ---------------------------------------------- |
-| 1   | Added WisDM quick link in the WebUI bottom bar |
+| No. | Feature                                        | Reference |
+| --- | ---------------------------------------------- | ----- |
+| 1   | Added WisDM quick link in the WebUI bottom bar | [WisGateOS User Manual](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS/Overview/#gateway-start-up) |
+
+
+![login-page.png](/assets/images/release-notes/wisgateos/login-page.png)
+
+![fleet-management.png](/assets/images/release-notes/wisgateos/fleet-management.png)
 
 ##### Fixed
 
@@ -42,4 +47,6 @@ As of March 2021, all RAK's WisGate Edge gateways are running the new WisGateOS.
 | -                         | The RSSI value of FSK channel data exceeds the expected range                                                                                    |
 | -                         | AS923-1/AS923-2/AS923-3/AS923-4, the Join Accept message carries FSK and STD channels, which does not conform to the Lora protocol specification |
 | -                         | In the end device page, in Built-In Server mode, when the value of the page is set to 0 or a negative number, the page will crash                |
+
+
 

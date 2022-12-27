@@ -245,7 +245,7 @@ As for the following table, it shows the definition of each pin of the WisBlock 
 |       7        |     USB+     |   I/O    |                                        USB D+                                        |
 |       8        |     USB–     |   I/O    |                                        USB D–                                        |
 |       9        |     VBUS     |    S     |                                       USB VBUS                                       |
-|       10       |     SW1      |   I/O    |                          General Purpose, User Defined Button                         |
+|       10       |     SW1      |   I/O    |   User Defined Button (available on RAK4631/RAK4631-R and 11200 WisBlock Cores)      |
 |       11       |     TXD0     |   I/O    |                                 MCU UART0 TX signal                                  |
 |       12       |     RXD0     |   I/O    |                                 MCU UART0 RX signal                                  |
 |       13       |    RESET     |    I     |                     Connected to the reset switch, for MCU reset                     |
@@ -411,7 +411,7 @@ As for the following table, it shows the pin name and description of the WisBloc
 | 7              | USB+         | I/O      | USB D+                                                                                       |
 | 8              | USB–         | I/O      | USB D–                                                                                       |
 | 9              | VBUS         | S        | 5&nbsp;V input for USB                                                                       |
-| 10             | SW1          | I/O      | Switch signal for custom used                                                                |
+| 10             | SW1          | I/O      | User Defined Button (available on RAK4631/RAK4631-R and 11200 WisBlock Cores)                |
 | 11             | TXD0         | I/O      | MCU UART0 TX signal                                                                          |
 | 12             | RXD0         | I/O      | MCU UART0 RX signal                                                                          |
 | 13             | RESET        | I        | Connected to the reset switch, for MCU reset                                                 |

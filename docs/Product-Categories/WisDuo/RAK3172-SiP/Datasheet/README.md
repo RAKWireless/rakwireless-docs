@@ -100,14 +100,14 @@ You can check the pin definitions on the table and illustration, as shown in **F
 | 5           | PC13         | I/O      | GPIO                                                               |
 | 6           | VREF+        |          | Input reference voltage for ADC                                    |
 | 7           | VDDA         |          | External power supply for the analog sections (ADC Converter)      |
-| 8           | PA15         | I/O      | GPIO                                                               |
+| 8           | PA15         | I/O      | GPIO or PIN_A4                                                     |
 | 9           | PB15         | I/O      | GPIO                                                               |
 | 10          | VFBSMPS      |          | DC-DC switching power feedback                                     |
 | 11          | VDDMPS       |          | DC-DC switching power input                                        |
 | 12          | GND          |          | Ground                                                             |
 | 13          | VLXSMPS      |          | DC-DC switching output                                             |
-| 14          | PB3          | I/O      | GPIO or ADC0                                                       |
-| 15          | PB4          | I/O      | GPIO or ADC1                                                       |
+| 14          | PB3          | I/O      | GPIO or PIN_A0                                                     |
+| 15          | PB4          | I/O      | GPIO or PIN_A1                                                     |
 | 16          | PB5          | I/O      | GPIO                                                               |
 | 17          | PB6/UART1_TX | I/O      | GPIO or UART1_TX                                                   |
 | 18          | PB7/UART1_RX | I/O      | GPIO or UART1_RX                                                   |
@@ -150,11 +150,11 @@ You can check the pin definitions on the table and illustration, as shown in **F
 | 55          | VDD          |          | VDD                                                                |
 | 56          | GND          |          | Ground                                                             |
 | 57          | PB1          | I/O      | GPIO                                                               |
-| 58          | PB2          | I/O      | GPIO                                                               |
+| 58          | PB2          | I/O      | GPIO or PIN_A2                                                     |
 | 59          | PB12         | I/O      | GPIO                                                               |
 | 60          | PB13         | I/O      | GPIO                                                               |
 | 61          | PB14         | I/O      | GPIO                                                               |
-| 62          | PA10         | I/O      | GPIO or I2C_SDA                                                    |
+| 62          | PA10         | I/O      | GPIO or PIN_A3 or I2C_SDA                                          |
 | 63          | PA11         | I/O      | GPIO                                                               |
 | 64          | PA12         | I/O      | GPIO                                                               |
 | 65-73       | GND          |          | Ground                                                             |
@@ -172,7 +172,7 @@ The RAK3172-SiP supports the frequency of operation from 863 to 930&nbsp;Mhz.
 | North America | US915     |
 | Australia     | AU915     |
 | Korea         | KR920     |
-| Asia          | AS923     |
+| Asia          | AS923-1/2/3/4 |
 | India         | IN865     |
 | Russia        | RU864     |
 

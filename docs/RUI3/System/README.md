@@ -567,12 +567,16 @@ api.system.alias.set(buf, len)
 | **Parameters** | **buf** - the buffer to set alias name <br> **len** - the length of alias name(<= 16 bytes) |
 | **Returns**    | **TRUE**	for setting alias name successfully <br> **FALSE**	for setting alias name failure  |
 
+::: tip 📝 NOTE
+Then length `len` on setting the alias must be the same on the size of the alias name.
+:::
+
 :::details Click to View Example
 ```c{4}
 void setup()
 {
     Serial.begin(115200);
-    api.system.alias.set("my device",16);
+    api.system.alias.set("my device",9);
     char buf[16];
     Serial.println(api.system.alias.get(buf,16));
     Serial.println(buf);
@@ -601,7 +605,7 @@ api.system.alias.get(buf, len)
 void setup()
 {
     Serial.begin(115200);
-    api.system.alias.set("my device",16);
+    api.system.alias.set("my device",9);
     char buf[16];
     Serial.println(api.system.alias.get(buf,16));
     Serial.println(buf);

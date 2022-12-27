@@ -718,7 +718,7 @@ This command is used to access the application key.
 | Command             | Input Parameter | Return Value                                                       | Return Code            |
 | ------------------- | --------------- | ------------------------------------------------------------------ | ---------------------- |
 | `AT+APPKEY?`        | -               | `AT+APPKEY`: get or set the application key (16&nbsp;bytes in hex) | OK                     |
-| `AT+APPKEY=?`       | -               | < 8&nbsp;hex >                                                     | OK                     |
+| `AT+APPKEY=?`       | -               | < 16&nbsp;hex >                                                     | OK                     |
 | `AT+APPKEY=<Input>` | < 16&nbsp;hex > | -                                                                  | OK <br> AT_PARAM_ERROR |
 
 **Example:**
@@ -1430,7 +1430,7 @@ AT_PARAM_ERROR
 
 Description: Delay of the received window 1
 
-This command is used to access the delay of the received window 1. The range of acceptable values is 1 to 14&nbsp;seconds. Whenever `AT+RX1DL` is updated, `AT+RX2DL` is also updated automatically.
+This command is used to access the delay of the received window 1. The range of acceptable values is 1 to 15&nbsp;seconds. Whenever `AT+RX1DL` is updated, `AT+RX2DL` is also updated automatically.
 
 | Command            | Input Parameter | Return Value                                                                                | Return Code                               |
 | ------------------ | --------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------- |
@@ -1452,7 +1452,7 @@ OK
 :::tip 📝 NOTE:
 - `AT_PARAM_ERROR` is returned when a join or a send is being processed.
 - `AT_BUSY_ERROR` is returned when setting wrong or malformed value.
-- In this case, the default value is 1. `<Input>`: 1-decimal integer and the range of values is 1~14.
+- In this case, the default value is 1. `<Input>`: 1-decimal integer and the range of values is 1~15.
 :::
 
 

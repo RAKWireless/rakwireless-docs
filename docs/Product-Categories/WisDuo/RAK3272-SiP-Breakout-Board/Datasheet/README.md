@@ -189,11 +189,11 @@ The tables below show the header definitions of the RAK3272-SiP Breakout Board:
 | 2   | PB10 | MCU pin PB10 | PB10            |
 | 3   | PA9  | MCU pin PA9  | PA9             |
 | 4   | PB1  | MCU pin PB1  | PB1             |
-| 5   | PB2  | MCU pin PB2  | PB2             |
+| 5   | PB2  | GPIO or PIN_A2 | PB2           |
 | 6   | PB12 | MCU pin PB12 | PB12            |
 | 7   | PB13 | MCU pin PB13 | PB13            |
 | 8   | PB14 | MCU pin PB14 | PB14            |
-| 9   | PA10 | MCU pin PA10 | PA10            |
+| 9   | PA10 | GPIO or PIN_A3 | PA10           |
 
 
 ##### J7 Pin Definitions
@@ -202,7 +202,7 @@ The tables below show the header definitions of the RAK3272-SiP Breakout Board:
 | --- | ---- | ------------ | --------------- |
 | 1   | 3V3  | Power Supply | -               |
 | 2   | PC13 | MCU pin PC13 | PC13            |
-| 3   | PA15 | MCU pin PA15 | PA15            |
+| 3   | PA15 | GPIO or PIN_A4 | PA15          |
 | 4   | PB15 | MCU pin PB15 | PB15            |
 | 5   | PA8  | MCU pin PA8  | PA8             |
 
@@ -211,8 +211,8 @@ The tables below show the header definitions of the RAK3272-SiP Breakout Board:
 | Pin | Name | Description  | RAK3272-SiP Pin |
 | --- | ---- | ------------ | --------------- |
 | 1   | 3V3  | Power Supply | -               |
-| 2   | PB3  | GPIO or ADC0 | PB3             |
-| 3   | PB4  | GPIO or ADC1 | PB4             |
+| 2   | PB3  | GPIO or PIN_A0 | PB3           |
+| 3   | PB4  | GPIO or PIN_A1 | PB4           |
 | 4   | PB5  | MCU pin PB5  | PB5             |
 | 5   | GND  | Ground       | -               |
 
@@ -229,7 +229,7 @@ The RAK3272-SiP Breakout Board supports the LoRaWAN bands 863&nbsp;MHz to 930&nb
 |             | North America | US915     |
 |             | Australia     | AU915     |
 |             | Korea         | KR920     |
-|             | Asia          | AS923     |
+|             | Asia          | AS923-1/2/3/4 |
 |             | India         | IN865     |
 |             | Russia        | RU864     |
 
