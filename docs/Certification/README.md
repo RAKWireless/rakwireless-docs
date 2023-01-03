@@ -11,7 +11,9 @@ The product certification indicates the device has been properly assessed where 
 
 <rk-certification-newsletter/>
 
-## WisGate
+## Product Compliance Certification
+
+### WisGate
 
 
 |                                                 DEVICE                                                  |                                                            AUSTRALIA                                                            |                                   &nbsp;&nbsp;&nbsp;BRAZIL&nbsp;&nbsp;&nbsp;                                   |                                                          CANADA                                                          |                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHILE&nbsp;&nbsp;&nbsp;&nbsp;                               |                                    &nbsp;&nbsp;CHINA&nbsp;&nbsp;                                    |                                                                                                                                                                                                                           &nbsp;&nbsp;EUROPE&nbsp;&nbsp;                                                                                                                                                                                                                            |                                                                                       &nbsp;&nbsp;JAPAN&nbsp;&nbsp;                                                                                        |                                                              KOREA                                                              |                                                        NEW&nbsp;ZEALAND                                                         |                                                    PHILIPPINES                                                    |                                                                                                                                                                                 RUSSIA                                                                                                                                                                                  |                                                      SINGAPORE                                                      |                                                                                                             TAIWAN,&nbsp;CHINA                                                                                                             |                                                      THAILAND                                                       |                                                        VIETNAM                                                        |                              &nbsp;&nbsp;&nbsp;UAE&nbsp;&nbsp;&nbsp;&nbsp;                               |                                 &nbsp;&nbsp;&nbsp;&nbsp;UK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                  |                                &nbsp;&nbsp;&nbsp;&nbsp;UKRAINE&nbsp;&nbsp;                                |                                                &nbsp;&nbsp;USA&nbsp;&nbsp;                                                 |                                                  INTERNATIONAL&nbsp;STANDARD                                                   |
@@ -34,7 +36,7 @@ The product certification indicates the device has been properly assessed where 
 
 
 
-## WisBlock
+### WisBlock
 
 |                                             DEVICE                                             |                                             AUSTRALIA                                             |                                                     &nbsp;BRAZIL&nbsp;                                                      |                                                         CANADA                                                          |                                                                                                                                                                          EUROPE                                                                                                                                                                          |                                                  KOREA                                                  |                                                           UK                                                            |                                                          USA                                                          |
 | :--------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------: |
@@ -50,7 +52,7 @@ The product certification indicates the device has been properly assessed where 
 
 
 
-## WisDuo
+### WisDuo
 
 
 |                                               DEVICE                                                |                                             AUSTRALIA                                             |                                                   CANADA                                                    |                                                                                                                                                                   EUROPE                                                                                                                                                                    |                                                  JAPAN                                                   |                                                 KOREA                                                  |                                                LoRa Alliance                                                 |                                                     UK                                                      |                                                    USA                                                    |
@@ -64,14 +66,14 @@ The product certification indicates the device has been properly assessed where 
 |     <a href="/Product-Categories/WisDuo/RAK4600-Module/Overview/" target="_blank"> RAK4600 </a>     |                                                 -                                                 |                                                      -                                                      |                                                                                                                       [CE](https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600_CE_Certification.zip)                                                                                                                       |                                                    -                                                     |                                                   -                                                    |                                                      -                                                       |                                                      -                                                      |     [FCC](https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600_FCC_Certification.zip)     |
 
 
-## WisTrio
+### WisTrio
 
 |                                          DEVICE                                           |                                            EUROPE                                            |
 | :---------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: |
 |   <a href="/Product-Categories/WisTrio/RAK5010/Overview/" target="_blank"> RAK5010 </a>   | [RoHS](https://downloads.rakwireless.com/LoRa/RAK5010/Certification/RAK5010_ROHS_Report.pdf) |
 | <a href="/Product-Categories/WisTrio/RAK5010-M/Overview/" target="_blank"> RAK5010-M </a> | [RoHS](https://downloads.rakwireless.com/LoRa/RAK5010/Certification/RAK5010_ROHS_Report.pdf) |
 
-## WisNode
+### WisNode
 
 
 |                                        DEVICE                                         |                                               CANADA                                                |                                                 EUROPE                                                 |                                               LoRa Alliance                                               |                                                 UK                                                  |                                                   USA                                                    |
@@ -83,7 +85,7 @@ The product certification indicates the device has been properly assessed where 
 
 
 
-## WisLink
+### WisLink
 
 |                                                  DEVICE                                                   |                                                     AUSTRALIA                                                      |                                     &nbsp;&nbsp;BRAZIL&nbsp;&nbsp;                                      |                                                       CANADA                                                       |                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COSTA&nbsp;RICA                             |                                                                                                                                                                     &nbsp;&nbsp;EUROPE&nbsp;&nbsp;                                                                                                                                                                     |                                   &nbsp;&nbsp;INDIA&nbsp;&nbsp;                                   |                                               JAPAN                                               |                                                      KOREA                                                       |                           &nbsp;&nbsp;&nbsp;&nbsp;Malaysia&nbsp;&nbsp;&nbsp;&nbsp;                            |                                              SINGAPORE                                              |                                        TAIWAN,&nbsp;CHINA                                         |                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                    |                                              &nbsp;&nbsp;USA&nbsp;&nbsp;                                               |                                      &nbsp;&nbsp;Vietnam&nbsp;&nbsp;                                      |
 | :-------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: |
@@ -97,7 +99,7 @@ The product certification indicates the device has been properly assessed where 
 
 
 
-## Accessories
+### Accessories
 
 
 |                                          DEVICE                                           |                                                                                                               EUROPE                                                                                                               |                                                   USA                                                    |
@@ -112,20 +114,20 @@ The product certification indicates the device has been properly assessed where 
 
 
 
-#### Data and Information Security
+## Data and Information Security
 
-##### GDPR Compliant
+### GDPR Compliant
 
 - [<b>Europe Data Protection and Privacy Rules</b>](https://gdpr.eu/)
 - [<b>How We Protect Your Privacy</b>](https://www.rakwireless.com/en-us/legal/privacy-notice)
 
 
-##### ISO27001 Certification
+### ISO27001 Certification
 
 - [<b>International Information Security Management System Standard</b>](https://www.iso.org/isoiec-27001-information-security.html)
 
 
-#### LoRaWAN Certification
+### LoRaWAN Certification
 
 - [<b>International Technology Alliance about LoRaWAN Standard</b>](https://lora-alliance.org/about-lora-alliance/#)
 <br> &nbsp;[View Details](https://lora-alliance.org/alliance_member/rakwireless-technology-co/)
