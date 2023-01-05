@@ -2,9 +2,9 @@
 sidebar: false
 header:
     title: Release Notes
-    caption: A compilation of RAK tools release notes and their versions.
+    caption: This page lists all the launched software and firmware updates - enhanced changes, added features, and fixed bugs - which covers all RAK hardware product lines.
     img: /assets/images/release-notes/release-notes_banner.png
-rak_desc: A compilation of RAK tools release notes and their versions.
+rak_desc: This page lists all the launched software and firmware updates - enhanced changes, added features, and fixed bugs - which covers all RAK hardware product lines.
 rak_img: /assets/images/release-notes/release-notes_banner.png
 ---
 

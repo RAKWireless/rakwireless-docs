@@ -8,6 +8,8 @@ tags:
   - wisnode
   - RAK2560
   - SensorHub
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/SensorHub/Certification/SensorHub_RAK2560_RAK2560C_CE_Certification.pdf]
 ---
 
 # RAK2560 WisNode Sensor Hub Datasheet
@@ -169,4 +171,10 @@ If you want to add a Probe IO to your setup, the Sensor Hub must be supplied by 
 | LoRaWAN            | For data transfer, provided by the RAK4630 WisBlock LPWAN module                       |
 | NB-IoT             | For data transfer, optional, provided by the RAK5860 WisBlock NB-IoT interface module  |
 | One-wire UART      | For communication between the Sensor Probe/Probe IO and the Hub                        |
+
+
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />
 

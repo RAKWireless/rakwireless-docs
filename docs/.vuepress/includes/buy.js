@@ -1117,7 +1117,7 @@ export default {
   '/Product-Categories/WisBlock/RAKBox-UO100x75x38-Solar/': {
     label: 'WisBlock Unify Outdoor Enclosure 100x75x38 with Solar Panel',
     img: '/assets/images/wisblock/rakbox-uo100x75x38-solar/overview/uo_buy.png',
-    store: 'https://store.rakwireless.com/'
+    store: 'https://store.rakwireless.com/products/unify-enclosure-ip65-100-75-38-solar?utm_source=RAKBox-UO100x75x38-solar&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAKBox-UO100x75x38/': {
     label: 'WisBlock Unify Outdoor Enclosure 100x75x38',

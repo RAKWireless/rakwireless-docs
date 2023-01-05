@@ -8,6 +8,8 @@ tags:
   - wisnode
   - RAK2560
   - SensorIO
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/SensorHub/Certification/SensorHub_RAK2560_RAK2560C_CE_Certification.pdf]
 ---
 
 # RAK2560 WisNode Sensor IO Datasheet
@@ -170,3 +172,10 @@ If you want to add a Probe IO to your setup, the Sensor Hub must be supplied by 
   width="90%"
   caption="RAK2560 WisNode Probe IO connection schematics"
 />
+
+
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />
+
