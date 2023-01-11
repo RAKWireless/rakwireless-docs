@@ -3,9 +3,20 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/rak-developer-kit/starter-kit/rak-developer-kit1.png
 rak_desc: This guide provides step-by-step tutorial on how to use your WisBlock Starter Kit and RAK Edge Gateway.
 tags:
-  - Tutorial
+  - User-Manual
   - RAK Edge Gateway
   - WisGate
+  - WisBlock
+  - RAK7240
+  - RAK7249
+  - RAK7258
+  - RAK7268
+  - RAK7289
+  - RAK4631
+  - RAK5005-O
+  - LoRaWAN
+  - TTN
+  - Arduino
 header:
   title: WisBlock Starter Kit and RAK Edge Gateway Complete LoRaWAN Guide
   caption: by <b>Anthony Aldrin Beltran</b>
@@ -133,10 +144,10 @@ In this section, it will be shown how to connect WisGate Edge Gateway to TTNv3.
 />
 
 4.  Fill in the needed information:
-  - **Owner** – Automatically filled by The Things Stack, based on your account or created Organization. 
+  - **Owner** – Automatically filled by The Things Stack, based on your account or created Organization.
   - **Gateway ID** – This will be the unique ID of your gateway in the Network. ID must contain only lowercase letters, numbers, and dashes (-).
   - **Gateway EUI** - A 64 bit extended unique identifier for your gateway. This is where the gateway you get on the above section Configuring the RAK7268 WisGate Edge Lite 2.
-  - **Gateway name** – A name for your gateway. 
+  - **Gateway name** – A name for your gateway.
   - **Gateway description (optional)** - Optional gateway description; can also be used to save notes about the gateway.
   - **Gateway Server address** - The address of the gateway server to connect to.
   - **Frequency plan** - The frequency plan used by the gateway.
@@ -191,7 +202,7 @@ In this section, it will be shown how to connect WisGate Edge Gateway to TTNv3.
   caption="Generating an API key"
 />
 
-8. To generate the key, choose the **Create API key**. The following window will pop up, telling you to copy the key you just generated. 
+8. To generate the key, choose the **Create API key**. The following window will pop up, telling you to copy the key you just generated.
 
 <rk-img
   src="/assets/images/wisgate/rak7268/supported-lora-network-servers/ttn/8.png"
@@ -217,15 +228,15 @@ Copy the key and save it in a `.txt` file (or other), because you won’t be abl
   caption="Copying the generated key in a txt file"
 />
 
-9.  Click **I have copied the key** to proceed. 
-   
+9.  Click **I have copied the key** to proceed.
+
 <rk-img
   src="/assets/images/knowledge-hub/rak-edge-gateway-discovery-kit/starter-kit/ttn/8-labeled.png"
   width="80%"
   caption="Generating an API key"
 />
 
-10.  You will configure the gateway to connect it successfully to the TTN V3 Server. To configure the gateway, access it via the Web UI. To learn how to do that, check out the [RAK7268 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7268/Quickstart/#access-the-gateway). 
+10.  You will configure the gateway to connect it successfully to the TTN V3 Server. To configure the gateway, access it via the Web UI. To learn how to do that, check out the [RAK7268 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7268/Quickstart/#access-the-gateway).
 
 <rk-img
   src="/assets/images/wisgate/rak7268/quickstart/3.login-page.png"
@@ -233,7 +244,7 @@ Copy the key and save it in a `.txt` file (or other), because you won’t be abl
   caption="Web UI Login Page"
 />
 
-11.  Navigate to **LoRa Network** > **Network Settings** > **Mode** drop-down menu, then choose **Basics Station**. 
+11.  Navigate to **LoRa Network** > **Network Settings** > **Mode** drop-down menu, then choose **Basics Station**.
 
 <rk-img
   src="/assets/images/wisgate/rak7268/supported-lora-network-servers/ttn/9.png"
@@ -248,7 +259,7 @@ Copy the key and save it in a `.txt` file (or other), because you won’t be abl
 - **Port** – The LNS Server uses port 8887. Type in **8887**.
 - **Authentication Mode** – Choose **TLS server authentication and Client token**. When selected, the trust and the token field will show up.
 - **trust** – For trust, you will use the **Let’s Encrypt ISRG ROOT X1 Trust** certificate. [Download](https://letsencrypt.org/certs/isrgrootx1.pem) the certificate first.
-- **token** -  This is the generated **API key**. The key must start with **Authorization:**. Example: 
+- **token** -  This is the generated **API key**. The key must start with **Authorization:**. Example:
 
 
 ```
@@ -323,7 +334,7 @@ You can now see that your gateway is connected to TTNv3 as Basics Station:
   caption="Configurations for adding end devices"
 />
 
-6.  Click **Show advanced activation, LoRaWAN class, and cluster settings**, then select Over the air action (OTAA). 
+6.  Click **Show advanced activation, LoRaWAN class, and cluster settings**, then select Over the air action (OTAA).
 
 
 <rk-img
@@ -332,7 +343,7 @@ You can now see that your gateway is connected to TTNv3 as Basics Station:
   caption="OTAA Settings"
 />
 
-7. Then you need to put a unique End device ID and EUIs (DevEUI and AppEUI), as shown in **Figure 25**. Check if your RAK4631 module has a **DevEUI** on **sticker or QR** that you can scan then use this as the device unique DevEUI. 
+7. Then you need to put a unique End device ID and EUIs (DevEUI and AppEUI), as shown in **Figure 25**. Check if your RAK4631 module has a **DevEUI** on **sticker or QR** that you can scan then use this as the device unique DevEUI.
 
 For **AppEUI**, you may click **Fill with Zeros**. Click **Generate** for the **AppKey**. Then the End Device ID will be automatically filled by the website. You can also put a different End Device ID if you need to. Finally, click **Register End Device**.
 
@@ -344,7 +355,7 @@ For **AppEUI**, you may click **Fill with Zeros**. Click **Generate** for the **
 />
 
 
-8. You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 26**. Take note of these keys, such as the `AppEUI`, `DevEUI`, and the `AppKey`, as they are needed in the next part of this guide. 
+8. You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 26**. Take note of these keys, such as the `AppEUI`, `DevEUI`, and the `AppKey`, as they are needed in the next part of this guide.
 
 
 <rk-img
@@ -385,7 +396,7 @@ For RAK5005-O WisBlock Base with RAK4631 WisBlock Core, the accessible GPIO pins
 
 There are usable LEDs as well that can be controlled by the RAK4631 on the WisBlock Base board:
 
-- `LED_GREEN` 
+- `LED_GREEN`
 - `LED_BLUE`
 
 UART1 and I2C_1 are also exposed on the header of the WisBlock Base board.
@@ -407,9 +418,9 @@ UART1 and I2C_1 are also exposed on the header of the WisBlock Base board.
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak1910/quickstart/16.removing-screws.png"
@@ -435,7 +446,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 
 ##### LoRa and BLE Antenna
 
-Another important part component of RAK4631 is the antennas. 
+Another important part component of RAK4631 is the antennas.
 
 <rk-img
   src="/assets/images/wisblock/rak4631/quickstart/lora-antenna.png"
@@ -461,7 +472,7 @@ RAK4631 has a label on its sticker where to connect the antennas, as shown in **
 />
 
 :::tip 📝 NOTE
-Detailed information about the RAK4631 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/). 
+Detailed information about the RAK4631 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
 :::
 
 :::warning ⚠️ WARNING
@@ -483,8 +494,8 @@ Once the RAK4631 is connected to RAK5005-O WisBlock Base, You can connect a push
 
 1. Download the (Arduino IDE)[https://www.arduino.cc/en/software](https://www.arduino.cc/en/software), then install it on your PC or laptop.
 
-:::warning ⚠️ WARNING    
-_**If you are using Windows 10**_.    
+:::warning ⚠️ WARNING
+_**If you are using Windows 10**_.
 Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the original Arduino IDE from the Arduino official website! The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 
@@ -516,9 +527,9 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 />
 
 
-2. Open the Arduino IDE, then install the **RAKwireless BSP support for the Arduino Board Manager**. 
+2. Open the Arduino IDE, then install the **RAKwireless BSP support for the Arduino Board Manager**.
 
-3. Click on **File** > **Preferences**. In the **Preferences** window, look for **Additional Boards Manager URLs**, then click the icon on the right side. 
+3. Click on **File** > **Preferences**. In the **Preferences** window, look for **Additional Boards Manager URLs**, then click the icon on the right side.
 
 
 <rk-img
@@ -550,7 +561,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
   caption="Completing the setup of RAKwireless BSP support for the Arduino Board Manager"
 />
 
-5. Go to **Tools** > **Board: "Arduino Uno"** > **Boards Manager**. Type RAK in the search bar, and the RAKwireless Core modules will be shown in the window. 
+5. Go to **Tools** > **Board: "Arduino Uno"** > **Boards Manager**. Type RAK in the search bar, and the RAKwireless Core modules will be shown in the window.
 
 
 <rk-img
@@ -575,7 +586,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
   width="80%"
   caption="Successful Installation of  RAKwireless nRF Boards"
 />
-  
+
 7. Lastly, ensure that you have the updated SX126x.
 
 
@@ -597,9 +608,9 @@ Copy this code in your Arduino IDE. More information about the code is discussed
  * @brief LoRaWan Button Example Application
  * @version 0.1
  * @date 2022-01-10
- * 
+ *
  * @copyright Copyright (c) 2022
- * 
+ *
  * @note RAK4631 GPIO mapping to nRF52840 GPIO ports
    RAK4631    <->  nRF52840
    WB_IO1     <->  P0.17 (GPIO 17)
@@ -732,7 +743,7 @@ void setup()
       break;
   }
   Serial.println("=====================================");
-  
+
   // Setup the EUIs and Keys
   if (doOTAA)
   {
@@ -763,7 +774,7 @@ void setup()
 void loop()
 {
   // Put your application tasks here, like reading of sensors,
-  // Controlling actuators and/or other functions. 
+  // Controlling actuators and/or other functions.
   int stat=digitalRead(WB_IO1);
   if(!stat){
     send_lora_frame();
@@ -870,7 +881,7 @@ You can change to unconfirmed message by changing the value to `LMH_UNCONFIRMED_
 Default is **Class A**.
 
 ```c
-DeviceClass_t g_CurrentClass = CLASS_A; 
+DeviceClass_t g_CurrentClass = CLASS_A;
 ```
 
 You can change this to `CLASS_B` (still under development) or `CLASS_C`.

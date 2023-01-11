@@ -8,6 +8,8 @@ tags:
   - WisDuino
   - WisDuo
   - WisTrio
+  - LPWAN
+  - RAK4200
 header:
   title: LPWAN Node Firmware Upgrading
   caption: by <b>RAKwireless Team</b>

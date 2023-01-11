@@ -4,12 +4,22 @@ rak_img: /assets/images/knowledge-hub/tutorials/build-a-door-open-counter-and-al
 rak_desc: This guide provides a step-by-step tutorial on how to build a door-open counter and alarm with the WisBlock RAK12027.
 tags:
   - Tutorial
+  - PlatformIO
+  - Arduino
   - WisBlock
   - RAK13011
   - RAK19003
   - RAK19007
-  - Arduino
-  - PlatformIO
+  - RAK13300
+  - RAK4631
+  - RAK4631-R
+  - RAK11310
+  - RAK11200
+  - RAK3372
+  - RAK1901
+  - RUI3
+  - Adafruit
+  - CayenneLPP
 header:
   title: Build a Door Open Counter and Alarm Sensor with WisBlock
   caption: by <b>Bernd Giesecke</b>

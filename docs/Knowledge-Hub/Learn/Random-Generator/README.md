@@ -5,10 +5,16 @@ rak_desc: A guide on how to use the random generator feature of Semtech LoRa tra
 tags:
   - Tutorial
   - WisDuo
+  - SX126x
+  - SX127x
+  - RSSI
+  - Adafruit
+  - WisBlock
   - RAK4630
   - RAK4631
   - RAK3172
   - RAK3172-SiP
+  - LoRa
 header:
   title: Random Numbers and LoRa
   caption: by <b>Kongduino</b>

@@ -5,6 +5,8 @@ rak_desc: A brief guide on how to simulate the Rx/Tx between 5-V and 3.3-V machi
 tags:
   - Tutorial
   - BastWAN
+  - RS232 
+  - SoftwareSerial
 header:
   title: How to Interface a 3.3-V LoRa Device with a 5-V Device
   caption: by <b>Kongduino</b>

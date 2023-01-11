@@ -46,8 +46,8 @@ This is the complete list of AT commands based on old FW.
 
   - [General Commands](#general-commands)
   - [Keys, IDs, and EUIs Management](#keys-ids-and-euis-management)
-  - [Joining and Sending Data to LoRaWAN® Network](#joining-and-sending-data-to-lorawan-network)
-  - [LoRaWAN® Device Configuration](#lorawan-device-configuration)
+  - [Joining and Sending Data to LoRaWAN Network](#joining-and-sending-data-to-lorawan-network)
+  - [LoRaWAN Device Configuration](#lorawan-device-configuration)
   - [Class B Mode](#class-b-mode)
   - [Device Information](#device-information)
   - [RF Test](#rf-test)
@@ -458,9 +458,9 @@ AT_PARAM_ERROR
 
 [Back](#content)  
 
-#### Joining and Sending Data to LoRaWAN® Network
+#### Joining and Sending Data to LoRaWAN Network
 
-This section describes the commands related to the joining process of the device to the LoRaWAN® network.
+This section describes the commands related to the joining process of the device to the LoRaWAN network.
 
 - [AT+NJM - Set or get LoRaWAN join mode (OTAA or ABP)](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-njm)
 - [AT+CFM - Configure confirmed/unconfirmed payload](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-cfm)
@@ -472,7 +472,7 @@ This section describes the commands related to the joining process of the device
 
 ### AT+NJM 
 
-Description: LoRaWAN® network join mode
+Description: LoRaWAN network join mode
 
 This command is used to access and configure the activation method of the device either OTAA or ABP.
 
@@ -530,9 +530,9 @@ AT_PARAM_ERROR
 
 ### AT+JOIN
 
-Description: Join the LoRaWAN® network
+Description: Join the LoRaWAN network
 
-This command is used to join a LoRaWAN® network.
+This command is used to join a LoRaWAN network.
 
 | Command                         | Input Parameter                                                                                   | Return Value                     | Return Code             |
 | ------------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------- | ----------------------- |
@@ -579,7 +579,7 @@ If joining fails, make sure your device is within the coverage of the gateway. A
 
 Description: Network join status
 
-This command is used to check the status of the devices if it is connected to a LoRaWAN® network.
+This command is used to check the status of the devices if it is connected to a LoRaWAN network.
 
 | Command        | Input Parameter | Return Value                         | Return Code |
 | -------------- | --------------- | ------------------------------------ | ----------- |
@@ -600,7 +600,7 @@ OK
 
 Description: Send payload data
 
-This command is used to send the LoRaWAN® payload to a specific port.
+This command is used to send the LoRaWAN payload to a specific port.
 
 | Command                         | Input Parameter      | Return Value                                          | Return Code                                                        |
 | ------------------------------- | -------------------- | ----------------------------------------------------- | ------------------------------------------------------------------ |
@@ -702,9 +702,9 @@ When called twice, without new data received between the calls, the second `AT+R
 
 [Back](#content)  
 
-#### LoRaWAN® Device Configuration
+#### LoRaWAN Device Configuration
 
-This section describes the commands related to the configuration of the LoRaWAN® device.
+This section describes the commands related to the configuration of the LoRaWAN device.
 
 - [AT+ADR - Set or get ADR - Adaptive Data Rate](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-adr)
 - [AT+CLASS - LoRaWAN Class Configuration](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-class)
@@ -754,9 +754,9 @@ OK
 
 ### AT+CLASS 
 
-Description: LoRaWAN® class
+Description: LoRaWAN class
 
-This command is used to access and configure the LoRaWAN® class of the module.
+This command is used to access and configure the LoRaWAN class of the module.
 
 | Command                          | Input Parameter | Return Value                                      | Return Code              |
 | -------------------------------- | --------------- | ------------------------------------------------- | ------------------------ |
@@ -1543,12 +1543,12 @@ This section describes the commands related to RF test management.
 - [AT+CW - Send Continuous Wave](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-cw)
 - [AT+TRSSI - Receive Signal Strength Indicator](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-trssi)
 - [AT+TTONE - Start radio frequency tone test](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-ttone)
-- [AT+TTX - Start RF Tx LoRa® test](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-ttx)
-- [AT+TRX - Start RF Rx LoRa® test](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-trx)
-- [AT+TCONF - LoRa® RF test configuration](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-tconf)
+- [AT+TTX - Start RF Tx LoRa test](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-ttx)
+- [AT+TRX - Start RF Rx LoRa test](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-trx)
+- [AT+TCONF - LoRa RF test configuration](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-tconf)
 - [AT+TTH - RF Tx hopping test](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-tth)
 - [AT+TOFF - Stop ongoing radio frequency test](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-toff)
-- [AT+CERTIF - LoRaWAN® Certification mode](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-certif)
+- [AT+CERTIF - LoRaWAN Certification mode](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-certif)
 
 ### AT+CW 
 
@@ -1629,7 +1629,7 @@ OK
 
 ### AT+TTX 
 
-Description: Start RF Tx LoRa® test
+Description: Start RF Tx LoRa test
 
 This command is used to set the number of packets to be sent for a PER RF TX test.
 
@@ -1656,13 +1656,13 @@ OK
 
 ### AT+TRX 
 
-Description: Start RF Rx LoRa® test
+Description: Start RF Rx LoRa test
 
 This command is used to set the number of packets to be received for a PER RF TX test.
 
 | Command                        | Input Parameter        | Return Value                                                | Return Code              |
 | ------------------------------ | ---------------------- | ----------------------------------------------------------- | ------------------------ |
-| **`AT+TRX?`**                  | -                      | `AT+TRX`: Set number of packets received with RF LoRa® test | `OK`                     |
+| **`AT+TRX?`**                  | -                      | `AT+TRX`: Set number of packets received with RF LoRa test | `OK`                     |
 | **`AT+TRX=<Input Parameter>`** | *< 0 < Integer < 64 >* | -                                                           | `OK` or `AT_PARAM_ERROR` |
 
 
@@ -1688,13 +1688,13 @@ OK
 
 ### AT+TCONF 
 
-Description: Config LoRa® RF test
+Description: Config LoRa RF test
 
-This command is used to access and set LoRa® configuration test.
+This command is used to access and set LoRa configuration test.
 
 | Command                          | Input Parameter        | Return Value                        | Return Code              |
 | -------------------------------- | ---------------------- | ----------------------------------- | ------------------------ |
-| **`AT+TCONF?`**                  | -                      | `AT+TCONF`: Configure LoRa® RF test | `OK`                     |
+| **`AT+TCONF?`**                  | -                      | `AT+TCONF`: Configure LoRa RF test | `OK`                     |
 | **`AT+TCONF=?`**                 | -                      | *Summary of configuration*          | `OK` or `AT_ERROR`       |
 | **`AT+TCONF=<Input Parameter>`** | *Check on the example* | -                                   | `OK` or `AT_PARAM_ERROR` |
 
@@ -1788,9 +1788,9 @@ OK
 
 ### AT+CERTIF 
 
-Description: LoRaWAN® Certification mode
+Description: LoRaWAN Certification mode
 
-This command is used to enable LoRaWAN® Certification mode (1-OTAA, 0-ABP).
+This command is used to enable LoRaWAN Certification mode (1-OTAA, 0-ABP).
 
 | Command                       | Input Parameter | Return Value                                              | Return Code              |
 | ----------------------------- | --------------- | --------------------------------------------------------- | ------------------------ |
@@ -1824,7 +1824,7 @@ OK
 
 This section describes the commands related to LoRa point to point functionality.
 
-- [AT+NWM - LoRa® network work mode (LoRaWAN or P2P)](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-nwm)
+- [AT+NWM - LoRa network work mode (LoRaWAN or P2P)](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-nwm)
 - [AT+PFREQ - P2P mode frequency](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-pfreq)
 - [AT+PSF - P2P mode spreading factor](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-psf)
 - [AT+PBW - P2P mode bandwidth](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/AT-Command-Manual/#at-pbw)
@@ -1837,7 +1837,7 @@ This section describes the commands related to LoRa point to point functionality
 
 ### AT+NWM 
 
-Description: LoRa® network work mode (LoRaWAN or P2P)
+Description: LoRa network work mode (LoRaWAN or P2P)
 
 This command is used to switch to LoRaWAN or (P2P)point-to-point mode.
 

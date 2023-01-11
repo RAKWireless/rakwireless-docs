@@ -5,6 +5,9 @@ rak_desc: Learn how to Make your own WisBlock IO Expander Module.
 tags:
   - Tutorial
   - WisBlock
+  - RAK5005-O
+  - PCB
+  - PCF8574
 header:
   title: WisBlock IO Tutorial
   caption: by <b>Bernd Giesecke</b>
@@ -49,8 +52,8 @@ The template schematic is very simple. It only includes the connector and a tabl
 A few things you need to know.
 
 - VDD is the MCU's GPIO voltage, for a RAK4631 this would be 3.3V. It is available as long as your WisBlock is powered by USB or battery
-- 3V3 is a 3.3V power supply that is available as long as your WisBlock is powered by USB or battery
-- 3V3_S is a 3.3V power supply that can be controlled by the WisBlock Core module.
+- 3V3 is a 3.3-V power supply that is available as long as your WisBlock is powered by USB or battery
+- 3V3_S is a 3.3-V power supply that can be controlled by the WisBlock Core module.
 - VBUS is the 5V from the USB connector. This supply is only available while the WisBlock is powered over USB.
 - USB+ and USB- are the USB connection from the WisBlock Core module. These signals might not be available on all WisBlock Core modules
 - I2C2_SDA and I2C2_SCL are not available on all WisBlock Core modules

@@ -4,11 +4,22 @@ rak_img: /assets/images/knowledge-hub/tutorials/build-an-indoor-air-quality-sens
 rak_desc: This guide provides a step-by-step tutorial on how to build an indoor air quality sensor with WisBlock modules.
 tags:
   - Tutorial
+  - Air Quality Monitor
   - WisBlock
   - RAK12037
   - RAK12039
   - RAK12047
   - RAK1906
+  - RAK19001
+  - RAK19011
+  - RAK4631
+  - RAK14000
+  - PlatformIO
+  - Arduino
+  - Adafruit
+  - CayenneLPP
+  - Sensirion
+  - SparkFun
 
 header:
   title: Build an Indoor Air Quality Monitor with WisBlock

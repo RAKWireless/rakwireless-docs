@@ -5,8 +5,6 @@ rak_desc: A brief discussion of the different fields of application LoRaWAN is a
 tags:
   - Tutorial
   - LoRaWAN
-  - LoRaWAN Application
-  - LoRaWAN Technology
 header:
   title: 8 Applications of LoRaWAN | More Than Just Tech
   caption: by <b>Sam Domingo</b>

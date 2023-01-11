@@ -4,8 +4,13 @@ rak_img: /assets/images/knowledge-hub/banners/aws.png
 rak_desc: This document will show you how to set up a LoRaWAN end-node and view its data on the AWS IoT Console. In addition, it’ll show you how to send a message from AWS IoT Console to the end-node as well.
 tags:
   - Tutorial
-  - WisGate
   - AWS
+  - RAK7200
+  - RAK7268
+  - WisGate Edge Lite 2
+  - WisNode
+  - WisBlock
+  - Cayenne LPP
 header:
   title: AWS IoT Core Integration
   caption: by <b>RAKwireless Team</b>
@@ -44,7 +49,7 @@ AWS IoT Core is a cloud-based service that connects your "things" (devices, sens
 
 ##### Create a Thing
 
-1. To create a thing (add a device) in the AWS IoT console, navigate to **Manage** > **Things** and select **Create Things.** 
+1. To create a thing (add a device) in the AWS IoT console, navigate to **Manage** > **Things** and select **Create Things.**
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/1.things-tab.png"
@@ -77,7 +82,7 @@ AWS IoT Core is a cloud-based service that connects your "things" (devices, sens
 />
 
 
-5. A policy is needed for your thing, hence click **Create policy**. 
+5. A policy is needed for your thing, hence click **Create policy**.
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/5.attach-policies.png"
@@ -160,7 +165,7 @@ Save the downloaded certificates and keys, as they cannot be downloaded again if
 
 ##### Configure Global Integration for the AWS Proxy
 
-1. Now, you need to configure the global integration of the gateway for the AWS IoT Core. To do so, in the gateway's Web UI, navigate to **LoRa Network** > **Global Integration**. Then choose **AWS IoT Core** for the **Integration Mode**.  
+1. Now, you need to configure the global integration of the gateway for the AWS IoT Core. To do so, in the gateway's Web UI, navigate to **LoRa Network** > **Global Integration**. Then choose **AWS IoT Core** for the **Integration Mode**.
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/13.application-server-integration.png"
@@ -179,7 +184,7 @@ Save the downloaded certificates and keys, as they cannot be downloaded again if
   caption="Device Data Endpoint"
 />
 
-- **AWS Port** – The port for the AWS IoT core. Fill the field with port `8883`. 
+- **AWS Port** – The port for the AWS IoT core. Fill the field with port `8883`.
 - **CA Certificate** – The certificate you've downloaded (see Figure 15).
 - **Vendor Certificate** – The certificate you've downloaded (see Figure 15).
 - **Vendor Key** – The key you've downloaded (see Figure 15).
@@ -213,7 +218,7 @@ Save the downloaded certificates and keys, as they cannot be downloaded again if
 />
 
 
-3. RAKwireless provides a [decoder](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder) for all WisNode devices that are based on RUI. All WisNode devices support **Cayenne LPP** payload format, and it can be activated via the Web UI of the gateway. Navigate to **LoRa Network** > **Application** > **Your_application** > **Edit** > **Payload Formats**. 
+3. RAKwireless provides a [decoder](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder) for all WisNode devices that are based on RUI. All WisNode devices support **Cayenne LPP** payload format, and it can be activated via the Web UI of the gateway. Navigate to **LoRa Network** > **Application** > **Your_application** > **Edit** > **Payload Formats**.
 
 
 4. In the **Payload Format** drop-down menu, choose **Cayenne LPP**, then enable **Only forward the parsed data object** to receive only the data of the sensor. Click **Save & Apply**.

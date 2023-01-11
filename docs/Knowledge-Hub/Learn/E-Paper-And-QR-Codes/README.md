@@ -5,6 +5,18 @@ rak_desc: A brief guide on how to combine E-Paper, QR codes, and LoRa using WisB
 tags:
   - Tutorial
   - WisBlock
+  - E-Paper
+  - QR Codes
+  - RAK5005-O
+  - RAK4630
+  - RAK4631
+  - RAK14000
+  - RAK15000
+  - RAK15001
+  - RAK15002
+  - Arduino
+  - EEPROM
+  - EPD
 header:
   title: E-Paper and QR Codes
   caption: by <b>Kongduino</b>

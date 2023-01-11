@@ -3,9 +3,19 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/rak-developer-kit/kit-3/kit3.png
 rak_desc: This guide provides a step-by-step tutorial on how to use the RAK Developer Kit 3 (Tracker Kit).
 tags:
-  - Tutorial
+  - User-Manual
   - RAK Developer Kit
   - WisBlock
+  - WisGate
+  - Tracker Kit
+  - RAK7246
+  - RAK4631
+  - RAK5005-O
+  - RAK1910
+  - PuTTY
+  - TTN
+  - Arduino
+  - Datacake
 header:
   title: RAK Developer Kit 3 (Tracker Kit) Guide
   caption: by <b>Rally Uminga</b>
@@ -62,16 +72,16 @@ Here are the steps in configuring the [RAK7246 WisGate Developer D0](https://sto
 
   - Windows OS
      SSH (Secure Shell) is typically used to log in to a remote machine and execute commands. There are a lot of free and good SSH Clients out there, namely [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), [BitVise SSH Client](https://www.bitvise.com/ssh-client-download), [MobaXterm](https://mobaxterm.mobatek.net/) and many more. Feel free to choose one that fits your needs, but in this guide, Putty is used.
- 
+
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-3\rak7246g-gateway\putty2.png"
-  width="60%" 
+  width="60%"
   caption="PuTTY example"
 />
 
   - Mac OS
      Open the Terminal of Mac OS. Launch the Terminal application found in the **`/Applications/Utilities/`** directory, but you can also launch it from Spotlight. Press **Command + Spacebar** and type **“Terminal”**, then return.
-     
+
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-3\rak7246g-gateway\terminal3.png"
   width="60%"
@@ -92,7 +102,7 @@ Here are the steps in configuring the [RAK7246 WisGate Developer D0](https://sto
 4. From the previous step, get the **Gateway ID** by typing `sudo gateway-config` to your chosen SSH Client terminal editor. It can be found on top of the terminal console, as shown in the red box in **Figure 5**. You may copy it on a txt file or any notepad software. It will be used in setting up the gateway in [TTN V3](https://www.thethingsnetwork.org/). See **Figure 5** for reference. You will use it also as Gateway EUI in the latter part of this guide. In this example, the Gateway ID is **B827EBFFFE81**.
 
 :::tip 📝 NOTE
-In this guide, you will be using TTN (The Things Network) as the LNS (LoRaWAN Network Server). There are many other LNS available that you can use, as well. The configuration steps will be different depending on your chosen LNS, but the general LoRaWAN principle is the same. 
+In this guide, you will be using TTN (The Things Network) as the LNS (LoRaWAN Network Server). There are many other LNS available that you can use, as well. The configuration steps will be different depending on your chosen LNS, but the general LoRaWAN principle is the same.
 
 Like for [RAK WisGate Edge Gateways](https://store.rakwireless.com/collections/wisgate-edge), it has built-in LNS that you can use.
 :::
@@ -124,7 +134,7 @@ There are 5 options to choose from in the Wi-Fi configuration menu:
    3.  **Modify SSID and pwd for AP Mode** - used to modify the SSID and password of the Wi-Fi AP. Only works if the Wi-Fi AP Mode is enabled.
    4.  **Add New SSID for Client** - this is used if you want to connect to a new Wi-Fi network. Only works in Wi-Fi Client mode.
    5.  **Change Wi-Fi Country** - this is used to modify the Resident Country to match Wi-Fi standards.
-   
+
 :::tip 📝 NOTE
 
 To enable Wi-Fi Client Mode, you have to disable first the Wi-Fi AP Mode
@@ -173,7 +183,7 @@ Ensure to input the correct Wi-Fi SSID and password, or you will not be able to 
 sudo reboot
 ```
 
-7.	After rebooting the RAK7246 WisGate Developer D0, you should check if it is connected successfully to your Wi-Fi network. You may use your local network modem/router admin console to check if RAK7246 is successfully connected. 
+7.	After rebooting the RAK7246 WisGate Developer D0, you should check if it is connected successfully to your Wi-Fi network. You may use your local network modem/router admin console to check if RAK7246 is successfully connected.
 
 In this example, the admin console can be access via `http://192.168.0.1`. It is also common to have it on `http://192.168.1.1` on some routers. Take note on the IP address alloted to the RAK7246 by your Wi-Fi network.
 
@@ -183,7 +193,7 @@ In this example, the admin console can be access via `http://192.168.0.1`. It is
   caption="Web UI of local modem/router"
 />
 
-You can also use [Advance IP Scanner](https://download.advanced-ip-scanner.com/download/files/Advanced_IP_Scanner_2.5.3850.exe) for Windows OS, or [Angry IP Scanner](https://angryip.org/download/) for Mac OS, and locate the IP address of RAK7246 WisGate Developer D0 in your Wi-Fi device. 
+You can also use [Advance IP Scanner](https://download.advanced-ip-scanner.com/download/files/Advanced_IP_Scanner_2.5.3850.exe) for Windows OS, or [Angry IP Scanner](https://angryip.org/download/) for Mac OS, and locate the IP address of RAK7246 WisGate Developer D0 in your Wi-Fi device.
 
 As seen in **Figure 12**, it is `192.168.0.28`, where the company is Raspberry Pi Foundation. You can use that IP address to configure other related parameters of `RAK7246 WisGate Developer D0` by logging in to the SSH Client Software, as stated in the previous step, now with the IP address of `RAK7246 WisGate Developer D0` from your Wi-Fi network.
 
@@ -262,7 +272,7 @@ The available [TTN V3 clusters](https://console.cloud.thethings.network/) are:
   caption="Changing Server Name to eu1.cloud.thethings.network"
 />
 
-14. Restart the Packet-forwarder by choosing “**3 Restart Packet-forwarder**” from the configuration options. 
+14. Restart the Packet-forwarder by choosing “**3 Restart Packet-forwarder**” from the configuration options.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-3\rak7246g-gateway\RAK7246G-14.png"
@@ -276,7 +286,7 @@ The available [TTN V3 clusters](https://console.cloud.thethings.network/) are:
 
 This section shows how to connect RAK7246 WisGate Developer D0 to TTNv3.
 
-1. Create a [TTN account](https://www.thethingsnetwork.org/) if you don't have one yet. 
+1. Create a [TTN account](https://www.thethingsnetwork.org/) if you don't have one yet.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-3\rak7246g-gateway\TTS1.png"
@@ -328,7 +338,7 @@ This section shows how to connect RAK7246 WisGate Developer D0 to TTNv3.
 
 * **Owner** – Automatically filled by The Things Stack, based on your account or created Organization. (e.g. rak-discovery)
 * **Gateway ID** – This will be the unique ID of your gateway in the Network. ID must contain only lowercase letters, numbers, and dashes (-). (e.g. rak-d0-ph-las-pinas)
-* **Gateway EUI** - A 64 bit extended unique identifier for your gateway. This is where the Gateway you get on step 4 of Configuring the RAK7246 WisGate Developer D0 above. (e.g. B827EBFFFE81) 
+* **Gateway EUI** - A 64 bit extended unique identifier for your gateway. This is where the Gateway you get on step 4 of Configuring the RAK7246 WisGate Developer D0 above. (e.g. B827EBFFFE81)
 * **Gateway name** – A name for your gateway. (e.g. RAK D0 Pilar Las Pinas PH)
 * **Gateway description (optional)** - Optional gateway description; can also be used to save notes about the gateway.
 * **Gateway Server address** - The address of the Gateway Server to connect to (i.e. eu1.cloud.thethings.network).
@@ -488,11 +498,11 @@ This section will guide you on how to set up using The Things Stack Community Ed
 11.	Delete the default code of the **Formatter parameter** field. Copy and paste the code below, and click **Save changes**.
 
 ```js
-function Decoder(bytes, port) 
+function Decoder(bytes, port)
 {
   var longitude_int, latitude_int;
   var decoded = {};
-  
+
   if (port === 2)
   {
     if(bytes[0]==9) // check if the header byte is 9.
@@ -513,7 +523,7 @@ function Decoder(bytes, port)
   caption="Payload formatters using Javascript"
 />
 
-12. After doing all the steps, set up first your Lora device so that it can send data to your The Things Stack account. 
+12. After doing all the steps, set up first your Lora device so that it can send data to your The Things Stack account.
 
 ### Setting Up the Device
 
@@ -555,7 +565,7 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
 />
 
 
-2. Open the Arduino IDE, then install the **RAKwireless BSP support for the Arduino Board Manager**. 
+2. Open the Arduino IDE, then install the **RAKwireless BSP support for the Arduino Board Manager**.
 
 3. Click on **File** > **Preferences**. In the **Preferences** window, look for **Additional Boards Manager URLs**, then click the icon on the right side.
 
@@ -661,7 +671,7 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
   caption="Completing the installation of TinyGPS Arduino library"
 />
 
-9. After all the libraries are installed, go to **Tools** > **Board: “Arduino Uno”** > **RAKwireless nRF Modules** > **WisBlock RAK4631**. 
+9. After all the libraries are installed, go to **Tools** > **Board: “Arduino Uno”** > **RAKwireless nRF Modules** > **WisBlock RAK4631**.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-3\wisblock-kit3-device\arduino25.png"
@@ -696,7 +706,7 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
   caption="Parts list of WisBlock Kit 3 and connection guidelines"
 />
 
-12. Finally, place the **RAK1904** to the **SLOT D**. Screw all the edges so that connection is firm and tight to avoid loose connection. 
+12. Finally, place the **RAK1904** to the **SLOT D**. Screw all the edges so that connection is firm and tight to avoid loose connection.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-3\wisblock-kit3-device\rak-kit1-2.png"
@@ -745,7 +755,7 @@ Make sure to attach the antennas first before powering on the **WisBlock Kit 3**
 />
 
 
-16. Open again your **Arduino IDE**. Change the keys of the sketch/code the keys from The Things Stack end device copied to the text editor from line 78 to line 80. Connect your complete assembled **WisBlock Kit 3** to your PC or laptop to the USB. 
+16. Open again your **Arduino IDE**. Change the keys of the sketch/code the keys from The Things Stack end device copied to the text editor from line 78 to line 80. Connect your complete assembled **WisBlock Kit 3** to your PC or laptop to the USB.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-3\wisblock-kit3-device\arduino29.png"
@@ -792,7 +802,7 @@ Make sure to attach the antennas first before powering on the **WisBlock Kit 3**
 
 This section will guide you on how to integrate your application using Datacake.
 
-1. Go to [datacake.co](https://datacake.co). Click **Dashboard**, then select **Sign Up**. 
+1. Go to [datacake.co](https://datacake.co). Click **Dashboard**, then select **Sign Up**.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-3\wisblock-kit3-datacake\datacake1.png"
@@ -814,7 +824,7 @@ This section will guide you on how to integrate your application using Datacake.
   caption="Creating account using Datacake"
 />
 
-3. Under the **Devices** tab, click the **Add Device** button. 
+3. Under the **Devices** tab, click the **Add Device** button.
 
 
 <rk-img
@@ -824,7 +834,7 @@ This section will guide you on how to integrate your application using Datacake.
 />
 
 4. A window will pop up. Select the following listed below, then click **Next**.
-   
+
    - Device: **LoraWAN**
    - Datacake Product: **New Product**
    - Product Name: **WisBlock Kit3 GPS Tracker**
@@ -843,7 +853,7 @@ This section will guide you on how to integrate your application using Datacake.
   caption="Choose The Things Stack V3"
 />
 
-6.  Go back to your **The Things Stack** account. Copy the **End device ID** and **DevEUI** from your **The Things Stack** account. Then, add the **DEVEUI** and **NAME** from the **The Things Stack** device and click **Next**. 
+6.  Go back to your **The Things Stack** account. Copy the **End device ID** and **DevEUI** from your **The Things Stack** account. Then, add the **DEVEUI** and **NAME** from the **The Things Stack** device and click **Next**.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-3\wisblock-kit3-datacake\tts1.png"
@@ -873,7 +883,7 @@ This section will guide you on how to integrate your application using Datacake.
   caption="The wisblock-kit3-gps-tracker device was added"
 />
 
-5. Under the **Members** tab, click **API Users**, then **Add API User**. 
+5. Under the **Members** tab, click **API Users**, then **Add API User**.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-3\wisblock-kit3-datacake\datacake10.png"
@@ -882,7 +892,7 @@ This section will guide you on how to integrate your application using Datacake.
 />
 
 
-6. Fill in all necessary information, then click **Save**. 
+6. Fill in all necessary information, then click **Save**.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-3\wisblock-kit3-datacake\datacake11.png"
@@ -897,7 +907,7 @@ This section will guide you on how to integrate your application using Datacake.
 />
 
 
-7. After filling in, copy the **Datacake API Token**. 
+7. After filling in, copy the **Datacake API Token**.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-3\wisblock-kit3-datacake\datacake13.png"
@@ -906,7 +916,7 @@ This section will guide you on how to integrate your application using Datacake.
 />
 
 
-8. Then go back to the **The Things Stack** account, and head on to **Integrations** > **Webhook** > **Add webhook**. 
+8. Then go back to the **The Things Stack** account, and head on to **Integrations** > **Webhook** > **Add webhook**.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-3\wisblock-kit3-datacake\tts2.png"
@@ -914,7 +924,7 @@ This section will guide you on how to integrate your application using Datacake.
   caption="Add Webhook Integration"
 />
 
-9. Choose **Datacake**, then fill in all the data requirements. 
+9. Choose **Datacake**, then fill in all the data requirements.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-3\wisblock-kit3-datacake\tts3.png"
@@ -931,7 +941,7 @@ This section will guide you on how to integrate your application using Datacake.
   caption="Adding Datacake API Token"
 />
 
-11. Go back to your **Datacake** account. Under the **Devices** tab, click **wisblock-kit3-gpstracker** > **Configuration** > **Fields**, then **Add Field**. 
+11. Go back to your **Datacake** account. Under the **Devices** tab, click **wisblock-kit3-gpstracker** > **Configuration** > **Fields**, then **Add Field**.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-3\wisblock-kit3-datacake\datacake14.png"
@@ -953,9 +963,9 @@ This section will guide you on how to integrate your application using Datacake.
 
 
 12. An Add Field window will pop up. Choose the following details, then click **Add Field**.
-  
+
   - Type: **Geolocation**
-  - Name: **Location** 
+  - Name: **Location**
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-3\wisblock-kit3-datacake\datacake17.png"
@@ -977,7 +987,7 @@ function Decoder(bytes, port) {
         field: "LOCATION",
         value: "(" + latitude + "," + longitude + ")"
     });
-   
+
     return datacakeFields;
 }
 ```
@@ -1002,7 +1012,7 @@ function Decoder(bytes, port) {
   caption="Debug log"
 />
 
-15. Still under the **Devices** tab, click **Dashboard**, then **Add Widget**. 
+15. Still under the **Devices** tab, click **Dashboard**, then **Add Widget**.
 
 
 <rk-img
@@ -1029,7 +1039,7 @@ function Decoder(bytes, port) {
 />
 
 
-18.  You can also add another data field by clicking **Add Field**. 
+18.  You can also add another data field by clicking **Add Field**.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-3\wisblock-kit3-datacake\datacake24.png"
@@ -1052,7 +1062,7 @@ function Decoder(bytes, port) {
 />
 
 
-20.   After doing all these steps, you can now see the **Map** widget in the **Datacake** dashboard.  
+20.   After doing all these steps, you can now see the **Map** widget in the **Datacake** dashboard.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-3\wisblock-kit3-datacake\datacake27.png"

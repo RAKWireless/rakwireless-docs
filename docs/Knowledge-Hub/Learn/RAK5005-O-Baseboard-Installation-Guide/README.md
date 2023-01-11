@@ -3,8 +3,10 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
 rak_desc: This document explains the installation details of WisBlock modules into the RAK5005-O Baseboard.
 tags:
-  - Tutorial
+  - User-Manual
+  - Installation
   - WisBlock
+  - RAK5005-O
 header:
   title: RAK5005-O Baseboard Installation Guide
   caption: by <b>RAKwireless Team</b>

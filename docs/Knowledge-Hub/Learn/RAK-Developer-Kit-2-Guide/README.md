@@ -3,9 +3,18 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/rak-developer-kit/kit-2/kit2.png
 rak_desc: This guide provides a step-by-step tutorial on how to use the RAK Developer Kit 2 (Weather Kit).
 tags:
-  - Tutorial
+  - User-Manual
   - RAK Developer Kit
   - WisBlock
+  - WisGate
+  - Weather Kit
+  - RAK7246
+  - RAK4631
+  - RAK5005-O
+  - RAK1902
+  - TTN
+  - Arduino
+  - Ubidots
 header:
   title: RAK Developer Kit 2 (Weather Kit) Guide
   caption: by <b>Rally Uminga</b>
@@ -62,7 +71,7 @@ Here are the steps in configuring the [RAK7246 WisGate Developer D0](https://sto
 
   - Windows OS
      SSH (Secure Shell) is typically used to log in to a remote machine and execute commands. There are a lot of free and good SSH Clients out there, namely [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), [BitVise SSH Client](https://www.bitvise.com/ssh-client-download), [MobaXterm](https://mobaxterm.mobatek.net/) and many more. Feel free to choose one that fits your needs, but in this guide, Putty is used.
- 
+
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\putty2.png"
   width="40%"
@@ -71,7 +80,7 @@ Here are the steps in configuring the [RAK7246 WisGate Developer D0](https://sto
 
   - Mac OS
      Open the Terminal of Mac OS. Launch the Terminal application found in the **`/Applications/Utilities/`** directory, but you can also launch it from Spotlight. Press **Command + Spacebar** and type **“Terminal”**, then return.
-     
+
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\terminal3.png"
   width="50%"
@@ -92,7 +101,7 @@ Here are the steps in configuring the [RAK7246 WisGate Developer D0](https://sto
 4. From the previous step, get the **Gateway ID** by typing `sudo gateway-config` to your chosen SSH Client terminal editor. It can be found on top of the terminal console, as shown in the red box in **Figure 5**. You may copy it on a txt file or any notepad software. It will be used in setting up the gateway in [TTN V3](https://www.thethingsnetwork.org/). See **Figure 5** for reference. You will use it also as Gateway EUI in the latter part of this guide. In this example, the Gateway ID is **B827EBFFFE81**.
 
 :::tip 📝 NOTE
-In this guide, you will be using TTN (The Things Network) as the LNS (LoRaWAN Network Server). There are many other LNS available that you can use, as well. The configuration steps will be different depending on your chosen LNS, but the general LoRaWAN principle is the same. 
+In this guide, you will be using TTN (The Things Network) as the LNS (LoRaWAN Network Server). There are many other LNS available that you can use, as well. The configuration steps will be different depending on your chosen LNS, but the general LoRaWAN principle is the same.
 
 Like for [RAK WisGate Edge Gateways](https://store.rakwireless.com/collections/wisgate-edge), it has built-in LNS that you can use.
 :::
@@ -168,7 +177,7 @@ Ensure to input the correct Wi-Fi SSID and password, or you will not be able to 
 sudo reboot
 ```
 
-7. After rebooting the RAK7246 WisGate Developer D0, you should check if it is connected successfully to your Wi-Fi network. You may use your local network modem/router admin console to check if RAK7246 is successfully connected. 
+7. After rebooting the RAK7246 WisGate Developer D0, you should check if it is connected successfully to your Wi-Fi network. You may use your local network modem/router admin console to check if RAK7246 is successfully connected.
 
 In this example, the admin console can be accessed via `http://192.168.0.1`. It is also common to have it on `http://192.168.1.1` on some routers. Take note of the IP address allotted to the RAK7246 by your Wi-Fi network.
 
@@ -178,7 +187,7 @@ In this example, the admin console can be accessed via `http://192.168.0.1`. It 
   caption="Web UI of local modem/router"
 />
 
-You can also use [Advance IP Scanner](https://download.advanced-ip-scanner.com/download/files/Advanced_IP_Scanner_2.5.3850.exe) for Windows OS, or [Angry IP Scanner](https://angryip.org/download/) for Mac OS, and locate the IP address of RAK7246 WisGate Developer D0 in your Wi-Fi device. 
+You can also use [Advance IP Scanner](https://download.advanced-ip-scanner.com/download/files/Advanced_IP_Scanner_2.5.3850.exe) for Windows OS, or [Angry IP Scanner](https://angryip.org/download/) for Mac OS, and locate the IP address of RAK7246 WisGate Developer D0 in your Wi-Fi device.
 
 As seen in **Figure 12**, it is `192.168.0.28`, where the company is Raspberry Pi Foundation. You can use that IP address to configure other related parameters of `RAK7246 WisGate Developer D0` by logging in to the SSH Client Software, as stated in the previous step, now with the IP address of `RAK7246 WisGate Developer D0` from your Wi-Fi network.
 
@@ -255,7 +264,7 @@ The available [TTN V3 clusters](https://console.cloud.thethings.network/) are:
   caption="Changing Server Name to eu1.cloud.thethings.network"
 />
 
-14. Restart the Packet-forwarder by choosing “**3 Restart Packet-forwarder**” from the configuration options. 
+14. Restart the Packet-forwarder by choosing “**3 Restart Packet-forwarder**” from the configuration options.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\RAK7246G-14.png"
@@ -269,7 +278,7 @@ The available [TTN V3 clusters](https://console.cloud.thethings.network/) are:
 
 This section shows how to connect RAK7246 WisGate Developer D0 to TTNv3.
 
-1. Create a [TTN account](https://www.thethingsnetwork.org/) if you don't have one yet. 
+1. Create a [TTN account](https://www.thethingsnetwork.org/) if you don't have one yet.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\TTS1.png"
@@ -321,7 +330,7 @@ This section shows how to connect RAK7246 WisGate Developer D0 to TTNv3.
 
 * **Owner** – Automatically filled by The Things Stack, based on your account or created Organization. (e.g. rak-discovery)
 * **Gateway ID** – This will be the unique ID of your gateway in the Network. ID must contain only lowercase letters, numbers, and dashes (-). (e.g. rak-d0-ph-las-pinas)
-* **Gateway EUI** - A 64 bit extended unique identifier for your gateway. This is where the Gateway you get on step 4 of Configuring the RAK7246 WisGate Developer D0 above. (e.g. B827EBFFFE81) 
+* **Gateway EUI** - A 64 bit extended unique identifier for your gateway. This is where the Gateway you get on step 4 of Configuring the RAK7246 WisGate Developer D0 above. (e.g. B827EBFFFE81)
 * **Gateway name** – A name for your gateway. (e.g. RAK D0 Pilar Las Pinas PH)
 * **Gateway description (optional)** - Optional gateway description; can also be used to save notes about the gateway.
 * **Gateway Server address** - The address of the Gateway Server to connect to (i.e. eu1.cloud.thethings.network).
@@ -452,24 +461,24 @@ This section will guide you on how to set up using The Things Stack Community Ed
 9. Delete the default code of the **Formatter parameter** field. Copy and paste the code below, and click **Save changes**.
 
 ```js
-function Decoder(bytes, port) 
+function Decoder(bytes, port)
 {
   var decoded = {};
-  
+
   if (port== 2)
   {
     var temp  = ((bytes[1]) << 8) | (bytes[2]);
     temp = (temp/100.0);
     decoded.temp = temp;
-    
+
     var hum  = ((bytes[3]) << 8) | (bytes[4]);
     hum = (hum/100.0);
     decoded.hum = hum;
-    
+
     var press = (bytes[5] << 24) | (bytes[6] << 16) | (bytes[7] << 8) | (bytes[8]);
     press = (press / 100.0);
     decoded.press = press;
-    
+
     var light = ((bytes[9]) << 8) | (bytes[10]);
     light = (light / 100.0);
     decoded.light = light;
@@ -485,7 +494,7 @@ function Decoder(bytes, port)
   caption="Payload formatters using Javascript"
 />
 
-12. After doing all the steps, set up first your Lora device so that it can send data to your The Things Stack account. 
+12. After doing all the steps, set up first your Lora device so that it can send data to your The Things Stack account.
 
 ### Setting Up the Device
 
@@ -526,7 +535,7 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
 />
 
 
-2. Open the Arduino IDE, then install the **RAKwireless BSP support for the Arduino Board Manager**. 
+2. Open the Arduino IDE, then install the **RAKwireless BSP support for the Arduino Board Manager**.
 
 3. Click on **File** -> **Preferences**. In the **Preferences** window, look for **Additional Boards Manager URLs**, then click the icon on the right side.
 
@@ -665,7 +674,7 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
   caption="Completing the installation of OPT3001 Arduino library"
 />
 
-9. After all the libraries are installed, go to **Tools** > **Board: “Arduino Uno”** > **RAKwireless nRF Modules** > **WisBlock RAK4631**. 
+9. After all the libraries are installed, go to **Tools** > **Board: “Arduino Uno”** > **RAKwireless nRF Modules** > **WisBlock RAK4631**.
 
 
 <rk-img
@@ -692,7 +701,7 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
 />
 
 
-11. After a successful compilation, assemble the hardware of **WisBlock Kit 2**. All parts are shown in **Figure 69**. All details about **WisBlock Kit 2** can be found on the [GitHub Repo](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Weather_Monitoring). 
+11. After a successful compilation, assemble the hardware of **WisBlock Kit 2**. All parts are shown in **Figure 69**. All details about **WisBlock Kit 2** can be found on the [GitHub Repo](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/solutions/Weather_Monitoring).
 
   - Connect the **RAK4631** in the **CPU SLOT** of the **RAK5005-O**.
   - Next, attach the following WisBlock to their corresponding slots:
@@ -706,7 +715,7 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
   caption="Parts list of WisBlock Kit 2 and connection guidelines"
 />
 
-12. Finally, place the **RAK1902** to the **SLOT D**. Screw all the edges so that the connection is firm and tight to avoid a loose connection. 
+12. Finally, place the **RAK1902** to the **SLOT D**. Screw all the edges so that the connection is firm and tight to avoid a loose connection.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\rak-kit1-2.png"
@@ -727,7 +736,7 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
 />
 
 
-13. Attached also are the **LORA** and **BLE** antennas to the **RAK4631 LPWAN CPU**. 
+13. Attached also are the **LORA** and **BLE** antennas to the **RAK4631 LPWAN CPU**.
 
 :::warning ⚠️ WARNING
 Make sure to attach the antennas first before powering on the **WisBlock Kit 2** to avoid damaging the Weather Monitoring kit.
@@ -749,7 +758,7 @@ Make sure to attach the antennas first before powering on the **WisBlock Kit 2**
 />
 
 
-15. Copy the **AppEUI**, **DevEUI**, and **AppKey**, then paste them into any text editor. Use the Toggle, Copy, and Visibility buttons to copy the correct format. 
+15. Copy the **AppEUI**, **DevEUI**, and **AppKey**, then paste them into any text editor. Use the Toggle, Copy, and Visibility buttons to copy the correct format.
 
 
 <rk-img
@@ -758,8 +767,8 @@ Make sure to attach the antennas first before powering on the **WisBlock Kit 2**
   caption="Paste it to the text editor"
 />
 
-    
-16. Open again your **Arduino IDE**. Change the keys of the sketch/code the keys from The Things Stack end device copied to the text editor from line 74 to line 76. Connect your complete assembled **WisBlock Kit 2** to your PC or laptop to the USB. 
+
+16. Open again your **Arduino IDE**. Change the keys of the sketch/code the keys from The Things Stack end device copied to the text editor from line 74 to line 76. Connect your complete assembled **WisBlock Kit 2** to your PC or laptop to the USB.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino29.png"
@@ -846,10 +855,10 @@ This section will guide you on how to integrate your application using Ubidots.
 />
 
 4. A window on the right side pops up, and choose the following:
-   
+
    - Connectivity: **LoraWAN**
    - Hardware Type: **Dev Kits**
-   - Device: **Blank Device**. 
+   - Device: **Blank Device**.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub6.png"
@@ -875,7 +884,7 @@ This section will guide you on how to integrate your application using Ubidots.
   caption="Device Weather Monitoring was created"
 />
 
-6. After adding the device, fill in the **Description** and **SET LOCATION**. 
+6. After adding the device, fill in the **Description** and **SET LOCATION**.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub8_1_1.png"
@@ -897,7 +906,7 @@ This section will guide you on how to integrate your application using Ubidots.
   caption="Create Data Plugin"
 />
 
-8. A window on the right side pops up, and choose **The Things Stack**. Follow the instructions given by the plugin, then click the forward button. 
+8. A window on the right side pops up, and choose **The Things Stack**. Follow the instructions given by the plugin, then click the forward button.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub11.png"
@@ -911,7 +920,7 @@ This section will guide you on how to integrate your application using Ubidots.
   caption="Click forward button"
 />
 
-9. Under the Ubidots Token, use **Default token**, then click again the forward button. 
+9. Under the Ubidots Token, use **Default token**, then click again the forward button.
 
 
 <rk-img
@@ -943,7 +952,7 @@ This section will guide you on how to integrate your application using Ubidots.
 />
 
 12. At the **Decoding Function**, execute the following steps, and then click **SAVE & MAKE LIVE**.
-    
+
        - Uncomment **line 37** (Remove `//`)
        - Comment **line 41** and **line 42** (Add `//`)
        - Comment **line 48** and **line 59** (Add `/*` & `*/`)
@@ -962,7 +971,7 @@ This section will guide you on how to integrate your application using Ubidots.
 />
 
 13. Go back to the The Things Stack account and select **Go to applications**.
-    
+
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\TTS17.png"
   width="80%"
@@ -1002,8 +1011,8 @@ This section will guide you on how to integrate your application using Ubidots.
   caption="Editing webhook"
 />
 
-17.  Go back again to your Ubidots account **Weather Monitoring** to obtain **Base URL**, **X-Auth-Token**, and **Uplink message**. 
-    
+17.  Go back again to your Ubidots account **Weather Monitoring** to obtain **Base URL**, **X-Auth-Token**, and **Uplink message**.
+
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\TTS22.png"
   width="80%"
@@ -1037,7 +1046,7 @@ This section will guide you on how to integrate your application using Ubidots.
   caption="Completing the Webhook integration"
 />
 
-19. Now, you need to create a dashboard in **Ubidots**. Click **Data** > **Dashboards**, then click the **Add new Dashboard** button. 
+19. Now, you need to create a dashboard in **Ubidots**. Click **Data** > **Dashboards**, then click the **Add new Dashboard** button.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub22.png"
@@ -1052,7 +1061,7 @@ This section will guide you on how to integrate your application using Ubidots.
 />
 
 
-20. Edit the **Add new Dashboard** window to your desired details, then press check button. 
+20. Edit the **Add new Dashboard** window to your desired details, then press check button.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub53.png"
@@ -1060,7 +1069,7 @@ This section will guide you on how to integrate your application using Ubidots.
   caption="Editing the Dashboard general information"
 />
 
-21. Click **Add new Widget**. A window appears on the right side, and choose **Thermometer**. 
+21. Click **Add new Widget**. A window appears on the right side, and choose **Thermometer**.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub54.png"
@@ -1075,7 +1084,7 @@ This section will guide you on how to integrate your application using Ubidots.
 />
 
 
-22. Edit the **Thermometer** widget. Change it into **Temperature**, then click the **Add Variables** button. 
+22. Edit the **Thermometer** widget. Change it into **Temperature**, then click the **Add Variables** button.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub56.png"
@@ -1084,7 +1093,7 @@ This section will guide you on how to integrate your application using Ubidots.
 />
 
 
-23. A window will pop up. Click **wisblock-kit2-weather-monitoring**, select the **temp** variable, then press the check button. 
+23. A window will pop up. Click **wisblock-kit2-weather-monitoring**, select the **temp** variable, then press the check button.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub30.png"
@@ -1109,7 +1118,7 @@ This section will guide you on how to integrate your application using Ubidots.
   caption="Pressing check button to finalize the widget"
 />
 
-25.  After adding the Temperature widget, click on the plus sign at the right side to add another widget. This time, choose **Gauge**, and add the **Humidity** widget. 
+25.  After adding the Temperature widget, click on the plus sign at the right side to add another widget. This time, choose **Gauge**, and add the **Humidity** widget.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub60.png"
@@ -1118,7 +1127,7 @@ This section will guide you on how to integrate your application using Ubidots.
 />
 
 
-26.  After editing the name into **Humidity**, click **Add Variables**. Select **wisblock-kit2-weather-monitoring**, choose the **hum** variable, then press the check button. 
+26.  After editing the name into **Humidity**, click **Add Variables**. Select **wisblock-kit2-weather-monitoring**, choose the **hum** variable, then press the check button.
 
 
 <rk-img
@@ -1135,7 +1144,7 @@ This section will guide you on how to integrate your application using Ubidots.
   caption="Completing the Humidity widget"
 />
 
-28. Use the same method in adding the Temperature and Humidity widgets. Just click on the plus sign at the right to add another widget, then choose **Gauge**. 
+28. Use the same method in adding the Temperature and Humidity widgets. Just click on the plus sign at the right to add another widget, then choose **Gauge**.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub63.png"
@@ -1143,7 +1152,7 @@ This section will guide you on how to integrate your application using Ubidots.
   caption="Adding Gauge to Pressure widget"
 />
 
-29.  This time, add the **Pressure** widget under Gauge, then click **Add Variables**. 
+29.  This time, add the **Pressure** widget under Gauge, then click **Add Variables**.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub64.png"
@@ -1152,7 +1161,7 @@ This section will guide you on how to integrate your application using Ubidots.
 />
 
 
-30. After editing the name into **Pressure**, click **wisblock-kit2-weather-monitoring**, choose the **press** variable, then press the check button. 
+30. After editing the name into **Pressure**, click **wisblock-kit2-weather-monitoring**, choose the **press** variable, then press the check button.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub65.png"
@@ -1185,7 +1194,7 @@ This section will guide you on how to integrate your application using Ubidots.
 />
 
 
-33.  After editing the name into **Luminosity**, click **wisblock-kit2-weather-monitoring**, choose the **light** variable, then click check button. 
+33.  After editing the name into **Luminosity**, click **wisblock-kit2-weather-monitoring**, choose the **light** variable, then click check button.
 
 
 <rk-img
@@ -1211,7 +1220,7 @@ This section will guide you on how to integrate your application using Ubidots.
   caption="Final appearance of the widgets"
 />
 
-36. Then, go to **Devices** > **Devices** menu, and edit the variables. 
+36. Then, go to **Devices** > **Devices** menu, and edit the variables.
 
 - For the **temp** variable:
     - Description: **Temperature**
@@ -1232,7 +1241,7 @@ This section will guide you on how to integrate your application using Ubidots.
 />
 
 
-- For the **hum** variable: 
+- For the **hum** variable:
     - Description: **Humidity**
     - Unit: **%RH**
 
@@ -1248,7 +1257,7 @@ This section will guide you on how to integrate your application using Ubidots.
   width="80%"
   caption="Adding unit for hum variable"
 />
-  
+
 - For the **press** variable:
     - Description: **Pressure**
     - Unit: **hkPa**
@@ -1269,7 +1278,7 @@ This section will guide you on how to integrate your application using Ubidots.
 
 - For the **light** variable:
     - Description: **Luminosity**
-    - Unit: **lux** 
+    - Unit: **lux**
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub78.png"

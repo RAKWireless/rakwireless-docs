@@ -4,8 +4,22 @@ rak_img: /assets/images/knowledge-hub/tutorials/build-a-seismic-sensor-with-wisb
 rak_desc: This guide provides a step-by-step tutorial on how to build a seismic sensor with the WisBlock RAK12027.
 tags:
   - Tutorial
-  - RAK12027
+  - Seismic Sensor
   - WisBlock
+  - Omron
+  - D7S
+  - RAK12027
+  - RAK4631
+  - RAK4631-R
+  - RAK3172
+  - RAK19007
+  - RAK1901
+  - Arduino
+  - RUI3
+  - Datacake
+  - RAKBox
+  - CayenneLPP
+  - SparkFun
 header:
   title: Build a Seismic Sensor with WisBlock
   caption: by <b>Bernd Giesecke</b>
@@ -34,7 +48,7 @@ Check out the following Omrons documentation for the D7S module:
 
 Using the small-sized [**RAK12027 Seismic Sensor**](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK12027/Overview) together with the WisBlock Core and WisBlock Base modules makes it very easy to build up the earthquake warning system.
 
-This example can be used as a starting point in building a low-power consumption seismic alarm system. It can be powered by a battery and solar panel. The consumption in sleep mode is ~90uA.
+This example can be used as a starting point in building a low-power consumption seismic alarm system. It can be powered by a battery and solar panel. The consumption in sleep mode is ~90&nbsp;uA.
 
 The code is completely interrupt-based to keep the MCU as much as possible in sleep mode to save battery. The collected data of an earthquake is sent over LoRaWAN, but it can also be used with LoRa P2P. It sends data packets after the D7S has finished its data processing with the information on the SI level, PGA, shutdown alert, and collapse alert signal.
 

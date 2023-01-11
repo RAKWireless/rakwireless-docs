@@ -5,6 +5,8 @@ rak_desc: This tutorial describes on how to use the fast and simple Dynamic Doma
 tags:
   - Deployment-Guide
   - WisGate
+  - DDNS
+  - DYNDNS
 header:
   title: RAK Industrial LPWAN Gateway Remote Management - DDNS
   caption: by <b>RAKwireless Team</b>

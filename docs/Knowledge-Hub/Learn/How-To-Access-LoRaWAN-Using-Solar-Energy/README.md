@@ -4,6 +4,12 @@ rak_img: /assets/images/knowledge-hub/tutorials/access-lorawan-using-solar-energ
 rak_desc: A demonstration on how to deploy your LoRaWAN using the RAKwireless' Solar Panel and Battery Kit.
 tags:
   - Tutorial
+  - Solar Energy
+  - WisGate Edge
+  - WisGate
+  - RAK7249
+  - MPPT
+  - LoRaWAN
 header:
   title: How To Access LoRaWAN using Solar Energy
   caption: by <b>Sam Domingo</b>

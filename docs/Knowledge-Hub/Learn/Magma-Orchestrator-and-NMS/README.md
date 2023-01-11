@@ -7,6 +7,9 @@ tags:
   - Magma Box
   - Docker
   - Installation Guide
+  - Configuration
+  - Ubuntu
+  - NMS
 header:
   title: Magma Orchestrator & NMS
   caption: by <b>RAKwireless Team</b>

@@ -5,6 +5,10 @@ rak_desc: This document describes in detail the functionality of the Web Managem
 tags:
   - User-Manual
   - WisGate
+  - OpenWRT
+  - MQTT
+  - LoRaWAN
+  - TTN
 header:
   title: WEB Management Platform
   caption: by <b>RAKwireless Team</b>

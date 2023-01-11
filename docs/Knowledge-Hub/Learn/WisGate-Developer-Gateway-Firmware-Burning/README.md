@@ -5,6 +5,9 @@ rak_desc: This document is a sample demonstration on how to burn the latest firm
 tags:
   - User-Manual
   - WisGate
+  - Firmware Catalog
+  - Raspberry Board
+  - balenaEtcher
 header:
   title: Developer Gateway Firmware Setup
   caption: by <b>RAKwireless Team</b>

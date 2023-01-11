@@ -4,6 +4,8 @@ rak_img: /assets/images/knowledge-hub/tutorials/the-importance-of-high-power-wif
 rak_desc: A brief discussion of a high power WiFi Module and Power Line Communications (PLC).
 tags:
   - Tutorial
+  - PLC
+  - Power Line Communications
 header:
   title: The Importance of High Power WiFi Module and Power Line Communications
   caption: by <b>Ken Yu</b>
@@ -20,10 +22,10 @@ author:
 A WiFi module is a self-contained SOC with integrated TCP/IP protocol stack that can give any microcontroller the access to a WiFi network. The WiFi modules have many functions including hosting applications, offloading all WiFi networking functions from another application processor etc.
 
 **A high Power Wi-Fi module platform is**:
-* Cost effective
-* High power
-* Flexible
-* Used for embedded devices.
+* Cost effective,
+* High power,
+* Flexible,
+* Used for embedded devices,
 * Used in applications such as wireless sensors and thermostats.
 
 A high power WiFi module is a combination of ARM7 based processors, an RF transceiver, 802.11 MAC, security and PHY functions, which works with IEEE regulatory domains.

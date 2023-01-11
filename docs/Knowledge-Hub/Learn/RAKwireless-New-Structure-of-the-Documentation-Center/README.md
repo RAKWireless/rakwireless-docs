@@ -3,7 +3,11 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
 rak_desc: An overview of the RAKwireless new structure of the documentation center.
 tags:
-  - Tutorial
+  - User-Manual
+  - RAKwireless
+  - Documentation
+  - Product Categories
+  - Model Categories
 header:
   title: RAKwireless - New Structure of the Documentation Center
   caption: by <b>RAKwireless Team</b>

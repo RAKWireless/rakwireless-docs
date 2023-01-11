@@ -38,7 +38,7 @@ This device released by RAKwireless is already pre-loaded with its latest firmwa
 * 1-pc RAK815 WisTrio LPWAN Tracker
 * 1-pc Micro USB Cable
 * 1-pc GPS Antenna
-* 1-pc LoRa® Antenna
+* 1-pc LoRa Antenna
 * 1-pc Rod Antenna
 * 10-pcs Dupont Lines
 * 5-pcs Jumping Caps

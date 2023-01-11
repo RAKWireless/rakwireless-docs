@@ -6,6 +6,10 @@ tags:
   - Deployment-Guide
   - WisGate
   - WisDuino
+  - RAK7249
+  - RAK811
+  - MQTT
+  - LoRa
 header:
   title: Multi-RAK Gateway Mesh
   caption: by <b>RAKwireless Team</b>

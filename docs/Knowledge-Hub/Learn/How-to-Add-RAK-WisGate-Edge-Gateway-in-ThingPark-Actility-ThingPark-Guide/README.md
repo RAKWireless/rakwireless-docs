@@ -9,6 +9,7 @@ tags:
   - WisGate
   - WisGate Edge
   - Gateway
+  - Basics Station
 header:
   title: How to Add RAK WisGate Edge gateway in ThingPark - Actility ThingPark Guide
   caption: by <b>RAKwireless Team</b>

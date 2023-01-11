@@ -5,6 +5,8 @@ rak_desc: A short explanatory piece about the RF connectors used in RAK's device
 tags:
   - Tutorial
   - Antennas
+  - RP SMA
+  - SMA
 header:
   title: RAK Antenna RF Connectors 101
   caption: by <b>Denitsa Prodanova</b>
@@ -16,17 +18,17 @@ author:
   img: /assets/images/knowledge-hub/authors/denitsa.png
 ---
 
-# RAK Antenna RF connectors 101
+# RAK Antenna RF Connectors 101
 
 Antennas are a pretty important part of any IoT device. Anyone knows that and usually makes lengthy research about what antenna to get to ensure better performance. But there is one small and seemingly not so important part of the antenna, that sometimes gets neglected. An actually crucial part, that makes the connection of the antenna to the device – the RF connector!
 
-We see an increased demand for antennas with big projects like Helium’s “People’s Network”, and the overall growing popularity of IoT, and we are making this small article to give some more information and clarification about our antenna connectors in particular. 
+We see an increased demand for antennas with big projects like Helium’s “People’s Network”, and the overall growing popularity of IoT, and we are making this small article to give some more information and clarification about our antenna connectors in particular.
 
 **So, what is the RF connector?**
 
 The coaxial Radio Frequency connector (RF connector) is an electrical connector designed to work at radio frequencies in the multi-megahertz range. RF connectors are usually used with coaxial cables. They are designed to maintain the shielding that the coaxial design offers. The better and newer ones minimize the change in transmission line impedance at the connection so signal reflection and power loss are reduced (this means they have lower insertion loss). The RF connector must not allow external signals into the circuit through electromagnetic interference and capacitive pickup.
 
-Common types of RF connectors are Type-N, UHF, TNC, BNC, SMA, and they are used for many things such as radios, surge protectors, enclosures, coaxial cables, and antennas. 
+Common types of RF connectors are Type-N, UHF, TNC, BNC, SMA, and they are used for many things such as radios, surge protectors, enclosures, coaxial cables, and antennas.
 
 
 ## Polarity and Gender
@@ -60,7 +62,7 @@ These connectors have the lowest insertion loss from the 3 types in this article
 As a rule of thumb when installing add 1dB loss to the link budget for every 2 connectors, for example on both ends of a cable.
 
 
-### SMA Connectors 
+### SMA Connectors
 
 The SMA (SubMiniature version A) connectors are semi-precision coaxial RF connectors operating up to 18 GHz, though some proprietary versions are rated to 26.5 GHz. It is commonly used in RF power amplifiers, RF isolators, microwave systems, mobile telephone antennas, Wi-Fi antenna systems, and radio astronomy at 5 GHz+. It is mostly used in indoor solutions as it is not sufficiently weather-proof for outdoor deployments.
 
@@ -70,7 +72,7 @@ The SMA (SubMiniature version A) connectors are semi-precision coaxial RF connec
   caption="SMA Connectors"
 />
 
-These connectors have significantly higher insertion loss than the N-type connectors. For LoRa frequencies around the 800 to 900MHz band, 0.6 to 1dB is what one would expect. 
+These connectors have significantly higher insertion loss than the N-type connectors. For LoRa frequencies around the 800 to 900MHz band, 0.6 to 1dB is what one would expect.
 
 As a rule of thumb when installing add 2dB loss to the link budget for every 2 connectors, for example on both ends of a cable.
 
@@ -90,6 +92,6 @@ For approximating the insertion loss see the SMA section.
 
 For more detailed explanation about losses refer to [this](https://www.hamradio.me/connectors/uhf-connector-test-results.html?fbclid=IwAR0VV-TMbFf0NLpzMBGqLdtIv8oYPKSeJYVhBZ7hqUCzrd12cCep1gzb4uE) article from Ham Radio.
 
-To ensure you will get the right antenna for your device, just have those references in mind! 
+To ensure you will get the right antenna for your device, just have those references in mind!
 
 <rk-author />

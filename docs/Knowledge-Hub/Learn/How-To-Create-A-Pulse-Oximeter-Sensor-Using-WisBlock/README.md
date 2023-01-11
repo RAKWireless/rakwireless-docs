@@ -5,6 +5,10 @@ rak_desc: A brief guide on creating a health monitoring tool using the RAK WisBl
 tags:
   - Tutorial
   - WisBlock
+  - Pulse Oximeter Sensor
+  - RAK5005-O
+  - RAK4631
+  - RAK12012
 header:
   title: How to Create a Pulse Oximeter Sensor Using WisBlock
   caption: by <b>Anthony Aldrin Beltran</b>

@@ -1,10 +1,16 @@
 ---
 sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
-rak_desc: This document walks through the details on the steps on how to install Raspberry Pi, InfluxDB, Grafana, and Telegraf in Ubuntu. 
+rak_desc: This document walks through the details on the steps on how to install Raspberry Pi, InfluxDB, Grafana, and Telegraf in Ubuntu.
 tags:
-  - Ubuntu
   - Tutorial
+  - Ubuntu
+  - Balena Etcher
+  - Raspberry Pi
+  - PuTTY
+  - InfluxDB
+  - Grafana
+  - Telegraf
 header:
   title: How to Install Modules in Ubuntu
   caption:  by <b>Vladislav Yordanov</b>
@@ -56,7 +62,7 @@ You will be asked to change your password on the first boot, which will end with
 
 ## Installing InfluxDB
 
-Debian and Ubuntu users can install the latest stable version of InfluxDB using the `apt-get` package manager. 
+Debian and Ubuntu users can install the latest stable version of InfluxDB using the `apt-get` package manager.
 
 1. First, you need root access to add the influxDB repository so start with the command:
 
@@ -97,7 +103,7 @@ systemctl enable --now influxdb
 sudo service influxdb status
 ```
 
-The InfluxDB is now running and will start at boot, and it should show active, as shown in Figure 3. 
+The InfluxDB is now running and will start at boot, and it should show active, as shown in Figure 3.
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/how-to-install-modules-in-ubuntu/ubuntu-influxdb/service-status.png"
@@ -190,7 +196,7 @@ sudo apt-get update && sudo apt-get install telegraf
 sudo systemctl start telegraf
 ```
 
-3. Check if the service is active using the command below. 
+3. Check if the service is active using the command below.
 
 ```bash
 sudo service telegraf status

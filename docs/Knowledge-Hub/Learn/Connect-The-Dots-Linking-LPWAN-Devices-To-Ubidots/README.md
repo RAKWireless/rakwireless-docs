@@ -4,6 +4,15 @@ rak_img: /assets/images/knowledge-hub/tutorials/ubidots-integration/overview.jpg
 rak_desc: A demonstration on how to integrate the RAKwireless LPWAN Nodes and Gateways to the Ubidots IoT platform.
 tags:
   - Tutorial
+  - Ubidots
+  - WisGate Edge
+  - WisGate
+  - WisNode
+  - RAK7249
+  - RAK7258
+  - RAK7204
+  - TTN
+  - Cayenne LPP
 header:
   title: "Connect the Dots : Linking LPWAN (LoRaWAN) devices to Ubidots"
   caption: by <b>Sam Domingo</b>

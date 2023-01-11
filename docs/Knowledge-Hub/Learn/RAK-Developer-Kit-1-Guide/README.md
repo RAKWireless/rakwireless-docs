@@ -3,9 +3,20 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/rak-developer-kit/starter-kit/kit1.png
 rak_desc: This guide provides a step-by-step tutorial on how to use the RAK Developer Kit 1 (Entry Kit).
 tags:
-  - Tutorial
+  - User-Manual
   - RAK Developer Kit
+  - WisGate
   - WisBlock
+  - Entry Kit
+  - RAK7246
+  - RAK4631
+  - RAK5005-O
+  - PuTTY
+  - TTN
+  - Arduino
+  - PlatformIO
+  - BLE
+  - LoRaWAN
 header:
   title: RAK Developer Kit 1 (Entry Kit) Guide
   caption: by <b>Anthony Aldrin Beltran</b>
@@ -19,7 +30,7 @@ posted: 03/01/2022 08:00 AM
 
 This guide is about learning how to set up a complete LoRaWAN application from device, gateway up to network server. It composes of the following sections:
 
-- [ Setting Up the Gateway](/Knowledge-Hub/Learn/RAK-Developer-Kit-1-Guide/#setting-up-the-gateway)
+- [Setting Up the Gateway](/Knowledge-Hub/Learn/RAK-Developer-Kit-1-Guide/#setting-up-the-gateway)
 - [Setting Up the Network Server](/Knowledge-Hub/Learn/RAK-Developer-Kit-1-Guide/#setting-up-the-network-server)
 - [Setting Up the Device](/Knowledge-Hub/Learn/RAK-Developer-Kit-1-Guide/#setting-up-the-device)
 
@@ -61,7 +72,7 @@ Here are the steps in configuring the [RAK7246 WisGate Developer D0](https://sto
 
   - Windows OS
      SSH (Secure Shell) is typically used to log in to a remote machine and execute commands. There are a lot of free and good SSH Clients out there, namely [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), [BitVise SSH Client](https://www.bitvise.com/ssh-client-download), [MobaXterm](https://mobaxterm.mobatek.net/) and many more. Feel free to choose one that fits your needs, but in this guide, Putty is used.
- 
+
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-2-a.png"
   width="40%"
@@ -70,7 +81,7 @@ Here are the steps in configuring the [RAK7246 WisGate Developer D0](https://sto
 
   - Mac OS
      Open the Terminal of Mac OS. Launch the Terminal application found in the **`/Applications/Utilities/`** directory, but you can also launch it from Spotlight. Press **Command + Spacebar** and type **“Terminal”**, then return.
-     
+
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-2-b.png"
   width="50%"
@@ -91,7 +102,7 @@ Here are the steps in configuring the [RAK7246 WisGate Developer D0](https://sto
 4. From the previous step, get the **Gateway ID** by typing `sudo gateway-config` to your chosen SSH Client terminal editor. It can be found on top of the terminal console, as shown in the red box in **Figure 5**. You may copy it on a txt file or any notepad software. It will be used in setting up the gateway in [TTN V3](https://www.thethingsnetwork.org/). See **Figure 5** for reference. You will use it also as Gateway EUI in the latter part of this guide.
 
 :::tip 📝 NOTE
-In this guide, you will be using TTN (The Things Network) as the LNS (LoRaWAN Network Server). There are many other LNS available that you can use, as well. The configuration steps will be different depending on your chosen LNS, but the general LoRaWAN principle is the same. 
+In this guide, you will be using TTN (The Things Network) as the LNS (LoRaWAN Network Server). There are many other LNS available that you can use, as well. The configuration steps will be different depending on your chosen LNS, but the general LoRaWAN principle is the same.
 
 Like for [RAK WisGate Edge Gateways](https://store.rakwireless.com/collections/wisgate-edge), it has built-in LNS that you can use.
 :::
@@ -166,9 +177,9 @@ Ensure to input the correct Wi-Fi SSID and password, or you will not be able to 
 sudo reboot
 ```
 
-7. After rebooting the RAK7246 WisGate Developer D0, you should check if it is connected successfully to your Wi-Fi network. You may use your local network modem/router admin console to check if RAK7246 is successfully connected. 
+7. After rebooting the RAK7246 WisGate Developer D0, you should check if it is connected successfully to your Wi-Fi network. You may use your local network modem/router admin console to check if RAK7246 is successfully connected.
 
-In this example, the admin console can be accessed via `http://192.168.0.1`. It is also common to have it on `http://192.168.1.1` on some routers. Take note of the IP address allotted to the RAK7246 by your Wi-Fi 
+In this example, the admin console can be accessed via `http://192.168.0.1`. It is also common to have it on `http://192.168.1.1` on some routers. Take note of the IP address allotted to the RAK7246 by your Wi-Fi
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-7-a.png"
@@ -176,7 +187,7 @@ In this example, the admin console can be accessed via `http://192.168.0.1`. It 
   caption="Web UI of local modem/router"
 />
 
-You can also use [Advance IP Scanner](https://download.advanced-ip-scanner.com/download/files/Advanced_IP_Scanner_2.5.3850.exe) for Windows OS, or [Angry IP Scanner](https://angryip.org/download/) for Mac OS, and locate the IP address of RAK7246 WisGate Developer D0 in your Wi-Fi device. 
+You can also use [Advance IP Scanner](https://download.advanced-ip-scanner.com/download/files/Advanced_IP_Scanner_2.5.3850.exe) for Windows OS, or [Angry IP Scanner](https://angryip.org/download/) for Mac OS, and locate the IP address of RAK7246 WisGate Developer D0 in your Wi-Fi device.
 
 As seen in **Figure 12**, it is `192.168.0.28`, where the company is Raspberry Pi Foundation. You can use that IP address to configure other related parameters of `RAK7246 WisGate Developer D0` by logging in to the SSH Client Software, as stated in the previous step, now with the IP address of `RAK7246 WisGate Developer D0` from your Wi-Fi network.
 
@@ -252,7 +263,7 @@ The available [TTN V3 clusters](https://console.cloud.thethings.network/) are:
   caption="Changing Server Name to eu1.cloud.thethings.network"
 />
 
-14. Restart the Packet-forwarder by choosing “**3 Restart Packet-forwarder**” from the configuration options. 
+14. Restart the Packet-forwarder by choosing “**3 Restart Packet-forwarder**” from the configuration options.
 
 
 <rk-img
@@ -267,7 +278,7 @@ The available [TTN V3 clusters](https://console.cloud.thethings.network/) are:
 
 This section shows how to connect RAK7246 WisGate Developer D0 to TTN.
 
-1. Create a [TTN account](https://www.thethingsnetwork.org/) if you don't have one yet. 
+1. Create a [TTN account](https://www.thethingsnetwork.org/) if you don't have one yet.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\ttnv3-setup\TTNV3-1.png"
@@ -299,10 +310,10 @@ This section shows how to connect RAK7246 WisGate Developer D0 to TTN.
 />
 
 4.  Fill in the needed information:
-  
+
 * **Owner** – Automatically filled by The Things Stack, based on your account or created Organization. (e.g. rak-discovery)
 * **Gateway ID** – This will be the unique ID of your gateway in the Network. ID must contain only lowercase letters, numbers, and dashes (-). (e.g. rak-d0-ph-las-pinas)
-* **Gateway EUI** - A 64 bit extended unique identifier for your gateway. This is where the gateway you get on the above section Configuring the RAK7246 WisGate Developer D0. (e.g. B827EBFFFE81) 
+* **Gateway EUI** - A 64 bit extended unique identifier for your gateway. This is where the gateway you get on the above section Configuring the RAK7246 WisGate Developer D0. (e.g. B827EBFFFE81)
 * **Gateway name** – A name for your gateway. (e.g. RAK D0 Pilar Las Pinas PH)
 * **Gateway description (optional)** - Optional gateway description; can also be used to save notes about the gateway.
 * **Gateway Server address** - The address of the Gateway Server to connect to (i.e. eu1.cloud.thethings.network).
@@ -381,7 +392,7 @@ This section will guide you on how to set up your device.
   caption="Configurations for adding end devices"
 />
 
-6.  Click **Show advanced activation, LoRaWAN class, and cluster settings**, then select **Over the air action (OTAA)**. 
+6.  Click **Show advanced activation, LoRaWAN class, and cluster settings**, then select **Over the air action (OTAA)**.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\RAK4631-ttnv3-setup\RAK4631-TTNV3-6.png"
@@ -389,9 +400,9 @@ This section will guide you on how to set up your device.
   caption="OTAA settings"
 />
 
-7. Then you need to put a unique End device ID and EUIs (DevEUI and AppEUI), as shown in **Figure 33**. Check if your RAK4631 module has a **DevEUI** on **sticker or QR** that you can scan, then use this as the device unique DevEUI. 
+7. Then you need to put a unique End device ID and EUIs (DevEUI and AppEUI), as shown in **Figure 33**. Check if your RAK4631 module has a **DevEUI** on **sticker or QR** that you can scan, then use this as the device unique DevEUI.
 
-For **AppEUI**, you can click **Fill with Zeros**. 
+For **AppEUI**, you can click **Fill with Zeros**.
 Click **Generate** for the **AppKey**. Then the End Device Name will be automatically filled by the website. You can also put a different End Device ID if you need to. Finally, click **Register End Device**.
 
 <rk-img
@@ -400,7 +411,7 @@ Click **Generate** for the **AppKey**. Then the End Device Name will be automati
   caption="Registering the End Device"
 />
 
-8. You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 34**. Take note of these keys, such as the `AppEUI`, `DevEUI`, and the `AppKey`, as they are needed in the next part of this guide. 
+8. You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 34**. Take note of these keys, such as the `AppEUI`, `DevEUI`, and the `AppKey`, as they are needed in the next part of this guide.
 
 
 <rk-img
@@ -441,7 +452,7 @@ For RAK5005-O WisBlock Base with RAK4631 WisBlock Core, the accessible GPIO pins
 
 There are usable LEDs, as well, that can be controlled by the RAK4631 on the WisBlock Base board:
 
-- `LED_GREEN` 
+- `LED_GREEN`
 - `LED_BLUE`
 
 UART1 and I2C_1 are also exposed on the header of the WisBlock Base board.
@@ -462,9 +473,9 @@ UART1 and I2C_1 are also exposed on the header of the WisBlock Base board.
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak1910/quickstart/16.removing-screws.png"
@@ -490,7 +501,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
 
 ##### LoRa and BLE Antenna
 
-Another important part component of RAK4631 is the antennas. 
+Another important part component of RAK4631 is the antennas.
 
 <rk-img
   src="/assets/images/wisblock/rak4631/quickstart/lora-antenna.png"
@@ -516,7 +527,7 @@ RAK4631 has a label on its sticker where to connect the antennas, as shown in **
 />
 
 :::tip 📝 NOTE
-Detailed information about the RAK4631 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/). 
+Detailed information about the RAK4631 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
 :::
 
 :::warning ⚠️ WARNING
@@ -536,7 +547,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 #### Creating LoRaButton Application
 
-Once the RAK4631 is connected to RAK5005-O WisBlock Base, You can connect a push button to the **RAK5005-O WisBlock Base**, having its terminals, one in  `WB_IO1` for IO1 pin, and the other one in `GND`. At the end of this guide, you should have a LoRaWAN device where a LoRaWAN uplink packet will be transmitted every time that button will be pressed. 
+Once the RAK4631 is connected to RAK5005-O WisBlock Base, You can connect a push button to the **RAK5005-O WisBlock Base**, having its terminals, one in  `WB_IO1` for IO1 pin, and the other one in `GND`. At the end of this guide, you should have a LoRaWAN device where a LoRaWAN uplink packet will be transmitted every time that button will be pressed.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\lorabutton\lorabutton-1.png"
@@ -548,8 +559,8 @@ Once the RAK4631 is connected to RAK5005-O WisBlock Base, You can connect a push
 
 1. Download the Arduino IDE from this link [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software) then install it on your PC or laptop.
 
-:::warning ⚠️ WARNING    
-_**If you are using Windows 10**_.    
+:::warning ⚠️ WARNING
+_**If you are using Windows 10**_.
 Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the original Arduino IDE from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 
@@ -581,9 +592,9 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 />
 
 
-2. Open the Arduino IDE, then install the **RAKwireless BSP support for the Arduino Board Manager**. 
+2. Open the Arduino IDE, then install the **RAKwireless BSP support for the Arduino Board Manager**.
 
-3. Click on **File** > **Preferences**. In the **Preferences** window, look for **Additional Boards Manager URLs** then click the icon on the right side. 
+3. Click on **File** > **Preferences**. In the **Preferences** window, look for **Additional Boards Manager URLs** then click the icon on the right side.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino6.png"
@@ -615,7 +626,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
   caption="Completing the setup of RAKwireless BSP support for the Arduino Board Manager"
 />
 
-5. Go to **Tools** > **Board: "Arduino Uno"** > **Boards Manager**. Type **RAK** in the search bar and the RAKwireless Core modules will be shown in the window. 
+5. Go to **Tools** > **Board: "Arduino Uno"** > **Boards Manager**. Type **RAK** in the search bar and the RAKwireless Core modules will be shown in the window.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino10.png"
@@ -639,7 +650,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
   width="80%"
   caption="Successful Installation of  RAKwireless nRF Boards"
 />
-  
+
 7. Lastly, ensure that you have the updated SX126x.
 
 
@@ -660,9 +671,9 @@ Copy this code in your Arduino IDE. More information about the code is discussed
  * @brief LoRaWan Button Example Application
  * @version 0.1
  * @date 2022-01-10
- * 
+ *
  * @copyright Copyright (c) 2022
- * 
+ *
  * @note RAK4631 GPIO mapping to nRF52840 GPIO ports
    RAK4631    <->  nRF52840
    WB_IO1     <->  P0.17 (GPIO 17)
@@ -795,7 +806,7 @@ void setup()
       break;
   }
   Serial.println("=====================================");
-  
+
   // Setup the EUIs and Keys
   if (doOTAA)
   {
@@ -826,7 +837,7 @@ void setup()
 void loop()
 {
   // Put your application tasks here, like reading of sensors,
-  // Controlling actuators and/or other functions. 
+  // Controlling actuators and/or other functions.
   int stat=digitalRead(WB_IO1);
   if(!stat){
     send_lora_frame();
@@ -933,7 +944,7 @@ You can change to unconfirmed message by changing the value to `LMH_UNCONFIRMED_
 Default is **Class A**.
 
 ```c
-DeviceClass_t g_CurrentClass = CLASS_A; 
+DeviceClass_t g_CurrentClass = CLASS_A;
 ```
 You can change this to `CLASS_B` (still under development) or `CLASS_C`.
 

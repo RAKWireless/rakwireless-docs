@@ -5,6 +5,9 @@ rak_desc: This tutorial is for people who have purchased a RAK WisGate Edge gate
 tags:
   - Tutorial
   - WisGate
+  - MQTT
+  - LoRaWAN
+  - RAK7204
 header:
   title: Use the MQTT Broker Like a Pro + Examples
   caption: by <b>RAKwireless Team</b>
@@ -12,7 +15,7 @@ header:
 posted: 04/10/2021 6:00 PM
 ---
 
-# Use the MQTT Broker Like a Pro + Examples
+# 	
 
 ## Description
 

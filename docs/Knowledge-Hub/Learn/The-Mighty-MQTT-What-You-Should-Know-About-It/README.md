@@ -4,6 +4,9 @@ rak_img: /assets/images/knowledge-hub/tutorials/the-mighty-mqtt-what-you-should-
 rak_desc: A brief discussion about the Message Queuing Telemetry Transport (MQTT) connectivity protocol.
 tags:
   - Tutorial
+  - MQTT
+  - RAK7249
+  - RAK7258
 header:
   title: The Mighty MQTT! What You Should Know About It
   caption: by <b>Sam Domingo</b>

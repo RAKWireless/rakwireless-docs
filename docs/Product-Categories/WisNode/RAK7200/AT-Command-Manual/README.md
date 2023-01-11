@@ -11,7 +11,7 @@ tags:
 
 # RAK7200 AT Command Manual
 
-To connect the RAK7200 module to a LoRa-P2P connection or a LoRaWAN®  network, the module must be configured and LoRa® parameters must be set  by sending AT commands. Listed below are the summary of the AT commands  supported by the RAK7200 Module.
+To connect the RAK7200 module to a LoRa-P2P connection or a LoRaWAN  network, the module must be configured and LoRa parameters must be set  by sending AT commands. Listed below are the summary of the AT commands  supported by the RAK7200 Module.
 
 ## AT Command Syntax
 

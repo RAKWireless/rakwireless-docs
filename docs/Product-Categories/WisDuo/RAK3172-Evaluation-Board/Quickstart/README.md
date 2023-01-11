@@ -1459,7 +1459,7 @@ Try again `AT` and you should see it on the terminal followed by `OK`.
   caption="at+version command response"
 />
 
-1. On setting-up the RAK3172-E to work in LoRa P2P mode, you need to change the LoRa® network work mode command on both RAK3172-E modules.
+1. On setting-up the RAK3172-E to work in LoRa P2P mode, you need to change the LoRa network work mode command on both RAK3172-E modules.
 
 ```
 AT+NWM=0

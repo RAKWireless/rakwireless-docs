@@ -67,7 +67,7 @@ coverage for an entire city.
 - Supports 5&nbsp;V/ 3&nbsp;A power supply
 - IP30 housing
 - TX power up to 27&nbsp;dBm, RX sensitivity down to -139&nbsp;dBm @SF12, BW 125&nbsp;kHz
-- LoRa® Frequency band support: RU864, IN865, EU868, US915, AU915, KR920, AS923
+- LoRa Frequency band support: RU864, IN865, EU868, US915, AU915, KR920, AS923
 - Includes Pi ready 'ID EE PROM', GPIO setup, and device tree can be automatically configured
 from vendor information
 - Supports a fully open source LoRaWAN server

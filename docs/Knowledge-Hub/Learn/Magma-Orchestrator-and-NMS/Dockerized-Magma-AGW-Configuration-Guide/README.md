@@ -8,7 +8,9 @@ tags:
   - Configuration Guide
   - Orc8r
   - Docker
-  - 5G
+  - 5G Standalone
+  - Ubuntu
+  - AGW
 header:
   title: Dockerized Magma AGW Configuration Guide
   caption: by <b>RAKwireless Team</b>

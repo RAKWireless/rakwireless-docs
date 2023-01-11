@@ -50,7 +50,7 @@ WisBlock is created with 4 modular blocks.
 #### WisBlock Core
 
 - WisBlock Core is the **data processing center** of WisBlock.
-- Some WisBlock Core modules also offer LoRa/LoRaWan® communication and additional communication means like Bluetooth, Bluetooth Low Energy, or Wi-Fi.
+- Some WisBlock Core modules also offer LoRa/LoRaWAN communication and additional communication means like Bluetooth, Bluetooth Low Energy, or Wi-Fi.
 
 #### WisBlock Sensor
 

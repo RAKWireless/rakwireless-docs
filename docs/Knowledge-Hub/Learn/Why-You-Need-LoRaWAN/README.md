@@ -4,6 +4,7 @@ rak_img: /assets/images/knowledge-hub/tutorials/why-you-need-lorawan/overview.jp
 rak_desc: A brief discussion about the importance of LoRaWAN
 tags:
   - Tutorial
+  - LoRaWAN
 header:
   title: Why You Need LoRaWAN | RAK Smart Devices and Home Security
   caption: by <b>Sam Domingo</b>

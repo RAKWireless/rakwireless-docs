@@ -4,6 +4,9 @@ rak_img: /assets/images/knowledge-hub/tutorials/tips-on-getting-started-with-rak
 rak_desc: A quick start guide on how to setup your RAK Commercial Gateway LoRa Server.
 tags:
   - Tutorial
+  - WisGate
+  - LoRa
+  - LoRaWAN
 header:
   title: Tips on Getting Started With RAK Commercial Gateway LoRa Server
   caption: by <b>Ken Yu</b>

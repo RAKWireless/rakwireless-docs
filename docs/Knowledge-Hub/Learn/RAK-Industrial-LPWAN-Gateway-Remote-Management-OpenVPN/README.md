@@ -5,6 +5,9 @@ rak_desc: This document introduces a remote management of RAK Industrial LPWAN G
 tags:
   - Deployment-Guide
   - WisGate
+  - OpenVPN
+  - AWS
+  - Ubuntu
 header:
   title: RAK Industrial LPWAN Gateway Remote Management - OpenVPN
   caption: by <b>RAKwireless Team</b>

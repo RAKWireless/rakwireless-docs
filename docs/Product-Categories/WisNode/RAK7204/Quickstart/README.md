@@ -1339,7 +1339,7 @@ After gateway and node go online, click the uplink data record from the applicat
   caption="Decode Status in ChirpStack"
 />
 
-### Lora® P2P Mode
+### LoRa P2P Mode
 
 The setup process for the RAK7204 WisNode Sense Home in LoRaP2P Mode is just the same with the process with the RAK811 Wisnode. These are the steps that you need to follow for this mode:
 

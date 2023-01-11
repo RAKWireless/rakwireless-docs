@@ -4,6 +4,10 @@ rak_img: /assets/images/knowledge-hub/tutorials/how-to-extend-battery-of-your-io
 rak_desc: A brief discussion on how to maximize the battery life of your IoT device.
 tags:
   - Tutorial
+  - LoRa
+  - LPWAN
+  - LoraWAN
+  - LoRa
 header:
   title: How LoRa Can Help You Save The Battery Life of Your IoT Device
   caption: by <b>Sam Domingo</b>

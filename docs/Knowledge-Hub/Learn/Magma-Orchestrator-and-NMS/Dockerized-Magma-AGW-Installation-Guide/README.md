@@ -8,6 +8,7 @@ tags:
   - Docker
   - Installation Guide
   - Ubuntu
+  - AGW
 header:
   title: Dockerized Magma AGW 1.8.0 Installation Guide
   caption: by <b>RAKwireless Team</b>

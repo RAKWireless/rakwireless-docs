@@ -1,11 +1,23 @@
 ---
 sidebar: false
 rak_img: /assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/kit4-qubitro.png
-rak_desc: This guide provides a step-by-step tutorial on how to use your WisBlock Kit 4 and RAK Edge Gateway to connect it with TTN v3 and Qubitro. 
+rak_desc: This guide provides a step-by-step tutorial on how to use your WisBlock Kit 4 and RAK Edge Gateway to connect it with TTN v3 and Qubitro.
 tags:
-  - Tutorial
+  - User-Manual
   - RAK Edge Gateway
   - WisGate
+  - WisBlock
+  - Qubitro
+  - RAK7240
+  - RAK7249
+  - RAK7258
+  - RAK7268
+  - RAK7289
+  - RAK1906
+  - RAK5005-O
+  - TTNV3
+  - Arduino
+  - LoRaWAN
 header:
   title: WisBlock Kit 4 and RAK Edge Gateway Complete LoRaWAN Guide with TTN V3 and Qubitro
   caption: by <b>Ronald Collamar</b>
@@ -125,7 +137,7 @@ This section shows how to connect the RAK7268 WisGate Edge Lite 2 to TTNv3.
 />
 
 3. After you have logged in, you need to register your commercial gateway to TTNv3. To register, choose **Go to gateways**. If you have already registered your gateways before, head on to **Gateways** > **+ Add gateway**.
-   
+
 
 <rk-img
   src="/assets/images/knowledge-hub/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-3.png"
@@ -134,14 +146,14 @@ This section shows how to connect the RAK7268 WisGate Edge Lite 2 to TTNv3.
 />
 
 4.  Fill in the needed information:
-  - **Owner** – Automatically filled by The Things Stack, based on your account or created Organization. 
+  - **Owner** – Automatically filled by The Things Stack, based on your account or created Organization.
   - **Gateway ID** – This will be the unique ID of your gateway in the Network. ID must contain only lowercase letters, numbers, and dashes (-).
   - **Gateway EUI** - A 64 bit extended unique identifier for your gateway. This is where the gateway you get on the above section Configuring the RAK7268 WisGate Edge Lite 2.
-  - **Gateway name** – A name for your gateway. 
+  - **Gateway name** – A name for your gateway.
   - **Gateway description (optional)** - Optional gateway description; can also be used to save notes about the gateway.
   - **Gateway Server address** - The address of the gateway server to connect to.
   - **Frequency plan** - The frequency plan used by the gateway.
-  
+
 :::tip 📝 NOTE
 
 - There are three server clusters available for TTN V3. In this guide, you will use `eu1.cloud.thethings.network`. You need to select the closes one in your country or location for optimized performance.
@@ -192,7 +204,7 @@ This section shows how to connect the RAK7268 WisGate Edge Lite 2 to TTNv3.
   caption="Generating an API key"
 />
 
-8. To generate the key, choose the **Create API key**. The following window will pop up, telling you to copy the key you just generated. 
+8. To generate the key, choose the **Create API key**. The following window will pop up, telling you to copy the key you just generated.
 
 <rk-img
   src="/assets/images/wisgate/rak7268/supported-lora-network-servers/ttn/8.png"
@@ -216,7 +228,7 @@ Copy the key and save it in a `.txt` file (or other), because you won’t be abl
   caption="Copying the generated key in a txt file"
 />
 
-9.  Click **I have copied the key** to proceed. 
+9.  Click **I have copied the key** to proceed.
 
 <rk-img
   src="/assets/images/knowledge-hub/rak-edge-gateway-discovery-kit/starter-kit/ttn/8-labeled.png"
@@ -224,7 +236,7 @@ Copy the key and save it in a `.txt` file (or other), because you won’t be abl
   caption="Generating an API key"
 />
 
-10. Configure the gateway to connect it successfully to the TTN V3 Server. To configure the gateway, access it via the Web UI. To learn how to do that, check out the [RAK7268 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7268/Quickstart/#access-the-gateway). 
+10. Configure the gateway to connect it successfully to the TTN V3 Server. To configure the gateway, access it via the Web UI. To learn how to do that, check out the [RAK7268 Quick Start Guide](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7268/Quickstart/#access-the-gateway).
 
 <rk-img
   src="/assets/images/wisgate/rak7268/quickstart/3.login-page.png"
@@ -232,7 +244,7 @@ Copy the key and save it in a `.txt` file (or other), because you won’t be abl
   caption="Web UI login page"
 />
 
-11.  Navigate to **LoRa Network** > **Network Settings** > **Mode** drop-down menu, then choose **Basics Station**. 
+11.  Navigate to **LoRa Network** > **Network Settings** > **Mode** drop-down menu, then choose **Basics Station**.
 
 <rk-img
   src="/assets/images/wisgate/rak7268/supported-lora-network-servers/ttn/9.png"
@@ -247,7 +259,7 @@ Copy the key and save it in a `.txt` file (or other), because you won’t be abl
 - **Port** – The LNS Server uses port 8887. Type in **8887**.
 - **Authentication Mode** – Choose **TLS server authentication and Client token**. When selected, the trust and the token field will show up.
 - **trust** – For trust, you will use the **Let’s Encrypt ISRG ROOT X1 Trust** certificate. [Download](https://letsencrypt.org/certs/isrgrootx1.pem) the certificate first.
-- **token** -  This is the generated **API key**. The key must start with **Authorization:**. Example: 
+- **token** -  This is the generated **API key**. The key must start with **Authorization:**. Example:
 
 ```
 Authorization: YOUR_API_KEY
@@ -294,7 +306,7 @@ You can now see that your gateway is connected to TTNv3 as Basics Station:
   caption="Creating an application"
 />
 
-3. If you had no error during the previous step, you should now be on the application console page. The next step is to **add end-devices to your TTN application**. 
+3. If you had no error during the previous step, you should now be on the application console page. The next step is to **add end-devices to your TTN application**.
 
 LoRaWAN specification enforces that each end-device has to be personalized and activated. There are two options for registering devices depending on the activation mode you select. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP). Click **+ Add end device**, as shown in **Figure 21**.
 
@@ -320,7 +332,7 @@ LoRaWAN specification enforces that each end-device has to be personalized and a
   caption="Configurations for adding end devices"
 />
 
-6.  Click **Show advanced activation, LoRaWAN class, and cluster settings**, then select **Over the air action** (OTAA). 
+6.  Click **Show advanced activation, LoRaWAN class, and cluster settings**, then select **Over the air action** (OTAA).
 
 <rk-img
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/RAK4631-ttnv3-setup/RAK4631-TTNV3-6.png"
@@ -336,7 +348,7 @@ LoRaWAN specification enforces that each end-device has to be personalized and a
   caption="Registering the End Device"
 />
 
-8. You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 26**. Take note of these keys, such as the **AppEUI**, **DevEUI**, and the **AppKey**, as they are needed in the next part of this guide. 
+8. You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 26**. Take note of these keys, such as the **AppEUI**, **DevEUI**, and the **AppKey**, as they are needed in the next part of this guide.
 
 <rk-img
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/RAK4631-ttnv3-setup/RAK4631-TTNV3-8.png"
@@ -373,9 +385,9 @@ As shown in **Figure 28**, the location for Slots A, B, C, and D are properly ma
 
 ###### Disassembling
 
-The procedure for disassembling any type of WisBlock module is the same. 
+The procedure for disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak1906/quickstart/removing-screws.png"
@@ -400,12 +412,12 @@ The procedure for disassembling any type of WisBlock module is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1906 uses I2C communication lines, and it can cause possible conflict, especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1906 uses I2C communication lines, and it can cause possible conflict, especially on some IO modules.
 :::
 
 ##### LoRa and BLE Antenna
 
-Another important part component of RAK4631 is the antennas. 
+Another important part component of RAK4631 is the antennas.
 
 <rk-img
   src="/assets/images/wisblock/rak4631/quickstart/lora-antenna.png"
@@ -431,7 +443,7 @@ RAK4631 has a label on its sticker on where to connect the antennas, as shown in
 />
 
 :::tip 📝 NOTE
-Detailed information about the RAK4631 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/). 
+Detailed information about the RAK4631 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
 :::
 
 :::warning ⚠️ WARNING
@@ -459,7 +471,7 @@ The RAK1906 module gives information about:
 - Ambient Air Temperature
 - Environment Humidity
 
-::: warning ⚠️ WARNING    
+::: warning ⚠️ WARNING
 The BME680 requires a burn-in period to collect accurate readings. The burn-in procedure can be achieved by reading all sensors once every 5 seconds for at least 20 minutes the first time that you use it. For each subsequent use, the readings should stabilize 2-3 minutes after power-up.
 :::
 
@@ -467,8 +479,8 @@ The BME680 requires a burn-in period to collect accurate readings. The burn-in p
 
 1. Download the (Arduino IDE)[https://www.arduino.cc/en/software], then install it on your PC or laptop.
 
-:::warning ⚠️ WARNING    
-_**If you are using Windows 10**_.    
+:::warning ⚠️ WARNING
+_**If you are using Windows 10**_.
 Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the original Arduino IDE from the Arduino official website! The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 
@@ -496,9 +508,9 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
   caption="Completing the installation of Arduino IDE"
 />
 
-2. Open the Arduino IDE, then install the **RAKwireless BSP support for the Arduino Board Manager**. 
+2. Open the Arduino IDE, then install the **RAKwireless BSP support for the Arduino Board Manager**.
 
-3. Click on **File** > **Preferences**. In the **Preferences** window, look for **Additional Boards Manager URLs**, then click the icon on the right side. 
+3. Click on **File** > **Preferences**. In the **Preferences** window, look for **Additional Boards Manager URLs**, then click the icon on the right side.
 
 <rk-img
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit1-device/arduino6.png"
@@ -526,7 +538,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
   caption="Completing the setup of RAKwireless BSP support for the Arduino board manager"
 />
 
-5. Go to **Tools** > **Board: "Arduino Uno"** > **Boards Manager**. Type **RAK** in the search bar and the RAKwireless Core modules will be shown in the window. 
+5. Go to **Tools** > **Board: "Arduino Uno"** > **Boards Manager**. Type **RAK** in the search bar and the RAKwireless Core modules will be shown in the window.
 
 <rk-img
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit1-device/arduino10.png"
@@ -615,7 +627,7 @@ You can change to an unconfirmed message by changing the value to `LMH_UNCONFIRM
 Default is **Class A**.
 
 ```c
-DeviceClass_t g_CurrentClass = CLASS_A; 
+DeviceClass_t g_CurrentClass = CLASS_A;
 ```
 
 You can change this to **CLASS_B** (still under development) or **CLASS_C**.
@@ -630,7 +642,7 @@ uint8_t nodeAppKey[16] = {0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 
 
 6. Set up uplink period.
 
-The default is **20000&nbsp;mS**. 
+The default is **20000&nbsp;mS**.
 
 ```c
 #define LORAWAN_APP_INTERVAL 20000
@@ -639,7 +651,7 @@ The default is **20000&nbsp;mS**.
 ##### LoRaWAN Payload
 
 - This is the setup on the `void send_lora_frame(void)` function.
-  
+
 ```c
 if (lmh_join_status_get() != LMH_SET)
 {
@@ -666,7 +678,7 @@ else
 
 - This is the setup on the `void bme680_get()` function. This will gather the data from the sensor and package them in a LoRaWAN payload.
 
-```c  
+```c
 char oled_data[32] = {0};
 Serial.print("result: ");
 uint32_t i = 0;
@@ -724,7 +736,7 @@ m_lora_app_data.buffer[i++] = (uint8_t)(gas & 0x000000FF);
 m_lora_app_data.buffsize = i;
 ```
 
-##### Data Format 
+##### Data Format
 
 
 | Byte1 | Byte2        | Byte3        | Byte4     | Byte5     |
@@ -736,7 +748,7 @@ m_lora_app_data.buffsize = i;
 | ----------- | ----------- | ----------- | ----------- | ------ | ------ | ------ | ------ |
 | Barometric1 | Barometric2 | Barometric3 | Barometric4 | Gas1   | Gas2   | Gas3   | Gas4   |
 
-- Byte1 is a marker for the data type, here always 1.    
+- Byte1 is a marker for the data type, here always 1.
 - Every byte value is MSB first.
 - Temperature is sent as two bytes, enlarged 100 times for accuracy. For example, 2510 means 25.01 C, sent as 0x09 0xCE.
 - Humidity is sent as two bytes, enlarged 100 times for accuracy. For example, 4173 means 41.73%, sent as 0x10 0x4D.
@@ -840,7 +852,7 @@ This section will guide you on how to integrate your application using Qubitro.
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/7.applications.png"
   width="50%"
   caption="Going back to Applications at TTN"
-/>  
+/>
 
 7.  Click your device then go to **Integrations** > **Webhooks** > **Add webhook**.
 
@@ -848,13 +860,13 @@ This section will guide you on how to integrate your application using Qubitro.
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/8.select-a-device.png"
   width="100%"
   caption="Selecting a device"
-/>  
+/>
 
 <rk-img
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/9.add-webhook.png"
   width="100%"
   caption="Adding Webhook"
-/>  
+/>
 
 8. Choose **Qubitro** as your webhook template.
 
@@ -862,13 +874,13 @@ This section will guide you on how to integrate your application using Qubitro.
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/10.choose-qubitro.png"
   width="100%"
   caption="Qubitro"
-/>  
+/>
 
 <rk-img
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/11.webhook-setup.png"
   width="100%"
   caption="Setup webhook for Qubitro"
-/> 
+/>
 
 9. Fill in the needed details:
 - **Webhook ID** – For this example, you may use **environment-monitoring**.
@@ -881,13 +893,13 @@ Then click **Create Qubitro webhook**.
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/12.create-webhook.png"
   width="100%"
   caption="Creating Qubitro webhook"
-/> 
+/>
 
 <rk-img
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/13.added-a-webhook.png"
   width="100%"
   caption="Added a Qubitro webhook"
-/> 
+/>
 
 10. After creating your webhook, go back to your **Qubitro** platform to check the changes made.
 
@@ -895,7 +907,7 @@ Then click **Create Qubitro webhook**.
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/14.device-connection.png"
   width="100%"
   caption="No device connected yet"
-/> 
+/>
 
 11. Refresh the **Qubitro** platform and the newly-added device is now included in the platform.
 
@@ -903,13 +915,13 @@ Then click **Create Qubitro webhook**.
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/15.added-device.png"
   width="100%"
   caption="Device successfully included in Qubitro"
-/> 
+/>
 
 <rk-img
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/16.device-overview.png"
   width="100%"
   caption="Device overview"
-/> 
+/>
 
 12. Click **Formatter** to include the decoder for **Temperature** and **Humidity** as an example of showing these measurements on the platform.
 
@@ -917,7 +929,7 @@ Then click **Create Qubitro webhook**.
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/17.qubitro-formatter.png"
   width="100%"
   caption="Formatter in Qubitro"
-/> 
+/>
 
 13. Copy the decoder code below and paste it inside the **Formatter** > **Uplink**, then click **Save**.
 
@@ -941,7 +953,7 @@ function decodeUplink(input) {
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/18.data-tab.png"
   width="100%"
   caption="Data tab"
-/> 
+/>
 
 15. Once done, click **Analytics**, then click **+ Add chart** to add the graph for **Temperature** and **Humidity**.
 
@@ -949,13 +961,13 @@ function decodeUplink(input) {
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/19.add-chart.png"
   width="100%"
   caption="Adding a chart"
-/> 
+/>
 
 <rk-img
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/20.chart-preview.png"
   width="100%"
   caption="Chart preview"
-/> 
+/>
 
 16. Once done, tick both temperature and humidity, and choose **Line** under them. You may use **Environment Monitoring** as your **Chart name**, then click **Create chart**.
 
@@ -963,17 +975,17 @@ function decodeUplink(input) {
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/21.chart.png"
   width="80%"
   caption="Chart creation"
-/> 
+/>
 
 <rk-img
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/22.environment-analytics.png"
   width="100%"
   caption="Environment monitoring analytics"
-/> 
+/>
 
 17. Then there you have it, the **Environment Monitoring graph** for **Temperature** and **Humidity**.
 
-<rk-img  
+<rk-img
   src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/23.environment-graph.png"
   width="100%"
   caption="Environment monitoring graph"

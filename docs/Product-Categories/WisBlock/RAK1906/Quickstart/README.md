@@ -312,7 +312,7 @@ Gas = 3.87 KOhms
 
 ## LoRaWAN Environment Monitoring with RAK1906
 
-This solution shows how to create an environmental data sensor node. The sensor node measures air temperature, air humidity, barometric pressure, and gas levels. After the node joins to server successfully, it then transmits this data periodically to a LoRaWan® server.
+This solution shows how to create an environmental data sensor node. The sensor node measures air temperature, air humidity, barometric pressure, and gas levels. After the node joins to server successfully, it then transmits this data periodically to a LoRaWAN server.
 
 These are the quick links that go directly to the specific WisBlock Core module solution that you can use in your RAK1906 project:
 

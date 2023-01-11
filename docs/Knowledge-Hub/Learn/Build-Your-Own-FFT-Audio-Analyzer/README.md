@@ -11,7 +11,10 @@ tags:
   - RAK18000
   - RAK18030
   - RAK18031
-  - RAK18032
+  - FFT
+  - Audio Analyzer
+  - Fast Fourier Transform
+  - Arduino
 header:
   title: Build Your Own FFT Audio Analyzer
   caption: by <b>Christopher Méndez</b>

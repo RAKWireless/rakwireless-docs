@@ -5,6 +5,14 @@ rak_desc: A brief guide on how to install the board support package in Arduino I
 tags:
   - Tutorial
   - WisBlock
+  - Arduino
+  - Linux
+  - macOS
+  - Adafruit
+  - freeRTOS
+  - tinyusb
+  - nrfx
+  - littlefs
 header:
   title: Installation of Board Support Package in Arduino IDE
   caption: by <b>Bernd Giesecke</b>

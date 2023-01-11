@@ -20,7 +20,7 @@ rak_img: /assets/images/wislink-lora/rak831/datasheet/RAK831_home.png
 
 The **RAK831 WisLink LPWAN Concentrator** is designed for a wide variety of applications like **Smart Metering**, **IoT** (Internet of Things) and **M2M** (Machine-to-machine) applications. It is a multi-channel high performance Transceiver module designed to receive several LoRa packets simultaneously using different spreading factors on multiple channels. The concentrator module RAK831 can be integrated into a gateway as a complete RF front-end of this gateway. It provides the possibility to enable robust communication between a gateway and a huge amount of LoRa end-nodes spread over a wide range of distance. The RAK831 needs a host system for proper operation.
 
-This is an ideal modular product to help you realize the whole Lora® system development. With the USB-SPI converter module FT2232, you can quickly make the software development in your PC. Also, you can integrate the concentrator module to your production product to realize the gateway function. This is a very economic way to address a huge variety of applications like Smart Grid, Intelligent Farm, intelligent Farm and Other IoT applications.
+This is an ideal modular product to help you realize the whole LoRa system development. With the USB-SPI converter module FT2232, you can quickly make the software development in your PC. Also, you can integrate the concentrator module to your production product to realize the gateway function. This is a very economic way to address a huge variety of applications like Smart Grid, Intelligent Farm, intelligent Farm and Other IoT applications.
 
 The RAK831 needs a host system like Raspberry Pi or WisAP (OpenWRT based) or WisCam for proper operation. The host processor can be a PC or MCU that will be connected to RAK831 via USB or SPI.
 
@@ -109,7 +109,7 @@ It is highly recommended to fully re-use the latest HAL as provided by Semtech o
 
 The SX1301 digital baseband chip contains ten (10) programmable reception paths. These paths have differentiated levels of programmability and allow different use cases. It is important to understand the differences between these demodulation paths to make the best possible use of the system.
 
-###### IF8 LORA® channel
+###### IF8 LoRa channel
 
 This channel is connected to one SX1257 using any arbitrary intermediate frequency within the allowed range. This channel is LoRa only. The demodulation bandwidth can be configured to be 125, 250 or 500&nbsp;kHz. The data rate can be configured to any of the LoRa available data rates (SF7 to SF12) but, as opposed to IF0 to IF7, only the configured data rate will be demodulated. This channel is intended to serve as a high speed backhaul link to other gateways or infrastructure equipment. This demodulation path is compatible with the signal transmitted by the SX1272 and SX1276 chip families.
 
@@ -117,7 +117,7 @@ This channel is connected to one SX1257 using any arbitrary intermediate frequen
 
 The IF9 channel is connected to a GFSK demodulator. The channel bandwidth and bit rate can be adjusted. This demodulator offers a very high level of configurability, going well beyond the scope of this document. The demodulator characteristics are essentially the same as the GFSK demodulator implemented on the SX1232 and SX1272 Semtech chips. This demodulation path can demodulate any legacy FSK or GFSK formatted signal.
 
-###### IF0 to IF7 LORA® channels
+###### IF0 to IF7 LoRa channels
 
 Those channels are connected to one SX1257. The channel bandwidth is 125&nbsp;kHz and cannot be modified or configured. Each channel IF frequency can be individually configured. On each of those channels, any data rate can be received without prior configuration.
 

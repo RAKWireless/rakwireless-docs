@@ -11,6 +11,7 @@ tags:
   - RAK18060
   - Arduino
   - Helium
+  - Audio Notifier
 header:
   title: Build Your Own LoRaWAN Audio Notifier
   caption: by <b>Christopher Méndez</b>

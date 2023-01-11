@@ -11,7 +11,7 @@ tags:
 
 # RAK11310 Quick Start Guide
 
-This guide introduces the RAK11310 WisBlock Core LPWAN Module and how to use it. RAK11310 consists of a Raspberry Pi RP2040 chip and an SX1262 LoRa® transceiver, making it ideal for various IoT projects.
+This guide introduces the RAK11310 WisBlock Core LPWAN Module and how to use it. RAK11310 consists of a Raspberry Pi RP2040 chip and an SX1262 LoRa transceiver, making it ideal for various IoT projects.
 
 ## Prerequisites
 

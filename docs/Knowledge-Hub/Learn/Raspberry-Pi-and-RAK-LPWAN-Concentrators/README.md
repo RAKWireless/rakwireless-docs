@@ -3,8 +3,16 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/wishat.jpg
 rak_desc: This guide will show you how to set up the Raspberry Pi and make it work with the RAK LPWAN HATs
 tags:
-  - Tutorial
+  - User-Manual
   - WisLink
+  - Raspberry Pi
+  - balenaEtcher
+  - PuTTY
+  - RAK2245
+  - RAK2247
+  - RAK2287
+  - RAK5146
+  - LPWAN
 header:
   title: Quick Start Guide for Raspberry Pi and RAK LPWAN Concentrators
   caption: by <b>RAKwireless Team</b>
@@ -18,7 +26,7 @@ This guide will show you how to set up the Raspberry Pi and make it work with th
 
 1. Flashing the Raspbian OS to the SD card and access option
 2. Configuring the Raspberry Pi interfaces
-3. Installing the rak_common_for_gateway stack
+3. Installing the **rak_common_for_gateway** stack
 
 You have two options in configuring the Raspberry Pi:
 
@@ -82,8 +90,8 @@ This setup does not require a monitor or any input devices. The Raspberry Pi can
 ### Hardware
 
 1. Raspberry Pi 3B+/4
-2. Power adapter 5V (at least 2.5A for Raspberry Pi 3B+ and 3A for Raspberry Pi 4)
-3. SD card (at least 16 GB, with the flashed OS)
+2. Power adapter 5&nbsp;V (at least 2.5&nbsp;A for Raspberry Pi 3B+ and 3&nbsp;A for Raspberry Pi 4)
+3. SD card (at least 16&nbsp;GB, with the flashed OS)
 4. SD card reader
 5. A PC/ Laptop
 

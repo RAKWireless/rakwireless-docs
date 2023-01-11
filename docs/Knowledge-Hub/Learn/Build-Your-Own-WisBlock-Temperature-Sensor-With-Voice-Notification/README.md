@@ -11,7 +11,7 @@ tags:
   - RAK4631
   - RAK18003
   - RAK18060
-  - Arduino
+  - Temperature Sensor
 header:
   title: Build Your Own WisBlock Temperature Sensor with Voice Notification
   caption: by <b>Ronald Collamar and Carl Erick Rowan</b>

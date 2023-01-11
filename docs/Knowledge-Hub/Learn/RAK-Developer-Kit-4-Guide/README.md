@@ -1,11 +1,19 @@
 ---
 sidebar: false
 rak_img: /assets/images/knowledge-hub/rak-developer-kit/kit-4/kit4.png
-rak_desc: This guide provides a step-by-step tutorial on how to use the RAK Developer Kit 4 (Air Quality Kit). 
+rak_desc: This guide provides a step-by-step tutorial on how to use the RAK Developer Kit 4 (Air Quality Kit).
 tags:
-  - Tutorial
+  - User-Manual
   - RAK Developer Kit
   - WisBlock
+  - WisGate
+  - Air Quality Kit
+  - RAK7246
+  - RAK4631
+  - TTN
+  - BLE Antenna
+  - Arduino
+  - Ubidots
 header:
   title: RAK Developer Kit 4 (Air Quality Kit) Guide
   caption: by <b>Anthony Aldrin Beltran</b>
@@ -63,7 +71,7 @@ Here are the steps in configuring the [RAK7246G WisGate Developer D0](https://st
 
   - Windows OS
      SSH (Secure Shell) is typically used to log in to a remote machine and execute commands. There are a lot of free and good SSH Clients out there, namely [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), [BitVise SSH Client](https://www.bitvise.com/ssh-client-download), [MobaXterm](https://mobaxterm.mobatek.net/) and many more. Feel free to choose one that fits your needs, but in this guide, Putty is used.
- 
+
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-2-a.png"
   width="40%"
@@ -72,7 +80,7 @@ Here are the steps in configuring the [RAK7246G WisGate Developer D0](https://st
 
   - Mac OS
      Open the Terminal of Mac OS. Launch the Terminal application found in the **`/Applications/Utilities/`** directory, but you can also launch it from Spotlight. Press **Command + Spacebar** and type **“Terminal”**, then return.
-     
+
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-2-b.png"
   width="50%"
@@ -93,7 +101,7 @@ Here are the steps in configuring the [RAK7246G WisGate Developer D0](https://st
 4. From the previous step, get the **Gateway ID** by typing `sudo gateway-config` to your chosen SSH Client terminal editor. It can be found on top of the terminal console, as shown in the red box in **Figure 5**. You may copy it on a txt file or any notepad software. It will be used in setting up the gateway in [TTN V3](https://www.thethingsnetwork.org/). See **Figure 5** for reference. You will use it also as Gateway EUI in the latter part of this guide.
 
 :::tip 📝 NOTE
-In this guide, you will be using TTN (The Things Network) as the LNS (LoRaWAN Network Server). There are many other LNS available that you can use, as well. The configuration steps will be different depending on your chosen LNS, but the general LoRaWAN principle is the same. 
+In this guide, you will be using TTN (The Things Network) as the LNS (LoRaWAN Network Server). There are many other LNS available that you can use, as well. The configuration steps will be different depending on your chosen LNS, but the general LoRaWAN principle is the same.
 
 Like for [RAK WisGate Edge Gateways](https://store.rakwireless.com/collections/wisgate-edge), it has built-in LNS that you can use.
 :::
@@ -135,7 +143,7 @@ To enable Wi-Fi Client Mode, you have to disable first the Wi-Fi AP Mode.
 />
 
 - Start by selecting your country of residence.
-  
+
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-6-a.png"
   width="60%"
@@ -169,7 +177,7 @@ Ensure to input the correct Wi-Fi SSID and password, or you will not be able to 
 sudo reboot
 ```
 
-7. After rebooting the RAK7246 WisGate Developer D0, you should check if it is connected successfully to your Wi-Fi network. You may use your local network modem/router admin console to check if RAK7246 is successfully connected. 
+7. After rebooting the RAK7246 WisGate Developer D0, you should check if it is connected successfully to your Wi-Fi network. You may use your local network modem/router admin console to check if RAK7246 is successfully connected.
 
 In this example, the admin console can be accessed via `http://192.168.0.1`. It is also common to have it on `http://192.168.1.1` on some routers. Take note of the IP address allotted to the RAK7246 by your Wi-Fi network.
 
@@ -180,7 +188,7 @@ In this example, the admin console can be accessed via `http://192.168.0.1`. It 
 />
 
 
-You can also use [Advance IP Scanner](https://download.advanced-ip-scanner.com/download/files/Advanced_IP_Scanner_2.5.3850.exe) for Windows OS, or [Angry IP Scanner](https://angryip.org/download/) for Mac OS, and locate the IP address of RAK7246 WisGate Developer D0 in your Wi-Fi device. 
+You can also use [Advance IP Scanner](https://download.advanced-ip-scanner.com/download/files/Advanced_IP_Scanner_2.5.3850.exe) for Windows OS, or [Angry IP Scanner](https://angryip.org/download/) for Mac OS, and locate the IP address of RAK7246 WisGate Developer D0 in your Wi-Fi device.
 
 As seen in **Figure 12**, it is `192.168.0.28`, where the company is Raspberry Pi Foundation. You can use that IP address to configure other related parameters of `RAK7246 WisGate Developer D0` by logging in to the SSH Client Software, as stated in the previous step, now with the IP address of `RAK7246 WisGate Developer D0` from your Wi-Fi network.
 
@@ -258,7 +266,7 @@ The available [TTN V3 clusters](https://console.cloud.thethings.network/) are:
   caption="Changing Server Name to eu1.cloud.thethings.network"
 />
 
-14. Restart the Packet-forwarder by choosing “**3 Restart Packet-forwarder**” from the configuration options. 
+14. Restart the Packet-forwarder by choosing “**3 Restart Packet-forwarder**” from the configuration options.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-14.png"
@@ -273,7 +281,7 @@ The available [TTN V3 clusters](https://console.cloud.thethings.network/) are:
 
 This section shows how to connect RAK7246 WisGate Developer D0 to TTN.
 
-1. Create a [TTN account](https://www.thethingsnetwork.org/) if you don't have one yet. 
+1. Create a [TTN account](https://www.thethingsnetwork.org/) if you don't have one yet.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\ttnv3-setup\TTNV3-1.png"
@@ -307,20 +315,20 @@ This section shows how to connect RAK7246 WisGate Developer D0 to TTN.
 
 * **Owner** – Automatically filled by The Things Stack, based on your account or created Organization. (e.g. rak-discovery)
 * **Gateway ID** – This will be the unique ID of your gateway in the Network. ID must contain only lowercase letters, numbers, and dashes (-). (e.g. rak-d0-ph-las-pinas)
-* **Gateway EUI** - A 64 bit extended unique identifier for your gateway. This is where the gateway you get on the above section Configuring the RAK7246 WisGate Developer D0. (e.g. B827EBFFFE81) 
+* **Gateway EUI** - A 64 bit extended unique identifier for your gateway. This is where the gateway you get on the above section Configuring the RAK7246 WisGate Developer D0. (e.g. B827EBFFFE81)
 * **Gateway name** – A name for your gateway. (e.g. RAK D0 Pilar Las Pinas PH)
 * **Gateway description (optional)** - Optional gateway description; can also be used to save notes about the gateway.
 * **Gateway Server address** - The address of the Gateway Server to connect to (i.e. eu1.cloud.thethings.network).
 * **Frequency plan** - The frequency plan used by the gateway.
 
-  
+
 :::tip 📝 NOTE
 
 - This tutorial is based on using the EU868 frequency band and the server address (TTN cluster) is **eu1.cloud.thethings.network**.
 - Also, you will be using Europe 863-870&nbsp;MHz (SF9 for RX2 - recommended).
 
 :::
-  
+
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\ttnv3-setup\TTNV3-4-a.png"
   width="60%"
@@ -363,7 +371,7 @@ This section shows how to connect RAK7246 WisGate Developer D0 to TTN.
   caption="Creating an Application"
 />
 
-3. If you had no error during the previous step, you should now be on the application console page. The next step is to **add end-devices to your TTN application**. 
+3. If you had no error during the previous step, you should now be on the application console page. The next step is to **add end-devices to your TTN application**.
 
 LoRaWAN specification enforces that each end-device has to be personalized and activated. There are two options for registering devices depending on the activation mode you select. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP). You need to click **+ Add end device**, as shown in **Figure 29**.
 
@@ -389,7 +397,7 @@ LoRaWAN specification enforces that each end-device has to be personalized and a
   caption="Configurations for adding end devices"
 />
 
-6.  Click **Show advanced activation, LoRaWAN class, and cluster settings**, then select **Over the air action (OTAA)**. 
+6.  Click **Show advanced activation, LoRaWAN class, and cluster settings**, then select **Over the air action (OTAA)**.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\RAK4631-ttnv3-setup\RAK4631-TTNV3-6.png"
@@ -397,9 +405,9 @@ LoRaWAN specification enforces that each end-device has to be personalized and a
   caption="OTAA settings"
 />
 
-7. Then you need to put a unique End device ID and EUIs (DevEUI and AppEUI), as shown in **Figure 33**. Check if your RAK4631 module has a **DevEUI** on **sticker or QR** that you can scan, then use this as the device unique DevEUI. 
+7. Then you need to put a unique End device ID and EUIs (DevEUI and AppEUI), as shown in **Figure 33**. Check if your RAK4631 module has a **DevEUI** on **sticker or QR** that you can scan, then use this as the device unique DevEUI.
 
-For **AppEUI**, you can click **Fill with Zeros**. 
+For **AppEUI**, you can click **Fill with Zeros**.
 Click **Generate** for the **AppKey**. Then the End Device Name will be automatically filled by the website. You can also put a different End Device ID if you need to. Finally, click **Register End Device**.
 
 <rk-img
@@ -408,7 +416,7 @@ Click **Generate** for the **AppKey**. Then the End Device Name will be automati
   caption="Registering the End Device"
 />
 
-8. You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 34**. Take note of these keys, such as the `AppEUI`, `DevEUI`, and the `AppKey`, as they are needed in the next part of this guide. 
+8. You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 34**. Take note of these keys, such as the `AppEUI`, `DevEUI`, and the `AppKey`, as they are needed in the next part of this guide.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\RAK4631-ttnv3-setup\RAK4631-TTNV3-8.png"
@@ -445,9 +453,9 @@ As shown in **Figure 36**, the location for Slot A, B, C, and D are properly mar
 
 ###### Disassembling
 
-The procedure in disassembling any type of WisBlock modules is the same. 
+The procedure in disassembling any type of WisBlock modules is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak1906/quickstart/removing-screws.png"
@@ -472,12 +480,12 @@ The procedure in disassembling any type of WisBlock modules is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1906 uses I2C communication lines, and it can cause possible conflict especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK1906 uses I2C communication lines, and it can cause possible conflict especially on some IO modules.
 :::
 
 ##### LoRa and BLE Antenna
 
-Another important part component of RAK4631 is the antennas. 
+Another important part component of RAK4631 is the antennas.
 
 <rk-img
   src="/assets/images/wisblock/rak4631/quickstart/lora-antenna.png"
@@ -503,7 +511,7 @@ RAK4631 has a label on its sticker where to connect the antennas, as shown in **
 />
 
 :::tip 📝 NOTE
-Detailed information about the RAK4631 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/). 
+Detailed information about the RAK4631 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
 :::
 
 :::warning ⚠️ WARNING
@@ -531,7 +539,7 @@ The RAK1906 module gives information about:
 - Ambient Air Temperature
 - Environment Humidity
 
-::: warning ⚠️ WARNING    
+::: warning ⚠️ WARNING
 The BME680 requires a burn-in period to collect accurate readings. The burn-in procedure can be achieved by reading all sensors once every 5 seconds for at least 20 minutes the first time that you use it. For each subsequent use, the readings should stabilize 2-3 minutes after power-up.
 :::
 
@@ -539,8 +547,8 @@ The BME680 requires a burn-in period to collect accurate readings. The burn-in p
 
 1. Download the [Arduino IDE](https://www.arduino.cc/en/software), then install it on your PC or laptop.
 
-:::warning ⚠️ WARNING    
-_**If you are using Windows 10**_.    
+:::warning ⚠️ WARNING
+_**If you are using Windows 10**_.
 Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the original Arduino IDE from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 
@@ -572,10 +580,10 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 />
 
 
-2. Open the Arduino IDE, then install the **RAKwireless BSP support for the Arduino Board Manager**. 
+2. Open the Arduino IDE, then install the **RAKwireless BSP support for the Arduino Board Manager**.
 
 
-3. Click on **File** > **Preferences**. In the **Preferences** window, look for **Additional Boards Manager URLs** then click the icon on the right side. 
+3. Click on **File** > **Preferences**. In the **Preferences** window, look for **Additional Boards Manager URLs** then click the icon on the right side.
 
 
 <rk-img
@@ -608,7 +616,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
   caption="Completing the setup of RAKwireless BSP support for the Arduino Board Manager"
 />
 
-5. Go to **Tools** > **Board: "Arduino Uno"** > **Boards Manager**. Type **RAK** in the search bar and the RAKwireless Core modules will be shown in the window. 
+5. Go to **Tools** > **Board: "Arduino Uno"** > **Boards Manager**. Type **RAK** in the search bar and the RAKwireless Core modules will be shown in the window.
 
 
 <rk-img
@@ -644,7 +652,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 />
 
 5. Once the example code is open, install the [Adafruit BME680](https://github.com/adafruit/Adafruit_BME680) library, **SX126x Arduino** library, and the **U8g2lib** library by clicking the links highlighted in red, as shown in **Figure 55**. You will be directed on the `Arduino Library Manager` for each link you click.
-   
+
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\environment\arduino_dl_lib.png"
   width="80%"
@@ -700,12 +708,12 @@ You can change to unconfirmed message by changing the value to `LMH_UNCONFIRMED_
 Default is **Class A**.
 
 ```c
-DeviceClass_t g_CurrentClass = CLASS_A; 
+DeviceClass_t g_CurrentClass = CLASS_A;
 ```
 
 You can change this to **CLASS_B** (still under development) or **CLASS_C**.
 
-5. Set up the EUIs and KEY. Get these parameters from the [Connecting RAK4631 to TTN V3 Application](/Knowledge-Hub/Learn/RAK-Developer-Kit-4-Guide/#connecting-rak4631-to-ttn-v3-application) section of this guide. 
+5. Set up the EUIs and KEY. Get these parameters from the [Connecting RAK4631 to TTN V3 Application](/Knowledge-Hub/Learn/RAK-Developer-Kit-4-Guide/#connecting-rak4631-to-ttn-v3-application) section of this guide.
 
 It is very important that the EUI and KEY will match the one configured in the TTN application. Otherwise, your device will not be able to connect to the TTN server. In this application, the device is activated via OTAA so you need to configure the Device EUI, Application EUI, and Application Key.
 
@@ -717,7 +725,7 @@ uint8_t nodeAppKey[16] = {0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 
 
 6. Set up uplink period.
 
-The default is **20000&nbsp;mS**. 
+The default is **20000&nbsp;mS**.
 
 ```c
 #define LORAWAN_APP_INTERVAL 20000
@@ -815,7 +823,7 @@ m_lora_app_data.buffsize = i;
 ```
 
 
-##### Data Format 
+##### Data Format
 
 
 | Byte1 | Byte2        | Byte3        | Byte4     | Byte5     |
@@ -829,13 +837,13 @@ m_lora_app_data.buffsize = i;
 
 
 
-  - Byte1 is a marker for the data type, here always 1.    
+  - Byte1 is a marker for the data type, here always 1.
   - Every byte value is MSB first.
   - Temperature is sent as two bytes, enlarged 100 times for accuracy. For example, 2510 means 25.01 C, sent as 0x09 0xCE.
   - Humidity is sent as two bytes, enlarged 100 times for accuracy. For example, 4173 means 41.73%, sent as 0x10 0x4D.
   - Barometric pressure is sent as four bytes, enlarged 100 times for accuracy. For example, 100945 means 1009.45&nbsp;hPa, sent as 0x00 0x01 0x8A 0x51.
   - Gas resistance is sent as four bytes. For example, 63560&nbsp;Ohm, sent as 0x00 0x00 0xF8 0x48.
- 
+
 
 ##### Uploading the Arduino Code
 
@@ -927,10 +935,10 @@ This section will guide you to integrate your application using Ubidots.
 />
 
 4. A window on the right side pops up, and choose the following:
-   
+
    - Connectivity: **LoraWAN**
    - Hardware Type: **Dev Kits**
-   - Device: **Blank Device**. 
+   - Device: **Blank Device**.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit4-ubidots\ub6.png"
@@ -951,7 +959,7 @@ This section will guide you to integrate your application using Ubidots.
   caption="Edit Add New Device for desired name"
 />
 
-6. After adding the device, fill in the **Description** and **SET LOCATION**. 
+6. After adding the device, fill in the **Description** and **SET LOCATION**.
 
 
 <rk-img
@@ -976,7 +984,7 @@ This section will guide you to integrate your application using Ubidots.
 />
 
 
-8. A window on the right side pops up, and choose **The Things Stack**. Follow the instructions given by the plugin, then click the forward button. 
+8. A window on the right side pops up, and choose **The Things Stack**. Follow the instructions given by the plugin, then click the forward button.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit4-ubidots\ub11.png"
@@ -990,7 +998,7 @@ This section will guide you to integrate your application using Ubidots.
   caption="Click forward button"
 />
 
-9. Under the Ubidots Token, use **Default token**, then click again the forward button. 
+9. Under the Ubidots Token, use **Default token**, then click again the forward button.
 
 
 <rk-img
@@ -1034,7 +1042,7 @@ function decodeUplink(bytes) {
       decoded.humidity = (bytes[3] << 8 | (bytes[4])) / 100;
       decoded.pressure = (bytes[8] | (bytes[7] << 8) | (bytes[6] << 16) | (bytes[5] << 24)) / 100;
       decoded.gas = bytes[12] | (bytes[11] << 8) | (bytes[10] << 16) | (bytes[9] << 24);
-  } 
+  }
   return {"data": decoded};
 }
 ```
@@ -1082,11 +1090,11 @@ function decodeUplink(bytes) {
 />
 
 
-17.   Go back again to your Ubidots account **Environment Monitoring** to obtain the **Base URL**, **X-Auth-Token**, and **Uplink message**. 
+17.   Go back again to your Ubidots account **Environment Monitoring** to obtain the **Base URL**, **X-Auth-Token**, and **Uplink message**.
 
 
 - `X-Auth-Token` is the Ubidots token and can be found in the ubidots console, as shown in **Figure 81**.
-- Also, settings for the Uplink message can be found in **Figure 82**. You only need to get the part of the URL with `/api/webhook/xxxxxxxxxxxxxxxxxxx`. 
+- Also, settings for the Uplink message can be found in **Figure 82**. You only need to get the part of the URL with `/api/webhook/xxxxxxxxxxxxxxxxxxx`.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit4-ubidots\TTS22.png"
@@ -1122,7 +1130,7 @@ function decodeUplink(bytes) {
 />
 
 
-19.  Now, you need to create a dashboard in **Ubidots**. Click **Data** > **Dashboards**, then click the **Add new Dashboard** button. 
+19.  Now, you need to create a dashboard in **Ubidots**. Click **Data** > **Dashboards**, then click the **Add new Dashboard** button.
 
 
 <rk-img
@@ -1137,7 +1145,7 @@ function decodeUplink(bytes) {
   caption="Adding a new dashboard"
 />
 
-20. Edit the **Add new Dashboard** window to your desired details, then press the check button. 
+20. Edit the **Add new Dashboard** window to your desired details, then press the check button.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit4-ubidots\ub53.png"
@@ -1145,7 +1153,7 @@ function decodeUplink(bytes) {
   caption="Editing the Dashboard general information"
 />
 
-21. Click **Add new Widget**. A window appears on the right side, and choose **Thermometer**. 
+21. Click **Add new Widget**. A window appears on the right side, and choose **Thermometer**.
 
 
 <rk-img
@@ -1160,7 +1168,7 @@ function decodeUplink(bytes) {
   caption="Choose Thermometer widget for temp variable"
 />
 
-22. Edit the **Thermometer** widget. Change it into **Temperature**, then click the **Add Variables** button. 
+22. Edit the **Thermometer** widget. Change it into **Temperature**, then click the **Add Variables** button.
 
 
 <rk-img
@@ -1169,7 +1177,7 @@ function decodeUplink(bytes) {
   caption="Adding a variable and changing the widget into Temperature"
 />
 
-23. A window will pop up. Click **wisblock-kit4-environment-monitoring**, select the **temp** variable, then press the check button. 
+23. A window will pop up. Click **wisblock-kit4-environment-monitoring**, select the **temp** variable, then press the check button.
 
 
 <rk-img
@@ -1194,7 +1202,7 @@ function decodeUplink(bytes) {
 />
 
 
-25.  After adding the Temperature widget, click on the plus sign on the right side to add another widget. This time, choose **Gauge**and add the **Humidity** widget. 
+25.  After adding the Temperature widget, click on the plus sign on the right side to add another widget. This time, choose **Gauge**and add the **Humidity** widget.
 
 
 <rk-img
@@ -1203,7 +1211,7 @@ function decodeUplink(bytes) {
   caption="Adding Gauge to Humidity widget"
 />
 
-26.  After editing the name into **Humidity**, click **Add Variables**. Select **wisblock-kit4-environment-monitoring**, choose the **hum** variable, then press the check button. 
+26.  After editing the name into **Humidity**, click **Add Variables**. Select **wisblock-kit4-environment-monitoring**, choose the **hum** variable, then press the check button.
 
 <rk-img
   src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit4-ubidots\ub61.png"
@@ -1220,7 +1228,7 @@ function decodeUplink(bytes) {
 />
 
 
-28. Use the same method in adding the Temperature and Humidity widgets. Just click on the plus sign at the right to add another widget, then choose **Gauge**. 
+28. Use the same method in adding the Temperature and Humidity widgets. Just click on the plus sign at the right to add another widget, then choose **Gauge**.
 
 
 <rk-img
@@ -1229,7 +1237,7 @@ function decodeUplink(bytes) {
   caption="Adding Gauge to Pressure widget"
 />
 
-29.  This time, add the **Pressure** widget under Gauge, then click **Add Variables**. 
+29.  This time, add the **Pressure** widget under Gauge, then click **Add Variables**.
 
 
 <rk-img
@@ -1238,7 +1246,7 @@ function decodeUplink(bytes) {
   caption="Adding variable to Pressure widget"
 />
 
-30. After editing the name into **Pressure**, click **wisblock-kit4-environment-monitoring**, choose the **press** variable, then press the check button. 
+30. After editing the name into **Pressure**, click **wisblock-kit4-environment-monitoring**, choose the **press** variable, then press the check button.
 
 
 <rk-img
@@ -1256,7 +1264,7 @@ function decodeUplink(bytes) {
   caption="Editing Pressure widget range to 0-1000 the press check button"
 />
 
-35. After adding the three widgets, go to the **Devices** > **Devices** menu, and edit the variables. 
+35. After adding the three widgets, go to the **Devices** > **Devices** menu, and edit the variables.
 
 - For the **temp** variable:
     - Description: **Temperature**
@@ -1275,7 +1283,7 @@ function decodeUplink(bytes) {
   caption="Adding unit for temp variable"
 />
 
-- For the **hum** variable: 
+- For the **hum** variable:
     - Description: **Humidity**
     - Unit: **%RH**
 

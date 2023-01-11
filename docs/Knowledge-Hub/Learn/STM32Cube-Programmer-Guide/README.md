@@ -3,10 +3,12 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/stm32cube-programmer-guide.jpg
 rak_desc: This document is the guide on using STM32CubeProgrammer on RAK Modules.
 tags:
-  - Tutorial
+  - User-Manual
   - WisDuo
   - RAK3172-SiP
   - RAK3172
+  - STM32
+  - UART
 header:
   title: STM32CubeProgrammer Guide for RAK Modules
   caption: by <b>Carl Erick Rowan</b>

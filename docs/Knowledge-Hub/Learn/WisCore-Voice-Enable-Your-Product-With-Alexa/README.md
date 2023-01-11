@@ -4,6 +4,9 @@ rak_img: /assets/images/knowledge-hub/tutorials/wiscore-voice-enable-your-produc
 rak_desc: A guide on how to pair your RAKwireless WisCore with the Amazon Alexa.
 tags:
   - Tutorial
+  - WisCore
+  - Alexa
+  - AVS
 header:
   title: WisCore – Voice Enable Your Product with Alexa
   caption: by <b>Ken Yu</b>

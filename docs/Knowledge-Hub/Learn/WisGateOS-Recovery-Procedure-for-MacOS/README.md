@@ -3,9 +3,15 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
 rak_desc: A recovery procedure guide for WisGate Edge Gateways (OpenWRT) for MacOS.
 tags:
-  - Tutorial
+  - User-Manual
   - WisGate
   - WisGateOS
+  - MacOS
+  - RAK7268
+  - RAK7268C
+  - RAK7289
+  - RAK7289C
+  - TFTP
 header:
   title: WisGateOS Recovery Procedure for MacOS
   caption: by <b>RAKwireless Team</b>

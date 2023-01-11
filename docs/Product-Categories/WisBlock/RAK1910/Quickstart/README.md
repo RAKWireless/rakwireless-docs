@@ -413,7 +413,7 @@ It can take a few seconds or minutes to get a good fix depending on your locatio
   caption="LoRaWAN GPS Coordinate Sent"
 />
 
-The packet should also arrive at the LoRaWAN® network server you use. The values you see will not make sense and don't look like GPS coordinates. It is normal because the payload hasn't been decoded yet.
+The packet should also arrive at the LoRaWAN network server you use. The values you see will not make sense and don't look like GPS coordinates. It is normal because the payload hasn't been decoded yet.
 
 If you are using Chirpstack, you will see the packet as shown in Figure 28.
 
@@ -435,7 +435,7 @@ If you are using The Things Stack (TTN V3), you will see the packet as shown in 
 
 ###### Data format
 
-Data sent to LoRaWan® server of the example code has the following format:
+Data sent to LoRaWAN server of the example code has the following format:
 
 - Buffer[0] - 0x09 (Header indicator that the data is the GPS coordinate).
 - Buffer[1-4] - Latitude value in integer. To get the actual latitude value in float, this integer must be divided by 10000. This can be done on the payload decoder side.

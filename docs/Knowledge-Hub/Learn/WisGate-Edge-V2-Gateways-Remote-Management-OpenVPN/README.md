@@ -5,7 +5,10 @@ rak_desc: This document is a sample demonstration on how to burn the latest firm
 tags:
   - User-Manual
   - WisGate
+  - WisGate Edge V2
   - OpenVPN
+  - AWS
+  - Ubuntu
 header:
   title: WisGate Edge V2 Gateways Remote Management - OpenVPN
   caption: by <b>RAKwireless Team</b>

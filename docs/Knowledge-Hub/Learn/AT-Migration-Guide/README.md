@@ -8,6 +8,7 @@ tags:
   - RAK3172-SiP
   - RAK3172
   - RUI3
+  - DFU
 header:
   title: AT Command Migration Guide of RAK3172 to RUI3
   caption: by <b>RAKwireless Team</b>
@@ -26,13 +27,13 @@ If you want to know more details about RUI3, check the article [RUI3-Simplified 
 ## Contents
 
 * [Introduction](/Knowledge-Hub/Learn/AT-Migration-Guide/#introduction)
-* [Changes on RAK3172 Baud rate](/Knowledge-Hub/Learn/AT-Migration-Guide/#changes-on-rak3172-baud-rate)
+* [Changes on RAK3172 Baud Rate](/Knowledge-Hub/Learn/AT-Migration-Guide/#changes-on-rak3172-baud-rate)
 * [RAK DFU baud rate](/Knowledge-Hub/Learn/AT-Migration-Guide/#rak-dfu-baud-rate)
-* [AT Command Query, Format and ATE (Echo Command)](/Knowledge-Hub/Learn/AT-Migration-Guide/#at-command-query-format-and-ate-echo-command)
+* [AT Command Query, Format, and ATE (Echo Command)](/Knowledge-Hub/Learn/AT-Migration-Guide/#at-command-query-format-and-ate-echo-command)
 * [LoRaWAN Joining and Sending](/Knowledge-Hub/Learn/AT-Migration-Guide/#lorawan-joining-and-sending)
 * [LoRa P2P](/Knowledge-Hub/Learn/AT-Migration-Guide/#lora-p2p)
-* [New RUI3 AT commands](/Knowledge-Hub/Learn/AT-Migration-Guide/#new-rui3-at-commands)
-* [Removed AT commands](/Knowledge-Hub/Learn/AT-Migration-Guide/#removed-at-commands-in-rui3)
+* [New RUI3 AT Commands](/Knowledge-Hub/Learn/AT-Migration-Guide/#new-rui3-at-commands)
+* [Removed AT Commands](/Knowledge-Hub/Learn/AT-Migration-Guide/#removed-at-commands-in-rui3)
 
 ### Introduction
 
@@ -51,7 +52,7 @@ If your device is now running a **RUI3 firmware**, the reply will be in this for
 AT+VER=3.2.0-p2_22q1_final.87
 ```
 
-### Changes on RAK3172 Baud rate
+### Changes on RAK3172 Baud Rate
 
 There are few changes related to the RAK3172 baud rate.
 
@@ -59,7 +60,7 @@ There are few changes related to the RAK3172 baud rate.
 - There are more supported baud rate on RAK3172 RUI3. It now supports the following baud rate speed 4800, 19200, 38400, 57600, and 115200.
 - The device will automatically change its baud rate after `AT+BAUD` command. There is no need to reset or restart the device.
 
-### RAK DFU baud rate
+### RAK DFU Baud Rate
 
 In the RAK DFU program the default speed for RUI3 is 115200 baud.
 
@@ -73,7 +74,7 @@ In the RAK DFU program the default speed for RUI3 is 115200 baud.
 If `AT+BAUD` command is used to change the baud rate other than the default 115200, the new baud rate configured must be the baud rate to be used during firmware update using RAK DFU Tool.
 :::
 
-### AT Command Query, Format and ATE (Echo command)
+### AT Command Query, Format, and ATE (Echo Command)
 
 It is important to note that the old RAK3172 FW appends `<CR>` and `<LF>` at the end of each AT reply message. That is not present in the RUI3 firmware. You will notice that there is no extra empty line added before the `OK`.
 
@@ -174,7 +175,7 @@ Using new RAK3172 RUI3 firmware we have only one RXP2P `+EVT` event and the char
 +EVT:RXP2P:-60:11:AABBCCDD
 ```
 
-### New RUI3 AT commands
+### New RUI3 AT Commands
 
 This is the summary of new AT commands.
 
@@ -201,10 +202,10 @@ This is the summary of new AT commands.
 - [AT+CHS](/Knowledge-Hub/Learn/AT-Migration-Guide/#at-chs-single-channel-mode)
 - [AT+CHE](/Knowledge-Hub/Learn/AT-Migration-Guide/#at-che-eight-channel-mode)
 
-#### ATDFU: DFU mode
+#### ATDFU: DFU Mode
 This command causes the device to enter bootloader mode to upgrade firmware.
 
-#### AT+SLEEP: Sleep mode
+#### AT+SLEEP: Sleep Mode
 This command enters sleep mode for a period of time (milliseconds).
 
 #### AT+NETID: Network ID
@@ -219,40 +220,40 @@ This command sets the P2P encryption key. The key is 16 digit length representin
 #### AT+ENCRY: Enable P2P Encryption
 This command  enables the P2P mode with encryption key.
 
-#### AT+BUILDTIME: Build time of the firmware
+#### AT+BUILDTIME: Build Time of the Firmware
 This command gets the build time of the firmware.
 
-#### AT+BGW: NetID, GwID and GPS coordinates
+#### AT+BGW: NetID, GwID, and GPS Coordinates
 This command allows the user to access the  network ID, gateway ID  and  GPS coordinates.<br> The command output format is: `<INFO>`, `<network ID>`, `<gateway ID>`, `<longitude>`, `<latitude>`.
 
-#### AT+ATM: AT command mode
+#### AT+ATM: AT Command Mode
 This command switches to AT command mode.
 
-#### AT+APM: API mode
+#### AT+APM: API Mode
 This command  switches to Binary mode.
 
-#### AT+PAM: Pass Through mode
+#### AT+PAM: Pass Through Mode
 This command switches to pass through mode.
 
-#### AT+REPOINFO: Repo information
+#### AT+REPOINFO: Repo Information
 This command gets the commit ID of the firmware.
 
-#### AT+CLIVER: AT command version
+#### AT+CLIVER: AT Command Version
 This command gets the AT command version.
 
-#### AT+APIVER: API version
+#### AT+APIVER: API Version
 This command gets the RUI API version.
 
-#### AT+LOCK: Lock the AT command serial port
+#### AT+LOCK: Lock the AT Command Serial Port
 This command locks the serial port.
 
-#### AT+PWORD: Set the AT command serial port password
+#### AT+PWORD: Set the AT command Serial Port Password
 This command sets the serial port locking password. The maximum password length is 8.
 
 #### AT+HWMODEL: Hardware Model
 This command gets the hardware model  of the module.
 
-#### AT+BOOTSTATUS: Query the status of the module
+#### AT+BOOTSTATUS: Query the Status of the Module
 This command gets the status of module : DFU mode or bootloader mode.
 
 #### AT+SN: Device Serial Number

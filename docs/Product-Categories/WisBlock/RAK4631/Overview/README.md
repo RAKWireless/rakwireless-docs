@@ -42,7 +42,7 @@ RAK4631 and RAK4631-R share common hardware and are 100% identical but they have
 **RAK4631** is a **WisBlock Core** module for RAK **WisBlock**. It extends the **WisBlock** series with a powerful Nordic nRF52840 MCU that supports Bluetooth 5.0 (Bluetooth Low Energy) and the newest LoRa transceiver from Semtech, the SX1262. The Semtech SX1262 has compared to the older SX127x series a lower power consumption at the same TX power. This makes the **RAK4631** an ultra-low power communication solution.
 **RAK4631** can be comfortably programmed with the Arduino™ IDE or the PlatformIO extension for other IDE's like Atom, MS Visual Code, or Clion.
 
-Both LoRaWan® and LoRa point-to-point connections are supported by an Arduino™ library.
+Both LoRaWAN and LoRa point-to-point connections are supported by an Arduino™ library.
 
 
 ## Product Features
@@ -52,7 +52,7 @@ Both LoRaWan® and LoRa point-to-point connections are supported by an Arduino�
 * 64&nbsp;MHz CPU clock    
 * 1&nbsp;MB Flash, 256&nbsp;KB RAM    
 * Semtech SX1262 low power high range LoRa transceiver     
-* LoRaWan® 1.0.2 protocol stack     
+* LoRaWAN 1.0.2 protocol stack     
 * Bluetooth 5.0 protocol stack    
 
 * I2C, SPI, Analog inputs, Digital inputs, and outputs    

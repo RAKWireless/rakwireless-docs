@@ -327,7 +327,7 @@ Compare your device details to ensure the device profile is correct.  If there a
 
 
 2. Configure **Network Mode** to **Basics Station**.
-3. Navigate to **LoRa®**. For **Work mode**, select **Basics station** and click **Configure Basics Station server setup** to expand the Basics Station settings.
+3. Navigate to **LoRa**. For **Work mode**, select **Basics station** and click **Configure Basics Station server setup** to expand the Basics Station settings.
 
 
 <rk-img
@@ -1161,7 +1161,7 @@ In this method, you will configure the gateway’s packet forwarder to send data
 
 2. Login using the set credentials you have set in the [**Access the Gateway**](/Product-Categories/wisgate/rak7289-v2/Quickstart/#access-the-gateway) section.
 
-3. On the left side, head to **LoRa®**. By default, the gateway is configured to work as a Built-in network server.
+3. On the left side, head to **LoRa**. By default, the gateway is configured to work as a Built-in network server.
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpstack/2.network-server.png"
@@ -1303,7 +1303,7 @@ In this method, you will configure the gateway’s built-in gateway bridge to se
 
 
 2. Login using the set credentials you have set in the **Access the gateway**.
-3. On the left side, head to **LoRa®**. By default, the gateway is configured to work as a **Built-in network server**.
+3. On the left side, head to **LoRa**. By default, the gateway is configured to work as a **Built-in network server**.
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpstack/13.network-server.png"
@@ -1571,7 +1571,7 @@ When connecting the gateway to the ChirpStack, you will need to open ports 1700 
 
 
 2. Login using the set credentials you have set in the **Access the gateway**.
-3. On the left side, head to **LoRa®**. By default, the gateway is configured to work as a **Built-in network server**.
+3. On the left side, head to **LoRa**. By default, the gateway is configured to work as a **Built-in network server**.
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpstack/33.network-server.png"
@@ -1721,7 +1721,7 @@ When connecting the gateway to the ChirpStack, you will need to open ports 1883 
 
 2. Login using the set credentials you have set in the **Access the gateway**.
 
-3. On the left side, head to **LoRa®**. By default, the gateway is configured to work as **Built-in network server**.
+3. On the left side, head to **LoRa**. By default, the gateway is configured to work as **Built-in network server**.
 
 
 <rk-img
@@ -1820,7 +1820,7 @@ Now your gateway is connected to the ChirpStack Network server.
 
 ##### Connecting the Gateway via Basics Station
 
-In this method, you will connect the gateway to the ChirpStack via Basics Station. The LoRa Basics™ Station is an implementation of a LoRa® packet forwarder.
+In this method, you will connect the gateway to the ChirpStack via Basics Station. The LoRa Basics™ Station is an implementation of a LoRa packet forwarder.
 
 :::tip 📝 NOTE
 When connecting the gateway to the ChirpStack, you will need to open TCP ports3001 and 8080 to enable the communication between the gateway and the server and be able to access the ChirpStack.
@@ -1843,7 +1843,7 @@ When connecting the gateway to the ChirpStack, you will need to open TCP ports30
 
 
 2. Login using the set credentials you have set in the **Access the gateway**.
-3. On the left side, head to **LoRa®**. By default, the gateway is configured to work as a **Built-in network server**.
+3. On the left side, head to **LoRa**. By default, the gateway is configured to work as a **Built-in network server**.
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpstack/55.network-server.png"

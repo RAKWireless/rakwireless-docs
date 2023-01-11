@@ -4,8 +4,16 @@ rak_img: /assets/images/knowledge-hub/tutorials/lorawan-vs-the-world-of-iot/over
 rak_desc: A detailed comparison between LoRaWAN and the different IoT protocols using S.W.O.T. Analysis.
 tags:
   - Tutorial
+  - IoT
+  - LoRaWAN
+  - SWOT
+  - Zigbee
+  - WiFi
+  - Bluetooth Low Energy
+  - BLE
+  - NB-IoT
 header:
-  title: LoRaWAN vs. the world of IoT!
+  title: LoRaWAN vs. The World of IoT!
   caption: by <b>Vladislav Yordanov</b>
   img: /assets/images/knowledge-hub/banners/lorawan-vs-the-world-of-iot.jpg
 posted: 01/11/2019 10:30 AM
@@ -15,7 +23,7 @@ author:
   img: /assets/images/knowledge-hub/authors/vladislav-yordanov.jpg
 ---
 
-# LoRaWAN vs. the world of IoT!
+# LoRaWAN vs. The World of IoT!
 
 You know (or you will know after reading this) that there are not 1 or 2 technologies and protocols in the Internet of Things. They all have their strengths and weaknesses and today we will discuss that for the main players in the game.
 
@@ -39,14 +47,14 @@ Now, let us start with [Zigbee](https://zigbee.org/). If you’re using any smar
 
 _**The little table here will show us what is good and what is not so good about Zigbee**_:
 
-| 
+|
 - It uses less power than Wi-Fi (its main competitor) <br> - It’s designed to support hundreds of devices on a network. |  - You could use bidirectional command-and-control functionality, but to work appropriately, network density would need to be high. <br> - The network is not available everywhere (not a public network in any means).  |
 | ------ | ------------ |
 | - **You can use a wide range of devices from different manufacturers without needing a specific hub for each (interoperability is good).** | - **Something that can cause problems is all your devices running over the same 2.4GHz wireless band.** |
 
 LoRa is the better option if you need true bidirectionality because of the symmetric link. Better command-and-control functionality. You can set up and manage your own network. The open standard has the potential to be flexible because it’s not going to be driven by a specific company.
 
-## WiFi 
+## WiFi
 
 <rk-img
   src="/assets/images/knowledge-hub/tutorials/lorawan-vs-the-world-of-iot/wifi.png"

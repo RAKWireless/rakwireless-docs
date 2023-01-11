@@ -134,7 +134,7 @@ sudo ./install.sh
 
 ::: tip 📝 NOTE
 
-Have in mind that the script will also install ChirpStack—an open-source LoRaWAN® Network Server stack. This will allow you to create a fully functional LoRaWAN Server locally on the Raspberry Pi.
+Have in mind that the script will also install ChirpStack—an open-source LoRaWAN Network Server stack. This will allow you to create a fully functional LoRaWAN Server locally on the Raspberry Pi.
 
 :::
 

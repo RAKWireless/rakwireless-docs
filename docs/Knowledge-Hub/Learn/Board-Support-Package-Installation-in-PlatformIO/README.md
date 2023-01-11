@@ -3,7 +3,17 @@ sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/platformio-logo.png
 rak_desc: A brief guide on how to install the board support package in PlatformIO through Visual Studio Code
 tags:
+  - Tutorial
+  - PlatformIO
   - WisBlock
+  - WisBlock Core
+  - BSP
+  - PlatformIO BSP
+  - Visual Studio Code
+  - RAK4631
+  - RAK11200
+  - RAK11300
+  - RP2040
 header:
   title: Installation of Board Support Package in PlatformIO
   caption: by <b>Bernd Giesecke</b>
@@ -26,7 +36,7 @@ Download the patch package from
 You will need it during the installation or update.
 :::
 
-## Steps for the installation or update:
+## Steps for the Installation or Update:
 - [First install](#first-install)
 - [Update](#update)
 

@@ -9,6 +9,7 @@ tags:
   - MQTT
   - HTTP
   - ThingsBoard
+  - RAK7204
 header:
   title: ThingsBoard Configuration with MQTT/HTTP Integrations via WisGateOS
   caption: by <b>RAKwireless Team</b>

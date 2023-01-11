@@ -11,6 +11,8 @@ tags:
   - RAK18000
   - RAK18030
   - Arduino
+  - Noise Level Alarm
+  - Noise Alarm
 header:
   title: Build Your Own Noise Level Alarm
   caption: by <b>Christopher Méndez</b>

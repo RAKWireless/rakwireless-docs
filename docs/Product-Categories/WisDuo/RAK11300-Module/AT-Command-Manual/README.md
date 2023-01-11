@@ -99,7 +99,7 @@ More details on each command description and examples are given in the remainder
 
 :::tip 📝 NOTE:
 
-After changing LoRaWAN® parameters, the device must be reset by either the `ATZ` command or pushing the reset button.
+After changing LoRaWAN parameters, the device must be reset by either the `ATZ` command or pushing the reset button.
 
 The Serial port connection is lost after the `ATZ` command or pushing the reset button. The connection must be re-established on the connected computer before log output can be seen or AT commands can be entered again.
 
@@ -455,9 +455,9 @@ AT+CFM=3
 
 ## AT+JOIN
 
-Description: Join the LoRaWAN® network
+Description: Join the LoRaWAN network
 
-This command is used to join a LoRaWAN® network.
+This command is used to join a LoRaWAN network.
 
 | Command                     | Input Parameter                                                                                   | Return Value                     | Return Code             |
 | --------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------- | ----------------------- |
@@ -506,7 +506,7 @@ AT+JOIN=3:1:8:10
 
 Description: Network join status
 
-This command is used to check the status of the devices if it is connected to a LoRaWAN® network.
+This command is used to check the status of the devices if it is connected to a LoRaWAN network.
 
 | Command    | Input Parameter | Return Value                         | Return Code |
 | ---------- | --------------- | ------------------------------------ | ----------- |
@@ -533,7 +533,7 @@ OK
 
 ## AT+NJM
 
-Description: LoRaWAN® network join mode
+Description: LoRaWAN network join mode
 
 This command is used to access and configure the activation method of the device either OTAA or ABP. A value of 1 means OTAA join mode, a value of 0 means ABP join mode
 
@@ -607,7 +607,7 @@ OK
 
 Description: Send payload data
 
-This command is used to send the LoRaWAN® payload to a specific port.
+This command is used to send the LoRaWAN payload to a specific port.
 | Command                     | Input Parameter | Return Value         | Return Code                                                        |
 | --------------------------- | --------------- | -------------------- | ------------------------------------------------------------------ |
 | `AT+SEND?`                  | -               | `AT+SEND`: Send data | `OK`                                                               |
@@ -707,9 +707,9 @@ AT+ADR=3
 
 ## AT+CLASS
 
-Description: LoRaWAN® class
+Description: LoRaWAN class
 
-This command is used to access and configure the LoRaWAN® class of the module.
+This command is used to access and configure the LoRaWAN class of the module.
 
 | Command                      | Input Parameter | Return Value                                      | Return Code              |
 | ---------------------------- | --------------- | ------------------------------------------------- | ------------------------ |
@@ -717,7 +717,7 @@ This command is used to access and configure the LoRaWAN® class of the module.
 | `AT+CLASS=?`                 | -               | **A** or **C** (B not supported)                  | `OK`                     |
 | `AT+CLASS=<Input Parameter>` | **A** or **C**  | -                                                 | `OK` or `AT_PARAM_ERROR` |
 
-_**This FW of the device supports the LoRaWAN® V1.0.2 stack**_.
+_**This FW of the device supports the LoRaWAN V1.0.2 stack**_.
 
 **Examples**:
 

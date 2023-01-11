@@ -30,7 +30,7 @@ The module itself comprises a RAK4630 as its main component. The RAK4630 is a co
 
 The module complies with LoRaWAN 1.0.2 protocols, it also supports LoRa point-to-point communication.
 
-The RF communication characteristic of the module (Lora® + BLE) makes it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors, and monitors, etc.).
+The RF communication characteristic of the module (LoRa + BLE) makes it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors, and monitors, etc.).
 
  
 ### Features

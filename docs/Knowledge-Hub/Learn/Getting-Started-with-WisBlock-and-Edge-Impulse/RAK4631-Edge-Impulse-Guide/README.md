@@ -5,6 +5,11 @@ rak_desc: This tutorial will show you how to set up and connect your WisBlock to
 tags:
   - Tutorial
   - WisBlock
+  - RAK4631
+  - Edge Impluse
+  - Arduino
+  - VS Code
+  - PlatformIO
 header:
   title: Getting Started with WisBlock and Edge Impulse
   caption: by <b>Christopher Mendez Martinez</b>

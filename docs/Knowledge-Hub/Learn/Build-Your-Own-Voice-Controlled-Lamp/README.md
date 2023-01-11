@@ -11,9 +11,14 @@ tags:
   - RAK18000
   - RAK18031
   - RAK13001
+  - RAK11200
   - Arduino
   - Edge Impulse
   - Cyberon
+  - Arduino
+  - Voice-Controlled Lamp
+  - VS Code
+  - PlatformIO
 header:
   title: Build Your Own Voice-Controlled Lamp
   caption: by <b>Christopher Méndez</b>

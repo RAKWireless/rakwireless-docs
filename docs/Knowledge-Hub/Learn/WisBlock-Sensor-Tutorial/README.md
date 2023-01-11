@@ -5,6 +5,11 @@ rak_desc: Learn how to make your own WisBlock Sensor RTC (real time clock) modul
 tags:
   - Tutorial
   - WisBlock
+  - WisBlock Sensor
+  - RAK5005-O
+  - RAK1906
+  - PCB
+  - RTC
 header:
   title: WisBlock Sensor Tutorial
   caption: by <b>Bernd Giesecke</b>
@@ -55,7 +60,7 @@ The template schematic is very simple. It only includes the connector and a tabl
 A few things you need to know.
 
 - VDD is the MCU's GPIO voltage, for a RAK4631 this would be 3.3V. It is available as long as your WisBlock is powered by USB or battery
-- 3V3_S is a 3.3V power supply that can be controlled by the WisBlock Core module.  
+- 3V3_S is a 3.3V power supply that can be controlled by the WisBlock Core module.
   If your sensor module is consuming only a few uA current, you can choose VDD to power the electronic parts of your sensor. But if your module is consuming a higher current, it is **strongly** recommended to use 3V3_S as supply voltage. This way you can optimize power consumption of your WisBlock application by software.
 - SPI_MISO, SPI_MOSI, SPI_CLK, SPI_CS is for the SPI interface. We recommend not to use SPI on the WisBlock Sensor modules, but instead use I2C. Because the SPI_CS signal is the same on all sensor slots. Only one SPI module can be used on the sensor extension slots of the WisBlock Base board. A workaround could be to use one of the GPIO's available on the sensor slot for the SPI chip select signal.
 - RXD1 and TXD1 are only available on slot A of the WisBlock Base board. If your sensor modules requires serial communication, make sure that it is only used in slot A. Also when using the serial signals, the module **cannot** be plugged in rotated without changes in the software application.
@@ -99,8 +104,8 @@ As you can see, Autodesk Eagle™ complains a lot of DRC dimension errors around
 
 ## RTC example
 
-For this example I chose a very interesting RTC chip. It is the [EnerChip™ CBC34803-M5C](https://www.cymbet.com/products/enerchip-rtc/cbc34803-m5c/) RTC module made by [CYMBET Corp.](https://www.cymbet.com).  
-The interesting part is that this _chip combines a Real-Time Clock (RTC) and calendar optimized for low power applications with an integrated rechargeable solid state backup battery and all power management functions._  
+For this example I chose a very interesting RTC chip. It is the [EnerChip™ CBC34803-M5C](https://www.cymbet.com/products/enerchip-rtc/cbc34803-m5c/) RTC module made by [CYMBET Corp.](https://www.cymbet.com).
+The interesting part is that this _chip combines a Real-Time Clock (RTC) and calendar optimized for low power applications with an integrated rechargeable solid state backup battery and all power management functions._
 Yes, you read it correct. The chip has an integrated battery. A small one, agreed, it only provides backup of 5 days. But that is already quite good. And there is no need for a large coin battery or a large super capacitor to power the RTC during power down periods.
 
 ### RTC example schematic
@@ -121,12 +126,12 @@ The first thing to check is that we removed most connections from the board-to-b
   caption="Adjusted connector nets"
 />
 
-Only the required nets are left. If you do not remove the unused nets, you will struggle later on in the PCB design because of the mirrored assignment of the signals to the left and right connector row. There will be too many unnecessary connections just between the connector pins.  
+Only the required nets are left. If you do not remove the unused nets, you will struggle later on in the PCB design because of the mirrored assignment of the signals to the left and right connector row. There will be too many unnecessary connections just between the connector pins.
 For the RTC chip, we need only the supply nets, the I2C nets and 2 IRQ lines. The design around the RTC is taken from the datasheet of the [EnerChip™ CBC34803-M5C](https://www.cymbet.com/wp-content/uploads/2019/02/DS-72-34.pdf).
 
 ### RTC example PCB
 
-We were able to route the whole design on a two layer board. The connection was so simple, that it could be done with the Autodesk Eagle™ autorouter function. Only one GND connection had to be added manually.  
+We were able to route the whole design on a two layer board. The connection was so simple, that it could be done with the Autodesk Eagle™ autorouter function. Only one GND connection had to be added manually.
 As you can see, we put the recommended GND planes on top and bottom. In addition the open copper area around the mounting hole is visible. This copper area is connected to the GND signal.
 
 #### RTC top layer
@@ -158,7 +163,7 @@ As you can see it is not difficult to design a custom WisBlock Sensor module. Ju
   - 3V3_S if you need to control the power supply of your WisBlock Sensor module
 - Do not place components on the bottom layer. The space between the sensor module and the base board is only 1-2 mm.
 
-I hope this small tutorial was useful. If you successfully designed your own WisBlock Sensor module, please share details in our forum section for [WisBlock](https://forum.rakwireless.com/c/wisblock/67).  
+I hope this small tutorial was useful. If you successfully designed your own WisBlock Sensor module, please share details in our forum section for [WisBlock](https://forum.rakwireless.com/c/wisblock/67).
 Thank you for reading this tutorial and supporting RAKwireless by using our WisBlock products.
 
 <rk-author />

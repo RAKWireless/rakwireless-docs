@@ -6,6 +6,9 @@ tags:
   - Deployment-Guide
   - WisGate
   - WisDuino
+  - RAK7249
+  - RAK811
+  - OTAA
 header:
   title: Build-in LoRa Network Server Configuration
   caption: by <b>RAKwireless Team</b>
@@ -76,7 +79,7 @@ We will first set-up the built-in LoRa  network server. Before going through the
 2. By pressing the "**Add**" button, you will be redirected into a new tab where you will need to fill the mandatory parameters: **Name** and **Description**.
 
 :::tip 📝 NOTE
- The **Latitude**, **Longitude** and **Altitude** parameters are not mandatory. You can leave them for later, or leave them empty if the gateway is not stationary.
+ The **Latitude**, **Longitude**, and **Altitude** parameters are not mandatory. You can leave them for later, or leave them empty if the gateway is not stationary.
 :::
 
 3. If everything is set-up correctly, you should see the same set-up with the image shown below:
