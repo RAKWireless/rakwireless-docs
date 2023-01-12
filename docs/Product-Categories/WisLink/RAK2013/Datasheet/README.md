@@ -18,7 +18,7 @@ rak_img: /assets/images/wislink-lte/rak2013/datasheet/RAK2013_home.png
 
 ### Description
 
-The **RAK2013 WisLink Cellular Pi HAT** is a Raspberry Pi 3B+ edition cellular communications module that supports Low-Power Wide-Area (LPWA) connectivity to Internet-of-Things (IoT) devices. It has several configuration options including BG96 / EG91 / EG95 for 4G/LTE, NB-IoT, CAT-M, CAT1 or CAT 4 cellular protocol. This device integrates an audio codec and audio amplifier supporting Voice-over-LTE (VoLTE) in high definition (HD) and uninterrupted voice calls. For easy use, there are an earphone connector, MIC connector and speaker connector with an audio amplifier.
+The **RAK2013 WisLink Cellular Pi HAT** is a Raspberry Pi 3B+/4 edition cellular communications module that supports Low-Power Wide-Area (LPWA) connectivity to Internet-of-Things (IoT) devices. It has several configuration options including BG96 / EG91 / EG95 for 4G/LTE, NB-IoT, CAT-M, CAT1 or CAT 4 cellular protocol. This device integrates an audio codec and audio amplifier supporting Voice-over-LTE (VoLTE) in high definition (HD) and uninterrupted voice calls. For easy use, there are an earphone connector, MIC connector and speaker connector with an audio amplifier.
 
 The module is supported with extendable sensor board connected that follows the mikroBus standard. MikroBus has many kinds of sensor board, such as temperature, humidity, 3 axis sensor and light sensor, allowing easy sensor data transmission. Because of its wide range of supported sensors, it is suitable for applications such as environmental monitoring and presence sensing, that require cellular connectivity.
 
@@ -26,7 +26,7 @@ The RAK2013 is compatible with [RAK2245 Pi HAT module](https://store.rakwireless
 
 ### Features
 
-- Compatible with Raspberry Pi 3B+ edition specification
+- Compatible with Raspberry Pi 3B+/4 edition specification
 - Quectel BG96/EG91/EG95 for NB-IOT / CAT-M / CAT1 LTE / CAT4 LTE
 - Supports Voice over CAT-M or VoLTE
 - Supports Nano SIM card or eSIM card

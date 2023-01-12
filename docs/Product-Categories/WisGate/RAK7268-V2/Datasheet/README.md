@@ -6,7 +6,7 @@ tags:
   - wisgate
   - RAK7268V2
   - RAK7268CV2
-prev: ../Supported-LoRa-Network-Servers/ 
+prev: ../Supported-LoRa-Network-Servers/
 next: false
 ---
 
@@ -19,7 +19,7 @@ next: false
 
 The RAK7268 V2 WisGate Edge Lite 2 is the latest edition of the RAK Edge Series. It is an ideal product for indoor deployment with its built-in Ethernet connectivity for a straightforward setup. Additionally, there is an onboard Wi-Fi setup (supporting 2.4&nbsp;GHz Wi-Fi) that allows it to be easily configured via the default Wi-Fi AP mode. The new RAK7268 V2 supports power-over-Ethernet (PoE) in cases of a wall or ceiling mounting, where installing additional power lines is not an option. Moreover, the gateway supports LTE uplink communication connections (optional, only in RAK7268C V2).
 
-The RAK7289 V2 supports WisGateOS 2, which is based on the latest OpenWRT kernel and accommodates the latest security updates like IPv6, OpenSSL 1.1 support, multiple accounts access, and more. The web UI has a fresh new look, with more user-friendly information tooltips.
+The RAK7268 V2 supports WisGateOS 2, which is based on the latest OpenWRT kernel and accommodates the latest security updates like IPv6, OpenSSL 1.1 support, multiple accounts access, and more. The web UI has a fresh new look, with more user-friendly information tooltips.
 
 RAK7268 V2 is especially suitable for small and medium-sized deployment scenarios in industry applications, saving the additional cost for server and R&D investment, and has the advantages of high execution efficiency.
 
@@ -131,7 +131,7 @@ only in RAK7268C V2)</td><td>Slow Flicker (1800&nbsp;ms High / 200&nbsp;ms Low) 
         <tr><td rowspan="4">Wi-Fi feature</td><td>Frequency: 2.4&nbsp;GHz (802.11b/g/n)</td></tr>
         <tr><td>RX Sensitivity: -95&nbsp;dBm (Min)</td></tr>
         <tr><td>TX Power: 20&nbsp;dBm (Max)</td></tr>
-        <tr><td>Operation channels: 2.4&nbsp;GHz: 1-13</td></tr> 
+        <tr><td>Operation channels: 2.4&nbsp;GHz: 1-13</td></tr>
         <tr><td rowspan="5">LoRa feature</td><td>SX1302 Mini PCIe card</td></tr>
         <tr><td>8 Channels</td></tr>
         <tr><td>RX Sensitivity: -139&nbsp;dBm (Min)</td></tr>
@@ -320,9 +320,9 @@ This device complies with part 15 of the FCC Rules. Operation is subject to the 
 This equipment has been tested and found to comply with the limits for a Class B digital device, according to part 15 of the FCC Rules. These limits are designed to provide reasonable protection against harmful interference in a residential installation. This equipment generates, uses, and can radiate radio frequency energy and, if not installed and used following the instructions, may cause harmful interference to radio communications. However, there is no guarantee that interference will not occur in a particular installation. If this equipment does cause harmful interference to radio or television reception, which can be determined by turning the equipment off and on, the user is encouraged to try to correct the interference by one or more of the following measures:
 
 1. Reorient or relocate the receiving antenna.
-2. Increase the separation between the equipment and the receiver. 
+2. Increase the separation between the equipment and the receiver.
 3. Connect the equipment into an outlet on a circuit different from that to which the receiver is connected.
-4. Consult the dealer or an experienced radio/TV technician for help. 
+4. Consult the dealer or an experienced radio/TV technician for help.
 
 :::
 

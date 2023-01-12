@@ -39,7 +39,7 @@ For the build-in **RAK2287**, it uses the **SX1302** chip from Semtech which bui
 
 **RAK7248** is ideal for prototyping, proof-of-concept demonstrations, or evaluation. It includes a ready-to-use LoRaWAN Gateway OS that can be connected to a LoRaWAN server. Also, it is developer-friendly and simple even for not-so-tech users to set up a LoRaWAN system. It has to be the best value and function for connectivity to address a variety of applications like Smart Grid, Intelligent Farm, and other IoT enterprise applications.
 
-### Features 
+### Features
 
 - Computing with Raspberry Pi4 (Linux).
 - Based on the LoRa Concentrator Engine: Semtech® SX1302.
@@ -61,7 +61,7 @@ The overview covers the RAK7248 board and block diagram.
 
 #### Board Overview
 
-The outer dimension of RAK7248 is **92x68.3x57.2 mm**. 
+The outer dimension of RAK7248 is **92x68.3x57.2 mm**.
 
 <rk-img
   src="/assets/images/wisgate/rak7248/datasheet/1.png"
@@ -104,7 +104,7 @@ RAK7248 is the central hardware solution for all LoRa based radio communication.
 
 :::tip 📝 NOTE
 The concrete segmentation of the protocol related tasks is outside the scope of this document.
-::: 
+:::
 
 ### RAK9003 Pi HAT
 
@@ -171,7 +171,7 @@ The RAK7248 models support all LoRaWAN® bands.
 
 ###### Transmitter RF Characteristics
 
-RAK2287 has an excellent transmitter performance. It is highly recommended to use an optimized configuration for the power level configuration, which is part of the HAL. This results in a mean RF output power level and current consumption. 
+RAK2287 has an excellent transmitter performance. It is highly recommended to use an optimized configuration for the power level configuration, which is part of the HAL. This results in a mean RF output power level and current consumption.
 
 | **PA control** | **PWID  control** | **Power** |
 | -------------- | ----------------- | --------- |
@@ -233,11 +233,11 @@ It is highly recommended, to use optimized RSSI calibration values, which is par
 
 ##### LoRa Antenna
 
-The LoRa Antenna with RP-SMA male connector is shown in the figure below:
+The LoRa Antenna with RP-SMA male connector is shown in **Figure 10**:
 
 <rk-img
   src="/assets/images/wisgate/rak7248/datasheet/10.png"
-  width="40%"
+  width="80%"
   caption="LoRa Antenna"
 />
 
@@ -253,12 +253,12 @@ The antenna's mechanical dimension is shown below:
 
 ###### Antenna Parameters
 
-| Items                              |         Specifications         |
-| ---------------------------------- | :----------------------------: |
-| Voltage Standard Wave Ratio (VSWR) |             1.5:1              |
-| Gain                               |            -2.0 dBi            |
-| Working Temperature & Humidity     | T:-35 ºC ~ +80 ºC, H: 0% ~ 95% |
-| Storage Temperature & Humidity     | T:-40 ºC ~ +85 ºC, H: 0% ~ 95% |
+| Items                              |              Specifications              |
+| ---------------------------------- | :--------------------------------------: |
+| Voltage Standard Wave Ratio (VSWR) |                  ≤ 1.5                   |
+| Gain                               |           2.3&nbsp;dBi (peak)            |
+| Working Temperature & Humidity     | T:-35°&nbsp;C ~ +80°&nbsp;C, H: 0% ~ 95% |
+| Storage Temperature & Humidity     | T:-40°&nbsp;C ~ +85°&nbsp;C, H: 0% ~ 95% |
 
 ##### LTE
 
@@ -421,17 +421,17 @@ The table below lists the operation and storage temperature requirements:
 
 ### FCC Caution
 
-Any changes or modifications not expressly approved by the party responsible for compliance could void the user's authority to operate the equipment. 
+Any changes or modifications not expressly approved by the party responsible for compliance could void the user's authority to operate the equipment.
 
-This device complies with part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) This device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation. 
+This device complies with part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) This device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation.
 
 :::tip 📝 IMPORTANT NOTE
-This equipment has been tested and found to comply with the limits for a Class B digital device, according to part 15 of the FCC Rules. These limits are designed to provide reasonable protection against harmful interference in a residential installation. This equipment generates, uses, and can radiate radio frequency energy and, if not installed and used following the instructions, may cause harmful interference to radio communications. However, there is no guarantee that interference will not occur in a particular installation. If this equipment does cause harmful interference to radio or television reception, which can be determined by turning the equipment off and on, the user is encouraged to try to correct the interference by one or more of the following measures: 
+This equipment has been tested and found to comply with the limits for a Class B digital device, according to part 15 of the FCC Rules. These limits are designed to provide reasonable protection against harmful interference in a residential installation. This equipment generates, uses, and can radiate radio frequency energy and, if not installed and used following the instructions, may cause harmful interference to radio communications. However, there is no guarantee that interference will not occur in a particular installation. If this equipment does cause harmful interference to radio or television reception, which can be determined by turning the equipment off and on, the user is encouraged to try to correct the interference by one or more of the following measures:
 
-* Reorient or relocate the receiving antenna. 
-* Increase the separation between the equipment and receiver. 
-* Connect the equipment into an outlet on a circuit different from that to which the receiver is connected. 
-* Consult the dealer or an experienced radio/TV technician for help. 
+* Reorient or relocate the receiving antenna.
+* Increase the separation between the equipment and receiver.
+* Connect the equipment into an outlet on a circuit different from that to which the receiver is connected.
+* Consult the dealer or an experienced radio/TV technician for help.
 :::
 
 ### FCC Radiation Exposure Statement

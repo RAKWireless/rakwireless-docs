@@ -54,7 +54,7 @@ In this mode, the WisNode TrackIt is configured via the TrackIt application on y
   caption="LoRaWAN mode"
 />
 
-1. Download and install the **TrackIt App** on your smartphone.
+1. Download and install the [**TrackIt App**](https://play.google.com/store/apps/details?id=com.rak.wisnodetrackit&hl=en_US&gl=US) on your smartphone.
 2. Turn on the Bluetooth on tour smartphone.
 3. Start the **TrackIt App**. Location permission may be requested, allow it.
 4. Agree with the **Terms and Conditions** and the **Privacy Policy**, and press the **Sign in with RAK ID** button.
@@ -147,7 +147,7 @@ In this mode, no LoRaWAN gateway is needed, but you need at least two RAK2171 de
   caption="P2P mode"
 />
 
-1. Download and install the **TrackIt App** on your smartphone.
+1. Download and install the [**TrackIt App**](https://play.google.com/store/apps/details?id=com.rak.wisnodetrackit&hl=en_US&gl=US) on your smartphone.
 2. Turn on the Bluetooth on tour smartphone.
 3. Start the **TrackIt App**. Location permission may be requested, allow it.
 4. Agree with the **Terms and Conditions** and the **Privacy Policy**, and press the **Sign in with RAK ID** button.
@@ -232,7 +232,7 @@ In this mode, any LoRaWAN NS can be used (TTN, Helium, or other). The RAK TrackI
   caption="Client tracker is added and Registered Trackers List"
 />
 
-1. Download and install the **TrackIt App** on your smartphone.
+1. Download and install the [**TrackIt App**](https://play.google.com/store/apps/details?id=com.rak.wisnodetrackit&hl=en_US&gl=US) on your smartphone.
 2. Turn on the Bluetooth on tour smartphone.
 3. Start the **TrackIt App**. Location permission may be requested, allow it.
 4. Agree with the **Terms and Conditions** and the **Privacy Policy**, and press the **Sign in with RAK ID** button.

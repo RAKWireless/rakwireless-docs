@@ -69,7 +69,7 @@ By default, the gateway will work in Wi-Fi AP Mode, which means you can find an 
 You can also connect your PC with the gateway through an Ethernet cable. By default, the IP address of the gateway’s Ethernet interface is `192.168.10.10`, so you need to set the IP address of your PC’s Ethernet to the same network segment, for example, `192.168.10.20`.
 
 1. To do this on a Windows PC, go to **Control Panel -> Network and Internet -> Network and Sharing Center** and click **Ethernet**.
-  
+
 <rk-img
   src="/assets/images/wisgate/rak7248/quickstart/4.network-sharing.png"
   width="80%"
@@ -84,7 +84,7 @@ You can also connect your PC with the gateway through an Ethernet cable. By defa
   caption="Ethernet properties"
 />
 
-3. By default, the PC will obtain an IP Address automatically. Click **Option Use the following IP Address** and enter the IP address `192.168.0.10.20` then press **OK**.
+3. By default, the PC will obtain an IP Address automatically. Click **Option Use the following IP Address** and enter the IP address `192.168.10.20` then press **OK**.
 
 <rk-img
   src="/assets/images/wisgate/rak7248/quickstart/6.properties.png"
@@ -109,7 +109,7 @@ SSH (Secure Shell) is typically used to log in to a remote machine and execute c
 - If you have connected to the gateway through Wi-Fi AP Mode, the IP Address is `192.168.230.1`
 - If you have connected to the gateway through Ethernet, the IP Address is `192.168.10.10`
 - It will then prompt you to enter the username and password. The default username and password are:
-  
+
   - **Username**: pi
   - **Password**: raspberry
 
@@ -187,7 +187,7 @@ There are 5 options to choose from in the Wi-Fi configuration menu:
 
 :::warning ⚠️ WARNING
 
-To enable Wi-Fi Client Mode, you have to disable AP Mode first. 
+To enable Wi-Fi Client Mode, you have to disable AP Mode first.
 :::
 
 Once Wi-Fi AP Mode has been disabled by choosing **2 Enable Client Mode/Disable AP Mode**, you can now then connect to a new Wi-Fi Network by choosing **4 Add New SSID for Client**.
@@ -255,7 +255,7 @@ Make sure to input the correct Wi-Fi SSID and Password, or you will not be able 
 
 #### Reboot
 
-Lastly, reboot the gateway using the command shown below and put it in the command line. 
+Lastly, reboot the gateway using the command shown below and put it in the command line.
 
 ```
 sudo reboot
@@ -279,9 +279,9 @@ If you have entered either or both incorrect Wi-Fi SSID and Password in the Wi-F
 />
 
 - Using your **Command Prompt** or **Terminal**, navigate to your SD Card and type the following command to generate the **rak_ap** file.
-  
-``` 
-cd > rak_ap  
+
+```
+cd > rak_ap
 ```
 
 - Check if the rak_ap file is created successfully. If so, re-insert the SD Card into your RAK7248 WisGate Developer D4H Gateway, and it should work again in Wi-Fi AP Mode.
@@ -289,7 +289,7 @@ cd > rak_ap
 ### Configuring the Gateway
 
 If you have successfully logged into your gateway using SSH, enter the following command in the command line:
-  
+
 ```
 sudo gateway-config
 ```
@@ -448,7 +448,7 @@ First, select **1 ChirpStack Channel-plan configuration** for configuring your f
 
 :::tip 📝 NOTE
 
-- The default IP Address is `127.0.0.1`. The latest firmware/GitHub repository installs ChirpStack on the Raspberry Pi. 
+- The default IP Address is `127.0.0.1`. The latest firmware/GitHub repository installs ChirpStack on the Raspberry Pi.
 :::
 
 - If you want to use an external ChirpStack, you need to set it to its IP Address.

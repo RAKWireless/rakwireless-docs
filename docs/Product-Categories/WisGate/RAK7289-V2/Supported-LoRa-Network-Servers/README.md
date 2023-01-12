@@ -1189,7 +1189,7 @@ In this case, the ChirpStack is installed locally on an Ubuntu machine on IP `19
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpstack/4.packet-forwarder.png"
-  width="60%"
+  width="70%"
   caption="Configuring Packet Forwarder to ChirpStack"
 />
 
@@ -1314,7 +1314,7 @@ In this method, you will configure the gateway’s built-in gateway bridge to se
 4. From **Work Mode**, select **Packet forwarder**. Click **Choose from the available protocols** to expand the Packet forwarder settings.
 
 <rk-img
-  src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpstack/14.packet-forward.png"
+  src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpstack/14.packet-forwarder.png"
   width="100%"
   caption="Setting Packet Forwarder Mode"
 />
@@ -1377,7 +1377,7 @@ In this case, the ChirpStack is installed locally on an Ubuntu machine on IP 192
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpstack/19.packet-forwarder.png"
-  width="60%"
+  width="70%"
   caption="Configuring Packet Forwarder to ChirpStack"
 />
 
@@ -1793,7 +1793,7 @@ In this case, the ChirpStack is installed on an AWS cloud instance with public I
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpstack/50.configure.png"
-  width="60%"
+  width="70%"
   caption="Configuring packet forwarder to ChirpStack"
 />
 
@@ -1874,7 +1874,7 @@ The URL starts with `ws://` in case a plain text connection is used. Using the `
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpstack/57.basics-station.png"
-  width="70%"
+  width="100%"
   caption="Configuring Basics Station to ChirpStack"
 />
 

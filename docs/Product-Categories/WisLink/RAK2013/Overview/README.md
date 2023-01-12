@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wislink-lte/rak2013/datasheet/RAK2013_home.png
-rak_desc: RAK2013 is compatible with Raspberry Pi 3B+ edition specification. It offers a wide range of supported sensors such as temperatures, humidity, and a light sensor that allows easy sensor data transmission. Because of its integrated audio amp and codec, it is suitable for Voice over LTE (VoLTE) in carrier network scenarios where HD calls are a requirement.
+rak_desc: RAK2013 is compatible with Raspberry Pi 3B+/4 edition specification. It offers a wide range of supported sensors such as temperatures, humidity, and a light sensor that allows easy sensor data transmission. Because of its integrated audio amp and codec, it is suitable for Voice over LTE (VoLTE) in carrier network scenarios where HD calls are a requirement.
 rak_grp: [wislink, cellular]
 prev: ../../
 next: ../Datasheet/
@@ -21,13 +21,13 @@ Purchasing the [RAK2013 WisLink Cellular Pi HAT](https://store.rakwireless.com/p
 
 ## Product Description
 
-The **RAK2013** is a Raspberry Pi 3B+ edition cellular communications module that supports Low-Power Wide-Area Network (LPWAN) connectivity to Internet-of-Things (IoT) devices. It has several configuration options including BG96 / EG91 / EG95 for 4G/LTE, NB-IoT, CAT-M, CAT1 or CAT 4 cellular protocol. This device integrates an audio codec and audio amplifier supporting Voice-over-LTE (VoLTE) in high definition (HD) and uninterrupted voice calls. For easy use, there are an earphone connector, MIC connector and speaker connector with an audio amplifier.
+The **RAK2013** is a Raspberry Pi 3B+/4 edition cellular communications module that supports Low-Power Wide-Area Network (LPWAN) connectivity to Internet-of-Things (IoT) devices. It has several configuration options including BG96 / EG91 / EG95 for 4G/LTE, NB-IoT, CAT-M, CAT1 or CAT 4 cellular protocol. This device integrates an audio codec and audio amplifier supporting Voice-over-LTE (VoLTE) in high definition (HD) and uninterrupted voice calls. For easy use, there are an earphone connector, MIC connector and speaker connector with an audio amplifier.
 
 The module is supported with an extendable sensor board connected that follows the mikroBus standard. MikroBus has many kinds of sensor board, such as temperature, humidity, 3 axis sensor and light sensor, allowing easy sensor data transmission. Because of its wide range of supported sensors, it is suitable for applications such as environmental monitoring and presence sensing, that require cellular connectivity.
 
 ## Product Features
 
-- Compatible with Raspberry Pi 3B+ edition specification
+- Compatible with Raspberry Pi 3B+/4 edition specification
 - Quectel BG96/EG91/EG95 for NB-IOT / CAT-M / CAT1 LTE / CAT4 LTE
 - Supports Voice over CAT-M or VoLTE
 - Supports Nano SIM card or eSIM card

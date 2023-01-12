@@ -106,14 +106,27 @@ Use the original charging plate and cable only.
 
 #### RF Characteristics
 
-| Parameter     | Value          |
-| ------------- | -------------- |
-| Positioning   | GPS, GLONASS   |
-| Communication | Bluetooth V4.2 |
+<table>
+  <tr>
+    <th>Parameter</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td>Positioning</td>
+    <td>GPS & GLONASS</td>
+  </tr>
+  <tr>
+    <td rowspan = "2">Communication</td>
+    <td>Bluetooth V4.2 (for configuration)</td>
+  </tr>
+  <tr>
+    <td>LoRa (data transmission)</td>
+  </tr>
+</table>
 
 #### Antennas
 
-The RAK2172 WisNode TrackIt has built-in LoRaWAN, GPS, and Bluetooth antennas.
+The RAK2171 WisNode TrackIt has built-in LoRaWAN, GPS, and Bluetooth antennas.
 
 #### Electrical Characteristics
 

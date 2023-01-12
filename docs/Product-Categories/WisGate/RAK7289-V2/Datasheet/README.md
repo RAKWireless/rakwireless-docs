@@ -19,7 +19,7 @@ certifications:
     - [RSM, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_RAK7289CV2_RSM_Certification.pdf]
     - [TDRA, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_TDRA_Certification.pdf]
     - [UKCA, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_RAK7289CV2_UKCA_Certification.pdf]
-   
+
 ---
 
 
@@ -44,7 +44,7 @@ Simply said, the RAK7289 is suited for any use case scenario, be it rapid deploy
 - Dual LoRa Concentrators for up to 16 channels
 - Backhaul: Wi-Fi, Ethernet, LTE (optional, available with RAK7289C)
 - GPS
-- Supports DC 12&nbsp;V or solar power supply with electricity monitoring (Solar Kit optional) 
+- Supports DC 12&nbsp;V or solar power supply with electricity monitoring (Solar Kit optional)
 - Internal antenna for Wi-Fi, GPS, and LTE, external antenna for LoRa
 - Dying-gasp (optional)
 
@@ -58,7 +58,7 @@ Simply said, the RAK7289 is suited for any use case scenario, be it rapid deploy
 - MQTT v3.1 bridging with TLS encryption
 - Buffering of LoRa frames in Packet Forwarder mode in case of NS outage (no data loss)
 - Full-duplex (optional)
-- Listen Before Talk (optional) 
+- Listen Before Talk (optional)
 - Fine timestamping (optional)
 
 ## Specifications
@@ -93,13 +93,13 @@ The overview presents the block diagram for the RAK7289 V2 that shows the intern
         <tr><td>2x2 MIMO</td></tr>
         <tr><td>RX Sensitivity: -95&nbsp;dBm (Min)</td></tr>
         <tr><td>TX Power: 20&nbsp;dBm (Max)</td></tr>
-        <tr><td>Operation channels: 2.4&nbsp;GHz: 1-13</td></tr> 
+        <tr><td>Operation channels: 2.4&nbsp;GHz: 1-13</td></tr>
         <tr><td rowspan="5">LoRa feature</td><td>SX1303 mPCIe card (connects maximum of two)</td></tr>
         <tr><td>8 Channels (16 channels optional)</td></tr>
         <tr><td>RX Sensitivity: -139&nbsp;dBm (Min)</td></tr>
-        <tr><td>TX Power: 27&nbsp;dBm (Max)</td></tr>
+        <tr><td>TX Power: 17&nbsp;dBm (Max)</td></tr>
         <tr><td>Listen Before Talk</td></tr>
-        <tr><td>Frequency</td><td>EU433/CN470/EU868/US915/AS923/AU915/IN865/KR920</td></tr>
+        <tr><td>Frequency</td><td>EU433/CN470/EU868/US915/AS923/AS923-1/AS923-2/AS923-3/AS923-4/AU915/IN865/KR920</td></tr>
         <tr><td rowspan="8">Cellular Feature (available with RAK7289C V2)</td><td>Supports Quectel EG95-E/EG95-NA (IoT/M2M -optimized LTE Cat 4 Module)</td></tr>
         <tr><td>EG95-E for EMEA Region (Europe, Middle East and Africa)</td></tr>
         <tr><td>LTE FDD: B1/B3/B7/B8/B20/B28A</td></tr>
@@ -115,8 +115,8 @@ The overview presents the block diagram for the RAK7289 V2 that shows the intern
         <tr><td>Wi-Fi: Internal antenna</td></tr>
         <tr><td>Ingress protection</td><td>IP67</td></tr>
         <tr><td>Enclosure material</td><td>Aluminium and plastic</td></tr>
-        <tr><td>Operating temperature</td><td>-30&nbsp;˚C to +55&nbsp;˚C</td></tr>   
-        <tr><td>Installation Method</td><td>Pole or wall mounting</td></tr> 
+        <tr><td>Operating temperature</td><td>-30&nbsp;˚C to +55&nbsp;˚C</td></tr>
+        <tr><td>Installation Method</td><td>Pole or wall mounting</td></tr>
 </tbody>
 </table>
 
@@ -208,7 +208,7 @@ The hardware specification covers the interfacing of the RAK7289 V2 and its corr
         <tr><td>STA Mode:</td></tr>
         <tr><td>   -Slow flicker (1&nbsp;Hz) - Disconnected</td></tr>
         <tr><td>   -ON - Connected</td></tr>
-        <tr><td>   -Flicker - Data receiving and sending</td></tr>        
+        <tr><td>   -Flicker - Data receiving and sending</td></tr>
         <tr><td rowspan="5">LED 5 (LTE)    </td></tr>
         <tr><td>Slow Flicker (1800&nbsp;ms High / 200&nbsp;ms Low) - Network searching</td></tr>
         <tr><td>Slow flicker (200&nbsp;ms High / 1800&nbsp;ms Low) - Idle</td></tr>

@@ -37,7 +37,7 @@ The RAK2245 Pi HAT is a complete and cost efficient gateway solution that can he
 - Supports 5&nbsp;V power supply, integrated level conversion circuit
 - TX power up to 27&nbsp;dBm, RX sensitivity down to -139&nbsp;dBm @ SF12, BW 125&nbsp;kHz
 - Supports latest LoRaWAN 1.0.2 protocol
-- Supports global license-free frequency band (EU433, CN470, EU868, US915, AS923, AU915, KR920 and IN86)
+- Supports global license-free frequency band (EU433, CN470, EU868, US915, AS923, AU915, KR920 and IN865)
 - Supports SPI, UART, I2C interface
 
 ## Specifications
