@@ -8,11 +8,7 @@ The RAKwireless Unified Interface V3 (RUI3) is designed to help IoT developers m
 
 ###### Release Versions
 
-- <b> 2023 </b>
-    - [January 9](/Release-Notes/RUI/2023/January-9/)
-
 - <b> 2022 </b>
-    - [July 15](/Release-Notes/RUI/2022/July-15/)
     - [May 18](/Release-Notes/RUI/2022/May-18/)
     - [May 14](/Release-Notes/RUI/2022/May-14/)
     - [May 8](/Release-Notes/RUI/2022/May-8/)
