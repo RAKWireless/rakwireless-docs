@@ -1385,7 +1385,7 @@ export default {
   '/Product-Categories/Accessories/Solar-Panel-Kit-for-Battery-Plus/': {
     label: 'Solar Panel Kit for Battery Plus',
     img: '/assets/images/accessories/solar-panel-kit-for-battery-plus/solar-panel-kit-for-battery-plus-overview.png',
-    store: 'https://store.rakwireless.com/products/rak-battery-plus-rak9155?utm_source=RAK9155&utm_medium=Document&utm_campaign=BuyFromStore'
+    store: 'https://store.rakwireless.com/products/solar-panel-for-rak-battery-plus-with-mounting-kit?utm_source=SolarPanelBatteryPlus&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/Accessories/RAK9105P/': {
     label: 'RAK9105P PoE Power Convertor',

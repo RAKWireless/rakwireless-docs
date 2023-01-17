@@ -21,6 +21,9 @@ The supported models are as follows:
 
 ###### Release Versions
 
+- <b> 2023 </b>
+    - [January 13](/Release-Notes/WisGateOS2/2023/January-13/)
+
 - <b> 2022 </b>
 
     - [October 18](/Release-Notes/WisGateOS2/2022/October-18/)

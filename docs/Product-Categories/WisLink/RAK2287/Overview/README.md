@@ -36,7 +36,7 @@ This module is an exceptional, complete and cost efficient gateway solution offe
 - 3.3&nbsp;V **Mini PCI-e**, compatible with 3G/LTE card of Mini PCI-e type
 - Compatible with **3G/LTE card** of Mini PCI-e type
 - Tx power up to 27&nbsp;dBm, Rx sensitivity down to -139&nbsp;dBm @ SF12, BW 125&nbsp;kHz
-- Supports **global license-free frequency band** (EU868, CN470, US915, AS923, AU915, KR920 and IN865)
+- Supports **global license-free frequency band** (EU868, EU433, CN470, US915, AS923, AU915, KR920, and IN865)
 - Supports optional SPI interfaces
 - Built-in **ZOE-M8Q GPS** module
 

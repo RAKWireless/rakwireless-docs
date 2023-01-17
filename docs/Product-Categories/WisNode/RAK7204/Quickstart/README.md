@@ -1438,8 +1438,8 @@ You can burn the bootloader in your RAK7204 WisNode Sense Home by following the 
 2. Insert the provided jumper on the Boot line pins ("BOOT" pin and "VDD"), shorting them . Also, make sure that the RX pin of J25 is connected to the RXCP pin.
 
 <rk-img
-  src="/assets/images/wisnode/rak7204/quickstart/9.burning-bootloader/og57pakunpx8jvxp4ktc.jpg"
-  width="45%"
+  src="/assets/images/wisnode/rak7204/quickstart/9.burning-bootloader/jumper-pins.png"
+  width="50%"
   caption="Boot Line shorted using the Jumper Pins"
 />
 
