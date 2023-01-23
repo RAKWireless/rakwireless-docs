@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/user-manual/magma-box/overview/magma-box.png
+rak_img: /assets/images/knowledge-hub/learn/magma-box/overview/magma-box.png
 rak_desc: This guide provides a step-by-step tutorial on Dockerized Magma AGW 1.8.0 Configuration.
 tags:
   - User Manual
@@ -45,14 +45,14 @@ The operations on the PC described are based on MacBook Pro.
 1. Take out the SD card from Magma Box.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/1.remove-sd-card.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/1.remove-sd-card.png" width="80%">
 </p>
 
 
 2. Plug the SD card into your PC via an adapter.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/2.plug-sd-card.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/2.plug-sd-card.png" width="80%">
 </p>
 
 
@@ -60,60 +60,60 @@ The operations on the PC described are based on MacBook Pro.
 4. Open the Imager and click the **CHOOSE OS** button.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/3.pi-imager.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/3.pi-imager.png" width="80%">
 </p>
 
 
 5. Select **Other general-purpose OS**.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/4.gen-purpose.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/4.gen-purpose.png" width="80%">
 </p>
 
 
 6. Then choose the **Ubuntu** item to list the available Ubuntu OS images. Make sure you choose the Ubuntu Server 20.04.5 LTS (64-bit).
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/5.ubuntu.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/5.ubuntu.png" width="80%">
 </p>
 
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/6.ubuntu-server.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/6.ubuntu-server.png" width="80%">
 </p>
 
 
 7. Back to the main page of Raspberry Pi Imager, click the **CHOOSE STORAGE** button to choose the SD card just plugged in.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/7.choose-storage.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/7.choose-storage.png" width="80%">
 </p>
 
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/8.reader.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/8.reader.png" width="80%">
 </p>
 
 
 8. Click **WRITE** to flush the Ubuntu OS into the SD card.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/9.write.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/9.write.png" width="80%">
 </p>
 
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/10.erase.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/10.erase.png" width="80%">
 </p>
 
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/11.write.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/11.write.png" width="80%">
 </p>
 
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/12.write-success.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/12.write-success.png" width="80%">
 </p>
 
 
@@ -128,7 +128,7 @@ Before anything else, configure first the IP addresses before powering up the Ma
 Here shows the traditional network architecture for Magma Box developments.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/13.ip-config.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/13.ip-config.png" width="80%">
 </p>
 
 
@@ -149,7 +149,7 @@ Follow the steps below to setup the IP addresses:
     ```
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/14.port-config.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/14.port-config.png" width="80%">
 </p>
 
 
@@ -160,7 +160,7 @@ Follow the steps below to setup the IP addresses:
 After the installation and configuration, connect and power up the Magma Box. This guide assumes that your PC's **eth0** port has been configured with a static IP address that's in the same subnet as Magma Box's **eth1** port. For example, `10.0.2.2/24`.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/15.power-up.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/15.power-up.png" width="80%">
 </p>
 
 
@@ -169,7 +169,7 @@ After the installation and configuration, connect and power up the Magma Box. Th
 3. Plug the USB-to-Ethernet adapter into the blue-colored USB port on the Magma Box.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/16.usb-ethernet.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/16.usb-ethernet.png" width="80%">
 </p>
 
 
@@ -178,7 +178,7 @@ After the installation and configuration, connect and power up the Magma Box. Th
 6. Now the Magma Box is powered up. The Magma Box's status can be verified via ping 10.0.2.1 from the PC.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/17.verify.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/17.verify.png" width="80%">
 </p>
 
 
@@ -189,14 +189,14 @@ After powering up the Magma Box, connect it with SSH with the initial Ubuntu pas
 1. Ubuntu will ask you to change the password the first time SSH to the Magma Box.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/18.install-docker.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/18.install-docker.png" width="80%">
 </p>
 
 
 2. Then, SSH to Magma Box again after the password is changed.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/19.ssh-magma.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/19.ssh-magma.png" width="80%">
 </p>
 
 
@@ -218,7 +218,7 @@ After powering up the Magma Box, connect it with SSH with the initial Ubuntu pas
 ```
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/20.script.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/20.script.png" width="80%">
 </p>
 
 
@@ -228,7 +228,7 @@ After powering up the Magma Box, connect it with SSH with the initial Ubuntu pas
 :::
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/21.reboot.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/21.reboot.png" width="80%">
 </p>
 
 
@@ -244,7 +244,7 @@ Normally, the `control_proxy` is restarting all the time because of an empty `ro
 :::
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/22.installation-success.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/22.installation-success.png" width="80%">
 </p>
 
 
@@ -255,7 +255,7 @@ Things may go wrong when executing Magma's official bash script `agw_install_doc
 **Error 1**: Waiting for cache lock: Could not get `lock/var/lib/dpkg/lock-frontend`. It is held by process `xxx`.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/23.error.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/23.error.png" width="80%">
 </p>
 
 
@@ -265,7 +265,7 @@ Things may go wrong when executing Magma's official bash script `agw_install_doc
 **Error 2**: Failed to download key.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/installation-guide/24.error2.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/installation-guide/24.error2.png" width="80%">
 </p>
 
 - This error may be caused by the network.

@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/rak-developer-kit/starter-kit/rak-developer-kit1.png
+rak_img: /assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak-developer-kit1.png
 rak_desc: This guide provides step-by-step tutorial on how to use your WisBlock Starter Kit and RAK Edge Gateway.
 tags:
   - User-Manual
@@ -40,8 +40,8 @@ If you are new to LoRaWAN, here are a few good references about LoRaWAN and gate
 
 - [LoRaWAN 101](https://news.rakwireless.com/lorawan-r-101-all-you-need-to-know/)
 - [What is a LoRaWAN Gateway?](https://news.rakwireless.com/what-is-a-lorawan-gateway/)
-- [How do LoRaWAN® Gateways work?](https://news.rakwireless.com/how-do-lorawan-gateways-work/)
-- [Things to Consider When Picking A LoRaWAN® Gateway](https://news.rakwireless.com/things-to-consider-when-picking-a-lorawan-gateway/)
+- [How do LoRaWAN Gateways work?](https://news.rakwireless.com/how-do-lorawan-gateways-work/)
+- [Things to Consider When Picking A LoRaWAN Gateway](https://news.rakwireless.com/things-to-consider-when-picking-a-lorawan-gateway/)
 
 LoRaWAN gateway models like WisGate Edge have built-in network servers. It is also common that the LoRaWAN network server is external or in the cloud. The popular LoRaWAN network server in the cloud that you can use for free (but offers enterprise service, too) is TTN.
 :::
@@ -115,7 +115,7 @@ In this section, it will be shown how to connect WisGate Edge Gateway to TTNv3.
 1.  If you don’t have a [TTN account](https://www.thethingsnetwork.org/), create an account first. Click the Sign up button, then login.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\ttnv3-setup\TTNV3-1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-1.png"
   width="80%"
   caption="TTN V3 Website"
 />
@@ -123,13 +123,13 @@ In this section, it will be shown how to connect WisGate Edge Gateway to TTNv3.
 2.  Make sure first you are in the right [TTN cluster](https://eu1.cloud.thethings.network/console). Use your **The Things ID** credentials to log in. In this example, choose **Europe 1**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\ttnv3-setup\TTNV3-2.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-2.png"
   width="80%"
   caption="Log-in Website for TTN"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\ttnv3-setup\TTNV3-2b.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-2b.png"
   width="80%"
   caption="Choose Europe 1"
 />
@@ -138,7 +138,7 @@ In this section, it will be shown how to connect WisGate Edge Gateway to TTNv3.
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\ttnv3-setup\TTNV3-3.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-3.png"
   width="80%"
   caption="Gateway Console in TTN V3"
 />
@@ -166,13 +166,13 @@ In this section, it will be shown how to connect WisGate Edge Gateway to TTNv3.
   :::
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-edge-gateway-discovery-kit\starter-kit\ttnv3-setup\TTNV3-4-a.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-discovery-kit/starter-kit/ttnv3-setup/TTNV3-4-a.png"
   width="60%"
   caption="Filling information to add gateway in TTN V3"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\ttnv3-setup\TTNV3-4-b.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-4-b.png"
   width="50%"
   caption="Clicking the create gateway in TTN V3"
 />
@@ -181,7 +181,7 @@ In this section, it will be shown how to connect WisGate Edge Gateway to TTNv3.
 5. TTNv3 supports TLS server authentication and Client token, which requires a trust file and a key file to configure the gateway and successfully connect it to the network. Generating the token for the gateway is the next step in this guide. To generate a key file, from the **Overview page** of the registered gateway, navigate to **API keys**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-edge-gateway-discovery-kit\starter-kit\ttnv3-setup\TTNV3-6.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-discovery-kit/starter-kit/ttnv3-setup/TTNV3-6.png"
   width="80%"
   caption="Overview page"
 />
@@ -189,7 +189,7 @@ In this section, it will be shown how to connect WisGate Edge Gateway to TTNv3.
 6. On the **API keys page**, choose **+ Add API key**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-edge-gateway-discovery-kit/starter-kit/ttn/6.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-discovery-kit/starter-kit/ttn/6.png"
   width="80%"
   caption="API key page"
 />
@@ -197,7 +197,7 @@ In this section, it will be shown how to connect WisGate Edge Gateway to TTNv3.
 7. In the **Name field**, type the name of your key (for example - *mykey*). Choose **Grant individual rights** and select **Link as Gateway to a Gateway for traffic exchange, i.e. read uplink and write downlink**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-edge-gateway-discovery-kit/starter-kit/ttn/7.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-discovery-kit/starter-kit/ttn/7.png"
   width="80%"
   caption="Generating an API key"
 />
@@ -216,14 +216,14 @@ Copy the key and save it in a `.txt` file (or other), because you won’t be abl
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-edge-gateway-discovery-kit/starter-kit/ttn/8-copy.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-discovery-kit/starter-kit/ttn/8-copy.png"
   width="80%"
   caption="Copying the generated API key"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-edge-gateway-discovery-kit\starter-kit\ttnv3-setup\TTNV3-8.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-discovery-kit/starter-kit/ttnv3-setup/TTNV3-8.png"
   width="80%"
   caption="Copying the generated key in a txt file"
 />
@@ -231,7 +231,7 @@ Copy the key and save it in a `.txt` file (or other), because you won’t be abl
 9.  Click **I have copied the key** to proceed.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-edge-gateway-discovery-kit/starter-kit/ttn/8-labeled.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-discovery-kit/starter-kit/ttn/8-labeled.png"
   width="80%"
   caption="Generating an API key"
 />
@@ -281,7 +281,7 @@ Replace **YOUR_API_KEY** with the key generated previously. Have in mind that th
 You can now see that your gateway is connected to TTNv3 as Basics Station:
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-edge-gateway-discovery-kit\starter-kit\ttnv3-setup\TTNV3-5.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-discovery-kit/starter-kit/ttnv3-setup/TTNV3-5.png"
   width="80%"
   caption="Successful creation and connection of Gateway in TTN V3"
 />
@@ -294,7 +294,7 @@ You can now see that your gateway is connected to TTNv3 as Basics Station:
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\RAK4631-ttnv3-setup\RAK4631-TTNV3-1.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-developer-kit/starter-kit/RAK4631-ttnv3-setup/RAK4631-TTNV3-1.png"
   width="80%"
   caption="Create an Application"
 />
@@ -303,7 +303,7 @@ You can now see that your gateway is connected to TTNv3 as Basics Station:
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\RAK4631-ttnv3-setup\RAK4631-TTNV3-2.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-developer-kit/starter-kit/RAK4631-ttnv3-setup/RAK4631-TTNV3-2.png"
   width="80%"
   caption="Creating an Application"
 />
@@ -311,7 +311,7 @@ You can now see that your gateway is connected to TTNv3 as Basics Station:
 3. If you had no error during the previous step, you should now be on the application console page. The next step is to **add end-devices to your TTN application**. LoRaWAN specification enforces that each end-device has to be personalized and activated. There are two options for registering devices depending on the activation mode you select. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP).  You need to click **+ Add end device**, as shown in **Figure 21**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\RAK4631-ttnv3-setup\RAK4631-TTNV3-3.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-developer-kit/starter-kit/RAK4631-ttnv3-setup/RAK4631-TTNV3-3.png"
   width="80%"
   caption="add end-devices to your TTN application"
 />
@@ -320,7 +320,7 @@ You can now see that your gateway is connected to TTNv3 as Basics Station:
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\RAK4631-ttnv3-setup\RAK4631-TTNV3-4.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-developer-kit/starter-kit/RAK4631-ttnv3-setup/RAK4631-TTNV3-4.png"
   width="80%"
   caption="Adding End Devices Manually"
 />
@@ -329,7 +329,7 @@ You can now see that your gateway is connected to TTNv3 as Basics Station:
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\RAK4631-ttnv3-setup\RAK4631-TTNV3-5.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-developer-kit/starter-kit/RAK4631-ttnv3-setup/RAK4631-TTNV3-5.png"
   width="80%"
   caption="Configurations for adding end devices"
 />
@@ -338,7 +338,7 @@ You can now see that your gateway is connected to TTNv3 as Basics Station:
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\RAK4631-ttnv3-setup\RAK4631-TTNV3-6.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-developer-kit/starter-kit/RAK4631-ttnv3-setup/RAK4631-TTNV3-6.png"
   width="80%"
   caption="OTAA Settings"
 />
@@ -349,7 +349,7 @@ For **AppEUI**, you may click **Fill with Zeros**. Click **Generate** for the **
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\RAK4631-ttnv3-setup\RAK4631-TTNV3-7.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-developer-kit/starter-kit/RAK4631-ttnv3-setup/RAK4631-TTNV3-7.png"
   width="80%"
   caption="Registering the End Device"
 />
@@ -359,7 +359,7 @@ For **AppEUI**, you may click **Fill with Zeros**. Click **Generate** for the **
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\RAK4631-ttnv3-setup\RAK4631-TTNV3-8.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-developer-kit/starter-kit/RAK4631-ttnv3-setup/RAK4631-TTNV3-8.png"
   width="80%"
   caption="OTAA device successfully registered to TTN"
 />
@@ -485,7 +485,7 @@ When using the LoRa or Bluetooth Low Energy transceivers, make sure that an ante
 Once the RAK4631 is connected to RAK5005-O WisBlock Base, You can connect a push button to the **RAK5005-O WisBlock Base**, having its terminals, one in  `WB_IO1` for IO1 pin, and the other one in `GND`.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\lorabutton\lorabutton-1.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-developer-kit/starter-kit/lorabutton/lorabutton-1.png"
   width="60%"
   caption="Connecting Push Button with RAK 5005-O WisBlock Base"
 />
@@ -500,28 +500,28 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 :::
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino1.png"
   width="80%"
   caption="Downloading the Arduino IDE"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino2.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino2.png"
   width="80%"
   caption="Just download the IDE without any cost"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino3.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino3.png"
   width="50%"
   caption="Installing the Arduino IDE"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino4.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino4.png"
   width="50%"
   caption="Completing the installation of Arduino IDE"
 />
@@ -533,14 +533,14 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino6.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino6.png"
   width="80%"
   caption="Preferences setup"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino7.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino7.png"
   width="80%"
   caption="Preferences window"
 />
@@ -549,14 +549,14 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino8.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino8.png"
   width="80%"
   caption="RAKwireless BSP support for the Arduino Board Manager setup"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino9.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino9.png"
   width="80%"
   caption="Completing the setup of RAKwireless BSP support for the Arduino Board Manager"
 />
@@ -565,14 +565,14 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino10.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino10.png"
   width="80%"
   caption="Boards Manager"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino11.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino11.png"
   width="80%"
   caption="Installing RAKwireless nRF Boards"
 />
@@ -582,7 +582,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino12.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino12.png"
   width="80%"
   caption="Successful Installation of  RAKwireless nRF Boards"
 />
@@ -591,7 +591,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\lorabutton\sx126xarduino.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-developer-kit/starter-kit/lorabutton/sx126xarduino.png"
   width="60%"
   caption="SX126x-Arduino Library"
 />
@@ -941,19 +941,19 @@ int stat=digitalRead(WB_IO1);
 After all the configuration is done and the payload is already formatted properly, you can now compile and upload the code.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino29_2.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino29_2.png"
   width="80%"
   caption="Double check the Board and COM port"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino29_3.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino29_3.png"
   width="80%"
   caption="Press Upload button to program the WisBlock Kit 1 using RAK4631"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino29_4.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino29_4.png"
   width="80%"
   caption="Successful code Uploading"
 />
@@ -965,7 +965,7 @@ On the other hand, if the error is related to the difficulty of uploading the FW
 With the LoRaButton code successfully uploaded, you can now try to press the button on your device that you set up earlier.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\lorabutton\lorabutton-1.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-developer-kit/starter-kit/lorabutton/lorabutton-1.png"
   width="60%"
   caption="Connecting Push Button with RAK 5005-O WisBlock Base"
 />
@@ -973,7 +973,7 @@ With the LoRaButton code successfully uploaded, you can now try to press the but
 Then check again your The Things Stack account and go to **Applications** > `name of your application` > **Live Data**. Wait for the uplink LoRaWAN payload every time you will press the button.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\lorabutton\ttn_output.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-developer-kit/starter-kit/lorabutton/ttn_output.png"
   width="80%"
   caption="Successful Wisblock Kit 1 onboarding using The Things Stack"
 />

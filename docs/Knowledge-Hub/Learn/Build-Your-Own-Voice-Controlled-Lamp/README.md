@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/voice-controlled-lamp/voice-controlled-lamp.png
+rak_img: /assets/images/knowledge-hub/learn/voice-controlled-lamp/voice-controlled-lamp.png
 rak_desc: This guide provides a step-by-step tutorial on how to create a voice-controlled lamp using Edge Impulse and Cyberon.
 tags:
   - Tutorial
@@ -70,7 +70,7 @@ To put together the different modules, you need to connect them to the respectiv
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/1.mounting-sketch.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/1.mounting-sketch.png"
   width="70%"
   caption="Assembling the core to the base board"
 />
@@ -79,7 +79,7 @@ To put together the different modules, you need to connect them to the respectiv
 <br>
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/2.assembly-photo.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/2.assembly-photo.png"
   width="80%"
   caption="Assembling the components"
 />
@@ -92,7 +92,7 @@ To put together the different modules, you need to connect them to the respectiv
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/3.dataset.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/3.dataset.png"
   width="80%"
   caption="Dataset of the model"
 />
@@ -103,7 +103,7 @@ To put together the different modules, you need to connect them to the respectiv
       - ***Lights Off***
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/4.create-dataset.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/4.create-dataset.png"
   width="100%"
   caption="Collecting data"
 />
@@ -114,7 +114,7 @@ To put together the different modules, you need to connect them to the respectiv
    - Set the Frequency to 16&nbsp;kHz (model sampling frequency).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/5.creaate-impulse.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/5.creaate-impulse.png"
   width="100%"
   caption="Creating the impulse"
 />
@@ -122,7 +122,7 @@ To put together the different modules, you need to connect them to the respectiv
 3. In the Audio Processing Block (MFCC), don’t change anything, and click **Save parameters**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/6.save-parameters.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/6.save-parameters.png"
   width="100%"
   caption="Saving the parameters"
 />
@@ -135,7 +135,7 @@ To put together the different modules, you need to connect them to the respectiv
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/7.neural-network.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/7.neural-network.png"
   width="80%"
   caption="Setting up the Neural Network Classifier"
 />
@@ -144,7 +144,7 @@ To put together the different modules, you need to connect them to the respectiv
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/8.start-training.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/8.start-training.png"
   width="80%"
   caption="Start training for audio recognition"
 />
@@ -153,7 +153,7 @@ To put together the different modules, you need to connect them to the respectiv
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/9.performance.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/9.performance.png"
   width="70%"
   caption="Training performance"
 />
@@ -171,7 +171,7 @@ This Edge Impulse project is public, so you can clone and modify it.
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/10.arduino-library.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/10.arduino-library.png"
   width="80%"
   caption="Selecting Arduino library"
 />
@@ -182,7 +182,7 @@ This Edge Impulse project is public, so you can clone and modify it.
 3. Click **Build** and save the ZIP file with your trained model and unzip it.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/11.optimization.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/11.optimization.png"
   width="80%"
   caption="Selecting model optimization"
 />
@@ -194,7 +194,7 @@ This Edge Impulse project is public, so you can clone and modify it.
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/12.vscode.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/12.vscode.png"
   width="100%"
   caption="Opening Visual Studio Code"
 />
@@ -203,7 +203,7 @@ This Edge Impulse project is public, so you can clone and modify it.
 6. Drag and drop the library folder of your Edge Impulse model to the **lib** subfolder of the project.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/13.add-library.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/13.add-library.png"
   width="100%"
   caption="Adding the library to VS Code"
 />
@@ -224,7 +224,7 @@ The library in the code is named correctly. In this case, it is **WisSound_infer
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/14.wiring-reference.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/14.wiring-reference.png"
   width="80%"
   caption="Wiring reference"
 />
@@ -232,14 +232,14 @@ The library in the code is named correctly. In this case, it is **WisSound_infer
 2. After powering our board, we have ready and running our voice-controlled lamp, I’ve created a custom 3D enclosure for this project, but you can buy yours in our store.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/15.power-source.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/15.power-source.png"
   width="80%"
   caption="Powering the board using a battery or USB"
 />
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/16.lamp-setup.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/16.lamp-setup.png"
   width="80%"
   caption="Use case setup using Edge Impulse"
 />
@@ -273,7 +273,7 @@ And the same hardware is used:
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/17.open-folder.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/17.open-folder.png"
   width="80%"
   caption="Opening the Voice-lamp-Cyberon folder"
 />
@@ -302,7 +302,7 @@ if(nID == 2002){ // if the ID of the command corresponds to "Lights On"
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/18.connect.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/18.connect.png"
   width="80%"
   caption="Connecting WisBlock to PC thru USB"
 />
@@ -313,7 +313,7 @@ No need to change anything in the wiring or hardware setup. After the code is up
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/voice-controlled-lamp/19.use-case.png"
+  src="/assets/images/knowledge-hub/learn/voice-controlled-lamp/19.use-case.png"
   width="80%"
   caption="Use case setup using Cyberon"
 />

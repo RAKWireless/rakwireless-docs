@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/user-manual/openvpn-remote-management/1.network-topology.png
+rak_img: /assets/images/knowledge-hub/learn/openvpn-remote-management/1.network-topology.png
 rak_desc: This document is a sample demonstration on how to burn the latest firmware of the WisGate Developer Series.
 tags:
   - User-Manual
@@ -22,7 +22,7 @@ In this document, you will learn how to set the remote management of RAK WisGate
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/1.network-topology.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/1.network-topology.png"
   width="100%"
   caption="Network Topology"
 />
@@ -115,7 +115,7 @@ Change the local ***123.56.96.211*** IP with your Private IPv4 addresses.
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/2.aws-private-ip.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/2.aws-private-ip.png"
   width="100%"
   caption="AWS Instance Private IP"
 />
@@ -126,7 +126,7 @@ You must add an inbound rule in the AWS Security Group for UDP port 1194.
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/3.security-group.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/3.security-group.png"
   width="100%"
   caption="Security Group Inbound Rules"
 />
@@ -273,7 +273,7 @@ sudo ./easyrsa gen-crl
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/4.aws-public-ip.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/4.aws-public-ip.png"
   width="100%"
   caption="AWS Instance Public IP"
 />
@@ -339,7 +339,7 @@ Oc/HwurpeVrHU94HxBhDirtDFnMauGD9I64VwMCVdtBHVF2IhSDnX/cKGL7/ADUx WByAQE/o2axoW4a
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/5.taskbar-icon.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/5.taskbar-icon.png"
   width="70%"
   caption="OpenVPN Taskbar Icon"
 />
@@ -348,7 +348,7 @@ Oc/HwurpeVrHU94HxBhDirtDFnMauGD9I64VwMCVdtBHVF2IhSDnX/cKGL7/ADUx WByAQE/o2axoW4a
 - Make sure to go into the OpenVPN menu again and press **Connect** (it will not initiate automatically).
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/7.connection-initiation.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/7.connection-initiation.png"
   width="45%"
   caption="OpenVPN connection initiation"
 />
@@ -356,20 +356,20 @@ Oc/HwurpeVrHU94HxBhDirtDFnMauGD9I64VwMCVdtBHVF2IhSDnX/cKGL7/ADUx WByAQE/o2axoW4a
 - If everything is set up properly, there will be a connection log window that will disappear after the procedure runs through (refer to **Figure 7**).
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/8.connection-log.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/8.connection-log.png"
   width="70%"
   caption="OpenVPN connection log"
 />
 
 
-- The OpenVPN should now be in green (![9.successful-connection.png](/assets/images/knowledge-hub/user-manual/openvpn-remote-management/9.successful-connection.png)), meaning the connection has been successfully establis- You can check which clients are currently connected to the OpenVPN Server and their corresponding IP addresses by executing the following command in your Ubuntu console.
+- The OpenVPN should now be in green (![9.successful-connection.png](/assets/images/knowledge-hub/learn/openvpn-remote-management/9.successful-connection.png)), meaning the connection has been successfully establis- You can check which clients are currently connected to the OpenVPN Server and their corresponding IP addresses by executing the following command in your Ubuntu console.
 
 ```
 sudo nano /etc/openvpn/server/ip_pool.txt
 ```
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/10.connected-clients.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/10.connected-clients.png"
   width="70%"
   caption="OpenVPN connected clients 1"
 />
@@ -387,7 +387,7 @@ Before you continue with the setup of the OpenVPN client on the gateway, you mus
 2. To access the gateway, check the [Access the WisGateOS 2 Web UI](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/Overview/#access-the-wisgateos-2-web-ui) user manual.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/11.login-page.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/11.login-page.png"
   width="100%"
   caption="WisGateOS V2 login page"
 />
@@ -396,7 +396,7 @@ Before you continue with the setup of the OpenVPN client on the gateway, you mus
 3. After a successful login, head to the Extensions tab. You can also click the WisGate logo in the upper left corner to expand the menu on the left and see the full names of the tabs.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/12.extensions-menu.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/12.extensions-menu.png"
   width="100%"
   caption="Extensions menu"
 />
@@ -407,7 +407,7 @@ Before you continue with the setup of the OpenVPN client on the gateway, you mus
 4. To install an extension, you can click either the **Add new extension** button or the **install one now link**. An **Add new extension** window will pop up.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/13.add-extensions.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/13.add-extensions.png"
   width="100%"
   caption="Add new extension"
 />
@@ -421,7 +421,7 @@ The extension files are in **IPK** format and are created specifically for the W
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/14.new-extensions.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/14.new-extensions.png"
   width="100%"
   caption="New extension"
 />
@@ -430,7 +430,7 @@ The extension files are in **IPK** format and are created specifically for the W
 6. After you choose the extension file, click **Add extension** to install it.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/15.install-extensions.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/15.install-extensions.png"
   width="100%"
   caption="Install the extension"
 />
@@ -440,7 +440,7 @@ The extension files are in **IPK** format and are created specifically for the W
 7. After the installation process is complete, WisGateOS will reboot, and you need to log in again.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/16.reboot.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/16.reboot.png"
   width="100%"
   caption="Login page"
 />
@@ -450,7 +450,7 @@ The extension files are in **IPK** format and are created specifically for the W
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/17.extensions-tab.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/17.extensions-tab.png"
   width="100%"
   caption="Extensions tab"
 />
@@ -466,7 +466,7 @@ Once you have assembled your certificates into a single file, save the file with
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/18.save-clients.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/18.save-clients.png"
   width="70%"
   caption="Save clients file"
 />
@@ -482,7 +482,7 @@ Now, you need to import the file into the OpenVPN client section of the gateway.
 2. Head to **Extensions** → **OpenVPN Client** → **Launch** button.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/19.start-openvpn.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/19.start-openvpn.png"
   width="100%"
   caption="Start OpenVPN"
 />
@@ -491,7 +491,7 @@ Now, you need to import the file into the OpenVPN client section of the gateway.
 3. In the next window, click either the **Add tunnel** button or the **add one now link** to add an OpenVPN tunnel.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/20.openvpn-tunnel.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/20.openvpn-tunnel.png"
   width="100%"
   caption="Add the OpenVPN tunnel"
 />
@@ -500,7 +500,7 @@ Now, you need to import the file into the OpenVPN client section of the gateway.
 4. Now, click **choose file** link and browse for the **.OVPN** file. You can also drag and drop the **.OVPN** file you created earlier.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/21.ovpn-file.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/21.ovpn-file.png"
   width="100%"
   caption="Add .OVPN file to the gateway"
 />
@@ -508,7 +508,7 @@ Now, you need to import the file into the OpenVPN client section of the gateway.
 5. Once the file is added, click **Add tunnel** to add the OpenVPN tunnel.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/22.added-openvpn-tunnel.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/22.added-openvpn-tunnel.png"
   width="100%"
   caption="Add the OpenVPN tunnel"
 />
@@ -516,7 +516,7 @@ Now, you need to import the file into the OpenVPN client section of the gateway.
 6. A success message will appear when the tunnel is added successfully.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/23.success-openvpn-tunnel.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/23.success-openvpn-tunnel.png"
   width="100%"
   caption="Successfully added the OpenVPN tunnel"
 />
@@ -524,7 +524,7 @@ Now, you need to import the file into the OpenVPN client section of the gateway.
 7. Click the **Configure** button of the VPN tunnel. On the next window, click the **Enable Connection** switch to enable the OpenVPN tunnel and click **Save changes**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/24.start-openvpn-tunnel.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/24.start-openvpn-tunnel.png"
   width="100%"
   caption="Start the OpenVPN tunnel"
 />
@@ -532,7 +532,7 @@ Now, you need to import the file into the OpenVPN client section of the gateway.
 8. From the **Logs** tab, you can check the OpenVPN status.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/25.openvpn-status.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/25.openvpn-status.png"
   width="100%"
   caption="OpenVPN tunnel status"
 />
@@ -544,7 +544,7 @@ sudo nano /etc/openvpn/server/ip_pool.txt
 ```
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/openvpn-remote-management/26.connected-clients.png"
+  src="/assets/images/knowledge-hub/learn/openvpn-remote-management/26.connected-clients.png"
   width="70%"
   caption="Open VPN connected clients 2"
 />

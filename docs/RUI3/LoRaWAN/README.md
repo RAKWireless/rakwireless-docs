@@ -1168,7 +1168,7 @@ void loop()
 :::
 
 
-## Joining and Sending Data on LoRa® Network
+## Joining and Sending Data on LoRa Network
 
 
 ### rety 
@@ -1481,7 +1481,7 @@ void loop()
 
 ### njs
 
-This API allows the user to access the current status of the LoRa® link.
+This API allows the user to access the current status of the LoRa link.
 
 ```c
 RAKLorawan::njs
@@ -1489,7 +1489,7 @@ RAKLorawan::njs
 
 #### get()
 
-This API allows the user to get the current status of the LoRa® link.
+This API allows the user to get the current status of the LoRa link.
 
 ```c
 api.lorawan.njs.get();
@@ -1977,7 +1977,7 @@ void loop()
 :::
 
 
-## LoRa® Network Management
+## LoRa Network Management
 
 ### adr
 
@@ -2057,7 +2057,7 @@ void loop()
 
 ### deviceClass
 
-This API allows the user to access the LoRaWAN® class.
+This API allows the user to access the LoRaWAN class.
 
 ```c
 RAKLorawan::deviceClass
@@ -2065,7 +2065,7 @@ RAKLorawan::deviceClass
 
 #### get()
 
-This API allows the user to get the LoRaWAN® class.
+This API allows the user to get the LoRaWAN class.
 
 ```c
 api.lorawan.deviceClass.get();
@@ -2108,7 +2108,7 @@ void loop()
 
 #### set()
 
-This API allows the user to set the LoRaWAN® class.
+This API allows the user to set the LoRaWAN class.
 
 ```c
 api.lorawan.deviceClass.set(value);

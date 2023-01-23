@@ -32,7 +32,7 @@ Thus, by connecting to the server via a remote client, the user can remotely man
 Figure 1 below shows the interconnection of gateways and the end-user using OpenVPN server.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-openvpn/network-topology.png"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-openvpn/network-topology.png"
   width="100%"
   caption="Network Topology"
 />
@@ -119,7 +119,7 @@ Change the local `123.56.96.211` IP address with your private AWS IP.
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-openvpn/aws-instance-private-ip.png"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-openvpn/aws-instance-private-ip.png"
   width="100%"
   caption="AWS Instance Private IP"
 />
@@ -129,7 +129,7 @@ Add an inbound rule in the AWS Security Group for **UDP port 1194**.
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-openvpn/security-group-inbound-rules.png"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-openvpn/security-group-inbound-rules.png"
   width="100%"
   caption="Security Group Inbound Rules"
 />
@@ -382,7 +382,7 @@ ENCGBuhos/YdITFeKQ381zk=
 4. Change the remote IP address with your Amazon Instance Public IP. Add each certificate in its corresponding section by copying the content from the locations mentioned above and replace the corresponding section in the template.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-openvpn/aws-instance-public-ip.png"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-openvpn/aws-instance-public-ip.png"
   width="100%"
   caption="AWS Instance Public IP"
 />
@@ -397,7 +397,7 @@ ENCGBuhos/YdITFeKQ381zk=
 * Start the OpenVPN GUI Client. You will see an icon in the taskbar.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-openvpn/open-vpn-taskbar-icon.png"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-openvpn/open-vpn-taskbar-icon.png"
   width="75%"
   caption="Open VPN Taskbar Icon"
 />
@@ -405,7 +405,7 @@ ENCGBuhos/YdITFeKQ381zk=
 * Right click Import file and open management_client.ovpn file.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-openvpn/importing-openvpn-client-file.png"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-openvpn/importing-openvpn-client-file.png"
   width="100%"
   caption="Importing OpenVPN Client File"
 />
@@ -413,7 +413,7 @@ ENCGBuhos/YdITFeKQ381zk=
 * Make sure to go into the OpenVPN menu again and press Connect (it will not initiate automatically).
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-openvpn/open-vpn-connection-initiation.png"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-openvpn/open-vpn-connection-initiation.png"
   width="50%"
   caption="Open VPN Connection initiation"
 />
@@ -422,7 +422,7 @@ If everything is set up properly, a connection log window will disappear after t
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-openvpn/open-vpn-connection-log2.png"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-openvpn/open-vpn-connection-log2.png"
   width="50%"
   caption="Open VPN Connection log"
 />
@@ -434,7 +434,7 @@ sudo nano /etc/openvpn/server/ip_pool.txt
 ```
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-openvpn/open-vpn-connected-clients1.png"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-openvpn/open-vpn-connected-clients1.png"
   width="100%"
   caption="Open VPN connected clients 1"
 />
@@ -461,7 +461,7 @@ Once the certificates are assembled into a single file, you need to import the c
 * In the sidebar menu section, go to the **Services** > **OpenVPN Tunnels** > **Enter a name** > choose “**Custom Openvpn Configuration**” from the drop-down and the press **Add**. Use Figure 10 as reference.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-openvpn/creating-an-openvpn-tunnel.jpg"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-openvpn/creating-an-openvpn-tunnel.jpg"
   width="100%"
   caption="Creating an OpenVPN tunnel"
 />
@@ -469,7 +469,7 @@ Once the certificates are assembled into a single file, you need to import the c
 * In the next window, simply **copy/paste** the content of the file you created in the beginning and click **Save & Apply**. See Figure 11 below.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-openvpn/importing-the-openvpn-certificate-data.png"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-openvpn/importing-the-openvpn-certificate-data.png"
   width="100%"
   caption="Importing the OpenVPN certificate data"
 />
@@ -478,7 +478,7 @@ Once the certificates are assembled into a single file, you need to import the c
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-openvpn/enabling-openvpn.png"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-openvpn/enabling-openvpn.png"
   width="100%"
   caption="Enabling OpenVPN"
 />
@@ -490,7 +490,7 @@ sudo nano /etc/openvpn/server/ip_pool.txt
 ```
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-openvpn/openvpn-connected-clients2.png"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-openvpn/openvpn-connected-clients2.png"
   width="100%"
   caption="OpenVPN connected-clients 2"
 />

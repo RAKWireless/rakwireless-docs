@@ -49,7 +49,7 @@ author:
 3. In the **Serial line** field (Figure 2), change the number of the COM port (in this case it is 3, yours may be different) to the one that represents the Console Cable Port. You can check the number of your COM port in the Device Manager by opening it and expanding the **Ports (COM & LPT)**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/openwrt-recovery-procedure/1.png"
+  src="/assets/images/knowledge-hub/learn/openwrt-recovery-procedure/1.png"
   width="80%"
   caption="Device Manager"
 />
@@ -57,7 +57,7 @@ author:
 4. In the **Speed** field, input **57600**, as shown in Figure 2.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/openwrt-recovery-procedure/2.png"
+  src="/assets/images/knowledge-hub/learn/openwrt-recovery-procedure/2.png"
   width="70%"
   caption="PuTTY Configuration"
 />
@@ -68,7 +68,7 @@ author:
 If everything is set up correctly, you will see image
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/openwrt-recovery-procedure/3.png"
+  src="/assets/images/knowledge-hub/learn/openwrt-recovery-procedure/3.png"
   width="80%"
   caption="Debug output in the PuTTY serial console"
 />
@@ -78,7 +78,7 @@ If everything is set up correctly, you will see image
 1. To manage to download the firmware, you need to set a static IP address to the LAN card. This is done in Windows: Control Panel > Network and Internet > Network and Sharing Center > Change adapter settings > right-click over the Ethernet option > Properties > Networking. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Prosperities**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/openwrt-recovery-procedure/4.png"
+  src="/assets/images/knowledge-hub/learn/openwrt-recovery-procedure/4.png"
   width="50%"
   caption="Ethernet Properties"
 />
@@ -88,7 +88,7 @@ If everything is set up correctly, you will see image
 4. For **Subnet mask**, input **255.255.255.0**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/openwrt-recovery-procedure/5.png"
+  src="/assets/images/knowledge-hub/learn/openwrt-recovery-procedure/5.png"
   width="50%"
   caption="Internet Protocol Version 4 (TCP/IPv4) Properties"
 />
@@ -102,7 +102,7 @@ If everything is set up correctly, you will see image
 3. Rename the BIN file to **recovery.bin** and add it to the TFTPD64 folder.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/openwrt-recovery-procedure/6.png"
+  src="/assets/images/knowledge-hub/learn/openwrt-recovery-procedure/6.png"
   width="60%"
   caption="TFTPD64 Folder"
 />
@@ -110,7 +110,7 @@ If everything is set up correctly, you will see image
 4. Start the **tftpd64.exe**. It should ask you for permission. Make sure that you allow both private and public networks and click **Allow access**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/openwrt-recovery-procedure/7.png"
+  src="/assets/images/knowledge-hub/learn/openwrt-recovery-procedure/7.png"
   width="80%"
   caption="Windows Security Alert"
 />
@@ -118,7 +118,7 @@ If everything is set up correctly, you will see image
 5. You do not need to make any changes here. Just open the **Log viewer** tab so you can see the process.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/openwrt-recovery-procedure/8.png"
+  src="/assets/images/knowledge-hub/learn/openwrt-recovery-procedure/8.png"
   width="50%"
   caption="TFTPD64"
 />
@@ -129,7 +129,7 @@ If everything is set up correctly, you will see image
 2. The dialog showed in Figure 8 will appear in the PuTTY serial console. Press **2** on your PC’s keyboard to choose the second option.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/openwrt-recovery-procedure/9.png"
+  src="/assets/images/knowledge-hub/learn/openwrt-recovery-procedure/9.png"
   width="80%"
   caption="Operation list"
 />
@@ -142,7 +142,7 @@ If everything is set up correctly, you will see image
       - Input Linux Kernel filename - type recovery.bin.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/openwrt-recovery-procedure/10.png"
+  src="/assets/images/knowledge-hub/learn/openwrt-recovery-procedure/10.png"
   width="80%"
   caption="PuTTY serial console input"
 />
@@ -150,7 +150,7 @@ If everything is set up correctly, you will see image
 4. If everything is ok you should see the firmware send and flash.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/openwrt-recovery-procedure/11.png"
+  src="/assets/images/knowledge-hub/learn/openwrt-recovery-procedure/11.png"
   width="100%"
   caption="Firmware is flashing"
 />
@@ -160,7 +160,7 @@ It takes some time to download flash and boot. Do not power off or disconnect an
 When the console output prints **Done!** (Figure 12), you are good to go. You should be able to see the Wi-Fi AP and connect to your gateway as usual.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/openwrt-recovery-procedure/12.png"
+  src="/assets/images/knowledge-hub/learn/openwrt-recovery-procedure/12.png"
   width="75%"
   caption="Recovery procedure is done"
 />

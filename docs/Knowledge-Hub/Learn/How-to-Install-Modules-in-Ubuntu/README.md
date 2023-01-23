@@ -31,7 +31,7 @@ author:
 2. Using a flashing tool like [Balena Etcher](https://www.balena.io/etcher/) for example, flash your SD card with the Ubuntu image.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/how-to-install-modules-in-ubuntu/rpi-ubuntu/flashing-ubuntu-image.png"
+  src="/assets/images/knowledge-hub/learn/how-to-install-modules-in-ubuntu/rpi-ubuntu/flashing-ubuntu-image.png"
   width="100%"
   caption="Flashing the Ubuntu Image"
 />
@@ -55,7 +55,7 @@ Now the Pi can be accessed via SSH using the assigned IP Address with a tool lik
 You will be asked to change your password on the first boot, which will end with your session closing, so you need to open a new one. Now your Ubuntu is installed and ready to use.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/how-to-install-modules-in-ubuntu/rpi-ubuntu/ubuntu-screen.png"
+  src="/assets/images/knowledge-hub/learn/how-to-install-modules-in-ubuntu/rpi-ubuntu/ubuntu-screen.png"
   width="100%"
   caption="Ubuntu Welcome Screen"
 />
@@ -106,7 +106,7 @@ sudo service influxdb status
 The InfluxDB is now running and will start at boot, and it should show active, as shown in Figure 3.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/how-to-install-modules-in-ubuntu/ubuntu-influxdb/service-status.png"
+  src="/assets/images/knowledge-hub/learn/how-to-install-modules-in-ubuntu/ubuntu-influxdb/service-status.png"
   width="100%"
   caption="InfluxDB Service Status"
 />
@@ -130,7 +130,7 @@ echo "deb https://packages.grafana.com/enterprise/deb stable main" | sudo tee -a
 ```
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/how-to-install-modules-in-ubuntu/ubuntu-grafana/prerequisites.png"
+  src="/assets/images/knowledge-hub/learn/how-to-install-modules-in-ubuntu/ubuntu-grafana/prerequisites.png"
   width="100%"
   caption="Installation Prerequisites"
 />
@@ -147,7 +147,7 @@ Once the procedure is complete, you should have output similar to the one in Fig
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/how-to-install-modules-in-ubuntu/ubuntu-grafana/log.png"
+  src="/assets/images/knowledge-hub/learn/how-to-install-modules-in-ubuntu/ubuntu-grafana/log.png"
   width="100%"
   caption="Installation Log"
 />
@@ -163,7 +163,7 @@ sudo systemctl status grafana-server
 If the service starts normally, the output should be as in Figure 6.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/how-to-install-modules-in-ubuntu/ubuntu-grafana/service-running.png"
+  src="/assets/images/knowledge-hub/learn/how-to-install-modules-in-ubuntu/ubuntu-grafana/service-running.png"
   width="100%"
   caption="Grafana Service Running"
 />
@@ -174,7 +174,7 @@ If the service starts normally, the output should be as in Figure 6.
 sudo systemctl enable grafana-server.service
 ```
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/how-to-install-modules-in-ubuntu/ubuntu-grafana/server-at-boot.png"
+  src="/assets/images/knowledge-hub/learn/how-to-install-modules-in-ubuntu/ubuntu-grafana/server-at-boot.png"
   width="100%"
   caption="Grafana Server at Boot"
 />
@@ -205,7 +205,7 @@ sudo service telegraf status
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/how-to-install-modules-in-ubuntu/ubuntu-telegraf/status.png"
+  src="/assets/images/knowledge-hub/learn/how-to-install-modules-in-ubuntu/ubuntu-telegraf/status.png"
   width="100%"
   caption="Telegraf service status running"
 />

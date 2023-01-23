@@ -2844,7 +2844,7 @@ This section describes the commands related to LoRa point-to-point functionality
 
 ### AT+NWM
 
-Description: LoRa® network work mode 
+Description: LoRa network work mode 
 
 Switch to point-to-point mode, or LoRaWAN mode [0:Point-to-point, 1:LoRaWAN].
 

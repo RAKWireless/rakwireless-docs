@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/wisblock-edgeimpulse.jpg
+rak_img: /assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/wisblock-edgeimpulse.jpg
 rak_desc: This tutorial will show you how to set up and connect your WisBlock to Edge Impulse, which includes but is not limited to RAK11310, RAK4631, and RAK11200.
 tags:
   - Tutorial
@@ -31,7 +31,7 @@ To upload audio directly to Edge Impulse, you can use your smartphone or persona
 On your Edge Impulse project, go to **Devices** and click **Connect a new device**:
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak4631/connect-device.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak4631/connect-device.png"
   width="100%"
   caption="Connecting a new device"
 />
@@ -41,7 +41,7 @@ Select the device you want to use, **mobile phone** or **computer**:
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak4631/select-device.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak4631/select-device.png"
   width="60%"
   caption="Selecting a device"
 />
@@ -51,7 +51,7 @@ Once you select your device, the Audio data collection web interface will appear
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak4631/access.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak4631/access.png"
   width="40%"
   caption="Giving access to the microphone"
 />
@@ -61,7 +61,7 @@ Then, give a name to your sample, and define its length and category, then start
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak4631/start-record.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak4631/start-record.png"
   width="60%"
   caption="Start to record"
 />
@@ -70,7 +70,7 @@ Then, give a name to your sample, and define its length and category, then start
 You should see a success message pops up, and your recording should be visible in the Data acquisition tab of your project:
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak4631/data-acquisition.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak4631/data-acquisition.png"
   width="100%"
   caption="Data acquisition"
 />
@@ -127,7 +127,7 @@ On your Edge Impulse project, navigate to the **Deployment** tab on the left men
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak4631/library.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak4631/library.png"
   width="70%"
   caption="Arduino library"
 />
@@ -135,20 +135,20 @@ On your Edge Impulse project, navigate to the **Deployment** tab on the left men
 Edge Impulse offers an optimization tool that can help you increase on-device performance but may reduce accuracy. You can test each option one by one and stay with the best results. You can also **Analyze optimizations** before deploying it and see the recommended choice for your target. Or, click **Build** to use the currently selected option.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak4631/model-optimization.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak4631/model-optimization.png"
   width="80%"
   caption="EON compiler option for model optimization"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak4631/save.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak4631/save.png"
   width="70%"
   caption="Save the project"
 />
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak4631/build.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak4631/build.png"
   width="70%"
   caption="Building the Arduino library"
 />
@@ -171,7 +171,7 @@ If you are working with:
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak4631/lib-folder.jpg"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak4631/lib-folder.jpg"
   width="100%"
   caption="Adding the Arduino library"
 />
@@ -180,14 +180,14 @@ If you are working with:
 Finally, **Build** your project, connect your WisBlock board to your computer and **Upload** the code.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak4631/build-output.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak4631/build-output.png"
   width="70%"
   caption="Build output"
 />
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak4631/upload-output.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak4631/upload-output.png"
   width="70%"
   caption="Upload output"
 />
@@ -195,7 +195,7 @@ Finally, **Build** your project, connect your WisBlock board to your computer an
 Run the serial monitor, and you should start seeing the inference results:
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak4631/inference-results.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak4631/inference-results.png"
   width="70%"
   caption="Continuous inference results"
 />

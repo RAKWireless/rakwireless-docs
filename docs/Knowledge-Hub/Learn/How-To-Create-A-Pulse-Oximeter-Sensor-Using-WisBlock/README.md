@@ -23,7 +23,7 @@ In this time of the pandemic, especially with our response in treating and monit
 A Pulse Oximeter Sensor is one of the most used tools in health monitoring. In this guide, you will create a Pulse Oximeter Sensor with WisBlock, which can help you to have easy access to health monitoring tools. You may also create a health kiosk with this Pulse Oximeter Sensor with the WisBlock platform.
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\how-to-create-a-pulse-oximeter-sensor-using-wisblock\1.pulse-oximeter-sensor.png"
+  src="/assets/images/knowledge-hub/learn/how-to-create-a-pulse-oximeter-sensor-using-wisblock/1.pulse-oximeter-sensor.png"
   width="70%"
   caption="Pulse Oximeter Sensor using WisBlock Platform"
 />
@@ -63,7 +63,7 @@ Here are the parts and materials neede in creating your Pulse Oximeter Sensor wi
 1. Gather the listed parts and materials below in creating the Pulse Oximeter Sensor using WisBlock
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\how-to-create-a-pulse-oximeter-sensor-using-wisblock\2.parts-needed.png"
+  src="/assets/images/knowledge-hub/learn/how-to-create-a-pulse-oximeter-sensor-using-wisblock/2.parts-needed.png"
   width="100%"
   caption="Parts needed"
 />
@@ -73,7 +73,7 @@ Here are the parts and materials neede in creating your Pulse Oximeter Sensor wi
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\how-to-create-a-pulse-oximeter-sensor-using-wisblock\3.connect-rak4631.png"
+  src="/assets/images/knowledge-hub/learn/how-to-create-a-pulse-oximeter-sensor-using-wisblock/3.connect-rak4631.png"
   width="70%"
   caption="RAK4631 and CPU slot connection"
 />
@@ -82,7 +82,7 @@ Here are the parts and materials neede in creating your Pulse Oximeter Sensor wi
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\how-to-create-a-pulse-oximeter-sensor-using-wisblock\4.fix-screws.gif"
+  src="/assets/images/knowledge-hub/learn/how-to-create-a-pulse-oximeter-sensor-using-wisblock/4.fix-screws.gif"
   width="50%"
   caption="Fix all the screws"
 />
@@ -92,7 +92,7 @@ Here are the parts and materials neede in creating your Pulse Oximeter Sensor wi
 4. With WisBlock Base exposed pins, connect the LCD 2x16 I2C Module with the following pin configurations.
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\how-to-create-a-pulse-oximeter-sensor-using-wisblock\5.connect-lcd.png"
+  src="/assets/images/knowledge-hub/learn/how-to-create-a-pulse-oximeter-sensor-using-wisblock/5.connect-lcd.png"
   width="90%"
   caption="LCD 2x16 I2C Module configurations"
 />
@@ -105,7 +105,7 @@ Here are the parts and materials neede in creating your Pulse Oximeter Sensor wi
 7. After installing, you should click the URL, as seen in **Figure 6**, to install the library for Pulse Oximeter Sensor.
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\how-to-create-a-pulse-oximeter-sensor-using-wisblock\6.pulse-oximeter-sensor-library.png"
+  src="/assets/images/knowledge-hub/learn/how-to-create-a-pulse-oximeter-sensor-using-wisblock/6.pulse-oximeter-sensor-library.png"
   width="80%"
   caption="Pulse Oximeter Sensor library installation"
 />
@@ -116,7 +116,7 @@ Here are the parts and materials neede in creating your Pulse Oximeter Sensor wi
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\how-to-create-a-pulse-oximeter-sensor-using-wisblock\7.install-liquidcrystal.png"
+  src="/assets/images/knowledge-hub/learn/how-to-create-a-pulse-oximeter-sensor-using-wisblock/7.install-liquidcrystal.png"
   width="80%"
   caption="Install LiquidCrystal I2C"
 />
@@ -125,7 +125,7 @@ Here are the parts and materials neede in creating your Pulse Oximeter Sensor wi
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\how-to-create-a-pulse-oximeter-sensor-using-wisblock\8.compile-code.png"
+  src="/assets/images/knowledge-hub/learn/how-to-create-a-pulse-oximeter-sensor-using-wisblock/8.compile-code.png"
   width="70%"
   caption="Compile and upload the code"
 />

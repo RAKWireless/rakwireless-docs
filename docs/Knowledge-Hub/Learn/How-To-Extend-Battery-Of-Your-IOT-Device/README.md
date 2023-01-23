@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/how-to-extend-battery-of-your-iot-device/overview.jpg
+rak_img: /assets/images/knowledge-hub/learn/how-to-extend-battery-of-your-iot-device/overview.jpg
 rak_desc: A brief discussion on how to maximize the battery life of your IoT device.
 tags:
   - Tutorial
@@ -26,7 +26,7 @@ In this technology-driven era, the adoption of the internet of things, IoT is on
 Additionally, the estimate of the total number of devices is in the billions. This is not surprising, seeing that there are a billion connected devices already.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/how-to-extend-battery-of-your-iot-device/saving-tip.jpeg"
+  src="/assets/images/knowledge-hub/learn/how-to-extend-battery-of-your-iot-device/saving-tip.jpeg"
 />
 
 Besides, many more will be deployed in difficult situations to cater to challenging and expensive cases. It therefore becomes critical that developers and system integrators leverage every measure to provide technology that will help these devices operate optimally and more importantly, prolong the life of these IoT devices.
@@ -46,7 +46,7 @@ Specifically dedicated to use cases of IoT, LoRa allows for cost efficient deplo
 Simply, LoRa means "Long Range". LoRa is a radio communication technology which RAKWireless deploys for transmission of messages. Think of this as the physical layer in the OSI Network Stack.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/how-to-extend-battery-of-your-iot-device/lora.png"
+  src="/assets/images/knowledge-hub/learn/how-to-extend-battery-of-your-iot-device/lora.png"
 />
 
 It is prominently known for low power usage and long range. When a device runs off a small and cheap battery, it lasts just a few months or years because the vast majority of its time is spent powered down.
@@ -60,7 +60,7 @@ LoRaWAN, which functions exactly like Wi-Fi uses the unlicensed band to cover a 
 ## Characteristics of LPWAN
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/how-to-extend-battery-of-your-iot-device/lpwan.png"
+  src="/assets/images/knowledge-hub/learn/how-to-extend-battery-of-your-iot-device/lpwan.png"
 />
 
 According to statistics, the Low Power Wide Area (LPWAN) IoT offers low power consumption, low cost, high positioning, high data rate and emerging standards. This is achievable with LoRa.

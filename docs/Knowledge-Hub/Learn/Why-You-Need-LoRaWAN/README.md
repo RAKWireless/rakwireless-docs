@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/why-you-need-lorawan/overview.jpg
+rak_img: /assets/images/knowledge-hub/learn/why-you-need-lorawan/overview.jpg
 rak_desc: A brief discussion about the importance of LoRaWAN
 tags:
   - Tutorial

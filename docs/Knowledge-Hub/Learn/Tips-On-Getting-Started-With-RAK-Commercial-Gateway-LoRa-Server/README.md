@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/tips-on-getting-started-with-rak-commercial-gateway-lora-server/overview.jpg
+rak_img: /assets/images/knowledge-hub/learn/tips-on-getting-started-with-rak-commercial-gateway-lora-server/overview.jpg
 rak_desc: A quick start guide on how to setup your RAK Commercial Gateway LoRa Server.
 tags:
   - Tutorial
@@ -40,7 +40,7 @@ So, what do you need to do in order to reap the benefits of these features?
 First and foremost, you need to configure the Gateway to act as a LoRa Server, not just a Packet Forwarder, as is the default setting. To switch between modes, go to the following sub menu (Figure 1)
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/tips-on-getting-started-with-rak-commercial-gateway-lora-server/protocol-section.jpg"
+  src="/assets/images/knowledge-hub/learn/tips-on-getting-started-with-rak-commercial-gateway-lora-server/protocol-section.jpg"
   figure-number="1"
   caption="Protocol selection"
 />
@@ -56,7 +56,7 @@ This is done in the General tab of the LoRa Network Server menu. Simply press on
 The following parameters can be adjusted or left with their default values (they should be within norm). See Figure 2 for reference:
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/tips-on-getting-started-with-rak-commercial-gateway-lora-server/enable-the-lora-server.jpg"
+  src="/assets/images/knowledge-hub/learn/tips-on-getting-started-with-rak-commercial-gateway-lora-server/enable-the-lora-server.jpg"
   figure-number="2"
   caption="Enabling the LoRa Server"
 />
@@ -71,7 +71,7 @@ The following parameters can be adjusted or left with their default values (they
 In this section you can add and External Gateways to work with your LoRa Network Server. This way packet forwarded by the listed Gateways will be forwarded as though they were within the range of this device.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/tips-on-getting-started-with-rak-commercial-gateway-lora-server/adding-gateways.jpg"
+  src="/assets/images/knowledge-hub/learn/tips-on-getting-started-with-rak-commercial-gateway-lora-server/adding-gateways.jpg"
   figure-number="3"
   caption="Adding Gateways"
 />
@@ -83,7 +83,7 @@ You can configure the Gateway Backend Configuration in order to point the Gatewa
 In order to have your nodes be authenticated and to see the decrypted data you need to have an Application created. Simply enter a name in the text field and press the “<b>Add</b>” button.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/tips-on-getting-started-with-rak-commercial-gateway-lora-server/application-creation.jpg"
+  src="/assets/images/knowledge-hub/learn/tips-on-getting-started-with-rak-commercial-gateway-lora-server/application-creation.jpg"
   figure-number="4"
   caption="Application creation"
 />
@@ -91,7 +91,7 @@ In order to have your nodes be authenticated and to see the decrypted data you n
 You will be redirected to the main Application screen, where you need to you can start adding Devices to you Application or Change the Application Configuration (Name and Description).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/tips-on-getting-started-with-rak-commercial-gateway-lora-server/main-application-screen.jpg"
+  src="/assets/images/knowledge-hub/learn/tips-on-getting-started-with-rak-commercial-gateway-lora-server/main-application-screen.jpg"
   figure-number="5"
   caption="Main Application screen"
 />
@@ -99,7 +99,7 @@ You will be redirected to the main Application screen, where you need to you can
 Simply input a valid Device EUI and press the “Add” button (you can also do this in batch).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/tips-on-getting-started-with-rak-commercial-gateway-lora-server/adding-a-device.jpg"
+  src="/assets/images/knowledge-hub/learn/tips-on-getting-started-with-rak-commercial-gateway-lora-server/adding-a-device.jpg"
   figure-number="6"
   caption="Adding a Device"
 />
@@ -112,7 +112,7 @@ You will be redirected to the Device Configuration screen where you need to ente
 * <b>Application Key</b> Make sure you input a valid Key (this can also be generated randomly)
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/tips-on-getting-started-with-rak-commercial-gateway-lora-server/device-param-config.jpg"
+  src="/assets/images/knowledge-hub/learn/tips-on-getting-started-with-rak-commercial-gateway-lora-server/device-param-config.jpg"
   figure-number="7"
   caption="Device parameter configuration"
 />
@@ -122,7 +122,7 @@ For the purpose of this example we are using the parameters in Figure 7 above. T
 If this is successful you should see the data in Figure 8. This would mean that your Device has successfully joined the network and its LoRa Frames will be properly handled (forwarded, decrypted, etc).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/tips-on-getting-started-with-rak-commercial-gateway-lora-server/activated-dev-param.jpg"
+  src="/assets/images/knowledge-hub/learn/tips-on-getting-started-with-rak-commercial-gateway-lora-server/activated-dev-param.jpg"
   figure-number="8"
   caption="Activated device parameters"
 />

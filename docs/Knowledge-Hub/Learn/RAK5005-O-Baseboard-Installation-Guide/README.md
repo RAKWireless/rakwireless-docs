@@ -35,7 +35,7 @@ This document uses two arrows. Refer to Figure 1 for its representation.
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/1.arrows.png"
+  src="/assets/images//knowledge-hub/learn/rak5005-o-baseboard-installation-guide/1.arrows.png"
   width="50%"
   caption="Notation within the document"
 />
@@ -44,7 +44,7 @@ This document uses two arrows. Refer to Figure 1 for its representation.
 1. Align the connectors. Keep the header parallel and place it lightly in the corresponding lap joint of the socket.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/2.alignment.png"
+  src="/assets/images//knowledge-hub/learn/rak5005-o-baseboard-installation-guide/2.alignment.png"
   width="75%"
   caption="Alignment of WisConnector"
 />
@@ -52,7 +52,7 @@ This document uses two arrows. Refer to Figure 1 for its representation.
 2. Fit the connector. Tilt one end of the connector (header) less than 20 degrees, while do not apply force during this process, gently place the other end in parallel.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/3.header-to-socket.png"
+  src="/assets/images//knowledge-hub/learn/rak5005-o-baseboard-installation-guide/3.header-to-socket.png"
   width="75%"
   caption="Fit the WisConnector’s header inside of the socket"
 />
@@ -60,7 +60,7 @@ This document uses two arrows. Refer to Figure 1 for its representation.
 3. After the above alignment steps, the header and socket are matched, but still not buckled.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/4.header-matched.png"
+  src="/assets/images//knowledge-hub/learn/rak5005-o-baseboard-installation-guide/4.header-matched.png"
   width="75%"
   caption="WisConnector’s header matched inside of the socket"
 />
@@ -68,7 +68,7 @@ This document uses two arrows. Refer to Figure 1 for its representation.
 4. Apply forces evenly by pressing in parallel, then there will be a sound confirming the completion of the buckling.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/5.buckle-the-head.png"
+  src="/assets/images//knowledge-hub/learn/rak5005-o-baseboard-installation-guide/5.buckle-the-head.png"
   width="75%"
   caption="Apply forces to buckle the heard to the socket "
 />
@@ -76,7 +76,7 @@ This document uses two arrows. Refer to Figure 1 for its representation.
 In the process of buckling and applying force, avoid application of uneven force on both sides.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/6.uneven-forces.png"
+  src="/assets/images//knowledge-hub/learn/rak5005-o-baseboard-installation-guide/6.uneven-forces.png"
   width="75%"
   caption="Avoid applying uneven forces "
 />
@@ -84,7 +84,7 @@ In the process of buckling and applying force, avoid application of uneven force
 When the buckling process is completed, check that the header and socket are kept in parallel.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/7.buckle-header-to-socket.png"
+  src="/assets/images//knowledge-hub/learn/rak5005-o-baseboard-installation-guide/7.buckle-header-to-socket.png"
   width="75%"
   caption="Correct way to buckle the WisConnector’s header to the socket"
 />
@@ -93,7 +93,7 @@ If after buckling, the header and socket are not in a parallel state (not fully 
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/8.not-parallel.png"
+  src="/assets/images//knowledge-hub/learn/rak5005-o-baseboard-installation-guide/8.not-parallel.png"
   width="75%"
   caption="WisConnector’s header is not parallel to the socket"
 />
@@ -107,7 +107,7 @@ When the aforementioned steps are not completed yet, DO NOT apply force to buckl
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/9.detach-header.png"
+  src="/assets/images//knowledge-hub/learn/rak5005-o-baseboard-installation-guide/9.detach-header.png"
   width="75%"
   caption="Correct way: Applying even forces to detach the header from the socket"
 />
@@ -115,7 +115,7 @@ When the aforementioned steps are not completed yet, DO NOT apply force to buckl
 2. Avoid pulling out the header asymmetrically in the long-side direction.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/10.wrong-way-of-detaching.png"
+  src="/assets/images//knowledge-hub/learn/rak5005-o-baseboard-installation-guide/10.wrong-way-of-detaching.png"
   width="60%"
   caption="Wrong way: Applying uneven forces to detach the header from the socket"
 />
@@ -124,7 +124,7 @@ When the aforementioned steps are not completed yet, DO NOT apply force to buckl
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/11.dont-rotate.png"
+  src="/assets/images//knowledge-hub/learn/rak5005-o-baseboard-installation-guide/11.dont-rotate.png"
   width="60%"
   caption="Wrong way: Do not rotate the header"
 />
@@ -132,7 +132,7 @@ When the aforementioned steps are not completed yet, DO NOT apply force to buckl
 4. Avoid applying forces in a single corner.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/12.dont-apply-force.png"
+  src="/assets/images//knowledge-hub/learn/rak5005-o-baseboard-installation-guide/12.dont-apply-force.png"
   width="55%"
   caption="Wrong way: Do not apply force in a single corner of the header"
 />
@@ -152,7 +152,7 @@ A WisBlock Core module is designed to be installed on the CPU slot of the RAK500
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/13.wisblock-core-silkscreen.png"
+  src="/assets/images//knowledge-hub/learn/rak5005-o-baseboard-installation-guide/13.wisblock-core-silkscreen.png"
   width="75%"
   caption="WisBlock Core silkscreen on the RAK5005-O baseboard"
 />
@@ -169,7 +169,7 @@ The RAK1910 GPS module must be installed only on the front side of the RAK5005-O
 A WisBlock Sensor module is designed to be installed on the Sensor slot of the RAK5005-O baseboard. There are four (4) available sensor slots in the RAK5005-O baseboard, two (2) on each side of the baseboard. As shown in Figure 14, the location is properly marked by silkscreen. Follow carefully the procedure of the previous section, Attaching a WisConnector, to attach a WisBlock Sensor module. Once attached, fix the module with a M1.2 x 3 mm screw.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/14.wisblock-sensor-silkscreen.png"
+  src="/assets/images//knowledge-hub/learn/rak5005-o-baseboard-installation-guide/14.wisblock-sensor-silkscreen.png"
   width="75%"
   caption="WisBlock Sensor silkscreens on the RAK5005-O baseboard"
 />
@@ -182,7 +182,7 @@ A WisBlock IO module is designed to be installed on the IO slot of the RAK5005-O
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/15.wisbloc-io-silkscreen.png"
+  src="/assets/images//knowledge-hub/learn/rak5005-o-baseboard-installation-guide/15.wisbloc-io-silkscreen.png"
   width="75%"
   caption="WisBlock IO silkscreen on the RAK5005-O baseboard"
 />
@@ -199,7 +199,7 @@ Read carefully the complete instruction first before trying to disassemble a mod
 1. The procedure to disassemble any type of WisBlock modules is the same. As shown in Figure 16, first, remove the screws.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/16.removing-screws.png"
+  src="/assets/images//knowledge-hub/learn/rak5005-o-baseboard-installation-guide/16.removing-screws.png"
   width="75%"
   caption="Removing screws from the WisBlock module"
 />
@@ -208,14 +208,14 @@ Read carefully the complete instruction first before trying to disassemble a mod
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/17.detaching-silkscreen.png"
+  src="/assets/images//knowledge-hub/learn/rak5005-o-baseboard-installation-guide/17.detaching-silkscreen.png"
   width="75%"
   caption="Detaching silkscreen on the WisBlock module"
 />
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/RAK5005-O-Baseboard-Installation-Guide/18.detaching-module.png"
+  src="/assets/images//knowledge-hub/learn/rak5005-o-baseboard-installation-guide/18.detaching-module.png"
   width="65%"
   caption="Applying even forces on the proper location of a WisBlock module to detach the module from the baseboard"
 />

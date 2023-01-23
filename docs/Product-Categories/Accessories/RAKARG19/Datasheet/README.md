@@ -12,7 +12,7 @@ rak_img: /assets/images/accessories/rakarg19/5dbi_antenna.png
 
 ## Overview
 
-The 5.1&nbsp;dBi Fiberglass antenna is an outdoor, high-performance antenna, designed to withstand harsh outdoor conditions. It is specially designed for LoRa® in the 902-928&nbsp;MHz band – US915, AU915, AS923, and KR920.
+The 5.1&nbsp;dBi Fiberglass antenna is an outdoor, high-performance antenna, designed to withstand harsh outdoor conditions. It is specially designed for LoRa in the 902-928&nbsp;MHz band – US915, AU915, AS923, and KR920.
 The antenna connector is one with the antenna body - this design further increases the resistance of the antenna to external conditions.
 With a length of only 480&nbsp;mm, this antenna will be the best fit for your LPWAN gateway or outdoor deployed RAK Hotspot.
 

@@ -15,7 +15,7 @@ header:
 posted: 04/10/2021 6:00 PM
 ---
 
-# 	
+# Use the MQTT Broker Like a Pro + Examples
 
 ## Description
 
@@ -35,12 +35,12 @@ If you are familiar with the two, you can skip this part.
 
 As shown in Figure 1, LoRaWAN network roles are divided into:
 
-- **End nodes** - The end-devices responsible for data collection. the data is then encrypted and transmitted to de gateway in the form of a wireless signal. 
+- **End nodes** - The end-devices responsible for data collection. the data is then encrypted and transmitted to de gateway in the form of a wireless signal.
 - **Concentrator/Gateway** - They collect the data from multiple nodes and send it to the Network server (NS).
-- **Network Server** - The NS decrypts and processes the data forwarded by the gateway according to the data identification information and key. 
+- **Network Server** - The NS decrypts and processes the data forwarded by the gateway according to the data identification information and key.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/1.jpg"
+  src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/1.jpg"
   width="50%"
   caption="LoRaWAN network architecture"
 />
@@ -49,12 +49,12 @@ RAK simplifies the actual deployment of a LoRaWAN network by integrating an NS i
 
 ### MQTT
 
-MQTT stands for **Message Queuing Telemetry Transport,** which is a publish/subscribe, extremely simple and lightweight, messaging protocol, intended for use on constrained devices and low-bandwidth, high-latency, or unreliable networks. 
+MQTT stands for **Message Queuing Telemetry Transport,** which is a publish/subscribe, extremely simple and lightweight, messaging protocol, intended for use on constrained devices and low-bandwidth, high-latency, or unreliable networks.
 
 For more information, check out our [article about MQTT](https://news.rakwireless.com/the-mighty-mqtt-what-you-should-know-about-it/).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/2.png"
+  src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/2.png"
   width="50%"
   caption="MQTT architecture"
 />
@@ -65,7 +65,7 @@ For more information, check out our [article about MQTT](https://news.rakwireles
 
 The WisGate Edge gateway obtains data from the nodes and sends it to the built-in NS, it then publishes the data to the built-in MQTT Broker. In this case, the gateway is both the publisher and the broker at the same time. The user then subscribes to the topic through third-party programs, like MQTT.fx, to be able to manage that data.
 
-- **Practical application 2: Use the built-in NS to publish data to an external MQTT Broker** 
+- **Practical application 2: Use the built-in NS to publish data to an external MQTT Broker**
 
 The RAK commercial gateway obtains the data and sends it to the built-in NS, and it then publishes the data to a third-party MQTT Broker. Users subscribe through third-party programs. In this case, the gateway is only a publisher.
 
@@ -85,11 +85,11 @@ This chapter will show you how to subscribe to topics, receive and send data rep
 
 ## Create an Uplink Topic
 
-1. The data is transmitted by using an Uplink Topic. To see the MQTT topic templates for your gateway, in the Web UI, navigate to **LoRa Network** > **Global Integration** > **Uplink Topic**. 
+1. The data is transmitted by using an Uplink Topic. To see the MQTT topic templates for your gateway, in the Web UI, navigate to **LoRa Network** > **Global Integration** > **Uplink Topic**.
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/3.png"
+  src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/3.png"
   width="80%"
   caption="Global Integration topic templates"
 />
@@ -101,10 +101,10 @@ Do not change the topics in your gateway. They are just templates of what your t
 
 2. To generate a correct Uplink Topic you will need the template and the following information:
 
-- **application_ID** – This is the ID of your application. To see it, navigate to **LoRa Network** > **Application**. 
+- **application_ID** – This is the ID of your application. To see it, navigate to **LoRa Network** > **Application**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/4.png"
+  src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/4.png"
   width="80%"
   caption="Applications list"
 />
@@ -112,7 +112,7 @@ Do not change the topics in your gateway. They are just templates of what your t
 - **device_EUI** – This is the EUI of your device. To see it, navigate to **LoRa Network** > **Application** > **Edit**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/5.png"
+  src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/5.png"
   width="80%"
   caption="Devices list"
 />
@@ -133,18 +133,18 @@ application/+/device/+/rx
 
 ## Subscribe to the Topic via MQTT.fx
 
-1. Open the MQTT.fx tool and click on the **New** button (<img src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/6.png" style="zoom:100%;" />).
+1. Open the MQTT.fx tool and click on the **New** button (<img src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/6.png" style="zoom:100%;" />).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/7.png"
+  src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/7.png"
   width="80%"
   caption=" MQTT.fx startup window"
 />
 
-2. Type the IP address of the gateway and click **Connect**. The black indicator on the far right should turn green, indicating that the connection is successful. 
+2. Type the IP address of the gateway and click **Connect**. The black indicator on the far right should turn green, indicating that the connection is successful.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/8.png"
+  src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/8.png"
   width="80%"
   caption="Connecting MQTT.fx"
 />
@@ -156,7 +156,7 @@ For this tutorial, the gateway is connected to the local network, so the IP is 1
 3. To connect to the topic, navigate to the **Subscribe** tab, type in the Uplink Topic you created, and click the **Subscribe** button.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/9.png"
+  src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/9.png"
   width="80%"
   caption="Subscribing to the topic"
 />
@@ -173,7 +173,7 @@ To convert any message in HEX, use a converter like [this](https://www.rapidtabl
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/10.png"
+  src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/10.png"
   width="70%"
   caption="RAK Serial Port Tool"
 />
@@ -185,14 +185,14 @@ In this example, RAK7204 WisNode Sense Home is used. However, the tutorial will 
 5. In the MQTT.fx interface, you can see the message you just sent. The message is encoded in **base64** format.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/11.png"
+  src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/11.png"
   width="80%"
   caption="Uplink data"
 />
 
 ## Send Data to the Node via MQTT.fx
 
-1. To send data to the nodes (downlink) requires publishing the data to the **Downlink Topic**. To see the topics templates, go to the [**Create an Uplink Topic**](#create-an-uplink-topic) part for reference. Find the Downlink Topic template and replace the **application_ID** with the ID of your application and **device_EUI** with the EUI of your device. 
+1. To send data to the nodes (downlink) requires publishing the data to the **Downlink Topic**. To see the topics templates, go to the [**Create an Uplink Topic**](#create-an-uplink-topic) part for reference. Find the Downlink Topic template and replace the **application_ID** with the ID of your application and **device_EUI** with the EUI of your device.
 
 An example of Downlink Topic would look something like `application/1/device/60c5a8fffeXXXXXX/tx`.
 
@@ -203,13 +203,13 @@ The Downlink Topic ends with **tx**.
 1. In the MQTT.fx navigate to **Publish** tab and type the name of your topic.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/12.png"
+  src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/12.png"
   width="80%"
   caption="Entering Downlink Topic"
 />
 
 
-2. To send a message to the node, in the field under the topic’s name type the command for it and click the **Publish** button. To send a "Hello" message, use the command: 
+2. To send a message to the node, in the field under the topic’s name type the command for it and click the **Publish** button. To send a "Hello" message, use the command:
 
 ```
 {"confirmed":true,"data":"SGVsbG8=","fPort":10}
@@ -218,11 +218,11 @@ The Downlink Topic ends with **tx**.
 Where:
 
 - **Confirmed** can be true or false.
-- The content of the **data** is the information you want to send. The information must be base64 encoded. This can be done with a [converter](https://www.base64decode.org/). 
+- The content of the **data** is the information you want to send. The information must be base64 encoded. This can be done with a [converter](https://www.base64decode.org/).
 - **fPort** is the port number where you send the data. The number can be 1-255.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/13.png"
+  src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/13.png"
   width="80%"
   caption="Publish a message"
 />
@@ -230,18 +230,18 @@ Where:
 3. The message you just sent can be seen in the RAK Serial Port tool and it is encoded in HEX format.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/14.png"
+  src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/14.png"
   width="70%"
   caption="Received message"
 />
 
 :::tip 📝 NOTE
-If the device is configured to work in Class C, it will receive the message immediately after sending. If the node is working in Class A, it will receive the message on the next Uplink. 
+If the device is configured to work in Class C, it will receive the message immediately after sending. If the node is working in Class A, it will receive the message on the next Uplink.
 :::
 
 # Use an external MQTT Broker
 
-This section will explain how to configure the gateway to use an external MQTT Broker and how to connect MQTT.fx to it. 
+This section will explain how to configure the gateway to use an external MQTT Broker and how to connect MQTT.fx to it.
 
 
 :::tip 📝 NOTE
@@ -254,41 +254,41 @@ This section describes how to access the external MQTT by username/password.
 1. To configure the gateway to point to an external MQTT server, in the Web UI, navigate to **LoRa Network** > **Global Integration** and type the **MQTT Broker Address** of the server you are going to use. Switch the **Enable User Authentication**, fill in the **Username** and **Password** to access the MQTT server, and click **Save & Apply**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/15.png"
+  src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/15.png"
   width="80%"
   caption="Configuring the gateway"
 />
 
 :::tip 📝 NOTE
-Enable the User Authentication only if the MQTT Broker requires Username and Password for authentication. 
+Enable the User Authentication only if the MQTT Broker requires Username and Password for authentication.
 :::
 
-2. Open the MQTT.fx and click on the **Setting** icon <img src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/16.png" style="zoom:80%;"/>
+2. Open the MQTT.fx and click on the **Setting** icon <img src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/16.png" style="zoom:80%;"/>
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/17.png"
+  src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/17.png"
   width="80%"
   caption="MQTT.fx startup window"
 />
 
-3. In the **Edit Connection Profiles** click on the plus icon ( <img src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/18.png" style="zoom:80%;"/>) in the lower-left corner to create a new Profile. Type in **Profile name** of your choice and the IP of the **Broker Address**. Click on **User Credentials** to enter the **User Name** and **Password** to access the MQTT server and then click **OK**.
+3. In the **Edit Connection Profiles** click on the plus icon ( <img src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/18.png" style="zoom:80%;"/>) in the lower-left corner to create a new Profile. Type in **Profile name** of your choice and the IP of the **Broker Address**. Click on **User Credentials** to enter the **User Name** and **Password** to access the MQTT server and then click **OK**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/19.png"
+  src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/19.png"
   width="80%"
   caption="Edit Connection Profiles"
 />
 
-4. From the drop-down menu (left of the **Connect** button) at the main window of the MQTT.fx choose the Profile you just created and click **Connect** to connect to the external MQTT server. The black dot on the far right should turn green, indicating that the connection is successful. 
+4. From the drop-down menu (left of the **Connect** button) at the main window of the MQTT.fx choose the Profile you just created and click **Connect** to connect to the external MQTT server. The black dot on the far right should turn green, indicating that the connection is successful.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/20.png"
+  src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/20.png"
   width="80%"
   caption="Connecting to the new profile"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/use-the-mqtt-like-a-pro/21.png"
+  src="/assets/images/knowledge-hub/learn/use-the-mqtt-like-a-pro/21.png"
   width="80%"
   caption="Successful connection"
 />
@@ -363,9 +363,9 @@ In the previous sections, you were shown how to subscribe to **Uplink** data and
 
 ```
 {
-	"applicationID": "1",		// The ID of the application in which the node is registered 
+	"applicationID": "1",		// The ID of the application in which the node is registered
 	"applicationName": "RAK_mqtt_test",		// The name of the application
-	"deviceName": "RAK7204",		// The name of your device	
+	"deviceName": "RAK7204",		// The name of your device
 	"devEUI": "60c5a8fffeXXXXXX",		// The EUI of your device
 	"acknowledged": true,		//Acknowledgement confirmation
 	"fCnt": 2		// The frame counter of the message
@@ -380,7 +380,7 @@ The node will reply with Ack only after the server has sent the confirmed type o
 
 ```
 {
-	"applicationID": "1", 
+	"applicationID": "1",
 	"applicationName": "RAK_mqtt_test",
 	"deviceName": "RAK7204",
 	"devEUI": "60c5a8fffeXXXXXX",
@@ -447,7 +447,7 @@ import paho.mqtt.client as mqtt
 from datetime import datetime
 
 # Type the IP of your server
-mqtt_ip = 'ip of your MQTT server' 
+mqtt_ip = 'ip of your MQTT server'
 mqtt_port = 1883
 # Type your username and password. If the private MQTT server does not require username and password, commend the lines
 mqtt_username = 'username'
@@ -485,7 +485,7 @@ def on_print_node_rx_info(json_rx):
 		print('+\t data:\t\t\t%s' % data)
 		print('+\t data_hex:\t\t%s' % data_hex)
 		print('----------------------------------------------------------')
-	
+
 	except Exception as e:
 		print(e)
 	finally:
@@ -504,12 +504,12 @@ def on_print_rak_node_info(payload):
 		tx_msg = '{"confirmed":true,"fPort":10,"data":"%s" }' % str(base64.b64encode(str_hello.encode("utf-8")).encode("utf-8"))
 		mqttc.publish(tx_topic, tx_msg, qos=0, retain=False)
 		print('Send \'Hello RAKwireless\' to node %s' % dev_eui)
-	
+
 	except Exception as e:
 		raise e
 	finally:
 		pass
-	
+
 mqttc = mqtt.Client()
 mqttc.on_message = on_message
 # If there is no username and password, please comment the following line:

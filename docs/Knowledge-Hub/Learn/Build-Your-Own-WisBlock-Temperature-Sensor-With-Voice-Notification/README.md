@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/build-your-own-temperature-alert-notifier-via-audio/Temperature-Alert.jpg
+rak_img: /assets/images/knowledge-hub/learn/build-your-own-temperature-alert-notifier-via-audio/Temperature-Alert.jpg
 rak_desc: This guide provides a step-by-step tutorial on creating a WisBlock Sensor with Voice Notification using WisBlock Audio.
 tags:
   - Tutorial
@@ -63,7 +63,7 @@ In making the RAK4631 Sensor with Voice Notification, the procedure below should
 1. Connect the push button switch to the WisBlock base board by soldering them, as shown in the image. The push button uses an internal pull-up resistor of the RAK4631 module, and the IO pin used is WB_IO4.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_2A.png"
+  src="/assets/images/knowledge-hub/learn/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_2A.png"
   width="60%"
   caption="Soldering the push button switch to WisBlock base board"
 />
@@ -74,7 +74,7 @@ This guide shows you can use the WisBlock IO pin via the pin header. There is a 
 Both methods will work fine in this tutorial.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/build-your-own-temperature-alert-notifier-via-audio/sw1.png"
+  src="/assets/images/knowledge-hub/learn/build-your-own-temperature-alert-notifier-via-audio/sw1.png"
   width="60%"
   caption="RAK19001 built-in user button"
 />
@@ -83,7 +83,7 @@ Both methods will work fine in this tutorial.
 2. Gather the modules and assemble them with placements, as shown in Figure 2.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_3A.png"
+  src="/assets/images/knowledge-hub/learn/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_3A.png"
   width="100%"
   caption="Assembling the modules"
 />
@@ -91,7 +91,7 @@ Both methods will work fine in this tutorial.
 3. After interconnecting all the modules, you can now attach the speakers and battery to their respective slots.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_4A.png"
+  src="/assets/images/knowledge-hub/learn/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_4A.png"
   width="90%"
   caption="Portions where to connect the battery and speakers"
 />
@@ -99,7 +99,7 @@ Both methods will work fine in this tutorial.
 4. The hardware is now complete to build your own **RAK4631 Sensor with Voice Notification module**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_A.png"
+  src="/assets/images/knowledge-hub/learn/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_A.png"
   width="100%"
   caption="Fully-assembled modules"
 />
@@ -113,7 +113,7 @@ For this application, you can use the **RAK4631_sensor_with_voice_notification**
 This procedure is essential to check whether the RAK1901 temperature sensor is working or not. You need to open the example code for **RAK1901** using **RAK4631**, then upload it to the module and check for the response of the temperature sensor through the serial monitor.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_11A.png"
+  src="/assets/images/knowledge-hub/learn/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_11A.png"
   width="80%"
   caption="Uploading the sample code for RAK1901 to check for its functionality"
 />
@@ -121,7 +121,7 @@ This procedure is essential to check whether the RAK1901 temperature sensor is w
 If **RAK1901** is working well, temperature and humidity measurements should register in the serial monitor.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_12A.png"
+  src="/assets/images/knowledge-hub/learn/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_12A.png"
   width="100%"
   caption="RAK1901 works well as observed in the serial monitor"
 />
@@ -129,7 +129,7 @@ If **RAK1901** is working well, temperature and humidity measurements should reg
 As shown in **Figure 8**, it registers if **RAK1901** is damaged or dismantled in the module.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_13A.png"
+  src="/assets/images/knowledge-hub/learn/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_13A.png"
   width="100%"
   caption="Error occurs when RAK1901 is damaged or removed from the module"
 />
@@ -141,7 +141,7 @@ Before heading on the voice notification, you have to ensure that the speaker is
 Once the speaker is working, prepare an SD card and try to play a WAV sound file. The example code requires you to have a WAV file `test.wav`.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/build-your-own-temperature-alert-notifier-via-audio/playbackfromsd.png"
+  src="/assets/images/knowledge-hub/learn/build-your-own-temperature-alert-notifier-via-audio/playbackfromsd.png"
   width="75%"
   caption="RAKwireless Audio Library for SD card Playback"
 />
@@ -157,7 +157,7 @@ This project needs to include WAV files in the code to make a notifier that will
 1. First thing to do is to generate a voice audio file from text using the [Voice Generator](https://voicegenerator.io/), then download the generated voice audio file to your PC.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_5.png"
+  src="/assets/images/knowledge-hub/learn/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_5.png"
   width="70%"
   caption="Text to Voice Audio Generator"
 />
@@ -165,7 +165,7 @@ This project needs to include WAV files in the code to make a notifier that will
 2. Upload the generated voice audio file in [MP3 to WAV converter](https://www.freeconvert.com/mp3-to-wav) to convert your voice audio file into a wav file. Then download the converted wav file to your PC and save it to the SD card that you will be using later in your project.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_6.png"
+  src="/assets/images/knowledge-hub/learn/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_6.png"
   width="70%"
   caption="MP3 to WAV converter"
 />
@@ -173,7 +173,7 @@ This project needs to include WAV files in the code to make a notifier that will
 3. Save the WAV files to the SD card. These are the WAV files used which you can also find on the GitHub repository.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/build-your-own-temperature-alert-notifier-via-audio/wav_files.png"
+  src="/assets/images/knowledge-hub/learn/build-your-own-temperature-alert-notifier-via-audio/wav_files.png"
   width="80%"
   caption="WAV files"
 />
@@ -189,7 +189,7 @@ The text/words on each file are as follows:
 4. Once saved, insert the SD card into the slot card of the **RAK18003** module, as shown in **Figure 13**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_7A.png"
+  src="/assets/images/knowledge-hub/learn/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_7A.png"
   width="100%"
   caption="Insertion of SD card into the RAK18003 module"
 />
@@ -286,13 +286,13 @@ This section is another essential part of the code, especially since it will exe
   }
 ```
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_10A.png"
+  src="/assets/images/knowledge-hub/learn/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_10A.png"
   width="90%"
   caption="Pressing the push button switch to execute Device Self-Test"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_9A.png"
+  src="/assets/images/knowledge-hub/learn/build-your-own-temperature-alert-notifier-via-audio/Temperature_Alert_9A.png"
   width="90%"
   caption="Removing the RAK1901 module to observe Device Failed Self-Test"
 />

@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/ubidots-integration/overview.jpg
+rak_img: /assets/images/knowledge-hub/learn/ubidots-integration/overview.jpg
 rak_desc: A demonstration on how to integrate the RAKwireless LPWAN Nodes and Gateways to the Ubidots IoT platform.
 tags:
   - Tutorial
@@ -37,7 +37,7 @@ Apart from the ease of data configuration that Ubidots offers, Ubidots also feat
 Attach the antennas (i.e. Wi-Fi, LPWAN, LTE, and GPS) found on your gateway. For RAK7258, attach those to the SMA connector, and for RAK7249, screw the antennas onto the gateway. After this step, you can now turn on the gateway. RAK7258 uses as 12V DC adapter the best and a cable and injector for RAK7249. Once powered, you may use either the ethernet Port or Wi-Fi to connect the gateway. Both of these options let you access the Management UI via a web browser in which you can see the gateway’s EUI (see Figure 1).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/ubidots-integration/Gateway-Configuration---Gateway-EUI-1.png"
+  src="/assets/images/knowledge-hub/learn/ubidots-integration/Gateway-Configuration---Gateway-EUI-1.png"
   width="100%"
   caption="Gateway Configuration – Gateway EUI"
 />
@@ -45,7 +45,7 @@ Attach the antennas (i.e. Wi-Fi, LPWAN, LTE, and GPS) found on your gateway. For
 Connect the gateway to TTN by heading on to [https://www.thethingsnetwork.org/](https://www.thethingsnetwork.org/) and creating an account. Go to your TTN console and register your new gateway: [https://console.thethingsnetwork.org/gateways/register](https://console.thethingsnetwork.org/gateways/register). Make sure to select the “**I’m using the legacy packet forwarder**” option before entering the Gateway EUI. Select your frequency plan depending on your location and this should populate the router field.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/ubidots-integration/Gateway-Overview---Status-connected.png"
+  src="/assets/images/knowledge-hub/learn/ubidots-integration/Gateway-Overview---Status-connected.png"
   width="100%"
   caption="Gateway Overview – Status connected"
 />
@@ -59,7 +59,7 @@ With your same TTN account, go to “APPLICATIONS” and fill-out the necessary 
 Since RAK7204 nodes are preconfigured to use the LPP data format standard, you only need to change the payload format of your application to Cayenne (see Figure 3). In case you are not using RAK7204 nodes, you can always write a custom decoder or encoder to have the same effect as using the built-in Cayenne LPP one.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/ubidots-integration/Payload-format---Cayenne-LPP.png"
+  src="/assets/images/knowledge-hub/learn/ubidots-integration/Payload-format---Cayenne-LPP.png"
   width="100%"
   caption="Payload format – Cayenne LPP"
 />
@@ -67,7 +67,7 @@ Since RAK7204 nodes are preconfigured to use the LPP data format standard, you o
 After changing, create a Ubidots account on their website and fill-out the standard registration form. Add your integration to Ubidots next in TTN by going to the integrations section of the applications section (see Figure 4).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/ubidots-integration/Ubidots-Integration.png"
+  src="/assets/images/knowledge-hub/learn/ubidots-integration/Ubidots-Integration.png"
   width="100%"
   caption="Ubidots Integration"
 />
@@ -75,7 +75,7 @@ After changing, create a Ubidots account on their website and fill-out the stand
 Choose Ubidots and enter a process ID, access key (i.e. default key), and a token in the integration configuration screen. The token is in your Ubidots user panel (see Figure 5).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/ubidots-integration/Ubidots-API-Credentials---Token.png"
+  src="/assets/images/knowledge-hub/learn/ubidots-integration/Ubidots-API-Credentials---Token.png"
   width="100%"
   caption="Ubidots API Credentials - Token"
 />
@@ -83,7 +83,7 @@ Choose Ubidots and enter a process ID, access key (i.e. default key), and a toke
 Once the token is provided, you can now press the “Add integration” button in the lower right (see Figure 6).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/ubidots-integration/Ubidots-Integration-configuration.png"
+  src="/assets/images/knowledge-hub/learn/ubidots-integration/Ubidots-Integration-configuration.png"
   width="100%"
   caption="Ubidots Integration configuration"
 />
@@ -93,7 +93,7 @@ Once the token is provided, you can now press the “Add integration” button i
 Once the TTN integration is set, you can see that the Ubidots device is automatically created in the “Devices” tab in Ubidots. By default, the device will be named with the Device EUI, but you can always change its name. Go to your own dashboard and populate it with widgets (see Figure 7).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/ubidots-integration/Ubidots-Dashboard---RAK7204-Widgets.png"
+  src="/assets/images/knowledge-hub/learn/ubidots-integration/Ubidots-Dashboard---RAK7204-Widgets.png"
   width="100%"
   caption="Ubidots Dashboard – RAK7204 Widgets"
 />
@@ -101,7 +101,7 @@ Once the TTN integration is set, you can see that the Ubidots device is automati
 You will see this exciting range of widgets that can be helpful for your deployment (Figure 8).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/ubidots-integration/Widgets-selection-screen.png"
+  src="/assets/images/knowledge-hub/learn/ubidots-integration/Widgets-selection-screen.png"
   width="50%"
   caption="Widgets selection screen"
 />
@@ -109,7 +109,7 @@ You will see this exciting range of widgets that can be helpful for your deploym
 After selecting widgets, you will see a window that lets you choose one of the five variables available (see Figure 9).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/ubidots-integration/Adding-a-Variable-to-display.png"
+  src="/assets/images/knowledge-hub/learn/ubidots-integration/Adding-a-Variable-to-display.png"
   width="100%"
   caption="Adding a Variable to display"
 />

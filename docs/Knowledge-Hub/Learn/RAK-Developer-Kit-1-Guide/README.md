@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/rak-developer-kit/starter-kit/kit1.png
+rak_img: /assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/kit1.png
 rak_desc: This guide provides a step-by-step tutorial on how to use the RAK Developer Kit 1 (Entry Kit).
 tags:
   - User-Manual
@@ -46,8 +46,8 @@ If you are new to LoRaWAN, here are a few good references about LoRaWAN and gate
 
 - [LoRaWAN 101](https://news.rakwireless.com/lorawan-r-101-all-you-need-to-know/)
 - [What is a LoRaWAN Gateway?](https://news.rakwireless.com/what-is-a-lorawan-gateway/)
-- [How do LoRaWAN® Gateways work?](https://news.rakwireless.com/how-do-lorawan-gateways-work/)
-- [Things to Consider When Picking A LoRaWAN® Gateway](https://news.rakwireless.com/things-to-consider-when-picking-a-lorawan-gateway/)
+- [How do LoRaWAN Gateways work?](https://news.rakwireless.com/how-do-lorawan-gateways-work/)
+- [Things to Consider When Picking A LoRaWAN Gateway](https://news.rakwireless.com/things-to-consider-when-picking-a-lorawan-gateway/)
 
 :::
 
@@ -56,7 +56,7 @@ Here are the steps in configuring the [RAK7246 WisGate Developer D0](https://sto
 1. By default, the gateway will work in Wi-Fi AP Mode, which means that you can find an SSID named "**Rakwireless_XXXX**" on your PC Wi-Fi network list.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-1.png"
   width="50%"
   caption="RAKwireless Access Point"
 />
@@ -74,7 +74,7 @@ Here are the steps in configuring the [RAK7246 WisGate Developer D0](https://sto
      SSH (Secure Shell) is typically used to log in to a remote machine and execute commands. There are a lot of free and good SSH Clients out there, namely [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), [BitVise SSH Client](https://www.bitvise.com/ssh-client-download), [MobaXterm](https://mobaxterm.mobatek.net/) and many more. Feel free to choose one that fits your needs, but in this guide, Putty is used.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-2-a.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-2-a.png"
   width="40%"
   caption="PuTTY example"
 />
@@ -83,7 +83,7 @@ Here are the steps in configuring the [RAK7246 WisGate Developer D0](https://sto
      Open the Terminal of Mac OS. Launch the Terminal application found in the **`/Applications/Utilities/`** directory, but you can also launch it from Spotlight. Press **Command + Spacebar** and type **“Terminal”**, then return.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-2-b.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-2-b.png"
   width="50%"
   caption="Selecting Terminal on Mac"
 />
@@ -94,7 +94,7 @@ Here are the steps in configuring the [RAK7246 WisGate Developer D0](https://sto
    - Password: **raspberry**
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-3.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-3.png"
   width="60%"
   caption="Command Line using SSH Client Software"
 />
@@ -108,7 +108,7 @@ Like for [RAK WisGate Edge Gateways](https://store.rakwireless.com/collections/w
 :::
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-4.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-4.png"
   width="60%"
   caption="sudo gateway-config mode"
 />
@@ -116,7 +116,7 @@ Like for [RAK WisGate Edge Gateways](https://store.rakwireless.com/collections/w
 5. You can now connect your gateway through Wi-Fi to access TTN. It can easily be done with the wireless capabilities of the Raspberry Pi Zero W by choosing **"5 Configure WIFI"**. By default, the RAK7246 WisGate Developer D0 Gateway works in Wi-Fi AP Mode. For the gateway to connect to the router, it must work in Wi-Fi Client Mode.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-5.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-5.png"
   width="60%"
   caption="Configuration options for WIFI"
 />
@@ -138,7 +138,7 @@ To enable Wi-Fi Client Mode, you have to disable first the Wi-Fi AP Mode.
 6. Once Wi-Fi AP Mode has been disabled by choosing **"2 Enable Client Mode/Disable AP Mode"**, you can now then connect to a new Wi-Fi Network by choosing **"4 Add New SSID for Client"**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-6.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-6.png"
   width="60%"
   caption="Add New SSID for Client"
 />
@@ -146,7 +146,7 @@ To enable Wi-Fi Client Mode, you have to disable first the Wi-Fi AP Mode.
 - Start by selecting your country of residence.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-6-a.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-6-a.png"
   width="60%"
   caption="Selecting Country of Residence"
 />
@@ -158,7 +158,7 @@ Ensure to input the correct Wi-Fi SSID and password, or you will not be able to 
 :::
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-6-b.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-6-b.png"
   width="60%"
   caption="SSID of the network you want to connect to"
 />
@@ -166,7 +166,7 @@ Ensure to input the correct Wi-Fi SSID and password, or you will not be able to 
 - Enter the SSID of the network you want to connect.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-6-c.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-6-c.png"
   width="60%"
   caption="Password of the Wi-Fi"
 />
@@ -182,7 +182,7 @@ sudo reboot
 In this example, the admin console can be accessed via `http://192.168.0.1`. It is also common to have it on `http://192.168.1.1` on some routers. Take note of the IP address allotted to the RAK7246 by your Wi-Fi
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-7-a.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-7-a.png"
   width="80%"
   caption="Web UI of local modem/router"
 />
@@ -197,7 +197,7 @@ As seen in **Figure 12**, it is `192.168.0.28`, where the company is Raspberry P
 :::
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-7-b.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-7-b.png"
   width="60%"
   caption="Advance IP scanner for Windows OS"
 />
@@ -205,14 +205,14 @@ As seen in **Figure 12**, it is `192.168.0.28`, where the company is Raspberry P
 8. To link your gateway to TTN, you need to set up first the RAK Gateway LoRa by choosing "**2 Setup RAK Gateway LoRa concentrator**".
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-8.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-8.png"
   width="60%"
   caption="Choosing Setup RAK Gateway LoRa"
 />
 
 9. Then, you need to select **Server is TTN** as the LoRaWAN server and select the right frequency that will match your gateway and region. The [supported frequency plan of TTN](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html) can be found on their website.
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-9.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-9.png"
   width="60%"
   caption="Server is TTN"
 />
@@ -220,7 +220,7 @@ As seen in **Figure 12**, it is `192.168.0.28`, where the company is Raspberry P
 10. For this example, you will be using EU868 Frequency Plan. Choose “**4 EU_863_870**”.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-10.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-10.png"
   width="60%"
   caption="Selecting the TTN channel plan"
 />
@@ -229,7 +229,7 @@ As seen in **Figure 12**, it is `192.168.0.28`, where the company is Raspberry P
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-11.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-11.png"
   width="60%"
   caption="Successfully changed the frequency"
 />
@@ -238,7 +238,7 @@ As seen in **Figure 12**, it is `192.168.0.28`, where the company is Raspberry P
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-12.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-12.png"
   width="60%"
   caption="Checking if TTNv3 is used for the connection"
 />
@@ -258,7 +258,7 @@ The available [TTN V3 clusters](https://console.cloud.thethings.network/) are:
 :::
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-13.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-13.png"
   width="60%"
   caption="Changing Server Name to eu1.cloud.thethings.network"
 />
@@ -267,7 +267,7 @@ The available [TTN V3 clusters](https://console.cloud.thethings.network/) are:
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\rak7246g-gateway\RAK7246G-14.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-14.png"
   width="60%"
   caption="Restarting the Packet-forwarder"
 />
@@ -281,7 +281,7 @@ This section shows how to connect RAK7246 WisGate Developer D0 to TTN.
 1. Create a [TTN account](https://www.thethingsnetwork.org/) if you don't have one yet.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\ttnv3-setup\TTNV3-1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-1.png"
   width="80%"
   caption="TTN V3 Website"
 />
@@ -289,13 +289,13 @@ This section shows how to connect RAK7246 WisGate Developer D0 to TTN.
 2.  Make sure you are in the right [TTN cluster](https://console.cloud.thethings.network/), and then log in to TTN. Use your The Things ID credentials to log in. In this example, choose **Europe 1**
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\ttnv3-setup\TTNV3-2.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-2.png"
   width="80%"
   caption="Login website for TTN"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\ttnv3-setup\TTNV3-2b.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-2b.png"
   width="80%"
   caption="Choose Europe 1"
 />
@@ -304,7 +304,7 @@ This section shows how to connect RAK7246 WisGate Developer D0 to TTN.
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\ttnv3-setup\TTNV3-3.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-3.png"
   width="80%"
   caption="Gateway console in TTN V3"
 />
@@ -327,13 +327,13 @@ This section shows how to connect RAK7246 WisGate Developer D0 to TTN.
 :::
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\ttnv3-setup\TTNV3-4-a.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-4-a.png"
   width="60%"
   caption="Filling information to add gateway in TTN V3"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\ttnv3-setup\TTNV3-4-b.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-4-b.png"
   width="50%"
   caption="Clicking the create gateway in TTN V3"
 />
@@ -341,7 +341,7 @@ This section shows how to connect RAK7246 WisGate Developer D0 to TTN.
 5.  Once the **RAK7246 WisGate Developer D0** is set to the `eu1.cloud.thethings.network server` address, and the gateway account is created, you will now see the connected status, as seen in **Figure 26**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\ttnv3-setup\TTNV3-5.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-5.png"
   width="80%"
   caption="Successful creation and connection of Gateway in TTN V3"
 />
@@ -355,7 +355,7 @@ This section will guide you on how to set up your device.
 1. Now that you are logged in to the platform, the next step is to create an application. In your console, click **Create an application**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\RAK4631-ttnv3-setup\RAK4631-TTNV3-1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/RAK4631-ttnv3-setup/RAK4631-TTNV3-1.png"
   width="80%"
   caption="Create an Application"
 />
@@ -363,7 +363,7 @@ This section will guide you on how to set up your device.
 2. To have an application registered, you need to input first the specific details and necessary information about your application, then click **Create application**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\RAK4631-ttnv3-setup\RAK4631-TTNV3-2.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/RAK4631-ttnv3-setup/RAK4631-TTNV3-2.png"
   width="80%"
   caption="Creating an Application"
 />
@@ -371,7 +371,7 @@ This section will guide you on how to set up your device.
 3. If you had no error during the previous step, you should now be on the application console page. The next step is to **add end-devices to your TTN application**. LoRaWAN specification enforces that each end-device has to be personalized and activated. There are two options for registering devices depending on the activation mode you select. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP).  You need to click **+ Add end device** as shown in **Figure 29**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\RAK4631-ttnv3-setup\RAK4631-TTNV3-3.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/RAK4631-ttnv3-setup/RAK4631-TTNV3-3.png"
   width="80%"
   caption="Add end-devices to your TTN application"
 />
@@ -379,7 +379,7 @@ This section will guide you on how to set up your device.
 4. To register for the module, you need to click **Manually** first.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\RAK4631-ttnv3-setup\RAK4631-TTNV3-4.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/RAK4631-ttnv3-setup/RAK4631-TTNV3-4.png"
   width="80%"
   caption="Adding end devices manually"
 />
@@ -387,7 +387,7 @@ This section will guide you on how to set up your device.
 5. Choose the following configurations in adding the end devices.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\RAK4631-ttnv3-setup\RAK4631-TTNV3-5.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/RAK4631-ttnv3-setup/RAK4631-TTNV3-5.png"
   width="80%"
   caption="Configurations for adding end devices"
 />
@@ -395,7 +395,7 @@ This section will guide you on how to set up your device.
 6.  Click **Show advanced activation, LoRaWAN class, and cluster settings**, then select **Over the air action (OTAA)**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\RAK4631-ttnv3-setup\RAK4631-TTNV3-6.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/RAK4631-ttnv3-setup/RAK4631-TTNV3-6.png"
   width="80%"
   caption="OTAA settings"
 />
@@ -406,7 +406,7 @@ For **AppEUI**, you can click **Fill with Zeros**.
 Click **Generate** for the **AppKey**. Then the End Device Name will be automatically filled by the website. You can also put a different End Device ID if you need to. Finally, click **Register End Device**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\RAK4631-ttnv3-setup\RAK4631-TTNV3-7.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/RAK4631-ttnv3-setup/RAK4631-TTNV3-7.png"
   width="80%"
   caption="Registering the End Device"
 />
@@ -415,7 +415,7 @@ Click **Generate** for the **AppKey**. Then the End Device Name will be automati
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\RAK4631-ttnv3-setup\RAK4631-TTNV3-8.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/RAK4631-ttnv3-setup/RAK4631-TTNV3-8.png"
   width="80%"
   caption="OTAA device successfully registered to TTN"
 />
@@ -550,7 +550,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 Once the RAK4631 is connected to RAK5005-O WisBlock Base, You can connect a push button to the **RAK5005-O WisBlock Base**, having its terminals, one in  `WB_IO1` for IO1 pin, and the other one in `GND`. At the end of this guide, you should have a LoRaWAN device where a LoRaWAN uplink packet will be transmitted every time that button will be pressed.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\lorabutton\lorabutton-1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/lorabutton/lorabutton-1.png"
   width="60%"
   caption="Connecting Push Button with RAK 5005-O WisBlock Base"
 />
@@ -565,28 +565,28 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 :::
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino1.png"
   width="80%"
   caption="Downloading the Arduino IDE"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino2.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino2.png"
   width="80%"
   caption="Just download the IDE without any cost"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino3.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino3.png"
   width="40%"
   caption="Installing the Arduino IDE"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino4.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino4.png"
   width="40%"
   caption="Completing the installation of Arduino IDE"
 />
@@ -597,14 +597,14 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 3. Click on **File** > **Preferences**. In the **Preferences** window, look for **Additional Boards Manager URLs** then click the icon on the right side.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino6.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino6.png"
   width="80%"
   caption="Preferences setup"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino7.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino7.png"
   width="80%"
   caption="Preferences window"
 />
@@ -614,14 +614,14 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino8.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino8.png"
   width="80%"
   caption="RAKwireless BSP support for the Arduino Board Manager setup"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino9.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino9.png"
   width="80%"
   caption="Completing the setup of RAKwireless BSP support for the Arduino Board Manager"
 />
@@ -629,14 +629,14 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 5. Go to **Tools** > **Board: "Arduino Uno"** > **Boards Manager**. Type **RAK** in the search bar and the RAKwireless Core modules will be shown in the window.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino10.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino10.png"
   width="80%"
   caption="Boards manager"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino11.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino11.png"
   width="80%"
   caption="Installing RAKwireless nRF boards"
 />
@@ -646,7 +646,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino12.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino12.png"
   width="80%"
   caption="Successful Installation of  RAKwireless nRF Boards"
 />
@@ -655,7 +655,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\lorabutton\sx126xarduino.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/lorabutton/sx126xarduino.png"
   width="60%"
   caption="SX126x-Arduino library"
 />
@@ -1000,19 +1000,19 @@ This is setup on the `void send_lora_frame(void)` function. The data will be sen
 After all the configuration is done and the payload is already formatted properly, you can now compile and upload the code.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino29_2.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino29_2.png"
   width="80%"
   caption="Double check the Board and COM Port"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino29_3.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino29_3.png"
   width="80%"
   caption="Press Upload button to program the WisBlock Kit 1 using RAK4631"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-4\wisblock-kit1-device\arduino29_4.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino29_4.png"
   width="80%"
   caption="Successful code Uploading"
 />
@@ -1024,7 +1024,7 @@ On the other hand, if the error is related to the difficulty of uploading the FW
 With the LoRaButton code successfully uploaded, you can now try to press the button on your device that you have set up earlier.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\lorabutton\lorabutton-1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/lorabutton/lorabutton-1.png"
   width="60%"
   caption="Connecting Push Button with RAK5005-O WisBlock Base"
 />
@@ -1032,7 +1032,7 @@ With the LoRaButton code successfully uploaded, you can now try to press the but
 Then check again your **The Things Stack** account and go to **Applications** > `<name of your application>` > **Live Data**. Wait for the uplink LoRaWAN payload every time you will press the button.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\starter-kit\lorabutton\ttn_output.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/lorabutton/ttn_output.png"
   width="80%"
   caption="Successful WisBlock Kit 1 onboarding using The Things Stack"
 />

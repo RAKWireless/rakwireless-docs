@@ -44,37 +44,37 @@ Welcome to the Developer Gateways Firmware Catalog. Download the latest firmware
 2. Download the [balenaEtcher](https://www.balena.io/etcher/) software. There are options for Windows, macOS, and Linux. Clicking the **Download** button will provide you with the software directly, no installation is required.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/developer-gateways/firmware-burning/1.png"
-  width="60%"
+  src="/assets/images/knowledge-hub/learn/developer-gateways/firmware-burning/1.png"
+  width="80%"
   caption="balenaEtcher Download Page"
 />
 
 3. Open balenaEtcher and click **Flash from file**. Here, you need to select the file that will be flashed on the SD card. Note that the software allows the user to **Flash from URL** and **Clone drive** as well, but in this tutorial, only the **Flash from file** function will be demonstrated.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/developer-gateways/firmware-burning/2.png"
-  width="60%"
+  src="/assets/images/knowledge-hub/learn/developer-gateways/firmware-burning/2.png"
+  width="80%"
   caption="balenaEtcher Main Screen"
 />
 
 4. By clicking on the **Select target** button, you will have the option to choose the SD card that you want to flash.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/developer-gateways/firmware-burning/3.png"
-  width="60%"
+  src="/assets/images/knowledge-hub/learn/developer-gateways/firmware-burning/3.png"
+  width="80%"
   caption="Image and target selected"
 />
 
 5. Click the **Flash** button to finalize the procedure. Wait until the flashing and validating processes are done. When both are completed, your SD card is flashed and ready to use.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/developer-gateways/firmware-burning/4.png"
-  width="60%"
+  src="/assets/images/knowledge-hub/learn/developer-gateways/firmware-burning/4.png"
+  width="80%"
   caption="Flashing"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/developer-gateways/firmware-burning/5.png"
-  width="60%"
+  src="/assets/images/knowledge-hub/learn/developer-gateways/firmware-burning/5.png"
+  width="80%"
   caption="Validating"
 />

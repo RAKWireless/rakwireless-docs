@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/5v-to-3.3v-bridge/interfacing-3.3v-to-5v.png
+rak_img: /assets/images/knowledge-hub/learn/5v-to-3.3v-bridge/interfacing-3.3v-to-5v.png
 rak_desc: A brief guide on how to simulate the Rx/Tx between 5-V and 3.3-V machines.
 tags:
   - Tutorial
@@ -31,7 +31,7 @@ The 80C85 CPU running on this laptop is a cousin of 8080, and by extension of th
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/5v-to-3.3v-bridge/DB25_Connector.jpg"
+  src="/assets/images/knowledge-hub/learn/5v-to-3.3v-bridge/DB25_Connector.jpg"
   width="70%"
   caption="DB25 connector"
 />
@@ -44,7 +44,7 @@ Now comes the real challenge: **building a dongle**. Most modern IoT machines, e
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/5v-to-3.3v-bridge/Level_Shifter.png"
+  src="/assets/images/knowledge-hub/learn/5v-to-3.3v-bridge/Level_Shifter.png"
   width="50%"
   caption="Level shifter"
 />
@@ -64,21 +64,21 @@ The level shifter is actually small enough to fit snugly inside the connector's 
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/5v-to-3.3v-bridge/Voltage_Shifter.jpg"
+  src="/assets/images/knowledge-hub/learn/5v-to-3.3v-bridge/Voltage_Shifter.jpg"
   width="70%"
   caption="Voltage shifter"
 />
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/5v-to-3.3v-bridge/Bastwan.jpg"
+  src="/assets/images/knowledge-hub/learn/5v-to-3.3v-bridge/Bastwan.jpg"
   width="70%"
   caption="BastWAN"
 />
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/5v-to-3.3v-bridge/Mega_Serial1.jpg"
+  src="/assets/images/knowledge-hub/learn/5v-to-3.3v-bridge/Mega_Serial1.jpg"
   width="70%"
   caption="Mega Serial1"
 />
@@ -130,13 +130,13 @@ void loop() {
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/5v-to-3.3v-bridge/Mega_Screenshot.png"
+  src="/assets/images/knowledge-hub/learn/5v-to-3.3v-bridge/Mega_Screenshot.png"
   width="60%"
   caption="Successful connection"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/5v-to-3.3v-bridge/Bastwan_Screenshot.png"
+  src="/assets/images/knowledge-hub/learn/5v-to-3.3v-bridge/Bastwan_Screenshot.png"
   width="60%"
   caption="Successful connection"
 />

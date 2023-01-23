@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/kit4-qubitro.png
+rak_img: /assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/kit4-qubitro.png
 rak_desc: This guide provides a step-by-step tutorial on how to use your WisBlock Kit 4 and RAK Edge Gateway to connect it with TTN v3 and Qubitro.
 tags:
   - User-Manual
@@ -42,8 +42,8 @@ If you are new to LoRaWAN, here are a few good references about LoRaWAN and gate
 
 - [LoRaWAN 101](https://news.rakwireless.com/lorawan-r-101-all-you-need-to-know/)
 - [What is a LoRaWAN Gateway?](https://news.rakwireless.com/what-is-a-lorawan-gateway/)
-- [How do LoRaWAN® Gateways work?](https://news.rakwireless.com/how-do-lorawan-gateways-work/)
-- [Things to Consider When Picking A LoRaWAN® Gateway](https://news.rakwireless.com/things-to-consider-when-picking-a-lorawan-gateway/)
+- [How do LoRaWAN Gateways work?](https://news.rakwireless.com/how-do-lorawan-gateways-work/)
+- [Things to Consider When Picking A LoRaWAN Gateway](https://news.rakwireless.com/things-to-consider-when-picking-a-lorawan-gateway/)
 
 LoRaWAN gateway models like WisGate Edge have built-in network servers. It is also common that the LoRaWAN network server is external or in the cloud. The popular LoRaWAN network server in the cloud that you can use for free (but offers enterprise service, too) is TTN.
 :::
@@ -117,7 +117,7 @@ This section shows how to connect the RAK7268 WisGate Edge Lite 2 to TTNv3.
 1.  If you don’t have a [TTN account]((https://www.thethingsnetwork.org/)), create an account first. Click the **Sign up** button, then log in.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-1.png"
   width="100%"
   caption="TTN V3 website"
 />
@@ -125,13 +125,13 @@ This section shows how to connect the RAK7268 WisGate Edge Lite 2 to TTNv3.
 2.  Make sure first you are in the right [TTN cluster](https://eu1.cloud.thethings.network/console). Use your **The Things ID** credentials to log in. In this example, choose **Europe 1**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-2.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-2.png"
   width="100%"
   caption="Login website for TTN"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-2b.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-2b.png"
   width="100%"
   caption="Choose Europe 1"
 />
@@ -140,7 +140,7 @@ This section shows how to connect the RAK7268 WisGate Edge Lite 2 to TTNv3.
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-3.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-3.png"
   width="100%"
   caption="Gateway console in TTN V3"
 />
@@ -168,13 +168,13 @@ This section shows how to connect the RAK7268 WisGate Edge Lite 2 to TTNv3.
   :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-edge-gateway-discovery-kit/starter-kit/ttnv3-setup/TTNV3-4-a.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-discovery-kit/starter-kit/ttnv3-setup/TTNV3-4-a.png"
   width="60%"
   caption="Filling information to add gateway in TTN V3"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-4-b.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/ttnv3-setup/TTNV3-4-b.png"
   width="50%"
   caption="Clicking the create gateway in TTN V3"
 />
@@ -183,7 +183,7 @@ This section shows how to connect the RAK7268 WisGate Edge Lite 2 to TTNv3.
 5. TTNv3 supports TLS server authentication and Client token, which requires a trust file and a key file to configure the gateway and successfully connect it to the network. Generating the token for the gateway is the next step in this guide. To generate a key file, from the **Overview page** of the registered gateway, navigate to **API keys**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-edge-gateway-discovery-kit/starter-kit/ttnv3-setup/TTNV3-6.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-discovery-kit/starter-kit/ttnv3-setup/TTNV3-6.png"
   width="100%"
   caption="Overview page"
 />
@@ -191,7 +191,7 @@ This section shows how to connect the RAK7268 WisGate Edge Lite 2 to TTNv3.
 6.  On the **API keys page**, choose **+ Add API key**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-edge-gateway-discovery-kit/starter-kit/ttn/6.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-discovery-kit/starter-kit/ttn/6.png"
   width="100%"
   caption="API key page"
 />
@@ -199,7 +199,7 @@ This section shows how to connect the RAK7268 WisGate Edge Lite 2 to TTNv3.
 7. In the **Name field**, type the name of your key (for example - *mykey*). Choose **Grant individual rights** and select **Link as Gateway to a Gateway for traffic exchange, i.e. read uplink and write downlink**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-edge-gateway-discovery-kit/starter-kit/ttn/7.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-discovery-kit/starter-kit/ttn/7.png"
   width="100%"
   caption="Generating an API key"
 />
@@ -217,13 +217,13 @@ Copy the key and save it in a `.txt` file (or other), because you won’t be abl
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-edge-gateway-discovery-kit/starter-kit/ttn/8-copy.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-discovery-kit/starter-kit/ttn/8-copy.png"
   width="80%"
   caption="Copying the generated API key"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-edge-gateway-discovery-kit/starter-kit/ttnv3-setup/TTNV3-8.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-discovery-kit/starter-kit/ttnv3-setup/TTNV3-8.png"
   width="80%"
   caption="Copying the generated key in a txt file"
 />
@@ -231,7 +231,7 @@ Copy the key and save it in a `.txt` file (or other), because you won’t be abl
 9.  Click **I have copied the key** to proceed.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-edge-gateway-discovery-kit/starter-kit/ttn/8-labeled.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-discovery-kit/starter-kit/ttn/8-labeled.png"
   width="80%"
   caption="Generating an API key"
 />
@@ -280,7 +280,7 @@ Replace **YOUR_API_KEY** with the key generated previously. Have in mind that th
 You can now see that your gateway is connected to TTNv3 as Basics Station:
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-edge-gateway-discovery-kit/starter-kit/ttnv3-setup/TTNV3-5.png"
+  src="/assets/images/knowledge-hub/learn/rak-edge-gateway-discovery-kit/starter-kit/ttnv3-setup/TTNV3-5.png"
   width="100%"
   caption="Successful creation and connection of gateway in TTN V3"
 />
@@ -292,7 +292,7 @@ You can now see that your gateway is connected to TTNv3 as Basics Station:
 1. Now that you are logged in to the platform, the next step is to create an application. In your console, click **Create an application**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/RAK4631-ttnv3-setup/RAK4631-TTNV3-1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/RAK4631-ttnv3-setup/RAK4631-TTNV3-1.png"
   width="100%"
   caption="Create an Application"
 />
@@ -301,7 +301,7 @@ You can now see that your gateway is connected to TTNv3 as Basics Station:
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/RAK4631-ttnv3-setup/RAK4631-TTNV3-2.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/RAK4631-ttnv3-setup/RAK4631-TTNV3-2.png"
   width="100%"
   caption="Creating an application"
 />
@@ -311,7 +311,7 @@ You can now see that your gateway is connected to TTNv3 as Basics Station:
 LoRaWAN specification enforces that each end-device has to be personalized and activated. There are two options for registering devices depending on the activation mode you select. Activation can be done either via Over-The-Air-Activation (OTAA) or Activation-By-Personalization (ABP). Click **+ Add end device**, as shown in **Figure 21**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/RAK4631-ttnv3-setup/RAK4631-TTNV3-3.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/RAK4631-ttnv3-setup/RAK4631-TTNV3-3.png"
   width="100%"
   caption="Add end-devices to your TTN application"
 />
@@ -319,7 +319,7 @@ LoRaWAN specification enforces that each end-device has to be personalized and a
 4. To register the module, click **Manually** first.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/RAK4631-ttnv3-setup/RAK4631-TTNV3-4.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/RAK4631-ttnv3-setup/RAK4631-TTNV3-4.png"
   width="100%"
   caption="Adding end devices manually"
 />
@@ -327,7 +327,7 @@ LoRaWAN specification enforces that each end-device has to be personalized and a
 5. Choose the following configurations in adding the end devices.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/RAK4631-ttnv3-setup/RAK4631-TTNV3-5.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/RAK4631-ttnv3-setup/RAK4631-TTNV3-5.png"
   width="100%"
   caption="Configurations for adding end devices"
 />
@@ -335,7 +335,7 @@ LoRaWAN specification enforces that each end-device has to be personalized and a
 6.  Click **Show advanced activation, LoRaWAN class, and cluster settings**, then select **Over the air action** (OTAA).
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/RAK4631-ttnv3-setup/RAK4631-TTNV3-6.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/RAK4631-ttnv3-setup/RAK4631-TTNV3-6.png"
   width="100%"
   caption="OTAA settings"
 />
@@ -343,7 +343,7 @@ LoRaWAN specification enforces that each end-device has to be personalized and a
 7. Then input a unique End device ID and EUIs (DevEUI and AppEUI), as shown in **Figure 25**. Check if the sticker on the **RAK4631** module has a **DevEUI** or a **QR code** that you can scan, then use this as the device unique DevEUI. For **AppEUI**, use **00 00 00 00 00 00 00 01** instead of **Fill with Zeros** button (there are LoRa modules that do not support all zero APPEUI). For the **AppKey**, you can click the **Generate** button. Finally, click **Register End Device**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/RAK4631-ttnv3-setup/RAK4631-TTNV3-7.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/RAK4631-ttnv3-setup/RAK4631-TTNV3-7.png"
   width="100%"
   caption="Registering the End Device"
 />
@@ -351,7 +351,7 @@ LoRaWAN specification enforces that each end-device has to be personalized and a
 8. You should now be able to see the device on the TTN console after you fully register your device, as shown in **Figure 26**. Take note of these keys, such as the **AppEUI**, **DevEUI**, and the **AppKey**, as they are needed in the next part of this guide.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/RAK4631-ttnv3-setup/RAK4631-TTNV3-8.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/RAK4631-ttnv3-setup/RAK4631-TTNV3-8.png"
   width="100%"
   caption="OTAA device successfully registered to TTN"
 />
@@ -485,25 +485,25 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit1-device/arduino1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino1.png"
   width="100%"
   caption="Downloading the Arduino IDE"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit1-device/arduino2.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino2.png"
   width="100%"
   caption="Just download the IDE without any cost"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit1-device/arduino3.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino3.png"
   width="50%"
   caption="Installing the Arduino IDE"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit1-device/arduino4.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino4.png"
   width="50%"
   caption="Completing the installation of Arduino IDE"
 />
@@ -513,13 +513,13 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 3. Click on **File** > **Preferences**. In the **Preferences** window, look for **Additional Boards Manager URLs**, then click the icon on the right side.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit1-device/arduino6.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino6.png"
   width="100%"
   caption="Preferences setup"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit1-device/arduino7.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino7.png"
   width="100%"
   caption="Preferences window"
 />
@@ -527,13 +527,13 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 4. Copy `https://raw.githubusercontent.com/RAKwireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless_index.json`, paste it into the new window, then click **OK** > **OK**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit1-device/arduino8.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino8.png"
   width="100%"
   caption="RAKwireless BSP support for the Arduino Board Manager setup"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit1-device/arduino9.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino9.png"
   width="100%"
   caption="Completing the setup of RAKwireless BSP support for the Arduino board manager"
 />
@@ -541,14 +541,14 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 5. Go to **Tools** > **Board: "Arduino Uno"** > **Boards Manager**. Type **RAK** in the search bar and the RAKwireless Core modules will be shown in the window.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit1-device/arduino10.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino10.png"
   width="100%"
   caption="Boards manager"
 />
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit1-device/arduino11.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino11.png"
   width="100%"
   caption="Installing RAKwireless nRF boards"
 />
@@ -556,7 +556,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 6. Choose **RAKwireless nRF Boards**, then **Install**. After installing the core nRF core module, click **Close**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit1-device/arduino12.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/arduino12.png"
   width="100%"
   caption="Successful installation of RAKwireless nRF boards"
 />
@@ -565,7 +565,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 7. After the installation of the RAKwireless nRF Board core module, you can get the program by navigating on the example code, as shown in **Figure 46**. Open it on the Arduino IDE, and save it as `Environment_Monitoring.ino`.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/environment/arduino_goto.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/environment/arduino_goto.png"
   width="100%"
   caption="Getting the Arduino code from the examples section"
 />
@@ -573,7 +573,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 8. Once the example code is open, install the [Adafruit BME680](https://github.com/adafruit/Adafruit_BME680) library, **SX126x Arduino** library, and the **U8g2lib** Library, by clicking the links highlighted in red. You will be directed to `Arduino Library Manager` for each link you will be clicking.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/environment/arduino_dl_lib.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/environment/arduino_dl_lib.png"
   width="100%"
   caption="Install the needed library"
 />
@@ -802,7 +802,7 @@ This section will guide you on how to integrate your application using Qubitro.
 1.  Go to [Qubitro Portal](https://portal.qubitro.com/) and create your account.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/1.qubitro-acc.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/1.qubitro-acc.png"
   width="100%"
   caption="Creating Qubitro account"
 />
@@ -810,7 +810,7 @@ This section will guide you on how to integrate your application using Qubitro.
 2.  Login into your **Qubitro account**. Click **New Project**, then fill out your desired **Project Name** as well as the **Project Description**, then click **Create**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/2.new-project.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/2.new-project.png"
   width="100%"
   caption="Create new project"
 />
@@ -818,7 +818,7 @@ This section will guide you on how to integrate your application using Qubitro.
 3.  Then click **Add source**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/3.add-source.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/3.add-source.png"
   width="100%"
   caption="Adding source"
 />
@@ -826,7 +826,7 @@ This section will guide you on how to integrate your application using Qubitro.
 4.  Choose **The Things Stack**, then click **Continue**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/4.the-things-stack.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/4.the-things-stack.png"
   width="100%"
   caption="Adding source"
 />
@@ -834,14 +834,14 @@ This section will guide you on how to integrate your application using Qubitro.
 5. For the **Connection**, copy and paste the **Project ID** and **Webhook signing key** to notepad. These credentials will be used in the later part, then click **Done**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/5.credentials.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/5.credentials.png"
   width="100%"
   caption="Copying the credentials"
 />
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/6.devices.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/6.devices.png"
   width="100%"
   caption="No device connected yet"
 />
@@ -849,7 +849,7 @@ This section will guide you on how to integrate your application using Qubitro.
 6. Head on to the **TTN Application console** to add the **Webhook** to it.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/7.applications.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/7.applications.png"
   width="50%"
   caption="Going back to Applications at TTN"
 />
@@ -857,13 +857,13 @@ This section will guide you on how to integrate your application using Qubitro.
 7.  Click your device then go to **Integrations** > **Webhooks** > **Add webhook**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/8.select-a-device.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/8.select-a-device.png"
   width="100%"
   caption="Selecting a device"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/9.add-webhook.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/9.add-webhook.png"
   width="100%"
   caption="Adding Webhook"
 />
@@ -871,13 +871,13 @@ This section will guide you on how to integrate your application using Qubitro.
 8. Choose **Qubitro** as your webhook template.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/10.choose-qubitro.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/10.choose-qubitro.png"
   width="100%"
   caption="Qubitro"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/11.webhook-setup.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/11.webhook-setup.png"
   width="100%"
   caption="Setup webhook for Qubitro"
 />
@@ -890,13 +890,13 @@ This section will guide you on how to integrate your application using Qubitro.
 Then click **Create Qubitro webhook**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/12.create-webhook.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/12.create-webhook.png"
   width="100%"
   caption="Creating Qubitro webhook"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/13.added-a-webhook.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/13.added-a-webhook.png"
   width="100%"
   caption="Added a Qubitro webhook"
 />
@@ -904,7 +904,7 @@ Then click **Create Qubitro webhook**.
 10. After creating your webhook, go back to your **Qubitro** platform to check the changes made.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/14.device-connection.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/14.device-connection.png"
   width="100%"
   caption="No device connected yet"
 />
@@ -912,13 +912,13 @@ Then click **Create Qubitro webhook**.
 11. Refresh the **Qubitro** platform and the newly-added device is now included in the platform.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/15.added-device.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/15.added-device.png"
   width="100%"
   caption="Device successfully included in Qubitro"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/16.device-overview.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/16.device-overview.png"
   width="100%"
   caption="Device overview"
 />
@@ -926,7 +926,7 @@ Then click **Create Qubitro webhook**.
 12. Click **Formatter** to include the decoder for **Temperature** and **Humidity** as an example of showing these measurements on the platform.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/17.qubitro-formatter.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/17.qubitro-formatter.png"
   width="100%"
   caption="Formatter in Qubitro"
 />
@@ -950,7 +950,7 @@ function decodeUplink(input) {
 14. Click the **Data** tab. It should show the latest data by clicking the **Refresh** button.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/18.data-tab.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/18.data-tab.png"
   width="100%"
   caption="Data tab"
 />
@@ -958,13 +958,13 @@ function decodeUplink(input) {
 15. Once done, click **Analytics**, then click **+ Add chart** to add the graph for **Temperature** and **Humidity**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/19.add-chart.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/19.add-chart.png"
   width="100%"
   caption="Adding a chart"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/20.chart-preview.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/20.chart-preview.png"
   width="100%"
   caption="Chart preview"
 />
@@ -972,13 +972,13 @@ function decodeUplink(input) {
 16. Once done, tick both temperature and humidity, and choose **Line** under them. You may use **Environment Monitoring** as your **Chart name**, then click **Create chart**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/21.chart.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/21.chart.png"
   width="80%"
   caption="Chart creation"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/22.environment-analytics.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/22.environment-analytics.png"
   width="100%"
   caption="Environment monitoring analytics"
 />
@@ -986,7 +986,7 @@ function decodeUplink(input) {
 17. Then there you have it, the **Environment Monitoring graph** for **Temperature** and **Humidity**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/rak-developer-kit/kit-4/wisblock-kit4-qubitro/23.environment-graph.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-qubitro/23.environment-graph.png"
   width="100%"
   caption="Environment monitoring graph"
 />

@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/build-a-door-open-counter-and-alarm-sensor-with-wisblock/door-open-counter-and-alarm-sensor-banner.jpg
+rak_img: /assets/images/knowledge-hub/learn/build-a-door-open-counter-and-alarm-sensor-with-wisblock/door-open-counter-and-alarm-sensor-banner.jpg
 rak_desc: This guide provides a step-by-step tutorial on how to build a door-open counter and alarm with the WisBlock RAK12027.
 tags:
   - Tutorial
@@ -39,7 +39,7 @@ Here we will use this feature to create a door (or window) open/close detector. 
 
 <center>
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\build-a-door-open-counter-and-alarm-sensor-with-wisblock\sensor-plate-2.jpg"
+  src="/assets/images/knowledge-hub/learn/build-a-door-open-counter-and-alarm-sensor-with-wisblock/sensor-plate-2.jpg"
   width="60%"
   caption="Door sensor"
 />
@@ -53,7 +53,7 @@ The RAK13011 module fits into a sensor slot, but due to its size, it occupies tw
 
 <center>
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\build-a-door-open-counter-and-alarm-sensor-with-wisblock\module-and-reed-magnet.jpg"
+  src="/assets/images/knowledge-hub/learn/build-a-door-open-counter-and-alarm-sensor-with-wisblock/module-and-reed-magnet.jpg"
   width="60%"
   caption="RAK13011"
 />
@@ -109,7 +109,7 @@ When used as a window or door sensor, there are two options to deploy the sensor
 2) Take the reed relay out of the encapsulated part (or just buy a separate reed relay) and put the WisBlock modules, the battery, and the reed relay into a small custom enclosure.
 
 For this tutorial, I chose the second option:
-| <rk-img src="\assets\images\knowledge-hub\tutorials\build-a-door-open-counter-and-alarm-sensor-with-wisblock\sensor-open.jpg" caption="RAK13011"/> | <rk-img src="\assets\images\knowledge-hub\tutorials\build-a-door-open-counter-and-alarm-sensor-with-wisblock\sensor-place-1.jpg" caption="RAK13011"/> |
+| <rk-img src="/assets/images/knowledge-hub/learn/build-a-door-open-counter-and-alarm-sensor-with-wisblock/sensor-open.jpg" caption="RAK13011"/> | <rk-img src="/assets/images/knowledge-hub/learn/build-a-door-open-counter-and-alarm-sensor-with-wisblock/sensor-place-1.jpg" caption="RAK13011"/> |
 | -------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ----
@@ -283,7 +283,7 @@ The battery values and the door events are stored in the Datacake fields. The do
 In the dashboard, you can show the current status of the door/window. In the latest code, I added a temperature and humidity sensor, so these values are shown as well (only when using the open-source Arduino BSP).
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\build-a-door-open-counter-and-alarm-sensor-with-wisblock\datacake.png"
+  src="/assets/images/knowledge-hub/learn/build-a-door-open-counter-and-alarm-sensor-with-wisblock/datacake.png"
   width="100%"
   caption="Window/Door switch Datacake dashboard"
 />

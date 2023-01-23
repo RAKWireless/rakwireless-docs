@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/wisblock-edgeimpulse.jpg
+rak_img: /assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/wisblock-edgeimpulse.jpg
 rak_desc: This tutorial will show you how to set up and connect your WisBlock to Edge Impulse, which includes but is not limited to RAK11310, RAK4631, and RAK11200.
 tags:
   - Tutorial
@@ -28,7 +28,7 @@ next: ../RAK4631-Edge-Impulse-Guide/
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11310/rak11300.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11310/rak11300.png"
   width="40%"
   caption="RAK11310 (RP2040) BootSel button"
 />
@@ -37,7 +37,7 @@ next: ../RAK4631-Edge-Impulse-Guide/
 4. Drag and drop the `.uf2` file to the **RPI-RP2** USB Mass Storage.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11310/firmware-update.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11310/firmware-update.png"
   width="90%"
   caption="Firmware update process for RAK11310"
 />
@@ -67,7 +67,7 @@ After running the command, your WisBlock is now connected to Edge Impulse. To ve
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11310/devices.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11310/devices.png"
   width="100%"
   caption="Registered devices"
 />
@@ -79,13 +79,13 @@ Now that you have successfully set up the connection, you can now build your fir
 For this, you need to connect supported WisBlock sensors to your board. In this case, a **PDM microphone** or a **3-axis accelerometer**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11310/pdm.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11310/pdm.png"
   width="50%"
   caption="PDM microphone"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11310/3-axis.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11310/3-axis.png"
   width="50%"
   caption="3-axis accelerometer"
 />
@@ -93,13 +93,13 @@ For this, you need to connect supported WisBlock sensors to your board. In this 
 Collecting your first data:
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11310/pdm-selected.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11310/pdm-selected.png"
   width="60%"
   caption="PDM microphone selected"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11310/3-axis-selected.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11310/3-axis-selected.png"
   width="60%"
   caption="3-axis accelerometer selected"
 />
@@ -109,14 +109,14 @@ Define the **label** and the **sample length** of your data, and click **Start s
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11310/imu-data.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11310/imu-data.png"
   width="70%"
   caption="Data from the IMU"
 />
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11310/mic-data.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11310/mic-data.png"
   width="70%"
   caption="Data from the microphone"
 />
@@ -145,7 +145,7 @@ On your Edge Impulse project, navigate to the **Deployment** tab on the left men
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11310/library.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11310/library.png"
   width="70%"
   caption="C++ library"
 />
@@ -155,21 +155,21 @@ Edge Impulse offers an optimization tool that can help you increase on-device pe
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11310/model-optimization.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11310/model-optimization.png"
   width="80%"
   caption="EON compiler option for model optimization"
 />
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11310/save.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11310/save.png"
   width="65%"
   caption="Save the project"
 />
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11310/build.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11310/build.png"
   width="65%"
   caption="Building the Arduino library"
 />
@@ -179,7 +179,7 @@ Edge Impulse offers an optimization tool that can help you increase on-device pe
 Download the `.zip` library and save it to your preferred location, then unzip it.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11310/unzip.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11310/unzip.png"
   width="65%"
   caption="Unzipping the library"
 />
@@ -203,13 +203,13 @@ Tested with the GNU Arm Embedded Toolchain version 10.3.1.
 Replace the edge-impulse-sdk, model-parameters, and tflite-model folders from the project with the new ones in the trained model library.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11310/delete.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11310/delete.png"
   width="80%"
   caption="Delete the three (3) old folders"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11310/copy-paste.jpg"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11310/copy-paste.jpg"
   width="80%"
   caption="Copy and paste the trained model folders"
 />
@@ -263,7 +263,7 @@ edge-impulse-run-impulse --continuous
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11310/terminal.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11310/terminal.png"
   width="70%"
   caption="Continuous inference results"
 />

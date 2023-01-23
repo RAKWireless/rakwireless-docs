@@ -56,7 +56,7 @@ In the MQTT Integration, the ThingsBoard acts as an MQTT client.
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/1.login-page.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/1.login-page.png"
   width="50%"
   caption="ThingsBoard login page"
 />
@@ -64,7 +64,7 @@ In the MQTT Integration, the ThingsBoard acts as an MQTT client.
 2. After a successful login, you will see the ThingsBoard Overview page.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/2.overview-page.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/2.overview-page.png"
   width="100%"
   caption="ThingsBoard Overview page"
 />
@@ -73,23 +73,23 @@ In the MQTT Integration, the ThingsBoard acts as an MQTT client.
 3. The first thing you need is a data converter for the uplinks. To create one, head to the **Data converters** menu.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/3.overview-page.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/3.overview-page.png"
   width="100%"
   caption="Data converters"
 />
 
 
-4. To add a data converter, click the **Add Data Converter** icon ![add-data.png](/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/add-data.png) and choose to **Create new converter**.
+4. To add a data converter, click the **Add Data Converter** icon ![add-data.png](/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/add-data.png) and choose to **Create new converter**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/4.create-new-converter.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/4.create-new-converter.png"
   width="40%"
   caption="Adding a new converter"
 />
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/5.uplink-data-converter.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/5.uplink-data-converter.png"
   width="70%"
   caption="Adding an uplink data converter"
 />
@@ -139,16 +139,16 @@ return result;
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/6.integration.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/6.integration.png"
   width="100%"
   caption="Integration menu"
 />
 
 
-8. Click the **Add Integration** ![add-data.png](/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/add-data.png) button to add one.
+8. Click the **Add Integration** ![add-data.png](/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/add-data.png) button to add one.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/7.integration.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/7.integration.png"
   width="70%"
   caption="Add integration"
 />
@@ -163,7 +163,7 @@ Selecting the type of integration pops up settings for the specified type.
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/8.mqtt-integration.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/8.mqtt-integration.png"
   width="70%"
   caption="MQTT integration settings"
 />
@@ -197,7 +197,7 @@ Where **application_ID**, **device_EUI**, and **mcast_ID** are the ID of the app
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/9.mqtt-integration-example.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/9.mqtt-integration-example.png"
   width="70%"
   caption="MQTT integration example"
 />
@@ -215,7 +215,7 @@ You need to change the values in the topics in the ThingsBoard. For example, `ap
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/10.wisgateos2-login-page.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/10.wisgateos2-login-page.png"
   width="100%"
   caption="WisGateOS V2 login page"
 />
@@ -223,7 +223,7 @@ You need to change the values in the topics in the ThingsBoard. For example, `ap
 2. Once you log in, head to the **LoRa** menu.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/11.lora-page.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/11.lora-page.png"
   width="100%"
   caption="LoRa page"
 />
@@ -234,7 +234,7 @@ You need to change the values in the topics in the ThingsBoard. For example, `ap
 Once the gateway is in Built-in network server mode, head to the **Applications** tab.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/12.app-page.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/12.app-page.png"
   width="100%"
   caption="Application page"
 />
@@ -247,7 +247,7 @@ Once the gateway is in Built-in network server mode, head to the **Applications*
     - **Unified Application key** – all devices will use the same application key. Selecting this option pops up an Application Key field. You can type your application key there or use the Autogenerate button to generate one.
 
         <rk-img
-        src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/13.unified-app-key.png"
+        src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/13.unified-app-key.png"
         width="50%"
         caption="Unified Application key"
         />
@@ -257,7 +257,7 @@ Once the gateway is in Built-in network server mode, head to the **Applications*
         The **Auto Add Device** switch pops up an Application EUI field. The device will be automatically added to the application after application EUI and key verification.
 
         <rk-img
-        src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/14.auto-add-device.png"
+        src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/14.auto-add-device.png"
         width="50%"
         caption="Auto Add Device"
         />
@@ -270,7 +270,7 @@ Once the gateway is in Built-in network server mode, head to the **Applications*
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/15.adding-application.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/15.adding-application.png"
   width="100%"
   caption="Adding Application"
 />
@@ -279,7 +279,7 @@ Once the gateway is in Built-in network server mode, head to the **Applications*
 6. After the application is added, head to the End devices tab. If you are using the **Auto Add Device** feature, the devices should automatically register upon join request.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/16.end-device.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/16.end-device.png"
   width="100%"
   caption="Added end device"
 />
@@ -289,7 +289,7 @@ Once the gateway is in Built-in network server mode, head to the **Applications*
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/17.abp-device.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/17.abp-device.png"
   width="50%"
   caption="Adding ABP device"
 />
@@ -304,7 +304,7 @@ Once the gateway is in Built-in network server mode, head to the **Applications*
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/18.application.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/18.application.png"
   width="100%"
   caption="Created application"
 />
@@ -312,7 +312,7 @@ Once the gateway is in Built-in network server mode, head to the **Applications*
 8. Once everything is set, click **Add end devices** to go the page to add the device.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/19.add-end-device.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/19.add-end-device.png"
   width="100%"
   caption="Adding end device"
 />
@@ -327,7 +327,7 @@ Once the gateway is in Built-in network server mode, head to the **Applications*
 10. Once the device is added to the **End devices list**, click **Add end devices** to add the device. Confirm you are adding the device.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/20.confirm-message.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/20.confirm-message.png"
   width="50%"
   caption="Add device confirm message"
 />
@@ -341,7 +341,7 @@ You will be redirected to the **End devices** page, where the device is added.
 2. Turn on the integration by clicking **Enable Integration Interface switch**. By default, the **Integration mode** is **Generic MQTT**. If that is not the case, select the **Generic MQTT** as the integration mode.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/21.mqtt-mode.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/21.mqtt-mode.png"
   width="100%"
   caption="Generic MQTT mode"
 />
@@ -351,7 +351,7 @@ You will be redirected to the **End devices** page, where the device is added.
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/22.successful-mqtt.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/22.successful-mqtt.png"
   width="100%"
   caption="Successful MQTT Integration"
 />
@@ -385,7 +385,7 @@ Where **application_ID**, **device_EUI**, and **mcast_ID** are the ID of the app
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/23.local-broker-example.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/23.local-broker-example.png"
   width="70%"
   caption="Local broker example"
 />
@@ -401,7 +401,7 @@ To configure the gateway, follow the steps on the [Configure the Gateway](#confi
 2. Turn on the integration by clicking **Enable Integration Interface** switch. By default, the **Integration** mode is **Generic MQTT**. If that is not the case, select it manually.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/24.generic-mqtt-mode.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/24.generic-mqtt-mode.png"
   width="100%"
   caption="Generic MQTT mode"
 />
@@ -410,7 +410,7 @@ To configure the gateway, follow the steps on the [Configure the Gateway](#confi
 4. After your device joins and sends uplink data, you can see it in **ThingsBoard** -> **Integrations** -> **Your Integration** -> **Events**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/25.mqtt-integration.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/25.mqtt-integration.png"
   width="100%"
   caption="Successful MQTT Integration"
 />
@@ -428,7 +428,7 @@ The built-in network server provides HTTP integration. The HTTP integration conv
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/26.login-page.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/26.login-page.png"
   width="50%"
   caption="ThingsBoard login page"
 />
@@ -436,7 +436,7 @@ The built-in network server provides HTTP integration. The HTTP integration conv
 2. After a successful login, you will see the ThingsBoard Overview page.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/27.overview-page.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/27.overview-page.png"
   width="100%"
   caption="ThingsBoard Overview page"
 />
@@ -445,7 +445,7 @@ The built-in network server provides HTTP integration. The HTTP integration conv
 3. The first thing you need is a data converter for the uplinks. To create one, head to the **Data converters** menu.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/28.overview-page.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/28.overview-page.png"
   width="100%"
   caption="Data converters"
 />
@@ -454,13 +454,13 @@ The built-in network server provides HTTP integration. The HTTP integration conv
 4. To add a data converter, click the **Add Data Converter** icon (<font-awesome-icon icon="fa-solid fa-plus" />) and choose to **Create new converter**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/29.create-new-converter.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/29.create-new-converter.png"
   width="40%"
   caption="Adding a new converter"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/30.uplink-data-converter.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/30.uplink-data-converter.png"
   width="70%"
   caption="Adding an uplink data converter"
 />
@@ -515,16 +515,16 @@ return result;
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/31.integration.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/31.integration.png"
   width="100%"
   caption="Integration menu"
 />
 
 
-8. Click the **Add Integration** ![add-data.png](/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/add-data.png) button to add one.
+8. Click the **Add Integration** ![add-data.png](/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/add-data.png) button to add one.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/32.integration.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/32.integration.png"
   width="70%"
   caption="Add integration"
 />
@@ -539,7 +539,7 @@ Selecting the type of integration pops up settings for the specified type.
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/33.http-integration-settings.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/33.http-integration-settings.png"
   width="70%"
   caption="HTTP integration settings"
 />
@@ -563,7 +563,7 @@ To configure the gateway, follow the steps on the [Configure the Gateway](#confi
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/34.http-integration.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/34.http-integration.png"
   width="100%"
   caption="HTTP integration"
 />
@@ -581,7 +581,7 @@ To configure the gateway, follow the steps on the [Configure the Gateway](#confi
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/35.http-integration.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/35.http-integration.png"
   width="100%"
   caption="HTTP integration example"
 />
@@ -590,7 +590,7 @@ To configure the gateway, follow the steps on the [Configure the Gateway](#confi
 4. Click **Save & Apply** to save the changes. You should see the uplink messages in the **Event** log.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/36.http-integration.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/36.http-integration.png"
   width="100%"
   caption="Successful HTTP integration"
 />
@@ -604,16 +604,16 @@ In this example, the RAK7204 WisNode Sense is the device used. The method to vis
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/37.device-group.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/37.device-group.png"
   width="100%"
   caption="Device groups menu"
 />
 
-2. By default, in the **Device groups** menu, you will find only one group named **All**. Click the **Open** icon ![open-icon.png](/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/open-icon.png).
+2. By default, in the **Device groups** menu, you will find only one group named **All**. Click the **Open** icon ![open-icon.png](/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/open-icon.png).
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/38.auto-create-device.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/38.auto-create-device.png"
   width="100%"
   caption="Automatically created device"
 />
@@ -622,7 +622,7 @@ In this example, the RAK7204 WisNode Sense is the device used. The method to vis
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/39.device-data.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/39.device-data.png"
   width="100%"
   caption="Device data"
 />
@@ -630,7 +630,7 @@ In this example, the RAK7204 WisNode Sense is the device used. The method to vis
 4. To visualize the data, simply select the desired value you want to visualize and then click the **Show on widget** button. In this example, choose temperature.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/40.temp-value.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/40.temp-value.png"
   width="100%"
   caption="Visualizing temperature value"
 />
@@ -640,7 +640,7 @@ In this example, the RAK7204 WisNode Sense is the device used. The method to vis
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/41.analogue-gauge-widget.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/41.analogue-gauge-widget.png"
   width="100%"
   caption="Analogue gauge widget for temperature"
 />
@@ -648,7 +648,7 @@ In this example, the RAK7204 WisNode Sense is the device used. The method to vis
 6. After choosing a widget, click **Add to dashboard**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/42.add-widget.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/42.add-widget.png"
   width="100%"
   caption="Adding widget to dashboard"
 />
@@ -662,7 +662,7 @@ If you have not checked the **Open dashboard** option, you can easily navigate t
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/43.temp-widget.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/43.temp-widget.png"
   width="100%"
   caption="Added temperature widget"
 />
@@ -671,7 +671,7 @@ If you have not checked the **Open dashboard** option, you can easily navigate t
 9. You can do the steps above for the other data of the device. The only difference is when adding a widget. Click **Select existing dashboard** and select the already created dashboard (in this case, RAK7204).
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/wisgateos2-thingsboard/44.data-visualization.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos2-thingsboard/44.data-visualization.png"
   width="100%"
   caption="Complete data visualization of RAK7204"
 />

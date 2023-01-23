@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/fft-audio-analyzer/fft-audio-analyzer.png
+rak_img: /assets/images/knowledge-hub/learn/fft-audio-analyzer/fft-audio-analyzer.png
 rak_desc: This guide provides a step-by-step tutorial on how to create an FFT audio analyzer using WisBlock Audio.
 tags:
   - Tutorial
@@ -64,7 +64,7 @@ To put together the different modules, you just need to connect them to the resp
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/fft-audio-analyzer/mounting-sketch.png"
+  src="/assets/images/knowledge-hub/learn/fft-audio-analyzer/mounting-sketch.png"
   width="70%"
   caption="Assembling the IO to the base board"
 />
@@ -72,7 +72,7 @@ To put together the different modules, you just need to connect them to the resp
 <br>
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/fft-audio-analyzer/assembled-modules.png"
+  src="/assets/images/knowledge-hub/learn/fft-audio-analyzer/assembled-modules.png"
   width="80%"
   caption="WisBlock + PDM Microphone assembled"
 />
@@ -85,7 +85,7 @@ To put together the different modules, you just need to connect them to the resp
 2. Open the Arduino IDE, and search for the ZIP file by navigating to **Sketch** > **Include Library** > **Add .ZIP Library…**
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/fft-audio-analyzer/add-zip-lib.png"
+  src="/assets/images/knowledge-hub/learn/fft-audio-analyzer/add-zip-lib.png"
   width="80%"
   caption="Adding the library"
 />
@@ -97,7 +97,7 @@ There’s also a High Rate FFT example.
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/fft-audio-analyzer/lib-navigation.png"
+  src="/assets/images/knowledge-hub/learn/fft-audio-analyzer/lib-navigation.png"
   width="80%"
   caption="Adding PDMSerialPlotterFFT"
 />
@@ -105,7 +105,7 @@ There’s also a High Rate FFT example.
 4. Select the board you are using, connect it through the USB cable, and select the respective COM port.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/fft-audio-analyzer/select-board-port.png"
+  src="/assets/images/knowledge-hub/learn/fft-audio-analyzer/select-board-port.png"
   width="80%"
   caption="Selecting the board"
 />
@@ -113,7 +113,7 @@ There’s also a High Rate FFT example.
 5. Click **Upload**, and wait for the core to be flashed.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/fft-audio-analyzer/flash-the-core.png"
+  src="/assets/images/knowledge-hub/learn/fft-audio-analyzer/flash-the-core.png"
   width="80%"
   caption="Flashing the core"
 />
@@ -127,7 +127,7 @@ The line graph doesn’t work with Arduino IDE 2.0.
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/fft-audio-analyzer/line-graph-no-sound.png"
+  src="/assets/images/knowledge-hub/learn/fft-audio-analyzer/line-graph-no-sound.png"
   width="80%"
   caption="Line graph shows that no sound is being played"
 />
@@ -135,7 +135,7 @@ The line graph doesn’t work with Arduino IDE 2.0.
 To better see the FFT in action, use [Online Tone Generator](https://www.szynalski.com/tone-generator/) to generate pure tones of any frequency to play some notes.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/fft-audio-analyzer/line-graph-with-whistle.png"
+  src="/assets/images/knowledge-hub/learn/fft-audio-analyzer/line-graph-with-whistle.png"
   width="80%"
   caption="Line graph results with some whistling"
 />
@@ -144,7 +144,7 @@ Lastly, set the frequency to 440&nbsp;Hz. The Serial Plotter shows us a high amp
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/fft-audio-analyzer/line-graph.png"
+  src="/assets/images/knowledge-hub/learn/fft-audio-analyzer/line-graph.png"
   width="100%"
   caption="Graph showing a high amplitude spike"
 />

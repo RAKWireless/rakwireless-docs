@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/build-an-indoor-air-quality-sensor-with-wisblock/indoor-air-quality-monitor.jpg
+rak_img: /assets/images/knowledge-hub/learn/build-an-indoor-air-quality-sensor-with-wisblock/indoor-air-quality-monitor.jpg
 rak_desc: This guide provides a step-by-step tutorial on how to build an indoor air quality sensor with WisBlock modules.
 tags:
   - Tutorial
@@ -43,7 +43,7 @@ The WisBlock ecosystem now offers multiple sensors required to build an indoor a
 
 <rk-img
 
-  src="/assets/images/knowledge-hub/tutorials/build-an-indoor-air-quality-sensor-with-wisblock/rak-4-2-inch.jpg"
+  src="/assets/images/knowledge-hub/learn/build-an-indoor-air-quality-sensor-with-wisblock/rak-4-2-inch.jpg"
   width="50%"
   caption="IAQ Monitor 4.2"
 />
@@ -61,7 +61,7 @@ The second gives you the freedom to select the power supply (battery, 5&nbsp;V U
 
 <rk-img
 
-  src="/assets/images/knowledge-hub/tutorials/build-an-indoor-air-quality-sensor-with-wisblock/assembly.jpg"
+  src="/assets/images/knowledge-hub/learn/build-an-indoor-air-quality-sensor-with-wisblock/assembly.jpg"
   width="50%"
   caption="Assembly on module slots"
 />
@@ -142,7 +142,7 @@ LoRaWAN and BLE UART are handled by the WisBlock API in the background. The setu
 
 <rk-img
 
-src="/assets/images/knowledge-hub/tutorials/build-an-indoor-air-quality-sensor-with-wisblock/structure.png"
+src="/assets/images/knowledge-hub/learn/build-an-indoor-air-quality-sensor-with-wisblock/structure.png"
 width=100%
 caption="WisBlock API structure"
 />
@@ -266,7 +266,7 @@ The used sensor values are as follows:
 
 <rk-img
 
-src="/assets/images/knowledge-hub/tutorials/build-an-indoor-air-quality-sensor-with-wisblock/rak1906.png"
+src="/assets/images/knowledge-hub/learn/build-an-indoor-air-quality-sensor-with-wisblock/rak1906.png"
 width=30%
 caption="RAK1906"
 />
@@ -364,7 +364,7 @@ The last two values are used internally in the SCD30 for the calculation of the 
 
 <rk-img
 
-src="/assets/images/knowledge-hub/tutorials/build-an-indoor-air-quality-sensor-with-wisblock/rak12037.png"
+src="/assets/images/knowledge-hub/learn/build-an-indoor-air-quality-sensor-with-wisblock/rak12037.png"
 width=30%
 caption="RAK12037"
 />
@@ -439,7 +439,7 @@ The sensor returns three values:
 
 <rk-img
 
-src="/assets/images/knowledge-hub/tutorials/build-an-indoor-air-quality-sensor-with-wisblock/rak12039.png"
+src="/assets/images/knowledge-hub/learn/build-an-indoor-air-quality-sensor-with-wisblock/rak12039.png"
 width=30%
 caption="RAK12039"
 />
@@ -529,7 +529,7 @@ The algorithm needs some time to return reliable VOC indices. The first 100 calc
 
 <rk-img
 
-src="/assets/images/knowledge-hub/tutorials/build-an-indoor-air-quality-sensor-with-wisblock/rak12047.png"
+src="/assets/images/knowledge-hub/learn/build-an-indoor-air-quality-sensor-with-wisblock/rak12047.png"
 width=30% caption="RAK12047"
 />
 

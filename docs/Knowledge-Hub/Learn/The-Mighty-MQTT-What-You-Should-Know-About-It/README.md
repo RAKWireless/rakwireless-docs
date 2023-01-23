@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/the-mighty-mqtt-what-you-should-know-about-it/overview.jpg
+rak_img: /assets/images/knowledge-hub/learn/the-mighty-mqtt-what-you-should-know-about-it/overview.jpg
 rak_desc: A brief discussion about the Message Queuing Telemetry Transport (MQTT) connectivity protocol.
 tags:
   - Tutorial
@@ -29,7 +29,7 @@ MQTT was initially designed by Andy Stanford-Clark (IBM) and Arlen Nipper (Arcom
 Ever since its standardization, the protocol has been easy to adapt for a wide variety of IoT devices, platforms, and operating systems. Enterprise cloud platforms such as Microsoft Azure expose their IoT PaaS through MQTT. Certainly, any IoT application developer who has not used MQTT is not getting any closer to their next breakthrough.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/the-mighty-mqtt-what-you-should-know-about-it/mqtt-founders.jpg"
+  src="/assets/images/knowledge-hub/learn/the-mighty-mqtt-what-you-should-know-about-it/mqtt-founders.jpg"
   figure-number="1"
   caption="Arlen Nipper and Andy Stanford-Clark, the fathers of MQTT, during MQTT's 10th year anniversary. Photo credits to Tony Whitmore"
 />
@@ -46,7 +46,7 @@ _<b>Below are the definitions of some basic concepts in order to better understa
 The first concept is the <u><b>publish-and-subscribe</b></u> mechanic. In a publish-and-subscribe system, a device can publish a message on a topic, or it can be subscribed to a particular topic to receive messages. Messages are automatically pushed to subscribers to the corresponding topic when there is an update.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/the-mighty-mqtt-what-you-should-know-about-it/mqtt-flow.png"
+  src="/assets/images/knowledge-hub/learn/the-mighty-mqtt-what-you-should-know-about-it/mqtt-flow.png"
   figure-number="2"
   caption="MQTT Flow"
 />

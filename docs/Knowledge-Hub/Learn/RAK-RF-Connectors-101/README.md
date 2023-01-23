@@ -52,7 +52,7 @@ Our antennas and devices, depending on the environment (indoor or outdoor), use 
 The Type N connector is a threaded, weatherproof, medium-sized connector for durable applications that can easily handle frequencies up to 11 GHz. This type of connector follows MIL-STD-348 and is widely used in lower frequency microwave systems where ruggedness and low cost are needed. Here at RAK, we use the standard polarity N connector for our outdoor solutions, giving the needed robustness to the link between antenna and gateway. All outdoor antennas and outdoor gateways from the WisGate Edge series use this type of connector.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/rak-rf-connectors/ntype.png"
+  src="/assets/images/knowledge-hub/learn/rak-rf-connectors/ntype.png"
   width="60%"
   caption="N-Type Connectors"
 />
@@ -67,7 +67,7 @@ As a rule of thumb when installing add 1dB loss to the link budget for every 2 c
 The SMA (SubMiniature version A) connectors are semi-precision coaxial RF connectors operating up to 18 GHz, though some proprietary versions are rated to 26.5 GHz. It is commonly used in RF power amplifiers, RF isolators, microwave systems, mobile telephone antennas, Wi-Fi antenna systems, and radio astronomy at 5 GHz+. It is mostly used in indoor solutions as it is not sufficiently weather-proof for outdoor deployments.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/rak-rf-connectors/sma.png"
+  src="/assets/images/knowledge-hub/learn/rak-rf-connectors/sma.png"
   width="70%"
   caption="SMA Connectors"
 />
@@ -83,7 +83,7 @@ As a rule of thumb when installing add 2dB loss to the link budget for every 2 c
 The same as SMA but with reversed polarity. Reverse-polarity SMA (RP-SMA) is a variation of the SMA connector specification that reverses the gender of the interface. The term "reverse polarity" here refers only to the gender of the connector's contact pin, not in any way to the signal polarity. It is suitable for indoor solutions. All our indoor antennas, all gateways from the WisGate Developer series, the indoor gateway from the WisGate Edge series, and the famous RAK Hotspot use this type of connector.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/rak-rf-connectors/rpsma.png"
+  src="/assets/images/knowledge-hub/learn/rak-rf-connectors/rpsma.png"
   width="70%"
   caption="RP-SMA Connectors"
 />

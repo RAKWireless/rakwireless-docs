@@ -24,7 +24,7 @@ author:
 # Make your own WisBlock Sensor board
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisblock-sensor-tutorial/overview.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-sensor-tutorial/overview.png"
   width="50%"
   caption="Top and Connector View"
 />
@@ -50,8 +50,8 @@ To make the task easier, we have prepared a complete example project for Autodes
 The template schematic is very simple. It only includes the connector and a table that explains the assignment of the pins. As you can see, the connector's pins are assigned in a way that you can rotate the sensor module by 180 degrees if necessary. All 24 pins of the connector are assigned to signals.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisblock-sensor-tutorial/Template-Schematic.png"
-  width="50%"
+  src="/assets/images/knowledge-hub/learn/wisblock-sensor-tutorial/Template-Schematic.png"
+  width="100%"
   caption="Example schematic"
 />
 
@@ -88,7 +88,7 @@ Check the table for more details:
 The template PCB matches the size of standard WisBlock Sensor modules. Make sure not to move the connector (bottom side assembly) or the mounting hole that fixes the module on the WisBlock Base board
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisblock-sensor-tutorial/Template-PCB.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-sensor-tutorial/Template-PCB.png"
   width="50%"
   caption="Example PCB"
 />
@@ -113,15 +113,15 @@ Yes, you read it correct. The chip has an integrated battery. A small one, agree
 Let's have a look into the WisBlock Sensor RTC schematic.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisblock-sensor-tutorial/RTC-Schematic.png"
-  width="50%"
+  src="/assets/images/knowledge-hub/learn/wisblock-sensor-tutorial/RTC-Schematic.png"
+  width="100%"
   caption="RTC schematic"
 />
 
 The first thing to check is that we removed most connections from the board-to-board connector.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisblock-sensor-tutorial/RTC-reduced-connector.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-sensor-tutorial/RTC-reduced-connector.png"
   width="50%"
   caption="Adjusted connector nets"
 />
@@ -137,7 +137,7 @@ As you can see, we put the recommended GND planes on top and bottom. In addition
 #### RTC top layer
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisblock-sensor-tutorial/RTC-PCB-Top.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-sensor-tutorial/RTC-PCB-Top.png"
   width="50%"
   caption="RTC example top layer"
 />
@@ -145,7 +145,7 @@ As you can see, we put the recommended GND planes on top and bottom. In addition
 #### RTC bottom layer
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisblock-sensor-tutorial/RTC-PCB-Bottom.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-sensor-tutorial/RTC-PCB-Bottom.png"
   width="50%"
   caption="RTC example bottom layer"
 />

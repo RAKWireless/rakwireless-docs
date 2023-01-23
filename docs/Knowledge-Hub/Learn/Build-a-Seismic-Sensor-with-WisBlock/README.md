@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/build-a-seismic-sensor-with-wisblock/earthquake-warning.png
+rak_img: /assets/images/knowledge-hub/learn/build-a-seismic-sensor-with-wisblock/earthquake-warning.png
 rak_desc: This guide provides a step-by-step tutorial on how to build a seismic sensor with the WisBlock RAK12027.
 tags:
   - Tutorial
@@ -83,7 +83,7 @@ This project uses the following RAK products:
 
 1. Place the WisBlock Core and WisBlock Sensor module in the following slots of the RAK19007 Base Board (Core slot and Sensor slot D, respectively):
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\build-a-seismic-sensor-with-wisblock\Assembly-Animation.gif"
+  src="/assets/images/knowledge-hub/learn/build-a-seismic-sensor-with-wisblock/Assembly-Animation.gif"
   width="60%"
   caption="Assembly on module slots"
 />
@@ -95,7 +95,7 @@ This project uses the following RAK products:
 4. Assemble the WisBlock Base board on the mounting plate.
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\build-a-seismic-sensor-with-wisblock\mounting-plate.jpg"
+  src="/assets/images/knowledge-hub/learn/build-a-seismic-sensor-with-wisblock/mounting-plate.jpg"
   width="60%"
   caption="WisBlock Base to mounting plate assembly"
 />
@@ -105,7 +105,7 @@ This project uses the following RAK products:
   - For a small and thin battery (lwh: **55 x 30 x 6&nbsp;mm**), place the battery below the mounting plate.
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\build-a-seismic-sensor-with-wisblock\small-battery.jpg"
+  src="/assets/images/knowledge-hub/learn/build-a-seismic-sensor-with-wisblock/small-battery.jpg"
   width="60%"
   caption="Small battery in unify enclosure"
 />
@@ -113,7 +113,7 @@ This project uses the following RAK products:
  - Then fix the mounting plate inside the enclosure.
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\build-a-seismic-sensor-with-wisblock\mount-in-enclosure.jpg"
+  src="/assets/images/knowledge-hub/learn/build-a-seismic-sensor-with-wisblock/mount-in-enclosure.jpg"
   width="60%"
   caption="Fixing mounting plate in Unify Enclosure"
 />
@@ -121,13 +121,13 @@ This project uses the following RAK products:
  - For a large battery, use stand-offs and a battery carrier like the one from the [**Awesome WisBlock**](https://github.com/RAKWireless/Awesome-WisBlock/tree/main/Unify-Enclosure#second-level-battery-holder) repo to fix the battery above the WisBlock.
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\build-a-seismic-sensor-with-wisblock\large-battery-carrier.jpg"
+  src="/assets/images/knowledge-hub/learn/build-a-seismic-sensor-with-wisblock/large-battery-carrier.jpg"
   width="60%"
   caption="Larger battery carrier and stand-offs assembly"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\build-a-seismic-sensor-with-wisblock\large-battery-mount.jpg"
+  src="/assets/images/knowledge-hub/learn/build-a-seismic-sensor-with-wisblock/large-battery-mount.jpg"
   width="60%"
   caption="Fitting the large battery"
 />
@@ -356,7 +356,7 @@ As the SI and PGA values are sent as 10 times the value, besides the data fields
 To send a warning email when an earthquake occurs, a Datacake rule is used to send the email. The rule is triggered by the **`Earthquake warning`** field.
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\build-a-seismic-sensor-with-wisblock\datacake-rule.png"
+  src="/assets/images/knowledge-hub/learn/build-a-seismic-sensor-with-wisblock/datacake-rule.png"
   width="100%"
   caption="Datacake Rule"
 />
@@ -366,7 +366,7 @@ To send a warning email when an earthquake occurs, a Datacake rule is used to se
 In the dashboard, you can show the current status and the latest SI and PGA levels.
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\build-a-seismic-sensor-with-wisblock\datacake-dashboard.png"
+  src="/assets/images/knowledge-hub/learn/build-a-seismic-sensor-with-wisblock/datacake-dashboard.png"
   width="100%"
   caption="Seismic sensor Datacake dashboard"
 />

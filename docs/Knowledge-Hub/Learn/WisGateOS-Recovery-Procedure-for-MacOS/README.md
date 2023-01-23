@@ -47,7 +47,7 @@ To be able to interact with the serial console of the gateway you need to open t
 2. List the connected devices <code>ls /dev/cu.*</code>
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisgateos-for-macos/1.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos-for-macos/1.png"
   width="60%"
   caption="Listing of connected devices"
 />
@@ -57,7 +57,7 @@ If there are no other USB serial devices connected the one starting with **cu.us
 3. To establish a connection, type in <code>screen /dev/cu.usbserial-XXXXX 57600</code> (Change the **XXXXX** with your specific USB serial port number.)
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisgateos-for-macos/2.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos-for-macos/2.png"
   width="60%"
   caption="Typing in the USB serial port number"
 />
@@ -65,7 +65,7 @@ If there are no other USB serial devices connected the one starting with **cu.us
 4. The terminal will clear.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisgateos-for-macos/3.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos-for-macos/3.png"
   width="60%"
   caption="Blank terminal"
 />
@@ -74,7 +74,7 @@ If there are no other USB serial devices connected the one starting with **cu.us
 6. If everything is configured correctly, you will see the booting of the gateway with some additional options.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisgateos-for-macos/4.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos-for-macos/4.png"
   width="60%"
   caption="Establishing the connection"
 />
@@ -86,7 +86,7 @@ To be able to send the firmware to the gateway, you need to set the LAN card to 
 1. Go to the Network Preferences of your MAC OS and select the LAN card settings. In this example, it is a USB LAN card.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisgateos-for-macos/5.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos-for-macos/5.png"
   width="60%"
   caption="LAN card settings"
 />
@@ -94,7 +94,7 @@ To be able to send the firmware to the gateway, you need to set the LAN card to 
 2. Change the **Configure IPv4** option to **Manually**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisgateos-for-macos/6.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos-for-macos/6.png"
   width="60%"
   caption="Changing the Configure IPv4 option"
 />
@@ -102,7 +102,7 @@ To be able to send the firmware to the gateway, you need to set the LAN card to 
 3. Change the **IP Address** to **192.168.1.10** and the **Subnet Mask** to **255.255.255.0**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisgateos-for-macos/7.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos-for-macos/7.png"
   width="60%"
   caption="Changing the IP Address and the Subnet Mask"
 />
@@ -122,7 +122,7 @@ To be able to send the firmware to the gateway, you need to set the LAN card to 
 1. You can use the built-in TFTP server in the MAC OS X. Usually, the server uses the **/private/tftpboot** folder. Have in mind that by default, the folder is hidden in the finder.  To access it, open the finder. Use **Cmd+Shift+G** and enter **/private/ftpboot**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisgateos-for-macos/8.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos-for-macos/8.png"
   width="60%"
   caption="Finding the TFTP boot folder"
 />
@@ -130,7 +130,7 @@ To be able to send the firmware to the gateway, you need to set the LAN card to 
 2. Copy the **recovery.bin** file from earlier into the **tftpboot** folder.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisgateos-for-macos/9.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos-for-macos/9.png"
   width="100%"
   caption="Finding the TFTP boot folder"
 />
@@ -157,7 +157,7 @@ sudo chmod 777 /private/tftpboot/*
 ```
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisgateos-for-macos/10.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos-for-macos/10.png"
   width="60%"
   caption="Executing the commands"
 />
@@ -168,7 +168,7 @@ sudo chmod 777 /private/tftpboot/*
 2. Restart the gateway with the reset button.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisgateos-for-macos/11.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos-for-macos/11.png"
   width="60%"
   caption="Restarting the gateway"
 />
@@ -183,13 +183,13 @@ sudo chmod 777 /private/tftpboot/*
    - Input Linux Kernel filename - type **recovery.bin**, then press **Enter**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisgateos-for-macos/12.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos-for-macos/12.png"
   width="60%"
   caption="Dialog"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisgateos-for-macos/13.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos-for-macos/13.png"
   width="60%"
   caption="Loading"
 />
@@ -198,7 +198,7 @@ sudo chmod 777 /private/tftpboot/*
 6. When the console output prints **Boot done**, you are good to go. You should be able to see the Wi-Fi AP and connect to your gateway as usual.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/wisgateos-for-macos/14.png"
+  src="/assets/images/knowledge-hub/learn/wisgateos-for-macos/14.png"
   width="60%"
   caption="Boot Done"
 />

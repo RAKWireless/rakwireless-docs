@@ -53,7 +53,7 @@ First of all, install **Visual Studio Code** which is a great and open source to
 After installing VS code, you can search PlatformIO and install it in the Extensions item:
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Board-Support-Package-Installation-in-PlatformIO/image-20200722100737565.png"
+  src="/assets/images/knowledge-hub/learn/board-support-package-installation-in-platformio/image-20200722100737565.png"
   width="40%"
   caption="PlatformIO Extension"
 />
@@ -61,7 +61,7 @@ After installing VS code, you can search PlatformIO and install it in the Extens
 After installing PlatformIO, you can see the PlatformIO icon and open it as follow:
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Board-Support-Package-Installation-in-PlatformIO/image-20200722101053523.png"
+  src="/assets/images/knowledge-hub/learn/board-support-package-installation-in-platformio/image-20200722101053523.png"
   width="100%"
   caption="PlatformIO Installed in VS Code"
 />
@@ -70,21 +70,21 @@ Once PlatformIO installation is finished, you have to get the BSP's. Before you 
 - RAK4631 => install nRF52 platform
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Board-Support-Package-Installation-in-PlatformIO/Platform-nRF52.png"
+  src="/assets/images/knowledge-hub/learn/board-support-package-installation-in-platformio/Platform-nRF52.png"
   width="75%"
   caption="nRF52 platform"
 />
 - RAK11200 => install ESP32 platform
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Board-Support-Package-Installation-in-PlatformIO/Platform-ESP32.png"
+  src="/assets/images/knowledge-hub/learn/board-support-package-installation-in-platformio/Platform-ESP32.png"
   width="75%"
   caption="ESP32 platform"
 />
 - RAK11300 => install Raspberry Pi RP2040 platform
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Board-Support-Package-Installation-in-PlatformIO/Platform-RP2040.png"
+  src="/assets/images/knowledge-hub/learn/board-support-package-installation-in-platformio/Platform-RP2040.png"
   width="75%"
   caption="RP2040 platform"
 />
@@ -109,7 +109,7 @@ After updating or installing the nRF52, ESP32 or Raspberry Pi RP2040 package do 
 **Example (Windows 10):**
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Board-Support-Package-Installation-in-PlatformIO/folder-view.png"
+  src="/assets/images/knowledge-hub/learn/board-support-package-installation-in-platformio/folder-view.png"
   width="50%"
   caption="Path to install RAK_PATCH in PlatformIO"
 />
@@ -121,7 +121,7 @@ Open a terminal in the .platformio folder and execute **`python ./rak_patch.py`*
 Example (Windows 10 terminal):
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Board-Support-Package-Installation-in-PlatformIO/patch_windows.png"
+  src="/assets/images/knowledge-hub/learn/board-support-package-installation-in-platformio/patch_windows.png"
   width="75%"
   caption="Windows 10"
 />
@@ -129,7 +129,7 @@ Example (Windows 10 terminal):
 Example (Linux terminal):
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Board-Support-Package-Installation-in-PlatformIO/patch_linux.png"
+  src="/assets/images/knowledge-hub/learn/board-support-package-installation-in-platformio/patch_linux.png"
   width="75%"
   caption="Linux"
 />
@@ -144,7 +144,7 @@ Example (Linux terminal):
 1. Just copy the source code of the .ino file into the main.cpp of the PlatformIO project we just created:
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Board-Support-Package-Installation-in-PlatformIO/image-20200722111241582.png"
+  src="/assets/images/knowledge-hub/learn/board-support-package-installation-in-platformio/image-20200722111241582.png"
   width="75%"
   caption="Project source code"
 />
@@ -152,13 +152,13 @@ Example (Linux terminal):
 2. Then compile it by click the compiling icon at the bottom tool bar as follow:
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Board-Support-Package-Installation-in-PlatformIO/image-20200722113244435.png"
+  src="/assets/images/knowledge-hub/learn/board-support-package-installation-in-platformio/image-20200722113244435.png"
   width="75%"
   caption="Sample code compiling"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Board-Support-Package-Installation-in-PlatformIO/image-20200722113305159.png"
+  src="/assets/images/knowledge-hub/learn/board-support-package-installation-in-platformio/image-20200722113305159.png"
   width="75%"
   caption="Compiling successful"
 />

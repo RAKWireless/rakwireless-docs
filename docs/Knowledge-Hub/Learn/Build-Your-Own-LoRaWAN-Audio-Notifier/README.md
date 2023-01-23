@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/lorawan-audio-notifier/lorawan-audio-notifier.png
+rak_img: /assets/images/knowledge-hub/learn/lorawan-audio-notifier/lorawan-audio-notifier.png
 rak_desc: This guide provides a step-by-step tutorial on creating a LoRaWAN Audio Notifier using WisBlock Audio.
 tags:
   - Tutorial
@@ -52,7 +52,7 @@ To put together the different modules, you need to connect them to the respectiv
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-audio-notifier/mounting-sketch.png"
+  src="/assets/images/knowledge-hub/learn/lorawan-audio-notifier/mounting-sketch.png"
   width="50%"
   caption="Assembling the core to the base board"
 />
@@ -60,7 +60,7 @@ To put together the different modules, you need to connect them to the respectiv
 <br>
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-audio-notifier/assembly-photo.png"
+  src="/assets/images/knowledge-hub/learn/lorawan-audio-notifier/assembly-photo.png"
   width="80%"
   caption="Assembling the components"
 />
@@ -70,7 +70,7 @@ To put together the different modules, you need to connect them to the respectiv
 1. Log in to Helium Console or create an account if you don’t have one.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-audio-notifier/log-in.png"
+  src="/assets/images/knowledge-hub/learn/lorawan-audio-notifier/log-in.png"
   width="40%"
   caption="Helium Console"
 />
@@ -79,7 +79,7 @@ To put together the different modules, you need to connect them to the respectiv
 2. Go to **Devices**, then click **Add New Device**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-audio-notifier/add-new-device.png"
+  src="/assets/images/knowledge-hub/learn/lorawan-audio-notifier/add-new-device.png"
   width="100%"
   caption="Adding a new device"
 />
@@ -90,14 +90,14 @@ To put together the different modules, you need to connect them to the respectiv
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-audio-notifier/dev-eui.jpg"
+  src="/assets/images/knowledge-hub/learn/lorawan-audio-notifier/dev-eui.jpg"
   width="60%"
   caption="Printed Dev EUI"
 />
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-audio-notifier/save-device.png"
+  src="/assets/images/knowledge-hub/learn/lorawan-audio-notifier/save-device.png"
   width="80%"
   caption="Saving the device"
 />
@@ -107,7 +107,7 @@ To put together the different modules, you need to connect them to the respectiv
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-audio-notifier/pending-device.png"
+  src="/assets/images/knowledge-hub/learn/lorawan-audio-notifier/pending-device.png"
   width="100%"
   caption="Pending initial configuration"
 />
@@ -124,7 +124,7 @@ To put together the different modules, you need to connect them to the respectiv
 3. Install the required libraries by clicking on the URLs next to them.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-audio-notifier/lorawan-notifier-file.png"
+  src="/assets/images/knowledge-hub/learn/lorawan-audio-notifier/lorawan-notifier-file.png"
   width="80%"
   caption="Opening LoRaWAN Notifier file"
 />
@@ -157,7 +157,7 @@ uint8_t nodeAppKey[16] = {0x03, 0xE6, 0xF0, 0xC1, 0x75, 0x2C, 0x91, 0x9F, 0x70, 
 ```
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-audio-notifier/otaa-keys.png"
+  src="/assets/images/knowledge-hub/learn/lorawan-audio-notifier/otaa-keys.png"
   width="80%"
   caption="OTAA keys"
 />
@@ -166,7 +166,7 @@ uint8_t nodeAppKey[16] = {0x03, 0xE6, 0xF0, 0xC1, 0x75, 0x2C, 0x91, 0x9F, 0x70, 
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-audio-notifier/selecting-board.png"
+  src="/assets/images/knowledge-hub/learn/lorawan-audio-notifier/selecting-board.png"
   width="80%"
   caption="Selecting the board"
 />
@@ -174,7 +174,7 @@ uint8_t nodeAppKey[16] = {0x03, 0xE6, 0xF0, 0xC1, 0x75, 0x2C, 0x91, 0x9F, 0x70, 
 7. Click **Upload** and wait for the core to be flashed.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-audio-notifier/uploading-core.png"
+  src="/assets/images/knowledge-hub/learn/lorawan-audio-notifier/uploading-core.png"
   width="80%"
   caption="Uploading the core"
 />
@@ -186,7 +186,7 @@ uint8_t nodeAppKey[16] = {0x03, 0xE6, 0xF0, 0xC1, 0x75, 0x2C, 0x91, 0x9F, 0x70, 
 2. It should start sending data to the console every 20 seconds. Verify if you are in the range of the Helium Network.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-audio-notifier/power-device.png"
+  src="/assets/images/knowledge-hub/learn/lorawan-audio-notifier/power-device.png"
   width="80%"
   caption="Powering the device"
 />
@@ -196,7 +196,7 @@ uint8_t nodeAppKey[16] = {0x03, 0xE6, 0xF0, 0xC1, 0x75, 0x2C, 0x91, 0x9F, 0x70, 
 4. Set the Payload type to Text. Enter one of the trigger commands (G1 or B1), and uncheck the confirmation of response box.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-audio-notifier/add-downlink.png"
+  src="/assets/images/knowledge-hub/learn/lorawan-audio-notifier/add-downlink.png"
   width="70%"
   caption="Adding Downlink Payload"
 />
@@ -209,7 +209,7 @@ You will need to send the message **B1** or **G1** = **Base64** (**QjE=** and **
 5. Click again the blue downlink icon. Right after the module has sent something, the notification will be executed.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-audio-notifier/test-device.png"
+  src="/assets/images/knowledge-hub/learn/lorawan-audio-notifier/test-device.png"
   width="100%"
   caption="Device will now send notification"
 />

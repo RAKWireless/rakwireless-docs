@@ -52,7 +52,7 @@ AWS IoT Core is a cloud-based service that connects your "things" (devices, sens
 1. To create a thing (add a device) in the AWS IoT console, navigate to **Manage** > **Things** and select **Create Things.**
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/1.things-tab.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/1.things-tab.png"
   width="100%"
   caption="Things Tab in the AWS IoT Console"
 />
@@ -60,7 +60,7 @@ AWS IoT Core is a cloud-based service that connects your "things" (devices, sens
 2. You can choose to add a single device or multiple ones. For this demonstration, select **Create single thing** and click **Next**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/2.create-things.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/2.create-things.png"
   width="100%"
   caption="Create Things"
 />
@@ -68,7 +68,7 @@ AWS IoT Core is a cloud-based service that connects your "things" (devices, sens
 3. Give your thing a name and click **Next**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/3.specify-things.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/3.specify-things.png"
   width="100%"
   caption="Specify the Thing Properties"
 />
@@ -76,7 +76,7 @@ AWS IoT Core is a cloud-based service that connects your "things" (devices, sens
 4. To generate certificates for your thing, select the **Auto-generate a new certificate (recommended)** and click **Next**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/4.configure-device-certificate.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/4.configure-device-certificate.png"
   width="100%"
   caption="Configure Device Certificate"
 />
@@ -85,7 +85,7 @@ AWS IoT Core is a cloud-based service that connects your "things" (devices, sens
 5. A policy is needed for your thing, hence click **Create policy**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/5.attach-policies.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/5.attach-policies.png"
   width="100%"
   caption="Attach Policies to Certificate"
 />
@@ -94,7 +94,7 @@ AWS IoT Core is a cloud-based service that connects your "things" (devices, sens
 6. You’ll be automatically redirected to a new window. Click **Secure** then **Policies**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/6.create-policy.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/6.create-policy.png"
   width="100%"
   caption="Create a Policy"
 />
@@ -110,7 +110,7 @@ AWS IoT Core is a cloud-based service that connects your "things" (devices, sens
 8. Return to the previous window and refresh it by clicking the **Refresh** button. You will then see the newly created policy pop up in the list. Choose it and click **Create Thing**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/7.attach-policies.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/7.attach-policies.png"
   width="100%"
   caption="Attach Policies to Certificate"
 />
@@ -123,7 +123,7 @@ Save the downloaded certificates and keys, as they cannot be downloaded again if
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/8.download-certificates-keys.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/8.download-certificates-keys.png"
   width="100%"
   caption="Download Certificates and Keys"
 />
@@ -132,13 +132,13 @@ Save the downloaded certificates and keys, as they cannot be downloaded again if
 11. Your thing is created. Now, you need to attach the policy you’ve created to it. Click on the name of your thing and navigate to **Certificates**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/9.things.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/9.things.png"
   width="100%"
   caption="The Things"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/10.things-details.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/10.things-details.png"
   width="100%"
   caption="The Things Details"
 />
@@ -148,7 +148,7 @@ Save the downloaded certificates and keys, as they cannot be downloaded again if
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/11.certificate.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/11.certificate.png"
   width="100%"
   caption="Certificate"
 />
@@ -157,7 +157,7 @@ Save the downloaded certificates and keys, as they cannot be downloaded again if
 13.  Select the previously created policy and click **Attach**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/12.attach-certificate.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/12.attach-certificate.png"
   width="100%"
   caption="Attach Policies to Certificate"
 />
@@ -168,7 +168,7 @@ Save the downloaded certificates and keys, as they cannot be downloaded again if
 1. Now, you need to configure the global integration of the gateway for the AWS IoT Core. To do so, in the gateway's Web UI, navigate to **LoRa Network** > **Global Integration**. Then choose **AWS IoT Core** for the **Integration Mode**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/13.application-server-integration.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/13.application-server-integration.png"
   width="100%"
   caption="Application Server Integration"
 />
@@ -179,7 +179,7 @@ Save the downloaded certificates and keys, as they cannot be downloaded again if
 - **AWS URL** - The URL for your things can be found in the **Settings** menu under the **Endpoint** in the AWS IoT console.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/14.endpoint.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/14.endpoint.png"
   width="100%"
   caption="Device Data Endpoint"
 />
@@ -190,7 +190,7 @@ Save the downloaded certificates and keys, as they cannot be downloaded again if
 - **Vendor Key** – The key you've downloaded (see Figure 15).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/15.certificates-and-keys-placement.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/15.certificates-and-keys-placement.png"
   width="100%"
   caption="Certificates and Keys Placement"
 />
@@ -203,7 +203,7 @@ Save the downloaded certificates and keys, as they cannot be downloaded again if
 1. To see the messages from the end-node, navigate to the **Test** tab in the AWS IoT console.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/16.test-tab.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/16.test-tab.png"
   width="100%"
   caption="Certificates and Keys Placement"
 />
@@ -212,7 +212,7 @@ Save the downloaded certificates and keys, as they cannot be downloaded again if
 2. In the **Topic filter** field, subscribe to all topics by typing `#` to see the data (join, uplink, downlinks, etc.) from the node.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/17.messages.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/17.messages.png"
   width="100%"
   caption="Messages from the Device"
 />
@@ -225,7 +225,7 @@ Save the downloaded certificates and keys, as they cannot be downloaded again if
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/18.payloads.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/18.payloads.png"
   width="100%"
   caption="Payload formats"
 />
@@ -251,7 +251,7 @@ Save the downloaded certificates and keys, as they cannot be downloaded again if
    You can send the message by clicking **Publish.**
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/19.mqtt.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/19.mqtt.png"
   width="100%"
   caption="MQTT Test Client"
 />
@@ -261,7 +261,7 @@ Save the downloaded certificates and keys, as they cannot be downloaded again if
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/aws-iot-core-integration/20.live-device-data.png"
+  src="/assets/images/knowledge-hub/learn/aws-iot-core-integration/20.live-device-data.png"
   width="100%"
   caption="Live Device Data"
 />

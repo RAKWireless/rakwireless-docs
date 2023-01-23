@@ -34,7 +34,7 @@ To connect the gateway to the ThingPark Admin console, the gateway must be updat
 2. On the Admin console, navigate to the **Base Stations** drop-down menu and choose **Create**.
 
 <rk-img
-src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/1.thingpark-admin-console.png"
+src="/assets/images/knowledge-hub/learn/actility-thingpark-guide/1.thingpark-admin-console.png"
   width="100%"
   caption="ThingPark Admin Console"
 />
@@ -42,7 +42,7 @@ src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/1.thingpa
 3. On the **CREATING A BASE STATION** menu, choose **View More Manufacturers**.
 
 <rk-img
-src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/2.creating-base-station.png"
+src="/assets/images/knowledge-hub/learn/actility-thingpark-guide/2.creating-base-station.png"
   width="100%"
   caption="Creating Base Station"
 />
@@ -50,7 +50,7 @@ src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/2.creatin
 4. On the **Select Your Base Station Manufacturer** window, find and choose **RAK Wireless**. This can be done by either scrolling down manually to find it or by typing **RAK** in the **Type to search manufacturers in the list** search field.
 
 <rk-img
-src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/3.select-rakwireless-manufacturer.png"
+src="/assets/images/knowledge-hub/learn/actility-thingpark-guide/3.select-rakwireless-manufacturer.png"
   width="80%"
   caption="Select RAKwireless Manufacturer"
 />
@@ -58,7 +58,7 @@ src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/3.select-
 5. You will be redirected to the **CREATING A BASE STATION** page.
 
 <rk-img
-src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/4.register-a-gateway.png"
+src="/assets/images/knowledge-hub/learn/actility-thingpark-guide/4.register-a-gateway.png"
   width="100%"
   caption="Register a Gateway"
 />
@@ -68,7 +68,7 @@ src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/4.registe
 * **Model** – From the drop-down menu, choose the model of your gateway.
 
 <rk-img
-src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/5.choose-the-model-of-your-gateway.png"
+src="/assets/images/knowledge-hub/learn/actility-thingpark-guide/5.choose-the-model-of-your-gateway.png"
   width="70%"
   caption="Choose the Model of Your Gateway"
 />
@@ -83,7 +83,7 @@ src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/5.choose-
 8. A confirmation window will pop up. Click **VIEW THE BASE STATION**.
 
 <rk-img
-src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/6.confirmation-window.png"
+src="/assets/images/knowledge-hub/learn/actility-thingpark-guide/6.confirmation-window.png"
   width="50%"
   caption="Confirmation Window"
 />
@@ -91,7 +91,7 @@ src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/6.confirm
 9. You will be redirected to the Dashboard of the registered gateway.
 
 <rk-img
-src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/7.dashboard.png"
+src="/assets/images/knowledge-hub/learn/actility-thingpark-guide/7.dashboard.png"
   width="100%"
   caption="Dashboard"
 />
@@ -99,7 +99,7 @@ src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/7.dashboa
 10. Now, configure the gateway to connect to ThingPark. Access the gateway webUI. Refer to the [documentation](https://docs.rakwireless.com/Product-Categories/WisGate/#wisgate-edge) of your gateway to see how to access the webUI.
 
 <rk-img
-src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/8.webui-overview.png"
+src="/assets/images/knowledge-hub/learn/actility-thingpark-guide/8.webui-overview.png"
   width="100%"
   caption="WebUI Overview"
 />
@@ -107,7 +107,7 @@ src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/8.webui-o
 11. Navigate to the **LoRa Network**. By default, the gateway works in Built-in network server mode.
 
 <rk-img
-src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/9.lora-network-settings.png"
+src="/assets/images/knowledge-hub/learn/actility-thingpark-guide/9.lora-network-settings.png"
   width="100%"
   caption="LoRa Network Settings"
 />
@@ -115,7 +115,7 @@ src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/9.lora-ne
 12. From the **Mode** drop-down menu, choose **Basics Station** and click **Switch mode** to change the mode.
 
 <rk-img
-src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/10.basics-station-change-mode.png"
+src="/assets/images/knowledge-hub/learn/actility-thingpark-guide/10.basics-station-change-mode.png"
   width="100%"
   caption="Basics Station Change Mode"
 />
@@ -128,7 +128,7 @@ src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/10.basics
 * **Authentication Mode** – ThingPark uses TLS Server Authentication. From the drop-down menu, choose **TLS Server Authentication**. A trust field will pop up. Fill it with the [AmazonRootCA1.cer](https://www.amazontrust.com/repository/AmazonRootCA1.pem) certificate.
 
 <rk-img
-src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/11.basics-station-settings.png"
+src="/assets/images/knowledge-hub/learn/actility-thingpark-guide/11.basics-station-settings.png"
   width="100%"
   caption="Basics Station Settings"
 />
@@ -137,7 +137,7 @@ src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/11.basics
 15. If everything was set up correctly, you can see that the gateway is connected to ThingPark in the **STATUS** area in ThingPark.
 
 <rk-img
-src="/assets/images/knowledge-hub/user-manual/actility-thingpark-guide/12.successfully-connected-gateway.png"
+src="/assets/images/knowledge-hub/learn/actility-thingpark-guide/12.successfully-connected-gateway.png"
   width="100%"
   caption="Successfully Connected the Gateway"
 />

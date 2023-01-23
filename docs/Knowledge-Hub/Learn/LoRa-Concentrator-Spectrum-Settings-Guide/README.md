@@ -52,7 +52,7 @@ Let us take as an example the **EU863-870 frequency band**. When accessing the W
 
 * The image below shows what the values for the EU863-870 band should be.
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/lora-spectrum-eu868/eu868freqtemplate.png"
+  src="/assets/images/knowledge-hub/learn/lora-spectrum-eu868/eu868freqtemplate.png"
   width="75%"
   caption="Default Frequency Template in the Web Management Platform"
 />
@@ -63,7 +63,7 @@ Let us have a summary of the parameters that can be seen in the image below, whi
 0 and Radio 1 frequency fields we discussed in the previous section.
 
 <rk-img
-  src="/assets/images/knowledge-hub/user-manual/lora-spectrum-eu868/channel-panel.png"
+  src="/assets/images/knowledge-hub/learn/lora-spectrum-eu868/channel-panel.png"
   width="100%"
   caption="Concentrator Channel Panel"
 />

@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/how-to-successfully-carry-out-a-lorawan-coverage-test-with-rakwireless/overview.jpg
+rak_img: /assets/images/knowledge-hub/learn/how-to-successfully-carry-out-a-lorawan-coverage-test-with-rakwireless/overview.jpg
 rak_desc: Tips on how to maximize the LoRaWAN coverage of your own application.
 tags:
   - Tutorial
@@ -39,7 +39,7 @@ It is very important to carry out a good coverage test, so as to be sure of the 
 
 The LoRaWAN coverage test is essentially a user based range test, and it provides adequate information on the quality and range of LoRaWAN within a specified area.
 
-![Diagram](/assets/images/knowledge-hub/tutorials/how-to-successfully-carry-out-a-lorawan-coverage-test-with-rakwireless/carry-out.png)
+![Diagram](/assets/images/knowledge-hub/learn/how-to-successfully-carry-out-a-lorawan-coverage-test-with-rakwireless/carry-out.png)
 
 ## How Do We Ensure A Quality Coverage Test?
 
@@ -90,7 +90,7 @@ If you are carrying out a big and important test, one will definitely end up wit
 For this reason, it is important to properly classify each data for the LoRaWAN coverage test in a way that would be easy to understand. The network would be tested at various locations and we will definitely need to have various classifications for every of the data gotten at these various points.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/how-to-successfully-carry-out-a-lorawan-coverage-test-with-rakwireless/overview.jpg"
+  src="/assets/images/knowledge-hub/learn/how-to-successfully-carry-out-a-lorawan-coverage-test-with-rakwireless/overview.jpg"
 />
 
 <b>Some of the classifications will include:</b>

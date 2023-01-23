@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/wisblock-edgeimpulse.jpg
+rak_img: /assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/wisblock-edgeimpulse.jpg
 rak_desc: This tutorial will show you how to set up and connect your WisBlock to Edge Impulse, which includes but is not limited to RAK11310, RAK4631, and RAK11200.
 tags:
   - Tutorial
@@ -32,7 +32,7 @@ next: ../RAK11310-Edge-Impulse-Guide/
 5. Short the **BOOT0** and **GND** pins, then reset the board to restart the core in boot mode.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/flash-esp32.jpg"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/flash-esp32.jpg"
   width="60%"
   caption="Restarting the core after shorting the pins"
 />
@@ -45,7 +45,7 @@ next: ../RAK11310-Edge-Impulse-Guide/
 - Set the SPI SPEED to 40&nbsp;MHz, SPI MODE to **DIO**, and **DoNotChgBin** checked. Everything should look like this:
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/config-esp32.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/config-esp32.png"
   width="45%"
   caption="Configuring ESP32 download tool"
 />
@@ -54,7 +54,7 @@ next: ../RAK11310-Edge-Impulse-Guide/
 7. Click the **START** button and wait until you see a **FINISH** status on the Download panel.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/start-config.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/start-config.png"
   width="45%"
   caption="Starting the configuration"
 />
@@ -84,7 +84,7 @@ After running the command, your WisBlock is now connected to Edge Impulse. To ve
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/device-listed.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/device-listed.png"
   width="100%"
   caption="Registered devices"
 />
@@ -96,13 +96,13 @@ Now that you have successfully set up the connection, you can now build your fir
 For this, you need to connect supported WisBlock sensors to your board. In this case, a **PDM microphone** or a **3-axis accelerometer**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/pdm-mic.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/pdm-mic.png"
   width="55%"
   caption="PDM microphone"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/3-axis.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/3-axis.png"
   width="55%"
   caption="3-axis accelerometer"
 />
@@ -110,13 +110,13 @@ For this, you need to connect supported WisBlock sensors to your board. In this 
 Collecting your first data:
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/pdm-selected.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/pdm-selected.png"
   width="60%"
   caption="PDM microphone selected"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/3-axis-selected.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/3-axis-selected.png"
   width="60%"
   caption="3-axis accelerometer selected"
 />
@@ -125,14 +125,14 @@ Define the **label** and the **sample length** of your data, and click **Start s
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/imu-data.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/imu-data.png"
   width="70%"
   caption="Data from the IMU"
 />
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/mic-data.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/mic-data.png"
   width="70%"
   caption="Data from the microphone"
 />
@@ -165,7 +165,7 @@ On your Edge Impulse project, navigate to the **Deployment** tab on the left men
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/library.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/library.png"
   width="80%"
   caption="C++ library"
 />
@@ -173,19 +173,19 @@ On your Edge Impulse project, navigate to the **Deployment** tab on the left men
 Edge Impulse offers an optimization tool that can help you increase on-device performance but may reduce accuracy. You can test each option one by one and stay with the best results. You can also click the **Analyze optimizations** button before deploying it and see the recommended choice for your target. Or, click **Build** to use the currently selected option.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/analyze-optimization.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/analyze-optimization.png"
   width="80%"
   caption="EON compiler option for model optimization"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/save.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/save.png"
   width="70%"
   caption="Save the project"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/build-library.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/build-library.png"
   width="80%"
   caption="Building the library"
 />
@@ -193,7 +193,7 @@ Edge Impulse offers an optimization tool that can help you increase on-device pe
 Download the `.zip` library and save it to your preferred location, then unzip it.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/unzip.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/unzip.png"
   width="70%"
   caption="Unzipping the library"
 />
@@ -210,7 +210,7 @@ Download and install [**ESP IDF v4.4**](https://dl.espressif.com/dl/esp-idf/).
 - Navigate to the firmware folder `../RAK11200-Edge-Impulse-Firmware`.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/firmware-folder.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/firmware-folder.png"
   width="70%"
   caption="Navigating to the firmware folder"
 />
@@ -239,13 +239,13 @@ Replace the edge-impulse-sdk, model-parameters, and tflite-model folders from th
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/delete.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/delete.png"
   width="80%"
   caption="Delete the three (3) old folders"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/copy-paste.jpg"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/copy-paste.jpg"
   width="80%"
   caption="Copy and paste the trained model folders"
 />
@@ -298,7 +298,7 @@ edge-impulse-run-impulse --continuous
 Your model should run and print the inference results in the terminal continuously.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/esp-idf/run-model.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/esp-idf/run-model.png"
   width="65%"
   caption="Run the model in the terminal"
 />
@@ -317,7 +317,7 @@ In installing and setting up the PlatformIO to work with WisBlock ecosystem boar
 On your Edge Impulse project, navigate to the **Deployment** tab on the left menu and select the **Arduino library** option.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/platformio/arduino-lib.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/platformio/arduino-lib.png"
   width="80%"
   caption="Arduino library"
 />
@@ -325,20 +325,20 @@ On your Edge Impulse project, navigate to the **Deployment** tab on the left men
 Edge Impulse offers an optimization tool that can help you increase on-device performance but may reduce accuracy. You can test each option one by one and stay with the best results. You can also **Analyze optimizations** before deploying it and see the recommended choice for your target. Or, click **Build** to use the currently selected option.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/platformio/model-optimization.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/platformio/model-optimization.png"
   width="70%"
   caption="EON compiler option for model optimization"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/platformio/save.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/platformio/save.png"
   width="70%"
   caption="Save the project"
 />
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/platformio/build.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/platformio/build.png"
   width="70%"
   caption="Building the Arduino library"
 />
@@ -356,7 +356,7 @@ If you are working with:
 Drag and drop the Arduino library to the **lib** folder of your project:
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/platformio/lib-folder.jpg"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/platformio/lib-folder.jpg"
   width="100%"
   caption="Adding the Arduino library"
 />
@@ -364,13 +364,13 @@ Drag and drop the Arduino library to the **lib** folder of your project:
 Finally, **Build** your project, connect your WisBlock board to your computer and **Upload** the code.
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/platformio/build-output.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/platformio/build-output.png"
   width="80%"
   caption="Build output"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/platformio/upload-output.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/platformio/upload-output.png"
   width="80%"
   caption="Upload output"
 />
@@ -378,7 +378,7 @@ Finally, **Build** your project, connect your WisBlock board to your computer an
 Run the Serial Monitor, and you should start seeing the inference results:
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/rak11200/platformio/serial-monitor.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/rak11200/platformio/serial-monitor.png"
   width="70%"
   caption="Continuous inference results"
 />

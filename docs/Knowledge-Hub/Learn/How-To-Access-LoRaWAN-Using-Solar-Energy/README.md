@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/access-lorawan-using-solar-energy/overview.jpg
+rak_img: /assets/images/knowledge-hub/learn/access-lorawan-using-solar-energy/overview.jpg
 rak_desc: A demonstration on how to deploy your LoRaWAN using the RAKwireless' Solar Panel and Battery Kit.
 tags:
   - Tutorial
@@ -32,7 +32,7 @@ Fortunately, IoT companies like RAKwireless are indeed making our access to IoT 
 * MPPT Charge Controllers - the converter that increases the efficiency of a battery charging state
 * Batteries - the container of our converted electric current from sunlight
 
-![Solar Panel Kit](/assets/images/knowledge-hub/tutorials/access-lorawan-using-solar-energy/Solar_Kit_757x.progressive.png)
+![Solar Panel Kit](/assets/images/knowledge-hub/learn/access-lorawan-using-solar-energy/Solar_Kit_757x.progressive.png)
 
 👉[Solar Panel and Battery Kit Installation](/Product-Categories/WisGate/RAK7249/Quickstart/#solar-panel-and-battery-kit-installation)
 

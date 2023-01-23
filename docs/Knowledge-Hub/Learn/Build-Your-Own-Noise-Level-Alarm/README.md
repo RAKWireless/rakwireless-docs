@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/noise-level-alarm-guide/noise-level-alarm.png
+rak_img: /assets/images/knowledge-hub/learn/noise-level-alarm-guide/noise-level-alarm.png
 rak_desc: This guide provides a step-by-step tutorial on how to create a noise level alarm using WisBlock hardware such as RAK19007, RAK4631, RAK18000, and RAK18030.
 tags:
   - Tutorial
@@ -53,7 +53,7 @@ To put together the different modules, you need to connect them to the respectiv
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/noise-level-alarm-guide/mounting-sketch.png"
+  src="/assets/images/knowledge-hub/learn/noise-level-alarm-guide/mounting-sketch.png"
   width="50%"
   caption="Assembling the core to the base board"
 />
@@ -61,7 +61,7 @@ To put together the different modules, you need to connect them to the respectiv
 <br>
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/noise-level-alarm-guide/nla-assembly-photo.png"
+  src="/assets/images/knowledge-hub/learn/noise-level-alarm-guide/nla-assembly-photo.png"
   width="80%"
   caption="Assembling the components"
 />
@@ -76,7 +76,7 @@ To put together the different modules, you need to connect them to the respectiv
 2. Download it, and search for the ZIP file by navigating to **Sketch > Include Library > Add .ZIP Library…**
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/noise-level-alarm-guide/add-zip-lib.png"
+  src="/assets/images/knowledge-hub/learn/noise-level-alarm-guide/add-zip-lib.png"
   width="80%"
   caption="Adding the library"
 />
@@ -84,7 +84,7 @@ To put together the different modules, you need to connect them to the respectiv
 3. On the Arduino IDE, navigate to **File > Examples > RAKwireless Audio Library > RAK4631 > Audio_Alarm_RAK18003**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/noise-level-alarm-guide/lib-navigation.png"
+  src="/assets/images/knowledge-hub/learn/noise-level-alarm-guide/lib-navigation.png"
   width="80%"
   caption="Adding the Audio_Alarm_RAK18003"
 />
@@ -92,7 +92,7 @@ To put together the different modules, you need to connect them to the respectiv
 4. Select the board you are using, connect it through the USB cable, and select the respective COM port.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/noise-level-alarm-guide/select-board-port.png"
+  src="/assets/images/knowledge-hub/learn/noise-level-alarm-guide/select-board-port.png"
   width="80%"
   caption="Selecting the board"
 />
@@ -107,7 +107,7 @@ int audio_threshold = 1000; //You can modify this value to your desired noise tr
 6. Click **Upload**, and wait for the core to be flashed.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/noise-level-alarm-guide/upload-flash.png"
+  src="/assets/images/knowledge-hub/learn/noise-level-alarm-guide/upload-flash.png"
   width="80%"
   caption="Increasing / Decreasing the Audio threshold"
 />
@@ -119,13 +119,13 @@ Once the code is uploaded, you can play some music or start talking and see how 
 Instead of just controlling LEDs, you can modify the code to send an email notification or to drive a screen to show a dB live measurement.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/noise-level-alarm-guide/led-off.png"
+  src="/assets/images/knowledge-hub/learn/noise-level-alarm-guide/led-off.png"
   width="90%"
   caption="Testing the Noise Level Alarm - Low Audio"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/noise-level-alarm-guide/led-on.png"
+  src="/assets/images/knowledge-hub/learn/noise-level-alarm-guide/led-on.png"
   width="90%"
   caption="Testing the Noise Level Alarm - High Audio"
 />

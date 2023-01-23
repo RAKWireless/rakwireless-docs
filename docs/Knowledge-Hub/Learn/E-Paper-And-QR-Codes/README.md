@@ -208,14 +208,14 @@ unsigned char qrc[qrc_sz];
 After that, it was easy to assemble the QR code pixels into bytes and lines.
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\e-paper-and-qr-codes\SerialMonitor.jpg"
+  src="/assets/images/knowledge-hub/learn/e-paper-and-qr-codes/SerialMonitor.jpg"
   width="80%"
   caption="The output in the Serial Monitor"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\tutorials\e-paper-and-qr-codes\Result.jpg"
+  src="/assets/images/knowledge-hub/learn/e-paper-and-qr-codes/Result.jpg"
   width="70%"
   caption="The result"
 />

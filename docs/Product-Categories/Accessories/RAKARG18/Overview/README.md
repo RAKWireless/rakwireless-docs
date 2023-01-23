@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/accessories/rakarg18/5dbi_antenna.png
-rak_desc: The 5 dBi fiberglass antenna is an outdoor, high-performance antenna, designed to withstand harsh outdoor conditions. It is specially designed for LoRa® in the 863-870MHz band – EU868, IN865, and RU864.
+rak_desc: The 5 dBi fiberglass antenna is an outdoor, high-performance antenna, designed to withstand harsh outdoor conditions. It is specially designed for LoRa in the 863-870MHz band – EU868, IN865, and RU864.
 rak_grp: [accessories, antennas]
 rak_model: RAKARG18
 prev: ../../
@@ -17,7 +17,7 @@ Thank you for choosing **863-870 MHz 5 dBi Fiberglass Antenna** in your awesome 
 
 ## Product Description
 
-The 5&nbsp;dBi fiberglass antenna is an outdoor, high-performance antenna, designed to withstand harsh outdoor conditions. It is specially designed for LoRa® in the 863-870&nbsp;MHz band – EU868, IN865, and RU864.
+The 5&nbsp;dBi fiberglass antenna is an outdoor, high-performance antenna, designed to withstand harsh outdoor conditions. It is specially designed for LoRa in the 863-870&nbsp;MHz band – EU868, IN865, and RU864.
 
 The antenna connector is one with the antenna body - this design further increases the resistance of the antenna to external conditions.
 

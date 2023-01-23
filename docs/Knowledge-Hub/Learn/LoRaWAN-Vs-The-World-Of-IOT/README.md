@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/lorawan-vs-the-world-of-iot/overview.png
+rak_img: /assets/images/knowledge-hub/learn/lorawan-vs-the-world-of-iot/overview.png
 rak_desc: A detailed comparison between LoRaWAN and the different IoT protocols using S.W.O.T. Analysis.
 tags:
   - Tutorial
@@ -28,7 +28,7 @@ author:
 You know (or you will know after reading this) that there are not 1 or 2 technologies and protocols in the Internet of Things. They all have their strengths and weaknesses and today we will discuss that for the main players in the game.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-vs-the-world-of-iot/swot-analysis.jpg"
+  src="/assets/images/knowledge-hub/learn/lorawan-vs-the-world-of-iot/swot-analysis.jpg"
 />
 
 To not waste too much time in rambling about every protocol's functions we will use the nifty and smart S.W.O.T. analysis system. S.W.O.T. like in <b>S</b>trengths, <b>W</b>eaknesses, <b>O</b>pportunities, and <b>T</b>hreads, right? Right.
@@ -40,7 +40,7 @@ So, let us start going through some of the potential contenders in the IoT arena
 ## Zigbee
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-vs-the-world-of-iot/zigbee.jpg"
+  src="/assets/images/knowledge-hub/learn/lorawan-vs-the-world-of-iot/zigbee.jpg"
 />
 
 Now, let us start with [Zigbee](https://zigbee.org/). If you’re using any smart home technology, there’s a good chance it runs on Zigbee. A wireless communication protocol designed to underpin everything from thermostats to lightbulbs. Zigbee was introduced by the Zigbee Alliance, a group that includes Amazon, Samsung, Huawei, [Qualcomm](https://www.qualcomm.com/), and Toshiba, not to mention many of the other biggest companies in the home appliances sector and energy and consumer technology industries. More importantly, it’s fast becoming the standard wireless protocol that smart home devices use to communicate. Plus it has been around for some time, so some of the initial issues that plague every technology have already been cleared and it is now stable and robust.
@@ -57,7 +57,7 @@ LoRa is the better option if you need true bidirectionality because of the symme
 ## WiFi
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-vs-the-world-of-iot/wifi.png"
+  src="/assets/images/knowledge-hub/learn/lorawan-vs-the-world-of-iot/wifi.png"
 />
 
 Next, we will discuss Wi-Fi. Pretty much everyone knows what Wi-Fi is. Wi-Fi is a family of [radio technologies](https://en.wikipedia.org/wiki/Radio) commonly used for [wireless local area networking](https://en.wikipedia.org/wiki/Wireless_LAN) (WLAN) of devices. It is based on the [IEEE 802.11](https://en.wikipedia.org/wiki/IEEE_802.11) family of standards. We will not delve deep in its many variations, simply examine what its core functionalities are.
@@ -73,7 +73,7 @@ WiFi doesn't really classify in the race between IoT technologies.  LoRa and the
 ## How about Bluetooth Low Energy (BLE)?
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-vs-the-world-of-iot/ble.png"
+  src="/assets/images/knowledge-hub/learn/lorawan-vs-the-world-of-iot/ble.png"
 />
 
 It is a version of Bluetooth designed for lower-powered devices that use less data. To conserve power, BLE remains in sleep mode except when a connection is initiated. This makes it ideal for wearable fitness trackers and health monitors. Bluetooth itself if wildly known as of its uses so let us quickly do a SWOT analysis on BLE:
@@ -87,7 +87,7 @@ It is a version of Bluetooth designed for lower-powered devices that use less da
 ## Narrowband Internet of Things
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-vs-the-world-of-iot/nb-iot.png"
+  src="/assets/images/knowledge-hub/learn/lorawan-vs-the-world-of-iot/nb-iot.png"
 />
 
 (NB-IoT) is a Low Power Wide Area Network ([LPWAN](https://en.m.wikipedia.org/wiki/LPWAN)) [radio technology](https://en.m.wikipedia.org/wiki/Radio_technology) standard developed by [3GPP](https://en.m.wikipedia.org/wiki/3GPP) to enable a wide range of cellular devices and services. The specification was frozen in [3GPP Release 13](https://en.m.wikipedia.org/wiki/3GPP#Standards) ([LTE Advanced Pro](https://en.m.wikipedia.org/wiki/LTE_Advanced_Pro)), in June 2016. Other 3GPP [IoT](https://en.m.wikipedia.org/wiki/Internet_of_things) technologies include [eMTC](https://en.m.wikipedia.org/wiki/EMTC)(enhanced Machine-Type Communication) and EC-GSM-IoT.
@@ -107,7 +107,7 @@ After all, it turns out that there is not much battle here. Every product is sui
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/lorawan-vs-the-world-of-iot/comparison-table.png"
+  src="/assets/images/knowledge-hub/learn/lorawan-vs-the-world-of-iot/comparison-table.png"
 />
 
 <rk-author />

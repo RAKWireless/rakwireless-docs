@@ -52,7 +52,7 @@ To enjoy the free cloud services of Amazon, make an account through their [Amazo
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/1.aws-console.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/1.aws-console.png"
   width="100%"
   caption="AWS Management Console"
 />
@@ -60,7 +60,7 @@ To enjoy the free cloud services of Amazon, make an account through their [Amazo
 2. In the following screen you can see your running instances, key pairs, security groups, etc. Press the blue “**Launch instance**” button.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/2.launch-instance.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/2.launch-instance.png"
   width="100%"
   caption="Launching an Instance"
 />
@@ -68,7 +68,7 @@ To enjoy the free cloud services of Amazon, make an account through their [Amazo
 3. There is a ton of choices for the operating system, however **Ubuntu** will be used for tutorial. Scroll down and choose **Ubuntu Server 18.04 LTS** (latest at the time of this document). Click the “**Select**” button.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/3.selecting-os.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/3.selecting-os.png"
   width="100%"
   caption="Selecting the Operating System"
 />
@@ -76,7 +76,7 @@ To enjoy the free cloud services of Amazon, make an account through their [Amazo
 4. In the next window, you can configure your Instance. However, leave it as it is. Just select the _**t2.Micro**_ for the **instance type** as in Figure 4 shown below and click “**Review and Launch**”.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/4.select-instance-type.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/4.select-instance-type.png"
   width="100%"
   caption="Selecting the Instance Type"
 />
@@ -84,7 +84,7 @@ To enjoy the free cloud services of Amazon, make an account through their [Amazo
 5. Confirm your choice and Launch. Security groups will be edited in the next section so you can go ahead and confirm your choice by pressing the “**Launch**” button as shown in Figure 5 below.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/5.launch-instance-f.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/5.launch-instance-f.png"
   width="100%"
   caption="Launching the Instance"
 />
@@ -94,7 +94,7 @@ To enjoy the free cloud services of Amazon, make an account through their [Amazo
 To have an SSH session to the Instance, you nee to create the appropriate access keys. Thus, after Launching, you will see window the same as Figure 6 below.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/6.key-pair.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/6.key-pair.png"
   width="75%"
   caption="Key pair creation"
 />
@@ -102,7 +102,7 @@ To have an SSH session to the Instance, you nee to create the appropriate access
 1. We will choose to "**Create a new key pair**" from the drop-down menu and give it an appropriate name. Finally, click the “**Download Key Pair**” button shown in Figure 7.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/7.new-key-pair.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/7.new-key-pair.png"
   width="75%"
   caption="Creating a new key pair"
 />
@@ -116,7 +116,7 @@ To have an SSH session to the Instance, you nee to create the appropriate access
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/8.instance-param.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/8.instance-param.png"
   width="100%"
   caption="Instance Parameters"
 />
@@ -134,7 +134,7 @@ Convert first the keys from `.pem` format to `.ppk` format as this is what PuTTY
 7. In the main window, select the **Type of key to generate** as **RSA** (should be the default choice). In older versions, it is named **SSH-2 RSA**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/9.puttygen.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/9.puttygen.png"
   width="75%"
   caption="PuTTYgen main window"
 />
@@ -148,7 +148,7 @@ Convert first the keys from `.pem` format to `.ppk` format as this is what PuTTY
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/10.puttygen-public-key.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/10.puttygen-public-key.png"
   width="75%"
   caption="PuTTYgen Saving the public key"
 />
@@ -156,7 +156,7 @@ Convert first the keys from `.pem` format to `.ppk` format as this is what PuTTY
 10. As your Private Key is now in the correct format, now you can create an SSH session with PuTTY. Open the client and select SSH.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/11.putty-main.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/11.putty-main.png"
   width="75%"
   caption="PuTTY main window"
 />
@@ -175,7 +175,7 @@ user_name@public_dns_name
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/12.public-dns-name.jpg"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/12.public-dns-name.jpg"
   width="75%"
   caption="Knowing your Public DNS Name"
 />
@@ -183,7 +183,7 @@ user_name@public_dns_name
 * After which, fill-in the corresponding Host Name as shown in Figure 13 below.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/13.putty-hostname.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/13.putty-hostname.png"
   width="75%"
   caption="PuTTY main window with Host Name"
 />
@@ -195,7 +195,7 @@ user_name@public_dns_name
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/14.putty-ssh-auth.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/14.putty-ssh-auth.png"
   width="75%"
   caption="PuTTY SSH Authentication"
 />
@@ -203,7 +203,7 @@ user_name@public_dns_name
 13. Click the “**Open**” button to initiate the session. If this is your first time connecting, PuTTY will ask for confirmation (click **Yes**). You should see the command line window to your instance now.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/15.putty-ssh-command.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/15.putty-ssh-command.png"
   width="75%"
   caption="PuTTY SSH Command line"
 />
@@ -255,7 +255,7 @@ journalctl -u chirpstack-application-server -f -n 50
 6. You should see no errors as in Figure 16. Make sure you interrupt the output of the commands above with the key combination “Ctrl+z” so you can continue with the configuration process.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/16.chirpstack-journal.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/16.chirpstack-journal.png"
   width="100%"
   caption="ChirpStack Journal Control Output (no errors)"
 />
@@ -338,7 +338,7 @@ sudo systemctl start lora-gateway-bridge
 journalctl -u lora-gateway-bridge -f -n 50
 ```
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/17.gateway-bridge-journal.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/17.gateway-bridge-journal.png"
   width="100%"
   caption="Gateway Bridge Journal Control Output (no errors)"
 />
@@ -364,7 +364,7 @@ By default, all inbound traffic to an AWS Instance is blocked, only port 22 (SSH
 1. Open the Security Groups tab in the AWS Dashboard:
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/18.aws-sec-group.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/18.aws-sec-group.png"
   width="100%"
   caption="AWS Security Groups"
 />
@@ -372,7 +372,7 @@ By default, all inbound traffic to an AWS Instance is blocked, only port 22 (SSH
 2. Select your desired Security Group (**Ubuntu Instance**). If you have multiple instances you can use the date and time of creation of the group as a guide to which is the one you want. Click the “**Action**” button and from the drop-down menu select **Edit Inbound Rules**:
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/19.inbound-rules.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/19.inbound-rules.png"
   width="100%"
   caption="Security Group Inbound Rules"
 />
@@ -380,7 +380,7 @@ By default, all inbound traffic to an AWS Instance is blocked, only port 22 (SSH
 3. In the opened window, press the “**Add Rule**” button and add all the 4 rules mentioned before.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/20.add-inbound-rules.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/20.add-inbound-rules.png"
   width="100%"
   caption="Adding Inbound Rules"
 />
@@ -394,7 +394,7 @@ By default, all inbound traffic to an AWS Instance is blocked, only port 22 (SSH
 5. Finally, check if the rules you created are working by entering your instance Public IP address using port 8080 in a browser window. You should see the Login page of the Chirpstack Web UI (for example `3.120.237.38:8080` as in the image below).
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/21.chirpstack-login.jpg"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/21.chirpstack-login.jpg"
   width="100%"
   caption="Chirpstack Login Page"
 />
@@ -416,7 +416,7 @@ Read the [LoRa Network](/Knowledge-Hub/Learn/Resources/Web-Management-Platform/#
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/22.chirpstack-packet-forwader.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/22.chirpstack-packet-forwader.png"
   width="100%"
   caption="ChirpStack Packet Forwarder Configuration"
 />
@@ -424,7 +424,7 @@ Read the [LoRa Network](/Knowledge-Hub/Learn/Resources/Web-Management-Platform/#
 2. Click "**Save and Apply**" and go to your ChirpStack Web UI running on the AWS Instance (IP Address:8080). Go to the Gateway tab. Press the “**Create**” button.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/23.chirpstack-add-gateway.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/23.chirpstack-add-gateway.png"
   width="100%"
   caption="ChirpStack Gateways Creation"
 />
@@ -432,7 +432,7 @@ Read the [LoRa Network](/Knowledge-Hub/Learn/Resources/Web-Management-Platform/#
 3. In the next window, input the **Gateway Name, EUI and Description**. Select a network server and Service Profile from the drop-down menu (remember those are pre-configured with the RAKwireless image). Then, click the “**Create Gateway**” button.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/24.chirpstack-gateway-param.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/24.chirpstack-gateway-param.png"
   width="100%"
   caption="ChirpStack Gateway Parameters"
 />
@@ -440,7 +440,7 @@ Read the [LoRa Network](/Knowledge-Hub/Learn/Resources/Web-Management-Platform/#
 4. Assuming you entered the parameters correctly you should see your Gateway status as seen is a few second in the Gateway Details tab. You can also monitor Live LoRa Frames in the tab with the same name to see incoming traffic.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/25.chirpstack-gateway-details.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/25.chirpstack-gateway-details.png"
   width="100%"
   caption="ChirpStack Gateway Details"
 />
@@ -452,7 +452,7 @@ If you want to use the MQTT Bridge to forward your LoRa Traffic to your LoRa Net
 1. Navigating through **LoRa Network-> Network Settings-> Packet Forwarder Settings-> General Setup**, set the Protocol in the drop-down list to **LoRa Gateway MQTT Bridge**. Then, click "**Save and Apply**".
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/26.chirpstack-mqtt-bridge.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/26.chirpstack-mqtt-bridge.png"
   width="100%"
   caption="Gateway MQTT Bridge Protocol"
 />
@@ -462,7 +462,7 @@ If you want to use the MQTT Bridge to forward your LoRa Traffic to your LoRa Net
 3. Set the address to the address of the AWS Instance and the **port to 1883**, **Save and Apply**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/amazon-web-service/27.chirpstack-gateway-mqtt-param.png"
+  src="/assets/images/knowledge-hub/learn/amazon-web-service/27.chirpstack-gateway-mqtt-param.png"
   width="100%"
   caption="Gateway MQTT Bridge Parameters"
 />

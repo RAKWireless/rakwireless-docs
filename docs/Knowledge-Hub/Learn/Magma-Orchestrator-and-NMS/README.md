@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/user-manual/magma-box/overview/magma-box.png
+rak_img: /assets/images/knowledge-hub/learn/magma-box/overview/magma-box.png
 rak_desc: This guide provides a step-by-step tutorial on Dockerized Magma AGW 1.8.0 Configuration.
 tags:
   - User Manual
@@ -108,7 +108,7 @@ docker-compose up -d
 
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/magma-orchestrator/1.login-credentials.png" width="100%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/magma-orchestrator/1.login-credentials.png" width="100%">
 </p>
 
 
@@ -118,11 +118,11 @@ docker-compose up -d
 2. Create a network.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/magma-orchestrator/2.add-network.png" width="100%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/magma-orchestrator/2.add-network.png" width="100%">
 </p>
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/magma-orchestrator/3.select-network.png" width="100%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/magma-orchestrator/3.select-network.png" width="100%">
 </p>
 
 
@@ -258,11 +258,11 @@ sudo docker-compose exec magmad show_gateway_info.py
 - Create access gateway in NMS.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/magma-orchestrator/4.add-new-gateway.png" width="100%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/magma-orchestrator/4.add-new-gateway.png" width="100%">
 </p>
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/user-manual/magma-box/magma-orchestrator/5.access-gateway.png" width="100%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/magma-orchestrator/5.access-gateway.png" width="100%">
 </p>
 
 <br>

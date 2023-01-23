@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/wisblock-edgeimpulse.jpg
+rak_img: /assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/wisblock-edgeimpulse.jpg
 rak_desc: This tutorial will show you how to set up and connect your WisBlock to Edge Impulse, which includes but is not limited to RAK11310, RAK4631, and RAK11200.
 tags:
   - Tutorial
@@ -33,7 +33,7 @@ A starter kit is available in the [RAK store](https://store.rakwireless.com/prod
 ## Setting Up Your Development Board
 
 <rk-img
-  src="/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/development-board.png"
+  src="/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/development-board.png"
   width="80%"
   caption="WisBlock Ecosystem"
 />
@@ -45,7 +45,7 @@ The minimum hardware you will need to start developing with WisBlock and Edge Im
 - [RAK1904 3-Axis Acceleration Sensor (LIS3DH)](https://store.rakwireless.com/products/rak1904-lis3dh-3-axis-acceleration-sensor?utm_source=RAK1904&utm_medium=Document&utm_campaign=BuyFromStore) or [RAK18000 PDM Microphone](https://store.rakwireless.com/products/wisblock-microphone-module-rak18000?utm_source=WisBlockRAK18000&utm_medium=Document&utm_campaign=BuyFromStore)
 
 
-![product-table.png](/assets/images/knowledge-hub/wisblock/Getting-Started-with-WisBlock-and-Edge-Impulse/product-table.png)
+![product-table.png](/assets/images/knowledge-hub/learn/getting-started-with-wisBlock-and-edge-impulse/product-table.png)
 
 ### Installing Dependencies
 

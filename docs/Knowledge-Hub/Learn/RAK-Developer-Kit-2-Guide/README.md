@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/rak-developer-kit/kit-2/kit2.png
+rak_img: /assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/kit2.png
 rak_desc: This guide provides a step-by-step tutorial on how to use the RAK Developer Kit 2 (Weather Kit).
 tags:
   - User-Manual
@@ -45,8 +45,8 @@ If you are new to LoRaWAN, here are a few good references about LoRaWAN and gate
 
 - [LoRaWAN 101](https://news.rakwireless.com/lorawan-r-101-all-you-need-to-know/)
 - [What is a LoRaWAN Gateway?](https://news.rakwireless.com/what-is-a-lorawan-gateway/)
-- [How do LoRaWAN® Gateways work?](https://news.rakwireless.com/how-do-lorawan-gateways-work/)
-- [Things to Consider When Picking A LoRaWAN® Gateway](https://news.rakwireless.com/things-to-consider-when-picking-a-lorawan-gateway/)
+- [How do LoRaWAN Gateways work?](https://news.rakwireless.com/how-do-lorawan-gateways-work/)
+- [Things to Consider When Picking A LoRaWAN Gateway](https://news.rakwireless.com/things-to-consider-when-picking-a-lorawan-gateway/)
 
 :::
 
@@ -55,7 +55,7 @@ Here are the steps in configuring the [RAK7246 WisGate Developer D0](https://sto
 1. By default, the gateway will work in Wi-Fi AP Mode, which means that you can find an SSID named "**Rakwireless_XXXX**" on your PC Wi-Fi network list.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\D0WifiAP1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/D0WifiAP1.png"
   width="50%"
   caption="RAKwireless Access Point"
 />
@@ -73,7 +73,7 @@ Here are the steps in configuring the [RAK7246 WisGate Developer D0](https://sto
      SSH (Secure Shell) is typically used to log in to a remote machine and execute commands. There are a lot of free and good SSH Clients out there, namely [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), [BitVise SSH Client](https://www.bitvise.com/ssh-client-download), [MobaXterm](https://mobaxterm.mobatek.net/) and many more. Feel free to choose one that fits your needs, but in this guide, Putty is used.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\putty2.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/putty2.png"
   width="40%"
   caption="PuTTY example"
 />
@@ -82,7 +82,7 @@ Here are the steps in configuring the [RAK7246 WisGate Developer D0](https://sto
      Open the Terminal of Mac OS. Launch the Terminal application found in the **`/Applications/Utilities/`** directory, but you can also launch it from Spotlight. Press **Command + Spacebar** and type **“Terminal”**, then return.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\terminal3.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/terminal3.png"
   width="50%"
   caption="Selecting Terminal on Mac"
 />
@@ -93,7 +93,7 @@ Here are the steps in configuring the [RAK7246 WisGate Developer D0](https://sto
    - Password: **raspberry**
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\sshpi4.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/sshpi4.png"
   width="60%"
   caption="Command Line using SSH Client Software"
 />
@@ -109,13 +109,13 @@ Like for [RAK WisGate Edge Gateways](https://store.rakwireless.com/collections/w
 5. You can now connect your gateway through Wi-Fi to access TTN. It can easily be done with the wireless capabilities of the Raspberry Pi Zero W by choosing **"5 Configure WIFI"**. By default, the RAK7246 WisGate Developer D0 Gateway works in Wi-Fi AP Mode. For the gateway to connect to the router, it must work in Wi-Fi Client Mode.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\gatewayconfig5_1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/gatewayconfig5_1.png"
   width="60%"
   caption="Configuring your Wifi"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\gatewayconfig6.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/gatewayconfig6.png"
   width="60%"
   caption="Configuration options for WIFI"
 />
@@ -137,7 +137,7 @@ To enable Wi-Fi Client Mode, you have to disable first the Wi-Fi AP Mode.
 6. Once Wi-Fi AP Mode has been disabled by choosing **"2 Enable Client Mode/Disable AP Mode"**, you can now then connect to a new Wi-Fi Network by choosing **"4 Add New SSID for Client"**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\gatewayconfig7.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/gatewayconfig7.png"
   width="60%"
   caption="Add New SSID for Client"
 />
@@ -145,7 +145,7 @@ To enable Wi-Fi Client Mode, you have to disable first the Wi-Fi AP Mode.
 - Start by selecting your country of residence.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\gatewayconfig8.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/gatewayconfig8.png"
   width="60%"
   caption="Selecting Country of Residence"
 />
@@ -158,7 +158,7 @@ Ensure to input the correct Wi-Fi SSID and password, or you will not be able to 
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\gatewayconfig9.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/gatewayconfig9.png"
   width="60%"
   caption="SSID of the Network you want to connect to"
 />
@@ -166,7 +166,7 @@ Ensure to input the correct Wi-Fi SSID and password, or you will not be able to 
 - Enter the SSID of the network you want to connect.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\gatewayconfig10.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/gatewayconfig10.png"
   width="60%"
   caption="Password of the Wi-Fi"
 />
@@ -182,7 +182,7 @@ sudo reboot
 In this example, the admin console can be accessed via `http://192.168.0.1`. It is also common to have it on `http://192.168.1.1` on some routers. Take note of the IP address allotted to the RAK7246 by your Wi-Fi network.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\wifirouter1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/wifirouter1.png"
   width="60%"
   caption="Web UI of local modem/router"
 />
@@ -199,7 +199,7 @@ As seen in **Figure 12**, it is `192.168.0.28`, where the company is Raspberry P
 :::
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\ipscanner1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/ipscanner1.png"
   width="60%"
   caption="Advance IP scanner for Windows OS"
 />
@@ -207,7 +207,7 @@ As seen in **Figure 12**, it is `192.168.0.28`, where the company is Raspberry P
 8. To link your gateway to TTN, you need to set up first the RAK Gateway LoRa by choosing "**2 Setup RAK Gateway LoRa concentrator**".
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\RAK7246G-8.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/RAK7246G-8.png"
   width="60%"
   caption="Choosing Setup RAK Gateway LoRa"
 />
@@ -215,7 +215,7 @@ As seen in **Figure 12**, it is `192.168.0.28`, where the company is Raspberry P
 9. Then, you need to select **Server is TTN** as the LoRaWAN server and select the right frequency that will match your gateway and region. The [supported frequency plan of TTN](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html) can be found on their website.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\RAK7246G-9.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/RAK7246G-9.png"
   width="60%"
   caption="Selecting TTN as the LoRaWAN server"
 />
@@ -223,7 +223,7 @@ As seen in **Figure 12**, it is `192.168.0.28`, where the company is Raspberry P
 10. For this example, you will be using EU868 Frequency Plan. Choose “**4 EU_863_870**”.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\RAK7246G-10.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/RAK7246G-10.png"
   width="60%"
   caption="Selecting the TTN channel plan"
 />
@@ -231,7 +231,7 @@ As seen in **Figure 12**, it is `192.168.0.28`, where the company is Raspberry P
 11. After choosing the correct frequency, the success message will appear, as shown in **Figure 16**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\RAK7246G-11.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/RAK7246G-11.png"
   width="60%"
   caption="Successfully changed the frequency"
 />
@@ -239,7 +239,7 @@ As seen in **Figure 12**, it is `192.168.0.28`, where the company is Raspberry P
 12. You need to check if the right SERVER_ADDRESS is used to connect to TTN V3. To do this, choose “**4 Edit packet-forwarder config**” from the configuration options.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\RAK7246G-12.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/RAK7246G-12.png"
   width="60%"
   caption="Checking if TTNv3 is used for the connection"
 />
@@ -259,7 +259,7 @@ The available [TTN V3 clusters](https://console.cloud.thethings.network/) are:
 :::
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\RAK7246G-13.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/RAK7246G-13.png"
   width="60%"
   caption="Changing Server Name to eu1.cloud.thethings.network"
 />
@@ -267,7 +267,7 @@ The available [TTN V3 clusters](https://console.cloud.thethings.network/) are:
 14. Restart the Packet-forwarder by choosing “**3 Restart Packet-forwarder**” from the configuration options.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\RAK7246G-14.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/RAK7246G-14.png"
   width="60%"
   caption="Restarting the Packet-forwarder"
 />
@@ -281,25 +281,25 @@ This section shows how to connect RAK7246 WisGate Developer D0 to TTNv3.
 1. Create a [TTN account](https://www.thethingsnetwork.org/) if you don't have one yet.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\TTS1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/TTS1.png"
   width="80%"
   caption="TTN V3 Website"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\TTS2.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/TTS2.png"
   width="80%"
   caption="Creating TTN V3 Account"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\TTS3.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/TTS3.png"
   width="80%"
   caption="Email Validation"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\TTS4.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/TTS4.png"
   width="80%"
   caption="Activating Your Account"
 />
@@ -307,7 +307,7 @@ This section shows how to connect RAK7246 WisGate Developer D0 to TTNv3.
 2.  Make sure you are in the right [TTN cluster](https://console.cloud.thethings.network/), and then log in to TTN. Use your The Things ID credentials to log in.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\TTS6.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/TTS6.png"
   width="80%"
   caption="Login website for TTN"
 />
@@ -315,13 +315,13 @@ This section shows how to connect RAK7246 WisGate Developer D0 to TTNv3.
 3. After you have logged in, you need to register your gateway to TTNv3. To register, choose **Go to gateways**. If you have already registered your gateways before, head on to **Gateways > + Add gateway**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\gw1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/gw1.png"
   width="80%"
   caption="Creating a gateway"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\gw2.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/gw2.png"
   width="80%"
   caption="Gateway console in TTN V3"
 />
@@ -344,7 +344,7 @@ This section shows how to connect RAK7246 WisGate Developer D0 to TTNv3.
 :::
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\gw3.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/gw3.png"
   width="80%"
   caption="Filling in the information to add the gateway in the TTN V3"
 />
@@ -352,13 +352,13 @@ This section shows how to connect RAK7246 WisGate Developer D0 to TTNv3.
 * To register your gateway, scroll down and click **Create gateway**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\gw4.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/gw4.png"
   width="80%"
   caption="Filling in the information to add the gateway in the TTN V3"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\gw5.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/gw5.png"
   width="80%"
   caption="Filling in the information to add the gateway in the TTN V3"
 />
@@ -366,13 +366,13 @@ This section shows how to connect RAK7246 WisGate Developer D0 to TTNv3.
 5. Gateway is now registered to TTN V3. Click **Live data** to check if the gateway already working.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\gw6.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/gw6.png"
   width="80%"
   caption="Gateway is already created"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\rak7246g-gateway\gw7.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/rak7246g-gateway/gw7.png"
   width="80%"
   caption="Gateway is working when Live data has gateway status"
 />
@@ -387,13 +387,13 @@ This section will guide you on how to set up using The Things Stack Community Ed
 2. Go to **CONSOLE**, then choose **Europe 1**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\the-things-stack-kit1\TTS5.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/the-things-stack-kit1/TTS5.png"
   width="80%"
   caption="Console of The Things Stack"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\the-things-stack-kit1\TTS6.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/the-things-stack-kit1/TTS6.png"
   width="80%"
   caption="Europe 1 network server"
 />
@@ -401,7 +401,7 @@ This section will guide you on how to set up using The Things Stack Community Ed
 3.  After choosing Europe 1, click on **Create an application**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\the-things-stack-kit1\TTS7.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/the-things-stack-kit1/TTS7.png"
   width="80%"
   caption="Creating a new application"
 />
@@ -409,7 +409,7 @@ This section will guide you on how to set up using The Things Stack Community Ed
 4. Add the WisBlock Kit 2 by clicking the **Create application**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\the-things-stack-kit1\TTS8.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/the-things-stack-kit1/TTS8.png"
   width="80%"
   caption="Creating a WisBlock Kit 2 application"
 />
@@ -417,7 +417,7 @@ This section will guide you on how to set up using The Things Stack Community Ed
 5. Click **End devices**, then **Add end device**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\the-things-stack-kit1\TTS9.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/the-things-stack-kit1/TTS9.png"
   width="80%"
   caption="Adding an end device"
 />
@@ -425,13 +425,13 @@ This section will guide you on how to set up using The Things Stack Community Ed
 6.  Choose **Manually** to register the end device. Fill in the required details and click **Register end device**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\the-things-stack-kit1\TTS10.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/the-things-stack-kit1/TTS10.png"
   width="80%"
   caption="First step of registering an end device"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\the-things-stack-kit1\TTS11.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/the-things-stack-kit1/TTS11.png"
   width="80%"
   caption="Second step of registering an end device"
 />
@@ -439,13 +439,13 @@ This section will guide you on how to set up using The Things Stack Community Ed
 7. In the End devices tab, click **General settings**, then fill in the  **End device name** and **End device description**. After that, press **Save changes**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\the-things-stack-kit1\TTS12.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/the-things-stack-kit1/TTS12.png"
   width="80%"
   caption="End devices and General settings"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\the-things-stack-kit1\TTS13.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/the-things-stack-kit1/TTS13.png"
   width="80%"
   caption="End device name and End device description"
 />
@@ -453,7 +453,7 @@ This section will guide you on how to set up using The Things Stack Community Ed
 8. Then, click on **Payload formatters** > **Uplink** > **Formatter type** and choose **Javascript**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\the-things-stack-kit1\TTS14.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/the-things-stack-kit1/TTS14.png"
   width="80%"
   caption="Payload formatters setup"
 />
@@ -489,7 +489,7 @@ function Decoder(bytes, port)
 ```
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\the-things-stack-kit1\TTS15.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/the-things-stack-kit1/TTS15.png"
   width="80%"
   caption="Payload formatters using Javascript"
 />
@@ -508,28 +508,28 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
 :::
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino1.png"
   width="80%"
   caption="Downloading the Arduino IDE"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino2.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino2.png"
   width="80%"
   caption="Just download the IDE without any cost"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino3.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino3.png"
   width="50%"
   caption="Installing the Arduino IDE"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino4.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino4.png"
   width="50%"
   caption="Completing the installation of Arduino IDE"
 />
@@ -540,14 +540,14 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
 3. Click on **File** -> **Preferences**. In the **Preferences** window, look for **Additional Boards Manager URLs**, then click the icon on the right side.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino6.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino6.png"
   width="80%"
   caption="Preferences setup"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino7.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino7.png"
   width="80%"
   caption="Preferences window"
 />
@@ -559,14 +559,14 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino8.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino8.png"
   width="80%"
   caption="RAKwireless BSP support for the Arduino Board Manager setup"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino9.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino9.png"
   width="80%"
   caption="Completing the setup of RAKwireless BSP support for the Arduino Board Manager"
 />
@@ -574,13 +574,13 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
 5. Go to **Tools** > **Board: "Arduino Uno"** > **Boards Manager**. Type **RAK** in the search bar, and the RAKwireless Core modules will be shown in the window.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino10.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino10.png"
   width="80%"
   caption="Boards Manager"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino11.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino11.png"
   width="80%"
   caption="Installing RAKwireless nRF boards"
 />
@@ -589,7 +589,7 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino12.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino12.png"
   width="80%"
   caption="Successful installation of RAKwireless nRF boards"
 />
@@ -597,20 +597,20 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
 7. After the installation of the RAKwireless nRF Boards core module, copy the code in the [GitHub repo](https://github.com/RAKWireless/WisBlock/blob/master/examples/RAK4630/solutions/Weather_Monitoring/Weather_Monitoring.ino), and paste it to the Arduino IDE. Save this file as "**Weather_Monitoring.ino**".
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino13.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino13.png"
   width="80%"
   caption="Github code for WisBlock Kit 2"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino14.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino14.png"
   width="80%"
   caption="Copy paste the code to the Arduino IDE"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino15.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino15.png"
   width="80%"
   caption="Save the file as Weather_Monitoring.ino"
 />
@@ -618,58 +618,58 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
 8. Install all the libraries needed by the **WisBlock Kit 2**, as shown in **Figure 57**. Just click the links in the sketch, then install them one by one.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino16.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino16.png"
   width="80%"
   caption="Installing the WisBlock Kit 2 libraries"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino17.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino17.png"
   width="80%"
   caption="Installing the SX126x Arduino library"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino18.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino18.png"
   width="80%"
   caption="Completing the installation of SX126x Arduino library"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino19.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino19.png"
   width="80%"
   caption="Installing the LPS22HB Arduino library"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino20.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino20.png"
   width="80%"
   caption="Completing the installation of LPS22HB Arduino library"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino21.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino21.png"
   width="80%"
   caption="Installing the SHTC3 Arduino library"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino22.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino22.png"
   width="80%"
   caption="Completing the installation of SHTC3 Arduino library"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino23.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino23.png"
   width="80%"
   caption="Installing the OPT3001 Arduino library"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino24.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino24.png"
   width="80%"
   caption="Completing the installation of OPT3001 Arduino library"
 />
@@ -678,7 +678,7 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino25.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino25.png"
   width="80%"
   caption="Board configuration using WisBlock RAK4631"
 />
@@ -689,13 +689,13 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino26.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino26.png"
   width="80%"
   caption="Compiling the Weather_Monitoring.ino"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino27.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino27.png"
   width="80%"
   caption="Done compiling Weather_Monitoring .ino"
 />
@@ -710,7 +710,7 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\rak-kit1-1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/rak-kit1-1.png"
   width="70%"
   caption="Parts list of WisBlock Kit 2 and connection guidelines"
 />
@@ -718,19 +718,19 @@ Do NOT install the Arduino IDE from the Microsoft App Store. Install the origina
 12. Finally, place the **RAK1902** to the **SLOT D**. Screw all the edges so that the connection is firm and tight to avoid a loose connection.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\rak-kit1-2.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/rak-kit1-2.png"
   width="60%"
   caption="Connecting the RAK1902 to the SLOT D"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\rak-kit1-3.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/rak-kit1-3.png"
   width="60%"
   caption="Mounting the screws of parts list to the base board RAK5005-O"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\rak-kit1-4.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/rak-kit1-4.png"
   width="60%"
   caption="Mounting of the RAK1902 using screw at bottom of RAK5005-O"
 />
@@ -744,7 +744,7 @@ Make sure to attach the antennas first before powering on the **WisBlock Kit 2**
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\rak-kit1-5.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/rak-kit1-5.png"
   width="80%"
   caption="USB and Antenna connection using RAK5005-O and RAK4631"
 />
@@ -752,7 +752,7 @@ Make sure to attach the antennas first before powering on the **WisBlock Kit 2**
 14. Go back to your The Things Stack account. Go to **Applications**  > **Wisblock Kit2 Weather Monitoring** > **End devices** > **Wisblock kit2 weather monitoring**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\TTS_kit1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/TTS_kit1.png"
   width="80%"
   caption="Copying the end device keys"
 />
@@ -762,7 +762,7 @@ Make sure to attach the antennas first before powering on the **WisBlock Kit 2**
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\TTS1_kit1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/TTS1_kit1.png"
   width="80%"
   caption="Paste it to the text editor"
 />
@@ -771,13 +771,13 @@ Make sure to attach the antennas first before powering on the **WisBlock Kit 2**
 16. Open again your **Arduino IDE**. Change the keys of the sketch/code the keys from The Things Stack end device copied to the text editor from line 74 to line 76. Connect your complete assembled **WisBlock Kit 2** to your PC or laptop to the USB.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino29.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino29.png"
   width="80%"
   caption="Changing the OTAA keys of the sketch/code"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino29_1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino29_1.png"
   width="80%"
   caption="Keys are updated using the The Things Stack keys"
 />
@@ -787,19 +787,19 @@ Make sure to attach the antennas first before powering on the **WisBlock Kit 2**
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino29_2.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino29_2.png"
   width="80%"
   caption="Double check the board and COM port"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino29_3.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino29_3.png"
   width="80%"
   caption="Press the upload button to program the WisBlock Kit 2 using RAK4631"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\arduino29_4.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/arduino29_4.png"
   width="80%"
   caption="Successful code Uploading"
 />
@@ -807,7 +807,7 @@ Make sure to attach the antennas first before powering on the **WisBlock Kit 2**
 18. Check again your **The Things Stack** account and go to **Applications** > **Wisblock Kit2 Weather Monitoring** > **Live Data**. Wait for the uplink data messages that are updated every 20 seconds.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-device\TTS16.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-device/TTS16.png"
   width="80%"
   caption="Successful WisBlock Kit 2 onboarding using The Things Stack"
 />
@@ -819,7 +819,7 @@ This section will guide you on how to integrate your application using Ubidots.
 1. Go to [ubidots.com](https://ubidots.com), then click **SIGN UP**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub1.png"
   width="80%"
   caption="Sign up a Ubidots account"
 />
@@ -829,13 +829,13 @@ This section will guide you on how to integrate your application using Ubidots.
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub2.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub2.png"
   width="80%"
   caption="Ubidots using STEM account"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub3.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub3.png"
   width="80%"
   caption="Sign up for free account"
 />
@@ -843,13 +843,13 @@ This section will guide you on how to integrate your application using Ubidots.
 3. Go to **Devices** > **Devices**, and click **Create Device**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub4.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub4.png"
   width="80%"
   caption="Device menu of Ubidots"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub5.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub5.png"
   width="80%"
   caption="Create Device"
 />
@@ -861,7 +861,7 @@ This section will guide you on how to integrate your application using Ubidots.
    - Device: **Blank Device**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub6.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub6.png"
   width="80%"
   caption="Choose Blank Device"
 />
@@ -873,13 +873,13 @@ This section will guide you on how to integrate your application using Ubidots.
   - Device label: **wisblock-kit2-weather-monitoring**
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub7_1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub7_1.png"
   width="80%"
   caption="Edit Add New Device for desired name"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub8_1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub8_1.png"
   width="80%"
   caption="Device Weather Monitoring was created"
 />
@@ -887,7 +887,7 @@ This section will guide you on how to integrate your application using Ubidots.
 6. After adding the device, fill in the **Description** and **SET LOCATION**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub8_1_1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub8_1_1.png"
   width="80%"
   caption="Set your desired location"
 />
@@ -895,13 +895,13 @@ This section will guide you on how to integrate your application using Ubidots.
 7. After filling in, go to **Plugins**, then click **Create Data Plugin**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub9.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub9.png"
   width="80%"
   caption="Choose Devices then Plugins"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub10.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub10.png"
   width="80%"
   caption="Create Data Plugin"
 />
@@ -909,13 +909,13 @@ This section will guide you on how to integrate your application using Ubidots.
 8. A window on the right side pops up, and choose **The Things Stack**. Follow the instructions given by the plugin, then click the forward button.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub11.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub11.png"
   width="80%"
   caption="Choose The Things Stack LoraWAN devices"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub12.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub12.png"
   width="80%"
   caption="Click forward button"
 />
@@ -924,7 +924,7 @@ This section will guide you on how to integrate your application using Ubidots.
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub13.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub13.png"
   width="80%"
   caption="Choose Default token"
 />
@@ -932,7 +932,7 @@ This section will guide you on how to integrate your application using Ubidots.
 10. Finally, press the check button to install the plugin.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub14.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub14.png"
   width="80%"
   caption="Completing the plugins"
 />
@@ -940,13 +940,13 @@ This section will guide you on how to integrate your application using Ubidots.
 11. After installing the plugin, click on **The Things Stack**, then go to **Decoder**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub15.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub15.png"
   width="80%"
   caption="Press The Thing Stack"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub16.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub16.png"
   width="80%"
   caption="Save then go to Decoder"
 />
@@ -959,13 +959,13 @@ This section will guide you on how to integrate your application using Ubidots.
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub17.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub17.png"
   width="80%"
   caption="Editing the Decoding Function"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub18.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub18.png"
   width="80%"
   caption="After editing, press SAVE & MAKE LIVE"
 />
@@ -973,7 +973,7 @@ This section will guide you on how to integrate your application using Ubidots.
 13. Go back to the The Things Stack account and select **Go to applications**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\TTS17.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/TTS17.png"
   width="80%"
   caption="Go to The Things Stack account applications"
 />
@@ -982,7 +982,7 @@ This section will guide you on how to integrate your application using Ubidots.
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\TTS18.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/TTS18.png"
   width="80%"
   caption="Go to your device wisblock-kit2-weathermonitoring"
 />
@@ -991,7 +991,7 @@ This section will guide you on how to integrate your application using Ubidots.
 15. Under your device tab, choose **Integrations** > **Webhooks** and then click the **Add webhook** button.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\TTS19.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/TTS19.png"
   width="80%"
   caption="Add webhook integration"
 />
@@ -1000,13 +1000,13 @@ This section will guide you on how to integrate your application using Ubidots.
 16. Choose **Custom webhook**, then fill in all the necessary fields like **Webhook ID** and **Webhook format**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\TTS20.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/TTS20.png"
   width="80%"
   caption="Choose Custom webhook"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\TTS21.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/TTS21.png"
   width="80%"
   caption="Editing webhook"
 />
@@ -1014,26 +1014,26 @@ This section will guide you on how to integrate your application using Ubidots.
 17.  Go back again to your Ubidots account **Weather Monitoring** to obtain **Base URL**, **X-Auth-Token**, and **Uplink message**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\TTS22.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/TTS22.png"
   width="80%"
   caption="Editing webhook"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub19.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub19.png"
   width="80%"
   caption="Go back to Ubidots account then go to Devices and Weather Monitoring"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub20_1.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub20_1.png"
   width="80%"
   caption="Copying the Token for The Things Stack Webhook token"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub21.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub21.png"
   width="80%"
   caption="Copying the Ubidots URL for The Things Stack Base URL and Uplink message"
 />
@@ -1041,7 +1041,7 @@ This section will guide you on how to integrate your application using Ubidots.
 18.  After filling in the important fields, click the **Add webhook** button.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\TTS23.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/TTS23.png"
   width="80%"
   caption="Completing the Webhook integration"
 />
@@ -1049,13 +1049,13 @@ This section will guide you on how to integrate your application using Ubidots.
 19. Now, you need to create a dashboard in **Ubidots**. Click **Data** > **Dashboards**, then click the **Add new Dashboard** button.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub22.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub22.png"
   width="80%"
   caption="Choose Data the Dashboards"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub23.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub23.png"
   width="80%"
   caption="Adding a new dashboard"
 />
@@ -1064,7 +1064,7 @@ This section will guide you on how to integrate your application using Ubidots.
 20. Edit the **Add new Dashboard** window to your desired details, then press check button.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub53.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub53.png"
   width="80%"
   caption="Editing the Dashboard general information"
 />
@@ -1072,13 +1072,13 @@ This section will guide you on how to integrate your application using Ubidots.
 21. Click **Add new Widget**. A window appears on the right side, and choose **Thermometer**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub54.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub54.png"
   width="80%"
   caption="Adding a widget by pressing +"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub55.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub55.png"
   width="80%"
   caption="Choose Thermometer widget for temp variable"
 />
@@ -1087,7 +1087,7 @@ This section will guide you on how to integrate your application using Ubidots.
 22. Edit the **Thermometer** widget. Change it into **Temperature**, then click the **Add Variables** button.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub56.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub56.png"
   width="80%"
   caption="Adding a variable and changing the widget into Temperature"
 />
@@ -1096,14 +1096,14 @@ This section will guide you on how to integrate your application using Ubidots.
 23. A window will pop up. Click **wisblock-kit2-weather-monitoring**, select the **temp** variable, then press the check button.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub30.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub30.png"
   width="80%"
   caption="Selecting variables in a widget"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub31.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub31.png"
   width="80%"
   caption="Choose temp variable"
 />
@@ -1113,7 +1113,7 @@ This section will guide you on how to integrate your application using Ubidots.
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub32.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub32.png"
   width="80%"
   caption="Pressing check button to finalize the widget"
 />
@@ -1121,7 +1121,7 @@ This section will guide you on how to integrate your application using Ubidots.
 25.  After adding the Temperature widget, click on the plus sign at the right side to add another widget. This time, choose **Gauge**, and add the **Humidity** widget.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub60.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub60.png"
   width="80%"
   caption="Adding Gauge to Humidity widget"
 />
@@ -1131,7 +1131,7 @@ This section will guide you on how to integrate your application using Ubidots.
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub61.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub61.png"
   width="80%"
   caption="Adding hum variable to Humidity widget"
 />
@@ -1139,7 +1139,7 @@ This section will guide you on how to integrate your application using Ubidots.
 27. Finally, click the check button to save.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub62.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub62.png"
   width="80%"
   caption="Completing the Humidity widget"
 />
@@ -1147,7 +1147,7 @@ This section will guide you on how to integrate your application using Ubidots.
 28. Use the same method in adding the Temperature and Humidity widgets. Just click on the plus sign at the right to add another widget, then choose **Gauge**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub63.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub63.png"
   width="80%"
   caption="Adding Gauge to Pressure widget"
 />
@@ -1155,7 +1155,7 @@ This section will guide you on how to integrate your application using Ubidots.
 29.  This time, add the **Pressure** widget under Gauge, then click **Add Variables**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub64.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub64.png"
   width="80%"
   caption="Adding variable to Pressure widget"
 />
@@ -1164,7 +1164,7 @@ This section will guide you on how to integrate your application using Ubidots.
 30. After editing the name into **Pressure**, click **wisblock-kit2-weather-monitoring**, choose the **press** variable, then press the check button.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub65.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub65.png"
   width="80%"
   caption="Adding press variable to Pressure widget"
 />
@@ -1173,7 +1173,7 @@ This section will guide you on how to integrate your application using Ubidots.
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub66.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub66.png"
   width="80%"
   caption="Editing Pressure widget range to 0-1000 the press check button"
 />
@@ -1181,14 +1181,14 @@ This section will guide you on how to integrate your application using Ubidots.
 32.   Finally, the last widget to be created is the **Luminosity**. Click on the plus sign at the right to add another widget, choose **Gauge**, add the **Luminosity** widget, then click **Add Variables**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub67.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub67.png"
   width="80%"
   caption="Adding Gauge for Luminosity widget"
 />
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub68.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub68.png"
   width="80%"
   caption="Adding variable of Luminosity widget"
 />
@@ -1198,7 +1198,7 @@ This section will guide you on how to integrate your application using Ubidots.
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub69.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub69.png"
   width="80%"
   caption="Adding light variable of Luminosity widget"
 />
@@ -1207,7 +1207,7 @@ This section will guide you on how to integrate your application using Ubidots.
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub70.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub70.png"
   width="80%"
   caption="Editing Luminosity widget range to 0-1000 the press check button"
 />
@@ -1215,7 +1215,7 @@ This section will guide you on how to integrate your application using Ubidots.
 35. After adding the four widgets, you will then see the same page, as shown in **Figure 131**.
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub71.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub71.png"
   width="80%"
   caption="Final appearance of the widgets"
 />
@@ -1227,7 +1227,7 @@ This section will guide you on how to integrate your application using Ubidots.
     - Unit: **°C**
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub72.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub72.png"
   width="80%"
   caption="Editing the temp variable"
 />
@@ -1235,7 +1235,7 @@ This section will guide you on how to integrate your application using Ubidots.
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub73.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub73.png"
   width="80%"
   caption="Adding unit for temp variable"
 />
@@ -1247,13 +1247,13 @@ This section will guide you on how to integrate your application using Ubidots.
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub74.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub74.png"
   width="80%"
   caption="Editing the hum variable"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub75.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub75.png"
   width="80%"
   caption="Adding unit for hum variable"
 />
@@ -1264,13 +1264,13 @@ This section will guide you on how to integrate your application using Ubidots.
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub76.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub76.png"
   width="80%"
   caption="Editing the press variable"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub77.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub77.png"
   width="80%"
   caption="Adding unit for press variable"
 />
@@ -1281,13 +1281,13 @@ This section will guide you on how to integrate your application using Ubidots.
     - Unit: **lux**
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub78.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub78.png"
   width="80%"
   caption="Editing the light variable"
 />
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub79.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub79.png"
   width="80%"
   caption="Adding unit for light variable"
 />
@@ -1296,7 +1296,7 @@ After doing all these steps, you already finished the **WisBlock Kit 2 Weather M
 
 
 <rk-img
-  src="\assets\images\knowledge-hub\rak-developer-kit\kit-2\wisblock-kit1-ubidots\ub82.png"
+  src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-2/wisblock-kit1-ubidots/ub82.png"
   width="80%"
   caption="Final dashboard of WisBlock Kit 2 Weather Monitoring"
 />

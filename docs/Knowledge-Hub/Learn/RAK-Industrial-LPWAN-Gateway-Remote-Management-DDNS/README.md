@@ -75,7 +75,7 @@ You may also visit the OpenWrt [DDNS Client Guide](https://openwrt.org/docs/guid
 1. Go to the [DYNDNS Service](https://dyndnss.net) website and click "**Register**" as shown in Figure 1.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/register-ddns-service/register.png"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-ddns/register-ddns-service/register.png"
   width="100%"
   caption="Register to DYNDNS Account"
 />
@@ -83,7 +83,7 @@ You may also visit the OpenWrt [DDNS Client Guide](https://openwrt.org/docs/guid
 2. Fill in the following details: **Name, E-mail Address, User Name** and **Password**. Agree with the terms and click "**Create a Free Account**".
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/register-ddns-service/sign-up.png"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-ddns/register-ddns-service/sign-up.png"
   width="100%"
   caption="Create a Free Account"
 />
@@ -97,7 +97,7 @@ A confirmation link shall be sent into your e-mail address which will bring you 
 1. Once logged, click on the "**Creating a new DynDNS Url**" link shown in Figure 3.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/register-ddns-service/create-url.png"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-ddns/register-ddns-service/create-url.png"
   width="100%"
   caption="Create DynDNS URL"
 />
@@ -108,7 +108,7 @@ For demonstration, "rakwireless.dyndnss.net" shall be used.
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/register-ddns-service/rakwireless-url.png"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-ddns/register-ddns-service/rakwireless-url.png"
   width="100%"
   caption="Create Subdomain Name"
 />
@@ -116,7 +116,7 @@ For demonstration, "rakwireless.dyndnss.net" shall be used.
 3. The DDNS URL is created. The Subdomain should now have a password which we will needed to setup the Gateway DDNS Service, full DDNS URL and “ENTER” button that will force the DynDNSS service to get the Gateway current IP.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/register-ddns-service/subdomain-details.png"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-ddns/register-ddns-service/subdomain-details.png"
   width="100%"
   caption="DynDNS Url Information"
 />
@@ -128,7 +128,7 @@ For demonstration, "rakwireless.dyndnss.net" shall be used.
 2. In the Web UI, navigate to `Services>Dynamic DNS (Beta)` as shown in Figure 6. For further details, read the [Services](/Knowledge-Hub/Learn/Resources/Web-Management-Platform/#services) section of the Web Management Platform User Manual.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/ddns-service-setup/dynamic-dns-beta.jpg"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-ddns/ddns-service-setup/dynamic-dns-beta.jpg"
   width="100%"
   caption="RAK Gateway Web UI"
 />
@@ -136,7 +136,7 @@ For demonstration, "rakwireless.dyndnss.net" shall be used.
 3. In the Dynamic DNS (Beta) tab, input a name for the service in the text box and click the “**Add**” button as shown in Figure 7.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/ddns-service-setup/create-ddns-service.jpg"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-ddns/ddns-service-setup/create-ddns-service.jpg"
   width="100%"
   caption="Create a DDNS Service"
 />
@@ -150,7 +150,7 @@ For demonstration, "rakwireless.dyndnss.net" shall be used.
 * **Password**: DynDNSS Password [Create a DynDNS URL](#create-a-dyndns-url) (see Figure 5).
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/ddns-service-setup/ddns-basic-config.jpg"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-ddns/ddns-service-setup/ddns-basic-config.jpg"
   width="100%"
   caption="DDNS Basic Settings Configuration"
 />
@@ -165,13 +165,13 @@ This mean that the DDNS Service of the Gateway will check and report to dyndnss.
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/ddns-service-setup/ddns-advanced-config.jpg"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-ddns/ddns-service-setup/ddns-advanced-config.jpg"
   width="100%"
   caption="DDNS Advanced Settings Configuration"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/ddns-service-setup/network-interface.jpg"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-ddns/ddns-service-setup/network-interface.jpg"
   width="75%"
   caption="Network Interface Options"
 />
@@ -185,7 +185,7 @@ This is the page where you can see the dyndnss.net IP, which is the IP address t
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/ddns-service-setup/starting-the-ddns.jpg"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-ddns/ddns-service-setup/starting-the-ddns.jpg"
   width="100%"
   caption="Starting the DDNS Service in the Gateway"
 />
@@ -193,7 +193,7 @@ This is the page where you can see the dyndnss.net IP, which is the IP address t
 7. Go back to the dyndnss.net web page and click on the “**ENTER**” button.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/ddns-service-setup/updating-ip-address.jpg"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-ddns/ddns-service-setup/updating-ip-address.jpg"
   width="100%"
   caption="Updating the Real IP Address"
 />
@@ -201,7 +201,7 @@ This is the page where you can see the dyndnss.net IP, which is the IP address t
 * If the setup is correct, a confirmation message is seen with the real IP Address same as shown in Figure 8.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/ddns-service-setup/successful-update.jpg"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-ddns/ddns-service-setup/successful-update.jpg"
   width="100%"
   caption="DynDNS Confirmation Screen"
 />
@@ -209,7 +209,7 @@ This is the page where you can see the dyndnss.net IP, which is the IP address t
 8. Click the “**To Account**” button to turn back to the DynDNS Url Information page. The assigned IP Address is now shown and the last time it was updated.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/ddns-service-setup/dydns-updated-ip.jpg"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-ddns/ddns-service-setup/dydns-updated-ip.jpg"
   width="100%"
   caption="DynDNS Updated IP"
 />
@@ -217,7 +217,7 @@ This is the page where you can see the dyndnss.net IP, which is the IP address t
 9. Open the URL in the Web Browser and the RAK Gateway Web UI Log-in should appear. You can access your Gateway from anywhere using this URL.
 
 <rk-img
-  src="/assets/images/knowledge-hub/deployment-guide/gateway-remote-management-ddns/ddns-service-setup/web-ui-access.jpg"
+  src="/assets/images/knowledge-hub/learn/gateway-remote-management-ddns/ddns-service-setup/web-ui-access.jpg"
   width="100%"
   caption="RAK Gateway Remote Access From URL"
 />

@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/the-importance-of-high-power-wifi-module-and-power-line-communications/overview.png
+rak_img: /assets/images/knowledge-hub/learn/the-importance-of-high-power-wifi-module-and-power-line-communications/overview.png
 rak_desc: A brief discussion of a high power WiFi Module and Power Line Communications (PLC).
 tags:
   - Tutorial
@@ -30,7 +30,7 @@ A WiFi module is a self-contained SOC with integrated TCP/IP protocol stack that
 
 A high power WiFi module is a combination of ARM7 based processors, an RF transceiver, 802.11 MAC, security and PHY functions, which works with IEEE regulatory domains.
 
-![Overview](/assets/images/knowledge-hub/tutorials/the-importance-of-high-power-wifi-module-and-power-line-communications/overview.png)
+![Overview](/assets/images/knowledge-hub/learn/the-importance-of-high-power-wifi-module-and-power-line-communications/overview.png)
 
 The high power WiFi module uses a RTC (Real Time Clock) that runs from a battery and uses an external antenna as an interface. It also has power supply monitoring capability and low power mode operations in functions as in Sleep, Deep Sleep and Standby.
 
@@ -40,7 +40,7 @@ The high power WiFi module uses a RTC (Real Time Clock) that runs from a battery
 
 * This module effectively eliminates the need for an extra cable for data transfer or a separate power supply for the device. There are two types of PLCs:The Narrowband PLC – This works at lower frequencies (3-500 KHz), lower data rates and has a longer range up to several kilometers and is extendable using repeaters. Smart Grid and smart energy generation in micro inverters for solar panels uses this widely.The Broadband PLC – This works at higher frequencies, high data rates, and comes in use in short-range applications. It comes in useful in Internet distribution and home networking and is the choice of many companies in the Home Area Networking (HAN) segment.
 
-![Circuit](/assets/images/knowledge-hub/tutorials/the-importance-of-high-power-wifi-module-and-power-line-communications/circuit.png)
+![Circuit](/assets/images/knowledge-hub/learn/the-importance-of-high-power-wifi-module-and-power-line-communications/circuit.png)
 
 
 The high power WiFi module and [Power Line communication module](https://www.rakwireless.com/en-us/products/plc-boards-and-modules/lx200v30-plc-homeplug-av-module) is useful for data transfer during communications. While the first comes in use to gain access to WiFi module devices, the latter is useful in sending and receiving data over existing power cables.

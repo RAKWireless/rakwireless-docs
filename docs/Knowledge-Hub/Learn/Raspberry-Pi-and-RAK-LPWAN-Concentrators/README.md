@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/wishat.jpg
+rak_img: /assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/wishat.jpg
 rak_desc: This guide will show you how to set up the Raspberry Pi and make it work with the RAK LPWAN HATs
 tags:
   - User-Manual
@@ -46,7 +46,7 @@ Flashing the [latest](https://www.raspberrypi.com/software/operating-systems/) R
 Start with downloading and installing [balenaEtcher](https://www.balena.io/etcher/).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/1.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/1.png"
   width="70%"
   caption="balenaEtcher"
 />
@@ -56,7 +56,7 @@ Next, download the [latest](https://www.raspberrypi.com/software/operating-syste
 Insert the SD card into your PC/laptop and open **balenaEtcher**. Click on **Flash from file**, browse and select the Raspberry Pi OS you have downloaded.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/2.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/2.png"
   width="70%"
   caption="Flashing Raspberry Pi OS"
 />
@@ -66,7 +66,7 @@ BalenaEtcher should automatically recognize the SD card. If not, click on **Sele
 Once the Raspberry Pi OS and SD card are selected, click on **Flash**. Flashing will then start.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/3.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/3.png"
   width="70%"
   caption="Flashing in progress"
 />
@@ -74,7 +74,7 @@ Once the Raspberry Pi OS and SD card are selected, click on **Flash**. Flashing 
 Once the flashing is done, you will see the following screen.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/4.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/4.png"
   width="70%"
   caption="Flash Complete"
 />
@@ -104,7 +104,7 @@ This setup does not require a monitor or any input devices. The Raspberry Pi can
 Assuming you have flashed the latest Raspberry Pi OS, insert the SD card into your PC/laptop. Open the root of the directory of the card.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/5.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/5.png"
   width="70%"
   caption="boot Folder"
 />
@@ -134,7 +134,7 @@ Type the SSID and Password in the quotes (" ").
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/6.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/6.png"
   width="50%"
   caption="Example of wpa-supplicant.conf File"
 />
@@ -146,7 +146,7 @@ If you want to use the Ethernet interface, plug the Raspberry Pi directly into y
 Apart from the `wpa_supplicant.conf` file, also create an empty file (with no extension) named `ssh`. This will enable the SSH interface on the Raspberry Pi.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/7.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/7.png"
   width="100%"
   caption="Create an ssh File"
 />
@@ -156,7 +156,7 @@ Now you can eject the SD card and insert it into the Raspberry Pi. Once Pi is bo
 To find the assigned IP, you can either go to your router’s web UI in the DHCP clients menu or use a program (in this example [Advanced IP Scanner](https://www.advanced-ip-scanner.com/)) to scan the network.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/8.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/8.png"
   width="70%"
   caption="Advanced IP Scanner"
 />
@@ -164,7 +164,7 @@ To find the assigned IP, you can either go to your router’s web UI in the DHCP
 You can access the Raspberry Pi on that IP using a terminal console (in this example: PuTTY)
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/9.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/9.png"
   width="50%"
   caption="Access the Raspberry Pi"
 />
@@ -175,7 +175,7 @@ Login using the default credentials:
 - **Password:** raspberry
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/10.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/10.png"
   width="60%"
   caption="Raspberry Pi Console Line Interface"
 />
@@ -202,7 +202,7 @@ In the general Raspberry Pi setup, you will learn how to setup the Pi with the h
 Assuming you have flashed the latest Raspberry Pi OS, insert the SD card into your Raspberry Pi.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/11.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/11.png"
   width="70%"
   caption="Raspberry Pi with an SD card Inserted"
 />
@@ -210,7 +210,7 @@ Assuming you have flashed the latest Raspberry Pi OS, insert the SD card into yo
 Connect the monitor/ TV to the HDMI port (for Raspberry Pi 3B+) or MiniHDMI (for Raspberry Pi 4), and the keyboard to a USB port. Optionally, you can connect an Ethernet cable, if you want to use Ethernet. In this example, it will be shown how to connect the Raspberry Pi to a WI-FI network.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/12.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/12.png"
   width="70%"
   caption="Keyboard and Monitor connected to the Pi"
 />
@@ -218,7 +218,7 @@ Connect the monitor/ TV to the HDMI port (for Raspberry Pi 3B+) or MiniHDMI (for
 Once everything is connected, you can power the Raspberry Pi with the power adapter. When the Pi is fully booted, you will see the following screen.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/13.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/13.png"
   width="60%"
   caption="First Time Boot"
 />
@@ -233,7 +233,7 @@ Login using the default Raspberry credentials:
 After you log in, you need to configure the Raspberry Pi – enable SSH, SPI, I2C, etc. To do this, run the command `sudo raspi-config`. This opens the Raspberry Pi user interface (UI), where you can configure different Raspberry Pi settings.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/14.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/14.png"
   width="70%"
   caption="Raspberry Pi Software Configuration Tool"
 />
@@ -245,13 +245,13 @@ If you are using the `Headless setup`, you can skip this step as the SSH interfa
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/15.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/15.png"
   width="100%"
   caption="Enable SSH interface"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/16.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/16.png"
   width="70%"
   caption="Enable SSH Server"
 />
@@ -269,7 +269,7 @@ If you are going to use an LPWAN concentrator with a USB interface and a [mPCIe 
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/17.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/17.png"
   width="100%"
   caption="Enable SPI Interface"
 />
@@ -277,7 +277,7 @@ If you are going to use an LPWAN concentrator with a USB interface and a [mPCIe 
 - **I2C** – enables the Inter-Integrated Circuit (I2C) interface. The I2C enables GPS communication.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/18.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/18.png"
   width="100%"
   caption="Enable SPI Interface"
 />
@@ -285,7 +285,7 @@ If you are going to use an LPWAN concentrator with a USB interface and a [mPCIe 
 - Disable **Login Shell over Serial** and enable **Serial port hardware** – here you disable Shell over Serial and enable the Serial port as it might cause a collision between the interfaces.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/19.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/19.png"
   width="100%"
   caption="Disable Shell over Serial/ Enable Serial Port Hardware"
 />
@@ -293,7 +293,7 @@ If you are going to use an LPWAN concentrator with a USB interface and a [mPCIe 
 It is recommended to configure the **Time Zone** of the Raspberry Pi. Head to **5 Localization Options -> L2 Time Zone**
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/20.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/20.png"
   width="100%"
   caption="Set up Local Time Zone"
 />
@@ -301,7 +301,7 @@ It is recommended to configure the **Time Zone** of the Raspberry Pi. Head to **
 Select your geographic area and then a city corresponding to your time zone.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/21.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/21.png"
   width="100%"
   caption="Set up Local Time Zone"
 />
@@ -313,7 +313,7 @@ If you are using the Headless setup, you can skip this step, as the Internet con
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/22.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/22.png"
   width="100%"
   caption="Set up Wi-Fi Internet connection"
 />
@@ -321,7 +321,7 @@ If you are using the Headless setup, you can skip this step, as the Internet con
 Enter the SSID of your Wireless Network and then the password of that network.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/23.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/23.png"
   width="100%"
   caption="Wi-Fi Setup"
 />
@@ -329,7 +329,7 @@ Enter the SSID of your Wireless Network and then the password of that network.
 Once done with configuring the Raspberry Pi, select **Finish**. The Pi will require a reboot to apply the changes.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/24.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/24.png"
   width="70%"
   caption="Reboot the Raspberry Pi"
 />
@@ -341,7 +341,7 @@ After the reboot, the session in the terminal will be closed. You need to log in
 Login in the Raspberry Pi.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/25.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/25.png"
   width="70%"
   caption="Access the Raspberry Pi"
 />
@@ -380,7 +380,7 @@ For example, if you are using RAK2287 SPI without LTE, you will need to type 7 a
 Alternatively, if you are going to use RAK5146 USB without LTE, you will need to type 10 and start the installation.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/26.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/26.png"
   width="70%"
   caption="Installing rak_common_for_gateway stack"
 />
@@ -388,7 +388,7 @@ Alternatively, if you are going to use RAK5146 USB without LTE, you will need to
 When the installation is complete, you will see the following on your screen.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/raspberry-pi-and-rak-lpwan-concentrators/27.png"
+  src="/assets/images/knowledge-hub/learn/raspberry-pi-and-rak-lpwan-concentrators/27.png"
   width="70%"
   caption="Successfully Installed Stack"
 />
