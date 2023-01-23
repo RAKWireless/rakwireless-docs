@@ -960,6 +960,8 @@ The following fields are required:
 | MaxRSSI       | MAXRSSI                                      | Float      |
 | MinSNR        | MINSNR                                       | Float      |
 | MaxSNR        | MAXSNR                                       | Float      |
+| minMod        | MINMOD                                       | Integer    |
+| maxMod        | MAXMAD                                       | Integer    |
 | hotspot_01    | HOTSPOT_01                                   | Location   |
 | hotspot_02    | HOTSPOT_01                                   | Location   |
 | hotspot_0…    | HOTSPOT_...                                  | Location   |
