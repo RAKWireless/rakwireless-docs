@@ -103,7 +103,7 @@ For RAK13002, the accessible GPIO pin assignments are defined as follows in the 
 - `WB_IO5` for IO5, GPIO5 pin
 - `WB_IO6` for IO6, GPIO6 pin
 - `WB_SW1` for SW1 pin
-- `WB_A0` for AIN1, ADC Input pin
+- `WB_A0` for AIN0, ADC Input pin
 - `WB_A1` for AIN1, ADC Input pin
 
 | Row/Column | Column 1 | Column 2 | Column 3 | Column 4 |
