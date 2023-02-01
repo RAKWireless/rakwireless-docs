@@ -16,6 +16,12 @@ posted: 29/02/2020 10:30 AM
 
 # RAK5005-O Baseboard Installation Guide
 
+:::tip 📝 NOTE:
+
+RAK19007 is the 2nd generation WisBlock Base board in same form-factor with RAK5005-O. There are minor differences on the two WisBlock Base boards with makes this guide compatible to both RAK19007 and RAK5005-O Baseboards.
+
+:::
+
 RAK5005-O WisBlock module is a motherboard that allows you to attach  MCU, sensors, and IO modules through the standardized expansion connectors. These connectors provide a data bus interconnection between the modules attached to the baseboard.
 
 This document explains the details related to the installation of modules into the RAK5005-O board. The following section discusses the general concepts to manipulate the WisConnector in any WisBlock module are explained. For the second one, it explains the installation details of each type of WisBlock module: Core, Sensor, and IO, and the last section explains how to remove a WisBlock module from the RAK5005-O baseboard.

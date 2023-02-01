@@ -19,8 +19,8 @@ tags:
 
 ## Content
 
-- [Introduction](#introduction)    
-- [Safety information](#safety-information)    
+- [Introduction](#introduction)
+- [Safety information](#safety-information)
 - [Hardware Setup](#hardware-setup)
 - [Arduino IDE BSP Installation](#arduino-ide-bsp-installation)
 - [PlatformIO Installation](#installation-of-bsp-in-platformio)
@@ -65,9 +65,9 @@ Read the following items carefully so that WisBlock can be used safely.
 
 ## Hardware Setup
 
-The RAK5005-O board offers several GPIO's on solder pads or the WisBlock Sensor or WisBlock IO modules. These GPIO's are named IO1 to IO6 and SW1. These GPIO's are connected to GPIO's of the RAK11200 module.    
+The RAK5005-O board offers several GPIO's on solder pads or the WisBlock Sensor or WisBlock IO modules. These GPIO's are named IO1 to IO6 and SW1. These GPIO's are connected to GPIO's of the RAK11200 module.
 
-The GPIO assignments are defined in the RAK11200 variant.h file of the Arduino BSP.   
+The GPIO assignments are defined in the RAK11200 variant.h file of the Arduino BSP.
 
 **RAK5005-O GPIO mapping to RAK11200 GPIO ports**
  * RAK5005-O <->  ESP32
@@ -80,11 +80,11 @@ The GPIO assignments are defined in the RAK11200 variant.h file of the Arduino B
  * SW1       <->  Arduino GPIO number 34
  * A0        <->  Arduino GPIO number 36
  * A1        <->  Arduino GPIO number 39
- * SPI_CS    <->  Arduino GPIO number 32 
- * LED1      <->  Arduino GPIO number 12 
- * LED2      <->  Arduino GPIO number 2 
+ * SPI_CS    <->  Arduino GPIO number 32
+ * LED1      <->  Arduino GPIO number 12
+ * LED2      <->  Arduino GPIO number 2
 
-**Defined names from variant.h**  
+**Defined names from variant.h**
 ```cpp
 #define WB_IO1 14
 #define WB_IO2 27
@@ -96,7 +96,7 @@ The GPIO assignments are defined in the RAK11200 variant.h file of the Arduino B
 #define WB_A0 36
 #define WB_A1 39
 #define WB_CS 32
-#define WB_LED1 12   
+#define WB_LED1 12
 #define WB_LED2 2
 ```
 
@@ -108,7 +108,7 @@ Getting started with RAK11200 is simple and straightforward. The first thing you
 
 ### Install RAKWireless ESP32 BSP on Arduino Boards Manager
 
-1. To add board support for RAK11200 on Arduino, start Arduino IDE and open the Preferences window (**File** > **Preferences**).     
+1. To add board support for RAK11200 on Arduino, start Arduino IDE and open the Preferences window (**File** > **Preferences**).
 
 <rk-img
   src="/assets/images/wisblock/rak11200/quickstart/01-add-bsp-url.png"
@@ -124,9 +124,9 @@ Getting started with RAK11200 is simple and straightforward. The first thing you
   caption="Arduino Preferences"
 />
 
-3. Copy `https://raw.githubusercontent.com/RAKwireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless_index.json` and paste it into the new window.   
+3. Copy `https://raw.githubusercontent.com/RAKwireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless_index.json` and paste it into the new window.
 
-- If there is already an URL from another manufacturer in that field, paste the above URL into a new line. Then press the **OK** button.  
+- If there is already an URL from another manufacturer in that field, paste the above URL into a new line. Then press the **OK** button.
 
 <rk-img
   src="/assets/images/wisblock/rak11200/quickstart/03-add-bsp-url.png"
@@ -142,7 +142,7 @@ Getting started with RAK11200 is simple and straightforward. The first thing you
   caption="Arduino Boards Manager"
 />
 
-5. Type **RAK** in the search bar. The RAKwireless WisBlock Core modules will be shown in the window.  
+5. Type **RAK** in the search bar. The RAKwireless WisBlock Core modules will be shown in the window.
 
 <rk-img
   src="/assets/images/wisblock/rak11200/quickstart/05-add-bsp.png"
@@ -150,7 +150,7 @@ Getting started with RAK11200 is simple and straightforward. The first thing you
   caption="Arduino Tools Boards Manager"
 />
 
-6. Select RAKwireless ESP32 Boards and click on **Install** button. 
+6. Select RAKwireless ESP32 Boards and click on **Install** button.
 
 _**Depending on your connection speed, the installation can take some time. Just be patient.**_
 
@@ -187,6 +187,10 @@ Make sure that your WisBlock hardware has been connected with your PC correctly,
 />
 
 1. Before uploading your sketch, short circuit BOOT0 and GND pin and press the reset button. Then click the Upload button using the configuration below.
+
+:::tip 📝 NOTE
+Pin headers and jumpers are included on the RAK11200, which can be soldered to the WisBlock Base and help with BOOT0 pin accessibility.
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak11200/quickstart/rak11200-Boot0-for-flashing.png"
@@ -251,7 +255,7 @@ OTA stands for Over-The-Air. This feature allows uploading a new program to RAK1
 
  - [ESP32 Basic OTA in Arduino IDE](https://lastminuteengineers.com/esp32-ota-updates-arduino-ide/)
 
-If you already installed the RAKwireless ESP32, then the BasicOTA sketch has also been installed. 
+If you already installed the RAKwireless ESP32, then the BasicOTA sketch has also been installed.
 
 1. Open the Arduino IDE -> File -> Examples-> ArduinoOTA-> BasicOTA.
 

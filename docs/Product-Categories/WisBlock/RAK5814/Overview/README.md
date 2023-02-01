@@ -3,7 +3,7 @@ rak_img: /assets/images/wisblock/rak5814/overview/RAK5814.png
 rak_desc: RAK5814 is a crypto module, part of the WisBlock Module Series. It was designed to be secured with hardware-based key storage. The crypto chip is ATECC608A from Microchip.
 rak_grp: [wisblock, wisextra]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK5814
@@ -15,6 +15,7 @@ tags:
 
 Thank you for choosing **RAK5814 WisBlock Crypto Module** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [RAK5814 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)

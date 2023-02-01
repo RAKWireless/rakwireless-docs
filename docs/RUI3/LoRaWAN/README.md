@@ -3559,7 +3559,8 @@ void loop()
 
 ### mask
 
-This API configures the channel of the device by setting the hexadecimal channel mask.
+This API configures the channel of the device by setting the hexadecimal channel mask. The complete table for mask value can be found on [AT+MASK section](/RUI3/Serial-Operating-Modes/AT-Command-Manual/#at-mask)
+
 
 ```c
 RAKLorawan::mask

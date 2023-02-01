@@ -44,6 +44,7 @@ Thank you for choosing **RAK11200 WisBlock WiFi Module** in your awesome IoT Pro
 
 To use a **RAK11200**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK11200** module and has the programming/debug interface.   
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING  
+- BOOT0 pin of ESP32 in RAK11200 must be manually connected to GND to enable Download Mode or firmware uploading procedure.  
 - Make sure to secure the module with the provided screws to ensure proper function.
 ::: 

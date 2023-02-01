@@ -96,6 +96,15 @@ After 100% progress, the Arduino IDE has been installed successfully.
 
 In Linux, there is no install process. It is just a process of uncompression, then you can open Arduino IDE successfully.
 
+:::tip 📝 NOTE
+There are some Linux distributions where Pyserial must be installed first. This can be done by installing Pyserial using pip.
+
+Execute the following in terminal:
+
+- `sudo apt-get install python3-pip python-dev` (needed if pip is not installed yet) 
+- `pip3 install pyserial`
+:::
+
 
 ### Install in Mac OS X
 

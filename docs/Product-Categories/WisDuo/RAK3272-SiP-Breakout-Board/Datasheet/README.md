@@ -279,7 +279,7 @@ The use of **DCDC** is optional but improves the power efficiency. If you want t
 | Parameter  | Condition   | Current Consumption (Typical) |
 | ---------- | ----------- | ----------------------------- |
 | TX mode    | 20&nbsp;dBm | 87&nbsp;mA                    |
-| RX mode    | -           | 33&nbsp;mA                    |
+| RX mode    | -           | 6.14&nbsp;mA                    |
 | Sleep mode | -           | 1.69&nbsp;uA                  |
 
 ###### RAK3272LP-SiP (uses RFO_LP RF output)
@@ -291,7 +291,7 @@ The use of **DCDC** is optional but improves the power efficiency. If you want t
 |            | 10&nbsp;dBm | 28&nbsp;mA                    |
 |            | 8&nbsp;dBm  | 25&nbsp;mA                    |
 | RX mode    | -           | 9.69&nbsp;mA                  |
-| Sleep mode | -           | 2.1&nbsp;mA                   |
+| Sleep mode | -           | 2.1&nbsp;uA                   |
 
 
 ##### Schematic Diagram
@@ -339,11 +339,11 @@ You need to use [STM32CubeProgrammer](https://wiki.st.com/stm32mpu/wiki/STM32Cub
 
 Download the latest RAK3272-SiP and RAK3272LP-SiP Breakout Board firmware provided below.
 
-| Model                | Version | Source                                                                                      |
-| -------------------- | ------- | ------------------------------------------------------------------------------------------- |
-| RAK3272-SiP (.bin)   | V3.5.1  | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272-SiP_latest.bin)         |
-| RAK3272-SiP (.hex)   | V3.5.1  | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272-SiP_latest_final.hex)   |
-| RAK3272LP-SiP (.bin) | V3.5.1  | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272LP-SiP_latest.bin)       |
-| RAK3272LP-SiP (.hex) | V3.5.1  | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272LP-SiP_latest_final.hex) |
+| Model                | Version                   | Source                                                                                      |
+| -------------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
+| RAK3272-SiP (.bin)   | RUI3 (App only)           | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272-SiP_latest.bin)         |
+| RAK3272-SiP (.hex)   | RUI3 (Bootloader and App) | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272-SiP_latest_final.hex)   |
+| RAK3272LP-SiP (.bin) | RUI3 (App only)           | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272LP-SiP_latest.bin)       |
+| RAK3272LP-SiP (.hex) | RUI3 (Bootloader and App) | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272LP-SiP_latest_final.hex) |
 
 

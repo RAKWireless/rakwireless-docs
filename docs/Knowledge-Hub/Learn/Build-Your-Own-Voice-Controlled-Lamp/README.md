@@ -256,7 +256,7 @@ Cyberon is a pro tool, and no need to create the model because RAK supplies it w
 To test the project using Cyberon, you only need to flash the core with a simple Arduino code with the trained model. Also, use a certified core to utilize Cyberon that you can find in RAK store (Voice processing variant):
 
 - [RAK4631 Voice Processing](https://store.rakwireless.com/products/rak4631-lpwan-node?variant=42402017149126?utm_source=WisBlockRAK4631&utm_medium=Document&utm_campaign=BuyFromStore)
-- [RAK11200-C](https://store.rakwireless.com/products/wiscore-esp32-module-rak11200?variant=42402030452934?utm_source=WisBlockRAK11200&utm_medium=Document&utm_campaign=BuyFromStore)
+- [RAK11200 Voice Processing](https://store.rakwireless.com/products/wiscore-esp32-module-rak11200?variant=42402030452934?utm_source=WisBlockRAK11200&utm_medium=Document&utm_campaign=BuyFromStore)
 
 
 And the same hardware is used:

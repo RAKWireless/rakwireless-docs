@@ -40,8 +40,8 @@ RAK1901 is a WisBlock Sensor which extends the WisBlock system with a Sensirion 
 ## Product Features
 
 * **Sensor specifications**
-    * ±2.0&nbsp;°C temperature accuracy
-    * -40&nbsp;°C to +125&nbsp;°C temperature range
+    * ±0.2°&nbsp;C temperature accuracy
+    * -40°&nbsp;C to +125°&nbsp;C temperature range
     * ±2.0% RH humidity accuracy
     * 0 to 100% humidity range
     * Voltage Supply: 3.3&nbsp;V

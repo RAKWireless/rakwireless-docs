@@ -206,7 +206,39 @@ void loop()
 ```
 :::
 
-### Timer
+## Flash
+
+### get()
+
+Reads a range of data from user flash partition.
+
+```c
+api.system.flash.get(offset, buf, len)
+```
+
+
+| **Function**   | `bool get(uint32_t offset, uint8_t * buf, uint32_t len)`                                                                                                                                                                                                                                                                                                                                    |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **offset** the offset to the start of user flash partition (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) <br> **buf** the buffer for reading the data <br>**len**the length of data (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) |
+| **Returns**    | **TRUE**	for reading data successfully <br> **FALSE** for reading data failure                                                                                                                                                                                                                                                                                                              |
+
+
+### set()
+
+Writes a range of data from user flash partition.
+
+```c
+api.system.flash.set(offset, buf, len)
+```
+
+
+| **Function**   | `bool set(uint32_t offset, uint8_t * buf, uint32_t len)`                                                                                                                                                                                                                                                                                                                                    |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **offset** the offset to the start of user flash partition (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) <br> **buf** the buffer for writing the data <br>**len**the length of data (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) |
+| **Returns**    | **TRUE**	for writing data successfully <br> **FALSE** for writing data failure                                                                                                                                                                                                                                                                                                              |
+
+
+## Timer
 
 On RUI3 Timer API, there are two different Timer modes based on the trigger. 
 
@@ -227,8 +259,7 @@ The timer control is performed via Timer ID. The Timer ID definition is shown be
 | RAK_TIMER_4  | timer ID #4  |
 
 
-
-#### create()
+### create()
 
 ```c
 api.system.timer.create()
@@ -261,7 +292,7 @@ void setup()
 ```
 :::
 
-#### start()
+### start()
 
 ```c
 api.system.timer.start()
@@ -271,7 +302,7 @@ api.system.timer.start()
 | **Parameters** | **id**  is the Timer ID<br>**ms** is the period of Timer (milliseconds)<br> **data** the data passed to Timer handler function |
 | **Returns**    | **TRUE**	for starting  Timer successfully <br> **FALSE** for starting Timer failure                                            |
 
-#### stop()
+### stop()
 
 ```c
 api.system.timer.stop()
@@ -280,39 +311,6 @@ api.system.timer.stop()
 | -------------- | -------------------------------------------------------------------------------- |
 | **Parameters** | **id**  is the Timer ID                                                          |
 | **Returns**    | **TRUE**	for stoping Timer successfully <br> **FALSE** for stoping Timer failure |
-
-
-## Flash
-
-### get()
-
-Reads a range of data from user flash partition.
-
-```c
-api.system.flash.get(offset, buf, len)
-```
-
-
-| **Function**   | `bool get(uint32_t offset, uint8_t * buf, uint32_t len)`                                                                                                                                                                                                                                                                                                                                    |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **offset** the offset to the start of user flash partition (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) <br> **buf** the buffer for reading the data <br>**len**the length of data (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) |
-| **Returns**    | **TRUE**	for reading data successfully <br> **FALSE** for reading data failure                                                                                                                                                                                                                                                                                                              |
-
-
-### set()
-
-Writes a range of data from user flash partition.
-
-```c
-api.system.flash.set(offset, buf, len)
-```
-
-
-| **Function**   | `bool set(uint32_t offset, uint8_t * buf, uint32_t len)`                                                                                                                                                                                                                                                                                                                                    |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **offset** the offset to the start of user flash partition (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) <br> **buf** the buffer for writing the data <br>**len**the length of data (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) |
-| **Returns**    | **TRUE**	for writing data successfully <br> **FALSE** for writing data failure                                                                                                                                                                                                                                                                                                              |
-
 
 
 ## Powersave
@@ -548,6 +546,7 @@ void loop()
 }
 ```
 :::
+
 
 
 ## Misc

@@ -1930,80 +1930,80 @@ The table below shows the attached list on setting the channel mask.
             <td>ALL</td>
             <td>0000</td>
             <td>0000000000000000</td>
-            <td>ENABLE</td>
-            <td>ALL</td>
-            <td>Channels</td>
+            <td>All Channels</td>
+            <td>All Channels</td>
+            <td>All Channels</td>
         </tr>
         <tr>
             <td>1</td>
             <td>0001</td>
             <td>0000000000000001</td>
-            <td>0-7</td>
-            <td>0-7</td>
+            <td>0-7, 64</td>
+            <td>0-7, 64</td>
              <td>0-7</td>
         </tr>
         <tr>
            <td>2</td>
             <td>0002</td>
             <td>0000000000000010</td>
-            <td>8-15</td>
-            <td>8-15</td>
+            <td>8-15, 65</td>
+            <td>8-15, 65</td>
             <td>8-15</td>
         </tr>
         <tr>
            <td>3</td>
             <td>0004</td>
             <td>0000000000000100</td>
-            <td>16-23</td>
-            <td>16-23</td>
+            <td>16-23, 66</td>
+            <td>16-23, 66</td>
             <td>16-23</td>
         </tr>
         <tr>
            <td>4</td>
             <td>0008</td>
             <td>0000000000001000</td>
-            <td>24-31</td>
-            <td>24-31</td>
+            <td>24-31, 67</td>
+            <td>24-31, 67</td>
             <td>24-31</td>
         </tr>
         <tr>
            <td>5</td>
             <td>0010</td>
             <td>0000000000010000</td>
-            <td>32-39</td>
-            <td>32-39</td>
+            <td>32-39, 68</td>
+            <td>32-39, 68</td>
             <td>32-39</td>
         </tr>
         <tr>
            <td>6</td>
             <td>0020</td>
             <td>0000000000100000</td>
-            <td>40-47</td>
-            <td>40-47</td>
+            <td>40-47, 69</td>
+            <td>40-47, 69</td>
             <td>40-47</td>
         </tr>
         <tr>
            <td>7</td>
             <td>0040</td>
             <td>0000000001000000</td>
-            <td>48-55</td>
-            <td>48-55</td>
+            <td>48-55, 70</td>
+            <td>48-55, 70</td>
             <td>48-55</td>
         </tr>
         <tr>
            <td>8</td>
             <td>0080</td>
             <td>0000000010000000</td>
-            <td>56-63</td>
-            <td>56-63</td>
+            <td>56-63, 71</td>
+            <td>56-63, 71</td>
             <td>56-63</td>
         </tr>
         <tr>
            <td>9</td>
             <td>0100</td>
             <td>0000000100000000</td>
-            <td>64-71</td>
-            <td>64-71</td>
+            <td>-</td>
+            <td>-</td>
             <td>64-71</td>
         </tr>
         <tr>
@@ -3164,10 +3164,10 @@ This command provides configuration Preamble Length for the P2P mode.
 **Example:**
 ```
 AT+PPL=?
-AT+PPL=200
+AT+PPL=20
 OK
 
-AT+PPL=200
+AT+PPL=20
 OK
 ```
 
@@ -3364,7 +3364,7 @@ This command provides configuration of all parameters for the P2P mode.
 **Example:**
 ```
 AT+P2P=?
-AT+P2P=868000000:12:0:3:200:14
+AT+P2P=868000000:7:0:0:20:14
 OK
 
 AT+P2P=868:12:300:3:200:14

@@ -21,7 +21,7 @@ rak_img: /assets/images/accessories/rakbox-b3/overview/overview.png
 
 ## Assembly
 
-**Step 1:** Fix the Sensor module with one M1.2\*3 screws on the mounting plate. For assembly method and precautions, please refer to  [RAK5005-O Baseboard Installation Guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/).
+**Step 1:** Fix the sensor module with one M1.2\*3 screws on the mounting plate. For assembly method and precautions, refer to  [WisBlock Base Board Installation Guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/).
 
 <rk-img
   src="/assets/images/accessories/rakbox-b3/installation/attaching-sensor.png"

@@ -7,7 +7,7 @@ tags:
   - RAK12052
   - Melexis
   - MLX90640
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 

@@ -25,14 +25,14 @@ The WisToolBox Desktop is available in Windows, macOS, and Linux.
 
 For direct downloads of installers:
   * [Windows](https://downloads.rakwireless.com/WisToolBox/WisToolBox_windows.exe)
-  * [Linux](https://downloads.rakwireless.com/WisToolBox/WisToolBox_linux.AppImage)
+  * [Linux (Ubuntu)](https://downloads.rakwireless.com/WisToolBox/WisToolBox_linux.AppImage)
   * [macOS](https://downloads.rakwireless.com/WisToolBox/WisToolBox_macOS.zip)
 
 :::tip 📝 NOTE
 Operating system version compatibility:
 - Windows 10 and newer 
 - MacOS Big Sur and newer
-- Linux 20.04 and newer 
+- Linux Ubuntu 20.04 and newer 
 
 For Linux users, [extra configuration](/Product-Categories/Software-Tools/WisToolBox/WisToolBoxDesktop/#linux-installation-configuration) is needed to enable automatic port detection of RUI3 enabled RAK module.
 :::

@@ -1,5 +1,5 @@
 ---
-rak_desc: For an easier experience with your RAK10700 WisBlock GNSS Tracker for LoRaWAN, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the GNSS Tracker. 
+rak_desc: For an easier experience with your RAK10700 WisBlock GNSS Tracker for LoRaWAN, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the GNSS Tracker.
 rak_img: /assets/images/wisblock/rak10700/overview/RAKBox-B2-Enclosure.png
 prev: ../Quickstart/
 next: ../Datasheet/
@@ -32,44 +32,44 @@ The Serial port is set up for 115200 baud, 8N1. It cannot be changed by AT comma
     - [AT?](#at)
     - [ATR](#atr)
     - [ATZ](#atz)
-    - [AT+STATUS](#atstatus)
+    - [AT+STATUS](#at-status)
   - [Keys, IDs, and EUIs Management](#keys-ids-and-euis-management)
-    - [AT+APPEUI](#atappeui)
-    - [AT+APPKEY](#atappkey)
-    - [AT+DEVEUI](#atdeveui)
-    - [AT+APPSKEY](#atappskey)
-    - [AT+NWKSKEY](#atnwkskey)
-    - [AT+DEVADDR](#atdevaddr)
+    - [AT+APPEUI](#at-appeui)
+    - [AT+APPKEY](#at-appkey)
+    - [AT+DEVEUI](#at-deveui)
+    - [AT+APPSKEY](#at-appskey)
+    - [AT+NWKSKEY](#at-nwkskey)
+    - [AT+DEVADDR](#at-devaddr)
   - [Joining and Sending Data to LoRaWAN Network](#joining-and-sending-data-to-lorawan-network)
-    - [AT+CFM](#atcfm)
-    - [AT+JOIN](#atjoin)
-    - [AT+NJS](#atnjs)
-    - [AT+NJM](#atnjm)
-    - [AT+SEND](#atsend)
+    - [AT+CFM](#at-cfm)
+    - [AT+JOIN](#at-join)
+    - [AT+NJS](#at-njs)
+    - [AT+NJM](#at-njm)
+    - [AT+SEND](#at-send)
   - [LoRaWAN Device Configuration](#lorawan-device-configuration)
-    - [AT+SENDFREQ](#atsendfreq)
-    - [AT+ADR](#atadr)
-    - [AT+CLASS](#atclass)
-    - [AT+DR](#atdr)
-    - [AT+TXP](#attxp)
-    - [AT+BAND](#atband)
-    - [AT+MASK](#atmask)
+    - [AT+SENDFREQ](#at-sendfreq)
+    - [AT+ADR](#at-adr)
+    - [AT+CLASS](#at-class)
+    - [AT+DR](#at-dr)
+    - [AT+TXP](#at-txp)
+    - [AT+BAND](#at-band)
+    - [AT+MASK](#at-mask)
   - [Device Information](#device-information)
-    - [AT+BAT](#atbat)
-    - [AT+RSSI](#atrssi)
-    - [AT+SNR](#atsnr)
-    - [AT+VER](#atver)
+    - [AT+BAT](#at-bat)
+    - [AT+RSSI](#at-rssi)
+    - [AT+SNR](#at-snr)
+    - [AT+VER](#at-ver)
   - [P2P Mode](#p2p-mode)
-    - [AT+NWM](#atnwm)
-    - [AT+PFREQ](#atpfreq)
-    - [AT+PSF](#atpsf)
-    - [AT+PBW](#atpbw)
-    - [AT+PCR](#atpcr)
-    - [AT+PPL](#atppl)
-    - [AT+PTP](#atptp)
-    - [AT+P2P](#atp2p)
-    - [AT+PSEND](#atpsend)
-    - [AT+PRECV](#atprecv)
+    - [AT+NWM](#at-nwm)
+    - [AT+PFREQ](#at-pfreq)
+    - [AT+PSF](#at-psf)
+    - [AT+PBW](#at-pbw)
+    - [AT+PCR](#at-pcr)
+    - [AT+PPL](#at-ppl)
+    - [AT+PTP](#at-ptp)
+    - [AT+P2P](#at-p2p)
+    - [AT+PSEND](#at-psend)
+    - [AT+PRECV](#at-precv)
   - [Appendix](#appendix)
     - [Appendix I Data Rate by Region](#appendix-i-data-rate-by-region)
     - [Appendix II TX Power by Region](#appendix-ii-tx-power-by-region)
@@ -115,7 +115,7 @@ The possible status codes are:
 | `+CME ERROR:6`         | The parameter is too long.                   |
 | `+CME ERROR:8`         | Value out of range.                          |
 
-More details on each command description and examples are given in the remainder of this section. 
+More details on each command description and examples are given in the remainder of this section.
 
 ----
 
@@ -130,7 +130,7 @@ Returns a list of all available commands with a short description
 | Command | Input Parameter | Return Value       | Return Code |
 | ------- | --------------- | ------------------ | ----------- |
 | `AT?`   | -               | *List of commands* | `OK`        |
-    
+
 
 ```
 AT?
@@ -180,7 +180,7 @@ AT+PRECV    P2P receive mode
 OK
 
 ```
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -193,7 +193,7 @@ This command restores all parameters to the initial default values of the module
 | `ATR?`  | -               | -            | `OK`        |
 | `ATR`   | -               | -            | `OK`        |
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -208,7 +208,7 @@ This command is used to trigger an MCU reset.
 | `ATZ?`  | -               | `ATZ`: Trig a MCU reset  | `OK`        |
 | `ATZ`   | -               | *No return. MCU resets.* | `OK`        |
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -255,11 +255,11 @@ LoRaWAN status:
    Region 10
    Network joined
 
-+STATUS: 
++STATUS:
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -282,7 +282,7 @@ This command is used to access and configure the APPEUI.
 ```
 AT+APPEUI?
 
-+APPEUI: Get or set the application EUI 
++APPEUI: Get or set the application EUI
 OK
 
 AT+APPEUI=?
@@ -299,7 +299,7 @@ AT+APPEUI=70b3d57ed00201eh
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -320,7 +320,7 @@ This command is used to access and configure the APPKEY.
 ```
 AT+APPKEY?
 
-AT+APPKEY: Get or set the application key 
+AT+APPKEY: Get or set the application key
 OK
 
 AT+APPKEY=?
@@ -337,7 +337,7 @@ AT+APPKEY=2b84e0b09b68e5cb42176fe753dcee7x
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -358,7 +358,7 @@ This command is used to access and configure the device EUI or DEVEUI.
 ```
 AT+DEVEUI?
 
-+DEVEUI: Get or set the device EUI 
++DEVEUI: Get or set the device EUI
 OK
 
 AT+DEVEUI=?
@@ -375,7 +375,7 @@ AT+DEVEUI=ac1f09fffe03efdx
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -396,7 +396,7 @@ This command is used to access and configure the application session key or APPS
 ```
 AT+APPSKEY?
 
-AT+APPSKEY: Get or set the application session key 
+AT+APPSKEY: Get or set the application session key
 OK
 
 AT+APPSKEY=?
@@ -413,7 +413,7 @@ AT+APPSKEY=3f6a66459d5edca63cbc4619cd61a11x
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -434,7 +434,7 @@ This command is used to access and configure the network session keys or NWKSKEY
 ```
 AT+NWKSKEY?
 
-AT+NWKSKEY: Get or Set the network session key 
+AT+NWKSKEY: Get or Set the network session key
 OK
 
 AT+NWKSKEY=?
@@ -451,7 +451,7 @@ AT+NWKSKEY=323d155a000df335307a16da0c9df53f0
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -472,7 +472,7 @@ This command is used to access and configure the device address or DEVADDR. If i
 ```
 AT+DEVADDR?
 
-AT+DEVADDR: Get or set the device address 
+AT+DEVADDR: Get or set the device address
 OK
 
 AT+DEVADDR=?
@@ -490,11 +490,11 @@ AT+DEVADDR=26021FBX
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
-## Joining and Sending Data to LoRaWAN Network    
+## Joining and Sending Data to LoRaWAN Network
 
 ### AT+CFM
 
@@ -513,7 +513,7 @@ This command is used to access and configure the type of payload of the device.
 ```
 AT+CFM?
 
-AT+CFM: Get or set the confirm mode 
+AT+CFM: Get or set the confirm mode
 OK
 
 AT+CFM=?
@@ -530,7 +530,7 @@ AT+CFM=3
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -553,9 +553,9 @@ This command is used to join a LoRaWAN network.
 
 ::: tip 📝 NOTE
 
-- This is an asynchronous command. `OK` means that the device is joining. The completion of the JOIN can be verified with the `AT+NJS=?` command. The asynchronous responses can be:    
-    - `+EVT:JOINED` after successful join;    
-    - `+EVT:JOIN FAILED` if the join process did not succeed.      
+- This is an asynchronous command. `OK` means that the device is joining. The completion of the JOIN can be verified with the `AT+NJS=?` command. The asynchronous responses can be:
+    - `+EVT:JOINED` after successful join;
+    - `+EVT:JOIN FAILED` if the join process did not succeed.
 -  Param3 is not supported yet and is fixed to 30s always.
 
 :::
@@ -565,7 +565,7 @@ This command is used to join a LoRaWAN network.
 ```
 AT+JOIN?
 
-AT+JOIN: Join network 
+AT+JOIN: Join network
 OK
 
 AT+JOIN=?
@@ -584,7 +584,7 @@ AT+JOIN=3:1:8:10
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -604,7 +604,7 @@ This command is used to check the status of the devices if it is connected to a 
 ```
 AT+NJS?
 
-AT+NJS: Get the join status 
+AT+NJS: Get the join status
 OK
 
 AT+NJS=?
@@ -613,7 +613,7 @@ AT+NJS:1
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -634,7 +634,7 @@ This command is used to access and configure the activation method of the device
 ```
 AT+NJM?
 
-AT+NJM: Get or set the network join mode 
+AT+NJM: Get or set the network join mode
 OK
 
 AT+NJM=?
@@ -651,7 +651,7 @@ AT+NJM=2
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -712,7 +712,7 @@ OK
 +EVT:2:48656C6C6F
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -735,7 +735,7 @@ This command allows to set the period in seconds between automatic packet transm
 ```
 AT+SENDFREQ?
 
-AT+SENDFREQ: Get or Set the automatic send time 
+AT+SENDFREQ: Get or Set the automatic send time
 OK
 
 AT+SENDFREQ=?
@@ -750,16 +750,16 @@ OK
 
 ::: tip 📝 NOTE
 
-_**REMARK**_  
-The GNSS module will take some time to get a location fix. The time depends on many factors but can take up to 45 seconds. The period of how often a location should be sent should be calculated taking into account:    
-1) Time to get a location fix (up to 45 seconds)    
-2) Local LoRaWAN regulations regarding duty cycles    
+_**REMARK**_
+The GNSS module will take some time to get a location fix. The time depends on many factors but can take up to 45 seconds. The period of how often a location should be sent should be calculated taking into account:
+1) Time to get a location fix (up to 45 seconds)
+2) Local LoRaWAN regulations regarding duty cycles
 
-_**If the sending period is set too small (location cannot be fixed by the GNSS module), the device will not be able to send valid location data to the LoRaWAN server.**_     
+_**If the sending period is set too small (location cannot be fixed by the GNSS module), the device will not be able to send valid location data to the LoRaWAN server.**_
 
 :::
 
-[Back](#content)    
+[Back](#content)
 
 
 ----
@@ -781,7 +781,7 @@ This command is used to access and configure the adaptive data rate of the modul
 ```
 AT+ADR?
 
-+ADR: Get or set the adaptive data rate setting 
++ADR: Get or set the adaptive data rate setting
 OK
 
 AT+ADR=?
@@ -798,7 +798,7 @@ AT+ADR=3
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -818,14 +818,14 @@ This command is used to access and configure the LoRaWAN class of the module.
 
 _**This FW of the device supports the LoRaWAN V1.0.2 stack**_.
 
-::: tip 📝 NOTE
+:::
 
 **Examples**:
 
 ```
 AT+CLASS?
 
-+CLASS: Get or set the device class 
++CLASS: Get or set the device class
 OK
 
 AT+CLASS=?
@@ -842,7 +842,7 @@ AT+CLASS=F
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -865,7 +865,7 @@ Check [Appendix I](#appendix-i-data-rate-by-region) for the input parameter depe
 ```
 AT+DR?
 
-AT+DR: Get or Set the Tx DataRate=[0..7] 
+AT+DR: Get or Set the Tx DataRate=[0..7]
 OK
 
 AT+DR=?
@@ -878,7 +878,7 @@ AT+DR=3
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -904,7 +904,7 @@ At EU868, a value of 2 represents **MaxEIRP - 4&nbsp;dB**, where MaxEIRP = +16&n
 ```
 AT+TXP?
 
-AT+TXP: Get or set the transmit power 
+AT+TXP: Get or set the transmit power
 OK
 
 AT+TXP=?
@@ -917,7 +917,7 @@ AT+TXP=0
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -930,7 +930,7 @@ This command is used to access and configure the regional frequency band.
 | Command                     | Input Parameter | Return Value                                                            | Return Code              |
 | --------------------------- | --------------- | ----------------------------------------------------------------------- | ------------------------ |
 | `AT+BAND?`                  | -               | `AT+BAND`: Get and set number corresponding to active regions           | `OK`                     |
-| `AT+BAND=?`                 | -               | `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12`, `8` | `OK`                     |
+| `AT+BAND=?`                 | -               | `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12`      | `OK`                     |
 | `AT+BAND=<Input Parameter>` | *< 0 to 12 >*   | -                                                                       | `OK` or `AT_PARAM_ERROR` |
 
 **List of Band Parameter Options**
@@ -947,8 +947,8 @@ This command is used to access and configure the regional frequency band.
 
 ::: tip 📝 NOTE
 
-The GNSS Tracker is only available for the following regions:  
-AU915, EU868, KR920, IN865, US915, RU864, AS923-1, AS923-2, AS923-3, AS923-4, 
+The GNSS Tracker is only available for the following regions:
+AU915, EU868, KR920, IN865, US915, RU864, AS923-1, AS923-2, AS923-3, AS923-4,
 :::
 
 **Examples**:
@@ -956,7 +956,7 @@ AU915, EU868, KR920, IN865, US915, RU864, AS923-1, AS923-2, AS923-3, AS923-4,
 ```
 AT+BAND?
 
-AT+BAND: Get and Set number corresponding to active regions 
+AT+BAND: Get and Set number corresponding to active regions
 OK
 
 AT+BAND=?
@@ -973,7 +973,7 @@ AT+BAND=22
 +CME ERROR:8
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -986,8 +986,8 @@ This command is used to access and configure the regional channel mask. Channel 
 | Command                     | Input Parameter | Return Value                                                       | Return Code              |
 | --------------------------- | --------------- | ------------------------------------------------------------------ | ------------------------ |
 | `AT+MASK?`                  | -               | `AT+MASK`: Get and set channels mask                               | `OK`                     |
-| `AT+MASK=?`                 | -               | `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12`, `8` | `OK`                     |
-| `AT+MASK=<Input Parameter>` | *< 0 to 12 >*   | -                                                                  | `OK` or `AT_PARAM_ERROR` |
+| `AT+MASK=?`                 | -               | `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12`      | `OK`                     |
+| `AT+MASK=<Input Parameter>` | *< 1 to 12 >*   | -                                                                  | `OK` or `AT_PARAM_ERROR` |
 
 **List of channel masks**
 
@@ -1019,7 +1019,7 @@ AT+MASK=13
 +CME ERROR:8
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1055,7 +1055,7 @@ AT+BAT=?
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1075,7 +1075,7 @@ This command is used to get the RSSI value of the last packet received.
 ```
 AT+RSSI?
 
-AT+RSSI: Last RX packet RSSI 
+AT+RSSI: Last RX packet RSSI
 OK
 
 AT+RSSI=?
@@ -1084,7 +1084,7 @@ AT+RSSI:-41
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1104,7 +1104,7 @@ This command is used to get the SNR value of the last packet received.
 ```
 AT+SNR?
 
-AT+SNR: Last RX packet SNR 
+AT+SNR: Last RX packet SNR
 OK
 
 AT+SNR=?
@@ -1113,7 +1113,7 @@ AT+SNR:11
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1133,7 +1133,7 @@ This command is used to get the firmware version installed on the device.
 ```
 AT+VER?
 
-AT+VER: Get SW version 
+AT+VER: Get SW version
 OK
 
 AT+VER=?
@@ -1142,7 +1142,7 @@ AT+VER:1.0.0.0 May 27 2021 17:11:12
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1184,7 +1184,7 @@ AT+NWM=0
 ```
 Module will restart
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1212,7 +1212,7 @@ AT+PFREQ=?
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1240,7 +1240,7 @@ AT+PSF=?
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1268,7 +1268,7 @@ AT+PBW=?
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1296,7 +1296,7 @@ AT+PCR=?
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1324,7 +1324,7 @@ AT+PPL=?
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1352,7 +1352,7 @@ AT+PTP=?
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1408,7 +1408,7 @@ Received data is not shown in the AT Command interface. The data has to be handl
 
 :::
 
-[Back](#content)    
+[Back](#content)
 
 ----
 ### AT+PRECV
@@ -1439,10 +1439,10 @@ _**REMARK**_
 - If the value is set to **65534**, the device will continuously listen to P2P LoRa TX packets without any timeout. This is the same as setting the device in RX mode.
 - If the value is set to **65535**, the device will listen to P2P TX packets without a timeout. But it will stop listening once a P2P LoRa packet is received to save power.
 - If the value is **0**, the device will stop listening to P2P TX packets. The device is in TX mode.
-::: 
+:::
 
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1534,7 +1534,7 @@ _**REMARK**_
 | 7         | FSK: 50&nbsp;kbps         | 50000                                |
 | 8 ~ 15    | RFU                       | RFU                                  |
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1542,7 +1542,7 @@ _**REMARK**_
 
 <b> EU868 </b>
 
-By default, MaxEIRP is considered to be +16&nbsp;dBm. 
+By default, MaxEIRP is considered to be +16&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1574,7 +1574,7 @@ By default, MaxEIRP is considered to be +16&nbsp;dBm.
 
 <b> AU915 </b>
 
-By default, MaxEIRP is considered to be +30&nbsp;dBm. 
+By default, MaxEIRP is considered to be +30&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1587,7 +1587,7 @@ By default, MaxEIRP is considered to be +30&nbsp;dBm.
 
 <b> KR920 </b>
 
-By default, MaxEIRP is considered to be +14&nbsp;dBm. 
+By default, MaxEIRP is considered to be +14&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1647,7 +1647,7 @@ By default, MaxEIRP is considered to be 30&nbsp;dBm.
 
 <b> RU864 </b>
 
-By default, MaxEIRP is considered to be +16&nbsp;dBm. 
+By default, MaxEIRP is considered to be +16&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1695,7 +1695,7 @@ By default, MAxEIRP is considered to be +12.15&nbsp;dBm.
 | 5       | MaxEIRP - 10&nbsp;dB |
 | 6 ~ 15  | RFU                  |
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1872,7 +1872,7 @@ _**M in the following list is the length with MAC header, N is the maximum usabl
 | 6         | 250         | 242         |
 | 7         | 250         | 242         |
 | 8 ~ 15    | Not Defined | Not Defined |
- 
+
 <br>
 
 <b> RU864 </b>
@@ -1919,4 +1919,4 @@ _**M in the following list is the length with MAC header, N is the maximum usabl
 | 7         | 250         | 242         |
 | 8 ~ 15    | Not Defined | Not Defined |
 
-[Back](#content)    
+[Back](#content)

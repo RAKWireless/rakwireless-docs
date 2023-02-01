@@ -65,6 +65,10 @@ The hardware specification is categorized into four parts. It discuses the inter
 - The _**BOOT0**_ pin is on the J10 pin header, the _**GND**_ pin is next to it.
 :::
 
+:::tip 📝 NOTE
+Pin headers and jumpers are included on the RAK11200, which can be soldered to the WisBlock Base and help with BOOT0 pin accessibility.
+:::
+
 <rk-img
   src="/assets/images/wisblock/rak11200/quickstart/rak11200-Boot0-for-flashing.png"
   width="50%"
@@ -238,5 +242,5 @@ The RAK11200 module has an ESP32-WROVER module at its core. Figure 5 shows the c
   src="/assets/images/wisblock/rak11200/datasheet/schematic.png"
   width="100%"
   caption="RAK11200 Schematic Diagram"
-/> 
+/>
 **RAK11200** is a **WisBlock Core** module for RAK **WisBlock** based on Espressif ESP32-WROVER. It is a powerful, generic WiFi-BLE MCU module that targets a wide variety of applications. There are two CPU cores that can be individually controlled and the CPU clock frequency is adjustable from 80&nbsp;MHz to 240&nbsp;MHz. The low-power deep-sleep current consumption of the ESP32-WROVER is about 10&nbsp;uA. This makes the **RAK11200** an ultra-low-power communication solution. **RAK11200** can be comfortably programmed with the Arduino™ IDE or PlatformIO.

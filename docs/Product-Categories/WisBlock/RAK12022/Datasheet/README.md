@@ -7,7 +7,7 @@ tags:
   - RAK12022
   - Maxim Integrated
   - MAX31865
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -37,13 +37,13 @@ next: false
 **Module specifications**
 - Based on MCP2518FD and ATA6563
 - Compatible with 2-wire, 3-wire, and 4-wire sensor connections
-- SPI-Compatible Interface
-- 15-Bit ADC Resolution; Nominal Temperature Resolution 0.03125&nbsp;NC (Varies Due to RTD Nonlinearity)
-- Total Accuracy Over All Operating Conditions: 0.5&nbsp;NC (0.05% of Full Scale) max
-- Fully Differential VREF Inputs
-- 21&nbsp;ms (max) Conversion Time
+- SPI-compatible interface
+- 15-Bit ADC Resolution; Nominal Temperature Resolution 0.03125&nbsp;NC (varies due to RTD nonlinearity)
+- Total accuracy overall operating conditions: 0.5&nbsp;NC (0.05% of full scale) max
+- Fully differential V<sub>REF</sub> inputs
+- 21&nbsp;ms (max) conversion time
 - Power supply: 3.3&nbsp;V
-- Operating Temperature: -40°&nbsp;C ~ 85°&nbsp;C
+- Operating temperature: -40°&nbsp;C ~ 85°&nbsp;C
 
 ## Specifications
 
@@ -61,7 +61,7 @@ The RAK12022 PT100 module can be mounted to the IO slot of the WisBlock base boa
 
 ### Hardware
 
-The hardware specification is categorized into five (5) parts. It shows the chipset of the module and discusses the pinouts and their corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK12022 WisBlock PT100 Module.
+The hardware specification is categorized into five (5) parts. It shows the chipset of the module and discusses the pinouts and their corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include tabular data on the functionalities and standard values of the RAK12022 WisBlock PT100 Module.
 
 
 #### Chipset
@@ -75,7 +75,7 @@ The hardware specification is categorized into five (5) parts. It shows the chip
 The RAK12022 WisBlock PT100 Module comprises a standard WisBlock IO slot connector. The WisBlock IO slot connector allows the RAK12022 module to be mounted to a WisBlock Base Board module. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 ::: tip 📝 NOTE
-- **SPI** related pins, **DRDY**, **3V3_S**, and **GND** are connected to the WisIO connector.
+**SPI**-related pins, **DRDY**, **3V3_S**, and **GND** are connected to the WisIO connector.
 :::
 
 <rk-img
@@ -114,7 +114,7 @@ This table shows the RAK12022 module electrical characteristics.
 
 #### Schematic Diagram
 
-**Figure 6** shows the schematic diagram of RAK12022 module.
+**Figure 6** shows the schematic diagram of the RAK12022 module.
 
 <rk-img
   src="/assets/images/wisblock/rak12022/datasheet/RAK12022_schematic.png"
@@ -126,7 +126,10 @@ This table shows the RAK12022 module electrical characteristics.
 
 ###### 2-Wire
 
-Connect one RED wire of the PT100 sensor to Pin 1 or Pin 2 of J2, and the BLUE wire to Pin 3 or Pin 4 of J2. Install Jumper on Pin 2 and Pin 3 of J3. Install Jumper on Pin 1 and Pin 2 of J4. Install Jumper on Pin 3 and Pin 4 of J4.
+- Connect one RED wire of the PT100 sensor to Pin 1 or Pin 2 of J2, and the BLUE wire to Pin 3 or Pin 4 of J2.
+- Install the jumper on Pin 2 and Pin 3 of J3.
+- Install the jumper on Pin 1 and Pin 2 of J4.
+- Install the jumper on Pin 3 and Pin 4 of J4.
 
 <rk-img
   src="/assets/images/wisblock/rak12022/datasheet/RAK12022_2wire_A.png"
@@ -136,7 +139,9 @@ Connect one RED wire of the PT100 sensor to Pin 1 or Pin 2 of J2, and the BLUE w
 
 ###### 3-Wire
 
-Connect the two RED wires of the PT100 sensor to Pin 1 and Pin 2 of J2, and connect the BLUE wire to Pin 3 or Pin 4 of J2. Install Jumper on Pin 1 and Pin 2 of J3. Install Jumper on Pin 3 and Pin 4 of J4.
+- Connect the two RED wires of the PT100 sensor to Pin 1 and Pin 2 of J2, and connect the BLUE wire to Pin 3 or Pin 4 of J2.
+- Install the jumper on Pin 1 and Pin 2 of J3.
+- Install the jumper on Pin 3 and Pin 4 of J4.
 
 <rk-img
   src="/assets/images/wisblock/rak12022/datasheet/RAK12022_3wire_A.png"
@@ -146,7 +151,9 @@ Connect the two RED wires of the PT100 sensor to Pin 1 and Pin 2 of J2, and conn
 
 ###### 4-Wire
 
-Connect the two RED wires of the PT100 sensor to Pin 1 and Pin 2 of J2, and connect the two BLUE wires to Pin 3 and Pin 4 of J2. Or connect the two BLUE wires of the PT100 sensor to Pin 1 and Pin 2 of J2, and connect the two RED wires to Pin 3 and Pin 4 of J2. Either way will work. Also, install Jumper on Pin 2 and Pin 3 of J3.
+- Connect the two RED wires of the PT100 sensor to Pin 1 and Pin 2 of J2, and connect the two BLUE wires to Pin 3 and Pin 4 of J2.
+- Another option: connect the two BLUE wires of the PT100 sensor to Pin 1 and Pin 2 of J2, and connect the two RED wires to Pin 3 and Pin 4 of J2. Either way will work.
+- Also, install Jumper on Pin 2 and Pin 3 of J3.
 
 <rk-img
   src="/assets/images/wisblock/rak12022/datasheet/RAK12022_4wire_A.png"
