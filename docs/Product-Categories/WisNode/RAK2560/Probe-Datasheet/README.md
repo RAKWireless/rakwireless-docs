@@ -10,6 +10,8 @@ tags:
   - SensorProbe
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/SensorHub/Certification/SensorHub_RAK2560_RAK2560C_CE_Certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/SensorHub/Certification/SensorHub_RAK2560_RAK2560C_FCC_Certification.pdf]
+  - [ISED, https://downloads.rakwireless.com/LoRa/SensorHub/Certification/SensorHub_RAK2560_RAK2560C_ISED_Report.pdf]
 ---
 
 # RAK2560 WisNode Sensor Probe Datasheet

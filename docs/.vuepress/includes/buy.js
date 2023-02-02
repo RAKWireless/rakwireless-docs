@@ -807,12 +807,12 @@ export default {
 
   '/Product-Categories/WisBlock/RAK18030/': {
     label: 'RAK18030 WisBlock Audio PDM Microphone Module',
-    img: '/assets/images/wisblock/rak18030/overview/RAK18030_buy.png',
+    img: '/assets/images/wisblock/rak18030/overview/RAK18030_home.png',
     store: 'https://store.rakwireless.com/products/pdm-microphone-sensor-20-20khz-knowles-spk0641ht4h-1-rak18030?utm_source=RAK18030&utm_medium=Document&utm_campaign=BuyFromStore'
   },
     '/Product-Categories/WisBlock/RAK18031/': {
     label: 'RAK18031 WisBlock Audio PDM Microphone Module',
-    img: '/assets/images/wisblock/rak18031/overview/RAK18031_buy.png',
+    img: '/assets/images/wisblock/rak18031/overview/RAK18031_home.png',
     store: 'https://store.rakwireless.com/products/pdm-microphone-sensor-20-10khz-stmicroelectronics-mp34dt06j-rak18031?utm_source=RAK18031&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAK18032/': {
@@ -827,7 +827,7 @@ export default {
   },
   '/Product-Categories/WisBlock/RAK18040/': {
     label: 'RAK18040 WisBlock Audio Analog Microphone to I2S Module',
-    img: '/assets/images/wisblock/rak18040/overview/RAK18040_buy.png',
+    img: '/assets/images/wisblock/rak18040/overview/RAK18040_home.png',
     store: 'https://store.rakwireless.com/products/analog-microphone-to-i2s-module-nuvoton-nau85l40b-rak18040?utm_source=RAK18040&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAK18041/': {
