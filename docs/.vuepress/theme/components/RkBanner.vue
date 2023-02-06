@@ -2,8 +2,8 @@
 
 <div class="popup-container" v-show="!closeBanner">
                 
-  <a href="https://store.rakwireless.com?utm_source=cny&utm_medium=cny_banner&utm_campaign=chinese_new_year_2023" >
-    <img src="https://res.rakwireless.com/tracked/chinese-new-year/22.0106%20CNY_Pop%20up%20banner.svg" alt="Lunar New Year" class="popup-image"  style="user-select: auto;">  
+  <a href="https://twitter.com/RAKwireless/status/1621162148683448323?s=20&t=f-cV321R5nxuKPDx0PdBRQ" >
+    <img src="https://res.rakwireless.com/tracked/embedded-world-event/embedded_world_event.png" alt="Lunar New Year" class="popup-image"  style="user-select: auto;">  
   </a>       
 
     <span class="">
@@ -44,9 +44,11 @@ export default {
 <style scoped>
   .popup-container {
       z-index: 3000;
-      padding-bottom: 10px;
+      /* padding-bottom: 10px; */
       position:fixed;
-      top: calc(100vh - 197px);
+      /* top: calc(100vh - 197px); */
+      bottom: 0;
+      left:0;
       display: block;
       
   }
