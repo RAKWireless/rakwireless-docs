@@ -6,7 +6,7 @@ tags:
   - wistrio
   - RAK5205
 rak_desc: Provides comprehensive information about your RAK5205 WisTrio LPWAN Tracker to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wistrio/rak7205-5205/quickstart/overview/RAK5205_home.png
+rak_img: /assets/images/wistrio/rak7205-5205/quickstart/overview/RAK5205.png
 ---
 
 # RAK5205 WisTrio LPWAN Tracker Datasheet
@@ -62,7 +62,7 @@ The dimension and the bottom view of the board are shown below. Sensor ICs are a
 
 ### Hardware
 
-The hardware specification is categorized into eight parts. It discusses the interfacing, pinouts, and their corresponding functions and diagrams. It also covers the parameters and standard values in terms of electrical, environmental mechanical and the antennas specifications. 
+The hardware specification is categorized into eight parts. It discusses the interfacing, pinouts, and their corresponding functions and diagrams. It also covers the parameters and standard values in terms of electrical, environmental mechanical and the antennas specifications.
 
 #### Interfaces
 
@@ -126,7 +126,7 @@ Here are the six connectors for RAK5205 tracker board: **P1**, **P2**, **J11**, 
 
 ##### P1
 
-Li-ion Battery Connector: Pin1 connected to VBATT, Pin2 connected to GND 
+Li-ion Battery Connector: Pin1 connected to VBATT, Pin2 connected to GND
 
 ##### P2
 
@@ -386,7 +386,7 @@ The table below lists the operation and storage temperature requirements:
 
 ### Software
 
-Download the supported firmware of RAK5205 in the table provided below. 
+Download the supported firmware of RAK5205 in the table provided below.
 
 #### Firmware
 

@@ -15,7 +15,7 @@ certifications:
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_RoHS_Report.pdf]
 
 rak_desc: Provides comprehensive information about your RAK2287 WisLink LPWAN Concentrator to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wislink-lora/rak2287/quickstart/1main/RAK2287_home.png
+rak_img: /assets/images/wislink-lora/rak2287/quickstart/1main/RAK2287.png
 ---
 
 # RAK2287 WisLink LPWAN Concentrator Datasheet

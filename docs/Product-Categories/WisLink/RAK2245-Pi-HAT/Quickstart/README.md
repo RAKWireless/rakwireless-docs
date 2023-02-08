@@ -5,8 +5,8 @@ tags:
   - RAK2245 Pi HAT
   - quickstart
   - wislink
-rak_desc: Contains instructions and tutorials for installing and deploying your RAK2245 Pi HAT WisLink LPWAN Concentrator. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LPWAN Concentrator. 
-rak_img: /assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/1.product-overview/1.index/RAK2245-PiHat_home.png
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK2245 Pi HAT WisLink LPWAN Concentrator. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LPWAN Concentrator.
+rak_img: /assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/1.product-overview/1.index/RAK2245-PiHat.png
 
 ---
 
@@ -85,7 +85,7 @@ You can also connect your PC with the Gateway through an Ethernet cable. By defa
 
 - By default, it will obtain an IP Address automatically. Click the Option "Use the following IP Address" and enter the IP Address: `192.168.10.20` and press OK.
 
-<rk-img 
+<rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/4.accessing-your-gateway/tcpipv4.png"
   width="90%"
   caption="TCP/IPv4 Properties"
@@ -121,7 +121,7 @@ SSH (Secure Shell) is typically used to log in to a remote machine and execute c
 
 Open the Terminal of Mac OS. Launch the **Terminal** application, which is found in "/Applications/Utilities/" directory but you can also launch it from Spotlight by hitting **Command + Spacebar** and typing “**Terminal**” and then return:
 
-<rk-img     
+<rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/4.accessing-your-gateway/mac_terminal.png"
   width="80%"
   caption="Opening Terminal in Mac OS"
@@ -129,7 +129,7 @@ Open the Terminal of Mac OS. Launch the **Terminal** application, which is found
 
 Open the terminal of Mac OS. Enter **root mode** by typing the following command: "`sudo -i`"
 
-<rk-img 
+<rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/4.accessing-your-gateway/sshmac.jpg"
   width="100%"
   caption="SSH in Mac OS"
@@ -138,7 +138,7 @@ Open the terminal of Mac OS. Enter **root mode** by typing the following command
 - If you are not in root mode, enter "`ssh pi@192.168.230.1`" in the terminal to login to your Gateway, the default password is "**raspberry**".
 - If you connect your PC with the Gateway through Ethernet Cable, you should enter "`ssh pi@192.168.10.10`", the default password is "**raspberry**".
 
-<rk-img 
+<rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/4.accessing-your-gateway/loginsuccess.jpg"
   width="80%"
   caption="Log-in Successful Notification"
@@ -159,7 +159,7 @@ sudo gateway-config
 
 You will now then see a page like the following picture below:
 
-<rk-img 
+<rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/5.accessing-the-internet/config-options.png"
   width="100%"
   caption="Configuration Options for the Gateway"
@@ -196,7 +196,7 @@ In order to enable Wi-Fi Client Mode, you have to disable first the AP Mode.
 
 Once Wi-Fi AP Mode has been disabled by choosing "**2 Enable Client Mode/Disable AP Mode**", you can now then connect to a new Wi-Fi Network by choosing "**4 Add New SSID for Client**":
 
-<rk-img 
+<rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/5.accessing-the-internet/wifi-ssid.png"
   width="100%"
   caption="Add a new SSID"
@@ -204,7 +204,7 @@ Once Wi-Fi AP Mode has been disabled by choosing "**2 Enable Client Mode/Disable
 
 - Start by selecting your country of residence:
 
-<rk-img 
+<rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/5.accessing-the-internet/region.png"
   width="100%"
   caption="Selecting Country of Residence"
@@ -216,7 +216,7 @@ Once Wi-Fi AP Mode has been disabled by choosing "**2 Enable Client Mode/Disable
 Please ensure to input the correct Wi-Fi SSID and Password or you will not be able to connect to the RAK2245 Pi hat again via SSH in Wi-Fi AP Mode. If stuck in this situation, please follow this procedure listed in the [Reverting to Wi-Fi AP Mode](#reverting-to-wi-fi-ap-mode) section which is applicable for all Raspberry Pi based gateways to work again in Wi-Fi AP mode.
 :::
 
-<rk-img     
+<rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/5.accessing-the-internet/set-wifi.png"
   width="100%"
   caption="SSID of the Network you want to connect to"
@@ -247,7 +247,7 @@ If you want to connect to router through Ethernet Cable, do the following steps:
 
 - Then configure the IP address of the Router. This is the LAN Interface IP address of the router.
 
-<rk-img 
+<rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/5.accessing-the-internet/router-eth-ip.png"
   width="100%"
   caption="LAN Interface IP Address of the Router"
@@ -270,7 +270,7 @@ In the event that you have entered either or both incorrect Wi-Fi SSID and Passw
 
 - Remove the SD Card from your Raspberry Pi with the RAK2245 Pi HAT and insert it into your PC. Your PC should be able to detect it same with the image below:
 
-<rk-img 
+<rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/5.accessing-the-internet/rak-ap-file.png"
   width="50%"
   caption="Creating rak_ap file to your SD Card"
@@ -296,7 +296,7 @@ sudo gateway-config
 You will now then see a page like the following picture below
 
 <rk-img
-  src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/6.configure-the-gateway/gateway_id.png" 
+  src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/6.configure-the-gateway/gateway_id.png"
   width="100%"
   caption="Config Options for the Gateway"
 />
@@ -517,7 +517,7 @@ There is a built-in ChirpStack in every RAK Developer gateway if you use the lat
  It is advisable to change your password to tighten the security of your account. You can change this by clicking the "**change password**" button at the user icon.
 :::
 
-<rk-img     
+<rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/8.connecting-to-chirpstack/chirpstack-ui.png"
   width="100%"
   caption="ChirpStack Web-based UI"
@@ -525,7 +525,7 @@ There is a built-in ChirpStack in every RAK Developer gateway if you use the lat
 
 * Everything should be pre-configured: Device profiles have been created, the Gateway has been registered with the server, etc. If you go to the Gateways tab and click on rak_gateway, you should see the Gateway details page.
 
-<rk-img    
+<rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/8.connecting-to-chirpstack/gateways-in-chirpstack.png"
   width="100%"
   caption="Available Gateways in Chirpstack"
@@ -533,7 +533,7 @@ There is a built-in ChirpStack in every RAK Developer gateway if you use the lat
 
 * Go to the rak_gateway and see the "**Last seen**" status. It must be a few seconds ago which signifies that the Gateway is visible in the ChirpStack server.
 
-<rk-img     
+<rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/8.connecting-to-chirpstack/chirpstack-last-seen.png"
   width="100%"
   caption="Last Seen Status"
@@ -575,7 +575,7 @@ You can setup an Independent ChirpStack by yourself. This is a lot more complica
 
 * Click "**Create**" to register your Gateway and fill up the necessary information.
 
-<rk-img 
+<rk-img
   src="/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/8.connecting-to-chirpstack/reg-own-gateway.png"
   width="100%"
   caption="Registering your own Gateway"

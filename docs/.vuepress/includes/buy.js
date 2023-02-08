@@ -6,22 +6,22 @@ export default {
 
   '/Product-Categories/WisLink/RAK2245-Pi-HAT/': {
     label: 'RAK2245 Pi HAT WisLink LPWAN Concentrator',
-    img: '/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/1.product-overview/1.index/RAK2245-PiHat_buy.png',
+    img: '/assets/images/wislink-lora/rak2245-pi-hat-edition/quickstart/1.product-overview/1.index/RAK2245-PiHat.png',
     store: 'https://store.rakwireless.com/products/rak2245-pi-hat/?utm_source=RAK2245PiHATWisLink-LoRa&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisLink/RAK2245-Stamp-Edition/': {
     label: 'RAK2245 WisLink LPWAN Concentrator',
-    img: '/assets/images/wislink-lora/rak2245-stamp-edition/quickstart/overview/RAK2245-Stamp_buy.png',
+    img: '/assets/images/wislink-lora/rak2245-stamp-edition/quickstart/overview/RAK2245-Stamp.png',
     store: 'https://store.rakwireless.com/products/rak2245-stamp-edition?utm_source=RAK2245WisLink-LoRaStampEdition&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisLink/RAK2247/': {
     label: 'RAK2247 WisLink LPWAN Concentrator',
-    img: '/assets/images/wislink-lora/rak2247/quickstart/1.main/RAK2247_buy.png',
+    img: '/assets/images/wislink-lora/rak2247/quickstart/1.main/RAK2247.png',
     store: 'https://store.rakwireless.com/products/rak2247-lorawan-gateway-concentrator-module?utm_source=RAK2247WisLink-LoRa&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisLink/RAK2287/': {
     label: 'RAK2287 WisLink LPWAN Concentrator',
-    img: '/assets/images/wislink-lora/rak2287/quickstart/1main/RAK2287_buy.png',
+    img: '/assets/images/wislink-lora/rak2287/quickstart/1main/RAK2287.png',
     store: 'https://store.rakwireless.com/products/rak2287-lpwan-gateway-concentrator-module/?utm_source=RAK2287WisLink-LoRa&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisLink/RAK5146/': {
@@ -36,12 +36,12 @@ export default {
   },
   '/Product-Categories/WisLink/RAK831/': {
     label: 'RAK831 WisLink LPWAN Concentrator',
-    img: '/assets/images/wislink-lora/rak831/datasheet/RAK831_buy.png',
+    img: '/assets/images/wislink-lora/rak831/datasheet/RAK831.png',
     store: 'https://store.rakwireless.com/products/rak831-gateway-module?utm_source=RAK831WisLink-LoRa&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisLink/RAK833/': {
     label: 'RAK833 WisLink LPWAN Concentrator',
-    img: '/assets/images/wislink-lora/rak833/datasheet/RAK833-Concentrator_buy.png',
+    img: '/assets/images/wislink-lora/rak833/datasheet/RAK833.png',
     store: 'https://store.rakwireless.com/products/rak833-gateway-module?utm_source=RAK833WisLink-Lora%E2%84%A2&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
@@ -50,17 +50,17 @@ export default {
 
   '/Product-Categories/WisLink/RAK2011/': {
     label: 'RAK2011 WisLink Cellular BG96 Arduino Shield',
-    img: '/assets/images/wislink-lte/rak2011/overview/rak2011-buy.png',
+    img: '/assets/images/wislink-lte/rak2011/overview/rak2011.png',
     store: 'https://store.rakwireless.com/products/rak2011-cellular-board?utm_source=RAK2011WisLinkCellularBG96ArduinoShield&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisLink/RAK2013/': {
     label: 'RAK2013 WisLink Cellular Pi HAT',
-    img: '/assets/images/wislink-lte/rak2013/datasheet/RAK2013_buy.png',
+    img: '/assets/images/wislink-lte/rak2013/datasheet/RAK2013.png',
     store: 'https://store.rakwireless.com/products/rak2013-cellular-pi-hat?utm_source=RAK2013WisLink-LTE&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisLink/RAK8213/': {
     label: 'RAK8213 WisLink Cellular mPCIe',
-    img: '/assets/images/wislink-lte/rak8213/quickstart/overview/RAK8213_buy.png',
+    img: '/assets/images/wislink-lte/rak8213/quickstart/overview/RAK8213.png',
     store: 'https://store.rakwireless.com/products/rak8213-nb-iot-bg96?utm_source=RAK8213WisLinkCellularmPCIe&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
@@ -79,7 +79,7 @@ export default {
 
   '/Product-Categories/WisDuino/RAK811-Evaluation-Board/': {
     label: 'RAK811 LPWAN Evaluation Board',
-    img: '/assets/images/wisduino/rak811-evaluation-board/quickstart/overview/RAK811-wisnode_buy.png',
+    img: '/assets/images/wisduino/rak811-evaluation-board/quickstart/overview/RAK811-EVB.png',
     store: 'https://store.rakwireless.com/products/rak811-wisnode-lora-module?utm_source=RAK811LPWANEvaluationBoard&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
@@ -163,12 +163,12 @@ export default {
 
   '/Product-Categories/WisTrio/RAK7205-5205/': {
     label: 'RAK7205/RAK5205 WisTrio LPWAN Tracker',
-    img: '/assets/images/wistrio/rak7205-5205/quickstart/overview/RAK5205_buy.png',
+    img: '/assets/images/wistrio/rak7205-5205/quickstart/overview/RAK5205.png',
     store: 'https://store.rakwireless.com/products/rak5205-lora-tracker?utm_source=RAK7205%2FRAK5205WisTrioLPWANTracker&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisTrio/RAK815/': {
     label: 'RAK815 WisTrio LPWAN Tracker',
-    img: '/assets/images/wistrio/rak815/quickstart/1main/RAK815_buy.png',
+    img: '/assets/images/wistrio/rak815/quickstart/1main/RAK815.png',
     store: 'https://store.rakwireless.com/products/rak815-hybrid-location-tracker?utm_source=RAK815HybridLocationTracker&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
@@ -176,17 +176,17 @@ export default {
 
   '/Product-Categories/WisTrio/RAK5010-M/': {
     label: 'RAK5010-M WisTrio NB-IoT Tracker',
-    img: '/assets/images/wistrio/rak5010-m/overview/RAK5010-M_buy.png',
+    img: '/assets/images/wistrio/rak5010-m/overview/RAK5010-M.png',
     store: 'https://store.rakwireless.com/products/rak5010-nb-iot-tracker?variant=35173395660958&utm_source=RAK5010-MWisTrioNB-IoTTracker&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisTrio/RAK5010/': {
     label: 'RAK5010 WisTrio NB-IoT Tracker Pro',
-    img: '/assets/images/wistrio/rak5010/quickstart/1.overview/RAK5010_buy.png',
+    img: '/assets/images/wistrio/rak5010/quickstart/1.overview/RAK5010.png',
     store: 'https://store.rakwireless.com/products/rak5010-nb-iot-tracker?utm_source=RAK5010WisTrioNB-IoTTracker&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisTrio/RAK8212/': {
     label: 'RAK8212 WisTrio iTracker Pro',
-    img: '/assets/images/wistrio/rak8212/quickstart/overview/RAK8212_buy.png',
+    img: '/assets/images/wistrio/rak8212/quickstart/overview/RAK8212.png',
     store: 'https://store.rakwireless.com/products/rak8212-itracker-pro?utm_source=RAK8212iTrackerPro&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 

@@ -6,7 +6,7 @@ tags:
   - quickstart
   - wistrio
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK5205 WisTrio LPWAN Tracker. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
-rak_img: /assets/images/wistrio/rak7205-5205/quickstart/overview/RAK5205_home.png
+rak_img: /assets/images/wistrio/rak7205-5205/quickstart/overview/RAK5205.png
 ---
 
 # RAK5205 Quick Start Guide
@@ -48,7 +48,7 @@ Before powering the RAK5205, you should install the LoRa and GPS antenna first. 
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/quick-start-guide/rak5205-lpwan-tracker-interfaces.svg"
-  width="90%" 
+  width="90%"
   caption="RAK5205 GPS and LoRa antenna"
 />
 
@@ -287,7 +287,7 @@ at+set_config=lora:class:0
 ```
 
 ```
-at+set_config=lora:region:XXX 
+at+set_config=lora:region:XXX
 ```
 
 <rk-img
@@ -397,8 +397,8 @@ In this section, it is assumed that you have already connected your gateway to C
 />
 
 ::: tip 📝 NOTE
-- If you want to join in OTAA mode, select “**device_profile_otaa**” in the “Device-profile” item. 
-- If you want to join in ABP mode and CN470 frequency, select “**DeviceProfile_ABP_CN470**” in the “Device-Profile” item. 
+- If you want to join in OTAA mode, select “**device_profile_otaa**” in the “Device-profile” item.
+- If you want to join in ABP mode and CN470 frequency, select “**DeviceProfile_ABP_CN470**” in the “Device-Profile” item.
 - If you want to join in ABP mode and other frequencies except for AS923 and CN470, select “**device_profile_abp**” in the “Device-profile” item.
 :::
 
@@ -567,13 +567,13 @@ at+join
 
 ##### Transmit Interval
 
-With your RAK5205 already connected to the network server, you can set the interval of sending GPS coordinates and sensor data using the following command: 
+With your RAK5205 already connected to the network server, you can set the interval of sending GPS coordinates and sensor data using the following command:
 
 ```
-at+set_config=lora:send_interval:1:Y 
+at+set_config=lora:send_interval:1:Y
 ```
 
-- where **Y** represents the time interval is seconds. 
+- where **Y** represents the time interval is seconds.
 
 ##### GPS Satellite Scan Time and Accuracy
 
@@ -600,7 +600,7 @@ at+set_config=device:gps_format:X
 In the previous section, you have successfully sent some raw data from our RAK5205 LPWAN Tracker to The Things Network, but the problem is that you can't really see the actual sensor data from the payload. In this section, you will solve that and understand what each payload means.
 
 ::: tip 📝 NOTE:
-Depending on the GPS coordinates accuracy configured on RAK5205 (either 4-digit or 6-digit), you must use the right decoder that can be downloaded on the RAKwireless [Github repository](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder). 
+Depending on the GPS coordinates accuracy configured on RAK5205 (either 4-digit or 6-digit), you must use the right decoder that can be downloaded on the RAKwireless [Github repository](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder).
 :::
 
 Take the payload data in Figure 40, for example.
@@ -694,7 +694,7 @@ Example Data: **03 71 FF FF FF DD FC 2E**
 ##### Input Decoding Function in TTN
 
 1. To start with, you need to get the payload decoder depending on the setup of your GPS data:
-  
+
     - [**4-digit coordinates**](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder/blob/master/RUISensorDataDecoder_for_TTN.js)
     - [**6-digit coordinates**](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder/blob/master/RUISensorDataDecoder_GPS6digitPrecison_for_TTN.js)
 
@@ -770,7 +770,7 @@ After the gateway and node go online, click the **uplink data record** from the 
 ##### Input Decoding Function in ChirpStack
 
 1. To start with, you need to get the payload decoder depending on the setup of your GPS data:
-  
+
     - [**4-digit coordinates**](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder/blob/master/RUISensorDataDecoder_for_ChirpStack.js)
     - [**6-digit coordinates**](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder/blob/master/RUISensorDataDecoder_GPS6digitPrecison_for_ChirpStack.js)
 

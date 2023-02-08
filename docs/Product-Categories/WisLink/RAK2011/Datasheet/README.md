@@ -6,7 +6,7 @@ tags:
 prev: ../Overview/
 next: false
 rak_desc: Provides comprehensive information about your RAK2011 WisLink Cellular BG96 Arduino Shield to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wislink-lte/rak2011/overview/rak2011-buy.png
+rak_img: /assets/images/wislink-lte/rak2011/overview/rak2011.png
 ---
 
 # RAK2011 WisLink Cellular BG96 Arduino Shield Datasheet
@@ -111,11 +111,11 @@ The RAK2011 WisLink Cellular BG96 Arduino Shield can operate in the following mo
 BG96 module may negotiate with the network, via non-access stratum signaling, the use of e-I-DRX for reducing power consumption while being available for mobile terminating data and/or network originated functions within a certain period depending on the DRX cycle value.
 
 **3. Airplane Mode**
-   
+
 `AT+CFUN` command or `W_DISABLE#` pin can set the module into airplane mode. In this case, RF functions are disabled.
 
 **4. Minimum Functionality Mode**
-  
+
 `AT+CFUN` command can set the BG96 module into a minimum functionality mode without removing the power supply. In this case, both RF function and (U)SIM card will be disabled.
 
 
@@ -371,7 +371,7 @@ The analog Input/Digital I/O header signal definition is shown in the table belo
 </tbody>
 </table>
 
-##### Debug Header 
+##### Debug Header
 
 A standard 1x4 (2.54&nbsp;mm) male header is used to provide a serial port (UART2) interface for debug and log output at 115200&nbsp;bps baud rate. The debug header pin definition is shown in **Figure 11**.
 

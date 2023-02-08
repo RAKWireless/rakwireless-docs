@@ -4,7 +4,7 @@ next: ../Datasheet/
 tags:
   - RAK8213
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK8213 WisLink Cellular mPCIe. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
-rak_img: /assets/images/wislink-lte/rak8213/quickstart/overview/RAK8213_home.png
+rak_img: /assets/images/wislink-lte/rak8213/quickstart/overview/RAK8213.png
 
 ---
 

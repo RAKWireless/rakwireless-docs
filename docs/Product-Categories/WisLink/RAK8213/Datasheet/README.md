@@ -6,7 +6,7 @@ tags:
 prev: ../Quickstart/
 next: false
 rak_desc: Provides comprehensive information about your RAK8213 WisLink Cellular mPCIe to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wislink-lte/rak8213/quickstart/overview/RAK8213_home.png
+rak_img: /assets/images/wislink-lte/rak8213/quickstart/overview/RAK8213.png
 ---
 
 # RAK8213 WisLink Cellular mPCIe Datasheet
@@ -37,7 +37,7 @@ Rich Internet protocol, industry-standard interfaces (USB/UART/I2C/Status indica
 
 ### Overview
 
-The overview shows the top and back view of the RAK8213 board. It also presents the block diagram that discusses how the board works. 
+The overview shows the top and back view of the RAK8213 board. It also presents the block diagram that discusses how the board works.
 
 #### Module Overview
 
@@ -61,7 +61,7 @@ The RAK8213 card integrates **one BG96 module** which represents the core of the
 
 ### Hardware
 
-The hardware is categorized into seven (7) parts. It discusses the pinouts and their corresponding functions and diagrams. It also covers the parameters and standard values of the board. 
+The hardware is categorized into seven (7) parts. It discusses the pinouts and their corresponding functions and diagrams. It also covers the parameters and standard values of the board.
 
 #### Pin Definition
 
@@ -194,7 +194,7 @@ The following table shows the GNSS performance of RAK8213:
 |                           | Hot start @ open sky  | - Autonomous<br>- XTRA enabled  | 27<br><br>1.82  | s<br><br>s |
 | Accuracy <br><br>(GNSS)   | CEP-50                | - Autonomous @ open sky         | <2.5            | m          |
 
-::: tip 📝 NOTE 
+::: tip 📝 NOTE
 1. **Tracking sensitivity**: the lowest GNSS signal value at the antenna port on which the module can keep on positioning for 3&nbsp;minutes.
 
 2. **Reacquisition sensitivity**: the lowest GNSS signal value at the antenna port on which the module can fix position again within 3&nbsp;minutes after loss of lock.

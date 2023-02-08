@@ -4,7 +4,7 @@ next: ../Datasheet/
 tags:
   - RAK2287
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK2287 WisLink LPWAN Concentrator. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LPWAN Concentrator.
-rak_img: /assets/images/wislink-lora/rak2287/quickstart/1main/RAK2287_home.png
+rak_img: /assets/images/wislink-lora/rak2287/quickstart/1main/RAK2287.png
 ---
 
 # RAK2287 Quick Start Guide

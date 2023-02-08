@@ -6,7 +6,7 @@ tags:
   - quickstart
   - wistrio
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK5010 WisTrio NB-IoT Tracker Pro. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
-rak_img: /assets/images/wistrio/rak5010/quickstart/1.overview/RAK5010_home.png
+rak_img: /assets/images/wistrio/rak5010/quickstart/1.overview/RAK5010.png
 ---
 
 # RAK5010 Quick Start Guide
@@ -51,14 +51,14 @@ There are three ways that you can check the logs for debugging purposes on your 
 
 #### Through J-Link RTT Viewer
 
-1. If you want to check the logs of RAK5010 WisTrio NB-IoT Tracker Pro using this method, make sure you have connected the RAK5010 with your PC through JTAG as shown in Figures 2 and 3. 
+1. If you want to check the logs of RAK5010 WisTrio NB-IoT Tracker Pro using this method, make sure you have connected the RAK5010 with your PC through JTAG as shown in Figures 2 and 3.
 
 
 <rk-img
   src="/assets/images/wistrio/rak5010/quickstart/3.checking-device-logs/rak5010tojlink.png"
   width="75%"
   caption="RAK5010 and PC Connection through JTAG"
-/>  
+/>
 
 :::warning ⚠️WARNING
  You still have to connect the Micro USB Cable to the RAK5010 to power the board.
@@ -80,7 +80,7 @@ There are three ways that you can check the logs for debugging purposes on your 
   src="/assets/images/wistrio/rak5010/quickstart/3.checking-device-logs/xgdllxo7gb3ks0y3tbch.png"
   width="100%"
   caption="J-Link RTT Viewer"
-/>  
+/>
 
 3. Choose the device parameters as shown in Figure 5 or in the table provided, then press "OK".
 
@@ -88,16 +88,16 @@ There are three ways that you can check the logs for debugging purposes on your 
   src="/assets/images/wistrio/rak5010/quickstart/3.checking-device-logs/wmoh5e7i8n6gxxr9h4o9.png"
   width="80%"
   caption="J-Link Target Device Settings"
-/>  
+/>
 
-| Parameter | Data | 
-| ---- | ---- | 
-| Manufacturer | Nordic Semi | 
-| Device | nRF52840_xxAA | 
-| Core | Cortex-M4 | 
-| NumCores | 1 | 
-| Flash Size | 1028&nbsp;KB | 
-| RAM Size | 256&nbsp;KB | 
+| Parameter | Data |
+| ---- | ---- |
+| Manufacturer | Nordic Semi |
+| Device | nRF52840_xxAA |
+| Core | Cortex-M4 |
+| NumCores | 1 |
+| Flash Size | 1028&nbsp;KB |
+| RAM Size | 256&nbsp;KB |
 
 4. Connect to your RAK5010 by navigating through **File>Connect** in the Main Menu. Alternatively, you could just press "**F2**" to do the same process.
 
@@ -105,7 +105,7 @@ There are three ways that you can check the logs for debugging purposes on your 
   src="/assets/images/wistrio/rak5010/quickstart/3.checking-device-logs/jrqm79eoaojwuynzdu1t.jpg"
   width="100%"
   caption="Connecting in J-Link RTT Viewer"
-/>  
+/>
 
 5. Once connection is obtained, you should see the same log as shown in Figure 7.
 
@@ -113,7 +113,7 @@ There are three ways that you can check the logs for debugging purposes on your 
   src="/assets/images/wistrio/rak5010/quickstart/3.checking-device-logs/uku52cmdo7ccdzwbwubz.png"
   width="80%"
   caption="J-Link RTT Viewer showing RAK5010 Logs"
-/>  
+/>
 
 :::tip 📝 NOTE:
  If there is no log after connecting successfully, you can try to reset RAK5010. Ensure that micro USB is connected properly or check the connection of JTAG.
@@ -128,10 +128,10 @@ There are three ways that you can check the logs for debugging purposes on your 
   src="/assets/images/wistrio/rak5010/quickstart/3.checking-device-logs/7.jpg"
   width="90%"
   caption="RAK5010 and USB-UART Connection"
-/>  
+/>
 
 2. Open a serial port tool in your PC. If you don't have a serial port tool yet, download and install the RAK Serial Port Tool.
-  
+
     - **[RAKwireless Downloads](https://downloads.rakwireless.com/en/LoRa/Tools).**
 
 3. After pushing the RST button on RAK5010, you can see the following contents in the serial port tool as shown in Figure 9:
@@ -140,7 +140,7 @@ There are three ways that you can check the logs for debugging purposes on your 
   src="/assets/images/wistrio/rak5010/quickstart/3.checking-device-logs/serialtool_connect.jpg"
   width="80%"
   caption="RAK Serial Port Tool"
-/>  
+/>
 
 
 #### Through Micro USB
@@ -151,12 +151,12 @@ There are three ways that you can check the logs for debugging purposes on your 
   src="/assets/images/wistrio/rak5010/quickstart/3.checking-device-logs/cjkxyja4hkqovtiddklj.jpg"
   width="60%"
   caption="MicroUSB Interface for RAK5010"
-/>  
+/>
 
 2. Open the serial port tool in your PC.
 
 :::tip 📝 NOTE:
- - For this method, you need a serial port tool which can support DTR function, like Termite. You can download Termite on their [website](https:\/\/www.compuphase.com\/software_termite.htm). 
+ - For this method, you need a serial port tool which can support DTR function, like Termite. You can download Termite on their [website](https:\/\/www.compuphase.com\/software_termite.htm).
  - For Linux and MacOS, the alternative is [Coolterm](http://freeware.the-meiers.org/).
  - It is highly recommended to connect a battery when doing configuration via USB to have a stable serial connection.
 :::
@@ -167,7 +167,7 @@ There are three ways that you can check the logs for debugging purposes on your 
   src="/assets/images/wistrio/rak5010/quickstart/3.checking-device-logs/gpubckbaii9vocy1h32u.png"
   width="75%"
   caption="Termite Configuration Enabling DTR"
-/>  
+/>
 
 4. Now, the Termite app will connect with RAK5010 automatically. Then you can send AT commands and check the log in Termite.
 
@@ -175,8 +175,8 @@ There are three ways that you can check the logs for debugging purposes on your 
   src="/assets/images/wistrio/rak5010/quickstart/3.checking-device-logs/hqfcunna1swkknili72n.png"
   width="75%"
   caption="Checked Log in Termite"
-/>  
- 
+/>
+
 ### Configuring RAK5010
 
 You can configure your RAK5010 WisTrio NB-IoT Tracker Pro by sending AT Commands either through UART, through BLE, or through Micro USB.
@@ -187,7 +187,7 @@ You can configure your RAK5010 WisTrio NB-IoT Tracker Pro by sending AT Commands
 
 #### Through UART
 
-1. As mentioned in the [Checking Device Logs](#through-uart) section, if you want to use RAK5010 WisTrio NB-IoT Tracker Pro through UART, you should connect the RAK5010 in your PC through UART as shown in Figure 7. 
+1. As mentioned in the [Checking Device Logs](#through-uart) section, if you want to use RAK5010 WisTrio NB-IoT Tracker Pro through UART, you should connect the RAK5010 in your PC through UART as shown in Figure 7.
 
 2. Try to send a simple AT command to RAK5010 to get the current firmware version by sending the command below using the RAK Serial Port Tool. Similarly, you can send other AT commands of RAK5010 in the same way.
 
@@ -199,7 +199,7 @@ at+version
   src="/assets/images/wistrio/rak5010/quickstart/4.configuring-rak5010/13.jpg"
   width="70%"
   caption="AT command for Firmware Version"
-/>  
+/>
 
 #### Through BLE
 
@@ -209,7 +209,7 @@ at+version
   src="/assets/images/wistrio/rak5010/quickstart/4.configuring-rak5010/eponlb3piu1p6noof1np.png"
   width="75%"
   caption="nRF Connect App in Android and IOS"
-/>  
+/>
 
 2. Make sure the Bluetooth on your mobile is turned on. Open the application and you will see all BLE devices in range in the scan list.
 
@@ -218,7 +218,7 @@ at+version
   src="/assets/images/wistrio/rak5010/quickstart/4.configuring-rak5010/rwpeihuyflhu65gopfml.jpg"
   width="40%"
   caption="Available Bluetooth Devices in the Nordic App"
-/>  
+/>
 
 3. Press the reset button on the RAK5010 Board and wait for a couple of seconds. Look for a BLE Device named "RUI-..." in the scan list of the app. Connect to this device and click "**Nordic UART Service**"
 
@@ -226,7 +226,7 @@ at+version
   src="/assets/images/wistrio/rak5010/quickstart/4.configuring-rak5010/mg6xtfoepu06s33iedyu.jpg"
   width="80%"
   caption="Nordic UART Service in the Nordic App"
-/>  
+/>
 
 :::warning ⚠️WARNING
  By the default, the BLE signal of the RAK5010 is turned off automatically if no connection is established after 60 seconds. Connect to the BLE signal of the RAK5010 immediately after pressing the reset button.
@@ -239,7 +239,7 @@ at+version
   src="/assets/images/wistrio/rak5010/quickstart/4.configuring-rak5010/r7j95cqwrevod7qtvcsv.jpg"
   width="40%"
   caption="RX Characteristic in the Nordic UART Service"
-/>  
+/>
 
 5. You can now send AT commands to the RAK5010. Meanwhile, you can also see log information in RTT Viewer as discussed in [Checking Device Logs](/Product-Categories/WisTrio/RAK5010/Quickstart/#checking-device-logs).
 
@@ -253,15 +253,15 @@ at+version
   src="/assets/images/wistrio/rak5010/quickstart/4.configuring-rak5010/jficmu58afzs3r1hkw5h.jpg"
   width="80%"
   caption="Sending AT Command via Nordic App"
-/>  
+/>
 
 6. Then, you can see the version number in RTT Viewer tool.
-   
+
 <rk-img
   src="/assets/images/wistrio/rak5010/quickstart/4.configuring-rak5010/nqqegmebbppnrcguzshh.png"
   width="80%"
   caption="Log Info in J-Link RTT Viewer"
-/>  
+/>
 
 #### Through Micro USB
 
@@ -269,7 +269,7 @@ Configuring the RAK5010 and checking logs via USB has the same setup. Refer to t
 
 ### Connecting Cellular Network and Sending Packet over Cellular
 
-In this section, you will learn more on how to connect Cellular Network of your device. 
+In this section, you will learn more on how to connect Cellular Network of your device.
 
 - To start with, insert a SIM card into your RAK5010. For this section, a China Mobile SIM card is used to have a GSM network connection.
 
@@ -295,7 +295,7 @@ at+scan=cellular
   src="/assets/images/wistrio/rak5010/quickstart/5.connecting-cellular-network/24.jpg"
   width="70%"
   caption="Scanning for Cellular Networks"
-/>  
+/>
 
 - Wait for about 30 seconds, then you will see the following output in the serial port tool the same as shown in Figure 21:
 
@@ -304,7 +304,7 @@ at+scan=cellular
   src="/assets/images/wistrio/rak5010/quickstart/5.connecting-cellular-network/25.jpg"
   width="70%"
   caption="Scanned Cellular Network shown in Serial Port"
-/> 
+/>
 
 - As you can see, the RAK5010 has scanned around Cellular network and show them in the serial port tool.
 
@@ -325,7 +325,7 @@ at+set_config=cellular:(AT+COPS=1,0,"CHINA MOBILE",0)
   src="/assets/images/wistrio/rak5010/quickstart/5.connecting-cellular-network/26.jpg"
   width="70%"
   caption="Configuring the Operator"
-/> 
+/>
 
 Now, continue to configure the network:
 
@@ -346,13 +346,13 @@ at+set_config=cellular:(AT+QIACT=1)
   src="/assets/images/wistrio/rak5010/quickstart/5.connecting-cellular-network/27.jpg"
   width="70%"
   caption="Configuring the Cellular Network"
-/> 
+/>
 
 <rk-img
   src="/assets/images/wistrio/rak5010/quickstart/5.connecting-cellular-network/28.jpg"
   width="70%"
   caption="Configuring the Cellular Network"
-/> 
+/>
 
 - Then, set the IP address of the server which will receive the packet sending from RAK5010.
 
@@ -368,7 +368,7 @@ at+set_config=cellular:118.31.121.60:12111:CHINA MOBILE:CMCC:CMNET:0
   src="/assets/images/wistrio/rak5010/quickstart/5.connecting-cellular-network/29.jpg"
   width="70%"
   caption="Configuring the IP Address of the Server"
-/> 
+/>
 
 
 - Next, try sending a packet manually over Cellular. Use the following command to send data over Cellular:
@@ -381,9 +381,9 @@ at+send=cellular:XXX
   src="/assets/images/wistrio/rak5010/quickstart/5.connecting-cellular-network/30.jpg"
   width="70%"
   caption="Sending Data over Cellular"
-/> 
+/>
 
-- As you can see, the data sent is “**123456**”. 
+- As you can see, the data sent is “**123456**”.
 
 Now, check it on the receiving server:
 
@@ -405,7 +405,7 @@ As you can see in **Figure 27**, the server has received the packet successfully
 
 #### 2 . Connect Cellular Network and Send Packet Automatically
 
-In this section, you will be connecting and sending data with Cellular Network, **automatically**. 
+In this section, you will be connecting and sending data with Cellular Network, **automatically**.
 
 - First, configure the parameters for the cellular operator information and the receiving server information as follows (a China Mobile SIM card and based on GSM network are used as an example):
 

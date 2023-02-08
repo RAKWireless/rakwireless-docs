@@ -7,7 +7,7 @@ tags:
   - wistrio
   - RAK8212
 rak_desc: Provides comprehensive information about your RAK8212 WisTrio iTracker Pro to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wistrio/rak8212/quickstart/overview/RAK8212_home.png
+rak_img: /assets/images/wistrio/rak8212/quickstart/overview/RAK8212.png
 ---
 
 # RAK8212 WisTrio iTracker Pro Datasheet
@@ -186,7 +186,7 @@ The hardware specification is categorized into six parts. It discusses the pinou
 |                    | Voice @Real Network 108 mA                                                                                      |
 | Protocol           | TCP/UDP/PPP                                                                                                     |
 
-#### RF Characteristics                                                             
+#### RF Characteristics
 
 | Item           | Specification                                                                                                                         |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |

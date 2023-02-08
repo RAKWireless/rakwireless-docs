@@ -123,8 +123,8 @@ Also, the Vout output voltage is the same as DC input voltage Vin.
 
 ##### Reset key and indicator LED
 
-| Reset Key    | Press the reset key shortly to restart the system                  |
-| ------------ | ------------------------------------------------------------------ |
+| Reset Key   | Press the reset key shortly to restart the system                  |
+| ----------- | ------------------------------------------------------------------ |
 | 🔴 Red LED   | Power indicator (Only valid when using the USB power)              |
 | 🟢 Green LED | System working indicator, flashing when there is data transmission |
 
@@ -170,7 +170,7 @@ RAK7431 allows for three installation methods: wall mounting, DIN rail installat
 
 | Model   | Firmware Version | Source                                                                                          |
 | ------- | ---------------- | ----------------------------------------------------------------------------------------------- |
-| RAK7431 | 1.1.0063         | [Download](https://downloads.rakwireless.com/LoRa/RAK7431/Firmware/RAK7431_Latest_Firmware.zip) |
+| RAK7431 | 1.1.0067         | [Download](https://downloads.rakwireless.com/LoRa/RAK7431/Firmware/RAK7431_Latest_Firmware.zip) |
 ## Certification
 
 <rk-certifications :params="$page.frontmatter.certifications" />

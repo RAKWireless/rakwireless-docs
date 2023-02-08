@@ -6,7 +6,7 @@ tags:
   - quickstart
   - wislink
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK2247 WisLink LPWAN Concentrator. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LPWAN Concentrator.
-rak_img: /assets/images/wislink-lora/rak2247/quickstart/1.main/RAK2247_home.png
+rak_img: /assets/images/wislink-lora/rak2247/quickstart/1.main/RAK2247.png
 
 ---
 

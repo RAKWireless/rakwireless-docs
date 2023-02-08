@@ -6,7 +6,7 @@ tags:
   - wislink
   - quickstart
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK2245 Stamp WisLink LPWAN Concentrator. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LPWAN Concentrator.
-rak_img: /assets/images/wislink-lora/rak2245-stamp-edition/quickstart/overview/RAK2245-Stamp_home.png
+rak_img: /assets/images/wislink-lora/rak2245-stamp-edition/quickstart/overview/RAK2245-Stamp.png
 
 ---
 

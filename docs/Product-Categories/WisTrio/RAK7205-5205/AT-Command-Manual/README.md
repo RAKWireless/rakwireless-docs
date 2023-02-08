@@ -6,7 +6,7 @@ tags:
   - wistrio
   - RAK7205-5205
 rak_desc: For an easier experience with your RAK7205 LPWAN Tracker, a comprehensive list of commands in configuring your device is provided.
-rak_img: /assets/images/wistrio/rak7205-5205/quickstart/overview/RAK5205_home.png
+rak_img: /assets/images/wistrio/rak7205-5205/quickstart/overview/RAK5205.png
 ---
 
 # RAK5205 AT Command Manual
@@ -20,7 +20,7 @@ The AT command is based on ASCII characters. In general, the AT Command starts w
 
 The AT commands can be classified in the following groups:
 
-* **Read Command**: Reads the current configuration or status of the module. The command name and the list of parameters are separated by `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character. 
+* **Read Command**: Reads the current configuration or status of the module. The command name and the list of parameters are separated by `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character.
 
 ```
 at+get_config=<m>:<n>
@@ -57,7 +57,7 @@ OK [information]\r\n
 
 :::tip 📝 NOTE:
 
-Only the read commands have information in the replied message, while Write commands do not have an informative description. 
+Only the read commands have information in the replied message, while Write commands do not have an informative description.
 
 :::
 
@@ -120,7 +120,7 @@ This command is used to get the current firmware version number.
 **Example**:
 
 ```
-at+version\r\n                         
+at+version\r\n
 OK V3.0.0.14.H
 ```
 
@@ -141,7 +141,7 @@ This command is used to obtain all AT commands supported by the current firmware
 **Example**:
 
 ```
-at+help\r\n         
+at+help\r\n
 
 OK Device AT commands:
 
@@ -216,7 +216,7 @@ LoRa (R) is a registered trademark or service mark of Semtech Corporation or its
 
 RAK5205 Version:3.0.0.14.H
 Current work_mode:LoRaWAN, join_mode:OTAA, MulticastEnable: false, Class: A
-Initialization OK 
+Initialization OK
 ```
 
 <br>
@@ -246,10 +246,10 @@ This command is used to change the current state of the device between the sleep
 **Example**:
 
 ```
-at+set_config=device:sleep:1\r\n                         
+at+set_config=device:sleep:1\r\n
 OK Sleep
 
-at+set_config=device:sleep:0\r\n 
+at+set_config=device:sleep:0\r\n
 OK Wake Up
 ```
 
@@ -270,7 +270,7 @@ This command is used to obtain the current status of the device.
 **Example**:
 
 ```
-at+get_config=device:status\r\n                         
+at+get_config=device:status\r\n
 OK Board Core:RAK7205
 MCU:STM32L151CBU6A
 LoRa chip:SX1276
@@ -281,7 +281,7 @@ LoRa chip:SX1276
 
 1. <b> at+set_config=device:uart:`<index>:<baud_rate>` </b>
 
-This command is used to configure the baud rate for a UART port. 
+This command is used to configure the baud rate for a UART port.
 
 :::tip 📝 NOTE:
 There will be no reply after executing this configuration if a different baud rate is set. To make your UART serial communication work again, configure the UART baud rate setting of the Serial Port Tool based on the new baud rate.
@@ -302,7 +302,7 @@ There will be no reply after executing this configuration if a different baud ra
     </tr>
     <tr>
       <td> baud_rate </td>
-      <td> UART Baud rate：1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200 
+      <td> UART Baud rate：1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200
       </td>
     </tr>
 </table>
@@ -313,7 +313,7 @@ There will be no reply after executing this configuration if a different baud ra
 **Example**:
 
 ```
-at+set_config=device:uartx:1:115200\r\n                         
+at+set_config=device:uartx:1:115200\r\n
 ```
 <br>
 
@@ -342,7 +342,7 @@ This command is used to switch the UART operation between the AT configuration m
 
 <br>
 
-:::tip 📝 NOTE: 
+:::tip 📝 NOTE:
 
 To switch from data transmission mode to configuration mode, use `+++` (`+++` without `\ r\ n`).
 
@@ -353,7 +353,7 @@ To switch from data transmission mode to configuration mode, use `+++` (`+++` wi
 **Example**:
 
 ```
-at+set_config=device:uart_mode:1:1\r\n                         
+at+set_config=device:uart_mode:1:1\r\n
 OK
 
 +++
@@ -390,7 +390,7 @@ This command is used to send data over a UART port.
 **Example**:
 
 ```
-at+send=uart:1:12345\r\n                         
+at+send=uart:1:12345\r\n
 OK
 ```
 
@@ -424,7 +424,7 @@ This command is used to obtain the voltage level status of a pin on a module.
 **Example**:
 
 ```
-at+get_config=device:gpio:2\r\n                         
+at+get_config=device:gpio:2\r\n
 OK 1
 ```
 
@@ -459,8 +459,8 @@ This command is used to set the voltage level state (high or low) of a pin on a 
 **Example**:
 
 ```
-at+set_config=device:gpio:2:0\r\n                         
-OK 
+at+set_config=device:gpio:2:0\r\n
+OK
 ```
 
 <br>
@@ -494,7 +494,7 @@ This command is used to obtain the voltage level of an ADC pin of the board.
 **Example**:
 
 ```
-at+get_config=device:adc:2\r\n                         
+at+get_config=device:adc:2\r\n
 OK 1663mV
 ```
 
@@ -549,21 +549,21 @@ This command is used to send data via LoRaWAN.
 When sending data as unconfirmed uplink:
 
 ```
-at+send=lora:1:5A00\r\n                         
+at+send=lora:1:5A00\r\n
 OK
 ```
 
 When sending data as confirmed uplink:
 
 ```
-at+send=lora:1:5A00\r\n                         
+at+send=lora:1:5A00\r\n
 OK
 at+recv=0,-105,-12,0
 ```
 
 :::tip 📝 NOTE:
 
-When sending a confirmed message, you will receive an ACK response, i.e. `at+recv=...`. 
+When sending a confirmed message, you will receive an ACK response, i.e. `at+recv=...`.
 The `0, -105, -12,0` stands for:
   * `0`: For the LoRa port;
   * `-105`: For the RSSI;
@@ -599,7 +599,7 @@ This command is used to set the appropriate working frequency band.
 **Example**:
 
 ```
-at+set_config=lora:region:EU868\r\n                         
+at+set_config=lora:region:EU868\r\n
 OK
 ```
 
@@ -626,8 +626,8 @@ This command is used to read all the LoRa channel information for the device's c
 - EU868 region
 
 ```
-at+get_config=lora:channel\r\n                         
-OK *0,on,868100000,0,5; *1,on,868300000,0,5; *2,on,868500000,0,5; 3,off,0,0,0; 4,off,0,0,0; 5,off,0,0,0; 6,off,0,0,0; 7,off,0,0,0; *8,on,867100000,0,5; *9,on,867300000,0,5; *10,on,867500000,0,5; *11,on,867700000,0,5; *12,on,867900000,0,5; 13,off,0,0,0; 14,off,0,0,0; 15,off,0,0,0 
+at+get_config=lora:channel\r\n
+OK *0,on,868100000,0,5; *1,on,868300000,0,5; *2,on,868500000,0,5; 3,off,0,0,0; 4,off,0,0,0; 5,off,0,0,0; 6,off,0,0,0; 7,off,0,0,0; *8,on,867100000,0,5; *9,on,867300000,0,5; *10,on,867500000,0,5; *11,on,867700000,0,5; *12,on,867900000,0,5; 13,off,0,0,0; 14,off,0,0,0; 15,off,0,0,0
 ```
 
 :::tip 📝 NOTE:
@@ -647,7 +647,7 @@ With <b>`*0,on,868100000,0,5`</b> as an example，the following is the channel p
 
 5. <b> at+set_config=lora:ch_mask:`<channel_number>:<status>` </b>
 
-This command is used to switch a channel (turn on or off) in the current region. 
+This command is used to switch a channel (turn on or off) in the current region.
 
 
 | Operation | Command                                                | Response |
@@ -707,7 +707,7 @@ This command is used to set the Device EUI parameter for the LoRaWAN OTAA mode.
 **Example**:
 
 ```
-at+set_config=lora:dev_eui:3530353064377716\r\n                         
+at+set_config=lora:dev_eui:3530353064377716\r\n
 OK
 ```
 
@@ -738,7 +738,7 @@ This command is used to set the Application EUI parameter for the LoRaWAN OTAA m
 **Example**:
 
 ```
-at+set_config=lora:app_eui:0000000000000001\r\n                         
+at+set_config=lora:app_eui:0000000000000001\r\n
 OK
 ```
 
@@ -769,7 +769,7 @@ This command is used to set the Application Key parameter for the LoRaWAN OTAA m
 **Example**:
 
 ```
-at+set_config=lora:app_key:841986913ACD00BBC2BE2479D70F3228\r\n                         
+at+set_config=lora:app_key:841986913ACD00BBC2BE2479D70F3228\r\n
 OK
 ```
 
@@ -801,7 +801,7 @@ This command is used to set the Device Address parameter for the LoRaWAN ABP mod
 **Example**:
 
 ```
-at+set_config=lora:dev_addr:260125D7\r\n                         
+at+set_config=lora:dev_addr:260125D7\r\n
 OK
 ```
 
@@ -832,7 +832,7 @@ This command is used to set the Application Session Key parameter for the LoRaWA
 **Example**:
 
 ```
-at+set_config=lora:apps_key:841986913ACD00BBC2BE2479D70F3228\r\n                         
+at+set_config=lora:apps_key:841986913ACD00BBC2BE2479D70F3228\r\n
 OK
 ```
 
@@ -862,7 +862,7 @@ This command is used to set the Network Session Key parameter for the LoRaWAN AB
 **Example**:
 
 ```
-at+set_config=lora:nwks_key:69AF20AEA26C01B243945A28C9172B42\r\n                         
+at+set_config=lora:nwks_key:69AF20AEA26C01B243945A28C9172B42\r\n
 OK
 ```
 
@@ -870,7 +870,7 @@ OK
 
 12. <b> at+set_config=lora:multicastenable:`<IsEnable>` </b>
 
-This commands is used to enable multicasting.  
+This commands is used to enable multicasting.
 
 | Operation | Command                                         | Response |
 | --------- | ----------------------------------------------- | -------- |
@@ -892,7 +892,7 @@ This commands is used to enable multicasting.
 **Example**:
 
 ```
-at+set_config=lora:multicastenable:1\r\n                         
+at+set_config=lora:multicastenable:1\r\n
 OK
 ```
 
@@ -922,7 +922,7 @@ This command is used to set the Device Address for the multicast feature.
 **Example**:
 
 ```
-at+set_config=lora:multicast_dev_addr:260111fd\r\n                         
+at+set_config=lora:multicast_dev_addr:260111fd\r\n
 OK
 ```
 
@@ -952,7 +952,7 @@ This command is used to set the Application Session Key for the multicast featur
 **Example**:
 
 ```
-at+set_config=lora:multicast_apps_key:F13DDFA2619B10411F02F042E1C0F356\r\n              
+at+set_config=lora:multicast_apps_key:F13DDFA2619B10411F02F042E1C0F356\r\n
 OK
 ```
 
@@ -982,7 +982,7 @@ This command is used to set the Network Session Key for the multicast feature.
 **Example**:
 
 ```
-at+set_config=lora:multicast_nwks_key:1D1991F5377C675879C39B6908D437A6\r\n               
+at+set_config=lora:multicast_nwks_key:1D1991F5377C675879C39B6908D437A6\r\n
 OK
 ```
 
@@ -1012,7 +1012,7 @@ This command is used to switch the LoRaWAN access mode between the OTAA and the 
 **Example**:
 
 ```
-at+set_config=lora:join_mode:1\r\n                         
+at+set_config=lora:join_mode:1\r\n
 OK
 ```
 
@@ -1074,7 +1074,7 @@ This command is used to set the type messages to be sent: Confirmed/Unconfirmed.
 **Example**:
 
 ```
-at+set_config=lora:confirm:0\r\n                         
+at+set_config=lora:confirm:0\r\n
 OK
 ```
 
@@ -1125,7 +1125,7 @@ This command is used to set the RF transmission power level of the LoRa transcei
 **Example**:
 
 ```
-at+set_config=lora:tx_power:0\r\n                         
+at+set_config=lora:tx_power:0\r\n
 OK
 ```
 
@@ -1133,7 +1133,7 @@ OK
 
 21. <b> at+set_config=lora:adr:`<status>` </b>
 
-This command is used to turn on/off the ADR feature of the LoRa communication. 
+This command is used to turn on/off the ADR feature of the LoRa communication.
 
 | Operation | Command                           | Response |
 | --------- | --------------------------------- | -------- |
@@ -1155,7 +1155,7 @@ This command is used to turn on/off the ADR feature of the LoRa communication.
 **Example**:
 
 ```
-at+set_config=lora:adr:0\r\n                         
+at+set_config=lora:adr:0\r\n
 OK
 ```
 
@@ -1177,7 +1177,7 @@ This command is used to get all the information related to the current LoRa stat
 **Example**:
 
 ```
-at+get_config=lora:status\r\n                         
+at+get_config=lora:status\r\n
 OK Work Mode: LoRaWAN
 Region: EU868
 Send_interval: 600s
@@ -1303,7 +1303,7 @@ This command is used to set the time interval for sending data.
 
 <br>
 
-**Parameter**: 
+**Parameter**:
 
 <table>
     <tr>
@@ -1335,7 +1335,7 @@ This command is used to set a periodic restart. It is only available on FW versi
 
 <br>
 
-**Parameter**:  
+**Parameter**:
 
 <table>
     <tr>
@@ -1379,7 +1379,7 @@ This command is used to switch the LoRa transmission mode between the LoRaWAN an
 
 **Example**：
 ```
-at+set_config=lora:work_mode:1\r\n                         
+at+set_config=lora:work_mode:1\r\n
 UART1 work mode: RUI_UART_NORMAL
 Current work_mode:P2P
 Initialization OK
@@ -1428,7 +1428,7 @@ This command is used to set the relevant parameters of LoRAP2p mode and is only 
 **Example**：
 
 ```
-at+set_config=lorap2p:869525000:12:0:1:8:20\r\n                         
+at+set_config=lorap2p:869525000:12:0:1:8:20\r\n
 OK
 ```
 
@@ -1455,7 +1455,7 @@ This command is used to switch the state of the LoRa transceiver between sending
 
 **Example**：
 ```
-at+set_config=lorap2p:transfer_mode:1\r\n           
+at+set_config=lorap2p:transfer_mode:1\r\n
 OK
 ```
 
@@ -1483,7 +1483,7 @@ This command is used for sending data through LoRaP2P, and only valid when the L
 **Example**：
 
 ```
-at+send=lorap2p:1234\r\n                         
+at+send=lorap2p:1234\r\n
 OK
 ```
 
@@ -1497,7 +1497,7 @@ at+recv=<RSSI>,<SNR>,< Data Length >:< Data >
 
 ## Sensor AT command
 
-1. <b> at+set_config=device:gps_timeout:time  </b>	
+1. <b> at+set_config=device:gps_timeout:time  </b>
 
 This command is used to set the timeout of searching GPS satellite.
 
@@ -1519,7 +1519,7 @@ This command is used to set the timeout of searching GPS satellite.
 **Example**：
 
 ```
-at+set_config=device:gps_timeout:120\r\n                         
+at+set_config=device:gps_timeout:120\r\n
 OK
 ```
 
@@ -1538,7 +1538,7 @@ This command is used to configure the GPS payload format.
 <table>
       <tr>
             <td>accuracy</td>
-          <td> 0: LPP format which is only 4 decimal digits accuracy <br>            1: 6 decimal digits accuracy <br><br> The default is 0.</td> 
+          <td> 0: LPP format which is only 4 decimal digits accuracy <br>            1: 6 decimal digits accuracy <br><br> The default is 0.</td>
         </tr>
 </table>
 
@@ -1547,7 +1547,7 @@ This command is used to configure the GPS payload format.
 **Example**：
 
 ```
-at+set_config=device:gps_format:0\r\n                         
+at+set_config=device:gps_format:0\r\n
 OK
 ```
 
@@ -1648,7 +1648,7 @@ OK
 
 <b> EU868 </b>
 
-By default, MaxEIRP is considered to be +16&nbsp;dBm. 
+By default, MaxEIRP is considered to be +16&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1680,7 +1680,7 @@ By default, MaxEIRP is considered to be +16&nbsp;dBm.
 
 <b> AU915 </b>
 
-By default, MaxEIRP is considered to be +30&nbsp;dBm. 
+By default, MaxEIRP is considered to be +30&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1693,7 +1693,7 @@ By default, MaxEIRP is considered to be +30&nbsp;dBm.
 
 <b> KR920 </b>
 
-By default, MaxEIRP is considered to be +14&nbsp;dBm. 
+By default, MaxEIRP is considered to be +14&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1712,7 +1712,7 @@ By default, MaxEIRP is considered to be +14&nbsp;dBm.
 
 <b> AS923 </b>
 
-By default, Max EIRP shall be 16&nbsp;dBm. 
+By default, Max EIRP shall be 16&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1732,7 +1732,7 @@ By default, Max EIRP shall be 16&nbsp;dBm.
 
 <b> IN865 </b>
 
-By default, MaxEIRP is considered to be 30&nbsp;dBm. 
+By default, MaxEIRP is considered to be 30&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1754,7 +1754,7 @@ By default, MaxEIRP is considered to be 30&nbsp;dBm.
 
 <b> CN470 </b>
 
-By default, MaxEIRP is considered to be +19.15&nbsp;dBm. 
+By default, MaxEIRP is considered to be +19.15&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1773,7 +1773,7 @@ By default, MaxEIRP is considered to be +19.15&nbsp;dBm.
 
 <b> EU433 </b>
 
-By default, MAxEIRP is considered to be +12.15&nbsp;dBm. 
+By default, MAxEIRP is considered to be +12.15&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |

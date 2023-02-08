@@ -28,13 +28,13 @@ export default {
   name: "RkCertificationNewsletter",
   // mixins: [CommonMixin],
   data: () => ({
-    listId: "Y3yzQE",
+    listId: 48,
     email: "",
     message: "",
   }),
   computed: {
     computedApi() {
-      let endpoint = `https://form-api.rakwireless.com/api/proxy/post?baseUrl=https://a.klaviyo.com/api/v2/list/${this.listId}/subscribe`;
+      let endpoint = `https://form-api.rakwireless.com/newsletter/api/contacts/${this.listId}`;
       return endpoint;
     },
   },
@@ -49,9 +49,9 @@ export default {
           email: email,
         },
       }).then(function (response) {
+        console.log("CERTIOFICATION RESPONSE: ",response)
         if (response.status == 200) {
-          status = response.status;
-          $this.message = "Email confirmation sent!";
+          $this.message = "Subscription success!";
         }
       });
     },

@@ -6,7 +6,7 @@ tags:
   - wistrio
   - RAK5010-M
 rak_desc: Provides comprehensive information about your RAK5010-M WisTrio NB-IoT Tracker to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wistrio/rak5010-m/overview/RAK5010-M_home.png
+rak_img: /assets/images/wistrio/rak5010-m/overview/RAK5010-M.png
 certifications:
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK5010/Certification/RAK5010_ROHS_Report.pdf]
 ---
