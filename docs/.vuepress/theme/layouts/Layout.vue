@@ -34,7 +34,7 @@
             </q-item>
           </div>
           <q-space />
-          <rk-search-box 
+          <rk-search-box
             class="gt-md"
           />
           <rk-search-box class="lt-lg" minimized />
@@ -88,14 +88,14 @@
               >
             </q-btn>
           </transition>
-          
+
         </q-page-sticky>
-        
+
       </q-page-container>
       <q-footer>
         <rk-footer />
       </q-footer>
-      <!-- <rk-banner /> -->
+      <rk-banner />
     </q-layout>
   </ClientOnly>
 </template>
@@ -152,7 +152,7 @@ export default {
     RkSearchBox,
     RkBanner
   },
-  mixins: 
+  mixins:
     [ScrollMixin, TagsMixin, CommonMixin],
 
   data() {
@@ -186,11 +186,11 @@ export default {
     shouldHaveHeader() {
       return this.$page.frontmatter.header || this.$page.frontmatter.article
     },
-    shouldShowNavbar() { 
+    shouldShowNavbar() {
       const { themeConfig } = this.$site
       const { frontmatter } = this.$page
 
-      
+
       if (frontmatter.navbar === false || themeConfig.navbar === false) {
         return false
       }
@@ -378,16 +378,16 @@ export default {
 
         }
       else {
-       
+
         this.setIsShow(false);
       }
     },
     checkRouteName(routeName){
       if(routeName == 'v-00ca1ee8' || routeName == 'v-339265df' || routeName == 'v-1f7eaef6' || routeName == 'v-83e8fff2'){
         this.setIsShow(true);
-       
+
       }else {
-        
+
         this.setIsShow(false);
       }
     },
@@ -419,7 +419,7 @@ export default {
       this.$root.lastPath = oldval.path
     },
     $route(to, from) {
-      
+
       if(to.fullPath === '/Knowledge-Hub/Learn/' && (to.fullPath).length <= 21 ){
         console.log('INSIDE',(to.fullPath).length <= 21 )
         this.isKnowledgeHub = false;
