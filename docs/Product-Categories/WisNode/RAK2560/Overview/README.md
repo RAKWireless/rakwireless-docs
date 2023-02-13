@@ -47,3 +47,7 @@ The Sensor Hub and its sensor probes are easily configured via the WisToolBox ap
 - Prevent theft via the hall effect sensor on the exclusive mounting bracket
 - IP66-rated waterproof enclosure
 - Sensor ports can host multiple Sensor Probes via Probe Splitters
+
+:::tip 📝 NOTE
+WisNode Sensor Hub can be powered with batteries or a dedicated power adapter. It supports 2 to 4 batteries type: ER18505 3.6&nbsp;V 4000&nbsp;mAh Li-SOCl2 NON-rechargeable lithium batteries which are NOT included.
+:::

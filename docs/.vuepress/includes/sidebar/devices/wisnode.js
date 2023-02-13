@@ -219,6 +219,14 @@ module.exports = {
       nested: true,
       download: true,
       sidebarDepth: 4
+    },
+    {
+      title: 'Miscellaneous',
+      collapsable: false,
+      sidebarDepth: 4,
+      children: [
+        '/Product-Categories/WisNode/RAK7431/Firmware-Upgrade-Guide/'
+      ]
     }
   ],
   '/Product-Categories/WisNode/RAK7432-RAK7434/': [{

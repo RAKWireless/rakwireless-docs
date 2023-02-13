@@ -1387,6 +1387,11 @@ export default {
     img: '/assets/images/accessories/solar-panel-kit-for-battery-plus/solar-panel-kit-for-battery-plus-overview.png',
     store: 'https://store.rakwireless.com/products/solar-panel-for-rak-battery-plus-with-mounting-kit?utm_source=SolarPanelBatteryPlus&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/Accessories/Solar-Panel/': {
+    label: 'Solar Panel 80 x 45 mm',
+    img: '/assets/images/accessories/solar-panel/solar-panel.png',
+    store: 'https://store.rakwireless.com/products/solar-panel?utm_source=SmallSolarPanel&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
   '/Product-Categories/Accessories/RAK9105P/': {
     label: 'RAK9105P PoE Power Convertor',
     img: '/assets/images/accessories/rak9105p/rak9105p.png',

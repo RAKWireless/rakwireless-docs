@@ -896,6 +896,24 @@ module.exports = {
       sidebarDepth: 4
     }
   ],
+  '/Product-Categories/Accessories/Solar-Panel/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/Solar-Panel/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/Solar-Panel/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
   '/Product-Categories/Accessories/RAK9155/': [
     {
       title: 'Overview',

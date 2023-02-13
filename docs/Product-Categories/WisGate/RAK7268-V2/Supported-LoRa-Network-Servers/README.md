@@ -926,6 +926,9 @@ After login to the device using the web browser, the system log can be viewed fr
 2. Lost password to login to the web login.
    - Hold the reset button for 10 seconds to factory reset the device
 
+## AWS IoT Core Integration
+
+AWS IoT Core Integration is a software service that enables your LoRaWAN gateway to work with AWS IoT Core. The [AWS Integration for WisGate Edge V2](https://docs.rakwireless.com/Knowledge-Hub/Learn/AWS-Integration-for-WisGate-Edge-V2/) tutorial will show you how to set up a LoRaWAN end-node and view its data on the AWS IoT Console. In addition, it’ll show you how to send a message from AWS IoT Console to the end-node as well.
 
 ## The Things Network (TTN)
 
@@ -1946,4 +1949,4 @@ In this section, you will learn how to add RAK7268V2/RAK7268CV2 WisGate Edge Lit
 
 ThingPark is Actility’s platform, in which you can register your LoRaWAN gateway and end devices. ThingPark offers a user-friendly dashboard, in which you can monitor different information about the gateway/end device like status, radio traffic, statistics, and more. Together with HTTPS integration, you can send the data received from the end nodes to an Application server for post-processing and visualizing.
 
-For the complete step-by-step tutorial, refer to the [How to Add RAK WisGate Edge Gateway in ThingPark - Actility ThingPark Guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/How-to-Add-RAK-WisGate-Edge-Gateway-in-ThingPark-Actility-ThingPark-Guide/).
+For the complete step-by-step tutorial, refer to the [How to Add RAK WisGate Edge Gateway V2 in ThingPark - Actility ThingPark Guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/How-to-Add-RAK-WisGate-Edge-Gateway-V2-in-ThingPark-Actility-ThingPark-Guide/).

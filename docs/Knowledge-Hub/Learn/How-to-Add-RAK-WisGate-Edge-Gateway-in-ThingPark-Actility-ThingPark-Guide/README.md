@@ -1,7 +1,7 @@
 ---
 sidebar: false
 rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
-rak_desc: This guide provides a step-by-step tutorial on how to add RAK WisGate Edge Gateway in Actility's ThingPark.
+rak_desc: This guide provides a step-by-step tutorial on how to connect a RAK WisGate Edge Gateway to ThingPark, an Actility platform, via Basics Station.
 tags:
   - User-Manual
   - Actility
@@ -11,7 +11,7 @@ tags:
   - Gateway
   - Basics Station
 header:
-  title: How to Add RAK WisGate Edge gateway in ThingPark - Actility ThingPark Guide
+  title: How to Add RAK WisGate Edge Gateway in ThingPark - Actility ThingPark Guide
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/high-power-wifi-module-and-power-line-communications.jpg
 posted: 11/01/2023 8:00 PM
@@ -47,11 +47,11 @@ src="/assets/images/knowledge-hub/learn/actility-thingpark-guide/2.creating-base
   caption="Creating Base Station"
 />
 
-4. On the **Select Your Base Station Manufacturer** window, find and choose **RAK Wireless**. This can be done by either scrolling down manually to find it or by typing **RAK** in the **Type to search manufacturers in the list** search field.
+4. On the **Select Your Base Station Manufacturer** window, find and choose **RAK Wireless**. You can either scroll down manually or type **RAK** in the **Type to search manufacturers in the list** search field.
 
 <rk-img
 src="/assets/images/knowledge-hub/learn/actility-thingpark-guide/3.select-rakwireless-manufacturer.png"
-  width="80%"
+  width="50%"
   caption="Select RAKwireless Manufacturer"
 />
 
@@ -134,7 +134,7 @@ src="/assets/images/knowledge-hub/learn/actility-thingpark-guide/11.basics-stati
 />
 
 14. Once all the fields are filled in, click **Save & Apply** to save the changes.
-15. If everything was set up correctly, you can see that the gateway is connected to ThingPark in the **STATUS** area in ThingPark.
+15. If everything is set up correctly, you can see that the gateway is connected to ThingPark in the **STATUS** area in ThingPark.
 
 <rk-img
 src="/assets/images/knowledge-hub/learn/actility-thingpark-guide/12.successfully-connected-gateway.png"

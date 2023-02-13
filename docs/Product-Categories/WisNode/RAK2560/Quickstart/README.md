@@ -34,6 +34,17 @@ Before going through each and every step on using the RAK2560 WisNode Sensor Hub
   caption="Sensor Hub ecosystem"
 />
 
+:::tip 📝 NOTE
+
+WisNode Sensor Hub can be powered with batteries or a dedicated power adapter. It supports 2 to 4 batteries type: ER18505 3.6&nbsp;V 4000&nbsp;mAh Li-SOCl2 NON-rechargeable lithium batteries which are NOT included upon purchase.
+
+You can supply the batteries locally or from one of the global electronics distributors:
+1. [Amazon](https://www.amazon.com/EEMB-Capacity-Batteries-Rechargeable-Certified/dp/B07TTGW7XQ/ref=sr_1_1_sspa?crid=3Q1EZ9Y11KCKN&keywords=ER18505&qid=1676374193&sprefix=er18505%2Caps%2C201&sr=8-1-spons&psc=1&smid=A3JZ0E8P9D7DI&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExWFpINDM3V1VLVkdWJmVuY3J5cHRlZElkPUExMDE2MzEzMkRZWDVTQ1VaQURPRyZlbmNyeXB0ZWRBZElkPUEwOTc1NjU3QTFDVFBINFIwUjEyJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==)
+2. [Mouser](https://www.mouser.bg/ProductDetail/Ultralife/ER18505?qs=zfu6fx%252B1HVV05VN8zSGKvA%3D%3D)
+3. [AliExpress](https://www.aliexpress.com/item/1005004658194639.html?spm=a2g0o.productlist.main.1.7a477185fc5rOu&algo_pvid=8404268f-c97a-4f0e-b093-fea934f49acb&algo_exp_id=8404268f-c97a-4f0e-b093-fea934f49acb-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000030006218882%22%7D&pdp_npi=3%40dis%21BGN%217.95%217.15%21%21%21%21%21%402102110316763743466464381d06f9%2112000030006218882%21sea%21BG%21827888164&curPageLogUid=P9xZl9592JjT)
+
+:::
+
 ## Product Configuration
 
 ### Power On the Sensor Hub
@@ -129,7 +140,7 @@ When the data synchronization process is completed, you will see the **SENSOR HU
 
 #### LoRa and LoRaWAN Parameters
 
-From the LORA & LORAWAN PARAMETERS screen, you can set and see all the information needed so the device can join a network server of your choice. 
+From the LORA & LORAWAN PARAMETERS screen, you can set and see all the information needed so the device can join a network server of your choice.
 
 <rk-img
   src="/assets/images/wisnode/rak2560/quickstart/lora-and-lorawan-parameters-screen.jpg"
@@ -137,7 +148,7 @@ From the LORA & LORAWAN PARAMETERS screen, you can set and see all the informati
   caption="LoRa and LoRaWAN parameters screen"
 />
 
-1. You can configure the **Join mode** and **Active region** in **Global settings**. 
+1. You can configure the **Join mode** and **Active region** in **Global settings**.
 2. From the **Active region** menu, you can select the LoRaWAN band to be used.
 
 <rk-img
@@ -237,7 +248,7 @@ Key = 0x08(Oct) = 0b00001000(Bin)
 
 ###  Sensor Probe
 
- The RAK1901, RAK1902, RAK1904, and RAK1906 all incorporate multiple sensors integrated into a single sensor IC. 
+ The RAK1901, RAK1902, RAK1904, and RAK1906 all incorporate multiple sensors integrated into a single sensor IC.
 
 | WisBlock Module | Sensor IC | Sensor Type                         | Sensor Data Values                                                                                                                                              |
 | --------------- | --------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |

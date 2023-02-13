@@ -1,7 +1,7 @@
 ![RAK-only-gray](https://github.com/RAKWireless/rakwireless-docs-internal/blob/drafts/docs/.vuepress/public/assets/rakwireless/RAK-only-gray.png)
 
 
-# RAKwireless 
+# RAKwireless
 **RAKwireless** is an IoT company that aims to bring all-in-one IoT solutions to the global community ranging from end node sensors to cloud computing. It is committed to delivering practical and effective IoT solutions, hence, provides high-quality IoT devices.
 
 ## RAK Documentation Center
@@ -14,7 +14,11 @@ The files are sorted per device for a more convenient experience:
 - **Datasheet**: comprehensive information on the device components and functionality with their technical and specific characteristics
 - **Knowledge Hub**: a catalog of supplemental articles and tutorials, and a compilation of pre-answered questions about the device and the technology utilized to narrow the common knowledge gaps for a more thorough understanding
 
-For further details, you can check our [RAK Documentation Center](https://docs.rakwireless.com/).
+
+For further details, check our [RAK Documentation Center](https://staging.docs.rakwireless.com/) and contact the person in charge for the credentials.
+
+- Phoenix Aspacio *phoenix.aspacio@rakwireless.com*
+- Caryl Keen Enanor *caryl.enanor@rakwireless.com*
 
 ### Open-Source
 RAK decided to make its documentation center open-source to extend its scope where experts and enthusiasts collaborate and operate at their full potential. Also, anyone can inspect for errors and inconsistencies that are beneficial to the documentation center and to the other users as well. Hence, the decision is made with these three in mind:
@@ -26,7 +30,7 @@ RAK decided to make its documentation center open-source to extend its scope whe
 
 ### Getting Started
 #### Prerequisites
-Before you begin, make sure to install [VuePress](https://vuepress.vuejs.org/) first. 
+Before you begin, make sure to install [VuePress](https://vuepress.vuejs.org/) first.
 
 #### Installation
 
@@ -48,13 +52,22 @@ yarn docs:dev
 yarn docs:build
 ```
 
+
+:::tip 📝 NOTE
+
+If there is a `yarn` error in running the local server, you can either do the following:
+1. Add `yarn` to the **Environment Variables**;
+2. Use a lower version of **Node.j**, preferably **v16.19.x**.
+
+:::
+
 ### Contribution
 
 Contributions are highly appreciated. Feel free to dive in and follow the [**Contributing Guidelines**](CONTRIBUTING.md).
 
 ### Links
 
-* [Website](https://www.rakwireless.com/) 
+* [Website](https://www.rakwireless.com/)
 * [Documentation Center](https://docs.rakwireless.com/)
 * [Store](https://store.rakwireless.com/)
 * [Forum](forum.rakwireless.com)
