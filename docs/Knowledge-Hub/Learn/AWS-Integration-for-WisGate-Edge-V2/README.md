@@ -15,7 +15,7 @@ header:
   title: AWS Integration for WisGate Edge V2
   caption: by <b>RAKwireless Team</b>
   img: /assets/images/knowledge-hub/banners/amazon-web-service.jpg
-posted:
+posted: 15/02/2023 8:00 PM
 ---
 
 # AWS Integration for WisGate Edge V2
@@ -29,11 +29,11 @@ AWS IoT Core Integration is a software service that enables your LoRaWAN gateway
 ### Prerequisites
 
 - A gateway from the RAK WisGate Edge V2 series
-- A node from the RAK WisNode or WisBlock series, or another LoRaWAN compatible node
+- A node from the RAK WisNode or WisBlock series, or another LoRaWAN-compatible node
 - An [AWS account](https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3Ffromtb%3Dtrue%26hashArgs%3D%2523%26isauthcode%3Dtrue%26nc2%3Dh_ct%26src%3Dheader-signin%26state%3DhashArgsFromTB_us-east-1_a53fa9852547e0dd&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=pdxKQdhyX4lCmF3_dH3QBzFZ_lvpvhTprqWNAcHrtlk&code_challenge_method=SHA-256))
 
 :::tip 📝 NOTE
-For this tutorial, the RAK7204 WisNode Sense is used as the end-node and RAK7268V2 WisGate Edge Lite 2 for the gateway.
+For this tutorial, the RAK7204 WisNode Sense is used as the end-node, and RAK7268V2 WisGate Edge Lite 2 is for the gateway.
 :::
 
 ### Set Up Environment for Evaluation
@@ -48,7 +48,7 @@ AWS IoT Core is a cloud-based service that connects your "things" (devices, sens
 
 ##### Create a Thing
 
-1. To create a thing (add a device), in the AWS IoT console, navigate to **All devices** > **Things** and select **Create Things.** 
+1. To create a thing (add a device), in the AWS IoT console, navigate to **All devices** > **Things** and select **Create Things.**
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/aws-integration-for-wisgate-edge-v2/1.things-tab.png"
@@ -80,7 +80,7 @@ AWS IoT Core is a cloud-based service that connects your "things" (devices, sens
   caption="Configure Device Certificate"
 />
 
-5. A policy is needed for your thing. Click **Create policy**. 
+5. A policy is needed for your thing. Click **Create policy**.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/aws-integration-for-wisgate-edge-v2/5.attach-policies.png"
@@ -113,7 +113,7 @@ AWS IoT Core is a cloud-based service that connects your "things" (devices, sens
 
 9. In the opened window, download all the certificates and keys, then click **Done**.
 
-:::warning ⚠️ WARNING
+:::tip 📝 NOTE
 Save the downloaded certificates and keys, as they cannot be downloaded again if needed.
 :::
 
@@ -133,7 +133,7 @@ Save the downloaded certificates and keys, as they cannot be downloaded again if
 
 ##### Configure Global Integration for the AWS Proxy
 
-1. Now, you need to configure the global integration of the gateway for the AWS IoT Core. To do so, in the gateway's Web UI, navigate to **LoRa** > **Configuration** > **Integration Interface Parameters**. Click on **Enable Integration Interface** and choose **AWS IoT Core** for the **Integration Mode**.  
+1. Now, you need to configure the global integration of the gateway for the AWS IoT Core. To do so, in the gateway's Web UI, navigate to **LoRa** > **Configuration** > **Integration Interface Parameters**. Click on **Enable Integration Interface** and choose **AWS IoT Core** for the **Integration Mode**.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/aws-integration-for-wisgate-edge-v2/13.application-server-integration.png"
@@ -182,8 +182,8 @@ Save the downloaded certificates and keys, as they cannot be downloaded again if
   caption="Messages from the Device"
 />
 
-3. RAKwireless provides a [decoder](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder) for all WisNode devices that are based on RUI. All WisNode devices support **Cayenne LPP** payload format and it can be activated via the Web UI of the gateway. Navigate to **LoRa** > **Applications** > **Your_application** > **Configuration** > **Payload format**. 
-   
+3. RAKwireless provides a [decoder](https://github.com/RAKWireless/RUI_LoRa_node_payload_decoder) for all WisNode devices that are based on RUI. All WisNode devices support **Cayenne LPP** payload format and it can be activated via the Web UI of the gateway. Navigate to **LoRa** > **Applications** > **Your_application** > **Configuration** > **Payload format**.
+
 4. In the **Payload type** drop-down menu choose **Cayenne LPP**, then enable **Only forward the parsed data object** to receive only the data of the sensor. Click **Save changes**.
 
 <rk-img
@@ -194,7 +194,7 @@ Save the downloaded certificates and keys, as they cannot be downloaded again if
 
 - <b> Send messages to the device </b>
 
-1. To send messages to the end-node, in the AWS IoT console, navigate to **Test** > **MQTT test client** > **Publish to a topic**. 
+1. To send messages to the end-node, in the AWS IoT console, navigate to **Test** > **MQTT test client** > **Publish to a topic**.
 
    Here you need to fill in the following:
 

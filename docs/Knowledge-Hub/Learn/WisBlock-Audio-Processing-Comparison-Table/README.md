@@ -31,16 +31,14 @@ RAKwireless WisBlock Audio currently provides examples for two audio processing 
 
 For further details, see the tables on the following sections.
 
-| WisBlock Core                | Core Features        | Edge Impulse (Sound Recognition) | Cyberon License (Voice Recognition) | RAK18080 support (DSPg DBM10L) | Power Consumption (Edge Impulse) | Power Consumption (Cyberon) | Power Consumption (Cyberon - RAK18080) |
-| ---------------------------- | -------------------- | -------------------------------- | ----------------------------------- | ------------------------------ | -------------------------------- | --------------------------- | -------------------------------------- |
-| RAK4631 Nordic nRF52840      | LoRaWAN (SX1262) BLE | Yes                              | Yes                                 | Yes                            | 10.76mA (19.7mA max)             | 11.2mA (20.6mA max)         | 19.74mA (39.83mA max)                  |
-| RAK11200 Espressif ESP32     | WiFi                 | Yes                              | Yes                                 | Yes                            | 66.35mA (96.2mA max)             | 64.95mA (107.5mA max)       | 77.33mA (118.06mA max)                 |
-| RAK11310 Raspberry Pi RP2040 | LoRaWAN (SX1262)     | Yes                              | No                                  | Yes                            | 29.05mA (39mA max)               | N/A                         | 41.30mA (69.17mA max)                  |
+| WisBlock Core                | Core Features        | Edge Impulse (Sound Recognition) | Cyberon License (Voice Recognition) | RAK18080 support (DSPg DBM10L) | Power Consumption (Edge Impulse) | Power Consumption (Cyberon)       | Power Consumption (Cyberon - RAK18080) |
+| ---------------------------- | -------------------- | -------------------------------- | ----------------------------------- | ------------------------------ | -------------------------------- | --------------------------------- | -------------------------------------- |
+| RAK4631 Nordic nRF52840      | LoRaWAN (SX1262) BLE | Yes                              | Yes                                 | Yes                            | 10.76&nbsp;mA (19.7&nbsp;mA max) | 11.2&nbsp;mA (20.6&nbsp;mA max)   | 19.74&nbsp;mA (39.83&nbsp;mA max)      |
+| RAK11200 Espressif ESP32     | WiFi                 | Yes                              | Yes                                 | Yes                            | 66.35&nbsp;mA (96.2&nbsp;mA max) | 64.95&nbsp;mA (107.5&nbsp;mA max) | 77.33&nbsp;mA (118.06&nbsp;mA max)     |
+| RAK11310 Raspberry Pi RP2040 | LoRaWAN (SX1262)     | Yes                              | No                                  | Yes                            | 29.05&nbsp;mA (39&nbsp;mA max)   | N/A                               | 41.30&nbsp;mA (69.17&nbsp;mA max)      |
 
 :::tip 📝 NOTE:
-
 Power consumption numbers are for reference (comparison) only. Your numbers will be different.
-
 :::
 
 ## Model Comparison
@@ -52,10 +50,8 @@ Power consumption numbers are for reference (comparison) only. Your numbers will
 | Edge Impulse           | Lowest            | Model Dependent   | Yes                       | No                 | Yes                   | Free/Paid | High   | For testing      |
 
 :::tip 📝 NOTE:
-
 1. Cyberon is useable with lowest effort in implementation, but you need to use RAK provided model - trigger and command words.
 2. In terms of cost, Cyberon with RAK18080 is the most expensive.
-
 :::
 
 ## Cyberon Model

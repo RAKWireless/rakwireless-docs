@@ -122,6 +122,9 @@ export default {
           case 'TDRA':
             data.img = '/assets/images/certifications/TDRA.png'
             break
+          case 'SUBTEL':
+            data.img = '/assets/images/certifications/SUBTEL.png'
+            break
           default:
             data.img =
               'https://image.shutterstock.com/image-illustration/white-unknown-document-icon-isolated-600w-1517588975.jpg'

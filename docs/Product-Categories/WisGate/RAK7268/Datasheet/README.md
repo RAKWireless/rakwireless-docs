@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisgate
   - RAK7268
-prev: ../Supported-LoRa-Network-Servers/ 
+prev: ../Supported-LoRa-Network-Servers/
 next: false
 certifications:
   - [Anatel, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_ANATEL_Certification.zip]
@@ -19,6 +19,7 @@ certifications:
   - [REACH, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268C_RAK7268CV2_RAK7268_RAK7268V2_REACH_Report.pdf]
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268C_RAK7268CV2_RAK7268_RAK7268V2_RoHS_Report.pdf]
   - [SRRC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_SRRC_Certification.pdf]
+  - [SUBTEL, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_SUBTEL_Certification.pdf]
   - [UKCA, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268%26RAK7268V2%26RAK7268C%26RAK7268CV2_UK_Certification.pdf]
   - [RSM, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268%26RAK7268V2%26RAK7268C%26RAK7268CV2_RSM_Certification.pdf]
 ---
@@ -39,7 +40,7 @@ The open-source software for the management and configuration of this gateway de
 
 RAK7268 also supports the MQTT Bridge function, can use the MQTT integrated to third-party platforms.
 
-RAK7268 is especially suitable for small and medium-sized deployment scenarios in industry applications, saving the additional cost for server and R&D investment, and has the advantages of high execution efficiency. 
+RAK7268 is especially suitable for small and medium-sized deployment scenarios in industry applications, saving the additional cost for server and R&D investment, and has the advantages of high execution efficiency.
 
 ### Features
 
@@ -76,7 +77,7 @@ The hardware specification covers only the interfacing of the RAK7268 and its co
 
 #### Interfaces
 
-The hardware interfaces of RAK7268 gateway include DC 12&nbsp;V, ETH interface, Console interface, Reset key, TF Card slot, Status indicator LEDs, LoRa Antenna connector, etc. 
+The hardware interfaces of RAK7268 gateway include DC 12&nbsp;V, ETH interface, Console interface, Reset key, TF Card slot, Status indicator LEDs, LoRa Antenna connector, etc.
 
 
 <rk-img
@@ -92,7 +93,7 @@ The function of the Reset key is as follows:
   - **Short press**: Restart the gateway.
   - **Long press** (5&nbsp;sec and above): Restore factory settings.
 
-##### LED Indicators 
+##### LED Indicators
 
 <table>
     <thead>
@@ -267,20 +268,20 @@ The firmware sits on OpenWRT, which makes it possible to customize it. There is 
 ## Certification
 <rk-certifications :params="$page.frontmatter.certifications" />
 
-### FCC Caution 
+### FCC Caution
 
-Any changes or modifications not expressly approved by the party responsible for compliance could void the user's authority to operate the equipment. 
+Any changes or modifications not expressly approved by the party responsible for compliance could void the user's authority to operate the equipment.
 
-This device complies with part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) This device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation. 
+This device complies with part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) This device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation.
 
 :::tip 📝 NOTE:
 
 This equipment has been tested and found to comply with the limits for a Class B digital device, according to part 15 of the FCC Rules. These limits are designed to provide reasonable protection against harmful interference in a residential installation. This equipment generates, uses, and can radiate radio frequency energy and, if not installed and used following the instructions, may cause harmful interference to radio communications. However, there is no guarantee that interference will not occur in a particular installation. If this equipment does cause harmful interference to radio or television reception, which can be determined by turning the equipment off and on, the user is encouraged to try to correct the interference by one or more of the following measures:
 
 1. Reorient or relocate the receiving antenna.
-2. Increase the separation between the equipment and receiver. 
+2. Increase the separation between the equipment and receiver.
 3. Connect the equipment into an outlet on a circuit different from that to which the receiver is connected.
-4. Consult the dealer or an experienced radio/TV technician for help. 
+4. Consult the dealer or an experienced radio/TV technician for help.
 
 :::
 

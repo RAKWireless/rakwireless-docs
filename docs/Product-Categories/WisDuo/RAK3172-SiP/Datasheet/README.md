@@ -2,6 +2,7 @@
 rak_desc: Provides comprehensive information about your RAK3172-SiP to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisduo/rak3172-sip/overview/RAK3172_SiP_home.png
 prev: ../AT-Command-Manual/
+next: ../Application-Note/
 tags:
   - datasheet
   - wisduo
@@ -59,7 +60,7 @@ This section covers the hardware and software specifications of RAK3172-SiP. Als
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/datasheet/rak3172-block-diagram.svg"
-  width="85%"
+  width="70%"
   caption="RAK3172-SiP system block diagram"
 />
 
@@ -86,7 +87,7 @@ You can check the pin definitions on the table and illustration, as shown in **F
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/datasheet/rak3172-sip-pins.png"
-  width="45%"
+  width="40%"
   caption="RAK3172-SiP top view pin diagram"
 />
 
@@ -166,15 +167,15 @@ The RAK3172-SiP supports the frequency of operation from 863 to 930&nbsp;Mhz.
 
 ##### Operating Frequencies
 
-| Region        | Frequency |
-| ------------- | --------- |
-| Europe        | EU868     |
-| North America | US915     |
-| Australia     | AU915     |
-| Korea         | KR920     |
+| Region        | Frequency     |
+| ------------- | ------------- |
+| Europe        | EU868         |
+| North America | US915         |
+| Australia     | AU915         |
+| Korea         | KR920         |
 | Asia          | AS923-1/2/3/4 |
-| India         | IN865     |
-| Russia        | RU864     |
+| India         | IN865         |
+| Russia        | RU864         |
 
 #### Electrical Characteristics
 
@@ -182,23 +183,23 @@ The RAK3172-SiP supports the frequency of operation from 863 to 930&nbsp;Mhz.
 
 | Parameter    | Minimum     | Typical | Maximum | Unit      |
 | ------------ | ----------- | ------- | ------- | --------- |
-| VDD and GPIO | -0.3&nbsp;V |         | 3.9     | Volts (V) |
+| VDD and GPIO | -0.3&nbsp;V |    -    | 3.9     | Volts (V) |
 
 
 ##### Operating Voltage
 
 | Parameter                             | Minimum | Typical | Maximum | Unit      |
 | ------------------------------------- | ------- | ------- | ------- | --------- |
-| VCC                                   | 1.8     |         | 3.6     | Volts (V) |
-| VDDA (ADC or COMP used)               | 1.71    |         | 3.6     | Volts (V) |
-| VDDA (VREFBUF used)                   | 2.4     |         | 3.6     | Volts (V) |
-| VDDA (ADC, COMP, or VREFBUF not used) | 0       |         | 3.6     | Volts (V) |
-| VBAT                                  | 1.55    |         | 3.6     | Volts (V) |
-| VDDSMPS                               | 1.8     |         | 3.6     | Volts (V) |
-| VDDRF                                 | 1.8     |         | 3.6     | Volts (V) |
-| VDDPA                                 | 1.8     |         | 3.6     | Volts (V) |
-| VREF+                                 | 2.0     |         | VDDA    | Volts (V) |
-| VREF+ (VDDA < 2&nbsp;V)               | VDDA    |         | VDDA    | Volts (V) |
+| VCC                                   | 1.8     |    -    | 3.6     | Volts (V) |
+| VDDA (ADC or COMP used)               | 1.71    |    -    | 3.6     | Volts (V) |
+| VDDA (VREFBUF used)                   | 2.4     |    -    | 3.6     | Volts (V) |
+| VDDA (ADC, COMP, or VREFBUF not used) | 0       |    -    | 3.6     | Volts (V) |
+| VBAT                                  | 1.55    |    -    | 3.6     | Volts (V) |
+| VDDSMPS                               | 1.8     |    -    | 3.6     | Volts (V) |
+| VDDRF                                 | 1.8     |    -    | 3.6     | Volts (V) |
+| VDDPA                                 | 1.8     |    -    | 3.6     | Volts (V) |
+| VREF+                                 | 2.0     |    -    | VDDA    | Volts (V) |
+| VREF+ (VDDA < 2&nbsp;V)               | VDDA    |    -    | VDDA    | Volts (V) |
 
 
 ##### Operating Current
@@ -208,19 +209,45 @@ The RAK3172-SiP supports the frequency of operation from 863 to 930&nbsp;Mhz.
 | Parameter  | Condition   | Current Consumption (Typical) |
 | ---------- | ----------- | ----------------------------- |
 | TX mode    | 20&nbsp;dBm | 87&nbsp;mA                    |
-| RX mode    | -           | 6.14&nbsp;mA                    |
+| RX mode    | -           | 6.14&nbsp;mA                  |
 | Sleep mode | -           | 1.69&nbsp;uA                  |
 
 ###### RAK3172LP-SiP (uses RFO_LP RF output)
 
-| Parameter  | Condition   | Current Consumption (Typical) |
-| ---------- | ----------- | ----------------------------- |
-| TX mode    | 14&nbsp;dBm | 39.1&nbsp;mA                  |
-|            | 12&nbsp;dBm | 33&nbsp;mA                    |
-|            | 10&nbsp;dBm | 28&nbsp;mA                    |
-|            | 8&nbsp;dBm  | 25&nbsp;mA                    |
-| RX mode    | -           | 9.69&nbsp;mA                  |
-| Sleep mode | -           | 2.1&nbsp;uA                   |
+<table>
+  <tr>
+    <th>Parameter</th>
+    <th>Condition</th>
+    <th>Current Consumption (Typical)</th>
+  </tr>
+  <tr>
+    <td rowspan = "4" >TX mode</td>
+    <td>14&nbsp;dBm</td>
+    <td>39.1&nbsp;mA</td>
+  </tr>
+  <tr>
+    <td>12&nbsp;dBm</td>
+    <td>33&nbsp;mA</td>
+  </tr>
+  <tr>
+    <td>10&nbsp;dBm</td>
+    <td>28&nbsp;mA</td>
+  </tr>
+  <tr>
+    <td>8&nbsp;dBm</td>
+    <td>25&nbsp;mA</td>
+  </tr>
+  <tr>
+    <td>RX mode</td>
+    <td>-</td>
+    <td>9.69&nbsp;mA</td>
+  </tr>
+  <tr>
+    <td>Sleep mode</td>
+    <td>-</td>
+    <td>2.1&nbsp;uA</td>
+  </tr>
+</table>
 
 #### Mechanical Characteristics
 
@@ -228,7 +255,7 @@ The RAK3172-SiP supports the frequency of operation from 863 to 930&nbsp;Mhz.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/datasheet/RAK3172-SIP-Mechanical.png"
-  width="95%"
+  width="80%"
   caption="RAK3172-SiP mechanical dimension"
 />
 
@@ -236,7 +263,7 @@ The RAK3172-SiP supports the frequency of operation from 863 to 930&nbsp;Mhz.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/datasheet/RAK3172-SIP-Pad.png"
-  width="65%"
+  width="40%"
   caption="RAK3172-SiP layout"
 />
 
@@ -256,9 +283,14 @@ The RAK3172-SiP supports the frequency of operation from 863 to 930&nbsp;Mhz.
 
 ##### Recommended Reflow Profile
 
+:::warning ⚠️ WARNING
+- On SMT reflow process, follow MSL3 (Moisture Sensitivity Level 3) guidance for PCBA assembly.
+- Before SMT reflow, it is recommended to bake at 125°&nbsp;C for 12&nbsp;hours first to reduce the risk of soldering issues and abnormalities.
+:::
+
 <rk-img
   src="/assets/images/wisduo/rak3172-sip/datasheet/reflow.jpg"
-  width="60%"
+  width="50%"
   caption="Reflow profile for RAK3172-SiP"
 />
 

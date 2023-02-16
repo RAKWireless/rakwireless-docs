@@ -704,6 +704,14 @@ module.exports = {
     download: true,
     sidebarDepth: 4
   },
+  {
+    title: 'Application Note',
+    path: '/Product-Categories/WisDuo/RAK3172-SiP/Application-Note/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
   ],
   '/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/': [{
     title: 'Product Overview',
