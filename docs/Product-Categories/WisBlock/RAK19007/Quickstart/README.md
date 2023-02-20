@@ -302,6 +302,15 @@ The battery can be recharged as well via a small solar panel, as shown in **Figu
 
 The full specification of the [Solar Panel Connection](/Product-Categories/WisBlock/RAK19007/Datasheet/#solar-panel-connector-2) can be found on the datasheet of the RAK19007 WisBlock Base Board 2nd Gen.
 
+### LEDs
+
+Three LEDs are used to indicate the operating status. Below are the functions of the LEDs:
+
+🔴 Red LED - Connected to the charger chip to indicate the charger status. When the battery is charging, this red LED is on. When the battery is full, this LED is weak light or off.
+🟢 Green LED - Connected to the MCU module, controlled by MCU defined by the user.
+🔵 Blue LED - Connected to the MCU module, controlled by MCU defined by the user.
+
+
 ### Software Setup
 
 The WisBlock Core is designed to be interfaced with other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the WisBlock Core.
