@@ -41,7 +41,7 @@ export default {
 
 </script>
 
-<style scoped>
+<style>
   .popup-container {
       z-index: 3000;
       /* padding-bottom: 10px; */
