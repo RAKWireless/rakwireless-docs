@@ -30,6 +30,7 @@ module.exports = {
       collapsable: false,
       sidebarDepth: 4,
       children: [
+        '/Product-Categories/5G/',
         '/Product-Categories/WisGate/',
         '/Product-Categories/WisNode/',
         '/Product-Categories/WisBlock/',

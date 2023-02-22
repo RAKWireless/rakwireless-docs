@@ -1,7 +1,7 @@
 ---
 sidebar: false
 rak_img: /assets/images/knowledge-hub/learn/build-a-door-open-counter-and-alarm-sensor-with-wisblock/door-open-counter-and-alarm-sensor-banner.jpg
-rak_desc: This guide provides a step-by-step tutorial on how to build a door-open counter and alarm with the WisBlock RAK12027.
+rak_desc: This guide provides a step-by-step tutorial on how to build a door-open counter and alarm with the WisBlock RAK13011.
 tags:
   - Tutorial
   - PlatformIO

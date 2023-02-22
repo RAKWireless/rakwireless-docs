@@ -11,8 +11,7 @@ rak_img: /assets/rakwireless/product-categories/WisDuo.png
 
 WisDuo is a category of products built by the RAK company for the IoT industry. Modules in this category combine an MCU and a LoRa transceiver (plus BLE 5 on some variants) in a single module of a size of a stamp that simplifies the process of designing a new IoT solution. The module complies with LoRaWAN 1.0.2 or 1.0.3 specifications depending on the specific model. It also supports LoRa point-to-point communication. It provides seamless integration to any LoRaWAN-compliant network out of the box, which allows the customers to concentrate on the business logic of their final solution. In the WisDuo category, different flavors of MCUs are combined with the different models of LoRa transceivers, covering all the requirements that any IoT solution may need. WisDuo modules are an ideal component to start an IoT project when the customers have already an in-house solution and seeking to incorporate LoRa/LoRaWAN connectivity.
 
-## WisDuo Module Comparison
-
+#### WisDuo Module Comparison
 |                   | RAK3172                                | RAK3172-SiP                        | RAK4630                          | RAK11720                          | RAK11300                         | RAK4270                                              |
 | ----------------- | -------------------------------------- | ---------------------------------- | -------------------------------- | --------------------------------- | -------------------------------- | ---------------------------------------------------- |
 | Chipset           | STM32WLE5                              | STM32WLE5                          | NRF52840                         | AMA3B1KK-KBR-B0                   | RP2040                           | STM32L071                                            |

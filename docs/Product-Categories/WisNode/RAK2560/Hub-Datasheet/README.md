@@ -179,9 +179,9 @@ If you want to add a Probe IO to your setup, the Sensor Hub must be supplied by 
 
 Download the latest firmware version of RAK2560 Sensor Hub in the table provided below.
 
-|       Model        |    Version     |                                         Firmware                                         |
-| :----------------: | :------------: | :--------------------------------------------------------------------------------------: |
-| RAK2560 Sensor Hub | Release 1.1.65 | [Download](https://downloads.rakwireless.com/LoRa/SensorHub/Firmware/Release-1.1.65.zip) |
+|       Model        |    Version     |                                             Firmware                                              |
+| :----------------: | :------------: | :-----------------------------------------------------------------------------------------------: |
+| RAK2560 Sensor Hub | Release 1.1.65 | [Download](https://downloads.rakwireless.com/LoRa/SensorHub/Firmware/RAK2560_Latest_Firmware.zip) |
 
 ## Certification
 

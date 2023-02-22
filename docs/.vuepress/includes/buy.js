@@ -1403,4 +1403,16 @@ export default {
     store: 'https://store.rakwireless.com'
   },
 
+
+  // 5G
+
+  '/Product-Categories/5G/All-in-One-5G/': {
+    label: 'All-in-One 5G',
+    img: '/assets/images/5g/all-in-one-5g/all-in-one-5g.png',
+    store: 'https://store.rakwireless.com/products/all-in-one-5g?utm_source=allinone5g&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+
+
+
+
 }

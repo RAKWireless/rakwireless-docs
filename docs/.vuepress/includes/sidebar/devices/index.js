@@ -10,10 +10,11 @@ var wisblock = require('./wisblock')
 var accessories = require('./accessories')
 var softwareapislibraries = require('./software-apis-libraries')
 var softwaretools = require('./software-tools')
+var fiveg = require('./5g')
 
 module.exports = {
   ...wisduino,
-  ...wisduo, 
+  ...wisduo,
   ...wisgate,
   ...wishat,
   ...wislink,
@@ -23,5 +24,6 @@ module.exports = {
   ...wisblock,
   ...accessories,
   ...softwareapislibraries,
-  ...softwaretools
+  ...softwaretools,
+  ...fiveg
 }
