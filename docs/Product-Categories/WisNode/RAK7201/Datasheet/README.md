@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK7201 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisnode/rak7201/datasheet/1.png
+rak_img: /assets/images/wisnode/rak7201/datasheet/1.rak7201-wisnode-button-4k.png
 prev: ../Quickstart/
 next: ../AT-Command-Manual/
 tags:
@@ -23,8 +23,8 @@ The **RAK7201 WisNode Button 4K** is a remote wireless trigger device. It suppor
 This WisNode Button is suitable for a variety of Smart Home applications. Including, but not limited to, entertainment system control, control of lights, a snooze button for the alarms, or a remote trigger. A device with long-range wireless connectivity, amazing battery life, and four programmable buttons. There are tons of applications this device can fit into.
 
 <rk-img
-  src="/assets/images/wisnode/rak7201/datasheet/1.png"
-  width="50%"
+  src="/assets/images/wisnode/rak7201/datasheet/1.rak7201-wisnode-button-4k.png"
+  width="40%"
   caption="RAK7201 WisNode Button 4k"
 />
 
@@ -60,8 +60,8 @@ This WisNode Button is suitable for a variety of Smart Home applications. Includ
 | Mounting              | Sticker                   |
 
 <rk-img
-  src="/assets/images/wisnode/rak7201/datasheet/2.png"
-  width="70%"
+  src="/assets/images/wisnode/rak7201/datasheet/2.typical-deployment-scenario.png"
+  width="90%"
   caption="Typical deployment scenario"
 />
 
@@ -92,8 +92,8 @@ The RAK7201 supports different LoRaWAN frequency bands for different country reg
 #### Actuators
 
 <rk-img
-  src="/assets/images/wisnode/rak7201/datasheet/3.png"
-  width="50%"
+  src="/assets/images/wisnode/rak7201/datasheet/3.rak7201-buttons-and-leds.png"
+  width="60%"
   caption="RAK7201 buttons and LEDs"
 />
 

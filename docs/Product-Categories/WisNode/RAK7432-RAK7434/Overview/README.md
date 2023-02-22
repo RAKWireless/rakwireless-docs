@@ -3,7 +3,7 @@ rak_desc: RAK7432/RAK7434 WisNode Bridge Analogs can operate in all of the LoRaW
 rak_img: /assets/images/wisnode/rak7432-rak7434/overview/rak7432-rak7434_home.png
 rak_grp: [wisnode,bridge]
 prev: ../../
-next: ../Datasheet-RAK7432/
+next: ../Quickstart/
 tags:
   - RAK7432
   - RAK7434
@@ -14,6 +14,8 @@ tags:
 
 Thank you for choosing **RAK7432/RAK7434 WisNode Bridge Analogs** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [Quick Start Guide](../Quickstart/)
+* [AT Command Manual](../AT-Command-Manual/)
 * [RAK7432 Datasheet](../Datasheet-RAK7432/)
 * [RAK7434 Datasheet](../Datasheet-RAK7434/)
 
