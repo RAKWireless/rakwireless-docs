@@ -487,6 +487,10 @@ If you will connect other modules to the remaining WisBlock Base slots, check on
 
 Another important part component of RAK4631 is the antennas.
 
+:::warning ⚠️ WARNING
+When using the LoRa or Bluetooth Low Energy transceivers, make sure that an antenna is always connected. Using these transceivers without an antenna can damage the system. Make sure to fix the module with the screws to ensure a proper function.
+:::
+
 <rk-img
   src="/assets/images/wisblock/rak4631/quickstart/lora-antenna.png"
   width="30%"
@@ -512,10 +516,6 @@ RAK4631 has a label on its sticker where to connect the antennas, as shown in **
 
 :::tip 📝 NOTE
 Detailed information about the RAK4631 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
-:::
-
-:::warning ⚠️ WARNING
-When using the LoRa or Bluetooth Low Energy transceivers, make sure that an antenna is always connected. Using these transceivers without an antenna can damage the system. Make sure to fix the module with the screws to ensure a proper function.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming the RAK1906.
