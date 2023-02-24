@@ -43,7 +43,7 @@ The RAK5811 is a 0-5&nbsp;V analog input interface module. The signal is routed 
 
 The RAK5811 module features two input channels of 0-5&nbsp;V analog signals. Inside, a high-precision operational amplifier, which supports a wide range of operating temperatures, is used for signal amplification and conversion.
 
-In addition, this module integrates a 12&nbsp;V power supply. The power supply is connected to an operational amplifier and be used to power the external sensors. The connection of the 0-5&nbsp;V sensors is done through the fast crimping terminal without the need for special tools, this simplifies the installation process on the field.
+In addition, this module integrates a 12&nbsp;V power supply. The power supply is connected to an operational amplifier and can be used to power external sensors. The connection of the 0-5&nbsp;V sensors is done through the fast crimping terminal without the need for special tools, this simplifies the installation process on the field.
 
 ## Product Features
 
