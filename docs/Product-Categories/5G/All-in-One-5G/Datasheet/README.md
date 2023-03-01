@@ -1,5 +1,5 @@
 ---
-prev: ../Overview/
+prev: ../Installation-Guide/
 next: false
 tags:
   - All-in-One 5G
