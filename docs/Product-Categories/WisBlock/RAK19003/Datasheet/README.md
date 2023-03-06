@@ -77,7 +77,7 @@ The hardware specification is categorized into six parts. It discusses the inter
 RAK19003 WisBlock Mini Base provides the following interfaces, headers, button, and WisConnectors:
 
 * 1 WisBlock Core module
-* 2 WisBlock Modules compatible with Slot A-B
+* 2 WisBlock Modules compatible with Slot C-D
 * 1 Type-C USB port for programming and debugging
 * 3.7&nbsp;V Rechargeable battery connector
 * 5&nbsp;V Solar Panel connector

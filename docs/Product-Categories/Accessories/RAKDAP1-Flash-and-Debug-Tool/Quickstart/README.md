@@ -32,20 +32,20 @@ Before anything else, it requires you to install Python 3 on your computer. Down
 
 1. Choose the python installer for Windows. 
 2. Once downloaded, start the installation process. 
-3. Make sure to check the **`Add Python 3.x to PATH`**. Otherwise, you will have to add it manually later.
+3. Make sure to check the **`Add python.exe to PATH`**. Otherwise, you will have to add it manually later.
 
 
 <rk-img
-  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/1.install.png"
+  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/RAKDAP1_New_2.png"
   width="60%"
   caption="Installing Python for Windows"
 />
 
-4. Wait until the installation is finished. As for Windows, it is recommended to **`Disable path length limit`**.
+4. Wait until the installation is finished.
 
 
 <rk-img
-  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/2.disable-path-limit.png"
+  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/RAKDAP1_New_3.png"
   width="60%"
   caption="Disable the Path Limit"
 />
@@ -62,7 +62,7 @@ pip --version
 ```
 
 <rk-img
-  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/3.versions.png"
+  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/RAKDAP1_New_4.png"
   width="75%"
   caption="Checking the Python and pip3 versions"
 />
@@ -119,7 +119,7 @@ pip3 install pyocd
 ```
 
 <rk-img
-  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/4.install-pyocd.png"
+  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/RAKDAP1_New_5.png"
   width="75%"
   caption="Installing pyOCD"
 />
@@ -131,7 +131,7 @@ pyocd --version
 ```
 
 <rk-img
-  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/5.pyocd-version.png"
+  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/RAKDAP1_New_6.png"
   width="75%"
   caption="pyOCD version"
 />
@@ -204,6 +204,10 @@ But before installing, check the list first to know the required package for you
       <td>nrf52840</td>   
     </tr>
     <tr>
+      <td>RAK4630</td>
+      <td>nrf52840</td>   
+    </tr>
+    <tr>
       <td>RAK4631</td>
       <td>nrf52840</td>   
     </tr>
@@ -219,20 +223,35 @@ But before installing, check the list first to know the required package for you
       <td>Products using RAK4260</td>
       <td>atsaml21j18a</td>   
     </tr>
+    <tr>
+      <td>RAK11720 and its variants</td>
+      <td>AMA3B1KK-KBR</td>   
+    </tr>
 </tbody>
 </table>
 
 To install the support package, use the following command:    
 
 ```
-pyocd pack --install \<PACKAGE\>
+pyocd pack --i \<PACKAGE\>
+```
+For example, if you have RAK4630 module, enter the following command:
+
+```
+pyocd pack --i nrf52840
+```
+<rk-img
+  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/RAKDAP1_New_7.png"
+  width="75%"
+  caption="Installing NRF52840 into the RAK4630 module"
+/>
+
+To check installed packages, you can use the command:
+
+```
+pyocd pack -s
 ```
 
-For example, if you have RAK4600 module, enter the following command:
-
-```
-pyocd pack --install nrf52
-```
 
 ## How to Flash an MCU
 
@@ -286,7 +305,7 @@ Here is an overview on how to connect the SWD interface. If you cannot find your
   
 <rk-img
   src="/assets/images/accessories/rakdap1-flash-and-debug-tool/rak4260.png"
-  width="40%"
+  width="60%"
   caption="RAK4260 Module Pinout"
 />  
 
@@ -300,10 +319,18 @@ Here is an overview on how to connect the SWD interface. If you cannot find your
 
 ### RAK4600 Evaluation Board
 
-
 <rk-img
   src="/assets/images/accessories/rakdap1-flash-and-debug-tool/rak4600.svg"
   width="40%"
+  caption="RAK4600 Evaluation Board Pinout"
+/>
+
+### RAK4630 Module
+- For RAK4630 module, it is recommended to include an external DC supply or battery to prevent errors during bootloader flashing.
+
+<rk-img
+  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/RAKDAP1_New_1.png"
+  width="50%"
   caption="RAK4600 Evaluation Board Pinout"
 />
 
@@ -319,5 +346,16 @@ pyocd flash -t \<PACKAGE\> \<FILENAME\>
 Here is an example to flash the bootloader to a RAK4631 WisBlock Core module: 
 
 ```
-pyocd flash -t nrf52840 RAK4630_bootloader.hex
+pyocd flash -t nrf52840 RAK4631_latest_final.hex
 ```
+<rk-img
+  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/RAKDAP1_New_9.png"
+  width="80%"
+  caption="Flashing the bootloader into the RAK4630 module"
+/>
+
+<rk-img
+  src="/assets/images/accessories/rakdap1-flash-and-debug-tool/RAKDAP1_New_10.png"
+  width="80%"
+  caption="Flashing bootloader completed"
+/>

@@ -672,6 +672,31 @@ module.exports = {
   }
   ],
 
+  '/Product-Categories/WisBlock/RAK11722/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisBlock/RAK11722/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'AT Command Manual',
+    path: '/Product-Categories/WisBlock/RAK11722/AT-Command-Manual/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisBlock/RAK11722/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+  ],
 
   '/Product-Categories/WisBlock/RAK5005-O/': [{
     title: 'Product Overview',

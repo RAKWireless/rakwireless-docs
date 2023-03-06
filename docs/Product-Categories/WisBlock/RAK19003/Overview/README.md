@@ -35,7 +35,7 @@ WisBlock Modules are connected to the RAK19003 WisBlock Base board via **high-sp
 Using **RAK19003** as your WisBlock Base board, you can make your project compact, which is ideal in small enclosures. You can also use a [RAK19005 WisBlock Sensor Extension Cable](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005) to position WisBlock Modules apart from the WisBlock Base board or in any part of your case. **RAK19003** has connectors for the following:
 
 * 1 WisBlock Core module
-* 2 WisBlock Modules compatible with Slot A-B
+* 2 WisBlock Modules compatible with Slot C-D
 * 1 Type-C USB port for programming and debugging
 * 3.7&nbsp;V Rechargeable battery connector
 * 5&nbsp;V Solar Panel connector

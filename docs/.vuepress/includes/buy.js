@@ -269,6 +269,11 @@ export default {
     img: '/assets/images/wisduo/rak3172-sip/overview/RAK3172_SiP_home.png',
     store: 'https://store.rakwireless.com/products/wisduo-module-rak3172-sip?utm_source=RAK3172SiP&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisDuo/RAK11720-Module/': {
+    label: 'RAK11720 WisDuo LPWAN Module',
+    img: '/assets/images/wisduo/rak11720-module/overview/RAK11720_Module_buy.png',
+    store: 'https://store.rakwireless.com/products/rak11720-ambiq-apollo3-module-for-lorawan?utm_source=RAK11720&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
 
   // Breakout
 
@@ -307,7 +312,11 @@ export default {
     img: '/assets/images/wisduo/rak3272-sip-breakout-board/overview/RAK3272-SiP-Breakout_home.png',
     store: 'https://store.rakwireless.com/products/wisduo-breakout-board-rak3272-sip?utm_source=RAK3272SiPBreakoutBoard&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-
+  '/Product-Categories/WisDuo/RAK11721-Breakout-Board/': {
+    label: 'RAK11721 Breakout Board',
+    img: '/assets/images/wisduo/rak11721-breakout-board/overview/RAK11721_Breakout_home.png',
+    store: 'https://store.rakwireless.com/products/rak11720-breakout-board-rak11721?utm_source=RAK11721&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
 
   // Evaluation
 
@@ -536,6 +545,11 @@ export default {
     label: 'RAK4631 WisBlock Core Module',
     img: '/assets/images/wisblock/rak4631/overview/RAK4631_buy.png',
     store: 'https://store.rakwireless.com/products/rak4631-lpwan-node?utm_source=RAK4631WisBlockLPWANModule&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK11722/': {
+    label: 'RAK11722 WisBlock Core Module',
+    img: '/assets/images/wisblock/rak11722/overview/RAK11722_buy.png',
+    store: 'https://store.rakwireless.com/products/ambiq-apollo3-core-module-for-lorawan-rak11722?utm_source=RAK11722&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
   // Wireless

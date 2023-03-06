@@ -746,4 +746,54 @@ module.exports = {
     sidebarDepth: 4
   }
   ],
+  '/Product-Categories/WisDuo/RAK11720-Module/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisDuo/RAK11720-Module/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }, 
+  {
+    title: 'AT Command Manual',
+    path: '/Product-Categories/WisDuo/RAK11720-Module/AT-Command-Manual/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },                                                  
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisDuo/RAK11720-Module/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+  ],
+  '/Product-Categories/WisDuo/RAK11721-Breakout-Board/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisDuo/RAK11721-Breakout-Board/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }, 
+  {
+    title: 'AT Command Manual',
+    path: '/Product-Categories/WisDuo/RAK11721-Breakout-Board/AT-Command-Manual/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },                                                  
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisDuo/RAK11721-Breakout-Board/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+  ],
 }
