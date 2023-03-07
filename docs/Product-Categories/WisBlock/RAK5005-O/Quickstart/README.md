@@ -177,7 +177,7 @@ This guide uses two arrows. Refer to **Figure 4** for its representation.
   caption="WisConnector’s header is not parallel to the socket"
 />
 
-8. When the aforementioned steps are not completed yet, do not apply force to buckle. Otherwise, there will be a risk to damage the connector. When the connector cannot be smoothly buckled down, repeat the alignment step.
+8. Repeat alignment steps if the connector cannot be buckled smoothly. Do not apply force to the buckle until all the above steps have been completed. Otherwise, there is a risk of damaging the connector.
 
 ##### Detaching a WisConnector
 
