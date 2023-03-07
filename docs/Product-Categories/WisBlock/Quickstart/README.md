@@ -44,8 +44,12 @@ WisBlock is created with 4 modular blocks.
 #### WisBlock Base
 
 - WisBlock Base is the **carrier** for all WisBlock modules.
-- It contains the power supply for all modules, **USB/5V connector**, **battery charger**, **solar charger**, **status LED**, and **reset button**.
-- One WisBlock Base can hold one microcontroller module (WisBlock Core), one IO module (WisBlock IO), and up to four sensor modules (WisBlock Sensor) application to match your solution requirements.
+- It supplies power to the other modules through **USB/5V connector**, **battery connector**, **solar connector**, or a combination of these power sources (additionally, there are bases with **PoE** or **wireless charging** capabilities).
+- It serves as the initial physical frame or baseboard for your solution.
+- It physically interconnects the other WisBlock modules together (Core, IO, and sensor modules), through Rak's innovative **WisConnector** slots.
+- Additionally, the WisBlock Base also features various status LEDs and a reset button (with the exception of the "Power Slot bases").
+
+As a general rule, one WisBlock Base can accommodate one microcontroller module (WisBlock Core), at least one IO module (WisBlock IO), and up to four sensor modules (WisBlock Sensor) in order to meet the needs of your solution.
 
 #### WisBlock Core
 
@@ -94,7 +98,14 @@ The standard WisBlock Base has a USB interface that connects with the core MCU's
 - One to eight slots for WisBlock Sensor modules, named “SLOT A”, “SLOT B”, “SLOT C”, and so on.
 - One or two “IO SLOT” for WisBlock IO modules like the RS485 board, 4~20&nbsp;mA or 0~5&nbsp;V board, Wi-Fi board, Cellular board.
 
-WisBlock Base is the power supply for all WisBlock modules. It supports 5&nbsp;V USB input, battery supply, and a solar panel to recharge the battery.
+WisBlock Base supplies power to the other modules through **USB/5V connector**, **battery connector**, **solar connector**, or a combination of these power sources (additionally, there are bases with **PoE** or **wireless charging** capabilities).
+
+:::tip 📝 NOTE:
+One group of WisBlock bases don't have an embedded power supply connector (e.g. [RAK19009](https://store.rakwireless.com/products/rak19009-mini-base-board-with-power-slot), [RAK19010](https://store.rakwireless.com/products/rak19010-base-board-with-power-slot), and [RAK19011](https://store.rakwireless.com/products/rak19011-dual-io-base-board-with-power-slot)). Instead, they feature a special [**WisConnector**](https://store.rakwireless.com/products/wisconnector) called the "**Power Slot**" to extend the range of power supply options available to your solution through the use of a range of [**WisBlock Power Modules**]([https://store.rakwireless.com/collections/wisblock-base](https://store.rakwireless.com/collections/wisblock-base#:~:text=Power%20Slot).
+
+Check the [Rak Wireless store](https://store.rakwireless.com/collections/wisblock-base) section for all available base modules.
+:::
+
 
 WisBlock Core, WisBlock Sensor, and WisBlock IO modules are connected to WisBlock Base by just plugging them into the corresponding slots.
 
