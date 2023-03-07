@@ -41,9 +41,11 @@ The RAK5811 WisBlock Interface module is designed to be part of a production-rea
 
 The RAK5811 is a 0-5&nbsp;V analog input interface module. The signal is routed through the IO bus to the WisBlock Core module. Inside of the WisBlock Core module, the MCU digitizes the signal and the sampled data is transmitted, for example, via a LoRa transceiver.
 
-The RAK5811 module features two input channels of 0-5&nbsp;V analog signals. Inside, a high-precision operational amplifier, which supports a wide range of operating temperatures, is used for signal amplification and conversion.
+The RAK5811 module features two input channels capable of transmitting analog signals ranging from 0-5&nbsp;V. Signal amplification and conversion for the two 0-5&nbsp;V channels are achieved by an embedded high-precision operational amplifier that can operate across a wide range of temperatures.
 
-In addition, this module integrates a 12&nbsp;V power supply. The power supply is connected to an operational amplifier and be used to power the external sensors. The connection of the 0-5&nbsp;V sensors is done through the fast crimping terminal without the need for special tools, this simplifies the installation process on the field.
+In addition, this module integrates a 12&nbsp;V power supply. Connected to the 12&nbsp;V power supply is an embedded operational amplifier for powering external sensors with voltages up to 12&nbsp;V.
+
+The connection of the 0-5&nbsp;V sensors is done through the fast crimping terminal without the need for special tools, this simplifies the installation process on the field.
 
 ## Product Features
 
