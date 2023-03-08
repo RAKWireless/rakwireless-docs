@@ -20,7 +20,7 @@ Thank you for choosing **RAK19006 WisBlock Wireless Charge Module** in your awes
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
-* [RAK19006 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/)
+* [RAK19006 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK19006.stp)
 * [40-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 

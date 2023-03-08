@@ -20,7 +20,7 @@ Thank you for choosing **RAK12013 WisBlock Radar Sensor Module** in your awesome
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
-* [RAK12013 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/)
+* [RAK12013 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK12013.step)
 * [40-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
 * [WisBlock IO Tutorial](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
 
@@ -36,7 +36,7 @@ RAK12013 is a 3.2&nbsp;GHz microwave radar module based on RCWL-9196. It uses th
 ::: tip 📝 NOTE
 1. Radar signals don't interfere with other signals such as LoRa, WiFi, and Bluetooth; but multiple radar signals interfere with each other between single individuals over a distance greater than 1 meter.
 2. The component side of the PCB module is the positive sensing face, while the opposite side is the negative sensing face. The negative sensing face is less effective in terms of sensing.
-::: 
+:::
 
 ## Product Features
 
@@ -57,6 +57,6 @@ RAK12013 is a 3.2&nbsp;GHz microwave radar module based on RCWL-9196. It uses th
 
 To use a **RAK12013**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12013** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

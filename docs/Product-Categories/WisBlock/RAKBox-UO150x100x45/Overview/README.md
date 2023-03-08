@@ -18,12 +18,12 @@ Thank you for choosing **RAKBox-UO150x100x45** for your awesome IoT project! ðŸŽ
 
 - [Installation Guide](../Installation/)
 - [Datasheet](../Datasheet/)
-- [RAKBox-UO150x100x45 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/Unify%20Enclosure/3D_RAKBox-UO150x100x45.step)
+- [RAKBox-UO150x100x45 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/Unify%20Enclosure/RAKBox-UO150x100x45/)
 
 
 ## Product description
 
-RAKBox-UO150x100x45 is a medium-sized **WisBlock Unify Enclosure**. It is an IP67-rated protection class that allows the unit to be used outdoors while protecting the internal components from dust and water. It is also a weatherproof fire retardant enclosure made from ABS plastic specially designed for WisBlock Products. 
+RAKBox-UO150x100x45 is a medium-sized **WisBlock Unify Enclosure**. It is an IP67-rated protection class that allows the unit to be used outdoors while protecting the internal components from dust and water. It is also a weatherproof fire retardant enclosure made from ABS plastic specially designed for WisBlock Products.
 
 Moreover, it supports different types of mounting options such as pole, wall, DIN rail, belt, and hook.
 

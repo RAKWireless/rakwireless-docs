@@ -17,6 +17,7 @@ Thank you for choosing **All-in-One 5G** in your awesome IoT Project! 🎉 To he
 
 * [Installation Guide](../Installation-Guide/)
 * [Datasheet](../Datasheet/)
+* [Test Report](../Test-Report/)
 
 ## Product Description
 

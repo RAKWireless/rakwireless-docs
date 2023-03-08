@@ -19,7 +19,7 @@ Thank you for choosing **RAK19004 WisBlock Green Power Module** in your awesome 
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
-* [RAK19004 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/)
+* [RAK19004 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK19004.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 
 ## Product Description
@@ -29,7 +29,7 @@ RAK19004 is a WisBlock Power module that can harness and convert green power suc
 ::: tip 📝 NOTE
 - The module has a minimum input voltage of 5.3&nbsp;V upon startup.
 - RAK19004 doesn't have a WisConnector just like the other WisBlock modules. But it is an external module with four (4) mounting holes, so you can place the module in the position that you want.
-::: 
+:::
 
 ## Product Features
 
@@ -45,6 +45,6 @@ RAK19004 is a WisBlock Power module that can harness and convert green power suc
 
 To use a **RAK19004**, you need at least a **WisBlock Base**. RAK19004 doesn't have a WisConnector like the other WisBlock modules: it is an external module with four mounting holes, so you can place it in the position that you want. Furthermore, you need a **WisBlock Core** module.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

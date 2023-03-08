@@ -1,6 +1,6 @@
 ---
 prev: ../Installation-Guide/
-next: false
+next: ../Test-Report/
 tags:
   - All-in-One 5G
   - 5G

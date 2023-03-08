@@ -22,6 +22,14 @@ module.exports = {
         nested: true,
         download: true,
         sidebarDepth: 4
+      },
+      {
+        title: 'Test Report',
+        path: '/Product-Categories/5G/All-in-One-5G/Test-Report/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
       }
     ]
   }
