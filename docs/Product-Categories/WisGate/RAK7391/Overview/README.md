@@ -16,8 +16,9 @@ Thank you for choosing **RAK7391 WisGate Connect** in your awesome IoT project! 
 
 * [Quick Start Guide](../Quickstart/)
 * [Assembly Guide](../Assembly-Guide)
+* [Compatible Hardware](../Compatible-Hardware/)
 * [Services](../Services/)
-* [Connecting to WisBlock](../RAK7391/Connecting-To-WisBlock/)
+* [Connecting to WisBlock](../Connecting-To-WisBlock/)
 * [Datasheet](../Datasheet/)
 
 

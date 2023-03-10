@@ -32,7 +32,7 @@ module.exports = {
       download: true,
       sidebarDepth: 4
     }
-   
+
 
   ],
 
@@ -271,7 +271,7 @@ module.exports = {
       download: true,
       sidebarDepth: 4
     }
-    
+
 
   ],
 
@@ -307,7 +307,7 @@ module.exports = {
       download: true,
       sidebarDepth: 4
     }
-    
+
 
   ],
 
@@ -636,6 +636,14 @@ module.exports = {
 {
   title: 'Assembly Guide',
   path: '/Product-Categories/WisGate/RAK7391/Assembly-Guide/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Compatible Hardware',
+  path: '/Product-Categories/WisGate/RAK7391/Compatible-Hardware/',
   collapsable: false,
   nested: true,
   download: true,

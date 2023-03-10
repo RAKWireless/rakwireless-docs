@@ -1,7 +1,7 @@
 ---
 rak_desc: Contains different platforms and programs used for building, deploying, and managing your RAK7391. This service includes Docker, LoRaWAN server, Node-RED, Grafana, and InfluxDB. 
 rak_img: /assets/images/wisgate/rak7391/overview/RAK7391.png
-prev: ../Assembly-Guide/
+prev: ../Compatible-Hardware/
 next: ../Connecting-To-WisBlock/
 tags:
   - RAK7391
