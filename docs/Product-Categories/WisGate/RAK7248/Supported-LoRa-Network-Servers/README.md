@@ -274,7 +274,7 @@ sudo systemctl restart ttn-gateway.service
 16. Find the ttn-gateway process PID and `kill` this process:
 
 ```bash
-pi@rak-gateway:~/basicstation/example/corecell/lns-aws $ px aux | grep ttn-gateway
+pi@rak-gateway:~/basicstation/example/corecell/lns-aws $ ps aux | grep ttn-gateway
 pi      28165   0.2     0.1     7680        2780    pts/0   S+  18:20   0:00 /bin/bash/opt/ttn-gateway/packet_forwarder/lora_pkt_fwd/start.sh
 pi      28236   0.0     0.0     7348         488    pts/1   S+  18:20   0:00 grep --color=auto ttn-gateway
 pi@rak-gateway:~/basicstation/example/corecell/lns-aws $ sudo kill 28165
