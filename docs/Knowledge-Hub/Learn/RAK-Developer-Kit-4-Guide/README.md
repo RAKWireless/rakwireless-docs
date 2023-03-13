@@ -52,16 +52,16 @@ If you are new to LoRaWAN, here are a few good references about LoRaWAN and gate
 
 Here are the steps in configuring the [RAK7246G WisGate Developer D0](https://store.rakwireless.com/collections/wisgate-developer/products/rak7246-lpwan-developer-gateway?variant=36313275465886):
 
-1. By default, the gateway will work in Wi-Fi AP Mode, which means that you can find an SSID named "**Rakwireless_XXXX**" on your PC Wi-Fi network list.
+1. By default, the gateway will work in Wi-Fi AP Mode, which means that you can find an SSID named **Rakwireless_XXXX** on your PC Wi-Fi network list.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-1.png"
-  width="50%"
+  width="60%"
   caption="RAKwireless Access Point"
 />
 
 :::tip 📝 NOTE
-“XXXX” is the last 2 bytes of your RAK7246 WiFi MAC address. Connect to this Wi-Fi SSID using the password provided below. Also, the default IP address of the gateway provided below will be needed in connecting via SSH.
+**XXXX** is the last 2&nbsp;bytes of your RAK7246 WiFi MAC address. Connect to this Wi-Fi SSID using the password provided below. Also, the default IP address of the gateway provided below will be needed in connecting via SSH.
 
 - Wi-Fi Password: **rakwireless**
 - Default IP Address: **192.168.230.1**
@@ -74,16 +74,16 @@ Here are the steps in configuring the [RAK7246G WisGate Developer D0](https://st
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-2-a.png"
-  width="40%"
+  width="50%"
   caption="PuTTY Example"
 />
 
   - Mac OS
-     Open the Terminal of Mac OS. Launch the Terminal application found in the **`/Applications/Utilities/`** directory, but you can also launch it from Spotlight. Press **Command + Spacebar** and type **“Terminal”**, then return.
+     Open the Terminal of Mac OS. Launch the Terminal application found in the **`/Applications/Utilities/`** directory, but you can also launch it from Spotlight. Press **Command + Spacebar** and type **Terminal**, then return.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-2-b.png"
-  width="50%"
+  width="60%"
   caption="Selecting Terminal on Mac"
 />
 
@@ -94,7 +94,7 @@ Here are the steps in configuring the [RAK7246G WisGate Developer D0](https://st
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-3.png"
-  width="60%"
+  width="70%"
   caption="Command Line using SSH Client Software"
 />
 
@@ -112,7 +112,7 @@ Like for [RAK WisGate Edge Gateways](https://store.rakwireless.com/collections/w
   caption="sudo gateway-config mode"
 />
 
-5. You can now connect your gateway through Wi-Fi to access TTN. It can easily be done with the wireless capabilities of the Raspberry Pi Zero W by choosing **"5 Configure WIFI"**. By default, the RAK7246 WisGate Developer D0 Gateway works in Wi-Fi AP Mode. For the gateway to connect to the router, it must work in Wi-Fi Client Mode.
+5. You can now connect your gateway through Wi-Fi to access TTN. It can easily be done with the wireless capabilities of the Raspberry Pi Zero W by choosing **5 Configure WIFI**. By default, the RAK7246 WisGate Developer D0 Gateway works in Wi-Fi AP Mode. For the gateway to connect to the router, it must work in Wi-Fi Client Mode.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-5.png"
@@ -134,7 +134,7 @@ To enable Wi-Fi Client Mode, you have to disable first the Wi-Fi AP Mode.
 
 :::
 
-6. Once Wi-Fi AP Mode has been disabled by choosing **"2 Enable Client Mode/Disable AP Mode"**, you can now then connect to a new Wi-Fi Network by choosing **"4 Add New SSID for Client"**.
+6. Once Wi-Fi AP Mode has been disabled by choosing **2 Enable Client Mode/Disable AP Mode**, you can now then connect to a new Wi-Fi Network by choosing **4 Add New SSID for Client**.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-6.png"
@@ -202,11 +202,11 @@ As seen in **Figure 12**, it is `192.168.0.28`, where the company is Raspberry P
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-7-b.png"
-  width="60%"
+  width="70%"
   caption="Advance IP Scanner for Windows OS"
 />
 
-8. To link your gateway to TTN, you need to set up first the RAK Gateway LoRa by choosing "**2 Setup RAK Gateway LoRa concentrator**".
+8. To link your gateway to TTN, you need to set up first the RAK Gateway LoRa by choosing **2 Setup RAK Gateway LoRa concentrator**.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-8.png"
@@ -222,7 +222,7 @@ As seen in **Figure 12**, it is `192.168.0.28`, where the company is Raspberry P
   caption="Selecting TTN as the LoRaWAN server"
 />
 
-10. For this example, you will be using EU868 Frequency Plan. Choose “**4 EU_863_870**”.
+10. For this example, you will be using EU868 Frequency Plan. Choose **4 EU_863_870**.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-10.png"
@@ -238,7 +238,7 @@ As seen in **Figure 12**, it is `192.168.0.28`, where the company is Raspberry P
   caption="Successfully Changed the Frequency"
 />
 
-12. You need to check if the right SERVER_ADDRESS is used to connect to TTN V3. To do this, choose “**4 Edit packet-forwarder config**” from the configuration options.
+12. You need to check if the right SERVER_ADDRESS is used to connect to TTN V3. To do this, choose **4 Edit packet-forwarder config** from the configuration options.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-12.png"
@@ -266,7 +266,7 @@ The available [TTN V3 clusters](https://console.cloud.thethings.network/) are:
   caption="Changing Server Name to eu1.cloud.thethings.network"
 />
 
-14. Restart the Packet-forwarder by choosing “**3 Restart Packet-forwarder**” from the configuration options.
+14. Restart the Packet-forwarder by choosing **3 Restart Packet-forwarder** from the configuration options.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/rak-developer-kit/starter-kit/rak7246g-gateway/RAK7246G-14.png"
@@ -540,7 +540,7 @@ The RAK1906 module gives information about:
 - Environment Humidity
 
 ::: warning ⚠️ WARNING
-The BME680 requires a burn-in period to collect accurate readings. The burn-in procedure can be achieved by reading all sensors once every 5 seconds for at least 20 minutes the first time that you use it. For each subsequent use, the readings should stabilize 2-3 minutes after power-up.
+The BME680 requires a burn-in period to collect accurate readings. The burn-in procedure can be achieved by reading all sensors once every 5&nbsp;seconds for at least 20&nbsp;minutes the first time that you use it. For each subsequent use, the readings should stabilize 2-3&nbsp;minutes after power-up.
 :::
 
 ##### Software Configuration
@@ -616,7 +616,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
   caption="Completing the setup of RAKwireless BSP support for the Arduino Board Manager"
 />
 
-5. Go to **Tools** > **Board: "Arduino Uno"** > **Boards Manager**. Type **RAK** in the search bar and the RAKwireless Core modules will be shown in the window.
+5. Go to **Tools** > **Board: Arduino Uno** > **Boards Manager**. Type **RAK** in the search bar and the RAKwireless Core modules will be shown in the window.
 
 
 <rk-img
@@ -885,7 +885,7 @@ When you have successfully uploaded the example sketch, open the serial monitor 
 10:31:34.032 -> lmh_send ok count 4
 ```
 
-Check again your **The Things Stack** account and go to **Applications** > `<name of your application>` > **Live Data**. Wait for the uplink data messages that are updated every 20 seconds.
+Check again your **The Things Stack** account and go to **Applications** > `<name of your application>` > **Live Data**. Wait for the uplink data messages that are updated every 20&nbsp;seconds.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit1-device/TTS16.png"
@@ -961,7 +961,6 @@ This section will guide you to integrate your application using Ubidots.
 
 6. After adding the device, fill in the **Description** and **SET LOCATION**.
 
-
 <rk-img
   src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-ubidots/ub8_1_1.png"
   width="80%"
@@ -969,7 +968,6 @@ This section will guide you to integrate your application using Ubidots.
 />
 
 7. After filling in, go to **Plugins**, then click **Create Data Plugin**.
-
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/rak-developer-kit/kit-4/wisblock-kit4-ubidots/ub9.png"
