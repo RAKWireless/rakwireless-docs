@@ -1,6 +1,6 @@
 ---
 rak_desc: RAK4630 RUI3 based firmware can be updated via USB connection or wirelessly via BLE using OTA DFU (Device Firmware Upgrade). It guides on how to do perform firmware upgrades for the RAK4630 WisDuo.
-rak_img: /assets/images/wisblock/rak4630-module/overview/RAK4630_Module_home.png
+rak_img: /assets/images/wisduo/rak4630-module/overview/RAK4630-Module.png
 prev: ../AT-Command-Manual/
 next: ../Datasheet/
 tags:
@@ -10,7 +10,7 @@ tags:
 
 # Device Firmware Update
 
-There will be situations in that you need to update the firmware of your RAK4630. Also, there are times when you want to reupload the firmware on your device to ensure that everything is set properly. Updating the Firmware of RAK4630 WisDuo can be done via USB connection or wirelessly using BLE via OTA DFU (Over-the-Air Device Firmware Upgrade). These methods are discussed in this guide. 
+There will be situations in that you need to update the firmware of your RAK4630. Also, there are times when you want to reupload the firmware on your device to ensure that everything is set properly. Updating the Firmware of RAK4630 WisDuo can be done via USB connection or wirelessly using BLE via OTA DFU (Over-the-Air Device Firmware Upgrade). These methods are discussed in this guide.
 
 - [Firmware Update via USB](#firmware-update-via-usb)
 - [Firmware Update via BLE Using OTA DFU](#firmware-update-using-ble-via-ota-dfu)
@@ -53,7 +53,7 @@ You need to have a direct connection to the USB bus of RAK4630 before you can pr
   caption="Checking COM Port via Device Manager"
 />
 
-4. After that, you need to send `AT+BOOT` command to the device via Serial Terminal software. You can follow the [guide on using Tera Term from RAK4631-R documentation](/Product-Categories/WisBlock/RAK4631-R/DFU/#how-to-check-firmware-version-using-tera-term) but instead of checking the firmware version, you have to input `AT+BOOT`. You will see no reply since the module will restart then will be disconnected momentarily before re-establishing again the connection to Tera Term. 
+4. After that, you need to send `AT+BOOT` command to the device via Serial Terminal software. You can follow the [guide on using Tera Term from RAK4631-R documentation](/Product-Categories/WisBlock/RAK4631-R/DFU/#how-to-check-firmware-version-using-tera-term) but instead of checking the firmware version, you have to input `AT+BOOT`. You will see no reply since the module will restart then will be disconnected momentarily before re-establishing again the connection to Tera Term.
 
 ::: tip 📝 NOTE
 You have to disconnect the device connection to TeraTerm/Serial Terminal software or close it so that the COM port will be free when you do the firmware update on the next step. Else, you will have error during FW update.
@@ -138,9 +138,9 @@ sudo apt-get install minicom
 Enter the following code: `minicom -D /dev/ttyACM0`
 
 
-#### Execute the Firmware Update via USB 
+#### Execute the Firmware Update via USB
 
-1. Download the zip file [DFU Distribution Package](https://downloads.rakwireless.com/RUI/V3/Image/). 
+1. Download the zip file [DFU Distribution Package](https://downloads.rakwireless.com/RUI/V3/Image/).
 
 When you plug in the RAK4630 through the USB to Linux, you will see the related information "**cdc_acm 1-1:1.0:  ttyACM0: USB ACM device**" from the `dmesg` command.
 
@@ -252,7 +252,7 @@ This section covers how to update your RAK4630 firmware wirelessly via BLE. Firs
 1. Download the [DFU package](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK4631_latest_dfu_package.zip) of the RAK4630 and save it on your mobile phone.
 
 ::: tip 📝 NOTE
-You can upload the Distribution packet (ZIP) file to [iCloud Services](https://www.icloud.com/) and download it to your smartphone. 
+You can upload the Distribution packet (ZIP) file to [iCloud Services](https://www.icloud.com/) and download it to your smartphone.
 :::
 
 Make sure the Bluetooth on your mobile is on.
@@ -324,7 +324,7 @@ By default, the BLE signal of the RAK4630 is turned off automatically if no conn
 
 
 ::: tip 📝 NOTE
-You can upload the Distribution packet (ZIP) file to [iCloud Services](https://www.icloud.com/) and download it to your smartphone. 
+You can upload the Distribution packet (ZIP) file to [iCloud Services](https://www.icloud.com/) and download it to your smartphone.
 :::
 
 11. After upgrading, the module restarts, and the DFU connection will be disconnected. Now, you can use your RAK4630 with the latest firmware.
@@ -348,7 +348,7 @@ You can upload the Distribution packet (ZIP) file to [iCloud Services](https://w
 1. Download the [DFU package of the RAK4630](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK4631_latest_dfu_package.zip) and save it on your mobile phone.
 
 ::: tip 📝 NOTE
-You can upload the Distribution packet (ZIP) file to Google Drive and download it to your smartphone. 
+You can upload the Distribution packet (ZIP) file to Google Drive and download it to your smartphone.
 :::
 
 Make sure the Bluetooth on your mobile is on.
@@ -424,7 +424,7 @@ After connecting, click on the **DFU** icon highlighted in red, as shown below.
 
 
 ::: tip 📝 NOTE
-You can upload the Distribution packet (ZIP) file to Google Drive and download it to your smartphone. 
+You can upload the Distribution packet (ZIP) file to Google Drive and download it to your smartphone.
 :::
 
 11.  After upgrading, the module restarts, and the DFU connection will be disconnected. Now, you can use your RAK4630 with the latest firmware.

@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information of your RAK10701-P Field Tester for LoRaWAN to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisnode/rak10701/overview/RAK10701-p-buy.png
+rak_img: /assets/images/wisnode/rak10701/overview/RAK10701-P.png
 prev: ../Quickstart/
 next: false
 tags:

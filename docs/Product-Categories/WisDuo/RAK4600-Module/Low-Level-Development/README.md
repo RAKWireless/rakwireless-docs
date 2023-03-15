@@ -1,6 +1,6 @@
 ---
 rak_desc: Aside from the default RAK firmware on the RAK4600 Module, you can create custom firmware using RUI (RAKwireless Unified Interface) or the actual SDK from the manufacturer of the microcontroller that is used inside the module.
-rak_img: /assets/images/wisduo/rak4600-module/overview/RAK4600_Module_home.png
+rak_img: /assets/images/wisduo/rak4600-module/overview/RAK4600-Module.png
 next: ../AT-Command-Manual/
 prev: ../Quickstart/
 tags:
@@ -14,7 +14,7 @@ tags:
 
 The product portfolio of the RAK LoRa node RAK4600 module. This module comes with a standard version of firmware that allows you to integrate quickly these modules in their solutions for LoRaWAN or LoRa P2P communication through the AT commands interface.
 
-Further customization of the firmware can be done through the [RUI](./RUI-Secondary-Development) compiler. At this layer, the customized firmware interface with the hardware through the RUI Core abstraction layer. In RAK we called this a secondary firmware development/customization.  
+Further customization of the firmware can be done through the [RUI](./RUI-Secondary-Development) compiler. At this layer, the customized firmware interface with the hardware through the RUI Core abstraction layer. In RAK we called this a secondary firmware development/customization.
 
 Additionally, RAK offers a third alternative for advanced users who need to have deeper integration of their solutions with these modules. In this alternative, the customer could develop their own version of firmware that runs inside of the RAK modules.
 
@@ -38,7 +38,7 @@ Finally, the protocol stack code can be added after other pins are configured.
 
 ### Application
 
-Once the porting protocol stack is ready, customers can focus on the development of their applications. There are two options: 
+Once the porting protocol stack is ready, customers can focus on the development of their applications. There are two options:
 
 &nbsp;&nbsp;&nbsp;&nbsp;a. Do not use the original bootloader that comes in RAK modules from the factory. In this case, you must provide your own version of bootloader.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;b. Use RAK's bootloader and upgrade the custom firmware by using nRF Connect. You can download it from here: [https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Connect-for-mobile](https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Connect-for-mobile)

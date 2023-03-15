@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
+rak_img: /assets/images/knowledge-hub/learn/wisblock-comparison/wisblock-comparison.jpg
 rak_desc: A comparison table for the WisBlock Audio Processing.
 tags:
   - WisBlock
@@ -9,6 +9,7 @@ tags:
 header:
   title: WisBlock Cores and Audio Processing Comparison Table
   caption: by <b>RAKwireless Team</b>
+  img: /assets/images/knowledge-hub/banners/high-power-wifi-module-and-power-line-communications.jpg
 posted: 15/02/2023 8:00 PM
 ---
 

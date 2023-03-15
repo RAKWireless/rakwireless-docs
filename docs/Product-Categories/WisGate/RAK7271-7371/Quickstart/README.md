@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK7271-7371. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
-rak_img: /assets/images/wisgate/rak7271-7371/overview/rak7271-7371.png
+rak_img: /assets/images/wisgate/rak7271-7371/overview/RAK7271-RAK7371.png
 prev: ../Overview/
 next: ../Datasheet/
 tags:
@@ -29,7 +29,7 @@ The SIM card slot of the cellular versions is not hot-swappable. Make sure the g
 
 1. 1pc WisGate Developer Base
 2. 1pc USB Type C to A Cable
-3. 1pc LoRa Antenna 
+3. 1pc LoRa Antenna
 
 <rk-img
   src="/assets/images/wisgate/rak7271-7371/quickstart/1.package-content.png"
@@ -44,7 +44,7 @@ The SIM card slot of the cellular versions is not hot-swappable. Make sure the g
 
 #### Interfacing Between the Raspberry Pi and the WisGate Developer Base
 
-The WisGate Developer Base is a device designed for integration with desktop, mobile, and embedded systems that converts the RAK2287/RAK5146 mPCIe LoRa concentrator modules into USB Type C pluggable (via the include Type C to A cable). 
+The WisGate Developer Base is a device designed for integration with desktop, mobile, and embedded systems that converts the RAK2287/RAK5146 mPCIe LoRa concentrator modules into USB Type C pluggable (via the include Type C to A cable).
 
 
 ::: tip 📝 NOTE
@@ -52,7 +52,7 @@ The WisGate Developer Base is a device designed for integration with desktop, mo
 It is assumed that your Raspberry Pi has already been installed with an [OS](https://www.raspberrypi.org/software/operating-systems) and has internet access. You must also have an access to it over SSH or directly to the command line interface (CLI).
 :::
 
-1. Connect the WisGate Developer Base with the included cable: Type-C end in the Developer Base and Type-A in one of the Raspberry Pi USB ports. 
+1. Connect the WisGate Developer Base with the included cable: Type-C end in the Developer Base and Type-A in one of the Raspberry Pi USB ports.
 
 <rk-img
   src="/assets/images/wisgate/rak7271-7371/quickstart/2.connecting-to-raspberry-pi.png"
@@ -60,7 +60,7 @@ It is assumed that your Raspberry Pi has already been installed with an [OS](htt
   caption="Connecting the WisGate Developer Base to the Raspberry Pi"
 />
 
-2. After connecting the Developer Base to the Pi, the Power Led will be steady green. This means that the Base is properly powered.  
+2. After connecting the Developer Base to the Pi, the Power Led will be steady green. This means that the Base is properly powered.
 
 <rk-img
   src="/assets/images/wisgate/rak7271-7371/quickstart/3.power-on.png"
@@ -74,7 +74,7 @@ It is assumed that your Raspberry Pi has already been installed with an [OS](htt
 lsusb
 ```
 
-4. In the output, you should see a **STMicroelectronics Virtual COM Port** line. This means your RAK WisGate Developer Base is properly connoted to the Raspberry Pi. 
+4. In the output, you should see a **STMicroelectronics Virtual COM Port** line. This means your RAK WisGate Developer Base is properly connoted to the Raspberry Pi.
 
 <rk-img
   src="/assets/images/wisgate/rak7271-7371/quickstart/4.checking-connection.png"
@@ -94,9 +94,9 @@ pi@raspberrypi:~ $
 
 ```
 
-### Install the Software  
+### Install the Software
 
-To be able to use the Base, the installation and configuration of the software are needed. 
+To be able to use the Base, the installation and configuration of the software are needed.
 
 1. To download the software, you need to execute the following commands in the CLI:
 
@@ -124,7 +124,7 @@ cd ~/rak_common_for_gateway
 sudo ./install.sh
 ```
 
-4. You will be asked to select the model of the concentrator you are installing. For this case, you should select **9. RAK2287 USB** if you are using WisGate Developer Base **RAK7271** or **10. RAK5146 USB** if you are using WisGate Developer Base **RAK7371**. 
+4. You will be asked to select the model of the concentrator you are installing. For this case, you should select **9. RAK2287 USB** if you are using WisGate Developer Base **RAK7271** or **10. RAK5146 USB** if you are using WisGate Developer Base **RAK7371**.
 
 <rk-img
   src="/assets/images/wisgate/rak7271-7371/quickstart/5.selecting-concentrator-model.png"
@@ -144,7 +144,7 @@ If you do not want the ChirpStack to be installed, you need to run the installat
 sudo ./install.sh --chirpstack=not_install
 ```
 
-5. After a few minutes, the installation will be completed. 
+5. After a few minutes, the installation will be completed.
 
 <rk-img
   src="/assets/images/wisgate/rak7271-7371/quickstart/6.successful-installation.png"
@@ -221,7 +221,7 @@ sudo make
   caption="Installing the Software"
 />
 
-After the compilation has successfully finished, you need to configure the correct channel plan and set the correct `global_conf.json` file to be used from the packet forwarder. 
+After the compilation has successfully finished, you need to configure the correct channel plan and set the correct `global_conf.json` file to be used from the packet forwarder.
 
 6. Open the Packet forwarder folder with the following code:
 
@@ -253,7 +253,7 @@ After the compilation has successfully finished, you need to configure the corre
   caption="Listing the Content of the Folder After Renaming"
 />
 
-9. Now, you can start the packet forwarder process, which will bridge the LoRaWAN radio part with the Network Server. Use the command: 
+9. Now, you can start the packet forwarder process, which will bridge the LoRaWAN radio part with the Network Server. Use the command:
 
 ```
 sudo ./lora_pkt_fwd
@@ -316,7 +316,7 @@ sudo make
   caption="Installing the Software"
 />
 
-After the compilation has successfully finished, you need to configure the correct channel plan and set the correct `global_conf.json` file to be used from the packet forwarder. 
+After the compilation has successfully finished, you need to configure the correct channel plan and set the correct `global_conf.json` file to be used from the packet forwarder.
 
 5. Open the Packet forwarder folder with the following command:
 
@@ -349,7 +349,7 @@ ls -l
   caption="Listing the Content of the Folder After Renaming"
 />
 
-8. Now, you can start the packet forwarder process, which will bridge the LoRaWAN radio part with the Network Server. Use the command: 
+8. Now, you can start the packet forwarder process, which will bridge the LoRaWAN radio part with the Network Server. Use the command:
 
 ```
 sudo ./lora_pkt_fwd
@@ -381,7 +381,7 @@ sudo ./chip_id -u -d /dev/ttyACM0
 
 ##### Using Raspberry Pi as a Host
 
-If you use the RAKwireless scripts, connecting to TTN is easy. 
+If you use the RAKwireless scripts, connecting to TTN is easy.
 
 1. Open the configuration tool by running the command in the Raspberry Pi CLI.
 
@@ -411,7 +411,7 @@ sudo gateway-config
   caption="Selecting the Server"
 />
 
-4. Select the correct band. In this example, it is option **5 EU_863_870**, and then confirm.  
+4. Select the correct band. In this example, it is option **5 EU_863_870**, and then confirm.
 
 <rk-img
   src="/assets/images/wisgate/rak7271-7371/quickstart/21.channel.png"
@@ -458,7 +458,7 @@ sudo gateway-config
   caption="Changing the server address"
 />
 
-9. To save the changes, press **Ctrl+X** and confirm with **Y** for Yes. 
+9. To save the changes, press **Ctrl+X** and confirm with **Y** for Yes.
 
 10.  Restart the packet forwarder by choosing **Option 3**.
 
@@ -468,11 +468,11 @@ sudo gateway-config
   caption="Restart the Packet Forwarder"
 />
 
-11. Quit to exit from the configuration menu. 
+11. Quit to exit from the configuration menu.
 
-Now, you have a fully working gateway that is configured to use TTN as Network Server. 
+Now, you have a fully working gateway that is configured to use TTN as Network Server.
 
-12. To successfully register the gateway to TTN, you will need the gateway EUI. Run the command below in the CLI to get the EUI: 
+12. To successfully register the gateway to TTN, you will need the gateway EUI. Run the command below in the CLI to get the EUI:
 
 ```
 sudo gateway-version
@@ -492,7 +492,7 @@ Gateway ID: B827EBFFFE7AFF6A.
 pi@rak-gateway:~ $
 ```
 
-13. Open the TTN website in your browser, login, and navigate to the console page. Click on **+Add Gateway button**. 
+13. Open the TTN website in your browser, login, and navigate to the console page. Click on **+Add Gateway button**.
 
 <rk-img
   src="/assets/images/wisgate/rak7271-7371/quickstart/27.add-gateway.png"

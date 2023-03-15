@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisduo/rak3272-sip-breakout-board/overview/RAK3272-SiP_Breakout_home.png
+rak_img: /assets/images/wisduo/rak3272-sip-breakout-board/overview/RAK3272-SiP-Breakout.png
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK3272-SiP Breakout Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your Breakout Board.
 prev: ../Overview/
 next: ../AT-Command-Manual/

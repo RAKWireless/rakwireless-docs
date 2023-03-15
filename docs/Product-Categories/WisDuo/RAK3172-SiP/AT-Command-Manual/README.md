@@ -1,6 +1,6 @@
 ---
-rak_desc: Contains instructions and tutorials in installing and deploying your RAK3172-SiP. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module. 
-rak_img: /assets/images/wisduo/rak3172-sip/overview/RAK3172_SiP_home.png
+rak_desc: Contains instructions and tutorials in installing and deploying your RAK3172-SiP. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
+rak_img: /assets/images/wisduo/rak3172-sip/overview/RAK3172-SiP.png
 prev: ../Quickstart/
 next: ../Datasheet/
 tags:
@@ -13,7 +13,7 @@ tags:
 
 ## Overview
 
-RAK3172-SiP is based on the STM32WLE5 chip and it is designed to simplify LoRaWAN and LoRa point-to-point (P2P) communication. To integrate LoRa technology into your projects, the RAK3172-SiP is implemented with an easy-to-use UART communication interface where you can send AT commands. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can also use any microcontroller with a UART interface to control the RAK3172-SiP. 
+RAK3172-SiP is based on the STM32WLE5 chip and it is designed to simplify LoRaWAN and LoRa point-to-point (P2P) communication. To integrate LoRa technology into your projects, the RAK3172-SiP is implemented with an easy-to-use UART communication interface where you can send AT commands. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can also use any microcontroller with a UART interface to control the RAK3172-SiP.
 
 The UART serial communication is exposed on the UART2 (also identified as **LPUART1 port**), through **Pin 29 (TX2)** and **Pin 30 (RX2)**. The default parameters of the UART2 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK3172-SiP Datasheet](/Product-Categories/WisDuo/RAK3172-SiP/Datasheet).
 

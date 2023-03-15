@@ -1,6 +1,6 @@
 ---
 rak_desc: Aside from the default RAK FW on the RAK4260 Evaluation Board, you can create custom FW using RUI (RAKwireless Unified Interface) or the actual SDK from the manufacturer of the microcontroller that is used inside the module.
-rak_img: /assets/images/wisduo/rak4260-evaluation-board/overview/RAK4260_Evaluation_home.png
+rak_img: /assets/images/wisduo/rak4260-evaluation-board/overview/RAK4260-Evaluation.png
 prev: ../Quickstart/
 next: ../Datasheet/
 tags:
@@ -64,7 +64,7 @@ Before compiling a project for the RAK4260 Evaluation Board, it is necessary to 
   caption="Microchip Studio Architecture"
 />
 
-4. Don't select "Atmel Software Framework and Examples Project" yet. Do it later. 
+4. Don't select "Atmel Software Framework and Examples Project" yet. Do it later.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/asf_dont.png"
@@ -80,7 +80,7 @@ Before compiling a project for the RAK4260 Evaluation Board, it is necessary to 
   caption="Microchip Studio Extensions and Updates"
 />
 
-6. In the Extensions and Updates window, click on "**Online**" and then search for "**atmel software framework**". 
+6. In the Extensions and Updates window, click on "**Online**" and then search for "**atmel software framework**".
 
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/quickstart/3burning-the-firmware/asf.png"
@@ -100,7 +100,7 @@ Before compiling a project for the RAK4260 Evaluation Board, it is necessary to 
 
 ### Build RAK4260 LoRaNode Demo Project
 
-RAK has already configured a demo firmware for RAK4260 based on Microchip LoRaWAN Stack (MLS) that can be downloaded freely for testing purposes in this Github Repository: 
+RAK has already configured a demo firmware for RAK4260 based on Microchip LoRaWAN Stack (MLS) that can be downloaded freely for testing purposes in this Github Repository:
 
 * [RAK4260 LoRaNode Demo](https://github.com/RAKWireless/RAK4260-LoRaNode-demo)
 
@@ -120,7 +120,7 @@ This sample firmware is solely for testing purposes. If you want to use and depl
 
 2. Open and configure the RAK4260-LoRaNode-demo solution.
 
-Go to the cloned directory folder: 
+Go to the cloned directory folder:
 **<cloned_dir>\RAK4260-LoRaNode-demo\APPS_ENDDEVICE_DEMO1**. Then double click on file "**APPS_ENDDEVICE_DEMO1.atsln**" to open Solution on Microchip Studio.
 
 3. Compile RAK4260-LoRaNode-demo solution. In Microchip Studio, select **Build** -> **Build Solution**.
@@ -153,8 +153,8 @@ pyocd list -t -n atsaml21j18a
 
 As an example, flash the RAK4260-LoRaNode demo project. The hex file of the RAK4260-LoRaNode-demo project is located in a folder, depending on whether you select to compile the **Debug** or **Release** version of the Microchip Studio project.
 
-- **<cloned_dir>\RAK4260-LoRaNode-demo\APPS_ENDDEVICE_DEMO1\Release** 
-- **<cloned_dir>\RAK4260-LoRaNode-demo\APPS_ENDDEVICE_DEMO1\Debug**. 
+- **<cloned_dir>\RAK4260-LoRaNode-demo\APPS_ENDDEVICE_DEMO1\Release**
+- **<cloned_dir>\RAK4260-LoRaNode-demo\APPS_ENDDEVICE_DEMO1\Debug**.
 
 
 <rk-img

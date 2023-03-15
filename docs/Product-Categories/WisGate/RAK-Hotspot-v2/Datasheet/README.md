@@ -1,7 +1,7 @@
 ---
-static_root: 
+static_root:
 rak_desc: Provides comprehensive information about your RAK Hotspot v2 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisgate/rak-hotspot-v2/overview/rak_hotspot_v2.png
+rak_img: /assets/images/wisgate/rak-hotspot-v2/overview/RAK-Hotspot-V2.png
 tags:
   - datasheet
   - wisgate
@@ -62,7 +62,7 @@ Range depends on the environment. For rural areas, **up to 10 miles or more**, b
 - Create a new global network for billions of devices.
 - Any IoT device can become Helium-enabled using readily available off-the-shelf hardware components, software, and a reference design that is open source for anyone to improve upon.
 
-### Features 
+### Features
 
 - Computing with Raspberry Pi4 (Linux)
 - 2&nbsp;GB on-board RAM
@@ -86,13 +86,13 @@ The overview covers the RAK Hotspot details and block diagram.
 
 #### Board Overview
 
-The outer dimensions of RAK Hotspot is **92 mm x 68.3 mm x 57.2&nbsp;mm**. 
+The outer dimensions of RAK Hotspot is **92 mm x 68.3 mm x 57.2&nbsp;mm**.
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot-v2/datasheet/dimensions.svg"
   width="50%"
   caption="Device Dimensions"
-/> 
+/>
 
 #### Hotspot Details
 
@@ -116,7 +116,7 @@ The RAK Hotspot is the central hardware solution for all LoRa based radio commun
 
 :::tip 📝 NOTE
 The concrete segmentation of the protocol-related tasks is outside the scope of this document.
-::: 
+:::
 
 ### Hardware
 
@@ -279,7 +279,7 @@ The table below lists the operation and storage temperature requirements:
 #### Network Protocol Stack
 
 * Supports 802.11ac
-* Supports Wi-Fi AP mode and Client mode 
+* Supports Wi-Fi AP mode and Client mode
 * Supports DHCP
 
 
@@ -289,17 +289,17 @@ The table below lists the operation and storage temperature requirements:
 
 ### FCC Caution
 
-Any changes or modifications not expressly approved by the party responsible for compliance could void the user's authority to operate the equipment. 
+Any changes or modifications not expressly approved by the party responsible for compliance could void the user's authority to operate the equipment.
 
-This device complies with part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) This device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation. 
+This device complies with part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) This device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation.
 
 :::tip 📝 IMPORTANT NOTE
-This equipment has been tested and found to comply with the limits for a Class B digital device, according to part 15 of the FCC Rules. These limits are designed to provide reasonable protection against harmful interference in a residential installation. This equipment generates, uses, and can radiate radio frequency energy and, if not installed and used following the instructions, may cause harmful interference to radio communications. However, there is no guarantee that interference will not occur in a particular installation. If this equipment does cause harmful interference to radio or television reception, which can be determined by turning the equipment off and on, the user is encouraged to try to correct the interference by one or more of the following measures: 
+This equipment has been tested and found to comply with the limits for a Class B digital device, according to part 15 of the FCC Rules. These limits are designed to provide reasonable protection against harmful interference in a residential installation. This equipment generates, uses, and can radiate radio frequency energy and, if not installed and used following the instructions, may cause harmful interference to radio communications. However, there is no guarantee that interference will not occur in a particular installation. If this equipment does cause harmful interference to radio or television reception, which can be determined by turning the equipment off and on, the user is encouraged to try to correct the interference by one or more of the following measures:
 
-* Reorient or relocate the receiving antenna. 
-* Increase the separation between the equipment and receiver. 
-* Connect the equipment into an outlet on a circuit different from that to which the receiver is connected. 
-* Consult the dealer or an experienced radio/TV technician for help. 
+* Reorient or relocate the receiving antenna.
+* Increase the separation between the equipment and receiver.
+* Connect the equipment into an outlet on a circuit different from that to which the receiver is connected.
+* Consult the dealer or an experienced radio/TV technician for help.
 :::
 
 ### FCC Radiation Exposure Statement

@@ -1,6 +1,6 @@
 ---
-rak_desc: For an easier experience with your LoRaWAN Module, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the RAK4270 Breakout Board. 
-rak_img: /assets/images/wisduo/rak4270-breakout-board/overview/RAK4270_home.png
+rak_desc: For an easier experience with your LoRaWAN Module, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the RAK4270 Breakout Board.
+rak_img: /assets/images/wisduo/rak4270-breakout-board/overview/RAK4270-Breakout.png
 prev: ../Quickstart/
 next: ../Datasheet/
 tags:
@@ -15,7 +15,7 @@ tags:
 
 The RAK4270 Breakout Board is designed to simplify LoRaWAN and LoRa point-to-point (P2P) communication. To integrate LoRa technology into your projects, RAK4270 has easy-to-use AT commands via a UART communication interface. Through these AT commands, you can set the parameters needed for LoRaWAN and LoRa P2P communication.
 
-In the RAK4270 Breakout Board, the serial communication is exposed on **UART1 port** via **UART1_TX/PA9** and **UART1_RX/PA10**. The default parameters of the UART1 are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. 
+In the RAK4270 Breakout Board, the serial communication is exposed on **UART1 port** via **UART1_TX/PA9** and **UART1_RX/PA10**. The default parameters of the UART1 are **115200 / 8-N-1**. The firmware upgrade is also possible through this port.
 
 In addition, the RAK4270 board also exposed another serial port **UART2**, via **UART2_TX/PA2** and **UART2_RX/PA3**. You can use UART2 as an alternative to UART1 when sending AT commands. You can also use UART2 when developing custom firmware via [RUI](/RUI/). The default parameters of the UART2 are **115200 / 8-N-1**.
 
@@ -46,7 +46,7 @@ The AT command is based on ASCII characters. A command begins with the prefix `a
 
 The AT commands can be classified into the following groups:
 
-* **Read Command**: Reads the current configuration or status of the module. The command name and the list of parameters are separated by the `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character. 
+* **Read Command**: Reads the current configuration or status of the module. The command name and the list of parameters are separated by the `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character.
 
 ```
 at+get_config=<m>:<n>
@@ -80,7 +80,7 @@ OK [information]\r\n
 
 :::tip 📝 NOTE:
 
-Only Read commands have information in the replied message, while Write commands do not have an informative description. 
+Only Read commands have information in the replied message, while Write commands do not have an informative description.
 
 :::
 
@@ -258,7 +258,7 @@ at+set_config=device:sleep:0\r\n
 OK Wake Up
 ```
 
-:::tip 📝 NOTE: 
+:::tip 📝 NOTE:
 
 During sleep, Pin 5 (RX1) and Pin 1 (RX3) are automatically configured as wake up pins and in external interrupt mode with an internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
 
@@ -306,7 +306,7 @@ This command is used to configure the baud rate for a UART port.
     </tr>
     <tr>
       <td> baud_rate </td>
-      <td> UART Baud rate：1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200 
+      <td> UART Baud rate：1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200
       </td>
     </tr>
 </table>
@@ -326,7 +326,7 @@ This command is used to set the UART operation from AT **configuration mode** to
 
 During **data transmission mode**, all standard AT Commands will not work and the data that you sent to UART will go directly to the network server as ASCII payload with `\r\n`. If you input `AZ`, the network server will receive an uplink hex value of `415A0D0A`. This means **A**=`0x41`, **Z**=`0x5A`, **\r**=`0x0D` and **\n**=`0x0A`.
 
-:::tip 📝 NOTE: 
+:::tip 📝 NOTE:
 
 To switch back from data transmission mode to configuration mode, use `+++` (`+++` without `\ r\ n`).
 
@@ -564,7 +564,7 @@ at+recv=0,-105,-12,0
 
 ::: tip 📝 NOTE
 
-* When sending a confirmed message, you will receive an ACK response, i.e. `at+recv=...`. 
+* When sending a confirmed message, you will receive an ACK response, i.e. `at+recv=...`.
 The `0, -105, -12,0` stands for:
   * `0`: For the LoRa port;
   * `-105`: For the RSSI;
@@ -573,7 +573,7 @@ The `0, -105, -12,0` stands for:
 
 
 * When sending an unconfirmed message, sometimes the gateway will send MAC commands to nodes, and the node will also receive `at+recv=...`.
-  
+
 :::
 
 <br>
@@ -620,7 +620,7 @@ This command is used to read all the LoRa channel information given the current 
 
 ```
 at+get_config=lora:channel\r\n
-OK * 0,on,868100000,0,5; * 1,on,868300000,0,5; * 2,on,868500000,0,5;  3,off,0,0,0;  4,off,0,0,0;  5,off,0,0,0;  6,off,0,0,0;  7,off,0,0,0;  8,off,0,0,0;  9,off,0,0,0; 10,off,0,0,0; 11,off,0,0,0; 12,off,0,0,0; 13,off,0,0,0; 14,off,0,0,0; 15,off,0,0,0 
+OK * 0,on,868100000,0,5; * 1,on,868300000,0,5; * 2,on,868500000,0,5;  3,off,0,0,0;  4,off,0,0,0;  5,off,0,0,0;  6,off,0,0,0;  7,off,0,0,0;  8,off,0,0,0;  9,off,0,0,0; 10,off,0,0,0; 11,off,0,0,0; 12,off,0,0,0; 13,off,0,0,0; 14,off,0,0,0; 15,off,0,0,0
 ```
 
 ::: tip 📝 NOTE
@@ -715,7 +715,7 @@ This command is used to set the Application EUI parameter for the LoRaWAN OTAA m
 </table>
 
 :::tip 📝 NOTE:
-All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error. 
+All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error.
 :::
 
 **Example**：
@@ -1052,7 +1052,7 @@ This command is used to set the RF transmission power level of the LoRa transcei
 <table>
     <tr>
       <td>tx_power </td>
-      <td> Refer to <a href="/Product-Categories/WisDuo/RAK4270-Breakout-Board/AT-Command-Manual/#appendix-ii：tx-power-by-region" >Appendix II</a> for possible values of tx_power. The table of Appendix II is based on LoRaWAN 1.0.2 specification. LoRa transmit power level varies depending on frequency band.  <br> <br>If the resulting TX power is higher than the capability of LoRa Radio, the output power will be based on the max TX power of the LoRa Radio in the module. For RAK4270 module, the max TX power is 22&nbsp;dBm. Take note of this when using regional bands with MaxEIRP higher than 22&nbsp;dBm like US915, AU915 and IN865 whose MaxEIRP is 30&nbsp;dBm.<br> <br> The default setting is 0. 
+      <td> Refer to <a href="/Product-Categories/WisDuo/RAK4270-Breakout-Board/AT-Command-Manual/#appendix-ii：tx-power-by-region" >Appendix II</a> for possible values of tx_power. The table of Appendix II is based on LoRaWAN 1.0.2 specification. LoRa transmit power level varies depending on frequency band.  <br> <br>If the resulting TX power is higher than the capability of LoRa Radio, the output power will be based on the max TX power of the LoRa Radio in the module. For RAK4270 module, the max TX power is 22&nbsp;dBm. Take note of this when using regional bands with MaxEIRP higher than 22&nbsp;dBm like US915, AU915 and IN865 whose MaxEIRP is 30&nbsp;dBm.<br> <br> The default setting is 0.
  </td>
     </tr>
 </table>
@@ -1069,7 +1069,7 @@ OK
 
 21.  <b>at+set_config=lora:adr:`<status>`</b>
 
-This command is used to turn on/off the ADR feature of the LoRa communication. 
+This command is used to turn on/off the ADR feature of the LoRa communication.
 
 | Operation | Command                           | Response |
 | --------- | --------------------------------- | -------- |
@@ -1392,7 +1392,7 @@ at+recv=<RSSI>,<SNR>,<Data Length>:<Data>
 
 <br>
 
-<b>AU915</b> 
+<b>AU915</b>
 
 | Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
 | --------- | ------------------------- | ------------------------------------ |
@@ -1449,7 +1449,7 @@ By default, MaxEIRP is considered to be +16&nbsp;dBm.
 <b>US915</b>
 
 By default, MaxEIRP is considered to be +30&nbsp;dBm based on LoRa Alliance specification.
-However, the module's max TX power is only up to 22&nbsp;dBm. 
+However, the module's max TX power is only up to 22&nbsp;dBm.
 
 | TXPower | Configuration (Conducted Power) |
 | ------- | ------------------------------- |
@@ -1465,7 +1465,7 @@ However, the module's max TX power is only up to 22&nbsp;dBm.
 <b>AU915</b>
 
 By default, MaxEIRP is considered to be +30&nbsp;dBm based on LoRa Alliance specification.
-However, the module's max TX power is only up to 22&nbsp;dBm. 
+However, the module's max TX power is only up to 22&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1477,7 +1477,7 @@ However, the module's max TX power is only up to 22&nbsp;dBm.
 
 <b>KR920</b>
 
-By default, MaxEIRP is considered to be +14&nbsp;dBm. 
+By default, MaxEIRP is considered to be +14&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1495,7 +1495,7 @@ By default, MaxEIRP is considered to be +14&nbsp;dBm.
 
 <b>AS923</b>
 
-By default, MaxEIRP shall be 16&nbsp;dBm. 
+By default, MaxEIRP shall be 16&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1514,7 +1514,7 @@ By default, MaxEIRP shall be 16&nbsp;dBm.
 <b>IN865</b>
 
 By default, MaxEIRP is considered to be +30&nbsp;dBm based on LoRa Alliance specification.
-However, the module's max TX power is only up to 22&nbsp;dBm. 
+However, the module's max TX power is only up to 22&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1535,7 +1535,7 @@ However, the module's max TX power is only up to 22&nbsp;dBm.
 
 <b>CN470</b>
 
-By default, MaxEIRP is considered to be +19.15&nbsp;dBm. 
+By default, MaxEIRP is considered to be +19.15&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1553,7 +1553,7 @@ By default, MaxEIRP is considered to be +19.15&nbsp;dBm.
 
 <b>EU433</b>
 
-By default, MAxEIRP is considered to be +12.15&nbsp;dBm. 
+By default, MAxEIRP is considered to be +12.15&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1782,7 +1782,7 @@ Not all pins of the RAK4270 module are exposed on the RAK4270 Breakout board hea
 
 1. **About the UART pin**:
     - Pin 5 (RX1) and Pin 4 (TX1) are reserved for UART1.
-    - Pin 1 (RX2) and Pin 2 (TX2) are reserved for UART2. 
+    - Pin 1 (RX2) and Pin 2 (TX2) are reserved for UART2.
     - During sleep, Pin 5 (RX1) and Pin 1 (RX3) are automatically configured as wake up pins and in external interrupt mode with an internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
 
 2. **About the SWD Debug Pin**: Pin 7 (SWDIO) and Pin 8 (SWCLK) are used for SWD debug port.
@@ -1794,7 +1794,7 @@ Not all pins of the RAK4270 module are exposed on the RAK4270 Breakout board hea
 5. **About the ADC Pin**: The ADC pin on the RAK4270 module is assigned to Pin 3 (UART2_DE).
 
 6. **About the GPIO Pins**: The GPIO pins available on the RAK4270 module are the following:
-  
+
     - Pin 3 (UART2_DE/PA1)
     - Pin 6 (UART1_DE/PA12)
     - Pin 9 (I2C_SCL/PB6)

@@ -1,6 +1,6 @@
 ---
-rak_img: /assets/images/wisnode/rak2171/overview/rak2171.png
-rak_desc: RAK2171 WisNode TrackIt is RAKwireless’ latest LoRaWAN GPS tracking device. It comes in a small form factor with rechargeable battery and tracking and configuration application, available for iOS and Android devices. 
+rak_img: /assets/images/wisnode/rak2171/overview/RAK2171.png
+rak_desc: RAK2171 WisNode TrackIt is a LoRaWAN GPS tracking device. It comes in a small form factor with rechargeable battery and tracking and configuration application, available for iOS and Android devices.
 rak_grp: [wisnode,track]
 prev: ../../
 next: ../Quickstart/
@@ -9,7 +9,7 @@ tags:
     - wisnode
 ---
 
-# RAK2171 WisNode TrackIt 
+# RAK2171 WisNode TrackIt
 
 Thank you for choosing **RAK2171 WisNode TrackIt** in your awesome IoT project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
@@ -19,9 +19,9 @@ Thank you for choosing **RAK2171 WisNode TrackIt** in your awesome IoT project! 
 
 ## Product Description
 
-**RAK2171 WisNode TrackIt** is RAKwireless’ latest LoRaWAN GPS tracking device. It comes in a small form factor with rechargeable battery and tracking and configuration application, available for iOS and Android devices. 
+**RAK2171 WisNode TrackIt** is a LoRaWAN GPS tracking device. It comes in a small form factor with rechargeable battery and tracking and configuration application, available for iOS and Android devices.
 
-RAK2171 supports multiple working modes and notification options. When used with RAK WisGate Edge gateways and in P2P mode, you can monitor your tracker on the application map, create geofences, and receive SOS and movement notifications. You can also configure the WisNode TrackIt to work with any third-party LoRaWAN network using the TrackIt application as a configuration tool. 
+RAK2171 supports multiple working modes and notification options. When used with RAK WisGate Edge gateways and in P2P mode, you can monitor your tracker on the application map, create geofences, and receive SOS and movement notifications. You can also configure the WisNode TrackIt to work with any third-party LoRaWAN network using the TrackIt application as a configuration tool.
 
 ## Product Features
 

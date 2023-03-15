@@ -1,6 +1,6 @@
 ---
-rak_desc: For an easier experience with your LoRaWAN Module, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the RAK4600 Module. 
-rak_img: /assets/images/wisduo/rak4600-module/overview/RAK4600_Module_home.png
+rak_desc: For an easier experience with your LoRaWAN Module, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the RAK4600 Module.
+rak_img: /assets/images/wisduo/rak4600-module/overview/RAK4600-Module.png
 prev: ../Low-Level-Development/
 next: ../Datasheet/
 tags:
@@ -13,11 +13,11 @@ tags:
 
 ## Introduction
 
-The RAK4600 module is designed to simplify LoRa P2P peer-to-peer and LoRaWAN communication. This module saves customers in dealing with complicated SPI protocol with the LoRa transceivers. Instead, a well-known serial communication interface is provided to send commands and request the internal status of the module. This approach allows a straightforward way to integrate LoRa technology into your projects. 
+The RAK4600 module is designed to simplify LoRa P2P peer-to-peer and LoRaWAN communication. This module saves customers in dealing with complicated SPI protocol with the LoRa transceivers. Instead, a well-known serial communication interface is provided to send commands and request the internal status of the module. This approach allows a straightforward way to integrate LoRa technology into your projects.
 
-On top of this serial interface, a set of AT commands is defined wherein an external microcontroller will be able to control the RAK4600 module as a classic AT modem. Through the AT commands, customers can set parameters of the LoRaWAN communication, controlling GPIO pins, analog inputs, etc. 
+On top of this serial interface, a set of AT commands is defined wherein an external microcontroller will be able to control the RAK4600 module as a classic AT modem. Through the AT commands, customers can set parameters of the LoRaWAN communication, controlling GPIO pins, analog inputs, etc.
 
-In the RAK4600 module, the serial communication is exposed on the UART1 port, through Pin 22 (USART1_RX) and Pin 23 (USART1_TX). The parameters of the UART1 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the RAK4600 [Datasheet](../Datasheet/). 
+In the RAK4600 module, the serial communication is exposed on the UART1 port, through Pin 22 (USART1_RX) and Pin 23 (USART1_TX). The parameters of the UART1 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the RAK4600 [Datasheet](../Datasheet/).
 
 In addition, the RAK4600 also supports BLE. You can use your mobile phone to communicate with the module via BLE interface, or you can use the module to scan the surrounding Bluetooth beacon information.
 
@@ -69,18 +69,18 @@ The AT commands can be classified into the following groups:
 
 ```
 at+get_config=<m>:<n>
-``` 
+```
 *   **Write Command**: Writes/Modifies the current configuration of the module. The command name and the list of parameters are separated by the `=` character. The `<m>` parameter is separated with its associated value `<n>` by the `:` character.
 
 ```
 at+set_config=<m>:<n>
 ```
-*   **Operational Commands**: Some commands are neither read nor write commands but are used to execute an action. 
+*   **Operational Commands**: Some commands are neither read nor write commands but are used to execute an action.
 
 ```
 at+send=lora:<m>:<n> // Sends data through the LoRa transceiver.
 ```
- 
+
 
 * **Special Command**: The RAK4600 UART port has two operational modes: **Configuration Mode** (default mode) and **Data Transmission Mode**. Data transmission mode allows you to send ASCII payloads directly to the network server via UART without using any AT Command interface like `at+send=lora:X:YYY`. Data transmission mode is explained further on [Interface Type AT Command](/Product-Categories/WisDuo/RAK4600-Module/AT-Command-Manual/#interface-type-at-command) section of this document.
 
@@ -95,7 +95,7 @@ OK [information]\r\n
 ```
 
 :::tip 📝 NOTE:
-Only Read commands have information in the replied message, while Write commands do not have an informative description. 
+Only Read commands have information in the replied message, while Write commands do not have an informative description.
 :::
 
 The firmware you developed, running in the external MCU, will expect at a minimum a string of `Ok\r\n` after sending a successful command to the board. On the other hand, when the command is not successfully executed by the board, a reply will be received in the following format:
@@ -249,7 +249,7 @@ This command is used to get version the current firmware version number.
 
 **Example**:
 ```
-at+version\r\n                         
+at+version\r\n
 OK V3.3.0.14
 ```
 
@@ -267,7 +267,7 @@ This command is used to obtain all the AT commands supported by the current firm
 
 **Example**:
 ```
-at+help\r\n                         
+at+help\r\n
 OK Device AT commands:
   at+version
   at+help
@@ -328,7 +328,7 @@ This command is used for restarting the device.
 
 **Example**:
 ```
-at+set_config=device:restart\r\n                         
+at+set_config=device:restart\r\n
 UART1 work mode: RUI_UART_NORMAL
 Current work_mode:LoRaWAN, join_mode:ABP, Class: A
 Initialization OK
@@ -356,14 +356,14 @@ This command is used to change the current state of the device between the sleep
 
 **Example**:
 ```
-at+set_config=device:sleep:1\r\n                         
+at+set_config=device:sleep:1\r\n
 OK Sleep
 
-at+set_config=device:sleep:0\r\n 
+at+set_config=device:sleep:0\r\n
 OK Wake Up
 ```
 
-:::tip 📝 NOTE: 
+:::tip 📝 NOTE:
 
 During sleep, Pin 22 (USART1_RX) is automatically configured as a wake up pin and in external interrupt mode with an internal pull-down resistor. Wake-up will be triggered by a rising edge on this RX pin.
 
@@ -384,7 +384,7 @@ This command is used to obtain the current status of the device.
 
 **Example**:
 ```
-at+get_config=device:status\r\n                         
+at+get_config=device:status\r\n
 OK Board Core:RAK4600
 MCU:nRF52832
 LoRa chip:SX1276
@@ -422,7 +422,7 @@ This command is used to set the UART operation from AT **configuration mode** to
 
 During **data transmission mode**, all standard AT Commands will not work, and the data you sent to UART will go directly to the network server as ASCII payload with `\r\n`. If you input `AZ`, the network server will receive an uplink hex value of `415A0D0A`. This means **A**=`0x41`, **Z**=`0x5A`, **\r**=`0x0D` and **\n**=`0x0A`.
 
-:::tip 📝 NOTE: 
+:::tip 📝 NOTE:
 
 To switch back from data transmission mode to configuration mode, use `+++` (`+++` without `\ r\ n`).
 
@@ -466,7 +466,7 @@ OK
 
 1. <b>at+join</b>
 
-This command is used to join a LoRaWAN network. 
+This command is used to join a LoRaWAN network.
 
 | Operation | Command   | Response        |
 | --------- | --------- | --------------- |
@@ -509,7 +509,7 @@ This command is used to send data via LoRaWAN.
 
 When sending data as unconfirmed uplink:
 ```
-at+send=lora:1:5A00\r\n                         
+at+send=lora:1:5A00\r\n
 OK
 ```
 When sending data as confirmed uplink:
@@ -520,7 +520,7 @@ at+recv=0,-105,-12,0
 
 ::: tip 📝 NOTE
 
-* When sending a confirmed message, you will receive an ACK response, i.e. `at+recv=...`. 
+* When sending a confirmed message, you will receive an ACK response, i.e. `at+recv=...`.
 The `0, -105, -12,0` stands for:
   * `0`: For the LoRa port;
   * `-105`: For the RSSI;
@@ -529,7 +529,7 @@ The `0, -105, -12,0` stands for:
 
 
 * When sending an unconfirmed message, sometimes the gateway will send MAC commands to nodes, and the node will also receive `at+recv=...`.
-  
+
 :::
 
 <br>
@@ -554,7 +554,7 @@ This command is used to set the appropriate working frequency band.
 
 **Example**：
 ```
-at+set_config=lora:region:EU868\r\n                         
+at+set_config=lora:region:EU868\r\n
 OK
 ```
 
@@ -576,8 +576,8 @@ This command is used for reading all the LoRa channel information for the device
 
 **Example**：
 ```
-at+get_config=lora:channel\r\n                         
-OK *0,on,868100000,0,5; *1,on,868300000,0,5; *2,on,868500000,0,5; 3,off,0,0,0; 4,off,0,0,0; 5,off,0,0,0; 6,off,0,0,0; 7,off,0,0,0; *8,on,867100000,0,5; *9,on,867300000,0,5; *10,on,867500000,0,5; *11,on,867700000,0,5; *12,on,867900000,0,5; 13,off,0,0,0; 14,off,0,0,0; 15,off,0,0,0 
+at+get_config=lora:channel\r\n
+OK *0,on,868100000,0,5; *1,on,868300000,0,5; *2,on,868500000,0,5; 3,off,0,0,0; 4,off,0,0,0; 5,off,0,0,0; 6,off,0,0,0; 7,off,0,0,0; *8,on,867100000,0,5; *9,on,867300000,0,5; *10,on,867500000,0,5; *11,on,867700000,0,5; *12,on,867900000,0,5; 13,off,0,0,0; 14,off,0,0,0; 15,off,0,0,0
 
 ```
 
@@ -598,7 +598,7 @@ With <b>*0,on,868100000,0,5</b> as an example，the following is the channel par
 5. <b>at+set_config=lora:ch_mask:`<channel_number>:<status>`</b>
 
 This command is used to enable (on) or disable (off) a channel in the current region.
- 
+
 
 | Operation | Command                                                | Response |
 | --------- | ------------------------------------------------------ | -------- |
@@ -619,7 +619,7 @@ This command is used to enable (on) or disable (off) a channel in the current re
 </tbody>
 </table>
 
-**Example**: 
+**Example**:
 ```
 at+set_config=lora:ch_mask:0:0\r\n
 OK
@@ -647,7 +647,7 @@ This command is used to set the Device EUI parameter for LoRaWAN OTAA mode.
 
 **Example**：
 ```
-at+set_config=lora:dev_eui:3530353064377716\r\n                         
+at+set_config=lora:dev_eui:3530353064377716\r\n
 OK
 ```
 
@@ -673,12 +673,12 @@ This command is used to set the Application EUI parameter for the LoRaWAN OTAA m
 </table>
 
 :::tip 📝 NOTE:
-All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error. 
+All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error.
 :::
 
 **Example**：
 ```
-at+set_config=lora:app_eui:0000000000000001\r\n                         
+at+set_config=lora:app_eui:0000000000000001\r\n
 OK
 ```
 <br>
@@ -703,7 +703,7 @@ This command is used to set the Application Key parameter for the LoRaWAN OTAA m
 
 **Example**：
 ```
-at+set_config=lora:app_key:841986913ACD00BBC2BE2479D70F3228\r\n                         
+at+set_config=lora:app_key:841986913ACD00BBC2BE2479D70F3228\r\n
 OK
 ```
 
@@ -729,7 +729,7 @@ This command is used to set the Device Address parameter for the LoRaWAN ABP mod
 
 **Example**：
 ```
-at+set_config=lora:dev_addr:260125D7\r\n                         
+at+set_config=lora:dev_addr:260125D7\r\n
 OK
 ```
 
@@ -755,7 +755,7 @@ This command is used to set the Application Session Key parameter for the LoRaWA
 
 **Example**：
 ```
-at+set_config=lora:apps_key:841986913ACD00BBC2BE2479D70F3228\r\n                         
+at+set_config=lora:apps_key:841986913ACD00BBC2BE2479D70F3228\r\n
 OK
 ```
 
@@ -781,7 +781,7 @@ This command is used to set the Network Session Key parameter for the LoRaWAN AB
 
 **Example**：
 ```
-at+set_config=lora:nwks_key:69AF20AEA26C01B243945A28C9172B42\r\n                           
+at+set_config=lora:nwks_key:69AF20AEA26C01B243945A28C9172B42\r\n
 OK
 ```
 
@@ -807,7 +807,7 @@ This command is used to enable or disable the multicast feature.
 
 **Example**：
 ```
-at+set_config=lora:multicastenable:1\r\n                         
+at+set_config=lora:multicastenable:1\r\n
 OK
 ```
 
@@ -833,7 +833,7 @@ This command is used to set the Device Address for the multicast feature.
 
 **Example**：
 ```
-at+set_config=lora:multicast_dev_addr:260111fd\r\n                         
+at+set_config=lora:multicast_dev_addr:260111fd\r\n
 OK
 ```
 
@@ -859,7 +859,7 @@ This command is used to set the Application Session Key for the multicast featur
 
 **Example**：
 ```
-at+set_config=lora:multicast_apps_key:F13DDFA2619B10411F02F042E1C0F356\r\n                     
+at+set_config=lora:multicast_apps_key:F13DDFA2619B10411F02F042E1C0F356\r\n
 OK
 ```
 
@@ -883,7 +883,7 @@ This command is used to set the Network Session Key for the multicast feature.
 
 **Example**：
 ```
-at+set_config=lora:multicast_nwks_key:1D1991F5377C675879C39B6908D437A6\r\n                         
+at+set_config=lora:multicast_nwks_key:1D1991F5377C675879C39B6908D437A6\r\n
 OK
 ```
 
@@ -909,7 +909,7 @@ This command is used to switch the LoRaWAN access mode between the OTAA and the 
 
 **Example**：
 ```
-at+set_config=lora:join_mode:1\r\n                         
+at+set_config=lora:join_mode:1\r\n
 OK
 ```
 
@@ -961,7 +961,7 @@ This command is used to set the type of data to be sent: Confirmed/Unconfirmed.
 
 **Example**：
 ```
-at+set_config=lora:confirm:0\r\n                         
+at+set_config=lora:confirm:0\r\n
 OK
 ```
 
@@ -997,14 +997,14 @@ This command is used to set the RF transmission power level of the LoRa transcei
 <table>
     <tr>
       <td>tx_power </td>
-      <td> Refer to <a href="/Product-Categories/WisDuo/RAK4600-Module/AT-Command-Manual/#appendix-ii：tx-power-by-region" >Appendix II</a> for possible values of tx_power. The table of Appendix II is based on LoRaWAN 1.0.2 specification. LoRa transmit power level varies depending on frequency band.  <br> <br>If the resulting TX power is higher than the capability of LoRa Radio, the output power will be based on the max TX power of the LoRa Radio in the module. For RAK4600 module, the max TX power is 20dBm. Take note of this when using regional bands with MaxEIRP higher than 20dBm like US915, AU915 and IN865 whose MaxEIRP is 30dBm.<br> <br> The default setting is 0. 
+      <td> Refer to <a href="/Product-Categories/WisDuo/RAK4600-Module/AT-Command-Manual/#appendix-ii：tx-power-by-region" >Appendix II</a> for possible values of tx_power. The table of Appendix II is based on LoRaWAN 1.0.2 specification. LoRa transmit power level varies depending on frequency band.  <br> <br>If the resulting TX power is higher than the capability of LoRa Radio, the output power will be based on the max TX power of the LoRa Radio in the module. For RAK4600 module, the max TX power is 20dBm. Take note of this when using regional bands with MaxEIRP higher than 20dBm like US915, AU915 and IN865 whose MaxEIRP is 30dBm.<br> <br> The default setting is 0.
  </td>
     </tr>
 </table>
 
 **Example**：
 ```
-at+set_config=lora:tx_power:0\r\n                         
+at+set_config=lora:tx_power:0\r\n
 OK
 ```
 
@@ -1012,7 +1012,7 @@ OK
 
 21. <b>at+set_config=lora:adr:`<status>`</b>
 
-This command is used to turn on/off the ADR feature of the LoRa communication. 
+This command is used to turn on/off the ADR feature of the LoRa communication.
 
 | Operation | Command                           | Response |
 | --------- | --------------------------------- | -------- |
@@ -1030,7 +1030,7 @@ This command is used to turn on/off the ADR feature of the LoRa communication.
 
 **Example**：
 ```
-at+set_config=lora:adr:0\r\n                         
+at+set_config=lora:adr:0\r\n
 OK
 ```
 
@@ -1048,7 +1048,7 @@ This command is used to get all the information related to the current LoRa stat
 
 **Example**：
 ```
-at+get_config=lora:status\r\n                         
+at+get_config=lora:status\r\n
 OK Work Mode: LoRaWAN
 Region: EU868
 Send_interval: 600s
@@ -1101,7 +1101,7 @@ This command is used for enabling or disabling the Duty Cycle feature.
 
 **Example**：
 ```
-at+set_config=lora:dutycycle_enable:1\r\n                       
+at+set_config=lora:dutycycle_enable:1\r\n
 OK
 ```
 
@@ -1170,7 +1170,7 @@ This command is used to switch the LoRa's transmission mode between the LoRaWAN 
 
 **Example**：
 ```
-at+set_config=lora:work_mode:1\r\n                         
+at+set_config=lora:work_mode:1\r\n
 UART1 work mode: RUI_UART_NORMAL
 Current work_mode:P2P
 Initialization OK
@@ -1218,7 +1218,7 @@ This command is used to set the relevant parameters of LoRA P2P mode and is only
 
 **Example**：
 ```
-at+set_config=lorap2p:869525000:12:0:1:8:20\r\n                         
+at+set_config=lorap2p:869525000:12:0:1:8:20\r\n
 OK
 ```
 
@@ -1244,7 +1244,7 @@ This command is used to change the state of the LoRa transceiver between sending
 
 **Example**：
 ```
-at+set_config=lorap2p:transfer_mode:1\r\n           
+at+set_config=lorap2p:transfer_mode:1\r\n
 OK
 ```
 
@@ -1268,7 +1268,7 @@ This command is used to send data through LoRa P2P and is only valid when the Lo
 
 **Example**：
 ```
-at+send=lorap2p:1234\r\n                         
+at+send=lorap2p:1234\r\n
 OK
 ```
 In LoRa P2P mode, the receiving node receives the data and outputs the data in the following format:
@@ -1340,7 +1340,7 @@ OK
 <br>
 
 <b>US915</b>
- 
+
 | Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
 | --------- | ------------------------- | ------------------------------------ |
 | 0         | LoRa: SF10 / 125&nbsp;kHz | 980                                  |
@@ -1359,7 +1359,7 @@ OK
 
 <br>
 
-<b>AU915</b> 
+<b>AU915</b>
 
 | Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
 | --------- | ------------------------- | ------------------------------------ |
@@ -1398,7 +1398,7 @@ OK
 ## Appendix II：TX Power by Region
 <b>EU868</b>
 
-By default, MaxEIRP is considered to be +16&nbsp;dBm. 
+By default, MaxEIRP is considered to be +16&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1418,7 +1418,7 @@ By default, MaxEIRP is considered to be +16&nbsp;dBm.
 <b>US915</b>
 
 By default, MaxEIRP is considered to be +30&nbsp;dBm based on LoRa Alliance specification.
-However, the module's max TX power is only up to 20&nbsp;dBm. 
+However, the module's max TX power is only up to 20&nbsp;dBm.
 
 
 | TXPower | Configuration (Conducted Power) |
@@ -1436,7 +1436,7 @@ However, the module's max TX power is only up to 20&nbsp;dBm.
 <b>AU915</b>
 
 By default, MaxEIRP is considered to be +30&nbsp;dBm based on LoRa Alliance specification.
-However, the module's max TX power is only up to 20&nbsp;dBm. 
+However, the module's max TX power is only up to 20&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1448,7 +1448,7 @@ However, the module's max TX power is only up to 20&nbsp;dBm.
 
 <b>KR920</b>
 
-By default, MaxEIRP is considered to be +14&nbsp;dBm. 
+By default, MaxEIRP is considered to be +14&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1467,7 +1467,7 @@ By default, MaxEIRP is considered to be +14&nbsp;dBm.
 
 <b>AS923</b>
 
-By default, MaxEIRP shall be 16&nbsp;dBm. 
+By default, MaxEIRP shall be 16&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1487,7 +1487,7 @@ By default, MaxEIRP shall be 16&nbsp;dBm.
 <b>IN865</b>
 
 By default, MaxEIRP is considered to be +30&nbsp;dBm based on LoRa Alliance specification.
-However, the module's max TX power is only up to 20&nbsp;dBm. 
+However, the module's max TX power is only up to 20&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1508,7 +1508,7 @@ However, the module's max TX power is only up to 20&nbsp;dBm.
 
 <b>CN470</b>
 
-By default, MaxEIRP is considered to be +19.15&nbsp;dBm. 
+By default, MaxEIRP is considered to be +19.15&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1526,7 +1526,7 @@ By default, MaxEIRP is considered to be +19.15&nbsp;dBm.
 
 <b>EU433</b>
 
-By default, MAxEIRP is considered to be +12.15&nbsp;dBm. 
+By default, MAxEIRP is considered to be +12.15&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1756,8 +1756,8 @@ The pin definition of the RAK4600 module can be reviewed in the [Pin Definition]
 
 A summary of the pins of the RAK4600 module:
 
-1. **About the UART Pin**: 
-    - Pin 22 (USART1_RX) and Pin 23 (USART1_TX). 
+1. **About the UART Pin**:
+    - Pin 22 (USART1_RX) and Pin 23 (USART1_TX).
     - During sleep, Pin 22 (USART1_RX) is automatically configured as a wake up pin and in external interrupt mode with an internal pull-down resistor. Wake-up will be triggered by a rising edge on this RX pin.
 
 2. **About the SWD debug Pin**: Pin 37 (SYS_SWDIO) and Pin 38 (SYS_SWDCLK) are used for SWD debug programming.

@@ -1,6 +1,6 @@
 ---
 rak_desc: A step-by-step guide in installing and upgrading the latest firmware of your RAK7431. With this guide, you can ensure that your LoRaWAN Module is always updated, and you can also use this to upload your custom firmware.
-rak_img: /assets/images/wisnode/rak7431/datasheet/RAK7431_home.png
+rak_img: /assets/images/wisnode/rak7431/datasheet/RAK7431.png
 prev: ../AT-Command-Manual/
 next: false
 tags:
@@ -36,16 +36,16 @@ src="/assets/images/wisnode/rak7431/firmware-upgrade-guide/1.rak-dfu-tool-downlo
 
 :::tip 📝 NOTE:
 The Latest_Fiirmware.zip file has tree **.bin** files which are for the High, Middle, and Low bands:
-- **HB** - high band firmware – supports US915, AS923, AU915, and KR920 LoRaWAN bands. 
-- **MB** - middle band firmware – supports EU868, IN865, and RU864 LoRaWAN bands. 
-- **LB** - low band firmware – supports EU433 and CN470 LoRaWAN bands. 
+- **HB** - high band firmware – supports US915, AS923, AU915, and KR920 LoRaWAN bands.
+- **MB** - middle band firmware – supports EU868, IN865, and RU864 LoRaWAN bands.
+- **LB** - low band firmware – supports EU433 and CN470 LoRaWAN bands.
 
 Select the correct file corresponding to the LoRaWAN band that your device is working on.
 :::
 
 3. Connect RAK7431 to your computer via a micro-USB cable. Check what COM port is the device connected to.
 
-- Under Windows you should see it like this: 
+- Under Windows you should see it like this:
 
 <rk-img
 src="/assets/images/wisnode/rak7431/firmware-upgrade-guide/2.com-port-check.png"

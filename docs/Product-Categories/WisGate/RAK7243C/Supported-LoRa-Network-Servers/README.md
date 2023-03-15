@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains a comprehensive guide in setting up your RAK7243C with TTN and ChirpStack.
-rak_img: /assets/images/wisgate/rak7243c/quickstart/1.product-overview/1.index/RAK7243C_home.png
+rak_img: /assets/images/wisgate/rak7243c/quickstart/1.product-overview/1.index/RAK7243C.png
 tags:
   - AWS
   - wisgate
@@ -109,7 +109,7 @@ There is a built-in ChirpStack in every RAK Developer gateway if you use the lat
 - **Optional** - If ever you have disabled the **AP Mode** and connected it to your own Wi-Fi network **(Client Mode)**, you can search for your gateway’s IP address via [Advanced IP Scanner](https://www.advanced-ip-scanner.com/).
 
 - There is a **Web-based UI** that comes with the ChirpStack instance. Open a browser and enter the following credentials:
-  
+
     - **Browser Address**: `<Gateway IP address>:8080` (Example: `http://192.168.0.100:8080` )
     - **Username**: admin
     - **Password**: admin
@@ -153,7 +153,7 @@ Remember to run the `sudo gateway-config` command in the CLI and point the gatew
 
 
 - Assuming you have set it up correctly, log in to your ChirpStack to register your gateway by opening the ChirpStack's web page in a browser by entering:
-  
+
     - **Browser Address**: `<IP Address of ChirpStack>:8080`
     - **Username**: admin
     - **Password**: admin

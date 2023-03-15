@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK4260 Breakout Board to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak4260-breakout-board/quickstart/main/RAK4260_Breakout_home.png
+rak_img: /assets/images/wisduo/rak4260-breakout-board/quickstart/main/RAK4260-Breakout.png
 tags:
   - datasheet
   - wisduo

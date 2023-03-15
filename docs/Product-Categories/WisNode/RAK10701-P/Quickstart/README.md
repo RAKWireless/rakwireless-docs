@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK10701-P Field Tester Pro for LoRaWAN. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
-rak_img: /assets/images/wisnode/rak10701/overview/RAK10701-p-buy.png
+rak_img: /assets/images/wisnode/rak10701/overview/RAK10701-P.png
 prev: ../Overview/
 next: ../Datasheet/
 tags:

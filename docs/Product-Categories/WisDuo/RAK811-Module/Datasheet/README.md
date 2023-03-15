@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK811 Module to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak811-module/overview/RAK811_Module_home.png
+rak_img: /assets/images/wisduo/rak811-module/overview/RAK811-Module.png
 prev: ../Low-Level-Development/
 tags:
   - datasheet
@@ -260,7 +260,7 @@ High radio frequency hardware supports the regions of EU868, US915, AU915, KR920
 
 ##### Schematic Diagram
 
-RAK811 supports two UARTs: UART1 (pin6-TX1, pin7-RX1) and UART3 (pin25-TX3, pin26-RX3). UART1 is used for upgrading firmware, so it is recommended that UART3 be used when connecting with external MCU. 
+RAK811 supports two UARTs: UART1 (pin6-TX1, pin7-RX1) and UART3 (pin25-TX3, pin26-RX3). UART1 is used for upgrading firmware, so it is recommended that UART3 be used when connecting with external MCU.
 
 ###### Low Radio Frequency
 

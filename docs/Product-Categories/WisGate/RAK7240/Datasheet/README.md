@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK7240 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisgate/rak7240/quickstart/RAK7240_home.png
+rak_img: /assets/images/wisgate/rak7240/quickstart/RAK7240.png
 tags:
   - datasheet
   - wisgate
@@ -44,7 +44,7 @@ Thus, the **RAK7240 WisGate Edge Prime**, is suited for any use case scenario, b
 
 #### Software
 
-- Built-in LoRa Server 
+- Built-in LoRa Server
 - OpenVPN
 - Software and UI sit on top of **OpenWRT**
 - LoRaWAN 1.0.3
@@ -56,7 +56,7 @@ Thus, the **RAK7240 WisGate Edge Prime**, is suited for any use case scenario, b
 
 ### Overview
 
-The overview presents the RAK7240 circuit board and its block diagram that shows how the module's components work. 
+The overview presents the RAK7240 circuit board and its block diagram that shows how the module's components work.
 
 
 #### Circuit Board (Board Overview)
@@ -86,7 +86,7 @@ The hardware interfaces of **RAK7240 WisGate Edge Prime** include five (5) anten
 <rk-img
   src="/assets/images/wisgate/rak7240/datasheet/4.hardware-interfaces.jpg"
   width="60%"
-  caption="RAK7240 WisGate Edge Prime Hardware Interfaces" 
+  caption="RAK7240 WisGate Edge Prime Hardware Interfaces"
 />
 
 ##### LED Indicators

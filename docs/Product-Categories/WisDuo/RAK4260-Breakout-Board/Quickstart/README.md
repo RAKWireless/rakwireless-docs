@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK4260 Breakout Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
-rak_img: /assets/images/wisduo/rak4260-breakout-board/quickstart/main/RAK4260_Breakout_home.png
+rak_img: /assets/images/wisduo/rak4260-breakout-board/quickstart/main/RAK4260-Breakout.png
 prev: ../Overview/
 next: ../Datasheet/
 tags:

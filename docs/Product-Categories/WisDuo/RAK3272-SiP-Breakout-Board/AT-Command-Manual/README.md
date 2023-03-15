@@ -1,19 +1,19 @@
 ---
-rak_desc: Contains instructions and tutorials in installing and deploying your RAK3272-SiP Breakout Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Breakout Board. 
+rak_desc: Contains instructions and tutorials in installing and deploying your RAK3272-SiP Breakout Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Breakout Board.
 prev: ../Quickstart/
 next: ../Datasheet/
 tags:
     - wisduo
     - AT Command Manual
     - RAK3272-SiP Breakout Board
-rak_img: /assets/images/wisduo/rak3272-sip-breakout-board/overview/RAK3272-SiP_Breakout_home.png
+rak_img: /assets/images/wisduo/rak3272-sip-breakout-board/overview/RAK3272-SiP-Breakout.png
 ---
 
 # RAK3272-SiP Breakout Board AT Command Manual
 
 ## Introduction
 
-RAK3272-SiP Breakout Board is based on [STM32WLE5x](https://www.st.com/en/microcontrollers-microprocessors/stm32wlex.html) single-core chip and it is designed to simplify LoRaWAN and LoRa point-to-point (P2P) communication. To integrate LoRa technology into your projects, the RAK3272-SiP firmware is implemented with an easy-to-use UART communication interface, based on AT commands. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can also use any microcontroller with a UART interface to control the RAK3272-SiP  board. 
+RAK3272-SiP Breakout Board is based on [STM32WLE5x](https://www.st.com/en/microcontrollers-microprocessors/stm32wlex.html) single-core chip and it is designed to simplify LoRaWAN and LoRa point-to-point (P2P) communication. To integrate LoRa technology into your projects, the RAK3272-SiP firmware is implemented with an easy-to-use UART communication interface, based on AT commands. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can also use any microcontroller with a UART interface to control the RAK3272-SiP  board.
 
 The UART serial communication is exposed on the **UART2**, through **Pin 7 (UART2 TX)** and **Pin 8 (UART2 RX)** of J3 header. The default parameters of the UART2 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK3272-SiP Breakout Board Datasheet](/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/Datasheet/).
 

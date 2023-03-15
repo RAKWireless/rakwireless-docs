@@ -7,7 +7,7 @@ tags:
     - wisnode
     - SensorHub
 rak_desc: In this guide, the process of assembling and mounting your RAK2560 will be shown step by step. Strict adherence to the steps guarantees a secured and durable sensor hub.
-rak_img: /assets/images/wisnode/rak2560/hub-datasheet/body-dimensions.png
+rak_img: /assets/images/wisnode/rak2560/overview/RAK2560.jpg
 ---
 
 # RAK2560 WisNode Sensor Hub Installation Guide
@@ -38,7 +38,7 @@ Do not place the device and mounting kit on pedestrian walkways to avoid acciden
   caption="Inserting the SIM card"
 />
 
-3. Insert the batteries by pressing the negative spring with the battery and fit the positive end in its place. 
+3. Insert the batteries by pressing the negative spring with the battery and fit the positive end in its place.
 
 <rk-img
   src="/assets/images/wisnode/rak2560/installation/fitting-the-batteries.png"
@@ -50,7 +50,7 @@ Do not place the device and mounting kit on pedestrian walkways to avoid acciden
 The battery should be 18505 in size.
 :::
 
-4. Put the back cover back and screw it in place. 
+4. Put the back cover back and screw it in place.
 
 <rk-img
   src="/assets/images/wisnode/rak2560/installation/closing-the-back-cover.png"
@@ -218,7 +218,7 @@ RAK2560 Sensor Hub can support third-party sensors through the Probe IO.
   caption="Screw the cable gland"
 />
 
-4.  Put the back cover back and screw it in place. 
+4.  Put the back cover back and screw it in place.
 
 <rk-img
   src="/assets/images/wisnode/rak2560/installation/closing-the-probe-io.png"

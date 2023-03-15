@@ -1,6 +1,6 @@
 ---
-rak_desc: For an easier experience with your LoRaWAN Module, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the RAK11300 WisDuo Module. 
-rak_img: /assets/images/wisduo/rak11300-module/overview/RAK11300_Module_home.png
+rak_desc: For an easier experience with your LoRaWAN Module, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the RAK11300 WisDuo Module.
+rak_img: /assets/images/wisduo/rak11300-module/overview/RAK11300-Module.png
 prev: ../Quickstart/
 next: ../Datasheet/
 tags:
@@ -95,7 +95,7 @@ The possible status codes are:
 | `+CME ERROR:6`         | The parameter is too long.                   |
 | `+CME ERROR:8`         | Value out of range.                          |
 
-More details on each command description and examples are given in the remainder of this section. 
+More details on each command description and examples are given in the remainder of this section.
 
 :::tip 📝 NOTE:
 
@@ -114,7 +114,7 @@ Returns a list of all available commands with a short description
 | Command | Input Parameter | Return Value       | Return Code |
 | ------- | --------------- | ------------------ | ----------- |
 | `AT?`   | -               | *List of commands* | `OK`        |
-    
+
 
 ```
 AT?
@@ -154,7 +154,7 @@ AT+STATUS   Show LoRaWAN status
 OK
 
 ```
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -167,7 +167,7 @@ This command is used to restore all parameters to the initial default values of 
 | `ATR?`  | -               | -            | `OK`        |
 | `ATR`   | -               | -            | `OK`        |
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -182,7 +182,7 @@ This command is used to trigger an MCU reset.
 | `ATZ?`  | -               | `ATZ: Trig a MCU reset`  | `OK`        |
 | `ATZ`   | -               | *No return. MCU resets.* | `OK`        |
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -203,7 +203,7 @@ This command is used to access and configure the APPEUI.
 ```
 AT+APPEUI?
 
-+APPEUI: Get or set the application EUI 
++APPEUI: Get or set the application EUI
 OK
 
 AT+APPEUI=?
@@ -220,7 +220,7 @@ AT+APPEUI=70b3d57ed00201eh
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -241,7 +241,7 @@ This command is used to access and configure the APPKEY.
 ```
 AT+APPKEY?
 
-AT+APPKEY: Get or set the application key 
+AT+APPKEY: Get or set the application key
 OK
 
 AT+APPKEY=?
@@ -258,7 +258,7 @@ AT+APPKEY=2b84e0b09b68e5cb42176fe753dcee7x
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -279,7 +279,7 @@ This command is used to access and configure the device EUI or DEVEUI.
 ```
 AT+DEVEUI?
 
-+DEVEUI: Get or set the device EUI 
++DEVEUI: Get or set the device EUI
 OK
 
 AT+DEVEUI=?
@@ -296,7 +296,7 @@ AT+DEVEUI=ac1f09fffe03efdx
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -317,7 +317,7 @@ This command is used to access and configure the application session key or APPS
 ```
 AT+APPSKEY?
 
-AT+APPSKEY: Get or set the application session key 
+AT+APPSKEY: Get or set the application session key
 OK
 
 AT+APPSKEY=?
@@ -334,7 +334,7 @@ AT+APPSKEY=3f6a66459d5edca63cbc4619cd61a11x
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -355,7 +355,7 @@ This command is used to access and configure the network session keys or NWKSKEY
 ```
 AT+NWKSKEY?
 
-AT+NWKSKEY: Get or Set the network session key 
+AT+NWKSKEY: Get or Set the network session key
 OK
 
 AT+NWKSKEY=?
@@ -372,7 +372,7 @@ AT+NWKSKEY=323d155a000df335307a16da0c9df53f0
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -393,7 +393,7 @@ This command is used to access and configure the device address or DEVADDR.
 ```
 AT+DEVADDR?
 
-AT+DEVADDR: Get or set the device address 
+AT+DEVADDR: Get or set the device address
 OK
 
 AT+DEVADDR=?
@@ -411,7 +411,7 @@ AT+DEVADDR=26021FBX
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -432,7 +432,7 @@ This command is used to access and configure the type of payload of the device.
 ```
 AT+CFM?
 
-AT+CFM: Get or set the confirm mode 
+AT+CFM: Get or set the confirm mode
 OK
 
 AT+CFM=?
@@ -449,7 +449,7 @@ AT+CFM=3
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -472,14 +472,14 @@ This command is used to join a LoRaWAN network.
 ::: tip 📝 NOTE
 - This is an asynchronous command. `OK` means that the device is joining. The completion of the JOIN can be verified with `AT+NJS=?` command.
 - Param3 is not supported yet and is fixed to 30 seconds always.
-::: 
+:::
 
 **Examples**:
 
 ```
 AT+JOIN?
 
-AT+JOIN: Join network 
+AT+JOIN: Join network
 OK
 
 AT+JOIN=?
@@ -498,7 +498,7 @@ AT+JOIN=3:1:8:10
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -518,7 +518,7 @@ This command is used to check the status of the devices if it is connected to a 
 ```
 AT+NJS?
 
-AT+NJS: Get the join status 
+AT+NJS: Get the join status
 OK
 
 AT+NJS=?
@@ -527,7 +527,7 @@ AT+NJS:1
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -548,7 +548,7 @@ This command is used to access and configure the activation method of the device
 ```
 AT+NJM?
 
-AT+NJM: Get or set the network join mode 
+AT+NJM: Get or set the network join mode
 OK
 
 AT+NJM=?
@@ -565,7 +565,7 @@ AT+NJM=2
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -586,7 +586,7 @@ This command is used to set the period in seconds between automatic packet trans
 ```
 AT+SENDFREQ?
 
-AT+SENDFREQ: Get or Set the automatic send time 
+AT+SENDFREQ: Get or Set the automatic send time
 OK
 
 AT+SENDFREQ=?
@@ -599,7 +599,7 @@ AT+SENDFREQ=60
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -663,7 +663,7 @@ RX:2:6:-46:11:48656C6C6F0A
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -684,7 +684,7 @@ This command is used to access and configure the adaptive data rate of the modul
 ```
 AT+ADR?
 
-+ADR: Get or set the adaptive data rate setting 
++ADR: Get or set the adaptive data rate setting
 OK
 
 AT+ADR=?
@@ -701,7 +701,7 @@ AT+ADR=3
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -724,7 +724,7 @@ _**This FW of the device supports the LoRaWAN V1.0.2 stack**_.
 ```
 AT+CLASS?
 
-+CLASS: Get or set the device class 
++CLASS: Get or set the device class
 OK
 
 AT+CLASS=?
@@ -741,7 +741,7 @@ AT+CLASS=F
 +CME ERROR:5
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -764,7 +764,7 @@ Check [Appendix I](#appendix-i-data-rate-by-region) for the input parameter depe
 ```
 AT+DR?
 
-AT+DR: Get or Set the Tx DataRate=[0..7] 
+AT+DR: Get or Set the Tx DataRate=[0..7]
 OK
 
 AT+DR=?
@@ -777,7 +777,7 @@ AT+DR=3
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -802,7 +802,7 @@ For example, at EU868, a value of 2 represents **MaxEIRP - 4&nbsp;dB** where Max
 ```
 AT+TXP?
 
-AT+TXP: Get or set the transmit power 
+AT+TXP: Get or set the transmit power
 OK
 
 AT+TXP=?
@@ -815,7 +815,7 @@ AT+TXP=0
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -848,7 +848,7 @@ This command is used to access and configure the regional frequency band.
 ```
 AT+BAND?
 
-AT+BAND: Get and Set number corresponding to active regions 
+AT+BAND: Get and Set number corresponding to active regions
 OK
 
 AT+BAND=?
@@ -865,7 +865,7 @@ AT+BAND=22
 +CME ERROR:8
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -921,7 +921,7 @@ AT+MASK=13
 +CME ERROR:8
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -956,7 +956,7 @@ AT+BAT=?
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -973,7 +973,7 @@ This command is used to get the RSSI value of the last packet received.
 
 :::tip 📝 NOTE:
 
-The reply will be **'0'** if there is no last packet received yet. 
+The reply will be **'0'** if there is no last packet received yet.
 
 :::
 
@@ -982,7 +982,7 @@ The reply will be **'0'** if there is no last packet received yet.
 ```
 AT+RSSI?
 
-AT+RSSI: Last RX packet RSSI 
+AT+RSSI: Last RX packet RSSI
 OK
 
 AT+RSSI=?
@@ -991,7 +991,7 @@ AT+RSSI:-41
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1008,7 +1008,7 @@ This command is used to get the SNR value of the last packet received.
 
 :::tip 📝 NOTE:
 
-The reply will be **'0'** if there is no last packet received yet. 
+The reply will be **'0'** if there is no last packet received yet.
 
 :::
 
@@ -1017,7 +1017,7 @@ The reply will be **'0'** if there is no last packet received yet.
 ```
 AT+SNR?
 
-AT+SNR: Last RX packet SNR 
+AT+SNR: Last RX packet SNR
 OK
 
 AT+SNR=?
@@ -1026,7 +1026,7 @@ AT+SNR:11
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1046,7 +1046,7 @@ This command is used to get the firmware version installed on the device.
 ```
 AT+VER?
 
-AT+VER: Get SW version 
+AT+VER: Get SW version
 OK
 
 AT+VER=?
@@ -1055,7 +1055,7 @@ AT+VER:1.0.0.0 May 27 2021 17:11:12
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1103,11 +1103,11 @@ LoRaWAN status:
    Network joined
    Mode User
 
-+STATUS: 
++STATUS:
 OK
 ```
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1199,7 +1199,7 @@ OK
 | 7         | FSK: 50&nbsp;kbps         | 50000                                |
 | 8 ~ 15    | RFU                       | RFU                                  |
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1207,7 +1207,7 @@ OK
 
 <b> EU868 </b>
 
-By default, MaxEIRP is considered to be +16&nbsp;dBm. 
+By default, MaxEIRP is considered to be +16&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1239,7 +1239,7 @@ By default, MaxEIRP is considered to be +16&nbsp;dBm.
 
 <b> AU915 </b>
 
-By default, MaxEIRP is considered to be +30&nbsp;dBm. 
+By default, MaxEIRP is considered to be +30&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1252,7 +1252,7 @@ By default, MaxEIRP is considered to be +30&nbsp;dBm.
 
 <b> KR920 </b>
 
-By default, MaxEIRP is considered to be +14&nbsp;dBm. 
+By default, MaxEIRP is considered to be +14&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1312,7 +1312,7 @@ By default, MaxEIRP is considered to be 30&nbsp;dBm.
 
 <b> RU864 </b>
 
-By default, MaxEIRP is considered to be +16&nbsp;dBm. 
+By default, MaxEIRP is considered to be +16&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1360,7 +1360,7 @@ By default, MAxEIRP is considered to be +12.15&nbsp;dBm.
 | 5       | MaxEIRP - 10&nbsp;dB |
 | 6 ~ 15  | RFU                  |
 
-[Back](#content)    
+[Back](#content)
 
 ----
 
@@ -1539,7 +1539,7 @@ M in the following list is the length with MAC header, N is the maximum usable p
 | 6         | 250         | 242         |
 | 7         | 250         | 242         |
 | 8 ~ 15    | Not Defined | Not Defined |
- 
+
 <br>
 
 <b> RU864 </b>
@@ -1586,5 +1586,5 @@ M in the following list is the length with MAC header, N is the maximum usable p
 | 7         | 250         | 242         |
 | 8 ~ 15    | Not Defined | Not Defined |
 
-[Back](#content)    
+[Back](#content)
 

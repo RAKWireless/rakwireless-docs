@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisduo/rak4200-evaluation-board/overview/RAK4200_Evaluation_home.png
+rak_img: /assets/images/wisduo/rak4200-evaluation-board/overview/RAK4200-Evaluation.png
 rak_desc: The RAK4200 evaluation board makes it simple to evaluate the RAK4200 stamp module. The base board allows to test WisBlock Sensor and WisBlock IO modules.
 rak_grp: [wisduo, evb]
 prev: ../../

@@ -1,6 +1,6 @@
 ---
 static_root: /assets/images/wisgate/rak7244c/quickstart/overview
-rak_img: /assets/images/wisgate/rak7244c/quickstart/overview/RAK7244C_home.png
+rak_img: /assets/images/wisgate/rak7244c/quickstart/overview/RAK7244C.png
 rak_desc: RAK7244C is built with the RAK2245 Pi Hat stacked with the newest Raspberry Pi 4, along with the GPS module and Heat Sink, increasing its performance and thermal dissipation. The backhaul capabilities are enhanced with the additional RAK2013 Cellular Pi HAT for cellular connectivity. This allows the gateway to use its LTE modem to forward data to the Cloud.
 rak_grp: [wisgate, developer]
 prev: ../../
@@ -34,9 +34,9 @@ Pilot Gateway Pro is ideal for prototyping, proof-of-concept demonstration, or e
 
 - Preassembled, fully functioning gateway
 - **SX1301 baseband processor**, emulates 49 x LoRa demodulators 10 programmable parallel demodulation paths, supports 8 uplinks channels and 1 downlink channel
-- Support optional cellular module (Quectel BG96 or EG91 or EG95) for NB-IOT/CAT-M/CAT1 LTE/CAT4 LTE 
+- Support optional cellular module (Quectel BG96 or EG91 or EG95) for NB-IOT/CAT-M/CAT1 LTE/CAT4 LTE
 - Built-in **Ublox MAX-7Q GPS Module**
-- Built-in heat sink for thermal heat dissipation management 
+- Built-in heat sink for thermal heat dissipation management
 - Supports 5&nbsp;V / 2.5&nbsp;A power supply
 - TX power up to 27&nbsp;dBm, RX sensitivity down to -139&nbsp;dBm@SF12, BW 125&nbsp;kHz
 - Frequency band support: EU433, CN470, RU864, IN865, EU868, US915, AU915, KR920, AS923

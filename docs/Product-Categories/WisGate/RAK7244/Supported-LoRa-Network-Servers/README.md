@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains a comprehensive guide in setting up your RAK7244 with TTN and ChirpStack.
-rak_img: /assets/images/wisgate/rak7244/quickstart/1.main/RAK7244_home.png
+rak_img: /assets/images/wisgate/rak7244/quickstart/1.main/RAK7244.png
 tags:
   - AWS
   - wisgate
@@ -75,7 +75,7 @@ sudo gateway-config
 
 :::tip 📝 NOTE
 - This tutorial is based on using the EU868 frequency band, so the server address will be: **eu1.cloud.thethings.network**.
-- The **Europe 863-870&nbsp;MHz (SF12 for RX2)** is used. 
+- The **Europe 863-870&nbsp;MHz (SF12 for RX2)** is used.
 :::
 
 - **Frequency plan** - The frequency plan used by the gateway.
@@ -108,7 +108,7 @@ There is a built-in ChirpStack in every RAK Developer gateway if you use the lat
 - **Optional** - If ever you disabled the **AP Mode** and you have connected it to your own Wi-Fi network **(Client Mode)**, you can search for your gateway’s IP Address via [Advanced IP Scanner](https://www.advanced-ip-scanner.com/).
 
 - There is a **Web-based UI** that comes with the ChirpStack instance. Open a browser and enter the following credentials:
-  
+
     - **Browser Address**: `<Gateway IP address>:8080` (Example: `http://192.168.0.100:8080` )
     - **Username**: admin
     - **Password**: admin
@@ -152,7 +152,7 @@ Remember to run the `sudo gateway-config` command in the CLI and point the gatew
 
 
 - Assuming you have set it up correctly, log into your ChirpStack to register your gateway by opening the ChirpStack's web page in a browser by entering:
-  
+
     - **Browser Address**: `<IP Address of ChirpStack>:8080`
     - **Username**: admin
     - **Password**: admin

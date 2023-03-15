@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK4600 Module to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak4600-module/overview/RAK4600_Module_home.png
+rak_img: /assets/images/wisduo/rak4600-module/overview/RAK4600-Module.png
 tags:
   - datasheet
   - wisduo
@@ -42,7 +42,7 @@ The module complies with LoRaWAN 1.0.2 specification. It supports LoRa Point-to-
 
 ### Overview
 
-The overview section covers the RAK4600 WisDuo LPWAN Module board overview where the top view is presented. It also includes the block diagram of the module showing its external interfaces. 
+The overview section covers the RAK4600 WisDuo LPWAN Module board overview where the top view is presented. It also includes the block diagram of the module showing its external interfaces.
 
 #### Board Overview
 
@@ -156,7 +156,7 @@ The hardware specifications are categorized into five parts. It discusses the in
 
 :::tip 📝 Note
 <b>Logic Level</b>
- - H level (1.8 - 5.0&nbsp;V)<br> 
+ - H level (1.8 - 5.0&nbsp;V)<br>
  - L level (0&nbsp;V)
 :::
 

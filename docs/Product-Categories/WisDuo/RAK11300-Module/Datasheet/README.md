@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK11300 Module to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak11300-module/overview/RAK11300_Module_home.png
+rak_img: /assets/images/wisduo/rak11300-module/overview/RAK11300-Module.png
 prev: ../AT-Command-Manual/
 tags:
   - datasheet
@@ -32,7 +32,7 @@ RAK11300 WisDuo LPWAN Module is based on the Raspberry Pi RP2040 chip and SX1262
 
 ## Specifications
 
-This section covers the hardware and software specifications of RAK11300. It also includes the block diagram of the module showing its interfaces. 
+This section covers the hardware and software specifications of RAK11300. It also includes the block diagram of the module showing its interfaces.
 
 ### Overview
 
@@ -46,7 +46,7 @@ This section covers the hardware and software specifications of RAK11300. It als
 
 ### Hardware
 
-The hardware specification is categorized into six parts. It shows the interfaces of the module and discusses the pinouts and their corresponding functions and diagrams. It also covers the RF, electrical, mechanical, and environmental parameters of the RAK11300 WisDuo LPWAN Module. 
+The hardware specification is categorized into six parts. It shows the interfaces of the module and discusses the pinouts and their corresponding functions and diagrams. It also covers the RF, electrical, mechanical, and environmental parameters of the RAK11300 WisDuo LPWAN Module.
 
 #### Interfaces
 
@@ -95,14 +95,14 @@ The table below shows the pin definition and description of RAK11300:
 | I2C2_SDA | 24      | IO   | I2C serial data  |
 | I2C2_SCL | 25      | DO   | I2C serial clock |
 
-##### USB Interface 
+##### USB Interface
 
 | Pin Name | Pin No. | Type | Description              |
 | -------- | ------- | ---- | ------------------------ |
 | USB_DM   | 2       | IO   | USB differential data(-) |
 | USB_DP   | 3       | IO   | USB differential data(+) |
 
-##### UART Interface 
+##### UART Interface
 
 | Pin Name | Pin No. | Type | Description    |
 | -------- | ------- | ---- | -------------- |

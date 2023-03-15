@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK4260 Evaluation Board to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak4260-evaluation-board/overview/RAK4260_Evaluation_home.png
+rak_img: /assets/images/wisduo/rak4260-evaluation-board/overview/RAK4260-Evaluation.png
 tags:
   - datasheet
   - wisduo
@@ -10,7 +10,7 @@ next: false
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK4260H/Certification-Report/RAK4260H_CE_Certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK4260H/Certification-Report/RAK4260H_FCC_Certification.zip]
-  
+
 ---
 
 # RAK4260 Evaluation Board Datasheet
@@ -38,7 +38,7 @@ The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P
 
 ## Specifications
 
-### Overview  
+### Overview
 
 The RAK4260 Evaluation Board front view (top) and back view are shown in **Figure 1**.
 
@@ -49,21 +49,21 @@ The RAK4260 Evaluation Board front view (top) and back view are shown in **Figur
 />
 
 
-  
+
 ### Hardware
 
 The hardware specification is categorized into five parts. It covers the interfaces, pin definitions and its corresponding functions. Also, it includes the RF requirements, electrical and mechanical parameters of the RAK4260 Evaluation Board.
 
-#### Interfaces  
-  
+#### Interfaces
+
 **Figure 2** shows an overview of interfaces found on the RAK4260 Evaluation Board.
-  
+
 <rk-img
   src="/assets/images/wisduo/rak4260-evaluation-board/datasheet/rak4260-interfaces.png"
   width="70%"
   caption="RAK4260 Evaluation Board Interface Overview"
 />
-  
+
 ##### SWD Programming Interface
 
 When programming via a DAPLink tool, it is required to have all of the following four (4) pins connected to your DAPLink tool:
@@ -75,14 +75,14 @@ When programming via a DAPLink tool, it is required to have all of the following
 
 ::: tip 📝 NOTE
 For the aforementioned reason, it is best you leave these exposed for programming purposes and not to remap them as GPIOs.
-:::    
+:::
 
- 
+
 ### Flash the Firmware Using DAPLink and RAKDAP1
 
 Refer to section [Flash the Firmware Using DAPLink and RAKDAP1](../Low-Level-Development/#flash-the-firmware-using-daplink-and-rakdap1).
 
-##### RF Interface  
+##### RF Interface
 
 The RF pin of the RAK4260 Evaluation Board is connected to an external LoRa Antenna through a standard iPEX antenna connector.
 
@@ -90,7 +90,7 @@ The RF pin of the RAK4260 Evaluation Board is connected to an external LoRa Ante
 Before powering the RAK4260 Evaluation Board, you should install the LoRa antenna first. Not doing so might damage the board.
 :::
 
-##### USB Interface 
+##### USB Interface
 
 The Micro-B USB connector is compliant with the USB2.0 specification. The pin definition of the USB interface is shown below:
 
@@ -109,7 +109,7 @@ The Micro-B USB connector is compliant with the USB2.0 specification. The pin de
   caption="RAK4260 Micro-B USB connector"
 />
 
-The USB data bus is connected to a **USB-SERIAL CH-340** chip. The **CH-340** is basically a USB bus convert chip that allows the USB to be converted to serial interface and serial interface pins converted to USB. 
+The USB data bus is connected to a **USB-SERIAL CH-340** chip. The **CH-340** is basically a USB bus convert chip that allows the USB to be converted to serial interface and serial interface pins converted to USB.
 
 
 #### Pin Definition
@@ -429,12 +429,12 @@ H  = High level<br>
 L  = Low level <br>
 :::
 
-#### RF Requirements  
-  
-##### Operating Frequencies  
+#### RF Requirements
 
-The RAK4260 Evaluation Board supports the following LoRa bands:  
-  
+##### Operating Frequencies
+
+The RAK4260 Evaluation Board supports the following LoRa bands:
+
 | Region        | Frequency (MHz) |
 | ------------- | --------------- |
 | Europe        | EU868           |
@@ -471,7 +471,7 @@ Exposure to maximum rating conditions may affect device reliability.
 #### Mechanical Characteristics
 
 ##### Board Dimensions
-  
+
 **Figure 6** shows the actual dimensions of the RAK4260 Evaluation Board measured in millimeters (mm). <br><br>
 
 <rk-img

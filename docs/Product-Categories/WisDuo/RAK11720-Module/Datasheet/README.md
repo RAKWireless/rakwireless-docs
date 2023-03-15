@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK11720 WisDuo LPWAN Module to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak11720-module/overview/RAK11720_Module_buy.png
+rak_img: /assets/images/wisduo/rak11720-module/overview/RAK11720-Module.png
 prev: ../AT-Command-Manual/
 next: false
 tags:

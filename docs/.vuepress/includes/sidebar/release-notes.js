@@ -11,10 +11,23 @@ module.exports = {
       collapsible: false,
       children : [
         {
+          title : '2023',
+          path : '/Release-Notes/RUI/2023/',
+          collapsible: true,
+          collapsed: true,
+          children : [
+            {
+              title : 'March 2',
+              path : '/Release-Notes/RUI/2023/March-2',
+              collapsable: false
+            },
+          ]
+        },
+        {
           title : '2022',
           path : '/Release-Notes/RUI/2022/',
           collapsible: true,
-          collpased: true,
+          collapsed: true,
           children : [
             {
               title : 'August 10',
@@ -80,7 +93,7 @@ module.exports = {
         {
           title : '2022',
           collapsible: true,
-          collpased: true,
+          collapsed: true,
           children : [
             {
               title : 'November 12',
@@ -107,7 +120,7 @@ module.exports = {
         {
           title : '2021',
           collapsible: true,
-          collpased: true,
+          collapsed: true,
           children : [
             {
               title : 'October 18',
@@ -133,7 +146,7 @@ module.exports = {
         {
           title : '2022',
           collapsible: true,
-          collpased: true,
+          collapsed: true,
           children : [
             {
               title : 'December 19',

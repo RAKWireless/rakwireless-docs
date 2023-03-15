@@ -1,10 +1,10 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK Hotspot . Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
-rak_img: /assets/images/wisgate/rak-hotspot/overview/RAK-Hotspot-home.png
+rak_img: /assets/images/wisgate/rak-hotspot/overview/RAK-Hotspot.png
 next: ../Backup/
 prev: ../Overview/
 tags:
-  - RAK Hotspot 
+  - RAK Hotspot
   - quickstart
   - wisgate
 ---
@@ -32,7 +32,7 @@ The SIM card slot of the cellular versions is not hot-swappable. Make sure the g
 />
 
 ## Product Configuration
-For Antenna Mounting Scenarios and proper connectivity chain, refer to this [guide](../Troubleshooting/#proper-miner-connection-scenarios-with-the-rak-outdoor-enclosure-antennas). 
+For Antenna Mounting Scenarios and proper connectivity chain, refer to this [guide](../Troubleshooting/#proper-miner-connection-scenarios-with-the-rak-outdoor-enclosure-antennas).
 
 ### Download the Helium App
 
@@ -59,7 +59,7 @@ The application is available for both Android and iOS. You can manually search i
 Before powering on, the best advice to follow the guidelines below to avoid damaging the RAK Hotspot. Familiarize the interfaces of the product as shown in the  [Interfaces](/Product-Categories/WisGate/RAK-Hotspot/Datasheet/#interfaces) section of the RAK Hotspot Datasheet.
 :::
 
-1. Attach the LoRa Antenna.  
+1. Attach the LoRa Antenna.
 
 2. When you are ready to setup your RAK Hotspot, plug in and connect the included power supply to the USB-C port on the RAK Hotspot. After 30 seconds, the device should be ready to configure via the app.
 
@@ -69,7 +69,7 @@ From powering up the device, you only have 5 minutes to complete the setup. Afte
 
 #### Account Security
 
-During the setup of your account, you will be asked to input 12 words that must be used in order to recover or move accounts between phones. 
+During the setup of your account, you will be asked to input 12 words that must be used in order to recover or move accounts between phones.
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot/quickstart/fill-up.png"
@@ -79,7 +79,7 @@ During the setup of your account, you will be asked to input 12 words that must 
 
 ### Backup your microSD Card
 
-Backing up your microSD Card is very important as this contains your RAK Hotspot identity. If the card is lost or damaged, you may lose access to the Helium network, and require payment of a new add gateway fee. **Keep this backup card in a safe place**. 
+Backing up your microSD Card is very important as this contains your RAK Hotspot identity. If the card is lost or damaged, you may lose access to the Helium network, and require payment of a new add gateway fee. **Keep this backup card in a safe place**.
 
 You should only backup after adding the hotspot to your Helium account, and ideally once it has fully synced.
 

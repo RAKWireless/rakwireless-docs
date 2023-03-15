@@ -1,6 +1,6 @@
 ---
 rak_desc: For an easier experience with your LoRaWAN Module, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the RAK4200 Breakout Board.
-rak_img: /assets/images/wisduo/rak4200-breakout-board/quickstart/main/RAK4200_Breakout_home.png
+rak_img: /assets/images/wisduo/rak4200-breakout-board/quickstart/main/RAK4200-Breakout.png
 prev: ../Quickstart/
 next: ../Low-Level-Development/
 tags:
@@ -272,7 +272,7 @@ at+set_config=device:sleep:0\r\n
 OK Wake Up
 ```
 
-:::tip 📝 NOTE: 
+:::tip 📝 NOTE:
 
 During sleep, Pin 5 (RX1) and Pin 1 (RX2) are automatically configured as wake-up pins and in external interrupt mode with an internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.
 
@@ -319,7 +319,7 @@ This command is used to configure the baud rate for a UART port.
     </tr>
     <tr>
       <td> baud_rate </td>
-      <td> UART Baud rate：1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200 
+      <td> UART Baud rate：1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200
       </td>
     </tr>
 </table>
@@ -340,7 +340,7 @@ This command is used to set the UART operation from AT **configuration mode** to
 
 During **data transmission mode**, all standard AT Commands will not work and the data that you sent to UART will go directly to the network server as ASCII payload with `\r\n`. If you input `AZ`, the network server will receive an uplink hex value of `415A0D0A`. This means **A**=`0x41`, **Z**=`0x5A`, **\r**=`0x0D` and **\n**=`0x0A`.
 
-:::tip 📝 NOTE: 
+:::tip 📝 NOTE:
 
 To switch back from data transmission mode to configuration mode, use `+++` (`+++` without `\ r\ n`).
 
@@ -583,7 +583,7 @@ at+recv=0,-105,-12,0
 
 ::: tip 📝 NOTE
 
-* When sending a confirmed message, you will receive an ACK response, i.e. `at+recv=...`. 
+* When sending a confirmed message, you will receive an ACK response, i.e. `at+recv=...`.
 The `0, -105, -12,0` stands for:
   * `0`: For the LoRa port;
   * `-105`: For the RSSI;
@@ -592,7 +592,7 @@ The `0, -105, -12,0` stands for:
 
 
 * When sending an unconfirmed message, sometimes the gateway will send MAC commands to nodes, and the node will also receive `at+recv=...`.
-  
+
 :::
 
 <br>
@@ -744,7 +744,7 @@ This command is used to set the Application EUI parameter for the LoRaWAN OTAA m
 </table>
 
 :::tip 📝 NOTE:
-All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error. 
+All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error.
 :::
 
 **Example**：
@@ -1093,7 +1093,7 @@ This command is used to set the RF transmission power level of the LoRa transcei
 <table>
     <tr>
       <td>tx_power </td>
-      <td> Refer to <a href="/Product-Categories/WisDuo/RAK4200-Breakout-Board/AT-Command-Manual/#appendix-ii：tx-power-by-region" >Appendix II</a> for possible values of tx_power. The table of Appendix II is based on LoRaWAN 1.0.2 specification. LoRa transmit power level varies depending on frequency band.  <br> <br>If the resulting TX power is higher than the capability of LoRa Radio, the output power will be based on the max TX power of the LoRa Radio in the module. For RAK4200 module, the max TX power is 20dBm. Take note of this when using regional bands with MaxEIRP higher than 20dBm like US915, AU915 and IN865 whose MaxEIRP is 30dBm.<br> <br> The default setting is 0. 
+      <td> Refer to <a href="/Product-Categories/WisDuo/RAK4200-Breakout-Board/AT-Command-Manual/#appendix-ii：tx-power-by-region" >Appendix II</a> for possible values of tx_power. The table of Appendix II is based on LoRaWAN 1.0.2 specification. LoRa transmit power level varies depending on frequency band.  <br> <br>If the resulting TX power is higher than the capability of LoRa Radio, the output power will be based on the max TX power of the LoRa Radio in the module. For RAK4200 module, the max TX power is 20dBm. Take note of this when using regional bands with MaxEIRP higher than 20dBm like US915, AU915 and IN865 whose MaxEIRP is 30dBm.<br> <br> The default setting is 0.
  </td>
     </tr>
 </table>
@@ -1110,7 +1110,7 @@ OK
 
 21. <b>at+set_config=lora:adr:`<status>`</b>
 
-This command is used to turn on/off the ADR feature of the LoRa communication. 
+This command is used to turn on/off the ADR feature of the LoRa communication.
 
 | Operation | Command                           | Response |
 | --------- | --------------------------------- | -------- |
@@ -1510,7 +1510,7 @@ By default, MaxEIRP is considered to be +16&nbsp;dBm.
 <b>US915</b>
 
 By default, MaxEIRP is considered to be +30&nbsp;dBm based on LoRa Alliance specification.
-However, the module's max TX power is only up to 20dBm. 
+However, the module's max TX power is only up to 20dBm.
 
 | TXPower | Configuration (Conducted Power) |
 | ------- | ------------------------------- |
@@ -1526,7 +1526,7 @@ However, the module's max TX power is only up to 20dBm.
 <b>AU915</b>
 
 By default, MaxEIRP is considered to be +30&nbsp;dBm based on LoRa Alliance specification.
-However, the module's max TX power is only up to 20&nbsp;dBm. 
+However, the module's max TX power is only up to 20&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1575,7 +1575,7 @@ By default, Max EIRP is considered to be 16&nbsp;dBm.
 <b>IN865</b>
 
 By default, MaxEIRP is considered to be +30&nbsp;dBm based on LoRa Alliance specification.
-However, the module's max TX power is only up to 20&nbsp;dBm. 
+However, the module's max TX power is only up to 20&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -1842,7 +1842,7 @@ Not all pins of the RAK4200 module are exposed on the RAK4200 Breakout board hea
 :::
 
 1. **About the UART Pin**:
-    
+
     - Pin 5 (RX1) and  Pin 4 (TX1) are reserved for UART1.
     - Pin 1 (RX2) and Pin 2 (TX2) are reserved for UART2.
     - During sleep, Pin 5 (RX1) and Pin 1 (RX2) are automatically configured as wake-up pins and in external interrupt mode with an internal pull-down resistor. Wake-up will be triggered by a rising edge on these RX pins.

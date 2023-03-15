@@ -1,6 +1,6 @@
 ---
-rak_desc: Contains instructions and tutorials for installing and deploying your RAK3244. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module. 
-rak_img: /assets/images/wisduo/bastwan/overview/BastWAN_Home.png
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK3244. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
+rak_img: /assets/images/wisduo/bastwan/overview/BastWAN.png
 prev: ../Overview/
 next: false
 tags:
@@ -70,7 +70,7 @@ The device name used for the setup is "RAK4260" since it is the core of RAK3244 
 
 <b>Sign up and Login</b>
 
-If you don't have an account yet, head on to the [TTN website](https://www.thethingsnetwork.org/) and create one. Once done, log in to your account and go to the Console. 
+If you don't have an account yet, head on to the [TTN website](https://www.thethingsnetwork.org/) and create one. Once done, log in to your account and go to the Console.
 
 <rk-img
   src="/assets/images/wisduo/bastwan/quickstart/4.ttn-home.png"
@@ -150,7 +150,7 @@ The TTN platform can generate these parameters randomly by leaving those fields 
   src="/assets/images/wisduo/bastwan/quickstart/11.device_overview.png"
   width="100%"
   caption="Device Overview"
-/>  
+/>
 
 Now that the Device EUI, Application EUI, and Application Key are defined, you can now proceed with the setup of RAK3244 BastWAN LoRa configurations.
 
@@ -204,10 +204,10 @@ If there is already an existing URL on the textbox, click the button at the righ
 
 ### LoRaWAN Library Installation
 
-RAK3244 BastWAN board uses the Beelan-LoRaWAN library, which supports LoRaWAN Class A and Class C implementations operating in EU-868, AS-923, US-915, and AU-915 bands. You can recognize this library as the `<lorawan.h>` on the sample code.   
+RAK3244 BastWAN board uses the Beelan-LoRaWAN library, which supports LoRaWAN Class A and Class C implementations operating in EU-868, AS-923, US-915, and AU-915 bands. You can recognize this library as the `<lorawan.h>` on the sample code.
 
-In order for the sample code to work, the Beelan-LoRaWAN library must be installed. To do this, navigate to **Tools > Manage Libraries** on Arduino IDE. Then search for **Beelan LoraWAN** and install the latest version of the library. The window indicates if the library is installed, as shown in **Figure 15**.  
-  
+In order for the sample code to work, the Beelan-LoRaWAN library must be installed. To do this, navigate to **Tools > Manage Libraries** on Arduino IDE. Then search for **Beelan LoraWAN** and install the latest version of the library. The window indicates if the library is installed, as shown in **Figure 15**.
+
 <rk-img
   src="/assets/images/wisduo/bastwan/quickstart/library-installed.png"
   width="70%"
@@ -220,7 +220,7 @@ Visit the [Beelan-LoRaWAN official GitHub repository](https://github.com/BeelanM
 
 For a quick test, a sample source code is provided for a LoRaWAN Class A node with OTAA support. Download the source code and open it with Arduino IDE.
 
-- [Example source code for RAK3244 BastWAN](https://github.com/RAKWireless/Evaluation_Boards/tree/master/RAK4260/Arduino/send-class-A-OTAA)  
+- [Example source code for RAK3244 BastWAN](https://github.com/RAKWireless/Evaluation_Boards/tree/master/RAK4260/Arduino/send-class-A-OTAA)
 
 The following sections will demonstrate how to modify LoRaWAN parameters to establish a connection with The Things Network (TTN).
 
@@ -228,8 +228,8 @@ The following sections will demonstrate how to modify LoRaWAN parameters to esta
 
 For the RAK3244 BastWAN to successfully connect to a LoRaWAN Platform, several parameters must be properly configured. Not doing so will result in connection failure.
 
-The most volatile parameters on LoRaWAN configuration are the Device EUI, Application EUI, and Application Keys. These data must match with the ones on The Thing Network (TTN) platform. Copy the EUIs and Keys from the TTN platform and paste them on the sample source code. **Figure 17** shows the lines of codes that should be modified:  
-  
+The most volatile parameters on LoRaWAN configuration are the Device EUI, Application EUI, and Application Keys. These data must match with the ones on The Thing Network (TTN) platform. Copy the EUIs and Keys from the TTN platform and paste them on the sample source code. **Figure 17** shows the lines of codes that should be modified:
+
 <rk-img
   src="/assets/images/wisduo/bastwan/quickstart/dev_app_eui.png"
   width="60%"
@@ -240,7 +240,7 @@ The most volatile parameters on LoRaWAN configuration are the Device EUI, Applic
 
 Now that the LoRaWAN parameters are set, you can now run the sample program.
 
-Click the **Verify** button on the upper left of Arduino IDE to compile the code. Before uploading the sample firmware, make sure that the RAK3244 BastWAN is connected and recognized by your PC. To verify this, there must be an assigned port on the **Tools** toolbar of Arduino IDE. It should not be grayed out.  
+Click the **Verify** button on the upper left of Arduino IDE to compile the code. Before uploading the sample firmware, make sure that the RAK3244 BastWAN is connected and recognized by your PC. To verify this, there must be an assigned port on the **Tools** toolbar of Arduino IDE. It should not be grayed out.
 
 <rk-img
   src="/assets/images/wisduo/bastwan/quickstart/compilation.png"
@@ -256,6 +256,6 @@ If everything is well, you can now click the **Upload** button and the firmware 
   caption="Uploading of sample source code"
 />
 
-The RAK3244 BastWAN will try to join the LoRaWAN network server, and if it is successful, it will send a string to verify its presence. You can find more details of the operation by examining the sample source code and opening the serial monitor. 
+The RAK3244 BastWAN will try to join the LoRaWAN network server, and if it is successful, it will send a string to verify its presence. You can find more details of the operation by examining the sample source code and opening the serial monitor.
 
 Feel free to experiment with your own and explore the capabilities of RAK3244 BastWAN.

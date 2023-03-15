@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK7244. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
-rak_img: /assets/images/wisgate/rak7244/quickstart/1.main/RAK7244_home.png
+rak_img: /assets/images/wisgate/rak7244/quickstart/1.main/RAK7244.png
 prev: ../Overview/
 next: ../Supported-LoRa-Network-Servers/
 tags:
@@ -21,7 +21,7 @@ tags:
 2. 16&nbsp;GB SD card (included) + Card Reader
 3. 5&nbsp;V at least 2.5&nbsp;A Micro USB Power Supply
 4. A Windows/Mac OS/Linux Computer
-5. Latest [RAK7244 Firmware](/Product-Categories/WisGate/RAK7244/Datasheet/#firmware) 
+5. Latest [RAK7244 Firmware](/Product-Categories/WisGate/RAK7244/Datasheet/#firmware)
 
 :::warning ⚠️ WARNING
 The SIM card slot of the cellular versions is not hot-swappable. Make sure the gateway is switched off before inserting or ejecting the SIM card.
@@ -84,7 +84,7 @@ You can also connect your PC with the gateway through an Ethernet cable. By defa
   caption="Ethernet properties"
 />
 
-- By default, the PC will obtain an IP address automatically. Click **Option Use the following IP Address** and enter the IP address `192.168.0.10.20`, then press **OK**. 
+- By default, the PC will obtain an IP address automatically. Click **Option Use the following IP Address** and enter the IP address `192.168.0.10.20`, then press **OK**.
 
 <rk-img
   src="/assets/images/wisgate/rak7244/quickstart/4.accessing your gateway/tcpipv4.png"
@@ -128,7 +128,7 @@ Open the Terminal of Mac OS. Launch the **Terminal** application, which is found
   caption="Opening Terminal in Mac OS"
 />
 
-Open the terminal of Mac OS. Enter **root mode** by typing the following command: 
+Open the terminal of Mac OS. Enter **root mode** by typing the following command:
 
 ```
 sudo -i
@@ -269,7 +269,7 @@ If you want to connect to the router through an Ethernet cable, do the following
 
 #### Reboot
 
-Lastly, reboot the gateway using the command shown below and put it in the command line. 
+Lastly, reboot the gateway using the command shown below and put it in the command line.
 
 
 ```
@@ -390,7 +390,7 @@ You can choose one of two supported LoRa servers here: **TTN** or **ChirpStack**
   caption="TTN server"
 />
 
-* **TTN (The Things Network)** - If you choose TTN as the LoRa server, you will see a page the same as shown in **Figure 27**. Visit [LoRa Alliance Regional Parameters](https://lora-alliance.org/wp-content/uploads/2021/05/RP002-1.0.3-FINAL-1.pdf) for more information on your local frequency plan. This will allow you to choose the correct plan. 
+* **TTN (The Things Network)** - If you choose TTN as the LoRa server, you will see a page the same as shown in **Figure 27**. Visit [LoRa Alliance Regional Parameters](https://lora-alliance.org/wp-content/uploads/2021/05/RP002-1.0.3-FINAL-1.pdf) for more information on your local frequency plan. This will allow you to choose the correct plan.
 
 <rk-img
   src="/assets/images/wisgate/rak7244/quickstart/6.configure the gateway/ttn_channel_plan.png"
@@ -410,7 +410,7 @@ After choosing the correct frequency, a success message will appear, as shown in
 
 When a channel plan is selected, the gateway is configured to connect to the nearest cluster to the region. If new clusters are presented, the channel plans will be updated. For now, the only available clusters are as follows:
 
-- Europe: **eu1.cloud.thethings.network** 
+- Europe: **eu1.cloud.thethings.network**
 - Australia: **au1.cloud.thethings.network**
 - North America: **nam1.cloud.thethings.network**
 

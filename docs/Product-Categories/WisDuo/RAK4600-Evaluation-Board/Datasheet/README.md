@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK4600 Evaluation Board to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak4600-evaluation-board/overview/RAK4600_Evaluation_home.pnh
+rak_img: /assets/images/wisduo/rak4600-evaluation-board/overview/RAK4600-Evaluation.png
 tags:
   - datasheet
   - wisduo
@@ -10,7 +10,7 @@ next: false
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600_CE_Certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600_FCC_Certification.zip]
- 
+
 ---
 
 # RAK4600 Evaluation Board Datasheet
@@ -36,7 +36,7 @@ The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P
 
 ## Specifications
 
-### Overview  
+### Overview
 
 **Figure 1** and **Figure 2** show the front and back views of the RAK4600 Evaluation Board front view.
 
@@ -51,12 +51,12 @@ The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P
   width="85%"
   caption="RAK4600 Evaluation Board Back View"
 />
-  
+
 ### Hardware
 
 The hardware specification is categorized into five parts. It covers the interfaces, pin definitions and their corresponding functions. Also, it includes the RF requirements, electrical and mechanical parameters of the RAK4600 Evaluation Board.
 
-#### Interfaces  
+#### Interfaces
 
 RAK4601 is the WisBlock Core CPU module used on the RAK4600 Evaluation Board. **Figure 3** shows an overview of interfaces found on the RAK4600 Evaluation Board.
 
@@ -66,7 +66,7 @@ RAK4601 is the WisBlock Core CPU module used on the RAK4600 Evaluation Board. **
   width="70%"
   caption="RAK4600 Evaluation Board Interface Overview"
 />
-  
+
 ##### SWD Programming Interface
 
 When programming via the RAKDAP1 DAPLink tool, it is required to have all of the following four (4) pins connected to your DAPLink tool:
@@ -78,7 +78,7 @@ When programming via the RAKDAP1 DAPLink tool, it is required to have all of the
 
 ::: tip 📝 NOTE
 For the aforementioned reason, it is best you leave these exposed for programming purposes and not to remap them as GPIOs.
-:::    
+:::
 
 Use **Figure 4** as a guide to connect RAKDAP1 on the RAK4600 Evaluation Board.
 
@@ -87,15 +87,15 @@ Use **Figure 4** as a guide to connect RAKDAP1 on the RAK4600 Evaluation Board.
   width="80%"
   caption="RAK4600 RAKDAP1 connection"
 />
- 
+
 :::tip 📝 NOTE:
 For flashing the firmware, refer to the [Flash the Firmware Using DAPLink and RAKDAP1](../Low-Level-Development/#flash-the-firmware-using-daplink-and-rakdap1) section.
 
 :::
 
-##### RF Interface  
+##### RF Interface
 
-The RF pins of the RAK4600 Evaluation Board are connected to external antennas through a standard iPEX antenna connector. 
+The RF pins of the RAK4600 Evaluation Board are connected to external antennas through a standard iPEX antenna connector.
 
 Use **Figure 5** and **Figure 6** as a reference to identify the antennas.
 
@@ -123,7 +123,7 @@ Use **Figure 7** as a reference to connect the antennas.
   caption="RAK4600 Evaluation Board antenna connection"
 />
 
-##### USB Interface 
+##### USB Interface
 
 The Micro-B USB connector is compliant with the USB 2.0 specification. The pin definition of the USB interface is shown below:
 
@@ -142,14 +142,14 @@ The Micro-B USB connector is compliant with the USB 2.0 specification. The pin d
   caption="RAK4600 Micro-B USB connector"
 />
 
-The USB data bus is connected to a **USB-SERIAL CH340** chip. The **CH340** is basically a USB bus convert chip that allows the USB to be converted to serial interface and serial interface pins converted to USB. 
+The USB data bus is connected to a **USB-SERIAL CH340** chip. The **CH340** is basically a USB bus convert chip that allows the USB to be converted to serial interface and serial interface pins converted to USB.
 
 
 #### Pin Definition
 
 The following tables below show the pin definitions of the RAK4600 Evaluation Board:
 
-##### J10, J11, J12 
+##### J10, J11, J12
 
 On the RAK4600 Evaluation Board, there are three 2.54&nbsp;mm pitch headers used for IO extension. Some data bus and signal from the MCU module are also connected to these headers, such as I2C, UART, ADC, etc.
 
@@ -460,12 +460,12 @@ The reset push button is connected to the reset pin P0.21 of the RAK4600. When p
 :::
 
 
-#### RF Characteristics  
-  
-##### Operating Frequencies  
+#### RF Characteristics
+
+##### Operating Frequencies
 
 The RAK4600 Evaluation Board supports the LoRaWAN high-frequency region, as shown in the table below.
-  
+
 | Module     | Region        | Frequency (MHz) |
 | ---------- | ------------- | --------------- |
 | RAK4600(H) | Australia     | AU915           |
@@ -505,7 +505,7 @@ Exposure to maximum rating conditions may affect device reliability.
 
 ##### Board Dimensions
 
-Figure 10 shows the actual dimensions of the RAK4600 Evaluation Board measured in millimeters (mm). 
+Figure 10 shows the actual dimensions of the RAK4600 Evaluation Board measured in millimeters (mm).
 
 <rk-img
   src="/assets/images/wisduo/rak4600-evaluation-board/datasheet/rak4600-mechanical.png"

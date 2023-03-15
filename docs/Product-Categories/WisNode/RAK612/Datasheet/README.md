@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK612 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisnode/rak612/quickstart/main/RAK612_home.png
+rak_img: /assets/images/wisnode/rak612/quickstart/main/RAK612.png
 prev: ../AT-Command-Manual/
 next: false
 tags:
@@ -39,7 +39,7 @@ The RAK612 WisNode Button is suitable for a variety of Smart Home applications: 
 - Take Picture
 - Wireless Trigger
 - Remote Switch
-  
+
 
 ## Specifications
 

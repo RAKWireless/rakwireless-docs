@@ -6,8 +6,7 @@ tags:
   - wisgate
   - quickstart
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK7240. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
-rak_img: /assets/images/wisgate/rak7240/quickstart/RAK7240_home.png
-
+rak_img: /assets/images/wisgate/rak7240/quickstart/RAK7240.png
 ---
 # RAK7240 Quick Start Guide
 
@@ -40,9 +39,9 @@ The number of antennas depends on what you order. Refer to the store for more in
 
 ### Gateway Installation Guide
 
-For details about the interfaces and connectors of RAK7240 WisGate Edge Prime Gateway enclosure, refer to the [Datasheet](/Product-Categories/WisGate/RAK7240/Datasheet/#interfaces-hardware-interfaces). 
+For details about the interfaces and connectors of RAK7240 WisGate Edge Prime Gateway enclosure, refer to the [Datasheet](/Product-Categories/WisGate/RAK7240/Datasheet/#interfaces-hardware-interfaces).
 
-#### Installation 
+#### Installation
 
 There are two options for installing the RAK7240 WisGate Edge Prime Gateway:
 
@@ -84,9 +83,9 @@ There are two options for installing the RAK7240 WisGate Edge Prime Gateway:
 
 #### Weather Protection
 
-To better protect the Ethernet cable gland and the antenna connector from the weather, you need to cover them with PVC tape. 
+To better protect the Ethernet cable gland and the antenna connector from the weather, you need to cover them with PVC tape.
 
-1. Clean the surface area of the connector that will be wrapped. Wrap a layer of PVC tape with a 50% overlap according to the rotation direction of the connector. Continue wrapping the PVC tape to about 10&nbsp;mm below the end of the connector. 
+1. Clean the surface area of the connector that will be wrapped. Wrap a layer of PVC tape with a 50% overlap according to the rotation direction of the connector. Continue wrapping the PVC tape to about 10&nbsp;mm below the end of the connector.
 
 <rk-img
   src="/assets/images/wisgate/rak7240/quickstart/installation/6.png"

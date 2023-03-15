@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides hardware-related considerations to optimize the operation of the LoRaWAN module that can be used to further fine-tune the module depending on the actual application.
-rak_img: /assets/images/wisduo/rak3172-sip/overview/RAK3172_SiP_home.png
+rak_img: /assets/images/wisduo/rak3172-sip/overview/RAK3172-SiP.png
 prev: ../Datasheet/
 tags:
   - application note

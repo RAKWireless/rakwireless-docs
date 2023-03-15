@@ -1,6 +1,6 @@
 ---
 rak_desc: A step-by-step guide in installing and upgrading the latest firmware of your RAK7201. With this guide, you can ensure that your LoRaWAN Module is always updated, and you can also use this to upload your custom firmware.
-rak_img: /assets/images/wisnode/rak7201/datasheet/1.rak7201-wisnode-button-4k.png
+rak_img: /assets/images/wisnode/rak7201/datasheet/RAK7201.png
 prev: ../AT-Command-Manual/
 next: false
 tags:

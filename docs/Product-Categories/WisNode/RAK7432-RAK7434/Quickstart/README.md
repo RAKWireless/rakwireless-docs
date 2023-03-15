@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK7432/RAK7434 WisNode Bridge Analogs. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
-rak_img: /assets/images/wisnode/rak7432-rak7434/overview/rak7432-rak7434_home.png
+rak_img: /assets/images/wisnode/rak7432-rak7434/overview/RAK7432-RAK7434.png
 prev: ../Overview/
 next: ../AT-Command-Manual/
 tags:

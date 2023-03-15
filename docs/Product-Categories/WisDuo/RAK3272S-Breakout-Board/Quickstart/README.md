@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisduo/rak3272s-breakout-board/overview/RAK3272S_Breakout_home.png
+rak_img: /assets/images/wisduo/rak3272s-breakout-board/overview/RAK3272S-Breakout.png
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK3272S Breakout Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
 prev: ../Overview/
 next: ../AT-Command-Manual/
@@ -688,12 +688,12 @@ LoRaWAN specifications enforce that each end-device has to be personalized and a
   caption="Setting up for your device"
 />
 
-5. Once done, provide the DevEUI credentials of your device into the **DevEUI** portion. This will automatically generate the specific End 
+5. Once done, provide the DevEUI credentials of your device into the **DevEUI** portion. This will automatically generate the specific End
 device ID of your board. Then click **Generate** under **AppKey** under Provisioning information section. Then click **Register end device**.
 
 :::tip 📝 NOTE:
 
-- The **AppEUI**, **DevEUI**, and **AppKey** are hidden in this section as these are unique from a specific device. The **DevEUI** credential is unique to every RAK3272S device. Also, you should generate your own **AppEUI** and **AppKey** credentials for your specific device and application. 
+- The **AppEUI**, **DevEUI**, and **AppKey** are hidden in this section as these are unique from a specific device. The **DevEUI** credential is unique to every RAK3272S device. Also, you should generate your own **AppEUI** and **AppKey** credentials for your specific device and application.
 
 - The **AppEUI** is the same as **JoinEUI**.
 
@@ -746,7 +746,7 @@ The RAK3272 Breakout Board which has a RAK3172 module in it can be configured us
 
 The **RAK3172** should have correct OTAA credentials to connect to TTN. This can be done using **WisToolBox UI**. Below are the steps on setting up your **RAK3172** using **WisToolBox**.
 
-1. Connect your **RAK3172** with your chosen WisBlock base board to the PC via USB cable and open the **WisToolBox** application. 
+1. Connect your **RAK3172** with your chosen WisBlock base board to the PC via USB cable and open the **WisToolBox** application.
 
 2. Click **CONNECT DEVICE** button to launch the WisToolBox Dashboard.
 
@@ -770,7 +770,7 @@ The **RAK3172** should have correct OTAA credentials to connect to TTN. This can
   caption="Setting up your device"
 />
 
-4. Once done, **RAK3172** will appear in the dashboard then select it. 
+4. Once done, **RAK3172** will appear in the dashboard then select it.
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/Wis_RAK3172_New_4A.png"
@@ -790,7 +790,7 @@ The **RAK3172** should have correct OTAA credentials to connect to TTN. This can
 
 - LoRa network mode: **LoRaWAN**
 - LoRaWAN join mode: **OTAA**
-- LoRaWAN region: **EU868** 
+- LoRaWAN region: **EU868**
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/Wis_RAK3172_New_6.png"
@@ -822,7 +822,7 @@ The **RAK3172** should have correct OTAA credentials to connect to TTN. This can
 
 :::tip 📝 NOTE:
 
-- The **AppEUI**, **DevEUI**, and **AppKey** are hidden in this section as these are unique from a specific device. 
+- The **AppEUI**, **DevEUI**, and **AppKey** are hidden in this section as these are unique from a specific device.
 
 :::
 
@@ -922,7 +922,7 @@ The **RAK3172** should have correct OTAA credentials to connect to TTN. This can
 
 Here's another way of OTAA configuration using **WisToolBox Console**. Below are the steps on setting up your **RAK3172** using **WisToolBox Console**.
 
-1. Connect your **RAK3172** with your chosen WisBlock base board to the PC via USB cable and open the **WisToolBox** application. 
+1. Connect your **RAK3172** with your chosen WisBlock base board to the PC via USB cable and open the **WisToolBox** application.
 
 2. Click **CONNECT DEVICE** button to launch the WisToolBox Dashboard.
 
@@ -946,7 +946,7 @@ Here's another way of OTAA configuration using **WisToolBox Console**. Below are
   caption="Setting up your device"
 />
 
-4. Once done, **RAK3172** will appear in the dashboard then select it. 
+4. Once done, **RAK3172** will appear in the dashboard then select it.
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/ConWis_RAK3172_New_4.png"
@@ -962,7 +962,7 @@ Here's another way of OTAA configuration using **WisToolBox Console**. Below are
   caption="Setting up your device"
 />
 
-6. Once done, click **OPEN CONSOLE** to do the configuration. 
+6. Once done, click **OPEN CONSOLE** to do the configuration.
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/ConWis_RAK3172_New_6.png"
@@ -1227,12 +1227,12 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 
 13. Now you have a configured OTAA device using WisToolBox Console. You can now join the network using the WisToolBox console.
 
-14. To do this, you need to go again to WisToolBox console and type **AT+JOIN**. Then edit it to **AT+JOIN=1** then press **Enter** to join the network. 
+14. To do this, you need to go again to WisToolBox console and type **AT+JOIN**. Then edit it to **AT+JOIN=1** then press **Enter** to join the network.
 
 :::tip 📝 NOTE:
 `AT+JOIN` command parameters are optional. You can configure the settings for auto-join, reattempt interval, and the number of join attempts if your application needs it. If not configured, it will use the default parameter values.
 
-`AT+JOIN` and `AT+JOIN=1` also share the common functionality of trying to join the network.  
+`AT+JOIN` and `AT+JOIN=1` also share the common functionality of trying to join the network.
 :::
 
 Join command format: **`AT+JOIN=w:x:y:z`**
@@ -1250,7 +1250,7 @@ After 5 or 6 seconds, if the request is successfully received by a LoRa gateway,
 
 If the OTAA device failed to join, you need to check if your device is within reach of a working LoRaWAN gateway that is configured to connect to TTN. It is also important to check that all your OTAA parameters (DEVEUI, APPEUI, and APPKEY) are correct using the `AT+DEVEUI=?`, `AT+APPEUI=?`, and `AT+APPKEY=?` commands. Lastly, ensure that the antenna of your device is properly connected.
 
-After checking all the things above, try to join again. 
+After checking all the things above, try to join again.
 :::
 
 <rk-img
@@ -1345,7 +1345,7 @@ AT+SEND=2:12345678
   caption="Enter end device specifics manually"
 />
 
-3. Next step is to set up **Frequency plan**, compatible **LoRaWAN version**, and **Regional Parameters version** supported. 
+3. Next step is to set up **Frequency plan**, compatible **LoRaWAN version**, and **Regional Parameters version** supported.
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/ABP_RAK3272_New_3.png"
@@ -1379,12 +1379,12 @@ AT+SEND=2:12345678
   caption="Setting up for your device"
 />
 
-5. Once done, provide the DevEUI credentials of your device into the **DevEUI** portion. This will automatically generate the specific End 
+5. Once done, provide the DevEUI credentials of your device into the **DevEUI** portion. This will automatically generate the specific End
 device ID of your board. Then click **Generate** under **Device address**, **AppSKey** and **NwkSKey** under Provisioning information section. Then click **Register end device**.
 
 :::tip 📝 NOTE:
 
-- The **DevEUI**, **Device address**, **AppSKey**, and **NwkSKey** are hidden in this section as these are unique from a specific device. The **DevEUI** credential is unique to every RAK3272S device. Also, you should generate your own **Device address**, **AppSKey**, and **NwkSKey** credentials for your specific device and application. 
+- The **DevEUI**, **Device address**, **AppSKey**, and **NwkSKey** are hidden in this section as these are unique from a specific device. The **DevEUI** credential is unique to every RAK3272S device. Also, you should generate your own **Device address**, **AppSKey**, and **NwkSKey** credentials for your specific device and application.
 
 :::
 
@@ -1437,13 +1437,13 @@ device ID of your board. Then click **Generate** under **Device address**, **App
 The RAK3272 Breakout Board which has a RAK3172 module in it can be configured using WisToolBox to do the ABP configuration. **WisToolBox** is a software tool that supports **RAK3172** module. It automatically detects RAK3172 module once connected to PC. Below are the options in WisToolBox that the ABP configuration can be done.
 
 - [ABP Configuration for TTN via WisToolBox UI](#abp-configuration-for-ttn-via-wistoolbox-ui)
-- [ABP Configuration for TTN via WisToolBox Console](#abp-configuration-for-ttn-via-wistoolbox-console)    
+- [ABP Configuration for TTN via WisToolBox Console](#abp-configuration-for-ttn-via-wistoolbox-console)
 
 ##### ABP Configuration for TTN via WisToolBox UI
 
 The **RAK3172** should have correct ABP credentials to connect to TTN. This can be done using **WisToolBox**. Below are the steps on setting up your **RAK3172** using **WisToolBox**.
 
-1. Connect your **RAK3172** with your chosen WisBlock base board to the PC via USB cable and open the **WisToolBox** application. 
+1. Connect your **RAK3172** with your chosen WisBlock base board to the PC via USB cable and open the **WisToolBox** application.
 
 2. Click **CONNECT DEVICE** button to launch the WisToolBox Dashboard.
 
@@ -1467,7 +1467,7 @@ The **RAK3172** should have correct ABP credentials to connect to TTN. This can 
   caption="Setting up your device"
 />
 
-4. Once done, **RAK3172** will appear in the dashboard then select it. 
+4. Once done, **RAK3172** will appear in the dashboard then select it.
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/ABPWis_RAK3172_New_4A.png"
@@ -1479,7 +1479,7 @@ The **RAK3172** should have correct ABP credentials to connect to TTN. This can 
 
 :::tip 📝 NOTE:
 
-- The **AppSKey**, **Device address**, and **NwkSKey** are hidden in this section as these are unique from a specific device. 
+- The **AppSKey**, **Device address**, and **NwkSKey** are hidden in this section as these are unique from a specific device.
 
 :::
 
@@ -1493,7 +1493,7 @@ The **RAK3172** should have correct ABP credentials to connect to TTN. This can 
 
 - LoRa network mode: **LoRaWAN**
 - LoRaWAN join mode: **ABP**
-- LoRaWAN region: **EU868** 
+- LoRaWAN region: **EU868**
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/ABPWis_RAK3172_New_6.png"
@@ -1525,7 +1525,7 @@ The **RAK3172** should have correct ABP credentials to connect to TTN. This can 
 
 :::tip 📝 NOTE:
 
-- The **AppSKey**, **Device address**, and **NwkSKey** are hidden in this section as these are unique from a specific device. 
+- The **AppSKey**, **Device address**, and **NwkSKey** are hidden in this section as these are unique from a specific device.
 
 :::
 
@@ -1605,7 +1605,7 @@ The **RAK3172** should have correct ABP credentials to connect to TTN. This can 
 
 Here's another way of ABP configuration using **WisToolBox Console**. Below are the steps on setting up your **RAK3172** using **WisToolBox Console**.
 
-1. Connect your **RAK3172** with your chosen WisBlock base board to the PC via USB cable and open the **WisToolBox** application. 
+1. Connect your **RAK3172** with your chosen WisBlock base board to the PC via USB cable and open the **WisToolBox** application.
 
 2. Click **CONNECT DEVICE** button to launch the WisToolBox Dashboard.
 
@@ -1629,7 +1629,7 @@ Here's another way of ABP configuration using **WisToolBox Console**. Below are 
   caption="Setting up your device"
 />
 
-4. Once done, **RAK3172** will appear in the dashboard then select it. 
+4. Once done, **RAK3172** will appear in the dashboard then select it.
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/ABPConWis_RAK3172_New_4.png"
@@ -1645,7 +1645,7 @@ Here's another way of ABP configuration using **WisToolBox Console**. Below are 
   caption="Setting up your device"
 />
 
-6. Once done, click **OPEN CONSOLE** to do the configuration. 
+6. Once done, click **OPEN CONSOLE** to do the configuration.
 
 <rk-img
   src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/ABPConWis_RAK3172_New_6.png"

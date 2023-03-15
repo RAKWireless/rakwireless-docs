@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK3172 Module to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak3172-module/overview/RAK3172_Module_home.png
+rak_img: /assets/images/wisduo/rak3172-module/overview/RAK3172-Module.png
 prev: ../Low-Level-Development/
 tags:
   - datasheet
@@ -40,7 +40,7 @@ You can configure the mode and operation of the module using AT commands via a U
 - Custom firmware using Arduino via RUI3 API
 - Easy to use AT command set via UART interface
 - Long-range - greater than 15&nbsp;km with optimized antenna
-- ARM Cortex-M4 32-bit 
+- ARM Cortex-M4 32-bit
 - 256&nbsp;kbytes flash memory with ECC
 - 64&nbsp;kbytes RAM
 - Ultra-low-power consumption of 1.69&nbsp;μA in sleep mode
@@ -231,7 +231,7 @@ The **hex file** contains both the bootloader and the application code. You need
 Uploading the **`.hex`** file via STM32CubeProgrammer will erase all configured data on the device.
 :::
 
-RAK3172 uses UART2 serial pins to upload the latest firmware. 
+RAK3172 uses UART2 serial pins to upload the latest firmware.
 
 :::tip 📝 NOTE:
 RAK3172 should automatically go to BOOT mode when the firmware is uploaded via RAK DFU Tool or WisToolBox.

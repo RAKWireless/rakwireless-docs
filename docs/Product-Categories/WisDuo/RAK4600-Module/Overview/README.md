@@ -1,6 +1,6 @@
 ---
 rak_grp: [wisduo, module]
-rak_img: /assets/images/wisduo/rak4600-module/overview/RAK4600_Module_home.png
+rak_img: /assets/images/wisduo/rak4600-module/overview/RAK4600-Module.png
 rak_desc: RAK4600 WisDuo LPWAN Module includes an nRF52832 MCU and an SX1276 LoRa chip. It has Ultra-Low Power Consumption of 11.2uA in sleep mode, high LoRa output power up to 20dB max in work mode, and BLE output power up to 4dBm.
 prev: ../../
 next: ../Quickstart/
@@ -20,7 +20,7 @@ Thank you for choosing **RAK4600 WisDuo LPWAN Module** in your awesome IoT Proje
 * [Datasheet](../Datasheet/)
 * [RAK4600 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/PWB-RAK4600.stp)
 * [Reference Design](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK4600-Breakout-Board/Datasheet/#schematic-diagram)
-  
+
 
 ## Product Description
 

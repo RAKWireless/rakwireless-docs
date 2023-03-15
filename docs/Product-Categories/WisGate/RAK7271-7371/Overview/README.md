@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisgate/rak7271-7371/overview/rak7271-7371.png
+rak_img: /assets/images/wisgate/rak7271-7371/overview/RAK7271-RAK7371.png
 rak_desc: RAK7271/7371 WisGate Developer Base is designed for desktop/mobile or embedded systems that converts mPCIe LoRa Concentrator modules to Plug & Play LoRa Concentrators, making for a quick to deploy LPWAN Gateway.
 rak_grp: [wisgate, developer]
 prev: ../../
@@ -19,15 +19,15 @@ Thank you for choosing **RAK7271/RAK7371 WisGate Developer Base** in your awesom
 
 ## Product Description
 
-The RAK Developer Base is a device designed for integration with desktop/mobile/embedded systems that converts the RAK2287/RAK5146 mPCIe LoRa concentrator modules into USB Type C pluggable (via the include Type C to A cable). 
+The RAK Developer Base is a device designed for integration with desktop/mobile/embedded systems that converts the RAK2287/RAK5146 mPCIe LoRa concentrator modules into USB Type C pluggable (via the include Type C to A cable).
 
 This new approach allows for it to be easily integrated into existing hardware like routers, industrial PC, etc., adding LoRaWAN gateway capabilities (for example turning a laptop into a testbed LoRaWAN gateway by simply plugging it in and running the software stack)
 
-As it features fully functioning concentrators modules it is capable of working with 8 uplink and 1 downlink channels at SF7-12 (RAK2287) / SF5-12 (RAK5146). 
+As it features fully functioning concentrators modules it is capable of working with 8 uplink and 1 downlink channels at SF7-12 (RAK2287) / SF5-12 (RAK5146).
 
 The RAK Developer Base is an ideal solution for LPWAN deployments where integration with existing hardware is crucial, or scenarios when on the go deployment is required, for drive testing or coverage evaluation in mobile scenarios.
 
-This device is a complete and cost-efficient LoRa gateway solution offering up to 10 programmable parallel demodulation paths. 
+This device is a complete and cost-efficient LoRa gateway solution offering up to 10 programmable parallel demodulation paths.
 
 ## Product Features
 

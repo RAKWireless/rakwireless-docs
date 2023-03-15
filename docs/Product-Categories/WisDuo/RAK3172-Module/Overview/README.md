@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisduo/rak3172-module/overview/RAK3172_Module_home.png
+rak_img: /assets/images/wisduo/rak3172-module/overview/RAK3172-Module.png
 rak_desc: RAK3172 is a low-power long-range transceiver module based on the STM32WLE5CC chip. It provides an easy to use, small size, low-power solution for long-range wireless data applications.
 rak_grp: [wisduo, module]
 prev: ../../
@@ -41,7 +41,7 @@ You can configure the mode and operation of the module using AT commands via a U
 - Custom firmware using Arduino via RUI3 API
 - Easy to use AT Command Set via UART interface
 - Long-range - greater than 15&nbsp;km with optimized antenna
-- ARM Cortex-M4 32-bit 
+- ARM Cortex-M4 32-bit
 - 256&nbsp;kbytes flash memory with ECC
 - 64&nbsp;kbytes RAM
 - Ultra-Low Power Consumption of 1.69&nbsp;μA in sleep mode

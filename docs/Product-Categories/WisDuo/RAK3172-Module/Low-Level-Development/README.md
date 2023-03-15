@@ -1,6 +1,6 @@
 ---
 rak_desc: Aside from the default RAK firmware on the RAK3172 Module, you can create custom firmware using RUI (RAKwireless Unified Interface) or the actual SDK from the manufacturer of the microcontroller that is used inside the module.
-rak_img: /assets/images/wisduo/rak3172-module/overview/RAK3172_Module_home.png
+rak_img: /assets/images/wisduo/rak3172-module/overview/RAK3172-Module.png
 prev: ../AT-Command-Manual/
 next: ../Datasheet/
 tags:
@@ -67,7 +67,7 @@ This guide will illustrate how to generate custom firmware for the STM32WLE5CCU6
   caption="STM32CubeIDE Drivers"
 />
 
-5. The progress bar will show as the installation begins. 
+5. The progress bar will show as the installation begins.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/low-level-development/stm32cubeide_install_going.png"
@@ -98,7 +98,7 @@ This guide will illustrate how to generate custom firmware for the STM32WLE5CCU6
   caption="STM32CubeIDE Installation Finished"
 />
 
-8. Check if the installation of the STM32CubeIDE is successful by trying to run the app. It should have no errors. It will ask you for the workspace and you can leave the default location if you don't want to put it in another location. You also have the option to create multiple workspaces but only one should be active. 
+8. Check if the installation of the STM32CubeIDE is successful by trying to run the app. It should have no errors. It will ask you for the workspace and you can leave the default location if you don't want to put it in another location. You also have the option to create multiple workspaces but only one should be active.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/low-level-development/stm32cubeide_workspace.png"
@@ -122,7 +122,7 @@ You cannot select RAK3172 directly on the STM32CubeIDE, but you can use the STM3
 
 This guide only works on v1.0.0 of the SDK.
 
-1. If you already have the STM32CubeIDE running on your machine, the next step is to download the [STM32WL SDK v1.0.0](https://www.st.com/en/embedded-software/stm32cubewl.html#get-software) from the STMicroelectronics website. 
+1. If you already have the STM32CubeIDE running on your machine, the next step is to download the [STM32WL SDK v1.0.0](https://www.st.com/en/embedded-software/stm32cubewl.html#get-software) from the STMicroelectronics website.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/low-level-development/stm32wl_sdk_link.png"
@@ -157,7 +157,7 @@ This guide only works on v1.0.0 of the SDK.
 
 ##### Files Modification Needed to Run STM32WL SDK LoRaWAN Examples to RAK3172
 
-If you already have the STM32WL V1.0.0 SDK folder, there are only a few files that you need to update to be able to create firmware that will run on RAK3172. 
+If you already have the STM32WL V1.0.0 SDK folder, there are only a few files that you need to update to be able to create firmware that will run on RAK3172.
 
 ::: tip 📝 NOTE
 
@@ -194,7 +194,7 @@ This guide will demonstrate how to run the **LoRaWAN_End_Node** example of the S
   caption="RAK3172 Radio Related Files Replaced"
 />
 
-3. You also need to update the startup file. Place the `startup_stm32wle5ccux.s` file to this location `\STM32Cube_FW_WL_V1.0.0\Projects\NUCLEO-WL55JC\Applications\LoRaWAN\LoRaWAN_End_Node\STM32CubeIDE\Application\Startup`. There is a default startup file in that directory named `startup_stm32wl55jcix.s` and you need to delete that. 
+3. You also need to update the startup file. Place the `startup_stm32wle5ccux.s` file to this location `\STM32Cube_FW_WL_V1.0.0\Projects\NUCLEO-WL55JC\Applications\LoRaWAN\LoRaWAN_End_Node\STM32CubeIDE\Application\Startup`. There is a default startup file in that directory named `startup_stm32wl55jcix.s` and you need to delete that.
 
 The updated startup folder should be the same, as shown in **Figure 19**.
 
@@ -212,7 +212,7 @@ The updated startup folder should be the same, as shown in **Figure 19**.
 If this is your first time using STM32CubeIDE, it shows **Information Center** by default. Just close it and access the project on the left panel.
 :::
 
-2. Open the STM32CubeIDE and click on `File` then `Open Projects from File System`. 
+2. Open the STM32CubeIDE and click on `File` then `Open Projects from File System`.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/low-level-development/stm32cubeide_openproject.png"
@@ -260,7 +260,7 @@ If this is your first time using STM32CubeIDE, it shows **Information Center** b
   caption="Open the STM32CubeIDE Project"
 />
 
-8. You can now try to build the project by setting up the build configuration to release so that a `.bin` file will be generated. 
+8. You can now try to build the project by setting up the build configuration to release so that a `.bin` file will be generated.
 
 ::: tip 📝 NOTE
 If you have an ST-LINK debugging tool, you can also choose **Debug** instead of **Release**.
@@ -293,7 +293,7 @@ The previous guide is for STM32WL SDK version 1.0.0. This guide is compatible wi
 
 #### Getting STM32WL SDK v1.2.0
 
-1. If you already have the STM32CubeIDE running on your machine, the next step is to download the [STM32WL SDK v1.2.0](https://www.st.com/en/embedded-software/stm32cubewl.html#get-software) from the STMicroelectronics website. 
+1. If you already have the STM32CubeIDE running on your machine, the next step is to download the [STM32WL SDK v1.2.0](https://www.st.com/en/embedded-software/stm32cubewl.html#get-software) from the STMicroelectronics website.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/low-level-development/stm32wl_sdk_link.png"
@@ -328,7 +328,7 @@ The previous guide is for STM32WL SDK version 1.0.0. This guide is compatible wi
 
 ##### Files Modification Needed to Run STM32WL SDK LoRaWAN Examples to RAK3172
 
-If you already have the STM32WL V1.2.0 SDK folder, there are only a few files that you need to update to be able to create firmware that will run on RAK3172. 
+If you already have the STM32WL V1.2.0 SDK folder, there are only a few files that you need to update to be able to create firmware that will run on RAK3172.
 
 ::: tip 📝 NOTE
 
@@ -365,7 +365,7 @@ This guide will demonstrate how to run the **LoRaWAN_End_Node** example of the S
   caption="RAK3172 Radio Related Files Replaced"
 />
 
-3. You also need to update the startup file. Place the `startup_stm32wle5ccux.s` file to this location `\STM32Cube_FW_WL_V1.2.0\Projects\NUCLEO-WL55JC\Applications\LoRaWAN\LoRaWAN_End_Node\STM32CubeIDE\Application\User\Startup`. There is a default startup file in that directory named `startup_stm32wl55jcix.s` and you need to delete that. 
+3. You also need to update the startup file. Place the `startup_stm32wle5ccux.s` file to this location `\STM32Cube_FW_WL_V1.2.0\Projects\NUCLEO-WL55JC\Applications\LoRaWAN\LoRaWAN_End_Node\STM32CubeIDE\Application\User\Startup`. There is a default startup file in that directory named `startup_stm32wl55jcix.s` and you need to delete that.
 
 The updated startup folder should be the same, as shown in **Figure 36**.
 
@@ -389,7 +389,7 @@ The updated startup folder should be the same, as shown in **Figure 36**.
 If this is your first time using STM32CubeIDE, it shows **Information Center** by default. Just close it and access the project on the left panel.
 :::
 
-2. Open the STM32CubeIDE and click on `File` then `Open Projects from File System`. 
+2. Open the STM32CubeIDE and click on `File` then `Open Projects from File System`.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/low-level-development/stm32cubeide_openproject.png"
@@ -445,7 +445,7 @@ If this is your first time using STM32CubeIDE, it shows **Information Center** b
   caption="Bin generation settings"
 />
 
-9. You can now try to build the project by setting up the build configuration to release so that a `.bin` file will be generated. 
+9. You can now try to build the project by setting up the build configuration to release so that a `.bin` file will be generated.
 
 ::: tip 📝 NOTE
 If you have an ST-LINK debugging tool, you can also choose **Debug** instead of **Release**.
@@ -543,7 +543,7 @@ These parameters are usually set and code generated in the **.ioc** file via STM
 
 With all the needed files modified and edited, you can now generate your `.bin` FW file and upload it to your RAK3172 module.
 
-1. The first step is to clean first the project to remove any outdated binary files in the project folder then followed by building it. Sometimes **Build Project** is not clickable so you can use **Build All** as an alternative. You only have one project as of now so that should work fine as well. 
+1. The first step is to clean first the project to remove any outdated binary files in the project folder then followed by building it. Sometimes **Build Project** is not clickable so you can use **Build All** as an alternative. You only have one project as of now so that should work fine as well.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/low-level-development/stm32cubeide_cleanbuild_project.png"
@@ -561,7 +561,7 @@ With all the needed files modified and edited, you can now generate your `.bin` 
 
 ## Uploading the FW Generated Using STM32CubeProgrammer
 
-The generated .bin FW file is ready to be uploaded to RAK3172. 
+The generated .bin FW file is ready to be uploaded to RAK3172.
 
 To upload this binary file, you need to use STM32CubeProgrammer created by STMicroelectronics.
 
@@ -615,7 +615,7 @@ You can also use an ST-LINK to upload the `.bin` file to RAK3172.
   caption="Selecting the Right COM Port"
 />
 
-4. You need to ensure that the `Boot0` is connected to VDD (3.3&nbsp;V) when the device is powered up, else, the STM32CubeProgrammer might not detect the device. The logs of a detected device are shown in **Figure 59**. 
+4. You need to ensure that the `Boot0` is connected to VDD (3.3&nbsp;V) when the device is powered up, else, the STM32CubeProgrammer might not detect the device. The logs of a detected device are shown in **Figure 59**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/low-level-development/stm32cubeprog_connected.png"

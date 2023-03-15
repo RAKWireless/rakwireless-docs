@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK2560 WisNode Probe IO to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisnode/rak2560/io-datasheet/probe-io-dimensions.png
+rak_img: /assets/images/wisnode/rak2560/overview/RAK2560.jpg
 prev: ../Hub-Datasheet/
 next: ../Probe-Datasheet/
 tags:

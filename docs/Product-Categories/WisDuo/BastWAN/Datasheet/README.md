@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK3244 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/bastwan/overview/BastWAN_Home.png
+rak_img: /assets/images/wisduo/bastwan/overview/BastWAN.png
 tags:
   - datasheet
   - wisduo
@@ -43,7 +43,7 @@ The board complies with LoRaWAN 1.0.2 specification, and it also supports LoRa P
 
 ## Specifications
 
-### Overview  
+### Overview
 
 The RAK3244 BastWAN Breakout Board is shown in **Figure 1**, which displays the top and back view of the board, respectively.<br><br>
 
@@ -67,16 +67,16 @@ The block diagram of the RAK3244 BastWAN shows the various interfaces for the sp
 
 The hardware specification is categorized into four parts. It discusses the interfacing, pinouts and its corresponding functions and diagrams. It also covers the RF and mechanical parameters of the RAK3244 BastWAN Breakout Board.
 
-#### Interfaces  
-  
+#### Interfaces
+
 **Figure 3** shows the overview of interfaces found on the RAK3244 BastWAN Breakout Board.
-  
+
 <rk-img
   src="/assets/images/wisduo/bastwan/datasheet/rak3244-interface.svg"
   width="70%"
   caption="RAK3244 BastWAN Breakout Board Interface Overview"
 />
-  
+
 ##### SWD Programming Interface
 
 When programming via a DAPLink tool, it is required to have all of the following four (4) pins connected to your DAPLink tool:
@@ -88,7 +88,7 @@ When programming via a DAPLink tool, it is required to have all of the following
 
 ::: tip 📝 NOTE
 For the aforementioned reason, it is best you leave these exposed for programming purposes and not to remap them as GPIOs.
-:::    
+:::
 
 The proper connection between the DapLink tool and RAK3244 BastWAN Breakout Board is illustrated in **Figure 4**.
 
@@ -102,7 +102,7 @@ The proper connection between the DapLink tool and RAK3244 BastWAN Breakout Boar
 
 **I2C_SCL** and **I2C_SDA** are connected to the ATECC608A crypto chip for the purpose of developing cryptographic applications: network end-point key management and exchange small message and PII data encryption, secure boot and protected download, ecosystem control, and anti-cloning. Additional I2C peripherals can be added using the breakout pins on connector J3.
 
-##### RF Interface  
+##### RF Interface
 
 The RF pin of the RAK4260 module is wired to an SMA antenna connector.
 
@@ -119,68 +119,68 @@ The following tables below show the pin definition of the RAK3244 BastWAN Breako
 ##### J2 Pin Definitions
 
 | Pin |Name | I/O |Description|
-| --- | --- | --- | --------- | 
-| 1   | RST | -   | MCU reset | 
-| 2   | 3V3 | -   | 3V3 Power | 
-| 3   | GND | -   | GND       | 
+| --- | --- | --- | --------- |
+| 1   | RST | -   | MCU reset |
+| 2   | 3V3 | -   | 3V3 Power |
+| 3   | GND | -   | GND       |
 | 4   | GND | -   | GND       |
-| 5   | A0  | I/O | PA09      | 
-| 6   | A1  | I/O | PA08      | 
-| 7   | A2  | I/O | PA07      | 
-| 8   | A3  | I/O | PA06      | 
-| 9   | A4  | I/O | PA04      | 
-| 10  | D3  | I/O | PB03      | 
-| 11  | SCK | I/O | PB23      | 
-| 12  |MOSI | I/O | PB02      | 
-| 13  |MISO | I/O | PA23      | 
-| 14  | RX  | I/O | PA19      | 
-| 15  | TX  | I/O | PA18      | 
-| 16  | GND | -   | GND       | 
+| 5   | A0  | I/O | PA09      |
+| 6   | A1  | I/O | PA08      |
+| 7   | A2  | I/O | PA07      |
+| 8   | A3  | I/O | PA06      |
+| 9   | A4  | I/O | PA04      |
+| 10  | D3  | I/O | PB03      |
+| 11  | SCK | I/O | PB23      |
+| 12  |MOSI | I/O | PB02      |
+| 13  |MISO | I/O | PA23      |
+| 14  | RX  | I/O | PA19      |
+| 15  | TX  | I/O | PA18      |
+| 16  | GND | -   | GND       |
 
 ##### J3 Pin Definitions
 
 | Pin | Name | I/O | Description                     |
-| --- | --   | --- | ------------------------------- | 
-| 1   | BATT | -   | Battery Power                   | 
-| 2   | EN   | -   | Enable Pin for charging chip    | 
-| 3   | VBUS | -   | USB Power                       | 
+| --- | --   | --- | ------------------------------- |
+| 1   | BATT | -   | Battery Power                   |
+| 2   | EN   | -   | Enable Pin for charging chip    |
+| 3   | VBUS | -   | USB Power                       |
 | 4   | D13  | I/O | PA22                            |
-| 5   | D12  | I/O | PA28                            | 
-| 6   | D11  | I/O | PA05                            | 
-| 7   | D10  | I/O | PA14                            | 
-| 8   | D9   | I/O | PA15                            | 
-| 9   | D6   | I/0 | PB22                            | 
-| 10  | D5   | I/0 | PB27                            | 
-| 11  | SCL  | I/O | SCL                             | 
-| 12  | SDA  | I/O | SDA                             | 
+| 5   | D12  | I/O | PA28                            |
+| 6   | D11  | I/O | PA05                            |
+| 7   | D10  | I/O | PA14                            |
+| 8   | D9   | I/O | PA15                            |
+| 9   | D6   | I/0 | PB22                            |
+| 10  | D5   | I/0 | PB27                            |
+| 11  | SCL  | I/O | SCL                             |
+| 12  | SDA  | I/O | SDA                             |
 
 ##### J5 Pin Definitions
 
 | Pin | Name  | I/O | Description  |
-| --- | ------| --- | ------------ | 
-| 1   | 3V3   | -   | 3V3 Power    | 
-| 2   | SWDIO | I/O | PA31         | 
-| 3   | SWCLK | I/O | PA30         | 
+| --- | ------| --- | ------------ |
+| 1   | 3V3   | -   | 3V3 Power    |
+| 2   | SWDIO | I/O | PA31         |
+| 3   | SWCLK | I/O | PA30         |
 | 4   | GND   | -   | GND          |
 
-#### RF Characteristics  
-  
-##### Operating Frequencies  
+#### RF Characteristics
 
-The RAK3244 Breakout Board supports the following LoRa bands:  
-  
+##### Operating Frequencies
+
+The RAK3244 Breakout Board supports the following LoRa bands:
+
 | Region | Frequency (MHz) |
 |-|-|
 | Europe | EU868 |
 | North America | US915 |
 | Australia | AU915 |
 | Asia | AS923 |
-  
-##### Sensitivity Level  
+
+##### Sensitivity Level
 
 The following charts show the receiving sensitivity of RAK3244 BastWAN at 866&nbsp;Mhz operating frequency.<br><br>
 
-  
+
 <rk-img
   src="/assets/images/wisduo/bastwan/datasheet/rak3244_sensitivity1.png"
   width="80%"
@@ -204,11 +204,11 @@ The following charts show the receiving sensitivity of RAK3244 BastWAN at 866&nb
 />
 
 
-  
+
 #### Mechanical Characteristics
 
 ##### Board Dimensions
-  
+
 **Figure 9** shows the actual dimensions of the RAK3244 BastWAN Breakout Board measured in millimeters (mm). <br><br>
 
 <rk-img

@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK7243C. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
-rak_img: /assets/images/wisgate/rak7243c/quickstart/1.product-overview/1.index/RAK7243C_home.png
+rak_img: /assets/images/wisgate/rak7243c/quickstart/1.product-overview/1.index/RAK7243C.png
 prev: ../Overview/
 next: ../Supported-LoRa-Network-Servers/
 tags:
@@ -52,7 +52,7 @@ Before powering the Raspberry Pi 3B+, you should connect the LoRa, GPS, and LTE 
 By default, the gateway will work in Wi-Fi AP Mode which means that you can find an SSID named **Rakwireless_XXXX** on your PC Wi-Fi Network List.
 
 <rk-img
-  src="/assets/images/wisgate/rak7243c/quickstart/2.accessing-gateway/wifi.png" 
+  src="/assets/images/wisgate/rak7243c/quickstart/2.accessing-gateway/wifi.png"
   width="80%"
   caption="RAKwireless access point"
 />
@@ -84,7 +84,7 @@ You can also connect your PC with the gateway through an Ethernet cable. By defa
   caption="Ethernet properties"
 />
 
-- By default, the PC will obtain an IP address automatically. Click **Option Use the following IP Address** and enter the IP address `192.168.0.10.20`, then press **OK**. 
+- By default, the PC will obtain an IP address automatically. Click **Option Use the following IP Address** and enter the IP address `192.168.0.10.20`, then press **OK**.
 
 <rk-img
   src="/assets/images/wisgate/rak7243c/quickstart/2.accessing-gateway/tcpipv4.png"
@@ -130,7 +130,7 @@ Open the Terminal of Mac OS. Launch the **Terminal** application, which is found
   caption="Opening Terminal in Mac OS"
 />
 
-Open the terminal of Mac OS. Enter **root mode** by typing the following command: 
+Open the terminal of Mac OS. Enter **root mode** by typing the following command:
 
 ```
 sudo -i
@@ -189,7 +189,7 @@ Points 7 and 8 can be found only on LTE versions of the gateway.
 
 #### Connect through Wi-Fi
 
-If you want to connect through Wi-Fi, it can easily be done with the wireless capabilities of the Raspberry Pi 3B+ by choosing **5 Configure WIFI**. By default, the RAK7243 Developer works in Wi-Fi AP Mode. 
+If you want to connect through Wi-Fi, it can easily be done with the wireless capabilities of the Raspberry Pi 3B+ by choosing **5 Configure WIFI**. By default, the RAK7243 Developer works in Wi-Fi AP Mode.
 
 For the gateway to connect to the router, it must work in Wi-Fi Client Mode.
 
@@ -276,7 +276,7 @@ If you want to connect to the router through an Ethernet cable, do the following
 
 #### Reboot
 
-Lastly, reboot the gateway using the command shown below and put it in the command line. 
+Lastly, reboot the gateway using the command shown below and put it in the command line.
 
 
 ```
@@ -402,7 +402,7 @@ You can choose one of two supported LoRa servers here: **TTN** or **ChirpStack**
   caption="TTN server"
 />
 
-* **TTN (The Things Network)** - If you choose TTN as the LoRa Server, you will see a page the same as shown in **Figure 27**. Visit [LoRa Alliance Regional Parameters](https://lora-alliance.org/wp-content/uploads/2021/05/RP002-1.0.3-FINAL-1.pdf) for more information on your local frequency plan. This will allow you to choose the correct plan. 
+* **TTN (The Things Network)** - If you choose TTN as the LoRa Server, you will see a page the same as shown in **Figure 27**. Visit [LoRa Alliance Regional Parameters](https://lora-alliance.org/wp-content/uploads/2021/05/RP002-1.0.3-FINAL-1.pdf) for more information on your local frequency plan. This will allow you to choose the correct plan.
 
 <rk-img
   src="/assets/images/wisgate/rak7243c/quickstart/3.configure-gateway/ttn_channel_plan.png"
@@ -422,7 +422,7 @@ After choosing the correct frequency, a success message will appear, as shown in
 
 When a channel plan is selected, the gateway is configured to connect to the nearest cluster to the region. If new clusters are presented, the channel plans will be updated. For now, the only available clusters are as follows:
 
-- Europe: eu1.cloud.thethings.network 
+- Europe: eu1.cloud.thethings.network
 - Australia: au1.cloud.thethings.network
 - North America: nam1.cloud.thethings.network
 
@@ -485,9 +485,9 @@ If you want to use ChirpStack for LoRa Network server, refer to the Supported Lo
 
 The RAK7243C comes with the RAK2013 Cellular, making it capable of connecting through LTE network. In this section, you will learn how to connect your gateway to an LTE network.
 
-1. Insert a SIM card of the appropriate type and size into the SIM card slot. Power on the gateway. 
+1. Insert a SIM card of the appropriate type and size into the SIM card slot. Power on the gateway.
 2. Log into the gateway through SSH, and enter the following command:
-   
+
    ```
    sudo gateway-config
    ```
@@ -514,7 +514,7 @@ Two configuration options are available for your LTE.
 3. Next, you need to configure the LTE network operator’s information. Make sure to disable the automatic connection on the start-up feature before starting.
 
 4. Execute the command below in the console to start the minicom tool:
-   
+
    ```
    sudo minicom -D /dev/ttyAMA0 -b 115200
    ```

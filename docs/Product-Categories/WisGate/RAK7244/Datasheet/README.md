@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK7244 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisgate/rak7244/quickstart/1.main/RAK7244_home.png
+rak_img: /assets/images/wisgate/rak7244/quickstart/1.main/RAK7244.png
 tags:
   - datasheet
   - wisgate

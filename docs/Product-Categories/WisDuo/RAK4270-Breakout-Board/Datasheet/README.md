@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK4270 Breakout Board to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak4270-breakout-board/overview/RAK4270_home.png
+rak_img: /assets/images/wisduo/rak4270-breakout-board/overview/RAK4270-Breakout.png
 tags:
   - datasheet
   - wisduo
@@ -15,11 +15,11 @@ next: false
 
 ### Description
 
-**RAK4270 Breakout Board** is a simple board specially designed to facilitate the external connection of RAK4270 pins. The main purpose is to access the pins of the stamp module over two (2) rows of 2.54&nbsp;mm headers. Hence, it is convenient to debug the RAK4270 Breakout Board.     
+**RAK4270 Breakout Board** is a simple board specially designed to facilitate the external connection of RAK4270 pins. The main purpose is to access the pins of the stamp module over two (2) rows of 2.54&nbsp;mm headers. Hence, it is convenient to debug the RAK4270 Breakout Board.
 
-The RAK4270 Breakout Board includes a **STM32L071 MCU** and a **SX1262 LoRa chip**, which supports eight spreading factors (**SF5 ~ SF12**) and signal bandwidth that can be adjusted between **7.8&nbsp;kHz** to **500&nbsp;kHz**. It has Ultra-Low Power Consumption of 2.31&nbsp;μA (down to 1.61&nbsp;μA @ 2.0&nbsp;V) in sleep mode, but during the Transmit mode, it can reach the maximum output power of **22&nbsp;dBm**. As a receiver, it can achieve a sensitivity of **-148&nbsp;dBm**.    
+The RAK4270 Breakout Board includes a **STM32L071 MCU** and a **SX1262 LoRa chip**, which supports eight spreading factors (**SF5 ~ SF12**) and signal bandwidth that can be adjusted between **7.8&nbsp;kHz** to **500&nbsp;kHz**. It has Ultra-Low Power Consumption of 2.31&nbsp;μA (down to 1.61&nbsp;μA @ 2.0&nbsp;V) in sleep mode, but during the Transmit mode, it can reach the maximum output power of **22&nbsp;dBm**. As a receiver, it can achieve a sensitivity of **-148&nbsp;dBm**.
 
-The module complies with the LoRaWAN 1.0.2 protocol, so it can be used for implementing LoRa networks or Lora point-to-point communications. The module is suitable for various applications that require long-range data acquisition and low power consumption, such as smart meters, supply chain and logistics tracking, agricultural sensors, smart cities, etc.    
+The module complies with the LoRaWAN 1.0.2 protocol, so it can be used for implementing LoRa networks or Lora point-to-point communications. The module is suitable for various applications that require long-range data acquisition and low power consumption, such as smart meters, supply chain and logistics tracking, agricultural sensors, smart cities, etc.
 
 This module is expected to be controlled by an external controller through its UART interface by sending a set of AT commands. These AT commands control not only the state of this module but also set the LoRaWan communication parameters and payloads (refer to the [AT Command Manual](/Product-Categories/WisDuo/RAK4270-Module/AT-Command-Manual/)).
 
@@ -138,7 +138,7 @@ The pin definitions of the RAK4270 Breakout Board are shown in the following tab
 
 ##### Operating Frequencies
 
-The RAK4270 Breakout board supports the following LoRaWAN bands:    
+The RAK4270 Breakout board supports the following LoRaWAN bands:
 
 | **Module** | **Region**    | **Frequency (MHz)** |
 | ---------- | ------------- | ------------------- |

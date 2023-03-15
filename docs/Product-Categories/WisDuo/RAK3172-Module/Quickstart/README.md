@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK3172. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
-rak_img: /assets/images/wisduo/rak3172-module/overview/RAK3172_Module_home.png
+rak_img: /assets/images/wisduo/rak3172-module/overview/RAK3172-Module.png
 prev: ../Overview/
 next: ../AT-Command-Manual/
 tags:

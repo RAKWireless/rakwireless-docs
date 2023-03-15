@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisduo/rak4270-module/overview/RAK4270_Module_Home.png
+rak_img: /assets/images/wisduo/rak4270-module/overview/RAK4270-Module.png
 rak_desc: The RAK4270 module is designed to simplify LoRa peer-to-peer and LoRaWAN communication. the module is suitable for various applications that require long-range data acquisition and low power consumption, such as smart meters, agricultural sensors, and smart cities.
 rak_grp: [wisduo, module]
 prev: ../../

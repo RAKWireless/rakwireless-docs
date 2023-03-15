@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK3172-SiP to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak3172-sip/overview/RAK3172_SiP_home.png
+rak_img: /assets/images/wisduo/rak3172-sip/overview/RAK3172-SiP.png
 prev: ../AT-Command-Manual/
 next: ../Application-Note/
 tags:

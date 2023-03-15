@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK4200 Evaluation Board to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak4200-evaluation-board/overview/RAK4200_Evaluation_home.png
+rak_img: /assets/images/wisduo/rak4200-evaluation-board/overview/RAK4200-Evaluation.png
 tags:
   - datasheet
   - wisduo
@@ -111,7 +111,7 @@ The RF output pin of the RAK4200 Evaluation Board is connected to an external an
 Before powering the RAK4200 Evaluation Board, you should install the LoRa antenna first. Not doing so might damage the board.
 :::
 
-##### USB Interface 
+##### USB Interface
 
 The Micro-B USB connector is compliant with the USB 2.0 specification. The pin definition of the USB interface is shown below:
 
@@ -143,7 +143,7 @@ The following tables below shows the pin definitions of the RAK4200 Evaluation B
 
 ##### J10, J11, J12 2.54&nbsp;mm header
 
-##### J10 
+##### J10
 
 | **Pin Number** | **Pin Name**  | **Description**                      | **Microcontroller Pin** |
 | -------------- | ------------- | ------------------------------------ | ----------------------- |
@@ -153,7 +153,7 @@ The following tables below shows the pin definitions of the RAK4200 Evaluation B
 | 4              | RX1/USART2_RX | USART2 RX pin                        | PA3                     |
 
 
-##### J11 
+##### J11
 
 | **Pin Number** | **Pin Name**   | **Description**               | **Microcontroller Pin** |
 | -------------- | -------------- | ----------------------------- | ----------------------- |
@@ -166,7 +166,7 @@ The following tables below shows the pin definitions of the RAK4200 Evaluation B
 3V3_S is another 3.3&nbsp;V power supply that can be controlled on/off by MCU. Set pin IO2=0 when the sensor is not in use to save power.
 :::
 
-##### LoRa Transceiver SX1276 Connection 
+##### LoRa Transceiver SX1276 Connection
 
 | **LoRa IC Pin** | **STM32 GPIO** |
 | :-------------: | :------------: |
@@ -465,9 +465,9 @@ The output of the solar panel **must not exceed 5.5&nbsp;V**. Otherwise, it may 
 
 The reset push button is connected to the NRST PA0 pin of the RAK4200. When pushed, it resets the MCU.
 
-#### RF Requirements  
-  
-##### Operating Frequencies  
+#### RF Requirements
+
+##### Operating Frequencies
 
 The RAK4200 has two different models based on its frequency: RAK4200(L) for low frequency and RAK4200(H) for high frequency.
 
@@ -491,7 +491,7 @@ The RAK4200 has two different models based on its frequency: RAK4200(L) for low 
 | Tx mode LoRa @17&nbsp;dBm    |   87    |  mA   |
 | Tx mode LoRa @19&nbsp;dBm    |   120   |  mA   |
 | Rx mode LoRa @37.5&nbsp;Kbps |   15    |  mA   |
-   
+
 ##### Absolute Maximum Ratings
 
 Exposure to maximum rating conditions may affect device reliability.
@@ -507,7 +507,7 @@ Exposure to maximum rating conditions may affect device reliability.
 #### Mechanical Characteristics
 
 ##### Board Dimensions
-  
+
 **Figure 10** shows the actual dimensions of the RAK4200 Evaluation Board measured in millimeters (mm). <br><br>
 
 <rk-img
@@ -529,7 +529,7 @@ The **hex file** contains both the bootloader and the application code. You need
 
 :::
 
-#### Firmware 
+#### Firmware
 
 | Model   | Source                                                                                          |
 | ------- | ----------------------------------------------------------------------------------------------- |

@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK11721 Breakout Board to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak11721-breakout-board/overview/RAK11721_Breakout_home.png
+rak_img: /assets/images/wisduo/rak11721-breakout-board/overview/RAK11721-Breakout.png
 prev: ../AT-Command-Manual/
 next: false
 tags:

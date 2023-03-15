@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK7244 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisgate/rak7244c/quickstart/overview/RAK7244C_home.png
+rak_img: /assets/images/wisgate/rak7244c/quickstart/overview/RAK7244C.png
 tags:
   - datasheet
   - wisgate
@@ -24,9 +24,9 @@ Pilot Gateway Pro is ideal for prototyping, proof-of-concept demonstration, or e
 
 - Preassembled, fully functioning gateway
 - **SX1301 baseband processor**, emulates 49 x LoRa demodulators 10 programmable parallel demodulation paths, supports 8 uplinks channels and 1 downlink channel
-- Support optional cellular module (Quectel BG96 or EG91 or EG95) for NB-IOT/CAT-M/CAT1 LTE/CAT4 LTE 
+- Support optional cellular module (Quectel BG96 or EG91 or EG95) for NB-IOT/CAT-M/CAT1 LTE/CAT4 LTE
 - Built-in **Ublox MAX-7Q GPS Module**
-- Built-in heat sink for thermal heat dissipation management 
+- Built-in heat sink for thermal heat dissipation management
 - Supports 5&nbsp;V / 2.5&nbsp;A power supply
 - TX power up to 27&nbsp;dBm, RX sensitivity down to -139&nbsp;dBm@SF12, BW 125&nbsp;kHz
 - Frequency band support: EU433, CN470, RU864, IN865, EU868, US915, AU915, KR920, AS923
@@ -51,7 +51,7 @@ The overview covers the board overview of RAK7244C and its block diagram that di
 
 #### Block Diagram
 
-**Figure 2** shows the basic concept for the LoRaWAN system. **RAK7244C Pilot Gateway** is the central hardware solution for all LoRa-based radio communications. It receives and transmits radio messages. The processing of radio messages, as well as the protocol-related tasks, are done by the embedded host system (Raspberry Pi). Received and processed radio messages are sent to a LoRaWAN server. 
+**Figure 2** shows the basic concept for the LoRaWAN system. **RAK7244C Pilot Gateway** is the central hardware solution for all LoRa-based radio communications. It receives and transmits radio messages. The processing of radio messages, as well as the protocol-related tasks, are done by the embedded host system (Raspberry Pi). Received and processed radio messages are sent to a LoRaWAN server.
 
 The concrete segmentation of the protocol-related tasks is outside the scope of this document.
 
@@ -76,7 +76,7 @@ The hardware specification is categorized into six parts. It discusses the inter
 
 :::tip 📝 NOTE
 
-The LTE antenna (DIV) is used only for the EG91/ EG95 Version and is reserved for the BG96 Version. 
+The LTE antenna (DIV) is used only for the EG91/ EG95 Version and is reserved for the BG96 Version.
 :::
 
 
@@ -310,7 +310,7 @@ The GPS antenna with SMA Male Connector for Developer Gateway is shown in **Figu
   caption="GPS Antenna dimensions"
 />
 
-                                                                     
+
 ##### GPS Environmental Requirements
 
 | Conditions |        Temperature        | Humidity |

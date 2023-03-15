@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK7200 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisnode/rak7200/quickstart/overview/RAK7200_home.png
+rak_img: /assets/images/wisnode/rak7200/quickstart/overview/RAK7200.png
 prev: ../Quickstart/
 next: ../AT-Command-Manual/
 tags:
@@ -36,7 +36,7 @@ It is a feature-packed tracker device for featured applications development. Thi
 
 ### Overview
 
-The overview shows the board with its enclosure. It also presents the block diagram that shows the internal architecture of the board. 
+The overview shows the board with its enclosure. It also presents the block diagram that shows the internal architecture of the board.
 
 
 #### Board Overview
@@ -61,7 +61,7 @@ The block diagram below shows the internal architecture and external interfaces 
 
 ### Hardware
 
-The hardware specification is categorized into six (6) parts. It discusses the interfacing, pinouts, and the corresponding functions and diagrams of the board. It also includes the parameters and the standard values in terms of the electrical and environmental. 
+The hardware specification is categorized into six (6) parts. It discusses the interfacing, pinouts, and the corresponding functions and diagrams of the board. It also includes the parameters and the standard values in terms of the electrical and environmental.
 
 #### Interfaces
 

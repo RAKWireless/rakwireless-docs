@@ -90,27 +90,27 @@ export default {
 
   '/Product-Categories/WisNode/RAK10701-H/': {
     label: 'RAK10701-H Field Mapper for Helium Network',
-    img: '/assets/images/wisnode/rak10701/overview/RAK10701-h-buy.png',
+    img: '/assets/images/wisnode/rak10701/overview/RAK10701-H.png',
     store: 'https://store.rakwireless.com/products/field-mapper-for-helium-with-plug-play-and-3rd-party-mode-rak10701-h?variant=42437640782022?utm_source=RAK10701H&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisNode/RAK10701-L/': {
     label: 'RAK10701-L Field Tester for LoRaWAN',
-    img: '/assets/images/wisnode/rak10701/overview/RAK10701-l-buy.png',
+    img: '/assets/images/wisnode/rak10701/overview/RAK10701-L.png',
     store: 'https://store.rakwireless.com/products/field-tester-for-lorawan-rak10701?variant=42437597167814?utm_source=RAK10701L&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisNode/RAK10701-P/': {
     label: 'RAK10701-P Field Tester for LoRaWAN Pro',
-    img: '/assets/images/wisnode/rak10701/overview/RAK10701-p-buy.png',
+    img: '/assets/images/wisnode/rak10701/overview/RAK10701-P.png',
     store: 'https://store.rakwireless.com/products/field-tester-for-lorawan-rak10701?variant=42437595726022?utm_source=RAK10701P&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisNode/RAK2171/': {
     label: 'RAK2171 WisNode TrackIt',
-    img: '/assets/images/wisnode/rak2171/overview/RAK2171_buy.png',
+    img: '/assets/images/wisnode/rak2171/overview/RAK2171.png',
     store: 'https://store.rakwireless.com/products/wisnode-trackit-set-rak2171?utm_source=RAK2171WisNodeTrackIt&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisNode/RAK7200/': {
     label: 'RAK7200 WisNode Track Lite',
-    img: '/assets/images/wisnode/rak7200/quickstart/overview/RAK7200_buy.png',
+    img: '/assets/images/wisnode/rak7200/quickstart/overview/RAK7200.png',
     store: 'https://store.rakwireless.com/products/rak7200-lora-tracker?utm_source=RAK7200WisNodeTrackLite&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
@@ -118,7 +118,7 @@ export default {
 
   '/Product-Categories/WisNode/RAK7204/': {
     label: 'RAK7204 WisNode Sense Home',
-    img: '/assets/images/wisnode/rak7204/quickstart/1.overview/RAK7204_buy.png',
+    img: '/assets/images/wisnode/rak7204/quickstart/1.overview/RAK7204.png',
     store: 'https://store.rakwireless.com/products/rak7204-lpwan-environmental-node?utm_source=RAK7204WisNodeSense&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
@@ -126,7 +126,7 @@ export default {
 
   '/Product-Categories/WisNode/RAK2560/': {
     label: 'RAK2560 WisNode Sensor Hub',
-    img: '/assets/images/wisnode/rak2560/overview/rak2560_buy.jpg',
+    img: '/assets/images/wisnode/rak2560/overview/RAK2560.jpg',
     store: 'https://store.rakwireless.com/products/sensor-hub?utm_source=RAK2560WisNodeSense&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
@@ -134,12 +134,12 @@ export default {
 
   '/Product-Categories/WisNode/RAK612/': {
     label: 'RAK612 WisNode Button',
-    img: '/assets/images/wisnode/rak612/quickstart/main/RAK612_buy.png',
+    img: '/assets/images/wisnode/rak612/quickstart/main/RAK612.png',
     store: 'https://store.rakwireless.com/products/rak612-lora-button?utm_source=RAK612WisNodeButton&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisNode/RAK7201/': {
     label: 'RAK7201 WisNode Button 4K',
-    img: '/assets/images/wisnode/rak7201/datasheet/1.png',
+    img: '/assets/images/wisnode/rak7201/datasheet/RAK7201.png',
     store: 'https://store.rakwireless.com/products/wisnode-button-4k-rak7201?utm_source=RAK7201WisNodeButton4K&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
@@ -147,13 +147,13 @@ export default {
 
   '/Product-Categories/WisNode/RAK7431/': {
     label: 'RAK7431 WisNode Bridge Serial',
-    img: '/assets/images/wisnode/rak7431/datasheet/RAK7431_buy.png',
+    img: '/assets/images/wisnode/rak7431/datasheet/RAK7431.png',
     store: 'https://store.rakwireless.com/products/rak7431?utm_source=RAK7431WisNodeBridge&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
   '/Product-Categories/WisNode/RAK7432-RAK7434/': {
     label: 'RAK7432/RAK7434 WisNode Bridge Analog',
-    img: '/assets/images/wisnode/rak7432-rak7434/overview/rak7432-rak7434_buy.png',
+    img: '/assets/images/wisnode/rak7432-rak7434/overview/RAK7432-RAK7434.png',
     store: 'https://store.rakwireless.com/products/wisnode-bridge-rak7432-rak7434?utm_source=RAK7432-RAK7434&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
@@ -195,22 +195,22 @@ export default {
 
   '/Product-Categories/WisHat/RAK2247-Pi-HAT/': {
     label: 'RAK2247 Pi HAT',
-    img: '/assets/images/wishat/rak2247-pi-hat/overview/RAK2247_PiHat_buy.png',
+    img: '/assets/images/wishat/rak2247-pi-hat/overview/RAK2247-Pi-Hat.png',
     store: 'https://store.rakwireless.com/products/rak2247-pi-hat?utm_source=RAK2247PiHAT&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisHat/RAK2287-RAK5146-Pi-HAT/': {
     label: 'RAK2287/RAK5146 Pi HAT',
-    img: '/assets/images/wishat/rak2287-pi-hat/overview/RAK2287_buy.png',
+    img: '/assets/images/wishat/rak2287-pi-hat/overview/RAK2287.png',
     store: 'https://store.rakwireless.com/products/rak2287-pi-hat?utm_source=RAK2287PiHAT&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisHat/RAK8213-Pi-HAT/': {
     label: 'RAK8213 Pi HAT',
-    img: '/assets/images/wishat/rak8213-pi-hat/overview/RAK8213-PiHat_buy.png',
+    img: '/assets/images/wishat/rak8213-pi-hat/overview/RAK8213-Pi-Hat.png',
     store: 'https://store.rakwireless.com/products/rak8213-nb-iot-bg96?utm_source=RAK8213Pi%20HAT&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisHat/RAK9003-PoE-HAT/': {
     label: 'RAK9003 PoE Pi HAT',
-    img: '/assets/images/wishat/rak9003-poe-hat/datasheet/RAK9003_buy.png',
+    img: '/assets/images/wishat/rak9003-poe-hat/datasheet/RAK9003.png',
     store: 'https://store.rakwireless.com/products/rak9003-poe-hat?utm_source=RAK9003PoEHAT&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
@@ -221,57 +221,57 @@ export default {
 
   '/Product-Categories/WisDuo/RAK811-Module/': {
     label: 'RAK811 WisDuo LPWAN Module',
-    img: '/assets/images/wisduo/rak811-module/overview/RAK811_Module_buy.png',
+    img: '/assets/images/wisduo/rak811-module/overview/RAK811-Module.png',
     store: 'https://store.rakwireless.com/products/rak811-lpwan-module?utm_source=RAK811LPWANModule&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK813-Module/': {
     label: 'RAK813 BLE+LoRa Module',
-    img: '/assets/images/wisduo/rak813-module/overview/RAK813_buy.png',
+    img: '/assets/images/wisduo/rak813-module/overview/RAK813.png',
     store: 'https://store.rakwireless.com/?utm_source=RAK813BLE%2BLoRa%C2%AEModule&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK4200-Module/': {
     label: 'RAK4200 WisDuo LPWAN Module',
-    img: '/assets/images/wisduo/rak4200-module/overview/RAK4200_Module_buy.png',
+    img: '/assets/images/wisduo/rak4200-module/overview/RAK4200-Module.png',
     store: 'https://store.rakwireless.com/products/rak4200-lora-module?utm_source=RAK4200LPWANModule&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK4260-Module/': {
     label: 'RAK4260 WisDuo LPWAN Module',
-    img: '/assets/images/wisduo/rak4260-module/overview/RAK4260_Module_buy.png',
+    img: '/assets/images/wisduo/rak4260-module/overview/RAK4260-Module.png',
     store: 'https://store.rakwireless.com/products/rak4260-lora-module?utm_source=RAK4260LPWANModule&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK4270-Module/': {
     label: 'RAK4270 WisDuo LPWAN Module',
-    img: '/assets/images/wisduo/rak4270-module/overview/RAK4270_Module_Home.png',
+    img: '/assets/images/wisduo/rak4270-module/overview/RAK4270-Module.png',
     store: 'https://store.rakwireless.com/collections/wisduo/products/rak4270-lpwan-module?utm_source=RAK4270&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK4600-Module/': {
     label: 'RAK4600 WisDuo LPWAN Module',
-    img: '/assets/images/wisduo/rak4600-module/overview/RAK4600_Module_buy.png',
+    img: '/assets/images/wisduo/rak4600-module/overview/RAK4600-Module.png',
     store: 'https://store.rakwireless.com/products/rak4600-lora-module?utm_source=RAK4600LPWANModule&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK3172-Module/': {
     label: 'RAK3172 WisDuo LPWAN Module',
-    img: '/assets/images/wisduo/rak3172-module/overview/RAK3172_Module_buy.png',
+    img: '/assets/images/wisduo/rak3172-module/overview/RAK3172-Module.png',
     store: 'https://store.rakwireless.com/products/wisduo-lpwan-module-rak3172?utm_source=WisBlockRAK3172&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK4630-Module/': {
     label: 'RAK4630 WisDuo LPWAN Module',
-    img: '/assets/images/wisduo/rak4630-module/overview/RAK4630_Module_buy.png',
+    img: '/assets/images/wisduo/rak4630-module/overview/RAK4630-Module.png',
     store: 'https://store.rakwireless.com/products/rak4630-wisduo-lpwan-module?utm_source=RAK4630Module&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK11300-Module/': {
     label: 'RAK11300 WisDuo LPWAN Module',
-    img: '/assets/images/wisduo/rak11300-module/overview/RAK11300_Module_buy.png',
+    img: '/assets/images/wisduo/rak11300-module/overview/RAK11300-Module.png',
     store: 'https://store.rakwireless.com/products/wisduo-lpwan-module-rak11300?utm_source=RAK11300WisDuoLPWANModule&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK3172-SiP/': {
     label: 'RAK3172-SiP WisDuo LPWAN Module',
-    img: '/assets/images/wisduo/rak3172-sip/overview/RAK3172_SiP_home.png',
+    img: '/assets/images/wisduo/rak3172-sip/overview/RAK3172-SiP.png',
     store: 'https://store.rakwireless.com/products/wisduo-module-rak3172-sip?utm_source=RAK3172SiP&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK11720-Module/': {
     label: 'RAK11720 WisDuo LPWAN Module',
-    img: '/assets/images/wisduo/rak11720-module/overview/RAK11720_Module_buy.png',
+    img: '/assets/images/wisduo/rak11720-module/overview/RAK11720-Module.png',
     store: 'https://store.rakwireless.com/products/rak11720-ambiq-apollo3-module-for-lorawan?utm_source=RAK11720&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
@@ -279,42 +279,42 @@ export default {
 
   '/Product-Categories/WisDuo/BastWAN/': {
     label: 'BastWAN',
-    img: '/assets/images/wisduo/bastwan/overview/BastWAN_Buy.png',
+    img: '/assets/images/wisduo/bastwan/overview/BastWAN.png',
     store: 'https://store.rakwireless.com/products/bastwan-evaluation-board?utm_source=BastWAN&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK811-Breakout-Board/': {
     label: 'RAK811 Breakout Board',
-    img: '/assets/images/wisduo/rak811-breakout-board/quickstart/overview/RAK811_Breakout_buy.png',
+    img: '/assets/images/wisduo/rak811-breakout-board/quickstart/overview/RAK811-Breakout.png',
     store: 'https://store.rakwireless.com/products/rak811-lpwan-breakout-module?utm_source=RAK811BreakoutModule&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK4200-Breakout-Board/': {
     label: 'RAK4200 Breakout Board',
-    img: '/assets/images/wisduo/rak4200-breakout-board/quickstart/main/RAK4200_Breakout_buy.png',
+    img: '/assets/images/wisduo/rak4200-breakout-board/quickstart/main/RAK4200-Breakout.png',
     store: 'https://store.rakwireless.com/products/rak4200-breakout-board?utm_source=RAK4200BreakoutModule&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK4260-Breakout-Board/': {
     label: 'RAK4260 Breakout Board',
-    img: '/assets/images/wisduo/rak4260-breakout-board/quickstart/main/RAK4260_Breakout_buy.png',
+    img: '/assets/images/wisduo/rak4260-breakout-board/quickstart/main/RAK4260-Breakout.png',
     store: 'https://store.rakwireless.com/products/rak4260-breakout-board?utm_source=RAK4260BreakoutModule&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK4600-Breakout-Board/': {
     label: 'RAK4600 Breakout Board',
-    img: '/assets/images/wisduo/rak4600-breakout-board/quickstart/main/RAK4600_Breakout_buy.png',
+    img: '/assets/images/wisduo/rak4600-breakout-board/quickstart/main/RAK4600-Breakout.png',
     store: 'https://store.rakwireless.com/products/rak4600-breakout-board?utm_source=RAK4600LPWANBreakoutModule&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK4270-Breakout-Board/': {
     label: 'RAK4270 Breakout Board',
-    img: ' /assets/images/wisduo/rak4270-breakout-board/overview/RAK4270_buy.png',
+    img: ' /assets/images/wisduo/rak4270-breakout-board/overview/RAK4270-Breakout.png',
     store: 'https://store.rakwireless.com/products/rak4270-breakout-board?utm_source=RAK4270BreakoutBoard&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/': {
     label: 'RAK3272-SiP Breakout Board',
-    img: '/assets/images/wisduo/rak3272-sip-breakout-board/overview/RAK3272-SiP-Breakout_home.png',
+    img: '/assets/images/wisduo/rak3272-sip-breakout-board/overview/RAK3272-SiP-Breakout.png',
     store: 'https://store.rakwireless.com/products/wisduo-breakout-board-rak3272-sip?utm_source=RAK3272SiPBreakoutBoard&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK11721-Breakout-Board/': {
     label: 'RAK11721 Breakout Board',
-    img: '/assets/images/wisduo/rak11721-breakout-board/overview/RAK11721_Breakout_home.png',
+    img: '/assets/images/wisduo/rak11721-breakout-board/overview/RAK11721-Breakout.png',
     store: 'https://store.rakwireless.com/products/rak11720-breakout-board-rak11721?utm_source=RAK11721&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
@@ -322,27 +322,27 @@ export default {
 
   '/Product-Categories/WisDuo/RAK4200-Evaluation-Board/': {
     label: 'RAK4200 Evaluation Board',
-    img: '/assets/images/wisduo/rak4200-evaluation-board/overview/RAK4200_Evaluation_buy.png',
+    img: '/assets/images/wisduo/rak4200-evaluation-board/overview/RAK4200-Evaluation.png',
     store: 'https://store.rakwireless.com/products/rak4200-evaluation-board?utm_source=RAK4200LPWANEvaluationBoard&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK4260-Evaluation-Board/': {
     label: 'RAK4260 Evaluation Board',
-    img: '/assets/images/wisduo/rak4260-evaluation-board/overview/RAK4260_Evaluation_buy.png',
+    img: '/assets/images/wisduo/rak4260-evaluation-board/overview/RAK4260-Evaluation.png',
     store: 'https://store.rakwireless.com/products/rak4260-evaluation-board?utm_source=RAK4260LPWANEvaluationBoard&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK4600-Evaluation-Board/': {
     label: 'RAK4600 Evaluation Board',
-    img: '/assets/images/wisduo/rak4600-evaluation-board/overview/RAK4600_Evaluation_buy.png',
+    img: '/assets/images/wisduo/rak4600-evaluation-board/overview/RAK4600-Evaluation.png',
     store: 'https://store.rakwireless.com/products/rak4600-evaluation-board?utm_source=RAK4600EvaluationBoard&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK3272S-Breakout-Board/': {
     label: 'RAK3272S Breakout Board',
-    img: '/assets/images/wisduo/rak3272s-breakout-board/overview/RAK3272S_Breakout_home.png',
+    img: '/assets/images/wisduo/rak3272s-breakout-board/overview/RAK3272S-Breakout.png',
     store: 'https://store.rakwireless.com/products/wisduo-breakout-board-rak3272s?utm_source=RAK3272SBreakoutBoard&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisDuo/RAK3172-Evaluation-Board/': {
     label: 'RAK3172 Evaluation Board',
-    img: '/assets/images/wisduo/rak3172-evaluation-board/overview/RAK3172E_Evaluation_home.png',
+    img: '/assets/images/wisduo/rak3172-evaluation-board/overview/RAK3172-Evaluation.png',
     store: 'https://store.rakwireless.com/products/evaluation-board-rak3172-e?utm_source=RAK3172EvaluationBoard&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
@@ -353,7 +353,7 @@ export default {
 
   '/Product-Categories/WisGate/RAK7240/': {
     label: 'RAK7240 WisGate Edge Prime',
-    img: '/assets/images/wisgate/rak7240/quickstart/RAK7240_buy.png',
+    img: '/assets/images/wisgate/rak7240/quickstart/RAK7240.png',
     store: 'https://store.rakwireless.com/products/rak7240-outdoor-lpwan-gateway?utm_source=RAK7240WisGateEdgePrime&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisGate/RAK7249/': {
@@ -363,7 +363,7 @@ export default {
   },
   '/Product-Categories/WisGate/RAK7258/': {
     label: 'RAK7258 WisGate Edge Lite',
-    img: '/assets/images/wisgate/rak7258/quickstart/1.main/RAK7258_buy.png',
+    img: '/assets/images/wisgate/rak7258/quickstart/1.main/RAK7258.png',
     store: 'https://store.rakwireless.com/products/rak7258-micro-gateway?utm_source=RAK7258Lite&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
@@ -374,7 +374,7 @@ export default {
   },
   '/Product-Categories/WisGate/RAK7289/': {
     label: 'RAK7289 WisGate Edge Pro',
-    img: '/assets/images/wisgate/rak7289/overview/RAK7289_buy.png',
+    img: '/assets/images/wisgate/rak7289/overview/RAK7289.png',
     store: 'https://store.rakwireless.com/products/wisgate-edge-pro-rak7289?utm_source=WisGateRAK7289&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
@@ -388,7 +388,7 @@ export default {
   },
   '/Product-Categories/WisGate/RAK7289-V2/': {
     label: 'RAK7289 V2 WisGate Edge Pro',
-    img: '/assets/images/wisgate/rak7289-v2/overview/RAK7289V2_buy.png',
+    img: '/assets/images/wisgate/rak7289-v2/overview/RAK7289V2.png',
     store: 'https://store.rakwireless.com/products/wisgate-edge-pro-rak7289v2-rak7289cv2?utm_source=WisGateRAK7289V2&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
@@ -396,32 +396,32 @@ export default {
 
   '/Product-Categories/WisGate/RAK-Hotspot-v2/': {
     label: 'RAK Hotspot v2',
-    img: '/assets/images/wisgate/rak-hotspot-v2/overview/rak_hotspot_v2.png',
+    img: '/assets/images/wisgate/rak-hotspot-v2/overview/RAK-Hotspot-V2.png',
     store: 'https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisGate/RAK-Hotspot/': {
     label: 'RAK Hotspot',
-    img: '/assets/images/wisgate/rak-hotspot/overview/RAK-Hotspot-buy.png',
+    img: '/assets/images/wisgate/rak-hotspot/overview/RAK-Hotspot.png',
     store: 'https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisGate/RAK7243/': {
     label: 'RAK7243 WisGate Developer D3 Gateway',
-    img: '/assets/images/wisgate/rak7243/quickstart/1.main/RAK7243_buy.png',
+    img: '/assets/images/wisgate/rak7243/quickstart/1.main/RAK7243.png',
     store: 'https://store.rakwireless.com/products/rak7243c-pilot-gateway?utm_source=RAK7243LPWANDeveloperD3Gateway&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisGate/RAK7243C/': {
     label: 'RAK7243C WisGate Developer D3+ Gateway',
-    img: '/assets/images/wisgate/rak7243c/quickstart/1.product-overview/1.index/RAK7243C_buy.png',
+    img: '/assets/images/wisgate/rak7243c/quickstart/1.product-overview/1.index/RAK7243C.png',
     store: 'https://store.rakwireless.com/products/rak7243c-pilot-gateway?variant=32094762139693&utm_source=RAK7243CD3%2BGateway&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisGate/RAK7244/': {
     label: 'RAK7244 WisGate Developer D4 Gateway',
-    img: '/assets/images/wisgate/rak7244/quickstart/1.main/RAK7244_buy.png',
+    img: '/assets/images/wisgate/rak7244/quickstart/1.main/RAK7244.png',
     store: 'https://store.rakwireless.com/products/rak7244-lpwan-developer-gateway?utm_source=RAK7244LPWANDeveloperD4Gateway&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisGate/RAK7244C/': {
     label: 'RAK7244C WisGate Developer D4+ Gateway',
-    img: '/assets/images/wisgate/rak7244c/quickstart/overview/RAK7244C_buy.png',
+    img: '/assets/images/wisgate/rak7244c/quickstart/overview/RAK7244C.png',
     store: 'https://store.rakwireless.com/products/rak7244-lpwan-developer-gateway?variant=31446039691309&utm_source=RAK7244CDeveloperD4%2B&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisGate/RAK7246G/': {
@@ -431,12 +431,12 @@ export default {
   },
   '/Product-Categories/WisGate/RAK7248/': {
     label: 'RAK7248 WisGate Developer D4H',
-    img: '/assets/images/wisgate/rak7248/overview/RAK7248_buy.png',
+    img: '/assets/images/wisgate/rak7248/overview/RAK7248.png',
     store: 'https://store.rakwireless.com/products/rak7248?utm_source=RAK7248WisGateDeveloperD4H&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisGate/RAK7271-7371/': {
     label: 'RAK7271/RAK7371 WisGate Developer Base',
-    img: '/assets/images/wisgate/rak7271-7371/overview/rak7271-7371.png',
+    img: '/assets/images/wisgate/rak7271-7371/overview/RAK7271-RAK7371.png',
     store: 'https://store.rakwireless.com/products/wisgate-developer-base?utm_source=wisgatedeveloperbase&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 

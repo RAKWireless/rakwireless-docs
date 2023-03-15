@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK4270 Module to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak4270-module/overview/RAK4270_Module_Home.png
+rak_img: /assets/images/wisduo/rak4270-module/overview/RAK4270-Module.png
 tags:
 - datasheet
 - wisduo
@@ -80,7 +80,7 @@ The block diagram representing the RAK4270 LoRa module is shown in **Figure 2**.
 
 ### Hardware
 
-The hardware specification discusses the interfaces, pinouts and its corresponding functions and diagrams. It also covers the parameters of the RAK4270 Module in terms of RF, electrical, mechanical, and environmental characteristics. 
+The hardware specification discusses the interfaces, pinouts and its corresponding functions and diagrams. It also covers the parameters of the RAK4270 Module in terms of RF, electrical, mechanical, and environmental characteristics.
 
 #### Interfaces
 
@@ -95,7 +95,7 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
   width="60%"
   caption="RAK4270 Pinout"
 />
- 
+
 | Pin | Name          | Type | Description                                                       | Alternate Functions                                             |
 | --- | ------------- | ---- | ----------------------------------------------------------------- | --------------------------------------------------------------- |
 | 1   | PA3/UART2_RX  | I    | UART2 Interface (AT Commands)                                     | TIM21_CH2, TIM2_CH4, USART2_RX, LPUART1_RX                      |

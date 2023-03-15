@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK2560. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
-rak_img: /assets/images/wisnode/rak2560/overview/rak2560.jpg
+rak_img: /assets/images/wisnode/rak2560/overview/RAK2560.jpg
 prev: ../Overview/
 next: ../Installation/
 tags:

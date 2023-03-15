@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK2171 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisnode/rak2171/overview/rak2171.png
+rak_img: /assets/images/wisnode/rak2171/overview/RAK2171.png
 prev: ../Helium-Datacake/
 next: false
 tags:

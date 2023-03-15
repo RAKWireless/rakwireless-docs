@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK3272S Breakout Board to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak3272s-breakout-board/overview/RAK3272S_Breakout_home.png
+rak_img: /assets/images/wisduo/rak3272s-breakout-board/overview/RAK3272S-Breakout.png
 prev: ../AT-Command-Manual/
 next: false
 tags:
@@ -51,7 +51,7 @@ The top view of the RAK3272S Breakout Board is shown in **Figure 1**.
 The hardware specification is categorized into five parts. It discusses the interfacing, pinouts, and their corresponding functions and diagrams. It also covers the electrical and mechanical parameters of the board, including the tabular data of the functionalities and standard values.
 
 
-#### Interface 
+#### Interface
 
 ##### SWD Programing Interface
 
@@ -69,7 +69,7 @@ This board has two UART interfaces:
 - UART1 (can allow AT commands if configured via RUI3 Serial Port Mode)
 - UART2/LPUART1 (allows AT Commands and FW Update)
 
-##### I2C and SPI Interface 
+##### I2C and SPI Interface
 
 Only one I2C and SPI interface of RAK3272S:
 
@@ -104,7 +104,7 @@ The tables below show the pin definition of the RAK3272S Breakout Board:
 | 8   | BOOT0    | Boot0 mode enable pin - high active | -               |
 | 9   | 3V3      | Power Supply                        | -               |
 
-##### J4 Pin Definitions 
+##### J4 Pin Definitions
 
 | Pin | Name     | Description                                         | STM32WLE5CC Pin |
 | --- | -------- | --------------------------------------------------- | --------------- |
@@ -120,7 +120,7 @@ The tables below show the pin definition of the RAK3272S Breakout Board:
 
 :::warning ⚠️ WARNING
 
-- The J4 pin definition table is applicable to RAK3272S VerC. If you have **RAK3272S VerB**, **pin 9** is **not 3V3** but **connected to PA8**. 
+- The J4 pin definition table is applicable to RAK3272S VerC. If you have **RAK3272S VerB**, **pin 9** is **not 3V3** but **connected to PA8**.
 
 - A dedicated internal SPI interface called **SUBGHZSPI** is used to communicate with the RF subsystem of the **STM32WLE5CC**.
 

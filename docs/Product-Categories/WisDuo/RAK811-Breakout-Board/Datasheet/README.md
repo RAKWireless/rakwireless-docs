@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK811 Breakout Board to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak811-breakout-board/quickstart/overview/RAK811_Breakout_home.png
+rak_img: /assets/images/wisduo/rak811-breakout-board/quickstart/overview/RAK811-Breakout.png
 tags:
   - datasheet
   - wisduo
@@ -25,7 +25,7 @@ certifications:
 
 ### Description
 
-**RAK811 Breakout Board** is an easy-to-use, compact, and low-power long-range LoRa technology with wireless transceiver capabilities. It is based on RAK811 Stamp Module attached to a breakout board on Xbee form factor with standard 2.00&nbsp;mm headers. 
+**RAK811 Breakout Board** is an easy-to-use, compact, and low-power long-range LoRa technology with wireless transceiver capabilities. It is based on RAK811 Stamp Module attached to a breakout board on Xbee form factor with standard 2.00&nbsp;mm headers.
 
 The RAK811 Breakout Board complies with Class A & C of LoRaWAN 1.0.2 specification. Additionally, it supports LoRa Point-to-Point (P2P) communications, which help you in implementing their own private LoRa wireless applications. You can configure the mode and operation of the module using AT commands via the UART interface. RAK811 board also offers low-power features, which are very suitable for battery-powered applications.
 

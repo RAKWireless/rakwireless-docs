@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK7244C. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
-rak_img: /assets/images/wisgate/rak7244c/quickstart/overview/RAK7244C_home.png
+rak_img: /assets/images/wisgate/rak7244c/quickstart/overview/RAK7244C.png
 prev: ../Overview/
 next: ../Supported-LoRa-Network-Servers/
 tags:
@@ -40,7 +40,7 @@ The SIM card slot of the cellular versions is not hot-swappable. Make sure the g
 
 ### Accessing Your Gateway
 
-After burning the firmware image onto the SD Card, make sure you have inserted the SD Card into the **RAK7244C WisGate Developer D4+ Gateway** and have the LoRa and GPS Antenna connected. After which, you can now safely power on the gateway. 
+After burning the firmware image onto the SD Card, make sure you have inserted the SD Card into the **RAK7244C WisGate Developer D4+ Gateway** and have the LoRa and GPS Antenna connected. After which, you can now safely power on the gateway.
 
 In this document, several ways to access the gateway are provided to have different alternatives for you to choose from depending on the availability of the requirements needed.
 
@@ -85,7 +85,7 @@ You can also connect your PC with the gateway through an Ethernet cable. By defa
   caption="Ethernet properties"
 />
 
-- By default, the PC will obtain an IP Address automatically. Click the option **Use the following IP Address** and enter the IP address `192.168.10.20`, then press **OK**. 
+- By default, the PC will obtain an IP Address automatically. Click the option **Use the following IP Address** and enter the IP address `192.168.10.20`, then press **OK**.
 
 <rk-img
   src="/assets/images/wisgate/rak7244c/quickstart/2.accessing-gateway/4.qdbxt5z0vcc0xuv6kjie.png"
@@ -130,7 +130,7 @@ Open the Terminal of Mac OS. Launch the **Terminal** application, which is found
   caption="Opening terminal in Mac OS"
 />
 
-Open the terminal of Mac OS. Enter **root mode** by typing the following command: 
+Open the terminal of Mac OS. Enter **root mode** by typing the following command:
 
 
 ```
@@ -193,7 +193,7 @@ The last two options (numbers 7 and 8) can be found only on LTE versions of the 
 
 #### Connect through Wi-Fi
 
-If you want to connect through Wi-Fi, it can easily be done with the wireless capabilities of the Raspberry Pi 4 by choosing **5 Configure Wifi**. By default, the RAK7244C WisGate Developer D4+ Gateway works in Wi-Fi AP Mode. 
+If you want to connect through Wi-Fi, it can easily be done with the wireless capabilities of the Raspberry Pi 4 by choosing **5 Configure Wifi**. By default, the RAK7244C WisGate Developer D4+ Gateway works in Wi-Fi AP Mode.
 
 For the gateway to connect to the router, it must work in Wi-Fi Client Mode.
 
@@ -309,7 +309,7 @@ cd > rak_ap
 ### Configuring the Gateway
 
 - Assuming you have successfully logged into your gateway using SSH, enter the following command in the command line:
-  
+
   ```
   sudo gateway-config
   ```
@@ -415,7 +415,7 @@ After choosing the correct frequency, a success message will appear, as shown in
 
 When a channel plan is selected, the gateway is configured to connect to the nearest cluster to the region. If new clusters are presented, the channel plans will be updated. For now, the only available clusters are as follows:
 
-- Europe: eu1.cloud.thethings.network 
+- Europe: eu1.cloud.thethings.network
 - Australia: au1.cloud.thethings.network
 - North America: nam1.cloud.thethings.network
 
@@ -478,9 +478,9 @@ The default IP Address is `127.0.0.1`. If you want to use an external ChirpStack
 
 The RAK7244C comes with the RAK2013 Cellular, making it capable of connecting through the LTE network. In this section, you will learn how to connect your gateway to an LTE network.
 
-1. Insert a SIM card of the appropriate type and size into the SIM card slot. Power on the gateway. 
+1. Insert a SIM card of the appropriate type and size into the SIM card slot. Power on the gateway.
 2. Log into the gateway through SSH, and enter the following command:
-   
+
    ```
    sudo gateway-config
    ```
@@ -507,7 +507,7 @@ Two configuration options are available for your LTE.
 3. Next, you need to configure the LTE network operator’s information. Make sure to disable the automatic connection on the start-up feature before starting.
 
 4. Execute the command below in the console to start the minicom tool:
-   
+
    ```
    sudo minicom -D /dev/ttyAMA0 -b 115200
    ```

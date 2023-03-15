@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK612. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
-rak_img: /assets/images/wisnode/rak612/quickstart/main/RAK612_home.png
+rak_img: /assets/images/wisnode/rak612/quickstart/main/RAK612.png
 prev: ../Overview/
 next: ../AT-Command-Manual/
 tags:
@@ -393,7 +393,7 @@ After configuring all parameters, you need to reset the RAK612 WisNode Button fo
 
 ### Key Functions Customizing
 
-This section walks through the step-by-step discussion on how to customize each key functions of the RAK612 WisNode Button. For you to enable the message customization, you must at least have the 2.0.2.1.2 firmware version. 
+This section walks through the step-by-step discussion on how to customize each key functions of the RAK612 WisNode Button. For you to enable the message customization, you must at least have the 2.0.2.1.2 firmware version.
 
 :::tip 📝 NOTE
 If your RAK612 WisNode Button's firmware version is lower than the least version set, please download the latest [RAK612 WisNode Button Firmware](https://downloads.rakwireless.com/LoRa/RAK612-LoRaButton/Firmware/) and proceed to the [Upgrading the Firmware](#upgrading-the-firmware) section.
@@ -423,7 +423,7 @@ at+key_config=<key>,<frame_port>,<message>
 - **frame_port** - the port you want to send the customized message
 - **message** - your customized message in replacement of your default message in every key pressed.
 
-1. **Connect** your RAK612 WisNode Button to your Windows PC using a Micro USB cable. Follow the steps in the [Interfacing with RAK612 WisNode Button](#interfacing-with-rak612-wisnode-button) section if this is the first time you are connecting the device into your WIndows PC. 
+1. **Connect** your RAK612 WisNode Button to your Windows PC using a Micro USB cable. Follow the steps in the [Interfacing with RAK612 WisNode Button](#interfacing-with-rak612-wisnode-button) section if this is the first time you are connecting the device into your WIndows PC.
 
 2. Using the same RAK Serial Port Tool used in the previous step and the AT Command syntax, let us try configuring your RAK612 WisNode Button keys. As an example, try sending the AT Command same with the image shown below:
 
@@ -489,9 +489,9 @@ Please use the the latest firmware for the RAK612 WisNode Button in order to avo
   caption="Upgrade Firmware Success"
 />
 
-#### Testing the Installed Firmware 
+#### Testing the Installed Firmware
 
-1. In order for you to check if you have successfully installed the firmware on your RAK612 WisNode Button, open the RAK Serial Port tool on your PC. 
+1. In order for you to check if you have successfully installed the firmware on your RAK612 WisNode Button, open the RAK Serial Port tool on your PC.
 
 <rk-img
   src="/assets/images/wisnode/rak612/quickstart/firmware-upgrade/serial-port.png"
@@ -499,9 +499,9 @@ Please use the the latest firmware for the RAK612 WisNode Button in order to avo
   caption="RAK Serial Port Tool"
 />
 
-* **COM Port** - this is where you choose the COM Port of your RAK612 WisNode Button. 
+* **COM Port** - this is where you choose the COM Port of your RAK612 WisNode Button.
 * **Baudrate** - the rate, at which information is transferred. (Use **115200** for RAK612 WisNode Button).
-* **Receiving** - this is where all the responses of your AT Commands will be displayed. 
+* **Receiving** - this is where all the responses of your AT Commands will be displayed.
 * **Sending** - this is where you input your AT Command.
 * **Command** - this is where you save all of your AT Commands for quick reuse. This is very useful in the [AT Commands for RAK612 WisNode Button](../AT-Command-Manual) section.
 

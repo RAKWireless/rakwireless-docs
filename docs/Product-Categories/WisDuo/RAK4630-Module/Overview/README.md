@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisduo/rak4630-module/overview/RAK4630_Module_buy.png
+rak_img: /assets/images/wisduo/rak4630-module/overview/RAK4630-Module.png
 rak_desc: RAK4630 is a low-power LoRa module based on Nordic nRF52840 MCU that supports Bluetooth 5.0 (Bluetooth Low Energy) and the newest SX1262 LoRa transceiver from Semtech. RAK4630 firmware is based on RUI3.
 next: ../Quickstart/
 prev: ../../
@@ -24,10 +24,10 @@ Thank you for choosing **RAK4630 WisDuo LPWAN Module** in your awesome IoT Proje
 
 The RAK4630 is a low-power long-range transceiver module based on Nordic nRF52840 MCU that supports Bluetooth 5.0 (Bluetooth Low Energy) and the newest SX1262 LoRa transceiver from Semtech. This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications and also supports LoRa Point-to-Point (P2P) communication mode, which helps you in implementing your own customized LoRa network quickly. The two RF communication characteristic of the module (LoRa + BLE) makes it suitable for a variety of applications in the IoT field, such as home automation, sensor networks, building automation, and IoT network applications.
 
-The default firmware of RAK4630 is based on RUI3 (RAKwireless Unified Interface). This allows you to easily use RAK4630 as a stand-alone module by developing your own custom firmware via RUI APIs. You can directly interface sensors and other external peripherals to it without needing an additional MCU. On top of that, RAK4630 can be interfaced to an external host MCU using AT commands via USB, UART, or BLE connection. 
+The default firmware of RAK4630 is based on RUI3 (RAKwireless Unified Interface). This allows you to easily use RAK4630 as a stand-alone module by developing your own custom firmware via RUI APIs. You can directly interface sensors and other external peripherals to it without needing an additional MCU. On top of that, RAK4630 can be interfaced to an external host MCU using AT commands via USB, UART, or BLE connection.
 
 ## Product Features
- 
+
 - **LoRaWAN 1.0.3** specification compliant
 - **Supported bands**: IN865, EU868, AU915, US915, KR920, RU864, and AS923
 - LoRaWAN Activation by OTAA/ABP

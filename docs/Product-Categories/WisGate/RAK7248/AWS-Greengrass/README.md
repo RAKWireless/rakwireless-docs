@@ -1,6 +1,6 @@
 ---
-rak_desc: Contains a comprehensive guide in setting up both your RAK7248 and Amazon Web Services account and permissions. 
-rak_img: /assets/images/wisgate/rak7248/overview/RAK7248_home.png
+rak_desc: Contains a comprehensive guide in setting up both your RAK7248 and Amazon Web Services account and permissions.
+rak_img: /assets/images/wisgate/rak7248/overview/RAK7248.png
 tags:
   - AWS IoT Greengrass
   - wisgate
@@ -45,8 +45,8 @@ To learn more about AWS IoT GreengrassV2, see [how it works](https://docs.aws.am
 Refer to the instructions found at the [Set up your AWS Account](https://docs.aws.amazon.com/iot/latest/developerguide/setting-up.html) guide. Follow the steps outlined in these sections to create your account and a user and get started:
 
 1. Sign up for an AWS account.
-2. Create a user and grant permissions. 
-3. Open the AWS IoT console. 
+2. Create a user and grant permissions.
+3. Open the AWS IoT console.
 
 **Pay special attention to the Notes.**
 
@@ -55,7 +55,7 @@ Refer to the instructions found at the [Set up your AWS Account](https://docs.aw
 Refer to the instructions found at the [Create AWS IoT Resources](https://docs.aws.amazon.com/iot/latest/developerguide/create-iot-resources.html) guide. Follow the steps outlined in these sections to provision resources for your device:
 
 1. Create an AWS IoT Policy.
-2. Create a thing object. 
+2. Create a thing object.
 
 **Pay special attention to the Notes.**
 
@@ -74,7 +74,7 @@ Once you have installed AWS CLI, configure it as per the instructions in this [o
 
 1. Download the [RAK7248-AWS-GreengrassV2](https://downloads.rakwireless.com/LoRa/AWS_GreengrassV2/RAK7248-AWS-GreengrassV2.zip) image.
 2. Download the [balenaEtcher ](https://www.balena.io/etcher/)software. There are options for Windows, macOS, and Linux. Clicking the **Download** button will provide you with the software directly, no installation is required.
-3. Flash image to SD Card. 
+3. Flash image to SD Card.
 
 <rk-img
   src="/assets/images/wisgate/rak7248/supported-lora-network-servers/greengrass/2.etcher.jpg"
@@ -88,16 +88,16 @@ Once you have installed AWS CLI, configure it as per the instructions in this [o
 You can also download the latest Greengrass core software and install it with commands as follows:
 
 ```bash
- $ rm ~/greengrass-nucleus -rf  
- $ wget  https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-nucleus-latest.zip  
- $ unzip greengrass-nucleus-latest.zip -d  ~/greengrass-nucleus  
- $ rm greengrass-nucleus-latest.zip 
+ $ rm ~/greengrass-nucleus -rf
+ $ wget  https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-nucleus-latest.zip
+ $ unzip greengrass-nucleus-latest.zip -d  ~/greengrass-nucleus
+ $ rm greengrass-nucleus-latest.zip
 ```
 
 2. Verify the version of the AWS IoT Greengrass Core software:
 
 ```bash
- $ java -jar  ~/greengrass-nucleus/lib/Greengrass.jar --version    
+ $ java -jar  ~/greengrass-nucleus/lib/Greengrass.jar --version
 ```
 
 3. You will see the Greengrass version displayed - similar to: **AWS Greengrass v2.4.0**.
@@ -116,7 +116,7 @@ export AWS_SECRET_ACCESS_KEY=<the secret access key for your account>
 
 #### Run the Installer
 
-1. Run the installer as shown below. Modify the values as per your region, install directory, and thing name. 
+1. Run the installer as shown below. Modify the values as per your region, install directory, and thing name.
 2. Use the **--provision true** option to have the installer set up the "thing" and required policies for you. If you prefer to configure Greengrass manually, see the [online guide](https://docs.aws.amazon.com/greengrass/v2/developerguide/manual-installation.html).
 
 ```bash
@@ -159,7 +159,7 @@ aws greengrassv2 list-effective-deployments --core-device-thing-name thing-name
 
 5. When the status is SUCCEEDED, run the following command to verify that the Greengrass CLI is installed and runs on your device. Replace /greengrass/v2 with the path to the base folder on your device as needed.
 
-```bash 
+```bash
 /greengrass/v2/bin/greengrass-cli help
 ```
 
@@ -178,7 +178,7 @@ Follow the instructions online at [Upload your component](https://docs.aws.amazo
 
 ## Debugging
 
-If you experience any issues, you can check the logs located in the **/var/log/** directory. 
+If you experience any issues, you can check the logs located in the **/var/log/** directory.
 
 ## Troubleshooting
 

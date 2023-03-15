@@ -94,7 +94,7 @@
       </q-page-container>
       <q-footer>
         <rk-footer />
-        <rk-banner />
+        <!-- <rk-banner /> -->
       </q-footer>
     </q-layout>
   </ClientOnly>

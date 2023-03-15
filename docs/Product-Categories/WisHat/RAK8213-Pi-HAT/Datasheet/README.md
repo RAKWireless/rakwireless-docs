@@ -6,7 +6,7 @@ tags:
   - RAK8213 Pi HAT
 prev: ../Overview/
 rak_desc: Provides comprehensive information about your RAK8213 Pi HAT to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wishat/rak8213-pi-hat/overview/RAK8213-PiHat_home.png
+rak_img: /assets/images/wishat/rak8213-pi-hat/overview/RAK8213-Pi-Hat.png
 
 ---
 

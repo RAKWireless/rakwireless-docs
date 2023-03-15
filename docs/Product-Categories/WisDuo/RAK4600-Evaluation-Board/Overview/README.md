@@ -1,6 +1,6 @@
 ---
 static_root: /assets/images/wisduo/rak4600-evaluation-board/overview
-rak_img: /assets/images/wisduo/rak4600-evaluation-board/overview/RAK4600_Evaluation_home.png
+rak_img: /assets/images/wisduo/rak4600-evaluation-board/overview/RAK4600-Evaluation.png
 rak_desc: The RAK4600 evaluation board makes it simple to evaluate the RAK4600 stamp module. The base board allows to test WisBlock Sensor and WisBlock IO modules.
 rak_grp: [wisduo, evb]
 prev: ../../
@@ -18,7 +18,7 @@ Thank you for choosing **RAK4600 Evaluation Board** in your awesome IoT Project!
 * [AT Command Manual](../AT-Command-Manual/)
 * [Datasheet](../Datasheet/)
 * [RAK4600 Evaluation Board 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/RAK4600_EVALUATION_BOARD.stp)
-  
+
 ## Product Description
 
 RAK4600 Evaluation Board is designed to give you a quick start to explore the LoRa/LPWAN world. The board measures 30 x 60&nbsp;mm and supports USB power supply, 3.7&nbsp;V LiPo battery, and 5&nbsp;V solar charging.

@@ -1,13 +1,12 @@
 ---
-rak_desc: Contains instructions and tutorials in installing and deploying your RAK11721 Breakout Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module. 
+rak_desc: Contains instructions and tutorials in installing and deploying your RAK11721 Breakout Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
 prev: ../Overview/
 next: ../Datasheet/
 tags:
     - wisduo
     - AT Command Manual
     - RAK11721 Breakout Board
-rak_img: /assets/images/wisduo/rak11721-breakout-board/overview/RAK11721_Breakout_home.png
-
+rak_img: /assets/images/wisduo/rak11721-breakout-board/overview/RAK11721-Breakout.png
 ---
 
 # RAK11721 AT Command Manual

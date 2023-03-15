@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK7243C to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisgate/rak7243c/quickstart/1.product-overview/1.index/RAK7243C_home.png
+rak_img: /assets/images/wisgate/rak7243c/quickstart/1.product-overview/1.index/RAK7243C.png
 tags:
   - datasheet
   - wisgate
@@ -68,7 +68,7 @@ The following figure shows the basic concept of the of the system for LoRaWAN®.
 
 ### Hardware
 
-The hardware specification is categorized into six parts. It discusses the interfacing, pinouts, and the corresponding functions and diagrams of the board. It also covers the parameters and the standard values of the antenna, and the electrical and environmental requirements. 
+The hardware specification is categorized into six parts. It discusses the interfacing, pinouts, and the corresponding functions and diagrams of the board. It also covers the parameters and the standard values of the antenna, and the electrical and environmental requirements.
 
 #### Interfaces
 

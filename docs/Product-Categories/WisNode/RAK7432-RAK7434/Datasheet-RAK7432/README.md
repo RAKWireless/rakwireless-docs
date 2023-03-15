@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK7432 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisnode/rak7432-rak7434/overview/rak7432-rak7434_home.png
+rak_img: /assets/images/wisnode/rak7432-rak7434/overview/RAK7432-RAK7434.png
 rak_grp: [wisnode,bridge]
 prev: ../AT-Command-Manual/
 next: ../Datasheet-RAK7434/

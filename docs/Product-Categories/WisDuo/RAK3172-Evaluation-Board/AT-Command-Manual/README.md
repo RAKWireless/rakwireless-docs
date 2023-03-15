@@ -1,12 +1,12 @@
 ---
-rak_desc: For an easier experience with your LoRaWAN Module, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the RAK3172 Evaluation Board. 
+rak_desc: For an easier experience with your LoRaWAN Module, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the RAK3172 Evaluation Board.
 prev: ../Quickstart/
 next: ../Datasheet/
 tags:
     - wisduo
     - AT Command Manual
     - RAK3172 Evaluation Board
-rak_img: /assets/images/wisduo/rak3172-evaluation-board/overview/RAK3172E_Evaluation_home.png
+rak_img: /assets/images/wisduo/rak3172-evaluation-board/overview/RAK3172-Evaluation.png
 
 ---
 
@@ -16,10 +16,10 @@ rak_img: /assets/images/wisduo/rak3172-evaluation-board/overview/RAK3172E_Evalua
 
 The RAK3172 Evaluation WisDuo Board is based on the STM32WLE5CCU6 chip and it is designed to simplify LoRaWAN and LoRa point-to-point (P2P) communication. To integrate LoRa technology into your projects, we implemented an easy-to-use USB interface, through which you can send AT commands. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication.
 
-The RAK3172 Evaluation Board consists of two modules:    
-- RAK3372 WisBlock Core module    
+The RAK3172 Evaluation Board consists of two modules:
+- RAK3372 WisBlock Core module
    The RAK3372 is a module built with the [RAK3172 WisDuo Stamp module](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Overview) on a WisBlock Core-compatible PCB.
-- RAK5005-O Base Board    
+- RAK5005-O Base Board
    The RAK5005-O is a WisBlock Base Board that provides a power supply, battery connector, solar panel charging connector, one IO-Slot, and four small extension slots to use WisBlock modules with the evaluation board. You can find detailed information in the [RAK5005-O Documentation](/Product-Categories/WisBlock/RAK5005-O/Overview).
 
 The USB serial communication is exposed on the USB connector or the RAK5005-O base board. The default parameters of the UART2 communication are **115200 / 8-N-1**. Firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK3172-E Module Datasheet](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Datasheet).
@@ -29,7 +29,7 @@ The USB serial communication is exposed on the USB connector or the RAK5005-O ba
 For AT commands example usage, you can check these sections of the quick start guide:
 
 - [TTN OTAA Guide](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Quickstart/#ttn-otaa-device-registration) - How to add OTAA device on TTN and what AT commands to use on RAK3172-E OTAA activation.
-- [TTN ABP Guide](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Quickstart/#ttn-abp-device-registration) - How to add ABP device on TTN and what AT commands to use on RAK3172-E ABP activation. 
+- [TTN ABP Guide](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Quickstart/#ttn-abp-device-registration) - How to add ABP device on TTN and what AT commands to use on RAK3172-E ABP activation.
 - [Chirpstack OTAA Guide](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Quickstart/#chirpstack-otaa-device-registration) - How to add OTAA device to Chirpstack and what AT commands to use on RAK3172-E OTAA activation.
 - [Chirpstack ABP Guide](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Quickstart/#chirpstack-abp-device-registration) - How to add ABP device on Chirpstack and what AT commands to use on RAK3172-E ABP activation.
 - [LoRa P2P](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Quickstart/#lora-p2p-mode) - Point to point communication between two RAK3172-E modules.
@@ -37,7 +37,7 @@ For AT commands example usage, you can check these sections of the quick start g
 
 ## AT Commands List
 
-There are two AT Commands set for RAK3172-E depending on the firmware uploaded on the device. 
+There are two AT Commands set for RAK3172-E depending on the firmware uploaded on the device.
 
 1. [RUI3 AT Commands](/RUI3/Serial-Operating-Modes/AT-Command-Manual)
 
@@ -115,7 +115,7 @@ The possible status codes are:
 | `AT_RX_ERROR`            | Error detected during the reception of the command.  |
 | `AT_DUTYCYLE_RESTRICTED` | Duty cycle limited and cannot send data.             |
 
-More details on each command description and examples are given in the remainder of this section. 
+More details on each command description and examples are given in the remainder of this section.
 
 :::tip 📝 NOTE:
 
@@ -134,7 +134,7 @@ This section describes the generic commands related to the “attention” help 
 - [AT+SN - Device serial number](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-sn)
 - [AT+BAUD - Baud rate setting](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-baud)
 
-### AT 
+### AT
 
 Description: Attention
 
@@ -154,9 +154,9 @@ AT
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### ATZ 
+### ATZ
 
 Description: MCU reset
 
@@ -174,9 +174,9 @@ ATZ
 
 LoRa (R) is a registered trademark or service mark of Semtech Corporation or its affiliates. LoRaWAN (R) is a licensed mark.
 
-______  ___   _   __  _    _ _          _               
-| ___ \/ _ \ | | / / | |  | (_)        | |              
-| |_/ / /_\ \| |/ /  | |  | |_ _ __ ___| | ___  ___ ___ 
+______  ___   _   __  _    _ _          _
+| ___ \/ _ \ | | / / | |  | (_)        | |
+| |_/ / /_\ \| |/ /  | |  | |_ _ __ ___| | ___  ___ ___
 |    /|  _  ||    \  | |/\| | | '__/ _ \ |/ _ \/ __/ __|
 | |\ \| | | || |\  \ \  /\  / | | |  __/ |  __/\__ \__ \
 \_| \_\_| |_/\_| \_/  \/  \/|_|_|  \___|_|\___||___/___/
@@ -185,9 +185,9 @@ RAK3172-H Version:v1.0.2 May 26 2021
 Current Work Mode: LoRaWAN.
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### ATR 
+### ATR
 
 Description: Restore default parameters
 
@@ -204,9 +204,9 @@ ATR
 
 LoRa (R) is a registered trademark or service mark of Semtech Corporation or its affiliates. LoRaWAN (R) is a licensed mark.
 
-______  ___   _   __  _    _ _          _               
-| ___ \/ _ \ | | / / | |  | (_)        | |              
-| |_/ / /_\ \| |/ /  | |  | |_ _ __ ___| | ___  ___ ___ 
+______  ___   _   __  _    _ _          _
+| ___ \/ _ \ | | / / | |  | (_)        | |
+| |_/ / /_\ \| |/ /  | |  | |_ _ __ ___| | ___  ___ ___
 |    /|  _  ||    \  | |/\| | | '__/ _ \ |/ _ \/ __/ __|
 | |\ \| | | || |\  \ \  /\  / | | |  __/ |  __/\__ \__ \
 \_| \_\_| |_/\_| \_/  \/  \/|_|_|  \___|_|\___||___/___/
@@ -215,9 +215,9 @@ RAK3172-H Version:v1.0.2 May 26 2021
 Current Work Mode: LoRa P2P.
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### ATE 
+### ATE
 
 Description: Set command echo
 
@@ -235,9 +235,9 @@ ATE
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+SN  
+### AT+SN
 
 Description: Serial number
 
@@ -256,9 +256,9 @@ AT+SN=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+BAUD 
+### AT+BAUD
 
 Description: Baudrate setting
 
@@ -271,7 +271,7 @@ This command is used to configure the baud rate of the device.
 | **`AT+BAUD=<Input Parameter>`** | `4800`,`9600` or `115200` | -                                                             | `OK` or `AT_PARAM_ERROR` |
 
 :::tip 📝 NOTE:
-You need to restart the module for the new baud rate to take effect. 
+You need to restart the module for the new baud rate to take effect.
 :::
 
 **Example**:
@@ -288,11 +288,11 @@ AT+BAUD=100000
 AT_PARAM_ERROR
 ```
 
-[Back](#content)  
+[Back](#content)
 
 #### Keys, IDs, and EUIs Management
 
-This section describes the commands related to the activation of the end device. EUI's and Keys are **MSB first**.  
+This section describes the commands related to the activation of the end device. EUI's and Keys are **MSB first**.
 
 - [AT+DEVEUI - Set or get device EUI](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-deveui)
 - [AT+APPEUI - Set or get application EUI](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-appeui)
@@ -301,7 +301,7 @@ This section describes the commands related to the activation of the end device.
 - [AT+APPSKEY - Set or get application session key](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-appskey)
 - [AT+NWKSKEY - Set or get network session key](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-nwkskey)
 
-### AT+DEVEUI 
+### AT+DEVEUI
 
 Description: Device EUI or DEVEUI
 
@@ -328,9 +328,9 @@ AT+DEVEUI=112233445566778800
 AT_PARAM_ERROR
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+APPEUI  
+### AT+APPEUI
 
 Description: Application unique identifier
 
@@ -357,9 +357,9 @@ AT+APPEUI=0080E11500004CF61234
 AT_PARAM_ERROR
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+APPKEY 
+### AT+APPKEY
 
 Description: Application key
 
@@ -386,9 +386,9 @@ AT+APPKEY=01020AFBA1CD4D20010230405A6B7F
 AT_PARAM_ERROR
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+DEVADDR 
+### AT+DEVADDR
 
 Description: Device address or DEVADDR
 
@@ -415,9 +415,9 @@ AT+DEVADDR=01020A0BCC
 AT_PARAM_ERROR
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+APPSKEY 
+### AT+APPSKEY
 
 Description: Application session key
 
@@ -444,9 +444,9 @@ AT+APPSKEY=01020AFBA1CD4D20010230405A6B7F
 AT_PARAM_ERROR
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+NWKSKEY 
+### AT+NWKSKEY
 
 Description: Network session keys
 
@@ -473,7 +473,7 @@ AT+NWKSKEY=01020AFBA1CD4D20010230405A6B7F
 AT_PARAM_ERROR
 ```
 
-[Back](#content)  
+[Back](#content)
 
 #### Joining and Sending Data to LoRaWAN Network
 
@@ -487,7 +487,7 @@ This section describes the commands related to the joining process of the device
 - [AT+CFS - Status of last payload if confirmed or unconfirmed](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-cfs)
 - [AT+RECV - Read last received data](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-recv)
 
-### AT+NJM 
+### AT+NJM
 
 Description: LoRaWAN network join mode
 
@@ -514,9 +514,9 @@ AT+NJM=2
 AT_PARAM_ERROR
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+CFM 
+### AT+CFM
 
 Description: Confirmed payload mode
 
@@ -543,7 +543,7 @@ AT+CFM=2
 AT_PARAM_ERROR
 ```
 
-[Back](#content)  
+[Back](#content)
 
 ### AT+JOIN
 
@@ -590,9 +590,9 @@ If joining fails, make sure your device is within the coverage of the gateway. A
 
 :::
 
-[Back](#content)  
+[Back](#content)
 
-### AT+NJS 
+### AT+NJS
 
 Description: Network join status
 
@@ -611,9 +611,9 @@ AT+NJS=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+SEND 
+### AT+SEND
 
 Description: Send payload data
 
@@ -649,9 +649,9 @@ OK
 +EVT:3:4321
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+CFS 
+### AT+CFS
 
 Description: Confirm status
 
@@ -685,9 +685,9 @@ OK
 
 :::
 
-[Back](#content)  
+[Back](#content)
 
-### AT+RECV 
+### AT+RECV
 
 Description: Last received data
 
@@ -717,7 +717,7 @@ When called twice, without new data received between the calls, the second `AT+R
 `OK`
 :::
 
-[Back](#content)  
+[Back](#content)
 
 #### LoRaWAN Device Configuration
 
@@ -744,7 +744,7 @@ This section describes the commands related to the configuration of the LoRaWAN 
 - [AT+PNM - Public Network Mode](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-pnm)
 
 
-### AT+ADR 
+### AT+ADR
 
 Description: Adaptive data rate
 
@@ -767,9 +767,9 @@ AT+ADR=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+CLASS 
+### AT+CLASS
 
 Description: LoRaWAN class
 
@@ -817,9 +817,9 @@ OK
 :::
 
 
-[Back](#content)  
+[Back](#content)
 
-### AT+DCS 
+### AT+DCS
 
 Description: Duty cycle settings
 
@@ -843,9 +843,9 @@ AT+DCS=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+DUTYTIME 
+### AT+DUTYTIME
 
 Description: Get the duty cycle time
 
@@ -864,9 +864,9 @@ AT+DUTYTIME=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+DR 
+### AT+DR
 
 Description: Data rate settings
 
@@ -894,9 +894,9 @@ OK
 `AT+DR` command will return `AT+ERROR` if ADR is active via the `AT+ADR` command.
 :::
 
-[Back](#content)  
+[Back](#content)
 
-### AT+JN1DL 
+### AT+JN1DL
 
 Description: Join delay on RX1 window
 
@@ -920,9 +920,9 @@ AT+JN1DL=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+JN2DL 
+### AT+JN2DL
 
 Description: Join delay on RX2 window
 
@@ -945,9 +945,9 @@ AT+JN2DL=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+RX1DL 
+### AT+RX1DL
 
 Description: Delay on RX1 window
 
@@ -971,9 +971,9 @@ AT+RX1DL=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+RX2DL 
+### AT+RX2DL
 
 Description: Delay on RX2 window
 
@@ -996,9 +996,9 @@ AT+RX2DL=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+RX2DR 
+### AT+RX2DR
 
 Description: Data Rate on RX2 window
 
@@ -1022,9 +1022,9 @@ AT+RX2DR=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+RX2FQ 
+### AT+RX2FQ
 
 Description: Frequency of the RX2 window
 
@@ -1051,9 +1051,9 @@ OK
 RX2 Frequency via the `AT+RX2FQ` command has a preset value depending on the regional band you selected via the `AT+BAND` command.
 :::
 
-[Back](#content)  
+[Back](#content)
 
-### AT+TXP 
+### AT+TXP
 
 Description: Transmit Power
 
@@ -1080,9 +1080,9 @@ AT+TXP=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+RETY 
+### AT+RETY
 
 Description: Confirmed payload retransmission
 
@@ -1105,9 +1105,9 @@ AT+RETY=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+MASK 
+### AT+MASK
 
 Description: Setting masked channels
 
@@ -1148,9 +1148,9 @@ AT+MASK=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+BAND 
+### AT+BAND
 
 Description: Regional frequency band
 
@@ -1191,13 +1191,13 @@ AT+BAND=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+LPSEND 
+### AT+LPSEND
 
 Description: Long data payload
 
-This command is used to send a long data payload up to 1024 bytes. The total number of payload uplinks is dependent on the DR set using `AT+DR` and the frequency band using `AT+BAND`. It follows the limits set on the LoRaWAN Regional Specification. 
+This command is used to send a long data payload up to 1024 bytes. The total number of payload uplinks is dependent on the DR set using `AT+DR` and the frequency band using `AT+BAND`. It follows the limits set on the LoRaWAN Regional Specification.
 
 
 | Command                           | Input Parameter              | Return Value                                               | Return Code              |
@@ -1206,7 +1206,7 @@ This command is used to send a long data payload up to 1024 bytes. The total num
 | **`AT+LPSEND=<Input Parameter>`** | **port**:**ack**:**payload** | -                                                          | `OK` or `AT_PARAM_ERROR` |
 **ack**: 0-unconfirmed, 1-confirmed
 
-This command exclusively works in RAKwireless WisGate Edge LoRaWAN Gateways, in which the long payload is automatically combined in the backend. You need to activate the long payload mode (**Enable LPTP** switch) in the device configuration in the RAKwireless WisGate Edge LoRaWAN Gateway built-in network server, as shown in **Figure 1**, to enable this functionality in the gateway side. 
+This command exclusively works in RAKwireless WisGate Edge LoRaWAN Gateways, in which the long payload is automatically combined in the backend. You need to activate the long payload mode (**Enable LPTP** switch) in the device configuration in the RAKwireless WisGate Edge LoRaWAN Gateway built-in network server, as shown in **Figure 1**, to enable this functionality in the gateway side.
 
 <rk-img
   src="/assets/images/wisduo/RAK3172-Evaluation-Board/at-command/lp_mode.png"
@@ -1240,9 +1240,9 @@ OK
 The large payload via `AT+LPSEND` will be sliced automatically depending on the DR that follows the LoRaWAN specifications. You can check [Appendix III](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#appendix-iii-maximum-transmission-load-by-region) for the maximum size.
 :::
 
-[Back](#content)  
+[Back](#content)
 
-### AT+LINKCHECK 
+### AT+LINKCHECK
 
 Description: Network link status
 
@@ -1282,9 +1282,9 @@ OK
 +EVT:LINKCHECK:0,25,1,-53,11
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+USEND 
+### AT+USEND
 
 Description: Unified Send Data
 
@@ -1309,7 +1309,7 @@ OK
 +EVT:SEND CONFIRMED OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
 ### AT+PNM
 
@@ -1335,21 +1335,21 @@ AT+PNM=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
 #### Class B Mode
 
 This section describes the commands related to Class B mode.
 
 :::tip 📝 NOTE:
-The commands in these sections work in Class B mode. You need to configure your device to Class B via `AT+CLASS=B` to ensure that 
+The commands in these sections work in Class B mode. You need to configure your device to Class B via `AT+CLASS=B` to ensure that
 :::
 
 - [AT+PGSLOT - Slot Periodicity Command](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-pgslot)
 - [AT+BFREQ - Beacon Frequency Command](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-bfreq)
 - [AT+LTIME - Local Time Command](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-ltime)
 
-### AT+PGSLOT 
+### AT+PGSLOT
 
 Description: Slot Periodicity Command
 
@@ -1373,9 +1373,9 @@ AT+PGSLOT=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+BFREQ 
+### AT+BFREQ
 
 Description: Beacon Frequency Command
 
@@ -1402,7 +1402,7 @@ AT+BFREQ=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
 ### AT+LTIME
 
@@ -1423,7 +1423,7 @@ LTIME:03h56m52s on 09/18/2021
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
 #### Device Information
 
@@ -1434,7 +1434,7 @@ This section describes the commands for getting device information.
 - [AT+VER - Version of the firmware](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-ver)
 - [AT+TIMEREQ - UTC time request](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-timereq)
 
-### AT+RSSI 
+### AT+RSSI
 
 Description: Receive signal strength indicator
 
@@ -1458,9 +1458,9 @@ AT+RSSI=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+SNR 
+### AT+SNR
 
 Description: Signal to Noise Ratio
 
@@ -1484,9 +1484,9 @@ AT+SNR=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+VER 
+### AT+VER
 
 Description: Version of the firmware
 
@@ -1505,9 +1505,9 @@ V1.0.4
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+TIMEREQ 
+### AT+TIMEREQ
 
 Description: UTC time request
 
@@ -1549,7 +1549,7 @@ LTIME:02h46m12s on 22/10/2021
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
 #### RF Test
 
@@ -1567,7 +1567,7 @@ This section describes the commands related to RF test management.
 - [AT+TOFF - Stop ongoing radio frequency test](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-toff)
 - [AT+CERTIF - LoRaWAN Certification mode](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-certif)
 
-### AT+CW 
+### AT+CW
 
 Description: Send a continuous wave
 
@@ -1599,9 +1599,9 @@ AT+CW=868000000:20:60
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+TRSSI 
+### AT+TRSSI
 
 Description: Receive Signal Strength Indicator
 
@@ -1621,9 +1621,9 @@ AT+TRSSI
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+TTONE 
+### AT+TTONE
 
 Description: Start radio frequency tone test
 
@@ -1642,9 +1642,9 @@ AT+TTONE
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+TTX 
+### AT+TTX
 
 Description: Start RF Tx LoRa test
 
@@ -1669,9 +1669,9 @@ AT+TTX=3
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+TRX 
+### AT+TRX
 
 Description: Start RF Rx LoRa test
 
@@ -1701,9 +1701,9 @@ AT+TRX=3
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+TCONF 
+### AT+TCONF
 
 Description: Config LoRa RF test
 
@@ -1717,7 +1717,7 @@ This command is used to access and set LoRa configuration test.
 
 :::tip 📝 NOTE:
 Guide on Bandwidth parameter (in Hz):
-`0=7812, 1=15625, 2=31250, 3=62500, 4=125000, 5=250000, 6=500000` 
+`0=7812, 1=15625, 2=31250, 3=62500, 4=125000, 5=250000, 6=500000`
 :::
 
 Examples:
@@ -1726,14 +1726,14 @@ AT+TCONF=?
 1: Freq= 868000000 Hz
 2: Power= 14 dBm
 3: Bandwidth= 125000 Hz
-4: SF= 12 
-5: CR= 4/5 
-6: LNA State= 0  
-7: PA Boost State= 0  
+4: SF= 12
+5: CR= 4/5
+6: LNA State= 0
+7: PA Boost State= 0
 8: modulation LORA
 9: Payload len= 16 Bytes
 10: Frequency deviation not applicable
-11: LowDRopt[0 to 2]= 2 
+11: LowDRopt[0 to 2]= 2
 12 BT product not applicable
 can be copy/paste in set cmd: AT+TCONF=868000000:14:4:12:4/5:0:0:1:16:25000:2:3
 
@@ -1744,9 +1744,9 @@ OK
 
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+TTH 
+### AT+TTH
 
 Description: RF Tx hopping test
 
@@ -1780,9 +1780,9 @@ AT+TTH=p68000000,868300000,100000,4
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+TOFF 
+### AT+TOFF
 
 Description: Stop ongoing radio frequency test
 
@@ -1801,9 +1801,9 @@ Test Stop
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+CERTIF 
+### AT+CERTIF
 
 Description: LoRaWAN Certification mode
 
@@ -1835,7 +1835,7 @@ AT+CERTIF=0
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
 #### P2P Mode
 
@@ -1852,7 +1852,7 @@ This section describes the commands related to LoRa point to point functionality
 - [AT+PSEND - P2P send data](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-psend)
 - [AT+PRECV - P2P receive data window](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-precv)
 
-### AT+NWM 
+### AT+NWM
 
 Description: LoRa network work mode (LoRaWAN or P2P)
 
@@ -1874,9 +1874,9 @@ OK
 AT+NWM=1
 LoRa (R) is a registered trademark or service mark of Semtech Corporation or its affiliates. LoRaWAN (R) is a licensed mark.
 
-______  ___   _   __  _    _ _          _               
-| ___ \/ _ \ | | / / | |  | (_)        | |              
-| |_/ / /_\ \| |/ /  | |  | |_ _ __ ___| | ___  ___ ___ 
+______  ___   _   __  _    _ _          _
+| ___ \/ _ \ | | / / | |  | (_)        | |
+| |_/ / /_\ \| |/ /  | |  | |_ _ __ ___| | ___  ___ ___
 |    /|  _  ||    \  | |/\| | | '__/ _ \ |/ _ \/ __/ __|
 | |\ \| | | || |\  \ \  /\  / | | |  __/ |  __/\__ \__ \
 \_| \_\_| |_/\_| \_/  \/  \/|_|_|  \___|_|\___||___/___/
@@ -1893,9 +1893,9 @@ OK
 AT+NWM=0
 LoRa (R) is a registered trademark or service mark of Semtech Corporation or its affiliates. LoRaWAN (R) is a licensed mark.
 
-______  ___   _   __  _    _ _          _               
-| ___ \/ _ \ | | / / | |  | (_)        | |              
-| |_/ / /_\ \| |/ /  | |  | |_ _ __ ___| | ___  ___ ___ 
+______  ___   _   __  _    _ _          _
+| ___ \/ _ \ | | / / | |  | (_)        | |
+| |_/ / /_\ \| |/ /  | |  | |_ _ __ ___| | ___  ___ ___
 |    /|  _  ||    \  | |/\| | | '__/ _ \ |/ _ \/ __/ __|
 | |\ \| | | || |\  \ \  /\  / | | |  __/ |  __/\__ \__ \
 \_| \_\_| |_/\_| \_/  \/  \/|_|_|  \___|_|\___||___/___/
@@ -1904,9 +1904,9 @@ RAK3172-H Version:v1.0.2 May 26 2021
 Current Work Mode: LoRa P2P.
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+PFREQ 
+### AT+PFREQ
 
 Description: P2P mode frequency
 
@@ -1936,9 +1936,9 @@ AT+PFREQ=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+PSF 
+### AT+PSF
 
 Description: P2P mode spreading factor
 
@@ -1961,9 +1961,9 @@ AT+PSF=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+PBW 
+### AT+PBW
 
 Description: P2P mode bandwidth
 
@@ -1986,9 +1986,9 @@ AT+PBW=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+PCR 
+### AT+PCR
 
 Description: P2P mode coding rate
 
@@ -2011,9 +2011,9 @@ AT+PCR=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+PPL 
+### AT+PPL
 
 Description: P2P mode preamble length
 
@@ -2036,9 +2036,9 @@ AT+PPL=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+PTP 
+### AT+PTP
 
 Description: P2P mode TX power
 
@@ -2061,9 +2061,9 @@ AT+PTP=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+P2P 
+### AT+P2P
 
 Description: P2P configuration settings
 
@@ -2096,9 +2096,9 @@ AT+P2P=?
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+PSEND 
+### AT+PSEND
 
 Description: P2P send data
 
@@ -2120,9 +2120,9 @@ OK
 To successfully transmit P2P, you must have another device configured with the same P2P parameters and ready to receive the payload with the `AT+PRECV` command. The maximum payload in P2P mode is 255 bytes.
 :::
 
-[Back](#content)  
+[Back](#content)
 
-### AT+PRECV 
+### AT+PRECV
 
 Description: P2P receive data window
 
@@ -2149,7 +2149,7 @@ OK
 +EVT:11223344
 ```
 
-[Back](#content)  
+[Back](#content)
 
 #### Multicast Group
 
@@ -2159,7 +2159,7 @@ This section describes the commands related to multicast group functionality.
 - [AT+RMVMULC - Remove multicast group](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-rmvmulc)
 - [AT+LSTMULC - Multicast list](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/#at-lstmulc)
 
-### AT+ADDMULC 
+### AT+ADDMULC
 
 Description: Add multicast group
 
@@ -2188,9 +2188,9 @@ AT+ADDMULC=C:11223344:11223344556677881122334455667788:1122334455667788112233445
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+RMVMULC 
+### AT+RMVMULC
 
 Description: Remove multicast group
 
@@ -2210,9 +2210,9 @@ AT+RMVMULC=11223344
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### AT+LSTMULC 
+### AT+LSTMULC
 
 Description: Multicast list
 
@@ -2231,13 +2231,13 @@ MC1:ClassC:11223344:11223344556677881122334455667788:112233445566778811223344556
 OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
 #### Data Transparent Transmission
 
 This section describes the commands related to transparent data transmission in UART.
 
-### ATD 
+### ATD
 
 Description: Set transparent transmission mode
 
@@ -2267,9 +2267,9 @@ OK
 +EVT:SEND CONFIRMED OK
 ```
 
-[Back](#content)  
+[Back](#content)
 
-### +++ 
+### +++
 
 Description: Stop transparent transmission mode
 
@@ -2284,9 +2284,9 @@ This command is used to stop the transparent transmission mode.
 There must be no any UART termination after `+++`. There must be no CR or LF after the `+++` command else it will be transmitted as payload and the device will continue in Data Transparent Transmission mode.
 :::
 
-[Back](#content)  
+[Back](#content)
 
-#### Appendix 
+#### Appendix
 
 ### Appendix I：Data Rate by Region
 
@@ -2380,7 +2380,7 @@ There must be no any UART termination after `+++`. There must be no CR or LF aft
 
 <b> EU868 </b>
 
-By default, MaxEIRP is considered to be +16&nbsp;dBm. 
+By default, MaxEIRP is considered to be +16&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -2412,7 +2412,7 @@ By default, MaxEIRP is considered to be +16&nbsp;dBm.
 
 <b> AU915 </b>
 
-By default, MaxEIRP is considered to be +30&nbsp;dBm. 
+By default, MaxEIRP is considered to be +30&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -2425,7 +2425,7 @@ By default, MaxEIRP is considered to be +30&nbsp;dBm.
 
 <b> KR920 </b>
 
-By default, MaxEIRP is considered to be +14&nbsp;dBm. 
+By default, MaxEIRP is considered to be +14&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -2485,7 +2485,7 @@ By default, MaxEIRP is considered to be 30&nbsp;dBm.
 
 <b> RU864 </b>
 
-By default, MaxEIRP is considered to be +16&nbsp;dBm. 
+By default, MaxEIRP is considered to be +16&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
 | ------- | -------------------- |
@@ -2709,7 +2709,7 @@ M in the following list is the length with MAC header, N is the maximum usable p
 | 6         | 250         | 242         |
 | 7         | 250         | 242         |
 | 8 ~ 15    | Not Defined | Not Defined |
- 
+
 <br>
 
 <b> RU864 </b>

@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisgate/rak7243/quickstart/1.main/RAK7243_home.png
+rak_img: /assets/images/wisgate/rak7243/quickstart/1.main/RAK7243.png
 rak_desc: RAK7243 is a RAK2245 Pi HAT stacked on the top of a Single Board Computer (SBC) such as Raspberry Pi 3B+ which is enclosed in a Pilot Gateway Casing. It comes with a built-in GPS and a large heat sink for thermal dissipation.
 rak_grp: [wisgate, developer]
 prev: ../../
@@ -27,9 +27,9 @@ Purchasing the [RAK2013 WisLink Cellular Pi Hat](../../RAK2013) separately with 
 
 ## Product Description
 
-The **RAK7243 WisGate Developer D3 Gateway** is a device that consists of Raspberry Pi 3B+, RAK2245 Pi HAT, which includes a GPS module, and a heat sink for better performance and thermal heat dissipation management. Its housing is built with an aluminum casing. 
+The **RAK7243 WisGate Developer D3 Gateway** is a device that consists of Raspberry Pi 3B+, RAK2245 Pi HAT, which includes a GPS module, and a heat sink for better performance and thermal heat dissipation management. Its housing is built with an aluminum casing.
 
-For the built-in RAK2245 Pi HAT, the SX1301 chip from Semtech is used, which is a built-in LPWAN concentrator IP core, a powerful digital signal processing engine. It can receive up to 8 LoRa packets simultaneously sent with different spreading factors on different channels and is available in multiple variants, so it can be used for international standard bands. This unique capability allows for the implementation of innovative network architectures advantageous over other short-range systems. 
+For the built-in RAK2245 Pi HAT, the SX1301 chip from Semtech is used, which is a built-in LPWAN concentrator IP core, a powerful digital signal processing engine. It can receive up to 8 LoRa packets simultaneously sent with different spreading factors on different channels and is available in multiple variants, so it can be used for international standard bands. This unique capability allows for the implementation of innovative network architectures advantageous over other short-range systems.
 
 Pilot Gateway Pro is ideal for prototyping, proof-of-concept demonstration, or evaluation. It includes a ready-to-use gateway OS that can be connected to a LoRaWan server. Also, it is developer-friendly and even for not-so-techy users to set up the LoRaWan system. It has to be the best value and function for connectivity to address a variety of applications like Smart Grid, Intelligent Farm, and other IoT enterprise applications.
 
@@ -40,7 +40,7 @@ Pilot Gateway Pro is ideal for prototyping, proof-of-concept demonstration, or e
 - Preassembled, fully functioning gateway
 - **SX1301 baseband processor**, emulates 49 x LoRa demodulators 10 programmable parallel demodulation paths, supports 8 uplinks channel and 1 downlink channel
 - Built-in **Ublox MAX-7Q GPS Module**
-- Built-in heat sink for thermal heat dissipation management 
+- Built-in heat sink for thermal heat dissipation management
 - Supports 5&nbsp;V / 2.5&nbsp;A power supply
 - TX power up to 27&nbsp;dBm, RX sensitivity down to -139&nbsp;dBm@SF12, BW 125&nbsp;kHz
 - Frequency band support: EU433, CN470, RU864, IN865, EU868, US915, AU915, KR920, AS923

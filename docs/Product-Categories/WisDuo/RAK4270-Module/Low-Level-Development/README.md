@@ -1,9 +1,9 @@
 ---
 rak_desc: Aside from the default RAK firmware on the RAK4270 Module, you can create custom firmware using RUI (RAKwireless Unified Interface) or the actual SDK from the manufacturer of the microcontroller that is used inside the module.
-rak_img: /assets/images/wisduo/rak4270-module/overview/RAK4270_Module_Home.png
+rak_img: /assets/images/wisduo/rak4270-module/overview/RAK4270-Module.png
 prev: ../AT-Command-Manual/
 next: ../Datasheet/
-tags: 
+tags:
   - wisduo
   - RAK4270
 ---
@@ -13,11 +13,11 @@ tags:
 
 ## Overview
 
-RAK4270 module comes with a standard version of firmware that allows you to configure its functionality via AT commands. This simplicity helps you develop LoRa(P2P) and LoRaWAN projects quickly. 
+RAK4270 module comes with a standard version of firmware that allows you to configure its functionality via AT commands. This simplicity helps you develop LoRa(P2P) and LoRaWAN projects quickly.
 
 Further customization of the firmware can be done through the [RUI (RAKwireless Unified Interface) Online compiler](/RUI/). RAK's LoRa modules support not only out-of-the-box integration via AT commands but also allow you to customize RAK4270 firmware and access other functionalities of the internal MCU using RUI API. More so, you can adapt and extend the logic in the firmware to meet your requirements.
 
-Additionally, RAK offers a third alternative for advanced customers who need to have deeper integration of their solutions with these modules. In this alternative, you could develop your own version of STM32 firmware that runs inside of the RAK4270 module. 
+Additionally, RAK offers a third alternative for advanced customers who need to have deeper integration of their solutions with these modules. In this alternative, you could develop your own version of STM32 firmware that runs inside of the RAK4270 module.
 
 ## How to Implement Your Own Firmware
 
@@ -27,15 +27,15 @@ One of the essential aspects that allows you to develop your own version of firm
 
 :::tip 📝 NOTE:
 
-There are two versions of the RAK4270 module: the high-frequency band RAK4270(H) used on EU868, US915, AU915, KR920, AS923, and IN865, and the low-frequency band RAK4270(L) used on EU433 and CN470. These two modules share the same schematic diagram which will be helpful to you when you develop your own firmware. 
+There are two versions of the RAK4270 module: the high-frequency band RAK4270(H) used on EU868, US915, AU915, KR920, AS923, and IN865, and the low-frequency band RAK4270(L) used on EU433 and CN470. These two modules share the same schematic diagram which will be helpful to you when you develop your own firmware.
 
 :::
 
 ### Porting Lora Protocol Stack
 
-When implementing the LoRa protocol stack, special attention must be given to the SPI connections since the LoRa transceivers are controlled by the MCU through an SPI interface. Hence, the following are the important pins: **SPI1_MISO, SPI1_MOSI, SPI_NSS, SPI_CLK**. 
+When implementing the LoRa protocol stack, special attention must be given to the SPI connections since the LoRa transceivers are controlled by the MCU through an SPI interface. Hence, the following are the important pins: **SPI1_MISO, SPI1_MOSI, SPI_NSS, SPI_CLK**.
 
-Additionally, the DIO pins and RF signal paths are significant as well to have functional LoRa communication. Another important thing to consider is the RF switch logic table. The complete details of pin connections can be found on the [RAK4270 Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/). 
+Additionally, the DIO pins and RF signal paths are significant as well to have functional LoRa communication. Another important thing to consider is the RF switch logic table. The complete details of pin connections can be found on the [RAK4270 Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/).
 
 After that, the **Real-Time Clock (RTC)** must be properly configured in the MCU to ensure accurate timing of the protocol stack during the runtime. Finally, the protocol stack code can be added after configuring the other pins.
 

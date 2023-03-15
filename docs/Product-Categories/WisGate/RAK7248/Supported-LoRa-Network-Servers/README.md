@@ -1,6 +1,6 @@
 ---
-rak_desc: Contains a comprehensive guide in setting up both your RAK7248 and Amazon Web Services account and permissions. 
-rak_img: /assets/images/wisgate/rak7248/overview/RAK7248_home.png
+rak_desc: Contains a comprehensive guide in setting up both your RAK7248 and Amazon Web Services account and permissions.
+rak_img: /assets/images/wisgate/rak7248/overview/RAK7248.png
 tags:
   - AWS
   - wisgate
@@ -18,9 +18,9 @@ prev: ../Quickstart/
 Execute the following steps to set up your AWS account and permissions:
 ### Set Up Your AWS Account and Permissions
 
-If you don't have an AWS account, refer to the instructions in the guide here. The relevant sections are **Sign up for an AWS account** and **Create a user and grant permissions**.  
+If you don't have an AWS account, refer to the instructions in the guide here. The relevant sections are **Sign up for an AWS account** and **Create a user and grant permissions**.
 
-#### Overview 
+#### Overview
 
 The high-level steps to get started with AWS IoT Core for LoRaWAN are as follows:
 
@@ -28,7 +28,7 @@ The high-level steps to get started with AWS IoT Core for LoRaWAN are as follows
 2. Add a Gateway (see section [Add the Gateway to AWS IoT](#add-the-gateway-to-aws-iot))
 3. Add Device(s) (see section [Add a LoRaWAN Device to AWS IoT](#add-a-lorawan-device-to-aws-iot))
     - Verify device and service profiles
-    - Set up a Destination to which device traffic will be routed and processed by a rule.  
+    - Set up a Destination to which device traffic will be routed and processed by a rule.
 
 These steps are discussed as you browse through this guide. For additional details, refer to the AWS LoRaWAN developer guide.
 
@@ -64,9 +64,9 @@ To register the gateway with AWS IoT Core for LoRaWAN, follow the steps in the [
 
 #### Add a LoRaWAN Device to AWS IoT
 
-##### Preparation 
+##### Preparation
 
-- Go to the datasheet to learn more about the [RAK4631 WisBlock LPWAN Module](/Product-Categories/WisBlock/RAK4631/Datasheet/#rak4631-wisblock-lpwan-module-datasheet). 
+- Go to the datasheet to learn more about the [RAK4631 WisBlock LPWAN Module](/Product-Categories/WisBlock/RAK4631/Datasheet/#rak4631-wisblock-lpwan-module-datasheet).
 - Follow the steps in the [online guide](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-onboard-end-devices.html) under the **Before onboarding your wireless device** section, then proceed to the [**Add your wireless device to AWS IoT Core for LoRaWAN**](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-end-devices-add.html) section.
 
 
@@ -109,7 +109,7 @@ sudo apt update
 sudo apt upgrade
 ```
 
-2. Now, register the gateway in AWS IoT Core for LoRaWAN. To register your gateway, you will need the device’s EUI. To find the gateway’s EUI, run the command below to open the Graphics User Interface (GUI). The EUI can be found on the top of the GUI: 
+2. Now, register the gateway in AWS IoT Core for LoRaWAN. To register your gateway, you will need the device’s EUI. To find the gateway’s EUI, run the command below to open the Graphics User Interface (GUI). The EUI can be found on the top of the GUI:
 
 ```bash
 sudo gateway-config
@@ -282,7 +282,7 @@ pi@rak-gateway:~/basicstation/example/corecell/lns-aws $ sudo kill 28165
 
 17. Now, you can start basics station. Exit the configuration folder and start basics station.
 
-```bash    
+```bash
 cd ..
 ./start-station.sh –l ./lns-aws
 ```
@@ -314,7 +314,7 @@ Follow the instructions in the [online guide](https://docs.aws.amazon.com/iot/la
 
 ### Verifying Operation
 
-Once setup is completed, provisioned OTAA devices can join the network and start to send messages. Messages from devices can then be received by AWS IoT Core for LoRaWAN and forwarded to the IoT Rules Engine. 
+Once setup is completed, provisioned OTAA devices can join the network and start to send messages. Messages from devices can then be received by AWS IoT Core for LoRaWAN and forwarded to the IoT Rules Engine.
 
 Instructions for a sample Hello World application are given below, assuming that the device has joined and is capable of sending uplink traffic.
 
@@ -334,8 +334,8 @@ Create the lambda function to process device messages processed by the destinati
 2. In the navigation pane, click on **Functions**, then **Create function**.
 3. Select **Author from scratch**.
 4. Under **Basic Information**, enter the function name and choose _**Runtime Python 3.8**_. from the drop-down under **Runtime**.
-5. Click on **Create function**. 
-6. Under **Function code**, paste the copied code into the editor under the _**lambda_function.py**_ tab. 
+5. Click on **Create function**.
+6. Under **Function code**, paste the copied code into the editor under the _**lambda_function.py**_ tab.
 
     ```python
     import base64
@@ -406,7 +406,7 @@ Create the lambda function to process device messages processed by the destinati
     -  On the **Permissions tab**, find the policy name and select it.
     -  Choose **Edit policy**, and choose the **JSON** tab.
     -  Append the following to the Statement section of the policy to allow publishing to AWS IoT.
-    
+
     ```json
     {
     "Effect":"Allow",
@@ -425,7 +425,7 @@ Create the lambda function to process device messages processed by the destinati
     - In the drop-down, for the _**Select a test event**_, choose **Configure test events**.
     - Enter a name for the test event under the **Event name**.
     - Paste the following sample payload in the area under Event name:
-  
+
   ```json
       {
       "WirelessDeviceId": "65d128ab-90dd-4668-9556-fe47c589610b",
@@ -473,8 +473,8 @@ Create the lambda function to process device messages processed by the destinati
 
 In this section, you create the IoT rule that forwards the device payload to your application. This rule is associated with the destination created earlier in [Set up a Destination for Device Traffic](#set-up-a-destination-for-device-traffic) section.
 
-1. Navigate to the [AWS IoT console](http://console.aws.amazon.com/iot). 
-2. In the navigation pane, choose **Act**, then select **Rules**. 
+1. Navigate to the [AWS IoT console](http://console.aws.amazon.com/iot).
+2. In the navigation pane, choose **Act**, then select **Rules**.
 3. On the Rules page, choose **Create**.
 4. On the Create a rule page, enter as follows:
       - Name: **LoRaWANRouting**
@@ -500,7 +500,7 @@ In this section, you create the IoT rule that forwards the device payload to you
 17. Then, choose **Create rule**.
 18. A "**Success**" message will be displayed at the top of the panel, and the destination has a rule bound to it.
 
-You can now check that the decoded data is received and republished by AWS by triggering a condition or event on the device itself.  
+You can now check that the decoded data is received and republished by AWS by triggering a condition or event on the device itself.
 
 - Go to the AWS IoT console. In the navigation pane, select **Test**, and choose **MQTT client**.
 - Subscribe to the wildcard topic **#** to receive messages from all topics.
@@ -551,11 +551,11 @@ You will be using the Amazon Simple Notification Service to send text messages (
 
 1. Go to the [Amazon SNS console](http://console.aws.amazon.com/sns).
 2. Click on the menu to open the navigation pane.
-3. Select **Text Messaging** (SMS) and choose **Publish text message**. 
+3. Select **Text Messaging** (SMS) and choose **Publish text message**.
 4. Under the Message type, select **Promotional**.
 5. Enter your phone number (phone number that will receive text alerts).
 6. Enter **Test message** for the Message and choose **Publish** message.
-7. If the phone number you entered is valid, you will receive a text message and your phone number will be confirmed. 
+7. If the phone number you entered is valid, you will receive a text message and your phone number will be confirmed.
 8. Create an Amazon SNS Topic as follows:
       - In the navigation pane, choose **Topics**.
       - Select **Create topic**.
@@ -579,7 +579,7 @@ Now, add a new rule to send an Amazon SNS notification when certain conditions a
 3. On the Rules page, choose **Create**.
 4. Enter the Name as _text_alert_ and provide an appropriate **Description**.
 5. Under the **Rule query statement**, enter the following query:
-  
+
   ```sql
       SELECT devEui as device_id, "Temperature exceeded 25" as message, temperature as temp, timestamp as time FROM '+/project/sensor/decoded' where temperature > 25
   ```
@@ -670,7 +670,7 @@ SYSLOG:4:LoRa Tx :
 
 ##### IoT Analytics
 
-You will use IoT Analytics to visually display data via graphs if there is a need in the future to do further analysis. 
+You will use IoT Analytics to visually display data via graphs if there is a need in the future to do further analysis.
 
 ###### Create an IoT Analytics Rule
 
@@ -714,7 +714,7 @@ You will use IoT Analytics to visually display data via graphs if there is a nee
 
 ###### Configure Amazon QuickSight
 
-Amazon QuickSight lets you easily create and publish interactive BI dashboards that include Machine Learning-powered insights.  
+Amazon QuickSight lets you easily create and publish interactive BI dashboards that include Machine Learning-powered insights.
 
 1. Go to [AWS Management console](http://console.aws.amazon.com/).
 2. From the management console, enter **QuickSight** in the "_Search for services, features.._" search box.
@@ -742,7 +742,7 @@ You can also visualize the data set as follows:
 1. Go to the [AWS IoT Analytics console](http://console.aws.amazon.com/iotanalytics).
 2. Choose **Data sets**.
 3. Select the dataset created earlier.
-4. Select **Content** and ensure there are at least a few uplink entries available in the data set. 
+4. Select **Content** and ensure there are at least a few uplink entries available in the data set.
 5. Go to the [**QuickSight console**](http://quicksight.aws.amazon.com/).
 6. Choose **New analysis**.
 7. Choose the dataset created in [**Create an IoT Analytics Rule**](#create-an-iot-analytics-rule).
@@ -811,7 +811,7 @@ In this section, you will learn how to connect RAK7248/RAK7248C/RAK7248P WisGate
 - **Owner**- Automatically filled by The Things Stack, based on your account or created Organization.
 - **Gateway ID** - This will be the unique ID of your gateway in the Network. Note that the ID must contain only lowercase letters, numbers, and dashes (-).
 - **Gateway EUI** - A 64 bit extended unique identifier for your gateway. The gateway's EUI can be found by running either one of the following commands in the CLI of the gateway:
-  
+
     ```
     gateway-version
     ```

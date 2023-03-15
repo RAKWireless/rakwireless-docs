@@ -53,11 +53,9 @@ yarn docs:build
 ```
 
 
-:::tip 📝 NOTE
-
 If there is a `yarn` error in running the local server, you can either do the following:
 1. Add `yarn` to the **Environment Variables**;
-2. Use a lower version of **Node.j**, preferably **v16.19.x**.
+2. Use a lower version of **Node.js**, preferably **v16.19.x**.
 
 :::
 
