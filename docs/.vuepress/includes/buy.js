@@ -44,6 +44,11 @@ export default {
     img: '/assets/images/wislink-lora/rak833/datasheet/RAK833.png',
     store: 'https://store.rakwireless.com/products/rak833-gateway-module?utm_source=RAK833WisLink-Lora%E2%84%A2&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisLink/RAK5148/': {
+    label: 'RAK5148 WisLink LPWAN 2.4 GHz Concentrator Module',
+    img: '/assets/images/wislink-lora/rak5148/RAK5148.png',
+    store: 'https://store.rakwireless.com/products/2-4-ghz-mini-pcie-concentrator-module-for-lora-based-on-sx1280-rak5148?utm_source=RAK5148&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
 
 
   // Cellular
