@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12027/overview/RAK12027_home.jpg
+rak_img: /assets/images/wisblock/rak12027/RAK12027.jpg
 rak_desc: RAK12027 is a WisBlock Earthquake Sensor Module based on D7S, the world’s smallest high-precision seismic sensor from Omron. It detects earthquake seismic intensity.
 rak_grp: [wisblock, wissensor]
 prev: ../../
@@ -43,9 +43,9 @@ Do not use the sensor in safety devices or for applications in which the sensor 
     * A higher degree of freedom for incorporation into devices and prolonged operation on battery power
     * The shutoff output terminal (INT1) operates equivalent to a conventional mechanical vibration sensor and ensures compatibility with mechanical vibration sensors
     * Collapse alarm integrated
-    * I2C digital output interface   
+    * I2C digital output interface
     * Operating temperature: **-30°&nbsp;C ~ 70°&nbsp;C**
-   
+
 * **Module size**
     * 10 x 23&nbsp;mm
 
@@ -53,6 +53,6 @@ Do not use the sensor in safety devices or for applications in which the sensor 
 
 To use a **RAK12027**, you need at least a **WisBlock Base board** to plug the module in. **WisBlock Base board** provides power supply to the **RAK12027** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 Make sure to fix the module with the screws to ensure a proper function.
 :::

@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK14001 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak14001/overview/RAK14001_home.png
+rak_img: /assets/images/wisblock/rak14001/RAK14001.png
 tags:
   - datasheet
   - wisblock
@@ -24,13 +24,13 @@ The RAK14001 is an RGB LED module that can be mounted to the IO slot of the WisB
 - RGB Function Fully Supported
 - Programmable Integrated Gradual Dimming
 - Support I2C Protocol
-- Support enable power supply 
+- Support enable power supply
 - Chipset: On Semiconductors NCP5623B
 - Module size: 25 X 35&nbsp;mm
 
 ## Specifications
 
-### Overview 
+### Overview
 
 #### Mounting
 
@@ -53,7 +53,7 @@ The hardware specification is categorized into four (4) parts. It discusses the 
 
 #### Pin Definition
 
-The RAK14001 WisBlock module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
+The RAK14001 WisBlock module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisblock/rak14001/datasheet/rak14001-pinout.svg"
@@ -65,7 +65,7 @@ The RAK14001 WisBlock module has a 40-pin WisConnector that is compatible to the
 - **I2C** related pins, **EN**, **VBAT**, **3V3**, and **GND** are connected to this module.
 - **EN** is connected to power chip enable pin, High active. **VBAT** is battery voltage, maximum of 4.2&nbsp;V.
 
-:::  
+:::
 
 #### Electrical Characteristics
 

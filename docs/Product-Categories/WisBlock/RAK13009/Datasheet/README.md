@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK13009 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak13009/overview/RAK13009_home.png
+rak_img: /assets/images/wisblock/rak13009/RAK13009.png
 tags:
   - datasheet
   - wisblock
@@ -26,7 +26,7 @@ The RAK13009 is a QWIIC module, which is part of the RAKWireless WisBlock Interf
 
 ## Specifications
 
-### Overview 
+### Overview
 
 #### Mounting
 
@@ -76,10 +76,10 @@ All the QWIIC cables follow the color scheme and arrangement, as shown in the ta
 | Blue       | SDA        |
 | Yellow     | SCL        |
 
-:::warning ⚠️ WARNING    
-The recommended max current on a QWIIC cable is 226&nbsp;mA. 
+:::warning ⚠️ WARNING
+The recommended max current on a QWIIC cable is 226&nbsp;mA.
 :::
- 
+
 #### Mechanical Characteristics
 
 ##### Board Dimensions

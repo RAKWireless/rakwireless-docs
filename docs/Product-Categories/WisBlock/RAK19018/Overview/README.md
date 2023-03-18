@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak19018/overview/RAK19018_home.png
+rak_img: /assets/images/wisblock/rak19018/RAK19018.png
 rak_desc: RAK19018 is a PoE Module that extracts power from an ethernet cable. This module is based on the Silvertel Ag9905MT converter board and compatible with the IEEE 802.3af PoE standard.
 rak_grp: [wisblock, wispower]
 next: ../Datasheet/

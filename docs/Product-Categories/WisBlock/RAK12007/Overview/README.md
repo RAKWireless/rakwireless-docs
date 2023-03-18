@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12007/overview/RAK12007_buy.png
+rak_img: /assets/images/wisblock/rak12007/RAK12007.png
 rak_desc: RAK12007 is a WisBlock Ultrasonic Sensor module based on the CS100, an industrial-grade ultrasonic distance measurement chip. A ready-to-use SW library and tutorial make it easy to add an ultrasonic sensor for distance measurement or object detection to your project.
 rak_grp: [wisblock, wissensor]
 prev: ../../

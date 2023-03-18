@@ -458,7 +458,65 @@ To connect RAK10701-P Field Tester Pro to TTNv3, you should already have connect
   caption="Add Webhook"
 />
 
-18. After adding the application, device, and webhook integration to the console, you have to configure the parameters in your device to match the parameters on the TTN console. You can use [WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview/) via USB connection or wirelessly via BLE. You also have the option to update device parameters directly via [RUI3 AT Commands](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/#lorawan-keys-and-ids).
+18. After adding the application, device, and webhook integration to the console, you have to configure the parameters in your device to match the parameters on the TTN console. You can use [WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview/) via USB connection or wirelessly via BLE. You can now proceed on the [RAK10701-P Configuration using WisToolBox](/Product-Categories/WisNode/RAK10701-P/Quickstart/#configuration-of-rak10701-p-using-wistoolbox). You also have the option to update device parameters directly via [RUI3 AT Commands](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/#lorawan-keys-and-ids) (if you prefer AT commands instead of WisToolBox).
+
+19. Once you configured the RAK10701-P with the correct Frequency Band and EUIs/Key by following the guide on the [RAK10701-P Configuration using WisToolBox](/Product-Categories/WisNode/RAK10701-P/Quickstart/#configuration-of-rak10701-p-using-wistoolbox), you should see the join request/accept, uplinks and downlinks to The Things Stack console. These uplinks contains the coordinates of the field tester and the downlinks contains the data calculated by the disk91 server. The uplink uses fport 1 and the downlink uses fport 2. To view the actual coordinates on the console, you need to add a payload decoder on your uplink data.
+
+<rk-img
+  src="/assets/images/wisnode/rak10701/quickstart/uplink-decoder.png"
+  width="100%"
+  caption="Adding Uplink Payload Decoder"
+/>
+
+Uplink payload decoder script.
+
+```js
+function Decoder(bytes, port) {
+	var decoded = {};
+	// avoid sending Downlink ACK to integration (Cargo)
+	if (port === 1) {
+		var lonSign = (bytes[0] >> 7) & 0x01 ? -1 : 1;
+		var latSign = (bytes[0] >> 6) & 0x01 ? -1 : 1;
+
+		var encLat = ((bytes[0] & 0x3f) << 17) +
+			(bytes[1] << 9) +
+			(bytes[2] << 1) +
+			(bytes[3] >> 7);
+
+		var encLon = ((bytes[3] & 0x7f) << 16) +
+			(bytes[4] << 8) +
+			bytes[5];
+
+		var hdop = bytes[8] / 10;
+		var sats = bytes[9];
+
+		const maxHdop = 2;
+		const minSats = 5;
+
+		if ((hdop < maxHdop) && (sats >= minSats)) {
+			// Send only acceptable quality of position to mappers
+			decoded.latitude = latSign * (encLat * 108 + 53) / 10000000;
+			decoded.longitude = lonSign * (encLon * 215 + 107) / 10000000;
+			decoded.altitude = ((bytes[6] << 8) + bytes[7]) - 1000;
+			decoded.accuracy = (hdop * 5 + 5) / 10
+			decoded.hdop = hdop;
+			decoded.sats = sats;
+		} else {
+			decoded.error = "Need more GPS precision (hdop must be <" + maxHdop +
+				" & sats must be >= " + minSats + ") current hdop: " + hdop + " & sats:" + sats;
+		}
+		return decoded;
+	}
+	return null;
+}
+```
+20. With the correct payload decoder, you should now see GPS coordinates data which you can also use to other integration.
+
+<rk-img
+  src="/assets/images/wisnode/rak10701/quickstart/console-data.png"
+  width="100%"
+  caption="Decoded payload and TTS console"
+/>
 
 #### RAK10701-P Field Tester Pro Guide for Chirpstack
 
@@ -555,7 +613,7 @@ function Decode(fPort, bytes, variables) {
 
 ```
 :::tip 📝 NOTE:
-This decoder script can be found on [RUI3-Field-Tester GitHub repository](https://github.com/beegee-tokyo/RUI3-Field-Tester/blob/main/decoders) which also includes a custom decoder script for TTN and Helium.
+This decoder script can be found on [RAKwireless Standardize Payload repository](https://github.com/RAKWireless/RAKwireless_Standardized_Payload) which also includes a custom decoder script for TTN and Helium.
 :::
 
 4. After creating the device profile, you can now create an application and add the RAK10701 device. And then attached the `Device-profile` you created. You have to take note of the DEVEUI and APPKEY in this section. These parameters must match the ones in our RAK10701 Field Tester.

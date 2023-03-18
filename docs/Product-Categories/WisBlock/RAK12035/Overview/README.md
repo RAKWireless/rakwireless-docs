@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12035/overview/RAK12035_home.png
+rak_img: /assets/images/wisblock/rak12035/RAK12035.png
 rak_desc: RAK12035 is a WisBlock soil moisture sensor probe that uses capacitive sensing to measure the amount of moisture in the soil and the soil temperature.
 rak_grp: [wisblock, wissensor]
 next: ../Quickstart/
@@ -27,7 +27,7 @@ Thank you for choosing **RAK12035 WisBlock Soil Moisture Sensor Module** in your
 
 ## Product Description
 
-RAK12035 is a soil sensor probe module based on the ATTINY441-SSU microcontroller from Atmel. It uses capacitive sensing to measure moisture. A 1&nbsp;MHz square wave is the output from the chip through a resistor into a big pad, and the surrounding ground plane acts as a parasitic capacitor. Both the resistor and the capacitor form a low-pass filter whose cutoff frequency changes when there is a change in capacitance. 
+RAK12035 is a soil sensor probe module based on the ATTINY441-SSU microcontroller from Atmel. It uses capacitive sensing to measure moisture. A 1&nbsp;MHz square wave is the output from the chip through a resistor into a big pad, and the surrounding ground plane acts as a parasitic capacitor. Both the resistor and the capacitor form a low-pass filter whose cutoff frequency changes when there is a change in capacitance.
 
 The soil around the sensor acts as an electrolyte whose dielectric constant changes depending on the amount of moisture in it, resulting in changing the capacitance of our makeshift capacitor too. The filtered square wave is fed into a peak detector, formed by a diode and capacitor. The diode allows the positive peaks to go through, while the capacitor stores the maximum voltage of those peaks. The voltage is measured by an ADC in the MCU. An NTC element is used to measure the temperature of the soil.
 
@@ -51,8 +51,8 @@ Because you need to bury the RAK12035 sensor probe into the soil, the electronic
 
 To use a **RAK12035** sensor, you need to connect it to **RAK12023** Soil Moisture Connector. You also need a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12035**. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-- Make sure to fix the module with the screws to ensure a proper function. 
-- The RAK12035 requires calibration to ensure a proper function.   
+:::warning ⚠️ WARNING
+- Make sure to fix the module with the screws to ensure a proper function.
+- The RAK12035 requires calibration to ensure a proper function.
 :::
 

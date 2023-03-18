@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK5860 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak5860/overview/RAK5860_home.png
+rak_img: /assets/images/wisblock/rak5860/RAK5860.png
 prev: ../Overview/
 next: false
 tags:
@@ -25,9 +25,9 @@ The RAK5860 WisBlock Connect module is designed to be part of a production-ready
 
 The RAK5860 is a module designed to work with the RAK5005-O baseboard and it provides wireless communication (LTE Cat M1, LTE Cat NB2) to the final application. This module supports the LTE-FDD network and supports half-duplex operation in the LTE network. It also provides optional GNSS functionality.
 
-For debugging purposes, a Micro-USB connector is used for sending AT commands, data transmission, and receiving GNSS NMEA output. Once the module is integrated with the RAK5005-O baseboard, the internal UART port of the module is connected through the IO connector to a WisBlock Core module. 
+For debugging purposes, a Micro-USB connector is used for sending AT commands, data transmission, and receiving GNSS NMEA output. Once the module is integrated with the RAK5005-O baseboard, the internal UART port of the module is connected through the IO connector to a WisBlock Core module.
 
-### Features 
+### Features
 
 * Quectel BG77 with LTE Cat M1, LTE cat NB2, and GNSS
 * IPEX connectors for the LTE and GPS antenna
@@ -138,7 +138,7 @@ The table below shows the recommended operating conditions of the RAK5860 module
 
 #### Schematic Diagram
 
-The following sections will describe the schematic of the RAK5860 module, which include: 
+The following sections will describe the schematic of the RAK5860 module, which include:
 
 * Turn on/off module
 * IO Connector
@@ -151,9 +151,9 @@ The following sections will describe the schematic of the RAK5860 module, which 
 
 ##### Turn On/Off Mechanism
 
-**Figure 7** shows a circuit to allow turn on or to turn off the module. By default, the internal Quectel BG77 module is in power off mode, it can be turned on by driving WIS_PWRKEY to a high state (positive digital pulse) for a period of 500-1000&nbsp;ms. 
+**Figure 7** shows a circuit to allow turn on or to turn off the module. By default, the internal Quectel BG77 module is in power off mode, it can be turned on by driving WIS_PWRKEY to a high state (positive digital pulse) for a period of 500-1000&nbsp;ms.
 
-Driving WIS_PWRKEY high for 650-1500&nbsp;ms, the module will execute power-down procedure after WIS_PWRKEY is released, then enter off mode.  
+Driving WIS_PWRKEY high for 650-1500&nbsp;ms, the module will execute power-down procedure after WIS_PWRKEY is released, then enter off mode.
 
 Alternatively, you can send a command **`AT+QPOWD`** command that turns off the internal Quectel BG77 module.
 
@@ -165,7 +165,7 @@ Alternatively, you can send a command **`AT+QPOWD`** command that turns off the 
 
 ##### IO Connector
 
-**Figure 8** shows the definition of the IO connector. 
+**Figure 8** shows the definition of the IO connector.
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/wisio-connector.png"
@@ -235,7 +235,7 @@ The RAK5860 module only supports the 1.8&nbsp;V ESIM/SIM card, the following **F
 
 ##### USB Connector
 
-The RAK5860 module provides a Micro-USB connector for connection with a host device. The USB data lines USB+ and USB- are connected directly to the BG77. The VBUS line can be used for USB connection detection. 
+The RAK5860 module provides a Micro-USB connector for connection with a host device. The USB data lines USB+ and USB- are connected directly to the BG77. The VBUS line can be used for USB connection detection.
 
 To offer good ESD protection, a TVS diode array is added to the USB connector circuit.
 
@@ -246,7 +246,7 @@ To offer good ESD protection, a TVS diode array is added to the USB connector ci
   caption="USB Connector"
 />
 
-The USB connection detection pin input voltage range is 1.3~1.8&nbsp;V. **Figure 14** shows the USB connection detection pin power supply. 
+The USB connection detection pin input voltage range is 1.3~1.8&nbsp;V. **Figure 14** shows the USB connection detection pin power supply.
 
 
 <rk-img
@@ -290,7 +290,7 @@ The RAK5860 module’s main antenna has a reserve π-type matching circuit for b
 The RAK5860 module is designed with an active antenna. The 3V3_S is from the WisIO connector, and a U.FL connector is used for the GNSS antenna. **Figure 18** shows the GNSS antenna circuit.
 
 :::tip 📝 NOTE:
-3V3_S is controlled by IO2 of WisBlock (P1.02 of NRF52840). For the active GPS antenna to work, set the pin to HIGH in your code. 
+3V3_S is controlled by IO2 of WisBlock (P1.02 of NRF52840). For the active GPS antenna to work, set the pin to HIGH in your code.
 :::
 
 

@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak18080/overview/RAK18080_home.png
+rak_img: /assets/images/wisblock/rak18080/RAK18080.png
 rak_desc: RAK18080 is a professional audio processing module, part of the WisBlock Audio Series. The RAK18080 is designed based on DBM10L by Synaptics, which can enable AI/ML, voice, and sensor applications.
 rak_grp: [wisblock, dsp]
 prev: ../../
@@ -37,15 +37,15 @@ Thank you for choosing **RAK18080 WisBlock Audio DSP Board Module** in your awes
   - Pulse Density Modulation (PDM) interface for digital microphone
   - Two I2S interface for host and amplifier
   - I2C, UART, and SPI Interface for control (SPI as default)
-  
+
 * **Module Size**
     * 25 x 35&nbsp;mm
 
 
 ## Prerequisites
 
-To use a **RAK18080**, you need at least a **WisBlock Audio Stack** to plug the module in. The **WisBlock Audio Stack** provides power supply to the **RAK18080** module. 
+To use a **RAK18080**, you need at least a **WisBlock Audio Stack** to plug the module in. The **WisBlock Audio Stack** provides power supply to the **RAK18080** module.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 Make sure to fix the module with screws to ensure proper function.
 :::

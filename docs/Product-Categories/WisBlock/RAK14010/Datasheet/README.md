@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK14010 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak14010/overview/RAK14010_home.png
+rak_img: /assets/images/wisblock/rak14010/RAK14010.png
 prev: ../Overview/
 next: false
 tags:
@@ -16,15 +16,15 @@ tags:
 ### Description
 
 
-**RAK14010 WisBlock 3x4 Keypad Module** was designed to be part of a production-ready IoT solution and must be combined with a [RAK14004 WisBlock Keypad Module](/Product-Categories/WisBlock/RAK14004/). 
+**RAK14010 WisBlock 3x4 Keypad Module** was designed to be part of a production-ready IoT solution and must be combined with a [RAK14004 WisBlock Keypad Module](/Product-Categories/WisBlock/RAK14004/).
 
 
 ### Features
 
-* **Module Specifications** 
+* **Module Specifications**
   * 3 x 4 matrix keypad
-* **Size**    
-  * 43&nbsp;mm x 44.99&nbsp;mm  
+* **Size**
+  * 43&nbsp;mm x 44.99&nbsp;mm
 
 ## Specifications
 

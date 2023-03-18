@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK19018 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak19018/overview/RAK19018_home.png
+rak_img: /assets/images/wisblock/rak19018/RAK19018.png
 tags:
   - datasheet
   - wisblock
@@ -15,7 +15,7 @@ next: false
 
 ### Description
 
-The RAK19018 is a Power-over-Ethernet module used together with the RAK13800 Ethernet Interface module to draw power from CAT5/CAT6 cables. This PoE module is based on the Silvertel Ag9905MT converter board and compatible with the IEEE 802.3af PoE standard. 
+The RAK19018 is a Power-over-Ethernet module used together with the RAK13800 Ethernet Interface module to draw power from CAT5/CAT6 cables. This PoE module is based on the Silvertel Ag9905MT converter board and compatible with the IEEE 802.3af PoE standard.
 
 The Ag9905MT's signature and control circuit provide the PoE compatibility requirement by the Power Sourcing Equipment (PSE) before applying up to 9&nbsp;Watts of power to the port. This provides a Class 0 signature.
 
@@ -61,7 +61,7 @@ The RAK19018 module is mounted on top of WisBlock Ethernet module RAK13800. Thes
   caption="RAK19018 connection to RAK13800"
 />
 
-### Hardware 
+### Hardware
 
 The hardware specification is categorized into five (5) parts. It shows the chipset, pinouts, and diagram of the module. It also presents the electrical and mechanical characteristics of the RAK19018 WisBlock PoE Module.
 
@@ -119,7 +119,7 @@ The mechanical dimension of RAK19018 is shown in **Figure 5**.
   caption="PoE Module"
 />
 
-Using a cable, RAK19018 can power WisBlock Base boards like RAK5005-0. 
+Using a cable, RAK19018 can power WisBlock Base boards like RAK5005-0.
 
 - **J3** is a connector for 5&nbsp;V output.
 - **J5** and **J6** are used for connecting to RAK13800.

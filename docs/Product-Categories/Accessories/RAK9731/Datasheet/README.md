@@ -1,11 +1,11 @@
 ---
 prev: ../Overview/
 next: false
-tags: 
+tags:
     - RAK9731
     - datasheet
 rak_desc: Provides comprehensive information about your RAK9731 Pulsar Cable LMR400 to help you use it. This information includes technical specifications and characteristics.
-rak_img: /assets/images/accessories/rak9731/overview/rak9731.png
+rak_img: /assets/images/accessories/rak9731/rak9731.png
 certifications:
   - [REACH, https://downloads.rakwireless.com/Accessories/Pulsar-Cable/Certification/Pulsar_Cable_REACH_Report.PDF]
   - [RoHS, https://downloads.rakwireless.com/Accessories/Pulsar-Cable/Certification/Pulsar_Cable_RoHS_Report.PDF]
@@ -57,10 +57,10 @@ The Pulsar cable is a high-grade cable, suitable for outdoor applications with *
 
 ### Mechanical Characteristics
 
-#### Connectors 
+#### Connectors
 
 <rk-img
-  src="/assets/images/accessories/rak9731/datasheet/connectors.png"
+  src="/assets/images/accessories/rak9731/connectors.png"
   width="45%"
   caption="Connector Types"
 />
@@ -69,7 +69,7 @@ The Pulsar cable is a high-grade cable, suitable for outdoor applications with *
 #### Dimensions
 
 <rk-img
-  src="/assets/images/accessories/rak9731/datasheet/dimension.png"
+  src="/assets/images/accessories/rak9731/dimension.png"
   width="85%"
   caption="Pulsar Cable Dimensions"
 />

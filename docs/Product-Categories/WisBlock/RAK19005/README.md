@@ -1,6 +1,6 @@
 ---
 rak_desc: RAK19005 is a WisBlock FPC (Flat Printed Circuit) extension cable for Slot A to D WisBlock modules.
-rak_img: /assets/images/wisblock/rak19005/overview/RAK19005.png
+rak_img: /assets/images/wisblock/rak19005/RAK19005.png
 
 ---
 

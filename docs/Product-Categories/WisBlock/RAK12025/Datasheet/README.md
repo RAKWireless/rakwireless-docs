@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12025 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12025/overview/RAK12025_home.png
+rak_img: /assets/images/wisblock/rak12025/RAK12025.png
 tags:
   - datasheet
   - wisblock
@@ -21,9 +21,9 @@ next: false
 
 ### Description
 
-RAK12025 is a gyroscope module, part of the RAKWireless WisBlock Sensor series. The module is based on I3G4250D from STMicroelectronics. The I3G4250D is a low-power 3-axis angular rate sensor able to provide unprecedented stability at a zero-rate level and sensitivity over temperature and time. It includes a sensing element and a digital interface capable of providing the measured angular rate. With I3G4250D, RAK12025 can measure rotation speed and report data through a standard I2C digital interface. 
+RAK12025 is a gyroscope module, part of the RAKWireless WisBlock Sensor series. The module is based on I3G4250D from STMicroelectronics. The I3G4250D is a low-power 3-axis angular rate sensor able to provide unprecedented stability at a zero-rate level and sensitivity over temperature and time. It includes a sensing element and a digital interface capable of providing the measured angular rate. With I3G4250D, RAK12025 can measure rotation speed and report data through a standard I2C digital interface.
 
-### Features 
+### Features
 * **Gyroscope  module**
 * **Selectable full scale**: (245/500/2000&nbsp;dps)
 * **I2C interface**
@@ -43,7 +43,7 @@ RAK12025 is a gyroscope module, part of the RAKWireless WisBlock Sensor series. 
 **Figure 1** shows the mounting mechanism of the RAK12025 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12025 module can be mounted on the slots: **C, D, E, & F**.
 
 :::tip 📝 NOTE:
-RAK12025 has two digital output lines, so you need two GPIOs from WisBlock Core. It means RAK12025 should be used on a sensor slot with two available GPIOs. However, WB_IO2 is used to control 3V3_S. Hence, RAK12025 is used only on slots without WB_IO2 like sensor slots C and D on WisBlock Base board. 
+RAK12025 has two digital output lines, so you need two GPIOs from WisBlock Core. It means RAK12025 should be used on a sensor slot with two available GPIOs. However, WB_IO2 is used to control 3V3_S. Hence, RAK12025 is used only on slots without WB_IO2 like sensor slots C and D on WisBlock Base board.
 :::
 
 <rk-img
@@ -78,21 +78,21 @@ The RAK12025 WisBlock Gyroscope Sensor Module comprises a standard WisBlock conn
 
 If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse depends on what slot the module is plugged in. The following table shows the default IO used for different slots:
 
-The table below shows the default IOs used for different slots using INT1:  
-  
+The table below shows the default IOs used for different slots using INT1:
+
 | SLOT C | SLOT D | SLOT E | SLOT F |
 | ------ | ------ | ------ | ------ |
 | WB_IO4 | WB_IO6 | WB_IO3 | WB_IO5 |
 
-When using INT2, the default IOs used for different slots is shown in the table below: 
-  
+When using INT2, the default IOs used for different slots is shown in the table below:
+
 | SLOT C | SLOT D | SLOT E | SLOT F |
 | ------ | ------ | ------ | ------ |
 | WB_IO3 | WB_IO5 | WB_IO4 | WB_IO6 |
 
 #### Sensors
 
-##### Gyroscope Sensor 
+##### Gyroscope Sensor
 | Symbol | Parameter                              | Test Condition                  |  Min.  |      Typ.       |  Max.  |     Unit      |
 | ------ | -------------------------------------- | ------------------------------- | :----: | :-------------: | :----: | :-----------: |
 | FS     | Measurement Range                      | User-selectable                 |        |      ±245       |        |      dps      |
@@ -118,7 +118,7 @@ When using INT2, the default IOs used for different slots is shown in the table 
 #### Electrical Characteristics
 
 - @ Vdd = 3.0&nbsp;V, T = +25&nbsp;°C, unless otherwise noted.
-  
+
 | Symbol | Description                       | Condition                            | Min.  | Typ.  | Max.  | Unit  |
 | ------ | --------------------------------- | ------------------------------------ | :---: | :---: | :---: | :---: |
 | Vdd    | Supply voltage                    | Input voltage must within this range |  2.4  |  3.3  |  3.6  |   V   |

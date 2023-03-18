@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK4631 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak4631/overview/RAK4631_home.png
+rak_img: /assets/images/wisblock/rak4631/RAK4631.png
 prev: ../AT-Command-Manual/
 next: false
 tags:
@@ -9,11 +9,11 @@ tags:
   - RAK4631
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK4631/Certification/RAK4630_RAK4631_CE_Certification.zip]
-  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4631/Certification/RAK4630_RAK4631_FCC_Certification.zip] 
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4631/Certification/RAK4630_RAK4631_FCC_Certification.zip]
   - [ISED, https://downloads.rakwireless.com/LoRa/WisBlock/RAK4631/Certification/RAK4631_IC_Certification.pdf]
   - [KCC, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_KC_Certification.pdf]
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RCM_Certification.pdf]
-  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_RoHS_Report.pdf] 
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_RoHS_Report.pdf]
 
 ---
 
@@ -32,7 +32,7 @@ The module complies with LoRaWAN 1.0.2 protocols, it also supports LoRa point-to
 
 The RF communication characteristic of the module (LoRa + BLE) makes it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors, and monitors, etc.).
 
- 
+
 ### Features
 
 - TCXO crystal for LoRa chip
@@ -92,10 +92,10 @@ The hardware specification is categorized into four parts. It discusses the pino
 
 #### RF Characteristics
 
-The RAK4631 module supports the LoRaWAN bands shown in table below. When buying a RAK4631 module, pay attention to the specified correct core module RAK4630 H/L for your region. H stands for high-frequency regions and L for low-frequency regions.  
+The RAK4631 module supports the LoRaWAN bands shown in table below. When buying a RAK4631 module, pay attention to the specified correct core module RAK4630 H/L for your region. H stands for high-frequency regions and L for low-frequency regions.
 
 :::tip 📝 NOTE
-Detailed information about the RAK4631 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/). 
+Detailed information about the RAK4631 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
 :::
 
 | Module     | Region        | Frequency     |
@@ -109,7 +109,7 @@ Detailed information about the RAK4631 BLE and LoRa antenna can be found on the 
 |            | Asia          | AS923-1/2/3/4 |
 |            | India         | IN865         |
 |            | Russia        | RU864         |
- 
+
 
 #### Electrical Characteristics
 
@@ -166,11 +166,11 @@ Detailed information about the RAK4631 BLE and LoRa antenna can be found on the 
 
 ##### Setup of the SX1262
 
-Information to write custom firmware for the RAK4630.  This shows the internal connection between the RAK4630 and required information when initializing the SX1262 LoRa Transceiver.      
+Information to write custom firmware for the RAK4630.  This shows the internal connection between the RAK4630 and required information when initializing the SX1262 LoRa Transceiver.
 
 | nRF52840 GPIO	| SX1262 pin | function                          |
 | ------------- | ---------- | --------------------------------- |
-| P1.10         | NSS        | SPI NSS                           | 
+| P1.10         | NSS        | SPI NSS                           |
 | P1.11         | SCK        | SPI CLK                           |
 | P1.12         | MOSI       | SPI MOSI                          |
 | P1.13         | MISO       | SPI MISO                          |

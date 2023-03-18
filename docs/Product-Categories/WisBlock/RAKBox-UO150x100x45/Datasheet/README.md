@@ -7,7 +7,7 @@ tags:
     - Enclosure
     - WisBlock
 rak_desc: Provides comprehensive information about your WisBlock RAKBox-UO150x100x45 Enclosure to help you use it. This information includes technical specifications and characteristics.
-rak_img: /assets/images/wisblock/rakbox-uo150x100x45/overview/uo_home.png
+rak_img: /assets/images/wisblock/rakbox-uo150x100x45/uo_home.png
 
 ---
 # WisBlock Unify Outdoor Enclosure 150x100x45 Datasheet
@@ -16,7 +16,7 @@ rak_img: /assets/images/wisblock/rakbox-uo150x100x45/overview/uo_home.png
 
 ### Description
 
-RAKBox-UO150x100x45 is a medium-sized **WisBlock Unify Enclosure**. It is an IP67-rated protection class that allows the unit to be used outdoors while protecting the internal components from dust and water. It is also a weatherproof fire retardant enclosure made from ABS plastic specially designed for WisBlock Products. 
+RAKBox-UO150x100x45 is a medium-sized **WisBlock Unify Enclosure**. It is an IP67-rated protection class that allows the unit to be used outdoors while protecting the internal components from dust and water. It is also a weatherproof fire retardant enclosure made from ABS plastic specially designed for WisBlock Products.
 
 Moreover, it supports different types of mounting options such as pole, wall, DIN rail, belt, and hook.
 

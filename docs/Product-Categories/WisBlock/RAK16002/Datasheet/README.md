@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK16002 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak16002/overview/RAK16002_home.png
+rak_img: /assets/images/wisblock/rak16002/RAK16002.png
 tags:
   - datasheet
   - wisblock
@@ -15,7 +15,7 @@ next: false
 
 ### Description
 
-RAK16002 is a Coulomb sensor module based on LTC2941IDCB that features programmable high and low thresholds for the accumulated charge. If a threshold is exceeded, the device communicates an alert by setting a flag in the internal status register. It can measure the battery charge state in battery-powered IoT devices. Its operating range is perfectly suited for single-cell Li-Ion batteries. 
+RAK16002 is a Coulomb sensor module based on LTC2941IDCB that features programmable high and low thresholds for the accumulated charge. If a threshold is exceeded, the device communicates an alert by setting a flag in the internal status register. It can measure the battery charge state in battery-powered IoT devices. Its operating range is perfectly suited for single-cell Li-Ion batteries.
 
 The precision coulomb counter integrates current through an internal sense resistor between the battery’s positive terminal and the load or charger. The measured charge is stored in internal registers. An I2C interface accesses and configures the device.
 
@@ -26,7 +26,7 @@ The precision coulomb counter integrates current through an internal sense resis
   * Air quality sensors
   * Soil moisture sensors
   * GNSS location trackers
-  
+
 ### Features
 
   * Based on LTC2941IDCB
@@ -37,7 +37,7 @@ The precision coulomb counter integrates current through an internal sense resis
   * 1% Charge accuracy
   * Configurable alert output/charge complete input
   * 2.7&nbsp;V to 5.5&nbsp;V Operating range
-  * Quiescent current less than 100&nbsp;µA 
+  * Quiescent current less than 100&nbsp;µA
   * Operating temperature: -40&nbsp;°C ~ 85&nbsp;°C
   * Storage temperature :-65&nbsp;°C ~ 150&nbsp;°C
   * 15&nbsp;mm x 25&nbsp;mm
@@ -87,7 +87,7 @@ The RAK16002 WisBlock Coulomb Sensor Module comprises a standard 40-pin WisConne
 
 - **I2C** related pin, **VBAT**, **AL/CC**，**3V3_S**, and **GND** are connected to WisIO connector.
 
-:::  
+:::
 
 #### Electrical Characteristics
 
@@ -104,7 +104,7 @@ This section shows the maximum and minimum ratings of the RAK16002 module and it
 | V<sub>UVLO</sub>   | Undervoltage Lockout Threshold | V<sub>SENSE+ Falling</sub>                | 2.5     | 2.6     | 2.7     | V    |
 
 
-#### Mechanical Characteristics  
+#### Mechanical Characteristics
 
 ##### Board Dimensions
 
@@ -133,28 +133,28 @@ The I2C address of LTC2941IDCB is 0x64. R3 and R4 already exist on WisBase. R3 a
 ::: tip 📝 NOTE
 
 - **J2  charge/load select**
-  - short pin1 and pin2, Internal charge/load 
+  - short pin1 and pin2, Internal charge/load
   - short pin2 and pin3, External charge/load
 
 - **J4 battery select**
-  - short pin1 and pin2, Internal battery measurement 
-  - short pin2 and pin3, External battery measurement 
+  - short pin1 and pin2, Internal battery measurement
+  - short pin2 and pin3, External battery measurement
 
 - **J3**
-  - pin1, Connect to external charge+/load+ 
-  - pin2, Connect to external charge-/load- & battery- 
-  - pin3, Connect to external battery+ 
+  - pin1, Connect to external charge+/load+
+  - pin2, Connect to external charge-/load- & battery-
+  - pin3, Connect to external battery+
 
-:::  
+:::
 
-<b> For example </b> 
+<b> For example </b>
 
 If you want to use the internal battery and the external charge/load, you should do the following (Refer to **Figure 7**.):
 - short J2-2 and J2-3;
 - short J4-1 and J4-2;
 - connect the external charge+/load+ to J3-1;
 - connect the external charge-/load- to J3-2;
-- connect the internal battery to P1. 
+- connect the internal battery to P1.
 
 
 

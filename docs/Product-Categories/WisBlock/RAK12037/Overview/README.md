@@ -1,6 +1,6 @@
 ---
 rak_desc: RAK12037 is a WisBlock Sensor that extends the WisBlock system based on the SCD30 module, which can sense C02 and has an integrated temperature and humidity sensor. A ready-to-use SW library and tutorial make it easy to build up an environmental data acquisition system.
-rak_img: /assets/images/wisblock/rak12037/overview/RAK12037_home.png
+rak_img: /assets/images/wisblock/rak12037/RAK12037.png
 rak_grp: [wisblock, wissensor]
 prev: ../../
 next: ../Quickstart/
@@ -40,7 +40,7 @@ RAK12037 is a WisBlock Sensor that extends the WisBlock system based on the SCD3
     * Dual-channel detection for superior stability
     * I2C interface
     * Fully calibrated and linearized
-    
+
 * **Module size**
     * 50 x 25&nbsp;mm
 
@@ -48,6 +48,6 @@ RAK12037 is a WisBlock Sensor that extends the WisBlock system based on the SCD3
 
 To use a **RAK12037**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12037** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function. 
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

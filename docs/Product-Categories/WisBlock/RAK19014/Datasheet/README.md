@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK19014 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak19014/overview/RAK19014_home.png
+rak_img: /assets/images/wisblock/rak19014/RAK19014.png
 tags:
   - datasheet
   - wisblock
@@ -49,10 +49,10 @@ The hardware specification is categorized into six parts. It discusses the inter
 
 RAK19014 WisBlock Battery Power Slot Module provides the following interfaces:
 
-* 2 Pin battery interface 
+* 2 Pin battery interface
 * 2 LEDs
 * 1 Reset button
-* 1 USB connector 
+* 1 USB connector
 
 <rk-img
   src="/assets/images/wisblock/rak19014/datasheet/usb-batt-reset.png"
@@ -78,7 +78,7 @@ RAK19014 WisBlock Battery Power Slot Module provides the following interfaces:
 
 ::: tip 📝 NOTE
 The voltage of the battery must not exceed 4.3&nbsp;V.
-:::  
+:::
 
 ##### LEDs
 
@@ -93,11 +93,11 @@ The Reset Push Button is shown in [**Figure 2**](#interfaces) and is connected t
 
 #### Pin Definition
 
-The RAK19014 Battery Power Slot Module has a 40-pin WisConnector that is compatible with the WisBlock Power Slot. The pin order of the connector and the pinout definition is shown in **Figure 5**. 
+The RAK19014 Battery Power Slot Module has a 40-pin WisConnector that is compatible with the WisBlock Power Slot. The pin order of the connector and the pinout definition is shown in **Figure 5**.
 
 ::: tip 📝 NOTE
 VBAT, 3V3, RESET, LED1, LED2, and GND are connected to the WisBlock IO connector.
-:::  
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak19014/datasheet/pinout.png"
@@ -109,7 +109,7 @@ VBAT, 3V3, RESET, LED1, LED2, and GND are connected to the WisBlock IO connector
 
 ##### Absolute Maximum Ratings
 
-The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device. 
+The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device.
 
 :::warning ⚠️WARNING
 1. If the stress rating goes above what is listed, it may cause permanent damage to the device.

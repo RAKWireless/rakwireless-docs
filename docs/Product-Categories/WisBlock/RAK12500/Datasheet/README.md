@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12500 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12500/overview/RAK12500_home.png
+rak_img: /assets/images/wisblock/rak12500/RAK12500.png
 prev: ../Quickstart/
 next: false
 tags:
@@ -14,7 +14,7 @@ tags:
 ## Overview
 
 <rk-img
-  src="/assets/images/wisblock/rak12500/overview/RAK12500_illustrated.png"
+  src="/assets/images/wisblock/rak12500/datasheet/RAK12500_illustrated.png"
   width="40%"
   caption="RAK12500 WisBlock GNSS Location Module"
 />
@@ -25,7 +25,7 @@ The RAK12500 WisBlock GNSS Location Module is designed to be part of a productio
 
 The RAK12500 uses the u-blox ZOE-M8Q module. It supports a wide variety of satellite data protocols such as GPS, GLONASS, QZSS, and BeiDou. This ensures the retrieval of precise location data. The module features exceptional performance, high sensitivity, and minimal acquisition time. A very suitable module for your low-power IoT solution needs.
 
-### Features 
+### Features
 
 * **Module Specification**
     * Uses the very accurate GNSS Module: **u-blox ZOE-M8Q chip**
@@ -38,7 +38,7 @@ The RAK12500 uses the u-blox ZOE-M8Q module. It supports a wide variety of satel
     * Operating Voltage: 3.3&nbsp;V
     * Operating Current: < 15&nbsp;µA
     * Chipset: u-blox ZOE-M8Q
-  
+
 * **Size**
     * Module Size: 10&nbsp;mm x 23&nbsp;mm
 
@@ -54,15 +54,15 @@ The RAK12500 uses the u-blox ZOE-M8Q module. It supports a wide variety of satel
   src="/assets/images/wisblock/rak12500/datasheet/RAK12500-mounting.png"
   width="60%"
   caption="RAK12500 WisBlock GNSS Location Module Mounting"
-/>  
-  
-### Hardware  
+/>
+
+### Hardware
 
 The hardware specification is categorized into five parts that cover the chipset and pinouts and the corresponding functions and diagrams of the board. It also presents the parameters and their standard values in terms of electrical and mechanical.
 
 #### Chipset
 
-The RAK12500 utilizes a very accurate u-blox ZOE-M8Q chip. See the manufacturer's [u-blox ZOE-M8Q Page](https://www.u-blox.com/en/product/zoe-m8-series) for more details.  
+The RAK12500 utilizes a very accurate u-blox ZOE-M8Q chip. See the manufacturer's [u-blox ZOE-M8Q Page](https://www.u-blox.com/en/product/zoe-m8-series) for more details.
 
 | Vendor | Part number |
 | :----: | :---------: |
@@ -77,7 +77,7 @@ The RAK12500 WisBlock GNSS Location Module comprises a standard WisBlock connect
   src="/assets/images/wisblock/rak12500/datasheet/rak12500-sch1.png"
   width="60%"
   caption="RAK12500 WisBlock GNSS Location Module Pinout"
-/>  
+/>
 
 :::tip 📝 NOTE:
 Only the UART and I2C related pin, 1PPS pin, RESET pin, VDD, and GND are connected to this module
@@ -89,29 +89,29 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 | ---------- | -------- |
 | UART / I2C | I2C Only |
 
-#### Electrical Characteristics  
-  
-##### Recommended Operating Conditions    
+#### Electrical Characteristics
 
-The table below shows the recommended operating conditions for the RAK12500 WisBlock GNSS Location Module:  
-  
+##### Recommended Operating Conditions
+
+The table below shows the recommended operating conditions for the RAK12500 WisBlock GNSS Location Module:
+
 | **Symbol**       | **Description**             | **Min.** | **Nom.** | **Max.** | **Unit** |
 | ---------------- | --------------------------- | -------- | -------- | -------- | -------- |
 | V<sub>DD</sub>   | Power supply for the module | 2.7      | 3.3      | 3.6      | V        |
 | I<sub>BACK</sub> | Backup battery current      | -        | 15       | -        | µA       |
 
-  
-#### Mechanical Characteristics  
-  
-##### Board Dimensions  
 
-Figure 4 shows the dimensions and mechanical drawing of the RAK12500 module.  
-  
+#### Mechanical Characteristics
+
+##### Board Dimensions
+
+Figure 4 shows the dimensions and mechanical drawing of the RAK12500 module.
+
 <rk-img
   src="/assets/images/wisblock/rak12500/datasheet/board-dimensions.png"
   width="60%"
   caption="RAK12500 WisBlock GNSS Location Module Mechanical Characteristics"
-/>  
+/>
 
 ##### WisConnector PCB Layout
 
@@ -123,7 +123,7 @@ Figure 4 shows the dimensions and mechanical drawing of the RAK12500 module.
 
 #### Schematic Diagram
 
-  
+
 <rk-img
   src="/assets/images/wisblock/rak12500/datasheet/schematic.png"
   width="100%"

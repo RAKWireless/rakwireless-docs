@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK12035 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12035/overview/RAK12035_home.png
+rak_img: /assets/images/wisblock/rak12035/RAK12035.png
 tags:
   - datasheet
   - wisblock
@@ -21,7 +21,7 @@ next: false
 
 ### Description
 
-RAK12035 is a soil sensor probe module based on the ATTINY441-SSU microcontroller from Atmel. It uses capacitive sensing to measure moisture. A 1&nbsp;MHz square wave is the output from the chip through a resistor into a big pad, and the surrounding ground plane acts as a parasitic capacitor. Both the resistor and the capacitor form a low-pass filter whose cutoff frequency changes when there is a change in capacitance. 
+RAK12035 is a soil sensor probe module based on the ATTINY441-SSU microcontroller from Atmel. It uses capacitive sensing to measure moisture. A 1&nbsp;MHz square wave is the output from the chip through a resistor into a big pad, and the surrounding ground plane acts as a parasitic capacitor. Both the resistor and the capacitor form a low-pass filter whose cutoff frequency changes when there is a change in capacitance.
 
 The soil around the sensor acts as an electrolyte whose dielectric constant changes depending on the amount of moisture in it, resulting in changing the capacitance of our makeshift capacitor too. The filtered square wave is fed into a peak detector, formed by a diode and capacitor. The diode allows the positive peaks to go through, while the capacitor stores the maximum voltage of those peaks. The voltage is measured by an ADC in the MCU. An NTC element is used to measure the temperature of the soil.
 
@@ -53,7 +53,7 @@ The hardware specification is categorized into four (4) parts. It shows the chip
 
 #### Pin Definition
 
-The pin order of the connector and the pinout definition of the RAK12035 is shown in **Figure 2**. 
+The pin order of the connector and the pinout definition of the RAK12035 is shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisblock/rak12035/datasheet/rak12035-pinout.png"
@@ -63,7 +63,7 @@ The pin order of the connector and the pinout definition of the RAK12035 is show
 
 ::: tip 📝 NOTE
 - Only **I2C** related pin, **SENSE_HIGH**, **3V3**, and **RESET** are connected to the module.
-:::  
+:::
 
 #### Mechanical Characteristics
 

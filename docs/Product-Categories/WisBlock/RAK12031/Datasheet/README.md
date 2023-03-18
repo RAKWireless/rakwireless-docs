@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK12031 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12031/overview/RAK12031_home.png
+rak_img: /assets/images/wisblock/rak12031/RAK12031.png
 tags:
   - datasheet
   - wisblock
@@ -56,7 +56,7 @@ The hardware specification is categorized into five (5) parts. It shows the chip
 
 #### Pin Definition
 
-The RAK12031 module has two (2) connectors, one standard 24-pin WisBlock Sensor connector and the other one is the 6-pin connector that can be connected to the RAK12028. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
+The RAK12031 module has two (2) connectors, one standard 24-pin WisBlock Sensor connector and the other one is the 6-pin connector that can be connected to the RAK12028. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisblock/rak12031/datasheet/rak12031-pinouts.svg"
@@ -73,7 +73,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 ::: tip 📝 NOTE
 - Only **3V3_S**, **GND**, and **OUTPUT** signal from EE-SX1041 are connected to the two (2) connectors of the module.
 - **3V3_S** voltage output from the WisBlock Base that powers the RAK12031 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12031 module.
-:::  
+:::
 
 #### Electrical Characteristics
 

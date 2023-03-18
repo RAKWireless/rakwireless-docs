@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak13010/overview/RAK13010_home.png
+rak_img: /assets/images/wisblock/rak13010/RAK13010.png
 rak_desc: RAK13010 is a WisBlock Interface module that extends the WisBlock system. It is an SDI-12 (Serial Digital Interface at 1200 baud rate) module, which is an asynchronous serial communications protocol for intelligent sensors that monitor environment data.
 rak_grp: [wisblock, wisinterface]
 next: ../Datasheet/
@@ -24,7 +24,7 @@ Thank you for choosing **RAK13010 WisBlock SDI-12 Module** in your awesome IoT P
 
 ## Product Description
 
-RAK13010 is a WisBlock Interface module that extends the WisBlock system. The SDI-12 (Serial Digital Interface at 1200 baud rate) module is an asynchronous serial communications protocol for intelligent sensors that monitor environment data. It consists of 3 wires: **SDI-12_12V**, **SDI-12_DATA**, and **GND**. 
+RAK13010 is a WisBlock Interface module that extends the WisBlock system. The SDI-12 (Serial Digital Interface at 1200 baud rate) module is an asynchronous serial communications protocol for intelligent sensors that monitor environment data. It consists of 3 wires: **SDI-12_12V**, **SDI-12_DATA**, and **GND**.
 
 The SDI-12 bus is a bidirectional interface for the conversion of commands and data into UART to SDI-12 and vice versa using a 3.3&nbsp;V microcontroller. The data logger requests data from the intelligent sensors, each identified with a unique address. In short, The data logger is the master, and the sensors are slave devices on the bus. The RAK13010 makes it easier for you to connect wires from multiple SDI-12 sensors into one set of terminals on a data logger.
 
@@ -44,6 +44,6 @@ The SDI-12 bus is a bidirectional interface for the conversion of commands and d
 
 To use a **RAK13010**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK13010** module. Furthermore, you need a **WisBlock Core** module to control the relay via software code.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

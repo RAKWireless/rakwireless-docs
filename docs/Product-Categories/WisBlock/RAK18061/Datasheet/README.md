@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK18061 to help you use it. This information includes technical specifications, characteristics, and requirements. It also discusses the device components.
-rak_img: /assets/images/wisblock/rak18061/overview/RAK18061_home.png
+rak_img: /assets/images/wisblock/rak18061/RAK18061.png
 tags:
   - Datasheet
   - Wisblock
@@ -24,17 +24,17 @@ The RAK18061 can drive the speaker to play audio through the input I2S signals. 
 
 ### Features
 
-* **Module Specifications**    
-    - Audio mono amplifier  
+* **Module Specifications**
+    - Audio mono amplifier
     - Amplifier power can be selected by a solder bridge
     - I2S interface for data and I2C interface for control
-    - 5.6&nbsp;W at 1% THD+N into 4-Ω load from 4.2&nbsp;V supply  
-    - High-efficiency Class-H boost converter  
-    - Built-in speaker sense and automatic gain control  
-    - Thermal, short-circuit, and under-voltage protection  
-  
-* **Module Size**    
-    * 25 x 35&nbsp;mm  
+    - 5.6&nbsp;W at 1% THD+N into 4-Ω load from 4.2&nbsp;V supply
+    - High-efficiency Class-H boost converter
+    - Built-in speaker sense and automatic gain control
+    - Thermal, short-circuit, and under-voltage protection
+
+* **Module Size**
+    * 25 x 35&nbsp;mm
 
 ## Specifications
 
@@ -46,7 +46,7 @@ The RAK18061 can drive the speaker to play audio through the input I2S signals. 
   width="60%"
   caption="RAK18061 WisBlock Audio Mono Amplifier Module top and bottom view"
 />
-#### Mounting 
+#### Mounting
 
 ##### Mounting to WisBlock Base
 
@@ -83,7 +83,7 @@ The hardware specification is categorized into five (5) parts. It shows the chip
 
 ##### IO Slot Connector
 
-The RAK18061 WisBlock module comprises a standard IO slot connector. The 40-pin WisBlock IO Slot Connector allows the RAK18061 module to be mounted to a WisBlock baseboard, such as the RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 4**. 
+The RAK18061 WisBlock module comprises a standard IO slot connector. The 40-pin WisBlock IO Slot Connector allows the RAK18061 module to be mounted to a WisBlock baseboard, such as the RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 4**.
 
 <br>
 
@@ -97,13 +97,13 @@ The RAK18061 WisBlock module comprises a standard IO slot connector. The 40-pin 
 - **3V3_S** and **GND** are the power supply pins from the WisBlock Base. **3V3_S**, **VBAT**, and **VBUS** can be selected by the solder bridge as the amplifier power. **3V3_S** is always needed for digital power input.
 - **AMP_INT** is a GPIO pin (IO1) from WisBlock Core. Normally, this pin is **HIGH**. It will be **LOW** if there is an error within the amplifier.
 - **Core_I2S_DO**, **Core_I2S_DI**, **Core_I2S_WS**, and **Core_I2S_BCLK** are I2S signals.
-- **Device_I2C_SDA** and **Device_I2C_SCL** are I2C signals, which control the TAS2560. 
+- **Device_I2C_SDA** and **Device_I2C_SCL** are I2C signals, which control the TAS2560.
 :::
 
 ##### Stack Connector
 
-The RAK18061 WisBlock module comprises a board-to-board (BTB) connector. The BTB connector allows the RAK18061 module to be stacked with other WisBlock Audio modules, such as the RAK18080 (DSP board) and the RAK18003 (Audio Interposer board). The pin order of the connector and the pinout definition is shown in **Figure 5**. 
-  
+The RAK18061 WisBlock module comprises a board-to-board (BTB) connector. The BTB connector allows the RAK18061 module to be stacked with other WisBlock Audio modules, such as the RAK18080 (DSP board) and the RAK18003 (Audio Interposer board). The pin order of the connector and the pinout definition is shown in **Figure 5**.
+
 
 <rk-img
   src="/assets/images/wisblock/rak18061/datasheet/RAK18061_btb_connector_pinout.png"
@@ -162,7 +162,7 @@ The table below shows the acoustic and electrical characteristics of the RAK1806
 
 ##### WisBlock Connector, AMP/DSP Board Connector, and Power Select
 
-TAS2560 needs three power supplies. Analog supply voltage and I/O supply voltage are fixed on RAK18061. The amplifier input power supply can be selected via solder bridges (SB1, SB2, SB3, or SB4). 
+TAS2560 needs three power supplies. Analog supply voltage and I/O supply voltage are fixed on RAK18061. The amplifier input power supply can be selected via solder bridges (SB1, SB2, SB3, or SB4).
 
 <rk-img
   src="/assets/images/wisblock/rak18061/datasheet/RAK18061_wisblock_dsp_connector_power_select.png"
@@ -178,8 +178,8 @@ The power supply needs to be selected according to the desired speaker output po
 - **EX_Power** from an external power supply from J12
 
 :::tip 📝 NOTE
-If you want to achieve a higher speaker output power, use **EX_Power**. 
-  - Voltage at EX_Power should not exceed 5.5&nbsp;V. 
+If you want to achieve a higher speaker output power, use **EX_Power**.
+  - Voltage at EX_Power should not exceed 5.5&nbsp;V.
   - Current of EX_Power should be higher than the speaker output power.
 :::
 

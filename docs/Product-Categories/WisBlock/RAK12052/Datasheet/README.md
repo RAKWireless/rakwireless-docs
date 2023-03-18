@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12052 WisBlock Thermal IR Array Module to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12052/overview/RAK12052.png
+rak_img: /assets/images/wisblock/rak12052/RAK12052.png
 tags:
   - datasheet
   - wisblock

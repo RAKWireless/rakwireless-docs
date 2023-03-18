@@ -1,6 +1,6 @@
 ---
 rak_desc: For an easier experience with your RAK10700 WisBlock GNSS Tracker for LoRaWAN, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the GNSS Tracker.
-rak_img: /assets/images/wisblock/rak10700/overview/RAKBox-B2-Enclosure.png
+rak_img: /assets/images/wisblock/rak10700/RAKBox-B2-Enclosure.png
 prev: ../Quickstart/
 next: ../Datasheet/
 tags:

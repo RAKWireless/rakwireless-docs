@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK19015 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak19015/overview/RAK19015_home.png
+rak_img: /assets/images/wisblock/rak19015/RAK19015.png
 tags:
   - datasheet
   - wisblock
@@ -57,13 +57,13 @@ The hardware specification discusses the pinouts and their corresponding functio
 RAK19015 WisBlock Battery Power Slot Module provides the following interfaces, headers, a button, and WisConnectors:
 
 * 1 WisBlock Power module
-* 2 pin battery interface 
+* 2 pin battery interface
 * 2 LEDs
 * 1 Reset button
 
 ::: tip 📝 NOTE
 RAK19015 doesn't have a USB connector, so when RAK19015 and RAK19010 are used together, it is not possible to program the core (unless you use Jlink). If you want to program the core, you need the RAK5804. Then you can supply over RAK19015 and program over RAK5804.
-:::  
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak19015/datasheet/rak19015-label.svg"
@@ -83,7 +83,7 @@ RAK19015 doesn't have a USB connector, so when RAK19015 and RAK19010 are used to
 
 ::: tip 📝 NOTE
 The voltage of the battery must not exceed 4.3&nbsp;V.
-:::  
+:::
 
 ##### LEDs
 
@@ -98,11 +98,11 @@ The Reset Push Button is shown in [**Figure 3**](#interfaces) and is connected t
 
 #### Pin Definition
 
-The RAK19015 Battery Power Slot Module has a 40-pin WisConnector that is compatible with the WisBlock Power Slot. The pin order of the connector and the pinout definition is shown in **Figure 5**. 
+The RAK19015 Battery Power Slot Module has a 40-pin WisConnector that is compatible with the WisBlock Power Slot. The pin order of the connector and the pinout definition is shown in **Figure 5**.
 
 ::: tip 📝 NOTE
 VBAT, 3V3, RESET, LED1, LED2, and GND are connected to the WisBlock IO connector.
-:::  
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak19015/datasheet/RAK19015-pinout.svg"
@@ -114,7 +114,7 @@ VBAT, 3V3, RESET, LED1, LED2, and GND are connected to the WisBlock IO connector
 
 ##### Absolute Maximum Ratings
 
-The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device. 
+The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device.
 
 :::warning ⚠️WARNING
 1. If the stress rating goes above what is listed, it may cause permanent damage to the device.
@@ -128,13 +128,13 @@ The Absolute Maximum Ratings of the device are shown in the table below. The str
 
 ##### Panel Specification
 
-The RAK19015 Wisblock Battery Power Slot Module can be powered by a battery, connected to the J4 connector. The nominal operating voltage of the battery should be within the range shown in the following table.     
+The RAK19015 Wisblock Battery Power Slot Module can be powered by a battery, connected to the J4 connector. The nominal operating voltage of the battery should be within the range shown in the following table.
 
 | **Minimum** | **Typical** | **Maximum** | **Unit** |
 | ----------- | ----------- | ----------- | -------- |
 | 3.3         | 3.7         | 4.3         | V        |
 
-A suitable Li-Ion battery should have the following parameters as shown in the table below: 
+A suitable Li-Ion battery should have the following parameters as shown in the table below:
 
 | **Parameter**     | **Value**            |
 | ----------------- | -------------------- |

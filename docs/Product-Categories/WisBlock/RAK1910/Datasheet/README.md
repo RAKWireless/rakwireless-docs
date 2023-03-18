@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK1910 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device's components.
-rak_img: /assets/images/wisblock/rak1910/overview/RAK1910_home.png
+rak_img: /assets/images/wisblock/rak1910/RAK1910.png
 tags:
   - datasheet
   - wisblock
@@ -215,4 +215,4 @@ Figure 5 shows the schematic of the RAK1910 module.
   src="/assets/images/wisblock/rak1910/datasheet/rak1910_schematic.png"
   width="100%"
   caption="RAK1910 WisBlock GNSS Location Module Schematic"
-/> 
+/>

@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12010 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12010/overview/RAK12010_home.png
+rak_img: /assets/images/wisblock/rak12010/RAK12010.png
 tags:
   - datasheet
   - wisblock
@@ -21,7 +21,7 @@ RAK12010 is a WisBlock Sensor that extends the WisBlock system to have ambient l
 
 - Ambient Light Sensor (ALS) module
 - Digital 16-bit resolution sensor
-- **Ambient Light Range:** 0&nbsp;lx to about 120,000&nbsp;lx 
+- **Ambient Light Range:** 0&nbsp;lx to about 120,000&nbsp;lx
 - **Ambient Light Resolution:** 0.0036&nbsp;lx
 - Excellent temperature compensation
 - 3.3&nbsp;V Power Supply
@@ -54,7 +54,7 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 #### Pin Definition
 
-The RAK12010 WisBlock Ambient Light Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK12010 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
+The RAK12010 WisBlock Ambient Light Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK12010 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisblock/rak12010/datasheet/rak12010_pinout.svg"
@@ -66,7 +66,7 @@ The RAK12010 WisBlock Ambient Light Sensor Module comprises a standard WisBlock 
 - Only **I2C** related pins, **3V3_S**, and **GND** are connected to the WisConnector.
 
 - **3V3_S** voltage output from the WisBlock Base that powers the RAK12010 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12010 module.
-::: 
+:::
 
 #### Electrical Characteristics
 

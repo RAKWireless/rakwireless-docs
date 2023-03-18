@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK16000 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak16000/overview/RAK16000_home.png
+rak_img: /assets/images/wisblock/rak16000/RAK16000.png
 tags:
   - datasheet
   - wisblock
@@ -73,7 +73,7 @@ The RAK16000 WisBlock DC Current Module comprises a standard WisBlock connector.
 
 - Only the **I2C** related pins, **3V3_S** and **GND** are connected to the WisConnector.
 - **3V3_S** voltage output from the WisBlock Base that powers the RAK16000 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK16000 module.
-:::  
+:::
 
 #### Electrical Characteristics
 
@@ -141,7 +141,7 @@ The pull-up resistor for I2C_SCL and I2C_SDA is already installed on the WisBloc
 - Using the 100&nbsp;mΩ shunt resistor, you can measure current with a minimum value of 100&nbsp;uA and LSB is 100&nbsp;uA.<br>
 - Using the 1&nbsp;Ω shunt resistor, you can measure 10&nbsp;uA current, and the measure range will be 320&nbsp;uA.
 
-:::  
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak16000/datasheet/image-20210722204440705.png"

@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK16001 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak16001/overview/RAK16001_home.png
+rak_img: /assets/images/wisblock/rak16001/RAK16001.png
 tags:
   - datasheet
   - wisblock
@@ -54,7 +54,7 @@ The hardware specification is categorized into four parts. It discusses the pino
 
 #### Pin Definition
 
-The RAK16001 module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
+The RAK16001 module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisblock/rak16001/datasheet/rak16001_pinout.svg"
@@ -65,7 +65,7 @@ The RAK16001 module has a 40-pin WisConnector that is compatible to the WisBlock
 ::: tip 📝 NOTE
 - Only **I2C** related pins, **3V3_S** and **GND** are connected to the WisConnector of this module.
 - **3V3_S** voltage output from the WisBlock Base that powers the RAK16001 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK16001 module.
-:::  
+:::
 
 #### Electrical Characteristics
 

@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak14003/overview/RAK14003_home.png
+rak_img: /assets/images/wisblock/rak14003/RAK14003.png
 rak_desc: RAK14003 is a WisBlock LED Bar Graph module that can be used to build a multipurpose graphic feedback display.
 rak_grp: [wisblock, wisdisplay]
 next: ../Quickstart/
@@ -29,7 +29,7 @@ Thank you for choosing **RAK14003 WisBlock LED Bar Graph Module** in your awesom
 
 ## Product Description
 
-RAK14003 is an LED Bar Graph that is part of WisBlock Display modules. It consists of 10 configurable LEDs (5 green color LEDs, 3 yellow color LEDs, and 2 red color LEDs). RAK14003 uses the **MCP23017** from Microchip as an I/O Expander and **KEM-102510A-RYG from** Hongke Lighting as the LED bar. Each LED in the module can be controlled separately so the module can build a multipurpose graphic feedback display. 
+RAK14003 is an LED Bar Graph that is part of WisBlock Display modules. It consists of 10 configurable LEDs (5 green color LEDs, 3 yellow color LEDs, and 2 red color LEDs). RAK14003 uses the **MCP23017** from Microchip as an I/O Expander and **KEM-102510A-RYG from** Hongke Lighting as the LED bar. Each LED in the module can be controlled separately so the module can build a multipurpose graphic feedback display.
 
 ## Product Features
 
@@ -47,6 +47,6 @@ RAK14003 is an LED Bar Graph that is part of WisBlock Display modules. It consis
 
 To use a **RAK14003**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK14003** module. Furthermore, you need a **WisBlock Core** module to use the LED indicator.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

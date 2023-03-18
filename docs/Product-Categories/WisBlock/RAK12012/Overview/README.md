@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12012/overview/RAK12012_home.png
+rak_img: /assets/images/wisblock/rak12012/RAK12012.png
 rak_desc: RAK12012 is a WisBlock Sensor that can measure pulse oximetry and heart rate of a person.
 rak_grp: [wisblock, wissensor]
 next: ../Quickstart/
@@ -58,6 +58,6 @@ The RAK12012, a part of WisBlock Sensor, is an integrated pulse oximetry and hea
 
 To use a **RAK12012**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the  **RAK12012** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

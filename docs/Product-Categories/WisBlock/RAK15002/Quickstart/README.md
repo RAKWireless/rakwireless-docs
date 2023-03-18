@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak15002/overview/rak15002_home.png
+rak_img: /assets/images/wisblock/rak15002/RAK15002.png
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK15002. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
 tags:
   - quickstart

@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK19009. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
-rak_img: /assets/images/wisblock/rak19009/overview/RAK19009_home.png
+rak_img: /assets/images/wisblock/rak19009/RAK19009.png
 prev: ../Overview/
 next: ../Datasheet/
 tags:
@@ -11,7 +11,7 @@ tags:
 
 # RAK19009 Quick Start Guide
 
-This guide introduces the RAK19009 WisBlock Mini Base Board with Power Slot and how to use it. 
+This guide introduces the RAK19009 WisBlock Mini Base Board with Power Slot and how to use it.
 
 ## Prerequisite
 
@@ -33,7 +33,7 @@ Based on the choice of the WisBlock Core, select a Development Environment:
 
 <b>Programming via Arduino IDE</b>
 - [RAKwireless BSP support for Arduino](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index)
-<br>In Arduino IDE, once you installed the BSP, the examples for WisBlock Core will be automatically included on the list of examples. 
+<br>In Arduino IDE, once you installed the BSP, the examples for WisBlock Core will be automatically included on the list of examples.
 
 <b>Programming via PlatformIO IDE:</b>
 - [RAKwireless WisBlock modules in PlatformIO](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md)
@@ -66,7 +66,7 @@ Some MCU IO pins have an alternate function. In this case, you have the option t
 
 RAK19009 WisBlock Base Board is the main board that allows you to attach MCU, sensors, and IO modules through the standardized expansion connectors. These connectors provide a data bus interconnection between the modules attached to the RAK19009 Base Board.
 
-This guide shows the details related to the installation of modules into the RAK19009 board. The following section discusses the general concepts to manipulate the WisConnector in any WisBlock Module. The installation and removal details of each type of WisBlock module: Core and Sensor are explained. 
+This guide shows the details related to the installation of modules into the RAK19009 board. The following section discusses the general concepts to manipulate the WisConnector in any WisBlock Module. The installation and removal details of each type of WisBlock module: Core and Sensor are explained.
 
 ##### Attaching a WisConnector
 
@@ -140,7 +140,7 @@ This guide uses two arrows. Refer to **Figure 2** for its representation.
   caption="WisConnector’s header is not parallel to the socket"
 />
 
-8. When the aforementioned steps are not completed yet, do not apply force to buckle. Otherwise, there will be a risk to damage the connector. When the connector cannot be smoothly buckled down, repeat the alignment step. 
+8. When the aforementioned steps are not completed yet, do not apply force to buckle. Otherwise, there will be a risk to damage the connector. When the connector cannot be smoothly buckled down, repeat the alignment step.
 
 ##### Detaching a WisConnector
 
@@ -206,7 +206,7 @@ Follow carefully the procedure defined in [attaching a WisConnector](#attaching-
 
 A WisBlock Sensor module is designed to be installed on the Sensor slot of the RAK19009 Base Board. There are two (2) available sensor slots in the RAK19009 Base Board. As shown in **Figure 16**, the location of the slots is properly marked by silkscreen.
 
-Follow carefully the procedure of the section, [attaching a WisConnector](#attaching-a-wisconnector/), to attach a WisBlock Sensor module. Once attached, fix the module with an M1.2 x 3&nbsp;mm screw. 
+Follow carefully the procedure of the section, [attaching a WisConnector](#attaching-a-wisconnector/), to attach a WisBlock Sensor module. Once attached, fix the module with an M1.2 x 3&nbsp;mm screw.
 
 <rk-img
   src="/assets/images/wisblock/rak19009/quickstart/rak19009-io-assy.png"
@@ -216,7 +216,7 @@ Follow carefully the procedure of the section, [attaching a WisConnector](#attac
 
 ##### Disassembling a WisBlock Module
 
-1. The procedure to disassemble any type of WisBlock module is the same. As shown in **Figure 17**, first, remove the screws. 
+1. The procedure to disassemble any type of WisBlock module is the same. As shown in **Figure 17**, first, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak19009/quickstart/rak19009-remove.png"
@@ -240,7 +240,7 @@ Follow carefully the procedure of the section, [attaching a WisConnector](#attac
 
 ### Software Setup
 
-The WisBlock Core is designed to be interfaced with other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the WisBlock Core. 
+The WisBlock Core is designed to be interfaced with other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the WisBlock Core.
 Before you continue, you should have either an [Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) or
 [PlatformIO](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md) already setup.
 

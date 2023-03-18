@@ -8,7 +8,7 @@ tags:
     - Enclosure
     - RAK19007
 rak_desc: In this guide, the process of assembling and mounting your RAKBox-UO100x75x38 will be shown step by step. Strict adherence to the steps guarantees a secured and durable casing.
-rak_img: /assets/images/wisblock/rakbox-uo100x75x38/overview/uo_home.png
+rak_img: /assets/images/wisblock/rakbox-uo100x75x38/uo_home.png
 ---
 
 # Installation Guide

@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK18003 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak18003/overview/RAK18003_home.png
+rak_img: /assets/images/wisblock/rak18003/RAK18003.png
 prev: ../Quickstart/
 next: false
 tags:
@@ -8,9 +8,9 @@ tags:
   - WisBlock Audio
   - RAK18003
   - 3PEAK
-  - TPT29555 
+  - TPT29555
   - SG MICRO CORP
-  - 5223YWQ10 
+  - 5223YWQ10
 ---
 
 
@@ -28,7 +28,7 @@ The RAK18003 is an interposer module, part of the WisBlock Audio Series. The RAK
   - Interposer board
   - Extend IO for WisBlock Core to control other modules
   - FPC connector for connecting PDM MIC modules
-  - TF-card connector  
+  - TF-card connector
   - BTB connector for WisBlock Audio stack
 
 * **Module Size**
@@ -36,7 +36,7 @@ The RAK18003 is an interposer module, part of the WisBlock Audio Series. The RAK
 
 ## Specifications
 
-### Overview 
+### Overview
 
 <rk-img
   src="/assets/images/wisblock/rak18003/datasheet/RAK18003_Back_Front.png"
@@ -44,7 +44,7 @@ The RAK18003 is an interposer module, part of the WisBlock Audio Series. The RAK
   caption="RAK18003 WisBlock Audio Interposer Module top and bottom view"
 />
 
-#### Mounting 
+#### Mounting
 
 The RAK18003 WisBlock Audio Interposer Module can be mounted to the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. **Figure 2** shows the mounting mechanism of the RAK18003 on a WisBlock Base module. Other WisBlock Audio modules can be interfaced via BTB connector.
 
@@ -67,7 +67,7 @@ The hardware specification is categorized into five (5) parts that cover the chi
 
 #### Pin Definition
 
-The RAK18003 WisBlock Audio Interposer Module comprises a standard WisBlock connector, FPC connector for PDM MIC modules, a BTB connector for the WisBlock Audio stack, and a TF connector. 
+The RAK18003 WisBlock Audio Interposer Module comprises a standard WisBlock connector, FPC connector for PDM MIC modules, a BTB connector for the WisBlock Audio stack, and a TF connector.
 
 ##### WisBlock Connector
 
@@ -80,7 +80,7 @@ The WisBlock connector allows the RAK18003 module to be mounted to a WisBlock Ba
 />
 
 :::tip 📝 NOTE:
-- **VBAT**,**VBUS**,**3V3_S**, and **GND** are the power supply from the WisBlock Base. 
+- **VBAT**,**VBUS**,**3V3_S**, and **GND** are the power supply from the WisBlock Base.
 - **Core_I2C_SDA** and **Core_I2C_SCL** are I2C signals from WisBlock Core which works as a master to communicate with other I2C devices.
 - **Core_AIN0** and **Core_AIN1** are ADC input for WisBlock Core.
 - **CORE_SPI_MISO**,**CORE_SPI_CLK**, and **CORE_SPI_MOSI** are SPI signals, which work as a master to communicate with other SPI devices.
@@ -105,7 +105,7 @@ The BTB connector is designed to support WisBlock Audio Modules. It allows the R
 - **Core_I2C_SCL** and **Core_I2C_SDA** are I2C signals connected to WisBlock Core which works as the master.
 - **AMP_CTR_IO1**, **AMP_CTR_IO2**, and **AMP_CTR_IO3** are IO signals form AMP board. WisBlock Core controls these pins using an IO expander.
 - **DSP_CTR_IO1**, **DSP_CTR_IO2**, **DSP_CTR_IO3**, **DSP_CTR_IO4**, and **DSP_CTR_IO5** are IO signals form DSP board. WisBlock Core controls these pins using an IO expander.
-- **Core_AIN0** and **Core_AIN1** are ADC input for the WisBlock Core. 
+- **Core_AIN0** and **Core_AIN1** are ADC input for the WisBlock Core.
 - **DSP_PDM1_CLK**,**DSP_PDM1_Data**,**DSP_PDM2_CLK**, and **DSP_PDM2_Data**  are PDM signals for DSP board.
 - **Core_Reset** is a hardware reset signal from WisBlock Base.
 - **DSP_Check** and **AMP_Check** are used to check whether a DSP board or AMP board is connected. This pin is low when there is no DSP or AMP board and will be high when connect to a DSP or AMP board.
@@ -124,7 +124,7 @@ The FPC connector allows the RAK18003 module to be connected to a PDM MIC board,
 />
 
 :::tip 📝 NOTE:
-- **3V3** and **GND** are the power supply for the MIC boards.  
+- **3V3** and **GND** are the power supply for the MIC boards.
 - **MIC_CTR_IO1** is the GPIO from the interposer board which can control the MIC if left or right channel.
 - **MIC_PDM1_Data**, **MIC_PDM1_CLK**, **MIC_PDM2_Data**, and **MIC_PDM2_CLK** are PDM signals.
 - **MIC_Check** is a signal to let the interposer board know if a MIC exists in the FPC connector.

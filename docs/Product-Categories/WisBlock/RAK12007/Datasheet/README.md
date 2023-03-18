@@ -6,7 +6,7 @@ tags:
 prev: ../Quickstart/
 next: false
 rak_desc: Provides comprehensive information about your RAK12007 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12007/overview/RAK12007_buy.png
+rak_img: /assets/images/wisblock/rak12007/RAK12007.png
 ---
 
 # RAK12007 WisBlock Ultrasonic Sensor Module Datasheet
@@ -20,7 +20,7 @@ RAK12007 is an ultrasonic sensor module based on the CS100, an industrial-grade 
 For an ultrasonic detector, there are two main parts: **Emitter** and **Detector**. The emitter transmits an ultrasonic sound wave, and the detector receives back the signal from the emitter reflected by an object. By calculating the travel time and the speed of sound, the distance of the object can be determined.
 
 
-### Features 
+### Features
 
 * Detect Range: 2&nbsp;cm to 4&nbsp;m
 * 3.3&nbsp;V Power supply
@@ -90,7 +90,7 @@ The RAK12007 WisBlock module has a 40-pin WisConnector that is compatible with t
 
 :::tip 📝 NOTE:
 
-- **PD**, **ECHO**, **TRIG**, **3V3_S (optional)**, **3V3 (default)**, and **GND** are connected to WisConnector. 
+- **PD**, **ECHO**, **TRIG**, **3V3_S (optional)**, **3V3 (default)**, and **GND** are connected to WisConnector.
 - **3V3_S (optional)** voltage output from the WisBlock Base that powers the RAK12007 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12007 module.
 :::
 

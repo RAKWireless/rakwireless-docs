@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12034 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12034/overview/RAK12034_home.png
+rak_img: /assets/images/wisblock/rak12034/RAK12034.png
 tags:
   - datasheet
   - wisblock
@@ -45,7 +45,7 @@ Due to its small form factor and low-power consumption, it is ideal for smart we
 
 ## Specifications
 
-### Overview 
+### Overview
 
 
 #### Mounting

@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12033/overview/RAK12033_home.png
+rak_img: /assets/images/wisblock/rak12033/RAK12033.png
 rak_desc: RAK12033 is a WisBlock 6-axis Accelerometer sensor module based on IIM-42652 from TDK InvenSense. It is a motion tracking device that supports an extended operating temperature range.
 rak_grp: [wisblock, wissensor]
 prev: ../../
@@ -41,9 +41,9 @@ RAK12033 is a 6-axis accelerometer sensor module, part of the RAKWireless WisBlo
     * Gyroscope output range: ±15.625, ±31.25, ±62.5, ±125, ±250, ±500, ±1000, and ±2000 degrees/sec.
     * Accelerometer output range: ±2g, ±4g, ±8g, and ±16g
     * 20,000&nbsp;g shock tolerant
-    * I2C digital output interface   
+    * I2C digital output interface
     * Operating temperature: -40°&nbsp;C ~ 105°&nbsp;C
-   
+
 * **Size**
     * 10 x 23&nbsp;mm
 
@@ -51,6 +51,6 @@ RAK12033 is a 6-axis accelerometer sensor module, part of the RAKWireless WisBlo
 
 To use a **RAK12033**, you need at least a **WisBlock Base board** to plug the module in. **WisBlock Base board** provides power supply to the **RAK12033** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 Make sure to fix the module with the screws to ensure a proper function.
 :::

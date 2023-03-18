@@ -16,7 +16,13 @@ tags:
 
 The **RAK10701-L Field Tester for LoRaWAN** is a ready-to-use WisNode for evaluating deployed LoRaWAN network, which comes in a hard case and two different antenna types. It has a GNSS and a touchscreen LCD for the user interface, which displays the number of gateways the device can reach and other parameters like approximate distance, RSSI, and SNR. It is powered by a rechargeable battery and can be charged via USB Type-C interface.
 
+:::warning ⚠️ WARNING
+The latest RAK10701 Field Tester firmware only works on the following LoRaWAN Network Servers: **Helium**, **The Things Network**, and **Chirpstack**.
+:::
+
 :::tip 📝 NOTE
+The [source code of RAK10701](https://github.com/RAKWireless/RAK10701-Field-Tester) is open-sourced (except the RUI3 APIs).
+
 The device has to be charged first if it comes fresh from shipping. There is a possibility that the battery was drained during its transport.
 :::
 

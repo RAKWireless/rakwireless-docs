@@ -1,6 +1,6 @@
 ---
 rak_desc: Aside from the default RAK firmware on the RAK2305, you can create custom firmware using RUI (RAKwireless Unified Interface) or the actual SDK from the manufacturer of the microcontroller that is used inside the module.
-rak_img: /assets/images/wisblock/rak2305/overview/RAK2305_home.png
+rak_img: /assets/images/wisblock/rak2305/RAK2305.png
 prev: ../Quickstart/
 next: ../Datasheet/
 tags: RAK2305
@@ -15,7 +15,7 @@ RAK2305 module comes with two versions of firmware that allow you to configure i
 - [Factory bin version](https://github.com/RAKWireless/WisBlock/blob/master/bootloader/RAK2305/RAK2305-Basic-WIFI-BLE-AT.bin)
 - [Alternative MQTT and HTTP version](https://github.com/RAKWireless/WisBlock/blob/master/bootloader/RAK2305/RAK2305-Basic-WIFI-HTTP-MQTT-AT.bin)
 
-Additionally, RAK offers a second alternative for advanced customers who need to have deeper integration of their solutions with these modules. In this alternative, you could develop your own version of ESP-AT firmware that runs inside of the RAK2305 module. 
+Additionally, RAK offers a second alternative for advanced customers who need to have deeper integration of their solutions with these modules. In this alternative, you could develop your own version of ESP-AT firmware that runs inside of the RAK2305 module.
 
 ## How to Create Your Own Firmware for RAK2305
 
@@ -31,7 +31,7 @@ Additionally, RAK offers a second alternative for advanced customers who need to
 2. Download and install the latest stable Windows release of [ninja](https://github.com/ninja-build/ninja/releases).
 
 3. Open the Windows Command Prompt: Press **Windows+R** to open “**Run**” box. Type “**cmd**” and then click “**OK**”. If you have already installed python, check the installed version. If you don't have python installed, use the link below as a guide.<br>
-   
+
 - [How to install Python](https://www.c-sharpcorner.com/article/how-to-install-python-3-8-in-windows/)
 
 <rk-img
@@ -50,7 +50,7 @@ Additionally, RAK offers a second alternative for advanced customers who need to
 
 - [Install pip](https://pip.pypa.io/en/latest/installing/)
 
-5. Install the following python packages with pip using the command: 
+5. Install the following python packages with pip using the command:
 
 ```
 python -m pip install pyyaml xlrd click
@@ -153,7 +153,7 @@ export.bat
 cd ..
 rmdir /s /q  sdkconfig build
 python build.py menuconfig
-python build.py build 
+python build.py build
 python build.py flash
 ```
 
@@ -163,7 +163,7 @@ python build.py flash
 cd %userprofile%\esp\esp-at
 rmdir /s /q build
 python build.py menuconfig
-python build.py build 
+python build.py build
 python build.py flash
 ```
 
@@ -188,7 +188,7 @@ You should erase the entire flash, and then re-flash the AT firmware.
 
 ### Extending the ESP-AT Project
 
-The link below shows a complete list of AT commands. Not all commands are available in the factory version.<br> 
+The link below shows a complete list of AT commands. Not all commands are available in the factory version.<br>
 
 - [AT Command Set](https://docs.espressif.com/projects/esp-at/en/latest/AT_Command_Set/index.html)
 
@@ -256,11 +256,11 @@ bool esp_at_example_cmd_regist(void)
 void app_main()
 {
     ...
-    
+
     if(esp_at_example_cmd_regist() == false) {
         printf("custom cmd register fail\r\n");
     }
-    
+
     at_custom_init();
 }
 ```

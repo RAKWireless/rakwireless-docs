@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK14008 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak14008/overview/RAK14008_home.png
+rak_img: /assets/images/wisblock/rak14008/RAK14008.png
 tags:
   - datasheet
   - wisblock
@@ -36,7 +36,7 @@ RAK14008 is a gesture sensor module based on PAJ7620U2. It is designed for gestu
 
 ## Specifications
 
-### Overview 
+### Overview
 
 #### Mounting
 
@@ -71,7 +71,7 @@ The RAK14008 WisBlock Gesture Sensor Module comprises a standard WisBlock connec
 ::: tip 📝 NOTE
 - Only **I2C** related pin, **LDO_EN**, **INT_N**, **VBAT**, **3V3_S**, and **GND** are connected to the WisConnector.
 - **3V3_S** voltage output from the WisBlock Base that powers the RAK14008 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK14008 module.
-:::  
+:::
 
 #### Electrical Characteristics
 
@@ -122,7 +122,7 @@ The mechanical dimensions of the RAK14008 module are shown in **Figure 3** below
   caption="VBAT to VLED"
 />
 
-##### PAJ7620U2 Related Circuits 
+##### PAJ7620U2 Related Circuits
 
 **R6** and **R8** resistors already exist on the WisBlock Base board and are not mounted on the RAK14008 module.
 

@@ -1,11 +1,11 @@
 ---
-rak_img: /assets/images/accessories/rakarp01/overview/unipolarization-plate.png
+rak_img: /assets/images/accessories/rakarp01/unipolarization-plate.png
 rak_desc: A high-gain directional antenna specifically useful in scenarios where directional signal reception is necessary.
 rak_grp: [accessories, antennas]
 rak_model: RAKARP01
 next: ../Datasheet/
 prev: ../../
-tags: 
+tags:
     - RAKARP01
 ---
 

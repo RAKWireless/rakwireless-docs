@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12005 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12005/overview/RAK12005_home.png
+rak_img: /assets/images/wisblock/rak12005/RAK12005.png
 tags:
   - datasheet
   - wisblock
@@ -36,7 +36,7 @@ RAK12005 WisBlock Rain Sensor Module also has a separate sensor PCB, the RAK1203
 
 ## Specifications
 
-### Overview 
+### Overview
 
 #### Mounting
 
@@ -62,7 +62,7 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 #### Pin Definition
 
-The RAK12005 WisBlock module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 3**. 
+The RAK12005 WisBlock module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 <rk-img
   src="/assets/images/wisblock/rak12005/datasheet/RAK12005_pinout.svg"
@@ -72,7 +72,7 @@ The RAK12005 WisBlock module has a 40-pin WisConnector that is compatible to the
 
 ::: tip 📝 NOTE
 - Only **OUT**, **3V3_S (optional)**, **3V3**, and **GND** are connected to WisConnector. **3V3_S** can be turn on or off on WisBlock Base through **IO2**. Default use **3V3** for this module.
-:::  
+:::
 
 #### Electrical Characteristics
 
@@ -107,9 +107,9 @@ The mechanical dimensions of the RAK12005 module is shown in **Figure 4** below.
 
 #### Schematic Diagram
 
-**Figure 6** shows the RAK12005 water module schematic. The MCP606 acts as a comparator on this module, the resistor divider (made of R7 and R5) is used as a voltage reference, and J2 is a water detect panel connector. 
+**Figure 6** shows the RAK12005 water module schematic. The MCP606 acts as a comparator on this module, the resistor divider (made of R7 and R5) is used as a voltage reference, and J2 is a water detect panel connector.
 
-The second divider consists of resistor R4 and a water detect panel connector (J2). When the water detect panel is dry, its resistance is near-infinite, and the voltage applied to the inverting terminal of the comparator equals VCC (3.3V). 
+The second divider consists of resistor R4 and a water detect panel connector (J2). When the water detect panel is dry, its resistance is near-infinite, and the voltage applied to the inverting terminal of the comparator equals VCC (3.3V).
 
 Since the voltage of the reference divider connected to the non-inverting input is VCC/2, the output of the comparator is at zero voltage. Once the liquid is present at the detect panel, its resistance drops and pulls the voltage on the inverting input of the comparator toward zero volts. Once this voltage falls below VCC/2, the comparator output swings toward VCC, signaling the presence of liquid. Then the comparator output is tied to the IO pin on the WisConnector.
 
@@ -121,4 +121,4 @@ Since the voltage of the reference divider connected to the non-inverting input 
 
 ::: tip 📝 NOTE
 - The water detect panel is RAK12030, make sure you got this module.
-::: 
+:::

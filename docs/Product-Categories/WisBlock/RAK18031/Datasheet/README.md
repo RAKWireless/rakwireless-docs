@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK18031 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak18031/overview/RAK18031_home.png
+rak_img: /assets/images/wisblock/rak18031/RAK18031.png
 tags:
   - Datasheet
   - WisBlock Audio
@@ -32,7 +32,7 @@ RAK18031 is a WisBlock Audio that extends the WisBlock system based on the MP34D
     * Low distortion of 6% at 120&nbsp;dB SPL
     * 64&nbsp;dB(A) Signal-to-Noise Ratio
     * Omnidirectional sensitivity
-    
+
 * **Module Size**
     * 15 x 25&nbsp;mm
 
@@ -146,7 +146,7 @@ The RAK18031 WisBlock Audio PDM Microphone comprises a standard FPC connector. T
 
 ##### Board Dimensions
 
-**Figure 7** shows the dimensions and the mechanical drawing of the RAK18031 module.   
+**Figure 7** shows the dimensions and the mechanical drawing of the RAK18031 module.
 
 <rk-img
   src="/assets/images/wisblock/rak18031/datasheet/rak18031-dim.png"
@@ -167,12 +167,12 @@ The RAK18031 WisBlock Audio PDM Microphone comprises a standard FPC connector. T
 
 ##### Digital Microphone
 
-The **Pin 2** of the MP34DT06JTR is used to control the MIC as a left or right channel. 
+The **Pin 2** of the MP34DT06JTR is used to control the MIC as a left or right channel.
 
 - The MIC is the left channel when **Pin 2** is `HIGH`.
-- The MIC is the right channel when **Pin 2** is `LOW`. 
+- The MIC is the right channel when **Pin 2** is `LOW`.
 
-By default, the RAK18031 is the right channel. But, you can remove the 10&nbsp;kΩ resistor on **R9** and connect it to **R8** to change the MIC to the left channel as its default. You may also use **MIC_CTR_IO1** to select the MIC as the right or left channel.  
+By default, the RAK18031 is the right channel. But, you can remove the 10&nbsp;kΩ resistor on **R9** and connect it to **R8** to change the MIC to the left channel as its default. You may also use **MIC_CTR_IO1** to select the MIC as the right or left channel.
 
 <rk-img
   src="/assets/images/wisblock/rak18031/datasheet/rak18031-mic.png"

@@ -1,12 +1,12 @@
 ---
-rak_img: /assets/images/wisblock/rak19015/overview/RAK19015_home.png
+rak_img: /assets/images/wisblock/rak19015/RAK19015.png
 rak_desc: RAK19015 is a WisBlock Battery Power Slot Module that comprises a battery connector, a reset push button, and a power connector which can connect with WisBlock Base board.
 rak_grp: [wisblock, wisbase]
 next: ../Quickstart/
 prev: ../../
     - wisblock
     - RAK19015
-    - SGMICRO 
+    - SGMICRO
     - SGM6036
 ---
 
@@ -44,5 +44,5 @@ To use a **RAK19015**, you need at least a **WisBlock Base** Board with Power Sl
 - Battery can cause harm if not handled properly.
 - 3.7-4.2&nbsp;V Li-Ion batteries are primarily supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
 - Make sure the battery wires, both rechargeable and non-rechargeable, match the polarity on the RAK19015 board. Not all batteries have the same wiring.
-- Make sure to fix the module with the screws to ensure a proper function.    
+- Make sure to fix the module with the screws to ensure a proper function.
 :::

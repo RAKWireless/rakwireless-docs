@@ -378,7 +378,7 @@ module.exports = {
     },
     {
       title: 'Datasheet',
-      path: '/Product-Categories/Accessories/Antenna-Feeder-Line/Datasheet/',
+      path: '/Product-Categories/accessories/antenna-feeder-line/',
       collapsable: false,
       nested: true,
       download: true,
@@ -505,7 +505,7 @@ module.exports = {
     },
     {
       title: 'Datasheet',
-      path: '/Product-Categories/Accessories/RAK9720/Datasheet/',
+      path: '/Product-Categories/accessories/rak9720/',
       collapsable: false,
       nested: true,
       download: true,

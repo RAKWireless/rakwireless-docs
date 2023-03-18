@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12029/overview/RAK12029_home.png
+rak_img: /assets/images/wisblock/rak12029/RAK12029.png
 rak_desc: RAK12029 is a WisBlock Sensor Module that extends the WisBlock system with an inductive sensor. It enables the user to build a metal detector and inductive sensor system that can send measured data and alarm messages over LoRaWAN.
 rak_grp: [wisblock, wissensor]
 next: ../Quickstart/
@@ -51,6 +51,6 @@ RAK12029 is a metal detection sensor module based on the LDC1614 from Texas Inst
 
 To use a **RAK12029**, you need at least a **WisBlock Base** to plug the module in. The **WisBlock Base** should have a connected battery to provide power supply to the **RAK12029** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-::: warning ⚠️ WARNING    
+::: warning ⚠️ WARNING
 Make sure to fix the module with the screws to ensure a proper function.
 :::

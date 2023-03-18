@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak19005/overview/RAK19005.png
+rak_img: /assets/images/wisblock/rak19005/RAK19005.png
 rak_desc: RAK19005 is a WisBlock FPC (Flat Printed Circuit) extension cable for Slot A to D WisBlock modules.
 rak_grp: [wisblock, wisextra]
 prev: ../../
@@ -24,14 +24,14 @@ Thank you for choosing **RAK19005 WisBlock Sensor Extension Cable** in your awes
 The RAK19005 is a **WisBlock Sensor Extension Cable** used to position small WisBlock modules apart from the WisBlock Base board. This helps to eliminate the influence of other WisBlock modules from sensors that measure environmental data. The advantage of using RAK19005 is to enable the design of a new enclosure that exposes sensors directly to the environment without problems.
 
 
-## Product Features  
+## Product Features
 
 * 120&nbsp;mm length
 * All signals of the 24-pin Slot A to D connectors are available
 * Compatible with many WisBlock modules with 24-pin WisConnector
 * Easy click and use application
 
-## Prerequisites  
+## Prerequisites
 
 To use the **RAK19005 WisBlock Sensor Extension Cable**, you need a [WisBlock Base](/Product-Categories/WisBlock/#wisblock-base) to plug the extension in. The other end of the cable must be plugged into a [WisBlock Sensor](/Product-Categories/WisBlock/#wisblock-sensor) module. Also, you need a [WisBlock Core](/Product-Categories/WisBlock/#wisblock-core) to control your module.
 

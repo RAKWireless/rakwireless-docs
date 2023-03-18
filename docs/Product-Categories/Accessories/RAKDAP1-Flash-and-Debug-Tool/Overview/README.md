@@ -1,11 +1,11 @@
 ---
-rak_img: /assets/images/accessories/rakdap1-flash-and-debug-tool/RAKDAP1_home.png
+rak_img: /assets/images/accessories/rakdap1-flash-and-debug-tool/RAKDAP1.png
 rak_desc: The RAKDAP1 is an affordable debug and flash tool for RAKwireless products.
 rak_grp: [accessories, hardware-tools]
 rak_model: RAKDAP1
 prev: ../../
 next: ../Quickstart/
-tags: 
+tags:
     - RAKDAP1
 ---
 

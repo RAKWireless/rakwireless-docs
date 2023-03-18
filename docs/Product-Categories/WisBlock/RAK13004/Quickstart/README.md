@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak13004/overview/rak13004_home.png
+rak_img: /assets/images/wisblock/rak13004/RAK13004.png
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK13004. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
 tags:
   - quickstart

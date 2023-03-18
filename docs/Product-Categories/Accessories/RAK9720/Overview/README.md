@@ -1,11 +1,11 @@
 ---
-rak_img: /assets/images/accessories/rak9720/datasheet/rak9720.png
+rak_img: /assets/images/accessories/rak9720/rak9720.png
 rak_desc: A-Fix Bracket Kit helps you to easily install and optimally position your antennas for any use case scenario.
 rak_grp: [accessories, antennas]
-rak_model: RAK9720 
+rak_model: RAK9720
 prev: ../../
 next: ../Datasheet/
-tags: 
+tags:
     - RAK9720
 ---
 

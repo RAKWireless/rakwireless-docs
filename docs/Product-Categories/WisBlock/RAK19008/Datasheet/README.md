@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK19008 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak19008/overview/RAK19008.png
+rak_img: /assets/images/wisblock/rak19008/RAK19008.png
 prev: ../Overview/
 next: false
 tags:
@@ -17,7 +17,7 @@ tags:
 
 The RAK19008 is a **WisBlock IO Extension Cable** used to position WisBlock IO modules apart from the WisBlock Base board. This helps to eliminate the influence of other WisBlock modules from sensors that measure environmental data. The advantage of using RAK19008 is to enable the design of a new enclosure that exposes IO Slot directly to the environment without problems.
 
-### Features 
+### Features
 
 * 120&nbsp;mm length FPC (Flat Printed Circuit) board
 * All signals of the 40-pin Slot connector are available
@@ -36,11 +36,11 @@ The RAK19008 **WisBlock IO Extension Cable** must be mounted on 40-pin IO Slot o
 
 The hardware specification covers the mechanical characteristics and the schematic diagram of the RAK19008 WisBlock IO Extension Cable.
 
-#### Mechanical Characteristics  
+#### Mechanical Characteristics
 
-##### Board Dimensions  
+##### Board Dimensions
 
-Figure 1 shows the dimensions and mechanical drawing of the RAK19008 WisBlock IO Extension cable.  
+Figure 1 shows the dimensions and mechanical drawing of the RAK19008 WisBlock IO Extension cable.
 
 <rk-img
   src="/assets/images/wisblock/rak19008/datasheet/rak19008-detail.png"

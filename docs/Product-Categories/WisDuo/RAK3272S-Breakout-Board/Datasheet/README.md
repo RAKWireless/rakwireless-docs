@@ -195,7 +195,7 @@ RAK3272S uses UART2 serial pins to upload the latest firmware.
 :::tip 📝 NOTE:
 RAK3272S should automatically go to BOOT mode when the firmware is uploaded via RAK DFU Tool or WisToolBox.
 
-If BOOT mode is not initiated, pull to ground the RESET pin twice (or double click the reset button if available) to force BOOT mode.
+If BOOT mode is not initiated, you can manually send `AT+BOOT` command to start bootloader mode.
 :::
 
 #### Firmware / OS

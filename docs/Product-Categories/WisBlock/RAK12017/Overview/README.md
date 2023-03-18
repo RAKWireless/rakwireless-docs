@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12017/overview/RAK12017_home.png
+rak_img: /assets/images/wisblock/rak12017/RAK12017.png
 rak_desc: RAK12017 is an IR Detection Module that can detect if IR Signal is reflected back.
 rak_grp: [wisblock, wissensor]
 next: ../Quickstart/
@@ -31,7 +31,7 @@ Thank you for choosing **RAK12017 WisBlock IR Detection Sensor Module** in your 
 
 ## Product Description
 
-The RAK12017 is an IR detection module. This module uses ITR20001 optical switch from Everlight to detect whether the IR Signal reflects. Sample applications of this module are: to identify if an object is approaching and check changes between black and white lines. 
+The RAK12017 is an IR detection module. This module uses ITR20001 optical switch from Everlight to detect whether the IR Signal reflects. Sample applications of this module are: to identify if an object is approaching and check changes between black and white lines.
 
 
 ## Product Features
@@ -51,6 +51,6 @@ The RAK12017 is an IR detection module. This module uses ITR20001 optical switch
 
 To use a **RAK12017**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12017** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak19006/overview/RAK19006_home.png
+rak_img: /assets/images/wisblock/rak19006/RAK19006.png
 rak_desc: RAK19006 is a WisBlock Power that charges the battery wirelessly. It is highly efficient and supports up to 5W applications.
 rak_grp: [wisblock, wispower]
 next: ../Quickstart/

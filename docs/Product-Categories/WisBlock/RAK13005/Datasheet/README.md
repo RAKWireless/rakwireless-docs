@@ -1,7 +1,7 @@
 ---
 prev: ../Quickstart/
 rak_desc: Provides comprehensive information about your RAK13005 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak13005/overview/RAK13005_home.png
+rak_img: /assets/images/wisblock/rak13005/RAK13005.png
 next: false
 tags:
   - datasheet
@@ -15,11 +15,11 @@ tags:
 
 ### Description
 
-The RAK13005 is a **Local Interconnect Network** (LIN) transceiver module, used in automatic technologies that can be mounted on the IO slot of the WisBlock Base board. It is designed for in-vehicle networks using data transmission rates from 2.4&nbsp;kBaud to 20&nbsp;kBaud, and it uses the TLE7259-3 chip from Infineon. 
+The RAK13005 is a **Local Interconnect Network** (LIN) transceiver module, used in automatic technologies that can be mounted on the IO slot of the WisBlock Base board. It is designed for in-vehicle networks using data transmission rates from 2.4&nbsp;kBaud to 20&nbsp;kBaud, and it uses the TLE7259-3 chip from Infineon.
 
 This module offers safe communication over up to 40&nbsp;m distance between the LIN bus nodes. Besides the use in an automotive environment, it can be implemented in home appliances and industrial automation. The LIN bus technology consists of Peripheral (Slave) and Controller (Master) Nodes which are both supported by RAK13005.
 
-### Features 
+### Features
 
 * **Module specifications**
 
@@ -60,13 +60,13 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 #### Pin Definition
 
-The RAK13005 WisBlock LIN module module comprises a standard 40-pin WisConnector. The WisConnector allows the RAK13005 module to be mounted on a WisBlock Base board, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in Figure 2. 
+The RAK13005 WisBlock LIN module module comprises a standard 40-pin WisConnector. The WisConnector allows the RAK13005 module to be mounted on a WisBlock Base board, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in Figure 2.
 
 
 :::tip 📝 NOTE:
 - The UART related pins, 3V3, and GND are connected to this module.
 - The IO6 pin is connected to LIN Enable input pin (EN).
-- The IO5 pin is connected to MCU_WK pin. 
+- The IO5 pin is connected to MCU_WK pin.
 :::
 
 <rk-img
@@ -110,7 +110,7 @@ Figure 3 shows the dimensions and the mechanic drawing of the RAK13005 module.
 
 Figure 5 shows the RAK13005 schematic.
 
-- **J2** is the LIN bus connector. 
+- **J2** is the LIN bus connector.
 - **J1** is the 40-pin WisConnector.
 - **VS** is the LIN bus power supply pin.
 - **EN** is the Enable input IO6 which is an active-high pin.

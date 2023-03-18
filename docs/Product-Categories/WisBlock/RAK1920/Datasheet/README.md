@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK1920 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak1920/overview/RAK1920_home.png
+rak_img: /assets/images/wisblock/rak1920/RAK1920.png
 tags:
   - datasheet
   - wisblock
@@ -17,7 +17,7 @@ next: false
 
 ### Description
 
-The RAK1920 module, a part of the WisBlock Interface series, is a sensor extension module, which extends the **WisBlock** system with an adapter board to connect Click Boards (MikroElektronika), QWICC (Sparkfun) based and Grove (Seeed) based sensors to **WisBlock**. This module was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module.  
+The RAK1920 module, a part of the WisBlock Interface series, is a sensor extension module, which extends the **WisBlock** system with an adapter board to connect Click Boards (MikroElektronika), QWICC (Sparkfun) based and Grove (Seeed) based sensors to **WisBlock**. This module was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module.
 
 It supports several defacto-standard interfaces in the IoT market and allows you to integrate sensors manufactured by Mikroe, SparkFun, SeeedStudio, and others. For example, the RAK1920 supports the Click Boards™ series of modules provided by Mikroe, Qwiic Connect™ sensor interface designed by SparkFun. Also, it supports all kinds of I2C module digital I/O, UART, and ADC sensors with a Grove™ interface.
 
@@ -33,7 +33,7 @@ It supports several defacto-standard interfaces in the IoT market and allows you
 
 ## Specifications
 ### Overview
-The RAK1920 module supports Mikroe’s Click Boards, Sparkfun’s Qwiic Connect, and Seeed’s Grove sensors. **Figure 1** shows the sensors’ connector available in the RAK1920. 
+The RAK1920 module supports Mikroe’s Click Boards, Sparkfun’s Qwiic Connect, and Seeed’s Grove sensors. **Figure 1** shows the sensors’ connector available in the RAK1920.
 
 <rk-img
   src="/assets/images/wisblock/rak1920/datasheet/rak1920_interface.png"
@@ -87,9 +87,9 @@ The RAK1920 supports all the Click boards modules manufactured by Mikroe through
 | 16      | PWM         | PWM Input                     |
 
 
-##### Grove Sensor Interfaces 
+##### Grove Sensor Interfaces
 
-The RAK1920 module supports the Grove I2C and digital I/O sensors. **Figure 4** shows the pin number and definition of the Grove sensor. By default, VCC is connected to the 3.3&nbsp;V line of the IO connector. 
+The RAK1920 module supports the Grove I2C and digital I/O sensors. **Figure 4** shows the pin number and definition of the Grove sensor. By default, VCC is connected to the 3.3&nbsp;V line of the IO connector.
 
 <rk-img
   src="/assets/images/wisblock/rak1920/datasheet/grove-interface.png"
@@ -97,7 +97,7 @@ The RAK1920 module supports the Grove I2C and digital I/O sensors. **Figure 4** 
   caption="Grove Sensor interfaces"
 />
 
-By default, the I2C is enabled in the RAK1920 module, but if it is required, the RAK1920 module can also support sensors with Grove UART interface and ADC sensors. To enable the UART interface, a resistance connection needs to be added by the customer. When using the Grove UART interface sensor module, replace R9 to R10 and R11 to R12. When using Grove ADC interface (not ADC to I2C module) sensor module, replace R13 to R14 and change R15 to R16. 
+By default, the I2C is enabled in the RAK1920 module, but if it is required, the RAK1920 module can also support sensors with Grove UART interface and ADC sensors. To enable the UART interface, a resistance connection needs to be added by the customer. When using the Grove UART interface sensor module, replace R9 to R10 and R11 to R12. When using Grove ADC interface (not ADC to I2C module) sensor module, replace R13 to R14 and change R15 to R16.
 
 <rk-img
   src="/assets/images/wisblock/rak1920/datasheet/replace-connection-resistance-location.png"
@@ -153,7 +153,7 @@ The table below shows the Qwiic Connect cable color and function definition:
 
 ##### Reserved I2C Interface
 
-The RAK1920 module has a reserved I2C interface, and it can be used for generic I2C interface sensors. 
+The RAK1920 module has a reserved I2C interface, and it can be used for generic I2C interface sensors.
 
 
 :::tip 📝 NOTE:
@@ -220,14 +220,14 @@ Table below shows the recommended operating conditions of the RAK1920 module:
 
 The following sections will describe the schematic of the RAK1920 module:
 
-- Power Supply 
+- Power Supply
 - IO Connector
 
 ##### Power Supply
 
 The RAK1920 module supports the 5&nbsp;V option. By default, the 3.3&nbsp;V_S is used as the 3.3&nbsp;V power source of sensors. The module integrates a boost converter from the VBAT to 5&nbsp;V. The VBAT is the battery output voltage, usually between 3.7&nbsp;V and 4.2&nbsp;V. The EN pin enables the boost converter and is controlled by the WisBlock Core module of the overall solution.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 The 3V3_S has to be enable via WB_IO2 GPIO. Otherwise, the module will not work.
 :::
 
@@ -263,7 +263,7 @@ The RAK1920 module uses only a subset of all the pins available in the IO connec
 | IO1/IO3          | General purpose I/O    | Connected to Grove digital I/O sensors’ connectors. |
 
 
-###### IO Connector Pin Order 
+###### IO Connector Pin Order
 
 **Figure 15** shows the IO connector’s pin order. The connector is located in the bottom layer of the RAK1920 module.
 

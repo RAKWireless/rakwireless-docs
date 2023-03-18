@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12012 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12012/overview/RAK12012_home.png
+rak_img: /assets/images/wisblock/rak12012/RAK12012.png
 tags:
   - datasheet
   - wisblock
@@ -20,11 +20,11 @@ The RAK12012, a part of WisBlock Sensor, is an integrated pulse oximetry and hea
 
 ### Features
 
-- Heart-Rate Monitor and Pulse Oximeter Sensor in LED Reflective Solution  
-- Ultra-Low Power Operation  
-- Robust Motion Artifact Resilience  
-- Fast Data Output Capability  
-- -40&nbsp;°C to +85&nbsp;°C Operating Temperature Range  
+- Heart-Rate Monitor and Pulse Oximeter Sensor in LED Reflective Solution
+- Ultra-Low Power Operation
+- Robust Motion Artifact Resilience
+- Fast Data Output Capability
+- -40&nbsp;°C to +85&nbsp;°C Operating Temperature Range
 - 3.3&nbsp;V Power supply
 - Operating Current: 0.7 - 1200&nbsp;uA
 - Chipset: Maxim Integrated MAX30102
@@ -32,7 +32,7 @@ The RAK12012, a part of WisBlock Sensor, is an integrated pulse oximetry and hea
 
 ## Specifications
 
-### Overview 
+### Overview
 
 #### Mounting
 
@@ -67,10 +67,10 @@ The hardware specification is categorized into five parts. It shows the chipset 
 #### Pin Definition
 
 The RAK12012 WisBlock Heart Rate Sensor comprises a standard WisBlock connector. The WisBlock connector allows the RAK12012 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
- 
+
 ::: tip 📝 NOTE
 - **I2C** related pins: **INT**,**3V3_S**, and **GND** are connected to WisIO connector.
-- **3V3_S** voltage output from the WisBlock Base that powers the RAK12012 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12012 module. 
+- **3V3_S** voltage output from the WisBlock Base that powers the RAK12012 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12012 module.
 :::
 
  <rk-img
@@ -78,7 +78,7 @@ The RAK12012 WisBlock Heart Rate Sensor comprises a standard WisBlock connector.
   width="80%"
   caption="RAK12012 WisBlock Heart Rate Sensor Module Pinout"
 />
-  
+
 
 #### Electrical Characteristics
 
@@ -152,7 +152,7 @@ The MAX30102 IO voltage is 1.8&nbsp;V and the CPU module voltage is 3.3&nbsp;V, 
 
 ##### MAX30105EFD+T Circuit
 
-INT is an active-low interrupt (Open-Drain). This needs to be connected to an external voltage with a pull-up resistor **R7**. 
+INT is an active-low interrupt (Open-Drain). This needs to be connected to an external voltage with a pull-up resistor **R7**.
 
 <rk-img
   src="/assets/images/wisblock/rak12012/datasheet/MAX30105.png"
@@ -170,8 +170,8 @@ INT is an active-low interrupt (Open-Drain). This needs to be connected to an ex
 
 ::: tip 📝 NOTE
 - The **I2C** related pins: **INT **,**3V3_S**, and **GND** are connected to WisIO connector.
-- The **3V3_S** supply can be disconnected to save power via **WB_IO2**. 
+- The **3V3_S** supply can be disconnected to save power via **WB_IO2**.
 :::
-​      
+​
 
 

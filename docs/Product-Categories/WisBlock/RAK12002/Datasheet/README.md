@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12002 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12002/overview/rak12002_home.png
+rak_img: /assets/images/wisblock/rak12002/RAK12002.png
 tags:
   - datasheet
   - wisblock
@@ -32,9 +32,9 @@ The RAK12002 is a Real-Time Clock module, part of the RAK Wireless WisBlock Seri
 
 ## Specifications
 
-### Overview 
+### Overview
 
-#### Mounting 
+#### Mounting
 
 The RAK12002 RTC module can be mounted on slot A, B, C, or D of the WisBlock Base board. Figure 1 shows the mounting mechanism of the RAK12002 on a WisBlock Base board.
 

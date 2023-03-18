@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK13801 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak13801/overview/RAK13801_home.png
+rak_img: /assets/images/wisblock/rak13801/RAK13801.png
 tags:
   - datasheet
   - wisblock
@@ -19,7 +19,7 @@ next: false
 RAK13801 is a WisBlock IO that extends the WisBlock system based on Decawave's DW1000 module. This module uses a UWB (Ultra Wideband) Technology, a short-range wireless communication similar to Wi-Fi or Bluetooth and it uses a frequency bandwidth above 1&nbsp;GHz. It has an integrated antenna, all RF circuitry, power management, and clock circuitry in one module. It can be used in 2-way ranging or TDOA location systems to locate assets to a precision of 10&nbsp;cm and supports data rates of up to 6.8&nbsp;Mbps.
 
 ### Features
-  
+
   * Power supply: **VBAT**
   * Chipset: **Decawave DW1000**
   * Operating temperature: **-40&nbsp;°C ~ 85&nbsp;°C**
@@ -67,7 +67,7 @@ The RAK13801 WisBlock UWB Module comprises a standard WisBlock connector. The Wi
 />
 
 :::tip 📝 NOTE:
-- Only the **SPI** related pins, **IRQ**, **RSTn**, **WAKEUP**, **IO2**, **VBAT**, and **GND** are connected to this module.  
+- Only the **SPI** related pins, **IRQ**, **RSTn**, **WAKEUP**, **IO2**, **VBAT**, and **GND** are connected to this module.
 :::
 
 #### Electrical Characteristics
@@ -81,7 +81,7 @@ The RAK13801 WisBlock UWB Module comprises a standard WisBlock connector. The Wi
 
 ##### Board Dimensions
 
-**Figure 3** shows the dimensions and the mechanic drawing of the RAK13801 module.   
+**Figure 3** shows the dimensions and the mechanic drawing of the RAK13801 module.
 
 <rk-img
   src="/assets/images/wisblock/rak13801/datasheet/rak13801-dim.png"
@@ -100,7 +100,7 @@ The RAK13801 WisBlock UWB Module comprises a standard WisBlock connector. The Wi
 
 #### Schematic Diagram
 
-**Figure 5** shows the schematic diagram of the RAK13801 module. 
+**Figure 5** shows the schematic diagram of the RAK13801 module.
 
 <rk-img
   src="/assets/images/wisblock/rak13801/datasheet/rak13801-schem.jpg"

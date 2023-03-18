@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK10700 WisBlock GNSS Tracker for LoRaWAN. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
-rak_img: /assets/images/wisblock/rak10700/overview/RAKBox-B2-Enclosure.png
+rak_img: /assets/images/wisblock/rak10700/RAKBox-B2-Enclosure.png
 prev: ../Overview/
 next: ../AT-Command-Manual/
 tags:

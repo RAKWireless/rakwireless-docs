@@ -5,7 +5,7 @@ tags:
   - Antenna Feeder Line
   - datasheet
 rak_desc: Provides comprehensive information about your Antenna Feeder Line to help you use it. This information includes technical specifications, characteristics, and requirements.
-rak_img: /assets/images/accessories/antenna-feeder-line/datasheet/cable.png
+rak_img: /assets/images/accessories/antenna-feeder-line/cable.png
 
 ---
 
@@ -26,7 +26,7 @@ Antenna Feeder Line cable for **WisGate Edge Prime and Max (RAK7240/7249).**  Th
 - VSWR: ≤ 1.5
 
 <rk-img
-  src="/assets/images/accessories/antenna-feeder-line/datasheet/cable.png"
+  src="/assets/images/accessories/antenna-feeder-line/cable.png"
   width="35%"
   caption="Antenna Feeder Line Overview "
 />
@@ -58,7 +58,7 @@ Antenna Feeder Line cable for **WisGate Edge Prime and Max (RAK7240/7249).**  Th
 ### Mechanical Characteristics
 
 <rk-img
-  src="/assets/images/accessories/antenna-feeder-line/datasheet/dimensions.png"
+  src="/assets/images/accessories/antenna-feeder-line/dimensions.png"
   width="100%"
   caption="Antenna Feeder Line Mechanical Dimensions "
 />

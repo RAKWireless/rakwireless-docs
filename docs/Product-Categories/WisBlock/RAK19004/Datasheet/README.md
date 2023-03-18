@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK19004 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak19004/overview/RAK19004_home.png
+rak_img: /assets/images/wisblock/rak19004/RAK19004.png
 tags:
   - datasheet
   - wisblock
@@ -20,7 +20,7 @@ RAK19004 is a WisBlock Power module that can harness and convert green power suc
 ::: tip 📝 NOTE
 - The module has a minimum input voltage of 5.3&nbsp;V for a startup.
 - RAK19004 doesn't have a WisConnector just like the other WisBlock modules, but it is an external module with four (4) mounting holes, so you can place the module in the position that you want.
-::: 
+:::
 
 ### Features
 
@@ -52,8 +52,8 @@ The RAK19004 have two (2) connectors:
 - Through-hole connector with a 2.0&nbsp;mm pitch for the **Power Input**.
 - SMD connector with a 1.5&nbsp;mm pitch for the **5V Output**.
 
-:::warning ⚠️ WARNING    
-**ENSURE** to check correctly the polarity of the cable plugged into the Power Input connector.    
+:::warning ⚠️ WARNING
+**ENSURE** to check correctly the polarity of the cable plugged into the Power Input connector.
 :::
 
 #### Electrical Characteristics
@@ -86,8 +86,8 @@ The board dimensions of the RAK19004 module are shown in **Figure 1** below.
   caption="RAK19004 Board Dimensions"
 />
 
-:::warning ⚠️ WARNING    
-**ENSURE** to check correctly the polarity of the cable plugged into the Power Input connector.    
+:::warning ⚠️ WARNING
+**ENSURE** to check correctly the polarity of the cable plugged into the Power Input connector.
 :::
 
 ::: tip 📝 NOTE
@@ -95,7 +95,7 @@ The board dimensions of the RAK19004 module are shown in **Figure 1** below.
 - The connector **J1** close to SILK **POWER_IN** is for Green Power, you can connect it to Green Power.
 - The connector **J3** close to SILK **OUT_5V** is for WisBlock Base, you can connect it to the WisBlock Base by using a cable.
 - Both **J1** and **J3** are positive poles.
-::: 
+:::
 
 #### Schematic Diagram
 

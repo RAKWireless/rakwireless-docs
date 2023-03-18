@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK14003 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak14003/overview/RAK14003_home.png
+rak_img: /assets/images/wisblock/rak14003/RAK14003.png
 tags:
   - datasheet
   - wisblock
@@ -15,7 +15,7 @@ next: false
 
 ### Description
 
-RAK14003 is an LED Bar Graph that is part of WisBlock Display modules. It consists of 10 configurable LEDs (5 green color LEDs, 3 yellow color LEDs, and 2 red color LEDs). RAK14003 uses the **MCP23017** from Microchip as an I/O Expander and **KEM-102510A-RYG** from Hongke Lighting as the LED bar. Each LED in the module can be controlled separately so the module can build a multipurpose graphic feedback display. 
+RAK14003 is an LED Bar Graph that is part of WisBlock Display modules. It consists of 10 configurable LEDs (5 green color LEDs, 3 yellow color LEDs, and 2 red color LEDs). RAK14003 uses the **MCP23017** from Microchip as an I/O Expander and **KEM-102510A-RYG** from Hongke Lighting as the LED bar. Each LED in the module can be controlled separately so the module can build a multipurpose graphic feedback display.
 
 ### Features
 
@@ -58,7 +58,7 @@ The hardware specification is categorized into four parts. It discusses the pino
 
 #### Pin Definition
 
-The RAK14003 module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 3**. 
+The RAK14003 module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 <rk-img
   src="/assets/images/wisblock/rak14003/datasheet/rak14003_pinout.svg"
@@ -69,7 +69,7 @@ The RAK14003 module has a 40-pin WisConnector that is compatible to the WisBlock
 ::: tip 📝 NOTE
 - Only **I2C** related pin, **RESET**, **3V3_S**, and **GND** are connected to the WisConnector.
 - **3V3_S** voltage output from the WisBlock Base that powers the RAK14003 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK14003 module.
-:::  
+:::
 
 #### Electrical Characteristics
 

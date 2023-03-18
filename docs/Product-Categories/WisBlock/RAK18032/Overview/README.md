@@ -1,6 +1,6 @@
 ---
 rak_desc: RAK18032 is a WisBlock Audio that extends the WisBlock system based on SPH0655LM4H-1 from Knowles. It is an ultrasonic PDM microphone module with a ready-to-use SW library and tutorial that makes it easy to achieve rich applications.
-rak_img: /assets/images/wisblock/rak18032/overview/RAK18032_home.png
+rak_img: /assets/images/wisblock/rak18032/RAK18032.png
 rak_grp: [wisblock, microphone]
 prev: ../../
 next: ../Quickstart/
@@ -40,7 +40,7 @@ RAK18032 is a WisBlock Audio that extends the WisBlock system based on the SPH06
     * High SNR
     * Bottom port
     * Omnidirectional sensitivity
-    
+
 * **Module Size**
     * 15 x 25&nbsp;mm
 
@@ -48,6 +48,6 @@ RAK18032 is a WisBlock Audio that extends the WisBlock system based on the SPH06
 
 To use a **RAK18032**, you need at least a **WisBlock Base** to plug the module in. The **WisBlock Base** provides power supply to the **RAK18032** module. Furthermore, you need a **WisBlock Core** module to use the **RAK18032** module.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with screws to ensure proper function. 
+:::warning ⚠️ WARNING
+Make sure to fix the module with screws to ensure proper function.
 :::

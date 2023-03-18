@@ -6,7 +6,7 @@ tags:
 prev: ../Quickstart/
 next: false
 rak_desc: Provides comprehensive information about your RAK14002 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak14002/overview/RAK14002_buy.png
+rak_img: /assets/images/wisblock/rak14002/RAK14002.png
 ---
 
 # RAK14002 WisBlock Touch Sensor Module Datasheet
@@ -15,9 +15,9 @@ rak_img: /assets/images/wisblock/rak14002/overview/RAK14002_buy.png
 
 ### Description
 
-The RAK14002 WisBlock Touch Sensor module is a 3-channel Capacitive Touch Sensor. This module is based on the Microchip CAP1293 Capacitive Touch Sensor, and it has a ready to use SW library and tutorial makes it easy to build a touchpad, swipe detector. 
+The RAK14002 WisBlock Touch Sensor module is a 3-channel Capacitive Touch Sensor. This module is based on the Microchip CAP1293 Capacitive Touch Sensor, and it has a ready to use SW library and tutorial makes it easy to build a touchpad, swipe detector.
 
-### Features 
+### Features
 
 * Three (3) Capacitive Touch Sensor Inputs
 * Low Power Operation 50&nbsp;µA quiescent current in standby mode
@@ -53,14 +53,14 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 
 :::tip 📝 NOTE:
-The default 7-bit slave address is 0x50. 
+The default 7-bit slave address is 0x50.
 :::
 
 #### Pin Definition
-The RAK14002 WisBlock module comprises a standard 40-pin WisConnector. The WisConnector allows the RAK14002 module to be mounted on a WisBlock Base board, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in Figure 2. 
+The RAK14002 WisBlock module comprises a standard 40-pin WisConnector. The WisConnector allows the RAK14002 module to be mounted on a WisBlock Base board, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in Figure 2.
 
 :::tip 📝 NOTE:
-- I2C related pins, IO6, VDD, and GND are connected to this module. 
+- I2C related pins, IO6, VDD, and GND are connected to this module.
 - IO6 interrupt output pin, Low active, internal pull-up.
 :::
 

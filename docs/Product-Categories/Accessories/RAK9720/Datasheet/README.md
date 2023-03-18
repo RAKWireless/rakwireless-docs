@@ -1,11 +1,11 @@
 ---
 prev: ../Overview/
 next: false
-tags: 
+tags:
   - RAK9720
   - datasheet
 rak_desc: Provides comprehensive information about your A-Fix Bracket Kit to help you use it. This information includes technical specifications, characteristics, and typical use case scenarios.
-rak_img: /assets/images/accessories/rak9720/datasheet/rak9720.png
+rak_img: /assets/images/accessories/rak9720/rak9720.png
 
 ---
 
@@ -26,31 +26,31 @@ The new A-fix Bracket Kit from RAKwireless helps you to easily install and optim
 - Easy to install
 
 
-## Specifications 
+## Specifications
 
 ### Mechanical Characteristics
 
 
 <rk-img
-  src="/assets/images/accessories/rak9720/datasheet/2.flat-plate.png"
+  src="/assets/images/accessories/rak9720/2.flat-plate.png"
   width="80%"
   caption="Flat Plate Dimensions"
 />
 
 <rk-img
-  src="/assets/images/accessories/rak9720/datasheet/3.rounded-plate.png"
+  src="/assets/images/accessories/rak9720/3.rounded-plate.png"
   width="80%"
   caption="Rounded Plate Dimensions"
 />
 
 <rk-img
-  src="/assets/images/accessories/rak9720/datasheet/4.u-shaped-bracket.png"
+  src="/assets/images/accessories/rak9720/4.u-shaped-bracket.png"
   width="90%"
   caption="U-shaped Bracket Dimensions"
 />
 
 <rk-img
-  src="/assets/images/accessories/rak9720/datasheet/5.dimensions.png"
+  src="/assets/images/accessories/rak9720/5.dimensions.png"
   width="75%"
   caption="Dimensions of the whole construction"
 />
@@ -60,7 +60,7 @@ The new A-fix Bracket Kit from RAKwireless helps you to easily install and optim
 #### Wall Mounting
 
 <rk-img
-  src="/assets/images/accessories/rak9720/datasheet/6.wall-mounting.png"
+  src="/assets/images/accessories/rak9720/6.wall-mounting.png"
   width="40%"
   caption="Wall Mounting"
 />
@@ -68,7 +68,7 @@ The new A-fix Bracket Kit from RAKwireless helps you to easily install and optim
 #### Pole Mounting
 
 <rk-img
-  src="/assets/images/accessories/rak9720/datasheet/7.pole-mounting.png"
+  src="/assets/images/accessories/rak9720/7.pole-mounting.png"
   width="40%"
   caption="Pole Mounting"
 />

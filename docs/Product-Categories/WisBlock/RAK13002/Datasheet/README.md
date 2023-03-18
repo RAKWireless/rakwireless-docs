@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK13002 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak13002/overview/rak13002_home.png
+rak_img: /assets/images/wisblock/rak13002/RAK13002.png
 tags:
   - datasheet
   - wisblock
@@ -30,9 +30,9 @@ The RAK13002 is a WisBlock Core adaptor module that can be mounted to the IO slo
 
 ## Specifications
 
-### Overview 
+### Overview
 
-#### Mounting 
+#### Mounting
 
 The RAK13002 module can be mounted to the IO slot of the WisBlock Base board. Figure 1 shows the mounting mechanism of the RAK13002 on a WisBlock Base module.
 
@@ -49,7 +49,7 @@ The hardware specification is categorized into four parts. It discusses the pino
 
 #### Pin Definition
 
-The RAK13002 WisBlock Adaptor Module comprises a standard WisConnector connector. The WisConnector allows the RAK13002 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in Figure 2. 
+The RAK13002 WisBlock Adaptor Module comprises a standard WisConnector connector. The WisConnector allows the RAK13002 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in Figure 2.
 
 <rk-img
   src="/assets/images/wisblock/rak13002/datasheet/rak13002_pinout.svg"

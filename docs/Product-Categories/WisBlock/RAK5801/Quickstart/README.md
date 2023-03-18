@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK5801. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
-rak_img: /assets/images/wisblock/rak5801/overview/RAK5801_home.png
+rak_img: /assets/images/wisblock/rak5801/RAK5801.png
 tags:
   - quickstart
   - wisblock

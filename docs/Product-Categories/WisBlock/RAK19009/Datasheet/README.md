@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK19009 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak19009/overview/RAK19009_home.png
+rak_img: /assets/images/wisblock/rak19009/RAK19009.png
 tags:
   - datasheet
   - wisblock
@@ -89,7 +89,7 @@ RAK19009 WisBlock Mini Base provides the following interfaces, headers, a button
 
 On the WisBlock Mini Base board, there are two 2.54&nbsp;mm pitch headers for the IO extension. BOOT, I2C, and UART pins from the WisBlock Core module are also connected to these headers.
 
-###### J3 Header Pinout 
+###### J3 Header Pinout
 
 | **Pin** | **Pin Name** | **Description** |
 | ------- | ------------ | --------------- |
@@ -108,7 +108,7 @@ On the WisBlock Mini Base board, there are two 2.54&nbsp;mm pitch headers for th
 | 4       | SDA          | I2C1 Data       |
 
 
-:::tip 📝 NOTE BOOT pin 
+:::tip 📝 NOTE BOOT pin
 BOOT pin is used on startup configuration or sequence of the WisBlock Core connected to it. It is commonly used for uploading the bootloader and/or application firmware. The requirements of the state of the BOOT pin depend on the specific model of the WisBlock Core used.
 :::
 
@@ -345,7 +345,7 @@ As for the following table, it shows the pin name and description of each pin in
 
 ##### Absolute Maximum Ratings
 
-The **Absolute Maximum Ratings** of the device are shown in the table below. The stress ratings are the functional operation of the device. 
+The **Absolute Maximum Ratings** of the device are shown in the table below. The stress ratings are the functional operation of the device.
 
 :::warning ⚠️WARNING
 1. If the stress rating goes above what is listed, it may cause permanent damage to the device.
@@ -376,6 +376,10 @@ The RAK19009 is designed for **low-power IoT products**. It has no power interfa
 #### Mechanical Characteristics
 
 ##### Board Dimensions
+
+:::tip 📝 NOTE
+- You may also refer and download the [M1.2 Stand-off fastener/inserts datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/M1.2_Press-Fit_Standoff_Datasheet.zip).
+:::
 
 **Figure 8** shows the detailed mechanical dimensions of RAK19009.
 

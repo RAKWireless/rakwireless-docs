@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak18061/overview/RAK18061_home.png
+rak_img: /assets/images/wisblock/rak18061/RAK18061.png
 rak_desc: RAK18061 is a mono amplifier module, part of the WisBlock Audio Series. It is designed based on the TAS2560 from TI, which features an ultra-low-noise audio DAC and Class-D audio amplifier.
 rak_grp: [wisblock, amplifier]
 prev: ../../
@@ -31,22 +31,22 @@ The RAK18061 can drive the speaker to play audio through the input I2S signals. 
 
 ## Product Features
 
-* **Module Specifications**    
-    - Audio mono amplifier  
+* **Module Specifications**
+    - Audio mono amplifier
     - Amplifier power can be selected by a solder bridge
     - I2S interface for data and I2C interface for control
-    - 5.6&nbsp;W at 1% THD+N into 4-Ω load from 4.2&nbsp;V supply  
-    - High-efficiency Class-H boost converter  
-    - Built-in speaker sense and automatic gain control  
-    - Thermal, short-circuit, and under-voltage protection  
-  
-* **Module Size**    
-    * 25 x 35&nbsp;mm  
+    - 5.6&nbsp;W at 1% THD+N into 4-Ω load from 4.2&nbsp;V supply
+    - High-efficiency Class-H boost converter
+    - Built-in speaker sense and automatic gain control
+    - Thermal, short-circuit, and under-voltage protection
+
+* **Module Size**
+    * 25 x 35&nbsp;mm
 
 ## Prerequisites
 
-To use a **RAK18061**, you need at least a **WisBlock Base** board to plug the module in. The **WisBlock Base** board provides power supply to the **RAK18061** module. Furthermore, you need the **WisBlock Core** and the **WisBlock Audio Stack** modules to use the RAK18061.   
+To use a **RAK18061**, you need at least a **WisBlock Base** board to plug the module in. The **WisBlock Base** board provides power supply to the **RAK18061** module. Furthermore, you need the **WisBlock Core** and the **WisBlock Audio Stack** modules to use the RAK18061.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 Make sure to fix the module with screws to ensure proper function.
 :::

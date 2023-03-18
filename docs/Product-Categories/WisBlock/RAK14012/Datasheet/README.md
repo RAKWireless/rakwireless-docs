@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK14012 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak14012/overview/RAK14012_home.png
+rak_img: /assets/images/wisblock/rak14012/RAK14012.png
 tags:
   - datasheet
   - wisblock
@@ -15,9 +15,9 @@ next: false
 
 ### Description
 
-RAK14012 is an LED matrix driver module for WS2812B LEDs, which has a control circuit and RGB chip. 
+RAK14012 is an LED matrix driver module for WS2812B LEDs, which has a control circuit and RGB chip.
 
-To drive the WS2812B, the RAK14012 has a built-in boost circuit to generate 5&nbsp;V voltage output. But it is recommended to use an external power supply to power the LED Matrix. 
+To drive the WS2812B, the RAK14012 has a built-in boost circuit to generate 5&nbsp;V voltage output. But it is recommended to use an external power supply to power the LED Matrix.
 
 
 ### Features
@@ -28,7 +28,7 @@ To drive the WS2812B, the RAK14012 has a built-in boost circuit to generate 5&nb
 
 ## Specifications
 
-### Overview 
+### Overview
 
 #### Mounting
 
@@ -54,7 +54,7 @@ The RAK14012 WisBlock LED Matrix comprises a 40-pin WisConnector. The 40-pin Wis
   width="80%"
   caption="RAK14012 WisBlock LED Matrix pinout"
 />
-  
+
 
 #### Electrical Characteristics
 
@@ -117,7 +117,7 @@ It has a boost circuit to generate 5&nbsp;V because the supply for WS2812B must 
   caption="RAK14012 power selection"
 />
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 - Make sure that the jumper from 5V_OUT of RAK14012 WisBlock LED Matrix is disconnected when connecting to an external power supply.
 - LED Matrix DIN should be connected to RAK14012 DOUT.
 - LED Matrix GND should be connected to RAK14012 GND.

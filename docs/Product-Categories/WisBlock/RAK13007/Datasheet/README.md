@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK13007 to help you in use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak13007/overview/RAK13007_home.png
+rak_img: /assets/images/wisblock/rak13007/RAK13007.png
 tags:
   - datasheet
   - wisblock
@@ -57,7 +57,7 @@ The RAK13007 module can be mounted on the IO slot of the WisBlock Base board. **
 
 The RAK13007 uses one relay to isolate the output of the MCU. The dielectric strength between coil and contacts of a relay is 2500&nbsp;V<sub>DC</sub>, 50/60&nbsp;Hz 1min.
 
-:::warning ⚠️ WARNING!!    
+:::warning ⚠️ WARNING!!
 <rk-img
   src="/assets/images/wisblock/rak13007/datasheet/warning.png"
   width="90%"
@@ -84,7 +84,7 @@ The RAK13007 WisBlock module has a 40-pin WisConnector that is compatible to the
 - By default, **IO4** is used as the Digital Output (DO) pin.
 - DO pin can be changed by reworking some resistors on the PCB module. There are reserved options to change the GPIO to control DO.
 - **3V3_S** voltage output from the WisBlock Base that powers the RAK13007 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK13007 module.
-:::  
+:::
 
 #### Electrical Characteristics
 

@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak14007/overview/rak14007_home.png
+rak_img: /assets/images/wisblock/rak14007/RAK14007.png
 rak_desc: RAK14007 is a WisBlock Interface Module where you can connect the separate sensor PCB, which is the RAK14013 Joystick Module.
 rak_grp: [wisblock, wisinterface]
 next: ../Datasheet/
@@ -38,6 +38,6 @@ RAK14007 is an Interface module for connecting other WisBlock modules(like RAK14
 
 To use a **RAK14007**, you need to connect at least one **RAK14013** Joystick Module. You also need a **WisBlock Base board** to plug the module in. **WisBlock Base board** provides the power supply for the joystick module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

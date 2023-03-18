@@ -215,7 +215,7 @@ Once the Arduino IDE has been installed successfully, you can now configure the 
 
 :::tip 📝 NOTE:
 - RAK4630 should automatically go to BOOT mode when the firmware is uploaded via Arduino IDE.
-- If BOOT mode is not initiated, pull to ground the RESET pin twice (or double click the reset button if available) to force BOOT mode.
+- If BOOT mode is not initiated, you can manually send `AT+BOOT` command to start bootloader mode.
 :::
 
 <rk-img
@@ -608,7 +608,7 @@ RAK4630 supports the following regions:
 
 :::tip 📝 NOTE:
 RAK4630 should automatically go to BOOT mode when the firmware is uploaded via Arduino IDE.
-If BOOT mode is not initiated, pull to ground the RESET pin twice (or double-click the reset button if available) to force BOOT mode.
+If BOOT mode is not initiated, you can manually send `AT+BOOT` command to start bootloader mode.
 :::
 
 <rk-img

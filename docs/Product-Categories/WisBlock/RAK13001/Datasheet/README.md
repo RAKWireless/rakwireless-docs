@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK13001 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak13001/overview/RAK13001_home.png
+rak_img: /assets/images/wisblock/rak13001/RAK13001.png
 tags:
   - datasheet
   - wisblock
@@ -30,7 +30,7 @@ RAK13001 is a WisBlock Interface module which extends the WisBlock system to be 
 
 ## Specifications
 
-### Overview 
+### Overview
 
 The overview covers the RAK13001 block diagram and the mounting mechanics of the board into the WisBlock Base board.
 
@@ -56,7 +56,7 @@ The RAK13001 use one relay to isolate output of MCU. The dielectric strength bet
 
 For input, RAK13001 uses an opto-couple as isolation, and it supports wet contact as default. The rating of input is 12V-24&nbsp;VDC. It also can be configurated as dry contact by reworking some resistors on the PCB module.
 
-:::warning ⚠️ WARNING!!    
+:::warning ⚠️ WARNING!!
 <rk-img
   src="/assets/images/wisblock/rak13001/datasheet/warning.png"
   width="90%"
@@ -75,7 +75,7 @@ The hardware specification is categorized into four parts. It discusses the pino
 
 #### Pin Definition
 
-The RAK13001 WisBlock module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 4**. 
+The RAK13001 WisBlock module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 4**.
 
 <rk-img
   src="/assets/images/wisblock/rak13001/datasheet/RAK13001_Pinout.svg"
@@ -84,10 +84,10 @@ The RAK13001 WisBlock module has a 40-pin WisConnector that is compatible to the
 />
 
 ::: tip 📝 NOTE
-- By default, PIN 10 (SW1) on WisConnector is used as DI input, and PIN 32 (IO4) is used as DO output. 
+- By default, PIN 10 (SW1) on WisConnector is used as DI input, and PIN 32 (IO4) is used as DO output.
 - You can change DI or DO pin by reworking resistors. Some options have been reserved so you can change GPIO to control DI or DO.
 - RAK13001 use 3V3_S as power. You need to open 3V3_S when using this module, and also, you can shut down 3V3_S to save power when not using this module.
-:::  
+:::
 
 #### Electrical Characteristics
 
@@ -153,7 +153,7 @@ The mechanical dimensions of the RAK13001 module is shown in **Figure 5** below.
   caption="RAK13001 WisConnector"
 />
 
-##### Relay 
+##### Relay
 
 **Figure 9** shows RAK13001 module relay schematic. Use **3V3_S** for relay coil power supply.
 
@@ -180,7 +180,7 @@ The mechanical dimensions of the RAK13001 module is shown in **Figure 5** below.
     2. Add 680&nbsp;Ω resistors on R9, R12, R13 ,and R14.
 
 - Then, short K1 and K2 can make DI to be low logical.
-::: 
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak13001/datasheet/rak13001-silkscreen.png"

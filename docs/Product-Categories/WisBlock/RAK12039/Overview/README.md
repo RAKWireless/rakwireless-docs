@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12039/overview/RAK12039_buy.png
+rak_img: /assets/images/wisblock/rak12039/RAK12039.png
 rak_desc: RAK12039 is a WisBlock Sensor Module that extends the WisBlock system with Particle Matter sensing. It is based on PMSA003I digital particle concentration sensor, which obtains the number of suspended particles in the air.
 rak_grp: [wisblock, wissensor]
 next: ../Datasheet/
@@ -38,13 +38,13 @@ The RAK12039 is a Particle Matter Sensor module that is part of the RAKWireless 
     * Storage temperature: **-40&nbsp;°C ~ 80&nbsp;°C**
 * **Module size**
     * **25 x 15&nbsp;mm**
-* **Particle Matter PMSA003I size** 
+* **Particle Matter PMSA003I size**
     * **38 x 35 x 12&nbsp;mm**
 
 ## Prerequisites
 
 To use a **RAK12039**, you need at least a **WisBlock Base** board to plug the module in. The **WisBlock Base** provides power supply to the **RAK12039** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-::: warning ⚠️ WARNING    
+::: warning ⚠️ WARNING
 Make sure to fix the module with the screws to ensure a proper function.
 :::

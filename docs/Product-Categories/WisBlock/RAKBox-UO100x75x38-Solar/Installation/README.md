@@ -7,7 +7,7 @@ tags:
     - WisBlock
     - Enclosure
 rak_desc: In this guide, the process of assembling and mounting your RAKBox-UO100x75x38 with Solar Panel will be shown step by step. Strict adherence to the steps guarantees a secured and durable casing.
-rak_img: /assets/images/wisblock/rakbox-uo100x75x38-solar/overview/uo_home.png
+rak_img: /assets/images/wisblock/rakbox-uo100x75x38-solar/uo_home.png
 ---
 
 # Installation Guide

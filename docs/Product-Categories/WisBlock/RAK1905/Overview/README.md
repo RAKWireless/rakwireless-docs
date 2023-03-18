@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak1905/overview/RAK1905_home.png
+rak_img: /assets/images/wisblock/rak1905/RAK1905.png
 rak_desc: RAK1905 is a 3-axis gyroscope, 3-axis accelerometer, and 3-axis magnetometer, part of the RAKwireless WisBlock Sensor series. It is based on MPU-9250 from TDK and designed for 9-axis motion tracking.
 rak_grp: [wisblock, wissensor]
 next: ../Quickstart/
@@ -31,7 +31,7 @@ RAK1905 is a 3-axis gyroscope, 3-axis accelerometer, and 3-axis magnetometer, pa
 ## Product Features
 
 * **Module Specifications**
-  - Chipset: **TDK MPU-9250** 
+  - Chipset: **TDK MPU-9250**
   - Supply voltage: **3.3&nbsp;V**
   - Current consumption: **8&nbsp;uA - 2.7&nbsp;mA**
   - Accelerometer output: **±2&nbsp;g**, **±4&nbsp;g**, **±8&nbsp;g**, and **±16&nbsp;g**
@@ -49,6 +49,6 @@ RAK1905 is a 3-axis gyroscope, 3-axis accelerometer, and 3-axis magnetometer, pa
 To use a **RAK1905**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK1905** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with screws to ensure proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with screws to ensure proper function.
 :::

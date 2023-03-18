@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK5811 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak5811/overview/RAK5811_home.png
+rak_img: /assets/images/wisblock/rak5811/RAK5811.png
 prev: ../Quickstart/
 next: false
 tags:
@@ -24,7 +24,7 @@ The RAK5811 module features two input channels of 0-5&nbsp;V analog signals. Ins
 In addition, this module integrates a 12&nbsp;V power supply. The power supply is connected to an operational amplifier and be used to power the external sensors. The connection of the 0-5&nbsp;V sensors is done through the fast crimping terminal without the need for special tools, this simplifies the installation process on the field.
 
 
-### Features 
+### Features
 
 * Two 0-5&nbsp;V analog input channels
 * Compatible with multiple WisBlock Core modules, such as the RAK4631
@@ -62,7 +62,7 @@ In the RAK5811 module, as shown in **Figure 1**, the 0-5&nbsp;V input signal is 
 
 Where Vout is the WisBlock Core read voltage; Vin is the analog input voltage (0-5&nbsp;V). From the voltage divider R1 is 1&nbsp;MΩ and R2 is 1.5&nbsp;MΩ, so the final relationship is: **Vin = Vout / 0.6**.
 
-As shown in** Figure 1**, the module provides an output of 12&nbsp;V controlled by an internal DC-DC booster. This 12&nbsp;V output can be used to power industrial sensors. The **Enable** pin allows to control the booster and sets the RAK5811 module into a low power consumption mode. 
+As shown in** Figure 1**, the module provides an output of 12&nbsp;V controlled by an internal DC-DC booster. This 12&nbsp;V output can be used to power industrial sensors. The **Enable** pin allows to control the booster and sets the RAK5811 module into a low power consumption mode.
 
 
 ### Hardware
@@ -73,7 +73,7 @@ The hardware specification is categorized into four parts. It discusses the pino
 
 | Vendor             | Part number |
 | ------------------ | ----------- |
-| STMicroelectronics | LM2902      | 
+| STMicroelectronics | LM2902      |
 
 #### Device Specification
 
@@ -116,7 +116,7 @@ This section shows the pin number of the Fast Crimping Terminal of the RAK5811 m
 | 7              | Analog input 0                        |
 | 8              | Analog input 1                        |
 
-**Figure 4** shows the pin order of the IO connector of the module. Through this connector, the RAK5811 module is attached to the WisBlock Base Board. 
+**Figure 4** shows the pin order of the IO connector of the module. Through this connector, the RAK5811 module is attached to the WisBlock Base Board.
 
 <rk-img
   src="/assets/images/wisblock/rak5811/datasheet/rak5811-wisconnector.png"
@@ -217,7 +217,7 @@ In the ecosystem of WisBlock, the philosophy is to allow users to combine a WisB
 </tbody>
 </table>
 
-:::tip 📝 NOTE:  
+:::tip 📝 NOTE:
 
 <b> RAK5811+RAK4601 </b>
 
@@ -239,10 +239,10 @@ The RAK5811 is not compatible with RAK4601. The main reason is that RAK4601 does
 />
 
 :::tip 📝 NOTE 2: RAK5811+RAK4261+RAK5005-O
-To combine a RAK5811 module, a RAK4261 (WisBlock Core module), and the RAK5005-O, the following modification must be introduced: 
-- In RAK5005-O, remove the R7. See **Figure 9**. 
+To combine a RAK5811 module, a RAK4261 (WisBlock Core module), and the RAK5005-O, the following modification must be introduced:
+- In RAK5005-O, remove the R7. See **Figure 9**.
 - In RAK5811, remove R94 to R95 (see **Figure 10**). Use PA08 of ATSAMR34 to read the analog data of the channel “analog0”. Use PA09 of ATSAMR34 to read the analog data of channel “analog1”.
 
-This combination has the following restrictions: 
-- The adapted RAK5005-O will not support battery power collection. 
+This combination has the following restrictions:
+- The adapted RAK5005-O will not support battery power collection.
 :::

@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK5804 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak5804/overview/RAK5804_home.png
+rak_img: /assets/images/wisblock/rak5804/RAK5804.png
 prev: ../Quickstart/
 next: false
 tags:
@@ -16,11 +16,11 @@ tags:
 ### Description
 
 
-**RAK5804 WisBlock Interface Extension Module** was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module. 
+**RAK5804 WisBlock Interface Extension Module** was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module.
 
 This module is designed as an IO extension module that allows you to connect your digital or analog devices or sensors to create a customized IoT solution. These sensors are connected through two expansion connectors: **J2** and **J3**. In order to provide power to peripheral devices, 3.3&nbsp;V can be obtained from these expansion connectors. Internal protections allow to shut down the power supply when a short circuit is detected in the peripheral devices. Overcurrent cases are protected through **internal PTC thermistors** in the power supply circuit.
 
-In addition, the RAK5804 module also supports a USB interface, which can be used with RAK5005-O to access the USB port of MCU of the WisBlock Core module of the solution. 
+In addition, the RAK5804 module also supports a USB interface, which can be used with RAK5005-O to access the USB port of MCU of the WisBlock Core module of the solution.
 
 All external expansion interfaces of the RAK5804 module are equipped with TVS protection circuit to avoid damaging the mainboard and WisBlock Core circuit with ESD when users plug in or unplug to the expansion interfaces.
 
@@ -56,11 +56,11 @@ The hardware specification is categorized into four parts. It discusses the inte
 
 #### Interfaces
 
-The RAK5804 module exposes the IO pins, the I2C, and the UART communication ports through the J2, J3, and J4 connectors. Users can use these ports to connect sensors, digital I/O, analog I/O, and slave devices. These ports are routed to the WisBlock Core through the IO connector.  
+The RAK5804 module exposes the IO pins, the I2C, and the UART communication ports through the J2, J3, and J4 connectors. Users can use these ports to connect sensors, digital I/O, analog I/O, and slave devices. These ports are routed to the WisBlock Core through the IO connector.
 
 ::: tip 📝 NOTE
 The J2 and J3 connectors use a [JST SH Connector](https://downloads.rakwireless.com/LoRa/WisBlock/RAK5804/eSH.pdf).
-:::  
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak5804/datasheet/j-connectors.png"
@@ -169,7 +169,7 @@ The RAK5804 module comprises a standard WisBlock Interface connector. This IO co
 
 #### Electrical Characteristics
 
-This section shows the maximum and minimum ratings of the RAK5804 module and its recommended operating conditions. Refer to the tables presented below. 
+This section shows the maximum and minimum ratings of the RAK5804 module and its recommended operating conditions. Refer to the tables presented below.
 
 ##### Absolute Maximum Ratings
 

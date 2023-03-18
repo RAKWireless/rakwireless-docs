@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK19001. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
-rak_img: /assets/images/wisblock/rak19001/overview/RAK19001_home.png
+rak_img: /assets/images/wisblock/rak19001/RAK19001.png
 prev: ../Overview/
 next: ../Datasheet/
 tags:

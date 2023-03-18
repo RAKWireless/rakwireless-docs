@@ -1,6 +1,6 @@
 ---
 rak_desc: RAK18033 is a WisBlock Audio Stereo Microphone Header module that allows you to connect two PDM Microphone modules to have stereo input.
-rak_img: /assets/images/wisblock/rak18033/overview/RAK18033_home.png
+rak_img: /assets/images/wisblock/rak18033/RAK18033.png
 rak_grp: [wisblock, microphone]
 prev: ../../
 next: ../Quickstart/
@@ -30,7 +30,7 @@ RAK18033 is a WisBlock Audio Stereo Microphone Header module that allows you to 
 * **Module specifications**
     * Stereo Microphone Header
     * Compatible with WisBlock Audio PDM Microphones
-    
+
 * **Module size**
     * 15 x 25&nbsp;mm
 
@@ -38,6 +38,6 @@ RAK18033 is a WisBlock Audio Stereo Microphone Header module that allows you to 
 
 To use a **RAK18033**, you need at least a **WisBlock Base** to plug the module in. The **WisBlock Base** provides power supply to the **RAK18033** module. Furthermore, you need a **WisBlock Core** and **WisBlock Audio PDM Microphone** modules to make it useful.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function. 
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

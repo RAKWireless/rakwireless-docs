@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12037 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12037/overview/RAK12037_home.png
+rak_img: /assets/images/wisblock/rak12037/RAK12037.png
 tags:
   - datasheet
   - wisblock
@@ -77,7 +77,7 @@ The RAK12037 WisBlock CO2 Sensor comprises a standard WisBlock connector. The Wi
 
 :::tip 📝 NOTE:
 - Only the **I2C** related pins, **PWM**, **RDY**, **3V3_S**, and **GND** are connected to this module.
-- **3V3_S** voltage output from the WisBlock Base that powers the RAK12037 module can be controlled by the WisBlock Core via `WB_IO2` (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12037 module.  
+- **3V3_S** voltage output from the WisBlock Base that powers the RAK12037 module can be controlled by the WisBlock Core via `WB_IO2` (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12037 module.
 :::
 
 #### Electrical Characteristics
@@ -93,7 +93,7 @@ The RAK12037 WisBlock CO2 Sensor comprises a standard WisBlock connector. The Wi
 
 ##### Board Dimensions
 
-**Figure 3** shows the dimensions and the mechanic drawing of the RAK12037 module.   
+**Figure 3** shows the dimensions and the mechanic drawing of the RAK12037 module.
 
 <rk-img
   src="/assets/images/wisblock/rak12037/datasheet/rak12037-dim.jpg"
@@ -116,7 +116,7 @@ The RAK12037 WisBlock CO2 Sensor comprises a standard WisBlock connector. The Wi
 
 The default I2C address of the SCD30 sensor is **1100001**.
 
-Resistors **R2** and **R3** do not need to be mounted on the RAK12037 module due to the pull-up resistors already built-in on the WisBlock Base board.  
+Resistors **R2** and **R3** do not need to be mounted on the RAK12037 module due to the pull-up resistors already built-in on the WisBlock Base board.
 
 <rk-img
   src="/assets/images/wisblock/rak12037/datasheet/rak12037-schem.jpg"

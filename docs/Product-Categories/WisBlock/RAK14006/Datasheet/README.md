@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK14006 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak14006/overview/RAK14006_home.png
+rak_img: /assets/images/wisblock/rak14006/RAK14006.png
 tags:
   - datasheet
   - wisblock
@@ -20,14 +20,14 @@ The RAK14006 is a rotary encoder module with PEC11L-4125F-S0020 from BOURNS. RAK
 
 ### Features
 
-- Rotary Encoder with an independent push switch 
+- Rotary Encoder with an independent push switch
 - 3.3&nbsp;V Power supply
 - Chipset: BOURNS PEC11L-4125F-S0020
 - Module Size: 25&nbsp;mm x 35&nbsp;mm
 
 ## Specifications
 
-### Overview 
+### Overview
 
 #### Mounting
 
@@ -58,7 +58,7 @@ The RAK14006 WisBlock Rotary Encoder Module comprises a standard WisIO connector
   width="80%"
   caption="RAK14006 WisBlock Rotary Encoder Module Pinout"
 />
-  
+
 
 #### Electrical Characteristics
 
@@ -127,6 +127,6 @@ The RAK14006 can detect rotation direction using 74HC4538D. CW square wave only 
 - By using R7 and R9 without connecting to R8 and R10, the MCU can get signals from the rotary encoder directly and the direction using the software.
 - If the R8 and R10 are used without connecting R7 and R9, the user can get the signal via hardware. Also, the user can get the rotation direction from which the GPIO the signal came from.
 :::
-​      
+​
 
 

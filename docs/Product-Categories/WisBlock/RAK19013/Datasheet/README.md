@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK19013 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak19013/overview/rak19013_home.png
+rak_img: /assets/images/wisblock/rak19013/RAK19013.png
 tags:
   - datasheet
   - wisblock
@@ -59,14 +59,14 @@ The hardware specification is categorized into six parts. It discusses the inter
 RAK19013 WisBlock LiPo Solar Power Slot Module provides the following interfaces, headers, a button, and WisConnectors:
 
 * 1 WisBlock Power module
-* 2 pin battery interface 
+* 2 pin battery interface
 * 2 pin solar interface
 * 3 LEDs
 * 1 Reset button
 
 ::: tip 📝 NOTE
 RAK19013 doesn't have a USB connector. So when RAK19013 and RAK19010 are used together, it is not possible to program the core (unless you use Jlink). If you want to program the core, you need the RAK5804. Then you can supply over RAK19013 and program over RAK5804.
-:::  
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak19013/datasheet/rak19013-label.svg"
@@ -86,7 +86,7 @@ RAK19013 doesn't have a USB connector. So when RAK19013 and RAK19010 are used to
 
 ::: tip 📝 NOTE
 The voltage of the battery must not exceed 4.3&nbsp;V.
-:::  
+:::
 
 ##### Solar Connector
 
@@ -114,11 +114,11 @@ The Reset Push Button shown in [**Figure 3**](#interfaces) is connected to the M
 
 #### Pin Definition
 
-The RAK19013 module has a 40-pin WisConnector that is compatible to the WisBlock Power Slot. The pin order of the connector and the pinout definition is shown in **Figure 6**. 
+The RAK19013 module has a 40-pin WisConnector that is compatible to the WisBlock Power Slot. The pin order of the connector and the pinout definition is shown in **Figure 6**.
 
 ::: tip 📝 NOTE
 VBAT, 3V3, RESET, LED1, LED2, ADC_VBAT, and GND are connected to WisIO connector.
-:::  
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak19013/datasheet/RAK19013-pinout.svg"
@@ -131,7 +131,7 @@ VBAT, 3V3, RESET, LED1, LED2, ADC_VBAT, and GND are connected to WisIO connector
 
 ##### Absolute Maximum Ratings
 
-The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device. 
+The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device.
 
 :::warning ⚠️WARNING
 1. If the stress rating goes above what is listed, it may cause permanent damage to the device.
@@ -146,7 +146,7 @@ The Absolute Maximum Ratings of the device are shown in the table below. The str
 
 ##### Panel Specification
 
-The RAK19013 LiPo Solar Power Slot module can be powered by a battery, connected to the J4 connector. The nominal operating voltage of the battery should be within the range showed in the following table.     
+The RAK19013 LiPo Solar Power Slot module can be powered by a battery, connected to the J4 connector. The nominal operating voltage of the battery should be within the range showed in the following table.
 
 | **Minimum** | **Typical** | **Maximum** | **Unit** |
 | ----------- | ----------- | ----------- | -------- |
@@ -163,7 +163,7 @@ A suitable Li-Ion battery should have the following parameters as shown in the t
 
 ::: tip 📝 NOTE
 When using a solar panel, you can't use non-rechargeable battery.
-:::  
+:::
 
 #### Mechanical Characteristic
 

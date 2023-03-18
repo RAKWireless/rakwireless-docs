@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK19016 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak19016/overview/RAK19016_home.png
+rak_img: /assets/images/wisblock/rak19016/RAK19016.png
 tags:
   - datasheet
   - wisblock
@@ -25,7 +25,7 @@ This power module is designed to enable WisBlock to be powered by higher voltage
 * Uses three-pin screw terminal connector
 * Compatible with LiPo rechargeable battery
 * On-board battery charger chip
-* LED for charging status and user-configurable LEDs 
+* LED for charging status and user-configurable LEDs
 * Applicable to industrial and enterprise setting
 * Module size: 30 x 20&nbsp;mm
 
@@ -72,7 +72,7 @@ RAK19016 WisBlock 5-24V Power Slot Module provides the following interfaces:
 
 ::: tip 📝 NOTE
 RAK19016 doesn't have a USB connector. So when RAK19016 is used together with WisBlock Base board with power slot, it is not possible to program the core (unless via SWD pins using external tools like Jlink and RAKDAP1). If you want to program the WisBlock Core via USB, you need the RAK5804. Then you can use the USB connector of RAK5804 to program the WisBlock Core.
-:::  
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak19016/datasheet/RAK19016-label.svg"
@@ -92,7 +92,7 @@ RAK19016 doesn't have a USB connector. So when RAK19016 is used together with Wi
 
 ::: tip 📝 NOTE
 The voltage of the battery must not exceed 4.3&nbsp;V.
-:::  
+:::
 
 ##### LEDs
 
@@ -108,11 +108,11 @@ The Reset Push Button shown in [**Figure 3**](#interfaces) is connected to the M
 
 #### Pin Definition
 
-The RAK19016 module has a 40-pin WisConnector that is compatible with the WisBlock Power Slot. The pin order of the connector and the pinout definition is shown in **Figure 5**. 
+The RAK19016 module has a 40-pin WisConnector that is compatible with the WisBlock Power Slot. The pin order of the connector and the pinout definition is shown in **Figure 5**.
 
 ::: tip 📝 NOTE
 VBAT, 3V3, RESET, LED1, LED2, ADC_VBAT, and GND have connected to WisBlock 40-pin connector.
-:::  
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak19016/datasheet/RAK19016-pinout.svg"
@@ -125,7 +125,7 @@ VBAT, 3V3, RESET, LED1, LED2, ADC_VBAT, and GND have connected to WisBlock 40-pi
 
 ##### Absolute Maximum Ratings
 
-The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device. 
+The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device.
 
 :::warning ⚠️WARNING
 1. If the stress rating goes above what is listed, it may cause permanent damage to the device.
@@ -140,13 +140,13 @@ The Absolute Maximum Ratings of the device are shown in the table below. The str
 
 ##### Voltage Specifications
 
-The RAK19016 WisBlock 5-24V Power Slot Module is suitable for external input voltage supply. The nominal input operating voltage should be within the range shown in the following table.     
+The RAK19016 WisBlock 5-24V Power Slot Module is suitable for external input voltage supply. The nominal input operating voltage should be within the range shown in the following table.
 
 | **Minimum** | **Typical** | **Maximum** | **Unit** |
 | ----------- | ----------- | ----------- | -------- |
 | 5           | -           | 24          | V        |
 
-The RAK19016 supported battery should have nominal operating voltage within the range shown in the following table.     
+The RAK19016 supported battery should have nominal operating voltage within the range shown in the following table.
 
 | **Minimum** | **Typical** | **Maximum** | **Unit** |
 | ----------- | ----------- | ----------- | -------- |

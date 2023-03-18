@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK11722 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak11722/overview/RAK11722_home.png
+rak_img: /assets/images/wisblock/rak11722/RAK11722.png
 prev: ../AT-Command-Manual/
 next: false
 tags:

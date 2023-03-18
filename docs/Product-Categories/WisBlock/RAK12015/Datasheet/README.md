@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12015 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12015/overview/default_buy.png
+rak_img: /assets/images/wisblock/rak12015/RAK12015.png
 tags:
   - datasheet
   - wisblock
@@ -27,9 +27,9 @@ The RAK12015, a part of WisBlock Sensor, is a Vibration Detection Module that us
 
 ## Specifications
 
-### Overview 
+### Overview
 
-#### Mounting 
+#### Mounting
 
 The RAK12015 WisBlock Vibration Detection Sensor Module can be mounted to the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. **Figure 1** shows the mounting mechanism of the RAK12015 on a WisBlock Base module.
 
@@ -56,7 +56,7 @@ The hardware specification is categorized into five (5) parts. It shows the chip
 
 The RAK12015 WisBlock Vibration Detection Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK12015 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
-  ​                                       
+  ​
 <rk-img
   src="/assets/images/wisblock/rak12015/datasheet/RAK12015_pinout.svg"
   width="80%"
@@ -99,7 +99,7 @@ The RAK12015 WisBlock Vibration Detection Sensor Module comprises a standard Wis
 
 #### Schematic Diagram
 
-When there is no vibration detected, the AIN1 will be low. And when vibration occurs, AIN1 will produce a square wave. The voltage level of the square wave depends on the value of R1. 
+When there is no vibration detected, the AIN1 will be low. And when vibration occurs, AIN1 will produce a square wave. The voltage level of the square wave depends on the value of R1.
 
 The frequency of the square wave output depends on the vibrations received by the sensor. The sensor output is directly connected to the AN1 pin of the WisBlock Core.
 

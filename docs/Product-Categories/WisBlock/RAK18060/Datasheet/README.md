@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK18060 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak18060/overview/RAK18060_home.png
+rak_img: /assets/images/wisblock/rak18060/RAK18060.png
 tags:
   - Datasheet
   - WisBlock Audio
@@ -18,23 +18,23 @@ next: false
 
 ### Description
 
-RAK18060 is a stereo amplifier module, part of the WisBlock Audio Series. It is designed based on the TAS2560 from TI. The TAS2560 features an ultra-low-noise audio DAC and Class-D audio amplifier, which incorporates speaker voltage and current sensing feedback for use with speaker protection algorithms. 
+RAK18060 is a stereo amplifier module, part of the WisBlock Audio Series. It is designed based on the TAS2560 from TI. The TAS2560 features an ultra-low-noise audio DAC and Class-D audio amplifier, which incorporates speaker voltage and current sensing feedback for use with speaker protection algorithms.
 
 The RAK18060 can drive the speaker to play audio through the input I2S signals. With other WisBlock modules, it can achieve rich applications, such as recording and voice control functions.
 
 ## Product Features
 
-* **Module Specifications**    
-    - Audio stereo amplifier  
+* **Module Specifications**
+    - Audio stereo amplifier
     - Amplifier power can be selected by a solder bridge
     - I2S interface for data and I2C interface for control
-    - 5.6&nbsp;W at 1% THD+N into 4-Ω Load from 4.2&nbsp;V supply  
-    - High-efficiency Class-H boost converter  
-    - Built-in speaker sense and automatic gain control  
+    - 5.6&nbsp;W at 1% THD+N into 4-Ω Load from 4.2&nbsp;V supply
+    - High-efficiency Class-H boost converter
+    - Built-in speaker sense and automatic gain control
     - Thermal, short-circuit, and under-voltage protection
-  
-* **Size**    
-    * 25 x 35&nbsp;mm  
+
+* **Size**
+    * 25 x 35&nbsp;mm
 
 ## Specifications
 
@@ -45,9 +45,9 @@ The RAK18060 can drive the speaker to play audio through the input I2S signals. 
   width="65%"
   caption="RAK18060 WisBlock Audio Stereo Amplifier Module top and bottom view"
 />
-#### Mounting  
+#### Mounting
 
-##### Mounting to WisBlock Base 
+##### Mounting to WisBlock Base
 
 Just like other WisBlock modules with a standard WisBlock IO connector, RAK18060 can be mounted to the IO slot of any WisBlock Base board. **Figure 2** shows the mounting mechanism of the RAK18060 on a WisBlock Base module, such as the **RAK19007**.
 
@@ -57,7 +57,7 @@ Just like other WisBlock modules with a standard WisBlock IO connector, RAK18060
   caption="RAK18060 mounted to the WisBase"
 />
 
-##### Mount to a WisBlock Audio Stack 
+##### Mount to a WisBlock Audio Stack
 
 With the 3&nbsp;mm spacer, the RAK18060 can mount to the **WisBlock Audio Stack**. **Figure 3** shows the mounting mechanism of the RAK18060 on a WisBlock Audio Stack.
 
@@ -83,7 +83,7 @@ The hardware specification is categorized into five (5) parts. It shows the chip
 
 ##### IO Slot Connector
 
-The RAK18060 WisBlock module comprises a standard IO slot connector. The 40-pin WisBlock IO Slot Connector allows the RAK18060 module to be mounted to a WisBlock Base board, such as the RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 4**. 
+The RAK18060 WisBlock module comprises a standard IO slot connector. The 40-pin WisBlock IO Slot Connector allows the RAK18060 module to be mounted to a WisBlock Base board, such as the RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 4**.
 
 
 <rk-img
@@ -96,13 +96,13 @@ The RAK18060 WisBlock module comprises a standard IO slot connector. The 40-pin 
 - **3V3_S** and **GND** are the power supply pins from the WisBlock Base. **3V3_S**, **VBAT**, and **VBUS** can be selected by the solder bridge as the amplifier power. **3V3_S** is always needed for digital power input.
 - **AMP_INT** is a GPIO pin (IO1) from WisBlock Core. Normally, this pin is **HIGH**. It will be **LOW** if there is an error within the amplifier. Additionally, this pin is shared between both amplifiers.
 - **Core_I2S_DO**, **Core_I2S_DI**, **Core_I2S_WS**, and **Core_I2S_BCLK** are I2S signals.
-- **Device_I2C_SDA** and **Device_I2C_SCL** are I2C signals which control the TAS2560. 
+- **Device_I2C_SDA** and **Device_I2C_SCL** are I2C signals which control the TAS2560.
 :::
 
 ##### Stack Connector
 
-The RAK18060 WisBlock module comprises a board-to-board (BTB) connector. The BTB connector allows the RAK18060 module to be stacked with other WisBlock audio modules, such as the RAK18080 (DSP board) and the RAK18003 (Audio Interposer board). The pin order of the connector and the pinout definition is shown in **Figure 5**. 
-  
+The RAK18060 WisBlock module comprises a board-to-board (BTB) connector. The BTB connector allows the RAK18060 module to be stacked with other WisBlock audio modules, such as the RAK18080 (DSP board) and the RAK18003 (Audio Interposer board). The pin order of the connector and the pinout definition is shown in **Figure 5**.
+
 <rk-img
   src="/assets/images/wisblock/rak18060/datasheet/RAK18060_btb_connector_pinout.png"
   width="50%"
@@ -160,7 +160,7 @@ This table shows the electrical characteristics of the RAK18060 module:
 
 ##### WisBlock Connector, AMP/DSP Board Connector and Power Select
 
-TAS2560 needs three power supplies. Analog supply voltage and I/O supply voltage are fixed on RAK18060. The amplifier input power supply can be selected via solder bridges (SB1, SB2, SB3, or SB4). 
+TAS2560 needs three power supplies. Analog supply voltage and I/O supply voltage are fixed on RAK18060. The amplifier input power supply can be selected via solder bridges (SB1, SB2, SB3, or SB4).
 
  <rk-img
   src="/assets/images/wisblock/rak18060/datasheet/RAK18060_wisblock_board_connector_power_select.png"
@@ -176,8 +176,8 @@ The power supply needs to be selected according to the desired speaker output po
 - **EX_Power** from an external power supply from J12
 
 :::tip 📝 NOTE
-If you want to achieve a higher speaker output power, use EX_Power. 
-  - Voltage at EX_Power should not exceed 5.5&nbsp;V. 
+If you want to achieve a higher speaker output power, use EX_Power.
+  - Voltage at EX_Power should not exceed 5.5&nbsp;V.
   - Current of EX_Power should be higher than the speaker output power.
 :::
 

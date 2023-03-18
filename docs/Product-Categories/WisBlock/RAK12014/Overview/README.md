@@ -1,6 +1,6 @@
 ---
-rak_img: /assets/images/wisblock/rak12014/overview/RAK12014_home.png
-rak_desc: RAK12014 is a Time-of-Flight (TOF) module designed based on VL53L0X from STMicroelectronics. With this, RAK12014 can measure absolute range up to 2 meters. 
+rak_img: /assets/images/wisblock/rak12014/RAK12014.png
+rak_desc: RAK12014 is a Time-of-Flight (TOF) module designed based on VL53L0X from STMicroelectronics. With this, RAK12014 can measure absolute range up to 2 meters.
 rak_grp: [wisblock, wissensor]
 next: ../Quickstart/
 prev: ../../
@@ -36,7 +36,7 @@ Thank you for choosing **RAK12014 WisBlock ToF Sensor Module** in your awesome I
 
 ## Product Description
 
-The RAK12014, a part of the RAKwireless WisBlock Sensor Series, is a Time-of-Flight (ToF) module designed based on VL53L0X from STMicroelectronics. The VL53L0X is a ToF laser-ranging module, providing accurate distance measurement up to 2&nbsp;m. 
+The RAK12014, a part of the RAKwireless WisBlock Sensor Series, is a Time-of-Flight (ToF) module designed based on VL53L0X from STMicroelectronics. The VL53L0X is a ToF laser-ranging module, providing accurate distance measurement up to 2&nbsp;m.
 
 The VL53L0X's 940&nbsp;nm VCSEL emitter (Vertical-Cavity Surface-Emitting Laser) is invisible to the human eye and coupled with internal physical infrared filters. It enables longer-ranging distances, higher immunity to ambient light, and better robustness to cover glass optical crosstalk.
 
@@ -59,6 +59,6 @@ The VL53L0X's 940&nbsp;nm VCSEL emitter (Vertical-Cavity Surface-Emitting Laser)
 
 To use a **RAK12014**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12014** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

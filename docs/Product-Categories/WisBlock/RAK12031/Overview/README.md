@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12031/overview/RAK12031_home.png
+rak_img: /assets/images/wisblock/rak12031/RAK12031.png
 rak_desc: RAK12031 is a WisBlock T-Beam-Fork (TBF) sensor module based on EE-SX1041 from Omron. It can detect the presence of small moving objects.
 rak_grp: [wisblock, wissensor]
 next: ../Quickstart/
@@ -51,6 +51,6 @@ RAK12031 is a WisBlock T-Beam-Fork (TBF) sensor module that is based on EE-SX104
 
 To use a **RAK12031**, you need to connect at least one (1) **RAK12028** TBF Connector Module or **RAK19005** WisBlock Sensor Extension Cable. You also need a **WisBlock Base** to plug the module in. **WisBlock Base** provides the power supply to the sensor module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

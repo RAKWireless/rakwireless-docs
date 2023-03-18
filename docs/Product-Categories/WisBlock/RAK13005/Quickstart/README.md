@@ -6,7 +6,7 @@ tags:
   - RAK13005
 prev: ../Overview/
 next: ../Datasheet/
-rak_img: /assets/images/wisblock/rak13005/overview/RAK13005_home.png
+rak_img: /assets/images/wisblock/rak13005/RAK13005.png
 ---
 
 # RAK13005 Quick Start Guide

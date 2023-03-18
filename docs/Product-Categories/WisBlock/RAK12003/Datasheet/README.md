@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12003 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12003/overview/RAK12003_home.png
+rak_img: /assets/images/wisblock/rak12003/RAK12003.png
 tags:
   - datasheet
   - wisblock
@@ -23,18 +23,18 @@ next: false
 
 The RAK12003 WisBlock Infrared Temperature Sensor Module is part of the RAKwireless WisBlock Series. It can be used for an accurate contactless thermal measurement for applications such as General purpose industry, temperature control of moving and hard to reach parts, body temperature measurement, non-contact thermometer for mobile and IoT application.
 
-### Features 
+### Features
 
 * **Sensor specifications**
-  * I2C interface 
-  * Object temperatures between -20&nbsp;°C and 100&nbsp;°C 
+  * I2C interface
+  * Object temperatures between -20&nbsp;°C and 100&nbsp;°C
   * Accuracy ±0.2°&nbsp;C within the narrow object temperature range from 35&nbsp;˚C to 42&nbsp;˚C (medical applications)
   * Factory calibrated
   * 50&nbsp;° field of view
   * -20&nbsp;°C to 85&nbsp;°C operational temperature range
   * Refresh rate configurable between 0.5&nbsp;Hz to 64&nbsp;Hz
   * Power Supply Voltage: 3.3&nbsp;V - 3.6&nbsp;V
-  * Sleep current: < 2.5&nbsp;µA 
+  * Sleep current: < 2.5&nbsp;µA
   * Chipset: Melexis MLX90632SLD-DCB-000-RE
 
 * **Size**

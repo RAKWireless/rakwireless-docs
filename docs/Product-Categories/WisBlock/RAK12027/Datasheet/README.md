@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12027 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12027/overview/RAK12027_home.jpg
+rak_img: /assets/images/wisblock/rak12027/RAK12027.jpg
 tags:
   - datasheet
   - wisblock
@@ -23,7 +23,7 @@ When an earthquake occurs with a seismic intensity equivalent to five (5) upper 
 Do not use the sensor in safety devices or for applications in which the sensor operation would directly affect human life.
 :::
 
-### Features 
+### Features
 
   * Chipset: **Omron D7S**
   * Voltage supply: **3.3&nbsp;V**
@@ -31,7 +31,7 @@ Do not use the sensor in safety devices or for applications in which the sensor 
   * A higher degree of freedom for incorporation into devices and prolonged operation on battery power
   * The shutoff output terminal (INT1) operates equivalent to a conventional mechanical vibration sensor and ensures compatibility with mechanical vibration sensors
   * Collapse alarm integrated
-  * I2C digital output interface   
+  * I2C digital output interface
   * Operating temperature: **-30°&nbsp;C ~ 70°&nbsp;C**
   * Module size: 10 x 23&nbsp;mm
 
@@ -86,22 +86,22 @@ The RAK12027 WisBlock Earthquake Sensor Module comprises a standard WisBlock con
 
 If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse depends on what slot the module is plugged in. The following table shows the default IO used for different slots:
 
-**INT1 (Interrupt Pin 1)**  
-  
+**INT1 (Interrupt Pin 1)**
+
 | SLOT C | SLOT D | SLOT E | SLOT F |
 | ------ | ------ | ------ | ------ |
 | IO3    | IO5    | IO4    | IO6    |
 
 
-**INT2 (Interrupt Pin 2)**  
-  
+**INT2 (Interrupt Pin 2)**
+
 | SLOT C | SLOT D | SLOT E | SLOT F |
 | ------ | ------ | ------ | ------ |
 | IO4    | IO6    | IO3    | IO5    |
 
 
 #### Electrical Characteristics
-  
+
 | Symbol | Description          | Min.  | Nom.  | Max.  | Unit  |
 | ------ | ---------------------| :---: | :---: | :---: | :---: |
 | VCC    | Power supply voltage |   -   |  3.3  |       |   V   |
@@ -128,7 +128,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 
 #### Schematic Diagram
 
-The default I2C address of the Earthquake sensor is **0x55**. 
+The default I2C address of the Earthquake sensor is **0x55**.
 
 Resistors **R6** and **R7** do not need to be mounted on the RAK12027 module due to the pull-up resistors already built-in on the WisBlock Base board.
 

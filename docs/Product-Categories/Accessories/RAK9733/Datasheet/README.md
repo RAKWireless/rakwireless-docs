@@ -1,11 +1,11 @@
 ---
 prev: ../Overview/
 next: false
-tags: 
+tags:
     - RAK9733
     - datasheet
 rak_desc: Provides comprehensive information about your RAK9733 Pulsar Cable LMR400 to help you use it. This information includes technical specifications and characteristics.
-rak_img: /assets/images/accessories/rak9733/overview/rak9733.png
+rak_img: /assets/images/accessories/rak9733/rak9733.png
 certifications:
   - [REACH, https://downloads.rakwireless.com/Accessories/Pulsar-Cable/Certification/Pulsar_Cable_REACH_Report.pdf]
   - [RoHS, https://downloads.rakwireless.com/Accessories/Pulsar-Cable/Certification/Pulsar_Cable_RoHS_Report.pdf]
@@ -28,7 +28,7 @@ The Pulsar cable is a high-grade cable, suitable for all gateways from the **Wis
 -   VSWR: ≤ 1.5
 
 
-## Specifications 
+## Specifications
 
 | Feature                    | Specifications                                      |
 | :------------------------- | --------------------------------------------------- |
@@ -60,7 +60,7 @@ The Pulsar cable is a high-grade cable, suitable for all gateways from the **Wis
 #### Connectors
 
 <rk-img
-  src="/assets/images/accessories/rak9733/datasheet/connectors.png"
+  src="/assets/images/accessories/rak9733/connectors.png"
   width="45%"
   caption="Connector Types"
 />
@@ -68,7 +68,7 @@ The Pulsar cable is a high-grade cable, suitable for all gateways from the **Wis
 #### Dimensions
 
 <rk-img
-  src="/assets/images/accessories/rak9733/datasheet/dimension.png"
+  src="/assets/images/accessories/rak9733/dimension.png"
   width="85%"
   caption="Pulsar Cable Dimensions"
 />

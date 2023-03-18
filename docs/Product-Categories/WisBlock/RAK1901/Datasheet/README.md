@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK1901 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak1901/overview/RAK1901_home.png
+rak_img: /assets/images/wisblock/rak1901/RAK1901.png
 tags:
   - datasheet
   - wisblock
@@ -21,13 +21,13 @@ next: false
 
 ### Description
 
-RAK1901 is a WisBlock Sensor that extends the WisBlock system with a Sensirion SHTC3 temperature and humidity sensor. A ready-to-use SW library and tutorial make it easy to build up an environmental temperature and humidity data acquisition system. 
+RAK1901 is a WisBlock Sensor that extends the WisBlock system with a Sensirion SHTC3 temperature and humidity sensor. A ready-to-use SW library and tutorial make it easy to build up an environmental temperature and humidity data acquisition system.
 
 ### Features
-* **Temperature sensor accuracy**: ±0.2°&nbsp;C 
+* **Temperature sensor accuracy**: ±0.2°&nbsp;C
 * **Temperature range**:  -40°&nbsp;C to +125°&nbsp;C
-* **Humidity sensor accuracy**:±2.0% RH 
-* **Humidity range**:0 to 100% 
+* **Humidity sensor accuracy**:±2.0% RH
+* **Humidity range**:0 to 100%
 * **Voltage Supply**: 3.3&nbsp;V
 * **Current Consumption**: 0.3&nbsp;uA to 270&nbsp;uA
 * **Chipset**: Sensirion SHTC3
@@ -70,7 +70,7 @@ The RAK1901 WisBlock Temperature and Humidity Sensor comprises a standard WisBlo
 />
 
 :::tip 📝 NOTE:
-Only the **I2C** related pins, **VDD** and **GND** are connected to this module.    
+Only the **I2C** related pins, **VDD** and **GND** are connected to this module.
 :::
 
 If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse depends on what slot the module is plugged in. The following table shows the default IO used for different slots:
@@ -92,7 +92,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 | Response Time      |   τ 63%    |  <5 to 30   |   s   |
 | Long-term Drift    |    Typ.    |    <0.2     | °C/y  |
 
-###### Humidity Sensor 
+###### Humidity Sensor
 | Parameter          | Conditions |  Value   | Units |
 | ------------------ | :--------: | :------: | :---: |
 | Accuracy Tolerance |    Typ.    |   ±0.2   |  %RH  |
@@ -117,7 +117,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 
 ##### Board Dimensions
 
-**Figure 3** shows the dimensions and the mechanic drawing of the RAK1901 module.   
+**Figure 3** shows the dimensions and the mechanic drawing of the RAK1901 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1901/datasheet/RAK19xx_mechanic_drawing.png"
@@ -135,7 +135,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 
 
 #### Schematic Diagram
-**Figure 5** shows the schematic of the RAK1901 module.      
+**Figure 5** shows the schematic of the RAK1901 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1901/datasheet/rak1901-schematic.png"

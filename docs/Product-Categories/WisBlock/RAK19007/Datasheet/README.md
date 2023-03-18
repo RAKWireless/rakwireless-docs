@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK19007 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak19007/overview/RAK19007_home.png
+rak_img: /assets/images/wisblock/rak19007/RAK19007.png
 prev: ../Quickstart/
 next: false
 tags:
@@ -19,7 +19,7 @@ For convenience, there is a Type-C USB connector that is connected directly to W
 
 WisBlock modules are connected to the RAK19007 WisBlock Base board via high-speed board-to-board connectors. They provide secure and reliable interconnection to ensure the signal integrity of each data bus. A set of screws are used for fixing the modules, which makes it reliable even in an environment with lots of vibrations.
 
-You can also use a [RAK19005 WisBlock Sensor Extension Cable](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005) to position the WisBlock modules apart from the WisBlock Base board or in any part of your case. 
+You can also use a [RAK19005 WisBlock Sensor Extension Cable](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005) to position the WisBlock modules apart from the WisBlock Base board or in any part of your case.
 
 **RAK19007** has connectors for the following:
 
@@ -73,7 +73,7 @@ There are six (6) slots on RAK19007 WisBlock Base Board 2nd Gen:
 
 - **CPU SLOT**: This slot is reserved for the WisBlock Core module which has the main MCU.
 - **IO SLOT**: This slot is used for IO extension modules.
-- **Four Sensor Slots**: The sensor slots A to D are used to connect with the I2C bus. Slot D can be used for GNSS modules, too. 
+- **Four Sensor Slots**: The sensor slots A to D are used to connect with the I2C bus. Slot D can be used for GNSS modules, too.
 
 Also, there are three (3) 2.54&nbsp;mm pitch hole pads for extension interface such as BOOT, I2C, UART, and GPIO pins.
 
@@ -141,7 +141,7 @@ The Type-C USB connector is compliant with the USB 2.0 specification. This USB i
 
 * Smaller and reversible connector shape
 * Port can be input or output
-* Fast battery charging 
+* Fast battery charging
 
 <rk-img
   src="/assets/images/wisblock/rak19007/datasheet/image-20220127173430838.png"
@@ -183,7 +183,7 @@ On the RAK19007 Base Board, there are three 2.54&nbsp;mm pitch headers for IO ex
 
 
 
-:::tip 📝 NOTE BOOT pin 
+:::tip 📝 NOTE BOOT pin
 BOOT pin is used on startup configuration or sequence of the WisBlock Core connected to it. It is commonly used for uploading the bootloader and/or application firmware. The requirements of the state of the BOOT pin depend on the specific model of the WisBlock Core used.
 :::
 
@@ -267,7 +267,7 @@ The table below shows the pinout of the 40-pin WisBlock core connector:
 | IO5                                | 37             | 38             | IO6                                |
 | GND                                | 39             | 40             | GND                                |
 
-<br> 
+<br>
 
 As for the following table, it shows the definition of each pin of the WisBlock Core connector:
 
@@ -380,7 +380,7 @@ As for the following table, it shows the pin name and description of each pin in
 
 ##### Absolute Maximum Ratings
 
-The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device. 
+The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device.
 
 :::warning ⚠️WARNING
 1. If the stress rating goes above what is listed, it may cause permanent damage to the device.
@@ -415,7 +415,7 @@ The RAK19007 is designed for **low-power IoT products**, and the power supply us
 
 ##### Battery Connector
 
-The RAK19007 WisBlock Base Board 2nd Gen can be powered by a rechargeable battery, connected to the **P2 connector**. The nominal operating voltage of the battery should be within the range shown in the following table. The matching connector for the battery wires is an [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199)     
+The RAK19007 WisBlock Base Board 2nd Gen can be powered by a rechargeable battery, connected to the **P2 connector**. The nominal operating voltage of the battery should be within the range shown in the following table. The matching connector for the battery wires is an [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199)
 
 | **Minimum** | **Typical** | **Maximum** | **Unit** |
 | ----------- | ----------- | ----------- | -------- |
@@ -455,6 +455,10 @@ A 5&nbsp;V solar panel can be connected to the board via the **P1 connector**. T
 #### Mechanical Characteristics
 
 ##### Board Dimensions
+
+:::tip 📝 NOTE
+- You may also refer and download the [M1.2 Stand-off fastener/inserts datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/M1.2_Press-Fit_Standoff_Datasheet.zip).
+:::
 
 **Figure 11** shows the detailed mechanical dimensions of the RAK19007 Board.
 

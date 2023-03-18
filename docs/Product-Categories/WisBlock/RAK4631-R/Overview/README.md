@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak4631-r/overview/RAK4631-R_home.png
+rak_img: /assets/images/wisblock/rak4631-r/RAK4631-R.png
 rak_desc: RAK4631-R is a WisBlock Core module for RAK WisBlock. It extends the WisBlock series with a powerful Nordic nRF52840 MCU that supports Bluetooth 5.0 (Bluetooth Low Energy) and the newest LoRa transceiver from Semtech, the SX1262. RAK4631-R firmware is based on RUI3.
 next: ../Quickstart/
 prev: ../../
@@ -39,7 +39,7 @@ Also, it complies with LoRaWAN 1.0.3 protocols and supports LoRa point-to-point 
 
 
 ## Product Features
- 
+
 - TCXO crystal for LoRa chip
 - I/O ports: UART/I2C/GPIO/USB
 - SPI pins and optional NFC interface are accessible using WisBlock IO module
@@ -55,9 +55,9 @@ Also, it complies with LoRaWAN 1.0.3 protocols and supports LoRa point-to-point 
 
 ## Prerequisites
 
-To use a **RAK4631-R**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK4631-R** module and has the programming/debug interface.   
+To use a **RAK4631-R**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK4631-R** module and has the programming/debug interface.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 - Make sure to fix the module with the screws to ensure a proper function.
 - When using the LoRa or Bluetooth Low Energy transceivers, make sure that always an antenna is connected. Using these transceivers without an antenna can damage the system.
 :::

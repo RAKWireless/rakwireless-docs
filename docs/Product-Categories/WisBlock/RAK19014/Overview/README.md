@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak19014/overview/RAK19014_home.png
+rak_img: /assets/images/wisblock/rak19014/RAK19014.png
 rak_desc: RAK19014 is a WisBlock Power module that comprises a battery connector and a USB Type-C connector which can connect to the WisBlock Base board with Power Slot.
 rak_grp: [wisblock, wisbase]
 next: ../Quickstart/
@@ -42,5 +42,5 @@ To use a **RAK19014**, you need at least a **WisBlock Base** Board with Power Sl
 - Battery can cause harm if not handled properly.
 - 3.7-4.2&nbsp;V Li-Ion batteries are primarily supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
 - Make sure the battery wires, both rechargeable and non-rechargeable, match the polarity on the RAK19014 board. Not all batteries have the same wiring.
-- Make sure to fix the module with the screws to ensure a proper function.    
+- Make sure to fix the module with the screws to ensure a proper function.
 :::

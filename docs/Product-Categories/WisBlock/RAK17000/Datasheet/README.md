@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK17000 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak17000/overview/RAK17000_home.png
+rak_img: /assets/images/wisblock/rak17000/RAK17000.png
 tags:
   - datasheet
   - wisblock
@@ -23,7 +23,7 @@ The RAK17000 is a DC motor driver module. It can be mounted to the IO Slot of th
 - Drive two DC motors or one stepper motor
 - Wide power supply voltage range: 2.7 to 10.8&nbsp;V
 - Motor power supply can be from an external source or from the WisBlock Base battery
-- Output current control 
+- Output current control
 - Selection of power source can be done via 2.54&nbsp;mm 2-pin jumper
 - Chipset: Texas Instruments DRV8833
 - Module size: 25X35&nbsp;mm
@@ -38,9 +38,9 @@ The RAK17000 is a DC motor driver module. It can be mounted to the IO Slot of th
 
 ### Overview
 
-#### Mounting 
+#### Mounting
 
-The RAK17000 module can be mounted to the slots IO of the WisBlock Base board. Figure 1 shows the mounting mechanism of the RAK17000 on a WisBlock Base module, such as the RAK5005-O. 
+The RAK17000 module can be mounted to the slots IO of the WisBlock Base board. Figure 1 shows the mounting mechanism of the RAK17000 on a WisBlock Base module, such as the RAK5005-O.
 
 <rk-img
   src="/assets/images/wisblock/rak17000/datasheet/RAK17000_mounting.png"
@@ -54,7 +54,7 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 #### Chipset
 
-The RAK17000 motor drive module uses DRV8833 from Texas Instruments. 
+The RAK17000 motor drive module uses DRV8833 from Texas Instruments.
 
 | Vendor            | Part Number |
 | ----------------- | ----------- |
@@ -62,7 +62,7 @@ The RAK17000 motor drive module uses DRV8833 from Texas Instruments.
 
 #### Pin Definition
 
-The RAK17000 WisBlock motor drive module comprises a standard WisBlock connector for the IO slot. The WisBlock connector allows the RAK17000 module to be mounted on a WisBlock Base Board, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in Figure 2. 
+The RAK17000 WisBlock motor drive module comprises a standard WisBlock connector for the IO slot. The WisBlock connector allows the RAK17000 module to be mounted on a WisBlock Base Board, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in Figure 2.
 
 ::: tip 📝 NOTE
 - Bridge **A** and **B** input related pins, **nSLEEP**，**VBAT**, and **GND** are connected to this connector.

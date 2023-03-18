@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK15001 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak15001/overview/RAK15001_home.png
+rak_img: /assets/images/wisblock/rak15001/RAK15001.png
 prev: ../Quickstart/
 next: false
 tags:
@@ -32,12 +32,12 @@ The RAK15001 is a NOR flash module with a 16&nbsp;MBit (2&nbsp;MByte) nonvolatil
     * 16&nbsp;Mbit (2&nbsp;MByte) capacity
     * SPI interface: SCLK, CS#, SI, SO, WP#, HOLD#
     * Software/Hardware write protection
-    * GigaDevice GD25Q16 chip  
+    * GigaDevice GD25Q16 chip
     * Full voltage range: **2.7~3.6&nbsp;V**
     * Standby current less than 5&nbsp;uA
     * Temperature range: **-40&nbsp;°C to +85&nbsp;°C**
     * Chipset: GigaDevice GD25Q16CNIG
-  
+
 * **Module Size**
     * 10 x 10&nbsp;mm
 
@@ -45,9 +45,9 @@ The RAK15001 is a NOR flash module with a 16&nbsp;MBit (2&nbsp;MByte) nonvolatil
 ## Specifications
 
 
-### Overview 
+### Overview
 
-#### Mounting 
+#### Mounting
 
 The RAK15001 module can be mounted on slots A, B, C, or D of the WisBase board. Figure 2 shows the mounting mechanism of the RAK15001 on a WisBlock baseboard, such as the RAK5005-O.
 
@@ -59,7 +59,7 @@ The RAK15001 module can be mounted on slots A, B, C, or D of the WisBase board. 
 
 ### Hardware
 
-The hardware specification is categorized into five parts that cover the chipset and pinouts and the corresponding functions and diagrams of the board. It also presents the parameters and their standard values in terms of electrical and mechanical. 
+The hardware specification is categorized into five parts that cover the chipset and pinouts and the corresponding functions and diagrams of the board. It also presents the parameters and their standard values in terms of electrical and mechanical.
 
 #### Chipset
 
@@ -69,7 +69,7 @@ The hardware specification is categorized into five parts that cover the chipset
 
 #### Pin Definition
 
-The RAK15001 WisBlock EEPROM module comprises a standard WisSensor connector. The WisSensor connector allows the RAK15001 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the Pinout Definition is shown in Figure 3. 
+The RAK15001 WisBlock EEPROM module comprises a standard WisSensor connector. The WisSensor connector allows the RAK15001 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the Pinout Definition is shown in Figure 3.
 
 ::: tip 📝 NOTE
 Only the **VDD**, **GND**, and **Standard SPI** related pins are connected to this module.
@@ -123,7 +123,7 @@ Figure 4 shows the dimensions and the mechanical drawing of the RAK15001 module.
 
 
 #### Schematic Diagram
-  
+
 
 <rk-img
   src="/assets/images/wisblock/rak15001/datasheet/schematic.png"

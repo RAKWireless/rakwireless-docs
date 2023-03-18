@@ -1,6 +1,6 @@
 ---
-rak_img: /assets/images/wisblock/rak19011/overview/RAK19011_home.png
-rak_desc: RAK19011 is a full WisBlock Base board that has one Core slot, one Power slot, two IO slots, and six sensor slots for WisBlock modules. The Power slot provides the power supply for attached WisBlock modules. 
+rak_img: /assets/images/wisblock/rak19011/RAK19011.png
+rak_desc: RAK19011 is a full WisBlock Base board that has one Core slot, one Power slot, two IO slots, and six sensor slots for WisBlock modules. The Power slot provides the power supply for attached WisBlock modules.
 rak_grp: [wisblock, wisbase]
 next: ../Quickstart/
 prev: ../../
@@ -39,17 +39,17 @@ WisBlock Modules are connected to the RAK19011 WisBlock Dual IO Base Board with 
     * All key input-output pins of WisBlock Core are exposed via headers
     * Access to various communication bus via headers: I2C, SPI, UART, and USB
     * One user-defined push button switch
-* **Size**    
+* **Size**
     * 60 x 67&nbsp;mm
 
 
-## Prerequisites 
+## Prerequisites
 
-RAK19011 WisBlock Dual IO Base Board with Power Slot is easy-to-use and requires a **WisBlock Core**, **WisBlock Power Module**, and **WisBlock Modules** to start developing with the system. 
+RAK19011 WisBlock Dual IO Base Board with Power Slot is easy-to-use and requires a **WisBlock Core**, **WisBlock Power Module**, and **WisBlock Modules** to start developing with the system.
 
 :::warning ⚠️ WARNING
 
 - RAK19011 requires a WisBlock Power Module to have power and connector interfaces. There is no USB and battery/power connector in RAK19011. These functionalities must be added by attaching correct WisBlock Power Module for the application.
-- Make sure to fix the modules with the screws to ensure a proper function. 
+- Make sure to fix the modules with the screws to ensure a proper function.
 
 :::

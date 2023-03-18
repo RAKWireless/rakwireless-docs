@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak14013/overview/rak14013_home.png
+rak_img: /assets/images/wisblock/rak14013/RAK14013.png
 rak_desc: RAK14013 is a joystick module with embedded MCU based on ATTINY441-SSU from Atmel.
 rak_grp: [wisblock, wisinterface]
 next: ../Quickstart/
@@ -35,7 +35,7 @@ The RAK14013 is a joystick module with embedded MCU based on ATTINY441-SSU from 
 
 * **Module Specifications**
     * Joystick module and push buttons
-    * I2C interface 
+    * I2C interface
     * Chipset: ATMEL ATTINY441-SSU
     * 3.3&nbsp;V Power supply
 
@@ -46,6 +46,6 @@ The RAK14013 is a joystick module with embedded MCU based on ATTINY441-SSU from 
 
 To use a **RAK14013**, you need the **RAK14007** adapter board and a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK14013** module. Furthermore, you need a **WisBlock Core** module to use the joystick and pushbuttons.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

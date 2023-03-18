@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12011/overview/RAK12011_home.png
+rak_img: /assets/images/wisblock/rak12011/RAK12011.png
 rak_desc: RAK12011 is a WisBlock Sensor that extends the WisBlock system with a water-resistant pressure sensor of LPS33HW. This makes it easy to build up a barometric air pressure data acquisition system even in a wet environment.
 rak_grp: [wisblock, wissensor]
 next: ../Quickstart/
@@ -41,7 +41,7 @@ The RAK12011 is a Barometric Pressure sensor module that is part of the RAKWirel
     * Measures Ambient Temperature
     * **Operating Temperature Range:** -40&nbsp;°C to +85&nbsp;°C
     * Embedded Temperature Compensation
-    * Low current consumption down to 3&nbsp;μA 
+    * Low current consumption down to 3&nbsp;μA
     * Via I2C interface
     * Supply Voltage: 3.3&nbsp;V
     * Current Consumption: 1-15&nbsp;uA
@@ -54,6 +54,6 @@ The RAK12011 is a Barometric Pressure sensor module that is part of the RAKWirel
 
 To use a **RAK12011**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12011** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak13009/overview/RAK13009_home.png
+rak_img: /assets/images/wisblock/rak13009/RAK13009.png
 rak_desc: RAK13009 is a QWIIC module that provides interface for QWIIC connect sensors, actuators, shields, and cables.
 rak_grp: [wisblock, wisinterface]
 next: ../Quickstart/
@@ -43,6 +43,6 @@ The RAK13009 is a QWIIC module, which is a part of the RAKWireless WisBlock Inte
 
 To use a **RAK13009**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK13009** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

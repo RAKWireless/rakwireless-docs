@@ -1,10 +1,10 @@
 ---
 rak_desc: Provides comprehensive information about your RAK18040 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak18040/overview/RAK18040_home.png
+rak_img: /assets/images/wisblock/rak18040/RAK18040.png
 tags:
   - Datasheet
   - WisBlock Audio
-  - RAK18040    
+  - RAK18040
   - Nuvoton
   - NAU85L40B
 prev: ../Overview/
@@ -22,14 +22,14 @@ next: false
 
 ### Features
 
-* **Module Specifications**    
-    - Audio ADC  
-    - Integrated FLL and microphone preamplifier  
+* **Module Specifications**
+    - Audio ADC
+    - Integrated FLL and microphone preamplifier
     - I2S interface for audio data
-    - I2C interface for control 
+    - I2C interface for control
     - Supports two (2) analog microphones
-  
-* **Module Size**    
+
+* **Module Size**
     * 25 x 35&nbsp;mm
 
 ## Specifications

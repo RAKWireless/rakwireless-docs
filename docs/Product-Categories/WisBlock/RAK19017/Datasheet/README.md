@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK19017 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak19017/overview/RAK19017_home.png
+rak_img: /assets/images/wisblock/rak19017/RAK19017.png
 tags:
   - datasheet
   - wisblock
@@ -22,7 +22,7 @@ RAK19017 WisBlock POE module is a power board that is designed based on Ag99005 
 ### Features
 
 - POE Power Module (power supply only, no Ethernet connection capability)
-- 36&nbsp;V to 57&nbsp;V Input voltage range 
+- 36&nbsp;V to 57&nbsp;V Input voltage range
 - Short-circuit protection and Over temperature protection
 - Compact size, the minimum size is: 30 x 50&nbsp;mm
 
@@ -67,9 +67,9 @@ RAK19017 WisBlock PoE Power Slot Module provides the following interfaces:
 
 ::: tip 📝 NOTE
 RAK19017 doesn't have a USB connector. So when RAK19017 is used together with WisBlock Base board with power slot, it is not possible to program the core (unless via SWD pins using external tools like Jlink and RAKDAP1). If you want to program the WisBlock Core via USB, you need the RAK5804. Then you can use the USB connector of RAK5804 to program the WisBlock Core.
-:::  
+:::
 
-<br> 
+<br>
 
 <rk-img
   src="/assets/images/wisblock/rak19017/datasheet/label.png"
@@ -90,11 +90,11 @@ The two LEDs in the Ethernet connector can be controlled by the WisBlock Core.
 
 #### Pin Definition
 
-The RAK19017 module has a 40-pin WisConnector that is compatible with the WisBlock Power Slot. The pin order of the connector and the pinout definition is shown in **Figure 4**. 
+The RAK19017 module has a 40-pin WisConnector that is compatible with the WisBlock Power Slot. The pin order of the connector and the pinout definition is shown in **Figure 4**.
 
 ::: tip 📝 NOTE
 VBAT, 3V3, RESET, LED1, LED2, and GND have connected to WisBlock 40-pin connector.
-:::  
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak19017/datasheet/pinout.png"
@@ -107,7 +107,7 @@ VBAT, 3V3, RESET, LED1, LED2, and GND have connected to WisBlock 40-pin connecto
 
 ##### Absolute Maximum Ratings
 
-The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device. 
+The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device.
 
 :::warning ⚠️WARNING
 1. If the stress rating goes above what is listed, it may cause permanent damage to the device.

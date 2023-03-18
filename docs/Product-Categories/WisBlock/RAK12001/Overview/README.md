@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12001/overview/RAK12001_home.png
+rak_img: /assets/images/wisblock/rak12001/RAK12001.png
 rak_desc: RAK12001 is a Fingerprint Sensor that can read and record fingerprints.
 rak_grp: [wisblock, wissensor]
 next: ../Quickstart/
@@ -55,6 +55,6 @@ The RAK12001 is a fingerprint sensor module based on GROW R307. This module supp
 
 To use a **RAK12001**, you need at least a **WisBlock Base** and also a **Fingerprint Module** to plug the module in. **WisBlock Base** provides power supply to the **RAK12001** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

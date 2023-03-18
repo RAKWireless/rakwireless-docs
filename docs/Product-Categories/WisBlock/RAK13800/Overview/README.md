@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak13800/overview/RAK13800_home.png
+rak_img: /assets/images/wisblock/rak13800/RAK13800.png
 rak_desc: RAK13800 is a WisBlock Interface module that extends the WisBlock system with an embedded Ethernet Controller. This module is designed as a full hardwired one-chip TCP/IP solution.
 rak_grp: [wisblock, wisinterface]
 prev: ../../
@@ -41,22 +41,22 @@ The user can develop an Ethernet application easily by using the simple SOCKETs 
 
 - Based on WIZnet W5100S-L chip
 - Support Hardwired Internet protocols
-- Support four independent SOCKETs simultaneously  
-- Support SOCKET-less command  
-- Support Ethernet Power-down mode & Main Clock gating for power save  
+- Support four independent SOCKETs simultaneously
+- Support SOCKET-less command
+- Support Ethernet Power-down mode & Main Clock gating for power save
 - Support WOL (Wake on LAN) over UDP
 - SPI Host Interface
 - Internal 16Kbytes Memory for TX/RX Buffers
-- 10BaseT/100BaseTX Ethernet PHY Integrated 
-- Support Auto-Negotiation  
-- Support Auto-MDIX only when Auto-Negotiation mode    
-- Network Indicator LEDs   
+- 10BaseT/100BaseTX Ethernet PHY Integrated
+- Support Auto-Negotiation
+- Support Auto-MDIX only when Auto-Negotiation mode
+- Network Indicator LEDs
 - Supply Voltage: 2.97&nbsp;V ~ 3.63&nbsp;V
 - Size: 25 x 50&nbsp;mm
 
 ## Prerequisites
 
 To use a **RAK13800**, you need to connect the module to the IO slot of a **WisBlock Base** Board. The **WisBlock Base** is the power supply for the **RAK13800** module. Furthermore, you need a **WisBlock Core** module, to control the module via software code.
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function. 
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

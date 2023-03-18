@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12047 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12047/overview/RAK12047_home.png
+rak_img: /assets/images/wisblock/rak12047/RAK12047.png
 tags:
   - datasheet
   - wisblock
@@ -64,7 +64,7 @@ The RAK12047 WisBlock VOC Sensor Module comprises a standard WisBlock connector.
 />
 
 :::tip 📝 NOTE:
-- Only the **I2C** related pin, **3V3_S**, and **GND** are connected to this module. 
+- Only the **I2C** related pin, **3V3_S**, and **GND** are connected to this module.
 - **3V3_S** voltage output from the WisBlock Base that powers the RAK12047 module can be controlled by the WisBlock Core via **WB_IO2** (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12047 module.
 :::
 

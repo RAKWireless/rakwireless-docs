@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK12018 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12018/overview/RAK12018_home.png
+rak_img: /assets/images/wisblock/rak12018/RAK12018.png
 tags:
   - datasheet
   - wisblock
@@ -15,7 +15,7 @@ next: false
 
 ## Description
 
-RAK12018 WisBlock Code Scanner Module is a WisBlock Interface module capable of scanning 1D or 2D codes. It uses the LV3296 scanner module from RAKINDA that works on bar codes, QR, and other standard 1D/2D codes. 
+RAK12018 WisBlock Code Scanner Module is a WisBlock Interface module capable of scanning 1D or 2D codes. It uses the LV3296 scanner module from RAKINDA that works on bar codes, QR, and other standard 1D/2D codes.
 
 LV3296 is connected to the main RAK12018 board via flex cable, which is ideal for different enclosure setups. The RAK12018 also has mounting screw holes dedicated to LV3296, so you can fix it directly to the board making the setup very compact.
 
@@ -54,7 +54,7 @@ The hardware specification is categorized into four parts. It covers the pinouts
 
 #### Pin Definition
 
-The RAK12018 has a standard 40-pin WisConnector which can be mounted directly to the IO slot of WisBlock Base board like RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
+The RAK12018 has a standard 40-pin WisConnector which can be mounted directly to the IO slot of WisBlock Base board like RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisblock/rak12018/datasheet/RAK12018_Pinouts.svg"
@@ -133,10 +133,10 @@ It provides the LV3296 module with a signal to trigger a scan and decode session
   src="/assets/images/wisblock/rak12018/datasheet/rak12018_ntrig.png"
   width="30%"
   caption="nTrigger Key"
-/>  
+/>
 
 
-##### Indicator Light 
+##### Indicator Light
 
 It is used as an LED indicator for a successful scan. This LED is controlled by LV3296.
 
@@ -144,7 +144,7 @@ It is used as an LED indicator for a successful scan. This LED is controlled by 
   src="/assets/images/wisblock/rak12018/datasheet/rak12018_light.png"
   width="30%"
   caption="Indicator Light"
-/>  
+/>
 
 ##### Beeper Driver
 
@@ -154,4 +154,4 @@ The circuit below is used to drive an external buzzer. The beep sound is control
   src="/assets/images/wisblock/rak12018/datasheet/rak12018_buzzer.png"
   width="40%"
   caption="Beeper Driver"
-/>  
+/>

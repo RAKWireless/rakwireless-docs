@@ -1,6 +1,6 @@
 ---
 rak_desc: The Pulsar cable is a high-grade cable, suitable for all gateways from the WisGate Developer series and the RAK Hotspot.
-rak_img: /assets/images/accessories/rak9733/overview/rak9733.png
+rak_img: /assets/images/accessories/rak9733/rak9733.png
 
 ---
 

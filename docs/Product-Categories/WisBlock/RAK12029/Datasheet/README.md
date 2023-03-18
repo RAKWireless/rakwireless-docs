@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12029 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12029/overview/RAK12029_home.png
+rak_img: /assets/images/wisblock/rak12029/RAK12029.png
 tags:
   - datasheet
   - wisblock
@@ -25,7 +25,7 @@ next: false
 RAK12029 is a metal detection sensor module based on the LDC1614 from Texas Instruments. The LDC1614 is an inductance-to-digital converter (LDC) that measures the oscillation frequency of four LC resonators. It outputs a digital value, that is, proportional to frequency, with 28 bits of measurement resolution. With this digital value, you can detect the presence of metallic objects.
 
 
-### Features 
+### Features
 
 * Metal detection module
 * Sensing coils up to four channels
@@ -113,7 +113,7 @@ The RAK12029 WisBlock Inductive Sensor comprises a standard WisBlock connector. 
 
 ##### Power Supply Circuit
 
-**Figure 6** shows the RAK12029 power supply circuit. 
+**Figure 6** shows the RAK12029 power supply circuit.
 
 * **3V3_S** supply voltage comes from the WisBlock Base board (max voltage: 3.6&nbsp;V).
 * **VDD** is the supply voltage going to the module (max voltage: 3.6&nbsp;V).

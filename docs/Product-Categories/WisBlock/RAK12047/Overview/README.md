@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12047/overview/RAK12047_home.png
+rak_img: /assets/images/wisblock/rak12047/RAK12047.png
 rak_desc:  RAK12047 is a WisBlock Sensor that extends the WisBlock system with a SGP40 from Sensirion. A ready-to-use SW library and tutorial make it easy to build a Volatile Organic Compounds (VOC) sensor intended for air quality data acquisition system.
 rak_grp: [wisblock, wissensor]
 prev: ../../
@@ -41,7 +41,7 @@ The RAK12047 WisBlock VOC Sensor Module is an indoor air quality sensor based on
     * Measures VOC
     * Measurement range: 0 to 1000&nbsp;ppm (Ethanol in clean air)
     * I2C digital interface
-  
+
 * **Size**
     * 10 x 10&nbsp;mm
 
@@ -49,6 +49,6 @@ The RAK12047 WisBlock VOC Sensor Module is an indoor air quality sensor based on
 
 To use a **RAK12047**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12047** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-::: warning ⚠️ WARNING    
+::: warning ⚠️ WARNING
 Make sure to fix the module with the screws to ensure a proper function.
 :::

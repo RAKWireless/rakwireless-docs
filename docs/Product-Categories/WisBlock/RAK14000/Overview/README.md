@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak14000/overview/RAK14000_buy.png
+rak_img: /assets/images/wisblock/rak14000/RAK14000.png
 rak_desc: RAK14000 is a WisBlock Display module which consists of an E-Ink Display and Three-Button Module.
 rak_grp: [wisblock, wisdisplay]
 prev: ../../

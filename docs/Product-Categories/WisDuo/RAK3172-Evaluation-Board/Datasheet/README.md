@@ -290,7 +290,7 @@ RAK3172 uses UART2's serial pins to upload the latest firmware.
 :::tip 📝 NOTE:
 RAK3172 should automatically go to BOOT mode when the firmware is being uploaded via RAK DFU Tool or WisToolBox.
 
-If BOOT mode is not initiated, double click the reset button to force BOOT mode.
+If BOOT mode is not initiated, you can manually send `AT+BOOT` command to start bootloader mode.
 :::
 
 #### Firmware / OS

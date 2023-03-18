@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12022/overview/RAK12022.png
+rak_img: /assets/images/wisblock/rak12022/RAK12022.png
 rak_desc: RAK12022 is a PT100 IO module that uses MAX31865, an easy-to-use resistance-to-digital converter optimized for platinum resistance temperature detectors (RTDs).
 rak_grp: [wisblock, wissensor]
 prev: ../../

@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK14013 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak14013/overview/rak14013_home.png
+rak_img: /assets/images/wisblock/rak14013/RAK14013.png
 tags:
   - datasheet
   - wisblock
@@ -25,7 +25,7 @@ The RAK14013 is a joystick module with embedded MCU based on ATTINY441-SSU from 
 
 ### Features
 
-- Joystick module and push buttons 
+- Joystick module and push buttons
 - I2C interface
 - 3.3&nbsp;V Power supply
 - Chipset: ATMEL ATTINY441-SSU
@@ -33,7 +33,7 @@ The RAK14013 is a joystick module with embedded MCU based on ATTINY441-SSU from 
 
 ## Specifications
 
-### Overview 
+### Overview
 
 #### Mounting
 
@@ -106,7 +106,7 @@ The pin definition of the RAK14013 connector is shown in **Figure 3**.
 
 ##### Power Supply and I2C
 
-**Power supply** and **I2C** connections are shown in **Figure 7**. 
+**Power supply** and **I2C** connections are shown in **Figure 7**.
 
 <rk-img
   src="/assets/images/wisblock/rak14013/datasheet/image-power-i2c.png"
@@ -126,7 +126,7 @@ The RAK14013 uses ATTINY441-SSU microcontroller unit (MCU) to control the four t
 
 ##### Joystick Circuit
 
-**Joystick** circuit diagram is shown in **Figure 9**. 
+**Joystick** circuit diagram is shown in **Figure 9**.
 
 <rk-img
   src="/assets/images/wisblock/rak14013/datasheet/image-joystick.png"
@@ -136,7 +136,7 @@ The RAK14013 uses ATTINY441-SSU microcontroller unit (MCU) to control the four t
 
 ##### Tactile Pushbuttons Circuit
 
-**Tactile Pushbuttons** circuit diagram is shown in **Figure 10**. 
+**Tactile Pushbuttons** circuit diagram is shown in **Figure 10**.
 
 <rk-img
   src="/assets/images/wisblock/rak14013/datasheet/image-buttons.png"
@@ -146,7 +146,7 @@ The RAK14013 uses ATTINY441-SSU microcontroller unit (MCU) to control the four t
 
 ##### Debug Connector
 
-**Debug** connector circuit diagram is shown in **Figure 11**. 
+**Debug** connector circuit diagram is shown in **Figure 11**.
 
 <rk-img
   src="/assets/images/wisblock/rak14013/datasheet/image-debug.png"

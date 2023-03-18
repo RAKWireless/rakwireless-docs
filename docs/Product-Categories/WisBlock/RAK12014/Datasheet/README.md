@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12014 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12014/overview/RAK12014_home.png
+rak_img: /assets/images/wisblock/rak12014/RAK12014.png
 tags:
   - datasheet
   - wisblock
@@ -15,7 +15,7 @@ next: false
 
 ### Description
 
-The RAK12014, a part of the RAKwireless WisBlock Sensor Series, is a Time-of-Flight (ToF) module designed based on VL53L0X from STMicroelectronics. The VL53L0X is a ToF laser-ranging module, providing accurate distance measurement up to 2&nbsp;m. 
+The RAK12014, a part of the RAKwireless WisBlock Sensor Series, is a Time-of-Flight (ToF) module designed based on VL53L0X from STMicroelectronics. The VL53L0X is a ToF laser-ranging module, providing accurate distance measurement up to 2&nbsp;m.
 
 The VL53L0X's 940&nbsp;nm VCSEL emitter (Vertical-Cavity Surface-Emitting Laser) is invisible to the human eye and coupled with internal physical infrared filters. It enables longer-ranging distances, higher immunity to ambient light, and better robustness to cover glass optical crosstalk.
 
@@ -33,7 +33,7 @@ The VL53L0X's 940&nbsp;nm VCSEL emitter (Vertical-Cavity Surface-Emitting Laser)
 
 ## Specifications
 
-### Overview 
+### Overview
 
 #### Mounting
 
@@ -136,6 +136,6 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 />
 
 ::: tip 📝 NOTE
-- Field Of View (FOV)  and Reflectance targets will affect the measuring distance and accuracy. 
+- Field Of View (FOV)  and Reflectance targets will affect the measuring distance and accuracy.
 - To get better performance, you may need to apply algorithms for the object being measured. But for usual measurements, the default output is sufficient.
 :::

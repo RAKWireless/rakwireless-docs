@@ -1,6 +1,6 @@
 ---
 rak_desc: RAK19008 is a FPC (Flat Printed Circuit) extension cable for IO Slot of WisBlock Base Board.
-rak_img: /assets/images/wisblock/rak19008/overview/RAK19008.png
+rak_img: /assets/images/wisblock/rak19008/RAK19008.png
 
 ---
 

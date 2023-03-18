@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK15002 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak15002/overview/rak15002_home.png
+rak_img: /assets/images/wisblock/rak15002/RAK15002.png
 tags:
   - datasheet
   - wisblock
@@ -27,11 +27,11 @@ The RAK15002 is a Micro SD card module that can be mounted to the IO slot of the
 
 ## Specifications
 
-### Overview 
+### Overview
 
-#### Mounting 
+#### Mounting
 
-The RAK15002 module can be mounted to the IO slot of the WisBlock Base board. Figure 1 shows the mounting mechanism of the RAK15002 on a WisBlock Base board. 
+The RAK15002 module can be mounted to the IO slot of the WisBlock Base board. Figure 1 shows the mounting mechanism of the RAK15002 on a WisBlock Base board.
 
 <rk-img
   src="/assets/images/wisblock/rak15002/datasheet/image-20210312115347019.png"
@@ -45,7 +45,7 @@ The hardware specification is categorized into four parts. It discusses the pino
 
 #### Pin Definition
 
-The RAK15002 WisBlock SD Card Module comprises a standard WisConnector. The WisConnector allows the RAK15002 module to be mounted on a WisBlock Base board. The pin order of the connector and the pinout definition is shown in Figure 2. 
+The RAK15002 WisBlock SD Card Module comprises a standard WisConnector. The WisConnector allows the RAK15002 module to be mounted on a WisBlock Base board. The pin order of the connector and the pinout definition is shown in Figure 2.
 
 :::tip 📝 NOTE:
 - **SPI** related pins, **IO6**，**3V3**, and **GND** are connected to this module.
@@ -89,7 +89,7 @@ Figure 3 shows the dimensions and the mechanic drawing of the RAK15002 WisBlock 
 
 #### Schematic Diagram
 
-Figure 5 shows the RAK15002 SD Card Module schematic. Only I2C1 related pins, IO6 (insert detection), **3V3**, and **GND** are connected to WisConnector. 
+Figure 5 shows the RAK15002 SD Card Module schematic. Only I2C1 related pins, IO6 (insert detection), **3V3**, and **GND** are connected to WisConnector.
 
 <rk-img
   src="/assets/images/wisblock/rak15002/datasheet/image-20210315105240003.png"

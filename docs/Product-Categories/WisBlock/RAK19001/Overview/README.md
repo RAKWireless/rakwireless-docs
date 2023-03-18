@@ -1,6 +1,6 @@
 ---
-rak_img: /assets/images/wisblock/rak19001/overview/RAK19001_home.png
-rak_desc: RAK19001 is a full WisBlock Base board that has one Core slot, two IO slots, and six sensor slots for WisBlock modules. It also provides the power supply for attached WisBlock modules. 
+rak_img: /assets/images/wisblock/rak19001/RAK19001.png
+rak_desc: RAK19001 is a full WisBlock Base board that has one Core slot, two IO slots, and six sensor slots for WisBlock modules. It also provides the power supply for attached WisBlock modules.
 rak_grp: [wisblock, wisbase]
 next: ../Quickstart/
 prev: ../../
@@ -44,20 +44,20 @@ Additionally, it has two user-definable LEDs, one power supply/charging indicato
     * All key input-output pins of WisBlock Core are exposed via headers
     * Access to various communication bus via headers: I2C, SPI, UART, and USB
     * One user-defined push button switch
-* **Power supply**     
+* **Power supply**
     * Supports both 5&nbsp;V USB, 3.7&nbsp;V rechargeable battery, and 3.3 to 5.5&nbsp;V non-rechargeable battery as power supply
     * The power supply for the **WisBlock modules** boards can be controlled by the **WisBlock Core** modules to minimize power consumption
     * Slide switch to select between a rechargeable or non-rechargeable battery
-* **Size**    
+* **Size**
     * 60 x 67&nbsp;mm
 
 
-## Prerequisites 
+## Prerequisites
 
 RAK19001 WisBlock Dual IO Base Board is easy-to-use and requires only a Type-C USB cable to start developing with the system.
 
-:::warning ⚠️ WARNING    
-- On rechargeable batteries, only 3.7-4.2&nbsp;V rechargeable Li-Ion batteries are supported. Do not use other types of rechargeable batteries with the system.    
+:::warning ⚠️ WARNING
+- On rechargeable batteries, only 3.7-4.2&nbsp;V rechargeable Li-Ion batteries are supported. Do not use other types of rechargeable batteries with the system.
 - On non-rechargeable batteries, the ideal range is 3.3 to 5.5&nbsp;V.
-- Only 5&nbsp;V solar panels (up to 6&nbsp;V) are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.    
+- Only 5&nbsp;V solar panels (up to 6&nbsp;V) are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
 :::

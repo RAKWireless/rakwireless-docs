@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK19011. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
-rak_img: /assets/images/wisblock/rak19011/overview/RAK19011_home.png
+rak_img: /assets/images/wisblock/rak19011/RAK19011.png
 prev: ../Overview/
 next: ../Datasheet/
 tags:
@@ -11,7 +11,7 @@ tags:
 
 # RAK19011 Quick Start Guide
 
-This guide introduces the RAK19011 WisBlock Dual IO Base Board with Power Slot and how to use it. 
+This guide introduces the RAK19011 WisBlock Dual IO Base Board with Power Slot and how to use it.
 
 ## Prerequisite
 
@@ -34,7 +34,7 @@ Based on the choice of the WisBlock Core, select a Development Environment:
 
 <b>Programming via Arduino IDE</b>
 - [RAKwireless BSP support for Arduino](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index)
-<br>In Arduino IDE, once you installed the BSP, the examples for WisBlock Core will be automatically included on the list of examples. 
+<br>In Arduino IDE, once you installed the BSP, the examples for WisBlock Core will be automatically included on the list of examples.
 
 <b>Programming via PlatformIO IDE:</b>
 - [RAKwireless WisBlock modules in PlatformIO](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md)
@@ -141,7 +141,7 @@ This guide uses two arrows. Refer to **Figure 2** for its representation.
   caption="WisConnector’s header is not parallel to the socket"
 />
 
-8. When the aforementioned steps are not completed yet, do not apply force to buckle. Otherwise, there will be a risk to damage the connector. When the connector cannot be smoothly buckled down, repeat the alignment step. 
+8. When the aforementioned steps are not completed yet, do not apply force to buckle. Otherwise, there will be a risk to damage the connector. When the connector cannot be smoothly buckled down, repeat the alignment step.
 
 ##### Detaching a WisConnector
 
@@ -183,7 +183,7 @@ This guide uses two arrows. Refer to **Figure 2** for its representation.
 
 ###### WisBlock Core
 
-A WisBlock Core module is designed to be installed on the CPU slot of the RAK19011 WisBlock Dual IO Base Board with Power Slot. As shown in **Figure 14**, the location is properly marked by silkscreen. Follow carefully the procedure defined in [attaching a WisConnector](#attaching-a-wisconnector) section in order to attach a Core module. Once attached, fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the WisBlock Core. 
+A WisBlock Core module is designed to be installed on the CPU slot of the RAK19011 WisBlock Dual IO Base Board with Power Slot. As shown in **Figure 14**, the location is properly marked by silkscreen. Follow carefully the procedure defined in [attaching a WisConnector](#attaching-a-wisconnector) section in order to attach a Core module. Once attached, fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the WisBlock Core.
 
 
 <rk-img
@@ -195,7 +195,7 @@ A WisBlock Core module is designed to be installed on the CPU slot of the RAK190
 
 ###### WisBlock Power
 
-A WisBlock Power module is designed to be installed on the Power slot of the RAK19011 WisBlock Dual IO Base Board with a Power Slot. As shown in **Figure 15**, the location is properly marked by silkscreen. Follow carefully the procedure defined in [attaching a WisConnector](#attaching-a-wisconnector) section in order to attach a Core module. Once attached, fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the WisBlock Core. 
+A WisBlock Power module is designed to be installed on the Power slot of the RAK19011 WisBlock Dual IO Base Board with a Power Slot. As shown in **Figure 15**, the location is properly marked by silkscreen. Follow carefully the procedure defined in [attaching a WisConnector](#attaching-a-wisconnector) section in order to attach a Core module. Once attached, fix the module with one or more pieces of M1.2 x 3&nbsp;mm screws depending on the WisBlock Core.
 
 
 <rk-img
@@ -206,7 +206,7 @@ A WisBlock Power module is designed to be installed on the Power slot of the RAK
 
 ###### WisBlock Sensor
 
-A WisBlock Sensor module is designed to be installed on the sensor slot of the RAK19011 WisBlock Dual IO Base Board with Power Slot. There are six (6) available sensor slots in the RAK19011 WisBlock Dual IO Base Board with Power Slot. As shown in **Figure 16**, the location of the slots is properly marked by silkscreen. Follow carefully the procedure of the section, [attaching a WisConnector](#attaching-a-wisconnector), to attach a WisBlock Sensor module. Once attached, fix the module with an M1.2 x 3&nbsp;mm screw. 
+A WisBlock Sensor module is designed to be installed on the sensor slot of the RAK19011 WisBlock Dual IO Base Board with Power Slot. There are six (6) available sensor slots in the RAK19011 WisBlock Dual IO Base Board with Power Slot. As shown in **Figure 16**, the location of the slots is properly marked by silkscreen. Follow carefully the procedure of the section, [attaching a WisConnector](#attaching-a-wisconnector), to attach a WisBlock Sensor module. Once attached, fix the module with an M1.2 x 3&nbsp;mm screw.
 
 <rk-img
   src="/assets/images/wisblock/rak19011/quickstart/rak19001-sensor-assembly.png"
@@ -216,7 +216,7 @@ A WisBlock Sensor module is designed to be installed on the sensor slot of the R
 
 ###### WisBlock IO
 
-A WisBlock IO module is designed to be installed on the IO slot of the RAK19011 WisBlock Dual IO Base Board with Power Slot. There are two (2) IO slots in the RAK19011 WisBlock Dual IO Base Board with Power Slot. As shown in **Figure 17**, the location is properly marked by silkscreen. Follow carefully the procedure of the section, [attaching a WisConnector](#attaching-a-wisconnector), to attach a WisBlock IO module. Once attached, fix the module with three pieces of M1.2 x 3&nbsp;mm screws. 
+A WisBlock IO module is designed to be installed on the IO slot of the RAK19011 WisBlock Dual IO Base Board with Power Slot. There are two (2) IO slots in the RAK19011 WisBlock Dual IO Base Board with Power Slot. As shown in **Figure 17**, the location is properly marked by silkscreen. Follow carefully the procedure of the section, [attaching a WisConnector](#attaching-a-wisconnector), to attach a WisBlock IO module. Once attached, fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
 
 <rk-img
@@ -227,7 +227,7 @@ A WisBlock IO module is designed to be installed on the IO slot of the RAK19011 
 
 ##### Disassembling a WisBlock Module
 
-1. The procedure to disassemble any type of WisBlock module is the same. As shown in **Figure 18**, first, remove the screws. 
+1. The procedure to disassemble any type of WisBlock module is the same. As shown in **Figure 18**, first, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak19011/quickstart/rak19001-unscrew.png"
@@ -253,7 +253,7 @@ A WisBlock IO module is designed to be installed on the IO slot of the RAK19011 
 
 ### Software Setup
 
-The WisBlock Core is designed to be interfaced with other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the WisBlock Core. 
+The WisBlock Core is designed to be interfaced with other WisBlock Modules like sensors, displays, and other interfaces. To make useful devices, you need to upload a source code to the WisBlock Core.
 Before you continue, you should have already set up either an [Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) or
 [PlatformIO](https://github.com/RAKWireless/WisBlock/blob/master/PlatformIO/README.md).
 

@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK14014 WisBlock TFT LCD Display Module to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak14014/overview/RAK14014.png
+rak_img: /assets/images/wisblock/rak14014/RAK14014.png
 tags:
   - datasheet
   - wisblock

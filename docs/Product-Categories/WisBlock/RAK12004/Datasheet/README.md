@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12004 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12004/overview/RAK12004_buy.png
+rak_img: /assets/images/wisblock/rak12004/RAK12004.png
 tags:
   - datasheet
   - wisblock
@@ -18,7 +18,7 @@ next: false
 
 The RAK12004 is a gas sensor module, part of the RAKWireless WisBlock Sensor series. The sensor used is the MQ-2 from Zhengzhou Winsen Electronics.
 
-### Features 
+### Features
 
 * MQ-2 gas sensor
 * Sensitivity to LPG, butane, propane, methane, alcohol, hydrogen, smoke, and other flammable steam
@@ -56,7 +56,7 @@ The hardware specification is categorized into five (5) parts. It shows the chip
 
 #### Pin Definition
 
-The RAK12004 WisBlock MQ2 Gas Sensor Module comprises a standard 40-pin WisConnector. The WisConnector allows the RAK12004 module to mounted to a WisBlock Base Board. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
+The RAK12004 WisBlock MQ2 Gas Sensor Module comprises a standard 40-pin WisConnector. The WisConnector allows the RAK12004 module to mounted to a WisBlock Base Board. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
 
 :::tip 📝 NOTE:
@@ -105,10 +105,10 @@ Figure 3 shows the dimensions and the mechanic drawing of the RAK12004 module.
 
 ##### Power Supply Circuit
 
-Figure 5 shows RAK12004 step-up power supply circuit. 
+Figure 5 shows RAK12004 step-up power supply circuit.
 
-* **VBAT** Battery voltage (max voltage is 4.2&nbsp;V) 
-* **EN** Power enable pin (active high). This pin is connected to **IO6** of WisBlock Core. 
+* **VBAT** Battery voltage (max voltage is 4.2&nbsp;V)
+* **EN** Power enable pin (active high). This pin is connected to **IO6** of WisBlock Core.
 
 <rk-img
   src="/assets/images/wisblock/rak12004/datasheet/power-supply.png"
@@ -168,9 +168,9 @@ RAK12004 has an additional connector to provide an extra interface to the module
 Figure 10 shows 40-pin WisConnector pinout.
 
 * **VBAT** battery voltage
-* **I2C1_SDA** and **I2C1_SCL** are I2C related pins 
-* **EN** is power chip enable pin 
-* **ALERT** is analog-to-digital converter alert pin 
+* **I2C1_SDA** and **I2C1_SCL** are I2C related pins
+* **EN** is power chip enable pin
+* **ALERT** is analog-to-digital converter alert pin
 
 <rk-img
   src="/assets/images/wisblock/rak12004/datasheet/wisconnector.png"

@@ -1,6 +1,6 @@
 ---
 rak_desc: RAK12039 is a WisBlock Sensor Module that extends the WisBlock system with Particle Matter sensing. It is based on PMSA003I digital particle concentration sensor, which obtains the number of suspended particles in the air.
-rak_img: /assets/images/wisblock/rak12039/overview/RAK12039_buy.png
+rak_img: /assets/images/wisblock/rak12039/RAK12039.png
 tags:
   - datasheet
   - wisblock
@@ -17,7 +17,7 @@ next: false
 
 The RAK12039 is a Particle Matter Sensor module that is part of the RAKWireless WisBlock Sensor series. It is based on PMSA003I digital particle concentration sensor, which obtains the number of suspended particles in the air. It is interfaced via I2C bus and allows you to capture standard PM1.0, PM2.5, and PM10 values, as well as, a number of particles in micrometer on a 0.1&nbsp;L particle standard volume.
 
-### Features 
+### Features
 
   * Minimum distinguishable particle diameter: **0.3 micrometer**
   * Particle range of measurement: **0.3~1.0, 1.0~2.5, 2.5~10 Micrometer（μm)**
@@ -71,7 +71,7 @@ The hardware specification is categorized into five (5) parts. It shows the chip
 
 #### Pin Definition
 
-The RAK12039 WisBlock Particle Matter Sensor Module comprises a standard 40-pin WisConnector. The WisConnector allows the RAK12039 module to be mounted to a WisBlock Base Board. The pin order of the connector and the pinout definition is shown in **Figure 4**. 
+The RAK12039 WisBlock Particle Matter Sensor Module comprises a standard 40-pin WisConnector. The WisConnector allows the RAK12039 module to be mounted to a WisBlock Base Board. The pin order of the connector and the pinout definition is shown in **Figure 4**.
 
 
 :::tip 📝 NOTE:

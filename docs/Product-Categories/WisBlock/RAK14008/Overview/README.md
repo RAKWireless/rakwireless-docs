@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak14008/overview/RAK14008_home.png
+rak_img: /assets/images/wisblock/rak14008/RAK14008.png
 rak_desc: RAK14008 is a WisBlock sensor module that extends the WisBlock system. It is based on PAJ7620U2, which integrates gesture recognition function with a general I2C interface into a single chip.
 rak_grp: [wisblock, wissensor]
 next: ../Quickstart/
@@ -56,6 +56,6 @@ RAK14008 is a gesture sensor module based on PAJ7620U2. It is designed for gestu
 
 To use a **RAK14008**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK14008** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

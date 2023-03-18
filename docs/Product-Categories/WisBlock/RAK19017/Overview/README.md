@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak19017/overview/RAK19017_home.png
+rak_img: /assets/images/wisblock/rak19017/RAK19017.png
 rak_desc: RAK19017 is a WisBlock POE Slot Module. It comprises an Ethernet connector and a reset button that can connect with the WisBlock Base board via 40-pin power slot connector.
 rak_grp: [wisblock, wisbase]
 next: ../Datasheet/
@@ -28,7 +28,7 @@ RAK19017 WisBlock POE module is a power board that is designed based on Ag99005 
 ## Product Features
 
 - POE Power Module (power supply only, no Ethernet connection capability)
-- 36&nbsp;V to 57&nbsp;V Input voltage range 
+- 36&nbsp;V to 57&nbsp;V Input voltage range
 - Short-circuit protection and Over temperature protection
 - Compact size, the minimum size is: 30 x 50&nbsp;mm
 
@@ -36,7 +36,7 @@ RAK19017 WisBlock POE module is a power board that is designed based on Ag99005 
 
 To use a **RAK19017**, you need at least a **WisBlock Base** Board with Power Slot to plug the module in. Furthermore, you need a **WisBlock Core** module to control the two user LEDs.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 - Make sure to fix the module with the screws to ensure a proper function.
 - Ensure that the POE voltage is within specs.
 :::

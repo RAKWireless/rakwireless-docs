@@ -4,8 +4,8 @@ next: false
 tags:
   - RAKDAP1
   - quickstart
-rak_desc: Contains instructions and tutorials in using your RAKDAP1. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. 
-rak_img: /assets/images/accessories/rakdap1-flash-and-debug-tool/RAKDAP1_home.png
+rak_desc: Contains instructions and tutorials in using your RAKDAP1. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
+rak_img: /assets/images/accessories/rakdap1-flash-and-debug-tool/RAKDAP1.png
 
 ---
 
@@ -21,17 +21,17 @@ The following are the supported tools:
 2. **IAR Workbench**
 3. **Keil MDK**
 
-To use it, the open-source pyOCD Python SW is required. If you have already installed Python 3 on your computer, you can proceed to [Installation of pyOCD](#installation-of-pyocd). 
+To use it, the open-source pyOCD Python SW is required. If you have already installed Python 3 on your computer, you can proceed to [Installation of pyOCD](#installation-of-pyocd).
 
 ### Python 3 Installation
 
-Before anything else, it requires you to install Python 3 on your computer. Download the latest Python 3 from the official Python website. Go to their [Python Downloads](https://www.python.org/downloads/) and choose an installer depending on your system. 
+Before anything else, it requires you to install Python 3 on your computer. Download the latest Python 3 from the official Python website. Go to their [Python Downloads](https://www.python.org/downloads/) and choose an installer depending on your system.
 
 
-#### Windows 
+#### Windows
 
-1. Choose the python installer for Windows. 
-2. Once downloaded, start the installation process. 
+1. Choose the python installer for Windows.
+2. Once downloaded, start the installation process.
 3. Make sure to check the **`Add python.exe to PATH`**. Otherwise, you will have to add it manually later.
 
 
@@ -50,7 +50,7 @@ Before anything else, it requires you to install Python 3 on your computer. Down
   caption="Disable the Path Limit"
 />
 
-5. After the installation has finished, open a command prompt window and check the versions of **Python** and **pip3** using the following command listed below. 
+5. After the installation has finished, open a command prompt window and check the versions of **Python** and **pip3** using the following command listed below.
 
 
 ```
@@ -67,8 +67,8 @@ pip --version
   caption="Checking the Python and pip3 versions"
 />
 
-:::tip 📝 NOTE  
-pip3 is required to install additional Python packages. 
+:::tip 📝 NOTE
+pip3 is required to install additional Python packages.
 :::
 
 #### MacOS
@@ -77,13 +77,13 @@ Open the terminal on your Mac machine and type the following commands:
 
 ```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```   
+```
 
 ```
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 ```
 
-If you have OS X 10.12 (Sierra) or older use the following command instead:   
+If you have OS X 10.12 (Sierra) or older use the following command instead:
 ```
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 ```
@@ -110,7 +110,7 @@ sudo apt-get install python3
 
 ### pyOCD Installation
 
-Next step is to install pyOCD which is the SW tool required to flash bootloaders and application SW. 
+Next step is to install pyOCD which is the SW tool required to flash bootloaders and application SW.
 
 1. To start the installation, open the command prompt and use the following command:
 
@@ -136,7 +136,7 @@ pyocd --version
   caption="pyOCD version"
 />
 
-### Support Packages Installation 
+### Support Packages Installation
 
 To flash and debug MCU, DAPLink needs support packages. These support packages are MDK files. For more details, you can refer to the supporting list of [MDK](https://www.keil.com/dd2/Pack/).
 
@@ -153,84 +153,84 @@ But before installing, check the list first to know the required package for you
 <tbody>
     <tr>
       <td>RAK3172 Module</td>
-      <td>stm32wle5</td>   
+      <td>stm32wle5</td>
     </tr>
     <tr>
       <td>RAK811 Module</td>
-      <td>stm32l151cb</td>   
+      <td>stm32l151cb</td>
     </tr>
     <tr>
       <td>RAK8710</td>
-      <td>stm32l151cb</td>   
+      <td>stm32l151cb</td>
     </tr>
     <tr>
       <td>RAK4200 Module</td>
-      <td>stm32l071kb</td>   
+      <td>stm32l071kb</td>
     </tr>
     <tr>
       <td>Products using RAK4200</td>
-      <td>stm32l071kb</td>   
+      <td>stm32l071kb</td>
     </tr>
     <tr>
       <td>RAK4270 Module</td>
-      <td>stm32l071kb</td>   
+      <td>stm32l071kb</td>
     </tr>
     <tr>
       <td>Products using RAK4270</td>
-      <td>stm32l071kb</td>   
+      <td>stm32l071kb</td>
     </tr>
     <tr>
       <td>RAK7201/7202/7203</td>
-      <td>stm32l071kb</td>   
+      <td>stm32l071kb</td>
     </tr>
     <tr>
       <td>RAK4600 Module</td>
-      <td>nrf52</td>   
+      <td>nrf52</td>
     </tr>
     <tr>
       <td>RAK4600 Evaluation Board</td>
-      <td>nrf52</td>   
+      <td>nrf52</td>
     </tr>
       <tr>
       <td>RAK8212 Board</td>
-      <td>nrf52</td>   
+      <td>nrf52</td>
     </tr>
     <tr>
       <td>RAK813 Module</td>
-      <td>nrf52</td>   
+      <td>nrf52</td>
     </tr>
     <tr>
       <td>RAK5010</td>
-      <td>nrf52840</td>   
+      <td>nrf52840</td>
     </tr>
     <tr>
       <td>RAK4630</td>
-      <td>nrf52840</td>   
+      <td>nrf52840</td>
     </tr>
     <tr>
       <td>RAK4631</td>
-      <td>nrf52840</td>   
+      <td>nrf52840</td>
     </tr>
     <tr>
       <td>RAK3401</td>
-      <td>nrf52840</td>   
+      <td>nrf52840</td>
     </tr>
     <tr>
       <td>RAK4260 Evaluation Board</td>
-      <td>atsaml21j18a</td>   
+      <td>atsaml21j18a</td>
     </tr>
     <tr>
       <td>Products using RAK4260</td>
-      <td>atsaml21j18a</td>   
+      <td>atsaml21j18a</td>
     </tr>
     <tr>
       <td>RAK11720 and its variants</td>
-      <td>AMA3B1KK-KBR</td>   
+      <td>AMA3B1KK-KBR</td>
     </tr>
 </tbody>
 </table>
 
-To install the support package, use the following command:    
+To install the support package, use the following command:
 
 ```
 pyocd pack --i \<PACKAGE\>
@@ -299,15 +299,15 @@ Here is an overview on how to connect the SWD interface. If you cannot find your
   src="/assets/images/accessories/rakdap1-flash-and-debug-tool/rak4270.svg"
   width="40%"
   caption="RAK4270 Module Pinout"
-/>  
-  
-### RAK4260 Module  
-  
+/>
+
+### RAK4260 Module
+
 <rk-img
   src="/assets/images/accessories/rakdap1-flash-and-debug-tool/rak4260.png"
   width="60%"
   caption="RAK4260 Module Pinout"
-/>  
+/>
 
 ### RAK4260 Evaluation Board
 
@@ -340,10 +340,10 @@ Open the command prompt and change the folder where you have saved the bootloade
 pyocd flash -t \<PACKAGE\> \<FILENAME\>
 ```
 
-- Change **\<PACKAGE\>** to the support package from above list.     
+- Change **\<PACKAGE\>** to the support package from above list.
 - Change **\<FILENAME\>** to the filename you want to flash. The file should be in __.hex__ format.
 
-Here is an example to flash the bootloader to a RAK4631 WisBlock Core module: 
+Here is an example to flash the bootloader to a RAK4631 WisBlock Core module:
 
 ```
 pyocd flash -t nrf52840 RAK4631_latest_final.hex

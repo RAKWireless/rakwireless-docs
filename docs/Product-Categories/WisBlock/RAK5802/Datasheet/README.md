@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK5802 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak5802/overview/RAK5802_home.png
+rak_img: /assets/images/wisblock/rak5802/RAK5802.png
 tags:
   - datasheet
   - wisblock
@@ -15,9 +15,9 @@ next: false
 
 ### Description
 
-The RAK5802 WisBlock Interface module was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module. 
+The RAK5802 WisBlock Interface module was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module.
 
-The RAK5802 is an RS485 Modbus extension module that allows you to provide IoT connectivity to a new/existing solution with an RS485 interface. This module converts the RS485 signals into UART signals. These signals are collected by an MCU located inside of a WisBlock Core module for further data transmission. 
+The RAK5802 is an RS485 Modbus extension module that allows you to provide IoT connectivity to a new/existing solution with an RS485 interface. This module converts the RS485 signals into UART signals. These signals are collected by an MCU located inside of a WisBlock Core module for further data transmission.
 
 The RAK5802 module features one RS485 interface. Inside, a protection circuity is added to protect against ESD hazards. The RAK5802 module complies with the IEC61000-4-2 standard and can protect up to 18&nbsp;kV HBM ESD.
 
@@ -30,7 +30,7 @@ In addition, the RAK5802 supports one I2C interface, customers can use this I2C 
 * Compatible with multiple WisBlock Core modules, such as RAK4631.
 * Supports up to 16 RS485 nodes
 * Supports TX/RX signals automatic detection, no need to have DE signal for the RS485 chip.
-* Low power consumption mode. The module can be powered off by the WisBlock Core module for saving energy during idle periods. 
+* Low power consumption mode. The module can be powered off by the WisBlock Core module for saving energy during idle periods.
 * Reserved I2C expansion interface
 * In the field fast crimping terminals
 * Designed with 18&nbsp;kV ESD protection level
@@ -86,7 +86,7 @@ The pin definition of the sensor connector is described in the table below:
 
 #####  WisBlock Interface Connector
 
-**Figure 3** shows the pin order of the IO connector on the module. Through this connector, the RAK5802 module is attached to the WisBoard baseboard. 
+**Figure 3** shows the pin order of the IO connector on the module. Through this connector, the RAK5802 module is attached to the WisBoard baseboard.
 
 <rk-img
   src="/assets/images/wisblock/rak5802/datasheet/wisconnector-pins.png"
@@ -94,7 +94,7 @@ The pin definition of the sensor connector is described in the table below:
   caption="RAK5802 internal WisBlock Interface connector."
 />
 
-The table below shows the functionalities of each pin of the WisBlock Interface connector: 
+The table below shows the functionalities of each pin of the WisBlock Interface connector:
 
 | **Pin number** | **Description**      | **Pin number** | **Description**  |
 | -------------- | -------------------- | -------------- | ---------------- |
@@ -166,7 +166,7 @@ The table below shows the functionalities of each pin of the WisBlock Interface 
 
 ## RAK5802 and WisBlock Compatibility
 
-In the ecosystem of WisBlock, the philosophy is to allow you to combine a WisBlock module of one category with a WisBlock module of other categories. This is true in most cases, but it is important to review the compatibility matrix when designing a customized solution. 
+In the ecosystem of WisBlock, the philosophy is to allow you to combine a WisBlock module of one category with a WisBlock module of other categories. This is true in most cases, but it is important to review the compatibility matrix when designing a customized solution.
 
 |                      | **Compatible Wisblock Module** | **Description**                                                        |
 | -------------------- | ------------------------------ | ---------------------------------------------------------------------- |

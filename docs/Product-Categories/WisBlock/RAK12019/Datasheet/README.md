@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12019 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12019/overview/RAK12019_home.png
+rak_img: /assets/images/wisblock/rak12019/RAK12019.png
 tags:
   - datasheet
   - wisblock
@@ -33,12 +33,12 @@ The RAK12019 is an Ambient Light sensor (ALS) or Ultraviolet Light Sensor (UVS),
  - Operating temperature ranges: -40 to +85&nbsp;ºC
  - Built-in temperature compensation circuit
  - Programmable interrupt function for ALS, UVS with upper and lower thresholds
- - RoHS and Halogen-free compliant 
+ - RoHS and Halogen-free compliant
  - Module Size: 10&nbsp;mm x 10&nbsp;mm
 
 ## Specifications
 
-### Overview 
+### Overview
 
 #### Mounting
 
@@ -80,7 +80,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 | SLOT C | SLOT D | SLOT E | SLOT F |
 | ------ | ------ | ------ | ------ |
 | WB_IO3 | WB_IO5 | WB_IO4 | WB_IO6 |
-  
+
 
 #### Electrical Characteristics
 

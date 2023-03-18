@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK19011 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak19011/overview/rak19011_home.png
+rak_img: /assets/images/wisblock/rak19011/RAK19011.png
 tags:
   - datasheet
   - wisblock
@@ -32,7 +32,7 @@ If you can't find a module that fits your IoT requirements, use the standard con
     * All key input-output pins of WisBlock Core are exposed via headers
     * Access to various communication bus via headers: I2C, SPI, UART, and USB
     * One user-defined push button switch
-* **Size**    
+* **Size**
     * 60 x 67&nbsp;mm
 
 ## Specifications
@@ -67,7 +67,7 @@ RAK19011 WisBlock Dual IO Base Board with Power Slot provides the following inte
 
 * 1 WisBlock Core module
 * 1 WisBlock Power module
-* 2 IO slots for WisBlock modules 
+* 2 IO slots for WisBlock modules
 * 6 Sensor slots A-F for WisBlock modules
 * 2 Headers for complete access to BOOT, I2C, SPI, UART, USB, and IO pins
 * 1 User-defined button
@@ -446,7 +446,7 @@ As for the following table, it shows the pin name and description of the WisBloc
 
 ##### Absolute Maximum Ratings
 
-The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device. 
+The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device.
 
 :::warning ⚠️WARNING
 1. If the stress rating goes above what is listed, it may cause permanent damage to the device.
@@ -476,6 +476,10 @@ The RAK19011 is designed for **low-power IoT products**. Its power supply uses a
 #### Mechanical Characteristics
 
 ##### Board Dimensions
+
+:::tip 📝 NOTE
+- You may also refer and download the [M1.2 Stand-off fastener/inserts datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/M1.2_Press-Fit_Standoff_Datasheet.zip).
+:::
 
 **Figure 10** shows the detailed mechanical dimensions of RAK19011.
 

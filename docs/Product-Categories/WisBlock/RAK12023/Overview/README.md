@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12023/overview/RAK12023_home.png
+rak_img: /assets/images/wisblock/rak12023/RAK12023.png
 rak_desc: RAK12023 is a WisBlock soil connector module where you can connect the separate sensor PCB, which is the RAK12035 Soil Moisture sensor.
 rak_grp: [wisblock, wissensor]
 next: ../Quickstart/
@@ -43,6 +43,6 @@ RAK12023 is a soil moisture connector module. It has one (1) standard WisBlock I
 
 To use a **RAK12023**, you need to connect at least one **RAK12035** Soil Moisture Sensor and a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12023** and **RAK12035**. Furthermore, you need a **WisBlock Core** module to use the connector.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

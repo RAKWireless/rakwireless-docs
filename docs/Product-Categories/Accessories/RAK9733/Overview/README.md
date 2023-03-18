@@ -1,11 +1,11 @@
 ---
-rak_img: /assets/images/accessories/rak9733/overview/rak9733.png
+rak_img: /assets/images/accessories/rak9733/rak9733.png
 rak_desc: The Pulsar cable is a high-grade cable, suitable for all gateways from the WisGate Developer series and the RAK Hotspot.
 rak_grp: [accessories, antennas]
-rak_model: RAK9733 
+rak_model: RAK9733
 prev: ../../
 next: ../Datasheet/
-tags: 
+tags:
     - RAK9733
 ---
 

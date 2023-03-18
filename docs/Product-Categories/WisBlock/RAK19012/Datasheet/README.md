@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK19012 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak19012/overview/RAK19012_home.png
+rak_img: /assets/images/wisblock/rak19012/RAK19012.png
 tags:
   - datasheet
   - wisblock
@@ -24,7 +24,7 @@ RAK19012 WisBlock USB LiPo Solar Power Slot Module is a power board that compris
 - Compatible with LiPo rechargeable battery
 - Solar panel connector for battery charging
 - On-board battery charger chip
-- LED for charging status and user-configurable LEDs 
+- LED for charging status and user-configurable LEDs
 - Module size: 30 X 20&nbsp;mm
 
 ## Specifications
@@ -64,7 +64,7 @@ The hardware specification is categorized into six parts. It discusses the inter
 RAK19012 WisBlock LiPo Solar Power Slot Module provides the following interfaces:
 
 * 1 WisBlock power module
-* 2 Pin battery interface 
+* 2 Pin battery interface
 * 2 Pin solar interface
 * 3 LEDs
 * 1 Reset button
@@ -99,11 +99,11 @@ The Reset Push Button, as shown in [**Figure 3**](/Product-Categories/WisBlock/R
 
 #### Pin Definition
 
-The RAK19012 module has a 40-pin WisConnector that is compatible with the WisBlock Power Slot. The pin order of the connector and the pinout definition is shown in **Figure 5**. 
+The RAK19012 module has a 40-pin WisConnector that is compatible with the WisBlock Power Slot. The pin order of the connector and the pinout definition is shown in **Figure 5**.
 
 ::: tip 📝 NOTE
 VBAT, 3V3, RESET, LED1, LED2, ADC_VBAT, and GND are connected to the WisIO connector.
-:::  
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak19012/datasheet/RAK19012-pinout.svg"
@@ -116,7 +116,7 @@ VBAT, 3V3, RESET, LED1, LED2, ADC_VBAT, and GND are connected to the WisIO conne
 
 ##### Absolute Maximum Ratings
 
-The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device. 
+The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device.
 
 :::warning ⚠️WARNING
 1. If the stress rating goes above what is listed, it may cause permanent damage to the device.
@@ -131,7 +131,7 @@ The Absolute Maximum Ratings of the device are shown in the table below. The str
 
 ##### Battery Specification
 
-The RAK19012 USB LiPo Solar Power Slot Module can be powered by a battery, connected to the J4 connector. The nominal operating voltage of the battery should be within the range shown in the following table.     
+The RAK19012 USB LiPo Solar Power Slot Module can be powered by a battery, connected to the J4 connector. The nominal operating voltage of the battery should be within the range shown in the following table.
 
 | **Minimum** | **Typical** | **Maximum** | **Unit** |
 | ----------- | ----------- | ----------- | -------- |
@@ -148,7 +148,7 @@ A suitable Li-Ion battery should have the following parameters as shown in the t
 
 ::: tip 📝 NOTE
 When using a solar panel, you can't use a non-rechargeable battery.
-:::  
+:::
 
 #### Mechanical Characteristic
 

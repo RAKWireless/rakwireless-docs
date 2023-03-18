@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK13101 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak13101/overview/RAK13101_home.png
+rak_img: /assets/images/wisblock/rak13101/RAK13101.png
 tags:
   - datasheet
   - wisblock
@@ -54,7 +54,7 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 #### Pin Definition
 
-The RAK13101 WisBlock GSM/GPRS module comprises a standard WisBlock IO slot connector. The WisBlock connector allows the RAK13101 module to be mounted on a WisBlock baseboard with IO slot, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
+The RAK13101 WisBlock GSM/GPRS module comprises a standard WisBlock IO slot connector. The WisBlock connector allows the RAK13101 module to be mounted on a WisBlock baseboard with IO slot, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisblock/rak13101/datasheet/pin_definition.svg"
@@ -65,7 +65,7 @@ The RAK13101 WisBlock GSM/GPRS module comprises a standard WisBlock IO slot conn
 ::: tip 📝 NOTE
 - RAK13101 WisBlock IO slot connector utilizes the **UART** related pins, **PWRKEY** via WB_IO5, **VBAT**, **3V3**, and **GND**.
 
-- **VBAT** is the battery voltage input with max voltage 4.2&nbsp;V. During GPRS data and GSM dial mode, the peak current is 1170&nbsp;mA and 769&nbsp;mA, respectively, which exceeds the USB port supply current. That is why you must use a dedicated battery. 
+- **VBAT** is the battery voltage input with max voltage 4.2&nbsp;V. During GPRS data and GSM dial mode, the peak current is 1170&nbsp;mA and 769&nbsp;mA, respectively, which exceeds the USB port supply current. That is why you must use a dedicated battery.
 :::
 
 #### Electrical Characteristics
@@ -114,7 +114,7 @@ The RAK13101 WisBlock GSM/GPRS module comprises a standard WisBlock IO slot conn
 
 ##### Power Supply
 
-The Quectel MC20CE module's main power supply comes from **VBAT**, which is a battery voltage connected to the WisBlock Base board. **GNSS_VCC** is the GNSS section supply voltage and is turned on or off via **GNSS_VCC_EN**, which is connected to MC20CE. The power supply of the GNSS part is controlled via the AT command `AT+QGNSSC`. 
+The Quectel MC20CE module's main power supply comes from **VBAT**, which is a battery voltage connected to the WisBlock Base board. **GNSS_VCC** is the GNSS section supply voltage and is turned on or off via **GNSS_VCC_EN**, which is connected to MC20CE. The power supply of the GNSS part is controlled via the AT command `AT+QGNSSC`.
 
 <rk-img
   src="/assets/images/wisblock/rak13101/datasheet/power_supply.png"
@@ -122,7 +122,7 @@ The Quectel MC20CE module's main power supply comes from **VBAT**, which is a ba
   caption="RAK13101 Power Supply"
 />
 
-##### GSM and GNSS 
+##### GSM and GNSS
 
 **J3** is GSM antenna connector and **J2** is GNSS antenna connector.
 

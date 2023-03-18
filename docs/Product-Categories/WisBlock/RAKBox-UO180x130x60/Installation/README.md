@@ -7,7 +7,7 @@ tags:
     - Enclosure
     - WisBlock
 rak_desc: In this guide, the process of assembling and mounting your RAKBox-UO180x130x60 will be shown step by step. Strict adherence to the steps guarantees a secured and durable casing.
-rak_img: /assets/images/wisblock/rakbox-uo180x130x60/overview/uo_home.png
+rak_img: /assets/images/wisblock/rakbox-uo180x130x60/uo_home.png
 
 ---
 # Installation Guide
@@ -195,14 +195,14 @@ The steel strips **ONLY** support 60-85&nbsp;mm diameter of the pole.
 3. Lastly, follow the steps below, as also shown in **Figure 16**:
 
 - **Step 1**: Use a Φ5&nbsp;mm drill head to drill holes in the wall. Drill at least 55-60&nbsp;mm in depth.
-- **Step 2**: Plug the screw anchors into the drilled holes. You can use a hammer to plug it in. It helps the screws to have a secure fit on the wall. 
+- **Step 2**: Plug the screw anchors into the drilled holes. You can use a hammer to plug it in. It helps the screws to have a secure fit on the wall.
 - **Step 3**: Fix the WisBlock Unify Enclosure on the wall using two (2) pieces of 35&nbsp;mm ST3.5 tapping screws.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo180x130x60/installation/wall-enclosure.png"
   width="40%"
   caption="Fixing the enclosure on the wall"
-/>  
+/>
 
 
 ### Belt Clip Mount (Mark E)
@@ -318,7 +318,7 @@ Confirm the number of magnets according to the weight of the device. The medium 
   caption="Fixing the magnet mount on the enclosure"
 />
 
-- The magnet should be ordered separately. Consult before placing an order. 
+- The magnet should be ordered separately. Consult before placing an order.
 
 |  No.  |  Diameter  | Thickness | Material |    Adsorption    |
 | :---: | :--------: | :-------: | :------: | :--------------: |

@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12022 WisBlock PT100 Module to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12022/overview/RAK12022.png
+rak_img: /assets/images/wisblock/rak12022/RAK12022.png
 tags:
   - datasheet
   - wisblock

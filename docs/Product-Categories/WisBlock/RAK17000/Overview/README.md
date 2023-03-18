@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak17000/overview/RAK17000_home.png
+rak_img: /assets/images/wisblock/rak17000/RAK17000.png
 rak_desc: RAK17000 is a WisBlock Motor Control Module that easily drives one stepper motor or two DC motors.
 rak_grp: [wisblock, wismotor]
 prev: ../../
@@ -23,7 +23,7 @@ Thank you for choosing **RAK17000 WisBlock Motor Control Module** in your awesom
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 
-**Examples**: 
+**Examples**:
 
 For WisBlock Core RAK4630:
 
@@ -49,7 +49,7 @@ The RAK17000 is a DC motor driver module. It can be mounted to the IO Slot of th
 - Drive two DC motors or one stepper motor
 - Wide power supply voltage range: 2.7 to 10.8&nbsp;V
 - Motor power supply can be from an external source or from the WisBlock Base battery
-- Output current control 
+- Output current control
 - Selection of power source can be done via 2.54&nbsp;mm 2-pin jumper
 - Chipset: Texas Instruments DRV8833
 - Module size: 25X35&nbsp;mm
@@ -58,6 +58,6 @@ The RAK17000 is a DC motor driver module. It can be mounted to the IO Slot of th
 
 To use a **RAK17000**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides the power to the **RAK17000** module. Furthermore, you need a **WisBlock Core** module to control the module.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function. 
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

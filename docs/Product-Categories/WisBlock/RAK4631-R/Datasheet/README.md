@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK4631-R to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak4631-r/overview/RAK4631-R_home.png
+rak_img: /assets/images/wisblock/rak4631-r/RAK4631-R.png
 prev: ../DFU/
 next: false
 tags:
@@ -9,11 +9,11 @@ tags:
   - RAK4631-R
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_CE_Certification.zip]
-  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_FCC_Certification.zip] 
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_FCC_Certification.zip]
   - [KCC, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_KC_Certification.pdf]
-  - [RCM, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RCM_Certification.pdf] 
-  - [REACH, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_REACH_Report.pdf] 
-  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_RoHS_Report.pdf] 
+  - [RCM, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RCM_Certification.pdf]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_REACH_Report.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_RoHS_Report.pdf]
 ---
 
 # RAK4631-R WisBlock LPWAN Module Datasheet
@@ -87,10 +87,10 @@ The hardware specification is categorized into three parts. It covers the RF, el
 
 #### RF Characteristics
 
-The RAK4631-R module supports the LoRaWAN bands shown in the table below. When buying a RAK4631-R module, pay attention to specifying the correct core module RAK4630 H/L for your region, in which H stands for high-frequency regions and L for low-frequency regions.  
+The RAK4631-R module supports the LoRaWAN bands shown in the table below. When buying a RAK4631-R module, pay attention to specifying the correct core module RAK4630 H/L for your region, in which H stands for high-frequency regions and L for low-frequency regions.
 
 :::tip 📝 NOTE
-Detailed information about the RAK4631-R BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/). 
+Detailed information about the RAK4631-R BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
 :::
 
 | Region        | Frequency (MHz)  | Core Module |
@@ -160,11 +160,11 @@ Detailed information about the RAK4631-R BLE and LoRa antenna can be found on th
 
 ##### Setup of the SX1262
 
-Information to write custom firmware for the RAK4630.  This shows the internal connection between the RAK4630 and required information when initializing the SX1262 LoRa Transceiver.      
+Information to write custom firmware for the RAK4630.  This shows the internal connection between the RAK4630 and required information when initializing the SX1262 LoRa Transceiver.
 
 | nRF52840 GPIO	| SX1262 pin | function                          |
 | ------------- | ---------- | --------------------------------- |
-| P1.10         | NSS        | SPI NSS                           | 
+| P1.10         | NSS        | SPI NSS                           |
 | P1.11         | SCK        | SPI CLK                           |
 | P1.12         | MOSI       | SPI MOSI                          |
 | P1.13         | MISO       | SPI MISO                          |

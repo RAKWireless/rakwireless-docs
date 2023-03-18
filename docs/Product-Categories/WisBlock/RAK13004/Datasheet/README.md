@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK13004 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak13004/overview/rak13004_home.png
+rak_img: /assets/images/wisblock/rak13004/RAK13004.png
 tags:
   - datasheet
   - wisblock
@@ -38,11 +38,11 @@ The RAK13004 is a PWM expander module that can be mounted to the IO slot of WisB
 
 ## Specifications
 
-### Overview 
+### Overview
 
-#### Mounting 
+#### Mounting
 
-The RAK13004 module can be mounted to the IO slots of the WisBlock Base board. Figure 1 shows the mounting mechanism of the RAK13004 on a WisBlock Base board. 
+The RAK13004 module can be mounted to the IO slots of the WisBlock Base board. Figure 1 shows the mounting mechanism of the RAK13004 on a WisBlock Base board.
 
 <rk-img
   src="/assets/images/wisblock/rak13004/datasheet/image-20210312115347019.png"
@@ -56,7 +56,7 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 #### Chipset
 
-The RAK13004 PWM Expander Module uses PCA9685 from NXP Semiconductors. 
+The RAK13004 PWM Expander Module uses PCA9685 from NXP Semiconductors.
 
 | Vendor             | Part Number |
 | ------------------ | ----------- |
@@ -72,7 +72,7 @@ Figure 2 shows PCA9685 device addressing. Default A5, A4, and A3 are connected t
 
 #### Pin Definition
 
-The RAK13004 WisBlock PWM Expander Module comprises a standard WisConnector. The WisConnector allows the RAK13004 module to be mounted on a WisBlock Base board. The pin order of the connector and the pinout definition is shown in Figure 3. 
+The RAK13004 WisBlock PWM Expander Module comprises a standard WisConnector. The WisConnector allows the RAK13004 module to be mounted on a WisBlock Base board. The pin order of the connector and the pinout definition is shown in Figure 3.
 
 :::tip 📝 NOTE:
 - **I2C** related pins, **OE**, **3V3_S**, and **GND** are connected to this module.

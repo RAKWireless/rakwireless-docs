@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK19010 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak19010/overview/RAK19010_home.png
+rak_img: /assets/images/wisblock/rak19010/RAK19010.png
 prev: ../Quickstart/
 next: false
 tags:
@@ -20,7 +20,7 @@ It has one slot reserved for the power slot module, one for the core module, one
 
 WisBlock modules are connected to the RAK19010 WisBlock Base board via high-speed board-to-board connectors. They provide secure and reliable interconnection to ensure the signal integrity of each data bus. A set of screws is used to fix the modules, making it reliable even in an environment with lots of vibrations.
 
-You can also use a [RAK19005 WisBlock Sensor Extension Cable](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005) or [RAK19008 WisBlock IO Extension Cable](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008) to position the WisBlock modules apart from the WisBlock Base board or in any part of your case. 
+You can also use a [RAK19005 WisBlock Sensor Extension Cable](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005) or [RAK19008 WisBlock IO Extension Cable](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008) to position the WisBlock modules apart from the WisBlock Base board or in any part of your case.
 
 ### Features
 
@@ -33,13 +33,13 @@ You can also use a [RAK19005 WisBlock Sensor Extension Cable](https://store.rakw
   * RAK19013 - LiPo and Solar
   * RAK19015 - Battery
   * RAK19016 - 5&nbsp;V to 24&nbsp;V voltage input
-- **Module Slots**     
+- **Module Slots**
   * 1 WisBlock Core module
   * 1 WisBlock power module
   * 1 WisBlock module compatible with IO slot
   * 4 WisBlock modules compatible with slots A-D
   * Pin headers accessible pins for BOOT, GPIO, ADC, I2C, and UART interfaces
-- **Size**    
+- **Size**
     * **RAK19010** has a size of only 30 x 60&nbsp;mm, which lets you create solutions that fit into the smallest housings.
 
 If you can't find a WisBlock module that fits your IoT requirements, use the standard connectors of WisBlock to develop your specific function module. WisBlock supports open-source hardware architecture and you can find tutorials showing how to create your own [Awesome WisBlock](https://github.com/RAKWireless/Awesome-WisBlock) module.
@@ -61,7 +61,7 @@ There are seven (7) slots on RAK19010 WisBlock Base Board with Power Slot:
 - **CPU SLOT**: This slot is reserved for the WisBlock Core module which has the main MCU.
 - **Power SLOT**: This slot is required to provide power to WisBlock Core and modules.
 - **IO SLOT**: This slot is used for IO extension modules.
-- **Four Sensor Slots**: The sensor slots A to D are used to connect with the I2C bus. Slots A and D can be used for GNSS modules, too. 
+- **Four Sensor Slots**: The sensor slots A to D are used to connect with the I2C bus. Slots A and D can be used for GNSS modules, too.
 
 Also, there are pin headers 2.54&nbsp;mm pitch for the extension interface that connects to BOOT, I2C, UART, ADC, and GPIO pins.
 
@@ -145,7 +145,7 @@ On the RAK19010 Base Board, there are three 2.54&nbsp;mm pitch headers for IO ex
 | 3       | SCL          | I2C1 clock      |
 | 4       | SDA          | I2C2 data       |
 
-:::tip 📝 NOTE BOOT pin 
+:::tip 📝 NOTE BOOT pin
 BOOT pin is used on startup configuration or sequence of the WisBlock Core connected to it. It is commonly used for uploading the bootloader and/or application firmware. The requirements of the state of the BOOT pin depend on the specific model of the WisBlock Core used.
 :::
 
@@ -186,7 +186,7 @@ The table below shows the pinout of the 40-pin WisBlock core connector:
 | IO5                                | 37             | 38             | IO6                                |
 | GND                                | 39             | 40             | GND                                |
 
-<br> 
+<br>
 
 As for the following table, it shows the definition of each pin of the WisBlock Core connector:
 
@@ -462,7 +462,7 @@ As for the following table, it shows the pin name and description of the WisBloc
 
 ##### Absolute Maximum Ratings
 
-The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device. 
+The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device.
 
 :::warning ⚠️WARNING
 1. If the stress rating goes above what is listed, it may cause permanent damage to the device.
@@ -482,6 +482,10 @@ The RAK19010, like any electronic equipment, is sensitive to **electrostatic dis
 #### Mechanical Characteristics
 
 ##### Board Dimensions
+
+:::tip 📝 NOTE
+- You may also refer and download the [M1.2 Stand-off fastener/inserts datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/M1.2_Press-Fit_Standoff_Datasheet.zip).
+:::
 
 **Figure 11** shows the detailed mechanical dimensions of the RAK19010 Board.
 

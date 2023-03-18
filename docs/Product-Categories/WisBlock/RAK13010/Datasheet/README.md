@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK13010 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak13010/overview/RAK13010_home.png
+rak_img: /assets/images/wisblock/rak13010/RAK13010.png
 tags:
   - datasheet
   - wisblock
@@ -15,7 +15,7 @@ next: false
 
 ### Description
 
-RAK13010 is a WisBlock Interface module that extends the WisBlock system. The SDI-12 (Serial Digital Interface at 1200 baud rate) module is an asynchronous serial communications protocol for intelligent sensors that monitor environment data. It consists of 3 wires: **SDI-12_12V**, **SDI-12_DATA**, and **GND**. 
+RAK13010 is a WisBlock Interface module that extends the WisBlock system. The SDI-12 (Serial Digital Interface at 1200 baud rate) module is an asynchronous serial communications protocol for intelligent sensors that monitor environment data. It consists of 3 wires: **SDI-12_12V**, **SDI-12_DATA**, and **GND**.
 
 The SDI-12 bus is a bidirectional interface for the conversion of commands and data into UART to SDI-12 and vice versa using a 3.3&nbsp;V microcontroller. The data logger requests data from the intelligent sensors, each identified with a unique address. In short, The data logger is the master, and the sensors are slave devices on the bus. The RAK13010 makes it easier for you to connect wires from multiple SDI-12 sensors into one set of terminals on a data logger.
 ### Features
@@ -68,7 +68,7 @@ The RAK13010 WisBlock module has a 40-pin WisConnector that is compatible with t
 ::: tip 📝 NOTE
 - Only **VBAT**, **3V3_S**, **IO2**, **RXD**, **TXD**, **OE**, and **GND** are connected to the WisBlock Connector.
 - **3V3_S** voltage output from the WisBlock Base that powers the RAK13010 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can disconnect the power of the RAK13010 module.
-:::  
+:::
 
 #### Electrical Characteristics
 
@@ -115,7 +115,7 @@ This section shows the maximum and minimum ratings of the RAK13010 module and it
 
 **For External 12 V Power Supply**
 
-- When you want to use an external 12&nbsp;V as the power supply for sensors, you need to install a jumper on pin 2 and pin 3 of J3. 
+- When you want to use an external 12&nbsp;V as the power supply for sensors, you need to install a jumper on pin 2 and pin 3 of J3.
 - Then connect the following:
     - 12&nbsp;V line of external 12&nbsp;V to pin 1 of J2;
     - GND line of external 12&nbsp;V to pin 4 of J2.
@@ -125,7 +125,7 @@ This section shows the maximum and minimum ratings of the RAK13010 module and it
 
 The signal level conversion circuit interfaces a 3.3&nbsp;V microcontroller with a 1200 baud UART to the SDI-12 bus. Q2 is a voltage translator, which translates the 5&nbsp;V signal from the SDI bus to 3.3&nbsp;V. U3 translates the 3.3&nbsp;V from the UART TXD line to 5&nbsp;V, and allows the microcontroller to place the line in the high impedance state when not transmitting, but de-asserting the OE line.
 
-**Figure 6** shows the timing diagram of the RAK13010 module. 
+**Figure 6** shows the timing diagram of the RAK13010 module.
 
 - **t0**: send data to the SDI-12 data bus
 - **t1**: receive data from the SDI-12 data bus

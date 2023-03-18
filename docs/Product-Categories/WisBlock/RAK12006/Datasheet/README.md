@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12006 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12006/overview/RAK12006_home.png
+rak_img: /assets/images/wisblock/rak12006/RAK12006.png
 tags:
   - datasheet
   - wisblock
@@ -19,9 +19,9 @@ The RAK12006 is a Pyroelectric Infrared Radial (PIR) module. It is designed to d
 
 ### Features
 
-- Digital signal processing  
-- Built-in filter, screen the interference by other frequency  
-- Schmitt Trigger Output REL  
+- Digital signal processing
+- Built-in filter, screen the interference by other frequency
+- Schmitt Trigger Output REL
 - 3.3&nbsp;V Power supply
 - Chipset: Senba Sensing Technology AM312
 - **Module size:** 15 X 25&nbsp;mm
@@ -52,7 +52,7 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 #### Pin Definition
 
-The RAK12006 module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
+The RAK12006 module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisblock/rak12006/datasheet/rak12006_pinout.svg"
@@ -66,7 +66,7 @@ The RAK12006 module has a 40-pin WisConnector that is compatible to the WisBlock
 - An optional **3V3_S** supply voltage can be used to turn ON or OFF the RAK12006 module through the IO2 pin. This can be helpful on low power application.
 
 - To disable the default **3V3** supply and use the alternative **3V3_S** supply source, the resistor jumpers R1 must be 0&nbsp;Ω and R2 must be NC (not connected).
-:::  
+:::
 
 #### Electrical Characteristics
 

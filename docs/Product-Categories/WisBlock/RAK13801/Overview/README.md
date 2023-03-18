@@ -1,6 +1,6 @@
 ---
 rak_desc: RAK13801 is a WisBlock IO that extends the WisBlock system based on Decawave's DW1000 module. This module uses a UWB (Ultra Wideband) Technology, a short-range wireless communication similar to Wi-Fi or Bluetooth, and it uses a frequency bandwidth above 1 GHz.
-rak_img: /assets/images/wisblock/rak13801/overview/RAK13801_home.png
+rak_img: /assets/images/wisblock/rak13801/RAK13801.png
 rak_grp: [wisblock, wiswireless]
 prev: ../../
 next: ../Datasheet/
@@ -38,7 +38,7 @@ RAK13801 is a WisBlock IO that extends the WisBlock system based on Decawave's D
     * Supports very high tag densities in RTLS
     * Low cost allows cost-effective implementation of solutions
     * Low power consumption reduces the need to replace batteries and lowers system lifetime costs
-    
+
 * **Size**
     * 35 x 25&nbsp;mm
 
@@ -46,6 +46,6 @@ RAK13801 is a WisBlock IO that extends the WisBlock system based on Decawave's D
 
 To use a **RAK13801**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides a power supply to the **RAK13801** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function. 
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

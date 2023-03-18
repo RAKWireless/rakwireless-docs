@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK18000 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak18000/overview/RAK18000_home.png
+rak_img: /assets/images/wisblock/rak18000/RAK18000.png
 tags:
   - datasheet
   - wisblock
@@ -27,24 +27,24 @@ The RAK18000 is a digital microphone module that is designed to detect sounds an
 
 ### Features
 
-* **Module Specifications**   
-   
+* **Module Specifications**
+
     - Voltage Supply: 3.3&nbsp;V
     - Current Consumption: 5&nbsp;µA to 650&nbsp;µA
     - Chipset: ST MP34DT06J
     - 64&nbsp;dB signal-to-noise ratio
-    - –26&nbsp;dBFS ± 1&nbsp;dB sensitivity 
-    - Stereo microphone 2 x MP34DT06J   
+    - –26&nbsp;dBFS ± 1&nbsp;dB sensitivity
+    - Stereo microphone 2 x MP34DT06J
     - Low power consumption
-  
-* **Size**    
-    * 25 x 15&nbsp;mm  
+
+* **Size**
+    * 25 x 15&nbsp;mm
 
 ## Specifications
 
-### Overview 
+### Overview
 
-#### Mounting 
+#### Mounting
 
 The RAK18000 WisBlock PDM Stereo Microphone Module can be mounted to the IO slot of the [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. **Figure 2** shows the mounting mechanism of the RAK18000 on a WisBlock Base module.
 
@@ -56,7 +56,7 @@ The RAK18000 WisBlock PDM Stereo Microphone Module can be mounted to the IO slot
 
 ### Hardware
 
-The hardware specification is categorized into five parts that cover the chipset and pinouts and the corresponding functions and diagrams of the board. It also presents the parameters and their standard values in terms of acoustic, electrical, and mechanical. 
+The hardware specification is categorized into five parts that cover the chipset and pinouts and the corresponding functions and diagrams of the board. It also presents the parameters and their standard values in terms of acoustic, electrical, and mechanical.
 
 #### Chipset
 | Vendor | Part number |
@@ -68,7 +68,7 @@ The hardware specification is categorized into five parts that cover the chipset
 The RAK18000 WisBlock PDM Stereo Microphone Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK18000 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 :::tip 📝 NOTE:
-**DMIC1**, **DMCLK**, **3V3**, and **GND** are connected to WisConnector.  
+**DMIC1**, **DMCLK**, **3V3**, and **GND** are connected to WisConnector.
 :::
 
 <rk-img
@@ -115,7 +115,7 @@ Figure 4 shows the dimensions and the mechanical drawing of the RAK18000 module.
 
 ##### WisConnector Connection
 
-Figure 6 shows the WisConnector connection and the digital microphone data line connected to **IO3** and the clock line connected to **IO4**. 
+Figure 6 shows the WisConnector connection and the digital microphone data line connected to **IO3** and the clock line connected to **IO4**.
 
 <rk-img
   src="/assets/images/wisblock/rak18000/datasheet/wisio-connection.png"

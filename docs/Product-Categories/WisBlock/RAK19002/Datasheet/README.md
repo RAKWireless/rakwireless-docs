@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK19002 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak19002/overview/RAK19002_home.png
+rak_img: /assets/images/wisblock/rak19002/RAK19002.png
 tags:
   - datasheet
   - wisblock
@@ -35,9 +35,9 @@ The RAK19002 is a step-up boost regulator module, part of the RAKwireless WisBlo
 
 ## Specifications
 
-### Overview 
+### Overview
 
-#### Mounting 
+#### Mounting
 
 The RAK19002 module can be mounted on the slots A, B, C or D of the WisBase board. **Figure 2** shows the mounting mechanism of the RAK19002 on a WisBase module, such as the RAK5005-O.
 
@@ -49,7 +49,7 @@ The RAK19002 module can be mounted on the slots A, B, C or D of the WisBase boar
 
 ### Hardware
 
-The hardware specification is categorized into five parts that cover the chipset and pinouts and the corresponding functions and diagrams of the board. It also presents the parameters and their standard values in terms of electrical and mechanical. 
+The hardware specification is categorized into five parts that cover the chipset and pinouts and the corresponding functions and diagrams of the board. It also presents the parameters and their standard values in terms of electrical and mechanical.
 
 ####  Chipset
 | Vendor            | Part number |
@@ -59,7 +59,7 @@ The hardware specification is categorized into five parts that cover the chipset
 
 #### Pin Definition
 
-The RAK19002 WisBlock boost module comprises a standard WisSensor connector. The WisSensor connector allows the RAK19002 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 3**. 
+The RAK19002 WisBlock boost module comprises a standard WisSensor connector. The WisSensor connector allows the RAK19002 module to be mounted on a WisBlock baseboard, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 <rk-img
   src="/assets/images/wisblock/rak19002/datasheet/rak19002_pinout.svg"
@@ -74,7 +74,7 @@ The RAK19002 WisBlock boost module comprises a standard WisSensor connector. The
 />
 
 The following table shows default IO used for different slots:
-  
+
 | SLOT A | SLOT B | SLOT C | SLOT D |
 | :----: | :----: | :----: | :----: |
 |  IO1   |  IO2   |  IO3   |  IO5   |

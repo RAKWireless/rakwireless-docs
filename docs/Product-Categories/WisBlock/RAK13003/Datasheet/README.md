@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK13003 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak13003/overview/rak13003_home.png
+rak_img: /assets/images/wisblock/rak13003/RAK13003.png
 tags:
   - datasheet
   - wisblock
@@ -32,11 +32,11 @@ The RAK13003 is an IO expansion module that can be mounted to IO slot of WisBloc
 
 ## Specifications
 
-### Overview 
+### Overview
 
-#### Mounting 
+#### Mounting
 
-The RAK13003 module can be mounted on the IO slots of the WisBlock Base board. Figure 1 shows the mounting mechanism of the RAK13003 on a WisBlock Base board. 
+The RAK13003 module can be mounted on the IO slots of the WisBlock Base board. Figure 1 shows the mounting mechanism of the RAK13003 on a WisBlock Base board.
 
 <rk-img
   src="/assets/images/wisblock/rak13003/datasheet/image-20210225140319101.png"
@@ -50,7 +50,7 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 #### Chipset
 
-The RAK13003 IO Expansion Module uses MCP23017 from Microchip. 
+The RAK13003 IO Expansion Module uses MCP23017 from Microchip.
 
 | Vendor    | Part Number |
 | --------- | ----------- |
@@ -66,7 +66,7 @@ Figure 2 shows MCP23017 device addressing. Default A2, A1, and A0 are connected 
 
 #### Pin Definition
 
-The RAK13003 WisBlock IO Expansion Module comprises a standard expansion. The expansion allows the RAK13003 module to be mounted on a WisBlock Base board. The pin order of the connector and the pinout definition is shown in Figure 3. 
+The RAK13003 WisBlock IO Expansion Module comprises a standard expansion. The expansion allows the RAK13003 module to be mounted on a WisBlock Base board. The pin order of the connector and the pinout definition is shown in Figure 3.
 
 :::tip 📝 NOTE:
 - **I2C**，**SPI** related pins, **RESET**，**IO5**，**IO6**，**3V3**, and **GND** are connected to this module.

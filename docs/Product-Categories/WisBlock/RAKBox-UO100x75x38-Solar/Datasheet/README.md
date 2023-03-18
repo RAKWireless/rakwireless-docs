@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your WisBlock RAKBox-UO100x75x38 Enclosure with Solar Panel to help you use it. This information includes technical specifications and characteristics.
-rak_img: /assets/images/wisblock/rakbox-uo100x75x38-solar/overview/uo_home.png
+rak_img: /assets/images/wisblock/rakbox-uo100x75x38-solar/uo_home.png
 prev: ../Installation/
 next: false
 tags:

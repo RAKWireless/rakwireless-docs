@@ -21,8 +21,9 @@ Thank you for choosing **RAK3172 WisDuo LPWAN Module** in your awesome IoT proje
 * [Reference Design](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Datasheet/#schematic-diagram)
 
 :::tip 📝 NOTE:
-
 There are two variants available for the RAK3172 Module: (1) with the CE & UKCA Certification Mark and (2) with FCC, IC & RCM Certification Mark.
+
+If you need LoRa module with BLE 5.0 capability, you can check [RAK11720](https://store.rakwireless.com/products/rak11720-ambiq-apollo3-module-for-lorawan?utm_source=RAK11720&utm_medium=Document&utm_campaign=BuyFromStore) which is pin-to-pin compatible to RAK3172 with extra pins for additional ground and BLE RF antenna port.
 :::
 ## Product Description
 

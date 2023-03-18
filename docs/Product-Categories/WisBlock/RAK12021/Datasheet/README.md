@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12021 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12021/overview/RAK12021_home.png
+rak_img: /assets/images/wisblock/rak12021/RAK12021.png
 tags:
   - datasheet
   - wisblock
@@ -17,12 +17,12 @@ next: false
 
 RAK12021 is a WisBlock RGB Sensor that extends the WisBlock system which is based on TCS37725FN from AMS. The Red, Green, Blue, and Clear (RGBC) light sensing can be obtained via I2C interface. An external IR LED is also added for Proximity Detection.
 
-### Features 
+### Features
 
 * RGB sensor module
-* Color light sensing with IR-Blocking filter 
+* Color light sensing with IR-Blocking filter
 * Proximity detection
-* Maskable light and proximity interrupt 
+* Maskable light and proximity interrupt
 * Low power (2.5&nbsp;uA sleep current)
 * I2C interface
 * 3.3&nbsp;V power supply
@@ -66,7 +66,7 @@ The RAK12021 WisBlock RGB Sensor Module comprises a standard WisBlock connector.
 />
 
 If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse depends on what slot the module is plugged in. The following table shows the default IO used for different slots:
-  
+
 | SLOT A | SLOT C | SLOT D | SLOT E | SLOT F |
 | ------ | ------ | ------ | ------ | ------ |
 | WB_IO1 | WB_IO3 | WB_IO5 | WB_IO4 | WB_IO6 |
@@ -76,7 +76,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 |       WB_IO2        |
 
 :::tip 📝 NOTE:
-- Only the **I2C** related pin, **SENSOR_INT**, **3V3_S**, and **GND** are connected to this module. 
+- Only the **I2C** related pin, **SENSOR_INT**, **3V3_S**, and **GND** are connected to this module.
 - **3V3_S** voltage output from the WisBlock Base that powers the RAK12021 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12021 module.
 :::
 

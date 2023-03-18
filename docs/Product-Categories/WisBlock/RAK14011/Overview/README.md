@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak14011/overview/RAK14011_home.png
+rak_img: /assets/images/wisblock/rak14011/RAK14011.png
 rak_desc: RAK14011 is a 4x4 keypad module designed to be part of a production-ready IoT solution and must be combined with a RAK14004 WisBlock Keypad Module.
 rak_grp: [wisblock, wisinterface]
 prev: ../../
@@ -21,19 +21,19 @@ Thank you for choosing **RAK14011 WisBlock 4x4 Keypad Module** in your awesome I
 
 ## Product Description
 
-**RAK14011 WisBlock 4x4 Keypad Module** was designed to be part of a production-ready IoT solution and must be combined with a [RAK14004 WisBlock Keypad Module](/Product-Categories/WisBlock/RAK1400/). 
+**RAK14011 WisBlock 4x4 Keypad Module** was designed to be part of a production-ready IoT solution and must be combined with a [RAK14004 WisBlock Keypad Module](/Product-Categories/WisBlock/RAK1400/).
 
 ## Product Features
 
-* **Module Specifications** 
+* **Module Specifications**
     * 4 x 4 matrix keypad
-* **Size**    
-    * 43&nbsp;mm x 55&nbsp;mm 
+* **Size**
+    * 43&nbsp;mm x 55&nbsp;mm
 
 ## Prerequisites
 
 To use a **RAK14011**, you need a **RAK14004 WisBlock Keypad Module** to connect the module.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 Make sure to fix the module with the screws to ensure a proper function.
 :::

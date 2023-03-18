@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK1904 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak1904/overview/RAK1904_home.png
+rak_img: /assets/images/wisblock/rak1904/RAK1904.png
 tags:
   - datasheet
   - wisblock
@@ -25,9 +25,9 @@ RAK1904 is a WisBlock Sensor that extends the WisBlock system with an ST LIS3DH 
 
 The accelerometer of the RAK1904 module can be dynamically configured to work in the scales of ±2g/±4g/±8g/±16g and is capable of measuring accelerations with output data rates from 1&nbsp;Hz to 5.3&nbsp;kHz.
 
-### Features 
+### Features
 * **User selectable scales**: ±2g/±4g/±8g/±16g
-* **Data acquisition rates**: from 1&nbsp;Hz to 5.3&nbsp;kHz 
+* **Data acquisition rates**: from 1&nbsp;Hz to 5.3&nbsp;kHz
 * **Voltage Supply**: 3.3&nbsp;V
 * **Current Consumption**: 0.5&nbsp;uA to 11&nbsp;uA
 * **Chipset**: ST LIS3DH
@@ -59,7 +59,7 @@ The hardware specification is categorized into six parts. It shows the chipset o
 
 #### Pin Definition
 
-The RAK1904 WisBlock 3-axis Acceleration Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK1904 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**. 
+The RAK1904 WisBlock 3-axis Acceleration Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK1904 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 <rk-img
   src="/assets/images/wisblock/rak1904/datasheet/RAK1904_pinout.svg"
@@ -81,7 +81,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 
 
 #### Sensors
-##### Acceleration Sensor 
+##### Acceleration Sensor
 | Symbol | Parameter         | Test Condition                                | Min.  | Typ.  | Max.  |   Unit   |
 | ------ | ----------------- | --------------------------------------------- | :---: | :---: | :---: | :------: |
 | FS     | Measurement Range | FS bit set to 00                              |       | ±2.0  |       |    g     |

@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK5005-O to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak5005-o/overview/RAK5005-O_home.png
+rak_img: /assets/images/wisblock/rak5005-o/RAK5005-O.png
 tags:
   - datasheet
   - wisblock
@@ -31,7 +31,7 @@ If you can't find a module that fits your IoT requirements, use the standard con
 * Wireless data transmission
 * Data acquisition in Industrial environment
 * Location and tracking of personnel or moving objects
-* Extend coverage for wired application by adding wireless interfaces 
+* Extend coverage for wired application by adding wireless interfaces
 
 ### Main Features
 
@@ -394,7 +394,7 @@ The WisBlock Module IO Slot connector, as shown in **Figure 13**, is a **40-pin 
   caption="WisBLock IO slot connector"
 />
 
-The pinout definition of the WisBlock IO slot module connector is shown in the table below. 
+The pinout definition of the WisBlock IO slot module connector is shown in the table below.
 
 | **Function Name of WisBlock Base** | **Pin Number** | **Pin Number** | **Function Name of WisBlock Base** |
 | ---------------------------------- | -------------- | -------------- | ---------------------------------- |
@@ -470,7 +470,7 @@ As for the following table, it shows the pin name and description of the WisBloc
 
 ##### Absolute Maximum Ratings
 
-Shown in the table below are the **Absolute Maximum Ratings** of the device. The stress ratings are the functional operation of the device. 
+Shown in the table below are the **Absolute Maximum Ratings** of the device. The stress ratings are the functional operation of the device.
 
 :::warning ⚠️WARNING
 1. If the stress rating goes above what is listed, it may cause permanent damage to the device.
@@ -502,7 +502,7 @@ The RAK5005-O is designed for **low-power IoT products** and the power supply us
 
 ##### Battery and Solar Panel Specification
 
-The RAK5005-O WisBlock Base Board can be powered by a battery, connected to the **P1 connector**. The nominal operating voltage of the battery should be within the range shown in the following table. The matching connector for the battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199)     
+The RAK5005-O WisBlock Base Board can be powered by a battery, connected to the **P1 connector**. The nominal operating voltage of the battery should be within the range shown in the following table. The matching connector for the battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199)
 
 | **Minimum** | **Typical** | **Maximum** | **Unit** |
 | ----------- | ----------- | ----------- | -------- |
@@ -534,11 +534,15 @@ If a non-rechargeable battery is connected to the RAK5005-O, rework the hardware
 
 ##### Solar Panel Connector
 
-A 5&nbsp;V Solar panel can be connected to the board via the **P2 connector** to also serve the purpose of charging the battery. The matching connector for the solar panel wires is a [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287)    
+A 5&nbsp;V Solar panel can be connected to the board via the **P2 connector** to also serve the purpose of charging the battery. The matching connector for the solar panel wires is a [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287)
 
 #### Mechanical Characteristics
 
 ##### Board Dimensions
+
+:::tip 📝 NOTE
+- You may also refer and download the [M1.2 Stand-off fastener/inserts datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/M1.2_Press-Fit_Standoff_Datasheet.zip).
+:::
 
 **Figure 14** shows the detailed mechanical dimensions of RAK5005-O.
 
@@ -744,7 +748,7 @@ Sensor Module Pinout Definition:
 - Type 2
 - Type 3
 - Type 4
-::: 
+:::
 
 <br>
 
@@ -790,7 +794,7 @@ The WisSensor data bus is divided into four types. The relationship is shown in 
 
 :::tip 📝 NOTE
 * Can be supported by reworking the hardware.
-::: 
+:::
 
 ## Certification
 

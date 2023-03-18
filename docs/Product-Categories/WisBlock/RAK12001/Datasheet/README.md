@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information for your RAK12001 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12001/overview/RAK12001_home.png
+rak_img: /assets/images/wisblock/rak12001/RAK12001.png
 tags:
   - datasheet
   - wisblock
@@ -33,7 +33,7 @@ The RAK12001 is a fingerprint sensor module based on GROW R307. This module supp
 
 ## Specifications
 
-### Overview 
+### Overview
 
 #### Mounting
 
@@ -71,7 +71,7 @@ The RAK12001 WisBlock Fingerprint Sensor comprises a standard WisBlock connector
 
 ::: tip 📝 NOTE
 - Slot B is not recommended because the IO2 pin is used to control power supply 3V3_S.
-:::  
+:::
 
 #### Electrical Characteristics
 
@@ -107,6 +107,6 @@ The RAK12001 WisBlock Fingerprint Sensor comprises a standard WisBlock connector
 - **R307** needs 4.2&nbsp;V - 6&nbsp;V, which is provided by the on-board **boost converter**.
 - **TOUCH** is an input signal from **R307** when a finger is placed and detected by the sensor.
 :::
-​      
+​
 
 

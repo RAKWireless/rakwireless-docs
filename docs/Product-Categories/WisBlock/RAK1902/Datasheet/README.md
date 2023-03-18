@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK1902 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak1902/overview/RAK1902_home.png
+rak_img: /assets/images/wisblock/rak1902/RAK1902.png
 prev: ../Quickstart/
 next: false
 tags:
@@ -23,13 +23,13 @@ tags:
 
 The RAK1902 WisBlock Barometer Pressure Sensor Module, part of the RAK Wireless WisBlock series, is an ultra-compact piezo-resistive pressure sensor that functions as a digital barometer with an I2C interface. The sensing element, which detects absolute pressure, consists of a suspended membrane manufactured through a delicate process developed by ST®. The pressure measurement covers the range from 260&nbsp;hPa to 1260&nbsp;hPa and the temperature measurement covers the range from -40&nbsp;°C to 85&nbsp;°C. Measurements accuracy is ±0.1&nbsp;hPa for pressure and ±1.5&nbsp;°C for temperature.
 
-### Features 
+### Features
 * **Pressure range**: 260-1260&nbsp;hPa
 * **Pressure sensor accuracy**: ±0.1&nbsp;hPa
 * **Temperature range**: -40&nbsp;°C to +85&nbsp;°C
 * **Temperature sensor accuracy**: ±1.5&nbsp;°C
 * **Voltage Suppply**: 3.3&nbsp;V
-* **Current Consumption**: 1&nbsp;uA to 12&nbsp;uA  
+* **Current Consumption**: 1&nbsp;uA to 12&nbsp;uA
 * **Chipset**: ST LPS22HB
 * **Module Size**: 10 x 10&nbsp;mm
 
@@ -77,7 +77,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 | WB_IO1 | WB_IO2 | WB_IO3 | WB_IO5 | WB_IO4 | WB_IO6 |
 
 #### Sensors
-##### Pressure Sensor   
+##### Pressure Sensor
 | Symbol             | Parameter                          | Test Condition                                                                                           | Min. |          Typ.           | Max. |      Unit      |
 | ------------------ | ---------------------------------- | -------------------------------------------------------------------------------------------------------- | :--: | :---------------------: | :--: | :------------: |
 | P<sub>Top</sub>    | Operating Temperature Range        |                                                                                                          | -40  |                         | +85  |       °C       |
@@ -90,7 +90,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 | P<sub>noise</sub>  | RMS Pressure Sensing Noise         | with embedded filtering                                                                                  |      |         0.0075          |      | hPa <br /> RMS |
 | ODR<sub>Pres</sub> | Pressure Output Data Rate          |                                                                                                          |      |      1/10/25/50/75      |      |       Hz       |
 
-##### Temperature Sensor   
+##### Temperature Sensor
 | Symbol           | Parameter                     | Test Condition      | Min. |                   Typ.                    | Max. |  Unit  |
 | ---------------- | ----------------------------- | ------------------- | :--: | :---------------------------------------: | :--: | :----: |
 | T<sub>op</sub>   | Operating Temperature Range   |                     | -40  |                                           | +85  |   °C   |
@@ -112,7 +112,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 
 ##### Board Dimensions
 
-**Figure 3** shows the dimensions and the mechanic drawing of the RAK1902 module.    
+**Figure 3** shows the dimensions and the mechanic drawing of the RAK1902 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1902/datasheet/RAK19xx_mechanic_drawing.png"
@@ -129,7 +129,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 />
 
 #### Schematic Diagram
-**Figure 5** shows the schematic of the RAK1902 module. 
+**Figure 5** shows the schematic of the RAK1902 module.
 
 <rk-img
   src="/assets/images/wisblock/rak1902/datasheet/RAK1902_schematics.png"

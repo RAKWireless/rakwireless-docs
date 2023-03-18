@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak19009/overview/RAK19009_home.png
+rak_img: /assets/images/wisblock/rak19009/RAK19009.png
 rak_desc: RAK19009 is a mini base board that connects a WisBlock Core and two WisBlock modules together. It also provides the power supply for the attached WisBlock modules.
 rak_grp: [wisblock, wisbase]
 next: ../Quickstart/
@@ -43,13 +43,13 @@ Using **RAK19009** as your WisBlock Base board, you can make your project compac
   different types of sensors
 * **Size:** A compact size of 30 x 37&nbsp;mm, which lets you create solutions that fit into smallest housings
 
-## Prerequisites 
+## Prerequisites
 
 To use a **RAK19009** WisBlock Mini Base Board with Power Slot, you need a **WisBlock Core**, **WisBlock Power Module**, and **WisBlock Modules** to start developing with the system.
 
 :::warning ⚠️ WARNING
 
 - RAK19009 requires a WisBlock Power Module to have power and connector interfaces. There is no USB and battery/power connector in RAK19009. These functionalities must be added by attaching the correct WisBlock Power Module for the application.
-- Make sure to fix the modules with the screws to ensure a proper function. 
+- Make sure to fix the modules with the screws to ensure a proper function.
 
 :::

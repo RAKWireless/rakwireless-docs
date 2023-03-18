@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak16000/overview/RAK16000_home.png
+rak_img: /assets/images/wisblock/rak16000/RAK16000.png
 rak_desc: RAK16000 is a part of the WisBlock Sensor Series that is capable of measuring DC current in the range of 0 to 3A in a voltage range of 0 to 26V.
 rak_grp: [wisblock, wissensor]
 next: ../Quickstart/
@@ -57,6 +57,6 @@ RAK16000 is a part of the WisBlock Sensor Series that is capable of measuring DC
 
 To use a **RAK16000**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK16000** module. Furthermore, you need a **WisBlock Core** module to use the module.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

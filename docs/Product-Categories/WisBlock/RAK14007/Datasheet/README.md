@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK14007 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak14007/overview/rak14007_home.png
+rak_img: /assets/images/wisblock/rak14007/RAK14007.png
 tags:
   - datasheet
   - wisblock
@@ -50,7 +50,7 @@ The hardware specification is categorized into three (3) parts. It discusses the
 
 #### Pin Definition
 
-The RAK14007 module has a 40-pin WisConnector that is compatible with the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 3**. 
+The RAK14007 module has a 40-pin WisConnector that is compatible with the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 <rk-img
   src="/assets/images/wisblock/rak14007/datasheet/rak14007-pinout.svg"
@@ -60,7 +60,7 @@ The RAK14007 module has a 40-pin WisConnector that is compatible with the WisBlo
 
 ::: tip 📝 NOTE
 - **3V3_S**, **VBAT**, **I2C** related pin, **AIN1**, **IO3**, **IO4**, **IO5**, and **GND** are connected to WisConnector.
-:::  
+:::
 
 #### Mechanical Characteristics
 

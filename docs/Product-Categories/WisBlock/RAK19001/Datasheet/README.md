@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK19001 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak19001/overview/rak19001_home.png
+rak_img: /assets/images/wisblock/rak19001/RAK19001.png
 tags:
   - datasheet
   - wisblock
@@ -34,11 +34,11 @@ If you can't find a module that fits your IoT requirements, use the standard con
     * All key input-output pins of WisBlock Core are exposed via headers
     * Access to various communication bus via headers: I2C, SPI, UART, and USB
     * One user-defined push button switch
-* **Power supply**     
-    * Supports both 5&nbsp;V USB, 3.7&nbsp;V rechargeable battery, and 3.3 to 5.5&nbsp;V non-rechargeable battery as power supply   
+* **Power supply**
+    * Supports both 5&nbsp;V USB, 3.7&nbsp;V rechargeable battery, and 3.3 to 5.5&nbsp;V non-rechargeable battery as power supply
     * The power supply for the **WisBlock modules** boards can be controlled by the **WisBlock Core** modules to minimize power consumption
     * Slide switch to select between a rechargeable or non-rechargeable battery
-* **Size**    
+* **Size**
     * 60 x 67&nbsp;mm
 
 ## Specifications
@@ -72,7 +72,7 @@ The hardware specification is categorized into six (6) parts. It discusses the i
 RAK19001 WisBlock Base board provides the following interfaces, headers, a button, and WisConnectors:
 
 * 1 WisBlock Core module
-* 2 IO slots for WisBlock modules 
+* 2 IO slots for WisBlock modules
 * 6 Sensor slots A-F for WisBlock modules
 * 1 Type-C USB port for programming and debugging
 * 3.7&nbsp;V rechargeable battery connector
@@ -96,7 +96,7 @@ The Type-C USB connector is compliant with the USB 2.0 specification. This USB i
 
 * Smaller and reversible connector shape
 * Port can be input or output
-* Fast battery charging 
+* Fast battery charging
 
 <rk-img
   src="/assets/images/wisblock/rak19001/datasheet/usb-c-receptacle.png"
@@ -132,7 +132,7 @@ A dedicated header is available as well to have access to commonly used serial i
 
 **Figure 7** and **Figure 8** show the battery connectors V+(positive) and GND on both rechargeable and non-rechargeable batteries.
 
-The matching connector for the rechargeable battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199). A cable assembly for the rechargeable battery connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/battery-connector-cable). 
+The matching connector for the rechargeable battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199). A cable assembly for the rechargeable battery connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/battery-connector-cable).
 
 <rk-img
   src="/assets/images/wisblock/rak19001/datasheet/rechargeable.png"
@@ -163,7 +163,7 @@ The onboard connector used on the non-rechargeable battery is [FWF20009-S02S22W1
 
 ##### Solar Panel Connector
 
-**Figure 10** shows the solar panel connector V+(Vin) and GND. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287). A cable assembly for the solar panel connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/solar-panel-connector-cable). 
+**Figure 10** shows the solar panel connector V+(Vin) and GND. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287). A cable assembly for the solar panel connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/solar-panel-connector-cable).
 
 <rk-img
   src="/assets/images/wisblock/rak19001/datasheet/solar_label.png"
@@ -448,7 +448,7 @@ As for the following table, it shows the pin name and description of the WisBloc
 
 ##### Absolute Maximum Ratings
 
-The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device. 
+The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device.
 
 :::warning ⚠️WARNING
 1. If the stress rating goes above what is listed, it may cause permanent damage to the device.
@@ -479,7 +479,7 @@ The RAK19001 is designed for **low-power IoT products**. Its power supply uses a
 
 ##### Rechargeable Battery Connector
 
-The RAK19001 WisBlock Base Board can be powered by a rechargeable battery connected to the **P1 connector**. The nominal operating voltage of the battery should be within the range shown in the following table. The matching connector for the battery wires is an [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199)     
+The RAK19001 WisBlock Base Board can be powered by a rechargeable battery connected to the **P1 connector**. The nominal operating voltage of the battery should be within the range shown in the following table. The matching connector for the battery wires is an [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199)
 
 | **Minimum** | **Typical** | **Maximum** | **Unit** |
 | ----------- | ----------- | ----------- | -------- |
@@ -515,11 +515,15 @@ The RAK19001 WisBlock Base Board can be powered by a Non-rechargeable battery co
 
 ##### Solar Panel Connector
 
-A 5&nbsp;V solar panel can be connected to the board via the **P2 connector** to also serve the purpose of charging the battery. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287)  
+A 5&nbsp;V solar panel can be connected to the board via the **P2 connector** to also serve the purpose of charging the battery. The matching connector for the solar panel wires is an [JST ZHR-2 1.5&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=287)
 
 #### Mechanical Characteristics
 
 ##### Board Dimensions
+
+:::tip 📝 NOTE
+- You may also refer and download the [M1.2 Stand-off fastener/inserts datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/M1.2_Press-Fit_Standoff_Datasheet.zip).
+:::
 
 **Figure 14** shows the detailed mechanical dimensions of RAK19001.
 

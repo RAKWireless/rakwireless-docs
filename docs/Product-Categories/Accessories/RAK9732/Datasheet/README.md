@@ -5,7 +5,7 @@ tags:
     - RAK9732
     - datasheet
 rak_desc: Provides comprehensive information about your RAK9732 Pulsar Cable LMR400 to help you use it. This information includes technical specifications and characteristics.
-rak_img: /assets/images/accessories/rak9732/overview/rak9732.png
+rak_img: /assets/images/accessories/rak9732/rak9732.png
 
 ---
 
@@ -57,7 +57,7 @@ This Pulsar cable is a high-grade cable, suitable for outdoor applications with 
 #### Connectors
 
 <rk-img
-  src="/assets/images/accessories/rak9732/datasheet/connectors.png"
+  src="/assets/images/accessories/rak9732/connectors.png"
   width="40%"
   caption="Connector Types"
 />
@@ -65,7 +65,7 @@ This Pulsar cable is a high-grade cable, suitable for outdoor applications with 
 #### Dimensions
 
 <rk-img
-  src="/assets/images/accessories/rak9732/datasheet/dimension.png"
+  src="/assets/images/accessories/rak9732/dimension.png"
   width="90%"
   caption="Pulsar Cable Dimensions"
 />

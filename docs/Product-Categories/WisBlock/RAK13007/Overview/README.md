@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak13007/overview/RAK13007_home.png
+rak_img: /assets/images/wisblock/rak13007/RAK13007.png
 rak_desc:  RAK13007 is a WisBlock Interface module that extends the WisBlock system that can isolate the output between internal and external signals. It is used to programmatically switch on/off devices, which uses a high voltage or high current.
 rak_grp: [wisblock, wisinterface]
 next: ../Quickstart/
@@ -29,7 +29,7 @@ Thank you for choosing **RAK13007 WisBlock Relay Module** in your awesome IoT Pr
 
 RAK13007 is a WisBlock Interface module that extends the WisBlock system to be used on isolated digital output applications. There is one digital output that is isolated by an electromechanical relay. The RAK13007 digital output is used to programmatically switch on/off devices operating at high voltage or high current applications.
 
-:::warning ⚠️ WARNING!!    
+:::warning ⚠️ WARNING!!
 <rk-img
   src="/assets/images/wisblock/rak13007/datasheet/warning.png"
   width="90%"
@@ -52,6 +52,6 @@ RAK13007 is a WisBlock Interface module that extends the WisBlock system to be u
 
 To use a **RAK13007**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK13007** module. Furthermore, you need a **WisBlock Core** module to control the relay via software code.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

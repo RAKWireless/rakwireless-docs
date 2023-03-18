@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK19006 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak19006/overview/RAK19006_home.png
+rak_img: /assets/images/wisblock/rak19006/RAK19006.png
 tags:
   - datasheet
   - wisblock
@@ -17,7 +17,7 @@ next: false
 
 The RAK19006 WisBlock Wireless Charge Module is designed to be a part of the battery charger. It is highly efficient, Qi-compliant, and has a single-chip wireless power receiver and charger. It integrates the receiver and linear charger and supports up to 5&nbsp;W applications.
 
-This board can be connected with the WisBlock Base board like RAK5005-O through the IO slot or two pogo pins. The chip supports wireless charge and direct battery charging. 
+This board can be connected with the WisBlock Base board like RAK5005-O through the IO slot or two pogo pins. The chip supports wireless charge and direct battery charging.
 
 ### Features
 
@@ -55,7 +55,7 @@ The hardware specification discusses the pinouts, and its corresponding function
 
 #### Pin Definition
 
-The RAK19006 module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 2**. 
+The RAK19006 module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisblock/rak19006/datasheet/rak19006-pinout.svg"
@@ -67,7 +67,7 @@ The RAK19006 module has a 40-pin WisConnector that is compatible to the WisBlock
 - Only **GND** and **nEN** are connected to this module.
 
 - **nEN** is the wireless charge chip enable pin, active low. A resistor (R4) is connected to nEN to GND, so by default, this chip is enable. If you want to disable it, pull the nEN to high.
-:::  
+:::
 
 <rk-img
   src="/assets/images/wisblock/rak19006/datasheet/rak19006-img.png"

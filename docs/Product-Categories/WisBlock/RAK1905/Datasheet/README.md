@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK1905 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak1905/overview/RAK1905_home.png
+rak_img: /assets/images/wisblock/rak1905/RAK1905.png
 tags:
   - datasheet
   - wisblock
@@ -20,7 +20,7 @@ RAK1905 is a 3-axis gyroscope, 3-axis accelerometer, and 3-axis magnetometer, pa
 
 ### Features
 
-- Chipset: **TDK MPU-9250** 
+- Chipset: **TDK MPU-9250**
 - Supply voltage: **3.3&nbsp;V**
 - Current consumption: **8&nbsp;uA - 2.7&nbsp;mA**
 - Accelerometer output: **±2&nbsp;g**, **±4&nbsp;g**, **±8&nbsp;g**, and **±16&nbsp;g**
@@ -33,7 +33,7 @@ RAK1905 is a 3-axis gyroscope, 3-axis accelerometer, and 3-axis magnetometer, pa
 
 ## Specifications
 
-### Overview 
+### Overview
 
 <br>
 
@@ -81,8 +81,8 @@ The RAK1905 9-Axis Sensor WisBlock Module comprises a standard WisBlock connecto
 
 If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse depends on what slot the module is plugged in. The following table shows the default IO used for different slots:
 
-**INT (Interrupt Pin)**  
-  
+**INT (Interrupt Pin)**
+
 | SLOT A | SLOT B | SLOT C | SLOT D | SLOT E | SLOT F |
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | IO1    | IO2    | IO3    | IO5    | IO4    | IO6    |

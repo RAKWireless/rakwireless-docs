@@ -48,8 +48,9 @@ You can configure the mode and operation of the module using AT commands via a U
 - **Temperature range**: -40°&nbsp;C ~ 85°&nbsp;C
 
 :::tip 📝 NOTE:
-
 There are two variants available for the RAK3172 Module: (1) with the CE & UKCA Certification Mark and (2) with FCC, IC & RCM Certification Mark.
+
+If you need LoRa module with BLE 5.0 capability, you can check [RAK11720](https://store.rakwireless.com/products/rak11720-ambiq-apollo3-module-for-lorawan?utm_source=RAK11720&utm_medium=Document&utm_campaign=BuyFromStore) which is pin-to-pin compatible to RAK3172 with extra pins for additional ground and BLE RF antenna port.
 :::
 ## Specifications
 
@@ -236,7 +237,7 @@ RAK3172 uses UART2 serial pins to upload the latest firmware.
 :::tip 📝 NOTE:
 RAK3172 should automatically go to BOOT mode when the firmware is uploaded via RAK DFU Tool or WisToolBox.
 
-If BOOT mode is not initiated, pull to ground the RESET pin twice (or double click the reset button if available) to force BOOT mode.
+If BOOT mode is not initiated, you can manually send `AT+BOOT` command to start bootloader mode.
 :::
 
 #### Firmware / OS

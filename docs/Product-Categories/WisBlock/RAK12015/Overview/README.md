@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12015/overview/RAK12015_home.png
+rak_img: /assets/images/wisblock/rak12015/RAK12015.png
 rak_desc: RAK12015 uses a high-precision vibration sensor, the ANT-801S. This sensor is capable of detecting micro shocks or vibration without direction limits.
 rak_grp: [wisblock, wissensor]
 next: ../Quickstart/
@@ -39,7 +39,7 @@ The RAK12015, a part of WisBlock Sensor, is a Vibration Detection Module that us
     * Vibration Detection
     * 3.3&nbsp;V Power Supply
     * Chipset: ANT-801S
-  
+
 * **Module Size**
     * 15&nbsp;mm x 25&nbsp;mm
 
@@ -47,6 +47,6 @@ The RAK12015, a part of WisBlock Sensor, is a Vibration Detection Module that us
 
 To use a **RAK12015**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12015** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

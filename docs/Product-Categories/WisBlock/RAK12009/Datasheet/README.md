@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12009 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12009/overview/RAK12009_buy.png
+rak_img: /assets/images/wisblock/rak12009/RAK12009.png
 tags:
   - datasheet
   - wisblock
@@ -17,7 +17,7 @@ next: false
 
 The RAK12009 is an Alcohol Gas Sensor module, part of the RAKWireless WisBlock Sensor Series. The sensor used in this module is the MQ-3B from Zhengzhou Winsen Electronics. This sensor is capable of detecting alcohol gas in the air with an alcohol concentration detection range of 25 to 500&nbsp;ppm.
 
-### Features 
+### Features
 
 * MQ-3B Alcohol Gas Sensor
 * Alert Function
@@ -100,10 +100,10 @@ The RAK12009 WisBlock MQ3 Alcohol Gas Sensor Module comprises a standard WisBloc
 
 ##### Power Supply Circuit
 
-**Figure 5** shows RAK12009 step-up power supply circuit. 
+**Figure 5** shows RAK12009 step-up power supply circuit.
 
-* **VBAT** Battery voltage (max voltage is 4.2&nbsp;V) 
-* **EN** Power enable pin (active high). This pin is connected to **IO6** of WisBlock Core. 
+* **VBAT** Battery voltage (max voltage is 4.2&nbsp;V)
+* **EN** Power enable pin (active high). This pin is connected to **IO6** of WisBlock Core.
 
 <rk-img
   src="/assets/images/wisblock/rak12009/datasheet/image-20210702184355429.png"
@@ -116,7 +116,7 @@ The RAK12009 WisBlock MQ3 Alcohol Gas Sensor Module comprises a standard WisBloc
 **Figure 6** shows the alcohol detector circuit.
 
 * **U2** is the MQ-3B Alcohol sensor.
-* The pin 2 voltage (5&nbsp;V) is used to supply standard working temperature to the sensor. 
+* The pin 2 voltage (5&nbsp;V) is used to supply standard working temperature to the sensor.
 * **AOUT** is the voltage of load resistance R12 which is in series with sensor.
 * The pin 1 and pin 3 voltage (5&nbsp;V) supply the detect voltage to load resistance R12.
 * **U3** is a 12-bit analog-to-digital converter with alert function. The **U3** power supply is 5&nbsp;V.
@@ -154,7 +154,7 @@ The I2C address is configured by the ADR1 and ADR0 address selection inputs, as 
 
 | **ADR1**  | **ADR0**  |  **Slave Address [A6-A0]** |
 |:---------:|:---------:|:--------------------------:|
-| Floating  | Floating  |1010000                     |           
+| Floating  | Floating  |1010000                     |
 | Floating  | GND       |1010001                     |
 | Floating  | VA        |1010010                     |
 | GND       | Floating  |1010100                     |

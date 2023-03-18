@@ -16,7 +16,13 @@ Thank you for choosing **RAK10701-H Field Mapper for Helium Network** in your aw
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 
+:::warning ⚠️ WARNING
+The latest RAK10701 Field Mapper firmware (custom mode) only works on the following LoRaWAN Network Servers: **Helium**, **The Things Network**, and **Chirpstack**.  
+:::
+
 :::tip 📝 NOTE
+The [source code of RAK10701](https://github.com/RAKWireless/RAK10701-Field-Tester) is open-sourced (except the RUI3 APIs).
+
 The device has to be charged first if it comes fresh from shipping. There is a possibility that the battery was drained during its transport.
 :::
 
@@ -42,4 +48,9 @@ The **RAK10701-H Field Mapper for Helium Network** is a ready-to-use device for 
 - Operating Temperature: -10°&nbsp;C ~ 60°&nbsp;C
 - Storage Temperature: -40°&nbsp;C ~ 80°&nbsp;C
 
+## Prerequisites
 
+To use a **RAK10701-H**, you need the following:
+
+- RAK10701-H must be sufficiently charged.
+- RAK10701-H must have access to sky to get a GPS location fix.

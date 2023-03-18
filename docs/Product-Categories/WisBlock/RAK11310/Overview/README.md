@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak11310/overview/RAK11310_home.png
+rak_img: /assets/images/wisblock/rak11310/RAK11310.png
 rak_desc: RAK11310 is a WisBlock Core module for RAK WisBlock. It is powered by an RP2040 ARM Microcontroller developed by the Raspberry Pi Foundation combined with the SX1262 LoRa transceiver from Semtech.
 next: ../Quickstart/
 prev: ../../
@@ -38,10 +38,10 @@ The module complies with LoRaWAN 1.0.2 protocols, and also supports LoRa point-t
 The RF communication characteristic of the Lora module makes it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors, and monitors, etc.).
 
 ## Product Features
- 
+
 - Based on RAK11300
 - Uses the RP2040 as the main processor
-- Semtech SX1262 low power high range LoRa transceiver     
+- Semtech SX1262 low power high range LoRa transceiver
 - LoRaWan 1.0.2 protocol stack
 - **I/O ports**: UART/I2C/GPIO/USB
 - Serial Wire Debug (SWD) interface
@@ -52,9 +52,9 @@ The RF communication characteristic of the Lora module makes it suitable for a v
 
 ## Prerequisites
 
-To use a **RAK11310**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK11310** module and has the programming/debug interface.   
+To use a **RAK11310**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK11310** module and has the programming/debug interface.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 - Make sure to fix the module with the screws to ensure a proper function.
 - When using the LoRa module, make sure that an antenna is always connected. Using these transceivers without an antenna can damage the system.
-::: 
+:::

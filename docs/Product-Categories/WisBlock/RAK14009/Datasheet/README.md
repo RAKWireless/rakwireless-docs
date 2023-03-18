@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK14009 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak14009/overview/RAK14009_home.png
+rak_img: /assets/images/wisblock/rak14009/RAK14009.png
 prev: ../Overview/
 next: false
 tags:
@@ -14,14 +14,14 @@ tags:
 ## Overview
 ### Description
 
-**RAK14009 WisBlock 3x3 Keypad Module** was designed to be part of a production-ready IoT solution and must be combined with a [RAK14004 WisBlock Keypad Module](/Product-Categories/WisBlock/RAK14004/). 
+**RAK14009 WisBlock 3x3 Keypad Module** was designed to be part of a production-ready IoT solution and must be combined with a [RAK14004 WisBlock Keypad Module](/Product-Categories/WisBlock/RAK14004/).
 
 ### Features
 
-* **Module Specifications** 
+* **Module Specifications**
   * 3x3 matrix keypad
-* **Size**    
-  * 33&nbsp;mm x 45&nbsp;mm  
+* **Size**
+  * 33&nbsp;mm x 45&nbsp;mm
 
 ## Specifications
 

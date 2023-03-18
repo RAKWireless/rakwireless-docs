@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak13004/overview/rak13004_home.png
+rak_img: /assets/images/wisblock/rak13004/RAK13004.png
 rak_desc: The RAK13004 is a PWM expander module that can be mounted to the IO slot of WisBlock Base board. It can be controlled 16-channel LED, and the module uses PCA9685 from NXP, I2C interface.
 rak_grp: [wisblock, wisinterface]
 prev: ../../
@@ -23,7 +23,7 @@ Thank you for choosing **RAK13004 WisBlock PWM Expander Module** in your awesome
 * [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 
-**Examples**: 
+**Examples**:
 
 For All WisBlock Core Modules:
 
@@ -51,6 +51,6 @@ The RAK13004 is a PWM expander module that can be mounted to the IO slot of WisB
 
 To use a **RAK13004**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK13004** module. Furthermore, you need a **WisBlock Core** module to use the module.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 Make sure to fix the module with the screws to ensure a proper function.
 :::

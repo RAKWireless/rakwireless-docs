@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak19010/overview/RAK19010_home.png
+rak_img: /assets/images/wisblock/rak19010/RAK19010.png
 rak_desc: RAK19010 is a WisBlock Base Board with Power Slot that allows you to attach WisBlock modules in four sensor slots and one IO slot.
 rak_grp: [wisblock, wisbase]
 next: ../Quickstart/
@@ -29,7 +29,7 @@ It has one slot reserved for the power slot module, one for the core module, one
 
 WisBlock modules are connected to the RAK19010 WisBlock Base board via high-speed board-to-board connectors. They provide secure and reliable interconnection to ensure the signal integrity of each data bus. A set of screws is used to fix the modules, making it reliable even in an environment with lots of vibrations.
 
-You can also use a [RAK19005 WisBlock Sensor Extension Cable](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005) or [RAK19008 WisBlock IO Extension Cable](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008) to position the WisBlock modules apart from the WisBlock Base board or in any part of your case. 
+You can also use a [RAK19005 WisBlock Sensor Extension Cable](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005) or [RAK19008 WisBlock IO Extension Cable](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008) to position the WisBlock modules apart from the WisBlock Base board or in any part of your case.
 
 ## Product Features
 
@@ -37,15 +37,15 @@ You can also use a [RAK19005 WisBlock Sensor Extension Cable](https://store.rakw
 * High-speed interconnection secured with screws to ensure signal integrity
 * Supports multiple types of low-power MCUs
 * Supports multiple types of sensors - a single board can support a combination of two different types of sensors
-* **Module Slots**     
+* **Module Slots**
     * 1 WisBlock Core module
     * 1 WisBlock Power Slot module
     * 1 WisBlock module compatible with IO slot
     * 4 WisBlock modules compatible with slots A-D
     * Pin headers accessible pins for BOOT, GPIO, ADC, I2C, and UART interfaces
-* **Size**    
+* **Size**
     * **RAK19010** has a size of only 30 x 60&nbsp;mm, which lets you create solutions that fit into the smallest housings.
 
-## Prerequisites 
+## Prerequisites
 
-RAK19010 WisBlock Base Board with Power Slot requires a power slot module to be able to use WisBlock Core and other WisBlock Modules. 
+RAK19010 WisBlock Base Board with Power Slot requires a power slot module to be able to use WisBlock Core and other WisBlock Modules.

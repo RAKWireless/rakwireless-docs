@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK12023 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12023/overview/RAK12023_home.png
+rak_img: /assets/images/wisblock/rak12023/RAK12023.png
 tags:
   - datasheet
   - wisblock
@@ -62,7 +62,7 @@ The RAK12023 WisBlock Soil Sensor Module comprises a standard WisBlock connector
 ::: tip 📝 NOTE
 - Only **I2C** related pin, **IO4**, **3V3_S**, and **GND** are connected to the WisConnector.
 - **3V3_S** voltage output from the WisBlock Base that powers the RAK12023 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12023 module.
-:::  
+:::
 
 #### Mechanical Characteristics
 

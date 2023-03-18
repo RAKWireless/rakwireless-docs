@@ -16,7 +16,13 @@ Thank you for choosing **RAK10701-P Field Tester for LoRaWAN Pro** in your aweso
 * [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 
+:::warning ⚠️ WARNING
+The latest RAK10701 Field Tester firmware only works on the following LoRaWAN Network Servers: **Helium**, **The Things Network**, and **Chirpstack**.
+:::
+
 :::tip 📝 NOTE
+The [source code of RAK10701](https://github.com/RAKWireless/RAK10701-Field-Tester) is open-sourced (except the RUI3 APIs).
+
 The device has to be charged first if it comes fresh from shipping. There is a possibility that the battery was drained during its transport.
 :::
 
@@ -42,3 +48,12 @@ The **RAK10701-P Field Tester for LoRaWAN** is a ready-to-use WisNode for evalua
 - Operating Temperature: -10°&nbsp;C ~ 60°&nbsp;C
 - Storage Temperature: -40°&nbsp;C ~ 80°&nbsp;C
 
+## Prerequisites
+
+To use a **RAK10701-P**, you need the following:
+
+- To be in a coverage of a LoRaWAN gateway registered to a supported LoRaWAN Network Server. 
+- The LoRaWAN Gateway receiving the uplinks must have a GPS coordinates.
+- RAK10701-P must registered as a device on the LoRaWAN Network Server.
+- RAK10701-P must be sufficiently charged.
+- RAK10701-P must have access to sky to get a GPS location fix.

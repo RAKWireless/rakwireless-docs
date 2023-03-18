@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12025/overview/RAK12025_home.png
+rak_img: /assets/images/wisblock/rak12025/RAK12025.png
 rak_desc: RAK12025 is a WisBlock Sensor that extends the WisBlock system with an ST I3G4250D 3-axis gyroscope sensor. A ready-to-use SW library and tutorial make it easy to measure rotation speed and report data through a standard I2C digital interface.
 rak_grp: [wisblock, wissensor]
 prev: ../../
@@ -31,13 +31,13 @@ For All WisBlock Core Modules:
 
 ## Product Description
 
-RAK12025 is a gyroscope module, part of the RAKWireless WisBlock Sensor series. The module is based on I3G4250D from STMicroelectronics. The I3G4250D is a low-power 3-axis angular rate sensor able to provide unprecedented stability at a zero-rate level and sensitivity over temperature and time. It includes a sensing element and a digital interface capable of providing the measured angular rate. With I3G4250D, RAK12025 can measure rotation speed and report data through a standard I2C digital interface. 
+RAK12025 is a gyroscope module, part of the RAKWireless WisBlock Sensor series. The module is based on I3G4250D from STMicroelectronics. The I3G4250D is a low-power 3-axis angular rate sensor able to provide unprecedented stability at a zero-rate level and sensitivity over temperature and time. It includes a sensing element and a digital interface capable of providing the measured angular rate. With I3G4250D, RAK12025 can measure rotation speed and report data through a standard I2C digital interface.
 
 ## Product Features
 
 * **Sensor specifications**
     * Selectable full scale (245/500/2000&nbsp;dps)
-    * I2C/SPI digital output interface     
+    * I2C/SPI digital output interface
     * 16-bit rate value data output
     * 8-bit temperature data output
     * Two digital output lines (interrupt and data ready)
@@ -52,6 +52,6 @@ RAK12025 is a gyroscope module, part of the RAKWireless WisBlock Sensor series. 
 
 To use a **RAK12025**, you need at least a **WisBlock Base board** to plug the module in. **WisBlock Base board** provides power supply to the **RAK12025** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 Make sure to fix the module with the screws to ensure a proper function.
 :::

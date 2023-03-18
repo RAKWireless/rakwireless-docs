@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12019/overview/RAK12019_home.png
+rak_img: /assets/images/wisblock/rak12019/RAK12019.png
 rak_desc: RAK12019 is an Ambient Light Sensor (ALS) or Ultraviolet Light Sensor (UVS). It measures the ambient light intensity and ultraviolet index, which is interfaced via the I2C bus, making it immune to electrical noises.
 rak_grp: [wisblock, wissensor]
 next: ../Quickstart/
@@ -49,7 +49,7 @@ The RAK12019 is an Ambient Light Sensor (ALS) or Ultraviolet Light Sensor (UVS),
     * Operating temperature ranges: -40 to +85&nbsp;ºC
     * Built-in temperature compensation circuit
     * Programmable interrupt function for ALS, UVS with upper and lower thresholds
-    * RoHS and Halogen-free compliant 
+    * RoHS and Halogen-free compliant
 
 * **Module Size**
     * 10&nbsp;mm x 10&nbsp;mm
@@ -58,6 +58,6 @@ The RAK12019 is an Ambient Light Sensor (ALS) or Ultraviolet Light Sensor (UVS),
 
 To use a **RAK12019**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12019** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

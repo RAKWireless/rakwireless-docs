@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12028/overview/RAK12028_home.png
+rak_img: /assets/images/wisblock/rak12028/RAK12028.png
 rak_desc: RAK12028 is a WisBlock T-Beam-Fork connector module where you can connect the separate sensor PCB - the RAK12031 WisBlock T-Beam-Fork Sensor Module.
 rak_grp: [wisblock, wissensor]
 next: ../Quickstart/
@@ -43,6 +43,6 @@ RAK12028 is a Through-Beam-Fork (TBF) connector module. It has one (1) standard 
 
 To use a **RAK12028**, you need to connect at least one **RAK12031** Through-Beam-Fork Sensor and also a **WisBlock Base** to plug the module in. **WisBlock Base** provides the power supply to the **RAK12028** module. Furthermore, you need a **WisBlock Core** module to use the connector and sensor.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

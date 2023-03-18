@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK1903 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak1903/overview/RAK1903_home.png
+rak_img: /assets/images/wisblock/rak1903/RAK1903.png
 tags:
   - datasheet
   - wisblock
@@ -17,7 +17,7 @@ next: false
 
 The RAK1903 WisBlock Ambient Light Sensor Module, part of the RAK Wireless Wisblock series, is a single-chip ambient light sensor, measuring the intensity of light in the visible range. The precise spectral response and strong IR rejection of the device enables the RAK1903 module to accurately measure the intensity of light as seen by human eyes regardless of light sources. The strong IR rejection also aids in maintaining high accuracy when the industrial design requires to mount the sensor under dark glass due to aesthetic reasons. The RAK1903 module is designed for systems that create light-based experiences for humans. It is an ideal replacement for photodiodes, photoresistors, or other ambient light sensors with less visible range matching and IR rejection.
 
-### Features 
+### Features
 * **Measurement range**: 0.01 to 83865&nbsp;lux
 * Optical filtering to match human eye
 * **Voltage Supply**: 3.3&nbsp;V
@@ -72,7 +72,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 
 
 #### Sensors
-##### Ambient Light Sensor   
+##### Ambient Light Sensor
 | Parameter                                                   | Test Condition                                                                                                   | Min. |     Typ.     |     Max.      |         Unit         |
 | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---- | :----------: | :-----------: | :------------------: |
 | Peak irradiance spectral responsibility                     |                                                                                                                  |      |     550      |               |          nm          |

@@ -7,7 +7,7 @@ tags:
     - Enclosure
     - WisBlock
 rak_desc: Provides comprehensive information about your WisBlock RAKBox-UO180x130x60 Enclosure to help you use it. This information includes technical specifications and characteristics.
-rak_img: /assets/images/wisblock/rakbox-uo180x130x60/overview/uo_home.png
+rak_img: /assets/images/wisblock/rakbox-uo180x130x60/uo_home.png
 
 ---
 # WisBlock Unify Outdoor Enclosure 180x130x60 Datasheet

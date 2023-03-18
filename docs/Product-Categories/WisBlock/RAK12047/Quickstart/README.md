@@ -1,12 +1,12 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK12047. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. Aside from the hardware configuration, it also contains a software setup that includes detailed example codes that will help you get started.
-rak_img: /assets/images/wisblock/rak12047/overview/RAK12047_home.png
+rak_img: /assets/images/wisblock/rak12047/RAK12047.png
 tags:
   - quickstart
   - wisblock
   - RAK12047
-prev: ../Overview/ 
-next: ../Datasheet/ 
+prev: ../Overview/
+next: ../Datasheet/
 ---
 
 # RAK12047 Quick Start Guide
@@ -20,7 +20,7 @@ Before going through each and every step on using the RAK12047 WisBlock module, 
 #### Hardware
 
 - [RAK12047 WisBlock VOC Sensor Module](https://store.rakwireless.com/products/rak12047-voc-sensor-sensirion-sgp40?utm_source=RAK12047&utm_medium=Document&utm_campaign=BuyFromStore)
-- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base) 
+- Your choice of [WisBlock Base](https://store.rakwireless.com/collections/wisblock-base)
 - Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
 - USB Cable
 - [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable)
@@ -35,7 +35,7 @@ Before going through each and every step on using the RAK12047 WisBlock module, 
 
 ### Hardware Setup
 
-WisBlock can integrate this module, which makes it easy to build up an air quality monitoring data acquisition system. 
+WisBlock can integrate this module, which makes it easy to build up an air quality monitoring data acquisition system.
 
 For more information about the RAK12047, refer to the [Datasheet](../Datasheet/).
 
@@ -61,9 +61,9 @@ As shown in **Figure 2**, the location for Slot A, B, C, D, E, and F are properl
 
 ##### Disassembling
 
-The procedure in disassembling any type of WisBlock module is the same. 
+The procedure in disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.  
+1. First, remove the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak12047/quickstart/removing-screws.png"
@@ -88,7 +88,7 @@ The procedure in disassembling any type of WisBlock module is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12047 uses I2C communication lines, and it can cause possible conflict, especially on some IO modules. 
+If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts. RAK12047 uses I2C communication lines, and it can cause possible conflict, especially on some IO modules.
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming your WisBlock Core.
@@ -152,13 +152,13 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 SensirionI2CSgp40 sgp40;
 
-void setup() 
+void setup()
 {
   uint16_t error;
   char errorMessage[256];
   uint16_t serialNumber[3];
   uint8_t serialNumberSize = 3;
-  
+
   pinMode(WB_IO2, OUTPUT);
   digitalWrite(WB_IO2, HIGH);
 
@@ -176,24 +176,24 @@ void setup()
       break;
     }
   }
-  
+
   Serial.println("RAK12047 SGP40 example");
 
   Wire.begin();
   sgp40.begin(Wire);
 
   error = sgp40.getSerialNumber(serialNumber, serialNumberSize);
-  if (error) 
+  if (error)
   {
     Serial.print("Error trying to execute getSerialNumber(): ");
     errorToString(error, errorMessage, 256);
     Serial.println(errorMessage);
-  } 
-  else 
+  }
+  else
   {
     Serial.print("Serial Number:");
     Serial.print("0x");
-    for (size_t i = 0; i < serialNumberSize; i++) 
+    for (size_t i = 0; i < serialNumberSize; i++)
     {
       uint16_t value = serialNumber[i];
       Serial.print(value < 4096 ? "0" : "");
@@ -206,26 +206,26 @@ void setup()
 
   uint16_t testResult;
   error = sgp40.executeSelfTest(testResult);
-  if (error) 
+  if (error)
   {
     Serial.print("Error trying to execute executeSelfTest(): ");
     errorToString(error, errorMessage, 256);
     Serial.println(errorMessage);
-  } 
-  else if (testResult != 0xD400) 
+  }
+  else if (testResult != 0xD400)
   {
     Serial.print("executeSelfTest failed with error: ");
     Serial.println(testResult);
   }
 }
 
-void loop() 
+void loop()
 {
   uint16_t  error;
   char      errorMessage[256];
   uint16_t  srawVoc   = 0;
   float     vocIndex  = 0;
-  /* 
+  /*
    * @brief Set the relative humidity and temperature in the current environment.
    *        Temperature and humidity calibration has been performed inside the sensor.
    *        RH/ticks=RH/%×65535/100
@@ -233,17 +233,17 @@ void loop()
    */
   uint16_t  defaultRh = 0x8000;  // 50 %RH
   uint16_t  defaultT  = 0x6666;  // 25 ℃
-  
+
   delay(1000);
-  
+
   error = sgp40.measureRawSignal(defaultRh, defaultT, srawVoc);
-  if (error) 
+  if (error)
   {
     Serial.print("Error trying to execute measureRawSignal(): ");
     errorToString(error, errorMessage, 256);
     Serial.println(errorMessage);
-  } 
-  else 
+  }
+  else
   {
     Serial.print("SRAW_VOC:");
     Serial.print(srawVoc);

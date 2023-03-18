@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12021/overview/RAK12021_home.png
+rak_img: /assets/images/wisblock/rak12021/RAK12021.png
 rak_desc: RAK12021 is a WisBlock RGB Sensor that extends the WisBlock system which is based on TCS37725FN from AMS. The Red, Green, Blue, and Clear (RGBC) light sensing can be obtained via I2C interface.
 rak_grp: [wisblock, wissensor]
 prev: ../../
@@ -35,15 +35,15 @@ RAK12021 is a WisBlock RGB Sensor that extends the WisBlock system which is base
 
 * **Sensor specifications**
     * RGB sensor module
-    * Color light sensing with IR-Blocking filter 
+    * Color light sensing with IR-Blocking filter
     * Proximity detection
-    * Maskable light and proximity interrupt 
+    * Maskable light and proximity interrupt
     * Low power (2.5&nbsp;uA sleep current)
     * I2C interface
     * 3.3&nbsp;V power supply
     * Current Consumption: 2.5&nbsp;uA - 235&nbsp;uA
     * Chipset: AMS TCS37725FN
-  
+
 * **Size**
     * 10 x 10&nbsp;mm
 
@@ -51,6 +51,6 @@ RAK12021 is a WisBlock RGB Sensor that extends the WisBlock system which is base
 
 To use a **RAK12021**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides power supply to the **RAK12021** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
-::: warning ⚠️ WARNING    
+::: warning ⚠️ WARNING
 Make sure to fix the module with the screws to ensure a proper function.
 :::

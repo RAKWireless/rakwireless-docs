@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information for your RAK12017 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12017/overview/RAK12017_home.png
+rak_img: /assets/images/wisblock/rak12017/RAK12017.png
 tags:
   - datasheet
   - wisblock
@@ -15,7 +15,7 @@ next: false
 
 ### Description
 
-The RAK12017 is an IR detection module. This module uses ITR20001 optical switch from Everlight to detect whether the IR Signal reflects. Sample applications of this module are: to identify if an object is approaching and check changes between black and white lines. 
+The RAK12017 is an IR detection module. This module uses ITR20001 optical switch from Everlight to detect whether the IR Signal reflects. Sample applications of this module are: to identify if an object is approaching and check changes between black and white lines.
 
 
 ### Features
@@ -30,7 +30,7 @@ The RAK12017 is an IR detection module. This module uses ITR20001 optical switch
 
 ## Specifications
 
-### Overview 
+### Overview
 
 #### Mounting
 
@@ -68,7 +68,7 @@ The RAK12017 WisBlock IR Detection Sensor Module comprises a standard WisBlock c
   width="80%"
   caption="RAK12017 WisBlock IR Detection Module Pinout"
 />
-  
+
 
 #### Electrical Characteristics
 
@@ -122,6 +122,6 @@ The RAK12017 WisBlock IR Detection Sensor Module comprises a standard WisBlock c
 - **D1** is an LED used as an indicator light.
 - **J2** is used for cable when the module is out of the base.
 :::
-​      
+​
 
 

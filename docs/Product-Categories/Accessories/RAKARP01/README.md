@@ -1,6 +1,6 @@
 ---
 rak_desc: A high-gain directional antenna specifically useful in scenarios where directional signal reception is necessary.
-rak_img: /assets/images/accessories/rakarp01/overview/unipolarization-plate.png
+rak_img: /assets/images/accessories/rakarp01/unipolarization-plate.png
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak19012/overview/RAK19012_home.png
+rak_img: /assets/images/wisblock/rak19012/RAK19012.png
 rak_desc: RAK19012 is a WisBlock USB LiPo Solar Power Slot Module that comprises a USB C connector, a Li-Po battery connector with an onboard charger, a solar panel connector, a reset push button, a charging LED status, and a power connector that can connect with the WisBlock Base board.
 rak_grp: [wisblock, wisbase]
 next: ../Quickstart/
@@ -30,15 +30,15 @@ RAK19012 WisBlock USB LiPo Solar Power Slot Module is a power board that compris
 * Compatible to LiPo rechargeable battery
 * Solar panel connector for battery charging
 * Onboard battery charger chip
-* LED for charging status and user configurable LEDs 
+* LED for charging status and user configurable LEDs
 * **Size**: 30 x 20&nbsp;mm
 
 ## Prerequisites
 
 To use a **RAK19012**, you need at least a **WisBlock Base** Board with Power Slot to plug the module in. Furthermore, you need a **WisBlock Core** module to control the two user LEDs.
 
-:::warning ⚠️ WARNING    
-- Make sure to fix the module with the screws to ensure a proper function. 
+:::warning ⚠️ WARNING
+- Make sure to fix the module with the screws to ensure a proper function.
 - On rechargeable batteries, only 3.7-4.2&nbsp;V rechargeable Li-Ion batteries are supported. Do not use other types of rechargeable batteries with the system.
-- Only 5&nbsp;V solar panels (up to 6&nbsp;V) are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts. 
+- Only 5&nbsp;V solar panels (up to 6&nbsp;V) are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
 :::

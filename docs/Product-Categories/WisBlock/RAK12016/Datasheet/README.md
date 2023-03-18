@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK12016 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12016/overview/RAK12016_home.png
+rak_img: /assets/images/wisblock/rak12016/RAK12016.png
 tags:
   - datasheet
   - wisblock
@@ -28,7 +28,7 @@ RAK12016 is a flex sensor module, a part of the RAKWireless WisBlock Sensor seri
 - Measure bending between 1 to 180 degrees
 - Accuracy to 1 degree
 - 3.3&nbsp;V Power Supply
-- Chipset: Spectrasymbol FS-L-0095-103-ST 
+- Chipset: Spectrasymbol FS-L-0095-103-ST
 - Module size: 15 X 25&nbsp;mm
 
 ## Specifications
@@ -47,7 +47,7 @@ The RAK12016 WisBlock Flex Sensor Module can be mounted to the IO slot of the [W
 
 ::: tip 📝 NOTE
 - By using a JST PH2.54 Connector (J2), the flex sensor (FS-L-0095-103-ST) can also be an external module that is outside of the WisBlock unit, so it can measure bending on all kinds of objects.
-::: 
+:::
 
 ### Hardware
 
@@ -72,7 +72,7 @@ The RAK12016 WisBlock Flex Sensor Module comprises a standard WisBlock connector
 ::: tip 📝 NOTE
 - Only **I2C** related pins, **3V3_S**, **GND**, and **ALERT** are connected to the WisConnector.
 - **3V3_S** voltage output from the WisBlock Base that powers the RAK12016 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12016 module.
-:::  
+:::
 
 #### Electrical Characteristics
 

@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak19016/overview/RAK19016_home.png
+rak_img: /assets/images/wisblock/rak19016/RAK19016.png
 rak_desc: RAK19016 is a WisBlock 5-24V Power Slot Module. It comprises a 3-pin screw terminal connector, Li-Po battery connector, an on-board charger, LED charge indicator, two user-configurable LEDs, a reset button, and a power connector that can connect with the WisBlock Base board.
 rak_grp: [wisblock, wisbase]
 next: ../Quickstart/
@@ -32,7 +32,7 @@ This power module is designed to enable WisBlock to be powered by higher voltage
 * Uses three-pin screw terminal connector
 * Compatible with LiPo rechargeable battery
 * On-board battery charger chip
-* LED for charging status and user-configurable LEDs 
+* LED for charging status and user-configurable LEDs
 * Applicable to industrial and enterprise setting
 * Module size: 30 x 20&nbsp;mm
 
@@ -40,7 +40,7 @@ This power module is designed to enable WisBlock to be powered by higher voltage
 
 To use a **RAK19016**, you need at least a **WisBlock Base** Board with Power Slot to plug the module in. Furthermore, you need a **WisBlock Core** module to control the two user LEDs.
 
-:::warning ⚠️ WARNING    
-- Make sure to fix the module with the screws to ensure a proper function. 
+:::warning ⚠️ WARNING
+- Make sure to fix the module with the screws to ensure a proper function.
 - On rechargeable batteries, only 3.7-4.2&nbsp;V rechargeable LiPo or Li-Ion batteries are supported. Do not use other types of rechargeable batteries with the system.
 :::

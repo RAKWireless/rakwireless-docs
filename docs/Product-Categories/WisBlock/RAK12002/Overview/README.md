@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12002/overview/rak12002_home.png
+rak_img: /assets/images/wisblock/rak12002/RAK12002.png
 rak_desc: The RAK12002 is a Real-Time Clock module, part of the RAK Wireless WisBlock Series. The RTC chip is an RV-3028-C7 from Micro Crystal and uses the I2C interface.
 rak_grp: [wisblock, wisextra]
 prev: ../../
@@ -23,7 +23,7 @@ Thank you for choosing **RAK12002 WisBlock RTC module** in your awesome IoT Proj
 * [24-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M24S1003K6M.stp)
 * [WisBlock Sensor Tutorial](/Knowledge-Hub/Learn/WisBlock-Sensor-Tutorial/)
 
-**Examples**: 
+**Examples**:
 
 For All WisBlock Core Modules:
 
@@ -51,6 +51,6 @@ The RAK12002 is a Real-Time Clock module, part of the RAKwireless WisBlock Serie
 
 To use a **RAK12002**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK12002** module. Furthermore, you need a **WisBlock Core** module to use the module.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 Make sure to fix the module with the screws to ensure a proper function.
 :::

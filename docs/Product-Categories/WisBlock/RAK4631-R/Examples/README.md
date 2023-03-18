@@ -1,6 +1,6 @@
 ---
-rak_desc: Contains several examples In using the RAK4631-R.
-rak_img: /assets/images/wisblock/rak4631-r/overview/RAK4631-R_home.png
+rak_desc: Contains several examples in using the RAK4631-R.
+rak_img: /assets/images/wisblock/rak4631-r/RAK4631-R.png
 prev: ../Quickstart/
 next: ../AT-Command-Manual/
 tags:
@@ -11,7 +11,7 @@ tags:
 
 # RAK4631-R Demo and Example
 
-This section assumes that you are already checked the [RAK4631-R Quick Start Guide](/Product-Categories/WisBlock/RAK4631-R/Quickstart/) and are already familiar with the hardware and software components of the RAK4631-R. If not yet, it is highly encouraged that you check the [Quick Start Guide](/Product-Categories/WisBlock/RAK4631-R/Quickstart/) first. There are many things you can do with RAK4631-R and the WisBlock ecosystem. 
+This section assumes that you are already checked the [RAK4631-R Quick Start Guide](/Product-Categories/WisBlock/RAK4631-R/Quickstart/) and are already familiar with the hardware and software components of the RAK4631-R. If not yet, it is highly encouraged that you check the [Quick Start Guide](/Product-Categories/WisBlock/RAK4631-R/Quickstart/) first. There are many things you can do with RAK4631-R and the WisBlock ecosystem.
 
 In this section, both examples for basic LoRaWAN and BLE applications are covered:
 
@@ -41,7 +41,7 @@ LoRaWAN gateway models like WisGate Edge have built-in network servers. It is al
 :::
 
 These are three main things you need to have a working LoRaWAN application.
- 
+
 - LoRaWAN Gateway (this guide uses RAK7268 WisGate Edge gateway)
 - LoRaWAN Network Server (this guide uses RAK7268 WisGate Edge built-in LoRaWAN network server)
 - LoRaWAN End-Device (RAK4631-R in this guide)
@@ -148,9 +148,9 @@ Refer to the [hardware setup guide of RAK1901](https://docs.rakwireless.com/Prod
 Just follow the hardware setup and do not proceed with the software configurations on the quick start guides of RAK1901 and RAK1902. The LoRaWAN application example in this guide requires different libraries to the modules' quick start guides.
 :::
 
-After you connect the modules to the WisBlock Base, you need to add the required compatible libraries for RAK1901 and RAK1902. You need to download both the [RAK1901 library](https://downloads.rakwireless.com/RUI/RUI3/Library/RAKwireless_RAK1901_Temperature_and_Humidity_SHTC3.zip) and [RAK1902 library](https://downloads.rakwireless.com/RUI/RUI3/Library/RAKwireless_RAK1902_Pressure_LPS22HB.zip). Other RAK developed libraries compatible with RAK4631-R can also be found in the [RAK download site](https://downloads.rakwireless.com/RUI/RUI3/Library/).    
+After you connect the modules to the WisBlock Base, you need to add the required compatible libraries for RAK1901 and RAK1902. You need to download both the [RAK1901 library](https://downloads.rakwireless.com/RUI/RUI3/Library/RAKwireless_RAK1901_Temperature_and_Humidity_SHTC3.zip) and [RAK1902 library](https://downloads.rakwireless.com/RUI/RUI3/Library/RAKwireless_RAK1902_Pressure_LPS22HB.zip). Other RAK developed libraries compatible with RAK4631-R can also be found in the [RAK download site](https://downloads.rakwireless.com/RUI/RUI3/Library/).
 
-To add the needed libraries, you need to open Arduino IDE and click **Sketch**, **Include Library**, then **Add .ZIP Library**. 
+To add the needed libraries, you need to open Arduino IDE and click **Sketch**, **Include Library**, then **Add .ZIP Library**.
 
 <rk-img
   src="/assets/images/wisblock/rak4631-r/examples/1_add_library.png"
@@ -223,7 +223,7 @@ RAK4631-R supports the following regions:
 
 :::
 
-- You can also modify other parameters in the code. But to run the example code successfully, you will only need to update these three parameters. 
+- You can also modify other parameters in the code. But to run the example code successfully, you will only need to update these three parameters.
 
 After configuring the important LoRaWAN parameters in code, you need to ensure that you selected the **RAK4631-R WisBlock Core** and connected to the right **COM port**. If you do not see **RAK4631-R** in your board selection, you must check the [Software Initial Guide](/Product-Categories/WisBlock/RAK4631-R/Quickstart/#rak4631-r-board-support-package-in-arduino-ide) from the quick start guide.
 
@@ -299,13 +299,13 @@ You can also check on the LoRaWAN network server of RAK7268 that your device is 
 Download the nRF Connect Mobile Application for your iOS Phone [here](https://apps.apple.com/us/app/nrf-connect/id1054362403?ls=1)
 :::
 
-3.  Make sure the Bluetooth on your mobile is turned on. 
+3.  Make sure the Bluetooth on your mobile is turned on.
 4. Open the **nRF Connect** Mobile application, and you will see all BLE devices in range in the scan list.
 5. Press the reset button on the RAK4631-R and wait for a couple of seconds. Look for a BLE Device named "RAK" in the scan list of the app. Connect to this device, click **“Client"**, and choose **“Temperature Measurement".**
 
 
 ::: tip 📝 NOTE
-This will be only visible for 60 seconds. 
+This will be only visible for 60 seconds.
 
 By default, the BLE signal of the RAK4631-R  is turned off automatically if no connection is established after 60 seconds. Connect to the BLE signal of the RAK4631-R immediately after pressing the reset button.
 
@@ -351,7 +351,7 @@ void setup()
 ```
 
 3. Click the **Verify** icon to verify the sample code after the process is completed.
-   
+
 
 
 <rk-img
@@ -374,7 +374,7 @@ Take note that the `AppData` folder is hidden, so you must change the setting of
 
 For Linux (Ubuntu 20.04), you can find it in path `/tmp/arduino_build_xxxxxx/projectname.ino.zip`. It is not a hidden folder and can be accessed via file explorer or Linux shell.
 
-For macOS, you can find it in this path, `/var/folders/h8/gftf60cn2znct5wjwkwlxdd00000gn/T/arduino_build_xxxxxx/projectname.ino.zip`. 
+For macOS, you can find it in this path, `/var/folders/h8/gftf60cn2znct5wjwkwlxdd00000gn/T/arduino_build_xxxxxx/projectname.ino.zip`.
 The `/var` is under the `private` hidden folder. To access it, you have to open Finder in macOS, and press in your keyboard SHIFT+COMMAND+G and then you need to input directly the `/var` in the search textbox.
 :::
 
@@ -384,16 +384,16 @@ The `/var` is under the `private` hidden folder. To access it, you have to open 
   caption="DFU file as RAK4631.ino.zip on Windows OS"
 />
 
-### Download DFU Package and Open nRF Toolbox 
+### Download DFU Package and Open nRF Toolbox
 
 1. Download and install [nRF Toolbox](https://apps.apple.com/tw/app/nrf-toolbox/id820906058) for BLE developed by Nordic Semiconductor. The App is available in App Store.
 2. Download the DFU package of the RAK4631-R and save it on your mobile phone.
 
-3.  Make sure the Bluetooth on your mobile is turned on. 
+3.  Make sure the Bluetooth on your mobile is turned on.
 4.  Open the **nRF Toolbox** Mobile application, and you will see **Device Firmware Upgrade(DFU) in** the support list.
 
 ::: tip 📝 NOTE
-You can upload the RAK4631.ino (ZIP) file to [iCloud Services](https://www.icloud.com/) and download it to your smartphone. 
+You can upload the RAK4631.ino (ZIP) file to [iCloud Services](https://www.icloud.com/) and download it to your smartphone.
 
 :::
 
@@ -422,7 +422,7 @@ You can upload the RAK4631.ino (ZIP) file to [iCloud Services](https://www.iclou
 />
 
 ::: tip 📝 NOTE
-You can upload the **RAK4631.ino (ZIP)** file **to iCloud Services and** download it to your smartphone. 
+You can upload the **RAK4631.ino (ZIP)** file **to iCloud Services and** download it to your smartphone.
 https://www.icloud.com/
 :::
 
@@ -462,7 +462,7 @@ https://www.icloud.com/
 1. Unplug the USB connection to use a Rechargeable Battery 18650 instead.
 2. Refer to the [Compile an Example to do Device Firmware Upgrade](#compile-an-example-to-do-device-firmware-upgrade) to Open an Example: example_rak4631. You can use the example_rak4631 to do the demonstration.
 3. Refer to the [Download DFU package and Open nRF Toolbox](#download-dfu-package-and-open-nrf-toolbox) and open the nRF Toolbox Mobile application. You will see Universal Asynchronous Receiver /Transmitter(UART) in the support list.
-4.  Make sure the Bluetooth on your mobile is turned on. 
+4.  Make sure the Bluetooth on your mobile is turned on.
 
 <rk-img
   src="/assets/images/wisblock/rak4631-r/quickstart/battery-ble/Picture59.jpg"

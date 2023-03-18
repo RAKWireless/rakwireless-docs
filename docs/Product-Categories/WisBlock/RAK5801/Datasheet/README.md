@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK5801 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak5801/overview/RAK5801_home.png
+rak_img: /assets/images/wisblock/rak5801/RAK5801.png
 tags:
   - datasheet
   - wisblock
@@ -15,11 +15,11 @@ next: false
 
 ### Description
 
-The RAK5801 WisBlock Interface module was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module. 
+The RAK5801 WisBlock Interface module was designed to be part of a production-ready IoT solution in a modular way and must be combined with a WisBlock Core and a Base module.
 
 The RAK5801 is a 4-20&nbsp;mA current loop extension module that allows the users to make an IoT solution for analog sensors with a 4-20&nbsp;mA interface. This module converts the 4-20&nbsp;mA current signal into voltage range supported by the WisBlock Core module (MCU) for further digitalization and data transmission.
 
-The RAK5801 module features two input channels of 4-20&nbsp;mA. Inside, a high-precision operational amplifier is used for signal amplification and conversion and supports a wide range of operating temperatures. 
+The RAK5801 module features two input channels of 4-20&nbsp;mA. Inside, a high-precision operational amplifier is used for signal amplification and conversion and supports a wide range of operating temperatures.
 
 This module integrates a 12&nbsp;V power supply, which can be used to power external sensors. The RAK5801 can be connected to 2-wire, 3-wire, or 4-wire types of 4-20&nbsp;mA sensor. The module external interface is reached by a fast crimping terminal that allows connection for the 4-20&nbsp;mA sensors (including power) and to the I2C bus. The fast crimping terminals can be used without the need of special tools, which simplifies the installation process on the field.
 
@@ -60,7 +60,7 @@ Once the signal is digitalized, you can recover the original current value by ap
 
 Where **U** is the ADC reading and **I** the sensor current.
 
-As shown in **Figure 1**, the module provides an output of 12&nbsp;V for powering passive 4-20&nbsp;mA sensors. This 12&nbsp;V output is boosted by an internal DC-DC booster. The enable pin allows to control the power conversion module and set the RAK5801 module into a low power consumption mode. 
+As shown in **Figure 1**, the module provides an output of 12&nbsp;V for powering passive 4-20&nbsp;mA sensors. This 12&nbsp;V output is boosted by an internal DC-DC booster. The enable pin allows to control the power conversion module and set the RAK5801 module into a low power consumption mode.
 
 ### Hardware
 
@@ -104,7 +104,7 @@ This section covers the pin number of the sensor connector, the definition, and 
 />
 
 :::tip 📝 NOTE:
-**A0** cannot be used as an analog input channel by default because it is used for measuring battery voltage. But if you need to use **A0**, there are few hardware modifications needed to configure. 
+**A0** cannot be used as an analog input channel by default because it is used for measuring battery voltage. But if you need to use **A0**, there are few hardware modifications needed to configure.
 
 To enable **A0** as an additional channel:
 
@@ -130,7 +130,7 @@ To enable **A0** as an additional channel:
 | 8              | Analog input 1                        |
 
 
-**Figure 4** shows the pin order for the IO connector of the module. Through this connector, the RAK5801 module is attached to the WisBoard baseboard. 
+**Figure 4** shows the pin order for the IO connector of the module. Through this connector, the RAK5801 module is attached to the WisBoard baseboard.
 
 <br>
 
@@ -211,20 +211,20 @@ Since a WisBlock module can be combined with a variety of different functional m
 |                      | RAK4202              | Refer to Note 2 for hardware adaptions to the RAK5005-O and RAK5801.           |
 |                      | RAK4261              | Refer to Note 3 for hardware adaptions to the RAK5005-O and RAK5801.           |
 
-:::tip 📝 NOTE 
+:::tip 📝 NOTE
 <b> 1. The RAK5801+RAK4601 </b> <br>
 The RAK5801 is not compatible with RAK4601. The main reason is that RAK4601 doesn’t expose any ADC pin through the RAK5005-O baseboard.
 :::
 
-:::tip 📝 NOTE 
-<b> 2. RAK5801+RAK4202+RAK5005-O </b> 
+:::tip 📝 NOTE
+<b> 2. RAK5801+RAK4202+RAK5005-O </b>
 
-In order to combine a RAK5801 module, a RAK4202 (WisBlock Core module), and the RAK5005-O, the following modification must be introduced: 
+In order to combine a RAK5801 module, a RAK4202 (WisBlock Core module), and the RAK5005-O, the following modification must be introduced:
 - In RAK5005-O, remove the R7 resistor, as shown in **Figure 8**.
 - In RAK5801, remove R94 to R95 resistors. Use **PA0 of STM32L151** to read the analog data of the channel “analog0” and **PA2 of STM32L151** to read the analog data of Channel analog1. **Figure 9** shows the resistors R94 and R95 on the RAK5801 module.
 
-This combination has the following restriction: 
-- The adapted RAK5005-O module will not be able to sense the battery voltage anymore. 
+This combination has the following restriction:
+- The adapted RAK5005-O module will not be able to sense the battery voltage anymore.
 :::
 
 <rk-img
@@ -239,15 +239,15 @@ This combination has the following restriction:
   caption="R94 and R95 on RAK5801."
 />
 
-:::tip 📝 NOTE 
+:::tip 📝 NOTE
 
 <b> 3. RAK5801+RAK4261+RAK5005-O </b>
 
-In order to combine a RAK5801 module, a RAK4261(WisBlock Core module), and the RAK5005-O, the following modification must be introduced: 
+In order to combine a RAK5801 module, a RAK4261(WisBlock Core module), and the RAK5005-O, the following modification must be introduced:
 
-- In RAK5005-O, remove the R7 resistor. See **Figure 8**. 
+- In RAK5005-O, remove the R7 resistor. See **Figure 8**.
 - In RAK5801, remove R94 to R95 resistors (see **Figure 9**). Use **PA08 of ATSAMR34** to read the analog data of the channel “analog0” and **PA09 of ATSAMR34** to read the analog data of Channel analog1.
 
-This combination has the following restriction: 
-- The adapted RAK5005-O module will not be able to sense the battery voltage anymore. 
+This combination has the following restriction:
+- The adapted RAK5005-O module will not be able to sense the battery voltage anymore.
 :::

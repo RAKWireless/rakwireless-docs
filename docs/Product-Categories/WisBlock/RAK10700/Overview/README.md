@@ -1,12 +1,12 @@
 ---
-rak_img: /assets/images/wisblock/rak10700/overview/RAKBox-B2-Enclosure.png
-rak_desc: RAK10700 WisBlock GNSS Tracker for LoRaWAN is a ready-to-use WisBlock Solution. It is a location tracker built with WisBlock modules - RAK4631 Core module, the RAK12500 GNSS location module, the RAK1906 environment sensor, and the RAK1904 3-axis acceleration sensor. It comes assembled in an IP65 enclosure.  
+rak_img: /assets/images/wisblock/rak10700/RAKBox-B2-Enclosure.png
+rak_desc: RAK10700 WisBlock GNSS Tracker for LoRaWAN is a ready-to-use WisBlock Solution. It is a location tracker built with WisBlock modules - RAK4631 Core module, the RAK12500 GNSS location module, the RAK1906 environment sensor, and the RAK1904 3-axis acceleration sensor. It comes assembled in an IP65 enclosure.
 rak_grp: [wisblock,wissol]
 prev: ../../
 next: ../Quickstart/
 tags:
     - GNSS Tracker for LoRaWAN
-    
+
 ---
 
 # RAK10700 WisBlock GNSS Tracker for LoRaWAN

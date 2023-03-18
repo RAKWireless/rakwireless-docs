@@ -1,6 +1,6 @@
 ---
 rak_desc: RAK18030 is a WisBlock Audio that extends the WisBlock system based on SPK0641HT4H-1 from Knowles. It is a mono PDM microphone module with a ready-to-use SW library and tutorial, making it easy to achieve rich applications.
-rak_img: /assets/images/wisblock/rak18030/overview/RAK18030_home.png
+rak_img: /assets/images/wisblock/rak18030/RAK18030.png
 rak_grp: [wisblock, microphone]
 prev: ../../
 next: ../Quickstart/
@@ -43,7 +43,7 @@ RAK18030 is a WisBlock Audio that extends the WisBlock system based on the SPK06
     * Low distortion of 2.2% at 115&nbsp;dB SPL
     * 64.5&nbsp;dB(A) Signal-to-Noise Ratio
     * Omnidirectional sensitivity
-    
+
 * **Module Size**
     * 15 x 25&nbsp;mm
 
@@ -51,6 +51,6 @@ RAK18030 is a WisBlock Audio that extends the WisBlock system based on the SPK06
 
 To use a **RAK18030**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** provides a power supply to the **RAK18030** module. Furthermore, you need a **WisBlock Core** module to use the **RAK18030** module.
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with screws to ensure proper function. 
+:::warning ⚠️ WARNING
+Make sure to fix the module with screws to ensure proper function.
 :::

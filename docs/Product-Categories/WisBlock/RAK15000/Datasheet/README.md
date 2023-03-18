@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK15000 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak15000/overview/RAK15000_home.png
+rak_img: /assets/images/wisblock/rak15000/RAK15000.png
 tags:
   - datasheet
   - wisblock
@@ -56,7 +56,7 @@ The RAK15000 module can be mounted on slots: A, B, C, or D of the WisBlock Base 
 
 ### Hardware
 
-The hardware specification is categorized into five parts. It covers the chipset of the module and discusses the pinouts and their corresponding functions and diagrams. It also presents the parameters and their standard values in terms of electrical and mechanical of the RAK15000 WisBlock EEPROM Module. 
+The hardware specification is categorized into five parts. It covers the chipset of the module and discusses the pinouts and their corresponding functions and diagrams. It also presents the parameters and their standard values in terms of electrical and mechanical of the RAK15000 WisBlock EEPROM Module.
 
 #### Chipset
 
@@ -66,10 +66,10 @@ The hardware specification is categorized into five parts. It covers the chipset
 
 #### Pin Definition
 
-The RAK15000 WisBlock Sensor module comprises a standard 24-pin WisConnector. The IO WisConnector allows the RAK15000 module to be mounted on a WisBlock baseboard, such as the RAK5005-O. The pin order of the WisConnector and the pinout definition is shown in **Figure 3**. 
+The RAK15000 WisBlock Sensor module comprises a standard 24-pin WisConnector. The IO WisConnector allows the RAK15000 module to be mounted on a WisBlock baseboard, such as the RAK5005-O. The pin order of the WisConnector and the pinout definition is shown in **Figure 3**.
 
 :::tip 📝 NOTE:
-Only the I2C related pins, 3V3_S, and GND are connected to this module.    
+Only the I2C related pins, 3V3_S, and GND are connected to this module.
 :::
 
 <rk-img

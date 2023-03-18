@@ -223,7 +223,7 @@ If MAC is 6 bytes and x is passed as 2, the return value will be position [2] in
 This API is used to set the current transmit power level for the module's radio.
 
 ```c
-api.ble.setting.txPower.set(txpwr)
+api.ble.settings.txPower.set(txpwr)
 ```
 
 
@@ -239,7 +239,7 @@ api.ble.setting.txPower.set(txpwr)
 This API is used to get the current transmit power level (in dBm).
 
 ```c
-api.ble.setting.txPower.get()	
+api.ble.settings.txPower.get()	
 ```
 
 
@@ -254,7 +254,7 @@ api.ble.setting.txPower.get()
 This API is used to set the time interval between two consecutive advertisements of Bluetooth low energy peripherals.
 
 ```c
-)api.ble.setting.advertiseInterval.set(adv_interval)
+)api.ble.settings.advertiseInterval.set(adv_interval)
 ```
 
 
@@ -270,7 +270,7 @@ This API is used to set the time interval between two consecutive advertisements
 This API is used to get the current advertisement interval.
 
 ```c
-api.ble.setting.advertiseInterval.get()
+api.ble.settings.advertiseInterval.get()
 ```
 
 
@@ -286,7 +286,7 @@ api.ble.setting.advertiseInterval.get()
 This API sets the name for this device. It is used in advertisement and as the Device Name available to a connected peer.
 
 ```c
-api.ble.setting.broadcastName.set(ble_name, device_name_length)
+api.ble.settings.broadcastName.set(ble_name, device_name_length)
 ```
 
 
@@ -303,7 +303,7 @@ api.ble.setting.broadcastName.set(ble_name, device_name_length)
 This API is used to get the current BLE device name.
 
 ```c
-api.ble.setting.broadcastName.get()
+api.ble.settings.broadcastName.get()
 ```
 
 
@@ -378,7 +378,7 @@ api.ble.advertise.status()
 This API is used to support the current BLE UART Service mode switch to beacon mode.
 
 ```c
-api.ble.setting.blemode(ble_mode)
+api.ble.settings.blemode(ble_mode)
 ```
 
 

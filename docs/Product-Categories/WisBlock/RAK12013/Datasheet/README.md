@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK12013 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12013/overview/RAK12013_home.png
+rak_img: /assets/images/wisblock/rak12013/RAK12013.png
 tags:
   - datasheet
   - wisblock
@@ -26,7 +26,7 @@ RAK12013 is a 3.2GHz microwave radar module based on RCWL-9196. It uses the Dopp
 ::: tip 📝 NOTE
 1. Radar signals don't interfere with other signals such as LoRa, WiFi, and Bluetooth; but multiple radar signals interfere with each other between single individuals over a distance greater than 1 meter.
 2. The component side of the PCB module or the front is the positive sensing face, while the opposite side which is the back is the negative sensing face. The negative sensing face is less effective in terms of sensing.
-::: 
+:::
 
 ### Features
 
@@ -67,7 +67,7 @@ The hardware specification is categorized into five (5) parts. It shows the chip
 
 #### Pin Definition
 
-The RAK12013 module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 3**. 
+The RAK12013 module has a 40-pin WisConnector that is compatible to the WisBlock Base IO Slot. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 <rk-img
   src="/assets/images/wisblock/rak12013/datasheet/RAK12013_Pinout.svg"
@@ -80,7 +80,7 @@ The RAK12013 module has a 40-pin WisConnector that is compatible to the WisBlock
 - **EN** is used to enable the module.
 - **OUT** is the output signal from the module.
 - **3V3_S** voltage output from the WisBlock Base that powers the RAK12013 module can be controlled by the WisBlock Core via WB_IO2 (WisBlock IO2 pin). This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK12013 module.
-::: 
+:::
 
 #### Electrical Characteristics
 

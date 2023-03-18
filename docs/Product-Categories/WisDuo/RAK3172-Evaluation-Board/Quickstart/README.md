@@ -258,7 +258,7 @@ Once the Arduino IDE has been installed successfully, you can now configure the 
 :::tip 📝 NOTE:
 RAK3172-E should automatically go to BOOT mode when the firmware is uploaded via Arduino IDE.
 <br>
-If BOOT mode is not initiated, double click the reset button to force BOOT mode.
+If BOOT mode is not initiated, you can manually send `AT+BOOT` command to start bootloader mode.
 :::
 
 <rk-img
@@ -2432,7 +2432,7 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
 :::tip 📝 NOTE:
 RAK3172-E should automatically go to BOOT mode when the firmware is uploaded via RAK DFU Tool or WisToolBox.
 
-If BOOT mode is not initiated, double click the reset button to force BOOT mode.
+If BOOT mode is not initiated, you can manually send `AT+BOOT` command to start bootloader mode.
 :::
 
 1.  Download the latest application firmware of the RAK3172.

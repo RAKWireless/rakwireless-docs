@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak12034/overview/RAK12034_home.png
+rak_img: /assets/images/wisblock/rak12034/RAK12034.png
 rak_desc: RAK12034 is a 9-axis accelerometer module, part of the RAKwireless WisBlock Sensor series. It is based on BMX160 Bosch Sensor, which is a highly integrated low-power 9-axis sensor providing precise acceleration, angular rate, and geomagnetic measurement in each spatial direction.
 rak_grp: [wisblock, wissensor]
 next: ../Quickstart/
@@ -55,6 +55,6 @@ Due to its small form factor and low-power consumption, it is ideal for smart we
 To use a **RAK12034**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK12034** module. Furthermore, you need a **WisBlock Core** module to use the sensor.
 
 
-:::warning ⚠️ WARNING    
-Make sure to fix the module with the screws to ensure a proper function.    
+:::warning ⚠️ WARNING
+Make sure to fix the module with the screws to ensure a proper function.
 :::

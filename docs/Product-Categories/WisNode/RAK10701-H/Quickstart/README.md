@@ -604,13 +604,13 @@ It is recommended to update to the latest version of the firmware. To do this, d
 2. After the firmware file is uploaded to the application, you can now select **UPGRADE DEVICE**.
 
 <rk-img
-  src="/assets/images/wisnode/rak10701/quickstart/wistoolbox-firmware-upgrade.png"
+  src="/assets/images/wisnode/rak10701/quickstart/wistoolbox-firmware-upgrade-h.png"
   width="85%"
   caption="Upload the latest firmware"
 />
 
 <rk-img
-  src="/assets/images/wisnode/rak10701/quickstart/wistoolbox-firmware-upgrade2.png"
+  src="/assets/images/wisnode/rak10701/quickstart/wistoolbox-firmware-upgrade2-h.png"
   width="85%"
   caption="Confirm upgrading of firmware"
 />
@@ -618,7 +618,7 @@ It is recommended to update to the latest version of the firmware. To do this, d
 3. If all proceed with no error, you should see `Firmware update successful` notification, and the RAK10701-H will restart automatically.
 
 <rk-img
-  src="/assets/images/wisnode/rak10701/quickstart/wistoolbox-firmware-upgrade3.png"
+  src="/assets/images/wisnode/rak10701/quickstart/wistoolbox-firmware-upgrade3-h.png"
   width="85%"
   caption="Ongoing upgrading of firmware"
 />

@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK3372 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak3372/overview/RAK4631-R_home.png
+rak_img: /assets/images/wisblock/rak3372/RAK3372.png
 prev: ../AT-Command-Manual/
 next: false
 tags:

@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak18003/overview/RAK18003_home.png
+rak_img: /assets/images/wisblock/rak18003/RAK18003.png
 rak_desc: RAK18003 WisBlock Audio module is an interposer module that allows you to use multiple WisBlock Audio boards in a single IO slot.
 rak_grp: [wisblock, interposer]
 prev: ../../
@@ -8,9 +8,9 @@ tags:
     - WisBlock Audio
     - RAK18003
     - 3PEAK
-    - TPT29555 
+    - TPT29555
     - SG MICRO CORP
-    - 5223YWQ10 
+    - 5223YWQ10
 ---
 
 # RAK18003 WisBlock Audio Interposer Module
@@ -30,7 +30,7 @@ Thank you for choosing **RAK18003 WisBlock Audio Interposer Module** in your awe
 The RAK18003 is an interposer module, part of the WisBlock Audio Series. The RAK18003 is designed to allow multiple WisBlock Audio modules to be used together on a single IO slot. It consists of two IO expanders (TPT29555-TS5R), one signal switch (5223YWQ10/TR), and connectors where other WisBlock Audio modules can be interfaced. It also has a usable TF card slot.
 
 :::tip 📝 NOTE:
-WisBlock Audio stack must have an interposer. The interposer board should be connected directly to WisBase. The PDM MIC connector connects to the interposer by the FPC connector and other modules connect to the interposer by the BTB connector. 
+WisBlock Audio stack must have an interposer. The interposer board should be connected directly to WisBase. The PDM MIC connector connects to the interposer by the FPC connector and other modules connect to the interposer by the BTB connector.
 :::
 
 ## Product Features
@@ -39,7 +39,7 @@ WisBlock Audio stack must have an interposer. The interposer board should be con
   - Interposer board
   - Extend IO for WisBlock Core to control other modules
   - FPC connector for connecting PDM MIC modules
-  - TF-card connector  
+  - TF-card connector
   - BTB connector for WisBlock Audio stack
 
 * **Module Size**
@@ -47,8 +47,8 @@ WisBlock Audio stack must have an interposer. The interposer board should be con
 
 ## Prerequisites
 
-To use a **RAK18003**, you need at least a **WisBlock Base** to plug the module in. The **WisBlock Base** provides power supply to the **RAK18003** module. Furthermore, you need the **WisBlock Core** and the **WisBlock Audio** modules to use the **RAK18003** module.   
+To use a **RAK18003**, you need at least a **WisBlock Base** to plug the module in. The **WisBlock Base** provides power supply to the **RAK18003** module. Furthermore, you need the **WisBlock Core** and the **WisBlock Audio** modules to use the **RAK18003** module.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 Make sure to fix the module with screws to ensure proper function.
 :::

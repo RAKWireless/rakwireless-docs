@@ -1,12 +1,12 @@
 ---
 rak_desc: Provides comprehensive information about your RAK18032 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak18032/overview/rak18032_home.png
+rak_img: /assets/images/wisblock/rak18032/RAK18032.png
 tags:
   - Datasheet
   - WisBlock Audio
   - RAK18032
-  - SPH0655LM4H-1 
-  - Knowles 
+  - SPH0655LM4H-1
+  - Knowles
 prev: ../Quickstart/
 next: false
 ---
@@ -32,7 +32,7 @@ RAK18032 is a WisBlock Audio that extends the WisBlock system based on the SPH06
     * High SNR
     * Bottom port
     * Omnidirectional sensitivity
-    
+
 * **Module Size**
     * 15 x 25&nbsp;mm
 
@@ -145,7 +145,7 @@ The RAK18032 WisBlock Audio PDM Microphone comprises a standard FPC connector. T
 
 ##### Board Dimensions
 
-**Figure 7** shows the dimensions and the mechanical drawing of the RAK18032 module.   
+**Figure 7** shows the dimensions and the mechanical drawing of the RAK18032 module.
 
 <rk-img
   src="/assets/images/wisblock/rak18032/datasheet/rak18032-dim.png"
@@ -166,12 +166,12 @@ The RAK18032 WisBlock Audio PDM Microphone comprises a standard FPC connector. T
 
 ##### Digital Microphone
 
-The **Pin 2** of the SPH0655LM4H-1 is used to control the MIC as a left or right channel. 
+The **Pin 2** of the SPH0655LM4H-1 is used to control the MIC as a left or right channel.
 
 - The MIC is the left channel when **Pin 2** is `HIGH`.
-- The MIC is the right channel when **Pin 2** is `LOW`. 
+- The MIC is the right channel when **Pin 2** is `LOW`.
 
-By default, the RAK18032 is the right channel. But, you can remove the 10K&nbsp;Ohms resistor on **R9** and connect it to **R8** to change the MIC to the left channel as its default. You may also use **MIC_CTR_IO1** to select the MIC as the right or left channel.  
+By default, the RAK18032 is the right channel. But, you can remove the 10K&nbsp;Ohms resistor on **R9** and connect it to **R8** to change the MIC to the left channel as its default. You may also use **MIC_CTR_IO1** to select the MIC as the right or left channel.
 
 <rk-img
   src="/assets/images/wisblock/rak18032/datasheet/rak18032-mic.png"

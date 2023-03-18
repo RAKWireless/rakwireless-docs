@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK12033 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak12033/overview/RAK12033_home.png
+rak_img: /assets/images/wisblock/rak12033/RAK12033.png
 tags:
   - datasheet
   - wisblock
@@ -23,7 +23,7 @@ next: false
 
 RAK12033 is a 6-axis Accelerometer sensor module, part of the RAKWireless WisBlock Sensor series. The module is based on IIM-42652 from TDK InvenSense. It is a smart industrial motion tracking device that supports an extended operating temperature range. The module is combined with a 3-axis gyroscope and a 3-axis accelerometer. RAK12033 can measure the angular rate and report data through a standard I2C digital interface that speeds up to 1 MHz.
 
-### Features 
+### Features
 * **Voltage supply**: 3.3&nbsp;V
 * **Current consumption**: 46.7&nbsp;uA to 959&nbsp;uA
 * **Chipset**: TDK InvenSense IIM-42652
@@ -62,22 +62,22 @@ The RAK12033 WisBlock 6-Axis Accelerometer Sensor Module comprises a standard Wi
 
 If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse depends on what slot the module is plugged in. The following table shows the default IO used for different slots:
 
-**INT1 (Interrupt Pin 1)**  
-  
+**INT1 (Interrupt Pin 1)**
+
 | SLOT C | SLOT D | SLOT E | SLOT F |
 | ------ | ------ | ------ | ------ |
 | IO3    | IO5    | IO4    | IO6    |
 
 
-**INT2 (Interrupt Pin 2)**  
-  
+**INT2 (Interrupt Pin 2)**
+
 | SLOT C | SLOT D | SLOT E | SLOT F |
 | ------ | ------ | ------ | ------ |
 | IO4    | IO6    | IO3    | IO5    |
 
 
 #### Electrical Characteristics
-  
+
 | Symbol | Description                                                                       | Min.  | Typ.  | Max.  | Unit  |
 | ------ | --------------------------------------------------------------------------------- | :---: | :---: | :---: | :---: |
 | VCC    | Power supply voltage                                                              |   -   |  3.3  |       |   V   |

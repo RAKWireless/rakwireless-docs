@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak13006/overview/RAK13006_home.png
+rak_img: /assets/images/wisblock/rak13006/RAK13006.png
 rak_desc: RAK13006 is a WisBlock Interface module that extends the WisBlock system with a CAN communication capability. It supports both CAN 2.0B and CAN FD with an arbitration bit rate up to 1 Mbps.
 rak_grp: [wisblock, wisinterface]
 prev: ../../
@@ -25,11 +25,11 @@ Thank you for choosing **RAK13006 WisBlock CAN Module** in your awesome IoT Proj
 
 ## Product Description
 
-RAK13006 is a CAN Bus communication module based on the MCP2518FD CAN controller and ATA6563 CAN transceiver both from Microchip. The MCP2518FD is the CAN chip that communicates to WisBlock Core MCU via SPI up to 17&nbsp;MHz SPI Clock Speed, and ATA6563 is the low-level physical layer chip that provides a physical connection with the CAN bus communication lines. It supports both CAN 2.0B and CAN FD with an arbitration bit rate up to 1&nbsp;Mbps. This WisBlock Interface module is ideal for industrial and automotive applications.  
+RAK13006 is a CAN Bus communication module based on the MCP2518FD CAN controller and ATA6563 CAN transceiver both from Microchip. The MCP2518FD is the CAN chip that communicates to WisBlock Core MCU via SPI up to 17&nbsp;MHz SPI Clock Speed, and ATA6563 is the low-level physical layer chip that provides a physical connection with the CAN bus communication lines. It supports both CAN 2.0B and CAN FD with an arbitration bit rate up to 1&nbsp;Mbps. This WisBlock Interface module is ideal for industrial and automotive applications.
 
 ## Product Features
 
-- Based on MCP2518FD and ATA6563 
+- Based on MCP2518FD and ATA6563
 - Arbitration Bit Rate up to 1&nbsp;Mbps
 - ISO11898-2:2016 and SAEJ2962-2 Compliant
 - Configurable terminal resistance on CANH and CANL lines via slide switch
@@ -40,6 +40,6 @@ RAK13006 is a CAN Bus communication module based on the MCP2518FD CAN controller
 
 To use a **RAK13006**, you need at least a **WisBlock Base** to plug the module in. Furthermore, you need a **WisBlock Core** module to control the module.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 Make sure to fix the module with the screws to ensure a proper function.
 :::

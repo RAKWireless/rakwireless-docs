@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK13600 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak13600/overview/RAK13600_home.png
+rak_img: /assets/images/wisblock/rak13600/RAK13600.png
 tags:
   - datasheet
   - wisblock
@@ -33,13 +33,13 @@ modes:
 
 ### Features
 
-* **Module specifications**    
-    * Based on NXP PN532   
-    * External Antenna   
-    * Low power    
+* **Module specifications**
+    * Based on NXP PN532
+    * External Antenna
+    * Low power
 
-* **Size**    
-    * 35 x 25&nbsp;mm 
+* **Size**
+    * 35 x 25&nbsp;mm
 
 ## Specifications
 

@@ -5,7 +5,7 @@ tags:
   - RAKARP01
   - datasheet
 rak_desc: Provides comprehensive information about your 860-930MHz 12dBi Directional Antenna to help you use it. This information includes technical specifications and characteristics.
-rak_img: /assets/images/accessories/rakarp01/overview/unipolarization-plate.png
+rak_img: /assets/images/accessories/rakarp01/unipolarization-plate.png
 
 ---
 
@@ -71,26 +71,26 @@ RAKARP01 is a high-gain directional antenna is the latest in the RAKwireless LPW
 #### Radiation Patterns
 
 <rk-img
-  src="/assets/images/accessories/rakarp01/datasheet/horizontal-pattern.png"
+  src="/assets/images/accessories/rakarp01/horizontal-pattern.png"
   width="70%"
   caption="Horizontal Pattern H"
 />
 
 <rk-img
-  src="/assets/images/accessories/rakarp01/datasheet/vertical-pattern.png"
+  src="/assets/images/accessories/rakarp01/vertical-pattern.png"
   width="60%"
   caption="Connectors Types"
 />
 
 <rk-img
-  src="/assets/images/accessories/rakarp01/datasheet/mounting.png"
+  src="/assets/images/accessories/rakarp01/mounting.png"
   width="60%"
   caption="Antenna installation diagram"
 />
 
 1. Determine the placement of the antenna, take it and the accessories out of the package, and prepare your tools (a wrench).
 
-2. Install the antenna to a ∅ 30 ~ 75&nbsp;mm mounting pole using the clamps, screw bolts, and saw-tooth clamps as shown in Figure 3. 
+2. Install the antenna to a ∅ 30 ~ 75&nbsp;mm mounting pole using the clamps, screw bolts, and saw-tooth clamps as shown in Figure 3.
 
 3. Position the antenna and the pole in parallel, adjust the height, then fully tighten the upper and lower clamps' nuts.
 

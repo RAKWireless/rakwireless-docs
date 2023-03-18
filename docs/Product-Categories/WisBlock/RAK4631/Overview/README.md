@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak4631/overview/RAK4631_home.png
+rak_img: /assets/images/wisblock/rak4631/RAK4631.png
 rak_desc: RAK4631 is a WisBlock Core module for RAK WisBlock. It extends the WisBlock series with a powerful Nordic nRF52840 MCU that supports Bluetooth 5.0 (Bluetooth Low Energy) and the newest LoRa transceiver from Semtech, the SX1262.
 next: ../Quickstart/
 prev: ../../
@@ -46,24 +46,24 @@ Both LoRaWAN and LoRa point-to-point connections are supported by an Arduino™ 
 
 
 ## Product Features
- 
-* Nordic nRF52840 ultra-low power MCU    
-* 32-bit ARM® Cortex™-M4 CPU    
-* 64&nbsp;MHz CPU clock    
-* 1&nbsp;MB Flash, 256&nbsp;KB RAM    
-* Semtech SX1262 low power high range LoRa transceiver     
-* LoRaWAN 1.0.2 protocol stack     
-* Bluetooth 5.0 protocol stack    
 
-* I2C, SPI, Analog inputs, Digital inputs, and outputs    
+* Nordic nRF52840 ultra-low power MCU
+* 32-bit ARM® Cortex™-M4 CPU
+* 64&nbsp;MHz CPU clock
+* 1&nbsp;MB Flash, 256&nbsp;KB RAM
+* Semtech SX1262 low power high range LoRa transceiver
+* LoRaWAN 1.0.2 protocol stack
+* Bluetooth 5.0 protocol stack
+
+* I2C, SPI, Analog inputs, Digital inputs, and outputs
 * Low power consumption
 * Chipset: Nordic nRF52840, Semtech SX1262
 
 ## Prerequisites
 
-To use a **RAK4631**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK4631** module and has the programming/debug interface.   
+To use a **RAK4631**, you need at least a **WisBlock Base** to plug the module in. **WisBlock Base** is the power supply for the **RAK4631** module and has the programming/debug interface.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 - Make sure to fix the module with the screws to ensure a proper function.
 - When using the LoRa or Bluetooth Low Energy transceivers, make sure that always an antenna is connected. Using these transceivers without an antenna can damage the system.
 :::

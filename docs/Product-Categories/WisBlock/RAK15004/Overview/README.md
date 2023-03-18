@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak15004/overview/RAK15004.png
+rak_img: /assets/images/wisblock/rak15004/RAK15004.png
 rak_desc: RAK15004 is a WisBlock FRAM Storage Module based on MB85RC512T 512Kbit (64K x 8) from FUJITSU. It is a very high endurance nonvolatile memory storage chip and can be interfaced via I2C and support High Speed-Mode at 3.4 MHz.
 rak_grp: [wisblock, wisstorage]
 prev: ../../

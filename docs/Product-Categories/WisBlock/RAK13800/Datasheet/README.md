@@ -1,6 +1,6 @@
 ---
 rak_desc: Covers the comprehensive information of your RAK13800 module to help you use it. This information includes technical specifications, characteristics, and requirements.
-rak_img: /assets/images/wisblock/rak13800/overview/RAK13800_home.png
+rak_img: /assets/images/wisblock/rak13800/RAK13800.png
 tags:
   - datasheet
   - wisblock
@@ -27,16 +27,16 @@ RAK13800 can be POE enabled by mounting its daughter power board [WisBlock RAK19
 
 - Based on WIZnet W5100S-L chip
 - Support Hardwired Internet protocols
-- Support four independent SOCKETs simultaneously  
-- Support SOCKET-less command  
-- Support Ethernet Power-down mode & Main Clock gating for power save  
-- Support WOL (Wake on LAN) over UDP 
+- Support four independent SOCKETs simultaneously
+- Support SOCKET-less command
+- Support Ethernet Power-down mode & Main Clock gating for power save
+- Support WOL (Wake on LAN) over UDP
 - SPI Host Interface
 - Internal 16Kbytes Memory for TX/RX Buffers
-- 10BaseT/100BaseTX Ethernet PHY Integrated 
-- Support Auto-Negotiation  
-- Support Auto-MDIX only when Auto-Negotiation mode    
-- Network Indicator LEDs   
+- 10BaseT/100BaseTX Ethernet PHY Integrated
+- Support Auto-Negotiation
+- Support Auto-MDIX only when Auto-Negotiation mode
+- Network Indicator LEDs
 - Supply Voltage: 2.97nbsp;V ~ 3.63&nbsp;V
 - Size: 25 x 50&nbsp;mm
 

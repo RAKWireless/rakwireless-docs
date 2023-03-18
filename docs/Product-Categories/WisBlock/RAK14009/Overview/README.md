@@ -1,6 +1,6 @@
 ---
-rak_img: /assets/images/wisblock/rak14009/overview/RAK14009_home.png
-rak_desc: RAK14009 is a 3x3 keypad module designed to be part of a production-ready IoT solution and must be combined with a RAK14004 WisBlock Keypad Module. 
+rak_img: /assets/images/wisblock/rak14009/RAK14009.png
+rak_desc: RAK14009 is a 3x3 keypad module designed to be part of a production-ready IoT solution and must be combined with a RAK14004 WisBlock Keypad Module.
 rak_grp: [wisblock, wisinterface]
 prev: ../../
 next: ../Datasheet/
@@ -21,19 +21,19 @@ Thank you for choosing **RAK14009 WisBlock 3x3 Keypad Module** in your awesome I
 
 ## Product Description
 
-**RAK14009 WisBlock 3x3 Keypad Module** was designed to be part of a production-ready IoT solution and must be combined with a [RAK14004 WisBlock Keypad Module](/Product-Categories/WisBlock/RAK14004/). 
+**RAK14009 WisBlock 3x3 Keypad Module** was designed to be part of a production-ready IoT solution and must be combined with a [RAK14004 WisBlock Keypad Module](/Product-Categories/WisBlock/RAK14004/).
 
 ## Product Features
 
-* **Module Specifications** 
+* **Module Specifications**
     * 3 x 3 matrix keypad
-* **Size**    
-    * 33&nbsp;mm x 45&nbsp;mm 
+* **Size**
+    * 33&nbsp;mm x 45&nbsp;mm
 
 ## Prerequisites
 
 To use a **RAK14009**, you need a **RAK14004 WisBlock Keypad Module** to connect the module with.
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 Make sure to fix the module with the screws to ensure a proper function.
 :::

@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK13300 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak13300/overview/RAK13300_home.png
+rak_img: /assets/images/wisblock/rak13300/RAK13300.png
 tags:
   - datasheet
   - wisblock
@@ -10,7 +10,7 @@ next: false
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13300/Certification/RAK13300_CE_Certification.pdf]
   - [FCC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13300/Certification/RAK13300_FCC_Certification.zip]
-  - [ISED, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13300/Certification/RAK13300_ISED_Certification.pdf] 
+  - [ISED, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13300/Certification/RAK13300_ISED_Certification.pdf]
   - [UKCA, https://downloads.rakwireless.com/LoRa/WisBlock/RAK13300/Certification/RAK13300_UKCA_Certification.pdf]
 ---
 
@@ -39,7 +39,7 @@ The module complies with LoRaWAN standards and supports LoRa point-to-point comm
 
 ## Specifications
 
-### Overview 
+### Overview
 
 #### Mounting
 
@@ -158,7 +158,7 @@ The table below shows the supported LoRaWAN Bands of the RAK13300 module:
 />
 
 ::: tip 📝 NOTE
-- Uses DC-DC Converter as default. 
+- Uses DC-DC Converter as default.
 - **J1** is an IPEX Connector for LoRa antenna.
 :::
 

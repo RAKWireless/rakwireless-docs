@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK19003 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak19003/overview/rak19003_home.png
+rak_img: /assets/images/wisblock/rak19003/RAK19003.png
 tags:
   - datasheet
   - wisblock
@@ -105,7 +105,7 @@ The Type-C USB connector is compliant with the USB 2.0 specification. This USB i
 
 * Smaller and reversible connector shape
 * Port can be input or output
-* Fast battery charging 
+* Fast battery charging
 
 <rk-img
   src="/assets/images/wisblock/rak19003/datasheet/usb-c-receptacle.png"
@@ -127,7 +127,7 @@ On the WisBlock Mini Base board, there are two 2.54&nbsp;mm pitch headers for th
 | 4       | SDA          | I2C1 Data       |
 
 
-###### J7 Header Pinout 
+###### J7 Header Pinout
 
 
 | **Pin** | **Pin Name** | **Description** |
@@ -138,7 +138,7 @@ On the WisBlock Mini Base board, there are two 2.54&nbsp;mm pitch headers for th
 | 4       | BOOT         | MCU Boot pin    |
 
 
-:::tip 📝 NOTE BOOT pin 
+:::tip 📝 NOTE BOOT pin
 BOOT pin is used on startup configuration or sequence of the WisBlock Core connected to it. It is commonly used for uploading the bootloader and/or application firmware. The requirements of the state of the BOOT pin depend on the specific model of the WisBlock Core used.
 :::
 
@@ -332,7 +332,7 @@ As for the following table, it shows the pin name and description of each pin in
 
 ##### Absolute Maximum Ratings
 
-The **Absolute Maximum Ratings** of the device are shown in the table below. The stress ratings are the functional operation of the device. 
+The **Absolute Maximum Ratings** of the device are shown in the table below. The stress ratings are the functional operation of the device.
 
 :::warning ⚠️WARNING
 1. If the stress rating goes above what is listed, it may cause permanent damage to the device.
@@ -365,7 +365,7 @@ The RAK19003 is designed for **low-power IoT products**. Its power supply uses a
 
 ##### Battery Connector
 
-The RAK19003 WisBlock Mini Base Board can be powered by a battery, connected to the **P2 connector**. The nominal operating voltage of the battery should be within the range shown in the following table. The matching connector for the battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199)     
+The RAK19003 WisBlock Mini Base Board can be powered by a battery, connected to the **P2 connector**. The nominal operating voltage of the battery should be within the range shown in the following table. The matching connector for the battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199)
 
 | **Minimum** | **Typical** | **Maximum** | **Unit** |
 | ----------- | ----------- | ----------- | -------- |
@@ -401,6 +401,10 @@ A 5&nbsp;V Solar Panel can be connected to the board via the **P1 connector**. T
 #### Mechanical Characteristics
 
 ##### Board Dimensions
+
+:::tip 📝 NOTE
+- You may also refer and download the [M1.2 Stand-off fastener/inserts datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/M1.2_Press-Fit_Standoff_Datasheet.zip).
+:::
 
 **Figure 10** shows the detailed mechanical dimensions of RAK19003.
 

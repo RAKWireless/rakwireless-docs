@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rak19013/overview/rak19013_home.png
+rak_img: /assets/images/wisblock/rak19013/RAK19013.png
 rak_desc: RAK19013 is a WisBlock LiPo Solar Power Slot Module that comprises a battery connector, a solar panel connector, a reset push button, a charger circuitry, a charging LED status, and a power connector that can connect with the WisBlock Base board.
 rak_grp: [wisblock, wisbase]
 next: ../Quickstart/
@@ -7,7 +7,7 @@ prev: ../../
 tags:
     - wisblock
     - RAK19013
-    - SGMICRO 
+    - SGMICRO
     - SGM6036
 ---
 
@@ -42,8 +42,8 @@ This board can be connected with the WisBlock Base board like RAK19010 through t
 
 To use a **RAK19013**, you need at least a **WisBlock Base** Board with Power Slot to plug the module in. Furthermore, you need a **WisBlock Core** module to control the two user LEDs.
 
-:::warning ⚠️ WARNING    
-- Make sure to fix the module with the screws to ensure a proper function. 
+:::warning ⚠️ WARNING
+- Make sure to fix the module with the screws to ensure a proper function.
 - On rechargeable batteries, only 3.7-4.2&nbsp;V rechargeable Li-Ion batteries are supported. Do not use other types of rechargeable batteries with the system.
-- Only 5&nbsp;V solar panels (up to 6&nbsp;V) are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts. 
+- Only 5&nbsp;V solar panels (up to 6&nbsp;V) are supported. Do not use 12&nbsp;V solar panels. It will destroy the charging unit and eventually other electronic parts.
 :::

@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK14004 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak14004/overview/RAK14004_home.png
+rak_img: /assets/images/wisblock/rak14004/RAK14004.png
 prev: ../Quickstart/
 next: false
 tags:
@@ -15,20 +15,20 @@ tags:
 
 ### Description
 
-**RAK14004 WisBlock Keypad Module** was designed to be part of a production-ready IoT solution in a modular way and must be combined with a **WisBlock Core** and a **WisBlock Base** module. 
+**RAK14004 WisBlock Keypad Module** was designed to be part of a production-ready IoT solution in a modular way and must be combined with a **WisBlock Core** and a **WisBlock Base** module.
 
 The RAK14004 module is designed as an IO extension module that allows to add a keypad and create a customized IoT solution. This module can be used in conjunction with RAK14009, RAK14010, or RAK14011 keypad modules.
 
 ### Features
 
-* **Module Specifications** 
+* **Module Specifications**
 
   * Up to 8 x 8 buttons using scan matrix arrangement
-  * 3.3&nbsp;V Power supply  
+  * 3.3&nbsp;V Power supply
   * Chipset: Microchip ATMEGA328PB-AU
 
-* **Size**    
-    * 35&nbsp;mm x 25&nbsp;mm  
+* **Size**
+    * 35&nbsp;mm x 25&nbsp;mm
 
 ## Specifications
 
@@ -70,7 +70,7 @@ The hardware specification is categorized into five parts. It shows the chipset 
 
 #### Pin Definition
 
-The RAK14004 comprises a standard WisBlock IO 40-pin connector. The WisBlock IO connector allows the RAK14004 module to be mounted on a WisBlock Base Board, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 4**. 
+The RAK14004 comprises a standard WisBlock IO 40-pin connector. The WisBlock IO connector allows the RAK14004 module to be mounted on a WisBlock Base Board, such as RAK5005-O. The pin order of the connector and the pinout definition is shown in **Figure 4**.
 
 
 :::tip 📝 NOTE:
@@ -152,7 +152,7 @@ The I2C Pull Up Resistor already exists on WisBlock Base Board. **R7** and **R8*
   caption="MCU Debug connector"
 />
 
-:::warning ⚠️ WARNING    
+:::warning ⚠️ WARNING
 Do not connect to this header or you lose the warranty and your RAK14004 will not work anymore.
 :::
 

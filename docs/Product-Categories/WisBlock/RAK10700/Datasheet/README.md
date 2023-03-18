@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information of your RAK10700 GNSS Tracker to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisblock/rak10700/overview/RAKBox-B2-Enclosure.png
+rak_img: /assets/images/wisblock/rak10700/RAKBox-B2-Enclosure.png
 prev: ../AT-Command-Manual/
 next: false
 tags:
@@ -35,7 +35,7 @@ It is a feature-packed tracker device for featured applications development. Thi
 
 ### Overview
 
-The overview shows the RAK10700 GNSS Tracker with the optional solar panel enclosure. 
+The overview shows the RAK10700 GNSS Tracker with the optional solar panel enclosure.
 
 <rk-img
   src="/assets/images/wisblock/rak10700/datasheet/RAKBox-B2-Enclosure.png"
@@ -43,7 +43,7 @@ The overview shows the RAK10700 GNSS Tracker with the optional solar panel enclo
   caption="RAK10700 WisBlock GNSS Tracker for LoRaWAN"
 />
 
-  
+
 #### Block Diagram
 
 The block diagram in **Figure 2** shows the different WisBlock modules used in the RAK10700 WisBlock GNSS Tracker for LoRaWAN and their position.
@@ -70,7 +70,7 @@ The RAK10700 WisBlock GNSS Tracker for LoRaWAN provides USB interfaces, as shown
 />
 
 - **Micro USB** - 5&nbsp;V DC power supply and UART communication.
-- Reset Button    
+- Reset Button
 
 #### Pin Definition
 
@@ -80,10 +80,10 @@ The RAK10700 GNSS Tracker is built using the RAK5005-O Base Board. Available IO 
 
 ##### Operating Frequencies
 
-The RAK4631 module used in the GNSS Tracker supports the LoRaWAN bands shown in the table below. When buying a RAK4631 module, pay attention to specify the correct core module RAK4630 H/L for your region. H stands for high-frequency regions and L for low-frequency regions.  
+The RAK4631 module used in the GNSS Tracker supports the LoRaWAN bands shown in the table below. When buying a RAK4631 module, pay attention to specify the correct core module RAK4630 H/L for your region. H stands for high-frequency regions and L for low-frequency regions.
 
 :::tip 📝 NOTE
-Detailed information about the RAK4631 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/). 
+Detailed information about the RAK4631 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
 :::
 
 | Region        | Frequency (MHz) | GNSS Tracker Solution                      |
@@ -228,4 +228,4 @@ Download the latest firmware version of GNSS Tracker in the table provided below
 
 Build your own GNSS Tracker firmware with our open-source code available on the [Github Repo](https://github.com/RAKWireless/LPWAN-Tracker-Solution). You can find their projects for both Arduino IDE and PlatformIO. The sources in the two projects are identical.
 
-You can extend the functionality of the GNSS Tracker by using these sources. You can write, as well, your own GNSS Tracker application based on these sources.    
+You can extend the functionality of the GNSS Tracker by using these sources. You can write, as well, your own GNSS Tracker application based on these sources.
