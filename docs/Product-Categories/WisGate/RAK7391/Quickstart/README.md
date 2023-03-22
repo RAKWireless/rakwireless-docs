@@ -44,7 +44,7 @@ The PoE board is specialized. A general Raspberry Pi 40-pin PoE HAT cannot be us
 
 RAK7391 utilizes a Raspberry Pi Compute Module 4 (CM4). As these come either with or without built-in eMMC, there are two options to use:
 
-- For models with eMMC storage (CM4 Lite version) – utilize a Micro SD card the same way it is used for a Raspberry Pi 4 (RPi 4).
+- For models without eMMC storage (CM4 Lite version) – utilize a Micro SD card the same way it is used for a Raspberry Pi 4 (RPi 4).
 - For models with eMMC storage – the OS image has to be flashed to the onboard storage, **you cannot choose to use the SD card** in this case.
 
 ### Preparing the Software
