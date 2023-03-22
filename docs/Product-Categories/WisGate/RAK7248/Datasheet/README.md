@@ -8,10 +8,10 @@ tags:
 next: false
 prev: ../AWS-Greengrass/
 certifications:
-  - [Anatel, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_ANATEL_Certification.pdf]
+  - [ANATEL, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_ANATEL_Certification.pdf]
   - [CE, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_CE_Certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_FCC_Certification.zip]
-  - [ISED, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_IC_Certification.zip]
+  - [ISED, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_ISED_Certification.zip]
   - [IMDA, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_IMDA_Certification.zip]
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_RCM_Certification.pdf]
   - [SRRC, https://downloads.rakwireless.com/LoRa/RAK7248/Certification/RAK7248_SRRC_Certification.zip]

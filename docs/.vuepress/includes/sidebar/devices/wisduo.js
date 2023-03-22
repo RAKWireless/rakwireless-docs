@@ -755,6 +755,14 @@ module.exports = {
     sidebarDepth: 4
   }, 
   {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisDuo/RAK11720-Module/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
     title: 'AT Command Manual',
     path: '/Product-Categories/WisDuo/RAK11720-Module/AT-Command-Manual/',
     collapsable: false,

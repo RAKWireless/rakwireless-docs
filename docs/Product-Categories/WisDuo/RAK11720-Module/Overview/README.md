@@ -1,7 +1,7 @@
 ---
 rak_img: /assets/images/wisduo/rak11720-module/overview/RAK11720-Module.png
 rak_desc: RAK11720 is a low-power LoRa module based on Ambiq Apollo3 Blue AMA3B1KK-KBR-B0 SoC MCU that supports Bluetooth 5.0 (Bluetooth Low Energy) and the newest SX1262 LoRa transceiver from Semtech. RAK11720 firmware is based on RUI3.
-next: ../AT-Command-Manual/
+next: ../Quickstart/
 prev: ../../
 rak_grp: [wisduo, module]
 tags:
@@ -13,6 +13,7 @@ tags:
 
 Thank you for choosing **RAK11720 WisDuo LPWAN Module** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [Quick Start Guide](../Quickstart/)
 * [AT Command Manual](../AT-Command-Manual/)
 * [Datasheet](../Datasheet/)
 * [RAK11720 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/3D_RAK11720.stp)

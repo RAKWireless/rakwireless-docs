@@ -65,6 +65,12 @@ The hardware specification is categorized into three parts. It covers the RF, el
 
 #### Pin Definition
 
+<rk-img
+  src="/assets/images/wisduo/rak11720-module/datasheet/RAK11720-Pinout diagram.svg"
+  width="55%"
+  caption="RAK11720 Pin Illustration"
+/>
+
 | **Pin No.** | **Name**      | **Type** | **Description**                                                         |
 | ----------- | ------------- | -------- | ----------------------------------------------------------------------- |
 | 1           | GP43/UART1_RX | I/O      | GPIO and UART2 Interface (RX)                                           |
@@ -87,7 +93,7 @@ The hardware specification is categorized into three parts. It covers the RF, el
 | 18          | GND           | POWER    | Ground connections                                                      |
 | 19          | GP4           | I/O      | GPIO only                                                               |
 | 20          | GP36          | I/O      | GPIO only                                                               |
-| 21          | SWO           | I/O      | SBL log output                                                          |
+| 21          | SWO           | I/O      | SBL log output (BOOT pin)                                               |
 | 22          | RST           |          | MCU Reset (nRST)                                                        |
 | 23          | GND           | POWER    | Ground connections                                                      |
 | 24          | VDD           | POWER    | VDD - Voltage Supply                                                    |
