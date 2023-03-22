@@ -249,7 +249,7 @@ The table below lists the operation and storage temperature requirements.
   caption="Schematic Diagram - 3"
 />
 
-### Software
+### Firmware
 
 Download the latest firmware version of RAK7200 in tha table provided below.
 

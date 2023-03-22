@@ -271,11 +271,9 @@ The table below lists the operation temperature range.
 | ---------------------------- | ----------- | ----------- | ----------- | ---------------------------------------------- |
 | Normal Operating Temperature | -40°&nbsp;C | +25°&nbsp;C | +85°&nbsp;C | Fully functional and meets 3GPP specifications |
 
-### Software
+### Firmware
 
 Download the latest firmware of RAK2245 Pi HAT in the table provided below.
-
-#### Firmware
 
 | Model          | Raspberry Pi Board | Firmware Version | Source                                                                                                                                           |
 | -------------- | ------------------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |

@@ -230,11 +230,9 @@ The board supports the following LoRaWAN frequency channels shown in the table b
   caption="U4, U8, and U6 Schematic Interface"
 />
 
-### Software
+### Firmware
 
 Download the latest firmware of RAK813 WisTrio in the table provided below.
-
-#### Firmware
 
 | Model                         | Source                                                       |
 | ----------------------------- | ------------------------------------------------------------ |

@@ -13,8 +13,6 @@ certifications:
 
 # RAK7244 WisGate Developer D4 Gateway Datasheet
 
-
-
 ## Overview
 
 ### Description
@@ -396,11 +394,9 @@ The table below lists the operation and storage temperature requirements for RAK
 | **Extended Temperature Range**  | -40 ˚C   |             | +75 ˚C  |
 | **Storage Temperature Range**   | -40 ˚C   |             | +80 ˚C  |
 
-### Software
+### Firmware
 
 Download the latest firmware of the RAK7244X series in the table provided below.
-
-#### Firmware
 
 | Model                | Raspberry Pi Board | Firmware Version | Source                                                                                                                               |
 | -------------------- | ------------------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------ |

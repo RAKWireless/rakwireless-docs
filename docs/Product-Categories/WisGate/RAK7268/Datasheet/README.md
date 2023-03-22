@@ -239,10 +239,7 @@ The casing is IP30 rated and is made of plastic. There are holes for a mounting 
 | Weight                | 0.3&nbsp;kg       |
 | Operating temperature | -10 to 55&nbsp;°C |
 
-
-### Software
-
-#### Firmware
+### Firmware
 
 The firmware sits on OpenWRT, which makes it possible to customize it. There is a Web UI for easy configuration and management of the device, as well as the possibility for SSH2 management.
 
@@ -250,6 +247,7 @@ The firmware sits on OpenWRT, which makes it possible to customize it. There is 
 | --------------------------- | ---------------- | ----------------------------------------------------------------------------------------------- |
 | RAK7268 WisGate Edge Lite 2 | WisGateOS V1.0.2 | [Download](https://downloads.rakwireless.com/LoRa/RAK7268/Firmware/RAK7268_Latest_Firmware.zip) |
 
+### Software
 
 #### Software Features
 

@@ -161,9 +161,7 @@ The RAK7201 comes with a 350 mAh rechargeable LiPo battery inside. In need of re
 | Temperature range       | -20º~60º (discharge), 15º-45º (charging) | C    |
 | Battery dimensions      | 5.7 x 21 x 37.5                          | mm   |
 
-### Software
-
-#### Firmware
+### Firmware
 
 | Model   | Version | Source                                                                                          |
 | ------- | ------- | ----------------------------------------------------------------------------------------------- |

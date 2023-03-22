@@ -360,7 +360,7 @@ The GPS antenna with SMA Male Connector for Developer Gateway is shown in **Figu
 |       VSWR        |      ≤ 2.0       |      ≤ 2.0       |      ≤ 2.0       |
 | Noise coefficient |      ≤ 2.0       |      ≤ 2.0       |      ≤ 2.0       |
 
-## Software
+## Firmware
 
 Download the latest firmware of **RAK7244C** in the table provided below.
 

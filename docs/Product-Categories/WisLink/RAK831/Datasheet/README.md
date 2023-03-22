@@ -504,11 +504,9 @@ The following images are the schematic diagram of the RAK831 WisLink LPWAN Conce
   caption="RAK831 Schematic Diagram"
 />
 
-### Software
+### Firmware
 
 Download the latest firmware of the RAK831 in the table provided below.
-
-#### Firmware
 
 | Model  | Raspberry Pi Board | Firmware Version | Source                                                                                                 |
 | ------ | ------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ |

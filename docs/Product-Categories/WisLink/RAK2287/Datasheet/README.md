@@ -6,6 +6,7 @@ tags:
 prev: ../Quickstart/
 next: false
 certifications:
+  - [Anatel, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_Anatel_Certification.pdf]
   - [CE, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287%20CE%20certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287%20FCC%20certification.zip]
   - [ISED, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287%20IC%20certification.zip]
@@ -292,11 +293,9 @@ RAK2287 card refers to Semtech's reference design of SX1302. The SPI interface c
   caption="Schematic Diagram of RAK2287"
 />
 
-### Software
+### Firmware
 
 Download the latest firmware of the RAK2287 WisLink-LoRa in the table provided below.
-
-#### Firmware
 
 | Model   | Raspberry Pi Board  | Firmware Version | Source                                                                                                    |
 | ------- | ------------------- | ---------------- | --------------------------------------------------------------------------------------------------------- |

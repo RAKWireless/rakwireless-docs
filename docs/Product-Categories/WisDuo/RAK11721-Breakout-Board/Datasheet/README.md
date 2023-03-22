@@ -182,11 +182,9 @@ The RAK11721 breakout board supports the LoRaWAN bands shown in the table below.
   caption="RAK11721 Mechanical Dimensions"
 />
 
-### Software
+### Firmware
 
 Download the latest firmware of the RAK11721 Breakout Board provided below. RAK11721 (L) and RAK11721 (H) use the same firmware, and it will automatically detect the variant of the module being used.
-
-#### Firmware
 
 | Model                    | Note                               | Source                                                                                                      |
 | ------------------------ | ---------------------------------- | ----------------------------------------------------------------------------------------------------------- |

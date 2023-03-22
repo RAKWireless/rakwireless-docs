@@ -12,8 +12,6 @@ rak_img: /assets/images/wislink-lte/rak2013/datasheet/RAK2013.png
 
 # RAK2013 WisLink Cellular Pi HAT Datasheet
 
-
-
 ## Overview
 
 ### Description

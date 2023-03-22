@@ -146,17 +146,17 @@ The status of the LEDs is described as below. Please refer to the printing of th
 | **Transmit Power**<br>(The max. power may be different  <br>depending on local regulations) -per chain | **802.11b** <br>• 1Mbps: 19dBm <br>• 11Mbps: 19dBm <br><br>**802.11g** <br>• 6Mbps: 18dBm <br>• 54Mbps: 16dBm <br><br>**802.11n (2.4G)** <br>• MCS0 (HT20): 18dBm <br>• MCS7 (HT20): 16dBm <br>• MCS0 (HT40): 17dBm <br>• MCS7 (HT40): 15dBm  |
 | **Receiver<br>Sensitivity** <br>(Typical)                                                         | **802.11b** <br>• 1Mbps: 95dBm <br>• 11Mbps: 88dBm <br><br>**802.11g** <br>• 6 Mbps: 90dBm <br>• 54Mbps: 75dBm <br><br> **802.11n (2.4G)** <br>• MCS0 (HT20): 89dBm<br>• MCS7 (HT20): 72dBm <br>• MCS0 (HT40): 86dBm <br>• MCS7 (HT40): 68dBm |
 
-### Software
-
-RAK7240 supports different software features such as LoRa, Network, and Management.
-#### Firmware
+### Firmware
 
 | Model                      | Firmware Version | Source                                                                                          |
 | -------------------------- | ---------------- | ----------------------------------------------------------------------------------------------- |
 | RAK7240 WisGate Edge Prime | WisGateOS V1.0.2 | [Download](https://downloads.rakwireless.com/LoRa/RAK7240/Firmware/RAK7240_Latest_Firmware.zip) |
+
+### Software
+
+RAK7240 supports different software features such as LoRa, Network, and Management.
+
 #### Supported Software
-
-
 
 | LoRa                          | Network                        | Management                                   |
 | ----------------------------- | ------------------------------ | -------------------------------------------- |
@@ -165,7 +165,7 @@ RAK7240 supports different software features such as LoRa, Network, and Manageme
 | Country code setup            | Supports 802.1q backup         | Firmware update                              |
 | TX power up setup             | DHCP Server/Client             | NTP                                          |
 | Datalogger & statistic        | Router module NAT              | Supports configure the LoRa Packet Forwarder |
-| Location setup                | Firewall                       | Build-in LoRa Server                       |
+| Location setup                | Firewall                       | Build-in LoRa Server                         |
 | Server address and port setup |                                | Supports OpenVPN                             |
 |                               |                                | Supports Ping Watch Dog                      |
 |                               |                                | Supports MQTT Bridge                         |

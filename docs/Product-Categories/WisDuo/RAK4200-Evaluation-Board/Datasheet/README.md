@@ -536,7 +536,6 @@ The **hex file** contains both the bootloader and the application code. You need
 | RAK4200 | [Download](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/RAK4200_Latest_Firmware.zip) |
 
 
-
 ## Certification
 
 <rk-certifications :params="$page.frontmatter.certifications" />

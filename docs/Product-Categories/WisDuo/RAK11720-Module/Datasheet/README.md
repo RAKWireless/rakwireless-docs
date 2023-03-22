@@ -227,11 +227,9 @@ Standard conditions for reflow soldering:
 - Ramp-up Rate (B): **0~2.5°&nbsp;C/sec**
 - Ramp-down Rate (C): **1~3°&nbsp;C/sec**
 
-### Software
+### Firmware
 
 Download the latest RAK11720 WisDuo LPWAN Module firmware provided below. RAK11720 (L) and RAK11720 (H) use the same firmware and it will automatically detect the variant of the module being used.
-
-#### Firmware
 
 | Model                    | Note                        | Source                                                                                                      |
 | ------------------------ | --------------------------- | ----------------------------------------------------------------------------------------------------------- |

@@ -315,7 +315,6 @@ The use of **DCDC** is optional but improves the power efficiency. If you want t
 
 ### Software
 
-
 #### Upload Firmware Using RAK DFU
 
 The **bin file** contains the application code only, and you need the **RAK DFU Tool** to upload this file to the RAK3272-SiP Breakout Board via UART2.

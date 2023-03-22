@@ -378,13 +378,14 @@ The table below lists the operation and storage temperature requirements:
 | **Operation Temperature Range** | -10 ºC   | +25 ºC      | +55 ºC  |
 | **Storage Temperature Range**   | -40 ºC   |             | +85 ºC  |
 
-### Software
 
-#### Firmware
+### Firmware
 
 | **Model** | **Raspberry Pi Board** | **Firmware Version** | **Source**                                                                                      |
 | --------- | ---------------------- | -------------------- | ----------------------------------------------------------------------------------------------- |
 | RAK7248   | Raspberry Pi 4         | 4.2.5R               | [Download](https://downloads.rakwireless.com/LoRa/RAK7248/Firmware/RAK7248_Latest_Firmware.zip) |
+
+### Software
 
 #### LoRaWAN
 

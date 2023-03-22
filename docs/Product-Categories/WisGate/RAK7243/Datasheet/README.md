@@ -301,7 +301,7 @@ The table below lists the operation and storage temperature requirements:
 |  Storage Temperature Range  | -50&nbsp;ºC |    -    |      -       |
 
 
-## Software
+## Firmware
 
 Download the latest firmware of RAK7243 and RAK7243C in the table provided below.
 
@@ -309,7 +309,6 @@ Download the latest firmware of RAK7243 and RAK7243C in the table provided below
 | :------------------------------------: | :-----------------: | :--------------: | :----------------------------------------------------------------------------------------------------------------: |
 |  RAK7243 WisGate Developer D3 Gateway  | Raspberry Pi 3/ 3B+ |     4.2.6.R      | [Download](https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Firmware/RAK7243_Latest_Firmware.zip)  |
 | RAK7243C WisGate Developer D3+ Gateway | Raspberry Pi 3/ 3B+ |     4.2.6.R      | [Download](https://downloads.rakwireless.com/LoRa/Pilot-Gateway-Pro-RAK7243/Firmware/RAK7243C_Latest_Firmware.zip) |
-
 
 ## Certification
 

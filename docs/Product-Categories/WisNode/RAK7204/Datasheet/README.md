@@ -176,7 +176,7 @@ Listed below are the individual specifications of sensors attached within the RA
 | Accuracy          |      | 15      |      |
 | Output Resolution |      | 1       |      |
 
-### Software
+### Firmware
 
 Download the latest firmware of the RAK7204 in table provided below.
 
@@ -184,6 +184,7 @@ Download the latest firmware of the RAK7204 in table provided below.
 | ----------- | ------------------------------------- | --------- | ------------------------------------------------------------------------------------------------- |
 | RAK7204 - H | EU868 / US915 / AU915 / KR920 / IN865 | V3.0.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK7204/Firmware/RAK7204_H_Latest_Firmware.rar) |
 | RAK7204 - L | EU433 / CN470                         | V3.0.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK7204/Firmware/RAK7204_L_Latest_Firmware.rar) |
+
 ## Models / Bundles
 
 ### Ordering Information

@@ -17,6 +17,11 @@ module.exports = {
           collapsed: true,
           children : [
             {
+              title : 'March 14',
+              path : '/Release-Notes/RUI/2023/March-14',
+              collapsable: false
+            },
+            {
               title : 'March 2',
               path : '/Release-Notes/RUI/2023/March-2',
               collapsable: false
@@ -223,6 +228,11 @@ module.exports = {
           collapsible: true,
           collapsed : true,
           children : [
+            {
+              title : 'March 24',
+              path : '/Release-Notes/WisGateOS2/2023/March-24',
+              collapsable: false
+            },
             {
               title : 'January 13',
               path : '/Release-Notes/WisGateOS2/2023/January-13',

@@ -290,9 +290,7 @@ RAK2247 card refers to Semtech's reference design of SX1301. The SPI interface o
   caption="RAK2247 Card Minimum Schematic Reference"
 />
 
-### Software
-
-#### Firmware
+### Firmware
 
 | Model         | Raspberry Pi Board  | Firmware Version | Source                                                                                                            |
 | ------------- | ------------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------- |

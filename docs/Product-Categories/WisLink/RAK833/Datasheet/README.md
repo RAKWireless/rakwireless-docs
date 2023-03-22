@@ -321,12 +321,9 @@ The figure below shows the minimum application schematic of the RAK833 WisLink L
   caption="Reference Minimum Schematic"
 />
 
-### Software
+### Firmware
 
 Download the latest version of RAK833 in the table provided below.
-
-
-#### Firmware
 
 | Model        | Raspberry Pi Board  | Firmware Version | Source                                                                                                            |
 | ------------ | ------------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------- |

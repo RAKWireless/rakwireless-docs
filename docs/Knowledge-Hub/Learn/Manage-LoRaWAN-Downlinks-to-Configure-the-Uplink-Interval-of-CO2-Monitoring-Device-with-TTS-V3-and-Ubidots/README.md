@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/overview.png
+rak_img: /assets/images/knowledge-hub/learn/manage-uplink-and-downlink/overview.png
 rak_desc: This guide provides a step-by-step tutorial on how to manage uplink and downlink data of RUI3 devices and connect it with TTS v3 and Ubidots.
 tags:
   - Tutorial
@@ -79,7 +79,7 @@ This section is about the actual device configuration.
 The RAK12037 WisBlock CO2 Sensor Module can be connected to any IO slot of the RAK19001 WisBlock Baseboard to communicate with the RAK4631-R WisBlock LPWAN Module. Always secure the connection of the WisBlock modules and sensors by using compatible screws.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/hardware-setup.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/hardware-setup.png"
   width="80%"
   caption="Modules connection to WisBlock Baseboard"
 />
@@ -89,13 +89,13 @@ The RAK12037 WisBlock CO2 Sensor Module can be connected to any IO slot of the R
 Another important part of the RAK4631-R module is the antennas.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/lora-antenna.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/lora-antenna.png"
   width="30%"
   caption="LoRa Antenna"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/ble-antenna.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/ble-antenna.png"
   width="30%"
   caption="BLE Antenna"
 />
@@ -105,7 +105,7 @@ You need to ensure that the antenna is properly connected to have a good LoRa si
 The RAK4631-R has a label on its sticker on where to connect the antennas.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/antenna-label.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/antenna-label.png"
   width="30%"
   caption="RAK4631-R Antenna label"
 />
@@ -135,7 +135,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 1. **Uplink Messages** - Uplink messages are sent by end devices to gateways (uplinks), and gateways pass it on to the network server (The Things Stack), which, in turn, passes it on to the IoT visualization platform (Ubidots).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/uplink.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/uplink.png"
   width="70%"
   caption="Uplink Transmission"
 />
@@ -143,7 +143,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 2. **Downlink Messages** - Each downlink message is sent by the network server (The Things Stack) through gateways down to the end devices (downlinks). This also includes some messages or controls initiated by the IoT platform (Ubidots) to end devices.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/downlink.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/downlink.png"
   width="70%"
   caption="Downlink Transmission"
 />
@@ -160,13 +160,13 @@ End devices in a LoRaWAN network come in three (3) classes: **Class A**, **Class
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/create-app.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/create-app.png"
   width="100%"
   caption="Create an Application"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/create-app2.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/create-app2.png"
   width="100%"
   caption="Create an Application"
 />
@@ -174,7 +174,7 @@ End devices in a LoRaWAN network come in three (3) classes: **Class A**, **Class
 2. Fill in the `Application ID` and other specific details or necessary information about your application, then click **Create application** to have your application registered.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/create-app3.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/create-app3.png"
   width="100%"
   caption="Creating an Application"
 />
@@ -182,7 +182,7 @@ End devices in a LoRaWAN network come in three (3) classes: **Class A**, **Class
 3. Next, click **+ Register end device**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/add-end-device.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/add-end-device.png"
   width="100%"
   caption="Adding an end device"
 />
@@ -190,7 +190,7 @@ End devices in a LoRaWAN network come in three (3) classes: **Class A**, **Class
 4. Choose the following configurations in adding the end devices. To learn more about which frequency plan and parameters to use in your country, please see [LoRaWAN Regional Parameters](https://lora-alliance.org/resource_hub/rp2-101-lorawan-regional-parameters-2/).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/configure-end-device.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/configure-end-device.png"
   width="100%"
   caption="Configurations on adding an end device"
 />
@@ -208,7 +208,7 @@ The **JoinEUI** is also called the **AppEUI**, a 64-bit extended unique identifi
 Then click **Confirm**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/advance-settings.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/advance-settings.png"
   width="100%"
   caption="Advanced Settings"
 />
@@ -224,7 +224,7 @@ For **End device ID**, you may input a different unique value if you need to. Ot
 Then click **Register end device**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/register-end-device.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/register-end-device.png"
   width="100%"
   caption="Registering the end device"
 />
@@ -232,7 +232,7 @@ Then click **Register end device**.
 7. You should now be able to see your newly created device on `The Things Stack` console. Take note of the keys in the `Activation information` section, such as the **AppEUI**, **DevEUI**, and **AppKey**, as they are needed for the next part of this guide.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/registered-device.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/registered-device.png"
   width="100%"
   caption="End device successfully registered to TTS V3"
 />
@@ -245,7 +245,7 @@ Then click **Register end device**.
 2. Select the RAK4631-R WisBlock Core
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/rak4631-r-board.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/rak4631-r-board.png"
   width="100%"
   caption="Choosing the RAK4631-R Board"
 />
@@ -496,7 +496,7 @@ void loop()
 4. Once the example code is open, install the [SparkFun_SCD30](https://github.com/sparkfun/SparkFun_SCD30_Arduino_Library) library for the CO2 sensor module.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/co2-lib.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/co2-lib.png"
   width="80%"
   caption="SparkFun SCD30 Library"
 />
@@ -633,13 +633,13 @@ void uplink_routine()
 After a successful installation of the library and configuration of the LoRaWAN Network Server setup, you can now select the right serial port and upload the code.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/select-port.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/select-port.png"
   width="100%"
   caption="Selecting the correct serial port"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/upload.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/upload.png"
   width="100%"
   caption="Uploading the example code"
 />
@@ -647,13 +647,13 @@ After a successful installation of the library and configuration of the LoRaWAN 
 When you have successfully uploaded the example sketch, open the serial monitor of the Arduino IDE to see the sensor's reading logs. If you see the logs, as shown below, then your device is properly sending uplink messages.
 
  <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/serial-joined.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/serial-joined.png"
   width="80%"
   caption="Device successfully joined to the TTS V3"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/data-packet.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/data-packet.png"
   width="80%"
   caption="Sensor data successfully sent to TTS V3"
 />
@@ -661,7 +661,7 @@ When you have successfully uploaded the example sketch, open the serial monitor 
 Then check again your `The Things Stack` account and go to **Applications** > **`<name of your application>`** > **`<name of your end device>`** > **Live Data**. Wait for the uplink payload messages, which are updated every 20&nbsp;seconds.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/uplink-tts.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/uplink-tts.png"
   width="100%"
   caption="Successfully onboarded using The Things Stack"
 />
@@ -671,7 +671,7 @@ Then check again your `The Things Stack` account and go to **Applications** > **
 Payload formatters allow you to process data going to and from end devices. This is useful for converting payloads to human-readable fields, or for doing any other kind of data conversion on uplinks and downlinks.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/hex-payload.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/hex-payload.png"
   width="100%"
   caption="Converting the payload to human-readable fields"
 />
@@ -694,7 +694,7 @@ This approach is outside the scope of this tutorial, but if you decide to procee
 1. On your `The Things Stack` account, go to **Applications** > **`<name of your application>`** > **`<name of your end device>`** > **Payload formatters** > **Uplink**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/payload-format-navigation.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/payload-format-navigation.png"
   width="100%"
   caption="Uplink Payload Formatter"
 />
@@ -702,7 +702,7 @@ This approach is outside the scope of this tutorial, but if you decide to procee
 2. Choose the **Custom Javascript formatter** as the Formatter type.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/js-format.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/js-format.png"
   width="100%"
   caption="Choosing Formatter Type"
 />
@@ -728,7 +728,7 @@ function Decoder(bytes, port)
 ```
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/save-formatter.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/save-formatter.png"
   width="100%"
   caption="Payload format code"
 />
@@ -736,13 +736,13 @@ function Decoder(bytes, port)
 4. After saving, go to **Applications** > **`<name of your application>`** > **`<name of your end device>`** > **Live Data**. Wait for the uplink data messages again, and you'll be able to see that the payload is already decoded into human-readable data.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/decoded-payload.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/decoded-payload.png"
   width="100%"
   caption="Decoded Uplink Payload"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/decoded-payload2.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/decoded-payload2.png"
   width="100%"
   caption="Decoded Uplink Payload"
 />
@@ -760,13 +760,13 @@ There are two The Things Stack plugins. Ensure that you select the one for LoRaW
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/plugin-nav.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/plugin-nav.png"
   width="100%"
   caption="Navigating Plugin"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/tts-plugin.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/tts-plugin.png"
   width="80%"
   caption="TTS V3 Plugin"
 />
@@ -774,7 +774,7 @@ There are two The Things Stack plugins. Ensure that you select the one for LoRaW
 2. The plugin instructions will appear. Fill out the needed parameters, then click on the **Next** icon.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/plugin-fill.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/plugin-fill.png"
   width="80%"
   caption="Plugin parameters"
 />
@@ -786,7 +786,7 @@ There are two The Things Stack plugins. Ensure that you select the one for LoRaW
 3. Add a name and description for your plugin.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/plugin-demo.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/plugin-demo.png"
   width="80%"
   caption="Plugin details"
 />
@@ -794,7 +794,7 @@ There are two The Things Stack plugins. Ensure that you select the one for LoRaW
 4. Finish the process and a new plugin will appear in the Plugins list:
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/plugin-created.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/plugin-created.png"
   width="100%"
   caption="New Plugin created"
 />
@@ -804,7 +804,7 @@ There are two The Things Stack plugins. Ensure that you select the one for LoRaW
 **`https://dataplugin.ubidots.com/api/web-hook/<PLUGIN-ID>`**
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/decoder-id.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/decoder-id.png"
   width="100%"
   caption="HTTPs Endpoint URL"
 />
@@ -812,7 +812,7 @@ There are two The Things Stack plugins. Ensure that you select the one for LoRaW
 6. Finally, go to your `The Things Stack` account, click on the desired Application then on **Integrations** > **Webhooks**, then click on **+ Add webhook** and choose **Ubidots**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/tts-ubidots.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/tts-ubidots.png"
   width="100%"
   caption="Webhook Integration"
 />
@@ -826,7 +826,7 @@ Fill out these fields:
 Finally, the webhook should look something like this:
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/webhook-setup.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/webhook-setup.png"
   width="60%"
   caption="Create webhook"
 />
@@ -834,7 +834,7 @@ Finally, the webhook should look something like this:
 7. After creating your webhook, it will appear on your TTS V3 account.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/webhook-created.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/webhook-created.png"
   width="100%"
   caption="Created webhook"
 />
@@ -844,7 +844,7 @@ Finally, the webhook should look something like this:
 1. Go to your `Ubidots` account. After creating a TTS Plugin, click on it and you will see a **Decoder** tab. Scroll-down and you will see it contains a **Decoding Function** that you can edit at will, in order to decode your data frames.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/decode-function.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/decode-function.png"
   width="100%"
   caption="Ubidots Decoder"
 />
@@ -852,7 +852,7 @@ Finally, the webhook should look something like this:
 2. Inside the **Decoding Function**, you have to uncomment `line 37` because we are already decoding in TTS V3 using payload formatters. Then comment out `line 42`. Finally, click **SAVE & MAKE LIVE**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/decoder-code.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/decoder-code.png"
   width="100%"
   caption="Decoding Function"
 />
@@ -860,7 +860,7 @@ Finally, the webhook should look something like this:
 3. After that, go to **Devices** > **Devices**, you will see that Ubidots automatically created your device every time a payload from a new device is received.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/ubidots-device.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/ubidots-device.png"
   width="100%"
   caption="Newly created device"
 />
@@ -871,7 +871,7 @@ Finally, the webhook should look something like this:
 You can create your own dashboard to visualize and monitor the data as shown in **Figure 41**. For dashboard making, please refer to [Create Dashboards & Widgets](https://help.ubidots.com/en/articles/2400308-create-dashboards-and-widgets).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/ubidots-dashboard.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/ubidots-dashboard.png"
   width="100%"
   caption="Ubidots Dashboard"
 />
@@ -884,7 +884,7 @@ For the downlink, we want to create toggle switches in our Ubidots dashboard. Wh
 Three (3) switches were used. The first switch will change the uplink interval of the end device to 20 seconds, the second switch is for the 40-second uplink interval, and the last or third switch is for the 60-second uplink interval.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/switch.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/switch.png"
   width="80%"
   caption="Uplink Interval Switches"
 />
@@ -895,13 +895,13 @@ Three (3) switches were used. The first switch will change the uplink interval o
 1. Create a widget for switches. But before that, create variables first for the three (3) switches. Go to **Devices** > **Devices** and then click your end device name. After that, you'll be able to see the details and other variables, such as the sensor data of your end device.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/ubidots-device.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/ubidots-device.png"
   width="100%"
   caption="Choosing your end device"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/variables.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/variables.png"
   width="100%"
   caption="End device variables"
 />
@@ -910,7 +910,7 @@ Three (3) switches were used. The first switch will change the uplink interval o
 2. Next, we need to add three (3) variables because we will create three (3) switches, one variable for each switch. To add a variable, click **+ Add Variable**, then choose **Raw** and rename your variables as you want. Variables were named `uplink-1`, `uplink-2`, and `uplink-3`.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/add-variables.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/add-variables.png"
   width="100%"
   caption="Adding variables"
 />
@@ -918,13 +918,13 @@ Three (3) switches were used. The first switch will change the uplink interval o
 3. Go to **Data** > **Dashboard**, then click the **+** icon on the uppermost right to add a new widget for your switches on your dashboard. On the **Control** section of the widget, choose **Switch**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/dashboard-widget.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/dashboard-widget.png"
   width="100%"
   caption="Ubidots Dashboard"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/switch-widget.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/switch-widget.png"
   width="60%"
   caption="Adding a Switch Widget"
 />
@@ -934,13 +934,13 @@ Three (3) switches were used. The first switch will change the uplink interval o
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/add-switch-variable.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/add-switch-variable.png"
   width="60%"
   caption="Adding a Switch variable"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/select-variable.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/select-variable.png"
   width="60%"
   caption="Selecting a Switch variable"
 />
@@ -948,7 +948,7 @@ Three (3) switches were used. The first switch will change the uplink interval o
 5. You'll now be able to see the variable you added for your first switch. You can also rename or make other configurations for your switch (optional).
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/switch-message.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/switch-message.png"
   width="60%"
   caption="Configuring the Switch"
 />
@@ -957,7 +957,7 @@ Three (3) switches were used. The first switch will change the uplink interval o
 6. Now, you have to add another variable for the other switches. Just follow the previous steps, then click **SAVE**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/add-more.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/add-more.png"
   width="60%"
   caption="Adding another Switch variable"
 />
@@ -965,7 +965,7 @@ Three (3) switches were used. The first switch will change the uplink interval o
 7. Finally, you have created a widget for the three (3) switches.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/switch-dashboard.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/switch-dashboard.png"
   width="100%"
   caption="Uplink Interval Switch Widgets"
 />
@@ -976,13 +976,13 @@ Three (3) switches were used. The first switch will change the uplink interval o
 Now that we have created our three (3) switches, we do not want to turn on all of the switches at the same time, as shown in **Figure 53**. What we wanted to do is to make a toggle switch so that when we turn on one of those switches, the other two switches must be automatically turned-off as shown in **Figure 54**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/not-toggle.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/not-toggle.png"
   width="60%"
   caption="This is NOT a toggle switch"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/toggle.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/toggle.png"
   width="60%"
   caption="This is a toggle switch"
 />
@@ -998,7 +998,7 @@ We need to create three (**IF triggers... THEN actions**) events:
 1. Go to **Data** > **Events**, then click the **+** icon on the upper right side to create a new event.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/event-nav.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/event-nav.png"
   width="100%"
   caption="Create event"
 />
@@ -1006,7 +1006,7 @@ We need to create three (**IF triggers... THEN actions**) events:
 2. Now, on the **IF triggers** section of the **Events** tab, choose **Select Variable**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/if-triggers.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/if-triggers.png"
   width="100%"
   caption="Select variable"
 />
@@ -1015,7 +1015,7 @@ We need to create three (**IF triggers... THEN actions**) events:
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/search-dev.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/search-dev.png"
   width="60%"
   caption="Search end device"
 />
@@ -1023,7 +1023,7 @@ We need to create three (**IF triggers... THEN actions**) events:
 Select the variable of your `Uplink-1`, then click the `check` icon.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/select-var.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/select-var.png"
   width="60%"
   caption="Selected variable"
 />
@@ -1034,7 +1034,7 @@ Select the variable of your `Uplink-1`, then click the `check` icon.
 - **`0`**: means that IF the switch is turned OFF
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/if-value.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/if-value.png"
   width="100%"
   caption="IF triggers"
 />
@@ -1043,7 +1043,7 @@ Select the variable of your `Uplink-1`, then click the `check` icon.
 5. On the **THEN actions** section of the **Events** tab. Choose **Add new action**, then select **Set Variable**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/then-action.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/then-action.png"
   width="100%"
   caption="Set variable"
 />
@@ -1052,13 +1052,13 @@ Select the variable of your `Uplink-1`, then click the `check` icon.
 6. Go to **Variables** > **Select variable** and search your end device again, then select multiple variables which are your `Uplink-2` and `Uplink-3`.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/then-action-select.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/then-action-select.png"
   width="100%"
   caption="Search variable"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/then-action-var.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/then-action-var.png"
   width="60%"
   caption="Selected variables"
 />
@@ -1066,7 +1066,7 @@ Select the variable of your `Uplink-1`, then click the `check` icon.
 7. After selecting variables `Uplink-2` and `Uplink-3`, look in the **Message** box of the **ACTIVE TRIGGER** section, put a value of `zero (0)` to set a command to turn OFF our `Uplink-2` and `Uplink-3`. Click the `check` icon.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/then-action-value.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/then-action-value.png"
   width="100%"
   caption="Set a value"
 />
@@ -1074,7 +1074,7 @@ Select the variable of your `Uplink-1`, then click the `check` icon.
 8. Finally, rename your event and click the `check` icon to finish setting it up.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/event-name.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/event-name.png"
   width="100%"
   caption="Renaming the Event"
 />
@@ -1082,7 +1082,7 @@ Select the variable of your `Uplink-1`, then click the `check` icon.
 9. You will now see your newly created event for the first toggle switch (red box). Do the same previous steps for the other remaining switches (green box). After doing that, you will have three (3) events for your switches as shown in **Figure 65** below. Next, go to your **Dashboards** again to see if the toggle switches work.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/complete-events.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/complete-events.png"
   width="100%"
   caption="Switch Events"
 />
@@ -1093,7 +1093,7 @@ Select the variable of your `Uplink-1`, then click the `check` icon.
 1. Go to **Data** > **Events**, then select one of your created events. Let us pick the `switch-1` event as our example.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/payload1.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/payload1.png"
   width="100%"
   caption="Select an event"
 />
@@ -1101,7 +1101,7 @@ Select the variable of your `Uplink-1`, then click the `check` icon.
 2. Go to **THEN actions** section, then create a new event, and select **Trigger WebHook**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/payload2.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/payload2.png"
   width="100%"
   caption="Create new event"
 />
@@ -1109,7 +1109,7 @@ Select the variable of your `Uplink-1`, then click the `check` icon.
 3. Head to your `The Things Stack` account. Go to **Applications** and select the application hosting the device you want to make a downlink to.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/app-hosting.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/app-hosting.png"
   width="100%"
   caption="Selecting your host application"
 />
@@ -1117,7 +1117,7 @@ Select the variable of your `Uplink-1`, then click the `check` icon.
 4. Extract the **Region** and **Application ID** and save them into your notes.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/region-appid.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/region-appid.png"
   width="100%"
   caption="Extract Region and Application ID"
 />
@@ -1128,7 +1128,7 @@ Select the variable of your `Uplink-1`, then click the `check` icon.
 5. Extract and save the **API Key**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/api-key.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/api-key.png"
   width="100%"
   caption="Extract API Key"
 />
@@ -1142,7 +1142,7 @@ The API Key generated must be saved on a note application since it will not be a
 6. Lastly, extract and save the **Device ID**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/device-id.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/device-id.png"
   width="100%"
   caption="Extract Device ID"
 />
@@ -1152,7 +1152,7 @@ The API Key generated must be saved on a note application since it will not be a
 7. Enter the acquired information above in the webhook options panel of the event action.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/http-url.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/http-url.png"
   width="100%"
   caption="HTTP and URL settings"
 />
@@ -1163,7 +1163,7 @@ The API Key generated must be saved on a note application since it will not be a
 8. On the **Headers** section, click **+ Add header**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/headers.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/headers.png"
   width="100%"
   caption="Headers settings"
 />
@@ -1182,7 +1182,7 @@ At this stage, all information you input on the Ubidots platform is critical. An
 Since we are now on a `switch-1` event and it is also a 20-second time interval switch, we need to convert the 20-second into HEX.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/dec-hex.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/dec-hex.png"
   width="100%"
   caption="20 seconds converted to HEX"
 />
@@ -1199,7 +1199,7 @@ Let us send 2&nbsp;bytes of payload down to our TTS V3. The payload we wanted to
 10. Now, convert the 2&nbsp;bytes of payload **`0x01, 0x14`** into a Base-64.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/hex-base64.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/hex-base64.png"
   width="40%"
   caption="HEX payload converted to Base-64"
 />
@@ -1209,7 +1209,7 @@ Our **`0x01, 0x14`** HEX payload is now equivalent to **`ARQ=`** in Base-64.
 11. Go to the JSON body and enter the following Base-64 payload, then click the `check` icon to finish the setup.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/json-body.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/json-body.png"
   width="100%"
   caption="Base-64 payload JSON Body"
 />
@@ -1219,7 +1219,7 @@ Our **`0x01, 0x14`** HEX payload is now equivalent to **`ARQ=`** in Base-64.
 12. Finally, go to your **Dashboards** and try to press the 20-second switch, you will now be able to see a downlink payload in your TTS V3 account. Your Base-64 (**`ARQ=`**) payload is automatically converted back again into HEX (**`0x01, 0x14`**) as shown in **Figure 77** below.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/0114-payload.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/0114-payload.png"
   width="100%"
   caption="20-second switch payload"
 />
@@ -1227,7 +1227,7 @@ Our **`0x01, 0x14`** HEX payload is now equivalent to **`ARQ=`** in Base-64.
 13. Do the same previous steps for the other remaining switches; the 40-second switch and the 60-second switch, and you'll get a downlink result as shown in **Figure 78** below.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/tts-payload.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/tts-payload.png"
   width="100%"
   caption="All switches payload"
 />
@@ -1534,13 +1534,13 @@ void recvCallback(SERVICE_LORA_RECEIVE_T * data)
 You can now select the right serial port and upload the code.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/select-port.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/select-port.png"
   width="100%"
   caption="Selecting the correct serial port"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/upload.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/upload.png"
   width="100%"
   caption="Uploading the example code"
 />
@@ -1550,7 +1550,7 @@ When you have successfully uploaded the example sketch, open the serial monitor 
 If you noticed, the HEX payload from TTS has been converted back to the real time-value of the switch in the Serial Monitor.
 
 <rk-img
-  src="/assets/images/knowledge-hub/tutorials/manage-uplink-and-downlink/downlink-payload.png"
+  src="/assets/images/knowledge-hub/learn/manage-uplink-and-downlink/downlink-payload.png"
   width="100%"
   caption="Successfull downlink"
 />

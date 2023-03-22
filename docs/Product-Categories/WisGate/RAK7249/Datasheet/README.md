@@ -228,15 +228,15 @@ The status of the LEDs is described as below. Please refer to the printing of th
 | **Transmit Power** <br> (The max. power may be different depending on local regulations) -per chain | **802.11b** <br> • 1Mbps : 19dBm <br> • 11Mbps : 19dBm <br><br> **802.11g** <br> • 6Mbps : 18dBm <br> • 54Mbps : 16dBm <br><br> **802.11n (2.4G)** <br> • MCS0 (HT20) : 18dBm <br> • MCS7 (HT20) : 16dBm <br> • MCS0 (HT40) : 17dBm <br> • MCS7 (HT40) :15dBm        |
 | **Receiver Sensitivity** (Typical)                                                                  | **802.11b** <br> • 1Mbps : -95dBm <br> • 11Mbps : -88dBm <br> <br> **802.11g** <br> • 6Mbps : -90dBm <br> • 54Mbps : -75dBm <br><br> **802.11n (2.4G)** <br> • MCS0 (HT20) : -89dBm <br> • MCS7(HT20) : -72dBm <br> • MCS0(HT40) : -86dBm <br> • MCS7(HT40) : -68dBm |
 
-### Software
+### Firmware
 
 RAK7249 supports software in LoRa, Network and Management. Supported features are shown in the table below.
-
-#### Firmware
 
 | Model                    | Firmware Version | Source                                                                                                      |
 | ------------------------ | ---------------- | ----------------------------------------------------------------------------------------------------------- |
 | RAK7249 WisGate Edge Max | WisGateOS V1.0.2 | [Download](https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Firmware/RAK7249_Latest_Firmware.zip) |
+
+### Software
 
 #### Supported Software
 

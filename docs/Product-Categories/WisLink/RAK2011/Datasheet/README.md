@@ -131,8 +131,6 @@ The BG96 module may enter into Power Saving Mode for reducing its power consumpt
 
 In this mode, the power management unit shuts down the power supply. The software is not active and the serial interfaces are not accessible, but the operating voltage remains applied.
 
-
-
 ##### Micro-B USB Interface
 
 A standard Micro-B USB compliant with the USB 2.0 standard specification is used to provide an interface to connect to a PC for control of BG96 cellular modem and firmware upgrade.

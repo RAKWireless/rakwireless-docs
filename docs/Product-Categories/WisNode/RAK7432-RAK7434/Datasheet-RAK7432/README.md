@@ -127,9 +127,7 @@ RAK7432 allows for three installation methods: wall mounting, DIN rail installat
   caption="Different types of mounting"
 />
 
-### Software
-
-#### Firmware
+### Firmware
 
 <table>
  <thead><tr><th>Model</th><th>Firmware Version</th><th>Source</th></tr></thead>

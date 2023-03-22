@@ -185,7 +185,7 @@ The table below lists the operation and storage temperature requirements.
 - Dimensions: 100&nbsp;mm x 75&nbsp;mm x 38&nbsp;mm
 - Weight: approximately 8.6&nbsp;oz (243.8&nbsp;g) without battery
 
-### Software
+### Firmware
 
 Download the latest firmware version of RAK10701-H in the table provided below.
 

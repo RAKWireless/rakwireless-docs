@@ -648,7 +648,7 @@ The table below lists the operation and storage temperature requirements:
 |  Extended Temp. Range   | -40&nbsp;ºC | +25&nbsp;ºC | +80&nbsp;ºC |
 |   Storage Temp. Range   | -40&nbsp;ºC | +25&nbsp;ºC | +80&nbsp;ºC |
 
-### Software
+### Firmware
 
 Download the latest firmware version of the RAK5010 WisTrio provided in the download link below.
 

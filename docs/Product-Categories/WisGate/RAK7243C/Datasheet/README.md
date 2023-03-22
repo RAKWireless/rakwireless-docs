@@ -14,8 +14,6 @@ certifications:
 
 # RAK7243C WisGate Developer D3+ Gateway Datasheet
 
-
-
 ## Overview
 
 ### Description
@@ -377,11 +375,9 @@ The table below lists the operation and storage temperature requirements:
 | Extended Temperature Range  | -40 ˚C |         | +85 ˚C |
 | Storage Temperature Range   | -40 ˚C |         | +85 ˚C |
 
-### Software
+### Firmware
 
 Download the latest firmware of RAK7243 and RAK7243C in the table provided below.
-
-#### Firmware
 
 | Model                                  | Raspberry Pi Board   | Firmware Version | Source                                                                                                             |
 | -------------------------------------- | -------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------ |

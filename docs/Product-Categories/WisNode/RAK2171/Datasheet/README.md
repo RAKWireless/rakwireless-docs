@@ -145,8 +145,6 @@ The RAK2171 WisNode TrackIt has built-in LoRaWAN, GPS, and Bluetooth antennas.
 
 ### Software
 
-#### Firmware
-
 #### Mobile Application
 
 - For Android

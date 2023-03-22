@@ -384,11 +384,9 @@ The table below lists the operation and storage temperature requirements:
 />
 
 
-### Software
+### Firmware
 
 Download the supported firmware of RAK5205 in the table provided below.
-
-#### Firmware
 
 | Model       | Supported Firmwares                   | Version   | Source                                                                                                         |
 | ----------- | ------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------- |

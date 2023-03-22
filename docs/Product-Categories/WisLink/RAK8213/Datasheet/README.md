@@ -430,7 +430,7 @@ The board only weighs 128.6&nbsp;grams, its length is 51&nbsp;mm while its width
   caption="RAK8213 Schematic Diagram"
 />
 
-### Software
+### Firmware
 
 Download the latest firmware version of RAK8212 in the table provided below.
 

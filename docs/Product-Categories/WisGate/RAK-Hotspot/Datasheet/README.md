@@ -253,13 +253,13 @@ The table below lists the operation and storage temperature requirements:
 | **Operation Temperature Range** | -10&nbsp;ºC | +25&nbsp;ºC | +55&nbsp;ºC |
 | **Storage Temperature Range**   | -40&nbsp;ºC |             | +85&nbsp;ºC |
 
-### Software
-
-#### Firmware
+### Firmware
 
 | **Model**   | **Raspberry Pi Board** | **Firmware Version** | **Source** |
 | ----------- | ---------------------- | -------------------- | ---------- |
 | RAK Hotspot | Raspberry Pi 4         |                      |            |
+
+### Software
 
 #### LoRaWAN
 

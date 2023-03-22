@@ -238,7 +238,7 @@ The hardware specification is categorized into six parts. It discusses the pinou
   caption="Schematic Diagram #5"
 />
 
-### Software
+### Firmware
 
 Download the latest firmware of RAK8212 in the table provided below.
 

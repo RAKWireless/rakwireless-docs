@@ -12,8 +12,6 @@ next: ../Testing-Report/
 
 # RAK7246G WisGate Developer D0 Gateway Datasheet
 
-
-
 ## Overview
 
 ### Description
@@ -308,16 +306,7 @@ The FEM chosen is a SKYWORKS SKY66422, which integrates a PA, LNA, and a switch.
 
 ### Software
 
-Download the latest firmware of RAK7246G in the table provided below. The supported software features are also included with the standard parameters.
-
-#### Firmware
-
-| Model   | Raspberry Pi Board  | Firmware Version | Source                                                                                                        |
-| ------- | ------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------- |
-| RAK7246 | Raspberry Pi Zero W | 4.2.0R           | [Download](https://downloads.rakwireless.com/LoRa/NeoPi-Gateway-RAK7246/Firmware/RAK7246_Latest_Firmware.zip) |
-
 #### Software Specifications
-
 
 | LoRa                                 | Network              | Management |
 | ------------------------------------ | -------------------- | ---------- |
@@ -327,7 +316,6 @@ Download the latest firmware of RAK7246G in the table provided below. The suppor
 | TX power setup                       | -                    | -          |
 | Location setup                       | -                    | -          |
 | Supports server address & port setup | -                    | -          |
-
 
 #### LoRaWAN Systems, Network Approach
 
@@ -353,13 +341,21 @@ Because the combination of spreading factors and signal bandwidths results in di
 
 Since spreading factors are orthogonal and the RAK2246 Concentrator can demodulate on 8 channels at the same time, the channel capacity of a LoRaWAN gateway is increased compared to traditional cellular networks.
 
-##### Firmware
+#### Firmware
 
 The LoRa MAC specification is currently driven by the companies Semtech, IBM, and Actility. Currently, all available software, firmware, and documentation can be found and downloaded from the open-source project LoRa-net hosted on [https://github.com/Lora-net](https://github.com/Lora-net).
 
 This project hosts all parts that are needed to run a network based on LoRa technology. It includes the node firmware (several hardware platforms are supported), the gateway host software (HAL driver for SX1308, packet forwarder), and server implementation.
 
 It is highly recommended to utilize the latest HAL as provided by Semtech.
+
+##### Firmware Specification
+
+Download the latest firmware of RAK7246G in the table provided below. The supported software features are also included with the standard parameters.
+
+| Model   | Raspberry Pi Board  | Firmware Version | Source                                                                                                        |
+| ------- | ------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------- |
+| RAK7246 | Raspberry Pi Zero W | 4.2.0R           | [Download](https://downloads.rakwireless.com/LoRa/NeoPi-Gateway-RAK7246/Firmware/RAK7246_Latest_Firmware.zip) |
 
 ##### Configuring the Gateway
 

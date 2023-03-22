@@ -205,11 +205,12 @@ The hardware specification covers the interfacing of the RAK7289 and its corresp
     </tbody>
 </table>
 
-### Software
 
-#### Firmware
+### Firmware
 
 The firmware sits on OpenWRT, which makes it possible to customize it. There is a Web UI for easy configuration and management of the device, as well as the possibility for SSH2 management.
+
+### Software
 
 #### Software Features
 

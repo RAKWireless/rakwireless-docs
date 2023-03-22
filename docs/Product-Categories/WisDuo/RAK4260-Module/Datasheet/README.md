@@ -14,8 +14,6 @@ next: false
 
 # RAK4260 WisDuo LPWAN Module Datasheet
 
-
-
 ## Overview
 
 ### Description
