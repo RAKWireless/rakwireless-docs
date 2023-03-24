@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK2171. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
-rak_img: /assets/images/wisnode/rak2171/overview/RAK2171.png
+rak_img: /assets/images/wisnode/rak2171/RAK2171.png
 prev: ../Overview/
 next: ../Helium-Datacake/
 tags:

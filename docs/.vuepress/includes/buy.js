@@ -110,7 +110,7 @@ export default {
   },
   '/Product-Categories/WisNode/RAK2171/': {
     label: 'RAK2171 WisNode TrackIt',
-    img: '/assets/images/wisnode/rak2171/overview/RAK2171.png',
+    img: '/assets/images/wisnode/rak2171/RAK2171.png',
     store: 'https://store.rakwireless.com/products/wisnode-trackit-set-rak2171?utm_source=RAK2171WisNodeTrackIt&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisNode/RAK7200/': {
@@ -131,7 +131,7 @@ export default {
 
   '/Product-Categories/WisNode/RAK2560/': {
     label: 'RAK2560 WisNode Sensor Hub',
-    img: '/assets/images/wisnode/rak2560/overview/RAK2560.jpg',
+    img: '/assets/images/wisnode/rak2560/RAK2560.jpg',
     store: 'https://store.rakwireless.com/products/sensor-hub?utm_source=RAK2560WisNodeSense&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 

@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK2560 WisNode Sensor Probe to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisnode/rak2560/overview/RAK2560.jpg
+rak_img: /assets/images/wisnode/rak2560/RAK2560.jpg
 prev: ../IO-Datasheet/
 next: false
 tags:

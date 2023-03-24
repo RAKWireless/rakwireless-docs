@@ -7,7 +7,7 @@ tags:
     - wisnode
     - SensorHub
 rak_desc: In this guide, the process of assembling and mounting your RAK2560 will be shown step by step. Strict adherence to the steps guarantees a secured and durable sensor hub.
-rak_img: /assets/images/wisnode/rak2560/overview/RAK2560.jpg
+rak_img: /assets/images/wisnode/rak2560/RAK2560.jpg
 ---
 
 # RAK2560 WisNode Sensor Hub Installation Guide

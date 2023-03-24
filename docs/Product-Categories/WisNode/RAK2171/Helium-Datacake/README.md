@@ -1,6 +1,6 @@
 ---
 rak_desc: Learn how to register the TrackIt device in the Helium console and make integration to Datacake, where you can use the dashboard to view the data in a more user-friendly way.
-rak_img:  /assets/images/wisnode/rak2171/overview/RAK2171.png
+rak_img: /assets/images/wisnode/rak2171/RAK2171.png
 prev: ../Quickstart/
 next: ../Datasheet/
 tags:
