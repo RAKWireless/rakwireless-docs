@@ -138,7 +138,7 @@ The table below shows the full specification of RAK7431 WisNode Bridge Serial.
 | LoRa Frequency          | RU864, IN865, EU868, US915, AU915, KR920, KR923                                                                           | Different models support different frequency bands |
 | LoRaWAN Mode            | Class A / Class B / Class C                                                                                               |                                                    |
 | LoRa Tx Power           | 20&nbsp;dBm                                                                                                               |                                                    |
-| LoRa Antenna interface  | SMA MALE, External omnidirectional Antenna                                                                                |                                                    |
+| LoRa Antenna interface  | RP-SMA, External omnidirectional Antenna                                                                                |                                                    |
 | RS485 Data Rate         | Configurable 9600 -115200&nbsp;bps                                                                                        |                                                    |
 | RS485 Carrying Capacity | 16 Nodes                                                                                                                  |                                                    |
 | RS485 Protection        | 18&nbsp;kV HBM protection <br> 13&nbsp;kV IEC61000-4-2 contact discharge <br> 4&nbsp;kV IEC61000-4-4 fast transient burst |                                                    |
