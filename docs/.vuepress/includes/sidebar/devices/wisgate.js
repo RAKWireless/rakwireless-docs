@@ -32,9 +32,59 @@ module.exports = {
       download: true,
       sidebarDepth: 4
     }
-
-
   ],
+
+  '/Product-Categories/WisGate/RAK7240-V2/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisGate/RAK7240-V2/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quickstart',
+    path: '/Product-Categories/WisGate/RAK7240-V2/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Supported LoRa Network Servers',
+    path: '/Product-Categories/WisGate/RAK7240-V2/Supported-LoRa-Network-Servers/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisGate/RAK7240-V2/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+],
+
+  '/Product-Categories/WisGate/RAK7240C-V2/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisGate/RAK7240C-V2/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisGate/RAK7240C-V2/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+],
 
   '/Product-Categories/WisGate/RAK7243/': [{
       title: 'Product Overview',

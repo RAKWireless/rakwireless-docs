@@ -386,6 +386,17 @@ export default {
 
   // Edge V2
 
+
+  '/Product-Categories/WisGate/RAK7240-V2/': {
+    label: 'RAK7240 V2 WisGate Edge Prime',
+    img: '/assets/images/wisgate/rak7240-v2/RAK7240V2.png',
+    store: 'https://store.rakwireless.com/products/wisgate-edge-prime-rak7240v2-rak7240cv2?utm_source=WisGateRAK7240CV2&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisGate/RAK7240C-V2/': {
+    label: 'RAK7240C V2 WisGate Edge Prime',
+    img: '/assets/images/wisgate/rak7240c-v2/RAK7240V2.png',
+    store: 'https://store.rakwireless.com/products/wisgate-edge-prime-rak7240v2-rak7240cv2?utm_source=WisGateRAK7240CV2&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
   '/Product-Categories/WisGate/RAK7268-V2/': {
     label: 'RAK7268 V2 WisGate Edge Lite 2',
     img: '/assets/images/wisgate/rak7268-v2/overview/RAK7268V2.png',
@@ -396,6 +407,7 @@ export default {
     img: '/assets/images/wisgate/rak7289-v2/overview/RAK7289V2.png',
     store: 'https://store.rakwireless.com/products/wisgate-edge-pro-rak7289v2-rak7289cv2?utm_source=WisGateRAK7289V2&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+
 
   // Gateway
 
