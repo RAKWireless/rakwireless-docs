@@ -68,24 +68,6 @@ module.exports = {
   }
 ],
 
-  '/Product-Categories/WisGate/RAK7240C-V2/': [{
-    title: 'Product Overview',
-    path: '/Product-Categories/WisGate/RAK7240C-V2/Overview/',
-    collapsable: false,
-    nested: true,
-    download: true,
-    sidebarDepth: 4
-  },
-  {
-    title: 'Datasheet',
-    path: '/Product-Categories/WisGate/RAK7240C-V2/Datasheet/',
-    collapsable: false,
-    nested: true,
-    download: true,
-    sidebarDepth: 4
-  }
-],
-
   '/Product-Categories/WisGate/RAK7243/': [{
       title: 'Product Overview',
       path: '/Product-Categories/WisGate/RAK7243/Overview/',
@@ -661,7 +643,31 @@ module.exports = {
   download: true,
   sidebarDepth: 4
 }
-
+],
+'/Product-Categories/WisGate/RAKR314/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisGate/RAKR314/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Flashing the OS',
+  path: '/Product-Categories/WisGate/RAKR314/Flashing-the-OS/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Assembly Guide',
+  path: '/Product-Categories/WisGate/RAKR314/Assembly-Guide/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
 ],
 
 

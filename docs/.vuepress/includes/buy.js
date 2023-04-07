@@ -392,11 +392,6 @@ export default {
     img: '/assets/images/wisgate/rak7240-v2/RAK7240V2.png',
     store: 'https://store.rakwireless.com/products/wisgate-edge-prime-rak7240v2-rak7240cv2?utm_source=WisGateRAK7240CV2&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-  '/Product-Categories/WisGate/RAK7240C-V2/': {
-    label: 'RAK7240C V2 WisGate Edge Prime',
-    img: '/assets/images/wisgate/rak7240c-v2/RAK7240V2.png',
-    store: 'https://store.rakwireless.com/products/wisgate-edge-prime-rak7240v2-rak7240cv2?utm_source=WisGateRAK7240CV2&utm_medium=Document&utm_campaign=BuyFromStore'
-  },
   '/Product-Categories/WisGate/RAK7268-V2/': {
     label: 'RAK7268 V2 WisGate Edge Lite 2',
     img: '/assets/images/wisgate/rak7268-v2/overview/RAK7268V2.png',
@@ -409,7 +404,7 @@ export default {
   },
 
 
-  // Gateway
+  // Developer
 
   '/Product-Categories/WisGate/RAK-Hotspot-v2/': {
     label: 'RAK Hotspot v2',
@@ -420,6 +415,11 @@ export default {
     label: 'RAK Hotspot',
     img: '/assets/images/wisgate/rak-hotspot/overview/RAK-Hotspot.png',
     store: 'https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisGate/RAKR314/': {
+    label: 'RAKR314 CM4 Base Board',
+    img: '/assets/images/wisgate/rakr314/RAKR314.png',
+    store: 'https://store.rakwireless.com/products/raspberry-pi-compute-module-4-kit?utm_source=RAKR314&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisGate/RAK7243/': {
     label: 'RAK7243 WisGate Developer D3 Gateway',

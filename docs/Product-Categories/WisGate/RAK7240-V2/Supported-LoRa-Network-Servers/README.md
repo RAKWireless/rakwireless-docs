@@ -12,7 +12,7 @@ prev: ../Quickstart/
 
 ---
 
-# RAK7240 V2 Supported LoRa Network Servers
+# RAK7240V2/RAK7240CV2 Supported LoRa Network Servers
 
 ## AWS IoT Core for LoRaWAN
 
@@ -368,7 +368,7 @@ This section shows an example of how to join the AWS IoT LoRaWAN server.
 
 <rk-img
   src="/assets/images/wisgate/rak7240-v2/supported-lora-network-servers/7.png"
-  width="100%"
+  width="80%"
   caption="Adding the Device Profile"
 />
 
@@ -1296,7 +1296,7 @@ In this method, you will configure the gateway’s built-in gateway bridge to se
 
 <rk-img
   src="/assets/images/wisgate/rak7240-v2/supported-lora-network-servers/45.png"
-  width="100%"
+  width="80%"
   caption="LoRa Gateway MQTT Bridge"
 />
 
@@ -1313,7 +1313,7 @@ To configure the payload marshaler you need to access the configuration file of 
 
 <rk-img
   src="/assets/images/wisgate/rak7240-v2/supported-lora-network-servers/46.png"
-  width="100%"
+  width="70%"
   caption="PuTTY client"
 />
 
@@ -1427,7 +1427,7 @@ Your gateway is now configured to work as Basics Station, and it is pointed to t
 
 <rk-img
   src="/assets/images/wisgate/rak7240-v2/supported-lora-network-servers/56.png"
-  width="100%"
+  width="70%"
   caption="PuTTY client"
 />
 
@@ -1676,7 +1676,7 @@ When connecting the gateway to the ChirpStack, you will need to open ports 1883 
 
 <rk-img
   src="/assets/images/wisgate/rak7240-v2/supported-lora-network-servers/76.png"
-  width="100%"
+  width="80%"
   caption="LoRa Gateway MQTT bridge"
 />
 
@@ -1691,7 +1691,7 @@ If you want to use JSON protocol, you need to change the payload marshaler in th
 
 <rk-img
   src="/assets/images/wisgate/rak7240-v2/supported-lora-network-servers/77.png"
-  width="100%"
+  width="70%"
   caption="PuTTY client"
 />
 
@@ -1814,13 +1814,13 @@ To access the ChirpStack configuration files, you need to access the instance. H
 
 <rk-img
   src="/assets/images/wisgate/rak7240-v2/supported-lora-network-servers/88.png"
-  width="100%"
+  width="70%"
   caption="PuTTY client"
 />
 
 
-6. In the ChirpStack Gateway bridge webpage, copy the configuration file text and place it in `/etc/chirpstack-gateway-bridge/chirpstack-gateway-bridge.toml`.
-7. In the file, find the gateway backend configuration paragraph and replace the type with `basic_station`.
+1. In the ChirpStack Gateway bridge webpage, copy the configuration file text and place it in `/etc/chirpstack-gateway-bridge/chirpstack-gateway-bridge.toml`.
+2. In the file, find the gateway backend configuration paragraph and replace the type with `basic_station`.
 
 <rk-img
   src="/assets/images/wisgate/rak7240-v2/supported-lora-network-servers/89.png"

@@ -2,21 +2,21 @@
 next: ../Supported-LoRa-Network-Servers/
 prev: ../Overview/
 tags:
-  - RAK7240 V2
-  - RAK7240C V2
+  - RAK7240V2
+  - RAK7240CV2
   - wisgate
   - quickstart
-rak_desc: Contains instructions and tutorials for installing and deploying your RAK7240 V2. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK7240V2. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
 rak_img: /assets/images/wisgate/rak7240-v2/RAK7240V2.png
 ---
 
-# RAK7240 V2 Quick Start Guide
+# RAK7240V2/RAK7240CV2 Quick Start Guide
 
 ## Prerequisites
 
 ### What Do You Need?
 
-1. **[RAK7240 V2 WisGate Edge Prime](https://store.rakwireless.com/products/wisgate-edge-prime-rak7240v2-rak7240cv2?utm_source=WisGateRAK7240CV2&utm_medium=Document&utm_campaign=BuyFromStore)**
+1. **[RAK7240V2 WisGate Edge Prime](https://store.rakwireless.com/products/wisgate-edge-prime-rak7240v2-rak7240cv2?utm_source=WisGateRAK7240CV2&utm_medium=Document&utm_campaign=BuyFromStore)**
 2. A Windows/Mac OS/Linux Computer
 
 :::warning ⚠️ WARNING
@@ -30,7 +30,7 @@ rak_img: /assets/images/wisgate/rak7240-v2/RAK7240V2.png
 <rk-img
   src="/assets/images/wisgate/rak7240-v2/quickstart/1.package-content.jpg"
   width="80%"
-  caption="RAK7240 V2 Interfaces"
+  caption="RAK7240V2 Interfaces"
 />
 
 
@@ -42,7 +42,7 @@ The number of antennas depends on what you order. Refer to the store for more in
 
 ### Gateway Installation Guide
 
-For details about the interfaces and connectors of RAK7240 V2 WisGate Edge Prime Gateway enclosure, refer to the [Datasheet](../Datasheet/).
+For details about the interfaces and connectors of RAK7240V2 WisGate Edge Prime Gateway enclosure, refer to the [Datasheet](../Datasheet/).
 
 #### Installation
 
