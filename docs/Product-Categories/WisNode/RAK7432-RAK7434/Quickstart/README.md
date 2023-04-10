@@ -49,7 +49,7 @@ The RAK7432/RAK7434 device can be powered either by:
 - DC (VIN/GND) terminals
 - Micro USB
 
-The DC screw terminals are supporting 8 to 48&nbsp;V<sub>DC</sub>. The Micro USB port can be used to power the RAK7432/RAK7434, up to 5&nbsp;V / 500&nbsp;mA DC. At the same time, the USB port is used as the configuration port for the device. You can import your configuration settings using the Micro USB cable to connect the RAK7432/RAK7434 to a computer’s USB port.
+The DC screw terminals are supporting 12&nbsp;V to 24&nbsp;V. The Micro USB port can be used to power the RAK7432/RAK7434, up to 5&nbsp;V / 500&nbsp;mA DC. At the same time, the USB port is used as the configuration port for the device. You can import your configuration settings using the Micro USB cable to connect the RAK7432/RAK7434 to a computer’s USB port.
 
 ::: tip 📝 NOTE
 The Micro USB port can be used only for powering the device. It cannot provide power to VOUT and power other devices in the other connected 4-20&nbsp;mA/0-5&nbsp;V.

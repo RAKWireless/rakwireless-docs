@@ -70,7 +70,7 @@ The hardware specification covers not only the interfacing and detailed paramete
 
 ###### Power Supply and Configuration Interface
 
-RAK7434 WisNode Bridge Analog can be powered by its DC terminal or via its Micro USB port. The DC terminal works with 8-48&nbsp;V<sub>DC</sub> input, and the rated power of the device is 1&nbsp;W. Pay attention to the positive and negative pole directions when crimping the terminal. Vin is connected to the positive pole of the power supply, and GND is connected to the negative pole of the power supply.
+RAK7434 WisNode Bridge Analog can be powered by its DC terminal or via its Micro USB port. The DC terminal works with 12-24&nbsp;V<sub>DC</sub> input, and the rated power of the device is 1&nbsp;W. Pay attention to the positive and negative pole directions when crimping the terminal. Vin is connected to the positive pole of the power supply, and GND is connected to the negative pole of the power supply.
 
 The Micro USB port can also be used for powering the device (5&nbsp;V / 500&nbsp;mA DC). At the same time, the Micro USB port can be used as the configuration interface of the device.
 
@@ -103,9 +103,9 @@ The table below shows the full specification of the RAK7434 WisNode Bridge Analo
  <tr><td rowspan="3">Interface protection</td> <td>18&nbsp;kV HBM protection<td> </td> </tr>
  <tr><td>13&nbsp;kV IEC61000-4-2 contact discharge</td> <td></td> </tr>
  <tr><td>4&nbsp;kV IEC61000-4-4 fast transient burst</td> <td></td> </tr>
- <tr><td>Input Voltage</td> <td>8&nbsp;V - 48&nbsp;V</td> <td> 5&nbsp;V for Micro USB</td></tr>
+ <tr><td>Input Voltage</td> <td>12&nbsp;V - 24&nbsp;V</td> <td> 5&nbsp;V for Micro USB</td></tr>
  <tr><td>Rated Power</td><td>Maximum 1&nbsp;W</td> <td></td></tr>
- <tr><td>Output Voltage</td><td>8&nbsp;V - 48&nbsp;V</td> <td></td></tr>
+ <tr><td>Output Voltage</td><td> 12&nbsp;V<sub>DC</sub></td> <td></td></tr>
  <tr><td>Configuration Interface</td><td>Micro USB</td> <td></td></tr>
  <tr><td>Indicator LED</td><td>Power LED, Data LED</td> <td></td></tr>
  <tr><td>Housing Material</td><td>Metal</td> <td></td></tr>
