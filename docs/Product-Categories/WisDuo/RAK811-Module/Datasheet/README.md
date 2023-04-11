@@ -11,7 +11,7 @@ certifications:
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_FCC_Certification.zip]
   - [KCC, https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_KC_Certification.pdf]
   - [MIC, https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_MIC_Certification.zip]
-  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_RoHS_Certification.zip]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_RoHS_Report.zip]
 
 ---
 

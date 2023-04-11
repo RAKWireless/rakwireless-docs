@@ -16,8 +16,6 @@ rak_img: /assets/images/wislink-lora/rak2245-stamp-edition/quickstart/overview/R
 
 # RAK2245 WisLink-LoRa Stamp Edition Datasheet
 
-
-
 ## Overview
 
 ### Description

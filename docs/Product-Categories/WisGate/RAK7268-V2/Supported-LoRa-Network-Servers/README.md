@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains a comprehensive guide in setting up both your RAK7268 V2 and Amazon Web Services account and permissions. It also includes instructions in connecting and configuring your LoRaWAN Gateway with TTN and ChirpStack.
+rak_desc: Contains a comprehensive guide in setting up both your RAK7268V2 and Amazon Web Services account and permissions. It also includes instructions in connecting and configuring your LoRaWAN Gateway with TTN and ChirpStack.
 rak_img: /assets/images/wisgate/rak7268-v2/overview/RAK7268V2.png
 tags:
   - ChirpStack

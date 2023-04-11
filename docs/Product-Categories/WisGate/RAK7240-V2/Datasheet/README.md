@@ -28,10 +28,11 @@ Thus, the RAK7240V2 WisGate Edge Prime is suited for any use-case scenario, be i
 
 - IP65 industrial-grade enclosure with cable glands
 - PoE + Surge Protection
+- Supports 9~24&nbsp;V<sub>DC</sub> power supply
 - Up to two (2) LoRa concentrators for 8 or 16-channel options
 - Backhaul: Wi-Fi, LTE (optional, available with RAK7240CV2), and Ethernet
 - GPS
-- SD Card slot
+- SD card slot
 
 :::tip 📝 NOTE
 
@@ -53,23 +54,19 @@ For the 8-channel gateway an LTE option is possible while if you wish for 16 cha
 
 ### Overview
 
-The overview presents the RAK7240V2 circuit board and its block diagram that shows the internal architecture of the board.
-
-#### Board Overview
+The overview presents the RAK7240V2 block diagram that shows the internal architecture of the board.
 
 <rk-img
-  src="/assets/images/wisgate/rak7240-v2/datasheet/1.circuit-board.png"
-  width="80%"
-  caption="RAK7240V2 Circuit Board"
+  src="/assets/images/wisgate/rak7240-v2/datasheet/1.rak7240v2-block-diagram.png"
+  width="100%"
+  caption="RAK7240V2 Block Diagram"
 />
 
 
-#### Block Diagram
-
 <rk-img
-  src="/assets/images/wisgate/rak7240-v2/datasheet/2.block-diagram.png"
-  width="80%"
-  caption="RAK7240V2 Block Diagram"
+  src="/assets/images/wisgate/rak7240-v2/datasheet/2.rak7240cv2-block-diagram.png"
+  width="100%"
+  caption="RAK7240CV2 Block Diagram"
 />
 
 
@@ -83,7 +80,7 @@ The overview presents the RAK7240V2 circuit board and its block diagram that sho
 | Wi-Fi feature                                                  | • Frequency: 2.400-2.4835&nbsp;GHz (802.11b/g/n) <br> • RX Sensitivity: -95&nbsp;dBm (Min)  <br> • TX Power: 20&nbsp;dBm (Max)  <br> • Operation Channels: 2.4&nbsp;GHz: 1-13                                                                                                     |
 | LoRa feature                                                   | • Card: SX1301 mPCIe card (connects a maximum of two)  <br> • Channels: 8 Channels (16 channels optional) <br> • RX Sensitivity: -139&nbsp;dBm (Min)  <br> • TX Power: 27&nbsp;dBm (Max)  <br> • Frequency: EU433 / CN470 / RU864 / IN865 / EU868 / US915 / AU915 / KR920 / AS923 |
 | Cellular feature (available with RAK7240CV2, 8-channel option) | **Variant for Europe**  <br> • LTE FDD: B1/B3/B7/B8/B20/B28A <br> • WCDMA: B1/B8  <br> • GSM: 900/1800&nbsp;MHz   <br> **Variant for North America**  <br> • LTE FDD: B2/B4/B5/B12/B13  <br> • WCDMA: B2/B4/B5                                                                    |
-| Power supply                                                   | PoE (IEEE 802.3af) - 42~57&nbsp;V<sub>DC</sub>                                                                                                                                                                                                                                    |
+| Power supply                                                   | • PoE (IEEE 802.3af) - 42~57&nbsp;V<sub>DC</sub> <br>   • 9~24&nbsp;V<sub>DC</sub> from dedicated port                                                                                                                                                                            |
 | Power consumption                                              | 12&nbsp;W (typical)                                                                                                                                                                                                                                                               |
 | Ethernet (ETH)                                                 | RJ45 (10/100M)                                                                                                                                                                                                                                                                    |
 | Console                                                        | RJ45 (RS232)                                                                                                                                                                                                                                                                      |
@@ -105,7 +102,7 @@ The hardware specification is categorized into three parts. It discusses the int
 
 #### Interfaces
 
-The hardware interfaces of the WisGate Edge Prime include five (5) antenna ports (LoRa, LTE-DIV, LTE-MAIN, Wi-Fi, and GPS), Five (5) status indicator LEDs, TF Card and nano-SIM sockets, a console port, an Ethernet Port (PoE), and a ground pad.
+The hardware interfaces of the WisGate Edge Prime include five (5) antenna ports (LoRa, LTE-DIV, LTE-MAIN, Wi-Fi, and GPS), five (5) status indicator LEDs, TF Card and nano-SIM sockets, a console port, an Ethernet Port (PoE), and a ground pad.
 
 <rk-img
   src="/assets/images/wisgate/rak7240-v2/datasheet/3.interface.jpg"

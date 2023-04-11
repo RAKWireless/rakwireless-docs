@@ -14,8 +14,6 @@ certifications:
 
 # RAK7431 WisNode Bridge Serial Datasheet
 
-
-
 ## Overview
 
 ### Description

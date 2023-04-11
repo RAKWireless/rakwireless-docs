@@ -10,7 +10,7 @@ tags:
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK3172-SiP/Certification/RAK3172-SiP_CE_Certification.pdf]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK3172-SiP/Certification/RAK3172-SiP_FCC_Certification.pdf]
-  - [ISED, https://downloads.rakwireless.com/LoRa/RAK3172-SiP/Certification/RAK3172-SiP_IC_Certification.pdf]
+  - [ISED, https://downloads.rakwireless.com/LoRa/RAK3172-SiP/Certification/RAK3172-SiP_ISED_Certification.pdf]
   - [UKCA, https://downloads.rakwireless.com/LoRa/RAK3172-SiP/Certification/RAK3172-SiP_UKCA_Certification.pdf]
 ---
 
@@ -322,3 +322,9 @@ Download the latest RAK3172-SiP and RAK3172LP-SiP Breakout Board firmware provid
 | RAK3272-SiP (.hex)   | RUI3 (Bootloader and App) | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272-SiP_latest_final.hex)   |
 | RAK3272LP-SiP (.bin) | RUI3 (App only)           | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272LP-SiP_latest.bin)       |
 | RAK3272LP-SiP (.hex) | RUI3 (Bootloader and App) | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272LP-SiP_latest_final.hex) |
+
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />
+

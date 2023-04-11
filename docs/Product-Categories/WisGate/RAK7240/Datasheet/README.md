@@ -38,7 +38,7 @@ Thus, the **RAK7240 WisGate Edge Prime**, is suited for any use case scenario, b
 - **IP65** industrial-grade enclosure with cable glands
 - **PoE** + Surge Protection
 - Dual LoRa Concentrators for up to **16 channels**
-- Backhaul: **Wi-Fi**, **LTE** and **Ethernet**
+- Backhaul: **Wi-Fi**, **LTE**, and **Ethernet**
 - **GPS**
 - SD Card slot
 

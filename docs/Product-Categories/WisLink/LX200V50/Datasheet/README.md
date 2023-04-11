@@ -260,3 +260,8 @@ The board provides two power supply modes: DC power interface and Micro USB inte
   width="100%"
   caption="Ethernet and LEDs"
 />
+
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

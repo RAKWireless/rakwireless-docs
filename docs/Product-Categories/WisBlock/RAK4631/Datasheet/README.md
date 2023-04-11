@@ -8,11 +8,12 @@ tags:
   - wisblock
   - RAK4631
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK4631/Certification/RAK4630_RAK4631_CE_Certification.zip]
-  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4631/Certification/RAK4630_RAK4631_FCC_Certification.zip]
-  - [ISED, https://downloads.rakwireless.com/LoRa/WisBlock/RAK4631/Certification/RAK4631_IC_Certification.pdf]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_CE_Certification.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_FCC_Certification.zip]
+  - [ISED, https://downloads.rakwireless.com/LoRa/WisBlock/RAK4631/Certification/RAK4631_ISED_Certification.pdf]
   - [KCC, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_KC_Certification.pdf]
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RCM_Certification.pdf]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_REACH_Report.pdf]
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_RoHS_Report.pdf]
 
 ---

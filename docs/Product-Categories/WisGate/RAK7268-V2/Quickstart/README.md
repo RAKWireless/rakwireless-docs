@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials for installing and deploying your RAK7268 V2. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
+rak_desc: Contains instructions and tutorials for installing and deploying your RAK7268V2V2. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
 rak_img: /assets/images/wisgate/rak7268-v2/overview/RAK7268V2.png
 prev: ../Overview/
 next: ../Supported-LoRa-Network-Servers/
@@ -15,7 +15,7 @@ tags:
 
 ### What Do You Need?
 
-1. [**RAK7268/RAK7268C V2 WisGate Edge Lite 2 V2**](https://store.rakwireless.com/products/wisgate-edge-lite-2-rak7268v2-rak7268cv2?utm_source=WisGateRAK7268V2&utm_medium=Document&utm_campaign=BuyFromStore)
+1. [**RAK7268V2/RAK7268CV2 WisGate Edge Lite 2**](https://store.rakwireless.com/products/wisgate-edge-lite-2-rak7268v2-rak7268cv2?utm_source=WisGateRAK7268V2&utm_medium=Document&utm_campaign=BuyFromStore)
 2. [Ethernet Cable](https://store.rakwireless.com/products/ethernet-cable-gland?utm_source=EthernetCableGland&utm_medium=Document&utm_campaign=BuyFromStore) (RJ-45 Port) for Ethernet connection
 3. A Windows/macOS/Linux computer
 
@@ -31,18 +31,18 @@ tags:
 
 1. Attach the LoRa Antenna.
 
-First and foremost, screw the antenna onto the RP-SMA connector on the back panel of the RAK7268 / RAK7268C V2 WisGate Edge Lite 2 V2.
+First and foremost, screw the antenna onto the RP-SMA connector on the back panel of the RAK7268V2/RAK7268CV2 WisGate Edge Lite 2.
 
 
 :::warning ⚠️ WARNING
 
-Do not power the device if the LoRa Antenna port has been left open to avoid potential damage to the RAK7268 / RAK7268C V2 WisGate Edge Lite 2 V2.
+Do not power the device if the LoRa Antenna port has been left open to avoid potential damage to the RAK7268V2/RAK7268CV2 WisGate Edge Lite 2.
 
 :::
 
 2. Power the gateway **ON**.
 
-It is recommended to use the 12 VDC adapter that comes with the RAK7268/RAK7268C V2 WisGate Edge Lite 2 V2. Optionally, you can use your own PoE cable and PoE injector since the device supports PoE.
+It is recommended to use the 12 VDC adapter that comes with the RAK7268/RAK7268CV2 WisGate Edge Lite 2. Optionally, you can use your own PoE cable and PoE injector since the device supports PoE.
 
 
 #### Casing and Ports
@@ -51,13 +51,13 @@ It is recommended to use the 12 VDC adapter that comes with the RAK7268/RAK7268C
 <rk-img
   src="/assets/images/wisgate/rak7268-v2/quickstart/1.top-view.png"
   width="35%"
-  caption="RAK7268/C V2 WisGte Edge Lite 2 V2 top view"
+  caption="RAK7268V2/RAK7268CV2 WisGte Edge Lite 2 top view"
 />
 
 <rk-img
   src="/assets/images/wisgate/rak7268-v2/quickstart/2.back-view.png"
   width="50%"
-  caption="RAK7268/C V2 WisGte Edge Lite 2 V2 back view"
+  caption="RAK7268V2/RAK7268CV2 WisGte Edge Lite 2 back view"
 />
 
 
@@ -84,7 +84,7 @@ It is recommended to use the 12 VDC adapter that comes with the RAK7268/RAK7268C
         <tr><td>-ON - Connected</td></tr>
         <tr><td>-Flicker - Data receiving and sending</td></tr>
         <tr><td rowspan="3">LTE LED (functional
-only in RAK7268C V2)</td><td>Slow Flicker (1800&nbsp;ms High / 200&nbsp;ms Low) - Network searching</td></tr>
+only in RAK7268CV2)</td><td>Slow Flicker (1800&nbsp;ms High / 200&nbsp;ms Low) - Network searching</td></tr>
         <tr><td>Slow flicker (200&nbsp;ms High / 1800&nbsp;ms Low) - Idle</td></tr>
         <tr><td>Fast flicker (125&nbsp;ms High / 125&nbsp;ms Low) - Ongoing data transfer</td></tr>
     </tbody>
@@ -106,7 +106,7 @@ In this section, several ways of accessing the gateway are provided to have diff
 
 :::warning ⚠️ WARNING
 
-Do not power the device if the LoRa Antenna port has been left open to avoid potential damage to the RAK7268/RAK7268C V2 WisGate Edge Lite 2 V2.
+Do not power the device if the LoRa Antenna port has been left open to avoid potential damage to the RAK7268V2/RAK7268CV2 WisGate Edge Lite 2.
 
 :::
 

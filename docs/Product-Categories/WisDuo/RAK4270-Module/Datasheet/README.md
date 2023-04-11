@@ -11,8 +11,8 @@ certifications:
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_FCC_Certification.zip]
   - [JRL, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_JRL_Certification.zip]
   - [KC, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_KC_Certification.pdf]
-  - [REACH, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_REACH_Certification.pdf]
-  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_RoHS_Certification.pdf]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_REACH_Report.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_RoHS_Report.pdf]
 
 ---
 

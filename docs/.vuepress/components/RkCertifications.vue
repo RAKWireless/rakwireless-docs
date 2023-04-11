@@ -38,8 +38,14 @@ export default {
           case 'CE':
             data.img = '/assets/images/certifications/CE.png'
             break
+          case 'FAC':
+            data.img = '/assets/images/certifications/FAC.png'
+            break
           case 'FCC':
             data.img = '/assets/images/certifications/FCC.png'
+            break
+          case 'IP65':
+            data.img = '/assets/images/certifications/IP65.jpg'
             break
           case 'IP67':
             data.img = '/assets/images/certifications/IP67.png'

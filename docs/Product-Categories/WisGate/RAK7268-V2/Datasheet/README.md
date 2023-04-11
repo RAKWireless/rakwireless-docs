@@ -1,5 +1,5 @@
 ---
-rak_desc: Provides comprehensive information about your RAK7268 V2 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Provides comprehensive information about your RAK7268V2 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisgate/rak7268-v2/overview/RAK7268V2.png
 tags:
   - datasheet
@@ -26,11 +26,11 @@ certifications:
 
 ### Description
 
-The RAK7268 V2 WisGate Edge Lite 2 is the latest edition of the RAK Edge Series. It is an ideal product for indoor deployment with its built-in Ethernet connectivity for a straightforward setup. Additionally, there is an onboard Wi-Fi setup (supporting 2.4&nbsp;GHz Wi-Fi) that allows it to be easily configured via the default Wi-Fi AP mode. The new RAK7268 V2 supports power-over-Ethernet (PoE) in cases of a wall or ceiling mounting, where installing additional power lines is not an option. Moreover, the gateway supports LTE uplink communication connections (optional, only in RAK7268C V2).
+The RAK7268V2 WisGate Edge Lite 2 is the latest edition of the RAK Edge Series. It is an ideal product for indoor deployment with its built-in Ethernet connectivity for a straightforward setup. Additionally, there is an onboard Wi-Fi setup (supporting 2.4&nbsp;GHz Wi-Fi) that allows it to be easily configured via the default Wi-Fi AP mode. The new RAK7268V2 supports power-over-Ethernet (PoE) in cases of a wall or ceiling mounting, where installing additional power lines is not an option. Moreover, the gateway supports LTE uplink communication connections (optional, only in RAK7268CV2).
 
-The RAK7268 V2 supports WisGateOS 2, which is based on the latest OpenWRT kernel and accommodates the latest security updates like IPv6, OpenSSL 1.1 support, multiple accounts access, and more. The web UI has a fresh new look, with more user-friendly information tooltips.
+The RAK7268V2 supports WisGateOS 2, which is based on the latest OpenWRT kernel and accommodates the latest security updates like IPv6, OpenSSL 1.1 support, multiple accounts access, and more. The web UI has a fresh new look, with more user-friendly information tooltips.
 
-RAK7268 V2 is especially suitable for small and medium-sized deployment scenarios in industry applications, saving the additional cost for server and R&D investment, and has the advantages of high execution efficiency.
+RAK7268V2 is especially suitable for small and medium-sized deployment scenarios in industry applications, saving the additional cost for server and R&D investment, and has the advantages of high execution efficiency.
 
 
 
@@ -53,7 +53,7 @@ RAK7268 V2 is especially suitable for small and medium-sized deployment scenario
 
 ### Overview
 
-The overview presents the block diagram for the RAK7268 that shows the internal architecture of the board.
+The overview presents the block diagram for the RAK7268V2 that shows the internal architecture of the board.
 
 #### Block Diagram
 
@@ -61,31 +61,31 @@ The overview presents the block diagram for the RAK7268 that shows the internal 
 <rk-img
   src="/assets/images/wisgate/rak7268-v2/datasheet/block-diagram-without-lte.png"
   width="100%"
-  caption="RAK7268 V2 WisGate Edge Lite 2 V2 without LTE Block Diagram"
+  caption="RAK7268V2 WisGate Edge Lite 2 without LTE Block Diagram"
 />
 
 
 <rk-img
   src="/assets/images/wisgate/rak7268-v2/datasheet/block-diagram-with-lte.png"
   width="100%"
-  caption="RAK7268 V2 WisGate Edge Lite 2 V2 with LTE Block Diagram"
+  caption="RAK7268V2 WisGate Edge Lite 2 with LTE Block Diagram"
 />
 
 
 ### Hardware
 
-The hardware specification covers the interfacing of the RAK7268 V2 and its corresponding functionalities. It also presents the parameters and the standard values of the board.
+The hardware specification covers the interfacing of the RAK7268V2 and its corresponding functionalities. It also presents the parameters and the standard values of the board.
 
 #### Interfaces
 
 
-The hardware interfaces of RAK7268 V2 gateway include DC 12 V, ETH interface, Console interface, Reset key, SD Card slot, Status indicator LEDs, LoRa Antenna connector, etc.
+The hardware interfaces of RAK7268V2 gateway include DC 12 V, ETH interface, Console interface, Reset key, SD Card slot, Status indicator LEDs, LoRa Antenna connector, etc.
 
 
 <rk-img
   src="/assets/images/wisgate/rak7268-v2/datasheet/block-diagram-with-lte.png"
   width="100%"
-  caption="RAK7268 V2 WisGate Edge Lite 2 interfaces"
+  caption="RAK7268V2 WisGate Edge Lite 2 interfaces"
 />
 
 
@@ -121,7 +121,7 @@ The function of the Reset key is as follows:
         <tr><td>-ON - Connected</td></tr>
         <tr><td>-Flicker - Data receiving and sending</td></tr>
         <tr><td rowspan="3">LTE LED (functional
-only in RAK7268C V2)</td><td>Slow Flicker (1800&nbsp;ms High / 200&nbsp;ms Low) - Network searching</td></tr>
+only in RAK7268CV2)</td><td>Slow Flicker (1800&nbsp;ms High / 200&nbsp;ms Low) - Network searching</td></tr>
         <tr><td>Slow flicker (200&nbsp;ms High / 1800&nbsp;ms Low) - Idle</td></tr>
         <tr><td>Fast flicker (125&nbsp;ms High / 125&nbsp;ms Low) - Ongoing data transfer</td></tr>
     </tbody>
@@ -146,7 +146,7 @@ only in RAK7268C V2)</td><td>Slow Flicker (1800&nbsp;ms High / 200&nbsp;ms Low) 
         <tr><td>RX Sensitivity: -139&nbsp;dBm (Min)</td></tr>
         <tr><td>TX Power: 27&nbsp;dBm (Max)</td></tr>
         <tr><td>Frequency: EU433/CN470/EU868/US915/AS923/AU915/IN865/KR920</td></tr>
-        <tr><td rowspan="9">Cellular (optional, available with RAK7268C V2)</td><td>Supports Quectel EG95-E/EG95-NA (IoT/M2M -optimized LTE Cat 4 Module)</td></tr>
+        <tr><td rowspan="9">Cellular (optional, available with RAK7268CV2)</td><td>Supports Quectel EG95-E/EG95-NA (IoT/M2M -optimized LTE Cat 4 Module)</td></tr>
         <tr><td>EG95-E for EMEA Region</td></tr>
         <tr><td>- LTE FDD: B1/B3/B7/B8/B20/B28A</td></tr>
         <tr><td>- WCDMA: B1/B8</td></tr>
@@ -168,7 +168,7 @@ only in RAK7268C V2)</td><td>Slow Flicker (1800&nbsp;ms High / 200&nbsp;ms Low) 
         <tr><td>ETH LED (On ETH connector)</td></tr>
         <tr><td>LoRa LED</td></tr>
         <tr><td>WLAN LED</td></tr>
-        <tr><td>LTE LED (functional only in RAK7268C V2)</td></tr>
+        <tr><td>LTE LED (functional only in RAK7268CV2)</td></tr>
         <tr><td>Ingress protection</td><td>IP30</td></tr>
         <tr><td>Enclosure material</td><td>Plastic</td></tr>
         <tr><td>Weight</td><td>0.3 kg</td></tr>
@@ -181,7 +181,7 @@ only in RAK7268C V2)</td><td>Slow Flicker (1800&nbsp;ms High / 200&nbsp;ms Low) 
 
 :::tip 📝 NOTE
 
-Both RAK7268 V2 and RAK7268C V2 have SIM slots, but only RAK7268C V2 has an integrated cellular module.
+Both RAK7268V2 and RAK7268CV2 have SIM slots, but only RAK7268CV2 has an integrated cellular module.
 
 :::
 
@@ -237,7 +237,7 @@ Both RAK7268 V2 and RAK7268C V2 have SIM slots, but only RAK7268C V2 has an inte
 </table>
 
 
-##### LTE Radio Specifications (optional, available with RAK7268C V2)
+##### LTE Radio Specifications (optional, available with RAK7268CV2)
 
 
 <table>
@@ -287,7 +287,7 @@ The firmware sits on OpenWRT. There is a Web UI for easy configuration and manag
 
 |             Model              | Firmware Version |                             Source                             |
 | :----------------------------: | :--------------: | :------------------------------------------------------------: |
-| RAK7268 WisGate Edge Lite 2 V2 |   WisGateOS 2    | [Download](https://downloads.rakwireless.com/LoRa/WisGateOS2/) |
+| RAK7268V2 WisGate Edge Lite 2  |   WisGateOS 2    | [Download](https://downloads.rakwireless.com/LoRa/WisGateOS2/) |
 
 ### Software
 
